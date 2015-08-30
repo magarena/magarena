@@ -1,6 +1,6 @@
 name=Forcemage Advocate
-image=http://mtgimage.com/card/forcemage%20advocate.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ju/116.jpg
+value=2.562
 rarity=U
 type=Creature
 subtype=Centaur,Shaman

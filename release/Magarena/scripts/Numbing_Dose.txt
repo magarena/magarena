@@ -1,5 +1,5 @@
 name=Numbing Dose
-image=http://mtgimage.com/card/numbing%20dose.jpg
+image=http://magiccards.info/scans/en/nph/40.jpg
 value=2.538
 rarity=C
 type=Enchantment
@@ -9,4 +9,4 @@ ability=Enchanted permanent doesn't untap during its controller's untap step.
 enchant=can't attack or block,neg artifact or creature
 timing=enchantment
 requires_groovy_code=One Thousand Lashes
-oracle=Enchant artifact or creature. Enchanted permanent doesn't untap during its controller's untap step. At the beginning of the upkeep of enchanted permanent's controller, that player loses 1 life.
+oracle=Enchant artifact or creature\nEnchanted permanent doesn't untap during its controller's untap step.\nAt the beginning of the upkeep of enchanted permanent's controller, that player loses 1 life.

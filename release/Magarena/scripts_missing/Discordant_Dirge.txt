@@ -1,10 +1,10 @@
 name=Discordant Dirge
-image=http://mtgimage.com/card/discordant%20dirge.jpg
-value=2.500
+image=http://magiccards.info/scans/en/us/131.jpg
+value=2.045
 rarity=R
 type=Enchantment
 cost={3}{B}{B}
 ability=At the beginning of your upkeep, you may put a verse counter on SN.;\
         {B}, Sacrifice SN: Look at target opponent's hand and choose up to X cards from it, where X is the number of verse counters on SN. That player discards those cards.
-timing=main
-oracle=At the beginning of your upkeep, you may put a verse counter on Discordant Dirge. {B}, Sacrifice Discordant Dirge: Look at target opponent's hand and choose up to X cards from it, where X is the number of verse counters on Discordant Dirge. That player discards those cards.
+timing=enchantment
+oracle=At the beginning of your upkeep, you may put a verse counter on Discordant Dirge.\n{B}, Sacrifice Discordant Dirge: Look at target opponent's hand and choose up to X cards from it, where X is the number of verse counters on Discordant Dirge. That player discards those cards.

@@ -1,5 +1,5 @@
 name=Krakilin
-image=http://mtgimage.com/card/krakilin.jpg
+image=http://magiccards.info/scans/en/tp/129.jpg
 value=4.015
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=0/0
 ability=SN enters the battlefield with X +1/+1 counters on it.;\
         {1}{G}: Regenerate SN.
 timing=main
-oracle=Krakilin enters the battlefield with X +1/+1 counters on it. {1}{G}: Regenerate Krakilin.
+oracle=Krakilin enters the battlefield with X +1/+1 counters on it.\n{1}{G}: Regenerate Krakilin.

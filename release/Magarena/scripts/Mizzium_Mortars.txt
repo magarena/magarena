@@ -1,5 +1,5 @@
 name=Mizzium Mortars
-image=http://mtgimage.com/card/mizzium%20mortars.jpg
+image=http://magiccards.info/scans/en/rtr/101.jpg
 value=3.980
 rarity=R
 type=Sorcery
@@ -8,4 +8,4 @@ effect=SN deals 4 damage to target creature you don't control.
 timing=removal
 removal=4
 requires_groovy_code
-oracle=Mizzium Mortars deals 4 damage to target creature you don't control. Overload {3}{R}{R}{R}
+oracle=Mizzium Mortars deals 4 damage to target creature you don't control.\nOverload {3}{R}{R}{R}

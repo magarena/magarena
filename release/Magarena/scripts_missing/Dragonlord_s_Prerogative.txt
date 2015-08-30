@@ -1,0 +1,9 @@
+name=Dragonlord's Prerogative
+image=http://magiccards.info/scans/en/dtk/52.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={4}{U}{U}
+effect=As an additional cost to cast SN, you may reveal a Dragon card from your hand.~If you revealed a Dragon card or controlled a Dragon as you cast SN, SN can't be countered.~Draw four cards.
+timing=removal
+oracle=As an additional cost to cast Dragonlord's Prerogative, you may reveal a Dragon card from your hand.\nIf you revealed a Dragon card or controlled a Dragon as you cast Dragonlord's Prerogative, Dragonlord's Prerogative can't be countered.\nDraw four cards.

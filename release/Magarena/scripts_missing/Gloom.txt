@@ -1,10 +1,10 @@
 name=Gloom
-image=http://mtgimage.com/card/gloom.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/me4/83.jpg
+value=3.926
+rarity=R
 type=Enchantment
 cost={2}{B}
 ability=White spells cost {3} more to cast.;\
         Activated abilities of white enchantments cost {3} more to activate.
-timing=main
-oracle=White spells cost {3} more to cast. Activated abilities of white enchantments cost {3} more to activate.
+timing=enchantment
+oracle=White spells cost {3} more to cast.\nActivated abilities of white enchantments cost {3} more to activate.

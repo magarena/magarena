@@ -1,6 +1,6 @@
 name=Crown of Ascension
-image=http://mtgimage.com/card/crown%20of%20ascension.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/78.jpg
+value=2.614
 rarity=C
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={1}{U}
 ability=Enchant creature;\
         Enchanted creature has flying.;\
         Sacrifice SN: Enchanted creature and other creatures that share a creature type with it gain flying until end of turn.
-timing=main
-oracle=Enchant creature. Enchanted creature has flying. Sacrifice Crown of Ascension: Enchanted creature and other creatures that share a creature type with it gain flying until end of turn.
+timing=aura
+oracle=Enchant creature\nEnchanted creature has flying.\nSacrifice Crown of Ascension: Enchanted creature and other creatures that share a creature type with it gain flying until end of turn.

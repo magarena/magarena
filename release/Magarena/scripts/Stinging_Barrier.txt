@@ -1,5 +1,5 @@
 name=Stinging Barrier
-image=http://mtgimage.com/card/stinging%20barrier.jpg
+image=http://magiccards.info/scans/en/mm/107.jpg
 value=3.333
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{U}{U}
 pt=0/4
 ability=defender;{U},{T}:SN deals 1 damage to target creature or player.
 timing=main
-oracle=Defender. {U}, {T}: Stinging Barrier deals 1 damage to target creature or player.
+oracle=Defender\n{U}, {T}: Stinging Barrier deals 1 damage to target creature or player.

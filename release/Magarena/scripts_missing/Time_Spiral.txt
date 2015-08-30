@@ -1,6 +1,6 @@
 name=Time Spiral
-image=http://mtgimage.com/card/time%20spiral.jpg
-value=2.500
+image=http://magiccards.info/scans/en/us/103.jpg
+value=4.613
 rarity=R
 type=Sorcery
 cost={4}{U}{U}

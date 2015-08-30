@@ -1,5 +1,5 @@
 name=Rusted Relic
-image=http://mtgimage.com/card/rusted%20relic.jpg
+image=http://magiccards.info/scans/en/som/199.jpg
 value=3.243
 rarity=U
 type=Artifact

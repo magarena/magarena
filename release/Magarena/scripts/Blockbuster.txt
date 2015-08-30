@@ -1,5 +1,5 @@
 name=Blockbuster
-image=http://mtgimage.com/card/blockbuster.jpg
+image=http://magiccards.info/scans/en/rav/115.jpg
 value=1.761
 rarity=U
 type=Enchantment

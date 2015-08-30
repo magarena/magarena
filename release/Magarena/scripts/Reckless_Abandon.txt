@@ -1,5 +1,5 @@
 name=Reckless Abandon
-image=http://mtgimage.com/card/reckless%20abandon.jpg
+image=http://magiccards.info/scans/en/ddn/20.jpg
 value=4.214
 rarity=C
 type=Sorcery
@@ -8,4 +8,4 @@ ability=As an additional cost to cast SN, sacrifice a creature.
 effect=SN deals 4 damage to target creature or player.
 removal=4
 timing=removal
-oracle=As an additional cost to cast Reckless Abandon, sacrifice a creature. Reckless Abandon deals 4 damage to target creature or player.
+oracle=As an additional cost to cast Reckless Abandon, sacrifice a creature.\nReckless Abandon deals 4 damage to target creature or player.

@@ -1,9 +1,9 @@
 name=Prophecy
-image=http://mtgimage.com/card/prophecy.jpg
-value=2.500
+image=http://magiccards.info/scans/en/hl/114.jpg
+value=1.622
 rarity=C
 type=Sorcery
 cost={W}
 effect=Reveal the top card of target opponent's library. If it's a land, you gain 1 life. Then that player shuffles his or her library.~Draw a card at the beginning of the next turn's upkeep.
 timing=main
-oracle=Reveal the top card of target opponent's library. If it's a land, you gain 1 life. Then that player shuffles his or her library. Draw a card at the beginning of the next turn's upkeep.
+oracle=Reveal the top card of target opponent's library. If it's a land, you gain 1 life. Then that player shuffles his or her library.\nDraw a card at the beginning of the next turn's upkeep.

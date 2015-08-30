@@ -1,9 +1,9 @@
 name=Laquatus's Disdain
-image=http://mtgimage.com/card/laquatus%27s%20disdain.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ju/44.jpg
+value=1.912
 rarity=U
 type=Instant
 cost={1}{U}
 effect=Counter target spell cast from a graveyard.~Draw a card.
 timing=removal
-oracle=Counter target spell cast from a graveyard. Draw a card.
+oracle=Counter target spell cast from a graveyard.\nDraw a card.

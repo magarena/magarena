@@ -1,5 +1,5 @@
 name=Sage's Knowledge
-image=http://mtgimage.com/card/sage's%20knowledge.jpg
+image=http://magiccards.info/scans/en/p3k/52.jpg
 value=2.842
 rarity=C
 type=Sorcery

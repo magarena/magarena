@@ -1,0 +1,12 @@
+name=Quicksilver Behemoth
+image=http://magiccards.info/scans/en/ds/30.jpg
+value=2.288
+rarity=C
+type=Creature
+subtype=Beast
+cost={6}{U}
+pt=4/5
+ability=Affinity for artifacts;\
+        When SN attacks or blocks, return SN to its owner's hand at end of combat.
+timing=main
+oracle=Affinity for artifacts\nWhen Quicksilver Behemoth attacks or blocks, return it to its owner's hand at end of combat.

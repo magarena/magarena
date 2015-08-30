@@ -1,0 +1,12 @@
+name=Erebos's Titan
+image=http://magiccards.info/scans/en/ori/94.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Giant
+cost={1}{B}{B}{B}
+pt=5/5
+ability=As long as your opponents control no creatures, SN has indestructible.;\
+        Whenever a creature card leaves an opponent's graveyard, you may discard a card. If you do, return SN from your graveyard to your hand.
+timing=main
+oracle=As long as your opponents control no creatures, Erebos's Titan has indestructible.\nWhenever a creature card leaves an opponent's graveyard, you may discard a card. If you do, return Erebos's Titan from your graveyard to your hand.

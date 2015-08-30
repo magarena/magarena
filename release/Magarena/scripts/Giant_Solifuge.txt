@@ -1,5 +1,5 @@
 name=Giant Solifuge
-image=http://mtgimage.com/card/giant%20solifuge.jpg
+image=http://magiccards.info/scans/en/gp/143.jpg
 value=4.051
 ability=trample;haste;shroud
 rarity=R

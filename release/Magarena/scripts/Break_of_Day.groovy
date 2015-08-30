@@ -11,15 +11,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayer player = event.getPlayer();
-            final Collection<MagicPermanent> targets = game.filterPermanents(
-                player,
-                MagicTargetFilterFactory.CREATURE_YOU_CONTROL
-            );
-            for (final MagicPermanent creature : targets) {
-                game.doAction(new MagicChangeTurnPTAction(creature,1,1));
-                if (MagicCondition.FATEFUL_HOUR.accept(event.getSource())) {
-                    game.doAction(new MagicGainAbilityAction(creature,MagicAbility.Indestructible));
+            final boolean fatefulHour = MagicCondition.FATEFUL_HOUR.accept(event.getSource());
+            CREATURE_YOU_CONTROL.filter(event) each {
+                game.doAction(new ChangeTurnPTAction(it, 1, 1));
+                if (fatefulHour) {
+                    game.doAction(new GainAbilityAction(it, MagicAbility.Indestructible));
                 }
             }
         }

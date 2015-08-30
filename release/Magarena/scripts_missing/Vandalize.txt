@@ -1,0 +1,9 @@
+name=Vandalize
+image=http://magiccards.info/scans/en/dtk/165.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={4}{R}
+effect=Choose one or both — (1) Destroy target artifact. (2) Destroy target land.
+timing=main
+oracle=Choose one or both —\n• Destroy target artifact.\n• Destroy target land.

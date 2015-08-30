@@ -1,6 +1,6 @@
 name=Jungle Patrol
-image=http://mtgimage.com/card/jungle%20patrol.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/121.jpg
+value=3.449
 rarity=R
 type=Creature
 subtype=Human,Soldier
@@ -9,4 +9,4 @@ pt=3/2
 ability={1}{G}, {T}:  Put a 0/1 green Wall creature token with defender named Wood onto the battlefield.;\
         Sacrifice a token named Wood: Add {R} to your mana pool.
 timing=main
-oracle={1}{G}, {T}:  Put a 0/1 green Wall creature token with defender named Wood onto the battlefield. Sacrifice a token named Wood: Add {R} to your mana pool.
+oracle={1}{G}, {T}:  Put a 0/1 green Wall creature token with defender named Wood onto the battlefield.\nSacrifice a token named Wood: Add {R} to your mana pool.

@@ -1,0 +1,11 @@
+name=Ainok Artillerist
+image=http://magiccards.info/scans/en/dtk/171.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Hound,Archer
+cost={2}{G}
+pt=4/1
+ability=SN has reach as long as it has a +1/+1 counter on it.
+timing=main
+oracle=Ainok Artillerist has reach as long as it has a +1/+1 counter on it.

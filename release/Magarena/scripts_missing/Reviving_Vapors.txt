@@ -1,6 +1,6 @@
 name=Reviving Vapors
-image=http://mtgimage.com/card/reviving%20vapors.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vma/259.jpg
+value=3.500
 rarity=U
 type=Instant
 cost={2}{W}{U}

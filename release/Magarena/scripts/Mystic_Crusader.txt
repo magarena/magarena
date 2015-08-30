@@ -1,5 +1,5 @@
 name=Mystic Crusader
-image=http://mtgimage.com/card/mystic%20crusader.jpg
+image=http://magiccards.info/scans/en/od/33.jpg
 value=3.556
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=protection from black;protection from red;\
         As long as seven or more cards are in your graveyard, SN gets +1/+1 and has flying.
 timing=main
-oracle=Protection from black and from red. Threshold — As long as seven or more cards are in your graveyard, Mystic Crusader gets +1/+1 and has flying.
+oracle=Protection from black and from red\nThreshold — As long as seven or more cards are in your graveyard, Mystic Crusader gets +1/+1 and has flying.

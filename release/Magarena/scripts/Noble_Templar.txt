@@ -1,5 +1,5 @@
 name=Noble Templar
-image=http://mtgimage.com/card/noble%20templar.jpg
+image=http://magiccards.info/scans/en/ddo/21.jpg
 value=3.500
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/6
 ability=Vigilance;\
         Plainscycling {2}
 timing=main
-oracle=Vigilance. Plainscycling {2}
+oracle=Vigilance\nPlainscycling {2}

@@ -1,12 +1,12 @@
 name=Goblins of the Flarg
-image=http://mtgimage.com/card/goblins%20of%20the%20flarg.jpg
+image=http://magiccards.info/scans/en/med/98.jpg
 value=2.375
 rarity=C
 type=Creature
 subtype=Goblin,Warrior
 cost={R}
 pt=1/1
-ability=Mountainwalk
+ability=Mountainwalk;\
+        When you control a Dwarf, sacrifice SN.
 timing=main
-requires_groovy_code
-oracle=Mountainwalk. When you control a Dwarf, sacrifice Goblins of the Flarg.
+oracle=Mountainwalk\nWhen you control a Dwarf, sacrifice Goblins of the Flarg.

@@ -1,6 +1,6 @@
 name=Whirlpool Warrior
-image=http://mtgimage.com/card/whirlpool%20warrior.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pc2/29.jpg
+value=4.318
 rarity=R
 type=Creature
 subtype=Merfolk,Warrior
@@ -9,4 +9,4 @@ pt=2/2
 ability=When SN enters the battlefield, shuffle the cards from your hand into your library, then draw that many cards.;\
         {R}, Sacrifice SN: Each player shuffles the cards from his or her hand into his or her library, then draws that many cards.
 timing=main
-oracle=When Whirlpool Warrior enters the battlefield, shuffle the cards from your hand into your library, then draw that many cards. {R}, Sacrifice Whirlpool Warrior: Each player shuffles the cards from his or her hand into his or her library, then draws that many cards.
+oracle=When Whirlpool Warrior enters the battlefield, shuffle the cards from your hand into your library, then draw that many cards.\n{R}, Sacrifice Whirlpool Warrior: Each player shuffles the cards from his or her hand into his or her library, then draws that many cards.

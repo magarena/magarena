@@ -1,10 +1,10 @@
 name=Irrigation Ditch
-image=http://mtgimage.com/card/irrigation%20ditch.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/324.jpg
+value=3.182
 rarity=C
 type=Land
 ability=SN enters the battlefield tapped.;\
         {T}: Add {W} to your mana pool.;\
         {T}, Sacrifice SN: Add {G}{U} to your mana pool.
-timing=main
-oracle=Irrigation Ditch enters the battlefield tapped. {T}: Add {W} to your mana pool. {T}, Sacrifice Irrigation Ditch: Add {G}{U} to your mana pool.
+timing=land
+oracle=Irrigation Ditch enters the battlefield tapped.\n{T}: Add {W} to your mana pool.\n{T}, Sacrifice Irrigation Ditch: Add {G}{U} to your mana pool.

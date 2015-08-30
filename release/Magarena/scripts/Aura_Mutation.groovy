@@ -4,8 +4,8 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_ENCHANTMENT,
-                MagicDestroyTargetPicker.DestroyNoRegen,
+                NEG_TARGET_ENCHANTMENT,
+                MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target enchantment\$. " +
                 "Put X 1/1 green Saproling creature tokens onto the battlefield, where X is that enchantment's converted mana cost."
@@ -14,10 +14,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicDestroyAction(it));
-                game.doAction(new MagicPlayTokensAction(
+                game.doAction(new DestroyAction(it));
+                game.doAction(new PlayTokensAction(
                     event.getPlayer(),
-                    TokenCardDefinitions.get("1/1 green Saproling creature token"),
+                    CardDefinitions.getToken("1/1 green Saproling creature token"),
                     it.getConvertedCost()
                 ));
             });

@@ -1,0 +1,12 @@
+name=Atarka Efreet
+image=http://magiccards.info/scans/en/dtk/128.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Efreet,Shaman
+cost={3}{R}
+pt=5/1
+ability=Megamorph {2}{R};\
+        When SN is turned face up, SN deals 1 damage to target creature or player.
+timing=main
+oracle=Megamorph {2}{R}\nWhen Atarka Efreet is turned face up, it deals 1 damage to target creature or player.

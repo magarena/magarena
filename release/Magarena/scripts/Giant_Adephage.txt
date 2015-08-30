@@ -1,5 +1,5 @@
 name=Giant Adephage
-image=http://mtgimage.com/card/giant%20adephage.jpg
+image=http://magiccards.info/scans/en/gtc/121.jpg
 value=3.624
 rarity=M
 type=Creature
@@ -9,4 +9,4 @@ pt=7/7
 ability=trample
 timing=main
 requires_groovy_code
-oracle=Trample. Whenever Giant Adephage deals combat damage to a player, put a token onto the battlefield that's a copy of Giant Adephage.
+oracle=Trample\nWhenever Giant Adephage deals combat damage to a player, put a token onto the battlefield that's a copy of Giant Adephage.

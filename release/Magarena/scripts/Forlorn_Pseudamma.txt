@@ -1,5 +1,5 @@
 name=Forlorn Pseudamma
-image=http://mtgimage.com/card/forlorn%20pseudamma.jpg
+image=http://magiccards.info/scans/en/bng/71.jpg
 value=3.212
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=intimidate;\
         Whenever SN becomes untapped, you may pay {2}{B}. If you do, put a 2/2 black Zombie enchantment creature token onto the battlefield.
 timing=main
-oracle=Intimidate. Inspired — Whenever Forlorn Pseudamma becomes untapped, you may pay {2}{B}. If you do, put a 2/2 black Zombie enchantment creature token onto the battlefield.
+oracle=Intimidate\nInspired — Whenever Forlorn Pseudamma becomes untapped, you may pay {2}{B}. If you do, put a 2/2 black Zombie enchantment creature token onto the battlefield.

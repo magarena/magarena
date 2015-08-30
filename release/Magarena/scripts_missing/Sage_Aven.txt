@@ -1,6 +1,6 @@
 name=Sage Aven
-image=http://mtgimage.com/card/sage%20aven.jpg
-value=2.500
+image=http://magiccards.info/scans/en/9e/95.jpg
+value=1.827
 rarity=C
 type=Creature
 subtype=Bird,Wizard
@@ -9,4 +9,4 @@ pt=1/3
 ability=Flying;\
         When SN enters the battlefield, look at the top four cards of your library, then put them back in any order.
 timing=main
-oracle=Flying. When Sage Aven enters the battlefield, look at the top four cards of your library, then put them back in any order.
+oracle=Flying\nWhen Sage Aven enters the battlefield, look at the top four cards of your library, then put them back in any order.

@@ -1,5 +1,5 @@
 name=Nightsky Mimic
-image=http://mtgimage.com/card/nightsky%20mimic.jpg
+image=http://magiccards.info/scans/en/eve/91.jpg
 value=3.722
 rarity=C
 type=Creature

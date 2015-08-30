@@ -1,5 +1,5 @@
 name=Vedalken Æthermage
-image=http://mtgimage.com/card/vedalken%20aethermage.jpg
+image=http://magiccards.info/scans/en/fut/61.jpg
 value=3.779
 rarity=C
 type=Creature
@@ -10,4 +10,4 @@ ability=Flash;\
         When SN enters the battlefield, return target Sliver to its owner's hand.;\
         Wizardcycling {3}
 timing=main
-oracle=Flash. When Vedalken Æthermage enters the battlefield, return target Sliver to its owner's hand. Wizardcycling {3}
+oracle=Flash\nWhen Vedalken Æthermage enters the battlefield, return target Sliver to its owner's hand.\nWizardcycling {3}

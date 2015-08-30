@@ -1,5 +1,5 @@
 name=Storm Spirit
-image=http://mtgimage.com/card/storm%20spirit.jpg
+image=http://magiccards.info/scans/en/me2/198.jpg
 value=2.917
 rarity=R
 type=Creature
@@ -8,4 +8,4 @@ cost={3}{G}{W}{U}
 pt=3/3
 ability=flying;{T}:SN deals 2 damage to target creature.
 timing=main
-oracle=Flying. {T}: Storm Spirit deals 2 damage to target creature.
+oracle=Flying\n{T}: Storm Spirit deals 2 damage to target creature.

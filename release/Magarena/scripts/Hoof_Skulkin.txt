@@ -1,5 +1,5 @@
 name=Hoof Skulkin
-image=http://mtgimage.com/card/hoof%20skulkin.jpg
+image=http://magiccards.info/scans/en/eve/169.jpg
 value=1.755
 rarity=C
 type=Artifact,Creature

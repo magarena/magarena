@@ -14,7 +14,7 @@ def ST = new MagicStatic(MagicLayer.Type) {
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Animate),
-        "Animate"
+        "Becomes"
     ) {
 
         @Override
@@ -29,7 +29,7 @@ def ST = new MagicStatic(MagicLayer.Type) {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.POS_TARGET_LAND,
+                POS_TARGET_LAND,
                 this,
                 "Target land becomes a 2/2 creature that's still a land. Put a +1/+1 counter on it."
             );
@@ -38,8 +38,8 @@ def ST = new MagicStatic(MagicLayer.Type) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicBecomesCreatureAction(it,PT,ST));
-                game.doAction(new MagicChangeCountersAction(it,MagicCounterType.PlusOne,1));
+                game.doAction(new BecomesCreatureAction(it,PT,ST));
+                game.doAction(new ChangeCountersAction(it,MagicCounterType.PlusOne,1));
             });
         }
     }

@@ -1,5 +1,5 @@
 name=Hammerfist Giant
-image=http://mtgimage.com/card/hammerfist%20giant.jpg
+image=http://magiccards.info/scans/en/rav/130.jpg
 value=3.485
 rarity=R
 type=Creature

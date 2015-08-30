@@ -1,6 +1,6 @@
 name=Pulsemage Advocate
-image=http://mtgimage.com/card/pulsemage%20advocate.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ju/19.jpg
+value=3.073
 rarity=R
 type=Creature
 subtype=Human,Cleric

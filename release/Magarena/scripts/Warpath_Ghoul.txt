@@ -1,5 +1,5 @@
 name=Warpath Ghoul
-image=http://mtgimage.com/card/warpath%20ghoul.jpg
+image=http://magiccards.info/scans/en/m12/117.jpg
 value=2.091
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Zombie
 cost={2}{B}
 pt=3/2
 timing=main
+oracle=NONE

@@ -1,5 +1,5 @@
 name=Door to Nothingness
-image=http://mtgimage.com/card/door%20to%20nothingness.jpg
+image=http://magiccards.info/scans/en/m13/203.jpg
 value=3.924
 rarity=R
 type=Artifact
@@ -7,4 +7,4 @@ cost={5}
 ability=SN enters the battlefield tapped.
 timing=artifact
 requires_groovy_code
-oracle=Door to Nothingness enters the battlefield tapped. {W}{W}{U}{U}{B}{B}{R}{R}{G}{G}, {T}, Sacrifice Door to Nothingness: Target player loses the game.
+oracle=Door to Nothingness enters the battlefield tapped.\n{W}{W}{U}{U}{B}{B}{R}{R}{G}{G}, {T}, Sacrifice Door to Nothingness: Target player loses the game.

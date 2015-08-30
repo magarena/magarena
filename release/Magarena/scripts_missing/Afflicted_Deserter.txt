@@ -1,11 +1,12 @@
 name=Afflicted Deserter
-image=http://mtgimage.com/card/afflicted%20deserter.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dka/81a.jpg
+value=2.593
 rarity=U
 type=Creature
 subtype=Human,Werewolf
 cost={3}{R}
 pt=3/2
 ability=At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+transform=Werewolf Ransacker
 timing=main
 oracle=At the beginning of each upkeep, if no spells were cast last turn, transform Afflicted Deserter.

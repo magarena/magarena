@@ -1,12 +1,12 @@
 name=Gorgon Recluse
-image=http://mtgimage.com/card/gorgon%20recluse.jpg
+image=http://magiccards.info/scans/en/ts/111.jpg
 value=3.500
 rarity=C
 type=Creature
 subtype=Gorgon
 cost={3}{B}{B}
 pt=2/4
-ability=Madness {B}{B}
+ability=Whenever SN blocks or becomes blocked by a nonblack creature, destroy that creature at end of combat.;\
+        Madness {B}{B}
 timing=main
-requires_groovy_code=Deathgazer
-oracle=Whenever Gorgon Recluse blocks or becomes blocked by a nonblack creature, destroy that creature at end of combat. Madness {B}{B}
+oracle=Whenever Gorgon Recluse blocks or becomes blocked by a nonblack creature, destroy that creature at end of combat.\nMadness {B}{B}

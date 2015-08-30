@@ -1,5 +1,5 @@
 name=Precinct Captain
-image=http://mtgimage.com/card/precinct%20captain.jpg
+image=http://magiccards.info/scans/en/ddo/22.jpg
 value=3.800
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=first strike;\
         Whenever SN deals combat damage to a player, put a 1/1 white Soldier creature token onto the battlefield.
 timing=main
-oracle=First strike. Whenever Precinct Captain deals combat damage to a player, put a 1/1 white Soldier creature token onto the battlefield.
+oracle=First strike\nWhenever Precinct Captain deals combat damage to a player, put a 1/1 white Soldier creature token onto the battlefield.

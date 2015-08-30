@@ -1,5 +1,5 @@
 name=Junktroller
-image=http://mtgimage.com/card/junktroller.jpg
+image=http://magiccards.info/scans/en/rav/264.jpg
 value=2.962
 rarity=U
 type=Artifact,Creature
@@ -9,4 +9,4 @@ pt=0/6
 ability=Defender
 timing=main
 requires_groovy_code
-oracle=Defender. {T}: Put target card from a graveyard on the bottom of its owner's library.
+oracle=Defender\n{T}: Put target card from a graveyard on the bottom of its owner's library.

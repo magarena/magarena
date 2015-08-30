@@ -1,6 +1,6 @@
 name=Legions of Lim-Dûl
-image=http://mtgimage.com/card/legions%20of%20lim-dul.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cstd/29.jpg
+value=2.530
 rarity=C
 type=Creature
 subtype=Zombie

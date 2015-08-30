@@ -6,7 +6,7 @@
             // before resolution but we need to make a choice here
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD,
+                TARGET_CREATURE_CARD_FROM_GRAVEYARD,
                 MagicCondition.THRESHOLD_CONDITION.accept(cardOnStack) ?
                     MagicGraveyardTargetPicker.PutOntoBattlefield :
                     MagicGraveyardTargetPicker.ReturnToHand,
@@ -21,13 +21,12 @@
             final MagicPlayer player = event.getPlayer();
             event.processTargetCard(game, {
                 if (MagicCondition.THRESHOLD_CONDITION.accept(event.getSource())) {
-                    game.doAction(new MagicReanimateAction(
+                    game.doAction(new ReanimateAction(
                         it,
                         player
                     ));
                 } else {
-                    game.doAction(new MagicRemoveCardAction(it,MagicLocationType.Graveyard));
-                    game.doAction(new MagicMoveCardAction(it,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                    game.doAction(new ShiftCardAction(it,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
                 }
             });
         }

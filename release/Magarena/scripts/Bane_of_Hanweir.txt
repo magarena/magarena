@@ -1,5 +1,5 @@
 name=Bane of Hanweir
-image=http://mtgimage.com/card/bane%20of%20hanweir.jpg
+image=http://magiccards.info/scans/en/isd/145b.jpg
 value=3.431
 color=r
 rarity=U
@@ -11,4 +11,4 @@ ability=SN attacks each turn if able.;\
 transform=Hanweir Watchkeep
 timing=main
 hidden
-oracle=Bane of Hanweir attacks each turn if able. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Bane of Hanweir.
+oracle=Bane of Hanweir attacks each turn if able.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Bane of Hanweir.

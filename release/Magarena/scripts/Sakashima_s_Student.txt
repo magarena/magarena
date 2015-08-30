@@ -1,13 +1,13 @@
 name=Sakashima's Student
-image=http://mtgimage.com/set/pc2/sakashima%27s%20student.jpg
+image=http://magiccards.info/scans/en/pc2/24.jpg
 value=4.466
 rarity=R
 type=Creature
 subtype=Human,Ninja
 cost={2}{U}{U}
 pt=0/0
-ability=Ninjutsu {1}{U};\
-        Cast SN with AI only if there is a creature on the battlefield.
+ability=Cast SN with AI only if there is a creature on the battlefield.;\
+        Ninjutsu {1}{U}
 timing=main
 requires_groovy_code
-oracle=Ninjutsu {1}{U}. You may have Sakashima's Student enter the battlefield as a copy of any creature on the battlefield, except it's still a Ninja in addition to its other creature types.
+oracle=Ninjutsu {1}{U}\nYou may have Sakashima's Student enter the battlefield as a copy of any creature on the battlefield, except it's still a Ninja in addition to its other creature types.

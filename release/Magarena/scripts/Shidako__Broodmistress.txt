@@ -1,5 +1,5 @@
 name=Shidako, Broodmistress
-image=http://mtgimage.com/card/shidako%2C%20broodmistress.jpg
+image=http://magiccards.info/scans/en/chk/233b.jpg
 value=3.235
 rarity=U
 type=Legendary,Creature

@@ -1,8 +1,8 @@
 name=Sungrass Prairie
-image=http://mtgimage.com/card/sungrass%20prairie.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/328.jpg
+value=3.810
 rarity=R
 type=Land
 ability={1}, {T}: Add {G}{W} to your mana pool.
-timing=main
+timing=land
 oracle={1}, {T}: Add {G}{W} to your mana pool.

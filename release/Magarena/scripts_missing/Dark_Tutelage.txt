@@ -1,9 +1,0 @@
-name=Dark Tutelage
-image=http://mtgimage.com/card/dark%20tutelage.jpg
-value=2.500
-rarity=R
-type=Enchantment
-cost={2}{B}
-ability=At the beginning of your upkeep, reveal the top card of your library and put that card into your hand. You lose life equal to its converted mana cost.
-timing=main
-oracle=At the beginning of your upkeep, reveal the top card of your library and put that card into your hand. You lose life equal to its converted mana cost.

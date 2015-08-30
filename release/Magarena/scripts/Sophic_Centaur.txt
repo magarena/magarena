@@ -1,11 +1,11 @@
 name=Sophic Centaur
-image=http://mtgimage.com/card/sophic%20centaur.jpg
+image=http://magiccards.info/scans/en/pc/139.jpg
 value=1.423
 rarity=U
 type=Creature
 subtype=Centaur,Spellshaper
 cost={3}{G}
 pt=1/1
+ability={2}{G}{G}, {T}, Discard a card: You gain 2 life for each card in your hand.
 timing=main
 oracle={2}{G}{G}, {T}, Discard a card: You gain 2 life for each card in your hand.
-requires_groovy_code

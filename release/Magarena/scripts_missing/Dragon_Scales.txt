@@ -1,6 +1,6 @@
 name=Dragon Scales
-image=http://mtgimage.com/card/dragon%20scales.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sc/10.jpg
+value=3.067
 rarity=C
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={1}{W}
 ability=Enchant creature;\
         Enchanted creature gets +1/+2 and has vigilance.;\
         When a creature with converted mana cost 6 or greater enters the battlefield, you may return SN from your graveyard to the battlefield attached to that creature.
-timing=main
-oracle=Enchant creature. Enchanted creature gets +1/+2 and has vigilance. When a creature with converted mana cost 6 or greater enters the battlefield, you may return Dragon Scales from your graveyard to the battlefield attached to that creature.
+timing=aura
+oracle=Enchant creature\nEnchanted creature gets +1/+2 and has vigilance.\nWhen a creature with converted mana cost 6 or greater enters the battlefield, you may return Dragon Scales from your graveyard to the battlefield attached to that creature.

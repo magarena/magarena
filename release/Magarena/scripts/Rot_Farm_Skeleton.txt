@@ -1,0 +1,12 @@
+name=Rot Farm Skeleton
+image=http://magiccards.info/scans/en/dgm/98.jpg
+value=3.836
+rarity=U
+type=Creature
+subtype=Plant,Skeleton
+cost={2}{B}{G}
+pt=4/1
+ability=SN can't block.;\
+        {2}{B}{G}, Put the top four cards of your library into your graveyard: Return SN from your graveyard to the battlefield. Activate this ability only any time you could cast a sorcery.
+timing=main
+oracle=Rot Farm Skeleton can't block.\n{2}{B}{G}, Put the top four cards of your library into your graveyard: Return Rot Farm Skeleton from your graveyard to the battlefield. Activate this ability only any time you could cast a sorcery.

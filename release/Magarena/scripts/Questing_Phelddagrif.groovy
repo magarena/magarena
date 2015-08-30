@@ -1,5 +1,5 @@
 [
-   new MagicPermanentActivation(
+    new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Pump),
         "Pump"
     ) {
@@ -13,7 +13,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_OPPONENT,
+                TARGET_OPPONENT,
                 this,
                 "SN gets +1/+1 until end of turn. " +
                 "Target opponent\$ puts a 1/1 green Hippo creature token onto the battlefield."
@@ -21,11 +21,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(), 1, 1));
+            game.doAction(new ChangeTurnPTAction(event.getPermanent(), 1, 1));
             event.processTargetPlayer(game, {
-                game.doAction(new MagicPlayTokensAction(
+                game.doAction(new PlayTokensAction(
                     it,
-                    TokenCardDefinitions.get("1/1 green Hippo creature token"),
+                    CardDefinitions.getToken("1/1 green Hippo creature token"),
                     1
                 ));
             });
@@ -45,17 +45,17 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_OPPONENT,
+                TARGET_OPPONENT,
                 this,
                 "SN gains protection from black and from red until end of turn. Target opponent\$ gains 2 life."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicGainAbilityAction(event.getPermanent(),MagicAbility.ProtectionFromBlack));
-            game.doAction(new MagicGainAbilityAction(event.getPermanent(),MagicAbility.ProtectionFromRed));
+            game.doAction(new GainAbilityAction(event.getPermanent(),MagicAbility.ProtectionFromBlack));
+            game.doAction(new GainAbilityAction(event.getPermanent(),MagicAbility.ProtectionFromRed));
             event.processTargetPlayer(game, {
-                game.doAction(new MagicChangeLifeAction(it,2));
+                game.doAction(new ChangeLifeAction(it,2));
             });
         }
     },
@@ -81,9 +81,9 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicGainAbilityAction(event.getPermanent(),MagicAbility.Flying));
+            game.doAction(new GainAbilityAction(event.getPermanent(),MagicAbility.Flying));
             if (event.isYes()) {
-                game.doAction(new MagicDrawAction(event.getPlayer(),1));
+                game.doAction(new DrawAction(event.getPlayer(),1));
             }
         }
     }

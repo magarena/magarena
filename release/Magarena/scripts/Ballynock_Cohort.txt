@@ -1,5 +1,5 @@
 name=Ballynock Cohort
-image=http://mtgimage.com/card/ballynock%20cohort.jpg
+image=http://magiccards.info/scans/en/shm/3.jpg
 value=3.430
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=First strike;\
         SN gets +1/+1 as long as you control another white creature.
 timing=main
-oracle=First strike. Ballynock Cohort gets +1/+1 as long as you control another white creature.
+oracle=First strike\nBallynock Cohort gets +1/+1 as long as you control another white creature.

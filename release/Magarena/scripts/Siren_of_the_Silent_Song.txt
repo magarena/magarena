@@ -1,5 +1,5 @@
 name=Siren of the Silent Song
-image=http://mtgimage.com/card/siren%20of%20the%20silent%20song.jpg
+image=http://magiccards.info/scans/en/bng/155.jpg
 value=3.821
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. Inspired — Whenever Siren of the Silent Song becomes untapped, each opponent discards a card, then puts the top card of his or her library into his or her graveyard.
+oracle=Flying\nInspired — Whenever Siren of the Silent Song becomes untapped, each opponent discards a card, then puts the top card of his or her library into his or her graveyard.

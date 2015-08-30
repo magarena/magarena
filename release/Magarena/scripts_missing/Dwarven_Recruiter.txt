@@ -1,6 +1,6 @@
 name=Dwarven Recruiter
-image=http://mtgimage.com/card/dwarven%20recruiter.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/186.jpg
+value=3.815
 rarity=U
 type=Creature
 subtype=Dwarf

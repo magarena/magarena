@@ -1,6 +1,6 @@
 name=Prossh, Skyraider of Kher
-image=http://mtgimage.com/card/prossh%2C%20skyraider%20of%20kher.jpg
-value=2.500
+image=http://magiccards.info/scans/en/c13/204.jpg
+value=3.802
 rarity=M
 type=Legendary,Creature
 subtype=Dragon
@@ -10,4 +10,4 @@ ability=Flying;\
         When you cast SN, put X 0/1 red Kobold creature tokens named Kobolds of Kher Keep onto the battlefield, where X is the amount of mana spent to cast Prossh.;\
         Sacrifice another creature: Prossh gets +1/+0 until end of turn.
 timing=main
-oracle=Flying. When you cast Prossh, Skyraider of Kher, put X 0/1 red Kobold creature tokens named Kobolds of Kher Keep onto the battlefield, where X is the amount of mana spent to cast Prossh. Sacrifice another creature: Prossh gets +1/+0 until end of turn.
+oracle=Flying\nWhen you cast Prossh, Skyraider of Kher, put X 0/1 red Kobold creature tokens named Kobolds of Kher Keep onto the battlefield, where X is the amount of mana spent to cast Prossh.\nSacrifice another creature: Prossh gets +1/+0 until end of turn.

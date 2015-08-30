@@ -1,0 +1,11 @@
+name=Cenn's Heir
+image=http://magiccards.info/scans/en/lw/8.jpg
+value=3.373
+rarity=C
+type=Creature
+subtype=Kithkin,Soldier
+cost={1}{W}
+pt=1/1
+timing=main
+requires_groovy_code
+oracle=Whenever Cenn's Heir attacks, it gets +1/+1 until end of turn for each other attacking Kithkin.

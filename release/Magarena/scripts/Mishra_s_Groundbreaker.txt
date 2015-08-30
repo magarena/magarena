@@ -1,9 +1,9 @@
 name=Mishra's Groundbreaker
-image=http://mtgimage.com/set/me2/mishra%27s%20groundbreaker.jpg
+image=http://magiccards.info/scans/en/me2/215.jpg
 value=2.258
 rarity=U
 type=Artifact
 cost={4}
+ability={T}, Sacrifice SN: Target land becomes a 3/3 artifact creature that's still a land.
 timing=main
-requires_groovy_code
 oracle={T}, Sacrifice Mishra's Groundbreaker: Target land becomes a 3/3 artifact creature that's still a land.

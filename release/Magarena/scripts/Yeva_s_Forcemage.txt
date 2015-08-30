@@ -1,6 +1,6 @@
 name=Yeva's Forcemage
-image=http://mtgimage.com/card/yeva's%20forcemage.jpg
-value=3.000
+image=http://magiccards.info/scans/en/ori/208.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Elf,Shaman

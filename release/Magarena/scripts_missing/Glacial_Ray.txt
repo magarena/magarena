@@ -1,10 +1,10 @@
 name=Glacial Ray
-image=http://mtgimage.com/card/glacial%20ray.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mma/115.jpg
+value=3.944
 rarity=C
 type=Instant
 subtype=Arcane
 cost={1}{R}
 effect=SN deals 2 damage to target creature or player.~Splice onto Arcane {1}{R}
 timing=removal
-oracle=Glacial Ray deals 2 damage to target creature or player. Splice onto Arcane {1}{R}
+oracle=Glacial Ray deals 2 damage to target creature or player.\nSplice onto Arcane {1}{R}

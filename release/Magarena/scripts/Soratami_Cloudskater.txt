@@ -1,5 +1,5 @@
 name=Soratami Cloudskater
-image=http://mtgimage.com/card/soratami%20cloudskater.jpg
+image=http://magiccards.info/scans/en/chk/86.jpg
 value=2.667
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=flying;\
         {2},Return a land you control to its owner's hand: Draw a card, then discard a card.
 timing=main
-oracle=Flying. {2}, Return a land you control to its owner's hand: Draw a card, then discard a card.
+oracle=Flying\n{2}, Return a land you control to its owner's hand: Draw a card, then discard a card.

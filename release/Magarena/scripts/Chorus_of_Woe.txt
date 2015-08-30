@@ -1,9 +1,10 @@
 name=Chorus of Woe
-image=http://mtgimage.com/card/chorus%20of%20woe.jpg
+image=http://magiccards.info/scans/en/st/68.jpg
 value=2.587
 rarity=C
 type=Sorcery
 cost={B}
+ability=Cast SN with AI only if you control a creature.
 effect=Creatures you control get +1/+0 until end of turn.
 timing=fmain
 oracle=Creatures you control get +1/+0 until end of turn.

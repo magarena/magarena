@@ -1,5 +1,5 @@
 name=Jodah's Avenger
-image=http://mtgimage.com/card/jodah's%20avenger.jpg
+image=http://magiccards.info/scans/en/pc/42.jpg
 value=3.720
 rarity=U
 type=Creature

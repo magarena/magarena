@@ -1,5 +1,5 @@
 name=Changeling Sentinel
-image=http://mtgimage.com/card/changeling%20sentinel.jpg
+image=http://magiccards.info/scans/en/mt/6.jpg
 value=2.324
 ability=changeling;vigilance
 rarity=C
@@ -8,4 +8,4 @@ subtype=Shapeshifter
 cost={3}{W}
 pt=3/2
 timing=main
-oracle=Changeling. Vigilance
+oracle=Changeling\nVigilance

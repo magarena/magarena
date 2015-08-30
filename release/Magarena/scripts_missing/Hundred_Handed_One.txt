@@ -1,6 +1,6 @@
 name=Hundred-Handed One
-image=http://mtgimage.com/card/hundred-handed%20one.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ths/20.jpg
+value=3.561
 rarity=R
 type=Creature
 subtype=Giant
@@ -10,4 +10,4 @@ ability=Vigilance;\
         {3}{W}{W}{W}: Monstrosity 3.;\
         As long as SN is monstrous, it has reach and can block an additional ninety-nine creatures each combat.
 timing=main
-oracle=Vigilance. {3}{W}{W}{W}: Monstrosity 3. As long as Hundred-Handed One is monstrous, it has reach and can block an additional ninety-nine creatures each combat.
+oracle=Vigilance\n{3}{W}{W}{W}: Monstrosity 3.\nAs long as Hundred-Handed One is monstrous, it has reach and can block an additional ninety-nine creatures each combat.

@@ -1,0 +1,12 @@
+name=Myojin of Night's Reach
+image=http://magiccards.info/scans/en/chk/126.jpg
+value=3.476
+rarity=R
+type=Legendary,Creature
+subtype=Spirit
+cost={5}{B}{B}{B}
+pt=5/2
+ability=SN has indestructible as long as it has a divinity counter on it.
+timing=main
+requires_groovy_code
+oracle=Myojin of Night's Reach enters the battlefield with a divinity counter on it if you cast it from your hand.\nMyojin of Night's Reach has indestructible as long as it has a divinity counter on it.\nRemove a divinity counter from Myojin of Night's Reach: Each opponent discards his or her hand.

@@ -1,12 +1,12 @@
 name=Perimeter Captain
-image=http://mtgimage.com/card/perimeter%20captain.jpg
+image=http://magiccards.info/scans/en/wwk/16.jpg
 value=3.863
 rarity=U
 type=Creature
 subtype=Human,Soldier
 cost={W}
 pt=0/4
-ability=defender
+ability=Defender.;\
+        Whenever a creature you control with defender blocks, you may gain 2 life.
 timing=smain
-requires_groovy_code
-oracle=Defender. Whenever a creature you control with defender blocks, you may gain 2 life.
+oracle=Defender\nWhenever a creature you control with defender blocks, you may gain 2 life.

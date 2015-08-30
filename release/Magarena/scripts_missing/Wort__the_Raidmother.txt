@@ -1,6 +1,6 @@
 name=Wort, the Raidmother
-image=http://mtgimage.com/card/wort%2C%20the%20raidmother.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/223.jpg
+value=3.750
 rarity=R
 type=Legendary,Creature
 subtype=Goblin,Shaman
@@ -9,4 +9,4 @@ pt=3/3
 ability=When SN enters the battlefield, put two 1/1 red and green Goblin Warrior creature tokens onto the battlefield.;\
         Each red or green instant or sorcery spell you cast has conspire.
 timing=main
-oracle=When Wort, the Raidmother enters the battlefield, put two 1/1 red and green Goblin Warrior creature tokens onto the battlefield. Each red or green instant or sorcery spell you cast has conspire.
+oracle=When Wort, the Raidmother enters the battlefield, put two 1/1 red and green Goblin Warrior creature tokens onto the battlefield.\nEach red or green instant or sorcery spell you cast has conspire.

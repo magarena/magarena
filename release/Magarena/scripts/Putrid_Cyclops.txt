@@ -1,0 +1,11 @@
+name=Putrid Cyclops
+image=http://magiccards.info/scans/en/fut/75.jpg
+value=1.963
+rarity=C
+type=Creature
+subtype=Zombie,Cyclops
+cost={2}{B}
+pt=3/3
+timing=main
+requires_groovy_code
+oracle=When Putrid Cyclops enters the battlefield, scry 1, then reveal the top card of your library. Putrid Cyclops gets -X/-X until end of turn, where X is that card's converted mana cost.

@@ -1,0 +1,11 @@
+name=Dromoka Dunecaster
+image=http://magiccards.info/scans/en/dtk/13.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={W}
+pt=0/2
+ability={1}{W}, {T}: Tap target creature without flying.
+timing=main
+oracle={1}{W}, {T}: Tap target creature without flying.

@@ -1,6 +1,6 @@
 name=Umbilicus
-image=http://mtgimage.com/card/umbilicus.jpg
-value=2.500
+image=http://magiccards.info/scans/en/us/312.jpg
+value=3.667
 rarity=R
 type=Artifact
 cost={4}

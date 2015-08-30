@@ -1,10 +1,10 @@
 name=Tainted Field
-image=http://mtgimage.com/card/tainted%20field.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddk/34.jpg
+value=3.714
 rarity=U
 type=Land
 mana=w3b3
 ability={T}: Add {1} to your mana pool.
 timing=land
 requires_groovy_code
-oracle={T}: Add {1} to your mana pool. {T}: Add {W} or {B} to your mana pool. Activate this ability only if you control a Swamp.
+oracle={T}: Add {1} to your mana pool.\n{T}: Add {W} or {B} to your mana pool. Activate this ability only if you control a Swamp.

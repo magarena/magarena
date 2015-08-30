@@ -1,5 +1,5 @@
 name=Akki Raider
-image=http://mtgimage.com/card/akki%20raider.jpg
+image=http://magiccards.info/scans/en/bok/92.jpg
 value=2.000
 rarity=U
 type=Creature

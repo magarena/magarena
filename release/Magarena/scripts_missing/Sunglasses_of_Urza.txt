@@ -1,9 +1,9 @@
 name=Sunglasses of Urza
-image=http://mtgimage.com/card/sunglasses%20of%20urza.jpg
-value=2.500
+image=http://magiccards.info/scans/en/4e/365.jpg
+value=3.913
 rarity=R
 type=Artifact
 cost={3}
 ability=You may spend white mana as though it were red mana.
-timing=main
+timing=artifact
 oracle=You may spend white mana as though it were red mana.

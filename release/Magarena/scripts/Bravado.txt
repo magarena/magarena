@@ -1,0 +1,12 @@
+name=Bravado
+image=http://magiccards.info/scans/en/us/177.jpg
+value=3.464
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{R}
+ability=Cast SN with AI only if you control two or more creatures.
+timing=aura
+enchant=pump,pos creature
+requires_groovy_code
+oracle=Enchant creature\nEnchanted creature gets +1/+1 for each other creature you control.

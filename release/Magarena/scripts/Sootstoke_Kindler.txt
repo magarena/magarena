@@ -1,5 +1,5 @@
 name=Sootstoke Kindler
-image=http://mtgimage.com/card/sootstoke%20kindler.jpg
+image=http://magiccards.info/scans/en/shm/195.jpg
 value=3.110
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=Haste;\
         {T}: Target black or red creature gains haste until end of turn.
 timing=main
-oracle=Haste. {T}: Target black or red creature gains haste until end of turn.
+oracle=Haste\n{T}: Target black or red creature gains haste until end of turn.

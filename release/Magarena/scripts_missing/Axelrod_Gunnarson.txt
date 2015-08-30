@@ -1,7 +1,7 @@
 name=Axelrod Gunnarson
-image=http://mtgimage.com/card/axelrod%20gunnarson.jpg
-value=2.500
-rarity=R
+image=http://magiccards.info/scans/en/me3/143.jpg
+value=2.674
+rarity=U
 type=Legendary,Creature
 subtype=Giant
 cost={4}{B}{B}{R}{R}
@@ -9,4 +9,4 @@ pt=5/5
 ability=Trample;\
         Whenever a creature dealt damage by SN this turn dies, you gain 1 life and Axelrod deals 1 damage to target player.
 timing=main
-oracle=Trample. Whenever a creature dealt damage by Axelrod Gunnarson this turn dies, you gain 1 life and Axelrod deals 1 damage to target player.
+oracle=Trample\nWhenever a creature dealt damage by Axelrod Gunnarson this turn dies, you gain 1 life and Axelrod deals 1 damage to target player.

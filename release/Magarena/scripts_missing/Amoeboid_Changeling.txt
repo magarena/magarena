@@ -1,6 +1,6 @@
 name=Amoeboid Changeling
-image=http://mtgimage.com/card/amoeboid%20changeling.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lw/51.jpg
+value=3.804
 rarity=C
 type=Creature
 subtype=Shapeshifter
@@ -10,4 +10,4 @@ ability=Changeling;\
         {T}: Target creature gains all creature types until end of turn.;\
         {T}: Target creature loses all creature types until end of turn.
 timing=main
-oracle=Changeling. {T}: Target creature gains all creature types until end of turn. {T}: Target creature loses all creature types until end of turn.
+oracle=Changeling\n{T}: Target creature gains all creature types until end of turn.\n{T}: Target creature loses all creature types until end of turn.

@@ -1,5 +1,5 @@
 name=Bog Elemental
-image=http://mtgimage.com/card/bog%20elemental.jpg
+image=http://magiccards.info/scans/en/pr/57.jpg
 value=1.500
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=5/4
 ability=Protection from white
 timing=main
 requires_groovy_code
-oracle=Protection from white. At the beginning of your upkeep, sacrifice Bog Elemental unless you sacrifice a land.
+oracle=Protection from white\nAt the beginning of your upkeep, sacrifice Bog Elemental unless you sacrifice a land.

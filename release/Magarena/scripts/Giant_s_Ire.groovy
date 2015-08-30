@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_PLAYER,
+                NEG_TARGET_PLAYER,
                 new MagicDamageTargetPicker(4),
                 this,
                 "SN deals 4 damage to target player\$. " +
@@ -14,11 +14,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
-                final MagicDamage damage=new MagicDamage(event.getSource(),it,4);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new DealDamageAction(event.getSource(),it,4));
                 final MagicPlayer you = event.getPlayer();
                 if (you.controlsPermanent(MagicSubType.Giant)) {
-                    game.doAction(new MagicDrawAction(you));
+                    game.doAction(new DrawAction(you));
                 }
             });
         }

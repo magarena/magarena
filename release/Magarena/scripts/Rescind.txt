@@ -1,5 +1,5 @@
 name=Rescind
-image=http://mtgimage.com/card/rescind.jpg
+image=http://magiccards.info/scans/en/vma/90.jpg
 value=4.000
 rarity=C
 type=Instant
@@ -7,4 +7,4 @@ cost={1}{U}{U}
 ability=cycling {2}
 effect=Return target permanent to its owner's hand.
 timing=removal
-oracle=Return target permanent to its owner's hand. Cycling {2}
+oracle=Return target permanent to its owner's hand.\nCycling {2}

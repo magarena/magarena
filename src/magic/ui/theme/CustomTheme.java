@@ -15,6 +15,7 @@ import java.util.Properties;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 import magic.ui.ImageFileIO;
+import magic.utility.FileIO;
 
 public class CustomTheme extends AbstractTheme {
 
@@ -117,7 +118,7 @@ public class CustomTheme extends AbstractTheme {
         }
 
         final InputStream inputStream=getInputStream(THEME_PROPERTIES_FILE);
-        final Properties properties=magic.data.FileIO.toProp(inputStream);
+        final Properties properties=FileIO.toProp(inputStream);
 
         for (final Map.Entry<Object,Object> entry : properties.entrySet()) {
             parseEntry(entry.getKey().toString(),entry.getValue().toString().trim());

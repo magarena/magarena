@@ -5,7 +5,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicCardAction;
-import magic.model.action.MagicDiscardCardAction;
+import magic.model.action.DiscardCardAction;
 import magic.model.choice.MagicCardChoice;
 import magic.model.choice.MagicRandomCardChoice;
 import magic.model.condition.MagicCondition;
@@ -13,7 +13,7 @@ import magic.model.condition.MagicConditionFactory;
 
 public class MagicDiscardEvent extends MagicEvent {
 
-    private final MagicCondition[] conds;
+    private final MagicCondition cond;
 
     public MagicDiscardEvent(final MagicSource source,final MagicPlayer player, final int amount) {
         this(source, player, amount, false);
@@ -47,7 +47,7 @@ public class MagicDiscardEvent extends MagicEvent {
         return Random(source, source.getController(), 1);
     }
 
-    public MagicDiscardEvent(final MagicSource source,final MagicPlayer player,final int amount,final boolean random) {
+    private MagicDiscardEvent(final MagicSource source,final MagicPlayer player,final int amount,final boolean random) {
         super(
             source,
             player,
@@ -57,9 +57,7 @@ public class MagicDiscardEvent extends MagicEvent {
         );
         //check if source is in player's hand
         final int minHandSize = player.getHand().contains(source) ? amount + 1 : amount;
-        conds = new MagicCondition[]{
-            MagicConditionFactory.HandAtLeast(minHandSize)
-        };
+        cond = MagicConditionFactory.HandAtLeast(minHandSize);
     }
 
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
@@ -68,15 +66,15 @@ public class MagicDiscardEvent extends MagicEvent {
             event.processChosenCards(game, new MagicCardAction() {
                 @Override
                 public void doAction(final MagicCard card) {
-                    game.doAction(new MagicDiscardCardAction(event.getPlayer(), card));
+                    game.doAction(new DiscardCardAction(event.getPlayer(), card));
                 }
             });
         }
     };
 
     @Override
-    public MagicCondition[] getConditions() {
-        return conds;
+    public boolean isSatisfied() {
+        return cond.accept(getSource()) && super.isSatisfied();
     }
 
     private static final String genDescription(final MagicPlayer player,final int amount) {

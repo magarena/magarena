@@ -1,5 +1,5 @@
 name=Torch Drake
-image=http://mtgimage.com/card/torch%20drake.jpg
+image=http://magiccards.info/scans/en/gp/38.jpg
 value=1.838
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={3}{U}
 pt=2/2
 ability=flying;{1}{R}: SN gets +1/+0 until end of turn.
 timing=main
-oracle=Flying. {1}{R}: Torch Drake gets +1/+0 until end of turn.
+oracle=Flying\n{1}{R}: Torch Drake gets +1/+0 until end of turn.

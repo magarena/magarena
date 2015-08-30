@@ -1,6 +1,6 @@
 name=Glimpse the Sun God
-image=http://mtgimage.com/card/glimpse%20the%20sun%20god.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bng/13.jpg
+value=3.625
 rarity=U
 type=Instant
 cost={X}{W}

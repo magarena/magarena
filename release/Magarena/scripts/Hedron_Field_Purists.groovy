@@ -1,10 +1,7 @@
 [
     new MagicStatic(MagicLayer.SetPT) {
         @Override
-        public void modPowerToughness(
-                final MagicPermanent source,
-                final MagicPermanent permanent,
-                final MagicPowerToughness pt) {
+        public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
             final int level = permanent.getCounters(MagicCounterType.Level);
             if (level >= 5) {
                 pt.set(2,5);
@@ -13,7 +10,7 @@
             }
         }
     },
-    new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.PREVENT_DAMAGE) {
+    new MagicPreventDamageTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             if (permanent.isFriend(damage.getTarget())) {

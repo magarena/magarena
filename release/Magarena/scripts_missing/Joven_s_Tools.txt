@@ -1,9 +1,9 @@
 name=Joven's Tools
-image=http://mtgimage.com/card/joven%27s%20tools.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5e/386.jpg
+value=1.180
 rarity=U
 type=Artifact
 cost={6}
 ability={4}, {T}: Target creature can't be blocked this turn except by Walls.
-timing=main
+timing=artifact
 oracle={4}, {T}: Target creature can't be blocked this turn except by Walls.

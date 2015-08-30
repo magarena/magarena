@@ -1,11 +1,11 @@
 name=Chronatog Totem
-image=http://mtgimage.com/card/chronatog%20totem.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ts/252.jpg
+value=2.419
 rarity=U
 type=Artifact
 cost={3}
 ability={T}: Add {U} to your mana pool.;\
         {1}{U}: SN becomes a 1/2 blue Atog artifact creature until end of turn.;\
         {0}: SN gets +3/+3 until end of turn. You skip your next turn. Activate this ability only once each turn and only if SN is a creature.
-timing=main
-oracle={T}: Add {U} to your mana pool. {1}{U}: Chronatog Totem becomes a 1/2 blue Atog artifact creature until end of turn. {0}: Chronatog Totem gets +3/+3 until end of turn. You skip your next turn. Activate this ability only once each turn and only if Chronatog Totem is a creature.
+timing=artifact
+oracle={T}: Add {U} to your mana pool.\n{1}{U}: Chronatog Totem becomes a 1/2 blue Atog artifact creature until end of turn.\n{0}: Chronatog Totem gets +3/+3 until end of turn. You skip your next turn. Activate this ability only once each turn and only if Chronatog Totem is a creature.

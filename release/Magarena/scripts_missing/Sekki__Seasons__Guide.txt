@@ -1,6 +1,6 @@
 name=Sekki, Seasons' Guide
-image=http://mtgimage.com/card/sekki%2C%20seasons%27%20guide.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sok/148.jpg
+value=3.896
 rarity=R
 type=Legendary,Creature
 subtype=Spirit
@@ -10,4 +10,4 @@ ability=SN enters the battlefield with eight +1/+1 counters on it.;\
         If damage would be dealt to Sekki, prevent that damage, remove that many +1/+1 counters from Sekki, and put that many 1/1 colorless Spirit creature tokens onto the battlefield.;\
         Sacrifice eight Spirits: Return Sekki from your graveyard to the battlefield.
 timing=main
-oracle=Sekki, Seasons' Guide enters the battlefield with eight +1/+1 counters on it. If damage would be dealt to Sekki, prevent that damage, remove that many +1/+1 counters from Sekki, and put that many 1/1 colorless Spirit creature tokens onto the battlefield. Sacrifice eight Spirits: Return Sekki from your graveyard to the battlefield.
+oracle=Sekki, Seasons' Guide enters the battlefield with eight +1/+1 counters on it.\nIf damage would be dealt to Sekki, prevent that damage, remove that many +1/+1 counters from Sekki, and put that many 1/1 colorless Spirit creature tokens onto the battlefield.\nSacrifice eight Spirits: Return Sekki from your graveyard to the battlefield.

@@ -1,9 +1,9 @@
 name=Second Thoughts
-image=http://mtgimage.com/card/second%20thoughts.jpg
+image=http://magiccards.info/scans/en/od/45.jpg
 value=2.909
 rarity=C
 type=Instant
 cost={4}{W}
 effect=Exile target attacking creature.~Draw a card.
 timing=removal
-oracle=Exile target attacking creature. Draw a card.
+oracle=Exile target attacking creature.\nDraw a card.

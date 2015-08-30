@@ -1,5 +1,5 @@
 name=Viashino Warrior
-image=http://mtgimage.com/card/viashino%20warrior.jpg
+image=http://magiccards.info/scans/en/bd/50.jpg
 value=2.436
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Viashino,Warrior
 cost={3}{R}
 pt=4/2
 timing=main
+oracle=NONE

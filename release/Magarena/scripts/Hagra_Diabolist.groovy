@@ -7,7 +7,7 @@
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        MagicTargetChoice.NEG_TARGET_PLAYER
+                        NEG_TARGET_PLAYER
                     ),
                     this,
                     "PN may\$ have target player\$ lose life " +
@@ -22,7 +22,7 @@
                 event.processTargetPlayer(game, {
                     final MagicPlayer player = event.getPlayer();
                     final int amount = player.getNrOfPermanents(MagicSubType.Ally);
-                    game.doAction(new MagicChangeLifeAction(it,-amount));
+                    game.doAction(new ChangeLifeAction(it,-amount));
                 });
             }
         }

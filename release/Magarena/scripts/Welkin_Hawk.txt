@@ -1,5 +1,5 @@
 name=Welkin Hawk
-image=http://mtgimage.com/card/welkin%20hawk.jpg
+image=http://magiccards.info/scans/en/ex/25.jpg
 value=3.542
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying;\
         When SN dies, you may search your library for a card named Welkin Hawk, reveal that card, put it into your hand, then shuffle your library.
 timing=main
-oracle=Flying. When Welkin Hawk dies, you may search your library for a card named Welkin Hawk, reveal that card, put it into your hand, then shuffle your library.
+oracle=Flying\nWhen Welkin Hawk dies, you may search your library for a card named Welkin Hawk, reveal that card, put it into your hand, then shuffle your library.

@@ -1,5 +1,5 @@
 name=Victimize
-image=http://mtgimage.com/card/victimize.jpg
+image=http://magiccards.info/scans/en/c14/169.jpg
 value=2.500
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Malach of the Dawn
-image=http://mtgimage.com/card/malach%20of%20the%20dawn.jpg
+image=http://magiccards.info/scans/en/pc/24.jpg
 value=3.179
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/4
 ability=flying;\
         {W}{W}{W}: Regenerate SN.
 timing=main
-oracle=Flying. {W}{W}{W}: Regenerate Malach of the Dawn.
+oracle=Flying\n{W}{W}{W}: Regenerate Malach of the Dawn.

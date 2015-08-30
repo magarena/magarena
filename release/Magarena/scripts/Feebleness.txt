@@ -1,5 +1,5 @@
 name=Feebleness
-image=http://mtgimage.com/card/feebleness.jpg
+image=http://magiccards.info/scans/en/ts/110.jpg
 value=1.700
 removal=1
 rarity=C
@@ -10,4 +10,4 @@ ability=Flash;\
         Enchanted creature gets -2/-1.
 timing=flash
 enchant=weaken -2/-1,neg creature
-oracle=Flash. Enchant creature. Enchanted creature gets -2/-1.
+oracle=Flash\nEnchant creature\nEnchanted creature gets -2/-1.

@@ -1,0 +1,11 @@
+name=Dragonloft Idol
+image=http://magiccards.info/scans/en/dtk/237.jpg
+value=2.500
+rarity=U
+type=Artifact,Creature
+subtype=Gargoyle
+cost={4}
+pt=3/3
+ability=As long as you control a Dragon, SN gets +1/+1 and has flying and trample.
+timing=main
+oracle=As long as you control a Dragon, Dragonloft Idol gets +1/+1 and has flying and trample.

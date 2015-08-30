@@ -1,5 +1,5 @@
 name=Plaxcaster Frogling
-image=http://mtgimage.com/card/plaxcaster%20frogling.jpg
+image=http://magiccards.info/scans/en/di/123.jpg
 value=3.985
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{G}{U}
 pt=0/0
 ability=graft 3;{2}:Target creature with a +1/+1 counter on it gains shroud until end of turn.
 timing=main
-oracle=Graft 3. {2}: Target creature with a +1/+1 counter on it gains shroud until end of turn.
+oracle=Graft 3\n{2}: Target creature with a +1/+1 counter on it gains shroud until end of turn.

@@ -1,10 +1,10 @@
 name=Chance Encounter
-image=http://mtgimage.com/card/chance%20encounter.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/182.jpg
+value=3.952
 rarity=R
 type=Enchantment
 cost={2}{R}{R}
 ability=Whenever you win a coin flip, put a luck counter on SN.;\
         At the beginning of your upkeep, if SN has ten or more luck counters on it, you win the game.
-timing=main
-oracle=Whenever you win a coin flip, put a luck counter on Chance Encounter. At the beginning of your upkeep, if Chance Encounter has ten or more luck counters on it, you win the game.
+timing=enchantment
+oracle=Whenever you win a coin flip, put a luck counter on Chance Encounter.\nAt the beginning of your upkeep, if Chance Encounter has ten or more luck counters on it, you win the game.

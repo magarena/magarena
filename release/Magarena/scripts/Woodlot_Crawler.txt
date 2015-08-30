@@ -1,5 +1,5 @@
 name=Woodlot Crawler
-image=http://mtgimage.com/card/woodlot%20crawler.jpg
+image=http://magiccards.info/scans/en/dgm/118.jpg
 value=3.761
 rarity=U
 type=Creature

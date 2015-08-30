@@ -1,9 +1,9 @@
 name=Shimmering Mirage
-image=http://mtgimage.com/card/shimmering%20mirage.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ap/30.jpg
+value=2.962
 rarity=C
 type=Instant
 cost={1}{U}
 effect=Target land becomes the basic land type of your choice until end of turn.~Draw a card.
 timing=removal
-oracle=Target land becomes the basic land type of your choice until end of turn. Draw a card.
+oracle=Target land becomes the basic land type of your choice until end of turn.\nDraw a card.

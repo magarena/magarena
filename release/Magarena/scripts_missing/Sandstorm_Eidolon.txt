@@ -1,6 +1,6 @@
 name=Sandstorm Eidolon
-image=http://mtgimage.com/card/sandstorm%20eidolon.jpg
-value=2.500
+image=http://magiccards.info/scans/en/di/70.jpg
+value=1.671
 rarity=C
 type=Creature
 subtype=Spirit
@@ -9,4 +9,4 @@ pt=2/2
 ability={R}, Sacrifice SN: Target creature can't block this turn.;\
         Whenever you cast a multicolored spell, you may return SN from your graveyard to your hand.
 timing=main
-oracle={R}, Sacrifice Sandstorm Eidolon: Target creature can't block this turn. Whenever you cast a multicolored spell, you may return Sandstorm Eidolon from your graveyard to your hand.
+oracle={R}, Sacrifice Sandstorm Eidolon: Target creature can't block this turn.\nWhenever you cast a multicolored spell, you may return Sandstorm Eidolon from your graveyard to your hand.

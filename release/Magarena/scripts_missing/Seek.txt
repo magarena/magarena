@@ -1,6 +1,6 @@
 name=Seek
-image=http://mtgimage.com/card/hideseek.jpg
-value=2.500
+image=http://magiccards.info/scans/en/di/151b.jpg
+value=4.315
 rarity=R
 type=Instant
 cost={W}{B}

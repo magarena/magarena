@@ -1,6 +1,6 @@
 name=Sensei Golden-Tail
-image=http://mtgimage.com/card/sensei%20golden-tail.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/44.jpg
+value=3.909
 rarity=R
 type=Legendary,Creature
 subtype=Fox,Samurai
@@ -9,4 +9,4 @@ pt=2/1
 ability=Bushido 1;\
         {1}{W}, {T}: Put a training counter on target creature. That creature gains bushido 1 and becomes a Samurai in addition to its other creature types. Activate this ability only any time you could cast a sorcery.
 timing=main
-oracle=Bushido 1. {1}{W}, {T}: Put a training counter on target creature. That creature gains bushido 1 and becomes a Samurai in addition to its other creature types. Activate this ability only any time you could cast a sorcery.
+oracle=Bushido 1\n{1}{W}, {T}: Put a training counter on target creature. That creature gains bushido 1 and becomes a Samurai in addition to its other creature types. Activate this ability only any time you could cast a sorcery.

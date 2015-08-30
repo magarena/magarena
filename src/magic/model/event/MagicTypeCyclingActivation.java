@@ -5,32 +5,24 @@ import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicLocationType;
+import magic.model.MagicPermanent;
+import magic.model.MagicSource;
 import magic.model.choice.MagicTargetChoice;
+import magic.model.stack.MagicAbilityOnStack;
+import magic.model.trigger.MagicTrigger;
+import magic.model.trigger.MagicTriggerType;
 
 import java.util.Arrays;
 
-public class MagicTypeCyclingActivation extends MagicCardAbilityActivation {
+public class MagicTypeCyclingActivation extends MagicCyclingActivation {
 
-    final MagicManaCost cost;
     final String type;
 
-    public MagicTypeCyclingActivation(final MagicManaCost aCost, final String aType) {
-        super(
-            new MagicActivationHints(MagicTiming.Main,true),
-            aType + "cycle"
-        );
-        cost = aCost;
+    public MagicTypeCyclingActivation(final MagicMatchedCostEvent aMatchedCost, final String aType) {
+        super(aMatchedCost, aType + "cycle");
         type = aType;
     }
 
-    @Override
-    public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
-        return Arrays.asList(
-            new MagicPayManaCostEvent(source, cost),
-            new MagicDiscardSelfEvent(source)
-        );
-    }
-    
     @Override
     public MagicEvent getCardEvent(final MagicCard card, final MagicPayedCost payedCost) {
         return new MagicEvent(

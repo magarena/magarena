@@ -13,15 +13,15 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final String name = event.getRefCardOnStack().getCard().getName();
-            final int amount = game.filterCards(
-                MagicTargetFilterFactory.cardName(name)
+            final int amount = cardName(name)
                 .from(MagicTargetType.Graveyard)
                 .from(MagicTargetType.OpponentsGraveyard)
-            ).size();
-            game.logAppendMessage(event.getPlayer(),"(X="+amount+")")
-            game.doAction(new MagicPlayTokensAction(
+                .filter(event)
+                .size();
+            game.logAppendX(event.getPlayer(),amount)
+            game.doAction(new PlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("1/1 green Squirrel creature token"),
+                CardDefinitions.getToken("1/1 green Squirrel creature token"),
                 amount
             ));
         }

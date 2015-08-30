@@ -3,6 +3,7 @@ package magic.model.target;
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
+import magic.model.MagicSource;
 
 public class MagicCMCCardFilter extends MagicCardFilterImpl {
 
@@ -17,8 +18,8 @@ public class MagicCMCCardFilter extends MagicCardFilterImpl {
     }
 
     @Override
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-        return targetFilter.accept(game,player,target) &&
+    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+        return targetFilter.accept(source,player,target) &&
                operator.cmp(target.getCardDefinition().getConvertedCost(), cmc) ;
     }
 

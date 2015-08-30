@@ -5,7 +5,7 @@
             return (creature == permanent) ?
                 new MagicEvent(
                     permanent,
-                    new MagicMayChoice(MagicTargetChoice.NEG_TARGET_CREATURE),
+                    new MagicMayChoice(NEG_TARGET_CREATURE),
                     MagicDestroyTargetPicker.DestroyNoRegen,
                     this,
                     "PN may\$ sacrifice SN. " +
@@ -17,10 +17,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicSacrificeAction(event.getPermanent()));
+                game.doAction(new SacrificeAction(event.getPermanent()));
                 event.processTargetPermanent(game, {
-                    game.doAction(MagicChangeStateAction.Set(it,MagicPermanentState.CannotBeRegenerated));
-                    game.doAction(new MagicDestroyAction(it));
+                    game.doAction(ChangeStateAction.Set(it,MagicPermanentState.CannotBeRegenerated));
+                    game.doAction(new DestroyAction(it));
                 });
             }
         }

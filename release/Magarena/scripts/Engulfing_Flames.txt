@@ -1,5 +1,5 @@
 name=Engulfing Flames
-image=http://mtgimage.com/card/engulfing%20flames.jpg
+image=http://magiccards.info/scans/en/od/191.jpg
 value=3.281
 removal=2
 rarity=U
@@ -8,4 +8,4 @@ cost={R}
 timing=removal
 ability=Flashback {3}{R}
 requires_groovy_code
-oracle=Engulfing Flames deals 1 damage to target creature. It can't be regenerated this turn. Flashback {3}{R}
+oracle=Engulfing Flames deals 1 damage to target creature. It can't be regenerated this turn.\nFlashback {3}{R}

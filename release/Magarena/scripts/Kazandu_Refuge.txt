@@ -1,5 +1,5 @@
 name=Kazandu Refuge
-image=http://mtgimage.com/card/kazandu%20refuge.jpg
+image=http://magiccards.info/scans/en/c13/301.jpg
 value=3.750
 rarity=U
 type=Land
@@ -8,4 +8,4 @@ ability={T}: Add {R} or {G} to your mana pool.;\
         SN enters the battlefield tapped.;\
         When SN enters the battlefield, you gain 1 life.
 timing=tapland
-oracle=Kazandu Refuge enters the battlefield tapped. When Kazandu Refuge enters the battlefield, you gain 1 life. {T}: Add {R} or {G} to your mana pool.
+oracle=Kazandu Refuge enters the battlefield tapped.\nWhen Kazandu Refuge enters the battlefield, you gain 1 life.\n{T}: Add {R} or {G} to your mana pool.

@@ -1,6 +1,6 @@
 name=Mutant's Prey
-image=http://mtgimage.com/card/mutant%27s%20prey.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dgm/45.jpg
+value=3.359
 rarity=C
 type=Instant
 cost={G}

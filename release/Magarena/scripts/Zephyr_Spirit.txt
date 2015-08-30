@@ -1,0 +1,11 @@
+name=Zephyr Spirit
+image=http://magiccards.info/scans/en/rav/76.jpg
+value=0.858
+rarity=C
+type=Creature
+subtype=Spirit
+cost={5}{U}
+pt=0/6
+ability=When SN blocks, return SN to its owner's hand.
+timing=main
+oracle=When Zephyr Spirit blocks, return it to its owner's hand.

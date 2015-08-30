@@ -1,5 +1,5 @@
 name=Charcoal Diamond
-image=http://mtgimage.com/card/charcoal%20diamond.jpg
+image=http://magiccards.info/scans/en/c14/235.jpg
 value=2.864
 rarity=U
 type=Artifact
@@ -7,4 +7,4 @@ cost={2}
 ability=SN enters the battlefield tapped.;\
         {T}: Add {B} to your mana pool.
 timing=artifact
-oracle=Charcoal Diamond enters the battlefield tapped. {T}: Add {B} to your mana pool.
+oracle=Charcoal Diamond enters the battlefield tapped.\n{T}: Add {B} to your mana pool.

@@ -1,5 +1,5 @@
 name=Python
-image=http://mtgimage.com/card/python.jpg
+image=http://magiccards.info/scans/en/po/28.jpg
 value=2.438
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Snake
 cost={1}{B}{B}
 pt=3/2
 timing=main
+oracle=NONE

@@ -1,10 +1,10 @@
 name=Leyline of Anticipation
-image=http://mtgimage.com/card/leyline%20of%20anticipation.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m11/61.jpg
+value=4.306
 rarity=R
 type=Enchantment
 cost={2}{U}{U}
 ability=If SN is in your opening hand, you may begin the game with it on the battlefield.;\
         You may cast nonland cards as though they had flash.
-timing=main
-oracle=If Leyline of Anticipation is in your opening hand, you may begin the game with it on the battlefield. You may cast nonland cards as though they had flash.
+timing=enchantment
+oracle=If Leyline of Anticipation is in your opening hand, you may begin the game with it on the battlefield.\nYou may cast nonland cards as though they had flash.

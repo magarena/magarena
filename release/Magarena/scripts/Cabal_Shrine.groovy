@@ -13,12 +13,12 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final String name = event.getRefCardOnStack().getCard().getName();
-            final int amount = game.filterCards(
-                MagicTargetFilterFactory.cardName(name)
+            final int amount = cardName(name)
                 .from(MagicTargetType.Graveyard)
                 .from(MagicTargetType.OpponentsGraveyard)
-            ).size();
-            game.logAppendMessage(event.getPlayer(),"(X="+amount+")")
+                .filter(event)
+                .size();
+            game.logAppendX(event.getPlayer(),amount)
             game.addEvent(new MagicDiscardEvent(event.getSource(),event.getPlayer(),amount));
         }
     }

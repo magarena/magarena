@@ -1,11 +1,11 @@
 name=Arcbound Wanderer
-image=http://mtgimage.com/card/arcbound%20wanderer.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/mma/200.jpg
+value=2.844
+rarity=C
 type=Artifact,Creature
 subtype=Golem
 cost={6}
 pt=0/0
 ability=Modular—Sunburst
-timing=main
+timing=artifact
 oracle=Modular—Sunburst

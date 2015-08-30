@@ -1,5 +1,5 @@
 name=Magister Sphinx
-image=http://mtgimage.com/card/magister%20sphinx.jpg
+image=http://magiccards.info/scans/en/arc/89.jpg
 value=3.883
 rarity=R
 type=Artifact,Creature
@@ -9,4 +9,4 @@ pt=5/5
 ability=flying
 timing=artifact
 requires_groovy_code
-oracle=Flying. When Magister Sphinx enters the battlefield, target player's life total becomes 10.
+oracle=Flying\nWhen Magister Sphinx enters the battlefield, target player's life total becomes 10.

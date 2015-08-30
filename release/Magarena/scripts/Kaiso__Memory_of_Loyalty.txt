@@ -1,5 +1,5 @@
 name=Kaiso, Memory of Loyalty
-image=http://mtgimage.com/card/kaiso%2C%20memory%20of%20loyalty.jpg
+image=http://magiccards.info/scans/en/bok/3b.jpg
 value=3.053
 rarity=U
 type=Legendary,Creature
@@ -11,4 +11,4 @@ ability=Flying;\
 flip=Faithful Squire
 timing=main
 hidden
-oracle=Flying. Remove a ki counter from Kaiso, Memory of Loyalty: Prevent all damage that would be dealt to target creature this turn.
+oracle=Flying\nRemove a ki counter from Kaiso, Memory of Loyalty: Prevent all damage that would be dealt to target creature this turn.

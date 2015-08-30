@@ -1,5 +1,5 @@
 name=Innocence Kami
-image=http://mtgimage.com/card/innocence%20kami.jpg
+image=http://magiccards.info/scans/en/chk/18.jpg
 value=1.919
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/3
 ability={W},{T}:Tap target creature.;\
         Whenever you cast a Spirit or Arcane spell, untap SN.
 timing=main
-oracle={W}, {T}: Tap target creature. Whenever you cast a Spirit or Arcane spell, untap Innocence Kami.
+oracle={W}, {T}: Tap target creature.\nWhenever you cast a Spirit or Arcane spell, untap Innocence Kami.

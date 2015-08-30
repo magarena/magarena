@@ -1,11 +1,12 @@
 name=Initiate of Blood
-image=http://mtgimage.com/card/initiate%20of%20blood.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/173a.jpg
+value=3.105
 rarity=U
 type=Creature
 subtype=Ogre,Shaman
 cost={3}{R}
 pt=2/2
 ability={T}: SN deals 1 damage to target creature that was dealt damage this turn. When that creature dies this turn, flip SN.
+flip=Goka the Unjust
 timing=main
 oracle={T}: Initiate of Blood deals 1 damage to target creature that was dealt damage this turn. When that creature dies this turn, flip Initiate of Blood.

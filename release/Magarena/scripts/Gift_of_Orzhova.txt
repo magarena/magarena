@@ -1,5 +1,5 @@
 name=Gift of Orzhova
-image=http://mtgimage.com/card/gift%20of%20orzhova.jpg
+image=http://magiccards.info/scans/en/gtc/219.jpg
 value=3.803
 rarity=U
 type=Enchantment
@@ -8,4 +8,4 @@ cost={1}{W/B}{W/B}
 ability=Enchanted creature gets +1/+1 and has flying and lifelink.
 timing=aura
 enchant=flying,pos creature
-oracle=Enchant creature. Enchanted creature gets +1/+1 and has flying and lifelink.
+oracle=Enchant creature\nEnchanted creature gets +1/+1 and has flying and lifelink.

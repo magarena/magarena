@@ -1,13 +1,13 @@
 name=Thirst
-image=http://mtgimage.com/card/thirst.jpg
+image=http://magiccards.info/scans/en/mr/99.jpg
 value=3.045
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{U}
-ability=Enchanted creature doesn't untap during its controller's untap step.;\
+ability=When SN enters the battlefield, tap enchanted creature.;\
+        Enchanted creature doesn't untap during its controller's untap step.;\
         At the beginning of your upkeep, you may pay {U}. If you don't, sacrifice SN.
 timing=tapping
 enchant=can't attack or block,neg creature
-requires_groovy_code=Claustrophobia
-oracle=Enchant creature. When Thirst enters the battlefield, tap enchanted creature. Enchanted creature doesn't untap during its controller's untap step. At the beginning of your upkeep, sacrifice Thirst unless you pay {U}.
+oracle=Enchant creature\nWhen Thirst enters the battlefield, tap enchanted creature.\nEnchanted creature doesn't untap during its controller's untap step.\nAt the beginning of your upkeep, sacrifice Thirst unless you pay {U}.

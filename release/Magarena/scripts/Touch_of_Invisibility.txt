@@ -1,9 +1,9 @@
 name=Touch of Invisibility
-image=http://mtgimage.com/card/touch%20of%20invisibility.jpg
+image=http://magiccards.info/scans/en/od/109.jpg
 value=1.383
 rarity=C
 type=Sorcery
 cost={3}{U}
 timing=main
 requires_groovy_code
-oracle=Target creature can't be blocked this turn. Draw a card.
+oracle=Target creature can't be blocked this turn.\nDraw a card.

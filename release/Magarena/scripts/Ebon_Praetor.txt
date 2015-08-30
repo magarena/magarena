@@ -1,6 +1,6 @@
 name=Ebon Praetor
-image=http://mtgimage.com/card/ebon%20praetor.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me2/89.jpg
+value=3.330
 rarity=R
 type=Creature
 subtype=Avatar,Praetor
@@ -10,4 +10,4 @@ ability=First strike; trample;\
         At the beginning of your upkeep, put a -2/-2 counter on SN.
 timing=main
 requires_groovy_code
-oracle=First strike, trample. At the beginning of your upkeep, put a -2/-2 counter on Ebon Praetor. Sacrifice a creature: Remove a -2/-2 counter from Ebon Praetor. If the sacrificed creature was a Thrull, put a +1/+0 counter on Ebon Praetor. Activate this ability only during your upkeep and only once each turn.
+oracle=First strike, trample\nAt the beginning of your upkeep, put a -2/-2 counter on Ebon Praetor.\nSacrifice a creature: Remove a -2/-2 counter from Ebon Praetor. If the sacrificed creature was a Thrull, put a +1/+0 counter on Ebon Praetor. Activate this ability only during your upkeep and only once each turn.

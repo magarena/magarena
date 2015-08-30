@@ -1,5 +1,5 @@
 name=Odunos River Trawler
-image=http://mtgimage.com/card/odunos%20river%20trawler.jpg
+image=http://magiccards.info/scans/en/bng/79.jpg
 value=3.431
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=When SN enters the battlefield, return target enchantment creature card from your graveyard to your hand.;\
         {W}, Sacrifice SN: Return target enchantment creature card from your graveyard to your hand.
 timing=main
-oracle=When Odunos River Trawler enters the battlefield, return target enchantment creature card from your graveyard to your hand. {W}, Sacrifice Odunos River Trawler: Return target enchantment creature card from your graveyard to your hand.
+oracle=When Odunos River Trawler enters the battlefield, return target enchantment creature card from your graveyard to your hand.\n{W}, Sacrifice Odunos River Trawler: Return target enchantment creature card from your graveyard to your hand.

@@ -21,24 +21,11 @@ public abstract class MagicWhenOtherDiesTrigger extends MagicTrigger<MagicPerman
         return new MagicWhenOtherDiesTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent died) {
-                return permanent == died || filter.accept(permanent.getGame(), permanent.getController(), died);
+                return permanent == died || filter.accept(permanent, permanent.getController(), died);
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent died) {
-                return sourceEvent.getEvent(permanent);
-            }
-        };
-    }
-    
-    public static final MagicWhenOtherDiesTrigger createAnother(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
-        return new MagicWhenOtherDiesTrigger() {
-            @Override
-            public boolean accept(final MagicPermanent permanent, final MagicPermanent died) {
-                return permanent != died && filter.accept(permanent.getGame(), permanent.getController(), died);
-            }
-            @Override
-            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent died) {
-                return sourceEvent.getEvent(permanent);
+                return sourceEvent.getEvent(permanent, died);
             }
         };
     }
@@ -47,11 +34,11 @@ public abstract class MagicWhenOtherDiesTrigger extends MagicTrigger<MagicPerman
         return new MagicWhenOtherDiesTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent died) {
-                return filter.accept(permanent.getGame(), permanent.getController(), died);
+                return filter.accept(permanent, permanent.getController(), died);
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent died) {
-                return sourceEvent.getEvent(permanent);
+                return sourceEvent.getEvent(permanent, died);
             }
         };
     }

@@ -5,7 +5,7 @@
             final int amount=payedCost.getX();
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_PLAYER,
+                NEG_TARGET_PLAYER,
                 this,
                 "Target player\$ discards "+amount+" cards at random."
             );

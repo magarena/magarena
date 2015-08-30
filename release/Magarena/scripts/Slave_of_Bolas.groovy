@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 MagicExileTargetPicker.create(),
                 this,
                 "Gain control of target creature\$. Untap that creature. " +
@@ -14,10 +14,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicGainControlAction(event.getPlayer(),it));
-                game.doAction(new MagicUntapAction(it));
-                game.doAction(new MagicGainAbilityAction(it,MagicAbility.Haste));
-                game.doAction(new MagicAddTriggerAction(it, MagicAtEndOfTurnTrigger.Sacrifice));
+                game.doAction(new GainControlAction(event.getPlayer(),it));
+                game.doAction(new UntapAction(it));
+                game.doAction(new GainAbilityAction(it,MagicAbility.Haste));
+                game.doAction(new AddTriggerAction(it, MagicAtEndOfTurnTrigger.Sacrifice));
             });
         }
     }

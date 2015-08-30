@@ -1,10 +1,10 @@
 name=Walk the Aeons
-image=http://mtgimage.com/card/walk%20the%20aeons.jpg
+image=http://magiccards.info/scans/en/ts/93.jpg
 value=4.163
 rarity=R
 type=Sorcery
 cost={4}{U}{U}
-ability=Buyback Sacrifice three Islands.
+ability=Buyback—Sacrifice three Islands.
 timing=main
-requires_groovy_code=Time Warp
-oracle=Buyback-Sacrifice three Islands. Target player takes an extra turn after this one.
+requires_groovy_code
+oracle=Buyback—Sacrifice three Islands.\nTarget player takes an extra turn after this one.

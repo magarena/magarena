@@ -1,9 +1,0 @@
-name=Warped Devotion
-image=http://mtgimage.com/card/warped%20devotion.jpg
-value=2.500
-rarity=U
-type=Enchantment
-cost={2}{B}
-ability=Whenever a permanent is returned to a player's hand, that player discards a card.
-timing=main
-oracle=Whenever a permanent is returned to a player's hand, that player discards a card.

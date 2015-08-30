@@ -1,5 +1,5 @@
 name=Bant Battlemage
-image=http://mtgimage.com/card/bant%20battlemage.jpg
+image=http://magiccards.info/scans/en/ala/5.jpg
 value=3.000
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{W}
 pt=2/2
 ability={G},{T}:Target creature gains trample until end of turn.;{U},{T}:Target creature gains flying until end of turn.
 timing=main
-oracle={G}, {T}: Target creature gains trample until end of turn. {U}, {T}: Target creature gains flying until end of turn.
+oracle={G}, {T}: Target creature gains trample until end of turn.\n{U}, {T}: Target creature gains flying until end of turn.

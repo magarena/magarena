@@ -1,12 +1,12 @@
 name=Blue Scarab
-image=http://mtgimage.com/card/blue%20scarab.jpg
+image=http://magiccards.info/scans/en/ia/233.jpg
 value=2.435
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={W}
-ability=Enchanted creature can't be blocked by blue creatures.
+ability=Enchanted creature can't be blocked by blue creatures.;\
+        Enchanted creature gets +2/+2 as long as an opponent controls a blue permanent.
 enchant=pump,pos creature
 timing=aura
-requires_groovy_code
-oracle=Enchant creature. Enchanted creature can't be blocked by blue creatures. Enchanted creature gets +2/+2 as long as an opponent controls a blue permanent.
+oracle=Enchant creature\nEnchanted creature can't be blocked by blue creatures.\nEnchanted creature gets +2/+2 as long as an opponent controls a blue permanent.

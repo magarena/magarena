@@ -1,6 +1,6 @@
 name=Skirk Volcanist
-image=http://mtgimage.com/card/skirk%20volcanist.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sc/104.jpg
+value=2.241
 rarity=U
 type=Creature
 subtype=Goblin
@@ -9,4 +9,4 @@ pt=3/1
 ability=Morph—Sacrifice two Mountains.;\
         When SN is turned face up, it deals 3 damage divided as you choose among one, two, or three target creatures.
 timing=main
-oracle=Morph—Sacrifice two Mountains. When Skirk Volcanist is turned face up, it deals 3 damage divided as you choose among one, two, or three target creatures.
+oracle=Morph—Sacrifice two Mountains.\nWhen Skirk Volcanist is turned face up, it deals 3 damage divided as you choose among one, two, or three target creatures.

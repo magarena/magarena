@@ -1,5 +1,5 @@
 name=Wojek Halberdiers
-image=http://mtgimage.com/card/wojek%20halberdiers.jpg
+image=http://magiccards.info/scans/en/gtc/208.jpg
 value=4.016
 rarity=C
 type=Creature

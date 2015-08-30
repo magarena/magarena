@@ -1,10 +1,10 @@
 name=Hideous Laughter
-image=http://mtgimage.com/card/hideous%20laughter.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/115.jpg
+value=3.616
 rarity=U
 type=Instant
 subtype=Arcane
 cost={2}{B}{B}
 effect=All creatures get -2/-2 until end of turn.~Splice onto Arcane {3}{B}{B}
 timing=removal
-oracle=All creatures get -2/-2 until end of turn. Splice onto Arcane {3}{B}{B}
+oracle=All creatures get -2/-2 until end of turn.\nSplice onto Arcane {3}{B}{B}

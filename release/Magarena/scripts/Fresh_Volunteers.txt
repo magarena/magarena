@@ -1,5 +1,5 @@
 name=Fresh Volunteers
-image=http://mtgimage.com/card/fresh%20volunteers.jpg
+image=http://magiccards.info/scans/en/mm/20.jpg
 value=2.839
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Human,Rebel
 cost={1}{W}
 pt=2/2
 timing=main
+oracle=NONE

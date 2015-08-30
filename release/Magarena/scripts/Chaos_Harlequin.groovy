@@ -1,5 +1,5 @@
 [
-     new MagicPermanentActivation(
+    new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Pump),
         "Pump"
     ) {
@@ -22,16 +22,12 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicCard card : event.getPlayer().getLibrary().getCardsFromTop(1)) {
-                game.doAction(new MagicRemoveCardAction(
-                    card,
-                    MagicLocationType.OwnersLibrary
-                ));
-                game.doAction(new MagicMoveCardAction(
+                game.doAction(new ShiftCardAction(
                     card,
                     MagicLocationType.OwnersLibrary,
                     MagicLocationType.Exile
                 ));
-                game.doAction(new MagicChangeTurnPTAction(
+                game.doAction(new ChangeTurnPTAction(
                     event.getPermanent(),
                     card.hasType(MagicType.Land) ? -4 : +2,
                     0

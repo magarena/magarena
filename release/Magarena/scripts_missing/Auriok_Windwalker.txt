@@ -1,6 +1,6 @@
 name=Auriok Windwalker
-image=http://mtgimage.com/card/auriok%20windwalker.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5dn/5.jpg
+value=3.524
 rarity=R
 type=Creature
 subtype=Human,Wizard
@@ -9,4 +9,4 @@ pt=2/3
 ability=Flying;\
         {T}: Attach target Equipment you control to target creature you control.
 timing=main
-oracle=Flying. {T}: Attach target Equipment you control to target creature you control.
+oracle=Flying\n{T}: Attach target Equipment you control to target creature you control.

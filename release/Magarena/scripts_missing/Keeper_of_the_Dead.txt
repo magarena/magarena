@@ -1,6 +1,6 @@
 name=Keeper of the Dead
-image=http://mtgimage.com/card/keeper%20of%20the%20dead.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ex/65.jpg
+value=4.236
 rarity=U
 type=Creature
 subtype=Human,Wizard

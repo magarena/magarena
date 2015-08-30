@@ -1,11 +1,11 @@
 name=Celestial Dawn
-image=http://mtgimage.com/card/celestial%20dawn.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tsts/3.jpg
+value=3.830
 rarity=R
 type=Enchantment
 cost={1}{W}{W}
 ability=Lands you control are Plains.;\
         Nonland cards you own that aren't on the battlefield, spells you control, and nonland permanents you control are white.;\
         You may spend white mana as though it were mana of any color. You may spend other mana only as though it were colorless mana.
-timing=main
-oracle=Lands you control are Plains. Nonland cards you own that aren't on the battlefield, spells you control, and nonland permanents you control are white. You may spend white mana as though it were mana of any color. You may spend other mana only as though it were colorless mana.
+timing=enchantment
+oracle=Lands you control are Plains.\nNonland cards you own that aren't on the battlefield, spells you control, and nonland permanents you control are white.\nYou may spend white mana as though it were mana of any color. You may spend other mana only as though it were colorless mana.

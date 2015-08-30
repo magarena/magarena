@@ -1,6 +1,6 @@
 name=Zameck Guildmage
-image=http://mtgimage.com/card/zameck%20guildmage.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gtc/209.jpg
+value=3.772
 rarity=U
 type=Creature
 subtype=Elf,Wizard
@@ -9,4 +9,4 @@ pt=2/2
 ability={G}{U}: This turn, each creature you control enters the battlefield with an additional +1/+1 counter on it.;\
         {G}{U}, Remove a +1/+1 counter from a creature you control: Draw a card.
 timing=main
-oracle={G}{U}: This turn, each creature you control enters the battlefield with an additional +1/+1 counter on it. {G}{U}, Remove a +1/+1 counter from a creature you control: Draw a card.
+oracle={G}{U}: This turn, each creature you control enters the battlefield with an additional +1/+1 counter on it.\n{G}{U}, Remove a +1/+1 counter from a creature you control: Draw a card.

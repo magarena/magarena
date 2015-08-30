@@ -26,18 +26,13 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPermanent source = event.getPermanent();
-            final int amount = event.getRefInt();
-            final Collection<MagicPermanent> targets=
-                game.filterPermanents(
-                    source.getController(),
-                    new MagicCMCPermanentFilter(
-                        MagicTargetFilterFactory.ARTIFACT_OR_CREATURE_OR_ENCHANTMENT,
-                        Operator.LESS_THAN_OR_EQUAL,
-                        amount
-                    )
-                );
-            game.doAction(new MagicDestroyAction(targets));
+            game.doAction(new DestroyAction(
+                new MagicCMCPermanentFilter(
+                    ARTIFACT_OR_CREATURE_OR_ENCHANTMENT,
+                    Operator.LESS_THAN_OR_EQUAL,
+                    event.getRefInt()
+                ).filter(event)
+            ));
         }
     }
 ]

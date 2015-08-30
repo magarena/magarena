@@ -1,6 +1,6 @@
 name=Molten Firebird
-image=http://mtgimage.com/card/molten%20firebird.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pc/117.jpg
+value=2.288
 rarity=R
 type=Creature
 subtype=Phoenix
@@ -10,4 +10,4 @@ ability=Flying;\
         When SN dies, return it to the battlefield under its owner's control at the beginning of the next end step and you skip your next draw step.;\
         {4}{R}: Exile SN.
 timing=main
-oracle=Flying. When Molten Firebird dies, return it to the battlefield under its owner's control at the beginning of the next end step and you skip your next draw step. {4}{R}: Exile Molten Firebird.
+oracle=Flying\nWhen Molten Firebird dies, return it to the battlefield under its owner's control at the beginning of the next end step and you skip your next draw step.\n{4}{R}: Exile Molten Firebird.

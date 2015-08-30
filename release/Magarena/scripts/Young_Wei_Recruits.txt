@@ -1,5 +1,5 @@
 name=Young Wei Recruits
-image=http://mtgimage.com/card/young%20wei%20recruits.jpg
+image=http://magiccards.info/scans/en/me3/84.jpg
 value=2.326
 rarity=C
 type=Creature

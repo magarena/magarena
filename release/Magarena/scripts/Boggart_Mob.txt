@@ -1,5 +1,5 @@
 name=Boggart Mob
-image=http://mtgimage.com/card/boggart%20mob.jpg
+image=http://magiccards.info/scans/en/lw/104.jpg
 value=3.798
 removal=2
 rarity=R
@@ -7,7 +7,8 @@ type=Creature
 subtype=Goblin,Warrior
 cost={3}{B}
 pt=5/5
-ability=champion Goblin
+ability=Champion a Goblin;\
+        Whenever a Goblin you control deals combat damage to a player, you may put a 1/1 black Goblin Rogue creature token onto the battlefield.;\
+        Cast SN with AI only if you control a Goblin
 timing=main
-requires_groovy_code
-oracle=Champion a Goblin. Whenever a Goblin you control deals combat damage to a player, you may put a 1/1 black Goblin Rogue creature token onto the battlefield.
+oracle=Champion a Goblin\nWhenever a Goblin you control deals combat damage to a player, you may put a 1/1 black Goblin Rogue creature token onto the battlefield.

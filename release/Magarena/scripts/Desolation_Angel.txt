@@ -1,0 +1,13 @@
+name=Desolation Angel
+image=http://magiccards.info/scans/en/ap/38.jpg
+value=4.281
+rarity=R
+type=Creature
+subtype=Angel
+cost={3}{B}{B}
+pt=5/4
+ability=Kicker {W}{W};\
+Flying
+timing=main
+requires_groovy_code
+oracle=Kicker {W}{W}\nFlying\nWhen Desolation Angel enters the battlefield, destroy all lands you control. If it was kicked, destroy all lands instead.

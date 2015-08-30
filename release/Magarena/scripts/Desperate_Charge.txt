@@ -1,9 +1,10 @@
 name=Desperate Charge
-image=http://mtgimage.com/card/desperate%20charge.jpg
+image=http://magiccards.info/scans/en/me3/63.jpg
 value=3.306
 rarity=C
 type=Sorcery
 cost={2}{B}
+ability=Cast SN with AI only if you control a creature.
 effect=Creatures you control get +2/+0 until end of turn.
-timing=main
+timing=fmain
 oracle=Creatures you control get +2/+0 until end of turn.

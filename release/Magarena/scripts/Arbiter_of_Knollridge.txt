@@ -1,0 +1,12 @@
+name=Arbiter of Knollridge
+image=http://magiccards.info/scans/en/cmd/6.jpg
+value=2.984
+rarity=R
+type=Creature
+subtype=Giant,Wizard
+cost={6}{W}
+pt=5/5
+ability=Vigilance
+timing=main
+requires_groovy_code
+oracle=Vigilance\nWhen Arbiter of Knollridge enters the battlefield, each player's life total becomes the highest life total among all players.

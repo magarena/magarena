@@ -1,5 +1,5 @@
 name=Sunscape Apprentice
-image=http://mtgimage.com/card/sunscape%20apprentice.jpg
+image=http://magiccards.info/scans/en/in/41.jpg
 value=3.156
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability={G},{T}:Target creature gets +1/+1 until end of turn.;\
         {U}, {T}: Put target creature you control on top of its owner's library.
 timing=main
-oracle={G}, {T}: Target creature gets +1/+1 until end of turn. {U}, {T}: Put target creature you control on top of its owner's library.
+oracle={G}, {T}: Target creature gets +1/+1 until end of turn.\n{U}, {T}: Put target creature you control on top of its owner's library.

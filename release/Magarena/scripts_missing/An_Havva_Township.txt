@@ -1,10 +1,10 @@
 name=An-Havva Township
-image=http://mtgimage.com/card/an-havva%20township.jpg
-value=2.500
+image=http://magiccards.info/scans/en/hl/136.jpg
+value=1.437
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\
         {1}, {T}: Add {G} to your mana pool.;\
         {2}, {T}: Add {R} or {W} to your mana pool.
-timing=main
-oracle={T}: Add {1} to your mana pool. {1}, {T}: Add {G} to your mana pool. {2}, {T}: Add {R} or {W} to your mana pool.
+timing=land
+oracle={T}: Add {1} to your mana pool.\n{1}, {T}: Add {G} to your mana pool.\n{2}, {T}: Add {R} or {W} to your mana pool.

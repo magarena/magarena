@@ -1,6 +1,6 @@
 name=Amrou Seekers
-image=http://mtgimage.com/card/amrou%20seekers.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mma/3.jpg
+value=3.294
 rarity=C
 type=Creature
 subtype=Kithkin,Rebel

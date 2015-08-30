@@ -1,5 +1,5 @@
 name=Jungle Shrine
-image=http://mtgimage.com/card/jungle%20shrine.jpg
+image=http://magiccards.info/scans/en/c13/299.jpg
 value=3.958
 rarity=U
 type=Land
@@ -7,4 +7,4 @@ mana=r3g3w3
 ability={T}: Add {R} or {G} or {W} to your mana pool.;\
         SN enters the battlefield tapped.
 timing=tapland
-oracle=Jungle Shrine enters the battlefield tapped. {T}: Add {R}, {G}, or {W} to your mana pool.
+oracle=Jungle Shrine enters the battlefield tapped.\n{T}: Add {R}, {G}, or {W} to your mana pool.

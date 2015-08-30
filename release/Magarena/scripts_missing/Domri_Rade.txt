@@ -1,6 +1,6 @@
 name=Domri Rade
-image=http://mtgimage.com/card/domri%20rade.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gtc/156.jpg
+value=3.672
 rarity=M
 type=Planeswalker
 subtype=Domri
@@ -9,4 +9,4 @@ ability=+1: Look at the top card of your library. If it's a creature card, you m
         −2: Target creature you control fights another target creature.;\
         −7: You get an emblem with "Creatures you control have double strike, trample, hexproof, and haste."
 timing=main
-oracle=+1: Look at the top card of your library. If it's a creature card, you may reveal it and put it into your hand. −2: Target creature you control fights another target creature. −7: You get an emblem with "Creatures you control have double strike, trample, hexproof, and haste."
+oracle=+1: Look at the top card of your library. If it's a creature card, you may reveal it and put it into your hand.\n−2: Target creature you control fights another target creature.\n−7: You get an emblem with "Creatures you control have double strike, trample, hexproof, and haste."

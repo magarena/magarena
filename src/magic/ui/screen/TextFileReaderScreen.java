@@ -1,22 +1,24 @@
 package magic.ui.screen;
 
-import magic.data.FileIO;
+import java.io.File;
+import java.nio.file.Path;
+import java.util.List;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import javax.swing.SwingUtilities;
+import magic.translate.UiString;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
+import magic.utility.FileIO;
 import net.miginfocom.swing.MigLayout;
-
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
-import javax.swing.SwingUtilities;
-
-import java.io.File;
-import java.nio.file.Path;
-import java.util.List;
 
 @SuppressWarnings("serial")
 public abstract class TextFileReaderScreen extends AbstractScreen implements IActionBar {
+
+    // translatable strings
+    private static final String _S1 = "Close";
 
     private Path textFilePath;
     private final ScreenContent screenContent = new ScreenContent();
@@ -85,6 +87,7 @@ public abstract class TextFileReaderScreen extends AbstractScreen implements IAc
 
         private void resetVerticalScrollbar() {
             SwingUtilities.invokeLater(new Runnable() {
+                @Override
                 public void run() {
                     scrollPane.getVerticalScrollBar().setValue(0);
                 }
@@ -93,33 +96,21 @@ public abstract class TextFileReaderScreen extends AbstractScreen implements IAc
 
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getLeftAction()
-     */
     @Override
     public MenuButton getLeftAction() {
-        return MenuButton.getCloseScreenButton("Close");
+        return MenuButton.getCloseScreenButton(UiString.get(_S1));
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getRightAction()
-     */
     @Override
     public MenuButton getRightAction() {
         return null;
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getMiddleActions()
-     */
     @Override
     public List<MenuButton> getMiddleActions() {
         return null;
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.MagScreen#isScreenReadyToClose(magic.ui.MagScreen)
-     */
     @Override
     public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
         return true;

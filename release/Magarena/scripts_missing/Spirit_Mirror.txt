@@ -1,10 +1,10 @@
 name=Spirit Mirror
-image=http://mtgimage.com/card/spirit%20mirror.jpg
+image=http://magiccards.info/scans/en/vma/49.jpg
 value=2.500
 rarity=R
 type=Enchantment
 cost={2}{W}{W}
 ability=At the beginning of your upkeep, if there are no Reflection tokens on the battlefield, put a 2/2 white Reflection creature token onto the battlefield.;\
         {0}: Destroy target Reflection.
-timing=main
-oracle=At the beginning of your upkeep, if there are no Reflection tokens on the battlefield, put a 2/2 white Reflection creature token onto the battlefield. {0}: Destroy target Reflection.
+timing=enchantment
+oracle=At the beginning of your upkeep, if there are no Reflection tokens on the battlefield, put a 2/2 white Reflection creature token onto the battlefield.\n{0}: Destroy target Reflection.

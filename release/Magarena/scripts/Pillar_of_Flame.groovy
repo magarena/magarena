@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                NEG_TARGET_CREATURE_OR_PLAYER,
                 new MagicDamageTargetPicker(2),
                 this,
                 "SN deals 2 damage to target creature or player\$. " + 
@@ -16,12 +16,12 @@
             int dealtDamage = 0;
             event.processTarget(game, {
                 final MagicDamage damage = new MagicDamage(event.getSource(),it,2);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new DealDamageAction(damage));
                 dealtDamage = damage.getDealtAmount();
             });
             event.processTargetPermanent(game, {
                 if (dealtDamage > 0) {
-                    game.doAction(new MagicAddTurnTriggerAction(
+                    game.doAction(new AddTurnTriggerAction(
                         it, 
                         MagicWhenSelfLeavesPlayTrigger.IfDieExileInstead
                     ));

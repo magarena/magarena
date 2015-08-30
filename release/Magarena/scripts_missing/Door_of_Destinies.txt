@@ -1,11 +1,11 @@
 name=Door of Destinies
-image=http://mtgimage.com/card/door%20of%20destinies.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m14/208.jpg
+value=3.786
 rarity=R
 type=Artifact
 cost={4}
 ability=As SN enters the battlefield, choose a creature type.;\
         Whenever you cast a spell of the chosen type, put a charge counter on SN.;\
         Creatures you control of the chosen type get +1/+1 for each charge counter on SN.
-timing=main
-oracle=As Door of Destinies enters the battlefield, choose a creature type. Whenever you cast a spell of the chosen type, put a charge counter on Door of Destinies. Creatures you control of the chosen type get +1/+1 for each charge counter on Door of Destinies.
+timing=artifact
+oracle=As Door of Destinies enters the battlefield, choose a creature type.\nWhenever you cast a spell of the chosen type, put a charge counter on Door of Destinies.\nCreatures you control of the chosen type get +1/+1 for each charge counter on Door of Destinies.

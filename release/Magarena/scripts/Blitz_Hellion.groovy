@@ -10,7 +10,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicRemoveFromPlayAction(
+            game.doAction(new RemoveFromPlayAction(
                 event.getPermanent(),
                 MagicLocationType.OwnersLibrary
             ));

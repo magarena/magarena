@@ -1,9 +1,0 @@
-name=Gloomwidow's Feast
-image=http://mtgimage.com/card/gloomwidow%27s%20feast.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={3}{G}
-effect=Destroy target creature with flying. If that creature was blue or black, put a 1/2 green Spider creature token with reach onto the battlefield.
-timing=removal
-oracle=Destroy target creature with flying. If that creature was blue or black, put a 1/2 green Spider creature token with reach onto the battlefield.

@@ -19,7 +19,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processRefPermanent(game, {
-                game.doAction(new MagicAddTurnTriggerAction(
+                game.doAction(new AddTurnTriggerAction(
                     it,
                     MagicAtEndOfCombatTrigger.Destroy
                 ))

@@ -1,9 +1,0 @@
-name=Fatal Blow
-image=http://mtgimage.com/card/fatal%20blow.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={B}
-effect=Destroy target creature that was dealt damage this turn. It can't be regenerated.
-timing=removal
-oracle=Destroy target creature that was dealt damage this turn. It can't be regenerated.

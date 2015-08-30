@@ -18,7 +18,7 @@ public class MagicRandom extends Random {
         System.err.println("Using random seed " + RNG.getState());
     }
     
-    public MagicRandom() {
+    private MagicRandom() {
         this(System.nanoTime());
     }
 
@@ -52,5 +52,9 @@ public class MagicRandom extends Random {
     
     public static int nextRNGInt(final int n) {
         return RNG.nextInt(n);
+    }
+    
+    public static int nextRNGInt() {
+        return RNG.nextInt(Integer.MAX_VALUE);
     }
 }

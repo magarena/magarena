@@ -1,12 +1,12 @@
 name=Cinder Shade
-image=http://mtgimage.com/card/cinder%20shade.jpg
+image=http://magiccards.info/scans/en/in/240.jpg
 value=3.569
 rarity=U
 type=Creature
 subtype=Shade
 cost={1}{B}{R}
 pt=1/1
-ability={B}: SN gets +1/+1 until end of turn.
+ability={B}: SN gets +1/+1 until end of turn.;\
+        {R}, Sacrifice SN: SN deals damage equal to its power to target creature.
 timing=main
-requires_groovy_code
-oracle={B}: Cinder Shade gets +1/+1 until end of turn. {R}, Sacrifice Cinder Shade: Cinder Shade deals damage equal to its power to target creature.
+oracle={B}: Cinder Shade gets +1/+1 until end of turn.\n{R}, Sacrifice Cinder Shade: Cinder Shade deals damage equal to its power to target creature.

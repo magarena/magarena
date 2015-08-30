@@ -1,4 +1,4 @@
-def choice = MagicTargetChoice.Positive("target Chimera creature");
+def choice = Positive("target Chimera creature");
 
 [
     new MagicPermanentActivation(
@@ -25,8 +25,8 @@ def choice = MagicTargetChoice.Positive("target Chimera creature");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicChangeCountersAction(it,MagicCounterType.PlusTwo,1));
-                game.doAction(new MagicGainAbilityAction(it, MagicAbility.FirstStrike));
+                game.doAction(new ChangeCountersAction(it,MagicCounterType.PlusTwo,1));
+                game.doAction(new GainAbilityAction(it, MagicAbility.FirstStrike, MagicStatic.Forever));
             });
         }
     }

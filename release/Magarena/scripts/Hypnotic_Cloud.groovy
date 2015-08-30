@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_PLAYER,
+                NEG_TARGET_PLAYER,
                 this,
                 "Target player\$ discards a card. " +
                 "If SN was kicked, that player discards 3 cards instead."

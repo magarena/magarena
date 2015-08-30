@@ -1,10 +1,10 @@
 name=Blazing Shoal
-image=http://mtgimage.com/card/blazing%20shoal.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bok/96.jpg
+value=4.123
 rarity=R
 type=Instant
 subtype=Arcane
 cost={X}{R}{R}
 effect=You may exile a red card with converted mana cost X from your hand rather than pay SN's mana cost.~Target creature gets +X/+0 until end of turn.
 timing=removal
-oracle=You may exile a red card with converted mana cost X from your hand rather than pay Blazing Shoal's mana cost. Target creature gets +X/+0 until end of turn.
+oracle=You may exile a red card with converted mana cost X from your hand rather than pay Blazing Shoal's mana cost.\nTarget creature gets +X/+0 until end of turn.

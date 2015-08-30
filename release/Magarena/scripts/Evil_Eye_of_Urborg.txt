@@ -1,12 +1,12 @@
 name=Evil Eye of Urborg
-image=http://mtgimage.com/card/evil%20eye%20of%20urborg.jpg
+image=http://magiccards.info/scans/en/ts/107.jpg
 value=3.903
 rarity=U
 type=Creature
 subtype=Eye
 cost={4}{B}
 pt=6/3
-ability=Non-Eye creatures you control can't attack.
-requires_groovy_code
+ability=Non-Eye creatures you control can't attack.;\
+        Whenever SN becomes blocked by a creature, destroy that creature.
 timing=main
-oracle=Non-Eye creatures you control can't attack. Whenever Evil Eye of Urborg becomes blocked by a creature, destroy that creature.
+oracle=Non-Eye creatures you control can't attack.\nWhenever Evil Eye of Urborg becomes blocked by a creature, destroy that creature.

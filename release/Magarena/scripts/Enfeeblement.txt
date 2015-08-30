@@ -1,5 +1,5 @@
 name=Enfeeblement
-image=http://mtgimage.com/card/enfeeblement.jpg
+image=http://magiccards.info/scans/en/9e/127.jpg
 value=2.741
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={B}{B}
 ability=Enchanted creature gets -2/-2.
 timing=aura
 enchant=weaken -2/-2,neg creature
-oracle=Enchant creature. Enchanted creature gets -2/-2.
+oracle=Enchant creature\nEnchanted creature gets -2/-2.

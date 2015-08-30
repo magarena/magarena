@@ -1,5 +1,5 @@
 name=Vengeful Vampire
-image=http://mtgimage.com/card/vengeful%20vampire.jpg
+image=http://magiccards.info/scans/en/dka/78.jpg
 value=1.825
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={4}{B}{B}
 pt=3/2
 ability=flying;undying
 timing=main
-oracle=Flying. Undying
+oracle=Flying\nUndying

@@ -1,5 +1,5 @@
 name=Skyshroud Forest
-image=http://mtgimage.com/card/skyshroud%20forest.jpg
+image=http://magiccards.info/scans/en/vma/315.jpg
 value=2.500
 rarity=R
 type=Land
@@ -8,4 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {1} to your mana pool.;\
         {T}: Add {U} or {G} to your mana pool. SN deals 1 damage to you.
 timing=tapland
-oracle=Skyshroud Forest enters the battlefield tapped. {T}: Add {1} to your mana pool. {T}: Add {G} or {U} to your mana pool. Skyshroud Forest deals 1 damage to you.
+oracle=Skyshroud Forest enters the battlefield tapped.\n{T}: Add {1} to your mana pool.\n{T}: Add {G} or {U} to your mana pool. Skyshroud Forest deals 1 damage to you.

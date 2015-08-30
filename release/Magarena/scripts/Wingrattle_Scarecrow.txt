@@ -1,5 +1,5 @@
 name=Wingrattle Scarecrow
-image=http://mtgimage.com/card/wingrattle%20scarecrow.jpg
+image=http://magiccards.info/scans/en/shm/270.jpg
 value=2.455
 rarity=C
 type=Artifact,Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=SN has flying as long as you control a blue creature.;\
         SN has persist as long as you control a black creature.
 timing=artifact
-oracle=Wingrattle Scarecrow has flying as long as you control a blue creature. Wingrattle Scarecrow has persist as long as you control a black creature.
+oracle=Wingrattle Scarecrow has flying as long as you control a blue creature.\nWingrattle Scarecrow has persist as long as you control a black creature.

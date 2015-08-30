@@ -1,10 +1,10 @@
 name=Threaten
-image=http://mtgimage.com/card/threaten.jpg
+image=http://magiccards.info/scans/en/10e/242.jpg
 value=4.039
 removal=5
 rarity=U
 type=Sorcery
 cost={2}{R}
+effect=Untap target creature.~Gain control of *it* until end of turn.~*That creature* gains haste until end of turn.
 timing=removal
-requires_groovy_code
 oracle=Untap target creature and gain control of it until end of turn. That creature gains haste until end of turn.

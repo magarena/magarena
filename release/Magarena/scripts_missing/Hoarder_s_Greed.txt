@@ -1,6 +1,6 @@
 name=Hoarder's Greed
-image=http://mtgimage.com/card/hoarder%27s%20greed.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lw/117.jpg
+value=2.705
 rarity=U
 type=Sorcery
 cost={3}{B}

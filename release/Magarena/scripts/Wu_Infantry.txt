@@ -1,5 +1,5 @@
 name=Wu Infantry
-image=http://mtgimage.com/card/wu%20infantry.jpg
+image=http://magiccards.info/scans/en/p3k/59.jpg
 value=1.938
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Human,Soldier
 cost={1}{U}
 pt=2/1
 timing=main
+oracle=NONE

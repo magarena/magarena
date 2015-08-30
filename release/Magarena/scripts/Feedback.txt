@@ -1,5 +1,5 @@
 name=Feedback
-image=http://mtgimage.com/card/feedback.jpg
+image=http://magiccards.info/scans/en/5e/85.jpg
 value=1.892
 rarity=U
 type=Enchantment
@@ -8,4 +8,4 @@ cost={2}{U}
 enchant=default,neg enchantment
 timing=enchantment
 requires_groovy_code
-oracle=Enchant enchantment. At the beginning of the upkeep of enchanted enchantment's controller, Feedback deals 1 damage to that player.
+oracle=Enchant enchantment\nAt the beginning of the upkeep of enchanted enchantment's controller, Feedback deals 1 damage to that player.

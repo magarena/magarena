@@ -1,10 +1,10 @@
 name=Jeweled Amulet
-image=http://mtgimage.com/card/jeweled%20amulet.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me2/212.jpg
+value=3.232
 rarity=U
 type=Artifact
 cost={0}
 ability={1}, {T}: Put a charge counter on SN. Note the type of mana spent to pay this activation cost. Activate this ability only if there are no charge counters on SN.;\
         {T}, Remove a charge counter from SN: Add one mana of SN's last noted type to your mana pool.
-timing=main
-oracle={1}, {T}: Put a charge counter on Jeweled Amulet. Note the type of mana spent to pay this activation cost. Activate this ability only if there are no charge counters on Jeweled Amulet. {T}, Remove a charge counter from Jeweled Amulet: Add one mana of Jeweled Amulet's last noted type to your mana pool.
+timing=artifact
+oracle={1}, {T}: Put a charge counter on Jeweled Amulet. Note the type of mana spent to pay this activation cost. Activate this ability only if there are no charge counters on Jeweled Amulet.\n{T}, Remove a charge counter from Jeweled Amulet: Add one mana of Jeweled Amulet's last noted type to your mana pool.

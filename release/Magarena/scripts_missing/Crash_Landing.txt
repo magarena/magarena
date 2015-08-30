@@ -1,9 +1,0 @@
-name=Crash Landing
-image=http://mtgimage.com/card/crash%20landing.jpg
-value=2.500
-rarity=U
-type=Instant
-cost={2}{G}
-effect=Target creature with flying loses flying until end of turn. SN deals damage to that creature equal to the number of Forests you control.
-timing=removal
-oracle=Target creature with flying loses flying until end of turn. Crash Landing deals damage to that creature equal to the number of Forests you control.

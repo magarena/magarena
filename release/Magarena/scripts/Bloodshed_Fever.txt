@@ -1,5 +1,5 @@
 name=Bloodshed Fever
-image=http://mtgimage.com/card/bloodshed%20fever.jpg
+image=http://magiccards.info/scans/en/shm/84.jpg
 value=1.930
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={R}
 ability=Enchanted creature attacks each turn if able.
 timing=aura
 enchant=must attack,neg creature
-oracle=Enchant creature. Enchanted creature attacks each turn if able.
+oracle=Enchant creature\nEnchanted creature attacks each turn if able.

@@ -1,9 +1,9 @@
 name=Azorius Signet
-image=http://mtgimage.com/card/azorius%20signet.jpg
-value=2.500
+image=http://magiccards.info/scans/en/arc/103.jpg
+value=3.625
 rarity=C
 type=Artifact
 cost={2}
 ability={1}, {T}: Add {W}{U} to your mana pool.
-timing=main
+timing=artifact
 oracle={1}, {T}: Add {W}{U} to your mana pool.

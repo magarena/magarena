@@ -1,0 +1,10 @@
+name=Calming Verse
+image=http://magiccards.info/scans/en/pr/110.jpg
+value=3.761
+rarity=C
+type=Sorcery
+cost={3}{G}
+ability=Cast SN with AI only if an opponent controls an enchantment.
+timing=main
+requires_groovy_code
+oracle=Destroy all enchantments you don't control. Then, if you control an untapped land, destroy all enchantments you control.

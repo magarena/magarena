@@ -1,9 +1,9 @@
 name=Dream Halls
-image=http://mtgimage.com/card/dream%20halls.jpg
+image=http://magiccards.info/scans/en/sh/28.jpg
 value=2.500
 rarity=R
 type=Enchantment
 cost={3}{U}{U}
 ability=Rather than pay the mana cost for a spell, its controller may discard a card that shares a color with that spell.
-timing=main
+timing=enchantment
 oracle=Rather than pay the mana cost for a spell, its controller may discard a card that shares a color with that spell.

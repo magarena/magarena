@@ -1,9 +1,9 @@
 name=Kaervek's Torch
-image=http://mtgimage.com/card/kaervek%27s%20torch.jpg
-value=2.500
-rarity=C
+image=http://magiccards.info/scans/en/vma/175.jpg
+value=4.000
+rarity=U
 type=Sorcery
 cost={X}{R}
 effect=As long as SN is on the stack, spells that target it cost {2} more to cast.~SN deals X damage to target creature or player.
 timing=main
-oracle=As long as Kaervek's Torch is on the stack, spells that target it cost {2} more to cast. Kaervek's Torch deals X damage to target creature or player.
+oracle=As long as Kaervek's Torch is on the stack, spells that target it cost {2} more to cast.\nKaervek's Torch deals X damage to target creature or player.

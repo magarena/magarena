@@ -1,9 +1,0 @@
-name=Rolling Stones
-image=http://mtgimage.com/card/rolling%20stones.jpg
-value=2.500
-rarity=R
-type=Enchantment
-cost={1}{W}
-ability=Wall creatures can attack as though they didn't have defender.
-timing=main
-oracle=Wall creatures can attack as though they didn't have defender.

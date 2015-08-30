@@ -1,5 +1,5 @@
 name=Juggernaut
-image=http://mtgimage.com/card/juggernaut.jpg
+image=http://magiccards.info/scans/en/m15/220.jpg
 value=3.643
 rarity=U
 type=Artifact,Creature
@@ -9,4 +9,4 @@ pt=5/3
 ability=SN attacks each turn if able.;\
         SN can't be blocked by Walls.
 timing=main
-oracle=Juggernaut attacks each turn if able. Juggernaut can't be blocked by Walls.
+oracle=Juggernaut attacks each turn if able.\nJuggernaut can't be blocked by Walls.

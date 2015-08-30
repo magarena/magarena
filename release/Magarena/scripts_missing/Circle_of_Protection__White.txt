@@ -1,9 +1,9 @@
 name=Circle of Protection: White
-image=http://mtgimage.com/card/circle%20of%20protection%20white.jpg
-value=2.500
-rarity=C
+image=http://magiccards.info/scans/en/8e/14.jpg
+value=3.066
+rarity=U
 type=Enchantment
 cost={1}{W}
 ability={1}: The next time a white source of your choice would deal damage to you this turn, prevent that damage.
-timing=main
+timing=enchantment
 oracle={1}: The next time a white source of your choice would deal damage to you this turn, prevent that damage.

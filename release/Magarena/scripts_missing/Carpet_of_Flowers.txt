@@ -1,9 +1,9 @@
 name=Carpet of Flowers
-image=http://mtgimage.com/card/carpet%20of%20flowers.jpg
-value=2.500
+image=http://magiccards.info/scans/en/us/240.jpg
+value=3.716
 rarity=U
 type=Enchantment
 cost={G}
 ability=At the beginning of each of your main phases, if you haven't added mana to your mana pool with this ability this turn, you may add up to X mana of any one color to your mana pool, where X is the number of Islands target opponent controls.
-timing=main
+timing=enchantment
 oracle=At the beginning of each of your main phases, if you haven't added mana to your mana pool with this ability this turn, you may add up to X mana of any one color to your mana pool, where X is the number of Islands target opponent controls.

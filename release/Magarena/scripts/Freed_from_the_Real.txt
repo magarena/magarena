@@ -1,11 +1,12 @@
 name=Freed from the Real
-image=http://mtgimage.com/card/freed%20from%20the%20real.jpg
+image=http://magiccards.info/scans/en/sok/38.jpg
 value=3.984
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{U}
+ability={U}: Tap enchanted creature.;\
+        {U}: Untap enchanted creature.
 timing=aura
 enchant=default,creature
-requires_groovy_code
-oracle=Enchant creature. {U}: Tap enchanted creature. {U}: Untap enchanted creature.
+oracle=Enchant creature\n{U}: Tap enchanted creature.\n{U}: Untap enchanted creature.

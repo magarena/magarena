@@ -1,6 +1,6 @@
 name=Giltspire Avenger
-image=http://mtgimage.com/card/giltspire%20avenger.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cfx/108.jpg
+value=3.342
 rarity=R
 type=Creature
 subtype=Human,Soldier
@@ -9,4 +9,4 @@ pt=2/2
 ability=Exalted;\
         {T}: Destroy target creature that dealt damage to you this turn.
 timing=main
-oracle=Exalted. {T}: Destroy target creature that dealt damage to you this turn.
+oracle=Exalted\n{T}: Destroy target creature that dealt damage to you this turn.

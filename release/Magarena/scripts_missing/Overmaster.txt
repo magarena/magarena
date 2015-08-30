@@ -1,9 +1,9 @@
 name=Overmaster
-image=http://mtgimage.com/card/overmaster.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tr/104.jpg
+value=4.230
 rarity=R
 type=Sorcery
 cost={R}
 effect=The next instant or sorcery spell you cast this turn can't be countered by spells or abilities.~Draw a card.
 timing=main
-oracle=The next instant or sorcery spell you cast this turn can't be countered by spells or abilities. Draw a card.
+oracle=The next instant or sorcery spell you cast this turn can't be countered by spells or abilities.\nDraw a card.

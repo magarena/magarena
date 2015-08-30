@@ -1,0 +1,9 @@
+name=Crash Landing
+image=http://magiccards.info/scans/en/gp/82.jpg
+value=1.786
+rarity=U
+type=Instant
+cost={2}{G}
+timing=loseEvasion
+requires_groovy_code
+oracle=Target creature with flying loses flying until end of turn. Crash Landing deals damage to that creature equal to the number of Forests you control.

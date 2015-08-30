@@ -1,0 +1,9 @@
+name=Rakshasa's Disdain
+image=http://magiccards.info/scans/en/frf/45.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{U}
+timing=counter
+requires_groovy_code
+oracle=Counter target spell unless its controller pays {1} for each card in your graveyard.

@@ -1,5 +1,5 @@
 name=Bitterblossom
-image=http://mtgimage.com/card/bitterblossom.jpg
+image=http://magiccards.info/scans/en/mt/58.jpg
 value=4.392
 rarity=R
 type=Tribal,Enchantment

@@ -1,9 +1,10 @@
 name=Chalice of Death
-image=http://mtgimage.com/card/chalice%20of%20death.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dka/146b.jpg
+value=3.659
 rarity=U
 type=Artifact
-color=
 ability={T}: Target player loses 5 life.
-timing=main
+transform=Chalice of Life
+timing=artifact
+hidden
 oracle={T}: Target player loses 5 life.

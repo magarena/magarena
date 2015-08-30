@@ -1,5 +1,5 @@
 name=Phyrexian Tribute
-image=http://mtgimage.com/card/phyrexian%20tribute.jpg
+image=http://magiccards.info/scans/en/mr/32.jpg
 value=1.638
 rarity=R
 type=Sorcery
@@ -7,4 +7,4 @@ cost={2}{B}
 ability=As an additional cost to cast SN, sacrifice two creatures.
 effect=Destroy target artifact.
 timing=main
-oracle=As an additional cost to cast Phyrexian Tribute, sacrifice two creatures. Destroy target artifact.
+oracle=As an additional cost to cast Phyrexian Tribute, sacrifice two creatures.\nDestroy target artifact.

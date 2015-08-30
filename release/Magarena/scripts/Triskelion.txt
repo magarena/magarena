@@ -1,5 +1,5 @@
 name=Triskelion
-image=http://mtgimage.com/card/triskelion.jpg
+image=http://magiccards.info/scans/en/ddf/57.jpg
 value=4.093
 rarity=R
 type=Artifact,Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=SN enters the battlefield with three +1/+1 counters on it.;\
         Remove a +1/+1 counter from SN: SN deals 1 damage to target creature or player.
 timing=main
-oracle=Triskelion enters the battlefield with three +1/+1 counters on it. Remove a +1/+1 counter from Triskelion: Triskelion deals 1 damage to target creature or player.
+oracle=Triskelion enters the battlefield with three +1/+1 counters on it.\nRemove a +1/+1 counter from Triskelion: Triskelion deals 1 damage to target creature or player.

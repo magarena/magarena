@@ -1,9 +1,9 @@
 name=Defense Grid
-image=http://mtgimage.com/card/defense%20grid.jpg
-value=2.500
+image=http://magiccards.info/scans/en/9e/293.jpg
+value=4.255
 rarity=R
 type=Artifact
 cost={2}
 ability=Each spell costs {3} more to cast except during its controller's turn.
-timing=main
+timing=artifact
 oracle=Each spell costs {3} more to cast except during its controller's turn.

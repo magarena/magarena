@@ -1,4 +1,4 @@
-def choice = MagicTargetChoice.Negative("target Plains or Island");
+def choice = Negative("target Plains or Island");
 
 [
     new MagicSpellCardEvent() {
@@ -15,9 +15,8 @@ def choice = MagicTargetChoice.Negative("target Plains or Island");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicDestroyAction(it));
-                final MagicDamage damage=new MagicDamage(event.getSource(),it.getController(),3);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new DestroyAction(it));
+                game.doAction(new DealDamageAction(event.getSource(),it.getController(),3));
             });
         }
     }

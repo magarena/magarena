@@ -1,5 +1,5 @@
 name=Coastal Drake
-image=http://mtgimage.com/card/coastal%20drake.jpg
+image=http://magiccards.info/scans/en/ap/22.jpg
 value=2.500
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{U}
 pt=2/1
 ability=flying;{1}{U},{T}:Return target Kavu to its owner's hand.
 timing=main
-oracle=Flying. {1}{U}, {T}: Return target Kavu to its owner's hand.
+oracle=Flying\n{1}{U}, {T}: Return target Kavu to its owner's hand.

@@ -28,11 +28,19 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.getPlayer().controlsPermanent(MagicType.Creature) && event.isYes()) {
-                game.addEvent(new MagicSacrificePermanentEvent(event.getPermanent(),event.getPlayer(),MagicTargetChoice.SACRIFICE_CREATURE));
+            final MagicEvent sac = new MagicSacrificePermanentEvent(
+                event.getSource(),
+                event.getPlayer(),
+                SACRIFICE_CREATURE
+            );
+            if (event.isYes() && sac.isSatisfied()) {
+                game.addEvent(sac);
             } else {
-                final MagicDamage damage=new MagicDamage(event.getSource(),event.getPlayer(),2);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new DealDamageAction(
+                    event.getSource(),
+                    event.getPlayer(),
+                    2
+                ));
             }
         }
     }

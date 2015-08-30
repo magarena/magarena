@@ -1,7 +1,7 @@
 name=Khabál Ghoul
-image=http://mtgimage.com/card/khabal%20ghoul.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/med/75.jpg
+value=3.779
+rarity=R
 type=Creature
 subtype=Zombie
 cost={2}{B}

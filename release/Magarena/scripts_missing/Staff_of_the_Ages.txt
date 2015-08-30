@@ -1,9 +1,9 @@
 name=Staff of the Ages
-image=http://mtgimage.com/card/staff%20of%20the%20ages.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ia/315.jpg
+value=3.102
 rarity=R
 type=Artifact
 cost={3}
 ability=Creatures with landwalk abilities can be blocked as though they didn't have those abilities.
-timing=main
+timing=artifact
 oracle=Creatures with landwalk abilities can be blocked as though they didn't have those abilities.

@@ -1,5 +1,5 @@
 name=Urbis Protector
-image=http://mtgimage.com/card/urbis%20protector.jpg
+image=http://magiccards.info/scans/en/gtc/27.jpg
 value=2.798
 rarity=U
 type=Creature

@@ -19,38 +19,8 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayer player=event.getPlayer();
-            final Collection<MagicPermanent> targets=game.filterPermanents(player,MagicTargetFilterFactory.CREATURE);
-            for (final MagicPermanent creature : targets) {
-                if (!creature.isController(player)) {
-                    game.doAction(new MagicGainAbilityAction(creature,MagicAbility.AttacksEachTurnIfAble));
-                } 
-            }
-        }
-    },
-    new MagicWhenDamageIsDealtTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            return (permanent.isOpponent(damage.getTarget()) &&
-                    damage.getSource().isCreature() &&
-                    damage.isCombat()) ?
-                new MagicEvent(
-                    permanent,
-                    damage.getSource().getController(),
-                    new MagicSimpleMayChoice(
-                        MagicSimpleMayChoice.DRAW_CARDS,
-                        1,
-                        MagicSimpleMayChoice.DEFAULT_NONE
-                    ),
-                    this,
-                    "PN may\$ draw a card."
-                ) :
-                MagicEvent.NONE;
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isYes()) {
-                game.doAction(new MagicDrawAction(event.getPlayer()));
+            CREATURE_YOUR_OPPONENT_CONTROLS.filter(event) each {
+                game.doAction(new GainAbilityAction(it, MagicAbility.AttacksEachTurnIfAble));
             }
         }
     }

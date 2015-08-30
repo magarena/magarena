@@ -13,9 +13,9 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent perm = event.getPermanent();
             if (event.getPlayer().controlsPermanent(MagicType.Artifact) && event.isYes()) {
-                game.addEvent(new MagicSacrificePermanentEvent(perm,event.getPlayer(),MagicTargetChoice.SACRIFICE_ARTIFACT));
+                game.addEvent(new MagicSacrificePermanentEvent(perm,event.getPlayer(),SACRIFICE_ARTIFACT));
             } else {
-                game.doAction(new MagicSacrificeAction(perm));
+                game.doAction(new SacrificeAction(perm));
             }
         }
     }

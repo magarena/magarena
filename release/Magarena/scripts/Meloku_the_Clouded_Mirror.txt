@@ -1,5 +1,5 @@
 name=Meloku the Clouded Mirror
-image=http://mtgimage.com/card/meloku%20the%20clouded%20mirror.jpg
+image=http://magiccards.info/scans/en/mma/52.jpg
 value=4.300
 rarity=R
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=2/4
 ability=flying;\
         {1},Return a land you control to its owner's hand: Put a 1/1 blue Illusion creature token with flying onto the battlefield.
 timing=main
-oracle=Flying. {1}, Return a land you control to its owner's hand: Put a 1/1 blue Illusion creature token with flying onto the battlefield.
+oracle=Flying\n{1}, Return a land you control to its owner's hand: Put a 1/1 blue Illusion creature token with flying onto the battlefield.

@@ -1,5 +1,5 @@
 name=Guardians of Akrasa
-image=http://mtgimage.com/card/guardians%20of%20akrasa.jpg
+image=http://magiccards.info/scans/en/m13/18.jpg
 value=2.875
 ability=defender;exalted
 rarity=C
@@ -8,4 +8,4 @@ subtype=Human,Soldier
 cost={2}{W}
 pt=0/4
 timing=smain
-oracle=Defender. Exalted
+oracle=Defender\nExalted

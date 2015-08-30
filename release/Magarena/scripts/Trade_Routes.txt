@@ -1,5 +1,5 @@
 name=Trade Routes
-image=http://mtgimage.com/card/trade%20routes.jpg
+image=http://magiccards.info/scans/en/9e/108.jpg
 value=4.375
 rarity=R
 type=Enchantment
@@ -7,4 +7,4 @@ cost={1}{U}
 ability={1}: Return target land you control to its owner's hand.;\
         {1}, Discard a land card: Draw a card.
 timing=enchantment
-oracle={1}: Return target land you control to its owner's hand. {1}, Discard a land card: Draw a card.
+oracle={1}: Return target land you control to its owner's hand.\n{1}, Discard a land card: Draw a card.

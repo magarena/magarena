@@ -1,5 +1,5 @@
 name=Nyx Weaver
-image=http://mtgimage.com/card/nyx%20weaver.jpg
+image=http://magiccards.info/scans/en/jou/153.jpg
 value=3.716
 rarity=U
 type=Enchantment,Creature
@@ -10,4 +10,4 @@ ability=Reach;\
         At the beginning of your upkeep, put the top two cards of your library into your graveyard.;\
         {1}{B}{G}, Exile SN: Return target card from your graveyard to your hand.
 timing=main
-oracle=Reach. At the beginning of your upkeep, put the top two cards of your library into your graveyard. {1}{B}{G}, Exile Nyx Weaver: Return target card from your graveyard to your hand.
+oracle=Reach\nAt the beginning of your upkeep, put the top two cards of your library into your graveyard.\n{1}{B}{G}, Exile Nyx Weaver: Return target card from your graveyard to your hand.

@@ -1,6 +1,6 @@
 name=Merieke Ri Berit
-image=http://mtgimage.com/card/merieke%20ri%20berit.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tsts/95.jpg
+value=3.992
 rarity=R
 type=Legendary,Creature
 subtype=Human
@@ -9,4 +9,4 @@ pt=1/1
 ability=SN doesn't untap during your untap step.;\
         {T}: Gain control of target creature for as long as you control SN. When SN leaves the battlefield or becomes untapped, destroy that creature. It can't be regenerated.
 timing=main
-oracle=Merieke Ri Berit doesn't untap during your untap step. {T}: Gain control of target creature for as long as you control Merieke Ri Berit. When Merieke Ri Berit leaves the battlefield or becomes untapped, destroy that creature. It can't be regenerated.
+oracle=Merieke Ri Berit doesn't untap during your untap step.\n{T}: Gain control of target creature for as long as you control Merieke Ri Berit. When Merieke Ri Berit leaves the battlefield or becomes untapped, destroy that creature. It can't be regenerated.

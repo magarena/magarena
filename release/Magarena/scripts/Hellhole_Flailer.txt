@@ -1,12 +1,12 @@
 name=Hellhole Flailer
-image=http://mtgimage.com/card/hellhole%20flailer.jpg
+image=http://magiccards.info/scans/en/rtr/167.jpg
 value=3.800
 rarity=U
 type=Creature
 subtype=Ogre,Warrior
 cost={1}{B}{R}
 pt=3/2
-ability=unleash
+ability=unleash;\
+        {2}{B}{R}, Sacrifice SN: SN deals damage equal to its power to target player.
 timing=main
-requires_groovy_code
-oracle=Unleash. {2}{B}{R}, Sacrifice Hellhole Flailer: Hellhole Flailer deals damage equal to its power to target player.
+oracle=Unleash\n{2}{B}{R}, Sacrifice Hellhole Flailer: Hellhole Flailer deals damage equal to its power to target player.

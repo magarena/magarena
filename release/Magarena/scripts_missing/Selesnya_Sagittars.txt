@@ -1,6 +1,6 @@
 name=Selesnya Sagittars
-image=http://mtgimage.com/card/selesnya%20sagittars.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rav/229.jpg
+value=2.919
 rarity=U
 type=Creature
 subtype=Elf,Archer
@@ -9,4 +9,4 @@ pt=2/5
 ability=Reach;\
         SN can block an additional creature.
 timing=main
-oracle=Reach. Selesnya Sagittars can block an additional creature.
+oracle=Reach\nSelesnya Sagittars can block an additional creature.

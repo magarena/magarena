@@ -1,5 +1,5 @@
 name=Hearthcage Giant
-image=http://mtgimage.com/card/hearthcage%20giant.jpg
+image=http://magiccards.info/scans/en/lw/174.jpg
 value=3.081
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=5/5
 ability=When SN enters the battlefield, put two 3/1 red Elemental Shaman creature tokens onto the battlefield.;\
         Sacrifice an Elemental: Target Giant creature gets +3/+1 until end of turn.
 timing=main
-oracle=When Hearthcage Giant enters the battlefield, put two 3/1 red Elemental Shaman creature tokens onto the battlefield. Sacrifice an Elemental: Target Giant creature gets +3/+1 until end of turn.
+oracle=When Hearthcage Giant enters the battlefield, put two 3/1 red Elemental Shaman creature tokens onto the battlefield.\nSacrifice an Elemental: Target Giant creature gets +3/+1 until end of turn.

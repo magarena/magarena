@@ -1,9 +1,0 @@
-name=Spiritual Sanctuary
-image=http://mtgimage.com/card/spiritual%20sanctuary.jpg
-value=2.500
-rarity=R
-type=Enchantment
-cost={2}{W}{W}
-ability=At the beginning of each player's upkeep, if that player controls a Plains, he or she gains 1 life.
-timing=main
-oracle=At the beginning of each player's upkeep, if that player controls a Plains, he or she gains 1 life.

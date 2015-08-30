@@ -1,5 +1,5 @@
 name=Kyren Sniper
-image=http://mtgimage.com/card/kyren%20sniper.jpg
+image=http://magiccards.info/scans/en/mm/199.jpg
 value=2.365
 rarity=C
 type=Creature

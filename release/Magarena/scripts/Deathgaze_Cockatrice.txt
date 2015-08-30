@@ -1,5 +1,5 @@
 name=Deathgaze Cockatrice
-image=http://mtgimage.com/card/deathgaze%20cockatrice.jpg
+image=http://magiccards.info/scans/en/m14/94.jpg
 value=3.286
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{B}{B}
 pt=2/2
 ability=flying;deathtouch
 timing=main
-oracle=Flying. Deathtouch
+oracle=Flying\nDeathtouch

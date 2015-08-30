@@ -1,5 +1,5 @@
 name=Flurry of Horns
-image=http://mtgimage.com/card/flurry%20of%20horns.jpg
+image=http://magiccards.info/scans/en/jou/96.jpg
 value=3.720
 rarity=C
 type=Sorcery

@@ -1,7 +1,7 @@
 name=Eye for an Eye
-image=http://mtgimage.com/card/eye%20for%20an%20eye.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/me4/12.jpg
+value=3.750
+rarity=R
 type=Instant
 cost={W}{W}
 effect=The next time a source of your choice would deal damage to you this turn, instead that source deals that much damage to you and SN deals that much damage to that source's controller.

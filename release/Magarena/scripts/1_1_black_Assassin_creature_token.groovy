@@ -1,23 +1,17 @@
 [
-    new MagicWhenDamageIsDealtTrigger() {
+    new MagicWhenSelfCombatDamagePlayerTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicSource source = damage.getSource();
-            return (source == permanent &&
-                    damage.isCombat() &&
-                    damage.isTargetPlayer()) ?
-                new MagicEvent(
-                    permanent,
-                    permanent.getController(),
-                    damage.getTarget(),
-                    this,
-                    "RN loses the game."
-                ) :
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                damage.getTarget(),
+                this,
+                "RN loses the game."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicLoseGameAction(event.getRefPlayer()));
+            game.doAction(new LoseGameAction(event.getRefPlayer()));
         }
     }
 ]

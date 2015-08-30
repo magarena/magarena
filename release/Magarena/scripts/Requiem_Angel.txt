@@ -1,5 +1,5 @@
 name=Requiem Angel
-image=http://mtgimage.com/card/requiem%20angel.jpg
+image=http://magiccards.info/scans/en/c14/84.jpg
 value=3.631
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=5/5
 ability=flying;\
         Whenever another non-Spirit creature you control dies, put a 1/1 white Spirit creature token with flying onto the battlefield.
 timing=fmain
-oracle=Flying. Whenever another non-Spirit creature you control dies, put a 1/1 white Spirit creature token with flying onto the battlefield.
+oracle=Flying\nWhenever another non-Spirit creature you control dies, put a 1/1 white Spirit creature token with flying onto the battlefield.

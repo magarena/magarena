@@ -1,7 +1,7 @@
 name=Skirk Drill Sergeant
-image=http://mtgimage.com/card/skirk%20drill%20sergeant.jpg
+image=http://magiccards.info/scans/en/vma/185.jpg
 value=2.500
-rarity=U
+rarity=C
 type=Creature
 subtype=Goblin
 cost={1}{R}

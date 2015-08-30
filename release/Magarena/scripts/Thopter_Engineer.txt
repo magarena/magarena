@@ -1,0 +1,12 @@
+name=Thopter Engineer
+image=http://magiccards.info/scans/en/ori/165.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Artificer
+cost={2}{R}
+pt=1/3
+ability=When SN enters the battlefield, put a 1/1 colorless Thopter artifact creature token with flying onto the battlefield.;\
+        Artifact creatures you control have haste.
+timing=main
+oracle=When Thopter Engineer enters the battlefield, put a 1/1 colorless Thopter artifact creature token with flying onto the battlefield.\nArtifact creatures you control have haste.

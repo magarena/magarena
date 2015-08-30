@@ -1,9 +1,9 @@
 name=Explore
-image=http://mtgimage.com/card/explore.jpg
+image=http://magiccards.info/scans/en/ddo/45.jpg
 value=3.801
 rarity=C
 type=Sorcery
 cost={1}{G}
 timing=main
 requires_groovy_code
-oracle=You may play an additional land this turn. Draw a card.
+oracle=You may play an additional land this turn.\nDraw a card.

@@ -1,0 +1,11 @@
+name=Dosan the Falling Leaf
+image=http://magiccards.info/scans/en/chk/205.jpg
+value=3.925
+rarity=R
+type=Legendary,Creature
+subtype=Human,Monk
+cost={1}{G}{G}
+pt=2/2
+timing=main
+requires_groovy_code
+oracle=Players can cast spells only during their own turns.

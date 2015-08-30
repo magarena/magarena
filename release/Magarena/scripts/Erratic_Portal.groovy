@@ -1,8 +1,6 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
-    if (event.isYes()) {
-        event.payManaCost(game);
-    } else {
+    if (event.isNo()) {
         game.addEvent(new MagicBouncePermanentEvent(event.getSource(), event.getRefPermanent()));
     }
 }
@@ -25,7 +23,7 @@ def action = {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_CREATURE,
+                TARGET_CREATURE,
                 MagicBounceTargetPicker.create(),
                 this,
                 "Return target creature\$ to its owner's hand unless its controller pays {1}."

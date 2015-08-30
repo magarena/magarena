@@ -1,9 +1,9 @@
 name=Ashnod's Altar
-image=http://mtgimage.com/card/ashnod%27s%20altar.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/me4/181.jpg
+value=4.430
+rarity=R
 type=Artifact
 cost={3}
 ability=Sacrifice a creature: Add {2} to your mana pool.
-timing=main
+timing=artifact
 oracle=Sacrifice a creature: Add {2} to your mana pool.

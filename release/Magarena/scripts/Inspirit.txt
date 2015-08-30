@@ -1,9 +1,9 @@
 name=Inspirit
-image=http://mtgimage.com/card/inspirit.jpg
+image=http://magiccards.info/scans/en/9e/22.jpg
 value=2.817
 rarity=U
 type=Instant
 cost={2}{W}
+effect=Untap target creature.~*It* gets +2/+4 until end of turn.
 timing=tapping
-requires_groovy_code
 oracle=Untap target creature. It gets +2/+4 until end of turn.

@@ -1,6 +1,6 @@
 name=Savra, Queen of the Golgari
-image=http://mtgimage.com/card/savra%2C%20queen%20of%20the%20golgari.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rav/225.jpg
+value=4.015
 rarity=R
 type=Legendary,Creature
 subtype=Elf,Shaman
@@ -9,4 +9,4 @@ pt=2/2
 ability=Whenever you sacrifice a black creature, you may pay 2 life. If you do, each other player sacrifices a creature.;\
         Whenever you sacrifice a green creature, you may gain 2 life.
 timing=main
-oracle=Whenever you sacrifice a black creature, you may pay 2 life. If you do, each other player sacrifices a creature. Whenever you sacrifice a green creature, you may gain 2 life.
+oracle=Whenever you sacrifice a black creature, you may pay 2 life. If you do, each other player sacrifices a creature.\nWhenever you sacrifice a green creature, you may gain 2 life.

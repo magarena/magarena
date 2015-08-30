@@ -1,6 +1,6 @@
 name=Pyreheart Wolf
-image=http://mtgimage.com/card/pyreheart%20wolf.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dka/101.jpg
+value=3.704
 rarity=U
 type=Creature
 subtype=Wolf
@@ -9,4 +9,4 @@ pt=1/1
 ability=Whenever SN attacks, each creature you control can't be blocked this turn except by two or more creatures.;\
         Undying
 timing=main
-oracle=Whenever Pyreheart Wolf attacks, each creature you control can't be blocked this turn except by two or more creatures. Undying
+oracle=Whenever Pyreheart Wolf attacks, each creature you control can't be blocked this turn except by two or more creatures.\nUndying

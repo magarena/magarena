@@ -1,6 +1,6 @@
 name=Private Research
-image=http://mtgimage.com/card/private%20research.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ud/41.jpg
+value=3.957
 rarity=U
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={U}
 ability=Enchant creature;\
         At the beginning of your upkeep, you may put a page counter on SN.;\
         When enchanted creature dies, draw a card for each page counter on SN.
-timing=main
-oracle=Enchant creature. At the beginning of your upkeep, you may put a page counter on Private Research. When enchanted creature dies, draw a card for each page counter on Private Research.
+timing=aura
+oracle=Enchant creature\nAt the beginning of your upkeep, you may put a page counter on Private Research.\nWhen enchanted creature dies, draw a card for each page counter on Private Research.

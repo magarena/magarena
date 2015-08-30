@@ -1,6 +1,6 @@
 name=Peace and Quiet
-image=http://mtgimage.com/card/peace%20and%20quiet.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ul/17.jpg
+value=2.968
 rarity=U
 type=Instant
 cost={1}{W}

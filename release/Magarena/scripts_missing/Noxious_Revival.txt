@@ -1,6 +1,6 @@
 name=Noxious Revival
-image=http://mtgimage.com/card/noxious%20revival.jpg
-value=2.500
+image=http://magiccards.info/scans/en/nph/118.jpg
+value=4.368
 rarity=U
 type=Instant
 cost={G/P}

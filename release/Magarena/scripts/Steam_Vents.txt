@@ -1,5 +1,5 @@
 name=Steam Vents
-image=http://mtgimage.com/card/steam%20vents.jpg
+image=http://magiccards.info/scans/en/rtr/247.jpg
 value=4.280
 rarity=R
 type=Land

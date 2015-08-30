@@ -1,5 +1,5 @@
 name=Elvish Pathcutter
-image=http://mtgimage.com/card/elvish%20pathcutter.jpg
+image=http://magiccards.info/scans/en/on/256.jpg
 value=0.963
 rarity=C
 type=Creature

@@ -1,9 +1,0 @@
-name=1/1 red Human creature tokens with haste
-token=Human
-image=http://magiccards.info/extras/token/avacyn-restored/human-2.jpg
-value=1
-type=Creature
-subtype=Human
-color=r
-pt=1/1
-ability=haste

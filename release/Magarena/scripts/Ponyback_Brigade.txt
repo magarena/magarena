@@ -1,5 +1,5 @@
 name=Ponyback Brigade
-image=http://mtgimage.com/card/ponyback%20brigade.jpg
+image=http://magiccards.info/scans/en/ktk/191.jpg
 value=3.000
 rarity=C
 type=Creature
@@ -10,4 +10,4 @@ ability=When SN enters the battlefield, put three 1/1 red Goblin creature tokens
         When SN is turned face up, put three 1/1 red Goblin creature tokens onto the battlefield.;\
         Morph {2}{R}{W}{B}
 timing=main
-oracle=When Ponyback Brigade enters the battlefield or is turned face up, put three 1/1 red Goblin creature tokens onto the battlefield. Morph {2}{R}{W}{B}
+oracle=When Ponyback Brigade enters the battlefield or is turned face up, put three 1/1 red Goblin creature tokens onto the battlefield.\nMorph {2}{R}{W}{B}

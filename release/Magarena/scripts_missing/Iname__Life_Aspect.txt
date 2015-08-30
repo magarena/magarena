@@ -1,6 +1,6 @@
 name=Iname, Life Aspect
-image=http://mtgimage.com/card/iname%2C%20life%20aspect.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/215.jpg
+value=3.107
 rarity=R
 type=Legendary,Creature
 subtype=Spirit

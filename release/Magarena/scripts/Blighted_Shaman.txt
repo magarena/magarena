@@ -1,5 +1,5 @@
 name=Blighted Shaman
-image=http://mtgimage.com/card/blighted%20shaman.jpg
+image=http://magiccards.info/scans/en/6e/114.jpg
 value=2.783
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability={T}, Sacrifice a Swamp: Target creature gets +1/+1 until end of turn.;\
         {T}, Sacrifice a creature: Target creature gets +2/+2 until end of turn.
 timing=main
-oracle={T}, Sacrifice a Swamp: Target creature gets +1/+1 until end of turn. {T}, Sacrifice a creature: Target creature gets +2/+2 until end of turn.
+oracle={T}, Sacrifice a Swamp: Target creature gets +1/+1 until end of turn.\n{T}, Sacrifice a creature: Target creature gets +2/+2 until end of turn.

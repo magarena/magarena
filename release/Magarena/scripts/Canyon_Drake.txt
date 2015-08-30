@@ -1,5 +1,5 @@
 name=Canyon Drake
-image=http://mtgimage.com/card/canyon%20drake.jpg
+image=http://magiccards.info/scans/en/tp/166.jpg
 value=2.602
 rarity=R
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{R}{R}
 pt=1/2
 ability=flying;{1},Discard a card at random:SN gets +2/+0 until end of turn.
 timing=main
-oracle=Flying. {1}, Discard a card at random: Canyon Drake gets +2/+0 until end of turn.
+oracle=Flying\n{1}, Discard a card at random: Canyon Drake gets +2/+0 until end of turn.

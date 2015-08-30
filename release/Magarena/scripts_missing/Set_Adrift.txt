@@ -1,9 +1,9 @@
 name=Set Adrift
-image=http://mtgimage.com/card/set%20adrift.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/54.jpg
+value=2.167
 rarity=U
 type=Sorcery
 cost={5}{U}
 effect=Delve~Put target nonland permanent on top of its owner's library.
 timing=main
-oracle=Delve. Put target nonland permanent on top of its owner's library.
+oracle=Delve\nPut target nonland permanent on top of its owner's library.

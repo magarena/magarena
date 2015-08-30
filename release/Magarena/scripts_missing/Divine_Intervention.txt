@@ -1,11 +1,11 @@
 name=Divine Intervention
-image=http://mtgimage.com/card/divine%20intervention.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me3/8.jpg
+value=3.623
 rarity=R
 type=Enchantment
 cost={6}{W}{W}
 ability=SN enters the battlefield with two intervention counters on it.;\
         At the beginning of your upkeep, remove an intervention counter from SN.;\
         When you remove the last intervention counter from SN, the game is a draw.
-timing=main
-oracle=Divine Intervention enters the battlefield with two intervention counters on it. At the beginning of your upkeep, remove an intervention counter from Divine Intervention. When you remove the last intervention counter from Divine Intervention, the game is a draw.
+timing=enchantment
+oracle=Divine Intervention enters the battlefield with two intervention counters on it.\nAt the beginning of your upkeep, remove an intervention counter from Divine Intervention.\nWhen you remove the last intervention counter from Divine Intervention, the game is a draw.

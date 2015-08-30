@@ -1,5 +1,5 @@
 name=Jeering Instigator
-image=http://mtgimage.com/card/jeering%20instigator.jpg
+image=http://magiccards.info/scans/en/ktk/113.jpg
 value=2.500
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=Morph {2}{R};\
         When SN is turned face up, if it's your turn, gain control of another target creature until end of turn. Untap that creature. It gains haste until end of turn.
 timing=main
-oracle=Morph {2}{R}. When Jeering Instigator is turned face up, if it's your turn, gain control of another target creature until end of turn. Untap that creature. It gains haste until end of turn.
+oracle=Morph {2}{R}\nWhen Jeering Instigator is turned face up, if it's your turn, gain control of another target creature until end of turn. Untap that creature. It gains haste until end of turn.

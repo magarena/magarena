@@ -1,5 +1,5 @@
 name=Knight-Captain of Eos
-image=http://mtgimage.com/card/knight-captain%20of%20eos.jpg
+image=http://magiccards.info/scans/en/ala/17.jpg
 value=3.095
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=When SN enters the battlefield, put two 1/1 white Soldier creature tokens onto the battlefield.;\
         {W}, Sacrifice a Soldier: Prevent all combat damage that would be dealt this turn.
 timing=main
-oracle=When Knight-Captain of Eos enters the battlefield, put two 1/1 white Soldier creature tokens onto the battlefield. {W}, Sacrifice a Soldier: Prevent all combat damage that would be dealt this turn.
+oracle=When Knight-Captain of Eos enters the battlefield, put two 1/1 white Soldier creature tokens onto the battlefield.\n{W}, Sacrifice a Soldier: Prevent all combat damage that would be dealt this turn.

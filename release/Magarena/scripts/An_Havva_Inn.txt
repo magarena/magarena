@@ -1,5 +1,5 @@
 name=An-Havva Inn
-image=http://mtgimage.com/card/an-havva%20inn.jpg
+image=http://magiccards.info/scans/en/hl/52.jpg
 value=2.736
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Firedrinker Satyr
-image=http://mtgimage.com/card/firedrinker%20satyr.jpg
+image=http://magiccards.info/scans/en/ths/122.jpg
 value=3.426
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability={1}{R}: SN gets +1/+0 until end of turn.~SN deals 1 damage to you.
 timing=main
 requires_groovy_code=Jackal Pup
-oracle=Whenever Firedrinker Satyr is dealt damage, it deals that much damage to you. {1}{R}: Firedrinker Satyr gets +1/+0 until end of turn and deals 1 damage to you.
+oracle=Whenever Firedrinker Satyr is dealt damage, it deals that much damage to you.\n{1}{R}: Firedrinker Satyr gets +1/+0 until end of turn and deals 1 damage to you.

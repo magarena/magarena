@@ -1,9 +1,9 @@
 name=Breaking Wave
-image=http://mtgimage.com/card/breaking%20wave.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/48.jpg
+value=3.900
 rarity=R
 type=Sorcery
 cost={2}{U}{U}
-effect=You may cast SN any time you could cast an instant if you pay {2} more to cast it.~Simultaneously untap all tapped creatures and tap all untapped creatures.
+effect=You may cast SN as though it had flash if you pay {2} more to cast it.~Simultaneously untap all tapped creatures and tap all untapped creatures.
 timing=main
-oracle=You may cast Breaking Wave any time you could cast an instant if you pay {2} more to cast it. Simultaneously untap all tapped creatures and tap all untapped creatures.
+oracle=You may cast Breaking Wave as though it had flash if you pay {2} more to cast it.\nSimultaneously untap all tapped creatures and tap all untapped creatures.

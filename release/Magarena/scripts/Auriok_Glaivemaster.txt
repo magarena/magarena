@@ -1,5 +1,5 @@
 name=Auriok Glaivemaster
-image=http://mtgimage.com/card/auriok%20glaivemaster.jpg
+image=http://magiccards.info/scans/en/ds/1.jpg
 value=3.262
 rarity=C
 type=Creature

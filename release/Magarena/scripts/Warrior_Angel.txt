@@ -1,5 +1,5 @@
 name=Warrior Angel
-image=http://mtgimage.com/card/warrior%20angel.jpg
+image=http://magiccards.info/scans/en/sh/123.jpg
 value=3.144
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=3/4
 ability=Flying
 timing=main
 requires_groovy_code=Mourning Thrull
-oracle=Flying. Whenever Warrior Angel deals damage, you gain that much life.
+oracle=Flying\nWhenever Warrior Angel deals damage, you gain that much life.

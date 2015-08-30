@@ -1,0 +1,12 @@
+name=Gilt-Leaf Winnower
+image=http://magiccards.info/scans/en/ori/99.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Elf,Warrior
+cost={3}{B}{B}
+pt=4/3
+ability=Menace;\
+        When SN enters the battlefield, you may destroy target non-Elf creature whose power and toughness aren't equal.
+timing=main
+oracle=Menace\nWhen Gilt-Leaf Winnower enters the battlefield, you may destroy target non-Elf creature whose power and toughness aren't equal.

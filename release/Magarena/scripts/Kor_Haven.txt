@@ -1,9 +1,9 @@
 name=Kor Haven
-image=http://mtgimage.com/card/kor%20haven.jpg
+image=http://magiccards.info/scans/en/ne/141.jpg
 value=4.089
 rarity=R
 type=Legendary,Land
 ability={T}: Add {1} to your mana pool.;\
         {1}{W}, {T}: Prevent all combat damage that would be dealt by target attacking creature this turn.
 timing=land
-oracle={T}: Add {1} to your mana pool. {1}{W}, {T}: Prevent all combat damage that would be dealt by target attacking creature this turn.
+oracle={T}: Add {1} to your mana pool.\n{1}{W}, {T}: Prevent all combat damage that would be dealt by target attacking creature this turn.

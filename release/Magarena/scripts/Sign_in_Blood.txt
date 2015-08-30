@@ -1,5 +1,5 @@
 name=Sign in Blood
-image=http://mtgimage.com/card/sign%20in%20blood.jpg
+image=http://magiccards.info/scans/en/c14/161.jpg
 value=3.500
 rarity=C
 type=Sorcery

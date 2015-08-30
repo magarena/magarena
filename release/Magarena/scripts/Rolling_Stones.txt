@@ -1,0 +1,9 @@
+name=Rolling Stones
+image=http://magiccards.info/scans/en/8e/38.jpg
+value=4.088
+rarity=R
+type=Enchantment
+cost={1}{W}
+ability=Wall creatures have "can attack as though they didn't have defender".
+timing=enchantment
+oracle=Wall creatures can attack as though they didn't have defender.

@@ -1,5 +1,5 @@
 name=Raise the Alarm
-image=http://mtgimage.com/card/raise%20the%20alarm.jpg
+image=http://magiccards.info/scans/en/ddo/23.jpg
 value=3.917
 rarity=C
 type=Instant

@@ -1,9 +1,0 @@
-name=Slagstorm
-image=http://mtgimage.com/card/slagstorm.jpg
-value=2.500
-rarity=R
-type=Sorcery
-cost={1}{R}{R}
-effect=Choose one — • SN deals 3 damage to each creature. • SN deals 3 damage to each player.
-timing=main
-oracle=Choose one — • Slagstorm deals 3 damage to each creature. • Slagstorm deals 3 damage to each player.

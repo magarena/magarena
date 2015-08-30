@@ -1,0 +1,9 @@
+name=Wojek Siren
+image=http://magiccards.info/scans/en/rav/37.jpg
+value=1.881
+rarity=C
+type=Instant
+cost={W}
+timing=pump
+requires_groovy_code
+oracle=Radiance — Target creature and each other creature that shares a color with it get +1/+1 until end of turn.

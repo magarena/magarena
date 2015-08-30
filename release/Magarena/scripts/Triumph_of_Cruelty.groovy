@@ -14,10 +14,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final Collection<MagicPermanent> targets = game.filterPermanents(
-                player,
-                MagicTargetFilterFactory.CREATURE
-            );
+            final Collection<MagicPermanent> targets = CREATURE.filter(event);
             int highestPower = 0;
             boolean controlHighest = false;
             for (final MagicPermanent creature:targets) {

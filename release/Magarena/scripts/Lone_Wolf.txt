@@ -1,5 +1,5 @@
 name=Lone Wolf
-image=http://mtgimage.com/card/lone%20wolf.jpg
+image=http://magiccards.info/scans/en/8e/262.jpg
 value=3.850
 rarity=C
 type=Creature

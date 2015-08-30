@@ -1,5 +1,5 @@
 name=Agility
-image=http://mtgimage.com/card/agility.jpg
+image=http://magiccards.info/scans/en/mr/154.jpg
 value=3.586
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={1}{R}
 ability=Enchanted creature gets +1/+1 and has flanking.
 timing=aura
 enchant=pump,pos creature
-oracle=Enchant creature. Enchanted creature gets +1/+1 and has flanking.
+oracle=Enchant creature\nEnchanted creature gets +1/+1 and has flanking.

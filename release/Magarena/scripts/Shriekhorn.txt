@@ -1,5 +1,5 @@
 name=Shriekhorn
-image=http://mtgimage.com/card/shriekhorn.jpg
+image=http://magiccards.info/scans/en/mbs/130.jpg
 value=2.896
 rarity=C
 type=Artifact
@@ -7,4 +7,4 @@ cost={1}
 ability=SN enters the battlefield with three charge counters on it.;\
         {T}, Remove a charge counter from SN: Target player puts the top two cards of his or her library into his or her graveyard.
 timing=artifact
-oracle=Shriekhorn enters the battlefield with three charge counters on it. {T}, Remove a charge counter from Shriekhorn: Target player puts the top two cards of his or her library into his or her graveyard.
+oracle=Shriekhorn enters the battlefield with three charge counters on it.\n{T}, Remove a charge counter from Shriekhorn: Target player puts the top two cards of his or her library into his or her graveyard.

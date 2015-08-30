@@ -1,9 +1,9 @@
 name=Rescue from the Underworld
-image=http://mtgimage.com/card/rescue%20from%20the%20underworld.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ths/102.jpg
+value=3.595
 rarity=U
 type=Instant
 cost={4}{B}
 effect=As an additional cost to cast SN, sacrifice a creature.~Choose target creature card in your graveyard. Return that card and the sacrificed card to the battlefield under your control at the beginning of your next upkeep. Exile SN.
 timing=removal
-oracle=As an additional cost to cast Rescue from the Underworld, sacrifice a creature. Choose target creature card in your graveyard. Return that card and the sacrificed card to the battlefield under your control at the beginning of your next upkeep. Exile Rescue from the Underworld.
+oracle=As an additional cost to cast Rescue from the Underworld, sacrifice a creature.\nChoose target creature card in your graveyard. Return that card and the sacrificed card to the battlefield under your control at the beginning of your next upkeep. Exile Rescue from the Underworld.

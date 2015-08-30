@@ -1,6 +1,6 @@
 name=Bitterheart Witch
-image=http://mtgimage.com/card/bitterheart%20witch.jpg
-value=2.500
+image=http://magiccards.info/scans/en/isd/88.jpg
+value=3.333
 rarity=U
 type=Creature
 subtype=Human,Shaman
@@ -9,4 +9,4 @@ pt=1/2
 ability=Deathtouch;\
         When SN dies, you may search your library for a Curse card, put it onto the battlefield attached to target player, then shuffle your library.
 timing=main
-oracle=Deathtouch. When Bitterheart Witch dies, you may search your library for a Curse card, put it onto the battlefield attached to target player, then shuffle your library.
+oracle=Deathtouch\nWhen Bitterheart Witch dies, you may search your library for a Curse card, put it onto the battlefield attached to target player, then shuffle your library.

@@ -1,10 +1,10 @@
 name=Volrath's Dungeon
-image=http://mtgimage.com/card/volrath%27s%20dungeon.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ex/78.jpg
+value=3.167
 rarity=R
 type=Enchantment
 cost={2}{B}{B}
 ability=Pay 5 life: Destroy SN. Any player may activate this ability but only during his or her turn.;\
         Discard a card: Target player puts a card from his or her hand on top of his or her library. Activate this ability only any time you could cast a sorcery.
-timing=main
-oracle=Pay 5 life: Destroy Volrath's Dungeon. Any player may activate this ability but only during his or her turn. Discard a card: Target player puts a card from his or her hand on top of his or her library. Activate this ability only any time you could cast a sorcery.
+timing=enchantment
+oracle=Pay 5 life: Destroy Volrath's Dungeon. Any player may activate this ability but only during his or her turn.\nDiscard a card: Target player puts a card from his or her hand on top of his or her library. Activate this ability only any time you could cast a sorcery.

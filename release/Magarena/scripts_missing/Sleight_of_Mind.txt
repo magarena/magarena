@@ -1,6 +1,6 @@
 name=Sleight of Mind
-image=http://mtgimage.com/card/sleight%20of%20mind.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5e/124.jpg
+value=3.198
 rarity=R
 type=Instant
 cost={U}

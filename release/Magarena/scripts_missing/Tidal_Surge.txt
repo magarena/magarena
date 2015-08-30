@@ -1,6 +1,6 @@
 name=Tidal Surge
-image=http://mtgimage.com/card/tidal%20surge.jpg
-value=2.500
+image=http://magiccards.info/scans/en/6e/102.jpg
+value=2.717
 rarity=C
 type=Sorcery
 cost={1}{U}

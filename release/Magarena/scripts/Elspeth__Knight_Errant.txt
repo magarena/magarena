@@ -1,11 +1,11 @@
 name=Elspeth, Knight-Errant
-image=http://mtgimage.com/card/elspeth%2C%20knight%2Derrant.jpg
+image=http://magiccards.info/scans/en/md1/13.jpg
 value=4.128
 rarity=M
 type=Planeswalker
 subtype=Elspeth
 cost={2}{W}{W}
-ability=loyalty 4
+loyalty=4
 timing=main
 requires_groovy_code
-oracle=+1: Put a 1/1 white Soldier creature token onto the battlefield. +1: Target creature gets +3/+3 and gains flying until end of turn. -8: You get an emblem with "Artifacts, creatures, enchantments, and lands you control have indestructible."
+oracle=+1: Put a 1/1 white Soldier creature token onto the battlefield.\n+1: Target creature gets +3/+3 and gains flying until end of turn.\n−8: You get an emblem with "Artifacts, creatures, enchantments, and lands you control have indestructible."

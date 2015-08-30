@@ -1,11 +1,11 @@
 name=Curiosity
-image=http://mtgimage.com/card/curiosity.jpg
+image=http://magiccards.info/scans/en/isd/49.jpg
 value=4.083
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={U}
+ability=Whenever enchanted creature deals damage to an opponent, you may draw a card.
 timing=aura
 enchant=pump,pos creature
-requires_groovy_code
-oracle=Enchant creature. Whenever enchanted creature deals damage to an opponent, you may draw a card.
+oracle=Enchant creature\nWhenever enchanted creature deals damage to an opponent, you may draw a card.

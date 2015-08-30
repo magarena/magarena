@@ -1,6 +1,6 @@
 name=Stinkdrinker Daredevil
-image=http://mtgimage.com/card/stinkdrinker%20daredevil.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mma/132.jpg
+value=3.857
 rarity=C
 type=Creature
 subtype=Goblin,Rogue

@@ -1,6 +1,6 @@
 name=Sirocco
-image=http://mtgimage.com/card/sirocco.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/192.jpg
+value=2.788
 rarity=U
 type=Instant
 cost={1}{R}

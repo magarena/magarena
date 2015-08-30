@@ -1,9 +1,9 @@
 name=Boiling Blood
-image=http://mtgimage.com/card/boiling%20blood.jpg
+image=http://magiccards.info/scans/en/wl/92.jpg
 value=2.379
 rarity=C
 type=Instant
 cost={2}{R}
 timing=removal
 requires_groovy_code
-oracle=Target creature attacks this turn if able. Draw a card.
+oracle=Target creature attacks this turn if able.\nDraw a card.

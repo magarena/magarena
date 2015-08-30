@@ -1,5 +1,5 @@
 name=Trained Condor
-image=http://mtgimage.com/card/trained%20condor.jpg
+image=http://magiccards.info/scans/en/m14/76.jpg
 value=3.426
 rarity=C
 type=Creature
@@ -7,6 +7,6 @@ subtype=Bird
 cost={2}{U}
 pt=2/1
 ability=flying;\
-        Whenever SN attacks, target creature you control gains flying until end of turn.
+        Whenever SN attacks, another target creature you control gains flying until end of turn.
 timing=main
-oracle=Flying. Whenever Trained Condor attacks, another target creature you control gains flying until end of turn.
+oracle=Flying\nWhenever Trained Condor attacks, another target creature you control gains flying until end of turn.

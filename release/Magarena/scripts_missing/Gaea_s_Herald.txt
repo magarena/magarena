@@ -1,6 +1,6 @@
 name=Gaea's Herald
-image=http://mtgimage.com/card/gaea%27s%20herald.jpg
-value=2.500
+image=http://magiccards.info/scans/en/10e/265.jpg
+value=4.234
 rarity=R
 type=Creature
 subtype=Elf

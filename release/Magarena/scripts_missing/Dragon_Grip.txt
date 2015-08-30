@@ -1,6 +1,6 @@
 name=Dragon Grip
-image=http://mtgimage.com/card/dragon%20grip.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/107.jpg
+value=3.667
 rarity=U
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={2}{R}
 ability=If you control a creature with power 4 or greater, you may cast SN as though it had flash.;\
         Enchant creature;\
         Enchanted creature gets +2/+0 and has first strike.
-timing=main
-oracle=Ferocious — If you control a creature with power 4 or greater, you may cast Dragon Grip as though it had flash. Enchant creature. Enchanted creature gets +2/+0 and has first strike.
+timing=aura
+oracle=Ferocious — If you control a creature with power 4 or greater, you may cast Dragon Grip as though it had flash.\nEnchant creature\nEnchanted creature gets +2/+0 and has first strike.

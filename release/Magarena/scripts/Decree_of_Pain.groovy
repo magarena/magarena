@@ -10,13 +10,13 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets = game.filterPermanents(MagicTargetFilterFactory.CREATURE);
+            final Collection<MagicPermanent> targets = CREATURE.filter(event);
             for (final MagicPermanent target : targets) {
-                game.doAction(MagicChangeStateAction.Set(target,MagicPermanentState.CannotBeRegenerated));
+                game.doAction(ChangeStateAction.Set(target,MagicPermanentState.CannotBeRegenerated));
             }
-            final MagicDestroyAction destroy = new MagicDestroyAction(targets);         
+            final DestroyAction destroy = new DestroyAction(targets);         
             game.doAction(destroy); 
-            game.doAction(new MagicDrawAction(event.getPlayer(),destroy.getNumDestroyed()));
+            game.doAction(new DrawAction(event.getPlayer(),destroy.getNumDestroyed()));
         }
     }
 ]

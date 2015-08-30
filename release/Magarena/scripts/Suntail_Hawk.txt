@@ -1,5 +1,5 @@
 name=Suntail Hawk
-image=http://mtgimage.com/card/suntail%20hawk.jpg
+image=http://magiccards.info/scans/en/m14/40.jpg
 value=3.408
 ability=flying
 rarity=C

@@ -1,6 +1,6 @@
 name=Haazda Shield Mate
-image=http://mtgimage.com/card/haazda%20shield%20mate.jpg
-value=2.500
+image=http://magiccards.info/scans/en/di/12.jpg
+value=2.660
 rarity=R
 type=Creature
 subtype=Human,Soldier
@@ -9,4 +9,4 @@ pt=1/1
 ability=At the beginning of your upkeep, sacrifice SN unless you pay {W}{W}.;\
         {W}: The next time a source of your choice would deal damage to you this turn, prevent that damage.
 timing=main
-oracle=At the beginning of your upkeep, sacrifice Haazda Shield Mate unless you pay {W}{W}. {W}: The next time a source of your choice would deal damage to you this turn, prevent that damage.
+oracle=At the beginning of your upkeep, sacrifice Haazda Shield Mate unless you pay {W}{W}.\n{W}: The next time a source of your choice would deal damage to you this turn, prevent that damage.

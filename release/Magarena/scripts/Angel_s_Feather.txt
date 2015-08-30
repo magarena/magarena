@@ -1,5 +1,5 @@
 name=Angel's Feather
-image=http://mtgimage.com/card/angel%27s%20feather.jpg
+image=http://magiccards.info/scans/en/m12/202.jpg
 value=1.750
 rarity=U
 type=Artifact

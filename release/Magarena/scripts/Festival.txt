@@ -1,5 +1,5 @@
 name=Festival
-image=http://mtgimage.com/card/festival.jpg
+image=http://magiccards.info/scans/en/dk/81.jpg
 value=3.678
 rarity=C
 type=Instant
@@ -7,4 +7,4 @@ cost={W}
 ability=Cast SN only during an opponent's upkeep.
 effect=Creatures can't attack this turn.
 timing=tapping
-oracle=Cast Festival only during an opponent's upkeep. Creatures can't attack this turn.
+oracle=Cast Festival only during an opponent's upkeep.\nCreatures can't attack this turn.

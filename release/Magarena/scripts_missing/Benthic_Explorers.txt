@@ -1,6 +1,6 @@
 name=Benthic Explorers
-image=http://mtgimage.com/card/benthic%20explorers.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me3/29.jpg
+value=2.875
 rarity=C
 type=Creature
 subtype=Merfolk,Scout

@@ -2,7 +2,6 @@ package magic;
 
 import magic.utility.ProgressReporter;
 import magic.ui.SplashProgressReporter;
-import magic.utility.MagicSystem;
 import java.awt.SplashScreen;
 import java.io.File;
 import java.io.IOException;
@@ -101,25 +100,36 @@ public class MagicMain {
     }
 
     private static void startUI() {
-        ScreenController.showMainMenuScreen();
-        // Add "-DtestGame=X" VM argument to start a TestGameBuilder game
-        // where X is one of the classes (without the .java) in "magic.test".
+
+        // -DtestGame=X, where X is one of the classes (without the .java) in "magic.test".
         final String testGame = System.getProperty("testGame");
         if (testGame != null) {
             ScreenController.showDuelGameScreen(TestGameBuilder.buildGame(testGame));
+            return;
         }
+
+        // -DselfMode=true
         if (MagicSystem.isAiVersusAi()) {
             final DuelConfig config = DuelConfig.getInstance();
             config.load();
+            
+            // set both player profile to AI for AI vs AI mode
+            config.setPlayerProfile(0, config.getPlayerProfile(1));
+
             ScreenController.getMainFrame().newDuel(config);
+            return;
         }
+
+        // normal UI startup.
+        ScreenController.showStartScreen();
+        
     }
 
     private static void parseCommandline(final String[] args) {
         for (String arg : args) {
             switch (arg.toLowerCase()) {
             case "disablelogviewer":
-                GeneralConfig.getInstance().setLogViewerDisabled(true);
+                GeneralConfig.getInstance().setLogMessagesVisible(false);
                 break;
             }
         }

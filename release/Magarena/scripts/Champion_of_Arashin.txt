@@ -1,0 +1,11 @@
+name=Champion of Arashin
+image=http://magiccards.info/scans/en/dtk/9.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Hound,Warrior
+cost={3}{W}
+pt=3/2
+ability=Lifelink
+timing=main
+oracle=Lifelink

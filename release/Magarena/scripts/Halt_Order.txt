@@ -1,9 +1,9 @@
 name=Halt Order
-image=http://mtgimage.com/card/halt%20order.jpg
+image=http://magiccards.info/scans/en/som/34.jpg
 value=2.692
 rarity=U
 type=Instant
 cost={2}{U}
 effect=Counter target artifact spell.~Draw a card.
 timing=counter
-oracle=Counter target artifact spell. Draw a card.
+oracle=Counter target artifact spell.\nDraw a card.

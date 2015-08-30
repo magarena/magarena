@@ -1,9 +1,9 @@
 name=Arnjlot's Ascent
-image=http://mtgimage.com/card/arnjlot%27s%20ascent.jpg
+image=http://magiccards.info/scans/en/ia/57.jpg
 value=1.803
 rarity=C
 type=Enchantment
 cost={1}{U}{U}
 ability=cumulative upkeep {U};{1}:Target creature gains flying until end of turn.
 timing=enchantment
-oracle=Cumulative upkeep {U}. {1}: Target creature gains flying until end of turn.
+oracle=Cumulative upkeep {U}\n{1}: Target creature gains flying until end of turn.

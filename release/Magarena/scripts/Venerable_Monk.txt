@@ -1,5 +1,5 @@
 name=Venerable Monk
-image=http://mtgimage.com/card/venerable%20monk.jpg
+image=http://magiccards.info/scans/en/dvd/5.jpg
 value=2.395
 rarity=C
 type=Creature

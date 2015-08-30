@@ -1,5 +1,5 @@
 name=Sterling Grove
-image=http://mtgimage.com/card/sterling%20grove.jpg
+image=http://magiccards.info/scans/en/in/278.jpg
 value=4.360
 rarity=U
 type=Enchantment
@@ -7,4 +7,4 @@ cost={G}{W}
 ability=other enchantments you control have shroud;\
         {1}, Sacrifice SN: Search your library for an enchantment card and reveal that card. Shuffle your library, then put the card on top of it.
 timing=enchantment
-oracle=Other enchantments you control have shroud. {1}, Sacrifice Sterling Grove: Search your library for an enchantment card and reveal that card. Shuffle your library, then put the card on top of it.
+oracle=Other enchantments you control have shroud.\n{1}, Sacrifice Sterling Grove: Search your library for an enchantment card and reveal that card. Shuffle your library, then put the card on top of it.

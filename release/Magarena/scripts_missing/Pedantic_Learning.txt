@@ -1,9 +1,9 @@
 name=Pedantic Learning
-image=http://mtgimage.com/card/pedantic%20learning.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/90.jpg
+value=2.188
 rarity=R
 type=Enchantment
 cost={U}{U}
 ability=Whenever a land card is put into your graveyard from your library, you may pay {1}. If you do, draw a card.
-timing=main
+timing=enchantment
 oracle=Whenever a land card is put into your graveyard from your library, you may pay {1}. If you do, draw a card.

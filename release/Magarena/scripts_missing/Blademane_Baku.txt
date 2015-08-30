@@ -1,6 +1,6 @@
 name=Blademane Baku
-image=http://mtgimage.com/card/blademane%20baku.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bok/95.jpg
+value=2.328
 rarity=C
 type=Creature
 subtype=Spirit
@@ -9,4 +9,4 @@ pt=1/1
 ability=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on SN.;\
         {1}, Remove X ki counters from SN: For each counter removed, SN gets +2/+0 until end of turn.
 timing=main
-oracle=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on Blademane Baku. {1}, Remove X ki counters from Blademane Baku: For each counter removed, Blademane Baku gets +2/+0 until end of turn.
+oracle=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on Blademane Baku.\n{1}, Remove X ki counters from Blademane Baku: For each counter removed, Blademane Baku gets +2/+0 until end of turn.

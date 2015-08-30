@@ -1,5 +1,5 @@
 name=Carnivorous Moss-Beast
-image=http://mtgimage.com/card/carnivorous%20moss-beast.jpg
+image=http://magiccards.info/scans/en/m15/170.jpg
 value=2.143
 rarity=C
 type=Creature

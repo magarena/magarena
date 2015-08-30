@@ -1,6 +1,6 @@
 name=Luminate Primordial
-image=http://mtgimage.com/card/luminate%20primordial.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gtc/20.jpg
+value=3.037
 rarity=R
 type=Creature
 subtype=Avatar
@@ -9,4 +9,4 @@ pt=4/7
 ability=Vigilance;\
         When SN enters the battlefield, for each opponent, exile up to one target creature that player controls and that player gains life equal to its power.
 timing=main
-oracle=Vigilance. When Luminate Primordial enters the battlefield, for each opponent, exile up to one target creature that player controls and that player gains life equal to its power.
+oracle=Vigilance\nWhen Luminate Primordial enters the battlefield, for each opponent, exile up to one target creature that player controls and that player gains life equal to its power.

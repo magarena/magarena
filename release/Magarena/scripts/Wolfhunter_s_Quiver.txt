@@ -1,11 +1,11 @@
 name=Wolfhunter's Quiver
-image=http://mtgimage.com/card/wolfhunter%27s%20quiver.jpg
+image=http://magiccards.info/scans/en/dka/154.jpg
 value=1.620
 rarity=U
 type=Artifact
 subtype=Equipment
 cost={1}
-ability=Equipped creature has "{T}: SN deals 1 damage to target creature or player" and "{T}: SN deals 3 damage to target Werewolf creature.";\
+ability=Equipped creature has "{T}: This creature deals 1 damage to target creature or player" and "{T}: This creature deals 3 damage to target Werewolf creature.";\
         Equip {5}
 timing=main
-oracle=Equipped creature has "{T}: This creature deals 1 damage to target creature or player" and "{T}: This creature deals 3 damage to target Werewolf creature.". Equip {5}
+oracle=Equipped creature has "{T}: This creature deals 1 damage to target creature or player" and "{T}: This creature deals 3 damage to target Werewolf creature."\nEquip {5}

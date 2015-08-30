@@ -1,5 +1,5 @@
 name=Protomatter Powder
-image=http://mtgimage.com/card/protomatter%20powder.jpg
+image=http://magiccards.info/scans/en/ala/53.jpg
 value=2.633
 rarity=U
 type=Artifact

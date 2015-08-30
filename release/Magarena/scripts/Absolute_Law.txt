@@ -1,9 +1,9 @@
 name=Absolute Law
-image=http://mtgimage.com/card/absolute%20law.jpg
+image=http://magiccards.info/scans/en/us/2.jpg
 value=3.716
 rarity=U
 type=Enchantment
 cost={1}{W}
-ability=all creatures have protection from red
+ability=All creatures have protection from red.
 timing=enchantment
 oracle=All creatures have protection from red.

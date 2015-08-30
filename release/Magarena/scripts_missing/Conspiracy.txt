@@ -1,10 +1,10 @@
 name=Conspiracy
-image=http://mtgimage.com/card/conspiracy.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tsts/39.jpg
+value=4.241
 rarity=R
 type=Enchantment
 cost={3}{B}{B}
 ability=As SN enters the battlefield, choose a creature type.;\
         Creature cards you own that aren't on the battlefield, creature spells you control, and creatures you control are the chosen type.
-timing=main
-oracle=As Conspiracy enters the battlefield, choose a creature type. Creature cards you own that aren't on the battlefield, creature spells you control, and creatures you control are the chosen type.
+timing=enchantment
+oracle=As Conspiracy enters the battlefield, choose a creature type.\nCreature cards you own that aren't on the battlefield, creature spells you control, and creatures you control are the chosen type.

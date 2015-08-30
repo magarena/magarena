@@ -1,5 +1,5 @@
 name=Rix Maadi Guildmage
-image=http://mtgimage.com/card/rix%20maadi%20guildmage.jpg
+image=http://magiccards.info/scans/en/rtr/192.jpg
 value=3.403
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability={B}{R}: Target blocking creature gets -1/-1 until end of turn.;\
         {B}{R}: Target player who lost life this turn loses 1 life.
 timing=main
-oracle={B}{R}: Target blocking creature gets -1/-1 until end of turn. {B}{R}: Target player who lost life this turn loses 1 life.
+oracle={B}{R}: Target blocking creature gets -1/-1 until end of turn.\n{B}{R}: Target player who lost life this turn loses 1 life.

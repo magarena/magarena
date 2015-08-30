@@ -2,16 +2,22 @@ package magic.data;
 
 public enum MagicSets {
 
+    ORI("Magic Origins"), // 2015-7-17
+    MM2("Modern Masters 2015 Edition"), // 2015-5-22
+    TPR("Tempest Remastered"), // 2015-5-6
+    DTK("Dragons of Tarkir"), // 2015-3-27
     FRF("Fate Reforged"), // 2015-1-23
     C14("Commander 2014"), // 2014-11-7
     KTK("Khans of Tarkir"), // 2014-9-26
     M15("Magic 2015 Core Set"), // 2014-7-18
+    VMA("Vintage Masters"), // 2014-6-16
     CNS("Conspiracy"), // 2014-6-6
     JOU("Journey into Nyx"), // 2014-5-2
     BNG("Born of the Gods"), // 2014-2-7
     C13("Commander (2013 Edition)"), // 2013-11-1
     THS("Theros"), // 2013-9-27
-    M14("Magic 2014 Core Set"), // 2013,7,19
+    M14("Magic 2014 Core Set"), // 2013-7-19
+    MMA("Modern Masters"), //2013-6-7
     DGM("Dragon's Maze"), // 2013-5-3
     GTC("Gatecrash"), // 2013-2-1
     RTR("Return to Ravnica"), // 2012-10-5
@@ -24,19 +30,23 @@ public enum MagicSets {
     CMD("Commander"), // 2011-6-17
     NPH("New Phyrexia"), // 2011-5-13
     MBS("Mirrodin Besieged"), // 2011-2-4
+    ME4("Masters Edition IV"), // 2011-1-10
     SOM("Scars of Mirrodin"), // 2010-10-1
     M11("Magic 2011"), // 2010-7-16
     ROE("Rise of the Eldrazi"), // 2010-4-23
     WWK("Worldwake"), // 2010-2-5
     ZEN("Zendikar"), // 2009-10-2
+    ME3("Masters Edition III"), //2009-9-7
     M10("Magic 2010"), // 2009-7-17
     ARB("Alara Reborn"), // 2009-4-30
     CFX("Conflux"), // 2009-2-6
     ALA("Shards of Alara"), // 2008-10-3
+    ME2("Masters Edition II"), //2008-9-22
     EVE("Eventide"), // 2008-7-25
     SHM("Shadowmoor"), // 2008-5-2
     MOR("Morningtide"), // 2008-2-1
     LRW("Lorwyn"), // 2007-10-12
+    MED("Masters Edition"), // 2007-9-10
     _10E("Core Set - Tenth Edition"), // 2007-7-13
     FUT("Future Sight"), // 2007-5-4
     PLC("Planar Chaos"), // 2007-2-2
@@ -97,6 +107,7 @@ public enum MagicSets {
     _2ED("Unlimited Edition"), // 1993-12-1
     LEB("Limited Edition Beta"), // 1993-10-?
     LEA("Limited Edition Alpha"), // 1993-8-5
+    pMEI("Promotional Media Inserts") // 1994-9+-?
     ;
 
     private final String setName;

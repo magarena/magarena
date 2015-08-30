@@ -1,5 +1,5 @@
 name=Fallen Cleric
-image=http://mtgimage.com/card/fallen%20cleric.jpg
+image=http://magiccards.info/scans/en/on/145.jpg
 value=1.979
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=4/2
 ability=Protection from Clerics;\
         Morph {4}{B}
 timing=main
-oracle=Protection from Clerics. Morph {4}{B}
+oracle=Protection from Clerics\nMorph {4}{B}

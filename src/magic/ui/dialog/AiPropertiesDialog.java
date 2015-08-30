@@ -1,114 +1,98 @@
 package magic.ui.dialog;
 
-import magic.ai.MagicAIImpl;
-import magic.model.player.AiPlayer;
-import magic.model.player.PlayerProfile;
-import magic.ui.MagicFrame;
-import magic.ui.widget.SliderPanel;
-import net.miginfocom.swing.MigLayout;
-
+import java.awt.Cursor;
+import java.awt.Dimension;
+import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
-import javax.swing.JComponent;
-import javax.swing.JDialog;
-import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JRootPane;
 import javax.swing.JTextField;
-import javax.swing.KeyStroke;
-
-import java.awt.event.ActionEvent;
+import magic.ai.MagicAIImpl;
+import magic.model.player.AiProfile;
+import magic.model.player.PlayerProfile;
+import magic.ui.MagicFrame;
+import magic.ui.ScreenController;
+import magic.translate.UiString;
+import magic.ui.dialog.button.CancelButton;
+import magic.ui.dialog.button.SaveButton;
+import magic.ui.widget.SliderPanel;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class AiPropertiesDialog extends JDialog {
+public class AiPropertiesDialog extends MagicDialog {
 
-    private AiPlayer playerProfile;
+    // translatable strings
+    private static final String _S1 = "AI Profile";
+    private static final String _S2 = "Extra Life";
+    private static final String _S3 = "AI Level";
+    private static final String _S6 = "AI Type:";
+    private static final String _S7 = "AI Name:";
+
+    private AiProfile playerProfile;
     private final JTextField playerNameTextField;
     private final SliderPanel aiLevelSliderPanel;
     private final SliderPanel lifeSliderPanel;
     private final JComboBox<MagicAIImpl> aiComboBox;
 
- // CTR : edit an existing profile.
-    public AiPropertiesDialog(final MagicFrame frame, final AiPlayer profile) {
+    public AiPropertiesDialog(final MagicFrame frame, final AiProfile profile) {
 
-        super(frame, true);
-        this.setTitle("AI Profile");
-        this.setSize(300, 260);
-        this.setLocationRelativeTo(frame);
-        this.setResizable(false);
-        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        super(ScreenController.getMainFrame(), UiString.get(_S1), new Dimension(400, 260));
 
-        this.playerProfile = profile == null ? new AiPlayer() : profile;
+        this.playerProfile = profile == null ? new AiProfile() : profile;
         playerNameTextField = new JTextField(playerProfile.getPlayerName());
-        lifeSliderPanel = new SliderPanel("Extra Life", null, 0, 10, 1, playerProfile.getExtraLife());
-        aiLevelSliderPanel = new SliderPanel("AI Level", null, 1, 8, 1, playerProfile.getAiLevel());
 
-        aiComboBox = new JComboBox<MagicAIImpl>();
-        aiComboBox.setModel(new DefaultComboBoxModel<MagicAIImpl>(MagicAIImpl.SUPPORTED_AIS));
+        lifeSliderPanel = new SliderPanel(UiString.get(_S2), 0, 10, 1, playerProfile.getExtraLife());
+        aiLevelSliderPanel = new SliderPanel(UiString.get(_S3), 1, 8, 1, playerProfile.getAiLevel());
+
+        aiComboBox = new JComboBox<>();
+        aiComboBox.setModel(new DefaultComboBoxModel<>(MagicAIImpl.SUPPORTED_AIS));
         aiComboBox.setLightWeightPopupEnabled(false);
         aiComboBox.setFocusable(false);
         aiComboBox.setSelectedItem(playerProfile.getAiType());
 
-        getContentPane().setLayout(new MigLayout("insets 0, flowy", "", "[][45!]"));
-        getContentPane().add(getDataPanel(), "w 100%, h 100%");
-        getContentPane().add(getButtonPanel(), "w 100%, h 40!");
-
-        setEscapeKeyAction();
+        refreshLayout();
+        setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
 
         setVisible(true);
     }
+
     public AiPropertiesDialog(final MagicFrame frame) {
         this(frame, null);
+    }
+
+    private void refreshLayout() {
+        final JPanel panel = getDialogContentPanel();
+        panel.setLayout(new MigLayout("flowy, gap 0 10"));
+        panel.add(getPlayerNamePanel(), "w 100%");
+        panel.add(getAiTypePanel(), "w 100%");
+        panel.add(lifeSliderPanel, "w 100%");
+        panel.add(aiLevelSliderPanel, "w 100%");
+        panel.add(getButtonPanel(), "w 100%, h 30!, pushy, aligny bottom");
     }
 
     public PlayerProfile getPlayerProfile() {
         return playerProfile;
     }
 
-    private void setEscapeKeyAction() {
-        JRootPane root = getRootPane();
-        root.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("ESCAPE"), "closeDialog");
-        root.getActionMap().put("closeDialog", new AbstractAction() {
-            @Override
-            public void actionPerformed(final ActionEvent e) {
-                dispose();
-            }
-        });
-    }
-
     private JPanel getButtonPanel() {
-        final JPanel buttonPanel = new JPanel(new MigLayout("alignx right"));
-        buttonPanel.add(getSaveButton(), "w 80!");
-        buttonPanel.add(getCancelButton(), "w 80!");
+        final JPanel buttonPanel = new JPanel(new MigLayout("insets 0, alignx right"));
+        buttonPanel.add(getCancelButton());
+        buttonPanel.add(getSaveButton());
         return buttonPanel;
     }
 
     private JButton getCancelButton() {
-        final JButton btn = new JButton("Cancel");
-        btn.addActionListener(new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                playerProfile = null;
-                dispose();
-            }
-        });
+        final JButton btn = new CancelButton();
+        btn.addActionListener(getCancelAction());
         return btn;
     }
 
     private JButton getSaveButton() {
-        final JButton btn = new JButton("Save");
-        btn.addActionListener(new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (isPlayerNameValid()) {
-                    savePlayerProfile();
-                    dispose();
-                }
-            }
-        });
+        final JButton btn = new SaveButton();
+        btn.addActionListener(getSaveAction());
         return btn;
     }
 
@@ -137,27 +121,41 @@ public class AiPropertiesDialog extends JDialog {
         return newName;
     }
 
-    private JPanel getDataPanel() {
-        final JPanel panel = new JPanel(new MigLayout("flowy"));
-        panel.add(getPlayerNamePanel(), "w 100%");
-        panel.add(getAiTypePanel(), "w 100%");
-        panel.add(lifeSliderPanel, "w 100%");
-        panel.add(aiLevelSliderPanel, "w 100%");
-        return panel;
-    }
-
     private JPanel getAiTypePanel() {
-        final JPanel panel = new JPanel(new MigLayout());
-        panel.add(new JLabel("AI Type:"));
+        final JPanel panel = new JPanel(new MigLayout("insets 0"));
+        panel.add(new JLabel(UiString.get(_S6)));
         panel.add(aiComboBox, "w 100%, left");
         return panel;
     }
 
     private JPanel getPlayerNamePanel() {
-        final JPanel panel = new JPanel(new MigLayout());
-        panel.add(new JLabel("AI Name:"));
+        final JPanel panel = new JPanel(new MigLayout("insets 0"));
+        panel.add(new JLabel(UiString.get(_S7)));
         panel.add(playerNameTextField, "w 100%, left");
         return panel;
+    }
+
+    @Override
+    protected AbstractAction getCancelAction() {
+        return new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                playerProfile = null;
+                dispose();
+            }
+        };
+    }
+
+    private AbstractAction getSaveAction() {
+        return new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (isPlayerNameValid()) {
+                    savePlayerProfile();
+                    dispose();
+                }
+            }
+        };
     }
 
 }

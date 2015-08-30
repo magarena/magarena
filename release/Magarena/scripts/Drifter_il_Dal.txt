@@ -1,5 +1,5 @@
 name=Drifter il-Dal
-image=http://mtgimage.com/card/drifter%20il%2Ddal.jpg
+image=http://magiccards.info/scans/en/ts/59.jpg
 value=3.117
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=shadow;\
         At the beginning of your upkeep, you may pay {U}. If you don't, sacrifice SN.
 timing=main
-oracle=Shadow. At the beginning of your upkeep, sacrifice Drifter il-Dal unless you pay {U}.
+oracle=Shadow\nAt the beginning of your upkeep, sacrifice Drifter il-Dal unless you pay {U}.

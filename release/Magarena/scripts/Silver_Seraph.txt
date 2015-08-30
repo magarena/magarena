@@ -1,12 +1,12 @@
 name=Silver Seraph
-image=http://mtgimage.com/card/silver%20seraph.jpg
+image=http://magiccards.info/scans/en/ju/23.jpg
 value=3.806
 rarity=R
 type=Creature
 subtype=Angel
 cost={5}{W}{W}{W}
 pt=6/6
-ability=Flying
+ability=Flying;\
+        Other creatures you control get +2/+2 as long as seven or more cards are in your graveyard.
 timing=main
-requires_groovy_code
-oracle=Flying. Threshold — Other creatures you control get +2/+2 as long as seven or more cards are in your graveyard.
+oracle=Flying\nThreshold — Other creatures you control get +2/+2 as long as seven or more cards are in your graveyard.

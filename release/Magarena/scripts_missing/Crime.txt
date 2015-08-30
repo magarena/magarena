@@ -1,6 +1,6 @@
 name=Crime
-image=http://mtgimage.com/card/crimepunishment.jpg
-value=2.500
+image=http://magiccards.info/scans/en/di/150a.jpg
+value=4.217
 rarity=R
 type=Sorcery
 cost={3}{W}{B}

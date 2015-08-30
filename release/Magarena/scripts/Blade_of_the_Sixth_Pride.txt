@@ -1,5 +1,5 @@
 name=Blade of the Sixth Pride
-image=http://mtgimage.com/card/blade%20of%20the%20sixth%20pride.jpg
+image=http://magiccards.info/scans/en/fut/19.jpg
 value=3.874
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Cat,Rebel
 cost={1}{W}
 pt=3/1
 timing=main
+oracle=NONE

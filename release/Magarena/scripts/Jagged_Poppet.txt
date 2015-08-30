@@ -1,0 +1,11 @@
+name=Jagged Poppet
+image=http://magiccards.info/scans/en/di/115.jpg
+value=3.400
+rarity=U
+type=Creature
+subtype=Ogre,Warrior
+cost={1}{B}{R}
+pt=3/4
+timing=main
+requires_groovy_code
+oracle=Whenever Jagged Poppet is dealt damage, discard that many cards.\nHellbent — Whenever Jagged Poppet deals combat damage to a player, if you have no cards in hand, that player discards cards equal to the damage.

@@ -1,5 +1,5 @@
 name=Ichor Slick
-image=http://mtgimage.com/card/ichor%20slick.jpg
+image=http://magiccards.info/scans/en/gvl/51.jpg
 value=3.014
 rarity=C
 type=Sorcery
@@ -8,4 +8,4 @@ effect=Target creature gets -3/-3 until end of turn.
 ability=Cycling {2};\
         Madness {3}{B}
 timing=main
-oracle=Target creature gets -3/-3 until end of turn. Cycling {2}. Madness {3}{B}
+oracle=Target creature gets -3/-3 until end of turn.\nCycling {2}\nMadness {3}{B}

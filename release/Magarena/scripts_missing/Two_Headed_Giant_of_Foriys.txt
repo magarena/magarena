@@ -1,7 +1,7 @@
 name=Two-Headed Giant of Foriys
-image=http://mtgimage.com/card/two-headed%20giant%20of%20foriys.jpg
-value=2.500
-rarity=R
+image=http://magiccards.info/scans/en/me4/139.jpg
+value=4.307
+rarity=U
 type=Creature
 subtype=Giant
 cost={4}{R}
@@ -9,4 +9,4 @@ pt=4/4
 ability=Trample;\
         SN can block an additional creature.
 timing=main
-oracle=Trample. Two-Headed Giant of Foriys can block an additional creature.
+oracle=Trample\nTwo-Headed Giant of Foriys can block an additional creature.

@@ -1,5 +1,5 @@
 name=Brine Elemental
-image=http://mtgimage.com/card/brine%20elemental.jpg
+image=http://magiccards.info/scans/en/c14/99.jpg
 value=2.500
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=5/4
 ability=Morph {5}{U}{U};\
         When SN is turned face up, each opponent skips his or her next untap step.
 timing=main
-oracle=Morph {5}{U}{U}. When Brine Elemental is turned face up, each opponent skips his or her next untap step.
+oracle=Morph {5}{U}{U}\nWhen Brine Elemental is turned face up, each opponent skips his or her next untap step.

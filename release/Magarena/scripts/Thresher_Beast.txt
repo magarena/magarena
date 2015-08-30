@@ -1,11 +1,11 @@
 name=Thresher Beast
-image=http://mtgimage.com/card/thresher%20beast.jpg
+image=http://magiccards.info/scans/en/pr/128.jpg
 value=3.944
 rarity=C
 type=Creature
 subtype=Beast
 cost={3}{G}{G}
 pt=4/4
+ability=Whenever SN becomes blocked, defending player sacrifices a land.
 timing=main
-requires_groovy_code
 oracle=Whenever Thresher Beast becomes blocked, defending player sacrifices a land.

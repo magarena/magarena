@@ -1,11 +1,11 @@
 name=Coal Golem
-image=http://mtgimage.com/card/coal%20golem.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/me3/193.jpg
+value=2.172
+rarity=C
 type=Artifact,Creature
 subtype=Golem
 cost={5}
 pt=3/3
 ability={3}, Sacrifice SN: Add {R}{R}{R} to your mana pool.
-timing=main
+timing=artifact
 oracle={3}, Sacrifice Coal Golem: Add {R}{R}{R} to your mana pool.

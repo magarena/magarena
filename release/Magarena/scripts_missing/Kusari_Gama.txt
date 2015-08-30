@@ -1,6 +1,6 @@
 name=Kusari-Gama
-image=http://mtgimage.com/card/kusari-gama.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/260.jpg
+value=3.894
 rarity=R
 type=Artifact
 subtype=Equipment
@@ -8,5 +8,5 @@ cost={3}
 ability=Equipped creature has "{2}: This creature gets +1/+0 until end of turn.";\
         Whenever equipped creature deals damage to a blocking creature, SN deals that much damage to each other creature defending player controls.;\
         Equip {3}
-timing=main
-oracle=Equipped creature has "{2}: This creature gets +1/+0 until end of turn.". Whenever equipped creature deals damage to a blocking creature, Kusari-Gama deals that much damage to each other creature defending player controls. Equip {3}
+timing=equipment
+oracle=Equipped creature has "{2}: This creature gets +1/+0 until end of turn."\nWhenever equipped creature deals damage to a blocking creature, Kusari-Gama deals that much damage to each other creature defending player controls.\nEquip {3}

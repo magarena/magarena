@@ -1,6 +1,6 @@
 name=Noble Elephant
-image=http://mtgimage.com/card/noble%20elephant.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/234.jpg
+value=2.667
 rarity=C
 type=Creature
 subtype=Elephant
@@ -8,4 +8,4 @@ cost={3}{W}
 pt=2/2
 ability=Trample; banding
 timing=main
-oracle=Trample; banding
+oracle=Trample, banding

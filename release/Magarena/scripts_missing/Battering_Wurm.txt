@@ -1,6 +1,6 @@
 name=Battering Wurm
-image=http://mtgimage.com/card/battering%20wurm.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gp/79.jpg
+value=2.609
 rarity=U
 type=Creature
 subtype=Wurm
@@ -9,4 +9,4 @@ pt=4/3
 ability=Bloodthirst 1;\
         Creatures with power less than SN's power can't block it.
 timing=main
-oracle=Bloodthirst 1. Creatures with power less than Battering Wurm's power can't block it.
+oracle=Bloodthirst 1\nCreatures with power less than Battering Wurm's power can't block it.

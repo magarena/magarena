@@ -1,6 +1,6 @@
 name=Phyrexian Revoker
-image=http://mtgimage.com/card/phyrexian%20revoker.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/225.jpg
+value=4.333
 rarity=R
 type=Artifact,Creature
 subtype=Horror
@@ -8,5 +8,5 @@ cost={2}
 pt=2/1
 ability=As SN enters the battlefield, name a nonland card.;\
         Activated abilities of sources with the chosen name can't be activated.
-timing=main
-oracle=As Phyrexian Revoker enters the battlefield, name a nonland card. Activated abilities of sources with the chosen name can't be activated.
+timing=artifact
+oracle=As Phyrexian Revoker enters the battlefield, name a nonland card.\nActivated abilities of sources with the chosen name can't be activated.

@@ -1,6 +1,6 @@
 name=Whispergear Sneak
-image=http://mtgimage.com/card/whispergear%20sneak.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cns/64.jpg
+value=3.700
 rarity=C
 type=Artifact,Creature
 subtype=Construct
@@ -8,5 +8,5 @@ cost={1}
 pt=1/1
 ability=Draft SN face up.;\
         During the draft, you may turn SN face down. If you do, look at any unopened booster pack in the draft or any booster pack not being looked at by another player.
-timing=main
-oracle=Draft Whispergear Sneak face up. During the draft, you may turn Whispergear Sneak face down. If you do, look at any unopened booster pack in the draft or any booster pack not being looked at by another player.
+timing=artifact
+oracle=Draft Whispergear Sneak face up.\nDuring the draft, you may turn Whispergear Sneak face down. If you do, look at any unopened booster pack in the draft or any booster pack not being looked at by another player.

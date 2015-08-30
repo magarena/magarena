@@ -1,6 +1,6 @@
 name=Maralen of the Mornsong
-image=http://mtgimage.com/card/maralen%20of%20the%20mornsong.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mt/65.jpg
+value=3.765
 rarity=R
 type=Legendary,Creature
 subtype=Elf,Wizard
@@ -9,4 +9,4 @@ pt=2/3
 ability=Players can't draw cards.;\
         At the beginning of each player's draw step, that player loses 3 life, searches his or her library for a card, puts it into his or her hand, then shuffles his or her library.
 timing=main
-oracle=Players can't draw cards. At the beginning of each player's draw step, that player loses 3 life, searches his or her library for a card, puts it into his or her hand, then shuffles his or her library.
+oracle=Players can't draw cards.\nAt the beginning of each player's draw step, that player loses 3 life, searches his or her library for a card, puts it into his or her hand, then shuffles his or her library.

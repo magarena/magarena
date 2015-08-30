@@ -1,10 +1,10 @@
 name=Shelldock Isle
-image=http://mtgimage.com/card/shelldock%20isle.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lw/272.jpg
+value=3.436
 rarity=R
 type=Land
 ability=Hideaway;\
         {T}: Add {U} to your mana pool.;\
         {U}, {T}: You may play the exiled card without paying its mana cost if a library has twenty or fewer cards in it.
-timing=main
-oracle=Hideaway. {T}: Add {U} to your mana pool. {U}, {T}: You may play the exiled card without paying its mana cost if a library has twenty or fewer cards in it.
+timing=land
+oracle=Hideaway\n{T}: Add {U} to your mana pool.\n{U}, {T}: You may play the exiled card without paying its mana cost if a library has twenty or fewer cards in it.

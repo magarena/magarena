@@ -1,5 +1,5 @@
 name=Sage of the Inward Eye
-image=http://mtgimage.com/card/sage%20of%20the%20inward%20eye.jpg
+image=http://magiccards.info/scans/en/ktk/195.jpg
 value=3.750
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=3/4
 ability=Flying;\
         Whenever you cast a noncreature spell, creatures you control gain lifelink until end of turn.
 timing=main
-oracle=Flying. Whenever you cast a noncreature spell, creatures you control gain lifelink until end of turn.
+oracle=Flying\nWhenever you cast a noncreature spell, creatures you control gain lifelink until end of turn.

@@ -1,0 +1,9 @@
+name=Virulent Swipe
+image=http://magiccards.info/scans/en/roe/131.jpg
+value=4.160
+rarity=U
+type=Instant
+cost={B}
+effect=Target creature gets +2/+0 and gains deathtouch until end of turn.~Rebound
+timing=pump
+oracle=Target creature gets +2/+0 and gains deathtouch until end of turn.\nRebound

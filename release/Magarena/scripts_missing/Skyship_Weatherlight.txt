@@ -1,10 +1,10 @@
 name=Skyship Weatherlight
-image=http://mtgimage.com/card/skyship%20weatherlight.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ps/133a.jpg
+value=3.886
 rarity=R
 type=Legendary,Artifact
 cost={4}
 ability=When SN enters the battlefield, search your library for any number of artifact and/or creature cards and exile them. Then shuffle your library.;\
         {4}, {T}: Choose a card at random that was exiled with SN. Put that card into its owner's hand.
-timing=main
-oracle=When Skyship Weatherlight enters the battlefield, search your library for any number of artifact and/or creature cards and exile them. Then shuffle your library. {4}, {T}: Choose a card at random that was exiled with Skyship Weatherlight. Put that card into its owner's hand.
+timing=artifact
+oracle=When Skyship Weatherlight enters the battlefield, search your library for any number of artifact and/or creature cards and exile them. Then shuffle your library.\n{4}, {T}: Choose a card at random that was exiled with Skyship Weatherlight. Put that card into its owner's hand.

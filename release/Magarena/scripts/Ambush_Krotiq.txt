@@ -1,0 +1,12 @@
+name=Ambush Krotiq
+image=http://magiccards.info/scans/en/frf/122.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Insect
+cost={5}{G}
+pt=5/5
+ability=Trample;\
+        When SN enters the battlefield, return another creature you control to its owner's hand.
+timing=main
+oracle=Trample\nWhen Ambush Krotiq enters the battlefield, return another creature you control to its owner's hand.

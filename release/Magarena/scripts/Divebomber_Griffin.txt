@@ -1,5 +1,5 @@
 name=Divebomber Griffin
-image=http://mtgimage.com/card/divebomber%20griffin.jpg
+image=http://magiccards.info/scans/en/rav/14.jpg
 value=2.023
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={3}{W}{W}
 pt=3/2
 ability=flying;{T},Sacrifice SN:SN deals 3 damage to target attacking or blocking creature.
 timing=main
-oracle=Flying. {T}, Sacrifice Divebomber Griffin: Divebomber Griffin deals 3 damage to target attacking or blocking creature.
+oracle=Flying\n{T}, Sacrifice Divebomber Griffin: Divebomber Griffin deals 3 damage to target attacking or blocking creature.

@@ -1,5 +1,5 @@
 name=Quicksilver Dragon
-image=http://mtgimage.com/card/quicksilver%20dragon.jpg
+image=http://magiccards.info/scans/en/jvc/19.jpg
 value=2.500
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=Flying;\
         {U}: If target spell has only one target and that target is SN, change that spell's target to another creature.;\
         Morph {4}{U}
 timing=main
-oracle=Flying. {U}: If target spell has only one target and that target is Quicksilver Dragon, change that spell's target to another creature. Morph {4}{U}
+oracle=Flying\n{U}: If target spell has only one target and that target is Quicksilver Dragon, change that spell's target to another creature.\nMorph {4}{U}

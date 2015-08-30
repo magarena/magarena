@@ -1,6 +1,6 @@
 name=Graxiplon
-image=http://mtgimage.com/card/graxiplon.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/86.jpg
+value=1.654
 rarity=U
 type=Creature
 subtype=Beast

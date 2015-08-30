@@ -1,6 +1,6 @@
 name=Mindreaver
-image=http://mtgimage.com/card/mindreaver.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bng/44.jpg
+value=1.566
 rarity=R
 type=Creature
 subtype=Human,Wizard
@@ -9,4 +9,4 @@ pt=2/1
 ability=Whenever you cast a spell that targets SN, exile the top three cards of target player's library.;\
         {U}{U}, Sacrifice SN: Counter target spell with the same name as a card exiled with SN.
 timing=main
-oracle=Heroic — Whenever you cast a spell that targets Mindreaver, exile the top three cards of target player's library. {U}{U}, Sacrifice Mindreaver: Counter target spell with the same name as a card exiled with Mindreaver.
+oracle=Heroic — Whenever you cast a spell that targets Mindreaver, exile the top three cards of target player's library.\n{U}{U}, Sacrifice Mindreaver: Counter target spell with the same name as a card exiled with Mindreaver.

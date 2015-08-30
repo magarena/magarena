@@ -1,6 +1,6 @@
 name=Word of Binding
-image=http://mtgimage.com/card/word%20of%20binding.jpg
-value=2.500
+image=http://magiccards.info/scans/en/4e/56.jpg
+value=3.290
 rarity=C
 type=Sorcery
 cost={X}{B}{B}

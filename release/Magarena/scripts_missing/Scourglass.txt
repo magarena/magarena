@@ -1,9 +1,9 @@
 name=Scourglass
-image=http://mtgimage.com/card/scourglass.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ala/25.jpg
+value=3.986
 rarity=R
 type=Artifact
 cost={3}{W}{W}
 ability={T}, Sacrifice SN: Destroy all permanents except for artifacts and lands. Activate this ability only during your upkeep.
-timing=main
+timing=artifact
 oracle={T}, Sacrifice Scourglass: Destroy all permanents except for artifacts and lands. Activate this ability only during your upkeep.

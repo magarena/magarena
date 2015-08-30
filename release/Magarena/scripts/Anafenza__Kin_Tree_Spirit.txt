@@ -1,0 +1,11 @@
+name=Anafenza, Kin-Tree Spirit
+image=http://magiccards.info/scans/en/dtk/2.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Spirit,Soldier
+cost={W}{W}
+pt=2/2
+ability=Whenever another nontoken creature enters the battlefield under your control, bolster 1.
+timing=main
+oracle=Whenever another nontoken creature enters the battlefield under your control, bolster 1.

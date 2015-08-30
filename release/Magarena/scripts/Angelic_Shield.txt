@@ -1,12 +1,12 @@
 name=Angelic Shield
-image=http://mtgimage.com/card/angelic%20shield.jpg
+image=http://magiccards.info/scans/en/ddi/27.jpg
 value=3.891
 removal=1
 rarity=U
 type=Enchantment
 cost={W}{U}
-ability=creatures you control get +0/+1;\
+ability=Creatures you control get +0/+1.;\
         Sacrifice SN: Return target creature to its owner's hand.
 static=player
 timing=enchantment
-oracle=Creatures you control get +0/+1. Sacrifice Angelic Shield: Return target creature to its owner's hand.
+oracle=Creatures you control get +0/+1.\nSacrifice Angelic Shield: Return target creature to its owner's hand.

@@ -20,7 +20,7 @@ public abstract class MagicAtBeginOfCombatTrigger extends MagicTrigger<MagicPlay
     public static final MagicAtBeginOfCombatTrigger create(final MagicSourceEvent sourceEvent) {
         return new MagicAtBeginOfCombatTrigger() {
             @Override
-            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer turnPlayer) {
                 return sourceEvent.getEvent(permanent);
             }
         };
@@ -29,12 +29,12 @@ public abstract class MagicAtBeginOfCombatTrigger extends MagicTrigger<MagicPlay
     public static final MagicAtBeginOfCombatTrigger createYour(final MagicSourceEvent sourceEvent) {
         return new MagicAtBeginOfCombatTrigger() {
             @Override
-            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer turnPlayer) {
                 return sourceEvent.getEvent(permanent);
             }
             @Override
-            public boolean accept(final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
-                return permanent.isController(upkeepPlayer);
+            public boolean accept(final MagicPermanent permanent, final MagicPlayer turnPlayer) {
+                return permanent.isController(turnPlayer);
             }
         };
     }

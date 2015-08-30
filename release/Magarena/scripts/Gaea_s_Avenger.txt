@@ -1,5 +1,5 @@
 name=Gaea's Avenger
-image=http://mtgimage.com/set/me4/gaea%27s%20avenger.jpg
+image=http://magiccards.info/scans/en/me4/155.jpg
 value=3.278
 rarity=R
 type=Creature

@@ -1,23 +1,13 @@
 package magic.test;
 
-import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.model.MagicPlayerDefinition;
 import magic.model.phase.MagicMainPhase;
 
 class TestOverload extends TestGameBuilder {
     public MagicGame getGame() {
-        final MagicDuel duel=new MagicDuel();
-        duel.setDifficulty(6);
-
-        final MagicDeckProfile profile=new MagicDeckProfile("bgruw");
-        final MagicPlayerDefinition player1=new MagicPlayerDefinition("Player",false,profile);
-        final MagicPlayerDefinition player2=new MagicPlayerDefinition("Computer",true,profile);
-        duel.setPlayers(new MagicPlayerDefinition[]{player1,player2});
-        duel.setStartPlayer(0);
-
+        final MagicDuel duel=createDuel();
         final MagicGame game=duel.nextGame();
         game.setPhase(MagicMainPhase.getFirstInstance());
         final MagicPlayer player=game.getPlayer(0);
@@ -27,8 +17,8 @@ class TestOverload extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Grizzly Bears",false,2);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Grizzly Bears",false,2);
         addToHand(P, "Blustersquall", 1);
         addToHand(P, "Chemister's Trick", 1);
         addToHand(P, "Counterflux", 1);
@@ -42,8 +32,8 @@ class TestOverload extends TestGameBuilder {
 
         P.setLife(10);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Grizzly Bears",false,2);
+        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Grizzly Bears",false,2);
         addToHand(P, "Downsize", 1);
         addToHand(P, "Dynacharge", 1);
         addToHand(P, "Mizzium Skin", 1);

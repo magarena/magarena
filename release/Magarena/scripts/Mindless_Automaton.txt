@@ -1,5 +1,5 @@
 name=Mindless Automaton
-image=http://mtgimage.com/card/mindless%20automaton.jpg
+image=http://magiccards.info/scans/en/tsts/111.jpg
 value=3.691
 rarity=R
 type=Artifact,Creature
@@ -10,4 +10,4 @@ ability=SN enters the battlefield with two +1/+1 counters on it.;\
         {1},Discard a card: Put a +1/+1 counter on SN.;\
         Remove two +1/+1 counters from SN: Draw a card.
 timing=artifact
-oracle=Mindless Automaton enters the battlefield with two +1/+1 counters on it. {1}, Discard a card: Put a +1/+1 counter on Mindless Automaton. Remove two +1/+1 counters from Mindless Automaton: Draw a card.
+oracle=Mindless Automaton enters the battlefield with two +1/+1 counters on it.\n{1}, Discard a card: Put a +1/+1 counter on Mindless Automaton.\nRemove two +1/+1 counters from Mindless Automaton: Draw a card.

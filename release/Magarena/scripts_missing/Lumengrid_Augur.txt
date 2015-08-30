@@ -1,6 +1,6 @@
 name=Lumengrid Augur
-image=http://mtgimage.com/card/lumengrid%20augur.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mi/39.jpg
+value=3.371
 rarity=R
 type=Creature
 subtype=Vedalken,Wizard

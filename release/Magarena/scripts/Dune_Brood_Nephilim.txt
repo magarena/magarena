@@ -1,0 +1,11 @@
+name=Dune-Brood Nephilim
+image=http://magiccards.info/scans/en/gp/110.jpg
+value=4.061
+rarity=R
+type=Creature
+subtype=Nephilim
+cost={B}{R}{G}{W}
+pt=3/3
+ability=Whenever SN deals combat damage to a player, put a 1/1 colorless Sand creature token onto the battlefield for each land you control.
+timing=main
+oracle=Whenever Dune-Brood Nephilim deals combat damage to a player, put a 1/1 colorless Sand creature token onto the battlefield for each land you control.

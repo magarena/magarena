@@ -1,0 +1,10 @@
+name=Early Harvest
+image=http://magiccards.info/scans/en/9e/235.jpg
+value=4.000
+rarity=R
+type=Instant
+cost={1}{G}{G}
+ability=Cast SN with AI only if you control one or more tapped basic lands.
+requires_groovy_code
+timing=pump
+oracle=Target player untaps all basic lands he or she controls.

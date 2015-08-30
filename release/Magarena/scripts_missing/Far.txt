@@ -1,9 +1,9 @@
 name=Far
-image=http://mtgimage.com/card/faraway.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dgm/127a.jpg
+value=4.197
 rarity=U
 type=Instant
 cost={1}{U}
 effect=Return target creature to its owner's hand.~Fuse
 timing=removal
-oracle=Return target creature to its owner's hand. Fuse
+oracle=Return target creature to its owner's hand.\nFuse

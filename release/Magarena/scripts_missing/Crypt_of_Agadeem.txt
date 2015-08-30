@@ -1,10 +1,10 @@
 name=Crypt of Agadeem
-image=http://mtgimage.com/card/crypt%20of%20agadeem.jpg
+image=http://magiccards.info/scans/en/c14/288.jpg
 value=2.500
 rarity=R
 type=Land
 ability=SN enters the battlefield tapped.;\
         {T}: Add {B} to your mana pool.;\
         {2}, {T}: Add {B} to your mana pool for each black creature card in your graveyard.
-timing=main
-oracle=Crypt of Agadeem enters the battlefield tapped. {T}: Add {B} to your mana pool. {2}, {T}: Add {B} to your mana pool for each black creature card in your graveyard.
+timing=land
+oracle=Crypt of Agadeem enters the battlefield tapped.\n{T}: Add {B} to your mana pool.\n{2}, {T}: Add {B} to your mana pool for each black creature card in your graveyard.

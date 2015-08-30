@@ -1,6 +1,6 @@
 name=Siege Wurm
-image=http://mtgimage.com/card/siege%20wurm.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/200.jpg
+value=3.333
 rarity=C
 type=Creature
 subtype=Wurm
@@ -9,4 +9,4 @@ pt=5/5
 ability=Convoke;\
         Trample
 timing=main
-oracle=Convoke. Trample
+oracle=Convoke\nTrample

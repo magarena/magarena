@@ -1,24 +1,54 @@
 package magic.utility;
 
-import magic.data.DeckGenerators;
-import magic.data.DeckUtils;
-import magic.data.KeywordDefinitions;
-import magic.data.CubeDefinitions;
-import magic.data.CardDefinitions;
-import magic.data.UnimplementedParser;
-import magic.data.GeneralConfig;
-import magic.model.MagicGameLog;
-import magic.utility.MagicFileSystem.DataPath;
-
+import java.io.File;
+import java.io.IOException;
 import java.lang.management.ManagementFactory;
 import java.lang.management.RuntimeMXBean;
+import java.net.URISyntaxException;
+import java.nio.file.Files;
+import java.security.CodeSource;
+import java.util.ArrayList;
 import java.util.List;
-import java.io.File;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.FutureTask;
+import magic.data.CardDefinitions;
+import magic.data.DeckGenerators;
+import magic.data.GeneralConfig;
+import magic.data.MagicCustomFormat;
+import magic.data.UnimplementedParser;
+import magic.model.MagicGameLog;
+import magic.utility.MagicFileSystem.DataPath;
 
 final public class MagicSystem {
     private MagicSystem() {}
 
     public static final boolean IS_WINDOWS_OS = System.getProperty("os.name").toLowerCase().startsWith("windows");
+    private static final ProgressReporter reporter = new ProgressReporter();
+
+    // Load card definitions in the background so that it does not delay the
+    // loading of the UI. Override done() to ensure exceptions not suppressed.
+    private static final FutureTask<Void> loadCards = new FutureTask<Void>(new Runnable() {
+        @Override
+        public void run() {
+            initializeEngine(reporter);
+        }
+    }, null) {
+        @Override
+        protected void done() {
+            try {
+                if (!isCancelled()) {
+                    get();
+                }
+            } catch (ExecutionException ex) {
+                throw new RuntimeException(ex.getCause());
+            } catch (InterruptedException ex) {
+                // Shouldn't happen, we're invoked when computation is finished
+                throw new AssertionError(ex);
+            }
+        }
+    };
 
     public static boolean isTestGame() {
         return (System.getProperty("testGame") != null);
@@ -75,30 +105,34 @@ final public class MagicSystem {
         return params;
     }
 
-    public static void initializeEngine(final ProgressReporter reporter) {
-        // setup the game log
-        reporter.setMessage("Initializing log...");
-        MagicGameLog.initialize();
+    public static String getLoadingProgress() {
+        return reporter.getMessage();
+    }
 
-        if (Boolean.getBoolean("parseMissing")) {
+    public static void waitForAllCards() {
+        if (loadCards.isDone()) {
+            return;
+        } else {
+            try {
+                loadCards.get();
+            } catch (final InterruptedException|ExecutionException ex) {
+                throw new RuntimeException(ex);
+            }
+        }
+    }
+    
+    private static void initializeEngine(final ProgressReporter reporter) {
+        if (isParseMissing()) {
             UnimplementedParser.parseScriptsMissing(reporter);
             reporter.setMessage("Parsing card abilities...");
             UnimplementedParser.parseCardAbilities();
+
         }
         CardDefinitions.loadCardDefinitions(reporter);
-        if (Boolean.getBoolean("debug")) {
-            reporter.setMessage("Loading card abilities...");
-            CardDefinitions.loadCardAbilities();
-        }
-        reporter.setMessage("Loading cube definitions...");
-        CubeDefinitions.loadCubeDefinitions();
-        reporter.setMessage("Loading keyword definitions...");
-        KeywordDefinitions.getInstance().loadKeywordDefinitions();
-        reporter.setMessage("Loading deck generators...");
-        DeckGenerators.getInstance().loadDeckGenerators();
     }
 
     public static void initialize(final ProgressReporter reporter) {
+
         // must load config here otherwise annotated card image theme-specifc
         // icons are not loaded before the AbilityIcon class is initialized
         // and you end up with the default icons instead.
@@ -115,6 +149,109 @@ final public class MagicSystem {
         }
 
         DeckUtils.createDeckFolder();
-        initializeEngine(reporter);
+
+        // setup the game log
+        reporter.setMessage("Initializing log...");
+        MagicGameLog.initialize();
+       
+        // start a separate thread to load cards
+        final ExecutorService background = Executors.newSingleThreadExecutor();
+        background.execute(loadCards);
+        background.execute(new Runnable() {
+            @Override
+            public void run() {
+                CardDefinitions.postCardDefinitions();
+            }
+        });
+        background.shutdown();
+
+        // if parse scripts missing or pre-load abilities then load cards synchronously
+        if (isParseMissing() || isDebugMode()) {
+            waitForAllCards();
+        }
+        
+        if (isDebugMode()) {
+            reporter.setMessage("Loading card abilities...");
+            CardDefinitions.loadCardAbilities();
+        }
+
+        reporter.setMessage("Loading cube definitions...");
+        MagicCustomFormat.loadCustomFormats();
+        reporter.setMessage("Loading deck generators...");
+        DeckGenerators.getInstance().loadDeckGenerators();
+
     }
+
+    public static File getJarFile() throws URISyntaxException {
+        
+        CodeSource codeSource = MagicSystem.class.getProtectionDomain().getCodeSource();
+        File jarFile = new File(codeSource.getLocation().toURI());
+
+        if (jarFile.isFile() && jarFile.exists()) {
+            return jarFile;
+        } else if (System.getProperty("jarFile") != null) {
+            jarFile = new File(System.getProperty("jarFile"));
+            return jarFile;
+        }
+
+        return null;
+    }
+
+    /**
+     * Restart the current Java application.
+     * <p>
+     * Should also work when JAR is not available (eg. when running from IDE).
+     */
+    public static void restart() throws URISyntaxException, IOException {
+
+        final List<String> command = new ArrayList<>();
+
+        final String javaBin = System.getProperty("java.home") + File.separator + "bin" + File.separator + "java";
+        command.add(javaBin);
+        
+        // vm arguments
+        final List<String> vmArguments = ManagementFactory.getRuntimeMXBean().getInputArguments();
+        for (final String arg : vmArguments) {
+            // if it's the agent argument : we ignore it otherwise the
+            // address of the old application and the new one will be in conflict
+            if (!arg.contains("-agentlib")) {
+                command.add(arg);
+            }
+        }
+
+        final File jarFile = getJarFile();
+        if (jarFile != null) {
+            command.add("-jar");
+            command.add(jarFile.getPath());
+        } else {
+             // Sun property pointing to the main class and its arguments.
+             // Might not be defined on non Hotspot VM implementations.
+            command.add("-cp \"");
+            command.add(System.getProperty("java.class.path"));
+            command.add("\" ");
+            command.add(System.getProperty("sun.java.command").split(" ")[0]);
+        }
+
+        // execute the command in a shutdown hook, to be sure that all the
+        // resources have been disposed before restarting the application
+        Runtime.getRuntime().addShutdownHook(new Thread() {
+            @Override
+            public void run() {
+                try {
+                    final ProcessBuilder builder = new ProcessBuilder(command);
+                    builder.start();
+                } catch (final IOException ex) {
+                    System.err.println(ex);
+                }
+            }
+        });
+
+        System.exit(0);
+        
+    }
+
+    public static boolean isNewInstall() {
+        return Files.exists(MagicFileSystem.getDataPath().resolve(GeneralConfig.CONFIG_FILENAME)) == false;
+    }
+
 }

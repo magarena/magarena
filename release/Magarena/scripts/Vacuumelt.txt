@@ -1,5 +1,5 @@
 name=Vacuumelt
-image=http://mtgimage.com/card/vacuumelt.jpg
+image=http://magiccards.info/scans/en/ddj/24.jpg
 value=1.821
 removal=2
 rarity=U
@@ -8,4 +8,4 @@ cost={2}{U}
 ability=replicate {2}{U}
 effect=Return target creature to its owner's hand.
 timing=removal
-oracle=Replicate {2}{U}. Return target creature to its owner's hand.
+oracle=Replicate {2}{U}\nReturn target creature to its owner's hand.

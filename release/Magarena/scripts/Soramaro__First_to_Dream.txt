@@ -1,5 +1,5 @@
 name=Soramaro, First to Dream
-image=http://mtgimage.com/card/soramaro,%20first%20to%20dream.jpg
+image=http://magiccards.info/scans/en/sok/58.jpg
 value=3.522
 rarity=R
 type=Legendary,Creature
@@ -10,4 +10,4 @@ ability=flying;\
         SN's power and toughness are each equal to the number of cards in your hand.;\
         {4},Return a land you control to its owner's hand: Draw a card.
 timing=main
-oracle=Flying. Soramaro, First to Dream's power and toughness are each equal to the number of cards in your hand. {4}, Return a land you control to its owner's hand: Draw a card.
+oracle=Flying\nSoramaro, First to Dream's power and toughness are each equal to the number of cards in your hand.\n{4}, Return a land you control to its owner's hand: Draw a card.

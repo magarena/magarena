@@ -1,0 +1,12 @@
+name=Ancestral Vengeance
+image=http://magiccards.info/scans/en/frf/61.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={B}{B}
+ability=When SN enters the battlefield, put a +1/+1 counter on target creature you control.;\
+        Enchanted creature gets -1/-1.
+timing=main
+enchant=weaken,neg creature
+oracle=Enchant creature\nWhen Ancestral Vengeance enters the battlefield, put a +1/+1 counter on target creature you control.\nEnchanted creature gets -1/-1.

@@ -1,5 +1,5 @@
 name=Bogardan Firefiend
-image=http://mtgimage.com/card/bogardan%20firefiend.jpg
+image=http://magiccards.info/scans/en/pch/48.jpg
 value=3.324
 rarity=C
 type=Creature

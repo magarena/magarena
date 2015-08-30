@@ -1,5 +1,5 @@
 name=Goblin Balloon Brigade
-image=http://mtgimage.com/card/goblin%20balloon%20brigade.jpg
+image=http://magiccards.info/scans/en/m11/140.jpg
 value=3.419
 rarity=U
 type=Creature

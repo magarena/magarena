@@ -1,9 +1,10 @@
 name=Ixidor's Will
-image=http://mtgimage.com/card/ixidor%27s%20will.jpg
+image=http://magiccards.info/scans/en/on/90.jpg
 value=2.022
 rarity=C
 type=Instant
 cost={2}{U}
+ability=Cast SN with AI only if there is a Wizard on the battlefield.
 timing=counter
 requires_groovy_code
 oracle=Counter target spell unless its controller pays {2} for each Wizard on the battlefield.

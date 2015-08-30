@@ -1,12 +1,12 @@
 name=Keiga, the Tide Star
-image=http://mtgimage.com/card/keiga%2C%20the%20tide%20star.jpg
+image=http://magiccards.info/scans/en/mma/48.jpg
 value=4.408
 rarity=R
 type=Legendary,Creature
 subtype=Dragon,Spirit
 cost={5}{U}
 pt=5/5
-ability=flying
+ability=flying;\
+        When SN dies, gain control of target creature.
 timing=main
-requires_groovy_code
-oracle=Flying. When Keiga, the Tide Star dies, gain control of target creature.
+oracle=Flying\nWhen Keiga, the Tide Star dies, gain control of target creature.

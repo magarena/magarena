@@ -1,6 +1,6 @@
 name=Soul of Shandalar
-image=http://mtgimage.com/card/soul%20of%20shandalar.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/163.jpg
+value=3.708
 rarity=M
 type=Creature
 subtype=Avatar
@@ -10,4 +10,4 @@ ability=First strike;\
         {3}{R}{R}: SN deals 3 damage to target player and 3 damage to up to one target creature that player controls.;\
         {3}{R}{R}, Exile SN from your graveyard: SN deals 3 damage to target player and 3 damage to up to one target creature that player controls.
 timing=main
-oracle=First strike. {3}{R}{R}: Soul of Shandalar deals 3 damage to target player and 3 damage to up to one target creature that player controls. {3}{R}{R}, Exile Soul of Shandalar from your graveyard: Soul of Shandalar deals 3 damage to target player and 3 damage to up to one target creature that player controls.
+oracle=First strike\n{3}{R}{R}: Soul of Shandalar deals 3 damage to target player and 3 damage to up to one target creature that player controls.\n{3}{R}{R}, Exile Soul of Shandalar from your graveyard: Soul of Shandalar deals 3 damage to target player and 3 damage to up to one target creature that player controls.

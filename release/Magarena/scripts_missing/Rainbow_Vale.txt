@@ -1,8 +1,8 @@
 name=Rainbow Vale
-image=http://mtgimage.com/card/rainbow%20vale.jpg
-value=2.500
+image=http://magiccards.info/scans/en/med/179.jpg
+value=2.592
 rarity=R
 type=Land
 ability={T}: Add one mana of any color to your mana pool. An opponent gains control of SN at the beginning of the next end step.
-timing=main
+timing=land
 oracle={T}: Add one mana of any color to your mana pool. An opponent gains control of Rainbow Vale at the beginning of the next end step.

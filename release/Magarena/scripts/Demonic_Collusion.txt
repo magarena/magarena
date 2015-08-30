@@ -1,10 +1,10 @@
 name=Demonic Collusion
-image=http://mtgimage.com/card/demonic%20collusion.jpg
+image=http://magiccards.info/scans/en/ts/103.jpg
 value=3.404
 rarity=R
 type=Sorcery
 cost={3}{B}{B}
-ability=Buyback Discard two cards.
-effect=Search your library for a card and put that card into your hand. Then shuffle your library.
+ability=Buyback—Discard two cards.
+effect=Search your library for a card and put that card into your hand. Then shuffle your library.~Buyback
 timing=main
-oracle=Buyback—Discard two cards. Search your library for a card and put that card into your hand. Then shuffle your library.
+oracle=Buyback—Discard two cards.\nSearch your library for a card and put that card into your hand. Then shuffle your library.

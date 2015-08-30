@@ -11,7 +11,7 @@ import javax.swing.KeyStroke;
 import javax.swing.SwingConstants;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
-import magic.data.URLUtils;
+import magic.ui.URLUtils;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.ui.screen.interfaces.IActionBar;

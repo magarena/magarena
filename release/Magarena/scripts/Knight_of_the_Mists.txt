@@ -1,5 +1,5 @@
 name=Knight of the Mists
-image=http://mtgimage.com/card/knight%20of%20the%20mists.jpg
+image=http://magiccards.info/scans/en/vi/36.jpg
 value=3.482
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Flanking
 timing=main
 requires_groovy_code
-oracle=Flanking. When Knight of the Mists enters the battlefield, you may pay {U}. If you don't, destroy target Knight and it can't be regenerated.
+oracle=Flanking\nWhen Knight of the Mists enters the battlefield, you may pay {U}. If you don't, destroy target Knight and it can't be regenerated.

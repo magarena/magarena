@@ -1,6 +1,6 @@
 name=Magus of the Arena
-image=http://mtgimage.com/card/magus%20of%20the%20arena.jpg
-value=2.500
+image=http://magiccards.info/scans/en/c13/115.jpg
+value=3.600
 rarity=R
 type=Creature
 subtype=Human,Wizard

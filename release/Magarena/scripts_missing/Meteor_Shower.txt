@@ -1,6 +1,6 @@
 name=Meteor Shower
-image=http://mtgimage.com/card/meteor%20shower.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me2/135.jpg
+value=3.160
 rarity=C
 type=Sorcery
 cost={X}{X}{R}

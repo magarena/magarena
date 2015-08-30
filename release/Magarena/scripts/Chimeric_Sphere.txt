@@ -1,9 +1,10 @@
 name=Chimeric Sphere
-image=http://mtgimage.com/card/chimeric%20sphere.jpg
+image=http://magiccards.info/scans/en/wl/148.jpg
 value=3.207
 rarity=U
 type=Artifact
 cost={3}
+ability={2}: Until end of turn, SN becomes a 2/1 Construct artifact creature with flying.
 timing=artifact
 requires_groovy_code
-oracle={2}: Until end of turn, Chimeric Sphere becomes a 2/1 Construct artifact creature with flying. {2}: Until end of turn, Chimeric Sphere becomes a 3/2 Construct artifact creature and loses flying.
+oracle={2}: Until end of turn, Chimeric Sphere becomes a 2/1 Construct artifact creature with flying.\n{2}: Until end of turn, Chimeric Sphere becomes a 3/2 Construct artifact creature and loses flying.

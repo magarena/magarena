@@ -1,13 +1,13 @@
 name=Myr Galvanizer
-image=http://mtgimage.com/card/myr%20galvanizer.jpg
+image=http://magiccards.info/scans/en/som/181.jpg
 value=4.173
 rarity=U
 type=Artifact,Creature
 subtype=Myr
 cost={3}
 pt=2/2
-ability=other Myr creatures you control get +1/+1
+ability=Other Myr creatures you control get +1/+1.;\
+        {1}, {T}: Untap each other Myr you control.
 static=player
 timing=main
-requires_groovy_code
-oracle=Other Myr creatures you control get +1/+1. {1}, {T}: Untap each other Myr you control.
+oracle=Other Myr creatures you control get +1/+1.\n{1}, {T}: Untap each other Myr you control.

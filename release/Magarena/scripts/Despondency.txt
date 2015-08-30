@@ -1,5 +1,5 @@
 name=Despondency
-image=http://mtgimage.com/card/despondency.jpg
+image=http://magiccards.info/scans/en/us/129.jpg
 value=3.679
 rarity=C
 type=Enchantment
@@ -9,4 +9,4 @@ ability=Enchanted creature gets -2/-0.;\
         When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.
 timing=aura
 enchant=weaken -2/-0,neg creature
-oracle=Enchant creature. Enchanted creature gets -2/-0. When Despondency is put into a graveyard from the battlefield, return Despondency to its owner's hand.
+oracle=Enchant creature\nEnchanted creature gets -2/-0.\nWhen Despondency is put into a graveyard from the battlefield, return Despondency to its owner's hand.

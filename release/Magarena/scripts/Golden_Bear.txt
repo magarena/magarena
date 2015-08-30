@@ -1,5 +1,5 @@
 name=Golden Bear
-image=http://mtgimage.com/card/golden%20bear.jpg
+image=http://magiccards.info/scans/en/po2/67.jpg
 value=3.333
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Bear
 cost={3}{G}
 pt=4/3
 timing=main
+oracle=NONE

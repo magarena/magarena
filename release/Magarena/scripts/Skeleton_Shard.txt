@@ -1,5 +1,5 @@
 name=Skeleton Shard
-image=http://mtgimage.com/card/skeleton%20shard.jpg
+image=http://magiccards.info/scans/en/pch/127.jpg
 value=4.411
 rarity=U
 type=Artifact

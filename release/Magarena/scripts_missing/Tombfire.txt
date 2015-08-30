@@ -1,6 +1,6 @@
 name=Tombfire
-image=http://mtgimage.com/card/tombfire.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/165.jpg
+value=1.270
 rarity=R
 type=Sorcery
 cost={B}

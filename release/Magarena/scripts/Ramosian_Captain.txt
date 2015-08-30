@@ -1,5 +1,5 @@
 name=Ramosian Captain
-image=http://mtgimage.com/card/ramosian%20captain.jpg
+image=http://magiccards.info/scans/en/mm/35.jpg
 value=3.950
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=first strike;\
         {5}, {T}: Search your library for a Rebel permanent card with converted mana cost 4 or less and put it onto the battlefield. Then shuffle your library.
 timing=main
-oracle=First strike. {5}, {T}: Search your library for a Rebel permanent card with converted mana cost 4 or less and put it onto the battlefield. Then shuffle your library.
+oracle=First strike\n{5}, {T}: Search your library for a Rebel permanent card with converted mana cost 4 or less and put it onto the battlefield. Then shuffle your library.

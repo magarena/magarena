@@ -15,7 +15,7 @@
             game.addEvent(new MagicSacrificePermanentEvent(
                 event.getSource(),
                 event.getPlayer(),
-                MagicTargetChoice.SACRIFICE_NON_ZOMBIE
+                SACRIFICE_NON_ZOMBIE
             ));
         }
     }

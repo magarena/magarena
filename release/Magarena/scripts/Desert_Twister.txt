@@ -1,5 +1,5 @@
 name=Desert Twister
-image=http://mtgimage.com/card/desert%20twister.jpg
+image=http://magiccards.info/scans/en/c14/188.jpg
 value=4.000
 removal=5
 rarity=U

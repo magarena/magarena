@@ -66,11 +66,7 @@ public class MagicKickerChoice extends MagicChoice {
     }
 
     @Override
-    Collection<Object> getArtificialOptions(
-            final MagicGame game,
-            final MagicEvent event,
-            final MagicPlayer player,
-            final MagicSource source) {
+    Collection<Object> getArtificialOptions(final MagicGame game, final MagicEvent event) {
         throw new UnsupportedOperationException();
     }
 
@@ -100,15 +96,13 @@ public class MagicKickerChoice extends MagicChoice {
     }
 
     @Override
-    public List<Object[]> getArtificialChoiceResults(
-            final MagicGame game,
-            final MagicEvent event,
-            final MagicPlayer player,
-            final MagicSource source) {
+    public List<Object[]> getArtificialChoiceResults(final MagicGame game, final MagicEvent event) {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
 
         final Collection<?> otherOptions;
         if (otherChoice.isValid()) {
-            otherOptions=otherChoice.getArtificialOptions(game,event,player,source);
+            otherOptions=otherChoice.getArtificialOptions(game,event);
         } else {
             otherOptions=NO_OPTIONS_LIST;
         }
@@ -124,7 +118,7 @@ public class MagicKickerChoice extends MagicChoice {
                 manaOptions=NO_OPTIONS_LIST;
             } else {
                 final MagicPayManaCostChoice manaChoice=new MagicPayManaCostChoice(getCost(count));
-                manaOptions=manaChoice.getArtificialOptions(game,event,player,source);
+                manaOptions=manaChoice.getArtificialOptions(game,event);
             }
 
             for (final Object manaOption : manaOptions) {
@@ -140,11 +134,9 @@ public class MagicKickerChoice extends MagicChoice {
     }
 
     @Override
-    public Object[] getPlayerChoiceResults(
-            final IUIGameController controller,
-            final MagicGame game,
-            final MagicPlayer player,
-            final MagicSource source) throws UndoClickedException {
+    public Object[] getPlayerChoiceResults(final IUIGameController controller, final MagicGame game, final MagicEvent event) throws UndoClickedException {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
 
         final int maximumCount=getMaximumCount(game,player);
         final int count;
@@ -161,13 +153,13 @@ public class MagicKickerChoice extends MagicChoice {
         // Pay kicker.
         if (count>0) {
             final MagicPayManaCostChoice manaChoice=new MagicPayManaCostChoice(getCost(count));
-            final Object[] manaChoiceResults=manaChoice.getPlayerChoiceResults(controller,game,player,source);
+            final Object[] manaChoiceResults=manaChoice.getPlayerChoiceResults(controller,game,event);
             choiceResults[2]=manaChoiceResults[0];
         }
 
         // Pick other choice.
         if (otherChoice.isValid()) {
-            final Object[] otherChoiceResults=otherChoice.getPlayerChoiceResults(controller,game,player,source);
+            final Object[] otherChoiceResults=otherChoice.getPlayerChoiceResults(controller,game,event);
             choiceResults[0]=otherChoiceResults[0];
         } else {
             choiceResults[0]=null;

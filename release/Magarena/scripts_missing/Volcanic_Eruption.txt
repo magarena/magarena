@@ -1,6 +1,6 @@
 name=Volcanic Eruption
-image=http://mtgimage.com/card/volcanic%20eruption.jpg
-value=2.500
+image=http://magiccards.info/scans/en/4e/112.jpg
+value=3.290
 rarity=R
 type=Sorcery
 cost={X}{U}{U}{U}

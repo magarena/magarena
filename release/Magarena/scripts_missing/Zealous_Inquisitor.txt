@@ -1,7 +1,7 @@
 name=Zealous Inquisitor
-image=http://mtgimage.com/card/zealous%20inquisitor.jpg
-value=2.500
-rarity=C
+image=http://magiccards.info/scans/en/9e/57.jpg
+value=3.066
+rarity=U
 type=Creature
 subtype=Human,Cleric
 cost={2}{W}

@@ -1,5 +1,5 @@
 name=Twisted Experiment
-image=http://mtgimage.com/card/twisted%20experiment.jpg
+image=http://magiccards.info/scans/en/ud/74.jpg
 value=3.333
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={1}{B}
 ability=Enchanted creature gets +3/-1.
 timing=aura
 enchant=pump,creature
-oracle=Enchant creature. Enchanted creature gets +3/-1.
+oracle=Enchant creature\nEnchanted creature gets +3/-1.

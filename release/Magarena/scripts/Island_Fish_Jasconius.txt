@@ -1,5 +1,5 @@
 name=Island Fish Jasconius
-image=http://mtgimage.com/card/island%20fish%20jasconius.jpg
+image=http://magiccards.info/scans/en/4e/78.jpg
 value=1.863
 rarity=R
 type=Creature
@@ -8,7 +8,7 @@ cost={4}{U}{U}{U}
 pt=6/8
 ability=SN doesn't untap during your untap step.;\
         At the beginning of your upkeep, you may pay {U}{U}{U}. If you do, untap SN.;\
-        SN can't attack unless defending player controls an Island.
+        SN can't attack unless defending player controls an Island.;\
+        When you control no Islands, sacrifice SN.
 timing=main
-requires_groovy_code=Sea Serpent
-oracle=Island Fish Jasconius doesn't untap during your untap step. At the beginning of your upkeep, you may pay {U}{U}{U}. If you do, untap Island Fish Jasconius. Island Fish Jasconius can't attack unless defending player controls an Island. When you control no Islands, sacrifice Island Fish Jasconius.
+oracle=Island Fish Jasconius doesn't untap during your untap step.\nAt the beginning of your upkeep, you may pay {U}{U}{U}. If you do, untap Island Fish Jasconius.\nIsland Fish Jasconius can't attack unless defending player controls an Island.\nWhen you control no Islands, sacrifice Island Fish Jasconius.

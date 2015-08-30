@@ -1,5 +1,5 @@
 name=Mossdog
-image=http://mtgimage.com/card/mossdog.jpg
+image=http://magiccards.info/scans/en/ne/106.jpg
 value=2.429
 rarity=C
 type=Creature

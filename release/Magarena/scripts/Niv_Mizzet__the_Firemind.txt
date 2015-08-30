@@ -1,5 +1,5 @@
 name=Niv-Mizzet, the Firemind
-image=http://mtgimage.com/card/niv-mizzet,%20the%20firemind.jpg
+image=http://magiccards.info/scans/en/ddj/1.jpg
 value=3.960
 rarity=M
 type=Legendary,Creature
@@ -10,4 +10,4 @@ ability=Flying;\
         Whenever you draw a card, SN deals 1 damage to target creature or player.;\
         {T}: Draw a card.
 timing=main
-oracle=Flying. Whenever you draw a card, Niv-Mizzet, the Firemind deals 1 damage to target creature or player. {T}: Draw a card.
+oracle=Flying\nWhenever you draw a card, Niv-Mizzet, the Firemind deals 1 damage to target creature or player.\n{T}: Draw a card.

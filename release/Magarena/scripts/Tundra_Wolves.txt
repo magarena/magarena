@@ -1,5 +1,5 @@
 name=Tundra Wolves
-image=http://mtgimage.com/card/tundra%20wolves.jpg
+image=http://magiccards.info/scans/en/10e/54.jpg
 value=3.123
 ability=first strike
 rarity=C

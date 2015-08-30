@@ -1,6 +1,6 @@
 name=Ob Nixilis, the Fallen
-image=http://mtgimage.com/card/ob%20nixilis%2C%20the%20fallen.jpg
-value=2.500
+image=http://magiccards.info/scans/en/zen/107.jpg
+value=4.052
 rarity=M
 type=Legendary,Creature
 subtype=Demon

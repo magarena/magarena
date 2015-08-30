@@ -1,5 +1,5 @@
 name=Night's Whisper
-image=http://mtgimage.com/card/night%27s%20whisper.jpg
+image=http://magiccards.info/scans/en/ddm/68.jpg
 value=4.478
 rarity=U
 type=Sorcery

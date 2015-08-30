@@ -1,5 +1,5 @@
 name=Cloud Dragon
-image=http://mtgimage.com/card/cloud%20dragon.jpg
+image=http://magiccards.info/scans/en/me4/41.jpg
 value=2.820
 rarity=R
 type=Creature
@@ -8,4 +8,4 @@ cost={5}{U}
 pt=5/4
 ability=flying;SN can block only creatures with flying.
 timing=main
-oracle=Flying. Cloud Dragon can block only creatures with flying.
+oracle=Flying\nCloud Dragon can block only creatures with flying.

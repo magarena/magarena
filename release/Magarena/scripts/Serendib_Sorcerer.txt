@@ -1,5 +1,5 @@
 name=Serendib Sorcerer
-image=http://mtgimage.com/card/serendib%20sorcerer.jpg
+image=http://magiccards.info/scans/en/pc/61.jpg
 value=3.892
 rarity=R
 type=Creature

@@ -1,0 +1,11 @@
+name=Springjack Knight
+image=http://magiccards.info/scans/en/lw/41.jpg
+value=2.803
+rarity=C
+type=Creature
+subtype=Kithkin,Knight
+cost={2}{W}
+pt=2/1
+ability=Whenever SN attacks, clash with an opponent. If you win, target creature gains double strike until end of turn.
+timing=main
+oracle=Whenever Springjack Knight attacks, clash with an opponent. If you win, target creature gains double strike until end of turn.

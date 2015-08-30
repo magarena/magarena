@@ -1,5 +1,5 @@
 name=Rage Nimbus
-image=http://mtgimage.com/card/rage%20nimbus.jpg
+image=http://magiccards.info/scans/en/roe/160.jpg
 value=3.959
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=5/3
 ability=defender;flying
 timing=smain
 requires_groovy_code
-oracle=Defender, flying. {1}{R}: Target creature attacks this turn if able.
+oracle=Defender, flying\n{1}{R}: Target creature attacks this turn if able.

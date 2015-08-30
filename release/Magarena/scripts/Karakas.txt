@@ -1,5 +1,5 @@
 name=Karakas
-image=http://mtgimage.com/card/karakas.jpg
+image=http://magiccards.info/scans/en/me3/208.jpg
 value=4.570
 rarity=R
 type=Legendary,Land
@@ -7,4 +7,4 @@ mana=w1
 ability={T}: Add {W} to your mana pool.;\
         {T}:Return target legendary creature to its owner's hand.
 timing=land
-oracle={T}: Add {W} to your mana pool. {T}: Return target legendary creature to its owner's hand.
+oracle={T}: Add {W} to your mana pool.\n{T}: Return target legendary creature to its owner's hand.

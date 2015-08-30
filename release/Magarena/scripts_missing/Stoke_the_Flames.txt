@@ -1,9 +1,9 @@
 name=Stoke the Flames
-image=http://mtgimage.com/card/stoke%20the%20flames.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/164.jpg
+value=3.625
 rarity=U
 type=Instant
 cost={2}{R}{R}
 effect=Convoke~SN deals 4 damage to target creature or player.
 timing=removal
-oracle=Convoke. Stoke the Flames deals 4 damage to target creature or player.
+oracle=Convoke\nStoke the Flames deals 4 damage to target creature or player.

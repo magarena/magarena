@@ -1,9 +1,9 @@
 name=Arcane Laboratory
-image=http://mtgimage.com/card/arcane%20laboratory.jpg
-value=2.500
+image=http://magiccards.info/scans/en/7e/60.jpg
+value=4.438
 rarity=U
 type=Enchantment
 cost={2}{U}
 ability=Each player can't cast more than one spell each turn.
-timing=main
+timing=enchantment
 oracle=Each player can't cast more than one spell each turn.

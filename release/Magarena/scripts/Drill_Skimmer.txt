@@ -1,5 +1,5 @@
 name=Drill-Skimmer
-image=http://mtgimage.com/card/drill-skimmer.jpg
+image=http://magiccards.info/scans/en/ds/118.jpg
 value=2.038
 rarity=C
 type=Artifact,Creature
@@ -8,4 +8,4 @@ cost={4}
 pt=2/1
 ability=SN has shroud as long as you control another artifact creature.
 timing=artifact
-oracle=Flying. Drill-Skimmer has shroud as long as you control another artifact creature.
+oracle=Flying\nDrill-Skimmer has shroud as long as you control another artifact creature.

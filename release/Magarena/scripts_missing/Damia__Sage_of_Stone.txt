@@ -1,6 +1,6 @@
 name=Damia, Sage of Stone
-image=http://mtgimage.com/card/damia%2C%20sage%20of%20stone.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cmd/191.jpg
+value=4.024
 rarity=M
 type=Legendary,Creature
 subtype=Gorgon,Wizard
@@ -10,4 +10,4 @@ ability=Deathtouch;\
         Skip your draw step.;\
         At the beginning of your upkeep, if you have fewer than seven cards in hand, draw cards equal to the difference.
 timing=main
-oracle=Deathtouch. Skip your draw step. At the beginning of your upkeep, if you have fewer than seven cards in hand, draw cards equal to the difference.
+oracle=Deathtouch\nSkip your draw step.\nAt the beginning of your upkeep, if you have fewer than seven cards in hand, draw cards equal to the difference.

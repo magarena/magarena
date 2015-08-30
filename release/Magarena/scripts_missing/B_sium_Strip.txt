@@ -1,9 +1,9 @@
 name=Bösium Strip
-image=http://mtgimage.com/card/bosium%20strip.jpg
-value=2.500
+image=http://magiccards.info/scans/en/wl/146.jpg
+value=4.089
 rarity=R
 type=Artifact
 cost={3}
 ability={3}, {T}: Until end of turn, if the top card of your graveyard is an instant or sorcery card, you may cast that card. If a card cast this way would be put into a graveyard this turn, exile it instead.
-timing=main
+timing=artifact
 oracle={3}, {T}: Until end of turn, if the top card of your graveyard is an instant or sorcery card, you may cast that card. If a card cast this way would be put into a graveyard this turn, exile it instead.

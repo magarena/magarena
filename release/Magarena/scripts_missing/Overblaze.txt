@@ -1,10 +1,10 @@
 name=Overblaze
-image=http://mtgimage.com/card/overblaze.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bok/114.jpg
+value=3.404
 rarity=U
 type=Instant
 subtype=Arcane
 cost={3}{R}
 effect=Each time target permanent would deal damage to a creature or player this turn, it deals double that damage to that creature or player instead.~Splice onto Arcane {2}{R}{R}
 timing=removal
-oracle=Each time target permanent would deal damage to a creature or player this turn, it deals double that damage to that creature or player instead. Splice onto Arcane {2}{R}{R}
+oracle=Each time target permanent would deal damage to a creature or player this turn, it deals double that damage to that creature or player instead.\nSplice onto Arcane {2}{R}{R}

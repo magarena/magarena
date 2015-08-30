@@ -1,11 +1,11 @@
 name=Devastation Tide
-image=http://mtgimage.com/card/devastation%20tide.jpg
+image=http://magiccards.info/scans/en/avr/48.jpg
 value=3.949
 removal=2
 rarity=R
 type=Sorcery
 cost={3}{U}{U}
-timing=removal
 ability=miracle {1}{U}
-requires_groovy_code
-oracle=Return all nonland permanents to their owners' hands. Miracle {1}{U}
+effect=Return all nonland permanents to their owners' hands.
+timing=removal
+oracle=Return all nonland permanents to their owners' hands.\nMiracle {1}{U}

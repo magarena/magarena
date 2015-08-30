@@ -1,6 +1,6 @@
 name=Disciple of Phenax
-image=http://mtgimage.com/card/disciple%20of%20phenax.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ths/84.jpg
+value=2.868
 rarity=C
 type=Creature
 subtype=Human,Cleric

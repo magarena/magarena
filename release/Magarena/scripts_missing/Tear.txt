@@ -1,9 +1,9 @@
 name=Tear
-image=http://mtgimage.com/card/weartear.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dgm/135b.jpg
+value=4.315
 rarity=U
 type=Instant
 cost={W}
 effect=Destroy target enchantment.~Fuse
 timing=removal
-oracle=Destroy target enchantment. Fuse
+oracle=Destroy target enchantment.\nFuse

@@ -1,0 +1,12 @@
+name=Despoiler of Souls
+image=http://magiccards.info/scans/en/ori/93.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Horror
+cost={B}{B}
+pt=3/1
+ability=SN can't block.;\
+        {B}{B}, Exile two other creature cards from your graveyard: Return SN from your graveyard to the battlefield.
+timing=main
+oracle=Despoiler of Souls can't block.\n{B}{B}, Exile two other creature cards from your graveyard: Return Despoiler of Souls from your graveyard to the battlefield.

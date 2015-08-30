@@ -1,5 +1,5 @@
 name=Messenger Drake
-image=http://mtgimage.com/card/messenger%20drake.jpg
+image=http://magiccards.info/scans/en/m14/63.jpg
 value=2.914
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=flying;\
         When SN dies, draw a card.
 timing=main
-oracle=Flying. When Messenger Drake dies, draw a card.
+oracle=Flying\nWhen Messenger Drake dies, draw a card.

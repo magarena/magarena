@@ -1,10 +1,10 @@
 name=Future Sight
-image=http://mtgimage.com/card/future%20sight.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vma/71.jpg
+value=4.500
 rarity=R
 type=Enchantment
 cost={2}{U}{U}{U}
 ability=Play with the top card of your library revealed.;\
         You may play the top card of your library.
-timing=main
-oracle=Play with the top card of your library revealed. You may play the top card of your library.
+timing=enchantment
+oracle=Play with the top card of your library revealed.\nYou may play the top card of your library.

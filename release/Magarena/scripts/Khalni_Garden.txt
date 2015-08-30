@@ -1,5 +1,5 @@
 name=Khalni Garden
-image=http://mtgimage.com/card/khalni%20garden.jpg
+image=http://magiccards.info/scans/en/c13/302.jpg
 value=3.925
 rarity=C
 type=Land
@@ -8,4 +8,4 @@ timing=land
 ability=SN enters the battlefield tapped.;\
         {T}: Add {G} to your mana pool.;\
         When SN enters the battlefield, put a 0/1 green Plant creature token onto the battlefield.
-oracle=Khalni Garden enters the battlefield tapped. When Khalni Garden enters the battlefield, put a 0/1 green Plant creature token onto the battlefield. {T}: Add {G} to your mana pool.
+oracle=Khalni Garden enters the battlefield tapped.\nWhen Khalni Garden enters the battlefield, put a 0/1 green Plant creature token onto the battlefield.\n{T}: Add {G} to your mana pool.

@@ -5,7 +5,7 @@
             final int amount = cardOnStack.getController().getDomain();
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_PLAYER,
+                NEG_TARGET_PLAYER,
                 this,
                 "Target player\$ loses X life and PN gains X life, where X is the number of basic land types among lands PN controls."
             );
@@ -16,9 +16,9 @@
             event.processTargetPlayer(game, {
                 final MagicPlayer castingPlayer = event.getPlayer()
                 final int amount = castingPlayer.getDomain();
-                game.logAppendMessage(castingPlayer," (X="+amount+")");
-                game.doAction(new MagicChangeLifeAction(it,-amount));
-                game.doAction(new MagicChangeLifeAction(castingPlayer,amount));
+                game.logAppendX(castingPlayer,amount);
+                game.doAction(new ChangeLifeAction(it,-amount));
+                game.doAction(new ChangeLifeAction(castingPlayer,amount));
             });
         }
     }

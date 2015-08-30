@@ -1,5 +1,5 @@
 name=Steamclaw
-image=http://mtgimage.com/card/steamclaw.jpg
+image=http://magiccards.info/scans/en/od/310.jpg
 value=1.864
 rarity=U
 type=Artifact
@@ -7,4 +7,4 @@ cost={2}
 ability={3},{T}:Exile target card from a graveyard.;\
         {1},Sacrifice SN:Exile target card from a graveyard.
 timing=artifact
-oracle={3}, {T}: Exile target card from a graveyard. {1}, Sacrifice Steamclaw: Exile target card from a graveyard.
+oracle={3}, {T}: Exile target card from a graveyard.\n{1}, Sacrifice Steamclaw: Exile target card from a graveyard.

@@ -1,6 +1,6 @@
 name=Vindictive Mob
-image=http://mtgimage.com/card/vindictive%20mob.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rav/112.jpg
+value=1.708
 rarity=U
 type=Creature
 subtype=Human,Berserker
@@ -9,4 +9,4 @@ pt=5/5
 ability=When SN enters the battlefield, sacrifice a creature.;\
         SN can't be blocked by Saprolings.
 timing=main
-oracle=When Vindictive Mob enters the battlefield, sacrifice a creature. Vindictive Mob can't be blocked by Saprolings.
+oracle=When Vindictive Mob enters the battlefield, sacrifice a creature.\nVindictive Mob can't be blocked by Saprolings.

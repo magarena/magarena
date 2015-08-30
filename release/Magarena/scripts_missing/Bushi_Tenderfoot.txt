@@ -1,11 +1,12 @@
 name=Bushi Tenderfoot
-image=http://mtgimage.com/card/bushi%20tenderfoot.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/2a.jpg
+value=3.827
 rarity=U
 type=Creature
 subtype=Human,Soldier
 cost={W}
 pt=1/1
 ability=When a creature dealt damage by SN this turn dies, flip SN.
+flip=Kenzo the Hardhearted
 timing=main
 oracle=When a creature dealt damage by Bushi Tenderfoot this turn dies, flip Bushi Tenderfoot.

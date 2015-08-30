@@ -1,11 +1,11 @@
 name=Anaba Ancestor
-image=http://mtgimage.com/card/anaba%20ancestor.jpg
+image=http://magiccards.info/scans/en/me3/86.jpg
 value=2.549
 rarity=R
 type=Creature
 subtype=Minotaur,Spirit
 cost={1}{R}
 pt=1/1
+ability={T}: Another target Minotaur creature gets +1/+1 until end of turn.
 timing=main
-requires_groovy_code
 oracle={T}: Another target Minotaur creature gets +1/+1 until end of turn.

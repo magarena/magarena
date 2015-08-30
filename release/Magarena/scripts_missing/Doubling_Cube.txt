@@ -1,9 +1,9 @@
 name=Doubling Cube
-image=http://mtgimage.com/card/doubling%20cube.jpg
-value=2.500
+image=http://magiccards.info/scans/en/10e/321.jpg
+value=3.806
 rarity=R
 type=Artifact
 cost={2}
 ability={3}, {T}: Double the amount of each type of mana in your mana pool.
-timing=main
+timing=artifact
 oracle={3}, {T}: Double the amount of each type of mana in your mana pool.

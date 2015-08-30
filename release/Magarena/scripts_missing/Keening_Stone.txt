@@ -1,9 +1,9 @@
 name=Keening Stone
-image=http://mtgimage.com/card/keening%20stone.jpg
-value=2.500
+image=http://magiccards.info/scans/en/roe/219.jpg
+value=4.039
 rarity=R
 type=Artifact
 cost={6}
 ability={5}, {T}: Target player puts the top X cards of his or her library into his or her graveyard, where X is the number of cards in that player's graveyard.
-timing=main
+timing=artifact
 oracle={5}, {T}: Target player puts the top X cards of his or her library into his or her graveyard, where X is the number of cards in that player's graveyard.

@@ -1,11 +1,11 @@
 name=Power Conduit
-image=http://mtgimage.com/card/power%20conduit.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mi/229.jpg
+value=4.416
 rarity=U
 type=Artifact
 cost={2}
-ability={T}, Remove a counter from a permanent you control: Choose one —;\
-        • Put a charge counter on target artifact.;\
-        • Put a +1/+1 counter on target creature.
-timing=main
-oracle={T}, Remove a counter from a permanent you control: Choose one — • Put a charge counter on target artifact. • Put a +1/+1 counter on target creature.
+ability={T}, Remove a counter from a permanent you control: Choose one — \
+        (1) Put a charge counter on target artifact. \
+        (2) Put a +1/+1 counter on target creature.
+timing=artifact
+oracle={T}, Remove a counter from a permanent you control: Choose one —\n• Put a charge counter on target artifact.\n• Put a +1/+1 counter on target creature.

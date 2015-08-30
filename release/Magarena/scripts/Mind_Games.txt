@@ -1,10 +1,10 @@
 name=Mind Games
-image=http://mtgimage.com/card/mind%20games.jpg
+image=http://magiccards.info/scans/en/sh/38.jpg
 value=3.784
 rarity=C
 type=Instant
 cost={U}
 ability=buyback {2}{U}
-effect=Tap target artifact, creature, or land.
+effect=Tap target artifact, creature, or land.~Buyback
 timing=tapping
-oracle=Buyback {2}{U}. Tap target artifact, creature, or land.
+oracle=Buyback {2}{U}\nTap target artifact, creature, or land.

@@ -1,5 +1,5 @@
 name=Rubblebelt Maaka
-image=http://mtgimage.com/card/rubblebelt%20maaka.jpg
+image=http://magiccards.info/scans/en/dgm/38.jpg
 value=3.798
 rarity=C
 type=Creature

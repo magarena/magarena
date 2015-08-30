@@ -1,6 +1,6 @@
 name=Rites of Refusal
-image=http://mtgimage.com/card/rites%20of%20refusal.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/99.jpg
+value=3.135
 rarity=C
 type=Instant
 cost={1}{U}

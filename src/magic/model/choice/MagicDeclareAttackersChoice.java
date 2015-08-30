@@ -27,20 +27,16 @@ public class MagicDeclareAttackersChoice extends MagicChoice {
     }
 
     @Override
-    Collection<Object> getArtificialOptions(
-            final MagicGame game,
-            final MagicEvent event,
-            final MagicPlayer player,
-            final MagicSource source) {
+    Collection<Object> getArtificialOptions(final MagicGame game, final MagicEvent event) {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
         return MagicDeclareAttackersResultBuilder.buildResults(game,player);
     }
 
     @Override
-    public Object[] getSimulationChoiceResult(
-            final MagicGame game,
-            final MagicEvent event,
-            final MagicPlayer player,
-            final MagicSource source) {
+    public Object[] getSimulationChoiceResult(final MagicGame game, final MagicEvent event) {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
 
         final MagicDeclareAttackersResult result = new MagicDeclareAttackersResult();
         final MagicCombatCreatureBuilder builder = new MagicCombatCreatureBuilder(game,player,player.getOpponent());
@@ -61,11 +57,9 @@ public class MagicDeclareAttackersChoice extends MagicChoice {
     }
 
     @Override
-    public Object[] getPlayerChoiceResults(
-            final IUIGameController controller,
-            final MagicGame game,
-            final MagicPlayer player,
-            final MagicSource source) throws UndoClickedException {
+    public Object[] getPlayerChoiceResults(final IUIGameController controller, final MagicGame game, final MagicEvent event) throws UndoClickedException {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
 
         final MagicDeclareAttackersResult result=new MagicDeclareAttackersResult();
         final MagicCombatCreatureBuilder builder=new MagicCombatCreatureBuilder(game,player,player.getOpponent());

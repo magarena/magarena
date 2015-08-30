@@ -3,7 +3,7 @@ def DelayedTrigger = {
     return new MagicAtEndOfTurnTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer eotPlayer) {
-            game.addDelayedAction(new MagicRemoveTriggerAction(this));
+            game.addDelayedAction(new RemoveTriggerAction(this));
             
             final MagicCard mappedCard = staleCard.getOwner().map(game).getGraveyard().getCard(staleCard.getId());
             
@@ -19,10 +19,10 @@ def DelayedTrigger = {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicReanimateAction(
+            game.doAction(new ReanimateAction(
                 event.getRefCard(),
                 event.getPlayer(),
-                [MagicPlayMod.UNDYING, MagicPlayMod.BLACK, MagicPlayMod.ZOMBIE]
+                [MagicPlayMod.UNDYING, MagicPlayMod.BLACK_ZOMBIE]
             ));
         }
     };
@@ -44,7 +44,7 @@ def DelayedTrigger = {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicAddTriggerAction(DelayedTrigger(
+            game.doAction(new AddTriggerAction(DelayedTrigger(
                 event.getPermanent(),
                 event.getPlayer(),
                 event.getRefCard()

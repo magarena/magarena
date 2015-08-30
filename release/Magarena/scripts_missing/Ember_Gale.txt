@@ -1,6 +1,6 @@
 name=Ember Gale
-image=http://mtgimage.com/card/ember%20gale.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/91.jpg
+value=2.534
 rarity=C
 type=Sorcery
 cost={3}{R}

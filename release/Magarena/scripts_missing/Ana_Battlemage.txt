@@ -1,6 +1,6 @@
 name=Ana Battlemage
-image=http://mtgimage.com/card/ana%20battlemage.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pc/124.jpg
+value=3.693
 rarity=U
 type=Creature
 subtype=Human,Wizard
@@ -10,4 +10,4 @@ ability=Kicker {2}{U} and/or {1}{B};\
         When SN enters the battlefield, if it was kicked with its {2}{U} kicker, target player discards three cards.;\
         When SN enters the battlefield, if it was kicked with its {1}{B} kicker, tap target untapped creature and that creature deals damage equal to its power to its controller.
 timing=main
-oracle=Kicker {2}{U} and/or {1}{B}. When Ana Battlemage enters the battlefield, if it was kicked with its {2}{U} kicker, target player discards three cards. When Ana Battlemage enters the battlefield, if it was kicked with its {1}{B} kicker, tap target untapped creature and that creature deals damage equal to its power to its controller.
+oracle=Kicker {2}{U} and/or {1}{B}\nWhen Ana Battlemage enters the battlefield, if it was kicked with its {2}{U} kicker, target player discards three cards.\nWhen Ana Battlemage enters the battlefield, if it was kicked with its {1}{B} kicker, tap target untapped creature and that creature deals damage equal to its power to its controller.

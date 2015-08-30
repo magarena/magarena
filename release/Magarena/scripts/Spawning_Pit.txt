@@ -1,5 +1,5 @@
 name=Spawning Pit
-image=http://mtgimage.com/card/spawning%20pit.jpg
+image=http://magiccards.info/scans/en/ds/141.jpg
 value=4.079
 rarity=U
 type=Artifact
@@ -7,4 +7,4 @@ cost={2}
 ability=Sacrifice a creature: Put a charge counter on SN.;\
         {1},Remove two charge counters from SN: Put a 2/2 colorless Spawn artifact creature token onto the battlefield.
 timing=artifact
-oracle=Sacrifice a creature: Put a charge counter on Spawning Pit. {1}, Remove two charge counters from Spawning Pit: Put a 2/2 colorless Spawn artifact creature token onto the battlefield.
+oracle=Sacrifice a creature: Put a charge counter on Spawning Pit.\n{1}, Remove two charge counters from Spawning Pit: Put a 2/2 colorless Spawn artifact creature token onto the battlefield.

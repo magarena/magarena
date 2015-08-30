@@ -1,6 +1,6 @@
 name=Skill Borrower
-image=http://mtgimage.com/card/skill%20borrower.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ala/56.jpg
+value=3.861
 rarity=R
 type=Artifact,Creature
 subtype=Human,Wizard
@@ -8,5 +8,5 @@ cost={2}{U}
 pt=1/3
 ability=Play with the top card of your library revealed.;\
         As long as the top card of your library is an artifact or creature card, SN has all activated abilities of that card.
-timing=main
-oracle=Play with the top card of your library revealed. As long as the top card of your library is an artifact or creature card, Skill Borrower has all activated abilities of that card.
+timing=artifact
+oracle=Play with the top card of your library revealed.\nAs long as the top card of your library is an artifact or creature card, Skill Borrower has all activated abilities of that card.

@@ -1,9 +1,9 @@
 name=Gorilla War Cry
-image=http://mtgimage.com/card/gorilla%20war%20cry.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me4/124.jpg
+value=3.450
 rarity=C
 type=Instant
 cost={1}{R}
 effect=Cast SN only during combat before blockers are declared.~Creatures can't be blocked this turn except by two or more creatures.~Draw a card at the beginning of the next turn's upkeep.
 timing=removal
-oracle=Cast Gorilla War Cry only during combat before blockers are declared. Creatures can't be blocked this turn except by two or more creatures. Draw a card at the beginning of the next turn's upkeep.
+oracle=Cast Gorilla War Cry only during combat before blockers are declared.\nCreatures can't be blocked this turn except by two or more creatures.\nDraw a card at the beginning of the next turn's upkeep.

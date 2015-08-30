@@ -1,5 +1,5 @@
 name=Nightscape Apprentice
-image=http://mtgimage.com/card/nightscape%20apprentice.jpg
+image=http://magiccards.info/scans/en/in/112.jpg
 value=3.089
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability={R},{T}:Target creature gains first strike until end of turn.;\
         {U}, {T}: Put target creature you control on top of its owner's library.
 timing=main
-oracle={U}, {T}: Put target creature you control on top of its owner's library. {R}, {T}: Target creature gains first strike until end of turn.
+oracle={U}, {T}: Put target creature you control on top of its owner's library.\n{R}, {T}: Target creature gains first strike until end of turn.

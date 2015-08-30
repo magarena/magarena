@@ -1,0 +1,11 @@
+name=Harvest Wurm
+image=http://magiccards.info/scans/en/wl/72.jpg
+value=3.902
+rarity=C
+type=Creature
+subtype=Wurm
+cost={1}{G}
+pt=3/2
+timing=main
+requires_groovy_code
+oracle=When Harvest Wurm enters the battlefield, sacrifice it unless you return a basic land card from your graveyard to your hand.

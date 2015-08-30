@@ -1,5 +1,5 @@
 name=Minotaur Warrior
-image=http://mtgimage.com/card/minotaur%20warrior.jpg
+image=http://magiccards.info/scans/en/po/145.jpg
 value=2.474
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Minotaur,Warrior
 cost={2}{R}
 pt=2/3
 timing=main
+oracle=NONE

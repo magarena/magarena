@@ -1,10 +1,10 @@
 name=Recantation
-image=http://mtgimage.com/card/recantation.jpg
-value=2.500
+image=http://magiccards.info/scans/en/us/91.jpg
+value=2.346
 rarity=R
 type=Enchantment
 cost={3}{U}{U}
 ability=At the beginning of your upkeep, you may put a verse counter on SN.;\
         {U}, Sacrifice SN: Return up to X target permanents to their owners' hands, where X is the number of verse counters on SN.
-timing=main
-oracle=At the beginning of your upkeep, you may put a verse counter on Recantation. {U}, Sacrifice Recantation: Return up to X target permanents to their owners' hands, where X is the number of verse counters on Recantation.
+timing=enchantment
+oracle=At the beginning of your upkeep, you may put a verse counter on Recantation.\n{U}, Sacrifice Recantation: Return up to X target permanents to their owners' hands, where X is the number of verse counters on Recantation.

@@ -1,11 +1,11 @@
 name=Icy Prison
-image=http://mtgimage.com/card/icy%20prison.jpg
-value=2.500
-rarity=R
+image=http://magiccards.info/scans/en/me2/50.jpg
+value=3.429
+rarity=C
 type=Enchantment
 cost={U}{U}
 ability=When SN enters the battlefield, exile target creature.;\
         At the beginning of your upkeep, sacrifice SN unless any player pays {3}.;\
         When SN leaves the battlefield, return the exiled card to the battlefield under its owner's control.
-timing=main
-oracle=When Icy Prison enters the battlefield, exile target creature. At the beginning of your upkeep, sacrifice Icy Prison unless any player pays {3}. When Icy Prison leaves the battlefield, return the exiled card to the battlefield under its owner's control.
+timing=enchantment
+oracle=When Icy Prison enters the battlefield, exile target creature.\nAt the beginning of your upkeep, sacrifice Icy Prison unless any player pays {3}.\nWhen Icy Prison leaves the battlefield, return the exiled card to the battlefield under its owner's control.

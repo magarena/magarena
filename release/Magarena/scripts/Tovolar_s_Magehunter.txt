@@ -1,5 +1,5 @@
 name=Tovolar's Magehunter
-image=http://mtgimage.com/card/tovolar%27s%20magehunter.jpg
+image=http://magiccards.info/scans/en/dka/98b.jpg
 value=3.403
 rarity=R
 type=Creature
@@ -11,4 +11,4 @@ requires_groovy_code
 transform=Mondronen Shaman
 timing=main
 hidden
-oracle=Whenever an opponent casts a spell, Tovolar's Magehunter deals 2 damage to that player. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Tovolar's Magehunter.
+oracle=Whenever an opponent casts a spell, Tovolar's Magehunter deals 2 damage to that player.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Tovolar's Magehunter.

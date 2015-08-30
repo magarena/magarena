@@ -1,5 +1,5 @@
 name=Razing Snidd
-image=http://mtgimage.com/card/razing%20snidd.jpg
+image=http://magiccards.info/scans/en/ps/121.jpg
 value=1.649
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=When SN enters the battlefield, return a black or red creature you control to its owner's hand.;\
         When SN enters the battlefield, each player sacrifices a land.
 timing=main
-oracle=When Razing Snidd enters the battlefield, return a black or red creature you control to its owner's hand. When Razing Snidd enters the battlefield, each player sacrifices a land.
+oracle=When Razing Snidd enters the battlefield, return a black or red creature you control to its owner's hand.\nWhen Razing Snidd enters the battlefield, each player sacrifices a land.

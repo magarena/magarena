@@ -1,5 +1,5 @@
 name=Unburial Rites
-image=http://mtgimage.com/card/unburial%20rites.jpg
+image=http://magiccards.info/scans/en/isd/122.jpg
 value=3.974
 rarity=U
 type=Sorcery
@@ -7,4 +7,4 @@ cost={4}{B}
 effect=Return target creature card from your graveyard to the battlefield.
 ability=Flashback {3}{W}
 timing=main
-oracle=Return target creature card from your graveyard to the battlefield. Flashback {3}{W}
+oracle=Return target creature card from your graveyard to the battlefield.\nFlashback {3}{W}

@@ -1,5 +1,5 @@
 name=Rainbow Crow
-image=http://mtgimage.com/card/rainbow%20crow.jpg
+image=http://magiccards.info/scans/en/in/69.jpg
 value=2.583
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying
 timing=main
 requires_groovy_code
-oracle=Flying. {1}: Rainbow Crow becomes the color of your choice until end of turn.
+oracle=Flying\n{1}: Rainbow Crow becomes the color of your choice until end of turn.

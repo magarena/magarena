@@ -1,5 +1,5 @@
 name=Parallax Nexus
-image=http://mtgimage.com/card/parallax%20nexus.jpg
+image=http://magiccards.info/scans/en/ne/63.jpg
 value=4.000
 rarity=R
 type=Enchantment
@@ -7,4 +7,4 @@ cost={2}{B}
 ability=fading 5
 timing=enchantment
 requires_groovy_code
-oracle=Fading 5. Remove a fade counter from Parallax Nexus: Target opponent exiles a card from his or her hand. Activate this ability only any time you could cast a sorcery. When Parallax Nexus leaves the battlefield, each player returns to his or her hand all cards he or she owns exiled with Parallax Nexus.
+oracle=Fading 5\nRemove a fade counter from Parallax Nexus: Target opponent exiles a card from his or her hand. Activate this ability only any time you could cast a sorcery.\nWhen Parallax Nexus leaves the battlefield, each player returns to his or her hand all cards he or she owns exiled with Parallax Nexus.

@@ -1,5 +1,5 @@
 name=Holy Mantle
-image=http://mtgimage.com/card/holy%20mantle.jpg
+image=http://magiccards.info/scans/en/gtc/17.jpg
 value=2.841
 rarity=U
 type=Enchantment
@@ -8,4 +8,4 @@ cost={2}{W}{W}
 ability=Enchanted creature gets +2/+2 and has protection from creatures.
 timing=aura
 enchant=pump,pos creature
-oracle=Enchant creature. Enchanted creature gets +2/+2 and has protection from creatures.
+oracle=Enchant creature\nEnchanted creature gets +2/+2 and has protection from creatures.

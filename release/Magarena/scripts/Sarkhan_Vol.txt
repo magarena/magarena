@@ -1,11 +1,11 @@
 name=Sarkhan Vol
-image=http://mtgimage.com/card/sarkhan%20vol.jpg
+image=http://magiccards.info/scans/en/mma/183.jpg
 value=4.000
 rarity=M
 type=Planeswalker
 subtype=Sarkhan
 cost={2}{R}{G}
-ability=loyalty 4
+loyalty=4
 timing=main
 requires_groovy_code
-oracle=+1: Creatures you control get +1/+1 and gain haste until end of turn. -2: Gain control of target creature until end of turn. Untap that creature. It gains haste until end of turn. -6: Put five 4/4 red Dragon creature tokens with flying onto the battlefield.
+oracle=+1: Creatures you control get +1/+1 and gain haste until end of turn.\n−2: Gain control of target creature until end of turn. Untap that creature. It gains haste until end of turn.\n−6: Put five 4/4 red Dragon creature tokens with flying onto the battlefield.

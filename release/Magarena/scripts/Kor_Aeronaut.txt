@@ -1,5 +1,5 @@
 name=Kor Aeronaut
-image=http://mtgimage.com/card/kor%20aeronaut.jpg
+image=http://magiccards.info/scans/en/ddf/10.jpg
 value=3.935
 rarity=U
 type=Creature
@@ -10,4 +10,4 @@ ability=kicker {1}{W};\
         flying;\
         When SN enters the battlefield, if it was kicked, target creature gains flying until end of turn.
 timing=main
-oracle=Kicker {1}{W}. Flying. When Kor Aeronaut enters the battlefield, if it was kicked, target creature gains flying until end of turn.
+oracle=Kicker {1}{W}\nFlying\nWhen Kor Aeronaut enters the battlefield, if it was kicked, target creature gains flying until end of turn.

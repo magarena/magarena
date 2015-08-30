@@ -1,10 +1,11 @@
 name=Day of Judgment
-image=http://mtgimage.com/card/day%20of%20judgment.jpg
+image=http://magiccards.info/scans/en/m12/12.jpg
 value=4.105
 removal=2
 rarity=R
 type=Sorcery
 cost={2}{W}{W}
+ability=Cast SN with AI only if an opponent controls a creature.
 effect=Destroy all creatures.
 timing=removal
 oracle=Destroy all creatures.

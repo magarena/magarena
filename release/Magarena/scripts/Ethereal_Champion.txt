@@ -1,5 +1,5 @@
 name=Ethereal Champion
-image=http://mtgimage.com/card/ethereal%20champion.jpg
+image=http://magiccards.info/scans/en/6e/20.jpg
 value=2.095
 rarity=R
 type=Creature

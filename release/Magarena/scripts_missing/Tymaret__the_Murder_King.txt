@@ -1,6 +1,6 @@
 name=Tymaret, the Murder King
-image=http://mtgimage.com/card/tymaret%2C%20the%20murder%20king.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ths/207.jpg
+value=3.452
 rarity=R
 type=Legendary,Creature
 subtype=Zombie,Warrior
@@ -9,4 +9,4 @@ pt=2/2
 ability={1}{R}, Sacrifice another creature: SN deals 2 damage to target player.;\
         {1}{B}, Sacrifice a creature: Return Tymaret from your graveyard to your hand.
 timing=main
-oracle={1}{R}, Sacrifice another creature: Tymaret, the Murder King deals 2 damage to target player. {1}{B}, Sacrifice a creature: Return Tymaret from your graveyard to your hand.
+oracle={1}{R}, Sacrifice another creature: Tymaret, the Murder King deals 2 damage to target player.\n{1}{B}, Sacrifice a creature: Return Tymaret from your graveyard to your hand.

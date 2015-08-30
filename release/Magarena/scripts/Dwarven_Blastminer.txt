@@ -1,5 +1,5 @@
 name=Dwarven Blastminer
-image=http://mtgimage.com/card/dwarven%20blastminer.jpg
+image=http://magiccards.info/scans/en/on/199.jpg
 value=3.653
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability={2}{R}, {T}: Destroy target nonbasic land.;\
         Morph {R}
 timing=main
-oracle={2}{R}, {T}: Destroy target nonbasic land. Morph {R}
+oracle={2}{R}, {T}: Destroy target nonbasic land.\nMorph {R}

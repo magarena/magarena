@@ -1,5 +1,5 @@
 name=Pendrell Mists
-image=http://mtgimage.com/card/pendrell%20mists.jpg
+image=http://magiccards.info/scans/en/wl/47.jpg
 value=4.214
 rarity=R
 type=Enchantment

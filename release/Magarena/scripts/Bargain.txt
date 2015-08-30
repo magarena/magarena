@@ -1,9 +1,9 @@
 name=Bargain
-image=http://mtgimage.com/card/bargain.jpg
+image=http://magiccards.info/scans/en/st/7.jpg
 value=1.578
 rarity=U
 type=Sorcery
 cost={2}{W}
 timing=main
 requires_groovy_code
-oracle=Target opponent draws a card. You gain 7 life.
+oracle=Target opponent draws a card.\nYou gain 7 life.

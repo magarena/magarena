@@ -1,6 +1,6 @@
 name=Spirespine
-image=http://mtgimage.com/card/spirespine.jpg
-value=2.500
+image=http://magiccards.info/scans/en/jou/142.jpg
+value=2.360
 rarity=U
 type=Enchantment,Creature
 subtype=Beast
@@ -9,5 +9,5 @@ pt=4/1
 ability=Bestow {4}{G};\
         SN blocks each turn if able.;\
         Enchanted creature gets +4/+1 and blocks each turn if able.
-timing=main
-oracle=Bestow {4}{G}. Spirespine blocks each turn if able. Enchanted creature gets +4/+1 and blocks each turn if able.
+timing=enchantment
+oracle=Bestow {4}{G}\nSpirespine blocks each turn if able.\nEnchanted creature gets +4/+1 and blocks each turn if able.

@@ -1,5 +1,5 @@
 def NONWHITE_ATTACKING_CREATURE=new MagicPermanentFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
         return !target.hasColor(MagicColor.White) && target.isAttacking() && target.isCreature();
     } 
 };
@@ -24,8 +24,8 @@ def TARGET_NONWHITE_ATTACKING_CREATURE = new MagicTargetChoice(
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.Exile));
-                game.doAction(new MagicChangeLifeAction(
+                game.doAction(new RemoveFromPlayAction(it,MagicLocationType.Exile));
+                game.doAction(new ChangeLifeAction(
                     event.getPlayer(),
                     it.getToughness()
                 ));

@@ -1,6 +1,6 @@
 name=Fleshbag Marauder
-image=http://mtgimage.com/card/fleshbag%20marauder.jpg
-value=4.000
+image=http://magiccards.info/scans/en/ori/98.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Zombie,Warrior

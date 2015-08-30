@@ -13,7 +13,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_NON_LEGENDARY_CREATURE_YOU_CONTROL,
+                TARGET_NON_LEGENDARY_CREATURE_YOU_CONTROL,
                 MagicCopyPermanentPicker.create(),
                 this,
                 "Put a token that's a copy of target nonlegendary creature\$ you control onto the battlefield. "+
@@ -26,7 +26,7 @@
             event.processTargetPermanent(game, {
                 final MagicPlayer player=event.getPlayer();
                 final MagicCard card=MagicCard.createTokenCard(it,player);
-                game.doAction(new MagicPlayCardAction(
+                game.doAction(new PlayCardAction(
                     card,
                     player,
                     [MagicPlayMod.HASTE, MagicPlayMod.SACRIFICE_AT_END_OF_TURN]

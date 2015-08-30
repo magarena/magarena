@@ -1,0 +1,11 @@
+name=Wormfang Behemoth
+image=http://magiccards.info/scans/en/ju/55.jpg
+value=1.663
+rarity=R
+type=Creature
+subtype=Nightmare,Fish,Beast
+cost={3}{U}{U}
+pt=5/5
+timing=main
+requires_groovy_code
+oracle=When Wormfang Behemoth enters the battlefield, exile all cards from your hand.\nWhen Wormfang Behemoth leaves the battlefield, return the exiled cards to their owner's hand.

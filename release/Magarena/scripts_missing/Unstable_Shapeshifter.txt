@@ -1,6 +1,6 @@
 name=Unstable Shapeshifter
-image=http://mtgimage.com/card/unstable%20shapeshifter.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tp/100.jpg
+value=2.839
 rarity=R
 type=Creature
 subtype=Shapeshifter

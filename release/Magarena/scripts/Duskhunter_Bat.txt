@@ -1,5 +1,5 @@
 name=Duskhunter Bat
-image=http://mtgimage.com/card/duskhunter%20bat.jpg
+image=http://magiccards.info/scans/en/ddk/6.jpg
 value=3.062
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{B}
 pt=1/1
 ability=bloodthirst 1;flying
 timing=main
-oracle=Bloodthirst 1. Flying
+oracle=Bloodthirst 1\nFlying

@@ -1,6 +1,6 @@
 name=Storm Elemental
-image=http://mtgimage.com/card/storm%20elemental.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cstd/17.jpg
+value=2.014
 rarity=U
 type=Creature
 subtype=Elemental
@@ -10,4 +10,4 @@ ability=Flying;\
         {U}, Exile the top card of your library: Tap target creature with flying.;\
         {U}, Exile the top card of your library: If the exiled card is a snow land, SN gets +1/+1 until end of turn.
 timing=main
-oracle=Flying. {U}, Exile the top card of your library: Tap target creature with flying. {U}, Exile the top card of your library: If the exiled card is a snow land, Storm Elemental gets +1/+1 until end of turn.
+oracle=Flying\n{U}, Exile the top card of your library: Tap target creature with flying.\n{U}, Exile the top card of your library: If the exiled card is a snow land, Storm Elemental gets +1/+1 until end of turn.

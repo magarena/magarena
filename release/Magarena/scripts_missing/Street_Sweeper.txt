@@ -1,11 +1,11 @@
 name=Street Sweeper
-image=http://mtgimage.com/card/street%20sweeper.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rtr/234.jpg
+value=1.828
 rarity=U
 type=Artifact,Creature
 subtype=Construct
 cost={6}
 pt=4/6
 ability=Whenever SN attacks, destroy all Auras attached to target land.
-timing=main
+timing=artifact
 oracle=Whenever Street Sweeper attacks, destroy all Auras attached to target land.

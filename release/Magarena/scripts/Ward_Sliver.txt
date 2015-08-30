@@ -1,5 +1,5 @@
 name=Ward Sliver
-image=http://mtgimage.com/card/ward%20sliver.jpg
+image=http://magiccards.info/scans/en/le/25.jpg
 value=3.984
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={4}{W}
 pt=2/2
 timing=main
 requires_groovy_code
-oracle=As Ward Sliver enters the battlefield, choose a color. All Slivers have protection from the chosen color.
+oracle=As Ward Sliver enters the battlefield, choose a color.\nAll Slivers have protection from the chosen color.

@@ -1,6 +1,6 @@
 name=Aggression
-image=http://mtgimage.com/card/aggression.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ia/169.jpg
+value=2.961
 rarity=U
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={2}{R}
 ability=Enchant non-Wall creature;\
         Enchanted creature has first strike and trample.;\
         At the beginning of the end step of enchanted creature's controller, destroy that creature if it didn't attack this turn.
-timing=main
-oracle=Enchant non-Wall creature. Enchanted creature has first strike and trample. At the beginning of the end step of enchanted creature's controller, destroy that creature if it didn't attack this turn.
+timing=aura
+oracle=Enchant non-Wall creature\nEnchanted creature has first strike and trample.\nAt the beginning of the end step of enchanted creature's controller, destroy that creature if it didn't attack this turn.

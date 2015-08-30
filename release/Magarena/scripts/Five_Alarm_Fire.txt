@@ -1,10 +1,10 @@
 name=Five-Alarm Fire
-image=http://mtgimage.com/card/five-alarm%20fire.jpg
+image=http://magiccards.info/scans/en/gtc/91.jpg
 value=3.377
 rarity=R
 type=Enchantment
 cost={1}{R}{R}
-ability=Remove five blaze counters from SN: SN deals 5 damage to target creature or player.
+ability=Whenever a creature you control deals combat damage, put a blaze counter on SN.;\
+        Remove five blaze counters from SN: SN deals 5 damage to target creature or player.
 timing=main
-requires_groovy_code
-oracle=Whenever a creature you control deals combat damage, put a blaze counter on Five-Alarm Fire. Remove five blaze counters from Five-Alarm Fire: Five-Alarm Fire deals 5 damage to target creature or player.
+oracle=Whenever a creature you control deals combat damage, put a blaze counter on Five-Alarm Fire.\nRemove five blaze counters from Five-Alarm Fire: Five-Alarm Fire deals 5 damage to target creature or player.

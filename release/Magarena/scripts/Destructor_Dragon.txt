@@ -1,5 +1,5 @@
 name=Destructor Dragon
-image=http://mtgimage.com/card/destructor%20dragon.jpg
+image=http://magiccards.info/scans/en/frf/127.jpg
 value=2.500
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying;\
         When SN dies, destroy target noncreature permanent.
 timing=main
-oracle=Flying. When Destructor Dragon dies, destroy target noncreature permanent.
+oracle=Flying\nWhen Destructor Dragon dies, destroy target noncreature permanent.

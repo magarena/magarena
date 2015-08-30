@@ -1,6 +1,6 @@
 name=Cunning Wish
-image=http://mtgimage.com/card/cunning%20wish.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ju/37.jpg
+value=4.529
 rarity=R
 type=Instant
 cost={2}{U}

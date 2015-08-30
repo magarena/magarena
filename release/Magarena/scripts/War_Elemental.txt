@@ -1,11 +1,12 @@
 name=War Elemental
-image=http://mtgimage.com/card/war%20elemental.jpg
+image=http://magiccards.info/scans/en/mi/112.jpg
 value=4.194
 rarity=R
 type=Creature
 subtype=Elemental
 cost={R}{R}{R}
 pt=1/1
+ability=Cast SN with AI only if an opponent was dealt damage this turn.
 timing=main
 requires_groovy_code
-oracle=When War Elemental enters the battlefield, sacrifice it unless an opponent was dealt damage this turn. Whenever an opponent is dealt damage, put that many +1/+1 counters on War Elemental.
+oracle=When War Elemental enters the battlefield, sacrifice it unless an opponent was dealt damage this turn.\nWhenever an opponent is dealt damage, put that many +1/+1 counters on War Elemental.

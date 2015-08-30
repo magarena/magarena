@@ -1,5 +1,5 @@
 name=Leap of Flame
-image=http://mtgimage.com/card/leap%20of%20flame.jpg
+image=http://magiccards.info/scans/en/gp/121.jpg
 value=2.942
 rarity=C
 type=Instant
@@ -7,4 +7,4 @@ cost={U}{R}
 ability=replicate {U}{R}
 timing=pump
 requires_groovy_code
-oracle=Replicate {U}{R}. Target creature gets +1/+0 and gains flying and first strike until end of turn.
+oracle=Replicate {U}{R}\nTarget creature gets +1/+0 and gains flying and first strike until end of turn.

@@ -1,4 +1,4 @@
-def choice = MagicTargetChoice.Negative("target artifact or enchantment spell");
+def choice = Negative("target artifact or enchantment spell");
 
 [
     new MagicSpellCardEvent() {
@@ -14,9 +14,9 @@ def choice = MagicTargetChoice.Negative("target artifact or enchantment spell");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
-                game.doAction(new MagicCounterItemOnStackAction(it));
-                game.doAction(new MagicChangeLifeAction(it.getController(),it.getConvertedCost()));
-                game.logAppendMessage(event.getPlayer(),"("+it.getConvertedCost()+")");
+                game.doAction(new CounterItemOnStackAction(it));
+                game.doAction(new ChangeLifeAction(it.getController(),it.getConvertedCost()));
+                game.logAppendValue(event.getPlayer(),it.getConvertedCost());
             });
         }
     }

@@ -1,7 +1,7 @@
 name=Wicked Pact
-image=http://mtgimage.com/card/wicked%20pact.jpg
-value=2.500
-rarity=R
+image=http://magiccards.info/scans/en/me4/102.jpg
+value=3.312
+rarity=U
 type=Sorcery
 cost={1}{B}{B}
 effect=Destroy two target nonblack creatures. You lose 5 life.

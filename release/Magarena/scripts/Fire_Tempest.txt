@@ -1,5 +1,5 @@
 name=Fire Tempest
-image=http://mtgimage.com/card/fire%20tempest.jpg
+image=http://magiccards.info/scans/en/me4/114.jpg
 value=3.028
 rarity=R
 type=Sorcery

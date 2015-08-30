@@ -1,6 +1,6 @@
 name=Stunted Growth
-image=http://mtgimage.com/card/stunted%20growth.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me2/179.jpg
+value=4.345
 rarity=R
 type=Sorcery
 cost={3}{G}{G}

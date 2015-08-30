@@ -1,9 +1,9 @@
 name=Manabond
-image=http://mtgimage.com/card/manabond.jpg
+image=http://magiccards.info/scans/en/ex/113.jpg
 value=2.500
 rarity=R
 type=Enchantment
 cost={G}
 ability=At the beginning of your end step, you may reveal your hand and put all land cards from it onto the battlefield. If you do, discard your hand.
-timing=main
+timing=enchantment
 oracle=At the beginning of your end step, you may reveal your hand and put all land cards from it onto the battlefield. If you do, discard your hand.

@@ -10,7 +10,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(), 2));
+            game.doAction(new ChangeLifeAction(event.getPlayer(), 2));
         }
     },
     new MagicPlaneswalkerActivation(-1) {
@@ -24,13 +24,9 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets = game.filterPermanents(
-                event.getPlayer(),
-                MagicTargetFilterFactory.CREATURE_YOU_CONTROL
-            );
-            for (final MagicPermanent target : targets) {
-                game.doAction(new MagicChangeCountersAction(target,MagicCounterType.PlusOne,1));
-                game.doAction(new MagicGainAbilityAction(target, MagicAbility.Vigilance));
+            CREATURE_YOU_CONTROL.filter(event) each {
+                game.doAction(new ChangeCountersAction(it, MagicCounterType.PlusOne, 1));
+                game.doAction(new GainAbilityAction(it, MagicAbility.Vigilance));
             }
 
         }
@@ -47,7 +43,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicPlayTokenAction(event.getPlayer(), TokenCardDefinitions.get("white Avatar creature token")));
+            game.doAction(new PlayTokenAction(event.getPlayer(), CardDefinitions.getToken("white Avatar creature token")));
         }
     }
 ]

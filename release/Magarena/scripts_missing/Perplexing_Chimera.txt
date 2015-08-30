@@ -1,11 +1,11 @@
 name=Perplexing Chimera
-image=http://mtgimage.com/card/perplexing%20chimera.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bng/48.jpg
+value=3.833
 rarity=R
 type=Enchantment,Creature
 subtype=Chimera
 cost={4}{U}
 pt=3/3
 ability=Whenever an opponent casts a spell, you may exchange control of SN and that spell. If you do, you may choose new targets for the spell.
-timing=main
+timing=enchantment
 oracle=Whenever an opponent casts a spell, you may exchange control of Perplexing Chimera and that spell. If you do, you may choose new targets for the spell.

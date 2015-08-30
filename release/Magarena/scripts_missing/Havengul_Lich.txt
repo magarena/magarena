@@ -1,6 +1,6 @@
 name=Havengul Lich
-image=http://mtgimage.com/card/havengul%20lich.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dka/139.jpg
+value=4.092
 rarity=M
 type=Creature
 subtype=Zombie,Wizard

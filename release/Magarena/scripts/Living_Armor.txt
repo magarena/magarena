@@ -1,6 +1,6 @@
 name=Living Armor
-image=http://mtgimage.com/card/living%20armor.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ch/83.jpg
+value=3.033
 rarity=U
 type=Artifact
 cost={4}

@@ -1,5 +1,5 @@
 name=Seeker of the Way
-image=http://mtgimage.com/card/seeker%20of%20the%20way.jpg
+image=http://magiccards.info/scans/en/ktk/22.jpg
 value=3.750
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Prowess;\
         Whenever you cast a noncreature spell, SN gains lifelink until end of turn.
 timing=main
-oracle=Prowess. Whenever you cast a noncreature spell, Seeker of the Way gains lifelink until end of turn.
+oracle=Prowess\nWhenever you cast a noncreature spell, Seeker of the Way gains lifelink until end of turn.

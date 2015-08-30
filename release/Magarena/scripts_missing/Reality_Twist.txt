@@ -1,10 +1,10 @@
 name=Reality Twist
-image=http://mtgimage.com/card/reality%20twist.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ia/94.jpg
+value=3.622
 rarity=R
 type=Enchantment
 cost={U}{U}{U}
 ability=Cumulative upkeep {1}{U}{U};\
         If tapped for mana, Plains produce {R}, Swamps produce {G}, Mountains produce {W}, and Forests produce {B} instead of any other type.
-timing=main
-oracle=Cumulative upkeep {1}{U}{U}. If tapped for mana, Plains produce {R}, Swamps produce {G}, Mountains produce {W}, and Forests produce {B} instead of any other type.
+timing=enchantment
+oracle=Cumulative upkeep {1}{U}{U}\nIf tapped for mana, Plains produce {R}, Swamps produce {G}, Mountains produce {W}, and Forests produce {B} instead of any other type.

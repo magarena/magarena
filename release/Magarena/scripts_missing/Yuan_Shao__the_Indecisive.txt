@@ -1,6 +1,6 @@
 name=Yuan Shao, the Indecisive
-image=http://mtgimage.com/card/yuan%20shao%2C%20the%20indecisive.jpg
-value=2.500
+image=http://magiccards.info/scans/en/p3k/128.jpg
+value=3.517
 rarity=R
 type=Legendary,Creature
 subtype=Human,Soldier
@@ -9,4 +9,4 @@ pt=2/3
 ability=Horsemanship;\
         Each creature you control can't be blocked by more than one creature.
 timing=main
-oracle=Horsemanship. Each creature you control can't be blocked by more than one creature.
+oracle=Horsemanship\nEach creature you control can't be blocked by more than one creature.

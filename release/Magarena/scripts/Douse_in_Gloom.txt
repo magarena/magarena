@@ -1,5 +1,5 @@
 name=Douse in Gloom
-image=http://mtgimage.com/card/douse%20in%20gloom.jpg
+image=http://magiccards.info/scans/en/frf/68.jpg
 value=2.606
 removal=2
 rarity=C

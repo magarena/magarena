@@ -1,5 +1,5 @@
 name=Steppe Lynx
-image=http://mtgimage.com/card/steppe%20lynx.jpg
+image=http://magiccards.info/scans/en/zen/36.jpg
 value=4.096
 rarity=C
 type=Creature

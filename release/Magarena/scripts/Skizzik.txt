@@ -1,5 +1,5 @@
 name=Skizzik
-image=http://mtgimage.com/card/skizzik.jpg
+image=http://magiccards.info/scans/en/in/169.jpg
 value=4.215
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=5/3
 ability=trample;haste;kicker {R}
 timing=fmain
 requires_groovy_code
-oracle=Kicker {R}. Trample, haste. At the beginning of the end step, sacrifice Skizzik unless it was kicked.
+oracle=Kicker {R}\nTrample, haste\nAt the beginning of the end step, sacrifice Skizzik unless it was kicked.

@@ -1,5 +1,5 @@
 name=Obsessive Search
-image=http://mtgimage.com/card/obsessive%20search.jpg
+image=http://magiccards.info/scans/en/vma/83.jpg
 value=3.500
 rarity=C
 type=Instant
@@ -7,4 +7,4 @@ cost={U}
 effect=Draw a card.
 ability=Madness {U}
 timing=draw
-oracle=Draw a card. Madness {U}
+oracle=Draw a card.\nMadness {U}

@@ -1,5 +1,5 @@
 name=Cunning Lethemancer
-image=http://mtgimage.com/card/cunning%20lethemancer.jpg
+image=http://magiccards.info/scans/en/ala/69.jpg
 value=2.914
 rarity=R
 type=Creature

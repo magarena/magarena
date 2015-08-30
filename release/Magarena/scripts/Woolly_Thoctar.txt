@@ -1,5 +1,5 @@
 name=Woolly Thoctar
-image=http://mtgimage.com/card/woolly%20thoctar.jpg
+image=http://magiccards.info/scans/en/ddh/13.jpg
 value=4.111
 rarity=U
 type=Creature
@@ -7,3 +7,4 @@ subtype=Beast
 cost={R}{G}{W}
 pt=5/4
 timing=main
+oracle=NONE

@@ -1,0 +1,13 @@
+name=Faerie Noble
+image=http://magiccards.info/scans/en/me3/117.jpg
+value=3.300
+rarity=U
+type=Creature
+subtype=Faerie
+cost={2}{G}
+pt=1/2
+ability=Flying;\
+        Other Faerie creatures you control get +0/+1.;\
+        {T}: Other Faerie creatures you control get +1/+0 until end of turn.
+timing=main
+oracle=Flying\nOther Faerie creatures you control get +0/+1.\n{T}: Other Faerie creatures you control get +1/+0 until end of turn.

@@ -1,5 +1,5 @@
 name=Howling Banshee
-image=http://mtgimage.com/card/howling%20banshee.jpg
+image=http://magiccards.info/scans/en/m11/100.jpg
 value=2.890
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=flying;\
         When SN enters the battlefield, each player loses 3 life.
 timing=main
-oracle=Flying. When Howling Banshee enters the battlefield, each player loses 3 life.
+oracle=Flying\nWhen Howling Banshee enters the battlefield, each player loses 3 life.

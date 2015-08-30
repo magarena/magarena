@@ -1,5 +1,5 @@
 name=Supreme Exemplar
-image=http://mtgimage.com/card/supreme%20exemplar.jpg
+image=http://magiccards.info/scans/en/mt/53.jpg
 value=3.577
 removal=2
 rarity=R
@@ -7,6 +7,8 @@ type=Creature
 subtype=Elemental
 cost={6}{U}
 pt=10/10
-ability=flying;champion Elemental
+ability=Flying;\
+        Champion an Elemental;\
+        Cast SN with AI only if you control an Elemental
 timing=main
-oracle=Flying. Champion an Elemental
+oracle=Flying\nChampion an Elemental

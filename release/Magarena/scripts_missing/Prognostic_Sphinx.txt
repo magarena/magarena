@@ -1,6 +1,6 @@
 name=Prognostic Sphinx
-image=http://mtgimage.com/card/prognostic%20sphinx.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ths/60.jpg
+value=3.535
 rarity=R
 type=Creature
 subtype=Sphinx
@@ -10,4 +10,4 @@ ability=Flying;\
         Discard a card: SN gains hexproof until end of turn. Tap it.;\
         Whenever SN attacks, scry 3.
 timing=main
-oracle=Flying. Discard a card: Prognostic Sphinx gains hexproof until end of turn. Tap it. Whenever Prognostic Sphinx attacks, scry 3.
+oracle=Flying\nDiscard a card: Prognostic Sphinx gains hexproof until end of turn. Tap it.\nWhenever Prognostic Sphinx attacks, scry 3.

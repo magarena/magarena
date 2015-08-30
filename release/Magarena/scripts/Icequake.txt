@@ -1,5 +1,5 @@
 name=Icequake
-image=http://mtgimage.com/card/icequake.jpg
+image=http://magiccards.info/scans/en/me2/94.jpg
 value=4.080
 rarity=U
 type=Sorcery

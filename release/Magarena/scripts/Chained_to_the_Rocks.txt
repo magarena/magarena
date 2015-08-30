@@ -1,5 +1,5 @@
 name=Chained to the Rocks
-image=http://mtgimage.com/card/chained%20to%20the%20rocks.jpg
+image=http://magiccards.info/scans/en/ths/4.jpg
 value=3.559
 rarity=R
 type=Enchantment
@@ -8,4 +8,4 @@ cost={W}
 timing=aura
 enchant=exile,mountain you control
 requires_groovy_code
-oracle=Enchant Mountain you control. When Chained to the Rocks enters the battlefield, exile target creature an opponent controls until Chained to the Rocks leaves the battlefield.
+oracle=Enchant Mountain you control\nWhen Chained to the Rocks enters the battlefield, exile target creature an opponent controls until Chained to the Rocks leaves the battlefield.

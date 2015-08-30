@@ -1,5 +1,5 @@
 name=Highland Berserker
-image=http://mtgimage.com/card/highland%20berserker.jpg
+image=http://magiccards.info/scans/en/zen/132.jpg
 value=3.115
 rarity=C
 type=Creature

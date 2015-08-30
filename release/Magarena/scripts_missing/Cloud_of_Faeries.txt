@@ -1,7 +1,7 @@
 name=Cloud of Faeries
-image=http://mtgimage.com/card/cloud%20of%20faeries.jpg
+image=http://magiccards.info/scans/en/vma/62.jpg
 value=2.500
-rarity=C
+rarity=U
 type=Creature
 subtype=Faerie
 cost={1}{U}
@@ -10,4 +10,4 @@ ability=Flying;\
         When SN enters the battlefield, untap up to two lands.;\
         Cycling {2}
 timing=main
-oracle=Flying. When Cloud of Faeries enters the battlefield, untap up to two lands. Cycling {2}
+oracle=Flying\nWhen Cloud of Faeries enters the battlefield, untap up to two lands.\nCycling {2}

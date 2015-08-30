@@ -1,5 +1,5 @@
 name=Viashino Spearhunter
-image=http://mtgimage.com/card/viashino%20spearhunter.jpg
+image=http://magiccards.info/scans/en/m10/161.jpg
 value=2.000
 ability=first strike
 rarity=C

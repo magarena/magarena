@@ -1,5 +1,5 @@
 name=Golgari Guildmage
-image=http://mtgimage.com/card/golgari%20guildmage.jpg
+image=http://magiccards.info/scans/en/c13/229.jpg
 value=3.500
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability={4}{B}, Sacrifice a creature: Return target creature card from your graveyard to your hand.;\
         {4}{G}: Put a +1/+1 counter on target creature.
 timing=main
-oracle={4}{B}, Sacrifice a creature: Return target creature card from your graveyard to your hand. {4}{G}: Put a +1/+1 counter on target creature.
+oracle={4}{B}, Sacrifice a creature: Return target creature card from your graveyard to your hand.\n{4}{G}: Put a +1/+1 counter on target creature.

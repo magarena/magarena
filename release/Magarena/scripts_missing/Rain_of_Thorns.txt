@@ -1,9 +1,9 @@
 name=Rain of Thorns
-image=http://mtgimage.com/card/rain%20of%20thorns.jpg
-value=2.500
+image=http://magiccards.info/scans/en/c13/163.jpg
+value=3.600
 rarity=U
 type=Sorcery
 cost={4}{G}{G}
-effect=Choose one or more — • Destroy target artifact. • Destroy target enchantment. • Destroy target land.
+effect=Choose one or more — (1) Destroy target artifact. (2) Destroy target enchantment. (3) Destroy target land.
 timing=main
-oracle=Choose one or more — • Destroy target artifact. • Destroy target enchantment. • Destroy target land.
+oracle=Choose one or more —\n• Destroy target artifact.\n• Destroy target enchantment.\n• Destroy target land.

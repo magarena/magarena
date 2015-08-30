@@ -1,10 +1,10 @@
 name=Search the City
-image=http://mtgimage.com/card/search%20the%20city.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rtr/49.jpg
+value=2.123
 rarity=R
 type=Enchantment
 cost={4}{U}
 ability=When SN enters the battlefield, exile the top five cards of your library.;\
         Whenever you play a card with the same name as one of the exiled cards, you may put one of those cards with that name into its owner's hand. Then if there are no cards exiled with SN, sacrifice it. If you do, take an extra turn after this one.
-timing=main
-oracle=When Search the City enters the battlefield, exile the top five cards of your library. Whenever you play a card with the same name as one of the exiled cards, you may put one of those cards with that name into its owner's hand. Then if there are no cards exiled with Search the City, sacrifice it. If you do, take an extra turn after this one.
+timing=enchantment
+oracle=When Search the City enters the battlefield, exile the top five cards of your library.\nWhenever you play a card with the same name as one of the exiled cards, you may put one of those cards with that name into its owner's hand. Then if there are no cards exiled with Search the City, sacrifice it. If you do, take an extra turn after this one.

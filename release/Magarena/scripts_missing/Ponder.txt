@@ -1,9 +1,9 @@
 name=Ponder
-image=http://mtgimage.com/card/ponder.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m12/73.jpg
+value=4.565
 rarity=C
 type=Sorcery
 cost={U}
 effect=Look at the top three cards of your library, then put them back in any order. You may shuffle your library.~Draw a card.
 timing=main
-oracle=Look at the top three cards of your library, then put them back in any order. You may shuffle your library. Draw a card.
+oracle=Look at the top three cards of your library, then put them back in any order. You may shuffle your library.\nDraw a card.

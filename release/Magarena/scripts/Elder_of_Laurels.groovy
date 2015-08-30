@@ -11,7 +11,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.POS_TARGET_CREATURE,
+                POS_TARGET_CREATURE,
                 MagicPumpTargetPicker.create(),
                 this,
                 "Target creature gets +X/+X until end of turn, " +
@@ -22,7 +22,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final int amount = event.getPlayer().getNrOfPermanents(MagicType.Creature);
-                game.doAction(new MagicChangeTurnPTAction(it,amount,amount));
+                game.doAction(new ChangeTurnPTAction(it,amount,amount));
             });
         }
     }

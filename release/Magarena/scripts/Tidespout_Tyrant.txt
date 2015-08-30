@@ -1,5 +1,5 @@
 name=Tidespout Tyrant
-image=http://mtgimage.com/card/tidespout%20tyrant.jpg
+image=http://magiccards.info/scans/en/di/34.jpg
 value=4.361
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=5/5
 ability=flying;\
         Whenever you cast a spell, return target permanent to its owner's hand.
 timing=main
-oracle=Flying. Whenever you cast a spell, return target permanent to its owner's hand.
+oracle=Flying\nWhenever you cast a spell, return target permanent to its owner's hand.

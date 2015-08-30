@@ -1,6 +1,6 @@
 name=Thrull Parasite
-image=http://mtgimage.com/card/thrull%20parasite.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gtc/81.jpg
+value=3.978
 rarity=U
 type=Creature
 subtype=Thrull
@@ -9,4 +9,4 @@ pt=1/1
 ability=Extort;\
         {T}, Pay 2 life: Remove a counter from target nonland permanent.
 timing=main
-oracle=Extort. {T}, Pay 2 life: Remove a counter from target nonland permanent.
+oracle=Extort\n{T}, Pay 2 life: Remove a counter from target nonland permanent.

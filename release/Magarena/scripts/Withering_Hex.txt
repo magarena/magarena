@@ -1,0 +1,12 @@
+name=Withering Hex
+image=http://magiccards.info/scans/en/on/181.jpg
+value=1.591
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={B}
+ability=Whenever a player cycles a card, put a plague counter on SN.;\
+        Enchanted creature gets -1/-1 for each plague counter on SN.
+timing=aura
+enchant=weaken,neg creature
+oracle=Enchant creature\nWhenever a player cycles a card, put a plague counter on Withering Hex.\nEnchanted creature gets -1/-1 for each plague counter on Withering Hex.

@@ -1,0 +1,9 @@
+name=Shape the Sands
+image=http://magiccards.info/scans/en/dtk/205.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={G}
+effect=Target creature gets +0/+5 and gains reach until end of turn.
+timing=pump
+oracle=Target creature gets +0/+5 and gains reach until end of turn.

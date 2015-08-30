@@ -1,6 +1,6 @@
 name=Fated Return
-image=http://mtgimage.com/card/fated%20return.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bng/69.jpg
+value=3.640
 rarity=R
 type=Instant
 cost={4}{B}{B}{B}

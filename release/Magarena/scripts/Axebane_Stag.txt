@@ -1,5 +1,5 @@
 name=Axebane Stag
-image=http://mtgimage.com/card/axebane%20stag.jpg
+image=http://magiccards.info/scans/en/rtr/116.jpg
 value=2.080
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Elk
 cost={6}{G}
 pt=6/7
 timing=main
+oracle=NONE

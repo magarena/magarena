@@ -1,6 +1,6 @@
 name=Second Guess
-image=http://mtgimage.com/card/second%20guess.jpg
-value=2.500
+image=http://magiccards.info/scans/en/avr/74.jpg
+value=2.620
 rarity=U
 type=Instant
 cost={1}{U}

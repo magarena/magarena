@@ -1,6 +1,6 @@
 name=Root Sliver
-image=http://mtgimage.com/card/root%20sliver.jpg
-value=2.500
+image=http://magiccards.info/scans/en/le/137.jpg
+value=3.653
 rarity=U
 type=Creature
 subtype=Sliver
@@ -9,4 +9,4 @@ pt=2/2
 ability=SN can't be countered.;\
         Sliver spells can't be countered by spells or abilities.
 timing=main
-oracle=Root Sliver can't be countered. Sliver spells can't be countered by spells or abilities.
+oracle=Root Sliver can't be countered.\nSliver spells can't be countered by spells or abilities.

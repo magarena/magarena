@@ -1,5 +1,5 @@
 name=Reya Dawnbringer
-image=http://mtgimage.com/card/reya%20dawnbringer.jpg
+image=http://magiccards.info/scans/en/cns/79.jpg
 value=4.333
 rarity=R
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=4/6
 ability=flying;\
         At the beginning of your upkeep, you may return target creature card from your graveyard to the battlefield.
 timing=main
-oracle=Flying. At the beginning of your upkeep, you may return target creature card from your graveyard to the battlefield.
+oracle=Flying\nAt the beginning of your upkeep, you may return target creature card from your graveyard to the battlefield.

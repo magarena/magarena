@@ -1,11 +1,11 @@
 name=Samite Alchemist
-image=http://mtgimage.com/card/samite%20alchemist.jpg
+image=http://magiccards.info/scans/en/hl/116.jpg
 value=1.170
 rarity=C
 type=Creature
 subtype=Human,Cleric
 cost={3}{W}
 pt=0/2
+ability={W}{W}, {T}: Prevent the next 4 damage that would be dealt to target creature you control this turn.~Tap *that creature*.~*It* doesn't untap during your next untap step.
 timing=main
-requires_groovy_code
 oracle={W}{W}, {T}: Prevent the next 4 damage that would be dealt this turn to target creature you control. Tap that creature. It doesn't untap during your next untap step.

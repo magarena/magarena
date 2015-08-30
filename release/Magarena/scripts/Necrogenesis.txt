@@ -1,5 +1,5 @@
 name=Necrogenesis
-image=http://mtgimage.com/card/necrogenesis.jpg
+image=http://magiccards.info/scans/en/cmd/212.jpg
 value=3.000
 rarity=U
 type=Enchantment

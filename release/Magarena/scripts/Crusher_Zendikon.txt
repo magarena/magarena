@@ -1,5 +1,5 @@
 name=Crusher Zendikon
-image=http://mtgimage.com/card/crusher%20zendikon.jpg
+image=http://magiccards.info/scans/en/wwk/78.jpg
 value=3.008
 rarity=C
 type=Enchantment
@@ -13,4 +13,4 @@ given_ability=trample
 set_pt=4/2
 timing=enchantment
 requires_groovy_code=Wind Zendikon
-oracle=Enchant land. Enchanted land is a 4/2 red Beast creature with trample. It's still a land. When enchanted land dies, return that card to its owner's hand.
+oracle=Enchant land\nEnchanted land is a 4/2 red Beast creature with trample. It's still a land.\nWhen enchanted land dies, return that card to its owner's hand.

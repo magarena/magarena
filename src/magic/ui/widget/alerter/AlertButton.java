@@ -8,8 +8,7 @@ import java.util.concurrent.ExecutionException;
 import javax.swing.AbstractAction;
 import javax.swing.JButton;
 import javax.swing.SwingWorker;
-import magic.data.GeneralConfig;
-import magic.data.SoundEffects;
+import magic.ui.MagicSound;
 
 @SuppressWarnings("serial")
 public abstract class AlertButton extends JButton {
@@ -62,7 +61,7 @@ public abstract class AlertButton extends JButton {
      * Alert subclass can override with own sound if required.
      */
     protected void playNewAlertSoundEffect() {
-        SoundEffects.playUISound(SoundEffects.RESOLVE_SOUND);
+        MagicSound.ALERT.play();
     }
 
     /**

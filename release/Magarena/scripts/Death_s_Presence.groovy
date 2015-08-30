@@ -1,4 +1,4 @@
-def choice = MagicTargetChoice.Positive("target creature you control");
+def choice = Positive("target creature you control");
 
 [
     new MagicWhenOtherDiesTrigger() {
@@ -17,7 +17,7 @@ def choice = MagicTargetChoice.Positive("target creature you control");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicChangeCountersAction(it,MagicCounterType.PlusOne,event.getRefInt()));
+                game.doAction(new ChangeCountersAction(it,MagicCounterType.PlusOne,event.getRefInt()));
             });
         }
     }

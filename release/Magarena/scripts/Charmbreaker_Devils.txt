@@ -1,5 +1,5 @@
 name=Charmbreaker Devils
-image=http://mtgimage.com/card/charmbreaker%20devils.jpg
+image=http://magiccards.info/scans/en/c13/103.jpg
 value=3.812
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=Whenever you cast an instant or sorcery spell, SN gets +4/+0 until end of turn.
 timing=main
 requires_groovy_code
-oracle=At the beginning of your upkeep, return an instant or sorcery card at random from your graveyard to your hand. Whenever you cast an instant or sorcery spell, Charmbreaker Devils gets +4/+0 until end of turn.
+oracle=At the beginning of your upkeep, return an instant or sorcery card at random from your graveyard to your hand.\nWhenever you cast an instant or sorcery spell, Charmbreaker Devils gets +4/+0 until end of turn.

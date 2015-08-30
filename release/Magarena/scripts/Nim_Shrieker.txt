@@ -1,12 +1,12 @@
 name=Nim Shrieker
-image=http://mtgimage.com/card/nim%20shrieker.jpg
+image=http://magiccards.info/scans/en/mi/73.jpg
 value=3.221
 rarity=C
 type=Creature
 subtype=Zombie
 cost={3}{B}
 pt=0/1
-ability=flying
+ability=Flying.;\
+        SN gets +1/+0 for each artifact you control.
 timing=main
-requires_groovy_code=Nim Grotesque
-oracle=Flying. Nim Shrieker gets +1/+0 for each artifact you control.
+oracle=Flying\nNim Shrieker gets +1/+0 for each artifact you control.

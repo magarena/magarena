@@ -1,5 +1,5 @@
 name=Soultether Golem
-image=http://mtgimage.com/card/soultether%20golem.jpg
+image=http://magiccards.info/scans/en/fut/164.jpg
 value=2.272
 rarity=U
 type=Artifact,Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=vanishing 1;\
         Whenever another creature enters the battlefield under your control, put a time counter on SN.
 timing=main
-oracle=Vanishing 1. Whenever another creature enters the battlefield under your control, put a time counter on Soultether Golem.
+oracle=Vanishing 1\nWhenever another creature enters the battlefield under your control, put a time counter on Soultether Golem.

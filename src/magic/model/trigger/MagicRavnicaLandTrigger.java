@@ -3,8 +3,8 @@ package magic.model.trigger;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeLifeAction;
-import magic.model.action.MagicTapAction;
+import magic.model.action.ChangeLifeAction;
+import magic.model.action.TapAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 
@@ -12,7 +12,9 @@ public class MagicRavnicaLandTrigger extends MagicWhenComesIntoPlayTrigger {
 
     private static final MagicRavnicaLandTrigger INSTANCE = new MagicRavnicaLandTrigger();
 
-    private MagicRavnicaLandTrigger() {}
+    private MagicRavnicaLandTrigger() {
+        super(MagicTrigger.REPLACEMENT);
+    }
 
     public static MagicRavnicaLandTrigger create() {
         return INSTANCE;
@@ -21,7 +23,7 @@ public class MagicRavnicaLandTrigger extends MagicWhenComesIntoPlayTrigger {
     @Override
     public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
         if (permanent.getController().getLife() < 2) {
-            game.doAction(MagicTapAction.Enters(permanent));
+            game.doAction(TapAction.Enters(permanent));
             return MagicEvent.NONE;
         } else {
             return new MagicEvent(
@@ -36,14 +38,9 @@ public class MagicRavnicaLandTrigger extends MagicWhenComesIntoPlayTrigger {
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         if (event.isYes()) {
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),-2));
+            game.doAction(new ChangeLifeAction(event.getPlayer(),-2));
         } else {
-            game.doAction(MagicTapAction.Enters(event.getPermanent()));
+            game.doAction(TapAction.Enters(event.getPermanent()));
         }
-    }
-
-    @Override
-    public boolean usesStack() {
-        return false;
     }
 }

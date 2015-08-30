@@ -1,5 +1,5 @@
 name=Leonin Squire
-image=http://mtgimage.com/card/leonin%20squire.jpg
+image=http://magiccards.info/scans/en/5dn/9.jpg
 value=4.027
 rarity=C
 type=Creature

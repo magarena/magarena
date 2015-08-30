@@ -11,10 +11,9 @@
         }
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event) {
-            final int amount = event.getPlayer().getNrOfPermanents(MagicTargetFilterFactory.NONBASIC_LAND_YOU_CONTROL);
-            final MagicDamage damage = new MagicDamage(event.getSource(),event.getPlayer(),amount);
-            game.doAction(new MagicDealDamageAction(damage));
-            game.logAppendMessage(event.getPlayer(),"("+amount+")");
+            final int amount = event.getPlayer().getNrOfPermanents(NONBASIC_LAND_YOU_CONTROL);
+            game.doAction(new DealDamageAction(event.getSource(),event.getPlayer(),amount));
+            game.logAppendValue(event.getPlayer(),amount);
         }
     }
 ]

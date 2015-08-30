@@ -1,12 +1,12 @@
 name=Skarrg Guildmage
-image=http://mtgimage.com/card/skarrg%20guildmage.jpg
+image=http://magiccards.info/scans/en/gtc/196.jpg
 value=3.900
 rarity=U
 type=Creature
 subtype=Human,Shaman
 cost={R}{G}
 pt=2/2
-ability={R}{G}: Creatures you control gain trample until end of turn.
+ability={R}{G}: Creatures you control gain trample until end of turn.;\
+        {1}{R}{G}: Target land you control becomes a 4/4 Elemental creature until end of turn. It's still a land.
 timing=main
-requires_groovy_code
-oracle={R}{G}: Creatures you control gain trample until end of turn. {1}{R}{G}: Target land you control becomes a 4/4 Elemental creature until end of turn. It's still a land.
+oracle={R}{G}: Creatures you control gain trample until end of turn.\n{1}{R}{G}: Target land you control becomes a 4/4 Elemental creature until end of turn. It's still a land.

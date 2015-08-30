@@ -1,6 +1,6 @@
 name=Peregrine Drake
-image=http://mtgimage.com/card/peregrine%20drake.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pc2/22.jpg
+value=4.400
 rarity=U
 type=Creature
 subtype=Drake
@@ -9,4 +9,4 @@ pt=2/3
 ability=Flying;\
         When SN enters the battlefield, untap up to five lands.
 timing=main
-oracle=Flying. When Peregrine Drake enters the battlefield, untap up to five lands.
+oracle=Flying\nWhen Peregrine Drake enters the battlefield, untap up to five lands.

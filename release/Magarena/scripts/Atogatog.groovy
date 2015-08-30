@@ -25,7 +25,7 @@ def choice = new MagicTargetChoice("an Atog creature to sacrifice");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int X = event.getRefPermanent().getPower();
-            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(), X, X));
+            game.doAction(new ChangeTurnPTAction(event.getPermanent(), X, X));
         }
     }
 ]

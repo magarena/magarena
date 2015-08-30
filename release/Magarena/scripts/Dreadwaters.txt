@@ -1,9 +1,10 @@
 name=Dreadwaters
-image=http://mtgimage.com/card/dreadwaters.jpg
-value=2.379
+image=http://magiccards.info/scans/en/ori/56.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={3}{U}
+ability=Cast SN with AI only if you control a land.
 timing=main
 requires_groovy_code
 oracle=Target player puts the top X cards of his or her library into his or her graveyard, where X is the number of lands you control.

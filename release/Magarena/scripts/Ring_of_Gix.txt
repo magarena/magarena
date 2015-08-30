@@ -1,9 +1,9 @@
 name=Ring of Gix
-image=http://mtgimage.com/card/ring%20of%20gix.jpg
+image=http://magiccards.info/scans/en/vma/280.jpg
 value=3.500
 rarity=R
 type=Artifact
 cost={3}
 ability=echo {3};{1},{T}:Tap target artifact.;{1},{T}:Tap target creature.;{1},{T}:Tap target land.
 timing=artifact
-oracle=Echo {3}. {1}, {T}: Tap target artifact, creature, or land.
+oracle=Echo {3}\n{1}, {T}: Tap target artifact, creature, or land.

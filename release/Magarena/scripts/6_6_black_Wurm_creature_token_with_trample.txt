@@ -7,3 +7,4 @@ subtype=Wurm
 color=b
 pt=6/6
 ability=trample
+oracle=Trample

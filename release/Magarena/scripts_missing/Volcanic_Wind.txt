@@ -1,6 +1,6 @@
 name=Volcanic Wind
-image=http://mtgimage.com/card/volcanic%20wind.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/223.jpg
+value=4.048
 rarity=U
 type=Sorcery
 cost={4}{R}{R}

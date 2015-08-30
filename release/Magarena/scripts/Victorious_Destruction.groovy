@@ -1,4 +1,4 @@
-def choice = MagicTargetChoice.Negative("target artifact or land");
+def choice = Negative("target artifact or land");
 
 [
     new MagicSpellCardEvent() {
@@ -16,8 +16,8 @@ def choice = MagicTargetChoice.Negative("target artifact or land");
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final MagicPlayer controller=it.getController();
-                game.doAction(new MagicDestroyAction(it));
-                game.doAction(new MagicChangeLifeAction(controller,-1));
+                game.doAction(new DestroyAction(it));
+                game.doAction(new ChangeLifeAction(controller,-1));
             });
         }
     }

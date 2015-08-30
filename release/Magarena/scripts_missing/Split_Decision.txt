@@ -1,6 +1,6 @@
 name=Split Decision
-image=http://mtgimage.com/card/split%20decision.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cns/25.jpg
+value=3.929
 rarity=U
 type=Instant
 cost={1}{U}

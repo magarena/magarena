@@ -14,7 +14,7 @@
             final int amount=payedCost.getX();
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_PLAYER,
+                NEG_TARGET_PLAYER,
                 amount,
                 this,
                 "Target player\$ puts the top RN cards of his or her library " +
@@ -25,7 +25,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                game.doAction(new MagicMillLibraryAction(
+                game.doAction(new MillLibraryAction(
                     it,
                     event.getRefInt()
                 ));

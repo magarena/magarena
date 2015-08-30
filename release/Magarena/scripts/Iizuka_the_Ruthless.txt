@@ -1,5 +1,5 @@
 name=Iizuka the Ruthless
-image=http://mtgimage.com/card/iizuka%20the%20ruthless.jpg
+image=http://magiccards.info/scans/en/sok/104.jpg
 value=3.291
 rarity=R
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=bushido 2;\
         {2}{R}, Sacrifice a Samurai: Samurai creatures you control gain double strike until end of turn.
 timing=main
-oracle=Bushido 2. {2}{R}, Sacrifice a Samurai: Samurai creatures you control gain double strike until end of turn.
+oracle=Bushido 2\n{2}{R}, Sacrifice a Samurai: Samurai creatures you control gain double strike until end of turn.

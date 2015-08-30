@@ -1,6 +1,6 @@
 name=Matsu-Tribe Decoy
-image=http://mtgimage.com/card/matsu-tribe%20decoy.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/227.jpg
+value=1.600
 rarity=C
 type=Creature
 subtype=Snake,Warrior
@@ -9,4 +9,4 @@ pt=1/3
 ability={2}{G}: Target creature blocks SN this turn if able.;\
         Whenever SN deals combat damage to a creature, tap that creature and it doesn't untap during its controller's next untap step.
 timing=main
-oracle={2}{G}: Target creature blocks Matsu-Tribe Decoy this turn if able. Whenever Matsu-Tribe Decoy deals combat damage to a creature, tap that creature and it doesn't untap during its controller's next untap step.
+oracle={2}{G}: Target creature blocks Matsu-Tribe Decoy this turn if able.\nWhenever Matsu-Tribe Decoy deals combat damage to a creature, tap that creature and it doesn't untap during its controller's next untap step.

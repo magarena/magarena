@@ -1,5 +1,5 @@
 name=Rejuvenation Chamber
-image=http://mtgimage.com/card/rejuvenation%20chamber.jpg
+image=http://magiccards.info/scans/en/ne/137.jpg
 value=1.672
 rarity=U
 type=Artifact
@@ -7,4 +7,4 @@ cost={3}
 ability=fading 2;\
         {T}: You gain 2 life.
 timing=main
-oracle=Fading 2. {T}: You gain 2 life.
+oracle=Fading 2\n{T}: You gain 2 life.

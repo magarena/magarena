@@ -1,9 +1,9 @@
 name=Gravity Well
-image=http://mtgimage.com/card/gravity%20well.jpg
-value=2.500
+image=http://magiccards.info/scans/en/roe/185.jpg
+value=3.844
 rarity=U
 type=Enchantment
 cost={1}{G}{G}
 ability=Whenever a creature with flying attacks, it loses flying until end of turn.
-timing=main
+timing=enchantment
 oracle=Whenever a creature with flying attacks, it loses flying until end of turn.

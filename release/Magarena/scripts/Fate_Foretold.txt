@@ -1,5 +1,5 @@
 name=Fate Foretold
-image=http://mtgimage.com/card/fate%20foretold.jpg
+image=http://magiccards.info/scans/en/ths/48.jpg
 value=3.424
 rarity=C
 type=Enchantment
@@ -9,4 +9,4 @@ ability=When SN enters the battlefield, draw a card.
 timing=aura
 enchant=default,pos creature
 requires_groovy_code
-oracle=Enchant creature. When Fate Foretold enters the battlefield, draw a card. When enchanted creature dies, its controller draws a card.
+oracle=Enchant creature\nWhen Fate Foretold enters the battlefield, draw a card.\nWhen enchanted creature dies, its controller draws a card.

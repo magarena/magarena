@@ -1,6 +1,6 @@
 name=Dawnglare Invoker
-image=http://mtgimage.com/card/dawnglare%20invoker.jpg
-value=2.500
+image=http://magiccards.info/scans/en/roe/16.jpg
+value=3.681
 rarity=C
 type=Creature
 subtype=Kor,Wizard
@@ -9,4 +9,4 @@ pt=2/1
 ability=Flying;\
         {8}: Tap all creatures target player controls.
 timing=main
-oracle=Flying. {8}: Tap all creatures target player controls.
+oracle=Flying\n{8}: Tap all creatures target player controls.

@@ -1,6 +1,6 @@
 name=Seht's Tiger
-image=http://mtgimage.com/card/seht%27s%20tiger.jpg
-value=2.500
+image=http://magiccards.info/scans/en/fut/31.jpg
+value=3.600
 rarity=R
 type=Creature
 subtype=Cat
@@ -9,4 +9,4 @@ pt=3/3
 ability=Flash;\
         When SN enters the battlefield, you gain protection from the color of your choice until end of turn.
 timing=main
-oracle=Flash. When Seht's Tiger enters the battlefield, you gain protection from the color of your choice until end of turn.
+oracle=Flash\nWhen Seht's Tiger enters the battlefield, you gain protection from the color of your choice until end of turn.

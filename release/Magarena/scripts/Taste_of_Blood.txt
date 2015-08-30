@@ -1,5 +1,5 @@
 name=Taste of Blood
-image=http://mtgimage.com/card/taste%20of%20blood.jpg
+image=http://magiccards.info/scans/en/m12/113.jpg
 value=1.946
 rarity=C
 type=Sorcery

@@ -1,12 +1,12 @@
 name=Sharding Sphinx
-image=http://mtgimage.com/card/sharding%20sphinx.jpg
+image=http://magiccards.info/scans/en/c13/56.jpg
 value=3.643
 rarity=R
 type=Artifact,Creature
 subtype=Sphinx
 cost={4}{U}{U}
 pt=4/4
-ability=flying
+ability=flying;\
+        Whenever an artifact creature you control deals combat damage to a player, you may put a 1/1 blue Thopter artifact creature token with flying onto the battlefield.
 timing=artifact
-requires_groovy_code
-oracle=Flying. Whenever an artifact creature you control deals combat damage to a player, you may put a 1/1 blue Thopter artifact creature token with flying onto the battlefield.
+oracle=Flying\nWhenever an artifact creature you control deals combat damage to a player, you may put a 1/1 blue Thopter artifact creature token with flying onto the battlefield.

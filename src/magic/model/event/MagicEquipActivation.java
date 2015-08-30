@@ -4,7 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicAttachAction;
+import magic.model.action.AttachAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
@@ -13,31 +13,38 @@ import magic.model.target.MagicOtherPermanentTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 import magic.model.target.MagicTargetHint;
 
+import java.util.List;
+import java.util.LinkedList;
 import java.util.Arrays;
 
 public class MagicEquipActivation extends MagicPermanentActivation {
 
-    private final MagicManaCost equipCost;
+    private final List<MagicMatchedCostEvent> costs;
     
-    public MagicEquipActivation(final MagicManaCost aEquipCost) {
-        this(aEquipCost, "Equip");
+    public MagicEquipActivation(final List<MagicMatchedCostEvent> aCosts) {
+        this(aCosts, "Equip");
     }
 
-    public MagicEquipActivation(final MagicManaCost aEquipCost, final String description) {
+    public MagicEquipActivation(final List<MagicMatchedCostEvent> aCosts, final String description) {
         super(
             new MagicCondition[]{
                 MagicCondition.SORCERY_CONDITION,
                 MagicCondition.NOT_CREATURE_CONDITION,
             },
-            new MagicActivationHints(MagicTiming.Equipment,2),
+            new MagicActivationHints(MagicTiming.Equipment),
             description
         );
-        equipCost = aEquipCost;
+        costs = aCosts;
     }
 
     @Override
     public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
-        return Arrays.asList(new MagicPayManaCostEvent(source,equipCost));
+        final List<MagicEvent> costEvents = new LinkedList<MagicEvent>();
+        for (final MagicMatchedCostEvent matched : costs) {
+            costEvents.add(matched.getEvent(source));
+        }
+        costEvents.add(new MagicPlayAbilityEvent(source, MagicCondition.ABILITY_TWICE_CONDITION));
+        return costEvents;
     }
 
     @Override
@@ -63,7 +70,7 @@ public class MagicEquipActivation extends MagicPermanentActivation {
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         event.processTargetPermanent(game,new MagicPermanentAction() {
             public void doAction(final MagicPermanent creature) {
-                game.doAction(new MagicAttachAction(event.getPermanent(),creature));
+                game.doAction(new AttachAction(event.getPermanent(),creature));
             }
         });
     }

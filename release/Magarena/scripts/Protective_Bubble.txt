@@ -1,11 +1,11 @@
 name=Protective Bubble
-image=http://mtgimage.com/card/protective%20bubble.jpg
+image=http://magiccards.info/scans/en/lw/80.jpg
 value=3.360
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={3}{U}
-ability=Enchanted creature can't be blocked and has shroud.
+ability=Enchanted creature has shroud and can't be blocked.
 timing=aura
 enchant=unblockable,pos creature
-oracle=Enchant creature. Enchanted creature can't be blocked and has shroud.
+oracle=Enchant creature\nEnchanted creature can't be blocked and has shroud.

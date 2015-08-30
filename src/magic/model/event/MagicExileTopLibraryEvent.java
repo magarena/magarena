@@ -6,14 +6,13 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.action.MagicMoveCardAction;
-import magic.model.action.MagicRemoveCardAction;
+import magic.model.action.ShiftCardAction;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
 
 public class MagicExileTopLibraryEvent extends MagicEvent{
     
-    private final MagicCondition[] conds;
+    private final MagicCondition cond;
 
     public MagicExileTopLibraryEvent(final MagicSource source, final int amount) {
         this(source, source.getController(), amount);
@@ -27,7 +26,7 @@ public class MagicExileTopLibraryEvent extends MagicEvent{
             EVENT_ACTION,
             "PN exiles the top RN cards of his or her library."
         );
-        conds = new MagicCondition[]{MagicConditionFactory.LibraryAtLeast(amount)};
+        cond = MagicConditionFactory.LibraryAtLeast(amount);
     }
 
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
@@ -35,14 +34,13 @@ public class MagicExileTopLibraryEvent extends MagicEvent{
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCardList exile = new MagicCardList(event.getPlayer().getLibrary().getCardsFromTop(event.getRefInt()));
             for (final MagicCard card : exile) {
-                game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
-                game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Exile));
+                game.doAction(new ShiftCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Exile));
             }
         }
     };
     
     @Override
-    public MagicCondition[] getConditions() {
-        return conds;
+    public boolean isSatisfied() {
+        return cond.accept(getSource()) && super.isSatisfied();
     }
 }

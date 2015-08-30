@@ -1,11 +1,12 @@
 name=Dirge of Dread
-image=http://mtgimage.com/card/dirge%20of%20dread.jpg
+image=http://magiccards.info/scans/en/c13/73.jpg
 value=3.136
 rarity=C
 type=Sorcery
 cost={2}{B}
 ability=Cycling {1}{B};\
-        When you cycle SN, you may have target creature gain fear until end of turn.
+        When you cycle SN, you may have target creature gain fear until end of turn.;\
+        Cast SN with AI only if you control a creature.
 effect=All creatures gain fear until end of turn.
 timing=main
-oracle=All creatures gain fear until end of turn. Cycling {1}{B}. When you cycle Dirge of Dread, you may have target creature gain fear until end of turn.
+oracle=All creatures gain fear until end of turn.\nCycling {1}{B}\nWhen you cycle Dirge of Dread, you may have target creature gain fear until end of turn.

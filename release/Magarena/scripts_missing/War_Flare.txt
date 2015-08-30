@@ -1,9 +1,0 @@
-name=War Flare
-image=http://mtgimage.com/card/war%20flare.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={2}{R}{W}
-effect=Creatures you control get +2/+1 until end of turn. Untap those creatures.
-timing=removal
-oracle=Creatures you control get +2/+1 until end of turn. Untap those creatures.

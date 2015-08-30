@@ -1,9 +1,9 @@
 name=Angel's Grace
-image=http://mtgimage.com/card/angel%27s%20grace.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mma/4.jpg
+value=4.297
 rarity=R
 type=Instant
 cost={W}
 effect=Split second~You can't lose the game this turn and your opponents can't win the game this turn. Until end of turn, damage that would reduce your life total to less than 1 reduces it to 1 instead.
 timing=removal
-oracle=Split second. You can't lose the game this turn and your opponents can't win the game this turn. Until end of turn, damage that would reduce your life total to less than 1 reduces it to 1 instead.
+oracle=Split second\nYou can't lose the game this turn and your opponents can't win the game this turn. Until end of turn, damage that would reduce your life total to less than 1 reduces it to 1 instead.

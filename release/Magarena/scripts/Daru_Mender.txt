@@ -1,5 +1,5 @@
 name=Daru Mender
-image=http://mtgimage.com/card/daru%20mender.jpg
+image=http://magiccards.info/scans/en/le/8.jpg
 value=2.212
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=Morph {W};\
         When SN is turned face up, regenerate target creature.
 timing=main
-oracle=Morph {W}. When Daru Mender is turned face up, regenerate target creature.
+oracle=Morph {W}\nWhen Daru Mender is turned face up, regenerate target creature.

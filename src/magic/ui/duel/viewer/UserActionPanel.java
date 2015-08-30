@@ -2,7 +2,6 @@ package magic.ui.duel.viewer;
 
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
-import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.awt.Insets;
@@ -11,7 +10,6 @@ import java.awt.event.ActionListener;
 import java.awt.event.InputEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComponent;
@@ -26,7 +24,6 @@ import magic.model.MagicGame;
 import magic.model.phase.MagicPhaseType;
 import magic.ui.SwingGameController;
 import magic.ui.widget.TextLabel;
-import magic.ui.widget.TitleBar;
 
 @SuppressWarnings("serial")
 public class UserActionPanel extends JPanel implements ActionListener {
@@ -48,7 +45,8 @@ public class UserActionPanel extends JPanel implements ActionListener {
         this.controller=controller;
 
         setLayout(new BorderLayout());
-        setBorder(BorderFactory.createMatteBorder(0, 1, 1, 1, Color.BLACK));
+        setMinimumSize(new Dimension(0, 114));
+        setOpaque(false);
 
         actionPanel=new JPanel();
         actionPanel.setOpaque(false);
@@ -117,13 +115,6 @@ public class UserActionPanel extends JPanel implements ActionListener {
         // (by DuelPanel) while mouse cursor is inside UserActionPanel.
         addMouseListener(new MouseAdapter(){});
 
-    }
-
-    public void setTitle(final TitleBar titleBar) {
-        titleBar.setText("Turn " + game.getTurn() + " : " + game.getPhase().getType().getName());
-    }
-    public String getTurnCaption() {
-        return "Turn " + game.getTurn() + " : " + game.getPhase().getType().getName();
     }
 
     public void clearContentPanel() {

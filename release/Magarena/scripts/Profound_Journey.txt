@@ -1,0 +1,9 @@
+name=Profound Journey
+image=http://magiccards.info/scans/en/dtk/30.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={5}{W}{W}
+effect=Return target permanent card from your graveyard to the battlefield.~Rebound
+timing=main
+oracle=Return target permanent card from your graveyard to the battlefield.\nRebound

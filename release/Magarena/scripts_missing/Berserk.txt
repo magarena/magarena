@@ -1,9 +1,9 @@
 name=Berserk
-image=http://mtgimage.com/card/berserk.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/vma/197.jpg
+value=3.750
+rarity=R
 type=Instant
 cost={G}
 effect=Cast SN only before the combat damage step.~Target creature gains trample and gets +X/+0 until end of turn, where X is its power. At the beginning of the next end step, destroy that creature if it attacked this turn.
 timing=removal
-oracle=Cast Berserk only before the combat damage step. Target creature gains trample and gets +X/+0 until end of turn, where X is its power. At the beginning of the next end step, destroy that creature if it attacked this turn.
+oracle=Cast Berserk only before the combat damage step.\nTarget creature gains trample and gets +X/+0 until end of turn, where X is its power. At the beginning of the next end step, destroy that creature if it attacked this turn.

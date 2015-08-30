@@ -1,6 +1,6 @@
 name=Sindbad
-image=http://mtgimage.com/card/sindbad.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tsts/31.jpg
+value=3.050
 rarity=U
 type=Creature
 subtype=Human

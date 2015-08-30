@@ -9,12 +9,12 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
     }
 };
 
-def choice = MagicTargetChoice.Positive("target Forest");
+def choice = Positive("target Forest");
 
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Animate),
-        "Animate"
+        "Becomes"
     ) {
 
         @Override
@@ -43,7 +43,7 @@ def choice = MagicTargetChoice.Positive("target Forest");
                         pt.set(amount,amount);
                     }
                 };
-                game.doAction(new MagicBecomesCreatureAction(it,PT,ST));
+                game.doAction(new BecomesCreatureAction(it,PT,ST));
             });
         }
     }

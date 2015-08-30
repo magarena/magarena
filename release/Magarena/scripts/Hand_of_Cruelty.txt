@@ -1,5 +1,5 @@
 name=Hand of Cruelty
-image=http://mtgimage.com/card/hand%20of%20cruelty.jpg
+image=http://magiccards.info/scans/en/sok/71.jpg
 value=3.933
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={B}{B}
 pt=2/2
 ability=protection from white;bushido 1
 timing=main
-oracle=Protection from white. Bushido 1
+oracle=Protection from white\nBushido 1

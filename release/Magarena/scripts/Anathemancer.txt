@@ -1,5 +1,5 @@
 name=Anathemancer
-image=http://mtgimage.com/card/anathemancer.jpg
+image=http://magiccards.info/scans/en/arb/33.jpg
 value=3.478
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Unearth {5}{B}{R}
 timing=main
 requires_groovy_code
-oracle=When Anathemancer enters the battlefield, it deals damage to target player equal to the number of nonbasic lands that player controls. Unearth {5}{B}{R}
+oracle=When Anathemancer enters the battlefield, it deals damage to target player equal to the number of nonbasic lands that player controls.\nUnearth {5}{B}{R}

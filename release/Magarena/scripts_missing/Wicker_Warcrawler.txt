@@ -1,11 +1,11 @@
 name=Wicker Warcrawler
-image=http://mtgimage.com/card/wicker%20warcrawler.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/269.jpg
+value=2.717
 rarity=U
 type=Artifact,Creature
 subtype=Scarecrow
 cost={5}
 pt=6/6
 ability=Whenever SN attacks or blocks, put a -1/-1 counter on it at end of combat.
-timing=main
+timing=artifact
 oracle=Whenever Wicker Warcrawler attacks or blocks, put a -1/-1 counter on it at end of combat.

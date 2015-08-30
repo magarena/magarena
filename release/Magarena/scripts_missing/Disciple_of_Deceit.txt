@@ -1,6 +1,6 @@
 name=Disciple of Deceit
-image=http://mtgimage.com/card/disciple%20of%20deceit.jpg
-value=2.500
+image=http://magiccards.info/scans/en/jou/148.jpg
+value=4.203
 rarity=U
 type=Creature
 subtype=Human,Rogue

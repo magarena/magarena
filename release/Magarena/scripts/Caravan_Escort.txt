@@ -1,5 +1,5 @@
 name=Caravan Escort
-image=http://mtgimage.com/card/caravan%20escort.jpg
+image=http://magiccards.info/scans/en/ddg/2.jpg
 value=3.081
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=level up {2} 5
 timing=main
 requires_groovy_code
-oracle=Level up {2}. LEVEL 1-4. 2/2. LEVEL 5+. 5/5. First strike
+oracle=Level up {2}\nLEVEL 1-4\n2/2\nLEVEL 5+\n5/5\nFirst strike

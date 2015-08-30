@@ -1,9 +1,9 @@
 name=Soul's Might
-image=http://mtgimage.com/card/soul%27s%20might.jpg
+image=http://magiccards.info/scans/en/ala/149.jpg
 value=3.037
 rarity=C
 type=Sorcery
 cost={4}{G}
-timing=pump
+timing=fmain
 requires_groovy_code
 oracle=Put X +1/+1 counters on target creature, where X is that creature's power.

@@ -1,5 +1,5 @@
 name=Meglonoth
-image=http://mtgimage.com/card/meglonoth.jpg
+image=http://magiccards.info/scans/en/cfx/118.jpg
 value=4.171
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=6/6
 ability=vigilance;trample
 timing=main
 requires_groovy_code
-oracle=Vigilance, trample. Whenever Meglonoth blocks a creature, Meglonoth deals damage to that creature's controller equal to Meglonoth's power.
+oracle=Vigilance, trample\nWhenever Meglonoth blocks a creature, Meglonoth deals damage to that creature's controller equal to Meglonoth's power.

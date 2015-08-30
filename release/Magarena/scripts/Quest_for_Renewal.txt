@@ -1,9 +1,10 @@
 name=Quest for Renewal
-image=http://mtgimage.com/card/quest%20for%20renewal.jpg
+image=http://magiccards.info/scans/en/wwk/110.jpg
 value=3.792
 rarity=U
 type=Enchantment
 cost={1}{G}
+ability=Whenever a creature you control becomes tapped, you may put a quest counter on SN.
 timing=enchantment
 requires_groovy_code
-oracle=Whenever a creature you control becomes tapped, you may put a quest counter on Quest for Renewal. As long as there are four or more quest counters on Quest for Renewal, untap all creatures you control during each other player's untap step.
+oracle=Whenever a creature you control becomes tapped, you may put a quest counter on Quest for Renewal.\nAs long as there are four or more quest counters on Quest for Renewal, untap all creatures you control during each other player's untap step.

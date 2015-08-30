@@ -1,5 +1,5 @@
 name=Perilous Shadow
-image=http://mtgimage.com/card/perilous%20shadow.jpg
+image=http://magiccards.info/scans/en/rtr/74.jpg
 value=2.845
 rarity=C
 type=Creature

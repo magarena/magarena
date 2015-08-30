@@ -12,8 +12,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getCardOnStack().getX();
-            game.doAction(new MagicPreventDamageAction(event.getPlayer(), amount));
-            game.doAction(new MagicDrawAction(event.getPlayer()));
+            game.doAction(new PreventDamageAction(event.getPlayer(), amount));
+            game.doAction(new DrawAction(event.getPlayer()));
         }
     }
 ]

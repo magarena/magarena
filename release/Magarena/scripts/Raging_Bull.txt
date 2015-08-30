@@ -1,5 +1,5 @@
 name=Raging Bull
-image=http://mtgimage.com/card/raging%20bull.jpg
+image=http://magiccards.info/scans/en/lg/160.jpg
 value=1.510
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Ox
 cost={2}{R}
 pt=2/2
 timing=main
+oracle=NONE

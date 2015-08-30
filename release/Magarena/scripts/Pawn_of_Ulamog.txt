@@ -1,5 +1,5 @@
 name=Pawn of Ulamog
-image=http://mtgimage.com/card/pawn%20of%20ulamog.jpg
+image=http://magiccards.info/scans/en/roe/122.jpg
 value=4.007
 rarity=U
 type=Creature

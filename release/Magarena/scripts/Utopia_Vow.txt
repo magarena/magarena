@@ -1,6 +1,6 @@
 name=Utopia Vow
-image=http://mtgimage.com/card/utopia%20vow.jpg
-value=3.346
+image=http://magiccards.info/scans/en/pc/142.jpg
+value=3.333
 rarity=C
 type=Enchantment
 subtype=Aura
@@ -9,4 +9,4 @@ ability=Enchanted creature can't attack or block.;\
         Enchanted creature has "{T}: Add one mana of any color to your mana pool."
 timing=aura
 enchant=default,creature
-oracle=Enchant creature. Enchanted creature can't attack or block. Enchanted creature has "{T}: Add one mana of any color to your mana pool."
+oracle=Enchant creature\nEnchanted creature can't attack or block.\nEnchanted creature has "{T}: Add one mana of any color to your mana pool."

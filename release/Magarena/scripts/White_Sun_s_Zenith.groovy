@@ -12,12 +12,12 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCardOnStack spell = event.getCardOnStack();
-            game.doAction(new MagicPlayTokensAction(
+            game.doAction(new PlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("2/2 white Cat creature token"),
+                CardDefinitions.getToken("2/2 white Cat creature token"),
                 spell.getX()
             ));
-            game.doAction(new MagicChangeCardDestinationAction(spell,MagicLocationType.OwnersLibrary));
+            game.doAction(new ChangeCardDestinationAction(spell,MagicLocationType.OwnersLibrary));
         }
     }
 ]

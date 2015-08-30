@@ -1,10 +1,10 @@
 name=Horobi's Whisper
-image=http://mtgimage.com/card/horobi%27s%20whisper.jpg
-value=2.500
-rarity=C
+image=http://magiccards.info/scans/en/mma/88.jpg
+value=3.083
+rarity=U
 type=Instant
 subtype=Arcane
 cost={1}{B}{B}
 effect=If you control a Swamp, destroy target nonblack creature.~Splice onto Arcane—Exile four cards from your graveyard.
 timing=removal
-oracle=If you control a Swamp, destroy target nonblack creature. Splice onto Arcane—Exile four cards from your graveyard.
+oracle=If you control a Swamp, destroy target nonblack creature.\nSplice onto Arcane—Exile four cards from your graveyard.

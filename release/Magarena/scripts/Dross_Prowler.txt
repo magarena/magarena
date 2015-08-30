@@ -1,5 +1,5 @@
 name=Dross Prowler
-image=http://mtgimage.com/card/dross%20prowler.jpg
+image=http://magiccards.info/scans/en/mi/64.jpg
 value=2.217
 ability=fear
 rarity=C

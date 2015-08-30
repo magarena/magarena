@@ -1,6 +1,6 @@
 name=Unliving Psychopath
-image=http://mtgimage.com/card/unliving%20psychopath.jpg
-value=2.500
+image=http://magiccards.info/scans/en/di/56.jpg
+value=2.894
 rarity=R
 type=Creature
 subtype=Zombie,Assassin
@@ -9,4 +9,4 @@ pt=0/4
 ability={B}: SN gets +1/-1 until end of turn.;\
         {B}, {T}: Destroy target creature with power less than SN's power.
 timing=main
-oracle={B}: Unliving Psychopath gets +1/-1 until end of turn. {B}, {T}: Destroy target creature with power less than Unliving Psychopath's power.
+oracle={B}: Unliving Psychopath gets +1/-1 until end of turn.\n{B}, {T}: Destroy target creature with power less than Unliving Psychopath's power.

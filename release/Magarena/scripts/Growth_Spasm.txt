@@ -1,5 +1,5 @@
 name=Growth Spasm
-image=http://mtgimage.com/card/growth%20spasm.jpg
+image=http://magiccards.info/scans/en/roe/186.jpg
 value=4.033
 rarity=C
 type=Sorcery

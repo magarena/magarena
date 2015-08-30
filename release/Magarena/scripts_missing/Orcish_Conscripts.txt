@@ -1,6 +1,6 @@
 name=Orcish Conscripts
-image=http://mtgimage.com/card/orcish%20conscripts.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me2/140.jpg
+value=2.659
 rarity=C
 type=Creature
 subtype=Orc
@@ -9,4 +9,4 @@ pt=2/2
 ability=SN can't attack unless at least two other creatures attack.;\
         SN can't block unless at least two other creatures block.
 timing=main
-oracle=Orcish Conscripts can't attack unless at least two other creatures attack. Orcish Conscripts can't block unless at least two other creatures block.
+oracle=Orcish Conscripts can't attack unless at least two other creatures attack.\nOrcish Conscripts can't block unless at least two other creatures block.

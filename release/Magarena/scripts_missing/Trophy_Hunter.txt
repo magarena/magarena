@@ -1,6 +1,6 @@
 name=Trophy Hunter
-image=http://mtgimage.com/card/trophy%20hunter.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rav/187.jpg
+value=3.375
 rarity=U
 type=Creature
 subtype=Human,Archer
@@ -9,4 +9,4 @@ pt=2/3
 ability={1}{G}: SN deals 1 damage to target creature with flying.;\
         Whenever a creature with flying dealt damage by SN this turn dies, put a +1/+1 counter on SN.
 timing=main
-oracle={1}{G}: Trophy Hunter deals 1 damage to target creature with flying. Whenever a creature with flying dealt damage by Trophy Hunter this turn dies, put a +1/+1 counter on Trophy Hunter.
+oracle={1}{G}: Trophy Hunter deals 1 damage to target creature with flying.\nWhenever a creature with flying dealt damage by Trophy Hunter this turn dies, put a +1/+1 counter on Trophy Hunter.

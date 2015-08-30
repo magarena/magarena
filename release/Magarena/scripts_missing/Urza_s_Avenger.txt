@@ -1,11 +1,11 @@
 name=Urza's Avenger
-image=http://mtgimage.com/card/urza%27s%20avenger.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5e/405.jpg
+value=2.684
 rarity=R
 type=Artifact,Creature
 subtype=Shapeshifter
 cost={6}
 pt=4/4
 ability={0}: SN gets -1/-1 and gains your choice of banding, flying, first strike, or trample until end of turn.
-timing=main
+timing=artifact
 oracle={0}: Urza's Avenger gets -1/-1 and gains your choice of banding, flying, first strike, or trample until end of turn.

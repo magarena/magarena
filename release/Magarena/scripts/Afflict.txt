@@ -1,5 +1,5 @@
 name=Afflict
-image=http://mtgimage.com/card/afflict.jpg
+image=http://magiccards.info/scans/en/10e/125.jpg
 value=2.318
 removal=1
 rarity=C
@@ -7,4 +7,4 @@ type=Instant
 cost={2}{B}
 effect=Target creature gets -1/-1 until end of turn.~Draw a card.
 timing=removal
-oracle=Target creature gets -1/-1 until end of turn. Draw a card.
+oracle=Target creature gets -1/-1 until end of turn.\nDraw a card.

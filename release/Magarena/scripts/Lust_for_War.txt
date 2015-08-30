@@ -1,5 +1,5 @@
 name=Lust for War
-image=http://mtgimage.com/card/lust%20for%20war.jpg
+image=http://magiccards.info/scans/en/roe/157.jpg
 value=3.708
 rarity=U
 type=Enchantment
@@ -9,4 +9,4 @@ ability=Enchanted creature attacks each turn if able.
 timing=aura
 enchant=must attack,neg creature
 requires_groovy_code
-oracle=Enchant creature. Whenever enchanted creature becomes tapped, Lust for War deals 3 damage to that creature's controller. Enchanted creature attacks each turn if able.
+oracle=Enchant creature\nWhenever enchanted creature becomes tapped, Lust for War deals 3 damage to that creature's controller.\nEnchanted creature attacks each turn if able.

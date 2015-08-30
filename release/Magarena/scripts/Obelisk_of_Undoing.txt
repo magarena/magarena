@@ -1,5 +1,5 @@
 name=Obelisk of Undoing
-image=http://mtgimage.com/card/obelisk%20of%20undoing.jpg
+image=http://magiccards.info/scans/en/me4/217.jpg
 value=1.663
 rarity=R
 type=Artifact

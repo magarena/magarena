@@ -1,5 +1,5 @@
 name=Cloud Djinn
-image=http://mtgimage.com/card/cloud%20djinn.jpg
+image=http://magiccards.info/scans/en/vma/61.jpg
 value=2.500
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={5}{U}
 pt=5/4
 ability=flying;SN can block only creatures with flying.
 timing=main
-oracle=Flying. Cloud Djinn can block only creatures with flying.
+oracle=Flying\nCloud Djinn can block only creatures with flying.

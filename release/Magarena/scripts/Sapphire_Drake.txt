@@ -1,5 +1,5 @@
 name=Sapphire Drake
-image=http://mtgimage.com/card/sapphire%20drake.jpg
+image=http://magiccards.info/scans/en/gtc/47.jpg
 value=3.148
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying;\
         Each creature you control with a +1/+1 counter on it has flying.
 timing=main
-oracle=Flying. Each creature you control with a +1/+1 counter on it has flying.
+oracle=Flying\nEach creature you control with a +1/+1 counter on it has flying.

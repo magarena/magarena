@@ -1,5 +1,5 @@
 name=Spike Weaver
-image=http://mtgimage.com/card/spike%20weaver.jpg
+image=http://magiccards.info/scans/en/br/79.jpg
 value=4.298
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=SN enters the battlefield with three +1/+1 counters on it.;\
         {2}, Remove a +1/+1 counter from SN: Put a +1/+1 counter on target creature.;\
         {1}, Remove a +1/+1 counter from SN: Prevent all combat damage that would be dealt this turn.
 timing=main
-oracle=Spike Weaver enters the battlefield with three +1/+1 counters on it. {2}, Remove a +1/+1 counter from Spike Weaver: Put a +1/+1 counter on target creature. {1}, Remove a +1/+1 counter from Spike Weaver: Prevent all combat damage that would be dealt this turn.
+oracle=Spike Weaver enters the battlefield with three +1/+1 counters on it.\n{2}, Remove a +1/+1 counter from Spike Weaver: Put a +1/+1 counter on target creature.\n{1}, Remove a +1/+1 counter from Spike Weaver: Prevent all combat damage that would be dealt this turn.

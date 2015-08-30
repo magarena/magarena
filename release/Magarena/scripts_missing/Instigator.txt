@@ -1,6 +1,6 @@
 name=Instigator
-image=http://mtgimage.com/card/instigator.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/140.jpg
+value=2.455
 rarity=R
 type=Creature
 subtype=Human,Spellshaper

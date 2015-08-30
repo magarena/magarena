@@ -1,9 +1,9 @@
 name=Sphere of Resistance
-image=http://mtgimage.com/card/sphere%20of%20resistance.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vma/284.jpg
+value=4.500
 rarity=R
 type=Artifact
 cost={2}
 ability=Spells cost {1} more to cast.
-timing=main
+timing=artifact
 oracle=Spells cost {1} more to cast.

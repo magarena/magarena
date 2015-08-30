@@ -1,5 +1,5 @@
 name=Jolrael's Centaur
-image=http://mtgimage.com/card/jolrael%27s%20centaur.jpg
+image=http://magiccards.info/scans/en/mr/120.jpg
 value=4.170
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{G}{G}
 pt=2/2
 ability=flanking;shroud
 timing=main
-oracle=Shroud. Flanking
+oracle=Shroud\nFlanking

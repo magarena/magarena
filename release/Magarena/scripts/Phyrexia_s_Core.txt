@@ -1,9 +1,9 @@
 name=Phyrexia's Core
-image=http://mtgimage.com/card/phyrexia%27s%20core.jpg
+image=http://magiccards.info/scans/en/c14/306.jpg
 value=2.982
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\
         {1},{T},Sacrifice an artifact: You gain 1 life.
 timing=land
-oracle={T}: Add {1} to your mana pool. {1}, {T}, Sacrifice an artifact: You gain 1 life.
+oracle={T}: Add {1} to your mana pool.\n{1}, {T}, Sacrifice an artifact: You gain 1 life.

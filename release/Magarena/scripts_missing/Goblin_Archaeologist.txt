@@ -1,6 +1,6 @@
 name=Goblin Archaeologist
-image=http://mtgimage.com/card/goblin%20archaeologist.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ds/63.jpg
+value=2.983
 rarity=U
 type=Creature
 subtype=Goblin,Artificer

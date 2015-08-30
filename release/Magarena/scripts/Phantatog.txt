@@ -1,5 +1,5 @@
 name=Phantatog
-image=http://mtgimage.com/card/phantatog.jpg
+image=http://magiccards.info/scans/en/od/291.jpg
 value=3.288
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/2
 ability=Sacrifice an enchantment:SN gets +1/+1 until end of turn.;\
         Discard a card:SN gets +1/+1 until end of turn.
 timing=main
-oracle=Sacrifice an enchantment: Phantatog gets +1/+1 until end of turn. Discard a card: Phantatog gets +1/+1 until end of turn.
+oracle=Sacrifice an enchantment: Phantatog gets +1/+1 until end of turn.\nDiscard a card: Phantatog gets +1/+1 until end of turn.

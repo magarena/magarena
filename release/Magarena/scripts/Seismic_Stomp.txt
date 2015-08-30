@@ -1,9 +1,9 @@
 name=Seismic Stomp
-image=http://mtgimage.com/card/seismic%20stomp.jpg
+image=http://magiccards.info/scans/en/m14/152.jpg
 value=3.295
 rarity=C
 type=Sorcery
 cost={1}{R}
-effect=Creatures without flying gain "SN can't block." until end of turn.
+effect=Creatures without flying can't block this turn.
 timing=fmain
 oracle=Creatures without flying can't block this turn.

@@ -1,5 +1,5 @@
 name=Midnight Banshee
-image=http://mtgimage.com/card/midnight%20banshee.jpg
+image=http://magiccards.info/scans/en/shm/72.jpg
 value=3.948
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=5/5
 ability=wither;\
         At the beginning of your upkeep, put a -1/-1 counter on each nonblack creature.
 timing=smain
-oracle=Wither. At the beginning of your upkeep, put a -1/-1 counter on each nonblack creature.
+oracle=Wither\nAt the beginning of your upkeep, put a -1/-1 counter on each nonblack creature.

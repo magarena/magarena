@@ -1,6 +1,6 @@
 name=Pilgrim of Justice
-image=http://mtgimage.com/card/pilgrim%20of%20justice.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/40.jpg
+value=2.562
 rarity=C
 type=Creature
 subtype=Human,Cleric
@@ -9,4 +9,4 @@ pt=1/3
 ability=Protection from red;\
         {W}, Sacrifice SN: The next time a red source of your choice would deal damage this turn, prevent that damage.
 timing=main
-oracle=Protection from red. {W}, Sacrifice Pilgrim of Justice: The next time a red source of your choice would deal damage this turn, prevent that damage.
+oracle=Protection from red\n{W}, Sacrifice Pilgrim of Justice: The next time a red source of your choice would deal damage this turn, prevent that damage.

@@ -1,9 +1,9 @@
 name=Crevasse
-image=http://mtgimage.com/card/crevasse.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lg/138.jpg
+value=1.500
 rarity=U
 type=Enchantment
 cost={2}{R}
 ability=Creatures with mountainwalk can be blocked as though they didn't have mountainwalk.
-timing=main
+timing=enchantment
 oracle=Creatures with mountainwalk can be blocked as though they didn't have mountainwalk.

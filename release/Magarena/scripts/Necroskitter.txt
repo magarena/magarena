@@ -1,5 +1,5 @@
 name=Necroskitter
-image=http://mtgimage.com/card/necroskitter.jpg
+image=http://magiccards.info/scans/en/eve/38.jpg
 value=4.162
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=1/4
 ability=Wither
 timing=main
 requires_groovy_code
-oracle=Wither. Whenever a creature an opponent controls with a -1/-1 counter on it dies, you may return that card to the battlefield under your control.
+oracle=Wither\nWhenever a creature an opponent controls with a -1/-1 counter on it dies, you may return that card to the battlefield under your control.

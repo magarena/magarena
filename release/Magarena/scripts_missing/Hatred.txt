@@ -1,9 +1,9 @@
 name=Hatred
-image=http://mtgimage.com/card/hatred.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ex/64.jpg
+value=4.500
 rarity=R
 type=Instant
 cost={3}{B}{B}
 effect=As an additional cost to cast SN, pay X life.~Target creature gets +X/+0 until end of turn.
 timing=removal
-oracle=As an additional cost to cast Hatred, pay X life. Target creature gets +X/+0 until end of turn.
+oracle=As an additional cost to cast Hatred, pay X life.\nTarget creature gets +X/+0 until end of turn.

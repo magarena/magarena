@@ -1,5 +1,5 @@
 name=Lightning Helix
-image=http://mtgimage.com/card/lightning%20helix.jpg
+image=http://magiccards.info/scans/en/ddn/65.jpg
 value=4.000
 removal=3
 rarity=U

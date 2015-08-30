@@ -1,11 +1,11 @@
 name=Myr Moonvessel
-image=http://mtgimage.com/card/myr%20moonvessel.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ds/133.jpg
+value=3.577
 rarity=C
 type=Artifact,Creature
 subtype=Myr
 cost={1}
 pt=1/1
 ability=When SN dies, add {1} to your mana pool.
-timing=main
+timing=artifact
 oracle=When Myr Moonvessel dies, add {1} to your mana pool.

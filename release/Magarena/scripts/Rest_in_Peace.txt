@@ -1,9 +1,9 @@
 name=Rest in Peace
-image=http://mtgimage.com/card/rest%20in%20peace.jpg
+image=http://magiccards.info/scans/en/rtr/18.jpg
 value=4.118
 rarity=R
 type=Enchantment
 cost={1}{W}
 timing=enchantment
 requires_groovy_code
-oracle=When Rest in Peace enters the battlefield, exile all cards from all graveyards. If a card or token would be put into a graveyard from anywhere, exile it instead.
+oracle=When Rest in Peace enters the battlefield, exile all cards from all graveyards.\nIf a card or token would be put into a graveyard from anywhere, exile it instead.

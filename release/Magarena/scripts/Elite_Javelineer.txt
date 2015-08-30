@@ -1,5 +1,5 @@
 name=Elite Javelineer
-image=http://mtgimage.com/card/elite%20javelineer.jpg
+image=http://magiccards.info/scans/en/8e/19.jpg
 value=3.000
 rarity=U
 type=Creature

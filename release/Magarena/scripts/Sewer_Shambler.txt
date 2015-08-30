@@ -1,5 +1,5 @@
 name=Sewer Shambler
-image=http://mtgimage.com/card/sewer%20shambler.jpg
+image=http://magiccards.info/scans/en/rtr/75.jpg
 value=2.848
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=Swampwalk;\
         Scavenge {2}{B}
 timing=main
-oracle=Swampwalk. Scavenge {2}{B}
+oracle=Swampwalk\nScavenge {2}{B}

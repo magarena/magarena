@@ -1,5 +1,5 @@
 name=Griselbrand
-image=http://mtgimage.com/card/griselbrand.jpg
+image=http://magiccards.info/scans/en/avr/106.jpg
 value=4.311
 rarity=M
 type=Legendary,Creature
@@ -8,4 +8,4 @@ cost={4}{B}{B}{B}{B}
 pt=7/7
 timing=main
 ability=flying;lifelink;Pay 7 life: Draw seven cards.
-oracle=Flying, lifelink. Pay 7 life: Draw seven cards.
+oracle=Flying, lifelink\nPay 7 life: Draw seven cards.

@@ -1,0 +1,10 @@
+name=2/2 blue Djinn Monk creature token with flying
+token=Djinn
+image=http://magiccards.info/extras/token/dragons-of-tarkir/djinn-monk.jpg
+value=2
+pt=2/2
+color=u
+subtype=Djinn,Monk
+type=Creature
+ability=flying
+oracle=Flying

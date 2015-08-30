@@ -1,5 +1,5 @@
 name=Child of Night
-image=http://mtgimage.com/card/child%20of%20night.jpg
+image=http://magiccards.info/scans/en/m15/90.jpg
 value=2.400
 ability=lifelink
 rarity=C

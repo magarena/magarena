@@ -1,0 +1,13 @@
+name=Whispering Specter
+image=http://magiccards.info/scans/en/nph/77.jpg
+value=3.071
+rarity=U
+type=Creature
+subtype=Specter
+cost={1}{B}{B}
+pt=1/1
+ability=Flying;\
+        Infect
+timing=main
+requires_groovy_code
+oracle=Flying\nInfect\nWhenever Whispering Specter deals combat damage to a player, you may sacrifice it. If you do, that player discards a card for each poison counter he or she has.

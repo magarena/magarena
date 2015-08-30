@@ -1,9 +1,0 @@
-name=Tainted Æther
-image=http://mtgimage.com/card/tainted%20aether.jpg
-value=2.500
-rarity=R
-type=Enchantment
-cost={2}{B}{B}
-ability=Whenever a creature enters the battlefield, its controller sacrifices a creature or land.
-timing=main
-oracle=Whenever a creature enters the battlefield, its controller sacrifices a creature or land.

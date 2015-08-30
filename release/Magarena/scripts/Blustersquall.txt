@@ -1,5 +1,5 @@
 name=Blustersquall
-image=http://mtgimage.com/card/blustersquall.jpg
+image=http://magiccards.info/scans/en/rtr/30.jpg
 value=3.303
 rarity=U
 type=Instant
@@ -7,4 +7,4 @@ cost={U}
 effect=Tap target creature you don't control.
 timing=tapping
 requires_groovy_code
-oracle=Tap target creature you don't control. Overload {3}{U}
+oracle=Tap target creature you don't control.\nOverload {3}{U}

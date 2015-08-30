@@ -1,6 +1,6 @@
 name=Galvanoth
-image=http://mtgimage.com/card/galvanoth.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddj/10.jpg
+value=3.156
 rarity=R
 type=Creature
 subtype=Beast

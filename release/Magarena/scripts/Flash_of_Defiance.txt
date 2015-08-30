@@ -1,10 +1,10 @@
 name=Flash of Defiance
-image=http://mtgimage.com/card/flash%20of%20defiance.jpg
+image=http://magiccards.info/scans/en/tr/99.jpg
 value=1.796
 rarity=C
 type=Sorcery
 cost={1}{R}
 effect=Green creatures and white creatures can't block this turn.
-ability=Flashback {1}{R}, Pay 3 life.
+ability=Flashback—{1}{R}, Pay 3 life.
 timing=main
-oracle=Green creatures and white creatures can't block this turn. Flashback—{1}{R}, Pay 3 life.
+oracle=Green creatures and white creatures can't block this turn.\nFlashback—{1}{R}, Pay 3 life.

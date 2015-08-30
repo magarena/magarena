@@ -1,5 +1,5 @@
 name=Kami of the Tended Garden
-image=http://mtgimage.com/card/kami%20of%20the%20tended%20garden.jpg
+image=http://magiccards.info/scans/en/sok/134.jpg
 value=2.250
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=soulshift 3;\
         At the beginning of your upkeep, you may pay {G}. If you don't, sacrifice SN.
 timing=main
-oracle=At the beginning of your upkeep, sacrifice Kami of the Tended Garden unless you pay {G}. Soulshift 3
+oracle=At the beginning of your upkeep, sacrifice Kami of the Tended Garden unless you pay {G}.\nSoulshift 3

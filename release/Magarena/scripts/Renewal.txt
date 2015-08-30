@@ -1,5 +1,5 @@
 name=Renewal
-image=http://mtgimage.com/card/renewal.jpg
+image=http://magiccards.info/scans/en/hl/66.jpg
 value=2.882
 rarity=C
 type=Sorcery
@@ -7,4 +7,4 @@ cost={2}{G}
 ability=As an additional cost to cast SN, sacrifice a land.
 effect=Search your library for a basic land card and put that card onto the battlefield. Then shuffle your library.~Draw a card at the beginning of the next turn's upkeep.
 timing=main
-oracle=As an additional cost to cast Renewal, sacrifice a land. Search your library for a basic land card and put that card onto the battlefield. Then shuffle your library. Draw a card at the beginning of the next turn's upkeep.
+oracle=As an additional cost to cast Renewal, sacrifice a land.\nSearch your library for a basic land card and put that card onto the battlefield. Then shuffle your library.\nDraw a card at the beginning of the next turn's upkeep.

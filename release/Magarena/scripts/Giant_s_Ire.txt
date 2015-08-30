@@ -1,5 +1,5 @@
 name=Giant's Ire
-image=http://mtgimage.com/card/giant%27s%20ire.jpg
+image=http://magiccards.info/scans/en/lw/170.jpg
 value=2.648
 rarity=C
 type=Tribal,Sorcery

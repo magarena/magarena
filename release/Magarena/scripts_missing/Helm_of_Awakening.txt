@@ -1,9 +1,9 @@
 name=Helm of Awakening
-image=http://mtgimage.com/card/helm%20of%20awakening.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vi/145.jpg
+value=4.411
 rarity=U
 type=Artifact
 cost={2}
 ability=Spells cost {1} less to cast.
-timing=main
+timing=artifact
 oracle=Spells cost {1} less to cast.

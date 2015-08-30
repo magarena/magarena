@@ -1,6 +1,6 @@
 name=Global Ruin
-image=http://mtgimage.com/card/global%20ruin.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/18.jpg
+value=4.208
 rarity=R
 type=Sorcery
 cost={4}{W}

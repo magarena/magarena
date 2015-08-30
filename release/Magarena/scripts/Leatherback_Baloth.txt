@@ -1,5 +1,5 @@
 name=Leatherback Baloth
-image=http://mtgimage.com/card/leatherback%20baloth.jpg
+image=http://magiccards.info/scans/en/wwk/107.jpg
 value=4.319
 rarity=U
 type=Creature
@@ -7,3 +7,4 @@ subtype=Beast
 cost={G}{G}{G}
 pt=4/5
 timing=main
+oracle=NONE

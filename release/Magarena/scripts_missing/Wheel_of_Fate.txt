@@ -1,9 +1,9 @@
 name=Wheel of Fate
-image=http://mtgimage.com/card/wheel%20of%20fate.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ts/187.jpg
+value=3.652
 rarity=R
 type=Sorcery
 color=r
 effect=Suspend 4—{1}{R}~Each player discards his or her hand, then draws seven cards.
 timing=main
-oracle=Suspend 4—{1}{R}. Each player discards his or her hand, then draws seven cards.
+oracle=Suspend 4—{1}{R}\nEach player discards his or her hand, then draws seven cards.

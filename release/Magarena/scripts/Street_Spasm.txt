@@ -1,5 +1,5 @@
 name=Street Spasm
-image=http://mtgimage.com/card/street%20spasm.jpg
+image=http://magiccards.info/scans/en/c13/123.jpg
 value=3.250
 rarity=U
 type=Instant
@@ -7,4 +7,4 @@ cost={X}{R}
 timing=removal
 removal=1
 requires_groovy_code
-oracle=Street Spasm deals X damage to target creature without flying you don't control. Overload {X}{X}{R}{R}
+oracle=Street Spasm deals X damage to target creature without flying you don't control.\nOverload {X}{X}{R}{R}

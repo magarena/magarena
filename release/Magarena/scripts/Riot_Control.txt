@@ -1,0 +1,9 @@
+name=Riot Control
+image=http://magiccards.info/scans/en/dgm/6.jpg
+value=3.638
+rarity=C
+type=Instant
+cost={2}{W}
+timing=pump
+requires_groovy_code
+oracle=You gain 1 life for each creature your opponents control. Prevent all damage that would be dealt to you this turn.

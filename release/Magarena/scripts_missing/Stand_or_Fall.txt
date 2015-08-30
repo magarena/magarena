@@ -1,9 +1,9 @@
 name=Stand or Fall
-image=http://mtgimage.com/card/stand%20or%20fall.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/171.jpg
+value=3.250
 rarity=R
 type=Enchantment
 cost={3}{R}
 ability=At the beginning of combat on your turn, separate all creatures defending player controls into two piles. Only creatures in the pile of that player's choice can block this turn.
-timing=main
+timing=enchantment
 oracle=At the beginning of combat on your turn, separate all creatures defending player controls into two piles. Only creatures in the pile of that player's choice can block this turn.

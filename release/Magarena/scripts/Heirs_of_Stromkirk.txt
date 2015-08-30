@@ -1,5 +1,5 @@
 name=Heirs of Stromkirk
-image=http://mtgimage.com/card/heirs%20of%20stromkirk.jpg
+image=http://magiccards.info/scans/en/avr/140.jpg
 value=2.947
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=intimidate;\
         Whenever SN deals combat damage to a player, put a +1/+1 counter on SN.
 timing=main
-oracle=Intimidate. Whenever Heirs of Stromkirk deals combat damage to a player, put a +1/+1 counter on it.
+oracle=Intimidate\nWhenever Heirs of Stromkirk deals combat damage to a player, put a +1/+1 counter on it.

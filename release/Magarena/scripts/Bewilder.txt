@@ -1,9 +1,9 @@
 name=Bewilder
-image=http://mtgimage.com/card/bewilder.jpg
+image=http://magiccards.info/scans/en/ts/49.jpg
 value=1.288
 rarity=C
 type=Instant
 cost={2}{U}
 effect=Target creature gets -3/-0 until end of turn.~Draw a card.
 timing=removal
-oracle=Target creature gets -3/-0 until end of turn. Draw a card.
+oracle=Target creature gets -3/-0 until end of turn.\nDraw a card.

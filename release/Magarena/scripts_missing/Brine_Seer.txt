@@ -1,6 +1,6 @@
 name=Brine Seer
-image=http://mtgimage.com/card/brine%20seer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ud/28.jpg
+value=3.719
 rarity=U
 type=Creature
 subtype=Human,Wizard

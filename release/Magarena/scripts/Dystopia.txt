@@ -1,0 +1,9 @@
+name=Dystopia
+image=http://magiccards.info/scans/en/me2/88.jpg
+value=4.391
+rarity=R
+type=Enchantment
+cost={1}{B}{B}
+timing=enchantment
+requires_groovy_code=Gallowbraid;Dystopia
+oracle=Cumulative upkeep—Pay 1 life.\nAt the beginning of each player's upkeep, that player sacrifices a green or white permanent.

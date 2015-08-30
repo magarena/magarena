@@ -1,9 +1,9 @@
 name=Burning Earth
-image=http://mtgimage.com/card/burning%20earth.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m14/130.jpg
+value=3.393
 rarity=R
 type=Enchantment
 cost={3}{R}
 ability=Whenever a player taps a nonbasic land for mana, SN deals 1 damage to that player.
-timing=main
+timing=enchantment
 oracle=Whenever a player taps a nonbasic land for mana, Burning Earth deals 1 damage to that player.

@@ -1,6 +1,6 @@
 name=Giant Albatross
-image=http://mtgimage.com/card/giant%20albatross.jpg
-value=2.500
+image=http://magiccards.info/scans/en/hl/33.jpg
+value=2.750
 rarity=C
 type=Creature
 subtype=Bird
@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying;\
         When SN dies, you may pay {1}{U}. If you do, for each creature that dealt damage to SN this turn, destroy that creature unless its controller pays 2 life. A creature destroyed this way can't be regenerated.
 timing=main
-oracle=Flying. When Giant Albatross dies, you may pay {1}{U}. If you do, for each creature that dealt damage to Giant Albatross this turn, destroy that creature unless its controller pays 2 life. A creature destroyed this way can't be regenerated.
+oracle=Flying\nWhen Giant Albatross dies, you may pay {1}{U}. If you do, for each creature that dealt damage to Giant Albatross this turn, destroy that creature unless its controller pays 2 life. A creature destroyed this way can't be regenerated.

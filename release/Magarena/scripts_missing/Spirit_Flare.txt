@@ -1,9 +1,9 @@
 name=Spirit Flare
-image=http://mtgimage.com/card/spirit%20flare.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tr/15.jpg
+value=2.521
 rarity=C
 type=Instant
 cost={3}{W}
 effect=Tap target untapped creature you control. If you do, it deals damage equal to its power to target attacking or blocking creature an opponent controls.~Flashback—{1}{W}, Pay 3 life.
 timing=removal
-oracle=Tap target untapped creature you control. If you do, it deals damage equal to its power to target attacking or blocking creature an opponent controls. Flashback—{1}{W}, Pay 3 life.
+oracle=Tap target untapped creature you control. If you do, it deals damage equal to its power to target attacking or blocking creature an opponent controls.\nFlashback—{1}{W}, Pay 3 life.

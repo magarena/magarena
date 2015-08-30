@@ -1,5 +1,5 @@
 name=Xathrid Slyblade
-image=http://mtgimage.com/card/xathrid%20slyblade.jpg
+image=http://magiccards.info/scans/en/m15/124.jpg
 value=3.083
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=Hexproof;\
         {3}{B}: SN loses hexproof until end of turn.~SN gains first strike and deathtouch until end of turn.
 timing=main
-oracle=Hexproof. {3}{B}: Until end of turn, Xathrid Slyblade loses hexproof and gains first strike and deathtouch.
+oracle=Hexproof\n{3}{B}: Until end of turn, Xathrid Slyblade loses hexproof and gains first strike and deathtouch.

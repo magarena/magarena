@@ -1,9 +1,9 @@
 name=Krark's Thumb
-image=http://mtgimage.com/card/krark%27s%20thumb.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mi/190.jpg
+value=4.219
 rarity=R
 type=Legendary,Artifact
 cost={2}
 ability=If you would flip a coin, instead flip two coins and ignore one.
-timing=main
+timing=artifact
 oracle=If you would flip a coin, instead flip two coins and ignore one.

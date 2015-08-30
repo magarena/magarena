@@ -1,5 +1,5 @@
 name=Lady Caleria
-image=http://mtgimage.com/card/lady%20caleria.jpg
+image=http://magiccards.info/scans/en/me3/157.jpg
 value=2.843
 rarity=U
 type=Legendary,Creature

@@ -1,0 +1,12 @@
+name=Fathom Seer
+image=http://magiccards.info/scans/en/c14/109.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Illusion
+cost={1}{U}
+pt=1/3
+ability=Morph—Return two Islands you control to their owner's hand.;\
+        When SN is turned face up, draw two cards.
+timing=main
+oracle=Morph—Return two Islands you control to their owner's hand.\nWhen Fathom Seer is turned face up, draw two cards.

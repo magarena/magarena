@@ -1,0 +1,9 @@
+name=Day's Undoing
+image=http://magiccards.info/scans/en/ori/51.jpg
+value=2.500
+rarity=M
+type=Sorcery
+cost={2}{U}
+effect=Each player shuffles his or her hand and graveyard into his or her library, then draws seven cards. If it's your turn, end the turn.
+timing=main
+oracle=Each player shuffles his or her hand and graveyard into his or her library, then draws seven cards. If it's your turn, end the turn.

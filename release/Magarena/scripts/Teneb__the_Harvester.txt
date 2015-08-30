@@ -1,5 +1,5 @@
 name=Teneb, the Harvester
-image=http://mtgimage.com/card/teneb%2C%20the%20harvester.jpg
+image=http://magiccards.info/scans/en/cmd/230.jpg
 value=4.167
 rarity=R
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=6/6
 ability=flying;\
         Whenever SN deals combat damage to a player, you may pay {2}{B}. If you do, put target creature card from a graveyard onto the battlefield under your control.
 timing=main
-oracle=Flying. Whenever Teneb, the Harvester deals combat damage to a player, you may pay {2}{B}. If you do, put target creature card from a graveyard onto the battlefield under your control.
+oracle=Flying\nWhenever Teneb, the Harvester deals combat damage to a player, you may pay {2}{B}. If you do, put target creature card from a graveyard onto the battlefield under your control.

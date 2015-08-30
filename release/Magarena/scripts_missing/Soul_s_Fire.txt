@@ -1,6 +1,6 @@
 name=Soul's Fire
-image=http://mtgimage.com/card/soul%27s%20fire.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ala/115.jpg
+value=4.055
 rarity=C
 type=Instant
 cost={2}{R}

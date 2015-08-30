@@ -1,5 +1,5 @@
 name=Riot Gear
-image=http://mtgimage.com/card/riot%20gear.jpg
+image=http://magiccards.info/scans/en/gtc/236.jpg
 value=1.670
 rarity=C
 type=Artifact
@@ -8,4 +8,4 @@ cost={2}
 ability=Equipped creature gets +1/+2.;\
         Equip {2}
 timing=equipment
-oracle=Equipped creature gets +1/+2. Equip {2}
+oracle=Equipped creature gets +1/+2.\nEquip {2}

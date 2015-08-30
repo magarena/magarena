@@ -1,10 +1,10 @@
 name=Helm of Possession
-image=http://mtgimage.com/card/helm%20of%20possession.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tp/281.jpg
+value=4.145
 rarity=R
 type=Artifact
 cost={4}
 ability=You may choose not to untap SN during your untap step.;\
         {2}, {T}, Sacrifice a creature: Gain control of target creature for as long as you control SN and SN remains tapped.
-timing=main
-oracle=You may choose not to untap Helm of Possession during your untap step. {2}, {T}, Sacrifice a creature: Gain control of target creature for as long as you control Helm of Possession and Helm of Possession remains tapped.
+timing=artifact
+oracle=You may choose not to untap Helm of Possession during your untap step.\n{2}, {T}, Sacrifice a creature: Gain control of target creature for as long as you control Helm of Possession and Helm of Possession remains tapped.

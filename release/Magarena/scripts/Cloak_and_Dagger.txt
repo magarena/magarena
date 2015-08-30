@@ -1,5 +1,5 @@
 name=Cloak and Dagger
-image=http://mtgimage.com/card/cloak%20and%20dagger.jpg
+image=http://magiccards.info/scans/en/mt/141.jpg
 value=3.526
 rarity=U
 type=Tribal,Artifact
@@ -9,4 +9,4 @@ ability=Equipped creature gets +2/+0 and has shroud.;\
         Equip {3}
 timing=equipment
 requires_groovy_code
-oracle=Equipped creature gets +2/+0 and has shroud. Whenever a Rogue creature enters the battlefield, you may attach Cloak and Dagger to it. Equip {3}
+oracle=Equipped creature gets +2/+0 and has shroud.\nWhenever a Rogue creature enters the battlefield, you may attach Cloak and Dagger to it.\nEquip {3}

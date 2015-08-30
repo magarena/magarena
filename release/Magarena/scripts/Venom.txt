@@ -1,5 +1,5 @@
 name=Venom
-image=http://mtgimage.com/card/venom.jpg
+image=http://magiccards.info/scans/en/5e/198.jpg
 value=3.786
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={1}{G}{G}
 timing=aura
 enchant=pump,pos creature
 requires_groovy_code
-oracle=Enchant creature. Whenever enchanted creature blocks or becomes blocked by a non-Wall creature, destroy the other creature at end of combat.
+oracle=Enchant creature\nWhenever enchanted creature blocks or becomes blocked by a non-Wall creature, destroy the other creature at end of combat.

@@ -1,5 +1,5 @@
 name=Utvara Scalper
-image=http://mtgimage.com/card/utvara%20scalper.jpg
+image=http://magiccards.info/scans/en/di/76.jpg
 value=2.171
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{R}
 pt=1/2
 ability=flying;SN attacks each turn if able.
 timing=main
-oracle=Flying. Utvara Scalper attacks each turn if able.
+oracle=Flying\nUtvara Scalper attacks each turn if able.

@@ -9,7 +9,7 @@
             return [
                 new MagicSacrificePermanentEvent(
                     source,
-                    MagicTargetChoice.SACRIFICE_CREATURE
+                    SACRIFICE_CREATURE
                 )
             ];
         }
@@ -28,11 +28,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicGainAbilityAction(
+            game.doAction(new GainAbilityAction(
                 event.getPermanent(),
                 MagicAbility.Indestructible
             ));
-            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,event.getRefInt()));
+            game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,event.getRefInt()));
         }
     }
 ]

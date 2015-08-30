@@ -1,11 +1,11 @@
 name=Demon's Herald
-image=http://mtgimage.com/card/demon%27s%20herald.jpg
+image=http://magiccards.info/scans/en/ala/72.jpg
 value=1.848
 rarity=U
 type=Creature
 subtype=Human,Wizard
 cost={B}
 pt=1/1
-ability={2}{B}, {T}, Sacrifice a blue creature, Sacrifice a black creature, Sacrifice a red creature: Search your library for a card named Prince of Thralls and put it onto the battlefield. Then shuffle your library.
+ability={2}{B}, {T}, Sacrifice a blue creature, a black creature, and a red creature: Search your library for a card named Prince of Thralls and put it onto the battlefield. Then shuffle your library.
 timing=main
 oracle={2}{B}, {T}, Sacrifice a blue creature, a black creature, and a red creature: Search your library for a card named Prince of Thralls and put it onto the battlefield. Then shuffle your library.

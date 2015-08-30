@@ -1,9 +1,9 @@
 name=Lurking Jackals
-image=http://mtgimage.com/card/lurking%20jackals.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ud/62.jpg
+value=3.620
 rarity=U
 type=Enchantment
 cost={B}
 ability=When an opponent has 10 or less life, if SN is an enchantment, it becomes a 3/2 Hound creature.
-timing=main
+timing=enchantment
 oracle=When an opponent has 10 or less life, if Lurking Jackals is an enchantment, it becomes a 3/2 Hound creature.

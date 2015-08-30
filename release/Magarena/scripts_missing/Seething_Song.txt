@@ -1,6 +1,6 @@
 name=Seething Song
-image=http://mtgimage.com/card/seething%20song.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddg/70.jpg
+value=4.473
 rarity=C
 type=Instant
 cost={2}{R}

@@ -7,7 +7,7 @@ def DelayedTrigger = {
         }
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
-            game.addDelayedAction(new MagicRemoveTriggerAction(this));
+            game.addDelayedAction(new RemoveTriggerAction(this));
             
             final MagicCard mappedCard = staleCard.getOwner().map(game).getExile().getCard(staleCard.getId());
             
@@ -21,17 +21,12 @@ def DelayedTrigger = {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicCard card = event.getCard();
-            if (card.isInExile()) {
-                game.doAction(new MagicRemoveCardAction(
-                    card,
-                    MagicLocationType.Exile
-                ));
-                game.doAction(new MagicPlayCardAction(
-                    card,
-                    [MagicPlayMod.HASTE]
-                ));
-            }
+            game.doAction(new ReturnCardAction(
+                MagicLocationType.Exile,
+                event.getCard(),
+                event.getPlayer(),
+                [MagicPlayMod.HASTE]
+            ));
         }
     };
 }
@@ -53,11 +48,11 @@ def DelayedTrigger = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicRemoveFromPlayAction(
+                game.doAction(new RemoveFromPlayAction(
                     event.getPermanent(),
                     MagicLocationType.Exile
                 ));
-                game.doAction(new MagicAddTriggerAction(DelayedTrigger(
+                game.doAction(new AddTriggerAction(DelayedTrigger(
                     event.getPermanent().getCard(),
                     event.getPlayer()
                 )));

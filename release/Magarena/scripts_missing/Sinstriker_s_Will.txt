@@ -1,11 +1,11 @@
 name=Sinstriker's Will
-image=http://mtgimage.com/card/sinstriker%27s%20will.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gp/16.jpg
+value=2.902
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={3}{W}
 ability=Enchant creature;\
         Enchanted creature has "{T}: This creature deals damage equal to its power to target attacking or blocking creature."
-timing=main
-oracle=Enchant creature. Enchanted creature has "{T}: This creature deals damage equal to its power to target attacking or blocking creature."
+timing=aura
+oracle=Enchant creature\nEnchanted creature has "{T}: This creature deals damage equal to its power to target attacking or blocking creature."

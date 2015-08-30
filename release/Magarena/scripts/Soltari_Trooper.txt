@@ -1,5 +1,5 @@
 name=Soltari Trooper
-image=http://mtgimage.com/card/soltari%20trooper.jpg
+image=http://magiccards.info/scans/en/vma/47.jpg
 value=3.871
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=shadow;\
         Whenever SN attacks, SN gets +1/+1 until end of turn.
 timing=main
-oracle=Shadow. Whenever Soltari Trooper attacks, it gets +1/+1 until end of turn.
+oracle=Shadow\nWhenever Soltari Trooper attacks, it gets +1/+1 until end of turn.

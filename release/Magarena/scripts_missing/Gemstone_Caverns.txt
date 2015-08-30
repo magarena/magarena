@@ -1,9 +1,9 @@
 name=Gemstone Caverns
-image=http://mtgimage.com/card/gemstone%20caverns.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ts/274.jpg
+value=4.029
 rarity=R
 type=Legendary,Land
 ability=If SN is in your opening hand and you're not playing first, you may begin the game with SN on the battlefield with a luck counter on it. If you do, exile a card from your hand.;\
         {T}: Add {1} to your mana pool. If SN has a luck counter on it, instead add one mana of any color to your mana pool.
-timing=main
-oracle=If Gemstone Caverns is in your opening hand and you're not playing first, you may begin the game with Gemstone Caverns on the battlefield with a luck counter on it. If you do, exile a card from your hand. {T}: Add {1} to your mana pool. If Gemstone Caverns has a luck counter on it, instead add one mana of any color to your mana pool.
+timing=land
+oracle=If Gemstone Caverns is in your opening hand and you're not playing first, you may begin the game with Gemstone Caverns on the battlefield with a luck counter on it. If you do, exile a card from your hand.\n{T}: Add {1} to your mana pool. If Gemstone Caverns has a luck counter on it, instead add one mana of any color to your mana pool.

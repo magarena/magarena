@@ -1,5 +1,5 @@
 name=Drumhunter
-image=http://mtgimage.com/card/drumhunter.jpg
+image=http://magiccards.info/scans/en/c13/142.jpg
 value=3.800
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=At the beginning of your end step, if you control a creature with power 5 or greater, you may draw a card.;\
         {T}: Add {1} to your mana pool.
 timing=main
-oracle=At the beginning of your end step, if you control a creature with power 5 or greater, you may draw a card. {T}: Add {1} to your mana pool.
+oracle=At the beginning of your end step, if you control a creature with power 5 or greater, you may draw a card.\n{T}: Add {1} to your mana pool.

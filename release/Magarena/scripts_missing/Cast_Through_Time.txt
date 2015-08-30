@@ -1,9 +1,9 @@
 name=Cast Through Time
-image=http://mtgimage.com/card/cast%20through%20time.jpg
-value=2.500
+image=http://magiccards.info/scans/en/roe/55.jpg
+value=3.673
 rarity=M
 type=Enchantment
 cost={4}{U}{U}{U}
 ability=Instant and sorcery spells you control have rebound.
-timing=main
+timing=enchantment
 oracle=Instant and sorcery spells you control have rebound.

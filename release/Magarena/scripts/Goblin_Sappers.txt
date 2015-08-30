@@ -1,0 +1,11 @@
+name=Goblin Sappers
+image=http://magiccards.info/scans/en/ia/189.jpg
+value=1.983
+rarity=C
+type=Creature
+subtype=Goblin
+cost={1}{R}
+pt=1/1
+timing=main
+requires_groovy_code
+oracle={R}{R}, {T}: Target creature you control can't be blocked this turn. Destroy it and Goblin Sappers at end of combat.\n{R}{R}{R}{R}, {T}: Target creature you control can't be blocked this turn. Destroy it at end of combat.

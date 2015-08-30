@@ -1,5 +1,5 @@
 name=Earth Rift
-image=http://mtgimage.com/card/earth%20rift.jpg
+image=http://magiccards.info/scans/en/od/189.jpg
 value=1.987
 rarity=C
 type=Sorcery
@@ -7,4 +7,4 @@ cost={3}{R}
 effect=Destroy target land.
 ability=Flashback {5}{R}{R}
 timing=main
-oracle=Destroy target land. Flashback {5}{R}{R}
+oracle=Destroy target land.\nFlashback {5}{R}{R}

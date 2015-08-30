@@ -1,9 +1,9 @@
 name=Remote Farm
-image=http://mtgimage.com/card/remote%20farm.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/323.jpg
+value=3.574
 rarity=C
 type=Land
 ability=SN enters the battlefield tapped with two depletion counters on it.;\
         {T}, Remove a depletion counter from SN: Add {W}{W} to your mana pool. If there are no depletion counters on SN, sacrifice it.
-timing=main
-oracle=Remote Farm enters the battlefield tapped with two depletion counters on it. {T}, Remove a depletion counter from Remote Farm: Add {W}{W} to your mana pool. If there are no depletion counters on Remote Farm, sacrifice it.
+timing=land
+oracle=Remote Farm enters the battlefield tapped with two depletion counters on it.\n{T}, Remove a depletion counter from Remote Farm: Add {W}{W} to your mana pool. If there are no depletion counters on Remote Farm, sacrifice it.

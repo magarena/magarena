@@ -1,9 +1,0 @@
-name=Bant Charm
-image=http://mtgimage.com/card/bant%20charm.jpg
-value=2.500
-rarity=U
-type=Instant
-cost={G}{W}{U}
-effect=Choose one — • Destroy target artifact. • Put target creature on the bottom of its owner's library. • Counter target instant spell.
-timing=removal
-oracle=Choose one — • Destroy target artifact. • Put target creature on the bottom of its owner's library. • Counter target instant spell.

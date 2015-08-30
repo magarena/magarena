@@ -1,0 +1,11 @@
+name=Sultai Soothsayer
+image=http://magiccards.info/scans/en/ktk/205.jpg
+value=3.833
+rarity=U
+type=Creature
+subtype=Naga,Shaman
+cost={2}{B}{G}{U}
+pt=2/5
+timing=main
+requires_groovy_code
+oracle=When Sultai Soothsayer enters the battlefield, look at the top four cards of your library. Put one of them into your hand and the rest into your graveyard.

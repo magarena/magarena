@@ -1,9 +1,0 @@
-name=Selesnya Charm
-image=http://mtgimage.com/card/selesnya%20charm.jpg
-value=2.500
-rarity=U
-type=Instant
-cost={G}{W}
-effect=Choose one — • Target creature gets +2/+2 and gains trample until end of turn. • Exile target creature with power 5 or greater. • Put a 2/2 white Knight creature token with vigilance onto the battlefield.
-timing=removal
-oracle=Choose one — • Target creature gets +2/+2 and gains trample until end of turn. • Exile target creature with power 5 or greater. • Put a 2/2 white Knight creature token with vigilance onto the battlefield.

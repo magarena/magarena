@@ -1,10 +1,10 @@
 name=Shared Triumph
-image=http://mtgimage.com/card/shared%20triumph.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/53.jpg
+value=4.280
 rarity=R
 type=Enchantment
 cost={1}{W}
 ability=As SN enters the battlefield, choose a creature type.;\
         Creatures of the chosen type get +1/+1.
-timing=main
-oracle=As Shared Triumph enters the battlefield, choose a creature type. Creatures of the chosen type get +1/+1.
+timing=enchantment
+oracle=As Shared Triumph enters the battlefield, choose a creature type.\nCreatures of the chosen type get +1/+1.

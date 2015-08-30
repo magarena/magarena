@@ -1,5 +1,5 @@
 name=Timid Drake
-image=http://mtgimage.com/card/timid%20drake.jpg
+image=http://magiccards.info/scans/en/mm/111.jpg
 value=2.112
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=Flying;\
         When another creature enters the battlefield, return SN to its owner's hand.
 timing=main
-oracle=Flying. When another creature enters the battlefield, return Timid Drake to its owner's hand.
+oracle=Flying\nWhen another creature enters the battlefield, return Timid Drake to its owner's hand.

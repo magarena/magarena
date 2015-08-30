@@ -1,6 +1,6 @@
 name=Chasm Skulker
-image=http://mtgimage.com/card/chasm%20skulker.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/46.jpg
+value=4.000
 rarity=R
 type=Creature
 subtype=Squid,Horror
@@ -9,4 +9,4 @@ pt=1/1
 ability=Whenever you draw a card, put a +1/+1 counter on SN.;\
         When SN dies, put X 1/1 blue Squid creature tokens with islandwalk onto the battlefield, where X is the number of +1/+1 counters on SN.
 timing=main
-oracle=Whenever you draw a card, put a +1/+1 counter on Chasm Skulker. When Chasm Skulker dies, put X 1/1 blue Squid creature tokens with islandwalk onto the battlefield, where X is the number of +1/+1 counters on Chasm Skulker.
+oracle=Whenever you draw a card, put a +1/+1 counter on Chasm Skulker.\nWhen Chasm Skulker dies, put X 1/1 blue Squid creature tokens with islandwalk onto the battlefield, where X is the number of +1/+1 counters on Chasm Skulker.

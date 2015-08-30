@@ -1,9 +1,9 @@
 name=Slay
-image=http://mtgimage.com/card/slay.jpg
+image=http://magiccards.info/scans/en/pvc/25.jpg
 value=3.350
 rarity=U
 type=Instant
 cost={2}{B}
 effect=Destroy target green creature. It can't be regenerated.~Draw a card.
 timing=removal
-oracle=Destroy target green creature. It can't be regenerated. Draw a card.
+oracle=Destroy target green creature. It can't be regenerated.\nDraw a card.

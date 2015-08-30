@@ -1,5 +1,5 @@
 name=Soratami Savant
-image=http://mtgimage.com/card/soratami%20savant.jpg
+image=http://magiccards.info/scans/en/chk/90.jpg
 value=3.050
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{U}{U}
 pt=2/2
 ability=flying;{3},Return a land you control to its owner's hand:Counter target spell unless its controller pays {3}.
 timing=main
-oracle=Flying. {3}, Return a land you control to its owner's hand: Counter target spell unless its controller pays {3}.
+oracle=Flying\n{3}, Return a land you control to its owner's hand: Counter target spell unless its controller pays {3}.

@@ -1,9 +1,9 @@
 name=Squandered Resources
-image=http://mtgimage.com/card/squandered%20resources.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vi/137.jpg
+value=4.276
 rarity=R
 type=Enchantment
 cost={B}{G}
 ability=Sacrifice a land: Add to your mana pool one mana of any type the sacrificed land could produce.
-timing=main
+timing=enchantment
 oracle=Sacrifice a land: Add to your mana pool one mana of any type the sacrificed land could produce.

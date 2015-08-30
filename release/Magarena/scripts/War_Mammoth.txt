@@ -1,5 +1,5 @@
 name=War Mammoth
-image=http://mtgimage.com/card/war%20mammoth.jpg
+image=http://magiccards.info/scans/en/me4/172.jpg
 value=3.370
 rarity=C
 type=Creature

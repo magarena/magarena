@@ -1,9 +1,9 @@
 name=Krovikan Rot
-image=http://mtgimage.com/card/krovikan%20rot.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cs/63.jpg
+value=2.941
 rarity=U
 type=Instant
 cost={2}{B}
 effect=Destroy target creature with power 2 or less.~Recover {1}{B}{B}
 timing=removal
-oracle=Destroy target creature with power 2 or less. Recover {1}{B}{B}
+oracle=Destroy target creature with power 2 or less.\nRecover {1}{B}{B}

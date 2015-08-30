@@ -1,10 +1,10 @@
 name=Shivan Reef
-image=http://mtgimage.com/card/shivan%20reef.jpg
-value=3.950
+image=http://magiccards.info/scans/en/ori/251.jpg
+value=2.500
 rarity=R
 type=Land
 mana=u2r2
 ability={T}: Add {1} to your mana pool.;\
         {T}: Add {U} or {R} to your mana pool. SN deals 1 damage to you.
 timing=land
-oracle={T}: Add {1} to your mana pool. {T}: Add {U} or {R} to your mana pool. Shivan Reef deals 1 damage to you.
+oracle={T}: Add {1} to your mana pool.\n{T}: Add {U} or {R} to your mana pool. Shivan Reef deals 1 damage to you.

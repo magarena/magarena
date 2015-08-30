@@ -1,6 +1,6 @@
 name=Palinchron
-image=http://mtgimage.com/card/palinchron.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vma/86.jpg
+value=4.500
 rarity=R
 type=Creature
 subtype=Illusion
@@ -10,4 +10,4 @@ ability=Flying;\
         When SN enters the battlefield, untap up to seven lands.;\
         {2}{U}{U}: Return SN to its owner's hand.
 timing=main
-oracle=Flying. When Palinchron enters the battlefield, untap up to seven lands. {2}{U}{U}: Return Palinchron to its owner's hand.
+oracle=Flying\nWhen Palinchron enters the battlefield, untap up to seven lands.\n{2}{U}{U}: Return Palinchron to its owner's hand.

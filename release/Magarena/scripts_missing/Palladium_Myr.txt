@@ -1,5 +1,5 @@
 name=Palladium Myr
-image=http://mtgimage.com/card/palladium%20myr.jpg
+image=http://magiccards.info/scans/en/c14/258.jpg
 value=2.500
 rarity=U
 type=Artifact,Creature
@@ -7,5 +7,5 @@ subtype=Myr
 cost={3}
 pt=2/2
 ability={T}: Add {2} to your mana pool.
-timing=main
+timing=artifact
 oracle={T}: Add {2} to your mana pool.

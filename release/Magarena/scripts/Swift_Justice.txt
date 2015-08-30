@@ -1,5 +1,5 @@
 name=Swift Justice
-image=http://mtgimage.com/card/swift%20justice.jpg
+image=http://magiccards.info/scans/en/ddn/62.jpg
 value=4.000
 rarity=C
 type=Instant

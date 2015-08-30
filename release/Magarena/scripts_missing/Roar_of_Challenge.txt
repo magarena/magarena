@@ -1,9 +1,9 @@
 name=Roar of Challenge
-image=http://mtgimage.com/card/roar%20of%20challenge.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/145.jpg
+value=2.833
 rarity=U
 type=Sorcery
 cost={2}{G}
 effect=All creatures able to block target creature this turn do so.~That creature gains indestructible until end of turn if you control a creature with power 4 or greater.
 timing=main
-oracle=All creatures able to block target creature this turn do so. Ferocious — That creature gains indestructible until end of turn if you control a creature with power 4 or greater.
+oracle=All creatures able to block target creature this turn do so.\nFerocious — That creature gains indestructible until end of turn if you control a creature with power 4 or greater.

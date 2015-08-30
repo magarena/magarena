@@ -1,6 +1,6 @@
 name=Iname, Death Aspect
-image=http://mtgimage.com/card/iname%2C%20death%20aspect.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/118.jpg
+value=3.789
 rarity=R
 type=Legendary,Creature
 subtype=Spirit

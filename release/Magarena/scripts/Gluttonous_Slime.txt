@@ -1,5 +1,5 @@
 name=Gluttonous Slime
-image=http://mtgimage.com/card/gluttonous%20slime.jpg
+image=http://magiccards.info/scans/en/pc2/65.jpg
 value=2.833
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{G}
 pt=2/2
 ability=flash;devour 1
 timing=flash
-oracle=Flash. Devour 1
+oracle=Flash\nDevour 1

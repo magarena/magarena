@@ -1,5 +1,5 @@
 name=Vodalian Knights
-image=http://mtgimage.com/card/vodalian%20knights.jpg
+image=http://magiccards.info/scans/en/med/55.jpg
 value=2.735
 rarity=R
 type=Creature
@@ -8,7 +8,7 @@ cost={1}{U}{U}
 pt=2/2
 ability=First strike;\
         SN can't attack unless defending player controls an Island.;\
+        When you control no Islands, sacrifice SN.;\
         {U}: SN gains flying until end of turn.
 timing=main
-requires_groovy_code=Sea Serpent
-oracle=First strike. Vodalian Knights can't attack unless defending player controls an Island. When you control no Islands, sacrifice Vodalian Knights. {U}: Vodalian Knights gains flying until end of turn.
+oracle=First strike\nVodalian Knights can't attack unless defending player controls an Island.\nWhen you control no Islands, sacrifice Vodalian Knights.\n{U}: Vodalian Knights gains flying until end of turn.

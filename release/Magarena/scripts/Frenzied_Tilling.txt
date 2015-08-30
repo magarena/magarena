@@ -1,10 +1,10 @@
 name=Frenzied Tilling
-image=http://mtgimage.com/card/frenzied%20tilling.jpg
+image=http://magiccards.info/scans/en/gtc/166.jpg
 value=3.302
 removal=3
 rarity=U
 type=Sorcery
 cost={3}{R}{G}
+effect=Destroy target land.~Search your library for a basic land card and put that card onto the battlefield tapped. Then shuffle your library.
 timing=removal
-requires_groovy_code
 oracle=Destroy target land. Search your library for a basic land card and put that card onto the battlefield tapped. Then shuffle your library.

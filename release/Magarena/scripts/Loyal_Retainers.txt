@@ -1,5 +1,5 @@
 name=Loyal Retainers
-image=http://mtgimage.com/card/loyal%20retainers.jpg
+image=http://magiccards.info/scans/en/cma/10.jpg
 value=4.538
 rarity=U
 type=Creature

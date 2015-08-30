@@ -1,5 +1,5 @@
 name=Accorder's Shield
-image=http://mtgimage.com/card/accorder%27s%20shield.jpg
+image=http://magiccards.info/scans/en/m14/204.jpg
 value=3.375
 rarity=C
 type=Artifact
@@ -8,4 +8,4 @@ cost={0}
 ability=Equipped creature gets +0/+3 and has vigilance.;\
         Equip {3}
 timing=equipment
-oracle=Equipped creature gets +0/+3 and has vigilance. Equip {3}
+oracle=Equipped creature gets +0/+3 and has vigilance.\nEquip {3}

@@ -1,5 +1,5 @@
 name=Guile
-image=http://mtgimage.com/card/guile.jpg
+image=http://magiccards.info/scans/en/jvc/14.jpg
 value=2.500
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=SN can't be blocked except by three or more creatures.;\
         If a spell or ability you control would counter a spell, instead exile that spell and you may play that card without paying its mana cost.;\
         When SN is put into a graveyard from anywhere, shuffle it into its owner's library.
 timing=main
-oracle=Guile can't be blocked except by three or more creatures. If a spell or ability you control would counter a spell, instead exile that spell and you may play that card without paying its mana cost. When Guile is put into a graveyard from anywhere, shuffle it into its owner's library.
+oracle=Guile can't be blocked except by three or more creatures.\nIf a spell or ability you control would counter a spell, instead exile that spell and you may play that card without paying its mana cost.\nWhen Guile is put into a graveyard from anywhere, shuffle it into its owner's library.

@@ -1,5 +1,5 @@
 name=Combat Medic
-image=http://mtgimage.com/card/combat%20medic.jpg
+image=http://magiccards.info/scans/en/me2/9.jpg
 value=2.533
 rarity=C
 type=Creature

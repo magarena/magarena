@@ -1,5 +1,5 @@
 name=Greenside Watcher
-image=http://mtgimage.com/card/greenside%20watcher.jpg
+image=http://magiccards.info/scans/en/gtc/122.jpg
 value=2.500
 rarity=C
 type=Creature

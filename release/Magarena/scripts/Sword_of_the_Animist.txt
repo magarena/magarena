@@ -1,0 +1,12 @@
+name=Sword of the Animist
+image=http://magiccards.info/scans/en/ori/240.jpg
+value=2.500
+rarity=R
+type=Legendary,Artifact
+subtype=Equipment
+cost={2}
+ability=Equipped creature gets +1/+1.;\
+        Whenever equipped creature attacks, you may search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library.;\
+        Equip {2}
+timing=equipment
+oracle=Equipped creature gets +1/+1.\nWhenever equipped creature attacks, you may search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library.\nEquip {2}

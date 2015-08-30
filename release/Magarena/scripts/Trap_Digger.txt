@@ -1,5 +1,5 @@
 name=Trap Digger
-image=http://mtgimage.com/card/trap%20digger.jpg
+image=http://magiccards.info/scans/en/sc/24.jpg
 value=1.219
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=1/3
 ability={2}{W},{T}:Put a trap counter on target land you control.;\
         Sacrifice a land with a trap counter on it: SN deals 3 damage to target attacking creature without flying.
 timing=main
-oracle={2}{W}, {T}: Put a trap counter on target land you control. Sacrifice a land with a trap counter on it: Trap Digger deals 3 damage to target attacking creature without flying.
+oracle={2}{W}, {T}: Put a trap counter on target land you control.\nSacrifice a land with a trap counter on it: Trap Digger deals 3 damage to target attacking creature without flying.

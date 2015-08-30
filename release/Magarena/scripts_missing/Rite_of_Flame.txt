@@ -1,6 +1,6 @@
 name=Rite of Flame
-image=http://mtgimage.com/card/rite%20of%20flame.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cs/96.jpg
+value=4.471
 rarity=C
 type=Sorcery
 cost={R}

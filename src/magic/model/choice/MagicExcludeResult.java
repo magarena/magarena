@@ -4,7 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicMappable;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
-import magic.model.action.MagicChangeStateAction;
+import magic.model.action.ChangeStateAction;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -41,11 +41,11 @@ public class MagicExcludeResult implements MagicMappable<MagicExcludeResult> {
             final MagicPermanent permanent=excludePermanents.get(index);
             final boolean excludeFromCombat=(excludeFlags&flag)==0;
             if (excludeFromCombat) {
-                game.doAction(MagicChangeStateAction.Set(permanent,MagicPermanentState.ExcludeFromCombat));
-                game.doAction(MagicChangeStateAction.Clear(permanent,MagicPermanentState.ExcludeManaSource));
+                game.doAction(ChangeStateAction.Set(permanent,MagicPermanentState.ExcludeFromCombat));
+                game.doAction(ChangeStateAction.Clear(permanent,MagicPermanentState.ExcludeManaSource));
             } else {
-                game.doAction(MagicChangeStateAction.Clear(permanent,MagicPermanentState.ExcludeFromCombat));
-                game.doAction(MagicChangeStateAction.Set(permanent,MagicPermanentState.ExcludeManaSource));
+                game.doAction(ChangeStateAction.Clear(permanent,MagicPermanentState.ExcludeFromCombat));
+                game.doAction(ChangeStateAction.Set(permanent,MagicPermanentState.ExcludeManaSource));
             }
         }
     }

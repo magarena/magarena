@@ -1,5 +1,5 @@
 name=Deluge
-image=http://mtgimage.com/card/deluge.jpg
+image=http://magiccards.info/scans/en/10e/79.jpg
 value=3.868
 removal=1
 rarity=U

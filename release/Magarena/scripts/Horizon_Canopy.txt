@@ -1,5 +1,5 @@
 name=Horizon Canopy
-image=http://mtgimage.com/card/horizon%20canopy.jpg
+image=http://magiccards.info/scans/en/fut/177.jpg
 value=4.226
 rarity=R
 mana=w2g2
@@ -7,4 +7,4 @@ type=Land
 ability={T}, Pay 1 life: Add {G} or {W} to your mana pool.;\
         {1}, {T}, Sacrifice SN: Draw a card.
 timing=land
-oracle={T}, Pay 1 life: Add {G} or {W} to your mana pool. {1}, {T}, Sacrifice Horizon Canopy: Draw a card.
+oracle={T}, Pay 1 life: Add {G} or {W} to your mana pool.\n{1}, {T}, Sacrifice Horizon Canopy: Draw a card.

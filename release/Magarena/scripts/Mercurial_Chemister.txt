@@ -1,0 +1,12 @@
+name=Mercurial Chemister
+image=http://magiccards.info/scans/en/rtr/180.jpg
+value=3.968
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={3}{U}{R}
+pt=2/3
+ability={U}, {T}: Draw two cards.
+timing=main
+requires_groovy_code
+oracle={U}, {T}: Draw two cards.\n{R}, {T}, Discard a card: Mercurial Chemister deals damage to target creature equal to the discarded card's converted mana cost.

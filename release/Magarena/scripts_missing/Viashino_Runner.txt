@@ -1,6 +1,6 @@
 name=Viashino Runner
-image=http://mtgimage.com/card/viashino%20runner.jpg
-value=2.500
+image=http://magiccards.info/scans/en/10e/245.jpg
+value=3.500
 rarity=C
 type=Creature
 subtype=Viashino

@@ -1,9 +1,10 @@
 name=Righteous Charge
-image=http://mtgimage.com/card/righteous%20charge.jpg
+image=http://magiccards.info/scans/en/gtc/23.jpg
 value=2.867
 rarity=U
 type=Sorcery
 cost={1}{W}{W}
+ability=Cast SN with AI only if you control a creature.
 effect=Creatures you control get +2/+2 until end of turn.
 timing=fmain
 oracle=Creatures you control get +2/+2 until end of turn.

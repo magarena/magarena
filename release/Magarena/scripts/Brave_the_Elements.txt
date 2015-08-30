@@ -1,9 +1,10 @@
 name=Brave the Elements
-image=http://mtgimage.com/card/brave%20the%20elements.jpg
+image=http://magiccards.info/scans/en/c14/66.jpg
 value=3.558
 rarity=U
 type=Instant
 cost={W}
 timing=pump
+ability=Cast SN with AI only if you control one or more White creatures.
 requires_groovy_code
 oracle=Choose a color. White creatures you control gain protection from the chosen color until end of turn.

@@ -1,5 +1,5 @@
 name=Yavimaya Elder
-image=http://mtgimage.com/card/yavimaya%20elder.jpg
+image=http://magiccards.info/scans/en/vma/240.jpg
 value=4.000
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=When SN dies, you may search your library for up to two basic land cards, reveal them, and put them into your hand. If you do, shuffle your library.;\
         {2}, Sacrifice SN: Draw a card.
 timing=main
-oracle=When Yavimaya Elder dies, you may search your library for up to two basic land cards, reveal them, and put them into your hand. If you do, shuffle your library. {2}, Sacrifice Yavimaya Elder: Draw a card.
+oracle=When Yavimaya Elder dies, you may search your library for up to two basic land cards, reveal them, and put them into your hand. If you do, shuffle your library.\n{2}, Sacrifice Yavimaya Elder: Draw a card.

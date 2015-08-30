@@ -1,5 +1,5 @@
 name=Intuition
-image=http://mtgimage.com/card/intuition.jpg
+image=http://magiccards.info/scans/en/tp/70.jpg
 value=2.500
 rarity=R
 type=Instant

@@ -1,5 +1,5 @@
 name=Celestial Kirin
-image=http://mtgimage.com/card/celestial%20kirin.jpg
+image=http://magiccards.info/scans/en/sok/3.jpg
 value=3.859
 rarity=R
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. Whenever you cast a Spirit or Arcane spell, destroy all permanents with that spell's converted mana cost.
+oracle=Flying\nWhenever you cast a Spirit or Arcane spell, destroy all permanents with that spell's converted mana cost.

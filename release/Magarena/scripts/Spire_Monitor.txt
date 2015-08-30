@@ -1,5 +1,5 @@
 name=Spire Monitor
-image=http://mtgimage.com/card/spire%20monitor.jpg
+image=http://magiccards.info/scans/en/nph/46.jpg
 value=2.885
 ability=flash;flying
 rarity=C
@@ -8,4 +8,4 @@ subtype=Drake
 cost={4}{U}
 pt=3/3
 timing=flash
-oracle=Flash. Flying
+oracle=Flash\nFlying

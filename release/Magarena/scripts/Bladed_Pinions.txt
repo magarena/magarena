@@ -1,5 +1,5 @@
 name=Bladed Pinions
-image=http://mtgimage.com/card/bladed%20pinions.jpg
+image=http://magiccards.info/scans/en/som/140.jpg
 value=3.153
 rarity=C
 type=Artifact
@@ -8,4 +8,4 @@ cost={2}
 ability=Equipped creature has flying and first strike.;\
         Equip {2}
 timing=equipment
-oracle=Equipped creature has flying and first strike. Equip {2}
+oracle=Equipped creature has flying and first strike.\nEquip {2}

@@ -1,5 +1,5 @@
 name=Pestilence Demon
-image=http://mtgimage.com/card/pestilence%20demon.jpg
+image=http://magiccards.info/scans/en/c14/153.jpg
 value=4.098
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=7/6
 ability=flying;\
         {B}: SN deals 1 damage to each creature and each player.
 timing=main
-oracle=Flying. {B}: Pestilence Demon deals 1 damage to each creature and each player.
+oracle=Flying\n{B}: Pestilence Demon deals 1 damage to each creature and each player.

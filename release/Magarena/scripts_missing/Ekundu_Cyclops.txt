@@ -1,6 +1,6 @@
 name=Ekundu Cyclops
-image=http://mtgimage.com/card/ekundu%20cyclops.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/171.jpg
+value=3.244
 rarity=C
 type=Creature
 subtype=Cyclops

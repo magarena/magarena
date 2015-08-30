@@ -1,9 +1,9 @@
 name=Words of War
-image=http://mtgimage.com/card/words%20of%20war.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/244.jpg
+value=3.700
 rarity=R
 type=Enchantment
 cost={2}{R}
 ability={1}: The next time you would draw a card this turn, SN deals 2 damage to target creature or player instead.
-timing=main
+timing=enchantment
 oracle={1}: The next time you would draw a card this turn, Words of War deals 2 damage to target creature or player instead.

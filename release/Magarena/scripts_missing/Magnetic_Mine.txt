@@ -1,9 +1,9 @@
 name=Magnetic Mine
-image=http://mtgimage.com/card/magnetic%20mine.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mbs/113.jpg
+value=2.298
 rarity=R
 type=Artifact
 cost={4}
 ability=Whenever another artifact is put into a graveyard from the battlefield, SN deals 2 damage to that artifact's controller.
-timing=main
+timing=artifact
 oracle=Whenever another artifact is put into a graveyard from the battlefield, Magnetic Mine deals 2 damage to that artifact's controller.

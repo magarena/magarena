@@ -1,10 +1,10 @@
 name=Witchbane Orb
-image=http://mtgimage.com/card/witchbane%20orb.jpg
-value=2.500
+image=http://magiccards.info/scans/en/isd/236.jpg
+value=4.218
 rarity=R
 type=Artifact
 cost={4}
 ability=When SN enters the battlefield, destroy all Curses attached to you.;\
         You have hexproof.
-timing=main
-oracle=When Witchbane Orb enters the battlefield, destroy all Curses attached to you. You have hexproof.
+timing=artifact
+oracle=When Witchbane Orb enters the battlefield, destroy all Curses attached to you.\nYou have hexproof.

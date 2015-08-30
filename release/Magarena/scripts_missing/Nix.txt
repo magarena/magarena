@@ -1,6 +1,6 @@
 name=Nix
-image=http://mtgimage.com/card/nix.jpg
-value=2.500
+image=http://magiccards.info/scans/en/fut/55.jpg
+value=3.177
 rarity=R
 type=Instant
 cost={U}

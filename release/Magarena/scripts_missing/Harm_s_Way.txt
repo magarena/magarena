@@ -1,6 +1,6 @@
 name=Harm's Way
-image=http://mtgimage.com/card/harm%27s%20way.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddg/23.jpg
+value=3.900
 rarity=U
 type=Instant
 cost={W}

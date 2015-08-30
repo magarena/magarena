@@ -1,5 +1,5 @@
 name=Illusionary Forces
-image=http://mtgimage.com/card/illusionary%20forces.jpg
+image=http://magiccards.info/scans/en/med/38.jpg
 value=2.703
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={3}{U}
 pt=4/4
 ability=flying;cumulative upkeep {U}
 timing=main
-oracle=Flying. Cumulative upkeep {U}
+oracle=Flying\nCumulative upkeep {U}

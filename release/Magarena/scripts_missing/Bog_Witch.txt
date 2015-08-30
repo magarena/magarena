@@ -1,6 +1,6 @@
 name=Bog Witch
-image=http://mtgimage.com/card/bog%20witch.jpg
-value=2.500
+image=http://magiccards.info/scans/en/arc/11.jpg
+value=4.000
 rarity=C
 type=Creature
 subtype=Human,Spellshaper

@@ -1,5 +1,5 @@
 name=Tar Pitcher
-image=http://mtgimage.com/card/tar%20pitcher.jpg
+image=http://magiccards.info/scans/en/mma/134.jpg
 value=3.455
 rarity=U
 type=Creature

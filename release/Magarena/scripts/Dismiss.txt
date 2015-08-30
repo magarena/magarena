@@ -1,9 +1,9 @@
 name=Dismiss
-image=http://mtgimage.com/card/dismiss.jpg
+image=http://magiccards.info/scans/en/c14/106.jpg
 value=4.361
 rarity=U
 type=Instant
 cost={2}{U}{U}
 effect=Counter target spell.~Draw a card.
 timing=counter
-oracle=Counter target spell. Draw a card.
+oracle=Counter target spell.\nDraw a card.

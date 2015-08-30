@@ -1,6 +1,6 @@
 name=Cenn's Tactician
-image=http://mtgimage.com/card/cenn%27s%20tactician.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mt/5.jpg
+value=3.753
 rarity=U
 type=Creature
 subtype=Kithkin,Soldier
@@ -9,4 +9,4 @@ pt=1/1
 ability={W}, {T}: Put a +1/+1 counter on target Soldier creature.;\
         Each creature you control with a +1/+1 counter on it can block an additional creature.
 timing=main
-oracle={W}, {T}: Put a +1/+1 counter on target Soldier creature. Each creature you control with a +1/+1 counter on it can block an additional creature.
+oracle={W}, {T}: Put a +1/+1 counter on target Soldier creature.\nEach creature you control with a +1/+1 counter on it can block an additional creature.

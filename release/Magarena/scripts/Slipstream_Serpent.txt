@@ -1,5 +1,5 @@
 name=Slipstream Serpent
-image=http://mtgimage.com/card/slipstream%20serpent.jpg
+image=http://magiccards.info/scans/en/ts/77.jpg
 value=1.000
 rarity=C
 type=Creature
@@ -7,7 +7,7 @@ subtype=Serpent
 cost={7}{U}
 pt=6/6
 ability=SN can't attack unless defending player controls an Island.;\
+        When you control no Islands, sacrifice SN.;\
         Morph {5}{U}
 timing=main
-requires_groovy_code=Sea Serpent
-oracle=Slipstream Serpent can't attack unless defending player controls an Island. When you control no Islands, sacrifice Slipstream Serpent. Morph {5}{U}
+oracle=Slipstream Serpent can't attack unless defending player controls an Island.\nWhen you control no Islands, sacrifice Slipstream Serpent.\nMorph {5}{U}

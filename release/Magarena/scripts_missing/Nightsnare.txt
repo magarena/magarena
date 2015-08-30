@@ -1,0 +1,9 @@
+name=Nightsnare
+image=http://magiccards.info/scans/en/ori/111.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={3}{B}
+effect=Target opponent reveals his or her hand. You may choose a nonland card from it. If you do, that player discards that card. If you don't, that player discards two cards.
+timing=main
+oracle=Target opponent reveals his or her hand. You may choose a nonland card from it. If you do, that player discards that card. If you don't, that player discards two cards.

@@ -1,6 +1,6 @@
 name=Extract
-image=http://mtgimage.com/card/extract.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/85.jpg
+value=4.326
 rarity=R
 type=Sorcery
 cost={U}

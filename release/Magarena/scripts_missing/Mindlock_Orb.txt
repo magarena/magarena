@@ -1,9 +1,9 @@
 name=Mindlock Orb
-image=http://mtgimage.com/card/mindlock%20orb.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ala/51.jpg
+value=4.238
 rarity=R
 type=Artifact
 cost={3}{U}
 ability=Players can't search libraries.
-timing=main
+timing=artifact
 oracle=Players can't search libraries.

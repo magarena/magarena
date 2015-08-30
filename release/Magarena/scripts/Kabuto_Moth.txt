@@ -1,5 +1,5 @@
 name=Kabuto Moth
-image=http://mtgimage.com/card/kabuto%20moth.jpg
+image=http://magiccards.info/scans/en/chk/20.jpg
 value=3.200
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{W}
 pt=1/2
 ability=flying;{T}: Target creature gets +1/+2 until end of turn.
 timing=main
-oracle=Flying. {T}: Target creature gets +1/+2 until end of turn.
+oracle=Flying\n{T}: Target creature gets +1/+2 until end of turn.

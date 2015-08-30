@@ -1,7 +1,7 @@
 package magic.ui.widget.deck;
 
-import magic.data.DeckUtils;
 
+import magic.utility.DeckUtils;
 import java.nio.file.Paths;
 
 @SuppressWarnings("serial")

@@ -1,6 +1,6 @@
 name=Catastrophe
-image=http://mtgimage.com/card/catastrophe.jpg
-value=2.500
+image=http://magiccards.info/scans/en/br/12.jpg
+value=4.222
 rarity=R
 type=Sorcery
 cost={4}{W}{W}

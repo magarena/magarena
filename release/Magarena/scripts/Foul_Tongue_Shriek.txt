@@ -1,0 +1,10 @@
+name=Foul-Tongue Shriek
+image=http://magiccards.info/scans/en/dtk/103.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={B}
+ability=Cast SN with AI only if you control an attacking creature.
+timing=attack
+requires_groovy_code
+oracle=Target opponent loses 1 life for each attacking creature you control. You gain that much life.

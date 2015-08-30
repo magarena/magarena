@@ -1,10 +1,10 @@
 name=Seer's Vision
-image=http://mtgimage.com/card/seer%27s%20vision.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/270.jpg
+value=3.161
 rarity=U
 type=Enchantment
 cost={2}{U}{B}
 ability=Your opponents play with their hands revealed.;\
         Sacrifice SN: Look at target player's hand and choose a card from it. That player discards that card. Activate this ability only any time you could cast a sorcery.
-timing=main
-oracle=Your opponents play with their hands revealed. Sacrifice Seer's Vision: Look at target player's hand and choose a card from it. That player discards that card. Activate this ability only any time you could cast a sorcery.
+timing=enchantment
+oracle=Your opponents play with their hands revealed.\nSacrifice Seer's Vision: Look at target player's hand and choose a card from it. That player discards that card. Activate this ability only any time you could cast a sorcery.

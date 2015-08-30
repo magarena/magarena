@@ -1,11 +1,11 @@
 name=Power Leak
-image=http://mtgimage.com/card/power%20leak.jpg
-value=2.500
+image=http://magiccards.info/scans/en/4e/92.jpg
+value=2.636
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
 ability=Enchant enchantment;\
         At the beginning of the upkeep of enchanted enchantment's controller, that player may pay any amount of mana. SN deals 2 damage to that player. Prevent X of that damage, where X is the amount of mana that player paid this way.
-timing=main
-oracle=Enchant enchantment. At the beginning of the upkeep of enchanted enchantment's controller, that player may pay any amount of mana. Power Leak deals 2 damage to that player. Prevent X of that damage, where X is the amount of mana that player paid this way.
+timing=aura
+oracle=Enchant enchantment\nAt the beginning of the upkeep of enchanted enchantment's controller, that player may pay any amount of mana. Power Leak deals 2 damage to that player. Prevent X of that damage, where X is the amount of mana that player paid this way.

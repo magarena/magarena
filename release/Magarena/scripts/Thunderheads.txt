@@ -1,10 +1,10 @@
 name=Thunderheads
-image=http://mtgimage.com/card/thunderheads.jpg
+image=http://magiccards.info/scans/en/ddj/23.jpg
 value=3.031
 rarity=U
 type=Instant
 cost={2}{U}
 ability=replicate {2}{U}
-timing=block
-requires_groovy_code
-oracle=Replicate {2}{U}. Put a 3/3 blue Weird creature token with defender and flying onto the battlefield. Exile it at the beginning of the next end step.
+effect=Put a 3/3 blue Weird creature token with defender and flying onto the battlefield. Exile it at the beginning of the next end step.
+timing=token
+oracle=Replicate {2}{U}\nPut a 3/3 blue Weird creature token with defender and flying onto the battlefield. Exile it at the beginning of the next end step.

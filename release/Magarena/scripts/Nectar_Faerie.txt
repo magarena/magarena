@@ -1,5 +1,5 @@
 name=Nectar Faerie
-image=http://mtgimage.com/card/nectar%20faerie.jpg
+image=http://magiccards.info/scans/en/lw/130.jpg
 value=3.114
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying;\
         {B}, {T}: Target Faerie or Elf gains lifelink until end of turn.
 timing=main
-oracle=Flying. {B}, {T}: Target Faerie or Elf gains lifelink until end of turn.
+oracle=Flying\n{B}, {T}: Target Faerie or Elf gains lifelink until end of turn.

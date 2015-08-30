@@ -1,5 +1,5 @@
 name=Fauna Shaman
-image=http://mtgimage.com/card/fauna%20shaman.jpg
+image=http://magiccards.info/scans/en/m11/172.jpg
 value=4.360
 rarity=R
 type=Creature

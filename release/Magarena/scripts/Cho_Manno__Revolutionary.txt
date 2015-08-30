@@ -1,11 +1,11 @@
 name=Cho-Manno, Revolutionary
-image=http://mtgimage.com/card/cho%2Dmanno%2C%20revolutionary.jpg
+image=http://magiccards.info/scans/en/10e/12.jpg
 value=4.045
 rarity=R
 type=Legendary,Creature
 subtype=Human,Rebel
 cost={2}{W}{W}
 pt=2/2
+ability=Prevent all damage that would be dealt to SN.
 timing=main
-requires_groovy_code
 oracle=Prevent all damage that would be dealt to Cho-Manno, Revolutionary.

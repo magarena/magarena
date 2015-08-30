@@ -7,3 +7,4 @@ subtype=Insect
 color=g
 pt=6/1
 ability=shroud
+oracle=Shroud

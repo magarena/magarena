@@ -1,5 +1,5 @@
 name=Witness of the Ages
-image=http://mtgimage.com/card/witness%20of%20the%20ages.jpg
+image=http://magiccards.info/scans/en/ktk/228.jpg
 value=2.750
 rarity=U
 type=Artifact,Creature

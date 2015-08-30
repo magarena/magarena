@@ -1,0 +1,9 @@
+name=Butcher's Glee
+image=http://magiccards.info/scans/en/dtk/90.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{B}
+effect=Target creature gets +3/+0 and gains lifelink until end of turn. Regenerate it.
+timing=removal
+oracle=Target creature gets +3/+0 and gains lifelink until end of turn. Regenerate it.

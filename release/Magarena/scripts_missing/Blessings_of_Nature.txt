@@ -1,9 +1,9 @@
 name=Blessings of Nature
-image=http://mtgimage.com/card/blessings%20of%20nature.jpg
-value=2.500
+image=http://magiccards.info/scans/en/avr/168.jpg
+value=3.681
 rarity=U
 type=Sorcery
 cost={4}{G}
 effect=Distribute four +1/+1 counters among any number of target creatures.~Miracle {G}
 timing=main
-oracle=Distribute four +1/+1 counters among any number of target creatures. Miracle {G}
+oracle=Distribute four +1/+1 counters among any number of target creatures.\nMiracle {G}

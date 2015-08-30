@@ -1,0 +1,13 @@
+name=Consul's Lieutenant
+image=http://magiccards.info/scans/en/ori/11.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={W}{W}
+pt=2/1
+ability=First strike;\
+        Renown 1;\
+        Whenever SN attacks, if SN is renowned, other attacking creatures you control get +1/+1 until end of turn.
+timing=main
+oracle=First strike\nRenown 1\nWhenever Consul's Lieutenant attacks, if it's renowned, other attacking creatures you control get +1/+1 until end of turn.

@@ -1,6 +1,6 @@
 name=Autumn's Veil
-image=http://mtgimage.com/card/autumn%27s%20veil.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m12/164.jpg
+value=3.232
 rarity=U
 type=Instant
 cost={G}

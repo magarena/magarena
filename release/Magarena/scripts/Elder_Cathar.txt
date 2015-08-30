@@ -1,5 +1,5 @@
 name=Elder Cathar
-image=http://mtgimage.com/card/elder%20cathar.jpg
+image=http://magiccards.info/scans/en/isd/12.jpg
 value=3.424
 rarity=C
 type=Creature

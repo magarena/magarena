@@ -1,23 +1,13 @@
 package magic.test;
 
-import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.model.MagicPlayerDefinition;
 import magic.model.phase.MagicMainPhase;
 
 class TestDevotion extends TestGameBuilder {
     public MagicGame getGame() {
-        final MagicDuel duel=new MagicDuel();
-        duel.setDifficulty(6);
-
-        final MagicDeckProfile profile=new MagicDeckProfile("bgruw");
-        final MagicPlayerDefinition player1=new MagicPlayerDefinition("Player",false,profile);
-        final MagicPlayerDefinition player2=new MagicPlayerDefinition("Computer",true,profile);
-        duel.setPlayers(new MagicPlayerDefinition[]{player1,player2});
-        duel.setStartPlayer(0);
-
+        final MagicDuel duel=createDuel();
         final MagicGame game=duel.nextGame();
         game.setPhase(MagicMainPhase.getFirstInstance());
         final MagicPlayer player=game.getPlayer(0);
@@ -32,7 +22,7 @@ class TestDevotion extends TestGameBuilder {
         addToLibrary(P, "Sliver Overlord", 1);
         addToLibrary(P, "Wingsteed Rider", 1);
         addToGraveyard(P, "Ink-Eyes, Servant of Oni", 3);
-        createPermanent(game,P, "Rupture Spire", false, 9);
+        createPermanent(P, "Rupture Spire", false, 9);
         addToHand(P, "Rupture Spire", 1);
         addToHand(P, "Abhorrent Overlord", 1);
         addToHand(P, "Purphoros, God of the Forge", 1);
@@ -42,8 +32,8 @@ class TestDevotion extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Mountain", 20);
-        createPermanent(game,P,"Rupture Spire",false,9);
-        createPermanent(game,P, "Grizzly Bears", false, 1);
+        createPermanent(P,"Rupture Spire",false,9);
+        createPermanent(P, "Grizzly Bears", false, 1);
         addToHand(P, "Trained Jackal", 1);
         addToGraveyard(P, "Ink-Eyes, Servant of Oni", 1);
 

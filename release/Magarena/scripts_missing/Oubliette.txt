@@ -1,10 +1,10 @@
 name=Oubliette
-image=http://mtgimage.com/card/oubliette.jpg
-value=2.500
+image=http://magiccards.info/scans/en/med/79.jpg
+value=3.941
 rarity=C
 type=Enchantment
 cost={1}{B}{B}
 ability=When SN enters the battlefield, exile target creature and all Auras attached to it. Note the number and kind of counters that were on that creature.;\
         When SN leaves the battlefield, return that exiled card to the battlefield under its owner's control tapped with the noted number and kind of counters on it. If you do, return the other exiled cards to the battlefield under their owner's control attached to that permanent.
-timing=main
-oracle=When Oubliette enters the battlefield, exile target creature and all Auras attached to it. Note the number and kind of counters that were on that creature. When Oubliette leaves the battlefield, return that exiled card to the battlefield under its owner's control tapped with the noted number and kind of counters on it. If you do, return the other exiled cards to the battlefield under their owner's control attached to that permanent.
+timing=enchantment
+oracle=When Oubliette enters the battlefield, exile target creature and all Auras attached to it. Note the number and kind of counters that were on that creature.\nWhen Oubliette leaves the battlefield, return that exiled card to the battlefield under its owner's control tapped with the noted number and kind of counters on it. If you do, return the other exiled cards to the battlefield under their owner's control attached to that permanent.

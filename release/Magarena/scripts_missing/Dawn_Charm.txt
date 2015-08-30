@@ -1,9 +1,9 @@
 name=Dawn Charm
-image=http://mtgimage.com/card/dawn%20charm.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pc/4.jpg
+value=4.171
 rarity=C
 type=Instant
 cost={1}{W}
-effect=Choose one — • Prevent all combat damage that would be dealt this turn. • Regenerate target creature. • Counter target spell that targets you.
+effect=Choose one — (1) Prevent all combat damage that would be dealt this turn. (2) Regenerate target creature. (3) Counter target spell that targets you.
 timing=removal
-oracle=Choose one — • Prevent all combat damage that would be dealt this turn. • Regenerate target creature. • Counter target spell that targets you.
+oracle=Choose one —\n• Prevent all combat damage that would be dealt this turn.\n• Regenerate target creature.\n• Counter target spell that targets you.

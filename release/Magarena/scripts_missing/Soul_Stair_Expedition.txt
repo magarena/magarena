@@ -1,10 +1,10 @@
 name=Soul Stair Expedition
-image=http://mtgimage.com/card/soul%20stair%20expedition.jpg
-value=2.500
+image=http://magiccards.info/scans/en/zen/112.jpg
+value=3.402
 rarity=C
 type=Enchantment
 cost={B}
 ability=Whenever a land enters the battlefield under your control, you may put a quest counter on SN.;\
-        Remove three quest counters from SN, Sacrifice SN: Return up to two target creature cards from your graveyard to your hand.
-timing=main
-oracle=Landfall — Whenever a land enters the battlefield under your control, you may put a quest counter on Soul Stair Expedition. Remove three quest counters from Soul Stair Expedition and sacrifice it: Return up to two target creature cards from your graveyard to your hand.
+        Remove three quest counters from SN and sacrifice it: Return up to two target creature cards from your graveyard to your hand.
+timing=enchantment
+oracle=Landfall — Whenever a land enters the battlefield under your control, you may put a quest counter on Soul Stair Expedition.\nRemove three quest counters from Soul Stair Expedition and sacrifice it: Return up to two target creature cards from your graveyard to your hand.

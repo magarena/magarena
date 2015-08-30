@@ -1,9 +1,9 @@
 name=Ghostly Flame
-image=http://mtgimage.com/card/ghostly%20flame.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ia/370.jpg
+value=3.188
 rarity=R
 type=Enchantment
 cost={B}{R}
 ability=Black and/or red permanents and spells are colorless sources of damage.
-timing=main
+timing=enchantment
 oracle=Black and/or red permanents and spells are colorless sources of damage.

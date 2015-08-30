@@ -1,5 +1,5 @@
 name=Junún Efreet
-image=http://mtgimage.com/card/junun%20efreet.jpg
+image=http://magiccards.info/scans/en/me4/88.jpg
 value=2.940
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=flying;\
         At the beginning of your upkeep, you may pay {B}{B}. If you don't, sacrifice SN.
 timing=main
-oracle=Flying. At the beginning of your upkeep, sacrifice Junún Efreet unless you pay {B}{B}.
+oracle=Flying\nAt the beginning of your upkeep, sacrifice Junún Efreet unless you pay {B}{B}.

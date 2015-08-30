@@ -1,0 +1,12 @@
+name=Grazing Kelpie
+image=http://magiccards.info/scans/en/eve/153.jpg
+value=2.321
+rarity=C
+type=Creature
+subtype=Beast
+cost={3}{G/U}
+pt=2/3
+ability={G/U}, Sacrifice SN: Put target card from a graveyard on the bottom of its owner's library.;\
+        Persist
+timing=main
+oracle={G/U}, Sacrifice Grazing Kelpie: Put target card from a graveyard on the bottom of its owner's library.\nPersist

@@ -1,6 +1,6 @@
 name=Martyr of Ashes
-image=http://mtgimage.com/card/martyr%20of%20ashes.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cs/92.jpg
+value=4.038
 rarity=C
 type=Creature
 subtype=Human,Shaman

@@ -1,5 +1,5 @@
 name=Promise of Bunrei
-image=http://mtgimage.com/card/promise%20of%20bunrei.jpg
+image=http://magiccards.info/scans/en/sok/24.jpg
 value=3.945
 rarity=R
 type=Enchantment

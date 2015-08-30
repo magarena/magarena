@@ -1,10 +1,9 @@
 name=Overload
-image=http://mtgimage.com/card/overload.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/157.jpg
+value=2.630
 rarity=C
 type=Instant
 cost={R}
-ability=Kicker {2}
-effect=Destroy target artifact if its converted mana cost is 2 or less. If SN was kicked, destroy that artifact if its converted mana cost is 5 or less instead.
+effect=Kicker {2}~Destroy target artifact if its converted mana cost is 2 or less. If SN was kicked, destroy that artifact if its converted mana cost is 5 or less instead.
 timing=removal
-oracle=Kicker {2}. Destroy target artifact if its converted mana cost is 2 or less. If Overload was kicked, destroy that artifact if its converted mana cost is 5 or less instead.
+oracle=Kicker {2}\nDestroy target artifact if its converted mana cost is 2 or less. If Overload was kicked, destroy that artifact if its converted mana cost is 5 or less instead.

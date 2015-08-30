@@ -1,5 +1,5 @@
 name=Whisk Away
-image=http://mtgimage.com/card/whisk%20away.jpg
+image=http://magiccards.info/scans/en/frf/57.jpg
 value=2.500
 rarity=C
 type=Instant

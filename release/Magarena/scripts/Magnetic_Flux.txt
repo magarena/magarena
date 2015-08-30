@@ -1,9 +1,10 @@
 name=Magnetic Flux
-image=http://mtgimage.com/card/magnetic%20flux.jpg
+image=http://magiccards.info/scans/en/ds/25.jpg
 value=1.784
 rarity=C
 type=Instant
 cost={2}{U}
+ability=Cast SN with AI only if you control an artifact creature.
 effect=Artifact creatures you control gain flying until end of turn.
 timing=pump
 oracle=Artifact creatures you control gain flying until end of turn.

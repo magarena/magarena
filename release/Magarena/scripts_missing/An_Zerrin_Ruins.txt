@@ -1,10 +1,10 @@
 name=An-Zerrin Ruins
-image=http://mtgimage.com/card/an-zerrin%20ruins.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me2/117.jpg
+value=3.761
 rarity=R
 type=Enchantment
 cost={2}{R}{R}
 ability=As SN enters the battlefield, choose a creature type.;\
         Creatures of the chosen type don't untap during their controllers' untap steps.
-timing=main
-oracle=As An-Zerrin Ruins enters the battlefield, choose a creature type. Creatures of the chosen type don't untap during their controllers' untap steps.
+timing=enchantment
+oracle=As An-Zerrin Ruins enters the battlefield, choose a creature type.\nCreatures of the chosen type don't untap during their controllers' untap steps.

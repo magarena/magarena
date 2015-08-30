@@ -1,10 +1,10 @@
 name=Dimir Aqueduct
-image=http://mtgimage.com/card/dimir%20aqueduct.jpg
+image=http://magiccards.info/scans/en/pc2/116.jpg
 value=2.500
 rarity=C
 type=Land
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, return a land you control to its owner's hand.;\
         {T}: Add {U}{B} to your mana pool.
-timing=main
-oracle=Dimir Aqueduct enters the battlefield tapped. When Dimir Aqueduct enters the battlefield, return a land you control to its owner's hand. {T}: Add {U}{B} to your mana pool.
+timing=land
+oracle=Dimir Aqueduct enters the battlefield tapped.\nWhen Dimir Aqueduct enters the battlefield, return a land you control to its owner's hand.\n{T}: Add {U}{B} to your mana pool.

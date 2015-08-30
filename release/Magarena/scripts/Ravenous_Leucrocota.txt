@@ -1,5 +1,5 @@
 name=Ravenous Leucrocota
-image=http://mtgimage.com/card/ravenous%20leucrocota.jpg
+image=http://magiccards.info/scans/en/jou/136.jpg
 value=2.870
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/4
 ability=Vigilance;\
         {6}{G}: Monstrosity 3.
 timing=main
-oracle=Vigilance. {6}{G}: Monstrosity 3.
+oracle=Vigilance\n{6}{G}: Monstrosity 3.

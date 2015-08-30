@@ -1,5 +1,5 @@
 name=Kemuri-Onna
-image=http://mtgimage.com/card/kemuri-onna.jpg
+image=http://magiccards.info/scans/en/sok/76.jpg
 value=2.200
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=When SN enters the battlefield, target player discards a card.;\
         Whenever you cast a Spirit or Arcane spell, you may return SN to its owner's hand.
 timing=main
-oracle=When Kemuri-Onna enters the battlefield, target player discards a card. Whenever you cast a Spirit or Arcane spell, you may return Kemuri-Onna to its owner's hand.
+oracle=When Kemuri-Onna enters the battlefield, target player discards a card.\nWhenever you cast a Spirit or Arcane spell, you may return Kemuri-Onna to its owner's hand.

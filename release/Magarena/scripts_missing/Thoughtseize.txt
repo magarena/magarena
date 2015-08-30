@@ -1,6 +1,6 @@
 name=Thoughtseize
-image=http://mtgimage.com/card/thoughtseize.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ths/107.jpg
+value=4.578
 rarity=R
 type=Sorcery
 cost={B}

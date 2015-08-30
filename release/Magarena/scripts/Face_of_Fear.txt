@@ -1,5 +1,5 @@
 name=Face of Fear
-image=http://mtgimage.com/card/face%20of%20fear.jpg
+image=http://magiccards.info/scans/en/od/134.jpg
 value=0.814
 rarity=U
 type=Creature

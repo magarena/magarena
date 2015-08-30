@@ -1,5 +1,5 @@
 name=Water Servant
-image=http://mtgimage.com/card/water%20servant.jpg
+image=http://magiccards.info/scans/en/m14/80.jpg
 value=3.483
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=3/4
 ability={U}: SN gets +1/-1 until end of turn.;\
         {U}: SN gets -1/+1 until end of turn.
 timing=main
-oracle={U}: Water Servant gets +1/-1 until end of turn. {U}: Water Servant gets -1/+1 until end of turn.
+oracle={U}: Water Servant gets +1/-1 until end of turn.\n{U}: Water Servant gets -1/+1 until end of turn.

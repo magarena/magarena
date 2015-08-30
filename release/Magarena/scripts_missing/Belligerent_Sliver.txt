@@ -1,6 +1,6 @@
 name=Belligerent Sliver
-image=http://mtgimage.com/card/belligerent%20sliver.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/129.jpg
+value=3.400
 rarity=U
 type=Creature
 subtype=Sliver

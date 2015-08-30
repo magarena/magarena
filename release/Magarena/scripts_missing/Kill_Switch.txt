@@ -1,9 +1,9 @@
 name=Kill Switch
-image=http://mtgimage.com/card/kill%20switch.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ne/133.jpg
+value=4.340
 rarity=R
 type=Artifact
 cost={3}
 ability={2}, {T}: Tap all other artifacts. They don't untap during their controllers' untap steps for as long as SN remains tapped.
-timing=main
+timing=artifact
 oracle={2}, {T}: Tap all other artifacts. They don't untap during their controllers' untap steps for as long as Kill Switch remains tapped.

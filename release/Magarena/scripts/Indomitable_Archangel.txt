@@ -1,5 +1,5 @@
 name=Indomitable Archangel
-image=http://mtgimage.com/card/indomitable%20archangel.jpg
+image=http://magiccards.info/scans/en/som/11.jpg
 value=4.027
 rarity=M
 type=Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=flying;\
         Artifacts you control have shroud as long as you control three or more artifacts.
 timing=main
-oracle=Flying. Metalcraft — Artifacts you control have shroud as long as you control three or more artifacts.
+oracle=Flying\nMetalcraft — Artifacts you control have shroud as long as you control three or more artifacts.

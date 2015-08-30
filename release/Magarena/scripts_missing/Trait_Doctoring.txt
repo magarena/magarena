@@ -1,9 +1,9 @@
 name=Trait Doctoring
-image=http://mtgimage.com/card/trait%20doctoring.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dgm/18.jpg
+value=1.511
 rarity=R
 type=Sorcery
 cost={U}
 effect=Change the text of target permanent by replacing all instances of one color word with another or one basic land type with another until end of turn.~Cipher
 timing=main
-oracle=Change the text of target permanent by replacing all instances of one color word with another or one basic land type with another until end of turn. Cipher
+oracle=Change the text of target permanent by replacing all instances of one color word with another or one basic land type with another until end of turn.\nCipher

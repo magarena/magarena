@@ -1,21 +1,19 @@
 package magic.generator;
 
 import magic.data.CardDefinitions;
-import magic.data.CubeDefinitions;
 import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicDeckProfile;
+import magic.model.MagicRandom;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Random;
 
 public class Ability_Mono_DeckGenerator extends RandomDeckGenerator {
 
     private static final int MIN_NUM_CARDS_WITH_SUBTYPE = 30;
 
-    private static final Random randGen = new Random();
     // all possible tribes - calculated once
     private static final ArrayList<MagicAbility> possibleAbilities = new ArrayList<MagicAbility>();
     private static final ArrayList<ArrayList<String>> possibleColors = new ArrayList<ArrayList<String>>();
@@ -25,22 +23,20 @@ public class Ability_Mono_DeckGenerator extends RandomDeckGenerator {
     private final String colorText;
 
     public Ability_Mono_DeckGenerator() {
-        super(null);
 
         if (!hasChoice()) {
             getPossibleTribes();
         }
 
         if (hasChoice()) {
-            final int i = randGen.nextInt(possibleAbilities.size());
+            final int i = MagicRandom.nextRNGInt(possibleAbilities.size());
             ability = possibleAbilities.get(i);
-            colorText = possibleColors.get(i).get(randGen.nextInt(possibleColors.get(i).size()));
+            colorText = possibleColors.get(i).get(MagicRandom.nextRNGInt(possibleColors.get(i).size()));
         } else {
             ability = null;
             colorText = "";
         }
 
-        setCubeDefinition(CubeDefinitions.getCubeDefinition(getColorText()));
     }
 
     private boolean hasChoice() {

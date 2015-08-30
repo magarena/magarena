@@ -1,9 +1,9 @@
 name=Cloudstone Curio
-image=http://mtgimage.com/card/cloudstone%20curio.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rav/257.jpg
+value=4.000
 rarity=R
 type=Artifact
 cost={3}
 ability=Whenever a nonartifact permanent enters the battlefield under your control, you may return another permanent you control that shares a permanent type with it to its owner's hand.
-timing=main
+timing=artifact
 oracle=Whenever a nonartifact permanent enters the battlefield under your control, you may return another permanent you control that shares a permanent type with it to its owner's hand.

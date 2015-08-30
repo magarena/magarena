@@ -1,5 +1,5 @@
 name=Fervent Denial
-image=http://mtgimage.com/card/fervent%20denial.jpg
+image=http://magiccards.info/scans/en/od/86.jpg
 value=1.512
 rarity=U
 type=Instant
@@ -7,4 +7,4 @@ cost={3}{U}{U}
 effect=Counter target spell.
 ability=Flashback {5}{U}{U}
 timing=counter
-oracle=Counter target spell. Flashback {5}{U}{U}
+oracle=Counter target spell.\nFlashback {5}{U}{U}

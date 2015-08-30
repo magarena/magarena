@@ -1,9 +1,9 @@
 name=Spectral Shift
-image=http://mtgimage.com/card/spectral%20shift.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5dn/37.jpg
+value=3.614
 rarity=R
 type=Instant
 cost={1}{U}
-effect=Choose one — • Change the text of target spell or permanent by replacing all instances of one basic land type with another. • Change the text of target spell or permanent by replacing all instances of one color word with another.~Entwine {2}
+effect=Choose one — (1) Change the text of target spell or permanent by replacing all instances of one basic land type with another. (2) Change the text of target spell or permanent by replacing all instances of one color word with another.~Entwine {2}
 timing=removal
-oracle=Choose one — • Change the text of target spell or permanent by replacing all instances of one basic land type with another. • Change the text of target spell or permanent by replacing all instances of one color word with another. Entwine {2}
+oracle=Choose one —\n• Change the text of target spell or permanent by replacing all instances of one basic land type with another.\n• Change the text of target spell or permanent by replacing all instances of one color word with another.\nEntwine {2}

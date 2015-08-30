@@ -1,5 +1,5 @@
 name=King Cheetah
-image=http://mtgimage.com/card/king%20cheetah.jpg
+image=http://magiccards.info/scans/en/9e/250.jpg
 value=3.308
 ability=flash
 rarity=U

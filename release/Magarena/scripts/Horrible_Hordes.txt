@@ -1,5 +1,5 @@
 name=Horrible Hordes
-image=http://mtgimage.com/card/horrible%20hordes.jpg
+image=http://magiccards.info/scans/en/mr/269.jpg
 value=2.930
 rarity=U
 type=Artifact,Creature

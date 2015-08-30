@@ -1,5 +1,5 @@
 name=Caribou Range
-image=http://mtgimage.com/card/caribou%20range.jpg
+image=http://magiccards.info/scans/en/me2/8.jpg
 value=3.265
 rarity=R
 type=Enchantment
@@ -9,4 +9,4 @@ ability=Enchanted land has "{W}{W}, {T}: Put a 0/1 white Caribou creature token 
         Sacrifice a Caribou token: You gain 1 life.
 enchant=pump,land you control
 timing=aura
-oracle=Enchant land you control. Enchanted land has "{W}{W}, {T}: Put a 0/1 white Caribou creature token onto the battlefield.". Sacrifice a Caribou token: You gain 1 life.
+oracle=Enchant land you control\nEnchanted land has "{W}{W}, {T}: Put a 0/1 white Caribou creature token onto the battlefield."\nSacrifice a Caribou token: You gain 1 life.

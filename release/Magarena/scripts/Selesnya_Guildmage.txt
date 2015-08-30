@@ -1,5 +1,5 @@
 name=Selesnya Guildmage
-image=http://mtgimage.com/card/selesnya%20guildmage.jpg
+image=http://magiccards.info/scans/en/c13/232.jpg
 value=3.636
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability={3}{G}: Put a 1/1 green Saproling creature token onto the battlefield.;\
         {3}{W}: Creatures you control get +1/+1 until end of turn.
 timing=main
-oracle={3}{G}: Put a 1/1 green Saproling creature token onto the battlefield. {3}{W}: Creatures you control get +1/+1 until end of turn.
+oracle={3}{G}: Put a 1/1 green Saproling creature token onto the battlefield.\n{3}{W}: Creatures you control get +1/+1 until end of turn.

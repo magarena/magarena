@@ -1,5 +1,5 @@
 name=Drove of Elves
-image=http://mtgimage.com/card/drove%20of%20elves.jpg
+image=http://magiccards.info/scans/en/c14/189.jpg
 value=3.811
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=*/*
 ability=hexproof;\
         SN's power and toughness are each equal to the number of green permanents you control.
 timing=main
-oracle=Hexproof. Drove of Elves's power and toughness are each equal to the number of green permanents you control.
+oracle=Hexproof\nDrove of Elves's power and toughness are each equal to the number of green permanents you control.

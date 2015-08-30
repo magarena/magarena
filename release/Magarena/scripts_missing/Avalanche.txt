@@ -1,6 +1,6 @@
 name=Avalanche
-image=http://mtgimage.com/card/avalanche.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ia/171.jpg
+value=1.865
 rarity=U
 type=Sorcery
 cost={X}{2}{R}{R}

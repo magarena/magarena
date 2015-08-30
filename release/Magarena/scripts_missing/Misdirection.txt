@@ -1,9 +1,9 @@
 name=Misdirection
-image=http://mtgimage.com/card/misdirection.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cns/102.jpg
+value=4.364
 rarity=R
 type=Instant
 cost={3}{U}{U}
 effect=You may exile a blue card from your hand rather than pay SN's mana cost.~Change the target of target spell with a single target.
 timing=removal
-oracle=You may exile a blue card from your hand rather than pay Misdirection's mana cost. Change the target of target spell with a single target.
+oracle=You may exile a blue card from your hand rather than pay Misdirection's mana cost.\nChange the target of target spell with a single target.

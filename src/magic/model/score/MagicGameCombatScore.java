@@ -2,9 +2,9 @@ package magic.model.score;
 
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.model.action.MagicCombatDamageAction;
-import magic.model.action.MagicDeclareBlockersAction;
-import magic.model.action.MagicStackResolveAction;
+import magic.model.action.CombatDamageAction;
+import magic.model.action.DeclareBlockersAction;
+import magic.model.action.StackResolveAction;
 import magic.model.choice.MagicDeclareBlockersResult;
 
 public class MagicGameCombatScore implements MagicCombatScore {
@@ -21,18 +21,24 @@ public class MagicGameCombatScore implements MagicCombatScore {
 
     @Override
     public int getScore(final MagicDeclareBlockersResult result) {
+        // immediate mode for triggers
+        game.setImmediate(true);
         game.snapshot();
-        game.doAction(new MagicDeclareBlockersAction(defendingPlayer,result));
-        game.doAction(new MagicCombatDamageAction(attackingPlayer,defendingPlayer,true));
-        game.doAction(new MagicCombatDamageAction(attackingPlayer,defendingPlayer,false));
+        game.doAction(new DeclareBlockersAction(defendingPlayer,result));
+        game.doAction(new CombatDamageAction(attackingPlayer,defendingPlayer,true));
+        game.doAction(new CombatDamageAction(attackingPlayer,defendingPlayer,false));
         // resolve triggers
-        while (game.getStack().size() > 0 && !game.isFinished()) {
-            game.doAction(new MagicStackResolveAction());
-            game.checkState();
+        game.checkStatePutTriggers();
+        int resolved = 0;
+        while (game.getStack().size() > 0 && resolved < 100 && game.isFinished() == false) {
+            resolved++;
+            game.doAction(new StackResolveAction());
+            game.checkStatePutTriggers();
         }
         // Give extra points for extra blocked creatures.
         final int score=game.getScore()+result.size();
         game.restore();
+        game.setImmediate(false);
         return score;
     }
 }

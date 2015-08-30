@@ -1,5 +1,5 @@
 name=Dreadbore
-image=http://mtgimage.com/card/dreadbore.jpg
+image=http://magiccards.info/scans/en/rtr/157.jpg
 value=3.953
 rarity=R
 type=Sorcery

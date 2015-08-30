@@ -1,9 +1,9 @@
 name=Halls of Mist
-image=http://mtgimage.com/card/halls%20of%20mist.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ia/332.jpg
+value=3.188
 rarity=R
 type=Land
 ability=Cumulative upkeep {1};\
         Creatures that attacked during their controller's last turn can't attack.
-timing=main
-oracle=Cumulative upkeep {1}. Creatures that attacked during their controller's last turn can't attack.
+timing=land
+oracle=Cumulative upkeep {1}\nCreatures that attacked during their controller's last turn can't attack.

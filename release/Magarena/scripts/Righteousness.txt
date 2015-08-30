@@ -1,6 +1,5 @@
 name=Righteousness
-image=http://mtgimage.com/card/righteousness.jpg
-ignore=62602
+image=http://magiccards.info/scans/en/ddl/20.jpg
 value=4.062
 rarity=R
 type=Instant

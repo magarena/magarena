@@ -1,5 +1,5 @@
 name=Markov Blademaster
-image=http://mtgimage.com/card/markov%20blademaster.jpg
+image=http://magiccards.info/scans/en/dka/96.jpg
 value=3.646
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=double strike;\
         Whenever SN deals combat damage to a player, put a +1/+1 counter on SN.
 timing=main
-oracle=Double strike. Whenever Markov Blademaster deals combat damage to a player, put a +1/+1 counter on it.
+oracle=Double strike\nWhenever Markov Blademaster deals combat damage to a player, put a +1/+1 counter on it.

@@ -1,6 +1,6 @@
 name=True-Name Nemesis
-image=http://mtgimage.com/card/true-name%20nemesis.jpg
-value=2.500
+image=http://magiccards.info/scans/en/c13/63.jpg
+value=3.765
 rarity=R
 type=Creature
 subtype=Merfolk,Rogue
@@ -9,4 +9,4 @@ pt=3/1
 ability=As SN enters the battlefield, choose a player.;\
         SN has protection from the chosen player.
 timing=main
-oracle=As True-Name Nemesis enters the battlefield, choose a player. True-Name Nemesis has protection from the chosen player.
+oracle=As True-Name Nemesis enters the battlefield, choose a player.\nTrue-Name Nemesis has protection from the chosen player.

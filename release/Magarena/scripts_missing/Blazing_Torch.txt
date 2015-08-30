@@ -1,12 +1,12 @@
 name=Blazing Torch
-image=http://mtgimage.com/card/blazing%20torch.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/isd/216.jpg
+value=3.289
+rarity=C
 type=Artifact
 subtype=Equipment
 cost={1}
 ability=Equipped creature can't be blocked by Vampires or Zombies.;\
         Equipped creature has "{T}, Sacrifice SN: SN deals 2 damage to target creature or player.";\
         Equip {1}
-timing=main
-oracle=Equipped creature can't be blocked by Vampires or Zombies. Equipped creature has "{T}, Sacrifice Blazing Torch: Blazing Torch deals 2 damage to target creature or player.". Equip {1}
+timing=equipment
+oracle=Equipped creature can't be blocked by Vampires or Zombies.\nEquipped creature has "{T}, Sacrifice Blazing Torch: Blazing Torch deals 2 damage to target creature or player."\nEquip {1}

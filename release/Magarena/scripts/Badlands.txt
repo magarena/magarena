@@ -1,8 +1,9 @@
 name=Badlands
-image=http://mtgimage.com/set/me4/badlands.jpg
+image=http://magiccards.info/scans/en/vma/291.jpg
 value=4.500
 rarity=R
 type=Land
 subtype=Swamp,Mountain
 mana=b4r4
 timing=land
+oracle=NONE

@@ -1,6 +1,6 @@
 name=Tanglesap
-image=http://mtgimage.com/card/tanglesap.jpg
-value=2.500
+image=http://magiccards.info/scans/en/zen/186.jpg
+value=2.877
 rarity=C
 type=Instant
 cost={1}{G}

@@ -1,5 +1,5 @@
 name=Sanctum Custodian
-image=http://mtgimage.com/card/sanctum%20custodian.jpg
+image=http://magiccards.info/scans/en/br/62.jpg
 value=3.138
 rarity=C
 type=Creature

@@ -1,10 +1,10 @@
 name=Runed Arch
-image=http://mtgimage.com/card/runed%20arch.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ia/309.jpg
+value=3.088
 rarity=R
 type=Artifact
 cost={3}
 ability=SN enters the battlefield tapped.;\
         {X}, {T}, Sacrifice SN: X target creatures with power 2 or less can't be blocked this turn.
-timing=main
-oracle=Runed Arch enters the battlefield tapped. {X}, {T}, Sacrifice Runed Arch: X target creatures with power 2 or less can't be blocked this turn.
+timing=artifact
+oracle=Runed Arch enters the battlefield tapped.\n{X}, {T}, Sacrifice Runed Arch: X target creatures with power 2 or less can't be blocked this turn.

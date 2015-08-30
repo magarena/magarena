@@ -1,5 +1,5 @@
 name=Iona, Shield of Emeria
-image=http://mtgimage.com/card/iona%2C%20shield%20of%20emeria.jpg
+image=http://magiccards.info/scans/en/zen/13.jpg
 value=2.500
 rarity=M
 type=Legendary,Creature
@@ -10,4 +10,4 @@ ability=Flying;\
         As SN enters the battlefield, choose a color.;\
         Your opponents can't cast spells of the chosen color.
 timing=main
-oracle=Flying. As Iona, Shield of Emeria enters the battlefield, choose a color. Your opponents can't cast spells of the chosen color.
+oracle=Flying\nAs Iona, Shield of Emeria enters the battlefield, choose a color.\nYour opponents can't cast spells of the chosen color.

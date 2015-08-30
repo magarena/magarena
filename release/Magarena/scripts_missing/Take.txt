@@ -1,9 +1,9 @@
 name=Take
-image=http://mtgimage.com/card/givetake.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dgm/129b.jpg
+value=3.628
 rarity=U
 type=Sorcery
 cost={2}{U}
 effect=Remove all +1/+1 counters from target creature you control. Draw that many cards.~Fuse
 timing=main
-oracle=Remove all +1/+1 counters from target creature you control. Draw that many cards. Fuse
+oracle=Remove all +1/+1 counters from target creature you control. Draw that many cards.\nFuse

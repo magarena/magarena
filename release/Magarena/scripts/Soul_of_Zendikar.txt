@@ -1,0 +1,13 @@
+name=Soul of Zendikar
+image=http://magiccards.info/scans/en/m15/201.jpg
+value=3.786
+rarity=M
+type=Creature
+subtype=Avatar
+cost={4}{G}{G}
+pt=6/6
+ability=Reach;\
+        {3}{G}{G}: Put a 3/3 green Beast creature token onto the battlefield.;\
+        {3}{G}{G}, Exile SN from your graveyard: Put a 3/3 green Beast creature token onto the battlefield.
+timing=main
+oracle=Reach\n{3}{G}{G}: Put a 3/3 green Beast creature token onto the battlefield.\n{3}{G}{G}, Exile Soul of Zendikar from your graveyard: Put a 3/3 green Beast creature token onto the battlefield.

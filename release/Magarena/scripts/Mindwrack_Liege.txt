@@ -1,5 +1,5 @@
 name=Mindwrack Liege
-image=http://mtgimage.com/card/mindwrack%20liege.jpg
+image=http://magiccards.info/scans/en/eve/104.jpg
 value=3.862
 rarity=R
 type=Creature
@@ -11,4 +11,4 @@ ability=other blue creatures you control get +1/+1;\
         {U/R}{U/R}{U/R}{U/R}: You may put a blue or red creature card from your hand onto the battlefield.
 static=player
 timing=main
-oracle=Other blue creatures you control get +1/+1. Other red creatures you control get +1/+1. {U/R}{U/R}{U/R}{U/R}: You may put a blue or red creature card from your hand onto the battlefield.
+oracle=Other blue creatures you control get +1/+1.\nOther red creatures you control get +1/+1.\n{U/R}{U/R}{U/R}{U/R}: You may put a blue or red creature card from your hand onto the battlefield.

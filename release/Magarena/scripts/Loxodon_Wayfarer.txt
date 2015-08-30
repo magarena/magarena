@@ -1,5 +1,5 @@
 name=Loxodon Wayfarer
-image=http://mtgimage.com/card/loxodon%20wayfarer.jpg
+image=http://magiccards.info/scans/en/som/15.jpg
 value=2.377
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Elephant,Monk
 cost={2}{W}
 pt=1/5
 timing=main
+oracle=NONE

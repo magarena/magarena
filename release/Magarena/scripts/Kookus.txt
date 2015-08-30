@@ -1,0 +1,13 @@
+name=Kookus
+image=http://magiccards.info/scans/en/vi/86.jpg
+value=3.185
+rarity=R
+type=Creature
+subtype=Djinn
+cost={3}{R}{R}
+pt=3/5
+ability=Trample;\
+{R}: SN gets +1/+0 until end of turn.
+timing=main
+requires_groovy_code
+oracle=Trample\nAt the beginning of your upkeep, if you don't control a creature named Keeper of Kookus, Kookus deals 3 damage to you and attacks this turn if able.\n{R}: Kookus gets +1/+0 until end of turn.

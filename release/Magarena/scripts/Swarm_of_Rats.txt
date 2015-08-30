@@ -1,5 +1,5 @@
 name=Swarm of Rats
-image=http://mtgimage.com/card/swarm%20of%20rats.jpg
+image=http://magiccards.info/scans/en/9e/166.jpg
 value=3.349
 rarity=U
 type=Creature

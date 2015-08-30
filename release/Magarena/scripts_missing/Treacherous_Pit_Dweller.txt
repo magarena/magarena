@@ -1,6 +1,6 @@
 name=Treacherous Pit-Dweller
-image=http://mtgimage.com/card/treacherous%20pit-dweller.jpg
-value=2.500
+image=http://magiccards.info/scans/en/avr/121.jpg
+value=3.110
 rarity=R
 type=Creature
 subtype=Demon
@@ -9,4 +9,4 @@ pt=4/3
 ability=When SN enters the battlefield from a graveyard, target opponent gains control of it.;\
         Undying
 timing=main
-oracle=When Treacherous Pit-Dweller enters the battlefield from a graveyard, target opponent gains control of it. Undying
+oracle=When Treacherous Pit-Dweller enters the battlefield from a graveyard, target opponent gains control of it.\nUndying

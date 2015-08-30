@@ -1,11 +1,11 @@
 name=Quag Sickness
-image=http://mtgimage.com/card/quag%20sickness.jpg
+image=http://magiccards.info/scans/en/m14/110.jpg
 value=3.520
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{B}
+ability=Enchanted creature gets -1/-1 for each Swamp you control.
 enchant=weaken,neg creature
 timing=aura
-requires_groovy_code
-oracle=Enchant creature. Enchanted creature gets -1/-1 for each Swamp you control.
+oracle=Enchant creature\nEnchanted creature gets -1/-1 for each Swamp you control.

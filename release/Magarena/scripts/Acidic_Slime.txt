@@ -1,5 +1,5 @@
 name=Acidic Slime
-image=http://mtgimage.com/card/acidic%20slime.jpg
+image=http://magiccards.info/scans/en/ddm/64.jpg
 value=3.636
 removal=2
 rarity=U
@@ -7,7 +7,7 @@ type=Creature
 subtype=Ooze
 cost={3}{G}{G}
 pt=2/2
-ability=deathtouch;\
+ability=Deathtouch;\
         When SN enters the battlefield, destroy target artifact, enchantment, or land.
 timing=fmain
-oracle=Deathtouch. When Acidic Slime enters the battlefield, destroy target artifact, enchantment, or land.
+oracle=Deathtouch\nWhen Acidic Slime enters the battlefield, destroy target artifact, enchantment, or land.

@@ -1,9 +1,9 @@
 name=Fire-Lit Thicket
-image=http://mtgimage.com/card/fire-lit%20thicket.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/271.jpg
+value=4.275
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\
         {R/G}, {T}: Add {R}{R}, {R}{G}, or {G}{G} to your mana pool.
-timing=main
-oracle={T}: Add {1} to your mana pool. {R/G}, {T}: Add {R}{R}, {R}{G}, or {G}{G} to your mana pool.
+timing=land
+oracle={T}: Add {1} to your mana pool.\n{R/G}, {T}: Add {R}{R}, {R}{G}, or {G}{G} to your mana pool.

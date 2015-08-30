@@ -1,5 +1,5 @@
 name=Lodestone Myr
-image=http://mtgimage.com/card/lodestone%20myr.jpg
+image=http://magiccards.info/scans/en/pch/117.jpg
 value=4.446
 rarity=R
 type=Artifact,Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Trample;\
         Tap an untapped artifact you control: SN gets +1/+1 until end of turn.
 timing=main
-oracle=Trample. Tap an untapped artifact you control: Lodestone Myr gets +1/+1 until end of turn.
+oracle=Trample\nTap an untapped artifact you control: Lodestone Myr gets +1/+1 until end of turn.

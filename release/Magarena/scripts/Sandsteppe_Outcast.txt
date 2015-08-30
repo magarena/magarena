@@ -1,0 +1,13 @@
+name=Sandsteppe Outcast
+image=http://magiccards.info/scans/en/frf/25.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={2}{W}
+pt=2/1
+ability=When SN enters the battlefield, choose one — \
+        (1) Put a +1/+1 counter on SN. \
+        (2) Put a 1/1 white Spirit creature token with flying onto the battlefield.
+timing=main
+oracle=When Sandsteppe Outcast enters the battlefield, choose one —\n• Put a +1/+1 counter on Sandsteppe Outcast.\n• Put a 1/1 white Spirit creature token with flying onto the battlefield.

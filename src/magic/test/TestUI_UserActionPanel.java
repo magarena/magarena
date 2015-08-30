@@ -3,22 +3,12 @@ package magic.test;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.model.MagicPlayerDefinition;
-import magic.model.MagicDeckProfile;
 import magic.model.phase.MagicMainPhase;
 
 class TestUI_UserActionPanel extends TestGameBuilder {
     @Override
     public MagicGame getGame() {
-        final MagicDuel duel=new MagicDuel();
-        duel.setDifficulty(6);
-
-        final MagicDeckProfile profile=new MagicDeckProfile("bgruw");
-        final MagicPlayerDefinition player1=new MagicPlayerDefinition("Player",false,profile);
-        final MagicPlayerDefinition player2=new MagicPlayerDefinition("Computer",true,profile);
-        duel.setPlayers(new MagicPlayerDefinition[]{player1,player2});
-        duel.setStartPlayer(0);
-
+        final MagicDuel duel=createDuel();
         final MagicGame game=duel.nextGame();
         game.setPhase(MagicMainPhase.getFirstInstance());
         final MagicPlayer player=game.getPlayer(0);
@@ -29,10 +19,10 @@ class TestUI_UserActionPanel extends TestGameBuilder {
         P.setLife(20);
         addToLibrary(P, "Forest", 10);
         addToLibrary(P, "Adder-Staff Boggart", 1);
-        createPermanent(game, P, "Thousand Winds", false, 3);
-        createPermanent(game, P, "Island", false, 2);
-        createPermanent(game, P, "Mountain", false, 3);
-        createPermanent(game, P, "Forest", false, 2);
+        createPermanent(P, "Thousand Winds", false, 3);
+        createPermanent(P, "Island", false, 2);
+        createPermanent(P, "Mountain", false, 3);
+        createPermanent(P, "Forest", false, 2);
         addToHand(P, "Backslide", 1);
         addToHand(P, "Adder-Staff Boggart", 1);
         addToHand(P, "Joraga Warcaller", 1);

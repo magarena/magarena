@@ -1,6 +1,6 @@
 name=Wandering Eye
-image=http://mtgimage.com/card/wandering%20eye.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ne/50.jpg
+value=3.204
 rarity=C
 type=Creature
 subtype=Illusion
@@ -9,4 +9,4 @@ pt=1/3
 ability=Flying;\
         Players play with their hands revealed.
 timing=main
-oracle=Flying. Players play with their hands revealed.
+oracle=Flying\nPlayers play with their hands revealed.

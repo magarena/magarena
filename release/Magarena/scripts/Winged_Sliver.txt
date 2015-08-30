@@ -1,5 +1,5 @@
 name=Winged Sliver
-image=http://mtgimage.com/card/winged%20sliver.jpg
+image=http://magiccards.info/scans/en/tp/106.jpg
 value=4.410
 rarity=C
 type=Creature

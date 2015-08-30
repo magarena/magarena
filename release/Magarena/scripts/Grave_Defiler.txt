@@ -1,12 +1,13 @@
 name=Grave Defiler
-image=http://mtgimage.com/card/grave%20defiler.jpg
+image=http://magiccards.info/scans/en/ap/40.jpg
 value=4.026
 rarity=U
 type=Creature
 subtype=Zombie
 cost={3}{B}
 pt=2/1
-ability={1}{B}: Regenerate SN.
+ability=When SN enters the battlefield, reveal the top four cards of your library. \
+        Put all Zombie cards revealed this way into your hand and the rest on the bottom of your library in any order.;\
+        {1}{B}: Regenerate SN.
 timing=main
-requires_groovy_code
-oracle=When Grave Defiler enters the battlefield, reveal the top four cards of your library. Put all Zombie cards revealed this way into your hand and the rest on the bottom of your library in any order. {1}{B}: Regenerate Grave Defiler.
+oracle=When Grave Defiler enters the battlefield, reveal the top four cards of your library. Put all Zombie cards revealed this way into your hand and the rest on the bottom of your library in any order.\n{1}{B}: Regenerate Grave Defiler.

@@ -1,0 +1,12 @@
+name=Haunted Angel
+image=http://magiccards.info/scans/en/ap/12.jpg
+value=2.194
+rarity=U
+type=Creature
+subtype=Angel
+cost={2}{W}
+pt=3/3
+ability=Flying
+timing=main
+requires_groovy_code
+oracle=Flying\nWhen Haunted Angel dies, exile Haunted Angel and each other player puts a 3/3 black Angel creature token with flying onto the battlefield.

@@ -1,5 +1,5 @@
 name=Spined Basher
-image=http://mtgimage.com/card/spined%20basher.jpg
+image=http://magiccards.info/scans/en/on/172.jpg
 value=1.857
 rarity=C
 type=Creature

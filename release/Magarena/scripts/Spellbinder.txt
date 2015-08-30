@@ -1,11 +1,12 @@
 name=Spellbinder
-image=http://mtgimage.com/card/spellbinder.jpg
+image=http://magiccards.info/scans/en/ds/143.jpg
 value=3.133
 rarity=R
 type=Artifact
 subtype=Equipment
 cost={3}
-ability=Equip {4}
+ability=When SN enters the battlefield, you may exile an instant card from your hand.;\
+        Equip {4}
 timing=equipment
 requires_groovy_code
-oracle=Imprint — When Spellbinder enters the battlefield, you may exile an instant card from your hand. Whenever equipped creature deals combat damage to a player, you may copy the exiled card. If you do, you may cast the copy without paying its mana cost. Equip {4}
+oracle=Imprint — When Spellbinder enters the battlefield, you may exile an instant card from your hand.\nWhenever equipped creature deals combat damage to a player, you may copy the exiled card. If you do, you may cast the copy without paying its mana cost.\nEquip {4}

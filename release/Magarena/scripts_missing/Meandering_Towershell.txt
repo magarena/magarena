@@ -1,6 +1,6 @@
 name=Meandering Towershell
-image=http://mtgimage.com/card/meandering%20towershell.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/141.jpg
+value=3.000
 rarity=R
 type=Creature
 subtype=Turtle
@@ -9,4 +9,4 @@ pt=5/9
 ability=Islandwalk;\
         Whenever SN attacks, exile it. Return it to the battlefield under your control tapped and attacking at the beginning of the declare attackers step on your next turn.
 timing=main
-oracle=Islandwalk. Whenever Meandering Towershell attacks, exile it. Return it to the battlefield under your control tapped and attacking at the beginning of the declare attackers step on your next turn.
+oracle=Islandwalk\nWhenever Meandering Towershell attacks, exile it. Return it to the battlefield under your control tapped and attacking at the beginning of the declare attackers step on your next turn.

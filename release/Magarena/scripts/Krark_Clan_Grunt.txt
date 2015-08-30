@@ -1,5 +1,5 @@
 name=Krark-Clan Grunt
-image=http://mtgimage.com/card/krark-clan%20grunt.jpg
+image=http://magiccards.info/scans/en/mi/97.jpg
 value=2.680
 rarity=C
 type=Creature

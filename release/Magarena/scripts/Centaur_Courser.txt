@@ -1,5 +1,5 @@
 name=Centaur Courser
-image=http://mtgimage.com/card/centaur%20courser.jpg
+image=http://magiccards.info/scans/en/m15/282.jpg
 value=2.167
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Centaur,Warrior
 cost={2}{G}
 pt=3/3
 timing=main
+oracle=NONE

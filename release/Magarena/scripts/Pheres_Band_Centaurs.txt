@@ -1,5 +1,5 @@
 name=Pheres-Band Centaurs
-image=http://mtgimage.com/card/pheres%2Dband%20centaurs.jpg
+image=http://magiccards.info/scans/en/ths/171.jpg
 value=2.885
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Centaur,Warrior
 cost={4}{G}
 pt=3/7
 timing=main
+oracle=NONE

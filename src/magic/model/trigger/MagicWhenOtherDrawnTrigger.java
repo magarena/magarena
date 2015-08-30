@@ -17,6 +17,15 @@ public abstract class MagicWhenOtherDrawnTrigger extends MagicTrigger<MagicCard>
         return MagicTriggerType.WhenOtherDrawn;
     }
     
+    public static MagicWhenOtherDrawnTrigger create(final MagicSourceEvent sourceEvent) {
+        return new MagicWhenOtherDrawnTrigger() {
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCard card) {
+                return sourceEvent.getEvent(permanent, card.getOwner());
+            }
+        };
+    }
+    
     public static MagicWhenOtherDrawnTrigger createYou(final MagicSourceEvent sourceEvent) {
         return new MagicWhenOtherDrawnTrigger() {
             @Override
@@ -25,7 +34,20 @@ public abstract class MagicWhenOtherDrawnTrigger extends MagicTrigger<MagicCard>
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCard card) {
-                return sourceEvent.getEvent(permanent);
+                return sourceEvent.getEvent(permanent, card.getOwner());
+            }
+        };
+    }
+    
+    public static MagicWhenOtherDrawnTrigger createOpp(final MagicSourceEvent sourceEvent) {
+        return new MagicWhenOtherDrawnTrigger() {
+            @Override
+            public boolean accept(final MagicPermanent permanent, final MagicCard card) {
+                return card.isEnemy(permanent);
+            }
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCard card) {
+                return sourceEvent.getEvent(permanent, card.getOwner());
             }
         };
     }

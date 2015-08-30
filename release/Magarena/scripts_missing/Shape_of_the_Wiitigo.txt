@@ -1,6 +1,6 @@
 name=Shape of the Wiitigo
-image=http://mtgimage.com/card/shape%20of%20the%20wiitigo.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cs/120.jpg
+value=3.163
 rarity=R
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={3}{G}{G}{G}
 ability=Enchant creature;\
         When SN enters the battlefield, put six +1/+1 counters on enchanted creature.;\
         At the beginning of your upkeep, put a +1/+1 counter on enchanted creature if it attacked or blocked since your last upkeep. Otherwise, remove a +1/+1 counter from it.
-timing=main
-oracle=Enchant creature. When Shape of the Wiitigo enters the battlefield, put six +1/+1 counters on enchanted creature. At the beginning of your upkeep, put a +1/+1 counter on enchanted creature if it attacked or blocked since your last upkeep. Otherwise, remove a +1/+1 counter from it.
+timing=aura
+oracle=Enchant creature\nWhen Shape of the Wiitigo enters the battlefield, put six +1/+1 counters on enchanted creature.\nAt the beginning of your upkeep, put a +1/+1 counter on enchanted creature if it attacked or blocked since your last upkeep. Otherwise, remove a +1/+1 counter from it.

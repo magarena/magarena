@@ -1,9 +1,10 @@
 name=Chalice of Life
-image=http://mtgimage.com/card/chalice%20of%20life.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dka/146a.jpg
+value=3.659
 rarity=U
 type=Artifact
 cost={3}
 ability={T}: You gain 1 life. Then if you have at least 10 life more than your starting life total, transform SN.
-timing=main
+transform=Chalice of Death
+timing=artifact
 oracle={T}: You gain 1 life. Then if you have at least 10 life more than your starting life total, transform Chalice of Life.

@@ -1,0 +1,31 @@
+Results of AI testing, latest first
+
+note: test MTDF with fast mana on
+result:
+  - MMAB-H-1: 261
+    MTDF-H-1: 239
+  - MMAB-C-1: 254
+    MTDF-C-1: 246
+
+note: test MTDF with fast choices all off
+commit: a591a1d698dfcdd2beb510fc0e77d127a9bd4751
+command: 
+  make 5[01-10].t ai1=MMABC ai2=MTDFC games=50
+  make 4[01-10].t ai1=MMAB ai2=MTDF games=50
+result:
+  - MMAB-H-1: 247
+    MTDF-H-1: 253
+  - MMAB-C-1: 250
+    MTDF-C-1: 250
+
+note: baseline test of MTDF against MMAB, 1s time limit
+commit: 20f38d89330e35d53c2ea662f972d26b83efdf8a
+machine: 4 x Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz
+command:
+  make 4[01-10].t ai1=MMABC ai2=MTDFC games=50
+  make 5[01-10].t ai1=MMAB ai2=MTDF games=50
+result: 
+  - MMAB-H-1: 268
+    MTDF-H-1: 232
+  - MMAB-C-1: 267
+    MTDF-C-1: 233

@@ -1,6 +1,6 @@
 name=Necroplasm
-image=http://mtgimage.com/card/necroplasm.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rav/98.jpg
+value=3.915
 rarity=R
 type=Creature
 subtype=Ooze
@@ -10,4 +10,4 @@ ability=At the beginning of your upkeep, put a +1/+1 counter on SN.;\
         At the beginning of your end step, destroy each creature with converted mana cost equal to the number of +1/+1 counters on SN.;\
         Dredge 2
 timing=main
-oracle=At the beginning of your upkeep, put a +1/+1 counter on Necroplasm. At the beginning of your end step, destroy each creature with converted mana cost equal to the number of +1/+1 counters on Necroplasm. Dredge 2
+oracle=At the beginning of your upkeep, put a +1/+1 counter on Necroplasm.\nAt the beginning of your end step, destroy each creature with converted mana cost equal to the number of +1/+1 counters on Necroplasm.\nDredge 2

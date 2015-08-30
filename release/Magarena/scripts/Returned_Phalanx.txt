@@ -1,12 +1,12 @@
 name=Returned Phalanx
-image=http://mtgimage.com/card/returned%20phalanx.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ths/104.jpg
+value=3.258
 rarity=C
 type=Creature
 subtype=Zombie,Soldier
 cost={1}{B}
 pt=3/3
-ability=Defender;\
-{1}{U}: SN loses defender until end of turn.
+ability=Defender.;\
+        {1}{U}: SN can attack as though it didn't have defender this turn.
 timing=main
-oracle=Defender. {1}{U}: Returned Phalanx can attack this turn as though it didn't have defender.
+oracle=Defender\n{1}{U}: Returned Phalanx can attack this turn as though it didn't have defender.

@@ -1,5 +1,5 @@
 name=Multani, Maro-Sorcerer
-image=http://mtgimage.com/card/multani%2C%20maro%2Dsorcerer.jpg
+image=http://magiccards.info/scans/en/ul/107.jpg
 value=4.147
 rarity=R
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=*/*
 ability=shroud
 timing=main
 requires_groovy_code
-oracle=Shroud. Multani, Maro-Sorcerer's power and toughness are each equal to the total number of cards in all players' hands.
+oracle=Shroud\nMultani, Maro-Sorcerer's power and toughness are each equal to the total number of cards in all players' hands.

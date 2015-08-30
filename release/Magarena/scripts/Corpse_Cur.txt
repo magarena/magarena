@@ -1,5 +1,5 @@
 name=Corpse Cur
-image=http://mtgimage.com/card/corpse%20cur.jpg
+image=http://magiccards.info/scans/en/som/147.jpg
 value=3.259
 rarity=C
 type=Artifact,Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=infect;\
         When SN enters the battlefield, you may return target creature card with infect from your graveyard to your hand.
 timing=main
-oracle=Infect. When Corpse Cur enters the battlefield, you may return target creature card with infect from your graveyard to your hand.
+oracle=Infect\nWhen Corpse Cur enters the battlefield, you may return target creature card with infect from your graveyard to your hand.

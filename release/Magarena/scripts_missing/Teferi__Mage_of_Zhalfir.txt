@@ -1,6 +1,6 @@
 name=Teferi, Mage of Zhalfir
-image=http://mtgimage.com/card/teferi%2C%20mage%20of%20zhalfir.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ts/83.jpg
+value=4.123
 rarity=R
 type=Legendary,Creature
 subtype=Human,Wizard
@@ -10,4 +10,4 @@ ability=Flash;\
         Creature cards you own that aren't on the battlefield have flash.;\
         Each opponent can cast spells only any time he or she could cast a sorcery.
 timing=main
-oracle=Flash. Creature cards you own that aren't on the battlefield have flash. Each opponent can cast spells only any time he or she could cast a sorcery.
+oracle=Flash\nCreature cards you own that aren't on the battlefield have flash.\nEach opponent can cast spells only any time he or she could cast a sorcery.

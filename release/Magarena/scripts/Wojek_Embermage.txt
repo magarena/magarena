@@ -1,0 +1,11 @@
+name=Wojek Embermage
+image=http://magiccards.info/scans/en/rav/152.jpg
+value=2.986
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={3}{R}
+pt=1/2
+timing=main
+requires_groovy_code
+oracle=Radiance — {T}: Wojek Embermage deals 1 damage to target creature and each other creature that shares a color with it.

@@ -1,5 +1,5 @@
 name=Zanam Djinn
-image=http://mtgimage.com/card/zanam%20djinn.jpg
+image=http://magiccards.info/scans/en/in/90.jpg
 value=2.359
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=5/6
 ability=Flying
 timing=main
 requires_groovy_code
-oracle=Flying. Zanam Djinn gets -2/-2 as long as blue is the most common color among all permanents or is tied for most common.
+oracle=Flying\nZanam Djinn gets -2/-2 as long as blue is the most common color among all permanents or is tied for most common.

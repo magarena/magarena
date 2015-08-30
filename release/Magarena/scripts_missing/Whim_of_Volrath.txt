@@ -1,9 +1,9 @@
 name=Whim of Volrath
-image=http://mtgimage.com/card/whim%20of%20volrath.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tp/102.jpg
+value=3.600
 rarity=R
 type=Instant
 cost={U}
 effect=Buyback {2}~Change the text of target permanent by replacing all instances of one color word with another or one basic land type with another until end of turn.
 timing=removal
-oracle=Buyback {2}. Change the text of target permanent by replacing all instances of one color word with another or one basic land type with another until end of turn.
+oracle=Buyback {2}\nChange the text of target permanent by replacing all instances of one color word with another or one basic land type with another until end of turn.

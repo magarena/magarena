@@ -5,7 +5,7 @@
             final int amount = payedCost.getX();
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 new MagicWeakenTargetPicker(amount,amount),
                 amount,
                 this,
@@ -16,7 +16,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final int X = event.getRefInt();
-                game.doAction(new MagicChangeTurnPTAction(it,-X,-X));
+                game.doAction(new ChangeTurnPTAction(it,-X,-X));
             });
         }
     }

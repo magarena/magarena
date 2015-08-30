@@ -1,0 +1,13 @@
+name=Kolaghan Forerunners
+image=http://magiccards.info/scans/en/dtk/144.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Berserker
+cost={2}{R}
+pt=*/3
+ability=Trample;\
+        SN's power is equal to the number of creatures you control.;\
+        Dash {2}{R}
+timing=main
+oracle=Trample\nKolaghan Forerunners's power is equal to the number of creatures you control.\nDash {2}{R}

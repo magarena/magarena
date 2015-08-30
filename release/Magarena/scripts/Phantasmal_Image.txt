@@ -1,5 +1,5 @@
 name=Phantasmal Image
-image=http://mtgimage.com/card/phantasmal%20image.jpg
+image=http://magiccards.info/scans/en/m12/72.jpg
 value=4.315
 rarity=R
 type=Creature

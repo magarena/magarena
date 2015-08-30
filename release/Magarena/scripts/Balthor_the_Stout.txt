@@ -1,13 +1,13 @@
 name=Balthor the Stout
-image=http://mtgimage.com/card/balthor%20the%20stout.jpg
+image=http://magiccards.info/scans/en/tr/91.jpg
 value=3.966
 rarity=R
 type=Legendary,Creature
 subtype=Dwarf,Barbarian
 cost={1}{R}{R}
 pt=2/2
-ability=other barbarian creatures get +1/+1
+ability=Other barbarian creatures get +1/+1.;\
+        {R}: Another target Barbarian creature gets +1/+0 until end of turn.
 static=all
 timing=main
-requires_groovy_code
-oracle=Other Barbarian creatures get +1/+1. {R}: Another target Barbarian creature gets +1/+0 until end of turn.
+oracle=Other Barbarian creatures get +1/+1.\n{R}: Another target Barbarian creature gets +1/+0 until end of turn.

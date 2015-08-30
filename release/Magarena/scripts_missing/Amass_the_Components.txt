@@ -1,6 +1,6 @@
 name=Amass the Components
-image=http://mtgimage.com/card/amass%20the%20components.jpg
-value=2.500
+image=http://magiccards.info/scans/en/avr/43.jpg
+value=2.653
 rarity=C
 type=Sorcery
 cost={3}{U}

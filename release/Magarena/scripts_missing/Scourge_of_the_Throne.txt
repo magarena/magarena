@@ -1,6 +1,6 @@
 name=Scourge of the Throne
-image=http://mtgimage.com/card/scourge%20of%20the%20throne.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vma/184.jpg
+value=3.969
 rarity=M
 type=Creature
 subtype=Dragon
@@ -10,4 +10,4 @@ ability=Flying;\
         Dethrone;\
         Whenever SN attacks for the first time each turn, if it's attacking the player with the most life or tied for most life, untap all attacking creatures. After this phase, there is an additional combat phase.
 timing=main
-oracle=Flying. Dethrone. Whenever Scourge of the Throne attacks for the first time each turn, if it's attacking the player with the most life or tied for most life, untap all attacking creatures. After this phase, there is an additional combat phase.
+oracle=Flying\nDethrone\nWhenever Scourge of the Throne attacks for the first time each turn, if it's attacking the player with the most life or tied for most life, untap all attacking creatures. After this phase, there is an additional combat phase.

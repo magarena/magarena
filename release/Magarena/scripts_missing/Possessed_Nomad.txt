@@ -1,12 +1,12 @@
 name=Possessed Nomad
-image=http://mtgimage.com/card/possessed%20nomad.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tr/13.jpg
+value=3.622
 rarity=R
 type=Creature
 subtype=Human,Nomad,Horror
 cost={2}{W}{W}
 pt=3/3
 ability=Vigilance;\
-        Threshold — As long as seven or more cards are in your graveyard, SN gets +1/+1, is black, and has "{2}{B}, {T}: Destroy target white creature."
+        As long as seven or more cards are in your graveyard, SN gets +1/+1, is black, and has "{2}{B}, {T}: Destroy target white creature."
 timing=main
-oracle=Vigilance. Threshold — As long as seven or more cards are in your graveyard, Possessed Nomad gets +1/+1, is black, and has "{2}{B}, {T}: Destroy target white creature."
+oracle=Vigilance\nThreshold — As long as seven or more cards are in your graveyard, Possessed Nomad gets +1/+1, is black, and has "{2}{B}, {T}: Destroy target white creature."

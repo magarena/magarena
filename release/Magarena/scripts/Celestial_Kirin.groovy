@@ -11,16 +11,13 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets=
-                game.filterPermanents(
-                    event.getPlayer(),
-                    new MagicCMCPermanentFilter(
-                        MagicTargetFilterFactory.PERMANENT,
-                        Operator.EQUAL,
-                        event.getRefInt()
-                    )
-                );
-            game.doAction(new MagicDestroyAction(targets));
+            game.doAction(new DestroyAction(
+                new MagicCMCPermanentFilter(
+                    PERMANENT, 
+                    Operator.EQUAL, 
+                    event.getRefInt()
+                ).filter(event)
+            ));
         }
     }
 ]

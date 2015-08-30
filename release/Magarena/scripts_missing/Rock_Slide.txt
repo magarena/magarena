@@ -1,6 +1,6 @@
 name=Rock Slide
-image=http://mtgimage.com/card/rock%20slide.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vi/92.jpg
+value=3.556
 rarity=C
 type=Instant
 cost={X}{R}

@@ -1,5 +1,5 @@
 name=Kiku, Night's Flower
-image=http://mtgimage.com/card/kiku%2C%20night%27s%20flower.jpg
+image=http://magiccards.info/scans/en/chk/121.jpg
 value=3.910
 rarity=R
 type=Legendary,Creature

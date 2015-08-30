@@ -1,5 +1,5 @@
 name=Teller of Tales
-image=http://mtgimage.com/card/teller%20of%20tales.jpg
+image=http://magiccards.info/scans/en/chk/95.jpg
 value=2.571
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=Flying;\
         Whenever you cast a Spirit or Arcane spell, you may tap or untap target creature.
 timing=main
-oracle=Flying. Whenever you cast a Spirit or Arcane spell, you may tap or untap target creature.
+oracle=Flying\nWhenever you cast a Spirit or Arcane spell, you may tap or untap target creature.

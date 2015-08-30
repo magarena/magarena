@@ -1,11 +1,11 @@
 name=Mortal Wound
-image=http://mtgimage.com/card/mortal%20wound.jpg
+image=http://magiccards.info/scans/en/vi/63.jpg
 value=3.062
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={G}
+ability=When enchanted creature is dealt damage, destroy RN.
 timing=aura
 enchant=destroy,neg creature
-requires_groovy_code
-oracle=Enchant creature. When enchanted creature is dealt damage, destroy it.
+oracle=Enchant creature\nWhen enchanted creature is dealt damage, destroy it.

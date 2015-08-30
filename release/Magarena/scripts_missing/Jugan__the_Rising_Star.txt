@@ -1,7 +1,7 @@
 name=Jugan, the Rising Star
-image=http://mtgimage.com/card/jugan%2C%20the%20rising%20star.jpg
-value=2.500
-rarity=R
+image=http://magiccards.info/scans/en/mma/150.jpg
+value=3.717
+rarity=M
 type=Legendary,Creature
 subtype=Dragon,Spirit
 cost={3}{G}{G}{G}
@@ -9,4 +9,4 @@ pt=5/5
 ability=Flying;\
         When SN dies, you may distribute five +1/+1 counters among any number of target creatures.
 timing=main
-oracle=Flying. When Jugan, the Rising Star dies, you may distribute five +1/+1 counters among any number of target creatures.
+oracle=Flying\nWhen Jugan, the Rising Star dies, you may distribute five +1/+1 counters among any number of target creatures.

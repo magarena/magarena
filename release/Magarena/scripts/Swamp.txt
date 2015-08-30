@@ -1,9 +1,9 @@
 name=Swamp
-image=http://mtgimage.com/set/ZEN/swamp1.jpg
+image=http://magiccards.info/scans/en/zen/238.jpg
 value=3.500
-rarity=L
+rarity=B
 type=Basic,Land
 subtype=Swamp
 mana=b4
 timing=land
-oracle=B
+oracle=NONE

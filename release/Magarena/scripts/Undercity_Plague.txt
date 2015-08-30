@@ -1,9 +1,9 @@
 name=Undercity Plague
-image=http://mtgimage.com/card/undercity%20plague.jpg
+image=http://magiccards.info/scans/en/gtc/83.jpg
 value=3.127
 rarity=R
 type=Sorcery
 cost={4}{B}{B}
 timing=main
 requires_groovy_code
-oracle=Target player loses 1 life, discards a card, then sacrifices a permanent. Cipher
+oracle=Target player loses 1 life, discards a card, then sacrifices a permanent.\nCipher

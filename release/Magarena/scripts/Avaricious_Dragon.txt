@@ -1,0 +1,13 @@
+name=Avaricious Dragon
+image=http://magiccards.info/scans/en/ori/131.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Dragon
+cost={2}{R}{R}
+pt=4/4
+ability=Flying;\
+        At the beginning of your draw step, draw an additional card.;\
+        At the beginning of your end step, discard your hand.
+timing=main
+oracle=Flying\nAt the beginning of your draw step, draw an additional card.\nAt the beginning of your end step, discard your hand.

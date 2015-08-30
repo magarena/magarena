@@ -1,10 +1,10 @@
 name=Havenwood Battleground
-image=http://mtgimage.com/card/havenwood%20battleground.jpg
+image=http://magiccards.info/scans/en/c14/301.jpg
 value=2.500
 rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\
         {T}: Add {G} to your mana pool.;\
         {T}, Sacrifice SN: Add {G}{G} to your mana pool.
-timing=main
-oracle=Havenwood Battleground enters the battlefield tapped. {T}: Add {G} to your mana pool. {T}, Sacrifice Havenwood Battleground: Add {G}{G} to your mana pool.
+timing=land
+oracle=Havenwood Battleground enters the battlefield tapped.\n{T}: Add {G} to your mana pool.\n{T}, Sacrifice Havenwood Battleground: Add {G}{G} to your mana pool.

@@ -1,5 +1,5 @@
 name=Sootwalkers
-image=http://mtgimage.com/card/sootwalkers.jpg
+image=http://magiccards.info/scans/en/shm/196.jpg
 value=2.323
 rarity=C
 type=Creature

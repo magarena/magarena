@@ -1,5 +1,5 @@
 name=Thalakos Seer
-image=http://mtgimage.com/card/thalakos%20seer.jpg
+image=http://magiccards.info/scans/en/tp/94.jpg
 value=3.830
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=shadow;\
         When SN leaves the battlefield, draw a card.
 timing=main
-oracle=Shadow. When Thalakos Seer leaves the battlefield, draw a card.
+oracle=Shadow\nWhen Thalakos Seer leaves the battlefield, draw a card.

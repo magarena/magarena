@@ -1,5 +1,5 @@
 name=Krosan Archer
-image=http://mtgimage.com/card/krosan%20archer.jpg
+image=http://magiccards.info/scans/en/od/246.jpg
 value=2.083
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={3}{G}
 pt=2/3
 ability=reach;{G},Discard a card:SN gets +0/+2 until end of turn.
 timing=main
-oracle=Reach. {G}, Discard a card: Krosan Archer gets +0/+2 until end of turn.
+oracle=Reach\n{G}, Discard a card: Krosan Archer gets +0/+2 until end of turn.

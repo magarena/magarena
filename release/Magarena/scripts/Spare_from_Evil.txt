@@ -1,9 +1,10 @@
 name=Spare from Evil
-image=http://mtgimage.com/card/spare%20from%20evil.jpg
+image=http://magiccards.info/scans/en/isd/34.jpg
 value=3.702
 rarity=C
 type=Instant
 cost={1}{W}
+ability=Cast SN with AI only if you control a creature.
 effect=Creatures you control gain protection from non-Human creatures until end of turn.
 timing=pump
 oracle=Creatures you control gain protection from non-Human creatures until end of turn.

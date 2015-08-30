@@ -1,10 +1,10 @@
 name=Cut the Earthly Bond
-image=http://mtgimage.com/card/cut%20the%20earthly%20bond.jpg
+image=http://magiccards.info/scans/en/sok/32.jpg
 value=1.557
 rarity=C
 type=Instant
 subtype=Arcane
 cost={U}
-effect=Return target enchanted permanent to its owner's hand.
+effect=Return target permanent that is enchanted to its owner's hand.
 timing=removal
 oracle=Return target enchanted permanent to its owner's hand.

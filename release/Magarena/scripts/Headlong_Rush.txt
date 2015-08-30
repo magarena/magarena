@@ -1,5 +1,5 @@
 name=Headlong Rush
-image=http://mtgimage.com/card/headlong%20rush.jpg
+image=http://magiccards.info/scans/en/us/198.jpg
 value=3.226
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Pestermite
-image=http://mtgimage.com/card/pestermite.jpg
+image=http://magiccards.info/scans/en/mma/59.jpg
 value=4.096
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=flash;flying;\
         When SN enters the battlefield, you may tap or untap target permanent.
 timing=main
-oracle=Flash. Flying. When Pestermite enters the battlefield, you may tap or untap target permanent.
+oracle=Flash\nFlying\nWhen Pestermite enters the battlefield, you may tap or untap target permanent.

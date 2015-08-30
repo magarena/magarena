@@ -1,6 +1,6 @@
 name=Ankle Shanker
-image=http://mtgimage.com/card/ankle%20shanker.jpg
-value=3.833
+image=http://magiccards.info/scans/en/ktk/164.jpg
+value=3.857
 rarity=R
 type=Creature
 subtype=Goblin,Berserker
@@ -9,4 +9,4 @@ pt=2/2
 ability=Haste;\
         Whenever SN attacks, creatures you control gain first strike and deathtouch until end of turn.
 timing=fmain
-oracle=Haste. Whenever Ankle Shanker attacks, creatures you control gain first strike and deathtouch until end of turn.
+oracle=Haste\nWhenever Ankle Shanker attacks, creatures you control gain first strike and deathtouch until end of turn.

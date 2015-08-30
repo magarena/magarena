@@ -1,6 +1,6 @@
 name=Augury Owl
-image=http://mtgimage.com/card/augury%20owl.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pc2/14.jpg
+value=3.658
 rarity=C
 type=Creature
 subtype=Bird
@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying;\
         When SN enters the battlefield, scry 3.
 timing=main
-oracle=Flying. When Augury Owl enters the battlefield, scry 3.
+oracle=Flying\nWhen Augury Owl enters the battlefield, scry 3.

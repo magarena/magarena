@@ -1,6 +1,6 @@
 name=Ephara, God of the Polis
-image=http://mtgimage.com/card/ephara%2C%20god%20of%20the%20polis.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bng/145.jpg
+value=3.595
 rarity=M
 type=Legendary,Enchantment,Creature
 subtype=God
@@ -9,5 +9,5 @@ pt=6/5
 ability=Indestructible;\
         As long as your devotion to white and blue is less than seven, Ephara isn't a creature.;\
         At the beginning of each upkeep, if you had another creature enter the battlefield under your control last turn, draw a card.
-timing=main
-oracle=Indestructible. As long as your devotion to white and blue is less than seven, Ephara isn't a creature. At the beginning of each upkeep, if you had another creature enter the battlefield under your control last turn, draw a card.
+timing=enchantment
+oracle=Indestructible\nAs long as your devotion to white and blue is less than seven, Ephara isn't a creature.\nAt the beginning of each upkeep, if you had another creature enter the battlefield under your control last turn, draw a card.

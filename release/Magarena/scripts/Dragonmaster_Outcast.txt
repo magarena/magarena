@@ -1,5 +1,5 @@
 name=Dragonmaster Outcast
-image=http://mtgimage.com/card/dragonmaster%20outcast.jpg
+image=http://magiccards.info/scans/en/wwk/81.jpg
 value=4.325
 rarity=M
 type=Creature

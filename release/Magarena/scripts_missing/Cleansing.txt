@@ -1,6 +1,6 @@
 name=Cleansing
-image=http://mtgimage.com/card/cleansing.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dk/77.jpg
+value=3.837
 rarity=R
 type=Sorcery
 cost={W}{W}{W}

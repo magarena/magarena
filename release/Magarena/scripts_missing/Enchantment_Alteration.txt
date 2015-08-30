@@ -1,7 +1,7 @@
 name=Enchantment Alteration
-image=http://mtgimage.com/card/enchantment%20alteration.jpg
-value=2.500
-rarity=C
+image=http://magiccards.info/scans/en/us/72.jpg
+value=3.743
+rarity=U
 type=Instant
 cost={U}
 effect=Attach target Aura attached to a creature or land to another permanent of that type.

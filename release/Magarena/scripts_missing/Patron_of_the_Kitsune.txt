@@ -1,6 +1,6 @@
 name=Patron of the Kitsune
-image=http://mtgimage.com/card/patron%20of%20the%20kitsune.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bok/19.jpg
+value=3.510
 rarity=R
 type=Legendary,Creature
 subtype=Spirit
@@ -9,4 +9,4 @@ pt=5/6
 ability=Fox offering;\
         Whenever a creature attacks, you may gain 1 life.
 timing=main
-oracle=Fox offering. Whenever a creature attacks, you may gain 1 life.
+oracle=Fox offering\nWhenever a creature attacks, you may gain 1 life.

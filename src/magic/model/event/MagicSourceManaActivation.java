@@ -1,6 +1,7 @@
 package magic.model.event;
 
 import magic.model.MagicCostManaType;
+import magic.model.MagicType;
 import magic.model.MagicGame;
 import magic.model.MagicManaType;
 import magic.model.MagicPermanent;
@@ -22,9 +23,23 @@ public class MagicSourceManaActivation {
             if (activation.canPlay(game,permanent)) {
                 available=true;
                 for (final MagicManaType manaType : activation.getManaTypes()) {
-                    if (activations[manaType.ordinal()] == null ||
-                        activations[manaType.ordinal()].getWeight() > activation.getWeight()) {
-                        activations[manaType.ordinal()] = activation;
+                    final int idx = manaType.ordinal();
+                    if (activations[idx] == null ||
+                        activations[idx].getWeight() > activation.getWeight()) {
+                        activations[idx] = activation;
+                    }
+                }
+
+                // rule 107.4h:
+                // The snow mana symbol {S} represents one generic mana in a cost.
+                // This generic mana can be paid with one mana of any type produced by a snow permanent.
+                // implementation:
+                // Each mana ability on a snow permanent produces an additional snow mana type
+                if (permanent.hasType(MagicType.Snow)) {
+                    final int idx = MagicManaType.Snow.ordinal();
+                    if (activations[idx] == null ||
+                        activations[idx].getWeight() > activation.getWeight()) {
+                        activations[idx] = activation;
                     }
                 }
             }

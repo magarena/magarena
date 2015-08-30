@@ -3,7 +3,7 @@ package magic.model.event;
 import magic.model.MagicDamage;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicDealDamageAction;
+import magic.model.action.DealDamageAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
@@ -34,14 +34,14 @@ public class MagicRedirectDamageEvent extends MagicEvent {
                             final MagicDamage damage = isCombat ?
                                 MagicDamage.Combat(event.getSource(), planeswalker, amount) :
                                 new MagicDamage(event.getSource(), planeswalker, amount);
-                            game.doAction(new MagicDealDamageAction(damage));
+                            game.doAction(new DealDamageAction(damage));
                         }
                     });
                 } else {
                     final MagicDamage damage = isCombat ?
                         MagicDamage.Combat(event.getSource(), event.getRefPlayer(), amount) :
                         new MagicDamage(event.getSource(), event.getRefPlayer(), amount);
-                    game.doAction(MagicDealDamageAction.NoRedirect(damage));
+                    game.doAction(DealDamageAction.NoRedirect(damage));
                 }
             }
         };

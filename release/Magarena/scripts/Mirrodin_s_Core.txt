@@ -1,5 +1,5 @@
 name=Mirrodin's Core
-image=http://mtgimage.com/card/mirrodin%27s%20core.jpg
+image=http://magiccards.info/scans/en/cns/208.jpg
 value=3.500
 rarity=U
 type=Land
@@ -8,4 +8,4 @@ ability={T}: Add {1} to your mana pool.;\
         {T}: Put a charge counter on SN.;\
         {T}, Remove a charge counter from SN: Add one mana of any color to your mana pool.
 timing=land
-oracle={T}: Add {1} to your mana pool. {T}: Put a charge counter on Mirrodin's Core. {T}, Remove a charge counter from Mirrodin's Core: Add one mana of any color to your mana pool.
+oracle={T}: Add {1} to your mana pool.\n{T}: Put a charge counter on Mirrodin's Core.\n{T}, Remove a charge counter from Mirrodin's Core: Add one mana of any color to your mana pool.

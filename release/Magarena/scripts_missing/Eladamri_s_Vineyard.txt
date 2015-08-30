@@ -1,9 +1,9 @@
 name=Eladamri's Vineyard
-image=http://mtgimage.com/card/eladamri%27s%20vineyard.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tp/118.jpg
+value=4.351
 rarity=R
 type=Enchantment
 cost={G}
 ability=At the beginning of each player's precombat main phase, add {G}{G} to that player's mana pool.
-timing=main
+timing=enchantment
 oracle=At the beginning of each player's precombat main phase, add {G}{G} to that player's mana pool.

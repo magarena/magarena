@@ -1,0 +1,11 @@
+name=Hand of Silumgar
+image=http://magiccards.info/scans/en/dtk/105.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={1}{B}
+pt=2/1
+ability=Deathtouch
+timing=main
+oracle=Deathtouch

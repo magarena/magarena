@@ -1,9 +1,9 @@
 name=Fireball
-image=http://mtgimage.com/card/fireball.jpg
+image=http://magiccards.info/scans/en/c13/106.jpg
 value=2.500
-rarity=C
+rarity=U
 type=Sorcery
 cost={X}{R}
 effect=SN deals X damage divided evenly, rounded down, among any number of target creatures and/or players.~SN costs {1} more to cast for each target beyond the first.
 timing=main
-oracle=Fireball deals X damage divided evenly, rounded down, among any number of target creatures and/or players. Fireball costs {1} more to cast for each target beyond the first.
+oracle=Fireball deals X damage divided evenly, rounded down, among any number of target creatures and/or players.\nFireball costs {1} more to cast for each target beyond the first.

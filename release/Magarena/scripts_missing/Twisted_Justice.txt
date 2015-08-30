@@ -1,6 +1,6 @@
 name=Twisted Justice
-image=http://mtgimage.com/card/twisted%20justice.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rav/237.jpg
+value=3.343
 rarity=U
 type=Sorcery
 cost={4}{U}{B}

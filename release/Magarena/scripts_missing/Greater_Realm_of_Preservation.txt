@@ -1,9 +1,9 @@
 name=Greater Realm of Preservation
-image=http://mtgimage.com/card/greater%20realm%20of%20preservation.jpg
-value=2.500
+image=http://magiccards.info/scans/en/med/13.jpg
+value=2.821
 rarity=U
 type=Enchantment
 cost={1}{W}
 ability={1}{W}: The next time a black or red source of your choice would deal damage to you this turn, prevent that damage.
-timing=main
+timing=enchantment
 oracle={1}{W}: The next time a black or red source of your choice would deal damage to you this turn, prevent that damage.

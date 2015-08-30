@@ -1,6 +1,6 @@
 name=Indentured Djinn
-image=http://mtgimage.com/card/indentured%20djinn.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/85.jpg
+value=2.903
 rarity=U
 type=Creature
 subtype=Djinn
@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying;\
         When SN enters the battlefield, each other player may draw up to three cards.
 timing=main
-oracle=Flying. When Indentured Djinn enters the battlefield, each other player may draw up to three cards.
+oracle=Flying\nWhen Indentured Djinn enters the battlefield, each other player may draw up to three cards.

@@ -1,0 +1,11 @@
+name=Sandcrafter Mage
+image=http://magiccards.info/scans/en/dtk/33.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={2}{W}
+pt=2/2
+ability=When SN enters the battlefield, bolster 1.
+timing=main
+oracle=When Sandcrafter Mage enters the battlefield, bolster 1.

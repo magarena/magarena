@@ -1,9 +1,9 @@
 name=Solidarity of Heroes
-image=http://mtgimage.com/card/solidarity%20of%20heroes.jpg
-value=2.500
+image=http://magiccards.info/scans/en/jou/141.jpg
+value=3.662
 rarity=U
 type=Instant
 cost={1}{G}
 effect=SN costs {1}{G} more to cast for each target beyond the first.~Choose any number of target creatures. Double the number of +1/+1 counters on each of them.
 timing=removal
-oracle=Strive — Solidarity of Heroes costs {1}{G} more to cast for each target beyond the first. Choose any number of target creatures. Double the number of +1/+1 counters on each of them.
+oracle=Strive — Solidarity of Heroes costs {1}{G} more to cast for each target beyond the first.\nChoose any number of target creatures. Double the number of +1/+1 counters on each of them.

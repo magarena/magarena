@@ -1,6 +1,6 @@
 name=Skullbriar, the Walking Grave
-image=http://mtgimage.com/card/skullbriar%2C%20the%20walking%20grave.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cmd/227.jpg
+value=4.166
 rarity=R
 type=Legendary,Creature
 subtype=Zombie,Elemental
@@ -10,4 +10,4 @@ ability=Haste;\
         Whenever SN deals combat damage to a player, put a +1/+1 counter on it.;\
         Counters remain on Skullbriar as it moves to any zone other than a player's hand or library.
 timing=main
-oracle=Haste. Whenever Skullbriar, the Walking Grave deals combat damage to a player, put a +1/+1 counter on it. Counters remain on Skullbriar as it moves to any zone other than a player's hand or library.
+oracle=Haste\nWhenever Skullbriar, the Walking Grave deals combat damage to a player, put a +1/+1 counter on it.\nCounters remain on Skullbriar as it moves to any zone other than a player's hand or library.

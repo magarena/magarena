@@ -1,5 +1,5 @@
 name=Scorching Winds
-image=http://mtgimage.com/card/scorching%20winds.jpg
+image=http://magiccards.info/scans/en/po/155.jpg
 value=3.139
 rarity=U
 type=Instant
@@ -7,4 +7,4 @@ cost={R}
 ability=Cast SN only during the declare attackers step and only if you've been attacked this step.
 effect=SN deals 1 damage to each attacking creature.
 timing=attack
-oracle=Cast Scorching Winds only during the declare attackers step and only if you've been attacked this step. Scorching Winds deals 1 damage to each attacking creature.
+oracle=Cast Scorching Winds only during the declare attackers step and only if you've been attacked this step.\nScorching Winds deals 1 damage to each attacking creature.

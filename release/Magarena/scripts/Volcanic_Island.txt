@@ -1,8 +1,9 @@
 name=Volcanic Island
-image=http://mtgimage.com/set/me4/volcanic%20island.jpg
+image=http://magiccards.info/scans/en/vma/324.jpg
 value=4.000
 rarity=R
 type=Land
 subtype=Island,Mountain
 mana=r4u4
 timing=land
+oracle=NONE

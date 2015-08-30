@@ -1,5 +1,5 @@
 name=Ember Weaver
-image=http://mtgimage.com/card/ember%20weaver.jpg
+image=http://magiccards.info/scans/en/cfx/81.jpg
 value=3.161
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/3
 ability=reach;\
         As long as you control a red permanent, SN gets +1/+0 and has first strike.
 timing=main
-oracle=Reach. As long as you control a red permanent, Ember Weaver gets +1/+0 and has first strike.
+oracle=Reach\nAs long as you control a red permanent, Ember Weaver gets +1/+0 and has first strike.

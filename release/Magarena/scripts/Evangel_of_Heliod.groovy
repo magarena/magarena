@@ -11,9 +11,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getPlayer().getDevotion(MagicColor.White);
-            game.doAction(new MagicPlayTokensAction(
+            game.doAction(new PlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("1/1 white Soldier creature token"),
+                CardDefinitions.getToken("1/1 white Soldier creature token"),
                 amount
             ));
         }

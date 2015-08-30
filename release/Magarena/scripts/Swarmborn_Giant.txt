@@ -1,5 +1,5 @@
 name=Swarmborn Giant
-image=http://mtgimage.com/card/swarmborn%20giant.jpg
+image=http://magiccards.info/scans/en/jou/144.jpg
 value=3.333
 rarity=U
 type=Creature
@@ -10,4 +10,4 @@ ability={4}{G}{G}: Monstrosity 2.;\
         As long as SN is monstrous, it has reach.
 timing=main
 requires_groovy_code
-oracle=When you're dealt combat damage, sacrifice Swarmborn Giant. {4}{G}{G}: Monstrosity 2. As long as Swarmborn Giant is monstrous, it has reach.
+oracle=When you're dealt combat damage, sacrifice Swarmborn Giant.\n{4}{G}{G}: Monstrosity 2.\nAs long as Swarmborn Giant is monstrous, it has reach.

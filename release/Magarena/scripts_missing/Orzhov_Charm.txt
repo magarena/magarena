@@ -1,9 +1,0 @@
-name=Orzhov Charm
-image=http://mtgimage.com/card/orzhov%20charm.jpg
-value=2.500
-rarity=U
-type=Instant
-cost={W}{B}
-effect=Choose one — • Return target creature you control and all Auras you control attached to it to their owner's hand. • Destroy target creature and you lose life equal to its toughness. • Return target creature card with converted mana cost 1 or less from your graveyard to the battlefield.
-timing=removal
-oracle=Choose one — • Return target creature you control and all Auras you control attached to it to their owner's hand. • Destroy target creature and you lose life equal to its toughness. • Return target creature card with converted mana cost 1 or less from your graveyard to the battlefield.

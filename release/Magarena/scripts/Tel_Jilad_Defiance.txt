@@ -1,9 +1,9 @@
 name=Tel-Jilad Defiance
-image=http://mtgimage.com/card/tel-jilad%20defiance.jpg
+image=http://magiccards.info/scans/en/som/129.jpg
 value=2.700
 rarity=C
 type=Instant
 cost={1}{G}
 effect=Target creature gains protection from artifacts until end of turn.~Draw a card.
 timing=pump
-oracle=Target creature gains protection from artifacts until end of turn. Draw a card.
+oracle=Target creature gains protection from artifacts until end of turn.\nDraw a card.

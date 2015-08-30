@@ -1,10 +1,10 @@
 name=Dragon Appeasement
-image=http://mtgimage.com/card/dragon%20appeasement.jpg
-value=2.500
+image=http://magiccards.info/scans/en/arb/115.jpg
+value=2.346
 rarity=U
 type=Enchantment
 cost={3}{B}{R}{G}
 ability=Skip your draw step.;\
         Whenever you sacrifice a creature, you may draw a card.
-timing=main
-oracle=Skip your draw step. Whenever you sacrifice a creature, you may draw a card.
+timing=enchantment
+oracle=Skip your draw step.\nWhenever you sacrifice a creature, you may draw a card.

@@ -1,5 +1,5 @@
 name=Wall of Opposition
-image=http://mtgimage.com/card/wall%20of%20opposition.jpg
+image=http://magiccards.info/scans/en/ch/56.jpg
 value=2.735
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={3}{R}{R}
 pt=0/6
 ability=defender;{1}: SN gets +1/+0 until end of turn.
 timing=main
-oracle=Defender. {1}: Wall of Opposition gets +1/+0 until end of turn.
+oracle=Defender\n{1}: Wall of Opposition gets +1/+0 until end of turn.

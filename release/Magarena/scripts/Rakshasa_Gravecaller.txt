@@ -1,0 +1,12 @@
+name=Rakshasa Gravecaller
+image=http://magiccards.info/scans/en/dtk/114.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Cat,Demon
+cost={4}{B}
+pt=3/6
+ability=Exploit;\
+        When SN exploits a creature, put two 2/2 black Zombie creature tokens onto the battlefield.
+timing=main
+oracle=Exploit\nWhen Rakshasa Gravecaller exploits a creature, put two 2/2 black Zombie creature tokens onto the battlefield.

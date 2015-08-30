@@ -1,9 +1,9 @@
 name=Galvanic Key
-image=http://mtgimage.com/card/galvanic%20key.jpg
+image=http://magiccards.info/scans/en/mi/173.jpg
 value=2.568
 rarity=C
 type=Artifact
 cost={2}
 ability=flash;{3},{T}:Untap target artifact.
 timing=flash
-oracle=Flash. {3}, {T}: Untap target artifact.
+oracle=Flash\n{3}, {T}: Untap target artifact.

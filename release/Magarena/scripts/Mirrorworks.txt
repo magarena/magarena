@@ -1,5 +1,5 @@
 name=Mirrorworks
-image=http://mtgimage.com/card/mirrorworks.jpg
+image=http://magiccards.info/scans/en/mbs/114.jpg
 value=3.634
 rarity=R
 type=Artifact

@@ -1,5 +1,5 @@
 name=Kathari Bomber
-image=http://mtgimage.com/card/kathari%20bomber.jpg
+image=http://magiccards.info/scans/en/ddn/11.jpg
 value=2.500
 rarity=C
 type=Creature
@@ -10,4 +10,4 @@ ability=Flying;\
         When SN deals combat damage to a player, put two 1/1 red Goblin creature tokens onto the battlefield.~Sacrifice SN.;\
         Unearth {3}{B}{R}
 timing=main
-oracle=Flying. When Kathari Bomber deals combat damage to a player, put two 1/1 red Goblin creature tokens onto the battlefield and sacrifice Kathari Bomber. Unearth {3}{B}{R}
+oracle=Flying\nWhen Kathari Bomber deals combat damage to a player, put two 1/1 red Goblin creature tokens onto the battlefield and sacrifice Kathari Bomber.\nUnearth {3}{B}{R}

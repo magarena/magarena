@@ -1,12 +1,12 @@
 name=Rusting Golem
-image=http://mtgimage.com/card/rusting%20golem.jpg
+image=http://magiccards.info/scans/en/ne/138.jpg
 value=2.679
 rarity=U
 type=Artifact,Creature
 subtype=Golem
 cost={4}
 pt=*/*
-ability=fading 5
+ability=fading 5;\
+        SN's power and toughness are each equal to the number of fade counters on it.
 timing=main
-requires_groovy_code
-oracle=Fading 5. Rusting Golem's power and toughness are each equal to the number of fade counters on it.
+oracle=Fading 5\nRusting Golem's power and toughness are each equal to the number of fade counters on it.

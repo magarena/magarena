@@ -1,9 +1,9 @@
 name=Snag
-image=http://mtgimage.com/card/snag.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pr/124.jpg
+value=3.222
 rarity=U
 type=Instant
 cost={3}{G}
 effect=You may discard a Forest card rather than pay SN's mana cost.~Prevent all combat damage that would be dealt by unblocked creatures this turn.
 timing=removal
-oracle=You may discard a Forest card rather than pay Snag's mana cost. Prevent all combat damage that would be dealt by unblocked creatures this turn.
+oracle=You may discard a Forest card rather than pay Snag's mana cost.\nPrevent all combat damage that would be dealt by unblocked creatures this turn.

@@ -1,5 +1,5 @@
 name=Myrsmith
-image=http://mtgimage.com/card/myrsmith.jpg
+image=http://magiccards.info/scans/en/som/16.jpg
 value=3.727
 rarity=U
 type=Creature

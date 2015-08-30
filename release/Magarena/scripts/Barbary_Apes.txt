@@ -1,5 +1,5 @@
 name=Barbary Apes
-image=http://mtgimage.com/card/barbary%20apes.jpg
+image=http://magiccards.info/scans/en/lg/90.jpg
 value=2.622
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Ape
 cost={1}{G}
 pt=2/2
 timing=main
+oracle=NONE

@@ -1,10 +1,9 @@
 name=Turn to Frog
-image=http://mtgimage.com/card/turn%20to%20frog.jpg
-value=3.400
-removal=3
+image=http://magiccards.info/scans/en/ori/81.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={1}{U}
 timing=removal
 requires_groovy_code
-oracle=Target creature loses all abilities and becomes a 1/1 blue Frog until end of turn.
+oracle=Until end of turn, target creature loses all abilities and becomes a blue Frog with base power and toughness 1/1.

@@ -1,5 +1,5 @@
 name=Fire-Field Ogre
-image=http://mtgimage.com/card/fire-field%20ogre.jpg
+image=http://magiccards.info/scans/en/ddh/53.jpg
 value=2.845
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=4/2
 ability=First strike;\
         Unearth {U}{B}{R}
 timing=main
-oracle=First strike. Unearth {U}{B}{R}
+oracle=First strike\nUnearth {U}{B}{R}

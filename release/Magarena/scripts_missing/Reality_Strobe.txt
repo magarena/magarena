@@ -1,9 +1,9 @@
 name=Reality Strobe
-image=http://mtgimage.com/card/reality%20strobe.jpg
-value=2.500
+image=http://magiccards.info/scans/en/fut/43.jpg
+value=3.518
 rarity=U
 type=Sorcery
 cost={4}{U}{U}
 effect=Return target permanent to its owner's hand. Exile SN with three time counters on it.~Suspend 3—{2}{U}
 timing=main
-oracle=Return target permanent to its owner's hand. Exile Reality Strobe with three time counters on it. Suspend 3—{2}{U}
+oracle=Return target permanent to its owner's hand. Exile Reality Strobe with three time counters on it.\nSuspend 3—{2}{U}

@@ -1,5 +1,5 @@
 name=Ludevic's Test Subject
-image=http://mtgimage.com/card/ludevic%27s%20test%20subject.jpg
+image=http://magiccards.info/scans/en/isd/64a.jpg
 value=3.806
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=Defender
 timing=main
 transform=Ludevic's Abomination
 requires_groovy_code
-oracle=Defender. {1}{U}: Put a hatchling counter on Ludevic's Test Subject. Then if there are five or more hatchling counters on it, remove all of them and transform it.
+oracle=Defender\n{1}{U}: Put a hatchling counter on Ludevic's Test Subject. Then if there are five or more hatchling counters on it, remove all of them and transform it.

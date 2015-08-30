@@ -1,0 +1,10 @@
+name=Spiraling Embers
+image=http://magiccards.info/scans/en/sok/116.jpg
+value=3.085
+rarity=C
+type=Sorcery
+subtype=Arcane
+cost={3}{R}
+effect=SN deals damage to target creature or player equal to the number of cards in your hand.
+timing=main
+oracle=Spiraling Embers deals damage to target creature or player equal to the number of cards in your hand.

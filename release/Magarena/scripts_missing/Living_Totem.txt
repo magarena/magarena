@@ -1,6 +1,6 @@
 name=Living Totem
-image=http://mtgimage.com/card/living%20totem.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/184.jpg
+value=2.429
 rarity=C
 type=Creature
 subtype=Plant,Elemental
@@ -9,4 +9,4 @@ pt=2/3
 ability=Convoke;\
         When SN enters the battlefield, you may put a +1/+1 counter on another target creature.
 timing=main
-oracle=Convoke. When Living Totem enters the battlefield, you may put a +1/+1 counter on another target creature.
+oracle=Convoke\nWhen Living Totem enters the battlefield, you may put a +1/+1 counter on another target creature.

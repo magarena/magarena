@@ -1,0 +1,9 @@
+name=Taigam's Strike
+image=http://magiccards.info/scans/en/dtk/81.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={3}{U}
+effect=Target creature gets +2/+0 until end of turn and can't be blocked this turn.~Rebound
+timing=main
+oracle=Target creature gets +2/+0 until end of turn and can't be blocked this turn.\nRebound

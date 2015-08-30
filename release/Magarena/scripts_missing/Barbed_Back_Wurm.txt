@@ -1,6 +1,6 @@
 name=Barbed-Back Wurm
-image=http://mtgimage.com/card/barbed-back%20wurm.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/3.jpg
+value=2.530
 rarity=U
 type=Creature
 subtype=Wurm

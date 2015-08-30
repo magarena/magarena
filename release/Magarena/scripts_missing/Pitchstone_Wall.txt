@@ -1,6 +1,6 @@
 name=Pitchstone Wall
-image=http://mtgimage.com/card/pitchstone%20wall.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tr/110.jpg
+value=3.017
 rarity=U
 type=Creature
 subtype=Wall
@@ -9,4 +9,4 @@ pt=2/5
 ability=Defender;\
         Whenever you discard a card, you may sacrifice SN. If you do, return the discarded card from your graveyard to your hand.
 timing=main
-oracle=Defender. Whenever you discard a card, you may sacrifice Pitchstone Wall. If you do, return the discarded card from your graveyard to your hand.
+oracle=Defender\nWhenever you discard a card, you may sacrifice Pitchstone Wall. If you do, return the discarded card from your graveyard to your hand.

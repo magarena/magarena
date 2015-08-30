@@ -1,5 +1,5 @@
 name=Sliptide Serpent
-image=http://mtgimage.com/card/sliptide%20serpent.jpg
+image=http://magiccards.info/scans/en/ne/43.jpg
 value=2.633
 rarity=R
 type=Creature

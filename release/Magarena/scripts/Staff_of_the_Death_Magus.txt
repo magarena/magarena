@@ -1,5 +1,5 @@
 name=Staff of the Death Magus
-image=http://mtgimage.com/card/staff%20of%20the%20death%20magus.jpg
+image=http://magiccards.info/scans/en/m15/232.jpg
 value=1.700
 rarity=U
 type=Artifact

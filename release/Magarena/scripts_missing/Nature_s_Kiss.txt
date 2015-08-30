@@ -1,11 +1,11 @@
 name=Nature's Kiss
-image=http://mtgimage.com/card/nature%27s%20kiss.jpg
-value=2.500
+image=http://magiccards.info/scans/en/wl/78.jpg
+value=2.467
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{G}
 ability=Enchant creature;\
         {1}, Exile the top card of your graveyard: Enchanted creature gets +1/+1 until end of turn.
-timing=main
-oracle=Enchant creature. {1}, Exile the top card of your graveyard: Enchanted creature gets +1/+1 until end of turn.
+timing=aura
+oracle=Enchant creature\n{1}, Exile the top card of your graveyard: Enchanted creature gets +1/+1 until end of turn.

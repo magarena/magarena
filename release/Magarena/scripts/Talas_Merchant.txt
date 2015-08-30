@@ -1,5 +1,5 @@
 name=Talas Merchant
-image=http://mtgimage.com/card/talas%20merchant.jpg
+image=http://magiccards.info/scans/en/po2/50.jpg
 value=2.550
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Human,Pirate
 cost={1}{U}
 pt=1/3
 timing=main
+oracle=NONE

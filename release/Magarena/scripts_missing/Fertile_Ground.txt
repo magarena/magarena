@@ -1,11 +1,11 @@
 name=Fertile Ground
-image=http://mtgimage.com/card/fertile%20ground.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pvc/52.jpg
+value=4.274
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{G}
 ability=Enchant land;\
         Whenever enchanted land is tapped for mana, its controller adds one mana of any color to his or her mana pool.
-timing=main
-oracle=Enchant land. Whenever enchanted land is tapped for mana, its controller adds one mana of any color to his or her mana pool.
+timing=aura
+oracle=Enchant land\nWhenever enchanted land is tapped for mana, its controller adds one mana of any color to his or her mana pool.

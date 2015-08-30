@@ -1,10 +1,10 @@
 name=Verdant Touch
-image=http://mtgimage.com/card/verdant%20touch.jpg
+image=http://magiccards.info/scans/en/sh/73.jpg
 value=3.311
 rarity=R
 type=Sorcery
 cost={1}{G}
 ability=Buyback {3}
+effect=Target land becomes a 2/2 creature that's still a land.~Buyback
 timing=main
-requires_groovy_code
-oracle=Buyback {3}. Target land becomes a 2/2 creature that's still a land.
+oracle=Buyback {3}\nTarget land becomes a 2/2 creature that's still a land.

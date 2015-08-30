@@ -1,0 +1,12 @@
+name=Thought Nibbler
+image=http://magiccards.info/scans/en/od/107.jpg
+value=2.303
+rarity=C
+type=Creature
+subtype=Beast
+cost={U}
+pt=1/1
+ability=Flying
+timing=main
+requires_groovy_code
+oracle=Flying\nYour maximum hand size is reduced by two.

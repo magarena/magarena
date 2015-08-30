@@ -1,5 +1,5 @@
 name=Nettle Swine
-image=http://mtgimage.com/card/nettle%20swine.jpg
+image=http://magiccards.info/scans/en/avr/186.jpg
 value=2.065
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Boar
 cost={3}{G}
 pt=4/3
 timing=main
+oracle=NONE

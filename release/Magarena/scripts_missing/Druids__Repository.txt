@@ -1,10 +1,10 @@
 name=Druids' Repository
-image=http://mtgimage.com/card/druids%27%20repository.jpg
-value=2.500
+image=http://magiccards.info/scans/en/avr/176.jpg
+value=3.721
 rarity=R
 type=Enchantment
 cost={1}{G}{G}
 ability=Whenever a creature you control attacks, put a charge counter on SN.;\
         Remove a charge counter from SN: Add one mana of any color to your mana pool.
-timing=main
-oracle=Whenever a creature you control attacks, put a charge counter on Druids' Repository. Remove a charge counter from Druids' Repository: Add one mana of any color to your mana pool.
+timing=enchantment
+oracle=Whenever a creature you control attacks, put a charge counter on Druids' Repository.\nRemove a charge counter from Druids' Repository: Add one mana of any color to your mana pool.

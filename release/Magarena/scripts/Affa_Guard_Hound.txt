@@ -1,12 +1,12 @@
 name=Affa Guard Hound
-image=http://mtgimage.com/card/affa%20guard%20hound.jpg
+image=http://magiccards.info/scans/en/roe/14.jpg
 value=2.938
 rarity=U
 type=Creature
 subtype=Hound
 cost={2}{W}
 pt=2/2
-ability=flash;\
+ability=Flash;\
         When SN enters the battlefield, target creature gets +0/+3 until end of turn.
 timing=pumpflash
-oracle=Flash. When Affa Guard Hound enters the battlefield, target creature gets +0/+3 until end of turn.
+oracle=Flash\nWhen Affa Guard Hound enters the battlefield, target creature gets +0/+3 until end of turn.

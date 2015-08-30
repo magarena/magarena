@@ -1,9 +1,9 @@
 name=Dream Chisel
-image=http://mtgimage.com/card/dream%20chisel.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/308.jpg
+value=3.464
 rarity=R
 type=Artifact
 cost={2}
 ability=Face-down creature spells you cast cost {1} less to cast.
-timing=main
+timing=artifact
 oracle=Face-down creature spells you cast cost {1} less to cast.

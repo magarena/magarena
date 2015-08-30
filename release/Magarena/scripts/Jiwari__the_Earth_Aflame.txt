@@ -1,5 +1,5 @@
 name=Jiwari, the Earth Aflame
-image=http://mtgimage.com/card/jiwari%2C%20the%20earth%20aflame.jpg
+image=http://magiccards.info/scans/en/sok/107.jpg
 value=3.355
 rarity=R
 type=Legendary,Creature
@@ -8,4 +8,4 @@ cost={3}{R}{R}
 pt=3/3
 timing=main
 requires_groovy_code
-oracle={X}{R}, {T}: Jiwari, the Earth Aflame deals X damage to target creature without flying. Channel — {X}{R}{R}{R}, Discard Jiwari: Jiwari deals X damage to each creature without flying.
+oracle={X}{R}, {T}: Jiwari, the Earth Aflame deals X damage to target creature without flying.\nChannel — {X}{R}{R}{R}, Discard Jiwari: Jiwari deals X damage to each creature without flying.

@@ -1,7 +1,7 @@
 name=Crush Underfoot
-image=http://mtgimage.com/card/crush%20underfoot.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/mma/109.jpg
+value=2.688
+rarity=C
 type=Tribal,Instant
 subtype=Giant
 cost={1}{R}

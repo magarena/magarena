@@ -1,11 +1,11 @@
 name=Sand Golem
-image=http://mtgimage.com/card/sand%20golem.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/283.jpg
+value=2.919
 rarity=U
 type=Artifact,Creature
 subtype=Golem
 cost={5}
 pt=3/3
 ability=When a spell or ability an opponent controls causes you to discard SN, return SN from your graveyard to the battlefield with a +1/+1 counter on it at the beginning of the next end step.
-timing=main
+timing=artifact
 oracle=When a spell or ability an opponent controls causes you to discard Sand Golem, return Sand Golem from your graveyard to the battlefield with a +1/+1 counter on it at the beginning of the next end step.

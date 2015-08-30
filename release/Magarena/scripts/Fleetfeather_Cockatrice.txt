@@ -1,5 +1,5 @@
 name=Fleetfeather Cockatrice
-image=http://mtgimage.com/card/fleetfeather%20cockatrice.jpg
+image=http://magiccards.info/scans/en/jou/149.jpg
 value=3.800
 rarity=U
 type=Creature
@@ -10,4 +10,4 @@ ability=Flash;\
         Flying;deathtouch;\
         {5}{G}{U}: Monstrosity 3.
 timing=flash
-oracle=Flash. Flying, deathtouch. {5}{G}{U}: Monstrosity 3.
+oracle=Flash\nFlying, deathtouch\n{5}{G}{U}: Monstrosity 3.

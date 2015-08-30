@@ -1,9 +1,9 @@
 name=Plunder
-image=http://mtgimage.com/card/plunder.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ts/174.jpg
+value=2.052
 rarity=C
 type=Sorcery
 cost={4}{R}
 effect=Destroy target artifact or land.~Suspend 4—{1}{R}
 timing=main
-oracle=Destroy target artifact or land. Suspend 4—{1}{R}
+oracle=Destroy target artifact or land.\nSuspend 4—{1}{R}

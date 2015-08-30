@@ -2,7 +2,7 @@ package magic.model.trigger;
 
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeTurnPTAction;
+import magic.model.action.ChangeTurnPTAction;
 import magic.model.event.MagicEvent;
 
 public class MagicWhenBlocksPumpTrigger extends MagicWhenBlocksTrigger {
@@ -29,7 +29,7 @@ public class MagicWhenBlocksPumpTrigger extends MagicWhenBlocksTrigger {
     }
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(new MagicChangeTurnPTAction(
+        game.doAction(new ChangeTurnPTAction(
             event.getPermanent(),
             amountPower,
             amountToughness

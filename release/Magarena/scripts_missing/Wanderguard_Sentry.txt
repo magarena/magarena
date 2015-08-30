@@ -1,6 +1,6 @@
 name=Wanderguard Sentry
-image=http://mtgimage.com/card/wanderguard%20sentry.jpg
-value=2.500
+image=http://magiccards.info/scans/en/9e/111.jpg
+value=1.554
 rarity=C
 type=Creature
 subtype=Drone

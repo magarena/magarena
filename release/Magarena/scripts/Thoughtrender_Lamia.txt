@@ -1,5 +1,5 @@
 name=Thoughtrender Lamia
-image=http://mtgimage.com/card/thoughtrender%20lamia.jpg
+image=http://magiccards.info/scans/en/jou/85.jpg
 value=3.167
 rarity=U
 type=Enchantment,Creature

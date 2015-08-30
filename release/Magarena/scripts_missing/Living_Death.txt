@@ -1,5 +1,5 @@
 name=Living Death
-image=http://mtgimage.com/card/living%20death.jpg
+image=http://magiccards.info/scans/en/vma/126.jpg
 value=2.500
 rarity=R
 type=Sorcery

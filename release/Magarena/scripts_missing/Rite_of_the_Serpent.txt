@@ -1,9 +1,0 @@
-name=Rite of the Serpent
-image=http://mtgimage.com/card/rite%20of%20the%20serpent.jpg
-value=2.500
-rarity=C
-type=Sorcery
-cost={4}{B}{B}
-effect=Destroy target creature. If that creature had a +1/+1 counter on it, put a 1/1 green Snake creature token onto the battlefield.
-timing=main
-oracle=Destroy target creature. If that creature had a +1/+1 counter on it, put a 1/1 green Snake creature token onto the battlefield.

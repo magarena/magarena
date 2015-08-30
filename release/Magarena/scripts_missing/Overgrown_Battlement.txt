@@ -1,6 +1,6 @@
 name=Overgrown Battlement
-image=http://mtgimage.com/card/overgrown%20battlement.jpg
-value=2.500
+image=http://magiccards.info/scans/en/roe/203.jpg
+value=4.268
 rarity=C
 type=Creature
 subtype=Wall
@@ -9,4 +9,4 @@ pt=0/4
 ability=Defender;\
         {T}: Add {G} to your mana pool for each creature with defender you control.
 timing=main
-oracle=Defender. {T}: Add {G} to your mana pool for each creature with defender you control.
+oracle=Defender\n{T}: Add {G} to your mana pool for each creature with defender you control.

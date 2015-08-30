@@ -1,0 +1,12 @@
+name=Mindscour Dragon
+image=http://magiccards.info/scans/en/frf/41.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dragon
+cost={4}{U}{U}
+pt=4/4
+ability=Flying;\
+        Whenever SN deals combat damage to an opponent, target player puts the top four cards of his or her library into his or her graveyard.
+timing=main
+oracle=Flying\nWhenever Mindscour Dragon deals combat damage to an opponent, target player puts the top four cards of his or her library into his or her graveyard.

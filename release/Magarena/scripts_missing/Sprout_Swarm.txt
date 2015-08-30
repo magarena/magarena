@@ -1,9 +1,9 @@
 name=Sprout Swarm
-image=http://mtgimage.com/card/sprout%20swarm.jpg
-value=2.500
+image=http://magiccards.info/scans/en/fut/138.jpg
+value=4.107
 rarity=C
 type=Instant
 cost={1}{G}
 effect=Convoke~Buyback {3}~Put a 1/1 green Saproling creature token onto the battlefield.
 timing=removal
-oracle=Convoke. Buyback {3}. Put a 1/1 green Saproling creature token onto the battlefield.
+oracle=Convoke\nBuyback {3}\nPut a 1/1 green Saproling creature token onto the battlefield.

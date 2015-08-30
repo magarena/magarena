@@ -1,5 +1,5 @@
 name=Captain of the Watch
-image=http://mtgimage.com/card/captain%20of%20the%20watch.jpg
+image=http://magiccards.info/scans/en/ddo/3.jpg
 value=3.990
 rarity=R
 type=Creature
@@ -12,4 +12,4 @@ ability=vigilance;\
         When SN enters the battlefield, put three 1/1 white Soldier creature tokens onto the battlefield.
 static=player
 timing=main
-oracle=Vigilance. Other Soldier creatures you control get +1/+1 and have vigilance. When Captain of the Watch enters the battlefield, put three 1/1 white Soldier creature tokens onto the battlefield.
+oracle=Vigilance\nOther Soldier creatures you control get +1/+1 and have vigilance.\nWhen Captain of the Watch enters the battlefield, put three 1/1 white Soldier creature tokens onto the battlefield.

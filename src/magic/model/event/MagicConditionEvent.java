@@ -5,21 +5,19 @@ import magic.model.condition.MagicCondition;
 
 public class MagicConditionEvent extends MagicEvent {
 
-    private final MagicCondition[] conds;
+    private final MagicCondition cond;
 
-    public MagicConditionEvent(final MagicSource source, final MagicCondition condition) {
+    public MagicConditionEvent(final MagicSource source, final MagicCondition condition, final MagicEventAction eventAction) {
         super(
             source,
-            MagicEvent.NO_ACTION,
+            eventAction,
             ""
         );
-        conds = new MagicCondition[]{
-            condition
-        };
+        cond = condition;
     }
 
     @Override
-    public MagicCondition[] getConditions() {
-        return conds;
+    public boolean isSatisfied() {
+        return cond.accept(getSource()) && super.isSatisfied();
     }
 }

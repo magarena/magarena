@@ -1,9 +1,9 @@
 name=Triangle of War
-image=http://mtgimage.com/card/triangle%20of%20war.jpg
+image=http://magiccards.info/scans/en/vma/288.jpg
 value=2.500
-rarity=R
+rarity=U
 type=Artifact
 cost={1}
 ability={2}, Sacrifice SN: Target creature you control fights target creature an opponent controls.
-timing=main
+timing=artifact
 oracle={2}, Sacrifice Triangle of War: Target creature you control fights target creature an opponent controls.

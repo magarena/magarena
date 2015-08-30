@@ -1,8 +1,9 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
     event.processTarget(game, {
-        final MagicDamage damage = new MagicDamage(event.getSource(),it,event.getRefInt());
-        game.doAction(new MagicDealDamageAction(damage));
+        final int manaCost = event.getRefInt();
+        game.logAppendValue(event.getPlayer(),manaCost);
+        game.doAction(new DealDamageAction(event.getSource(),it,manaCost));
     });
 }
 
@@ -12,7 +13,7 @@ def action = {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_ARTIFACT_OR_ENCHANTMENT,
+                NEG_TARGET_ARTIFACT_OR_ENCHANTMENT,
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target artifact or enchantment\$." +
@@ -22,14 +23,14 @@ def action = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicDestroyAction(it));
+                game.doAction(new DestroyAction(it));
                 if (!event.isKicked()) {
                     return;
                 }
                 final int amount = it.getConvertedCost();
                 game.addEvent(new MagicEvent(
                     event.getSource(),
-                    MagicTargetChoice.NEG_TARGET_CREATURE,
+                    NEG_TARGET_CREATURE,
                     new MagicDamageTargetPicker(amount),
                     amount,
                     action,

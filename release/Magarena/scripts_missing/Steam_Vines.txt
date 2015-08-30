@@ -1,11 +1,11 @@
 name=Steam Vines
-image=http://mtgimage.com/card/steam%20vines.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/223.jpg
+value=2.068
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{R}{R}
 ability=Enchant land;\
         When enchanted land becomes tapped, destroy it and SN deals 1 damage to that land's controller. That player attaches SN to a land of his or her choice.
-timing=main
-oracle=Enchant land. When enchanted land becomes tapped, destroy it and Steam Vines deals 1 damage to that land's controller. That player attaches Steam Vines to a land of his or her choice.
+timing=aura
+oracle=Enchant land\nWhen enchanted land becomes tapped, destroy it and Steam Vines deals 1 damage to that land's controller. That player attaches Steam Vines to a land of his or her choice.

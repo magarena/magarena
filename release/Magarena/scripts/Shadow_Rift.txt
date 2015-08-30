@@ -1,9 +1,9 @@
 name=Shadow Rift
-image=http://mtgimage.com/card/shadow%20rift.jpg
+image=http://magiccards.info/scans/en/tp/86.jpg
 value=4.458
 rarity=C
 type=Instant
 cost={U}
 effect=Target creature gains shadow until end of turn.~Draw a card.
 timing=animate
-oracle=Target creature gains shadow until end of turn. Draw a card.
+oracle=Target creature gains shadow until end of turn.\nDraw a card.

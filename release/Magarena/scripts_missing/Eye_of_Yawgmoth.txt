@@ -1,9 +1,9 @@
 name=Eye of Yawgmoth
-image=http://mtgimage.com/card/eye%20of%20yawgmoth.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ne/129.jpg
+value=3.014
 rarity=R
 type=Artifact
 cost={3}
 ability={3}, {T}, Sacrifice a creature: Reveal a number of cards from the top of your library equal to the sacrificed creature's power. Put one into your hand and exile the rest.
-timing=main
+timing=artifact
 oracle={3}, {T}, Sacrifice a creature: Reveal a number of cards from the top of your library equal to the sacrificed creature's power. Put one into your hand and exile the rest.

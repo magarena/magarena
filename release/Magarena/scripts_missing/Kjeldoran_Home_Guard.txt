@@ -1,6 +1,6 @@
 name=Kjeldoran Home Guard
-image=http://mtgimage.com/card/kjeldoran%20home%20guard.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cstd/3.jpg
+value=3.382
 rarity=U
 type=Creature
 subtype=Human,Soldier

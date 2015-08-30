@@ -1,5 +1,5 @@
 name=Repopulate
-image=http://mtgimage.com/card/repopulate.jpg
+image=http://magiccards.info/scans/en/ul/111.jpg
 value=4.174
 rarity=C
 type=Instant
@@ -7,4 +7,4 @@ cost={1}{G}
 ability=Cycling {2}
 timing=removal
 requires_groovy_code
-oracle=Shuffle all creature cards from target player's graveyard into that player's library. Cycling {2}
+oracle=Shuffle all creature cards from target player's graveyard into that player's library.\nCycling {2}

@@ -1,12 +1,12 @@
 name=Teysa, Envoy of Ghosts
-image=http://mtgimage.com/card/teysa%2C%20envoy%20of%20ghosts.jpg
+image=http://magiccards.info/scans/en/dgm/108.jpg
 value=3.835
 rarity=R
 type=Legendary,Creature
 subtype=Human,Advisor
 cost={5}{W}{B}
 pt=4/4
-ability=vigilance;protection from creatures
+ability=vigilance;protection from creatures;\
+        Whenever a creature deals combat damage to you, destroy that creature.~Put a 1/1 white and black Spirit creature token with flying onto the battlefield.
 timing=main
-requires_groovy_code
-oracle=Vigilance, protection from creatures. Whenever a creature deals combat damage to you, destroy that creature. Put a 1/1 white and black Spirit creature token with flying onto the battlefield.
+oracle=Vigilance, protection from creatures\nWhenever a creature deals combat damage to you, destroy that creature. Put a 1/1 white and black Spirit creature token with flying onto the battlefield.

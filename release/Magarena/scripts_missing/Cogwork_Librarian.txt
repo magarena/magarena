@@ -1,6 +1,6 @@
 name=Cogwork Librarian
-image=http://mtgimage.com/card/cogwork%20librarian.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cns/58.jpg
+value=3.938
 rarity=C
 type=Artifact,Creature
 subtype=Construct
@@ -8,5 +8,5 @@ cost={4}
 pt=3/3
 ability=Draft SN face up.;\
         As you draft a card, you may draft an additional card from that booster pack. If you do, put SN into that booster pack.
-timing=main
-oracle=Draft Cogwork Librarian face up. As you draft a card, you may draft an additional card from that booster pack. If you do, put Cogwork Librarian into that booster pack.
+timing=artifact
+oracle=Draft Cogwork Librarian face up.\nAs you draft a card, you may draft an additional card from that booster pack. If you do, put Cogwork Librarian into that booster pack.

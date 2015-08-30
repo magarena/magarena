@@ -1,6 +1,6 @@
 name=Selective Memory
-image=http://mtgimage.com/card/selective%20memory.jpg
-value=2.500
+image=http://magiccards.info/scans/en/wwk/37.jpg
+value=2.679
 rarity=R
 type=Sorcery
 cost={3}{U}

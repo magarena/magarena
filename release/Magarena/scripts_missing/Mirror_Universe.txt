@@ -1,9 +1,0 @@
-name=Mirror Universe
-image=http://mtgimage.com/card/mirror%20universe.jpg
-value=2.500
-rarity=R
-type=Artifact
-cost={6}
-ability={T}, Sacrifice SN: Exchange life totals with target opponent. Activate this ability only during your upkeep.
-timing=main
-oracle={T}, Sacrifice Mirror Universe: Exchange life totals with target opponent. Activate this ability only during your upkeep.

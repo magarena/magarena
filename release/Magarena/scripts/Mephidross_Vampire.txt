@@ -1,5 +1,5 @@
 name=Mephidross Vampire
-image=http://mtgimage.com/card/mephidross%20vampire.jpg
+image=http://magiccards.info/scans/en/5dn/53.jpg
 value=4.269
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=3/4
 ability=flying;creatures you control have "Whenever SN deals damage to a creature, put a +1/+1 counter on SN."
 timing=main
 requires_groovy_code
-oracle=Flying. Each creature you control is a Vampire in addition to its other creature types and has "Whenever this creature deals damage to a creature, put a +1/+1 counter on this creature."
+oracle=Flying\nEach creature you control is a Vampire in addition to its other creature types and has "Whenever this creature deals damage to a creature, put a +1/+1 counter on this creature."

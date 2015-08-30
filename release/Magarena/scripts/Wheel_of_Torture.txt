@@ -1,5 +1,5 @@
 name=Wheel of Torture
-image=http://mtgimage.com/card/wheel%20of%20torture.jpg
+image=http://magiccards.info/scans/en/ul/138.jpg
 value=3.612
 rarity=R
 type=Artifact

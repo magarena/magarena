@@ -1,5 +1,5 @@
 name=Unworthy Dead
-image=http://mtgimage.com/card/unworthy%20dead.jpg
+image=http://magiccards.info/scans/en/us/163.jpg
 value=3.634
 rarity=C
 type=Creature

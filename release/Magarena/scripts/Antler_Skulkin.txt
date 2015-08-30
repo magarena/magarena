@@ -1,11 +1,11 @@
 name=Antler Skulkin
-image=http://mtgimage.com/card/antler%20skulkin.jpg
+image=http://magiccards.info/scans/en/eve/167.jpg
 value=2.111
 rarity=C
 type=Artifact,Creature
 subtype=Scarecrow
 cost={5}
 pt=3/3
-ability={2}:Target white creature gains persist until end of turn.
+ability={2}: Target white creature gains persist until end of turn.
 timing=artifact
 oracle={2}: Target white creature gains persist until end of turn.

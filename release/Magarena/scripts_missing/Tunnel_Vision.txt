@@ -1,6 +1,6 @@
 name=Tunnel Vision
-image=http://mtgimage.com/card/tunnel%20vision.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rav/72.jpg
+value=3.871
 rarity=R
 type=Sorcery
 cost={5}{U}

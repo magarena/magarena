@@ -1,6 +1,6 @@
 name=Reaper of Sheoldred
-image=http://mtgimage.com/card/reaper%20of%20sheoldred.jpg
-value=2.500
+image=http://magiccards.info/scans/en/nph/72.jpg
+value=3.395
 rarity=U
 type=Creature
 subtype=Horror
@@ -9,4 +9,4 @@ pt=2/5
 ability=Infect
 timing=main
 requires_groovy_code
-oracle=Infect. Whenever a source deals damage to Reaper of Sheoldred, that source's controller gets a poison counter.
+oracle=Infect\nWhenever a source deals damage to Reaper of Sheoldred, that source's controller gets a poison counter.

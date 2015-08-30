@@ -1,0 +1,11 @@
+name=Battle-Rattle Shaman
+image=http://magiccards.info/scans/en/roe/136.jpg
+value=3.137
+rarity=C
+type=Creature
+subtype=Goblin,Shaman
+cost={3}{R}
+pt=2/2
+ability=At the beginning of combat on your turn, you may have target creature get +2/+0 until end of turn.
+timing=main
+oracle=At the beginning of combat on your turn, you may have target creature get +2/+0 until end of turn.

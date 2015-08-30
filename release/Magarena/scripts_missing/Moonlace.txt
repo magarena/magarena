@@ -1,6 +1,6 @@
 name=Moonlace
-image=http://mtgimage.com/card/moonlace.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ts/68.jpg
+value=2.218
 rarity=R
 type=Instant
 cost={U}

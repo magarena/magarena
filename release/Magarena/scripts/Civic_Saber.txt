@@ -1,0 +1,11 @@
+name=Civic Saber
+image=http://magiccards.info/scans/en/rtr/227.jpg
+value=3.093
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={1}
+ability=Equip {1}
+timing=equipment
+requires_groovy_code
+oracle=Equipped creature gets +1/+0 for each of its colors.\nEquip {1}

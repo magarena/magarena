@@ -1,10 +1,10 @@
 name=Ritual of Subdual
-image=http://mtgimage.com/card/ritual%20of%20subdual.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me2/174.jpg
+value=3.080
 rarity=R
 type=Enchantment
 cost={4}{G}{G}
 ability=Cumulative upkeep {2};\
         If a land is tapped for mana, it produces colorless mana instead of any other type.
-timing=main
-oracle=Cumulative upkeep {2}. If a land is tapped for mana, it produces colorless mana instead of any other type.
+timing=enchantment
+oracle=Cumulative upkeep {2}\nIf a land is tapped for mana, it produces colorless mana instead of any other type.

@@ -1,5 +1,5 @@
 name=Bleak Coven Vampires
-image=http://mtgimage.com/card/bleak%20coven%20vampires.jpg
+image=http://magiccards.info/scans/en/som/55.jpg
 value=2.692
 rarity=C
 type=Creature

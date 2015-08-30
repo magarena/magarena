@@ -1,0 +1,10 @@
+name=Jace's Sanctum
+image=http://magiccards.info/scans/en/ori/61.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={3}{U}
+ability=Instant and sorcery spells you cast cost {1} less to cast.;\
+        Whenever you cast an instant or sorcery spell, scry 1.
+timing=enchantment
+oracle=Instant and sorcery spells you cast cost {1} less to cast.\nWhenever you cast an instant or sorcery spell, scry 1.

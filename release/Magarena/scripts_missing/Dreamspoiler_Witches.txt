@@ -1,6 +1,6 @@
 name=Dreamspoiler Witches
-image=http://mtgimage.com/card/dreamspoiler%20witches.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mma/81.jpg
+value=2.625
 rarity=C
 type=Creature
 subtype=Faerie,Wizard
@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         Whenever you cast a spell during an opponent's turn, you may have target creature get -1/-1 until end of turn.
 timing=main
-oracle=Flying. Whenever you cast a spell during an opponent's turn, you may have target creature get -1/-1 until end of turn.
+oracle=Flying\nWhenever you cast a spell during an opponent's turn, you may have target creature get -1/-1 until end of turn.

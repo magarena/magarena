@@ -1,5 +1,5 @@
 name=Silvos, Rogue Elemental
-image=http://mtgimage.com/card/silvos%2C%20rogue%20elemental.jpg
+image=http://magiccards.info/scans/en/vma/231.jpg
 value=4.500
 rarity=R
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=8/5
 ability=trample;\
         {G}: Regenerate SN.
 timing=main
-oracle=Trample. {G}: Regenerate Silvos, Rogue Elemental.
+oracle=Trample\n{G}: Regenerate Silvos, Rogue Elemental.

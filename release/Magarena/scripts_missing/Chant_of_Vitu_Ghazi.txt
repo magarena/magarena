@@ -1,9 +1,9 @@
 name=Chant of Vitu-Ghazi
-image=http://mtgimage.com/card/chant%20of%20vitu-ghazi.jpg
+image=http://magiccards.info/scans/en/rav/7.jpg
 value=2.500
 rarity=U
 type=Instant
 cost={6}{W}{W}
 effect=Convoke~Prevent all damage that would be dealt by creatures this turn. You gain life equal to the damage prevented this way.
 timing=removal
-oracle=Convoke. Prevent all damage that would be dealt by creatures this turn. You gain life equal to the damage prevented this way.
+oracle=Convoke\nPrevent all damage that would be dealt by creatures this turn. You gain life equal to the damage prevented this way.

@@ -1,10 +1,11 @@
 name=Warrior's Stand
-image=http://mtgimage.com/card/warrior%27s%20stand.jpg
+image=http://magiccards.info/scans/en/p3k/31.jpg
 value=3.018
 rarity=U
 type=Instant
 cost={1}{W}
-ability=Cast SN only during the declare attackers step and only if you've been attacked this step.
+ability=Cast SN only during the declare attackers step and only if you've been attacked this step.;\
+        Cast SN with AI only if you control a creature.
 effect=Creatures you control get +2/+2 until end of turn.
 timing=attack
-oracle=Cast Warrior's Stand only during the declare attackers step and only if you've been attacked this step. Creatures you control get +2/+2 until end of turn.
+oracle=Cast Warrior's Stand only during the declare attackers step and only if you've been attacked this step.\nCreatures you control get +2/+2 until end of turn.

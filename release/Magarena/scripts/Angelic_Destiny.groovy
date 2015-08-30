@@ -12,11 +12,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicCard card = event.getPermanent().getCard();
-            if (card.isInGraveyard()) {
-                game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-                game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
-            }
+            game.doAction(new ShiftCardAction(
+                event.getPermanent().getCard(),
+                MagicLocationType.Graveyard,
+                MagicLocationType.OwnersHand
+            ));
         }
     }
 ]

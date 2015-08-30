@@ -1,5 +1,5 @@
 name=Journey to Nowhere
-image=http://mtgimage.com/card/journey%20to%20nowhere.jpg
+image=http://magiccards.info/scans/en/cmd/17.jpg
 value=3.871
 removal=2
 rarity=C
@@ -8,4 +8,4 @@ cost={1}{W}
 ability=When SN enters the battlefield, exile target creature.;\
         When SN leaves the battlefield, return the exiled card to the battlefield under its owner's control.
 timing=enchantment
-oracle=When Journey to Nowhere enters the battlefield, exile target creature. When Journey to Nowhere leaves the battlefield, return the exiled card to the battlefield under its owner's control.
+oracle=When Journey to Nowhere enters the battlefield, exile target creature.\nWhen Journey to Nowhere leaves the battlefield, return the exiled card to the battlefield under its owner's control.

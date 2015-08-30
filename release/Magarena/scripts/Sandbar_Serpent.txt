@@ -1,5 +1,5 @@
 name=Sandbar Serpent
-image=http://mtgimage.com/card/sandbar%20serpent.jpg
+image=http://magiccards.info/scans/en/us/95.jpg
 value=2.867
 rarity=U
 type=Creature

@@ -1,11 +1,11 @@
 name=Myr Servitor
-image=http://mtgimage.com/card/myr%20servitor.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5dn/139.jpg
+value=4.331
 rarity=C
 type=Artifact,Creature
 subtype=Myr
 cost={1}
 pt=1/1
 ability=At the beginning of your upkeep, if SN is on the battlefield, each player returns all cards named SN from his or her graveyard to the battlefield.
-timing=main
+timing=artifact
 oracle=At the beginning of your upkeep, if Myr Servitor is on the battlefield, each player returns all cards named Myr Servitor from his or her graveyard to the battlefield.

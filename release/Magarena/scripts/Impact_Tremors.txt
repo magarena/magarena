@@ -1,0 +1,9 @@
+name=Impact Tremors
+image=http://magiccards.info/scans/en/dtk/140.jpg
+value=2.500
+rarity=C
+type=Enchantment
+cost={1}{R}
+ability=Whenever a creature enters the battlefield under your control, SN deals 1 damage to each opponent.
+timing=main
+oracle=Whenever a creature enters the battlefield under your control, Impact Tremors deals 1 damage to each opponent.

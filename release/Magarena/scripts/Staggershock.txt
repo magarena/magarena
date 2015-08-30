@@ -1,0 +1,10 @@
+name=Staggershock
+image=http://magiccards.info/scans/en/roe/166.jpg
+value=4.227
+rarity=C
+type=Instant
+cost={2}{R}
+effect=SN deals 2 damage to target creature or player.~Rebound
+timing=removal
+removal=3
+oracle=Staggershock deals 2 damage to target creature or player.\nRebound

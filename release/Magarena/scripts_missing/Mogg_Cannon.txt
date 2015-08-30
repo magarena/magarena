@@ -1,9 +1,9 @@
 name=Mogg Cannon
-image=http://mtgimage.com/card/mogg%20cannon.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tp/288.jpg
+value=3.015
 rarity=U
 type=Artifact
 cost={2}
 ability={T}: Target creature you control gets +1/+0 and gains flying until end of turn. Destroy that creature at the beginning of the next end step.
-timing=main
+timing=artifact
 oracle={T}: Target creature you control gets +1/+0 and gains flying until end of turn. Destroy that creature at the beginning of the next end step.

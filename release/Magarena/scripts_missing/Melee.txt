@@ -1,9 +1,9 @@
 name=Melee
-image=http://mtgimage.com/card/melee.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ia/200.jpg
+value=3.375
 rarity=U
 type=Instant
 cost={4}{R}
 effect=Cast SN only during your turn and only during combat before blockers are declared.~You choose which creatures block this combat and how those creatures block.~Whenever a creature attacks and isn't blocked this combat, untap it and remove it from combat.
 timing=removal
-oracle=Cast Melee only during your turn and only during combat before blockers are declared. You choose which creatures block this combat and how those creatures block. Whenever a creature attacks and isn't blocked this combat, untap it and remove it from combat.
+oracle=Cast Melee only during your turn and only during combat before blockers are declared.\nYou choose which creatures block this combat and how those creatures block.\nWhenever a creature attacks and isn't blocked this combat, untap it and remove it from combat.

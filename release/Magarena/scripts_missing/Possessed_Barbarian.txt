@@ -1,12 +1,12 @@
 name=Possessed Barbarian
-image=http://mtgimage.com/card/possessed%20barbarian.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tr/111.jpg
+value=3.661
 rarity=R
 type=Creature
 subtype=Human,Barbarian,Horror
 cost={2}{R}{R}
 pt=3/3
 ability=First strike;\
-        Threshold — As long as seven or more cards are in your graveyard, SN gets +1/+1, is black, and has "{2}{B}, {T}: Destroy target red creature."
+        As long as seven or more cards are in your graveyard, SN gets +1/+1, is black, and has "{2}{B}, {T}: Destroy target red creature."
 timing=main
-oracle=First strike. Threshold — As long as seven or more cards are in your graveyard, Possessed Barbarian gets +1/+1, is black, and has "{2}{B}, {T}: Destroy target red creature."
+oracle=First strike\nThreshold — As long as seven or more cards are in your graveyard, Possessed Barbarian gets +1/+1, is black, and has "{2}{B}, {T}: Destroy target red creature."

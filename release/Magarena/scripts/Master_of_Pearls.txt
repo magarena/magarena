@@ -1,5 +1,5 @@
 name=Master of Pearls
-image=http://mtgimage.com/card/master%20of%20pearls.jpg
+image=http://magiccards.info/scans/en/ktk/18.jpg
 value=4.000
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Morph {3}{W}{W};\
         When SN is turned face up, creatures you control get +2/+2 until end of turn.
 timing=main
-oracle=Morph {3}{W}{W}. When Master of Pearls is turned face up, creatures you control get +2/+2 until end of turn.
+oracle=Morph {3}{W}{W}\nWhen Master of Pearls is turned face up, creatures you control get +2/+2 until end of turn.

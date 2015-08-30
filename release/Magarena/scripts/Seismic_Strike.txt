@@ -1,9 +1,9 @@
 name=Seismic Strike
-image=http://mtgimage.com/card/seismic%20strike.jpg
+image=http://magiccards.info/scans/en/m15/280.jpg
 value=2.400
 rarity=C
 type=Instant
 cost={2}{R}
+effect=SN deals damage to target creature equal to the number of Mountains you control.
 timing=removal
-requires_groovy_code
 oracle=Seismic Strike deals damage to target creature equal to the number of Mountains you control.

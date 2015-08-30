@@ -1,0 +1,9 @@
+name=Lich's Tomb
+image=http://magiccards.info/scans/en/ds/128.jpg
+value=2.783
+rarity=R
+type=Artifact
+cost={4}
+timing=artifact
+requires_groovy_code
+oracle=You don't lose the game for having 0 or less life.\nWhenever you lose life, sacrifice a permanent for each 1 life you lost.

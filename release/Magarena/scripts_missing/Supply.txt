@@ -1,6 +1,6 @@
 name=Supply
-image=http://mtgimage.com/card/supplydemand.jpg
-value=2.500
+image=http://magiccards.info/scans/en/di/157a.jpg
+value=4.020
 rarity=U
 type=Sorcery
 cost={X}{G}{W}

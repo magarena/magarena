@@ -1,0 +1,11 @@
+name=Fleshwrither
+image=http://magiccards.info/scans/en/fut/84.jpg
+value=3.520
+rarity=U
+type=Creature
+subtype=Horror
+cost={2}{B}{B}
+pt=3/3
+timing=main
+requires_groovy_code
+oracle=Transfigure {1}{B}{B}

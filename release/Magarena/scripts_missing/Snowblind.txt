@@ -1,11 +1,11 @@
 name=Snowblind
-image=http://mtgimage.com/card/snowblind.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ia/152.jpg
+value=1.804
 rarity=R
 type=Enchantment
 subtype=Aura
 cost={3}{G}
 ability=Enchant creature;\
         Enchanted creature gets -X/-Y. If that creature is attacking, X is the number of snow lands defending player controls. Otherwise, X is the number of snow lands its controller controls. Y is equal to X or to enchanted creature's toughness minus 1, whichever is smaller.
-timing=main
-oracle=Enchant creature. Enchanted creature gets -X/-Y. If that creature is attacking, X is the number of snow lands defending player controls. Otherwise, X is the number of snow lands its controller controls. Y is equal to X or to enchanted creature's toughness minus 1, whichever is smaller.
+timing=aura
+oracle=Enchant creature\nEnchanted creature gets -X/-Y. If that creature is attacking, X is the number of snow lands defending player controls. Otherwise, X is the number of snow lands its controller controls. Y is equal to X or to enchanted creature's toughness minus 1, whichever is smaller.

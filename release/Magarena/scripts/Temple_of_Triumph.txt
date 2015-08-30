@@ -1,5 +1,5 @@
 name=Temple of Triumph
-image=http://mtgimage.com/card/temple%20of%20triumph.jpg
+image=http://magiccards.info/scans/en/ths/228.jpg
 value=3.518
 rarity=R
 type=Land
@@ -8,4 +8,4 @@ ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, scry 1.;\
         {T}: Add {R} or {W} to your mana pool.
 timing=tapland
-oracle=Temple of Triumph enters the battlefield tapped. When Temple of Triumph enters the battlefield, scry 1. {T}: Add {R} or {W} to your mana pool.
+oracle=Temple of Triumph enters the battlefield tapped.\nWhen Temple of Triumph enters the battlefield, scry 1.\n{T}: Add {R} or {W} to your mana pool.

@@ -1,9 +1,9 @@
 name=Restrain
-image=http://mtgimage.com/card/restrain.jpg
+image=http://magiccards.info/scans/en/in/30.jpg
 value=2.560
 rarity=C
 type=Instant
 cost={2}{W}
 effect=Prevent all combat damage that would be dealt by target attacking creature this turn.~Draw a card.
 timing=block
-oracle=Prevent all combat damage that would be dealt by target attacking creature this turn. Draw a card.
+oracle=Prevent all combat damage that would be dealt by target attacking creature this turn.\nDraw a card.

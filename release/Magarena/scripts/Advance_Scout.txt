@@ -1,11 +1,12 @@
 name=Advance Scout
-image=http://mtgimage.com/card/advance%20scout.jpg
+image=http://magiccards.info/scans/en/br/2.jpg
 value=3.645
 rarity=C
 type=Creature
 subtype=Human,Soldier,Scout
 cost={1}{W}
 pt=1/1
-ability=first strike;{W}:Target creature gains first strike until end of turn.
+ability=First strike;\
+        {W}: Target creature gains first strike until end of turn.
 timing=main
-oracle=First strike. {W}: Target creature gains first strike until end of turn.
+oracle=First strike\n{W}: Target creature gains first strike until end of turn.

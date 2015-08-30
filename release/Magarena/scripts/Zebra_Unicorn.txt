@@ -1,5 +1,5 @@
 name=Zebra Unicorn
-image=http://mtgimage.com/card/zebra%20unicorn.jpg
+image=http://magiccards.info/scans/en/mr/350.jpg
 value=3.277
 rarity=U
 type=Creature

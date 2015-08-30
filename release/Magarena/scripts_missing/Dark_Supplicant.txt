@@ -1,6 +1,6 @@
 name=Dark Supplicant
-image=http://mtgimage.com/card/dark%20supplicant.jpg
-value=2.500
+image=http://magiccards.info/scans/en/le/64.jpg
+value=3.375
 rarity=U
 type=Creature
 subtype=Human,Cleric

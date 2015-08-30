@@ -1,5 +1,5 @@
 name=Shatter
-image=http://mtgimage.com/card/shatter.jpg
+image=http://magiccards.info/scans/en/ktk/120.jpg
 value=2.500
 rarity=C
 type=Instant

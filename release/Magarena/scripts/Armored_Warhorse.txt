@@ -1,5 +1,5 @@
 name=Armored Warhorse
-image=http://mtgimage.com/card/armored%20warhorse.jpg
+image=http://magiccards.info/scans/en/m12/7.jpg
 value=3.106
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Horse
 cost={W}{W}
 pt=2/3
 timing=main
+oracle=NONE

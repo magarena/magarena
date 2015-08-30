@@ -1,5 +1,5 @@
 name=Syphon Life
-image=http://mtgimage.com/card/syphon%20life.jpg
+image=http://magiccards.info/scans/en/mma/100.jpg
 value=3.300
 rarity=C
 type=Sorcery
@@ -7,4 +7,4 @@ cost={1}{B}{B}
 effect=Target player loses 2 life and you gain 2 life.
 ability=Retrace
 timing=main
-oracle=Target player loses 2 life and you gain 2 life. Retrace
+oracle=Target player loses 2 life and you gain 2 life.\nRetrace

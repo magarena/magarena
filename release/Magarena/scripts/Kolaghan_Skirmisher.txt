@@ -1,0 +1,11 @@
+name=Kolaghan Skirmisher
+image=http://magiccards.info/scans/en/dtk/107.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={1}{B}
+pt=2/2
+ability=Dash {2}{B}
+timing=main
+oracle=Dash {2}{B}

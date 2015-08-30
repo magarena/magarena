@@ -1,6 +1,6 @@
 name=Wave of Indifference
-image=http://mtgimage.com/card/wave%20of%20indifference.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/243.jpg
+value=4.267
 rarity=C
 type=Sorcery
 cost={X}{R}

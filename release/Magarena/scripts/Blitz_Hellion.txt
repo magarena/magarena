@@ -1,5 +1,5 @@
 name=Blitz Hellion
-image=http://mtgimage.com/card/blitz%20hellion.jpg
+image=http://magiccards.info/scans/en/arb/49.jpg
 value=3.302
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=7/7
 ability=trample;haste
 timing=fmain
 requires_groovy_code
-oracle=Trample, haste. At the beginning of the end step, Blitz Hellion's owner shuffles it into his or her library.
+oracle=Trample, haste\nAt the beginning of the end step, Blitz Hellion's owner shuffles it into his or her library.

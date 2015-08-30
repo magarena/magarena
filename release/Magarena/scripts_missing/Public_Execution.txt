@@ -1,9 +1,0 @@
-name=Public Execution
-image=http://mtgimage.com/card/public%20execution.jpg
-value=2.500
-rarity=U
-type=Instant
-cost={5}{B}
-effect=Destroy target creature an opponent controls. Each other creature that player controls gets -2/-0 until end of turn.
-timing=removal
-oracle=Destroy target creature an opponent controls. Each other creature that player controls gets -2/-0 until end of turn.

@@ -1,5 +1,5 @@
 name=Champion's Drake
-image=http://mtgimage.com/card/champion%27s%20drake.jpg
+image=http://magiccards.info/scans/en/roe/56.jpg
 value=3.231
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=flying;\
         SN gets +3/+3 as long as you control a creature with three or more level counters on it.
 timing=main
-oracle=Flying. Champion's Drake gets +3/+3 as long as you control a creature with three or more level counters on it.
+oracle=Flying\nChampion's Drake gets +3/+3 as long as you control a creature with three or more level counters on it.

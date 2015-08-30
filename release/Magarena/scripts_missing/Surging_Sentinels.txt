@@ -1,6 +1,6 @@
 name=Surging Sentinels
-image=http://mtgimage.com/card/surging%20sentinels.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cs/20.jpg
+value=2.081
 rarity=C
 type=Creature
 subtype=Human,Soldier
@@ -9,4 +9,4 @@ pt=2/1
 ability=First strike;\
         Ripple 4
 timing=main
-oracle=First strike. Ripple 4
+oracle=First strike\nRipple 4

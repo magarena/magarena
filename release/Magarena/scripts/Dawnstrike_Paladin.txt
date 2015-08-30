@@ -1,5 +1,5 @@
 name=Dawnstrike Paladin
-image=http://mtgimage.com/card/dawnstrike%20paladin.jpg
+image=http://magiccards.info/scans/en/ddl/14.jpg
 value=2.667
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={3}{W}{W}
 pt=2/4
 ability=vigilance;lifelink
 timing=main
-oracle=Vigilance. Lifelink
+oracle=Vigilance\nLifelink

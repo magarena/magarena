@@ -1,11 +1,11 @@
 name=Sylvan Basilisk
-image=http://mtgimage.com/card/sylvan%20basilisk.jpg
+image=http://magiccards.info/scans/en/10e/301.jpg
 value=4.173
 rarity=R
 type=Creature
 subtype=Basilisk
 cost={3}{G}{G}
 pt=2/4
+ability=Whenever SN becomes blocked by a creature, destroy that creature.
 timing=main
-requires_groovy_code
 oracle=Whenever Sylvan Basilisk becomes blocked by a creature, destroy that creature.

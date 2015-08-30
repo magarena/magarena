@@ -1,10 +1,10 @@
 name=Brave the Sands
-image=http://mtgimage.com/card/brave%20the%20sands.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/5.jpg
+value=3.375
 rarity=U
 type=Enchantment
 cost={1}{W}
 ability=Creatures you control have vigilance.;\
         Each creature you control can block an additional creature.
-timing=main
-oracle=Creatures you control have vigilance. Each creature you control can block an additional creature.
+timing=enchantment
+oracle=Creatures you control have vigilance.\nEach creature you control can block an additional creature.

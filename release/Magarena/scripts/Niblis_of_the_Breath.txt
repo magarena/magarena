@@ -1,5 +1,5 @@
 name=Niblis of the Breath
-image=http://mtgimage.com/card/niblis%20of%20the%20breath.jpg
+image=http://magiccards.info/scans/en/dka/44.jpg
 value=3.233
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=flying;\
         {U}, {T}: You may tap or untap target creature.
 timing=main
-oracle=Flying. {U}, {T}: You may tap or untap target creature.
+oracle=Flying\n{U}, {T}: You may tap or untap target creature.

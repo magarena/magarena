@@ -1,5 +1,5 @@
 name=Thorn Thallid
-image=http://mtgimage.com/card/thorn%20thallid.jpg
+image=http://magiccards.info/scans/en/med/135.jpg
 value=2.932
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=At the beginning of your upkeep, put a spore counter on SN.;\
         Remove three spore counters from SN: SN deals 1 damage to target creature or player.
 timing=main
-oracle=At the beginning of your upkeep, put a spore counter on Thorn Thallid. Remove three spore counters from Thorn Thallid: Thorn Thallid deals 1 damage to target creature or player.
+oracle=At the beginning of your upkeep, put a spore counter on Thorn Thallid.\nRemove three spore counters from Thorn Thallid: Thorn Thallid deals 1 damage to target creature or player.

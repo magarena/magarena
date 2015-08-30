@@ -1,6 +1,6 @@
 name=Thieves' Auction
-image=http://mtgimage.com/card/thieves%27%20auction.jpg
-value=2.500
+image=http://magiccards.info/scans/en/8e/227.jpg
+value=4.378
 rarity=R
 type=Sorcery
 cost={4}{R}{R}{R}

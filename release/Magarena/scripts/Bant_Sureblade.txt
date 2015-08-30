@@ -1,5 +1,5 @@
 name=Bant Sureblade
-image=http://mtgimage.com/card/bant%20sureblade.jpg
+image=http://magiccards.info/scans/en/arb/143.jpg
 value=3.616
 rarity=C
 type=Creature

@@ -1,0 +1,11 @@
+name=Woodland Bellower
+image=http://magiccards.info/scans/en/ori/207.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Beast
+cost={4}{G}{G}
+pt=6/5
+ability=When SN enters the battlefield, you may search your library for a nonlegendary green creature card with converted mana cost 3 or less, put it onto the battlefield, then shuffle your library.
+timing=main
+oracle=When Woodland Bellower enters the battlefield, you may search your library for a nonlegendary green creature card with converted mana cost 3 or less, put it onto the battlefield, then shuffle your library.

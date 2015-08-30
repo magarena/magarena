@@ -1,11 +1,11 @@
 name=Obelisk of Urd
-image=http://mtgimage.com/card/obelisk%20of%20urd.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/222.jpg
+value=3.167
 rarity=R
 type=Artifact
 cost={6}
 ability=Convoke;\
         As SN enters the battlefield, choose a creature type.;\
         Creatures you control of the chosen type get +2/+2.
-timing=main
-oracle=Convoke. As Obelisk of Urd enters the battlefield, choose a creature type. Creatures you control of the chosen type get +2/+2.
+timing=artifact
+oracle=Convoke\nAs Obelisk of Urd enters the battlefield, choose a creature type.\nCreatures you control of the chosen type get +2/+2.

@@ -1,6 +1,6 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
-    game.doAction(new MagicChangeCountersAction(
+    game.doAction(new ChangeCountersAction(
         event.getPermanent(), 
         MagicCounterType.Tide,
         -event.getPermanent().getCounters(MagicCounterType.Tide)
@@ -15,7 +15,7 @@ def action = {
         }
         @Override
         public void modGame(final MagicPermanent source, final MagicGame game) {
-            game.doAction(new MagicPutStateTriggerOnStackAction(new MagicEvent(
+            game.doAction(new PutStateTriggerOnStackAction(new MagicEvent(
                 source,
                 action,
                 "PN removes all tide counters from SN."

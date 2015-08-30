@@ -1,10 +1,10 @@
 name=Curse of Wizardry
-image=http://mtgimage.com/card/curse%20of%20wizardry.jpg
-value=2.500
+image=http://magiccards.info/scans/en/roe/104.jpg
+value=3.058
 rarity=U
 type=Enchantment
 cost={2}{B}{B}
 ability=As SN enters the battlefield, choose a color.;\
         Whenever a player casts a spell of the chosen color, that player loses 1 life.
-timing=main
-oracle=As Curse of Wizardry enters the battlefield, choose a color. Whenever a player casts a spell of the chosen color, that player loses 1 life.
+timing=enchantment
+oracle=As Curse of Wizardry enters the battlefield, choose a color.\nWhenever a player casts a spell of the chosen color, that player loses 1 life.

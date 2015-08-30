@@ -1,5 +1,5 @@
 name=Temporal Mastery
-image=http://mtgimage.com/card/temporal%20mastery.jpg
+image=http://magiccards.info/scans/en/avr/81.jpg
 value=4.087
 rarity=M
 type=Sorcery
@@ -7,4 +7,4 @@ cost={5}{U}{U}
 timing=nextturn
 ability=miracle {1}{U}
 requires_groovy_code
-oracle=Take an extra turn after this one. Exile Temporal Mastery. Miracle {1}{U}
+oracle=Take an extra turn after this one. Exile Temporal Mastery.\nMiracle {1}{U}

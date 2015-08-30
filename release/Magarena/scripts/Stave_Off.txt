@@ -1,0 +1,9 @@
+name=Stave Off
+image=http://magiccards.info/scans/en/ddn/61.jpg
+value=2.000
+rarity=C
+type=Instant
+cost={W}
+effect=Target creature gains protection from the color of your choice until end of turn.
+timing=pump
+oracle=Target creature gains protection from the color of your choice until end of turn.

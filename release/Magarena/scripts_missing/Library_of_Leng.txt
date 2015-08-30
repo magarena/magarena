@@ -1,10 +1,10 @@
 name=Library of Leng
-image=http://mtgimage.com/card/library%20of%20leng.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/me4/211.jpg
+value=4.179
+rarity=C
 type=Artifact
 cost={1}
 ability=You have no maximum hand size.;\
         If an effect causes you to discard a card, discard it, but you may put it on top of your library instead of into your graveyard.
-timing=main
-oracle=You have no maximum hand size. If an effect causes you to discard a card, discard it, but you may put it on top of your library instead of into your graveyard.
+timing=artifact
+oracle=You have no maximum hand size.\nIf an effect causes you to discard a card, discard it, but you may put it on top of your library instead of into your graveyard.

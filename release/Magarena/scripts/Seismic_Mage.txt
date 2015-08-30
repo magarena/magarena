@@ -1,5 +1,5 @@
 name=Seismic Mage
-image=http://mtgimage.com/card/seismic%20mage.jpg
+image=http://magiccards.info/scans/en/mm/211.jpg
 value=3.694
 rarity=R
 type=Creature

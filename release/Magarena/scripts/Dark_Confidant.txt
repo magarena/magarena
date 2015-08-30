@@ -1,5 +1,5 @@
 name=Dark Confidant
-image=http://mtgimage.com/card/dark%20confidant.jpg
+image=http://magiccards.info/scans/en/mma/75.jpg
 value=4.609
 rarity=R
 type=Creature

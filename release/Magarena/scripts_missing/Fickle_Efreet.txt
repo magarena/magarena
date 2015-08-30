@@ -1,6 +1,6 @@
 name=Fickle Efreet
-image=http://mtgimage.com/card/fickle%20efreet.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pr/89.jpg
+value=2.113
 rarity=R
 type=Creature
 subtype=Efreet

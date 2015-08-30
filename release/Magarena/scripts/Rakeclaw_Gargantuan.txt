@@ -1,5 +1,5 @@
 name=Rakeclaw Gargantuan
-image=http://mtgimage.com/card/rakeclaw%20gargantuan.jpg
+image=http://magiccards.info/scans/en/c13/205.jpg
 value=3.542
 rarity=C
 type=Creature

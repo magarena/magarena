@@ -1,12 +1,12 @@
 name=Ocular Halo
-image=http://mtgimage.com/card/ocular%20halo.jpg
+image=http://magiccards.info/scans/en/di/28.jpg
 value=3.474
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={3}{U}
-ability=Enchanted creature has "{T}: Draw a card."
+ability=Enchanted creature has "{T}: Draw a card.";\
+        {W}: Enchanted creature gains vigilance until end of turn.
 enchant=pump,pos creature
 timing=aura
-requires_groovy_code
-oracle=Enchant creature. Enchanted creature has "{T}: Draw a card.". {W}: Enchanted creature gains vigilance until end of turn.
+oracle=Enchant creature\nEnchanted creature has "{T}: Draw a card."\n{W}: Enchanted creature gains vigilance until end of turn.

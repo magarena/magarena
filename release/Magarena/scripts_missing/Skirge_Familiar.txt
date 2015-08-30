@@ -1,7 +1,7 @@
 name=Skirge Familiar
-image=http://mtgimage.com/card/skirge%20familiar.jpg
+image=http://magiccards.info/scans/en/vma/140.jpg
 value=2.500
-rarity=U
+rarity=C
 type=Creature
 subtype=Imp
 cost={4}{B}
@@ -9,4 +9,4 @@ pt=3/2
 ability=Flying;\
         Discard a card: Add {B} to your mana pool.
 timing=main
-oracle=Flying. Discard a card: Add {B} to your mana pool.
+oracle=Flying\nDiscard a card: Add {B} to your mana pool.

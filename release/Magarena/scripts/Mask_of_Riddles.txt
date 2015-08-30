@@ -1,12 +1,12 @@
 name=Mask of Riddles
-image=http://mtgimage.com/card/mask%20of%20riddles.jpg
+image=http://magiccards.info/scans/en/arb/25.jpg
 value=3.480
 rarity=U
 type=Artifact
 subtype=Equipment
 cost={U}{B}
 ability=Equipped creature has fear.;\
+        Whenever equipped creature deals combat damage to a player, you may draw a card.;\
         Equip {2}
 timing=equipment
-requires_groovy_code
-oracle=Equipped creature has fear. Whenever equipped creature deals combat damage to a player, you may draw a card. Equip {2}
+oracle=Equipped creature has fear.\nWhenever equipped creature deals combat damage to a player, you may draw a card.\nEquip {2}

@@ -1,6 +1,6 @@
 name=Memoricide
-image=http://mtgimage.com/card/memoricide.jpg
-value=2.500
+image=http://magiccards.info/scans/en/som/69.jpg
+value=4.177
 rarity=R
 type=Sorcery
 cost={3}{B}

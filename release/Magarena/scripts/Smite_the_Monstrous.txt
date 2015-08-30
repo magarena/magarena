@@ -1,5 +1,5 @@
 name=Smite the Monstrous
-image=http://mtgimage.com/card/smite%20the%20monstrous.jpg
+image=http://magiccards.info/scans/en/ktk/24.jpg
 value=2.750
 removal=3
 rarity=C

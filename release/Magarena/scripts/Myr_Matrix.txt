@@ -1,5 +1,5 @@
 name=Myr Matrix
-image=http://mtgimage.com/card/myr%20matrix.jpg
+image=http://magiccards.info/scans/en/ds/132.jpg
 value=4.201
 rarity=R
 type=Artifact
@@ -9,4 +9,4 @@ ability=indestructible;\
         {5}: Put a 1/1 colorless Myr artifact creature token onto the battlefield.
 static=all
 timing=main
-oracle=Indestructible. Myr creatures get +1/+1. {5}: Put a 1/1 colorless Myr artifact creature token onto the battlefield.
+oracle=Indestructible\nMyr creatures get +1/+1.\n{5}: Put a 1/1 colorless Myr artifact creature token onto the battlefield.

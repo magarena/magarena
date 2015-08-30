@@ -1,5 +1,5 @@
 name=Leaf Dancer
-image=http://mtgimage.com/card/leaf%20dancer.jpg
+image=http://magiccards.info/scans/en/od/249.jpg
 value=2.400
 ability=forestwalk
 rarity=C

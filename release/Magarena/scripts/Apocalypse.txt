@@ -1,5 +1,5 @@
 name=Apocalypse
-image=http://mtgimage.com/card/apocalypse.jpg
+image=http://magiccards.info/scans/en/tp/162.jpg
 value=4.511
 rarity=R
 type=Sorcery

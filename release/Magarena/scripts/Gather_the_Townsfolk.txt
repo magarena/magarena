@@ -1,9 +1,9 @@
 name=Gather the Townsfolk
-image=http://mtgimage.com/card/gather%20the%20townsfolk.jpg
+image=http://magiccards.info/scans/en/dka/8.jpg
 value=3.856
 rarity=C
 type=Sorcery
 cost={1}{W}
 timing=main
 requires_groovy_code
-oracle=Put two 1/1 white Human creature tokens onto the battlefield. Fateful hour — If you have 5 or less life, put five of those tokens onto the battlefield instead.
+oracle=Put two 1/1 white Human creature tokens onto the battlefield.\nFateful hour — If you have 5 or less life, put five of those tokens onto the battlefield instead.

@@ -1,12 +1,12 @@
 name=Arbiter of the Ideal
-image=http://mtgimage.com/card/arbiter%20of%20the%20ideal.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bng/31.jpg
+value=3.783
 rarity=R
 type=Creature
 subtype=Sphinx
 cost={4}{U}{U}
 pt=4/5
 ability=Flying;\
-        Inspired — Whenever SN becomes untapped, reveal the top card of your library. If it's an artifact, creature, or land card, you may put it onto the battlefield with a manifestation counter on it. That permanent is an enchantment in addition to its other types.
+        Whenever SN becomes untapped, reveal the top card of your library. If it's an artifact, creature, or land card, you may put it onto the battlefield with a manifestation counter on it. That permanent is an enchantment in addition to its other types.
 timing=main
-oracle=Flying. Inspired — Whenever Arbiter of the Ideal becomes untapped, reveal the top card of your library. If it's an artifact, creature, or land card, you may put it onto the battlefield with a manifestation counter on it. That permanent is an enchantment in addition to its other types.
+oracle=Flying\nInspired — Whenever Arbiter of the Ideal becomes untapped, reveal the top card of your library. If it's an artifact, creature, or land card, you may put it onto the battlefield with a manifestation counter on it. That permanent is an enchantment in addition to its other types.

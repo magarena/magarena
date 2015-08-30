@@ -1,5 +1,5 @@
 name=Harvester of Souls
-image=http://mtgimage.com/card/harvester%20of%20souls.jpg
+image=http://magiccards.info/scans/en/avr/107.jpg
 value=3.884
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=5/5
 ability=deathtouch;\
         Whenever another nontoken creature dies, you may draw a card.
 timing=main
-oracle=Deathtouch. Whenever another nontoken creature dies, you may draw a card.
+oracle=Deathtouch\nWhenever another nontoken creature dies, you may draw a card.

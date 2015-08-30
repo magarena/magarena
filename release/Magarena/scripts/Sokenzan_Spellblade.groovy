@@ -19,7 +19,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            game.doAction(new MagicChangeTurnPTAction(
+            game.doAction(new ChangeTurnPTAction(
                 event.getPermanent(),
                 player.getHandSize(),
                 0

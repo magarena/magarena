@@ -1,5 +1,5 @@
 name=Spell Pierce
-image=http://mtgimage.com/card/spell%20pierce.jpg
+image=http://magiccards.info/scans/en/zen/67.jpg
 value=4.537
 rarity=C
 type=Instant

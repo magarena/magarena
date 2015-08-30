@@ -1,6 +1,6 @@
 name=Haakon, Stromgald Scourge
-image=http://mtgimage.com/card/haakon%2C%20stromgald%20scourge.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cs/61.jpg
+value=4.004
 rarity=R
 type=Legendary,Creature
 subtype=Zombie,Knight
@@ -10,4 +10,4 @@ ability=You may cast SN from your graveyard, but not from anywhere else.;\
         As long as Haakon is on the battlefield, you may play Knight cards from your graveyard.;\
         When Haakon dies, you lose 2 life.
 timing=main
-oracle=You may cast Haakon, Stromgald Scourge from your graveyard, but not from anywhere else. As long as Haakon is on the battlefield, you may play Knight cards from your graveyard. When Haakon dies, you lose 2 life.
+oracle=You may cast Haakon, Stromgald Scourge from your graveyard, but not from anywhere else.\nAs long as Haakon is on the battlefield, you may play Knight cards from your graveyard.\nWhen Haakon dies, you lose 2 life.

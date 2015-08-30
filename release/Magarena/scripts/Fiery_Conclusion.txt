@@ -1,10 +1,10 @@
 name=Fiery Conclusion
-image=http://mtgimage.com/card/fiery%20conclusion.jpg
-value=1.980
-rarity=C
+image=http://magiccards.info/scans/en/ori/144.jpg
+value=2.500
+rarity=U
 type=Instant
 cost={1}{R}
 ability=As an additional cost to cast SN, sacrifice a creature.
 effect=SN deals 5 damage to target creature.
 timing=removal
-oracle=As an additional cost to cast Fiery Conclusion, sacrifice a creature. Fiery Conclusion deals 5 damage to target creature.
+oracle=As an additional cost to cast Fiery Conclusion, sacrifice a creature.\nFiery Conclusion deals 5 damage to target creature.

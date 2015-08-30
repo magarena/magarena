@@ -1,5 +1,5 @@
 name=Ethersworn Adjudicator
-image=http://mtgimage.com/card/ethersworn%20adjudicator.jpg
+image=http://magiccards.info/scans/en/cfx/26.jpg
 value=3.792
 rarity=M
 type=Artifact,Creature
@@ -10,4 +10,4 @@ ability=flying;\
         {1}{W}{B},{T}: Destroy target creature or enchantment.;\
         {2}{U}: Untap SN.
 timing=main
-oracle=Flying. {1}{W}{B}, {T}: Destroy target creature or enchantment. {2}{U}: Untap Ethersworn Adjudicator.
+oracle=Flying\n{1}{W}{B}, {T}: Destroy target creature or enchantment.\n{2}{U}: Untap Ethersworn Adjudicator.

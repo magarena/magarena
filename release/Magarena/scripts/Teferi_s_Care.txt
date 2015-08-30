@@ -1,9 +1,9 @@
 name=Teferi's Care
-image=http://mtgimage.com/card/teferi's%20care.jpg
+image=http://magiccards.info/scans/en/in/43.jpg
 value=2.344
 rarity=U
 type=Enchantment
 cost={2}{W}
 ability={W},Sacrifice an enchantment:Destroy target enchantment.;{3}{U}{U}:Counter target enchantment spell.
 timing=enchantment
-oracle={W}, Sacrifice an enchantment: Destroy target enchantment. {3}{U}{U}: Counter target enchantment spell.
+oracle={W}, Sacrifice an enchantment: Destroy target enchantment.\n{3}{U}{U}: Counter target enchantment spell.

@@ -1,6 +1,6 @@
 name=Vesuvan Shapeshifter
-image=http://mtgimage.com/card/vesuvan%20shapeshifter.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ts/90.jpg
+value=4.261
 rarity=R
 type=Creature
 subtype=Shapeshifter
@@ -9,4 +9,4 @@ pt=0/0
 ability=As SN enters the battlefield or is turned face up, you may choose another creature on the battlefield. If you do, until SN is turned face down, it becomes a copy of that creature and gains "At the beginning of your upkeep, you may turn this creature face down.";\
         Morph {1}{U}
 timing=main
-oracle=As Vesuvan Shapeshifter enters the battlefield or is turned face up, you may choose another creature on the battlefield. If you do, until Vesuvan Shapeshifter is turned face down, it becomes a copy of that creature and gains "At the beginning of your upkeep, you may turn this creature face down.". Morph {1}{U}
+oracle=As Vesuvan Shapeshifter enters the battlefield or is turned face up, you may choose another creature on the battlefield. If you do, until Vesuvan Shapeshifter is turned face down, it becomes a copy of that creature and gains "At the beginning of your upkeep, you may turn this creature face down."\nMorph {1}{U}

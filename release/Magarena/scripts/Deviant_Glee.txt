@@ -1,5 +1,5 @@
 name=Deviant Glee
-image=http://mtgimage.com/card/deviant%20glee.jpg
+image=http://magiccards.info/scans/en/rtr/65.jpg
 value=3.380
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={B}
 ability=Enchanted creature gets +2/+1 and has "{R}: SN gains trample until end of turn."
 timing=enchantment
 enchant=pump,pos creature
-oracle=Enchant creature. Enchanted creature gets +2/+1 and has "{R}: This creature gains trample until end of turn."
+oracle=Enchant creature\nEnchanted creature gets +2/+1 and has "{R}: This creature gains trample until end of turn."

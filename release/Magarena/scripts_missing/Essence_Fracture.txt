@@ -1,9 +1,9 @@
 name=Essence Fracture
-image=http://mtgimage.com/card/essence%20fracture.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/82.jpg
+value=1.979
 rarity=U
 type=Sorcery
 cost={3}{U}{U}
 effect=Return two target creatures to their owners' hands.~Cycling {2}{U}
 timing=main
-oracle=Return two target creatures to their owners' hands. Cycling {2}{U}
+oracle=Return two target creatures to their owners' hands.\nCycling {2}{U}

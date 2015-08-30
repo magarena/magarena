@@ -1,5 +1,5 @@
 name=Akki Lavarunner
-image=http://mtgimage.com/card/akki%20lavarunner.jpg
+image=http://magiccards.info/scans/en/chk/153a.jpg
 value=2.963
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=Haste;\
         Whenever SN deals damage to an opponent, flip SN.
 flip=Tok-Tok, Volcano Born
 timing=main
-oracle=Haste. Whenever Akki Lavarunner deals damage to an opponent, flip it.
+oracle=Haste\nWhenever Akki Lavarunner deals damage to an opponent, flip it.

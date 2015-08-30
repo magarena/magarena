@@ -1,5 +1,5 @@
 name=Turtleshell Changeling
-image=http://mtgimage.com/card/turtleshell%20changeling.jpg
+image=http://magiccards.info/scans/en/lw/94.jpg
 value=2.545
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/4
 ability=changeling;\
         {1}{U}: Switch SN's power and toughness until end of turn.
 timing=main
-oracle=Changeling. {1}{U}: Switch Turtleshell Changeling's power and toughness until end of turn.
+oracle=Changeling\n{1}{U}: Switch Turtleshell Changeling's power and toughness until end of turn.

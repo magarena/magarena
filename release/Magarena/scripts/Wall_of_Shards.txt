@@ -1,0 +1,12 @@
+name=Wall of Shards
+image=http://magiccards.info/scans/en/cs/23.jpg
+value=3.500
+rarity=U
+type=Snow,Creature
+subtype=Wall
+cost={1}{W}
+pt=1/8
+ability=Defender; flying
+timing=main
+requires_groovy_code
+oracle=Defender, flying\nCumulative upkeep—An opponent gains 1 life.

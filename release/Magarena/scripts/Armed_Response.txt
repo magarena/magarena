@@ -1,9 +1,9 @@
 name=Armed Response
-image=http://mtgimage.com/card/armed%20response.jpg
+image=http://magiccards.info/scans/en/5dn/2.jpg
 value=1.588
 rarity=C
 type=Instant
 cost={2}{W}
+effect=SN deals damage to target attacking creature equal to the number of Equipment you control.
 timing=removal
-requires_groovy_code
 oracle=Armed Response deals damage to target attacking creature equal to the number of Equipment you control.

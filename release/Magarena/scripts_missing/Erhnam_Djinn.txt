@@ -1,7 +1,7 @@
 name=Erhnam Djinn
-image=http://mtgimage.com/card/erhnam%20djinn.jpg
+image=http://magiccards.info/scans/en/vma/207.jpg
 value=2.500
-rarity=R
+rarity=U
 type=Creature
 subtype=Djinn
 cost={3}{G}

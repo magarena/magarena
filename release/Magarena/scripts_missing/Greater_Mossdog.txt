@@ -1,6 +1,6 @@
 name=Greater Mossdog
-image=http://mtgimage.com/card/greater%20mossdog.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mma/146.jpg
+value=3.632
 rarity=C
 type=Creature
 subtype=Plant,Hound

@@ -1,6 +1,6 @@
 name=Sealed Fate
-image=http://mtgimage.com/card/sealed%20fate.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/342.jpg
+value=3.312
 rarity=U
 type=Sorcery
 cost={X}{U}{B}

@@ -1,5 +1,5 @@
 name=Zur the Enchanter
-image=http://mtgimage.com/card/zur%20the%20enchanter.jpg
+image=http://magiccards.info/scans/en/cs/135.jpg
 value=4.186
 rarity=R
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=1/4
 ability=flying;\
         Whenever SN attacks, you may search your library for an enchantment card with converted mana cost 3 or less and put it onto the battlefield. If you do, shuffle your library.
 timing=main
-oracle=Flying. Whenever Zur the Enchanter attacks, you may search your library for an enchantment card with converted mana cost 3 or less and put it onto the battlefield. If you do, shuffle your library.
+oracle=Flying\nWhenever Zur the Enchanter attacks, you may search your library for an enchantment card with converted mana cost 3 or less and put it onto the battlefield. If you do, shuffle your library.

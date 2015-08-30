@@ -1,6 +1,6 @@
 name=Darigaaz, the Igniter
-image=http://mtgimage.com/card/darigaaz%2C%20the%20igniter.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pvc/47.jpg
+value=4.080
 rarity=R
 type=Legendary,Creature
 subtype=Dragon
@@ -9,4 +9,4 @@ pt=6/6
 ability=Flying;\
         Whenever SN deals combat damage to a player, you may pay {2}{R}. If you do, choose a color, then that player reveals his or her hand and Darigaaz deals damage to the player equal to the number of cards of that color revealed this way.
 timing=main
-oracle=Flying. Whenever Darigaaz, the Igniter deals combat damage to a player, you may pay {2}{R}. If you do, choose a color, then that player reveals his or her hand and Darigaaz deals damage to the player equal to the number of cards of that color revealed this way.
+oracle=Flying\nWhenever Darigaaz, the Igniter deals combat damage to a player, you may pay {2}{R}. If you do, choose a color, then that player reveals his or her hand and Darigaaz deals damage to the player equal to the number of cards of that color revealed this way.

@@ -1,7 +1,7 @@
 name=Restock
-image=http://mtgimage.com/card/restock.jpg
-value=2.500
-rarity=R
+image=http://magiccards.info/scans/en/m15/195.jpg
+value=3.200
+rarity=U
 type=Sorcery
 cost={3}{G}{G}
 effect=Return two target cards from your graveyard to your hand. Exile SN.

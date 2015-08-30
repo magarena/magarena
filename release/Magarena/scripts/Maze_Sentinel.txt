@@ -1,5 +1,5 @@
 name=Maze Sentinel
-image=http://mtgimage.com/card/maze%20sentinel.jpg
+image=http://magiccards.info/scans/en/dgm/4.jpg
 value=2.636
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/6
 ability=Vigilance;\
         Multicolored creatures you control have vigilance.
 timing=main
-oracle=Vigilance. Multicolored creatures you control have vigilance.
+oracle=Vigilance\nMulticolored creatures you control have vigilance.

@@ -1,42 +1,5 @@
-def INSTANT_LEQ_CMC_2_FROM_HAND = new MagicCardFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-        return target.getConvertedCost() <= 2 && target.hasType(MagicType.Instant);
-    }
-    public boolean acceptType(final MagicTargetType targetType) {
-        return targetType == MagicTargetType.Hand;
-    }
-};
 
 [
-    new MagicWhenComesIntoPlayTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
-            final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                INSTANT_LEQ_CMC_2_FROM_HAND,  
-                MagicTargetHint.None,
-                "an instant card with converted mana cost 2 or less to exile from your hand"
-            );
-            return new MagicEvent(
-                permanent,
-                new MagicMayChoice(targetChoice),
-                MagicGraveyardTargetPicker.PutOntoBattlefield,
-                this,
-                "PN may\$ exile an instant card\$ with converted mana cost 2 or less from his or her hand."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isYes()) {
-                event.processTargetCard(game, {
-                    game.doAction(new MagicExileLinkAction(
-                        event.getPermanent(), 
-                        it, 
-                        MagicLocationType.OwnersHand
-                    ));
-                });
-            }
-        }
-    },
     new MagicPermanentActivation(
         [MagicCondition.HAS_EXILED_CARD],
         new MagicActivationHints(MagicTiming.Removal),
@@ -46,7 +9,8 @@ def INSTANT_LEQ_CMC_2_FROM_HAND = new MagicCardFilterImpl() {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicTapEvent(source), new MagicPayManaCostEvent(source,  "{2}")
+                new MagicTapEvent(source),
+                new MagicPayManaCostEvent(source,  "{2}")
             ];
         }
 
@@ -62,9 +26,11 @@ def INSTANT_LEQ_CMC_2_FROM_HAND = new MagicCardFilterImpl() {
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicCastFreeCopyAction(
-                event.getPlayer(), 
-                event.getRefCard()
+            game.doAction(CastCardAction.WithoutManaCost(
+                event.getPlayer(),
+                MagicCard.createTokenCard(event.getRefCard(), event.getPlayer()),
+                MagicLocationType.Exile,
+                MagicLocationType.Graveyard
             ));
         }
     }

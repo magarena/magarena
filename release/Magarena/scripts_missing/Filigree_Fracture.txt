@@ -1,9 +1,0 @@
-name=Filigree Fracture
-image=http://mtgimage.com/card/filigree%20fracture.jpg
-value=2.500
-rarity=U
-type=Instant
-cost={2}{G}
-effect=Destroy target artifact or enchantment. If that permanent was blue or black, draw a card.
-timing=removal
-oracle=Destroy target artifact or enchantment. If that permanent was blue or black, draw a card.

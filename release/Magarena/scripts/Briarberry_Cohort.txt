@@ -1,5 +1,5 @@
 name=Briarberry Cohort
-image=http://mtgimage.com/card/briarberry%20cohort.jpg
+image=http://magiccards.info/scans/en/shm/30.jpg
 value=2.608
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying;\
         SN gets +1/+1 as long as you control another blue creature.
 timing=main
-oracle=Flying. Briarberry Cohort gets +1/+1 as long as you control another blue creature.
+oracle=Flying\nBriarberry Cohort gets +1/+1 as long as you control another blue creature.

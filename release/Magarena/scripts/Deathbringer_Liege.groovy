@@ -7,7 +7,7 @@
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        MagicTargetChoice.NEG_TARGET_CREATURE
+                        NEG_TARGET_CREATURE
                     ),
                     MagicDestroyTargetPicker.Destroy,
                     this,
@@ -21,7 +21,7 @@
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
                     if (it.isTapped()) {
-                        game.doAction(new MagicDestroyAction(it));
+                        game.doAction(new DestroyAction(it));
                     }
                 });
             }
@@ -35,7 +35,7 @@
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        MagicTargetChoice.NEG_TARGET_CREATURE
+                        NEG_TARGET_CREATURE
                     ),
                     MagicTapTargetPicker.Tap,
                     this,
@@ -47,7 +47,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    game.doAction(new MagicTapAction(it));
+                    game.doAction(new TapAction(it));
                 });
             }
         }

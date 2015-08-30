@@ -1,5 +1,5 @@
 name=Galvanic Juggernaut
-image=http://mtgimage.com/card/galvanic%20juggernaut.jpg
+image=http://magiccards.info/scans/en/cns/200.jpg
 value=3.500
 rarity=U
 type=Artifact,Creature
@@ -10,4 +10,4 @@ ability=SN attacks each turn if able.;\
         SN doesn't untap during your untap step.;\
         Whenever another creature dies, untap SN.
 timing=main
-oracle=Galvanic Juggernaut attacks each turn if able. Galvanic Juggernaut doesn't untap during your untap step. Whenever another creature dies, untap Galvanic Juggernaut.
+oracle=Galvanic Juggernaut attacks each turn if able.\nGalvanic Juggernaut doesn't untap during your untap step.\nWhenever another creature dies, untap Galvanic Juggernaut.

@@ -1,0 +1,13 @@
+name=Vulturous Aven
+image=http://magiccards.info/scans/en/dtk/126.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Bird,Shaman
+cost={3}{B}
+pt=2/3
+ability=Flying;\
+        Exploit;\
+        When SN exploits a creature, you draw two cards and you lose 2 life.
+timing=main
+oracle=Flying\nExploit\nWhen Vulturous Aven exploits a creature, you draw two cards and you lose 2 life.

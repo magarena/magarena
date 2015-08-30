@@ -1,5 +1,5 @@
 name=Traveling Philosopher
-image=http://mtgimage.com/card/traveling%20philosopher.jpg
+image=http://magiccards.info/scans/en/ths/34.jpg
 value=2.500
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Human,Advisor
 cost={1}{W}
 pt=2/2
 timing=main
+oracle=NONE

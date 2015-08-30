@@ -1,0 +1,12 @@
+name=Gelid Shackles
+image=http://magiccards.info/scans/en/cs/6.jpg
+value=3.280
+rarity=C
+type=Snow,Enchantment
+subtype=Aura
+cost={W}
+ability=Enchanted creature can't block, and its activated abilities can't be activated.;\
+        {S}: Enchanted creature gains defender until end of turn.
+timing=aura
+enchant=can't attack or block,neg creature
+oracle=Enchant creature\nEnchanted creature can't block, and its activated abilities can't be activated.\n{S}: Enchanted creature gains defender until end of turn.

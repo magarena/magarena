@@ -1,6 +1,6 @@
 name=Waterwhirl
-image=http://mtgimage.com/card/waterwhirl.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/60.jpg
+value=2.750
 rarity=U
 type=Instant
 cost={4}{U}{U}

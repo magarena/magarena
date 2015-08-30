@@ -1,6 +1,6 @@
 name=Mana Clash
-image=http://mtgimage.com/card/mana%20clash.jpg
-value=2.500
+image=http://magiccards.info/scans/en/9e/203.jpg
+value=3.354
 rarity=R
 type=Sorcery
 cost={R}

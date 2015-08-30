@@ -1,5 +1,5 @@
 name=Aven Trooper
-image=http://mtgimage.com/card/aven%20trooper.jpg
+image=http://magiccards.info/scans/en/tr/2.jpg
 value=0.812
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={3}{W}
 pt=1/1
 ability=flying;{2}{W},Discard a card:SN gets +1/+2 until end of turn.
 timing=main
-oracle=Flying. {2}{W}, Discard a card: Aven Trooper gets +1/+2 until end of turn.
+oracle=Flying\n{2}{W}, Discard a card: Aven Trooper gets +1/+2 until end of turn.

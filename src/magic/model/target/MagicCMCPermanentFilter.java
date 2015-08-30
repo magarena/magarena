@@ -1,6 +1,6 @@
 package magic.model.target;
 
-import magic.model.MagicGame;
+import magic.model.MagicSource;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 
@@ -17,8 +17,8 @@ public class MagicCMCPermanentFilter extends MagicPermanentFilterImpl {
     }
 
     @Override
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-        return targetFilter.accept(game,player,target) &&
+    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        return targetFilter.accept(source,player,target) &&
                operator.cmp(target.getConvertedCost(), cmc) ;
     }
 

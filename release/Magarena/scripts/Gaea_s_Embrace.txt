@@ -1,12 +1,12 @@
 name=Gaea's Embrace
-image=http://mtgimage.com/card/gaea's%20embrace.jpg
+image=http://magiccards.info/scans/en/vma/211.jpg
 value=4.150
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{G}{G}
-ability=Enchanted creature gets +3/+3 and has trample.
+ability=Enchanted creature gets +3/+3 and has trample.;\
+        {G}: Regenerate enchanted creature.
 timing=aura
 enchant=pump,pos creature
-requires_groovy_code=Regeneration
-oracle=Enchant creature. Enchanted creature gets +3/+3 and has trample. {G}: Regenerate enchanted creature.
+oracle=Enchant creature\nEnchanted creature gets +3/+3 and has trample.\n{G}: Regenerate enchanted creature.

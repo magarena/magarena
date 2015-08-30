@@ -1,9 +1,9 @@
 name=Thran Turbine
-image=http://mtgimage.com/card/thran%20turbine.jpg
-value=2.500
+image=http://magiccards.info/scans/en/us/311.jpg
+value=4.312
 rarity=U
 type=Artifact
 cost={1}
 ability=At the beginning of your upkeep, you may add {1} or {2} to your mana pool. You can't spend this mana to cast spells.
-timing=main
+timing=artifact
 oracle=At the beginning of your upkeep, you may add {1} or {2} to your mana pool. You can't spend this mana to cast spells.

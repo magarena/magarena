@@ -1,11 +1,11 @@
 name=Bequeathal
-image=http://mtgimage.com/card/bequeathal.jpg
+image=http://magiccards.info/scans/en/ex/106.jpg
 value=4.034
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={G}
+ability=When enchanted creature dies, you draw two cards.
 enchant=pump,creature
 timing=enchantment
-requires_groovy_code
-oracle=Enchant creature. When enchanted creature dies, you draw two cards.
+oracle=Enchant creature\nWhen enchanted creature dies, you draw two cards.

@@ -2,15 +2,23 @@ package magic.ui.widget.deck;
 
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
+import magic.translate.UiString;
 
 public class DeckFilter {
 
+    // translatable strings
+    private static final String _S1 = "any";
+    private static final String _S2 = "equals";
+    private static final String _S3 = "less than";
+    private static final String _S4 = "greater than";
+    private static final String _S5 = "between";
+
     public enum NumericFilter {
-        Any("any"),
-        Equals("equals", 1),
-        LessThan("less than", 1),
-        GreaterThan("greater than", 1),
-        Between("between", 2)
+        Any(UiString.get(_S1)),
+        Equals(UiString.get(_S2), 1),
+        LessThan(UiString.get(_S3), 1),
+        GreaterThan(UiString.get(_S4), 1),
+        Between(UiString.get(_S5), 2)
         ;
 
         private final String filterCaption;

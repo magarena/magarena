@@ -1,5 +1,5 @@
 name=Spiketail Drakeling
-image=http://mtgimage.com/card/spiketail%20drakeling.jpg
+image=http://magiccards.info/scans/en/ts/80.jpg
 value=4.114
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{U}{U}
 pt=2/2
 ability=flying;Sacrifice SN:Counter target spell unless its controller pays {2}.
 timing=main
-oracle=Flying. Sacrifice Spiketail Drakeling: Counter target spell unless its controller pays {2}.
+oracle=Flying\nSacrifice Spiketail Drakeling: Counter target spell unless its controller pays {2}.

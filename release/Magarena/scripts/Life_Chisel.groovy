@@ -9,7 +9,7 @@
             return [
                 new MagicSacrificePermanentEvent(
                     source,
-                    MagicTargetChoice.SACRIFICE_CREATURE
+                    SACRIFICE_CREATURE
                 )
             ];
         }
@@ -26,8 +26,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getRefPermanent().getToughness();
             final MagicPlayer player = event.getPlayer();
-            game.doAction(new MagicChangeLifeAction(player,amount));
-            game.logAppendMessage(event.getPlayer(),"("+amount+")");
+            game.doAction(new ChangeLifeAction(player,amount));
+            game.logAppendValue(event.getPlayer(),amount);
         }
     }
 ]

@@ -1,9 +1,9 @@
 name=Horn of Plenty
-image=http://mtgimage.com/card/horn%20of%20plenty.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/298.jpg
+value=2.518
 rarity=R
 type=Artifact
 cost={6}
 ability=Whenever a player casts a spell, he or she may pay {1}. If that player does, he or she draws a card at the beginning of the next end step.
-timing=main
+timing=artifact
 oracle=Whenever a player casts a spell, he or she may pay {1}. If that player does, he or she draws a card at the beginning of the next end step.

@@ -1,6 +1,6 @@
 name=Trap Essence
-image=http://mtgimage.com/card/trap%20essence.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/209.jpg
+value=3.500
 rarity=R
 type=Instant
 cost={G}{U}{R}

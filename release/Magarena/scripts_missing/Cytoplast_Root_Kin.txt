@@ -1,5 +1,5 @@
 name=Cytoplast Root-Kin
-image=http://mtgimage.com/card/cytoplast%20root-kin.jpg
+image=http://magiccards.info/scans/en/di/81.jpg
 value=2.500
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=Graft 4;\
         When SN enters the battlefield, put a +1/+1 counter on each other creature you control with a +1/+1 counter on it.;\
         {2}: Move a +1/+1 counter from target creature you control onto SN.
 timing=main
-oracle=Graft 4. When Cytoplast Root-Kin enters the battlefield, put a +1/+1 counter on each other creature you control with a +1/+1 counter on it. {2}: Move a +1/+1 counter from target creature you control onto Cytoplast Root-Kin.
+oracle=Graft 4\nWhen Cytoplast Root-Kin enters the battlefield, put a +1/+1 counter on each other creature you control with a +1/+1 counter on it.\n{2}: Move a +1/+1 counter from target creature you control onto Cytoplast Root-Kin.

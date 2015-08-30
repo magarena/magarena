@@ -1,9 +1,9 @@
 name=Chill of Foreboding
-image=http://mtgimage.com/card/chill%20of%20foreboding.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dka/32.jpg
+value=2.833
 rarity=U
 type=Sorcery
 cost={2}{U}
 effect=Each player puts the top five cards of his or her library into his or her graveyard.~Flashback {7}{U}
 timing=main
-oracle=Each player puts the top five cards of his or her library into his or her graveyard. Flashback {7}{U}
+oracle=Each player puts the top five cards of his or her library into his or her graveyard.\nFlashback {7}{U}

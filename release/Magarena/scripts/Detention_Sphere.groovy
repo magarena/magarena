@@ -1,6 +1,6 @@
 def filter = new MagicPermanentFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-        return target.isLand() == false && target.getName().equals("Detention Sphere") == false;
+    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        return target.isLand() == false && target.isName("Detention Sphere") == false;
     }
 };
 
@@ -21,14 +21,10 @@ def choice = new MagicTargetChoice(filter, "target nonland permanent not named D
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final Collection<MagicPermanent> targets = game.filterPermanents(
-                    event.getPlayer(),
-                    new MagicNameTargetFilter(it.getName())
-                );
-                for (final MagicPermanent target : targets) {
-                    game.doAction(new MagicExileLinkAction(
+                new MagicNameTargetFilter(it.getName()).filter(event) each {
+                    game.doAction(new ExileLinkAction(
                         event.getPermanent(),
-                        target
+                        it
                     ));
                 }
             });

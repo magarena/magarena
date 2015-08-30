@@ -1,11 +1,11 @@
 name=Hedron Matrix
-image=http://mtgimage.com/card/hedron%20matrix.jpg
-value=2.500
+image=http://magiccards.info/scans/en/roe/218.jpg
+value=3.115
 rarity=R
 type=Artifact
 subtype=Equipment
 cost={4}
 ability=Equipped creature gets +X/+X, where X is its converted mana cost.;\
         Equip {4}
-timing=main
-oracle=Equipped creature gets +X/+X, where X is its converted mana cost. Equip {4}
+timing=equipment
+oracle=Equipped creature gets +X/+X, where X is its converted mana cost.\nEquip {4}

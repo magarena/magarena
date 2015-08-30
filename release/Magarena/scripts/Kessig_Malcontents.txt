@@ -1,11 +1,11 @@
 name=Kessig Malcontents
-image=http://mtgimage.com/card/kessig%20malcontents.jpg
+image=http://magiccards.info/scans/en/avr/142.jpg
 value=3.477
 rarity=U
 type=Creature
 subtype=Human,Warrior
 cost={2}{R}
 pt=3/1
+ability=When SN enters the battlefield, SN deals damage to target player equal to the number of Humans you control.
 timing=main
-requires_groovy_code
 oracle=When Kessig Malcontents enters the battlefield, it deals damage to target player equal to the number of Humans you control.

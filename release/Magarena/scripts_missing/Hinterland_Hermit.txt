@@ -1,11 +1,12 @@
 name=Hinterland Hermit
-image=http://mtgimage.com/card/hinterland%20hermit.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dka/94a.jpg
+value=2.349
 rarity=C
 type=Creature
 subtype=Human,Werewolf
 cost={1}{R}
 pt=2/1
 ability=At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+transform=Hinterland Scourge
 timing=main
 oracle=At the beginning of each upkeep, if no spells were cast last turn, transform Hinterland Hermit.

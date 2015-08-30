@@ -1,5 +1,5 @@
 name=Oboro Breezecaller
-image=http://mtgimage.com/card/oboro%20breezecaller.jpg
+image=http://magiccards.info/scans/en/sok/48.jpg
 value=2.207
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{U}
 pt=1/1
 ability=flying;{2},Return a land you control to its owner's hand:Untap target land.
 timing=main
-oracle=Flying. {2}, Return a land you control to its owner's hand: Untap target land.
+oracle=Flying\n{2}, Return a land you control to its owner's hand: Untap target land.

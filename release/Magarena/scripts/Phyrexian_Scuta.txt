@@ -1,12 +1,12 @@
 name=Phyrexian Scuta
-image=http://mtgimage.com/card/phyrexian%20scuta.jpg
+image=http://magiccards.info/scans/en/ps/51.jpg
 value=3.845
 rarity=R
 type=Creature
 subtype=Zombie
 cost={3}{B}
 pt=3/3
-ability=Kicker Pay 3 life.
+ability=Kicker—Pay 3 life.
 timing=main
 requires_groovy_code=Æther Figment
-oracle=Kicker—Pay 3 life. If Phyrexian Scuta was kicked, it enters the battlefield with two +1/+1 counters on it.
+oracle=Kicker—Pay 3 life.\nIf Phyrexian Scuta was kicked, it enters the battlefield with two +1/+1 counters on it.

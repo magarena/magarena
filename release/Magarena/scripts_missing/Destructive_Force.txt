@@ -1,6 +1,6 @@
 name=Destructive Force
-image=http://mtgimage.com/card/destructive%20force.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m11/133.jpg
+value=3.708
 rarity=R
 type=Sorcery
 cost={5}{R}{R}

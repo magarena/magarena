@@ -1,5 +1,5 @@
 name=Stormcaller of Keranos
-image=http://mtgimage.com/card/stormcaller%20of%20keranos.jpg
+image=http://magiccards.info/scans/en/bng/112.jpg
 value=3.766
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{R}
 pt=2/2
 ability=haste;{1}{U}: Scry 1.
 timing=main
-oracle=Haste. {1}{U}: Scry 1.
+oracle=Haste\n{1}{U}: Scry 1.

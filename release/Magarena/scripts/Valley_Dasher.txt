@@ -1,5 +1,5 @@
 name=Valley Dasher
-image=http://mtgimage.com/card/valley%20dasher.jpg
+image=http://magiccards.info/scans/en/ktk/125.jpg
 value=2.750
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Haste;\
         SN attacks each turn if able.
 timing=main
-oracle=Haste. Valley Dasher attacks each turn if able.
+oracle=Haste\nValley Dasher attacks each turn if able.

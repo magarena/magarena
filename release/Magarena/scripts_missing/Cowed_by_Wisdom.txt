@@ -1,11 +1,11 @@
 name=Cowed by Wisdom
-image=http://mtgimage.com/card/cowed%20by%20wisdom.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sok/5.jpg
+value=2.946
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={W}
 ability=Enchant creature;\
         Enchanted creature can't attack or block unless its controller pays {1} for each card in your hand.
-timing=main
-oracle=Enchant creature. Enchanted creature can't attack or block unless its controller pays {1} for each card in your hand.
+timing=aura
+oracle=Enchant creature\nEnchanted creature can't attack or block unless its controller pays {1} for each card in your hand.

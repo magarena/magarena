@@ -1,5 +1,5 @@
 name=Angelic Overseer
-image=http://mtgimage.com/card/angelic%20overseer.jpg
+image=http://magiccards.info/scans/en/isd/3.jpg
 value=3.846
 rarity=M
 type=Creature
@@ -9,4 +9,4 @@ pt=5/3
 ability=Flying;\
         As long as you control a Human, SN has hexproof and indestructible.
 timing=fmain
-oracle=Flying. As long as you control a Human, Angelic Overseer has hexproof and indestructible.
+oracle=Flying\nAs long as you control a Human, Angelic Overseer has hexproof and indestructible.

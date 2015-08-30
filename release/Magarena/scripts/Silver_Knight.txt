@@ -1,5 +1,5 @@
 name=Silver Knight
-image=http://mtgimage.com/card/silver%20knight.jpg
+image=http://magiccards.info/scans/en/ddg/8.jpg
 value=4.288
 ability=first strike;protection from red
 rarity=U

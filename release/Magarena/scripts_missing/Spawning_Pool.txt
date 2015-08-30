@@ -1,10 +1,10 @@
 name=Spawning Pool
-image=http://mtgimage.com/card/spawning%20pool.jpg
-value=2.500
+image=http://magiccards.info/scans/en/10e/358.jpg
+value=4.044
 rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\
         {T}: Add {B} to your mana pool.;\
         {1}{B}: SN becomes a 1/1 black Skeleton creature with "{B}: Regenerate this creature" until end of turn. It's still a land.
-timing=main
-oracle=Spawning Pool enters the battlefield tapped. {T}: Add {B} to your mana pool. {1}{B}: Spawning Pool becomes a 1/1 black Skeleton creature with "{B}: Regenerate this creature" until end of turn. It's still a land.
+timing=land
+oracle=Spawning Pool enters the battlefield tapped.\n{T}: Add {B} to your mana pool.\n{1}{B}: Spawning Pool becomes a 1/1 black Skeleton creature with "{B}: Regenerate this creature" until end of turn. It's still a land.

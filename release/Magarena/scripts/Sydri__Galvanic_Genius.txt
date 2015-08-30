@@ -1,5 +1,5 @@
 name=Sydri, Galvanic Genius
-image=http://mtgimage.com/card/sydri%2C%20galvanic%20genius.jpg
+image=http://magiccards.info/scans/en/c13/220.jpg
 value=3.830
 rarity=M
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability={W}{B}: Target artifact creature gains deathtouch, lifelink until end of turn.
 timing=main
 requires_groovy_code
-oracle={U}: Target noncreature artifact becomes an artifact creature with power and toughness each equal to its converted mana cost until end of turn. {W}{B}: Target artifact creature gains deathtouch and lifelink until end of turn.
+oracle={U}: Target noncreature artifact becomes an artifact creature with power and toughness each equal to its converted mana cost until end of turn.\n{W}{B}: Target artifact creature gains deathtouch and lifelink until end of turn.

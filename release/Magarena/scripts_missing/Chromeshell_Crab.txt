@@ -1,6 +1,6 @@
 name=Chromeshell Crab
-image=http://mtgimage.com/card/chromeshell%20crab.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cmd/41.jpg
+value=3.765
 rarity=R
 type=Creature
 subtype=Crab,Beast
@@ -9,4 +9,4 @@ pt=3/3
 ability=Morph {4}{U};\
         When SN is turned face up, you may exchange control of target creature you control and target creature an opponent controls.
 timing=main
-oracle=Morph {4}{U}. When Chromeshell Crab is turned face up, you may exchange control of target creature you control and target creature an opponent controls.
+oracle=Morph {4}{U}\nWhen Chromeshell Crab is turned face up, you may exchange control of target creature you control and target creature an opponent controls.

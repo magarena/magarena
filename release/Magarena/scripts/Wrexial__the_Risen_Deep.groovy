@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 new MagicMayChoice(
-                    MagicTargetChoice.TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD
+                    TARGET_INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD
                 ),
                 MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
@@ -17,10 +17,12 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetCard(game, {
-                    game.doAction(new MagicRemoveCardAction(it,MagicLocationType.Graveyard));
-                    final MagicCardOnStack cardOnStack=new MagicCardOnStack(it,event.getPlayer(),MagicPayedCost.NO_COST);
-                    cardOnStack.setMoveLocation(MagicLocationType.Exile);
-                    game.doAction(new MagicPutItemOnStackAction(cardOnStack));
+                    game.doAction(CastCardAction.WithoutManaCost(
+                        event.getPlayer(),
+                        it,
+                        MagicLocationType.Graveyard,
+                        MagicLocationType.Exile
+                    ));
                 });
             }
         }

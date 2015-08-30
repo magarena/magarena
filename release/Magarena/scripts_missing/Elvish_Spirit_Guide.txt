@@ -1,6 +1,6 @@
 name=Elvish Spirit Guide
-image=http://mtgimage.com/card/elvish%20spirit%20guide.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me2/159.jpg
+value=4.576
 rarity=U
 type=Creature
 subtype=Elf,Spirit

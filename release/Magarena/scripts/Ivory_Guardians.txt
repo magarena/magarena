@@ -1,5 +1,5 @@
 name=Ivory Guardians
-image=http://mtgimage.com/card/ivory%20guardians.jpg
+image=http://magiccards.info/scans/en/me3/15.jpg
 value=1.622
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=Protection from red;\
         Creatures named Ivory Guardians get +1/+1 as long as an opponent controls a nontoken red permanent.
 timing=main
-oracle=Protection from red. Creatures named Ivory Guardians get +1/+1 as long as an opponent controls a nontoken red permanent.
+oracle=Protection from red\nCreatures named Ivory Guardians get +1/+1 as long as an opponent controls a nontoken red permanent.

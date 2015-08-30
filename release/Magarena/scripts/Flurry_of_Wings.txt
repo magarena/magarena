@@ -1,9 +1,10 @@
 name=Flurry of Wings
-image=http://mtgimage.com/card/flurry%20of%20wings.jpg
+image=http://magiccards.info/scans/en/arb/127.jpg
 value=3.259
 rarity=U
 type=Instant
 cost={G}{W}{U}
+ability=Cast SN with AI only if there is an attacking creature on the battlefield.
 timing=token
 requires_groovy_code
 oracle=Put X 1/1 white Bird Soldier creature tokens with flying onto the battlefield, where X is the number of attacking creatures.

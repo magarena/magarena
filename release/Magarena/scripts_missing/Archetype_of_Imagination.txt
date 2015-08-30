@@ -1,6 +1,6 @@
 name=Archetype of Imagination
-image=http://mtgimage.com/card/archetype%20of%20imagination.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bng/32.jpg
+value=3.837
 rarity=U
 type=Enchantment,Creature
 subtype=Human,Wizard
@@ -8,5 +8,5 @@ cost={4}{U}{U}
 pt=3/2
 ability=Creatures you control have flying.;\
         Creatures your opponents control lose flying and can't have or gain flying.
-timing=main
-oracle=Creatures you control have flying. Creatures your opponents control lose flying and can't have or gain flying.
+timing=enchantment
+oracle=Creatures you control have flying.\nCreatures your opponents control lose flying and can't have or gain flying.

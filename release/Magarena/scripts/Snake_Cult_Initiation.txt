@@ -1,5 +1,5 @@
 name=Snake Cult Initiation
-image=http://mtgimage.com/card/snake%20cult%20initiation.jpg
+image=http://magiccards.info/scans/en/fut/89.jpg
 value=3.724
 rarity=U
 type=Enchantment
@@ -8,4 +8,4 @@ cost={3}{B}
 ability=Enchanted creature has poisonous 3.
 enchant=pump,pos creature
 timing=enchantment
-oracle=Enchant creature. Enchanted creature has poisonous 3.
+oracle=Enchant creature\nEnchanted creature has poisonous 3.

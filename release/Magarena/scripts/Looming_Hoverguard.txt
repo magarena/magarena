@@ -1,5 +1,5 @@
 name=Looming Hoverguard
-image=http://mtgimage.com/card/looming%20hoverguard.jpg
+image=http://magiccards.info/scans/en/mi/38.jpg
 value=2.261
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=flying;\
         When SN enters the battlefield, put target artifact on top of its owner's library.
 timing=main
-oracle=Flying. When Looming Hoverguard enters the battlefield, put target artifact on top of its owner's library.
+oracle=Flying\nWhen Looming Hoverguard enters the battlefield, put target artifact on top of its owner's library.

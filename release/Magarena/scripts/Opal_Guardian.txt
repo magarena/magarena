@@ -1,9 +1,9 @@
 name=Opal Guardian
-image=http://mtgimage.com/card/opal%20guardian.jpg
+image=http://magiccards.info/scans/en/ts/30.jpg
 value=3.562
 rarity=R
 type=Enchantment
 cost={W}{W}{W}
+ability=When an opponent casts a creature spell, if SN is an enchantment, SN becomes a 3/4 Gargoyle creature with flying and protection from red.
 timing=main
-requires_groovy_code
 oracle=When an opponent casts a creature spell, if Opal Guardian is an enchantment, Opal Guardian becomes a 3/4 Gargoyle creature with flying and protection from red.

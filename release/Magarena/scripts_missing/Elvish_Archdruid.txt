@@ -1,5 +1,5 @@
 name=Elvish Archdruid
-image=http://mtgimage.com/card/elvish%20archdruid.jpg
+image=http://magiccards.info/scans/en/c14/190.jpg
 value=2.500
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Other Elf creatures you control get +1/+1.;\
         {T}: Add {G} to your mana pool for each Elf you control.
 timing=main
-oracle=Other Elf creatures you control get +1/+1. {T}: Add {G} to your mana pool for each Elf you control.
+oracle=Other Elf creatures you control get +1/+1.\n{T}: Add {G} to your mana pool for each Elf you control.

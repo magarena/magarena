@@ -1,6 +1,6 @@
 name=Grifter's Blade
-image=http://mtgimage.com/card/grifter%27s%20blade.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rav/263.jpg
+value=2.378
 rarity=U
 type=Artifact
 subtype=Equipment
@@ -9,5 +9,5 @@ ability=Flash;\
         As SN enters the battlefield, choose a creature you control it could be attached to. If you do, it enters the battlefield attached to that creature.;\
         Equipped creature gets +1/+1.;\
         Equip {1}
-timing=main
-oracle=Flash. As Grifter's Blade enters the battlefield, choose a creature you control it could be attached to. If you do, it enters the battlefield attached to that creature. Equipped creature gets +1/+1. Equip {1}
+timing=equipment
+oracle=Flash\nAs Grifter's Blade enters the battlefield, choose a creature you control it could be attached to. If you do, it enters the battlefield attached to that creature.\nEquipped creature gets +1/+1.\nEquip {1}

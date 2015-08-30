@@ -1,6 +1,6 @@
 name=Heart Wolf
-image=http://mtgimage.com/card/heart%20wolf.jpg
-value=2.500
+image=http://magiccards.info/scans/en/hl/95.jpg
+value=2.064
 rarity=R
 type=Creature
 subtype=Wolf
@@ -9,4 +9,4 @@ pt=2/2
 ability=First strike;\
         {T}: Target Dwarf creature gets +2/+0 and gains first strike until end of turn. When that creature leaves the battlefield this turn, sacrifice SN. Activate this ability only during combat.
 timing=main
-oracle=First strike. {T}: Target Dwarf creature gets +2/+0 and gains first strike until end of turn. When that creature leaves the battlefield this turn, sacrifice Heart Wolf. Activate this ability only during combat.
+oracle=First strike\n{T}: Target Dwarf creature gets +2/+0 and gains first strike until end of turn. When that creature leaves the battlefield this turn, sacrifice Heart Wolf. Activate this ability only during combat.

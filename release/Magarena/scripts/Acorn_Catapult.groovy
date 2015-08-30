@@ -15,7 +15,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_CREATURE_OR_PLAYER,
+                TARGET_CREATURE_OR_PLAYER,
                 new MagicDamageTargetPicker(1),
                 this,
                 "SN deals 1 damage to target creature or player\$. " +
@@ -27,15 +27,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
-                final MagicDamage damage = new MagicDamage(
-                    event.getSource(),
-                    it,
-                    1
-                );
-                game.doAction(new MagicDealDamageAction(damage));
-                game.doAction(new MagicPlayTokenAction(
+                game.doAction(new DealDamageAction(event.getSource(),it,1));
+                game.doAction(new PlayTokenAction(
                     it.getController(),
-                    TokenCardDefinitions.get("1/1 green Squirrel creature token")
+                    CardDefinitions.getToken("1/1 green Squirrel creature token")
                 ));
             });
         }

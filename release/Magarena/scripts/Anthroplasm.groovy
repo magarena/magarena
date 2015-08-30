@@ -14,15 +14,21 @@
                 source,
                 amount,
                 this,
-                "PN removes all +1/+1 counters from SN, then puts "+amount+" +1/+1 counters on SN."
+                "PN removes all +1/+1 counters from SN, then puts RN +1/+1 counters on SN."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int oldCounters=0
-            oldCounters-=event.getPermanent().getCounters(MagicCounterType.PlusOne);
-            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,oldCounters));
-            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,event.getRefInt()));
+            game.doAction(new ChangeCountersAction(
+                event.getPermanent(),
+                MagicCounterType.PlusOne,
+                -event.getPermanent().getCounters(MagicCounterType.PlusOne)
+            ));
+            game.doAction(new ChangeCountersAction(
+                event.getPermanent(),
+                MagicCounterType.PlusOne,
+                event.getRefInt()
+            ));
         }
     }
 ]

@@ -1,10 +1,10 @@
 name=Ricochet Trap
-image=http://mtgimage.com/card/ricochet%20trap.jpg
-value=2.500
+image=http://magiccards.info/scans/en/wwk/87.jpg
+value=3.824
 rarity=U
 type=Instant
 subtype=Trap
 cost={3}{R}
 effect=If an opponent cast a blue spell this turn, you may pay {R} rather than pay SN's mana cost.~Change the target of target spell with a single target.
 timing=removal
-oracle=If an opponent cast a blue spell this turn, you may pay {R} rather than pay Ricochet Trap's mana cost. Change the target of target spell with a single target.
+oracle=If an opponent cast a blue spell this turn, you may pay {R} rather than pay Ricochet Trap's mana cost.\nChange the target of target spell with a single target.

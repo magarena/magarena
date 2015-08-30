@@ -1,5 +1,5 @@
 name=Rupture Spire
-image=http://mtgimage.com/card/rupture%20spire.jpg
+image=http://magiccards.info/scans/en/c13/315.jpg
 value=3.538
 rarity=C
 type=Land
@@ -8,4 +8,4 @@ ability={T}: Add one mana of any color to your mana pool.;\
         SN enters the battlefield tapped.;\
         When SN enters the battlefield, you may pay {1}. If you don't, sacrifice SN.
 timing=land
-oracle=Rupture Spire enters the battlefield tapped. When Rupture Spire enters the battlefield, sacrifice it unless you pay {1}. {T}: Add one mana of any color to your mana pool.
+oracle=Rupture Spire enters the battlefield tapped.\nWhen Rupture Spire enters the battlefield, sacrifice it unless you pay {1}.\n{T}: Add one mana of any color to your mana pool.

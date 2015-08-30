@@ -1,5 +1,5 @@
 name=Trip Noose
-image=http://mtgimage.com/card/trip%20noose.jpg
+image=http://magiccards.info/scans/en/ddf/65.jpg
 value=3.732
 removal=2
 rarity=U

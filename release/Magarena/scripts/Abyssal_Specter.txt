@@ -1,12 +1,12 @@
 name=Abyssal Specter
-image=http://mtgimage.com/card/abyssal%20specter.jpg
+image=http://magiccards.info/scans/en/dvd/40.jpg
 value=3.700
 rarity=U
 type=Creature
 subtype=Specter
 cost={2}{B}{B}
 pt=2/3
-ability=flying;\
+ability=Flying;\
         Whenever SN deals damage to a player, that player discards a card.
 timing=main
-oracle=Flying. Whenever Abyssal Specter deals damage to a player, that player discards a card.
+oracle=Flying\nWhenever Abyssal Specter deals damage to a player, that player discards a card.

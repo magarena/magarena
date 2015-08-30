@@ -1,5 +1,5 @@
 name=Eel Umbra
-image=http://mtgimage.com/card/eel%20umbra.jpg
+image=http://magiccards.info/scans/en/roe/65.jpg
 value=4.098
 rarity=C
 type=Enchantment
@@ -10,4 +10,4 @@ ability=Flash;\
         totem armor
 timing=pumpFlash
 enchant=pump,pos creature
-oracle=Flash. Enchant creature. Enchanted creature gets +1/+1. Totem armor
+oracle=Flash\nEnchant creature\nEnchanted creature gets +1/+1.\nTotem armor

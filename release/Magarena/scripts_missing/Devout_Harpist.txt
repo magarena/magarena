@@ -1,6 +1,6 @@
 name=Devout Harpist
-image=http://mtgimage.com/card/devout%20harpist.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ul/6.jpg
+value=3.305
 rarity=C
 type=Creature
 subtype=Human

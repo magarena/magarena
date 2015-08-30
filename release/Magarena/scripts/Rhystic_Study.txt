@@ -1,5 +1,5 @@
 name=Rhystic Study
-image=http://mtgimage.com/card/rhystic%20study.jpg
+image=http://magiccards.info/scans/en/cma/15.jpg
 value=4.108
 rarity=C
 type=Enchantment

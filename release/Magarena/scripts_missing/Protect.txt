@@ -1,9 +1,9 @@
 name=Protect
-image=http://mtgimage.com/card/protectserve.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dgm/131a.jpg
+value=2.565
 rarity=U
 type=Instant
 cost={2}{W}
 effect=Target creature gets +2/+4 until end of turn.~Fuse
 timing=removal
-oracle=Target creature gets +2/+4 until end of turn. Fuse
+oracle=Target creature gets +2/+4 until end of turn.\nFuse

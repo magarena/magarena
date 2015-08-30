@@ -1,6 +1,6 @@
 name=Bioshift
-image=http://mtgimage.com/card/bioshift.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gtc/214.jpg
+value=3.174
 rarity=C
 type=Instant
 cost={G/U}

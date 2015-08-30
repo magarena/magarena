@@ -1,0 +1,11 @@
+name=Vorel of the Hull Clade
+image=http://magiccards.info/scans/en/dgm/115.jpg
+value=3.833
+rarity=R
+type=Legendary,Creature
+subtype=Human,Merfolk
+cost={1}{G}{U}
+pt=1/4
+timing=main
+requires_groovy_code
+oracle={G}{U}, {T}: For each counter on target artifact, creature, or land, put another of those counters on that permanent.

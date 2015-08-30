@@ -1,0 +1,9 @@
+name=Thoughts of Ruin
+image=http://magiccards.info/scans/en/sok/118.jpg
+value=2.629
+rarity=R
+type=Sorcery
+cost={2}{R}{R}
+timing=main
+requires_groovy_code
+oracle=Each player sacrifices a land for each card in your hand.

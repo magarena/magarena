@@ -1,9 +1,9 @@
 name=Sphinx-Bone Wand
-image=http://mtgimage.com/card/sphinx-bone%20wand.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddj/29.jpg
+value=2.792
 rarity=R
 type=Artifact
 cost={7}
 ability=Whenever you cast an instant or sorcery spell, you may put a charge counter on SN. If you do, SN deals damage equal to the number of charge counters on it to target creature or player.
-timing=main
+timing=artifact
 oracle=Whenever you cast an instant or sorcery spell, you may put a charge counter on Sphinx-Bone Wand. If you do, Sphinx-Bone Wand deals damage equal to the number of charge counters on it to target creature or player.

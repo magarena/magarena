@@ -1,11 +1,11 @@
 name=Soul Channeling
-image=http://mtgimage.com/card/soul%20channeling.jpg
+image=http://magiccards.info/scans/en/mm/163.jpg
 value=2.650
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{B}
+ability=Pay 2 life: Regenerate enchanted creature.
 enchant=pump,pos creature
 timing=aura
-requires_groovy_code
-oracle=Enchant creature. Pay 2 life: Regenerate enchanted creature.
+oracle=Enchant creature\nPay 2 life: Regenerate enchanted creature.

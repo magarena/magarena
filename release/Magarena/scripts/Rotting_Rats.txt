@@ -1,5 +1,5 @@
 name=Rotting Rats
-image=http://mtgimage.com/card/rotting%20rats.jpg
+image=http://magiccards.info/scans/en/pch/39.jpg
 value=3.065
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=When SN enters the battlefield, each player discards a card.;\
         Unearth {1}{B}
 timing=main
-oracle=When Rotting Rats enters the battlefield, each player discards a card. Unearth {1}{B}
+oracle=When Rotting Rats enters the battlefield, each player discards a card.\nUnearth {1}{B}

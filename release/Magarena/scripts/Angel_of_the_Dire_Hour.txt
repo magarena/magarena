@@ -1,0 +1,13 @@
+name=Angel of the Dire Hour
+image=http://magiccards.info/scans/en/c14/1.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Angel
+cost={5}{W}{W}
+pt=5/4
+ability=Flash;\
+        Flying;\
+        When SN enters the battlefield, if you cast it from your hand, exile all attacking creatures.
+timing=flash
+oracle=Flash\nFlying\nWhen Angel of the Dire Hour enters the battlefield, if you cast it from your hand, exile all attacking creatures.

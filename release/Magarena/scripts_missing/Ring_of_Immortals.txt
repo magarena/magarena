@@ -1,9 +1,0 @@
-name=Ring of Immortals
-image=http://mtgimage.com/card/ring%20of%20immortals.jpg
-value=2.500
-rarity=R
-type=Artifact
-cost={5}
-ability={3}, {T}: Counter target instant or Aura spell that targets a permanent you control.
-timing=main
-oracle={3}, {T}: Counter target instant or Aura spell that targets a permanent you control.

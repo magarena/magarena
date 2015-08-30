@@ -1,5 +1,5 @@
 name=Whitemane Lion
-image=http://mtgimage.com/card/whitemane%20lion.jpg
+image=http://magiccards.info/scans/en/c14/96.jpg
 value=3.062
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=flash;\
         When SN enters the battlefield, return a creature you control to its owner's hand.
 timing=pumpFlash
-oracle=Flash. When Whitemane Lion enters the battlefield, return a creature you control to its owner's hand.
+oracle=Flash\nWhen Whitemane Lion enters the battlefield, return a creature you control to its owner's hand.

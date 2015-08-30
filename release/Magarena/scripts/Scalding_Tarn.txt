@@ -1,5 +1,5 @@
 name=Scalding Tarn
-image=http://mtgimage.com/card/scalding%20tarn.jpg
+image=http://magiccards.info/scans/en/zen/223.jpg
 value=4.481
 rarity=R
 type=Land

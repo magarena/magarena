@@ -1,9 +1,9 @@
 name=Infernal Offering
-image=http://mtgimage.com/card/infernal%20offering.jpg
+image=http://magiccards.info/scans/en/c14/24.jpg
 value=2.500
 rarity=R
 type=Sorcery
 cost={4}{B}
 effect=Choose an opponent. You and that player each sacrifice a creature. Each player who sacrificed a creature this way draws two cards.~Choose an opponent. Return a creature card from your graveyard to the battlefield, then that player returns a creature card from his or her graveyard to the battlefield.
 timing=main
-oracle=Choose an opponent. You and that player each sacrifice a creature. Each player who sacrificed a creature this way draws two cards. Choose an opponent. Return a creature card from your graveyard to the battlefield, then that player returns a creature card from his or her graveyard to the battlefield.
+oracle=Choose an opponent. You and that player each sacrifice a creature. Each player who sacrificed a creature this way draws two cards.\nChoose an opponent. Return a creature card from your graveyard to the battlefield, then that player returns a creature card from his or her graveyard to the battlefield.

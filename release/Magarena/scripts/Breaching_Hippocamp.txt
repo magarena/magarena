@@ -1,12 +1,12 @@
 name=Breaching Hippocamp
-image=http://mtgimage.com/card/breaching%20hippocamp.jpg
+image=http://magiccards.info/scans/en/ths/43.jpg
 value=3.432
 rarity=C
 type=Creature
 subtype=Horse,Fish
 cost={3}{U}
 pt=3/2
-ability=flash
+ability=flash;\
+        When SN enters the battlefield, untap another target creature you control.
 timing=flash
-requires_groovy_code
-oracle=Flash. When Breaching Hippocamp enters the battlefield, untap another target creature you control.
+oracle=Flash\nWhen Breaching Hippocamp enters the battlefield, untap another target creature you control.

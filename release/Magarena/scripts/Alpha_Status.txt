@@ -1,0 +1,11 @@
+name=Alpha Status
+image=http://magiccards.info/scans/en/sc/110.jpg
+value=4.208
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={2}{G}
+timing=aura
+enchant=pump,pos creature
+requires_groovy_code
+oracle=Enchant creature\nEnchanted creature gets +2/+2 for each other creature on the battlefield that shares a creature type with it.

@@ -1,5 +1,5 @@
 name=Deathrender
-image=http://mtgimage.com/card/deathrender.jpg
+image=http://magiccards.info/scans/en/cns/197.jpg
 value=3.571
 rarity=R
 type=Artifact
@@ -9,4 +9,4 @@ ability=Equipped creature gets +2/+2.;\
         Equip {2}
 timing=equipment
 requires_groovy_code
-oracle=Equipped creature gets +2/+2. Whenever equipped creature dies, you may put a creature card from your hand onto the battlefield and attach Deathrender to it. Equip {2}
+oracle=Equipped creature gets +2/+2.\nWhenever equipped creature dies, you may put a creature card from your hand onto the battlefield and attach Deathrender to it.\nEquip {2}

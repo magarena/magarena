@@ -1,11 +1,11 @@
 name=Gift of Immortality
-image=http://mtgimage.com/card/gift%20of%20immortality.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ths/14.jpg
+value=3.621
 rarity=R
 type=Enchantment
 subtype=Aura
 cost={2}{W}
 ability=Enchant creature;\
         When enchanted creature dies, return that card to the battlefield under its owner's control. Return SN to the battlefield attached to that creature at the beginning of the next end step.
-timing=main
-oracle=Enchant creature. When enchanted creature dies, return that card to the battlefield under its owner's control. Return Gift of Immortality to the battlefield attached to that creature at the beginning of the next end step.
+timing=aura
+oracle=Enchant creature\nWhen enchanted creature dies, return that card to the battlefield under its owner's control. Return Gift of Immortality to the battlefield attached to that creature at the beginning of the next end step.

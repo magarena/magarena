@@ -1,5 +1,5 @@
 name=Mystical Teachings
-image=http://mtgimage.com/card/mystical%20teachings.jpg
+image=http://magiccards.info/scans/en/ts/69.jpg
 value=4.269
 rarity=C
 type=Instant
@@ -7,4 +7,4 @@ cost={3}{U}
 effect=Search your library for an instant card or a card with flash, reveal it, and put it into your hand. Then shuffle your library.
 ability=Flashback {5}{B}
 timing=draw
-oracle=Search your library for an instant card or a card with flash, reveal it, and put it into your hand. Then shuffle your library. Flashback {5}{B}
+oracle=Search your library for an instant card or a card with flash, reveal it, and put it into your hand. Then shuffle your library.\nFlashback {5}{B}

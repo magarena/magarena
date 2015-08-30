@@ -1,5 +1,5 @@
 name=Hurloon Minotaur
-image=http://mtgimage.com/card/hurloon%20minotaur.jpg
+image=http://magiccards.info/scans/en/me3/102.jpg
 value=3.117
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Minotaur
 cost={1}{R}{R}
 pt=2/3
 timing=main
+oracle=NONE

@@ -1,6 +1,6 @@
 name=Psychic Intrusion
-image=http://mtgimage.com/card/psychic%20intrusion.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ths/200.jpg
+value=3.466
 rarity=R
 type=Sorcery
 cost={3}{U}{B}

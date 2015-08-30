@@ -1,9 +1,10 @@
 name=Barktooth Warbeard
-image=http://mtgimage.com/card/barktooth%20warbeard.jpg
+image=http://magiccards.info/scans/en/me3/144.jpg
 value=2.149
-rarity=C
+rarity=U
 type=Legendary,Creature
 subtype=Human,Warrior
 cost={4}{B}{R}{R}
 pt=6/5
 timing=main
+oracle=NONE

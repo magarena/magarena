@@ -1,5 +1,5 @@
 name=Darkling Stalker
-image=http://mtgimage.com/card/darkling%20stalker.jpg
+image=http://magiccards.info/scans/en/tp/13.jpg
 value=3.307
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability={B}: Regenerate SN.;\
         {B}: SN gets +1/+1 until end of turn.
 timing=main
-oracle={B}: Regenerate Darkling Stalker. {B}: Darkling Stalker gets +1/+1 until end of turn.
+oracle={B}: Regenerate Darkling Stalker.\n{B}: Darkling Stalker gets +1/+1 until end of turn.

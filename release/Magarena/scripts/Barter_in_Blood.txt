@@ -1,10 +1,11 @@
 name=Barter in Blood
-image=http://mtgimage.com/card/barter%20in%20blood.jpg
+image=http://magiccards.info/scans/en/avr/85.jpg
 value=3.764
 removal=4
 rarity=U
 type=Sorcery
 cost={2}{B}{B}
+ability=Cast SN with AI only if an opponent controls a creature.
 timing=removal
 requires_groovy_code
 oracle=Each player sacrifices two creatures.

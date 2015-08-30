@@ -1,0 +1,12 @@
+name=Thunderbreak Regent
+image=http://magiccards.info/scans/en/dtk/162.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Dragon
+cost={2}{R}{R}
+pt=4/4
+ability=Flying
+timing=main
+requires_groovy_code
+oracle=Flying\nWhenever a Dragon you control becomes the target of a spell or ability an opponent controls, Thunderbreak Regent deals 3 damage to that player.

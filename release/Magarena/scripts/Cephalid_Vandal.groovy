@@ -11,12 +11,12 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeCountersAction(
+            game.doAction(new ChangeCountersAction(
                 event.getPermanent(),
                 MagicCounterType.Shred,
                 1
             ));
-            game.doAction(new MagicMillLibraryAction(
+            game.doAction(new MillLibraryAction(
                 event.getPlayer(),
                 event.getPermanent().getCounters(MagicCounterType.Shred)
             ));

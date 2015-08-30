@@ -1,0 +1,11 @@
+name=Leering Emblem
+image=http://magiccards.info/scans/en/eve/171.jpg
+value=3.119
+rarity=R
+type=Artifact
+subtype=Equipment
+cost={2}
+ability=Whenever you cast a spell, if SN is being equipped, equipped creature gets +2/+2 until end of turn.;\
+        Equip {2}
+timing=main
+oracle=Whenever you cast a spell, equipped creature gets +2/+2 until end of turn.\nEquip {2}

@@ -1,5 +1,5 @@
 name=Freyalise's Charm
-image=http://mtgimage.com/card/freyalise's%20charm.jpg
+image=http://magiccards.info/scans/en/ia/128.jpg
 value=2.236
 rarity=U
 type=Enchantment
@@ -7,4 +7,4 @@ cost={G}{G}
 ability=Whenever an opponent casts a black spell, you may pay {G}{G}. If you do, you draw a card.;\
         {G}{G}:Return SN to its owner's hand.
 timing=enchantment
-oracle=Whenever an opponent casts a black spell, you may pay {G}{G}. If you do, you draw a card. {G}{G}: Return Freyalise's Charm to its owner's hand.
+oracle=Whenever an opponent casts a black spell, you may pay {G}{G}. If you do, you draw a card.\n{G}{G}: Return Freyalise's Charm to its owner's hand.

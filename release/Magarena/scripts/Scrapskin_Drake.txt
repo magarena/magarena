@@ -1,11 +1,12 @@
 name=Scrapskin Drake
-image=http://mtgimage.com/card/scrapskin%20drake.jpg
-value=2.216
+image=http://magiccards.info/scans/en/ori/69.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Zombie,Drake
 cost={2}{U}
 pt=2/3
-ability=flying;SN can block only creatures with flying.
+ability=Flying;\
+        SN can block only creatures with flying.
 timing=main
-oracle=Flying. Scrapskin Drake can block only creatures with flying.
+oracle=Flying\nScrapskin Drake can block only creatures with flying.

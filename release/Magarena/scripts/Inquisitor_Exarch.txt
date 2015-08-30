@@ -1,11 +1,13 @@
 name=Inquisitor Exarch
-image=http://mtgimage.com/card/inquisitor%20exarch.jpg
-value=2.500
+image=http://magiccards.info/scans/en/nph/12.jpg
+value=3.495
 rarity=U
 type=Creature
 subtype=Cleric
 cost={W}{W}
 pt=2/2
+ability=When SN enters the battlefield, choose one — \
+        (1) You gain 2 life. \
+        (2) Target opponent loses 2 life.
 timing=main
-requires_groovy_code
-oracle=When Inquisitor Exarch enters the battlefield, choose one — • You gain 2 life. • Target opponent loses 2 life.
+oracle=When Inquisitor Exarch enters the battlefield, choose one —\n• You gain 2 life.\n• Target opponent loses 2 life.

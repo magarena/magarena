@@ -1,0 +1,9 @@
+name=Warped Devotion
+image=http://magiccards.info/scans/en/8e/172.jpg
+value=3.731
+rarity=R
+type=Enchantment
+cost={2}{B}
+timing=enchantment
+requires_groovy_code
+oracle=Whenever a permanent is returned to a player's hand, that player discards a card.

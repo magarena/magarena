@@ -1,13 +1,13 @@
 name=Parallax Dementia
-image=http://mtgimage.com/card/parallax%20dementia.jpg
+image=http://magiccards.info/scans/en/ne/62.jpg
 value=3.409
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{B}
 ability=Fading 1;\
-        Enchanted creature gets +3/+2.
+        Enchanted creature gets +3/+2.;\
+        When SN leaves the battlefield, destroy enchanted creature. It can't be regenerated.
 timing=aura
 enchant=pump,creature
-requires_groovy_code
-oracle=Enchant creature. Fading 1. Enchanted creature gets +3/+2. When Parallax Dementia leaves the battlefield, destroy enchanted creature. That creature can't be regenerated.
+oracle=Enchant creature\nFading 1\nEnchanted creature gets +3/+2.\nWhen Parallax Dementia leaves the battlefield, destroy enchanted creature. That creature can't be regenerated.

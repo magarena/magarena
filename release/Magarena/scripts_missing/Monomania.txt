@@ -1,6 +1,6 @@
 name=Monomania
-image=http://mtgimage.com/card/monomania.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m12/102.jpg
+value=2.782
 rarity=R
 type=Sorcery
 cost={3}{B}{B}

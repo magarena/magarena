@@ -1,0 +1,9 @@
+name=Rishadan Pawnshop
+image=http://magiccards.info/scans/en/mm/311.jpg
+value=3.167
+rarity=R
+type=Artifact
+cost={2}
+timing=artifact
+requires_groovy_code
+oracle={2}, {T}: Shuffle target nontoken permanent you control into its owner's library.

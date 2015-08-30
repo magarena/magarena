@@ -1,6 +1,6 @@
 name=Blazing Salvo
-image=http://mtgimage.com/card/blazing%20salvo.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddk/58.jpg
+value=3.640
 rarity=C
 type=Instant
 cost={R}

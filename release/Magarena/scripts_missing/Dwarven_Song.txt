@@ -1,6 +1,6 @@
 name=Dwarven Song
-image=http://mtgimage.com/card/dwarven%20song.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lg/141.jpg
+value=2.240
 rarity=U
 type=Instant
 cost={R}

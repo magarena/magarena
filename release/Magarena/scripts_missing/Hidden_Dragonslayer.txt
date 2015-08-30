@@ -1,0 +1,13 @@
+name=Hidden Dragonslayer
+image=http://magiccards.info/scans/en/dtk/23.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Warrior
+cost={1}{W}
+pt=2/1
+ability=Lifelink;\
+        Megamorph {2}{W};\
+        When SN is turned face up, destroy target creature with power 4 or greater an opponent controls.
+timing=main
+oracle=Lifelink\nMegamorph {2}{W}\nWhen Hidden Dragonslayer is turned face up, destroy target creature with power 4 or greater an opponent controls.

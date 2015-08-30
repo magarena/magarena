@@ -1,5 +1,5 @@
 name=Blood Baron of Vizkopa
-image=http://mtgimage.com/card/blood%20baron%20of%20vizkopa.jpg
+image=http://magiccards.info/scans/en/dgm/57.jpg
 value=3.854
 rarity=M
 type=Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=lifelink;protection from white;protection from black;\
         As long as you have 30 or more life and an opponent has 10 or less life, SN gets +6/+6 and has flying.
 timing=main
-oracle=Lifelink, protection from white and from black. As long as you have 30 or more life and an opponent has 10 or less life, Blood Baron of Vizkopa gets +6/+6 and has flying.
+oracle=Lifelink, protection from white and from black\nAs long as you have 30 or more life and an opponent has 10 or less life, Blood Baron of Vizkopa gets +6/+6 and has flying.

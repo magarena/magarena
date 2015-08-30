@@ -1,5 +1,5 @@
 name=Teroh's Faithful
-image=http://mtgimage.com/card/teroh%27s%20faithful.jpg
+image=http://magiccards.info/scans/en/vma/52.jpg
 value=2.385
 rarity=C
 type=Creature

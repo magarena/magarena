@@ -1,9 +1,9 @@
 name=Crippling Chill
-image=http://mtgimage.com/card/crippling%20chill.jpg
-value=3.167
+image=http://magiccards.info/scans/en/ktk/35.jpg
+value=3.125
 rarity=C
 type=Instant
 cost={2}{U}
 effect=Tap target creature. It doesn't untap during its controller's next untap step.~Draw a card.
 timing=tapping
-oracle=Tap target creature. It doesn't untap during its controller's next untap step. Draw a card.
+oracle=Tap target creature. It doesn't untap during its controller's next untap step.\nDraw a card.

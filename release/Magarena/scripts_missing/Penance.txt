@@ -1,9 +1,9 @@
 name=Penance
-image=http://mtgimage.com/card/penance.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ex/15.jpg
+value=2.286
 rarity=U
 type=Enchantment
 cost={2}{W}
 ability=Put a card from your hand on top of your library: The next time a black or red source of your choice would deal damage this turn, prevent that damage.
-timing=main
+timing=enchantment
 oracle=Put a card from your hand on top of your library: The next time a black or red source of your choice would deal damage this turn, prevent that damage.

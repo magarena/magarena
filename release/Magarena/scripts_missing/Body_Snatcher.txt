@@ -1,6 +1,6 @@
 name=Body Snatcher
-image=http://mtgimage.com/card/body%20snatcher.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ud/53.jpg
+value=4.534
 rarity=R
 type=Creature
 subtype=Minion
@@ -9,4 +9,4 @@ pt=2/2
 ability=When SN enters the battlefield, exile it unless you discard a creature card.;\
         When SN dies, exile SN and return target creature card from your graveyard to the battlefield.
 timing=main
-oracle=When Body Snatcher enters the battlefield, exile it unless you discard a creature card. When Body Snatcher dies, exile Body Snatcher and return target creature card from your graveyard to the battlefield.
+oracle=When Body Snatcher enters the battlefield, exile it unless you discard a creature card.\nWhen Body Snatcher dies, exile Body Snatcher and return target creature card from your graveyard to the battlefield.

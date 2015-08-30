@@ -1,5 +1,5 @@
 name=Centaur Garden
-image=http://mtgimage.com/card/centaur%20garden.jpg
+image=http://magiccards.info/scans/en/od/316.jpg
 value=2.481
 rarity=U
 type=Land
@@ -7,4 +7,4 @@ mana=g2
 ability={T}: Add {G} to your mana pool. SN deals 1 damage to you.;\
         {G}, {T}, Sacrifice SN: Target creature gets +3/+3 until end of turn. Activate this ability only if seven or more cards are in your graveyard.
 timing=land
-oracle={T}: Add {G} to your mana pool. Centaur Garden deals 1 damage to you. Threshold — {G}, {T}, Sacrifice Centaur Garden: Target creature gets +3/+3 until end of turn. Activate this ability only if seven or more cards are in your graveyard.
+oracle={T}: Add {G} to your mana pool. Centaur Garden deals 1 damage to you.\nThreshold — {G}, {T}, Sacrifice Centaur Garden: Target creature gets +3/+3 until end of turn. Activate this ability only if seven or more cards are in your graveyard.

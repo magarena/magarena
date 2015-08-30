@@ -1,5 +1,5 @@
 name=Walking Corpse
-image=http://mtgimage.com/card/walking%20corpse.jpg
+image=http://magiccards.info/scans/en/m15/278.jpg
 value=2.000
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Zombie
 cost={1}{B}
 pt=2/2
 timing=main
+oracle=NONE

@@ -1,0 +1,11 @@
+name=Slate Street Ruffian
+image=http://magiccards.info/scans/en/ddm/53.jpg
+value=3.500
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={2}{B}
+pt=2/2
+ability=Whenever SN becomes blocked, defending player discards a card.
+timing=main
+oracle=Whenever Slate Street Ruffian becomes blocked, defending player discards a card.

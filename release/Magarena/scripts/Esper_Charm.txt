@@ -1,0 +1,9 @@
+name=Esper Charm
+image=http://magiccards.info/scans/en/ala/167.jpg
+value=3.836
+rarity=U
+type=Instant
+cost={W}{U}{B}
+effect=Choose one — (1) Destroy target enchantment. (2) Draw two cards. (3) Target player discards two cards.
+timing=removal
+oracle=Choose one —\n• Destroy target enchantment.\n• Draw two cards.\n• Target player discards two cards.

@@ -1,0 +1,9 @@
+name=Lightning Javelin
+image=http://magiccards.info/scans/en/ori/153.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={3}{R}
+effect=SN deals 3 damage to target creature or player.~Scry 1.
+timing=main
+oracle=Lightning Javelin deals 3 damage to target creature or player. Scry 1.

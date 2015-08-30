@@ -1,5 +1,5 @@
 name=Renewed Faith
-image=http://mtgimage.com/card/renewed%20faith.jpg
+image=http://magiccards.info/scans/en/vma/42.jpg
 value=2.000
 rarity=C
 type=Instant
@@ -8,4 +8,4 @@ ability=Cycling {1}{W};\
         When you cycle SN, you may gain 2 life.
 effect=You gain 6 life.
 timing=removal
-oracle=You gain 6 life. Cycling {1}{W}. When you cycle Renewed Faith, you may gain 2 life.
+oracle=You gain 6 life.\nCycling {1}{W}\nWhen you cycle Renewed Faith, you may gain 2 life.

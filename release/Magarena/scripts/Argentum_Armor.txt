@@ -1,12 +1,12 @@
 name=Argentum Armor
-image=http://mtgimage.com/card/argentum%20armor.jpg
+image=http://magiccards.info/scans/en/c14/228.jpg
 value=3.876
 rarity=R
 type=Artifact
 subtype=Equipment
 cost={6}
 ability=Equipped creature gets +6/+6;\
+        Whenever equipped creature attacks, destroy target permanent.;\
         Equip {6}
 timing=equipment
-requires_groovy_code
-oracle=Equipped creature gets +6/+6. Whenever equipped creature attacks, destroy target permanent. Equip {6}
+oracle=Equipped creature gets +6/+6.\nWhenever equipped creature attacks, destroy target permanent.\nEquip {6}

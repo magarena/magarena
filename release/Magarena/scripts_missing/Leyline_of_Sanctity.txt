@@ -1,10 +1,10 @@
 name=Leyline of Sanctity
-image=http://mtgimage.com/card/leyline%20of%20sanctity.jpg
+image=http://magiccards.info/scans/en/m11/21.jpg
 value=2.500
 rarity=R
 type=Enchantment
 cost={2}{W}{W}
 ability=If SN is in your opening hand, you may begin the game with it on the battlefield.;\
         You have hexproof.
-timing=main
-oracle=If Leyline of Sanctity is in your opening hand, you may begin the game with it on the battlefield. You have hexproof.
+timing=enchantment
+oracle=If Leyline of Sanctity is in your opening hand, you may begin the game with it on the battlefield.\nYou have hexproof.

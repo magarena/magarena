@@ -1,6 +1,6 @@
 name=Breezekeeper
-image=http://mtgimage.com/card/breezekeeper.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vi/27.jpg
+value=3.109
 rarity=C
 type=Creature
 subtype=Djinn
@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying;\
         Phasing
 timing=main
-oracle=Flying. Phasing
+oracle=Flying\nPhasing

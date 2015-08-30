@@ -1,5 +1,5 @@
 name=Lull
-image=http://mtgimage.com/card/lull.jpg
+image=http://magiccards.info/scans/en/us/267.jpg
 value=4.015
 rarity=C
 type=Instant
@@ -7,4 +7,4 @@ cost={1}{G}
 ability=cycling {2}
 effect=Prevent all combat damage that would be dealt this turn.
 timing=block
-oracle=Prevent all combat damage that would be dealt this turn. Cycling {2}
+oracle=Prevent all combat damage that would be dealt this turn.\nCycling {2}

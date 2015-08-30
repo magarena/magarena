@@ -1,6 +1,6 @@
 name=Cunning Giant
-image=http://mtgimage.com/card/cunning%20giant.jpg
-value=2.500
+image=http://magiccards.info/scans/en/po2/93.jpg
+value=3.104
 rarity=R
 type=Creature
 subtype=Giant

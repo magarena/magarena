@@ -12,17 +12,17 @@ import java.awt.Dimension;
 import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
-import magic.ui.MagicStyle;
+import magic.ui.utility.MagicStyle;
 
 public class ImageCombatViewer extends JPanel implements ChoiceViewer {
 
     private static final long serialVersionUID = 1L;
 
-    private final ViewerInfo viewerInfo;
+    private final SwingGameController controller;
     private final ImagePermanentsViewer permanentsViewer;
 
-    public ImageCombatViewer(final SwingGameController controller) {
-        viewerInfo = controller.getViewerInfo();
+    public ImageCombatViewer(final SwingGameController aController) {
+        controller = aController;
         controller.registerChoiceViewer(this);
 
         setLayout(new BorderLayout(6,0));
@@ -46,6 +46,8 @@ public class ImageCombatViewer extends JPanel implements ChoiceViewer {
     public void update() {
         final SortedSet<PermanentViewerInfo> creatures =
             new TreeSet<>(PermanentViewerInfo.BLOCKED_NAME_COMPARATOR);
+
+        final ViewerInfo viewerInfo = controller.getViewerInfo();
 
         final PlayerViewerInfo attackingPlayerInfo=viewerInfo.getAttackingPlayerInfo();
         for (final PermanentViewerInfo permanentInfo : attackingPlayerInfo.permanents) {

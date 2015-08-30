@@ -1,6 +1,6 @@
 name=Thornscape Familiar
-image=http://mtgimage.com/card/thornscape%20familiar.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ps/95.jpg
+value=4.098
 rarity=C
 type=Creature
 subtype=Insect

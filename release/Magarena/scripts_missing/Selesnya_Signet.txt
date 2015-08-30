@@ -1,9 +1,9 @@
 name=Selesnya Signet
-image=http://mtgimage.com/card/selesnya%20signet.jpg
-value=2.500
+image=http://magiccards.info/scans/en/c13/257.jpg
+value=3.750
 rarity=C
 type=Artifact
 cost={2}
 ability={1}, {T}: Add {G}{W} to your mana pool.
-timing=main
+timing=artifact
 oracle={1}, {T}: Add {G}{W} to your mana pool.

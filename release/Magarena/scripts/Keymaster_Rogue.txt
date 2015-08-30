@@ -1,5 +1,5 @@
 name=Keymaster Rogue
-image=http://mtgimage.com/card/keymaster%20rogue.jpg
+image=http://magiccards.info/scans/en/gtc/39.jpg
 value=3.000
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/2
 ability=SN can't be blocked.;\
         When SN enters the battlefield, return a creature you control to its owner's hand.
 timing=main
-oracle=Keymaster Rogue can't be blocked. When Keymaster Rogue enters the battlefield, return a creature you control to its owner's hand.
+oracle=Keymaster Rogue can't be blocked.\nWhen Keymaster Rogue enters the battlefield, return a creature you control to its owner's hand.

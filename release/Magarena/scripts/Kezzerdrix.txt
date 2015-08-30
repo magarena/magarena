@@ -1,5 +1,5 @@
 name=Kezzerdrix
-image=http://mtgimage.com/card/kezzerdrix.jpg
+image=http://magiccards.info/scans/en/vma/124.jpg
 value=2.875
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=First strike
 timing=main
 requires_groovy_code
-oracle=First strike. At the beginning of your upkeep, if your opponents control no creatures, Kezzerdrix deals 4 damage to you.
+oracle=First strike\nAt the beginning of your upkeep, if your opponents control no creatures, Kezzerdrix deals 4 damage to you.

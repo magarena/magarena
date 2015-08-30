@@ -6,11 +6,7 @@
             return (damage.getTarget() == permanent.getController()) ?
                 new MagicEvent(
                     permanent,
-                    new MagicSimpleMayChoice(
-                        MagicSimpleMayChoice.PLAY_TOKEN,
-                        amount,
-                        MagicSimpleMayChoice.DEFAULT_YES
-                    ),
+                    new MagicSimpleMayChoice(),
                     amount,
                     this,
                     "PN may\$ put RN 1/1 white Soldier creature tokens onto the battlefield."
@@ -19,10 +15,10 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-             if (event.isYes()){
-                game.doAction(new MagicPlayTokensAction(
+            if (event.isYes()){
+                game.doAction(new PlayTokensAction(
                     event.getPlayer(),
-                    TokenCardDefinitions.get("1/1 white Soldier creature token"),
+                    CardDefinitions.getToken("1/1 white Soldier creature token"),
                     event.getRefInt()
                 ));
             }

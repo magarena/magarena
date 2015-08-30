@@ -1,5 +1,5 @@
 name=Ridgeline Rager
-image=http://mtgimage.com/card/ridgeline%20rager.jpg
+image=http://magiccards.info/scans/en/8e/215.jpg
 value=3.152
 rarity=C
 type=Creature

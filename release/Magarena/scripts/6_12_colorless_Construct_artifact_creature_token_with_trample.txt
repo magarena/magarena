@@ -1,0 +1,10 @@
+name=6/12 colorless Construct artifact creature token with trample
+token=Construct
+image=http://magiccards.info/extras/token/worldwake/construct.jpg
+value=5
+pt=6/12
+color=
+subtype=Construct
+type=Artifact,Creature
+ability=trample
+oracle=Trample

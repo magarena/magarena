@@ -1,6 +1,6 @@
 name=Jaya Ballard, Task Mage
-image=http://mtgimage.com/card/jaya%20ballard%2C%20task%20mage.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ts/166.jpg
+value=3.705
 rarity=R
 type=Legendary,Creature
 subtype=Human,Spellshaper
@@ -10,4 +10,4 @@ ability={R}, {T}, Discard a card: Destroy target blue permanent.;\
         {1}{R}, {T}, Discard a card: SN deals 3 damage to target creature or player. A creature dealt damage this way can't be regenerated this turn.;\
         {5}{R}{R}, {T}, Discard a card: Jaya Ballard deals 6 damage to each creature and each player.
 timing=main
-oracle={R}, {T}, Discard a card: Destroy target blue permanent. {1}{R}, {T}, Discard a card: Jaya Ballard, Task Mage deals 3 damage to target creature or player. A creature dealt damage this way can't be regenerated this turn. {5}{R}{R}, {T}, Discard a card: Jaya Ballard deals 6 damage to each creature and each player.
+oracle={R}, {T}, Discard a card: Destroy target blue permanent.\n{1}{R}, {T}, Discard a card: Jaya Ballard, Task Mage deals 3 damage to target creature or player. A creature dealt damage this way can't be regenerated this turn.\n{5}{R}{R}, {T}, Discard a card: Jaya Ballard deals 6 damage to each creature and each player.

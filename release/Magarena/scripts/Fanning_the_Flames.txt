@@ -1,5 +1,5 @@
 name=Fanning the Flames
-image=http://mtgimage.com/card/fanning%20the%20flames.jpg
+image=http://magiccards.info/scans/en/sh/80.jpg
 value=3.764
 removal=3
 rarity=U
@@ -8,4 +8,4 @@ cost={X}{R}{R}
 timing=removal
 ability=buyback {3}
 requires_groovy_code
-oracle=Buyback {3}. Fanning the Flames deals X damage to target creature or player.
+oracle=Buyback {3}\nFanning the Flames deals X damage to target creature or player.

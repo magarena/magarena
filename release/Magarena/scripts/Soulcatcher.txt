@@ -1,5 +1,5 @@
 name=Soulcatcher
-image=http://mtgimage.com/card/soulcatcher.jpg
+image=http://magiccards.info/scans/en/cns/82.jpg
 value=4.214
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying;\
         Whenever a creature with flying dies, put a +1/+1 counter on SN.
 timing=main
-oracle=Flying. Whenever a creature with flying dies, put a +1/+1 counter on Soulcatcher.
+oracle=Flying\nWhenever a creature with flying dies, put a +1/+1 counter on Soulcatcher.

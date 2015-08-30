@@ -1,5 +1,5 @@
 name=Ambush Viper
-image=http://mtgimage.com/card/ambush%20viper.jpg
+image=http://magiccards.info/scans/en/isd/169.jpg
 value=3.963
 removal=2
 rarity=C
@@ -7,6 +7,7 @@ type=Creature
 subtype=Snake
 cost={1}{G}
 pt=2/1
-ability=flash;deathtouch
 timing=flash
-oracle=Flash. Deathtouch
+ability=Flash;\
+        Deathtouch
+oracle=Flash\nDeathtouch

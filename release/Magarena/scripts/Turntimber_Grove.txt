@@ -1,5 +1,5 @@
 name=Turntimber Grove
-image=http://mtgimage.com/card/turntimber%20grove.jpg
+image=http://magiccards.info/scans/en/zen/227.jpg
 value=3.089
 rarity=C
 type=Land
@@ -7,4 +7,4 @@ mana=g3
 ability=SN enters the battlefield tapped.;When SN enters the battlefield, target creature gets +1/+1 until end of turn.;\
         {T}: Add {G} to your mana pool.
 timing=fmain
-oracle=Turntimber Grove enters the battlefield tapped. When Turntimber Grove enters the battlefield, target creature gets +1/+1 until end of turn. {T}: Add {G} to your mana pool.
+oracle=Turntimber Grove enters the battlefield tapped.\nWhen Turntimber Grove enters the battlefield, target creature gets +1/+1 until end of turn.\n{T}: Add {G} to your mana pool.

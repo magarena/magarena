@@ -1,6 +1,6 @@
 name=Dwell on the Past
-image=http://mtgimage.com/card/dwell%20on%20the%20past.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tr/124.jpg
+value=3.183
 rarity=U
 type=Sorcery
 cost={G}

@@ -1,6 +1,6 @@
 name=Lord Magnus
-image=http://mtgimage.com/card/lord%20magnus.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lg/283.jpg
+value=2.429
 rarity=U
 type=Legendary,Creature
 subtype=Human,Druid
@@ -10,4 +10,4 @@ ability=First strike;\
         Creatures with plainswalk can be blocked as though they didn't have plainswalk.;\
         Creatures with forestwalk can be blocked as though they didn't have forestwalk.
 timing=main
-oracle=First strike. Creatures with plainswalk can be blocked as though they didn't have plainswalk. Creatures with forestwalk can be blocked as though they didn't have forestwalk.
+oracle=First strike\nCreatures with plainswalk can be blocked as though they didn't have plainswalk.\nCreatures with forestwalk can be blocked as though they didn't have forestwalk.

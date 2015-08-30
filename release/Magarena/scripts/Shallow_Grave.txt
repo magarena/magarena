@@ -1,5 +1,5 @@
 name=Shallow Grave
-image=http://mtgimage.com/card/shallow%20grave.jpg
+image=http://magiccards.info/scans/en/mr/39.jpg
 value=4.323
 rarity=R
 type=Instant

@@ -52,11 +52,11 @@ public class MagicBuilderManaCost {
         assert compressedIndex == typeCount : "typeCount is inconsistent: typeCount = " + typeCount + ", compressedIndex = " + compressedIndex;
     }
 
-    MagicCostManaType[] getTypes() {
+    public MagicCostManaType[] getTypes() {
         return compressedTypes;
     }
 
-    int[] getAmounts() {
+    public int[] getAmounts() {
         return compressedAmounts;
     }
 
@@ -91,7 +91,7 @@ public class MagicBuilderManaCost {
         }
     }
 
-    void removeType(final MagicCostManaType type,final int amount) {
+    public void removeType(final MagicCostManaType type,final int amount) {
         assert amount >= 0 : "amount of mana to remove is negative: amount = " + amount;
         final int index=type.ordinal();
         amounts[index]-=amount;

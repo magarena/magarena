@@ -1,5 +1,5 @@
 name=Thunderstaff
-image=http://mtgimage.com/card/thunderstaff.jpg
+image=http://magiccards.info/scans/en/c13/267.jpg
 value=3.800
 rarity=U
 type=Artifact
@@ -7,4 +7,4 @@ cost={3}
 ability={2}, {T}: Attacking creatures get +1/+0 until end of turn.
 timing=main
 requires_groovy_code
-oracle=As long as Thunderstaff is untapped, if a creature would deal combat damage to you, prevent 1 of that damage. {2}, {T}: Attacking creatures get +1/+0 until end of turn.
+oracle=As long as Thunderstaff is untapped, if a creature would deal combat damage to you, prevent 1 of that damage.\n{2}, {T}: Attacking creatures get +1/+0 until end of turn.

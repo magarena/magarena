@@ -10,13 +10,13 @@ import magic.model.MagicColor;
 import magic.model.MagicManaType;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayerDefinition;
+import magic.model.DuelPlayerConfig;
 import magic.model.player.PlayerProfile;
 import magic.ui.theme.PlayerAvatar;
 import magic.utility.MagicResources;
 
 public final class IconImages {
-    
+
     private static final Map<Integer, ImageIcon> manaIcons = new HashMap<>();
     private static final Map<MagicIcon, ImageIcon> icons = new HashMap<>();
     private static final Map<String, PlayerAvatar> avatarsMap = new HashMap<>();
@@ -66,9 +66,9 @@ public final class IconImages {
         final int col = pos % 10;
         final BufferedImage subimage = MANA_ICON_SHEET.getSubimage(col * imgW, row * imgH, imgW, imgH);
         if (big) {
-            return new ImageIcon(magic.ui.GraphicsUtilities.scale(subimage,bigW,bigH));
+            return new ImageIcon(magic.ui.utility.GraphicsUtils.scale(subimage,bigW,bigH));
         } else {
-            return new ImageIcon(magic.ui.GraphicsUtilities.scale(subimage,icoW,icoH));
+            return new ImageIcon(magic.ui.utility.GraphicsUtils.scale(subimage,icoW,icoH));
         }
     }
 
@@ -80,11 +80,11 @@ public final class IconImages {
         return manaIcons.get(key);
     }
 
-    private static ImageIcon getSmallManaIcon(final MagicIcon manaIcon) {
+    public static ImageIcon getSmallManaIcon(final MagicIcon manaIcon) {
         return getManaIcon(manaIcon, false);
     }
 
-    private static ImageIcon getBigManaIcon(final MagicIcon manaIcon) {
+    public static ImageIcon getBigManaIcon(final MagicIcon manaIcon) {
         return getManaIcon(manaIcon, true);
     }
 
@@ -115,7 +115,7 @@ public final class IconImages {
             return getIcon(perm.getCardDefinition());
         }
     }
-    
+
     public static ImageIcon getIcon(final MagicCardDefinition cdef) {
         if (cdef.isLand()) {
             return getIcon(MagicIcon.LAND);
@@ -138,6 +138,8 @@ public final class IconImages {
         switch (mtype) {
             case Colorless:
                 return getSmallManaIcon(MagicIcon.MANA_1);
+            case Snow:
+                return getSmallManaIcon(MagicIcon.MANA_SNOW);
             case Black:
                 return getSmallManaIcon(MagicIcon.MANA_BLACK);
             case Blue:
@@ -152,30 +154,24 @@ public final class IconImages {
         throw new RuntimeException("No icon available for MagicManaType " + mtype);
     }
 
-    public static ImageIcon getIconSize1(final MagicPlayerDefinition playerDef) {
+    public static ImageIcon getIconSize1(final DuelPlayerConfig playerDef) {
         return getSizedAvatarImageIcon(playerDef, 1);
-    }    
+    }
 
-    public static ImageIcon getIconSize2(final MagicPlayerDefinition playerDef) {
+    public static ImageIcon getIconSize2(final DuelPlayerConfig playerDef) {
         return getSizedAvatarImageIcon(playerDef, 2);
     }
 
-    public static ImageIcon getIconSize3(final MagicPlayerDefinition playerDef) {
+    public static ImageIcon getIconSize3(final DuelPlayerConfig playerDef) {
         return getSizedAvatarImageIcon(playerDef, 3);
     }
 
-    public static ImageIcon getIconSize4(final MagicPlayerDefinition playerDef) {
+    public static ImageIcon getIconSize4(final DuelPlayerConfig playerDef) {
         return getSizedAvatarImageIcon(playerDef, 4);
     }
 
-    private static ImageIcon getSizedAvatarImageIcon(final MagicPlayerDefinition playerDef, final int size) {
-        final PlayerProfile profile = playerDef.getPlayerProfile();
-        if (profile != null) {
-            return getPlayerAvatar(profile).getIcon(size);
-        } else {
-            // temporary player (eg. TestGame) so let system decide avatar image.
-            return new PlayerAvatar(playerDef.getAvatarIndex()).getIcon(size);
-        }
+    private static ImageIcon getSizedAvatarImageIcon(final DuelPlayerConfig playerDef, final int size) {
+        return getPlayerAvatar(playerDef.getProfile()).getIcon(size);
     }
 
     private static BufferedImage getAvatarImage(final PlayerProfile profile) {
@@ -197,7 +193,7 @@ public final class IconImages {
         } else {
             return null;
         }
-    }    
+    }
 
     public static void getClearAvatarsCache() {
         avatarsMap.clear();

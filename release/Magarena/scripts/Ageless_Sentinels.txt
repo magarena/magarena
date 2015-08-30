@@ -1,12 +1,13 @@
 name=Ageless Sentinels
-image=http://mtgimage.com/card/ageless%20sentinels.jpg
+image=http://magiccards.info/scans/en/sc/1.jpg
 value=3.847
 rarity=R
 type=Creature
 subtype=Wall
 cost={3}{W}
 pt=4/4
-ability=defender;flying
+ability=Defender;\
+        Flying
 timing=main
 requires_groovy_code
-oracle=Defender. Flying. When Ageless Sentinels blocks, it becomes a Bird Giant, and it loses defender.
+oracle=Defender\nFlying\nWhen Ageless Sentinels blocks, it becomes a Bird Giant, and it loses defender.

@@ -1,6 +1,6 @@
 name=Hotheaded Giant
-image=http://mtgimage.com/card/hotheaded%20giant.jpg
-value=2.500
+image=http://magiccards.info/scans/en/eve/57.jpg
+value=2.688
 rarity=C
 type=Creature
 subtype=Giant,Warrior
@@ -9,4 +9,4 @@ pt=4/4
 ability=Haste;\
         SN enters the battlefield with two -1/-1 counters on it unless you've cast another red spell this turn.
 timing=main
-oracle=Haste. Hotheaded Giant enters the battlefield with two -1/-1 counters on it unless you've cast another red spell this turn.
+oracle=Haste\nHotheaded Giant enters the battlefield with two -1/-1 counters on it unless you've cast another red spell this turn.

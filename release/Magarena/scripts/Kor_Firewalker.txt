@@ -1,5 +1,5 @@
 name=Kor Firewalker
-image=http://mtgimage.com/card/kor%20firewalker.jpg
+image=http://magiccards.info/scans/en/wwk/11.jpg
 value=3.805
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=protection from red;\
         Whenever a player casts a red spell, you may gain 1 life.
 timing=fmain
-oracle=Protection from red. Whenever a player casts a red spell, you may gain 1 life.
+oracle=Protection from red\nWhenever a player casts a red spell, you may gain 1 life.

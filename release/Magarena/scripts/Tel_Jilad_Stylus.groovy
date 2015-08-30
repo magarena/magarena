@@ -13,7 +13,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent permanent,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.TARGET_PERMANENT_YOU_OWN,
+                TARGET_PERMANENT_YOU_OWN,
                 this,
                 "PN puts target permanent he or she owns\$ on the bottom of his or her library."
             );
@@ -21,7 +21,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.BottomOfOwnersLibrary));
+                game.doAction(new RemoveFromPlayAction(it,MagicLocationType.BottomOfOwnersLibrary));
             });
         }
     }

@@ -1,5 +1,5 @@
 name=Accumulated Knowledge
-image=http://mtgimage.com/card/accumulated%20knowledge.jpg
+image=http://magiccards.info/scans/en/ddo/35.jpg
 value=4.560
 rarity=C
 type=Instant

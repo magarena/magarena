@@ -1,5 +1,5 @@
 name=Rowan Treefolk
-image=http://mtgimage.com/card/rowan%20treefolk.jpg
+image=http://magiccards.info/scans/en/po/110.jpg
 value=2.590
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Treefolk
 cost={3}{G}
 pt=3/4
 timing=main
+oracle=NONE

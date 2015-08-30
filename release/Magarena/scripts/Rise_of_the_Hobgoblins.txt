@@ -1,5 +1,5 @@
 name=Rise of the Hobgoblins
-image=http://mtgimage.com/card/rise%20of%20the%20hobgoblins.jpg
+image=http://magiccards.info/scans/en/eve/145.jpg
 value=3.944
 rarity=R
 type=Enchantment
@@ -7,4 +7,4 @@ cost={R/W}{R/W}
 ability={R/W}: Red creatures and white creatures you control gain first strike until end of turn.
 timing=enchantment
 requires_groovy_code
-oracle=When Rise of the Hobgoblins enters the battlefield, you may pay {X}. If you do, put X 1/1 red and white Goblin Soldier creature tokens onto the battlefield. {R/W}: Red creatures and white creatures you control gain first strike until end of turn.
+oracle=When Rise of the Hobgoblins enters the battlefield, you may pay {X}. If you do, put X 1/1 red and white Goblin Soldier creature tokens onto the battlefield.\n{R/W}: Red creatures and white creatures you control gain first strike until end of turn.

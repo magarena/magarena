@@ -1,5 +1,5 @@
 name=Drowned Catacomb
-image=http://mtgimage.com/card/drowned%20catacomb.jpg
+image=http://magiccards.info/scans/en/m13/223.jpg
 value=3.811
 rarity=R
 type=Land
@@ -7,4 +7,4 @@ mana=u3b3
 ability={T}: Add {U} or {B} to your mana pool.;\
         SN enters the battlefield tapped unless you control an Island or a Swamp.
 timing=land
-oracle=Drowned Catacomb enters the battlefield tapped unless you control an Island or a Swamp. {T}: Add {U} or {B} to your mana pool.
+oracle=Drowned Catacomb enters the battlefield tapped unless you control an Island or a Swamp.\n{T}: Add {U} or {B} to your mana pool.

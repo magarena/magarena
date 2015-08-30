@@ -1,10 +1,10 @@
 name=Abzan Banner
-image=http://mtgimage.com/card/abzan%20banner.jpg
-value=2.300
+image=http://magiccards.info/scans/en/ktk/215.jpg
+value=2.250
 rarity=C
 type=Artifact
 cost={3}
 ability={T}: Add {W} or {B} or {G} to your mana pool.;\
         {W}{B}{G}, {T}, Sacrifice SN: Draw a card.
 timing=artifact
-oracle={T}: Add {W}, {B}, or {G} to your mana pool. {W}{B}{G}, {T}, Sacrifice Abzan Banner: Draw a card.
+oracle={T}: Add {W}, {B}, or {G} to your mana pool.\n{W}{B}{G}, {T}, Sacrifice Abzan Banner: Draw a card.

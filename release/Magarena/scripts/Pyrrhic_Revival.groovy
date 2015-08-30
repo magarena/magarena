@@ -10,17 +10,12 @@
             );
         }
 
-       @Override
+        @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayer player = event.getPlayer();
-            final Collection<MagicCard> targets = game.filterCards(
-                player,
-                MagicTargetFilterFactory.CREATURE_CARD_FROM_ALL_GRAVEYARDS
-            );
-            for (final MagicCard card : targets) {
-                game.doAction(new MagicReanimateAction(
-                    card, 
-                    card.getController(), 
+            CREATURE_CARD_FROM_ALL_GRAVEYARDS.filter(event) each {
+                game.doAction(new ReanimateAction(
+                    it, 
+                    it.getController(), 
                     [MagicPlayMod.PERSIST]
                 ));
             }

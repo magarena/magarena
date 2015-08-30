@@ -1,6 +1,6 @@
 name=Teferi's Honor Guard
-image=http://mtgimage.com/card/teferi%27s%20honor%20guard.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vi/122.jpg
+value=3.406
 rarity=U
 type=Creature
 subtype=Human,Knight
@@ -9,4 +9,4 @@ pt=2/2
 ability=Flanking;\
         {U}{U}: SN phases out.
 timing=main
-oracle=Flanking. {U}{U}: Teferi's Honor Guard phases out.
+oracle=Flanking\n{U}{U}: Teferi's Honor Guard phases out.

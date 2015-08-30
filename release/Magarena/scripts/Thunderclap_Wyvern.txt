@@ -1,0 +1,13 @@
+name=Thunderclap Wyvern
+image=http://magiccards.info/scans/en/ori/218.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Drake
+cost={2}{W}{U}
+pt=2/3
+ability=Flash;\
+        Flying;\
+        Other creatures you control with flying get +1/+1.
+timing=main
+oracle=Flash\nFlying\nOther creatures you control with flying get +1/+1.

@@ -1,0 +1,12 @@
+name=Treachery
+image=http://magiccards.info/scans/en/ud/50.jpg
+value=2.500
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={3}{U}{U}
+ability=You control enchanted creature.
+timing=aura
+enchant=gain control,neg creature
+requires_groovy_code=Peregrine Drake
+oracle=Enchant creature. When Treachery enters the battlefield, untap up to five lands. You control enchanted creature.

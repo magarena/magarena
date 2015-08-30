@@ -1,8 +1,5 @@
 [
-    new MagicStatic(
-        MagicLayer.ModPT,
-        MagicTargetFilterFactory.SLIVER
-    ) {
+    new MagicStatic(MagicLayer.ModPT, SLIVER) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
             if (permanent.getController().controlsPermanent(MagicSubType.Swamp)) {

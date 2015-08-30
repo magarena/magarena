@@ -1,5 +1,5 @@
 name=Captain of the Mists
-image=http://mtgimage.com/card/captain%20of%20the%20mists.jpg
+image=http://magiccards.info/scans/en/avr/45.jpg
 value=3.104
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=2/3
 ability=Whenever another Human enters the battlefield under your control, untap SN.;\
         {1}{U}, {T}: You may tap or untap target permanent.
 timing=main
-oracle=Whenever another Human enters the battlefield under your control, untap Captain of the Mists. {1}{U}, {T}: You may tap or untap target permanent.
+oracle=Whenever another Human enters the battlefield under your control, untap Captain of the Mists.\n{1}{U}, {T}: You may tap or untap target permanent.

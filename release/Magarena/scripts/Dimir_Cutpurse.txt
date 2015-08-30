@@ -1,11 +1,11 @@
 name=Dimir Cutpurse
-image=http://mtgimage.com/card/dimir%20cutpurse.jpg
+image=http://magiccards.info/scans/en/ddh/49.jpg
 value=4.562
 rarity=R
 type=Creature
 subtype=Spirit
 cost={1}{U}{B}
 pt=2/2
+ability=Whenever SN deals combat damage to a player, that player discards a card.~You draw a card.
 timing=main
-requires_groovy_code
 oracle=Whenever Dimir Cutpurse deals combat damage to a player, that player discards a card and you draw a card.

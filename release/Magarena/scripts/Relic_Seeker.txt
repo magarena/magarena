@@ -1,0 +1,12 @@
+name=Relic Seeker
+image=http://magiccards.info/scans/en/ori/29.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Soldier
+cost={1}{W}
+pt=2/2
+ability=Renown 1;\
+        When SN becomes renowned, you may search your library for an Equipment card, reveal it, put it into your hand, then shuffle your library.
+timing=main
+oracle=Renown 1\nWhen Relic Seeker becomes renowned, you may search your library for an Equipment card, reveal it, put it into your hand, then shuffle your library.

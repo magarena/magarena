@@ -1,9 +1,9 @@
 name=Coercive Portal
-image=http://mtgimage.com/card/coercive%20portal.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vma/266.jpg
+value=4.000
 rarity=M
 type=Artifact
 cost={4}
 ability=At the beginning of your upkeep, starting with you, each player votes for carnage or homage. If carnage gets more votes, sacrifice SN and destroy all nonland permanents. If homage gets more votes or the vote is tied, draw a card.
-timing=main
+timing=artifact
 oracle=Will of the council — At the beginning of your upkeep, starting with you, each player votes for carnage or homage. If carnage gets more votes, sacrifice Coercive Portal and destroy all nonland permanents. If homage gets more votes or the vote is tied, draw a card.

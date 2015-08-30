@@ -1,7 +1,7 @@
 name=Imperiosaur
-image=http://mtgimage.com/card/imperiosaur.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/mma/148.jpg
+value=3.812
+rarity=C
 type=Creature
 subtype=Lizard
 cost={2}{G}{G}

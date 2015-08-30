@@ -1,6 +1,6 @@
 name=Cosi's Trickster
-image=http://mtgimage.com/card/cosi%27s%20trickster.jpg
-value=2.500
+image=http://magiccards.info/scans/en/zen/45.jpg
+value=4.146
 rarity=R
 type=Creature
 subtype=Merfolk,Wizard

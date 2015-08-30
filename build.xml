@@ -7,7 +7,7 @@
   <property name="target" value="1.7"/>
   <property name="source" value="1.7"/>
   <property name="lib" value="release/lib" />
-  <property name="groovy-version" value="2.3.4" />
+  <property name="groovy-version" value="2.4.1" />
   
   <path id="classpath">
       <fileset dir="${lib}">
@@ -44,6 +44,10 @@
       <get src="http://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.jar" 
          dest="${lib}/json-20140107.jar" 
          skipexisting="true" />
+      <echo message="downloading TinySound library to ${lib}"/>
+      <get src="https://github.com/yadarts/maven/raw/master/kuusisto/tinysound/1.1.1/tinysound-1.1.1.jar"
+         dest="${lib}/tinysound-1.1.1.jar"
+         skipexisting="true" />
   </target>
 
   <!-- init - Create temporary directory to build the program -->
@@ -73,11 +77,33 @@
 
   <!-- jar (default target) - Create .jar file -->
   <target depends="build" name="jar">
-    <jar destfile="release/Magarena.jar" basedir="build" includes="**/*.*">
+      <jar destfile="release/Magarena.jar" basedir="build" includes="**/*.*">
       <manifest>
         <attribute name="Main-Class" value="magic.MagicMain" />
         <attribute name="SplashScreen-Image" value="magic/data/textures/splash.png" />
-        <attribute name="Class-Path" value="lib/groovy-all-${groovy-version}.jar lib/json-20140107.jar lib/miglayout-core-4.2.jar lib/miglayout-swing-4.2.jar lib/commons-io-2.4.jar lib/trident-1.3.jar" />
+        <attribute name="Class-Path" 
+                   value="lib/groovy-all-${groovy-version}.jar
+                          lib/miglayout-core-4.2.jar
+                          lib/miglayout-swing-4.2.jar
+                          lib/commons-io-2.4.jar
+                          lib/trident-1.3.jar 
+                          lib/json-20140107.jar
+                          lib/tinysound-1.1.1.jar" />
+      </manifest>
+    </jar>
+  </target>
+  
+  <target depends="build" name="core">
+      <jar destfile="release/Magarena-core.jar" basedir="build" includes="**/*.*" excludes="magic/*,magic/ui/**">
+      <manifest>
+        <attribute name="Class-Path" 
+                   value="lib/groovy-all-${groovy-version}.jar
+                          lib/miglayout-core-4.2.jar
+                          lib/miglayout-swing-4.2.jar
+                          lib/commons-io-2.4.jar
+                          lib/trident-1.3.jar 
+                          lib/json-20140107.jar
+                          lib/tinysound-1.1.1.jar" />
       </manifest>
     </jar>
   </target>

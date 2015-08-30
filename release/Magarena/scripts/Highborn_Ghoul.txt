@@ -1,5 +1,5 @@
 name=Highborn Ghoul
-image=http://mtgimage.com/card/highborn%20ghoul.jpg
+image=http://magiccards.info/scans/en/dka/68.jpg
 value=3.281
 rarity=C
 type=Creature

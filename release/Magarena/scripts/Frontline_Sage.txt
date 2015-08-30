@@ -1,5 +1,5 @@
 name=Frontline Sage
-image=http://mtgimage.com/card/frontline%20sage.jpg
+image=http://magiccards.info/scans/en/cfx/28.jpg
 value=2.120
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=0/1
 ability=exalted;\
         {U},{T}: Draw a card, then discard a card.
 timing=main
-oracle=Exalted. {U}, {T}: Draw a card, then discard a card.
+oracle=Exalted\n{U}, {T}: Draw a card, then discard a card.

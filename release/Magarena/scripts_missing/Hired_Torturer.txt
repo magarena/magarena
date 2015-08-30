@@ -1,6 +1,6 @@
 name=Hired Torturer
-image=http://mtgimage.com/card/hired%20torturer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dgm/25.jpg
+value=2.561
 rarity=C
 type=Creature
 subtype=Human,Rogue
@@ -9,4 +9,4 @@ pt=2/3
 ability=Defender;\
         {3}{B}, {T}: Target opponent loses 2 life, then reveals a card at random from his or her hand.
 timing=main
-oracle=Defender. {3}{B}, {T}: Target opponent loses 2 life, then reveals a card at random from his or her hand.
+oracle=Defender\n{3}{B}, {T}: Target opponent loses 2 life, then reveals a card at random from his or her hand.

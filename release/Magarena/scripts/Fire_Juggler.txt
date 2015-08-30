@@ -1,0 +1,11 @@
+name=Fire Juggler
+image=http://magiccards.info/scans/en/mt/90.jpg
+value=2.597
+rarity=C
+type=Creature
+subtype=Goblin,Shaman
+cost={2}{R}
+pt=2/2
+ability=Whenever SN becomes blocked, clash with an opponent. If you win, SN deals 4 damage to each creature blocking it.
+timing=main
+oracle=Whenever Fire Juggler becomes blocked, clash with an opponent. If you win, Fire Juggler deals 4 damage to each creature blocking it.

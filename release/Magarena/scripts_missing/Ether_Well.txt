@@ -1,6 +1,6 @@
 name=Ether Well
-image=http://mtgimage.com/card/ether%20well.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/65.jpg
+value=2.607
 rarity=U
 type=Instant
 cost={3}{U}

@@ -1,9 +1,9 @@
 name=Seed the Land
-image=http://mtgimage.com/card/seed%20the%20land.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sok/146.jpg
+value=2.541
 rarity=R
 type=Enchantment
 cost={2}{G}{G}
 ability=Whenever a land enters the battlefield, its controller puts a 1/1 green Snake creature token onto the battlefield.
-timing=main
+timing=enchantment
 oracle=Whenever a land enters the battlefield, its controller puts a 1/1 green Snake creature token onto the battlefield.

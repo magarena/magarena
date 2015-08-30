@@ -1,9 +1,9 @@
 name=Wolfcaller's Howl
-image=http://mtgimage.com/card/wolfcaller's%20howl.jpg
+image=http://magiccards.info/scans/en/c14/52.jpg
 value=2.500
 rarity=R
 type=Enchantment
 cost={3}{G}
 ability=At the beginning of your upkeep, put X 2/2 green Wolf creature tokens onto the battlefield, where X is the number of your opponents with four or more cards in hand.
-timing=main
+timing=enchantment
 oracle=At the beginning of your upkeep, put X 2/2 green Wolf creature tokens onto the battlefield, where X is the number of your opponents with four or more cards in hand.

@@ -1,9 +1,9 @@
 name=Pyromancer's Gauntlet
-image=http://mtgimage.com/card/pyromancer%27s%20gauntlet.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m14/214.jpg
+value=3.633
 rarity=R
 type=Artifact
 cost={5}
 ability=If a red instant or sorcery spell you control or a red planeswalker you control would deal damage to a permanent or player, it deals that much damage plus 2 to that permanent or player instead.
-timing=main
+timing=artifact
 oracle=If a red instant or sorcery spell you control or a red planeswalker you control would deal damage to a permanent or player, it deals that much damage plus 2 to that permanent or player instead.

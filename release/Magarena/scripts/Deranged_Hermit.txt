@@ -1,5 +1,5 @@
 name=Deranged Hermit
-image=http://mtgimage.com/card/deranged%20hermit.jpg
+image=http://magiccards.info/scans/en/vma/202.jpg
 value=4.420
 rarity=R
 type=Creature
@@ -11,4 +11,4 @@ ability=echo {3}{G}{G};\
         squirrel creatures get +1/+1;\
         When SN enters the battlefield, put four 1/1 green Squirrel creature tokens onto the battlefield.
 static=all
-oracle=Echo {3}{G}{G}. When Deranged Hermit enters the battlefield, put four 1/1 green Squirrel creature tokens onto the battlefield. Squirrel creatures get +1/+1.
+oracle=Echo {3}{G}{G}\nWhen Deranged Hermit enters the battlefield, put four 1/1 green Squirrel creature tokens onto the battlefield.\nSquirrel creatures get +1/+1.

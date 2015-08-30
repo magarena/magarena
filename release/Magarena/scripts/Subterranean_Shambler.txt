@@ -1,5 +1,5 @@
 name=Subterranean Shambler
-image=http://mtgimage.com/card/subterranean%20shambler.jpg
+image=http://magiccards.info/scans/en/ts/178.jpg
 value=2.106
 removal=1
 rarity=C
@@ -11,4 +11,4 @@ ability=echo {3}{R};\
         When SN enters the battlefield, SN deals 1 damage to each creature without flying.;\
         When SN leaves the battlefield, SN deals 1 damage to each creature without flying.
 timing=main
-oracle=Echo {3}{R}. When Subterranean Shambler enters the battlefield or leaves the battlefield, it deals 1 damage to each creature without flying.
+oracle=Echo {3}{R}\nWhen Subterranean Shambler enters the battlefield or leaves the battlefield, it deals 1 damage to each creature without flying.

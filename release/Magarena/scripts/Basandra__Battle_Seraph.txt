@@ -1,5 +1,5 @@
 name=Basandra, Battle Seraph
-image=http://mtgimage.com/card/basandra%2C%20battle%20seraph.jpg
+image=http://magiccards.info/scans/en/vma/244.jpg
 value=3.800
 rarity=R
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. Players can't cast spells during combat. {R}: Target creature attacks this turn if able.
+oracle=Flying\nPlayers can't cast spells during combat.\n{R}: Target creature attacks this turn if able.

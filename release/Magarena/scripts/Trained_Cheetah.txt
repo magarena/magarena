@@ -1,5 +1,5 @@
 name=Trained Cheetah
-image=http://mtgimage.com/card/trained%20cheetah.jpg
+image=http://magiccards.info/scans/en/p3k/154.jpg
 value=1.923
 rarity=U
 type=Creature

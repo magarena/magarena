@@ -1,5 +1,5 @@
 name=Metal Fatigue
-image=http://mtgimage.com/card/metal%20fatigue.jpg
+image=http://magiccards.info/scans/en/ds/8.jpg
 value=2.667
 rarity=C
 type=Instant

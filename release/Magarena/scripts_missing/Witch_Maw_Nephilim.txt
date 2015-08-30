@@ -1,6 +1,6 @@
 name=Witch-Maw Nephilim
-image=http://mtgimage.com/card/witch-maw%20nephilim.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gp/138.jpg
+value=4.109
 rarity=R
 type=Creature
 subtype=Nephilim
@@ -9,4 +9,4 @@ pt=1/1
 ability=Whenever you cast a spell, you may put two +1/+1 counters on SN.;\
         Whenever SN attacks, it gains trample until end of turn if its power is 10 or greater.
 timing=main
-oracle=Whenever you cast a spell, you may put two +1/+1 counters on Witch-Maw Nephilim. Whenever Witch-Maw Nephilim attacks, it gains trample until end of turn if its power is 10 or greater.
+oracle=Whenever you cast a spell, you may put two +1/+1 counters on Witch-Maw Nephilim.\nWhenever Witch-Maw Nephilim attacks, it gains trample until end of turn if its power is 10 or greater.

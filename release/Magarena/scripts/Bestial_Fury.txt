@@ -1,5 +1,5 @@
 name=Bestial Fury
-image=http://mtgimage.com/card/bestial%20fury.jpg
+image=http://magiccards.info/scans/en/med/88.jpg
 value=3.871
 rarity=C
 type=Enchantment
@@ -9,4 +9,4 @@ ability=When SN enters the battlefield, draw a card at the beginning of the next
         Enchanted creature has "Whenever SN becomes blocked, SN gets +4/+0 and gains trample until end of turn."
 timing=main
 enchant=pump,pos creature
-oracle=Enchant creature. When Bestial Fury enters the battlefield, draw a card at the beginning of the next turn's upkeep. Whenever enchanted creature becomes blocked, it gets +4/+0 and gains trample until end of turn.
+oracle=Enchant creature\nWhen Bestial Fury enters the battlefield, draw a card at the beginning of the next turn's upkeep.\nWhenever enchanted creature becomes blocked, it gets +4/+0 and gains trample until end of turn.

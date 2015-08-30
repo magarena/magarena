@@ -1,18 +1,23 @@
 package magic.model;
 
+import java.util.Set;
 import java.util.HashSet;
 
-@SuppressWarnings("serial")
-public class MagicSetDefinition extends HashSet<String> {
+public class MagicSetDefinition {
 
+    private final Set<String> cards = new HashSet<>();
     private final String name;
 
     public MagicSetDefinition(final String name) {
         this.name = name;
     }
 
-    public boolean containsCard(final MagicSetDefinition setDefinition) {
-        return contains(setDefinition.toString());
+    public void add(final String name) {
+        cards.add(name);
+    }
+
+    public boolean containsCard(final MagicCardDefinition cardDefinition) {
+        return cards.contains(cardDefinition.getName());
     }
 
     @Override

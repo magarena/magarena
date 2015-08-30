@@ -1,14 +1,13 @@
 name=Nahiri, the Lithomancer
-image=http://mtgimage.com/card/nahiri,%20the%20lithomancer.jpg
+image=http://magiccards.info/scans/en/c14/10.jpg
 value=2.500
 rarity=M
 type=Planeswalker
 subtype=Nahiri
 cost={3}{W}{W}
-ability=loyalty 3;\
-        +2: Put a 1/1 white Kor Soldier creature token onto the battlefield. You may attach an Equipment you control to it.;\
-        -2: You may put an Equipment card from your hand or graveyard onto the battlefield.;\
-        -10: Put a colorless Equipment artifact token named Stoneforged Blade onto the battlefield. It has indestructible, "Equipped creature gets +5/+5 and has double strike," and equip {0}.;\
+ability=+2: Put a 1/1 white Kor Soldier creature token onto the battlefield. You may attach an Equipment you control to it.;\
+        −2: You may put an Equipment card from your hand or graveyard onto the battlefield.;\
+        −10: Put a colorless Equipment artifact token named Stoneforged Blade onto the battlefield. It has indestructible, "Equipped creature gets +5/+5 and has double strike," and equip {0}.;\
         SN can be your commander.
 timing=main
-oracle=+2: Put a 1/1 white Kor Soldier creature token onto the battlefield. You may attach an Equipment you control to it. -2: You may put an Equipment card from your hand or graveyard onto the battlefield. -10: Put a colorless Equipment artifact token named Stoneforged Blade onto the battlefield. It has indestructible, "Equipped creature gets +5/+5 and has double strike," and equip {0}. Nahiri, the Lithomancer can be your commander.
+oracle=+2: Put a 1/1 white Kor Soldier creature token onto the battlefield. You may attach an Equipment you control to it.\n−2: You may put an Equipment card from your hand or graveyard onto the battlefield.\n−10: Put a colorless Equipment artifact token named Stoneforged Blade onto the battlefield. It has indestructible, "Equipped creature gets +5/+5 and has double strike," and equip {0}.\nNahiri, the Lithomancer can be your commander.

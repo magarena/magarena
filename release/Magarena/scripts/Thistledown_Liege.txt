@@ -1,5 +1,5 @@
 name=Thistledown Liege
-image=http://mtgimage.com/card/thistledown%20liege.jpg
+image=http://magiccards.info/scans/en/shm/153.jpg
 value=3.268
 rarity=R
 type=Creature
@@ -11,4 +11,4 @@ ability=flash;\
         other blue creatures you control get +1/+1
 static=player
 timing=flash
-oracle=Flash. Other white creatures you control get +1/+1. Other blue creatures you control get +1/+1.
+oracle=Flash\nOther white creatures you control get +1/+1.\nOther blue creatures you control get +1/+1.

@@ -1,9 +1,9 @@
 name=Krosan Reclamation
-image=http://mtgimage.com/card/krosan%20reclamation.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ju/122.jpg
+value=3.052
 rarity=U
 type=Instant
 cost={1}{G}
 effect=Target player shuffles up to two target cards from his or her graveyard into his or her library.~Flashback {1}{G}
 timing=removal
-oracle=Target player shuffles up to two target cards from his or her graveyard into his or her library. Flashback {1}{G}
+oracle=Target player shuffles up to two target cards from his or her graveyard into his or her library.\nFlashback {1}{G}

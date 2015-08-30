@@ -1,5 +1,5 @@
 name=Sky Ruin Drake
-image=http://mtgimage.com/card/sky%20ruin%20drake.jpg
+image=http://magiccards.info/scans/en/zen/66.jpg
 value=2.131
 ability=flying
 rarity=C

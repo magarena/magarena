@@ -1,6 +1,6 @@
 name=Fungal Sprouting
-image=http://mtgimage.com/card/fungal%20sprouting.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m13/173.jpg
+value=3.977
 rarity=U
 type=Sorcery
 cost={3}{G}

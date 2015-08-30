@@ -1,9 +1,0 @@
-name=Infernal Contract
-image=http://mtgimage.com/card/infernal%20contract.jpg
-value=2.500
-rarity=R
-type=Sorcery
-cost={B}{B}{B}
-effect=Draw four cards. You lose half your life, rounded up.
-timing=main
-oracle=Draw four cards. You lose half your life, rounded up.

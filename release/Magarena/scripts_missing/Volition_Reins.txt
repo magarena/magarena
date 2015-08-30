@@ -1,6 +1,6 @@
 name=Volition Reins
-image=http://mtgimage.com/card/volition%20reins.jpg
-value=2.500
+image=http://magiccards.info/scans/en/som/53.jpg
+value=3.725
 rarity=U
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={3}{U}{U}{U}
 ability=Enchant permanent;\
         When SN enters the battlefield, if enchanted permanent is tapped, untap it.;\
         You control enchanted permanent.
-timing=main
-oracle=Enchant permanent. When Volition Reins enters the battlefield, if enchanted permanent is tapped, untap it. You control enchanted permanent.
+timing=aura
+oracle=Enchant permanent\nWhen Volition Reins enters the battlefield, if enchanted permanent is tapped, untap it.\nYou control enchanted permanent.

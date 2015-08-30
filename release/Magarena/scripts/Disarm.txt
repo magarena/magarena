@@ -1,5 +1,5 @@
 name=Disarm
-image=http://mtgimage.com/card/disarm.jpg
+image=http://magiccards.info/scans/en/mi/32.jpg
 value=1.778
 rarity=C
 type=Instant

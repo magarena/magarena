@@ -1,9 +1,9 @@
 name=Shivan Meteor
-image=http://mtgimage.com/card/shivan%20meteor.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pc/106.jpg
+value=4.256
 rarity=U
 type=Sorcery
 cost={3}{R}{R}
 effect=SN deals 13 damage to target creature.~Suspend 2—{1}{R}{R}
 timing=main
-oracle=Shivan Meteor deals 13 damage to target creature. Suspend 2—{1}{R}{R}
+oracle=Shivan Meteor deals 13 damage to target creature.\nSuspend 2—{1}{R}{R}

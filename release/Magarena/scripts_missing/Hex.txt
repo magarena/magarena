@@ -1,6 +1,6 @@
 name=Hex
-image=http://mtgimage.com/card/hex.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cmd/87.jpg
+value=3.795
 rarity=R
 type=Sorcery
 cost={4}{B}{B}

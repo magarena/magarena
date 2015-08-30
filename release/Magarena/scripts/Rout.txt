@@ -1,10 +1,11 @@
 name=Rout
-image=http://mtgimage.com/card/rout.jpg
+image=http://magiccards.info/scans/en/cns/80.jpg
 value=4.421
 rarity=R
 type=Sorcery
 cost={3}{W}{W}
+ability=Cast SN with AI only if an opponent controls a creature.
 effect=Destroy all creatures. They can't be regenerated.
 timing=main
 requires_groovy_code
-oracle=You may cast Rout any time you could cast an instant if you pay {2} more to cast it. Destroy all creatures. They can't be regenerated.
+oracle=You may cast Rout as though it had flash if you pay {2} more to cast it.\nDestroy all creatures. They can't be regenerated.

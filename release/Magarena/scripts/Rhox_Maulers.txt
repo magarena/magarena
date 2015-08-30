@@ -1,0 +1,12 @@
+name=Rhox Maulers
+image=http://magiccards.info/scans/en/ori/196.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Rhino,Soldier
+cost={4}{G}
+pt=4/4
+ability=Trample;\
+        Renown 2
+timing=main
+oracle=Trample\nRenown 2

@@ -1,5 +1,5 @@
 name=Deathbringer Liege
-image=http://mtgimage.com/card/deathbringer%20liege.jpg
+image=http://magiccards.info/scans/en/eve/85.jpg
 value=4.195
 rarity=R
 type=Creature
@@ -11,4 +11,4 @@ ability=other white creatures you control get +1/+1;\
 static=player
 timing=main
 requires_groovy_code
-oracle=Other white creatures you control get +1/+1. Other black creatures you control get +1/+1. Whenever you cast a white spell, you may tap target creature. Whenever you cast a black spell, you may destroy target creature if it's tapped.
+oracle=Other white creatures you control get +1/+1.\nOther black creatures you control get +1/+1.\nWhenever you cast a white spell, you may tap target creature.\nWhenever you cast a black spell, you may destroy target creature if it's tapped.

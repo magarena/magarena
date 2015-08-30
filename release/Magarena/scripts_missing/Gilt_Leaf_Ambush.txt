@@ -1,6 +1,6 @@
 name=Gilt-Leaf Ambush
-image=http://mtgimage.com/card/gilt-leaf%20ambush.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lw/214.jpg
+value=3.571
 rarity=C
 type=Tribal,Instant
 subtype=Elf

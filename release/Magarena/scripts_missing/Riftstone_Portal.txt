@@ -1,9 +1,9 @@
 name=Riftstone Portal
-image=http://mtgimage.com/card/riftstone%20portal.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ju/143.jpg
+value=4.136
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\
         As long as SN is in your graveyard, lands you control have "{T}: Add {G} or {W} to your mana pool."
-timing=main
-oracle={T}: Add {1} to your mana pool. As long as Riftstone Portal is in your graveyard, lands you control have "{T}: Add {G} or {W} to your mana pool."
+timing=land
+oracle={T}: Add {1} to your mana pool.\nAs long as Riftstone Portal is in your graveyard, lands you control have "{T}: Add {G} or {W} to your mana pool."

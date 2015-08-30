@@ -1,10 +1,11 @@
 name=Strength of Cedars
-image=http://mtgimage.com/card/strength%20of%20cedars.jpg
+image=http://magiccards.info/scans/en/chk/245.jpg
 value=1.949
 rarity=U
 type=Instant
 subtype=Arcane
 cost={4}{G}
+ability=Cast SN with AI only if you control a land.
 timing=pump
 requires_groovy_code
 oracle=Target creature gets +X/+X until end of turn, where X is the number of lands you control.

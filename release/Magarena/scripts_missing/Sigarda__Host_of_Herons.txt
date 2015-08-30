@@ -1,12 +1,12 @@
 name=Sigarda, Host of Herons
-image=http://mtgimage.com/card/sigarda%2C%20host%20of%20herons.jpg
-value=2.500
+image=http://magiccards.info/scans/en/avr/210.jpg
+value=3.977
 rarity=M
 type=Legendary,Creature
 subtype=Angel
 cost={2}{G}{W}{W}
 pt=5/5
-ability=Flying; hexproof;\
+ability=Flying, hexproof;\
         Spells and abilities your opponents control can't cause you to sacrifice permanents.
 timing=main
-oracle=Flying, hexproof. Spells and abilities your opponents control can't cause you to sacrifice permanents.
+oracle=Flying, hexproof\nSpells and abilities your opponents control can't cause you to sacrifice permanents.

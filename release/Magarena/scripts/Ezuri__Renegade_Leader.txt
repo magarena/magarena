@@ -1,11 +1,12 @@
 name=Ezuri, Renegade Leader
-image=http://mtgimage.com/card/ezuri%2C%20renegade%20leader.jpg
+image=http://magiccards.info/scans/en/c14/195.jpg
 value=4.000
 rarity=R
 type=Legendary,Creature
 subtype=Elf,Warrior
 cost={1}{G}{G}
 pt=2/2
+ability={G}: Regenerate another target Elf.;\
+        {2}{G}{G}{G}: Elf creatures you control get +3/+3 and gain trample until end of turn.
 timing=fmain
-requires_groovy_code
-oracle={G}: Regenerate another target Elf. {2}{G}{G}{G}: Elf creatures you control get +3/+3 and gain trample until end of turn.
+oracle={G}: Regenerate another target Elf.\n{2}{G}{G}{G}: Elf creatures you control get +3/+3 and gain trample until end of turn.

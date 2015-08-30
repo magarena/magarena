@@ -1,5 +1,5 @@
 name=Timberwatch Elf
-image=http://mtgimage.com/card/timberwatch%20elf.jpg
+image=http://magiccards.info/scans/en/c14/220.jpg
 value=4.324
 rarity=C
 type=Creature

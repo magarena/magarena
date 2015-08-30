@@ -1,0 +1,9 @@
+name=Center Soul
+image=http://magiccards.info/scans/en/dtk/8.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{W}
+effect=Target creature you control gains protection from the color of your choice until end of turn.~Rebound
+timing=pump
+oracle=Target creature you control gains protection from the color of your choice until end of turn.\nRebound

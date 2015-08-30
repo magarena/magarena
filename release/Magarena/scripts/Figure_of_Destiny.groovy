@@ -58,7 +58,10 @@ def AB3 = new MagicStatic(MagicLayer.Ability) {
 
 [
     new MagicPermanentActivation(
-        [MagicConditionFactory.NotSubType(MagicSubType.Spirit)],
+        [
+            MagicCondition.NOT_EXCLUDE_COMBAT_CONDITION,
+            MagicConditionFactory.NotSubType(MagicSubType.Spirit)
+        ],
         new MagicActivationHints(MagicTiming.Animate),
         "Spirit"
     ) {
@@ -80,11 +83,12 @@ def AB3 = new MagicStatic(MagicLayer.Ability) {
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT1,ST1));
+            game.doAction(new BecomesCreatureAction(event.getPermanent(),PT1,ST1));
         }
     },
     new MagicPermanentActivation(
         [
+            MagicCondition.NOT_EXCLUDE_COMBAT_CONDITION,
             MagicConditionFactory.HasSubType(MagicSubType.Spirit),
             MagicConditionFactory.NotSubType(MagicSubType.Warrior)
         ],
@@ -111,12 +115,13 @@ def AB3 = new MagicStatic(MagicLayer.Ability) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.getPermanent().hasSubType(MagicSubType.Spirit)) {
-                game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT2,ST2));
+                game.doAction(new BecomesCreatureAction(event.getPermanent(),PT2,ST2));
             }
         }
     },
     new MagicPermanentActivation(
         [
+            MagicCondition.NOT_EXCLUDE_COMBAT_CONDITION,
             MagicConditionFactory.HasSubType(MagicSubType.Warrior),
             MagicConditionFactory.NotSubType(MagicSubType.Avatar)
         ],
@@ -143,7 +148,7 @@ def AB3 = new MagicStatic(MagicLayer.Ability) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.getPermanent().hasSubType(MagicSubType.Warrior)) {
-                game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT3,ST3,AB3));
+                game.doAction(new BecomesCreatureAction(event.getPermanent(),PT3,ST3,AB3));
             }
         }
     }

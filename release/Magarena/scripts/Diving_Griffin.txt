@@ -1,5 +1,5 @@
 name=Diving Griffin
-image=http://mtgimage.com/card/diving%20griffin.jpg
+image=http://magiccards.info/scans/en/8e/17.jpg
 value=3.761
 ability=flying;vigilance
 rarity=C

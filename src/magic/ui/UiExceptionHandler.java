@@ -1,5 +1,7 @@
 package magic.ui;
 
+import magic.translate.UiString;
+import magic.ui.utility.GraphicsUtils;
 import java.awt.Component;
 import java.awt.Desktop;
 import java.nio.file.Path;
@@ -11,6 +13,12 @@ import magic.exception.handler.ExceptionReport;
 import magic.utility.MagicFileSystem;
 
 public class UiExceptionHandler extends FileExceptionHandler {
+
+    // translatable strings.
+    private static final String _S1 = "Fatal Error";
+    private static final String _S2 = "An unexpected error has occurred and Magarena will need to close.";
+    private static final String _S3 = "Please consider submitting a crash report so that the development team can investigate.";
+    private static final String _S4 = "Would you like to open the crash logs directory in file explorer?";
 
     @Override
     public void reportException(final ExceptionReport report) {
@@ -30,22 +38,20 @@ public class UiExceptionHandler extends FileExceptionHandler {
 
             // By specifying a frame the JOptionPane will be shown in the taskbar.
             // Otherwise if the dialog is hidden it is easy to forget it is still open.
-            final JFrame frame = new JFrame("Fatal Error");
+            final JFrame frame = new JFrame(UiString.get(_S1));
             frame.setUndecorated(true);
             frame.setVisible(true);
             frame.setLocationRelativeTo(null);
 
-            String prompt = "An unexpected error has occurred and Magarena will need to close.";
+            String prompt = UiString.get(_S2);
             if (Desktop.isDesktopSupported()) {
-                prompt +=
-                    "\n\nPlease consider submitting a crash report so that the development team can investigate.\n" +
-                    "Would you like to open the crash logs directory in file explorer?";
-                final int action = JOptionPane.showConfirmDialog(frame, prompt, "Fatal Error", JOptionPane.OK_OPTION, JOptionPane.ERROR_MESSAGE, null);
+                prompt += String.format("\n\n%s\n%s", UiString.get(_S3), UiString.get(_S4));
+                final int action = JOptionPane.showConfirmDialog(frame, prompt, UiString.get(_S1), JOptionPane.OK_OPTION, JOptionPane.ERROR_MESSAGE, null);
                 if (action == JOptionPane.YES_OPTION) {
                     Desktop.getDesktop().open(MagicFileSystem.getDataPath(MagicFileSystem.DataPath.LOGS).toFile());
                 }
             } else {
-                JOptionPane.showMessageDialog(frame, prompt, "Fatal Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(frame, prompt, UiString.get(_S1), JOptionPane.ERROR_MESSAGE);
             }
 
         } catch (Exception e) {
@@ -60,7 +66,7 @@ public class UiExceptionHandler extends FileExceptionHandler {
                 public void run() {
                     try {
                         final Path filePath = MagicFileSystem.getDataPath(MagicFileSystem.DataPath.LOGS).resolve("crash.png");
-                        GraphicsUtilities.doScreenshotToFile(container, filePath);
+                        GraphicsUtils.doScreenshotToFile(container, filePath);
                      } catch (Exception e) {
                         System.err.println("ScreenShot failed : " + e.toString());
                     }

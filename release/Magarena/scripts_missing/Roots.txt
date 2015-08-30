@@ -1,12 +1,12 @@
 name=Roots
-image=http://mtgimage.com/card/roots.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/med/127.jpg
+value=3.096
+rarity=C
 type=Enchantment
 subtype=Aura
 cost={3}{G}
 ability=Enchant creature without flying;\
         When SN enters the battlefield, tap enchanted creature.;\
         Enchanted creature doesn't untap during its controller's untap step.
-timing=main
-oracle=Enchant creature without flying. When Roots enters the battlefield, tap enchanted creature. Enchanted creature doesn't untap during its controller's untap step.
+timing=aura
+oracle=Enchant creature without flying\nWhen Roots enters the battlefield, tap enchanted creature.\nEnchanted creature doesn't untap during its controller's untap step.

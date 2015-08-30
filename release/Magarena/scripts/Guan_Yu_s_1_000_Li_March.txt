@@ -1,9 +1,10 @@
 name=Guan Yu's 1,000-Li March
-image=http://mtgimage.com/card/guan%20yu's%201,000-li%20march.jpg
+image=http://magiccards.info/scans/en/me3/13.jpg
 value=3.000
 rarity=R
 type=Sorcery
 cost={4}{W}{W}
+ability=Cast SN with AI only if an opponent controls a tapped creature.
 effect=Destroy all tapped creatures.
 timing=main
 oracle=Destroy all tapped creatures.

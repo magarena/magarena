@@ -1,5 +1,5 @@
 name=Vampire Hexmage
-image=http://mtgimage.com/card/vampire%20hexmage.jpg
+image=http://magiccards.info/scans/en/c14/168.jpg
 value=4.545
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=first strike
 timing=fmain
 requires_groovy_code
-oracle=First strike. Sacrifice Vampire Hexmage: Remove all counters from target permanent.
+oracle=First strike\nSacrifice Vampire Hexmage: Remove all counters from target permanent.

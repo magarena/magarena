@@ -1,5 +1,5 @@
 name=Rust Tick
-image=http://mtgimage.com/card/rust%20tick.jpg
+image=http://magiccards.info/scans/en/som/198.jpg
 value=2.808
 rarity=U
 type=Artifact,Creature
@@ -9,4 +9,4 @@ pt=1/3
 ability=You may choose not to untap SN during your untap step.
 timing=main
 requires_groovy_code
-oracle=You may choose not to untap Rust Tick during your untap step. {1}, {T}: Tap target artifact. It doesn't untap during its controller's untap step for as long as Rust Tick remains tapped.
+oracle=You may choose not to untap Rust Tick during your untap step.\n{1}, {T}: Tap target artifact. It doesn't untap during its controller's untap step for as long as Rust Tick remains tapped.

@@ -1,11 +1,12 @@
 name=Akki Coalflinger
-image=http://mtgimage.com/card/akki%20coalflinger.jpg
+image=http://magiccards.info/scans/en/evg/33.jpg
 value=3.122
 rarity=U
 type=Creature
 subtype=Goblin,Shaman
 cost={1}{R}{R}
 pt=2/2
-ability=first strike;{R},{T}:Attacking creatures gain first strike until end of turn.
+ability=First strike;\
+        {R}, {T}: Attacking creatures gain first strike until end of turn.
 timing=main
-oracle=First strike. {R}, {T}: Attacking creatures gain first strike until end of turn.
+oracle=First strike\n{R}, {T}: Attacking creatures gain first strike until end of turn.

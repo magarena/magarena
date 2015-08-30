@@ -1,5 +1,5 @@
 name=Takeno's Cavalry
-image=http://mtgimage.com/card/takeno%27s%20cavalry.jpg
+image=http://magiccards.info/scans/en/bok/24.jpg
 value=0.855
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={3}{W}
 pt=1/1
 ability=bushido 1;{T}: SN deals 1 damage to target attacking or blocking Spirit.
 timing=main
-oracle=Bushido 1. {T}: Takeno's Cavalry deals 1 damage to target attacking or blocking Spirit.
+oracle=Bushido 1\n{T}: Takeno's Cavalry deals 1 damage to target attacking or blocking Spirit.

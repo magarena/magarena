@@ -1,5 +1,5 @@
 name=Wandering Ones
-image=http://mtgimage.com/card/wandering%20ones.jpg
+image=http://magiccards.info/scans/en/chk/100.jpg
 value=3.174
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Spirit
 cost={U}
 pt=1/1
 timing=main
+oracle=NONE

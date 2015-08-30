@@ -1,5 +1,5 @@
 name=Glory of Warfare
-image=http://mtgimage.com/card/glory%20of%20warfare.jpg
+image=http://magiccards.info/scans/en/pch/88.jpg
 value=3.400
 rarity=R
 type=Enchantment
@@ -8,4 +8,4 @@ ability=As long as it's your turn, creatures you control get +2/+0.;\
         As long as it's not your turn, creatures you control get +0/+2.
 static=player
 timing=enchantment
-oracle=As long as it's your turn, creatures you control get +2/+0. As long as it's not your turn, creatures you control get +0/+2.
+oracle=As long as it's your turn, creatures you control get +2/+0.\nAs long as it's not your turn, creatures you control get +0/+2.

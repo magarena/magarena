@@ -1,6 +1,6 @@
 name=Glarewielder
-image=http://mtgimage.com/card/glarewielder.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lw/171.jpg
+value=2.456
 rarity=U
 type=Creature
 subtype=Elemental,Shaman
@@ -10,4 +10,4 @@ ability=Haste;\
         When SN enters the battlefield, up to two target creatures can't block this turn.;\
         Evoke {1}{R}
 timing=main
-oracle=Haste. When Glarewielder enters the battlefield, up to two target creatures can't block this turn. Evoke {1}{R}
+oracle=Haste\nWhen Glarewielder enters the battlefield, up to two target creatures can't block this turn.\nEvoke {1}{R}

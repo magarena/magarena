@@ -1,11 +1,11 @@
 name=Enduring Renewal
-image=http://mtgimage.com/card/enduring%20renewal.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tsts/7.jpg
+value=4.325
 rarity=R
 type=Enchantment
 cost={2}{W}{W}
 ability=Play with your hand revealed.;\
         If you would draw a card, reveal the top card of your library instead. If it's a creature card, put it into your graveyard. Otherwise, draw a card.;\
         Whenever a creature is put into your graveyard from the battlefield, return it to your hand.
-timing=main
-oracle=Play with your hand revealed. If you would draw a card, reveal the top card of your library instead. If it's a creature card, put it into your graveyard. Otherwise, draw a card. Whenever a creature is put into your graveyard from the battlefield, return it to your hand.
+timing=enchantment
+oracle=Play with your hand revealed.\nIf you would draw a card, reveal the top card of your library instead. If it's a creature card, put it into your graveyard. Otherwise, draw a card.\nWhenever a creature is put into your graveyard from the battlefield, return it to your hand.

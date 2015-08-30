@@ -1,5 +1,5 @@
 name=Memory Lapse
-image=http://mtgimage.com/card/memory%20lapse.jpg
+image=http://magiccards.info/scans/en/ddm/24.jpg
 value=4.554
 rarity=C
 type=Instant

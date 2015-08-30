@@ -1,5 +1,5 @@
 name=Woebearer
-image=http://mtgimage.com/card/woebearer.jpg
+image=http://magiccards.info/scans/en/mi/83.jpg
 value=3.829
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/3
 ability=fear;\
         Whenever SN deals combat damage to a player, you may return target creature card from your graveyard to your hand.
 timing=main
-oracle=Fear. Whenever Woebearer deals combat damage to a player, you may return target creature card from your graveyard to your hand.
+oracle=Fear\nWhenever Woebearer deals combat damage to a player, you may return target creature card from your graveyard to your hand.

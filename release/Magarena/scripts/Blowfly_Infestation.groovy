@@ -2,11 +2,10 @@
     new MagicWhenOtherDiesTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            return (otherPermanent.isCreature() &&
-                    otherPermanent.getCounters(MagicCounterType.MinusOne) > 0) ?
+            return otherPermanent.isCreature() && otherPermanent.hasCounters(MagicCounterType.MinusOne) ?
                 new MagicEvent(
                     permanent,
-                    MagicTargetChoice.TARGET_CREATURE,
+                    TARGET_CREATURE,
                     new MagicWeakenTargetPicker(1,1),
                     this,
                     "Put a -1/-1 counter on target creature\$."
@@ -16,7 +15,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicChangeCountersAction(it,MagicCounterType.MinusOne,1));
+                game.doAction(new ChangeCountersAction(it,MagicCounterType.MinusOne,1));
             });
         }
     }

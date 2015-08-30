@@ -1,12 +1,9 @@
 package magic.data;
 
 import java.io.File;
-import java.io.IOException;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
-import javax.sound.sampled.LineUnavailableException;
-import javax.sound.sampled.UnsupportedAudioFileException;
 import magic.model.MagicGame;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
@@ -44,15 +41,15 @@ public class SoundEffects {
             }
         }
         try (final AudioInputStream ins = AudioSystem.getAudioInputStream(new File(SOUNDS_PATH, name))) {
-            try {
-                clip = AudioSystem.getClip();
-                clip.open(ins);
-                clip.start();
-            } catch (LineUnavailableException | IOException ex) {
-                System.err.println("WARNING. Unable to play clip " + name + ", " + ex.getMessage());
-            }
-        } catch (UnsupportedAudioFileException | IOException ex) {
-            System.err.println("WARNING. Unable to load clip " + name + ", " + ex.getMessage());
+            clip = AudioSystem.getClip();
+            clip.open(ins);
+            clip.start();
+        } catch (Exception ex) {
+            System.err.println("WARNING. Unable to play clip " + name + ", " + ex.getMessage());
+            // switch off sound for current session but restore on restart.
+            GeneralConfig.getInstance().setIsUiSound(false);
+            GeneralConfig.getInstance().setSound(false);
         }
     }
+
 }

@@ -1,10 +1,10 @@
 name=Gremlin Mine
-image=http://mtgimage.com/card/gremlin%20mine.jpg
-value=2.500
+image=http://magiccards.info/scans/en/nph/136.jpg
+value=2.881
 rarity=C
 type=Artifact
 cost={1}
 ability={1}, {T}, Sacrifice SN: SN deals 4 damage to target artifact creature.;\
         {1}, {T}, Sacrifice SN: Remove up to four charge counters from target noncreature artifact.
-timing=main
-oracle={1}, {T}, Sacrifice Gremlin Mine: Gremlin Mine deals 4 damage to target artifact creature. {1}, {T}, Sacrifice Gremlin Mine: Remove up to four charge counters from target noncreature artifact.
+timing=artifact
+oracle={1}, {T}, Sacrifice Gremlin Mine: Gremlin Mine deals 4 damage to target artifact creature.\n{1}, {T}, Sacrifice Gremlin Mine: Remove up to four charge counters from target noncreature artifact.

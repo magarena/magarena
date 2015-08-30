@@ -1,5 +1,5 @@
 name=Molten Rain
-image=http://mtgimage.com/card/molten%20rain.jpg
+image=http://magiccards.info/scans/en/mi/101.jpg
 value=4.295
 removal=3
 rarity=C

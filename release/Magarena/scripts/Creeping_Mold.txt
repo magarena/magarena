@@ -1,5 +1,5 @@
 name=Creeping Mold
-image=http://mtgimage.com/card/creeping%20mold.jpg
+image=http://magiccards.info/scans/en/10e/258.jpg
 value=3.805
 removal=2
 rarity=U

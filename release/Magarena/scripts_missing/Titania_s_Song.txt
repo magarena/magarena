@@ -1,9 +1,9 @@
 name=Titania's Song
-image=http://mtgimage.com/card/titania%27s%20song.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/me4/170.jpg
+value=4.029
+rarity=R
 type=Enchantment
 cost={3}{G}
 ability=Each noncreature artifact loses all abilities and becomes an artifact creature with power and toughness each equal to its converted mana cost. If SN leaves the battlefield, this effect continues until end of turn.
-timing=main
+timing=enchantment
 oracle=Each noncreature artifact loses all abilities and becomes an artifact creature with power and toughness each equal to its converted mana cost. If Titania's Song leaves the battlefield, this effect continues until end of turn.

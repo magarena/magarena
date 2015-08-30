@@ -1,5 +1,5 @@
 name=Leonin Armorguard
-image=http://mtgimage.com/card/leonin%20armorguard.jpg
+image=http://magiccards.info/scans/en/arb/72.jpg
 value=2.825
 rarity=C
 type=Creature

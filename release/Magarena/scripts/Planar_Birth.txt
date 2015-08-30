@@ -1,5 +1,5 @@
 name=Planar Birth
-image=http://mtgimage.com/card/planar%20birth.jpg
+image=http://magiccards.info/scans/en/us/31.jpg
 value=4.130
 rarity=R
 type=Sorcery

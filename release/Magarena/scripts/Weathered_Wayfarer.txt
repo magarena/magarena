@@ -1,0 +1,11 @@
+name=Weathered Wayfarer
+image=http://magiccards.info/scans/en/9e/54.jpg
+value=4.295
+rarity=R
+type=Creature
+subtype=Human,Nomad,Cleric
+cost={W}
+pt=1/1
+ability={W}, {T}: Search your library for a land card, reveal it, and put it into your hand. Then shuffle your library. Activate this ability only if an opponent controls more lands than you.
+timing=main
+oracle={W}, {T}: Search your library for a land card, reveal it, and put it into your hand. Then shuffle your library. Activate this ability only if an opponent controls more lands than you.

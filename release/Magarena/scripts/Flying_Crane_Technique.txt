@@ -1,9 +1,10 @@
 name=Flying Crane Technique
-image=http://mtgimage.com/card/flying%20crane%20technique.jpg
+image=http://magiccards.info/scans/en/ktk/176.jpg
 value=4.000
 rarity=R
 type=Instant
 cost={3}{U}{R}{W}
+ability=Cast SN with AI only if you control a creature.
 effect=Untap all creatures you control.~Creatures you control gain flying and double strike until end of turn.
 timing=pump
 oracle=Untap all creatures you control. They gain flying and double strike until end of turn.

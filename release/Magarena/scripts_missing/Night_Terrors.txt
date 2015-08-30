@@ -1,6 +1,6 @@
 name=Night Terrors
-image=http://mtgimage.com/card/night%20terrors.jpg
-value=2.500
+image=http://magiccards.info/scans/en/isd/111.jpg
+value=2.954
 rarity=C
 type=Sorcery
 cost={2}{B}

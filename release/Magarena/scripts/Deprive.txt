@@ -1,5 +1,5 @@
 name=Deprive
-image=http://mtgimage.com/card/deprive.jpg
+image=http://magiccards.info/scans/en/roe/59.jpg
 value=4.042
 rarity=C
 type=Instant
@@ -7,4 +7,4 @@ cost={U}{U}
 ability=As an additional cost to cast SN, return a land you control to its owner's hand.
 effect=Counter target spell.
 timing=counter
-oracle=As an additional cost to cast Deprive, return a land you control to its owner's hand. Counter target spell.
+oracle=As an additional cost to cast Deprive, return a land you control to its owner's hand.\nCounter target spell.

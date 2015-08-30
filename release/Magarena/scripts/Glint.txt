@@ -1,0 +1,9 @@
+name=Glint
+image=http://magiccards.info/scans/en/dtk/55.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{U}
+effect=Target creature you control gets +0/+3 and gains hexproof until end of turn.
+timing=pump
+oracle=Target creature you control gets +0/+3 and gains hexproof until end of turn.

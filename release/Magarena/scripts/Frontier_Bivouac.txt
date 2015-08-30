@@ -1,5 +1,5 @@
 name=Frontier Bivouac
-image=http://mtgimage.com/card/frontier%20bivouac.jpg
+image=http://magiccards.info/scans/en/ktk/234.jpg
 value=3.833
 rarity=U
 type=Land
@@ -7,4 +7,4 @@ mana=g3u3r3
 ability=SN enters the battlefield tapped.;\
         {T}: Add {G} or {U} or {R} to your mana pool.
 timing=tapland
-oracle=Frontier Bivouac enters the battlefield tapped. {T}: Add {G}, {U}, or {R} to your mana pool.
+oracle=Frontier Bivouac enters the battlefield tapped.\n{T}: Add {G}, {U}, or {R} to your mana pool.

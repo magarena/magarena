@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.POS_TARGET_CREATURE,
+                POS_TARGET_CREATURE,
                 MagicPumpTargetPicker.create(),
                 this,
                 "PN puts a +1/+1 counter on target creature\$. " +
@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final int amount = game.getCreatureDiedThisTurn() ? 3 : 1;
-                game.doAction(new MagicChangeCountersAction(it,MagicCounterType.PlusOne,amount));
+                game.doAction(new ChangeCountersAction(it,MagicCounterType.PlusOne,amount));
             });
         }
     }

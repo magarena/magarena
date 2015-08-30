@@ -1,9 +1,0 @@
-name=Gallows at Willow Hill
-image=http://mtgimage.com/card/gallows%20at%20willow%20hill.jpg
-value=2.500
-rarity=R
-type=Artifact
-cost={3}
-ability={3}, {T}, Tap three untapped Humans you control: Destroy target creature. Its controller puts a 1/1 white Spirit creature token with flying onto the battlefield.
-timing=main
-oracle={3}, {T}, Tap three untapped Humans you control: Destroy target creature. Its controller puts a 1/1 white Spirit creature token with flying onto the battlefield.

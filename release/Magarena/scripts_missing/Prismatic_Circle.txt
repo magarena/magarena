@@ -1,11 +1,11 @@
 name=Prismatic Circle
-image=http://mtgimage.com/card/prismatic%20circle.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/238.jpg
+value=2.250
 rarity=C
 type=Enchantment
 cost={2}{W}
 ability=Cumulative upkeep {1};\
         As SN enters the battlefield, choose a color.;\
         {1}: The next time a source of your choice of the chosen color would deal damage to you this turn, prevent that damage.
-timing=main
-oracle=Cumulative upkeep {1}. As Prismatic Circle enters the battlefield, choose a color. {1}: The next time a source of your choice of the chosen color would deal damage to you this turn, prevent that damage.
+timing=enchantment
+oracle=Cumulative upkeep {1}\nAs Prismatic Circle enters the battlefield, choose a color.\n{1}: The next time a source of your choice of the chosen color would deal damage to you this turn, prevent that damage.

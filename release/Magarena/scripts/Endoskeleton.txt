@@ -1,5 +1,5 @@
 name=Endoskeleton
-image=http://mtgimage.com/card/endoskeleton.jpg
+image=http://magiccards.info/scans/en/us/294.jpg
 value=2.595
 rarity=U
 type=Artifact
@@ -7,4 +7,4 @@ cost={2}
 ability=You may choose not to untap SN during your untap step.
 requires_groovy_code
 timing=main
-oracle=You may choose not to untap Endoskeleton during your untap step. {2}, {T}: Target creature gets +0/+3 for as long as Endoskeleton remains tapped.
+oracle=You may choose not to untap Endoskeleton during your untap step.\n{2}, {T}: Target creature gets +0/+3 for as long as Endoskeleton remains tapped.

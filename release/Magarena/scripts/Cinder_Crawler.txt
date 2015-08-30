@@ -1,5 +1,5 @@
 name=Cinder Crawler
-image=http://mtgimage.com/card/cinder%20crawler.jpg
+image=http://magiccards.info/scans/en/ex/80.jpg
 value=2.667
 rarity=C
 type=Creature

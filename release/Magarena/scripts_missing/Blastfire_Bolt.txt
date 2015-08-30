@@ -1,6 +1,6 @@
 name=Blastfire Bolt
-image=http://mtgimage.com/card/blastfire%20bolt.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/130.jpg
+value=2.071
 rarity=C
 type=Instant
 cost={5}{R}

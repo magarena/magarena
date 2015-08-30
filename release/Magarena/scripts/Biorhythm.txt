@@ -1,5 +1,5 @@
 name=Biorhythm
-image=http://mtgimage.com/card/biorhythm.jpg
+image=http://magiccards.info/scans/en/9e/231.jpg
 value=4.007
 rarity=R
 type=Sorcery

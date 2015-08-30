@@ -1,5 +1,5 @@
 name=Two-Headed Cerberus
-image=http://mtgimage.com/card/two%2Dheaded%20cerberus.jpg
+image=http://magiccards.info/scans/en/ths/146.jpg
 value=3.292
 rarity=C
 type=Creature

@@ -1,0 +1,12 @@
+name=Snow Devil
+image=http://magiccards.info/scans/en/cstd/16.jpg
+value=2.839
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{U}
+ability=Enchanted creature has flying.
+timing=aura
+enchant=flying,pos creature
+requires_groovy_code
+oracle=Enchant creature\nEnchanted creature has flying.\nEnchanted creature has first strike as long as it's blocking and you control a snow land.

@@ -1,0 +1,9 @@
+name=Rocket Launcher
+image=http://magiccards.info/scans/en/rv/272.jpg
+value=3.164
+rarity=R
+type=Artifact
+cost={4}
+timing=artifact
+requires_groovy_code
+oracle={2}: Rocket Launcher deals 1 damage to target creature or player. Destroy Rocket Launcher at the beginning of the next end step. Activate this ability only if you've controlled Rocket Launcher continuously since the beginning of your most recent turn.

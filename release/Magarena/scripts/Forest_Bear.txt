@@ -1,5 +1,5 @@
 name=Forest Bear
-image=http://mtgimage.com/card/forest%20bear.jpg
+image=http://magiccards.info/scans/en/p3k/135.jpg
 value=2.957
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Bear
 cost={1}{G}
 pt=2/2
 timing=main
+oracle=NONE

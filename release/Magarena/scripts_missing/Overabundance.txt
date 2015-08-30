@@ -1,9 +1,9 @@
 name=Overabundance
-image=http://mtgimage.com/card/overabundance.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/259.jpg
+value=3.484
 rarity=R
 type=Enchantment
 cost={1}{R}{G}
 ability=Whenever a player taps a land for mana, that player adds one mana to his or her mana pool of any type that land produced, and SN deals 1 damage to him or her.
-timing=main
+timing=enchantment
 oracle=Whenever a player taps a land for mana, that player adds one mana to his or her mana pool of any type that land produced, and Overabundance deals 1 damage to him or her.

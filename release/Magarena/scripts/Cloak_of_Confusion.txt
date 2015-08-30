@@ -1,0 +1,11 @@
+name=Cloak of Confusion
+image=http://magiccards.info/scans/en/me2/82.jpg
+value=3.241
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{B}
+timing=aura
+enchant=pump,creature you control
+requires_groovy_code
+oracle=Enchant creature you control\nWhenever enchanted creature attacks and isn't blocked, you may have it assign no combat damage this turn. If you do, defending player discards a card at random.

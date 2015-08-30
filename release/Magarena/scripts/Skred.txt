@@ -1,9 +1,9 @@
 name=Skred
-image=http://mtgimage.com/card/skred.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cs/97.jpg
+value=4.072
 rarity=C
 type=Instant
 cost={R}
+effect=SN deals damage to target creature equal to the number of snow permanents you control.
 timing=removal
-requires_groovy_code
 oracle=Skred deals damage to target creature equal to the number of snow permanents you control.

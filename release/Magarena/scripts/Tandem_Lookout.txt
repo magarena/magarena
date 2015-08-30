@@ -1,5 +1,5 @@
 name=Tandem Lookout
-image=http://mtgimage.com/card/tandem%20lookout.jpg
+image=http://magiccards.info/scans/en/avr/80.jpg
 value=3.810
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=Soulbond;\
         As long as SN is paired with another creature, each of those creatures has "Whenever SN deals damage to an opponent, draw a card."
 timing=main
-oracle=Soulbond. As long as Tandem Lookout is paired with another creature, each of those creatures has "Whenever this creature deals damage to an opponent, draw a card."
+oracle=Soulbond\nAs long as Tandem Lookout is paired with another creature, each of those creatures has "Whenever this creature deals damage to an opponent, draw a card."

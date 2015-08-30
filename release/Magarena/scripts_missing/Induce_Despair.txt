@@ -1,9 +1,9 @@
 name=Induce Despair
-image=http://mtgimage.com/card/induce%20despair.jpg
-value=2.500
+image=http://magiccards.info/scans/en/roe/114.jpg
+value=3.333
 rarity=C
 type=Instant
 cost={2}{B}
 effect=As an additional cost to cast SN, reveal a creature card from your hand.~Target creature gets -X/-X until end of turn, where X is the revealed card's converted mana cost.
 timing=removal
-oracle=As an additional cost to cast Induce Despair, reveal a creature card from your hand. Target creature gets -X/-X until end of turn, where X is the revealed card's converted mana cost.
+oracle=As an additional cost to cast Induce Despair, reveal a creature card from your hand.\nTarget creature gets -X/-X until end of turn, where X is the revealed card's converted mana cost.

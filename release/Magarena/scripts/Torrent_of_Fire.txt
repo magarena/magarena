@@ -1,0 +1,9 @@
+name=Torrent of Fire
+image=http://magiccards.info/scans/en/sc/107.jpg
+value=2.957
+rarity=C
+type=Sorcery
+cost={3}{R}{R}
+timing=main
+requires_groovy_code
+oracle=Torrent of Fire deals damage equal to the highest converted mana cost among permanents you control to target creature or player.

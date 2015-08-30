@@ -1,5 +1,5 @@
 name=Offalsnout
-image=http://mtgimage.com/card/offalsnout.jpg
+image=http://magiccards.info/scans/en/mt/71.jpg
 value=3.842
 rarity=U
 type=Creature
@@ -10,4 +10,4 @@ ability=flash;\
         When SN leaves the battlefield, exile target card from a graveyard.;\
         evoke {B}
 timing=main
-oracle=Flash. When Offalsnout leaves the battlefield, exile target card from a graveyard. Evoke {B}
+oracle=Flash\nWhen Offalsnout leaves the battlefield, exile target card from a graveyard.\nEvoke {B}

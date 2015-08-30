@@ -1,0 +1,11 @@
+name=Cyclops Gladiator
+image=http://magiccards.info/scans/en/m11/131.jpg
+value=3.947
+rarity=R
+type=Creature
+subtype=Cyclops,Warrior
+cost={1}{R}{R}{R}
+pt=4/4
+timing=main
+requires_groovy_code
+oracle=Whenever Cyclops Gladiator attacks, you may have it deal damage equal to its power to target creature defending player controls. If you do, that creature deals damage equal to its power to Cyclops Gladiator.

@@ -1,6 +1,6 @@
 name=Recross the Paths
-image=http://mtgimage.com/card/recross%20the%20paths.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mt/133.jpg
+value=3.229
 rarity=U
 type=Sorcery
 cost={2}{G}

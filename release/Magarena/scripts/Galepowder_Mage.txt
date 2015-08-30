@@ -1,12 +1,12 @@
 name=Galepowder Mage
-image=http://mtgimage.com/card/galepowder%20mage.jpg
+image=http://magiccards.info/scans/en/ddi/12.jpg
 value=3.550
 rarity=R
 type=Creature
 subtype=Kithkin,Wizard
 cost={3}{W}
 pt=3/3
-ability=flying
+ability=flying;\
+        Whenever SN attacks, exile another target creature. Return that card to the battlefield under its owner's control at the beginning of the next end step.
 timing=main
-requires_groovy_code
-oracle=Flying. Whenever Galepowder Mage attacks, exile another target creature. Return that card to the battlefield under its owner's control at the beginning of the next end step.
+oracle=Flying\nWhenever Galepowder Mage attacks, exile another target creature. Return that card to the battlefield under its owner's control at the beginning of the next end step.

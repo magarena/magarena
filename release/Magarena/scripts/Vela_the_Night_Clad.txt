@@ -1,5 +1,5 @@
 name=Vela the Night-Clad
-image=http://mtgimage.com/set/pc2/vela%20the%20night-clad.jpg
+image=http://magiccards.info/scans/en/cma/18.jpg
 value=3.614
 rarity=M
 type=Legendary,Creature
@@ -10,4 +10,4 @@ ability=Intimidate;\
         other creatures you control have intimidate.;\
         Whenever SN or another creature you control leaves the battlefield, each opponent loses 1 life.
 timing=main
-oracle=Intimidate. Other creatures you control have intimidate. Whenever Vela the Night-Clad or another creature you control leaves the battlefield, each opponent loses 1 life.
+oracle=Intimidate\nOther creatures you control have intimidate.\nWhenever Vela the Night-Clad or another creature you control leaves the battlefield, each opponent loses 1 life.

@@ -1,9 +1,9 @@
 name=Neverending Torment
-image=http://mtgimage.com/card/neverending%20torment.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sok/83.jpg
+value=3.589
 rarity=R
 type=Sorcery
 cost={4}{B}{B}
 effect=Search target player's library for X cards, where X is the number of cards in your hand, and exile them. Then that player shuffles his or her library.~Epic
 timing=main
-oracle=Search target player's library for X cards, where X is the number of cards in your hand, and exile them. Then that player shuffles his or her library. Epic
+oracle=Search target player's library for X cards, where X is the number of cards in your hand, and exile them. Then that player shuffles his or her library.\nEpic

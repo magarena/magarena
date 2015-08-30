@@ -1,5 +1,5 @@
 name=Steel Overseer
-image=http://mtgimage.com/card/steel%20overseer.jpg
+image=http://magiccards.info/scans/en/ddf/44.jpg
 value=4.369
 rarity=R
 type=Artifact,Creature

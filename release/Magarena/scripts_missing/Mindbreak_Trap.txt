@@ -1,10 +1,10 @@
 name=Mindbreak Trap
-image=http://mtgimage.com/card/mindbreak%20trap.jpg
-value=2.500
+image=http://magiccards.info/scans/en/zen/57.jpg
+value=4.512
 rarity=M
 type=Instant
 subtype=Trap
 cost={2}{U}{U}
 effect=If an opponent cast three or more spells this turn, you may pay {0} rather than pay SN's mana cost.~Exile any number of target spells.
 timing=removal
-oracle=If an opponent cast three or more spells this turn, you may pay {0} rather than pay Mindbreak Trap's mana cost. Exile any number of target spells.
+oracle=If an opponent cast three or more spells this turn, you may pay {0} rather than pay Mindbreak Trap's mana cost.\nExile any number of target spells.

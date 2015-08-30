@@ -1,0 +1,11 @@
+name=Updraft Elemental
+image=http://magiccards.info/scans/en/dtk/82.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elemental
+cost={2}{U}
+pt=1/4
+ability=Flying
+timing=main
+oracle=Flying

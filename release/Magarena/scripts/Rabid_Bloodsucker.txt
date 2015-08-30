@@ -1,0 +1,12 @@
+name=Rabid Bloodsucker
+image=http://magiccards.info/scans/en/ori/113.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vampire
+cost={4}{B}
+pt=3/2
+ability=Flying;\
+        When SN enters the battlefield, each player loses 2 life.
+timing=main
+oracle=Flying\nWhen Rabid Bloodsucker enters the battlefield, each player loses 2 life.

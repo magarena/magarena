@@ -1,6 +1,6 @@
 name=Outmaneuver
-image=http://mtgimage.com/card/outmaneuver.jpg
-value=2.500
+image=http://magiccards.info/scans/en/us/205.jpg
+value=4.061
 rarity=U
 type=Instant
 cost={X}{R}

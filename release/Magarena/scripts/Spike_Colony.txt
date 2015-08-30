@@ -1,5 +1,5 @@
 name=Spike Colony
-image=http://mtgimage.com/card/spike%20colony.jpg
+image=http://magiccards.info/scans/en/br/77.jpg
 value=2.984
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=0/0
 ability=SN enters the battlefield with four +1/+1 counters on it.;\
         {2}, Remove a +1/+1 counter from SN: Put a +1/+1 counter on target creature.
 timing=main
-oracle=Spike Colony enters the battlefield with four +1/+1 counters on it. {2}, Remove a +1/+1 counter from Spike Colony: Put a +1/+1 counter on target creature.
+oracle=Spike Colony enters the battlefield with four +1/+1 counters on it.\n{2}, Remove a +1/+1 counter from Spike Colony: Put a +1/+1 counter on target creature.

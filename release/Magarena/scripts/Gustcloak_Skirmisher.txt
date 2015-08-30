@@ -1,5 +1,5 @@
 name=Gustcloak Skirmisher
-image=http://mtgimage.com/card/gustcloak%20skirmisher.jpg
+image=http://magiccards.info/scans/en/ddo/13.jpg
 value=3.262
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/3
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. Whenever Gustcloak Skirmisher becomes blocked, you may untap it and remove it from combat.
+oracle=Flying\nWhenever Gustcloak Skirmisher becomes blocked, you may untap it and remove it from combat.

@@ -1,6 +1,6 @@
 name=Wellspring
-image=http://mtgimage.com/card/wellspring.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/348.jpg
+value=2.212
 rarity=R
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={1}{G}{W}
 ability=Enchant land;\
         When SN enters the battlefield, gain control of enchanted land until end of turn.;\
         At the beginning of your upkeep, untap enchanted land. You gain control of that land until end of turn.
-timing=main
-oracle=Enchant land. When Wellspring enters the battlefield, gain control of enchanted land until end of turn. At the beginning of your upkeep, untap enchanted land. You gain control of that land until end of turn.
+timing=aura
+oracle=Enchant land\nWhen Wellspring enters the battlefield, gain control of enchanted land until end of turn.\nAt the beginning of your upkeep, untap enchanted land. You gain control of that land until end of turn.

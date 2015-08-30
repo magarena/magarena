@@ -1,6 +1,6 @@
 name=Circling Vultures
-image=http://mtgimage.com/card/circling%20vultures.jpg
-value=2.500
+image=http://magiccards.info/scans/en/wl/6.jpg
+value=3.860
 rarity=U
 type=Creature
 subtype=Bird
@@ -10,4 +10,4 @@ ability=Flying;\
         You may discard SN any time you could cast an instant.;\
         At the beginning of your upkeep, sacrifice SN unless you exile the top creature card of your graveyard.
 timing=main
-oracle=Flying. You may discard Circling Vultures any time you could cast an instant. At the beginning of your upkeep, sacrifice Circling Vultures unless you exile the top creature card of your graveyard.
+oracle=Flying\nYou may discard Circling Vultures any time you could cast an instant.\nAt the beginning of your upkeep, sacrifice Circling Vultures unless you exile the top creature card of your graveyard.

@@ -1,5 +1,5 @@
 name=Alloy Golem
-image=http://mtgimage.com/card/alloy%20golem.jpg
+image=http://magiccards.info/scans/en/in/297.jpg
 value=2.073
 rarity=U
 type=Artifact,Creature
@@ -8,4 +8,4 @@ cost={6}
 pt=4/4
 timing=main
 requires_groovy_code
-oracle=As Alloy Golem enters the battlefield, choose a color. Alloy Golem is the chosen color.
+oracle=As Alloy Golem enters the battlefield, choose a color.\nAlloy Golem is the chosen color.

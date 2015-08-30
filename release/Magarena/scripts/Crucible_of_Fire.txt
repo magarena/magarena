@@ -1,5 +1,5 @@
 name=Crucible of Fire
-image=http://mtgimage.com/card/crucible%20of%20fire.jpg
+image=http://magiccards.info/scans/en/m15/139.jpg
 value=2.700
 rarity=R
 type=Enchantment

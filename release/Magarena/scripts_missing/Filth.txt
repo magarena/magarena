@@ -1,6 +1,6 @@
 name=Filth
-image=http://mtgimage.com/card/filth.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ju/66.jpg
+value=3.285
 rarity=U
 type=Creature
 subtype=Incarnation
@@ -9,4 +9,4 @@ pt=2/2
 ability=Swampwalk;\
         As long as SN is in your graveyard and you control a Swamp, creatures you control have swampwalk.
 timing=main
-oracle=Swampwalk. As long as Filth is in your graveyard and you control a Swamp, creatures you control have swampwalk.
+oracle=Swampwalk\nAs long as Filth is in your graveyard and you control a Swamp, creatures you control have swampwalk.

@@ -1,5 +1,5 @@
 name=Fallen Ideal
-image=http://mtgimage.com/card/fallen%20ideal.jpg
+image=http://magiccards.info/scans/en/ts/109.jpg
 value=3.735
 rarity=U
 type=Enchantment
@@ -9,4 +9,4 @@ ability=Enchanted creature has flying and "Sacrifice a creature: SN gets +2/+1 u
         When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.
 timing=aura
 enchant=pump,pos creature
-oracle=Enchant creature. Enchanted creature has flying and "Sacrifice a creature: This creature gets +2/+1 until end of turn.". When Fallen Ideal is put into a graveyard from the battlefield, return Fallen Ideal to its owner's hand.
+oracle=Enchant creature\nEnchanted creature has flying and "Sacrifice a creature: This creature gets +2/+1 until end of turn."\nWhen Fallen Ideal is put into a graveyard from the battlefield, return Fallen Ideal to its owner's hand.

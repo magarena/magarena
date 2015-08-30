@@ -1,5 +1,5 @@
 name=Plumeveil
-image=http://mtgimage.com/card/plumeveil.jpg
+image=http://magiccards.info/scans/en/mma/194.jpg
 value=3.750
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={W/U}{W/U}{W/U}
 pt=4/4
 ability=flash;flying;defender
 timing=flash
-oracle=Flash. Defender, flying
+oracle=Flash\nDefender, flying

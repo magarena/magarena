@@ -1,10 +1,10 @@
 name=Jeskai Ascendancy
-image=http://mtgimage.com/card/jeskai%20ascendancy.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/180.jpg
+value=3.667
 rarity=R
 type=Enchantment
 cost={U}{R}{W}
 ability=Whenever you cast a noncreature spell, creatures you control get +1/+1 until end of turn. Untap those creatures.;\
         Whenever you cast a noncreature spell, you may draw a card. If you do, discard a card.
-timing=main
-oracle=Whenever you cast a noncreature spell, creatures you control get +1/+1 until end of turn. Untap those creatures. Whenever you cast a noncreature spell, you may draw a card. If you do, discard a card.
+timing=enchantment
+oracle=Whenever you cast a noncreature spell, creatures you control get +1/+1 until end of turn. Untap those creatures.\nWhenever you cast a noncreature spell, you may draw a card. If you do, discard a card.

@@ -1,5 +1,5 @@
 name=Skullmead Cauldron
-image=http://mtgimage.com/card/skullmead%20cauldron.jpg
+image=http://magiccards.info/scans/en/di/167.jpg
 value=2.500
 rarity=U
 type=Artifact
@@ -7,4 +7,4 @@ cost={4}
 ability={T}: You gain 1 life.;\
         {T},Discard a card: You gain 3 life.
 timing=artifact
-oracle={T}: You gain 1 life. {T}, Discard a card: You gain 3 life.
+oracle={T}: You gain 1 life.\n{T}, Discard a card: You gain 3 life.

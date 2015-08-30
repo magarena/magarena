@@ -1,5 +1,5 @@
 name=Bringer of the Black Dawn
-image=http://mtgimage.com/card/bringer%20of%20the%20black%20dawn.jpg
+image=http://magiccards.info/scans/en/5dn/43.jpg
 value=4.255
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=You may pay {W}{U}{B}{R}{G} rather than pay SN's mana cost.;\
         trample
 timing=main
 requires_groovy_code
-oracle=You may pay {W}{U}{B}{R}{G} rather than pay Bringer of the Black Dawn's mana cost. Trample. At the beginning of your upkeep, you may pay 2 life. If you do, search your library for a card, then shuffle your library and put that card on top of it.
+oracle=You may pay {W}{U}{B}{R}{G} rather than pay Bringer of the Black Dawn's mana cost.\nTrample\nAt the beginning of your upkeep, you may pay 2 life. If you do, search your library for a card, then shuffle your library and put that card on top of it.

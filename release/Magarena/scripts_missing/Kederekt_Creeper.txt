@@ -1,6 +1,6 @@
 name=Kederekt Creeper
-image=http://mtgimage.com/card/kederekt%20creeper.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ala/176.jpg
+value=3.128
 rarity=C
 type=Creature
 subtype=Horror
@@ -9,4 +9,4 @@ pt=2/3
 ability=Deathtouch;\
         SN can't be blocked except by two or more creatures.
 timing=main
-oracle=Deathtouch. Kederekt Creeper can't be blocked except by two or more creatures.
+oracle=Deathtouch\nKederekt Creeper can't be blocked except by two or more creatures.

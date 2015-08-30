@@ -1,10 +1,10 @@
 name=Battlefield Forge
-image=http://mtgimage.com/card/battlefield%20forge.jpg
-value=4.100
+image=http://magiccards.info/scans/en/ori/244.jpg
+value=2.500
 rarity=R
 type=Land
 mana=w2r2
 ability={T}: Add {1} to your mana pool.;\
         {T}: Add {R} or {W} to your mana pool. SN deals 1 damage to you.
 timing=land
-oracle={T}: Add {1} to your mana pool. {T}: Add {R} or {W} to your mana pool. Battlefield Forge deals 1 damage to you.
+oracle={T}: Add {1} to your mana pool.\n{T}: Add {R} or {W} to your mana pool. Battlefield Forge deals 1 damage to you.

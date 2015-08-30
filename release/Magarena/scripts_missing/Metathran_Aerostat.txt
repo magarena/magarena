@@ -1,6 +1,6 @@
 name=Metathran Aerostat
-image=http://mtgimage.com/card/metathran%20aerostat.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/61.jpg
+value=3.016
 rarity=R
 type=Creature
 subtype=Metathran
@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         {X}{U}: You may put a creature card with converted mana cost X from your hand onto the battlefield. If you do, return SN to its owner's hand.
 timing=main
-oracle=Flying. {X}{U}: You may put a creature card with converted mana cost X from your hand onto the battlefield. If you do, return Metathran Aerostat to its owner's hand.
+oracle=Flying\n{X}{U}: You may put a creature card with converted mana cost X from your hand onto the battlefield. If you do, return Metathran Aerostat to its owner's hand.

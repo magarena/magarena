@@ -1,5 +1,5 @@
 name=Elgaud Shieldmate
-image=http://mtgimage.com/card/elgaud%20shieldmate.jpg
+image=http://magiccards.info/scans/en/avr/50.jpg
 value=3.841
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/3
 ability=Soulbond;\
         As long as SN is paired with another creature, both creatures have hexproof.
 timing=main
-oracle=Soulbond. As long as Elgaud Shieldmate is paired with another creature, both creatures have hexproof.
+oracle=Soulbond\nAs long as Elgaud Shieldmate is paired with another creature, both creatures have hexproof.

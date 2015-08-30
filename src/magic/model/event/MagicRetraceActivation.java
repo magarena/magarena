@@ -6,11 +6,11 @@ import magic.model.choice.MagicTargetChoice;
 
 import java.util.Arrays;
 
-public class MagicRetraceActivation extends MagicGraveyardActivation {
+public class MagicRetraceActivation extends MagicGraveyardCastActivation {
     
     public MagicRetraceActivation(final MagicCardDefinition cdef) {
         super(
-            MagicCardActivation.CARD_CONDITION,
+            MagicHandCastActivation.CARD_CONDITION,
             cdef.getActivationHints(),
             "Retrace"
         );

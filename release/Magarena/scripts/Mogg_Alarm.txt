@@ -1,5 +1,5 @@
 name=Mogg Alarm
-image=http://mtgimage.com/card/mogg%20alarm.jpg
+image=http://magiccards.info/scans/en/ne/93.jpg
 value=3.013
 rarity=U
 type=Sorcery
@@ -7,4 +7,4 @@ cost={1}{R}{R}
 ability=You may sacrifice two Mountains rather than pay SN's mana cost.
 effect=Put two 1/1 red Goblin creature tokens onto the battlefield.
 timing=main
-oracle=You may sacrifice two Mountains rather than pay Mogg Alarm's mana cost. Put two 1/1 red Goblin creature tokens onto the battlefield.
+oracle=You may sacrifice two Mountains rather than pay Mogg Alarm's mana cost.\nPut two 1/1 red Goblin creature tokens onto the battlefield.

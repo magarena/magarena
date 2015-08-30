@@ -1,10 +1,10 @@
 name=Infused Arrows
-image=http://mtgimage.com/card/infused%20arrows.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5dn/133.jpg
+value=2.778
 rarity=U
 type=Artifact
 cost={4}
 ability=Sunburst;\
         {T}, Remove X charge counters from SN: Target creature gets -X/-X until end of turn.
-timing=main
-oracle=Sunburst. {T}, Remove X charge counters from Infused Arrows: Target creature gets -X/-X until end of turn.
+timing=artifact
+oracle=Sunburst\n{T}, Remove X charge counters from Infused Arrows: Target creature gets -X/-X until end of turn.

@@ -1,5 +1,5 @@
 name=Drift of the Dead
-image=http://mtgimage.com/card/drift%20of%20the%20dead.jpg
+image=http://magiccards.info/scans/en/cstd/25.jpg
 value=3.118
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=*/*
 ability=defender;\
         SN's power and toughness are each equal to the number of snow lands you control.
 timing=main
-oracle=Defender. Drift of the Dead's power and toughness are each equal to the number of snow lands you control.
+oracle=Defender\nDrift of the Dead's power and toughness are each equal to the number of snow lands you control.

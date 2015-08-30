@@ -1,6 +1,6 @@
 name=Infernal Denizen
-image=http://mtgimage.com/card/infernal%20denizen.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ia/24.jpg
+value=2.133
 rarity=R
 type=Creature
 subtype=Demon
@@ -9,4 +9,4 @@ pt=5/7
 ability=At the beginning of your upkeep, sacrifice two Swamps. If you can't, tap SN, and an opponent may gain control of a creature you control of his or her choice for as long as SN remains on the battlefield.;\
         {T}: Gain control of target creature for as long as SN remains on the battlefield.
 timing=main
-oracle=At the beginning of your upkeep, sacrifice two Swamps. If you can't, tap Infernal Denizen, and an opponent may gain control of a creature you control of his or her choice for as long as Infernal Denizen remains on the battlefield. {T}: Gain control of target creature for as long as Infernal Denizen remains on the battlefield.
+oracle=At the beginning of your upkeep, sacrifice two Swamps. If you can't, tap Infernal Denizen, and an opponent may gain control of a creature you control of his or her choice for as long as Infernal Denizen remains on the battlefield.\n{T}: Gain control of target creature for as long as Infernal Denizen remains on the battlefield.

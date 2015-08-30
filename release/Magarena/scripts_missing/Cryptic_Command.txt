@@ -1,9 +1,9 @@
 name=Cryptic Command
-image=http://mtgimage.com/card/cryptic%20command.jpg
+image=http://magiccards.info/scans/en/mma/38.jpg
 value=2.500
 rarity=R
 type=Instant
 cost={1}{U}{U}{U}
-effect=Choose two — • Counter target spell. • Return target permanent to its owner's hand. • Tap all creatures your opponents control. • Draw a card.
+effect=Choose two — (1) Counter target spell. (2) Return target permanent to its owner's hand. (3) Tap all creatures your opponents control. (4) Draw a card.
 timing=removal
-oracle=Choose two — • Counter target spell. • Return target permanent to its owner's hand. • Tap all creatures your opponents control. • Draw a card.
+oracle=Choose two —\n• Counter target spell.\n• Return target permanent to its owner's hand.\n• Tap all creatures your opponents control.\n• Draw a card.

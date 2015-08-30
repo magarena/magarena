@@ -1,6 +1,6 @@
 name=Bog Initiate
-image=http://mtgimage.com/card/bog%20initiate.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/95.jpg
+value=2.912
 rarity=C
 type=Creature
 subtype=Human,Wizard

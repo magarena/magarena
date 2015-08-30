@@ -1,9 +1,9 @@
 name=Fist of Suns
-image=http://mtgimage.com/card/fist%20of%20suns.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5dn/123.jpg
+value=4.303
 rarity=R
 type=Artifact
 cost={3}
 ability=You may pay {W}{U}{B}{R}{G} rather than pay the mana cost for spells that you cast.
-timing=main
+timing=artifact
 oracle=You may pay {W}{U}{B}{R}{G} rather than pay the mana cost for spells that you cast.

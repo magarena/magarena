@@ -1,5 +1,5 @@
 name=Neurok Commando
-image=http://mtgimage.com/card/neurok%20commando.jpg
+image=http://magiccards.info/scans/en/mbs/28.jpg
 value=3.133
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=shroud;\
         Whenever SN deals combat damage to a player, you may draw a card.
 timing=main
-oracle=Shroud. Whenever Neurok Commando deals combat damage to a player, you may draw a card.
+oracle=Shroud\nWhenever Neurok Commando deals combat damage to a player, you may draw a card.

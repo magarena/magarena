@@ -1,5 +1,5 @@
 name=Arcbound Overseer
-image=http://mtgimage.com/card/arcbound%20overseer.jpg
+image=http://magiccards.info/scans/en/ds/99.jpg
 value=4.100
 rarity=R
 type=Artifact,Creature
@@ -7,6 +7,6 @@ subtype=Golem
 cost={8}
 pt=0/0
 ability=At the beginning of your upkeep, put a +1/+1 counter on each creature with modular you control.;\
-        modular 6
+        Modular 6
 timing=main
-oracle=At the beginning of your upkeep, put a +1/+1 counter on each creature with modular you control. Modular 6
+oracle=At the beginning of your upkeep, put a +1/+1 counter on each creature with modular you control.\nModular 6

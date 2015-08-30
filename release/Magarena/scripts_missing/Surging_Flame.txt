@@ -1,9 +1,9 @@
 name=Surging Flame
-image=http://mtgimage.com/card/surging%20flame.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cs/99.jpg
+value=3.000
 rarity=C
 type=Instant
 cost={1}{R}
 effect=Ripple 4~SN deals 2 damage to target creature or player.
 timing=removal
-oracle=Ripple 4. Surging Flame deals 2 damage to target creature or player.
+oracle=Ripple 4\nSurging Flame deals 2 damage to target creature or player.

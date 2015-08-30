@@ -1,5 +1,5 @@
 name=Lignify
-image=http://mtgimage.com/card/lignify.jpg
+image=http://magiccards.info/scans/en/gvl/16.jpg
 value=3.969
 rarity=C
 type=Tribal,Enchantment
@@ -8,4 +8,4 @@ cost={1}{G}
 timing=main
 enchant=default,creature
 requires_groovy_code
-oracle=Enchant creature. Enchanted creature is a 0/4 Treefolk with no abilities.
+oracle=Enchant creature\nEnchanted creature is a Treefolk with base power and toughness 0/4 and loses all abilities.

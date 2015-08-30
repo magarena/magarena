@@ -1,5 +1,5 @@
 name=Nessian Asp
-image=http://mtgimage.com/card/nessian%20asp.jpg
+image=http://magiccards.info/scans/en/ddo/48.jpg
 value=3.588
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ ability=Reach;\
         {6}{G}: Monstrosity 4.
 pt=4/5
 timing=main
-oracle=Reach. {6}{G}: Monstrosity 4.
+oracle=Reach\n{6}{G}: Monstrosity 4.

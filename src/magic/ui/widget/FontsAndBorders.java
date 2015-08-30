@@ -56,9 +56,9 @@ public class FontsAndBorders {
     );
 
     public static final Border TABLE_BORDER=BorderFactory.createCompoundBorder(
-            BorderFactory.createMatteBorder(1,1,0,0,Color.BLACK),
-            BorderFactory.createEmptyBorder(1,1,1,1)
-        );
+        BorderFactory.createMatteBorder(1,1,0,0,Color.BLACK),
+        BorderFactory.createEmptyBorder(1,1,1,1)
+    );
 
     public static final Border TABLE_ROW_BORDER=BorderFactory.createMatteBorder(0,0,0,1,Color.BLACK);
 
@@ -71,12 +71,12 @@ public class FontsAndBorders {
 
     public static final Border UP_BORDER=BorderFactory.createCompoundBorder(
         BorderFactory.createRaisedBevelBorder(),
-        BorderFactory.createEmptyBorder(0,0,1,1)
+        BorderFactory.createEmptyBorder(0,0,0,0)
     );
 
     public static final Border DOWN_BORDER=BorderFactory.createCompoundBorder(
         BorderFactory.createLoweredBevelBorder(),
-        BorderFactory.createEmptyBorder(1,1,0,0)
+        BorderFactory.createEmptyBorder(0,0,0,0)
     );
 
     public static final Border SMALL_EMPTY_BORDER=BorderFactory.createEmptyBorder(1,1,1,1);
@@ -84,8 +84,8 @@ public class FontsAndBorders {
     public static final Border EMPTY_BORDER=BorderFactory.createEmptyBorder(2,2,2,2);
 
     private static final Border PLAYER_BORDER=BorderFactory.createCompoundBorder(
-            BorderFactory.createMatteBorder(0,4,0,0,Color.BLACK),
-            BorderFactory.createEmptyBorder(0,3,0,0)
+        BorderFactory.createMatteBorder(0,4,0,0,Color.BLACK),
+        BorderFactory.createEmptyBorder(0,3,0,0)
     );
 
     private static final Border OPPONENT_BORDER=BorderFactory.createCompoundBorder(
@@ -94,7 +94,6 @@ public class FontsAndBorders {
     );
 
     public static Border getPlayerBorder(final boolean visible) {
-
         return visible?PLAYER_BORDER:OPPONENT_BORDER;
     }
 }

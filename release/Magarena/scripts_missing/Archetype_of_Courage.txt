@@ -1,6 +1,6 @@
 name=Archetype of Courage
-image=http://mtgimage.com/card/archetype%20of%20courage.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bng/4.jpg
+value=3.870
 rarity=U
 type=Enchantment,Creature
 subtype=Human,Soldier
@@ -8,5 +8,5 @@ cost={1}{W}{W}
 pt=2/2
 ability=Creatures you control have first strike.;\
         Creatures your opponents control lose first strike and can't have or gain first strike.
-timing=main
-oracle=Creatures you control have first strike. Creatures your opponents control lose first strike and can't have or gain first strike.
+timing=enchantment
+oracle=Creatures you control have first strike.\nCreatures your opponents control lose first strike and can't have or gain first strike.

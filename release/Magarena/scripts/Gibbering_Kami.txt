@@ -1,5 +1,5 @@
 name=Gibbering Kami
-image=http://mtgimage.com/card/gibbering%20kami.jpg
+image=http://magiccards.info/scans/en/chk/112.jpg
 value=2.083
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={3}{B}
 pt=2/2
 ability=flying;soulshift 3
 timing=main
-oracle=Flying. Soulshift 3
+oracle=Flying\nSoulshift 3

@@ -1,0 +1,12 @@
+name=Kheru Bloodsucker
+image=http://magiccards.info/scans/en/ktk/75.jpg
+value=3.000
+rarity=U
+type=Creature
+subtype=Vampire
+cost={2}{B}
+pt=2/2
+ability=Whenever a creature you control with toughness 4 or greater dies, each opponent loses 2 life.~You gain 2 life.;\
+        {2}{B}, Sacrifice another creature: Put a +1/+1 counter on SN.
+timing=main
+oracle=Whenever a creature you control with toughness 4 or greater dies, each opponent loses 2 life and you gain 2 life.\n{2}{B}, Sacrifice another creature: Put a +1/+1 counter on Kheru Bloodsucker.

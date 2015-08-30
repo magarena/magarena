@@ -1,0 +1,12 @@
+name=Vineweft
+image=http://magiccards.info/scans/en/m15/207.jpg
+value=1.917
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={G}
+ability=Enchanted creature gets +1/+1.;\
+        {4}{G}: Return SN from your graveyard to your hand.
+timing=aura
+enchant=pump,pos creature
+oracle=Enchant creature\nEnchanted creature gets +1/+1.\n{4}{G}: Return Vineweft from your graveyard to your hand.

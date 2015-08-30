@@ -1,9 +1,9 @@
 name=Mask of the Mimic
-image=http://mtgimage.com/card/mask%20of%20the%20mimic.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sh/37.jpg
+value=4.267
 rarity=U
 type=Instant
 cost={U}
 effect=As an additional cost to cast SN, sacrifice a creature.~Search your library for a card with the same name as target nontoken creature and put that card onto the battlefield. Then shuffle your library.
 timing=removal
-oracle=As an additional cost to cast Mask of the Mimic, sacrifice a creature. Search your library for a card with the same name as target nontoken creature and put that card onto the battlefield. Then shuffle your library.
+oracle=As an additional cost to cast Mask of the Mimic, sacrifice a creature.\nSearch your library for a card with the same name as target nontoken creature and put that card onto the battlefield. Then shuffle your library.

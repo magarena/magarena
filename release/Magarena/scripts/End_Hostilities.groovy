@@ -11,13 +11,13 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanentList perms = new MagicPermanentList();
-            final Collection<MagicPermanent> targets = game.filterPermanents(MagicTargetFilterFactory.CREATURE);
+            final Collection<MagicPermanent> targets = CREATURE.filter(event);
             for (final MagicPermanent creature : targets) {
                 perms.add(creature);
                 perms.addAll(creature.getEquipmentPermanents());
                 perms.addAll(creature.getAuraPermanents());
             }
-            game.doAction(new MagicDestroyAction(perms));
+            game.doAction(new DestroyAction(perms));
         }
     }
 ]

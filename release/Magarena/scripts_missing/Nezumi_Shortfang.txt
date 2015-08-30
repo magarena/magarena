@@ -1,11 +1,12 @@
 name=Nezumi Shortfang
-image=http://mtgimage.com/card/nezumi%20shortfang.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/131a.jpg
+value=3.975
 rarity=R
 type=Creature
 subtype=Rat,Rogue
 cost={1}{B}
 pt=1/1
 ability={1}{B}, {T}: Target opponent discards a card. Then if that player has no cards in hand, flip SN.
+flip=Stabwhisker the Odious
 timing=main
 oracle={1}{B}, {T}: Target opponent discards a card. Then if that player has no cards in hand, flip Nezumi Shortfang.

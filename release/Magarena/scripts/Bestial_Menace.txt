@@ -1,5 +1,5 @@
 name=Bestial Menace
-image=http://mtgimage.com/card/bestial%20menace.jpg
+image=http://magiccards.info/scans/en/cmd/144.jpg
 value=3.463
 rarity=U
 type=Sorcery

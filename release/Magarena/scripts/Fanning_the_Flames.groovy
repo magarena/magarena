@@ -5,7 +5,7 @@
             final int amount = payedCost.getX();
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                NEG_TARGET_CREATURE_OR_PLAYER,
                 new MagicDamageTargetPicker(amount),
                 amount,
                 this,
@@ -17,14 +17,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
-                final MagicDamage damage = new MagicDamage(
-                    event.getSource(),
-                    it,
-                    event.getRefInt()
-                );
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new DealDamageAction(event.getSource(),it,event.getRefInt()));
                 if (event.isBuyback()) {
-                    game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
+                    game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
                 }
             });
         }

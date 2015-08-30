@@ -1,5 +1,5 @@
 name=Firefly
-image=http://mtgimage.com/card/firefly.jpg
+image=http://magiccards.info/scans/en/tp/172.jpg
 value=2.086
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={3}{R}
 pt=1/1
 ability=flying;{R}: SN gets +1/+0 until end of turn.
 timing=main
-oracle=Flying. {R}: Firefly gets +1/+0 until end of turn.
+oracle=Flying\n{R}: Firefly gets +1/+0 until end of turn.

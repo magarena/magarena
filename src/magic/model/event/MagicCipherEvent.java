@@ -5,9 +5,9 @@ import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.action.MagicAddTriggerAction;
-import magic.model.action.MagicChangeCardDestinationAction;
-import magic.model.action.MagicMoveCardAction;
+import magic.model.action.AddTriggerAction;
+import magic.model.action.ChangeCardDestinationAction;
+import magic.model.action.MoveCardAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
@@ -21,7 +21,7 @@ public class MagicCipherEvent extends MagicEvent {
             player,
             new MagicMayChoice(
                 "Exile " + source + " encoded on a creature you control?",
-                MagicTargetChoice.CREATURE_YOU_CONTROL
+                MagicTargetChoice.A_CREATURE_YOU_CONTROL
             ),
             EVENT_ACTION,
             "PN may$ exile SN encoded on a creature$ you control."
@@ -32,19 +32,19 @@ public class MagicCipherEvent extends MagicEvent {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.Exile));
+                game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.Exile));
                 event.processTargetPermanent(game, new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creatureToEncode) {
-                        game.doAction(new MagicAddTriggerAction(
+                        game.doAction(new AddTriggerAction(
                             creatureToEncode,
                             MagicWhenDamageIsDealtTrigger.Cipher(event.getCardOnStack().getCardDefinition())
                         ));
                     }
                 });
             } else {
-                game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.Graveyard));
+                game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.Graveyard));
             }
-            game.doAction(new MagicMoveCardAction(event.getCardOnStack()));
+            game.doAction(new MoveCardAction(event.getCardOnStack()));
         }
     };
 }

@@ -1,27 +1,10 @@
 package magic.headless;
 
-import magic.exception.UndoClickedException;
 import magic.ai.MagicAI;
-import magic.model.ILogBookListener;
-import magic.model.MagicCardList;
 import magic.model.MagicGame;
-import magic.model.MagicLogBookEvent;
 import magic.model.MagicPlayer;
-import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicPriorityEvent;
-import magic.model.target.MagicTarget;
-import magic.model.target.MagicTargetNone;
-import java.util.List;
-import java.util.Set;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.SynchronousQueue;
-import java.util.concurrent.atomic.AtomicBoolean;
 import magic.model.IGameController;
-import magic.model.MagicColor;
-import magic.model.MagicManaCost;
-import magic.model.MagicSubType;
-import magic.model.choice.MagicPlayChoiceResult;
 
 public class HeadlessGameController implements IGameController {
 
@@ -63,7 +46,7 @@ public class HeadlessGameController implements IGameController {
     private Object[] getAIChoiceResults(final MagicEvent event) {
         //dynamically get the AI based on the player's index
         final MagicPlayer player = event.getPlayer();
-        final MagicAI ai = game.getDuel().getAIs()[player.getIndex()];
+        final MagicAI ai = player.getAiProfile().getAiType().getAI();
         return ai.findNextEventChoiceResults(game, player);
     }
 }

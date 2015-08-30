@@ -1,9 +1,9 @@
 name=Treasure Cruise
-image=http://mtgimage.com/card/treasure%20cruise.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/59.jpg
+value=3.333
 rarity=C
 type=Sorcery
 cost={7}{U}
 effect=Delve~Draw three cards.
 timing=main
-oracle=Delve. Draw three cards.
+oracle=Delve\nDraw three cards.

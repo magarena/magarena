@@ -1,5 +1,5 @@
 name=Ghost-Lit Warder
-image=http://mtgimage.com/card/ghost-lit%20warder.jpg
+image=http://magiccards.info/scans/en/sok/39.jpg
 value=2.760
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability={3}{U}, {T}: Counter target spell unless its controller pays {2}.;\
         {3}{U}, Discard SN: Counter target spell unless its controller pays {4}.
 timing=main
-oracle={3}{U}, {T}: Counter target spell unless its controller pays {2}. Channel — {3}{U}, Discard Ghost-Lit Warder: Counter target spell unless its controller pays {4}.
+oracle={3}{U}, {T}: Counter target spell unless its controller pays {2}.\nChannel — {3}{U}, Discard Ghost-Lit Warder: Counter target spell unless its controller pays {4}.

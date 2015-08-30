@@ -1,9 +1,9 @@
 name=Savage Summoning
-image=http://mtgimage.com/card/savage%20summoning.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m14/194.jpg
+value=3.606
 rarity=R
 type=Instant
 cost={G}
 effect=SN can't be countered.~The next creature card you cast this turn can be cast as though it had flash. That spell can't be countered. That creature enters the battlefield with an additional +1/+1 counter on it.
 timing=removal
-oracle=Savage Summoning can't be countered. The next creature card you cast this turn can be cast as though it had flash. That spell can't be countered. That creature enters the battlefield with an additional +1/+1 counter on it.
+oracle=Savage Summoning can't be countered.\nThe next creature card you cast this turn can be cast as though it had flash. That spell can't be countered. That creature enters the battlefield with an additional +1/+1 counter on it.

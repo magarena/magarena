@@ -1,0 +1,9 @@
+name=blue Orb creature token with flying
+token=Orb
+image=http://cdn.staticneo.com/w/mtg/thumb/4/44/Orb.jpg/423px-Orb.jpg
+value=0
+type=Creature
+subtype=Orb
+ability=Flying
+color=u
+oracle=Flying

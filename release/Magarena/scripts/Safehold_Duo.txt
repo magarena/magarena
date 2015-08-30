@@ -1,5 +1,5 @@
 name=Safehold Duo
-image=http://mtgimage.com/card/safehold%20duo.jpg
+image=http://magiccards.info/scans/en/shm/238.jpg
 value=2.574
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/4
 ability=Whenever you cast a green spell, SN gets +1/+1 until end of turn.;\
         Whenever you cast a white spell, SN gains vigilance until end of turn.
 timing=main
-oracle=Whenever you cast a green spell, Safehold Duo gets +1/+1 until end of turn. Whenever you cast a white spell, Safehold Duo gains vigilance until end of turn.
+oracle=Whenever you cast a green spell, Safehold Duo gets +1/+1 until end of turn.\nWhenever you cast a white spell, Safehold Duo gains vigilance until end of turn.

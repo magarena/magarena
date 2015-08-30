@@ -1,9 +1,9 @@
 name=Mind Ravel
-image=http://mtgimage.com/card/mind%20ravel.jpg
+image=http://magiccards.info/scans/en/5e/38.jpg
 value=2.846
 rarity=C
 type=Sorcery
 cost={2}{B}
 effect=Target player discards a card.~Draw a card at the beginning of the next turn's upkeep.
 timing=main
-oracle=Target player discards a card. Draw a card at the beginning of the next turn's upkeep.
+oracle=Target player discards a card.\nDraw a card at the beginning of the next turn's upkeep.

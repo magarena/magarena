@@ -1,11 +1,11 @@
 name=Nim Lasher
-image=http://mtgimage.com/card/nim%20lasher.jpg
+image=http://magiccards.info/scans/en/mi/71.jpg
 value=2.662
 rarity=C
 type=Creature
 subtype=Zombie
 cost={2}{B}
 pt=1/1
+ability=SN gets +1/+0 for each artifact you control.
 timing=main
-requires_groovy_code=Nim Grotesque
 oracle=Nim Lasher gets +1/+0 for each artifact you control.

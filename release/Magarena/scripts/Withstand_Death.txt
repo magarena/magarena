@@ -1,5 +1,5 @@
 name=Withstand Death
-image=http://mtgimage.com/card/withstand%20death.jpg
+image=http://magiccards.info/scans/en/som/134.jpg
 value=3.284
 rarity=C
 type=Instant

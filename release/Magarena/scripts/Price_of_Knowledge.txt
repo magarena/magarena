@@ -1,0 +1,9 @@
+name=Price of Knowledge
+image=http://magiccards.info/scans/en/c13/89.jpg
+value=3.776
+rarity=R
+type=Enchantment
+cost={6}{B}
+timing=enchantment
+requires_groovy_code=Anvil of Bogardan;Price of Knowledge
+oracle=Players have no maximum hand size.\nAt the beginning of each opponent's upkeep, Price of Knowledge deals damage to that player equal to the number of cards in that player's hand.

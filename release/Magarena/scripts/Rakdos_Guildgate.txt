@@ -1,5 +1,5 @@
 name=Rakdos Guildgate
-image=http://mtgimage.com/card/rakdos%20guildgate.jpg
+image=http://magiccards.info/scans/en/c13/314.jpg
 value=3.208
 rarity=C
 type=Land
@@ -8,4 +8,4 @@ mana=b3r3
 ability={T}: Add {B} or {R} to your mana pool.;\
         SN enters the battlefield tapped.
 timing=tapland
-oracle=Rakdos Guildgate enters the battlefield tapped. {T}: Add {B} or {R} to your mana pool.
+oracle=Rakdos Guildgate enters the battlefield tapped.\n{T}: Add {B} or {R} to your mana pool.

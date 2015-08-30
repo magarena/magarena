@@ -1,5 +1,5 @@
 name=Urza's Blueprints
-image=http://mtgimage.com/card/urza%27s%20blueprints.jpg
+image=http://magiccards.info/scans/en/ul/137.jpg
 value=2.823
 rarity=R
 type=Artifact
@@ -7,4 +7,4 @@ cost={6}
 ability=echo {6};\
         {T}: Draw a card.
 timing=artifact
-oracle=Echo {6}. {T}: Draw a card.
+oracle=Echo {6}\n{T}: Draw a card.

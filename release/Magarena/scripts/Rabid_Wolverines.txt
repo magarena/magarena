@@ -1,5 +1,5 @@
 name=Rabid Wolverines
-image=http://mtgimage.com/card/rabid%20wolverines.jpg
+image=http://magiccards.info/scans/en/ex/119.jpg
 value=3.244
 rarity=C
 type=Creature

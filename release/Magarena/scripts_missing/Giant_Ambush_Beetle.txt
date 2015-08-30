@@ -1,6 +1,6 @@
 name=Giant Ambush Beetle
-image=http://mtgimage.com/card/giant%20ambush%20beetle.jpg
-value=2.500
+image=http://magiccards.info/scans/en/arb/137.jpg
+value=3.022
 rarity=U
 type=Creature
 subtype=Insect
@@ -9,4 +9,4 @@ pt=4/3
 ability=Haste;\
         When SN enters the battlefield, you may have target creature block it this turn if able.
 timing=main
-oracle=Haste. When Giant Ambush Beetle enters the battlefield, you may have target creature block it this turn if able.
+oracle=Haste\nWhen Giant Ambush Beetle enters the battlefield, you may have target creature block it this turn if able.

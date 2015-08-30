@@ -1,6 +1,6 @@
 name=Sarkhan the Mad
-image=http://mtgimage.com/card/sarkhan%20the%20mad.jpg
-value=2.500
+image=http://magiccards.info/scans/en/roe/214.jpg
+value=3.473
 rarity=M
 type=Planeswalker
 subtype=Sarkhan
@@ -9,4 +9,4 @@ ability=0: Reveal the top card of your library and put it into your hand. SN dea
         −2: Target creature's controller sacrifices it, then that player puts a 5/5 red Dragon creature token with flying onto the battlefield.;\
         −4: Each Dragon creature you control deals damage equal to its power to target player.
 timing=main
-oracle=0: Reveal the top card of your library and put it into your hand. Sarkhan the Mad deals damage to himself equal to that card's converted mana cost. −2: Target creature's controller sacrifices it, then that player puts a 5/5 red Dragon creature token with flying onto the battlefield. −4: Each Dragon creature you control deals damage equal to its power to target player.
+oracle=0: Reveal the top card of your library and put it into your hand. Sarkhan the Mad deals damage to himself equal to that card's converted mana cost.\n−2: Target creature's controller sacrifices it, then that player puts a 5/5 red Dragon creature token with flying onto the battlefield.\n−4: Each Dragon creature you control deals damage equal to its power to target player.

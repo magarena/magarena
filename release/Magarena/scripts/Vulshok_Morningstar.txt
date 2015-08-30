@@ -1,5 +1,5 @@
 name=Vulshok Morningstar
-image=http://mtgimage.com/card/vulshok%20morningstar.jpg
+image=http://magiccards.info/scans/en/ddi/66.jpg
 value=3.433
 rarity=C
 type=Artifact
@@ -8,4 +8,4 @@ cost={2}
 ability=Equipped creature gets +2/+2.;\
         Equip {2}
 timing=equipment
-oracle=Equipped creature gets +2/+2. Equip {2}
+oracle=Equipped creature gets +2/+2.\nEquip {2}

@@ -1,9 +1,9 @@
 name=Toxic Stench
-image=http://mtgimage.com/card/toxic%20stench.jpg
+image=http://magiccards.info/scans/en/ju/74.jpg
 value=2.707
 rarity=C
 type=Instant
 cost={1}{B}
 timing=removal
 requires_groovy_code
-oracle=Target nonblack creature gets -1/-1 until end of turn. Threshold — If seven or more cards are in your graveyard, instead destroy that creature. It can't be regenerated.
+oracle=Target nonblack creature gets -1/-1 until end of turn.\nThreshold — If seven or more cards are in your graveyard, instead destroy that creature. It can't be regenerated.

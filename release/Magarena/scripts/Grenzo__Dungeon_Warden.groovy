@@ -25,14 +25,13 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.getPlayer().getLibrary().size() > 0) {
                 final MagicCard card = event.getPlayer().getLibrary().getCardAtBottom();
-                game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
-                game.doAction(new MagicMoveCardAction(card,MagicLocationType.BottomOfOwnersLibrary,MagicLocationType.Graveyard));
+                game.doAction(new ShiftCardAction(card,MagicLocationType.BottomOfOwnersLibrary,MagicLocationType.Graveyard));
                 game.logAppendMessage(event.getPlayer()," ("+card.getName()+") ");
                 if (
                     card.hasType(MagicType.Creature) &&
                     (card.getPower() <= event.getPermanent().getPower())
                 ) {
-                    game.doAction(new MagicReanimateAction(card,event.getPlayer()));
+                    game.doAction(new ReanimateAction(card,event.getPlayer()));
                     game.logAppendMessage(event.getPlayer()," put onto the Battlefield.")
                 }
             }

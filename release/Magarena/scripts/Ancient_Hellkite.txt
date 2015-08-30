@@ -1,5 +1,5 @@
 name=Ancient Hellkite
-image=http://mtgimage.com/card/ancient%20hellkite.jpg
+image=http://magiccards.info/scans/en/m11/122.jpg
 value=3.672
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=6/6
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. {R}: Ancient Hellkite deals 1 damage to target creature defending player controls. Activate this ability only if Ancient Hellkite is attacking.
+oracle=Flying\n{R}: Ancient Hellkite deals 1 damage to target creature defending player controls. Activate this ability only if Ancient Hellkite is attacking.

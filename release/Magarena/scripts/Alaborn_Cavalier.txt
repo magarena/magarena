@@ -1,5 +1,5 @@
 name=Alaborn Cavalier
-image=http://mtgimage.com/card/alaborn%20cavalier.jpg
+image=http://magiccards.info/scans/en/ddg/18.jpg
 value=3.250
 rarity=U
 type=Creature

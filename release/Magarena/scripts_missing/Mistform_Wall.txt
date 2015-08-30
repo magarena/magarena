@@ -1,6 +1,6 @@
 name=Mistform Wall
-image=http://mtgimage.com/card/mistform%20wall.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/99.jpg
+value=2.821
 rarity=C
 type=Creature
 subtype=Illusion,Wall
@@ -9,4 +9,4 @@ pt=1/4
 ability=SN has defender as long as it's a Wall.;\
         {1}: SN becomes the creature type of your choice until end of turn.
 timing=main
-oracle=Mistform Wall has defender as long as it's a Wall. {1}: Mistform Wall becomes the creature type of your choice until end of turn.
+oracle=Mistform Wall has defender as long as it's a Wall.\n{1}: Mistform Wall becomes the creature type of your choice until end of turn.

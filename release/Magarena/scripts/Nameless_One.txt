@@ -1,5 +1,5 @@
 name=Nameless One
-image=http://mtgimage.com/card/nameless%20one.jpg
+image=http://magiccards.info/scans/en/on/100.jpg
 value=3.037
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=*/*
 ability=SN's power and toughness are each equal to the number of Wizards on the battlefield.;\
         Morph {2}{U}
 timing=main
-oracle=Nameless One's power and toughness are each equal to the number of Wizards on the battlefield. Morph {2}{U}
+oracle=Nameless One's power and toughness are each equal to the number of Wizards on the battlefield.\nMorph {2}{U}

@@ -1,12 +1,12 @@
 name=Liliana's Reaver
-image=http://mtgimage.com/card/liliana%27s%20reaver.jpg
+image=http://magiccards.info/scans/en/c14/147.jpg
 value=3.125
 rarity=R
 type=Creature
 subtype=Zombie
 cost={2}{B}{B}
 pt=4/3
-ability=deathtouch
+ability=deathtouch;\
+        Whenever SN deals combat damage to a player, that player discards a card.~Put a 2/2 black Zombie creature token onto the battlefield tapped.
 timing=main
-requires_groovy_code
-oracle=Deathtouch. Whenever Liliana's Reaver deals combat damage to a player, that player discards a card and you put a 2/2 black Zombie creature token onto the battlefield tapped.
+oracle=Deathtouch\nWhenever Liliana's Reaver deals combat damage to a player, that player discards a card and you put a 2/2 black Zombie creature token onto the battlefield tapped.

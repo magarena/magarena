@@ -14,7 +14,7 @@
             final MagicColor color = event.getChosenColor();
             final MagicAbilityList ab = new MagicAbilityList();
             ab.add(new MagicTapManaActivation(Collections.singletonList(color.getManaType())));
-            game.doAction(new MagicGainAbilityAction(event.getPermanent(), ab, MagicStatic.Forever));
+            game.doAction(new GainAbilityAction(event.getPermanent(), ab, MagicStatic.Forever));
         }
     }
 ]

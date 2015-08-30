@@ -1,9 +1,10 @@
 name=1/1 white Pegasus creature token with flying
 token=Pegasus
-image=http://img.photobucket.com/albums/v237/Xand0r/pegasus-token_guildpact_300.jpg
+image=http://magiccards.info/extras/token/commander-2014/pegasus.jpg
 value=2
 type=Creature
 subtype=Pegasus
 color=w
 pt=1/1
 ability=flying
+oracle=Flying

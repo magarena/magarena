@@ -1,11 +1,11 @@
 name=Arcbound Bruiser
-image=http://mtgimage.com/card/arcbound%20bruiser.jpg
+image=http://magiccards.info/scans/en/ds/94.jpg
 value=2.750
 rarity=C
 type=Artifact,Creature
 subtype=Golem
 cost={5}
 pt=0/0
-ability=modular 3
+ability=Modular 3
 timing=main
 oracle=Modular 3

@@ -1,0 +1,12 @@
+name=Moonlit Strider
+image=http://magiccards.info/scans/en/bok/16.jpg
+value=2.278
+rarity=C
+type=Creature
+subtype=Spirit
+cost={3}{W}
+pt=1/4
+ability=Sacrifice SN: Target creature you control gains protection from the color of your choice until end of turn.;\
+        Soulshift 3
+timing=main
+oracle=Sacrifice Moonlit Strider: Target creature you control gains protection from the color of your choice until end of turn.\nSoulshift 3

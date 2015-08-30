@@ -1,12 +1,12 @@
 name=Wayward Angel
-image=http://mtgimage.com/card/wayward%20angel.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/57.jpg
+value=3.938
 rarity=R
 type=Creature
 subtype=Angel,Horror
 cost={4}{W}{W}
 pt=4/4
-ability=Flying; vigilance;\
+ability=Flying, vigilance;\
         As long as seven or more cards are in your graveyard, SN gets +3/+3, is black, has trample, and has "At the beginning of your upkeep, sacrifice a creature."
 timing=main
-oracle=Flying, vigilance. Threshold — As long as seven or more cards are in your graveyard, Wayward Angel gets +3/+3, is black, has trample, and has "At the beginning of your upkeep, sacrifice a creature."
+oracle=Flying, vigilance\nThreshold — As long as seven or more cards are in your graveyard, Wayward Angel gets +3/+3, is black, has trample, and has "At the beginning of your upkeep, sacrifice a creature."

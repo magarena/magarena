@@ -1,5 +1,5 @@
 name=Swamp Mosquito
-image=http://mtgimage.com/card/swamp%20mosquito.jpg
+image=http://magiccards.info/scans/en/tsts/49.jpg
 value=3.605
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=0/1
 ability=flying
 timing=main
 requires_groovy_code=Crypt Cobra
-oracle=Flying. Whenever Swamp Mosquito attacks and isn't blocked, defending player gets a poison counter.
+oracle=Flying\nWhenever Swamp Mosquito attacks and isn't blocked, defending player gets a poison counter.

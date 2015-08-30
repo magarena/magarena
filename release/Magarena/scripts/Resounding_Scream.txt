@@ -1,5 +1,5 @@
 name=Resounding Scream
-image=http://mtgimage.com/card/resounding%20scream.jpg
+image=http://magiccards.info/scans/en/ala/83.jpg
 value=1.106
 rarity=C
 type=Sorcery
@@ -8,4 +8,4 @@ ability=Cycling {5}{U}{B}{R};\
         When you cycle SN, target player discards two cards at random.
 effect=Target player discards a card at random.
 timing=main
-oracle=Target player discards a card at random. Cycling {5}{U}{B}{R}. When you cycle Resounding Scream, target player discards two cards at random.
+oracle=Target player discards a card at random.\nCycling {5}{U}{B}{R}\nWhen you cycle Resounding Scream, target player discards two cards at random.

@@ -1,6 +1,6 @@
 name=4/4 green Bear creature token
 token=Bear
-image=http://media.wizards.com/images/magic/tcg/products/ktk/8arg43u984398yf/en_1xtd9y36pp.png
+image=http://magiccards.info/extras/token/khans-of-tarkir/bear.jpg
 value=3
 type=Creature
 subtype=Bear

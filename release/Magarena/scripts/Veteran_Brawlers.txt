@@ -1,5 +1,5 @@
 name=Veteran Brawlers
-image=http://mtgimage.com/card/veteran%20brawlers.jpg
+image=http://magiccards.info/scans/en/pr/106.jpg
 value=3.240
 rarity=R
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{R}
 pt=4/4
 timing=main
 requires_groovy_code
-oracle=Veteran Brawlers can't attack if defending player controls an untapped land. Veteran Brawlers can't block if you control an untapped land.
+oracle=Veteran Brawlers can't attack if defending player controls an untapped land.\nVeteran Brawlers can't block if you control an untapped land.

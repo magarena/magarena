@@ -1,5 +1,5 @@
 name=Skeletal Grimace
-image=http://mtgimage.com/card/skeletal%20grimace.jpg
+image=http://magiccards.info/scans/en/isd/116.jpg
 value=3.300
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={1}{B}
 ability=Enchanted creature gets +1/+1 and has "{B}: Regenerate SN."
 timing=aura
 enchant=pump,pos creature
-oracle=Enchant creature. Enchanted creature gets +1/+1 and has "{B}: Regenerate this creature."
+oracle=Enchant creature\nEnchanted creature gets +1/+1 and has "{B}: Regenerate this creature."

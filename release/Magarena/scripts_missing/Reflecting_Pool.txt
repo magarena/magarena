@@ -1,8 +1,8 @@
 name=Reflecting Pool
-image=http://mtgimage.com/card/reflecting%20pool.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cns/210.jpg
+value=4.438
 rarity=R
 type=Land
 ability={T}: Add to your mana pool one mana of any type that a land you control could produce.
-timing=main
+timing=land
 oracle={T}: Add to your mana pool one mana of any type that a land you control could produce.

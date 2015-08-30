@@ -1,16 +1,12 @@
 [
     new MagicWhenOtherPutIntoGraveyardTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicMoveCardAction act) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MoveCardAction act) {
             final MagicCard card = act.card;
             return (card.isFriend(permanent)) ?
                 new MagicEvent(
                     permanent,
-                    new MagicSimpleMayChoice(
-                        MagicSimpleMayChoice.ADD_POS_COUNTER,
-                        1,
-                        MagicSimpleMayChoice.DEFAULT_YES
-                    ),
+                    new MagicSimpleMayChoice(),
                     this,
                     "PN may\$ put a Quest counter on SN."
                 ) :
@@ -19,7 +15,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()){
-                game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Quest,1));
+                game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.Quest,1));
             }
         }
     },
@@ -40,7 +36,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_PLAYER,
+                TARGET_PLAYER,
                 this,
                 "Target player\$ shuffles his or her graveyard into his or her library."
             );
@@ -51,8 +47,7 @@
             event.processTargetPlayer(game, {
                 final MagicCardList graveyard = new MagicCardList(it.getGraveyard());
                 for (final MagicCard card : graveyard) {
-                    game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-                    game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
+                    game.doAction(new ShiftCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
                 }
             });
         }

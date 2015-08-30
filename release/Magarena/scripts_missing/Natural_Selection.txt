@@ -1,6 +1,6 @@
 name=Natural Selection
-image=http://mtgimage.com/card/natural%20selection.jpg
-value=2.500
+image=http://magiccards.info/scans/en/un/121.jpg
+value=3.738
 rarity=R
 type=Instant
 cost={G}

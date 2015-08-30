@@ -1,6 +1,6 @@
 name=Synod Artificer
-image=http://mtgimage.com/card/synod%20artificer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ds/34.jpg
+value=3.741
 rarity=R
 type=Creature
 subtype=Vedalken,Artificer
@@ -9,4 +9,4 @@ pt=1/2
 ability={X}, {T}: Tap X target noncreature artifacts.;\
         {X}, {T}: Untap X target noncreature artifacts.
 timing=main
-oracle={X}, {T}: Tap X target noncreature artifacts. {X}, {T}: Untap X target noncreature artifacts.
+oracle={X}, {T}: Tap X target noncreature artifacts.\n{X}, {T}: Untap X target noncreature artifacts.

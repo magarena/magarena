@@ -1,6 +1,6 @@
 name=Tourach's Gate
-image=http://mtgimage.com/card/tourach%27s%20gate.jpg
-value=2.500
+image=http://magiccards.info/scans/en/fe/33.jpg
+value=2.512
 rarity=R
 type=Enchantment
 subtype=Aura
@@ -9,5 +9,5 @@ ability=Enchant land you control;\
         Sacrifice a Thrull: Put three time counters on SN.;\
         At the beginning of your upkeep, remove a time counter from SN. If there are no time counters on SN, sacrifice it.;\
         Tap enchanted land: Attacking creatures you control get +2/-1 until end of turn. Activate this ability only if enchanted land is untapped.
-timing=main
-oracle=Enchant land you control. Sacrifice a Thrull: Put three time counters on Tourach's Gate. At the beginning of your upkeep, remove a time counter from Tourach's Gate. If there are no time counters on Tourach's Gate, sacrifice it. Tap enchanted land: Attacking creatures you control get +2/-1 until end of turn. Activate this ability only if enchanted land is untapped.
+timing=aura
+oracle=Enchant land you control\nSacrifice a Thrull: Put three time counters on Tourach's Gate.\nAt the beginning of your upkeep, remove a time counter from Tourach's Gate. If there are no time counters on Tourach's Gate, sacrifice it.\nTap enchanted land: Attacking creatures you control get +2/-1 until end of turn. Activate this ability only if enchanted land is untapped.

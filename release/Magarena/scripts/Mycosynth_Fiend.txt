@@ -1,0 +1,11 @@
+name=Mycosynth Fiend
+image=http://magiccards.info/scans/en/nph/117.jpg
+value=2.613
+rarity=U
+type=Creature
+subtype=Horror
+cost={2}{G}
+pt=2/2
+timing=main
+requires_groovy_code
+oracle=Mycosynth Fiend gets +1/+1 for each poison counter your opponents have.

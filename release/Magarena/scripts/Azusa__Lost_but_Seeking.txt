@@ -1,5 +1,5 @@
 name=Azusa, Lost but Seeking
-image=http://mtgimage.com/card/azusa%2C%20lost%20but%20seeking.jpg
+image=http://magiccards.info/scans/en/chk/201.jpg
 value=4.047
 rarity=R
 type=Legendary,Creature

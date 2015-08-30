@@ -1,5 +1,5 @@
 name=Mogg Conscripts
-image=http://mtgimage.com/card/mogg%20conscripts.jpg
+image=http://magiccards.info/scans/en/tp/189.jpg
 value=2.500
 rarity=C
 type=Creature

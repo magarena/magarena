@@ -1,5 +1,5 @@
 name=Nyxborn Rollicker
-image=http://mtgimage.com/card/nyxborn%20rollicker.jpg
+image=http://magiccards.info/scans/en/bng/102.jpg
 value=3.391
 rarity=C
 type=Enchantment,Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=Bestow {1}{R};\
         Enchanted creature gets +1/+1.
 timing=main
-oracle=Bestow {1}{R}. Enchanted creature gets +1/+1.
+oracle=Bestow {1}{R}\nEnchanted creature gets +1/+1.

@@ -1,5 +1,5 @@
 name=Bash to Bits
-image=http://mtgimage.com/card/bash%20to%20bits.jpg
+image=http://magiccards.info/scans/en/od/176.jpg
 value=1.524
 rarity=U
 type=Instant
@@ -7,4 +7,4 @@ cost={3}{R}
 effect=Destroy target artifact.
 ability=Flashback {4}{R}{R}
 timing=removal
-oracle=Destroy target artifact. Flashback {4}{R}{R}
+oracle=Destroy target artifact.\nFlashback {4}{R}{R}

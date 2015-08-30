@@ -1,5 +1,5 @@
 name=Kami of the Honored Dead
-image=http://mtgimage.com/card/kami%20of%20the%20honored%20dead.jpg
+image=http://magiccards.info/scans/en/bok/12.jpg
 value=2.571
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=3/5
 ability=flying;soulshift 6
 timing=main
 requires_groovy_code
-oracle=Flying. Whenever Kami of the Honored Dead is dealt damage, you gain that much life. Soulshift 6
+oracle=Flying\nWhenever Kami of the Honored Dead is dealt damage, you gain that much life.\nSoulshift 6

@@ -1,6 +1,6 @@
 name=Frenetic Efreet
-image=http://mtgimage.com/card/frenetic%20efreet.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/324.jpg
+value=3.900
 rarity=R
 type=Creature
 subtype=Efreet
@@ -9,4 +9,4 @@ pt=2/1
 ability=Flying;\
         {0}: Flip a coin. If you win the flip, SN phases out. If you lose the flip, sacrifice SN.
 timing=main
-oracle=Flying. {0}: Flip a coin. If you win the flip, Frenetic Efreet phases out. If you lose the flip, sacrifice Frenetic Efreet.
+oracle=Flying\n{0}: Flip a coin. If you win the flip, Frenetic Efreet phases out. If you lose the flip, sacrifice Frenetic Efreet.

@@ -1,5 +1,5 @@
 name=Glare of Heresy
-image=http://mtgimage.com/card/glare%20of%20heresy.jpg
+image=http://magiccards.info/scans/en/ths/15.jpg
 value=3.238
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Psychosis Crawler
-image=http://mtgimage.com/card/psychosis%20crawler.jpg
+image=http://magiccards.info/scans/en/mbs/126.jpg
 value=3.792
 rarity=R
 type=Artifact,Creature
@@ -9,4 +9,4 @@ pt=*/*
 ability=SN's power and toughness are each equal to the number of cards in your hand.;\
         Whenever you draw a card, each opponent loses 1 life.
 timing=artifact
-oracle=Psychosis Crawler's power and toughness are each equal to the number of cards in your hand. Whenever you draw a card, each opponent loses 1 life.
+oracle=Psychosis Crawler's power and toughness are each equal to the number of cards in your hand.\nWhenever you draw a card, each opponent loses 1 life.

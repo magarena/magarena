@@ -1,5 +1,5 @@
 name=Wei Night Raiders
-image=http://mtgimage.com/card/wei%20night%20raiders.jpg
+image=http://magiccards.info/scans/en/me3/81.jpg
 value=3.485
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=horsemanship;\
         Whenever SN deals damage to an opponent, that opponent discards a card.
 timing=main
-oracle=Horsemanship. Whenever Wei Night Raiders deals damage to an opponent, that player discards a card.
+oracle=Horsemanship\nWhenever Wei Night Raiders deals damage to an opponent, that player discards a card.

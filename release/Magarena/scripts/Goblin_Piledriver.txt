@@ -1,12 +1,12 @@
 name=Goblin Piledriver
-image=http://mtgimage.com/card/goblin%20piledriver.jpg
-value=4.000
+image=http://magiccards.info/scans/en/ori/151.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Goblin,Warrior
 cost={1}{R}
 pt=1/2
-ability=protection from blue
+ability=Protection from blue;\
+        Whenever SN attacks, SN gets +2/+0 until end of turn for each other attacking Goblin.
 timing=main
-requires_groovy_code
-oracle=Protection from blue. Whenever Goblin Piledriver attacks, it gets +2/+0 until end of turn for each other attacking Goblin.
+oracle=Protection from blue\nWhenever Goblin Piledriver attacks, it gets +2/+0 until end of turn for each other attacking Goblin.

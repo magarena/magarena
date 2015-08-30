@@ -1,6 +1,6 @@
 name=Woodvine Elemental
-image=http://mtgimage.com/card/woodvine%20elemental.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cns/52.jpg
+value=3.778
 rarity=U
 type=Creature
 subtype=Elemental
@@ -9,4 +9,4 @@ pt=4/4
 ability=Trample;\
         Whenever SN attacks, each player reveals the top card of his or her library. For each nonland card revealed this way, attacking creatures you control get +1/+1 until end of turn. Then each player draws a card.
 timing=main
-oracle=Trample. Parley — Whenever Woodvine Elemental attacks, each player reveals the top card of his or her library. For each nonland card revealed this way, attacking creatures you control get +1/+1 until end of turn. Then each player draws a card.
+oracle=Trample\nParley — Whenever Woodvine Elemental attacks, each player reveals the top card of his or her library. For each nonland card revealed this way, attacking creatures you control get +1/+1 until end of turn. Then each player draws a card.

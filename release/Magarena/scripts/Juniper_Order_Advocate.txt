@@ -1,5 +1,5 @@
 name=Juniper Order Advocate
-image=http://mtgimage.com/card/juniper%20order%20advocate.jpg
+image=http://magiccards.info/scans/en/me2/20.jpg
 value=3.712
 rarity=U
 type=Creature

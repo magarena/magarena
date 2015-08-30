@@ -1,5 +1,5 @@
 name=Arrest
-image=http://mtgimage.com/card/arrest.jpg
+image=http://magiccards.info/scans/en/rtr/3.jpg
 value=3.941
 rarity=U
 type=Enchantment
@@ -8,4 +8,4 @@ cost={2}{W}
 ability=Enchanted creature can't attack or block, and its activated abilities can't be activated.
 timing=aura
 enchant=can't attack or block,neg creature
-oracle=Enchant creature. Enchanted creature can't attack or block, and its activated abilities can't be activated.
+oracle=Enchant creature\nEnchanted creature can't attack or block, and its activated abilities can't be activated.

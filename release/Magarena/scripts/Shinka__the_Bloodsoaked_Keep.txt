@@ -1,5 +1,5 @@
 name=Shinka, the Bloodsoaked Keep
-image=http://mtgimage.com/card/shinka,%20the%20bloodsoaked%20keep.jpg
+image=http://magiccards.info/scans/en/chk/282.jpg
 value=4.009
 rarity=R
 type=Legendary,Land
@@ -7,4 +7,4 @@ mana=r2
 ability={T}: Add {R} to your mana pool.;\
         {R},{T}:Target legendary creature gains first strike until end of turn.
 timing=land
-oracle={T}: Add {R} to your mana pool. {R}, {T}: Target legendary creature gains first strike until end of turn.
+oracle={T}: Add {R} to your mana pool.\n{R}, {T}: Target legendary creature gains first strike until end of turn.

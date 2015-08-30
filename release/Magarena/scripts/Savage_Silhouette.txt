@@ -1,5 +1,5 @@
 name=Savage Silhouette
-image=http://mtgimage.com/card/savage%20silhouette.jpg
+image=http://magiccards.info/scans/en/zen/181.jpg
 value=3.167
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={2}{G}
 ability=Enchanted creature gets +2/+2 and has "{1}{G}: Regenerate SN."
 timing=enchantment
 enchant=pump,pos creature
-oracle=Enchant creature. Enchanted creature gets +2/+2 and has "{1}{G}: Regenerate this creature."
+oracle=Enchant creature\nEnchanted creature gets +2/+2 and has "{1}{G}: Regenerate this creature."

@@ -1,9 +1,9 @@
 name=Embolden
-image=http://mtgimage.com/card/embolden.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/22.jpg
+value=3.077
 rarity=C
 type=Instant
 cost={2}{W}
 effect=Prevent the next 4 damage that would be dealt this turn to any number of target creatures and/or players, divided as you choose.~Flashback {1}{W}
 timing=removal
-oracle=Prevent the next 4 damage that would be dealt this turn to any number of target creatures and/or players, divided as you choose. Flashback {1}{W}
+oracle=Prevent the next 4 damage that would be dealt this turn to any number of target creatures and/or players, divided as you choose.\nFlashback {1}{W}

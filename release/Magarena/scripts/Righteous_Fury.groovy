@@ -12,11 +12,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final Collection<MagicPermanent> targets =
-                game.filterPermanents(player,MagicTargetFilterFactory.TAPPED_CREATURE);
-            final MagicDestroyAction destroy = new MagicDestroyAction(targets);
+            final DestroyAction destroy = new DestroyAction(TAPPED_CREATURE.filter(event));
             game.doAction(destroy);
-            game.doAction(new MagicChangeLifeAction(player,destroy.getNumDestroyed()*2));
+            game.doAction(new ChangeLifeAction(player,destroy.getNumDestroyed()*2));
         }
     }
 ]

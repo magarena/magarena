@@ -1,5 +1,5 @@
 name=Mesa Falcon
-image=http://mtgimage.com/card/mesa%20falcon.jpg
+image=http://magiccards.info/scans/en/6e/31.jpg
 value=2.387
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{W}
 pt=1/1
 ability=flying;{1}{W}: SN gets +0/+1 until end of turn.
 timing=main
-oracle=Flying. {1}{W}: Mesa Falcon gets +0/+1 until end of turn.
+oracle=Flying\n{1}{W}: Mesa Falcon gets +0/+1 until end of turn.

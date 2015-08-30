@@ -1,5 +1,5 @@
 name=Village Bell-Ringer
-image=http://mtgimage.com/card/village%20bell%2Dringer.jpg
+image=http://magiccards.info/scans/en/isd/41.jpg
 value=3.722
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/4
 ability=flash;\
         When SN enters the battlefield, untap all creatures you control.
 timing=main
-oracle=Flash. When Village Bell-Ringer enters the battlefield, untap all creatures you control.
+oracle=Flash\nWhen Village Bell-Ringer enters the battlefield, untap all creatures you control.

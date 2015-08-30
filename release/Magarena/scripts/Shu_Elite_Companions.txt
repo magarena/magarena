@@ -1,5 +1,5 @@
 name=Shu Elite Companions
-image=http://mtgimage.com/card/shu%20elite%20companions.jpg
+image=http://magiccards.info/scans/en/me3/24.jpg
 value=3.217
 rarity=C
 type=Creature

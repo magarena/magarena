@@ -1,5 +1,5 @@
 name=Dawntreader Elk
-image=http://mtgimage.com/card/dawntreader%20elk.jpg
+image=http://magiccards.info/scans/en/dka/111.jpg
 value=3.642
 rarity=C
 type=Creature

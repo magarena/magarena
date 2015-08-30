@@ -1,5 +1,5 @@
 name=Segovian Leviathan
-image=http://mtgimage.com/card/segovian%20leviathan.jpg
+image=http://magiccards.info/scans/en/6e/97.jpg
 value=2.344
 rarity=U
 type=Creature

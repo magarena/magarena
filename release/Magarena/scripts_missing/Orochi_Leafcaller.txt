@@ -1,6 +1,6 @@
 name=Orochi Leafcaller
-image=http://mtgimage.com/card/orochi%20leafcaller.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/234.jpg
+value=4.000
 rarity=C
 type=Creature
 subtype=Snake,Shaman

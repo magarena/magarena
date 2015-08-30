@@ -1,6 +1,6 @@
 name=Anger
-image=http://mtgimage.com/card/anger.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddi/51.jpg
+value=4.279
 rarity=U
 type=Creature
 subtype=Incarnation
@@ -9,4 +9,4 @@ pt=2/2
 ability=Haste;\
         As long as SN is in your graveyard and you control a Mountain, creatures you control have haste.
 timing=main
-oracle=Haste. As long as Anger is in your graveyard and you control a Mountain, creatures you control have haste.
+oracle=Haste\nAs long as Anger is in your graveyard and you control a Mountain, creatures you control have haste.

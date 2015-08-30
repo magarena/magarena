@@ -1,10 +1,11 @@
 name=Ramosian Rally
-image=http://mtgimage.com/card/ramosian%20rally.jpg
+image=http://magiccards.info/scans/en/mm/38.jpg
 value=3.150
 rarity=C
 type=Instant
 cost={3}{W}
+ability=Cast SN with AI only if you control a creature.
 effect=Creatures you control get +1/+1 until end of turn.
 timing=pump
 requires_groovy_code
-oracle=If you control a Plains, you may tap an untapped creature you control rather than pay Ramosian Rally's mana cost. Creatures you control get +1/+1 until end of turn.
+oracle=If you control a Plains, you may tap an untapped creature you control rather than pay Ramosian Rally's mana cost.\nCreatures you control get +1/+1 until end of turn.

@@ -1,6 +1,6 @@
 name=Molten Hydra
-image=http://mtgimage.com/card/molten%20hydra.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ul/85.jpg
+value=3.807
 rarity=R
 type=Creature
 subtype=Hydra
@@ -9,4 +9,4 @@ pt=1/1
 ability={1}{R}{R}: Put a +1/+1 counter on SN.;\
         {T}, Remove all +1/+1 counters from SN: SN deals damage to target creature or player equal to the number of +1/+1 counters removed this way.
 timing=main
-oracle={1}{R}{R}: Put a +1/+1 counter on Molten Hydra. {T}, Remove all +1/+1 counters from Molten Hydra: Molten Hydra deals damage to target creature or player equal to the number of +1/+1 counters removed this way.
+oracle={1}{R}{R}: Put a +1/+1 counter on Molten Hydra.\n{T}, Remove all +1/+1 counters from Molten Hydra: Molten Hydra deals damage to target creature or player equal to the number of +1/+1 counters removed this way.

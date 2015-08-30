@@ -1,5 +1,5 @@
 name=Quirion Elves
-image=http://mtgimage.com/card/quirion%20elves.jpg
+image=http://magiccards.info/scans/en/pvc/39.jpg
 value=4.167
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability={T}: Add {G} to your mana pool.
 timing=main
 requires_groovy_code=Sol Grail
-oracle=As Quirion Elves enters the battlefield, choose a color. {T}: Add {G} to your mana pool. {T}: Add one mana of the chosen color to your mana pool.
+oracle=As Quirion Elves enters the battlefield, choose a color.\n{T}: Add {G} to your mana pool.\n{T}: Add one mana of the chosen color to your mana pool.

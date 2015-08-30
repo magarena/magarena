@@ -1,5 +1,5 @@
 name=Pouncing Wurm
-image=http://mtgimage.com/card/pouncing%20wurm.jpg
+image=http://magiccards.info/scans/en/pc/136.jpg
 value=2.891
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 timing=main
 ability=kicker {2}{G}
 requires_groovy_code
-oracle=Kicker {2}{G}. If Pouncing Wurm was kicked, it enters the battlefield with three +1/+1 counters on it and with haste.
+oracle=Kicker {2}{G}\nIf Pouncing Wurm was kicked, it enters the battlefield with three +1/+1 counters on it and with haste.

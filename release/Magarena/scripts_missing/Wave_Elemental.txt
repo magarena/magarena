@@ -1,6 +1,6 @@
 name=Wave Elemental
-image=http://mtgimage.com/card/wave%20elemental.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/102.jpg
+value=2.571
 rarity=U
 type=Creature
 subtype=Elemental

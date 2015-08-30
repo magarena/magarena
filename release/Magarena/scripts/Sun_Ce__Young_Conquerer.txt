@@ -1,5 +1,5 @@
 name=Sun Ce, Young Conquerer
-image=http://mtgimage.com/card/sun%20ce,%20young%20conquerer.jpg
+image=http://magiccards.info/scans/en/me3/52.jpg
 value=3.441
 rarity=U
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=horsemanship;\
         When SN enters the battlefield, you may return target creature to its owner's hand.
 timing=main
-oracle=Horsemanship. When Sun Ce, Young Conquerer enters the battlefield, you may return target creature to its owner's hand.
+oracle=Horsemanship\nWhen Sun Ce, Young Conquerer enters the battlefield, you may return target creature to its owner's hand.

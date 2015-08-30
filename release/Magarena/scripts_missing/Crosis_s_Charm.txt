@@ -1,9 +1,0 @@
-name=Crosis's Charm
-image=http://mtgimage.com/card/crosis%27s%20charm.jpg
-value=2.500
-rarity=U
-type=Instant
-cost={U}{B}{R}
-effect=Choose one — • Return target permanent to its owner's hand. • Destroy target nonblack creature. It can't be regenerated. • Destroy target artifact.
-timing=removal
-oracle=Choose one — • Return target permanent to its owner's hand. • Destroy target nonblack creature. It can't be regenerated. • Destroy target artifact.

@@ -16,9 +16,15 @@ import java.awt.event.ActionEvent;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.ui.ScreenController;
+import magic.translate.StringContext;
+import magic.translate.UiString;
 
 @SuppressWarnings("serial")
 public class CaptionPanel extends JPanel {
+
+    // translatable strings
+    @StringContext(eg = "show Magarena About dialog.")
+    private static final String _S1 = "About...";
 
     private final static ImageIcon wizardIcon = IconImages.getIcon(MagicIcon.HEADER_ICON);
 
@@ -35,7 +41,7 @@ public class CaptionPanel extends JPanel {
     private JButton getWizardIconButton() {
         JButton btn = new JButton(wizardIcon);
         btn.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-        btn.setToolTipText("About...");
+        btn.setToolTipText(UiString.get(_S1));
         setButtonTransparent(btn);
         btn.addActionListener(new AbstractAction() {
             @Override

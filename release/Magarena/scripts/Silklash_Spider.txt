@@ -1,0 +1,12 @@
+name=Silklash Spider
+image=http://magiccards.info/scans/en/c14/214.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Spider
+cost={3}{G}{G}
+pt=2/7
+ability=Reach
+timing=main
+requires_groovy_code
+oracle=Reach\n{X}{G}{G}: Silklash Spider deals X damage to each creature with flying.

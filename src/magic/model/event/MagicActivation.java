@@ -7,6 +7,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerState;
 import magic.model.MagicSource;
+import magic.model.stack.MagicItemOnStack;
 import magic.model.choice.MagicChoice;
 import magic.model.condition.MagicCondition;
 
@@ -21,11 +22,7 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
     private final MagicCondition[] conditions;
     private final MagicActivationHints hints;
 
-    MagicActivation(
-        final MagicCondition[] conditions,
-        final MagicActivationHints hints,
-        final String txt) {
-
+    MagicActivation(final MagicCondition[] conditions, final MagicActivationHints hints, final String txt) {
         this.text = txt;
         this.conditions=conditions;
         this.hints=hints;
@@ -63,17 +60,13 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
         player.getOpponent().getActivationPriority().clear();
     }
 
-    public boolean canPlay(final MagicGame game, final MagicPlayer player, final T source, final boolean useHints) {
+    public boolean canPlay(final MagicGame game, final MagicPlayer player, final T source, final boolean isAI) {
 
-        if (useHints && !checkActivationPriority(source)) {
+        if (isAI && game.getHintPriority() && !checkActivationPriority(source)) {
             return false;
         }
 
-        if (useHints && !hints.getTiming().canPlay(game, source)) {
-            return false;
-        }
-
-        if (useHints && hints.isMaximum(source)) {
+        if (isAI && game.getHintTiming() && !hints.getTiming().canPlay(game, source)) {
             return false;
         }
 
@@ -89,9 +82,16 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
             return false;
         }
 
+        // Handling of split second
+        for (final MagicItemOnStack item : game.getStack()) {
+            if (item.hasAbility(MagicAbility.SplitSecond)) {
+                return false;
+            }
+        }
+
         // Check conditions for activation
         for (final MagicCondition condition : conditions) {
-            if (!condition.accept(source)) {
+            if (condition.accept(source) == false) {
                 return false;
             }
         }
@@ -105,15 +105,13 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
         // * execute pay mana cost event
         //
         for (final MagicEvent event : getCostEvent(source)) {
-            for (final MagicCondition condition : event.getConditions()) {
-                if (!condition.accept(source)) {
-                    return false;
-                }
+            if (event.isSatisfied() == false) {
+                return false;
             }
         }
 
         // Check for options for choice
-        final boolean useTargetHints = useHints || GeneralConfig.getInstance().getSmartTarget();
+        final boolean useTargetHints = (isAI && game.getHintTarget()) || GeneralConfig.getInstance().getSmartTarget();
         final MagicChoice choice = getChoice(source);
         return choice.hasOptions(game, player, source, useTargetHints);
     }

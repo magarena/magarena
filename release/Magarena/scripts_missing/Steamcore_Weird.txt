@@ -1,6 +1,6 @@
 name=Steamcore Weird
-image=http://mtgimage.com/card/steamcore%20weird.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddj/7.jpg
+value=3.167
 rarity=C
 type=Creature
 subtype=Weird

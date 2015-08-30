@@ -1,5 +1,5 @@
 name=Eastern Paladin
-image=http://mtgimage.com/card/eastern%20paladin.jpg
+image=http://magiccards.info/scans/en/8e/131.jpg
 value=3.654
 rarity=R
 type=Creature

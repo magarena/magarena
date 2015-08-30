@@ -1,9 +1,9 @@
 name=Overwhelming Instinct
-image=http://mtgimage.com/card/overwhelming%20instinct.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/276.jpg
+value=3.644
 rarity=U
 type=Enchantment
 cost={2}{G}
 ability=Whenever you attack with three or more creatures, draw a card.
-timing=main
+timing=enchantment
 oracle=Whenever you attack with three or more creatures, draw a card.

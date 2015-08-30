@@ -1,6 +1,6 @@
 name=Underworld Cerberus
-image=http://mtgimage.com/card/underworld%20cerberus.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ths/208.jpg
+value=3.655
 rarity=M
 type=Creature
 subtype=Hound
@@ -10,4 +10,4 @@ ability=SN can't be blocked except by three or more creatures.;\
         Cards in graveyards can't be the targets of spells or abilities.;\
         When SN dies, exile it and each player returns all creature cards from his or her graveyard to his or her hand.
 timing=main
-oracle=Underworld Cerberus can't be blocked except by three or more creatures. Cards in graveyards can't be the targets of spells or abilities. When Underworld Cerberus dies, exile it and each player returns all creature cards from his or her graveyard to his or her hand.
+oracle=Underworld Cerberus can't be blocked except by three or more creatures.\nCards in graveyards can't be the targets of spells or abilities.\nWhen Underworld Cerberus dies, exile it and each player returns all creature cards from his or her graveyard to his or her hand.

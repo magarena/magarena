@@ -1,11 +1,11 @@
 name=Elemental Resonance
-image=http://mtgimage.com/card/elemental%20resonance.jpg
-value=2.500
+image=http://magiccards.info/scans/en/di/83.jpg
+value=3.900
 rarity=R
 type=Enchantment
 subtype=Aura
 cost={2}{G}{G}
 ability=Enchant permanent;\
         At the beginning of your precombat main phase, add mana equal to enchanted permanent's mana cost to your mana pool.
-timing=main
-oracle=Enchant permanent. At the beginning of your precombat main phase, add mana equal to enchanted permanent's mana cost to your mana pool.
+timing=aura
+oracle=Enchant permanent\nAt the beginning of your precombat main phase, add mana equal to enchanted permanent's mana cost to your mana pool.

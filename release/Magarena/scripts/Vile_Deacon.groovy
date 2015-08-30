@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int X = game.getNrOfPermanents(MagicSubType.Cleric);
-            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(), +X, +X));
+            game.doAction(new ChangeTurnPTAction(event.getPermanent(), +X, +X));
         }
     }
 ]

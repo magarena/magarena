@@ -1,5 +1,5 @@
 name=Maniacal Rage
-image=http://mtgimage.com/card/maniacal%20rage.jpg
+image=http://magiccards.info/scans/en/cfx/68.jpg
 value=2.700
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={1}{R}
 ability=Enchanted creature gets +2/+2 and can't block.
 timing=aura
 enchant=pump,pos creature
-oracle=Enchant creature. Enchanted creature gets +2/+2 and can't block.
+oracle=Enchant creature\nEnchanted creature gets +2/+2 and can't block.

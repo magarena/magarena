@@ -1,5 +1,5 @@
 name=Prized Elephant
-image=http://mtgimage.com/card/prized%20elephant.jpg
+image=http://magiccards.info/scans/en/m13/27.jpg
 value=3.122
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=SN gets +1/+1 as long as you control a Forest.;\
         {G}: SN gains trample until end of turn.
 timing=main
-oracle=Prized Elephant gets +1/+1 as long as you control a Forest. {G}: Prized Elephant gains trample until end of turn.
+oracle=Prized Elephant gets +1/+1 as long as you control a Forest.\n{G}: Prized Elephant gains trample until end of turn.

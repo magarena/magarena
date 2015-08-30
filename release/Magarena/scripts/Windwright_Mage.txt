@@ -1,5 +1,5 @@
 name=Windwright Mage
-image=http://mtgimage.com/card/windwright%20mage.jpg
+image=http://magiccards.info/scans/en/ala/208.jpg
 value=2.971
 rarity=C
 type=Artifact,Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=lifelink;\
         SN has flying as long as an artifact card is in your graveyard.
 timing=artifact
-oracle=Lifelink. Windwright Mage has flying as long as an artifact card is in your graveyard.
+oracle=Lifelink\nWindwright Mage has flying as long as an artifact card is in your graveyard.

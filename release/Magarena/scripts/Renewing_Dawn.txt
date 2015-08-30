@@ -1,0 +1,10 @@
+name=Renewing Dawn
+image=http://magiccards.info/scans/en/po/185.jpg
+value=3.208
+rarity=U
+type=Sorcery
+cost={1}{W}
+ability=Cast SN with AI only if an opponent controls a Mountain.
+timing=main
+requires_groovy_code
+oracle=You gain 2 life for each Mountain target opponent controls.

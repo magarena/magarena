@@ -1,5 +1,5 @@
 name=Wall of Wood
-image=http://mtgimage.com/card/wall%20of%20wood.jpg
+image=http://magiccards.info/scans/en/10e/309.jpg
 value=1.820
 ability=defender
 rarity=C

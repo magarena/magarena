@@ -1,6 +1,6 @@
 name=Gwyllion Hedge-Mage
-image=http://mtgimage.com/card/gwyllion%20hedge-mage.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cmd/202.jpg
+value=3.359
 rarity=U
 type=Creature
 subtype=Hag,Wizard
@@ -9,4 +9,4 @@ pt=2/2
 ability=When SN enters the battlefield, if you control two or more Plains, you may put a 1/1 white Kithkin Soldier creature token onto the battlefield.;\
         When SN enters the battlefield, if you control two or more Swamps, you may put a -1/-1 counter on target creature.
 timing=main
-oracle=When Gwyllion Hedge-Mage enters the battlefield, if you control two or more Plains, you may put a 1/1 white Kithkin Soldier creature token onto the battlefield. When Gwyllion Hedge-Mage enters the battlefield, if you control two or more Swamps, you may put a -1/-1 counter on target creature.
+oracle=When Gwyllion Hedge-Mage enters the battlefield, if you control two or more Plains, you may put a 1/1 white Kithkin Soldier creature token onto the battlefield.\nWhen Gwyllion Hedge-Mage enters the battlefield, if you control two or more Swamps, you may put a -1/-1 counter on target creature.

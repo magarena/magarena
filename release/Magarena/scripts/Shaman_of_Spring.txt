@@ -1,5 +1,5 @@
 name=Shaman of Spring
-image=http://mtgimage.com/card/shaman%20of%20spring.jpg
+image=http://magiccards.info/scans/en/m15/199.jpg
 value=3.083
 rarity=C
 type=Creature

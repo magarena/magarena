@@ -1,9 +1,9 @@
 name=Orzhova, the Church of Deals
-image=http://mtgimage.com/card/orzhova,%20the%20church%20of%20deals.jpg
+image=http://magiccards.info/scans/en/gp/162.jpg
 value=2.919
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\
         {3}{W}{B},{T}: Target player loses 1 life and you gain 1 life.
 timing=land
-oracle={T}: Add {1} to your mana pool. {3}{W}{B}, {T}: Target player loses 1 life and you gain 1 life.
+oracle={T}: Add {1} to your mana pool.\n{3}{W}{B}, {T}: Target player loses 1 life and you gain 1 life.

@@ -1,5 +1,5 @@
 name=Sparkspitter
-image=http://mtgimage.com/card/sparkspitter.jpg
+image=http://magiccards.info/scans/en/fut/109.jpg
 value=3.295
 rarity=U
 type=Creature

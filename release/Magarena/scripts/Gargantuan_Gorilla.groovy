@@ -1,9 +1,9 @@
 def SAC_ACTION = {
     final MagicGame game, final MagicEvent event ->
     event.processTargetPermanent(game, {
-        game.doAction(new MagicSacrificeAction(it));
+        game.doAction(new SacrificeAction(it));
         if (it.hasType(MagicType.Snow)) { 
-            game.doAction(new MagicGainAbilityAction(event.getPermanent(),MagicAbility.Trample));
+            game.doAction(new GainAbilityAction(event.getPermanent(),MagicAbility.Trample));
         }
     })
 }
@@ -29,7 +29,7 @@ def SAC_ACTION = {
             final MagicEvent sac = new MagicEvent(
                 SN,
                 PN,
-                MagicTargetChoice.SACRIFICE_FOREST,
+                SACRIFICE_FOREST,
                 MagicSacrificeTargetPicker.create(),
                 SAC_ACTION,
                 "Choose a Forest to sacrifice\$."
@@ -37,8 +37,8 @@ def SAC_ACTION = {
             if (event.isYes() && PN.controlsPermanent(MagicSubType.Forest)) {
                 game.addEvent(sac);
             } else {
-                game.doAction(new MagicSacrificeAction(SN));
-                game.doAction(new MagicDealDamageAction(SN, PN, 7));
+                game.doAction(new SacrificeAction(SN));
+                game.doAction(new DealDamageAction(SN, PN, 7));
             }
         }
     },
@@ -58,7 +58,7 @@ def SAC_ACTION = {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NegOther("target creature", source),
+                NegOther("target creature", source),
                 new MagicDamageTargetPicker(source.getPower()),
                 this,
                 "SN deals damage equal to its power to another target creature. " +
@@ -69,12 +69,12 @@ def SAC_ACTION = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicDealDamageAction(
+                game.doAction(new DealDamageAction(
                     event.getPermanent(),
                     it,
                     event.getPermanent().getPower()
                 ));
-                game.doAction(new MagicDealDamageAction(
+                game.doAction(new DealDamageAction(
                     it,
                     event.getPermanent(),
                     it.getPower()

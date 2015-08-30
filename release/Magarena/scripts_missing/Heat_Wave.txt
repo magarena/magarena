@@ -1,11 +1,11 @@
 name=Heat Wave
-image=http://mtgimage.com/card/heat%20wave.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vi/83.jpg
+value=3.278
 rarity=U
 type=Enchantment
 cost={2}{R}
 ability=Cumulative upkeep {R};\
         Blue creatures can't block creatures you control.;\
         Nonblue creatures can't block creatures you control unless their controller pays 1 life for each blocking creature he or she controls.
-timing=main
-oracle=Cumulative upkeep {R}. Blue creatures can't block creatures you control. Nonblue creatures can't block creatures you control unless their controller pays 1 life for each blocking creature he or she controls.
+timing=enchantment
+oracle=Cumulative upkeep {R}\nBlue creatures can't block creatures you control.\nNonblue creatures can't block creatures you control unless their controller pays 1 life for each blocking creature he or she controls.

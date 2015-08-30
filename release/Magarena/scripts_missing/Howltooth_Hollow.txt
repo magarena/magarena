@@ -1,10 +1,10 @@
 name=Howltooth Hollow
-image=http://mtgimage.com/card/howltooth%20hollow.jpg
+image=http://magiccards.info/scans/en/lw/269.jpg
 value=2.500
 rarity=R
 type=Land
 ability=Hideaway;\
         {T}: Add {B} to your mana pool.;\
         {B}, {T}: You may play the exiled card without paying its mana cost if each player has no cards in hand.
-timing=main
-oracle=Hideaway. {T}: Add {B} to your mana pool. {B}, {T}: You may play the exiled card without paying its mana cost if each player has no cards in hand.
+timing=land
+oracle=Hideaway\n{T}: Add {B} to your mana pool.\n{B}, {T}: You may play the exiled card without paying its mana cost if each player has no cards in hand.

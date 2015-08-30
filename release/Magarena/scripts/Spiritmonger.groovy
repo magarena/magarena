@@ -1,12 +1,13 @@
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Pump,1),
+        new MagicActivationHints(MagicTiming.Pump),
         "Color"
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source,"{G}"),
+                new MagicPlayAbilityEvent(source)
             ];
         }
         @Override
@@ -22,7 +23,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
             final MagicColor color = event.getChosenColor();
-            game.doAction(new MagicAddStaticAction(permanent,
+            game.doAction(new AddStaticAction(permanent,
                 new MagicStatic(MagicLayer.Color,MagicStatic.UntilEOT) {
                 @Override
                 public int getColorFlags(final MagicPermanent perm, final int flags) {

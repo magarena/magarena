@@ -1,6 +1,6 @@
 name=Abzan Battle Priest
-image=http://mtgimage.com/card/abzan%20battle%20priest.jpg
-value=3.625
+image=http://magiccards.info/scans/en/ktk/1.jpg
+value=3.500
 rarity=U
 type=Creature
 subtype=Human,Cleric
@@ -9,4 +9,4 @@ pt=3/2
 ability=Outlast {W};\
         Each creature you control with a +1/+1 counter on it has lifelink.
 timing=main
-oracle=Outlast {W}. Each creature you control with a +1/+1 counter on it has lifelink.
+oracle=Outlast {W}\nEach creature you control with a +1/+1 counter on it has lifelink.

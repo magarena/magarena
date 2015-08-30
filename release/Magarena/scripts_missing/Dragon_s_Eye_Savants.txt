@@ -1,6 +1,6 @@
 name=Dragon's Eye Savants
-image=http://mtgimage.com/card/dragon%27s%20eye%20savants.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/38.jpg
+value=3.000
 rarity=U
 type=Creature
 subtype=Human,Wizard
@@ -9,4 +9,4 @@ pt=0/6
 ability=Morph—Reveal a blue card in your hand.;\
         When SN is turned face up, look at target opponent's hand.
 timing=main
-oracle=Morph—Reveal a blue card in your hand. When Dragon's Eye Savants is turned face up, look at target opponent's hand.
+oracle=Morph—Reveal a blue card in your hand.\nWhen Dragon's Eye Savants is turned face up, look at target opponent's hand.

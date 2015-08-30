@@ -1,6 +1,6 @@
 name=Personal Incarnation
-image=http://mtgimage.com/card/personal%20incarnation.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me4/22.jpg
+value=2.357
 rarity=R
 type=Creature
 subtype=Avatar,Incarnation
@@ -9,4 +9,4 @@ pt=6/6
 ability={0}: The next 1 damage that would be dealt to SN this turn is dealt to its owner instead. Any player may activate this ability, but only if he or she owns SN.;\
         When SN dies, its owner loses half his or her life, rounded up.
 timing=main
-oracle={0}: The next 1 damage that would be dealt to Personal Incarnation this turn is dealt to its owner instead. Any player may activate this ability, but only if he or she owns Personal Incarnation. When Personal Incarnation dies, its owner loses half his or her life, rounded up.
+oracle={0}: The next 1 damage that would be dealt to Personal Incarnation this turn is dealt to its owner instead. Any player may activate this ability, but only if he or she owns Personal Incarnation.\nWhen Personal Incarnation dies, its owner loses half his or her life, rounded up.

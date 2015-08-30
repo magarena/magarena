@@ -17,7 +17,7 @@
             final MagicPermanent permanent=event.getPermanent();
             final MagicPermanent enchanted=permanent.getEnchantedPermanent();
             if (enchanted.isValid()) {
-                game.doAction(new MagicPlayTokenAction(event.getPlayer(),enchanted));
+                game.doAction(new PlayTokenAction(event.getPlayer(),enchanted));
             }
         }
     }

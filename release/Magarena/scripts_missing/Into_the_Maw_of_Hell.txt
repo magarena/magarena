@@ -1,6 +1,6 @@
 name=Into the Maw of Hell
-image=http://mtgimage.com/card/into%20the%20maw%20of%20hell.jpg
-value=2.500
+image=http://magiccards.info/scans/en/isd/150.jpg
+value=3.858
 rarity=U
 type=Sorcery
 cost={4}{R}{R}

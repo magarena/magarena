@@ -1,5 +1,5 @@
 name=Hedron-Field Purists
-image=http://mtgimage.com/card/hedron%2Dfield%20purists.jpg
+image=http://magiccards.info/scans/en/roe/25.jpg
 value=3.473
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=0/3
 ability=level up {2}{W} 5
 timing=main
 requires_groovy_code
-oracle=Level up {2}{W}. LEVEL 1-4. 1/4. If a source would deal damage to you or a creature you control, prevent 1 of that damage. LEVEL 5+. 2/5. If a source would deal damage to you or a creature you control, prevent 2 of that damage.
+oracle=Level up {2}{W}\nLEVEL 1-4\n1/4\nIf a source would deal damage to you or a creature you control, prevent 1 of that damage.\nLEVEL 5+\n2/5\nIf a source would deal damage to you or a creature you control, prevent 2 of that damage.

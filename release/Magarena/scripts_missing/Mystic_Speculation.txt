@@ -1,9 +1,9 @@
 name=Mystic Speculation
-image=http://mtgimage.com/card/mystic%20speculation.jpg
-value=2.500
+image=http://magiccards.info/scans/en/fut/41.jpg
+value=3.865
 rarity=U
 type=Sorcery
 cost={U}
 effect=Buyback {2}~Scry 3.
 timing=main
-oracle=Buyback {2}. Scry 3.
+oracle=Buyback {2}\nScry 3.

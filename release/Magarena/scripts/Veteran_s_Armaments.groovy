@@ -1,7 +1,7 @@
 def act = {
     final MagicGame game, final MagicEvent event ->
     final int amount = event.getPlayer().getOpponent().getNrOfAttackers() + event.getPlayer().getNrOfAttackers();
-    game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),amount,amount));
+    game.doAction(new ChangeTurnPTAction(event.getPermanent(),amount,amount));
 }
 
 def evt = {
@@ -44,7 +44,7 @@ def evt = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicAttachAction(
+                game.doAction(new AttachAction(
                     event.getPermanent(),
                     event.getRefPermanent()
                 ));

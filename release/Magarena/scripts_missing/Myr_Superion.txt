@@ -1,11 +1,11 @@
 name=Myr Superion
-image=http://mtgimage.com/card/myr%20superion.jpg
-value=2.500
+image=http://magiccards.info/scans/en/nph/146.jpg
+value=3.811
 rarity=R
 type=Artifact,Creature
 subtype=Myr
 cost={2}
 pt=5/6
 ability=Spend only mana produced by creatures to cast SN.
-timing=main
+timing=artifact
 oracle=Spend only mana produced by creatures to cast Myr Superion.

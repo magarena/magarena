@@ -1,9 +1,9 @@
 name=In the Web of War
-image=http://mtgimage.com/card/in%20the%20web%20of%20war.jpg
+image=http://magiccards.info/scans/en/bok/108.jpg
 value=3.806
 rarity=R
 type=Enchantment
 cost={3}{R}{R}
+ability=Whenever a creature enters the battlefield under your control, RN gets +2/+0 and gains haste until end of turn.
 timing=main
-requires_groovy_code
 oracle=Whenever a creature enters the battlefield under your control, it gets +2/+0 and gains haste until end of turn.

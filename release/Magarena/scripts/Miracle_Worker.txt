@@ -1,0 +1,11 @@
+name=Miracle Worker
+image=http://magiccards.info/scans/en/dk/86.jpg
+value=2.847
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={W}
+pt=1/1
+timing=main
+requires_groovy_code
+oracle={T}: Destroy target Aura attached to a creature you control.

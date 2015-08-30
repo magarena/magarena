@@ -1,6 +1,6 @@
 name=Naya Soulbeast
-image=http://mtgimage.com/card/naya%20soulbeast.jpg
-value=2.500
+image=http://magiccards.info/scans/en/c13/157.jpg
+value=2.283
 rarity=R
 type=Creature
 subtype=Beast
@@ -9,4 +9,4 @@ pt=0/0
 ability=Trample;\
         When you cast SN, each player reveals the top card of his or her library. SN enters the battlefield with X +1/+1 counters on it, where X is the total converted mana cost of all cards revealed this way.
 timing=main
-oracle=Trample. When you cast Naya Soulbeast, each player reveals the top card of his or her library. Naya Soulbeast enters the battlefield with X +1/+1 counters on it, where X is the total converted mana cost of all cards revealed this way.
+oracle=Trample\nWhen you cast Naya Soulbeast, each player reveals the top card of his or her library. Naya Soulbeast enters the battlefield with X +1/+1 counters on it, where X is the total converted mana cost of all cards revealed this way.

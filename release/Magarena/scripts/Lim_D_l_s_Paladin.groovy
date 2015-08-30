@@ -16,8 +16,8 @@
             if (event.isYes() && discard.isSatisfied()) {
                 game.addEvent(discard);
             } else {
-                game.doAction(new MagicSacrificeAction(event.getPermanent()));
-                game.doAction(new MagicDrawAction(event.getPlayer()));
+                game.doAction(new SacrificeAction(event.getPermanent()));
+                game.doAction(new DrawAction(event.getPlayer()));
             }
         }
     },
@@ -35,11 +35,11 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(MagicChangeStateAction.Set(
+            game.doAction(ChangeStateAction.Set(
                 event.getPermanent(),
                 MagicPermanentState.NoCombatDamage
             ));
-            game.doAction(new MagicChangeLifeAction(game.getDefendingPlayer(), -4));
+            game.doAction(new ChangeLifeAction(game.getDefendingPlayer(), -4));
         }
     }
 ]

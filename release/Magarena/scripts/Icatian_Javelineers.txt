@@ -1,5 +1,5 @@
 name=Icatian Javelineers
-image=http://mtgimage.com/card/icatian%20javelineers.jpg
+image=http://magiccards.info/scans/en/ddo/14.jpg
 value=4.326
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=SN enters the battlefield with a javelin counter on it.;\
         {T}, Remove a javelin counter from SN: SN deals 1 damage to target creature or player.
 timing=main
-oracle=Icatian Javelineers enters the battlefield with a javelin counter on it. {T}, Remove a javelin counter from Icatian Javelineers: Icatian Javelineers deals 1 damage to target creature or player.
+oracle=Icatian Javelineers enters the battlefield with a javelin counter on it.\n{T}, Remove a javelin counter from Icatian Javelineers: Icatian Javelineers deals 1 damage to target creature or player.

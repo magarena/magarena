@@ -1,10 +1,10 @@
 name=Ancient Spring
-image=http://mtgimage.com/card/ancient%20spring.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/319.jpg
+value=3.221
 rarity=C
 type=Land
 ability=SN enters the battlefield tapped.;\
         {T}: Add {U} to your mana pool.;\
         {T}, Sacrifice SN: Add {W}{B} to your mana pool.
-timing=main
-oracle=Ancient Spring enters the battlefield tapped. {T}: Add {U} to your mana pool. {T}, Sacrifice Ancient Spring: Add {W}{B} to your mana pool.
+timing=land
+oracle=Ancient Spring enters the battlefield tapped.\n{T}: Add {U} to your mana pool.\n{T}, Sacrifice Ancient Spring: Add {W}{B} to your mana pool.

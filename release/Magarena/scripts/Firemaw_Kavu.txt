@@ -1,5 +1,5 @@
 name=Firemaw Kavu
-image=http://mtgimage.com/card/firemaw%20kavu.jpg
+image=http://magiccards.info/scans/en/ts/153.jpg
 value=2.338
 removal=1
 rarity=U
@@ -11,4 +11,4 @@ ability=echo {5}{R};\
         When SN enters the battlefield, SN deals 2 damage to target creature.;\
         When SN leaves the battlefield, SN deals 4 damage to target creature.
 timing=main
-oracle=Echo {5}{R}. When Firemaw Kavu enters the battlefield, it deals 2 damage to target creature. When Firemaw Kavu leaves the battlefield, it deals 4 damage to target creature.
+oracle=Echo {5}{R}\nWhen Firemaw Kavu enters the battlefield, it deals 2 damage to target creature.\nWhen Firemaw Kavu leaves the battlefield, it deals 4 damage to target creature.

@@ -1,9 +1,9 @@
 name=Power Surge
-image=http://mtgimage.com/card/power%20surge.jpg
-value=2.500
+image=http://magiccards.info/scans/en/4e/234.jpg
+value=2.300
 rarity=R
 type=Enchantment
 cost={R}{R}
 ability=At the beginning of each player's upkeep, SN deals X damage to that player, where X is the number of untapped lands he or she controlled at the beginning of this turn.
-timing=main
+timing=enchantment
 oracle=At the beginning of each player's upkeep, Power Surge deals X damage to that player, where X is the number of untapped lands he or she controlled at the beginning of this turn.

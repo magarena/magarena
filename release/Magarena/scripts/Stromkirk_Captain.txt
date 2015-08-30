@@ -1,5 +1,5 @@
 name=Stromkirk Captain
-image=http://mtgimage.com/card/stromkirk%20captain.jpg
+image=http://magiccards.info/scans/en/dka/143.jpg
 value=3.890
 rarity=U
 type=Creature
@@ -11,4 +11,4 @@ ability=first strike;\
         other vampire creatures you control have first strike
 static=player
 timing=main
-oracle=First strike. Other Vampire creatures you control get +1/+1 and have first strike.
+oracle=First strike\nOther Vampire creatures you control get +1/+1 and have first strike.

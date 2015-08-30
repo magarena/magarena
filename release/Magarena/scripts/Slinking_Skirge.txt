@@ -1,5 +1,5 @@
 name=Slinking Skirge
-image=http://mtgimage.com/card/slinking%20skirge.jpg
+image=http://magiccards.info/scans/en/ud/71.jpg
 value=2.444
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=flying;\
         {2},Sacrifice SN: Draw a card.
 timing=main
-oracle=Flying. {2}, Sacrifice Slinking Skirge: Draw a card.
+oracle=Flying\n{2}, Sacrifice Slinking Skirge: Draw a card.

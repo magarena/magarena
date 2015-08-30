@@ -1,9 +1,9 @@
 name=Chord of Calling
-image=http://mtgimage.com/card/chord%20of%20calling.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/172.jpg
+value=3.778
 rarity=R
 type=Instant
 cost={X}{G}{G}{G}
 effect=Convoke~Search your library for a creature card with converted mana cost X or less and put it onto the battlefield. Then shuffle your library.
 timing=removal
-oracle=Convoke. Search your library for a creature card with converted mana cost X or less and put it onto the battlefield. Then shuffle your library.
+oracle=Convoke\nSearch your library for a creature card with converted mana cost X or less and put it onto the battlefield. Then shuffle your library.

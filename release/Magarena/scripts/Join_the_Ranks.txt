@@ -1,5 +1,5 @@
 name=Join the Ranks
-image=http://mtgimage.com/card/join%20the%20ranks.jpg
+image=http://magiccards.info/scans/en/wwk/9.jpg
 value=3.544
 rarity=C
 type=Instant

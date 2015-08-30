@@ -1,6 +1,6 @@
 name=Sigil of the Empty Throne
-image=http://mtgimage.com/card/sigil%20of%20the%20empty%20throne.jpg
-value=4.075
+image=http://magiccards.info/scans/en/ori/31.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{W}{W}

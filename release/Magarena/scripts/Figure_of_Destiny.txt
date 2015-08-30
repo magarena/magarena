@@ -1,5 +1,5 @@
 name=Figure of Destiny
-image=http://mtgimage.com/card/figure%20of%20destiny.jpg
+image=http://magiccards.info/scans/en/ddl/3.jpg
 value=4.500
 rarity=R
 type=Creature
@@ -8,4 +8,4 @@ cost={R/W}
 pt=1/1
 timing=main
 requires_groovy_code
-oracle={R/W}: Figure of Destiny becomes a 2/2 Kithkin Spirit. {R/W}{R/W}{R/W}: If Figure of Destiny is a Spirit, it becomes a 4/4 Kithkin Spirit Warrior. {R/W}{R/W}{R/W}{R/W}{R/W}{R/W}: If Figure of Destiny is a Warrior, it becomes an 8/8 Kithkin Spirit Warrior Avatar with flying and first strike.
+oracle={R/W}: Figure of Destiny becomes a Kithkin Spirit with base power and toughness 2/2.\n{R/W}{R/W}{R/W}: If Figure of Destiny is a Spirit, it becomes a Kithkin Spirit Warrior with base power and toughness 4/4.\n{R/W}{R/W}{R/W}{R/W}{R/W}{R/W}: If Figure of Destiny is a Warrior, it becomes a Kithkin Spirit Warrior Avatar with base power and toughness 8/8, flying, and first strike.

@@ -1,11 +1,11 @@
 name=Iceberg
-image=http://mtgimage.com/card/iceberg.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cstd/12.jpg
+value=3.070
 rarity=U
 type=Enchantment
 cost={X}{U}{U}
 ability=SN enters the battlefield with X ice counters on it.;\
         {3}: Put an ice counter on SN.;\
         Remove an ice counter from SN: Add {1} to your mana pool.
-timing=main
-oracle=Iceberg enters the battlefield with X ice counters on it. {3}: Put an ice counter on Iceberg. Remove an ice counter from Iceberg: Add {1} to your mana pool.
+timing=enchantment
+oracle=Iceberg enters the battlefield with X ice counters on it.\n{3}: Put an ice counter on Iceberg.\nRemove an ice counter from Iceberg: Add {1} to your mana pool.

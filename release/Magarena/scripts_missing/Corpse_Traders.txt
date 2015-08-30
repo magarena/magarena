@@ -1,6 +1,6 @@
 name=Corpse Traders
-image=http://mtgimage.com/card/corpse%20traders.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddm/58.jpg
+value=3.312
 rarity=U
 type=Creature
 subtype=Human,Rogue

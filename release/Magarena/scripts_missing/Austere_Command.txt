@@ -1,9 +1,9 @@
 name=Austere Command
-image=http://mtgimage.com/card/austere%20command.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cmd/8.jpg
+value=4.006
 rarity=R
 type=Sorcery
 cost={4}{W}{W}
-effect=Choose two — • Destroy all artifacts. • Destroy all enchantments. • Destroy all creatures with converted mana cost 3 or less. • Destroy all creatures with converted mana cost 4 or greater.
+effect=Choose two — (1) Destroy all artifacts. (2) Destroy all enchantments. (3) Destroy all creatures with converted mana cost 3 or less. (4) Destroy all creatures with converted mana cost 4 or greater.
 timing=main
-oracle=Choose two — • Destroy all artifacts. • Destroy all enchantments. • Destroy all creatures with converted mana cost 3 or less. • Destroy all creatures with converted mana cost 4 or greater.
+oracle=Choose two —\n• Destroy all artifacts.\n• Destroy all enchantments.\n• Destroy all creatures with converted mana cost 3 or less.\n• Destroy all creatures with converted mana cost 4 or greater.

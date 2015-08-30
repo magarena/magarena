@@ -1,5 +1,5 @@
 name=Infested Roothold
-image=http://mtgimage.com/card/infested%20roothold.jpg
+image=http://magiccards.info/scans/en/ds/76.jpg
 value=2.855
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=0/3
 ability=defender;protection from artifacts;\
         Whenever an opponent casts an artifact spell, you may put a 1/1 green Insect creature token onto the battlefield.
 timing=main
-oracle=Defender. Protection from artifacts. Whenever an opponent casts an artifact spell, you may put a 1/1 green Insect creature token onto the battlefield.
+oracle=Defender\nProtection from artifacts\nWhenever an opponent casts an artifact spell, you may put a 1/1 green Insect creature token onto the battlefield.

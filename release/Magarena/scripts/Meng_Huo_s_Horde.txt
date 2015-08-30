@@ -1,5 +1,5 @@
 name=Meng Huo's Horde
-image=http://mtgimage.com/card/meng%20huo%27s%20horde.jpg
+image=http://magiccards.info/scans/en/me3/129.jpg
 value=2.109
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Human,Soldier
 cost={4}{G}
 pt=4/5
 timing=main
+oracle=NONE

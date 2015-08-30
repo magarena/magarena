@@ -1,12 +1,13 @@
 name=Lotleth Troll
-image=http://mtgimage.com/card/lotleth%20troll.jpg
+image=http://magiccards.info/scans/en/rtr/177.jpg
 value=4.027
 rarity=R
 type=Creature
 subtype=Zombie,Troll
 cost={B}{G}
 pt=2/1
-ability=Discard a creature card: Put a +1/+1 counter on SN.;\
+ability=Trample.;\
+        Discard a creature card: Put a +1/+1 counter on SN.;\
         {B}: Regenerate SN.
 timing=main
-oracle=Trample. Discard a creature card: Put a +1/+1 counter on Lotleth Troll. {B}: Regenerate Lotleth Troll.
+oracle=Trample\nDiscard a creature card: Put a +1/+1 counter on Lotleth Troll.\n{B}: Regenerate Lotleth Troll.

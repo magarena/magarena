@@ -16,7 +16,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 MagicTapTargetPicker.Tap,
                 this,
                 "Tap target creature\$. Gain control of that creature instead " + 
@@ -32,7 +32,7 @@
             final MagicPlayer player = source.getController();
             if (player.controlsPermanent(throne) && player.controlsPermanent(scepter)){
                 event.processTargetPermanent(game, {
-                    game.doAction(new MagicGainControlAction(
+                    game.doAction(new GainControlAction(
                         player,
                         it
                     ));

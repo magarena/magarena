@@ -2,12 +2,13 @@ package magic.model.phase;
 
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
+import magic.model.MagicSource;
 import magic.model.phase.MagicPhaseType;
-import magic.model.action.MagicChangeExtraTurnsAction;
-import magic.model.action.MagicCleanupPlayerAction;
-import magic.model.action.MagicCleanupTurnStaticsAction;
-import magic.model.action.MagicCleanupTurnTriggersAction;
-import magic.model.action.MagicPayDelayedCostsAction;
+import magic.model.action.ChangeExtraTurnsAction;
+import magic.model.action.CleanupPlayerAction;
+import magic.model.action.CleanupTurnStaticsAction;
+import magic.model.action.CleanupTurnTriggersAction;
+import magic.model.action.PayDelayedCostsAction;
 import magic.model.event.MagicDiscardEvent;
 import magic.model.event.MagicEvent;
 
@@ -28,25 +29,26 @@ public class MagicCleanupPhase extends MagicPhase {
         // discard excess cards
         if (turnPlayer.getNumExcessCards() > 0) {
             final int amount = turnPlayer.getNumExcessCards();
-            game.addEvent(new MagicDiscardEvent(MagicEvent.NO_SOURCE,turnPlayer,amount));
+            game.addEvent(new MagicDiscardEvent(MagicSource.NONE,turnPlayer,amount));
         }
         // remove until EOT triggers/static, clean up player and permanents
-        game.doAction(new MagicCleanupTurnTriggersAction());
+        game.doAction(new CleanupTurnTriggersAction());
         for (final MagicPlayer player : game.getPlayers()) {
-            game.doAction(new MagicCleanupPlayerAction(player));
+            game.doAction(new CleanupPlayerAction(player));
         }
-        game.doAction(new MagicCleanupTurnStaticsAction());
-        game.checkState();
+        game.doAction(new CleanupTurnStaticsAction());
+        game.update();
+        game.checkStatePutTriggers();
     }
 
     private static void nextTurn(final MagicGame game) {
         final MagicPlayer turnPlayer=game.getTurnPlayer();
         final MagicPlayer opponentPlayer=game.getTurnPlayer().getOpponent();
         if (!turnPlayer.getBuilderCost().isEmpty()) {
-            game.doAction(new MagicPayDelayedCostsAction(turnPlayer));
+            game.doAction(new PayDelayedCostsAction(turnPlayer));
         }
         if (turnPlayer.getExtraTurns()>0) {
-            game.doAction(new MagicChangeExtraTurnsAction(turnPlayer,-1));
+            game.doAction(new ChangeExtraTurnsAction(turnPlayer,-1));
             final String playerName = turnPlayer.getName();
             game.logMessage(turnPlayer,playerName + " takes an extra turn.");
         } else {
@@ -56,11 +58,11 @@ public class MagicCleanupPhase extends MagicPhase {
         game.resetLandsPlayed();
         game.resetMaxLands();
         game.setCreatureDiedThisTurn(false);
-        game.skipTurnTill(MagicPhaseType.Mulligan);
-        turnPlayer.setSpellsCastLastTurn(turnPlayer.getSpellsCast());
-        opponentPlayer.setSpellsCastLastTurn(opponentPlayer.getSpellsCast());
-        turnPlayer.setSpellsCast(0);
-        opponentPlayer.setSpellsCast(0);
+        game.clearSkipTurnTill();
+        for (final MagicPlayer player : game.getPlayers()) {
+            player.setSpellsCastLastTurn(player.getSpellsCast());
+            player.setSpellsCast(0);
+        }
     }
 
     @Override

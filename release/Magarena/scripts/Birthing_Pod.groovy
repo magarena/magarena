@@ -2,7 +2,7 @@ def action = {
     final MagicGame game, final MagicEvent event ->
     final int cmc = event.getRefInt();
     final MagicTargetFilter filter = new MagicCMCCardFilter(
-        MagicTargetFilterFactory.CREATURE_CARD_FROM_LIBRARY,
+        CREATURE_CARD_FROM_LIBRARY,
         Operator.EQUAL,
         cmc
     );
@@ -43,7 +43,7 @@ def event = {
             return [
                 new MagicPayManaCostEvent(source, "{1}{G/P}"),
                 new MagicTapEvent(source), 
-                new MagicSacrificePermanentEvent(source, MagicTargetChoice.SACRIFICE_CREATURE),
+                new MagicSacrificePermanentEvent(source, SACRIFICE_CREATURE),
             ];
         }
 
@@ -64,7 +64,7 @@ def event = {
                 new MagicPayManaCostEvent(source, "{1}"),
                 new MagicPayLifeEvent(source, 2),
                 new MagicTapEvent(source), 
-                new MagicSacrificePermanentEvent(source, MagicTargetChoice.SACRIFICE_CREATURE),
+                new MagicSacrificePermanentEvent(source, SACRIFICE_CREATURE),
             ];
         }
     

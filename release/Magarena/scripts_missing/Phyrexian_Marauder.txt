@@ -1,6 +1,6 @@
 name=Phyrexian Marauder
-image=http://mtgimage.com/card/phyrexian%20marauder.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vi/151.jpg
+value=1.500
 rarity=R
 type=Artifact,Creature
 subtype=Construct
@@ -9,5 +9,5 @@ pt=0/0
 ability=SN enters the battlefield with X +1/+1 counters on it.;\
         SN can't block.;\
         SN can't attack unless you pay {1} for each +1/+1 counter on it.
-timing=main
-oracle=Phyrexian Marauder enters the battlefield with X +1/+1 counters on it. Phyrexian Marauder can't block. Phyrexian Marauder can't attack unless you pay {1} for each +1/+1 counter on it.
+timing=artifact
+oracle=Phyrexian Marauder enters the battlefield with X +1/+1 counters on it.\nPhyrexian Marauder can't block.\nPhyrexian Marauder can't attack unless you pay {1} for each +1/+1 counter on it.

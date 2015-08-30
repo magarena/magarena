@@ -1,5 +1,5 @@
 name=Blazing Archon
-image=http://mtgimage.com/card/blazing%20archon.jpg
+image=http://magiccards.info/scans/en/rav/4.jpg
 value=4.367
 rarity=R
 type=Creature
@@ -8,4 +8,4 @@ cost={6}{W}{W}{W}
 pt=5/6
 ability=flying;creatures your opponents control can't attack.
 timing=main
-oracle=Flying. Creatures can't attack you.
+oracle=Flying\nCreatures can't attack you.

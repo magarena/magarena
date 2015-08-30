@@ -1,5 +1,5 @@
 name=Desecrated Earth
-image=http://mtgimage.com/card/desecrated%20earth.jpg
+image=http://magiccards.info/scans/en/zen/86.jpg
 value=3.076
 rarity=C
 type=Sorcery

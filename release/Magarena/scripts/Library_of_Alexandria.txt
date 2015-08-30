@@ -1,9 +1,9 @@
 name=Library of Alexandria
-image=http://mtgimage.com/card/library%20of%20alexandria.jpg
+image=http://magiccards.info/scans/en/vma/303.jpg
 value=4.500
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\
         {T}: Draw a card. Activate this ability only if you have exactly seven cards in hand.
 timing=main
-oracle={T}: Add {1} to your mana pool. {T}: Draw a card. Activate this ability only if you have exactly seven cards in hand.
+oracle={T}: Add {1} to your mana pool.\n{T}: Draw a card. Activate this ability only if you have exactly seven cards in hand.

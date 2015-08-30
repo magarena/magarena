@@ -1,8 +1,8 @@
 name=Darkwater Catacombs
-image=http://mtgimage.com/card/darkwater%20catacombs.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/319.jpg
+value=3.982
 rarity=R
 type=Land
 ability={1}, {T}: Add {U}{B} to your mana pool.
-timing=main
+timing=land
 oracle={1}, {T}: Add {U}{B} to your mana pool.

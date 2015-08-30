@@ -1,5 +1,5 @@
 name=Grixis Slavedriver
-image=http://mtgimage.com/card/grixis%20slavedriver.jpg
+image=http://magiccards.info/scans/en/cfx/46.jpg
 value=3.032
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=When SN leaves the battlefield, put a 2/2 black Zombie creature token onto the battlefield.;\
         Unearth {3}{B}
 timing=main
-oracle=When Grixis Slavedriver leaves the battlefield, put a 2/2 black Zombie creature token onto the battlefield. Unearth {3}{B}
+oracle=When Grixis Slavedriver leaves the battlefield, put a 2/2 black Zombie creature token onto the battlefield.\nUnearth {3}{B}

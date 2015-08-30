@@ -1,0 +1,12 @@
+name=Cunning Breezedancer
+image=http://magiccards.info/scans/en/dtk/215.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dragon
+cost={4}{W}{U}
+pt=4/4
+ability=Flying;\
+        Whenever you cast a noncreature spell, SN gets +2/+2 until end of turn.
+timing=main
+oracle=Flying\nWhenever you cast a noncreature spell, Cunning Breezedancer gets +2/+2 until end of turn.

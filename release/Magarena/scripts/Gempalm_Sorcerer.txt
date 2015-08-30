@@ -1,5 +1,5 @@
 name=Gempalm Sorcerer
-image=http://mtgimage.com/card/gempalm%20sorcerer.jpg
+image=http://magiccards.info/scans/en/le/39.jpg
 value=1.900
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Cycling {2}{U};\
         When you cycle SN, Wizard creatures gain flying until end of turn.
 timing=main
-oracle=Cycling {2}{U}. When you cycle Gempalm Sorcerer, Wizard creatures gain flying until end of turn.
+oracle=Cycling {2}{U}\nWhen you cycle Gempalm Sorcerer, Wizard creatures gain flying until end of turn.

@@ -1,5 +1,5 @@
 name=Enormous Baloth
-image=http://mtgimage.com/card/enormous%20baloth.jpg
+image=http://magiccards.info/scans/en/m10/180.jpg
 value=2.939
 rarity=U
 type=Creature
@@ -7,3 +7,4 @@ subtype=Beast
 cost={6}{G}
 pt=7/7
 timing=main
+oracle=NONE

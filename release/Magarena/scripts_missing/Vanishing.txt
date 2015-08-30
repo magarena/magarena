@@ -1,11 +1,11 @@
 name=Vanishing
-image=http://mtgimage.com/card/vanishing.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vi/48.jpg
+value=3.333
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={U}
 ability=Enchant creature;\
         {U}{U}: Enchanted creature phases out.
-timing=main
-oracle=Enchant creature. {U}{U}: Enchanted creature phases out.
+timing=aura
+oracle=Enchant creature\n{U}{U}: Enchanted creature phases out.

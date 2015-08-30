@@ -1,10 +1,9 @@
 name=Malicious Affliction
-image=http://mtgimage.com/card/malicious%20affliction.jpg
+image=http://magiccards.info/scans/en/c14/25.jpg
 value=2.500
 rarity=R
 type=Instant
 cost={B}{B}
-effect=When you cast SN, if a creature died this turn, you may copy SN and may choose a new target for the copy.;\
-        Destroy target nonblack creaure.
+effect=When you cast SN, if a creature died this turn, you may copy SN and may choose a new target for the copy.~Destroy target nonblack creature.
 timing=removal
-oracle=Morbid — When you cast Malicious Affliction, if a creature died this turn, you may copy Malicious Affliction and may choose a new target for the copy. Destroy target nonblack creature.
+oracle=Morbid — When you cast Malicious Affliction, if a creature died this turn, you may copy Malicious Affliction and may choose a new target for the copy.\nDestroy target nonblack creature.

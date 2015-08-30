@@ -1,11 +1,11 @@
 name=Worms of the Earth
-image=http://mtgimage.com/card/worms%20of%20the%20earth.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dk/18.jpg
+value=3.117
 rarity=R
 type=Enchantment
 cost={2}{B}{B}{B}
 ability=Players can't play lands.;\
         Lands can't enter the battlefield.;\
         At the beginning of each upkeep, any player may sacrifice two lands or have SN deal 5 damage to him or her. If a player does either, destroy SN.
-timing=main
-oracle=Players can't play lands. Lands can't enter the battlefield. At the beginning of each upkeep, any player may sacrifice two lands or have Worms of the Earth deal 5 damage to him or her. If a player does either, destroy Worms of the Earth.
+timing=enchantment
+oracle=Players can't play lands.\nLands can't enter the battlefield.\nAt the beginning of each upkeep, any player may sacrifice two lands or have Worms of the Earth deal 5 damage to him or her. If a player does either, destroy Worms of the Earth.

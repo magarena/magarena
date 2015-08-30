@@ -1,13 +1,15 @@
 name=Moltensteel Dragon
-image=http://mtgimage.com/card/moltensteel%20dragon.jpg
+image=http://magiccards.info/scans/en/nph/88.jpg
 value=4.268
 rarity=R
 type=Artifact,Creature
 subtype=Dragon
 cost={4}{R/P}{R/P}
 pt=4/4
-ability=Flying;\
+ability=alt cost {4}{R/P}, Pay 2 life named Pay 2 life;\
+        alt cost {4}, Pay 4 life named Pay 4 life;\
+        Flying;\
         {R/P}: SN gets +1/+0 until end of turn.;\
         Pay 2 life: SN gets +1/+0 until end of turn.
 timing=main
-oracle=Flying. {R/P}: Moltensteel Dragon gets +1/+0 until end of turn.
+oracle=Flying\n{R/P}: Moltensteel Dragon gets +1/+0 until end of turn.

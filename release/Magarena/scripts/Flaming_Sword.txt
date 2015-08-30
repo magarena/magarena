@@ -1,5 +1,5 @@
 name=Flaming Sword
-image=http://mtgimage.com/card/flaming%20sword.jpg
+image=http://magiccards.info/scans/en/mm/190.jpg
 value=3.537
 rarity=C
 type=Enchantment
@@ -9,4 +9,4 @@ ability=Flash;\
         Enchanted creature gets +1/+0 and has first strike.
 timing=pumpflash
 enchant=pump,pos creature
-oracle=Flash. Enchant creature. Enchanted creature gets +1/+0 and has first strike.
+oracle=Flash\nEnchant creature\nEnchanted creature gets +1/+0 and has first strike.

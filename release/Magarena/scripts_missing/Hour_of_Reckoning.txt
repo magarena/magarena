@@ -1,9 +1,9 @@
 name=Hour of Reckoning
-image=http://mtgimage.com/card/hour%20of%20reckoning.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cmd/15.jpg
+value=3.671
 rarity=R
 type=Sorcery
 cost={4}{W}{W}{W}
 effect=Convoke~Destroy all nontoken creatures.
 timing=main
-oracle=Convoke. Destroy all nontoken creatures.
+oracle=Convoke\nDestroy all nontoken creatures.

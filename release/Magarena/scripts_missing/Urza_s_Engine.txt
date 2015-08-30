@@ -1,6 +1,6 @@
 name=Urza's Engine
-image=http://mtgimage.com/card/urza%27s%20engine.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ai/180.jpg
+value=2.427
 rarity=U
 type=Artifact,Creature
 subtype=Juggernaut
@@ -9,5 +9,5 @@ pt=1/5
 ability=Trample;\
         {3}: SN gains banding until end of turn.;\
         {3}: Attacking creatures banded with SN gain trample until end of turn.
-timing=main
-oracle=Trample. {3}: Urza's Engine gains banding until end of turn. {3}: Attacking creatures banded with Urza's Engine gain trample until end of turn.
+timing=artifact
+oracle=Trample\n{3}: Urza's Engine gains banding until end of turn.\n{3}: Attacking creatures banded with Urza's Engine gain trample until end of turn.

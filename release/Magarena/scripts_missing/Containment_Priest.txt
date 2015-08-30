@@ -1,5 +1,5 @@
 name=Containment Priest
-image=http://mtgimage.com/card/containment%20priest.jpg
+image=http://magiccards.info/scans/en/c14/5.jpg
 value=2.500
 rarity=R
 type=Creature
@@ -8,5 +8,5 @@ cost={1}{W}
 pt=2/2
 ability=Flash;\
         If a nontoken creature would enter the battlefield and it wasn't cast, exile it instead.
-timing=flash
-oracle=Flash. If a nontoken creature would enter the battlefield and it wasn't cast, exile it instead.
+timing=main
+oracle=Flash\nIf a nontoken creature would enter the battlefield and it wasn't cast, exile it instead.

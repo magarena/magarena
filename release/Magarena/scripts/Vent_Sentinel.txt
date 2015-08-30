@@ -1,12 +1,12 @@
 name=Vent Sentinel
-image=http://mtgimage.com/card/vent%20sentinel.jpg
+image=http://magiccards.info/scans/en/cns/156.jpg
 value=3.500
 rarity=C
 type=Creature
 subtype=Elemental
 cost={3}{R}
 pt=2/4
-ability=Defender
+ability=Defender;\
+        {1}{R}, {T}: SN deals damage to target player equal to the number of creatures with defender you control.
 timing=main
-requires_groovy_code
-oracle=Defender. {1}{R}, {T}: Vent Sentinel deals damage to target player equal to the number of creatures with defender you control.
+oracle=Defender\n{1}{R}, {T}: Vent Sentinel deals damage to target player equal to the number of creatures with defender you control.

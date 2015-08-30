@@ -1,9 +1,9 @@
 name=Dredge
-image=http://mtgimage.com/card/dredge.jpg
+image=http://magiccards.info/scans/en/in/103.jpg
 value=1.920
 rarity=U
 type=Instant
 cost={B}
 effect=Sacrifice a creature or land.~Draw a card.
 timing=draw
-oracle=Sacrifice a creature or land. Draw a card.
+oracle=Sacrifice a creature or land.\nDraw a card.

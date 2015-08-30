@@ -1,5 +1,5 @@
 name=Gruesome Deformity
-image=http://mtgimage.com/card/gruesome%20deformity.jpg
+image=http://magiccards.info/scans/en/isd/103.jpg
 value=2.355
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={B}
 ability=Enchanted creature has intimidate.
 timing=aura
 enchant=unblockable,pos creature
-oracle=Enchant creature. Enchanted creature has intimidate.
+oracle=Enchant creature\nEnchanted creature has intimidate.

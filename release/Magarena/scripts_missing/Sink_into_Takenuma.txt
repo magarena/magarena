@@ -1,6 +1,6 @@
 name=Sink into Takenuma
-image=http://mtgimage.com/card/sink%20into%20takenuma.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sok/89.jpg
+value=1.708
 rarity=C
 type=Sorcery
 subtype=Arcane

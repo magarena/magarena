@@ -1,10 +1,10 @@
 name=Ground Assault
-image=http://mtgimage.com/card/ground%20assault.jpg
+image=http://magiccards.info/scans/en/gtc/168.jpg
 value=3.200
 removal=3
 rarity=U
 type=Sorcery
 cost={R}{G}
+effect=SN deals damage to target creature equal to the number of lands you control.
 timing=removal
-requires_groovy_code
 oracle=Ground Assault deals damage to target creature equal to the number of lands you control.

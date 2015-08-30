@@ -1,6 +1,6 @@
 name=Singe
-image=http://mtgimage.com/card/singe.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ps/71.jpg
+value=3.438
 rarity=C
 type=Instant
 cost={R}

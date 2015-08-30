@@ -1,0 +1,9 @@
+name=Light of Sanction
+image=http://magiccards.info/scans/en/rav/24.jpg
+value=3.010
+rarity=R
+type=Enchantment
+cost={1}{W}{W}
+timing=enchantment
+requires_groovy_code
+oracle=Prevent all damage that would be dealt to creatures you control by sources you control.

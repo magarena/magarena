@@ -1,0 +1,9 @@
+name=Crosis's Charm
+image=http://magiccards.info/scans/en/c13/181.jpg
+value=4.029
+rarity=U
+type=Instant
+cost={U}{B}{R}
+effect=Choose one — (1) Return target permanent to its owner's hand. (2) Destroy target nonblack creature. It can't be regenerated. (3) Destroy target artifact.
+timing=removal
+oracle=Choose one —\n• Return target permanent to its owner's hand.\n• Destroy target nonblack creature. It can't be regenerated.\n• Destroy target artifact.

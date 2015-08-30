@@ -1,5 +1,5 @@
 name=Spiteflame Witch
-image=http://mtgimage.com/card/spiteflame%20witch.jpg
+image=http://magiccards.info/scans/en/shm/197.jpg
 value=3.108
 rarity=U
 type=Creature

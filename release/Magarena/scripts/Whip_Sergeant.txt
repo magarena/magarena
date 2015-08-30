@@ -1,5 +1,5 @@
 name=Whip Sergeant
-image=http://mtgimage.com/card/whip%20sergeant.jpg
+image=http://magiccards.info/scans/en/9e/227.jpg
 value=3.000
 rarity=U
 type=Creature

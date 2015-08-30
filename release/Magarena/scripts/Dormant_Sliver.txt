@@ -1,5 +1,5 @@
 name=Dormant Sliver
-image=http://mtgimage.com/card/dormant%20sliver.jpg
+image=http://magiccards.info/scans/en/pc/156.jpg
 value=3.421
 rarity=U
 type=Creature
@@ -10,4 +10,4 @@ ability=all sliver creatures have defender;\
         all sliver creatures have "When SN enters the battlefield, draw a card."
 static=all
 timing=main
-oracle=All Sliver creatures have defender. All Slivers have "When this permanent enters the battlefield, draw a card."
+oracle=All Sliver creatures have defender.\nAll Slivers have "When this permanent enters the battlefield, draw a card."

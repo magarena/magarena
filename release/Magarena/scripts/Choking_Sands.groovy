@@ -1,4 +1,4 @@
-def choice = MagicTargetChoice.Negative("target non-Swamp land");
+def choice = Negative("target non-Swamp land");
 
 [
     new MagicSpellCardEvent() {
@@ -15,10 +15,13 @@ def choice = MagicTargetChoice.Negative("target non-Swamp land");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicDestroyAction(it));
-                if (!it.hasType(MagicType.Basic)) {
-                    final MagicDamage damage=new MagicDamage(event.getSource(),it.getController(),2);
-                    game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new DestroyAction(it));
+                if (it.isBasic() == false) {
+                    game.doAction(new DealDamageAction(
+                        event.getSource(),
+                        it.getController(),
+                        2
+                    ));
                 }
             });
         }

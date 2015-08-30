@@ -1,5 +1,5 @@
 name=Cast into Darkness
-image=http://mtgimage.com/card/cast%20into%20darkness.jpg
+image=http://magiccards.info/scans/en/jou/63.jpg
 value=1.950
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={1}{B}
 ability=Enchanted creature gets -2/-0 and can't block.
 timing=main
 enchant=can't block,neg creature
-oracle=Enchant creature. Enchanted creature gets -2/-0 and can't block.
+oracle=Enchant creature\nEnchanted creature gets -2/-0 and can't block.

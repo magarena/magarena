@@ -1,6 +1,6 @@
 name=Early Frost
-image=http://mtgimage.com/card/early%20frost.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5dn/29.jpg
+value=3.262
 rarity=C
 type=Instant
 cost={1}{U}

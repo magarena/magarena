@@ -1,5 +1,5 @@
 name=Fugitive Wizard
-image=http://mtgimage.com/card/fugitive%20wizard.jpg
+image=http://magiccards.info/scans/en/m15/56.jpg
 value=0.591
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Human,Wizard
 cost={U}
 pt=1/1
 timing=main
+oracle=NONE

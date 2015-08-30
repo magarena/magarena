@@ -1,6 +1,6 @@
 name=Haunting Hymn
-image=http://mtgimage.com/card/haunting%20hymn.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ts/112.jpg
+value=2.414
 rarity=U
 type=Instant
 cost={4}{B}{B}

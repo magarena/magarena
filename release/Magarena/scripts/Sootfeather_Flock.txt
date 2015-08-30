@@ -1,5 +1,5 @@
 name=Sootfeather Flock
-image=http://mtgimage.com/card/sootfeather%20flock.jpg
+image=http://magiccards.info/scans/en/le/82.jpg
 value=1.660
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/2
 ability=Flying;\
         Morph {3}{B}
 timing=main
-oracle=Flying. Morph {3}{B}
+oracle=Flying\nMorph {3}{B}

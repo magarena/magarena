@@ -1,6 +1,6 @@
 name=Wild Might
-image=http://mtgimage.com/card/wild%20might.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pr/134.jpg
+value=3.600
 rarity=C
 type=Instant
 cost={1}{G}

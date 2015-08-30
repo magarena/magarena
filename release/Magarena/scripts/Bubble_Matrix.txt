@@ -1,9 +1,9 @@
 name=Bubble Matrix
-image=http://mtgimage.com/card/bubble%20matrix.jpg
+image=http://magiccards.info/scans/en/wl/147.jpg
 value=4.297
 rarity=R
 type=Artifact
 cost={4}
+ability=Prevent all damage that would be dealt to creatures.
 timing=main
-requires_groovy_code
 oracle=Prevent all damage that would be dealt to creatures.

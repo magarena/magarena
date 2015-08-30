@@ -1,11 +1,11 @@
 name=Brain Maggot
-image=http://mtgimage.com/card/brain%20maggot.jpg
-value=2.500
+image=http://magiccards.info/scans/en/jou/62.jpg
+value=3.841
 rarity=U
 type=Enchantment,Creature
 subtype=Insect
 cost={1}{B}
 pt=1/1
 ability=When SN enters the battlefield, target opponent reveals his or her hand and you choose a nonland card from it. Exile that card until SN leaves the battlefield.
-timing=main
+timing=enchantment
 oracle=When Brain Maggot enters the battlefield, target opponent reveals his or her hand and you choose a nonland card from it. Exile that card until Brain Maggot leaves the battlefield.

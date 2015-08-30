@@ -1,5 +1,5 @@
 name=Serra's Boon
-image=http://mtgimage.com/card/serra%27s%20boon.jpg
+image=http://magiccards.info/scans/en/dvd/18.jpg
 value=2.485
 rarity=U
 type=Enchantment
@@ -8,4 +8,4 @@ cost={2}{W}
 enchant=pump,creature
 timing=aura
 requires_groovy_code
-oracle=Enchant creature. Enchanted creature gets +1/+2 as long as it's white. Otherwise, it gets -2/-1.
+oracle=Enchant creature\nEnchanted creature gets +1/+2 as long as it's white. Otherwise, it gets -2/-1.

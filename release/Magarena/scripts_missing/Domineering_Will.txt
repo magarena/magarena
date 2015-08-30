@@ -1,9 +1,9 @@
 name=Domineering Will
-image=http://mtgimage.com/card/domineering%20will.jpg
+image=http://magiccards.info/scans/en/c14/13.jpg
 value=2.500
 rarity=R
 type=Instant
 cost={3}{U}
 effect=Target player gains control of up to three target nonattacking creatures until end of turn. Untap those creatures. They block this turn if able.
-timing=attack
+timing=removal
 oracle=Target player gains control of up to three target nonattacking creatures until end of turn. Untap those creatures. They block this turn if able.

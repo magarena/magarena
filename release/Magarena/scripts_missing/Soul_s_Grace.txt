@@ -1,9 +1,0 @@
-name=Soul's Grace
-image=http://mtgimage.com/card/soul%27s%20grace.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={1}{W}
-effect=You gain life equal to target creature's power.
-timing=removal
-oracle=You gain life equal to target creature's power.

@@ -1,5 +1,5 @@
 name=Elder Land Wurm
-image=http://mtgimage.com/card/elder%20land%20wurm.jpg
+image=http://magiccards.info/scans/en/med/11.jpg
 value=1.959
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=5/5
 ability=defender;trample
 timing=main
 requires_groovy_code
-oracle=Defender, trample. When Elder Land Wurm blocks, it loses defender.
+oracle=Defender, trample\nWhen Elder Land Wurm blocks, it loses defender.

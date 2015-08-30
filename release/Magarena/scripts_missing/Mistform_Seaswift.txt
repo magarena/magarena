@@ -1,6 +1,6 @@
 name=Mistform Seaswift
-image=http://mtgimage.com/card/mistform%20seaswift.jpg
-value=2.500
+image=http://magiccards.info/scans/en/le/45.jpg
+value=2.540
 rarity=C
 type=Creature
 subtype=Illusion
@@ -10,4 +10,4 @@ ability=Flying;\
         {1}: SN becomes the creature type of your choice until end of turn.;\
         Morph {1}{U}
 timing=main
-oracle=Flying. {1}: Mistform Seaswift becomes the creature type of your choice until end of turn. Morph {1}{U}
+oracle=Flying\n{1}: Mistform Seaswift becomes the creature type of your choice until end of turn.\nMorph {1}{U}

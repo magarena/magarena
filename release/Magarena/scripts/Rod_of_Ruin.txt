@@ -1,5 +1,5 @@
 name=Rod of Ruin
-image=http://mtgimage.com/card/rod%20of%20ruin.jpg
+image=http://magiccards.info/scans/en/m14/217.jpg
 value=1.406
 rarity=U
 type=Artifact

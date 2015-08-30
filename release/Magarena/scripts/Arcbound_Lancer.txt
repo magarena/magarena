@@ -1,11 +1,12 @@
 name=Arcbound Lancer
-image=http://mtgimage.com/card/arcbound%20lancer.jpg
+image=http://magiccards.info/scans/en/ds/98.jpg
 value=2.654
 rarity=U
 type=Artifact,Creature
 subtype=Beast
 cost={7}
 pt=0/0
-ability=first strike;modular 4
+ability=First strike;\
+        Modular 4
 timing=main
-oracle=First strike. Modular 4
+oracle=First strike\nModular 4

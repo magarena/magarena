@@ -1,6 +1,6 @@
 name=Vine Kami
-image=http://mtgimage.com/card/vine%20kami.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/249.jpg
+value=2.160
 rarity=C
 type=Creature
 subtype=Spirit
@@ -9,4 +9,4 @@ pt=4/4
 ability=SN can't be blocked except by two or more creatures.;\
         Soulshift 6
 timing=main
-oracle=Vine Kami can't be blocked except by two or more creatures. Soulshift 6
+oracle=Vine Kami can't be blocked except by two or more creatures.\nSoulshift 6

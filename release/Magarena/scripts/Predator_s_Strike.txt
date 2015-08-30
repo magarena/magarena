@@ -1,5 +1,5 @@
 name=Predator's Strike
-image=http://mtgimage.com/card/predator's%20strike.jpg
+image=http://magiccards.info/scans/en/mi/128.jpg
 value=3.964
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Deepwood Drummer
-image=http://mtgimage.com/card/deepwood%20drummer.jpg
+image=http://magiccards.info/scans/en/mm/239.jpg
 value=2.862
 rarity=C
 type=Creature

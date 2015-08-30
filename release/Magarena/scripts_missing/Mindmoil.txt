@@ -1,9 +1,9 @@
 name=Mindmoil
-image=http://mtgimage.com/card/mindmoil.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rav/135.jpg
+value=3.974
 rarity=R
 type=Enchantment
 cost={4}{R}
-ability=Whenever you cast a spell, put the cards in your hand on the bottom of your library in any order, then draw that many cards.
-timing=main
+timing=enchantment
+requires_groovy_code
 oracle=Whenever you cast a spell, put the cards in your hand on the bottom of your library in any order, then draw that many cards.

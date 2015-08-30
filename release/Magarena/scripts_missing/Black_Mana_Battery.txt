@@ -1,10 +1,10 @@
 name=Black Mana Battery
-image=http://mtgimage.com/card/black%20mana%20battery.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/4e/316.jpg
+value=2.940
+rarity=R
 type=Artifact
 cost={4}
 ability={2}, {T}: Put a charge counter on SN.;\
         {T}, Remove any number of charge counters from SN: Add {B} to your mana pool, then add an additional {B} to your mana pool for each charge counter removed this way.
-timing=main
-oracle={2}, {T}: Put a charge counter on Black Mana Battery. {T}, Remove any number of charge counters from Black Mana Battery: Add {B} to your mana pool, then add an additional {B} to your mana pool for each charge counter removed this way.
+timing=artifact
+oracle={2}, {T}: Put a charge counter on Black Mana Battery.\n{T}, Remove any number of charge counters from Black Mana Battery: Add {B} to your mana pool, then add an additional {B} to your mana pool for each charge counter removed this way.

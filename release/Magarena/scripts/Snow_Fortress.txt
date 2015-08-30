@@ -1,0 +1,14 @@
+name=Snow Fortress
+image=http://magiccards.info/scans/en/me2/220.jpg
+value=3.062
+rarity=U
+type=Artifact,Creature
+subtype=Wall
+cost={5}
+pt=0/4
+ability=Defender;\
+        {1}: SN gets +1/+0 until end of turn.;\
+        {1}: SN gets +0/+1 until end of turn.
+timing=artifact
+requires_groovy_code
+oracle=Defender\n{1}: Snow Fortress gets +1/+0 until end of turn.\n{1}: Snow Fortress gets +0/+1 until end of turn.\n{3}: Snow Fortress deals 1 damage to target creature without flying that's attacking you.

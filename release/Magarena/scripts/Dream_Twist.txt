@@ -1,5 +1,5 @@
 name=Dream Twist
-image=http://mtgimage.com/card/dream%20twist.jpg
+image=http://magiccards.info/scans/en/isd/54.jpg
 value=3.562
 rarity=C
 type=Instant
@@ -7,4 +7,4 @@ cost={U}
 effect=Target player puts the top three cards of his or her library into his or her graveyard.
 ability=Flashback {1}{U}
 timing=removal
-oracle=Target player puts the top three cards of his or her library into his or her graveyard. Flashback {1}{U}
+oracle=Target player puts the top three cards of his or her library into his or her graveyard.\nFlashback {1}{U}

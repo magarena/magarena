@@ -1,9 +1,9 @@
 name=Savage Surge
-image=http://mtgimage.com/card/savage%20surge.jpg
+image=http://magiccards.info/scans/en/ths/176.jpg
 value=3.276
 rarity=C
 type=Instant
 cost={1}{G}
+effect=Target creature gets +2/+2 until end of turn.~Untap *that creature*.
 timing=pump
-requires_groovy_code
 oracle=Target creature gets +2/+2 until end of turn. Untap that creature.

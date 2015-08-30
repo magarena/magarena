@@ -1,0 +1,9 @@
+name=Winter Sky
+image=http://magiccards.info/scans/en/hl/100.jpg
+value=2.098
+rarity=R
+type=Sorcery
+cost={R}
+effect=Flip a coin. If you win the flip, SN deals 1 damage to each creature and each player. If you lose the flip, each player draws a card.
+timing=main
+oracle=Flip a coin. If you win the flip, Winter Sky deals 1 damage to each creature and each player. If you lose the flip, each player draws a card.

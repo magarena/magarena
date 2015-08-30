@@ -1,9 +1,0 @@
-name=Thawing Glaciers
-image=http://mtgimage.com/card/thawing%20glaciers.jpg
-value=2.500
-rarity=R
-type=Land
-ability=SN enters the battlefield tapped.;\
-        {1}, {T}: Search your library for a basic land card, put that card onto the battlefield tapped, then shuffle your library. Return SN to its owner's hand at the beginning of the next cleanup step.
-timing=main
-oracle=Thawing Glaciers enters the battlefield tapped. {1}, {T}: Search your library for a basic land card, put that card onto the battlefield tapped, then shuffle your library. Return Thawing Glaciers to its owner's hand at the beginning of the next cleanup step.

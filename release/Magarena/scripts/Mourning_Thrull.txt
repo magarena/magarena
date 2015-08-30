@@ -1,5 +1,5 @@
 name=Mourning Thrull
-image=http://mtgimage.com/card/mourning%20thrull.jpg
+image=http://magiccards.info/scans/en/gp/146.jpg
 value=3.541
 ability=flying
 rarity=C
@@ -9,4 +9,4 @@ cost={1}{W/B}
 pt=1/1
 timing=main
 requires_groovy_code
-oracle=Flying. Whenever Mourning Thrull deals damage, you gain that much life.
+oracle=Flying\nWhenever Mourning Thrull deals damage, you gain that much life.

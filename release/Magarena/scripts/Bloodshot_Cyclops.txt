@@ -1,5 +1,5 @@
 name=Bloodshot Cyclops
-image=http://mtgimage.com/card/bloodshot%20cyclops.jpg
+image=http://magiccards.info/scans/en/8e/179.jpg
 value=3.878
 rarity=R
 type=Creature

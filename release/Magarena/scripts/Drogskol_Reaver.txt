@@ -1,5 +1,5 @@
 name=Drogskol Reaver
-image=http://mtgimage.com/card/drogskol%20reaver.jpg
+image=http://magiccards.info/scans/en/dka/137.jpg
 value=3.859
 rarity=M
 type=Creature
@@ -9,4 +9,4 @@ pt=3/5
 ability=flying;double strike;lifelink;\
         Whenever you gain life, draw a card.
 timing=fmain
-oracle=Flying, double strike, lifelink. Whenever you gain life, draw a card.
+oracle=Flying, double strike, lifelink\nWhenever you gain life, draw a card.

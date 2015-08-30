@@ -1,5 +1,5 @@
 name=Fortress Cyclops
-image=http://mtgimage.com/card/fortress%20cyclops.jpg
+image=http://magiccards.info/scans/en/gtc/164.jpg
 value=2.892
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=Whenever SN attacks, SN gets +3/+0 until end of turn.;\
         Whenever SN blocks, SN gets +0/+3 until end of turn.
 timing=main
-oracle=Whenever Fortress Cyclops attacks, it gets +3/+0 until end of turn. Whenever Fortress Cyclops blocks, it gets +0/+3 until end of turn.
+oracle=Whenever Fortress Cyclops attacks, it gets +3/+0 until end of turn.\nWhenever Fortress Cyclops blocks, it gets +0/+3 until end of turn.

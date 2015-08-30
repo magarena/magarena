@@ -13,7 +13,7 @@
             final int amount = event.getCardOnStack().getX();
             for (final MagicPlayer player : game.getAPNAP()) {
                 for (final int count = 1; count <= amount; count++) {
-                    game.addEvent(new MagicSacrificePermanentEvent(event.getSource(),player,MagicTargetChoice.SACRIFICE_LAND));
+                    game.addEvent(new MagicSacrificePermanentEvent(event.getSource(),player,SACRIFICE_LAND));
                 }
             }
         }

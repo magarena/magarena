@@ -1,9 +1,9 @@
 name=Repel the Darkness
-image=http://mtgimage.com/card/repel%20the%20darkness.jpg
-value=2.500
+image=http://magiccards.info/scans/en/roe/42.jpg
+value=3.000
 rarity=C
 type=Instant
 cost={2}{W}
 effect=Tap up to two target creatures.~Draw a card.
 timing=removal
-oracle=Tap up to two target creatures. Draw a card.
+oracle=Tap up to two target creatures.\nDraw a card.

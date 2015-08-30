@@ -1,6 +1,6 @@
 name=Renegade Doppelganger
-image=http://mtgimage.com/card/renegade%20doppelganger.jpg
-value=2.500
+image=http://magiccards.info/scans/en/roe/84.jpg
+value=3.536
 rarity=R
 type=Creature
 subtype=Shapeshifter

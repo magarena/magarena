@@ -1,5 +1,5 @@
 name=Viashino Fangtail
-image=http://mtgimage.com/card/viashino%20fangtail.jpg
+image=http://magiccards.info/scans/en/rav/148.jpg
 value=3.327
 rarity=C
 type=Creature

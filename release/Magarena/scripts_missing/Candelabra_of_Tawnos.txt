@@ -1,9 +1,9 @@
 name=Candelabra of Tawnos
-image=http://mtgimage.com/card/candelabra%20of%20tawnos.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me4/187.jpg
+value=4.599
 rarity=R
 type=Artifact
 cost={1}
 ability={X}, {T}: Untap X target lands.
-timing=main
+timing=artifact
 oracle={X}, {T}: Untap X target lands.

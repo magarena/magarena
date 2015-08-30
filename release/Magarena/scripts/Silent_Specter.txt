@@ -1,5 +1,5 @@
 name=Silent Specter
-image=http://mtgimage.com/card/silent%20specter.jpg
+image=http://magiccards.info/scans/en/on/169.jpg
 value=3.750
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=Flying;\
         Whenever SN deals combat damage to a player, that player discards two cards.;\
         Morph {3}{B}{B}
 timing=main
-oracle=Flying. Whenever Silent Specter deals combat damage to a player, that player discards two cards. Morph {3}{B}{B}
+oracle=Flying\nWhenever Silent Specter deals combat damage to a player, that player discards two cards.\nMorph {3}{B}{B}

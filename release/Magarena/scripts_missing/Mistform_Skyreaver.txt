@@ -1,6 +1,6 @@
 name=Mistform Skyreaver
-image=http://mtgimage.com/card/mistform%20skyreaver.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/97.jpg
+value=3.042
 rarity=R
 type=Creature
 subtype=Illusion
@@ -9,4 +9,4 @@ pt=6/6
 ability=Flying;\
         {1}: SN becomes the creature type of your choice until end of turn.
 timing=main
-oracle=Flying. {1}: Mistform Skyreaver becomes the creature type of your choice until end of turn.
+oracle=Flying\n{1}: Mistform Skyreaver becomes the creature type of your choice until end of turn.

@@ -1,11 +1,11 @@
 name=Teferi's Curse
-image=http://mtgimage.com/card/teferi%27s%20curse.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/96.jpg
+value=3.050
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
 ability=Enchant artifact or creature;\
         Enchanted permanent has phasing.
-timing=main
-oracle=Enchant artifact or creature. Enchanted permanent has phasing.
+timing=aura
+oracle=Enchant artifact or creature\nEnchanted permanent has phasing.

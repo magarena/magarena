@@ -1,5 +1,5 @@
 name=Dictate of Erebos
-image=http://mtgimage.com/card/dictate%20of%20erebos.jpg
+image=http://magiccards.info/scans/en/jou/65.jpg
 value=3.787
 rarity=R
 type=Enchantment
@@ -7,4 +7,4 @@ cost={3}{B}{B}
 ability=Flash;\
         Whenever a creature you control dies, each opponent sacrifices a creature.
 timing=main
-oracle=Flash. Whenever a creature you control dies, each opponent sacrifices a creature.
+oracle=Flash\nWhenever a creature you control dies, each opponent sacrifices a creature.

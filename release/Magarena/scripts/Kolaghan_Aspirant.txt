@@ -1,0 +1,11 @@
+name=Kolaghan Aspirant
+image=http://magiccards.info/scans/en/dtk/143.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={1}{R}
+pt=2/1
+ability=Whenever SN becomes blocked by a creature, SN deals 1 damage to that creature.
+timing=main
+oracle=Whenever Kolaghan Aspirant becomes blocked by a creature, Kolaghan Aspirant deals 1 damage to that creature.

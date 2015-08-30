@@ -1,0 +1,11 @@
+name=Strongarm Monk
+image=http://magiccards.info/scans/en/dtk/39.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Monk
+cost={4}{W}
+pt=3/3
+ability=Whenever you cast a noncreature spell, creatures you control get +1/+1 until end of turn.
+timing=main
+oracle=Whenever you cast a noncreature spell, creatures you control get +1/+1 until end of turn.

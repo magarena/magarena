@@ -1,0 +1,9 @@
+name=Nissa's Pilgrimage
+image=http://magiccards.info/scans/en/ori/190.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={2}{G}
+effect=Search your library for up to two basic Forest cards, reveal those cards, and put one onto the battlefield tapped and the rest into your hand. Then shuffle your library.~If there are two or more instant and/or sorcery cards in your graveyard, search your library for up to three basic Forest cards instead of two.
+timing=main
+oracle=Search your library for up to two basic Forest cards, reveal those cards, and put one onto the battlefield tapped and the rest into your hand. Then shuffle your library.\nSpell mastery — If there are two or more instant and/or sorcery cards in your graveyard, search your library for up to three basic Forest cards instead of two.

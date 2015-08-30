@@ -1,6 +1,6 @@
 name=Sabertooth Alley Cat
-image=http://mtgimage.com/card/sabertooth%20alley%20cat.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rav/140.jpg
+value=1.931
 rarity=C
 type=Creature
 subtype=Cat
@@ -9,4 +9,4 @@ pt=2/1
 ability=SN attacks each turn if able.;\
         {1}{R}: Creatures without defender can't block SN this turn.
 timing=main
-oracle=Sabertooth Alley Cat attacks each turn if able. {1}{R}: Creatures without defender can't block Sabertooth Alley Cat this turn.
+oracle=Sabertooth Alley Cat attacks each turn if able.\n{1}{R}: Creatures without defender can't block Sabertooth Alley Cat this turn.

@@ -1,0 +1,11 @@
+name=Screamreach Brawler
+image=http://magiccards.info/scans/en/dtk/155.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Orc,Berserker
+cost={2}{R}
+pt=2/3
+ability=Dash {1}{R}
+timing=main
+oracle=Dash {1}{R}

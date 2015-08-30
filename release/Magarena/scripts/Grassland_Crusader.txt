@@ -1,5 +1,5 @@
 name=Grassland Crusader
-image=http://mtgimage.com/card/grassland%20crusader.jpg
+image=http://magiccards.info/scans/en/on/32.jpg
 value=1.071
 rarity=C
 type=Creature

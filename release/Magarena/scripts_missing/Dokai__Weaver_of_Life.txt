@@ -1,11 +1,13 @@
 name=Dokai, Weaver of Life
-image=http://mtgimage.com/card/dokai%2C%20weaver%20of%20life.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/202b.jpg
+value=3.154
 rarity=R
 type=Legendary,Creature
 subtype=Human,Monk
 cost={1}{G}
 pt=3/3
 ability={4}{G}{G}, {T}: Put an X/X green Elemental creature token onto the battlefield, where X is the number of lands you control.
+flip=Budoka Gardener
 timing=main
+hidden
 oracle={4}{G}{G}, {T}: Put an X/X green Elemental creature token onto the battlefield, where X is the number of lands you control.

@@ -1,9 +1,9 @@
 name=Vengeful Dreams
-image=http://mtgimage.com/card/vengeful%20dreams.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tr/21.jpg
+value=3.909
 rarity=R
 type=Instant
 cost={W}{W}
 effect=As an additional cost to cast SN, discard X cards.~Exile X target attacking creatures.
 timing=removal
-oracle=As an additional cost to cast Vengeful Dreams, discard X cards. Exile X target attacking creatures.
+oracle=As an additional cost to cast Vengeful Dreams, discard X cards.\nExile X target attacking creatures.

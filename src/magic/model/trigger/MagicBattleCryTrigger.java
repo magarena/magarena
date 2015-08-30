@@ -2,7 +2,7 @@ package magic.model.trigger;
 
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeTurnPTAction;
+import magic.model.action.ChangeTurnPTAction;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTargetFilterFactory;
 
@@ -21,10 +21,7 @@ public class MagicBattleCryTrigger extends MagicWhenAttacksTrigger {
     }
 
     @Override
-    public MagicEvent executeTrigger(
-            final MagicGame game,
-            final MagicPermanent permanent,
-            final MagicPermanent attacker) {
+    public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent attacker) {
         return (permanent == attacker) ?
             new MagicEvent(
                 permanent,
@@ -37,12 +34,10 @@ public class MagicBattleCryTrigger extends MagicWhenAttacksTrigger {
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         final MagicPermanent permanent = event.getPermanent();
-        final Collection<MagicPermanent> targets = game.filterPermanents(
-                event.getPlayer(),
-                MagicTargetFilterFactory.ATTACKING_CREATURE);
+        final Collection<MagicPermanent> targets = MagicTargetFilterFactory.ATTACKING_CREATURE.filter(event);
         for (final MagicPermanent creature : targets) {
             if (creature != permanent && creature.isAttacking()) {
-                game.doAction(new MagicChangeTurnPTAction(creature,1,0));
+                game.doAction(new ChangeTurnPTAction(creature,1,0));
             }
         }
     }

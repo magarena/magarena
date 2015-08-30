@@ -1,6 +1,6 @@
 name=Orcish Librarian
-image=http://mtgimage.com/card/orcish%20librarian.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tsts/66.jpg
+value=3.650
 rarity=R
 type=Creature
 subtype=Orc

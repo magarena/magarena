@@ -1,9 +1,9 @@
 name=Underworld Dreams
-image=http://mtgimage.com/card/underworld%20dreams.jpg
+image=http://magiccards.info/scans/en/m10/115.jpg
 value=4.511
 rarity=R
 type=Enchantment
 cost={B}{B}{B}
+ability=Whenever an opponent draws a card, SN deals 1 damage to that opponent.
 timing=enchantment
-requires_groovy_code
 oracle=Whenever an opponent draws a card, Underworld Dreams deals 1 damage to him or her.

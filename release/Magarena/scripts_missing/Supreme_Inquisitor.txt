@@ -1,6 +1,6 @@
 name=Supreme Inquisitor
-image=http://mtgimage.com/card/supreme%20inquisitor.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/117.jpg
+value=4.034
 rarity=R
 type=Creature
 subtype=Human,Wizard

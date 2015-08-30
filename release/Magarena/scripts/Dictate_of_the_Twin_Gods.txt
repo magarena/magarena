@@ -1,5 +1,5 @@
 name=Dictate of the Twin Gods
-image=http://mtgimage.com/card/dictate%20of%20the%20twin%20gods.jpg
+image=http://magiccards.info/scans/en/jou/93.jpg
 value=3.531
 rarity=R
 type=Enchantment
@@ -7,4 +7,4 @@ cost={3}{R}{R}
 ability=Flash
 timing=flash
 requires_groovy_code=Furnace of Rath
-oracle=Flash. If a source would deal damage to a permanent or player, it deals double that damage to that permanent or player instead.
+oracle=Flash\nIf a source would deal damage to a permanent or player, it deals double that damage to that permanent or player instead.

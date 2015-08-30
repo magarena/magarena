@@ -10,8 +10,8 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),1,1));
-            game.doAction(new MagicUntapAction(event.getPermanent()));
+            game.doAction(new ChangeTurnPTAction(event.getPermanent(),1,1));
+            game.doAction(new UntapAction(event.getPermanent()));
         }
     }
 ]

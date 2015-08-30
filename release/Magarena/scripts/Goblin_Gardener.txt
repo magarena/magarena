@@ -1,5 +1,5 @@
 name=Goblin Gardener
-image=http://mtgimage.com/card/goblin%20gardener.jpg
+image=http://magiccards.info/scans/en/7e/188.jpg
 value=3.012
 rarity=C
 type=Creature

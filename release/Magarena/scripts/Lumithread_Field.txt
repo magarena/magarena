@@ -1,5 +1,5 @@
 name=Lumithread Field
-image=http://mtgimage.com/card/lumithread%20field.jpg
+image=http://magiccards.info/scans/en/fut/25.jpg
 value=3.152
 rarity=C
 type=Enchantment
@@ -7,4 +7,4 @@ cost={1}{W}
 ability=Creatures you control get +0/+1.;\
         Morph {1}{W}
 timing=enchantment
-oracle=Creatures you control get +0/+1. Morph {1}{W}
+oracle=Creatures you control get +0/+1.\nMorph {1}{W}

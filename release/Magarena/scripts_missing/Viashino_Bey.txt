@@ -1,6 +1,6 @@
 name=Viashino Bey
-image=http://mtgimage.com/card/viashino%20bey.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ul/93.jpg
+value=2.621
 rarity=C
 type=Creature
 subtype=Viashino

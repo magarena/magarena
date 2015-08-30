@@ -1,0 +1,13 @@
+name=Broodstar
+image=http://magiccards.info/scans/en/pch/8.jpg
+value=4.347
+rarity=R
+type=Creature
+subtype=Beast
+cost={8}{U}{U}
+pt=*/*
+ability=Affinity for artifacts.;\
+        Flying;\
+        SN's power and toughness are each equal to the number of artifacts you control.
+timing=main
+oracle=Affinity for artifacts\nFlying\nBroodstar's power and toughness are each equal to the number of artifacts you control.

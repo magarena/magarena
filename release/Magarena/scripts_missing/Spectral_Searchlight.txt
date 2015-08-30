@@ -1,9 +1,9 @@
 name=Spectral Searchlight
-image=http://mtgimage.com/card/spectral%20searchlight.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cns/205.jpg
+value=3.500
 rarity=U
 type=Artifact
 cost={3}
 ability={T}: Choose a player. That player adds one mana of any color he or she chooses to his or her mana pool.
-timing=main
+timing=artifact
 oracle={T}: Choose a player. That player adds one mana of any color he or she chooses to his or her mana pool.

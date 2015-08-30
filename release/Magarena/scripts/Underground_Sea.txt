@@ -1,8 +1,9 @@
 name=Underground Sea
-image=http://mtgimage.com/set/me4/underground%20sea.jpg
+image=http://magiccards.info/scans/en/vma/323.jpg
 value=4.500
 rarity=R
 type=Land
 subtype=Island,Swamp
 mana=b4u4
 timing=land
+oracle=NONE

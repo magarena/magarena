@@ -1,5 +1,5 @@
 name=Heart Sliver
-image=http://mtgimage.com/card/heart%20sliver.jpg
+image=http://magiccards.info/scans/en/tp/182.jpg
 value=4.447
 rarity=C
 type=Creature

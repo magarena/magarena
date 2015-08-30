@@ -1,5 +1,5 @@
 name=Drag Down
-image=http://mtgimage.com/card/drag%20down.jpg
+image=http://magiccards.info/scans/en/mma/80.jpg
 value=2.200
 rarity=C
 type=Instant

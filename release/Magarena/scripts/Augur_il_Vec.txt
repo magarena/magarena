@@ -1,5 +1,5 @@
 name=Augur il-Vec
-image=http://mtgimage.com/card/augur%20il%2Dvec.jpg
+image=http://magiccards.info/scans/en/fut/2.jpg
 value=2.811
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/3
 ability=shadow;\
         Sacrifice SN: You gain 4 life. Activate this ability only during your upkeep.
 timing=main
-oracle=Shadow. Sacrifice Augur il-Vec: You gain 4 life. Activate this ability only during your upkeep.
+oracle=Shadow\nSacrifice Augur il-Vec: You gain 4 life. Activate this ability only during your upkeep.

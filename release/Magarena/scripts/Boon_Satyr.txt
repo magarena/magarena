@@ -1,5 +1,5 @@
 name=Boon Satyr
-image=http://mtgimage.com/card/boon%20satyr.jpg
+image=http://magiccards.info/scans/en/ths/152.jpg
 value=3.535
 rarity=R
 type=Enchantment,Creature
@@ -10,4 +10,4 @@ ability=Bestow {3}{G}{G};\
         Flash;\
         Enchanted creature gets +4/+2.
 timing=pumpFlash
-oracle=Flash. Bestow {3}{G}{G}. Enchanted creature gets +4/+2.
+oracle=Flash\nBestow {3}{G}{G}\nEnchanted creature gets +4/+2.

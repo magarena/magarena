@@ -1,11 +1,11 @@
 name=Kami of the Crescent Moon
-image=http://mtgimage.com/card/kami%20of%20the%20crescent%20moon.jpg
+image=http://magiccards.info/scans/en/sok/42.jpg
 value=3.917
 rarity=R
 type=Legendary,Creature
 subtype=Spirit
 cost={U}{U}
 pt=1/3
+ability=At the beginning of each player's draw step, that player draws an additional card.
 timing=main
-requires_groovy_code
 oracle=At the beginning of each player's draw step, that player draws an additional card.

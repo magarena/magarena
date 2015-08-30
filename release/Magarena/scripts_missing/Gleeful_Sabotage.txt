@@ -1,9 +1,9 @@
 name=Gleeful Sabotage
-image=http://mtgimage.com/card/gleeful%20sabotage.jpg
-value=2.500
+image=http://magiccards.info/scans/en/arc/58.jpg
+value=4.032
 rarity=C
 type=Sorcery
 cost={1}{G}
 effect=Destroy target artifact or enchantment.~Conspire
 timing=main
-oracle=Destroy target artifact or enchantment. Conspire
+oracle=Destroy target artifact or enchantment.\nConspire

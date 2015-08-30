@@ -1,5 +1,5 @@
 name=Grave Peril
-image=http://mtgimage.com/card/grave%20peril.jpg
+image=http://magiccards.info/scans/en/fut/67.jpg
 value=3.024
 rarity=C
 type=Enchantment

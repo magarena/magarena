@@ -1,6 +1,6 @@
 name=Steal Strength
-image=http://mtgimage.com/card/steal%20strength.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pr/79.jpg
+value=3.016
 rarity=C
 type=Instant
 cost={1}{B}

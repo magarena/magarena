@@ -1,10 +1,10 @@
 name=Barbed Wire
-image=http://mtgimage.com/card/barbed%20wire.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/287.jpg
+value=2.472
 rarity=U
 type=Artifact
 cost={3}
 ability=At the beginning of each player's upkeep, SN deals 1 damage to that player.;\
         {2}: Prevent the next 1 damage that would be dealt by SN this turn.
-timing=main
-oracle=At the beginning of each player's upkeep, Barbed Wire deals 1 damage to that player. {2}: Prevent the next 1 damage that would be dealt by Barbed Wire this turn.
+timing=artifact
+oracle=At the beginning of each player's upkeep, Barbed Wire deals 1 damage to that player.\n{2}: Prevent the next 1 damage that would be dealt by Barbed Wire this turn.

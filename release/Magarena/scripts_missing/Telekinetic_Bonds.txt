@@ -1,9 +1,9 @@
 name=Telekinetic Bonds
-image=http://mtgimage.com/card/telekinetic%20bonds.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ju/52.jpg
+value=1.885
 rarity=R
 type=Enchantment
 cost={2}{U}{U}{U}
 ability=Whenever a player discards a card, you may pay {1}{U}. If you do, you may tap or untap target permanent.
-timing=main
+timing=enchantment
 oracle=Whenever a player discards a card, you may pay {1}{U}. If you do, you may tap or untap target permanent.

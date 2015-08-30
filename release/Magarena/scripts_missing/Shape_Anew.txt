@@ -1,6 +1,6 @@
 name=Shape Anew
-image=http://mtgimage.com/card/shape%20anew.jpg
-value=2.500
+image=http://magiccards.info/scans/en/som/43.jpg
+value=3.573
 rarity=R
 type=Sorcery
 cost={3}{U}

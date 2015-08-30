@@ -1,9 +1,10 @@
 name=Price of Progress
-image=http://mtgimage.com/card/price%20of%20progress.jpg
+image=http://magiccards.info/scans/en/ex/95.jpg
 value=4.570
 rarity=U
 type=Instant
 cost={1}{R}
+ability=Cast SN with AI only if an opponent controls a nonbasic land.
 timing=removal
 requires_groovy_code
 oracle=Price of Progress deals damage to each player equal to twice the number of nonbasic lands that player controls.

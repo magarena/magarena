@@ -1,6 +1,6 @@
 name=Ulvenwald Tracker
-image=http://mtgimage.com/card/ulvenwald%20tracker.jpg
-value=2.500
+image=http://magiccards.info/scans/en/avr/200.jpg
+value=3.959
 rarity=R
 type=Creature
 subtype=Human,Shaman

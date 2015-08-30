@@ -1,5 +1,5 @@
 name=Goblin War Buggy
-image=http://mtgimage.com/card/goblin%20war%20buggy.jpg
+image=http://magiccards.info/scans/en/us/196.jpg
 value=3.782
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{R}
 pt=2/2
 ability=haste;echo {1}{R}
 timing=main
-oracle=Haste. Echo {1}{R}
+oracle=Haste\nEcho {1}{R}

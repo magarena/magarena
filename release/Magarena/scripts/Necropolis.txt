@@ -1,0 +1,12 @@
+name=Necropolis
+image=http://magiccards.info/scans/en/dk/102.jpg
+value=3.081
+rarity=U
+type=Artifact,Creature
+subtype=Wall
+cost={5}
+pt=0/1
+ability=Defender
+timing=artifact
+requires_groovy_code
+oracle=Defender\nExile a creature card from your graveyard: Put X +0/+1 counters on Necropolis, where X is the exiled card's converted mana cost.

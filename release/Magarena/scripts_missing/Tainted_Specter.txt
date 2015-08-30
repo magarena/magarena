@@ -1,6 +1,6 @@
 name=Tainted Specter
-image=http://mtgimage.com/card/tainted%20specter.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/46.jpg
+value=3.266
 rarity=R
 type=Creature
 subtype=Specter
@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         {1}{B}{B}, {T}: Target player discards a card unless he or she puts a card from his or her hand on top of his or her library. If that player discards a card this way, SN deals 1 damage to each creature and each player. Activate this ability only any time you could cast a sorcery.
 timing=main
-oracle=Flying. {1}{B}{B}, {T}: Target player discards a card unless he or she puts a card from his or her hand on top of his or her library. If that player discards a card this way, Tainted Specter deals 1 damage to each creature and each player. Activate this ability only any time you could cast a sorcery.
+oracle=Flying\n{1}{B}{B}, {T}: Target player discards a card unless he or she puts a card from his or her hand on top of his or her library. If that player discards a card this way, Tainted Specter deals 1 damage to each creature and each player. Activate this ability only any time you could cast a sorcery.

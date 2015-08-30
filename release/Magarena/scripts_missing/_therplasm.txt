@@ -1,6 +1,6 @@
 name=Ætherplasm
-image=http://mtgimage.com/card/aetherplasm.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gp/22.jpg
+value=4.025
 rarity=U
 type=Creature
 subtype=Illusion

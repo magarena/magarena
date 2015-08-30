@@ -1,5 +1,5 @@
 name=Sky Diamond
-image=http://mtgimage.com/card/sky%20diamond.jpg
+image=http://magiccards.info/scans/en/c14/269.jpg
 value=2.897
 rarity=U
 type=Artifact
@@ -7,4 +7,4 @@ cost={2}
 ability=SN enters the battlefield tapped.;\
         {T}: Add {U} to your mana pool.
 timing=artifact
-oracle=Sky Diamond enters the battlefield tapped. {T}: Add {U} to your mana pool.
+oracle=Sky Diamond enters the battlefield tapped.\n{T}: Add {U} to your mana pool.

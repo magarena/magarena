@@ -24,11 +24,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
-            game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.Hatchling,1));
+            game.doAction(new ChangeCountersAction(permanent,MagicCounterType.Hatchling,1));
             final int counters = permanent.getCounters(MagicCounterType.Hatchling);
             if (counters >= 5) {
-                game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.Hatchling,-counters));
-                game.doAction(new MagicTransformAction(permanent));
+                game.doAction(new ChangeCountersAction(permanent,MagicCounterType.Hatchling,-counters));
+                game.doAction(new TransformAction(permanent));
             }
         }
     }

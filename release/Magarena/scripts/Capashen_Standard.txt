@@ -1,5 +1,5 @@
 name=Capashen Standard
-image=http://mtgimage.com/card/capashen%20standard.jpg
+image=http://magiccards.info/scans/en/ud/4.jpg
 value=2.667
 rarity=C
 type=Enchantment
@@ -9,4 +9,4 @@ ability=Enchanted creature gets +1/+1.;\
         {2},Sacrifice SN: Draw a card.
 timing=enchantment
 enchant=pump,pos creature
-oracle=Enchant creature. Enchanted creature gets +1/+1. {2}, Sacrifice Capashen Standard: Draw a card.
+oracle=Enchant creature\nEnchanted creature gets +1/+1.\n{2}, Sacrifice Capashen Standard: Draw a card.

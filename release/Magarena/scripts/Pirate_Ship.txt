@@ -1,5 +1,5 @@
 name=Pirate Ship
-image=http://mtgimage.com/card/pirate%20ship.jpg
+image=http://magiccards.info/scans/en/tsts/28.jpg
 value=2.870
 rarity=R
 type=Creature
@@ -7,7 +7,7 @@ subtype=Human,Pirate
 cost={4}{U}
 pt=4/3
 ability=SN can't attack unless defending player controls an Island.;\
-        {T}: SN deals 1 damage to target creature or player.
+        {T}: SN deals 1 damage to target creature or player.;\
+        When you control no Islands, sacrifice SN.
 timing=main
-requires_groovy_code=Sea Serpent
-oracle=Pirate Ship can't attack unless defending player controls an Island. {T}: Pirate Ship deals 1 damage to target creature or player. When you control no Islands, sacrifice Pirate Ship.
+oracle=Pirate Ship can't attack unless defending player controls an Island.\n{T}: Pirate Ship deals 1 damage to target creature or player.\nWhen you control no Islands, sacrifice Pirate Ship.

@@ -1,5 +1,5 @@
 name=Skywatcher Adept
-image=http://mtgimage.com/card/skywatcher%20adept.jpg
+image=http://magiccards.info/scans/en/roe/88.jpg
 value=3.140
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=level up {3} 3
 timing=main
 requires_groovy_code
-oracle=Level up {3}. LEVEL 1-2. 2/2. Flying. LEVEL 3+. 4/2. Flying
+oracle=Level up {3}\nLEVEL 1-2\n2/2\nFlying\nLEVEL 3+\n4/2\nFlying

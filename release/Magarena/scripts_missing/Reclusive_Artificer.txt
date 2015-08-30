@@ -1,0 +1,12 @@
+name=Reclusive Artificer
+image=http://magiccards.info/scans/en/ori/216.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Artificer
+cost={2}{U}{R}
+pt=2/3
+ability=Haste;\
+        When SN enters the battlefield, you may have it deal damage to target creature equal to the number of artifacts you control.
+timing=main
+oracle=Haste\nWhen Reclusive Artificer enters the battlefield, you may have it deal damage to target creature equal to the number of artifacts you control.

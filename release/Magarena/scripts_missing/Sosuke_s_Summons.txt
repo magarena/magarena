@@ -1,9 +1,9 @@
 name=Sosuke's Summons
-image=http://mtgimage.com/card/sosuke%27s%20summons.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bok/145.jpg
+value=3.947
 rarity=U
 type=Sorcery
 cost={2}{G}
 effect=Put two 1/1 green Snake creature tokens onto the battlefield.~Whenever a nontoken Snake enters the battlefield under your control, you may return SN from your graveyard to your hand.
 timing=main
-oracle=Put two 1/1 green Snake creature tokens onto the battlefield. Whenever a nontoken Snake enters the battlefield under your control, you may return Sosuke's Summons from your graveyard to your hand.
+oracle=Put two 1/1 green Snake creature tokens onto the battlefield.\nWhenever a nontoken Snake enters the battlefield under your control, you may return Sosuke's Summons from your graveyard to your hand.

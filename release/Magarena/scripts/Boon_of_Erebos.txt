@@ -1,9 +1,9 @@
 name=Boon of Erebos
-image=http://mtgimage.com/card/boon%20of%20erebos.jpg
+image=http://magiccards.info/scans/en/ths/80.jpg
 value=3.280
 rarity=C
 type=Instant
 cost={B}
+effect=Target creature gets +2/+0 until end of turn.~Regenerate *it*.~You lose 2 life.
 timing=pump
-requires_groovy_code
 oracle=Target creature gets +2/+0 until end of turn. Regenerate it. You lose 2 life.

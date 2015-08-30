@@ -1,5 +1,5 @@
 name=Gild
-image=http://mtgimage.com/card/gild.jpg
+image=http://magiccards.info/scans/en/bng/73.jpg
 value=3.836
 rarity=R
 type=Sorcery

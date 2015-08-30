@@ -1,5 +1,5 @@
 name=Wanderwine Prophets
-image=http://mtgimage.com/card/wanderwine%20prophets.jpg
+image=http://magiccards.info/scans/en/lw/95.jpg
 value=3.841
 removal=2
 rarity=R
@@ -7,7 +7,8 @@ type=Creature
 subtype=Merfolk,Wizard
 cost={4}{U}{U}
 pt=4/4
-ability=champion Merfolk
+ability=Champion a Merfolk;\
+        Cast SN with AI only if you control a Merfolk
 timing=main
 requires_groovy_code
-oracle=Champion a Merfolk. Whenever Wanderwine Prophets deals combat damage to a player, you may sacrifice a Merfolk. If you do, take an extra turn after this one.
+oracle=Champion a Merfolk\nWhenever Wanderwine Prophets deals combat damage to a player, you may sacrifice a Merfolk. If you do, take an extra turn after this one.

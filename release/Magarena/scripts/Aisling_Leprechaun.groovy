@@ -6,7 +6,7 @@ def GREEN = new MagicStatic(MagicLayer.Color) {
 };
 
 [
-    new MagicWhenBlocksOrBecomesBlockedTrigger() {
+    new MagicWhenBlocksOrBecomesBlockedByTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
             final MagicPermanent target = permanent == blocker ? blocker.getBlockedCreature() : blocker;
@@ -20,7 +20,7 @@ def GREEN = new MagicStatic(MagicLayer.Color) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processRefPermanent(game, {
-                game.doAction(new MagicAddStaticAction(it, GREEN));
+                game.doAction(new AddStaticAction(it, GREEN));
             });
         }
     }

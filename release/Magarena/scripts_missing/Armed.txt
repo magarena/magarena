@@ -1,9 +1,9 @@
 name=Armed
-image=http://mtgimage.com/card/armeddangerous.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dgm/122a.jpg
+value=3.960
 rarity=U
 type=Sorcery
 cost={1}{R}
 effect=Target creature gets +1/+1 and gains double strike until end of turn.~Fuse
 timing=main
-oracle=Target creature gets +1/+1 and gains double strike until end of turn. Fuse
+oracle=Target creature gets +1/+1 and gains double strike until end of turn.\nFuse

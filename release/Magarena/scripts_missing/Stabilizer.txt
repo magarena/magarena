@@ -1,9 +1,9 @@
 name=Stabilizer
-image=http://mtgimage.com/card/stabilizer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sc/142.jpg
+value=1.886
 rarity=R
 type=Artifact
 cost={2}
 ability=Players can't cycle cards.
-timing=main
+timing=artifact
 oracle=Players can't cycle cards.

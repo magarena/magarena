@@ -15,6 +15,8 @@ public interface MagicObject extends MagicCopyable {
     boolean     hasType(final MagicType type);
     boolean     hasSubType(final MagicSubType subType);
     boolean     hasCounters(final MagicCounterType counterType);
+    int         getCounters(final MagicCounterType counterType);
+    void        changeCounters(final MagicCounterType counterType,final int amount);
     String      getName();
     MagicPlayer getController();
     MagicPlayer getOpponent();

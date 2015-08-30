@@ -1,5 +1,5 @@
 name=Wall of Omens
-image=http://mtgimage.com/card/wall%20of%20omens.jpg
+image=http://magiccards.info/scans/en/ddk/4.jpg
 value=3.821
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{W}
 pt=0/4
 ability=defender;When SN enters the battlefield, draw a card.
 timing=smain
-oracle=Defender. When Wall of Omens enters the battlefield, draw a card.
+oracle=Defender\nWhen Wall of Omens enters the battlefield, draw a card.

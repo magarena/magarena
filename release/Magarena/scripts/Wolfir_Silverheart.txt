@@ -1,5 +1,5 @@
 name=Wolfir Silverheart
-image=http://mtgimage.com/card/wolfir%20silverheart.jpg
+image=http://magiccards.info/scans/en/avr/206.jpg
 value=4.053
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=Soulbond;\
         As long as SN is paired with another creature, each of those creatures gets +4/+4.
 timing=main
-oracle=Soulbond. As long as Wolfir Silverheart is paired with another creature, each of those creatures gets +4/+4.
+oracle=Soulbond\nAs long as Wolfir Silverheart is paired with another creature, each of those creatures gets +4/+4.

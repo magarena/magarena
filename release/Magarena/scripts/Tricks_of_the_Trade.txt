@@ -1,5 +1,5 @@
 name=Tricks of the Trade
-image=http://mtgimage.com/card/tricks%20of%20the%20trade.jpg
+image=http://magiccards.info/scans/en/m13/74.jpg
 value=3.100
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={3}{U}
 ability=Enchanted creature gets +2/+0 and can't be blocked.
 timing=aura
 enchant=pump,pos creature
-oracle=Enchant creature. Enchanted creature gets +2/+0 and can't be blocked.
+oracle=Enchant creature\nEnchanted creature gets +2/+0 and can't be blocked.

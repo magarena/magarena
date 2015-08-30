@@ -1,9 +1,0 @@
-name=Tolarian Winds
-image=http://mtgimage.com/card/tolarian%20winds.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={1}{U}
-effect=Discard all the cards in your hand, then draw that many cards.
-timing=removal
-oracle=Discard all the cards in your hand, then draw that many cards.

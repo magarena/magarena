@@ -1,6 +1,6 @@
 name=Copper-Leaf Angel
-image=http://mtgimage.com/card/copper-leaf%20angel.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pr/137.jpg
+value=2.310
 rarity=R
 type=Artifact,Creature
 subtype=Angel
@@ -8,5 +8,5 @@ cost={5}
 pt=2/2
 ability=Flying;\
         {T}, Sacrifice X lands: Put X +1/+1 counters on SN.
-timing=main
-oracle=Flying. {T}, Sacrifice X lands: Put X +1/+1 counters on Copper-Leaf Angel.
+timing=artifact
+oracle=Flying\n{T}, Sacrifice X lands: Put X +1/+1 counters on Copper-Leaf Angel.

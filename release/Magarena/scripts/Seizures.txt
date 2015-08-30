@@ -1,6 +1,6 @@
 name=Seizures
-image=http://mtgimage.com/card/seizures.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ia/47.jpg
+value=3.328
 rarity=C
 type=Enchantment
 subtype=Aura
@@ -8,4 +8,4 @@ cost={1}{B}
 timing=aura
 enchant=can't attack,neg creature
 requires_groovy_code
-oracle=Enchant creature. Whenever enchanted creature becomes tapped, Seizures deals 3 damage to that creature's controller unless that player pays {3}.
+oracle=Enchant creature\nWhenever enchanted creature becomes tapped, Seizures deals 3 damage to that creature's controller unless that player pays {3}.

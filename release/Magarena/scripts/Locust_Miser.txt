@@ -1,0 +1,11 @@
+name=Locust Miser
+image=http://magiccards.info/scans/en/sok/80.jpg
+value=3.162
+rarity=U
+type=Creature
+subtype=Rat,Shaman
+cost={2}{B}{B}
+pt=2/2
+timing=main
+requires_groovy_code
+oracle=Each opponent's maximum hand size is reduced by two.

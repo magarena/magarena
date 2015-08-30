@@ -1,5 +1,5 @@
 name=Hurr Jackal
-image=http://mtgimage.com/card/hurr%20jackal.jpg
+image=http://magiccards.info/scans/en/4e/221.jpg
 value=3.179
 rarity=C
 type=Creature

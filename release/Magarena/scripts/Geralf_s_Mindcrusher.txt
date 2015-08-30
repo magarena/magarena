@@ -1,5 +1,5 @@
 name=Geralf's Mindcrusher
-image=http://mtgimage.com/card/geralf%27s%20mindcrusher.jpg
+image=http://magiccards.info/scans/en/dka/37.jpg
 value=3.695
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=5/5
 ability=undying;\
         When SN enters the battlefield, target player puts the top five cards of his or her library into his or her graveyard.
 timing=main
-oracle=When Geralf's Mindcrusher enters the battlefield, target player puts the top five cards of his or her library into his or her graveyard. Undying
+oracle=When Geralf's Mindcrusher enters the battlefield, target player puts the top five cards of his or her library into his or her graveyard.\nUndying

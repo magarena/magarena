@@ -1,5 +1,5 @@
 name=Raven's Crime
-image=http://mtgimage.com/card/raven's%20crime.jpg
+image=http://magiccards.info/scans/en/mma/95.jpg
 value=4.260
 rarity=C
 type=Sorcery
@@ -7,4 +7,4 @@ cost={B}
 ability=Retrace
 effect=Target player discards a card.
 timing=main
-oracle=Target player discards a card. Retrace
+oracle=Target player discards a card.\nRetrace

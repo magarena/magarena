@@ -1,5 +1,5 @@
 name=Mikaeus, the Lunarch
-image=http://mtgimage.com/card/mikaeus%2C%20the%20lunarch.jpg
+image=http://magiccards.info/scans/en/isd/23.jpg
 value=3.902
 rarity=M
 type=Legendary,Creature
@@ -7,7 +7,7 @@ subtype=Human,Cleric
 cost={X}{W}
 pt=0/0
 ability=SN enters the battlefield with X +1/+1 counters on it.;\
-        {T}: Put a +1/+1 counter on SN.
+        {T}: Put a +1/+1 counter on SN.;\
+        {T}, Remove a +1/+1 counter from SN: Put a +1/+1 counter on each other creature you control.
 timing=main
-requires_groovy_code
-oracle=Mikaeus, the Lunarch enters the battlefield with X +1/+1 counters on it. {T}: Put a +1/+1 counter on Mikaeus. {T}, Remove a +1/+1 counter from Mikaeus: Put a +1/+1 counter on each other creature you control.
+oracle=Mikaeus, the Lunarch enters the battlefield with X +1/+1 counters on it.\n{T}: Put a +1/+1 counter on Mikaeus.\n{T}, Remove a +1/+1 counter from Mikaeus: Put a +1/+1 counter on each other creature you control.

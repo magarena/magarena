@@ -1,5 +1,5 @@
 name=Ghostly Touch
-image=http://mtgimage.com/card/ghostly%20touch.jpg
+image=http://magiccards.info/scans/en/avr/58.jpg
 value=3.071
 rarity=U
 type=Enchantment
@@ -8,4 +8,4 @@ cost={1}{U}
 ability=Enchanted creature has "Whenever SN attacks, you may tap or untap target permanent."
 enchant=pump,pos creature
 timing=main
-oracle=Enchant creature. Enchanted creature has "Whenever this creature attacks, you may tap or untap target permanent."
+oracle=Enchant creature\nEnchanted creature has "Whenever this creature attacks, you may tap or untap target permanent."

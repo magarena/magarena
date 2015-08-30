@@ -1,5 +1,5 @@
 name=Needlebug
-image=http://mtgimage.com/card/needlebug.jpg
+image=http://magiccards.info/scans/en/mi/217.jpg
 value=3.037
 rarity=U
 type=Artifact,Creature
@@ -8,4 +8,4 @@ cost={4}
 pt=2/2
 ability=flash;protection from artifacts
 timing=artifact
-oracle=Flash. Protection from artifacts
+oracle=Flash\nProtection from artifacts

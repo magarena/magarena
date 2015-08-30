@@ -1,5 +1,5 @@
 name=Devouring Strossus
-image=http://mtgimage.com/card/devouring%20strossus.jpg
+image=http://magiccards.info/scans/en/in/101.jpg
 value=4.167
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=flying;trample;\
         At the beginning of your upkeep, sacrifice a creature.;\
         Sacrifice a creature: Regenerate SN.
 timing=main
-oracle=Flying, trample. At the beginning of your upkeep, sacrifice a creature. Sacrifice a creature: Regenerate Devouring Strossus.
+oracle=Flying, trample\nAt the beginning of your upkeep, sacrifice a creature.\nSacrifice a creature: Regenerate Devouring Strossus.

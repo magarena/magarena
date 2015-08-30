@@ -1,6 +1,6 @@
 name=Oppressive Rays
-image=http://mtgimage.com/card/oppressive%20rays.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/21.jpg
+value=2.714
 rarity=C
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={W}
 ability=Enchant creature;\
         Enchanted creature can't attack or block unless its controller pays {3}.;\
         Activated abilities of enchanted creature cost {3} more to activate.
-timing=main
-oracle=Enchant creature. Enchanted creature can't attack or block unless its controller pays {3}. Activated abilities of enchanted creature cost {3} more to activate.
+timing=aura
+oracle=Enchant creature\nEnchanted creature can't attack or block unless its controller pays {3}.\nActivated abilities of enchanted creature cost {3} more to activate.

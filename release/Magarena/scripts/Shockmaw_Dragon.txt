@@ -1,0 +1,12 @@
+name=Shockmaw Dragon
+image=http://magiccards.info/scans/en/frf/114.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dragon
+cost={4}{R}{R}
+pt=4/4
+ability=Flying
+timing=main
+requires_groovy_code
+oracle=Flying\nWhenever Shockmaw Dragon deals combat damage to a player, it deals 1 damage to each creature that player controls.

@@ -1,5 +1,5 @@
 name=Ruination Wurm
-image=http://mtgimage.com/card/ruination%20wurm.jpg
+image=http://magiccards.info/scans/en/gtc/192.jpg
 value=2.976
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Wurm
 cost={4}{R}{G}
 pt=7/6
 timing=main
+oracle=NONE

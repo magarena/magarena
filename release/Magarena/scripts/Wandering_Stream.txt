@@ -1,9 +1,9 @@
 name=Wandering Stream
-image=http://mtgimage.com/card/wandering%20stream.jpg
+image=http://magiccards.info/scans/en/in/224.jpg
 value=2.448
 rarity=C
 type=Sorcery
 cost={2}{G}
+effect=You gain 2 life for each basic land type among lands you control.
 timing=main
-requires_groovy_code
 oracle=Domain — You gain 2 life for each basic land type among lands you control.

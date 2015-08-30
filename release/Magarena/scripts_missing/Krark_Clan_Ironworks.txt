@@ -1,9 +1,9 @@
 name=Krark-Clan Ironworks
-image=http://mtgimage.com/card/krark-clan%20ironworks.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5dn/134.jpg
+value=4.361
 rarity=U
 type=Artifact
 cost={4}
 ability=Sacrifice an artifact: Add {2} to your mana pool.
-timing=main
+timing=artifact
 oracle=Sacrifice an artifact: Add {2} to your mana pool.

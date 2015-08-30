@@ -1,5 +1,5 @@
 name=Witch's Familiar
-image=http://mtgimage.com/card/witch%27s%20familiar.jpg
+image=http://magiccards.info/scans/en/m15/123.jpg
 value=1.929
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Frog
 cost={2}{B}
 pt=2/3
 timing=main
+oracle=NONE

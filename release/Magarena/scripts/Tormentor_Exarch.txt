@@ -1,11 +1,13 @@
 name=Tormentor Exarch
-image=http://mtgimage.com/card/tormentor%20exarch.jpg
-value=2.500
+image=http://magiccards.info/scans/en/nph/97.jpg
+value=3.037
 rarity=U
 type=Creature
 subtype=Cleric
 cost={3}{R}
 pt=2/2
+ability=When SN enters the battlefield, choose one — \
+        (1) Target creature gets +2/+0 until end of turn. \
+        (2) Target creature gets -0/-2 until end of turn.
 timing=main
-requires_groovy_code
-oracle=When Tormentor Exarch enters the battlefield, choose one — • Target creature gets +2/+0 until end of turn. • Target creature gets -0/-2 until end of turn.
+oracle=When Tormentor Exarch enters the battlefield, choose one —\n• Target creature gets +2/+0 until end of turn.\n• Target creature gets -0/-2 until end of turn.

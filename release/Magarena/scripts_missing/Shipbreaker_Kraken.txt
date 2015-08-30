@@ -1,6 +1,6 @@
 name=Shipbreaker Kraken
-image=http://mtgimage.com/card/shipbreaker%20kraken.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ths/63.jpg
+value=3.583
 rarity=R
 type=Creature
 subtype=Kraken
@@ -9,4 +9,4 @@ pt=6/6
 ability={6}{U}{U}: Monstrosity 4.;\
         When SN becomes monstrous, tap up to four target creatures. Those creatures don't untap during their controllers' untap steps for as long as you control SN.
 timing=main
-oracle={6}{U}{U}: Monstrosity 4. When Shipbreaker Kraken becomes monstrous, tap up to four target creatures. Those creatures don't untap during their controllers' untap steps for as long as you control Shipbreaker Kraken.
+oracle={6}{U}{U}: Monstrosity 4.\nWhen Shipbreaker Kraken becomes monstrous, tap up to four target creatures. Those creatures don't untap during their controllers' untap steps for as long as you control Shipbreaker Kraken.

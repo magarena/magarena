@@ -1,9 +1,9 @@
 name=Illuminated Folio
-image=http://mtgimage.com/card/illuminated%20folio.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/254.jpg
+value=2.284
 rarity=U
 type=Artifact
 cost={5}
 ability={1}, {T}, Reveal two cards from your hand that share a color: Draw a card.
-timing=main
+timing=artifact
 oracle={1}, {T}, Reveal two cards from your hand that share a color: Draw a card.

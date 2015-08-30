@@ -1,0 +1,13 @@
+name=Soul of New Phyrexia
+image=http://magiccards.info/scans/en/m15/231.jpg
+value=4.000
+rarity=M
+type=Artifact,Creature
+subtype=Avatar
+cost={6}
+pt=6/6
+ability=Trample;\
+        {5}: Permanents you control gain indestructible until end of turn.;\
+        {5}, Exile SN from your graveyard: Permanents you control gain indestructible until end of turn.
+timing=main
+oracle=Trample\n{5}: Permanents you control gain indestructible until end of turn.\n{5}, Exile Soul of New Phyrexia from your graveyard: Permanents you control gain indestructible until end of turn.

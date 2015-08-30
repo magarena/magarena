@@ -1,5 +1,5 @@
 name=Shielding Plax
-image=http://mtgimage.com/card/shielding%20plax.jpg
+image=http://magiccards.info/scans/en/di/147.jpg
 value=4.168
 rarity=C
 type=Enchantment
@@ -9,4 +9,4 @@ ability=When SN enters the battlefield, draw a card.
 timing=aura
 enchant=shroud,creature
 requires_groovy_code=Canopy Cover
-oracle=Enchant creature. When Shielding Plax enters the battlefield, draw a card. Enchanted creature can't be the target of spells or abilities your opponents control.
+oracle=Enchant creature\nWhen Shielding Plax enters the battlefield, draw a card.\nEnchanted creature can't be the target of spells or abilities your opponents control.

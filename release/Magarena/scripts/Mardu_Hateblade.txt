@@ -1,5 +1,5 @@
 name=Mardu Hateblade
-image=http://mtgimage.com/card/mardu%20hateblade.jpg
+image=http://magiccards.info/scans/en/ktk/16.jpg
 value=2.750
 rarity=C
 type=Creature

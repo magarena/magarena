@@ -1,11 +1,11 @@
 name=Runed Stalactite
-image=http://mtgimage.com/card/runed%20stalactite.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mma/214.jpg
+value=3.667
 rarity=C
 type=Artifact
 subtype=Equipment
 cost={1}
 ability=Equipped creature gets +1/+1 and is every creature type.;\
         Equip {2}
-timing=main
-oracle=Equipped creature gets +1/+1 and is every creature type. Equip {2}
+timing=equipment
+oracle=Equipped creature gets +1/+1 and is every creature type.\nEquip {2}

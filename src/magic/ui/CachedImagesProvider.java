@@ -1,10 +1,10 @@
 package magic.ui;
 
+import magic.ui.utility.GraphicsUtils;
 import java.awt.Dimension;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.Map;
-import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.utility.MagicFileSystem;
 
@@ -15,7 +15,6 @@ import magic.utility.MagicFileSystem;
 public class CachedImagesProvider implements CardImagesProvider {
 
     private static final CardImagesProvider INSTANCE=new CachedImagesProvider();
-    private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
     private static final int MAX_IMAGES=100;
     private final Map<String,BufferedImage> scaledImages = new magic.data.LRUCache<>(MAX_IMAGES);
@@ -24,10 +23,7 @@ public class CachedImagesProvider implements CardImagesProvider {
     private CachedImagesProvider() {}
 
     @Override
-    public BufferedImage getImage(
-            final MagicCardDefinition cardDefinition,
-            final int index,
-            final boolean orig) {
+    public BufferedImage getImage(final MagicCardDefinition cardDefinition, final int index, final boolean orig) {
 
         if (cardDefinition == MagicCardDefinition.MORPH) {
             return getMorphImage(orig);
@@ -35,7 +31,7 @@ public class CachedImagesProvider implements CardImagesProvider {
         if (cardDefinition == MagicCardDefinition.UNKNOWN) {
             return IconImages.MISSING_CARD;
         }
-        if (cardDefinition.isMissing()) {
+        if (cardDefinition.isInvalid()) {
             if (!MagicFileSystem.getCardImageFile(cardDefinition, index).exists()) {
                 return IconImages.MISSING_CARD;
             }
@@ -59,8 +55,8 @@ public class CachedImagesProvider implements CardImagesProvider {
 
     private BufferedImage getScaledImage(final String cacheKey, final BufferedImage sourceImage) {
         if (!scaledImages.containsKey(cacheKey)) {
-            final Dimension imageSize = CONFIG.getMaxCardImageSize();
-            final BufferedImage image = GraphicsUtilities.scale(sourceImage, imageSize.width, imageSize.height);
+            final Dimension imageSize = GraphicsUtils.getMaxCardImageSize();
+            final BufferedImage image = GraphicsUtils.scale(sourceImage, imageSize.width, imageSize.height);
             scaledImages.put(cacheKey, image);
             return image;
         } else {

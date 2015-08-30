@@ -1,6 +1,6 @@
 name=Ironclaw Curse
-image=http://mtgimage.com/card/ironclaw%20curse.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5e/244.jpg
+value=2.196
 rarity=R
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={R}
 ability=Enchant creature;\
         Enchanted creature gets -0/-1.;\
         Enchanted creature can't block creatures with power equal to or greater than the enchanted creature's toughness.
-timing=main
-oracle=Enchant creature. Enchanted creature gets -0/-1. Enchanted creature can't block creatures with power equal to or greater than the enchanted creature's toughness.
+timing=aura
+oracle=Enchant creature\nEnchanted creature gets -0/-1.\nEnchanted creature can't block creatures with power equal to or greater than the enchanted creature's toughness.

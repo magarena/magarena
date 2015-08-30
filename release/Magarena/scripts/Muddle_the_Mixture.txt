@@ -1,5 +1,5 @@
 name=Muddle the Mixture
-image=http://mtgimage.com/card/muddle%20the%20mixture.jpg
+image=http://magiccards.info/scans/en/rav/60.jpg
 value=4.552
 rarity=C
 type=Instant
@@ -7,4 +7,4 @@ cost={U}{U}
 effect=Counter target instant or sorcery spell.
 ability=Transmute {1}{U}{U}
 timing=counter
-oracle=Counter target instant or sorcery spell. Transmute {1}{U}{U}
+oracle=Counter target instant or sorcery spell.\nTransmute {1}{U}{U}

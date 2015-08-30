@@ -1,11 +1,11 @@
 name=Chamber of Manipulation
-image=http://mtgimage.com/card/chamber%20of%20manipulation.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/76.jpg
+value=3.481
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{U}{U}
 ability=Enchant land;\
         Enchanted land has "{T}, Discard a card: Gain control of target creature until end of turn."
-timing=main
-oracle=Enchant land. Enchanted land has "{T}, Discard a card: Gain control of target creature until end of turn."
+timing=aura
+oracle=Enchant land\nEnchanted land has "{T}, Discard a card: Gain control of target creature until end of turn."

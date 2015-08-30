@@ -1,0 +1,8 @@
+name=1/1 green Cat creature token
+token=Cat
+image=http://cdn.staticneo.com/w/mtg/d/d1/Cat.jpg
+value=1
+type=Creature
+subtype=Cat
+color=g
+pt=1/1

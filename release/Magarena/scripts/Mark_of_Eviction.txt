@@ -1,0 +1,12 @@
+name=Mark of Eviction
+image=http://magiccards.info/scans/en/rav/58.jpg
+value=3.986
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={U}
+timing=aura
+enchant=exile,creature
+requires_groovy_code
+oracle=Enchant creature\nAt the beginning of your upkeep, return enchanted creature and all Auras attached to that creature to their owners' hands.
+# Would prefer a 'bounce' target instead of exile

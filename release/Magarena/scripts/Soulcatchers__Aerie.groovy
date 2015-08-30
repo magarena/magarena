@@ -13,21 +13,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeCountersAction(
+            game.doAction(new ChangeCountersAction(
                 event.getPermanent(),
                 MagicCounterType.Feather,
                 1
             ));
-        }
-    },   
-    new MagicStatic(
-        MagicLayer.ModPT,
-        MagicTargetFilterFactory.multiple("Bird creatures")
-    ) {
-        @Override
-        public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
-            final int amount = source.getCounters(MagicCounterType.Feather);
-            pt.add(amount,amount);
         }
     }
 ]

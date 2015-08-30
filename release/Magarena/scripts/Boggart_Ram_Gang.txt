@@ -1,5 +1,5 @@
 name=Boggart Ram-Gang
-image=http://mtgimage.com/card/boggart%20ram%2Dgang.jpg
+image=http://magiccards.info/scans/en/shm/203.jpg
 value=3.573
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={R/G}{R/G}{R/G}
 pt=3/3
 ability=haste;wither
 timing=fmain
-oracle=Haste. Wither
+oracle=Haste\nWither

@@ -1,5 +1,5 @@
 name=Rootwater Commando
-image=http://mtgimage.com/card/rootwater%20commando.jpg
+image=http://magiccards.info/scans/en/10e/102.jpg
 value=3.096
 ability=islandwalk
 rarity=C

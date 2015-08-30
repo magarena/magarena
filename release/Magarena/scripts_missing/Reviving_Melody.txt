@@ -1,9 +1,9 @@
 name=Reviving Melody
-image=http://mtgimage.com/card/reviving%20melody.jpg
-value=2.500
+image=http://magiccards.info/scans/en/jou/138.jpg
+value=3.658
 rarity=U
 type=Sorcery
 cost={2}{G}
-effect=Choose one or both — • Return target creature card from your graveyard to your hand. • Return target enchantment card from your graveyard to your hand.
+effect=Choose one or both — (1) Return target creature card from your graveyard to your hand. (2) Return target enchantment card from your graveyard to your hand.
 timing=main
-oracle=Choose one or both — • Return target creature card from your graveyard to your hand. • Return target enchantment card from your graveyard to your hand.
+oracle=Choose one or both —\n• Return target creature card from your graveyard to your hand.\n• Return target enchantment card from your graveyard to your hand.

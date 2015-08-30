@@ -1,10 +1,10 @@
 name=Roar of Jukai
-image=http://mtgimage.com/card/roar%20of%20jukai.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bok/140.jpg
+value=2.097
 rarity=C
 type=Instant
 subtype=Arcane
 cost={2}{G}
 effect=If you control a Forest, each blocked creature gets +2/+2 until end of turn.~Splice onto Arcane—An opponent gains 5 life.
 timing=removal
-oracle=If you control a Forest, each blocked creature gets +2/+2 until end of turn. Splice onto Arcane—An opponent gains 5 life.
+oracle=If you control a Forest, each blocked creature gets +2/+2 until end of turn.\nSplice onto Arcane—An opponent gains 5 life.

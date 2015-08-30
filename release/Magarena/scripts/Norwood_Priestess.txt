@@ -1,5 +1,5 @@
 name=Norwood Priestess
-image=http://mtgimage.com/card/norwood%20priestess.jpg
+image=http://magiccards.info/scans/en/vma/221.jpg
 value=2.500
 rarity=R
 type=Creature

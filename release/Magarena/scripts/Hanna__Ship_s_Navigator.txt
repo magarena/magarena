@@ -1,5 +1,5 @@
 name=Hanna, Ship's Navigator
-image=http://mtgimage.com/card/hanna,%20ship's%20navigator.jpg
+image=http://magiccards.info/scans/en/in/249.jpg
 value=4.038
 rarity=R
 type=Legendary,Creature

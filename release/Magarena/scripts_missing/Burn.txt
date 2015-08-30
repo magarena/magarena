@@ -1,9 +1,9 @@
 name=Burn
-image=http://mtgimage.com/card/turnburn.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dgm/134b.jpg
+value=4.101
 rarity=U
 type=Instant
 cost={1}{R}
 effect=SN deals 2 damage to target creature or player.~Fuse
 timing=removal
-oracle=Burn deals 2 damage to target creature or player. Fuse
+oracle=Burn deals 2 damage to target creature or player.\nFuse

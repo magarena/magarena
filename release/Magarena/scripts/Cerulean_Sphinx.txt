@@ -1,0 +1,12 @@
+name=Cerulean Sphinx
+image=http://magiccards.info/scans/en/rav/39.jpg
+value=3.094
+rarity=R
+type=Creature
+subtype=Sphinx
+cost={4}{U}{U}
+pt=5/5
+ability=Flying
+timing=main
+requires_groovy_code
+oracle=Flying\n{U}: Cerulean Sphinx's owner shuffles it into his or her library.

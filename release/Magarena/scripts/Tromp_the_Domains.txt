@@ -1,9 +1,10 @@
 name=Tromp the Domains
-image=http://mtgimage.com/card/tromp%20the%20domains.jpg
+image=http://magiccards.info/scans/en/mma/171.jpg
 value=3.588
 rarity=U
 type=Sorcery
 cost={5}{G}
-timing=main
+ability=Cast SN with AI only if you control a creature.
+timing=fmain
 requires_groovy_code
 oracle=Domain — Until end of turn, creatures you control gain trample and get +1/+1 for each basic land type among lands you control.

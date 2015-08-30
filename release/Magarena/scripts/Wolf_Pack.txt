@@ -1,5 +1,5 @@
 name=Wolf Pack
-image=http://mtgimage.com/card/wolf%20pack.jpg
+image=http://magiccards.info/scans/en/me2/187.jpg
 value=3.909
 rarity=R
 type=Creature

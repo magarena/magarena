@@ -1,6 +1,6 @@
 name=Denying Wind
-image=http://mtgimage.com/card/denying%20wind.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pr/32.jpg
+value=2.230
 rarity=R
 type=Sorcery
 cost={7}{U}{U}

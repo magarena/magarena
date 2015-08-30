@@ -1,9 +1,10 @@
 name=Hail Storm
-image=http://mtgimage.com/card/hail%20storm.jpg
+image=http://magiccards.info/scans/en/tsts/79.jpg
 value=3.221
 rarity=U
 type=Instant
 cost={1}{G}{G}
+ability=Cast SN with AI only if an opponent controls an attacking creature.
 timing=block
 requires_groovy_code
 oracle=Hail Storm deals 2 damage to each attacking creature and 1 damage to you and each creature you control.

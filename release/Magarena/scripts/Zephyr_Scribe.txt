@@ -1,0 +1,12 @@
+name=Zephyr Scribe
+image=http://magiccards.info/scans/en/dtk/85.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Monk
+cost={2}{U}
+pt=2/1
+ability={U}, {T}: Draw a card, then discard a card.;\
+        Whenever you cast a noncreature spell, untap SN.
+timing=main
+oracle={U}, {T}: Draw a card, then discard a card.\nWhenever you cast a noncreature spell, untap Zephyr Scribe.

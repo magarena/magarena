@@ -1,12 +1,12 @@
 name=Village Survivors
-image=http://mtgimage.com/card/village%20survivors.jpg
+image=http://magiccards.info/scans/en/dka/130.jpg
 value=3.205
 rarity=U
 type=Creature
 subtype=Human
 cost={4}{G}
 pt=4/5
-ability=vigilance
+ability=vigilance;\
+        As long as you have 5 or less life, other creatures you control have vigilance.
 timing=fmain
-requires_groovy_code
-oracle=Vigilance. Fateful hour — As long as you have 5 or less life, other creatures you control have vigilance.
+oracle=Vigilance\nFateful hour — As long as you have 5 or less life, other creatures you control have vigilance.

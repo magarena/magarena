@@ -1,7 +1,7 @@
 [
     new MagicWhenOtherPutIntoGraveyardTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicMoveCardAction act) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MoveCardAction act) {
             final MagicCard card = act.card;
             return (card.isEnemy(permanent)) ?
                 new MagicEvent(
@@ -13,7 +13,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,1));
+            game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,1));
         }
     }
 ]

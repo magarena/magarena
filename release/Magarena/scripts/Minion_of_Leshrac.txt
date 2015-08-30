@@ -1,5 +1,5 @@
 name=Minion of Leshrac
-image=http://mtgimage.com/card/minion%20of%20leshrac.jpg
+image=http://magiccards.info/scans/en/me2/104.jpg
 value=3.738
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=Protection from black;\
         {T}: Destroy target creature or land.
 timing=main
 requires_groovy_code
-oracle=Protection from black. At the beginning of your upkeep, Minion of Leshrac deals 5 damage to you unless you sacrifice a creature other than Minion of Leshrac. If Minion of Leshrac deals damage to you this way, tap it. {T}: Destroy target creature or land.
+oracle=Protection from black\nAt the beginning of your upkeep, Minion of Leshrac deals 5 damage to you unless you sacrifice a creature other than Minion of Leshrac. If Minion of Leshrac deals damage to you this way, tap it.\n{T}: Destroy target creature or land.

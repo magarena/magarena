@@ -1,10 +1,7 @@
 [
     new MagicWhenSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicCardOnStack spell) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicCardOnStack spell) {
             return new MagicEvent(
                 spell,
                 this,
@@ -13,7 +10,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicDrawAction(event.getPlayer(),4));
+            game.doAction(new DrawAction(event.getPlayer(),4));
         }
     }
 ]

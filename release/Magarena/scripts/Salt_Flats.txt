@@ -1,5 +1,5 @@
 name=Salt Flats
-image=http://mtgimage.com/card/salt%20flats.jpg
+image=http://magiccards.info/scans/en/vma/310.jpg
 value=2.838
 rarity=R
 type=Land
@@ -8,4 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {1} to your mana pool.;\
         {T}: Add {W} or {B} to your mana pool. SN deals 1 damage to you.
 timing=tapland
-oracle=Salt Flats enters the battlefield tapped. {T}: Add {1} to your mana pool. {T}: Add {W} or {B} to your mana pool. Salt Flats deals 1 damage to you.
+oracle=Salt Flats enters the battlefield tapped.\n{T}: Add {1} to your mana pool.\n{T}: Add {W} or {B} to your mana pool. Salt Flats deals 1 damage to you.

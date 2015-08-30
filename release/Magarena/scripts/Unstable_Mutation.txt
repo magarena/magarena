@@ -1,5 +1,5 @@
 name=Unstable Mutation
-image=http://mtgimage.com/card/unstable%20mutation.jpg
+image=http://magiccards.info/scans/en/tsts/33.jpg
 value=4.217
 rarity=C
 type=Enchantment
@@ -9,4 +9,4 @@ ability=Enchanted creature gets +3/+3.
 enchant=pump,creature
 timing=enchantment
 requires_groovy_code
-oracle=Enchant creature. Enchanted creature gets +3/+3. At the beginning of the upkeep of enchanted creature's controller, put a -1/-1 counter on that creature.
+oracle=Enchant creature\nEnchanted creature gets +3/+3.\nAt the beginning of the upkeep of enchanted creature's controller, put a -1/-1 counter on that creature.

@@ -1,6 +1,6 @@
 name=Rootwater Shaman
-image=http://mtgimage.com/card/rootwater%20shaman.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tp/84.jpg
+value=3.768
 rarity=R
 type=Creature
 subtype=Merfolk,Shaman

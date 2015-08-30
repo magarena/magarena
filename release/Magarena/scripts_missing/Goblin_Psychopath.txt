@@ -1,6 +1,6 @@
 name=Goblin Psychopath
-image=http://mtgimage.com/card/goblin%20psychopath.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sc/95.jpg
+value=1.609
 rarity=U
 type=Creature
 subtype=Goblin,Mutant

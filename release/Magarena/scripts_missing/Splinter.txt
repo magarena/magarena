@@ -1,6 +1,6 @@
 name=Splinter
-image=http://mtgimage.com/card/splinter.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bok/146.jpg
+value=4.176
 rarity=U
 type=Sorcery
 cost={2}{G}{G}

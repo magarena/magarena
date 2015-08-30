@@ -1,5 +1,5 @@
 name=Overwhelming Forces
-image=http://mtgimage.com/card/overwhelming%20forces.jpg
+image=http://magiccards.info/scans/en/me4/92.jpg
 value=4.151
 rarity=R
 type=Sorcery

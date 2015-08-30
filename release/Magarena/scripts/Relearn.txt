@@ -1,5 +1,5 @@
 name=Relearn
-image=http://mtgimage.com/card/relearn.jpg
+image=http://magiccards.info/scans/en/st/48.jpg
 value=3.404
 rarity=U
 type=Sorcery

@@ -1,0 +1,9 @@
+name=Descent of the Dragons
+image=http://magiccards.info/scans/en/dtk/133.jpg
+value=2.500
+rarity=M
+type=Sorcery
+cost={4}{R}{R}
+effect=Destroy any number of target creatures. For each creature destroyed this way, its controller puts a 4/4 red Dragon creature token with flying onto the battlefield.
+timing=main
+oracle=Destroy any number of target creatures. For each creature destroyed this way, its controller puts a 4/4 red Dragon creature token with flying onto the battlefield.

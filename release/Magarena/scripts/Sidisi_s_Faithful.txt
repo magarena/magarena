@@ -1,0 +1,12 @@
+name=Sidisi's Faithful
+image=http://magiccards.info/scans/en/dtk/74.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Naga,Wizard
+cost={U}
+pt=0/4
+ability=Exploit;\
+        When SN exploits a creature, return target creature to its owner's hand.
+timing=main
+oracle=Exploit\nWhen Sidisi's Faithful exploits a creature, return target creature to its owner's hand.

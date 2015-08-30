@@ -1,12 +1,12 @@
 name=Allosaurus Rider
-image=http://mtgimage.com/card/allosaurus%20rider.jpg
+image=http://magiccards.info/scans/en/evg/2.jpg
 value=4.056
 rarity=R
 type=Creature
 subtype=Elf,Warrior
 cost={5}{G}{G}
 pt=1+*/1+*
-ability=SN's power and toughness are each equal to 1 plus the number of lands you control.
+ability=You may exile two green cards from your hand rather than pay SN's mana cost.;\
+        SN's power and toughness are each equal to 1 plus the number of lands you control.
 timing=main
-requires_groovy_code
-oracle=You may exile two green cards from your hand rather than pay Allosaurus Rider's mana cost. Allosaurus Rider's power and toughness are each equal to 1 plus the number of lands you control.
+oracle=You may exile two green cards from your hand rather than pay Allosaurus Rider's mana cost.\nAllosaurus Rider's power and toughness are each equal to 1 plus the number of lands you control.

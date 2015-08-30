@@ -1,5 +1,5 @@
 name=Elusive Krasis
-image=http://mtgimage.com/card/elusive%20krasis.jpg
+image=http://magiccards.info/scans/en/gtc/160.jpg
 value=3.826
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=0/4
 ability=SN can't be blocked.;\
         evolve
 timing=main
-oracle=Elusive Krasis can't be blocked. Evolve
+oracle=Elusive Krasis can't be blocked.\nEvolve

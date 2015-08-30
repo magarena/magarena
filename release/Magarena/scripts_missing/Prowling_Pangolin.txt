@@ -1,9 +1,9 @@
 name=Prowling Pangolin
-image=http://mtgimage.com/card/prowling%20pangolin.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/163.jpg
+value=3.579
 rarity=U
 type=Creature
-subtype=Anteater,Beast
+subtype=Beast
 cost={3}{B}{B}
 pt=6/5
 ability=When SN enters the battlefield, any player may sacrifice two creatures. If a player does, sacrifice SN.

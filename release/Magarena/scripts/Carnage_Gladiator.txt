@@ -1,5 +1,5 @@
 name=Carnage Gladiator
-image=http://mtgimage.com/card/carnage%20gladiator.jpg
+image=http://magiccards.info/scans/en/dgm/61.jpg
 value=3.830
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=4/2
 ability={1}{B}{R}: Regenerate SN.
 timing=main
 requires_groovy_code
-oracle=Whenever a creature blocks, that creature's controller loses 1 life. {1}{B}{R}: Regenerate Carnage Gladiator.
+oracle=Whenever a creature blocks, that creature's controller loses 1 life.\n{1}{B}{R}: Regenerate Carnage Gladiator.

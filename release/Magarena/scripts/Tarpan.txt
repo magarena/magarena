@@ -1,5 +1,5 @@
 name=Tarpan
-image=http://mtgimage.com/card/tarpan.jpg
+image=http://magiccards.info/scans/en/5e/192.jpg
 value=2.457
 rarity=C
 type=Creature

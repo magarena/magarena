@@ -1,5 +1,5 @@
 name=Warden of the Wall
-image=http://mtgimage.com/card/warden%20of%20the%20wall.jpg
+image=http://magiccards.info/scans/en/dka/153.jpg
 value=2.554
 rarity=U
 type=Artifact
@@ -8,4 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {1} to your mana pool.
 timing=main
 requires_groovy_code
-oracle=Warden of the Wall enters the battlefield tapped. {T}: Add {1} to your mana pool. As long as it's not your turn, Warden of the Wall is a 2/3 Gargoyle artifact creature with flying.
+oracle=Warden of the Wall enters the battlefield tapped.\n{T}: Add {1} to your mana pool.\nAs long as it's not your turn, Warden of the Wall is a 2/3 Gargoyle artifact creature with flying.

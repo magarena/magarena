@@ -1,12 +1,12 @@
 name=Aurochs
-image=http://mtgimage.com/card/aurochs.jpg
+image=http://magiccards.info/scans/en/cstd/37.jpg
 value=3.292
 rarity=C
 type=Creature
 subtype=Aurochs
 cost={3}{G}
 pt=2/3
-ability=trample
+ability=trample;\
+        Whenever SN attacks, SN gets +1/+0 until end of turn for each other attacking Aurochs.
 timing=main
-requires_groovy_code
-oracle=Trample. Whenever Aurochs attacks, it gets +1/+0 until end of turn for each other attacking Aurochs.
+oracle=Trample\nWhenever Aurochs attacks, it gets +1/+0 until end of turn for each other attacking Aurochs.

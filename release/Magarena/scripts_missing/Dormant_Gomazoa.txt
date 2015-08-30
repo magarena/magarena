@@ -1,6 +1,6 @@
 name=Dormant Gomazoa
-image=http://mtgimage.com/card/dormant%20gomazoa.jpg
-value=2.500
+image=http://magiccards.info/scans/en/roe/62.jpg
+value=2.786
 rarity=R
 type=Creature
 subtype=Jellyfish
@@ -11,4 +11,4 @@ ability=Flying;\
         SN doesn't untap during your untap step.;\
         Whenever you become the target of a spell, you may untap SN.
 timing=main
-oracle=Flying. Dormant Gomazoa enters the battlefield tapped. Dormant Gomazoa doesn't untap during your untap step. Whenever you become the target of a spell, you may untap Dormant Gomazoa.
+oracle=Flying\nDormant Gomazoa enters the battlefield tapped.\nDormant Gomazoa doesn't untap during your untap step.\nWhenever you become the target of a spell, you may untap Dormant Gomazoa.

@@ -1,0 +1,13 @@
+name=Dragonlord Kolaghan
+image=http://magiccards.info/scans/en/dtk/218.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Elder,Dragon
+cost={4}{B}{R}
+pt=6/5
+ability=Flying, haste;\
+        Other creatures you control have haste.;\
+        Whenever an opponent casts a creature or planeswalker spell with the same name as a card in his or her graveyard, that player loses 10 life.
+timing=main
+oracle=Flying, haste\nOther creatures you control have haste.\nWhenever an opponent casts a creature or planeswalker spell with the same name as a card in his or her graveyard, that player loses 10 life.

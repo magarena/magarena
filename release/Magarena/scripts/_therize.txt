@@ -1,9 +1,10 @@
 name=Ætherize
-image=http://mtgimage.com/card/aetherize.jpg
+image=http://magiccards.info/scans/en/ddo/36.jpg
 value=3.752
 rarity=U
 type=Instant
 cost={3}{U}
+ability=Cast SN with AI only if there is an attacking creature on the battlefield.
+effect=Return all attacking creatures to their owner's hand.
 timing=removal
-requires_groovy_code
 oracle=Return all attacking creatures to their owner's hand.

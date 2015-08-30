@@ -1,5 +1,5 @@
 name=Hanweir Lancer
-image=http://mtgimage.com/card/hanweir%20lancer.jpg
+image=http://magiccards.info/scans/en/avr/138.jpg
 value=3.056
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Soulbond;\
         As long as SN is paired with another creature, both creatures have first strike.
 timing=main
-oracle=Soulbond. As long as Hanweir Lancer is paired with another creature, both creatures have first strike.
+oracle=Soulbond\nAs long as Hanweir Lancer is paired with another creature, both creatures have first strike.

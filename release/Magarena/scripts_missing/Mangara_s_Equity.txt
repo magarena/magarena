@@ -1,11 +1,11 @@
 name=Mangara's Equity
-image=http://mtgimage.com/card/mangara%27s%20equity.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/230.jpg
+value=2.736
 rarity=U
 type=Enchantment
 cost={1}{W}{W}
 ability=As SN enters the battlefield, choose black or red.;\
         At the beginning of your upkeep, sacrifice SN unless you pay {1}{W}.;\
         Whenever a creature of the chosen color deals damage to you or a white creature you control, SN deals that much damage to that creature.
-timing=main
-oracle=As Mangara's Equity enters the battlefield, choose black or red. At the beginning of your upkeep, sacrifice Mangara's Equity unless you pay {1}{W}. Whenever a creature of the chosen color deals damage to you or a white creature you control, Mangara's Equity deals that much damage to that creature.
+timing=enchantment
+oracle=As Mangara's Equity enters the battlefield, choose black or red.\nAt the beginning of your upkeep, sacrifice Mangara's Equity unless you pay {1}{W}.\nWhenever a creature of the chosen color deals damage to you or a white creature you control, Mangara's Equity deals that much damage to that creature.

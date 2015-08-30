@@ -1,5 +1,5 @@
 name=Mosquito Guard
-image=http://mtgimage.com/card/mosquito%20guard.jpg
+image=http://magiccards.info/scans/en/ddf/6.jpg
 value=3.103
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=first strike;\
         Reinforce 1—{1}{W}
 timing=main
-oracle=First strike. Reinforce 1—{1}{W}
+oracle=First strike\nReinforce 1—{1}{W}

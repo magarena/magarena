@@ -1,5 +1,5 @@
 name=Spitting Image
-image=http://mtgimage.com/card/spitting%20image.jpg
+image=http://magiccards.info/scans/en/eve/162.jpg
 value=3.675
 rarity=R
 type=Sorcery
@@ -7,4 +7,4 @@ cost={4}{G/U}{G/U}
 timing=main
 ability=Retrace
 requires_groovy_code
-oracle=Put a token that's a copy of target creature onto the battlefield. Retrace
+oracle=Put a token that's a copy of target creature onto the battlefield.\nRetrace

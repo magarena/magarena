@@ -1,6 +1,6 @@
 name=Persecute
-image=http://mtgimage.com/card/persecute.jpg
-value=2.500
+image=http://magiccards.info/scans/en/9e/151.jpg
+value=4.246
 rarity=R
 type=Sorcery
 cost={2}{B}{B}

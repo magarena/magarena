@@ -1,9 +1,9 @@
 name=Boseiju, Who Shelters All
-image=http://mtgimage.com/card/boseiju%2C%20who%20shelters%20all.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/273.jpg
+value=4.058
 rarity=R
 type=Legendary,Land
 ability=SN enters the battlefield tapped.;\
         {T}, Pay 2 life: Add {1} to your mana pool. If that mana is spent on an instant or sorcery spell, that spell can't be countered by spells or abilities.
-timing=main
-oracle=Boseiju, Who Shelters All enters the battlefield tapped. {T}, Pay 2 life: Add {1} to your mana pool. If that mana is spent on an instant or sorcery spell, that spell can't be countered by spells or abilities.
+timing=land
+oracle=Boseiju, Who Shelters All enters the battlefield tapped.\n{T}, Pay 2 life: Add {1} to your mana pool. If that mana is spent on an instant or sorcery spell, that spell can't be countered by spells or abilities.

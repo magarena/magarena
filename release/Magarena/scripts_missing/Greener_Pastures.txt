@@ -1,9 +1,9 @@
 name=Greener Pastures
-image=http://mtgimage.com/card/greener%20pastures.jpg
-value=2.500
+image=http://magiccards.info/scans/en/us/258.jpg
+value=3.683
 rarity=R
 type=Enchantment
 cost={2}{G}
 ability=At the beginning of each player's upkeep, if that player controls more lands than each other player, the player puts a 1/1 green Saproling creature token onto the battlefield.
-timing=main
+timing=enchantment
 oracle=At the beginning of each player's upkeep, if that player controls more lands than each other player, the player puts a 1/1 green Saproling creature token onto the battlefield.

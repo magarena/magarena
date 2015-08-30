@@ -1,12 +1,12 @@
 name=Zombie Trailblazer
-image=http://mtgimage.com/card/zombie%20trailblazer.jpg
+image=http://magiccards.info/scans/en/tr/89.jpg
 value=3.868
 rarity=U
 type=Creature
 subtype=Zombie,Scout
 cost={B}{B}{B}
 pt=2/2
-ability=Tap an untapped Zombie you control: Target creature gains swampwalk until end of turn.
+ability=Tap an untapped Zombie you control: Target land becomes a Swamp until end of turn.;\
+        Tap an untapped Zombie you control: Target creature gains swampwalk until end of turn.
 timing=main
-requires_groovy_code
-oracle=Tap an untapped Zombie you control: Target land becomes a Swamp until end of turn. Tap an untapped Zombie you control: Target creature gains swampwalk until end of turn.
+oracle=Tap an untapped Zombie you control: Target land becomes a Swamp until end of turn.\nTap an untapped Zombie you control: Target creature gains swampwalk until end of turn.

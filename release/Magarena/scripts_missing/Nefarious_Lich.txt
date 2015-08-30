@@ -1,11 +1,11 @@
 name=Nefarious Lich
-image=http://mtgimage.com/card/nefarious%20lich.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/153.jpg
+value=2.534
 rarity=R
 type=Enchantment
 cost={B}{B}{B}{B}
 ability=If damage would be dealt to you, exile that many cards from your graveyard instead. If you can't, you lose the game.;\
         If you would gain life, draw that many cards instead.;\
         When SN leaves the battlefield, you lose the game.
-timing=main
-oracle=If damage would be dealt to you, exile that many cards from your graveyard instead. If you can't, you lose the game. If you would gain life, draw that many cards instead. When Nefarious Lich leaves the battlefield, you lose the game.
+timing=enchantment
+oracle=If damage would be dealt to you, exile that many cards from your graveyard instead. If you can't, you lose the game.\nIf you would gain life, draw that many cards instead.\nWhen Nefarious Lich leaves the battlefield, you lose the game.

@@ -1,5 +1,5 @@
 name=Spirit en-Kor
-image=http://mtgimage.com/card/spirit%20en-kor.jpg
+image=http://magiccards.info/scans/en/sh/119.jpg
 value=2.500
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         {0}: The next 1 damage that would be dealt to SN this turn is dealt to target creature you control instead.
 timing=main
-oracle=Flying. {0}: The next 1 damage that would be dealt to Spirit en-Kor this turn is dealt to target creature you control instead.
+oracle=Flying\n{0}: The next 1 damage that would be dealt to Spirit en-Kor this turn is dealt to target creature you control instead.

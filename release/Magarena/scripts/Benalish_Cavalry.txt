@@ -1,5 +1,5 @@
 name=Benalish Cavalry
-image=http://mtgimage.com/card/benalish%20cavalry.jpg
+image=http://magiccards.info/scans/en/ts/4.jpg
 value=3.725
 rarity=C
 type=Creature

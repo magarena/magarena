@@ -1,6 +1,6 @@
 name=Sword of the Paruns
-image=http://mtgimage.com/card/sword%20of%20the%20paruns.jpg
-value=2.500
+image=http://magiccards.info/scans/en/c13/264.jpg
+value=3.833
 rarity=R
 type=Artifact
 subtype=Equipment
@@ -9,5 +9,5 @@ ability=As long as equipped creature is tapped, tapped creatures you control get
         As long as equipped creature is untapped, untapped creatures you control get +0/+2.;\
         {3}: You may tap or untap equipped creature.;\
         Equip {3}
-timing=main
-oracle=As long as equipped creature is tapped, tapped creatures you control get +2/+0. As long as equipped creature is untapped, untapped creatures you control get +0/+2. {3}: You may tap or untap equipped creature. Equip {3}
+timing=equipment
+oracle=As long as equipped creature is tapped, tapped creatures you control get +2/+0.\nAs long as equipped creature is untapped, untapped creatures you control get +0/+2.\n{3}: You may tap or untap equipped creature.\nEquip {3}

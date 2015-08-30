@@ -13,10 +13,10 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent perm = event.getPermanent();
             if (event.isYes() && event.getPlayer().getNrOfPermanents(MagicSubType.Mountain) >=2) {
-                game.addEvent(new MagicSacrificePermanentEvent(perm,event.getPlayer(),MagicTargetChoice.SACRIFICE_MOUNTAIN));
-                game.addEvent(new MagicSacrificePermanentEvent(perm,event.getPlayer(),MagicTargetChoice.SACRIFICE_MOUNTAIN));
+                game.addEvent(new MagicSacrificePermanentEvent(perm,event.getPlayer(),SACRIFICE_MOUNTAIN));
+                game.addEvent(new MagicSacrificePermanentEvent(perm,event.getPlayer(),SACRIFICE_MOUNTAIN));
             } else {
-                game.doAction(new MagicSacrificeAction(perm));
+                game.doAction(new SacrificeAction(perm));
             }
         }
     }

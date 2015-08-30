@@ -1,5 +1,5 @@
 name=Diplomacy of the Wastes
-image=http://mtgimage.com/card/diplomacy%20of%20the%20wastes.jpg
+image=http://magiccards.info/scans/en/frf/67.jpg
 value=2.500
 rarity=U
 type=Sorcery

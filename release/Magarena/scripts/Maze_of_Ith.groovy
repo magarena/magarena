@@ -29,10 +29,10 @@ def TARGET_ATTACKING_CREATURE = new MagicTargetChoice(
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicUntapAction(it));
-                game.doAction(new MagicAddTurnTriggerAction(
+                game.doAction(new UntapAction(it));
+                game.doAction(new AddTurnTriggerAction(
                     it,
-                    MagicIfDamageWouldBeDealtTrigger.PreventCombatDamageDealtToDealtBy
+                    MagicPreventDamageTrigger.PreventCombatDamageDealtToDealtBy
                 ));
             });
         }

@@ -1,6 +1,6 @@
 name=Rhystic Lightning
-image=http://mtgimage.com/card/rhystic%20lightning.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pr/99.jpg
+value=3.189
 rarity=C
 type=Instant
 cost={2}{R}

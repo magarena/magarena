@@ -1,5 +1,5 @@
 name=Thunderscape Apprentice
-image=http://mtgimage.com/card/thunderscape%20apprentice.jpg
+image=http://magiccards.info/scans/en/in/174.jpg
 value=3.107
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability={B},{T}: Target player loses 1 life.;\
         {G},{T}: Target creature gets +1/+1 until end of turn.
 timing=main
-oracle={B}, {T}: Target player loses 1 life. {G}, {T}: Target creature gets +1/+1 until end of turn.
+oracle={B}, {T}: Target player loses 1 life.\n{G}, {T}: Target creature gets +1/+1 until end of turn.

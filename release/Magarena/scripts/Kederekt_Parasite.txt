@@ -1,11 +1,11 @@
 name=Kederekt Parasite
-image=http://mtgimage.com/card/kederekt%20parasite.jpg
+image=http://magiccards.info/scans/en/cfx/48.jpg
 value=3.794
 rarity=R
 type=Creature
 subtype=Horror
 cost={B}
 pt=1/1
+ability=Whenever an opponent draws a card, if you control a red permanent, you may have SN deal 1 damage to that player.
 timing=main
-requires_groovy_code
 oracle=Whenever an opponent draws a card, if you control a red permanent, you may have Kederekt Parasite deal 1 damage to that player.

@@ -1,10 +1,10 @@
 name=Kodama's Might
-image=http://mtgimage.com/card/kodama%27s%20might.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/224.jpg
+value=3.581
 rarity=C
 type=Instant
 subtype=Arcane
 cost={G}
 effect=Target creature gets +2/+2 until end of turn.~Splice onto Arcane {G}
 timing=removal
-oracle=Target creature gets +2/+2 until end of turn. Splice onto Arcane {G}
+oracle=Target creature gets +2/+2 until end of turn.\nSplice onto Arcane {G}

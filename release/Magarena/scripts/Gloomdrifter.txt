@@ -1,5 +1,5 @@
 name=Gloomdrifter
-image=http://mtgimage.com/card/gloomdrifter.jpg
+image=http://magiccards.info/scans/en/tr/61.jpg
 value=3.413
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         As long as seven or more cards are in your graveyard, SN has "When SN enters the battlefield, nonblack creatures get -2/-2 until end of turn."
 timing=main
-oracle=Flying. Threshold — As long as seven or more cards are in your graveyard, Gloomdrifter has "When Gloomdrifter enters the battlefield, nonblack creatures get -2/-2 until end of turn."
+oracle=Flying\nThreshold — As long as seven or more cards are in your graveyard, Gloomdrifter has "When Gloomdrifter enters the battlefield, nonblack creatures get -2/-2 until end of turn."

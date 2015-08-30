@@ -1,5 +1,5 @@
 name=Soulsurge Elemental
-image=http://mtgimage.com/card/soulsurge%20elemental.jpg
+image=http://magiccards.info/scans/en/roe/163.jpg
 value=3.582
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=*/1
 ability=First strike;\
         SN's power is equal to the number of creatures you control.
 timing=main
-oracle=First strike. Soulsurge Elemental's power is equal to the number of creatures you control.
+oracle=First strike\nSoulsurge Elemental's power is equal to the number of creatures you control.

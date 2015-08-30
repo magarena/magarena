@@ -1,9 +1,9 @@
 name=Zoetic Cavern
-image=http://mtgimage.com/card/zoetic%20cavern.jpg
+image=http://magiccards.info/scans/en/c14/317.jpg
 value=3.244
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\
         Morph {2}
 timing=main
-oracle={T}: Add {1} to your mana pool. Morph {2}
+oracle={T}: Add {1} to your mana pool.\nMorph {2}

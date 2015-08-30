@@ -1,5 +1,5 @@
 name=Scaldkin
-image=http://mtgimage.com/card/scaldkin.jpg
+image=http://magiccards.info/scans/en/ktk/52.jpg
 value=2.000
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         {2}{R}, Sacrifice SN: SN deals 2 damage to target creature or player.
 timing=main
-oracle=Flying. {2}{R}, Sacrifice Scaldkin: Scaldkin deals 2 damage to target creature or player.
+oracle=Flying\n{2}{R}, Sacrifice Scaldkin: Scaldkin deals 2 damage to target creature or player.

@@ -1,5 +1,5 @@
 name=Ballynock Trapper
-image=http://mtgimage.com/card/ballynock%20trapper.jpg
+image=http://magiccards.info/scans/en/eve/2.jpg
 value=3.268
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability={T}: Tap target creature.;\
         Whenever you cast a white spell, you may untap SN.
 timing=main
-oracle={T}: Tap target creature. Whenever you cast a white spell, you may untap Ballynock Trapper.
+oracle={T}: Tap target creature.\nWhenever you cast a white spell, you may untap Ballynock Trapper.

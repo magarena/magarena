@@ -1,5 +1,5 @@
 name=Elven Fortress
-image=http://mtgimage.com/card/elven%20fortress.jpg
+image=http://magiccards.info/scans/en/fe/68.jpg
 value=2.297
 rarity=C
 type=Enchantment

@@ -1,5 +1,5 @@
 name=Crimson Acolyte
-image=http://mtgimage.com/card/crimson%20acolyte.jpg
+image=http://magiccards.info/scans/en/in/11.jpg
 value=3.696
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{W}
 pt=1/1
 ability=protection from red;{W}:Target creature gains protection from red until end of turn.
 timing=main
-oracle=Protection from red. {W}: Target creature gains protection from red until end of turn.
+oracle=Protection from red\n{W}: Target creature gains protection from red until end of turn.

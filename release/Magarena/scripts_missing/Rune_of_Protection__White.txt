@@ -1,10 +1,10 @@
 name=Rune of Protection: White
-image=http://mtgimage.com/card/rune%20of%20protection%20white.jpg
-value=2.500
+image=http://magiccards.info/scans/en/us/41.jpg
+value=3.521
 rarity=C
 type=Enchantment
 cost={1}{W}
 ability={W}: The next time a white source of your choice would deal damage to you this turn, prevent that damage.;\
         Cycling {2}
-timing=main
-oracle={W}: The next time a white source of your choice would deal damage to you this turn, prevent that damage. Cycling {2}
+timing=enchantment
+oracle={W}: The next time a white source of your choice would deal damage to you this turn, prevent that damage.\nCycling {2}

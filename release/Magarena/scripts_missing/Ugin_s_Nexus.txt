@@ -1,10 +1,10 @@
 name=Ugin's Nexus
-image=http://mtgimage.com/card/ugin%27s%20nexus.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/227.jpg
+value=3.500
 rarity=M
 type=Legendary,Artifact
 cost={5}
 ability=If a player would begin an extra turn, that player skips that turn instead.;\
         If SN would be put into a graveyard from the battlefield, instead exile it and take an extra turn after this one.
-timing=main
-oracle=If a player would begin an extra turn, that player skips that turn instead. If Ugin's Nexus would be put into a graveyard from the battlefield, instead exile it and take an extra turn after this one.
+timing=artifact
+oracle=If a player would begin an extra turn, that player skips that turn instead.\nIf Ugin's Nexus would be put into a graveyard from the battlefield, instead exile it and take an extra turn after this one.

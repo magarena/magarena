@@ -1,13 +1,13 @@
 name=Flailing Manticore
-image=http://mtgimage.com/card/flailing%20manticore.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/187.jpg
+value=3.186
 rarity=R
 type=Creature
 subtype=Manticore
 cost={3}{R}
 pt=3/3
-ability=Flying; first strike;\
+ability=Flying, first strike;\
         {1}: SN gets +1/+1 until end of turn. Any player may activate this ability.;\
         {1}: SN gets -1/-1 until end of turn. Any player may activate this ability.
 timing=main
-oracle=Flying, first strike. {1}: Flailing Manticore gets +1/+1 until end of turn. Any player may activate this ability. {1}: Flailing Manticore gets -1/-1 until end of turn. Any player may activate this ability.
+oracle=Flying, first strike\n{1}: Flailing Manticore gets +1/+1 until end of turn. Any player may activate this ability.\n{1}: Flailing Manticore gets -1/-1 until end of turn. Any player may activate this ability.

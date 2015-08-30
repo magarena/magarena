@@ -1,0 +1,9 @@
+name=Chandra's Ignition
+image=http://magiccards.info/scans/en/ori/137.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={3}{R}{R}
+timing=removal
+requires_groovy_code
+oracle=Target creature you control deals damage equal to its power to each other creature and each opponent.

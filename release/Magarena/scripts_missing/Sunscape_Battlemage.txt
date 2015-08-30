@@ -1,6 +1,6 @@
 name=Sunscape Battlemage
-image=http://mtgimage.com/card/sunscape%20battlemage.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pvc/40.jpg
+value=3.635
 rarity=U
 type=Creature
 subtype=Human,Wizard
@@ -10,4 +10,4 @@ ability=Kicker {1}{G} and/or {2}{U};\
         When SN enters the battlefield, if it was kicked with its {1}{G} kicker, destroy target creature with flying.;\
         When SN enters the battlefield, if it was kicked with its {2}{U} kicker, draw two cards.
 timing=main
-oracle=Kicker {1}{G} and/or {2}{U}. When Sunscape Battlemage enters the battlefield, if it was kicked with its {1}{G} kicker, destroy target creature with flying. When Sunscape Battlemage enters the battlefield, if it was kicked with its {2}{U} kicker, draw two cards.
+oracle=Kicker {1}{G} and/or {2}{U}\nWhen Sunscape Battlemage enters the battlefield, if it was kicked with its {1}{G} kicker, destroy target creature with flying.\nWhen Sunscape Battlemage enters the battlefield, if it was kicked with its {2}{U} kicker, draw two cards.

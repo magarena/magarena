@@ -1,9 +1,0 @@
-name=Rakshasa's Disdain
-image=http://mtgimage.com/card/rakshasa%27s%20disdain.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={2}{U}
-effect=Counter target spell unless its controller pays {1} for each card in your graveyard.
-timing=removal
-oracle=Counter target spell unless its controller pays {1} for each card in your graveyard.

@@ -1,6 +1,6 @@
 name=Screeching Griffin
-image=http://mtgimage.com/card/screeching%20griffin.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rav/29.jpg
+value=2.045
 rarity=C
 type=Creature
 subtype=Griffin
@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         {R}: Target creature can't block SN this turn.
 timing=main
-oracle=Flying. {R}: Target creature can't block Screeching Griffin this turn.
+oracle=Flying\n{R}: Target creature can't block Screeching Griffin this turn.

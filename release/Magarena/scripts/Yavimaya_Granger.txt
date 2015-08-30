@@ -1,5 +1,5 @@
 name=Yavimaya Granger
-image=http://mtgimage.com/card/yavimaya%20granger.jpg
+image=http://magiccards.info/scans/en/ul/118.jpg
 value=3.774
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=echo {2}{G};\
        When SN enters the battlefield, you may search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.
 timing=main
-oracle=Echo {2}{G}. When Yavimaya Granger enters the battlefield, you may search your library for a basic land card, put that card onto the battlefield tapped, then shuffle your library.
+oracle=Echo {2}{G}\nWhen Yavimaya Granger enters the battlefield, you may search your library for a basic land card, put that card onto the battlefield tapped, then shuffle your library.

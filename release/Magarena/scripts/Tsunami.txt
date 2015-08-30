@@ -1,9 +1,10 @@
 name=Tsunami
-image=http://mtgimage.com/card/tsunami.jpg
+image=http://magiccards.info/scans/en/me4/171.jpg
 value=3.957
 rarity=R
 type=Sorcery
 cost={3}{G}
+ability=Cast SN with AI only if an opponent controls an Island.
 effect=Destroy all Islands.
 timing=removal
 oracle=Destroy all Islands.

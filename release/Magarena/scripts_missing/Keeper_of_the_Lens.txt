@@ -1,0 +1,11 @@
+name=Keeper of the Lens
+image=http://magiccards.info/scans/en/dtk/240.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Golem
+cost={1}
+pt=1/2
+ability=You may look at face-down creatures you don't control.
+timing=artifact
+oracle=You may look at face-down creatures you don't control.

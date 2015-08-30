@@ -1,6 +1,6 @@
 name=Aven Soulgazer
-image=http://mtgimage.com/card/aven%20soulgazer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/8.jpg
+value=1.815
 rarity=U
 type=Creature
 subtype=Bird,Cleric
@@ -9,4 +9,4 @@ pt=3/3
 ability=Flying;\
         {2}{W}: Look at target face-down creature.
 timing=main
-oracle=Flying. {2}{W}: Look at target face-down creature.
+oracle=Flying\n{2}{W}: Look at target face-down creature.

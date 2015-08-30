@@ -1,5 +1,5 @@
 name=Putrid Leech
-image=http://mtgimage.com/card/putrid%20leech.jpg
+image=http://magiccards.info/scans/en/ddm/51.jpg
 value=4.235
 rarity=C
 type=Creature

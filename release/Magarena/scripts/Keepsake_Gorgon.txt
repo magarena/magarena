@@ -1,5 +1,5 @@
 name=Keepsake Gorgon
-image=http://mtgimage.com/card/keepsake%20gorgon.jpg
+image=http://magiccards.info/scans/en/ths/93.jpg
 value=3.446
 rarity=U
 type=Creature
@@ -10,4 +10,4 @@ ability=Deathtouch;\
         {5}{B}{B}: Monstrosity 1.;\
         When SN becomes monstrous, destroy target non-Gorgon creature an opponent controls.
 timing=main
-oracle=Deathtouch. {5}{B}{B}: Monstrosity 1. When Keepsake Gorgon becomes monstrous, destroy target non-Gorgon creature an opponent controls.
+oracle=Deathtouch\n{5}{B}{B}: Monstrosity 1.\nWhen Keepsake Gorgon becomes monstrous, destroy target non-Gorgon creature an opponent controls.

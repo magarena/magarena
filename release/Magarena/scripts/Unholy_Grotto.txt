@@ -1,9 +1,9 @@
 name=Unholy Grotto
-image=http://mtgimage.com/card/unholy%20grotto.jpg
+image=http://magiccards.info/scans/en/on/327.jpg
 value=4.222
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\
         {B}, {T}: Put target Zombie card from your graveyard on top of your library.
 timing=land
-oracle={T}: Add {1} to your mana pool. {B}, {T}: Put target Zombie card from your graveyard on top of your library.
+oracle={T}: Add {1} to your mana pool.\n{B}, {T}: Put target Zombie card from your graveyard on top of your library.

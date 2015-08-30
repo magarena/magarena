@@ -1,0 +1,12 @@
+name=Incandescent Soulstoke
+image=http://magiccards.info/scans/en/lw/178.jpg
+value=4.233
+rarity=R
+type=Creature
+subtype=Elemental,Shaman
+cost={2}{R}
+pt=2/2
+ability=Other Elemental creatures you control get +1/+1.;\
+        {1}{R}, {T}: You may put an Elemental creature card from your hand onto the battlefield. It gains haste until end of turn. Sacrifice it at the beginning of the next end step.
+timing=main
+oracle=Other Elemental creatures you control get +1/+1.\n{1}{R}, {T}: You may put an Elemental creature card from your hand onto the battlefield. That creature gains haste until end of turn. Sacrifice it at the beginning of the next end step.

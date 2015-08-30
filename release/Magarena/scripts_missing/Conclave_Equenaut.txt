@@ -1,6 +1,6 @@
 name=Conclave Equenaut
-image=http://mtgimage.com/card/conclave%20equenaut.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddf/19.jpg
+value=2.118
 rarity=C
 type=Creature
 subtype=Human,Soldier
@@ -9,4 +9,4 @@ pt=3/3
 ability=Convoke;\
         Flying
 timing=main
-oracle=Convoke. Flying
+oracle=Convoke\nFlying

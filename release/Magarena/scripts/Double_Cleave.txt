@@ -1,5 +1,5 @@
 name=Double Cleave
-image=http://mtgimage.com/card/double%20cleave.jpg
+image=http://magiccards.info/scans/en/pch/100.jpg
 value=3.915
 rarity=C
 type=Instant

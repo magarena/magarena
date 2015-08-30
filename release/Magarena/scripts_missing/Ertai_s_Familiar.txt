@@ -1,6 +1,6 @@
 name=Ertai's Familiar
-image=http://mtgimage.com/card/ertai%27s%20familiar.jpg
-value=2.500
+image=http://magiccards.info/scans/en/wl/38.jpg
+value=2.711
 rarity=R
 type=Creature
 subtype=Illusion
@@ -10,4 +10,4 @@ ability=Phasing;\
         When SN phases out or leaves the battlefield, put the top three cards of your library into your graveyard.;\
         {U}: Until your next upkeep, SN can't phase out.
 timing=main
-oracle=Phasing. When Ertai's Familiar phases out or leaves the battlefield, put the top three cards of your library into your graveyard. {U}: Until your next upkeep, Ertai's Familiar can't phase out.
+oracle=Phasing\nWhen Ertai's Familiar phases out or leaves the battlefield, put the top three cards of your library into your graveyard.\n{U}: Until your next upkeep, Ertai's Familiar can't phase out.

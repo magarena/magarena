@@ -19,10 +19,12 @@ import magic.utility.MagicSystem;
 import magic.data.CardDefinitions;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
-import magic.data.URLUtils;
+import magic.ui.URLUtils;
 import magic.exception.DesktopNotSupportedException;
 import magic.model.MagicCardDefinition;
+import magic.ui.utility.DesktopUtils;
 import magic.ui.ScreenController;
+import magic.translate.UiString;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.interfaces.IWikiPage;
@@ -31,13 +33,22 @@ import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.TextFileReaderPanel;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
-import magic.ui.MagicStyle;
+import magic.ui.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class CardScriptScreen
     extends AbstractScreen
     implements IStatusBar, IActionBar, IWikiPage {
+
+    // translatable strings
+    private static final String _S1 = "Card Script";
+    private static final String _S2 = "Close";
+    private static final String _S3 = "Reload";
+    private static final String _S4 = "Reload script/groovy files.";
+    private static final String _S5 = "Firemind";
+    private static final String _S6 = "Opens the Project Firemind scrips submission page in your browser.";
+    private static final String _S7 = "Unable to open file :\n%s\n\n%s";
 
     private final ScreenContent content;
 
@@ -48,7 +59,7 @@ public class CardScriptScreen
 
     @Override
     public String getScreenCaption() {
-        return "Card Script";
+        return UiString.get(_S1);
     }
 
     @Override
@@ -56,33 +67,21 @@ public class CardScriptScreen
         return null;
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.screen.AbstractScreen#isScreenReadyToClose(magic.ui.screen.AbstractScreen)
-     */
     @Override
     public boolean isScreenReadyToClose(AbstractScreen nextScreen) {
         return true;
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.screen.interfaces.IActionBar#getLeftAction()
-     */
     @Override
     public MenuButton getLeftAction() {
-        return MenuButton.getCloseScreenButton("Close");
+        return MenuButton.getCloseScreenButton(UiString.get(_S2));
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.screen.interfaces.IActionBar#getRightAction()
-     */
     @Override
     public MenuButton getRightAction() {
         return null;
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.screen.interfaces.IActionBar#getMiddleActions()
-     */
     @Override
     public List<MenuButton> getMiddleActions() {
         final List<MenuButton> buttons = new ArrayList<>();
@@ -90,7 +89,7 @@ public class CardScriptScreen
             buttons.add(
                     new ActionBarButton(
                             IconImages.getIcon(MagicIcon.REFRESH_ICON),
-                            "Reload", "Reload script/groovy files.",
+                            UiString.get(_S3), UiString.get(_S4),
                             new AbstractAction() {
                                 @Override
                                 public void actionPerformed(final ActionEvent e) {
@@ -103,7 +102,7 @@ public class CardScriptScreen
         }
         buttons.add(
                 new ActionBarButton(
-                        "Firemind", "Opens the Project Firemind scrips submission page in your browser.",
+                        UiString.get(_S5), UiString.get(_S6),
                         new AbstractAction() {
                             @Override
                             public void actionPerformed(final ActionEvent e) {
@@ -139,7 +138,7 @@ public class CardScriptScreen
 
         public ScreenContent(final MagicCardDefinition card) {
 
-            final Path scriptsPath = card.isMissing() ?
+            final Path scriptsPath = card.isInvalid() ?
                     MagicFileSystem.getDataPath(DataPath.SCRIPTS_MISSING) :
                     MagicFileSystem.getDataPath(DataPath.SCRIPTS);
 
@@ -233,15 +232,15 @@ public class CardScriptScreen
                 @Override
                 public void mouseClicked(MouseEvent e) {
                     try {
-                        MagicFileSystem.openFileInDefaultOsEditor(textFile);
+                        DesktopUtils.openFileInDefaultOsEditor(textFile);
                     } catch (IOException | DesktopNotSupportedException ex) {
-                        ScreenController.showWarningMessage("Unable to open file :\n" + textFile + "\n\n" + ex.getMessage());
+                        ScreenController.showWarningMessage(UiString.get(_S7, textFile, ex.getMessage()));
                     }
                 }
                 @Override
                 public void mouseEntered(MouseEvent e) {
                     headerLabel.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-                    headerLabel.setForeground(MagicStyle.HIGHLIGHT_COLOR);
+                    headerLabel.setForeground(MagicStyle.getRolloverColor());
                 }
                 @Override
                 public void mouseExited(MouseEvent e) {

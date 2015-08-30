@@ -1,5 +1,5 @@
 name=Hellkite Igniter
-image=http://mtgimage.com/card/hellkite%20igniter.jpg
+image=http://magiccards.info/scans/en/mbs/65.jpg
 value=3.439
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=5/5
 ability=Flying; haste
 timing=main
 requires_groovy_code
-oracle=Flying, haste. {1}{R}: Hellkite Igniter gets +X/+0 until end of turn, where X is the number of artifacts you control.
+oracle=Flying, haste\n{1}{R}: Hellkite Igniter gets +X/+0 until end of turn, where X is the number of artifacts you control.

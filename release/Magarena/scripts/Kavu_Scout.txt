@@ -1,11 +1,11 @@
 name=Kavu Scout
-image=http://mtgimage.com/card/kavu%20scout.jpg
+image=http://magiccards.info/scans/en/in/151.jpg
 value=2.846
 rarity=C
 type=Creature
 subtype=Kavu,Scout
 cost={2}{R}
 pt=0/2
+ability=SN gets +1/+0 for each basic land type among lands you control.
 timing=main
-requires_groovy_code
 oracle=Domain — Kavu Scout gets +1/+0 for each basic land type among lands you control.

@@ -1,6 +1,6 @@
 name=Standard Bearer
-image=http://mtgimage.com/card/standard%20bearer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ap/18.jpg
+value=4.010
 rarity=C
 type=Creature
 subtype=Human,Flagbearer

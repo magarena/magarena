@@ -1,9 +1,9 @@
 name=Fyndhorn Pollen
-image=http://mtgimage.com/card/fyndhorn%20pollen.jpg
+image=http://magiccards.info/scans/en/me2/166.jpg
 value=1.792
 rarity=R
 type=Enchantment
 cost={2}{G}
 ability=all creatures get -1/-0;{1}{G}:All creatures get -1/-0 until end of turn.
 timing=enchantment
-oracle=Cumulative upkeep {1}. All creatures get -1/-0. {1}{G}: All creatures get -1/-0 until end of turn.
+oracle=Cumulative upkeep {1}\nAll creatures get -1/-0.\n{1}{G}: All creatures get -1/-0 until end of turn.

@@ -14,7 +14,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.PosOther("target creature", source.getEnchantedPermanent()),
+                PosOther("target creature", source.getEnchantedPermanent()),
                 this,
                 "Attach SN to target creature\$."
             );
@@ -23,7 +23,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicAttachAction(
+                game.doAction(new AttachAction(
                     event.getPermanent(),
                     it
                 ));

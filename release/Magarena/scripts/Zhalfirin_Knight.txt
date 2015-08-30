@@ -1,5 +1,5 @@
 name=Zhalfirin Knight
-image=http://mtgimage.com/card/zhalfirin%20knight.jpg
+image=http://magiccards.info/scans/en/mr/254.jpg
 value=3.359
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{W}
 pt=2/2
 ability=flanking;{W}{W}: SN gains first strike until end of turn.
 timing=main
-oracle=Flanking. {W}{W}: Zhalfirin Knight gains first strike until end of turn.
+oracle=Flanking\n{W}{W}: Zhalfirin Knight gains first strike until end of turn.

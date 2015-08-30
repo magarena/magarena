@@ -1,5 +1,5 @@
 name=Dauthi Horror
-image=http://mtgimage.com/card/dauthi%20horror.jpg
+image=http://magiccards.info/scans/en/tp/16.jpg
 value=4.083
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=shadow;\
         SN can't be blocked by white creatures.
 timing=main
-oracle=Shadow. Dauthi Horror can't be blocked by white creatures.
+oracle=Shadow\nDauthi Horror can't be blocked by white creatures.

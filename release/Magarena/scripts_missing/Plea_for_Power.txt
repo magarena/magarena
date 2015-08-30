@@ -1,6 +1,6 @@
 name=Plea for Power
-image=http://mtgimage.com/card/plea%20for%20power.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vma/87.jpg
+value=4.000
 rarity=R
 type=Sorcery
 cost={3}{U}

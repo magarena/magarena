@@ -1,5 +1,5 @@
 name=Scathe Zombies
-image=http://mtgimage.com/card/scathe%20zombies.jpg
+image=http://magiccards.info/scans/en/10e/175.jpg
 value=1.815
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Zombie
 cost={2}{B}
 pt=2/2
 timing=main
+oracle=NONE

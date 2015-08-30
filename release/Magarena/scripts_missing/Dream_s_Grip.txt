@@ -1,9 +1,9 @@
 name=Dream's Grip
-image=http://mtgimage.com/card/dream%27s%20grip.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mi/34.jpg
+value=3.976
 rarity=C
 type=Instant
 cost={U}
-effect=Choose one — • Tap target permanent. • Untap target permanent.~Entwine {1}
+effect=Choose one — (1) Tap target permanent. (2) Untap target permanent.~Entwine {1}
 timing=removal
-oracle=Choose one — • Tap target permanent. • Untap target permanent. Entwine {1}
+oracle=Choose one —\n• Tap target permanent.\n• Untap target permanent.\nEntwine {1}

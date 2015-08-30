@@ -1,10 +1,10 @@
 name=Death of a Thousand Stings
-image=http://mtgimage.com/card/death%20of%20a%20thousand%20stings.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sok/64.jpg
+value=1.432
 rarity=C
 type=Instant
 subtype=Arcane
 cost={4}{B}
 effect=Target player loses 1 life and you gain 1 life.~At the beginning of your upkeep, if you have more cards in hand than each opponent, you may return SN from your graveyard to your hand.
 timing=removal
-oracle=Target player loses 1 life and you gain 1 life. At the beginning of your upkeep, if you have more cards in hand than each opponent, you may return Death of a Thousand Stings from your graveyard to your hand.
+oracle=Target player loses 1 life and you gain 1 life.\nAt the beginning of your upkeep, if you have more cards in hand than each opponent, you may return Death of a Thousand Stings from your graveyard to your hand.

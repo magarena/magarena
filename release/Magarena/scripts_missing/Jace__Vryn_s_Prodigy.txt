@@ -1,0 +1,11 @@
+name=Jace, Vryn's Prodigy
+image=http://magiccards.info/scans/en/ori/60a.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Human,Wizard
+cost={1}{U}
+pt=0/2
+ability={T}: Draw a card, then discard a card. If there are five or more cards in your graveyard, exile SN, then return him to the battlefield transformed under his owner's control.
+timing=main
+oracle={T}: Draw a card, then discard a card. If there are five or more cards in your graveyard, exile Jace, Vryn's Prodigy, then return him to the battlefield transformed under his owner's control.

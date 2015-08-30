@@ -1,5 +1,5 @@
 name=Shinen of Stars' Light
-image=http://mtgimage.com/card/shinen%20of%20stars%27%20light.jpg
+image=http://magiccards.info/scans/en/sok/28.jpg
 value=1.972
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=First strike;\
         {1}{W}, Discard SN: Target creature gains first strike until end of turn.
 timing=main
-oracle=First strike. Channel — {1}{W}, Discard Shinen of Stars' Light: Target creature gains first strike until end of turn.
+oracle=First strike\nChannel — {1}{W}, Discard Shinen of Stars' Light: Target creature gains first strike until end of turn.

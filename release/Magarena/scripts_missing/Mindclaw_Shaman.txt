@@ -1,6 +1,6 @@
 name=Mindclaw Shaman
-image=http://mtgimage.com/card/mindclaw%20shaman.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m13/142.jpg
+value=3.819
 rarity=U
 type=Creature
 subtype=Viashino,Shaman

@@ -1,6 +1,6 @@
 name=Spiteful Returned
-image=http://mtgimage.com/card/spiteful%20returned.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bng/84.jpg
+value=3.812
 rarity=U
 type=Enchantment,Creature
 subtype=Zombie
@@ -9,5 +9,5 @@ pt=1/1
 ability=Bestow {3}{B};\
         Whenever SN or enchanted creature attacks, defending player loses 2 life.;\
         Enchanted creature gets +1/+1.
-timing=main
-oracle=Bestow {3}{B}. Whenever Spiteful Returned or enchanted creature attacks, defending player loses 2 life. Enchanted creature gets +1/+1.
+timing=enchantment
+oracle=Bestow {3}{B}\nWhenever Spiteful Returned or enchanted creature attacks, defending player loses 2 life.\nEnchanted creature gets +1/+1.

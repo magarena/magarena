@@ -1,5 +1,5 @@
 name=Rise to the Challenge
-image=http://mtgimage.com/card/rise%20to%20the%20challenge.jpg
+image=http://magiccards.info/scans/en/bng/107.jpg
 value=2.804
 rarity=C
 type=Instant

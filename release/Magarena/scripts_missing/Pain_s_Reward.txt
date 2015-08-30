@@ -1,6 +1,6 @@
 name=Pain's Reward
-image=http://mtgimage.com/card/pain%27s%20reward.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sok/85.jpg
+value=3.697
 rarity=R
 type=Sorcery
 cost={2}{B}

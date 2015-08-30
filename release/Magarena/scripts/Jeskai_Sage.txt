@@ -1,5 +1,5 @@
 name=Jeskai Sage
-image=http://mtgimage.com/card/jeskai%20sage.jpg
+image=http://magiccards.info/scans/en/frf/38.jpg
 value=2.500
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=Prowess;\
         When SN dies, draw a card.
 timing=main
-oracle=Prowess. When Jeskai Sage dies, draw a card.
+oracle=Prowess\nWhen Jeskai Sage dies, draw a card.

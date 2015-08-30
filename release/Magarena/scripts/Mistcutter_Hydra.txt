@@ -1,5 +1,5 @@
 name=Mistcutter Hydra
-image=http://mtgimage.com/card/mistcutter%20hydra.jpg
+image=http://magiccards.info/scans/en/ths/162.jpg
 value=3.610
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=SN can't be countered.;\
         haste;protection from blue;\
         SN enters the battlefield with X +1/+1 counters on it.
 timing=main
-oracle=Mistcutter Hydra can't be countered. Haste, protection from blue. Mistcutter Hydra enters the battlefield with X +1/+1 counters on it.
+oracle=Mistcutter Hydra can't be countered.\nHaste, protection from blue\nMistcutter Hydra enters the battlefield with X +1/+1 counters on it.

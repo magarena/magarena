@@ -1,6 +1,6 @@
 name=Demonic Consultation
-image=http://mtgimage.com/card/demonic%20consultation.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me2/85.jpg
+value=4.588
 rarity=U
 type=Instant
 cost={B}

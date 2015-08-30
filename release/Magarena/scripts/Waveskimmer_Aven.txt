@@ -1,5 +1,5 @@
 name=Waveskimmer Aven
-image=http://mtgimage.com/card/waveskimmer%20aven.jpg
+image=http://magiccards.info/scans/en/ala/207.jpg
 value=2.042
 ability=flying;exalted
 rarity=C
@@ -8,4 +8,4 @@ subtype=Bird,Soldier
 cost={2}{G}{W}{U}
 pt=2/4
 timing=main
-oracle=Flying. Exalted
+oracle=Flying\nExalted

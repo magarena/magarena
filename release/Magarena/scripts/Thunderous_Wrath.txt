@@ -1,5 +1,5 @@
 name=Thunderous Wrath
-image=http://mtgimage.com/card/thunderous%20wrath.jpg
+image=http://magiccards.info/scans/en/avr/160.jpg
 value=3.899
 rarity=U
 type=Instant
@@ -8,4 +8,4 @@ ability=miracle {R}
 effect=SN deals 5 damage to target creature or player.
 removal=5
 timing=removal
-oracle=Thunderous Wrath deals 5 damage to target creature or player. Miracle {R}
+oracle=Thunderous Wrath deals 5 damage to target creature or player.\nMiracle {R}

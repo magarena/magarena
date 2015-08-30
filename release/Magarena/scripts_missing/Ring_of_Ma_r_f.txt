@@ -1,9 +1,9 @@
 name=Ring of Ma'rûf
-image=http://mtgimage.com/card/ring%20of%20ma%27ruf.jpg
-value=2.500
+image=http://magiccards.info/scans/en/med/163.jpg
+value=3.689
 rarity=R
 type=Artifact
 cost={5}
 ability={5}, {T}, Exile SN: The next time you would draw a card this turn, instead choose a card you own from outside the game and put it into your hand.
-timing=main
+timing=artifact
 oracle={5}, {T}, Exile Ring of Ma'rûf: The next time you would draw a card this turn, instead choose a card you own from outside the game and put it into your hand.

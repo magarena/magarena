@@ -1,9 +1,9 @@
 name=Breath of Dreams
-image=http://mtgimage.com/card/breath%20of%20dreams.jpg
+image=http://magiccards.info/scans/en/ia/62.jpg
 value=2.700
 rarity=U
 type=Enchantment
 cost={2}{U}{U}
 ability=cumulative upkeep {U};green creatures have cumulative upkeep {1}
 timing=enchantment
-oracle=Cumulative upkeep {U}. Green creatures have "Cumulative upkeep {1}."
+oracle=Cumulative upkeep {U}\nGreen creatures have "Cumulative upkeep {1}."

@@ -19,16 +19,15 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 final MagicPlayer opponent = event.getPlayer().getOpponent();
-                final List<MagicCard> targets =
-                        game.filterCards(opponent,MagicTargetFilterFactory.CREATURE_CARD_FROM_GRAVEYARD);
+                final List<MagicCard> targets = CREATURE_CARD_FROM_GRAVEYARD.filter(opponent);
                 if (targets.size() > 0) {
                     final MagicCard card = targets.get(targets.size()-1);
-                    game.doAction(new MagicReanimateAction(
+                    game.doAction(new ReanimateAction(
                         card,
                         event.getPlayer()
                      ));
                 }
-                game.doAction(MagicChangeStateAction.Set(
+                game.doAction(ChangeStateAction.Set(
                     event.getPermanent(),
                     MagicPermanentState.NoCombatDamage
                 ));

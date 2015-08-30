@@ -1,5 +1,5 @@
 name=Pacifism
-image=http://mtgimage.com/card/pacifism.jpg
+image=http://magiccards.info/scans/en/dtk/29.jpg
 value=4.032
 removal=3
 rarity=C
@@ -9,4 +9,4 @@ cost={1}{W}
 ability=Enchanted creature can't attack or block.
 timing=aura
 enchant=can't attack or block,neg creature
-oracle=Enchant creature. Enchanted creature can't attack or block.
+oracle=Enchant creature\nEnchanted creature can't attack or block.

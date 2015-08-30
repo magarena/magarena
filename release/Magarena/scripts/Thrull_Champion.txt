@@ -1,5 +1,5 @@
 name=Thrull Champion
-image=http://mtgimage.com/card/thrull%20champion.jpg
+image=http://magiccards.info/scans/en/med/83.jpg
 value=3.885
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Thrull creatures get +1/+1.
 timing=main
 requires_groovy_code
-oracle=Thrull creatures get +1/+1. {T}: Gain control of target Thrull for as long as you control Thrull Champion.
+oracle=Thrull creatures get +1/+1.\n{T}: Gain control of target Thrull for as long as you control Thrull Champion.

@@ -1,9 +1,9 @@
 name=Carom
-image=http://mtgimage.com/card/carom.jpg
-value=2.500
+image=http://magiccards.info/scans/en/di/6.jpg
+value=2.236
 rarity=C
 type=Instant
 cost={1}{W}
 effect=The next 1 damage that would be dealt to target creature this turn is dealt to another target creature instead.~Draw a card.
 timing=removal
-oracle=The next 1 damage that would be dealt to target creature this turn is dealt to another target creature instead. Draw a card.
+oracle=The next 1 damage that would be dealt to target creature this turn is dealt to another target creature instead.\nDraw a card.

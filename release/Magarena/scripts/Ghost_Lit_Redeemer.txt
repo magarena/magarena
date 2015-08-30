@@ -1,5 +1,5 @@
 name=Ghost-Lit Redeemer
-image=http://mtgimage.com/card/ghost-lit%20redeemer.jpg
+image=http://magiccards.info/scans/en/sok/10.jpg
 value=3.688
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability={W}, {T}: You gain 2 life.;\
         {1}{W}, Discard SN: You gain 4 life.
 timing=main
-oracle={W}, {T}: You gain 2 life. Channel — {1}{W}, Discard Ghost-Lit Redeemer: You gain 4 life.
+oracle={W}, {T}: You gain 2 life.\nChannel — {1}{W}, Discard Ghost-Lit Redeemer: You gain 4 life.

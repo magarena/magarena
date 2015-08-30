@@ -1,6 +1,6 @@
 name=Moonscarred Werewolf
-image=http://mtgimage.com/card/moonscarred%20werewolf.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dka/125b.jpg
+value=3.315
 rarity=C
 type=Creature
 subtype=Werewolf
@@ -9,5 +9,7 @@ pt=2/2
 ability=Vigilance;\
         {T}: Add {G}{G} to your mana pool.;\
         At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
+transform=Scorned Villager
 timing=main
-oracle=Vigilance. {T}: Add {G}{G} to your mana pool. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Moonscarred Werewolf.
+hidden
+oracle=Vigilance\n{T}: Add {G}{G} to your mana pool.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Moonscarred Werewolf.

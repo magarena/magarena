@@ -1,5 +1,5 @@
 name=Resounding Roar
-image=http://mtgimage.com/card/resounding%20roar.jpg
+image=http://magiccards.info/scans/en/ala/144.jpg
 value=2.000
 rarity=C
 type=Instant
@@ -8,4 +8,4 @@ ability=Cycling {5}{R}{G}{W};\
         When you cycle SN, target creature gets +6/+6 until end of turn.
 effect=Target creature gets +3/+3 until end of turn.
 timing=pump
-oracle=Target creature gets +3/+3 until end of turn. Cycling {5}{R}{G}{W}. When you cycle Resounding Roar, target creature gets +6/+6 until end of turn.
+oracle=Target creature gets +3/+3 until end of turn.\nCycling {5}{R}{G}{W}\nWhen you cycle Resounding Roar, target creature gets +6/+6 until end of turn.

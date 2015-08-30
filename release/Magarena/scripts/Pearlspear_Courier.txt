@@ -1,5 +1,5 @@
 name=Pearlspear Courier
-image=http://mtgimage.com/card/pearlspear%20courier.jpg
+image=http://magiccards.info/scans/en/on/48.jpg
 value=2.087
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=You may choose not to untap SN during your untap step.
 timing=main
 requires_groovy_code
-oracle=You may choose not to untap Pearlspear Courier during your untap step. {2}{W}, {T}: Target Soldier creature gets +2/+2 and has vigilance for as long as Pearlspear Courier remains tapped.
+oracle=You may choose not to untap Pearlspear Courier during your untap step.\n{2}{W}, {T}: Target Soldier creature gets +2/+2 and has vigilance for as long as Pearlspear Courier remains tapped.

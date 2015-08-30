@@ -2,7 +2,7 @@ package magic.model.trigger;
 
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
-import magic.model.action.MagicChangeStateAction;
+import magic.model.action.ChangeStateAction;
 
 public abstract class MagicWhenBecomesMonstrousTrigger extends MagicWhenBecomesStateTrigger {
     public MagicWhenBecomesMonstrousTrigger(final int priority) {
@@ -11,7 +11,7 @@ public abstract class MagicWhenBecomesMonstrousTrigger extends MagicWhenBecomesS
 
     public MagicWhenBecomesMonstrousTrigger() {}
     
-    public boolean accept(final MagicPermanent permanent, final MagicChangeStateAction data) {
+    public boolean accept(final MagicPermanent permanent, final ChangeStateAction data) {
         return data.state == MagicPermanentState.Monstrous;
     }
 }

@@ -1,0 +1,11 @@
+name=Graceblade Artisan
+image=http://magiccards.info/scans/en/dtk/20.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Monk
+cost={2}{W}
+pt=2/3
+ability=SN gets +2/+2 for each Aura attached to it.
+timing=main
+oracle=Graceblade Artisan gets +2/+2 for each Aura attached to it.

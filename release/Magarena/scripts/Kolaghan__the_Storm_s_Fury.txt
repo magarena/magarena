@@ -1,0 +1,13 @@
+name=Kolaghan, the Storm's Fury
+image=http://magiccards.info/scans/en/frf/155.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Dragon
+cost={3}{B}{R}
+pt=4/5
+ability=Flying;\
+        Whenever a Dragon you control attacks, creatures you control get +1/+0 until end of turn.;\
+        Dash {3}{B}{R}
+timing=main
+oracle=Flying\nWhenever a Dragon you control attacks, creatures you control get +1/+0 until end of turn.\nDash {3}{B}{R}

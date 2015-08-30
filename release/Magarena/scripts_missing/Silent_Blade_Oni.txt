@@ -1,6 +1,6 @@
 name=Silent-Blade Oni
-image=http://mtgimage.com/card/silent-blade%20oni.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pc2/105.jpg
+value=4.292
 rarity=R
 type=Creature
 subtype=Demon,Ninja
@@ -9,4 +9,4 @@ pt=6/5
 ability=Ninjutsu {4}{U}{B};\
         Whenever SN deals combat damage to a player, look at that player's hand. You may cast a nonland card in it without paying that card's mana cost.
 timing=main
-oracle=Ninjutsu {4}{U}{B}. Whenever Silent-Blade Oni deals combat damage to a player, look at that player's hand. You may cast a nonland card in it without paying that card's mana cost.
+oracle=Ninjutsu {4}{U}{B}\nWhenever Silent-Blade Oni deals combat damage to a player, look at that player's hand. You may cast a nonland card in it without paying that card's mana cost.

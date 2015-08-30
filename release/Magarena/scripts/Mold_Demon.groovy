@@ -18,7 +18,7 @@ def choice = new MagicTargetChoice("a Swamp to sacrifice");
                 game.addEvent(new MagicSacrificePermanentEvent(perm,event.getPlayer(), choice));
                 game.addEvent(new MagicSacrificePermanentEvent(perm,event.getPlayer(), choice));
             } else {
-                game.doAction(new MagicSacrificeAction(perm));
+                game.doAction(new SacrificeAction(perm));
             }
         }
     }

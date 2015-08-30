@@ -1,5 +1,5 @@
 name=Volcanic Fallout
-image=http://mtgimage.com/card/volcanic%20fallout.jpg
+image=http://magiccards.info/scans/en/cns/157.jpg
 value=4.500
 removal=2
 rarity=U
@@ -8,4 +8,4 @@ cost={1}{R}{R}
 ability=SN can't be countered.
 effect=SN deals 2 damage to each creature and each player.
 timing=removal
-oracle=Volcanic Fallout can't be countered. Volcanic Fallout deals 2 damage to each creature and each player.
+oracle=Volcanic Fallout can't be countered.\nVolcanic Fallout deals 2 damage to each creature and each player.

@@ -1,5 +1,5 @@
 name=Yavimaya Kavu
-image=http://mtgimage.com/card/yavimaya%20kavu.jpg
+image=http://magiccards.info/scans/en/in/291.jpg
 value=3.378
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=*/*
 ability=SN's power is equal to the number of red creatures on the battlefield.;\
         SN's toughness is equal to the number of green creatures on the battlefield.
 timing=main
-oracle=Yavimaya Kavu's power is equal to the number of red creatures on the battlefield. Yavimaya Kavu's toughness is equal to the number of green creatures on the battlefield.
+oracle=Yavimaya Kavu's power is equal to the number of red creatures on the battlefield.\nYavimaya Kavu's toughness is equal to the number of green creatures on the battlefield.

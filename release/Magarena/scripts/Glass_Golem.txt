@@ -1,5 +1,5 @@
 name=Glass Golem
-image=http://mtgimage.com/card/glass%20golem.jpg
+image=http://magiccards.info/scans/en/rav/261.jpg
 value=2.585
 rarity=U
 type=Artifact,Creature
@@ -7,3 +7,4 @@ subtype=Golem
 cost={5}
 pt=6/2
 timing=main
+oracle=NONE

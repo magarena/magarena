@@ -1,5 +1,5 @@
 name=Skirk Fire Marshal
-image=http://mtgimage.com/card/skirk%20fire%20marshal.jpg
+image=http://magiccards.info/scans/en/evg/50.jpg
 value=4.046
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Protection from red;\
         Tap five untapped Goblins you control: SN deals 10 damage to each creature and each player.
 timing=main
-oracle=Protection from red. Tap five untapped Goblins you control: Skirk Fire Marshal deals 10 damage to each creature and each player.
+oracle=Protection from red\nTap five untapped Goblins you control: Skirk Fire Marshal deals 10 damage to each creature and each player.

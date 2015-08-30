@@ -1,0 +1,9 @@
+name=Tread Upon
+image=http://magiccards.info/scans/en/dtk/211.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{G}
+effect=Target creature gets +2/+2 and gains trample until end of turn.
+timing=pump
+oracle=Target creature gets +2/+2 and gains trample until end of turn.

@@ -1,12 +1,12 @@
 name=Rabid Wombat
-image=http://mtgimage.com/card/rabid%20wombat.jpg
+image=http://magiccards.info/scans/en/med/126.jpg
 value=3.325
 rarity=U
 type=Creature
 subtype=Wombat
 cost={2}{G}{G}
 pt=0/1
-ability=vigilance
+ability=vigilance;\
+        SN gets +2/+2 for each Aura attached to it.
 timing=main
-requires_groovy_code
-oracle=Vigilance. Rabid Wombat gets +2/+2 for each Aura attached to it.
+oracle=Vigilance\nRabid Wombat gets +2/+2 for each Aura attached to it.

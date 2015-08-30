@@ -1,5 +1,5 @@
 name=Vigean Hydropon
-image=http://mtgimage.com/card/vigean%20hydropon.jpg
+image=http://magiccards.info/scans/en/di/135.jpg
 value=3.348
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{G}{U}
 pt=0/0
 ability=graft 5;SN can't attack or block.
 timing=main
-oracle=Graft 5. Vigean Hydropon can't attack or block.
+oracle=Graft 5\nVigean Hydropon can't attack or block.

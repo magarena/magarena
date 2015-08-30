@@ -1,5 +1,5 @@
 name=Xenagos, God of Revels
-image=http://mtgimage.com/card/xenagos%2C%20god%20of%20revels.jpg
+image=http://magiccards.info/scans/en/bng/156.jpg
 value=3.812
 rarity=M
 type=Legendary,Enchantment,Creature
@@ -9,4 +9,4 @@ pt=6/5
 ability=indestructible
 timing=main
 requires_groovy_code
-oracle=Indestructible. As long as your devotion to red and green is less than seven, Xenagos isn't a creature. At the beginning of combat on your turn, another target creature you control gains haste and gets +X/+X until end of turn, where X is that creature's power.
+oracle=Indestructible\nAs long as your devotion to red and green is less than seven, Xenagos isn't a creature.\nAt the beginning of combat on your turn, another target creature you control gains haste and gets +X/+X until end of turn, where X is that creature's power.

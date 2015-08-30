@@ -1,5 +1,5 @@
 name=Balefire Liege
-image=http://mtgimage.com/card/balefire%20liege.jpg
+image=http://magiccards.info/scans/en/pch/97.jpg
 value=4.281
 rarity=R
 type=Creature
@@ -12,4 +12,4 @@ ability=other red creatures you control get +1/+1;\
         Whenever you cast a white spell, you gain 3 life.
 static=player
 timing=main
-oracle=Other red creatures you control get +1/+1. Other white creatures you control get +1/+1. Whenever you cast a red spell, Balefire Liege deals 3 damage to target player. Whenever you cast a white spell, you gain 3 life.
+oracle=Other red creatures you control get +1/+1.\nOther white creatures you control get +1/+1.\nWhenever you cast a red spell, Balefire Liege deals 3 damage to target player.\nWhenever you cast a white spell, you gain 3 life.

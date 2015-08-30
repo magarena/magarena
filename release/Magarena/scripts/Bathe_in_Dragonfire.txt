@@ -1,5 +1,5 @@
 name=Bathe in Dragonfire
-image=http://mtgimage.com/card/bathe%20in%20dragonfire.jpg
+image=http://magiccards.info/scans/en/frf/92.jpg
 value=2.500
 rarity=C
 type=Sorcery

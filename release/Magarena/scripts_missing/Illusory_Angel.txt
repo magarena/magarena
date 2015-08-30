@@ -1,6 +1,6 @@
 name=Illusory Angel
-image=http://mtgimage.com/card/illusory%20angel.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/59.jpg
+value=3.889
 rarity=U
 type=Creature
 subtype=Angel,Illusion
@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying;\
         Cast SN only if you've cast another spell this turn.
 timing=main
-oracle=Flying. Cast Illusory Angel only if you've cast another spell this turn.
+oracle=Flying\nCast Illusory Angel only if you've cast another spell this turn.

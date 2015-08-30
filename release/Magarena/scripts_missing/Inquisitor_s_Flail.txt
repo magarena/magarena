@@ -1,6 +1,6 @@
 name=Inquisitor's Flail
-image=http://mtgimage.com/card/inquisitor%27s%20flail.jpg
-value=2.500
+image=http://magiccards.info/scans/en/isd/227.jpg
+value=3.858
 rarity=U
 type=Artifact
 subtype=Equipment
@@ -8,5 +8,5 @@ cost={2}
 ability=If equipped creature would deal combat damage, it deals double that damage instead.;\
         If another creature would deal combat damage to equipped creature, it deals double that damage to equipped creature instead.;\
         Equip {2}
-timing=main
-oracle=If equipped creature would deal combat damage, it deals double that damage instead. If another creature would deal combat damage to equipped creature, it deals double that damage to equipped creature instead. Equip {2}
+timing=equipment
+oracle=If equipped creature would deal combat damage, it deals double that damage instead.\nIf another creature would deal combat damage to equipped creature, it deals double that damage to equipped creature instead.\nEquip {2}

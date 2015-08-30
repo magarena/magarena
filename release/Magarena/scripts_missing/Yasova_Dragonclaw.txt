@@ -1,5 +1,5 @@
 name=Yasova Dragonclaw
-image=http://mtgimage.com/card/yasova%20dragonclaw.jpg
+image=http://magiccards.info/scans/en/frf/148.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=4/2
 ability=Trample;\
         At the beginning of combat on your turn, you may pay {1}{U/R}{U/R}. If you do, gain control of target creature an opponent controls with power less than SN's power until end of turn, untap that creature, and it gains haste until end of turn.
 timing=main
-oracle=Trample. At the beginning of combat on your turn, you may pay {1}{U/R}{U/R}. If you do, gain control of target creature an opponent controls with power less than Yasova Dragonclaw's power until end of turn, untap that creature, and it gains haste until end of turn.
+oracle=Trample\nAt the beginning of combat on your turn, you may pay {1}{U/R}{U/R}. If you do, gain control of target creature an opponent controls with power less than Yasova Dragonclaw's power until end of turn, untap that creature, and it gains haste until end of turn.

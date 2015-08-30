@@ -1,5 +1,5 @@
 name=Spark Trooper
-image=http://mtgimage.com/card/spark%20trooper.jpg
+image=http://magiccards.info/scans/en/gtc/199.jpg
 value=3.780
 rarity=R
 type=Creature
@@ -11,4 +11,4 @@ ability=trample;\
         lifelink;\
         At the beginning of the end step, sacrifice SN.
 timing=fmain
-oracle=Trample, lifelink, haste. At the beginning of the end step, sacrifice Spark Trooper.
+oracle=Trample, lifelink, haste\nAt the beginning of the end step, sacrifice Spark Trooper.

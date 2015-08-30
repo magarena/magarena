@@ -1,5 +1,5 @@
 name=Ophidian
-image=http://mtgimage.com/card/ophidian.jpg
+image=http://magiccards.info/scans/en/vma/84.jpg
 value=3.698
 rarity=C
 type=Creature

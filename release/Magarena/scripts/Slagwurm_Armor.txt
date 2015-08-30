@@ -1,5 +1,5 @@
 name=Slagwurm Armor
-image=http://mtgimage.com/card/slagwurm%20armor.jpg
+image=http://magiccards.info/scans/en/mi/243.jpg
 value=4.375
 rarity=C
 type=Artifact
@@ -8,4 +8,4 @@ cost={1}
 ability=Equipped creature gets +0/+6.;\
         Equip {3}
 timing=equipment
-oracle=Equipped creature gets +0/+6. Equip {3}
+oracle=Equipped creature gets +0/+6.\nEquip {3}

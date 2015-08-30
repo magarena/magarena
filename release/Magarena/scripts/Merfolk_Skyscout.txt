@@ -1,5 +1,5 @@
 name=Merfolk Skyscout
-image=http://mtgimage.com/card/merfolk%20skyscout.jpg
+image=http://magiccards.info/scans/en/roe/77.jpg
 value=3.278
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/3
 ability=Flying;\
         Whenever SN attacks or blocks, untap target permanent.
 timing=main
-oracle=Flying. Whenever Merfolk Skyscout attacks or blocks, untap target permanent.
+oracle=Flying\nWhenever Merfolk Skyscout attacks or blocks, untap target permanent.

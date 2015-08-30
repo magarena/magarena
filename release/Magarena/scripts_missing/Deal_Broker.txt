@@ -1,6 +1,6 @@
 name=Deal Broker
-image=http://mtgimage.com/card/deal%20broker.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cns/61.jpg
+value=3.944
 rarity=R
 type=Artifact,Creature
 subtype=Construct
@@ -9,5 +9,5 @@ pt=2/3
 ability=Draft SN face up.;\
         Immediately after the draft, you may reveal a card in your card pool. Each other player may offer you one card in his or her card pool in exchange. You may accept any one offer.;\
         {T}: Draw a card, then discard a card.
-timing=main
-oracle=Draft Deal Broker face up. Immediately after the draft, you may reveal a card in your card pool. Each other player may offer you one card in his or her card pool in exchange. You may accept any one offer. {T}: Draw a card, then discard a card.
+timing=artifact
+oracle=Draft Deal Broker face up.\nImmediately after the draft, you may reveal a card in your card pool. Each other player may offer you one card in his or her card pool in exchange. You may accept any one offer.\n{T}: Draw a card, then discard a card.

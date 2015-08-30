@@ -5,11 +5,7 @@
             return (played.isEnemy(permanent) && played.isLand()) ?
                 new MagicEvent(
                     permanent,
-                    new MagicSimpleMayChoice(
-                        MagicSimpleMayChoice.GAIN_LIFE,
-                        3,
-                        MagicSimpleMayChoice.DEFAULT_YES
-                    ),
+                    new MagicSimpleMayChoice(),
                     this,
                     "PN may\$ gain 3 life."
                 ):
@@ -18,7 +14,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicChangeLifeAction(event.getPlayer(),3));
+                game.doAction(new ChangeLifeAction(event.getPlayer(),3));
             }
         }
     }

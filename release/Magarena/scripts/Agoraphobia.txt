@@ -1,5 +1,5 @@
 name=Agoraphobia
-image=http://mtgimage.com/card/agoraphobia.jpg
+image=http://magiccards.info/scans/en/ddm/22.jpg
 value=3.500
 rarity=U
 type=Enchantment
@@ -9,4 +9,4 @@ ability=Enchanted creature gets -5/-0.;\
         {2}{U}:Return SN to its owner's hand.
 timing=aura
 enchant=weaken -5/-0,neg creature
-oracle=Enchant creature. Enchanted creature gets -5/-0. {2}{U}: Return Agoraphobia to its owner's hand.
+oracle=Enchant creature\nEnchanted creature gets -5/-0.\n{2}{U}: Return Agoraphobia to its owner's hand.

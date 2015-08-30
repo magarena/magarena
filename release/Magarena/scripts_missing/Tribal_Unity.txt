@@ -1,6 +1,6 @@
 name=Tribal Unity
-image=http://mtgimage.com/card/tribal%20unity.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pch/80.jpg
+value=3.075
 rarity=U
 type=Instant
 cost={X}{2}{G}

@@ -1,9 +1,0 @@
-name=Carrion
-image=http://mtgimage.com/card/carrion.jpg
-value=2.500
-rarity=R
-type=Instant
-cost={1}{B}{B}
-effect=As an additional cost to cast SN, sacrifice a creature.~Put X 0/1 black Insect creature tokens onto the battlefield, where X is the sacrificed creature's power.
-timing=removal
-oracle=As an additional cost to cast Carrion, sacrifice a creature. Put X 0/1 black Insect creature tokens onto the battlefield, where X is the sacrificed creature's power.

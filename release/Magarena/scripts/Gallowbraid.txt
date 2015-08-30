@@ -1,0 +1,12 @@
+name=Gallowbraid
+image=http://magiccards.info/scans/en/wl/12.jpg
+value=2.337
+rarity=R
+type=Legendary,Creature
+subtype=Horror
+cost={3}{B}{B}
+pt=5/5
+ability=Trample
+timing=main
+requires_groovy_code
+oracle=Trample\nCumulative upkeep—Pay 1 life.

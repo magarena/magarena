@@ -1,5 +1,5 @@
 name=Temple of Epiphany
-image=http://mtgimage.com/card/temple%20of%20epiphany.jpg
+image=http://magiccards.info/scans/en/jou/164.jpg
 value=3.750
 rarity=R
 type=Land
@@ -7,4 +7,4 @@ ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, scry 1.;\
         {T}: Add {U} or {R} to your mana pool.
 timing=land
-oracle=Temple of Epiphany enters the battlefield tapped. When Temple of Epiphany enters the battlefield, scry 1. {T}: Add {U} or {R} to your mana pool.
+oracle=Temple of Epiphany enters the battlefield tapped.\nWhen Temple of Epiphany enters the battlefield, scry 1.\n{T}: Add {U} or {R} to your mana pool.

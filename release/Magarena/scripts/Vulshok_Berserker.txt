@@ -1,5 +1,5 @@
 name=Vulshok Berserker
-image=http://mtgimage.com/card/vulshok%20berserker.jpg
+image=http://magiccards.info/scans/en/ddi/53.jpg
 value=2.233
 ability=haste
 rarity=C

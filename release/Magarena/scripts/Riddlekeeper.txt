@@ -1,5 +1,5 @@
 name=Riddlekeeper
-image=http://mtgimage.com/card/riddlekeeper.jpg
+image=http://magiccards.info/scans/en/cmd/59.jpg
 value=3.802
 rarity=R
 type=Creature

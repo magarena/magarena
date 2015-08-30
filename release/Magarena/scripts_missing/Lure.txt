@@ -1,11 +1,11 @@
 name=Lure
-image=http://mtgimage.com/card/lure.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m12/183.jpg
+value=4.042
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{G}{G}
 ability=Enchant creature;\
         All creatures able to block enchanted creature do so.
-timing=main
-oracle=Enchant creature. All creatures able to block enchanted creature do so.
+timing=aura
+oracle=Enchant creature\nAll creatures able to block enchanted creature do so.

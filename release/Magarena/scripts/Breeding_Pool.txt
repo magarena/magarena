@@ -1,5 +1,5 @@
 name=Breeding Pool
-image=http://mtgimage.com/card/breeding%20pool.jpg
+image=http://magiccards.info/scans/en/gtc/240.jpg
 value=4.126
 rarity=R
 type=Land

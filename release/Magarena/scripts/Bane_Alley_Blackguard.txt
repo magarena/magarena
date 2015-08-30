@@ -1,5 +1,5 @@
 name=Bane Alley Blackguard
-image=http://mtgimage.com/card/bane%20alley%20blackguard.jpg
+image=http://magiccards.info/scans/en/dgm/21.jpg
 value=2.277
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Human,Rogue
 cost={1}{B}
 pt=1/3
 timing=main
+oracle=NONE

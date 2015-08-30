@@ -1,11 +1,11 @@
 name=Foriysian Totem
-image=http://mtgimage.com/card/foriysian%20totem.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ts/254.jpg
+value=3.397
 rarity=U
 type=Artifact
 cost={3}
 ability={T}: Add {R} to your mana pool.;\
         {4}{R}: SN becomes a 4/4 red Giant artifact creature with trample until end of turn.;\
         As long as SN is a creature, it can block an additional creature.
-timing=main
-oracle={T}: Add {R} to your mana pool. {4}{R}: Foriysian Totem becomes a 4/4 red Giant artifact creature with trample until end of turn. As long as Foriysian Totem is a creature, it can block an additional creature.
+timing=artifact
+oracle={T}: Add {R} to your mana pool.\n{4}{R}: Foriysian Totem becomes a 4/4 red Giant artifact creature with trample until end of turn.\nAs long as Foriysian Totem is a creature, it can block an additional creature.

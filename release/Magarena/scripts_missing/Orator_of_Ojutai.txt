@@ -1,0 +1,13 @@
+name=Orator of Ojutai
+image=http://magiccards.info/scans/en/dtk/28.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Bird,Monk
+cost={1}{W}
+pt=0/4
+ability=As an additional cost to cast SN, you may reveal a Dragon card from your hand.;\
+        Defender, flying;\
+        When SN enters the battlefield, if you revealed a Dragon card or controlled a Dragon as you cast SN, draw a card.
+timing=main
+oracle=As an additional cost to cast Orator of Ojutai, you may reveal a Dragon card from your hand.\nDefender, flying\nWhen Orator of Ojutai enters the battlefield, if you revealed a Dragon card or controlled a Dragon as you cast Orator of Ojutai, draw a card.

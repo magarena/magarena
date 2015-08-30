@@ -1,5 +1,5 @@
 name=Thief of Hope
-image=http://mtgimage.com/card/thief%20of%20hope.jpg
+image=http://magiccards.info/scans/en/chk/147.jpg
 value=3.795
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=soulshift 2;\
         Whenever you cast a Spirit or Arcane spell, target opponent loses 1 life and you gain 1 life.
 timing=main
-oracle=Whenever you cast a Spirit or Arcane spell, target opponent loses 1 life and you gain 1 life. Soulshift 2
+oracle=Whenever you cast a Spirit or Arcane spell, target opponent loses 1 life and you gain 1 life.\nSoulshift 2

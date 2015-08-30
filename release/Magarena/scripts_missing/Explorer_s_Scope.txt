@@ -1,11 +1,11 @@
 name=Explorer's Scope
-image=http://mtgimage.com/card/explorer%27s%20scope.jpg
-value=2.500
-rarity=C
+image=http://magiccards.info/scans/en/cns/198.jpg
+value=3.833
+rarity=U
 type=Artifact
 subtype=Equipment
 cost={1}
 ability=Whenever equipped creature attacks, look at the top card of your library. If it's a land card, you may put it onto the battlefield tapped.;\
         Equip {1}
-timing=main
-oracle=Whenever equipped creature attacks, look at the top card of your library. If it's a land card, you may put it onto the battlefield tapped. Equip {1}
+timing=equipment
+oracle=Whenever equipped creature attacks, look at the top card of your library. If it's a land card, you may put it onto the battlefield tapped.\nEquip {1}

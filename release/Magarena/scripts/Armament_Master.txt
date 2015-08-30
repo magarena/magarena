@@ -1,12 +1,12 @@
 name=Armament Master
-image=http://mtgimage.com/card/armament%20master.jpg
+image=http://magiccards.info/scans/en/zen/1.jpg
 value=3.898
 rarity=R
 type=Creature
 subtype=Kor,Soldier
 cost={W}{W}
 pt=2/2
+ability=Other Kor creatures you control get +2/+2 for each Equipment attached to SN.
 static=player
 timing=fmain
-requires_groovy_code
 oracle=Other Kor creatures you control get +2/+2 for each Equipment attached to Armament Master.

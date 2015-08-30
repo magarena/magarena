@@ -1,9 +1,9 @@
 name=Interdict
-image=http://mtgimage.com/card/interdict.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tp/69.jpg
+value=3.732
 rarity=U
 type=Instant
 cost={1}{U}
 effect=Counter target activated ability from an artifact, creature, enchantment, or land. That permanent's activated abilities can't be activated this turn.~Draw a card.
 timing=removal
-oracle=Counter target activated ability from an artifact, creature, enchantment, or land. That permanent's activated abilities can't be activated this turn. Draw a card.
+oracle=Counter target activated ability from an artifact, creature, enchantment, or land. That permanent's activated abilities can't be activated this turn.\nDraw a card.

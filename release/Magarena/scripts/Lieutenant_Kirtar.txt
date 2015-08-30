@@ -1,5 +1,5 @@
 name=Lieutenant Kirtar
-image=http://mtgimage.com/card/lieutenant%20kirtar.jpg
+image=http://magiccards.info/scans/en/od/29.jpg
 value=3.952
 rarity=R
 type=Legendary,Creature
@@ -8,4 +8,4 @@ cost={1}{W}{W}
 pt=2/2
 ability=flying;{1}{W}, Sacrifice SN: Exile target attacking creature.
 timing=main
-oracle=Flying. {1}{W}, Sacrifice Lieutenant Kirtar: Exile target attacking creature.
+oracle=Flying\n{1}{W}, Sacrifice Lieutenant Kirtar: Exile target attacking creature.

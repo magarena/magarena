@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 MagicExileTargetPicker.create(),
                 this,
                 "Exile target creature\$. " +
@@ -14,10 +14,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.Exile));
-                game.doAction(new MagicPlayTokenAction(
+                game.doAction(new RemoveFromPlayAction(it,MagicLocationType.Exile));
+                game.doAction(new PlayTokenAction(
                     it.getController(),
-                    TokenCardDefinitions.get("1/1 colorless Shapeshifter creature token with changeling")
+                    CardDefinitions.getToken("1/1 colorless Shapeshifter creature token with changeling")
                 ));
             });
         }

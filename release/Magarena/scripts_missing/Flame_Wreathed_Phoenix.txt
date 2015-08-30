@@ -1,6 +1,6 @@
 name=Flame-Wreathed Phoenix
-image=http://mtgimage.com/card/flame-wreathed%20phoenix.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bng/97.jpg
+value=3.589
 rarity=M
 type=Creature
 subtype=Phoenix
@@ -10,4 +10,4 @@ ability=Flying;\
         Tribute 2;\
         When SN enters the battlefield, if tribute wasn't paid, it gains haste and "When this creature dies, return it to its owner's hand."
 timing=main
-oracle=Flying. Tribute 2. When Flame-Wreathed Phoenix enters the battlefield, if tribute wasn't paid, it gains haste and "When this creature dies, return it to its owner's hand."
+oracle=Flying\nTribute 2\nWhen Flame-Wreathed Phoenix enters the battlefield, if tribute wasn't paid, it gains haste and "When this creature dies, return it to its owner's hand."

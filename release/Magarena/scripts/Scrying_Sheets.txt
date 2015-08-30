@@ -1,0 +1,9 @@
+name=Scrying Sheets
+image=http://magiccards.info/scans/en/cs/149.jpg
+value=4.009
+rarity=R
+type=Snow,Land
+ability={T}: Add {1} to your mana pool.
+timing=land
+requires_groovy_code
+oracle={T}: Add {1} to your mana pool.\n{1}{S}, {T}: Look at the top card of your library. If that card is snow, you may reveal it and put it into your hand.

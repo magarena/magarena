@@ -1,5 +1,5 @@
 name=Wing Splicer
-image=http://mtgimage.com/card/wing%20splicer.jpg
+image=http://magiccards.info/scans/en/nph/50.jpg
 value=3.653
 rarity=U
 type=Creature
@@ -10,4 +10,4 @@ ability=When SN enters the battlefield, put a 3/3 colorless Golem artifact creat
         golem creatures you control have flying
 static=player
 timing=main
-oracle=When Wing Splicer enters the battlefield, put a 3/3 colorless Golem artifact creature token onto the battlefield. Golem creatures you control have flying.
+oracle=When Wing Splicer enters the battlefield, put a 3/3 colorless Golem artifact creature token onto the battlefield.\nGolem creatures you control have flying.

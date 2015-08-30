@@ -1,6 +1,6 @@
 name=Merfolk Raiders
-image=http://mtgimage.com/card/merfolk%20raiders.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/75.jpg
+value=2.565
 rarity=C
 type=Creature
 subtype=Merfolk,Soldier
@@ -9,4 +9,4 @@ pt=2/3
 ability=Islandwalk;\
         Phasing
 timing=main
-oracle=Islandwalk. Phasing
+oracle=Islandwalk\nPhasing

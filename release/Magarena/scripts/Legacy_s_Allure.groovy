@@ -13,7 +13,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
                 new MagicPTTargetFilter(
-                    MagicTargetFilterFactory.CREATURE,
+                    CREATURE,
                     source.getCounters(MagicCounterType.Treasure)
                 ),
                 MagicTargetHint.Negative,
@@ -32,7 +32,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicGainControlAction(event.getPlayer(),it));
+                game.doAction(new GainControlAction(event.getPlayer(),it));
             });
         }
     }

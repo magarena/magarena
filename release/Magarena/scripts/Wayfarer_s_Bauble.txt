@@ -1,5 +1,5 @@
 name=Wayfarer's Bauble
-image=http://mtgimage.com/card/wayfarer's%20bauble.jpg
+image=http://magiccards.info/scans/en/c14/281.jpg
 value=3.909
 rarity=C
 type=Artifact

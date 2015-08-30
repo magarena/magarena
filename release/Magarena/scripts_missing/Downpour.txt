@@ -1,6 +1,6 @@
 name=Downpour
-image=http://mtgimage.com/card/downpour.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m13/48.jpg
+value=3.226
 rarity=C
 type=Instant
 cost={1}{U}

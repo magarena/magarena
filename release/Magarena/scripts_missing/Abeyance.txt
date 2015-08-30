@@ -1,9 +1,9 @@
 name=Abeyance
-image=http://mtgimage.com/card/abeyance.jpg
-value=2.500
+image=http://magiccards.info/scans/en/wl/117.jpg
+value=4.466
 rarity=R
 type=Instant
 cost={1}{W}
 effect=Until end of turn, target player can't cast instant or sorcery spells, and that player can't activate abilities that aren't mana abilities.~Draw a card.
 timing=removal
-oracle=Until end of turn, target player can't cast instant or sorcery spells, and that player can't activate abilities that aren't mana abilities. Draw a card.
+oracle=Until end of turn, target player can't cast instant or sorcery spells, and that player can't activate abilities that aren't mana abilities.\nDraw a card.

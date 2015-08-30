@@ -1,5 +1,5 @@
 name=Izzet Staticaster
-image=http://mtgimage.com/card/izzet%20staticaster.jpg
+image=http://magiccards.info/scans/en/rtr/173.jpg
 value=3.888
 rarity=U
 type=Creature
@@ -10,4 +10,4 @@ ability=Flash;\
         Haste
 timing=main
 requires_groovy_code
-oracle=Flash. Haste. {T}: Izzet Staticaster deals 1 damage to target creature and each other creature with the same name as that creature.
+oracle=Flash\nHaste\n{T}: Izzet Staticaster deals 1 damage to target creature and each other creature with the same name as that creature.

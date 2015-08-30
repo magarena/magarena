@@ -13,7 +13,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
+                TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
                 MagicMustAttackTargetPicker.create(),
                 this,
                 "Target creature\$ an opponent controls attacks you this turn if able."
@@ -23,7 +23,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicGainAbilityAction(it,MagicAbility.AttacksEachTurnIfAble));
+                game.doAction(new GainAbilityAction(it,MagicAbility.AttacksEachTurnIfAble));
             });
         }
     }

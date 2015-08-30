@@ -1,5 +1,5 @@
 name=Oak Street Innkeeper
-image=http://mtgimage.com/card/oak%20street%20innkeeper.jpg
+image=http://magiccards.info/scans/en/rtr/131.jpg
 value=3.054
 rarity=U
 type=Creature

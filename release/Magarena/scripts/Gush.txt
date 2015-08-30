@@ -1,10 +1,10 @@
 name=Gush
-image=http://mtgimage.com/card/gush.jpg
+image=http://magiccards.info/scans/en/vma/72.jpg
 value=4.500
 rarity=C
 type=Instant
 cost={4}{U}
+ability=You may return two Islands you control to their owner's hand rather than pay SN's mana cost.
 effect=Draw two cards.
 timing=draw
-requires_groovy_code
-oracle=You may return two Islands you control to their owner's hand rather than pay Gush's mana cost. Draw two cards.
+oracle=You may return two Islands you control to their owner's hand rather than pay Gush's mana cost.\nDraw two cards.

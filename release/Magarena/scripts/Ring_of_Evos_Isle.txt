@@ -1,11 +1,12 @@
 name=Ring of Evos Isle
-image=http://mtgimage.com/card/ring%20of%20evos%20isle.jpg
+image=http://magiccards.info/scans/en/m13/211.jpg
 value=3.689
 rarity=U
 type=Artifact
 subtype=Equipment
 cost={2}
-ability=Equip {1}
+ability={2}: Equipped creature gains hexproof until end of turn. Activate this ability only if SN is being equipped.;\
+        Equip {1}
 timing=equipment
 requires_groovy_code
-oracle={2}: Equipped creature gains hexproof until end of turn. At the beginning of your upkeep, put a +1/+1 counter on equipped creature if it's blue. Equip {1}
+oracle={2}: Equipped creature gains hexproof until end of turn.\nAt the beginning of your upkeep, put a +1/+1 counter on equipped creature if it's blue.\nEquip {1}

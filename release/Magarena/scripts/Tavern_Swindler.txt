@@ -1,0 +1,11 @@
+name=Tavern Swindler
+image=http://magiccards.info/scans/en/ddm/45.jpg
+value=3.375
+rarity=U
+type=Creature
+subtype=Human,Rogue
+cost={1}{B}
+pt=2/2
+ability={T}, Pay 3 life: Flip a coin. If you win the flip, you gain 6 life.
+timing=main
+oracle={T}, Pay 3 life: Flip a coin. If you win the flip, you gain 6 life.

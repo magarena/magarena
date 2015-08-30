@@ -1,0 +1,9 @@
+name=Spore Cloud
+image=http://magiccards.info/scans/en/me2/176.jpg
+value=3.774
+rarity=U
+type=Instant
+cost={1}{G}{G}
+timing=block
+requires_groovy_code
+oracle=Tap all blocking creatures. Prevent all combat damage that would be dealt this turn. Each attacking creature and each blocking creature doesn't untap during its controller's next untap step.

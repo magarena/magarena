@@ -1,0 +1,9 @@
+name=Nightcreep
+image=http://magiccards.info/scans/en/di/49.jpg
+value=3.308
+rarity=U
+type=Instant
+cost={B}{B}
+timing=pump
+requires_groovy_code
+oracle=Until end of turn, all creatures become black and all lands become Swamps.

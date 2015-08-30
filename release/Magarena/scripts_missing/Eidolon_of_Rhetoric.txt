@@ -1,11 +1,11 @@
 name=Eidolon of Rhetoric
-image=http://mtgimage.com/card/eidolon%20of%20rhetoric.jpg
-value=2.500
+image=http://magiccards.info/scans/en/jou/10.jpg
+value=4.071
 rarity=U
 type=Enchantment,Creature
 subtype=Spirit
 cost={2}{W}
 pt=1/4
 ability=Each player can't cast more than one spell each turn.
-timing=main
+timing=enchantment
 oracle=Each player can't cast more than one spell each turn.

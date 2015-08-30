@@ -1,5 +1,5 @@
 name=Alpha Myr
-image=http://mtgimage.com/card/alpha%20myr.jpg
+image=http://magiccards.info/scans/en/mi/142.jpg
 value=1.975
 rarity=C
 type=Artifact,Creature
@@ -7,3 +7,4 @@ subtype=Myr
 cost={2}
 pt=2/1
 timing=main
+oracle=NONE

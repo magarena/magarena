@@ -1,9 +1,0 @@
-name=Cyclopean Snare
-image=http://mtgimage.com/card/cyclopean%20snare.jpg
-value=2.500
-rarity=U
-type=Artifact
-cost={2}
-ability={3}, {T}: Tap target creature, then return SN to its owner's hand.
-timing=main
-oracle={3}, {T}: Tap target creature, then return Cyclopean Snare to its owner's hand.

@@ -1,5 +1,5 @@
 name=Angelic Benediction
-image=http://mtgimage.com/card/angelic%20benediction.jpg
+image=http://magiccards.info/scans/en/m13/4.jpg
 value=2.991
 rarity=U
 type=Enchantment
@@ -7,4 +7,4 @@ cost={3}{W}
 timing=enchantment
 ability=exalted
 requires_groovy_code
-oracle=Exalted. Whenever a creature you control attacks alone, you may tap target creature.
+oracle=Exalted\nWhenever a creature you control attacks alone, you may tap target creature.

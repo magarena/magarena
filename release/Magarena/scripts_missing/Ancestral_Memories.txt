@@ -1,6 +1,6 @@
 name=Ancestral Memories
-image=http://mtgimage.com/card/ancestral%20memories.jpg
-value=2.500
+image=http://magiccards.info/scans/en/7e/59.jpg
+value=3.360
 rarity=R
 type=Sorcery
 cost={2}{U}{U}{U}

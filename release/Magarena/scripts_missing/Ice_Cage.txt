@@ -1,6 +1,6 @@
 name=Ice Cage
-image=http://mtgimage.com/card/ice%20cage.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m12/57.jpg
+value=2.570
 rarity=C
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={1}{U}
 ability=Enchant creature;\
         Enchanted creature can't attack or block, and its activated abilities can't be activated.;\
         When enchanted creature becomes the target of a spell or ability, destroy SN.
-timing=main
-oracle=Enchant creature. Enchanted creature can't attack or block, and its activated abilities can't be activated. When enchanted creature becomes the target of a spell or ability, destroy Ice Cage.
+timing=aura
+oracle=Enchant creature\nEnchanted creature can't attack or block, and its activated abilities can't be activated.\nWhen enchanted creature becomes the target of a spell or ability, destroy Ice Cage.

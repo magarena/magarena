@@ -1,6 +1,6 @@
 name=Terror of Kruin Pass
-image=http://mtgimage.com/card/terror%20of%20kruin%20pass.jpg
-value=2.500
+image=http://magiccards.info/scans/en/isd/152b.jpg
+value=3.890
 rarity=R
 type=Creature
 subtype=Werewolf
@@ -9,5 +9,7 @@ pt=3/3
 ability=Double strike;\
         Each Werewolf you control can't be blocked except by two or more creatures.;\
         At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
+transform=Kruin Outlaw
 timing=main
-oracle=Double strike. Each Werewolf you control can't be blocked except by two or more creatures. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Terror of Kruin Pass.
+hidden
+oracle=Double strike\nEach Werewolf you control can't be blocked except by two or more creatures.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Terror of Kruin Pass.

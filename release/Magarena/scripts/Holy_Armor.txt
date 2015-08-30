@@ -1,12 +1,12 @@
 name=Holy Armor
-image=http://mtgimage.com/card/holy%20armor.jpg
+image=http://magiccards.info/scans/en/4e/279.jpg
 value=2.282
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={W}
-ability=Enchanted creature gets +0/+2.
+ability=Enchanted creature gets +0/+2.;\
+        {W}: Enchanted creature gets +0/+1 until end of turn.
 timing=aura
 enchant=pump,pos creature
-requires_groovy_code=Armor of Faith
-oracle=Enchant creature. Enchanted creature gets +0/+2. {W}: Enchanted creature gets +0/+1 until end of turn.
+oracle=Enchant creature\nEnchanted creature gets +0/+2.\n{W}: Enchanted creature gets +0/+1 until end of turn.

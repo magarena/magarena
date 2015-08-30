@@ -1,5 +1,5 @@
 name=Faerie Macabre
-image=http://mtgimage.com/card/faerie%20macabre.jpg
+image=http://magiccards.info/scans/en/mma/86.jpg
 value=2.500
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         Discard SN: Exile up to two target cards from graveyards.
 timing=main
-oracle=Flying. Discard Faerie Macabre: Exile up to two target cards from graveyards.
+oracle=Flying\nDiscard Faerie Macabre: Exile up to two target cards from graveyards.

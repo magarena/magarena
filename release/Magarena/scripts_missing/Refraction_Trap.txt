@@ -1,10 +1,10 @@
 name=Refraction Trap
-image=http://mtgimage.com/card/refraction%20trap.jpg
-value=2.500
+image=http://magiccards.info/scans/en/wwk/17.jpg
+value=2.330
 rarity=U
 type=Instant
 subtype=Trap
 cost={3}{W}
 effect=If an opponent cast a red instant or sorcery spell this turn, you may pay {W} rather than pay SN's mana cost.~Prevent the next 3 damage that a source of your choice would deal to you and/or permanents you control this turn. If damage is prevented this way, SN deals that much damage to target creature or player.
 timing=removal
-oracle=If an opponent cast a red instant or sorcery spell this turn, you may pay {W} rather than pay Refraction Trap's mana cost. Prevent the next 3 damage that a source of your choice would deal to you and/or permanents you control this turn. If damage is prevented this way, Refraction Trap deals that much damage to target creature or player.
+oracle=If an opponent cast a red instant or sorcery spell this turn, you may pay {W} rather than pay Refraction Trap's mana cost.\nPrevent the next 3 damage that a source of your choice would deal to you and/or permanents you control this turn. If damage is prevented this way, Refraction Trap deals that much damage to target creature or player.

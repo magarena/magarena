@@ -1,6 +1,6 @@
 name=Aerial Caravan
-image=http://mtgimage.com/card/aerial%20caravan.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/58.jpg
+value=2.943
 rarity=R
 type=Creature
 subtype=Human,Soldier
@@ -9,4 +9,4 @@ pt=4/3
 ability=Flying;\
         {1}{U}{U}: Exile the top card of your library. Until end of turn, you may play that card.
 timing=main
-oracle=Flying. {1}{U}{U}: Exile the top card of your library. Until end of turn, you may play that card.
+oracle=Flying\n{1}{U}{U}: Exile the top card of your library. Until end of turn, you may play that card.

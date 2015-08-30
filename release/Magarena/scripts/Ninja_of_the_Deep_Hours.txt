@@ -1,5 +1,5 @@
 name=Ninja of the Deep Hours
-image=http://mtgimage.com/card/ninja%20of%20the%20deep%20hours.jpg
+image=http://magiccards.info/scans/en/pc2/21.jpg
 value=4.554
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=ninjutsu {1}{U};\
         Whenever SN deals combat damage to a player, you may draw a card.
 timing=main
-oracle=Ninjutsu {1}{U}. Whenever Ninja of the Deep Hours deals combat damage to a player, you may draw a card.
+oracle=Ninjutsu {1}{U}\nWhenever Ninja of the Deep Hours deals combat damage to a player, you may draw a card.

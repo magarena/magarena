@@ -1,10 +1,10 @@
 name=Katabatic Winds
-image=http://mtgimage.com/card/katabatic%20winds.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vi/59.jpg
+value=3.788
 rarity=R
 type=Enchantment
 cost={2}{G}
 ability=Phasing;\
         Creatures with flying can't attack or block, and their activated abilities with {T} in their costs can't be activated.
-timing=main
-oracle=Phasing. Creatures with flying can't attack or block, and their activated abilities with {T} in their costs can't be activated.
+timing=enchantment
+oracle=Phasing\nCreatures with flying can't attack or block, and their activated abilities with {T} in their costs can't be activated.

@@ -1,5 +1,5 @@
 name=Zhang Liao, Hero of Hefei
-image=http://mtgimage.com/card/zhang%20liao,%20hero%20of%20hefei.jpg
+image=http://magiccards.info/scans/en/p3k/96.jpg
 value=2.450
 rarity=R
 type=Legendary,Creature

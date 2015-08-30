@@ -1,5 +1,5 @@
 name=Child of Alara
-image=http://mtgimage.com/card/child%20of%20alara.jpg
+image=http://magiccards.info/scans/en/cfx/101.jpg
 value=3.321
 rarity=M
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=6/6
 ability=trample;\
         When SN dies, destroy all nonland permanents. They can't be regenerated.
 timing=main
-oracle=Trample. When Child of Alara dies, destroy all nonland permanents. They can't be regenerated.
+oracle=Trample\nWhen Child of Alara dies, destroy all nonland permanents. They can't be regenerated.

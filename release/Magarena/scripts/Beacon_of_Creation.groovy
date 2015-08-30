@@ -12,12 +12,12 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer()
-            game.doAction(new MagicPlayTokensAction(
+            game.doAction(new PlayTokensAction(
                 player,
-                TokenCardDefinitions.get("1/1 green Insect creature token"),
-                player.getNrOfPermanents(MagicTargetFilterFactory.FOREST)
+                CardDefinitions.getToken("1/1 green Insect creature token"),
+                player.getNrOfPermanents(FOREST)
             ));
-            game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.OwnersLibrary));
+            game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.OwnersLibrary));
         }
     }
 ]

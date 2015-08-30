@@ -5,22 +5,20 @@ import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayerState;
-import magic.model.action.MagicChangeCountersAction;
+import magic.model.action.ChangeCountersAction;
 import magic.model.event.MagicEvent;
 
 public class MagicBloodthirstTrigger extends MagicWhenComesIntoPlayTrigger {
 
     private final int amount;
 
-    public MagicBloodthirstTrigger(final int amount) {
-        this.amount = amount;
+    public MagicBloodthirstTrigger(final int aAmount) {
+        super(MagicTrigger.REPLACEMENT);
+        amount = aAmount;
     }
 
     @Override
-    public MagicEvent executeTrigger(
-            final MagicGame game,
-            final MagicPermanent permanent,
-            final MagicPayedCost payedCost) {
+    public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
         return (permanent.getOpponent().hasState(MagicPlayerState.WasDealtDamage)) ?
             new MagicEvent(
                 permanent,
@@ -33,15 +31,11 @@ public class MagicBloodthirstTrigger extends MagicWhenComesIntoPlayTrigger {
     }
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(MagicChangeCountersAction.Enters(
+        game.doAction(ChangeCountersAction.Enters(
             event.getPermanent(),
             MagicCounterType.PlusOne,
             amount
         ));
-    }
-    @Override
-    public boolean usesStack() {
-        return false;
     }
 }
 

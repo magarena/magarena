@@ -1,5 +1,5 @@
 name=Lowland Giant
-image=http://mtgimage.com/card/lowland%20giant.jpg
+image=http://magiccards.info/scans/en/bd/42.jpg
 value=2.871
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Giant
 cost={2}{R}{R}
 pt=4/3
 timing=main
+oracle=NONE

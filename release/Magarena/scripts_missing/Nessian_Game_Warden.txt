@@ -1,6 +1,6 @@
 name=Nessian Game Warden
-image=http://mtgimage.com/card/nessian%20game%20warden.jpg
-value=2.500
+image=http://magiccards.info/scans/en/jou/132.jpg
+value=3.883
 rarity=U
 type=Creature
 subtype=Beast

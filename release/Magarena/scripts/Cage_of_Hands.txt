@@ -1,5 +1,5 @@
 name=Cage of Hands
-image=http://mtgimage.com/card/cage%20of%20hands.jpg
+image=http://magiccards.info/scans/en/pc2/4.jpg
 value=3.233
 rarity=C
 type=Enchantment
@@ -9,4 +9,4 @@ ability=Enchanted creature can't attack or block.;\
         {1}{W}:Return SN to its owner's hand.
 enchant=can't attack or block,neg creature
 timing=enchantment
-oracle=Enchant creature. Enchanted creature can't attack or block. {1}{W}: Return Cage of Hands to its owner's hand.
+oracle=Enchant creature\nEnchanted creature can't attack or block.\n{1}{W}: Return Cage of Hands to its owner's hand.

@@ -1,6 +1,6 @@
 name=Halfdane
-image=http://mtgimage.com/card/halfdane.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me3/150.jpg
+value=3.240
 rarity=R
 type=Legendary,Creature
 subtype=Shapeshifter

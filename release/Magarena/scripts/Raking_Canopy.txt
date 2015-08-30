@@ -1,9 +1,9 @@
 name=Raking Canopy
-image=http://mtgimage.com/card/raking%20canopy.jpg
+image=http://magiccards.info/scans/en/shm/127.jpg
 value=3.640
 rarity=U
 type=Enchantment
 cost={1}{G}{G}
+ability=Whenever a creature with flying attacks you, SN deals 4 damage to RN.
 timing=enchantment
-requires_groovy_code
 oracle=Whenever a creature with flying attacks you, Raking Canopy deals 4 damage to it.

@@ -1,6 +1,6 @@
 name=Surrak Dragonclaw
-image=http://mtgimage.com/card/surrak%20dragonclaw.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/206.jpg
+value=4.375
 rarity=M
 type=Legendary,Creature
 subtype=Human,Warrior
@@ -11,4 +11,4 @@ ability=Flash;\
         Creature spells you control can't be countered.;\
         Other creatures you control have trample.
 timing=main
-oracle=Flash. Surrak Dragonclaw can't be countered. Creature spells you control can't be countered. Other creatures you control have trample.
+oracle=Flash\nSurrak Dragonclaw can't be countered.\nCreature spells you control can't be countered.\nOther creatures you control have trample.

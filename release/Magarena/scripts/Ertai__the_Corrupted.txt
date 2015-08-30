@@ -1,5 +1,5 @@
 name=Ertai, the Corrupted
-image=http://mtgimage.com/card/ertai,%20the%20corrupted.jpg
+image=http://magiccards.info/scans/en/ps/107a.jpg
 value=3.953
 rarity=R
 type=Legendary,Creature

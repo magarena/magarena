@@ -1,6 +1,6 @@
 name=Circu, Dimir Lobotomist
-image=http://mtgimage.com/card/circu%2C%20dimir%20lobotomist.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rav/196.jpg
+value=4.059
 rarity=R
 type=Legendary,Creature
 subtype=Human,Wizard
@@ -10,4 +10,4 @@ ability=Whenever you cast a blue spell, exile the top card of target library.;\
         Whenever you cast a black spell, exile the top card of target library.;\
         Your opponents can't cast nonland cards with the same name as a card exiled with SN.
 timing=main
-oracle=Whenever you cast a blue spell, exile the top card of target library. Whenever you cast a black spell, exile the top card of target library. Your opponents can't cast nonland cards with the same name as a card exiled with Circu, Dimir Lobotomist.
+oracle=Whenever you cast a blue spell, exile the top card of target library.\nWhenever you cast a black spell, exile the top card of target library.\nYour opponents can't cast nonland cards with the same name as a card exiled with Circu, Dimir Lobotomist.

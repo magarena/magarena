@@ -12,11 +12,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            game.doAction(new MagicChangeLifeAction(player,10));
+            game.doAction(new ChangeLifeAction(player,10));
             if (player.getLife() > player.getOpponent().getLife()) {
-                game.doAction(new MagicPlayTokenAction(
+                game.doAction(new PlayTokenAction(
                     player,
-                    TokenCardDefinitions.get("5/5 white Giant Warrior creature token")
+                    CardDefinitions.getToken("5/5 white Giant Warrior creature token")
                 ));
             }
         }

@@ -1,6 +1,6 @@
 name=Peer Pressure
-image=http://mtgimage.com/card/peer%20pressure.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/101.jpg
+value=3.145
 rarity=R
 type=Sorcery
 cost={3}{U}

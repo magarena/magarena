@@ -1,9 +1,9 @@
 name=Norn's Annex
-image=http://mtgimage.com/card/norn%27s%20annex.jpg
-value=2.500
+image=http://magiccards.info/scans/en/nph/17.jpg
+value=3.814
 rarity=R
 type=Artifact
 cost={3}{W/P}{W/P}
 ability=Creatures can't attack you or a planeswalker you control unless their controller pays {W/P} for each of those creatures.
-timing=main
+timing=artifact
 oracle=Creatures can't attack you or a planeswalker you control unless their controller pays {W/P} for each of those creatures.

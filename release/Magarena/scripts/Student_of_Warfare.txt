@@ -1,5 +1,5 @@
 name=Student of Warfare
-image=http://mtgimage.com/card/student%20of%20warfare.jpg
+image=http://magiccards.info/scans/en/roe/47.jpg
 value=4.414
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=level up {W} 7
 timing=main
 requires_groovy_code
-oracle=Level up {W}. LEVEL 2-6. 3/3. First strike. LEVEL 7+. 4/4. Double strike
+oracle=Level up {W}\nLEVEL 2-6\n3/3\nFirst strike\nLEVEL 7+\n4/4\nDouble strike

@@ -1,5 +1,5 @@
 name=Demon of Wailing Agonies
-image=http://mtgimage.com/card/demon%20of%20wailing%20agonies.jpg
+image=http://magiccards.info/scans/en/c14/21.jpg
 value=2.500
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying;\
         As long as you control your commander, SN gets +2/+2 and has "Whenever SN deals combat damage to a player, that player sacrifices a creature."
 timing=main
-oracle=Flying. Lieutenant — As long as you control your commander, Demon of Wailing Agonies gets +2/+2 and has "Whenever Demon of Wailing Agonies deals combat damage to a player, that player sacrifices a creature."
+oracle=Flying\nLieutenant — As long as you control your commander, Demon of Wailing Agonies gets +2/+2 and has "Whenever Demon of Wailing Agonies deals combat damage to a player, that player sacrifices a creature."

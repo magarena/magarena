@@ -1,5 +1,5 @@
 name=Time Bomb
-image=http://mtgimage.com/card/time%20bomb.jpg
+image=http://magiccards.info/scans/en/me2/223.jpg
 value=3.540
 rarity=R
 type=Artifact
@@ -7,4 +7,4 @@ cost={4}
 ability=At the beginning of your upkeep, put a time counter on SN.
 timing=artifact
 requires_groovy_code
-oracle=At the beginning of your upkeep, put a time counter on Time Bomb. {1}, {T}, Sacrifice Time Bomb: Time Bomb deals damage equal to the number of time counters on it to each creature and each player.
+oracle=At the beginning of your upkeep, put a time counter on Time Bomb.\n{1}, {T}, Sacrifice Time Bomb: Time Bomb deals damage equal to the number of time counters on it to each creature and each player.

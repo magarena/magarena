@@ -1,6 +1,6 @@
 name=Spoils of Evil
-image=http://mtgimage.com/card/spoils%20of%20evil.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ia/51.jpg
+value=4.265
 rarity=R
 type=Instant
 cost={2}{B}

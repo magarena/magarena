@@ -1,6 +1,6 @@
 name=Keldon Halberdier
-image=http://mtgimage.com/card/keldon%20halberdier.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ts/167.jpg
+value=3.705
 rarity=C
 type=Creature
 subtype=Human,Warrior
@@ -9,4 +9,4 @@ pt=4/1
 ability=First strike;\
         Suspend 4—{R}
 timing=main
-oracle=First strike. Suspend 4—{R}
+oracle=First strike\nSuspend 4—{R}

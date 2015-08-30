@@ -1,11 +1,12 @@
 name=Alabaster Wall
-image=http://mtgimage.com/card/alabaster%20wall.jpg
+image=http://magiccards.info/scans/en/mm/2.jpg
 value=2.759
 rarity=C
 type=Creature
 subtype=Wall
 cost={2}{W}
 pt=0/4
-ability={T}: Prevent the next 1 damage that would be dealt to target creature or player this turn.;defender
+ability=Defender;\
+        {T}: Prevent the next 1 damage that would be dealt to target creature or player this turn.
 timing=main
-oracle=Defender. {T}: Prevent the next 1 damage that would be dealt to target creature or player this turn.
+oracle=Defender\n{T}: Prevent the next 1 damage that would be dealt to target creature or player this turn.

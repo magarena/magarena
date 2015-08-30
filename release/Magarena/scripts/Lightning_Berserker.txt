@@ -1,0 +1,12 @@
+name=Lightning Berserker
+image=http://magiccards.info/scans/en/dtk/146.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Berserker
+cost={R}
+pt=1/1
+ability={R}: SN gets +1/+0 until end of turn.;\
+        Dash {R}
+timing=main
+oracle={R}: Lightning Berserker gets +1/+0 until end of turn.\nDash {R}

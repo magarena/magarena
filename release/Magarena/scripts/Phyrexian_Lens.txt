@@ -1,5 +1,5 @@
 name=Phyrexian Lens
-image=http://mtgimage.com/card/phyrexian%20lens.jpg
+image=http://magiccards.info/scans/en/in/307.jpg
 value=1.593
 rarity=R
 type=Artifact

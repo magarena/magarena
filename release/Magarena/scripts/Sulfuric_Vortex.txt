@@ -1,0 +1,10 @@
+name=Sulfuric Vortex
+image=http://magiccards.info/scans/en/vma/190.jpg
+value=3.800
+rarity=R
+type=Enchantment
+cost={1}{R}{R}
+ability=At the beginning of each player's upkeep, SN deals 2 damage to that player.
+timing=enchantment
+requires_groovy_code
+oracle=At the beginning of each player's upkeep, Sulfuric Vortex deals 2 damage to that player.\nIf a player would gain life, that player gains no life instead.

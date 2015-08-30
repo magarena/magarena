@@ -1,9 +1,9 @@
 name=Divine Presence
-image=http://mtgimage.com/card/divine%20presence.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/15.jpg
+value=4.057
 rarity=R
 type=Enchantment
 cost={2}{W}
 ability=If a source would deal 4 or more damage to a creature or player, that source deals 3 damage to that creature or player instead.
-timing=main
+timing=enchantment
 oracle=If a source would deal 4 or more damage to a creature or player, that source deals 3 damage to that creature or player instead.

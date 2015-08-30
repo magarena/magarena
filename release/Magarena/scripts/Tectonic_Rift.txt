@@ -1,5 +1,5 @@
 name=Tectonic Rift
-image=http://mtgimage.com/card/tectonic%20rift.jpg
+image=http://magiccards.info/scans/en/m12/157.jpg
 value=3.062
 rarity=U
 type=Sorcery

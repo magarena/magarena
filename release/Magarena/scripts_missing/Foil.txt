@@ -1,9 +1,0 @@
-name=Foil
-image=http://mtgimage.com/card/foil.jpg
-value=2.500
-rarity=U
-type=Instant
-cost={2}{U}{U}
-effect=You may discard an Island card and another card rather than pay SN's mana cost.~Counter target spell.
-timing=removal
-oracle=You may discard an Island card and another card rather than pay Foil's mana cost. Counter target spell.

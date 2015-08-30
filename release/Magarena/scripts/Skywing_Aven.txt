@@ -1,5 +1,5 @@
 name=Skywing Aven
-image=http://mtgimage.com/card/skywing%20aven.jpg
+image=http://magiccards.info/scans/en/vma/94.jpg
 value=2.500
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{U}
 pt=2/1
 ability=flying;Discard a card:Return SN to its owner's hand.
 timing=main
-oracle=Flying. Discard a card: Return Skywing Aven to its owner's hand.
+oracle=Flying\nDiscard a card: Return Skywing Aven to its owner's hand.

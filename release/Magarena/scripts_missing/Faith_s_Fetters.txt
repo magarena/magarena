@@ -1,5 +1,5 @@
 name=Faith's Fetters
-image=http://mtgimage.com/card/faith%27s%20fetters.jpg
+image=http://magiccards.info/scans/en/dvd/20.jpg
 value=2.500
 rarity=C
 type=Enchantment
@@ -7,6 +7,6 @@ subtype=Aura
 cost={3}{W}
 ability=Enchant permanent;\
         When SN enters the battlefield, you gain 4 life.;\
-        Enchanted permanent's activated abilities can't be activated unless they're mana abilities. If enchanted permanent is a creature, it can't attack or block.
-timing=main
-oracle=Enchant permanent. When Faith's Fetters enters the battlefield, you gain 4 life. Enchanted permanent's activated abilities can't be activated unless they're mana abilities. If enchanted permanent is a creature, it can't attack or block.
+        Enchanted permanent can't attack or block, and its activated abilities can't be activated unless they're mana abilities.
+timing=aura
+oracle=Enchant permanent\nWhen Faith's Fetters enters the battlefield, you gain 4 life.\nEnchanted permanent can't attack or block, and its activated abilities can't be activated unless they're mana abilities.

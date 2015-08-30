@@ -1,0 +1,9 @@
+name=Hidden Predators
+image=http://magiccards.info/scans/en/us/263.jpg
+value=3.750
+rarity=R
+type=Enchantment
+cost={G}
+ability=When an opponent controls a creature with power 4 or greater, if SN is an enchantment, SN becomes a 4/4 Beast creature.
+timing=enchantment
+oracle=When an opponent controls a creature with power 4 or greater, if Hidden Predators is an enchantment, Hidden Predators becomes a 4/4 Beast creature.

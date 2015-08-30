@@ -1,9 +1,9 @@
 name=Dig Through Time
-image=http://mtgimage.com/card/dig%20through%20time.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/36.jpg
+value=2.875
 rarity=R
 type=Instant
 cost={6}{U}{U}
 effect=Delve~Look at the top seven cards of your library. Put two of them into your hand and the rest on the bottom of your library in any order.
 timing=removal
-oracle=Delve. Look at the top seven cards of your library. Put two of them into your hand and the rest on the bottom of your library in any order.
+oracle=Delve\nLook at the top seven cards of your library. Put two of them into your hand and the rest on the bottom of your library in any order.

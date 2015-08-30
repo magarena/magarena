@@ -1,10 +1,10 @@
 name=Bubbling Cauldron
-image=http://mtgimage.com/card/bubbling%20cauldron.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m14/205.jpg
+value=3.553
 rarity=U
 type=Artifact
 cost={2}
 ability={1}, {T}, Sacrifice a creature: You gain 4 life.;\
         {1}, {T}, Sacrifice a creature named Festering Newt: Each opponent loses 4 life. You gain life equal to the life lost this way.
-timing=main
-oracle={1}, {T}, Sacrifice a creature: You gain 4 life. {1}, {T}, Sacrifice a creature named Festering Newt: Each opponent loses 4 life. You gain life equal to the life lost this way.
+timing=artifact
+oracle={1}, {T}, Sacrifice a creature: You gain 4 life.\n{1}, {T}, Sacrifice a creature named Festering Newt: Each opponent loses 4 life. You gain life equal to the life lost this way.

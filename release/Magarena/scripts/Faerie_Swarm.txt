@@ -1,5 +1,5 @@
 name=Faerie Swarm
-image=http://mtgimage.com/card/faerie%20swarm.jpg
+image=http://magiccards.info/scans/en/shm/37.jpg
 value=2.965
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=*/*
 ability=Flying;\
         SN's power and toughness are each equal to the number of blue permanents you control.
 timing=main
-oracle=Flying. Faerie Swarm's power and toughness are each equal to the number of blue permanents you control.
+oracle=Flying\nFaerie Swarm's power and toughness are each equal to the number of blue permanents you control.

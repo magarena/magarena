@@ -13,10 +13,9 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final int domain = player.getDomain();
-            game.logAppendMessage(player," ("+domain+")");
-            final Collection<MagicPermanent> creatures = game.filterPermanents(MagicTargetFilterFactory.CREATURE);
-            for (final MagicPermanent creature : creatures) {
-                game.doAction(new MagicChangeTurnPTAction(creature,-domain,-domain));
+            game.logAppendValue(player,domain);
+            CREATURE.filter(event) each {
+                game.doAction(new ChangeTurnPTAction(it,-domain,-domain));
             }
         }
     }

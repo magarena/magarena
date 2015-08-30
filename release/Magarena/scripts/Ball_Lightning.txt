@@ -1,5 +1,5 @@
 name=Ball Lightning
-image=http://mtgimage.com/card/ball%20lightning.jpg
+image=http://magiccards.info/scans/en/m10/125.jpg
 value=4.140
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=trample;\
         haste;\
         At the beginning of the end step, sacrifice SN.
 timing=fmain
-oracle=Trample. Haste. At the beginning of the end step, sacrifice Ball Lightning.
+oracle=Trample\nHaste\nAt the beginning of the end step, sacrifice Ball Lightning.

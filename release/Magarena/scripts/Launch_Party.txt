@@ -1,5 +1,5 @@
 name=Launch Party
-image=http://mtgimage.com/card/launch%20party.jpg
+image=http://magiccards.info/scans/en/rtr/69.jpg
 value=2.016
 rarity=C
 type=Instant
@@ -7,4 +7,4 @@ cost={3}{B}
 ability=As an additional cost to cast SN, sacrifice a creature.
 timing=removal
 requires_groovy_code
-oracle=As an additional cost to cast Launch Party, sacrifice a creature. Destroy target creature. Its controller loses 2 life.
+oracle=As an additional cost to cast Launch Party, sacrifice a creature.\nDestroy target creature. Its controller loses 2 life.

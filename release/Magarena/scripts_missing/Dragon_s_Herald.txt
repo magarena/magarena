@@ -1,11 +1,11 @@
 name=Dragon's Herald
-image=http://mtgimage.com/card/dragon%27s%20herald.jpg
+image=http://magiccards.info/scans/en/ala/98.jpg
 value=2.610
 rarity=U
 type=Creature
 subtype=Goblin,Shaman
 cost={R}
 pt=1/1
-ability={2}{R}, {T}, Sacrifice a black creature, Sacrifice a red creature, Sacrifice a green creature: Search your library for a card named Hellkite Overlord and put it onto the battlefield. Then shuffle your library.
+ability={2}{R}, {T}, Sacrifice a black creature, a red creature, and a green creature: Search your library for a card named Hellkite Overlord and put it onto the battlefield. Then shuffle your library.
 timing=main
 oracle={2}{R}, {T}, Sacrifice a black creature, a red creature, and a green creature: Search your library for a card named Hellkite Overlord and put it onto the battlefield. Then shuffle your library.

@@ -1,5 +1,5 @@
 name=Thraben Sentry
-image=http://mtgimage.com/card/thraben%20sentry.jpg
+image=http://magiccards.info/scans/en/isd/38a.jpg
 value=3.269
 rarity=C
 type=Creature
@@ -10,4 +10,4 @@ ability=Vigilance;\
         Whenever another creature you control dies, you may transform SN.
 transform=Thraben Militia
 timing=main
-oracle=Vigilance. Whenever another creature you control dies, you may transform Thraben Sentry.
+oracle=Vigilance\nWhenever another creature you control dies, you may transform Thraben Sentry.

@@ -1,5 +1,5 @@
 name=Copper Tablet
-image=http://mtgimage.com/set/med/copper%20tablet.jpg
+image=http://magiccards.info/scans/en/med/154.jpg
 value=2.324
 rarity=U
 type=Artifact

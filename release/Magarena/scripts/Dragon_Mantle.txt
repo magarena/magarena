@@ -1,5 +1,5 @@
 name=Dragon Mantle
-image=http://mtgimage.com/card/dragon%20mantle.jpg
+image=http://magiccards.info/scans/en/ths/119.jpg
 value=3.603
 rarity=C
 type=Enchantment
@@ -9,4 +9,4 @@ ability=When SN enters the battlefield, draw a card.;\
         Enchanted creature has "{R}: SN gets +1/+0 until end of turn."
 enchant=pump,pos creature
 timing=aura
-oracle=Enchant creature. When Dragon Mantle enters the battlefield, draw a card. Enchanted creature has "{R}: This creature gets +1/+0 until end of turn."
+oracle=Enchant creature\nWhen Dragon Mantle enters the battlefield, draw a card.\nEnchanted creature has "{R}: This creature gets +1/+0 until end of turn."

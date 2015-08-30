@@ -1,5 +1,5 @@
 name=Hoverguard Sweepers
-image=http://mtgimage.com/card/hoverguard%20sweepers.jpg
+image=http://magiccards.info/scans/en/c14/113.jpg
 value=2.500
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=5/6
 ability=Flying;\
         When SN enters the battlefield, you may return up to two target creatures to their owners' hands.
 timing=main
-oracle=Flying. When Hoverguard Sweepers enters the battlefield, you may return up to two target creatures to their owners' hands.
+oracle=Flying\nWhen Hoverguard Sweepers enters the battlefield, you may return up to two target creatures to their owners' hands.

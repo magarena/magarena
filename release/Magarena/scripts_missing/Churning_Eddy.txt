@@ -1,6 +1,6 @@
 name=Churning Eddy
-image=http://mtgimage.com/card/churning%20eddy.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tr/32.jpg
+value=3.100
 rarity=C
 type=Sorcery
 cost={3}{U}

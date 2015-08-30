@@ -1,11 +1,11 @@
 name=Confessor
-image=http://mtgimage.com/card/confessor.jpg
+image=http://magiccards.info/scans/en/od/15.jpg
 value=2.694
 rarity=C
 type=Creature
 subtype=Human,Cleric
 cost={W}
 pt=1/1
+ability=Whenever a player discards a card, you may gain 1 life.
 timing=main
-requires_groovy_code
 oracle=Whenever a player discards a card, you may gain 1 life.

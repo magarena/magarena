@@ -1,6 +1,6 @@
 name=Sins of the Past
-image=http://mtgimage.com/card/sins%20of%20the%20past.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rav/106.jpg
+value=3.338
 rarity=R
 type=Sorcery
 cost={4}{B}{B}

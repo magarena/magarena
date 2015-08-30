@@ -1,5 +1,5 @@
 name=Mire Boa
-image=http://mtgimage.com/card/mire%20boa.jpg
+image=http://magiccards.info/scans/en/pc/135.jpg
 value=4.214
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=swampwalk;\
         {G}: Regenerate SN.
 timing=main
-oracle=Swampwalk. {G}: Regenerate Mire Boa.
+oracle=Swampwalk\n{G}: Regenerate Mire Boa.

@@ -1,5 +1,5 @@
 name=Siege Mastodon
-image=http://mtgimage.com/card/siege%20mastodon.jpg
+image=http://magiccards.info/scans/en/m14/34.jpg
 value=1.529
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Elephant
 cost={4}{W}
 pt=3/5
 timing=main
+oracle=NONE

@@ -1,5 +1,5 @@
 name=Deploy to the Front
-image=http://mtgimage.com/card/deploy%20to%20the%20front.jpg
+image=http://magiccards.info/scans/en/c14/6.jpg
 value=2.500
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Scion of the Wild
-image=http://mtgimage.com/card/scion%20of%20the%20wild.jpg
+image=http://magiccards.info/scans/en/10e/295.jpg
 value=4.105
 rarity=R
 type=Creature

@@ -1,10 +1,10 @@
 name=Traitorous Blood
-image=http://mtgimage.com/card/traitorous%20blood.jpg
+image=http://magiccards.info/scans/en/isd/166.jpg
 value=3.829
 removal=5
 rarity=C
 type=Sorcery
 cost={1}{R}{R}
+effect=Gain control of target creature until end of turn.~Untap *it*.~*It* gains trample and haste until end of turn.
 timing=removal
-requires_groovy_code
 oracle=Gain control of target creature until end of turn. Untap it. It gains trample and haste until end of turn.

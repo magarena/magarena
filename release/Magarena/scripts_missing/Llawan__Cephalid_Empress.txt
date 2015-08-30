@@ -1,6 +1,6 @@
 name=Llawan, Cephalid Empress
-image=http://mtgimage.com/card/llawan%2C%20cephalid%20empress.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tr/42.jpg
+value=4.000
 rarity=R
 type=Legendary,Creature
 subtype=Cephalid
@@ -9,4 +9,4 @@ pt=2/3
 ability=When SN enters the battlefield, return all blue creatures your opponents control to their owners' hands.;\
         Your opponents can't cast blue creature spells.
 timing=main
-oracle=When Llawan, Cephalid Empress enters the battlefield, return all blue creatures your opponents control to their owners' hands. Your opponents can't cast blue creature spells.
+oracle=When Llawan, Cephalid Empress enters the battlefield, return all blue creatures your opponents control to their owners' hands.\nYour opponents can't cast blue creature spells.

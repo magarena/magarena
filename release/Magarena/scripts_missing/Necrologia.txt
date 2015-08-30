@@ -1,9 +1,9 @@
 name=Necrologia
-image=http://mtgimage.com/card/necrologia.jpg
+image=http://magiccards.info/scans/en/7e/149.jpg
 value=2.500
 rarity=U
 type=Instant
 cost={3}{B}{B}
 effect=Cast SN only during your end step.~As an additional cost to cast SN, pay X life.~Draw X cards.
 timing=removal
-oracle=Cast Necrologia only during your end step. As an additional cost to cast Necrologia, pay X life. Draw X cards.
+oracle=Cast Necrologia only during your end step.\nAs an additional cost to cast Necrologia, pay X life.\nDraw X cards.

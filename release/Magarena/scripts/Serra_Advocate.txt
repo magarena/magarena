@@ -1,5 +1,5 @@
 name=Serra Advocate
-image=http://mtgimage.com/card/serra%20advocate.jpg
+image=http://magiccards.info/scans/en/dvd/7.jpg
 value=3.691
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={3}{W}
 pt=2/2
 ability=flying;{T}:Target attacking or blocking creature gets +2/+2 until end of turn.
 timing=main
-oracle=Flying. {T}: Target attacking or blocking creature gets +2/+2 until end of turn.
+oracle=Flying\n{T}: Target attacking or blocking creature gets +2/+2 until end of turn.

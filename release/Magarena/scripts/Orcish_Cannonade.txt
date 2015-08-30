@@ -1,9 +1,9 @@
 name=Orcish Cannonade
-image=http://mtgimage.com/card/orcish%20cannonade.jpg
+image=http://magiccards.info/scans/en/ddn/28.jpg
 value=2.000
 rarity=C
 type=Instant
 cost={1}{R}{R}
 effect=SN deals 2 damage to target creature or player and 3 damage to you.~Draw a card.
 timing=removal
-oracle=Orcish Cannonade deals 2 damage to target creature or player and 3 damage to you. Draw a card.
+oracle=Orcish Cannonade deals 2 damage to target creature or player and 3 damage to you.\nDraw a card.

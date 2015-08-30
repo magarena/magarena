@@ -1,6 +1,6 @@
 name=Gilt-Leaf Seer
-image=http://mtgimage.com/card/gilt-leaf%20seer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lw/215.jpg
+value=3.295
 rarity=C
 type=Creature
 subtype=Elf,Shaman

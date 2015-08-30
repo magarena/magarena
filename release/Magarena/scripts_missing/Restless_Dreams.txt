@@ -1,9 +1,9 @@
 name=Restless Dreams
-image=http://mtgimage.com/card/restless%20dreams.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tr/79.jpg
+value=2.741
 rarity=C
 type=Sorcery
 cost={B}
 effect=As an additional cost to cast SN, discard X cards.~Return X target creature cards from your graveyard to your hand.
 timing=main
-oracle=As an additional cost to cast Restless Dreams, discard X cards. Return X target creature cards from your graveyard to your hand.
+oracle=As an additional cost to cast Restless Dreams, discard X cards.\nReturn X target creature cards from your graveyard to your hand.

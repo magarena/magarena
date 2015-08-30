@@ -1,0 +1,13 @@
+name=Crovax the Cursed
+image=http://magiccards.info/scans/en/vma/110.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Vampire
+cost={2}{B}{B}
+pt=0/0
+ability=SN enters the battlefield with four +1/+1 counters on it.;\
+        {B}: SN gains flying until end of turn.
+timing=main
+requires_groovy_code
+oracle=Crovax the Cursed enters the battlefield with four +1/+1 counters on it.\nAt the beginning of your upkeep, you may sacrifice a creature. If you do, put a +1/+1 counter on Crovax. If you don't, remove a +1/+1 counter from Crovax.\n{B}: Crovax gains flying until end of turn.

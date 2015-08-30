@@ -1,9 +1,9 @@
 name=Psychic Surgery
-image=http://mtgimage.com/card/psychic%20surgery.jpg
-value=2.500
+image=http://magiccards.info/scans/en/nph/44.jpg
+value=3.036
 rarity=R
 type=Enchantment
 cost={1}{U}
 ability=Whenever an opponent shuffles his or her library, you may look at the top two cards of that library. You may exile one of those cards. Then put the rest on top of that library in any order.
-timing=main
+timing=enchantment
 oracle=Whenever an opponent shuffles his or her library, you may look at the top two cards of that library. You may exile one of those cards. Then put the rest on top of that library in any order.

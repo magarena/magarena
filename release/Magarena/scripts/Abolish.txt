@@ -1,5 +1,5 @@
 name=Abolish
-image=http://mtgimage.com/card/abolish.jpg
+image=http://magiccards.info/scans/en/ddf/29.jpg
 value=4.279
 rarity=U
 type=Instant
@@ -7,4 +7,4 @@ cost={1}{W}{W}
 ability=You may discard a Plains card rather than pay SN's mana cost.
 effect=Destroy target artifact or enchantment.
 timing=removal
-oracle=You may discard a Plains card rather than pay Abolish's mana cost. Destroy target artifact or enchantment.
+oracle=You may discard a Plains card rather than pay Abolish's mana cost.\nDestroy target artifact or enchantment.

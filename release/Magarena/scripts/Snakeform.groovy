@@ -29,7 +29,7 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_CREATURE,
+                TARGET_CREATURE,
                 new MagicBecomeTargetPicker(1,1,false),
                 this,
                 "Target creature\$ loses all abilities " +
@@ -40,8 +40,8 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 //Does not lose static
-                game.doAction(new MagicBecomesCreatureAction(it,PT,AB,ST,C));
-                game.doAction(new MagicDrawAction(event.getPlayer()));
+                game.doAction(new BecomesCreatureAction(it,PT,AB,ST,C));
+                game.doAction(new DrawAction(event.getPlayer()));
             });
         }
     }

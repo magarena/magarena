@@ -1,5 +1,5 @@
 name=Gwafa Hazid, Profiteer
-image=http://mtgimage.com/card/gwafa%20hazid%2C%20profiteer.jpg
+image=http://magiccards.info/scans/en/cfx/110.jpg
 value=3.308
 rarity=R
 type=Legendary,Creature
@@ -8,4 +8,4 @@ cost={1}{W}{U}
 pt=2/2
 timing=main
 requires_groovy_code
-oracle={W}{U}, {T}: Put a bribery counter on target creature you don't control. Its controller draws a card. Creatures with bribery counters on them can't attack or block.
+oracle={W}{U}, {T}: Put a bribery counter on target creature you don't control. Its controller draws a card.\nCreatures with bribery counters on them can't attack or block.

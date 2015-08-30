@@ -1,5 +1,5 @@
 name=Unstoppable Ash
-image=http://mtgimage.com/card/unstoppable%20ash.jpg
+image=http://magiccards.info/scans/en/mt/137.jpg
 value=3.708
 removal=2
 rarity=R
@@ -7,7 +7,9 @@ type=Creature
 subtype=Treefolk,Warrior
 cost={3}{G}
 pt=5/5
-ability=trample;champion Treefolk or Warrior
+ability=Trample;\
+        Champion a Treefolk or Warrior;\
+        Cast SN with AI only if you control a Treefolk or Warrior
 timing=main
 requires_groovy_code
-oracle=Trample. Champion a Treefolk or Warrior. Whenever a creature you control becomes blocked, it gets +0/+5 until end of turn.
+oracle=Trample\nChampion a Treefolk or Warrior\nWhenever a creature you control becomes blocked, it gets +0/+5 until end of turn.

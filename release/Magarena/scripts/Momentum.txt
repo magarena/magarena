@@ -1,0 +1,12 @@
+name=Momentum
+image=http://magiccards.info/scans/en/ud/113.jpg
+value=2.819
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={2}{G}
+ability=At the beginning of your upkeep, you may put a growth counter on SN.;\
+        Enchanted creature gets +1/+1 for each growth counter on SN.
+timing=aura
+enchant=pump,pos creature
+oracle=Enchant creature\nAt the beginning of your upkeep, you may put a growth counter on Momentum.\nEnchanted creature gets +1/+1 for each growth counter on Momentum.

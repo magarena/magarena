@@ -1,0 +1,12 @@
+name=Aerie Bowmasters
+image=http://magiccards.info/scans/en/dtk/170.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Hound,Archer
+cost={2}{G}{G}
+pt=3/4
+ability=Reach;\
+        Megamorph {5}{G}
+timing=main
+oracle=Reach\nMegamorph {5}{G}

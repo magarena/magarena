@@ -1,5 +1,5 @@
 name=Ætherling
-image=http://mtgimage.com/card/aetherling.jpg
+image=http://magiccards.info/scans/en/dgm/11.jpg
 value=4.140
 rarity=R
 type=Creature
@@ -11,4 +11,4 @@ ability={U}: SN can't be blocked this turn.;\
         {1}: SN gets -1/+1 until end of turn.
 timing=main
 requires_groovy_code
-oracle={U}: Exile Ætherling. Return it to the battlefield under its owner's control at the beginning of the next end step. {U}: Ætherling can't be blocked this turn. {1}: Ætherling gets +1/-1 until end of turn. {1}: Ætherling gets -1/+1 until end of turn.
+oracle={U}: Exile Ætherling. Return it to the battlefield under its owner's control at the beginning of the next end step.\n{U}: Ætherling can't be blocked this turn.\n{1}: Ætherling gets +1/-1 until end of turn.\n{1}: Ætherling gets -1/+1 until end of turn.

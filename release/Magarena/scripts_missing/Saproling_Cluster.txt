@@ -1,9 +1,9 @@
 name=Saproling Cluster
-image=http://mtgimage.com/card/saproling%20cluster.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ne/114.jpg
+value=2.771
 rarity=R
 type=Enchantment
 cost={1}{G}
 ability={1}, Discard a card: Put a 1/1 green Saproling creature token onto the battlefield. Any player may activate this ability.
-timing=main
+timing=enchantment
 oracle={1}, Discard a card: Put a 1/1 green Saproling creature token onto the battlefield. Any player may activate this ability.

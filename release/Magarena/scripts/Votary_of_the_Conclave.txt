@@ -1,5 +1,5 @@
 name=Votary of the Conclave
-image=http://mtgimage.com/card/votary%20of%20the%20conclave.jpg
+image=http://magiccards.info/scans/en/rav/35.jpg
 value=1.906
 rarity=C
 type=Creature

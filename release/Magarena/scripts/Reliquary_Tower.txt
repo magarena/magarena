@@ -1,9 +1,9 @@
 name=Reliquary Tower
-image=http://mtgimage.com/card/reliquary%20tower.jpg
+image=http://magiccards.info/scans/en/c14/308.jpg
 value=3.475
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.
 timing=land
 requires_groovy_code=Spellbook
-oracle=You have no maximum hand size. {T}: Add {1} to your mana pool.
+oracle=You have no maximum hand size.\n{T}: Add {1} to your mana pool.

@@ -1,6 +1,6 @@
 name=Indulgent Tormentor
-image=http://mtgimage.com/card/indulgent%20tormentor.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/101.jpg
+value=4.000
 rarity=R
 type=Creature
 subtype=Demon
@@ -9,4 +9,4 @@ pt=5/3
 ability=Flying;\
         At the beginning of your upkeep, draw a card unless target opponent sacrifices a creature or pays 3 life.
 timing=main
-oracle=Flying. At the beginning of your upkeep, draw a card unless target opponent sacrifices a creature or pays 3 life.
+oracle=Flying\nAt the beginning of your upkeep, draw a card unless target opponent sacrifices a creature or pays 3 life.

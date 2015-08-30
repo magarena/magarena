@@ -1,9 +1,9 @@
 name=Inexorable Tide
-image=http://mtgimage.com/card/inexorable%20tide.jpg
+image=http://magiccards.info/scans/en/som/35.jpg
 value=2.500
 rarity=R
 type=Enchantment
 cost={3}{U}{U}
 ability=Whenever you cast a spell, proliferate.
-timing=main
+timing=enchantment
 oracle=Whenever you cast a spell, proliferate.

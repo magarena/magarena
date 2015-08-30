@@ -1,13 +1,13 @@
 name=Polis Crusher
-image=http://mtgimage.com/card/polis%20crusher.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ths/198.jpg
+value=3.529
 rarity=R
 type=Creature
 subtype=Cyclops
 cost={2}{R}{G}
 pt=4/4
-ability=Trample; protection from enchantments;\
+ability=Trample, protection from enchantments;\
         {4}{R}{G}: Monstrosity 3.;\
         Whenever SN deals combat damage to a player, if SN is monstrous, destroy target enchantment that player controls.
 timing=main
-oracle=Trample, protection from enchantments. {4}{R}{G}: Monstrosity 3. Whenever Polis Crusher deals combat damage to a player, if Polis Crusher is monstrous, destroy target enchantment that player controls.
+oracle=Trample, protection from enchantments\n{4}{R}{G}: Monstrosity 3.\nWhenever Polis Crusher deals combat damage to a player, if Polis Crusher is monstrous, destroy target enchantment that player controls.

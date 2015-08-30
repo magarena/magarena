@@ -1,6 +1,6 @@
 name=Crystal Seer
-image=http://mtgimage.com/card/crystal%20seer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gp/23.jpg
+value=1.195
 rarity=C
 type=Creature
 subtype=Vedalken,Wizard
@@ -9,4 +9,4 @@ pt=2/2
 ability=When SN enters the battlefield, look at the top four cards of your library, then put them back in any order.;\
         {4}{U}: Return SN to its owner's hand.
 timing=main
-oracle=When Crystal Seer enters the battlefield, look at the top four cards of your library, then put them back in any order. {4}{U}: Return Crystal Seer to its owner's hand.
+oracle=When Crystal Seer enters the battlefield, look at the top four cards of your library, then put them back in any order.\n{4}{U}: Return Crystal Seer to its owner's hand.

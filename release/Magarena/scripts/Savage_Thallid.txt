@@ -1,5 +1,5 @@
 name=Savage Thallid
-image=http://mtgimage.com/card/savage%20thallid.jpg
+image=http://magiccards.info/scans/en/ts/213.jpg
 value=2.897
 rarity=C
 type=Creature
@@ -10,4 +10,4 @@ ability=At the beginning of your upkeep, put a spore counter on SN.;\
         Remove three spore counters from SN: Put a 1/1 green Saproling creature token onto the battlefield.;\
         Sacrifice a Saproling: Regenerate target Fungus.
 timing=main
-oracle=At the beginning of your upkeep, put a spore counter on Savage Thallid. Remove three spore counters from Savage Thallid: Put a 1/1 green Saproling creature token onto the battlefield. Sacrifice a Saproling: Regenerate target Fungus.
+oracle=At the beginning of your upkeep, put a spore counter on Savage Thallid.\nRemove three spore counters from Savage Thallid: Put a 1/1 green Saproling creature token onto the battlefield.\nSacrifice a Saproling: Regenerate target Fungus.

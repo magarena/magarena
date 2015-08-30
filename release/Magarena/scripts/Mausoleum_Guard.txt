@@ -1,5 +1,5 @@
 name=Mausoleum Guard
-image=http://mtgimage.com/card/mausoleum%20guard.jpg
+image=http://magiccards.info/scans/en/ddk/13.jpg
 value=3.333
 rarity=U
 type=Creature

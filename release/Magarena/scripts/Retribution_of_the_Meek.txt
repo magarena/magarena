@@ -1,5 +1,5 @@
 name=Retribution of the Meek
-image=http://mtgimage.com/card/retribution%20of%20the%20meek.jpg
+image=http://magiccards.info/scans/en/vi/119.jpg
 value=4.271
 rarity=R
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Gurmag Angler
-image=http://mtgimage.com/card/gurmag%20angler.jpg
+image=http://magiccards.info/scans/en/frf/72.jpg
 value=2.500
 rarity=C
 type=Creature

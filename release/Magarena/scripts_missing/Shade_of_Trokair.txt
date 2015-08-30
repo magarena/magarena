@@ -1,6 +1,6 @@
 name=Shade of Trokair
-image=http://mtgimage.com/card/shade%20of%20trokair.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pc/18.jpg
+value=3.614
 rarity=C
 type=Creature
 subtype=Shade
@@ -9,4 +9,4 @@ pt=1/2
 ability={W}: SN gets +1/+1 until end of turn.;\
         Suspend 3—{W}
 timing=main
-oracle={W}: Shade of Trokair gets +1/+1 until end of turn. Suspend 3—{W}
+oracle={W}: Shade of Trokair gets +1/+1 until end of turn.\nSuspend 3—{W}

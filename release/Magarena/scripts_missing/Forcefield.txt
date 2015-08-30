@@ -1,9 +1,9 @@
 name=Forcefield
-image=http://mtgimage.com/card/forcefield.jpg
-value=2.500
+image=http://magiccards.info/scans/en/med/157.jpg
+value=4.554
 rarity=R
 type=Artifact
 cost={3}
 ability={1}: The next time an unblocked creature of your choice would deal combat damage to you this turn, prevent all but 1 of that damage.
-timing=main
+timing=artifact
 oracle={1}: The next time an unblocked creature of your choice would deal combat damage to you this turn, prevent all but 1 of that damage.

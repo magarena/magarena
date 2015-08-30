@@ -1,5 +1,5 @@
 name=Zodiac Monkey
-image=http://mtgimage.com/card/zodiac%20monkey.jpg
+image=http://magiccards.info/scans/en/9e/285.jpg
 value=2.516
 ability=forestwalk
 rarity=C

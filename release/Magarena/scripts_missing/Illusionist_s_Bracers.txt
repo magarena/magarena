@@ -1,11 +1,11 @@
 name=Illusionist's Bracers
-image=http://mtgimage.com/card/illusionist%27s%20bracers.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gtc/231.jpg
+value=3.722
 rarity=R
 type=Artifact
 subtype=Equipment
 cost={2}
 ability=Whenever an ability of equipped creature is activated, if it isn't a mana ability, copy that ability. You may choose new targets for the copy.;\
         Equip {3}
-timing=main
-oracle=Whenever an ability of equipped creature is activated, if it isn't a mana ability, copy that ability. You may choose new targets for the copy. Equip {3}
+timing=equipment
+oracle=Whenever an ability of equipped creature is activated, if it isn't a mana ability, copy that ability. You may choose new targets for the copy.\nEquip {3}

@@ -1,5 +1,5 @@
 name=Phyrexian Digester
-image=http://mtgimage.com/card/phyrexian%20digester.jpg
+image=http://magiccards.info/scans/en/mbs/120.jpg
 value=2.115
 ability=infect
 rarity=C

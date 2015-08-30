@@ -1,10 +1,10 @@
 name=Smokestack
-image=http://mtgimage.com/card/smokestack.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vma/282.jpg
+value=4.500
 rarity=R
 type=Artifact
 cost={4}
 ability=At the beginning of your upkeep, you may put a soot counter on SN.;\
         At the beginning of each player's upkeep, that player sacrifices a permanent for each soot counter on SN.
-timing=main
-oracle=At the beginning of your upkeep, you may put a soot counter on Smokestack. At the beginning of each player's upkeep, that player sacrifices a permanent for each soot counter on Smokestack.
+timing=artifact
+oracle=At the beginning of your upkeep, you may put a soot counter on Smokestack.\nAt the beginning of each player's upkeep, that player sacrifices a permanent for each soot counter on Smokestack.

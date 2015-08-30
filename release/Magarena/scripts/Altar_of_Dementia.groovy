@@ -8,7 +8,7 @@
             return [
                 new MagicSacrificePermanentEvent(
                     source,
-                    MagicTargetChoice.SACRIFICE_CREATURE
+                    SACRIFICE_CREATURE
                 )
             ];
         }
@@ -16,7 +16,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_PLAYER,
+                TARGET_PLAYER,
                 payedCost.getTarget(),
                 this,
                 "Target player\$ puts a number of cards equal to the sacrificed creature's power " + 
@@ -27,7 +27,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 final MagicPermanent sacrificed = event.getRefPermanent();
-                game.doAction(new MagicMillLibraryAction(it,sacrificed.getPower()));
+                game.doAction(new MillLibraryAction(it,sacrificed.getPower()));
             });
         }
     }

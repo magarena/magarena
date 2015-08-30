@@ -1,6 +1,6 @@
 name=Switcheroo
-image=http://mtgimage.com/card/switcheroo.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m13/71.jpg
+value=3.897
 rarity=U
 type=Sorcery
 cost={4}{U}

@@ -1,5 +1,5 @@
 name=Flensermite
-image=http://mtgimage.com/card/flensermite.jpg
+image=http://magiccards.info/scans/en/mbs/41.jpg
 value=3.023
 ability=infect;lifelink
 rarity=C
@@ -8,4 +8,4 @@ subtype=Gremlin
 cost={1}{B}
 pt=1/1
 timing=main
-oracle=Infect. Lifelink
+oracle=Infect\nLifelink

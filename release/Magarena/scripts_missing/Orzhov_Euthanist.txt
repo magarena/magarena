@@ -1,6 +1,6 @@
 name=Orzhov Euthanist
-image=http://mtgimage.com/card/orzhov%20euthanist.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gp/54.jpg
+value=3.103
 rarity=C
 type=Creature
 subtype=Human,Assassin
@@ -9,4 +9,4 @@ pt=2/2
 ability=Haunt;\
         When SN enters the battlefield or the creature it haunts dies, destroy target creature that was dealt damage this turn.
 timing=main
-oracle=Haunt. When Orzhov Euthanist enters the battlefield or the creature it haunts dies, destroy target creature that was dealt damage this turn.
+oracle=Haunt\nWhen Orzhov Euthanist enters the battlefield or the creature it haunts dies, destroy target creature that was dealt damage this turn.

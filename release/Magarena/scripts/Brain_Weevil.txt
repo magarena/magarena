@@ -1,5 +1,5 @@
 name=Brain Weevil
-image=http://mtgimage.com/card/brain%20weevil.jpg
+image=http://magiccards.info/scans/en/ddj/58.jpg
 value=2.147
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=intimidate;\
         Sacrifice SN: Target player discards two cards. Activate this ability only any time you could cast a sorcery.
 timing=main
-oracle=Intimidate. Sacrifice Brain Weevil: Target player discards two cards. Activate this ability only any time you could cast a sorcery.
+oracle=Intimidate\nSacrifice Brain Weevil: Target player discards two cards. Activate this ability only any time you could cast a sorcery.

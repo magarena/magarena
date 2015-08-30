@@ -1,5 +1,5 @@
 name=Thran War Machine
-image=http://mtgimage.com/card/thran%20war%20machine.jpg
+image=http://magiccards.info/scans/en/ul/134.jpg
 value=2.352
 rarity=U
 type=Artifact,Creature
@@ -8,4 +8,4 @@ cost={4}
 pt=4/5
 ability=SN attacks each turn if able.;echo {4}
 timing=main
-oracle=Echo {4}. Thran War Machine attacks each turn if able.
+oracle=Echo {4}\nThran War Machine attacks each turn if able.

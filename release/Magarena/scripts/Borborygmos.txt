@@ -1,5 +1,5 @@
 name=Borborygmos
-image=http://mtgimage.com/card/borborygmos.jpg
+image=http://magiccards.info/scans/en/gp/103.jpg
 value=4.021
 rarity=R
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=6/7
 ability=Trample;\
         Whenever SN deals combat damage to a player, put a +1/+1 counter on each creature you control.
 timing=main
-oracle=Trample. Whenever Borborygmos deals combat damage to a player, put a +1/+1 counter on each creature you control.
+oracle=Trample\nWhenever Borborygmos deals combat damage to a player, put a +1/+1 counter on each creature you control.

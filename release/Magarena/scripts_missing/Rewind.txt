@@ -1,7 +1,7 @@
 name=Rewind
-image=http://mtgimage.com/card/rewind.jpg
-value=2.500
-rarity=C
+image=http://magiccards.info/scans/en/m13/65.jpg
+value=4.248
+rarity=U
 type=Instant
 cost={2}{U}{U}
 effect=Counter target spell. Untap up to four lands.

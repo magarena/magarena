@@ -1,9 +1,9 @@
 name=Storage Matrix
-image=http://mtgimage.com/card/storage%20matrix.jpg
-value=2.500
+image=http://magiccards.info/scans/en/9e/310.jpg
+value=4.238
 rarity=R
 type=Artifact
 cost={3}
 ability=As long as SN is untapped, each player chooses artifact, creature, or land during his or her untap step. That player can untap only permanents of the chosen type this step.
-timing=main
+timing=artifact
 oracle=As long as Storage Matrix is untapped, each player chooses artifact, creature, or land during his or her untap step. That player can untap only permanents of the chosen type this step.

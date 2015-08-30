@@ -1,5 +1,5 @@
 name=Transcendent Master
-image=http://mtgimage.com/card/transcendent%20master.jpg
+image=http://magiccards.info/scans/en/roe/51.jpg
 value=4.263
 rarity=M
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=level up {1} 12
 timing=main
 requires_groovy_code
-oracle=Level up {1}. LEVEL 6-11. 6/6. Lifelink. LEVEL 12+. 9/9. Lifelink, indestructible
+oracle=Level up {1}\nLEVEL 6-11\n6/6\nLifelink\nLEVEL 12+\n9/9\nLifelink, indestructible

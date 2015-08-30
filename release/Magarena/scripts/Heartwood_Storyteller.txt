@@ -1,5 +1,5 @@
 name=Heartwood Storyteller
-image=http://mtgimage.com/card/heartwood%20storyteller.jpg
+image=http://magiccards.info/scans/en/fut/127.jpg
 value=4.233
 rarity=R
 type=Creature

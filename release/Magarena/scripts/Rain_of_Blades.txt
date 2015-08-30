@@ -1,9 +1,10 @@
 name=Rain of Blades
-image=http://mtgimage.com/card/rain%20of%20blades.jpg
+image=http://magiccards.info/scans/en/m13/28.jpg
 value=2.824
 rarity=U
 type=Instant
 cost={W}
+ability=Cast SN with AI only if an opponent controls an attacking creature.
 effect=SN deals 1 damage to each attacking creature.
 timing=block
 oracle=Rain of Blades deals 1 damage to each attacking creature.

@@ -1,0 +1,9 @@
+name=Skywise Teachings
+image=http://magiccards.info/scans/en/dtk/79.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={3}{U}
+ability=Whenever you cast a noncreature spell, you may pay {1}{U}. If you do, put a 2/2 blue Djinn Monk creature token with flying onto the battlefield.
+timing=enchantment
+oracle=Whenever you cast a noncreature spell, you may pay {1}{U}. If you do, put a 2/2 blue Djinn Monk creature token with flying onto the battlefield.

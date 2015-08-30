@@ -1,5 +1,5 @@
 name=Resounding Thunder
-image=http://mtgimage.com/card/resounding%20thunder.jpg
+image=http://magiccards.info/scans/en/ala/110.jpg
 value=2.373
 rarity=C
 type=Instant
@@ -8,4 +8,4 @@ ability=Cycling {5}{B}{R}{G};\
         When you cycle SN, SN deals 6 damage to target creature or player.
 effect=SN deals 3 damage to target creature or player.
 timing=removal
-oracle=Resounding Thunder deals 3 damage to target creature or player. Cycling {5}{B}{R}{G}. When you cycle Resounding Thunder, it deals 6 damage to target creature or player.
+oracle=Resounding Thunder deals 3 damage to target creature or player.\nCycling {5}{B}{R}{G}\nWhen you cycle Resounding Thunder, it deals 6 damage to target creature or player.

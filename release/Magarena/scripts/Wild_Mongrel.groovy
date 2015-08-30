@@ -25,8 +25,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent()
             final MagicColor color = event.getChosenColor();
-            game.doAction(new MagicChangeTurnPTAction(permanent,1,1));
-            game.doAction(new MagicAddStaticAction(permanent,
+            game.doAction(new ChangeTurnPTAction(permanent,1,1));
+            game.doAction(new AddStaticAction(permanent,
                 new MagicStatic(MagicLayer.Color,MagicStatic.UntilEOT) {
                 @Override
                 public int getColorFlags(final MagicPermanent perm, final int flags) {

@@ -1,6 +1,6 @@
 name=Martyrdom
-image=http://mtgimage.com/card/martyrdom.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ai/139.jpg
+value=3.706
 rarity=C
 type=Instant
 cost={1}{W}{W}

@@ -1,5 +1,5 @@
 name=Celestial Ancient
-image=http://mtgimage.com/card/celestial%20ancient.jpg
+image=http://magiccards.info/scans/en/pc2/5.jpg
 value=3.643
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=flying;\
         Whenever you cast an enchantment spell, put a +1/+1 counter on each creature you control.
 timing=main
-oracle=Flying. Whenever you cast an enchantment spell, put a +1/+1 counter on each creature you control.
+oracle=Flying\nWhenever you cast an enchantment spell, put a +1/+1 counter on each creature you control.

@@ -1,5 +1,5 @@
 name=Yavimaya Gnats
-image=http://mtgimage.com/card/yavimaya%20gnats.jpg
+image=http://magiccards.info/scans/en/ia/168.jpg
 value=2.786
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=0/1
 ability=flying;\
         {G}: Regenerate SN.
 timing=main
-oracle=Flying. {G}: Regenerate Yavimaya Gnats.
+oracle=Flying\n{G}: Regenerate Yavimaya Gnats.

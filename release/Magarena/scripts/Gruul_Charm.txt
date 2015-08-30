@@ -1,0 +1,9 @@
+name=Gruul Charm
+image=http://magiccards.info/scans/en/gtc/169.jpg
+value=3.121
+rarity=U
+type=Instant
+cost={R}{G}
+timing=removal
+requires_groovy_code
+oracle=Choose one —\n• Creatures without flying can't block this turn.\n• Gain control of all permanents you own.\n• Gruul Charm deals 3 damage to each creature with flying.

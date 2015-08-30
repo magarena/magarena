@@ -1,10 +1,10 @@
 name=Contamination
-image=http://mtgimage.com/card/contamination.jpg
-value=2.500
+image=http://magiccards.info/scans/en/us/123.jpg
+value=4.595
 rarity=R
 type=Enchantment
 cost={2}{B}
 ability=At the beginning of your upkeep, sacrifice SN unless you sacrifice a creature.;\
         If a land is tapped for mana, it produces {B} instead of any other type and amount.
-timing=main
-oracle=At the beginning of your upkeep, sacrifice Contamination unless you sacrifice a creature. If a land is tapped for mana, it produces {B} instead of any other type and amount.
+timing=enchantment
+oracle=At the beginning of your upkeep, sacrifice Contamination unless you sacrifice a creature.\nIf a land is tapped for mana, it produces {B} instead of any other type and amount.

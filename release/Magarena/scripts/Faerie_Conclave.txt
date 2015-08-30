@@ -1,12 +1,12 @@
 name=Faerie Conclave
-image=http://mtgimage.com/card/faerie%20conclave.jpg
+image=http://magiccards.info/scans/en/c13/288.jpg
 value=4.389
 rarity=U
 type=Land
 mana=u3
 timing=land
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {U} to your mana pool.
+        {T}: Add {U} to your mana pool.;\
+        {1}{U}: SN becomes a 2/1 blue Faerie creature with flying until end of turn. It's still a land.
 mana_or_combat
-requires_groovy_code
-oracle=Faerie Conclave enters the battlefield tapped. {T}: Add {U} to your mana pool. {1}{U}: Faerie Conclave becomes a 2/1 blue Faerie creature with flying until end of turn. It's still a land.
+oracle=Faerie Conclave enters the battlefield tapped.\n{T}: Add {U} to your mana pool.\n{1}{U}: Faerie Conclave becomes a 2/1 blue Faerie creature with flying until end of turn. It's still a land.

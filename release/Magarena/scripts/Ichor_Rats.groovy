@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicPlayer player : game.getAPNAP()) {
-                game.doAction(new MagicChangePoisonAction(player,1));
+                game.doAction(new ChangePoisonAction(player,1));
             }
         }
     }

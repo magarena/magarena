@@ -1,6 +1,6 @@
 name=The Fallen
-image=http://mtgimage.com/card/the%20fallen.jpg
-value=2.500
+image=http://magiccards.info/scans/en/med/69.jpg
+value=3.500
 rarity=U
 type=Creature
 subtype=Zombie

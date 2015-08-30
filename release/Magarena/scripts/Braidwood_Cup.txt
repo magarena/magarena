@@ -1,5 +1,5 @@
 name=Braidwood Cup
-image=http://mtgimage.com/card/braidwood%20cup.jpg
+image=http://magiccards.info/scans/en/ud/126.jpg
 value=2.842
 rarity=U
 type=Artifact

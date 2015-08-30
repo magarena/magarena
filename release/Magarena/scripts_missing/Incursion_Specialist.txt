@@ -1,6 +1,6 @@
 name=Incursion Specialist
-image=http://mtgimage.com/card/incursion%20specialist.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gtc/38.jpg
+value=2.576
 rarity=U
 type=Creature
 subtype=Human,Wizard

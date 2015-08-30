@@ -1,5 +1,5 @@
 name=Sensory Deprivation
-image=http://mtgimage.com/card/sensory%20deprivation.jpg
+image=http://magiccards.info/scans/en/m14/71.jpg
 value=2.167
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={U}
 ability=Enchanted creature gets -3/-0.
 timing=removal
 enchant=weaken -3/-0,neg creature
-oracle=Enchant creature. Enchanted creature gets -3/-0.
+oracle=Enchant creature\nEnchanted creature gets -3/-0.

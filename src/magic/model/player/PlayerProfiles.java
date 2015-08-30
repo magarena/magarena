@@ -4,11 +4,11 @@ import java.io.IOException;
 import java.nio.file.DirectoryStream;
 import java.nio.file.DirectoryStream.Filter;
 import java.nio.file.Files;
+import java.nio.file.NoSuchFileException;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import magic.ai.MagicAIImpl;
 import magic.utility.MagicFileSystem;
@@ -35,13 +35,13 @@ public final class PlayerProfiles {
         // Humans
         for (Path path : getProfilePaths("human")) {
             final String profileId = path.getFileName().toString();
-            final HumanPlayer player = new HumanPlayer(profileId);
+            final HumanProfile player = new HumanProfile(profileId);
             profilesMap.put(profileId, player);
         }
         // AIs
         for (Path path : getProfilePaths("ai")) {
             final String profileId = path.getFileName().toString();
-            final AiPlayer player = new AiPlayer(profileId);
+            final AiProfile player = new AiProfile(profileId);
             profilesMap.put(profileId, player);
         }
     }
@@ -84,9 +84,8 @@ public final class PlayerProfiles {
         }
     }
 
-    private static void createDefaultHumanPlayerProfiles() throws IOException {
-        final HumanPlayer profile = new HumanPlayer();
-        profile.setPlayerName(getDefaultPlayerProfileName());
+    public static void createDefaultHumanPlayerProfiles() throws IOException {
+        final HumanProfile profile = HumanProfile.create(getDefaultPlayerProfileName());
         profile.save();
     }
 
@@ -96,36 +95,30 @@ public final class PlayerProfiles {
 
     }
 
-    private static void createDefaultAiPlayerProfiles() throws IOException {
-        // Les Vegas
-        AiPlayer profile = new AiPlayer();
-        profile.setPlayerName("Les Vegas");
-        profile.setAiType(MagicAIImpl.VEGAS);
-        profile.setAiLevel(6);
+    public static void createDefaultAiPlayerProfiles() throws IOException {
+        createAiPlayerProfile("Les Vegas", MagicAIImpl.VEGAS, 6, PlayerProfiles.AVATAR_LesVegas);
+        createAiPlayerProfile("Mini Max", MagicAIImpl.MMAB, 6, PlayerProfiles.AVATAR_MiniMax);
+        createAiPlayerProfile("Monty Carlo", MagicAIImpl.MCTS, 6, PlayerProfiles.AVATAR_MontyCarlo);
+    }
+
+    private static void createAiPlayerProfile(
+            final String name,
+            final MagicAIImpl aiImpl,
+            final int level,
+            final Path avatarPath) {
+        final AiProfile profile = AiProfile.create(name, aiImpl, level);
         profile.save();
-        setPlayerAvatar(profile, PlayerProfiles.AVATAR_LesVegas);
-        // Mini Max
-        profile = new AiPlayer();
-        profile.setPlayerName("Mini Max");
-        profile.setAiType(MagicAIImpl.MMAB);
-        profile.setAiLevel(6);
-        profile.save();
-        setPlayerAvatar(profile, PlayerProfiles.AVATAR_MiniMax);
-        // Monty Carlo
-        profile = new AiPlayer();
-        profile.setPlayerName("Monty Carlo");
-        profile.setAiType(MagicAIImpl.MCTS);
-        profile.setAiLevel(6);
-        profile.save();
-        setPlayerAvatar(profile, PlayerProfiles.AVATAR_MontyCarlo);
+        setPlayerAvatar(profile, avatarPath);
     }
 
     public static void setPlayerAvatar(final PlayerProfile profile, final Path avatarPath) {
         final Path targetPath = profile.getProfilePath().resolve("player.avatar");
         try {
             Files.copy(avatarPath, targetPath, StandardCopyOption.REPLACE_EXISTING);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        } catch (NoSuchFileException ex) {
+            System.err.println(ex);
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
         }
     }
 
@@ -134,31 +127,34 @@ public final class PlayerProfiles {
     }
 
     public static PlayerProfile getDefaultAiPlayer() {
+        for (PlayerProfile profile : getAiPlayerProfiles().values()) {
+            final AiProfile aiProfile = (AiProfile) profile;
+            if (aiProfile.getAiType() == MagicAIImpl.MCTS) {
+                return profile;
+            }
+        }
+        // No MCTS profile exists which can happen when importing
+        // previous set of players and default AI profiles have
+        // been deleted or changed by user. (see github issue #329).
         return getAiPlayerProfiles().values().iterator().next();
     }
 
-    public static HashMap<String, PlayerProfile> getHumanPlayerProfiles() {
+    private static HashMap<String, PlayerProfile> getPlayerProfiles(final Class<? extends PlayerProfile> profileClass) {
         final HashMap<String, PlayerProfile> filteredProfiles = new HashMap<>();
-        final Iterator<PlayerProfile> itr = profilesMap.values().iterator();
-        while (itr.hasNext()) {
-            final PlayerProfile profile = itr.next();
-            if (profile instanceof HumanPlayer) {
+        for (PlayerProfile profile : profilesMap.values()) {
+            if (profile.getClass().equals(profileClass)) {
                 filteredProfiles.put(profile.getId(), profile);
             }
         }
         return filteredProfiles;
     }
 
+    public static HashMap<String, PlayerProfile> getHumanPlayerProfiles() {
+        return getPlayerProfiles(HumanProfile.class);
+    }
+
     public static HashMap<String, PlayerProfile> getAiPlayerProfiles() {
-        final HashMap<String, PlayerProfile> filteredProfiles = new HashMap<>();
-        final Iterator<PlayerProfile> itr = profilesMap.values().iterator();
-        while (itr.hasNext()) {
-            final PlayerProfile profile = itr.next();
-            if (profile instanceof AiPlayer) {
-                filteredProfiles.put(profile.getId(), profile);
-            }
-        }
-        return filteredProfiles;
+        return getPlayerProfiles(AiProfile.class);
     }
 
     /**
@@ -182,6 +178,8 @@ public final class PlayerProfiles {
         return profilesPath.resolve(playerProfile.getPlayerType()).resolve(playerProfile.getId());
     }
 
-
+    public static boolean canDeleteProfile(final PlayerProfile playerProfile) {
+        return getPlayerProfiles(playerProfile.getClass()).size() > 1;
+    }
 
 }

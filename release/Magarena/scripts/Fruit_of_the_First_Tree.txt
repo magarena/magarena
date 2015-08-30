@@ -1,0 +1,11 @@
+name=Fruit of the First Tree
+image=http://magiccards.info/scans/en/frf/132.jpg
+value=2.500
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={3}{G}
+timing=aura
+enchant=pump,creature
+requires_groovy_code
+oracle=Enchant creature\nWhen enchanted creature dies, you gain X life and draw X cards, where X is its toughness.

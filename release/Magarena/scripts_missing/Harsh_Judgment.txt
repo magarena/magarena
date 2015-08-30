@@ -1,10 +1,10 @@
 name=Harsh Judgment
-image=http://mtgimage.com/card/harsh%20judgment.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/19.jpg
+value=3.440
 rarity=R
 type=Enchantment
 cost={2}{W}{W}
 ability=As SN enters the battlefield, choose a color.;\
         If an instant or sorcery spell of the chosen color would deal damage to you, it deals that damage to its controller instead.
-timing=main
-oracle=As Harsh Judgment enters the battlefield, choose a color. If an instant or sorcery spell of the chosen color would deal damage to you, it deals that damage to its controller instead.
+timing=enchantment
+oracle=As Harsh Judgment enters the battlefield, choose a color.\nIf an instant or sorcery spell of the chosen color would deal damage to you, it deals that damage to its controller instead.

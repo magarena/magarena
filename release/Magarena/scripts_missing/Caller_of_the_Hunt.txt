@@ -1,6 +1,6 @@
 name=Caller of the Hunt
-image=http://mtgimage.com/card/caller%20of%20the%20hunt.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/233.jpg
+value=3.733
 rarity=R
 type=Creature
 subtype=Human
@@ -9,4 +9,4 @@ pt=*/*
 ability=As an additional cost to cast SN, choose a creature type.;\
         SN's power and toughness are each equal to the number of creatures of the chosen type on the battlefield.
 timing=main
-oracle=As an additional cost to cast Caller of the Hunt, choose a creature type. Caller of the Hunt's power and toughness are each equal to the number of creatures of the chosen type on the battlefield.
+oracle=As an additional cost to cast Caller of the Hunt, choose a creature type.\nCaller of the Hunt's power and toughness are each equal to the number of creatures of the chosen type on the battlefield.

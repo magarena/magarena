@@ -1,0 +1,12 @@
+name=Monastery Loremaster
+image=http://magiccards.info/scans/en/dtk/63.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Djinn,Wizard
+cost={3}{U}
+pt=3/2
+ability=Megamorph {5}{U};\
+        When SN is turned face up, return target noncreature, nonland card from your graveyard to your hand.
+timing=main
+oracle=Megamorph {5}{U}\nWhen Monastery Loremaster is turned face up, return target noncreature, nonland card from your graveyard to your hand.

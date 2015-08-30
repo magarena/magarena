@@ -1,7 +1,7 @@
 name=Garruk Wildspeaker
-image=http://mtgimage.com/card/garruk%20wildspeaker.jpg
+image=http://magiccards.info/scans/en/cmd/157.jpg
 value=2.500
-rarity=R
+rarity=M
 type=Planeswalker
 subtype=Garruk
 cost={2}{G}{G}
@@ -9,4 +9,4 @@ ability=+1: Untap two target lands.;\
         −1: Put a 3/3 green Beast creature token onto the battlefield.;\
         −4: Creatures you control get +3/+3 and gain trample until end of turn.
 timing=main
-oracle=+1: Untap two target lands. −1: Put a 3/3 green Beast creature token onto the battlefield. −4: Creatures you control get +3/+3 and gain trample until end of turn.
+oracle=+1: Untap two target lands.\n−1: Put a 3/3 green Beast creature token onto the battlefield.\n−4: Creatures you control get +3/+3 and gain trample until end of turn.

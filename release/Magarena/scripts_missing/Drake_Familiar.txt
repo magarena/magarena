@@ -1,6 +1,6 @@
 name=Drake Familiar
-image=http://mtgimage.com/card/drake%20familiar.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rav/44.jpg
+value=2.810
 rarity=C
 type=Creature
 subtype=Drake
@@ -9,4 +9,4 @@ pt=2/1
 ability=Flying;\
         When SN enters the battlefield, sacrifice it unless you return an enchantment to its owner's hand.
 timing=main
-oracle=Flying. When Drake Familiar enters the battlefield, sacrifice it unless you return an enchantment to its owner's hand.
+oracle=Flying\nWhen Drake Familiar enters the battlefield, sacrifice it unless you return an enchantment to its owner's hand.

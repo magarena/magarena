@@ -1,5 +1,5 @@
 name=Parallax Tide
-image=http://mtgimage.com/card/parallax%20tide.jpg
+image=http://magiccards.info/scans/en/ne/37.jpg
 value=4.043
 rarity=R
 type=Enchantment
@@ -8,4 +8,4 @@ ability=fading 5;\
         Remove a fade counter from SN: Exile target land.;\
         When SN leaves the battlefield, each player returns to the battlefield all cards he or she owns exiled with SN.
 timing=enchantment
-oracle=Fading 5. Remove a fade counter from Parallax Tide: Exile target land. When Parallax Tide leaves the battlefield, each player returns to the battlefield all cards he or she owns exiled with Parallax Tide.
+oracle=Fading 5\nRemove a fade counter from Parallax Tide: Exile target land.\nWhen Parallax Tide leaves the battlefield, each player returns to the battlefield all cards he or she owns exiled with Parallax Tide.

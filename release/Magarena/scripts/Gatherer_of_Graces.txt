@@ -1,12 +1,12 @@
 name=Gatherer of Graces
-image=http://mtgimage.com/card/gatherer%20of%20graces.jpg
+image=http://magiccards.info/scans/en/gp/85.jpg
 value=2.988
 rarity=U
 type=Creature
 subtype=Human,Druid
 cost={1}{G}
 pt=1/2
-ability=Sacrifice an Aura: Regenerate SN.
+ability=SN gets +1/+1 for each Aura attached to it.;\
+        Sacrifice an Aura: Regenerate SN.
 timing=main
-requires_groovy_code
-oracle=Gatherer of Graces gets +1/+1 for each Aura attached to it. Sacrifice an Aura: Regenerate Gatherer of Graces.
+oracle=Gatherer of Graces gets +1/+1 for each Aura attached to it.\nSacrifice an Aura: Regenerate Gatherer of Graces.

@@ -1,6 +1,6 @@
 name=Oracle's Attendants
-image=http://mtgimage.com/card/oracle%27s%20attendants.jpg
-value=2.500
+image=http://magiccards.info/scans/en/9e/30.jpg
+value=3.033
 rarity=R
 type=Creature
 subtype=Human,Soldier

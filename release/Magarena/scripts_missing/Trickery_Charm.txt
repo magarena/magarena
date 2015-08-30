@@ -1,9 +1,9 @@
 name=Trickery Charm
-image=http://mtgimage.com/card/trickery%20charm.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/119.jpg
+value=3.472
 rarity=C
 type=Instant
 cost={U}
-effect=Choose one — • Target creature gains flying until end of turn. • Target creature becomes the creature type of your choice until end of turn. • Look at the top four cards of your library, then put them back in any order.
+effect=Choose one — (1) Target creature gains flying until end of turn. (2) Target creature becomes the creature type of your choice until end of turn. (3) Look at the top four cards of your library, then put them back in any order.
 timing=removal
-oracle=Choose one — • Target creature gains flying until end of turn. • Target creature becomes the creature type of your choice until end of turn. • Look at the top four cards of your library, then put them back in any order.
+oracle=Choose one —\n• Target creature gains flying until end of turn.\n• Target creature becomes the creature type of your choice until end of turn.\n• Look at the top four cards of your library, then put them back in any order.

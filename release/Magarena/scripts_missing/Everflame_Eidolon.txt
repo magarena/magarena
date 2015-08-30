@@ -1,6 +1,6 @@
 name=Everflame Eidolon
-image=http://mtgimage.com/card/everflame%20eidolon.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bng/92.jpg
+value=3.640
 rarity=U
 type=Enchantment,Creature
 subtype=Spirit
@@ -9,5 +9,5 @@ pt=1/1
 ability=Bestow {2}{R};\
         {R}: SN gets +1/+0 until end of turn. If it's an Aura, enchanted creature gets +1/+0 until end of turn instead.;\
         Enchanted creature gets +1/+1.
-timing=main
-oracle=Bestow {2}{R}. {R}: Everflame Eidolon gets +1/+0 until end of turn. If it's an Aura, enchanted creature gets +1/+0 until end of turn instead. Enchanted creature gets +1/+1.
+timing=enchantment
+oracle=Bestow {2}{R}\n{R}: Everflame Eidolon gets +1/+0 until end of turn. If it's an Aura, enchanted creature gets +1/+0 until end of turn instead.\nEnchanted creature gets +1/+1.

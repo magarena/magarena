@@ -5,7 +5,7 @@
             return (creature == permanent) ?
                 new MagicEvent(
                     permanent,
-                    new MagicMayChoice(MagicTargetChoice.NEG_TARGET_CREATURE),
+                    new MagicMayChoice(NEG_TARGET_CREATURE),
                     new MagicDamageTargetPicker(permanent.getPower()),
                     this,
                     "PN may\$ have SN deal damage equal to its power to target creature\$. " +
@@ -19,16 +19,8 @@
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
                     final MagicPermanent permanent = event.getPermanent();
-                    final MagicDamage damage = new MagicDamage(
-                        permanent,
-                        it,
-                        permanent.getPower()
-                    );
-                    game.doAction(new MagicDealDamageAction(damage));
-                    game.doAction(MagicChangeStateAction.Set(
-                        permanent,
-                        MagicPermanentState.NoCombatDamage
-                    ));
+                    game.doAction(new DealDamageAction(permanent,it,permanent.getPower()));
+                    game.doAction(ChangeStateAction.Set(permanent,MagicPermanentState.NoCombatDamage));
                 });
             }
         }

@@ -1,12 +1,12 @@
 name=Kaijin of the Vanishing Touch
-image=http://mtgimage.com/card/kaijin%20of%20the%20vanishing%20touch.jpg
+image=http://magiccards.info/scans/en/bok/39.jpg
 value=3.182
 rarity=U
 type=Creature
 subtype=Spirit
 cost={1}{U}
 pt=0/3
-ability=defender
+ability=Defender.;\
+        Whenever SN blocks a creature, return that creature to its owner's hand at end of combat.
 timing=smain
-requires_groovy_code=Æther Membrane
-oracle=Defender. Whenever Kaijin of the Vanishing Touch blocks a creature, return that creature to its owner's hand at end of combat.
+oracle=Defender\nWhenever Kaijin of the Vanishing Touch blocks a creature, return that creature to its owner's hand at end of combat.

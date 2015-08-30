@@ -1,12 +1,12 @@
 name=Jeskai Elder
-image=http://mtgimage.com/card/jeskai%20elder.jpg
+image=http://magiccards.info/scans/en/ktk/43.jpg
 value=3.167
 rarity=U
 type=Creature
 subtype=Human,Monk
 cost={1}{U}
 pt=1/2
-ability=Prowess
+ability=Prowess;\
+        Whenever SN deals combat damage to a player, you may draw a card. If you do, discard a card.
 timing=main
-requires_groovy_code
-oracle=Prowess Whenever Jeskai Elder deals combat damage to a player, you may draw a card. If you do, discard a card.
+oracle=Prowess\nWhenever Jeskai Elder deals combat damage to a player, you may draw a card. If you do, discard a card.

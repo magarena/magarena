@@ -1,5 +1,5 @@
 name=Umara Raptor
-image=http://mtgimage.com/card/umara%20raptor.jpg
+image=http://magiccards.info/scans/en/zen/75.jpg
 value=3.820
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=flying;\
         Whenever SN or another Ally enters the battlefield under your control, you may put a +1/+1 counter on SN.
 timing=main
-oracle=Flying. Whenever Umara Raptor or another Ally enters the battlefield under your control, you may put a +1/+1 counter on Umara Raptor.
+oracle=Flying\nWhenever Umara Raptor or another Ally enters the battlefield under your control, you may put a +1/+1 counter on Umara Raptor.

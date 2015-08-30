@@ -1,9 +1,9 @@
 name=Consult the Necrosages
-image=http://mtgimage.com/card/consult%20the%20necrosages.jpg
+image=http://magiccards.info/scans/en/rav/199.jpg
 value=4.007
 rarity=C
 type=Sorcery
 cost={1}{U}{B}
+effect=Choose one — (1) Target player draws two cards. (2) Target player discards two cards.
 timing=main
-requires_groovy_code
-oracle=Choose one — Target player draws two cards; or target player discards two cards.
+oracle=Choose one —\n• Target player draws two cards.\n• Target player discards two cards.

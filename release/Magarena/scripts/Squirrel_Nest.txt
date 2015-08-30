@@ -1,5 +1,5 @@
 name=Squirrel Nest
-image=http://mtgimage.com/card/squirrel%20nest.jpg
+image=http://magiccards.info/scans/en/cns/180.jpg
 value=4.350
 rarity=U
 type=Enchantment
@@ -8,4 +8,4 @@ cost={1}{G}{G}
 ability=Enchanted land has "{T}: Put a 1/1 green Squirrel creature token onto the battlefield."
 enchant=pump,pos land
 timing=aura
-oracle=Enchant land. Enchanted land has "{T}: Put a 1/1 green Squirrel creature token onto the battlefield."
+oracle=Enchant land\nEnchanted land has "{T}: Put a 1/1 green Squirrel creature token onto the battlefield."

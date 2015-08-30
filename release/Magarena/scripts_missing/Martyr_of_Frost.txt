@@ -1,5 +1,5 @@
 name=Martyr of Frost
-image=http://mtgimage.com/card/martyr%20of%20frost.jpg
+image=http://magiccards.info/scans/en/jvc/2.jpg
 value=2.500
 rarity=C
 type=Creature

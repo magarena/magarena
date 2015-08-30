@@ -1,6 +1,6 @@
 name=Dread Charge
-image=http://mtgimage.com/card/dread%20charge.jpg
-value=2.500
+image=http://magiccards.info/scans/en/po/10.jpg
+value=2.204
 rarity=R
 type=Sorcery
 cost={3}{B}

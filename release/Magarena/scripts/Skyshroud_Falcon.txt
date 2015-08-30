@@ -1,5 +1,5 @@
 name=Skyshroud Falcon
-image=http://mtgimage.com/card/skyshroud%20falcon.jpg
+image=http://magiccards.info/scans/en/7e/45.jpg
 value=2.893
 ability=flying;vigilance
 rarity=C

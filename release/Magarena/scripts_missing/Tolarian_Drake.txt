@@ -1,6 +1,6 @@
 name=Tolarian Drake
-image=http://mtgimage.com/card/tolarian%20drake.jpg
-value=2.500
+image=http://magiccards.info/scans/en/wl/55.jpg
+value=2.379
 rarity=C
 type=Creature
 subtype=Drake
@@ -9,4 +9,4 @@ pt=2/4
 ability=Flying;\
         Phasing
 timing=main
-oracle=Flying. Phasing
+oracle=Flying\nPhasing

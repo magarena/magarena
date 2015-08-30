@@ -1,9 +1,9 @@
 name=Cerulean Wisps
-image=http://mtgimage.com/card/cerulean%20wisps.jpg
+image=http://magiccards.info/scans/en/shm/31.jpg
 value=2.976
 rarity=C
 type=Instant
 cost={U}
 timing=tapping
 requires_groovy_code
-oracle=Target creature becomes blue until end of turn. Untap that creature. Draw a card.
+oracle=Target creature becomes blue until end of turn. Untap that creature.\nDraw a card.

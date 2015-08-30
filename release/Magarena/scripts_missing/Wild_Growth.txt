@@ -1,11 +1,11 @@
 name=Wild Growth
-image=http://mtgimage.com/card/wild%20growth.jpg
-value=2.500
+image=http://magiccards.info/scans/en/7e/282.jpg
+value=3.917
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={G}
 ability=Enchant land;\
         Whenever enchanted land is tapped for mana, its controller adds {G} to his or her mana pool.
-timing=main
-oracle=Enchant land. Whenever enchanted land is tapped for mana, its controller adds {G} to his or her mana pool.
+timing=aura
+oracle=Enchant land\nWhenever enchanted land is tapped for mana, its controller adds {G} to his or her mana pool.

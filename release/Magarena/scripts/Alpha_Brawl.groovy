@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
+                TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
                 MagicPowerTargetPicker.create(),
                 this,
                 "Target creature\$ an opponent controls deals damage equal to " +
@@ -16,26 +16,12 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPlayer player = event.getPlayer();
-                final Collection<MagicPermanent> creatures = game.filterPermanents(
-                    player.getOpponent(),
-                    MagicTargetFilterFactory.CREATURE_YOU_CONTROL
-                );
+                final Collection<MagicPermanent> creatures = CREATURE_YOU_CONTROL.except(it).filter(it);
                 for (final MagicPermanent creature : creatures) {
-                    final MagicDamage damage = new MagicDamage(
-                        it,
-                        creature,
-                        it.getPower()
-                    );
-                    game.doAction(new MagicDealDamageAction(damage));
+                    game.doAction(new DealDamageAction(it,creature,it.getPower()));
                 }
                 for (final MagicPermanent creature : creatures) {
-                    final MagicDamage damage = new MagicDamage(
-                        creature,
-                        it,
-                        creature.getPower()
-                    );
-                    game.doAction(new MagicDealDamageAction(damage));
+                    game.doAction(new DealDamageAction(creature,it,creature.getPower()));
                 }
             });
         }

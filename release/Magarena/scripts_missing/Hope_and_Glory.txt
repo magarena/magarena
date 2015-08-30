@@ -1,6 +1,6 @@
 name=Hope and Glory
-image=http://mtgimage.com/card/hope%20and%20glory.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ul/9.jpg
+value=3.250
 rarity=U
 type=Instant
 cost={1}{W}

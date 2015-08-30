@@ -1,6 +1,6 @@
 name=Tombstalker
-image=http://mtgimage.com/card/tombstalker.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mma/102.jpg
+value=4.266
 rarity=R
 type=Creature
 subtype=Demon
@@ -9,4 +9,4 @@ pt=5/5
 ability=Flying;\
         Delve
 timing=main
-oracle=Flying. Delve
+oracle=Flying\nDelve

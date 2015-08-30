@@ -17,8 +17,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicSacrificeAction(event.getPermanent()));
-                game.doAction(new MagicReanimateAction(event.getRefCard(), event.getPlayer()));
+                game.doAction(new SacrificeAction(event.getPermanent()));
+                game.doAction(new ReanimateAction(event.getRefCard(), event.getPlayer()));
             }
         }
     }

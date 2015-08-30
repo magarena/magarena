@@ -1,5 +1,5 @@
 name=Escaped Null
-image=http://mtgimage.com/card/escaped%20null.jpg
+image=http://magiccards.info/scans/en/roe/109.jpg
 value=3.633
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/2
 ability=lifelink;\
         Whenever SN blocks or becomes blocked, SN gets +5/+0 until end of turn.
 timing=main
-oracle=Lifelink. Whenever Escaped Null blocks or becomes blocked, it gets +5/+0 until end of turn.
+oracle=Lifelink\nWhenever Escaped Null blocks or becomes blocked, it gets +5/+0 until end of turn.

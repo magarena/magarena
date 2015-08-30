@@ -1,0 +1,13 @@
+name=Triassic Egg
+image=http://magiccards.info/scans/en/me4/235.jpg
+value=3.409
+rarity=R
+type=Artifact
+cost={4}
+ability={3}, {T}: Put a hatchling counter on SN.;\
+        Sacrifice SN: Choose one — \
+        (1) You may put a creature card from your hand onto the battlefield. \
+        (2) Return target creature card from your graveyard to the battlefield. \
+        Activate this ability only if there are two or more hatchling counters on SN.
+timing=main
+oracle={3}, {T}: Put a hatchling counter on Triassic Egg.\nSacrifice Triassic Egg: Choose one —\n• You may put a creature card from your hand onto the battlefield. Activate this ability only if two or more hatchling counters are on Triassic Egg.\n• Return target creature card from your graveyard to the battlefield. Activate this ability only if two or more hatchling counters are on Triassic Egg.

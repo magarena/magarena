@@ -1,5 +1,5 @@
 name=Safeguard
-image=http://mtgimage.com/card/safeguard.jpg
+image=http://magiccards.info/scans/en/tp/251.jpg
 value=3.086
 rarity=R
 type=Enchantment

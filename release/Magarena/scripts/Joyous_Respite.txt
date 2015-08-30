@@ -1,0 +1,10 @@
+name=Joyous Respite
+image=http://magiccards.info/scans/en/chk/216.jpg
+value=1.671
+rarity=C
+type=Sorcery
+subtype=Arcane
+cost={3}{G}
+effect=You gain 1 life for each land you control.
+timing=main
+oracle=You gain 1 life for each land you control.

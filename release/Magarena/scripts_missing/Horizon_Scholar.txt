@@ -1,6 +1,6 @@
 name=Horizon Scholar
-image=http://mtgimage.com/card/horizon%20scholar.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ths/51.jpg
+value=3.156
 rarity=U
 type=Creature
 subtype=Sphinx
@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying;\
         When SN enters the battlefield, scry 2.
 timing=main
-oracle=Flying. When Horizon Scholar enters the battlefield, scry 2.
+oracle=Flying\nWhen Horizon Scholar enters the battlefield, scry 2.

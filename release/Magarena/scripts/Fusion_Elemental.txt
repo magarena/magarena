@@ -1,5 +1,5 @@
 name=Fusion Elemental
-image=http://mtgimage.com/card/fusion%20elemental.jpg
+image=http://magiccards.info/scans/en/pc2/93.jpg
 value=3.041
 rarity=U
 type=Creature
@@ -7,3 +7,4 @@ subtype=Elemental
 cost={W}{U}{B}{R}{G}
 pt=8/8
 timing=main
+oracle=NONE

@@ -1,9 +1,9 @@
 name=Loreseeker's Stone
-image=http://mtgimage.com/card/loreseeker's%20stone.jpg
+image=http://magiccards.info/scans/en/c14/56.jpg
 value=2.500
 rarity=U
 type=Artifact
 cost={6}
 ability={3}, {T}: Draw three cards. This ability costs {1} more to activate for each card in your hand.
-timing=main
+timing=artifact
 oracle={3}, {T}: Draw three cards. This ability costs {1} more to activate for each card in your hand.

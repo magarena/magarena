@@ -1,9 +1,10 @@
 name=Rites of Flourishing
-image=http://mtgimage.com/card/rites%20of%20flourishing.jpg
+image=http://magiccards.info/scans/en/m12/192.jpg
 value=3.680
 rarity=R
 type=Enchantment
 cost={2}{G}
+ability=At the beginning of each player's draw step, that player draws an additional card.
 timing=enchantment
 requires_groovy_code
-oracle=At the beginning of each player's draw step, that player draws an additional card. Each player may play an additional land on each of his or her turns.
+oracle=At the beginning of each player's draw step, that player draws an additional card.\nEach player may play an additional land on each of his or her turns.

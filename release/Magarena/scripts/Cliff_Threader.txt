@@ -1,5 +1,5 @@
 name=Cliff Threader
-image=http://mtgimage.com/card/cliff%20threader.jpg
+image=http://magiccards.info/scans/en/zen/7.jpg
 value=2.500
 ability=mountainwalk
 rarity=C

@@ -1,6 +1,6 @@
 name=Geth, Lord of the Vault
-image=http://mtgimage.com/card/geth%2C%20lord%20of%20the%20vault.jpg
-value=2.500
+image=http://magiccards.info/scans/en/som/64.jpg
+value=4.034
 rarity=M
 type=Legendary,Creature
 subtype=Zombie
@@ -9,4 +9,4 @@ pt=5/5
 ability=Intimidate;\
         {X}{B}: Put target artifact or creature card with converted mana cost X from an opponent's graveyard onto the battlefield under your control tapped. Then that player puts the top X cards of his or her library into his or her graveyard.
 timing=main
-oracle=Intimidate. {X}{B}: Put target artifact or creature card with converted mana cost X from an opponent's graveyard onto the battlefield under your control tapped. Then that player puts the top X cards of his or her library into his or her graveyard.
+oracle=Intimidate\n{X}{B}: Put target artifact or creature card with converted mana cost X from an opponent's graveyard onto the battlefield under your control tapped. Then that player puts the top X cards of his or her library into his or her graveyard.

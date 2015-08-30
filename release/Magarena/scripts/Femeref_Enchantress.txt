@@ -1,5 +1,5 @@
 name=Femeref Enchantress
-image=http://mtgimage.com/card/femeref%20enchantress.jpg
+image=http://magiccards.info/scans/en/vi/129.jpg
 value=4.078
 rarity=R
 type=Creature

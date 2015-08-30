@@ -1,6 +1,6 @@
 name=Stone Giant
-image=http://mtgimage.com/card/stone%20giant.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddi/55.jpg
+value=3.900
 rarity=U
 type=Creature
 subtype=Giant

@@ -1,9 +1,9 @@
 name=Mwonvuli Acid-Moss
-image=http://mtgimage.com/card/mwonvuli%20acid-moss.jpg
+image=http://magiccards.info/scans/en/ts/207.jpg
 value=4.149
 rarity=C
 type=Sorcery
 cost={2}{G}{G}
+effect=Destroy target land.~Search your library for a Forest card and put that card onto the battlefield tapped. Then shuffle your library.
 timing=main
-requires_groovy_code
 oracle=Destroy target land. Search your library for a Forest card and put that card onto the battlefield tapped. Then shuffle your library.

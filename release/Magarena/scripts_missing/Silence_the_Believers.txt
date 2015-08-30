@@ -1,9 +1,9 @@
 name=Silence the Believers
-image=http://mtgimage.com/card/silence%20the%20believers.jpg
-value=2.500
+image=http://magiccards.info/scans/en/jou/82.jpg
+value=3.878
 rarity=R
 type=Instant
 cost={2}{B}{B}
 effect=SN costs {2}{B} more to cast for each target beyond the first.~Exile any number of target creatures and all Auras attached to them.
 timing=removal
-oracle=Strive — Silence the Believers costs {2}{B} more to cast for each target beyond the first. Exile any number of target creatures and all Auras attached to them.
+oracle=Strive — Silence the Believers costs {2}{B} more to cast for each target beyond the first.\nExile any number of target creatures and all Auras attached to them.

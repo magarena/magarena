@@ -1,5 +1,5 @@
 name=Ramosian Sergeant
-image=http://mtgimage.com/card/ramosian%20sergeant.jpg
+image=http://magiccards.info/scans/en/mm/39.jpg
 value=4.244
 rarity=C
 type=Creature

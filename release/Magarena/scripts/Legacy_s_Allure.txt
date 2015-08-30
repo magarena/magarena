@@ -1,5 +1,5 @@
 name=Legacy's Allure
-image=http://mtgimage.com/card/legacy%27s%20allure.jpg
+image=http://magiccards.info/scans/en/tp/71.jpg
 value=3.912
 rarity=U
 type=Enchantment
@@ -7,4 +7,4 @@ cost={U}{U}
 ability=At the beginning of your upkeep, you may put a treasure counter on SN.
 timing=enchantment
 requires_groovy_code
-oracle=At the beginning of your upkeep, you may put a treasure counter on Legacy's Allure. Sacrifice Legacy's Allure: Gain control of target creature with power less than or equal to the number of treasure counters on Legacy's Allure.
+oracle=At the beginning of your upkeep, you may put a treasure counter on Legacy's Allure.\nSacrifice Legacy's Allure: Gain control of target creature with power less than or equal to the number of treasure counters on Legacy's Allure.

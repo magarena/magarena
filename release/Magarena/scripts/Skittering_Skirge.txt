@@ -1,5 +1,5 @@
 name=Skittering Skirge
-image=http://mtgimage.com/card/skittering%20skirge.jpg
+image=http://magiccards.info/scans/en/bd/31.jpg
 value=3.892
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/2
 ability=Flying;\
         When you cast a creature spell, sacrifice SN.
 timing=main
-oracle=Flying. When you cast a creature spell, sacrifice Skittering Skirge.
+oracle=Flying\nWhen you cast a creature spell, sacrifice Skittering Skirge.

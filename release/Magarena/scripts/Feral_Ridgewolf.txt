@@ -1,5 +1,5 @@
 name=Feral Ridgewolf
-image=http://mtgimage.com/card/feral%20ridgewolf.jpg
+image=http://magiccards.info/scans/en/isd/142.jpg
 value=2.947
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{R}
 pt=1/2
 ability=trample;{1}{R}: SN gets +2/+0 until end of turn.
 timing=main
-oracle=Trample. {1}{R}: Feral Ridgewolf gets +2/+0 until end of turn.
+oracle=Trample\n{1}{R}: Feral Ridgewolf gets +2/+0 until end of turn.

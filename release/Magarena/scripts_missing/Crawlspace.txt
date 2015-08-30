@@ -1,9 +1,9 @@
 name=Crawlspace
-image=http://mtgimage.com/card/crawlspace.jpg
-value=2.500
+image=http://magiccards.info/scans/en/c13/240.jpg
+value=4.320
 rarity=R
 type=Artifact
 cost={3}
 ability=No more than two creatures can attack you each combat.
-timing=main
+timing=artifact
 oracle=No more than two creatures can attack you each combat.

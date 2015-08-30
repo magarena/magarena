@@ -1,5 +1,5 @@
 name=Cateran Enforcer
-image=http://mtgimage.com/card/cateran%20enforcer.jpg
+image=http://magiccards.info/scans/en/mm/121.jpg
 value=4.140
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={3}{B}{B}
 pt=4/3
 ability={4}, {T}: Search your library for a Mercenary permanent card with converted mana cost 4 or less and put it onto the battlefield. Then shuffle your library.
 timing=main
-oracle=Fear. {4}, {T}: Search your library for a Mercenary permanent card with converted mana cost 4 or less and put it onto the battlefield. Then shuffle your library.
+oracle=Fear\n{4}, {T}: Search your library for a Mercenary permanent card with converted mana cost 4 or less and put it onto the battlefield. Then shuffle your library.

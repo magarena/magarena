@@ -1,5 +1,5 @@
 name=Mist Raven
-image=http://mtgimage.com/card/mist%20raven.jpg
+image=http://magiccards.info/scans/en/avr/67.jpg
 value=3.750
 removal=2
 rarity=C
@@ -10,4 +10,4 @@ pt=2/2
 ability=flying;\
         When SN enters the battlefield, return target creature to its owner's hand.
 timing=fmain
-oracle=Flying. When Mist Raven enters the battlefield, return target creature to its owner's hand.
+oracle=Flying\nWhen Mist Raven enters the battlefield, return target creature to its owner's hand.

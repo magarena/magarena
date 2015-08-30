@@ -1,5 +1,5 @@
 def INSTANT_FROM_HAND = new MagicCardFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
         return target.hasType(MagicType.Instant);
     }
     public boolean acceptType(final MagicTargetType targetType) {
@@ -8,35 +8,6 @@ def INSTANT_FROM_HAND = new MagicCardFilterImpl() {
 };
 
 [
-    new MagicWhenComesIntoPlayTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
-            final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                INSTANT_FROM_HAND,  
-                MagicTargetHint.None,
-                "an instant card from your hand"
-            );
-            return new MagicEvent(
-                permanent,
-                new MagicMayChoice(targetChoice),
-                MagicGraveyardTargetPicker.PutOntoBattlefield,
-                this,
-                "PN may\$ exile an instant card\$ from his or her hand."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isYes()) {
-                event.processTargetCard(game, {
-                    game.doAction(new MagicExileLinkAction(
-                        event.getPermanent(), 
-                        it, 
-                        MagicLocationType.OwnersHand
-                    ));
-                });
-            }
-        }
-    },
     new MagicWhenDamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicDamage damage) {
@@ -56,9 +27,11 @@ def INSTANT_FROM_HAND = new MagicCardFilterImpl() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicCastFreeCopyAction(
-                    event.getPlayer(), 
-                    event.getRefCard()
+                game.doAction(CastCardAction.WithoutManaCost(
+                    event.getPlayer(),
+                    MagicCard.createTokenCard(event.getRefCard(), event.getPlayer()),
+                    MagicLocationType.Exile,
+                    MagicLocationType.Graveyard
                 ));
             }
         }

@@ -1,6 +1,6 @@
 name=Tormented Hero
-image=http://mtgimage.com/card/tormented%20hero.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ths/108.jpg
+value=3.627
 rarity=U
 type=Creature
 subtype=Human,Warrior
@@ -9,4 +9,4 @@ pt=2/1
 ability=SN enters the battlefield tapped.;\
         Whenever you cast a spell that targets SN, each opponent loses 1 life. You gain life equal to the life lost this way.
 timing=main
-oracle=Tormented Hero enters the battlefield tapped. Heroic — Whenever you cast a spell that targets Tormented Hero, each opponent loses 1 life. You gain life equal to the life lost this way.
+oracle=Tormented Hero enters the battlefield tapped.\nHeroic — Whenever you cast a spell that targets Tormented Hero, each opponent loses 1 life. You gain life equal to the life lost this way.

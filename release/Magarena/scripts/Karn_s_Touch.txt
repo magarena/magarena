@@ -1,5 +1,5 @@
 name=Karn's Touch
-image=http://mtgimage.com/card/karn%27s%20touch.jpg
+image=http://magiccards.info/scans/en/mm/86.jpg
 value=3.911
 rarity=R
 type=Instant

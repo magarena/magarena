@@ -1,9 +1,9 @@
 name=Scroll of Origins
-image=http://mtgimage.com/card/scroll%20of%20origins.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sok/159.jpg
+value=2.326
 rarity=R
 type=Artifact
 cost={2}
 ability={2}, {T}: Draw a card if you have seven or more cards in hand.
-timing=main
+timing=artifact
 oracle={2}, {T}: Draw a card if you have seven or more cards in hand.

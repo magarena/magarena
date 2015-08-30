@@ -1,5 +1,5 @@
 name=Duskworker
-image=http://mtgimage.com/card/duskworker.jpg
+image=http://magiccards.info/scans/en/mi/166.jpg
 value=2.306
 rarity=U
 type=Artifact,Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Whenever SN becomes blocked, regenerate SN.;\
         {3}: SN gets +1/+0 until end of turn.
 timing=main
-oracle=Whenever Duskworker becomes blocked, regenerate it. {3}: Duskworker gets +1/+0 until end of turn.
+oracle=Whenever Duskworker becomes blocked, regenerate it.\n{3}: Duskworker gets +1/+0 until end of turn.

@@ -1,6 +1,6 @@
 name=See Beyond
-image=http://mtgimage.com/card/see%20beyond.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pc2/25.jpg
+value=4.500
 rarity=C
 type=Sorcery
 cost={1}{U}

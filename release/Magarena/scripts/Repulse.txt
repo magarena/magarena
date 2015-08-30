@@ -1,5 +1,5 @@
 name=Repulse
-image=http://mtgimage.com/card/repulse.jpg
+image=http://magiccards.info/scans/en/cmd/58.jpg
 value=3.737
 removal=2
 rarity=C
@@ -7,4 +7,4 @@ type=Instant
 cost={2}{U}
 effect=Return target creature to its owner's hand.~Draw a card.
 timing=removal
-oracle=Return target creature to its owner's hand. Draw a card.
+oracle=Return target creature to its owner's hand.\nDraw a card.

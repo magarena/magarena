@@ -1,12 +1,12 @@
 name=Lavacore Elemental
-image=http://mtgimage.com/card/lavacore%20elemental.jpg
+image=http://magiccards.info/scans/en/pc/103.jpg
 value=2.871
 rarity=U
 type=Creature
 subtype=Elemental
 cost={2}{R}
 pt=5/3
-ability=vanishing 1
+ability=vanishing 1;\
+        Whenever a creature you control deals combat damage to a player, put a time counter on SN.
 timing=main
-requires_groovy_code
-oracle=Vanishing 1. Whenever a creature you control deals combat damage to a player, put a time counter on Lavacore Elemental.
+oracle=Vanishing 1\nWhenever a creature you control deals combat damage to a player, put a time counter on Lavacore Elemental.

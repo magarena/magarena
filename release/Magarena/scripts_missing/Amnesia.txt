@@ -1,7 +1,7 @@
 name=Amnesia
-image=http://mtgimage.com/card/amnesia.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/med/29.jpg
+value=3.805
+rarity=R
 type=Sorcery
 cost={3}{U}{U}{U}
 effect=Target player reveals his or her hand and discards all nonland cards.

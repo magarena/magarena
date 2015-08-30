@@ -1,5 +1,5 @@
 name=Survey the Wreckage
-image=http://mtgimage.com/card/survey%20the%20wreckage.jpg
+image=http://magiccards.info/scans/en/rtr/107.jpg
 value=1.398
 rarity=C
 type=Sorcery

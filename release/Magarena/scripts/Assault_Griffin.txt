@@ -1,5 +1,5 @@
 name=Assault Griffin
-image=http://mtgimage.com/card/assault%20griffin.jpg
+image=http://magiccards.info/scans/en/gtc/4.jpg
 value=2.491
 ability=flying
 rarity=C

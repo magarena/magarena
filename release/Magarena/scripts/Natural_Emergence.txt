@@ -1,5 +1,5 @@
 name=Natural Emergence
-image=http://mtgimage.com/card/natural%20emergence.jpg
+image=http://magiccards.info/scans/en/ps/117.jpg
 value=4.212
 rarity=R
 type=Enchantment
@@ -7,4 +7,4 @@ cost={2}{R}{G}
 ability=When SN enters the battlefield, return a red or green enchantment you control to its owner's hand.
 timing=main
 requires_groovy_code
-oracle=When Natural Emergence enters the battlefield, return a red or green enchantment you control to its owner's hand. Lands you control are 2/2 creatures with first strike. They're still lands.
+oracle=When Natural Emergence enters the battlefield, return a red or green enchantment you control to its owner's hand.\nLands you control are 2/2 creatures with first strike. They're still lands.

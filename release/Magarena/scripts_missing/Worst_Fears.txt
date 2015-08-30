@@ -1,6 +1,6 @@
 name=Worst Fears
-image=http://mtgimage.com/card/worst%20fears.jpg
-value=2.500
+image=http://magiccards.info/scans/en/jou/87.jpg
+value=3.133
 rarity=M
 type=Sorcery
 cost={7}{B}

@@ -1,13 +1,13 @@
 name=Rimehorn Aurochs
-image=http://mtgimage.com/card/rimehorn%20aurochs.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cs/118.jpg
+value=2.652
 rarity=U
 type=Snow,Creature
 subtype=Aurochs
 cost={4}{G}
 pt=3/3
 ability=Trample;\
-        Whenever SN attacks, SN gets +1/+0 until end of turn for each other attacking Aurochs.;\
+        Whenever SN attacks, it gets +1/+0 until end of turn for each other attacking Aurochs.;\
         {2}{S}: Target creature blocks target creature this turn if able.
 timing=main
-oracle=Trample. Whenever Rimehorn Aurochs attacks, it gets +1/+0 until end of turn for each other attacking Aurochs. {2}{S}: Target creature blocks target creature this turn if able.
+oracle=Trample\nWhenever Rimehorn Aurochs attacks, it gets +1/+0 until end of turn for each other attacking Aurochs.\n{2}{S}: Target creature blocks target creature this turn if able.

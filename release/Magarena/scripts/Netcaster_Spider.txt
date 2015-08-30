@@ -1,12 +1,12 @@
 name=Netcaster Spider
-image=http://mtgimage.com/card/netcaster%20spider.jpg
+image=http://magiccards.info/scans/en/ddo/49.jpg
 value=3.250
 rarity=C
 type=Creature
 subtype=Spider
 cost={2}{G}
 pt=2/3
-ability=Reach
+ability=Reach.;\
+        Whenever SN blocks a creature with flying, SN gets +2/+0 until end of turn.
 timing=main
-requires_groovy_code
-oracle=Reach. Whenever Netcaster Spider blocks a creature with flying, Netcaster Spider gets +2/+0 until end of turn.
+oracle=Reach\nWhenever Netcaster Spider blocks a creature with flying, Netcaster Spider gets +2/+0 until end of turn.

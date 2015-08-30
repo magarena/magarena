@@ -1,6 +1,6 @@
 name=Collective Voyage
-image=http://mtgimage.com/card/collective%20voyage.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cmd/147.jpg
+value=3.656
 rarity=R
 type=Sorcery
 cost={G}

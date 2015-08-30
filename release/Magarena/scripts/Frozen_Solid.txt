@@ -1,12 +1,12 @@
 name=Frozen Solid
-image=http://mtgimage.com/card/frozen%20solid.jpg
+image=http://magiccards.info/scans/en/cs/35.jpg
 value=2.943
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}{U}
-ability=Enchanted creature doesn't untap during its controller's untap step.
+ability=Enchanted creature doesn't untap during its controller's untap step.;\
+        When enchanted creature is dealt damage, destroy RN.
 timing=aura
 enchant=can't attack or block,neg creature
-requires_groovy_code=Mortal Wound
-oracle=Enchant creature. Enchanted creature doesn't untap during its controller's untap step. When enchanted creature is dealt damage, destroy it.
+oracle=Enchant creature\nEnchanted creature doesn't untap during its controller's untap step.\nWhen enchanted creature is dealt damage, destroy it.

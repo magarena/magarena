@@ -1,9 +1,0 @@
-name=Vicious Shadows
-image=http://mtgimage.com/card/vicious%20shadows.jpg
-value=2.500
-rarity=R
-type=Enchantment
-cost={6}{R}
-ability=Whenever a creature dies, you may have SN deal damage to target player equal to the number of cards in that player's hand.
-timing=main
-oracle=Whenever a creature dies, you may have Vicious Shadows deal damage to target player equal to the number of cards in that player's hand.

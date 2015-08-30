@@ -1,0 +1,11 @@
+name=Riddlesmith
+image=http://magiccards.info/scans/en/som/40.jpg
+value=3.690
+rarity=U
+type=Creature
+subtype=Human,Artificer
+cost={1}{U}
+pt=2/1
+ability=Whenever you cast an artifact spell, you may draw a card. If you do, discard a card.
+timing=main
+oracle=Whenever you cast an artifact spell, you may draw a card. If you do, discard a card.

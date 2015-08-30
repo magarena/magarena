@@ -1,9 +1,0 @@
-name=Chaotic Backlash
-image=http://mtgimage.com/card/chaotic%20backlash.jpg
-value=2.500
-rarity=U
-type=Instant
-cost={4}{R}
-effect=SN deals damage to target player equal to twice the number of white and/or blue permanents he or she controls.
-timing=removal
-oracle=Chaotic Backlash deals damage to target player equal to twice the number of white and/or blue permanents he or she controls.

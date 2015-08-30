@@ -15,12 +15,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer targetPlayer=event.getRefPlayer();
-            final int amount1=targetPlayer.getHandSize();
-            final MagicDamage damage=new MagicDamage(event.getSource(),targetPlayer,amount1);
-            game.doAction(new MagicDealDamageAction(damage));
+            game.doAction(new DealDamageAction(event.getSource(),targetPlayer,targetPlayer.getHandSize()));
             final MagicPlayer player=event.getPlayer();
-            final int amount2=player.getHandSize();
-            game.doAction(new MagicChangeLifeAction(player,amount2));
+            game.doAction(new ChangeLifeAction(player,player.getHandSize()));
         }
     }
 ]

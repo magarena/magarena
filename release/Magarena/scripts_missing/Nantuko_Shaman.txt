@@ -1,6 +1,6 @@
 name=Nantuko Shaman
-image=http://mtgimage.com/card/nantuko%20shaman.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mma/156.jpg
+value=3.750
 rarity=C
 type=Creature
 subtype=Insect,Shaman
@@ -9,4 +9,4 @@ pt=3/2
 ability=When SN enters the battlefield, if you control no tapped lands, draw a card.;\
         Suspend 1—{2}{G}{G}
 timing=main
-oracle=When Nantuko Shaman enters the battlefield, if you control no tapped lands, draw a card. Suspend 1—{2}{G}{G}
+oracle=When Nantuko Shaman enters the battlefield, if you control no tapped lands, draw a card.\nSuspend 1—{2}{G}{G}

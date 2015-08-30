@@ -1,12 +1,12 @@
 name=Uncontrolled Infestation
-image=http://mtgimage.com/card/uncontrolled%20infestation.jpg
+image=http://magiccards.info/scans/en/sc/108.jpg
 value=2.604
 removal=2
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{R}
+ability=When enchanted land becomes tapped, destroy RN.
 timing=removal
 enchant=destroy,neg nonbasic land
-requires_groovy_code=Brink of Disaster
-oracle=Enchant nonbasic land. When enchanted land becomes tapped, destroy it.
+oracle=Enchant nonbasic land\nWhen enchanted land becomes tapped, destroy it.

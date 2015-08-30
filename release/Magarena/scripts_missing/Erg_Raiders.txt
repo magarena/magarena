@@ -1,6 +1,6 @@
 name=Erg Raiders
-image=http://mtgimage.com/card/erg%20raiders.jpg
-value=2.500
+image=http://magiccards.info/scans/en/med/68.jpg
+value=3.480
 rarity=C
 type=Creature
 subtype=Human,Warrior

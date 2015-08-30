@@ -1,9 +1,9 @@
 name=Reset
-image=http://mtgimage.com/card/reset.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/me3/48.jpg
+value=4.489
+rarity=R
 type=Instant
 cost={U}{U}
 effect=Cast SN only during an opponent's turn after his or her upkeep step.~Untap all lands you control.
 timing=removal
-oracle=Cast Reset only during an opponent's turn after his or her upkeep step. Untap all lands you control.
+oracle=Cast Reset only during an opponent's turn after his or her upkeep step.\nUntap all lands you control.

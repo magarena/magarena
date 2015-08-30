@@ -1,10 +1,10 @@
 name=Lava Dart
-image=http://mtgimage.com/card/lava%20dart.jpg
+image=http://magiccards.info/scans/en/ju/94.jpg
 value=3.295
 rarity=C
 type=Instant
 cost={R}
 effect=SN deals 1 damage to target creature or player.
-ability=Flashback Sacrifice a Mountain.
+ability=Flashback—Sacrifice a Mountain.
 timing=removal
-oracle=Lava Dart deals 1 damage to target creature or player. Flashback—Sacrifice a Mountain.
+oracle=Lava Dart deals 1 damage to target creature or player.\nFlashback—Sacrifice a Mountain.

@@ -1,5 +1,5 @@
 name=Sustaining Spirit
-image=http://mtgimage.com/card/sustaining%20spirit.jpg
+image=http://magiccards.info/scans/en/me2/36.jpg
 value=3.069
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=0/3
 ability=Cumulative upkeep {1}{W}
 timing=main
 requires_groovy_code=Ali from Cairo
-oracle=Cumulative upkeep {1}{W}. Damage that would reduce your life total to less than 1 reduces it to 1 instead.
+oracle=Cumulative upkeep {1}{W}\nDamage that would reduce your life total to less than 1 reduces it to 1 instead.

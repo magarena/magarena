@@ -1,9 +1,9 @@
 name=Blinkmoth Urn
-image=http://mtgimage.com/card/blinkmoth%20urn.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mi/145.jpg
+value=4.000
 rarity=R
 type=Artifact
 cost={5}
 ability=At the beginning of each player's precombat main phase, if SN is untapped, that player adds {1} to his or her mana pool for each artifact he or she controls.
-timing=main
+timing=artifact
 oracle=At the beginning of each player's precombat main phase, if Blinkmoth Urn is untapped, that player adds {1} to his or her mana pool for each artifact he or she controls.

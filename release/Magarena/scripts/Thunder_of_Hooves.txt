@@ -1,9 +1,10 @@
 name=Thunder of Hooves
-image=http://mtgimage.com/card/thunder%20of%20hooves.jpg
+image=http://magiccards.info/scans/en/on/242.jpg
 value=2.289
 rarity=U
 type=Sorcery
 cost={3}{R}
+ability=Cast SN with AI only if there is a Beast on the battlefield.
 timing=main
 requires_groovy_code
 oracle=Thunder of Hooves deals X damage to each creature without flying and each player, where X is the number of Beasts on the battlefield.

@@ -1,0 +1,11 @@
+name=Gaseous Form
+image=http://magiccards.info/scans/en/bd/8.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{U}
+timing=aura
+enchant=can't attack,creature
+requires_groovy_code
+oracle=Enchant creature\nPrevent all combat damage that would be dealt to and dealt by enchanted creature.

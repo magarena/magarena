@@ -1,6 +1,6 @@
 name=Renewing Touch
-image=http://mtgimage.com/card/renewing%20touch.jpg
-value=2.500
+image=http://magiccards.info/scans/en/st/140.jpg
+value=3.854
 rarity=U
 type=Sorcery
 cost={G}

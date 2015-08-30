@@ -1,11 +1,11 @@
 name=Gavony Ironwright
-image=http://mtgimage.com/card/gavony%20ironwright.jpg
+image=http://magiccards.info/scans/en/dka/9.jpg
 value=3.031
 rarity=U
 type=Creature
 subtype=Human,Soldier
 cost={2}{W}
 pt=1/4
+ability=As long as you have 5 or less life, other creatures you control get +1/+4.
 timing=main
-requires_groovy_code
 oracle=Fateful hour — As long as you have 5 or less life, other creatures you control get +1/+4.

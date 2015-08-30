@@ -1,6 +1,6 @@
 name=legendary 4/4 colorless Avatar creature token named Kaldra
 token=Kaldra
-image=http://img.photobucket.com/albums/v237/Xand0r/kaldra-token_mirrodin-dst-5dn_01.jpg
+image=http://cdn.staticneo.com/w/mtg/3/3d/Kaldra.jpg
 value=4
 type=Legendary,Creature
 subtype=Avatar

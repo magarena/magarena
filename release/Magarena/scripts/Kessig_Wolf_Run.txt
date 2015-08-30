@@ -1,9 +1,9 @@
 name=Kessig Wolf Run
-image=http://mtgimage.com/card/kessig%20wolf%20run.jpg
+image=http://magiccards.info/scans/en/isd/243.jpg
 value=3.362
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.
 timing=land
 requires_groovy_code
-oracle={T}: Add {1} to your mana pool. {X}{R}{G}, {T}: Target creature gets +X/+0 and gains trample until end of turn.
+oracle={T}: Add {1} to your mana pool.\n{X}{R}{G}, {T}: Target creature gets +X/+0 and gains trample until end of turn.

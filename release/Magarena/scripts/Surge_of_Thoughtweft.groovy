@@ -12,12 +12,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer you = event.getPlayer();
-            final Collection<MagicPermanent> creatures = you.filterPermanents(MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
-            for (final MagicPermanent creature : creatures) {
-                game.doAction(new MagicChangeTurnPTAction(creature,1,1));
+            CREATURE_YOU_CONTROL.filter(event) each {
+                game.doAction(new ChangeTurnPTAction(it,1,1));
             }
             if (you.controlsPermanent(MagicSubType.Kithkin)) {
-                game.doAction(new MagicDrawAction(you));
+                game.doAction(new DrawAction(you));
             }
         }
     }

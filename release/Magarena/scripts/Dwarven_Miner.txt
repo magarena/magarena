@@ -1,5 +1,5 @@
 name=Dwarven Miner
-image=http://mtgimage.com/card/dwarven%20miner.jpg
+image=http://magiccards.info/scans/en/mr/169.jpg
 value=4.082
 rarity=U
 type=Creature

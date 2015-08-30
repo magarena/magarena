@@ -1,5 +1,5 @@
 name=Silver-Inlaid Dagger
-image=http://mtgimage.com/card/silver%2Dinlaid%20dagger.jpg
+image=http://magiccards.info/scans/en/isd/233.jpg
 value=3.778
 rarity=U
 type=Artifact
@@ -9,4 +9,4 @@ ability=Equipped creature gets +2/+0.;\
         Equip {2}
 timing=equipment
 requires_groovy_code
-oracle=Equipped creature gets +2/+0. As long as equipped creature is a Human, it gets an additional +1/+0. Equip {2}
+oracle=Equipped creature gets +2/+0.\nAs long as equipped creature is a Human, it gets an additional +1/+0.\nEquip {2}

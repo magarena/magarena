@@ -1,0 +1,12 @@
+name=Servant of the Scale
+image=http://magiccards.info/scans/en/dtk/203.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={G}
+pt=0/0
+ability=SN enters the battlefield with a +1/+1 counter on it.;\
+        When SN dies, put X +1/+1 counters on target creature you control, where X is the number of +1/+1 counters on SN.
+timing=main
+oracle=Servant of the Scale enters the battlefield with a +1/+1 counter on it.\nWhen Servant of the Scale dies, put X +1/+1 counters on target creature you control, where X is the number of +1/+1 counters on Servant of the Scale.

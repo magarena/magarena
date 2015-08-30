@@ -1,5 +1,5 @@
 name=Silverblade Paladin
-image=http://mtgimage.com/card/silverblade%20paladin.jpg
+image=http://magiccards.info/scans/en/c14/88.jpg
 value=3.945
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Soulbond;\
         As long as SN is paired with another creature, both creatures have double strike.
 timing=main
-oracle=Soulbond. As long as Silverblade Paladin is paired with another creature, both creatures have double strike.
+oracle=Soulbond\nAs long as Silverblade Paladin is paired with another creature, both creatures have double strike.

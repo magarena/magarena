@@ -1,5 +1,5 @@
 name=Keeneye Aven
-image=http://mtgimage.com/card/keeneye%20aven.jpg
+image=http://magiccards.info/scans/en/vma/75.jpg
 value=1.925
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={3}{U}
 pt=2/3
 ability=flying;cycling {2}
 timing=main
-oracle=Flying. Cycling {2}
+oracle=Flying\nCycling {2}

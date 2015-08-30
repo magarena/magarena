@@ -13,8 +13,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getPlayer().getDevotion(MagicColor.Black);
             final MagicPlayer player=event.getPlayer();
-            game.doAction(new MagicChangeLifeAction(player.getOpponent(),-1*amount));
-            game.doAction(new MagicChangeLifeAction(player, amount));
+            game.doAction(new ChangeLifeAction(player.getOpponent(),-1*amount));
+            game.doAction(new ChangeLifeAction(player, amount));
         }
     }
 ]

@@ -1,6 +1,6 @@
 name=Topple
-image=http://mtgimage.com/card/topple.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ne/24.jpg
+value=3.654
 rarity=C
 type=Sorcery
 cost={2}{W}

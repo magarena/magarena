@@ -1,5 +1,5 @@
 name=Melting
-image=http://mtgimage.com/card/melting.jpg
+image=http://magiccards.info/scans/en/ia/201.jpg
 value=1.619
 rarity=U
 type=Enchantment

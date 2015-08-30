@@ -1,9 +1,9 @@
 name=Polluted Bonds
-image=http://mtgimage.com/card/polluted%20bonds.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/74.jpg
+value=3.398
 rarity=R
 type=Enchantment
 cost={3}{B}{B}
 ability=Whenever a land enters the battlefield under an opponent's control, that player loses 2 life and you gain 2 life.
-timing=main
+timing=enchantment
 oracle=Whenever a land enters the battlefield under an opponent's control, that player loses 2 life and you gain 2 life.

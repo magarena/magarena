@@ -1,5 +1,5 @@
 name=Wren's Run Vanquisher
-image=http://mtgimage.com/card/wren%27s%20run%20vanquisher.jpg
+image=http://magiccards.info/scans/en/evg/19.jpg
 value=2.500
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=As an additional cost to cast SN, reveal an Elf card from your hand or pay {3}.;\
         Deathtouch
 timing=main
-oracle=As an additional cost to cast Wren's Run Vanquisher, reveal an Elf card from your hand or pay {3}. Deathtouch
+oracle=As an additional cost to cast Wren's Run Vanquisher, reveal an Elf card from your hand or pay {3}.\nDeathtouch

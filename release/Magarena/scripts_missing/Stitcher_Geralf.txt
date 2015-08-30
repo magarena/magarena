@@ -1,5 +1,5 @@
 name=Stitcher Geralf
-image=http://mtgimage.com/card/stitcher%20geralf.jpg
+image=http://magiccards.info/scans/en/c14/17.jpg
 value=2.500
 rarity=M
 type=Legendary,Creature

@@ -1,5 +1,5 @@
 name=Grixis Battlemage
-image=http://mtgimage.com/card/grixis%20battlemage.jpg
+image=http://magiccards.info/scans/en/ala/78.jpg
 value=2.964
 rarity=U
 type=Creature
@@ -7,6 +7,6 @@ subtype=Human,Wizard
 cost={2}{B}
 pt=2/2
 ability={U},{T}: Draw a card, then discard a card.;\
-        {R},{T}: Target creature gains "SN can't block." until end of turn.
+        {R},{T}: Target creature can't block this turn.
 timing=main
-oracle={U}, {T}: Draw a card, then discard a card. {R}, {T}: Target creature can't block this turn.
+oracle={U}, {T}: Draw a card, then discard a card.\n{R}, {T}: Target creature can't block this turn.

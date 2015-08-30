@@ -1,6 +1,6 @@
 name=Sylvok Explorer
-image=http://mtgimage.com/card/sylvok%20explorer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5dn/93.jpg
+value=2.862
 rarity=C
 type=Creature
 subtype=Human,Druid

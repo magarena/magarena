@@ -6,28 +6,27 @@
                 cardOnStack,
                 cardOnStack.getOpponent(),
                 new MagicOrChoice(
-                    MagicTargetChoice.NONE,
-                    MagicTargetChoice.NONE
+                    MagicChoice.NONE,
+                    MagicChoice.NONE
                 ),
+                cardOnStack.getController(),
                 this,
-                "Choose one\$ - your opponent puts a +1/+1 counter on each creature he or she controls and gains 4 life; " +
-                "or your opponent puts a -1/-1 counter on each creature you control and SN deals 4 damage to you."
+                "Choose one\$ — (1) RN puts a +1/+1 counter on each creature he or she controls and gains 4 life; " +
+                "or (2) RN puts a -1/-1 counter on each creature PN controls and SN deals 4 damage to PN."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isMode(1)) {
-                final Collection<MagicPermanent> targets = event.getPlayer().getOpponent().filterPermanents(MagicTargetFilterFactory.CREATURE);
-                for (final MagicPermanent creature : targets) {         
-                    game.doAction(new MagicChangeCountersAction(creature, MagicCounterType.PlusOne, 1));
+                CREATURE_YOU_CONTROL.filter(event.getRefPlayer()) each {
+                    game.doAction(new ChangeCountersAction(it, MagicCounterType.PlusOne, 1));
                 }
-                game.doAction(new MagicChangeLifeAction(event.getPlayer().getOpponent(), 4));
+                game.doAction(new ChangeLifeAction(event.getRefPlayer(), 4));
             } else if (event.isMode(2)) {
-                final Collection<MagicPermanent> targets = event.getPlayer().filterPermanents(MagicTargetFilterFactory.CREATURE);
-                for (final MagicPermanent creature : targets) {         
-                    game.doAction(new MagicChangeCountersAction(creature, MagicCounterType.MinusOne, 1));
+                CREATURE_YOU_CONTROL.filter(event.getPlayer()) each {
+                    game.doAction(new ChangeCountersAction(it, MagicCounterType.MinusOne, 1));
                 }
-                game.doAction(new MagicDealDamageAction(event.getSource(), event.getPlayer(), 4));
+                game.doAction(new DealDamageAction(event.getSource(), event.getPlayer(), 4));
             }
         }
     }

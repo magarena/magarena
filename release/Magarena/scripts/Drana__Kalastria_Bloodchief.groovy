@@ -14,7 +14,7 @@
             final int amount = payedCost.getX();
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_CREATURE,
+                TARGET_CREATURE,
                 new MagicWeakenTargetPicker(0,amount),
                 amount,
                 this,
@@ -27,8 +27,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount=event.getRefInt();
             event.processTargetPermanent(game, {
-                game.doAction(new MagicChangeTurnPTAction(it,0,-amount));
-                game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),amount,0));
+                game.doAction(new ChangeTurnPTAction(it,0,-amount));
+                game.doAction(new ChangeTurnPTAction(event.getPermanent(),amount,0));
             });
         }
     }

@@ -1,0 +1,9 @@
+name=Vicious Shadows
+image=http://magiccards.info/scans/en/ala/119.jpg
+value=2.680
+rarity=R
+type=Enchantment
+cost={6}{R}
+timing=enchantment
+requires_groovy_code
+oracle=Whenever a creature dies, you may have Vicious Shadows deal damage to target player equal to the number of cards in that player's hand.

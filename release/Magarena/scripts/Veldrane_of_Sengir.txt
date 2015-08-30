@@ -1,5 +1,5 @@
 name=Veldrane of Sengir
-image=http://mtgimage.com/card/veldrane%20of%20sengir.jpg
+image=http://magiccards.info/scans/en/hl/25.jpg
 value=1.275
 rarity=R
 type=Legendary,Creature

@@ -1,12 +1,12 @@
 name=Aerie Mystics
-image=http://mtgimage.com/card/aerie%20mystics.jpg
+image=http://magiccards.info/scans/en/c13/2.jpg
 value=2.571
 rarity=U
 type=Creature
 subtype=Bird,Wizard
 cost={4}{W}
 pt=3/3
-ability=flying;\
+ability=Flying;\
         {1}{G}{U}: Creatures you control gain shroud until end of turn.
 timing=main
-oracle=Flying. {1}{G}{U}: Creatures you control gain shroud until end of turn.
+oracle=Flying\n{1}{G}{U}: Creatures you control gain shroud until end of turn.

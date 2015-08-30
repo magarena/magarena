@@ -1,5 +1,5 @@
 name=Shizo, Death's Storehouse
-image=http://mtgimage.com/card/shizo%2C%20death%27s%20storehouse.jpg
+image=http://magiccards.info/scans/en/chk/283.jpg
 value=4.064
 rarity=R
 type=Legendary,Land
@@ -7,4 +7,4 @@ mana=b1
 ability={T}: Add {B} to your mana pool.;\
         {T}, {B}: Target legendary creature gains fear until end of turn.
 timing=land
-oracle={T}: Add {B} to your mana pool. {B}, {T}: Target legendary creature gains fear until end of turn.
+oracle={T}: Add {B} to your mana pool.\n{B}, {T}: Target legendary creature gains fear until end of turn.

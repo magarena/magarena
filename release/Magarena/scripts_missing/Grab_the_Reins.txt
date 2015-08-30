@@ -1,9 +1,9 @@
 name=Grab the Reins
-image=http://mtgimage.com/card/grab%20the%20reins.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mi/95.jpg
+value=4.250
 rarity=U
 type=Instant
 cost={3}{R}
-effect=Choose one — • Until end of turn, you gain control of target creature and it gains haste. • Sacrifice a creature. SN deals damage equal to that creature's power to target creature or player.~Entwine {2}{R}
+effect=Choose one — (1) Until end of turn, you gain control of target creature and it gains haste. (2) Sacrifice a creature. SN deals damage equal to that creature's power to target creature or player.~Entwine {2}{R}
 timing=removal
-oracle=Choose one — • Until end of turn, you gain control of target creature and it gains haste. • Sacrifice a creature. Grab the Reins deals damage equal to that creature's power to target creature or player. Entwine {2}{R}
+oracle=Choose one —\n• Until end of turn, you gain control of target creature and it gains haste.\n• Sacrifice a creature. Grab the Reins deals damage equal to that creature's power to target creature or player.\nEntwine {2}{R}

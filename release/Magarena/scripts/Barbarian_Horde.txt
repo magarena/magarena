@@ -1,5 +1,5 @@
 name=Barbarian Horde
-image=http://mtgimage.com/card/barbarian%20horde.jpg
+image=http://magiccards.info/scans/en/p3k/101.jpg
 value=1.714
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Human,Barbarian,Soldier
 cost={3}{R}
 pt=3/3
 timing=main
+oracle=NONE

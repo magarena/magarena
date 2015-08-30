@@ -1,8 +1,3 @@
-def CREATURE_CMC_LEQ_3 = new MagicCMCPermanentFilter(
-    MagicTargetFilterFactory.CREATURE,
-    Operator.LESS_THAN_OR_EQUAL,
-    3
-);
 
 [
     new MagicSpellCardEvent() {
@@ -15,11 +10,15 @@ def CREATURE_CMC_LEQ_3 = new MagicCMCPermanentFilter(
             );
         }
 
-       @Override
+        @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets =
-                game.filterPermanents(event.getPlayer(),CREATURE_CMC_LEQ_3);
-            game.doAction(new MagicDestroyAction(targets));
+            game.doAction(new DestroyAction(
+                new MagicCMCPermanentFilter(
+                    CREATURE,
+                    Operator.LESS_THAN_OR_EQUAL,
+                    3
+                ).filter(event)
+            ));
         }
     }
 ]

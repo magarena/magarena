@@ -1,9 +1,9 @@
 name=Devouring Light
-image=http://mtgimage.com/card/devouring%20light.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/9.jpg
+value=3.875
 rarity=U
 type=Instant
 cost={1}{W}{W}
 effect=Convoke~Exile target attacking or blocking creature.
 timing=removal
-oracle=Convoke. Exile target attacking or blocking creature.
+oracle=Convoke\nExile target attacking or blocking creature.

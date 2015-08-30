@@ -1,6 +1,6 @@
 name=Runner's Bane
-image=http://mtgimage.com/card/runner%27s%20bane.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dgm/17.jpg
+value=2.700
 rarity=C
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={1}{U}
 ability=Enchant creature with power 3 or less;\
         When SN enters the battlefield, tap enchanted creature.;\
         Enchanted creature doesn't untap during its controller's untap step.
-timing=main
-oracle=Enchant creature with power 3 or less. When Runner's Bane enters the battlefield, tap enchanted creature. Enchanted creature doesn't untap during its controller's untap step.
+timing=aura
+oracle=Enchant creature with power 3 or less\nWhen Runner's Bane enters the battlefield, tap enchanted creature.\nEnchanted creature doesn't untap during its controller's untap step.

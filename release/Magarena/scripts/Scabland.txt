@@ -1,5 +1,5 @@
 name=Scabland
-image=http://mtgimage.com/card/scabland.jpg
+image=http://magiccards.info/scans/en/vma/312.jpg
 value=2.600
 rarity=R
 type=Land
@@ -8,4 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {1} to your mana pool.;\
         {T}: Add {R} or {W} to your mana pool. SN deals 1 damage to you.
 timing=tapland
-oracle=Scabland enters the battlefield tapped. {T}: Add {1} to your mana pool. {T}: Add {R} or {W} to your mana pool. Scabland deals 1 damage to you.
+oracle=Scabland enters the battlefield tapped.\n{T}: Add {1} to your mana pool.\n{T}: Add {R} or {W} to your mana pool. Scabland deals 1 damage to you.

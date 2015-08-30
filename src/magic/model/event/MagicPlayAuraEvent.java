@@ -4,7 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicPermanentAction;
-import magic.model.action.MagicPlayCardFromStackAction;
+import magic.model.action.PlayCardFromStackAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicTargetHint;
@@ -32,9 +32,7 @@ public class MagicPlayAuraEvent extends MagicSpellCardEvent {
 
     @Override
     public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-        final MagicTargetChoice targetChoice = payedCost == MagicPayedCost.NOT_SPELL ?
-            targetChoiceOther:
-            targetChoiceCast;
+        final MagicTargetChoice targetChoice = cardOnStack.isCast() ? targetChoiceCast : targetChoiceOther;
         return new MagicEvent(
             cardOnStack,
             targetChoice,
@@ -48,7 +46,7 @@ public class MagicPlayAuraEvent extends MagicSpellCardEvent {
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         event.processTargetPermanent(game,new MagicPermanentAction() {
             public void doAction(final MagicPermanent creature) {
-                game.doAction(new MagicPlayCardFromStackAction(event.getCardOnStack(),creature));
+                game.doAction(new PlayCardFromStackAction(event.getCardOnStack(),creature));
             }
         });
     }

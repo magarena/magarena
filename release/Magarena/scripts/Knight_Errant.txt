@@ -1,5 +1,5 @@
 name=Knight Errant
-image=http://mtgimage.com/card/knight%20errant.jpg
+image=http://magiccards.info/scans/en/7e/24.jpg
 value=2.819
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Human,Knight
 cost={1}{W}
 pt=2/2
 timing=main
+oracle=NONE

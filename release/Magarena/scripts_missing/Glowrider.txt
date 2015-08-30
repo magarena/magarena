@@ -1,6 +1,6 @@
 name=Glowrider
-image=http://mtgimage.com/card/glowrider.jpg
-value=2.500
+image=http://magiccards.info/scans/en/le/15.jpg
+value=4.147
 rarity=R
 type=Creature
 subtype=Human,Cleric

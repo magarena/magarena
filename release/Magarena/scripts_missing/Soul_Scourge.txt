@@ -1,6 +1,6 @@
 name=Soul Scourge
-image=http://mtgimage.com/card/soul%20scourge.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tr/85.jpg
+value=2.257
 rarity=C
 type=Creature
 subtype=Nightmare,Horror
@@ -10,4 +10,4 @@ ability=Flying;\
         When SN enters the battlefield, target player loses 3 life.;\
         When SN leaves the battlefield, that player gains 3 life.
 timing=main
-oracle=Flying. When Soul Scourge enters the battlefield, target player loses 3 life. When Soul Scourge leaves the battlefield, that player gains 3 life.
+oracle=Flying\nWhen Soul Scourge enters the battlefield, target player loses 3 life.\nWhen Soul Scourge leaves the battlefield, that player gains 3 life.

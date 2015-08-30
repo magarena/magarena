@@ -1,6 +1,6 @@
 name=Meletis Astronomer
-image=http://mtgimage.com/card/meletis%20astronomer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bng/43.jpg
+value=3.692
 rarity=U
 type=Creature
 subtype=Human,Wizard

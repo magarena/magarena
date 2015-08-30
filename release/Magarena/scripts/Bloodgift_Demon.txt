@@ -1,5 +1,5 @@
 name=Bloodgift Demon
-image=http://mtgimage.com/card/bloodgift%20demon.jpg
+image=http://magiccards.info/scans/en/c14/137.jpg
 value=4.007
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=5/4
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. At the beginning of your upkeep, target player draws a card and loses 1 life.
+oracle=Flying\nAt the beginning of your upkeep, target player draws a card and loses 1 life.

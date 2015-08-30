@@ -1,5 +1,5 @@
 name=Thassa, God of the Sea
-image=http://mtgimage.com/card/thassa%2C%20god%20of%20the%20sea.jpg
+image=http://magiccards.info/scans/en/ths/66.jpg
 value=3.816
 rarity=M
 type=Legendary,Enchantment,Creature
@@ -11,4 +11,4 @@ ability=indestructible;\
         {1}{U}: Target creature you control can't be blocked this turn.
 timing=main
 requires_groovy_code
-oracle=Indestructible. As long as your devotion to blue is less than five, Thassa isn't a creature. At the beginning of your upkeep, scry 1. {1}{U}: Target creature you control can't be blocked this turn.
+oracle=Indestructible\nAs long as your devotion to blue is less than five, Thassa isn't a creature.\nAt the beginning of your upkeep, scry 1.\n{1}{U}: Target creature you control can't be blocked this turn.

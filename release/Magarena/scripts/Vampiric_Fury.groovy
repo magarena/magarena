@@ -11,12 +11,9 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets = game.filterPermanents(
-                    event.getPlayer(),
-                    MagicTargetFilterFactory.VAMPIRE_CREATURE_YOU_CONTROL);
-            for (final MagicPermanent creature : targets) {
-                game.doAction(new MagicChangeTurnPTAction(creature,2,0));
-                game.doAction(new MagicGainAbilityAction(creature,MagicAbility.FirstStrike));
+            VAMPIRE_CREATURE_YOU_CONTROL.filter(event) each {
+                game.doAction(new ChangeTurnPTAction(it,2,0));
+                game.doAction(new GainAbilityAction(it,MagicAbility.FirstStrike));
             }
         }
     }

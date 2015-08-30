@@ -1,0 +1,12 @@
+name=Grim Poppet
+image=http://magiccards.info/scans/en/shm/252.jpg
+value=3.981
+rarity=R
+type=Artifact,Creature
+subtype=Scarecrow
+cost={7}
+pt=4/4
+ability=SN enters the battlefield with three -1/-1 counters on it.;\
+        Remove a -1/-1 counter from SN: Put a -1/-1 counter on another target creature.
+timing=main
+oracle=Grim Poppet enters the battlefield with three -1/-1 counters on it.\nRemove a -1/-1 counter from Grim Poppet: Put a -1/-1 counter on another target creature.

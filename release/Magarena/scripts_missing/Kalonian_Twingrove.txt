@@ -1,6 +1,6 @@
 name=Kalonian Twingrove
-image=http://mtgimage.com/card/kalonian%20twingrove.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/182.jpg
+value=3.083
 rarity=R
 type=Creature
 subtype=Treefolk,Warrior
@@ -9,4 +9,4 @@ pt=*/*
 ability=SN's power and toughness are each equal to the number of Forests you control.;\
         When SN enters the battlefield, put a green Treefolk Warrior creature token onto the battlefield with "This creature's power and toughness are each equal to the number of Forests you control."
 timing=main
-oracle=Kalonian Twingrove's power and toughness are each equal to the number of Forests you control. When Kalonian Twingrove enters the battlefield, put a green Treefolk Warrior creature token onto the battlefield with "This creature's power and toughness are each equal to the number of Forests you control."
+oracle=Kalonian Twingrove's power and toughness are each equal to the number of Forests you control.\nWhen Kalonian Twingrove enters the battlefield, put a green Treefolk Warrior creature token onto the battlefield with "This creature's power and toughness are each equal to the number of Forests you control."

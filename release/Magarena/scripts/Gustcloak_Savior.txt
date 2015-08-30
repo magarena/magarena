@@ -1,5 +1,5 @@
 name=Gustcloak Savior
-image=http://mtgimage.com/card/gustcloak%20savior.jpg
+image=http://magiccards.info/scans/en/ddo/11.jpg
 value=3.903
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=3/4
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. Whenever a creature you control becomes blocked, you may untap that creature and remove it from combat.
+oracle=Flying\nWhenever a creature you control becomes blocked, you may untap that creature and remove it from combat.

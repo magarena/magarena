@@ -1,5 +1,5 @@
 name=Mystic Denial
-image=http://mtgimage.com/card/mystic%20denial.jpg
+image=http://magiccards.info/scans/en/p3k/49.jpg
 value=1.871
 rarity=U
 type=Instant

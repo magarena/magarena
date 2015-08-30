@@ -1,6 +1,6 @@
 name=Cursed Monstrosity
-image=http://mtgimage.com/card/cursed%20monstrosity.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/126.jpg
+value=0.944
 rarity=R
 type=Creature
 subtype=Horror
@@ -9,4 +9,4 @@ pt=4/3
 ability=Flying;\
         Whenever SN becomes the target of a spell or ability, sacrifice it unless you discard a land card.
 timing=main
-oracle=Flying. Whenever Cursed Monstrosity becomes the target of a spell or ability, sacrifice it unless you discard a land card.
+oracle=Flying\nWhenever Cursed Monstrosity becomes the target of a spell or ability, sacrifice it unless you discard a land card.

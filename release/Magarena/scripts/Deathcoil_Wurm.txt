@@ -1,5 +1,5 @@
 name=Deathcoil Wurm
-image=http://mtgimage.com/set/me4/deathcoil%20wurm.jpg
+image=http://magiccards.info/scans/en/me4/149.jpg
 value=3.208
 rarity=R
 type=Creature

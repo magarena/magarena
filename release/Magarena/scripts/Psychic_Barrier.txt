@@ -1,5 +1,5 @@
 name=Psychic Barrier
-image=http://mtgimage.com/card/psychic%20barrier.jpg
+image=http://magiccards.info/scans/en/nph/43.jpg
 value=3.476
 rarity=C
 type=Instant

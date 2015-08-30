@@ -1,9 +1,9 @@
 name=Buried Ruin
-image=http://mtgimage.com/card/buried%20ruin.jpg
+image=http://magiccards.info/scans/en/c14/286.jpg
 value=4.200
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\
         {2},{T},Sacrifice SN:Return target artifact card from your graveyard to your hand.
 timing=land
-oracle={T}: Add {1} to your mana pool. {2}, {T}, Sacrifice Buried Ruin: Return target artifact card from your graveyard to your hand.
+oracle={T}: Add {1} to your mana pool.\n{2}, {T}, Sacrifice Buried Ruin: Return target artifact card from your graveyard to your hand.

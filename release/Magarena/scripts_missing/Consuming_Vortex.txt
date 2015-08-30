@@ -1,10 +1,10 @@
 name=Consuming Vortex
-image=http://mtgimage.com/card/consuming%20vortex.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/54.jpg
+value=2.225
 rarity=C
 type=Instant
 subtype=Arcane
 cost={1}{U}
 effect=Return target creature to its owner's hand.~Splice onto Arcane {3}{U}
 timing=removal
-oracle=Return target creature to its owner's hand. Splice onto Arcane {3}{U}
+oracle=Return target creature to its owner's hand.\nSplice onto Arcane {3}{U}

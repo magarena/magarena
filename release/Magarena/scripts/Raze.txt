@@ -1,5 +1,5 @@
 name=Raze
-image=http://mtgimage.com/card/raze.jpg
+image=http://magiccards.info/scans/en/us/207.jpg
 value=3.929
 removal=3
 rarity=C
@@ -8,4 +8,4 @@ cost={R}
 ability=As an additional cost to cast SN, sacrifice a land.
 effect=Destroy target land.
 timing=removal
-oracle=As an additional cost to cast Raze, sacrifice a land. Destroy target land.
+oracle=As an additional cost to cast Raze, sacrifice a land.\nDestroy target land.

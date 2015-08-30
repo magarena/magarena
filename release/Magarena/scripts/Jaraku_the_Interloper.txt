@@ -1,5 +1,5 @@
 name=Jaraku the Interloper
-image=http://mtgimage.com/card/jaraku%20the%20interloper.jpg
+image=http://magiccards.info/scans/en/bok/31b.jpg
 value=2.500
 rarity=U
 type=Legendary,Creature

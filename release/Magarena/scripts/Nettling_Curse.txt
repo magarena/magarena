@@ -1,0 +1,11 @@
+name=Nettling Curse
+image=http://magiccards.info/scans/en/di/48.jpg
+value=3.141
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{B}
+timing=aura
+enchant=can't block,neg creature
+requires_groovy_code=Nettling Curse;Contaminated Bond
+oracle=Enchant creature\nWhenever enchanted creature attacks or blocks, its controller loses 3 life.\n{1}{R}: Enchanted creature attacks this turn if able.

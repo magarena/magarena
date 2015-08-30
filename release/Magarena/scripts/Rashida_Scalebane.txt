@@ -1,0 +1,11 @@
+name=Rashida Scalebane
+image=http://magiccards.info/scans/en/mr/239.jpg
+value=3.359
+rarity=R
+type=Legendary,Creature
+subtype=Human,Soldier
+cost={3}{W}{W}
+pt=3/4
+timing=main
+requires_groovy_code
+oracle={T}: Destroy target attacking or blocking Dragon. It can't be regenerated. You gain life equal to its power.

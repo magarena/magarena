@@ -1,10 +1,10 @@
 name=Torrent of Stone
-image=http://mtgimage.com/card/torrent%20of%20stone.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mma/137.jpg
+value=2.292
 rarity=C
 type=Instant
 subtype=Arcane
 cost={3}{R}
 effect=SN deals 4 damage to target creature.~Splice onto Arcane—Sacrifice two Mountains.
 timing=removal
-oracle=Torrent of Stone deals 4 damage to target creature. Splice onto Arcane—Sacrifice two Mountains.
+oracle=Torrent of Stone deals 4 damage to target creature.\nSplice onto Arcane—Sacrifice two Mountains.

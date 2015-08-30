@@ -1,5 +1,5 @@
 name=Prowler's Helm
-image=http://mtgimage.com/card/prowler's%20helm.jpg
+image=http://magiccards.info/scans/en/ths/219.jpg
 value=3.371
 rarity=U
 type=Artifact
@@ -8,4 +8,4 @@ cost={2}
 ability=Equipped creature can't be blocked except by walls.;\
         Equip {2}
 timing=artifact
-oracle=Equipped creature can't be blocked except by Walls. Equip {2}
+oracle=Equipped creature can't be blocked except by Walls.\nEquip {2}

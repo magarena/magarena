@@ -1,6 +1,6 @@
 name=Xathrid Gorgon
-image=http://mtgimage.com/card/xathrid%20gorgon.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m13/118.jpg
+value=3.803
 rarity=R
 type=Creature
 subtype=Gorgon
@@ -9,4 +9,4 @@ pt=3/6
 ability=Deathtouch;\
         {2}{B}, {T}: Put a petrification counter on target creature. It gains defender and becomes a colorless artifact in addition to its other types. Its activated abilities can't be activated.
 timing=main
-oracle=Deathtouch. {2}{B}, {T}: Put a petrification counter on target creature. It gains defender and becomes a colorless artifact in addition to its other types. Its activated abilities can't be activated.
+oracle=Deathtouch\n{2}{B}, {T}: Put a petrification counter on target creature. It gains defender and becomes a colorless artifact in addition to its other types. Its activated abilities can't be activated.

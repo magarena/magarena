@@ -1,9 +1,9 @@
 name=Gilded Light
-image=http://mtgimage.com/card/gilded%20light.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/vma/29.jpg
+value=3.500
+rarity=C
 type=Instant
 cost={1}{W}
 effect=You gain shroud until end of turn.~Cycling {2}
 timing=removal
-oracle=You gain shroud until end of turn. Cycling {2}
+oracle=You gain shroud until end of turn.\nCycling {2}

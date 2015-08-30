@@ -1,6 +1,6 @@
 name=Zealots en-Dal
-image=http://mtgimage.com/card/zealots%20en-dal.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ex/26.jpg
+value=2.462
 rarity=U
 type=Creature
 subtype=Human,Soldier

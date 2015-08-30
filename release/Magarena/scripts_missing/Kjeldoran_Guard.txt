@@ -1,6 +1,6 @@
 name=Kjeldoran Guard
-image=http://mtgimage.com/card/kjeldoran%20guard.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ia/259.jpg
+value=1.361
 rarity=C
 type=Creature
 subtype=Human,Soldier

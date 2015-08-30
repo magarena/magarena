@@ -1,11 +1,11 @@
 name=Sunbond
-image=http://mtgimage.com/card/sunbond.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bng/28.jpg
+value=3.847
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={3}{W}
 ability=Enchant creature;\
         Enchanted creature has "Whenever you gain life, put that many +1/+1 counters on this creature."
-timing=main
-oracle=Enchant creature. Enchanted creature has "Whenever you gain life, put that many +1/+1 counters on this creature."
+timing=aura
+oracle=Enchant creature\nEnchanted creature has "Whenever you gain life, put that many +1/+1 counters on this creature."

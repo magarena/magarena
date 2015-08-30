@@ -1,6 +1,6 @@
 name=Selvala's Charge
-image=http://mtgimage.com/card/selvala%27s%20charge.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cns/39.jpg
+value=3.429
 rarity=U
 type=Sorcery
 cost={4}{G}

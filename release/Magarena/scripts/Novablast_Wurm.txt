@@ -1,11 +1,11 @@
 name=Novablast Wurm
-image=http://mtgimage.com/card/novablast%20wurm.jpg
+image=http://magiccards.info/scans/en/wwk/119.jpg
 value=4.192
 rarity=M
 type=Creature
 subtype=Wurm
 cost={3}{G}{G}{W}{W}
 pt=7/7
+ability=Whenever SN attacks, destroy all other creatures.
 timing=smain
-requires_groovy_code
 oracle=Whenever Novablast Wurm attacks, destroy all other creatures.

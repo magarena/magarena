@@ -1,10 +1,10 @@
 name=Belbe's Portal
-image=http://mtgimage.com/card/belbe%27s%20portal.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ne/127.jpg
+value=4.027
 rarity=R
 type=Artifact
 cost={5}
 ability=As SN enters the battlefield, choose a creature type.;\
         {3}, {T}: You may put a creature card of the chosen type from your hand onto the battlefield.
-timing=main
-oracle=As Belbe's Portal enters the battlefield, choose a creature type. {3}, {T}: You may put a creature card of the chosen type from your hand onto the battlefield.
+timing=artifact
+oracle=As Belbe's Portal enters the battlefield, choose a creature type.\n{3}, {T}: You may put a creature card of the chosen type from your hand onto the battlefield.

@@ -1,5 +1,5 @@
 name=Viashino Cutthroat
-image=http://mtgimage.com/card/viashino%20cutthroat.jpg
+image=http://magiccards.info/scans/en/ul/94.jpg
 value=3.803
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=5/3
 ability=haste;\
         At the beginning of the end step, return SN to its owner's hand.
 timing=fmain
-oracle=Haste. At the beginning of the end step, return Viashino Cutthroat to its owner's hand.
+oracle=Haste\nAt the beginning of the end step, return Viashino Cutthroat to its owner's hand.

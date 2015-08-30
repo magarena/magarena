@@ -1,6 +1,6 @@
 name=Kurkesh, Onakke Ancient
-image=http://mtgimage.com/card/kurkesh%2C%20onakke%20ancient.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/153.jpg
+value=3.250
 rarity=R
 type=Legendary,Creature
 subtype=Ogre,Spirit

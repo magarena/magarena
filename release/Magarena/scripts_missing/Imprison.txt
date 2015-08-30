@@ -1,6 +1,6 @@
 name=Imprison
-image=http://mtgimage.com/card/imprison.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lg/21.jpg
+value=2.513
 rarity=R
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={B}
 ability=Enchant creature;\
         Whenever a player activates an ability of enchanted creature with {T} in its activation cost that isn't a mana ability, you may pay {1}. If you do, counter that ability. If you don't, destroy SN.;\
         Whenever enchanted creature attacks or blocks, you may pay {1}. If you do, tap the creature, remove it from combat, and creatures it was blocking that had become blocked by only that creature this combat become unblocked. If you don't, destroy SN.
-timing=main
-oracle=Enchant creature. Whenever a player activates an ability of enchanted creature with {T} in its activation cost that isn't a mana ability, you may pay {1}. If you do, counter that ability. If you don't, destroy Imprison. Whenever enchanted creature attacks or blocks, you may pay {1}. If you do, tap the creature, remove it from combat, and creatures it was blocking that had become blocked by only that creature this combat become unblocked. If you don't, destroy Imprison.
+timing=aura
+oracle=Enchant creature\nWhenever a player activates an ability of enchanted creature with {T} in its activation cost that isn't a mana ability, you may pay {1}. If you do, counter that ability. If you don't, destroy Imprison.\nWhenever enchanted creature attacks or blocks, you may pay {1}. If you do, tap the creature, remove it from combat, and creatures it was blocking that had become blocked by only that creature this combat become unblocked. If you don't, destroy Imprison.

@@ -1,6 +1,6 @@
 name=Wall of Shields
-image=http://mtgimage.com/card/wall%20of%20shields.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ia/322.jpg
+value=2.462
 rarity=U
 type=Artifact,Creature
 subtype=Wall
@@ -8,5 +8,5 @@ cost={3}
 pt=0/4
 ability=Defender;\
         Banding
-timing=main
-oracle=Defender. Banding
+timing=artifact
+oracle=Defender\nBanding

@@ -1,6 +1,6 @@
 name=Celestial Mantle
-image=http://mtgimage.com/card/celestial%20mantle.jpg
-value=2.500
+image=http://magiccards.info/scans/en/zen/6.jpg
+value=3.860
 rarity=R
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={3}{W}{W}{W}
 ability=Enchant creature;\
         Enchanted creature gets +3/+3.;\
         Whenever enchanted creature deals combat damage to a player, double its controller's life total.
-timing=main
-oracle=Enchant creature. Enchanted creature gets +3/+3. Whenever enchanted creature deals combat damage to a player, double its controller's life total.
+timing=aura
+oracle=Enchant creature\nEnchanted creature gets +3/+3.\nWhenever enchanted creature deals combat damage to a player, double its controller's life total.

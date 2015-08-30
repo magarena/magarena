@@ -1,5 +1,5 @@
 name=Changeling Hero
-image=http://mtgimage.com/card/changeling%20hero.jpg
+image=http://magiccards.info/scans/en/lw/9.jpg
 value=3.011
 removal=2
 rarity=U
@@ -7,6 +7,9 @@ type=Creature
 subtype=Shapeshifter
 cost={4}{W}
 pt=4/4
-ability=changeling;lifelink;champion creature
+ability=Changeling;\
+        Champion a creature;\
+        Lifelink;\
+        Cast SN with AI only if you control a creature
 timing=main
-oracle=Changeling. Champion a creature. Lifelink
+oracle=Changeling\nChampion a creature\nLifelink

@@ -1,5 +1,5 @@
 name=Corrupt Court Official
-image=http://mtgimage.com/card/corrupt%20court%20official.jpg
+image=http://magiccards.info/scans/en/p3k/71.jpg
 value=3.621
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=Giant Dustwasp
-image=http://mtgimage.com/card/giant%20dustwasp.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mma/145.jpg
+value=3.265
 rarity=C
 type=Creature
 subtype=Insect
@@ -9,4 +9,4 @@ pt=3/3
 ability=Flying;\
         Suspend 4—{1}{G}
 timing=main
-oracle=Flying. Suspend 4—{1}{G}
+oracle=Flying\nSuspend 4—{1}{G}

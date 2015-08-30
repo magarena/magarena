@@ -1,9 +1,10 @@
 name=Desert Sandstorm
-image=http://mtgimage.com/card/desert%20sandstorm.jpg
+image=http://magiccards.info/scans/en/p3k/107.jpg
 value=1.257
 rarity=C
 type=Sorcery
 cost={2}{R}
+ability=Cast SN with AI only if an opponent controls a creature.
 effect=SN deals 1 damage to each creature.
 timing=main
 oracle=Desert Sandstorm deals 1 damage to each creature.

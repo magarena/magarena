@@ -1,11 +1,11 @@
 name=Necromantic Thirst
-image=http://mtgimage.com/card/necromantic%20thirst.jpg
+image=http://magiccards.info/scans/en/cns/119.jpg
 value=3.000
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{B}{B}
+ability=Whenever enchanted creature deals combat damage to a player, you may return target creature card from your graveyard to your hand.
 timing=main
 enchant=pump,pos creature
-requires_groovy_code
-oracle=Enchant creature. Whenever enchanted creature deals combat damage to a player, you may return target creature card from your graveyard to your hand.
+oracle=Enchant creature\nWhenever enchanted creature deals combat damage to a player, you may return target creature card from your graveyard to your hand.

@@ -1,5 +1,5 @@
 name=Simian Grunts
-image=http://mtgimage.com/card/simian%20grunts.jpg
+image=http://magiccards.info/scans/en/vma/232.jpg
 value=3.784
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{G}
 pt=3/4
 ability=flash;echo {2}{G}
 timing=flash
-oracle=Flash. Echo {2}{G}
+oracle=Flash\nEcho {2}{G}

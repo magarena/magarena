@@ -1,12 +1,12 @@
 name=Wall of Tears
-image=http://mtgimage.com/card/wall%20of%20tears.jpg
+image=http://magiccards.info/scans/en/sh/50.jpg
 value=4.408
 rarity=U
 type=Creature
 subtype=Wall
 cost={1}{U}
 pt=0/4
-ability=defender
+ability=Defender.;\
+        Whenever SN blocks a creature, return that creature to its owner's hand at end of combat.
 timing=smain
-requires_groovy_code=Æther Membrane
-oracle=Defender. Whenever Wall of Tears blocks a creature, return that creature to its owner's hand at end of combat.
+oracle=Defender\nWhenever Wall of Tears blocks a creature, return that creature to its owner's hand at end of combat.

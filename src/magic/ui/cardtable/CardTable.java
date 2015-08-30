@@ -1,7 +1,5 @@
 package magic.ui.cardtable;
 
-import magic.ui.cardtable.CardTableModel;
-import magic.ui.cardtable.ICardSelectionListener;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Point;
@@ -74,7 +72,7 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
                 if (isRowSelected) {
                     c.setForeground(table.getSelectionForeground());
                 } else {
-                    c.setForeground(card.isMissing() ? Color.GRAY : defaultForeColor);
+                    c.setForeground(card.isInvalid() ? Color.GRAY : defaultForeColor);
                 }
                 return c;
             }

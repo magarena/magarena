@@ -1,0 +1,12 @@
+name=Stalwart Shield-Bearers
+image=http://magiccards.info/scans/en/roe/46.jpg
+value=3.439
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={1}{W}
+pt=0/3
+ability=Defender;\
+        Other creatures you control with defender get +0/+2.
+timing=main
+oracle=Defender\nOther creatures you control with defender get +0/+2.

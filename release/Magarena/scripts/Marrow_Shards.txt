@@ -1,10 +1,11 @@
 name=Marrow Shards
-image=http://mtgimage.com/card/marrow%20shards.jpg
+image=http://magiccards.info/scans/en/nph/15.jpg
 value=3.412
 rarity=U
 type=Instant
 cost={W/P}
-ability=alt cost Pay 2 life named Pay 2 life
+ability=Cast SN with AI only if an opponent controls an attacking creature.;\
+        alt cost Pay 2 life named Pay 2 life
 effect=SN deals 1 damage to each attacking creature.
 timing=block
 oracle=Marrow Shards deals 1 damage to each attacking creature.

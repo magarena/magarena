@@ -1,5 +1,5 @@
 name=Well of Life
-image=http://mtgimage.com/card/well%20of%20life.jpg
+image=http://magiccards.info/scans/en/pr/141.jpg
 value=2.569
 rarity=U
 type=Artifact

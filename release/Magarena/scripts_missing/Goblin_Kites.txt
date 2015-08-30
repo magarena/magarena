@@ -1,9 +1,9 @@
 name=Goblin Kites
-image=http://mtgimage.com/card/goblin%20kites.jpg
-value=2.500
+image=http://magiccards.info/scans/en/fe/117.jpg
+value=2.481
 rarity=U
 type=Enchantment
 cost={1}{R}
 ability={R}: Target creature you control with toughness 2 or less gains flying until end of turn. Flip a coin at the beginning of the next end step. If you lose the flip, sacrifice that creature.
-timing=main
+timing=enchantment
 oracle={R}: Target creature you control with toughness 2 or less gains flying until end of turn. Flip a coin at the beginning of the next end step. If you lose the flip, sacrifice that creature.

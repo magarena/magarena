@@ -1,5 +1,5 @@
 name=Radiant's Judgment
-image=http://mtgimage.com/card/radiant%27s%20judgment.jpg
+image=http://magiccards.info/scans/en/vma/41.jpg
 value=3.500
 removal=3
 rarity=C
@@ -8,4 +8,4 @@ cost={2}{W}
 timing=removal
 effect=Destroy target creature with power 4 or greater.
 ability=cycling {2}
-oracle=Destroy target creature with power 4 or greater. Cycling {2}
+oracle=Destroy target creature with power 4 or greater.\nCycling {2}

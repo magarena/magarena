@@ -1,5 +1,5 @@
 name=Loxodon Mystic
-image=http://mtgimage.com/card/loxodon%20mystic.jpg
+image=http://magiccards.info/scans/en/10e/26.jpg
 value=1.855
 rarity=C
 type=Creature

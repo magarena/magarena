@@ -1,6 +1,6 @@
 name=Viashino Skeleton
-image=http://mtgimage.com/card/viashino%20skeleton.jpg
-value=0.817
+image=http://magiccards.info/scans/en/ala/118.jpg
+value=0.831
 rarity=C
 type=Creature
 subtype=Viashino,Skeleton

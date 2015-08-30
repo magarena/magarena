@@ -1,5 +1,5 @@
 name=Rabid Rats
-image=http://mtgimage.com/card/rabid%20rats.jpg
+image=http://magiccards.info/scans/en/sh/17.jpg
 value=2.842
 rarity=C
 type=Creature

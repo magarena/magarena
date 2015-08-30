@@ -1,11 +1,11 @@
 name=Kodama of the South Tree
-image=http://mtgimage.com/card/kodama%20of%20the%20south%20tree.jpg
+image=http://magiccards.info/scans/en/chk/223.jpg
 value=3.736
 rarity=R
 type=Legendary,Creature
 subtype=Spirit
 cost={2}{G}{G}
 pt=4/4
+ability=Whenever you cast a Spirit or Arcane spell, each other creature you control gets +1/+1 and gains trample until end of turn.
 timing=main
-requires_groovy_code
 oracle=Whenever you cast a Spirit or Arcane spell, each other creature you control gets +1/+1 and gains trample until end of turn.

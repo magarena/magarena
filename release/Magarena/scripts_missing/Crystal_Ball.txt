@@ -1,9 +1,9 @@
 name=Crystal Ball
-image=http://mtgimage.com/card/crystal%20ball.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m11/203.jpg
+value=4.209
 rarity=U
 type=Artifact
 cost={3}
 ability={1}, {T}: Scry 2.
-timing=main
+timing=artifact
 oracle={1}, {T}: Scry 2.

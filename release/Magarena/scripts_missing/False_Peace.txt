@@ -1,7 +1,7 @@
 name=False Peace
-image=http://mtgimage.com/card/false%20peace.jpg
-value=2.500
-rarity=C
+image=http://magiccards.info/scans/en/st/16.jpg
+value=3.571
+rarity=U
 type=Sorcery
 cost={W}
 effect=Target player skips all combat phases of his or her next turn.

@@ -1,10 +1,10 @@
 name=Rustic Clachan
-image=http://mtgimage.com/card/rustic%20clachan.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddf/34.jpg
+value=2.183
 rarity=R
 type=Land
 ability=As SN enters the battlefield, you may reveal a Kithkin card from your hand. If you don't, SN enters the battlefield tapped.;\
         {T}: Add {W} to your mana pool.;\
         Reinforce 1—{1}{W}
-timing=main
-oracle=As Rustic Clachan enters the battlefield, you may reveal a Kithkin card from your hand. If you don't, Rustic Clachan enters the battlefield tapped. {T}: Add {W} to your mana pool. Reinforce 1—{1}{W}
+timing=land
+oracle=As Rustic Clachan enters the battlefield, you may reveal a Kithkin card from your hand. If you don't, Rustic Clachan enters the battlefield tapped.\n{T}: Add {W} to your mana pool.\nReinforce 1—{1}{W}

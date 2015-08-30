@@ -1,5 +1,5 @@
 def COLORED_PERMANENT = new MagicPermanentFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
         return MagicColor.isColorless(target) == false;
     }
 };
@@ -17,8 +17,8 @@ def COLORED_PERMANENT = new MagicPermanentFilterImpl() {
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            for (final MagicPermanent target : game.filterPermanents(COLORED_PERMANENT)) {
-                game.doAction(new MagicSacrificeAction(target));
+            COLORED_PERMANENT.filter(event) each {
+                game.doAction(new SacrificeAction(it));
             }    
         }
     }

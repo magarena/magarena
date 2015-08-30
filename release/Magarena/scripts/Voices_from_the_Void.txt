@@ -1,9 +1,9 @@
 name=Voices from the Void
-image=http://mtgimage.com/card/voices%20from%20the%20void.jpg
+image=http://magiccards.info/scans/en/cfx/55.jpg
 value=1.582
 rarity=U
 type=Sorcery
 cost={4}{B}
+effect=Target player discards a card for each basic land type among lands you control.
 timing=main
-requires_groovy_code
 oracle=Domain — Target player discards a card for each basic land type among lands you control.

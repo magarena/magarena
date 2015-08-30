@@ -1,5 +1,5 @@
 name=Vug Lizard
-image=http://mtgimage.com/card/vug%20lizard.jpg
+image=http://magiccards.info/scans/en/us/227.jpg
 value=2.850
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{R}{R}
 pt=3/4
 ability=mountainwalk;echo {1}{R}{R}
 timing=main
-oracle=Mountainwalk. Echo {1}{R}{R}
+oracle=Mountainwalk\nEcho {1}{R}{R}

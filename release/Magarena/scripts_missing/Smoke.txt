@@ -1,9 +1,9 @@
 name=Smoke
-image=http://mtgimage.com/card/smoke.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me4/137.jpg
+value=4.059
 rarity=R
 type=Enchantment
 cost={R}{R}
 ability=Players can't untap more than one creature during their untap steps.
-timing=main
+timing=enchantment
 oracle=Players can't untap more than one creature during their untap steps.

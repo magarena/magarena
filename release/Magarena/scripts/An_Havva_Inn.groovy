@@ -10,8 +10,8 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int X = game.getNrOfPermanents(MagicTargetFilterFactory.GREEN_CREATURE);
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(), X + 1));
+            final int X = game.getNrOfPermanents(GREEN_CREATURE);
+            game.doAction(new ChangeLifeAction(event.getPlayer(), X + 1));
         }
     }
 ]

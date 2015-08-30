@@ -1,6 +1,6 @@
 name=Thought Hemorrhage
-image=http://mtgimage.com/card/thought%20hemorrhage.jpg
-value=2.500
+image=http://magiccards.info/scans/en/arb/47.jpg
+value=4.211
 rarity=R
 type=Sorcery
 cost={2}{B}{R}

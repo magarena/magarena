@@ -1,9 +1,9 @@
 name=Weapon Surge
-image=http://mtgimage.com/card/weapon%20surge.jpg
+image=http://magiccards.info/scans/en/dgm/40.jpg
 value=3.780
 rarity=C
 type=Instant
 cost={R}
 timing=pump
 requires_groovy_code
-oracle=Target creature you control gets +1/+0 and gains first strike until end of turn. Overload {1}{R}
+oracle=Target creature you control gets +1/+0 and gains first strike until end of turn.\nOverload {1}{R}

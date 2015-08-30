@@ -1,0 +1,11 @@
+name=Ghoultree
+image=http://magiccards.info/scans/en/dka/115.jpg
+value=3.889
+rarity=R
+type=Creature
+subtype=Zombie,Treefolk
+cost={7}{G}
+pt=10/10
+timing=main
+requires_groovy_code
+oracle=Ghoultree costs {1} less to cast for each creature card in your graveyard.

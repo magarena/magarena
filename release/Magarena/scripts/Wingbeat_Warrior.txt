@@ -1,5 +1,5 @@
 name=Wingbeat Warrior
-image=http://mtgimage.com/card/wingbeat%20warrior.jpg
+image=http://magiccards.info/scans/en/le/29.jpg
 value=2.706
 rarity=C
 type=Creature
@@ -10,4 +10,4 @@ ability=Flying;\
         Morph {2}{W};\
         When SN is turned face up, target creature gains first strike until end of turn.
 timing=main
-oracle=Flying. Morph {2}{W}. When Wingbeat Warrior is turned face up, target creature gains first strike until end of turn.
+oracle=Flying\nMorph {2}{W}\nWhen Wingbeat Warrior is turned face up, target creature gains first strike until end of turn.

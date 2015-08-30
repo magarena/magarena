@@ -1,5 +1,5 @@
 name=Leonin Battlemage
-image=http://mtgimage.com/card/leonin%20battlemage.jpg
+image=http://magiccards.info/scans/en/ds/5.jpg
 value=2.894
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/3
 ability={T}: Target creature gets +1/+1 until end of turn.;\
         Whenever you cast a spell, you may untap SN.
 timing=main
-oracle={T}: Target creature gets +1/+1 until end of turn. Whenever you cast a spell, you may untap Leonin Battlemage.
+oracle={T}: Target creature gets +1/+1 until end of turn.\nWhenever you cast a spell, you may untap Leonin Battlemage.

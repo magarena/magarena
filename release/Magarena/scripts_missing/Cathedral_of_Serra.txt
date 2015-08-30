@@ -1,8 +1,8 @@
 name=Cathedral of Serra
-image=http://mtgimage.com/card/cathedral%20of%20serra.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lg/246.jpg
+value=1.506
 rarity=U
 type=Land
 ability=White legendary creatures you control have "bands with other legendary creatures."
-timing=main
+timing=land
 oracle=White legendary creatures you control have "bands with other legendary creatures."

@@ -2,7 +2,7 @@
     new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
-            final int amount = upkeepPlayer.getNrOfPermanents(MagicType.Creature) - 1;
+            final int amount = upkeepPlayer.getNrOfPermanents(CREATURE_YOU_CONTROL.except(permanent));
             final MagicManaCost cost = MagicManaCost.create("{"+amount+"}");
             return new MagicEvent(
                 permanent,
@@ -18,7 +18,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isNo()) {
-                game.doAction(new MagicSacrificeAction(event.getPermanent()));
+                game.doAction(new SacrificeAction(event.getPermanent()));
             }
         }
     }

@@ -1,5 +1,5 @@
 name=Deadeye Navigator
-image=http://mtgimage.com/card/deadeye%20navigator.jpg
+image=http://magiccards.info/scans/en/avr/47.jpg
 value=4.039
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=5/5
 ability=Soulbond;\
         As long as SN is paired with another creature, each of those creatures has "{1}{U}: Exile SN, then return it to the battlefield under your control."
 timing=main
-oracle=Soulbond. As long as Deadeye Navigator is paired with another creature, each of those creatures has "{1}{U}: Exile this creature, then return it to the battlefield under your control."
+oracle=Soulbond\nAs long as Deadeye Navigator is paired with another creature, each of those creatures has "{1}{U}: Exile this creature, then return it to the battlefield under your control."

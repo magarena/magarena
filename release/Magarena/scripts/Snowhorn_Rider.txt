@@ -1,5 +1,5 @@
 name=Snowhorn Rider
-image=http://mtgimage.com/card/snowhorn%20rider.jpg
+image=http://magiccards.info/scans/en/ktk/201.jpg
 value=2.750
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=5/5
 ability=Trample;\
         Morph {2}{G}{U}{R}
 timing=main
-oracle=Trample. Morph {2}{G}{U}{R}
+oracle=Trample\nMorph {2}{G}{U}{R}

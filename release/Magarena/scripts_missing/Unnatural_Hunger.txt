@@ -1,11 +1,11 @@
 name=Unnatural Hunger
-image=http://mtgimage.com/card/unnatural%20hunger.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/169.jpg
+value=3.411
 rarity=R
 type=Enchantment
 subtype=Aura
 cost={3}{B}{B}
 ability=Enchant creature;\
         At the beginning of the upkeep of enchanted creature's controller, SN deals damage to that player equal to that creature's power unless he or she sacrifices another creature.
-timing=main
-oracle=Enchant creature. At the beginning of the upkeep of enchanted creature's controller, Unnatural Hunger deals damage to that player equal to that creature's power unless he or she sacrifices another creature.
+timing=aura
+oracle=Enchant creature\nAt the beginning of the upkeep of enchanted creature's controller, Unnatural Hunger deals damage to that player equal to that creature's power unless he or she sacrifices another creature.

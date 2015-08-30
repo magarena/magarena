@@ -1,11 +1,11 @@
 name=Jace Beleren
-image=http://mtgimage.com/card/jace%20beleren.jpg
+image=http://magiccards.info/scans/en/m11/58.jpg
 value=3.811
 rarity=M
 type=Planeswalker
 subtype=Jace
 cost={1}{U}{U}
-ability=loyalty 3
+loyalty=3
 timing=main
 requires_groovy_code
-oracle=+2: Each player draws a card. -1: Target player draws a card. -10: Target player puts the top twenty cards of his or her library into his or her graveyard.
+oracle=+2: Each player draws a card.\n−1: Target player draws a card.\n−10: Target player puts the top twenty cards of his or her library into his or her graveyard.

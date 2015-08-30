@@ -1,5 +1,5 @@
 name=Omenspeaker
-image=http://mtgimage.com/card/omenspeaker.jpg
+image=http://magiccards.info/scans/en/ddo/39.jpg
 value=2.500
 rarity=C
 type=Creature

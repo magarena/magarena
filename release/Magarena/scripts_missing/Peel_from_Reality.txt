@@ -1,5 +1,5 @@
 name=Peel from Reality
-image=http://mtgimage.com/card/peel%20from%20reality.jpg
+image=http://magiccards.info/scans/en/ddo/40.jpg
 value=2.500
 rarity=C
 type=Instant

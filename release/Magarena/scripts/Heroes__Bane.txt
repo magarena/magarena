@@ -1,5 +1,5 @@
 name=Heroes' Bane
-image=http://mtgimage.com/card/heroes%27%20bane.jpg
+image=http://magiccards.info/scans/en/jou/126.jpg
 value=3.750
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=0/0
 ability=SN enters the battlefield with four +1/+1 counters on it.
 timing=main
 requires_groovy_code
-oracle=Heroes' Bane enters the battlefield with four +1/+1 counters on it. {2}{G}{G}: Put X +1/+1 counters on Heroes' Bane, where X is its power.
+oracle=Heroes' Bane enters the battlefield with four +1/+1 counters on it.\n{2}{G}{G}: Put X +1/+1 counters on Heroes' Bane, where X is its power.

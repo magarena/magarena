@@ -1,5 +1,5 @@
 name=Mindwarper
-image=http://mtgimage.com/card/mindwarper.jpg
+image=http://magiccards.info/scans/en/sh/14.jpg
 value=2.956
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=0/0
 ability=SN enters the battlefield with three +1/+1 counters on it.;\
         {2}{B}, Remove a +1/+1 counter from SN: Target player discards a card. Activate this ability only any time you could cast a sorcery.
 timing=main
-oracle=Mindwarper enters the battlefield with three +1/+1 counters on it. {2}{B}, Remove a +1/+1 counter from Mindwarper: Target player discards a card. Activate this ability only any time you could cast a sorcery.
+oracle=Mindwarper enters the battlefield with three +1/+1 counters on it.\n{2}{B}, Remove a +1/+1 counter from Mindwarper: Target player discards a card. Activate this ability only any time you could cast a sorcery.

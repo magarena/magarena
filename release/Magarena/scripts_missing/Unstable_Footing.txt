@@ -1,10 +1,9 @@
 name=Unstable Footing
-image=http://mtgimage.com/card/unstable%20footing.jpg
-value=2.500
+image=http://magiccards.info/scans/en/zen/153.jpg
+value=3.836
 rarity=U
 type=Instant
 cost={R}
-ability=Kicker {3}{R}
-effect=Damage can't be prevented this turn. If SN was kicked, it deals 5 damage to target player.
+effect=Kicker {3}{R}~Damage can't be prevented this turn. If SN was kicked, it deals 5 damage to target player.
 timing=removal
-oracle=Kicker {3}{R}. Damage can't be prevented this turn. If Unstable Footing was kicked, it deals 5 damage to target player.
+oracle=Kicker {3}{R}\nDamage can't be prevented this turn. If Unstable Footing was kicked, it deals 5 damage to target player.

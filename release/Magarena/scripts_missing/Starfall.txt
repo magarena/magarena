@@ -1,9 +1,0 @@
-name=Starfall
-image=http://mtgimage.com/card/starfall.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={4}{R}
-effect=SN deals 3 damage to target creature. If that creature is an enchantment, SN deals 3 damage to that creature's controller.
-timing=removal
-oracle=Starfall deals 3 damage to target creature. If that creature is an enchantment, Starfall deals 3 damage to that creature's controller.

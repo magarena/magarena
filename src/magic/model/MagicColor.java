@@ -1,8 +1,10 @@
 package magic.model;
 
+import java.util.Iterator;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.EnumSet;
 
 public enum MagicColor {
 
@@ -99,6 +101,33 @@ public enum MagicColor {
         throw new RuntimeException("No corresponding MagicColor for " + symbol);
     }
 
+    public static MagicColor getColor(final String colorName) {
+        for (final MagicColor color : values()) {
+            if (color.name.equalsIgnoreCase(colorName)) {
+                return color;
+            }
+        }
+        throw new RuntimeException("No corresponding MagicColor for " + colorName);
+    }
+
+    public static EnumSet<MagicColor> prefixColors(final List<String> tokens) {
+        final EnumSet<MagicColor> colors = EnumSet.noneOf(MagicColor.class);
+        boolean matched = true;
+        for (Iterator<String> iterator = tokens.iterator(); iterator.hasNext() && matched;) {
+            final String name = iterator.next();
+            matched = false;
+            for (final MagicColor color : values()) {
+                if (color.name.equalsIgnoreCase(name)) {
+                    matched = true;
+                    colors.add(color);
+                    iterator.remove();
+                    break;
+                }
+            }
+        }
+        return colors;
+    }
+
     public static String getRandomColors(final int count) {
         final List<MagicColor> colors = new ArrayList<MagicColor>(Arrays.asList(values()));
         final StringBuilder colorText=new StringBuilder();
@@ -109,7 +138,7 @@ public enum MagicColor {
         return colorText.toString();
     }
 
-    private static int numColors(final MagicSource source) {
+    public static int numColors(final MagicSource source) {
         int numColors = 0;
         for (final MagicColor color : values()) {
             if (source.hasColor(color)) {

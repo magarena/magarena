@@ -1,11 +1,11 @@
 name=Havengul Skaab
-image=http://mtgimage.com/card/havengul%20skaab.jpg
+image=http://magiccards.info/scans/en/avr/60.jpg
 value=1.570
 rarity=C
 type=Creature
 subtype=Zombie,Horror
 cost={5}{U}
 pt=4/5
+ability=Whenever SN attacks, return another creature you control to its owner's hand.
 timing=main
-requires_groovy_code
 oracle=Whenever Havengul Skaab attacks, return another creature you control to its owner's hand.

@@ -1,5 +1,5 @@
 name=Coral Reef
-image=http://mtgimage.com/card/coral%20reef.jpg
+image=http://magiccards.info/scans/en/hl/29.jpg
 value=1.440
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ ability=SN enters the battlefield with four polyp counters on it.;\
         Sacrifice an Island: Put two polyp counters on SN.;\
         {U}, Tap an untapped blue creature you control, Remove a polyp counter from SN: Put a +0/+1 counter on target creature.
 timing=enchantment
-oracle=Coral Reef enters the battlefield with four polyp counters on it. Sacrifice an Island: Put two polyp counters on Coral Reef. {U}, Tap an untapped blue creature you control, Remove a polyp counter from Coral Reef: Put a +0/+1 counter on target creature.
+oracle=Coral Reef enters the battlefield with four polyp counters on it.\nSacrifice an Island: Put two polyp counters on Coral Reef.\n{U}, Tap an untapped blue creature you control, Remove a polyp counter from Coral Reef: Put a +0/+1 counter on target creature.

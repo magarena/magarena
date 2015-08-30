@@ -1,5 +1,5 @@
 name=Wall of Faith
-image=http://mtgimage.com/card/wall%20of%20faith.jpg
+image=http://magiccards.info/scans/en/m10/40.jpg
 value=1.936
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={3}{W}
 pt=0/5
 ability=defender;{W}: SN gets +0/+1 until end of turn.
 timing=smain
-oracle=Defender. {W}: Wall of Faith gets +0/+1 until end of turn.
+oracle=Defender\n{W}: Wall of Faith gets +0/+1 until end of turn.

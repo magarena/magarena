@@ -1,5 +1,5 @@
 name=Wall of Souls
-image=http://mtgimage.com/card/wall%20of%20souls.jpg
+image=http://magiccards.info/scans/en/sh/25.jpg
 value=4.255
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=0/4
 ability=defender
 timing=main
 requires_groovy_code
-oracle=Defender. Whenever Wall of Souls is dealt combat damage, it deals that much damage to target opponent.
+oracle=Defender\nWhenever Wall of Souls is dealt combat damage, it deals that much damage to target opponent.

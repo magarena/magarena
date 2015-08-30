@@ -1,0 +1,10 @@
+name=Prism Ring
+image=http://magiccards.info/scans/en/ori/235.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={1}
+ability=As SN enters the battlefield, choose a color.;\
+        Whenever you cast a spell of the chosen color, you gain 1 life.
+timing=artifact
+oracle=As Prism Ring enters the battlefield, choose a color.\nWhenever you cast a spell of the chosen color, you gain 1 life.

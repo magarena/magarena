@@ -1,6 +1,6 @@
 name=Escaped Shapeshifter
-image=http://mtgimage.com/card/escaped%20shapeshifter.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tp/62.jpg
+value=3.236
 rarity=R
 type=Creature
 subtype=Shapeshifter

@@ -3,9 +3,9 @@
         @Override
         public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
             permanent.loseAllAbilities();
-            permanent.addAbility(new MagicTapManaActivation(MagicManaType.getList("{R}")));
-            permanent.addAbility(new MagicTapManaActivation(MagicManaType.getList("{G}")));
-            permanent.addAbility(new MagicTapManaActivation(MagicManaType.getList("{W}")));
+            permanent.addAbility(MagicTapManaActivation.Red);
+            permanent.addAbility(MagicTapManaActivation.Green);
+            permanent.addAbility(MagicTapManaActivation.White);
         }
         @Override
         public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) { 

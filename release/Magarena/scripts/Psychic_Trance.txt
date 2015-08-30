@@ -1,5 +1,5 @@
 name=Psychic Trance
-image=http://mtgimage.com/card/psychic%20trance.jpg
+image=http://magiccards.info/scans/en/on/102.jpg
 value=2.820
 rarity=R
 type=Instant

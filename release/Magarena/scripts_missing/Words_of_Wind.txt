@@ -1,9 +1,9 @@
 name=Words of Wind
-image=http://mtgimage.com/card/words%20of%20wind.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/122.jpg
+value=3.300
 rarity=R
 type=Enchantment
 cost={2}{U}
 ability={1}: The next time you would draw a card this turn, each player returns a permanent he or she controls to its owner's hand instead.
-timing=main
+timing=enchantment
 oracle={1}: The next time you would draw a card this turn, each player returns a permanent he or she controls to its owner's hand instead.

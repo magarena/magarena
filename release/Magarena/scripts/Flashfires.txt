@@ -1,9 +1,10 @@
 name=Flashfires
-image=http://mtgimage.com/card/flashfires.jpg
+image=http://magiccards.info/scans/en/9e/183.jpg
 value=3.825
 rarity=U
 type=Sorcery
 cost={3}{R}
+ability=Cast SN with AI only if an opponent controls a Plains.
 effect=Destroy all Plains.
 timing=removal
 oracle=Destroy all Plains.

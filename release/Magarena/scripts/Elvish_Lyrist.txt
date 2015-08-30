@@ -1,5 +1,5 @@
 name=Elvish Lyrist
-image=http://mtgimage.com/card/elvish%20lyrist.jpg
+image=http://magiccards.info/scans/en/8e/242.jpg
 value=3.306
 rarity=U
 type=Creature

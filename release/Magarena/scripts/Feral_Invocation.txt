@@ -1,5 +1,5 @@
 name=Feral Invocation
-image=http://mtgimage.com/card/feral%20invocation.jpg
+image=http://magiccards.info/scans/en/ths/158.jpg
 value=3.370
 rarity=C
 type=Enchantment
@@ -9,4 +9,4 @@ ability=Flash;\
         Enchanted creature gets +2/+2.
 timing=pumpFlash
 enchant=pump,pos creature
-oracle=Flash. Enchant creature. Enchanted creature gets +2/+2.
+oracle=Flash\nEnchant creature\nEnchanted creature gets +2/+2.

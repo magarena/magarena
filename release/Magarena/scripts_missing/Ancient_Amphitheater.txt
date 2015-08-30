@@ -1,9 +1,9 @@
 name=Ancient Amphitheater
-image=http://mtgimage.com/card/ancient%20amphitheater.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lw/266.jpg
+value=3.628
 rarity=R
 type=Land
 ability=As SN enters the battlefield, you may reveal a Giant card from your hand. If you don't, SN enters the battlefield tapped.;\
         {T}: Add {R} or {W} to your mana pool.
-timing=main
-oracle=As Ancient Amphitheater enters the battlefield, you may reveal a Giant card from your hand. If you don't, Ancient Amphitheater enters the battlefield tapped. {T}: Add {R} or {W} to your mana pool.
+timing=land
+oracle=As Ancient Amphitheater enters the battlefield, you may reveal a Giant card from your hand. If you don't, Ancient Amphitheater enters the battlefield tapped.\n{T}: Add {R} or {W} to your mana pool.

@@ -1,6 +1,6 @@
 name=Vein Drinker
-image=http://mtgimage.com/card/vein%20drinker.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ala/91.jpg
+value=3.313
 rarity=R
 type=Creature
 subtype=Vampire
@@ -10,4 +10,4 @@ ability=Flying;\
         {R}, {T}: SN deals damage equal to its power to target creature. That creature deals damage equal to its power to SN.;\
         Whenever a creature dealt damage by SN this turn dies, put a +1/+1 counter on SN.
 timing=main
-oracle=Flying. {R}, {T}: Vein Drinker deals damage equal to its power to target creature. That creature deals damage equal to its power to Vein Drinker. Whenever a creature dealt damage by Vein Drinker this turn dies, put a +1/+1 counter on Vein Drinker.
+oracle=Flying\n{R}, {T}: Vein Drinker deals damage equal to its power to target creature. That creature deals damage equal to its power to Vein Drinker.\nWhenever a creature dealt damage by Vein Drinker this turn dies, put a +1/+1 counter on Vein Drinker.

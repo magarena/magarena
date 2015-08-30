@@ -1,6 +1,6 @@
 name=Generator Servant
-image=http://mtgimage.com/card/generator%20servant.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/143.jpg
+value=3.722
 rarity=C
 type=Creature
 subtype=Elemental

@@ -4,6 +4,9 @@ import magic.model.target.MagicTarget;
 
 public class MagicDamage {
 
+    public static final boolean Combat = true;
+    public static final boolean Any = false;
+
     private final MagicSource source;
     private MagicTarget target;
     private int amount;
@@ -61,6 +64,10 @@ public class MagicDamage {
     
     public MagicPermanent getTargetPermanent() {
         return (MagicPermanent)target;
+    }
+
+    public MagicPermanent getSourcePermanent() {
+        return (MagicPermanent)source;
     }
 
     public void setAmount(final int amt) {

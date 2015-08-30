@@ -1,5 +1,5 @@
 name=Blind Obedience
-image=http://mtgimage.com/card/blind%20obedience.jpg
+image=http://magiccards.info/scans/en/gtc/6.jpg
 value=4.123
 rarity=R
 type=Enchantment
@@ -7,4 +7,4 @@ cost={1}{W}
 ability=extort
 timing=main
 requires_groovy_code
-oracle=Extort. Artifacts and creatures your opponents control enter the battlefield tapped.
+oracle=Extort\nArtifacts and creatures your opponents control enter the battlefield tapped.

@@ -1,5 +1,5 @@
 name=Windstorm
-image=http://mtgimage.com/card/windstorm.jpg
+image=http://magiccards.info/scans/en/ktk/157.jpg
 value=3.250
 rarity=U
 type=Instant

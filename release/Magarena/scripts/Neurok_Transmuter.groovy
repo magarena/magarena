@@ -10,44 +10,8 @@ def nonartifact = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         return flags & ~MagicType.Artifact.getMask();
     }
 };
-def artifact = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
-    @Override
-    public int getTypeFlags(final MagicPermanent permanent,final int flags) {
-        return flags | MagicType.Artifact.getMask();
-    }
-};
 
 [
-    new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Removal),
-        "Artifact"
-    ) {
-
-        @Override
-        public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
-            return [
-                new MagicPayManaCostEvent(source, "{U}")
-            ];
-        }
-
-        @Override
-        public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                source,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
-                MagicExileTargetPicker.create(),
-                this,
-                "Target creature\$ becomes an artifact in addition to its other types until end of turn."
-            );
-        }
-
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game, {
-                game.doAction(new MagicAddStaticAction(it, artifact));
-            });
-        }
-    },
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Removal),
         "Blue"
@@ -64,7 +28,7 @@ def artifact = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.POS_TARGET_ARTIFACT_CREATURE,
+                POS_TARGET_ARTIFACT_CREATURE,
                 MagicExileTargetPicker.create(),
                 this,
                 "Until end of turn, target artifact creature\$ becomes blue and isn't an artifact."
@@ -74,8 +38,8 @@ def artifact = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicAddStaticAction(it,blue));
-                game.doAction(new MagicAddStaticAction(it,nonartifact));
+                game.doAction(new AddStaticAction(it,blue));
+                game.doAction(new AddStaticAction(it,nonartifact));
             });
         }
     }

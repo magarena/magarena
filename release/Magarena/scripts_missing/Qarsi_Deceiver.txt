@@ -1,0 +1,11 @@
+name=Qarsi Deceiver
+image=http://magiccards.info/scans/en/dtk/71.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Naga,Wizard
+cost={1}{U}
+pt=0/4
+ability={T}: Add {1} to your mana pool. Spend this mana only to cast a face-down creature spell, pay a mana cost to turn a manifested creature face up, or pay a morph cost.
+timing=main
+oracle={T}: Add {1} to your mana pool. Spend this mana only to cast a face-down creature spell, pay a mana cost to turn a manifested creature face up, or pay a morph cost.

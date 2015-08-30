@@ -1,5 +1,5 @@
 name=Crystal Rod
-image=http://mtgimage.com/card/crystal%20rod.jpg
+image=http://magiccards.info/scans/en/8e/295.jpg
 value=1.189
 rarity=U
 type=Artifact

@@ -1,5 +1,5 @@
 name=Trokin High Guard
-image=http://mtgimage.com/card/trokin%20high%20guard.jpg
+image=http://magiccards.info/scans/en/po2/146.jpg
 value=3.086
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Human,Knight
 cost={3}{W}
 pt=3/3
 timing=main
+oracle=NONE

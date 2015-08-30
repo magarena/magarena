@@ -1,5 +1,5 @@
 name=Cloudheath Drake
-image=http://mtgimage.com/card/cloudheath%20drake.jpg
+image=http://magiccards.info/scans/en/ala/35.jpg
 value=1.962
 rarity=C
 type=Artifact,Creature
@@ -8,4 +8,4 @@ cost={4}{U}
 pt=3/3
 ability=flying;{1}{W}: SN gains vigilance until end of turn.
 timing=main
-oracle=Flying. {1}{W}: Cloudheath Drake gains vigilance until end of turn.
+oracle=Flying\n{1}{W}: Cloudheath Drake gains vigilance until end of turn.

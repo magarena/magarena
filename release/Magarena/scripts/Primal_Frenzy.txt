@@ -1,5 +1,5 @@
 name=Primal Frenzy
-image=http://mtgimage.com/card/primal%20frenzy.jpg
+image=http://magiccards.info/scans/en/od/262.jpg
 value=2.016
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={G}
 ability=Enchanted creature has trample.
 timing=aura
 enchant=trample,pos creature
-oracle=Enchant creature. Enchanted creature has trample.
+oracle=Enchant creature\nEnchanted creature has trample.

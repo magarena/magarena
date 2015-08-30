@@ -1,5 +1,5 @@
 name=Seal of Strength
-image=http://mtgimage.com/card/seal%20of%20strength.jpg
+image=http://magiccards.info/scans/en/ne/115.jpg
 value=4.140
 rarity=C
 type=Enchantment

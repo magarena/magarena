@@ -1,9 +1,9 @@
 name=Puffer Extract
-image=http://mtgimage.com/card/puffer%20extract.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/310.jpg
+value=2.674
 rarity=U
 type=Artifact
 cost={5}
 ability={X}, {T}: Target creature you control gets +X/+X until end of turn. Destroy it at the beginning of the next end step.
-timing=main
+timing=artifact
 oracle={X}, {T}: Target creature you control gets +X/+X until end of turn. Destroy it at the beginning of the next end step.

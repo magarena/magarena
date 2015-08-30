@@ -1,5 +1,5 @@
 name=Silverchase Fox
-image=http://mtgimage.com/card/silverchase%20fox.jpg
+image=http://magiccards.info/scans/en/cns/81.jpg
 value=3.700
 rarity=C
 type=Creature

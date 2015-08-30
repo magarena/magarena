@@ -1,6 +1,6 @@
 name=Reveillark
-image=http://mtgimage.com/card/reveillark.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mma/26.jpg
+value=4.258
 rarity=R
 type=Creature
 subtype=Elemental
@@ -10,4 +10,4 @@ ability=Flying;\
         When SN leaves the battlefield, return up to two target creature cards with power 2 or less from your graveyard to the battlefield.;\
         Evoke {5}{W}
 timing=main
-oracle=Flying. When Reveillark leaves the battlefield, return up to two target creature cards with power 2 or less from your graveyard to the battlefield. Evoke {5}{W}
+oracle=Flying\nWhen Reveillark leaves the battlefield, return up to two target creature cards with power 2 or less from your graveyard to the battlefield.\nEvoke {5}{W}

@@ -1,9 +1,9 @@
 name=Fleeting Distraction
-image=http://mtgimage.com/card/fleeting%20distraction.jpg
+image=http://magiccards.info/scans/en/ddn/60.jpg
 value=1.698
 rarity=C
 type=Instant
 cost={U}
 effect=Target creature gets -1/-0 until end of turn.~Draw a card.
 timing=block
-oracle=Target creature gets -1/-0 until end of turn. Draw a card.
+oracle=Target creature gets -1/-0 until end of turn.\nDraw a card.

@@ -1,5 +1,5 @@
 name=Vendetta
-image=http://mtgimage.com/card/vendetta.jpg
+image=http://magiccards.info/scans/en/roe/130.jpg
 value=4.081
 rarity=C
 type=Instant

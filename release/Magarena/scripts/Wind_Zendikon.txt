@@ -1,5 +1,5 @@
 name=Wind Zendikon
-image=http://mtgimage.com/card/wind%20zendikon.jpg
+image=http://magiccards.info/scans/en/wwk/46.jpg
 value=3.803
 rarity=C
 type=Enchantment
@@ -13,4 +13,4 @@ given_subtype=Elemental
 set_pt=2/2
 timing=enchantment
 requires_groovy_code
-oracle=Enchant land. Enchanted land is a 2/2 blue Elemental creature with flying. It's still a land. When enchanted land dies, return that card to its owner's hand.
+oracle=Enchant land\nEnchanted land is a 2/2 blue Elemental creature with flying. It's still a land.\nWhen enchanted land dies, return that card to its owner's hand.

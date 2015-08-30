@@ -13,12 +13,12 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
             final MagicPlayer player = event.getPlayer();
-            final MagicTargetChoice targetChoice = MagicTargetChoice.Other("a creature to sacrifice", permanent);
+            final MagicTargetChoice targetChoice = Other("a creature to sacrifice", permanent);
             final MagicEvent sac = new MagicSacrificePermanentEvent(permanent,player,targetChoice)
             if (event.isYes() && sac.isSatisfied()) {
                 game.addEvent(sac);
             } else {
-                game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.Exile));
+                game.doAction(new RemoveFromPlayAction(permanent,MagicLocationType.Exile));
             }
         }
     }

@@ -1,9 +1,9 @@
 name=Scout's Warning
-image=http://mtgimage.com/card/scout%27s%20warning.jpg
-value=2.500
+image=http://magiccards.info/scans/en/fut/16.jpg
+value=3.912
 rarity=R
 type=Instant
 cost={W}
 effect=The next creature card you play this turn can be played as though it had flash.~Draw a card.
 timing=removal
-oracle=The next creature card you play this turn can be played as though it had flash. Draw a card.
+oracle=The next creature card you play this turn can be played as though it had flash.\nDraw a card.

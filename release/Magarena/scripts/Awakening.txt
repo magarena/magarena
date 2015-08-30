@@ -1,5 +1,5 @@
 name=Awakening
-image=http://mtgimage.com/card/awakening.jpg
+image=http://magiccards.info/scans/en/sh/51.jpg
 value=3.818
 rarity=R
 type=Enchantment

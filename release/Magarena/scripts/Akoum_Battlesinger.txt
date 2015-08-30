@@ -1,12 +1,12 @@
 name=Akoum Battlesinger
-image=http://mtgimage.com/card/akoum%20battlesinger.jpg
+image=http://magiccards.info/scans/en/wwk/71.jpg
 value=2.975
 rarity=C
 type=Creature
 subtype=Human,Berserker,Ally
 cost={1}{R}
 pt=1/1
-ability=haste;\
+ability=Haste;\
         Whenever SN or another Ally enters the battlefield under your control, you may have Ally creatures you control get +1/+0 until end of turn.
 timing=fmain
-oracle=Haste. Whenever Akoum Battlesinger or another Ally enters the battlefield under your control, you may have Ally creatures you control get +1/+0 until end of turn.
+oracle=Haste\nWhenever Akoum Battlesinger or another Ally enters the battlefield under your control, you may have Ally creatures you control get +1/+0 until end of turn.

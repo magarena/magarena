@@ -1,9 +1,9 @@
 name=Heartbeat of Spring
-image=http://mtgimage.com/card/heartbeat%20of%20spring.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/212.jpg
+value=3.933
 rarity=R
 type=Enchantment
 cost={2}{G}
 ability=Whenever a player taps a land for mana, that player adds one mana to his or her mana pool of any type that land produced.
-timing=main
+timing=enchantment
 oracle=Whenever a player taps a land for mana, that player adds one mana to his or her mana pool of any type that land produced.

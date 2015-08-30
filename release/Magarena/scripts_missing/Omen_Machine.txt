@@ -1,10 +1,10 @@
 name=Omen Machine
-image=http://mtgimage.com/card/omen%20machine.jpg
-value=2.500
+image=http://magiccards.info/scans/en/nph/148.jpg
+value=3.082
 rarity=R
 type=Artifact
 cost={6}
 ability=Players can't draw cards.;\
         At the beginning of each player's draw step, that player exiles the top card of his or her library. If it's a land card, the player puts it onto the battlefield. Otherwise, the player casts it without paying its mana cost if able.
-timing=main
-oracle=Players can't draw cards. At the beginning of each player's draw step, that player exiles the top card of his or her library. If it's a land card, the player puts it onto the battlefield. Otherwise, the player casts it without paying its mana cost if able.
+timing=artifact
+oracle=Players can't draw cards.\nAt the beginning of each player's draw step, that player exiles the top card of his or her library. If it's a land card, the player puts it onto the battlefield. Otherwise, the player casts it without paying its mana cost if able.

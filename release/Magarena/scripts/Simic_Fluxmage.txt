@@ -1,5 +1,5 @@
 name=Simic Fluxmage
-image=http://mtgimage.com/card/simic%20fluxmage.jpg
+image=http://magiccards.info/scans/en/gtc/49.jpg
 value=2.904
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/2
 ability=evolve
 timing=fmain
 requires_groovy_code
-oracle=Evolve. {1}{U}, {T}: Move a +1/+1 counter from Simic Fluxmage onto target creature.
+oracle=Evolve\n{1}{U}, {T}: Move a +1/+1 counter from Simic Fluxmage onto target creature.

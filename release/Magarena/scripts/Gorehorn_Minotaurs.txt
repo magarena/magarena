@@ -1,5 +1,5 @@
 name=Gorehorn Minotaurs
-image=http://mtgimage.com/card/gorehorn%20minotaurs.jpg
+image=http://magiccards.info/scans/en/ddl/52.jpg
 value=3.821
 rarity=C
 type=Creature

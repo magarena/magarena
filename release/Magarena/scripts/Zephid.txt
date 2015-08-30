@@ -1,5 +1,5 @@
 name=Zephid
-image=http://mtgimage.com/card/zephid.jpg
+image=http://magiccards.info/scans/en/us/113.jpg
 value=3.244
 rarity=R
 type=Creature
@@ -8,4 +8,4 @@ cost={4}{U}{U}
 pt=3/4
 ability=flying;shroud
 timing=main
-oracle=Flying; shroud
+oracle=Flying\nShroud

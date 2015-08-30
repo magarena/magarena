@@ -1,9 +1,10 @@
 name=Hell Swarm
-image=http://mtgimage.com/card/hell%20swarm.jpg
+image=http://magiccards.info/scans/en/lg/17.jpg
 value=1.357
 rarity=C
 type=Instant
 cost={B}
+ability=Cast SN with AI only if an opponent controls a creature.
 effect=All creatures get -1/-0 until end of turn.
 timing=removal
 oracle=All creatures get -1/-0 until end of turn.

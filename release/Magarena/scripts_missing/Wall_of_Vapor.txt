@@ -1,6 +1,6 @@
 name=Wall of Vapor
-image=http://mtgimage.com/card/wall%20of%20vapor.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ch/27.jpg
+value=2.302
 rarity=C
 type=Creature
 subtype=Wall
@@ -9,4 +9,4 @@ pt=0/1
 ability=Defender;\
         Prevent all damage that would be dealt to SN by creatures it's blocking.
 timing=main
-oracle=Defender. Prevent all damage that would be dealt to Wall of Vapor by creatures it's blocking.
+oracle=Defender\nPrevent all damage that would be dealt to Wall of Vapor by creatures it's blocking.

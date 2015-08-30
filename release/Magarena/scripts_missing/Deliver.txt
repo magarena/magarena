@@ -1,6 +1,6 @@
 name=Deliver
-image=http://mtgimage.com/card/standdeliver.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/292b.jpg
+value=3.219
 rarity=U
 type=Instant
 cost={2}{U}

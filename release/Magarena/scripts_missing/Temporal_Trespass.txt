@@ -1,9 +1,9 @@
 name=Temporal Trespass
-image=http://mtgimage.com/card/temporal%20trespass.jpg
+image=http://magiccards.info/scans/en/frf/55.jpg
 value=2.500
 rarity=M
 type=Sorcery
 cost={8}{U}{U}{U}
 effect=Delve~Take an extra turn after this one. Exile SN.
 timing=main
-oracle=Delve. Take an extra turn after this one. Exile Temporal Trespass.
+oracle=Delve\nTake an extra turn after this one. Exile Temporal Trespass.

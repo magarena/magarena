@@ -1,9 +1,9 @@
 name=Martyr's Bond
-image=http://mtgimage.com/card/martyr%27s%20bond.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cmd/19.jpg
+value=4.127
 rarity=R
 type=Enchantment
 cost={4}{W}{W}
 ability=Whenever SN or another nonland permanent you control is put into a graveyard from the battlefield, each opponent sacrifices a permanent that shares a card type with it.
-timing=main
+timing=enchantment
 oracle=Whenever Martyr's Bond or another nonland permanent you control is put into a graveyard from the battlefield, each opponent sacrifices a permanent that shares a card type with it.

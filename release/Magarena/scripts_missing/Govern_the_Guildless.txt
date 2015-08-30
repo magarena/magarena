@@ -1,9 +1,9 @@
 name=Govern the Guildless
-image=http://mtgimage.com/card/govern%20the%20guildless.jpg
-value=2.500
+image=http://magiccards.info/scans/en/di/25.jpg
+value=2.432
 rarity=R
 type=Sorcery
 cost={5}{U}
 effect=Gain control of target monocolored creature.~{1}{U}, Reveal SN from your hand: Target creature becomes the color or colors of your choice until end of turn.
 timing=main
-oracle=Gain control of target monocolored creature. Forecast — {1}{U}, Reveal Govern the Guildless from your hand: Target creature becomes the color or colors of your choice until end of turn.
+oracle=Gain control of target monocolored creature.\nForecast — {1}{U}, Reveal Govern the Guildless from your hand: Target creature becomes the color or colors of your choice until end of turn.

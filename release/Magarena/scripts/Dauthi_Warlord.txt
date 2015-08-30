@@ -1,5 +1,5 @@
 name=Dauthi Warlord
-image=http://mtgimage.com/card/dauthi%20warlord.jpg
+image=http://magiccards.info/scans/en/ex/59.jpg
 value=4.053
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=*/1
 ability=shadow;\
         SN's power is equal to the number of creatures with shadow on the battlefield.
 timing=main
-oracle=Shadow. Dauthi Warlord's power is equal to the number of creatures with shadow on the battlefield.
+oracle=Shadow\nDauthi Warlord's power is equal to the number of creatures with shadow on the battlefield.

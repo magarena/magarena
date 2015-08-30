@@ -1,5 +1,5 @@
 name=River Kaijin
-image=http://mtgimage.com/card/river%20kaijin.jpg
+image=http://magiccards.info/scans/en/chk/83.jpg
 value=2.000
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Spirit
 cost={2}{U}
 pt=1/4
 timing=main
+oracle=NONE

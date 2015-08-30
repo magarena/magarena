@@ -1,5 +1,5 @@
 name=Pygmy Pyrosaur
-image=http://mtgimage.com/card/pygmy%20pyrosaur.jpg
+image=http://magiccards.info/scans/en/ddi/46.jpg
 value=3.154
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{R}
 pt=1/1
 ability=SN can't block.;{R}: SN gets +1/+0 until end of turn.
 timing=main
-oracle=Pygmy Pyrosaur can't block. {R}: Pygmy Pyrosaur gets +1/+0 until end of turn.
+oracle=Pygmy Pyrosaur can't block.\n{R}: Pygmy Pyrosaur gets +1/+0 until end of turn.

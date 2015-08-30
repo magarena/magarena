@@ -1,5 +1,5 @@
 name=Frozen Æther
-image=http://mtgimage.com/card/frozen%20aether.jpg
+image=http://magiccards.info/scans/en/pc/54.jpg
 value=4.182
 rarity=U
 type=Enchantment

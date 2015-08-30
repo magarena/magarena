@@ -1,11 +1,11 @@
 name=Betrayal
-image=http://mtgimage.com/card/betrayal.jpg
+image=http://magiccards.info/scans/en/vi/26.jpg
 value=3.861
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={U}
+ability=Whenever enchanted creature becomes tapped, you draw a card.
 timing=aura
 enchant=tap,creature an opponent controls
-requires_groovy_code
-oracle=Enchant creature an opponent controls. Whenever enchanted creature becomes tapped, you draw a card.
+oracle=Enchant creature an opponent controls\nWhenever enchanted creature becomes tapped, you draw a card.

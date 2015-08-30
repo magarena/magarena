@@ -1,11 +1,11 @@
 name=Dragon Throne of Tarkir
-image=http://mtgimage.com/card/dragon%20throne%20of%20tarkir.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/219.jpg
+value=3.000
 rarity=R
 type=Legendary,Artifact
 subtype=Equipment
 cost={4}
 ability=Equipped creature has defender and "{2}, {T}: Other creatures you control gain trample and get +X/+X until end of turn, where X is this creature's power.";\
         Equip {3}
-timing=main
-oracle=Equipped creature has defender and "{2}, {T}: Other creatures you control gain trample and get +X/+X until end of turn, where X is this creature's power.". Equip {3}
+timing=equipment
+oracle=Equipped creature has defender and "{2}, {T}: Other creatures you control gain trample and get +X/+X until end of turn, where X is this creature's power."\nEquip {3}

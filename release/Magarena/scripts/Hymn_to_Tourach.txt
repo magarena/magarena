@@ -1,5 +1,5 @@
 name=Hymn to Tourach
-image=http://mtgimage.com/card/hymn%20to%20tourach.jpg
+image=http://magiccards.info/scans/en/vma/122.jpg
 value=4.500
 rarity=U
 type=Sorcery

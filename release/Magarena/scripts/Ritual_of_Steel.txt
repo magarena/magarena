@@ -1,5 +1,5 @@
 name=Ritual of Steel
-image=http://mtgimage.com/card/ritual%20of%20steel.jpg
+image=http://magiccards.info/scans/en/mr/240.jpg
 value=1.758
 rarity=C
 type=Enchantment
@@ -9,4 +9,4 @@ ability=Enchanted creature gets +0/+2.;\
         When SN enters the battlefield, draw a card at the beginning of the next turn's upkeep.
 timing=enchantment
 enchant=pump,pos creature
-oracle=Enchant creature. When Ritual of Steel enters the battlefield, draw a card at the beginning of the next turn's upkeep. Enchanted creature gets +0/+2.
+oracle=Enchant creature\nWhen Ritual of Steel enters the battlefield, draw a card at the beginning of the next turn's upkeep.\nEnchanted creature gets +0/+2.

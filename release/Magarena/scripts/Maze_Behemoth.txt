@@ -1,5 +1,5 @@
 name=Maze Behemoth
-image=http://mtgimage.com/card/maze%20behemoth.jpg
+image=http://magiccards.info/scans/en/dgm/43.jpg
 value=2.857
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=5/4
 ability=Trample;\
         Multicolored creatures you control have trample.
 timing=main
-oracle=Trample. Multicolored creatures you control have trample.
+oracle=Trample\nMulticolored creatures you control have trample.

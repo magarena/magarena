@@ -1,5 +1,5 @@
 name=Reforge the Soul
-image=http://mtgimage.com/card/reforge%20the%20soul.jpg
+image=http://magiccards.info/scans/en/avr/151.jpg
 value=4.100
 rarity=R
 type=Sorcery
@@ -7,4 +7,4 @@ cost={3}{R}{R}
 ability=miracle {1}{R}
 timing=draw
 requires_groovy_code=Wheel of Fortune
-oracle=Each player discards his or her hand and draws seven cards. Miracle {1}{R}
+oracle=Each player discards his or her hand, then draws seven cards.\nMiracle {1}{R}

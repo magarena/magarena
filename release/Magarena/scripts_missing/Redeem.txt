@@ -1,7 +1,7 @@
 name=Redeem
-image=http://mtgimage.com/card/redeem.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/8e/37.jpg
+value=2.983
+rarity=C
 type=Instant
 cost={1}{W}
 effect=Prevent all damage that would be dealt this turn to up to two target creatures.

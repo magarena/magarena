@@ -1,5 +1,5 @@
 name=Phyrexian Negator
-image=http://mtgimage.com/card/phyrexian%20negator.jpg
+image=http://magiccards.info/scans/en/pvc/1.jpg
 value=3.908
 rarity=M
 type=Creature
@@ -9,4 +9,4 @@ pt=5/5
 ability=trample
 timing=main
 requires_groovy_code
-oracle=Trample. Whenever Phyrexian Negator is dealt damage, sacrifice that many permanents.
+oracle=Trample\nWhenever Phyrexian Negator is dealt damage, sacrifice that many permanents.

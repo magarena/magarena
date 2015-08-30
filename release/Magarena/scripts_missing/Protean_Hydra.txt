@@ -1,7 +1,7 @@
 name=Protean Hydra
-image=http://mtgimage.com/card/protean%20hydra.jpg
-value=2.500
-rarity=M
+image=http://magiccards.info/scans/en/m11/194.jpg
+value=4.209
+rarity=R
 type=Creature
 subtype=Hydra
 cost={X}{G}
@@ -10,4 +10,4 @@ ability=SN enters the battlefield with X +1/+1 counters on it.;\
         If damage would be dealt to SN, prevent that damage and remove that many +1/+1 counters from it.;\
         Whenever a +1/+1 counter is removed from SN, put two +1/+1 counters on it at the beginning of the next end step.
 timing=main
-oracle=Protean Hydra enters the battlefield with X +1/+1 counters on it. If damage would be dealt to Protean Hydra, prevent that damage and remove that many +1/+1 counters from it. Whenever a +1/+1 counter is removed from Protean Hydra, put two +1/+1 counters on it at the beginning of the next end step.
+oracle=Protean Hydra enters the battlefield with X +1/+1 counters on it.\nIf damage would be dealt to Protean Hydra, prevent that damage and remove that many +1/+1 counters from it.\nWhenever a +1/+1 counter is removed from Protean Hydra, put two +1/+1 counters on it at the beginning of the next end step.

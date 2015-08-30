@@ -1,12 +1,12 @@
 name=Armored Ascension
-image=http://mtgimage.com/card/armored%20ascension.jpg
+image=http://magiccards.info/scans/en/m11/5.jpg
 value=3.812
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={3}{W}
-ability=Enchanted creature has flying.
+ability=Enchanted creature gets +1/+1 for each Plains you control.;\
+        Enchanted creature has flying.
 timing=aura
 enchant=pump,pos creature
-requires_groovy_code
-oracle=Enchant creature. Enchanted creature gets +1/+1 for each Plains you control and has flying.
+oracle=Enchant creature\nEnchanted creature gets +1/+1 for each Plains you control and has flying.

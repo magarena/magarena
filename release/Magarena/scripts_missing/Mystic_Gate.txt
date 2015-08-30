@@ -1,9 +1,9 @@
 name=Mystic Gate
-image=http://mtgimage.com/card/mystic%20gate.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/277.jpg
+value=4.273
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\
         {W/U}, {T}: Add {W}{W}, {W}{U}, or {U}{U} to your mana pool.
-timing=main
-oracle={T}: Add {1} to your mana pool. {W/U}, {T}: Add {W}{W}, {W}{U}, or {U}{U} to your mana pool.
+timing=land
+oracle={T}: Add {1} to your mana pool.\n{W/U}, {T}: Add {W}{W}, {W}{U}, or {U}{U} to your mana pool.

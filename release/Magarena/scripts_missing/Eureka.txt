@@ -1,7 +1,7 @@
 name=Eureka
-image=http://mtgimage.com/card/eureka.jpg
-value=2.500
-rarity=R
+image=http://magiccards.info/scans/en/vma/208.jpg
+value=4.500
+rarity=M
 type=Sorcery
 cost={2}{G}{G}
 effect=Starting with you, each player may put a permanent card from his or her hand onto the battlefield. Repeat this process until no one puts a card onto the battlefield.

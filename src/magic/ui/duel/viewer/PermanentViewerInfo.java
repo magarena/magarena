@@ -47,7 +47,6 @@ public class PermanentViewerInfo {
 
     public final MagicPermanent permanent;
     public final MagicCardDefinition cardDefinition;
-    public final MagicCardDefinition realCardDefinition;
     public final String name;
     public final String blockedName;
     public final ImageIcon icon;
@@ -77,7 +76,6 @@ public class PermanentViewerInfo {
     public PermanentViewerInfo(final MagicGame game,final MagicPermanent permanent) {
         this.permanent=permanent;
         cardDefinition=permanent.getCardDefinition();
-        realCardDefinition=permanent.getRealCardDefinition();
         name=permanent.getName();
         icon=IconImages.getIcon(permanent);
         index=permanent.getCard().getImageIndex();
@@ -145,7 +143,7 @@ public class PermanentViewerInfo {
         if (permanent.isTapped()) {
             textBuffer.append(MagicPermanentState.Tapped.getText());
         } else if (!permanent.canTap()) {
-            textBuffer.append("{S}");
+            textBuffer.append("{SS}");
         }
         if (permanent.hasState(MagicPermanentState.DoesNotUntapDuringNext)) {
             textBuffer.append(MagicPermanentState.DoesNotUntapDuringNext.getText());
@@ -253,7 +251,7 @@ public class PermanentViewerInfo {
 
     private static boolean isTargeted(final MagicGame game,final MagicPermanent permanent) {
         for (final MagicItemOnStack itemOnStack : game.getStack()) {
-            if (itemOnStack.containsInChoiceResults(permanent)) {
+            if (itemOnStack.isTarget(permanent)) {
                 return true;
             }
         }

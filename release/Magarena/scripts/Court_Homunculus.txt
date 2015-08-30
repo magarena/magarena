@@ -1,5 +1,5 @@
 name=Court Homunculus
-image=http://mtgimage.com/card/court%20homunculus.jpg
+image=http://magiccards.info/scans/en/mma/11.jpg
 value=3.467
 rarity=C
 type=Artifact,Creature

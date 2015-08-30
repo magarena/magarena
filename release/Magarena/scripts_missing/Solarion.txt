@@ -1,6 +1,6 @@
 name=Solarion
-image=http://mtgimage.com/card/solarion.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5dn/153.jpg
+value=4.114
 rarity=R
 type=Artifact,Creature
 subtype=Construct
@@ -8,5 +8,5 @@ cost={7}
 pt=0/0
 ability=Sunburst;\
         {T}: Double the number of +1/+1 counters on SN.
-timing=main
-oracle=Sunburst. {T}: Double the number of +1/+1 counters on Solarion.
+timing=artifact
+oracle=Sunburst\n{T}: Double the number of +1/+1 counters on Solarion.

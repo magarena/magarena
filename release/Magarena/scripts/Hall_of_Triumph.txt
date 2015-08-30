@@ -1,0 +1,9 @@
+name=Hall of Triumph
+image=http://magiccards.info/scans/en/jou/162.jpg
+value=3.778
+rarity=R
+type=Legendary,Artifact
+cost={3}
+timing=artifact
+requires_groovy_code
+oracle=As Hall of Triumph enters the battlefield, choose a color.\nCreatures you control of the chosen color get +1/+1.

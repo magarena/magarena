@@ -1,5 +1,5 @@
 name=Dramatic Entrance
-image=http://mtgimage.com/card/dramatic%20entrance.jpg
+image=http://magiccards.info/scans/en/shm/111.jpg
 value=4.067
 rarity=R
 type=Instant

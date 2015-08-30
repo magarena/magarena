@@ -1,0 +1,11 @@
+name=Coffin Puppets
+image=http://magiccards.info/scans/en/pr/60.jpg
+value=2.250
+rarity=R
+type=Creature
+subtype=Zombie
+cost={3}{B}{B}
+pt=3/3
+ability=Sacrifice two lands: Return SN from your graveyard to the battlefield. Activate this ability only during your upkeep and only if you control a Swamp.
+timing=main
+oracle=Sacrifice two lands: Return Coffin Puppets from your graveyard to the battlefield. Activate this ability only during your upkeep and only if you control a Swamp.

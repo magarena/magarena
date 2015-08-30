@@ -1,10 +1,10 @@
 name=Rageform
-image=http://mtgimage.com/card/rageform.jpg
+image=http://magiccards.info/scans/en/frf/112.jpg
 value=2.500
 rarity=U
 type=Enchantment
 cost={2}{R}{R}
 ability=When SN enters the battlefield, it becomes an Aura with enchant creature. Manifest the top card of your library and attach SN to it.;\
         Enchanted creature has double strike.
-timing=main
-oracle=When Rageform enters the battlefield, it becomes an Aura with enchant creature. Manifest the top card of your library and attach Rageform to it. Enchanted creature has double strike.
+timing=enchantment
+oracle=When Rageform enters the battlefield, it becomes an Aura with enchant creature. Manifest the top card of your library and attach Rageform to it.\nEnchanted creature has double strike.

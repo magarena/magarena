@@ -1,5 +1,5 @@
 name=Terramorphic Expanse
-image=http://mtgimage.com/card/terramorphic%20expanse.jpg
+image=http://magiccards.info/scans/en/c14/315.jpg
 value=3.773
 rarity=C
 type=Land

@@ -1,5 +1,5 @@
 name=Emblem of the Warmind
-image=http://mtgimage.com/card/emblem%20of%20the%20warmind.jpg
+image=http://magiccards.info/scans/en/fut/112.jpg
 value=3.208
 rarity=U
 type=Enchantment
@@ -9,4 +9,4 @@ ability=creatures you control have haste
 static=player
 timing=aura
 enchant=pump,creature you control
-oracle=Enchant creature you control. Creatures you control have haste.
+oracle=Enchant creature you control\nCreatures you control have haste.

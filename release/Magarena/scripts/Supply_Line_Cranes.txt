@@ -1,5 +1,5 @@
 name=Supply-Line Cranes
-image=http://mtgimage.com/card/supply-line%20cranes.jpg
+image=http://magiccards.info/scans/en/jou/28.jpg
 value=3.238
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/4
 ability=Flying;\
         When SN enters the battlefield, put a +1/+1 counter on target creature.
 timing=main
-oracle=Flying. When Supply-Line Cranes enters the battlefield, put a +1/+1 counter on target creature.
+oracle=Flying\nWhen Supply-Line Cranes enters the battlefield, put a +1/+1 counter on target creature.

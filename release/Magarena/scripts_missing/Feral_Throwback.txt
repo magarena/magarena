@@ -1,6 +1,6 @@
 name=Feral Throwback
-image=http://mtgimage.com/card/feral%20throwback.jpg
-value=2.500
+image=http://magiccards.info/scans/en/le/126.jpg
+value=3.986
 rarity=R
 type=Creature
 subtype=Beast
@@ -9,4 +9,4 @@ pt=3/3
 ability=Amplify 2;\
         Provoke
 timing=main
-oracle=Amplify 2. Provoke
+oracle=Amplify 2\nProvoke

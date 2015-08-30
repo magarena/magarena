@@ -1,9 +1,9 @@
 name=Vexing Arcanix
-image=http://mtgimage.com/card/vexing%20arcanix.jpg
-value=2.500
+image=http://magiccards.info/scans/en/8e/319.jpg
+value=3.694
 rarity=R
 type=Artifact
 cost={4}
 ability={3}, {T}: Target player names a card, then reveals the top card of his or her library. If it's the named card, the player puts it into his or her hand. Otherwise, the player puts it into his or her graveyard and SN deals 2 damage to him or her.
-timing=main
+timing=artifact
 oracle={3}, {T}: Target player names a card, then reveals the top card of his or her library. If it's the named card, the player puts it into his or her hand. Otherwise, the player puts it into his or her graveyard and Vexing Arcanix deals 2 damage to him or her.

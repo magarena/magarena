@@ -1,9 +1,9 @@
 name=Torpor Orb
-image=http://mtgimage.com/card/torpor%20orb.jpg
-value=2.500
+image=http://magiccards.info/scans/en/nph/162.jpg
+value=4.323
 rarity=R
 type=Artifact
 cost={2}
 ability=Creatures entering the battlefield don't cause abilities to trigger.
-timing=main
+timing=artifact
 oracle=Creatures entering the battlefield don't cause abilities to trigger.

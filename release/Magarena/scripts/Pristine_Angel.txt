@@ -1,5 +1,5 @@
 name=Pristine Angel
-image=http://mtgimage.com/card/pristine%20angel.jpg
+image=http://magiccards.info/scans/en/cns/78.jpg
 value=4.500
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=Flying;\
         As long as SN is untapped, it has protection from artifacts and protection from all colors.;\
         Whenever you cast a spell, you may untap SN.
 timing=main
-oracle=Flying. As long as Pristine Angel is untapped, it has protection from artifacts and from all colors. Whenever you cast a spell, you may untap Pristine Angel.
+oracle=Flying\nAs long as Pristine Angel is untapped, it has protection from artifacts and from all colors.\nWhenever you cast a spell, you may untap Pristine Angel.

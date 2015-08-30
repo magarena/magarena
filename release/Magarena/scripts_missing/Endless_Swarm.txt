@@ -1,9 +1,9 @@
 name=Endless Swarm
-image=http://mtgimage.com/card/endless%20swarm.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sok/129.jpg
+value=3.417
 rarity=R
 type=Sorcery
 cost={5}{G}{G}{G}
 effect=Put a 1/1 green Snake creature token onto the battlefield for each card in your hand.~Epic
 timing=main
-oracle=Put a 1/1 green Snake creature token onto the battlefield for each card in your hand. Epic
+oracle=Put a 1/1 green Snake creature token onto the battlefield for each card in your hand.\nEpic

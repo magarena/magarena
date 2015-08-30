@@ -1,9 +1,9 @@
 name=Aura Blast
-image=http://mtgimage.com/card/aura%20blast.jpg
+image=http://magiccards.info/scans/en/ps/1.jpg
 value=3.274
 rarity=C
 type=Instant
 cost={1}{W}
 effect=Destroy target enchantment.~Draw a card.
 timing=removal
-oracle=Destroy target enchantment. Draw a card.
+oracle=Destroy target enchantment.\nDraw a card.

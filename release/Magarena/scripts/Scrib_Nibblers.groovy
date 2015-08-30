@@ -13,7 +13,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_PLAYER,
+                NEG_TARGET_PLAYER,
                 this,
                 "Exile the top card of target player's\$ library. " +
                 "If it's a land card, PN gains 1 life."
@@ -25,10 +25,9 @@
             event.processTargetPlayer(game, {
                 final MagicCardList top1 = it.getLibrary().getCardsFromTop(1);
                 for (final MagicCard card : top1) {
-                    game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
-                    game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Exile));
+                    game.doAction(new ShiftCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Exile));
                     if (card.hasType(MagicType.Land)) {
-                        game.doAction(new MagicChangeLifeAction(event.getPlayer(),1));
+                        game.doAction(new ChangeLifeAction(event.getPlayer(),1));
                     }
                 }
             });

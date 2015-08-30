@@ -1,5 +1,5 @@
 name=Saprazzan Legate
-image=http://mtgimage.com/card/saprazzan%20legate.jpg
+image=http://magiccards.info/scans/en/mm/100.jpg
 value=4.035
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/3
 ability=Flying
 timing=main
 requires_groovy_code
-oracle=Flying. If an opponent controls a Mountain and you control an Island, you may cast Saprazzan Legate without paying its mana cost.
+oracle=Flying\nIf an opponent controls a Mountain and you control an Island, you may cast Saprazzan Legate without paying its mana cost.

@@ -1,5 +1,5 @@
 name=Panther Warriors
-image=http://mtgimage.com/card/panther%20warriors.jpg
+image=http://magiccards.info/scans/en/6e/243.jpg
 value=3.150
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Cat,Warrior
 cost={4}{G}
 pt=6/3
 timing=main
+oracle=NONE

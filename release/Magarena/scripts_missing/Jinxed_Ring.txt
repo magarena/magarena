@@ -1,10 +1,10 @@
 name=Jinxed Ring
-image=http://mtgimage.com/card/jinxed%20ring.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sh/131.jpg
+value=3.000
 rarity=R
 type=Artifact
 cost={2}
 ability=Whenever a nontoken permanent is put into your graveyard from the battlefield, SN deals 1 damage to you.;\
         Sacrifice a creature: Target opponent gains control of SN.
-timing=main
-oracle=Whenever a nontoken permanent is put into your graveyard from the battlefield, Jinxed Ring deals 1 damage to you. Sacrifice a creature: Target opponent gains control of Jinxed Ring.
+timing=artifact
+oracle=Whenever a nontoken permanent is put into your graveyard from the battlefield, Jinxed Ring deals 1 damage to you.\nSacrifice a creature: Target opponent gains control of Jinxed Ring.

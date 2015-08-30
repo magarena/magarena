@@ -2,7 +2,7 @@ package magic.ui.theme;
 
 import java.awt.image.BufferedImage;
 import javax.swing.ImageIcon;
-import magic.ui.GraphicsUtilities;
+import magic.ui.utility.GraphicsUtils;
 
 public class PlayerAvatar {
 
@@ -18,10 +18,10 @@ public class PlayerAvatar {
     private int face = 0;
 
     public PlayerAvatar(final BufferedImage image) {
-        largeIcon  = new ImageIcon(GraphicsUtilities.scale(image, LARGE_SIZE, LARGE_SIZE));
-        mediumIcon = new ImageIcon(GraphicsUtilities.scale(image, MEDIUM_SIZE, MEDIUM_SIZE));
-        smallIcon  = new ImageIcon(GraphicsUtilities.scale(image, SMALL_SIZE, SMALL_SIZE));
-        turnIcon   = new ImageIcon(GraphicsUtilities.scale(image, CUSTOM_SIZE, CUSTOM_SIZE));
+        largeIcon  = new ImageIcon(GraphicsUtils.scale(image, LARGE_SIZE, LARGE_SIZE));
+        mediumIcon = new ImageIcon(GraphicsUtils.scale(image, MEDIUM_SIZE, MEDIUM_SIZE));
+        smallIcon  = new ImageIcon(GraphicsUtils.scale(image, SMALL_SIZE, SMALL_SIZE));
+        turnIcon   = new ImageIcon(GraphicsUtils.scale(image, CUSTOM_SIZE, CUSTOM_SIZE));
     }
 
     /**

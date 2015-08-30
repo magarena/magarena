@@ -1,11 +1,11 @@
 name=Dying Wail
-image=http://mtgimage.com/card/dying%20wail.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ud/58.jpg
+value=2.900
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{B}
 ability=Enchant creature;\
         When enchanted creature dies, target player discards two cards.
-timing=main
-oracle=Enchant creature. When enchanted creature dies, target player discards two cards.
+timing=aura
+oracle=Enchant creature\nWhen enchanted creature dies, target player discards two cards.

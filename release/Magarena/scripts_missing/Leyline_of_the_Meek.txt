@@ -1,10 +1,10 @@
 name=Leyline of the Meek
-image=http://mtgimage.com/card/leyline%20of%20the%20meek.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gp/10.jpg
+value=3.638
 rarity=R
 type=Enchantment
 cost={2}{W}{W}
 ability=If SN is in your opening hand, you may begin the game with it on the battlefield.;\
         Creature tokens get +1/+1.
-timing=main
-oracle=If Leyline of the Meek is in your opening hand, you may begin the game with it on the battlefield. Creature tokens get +1/+1.
+timing=enchantment
+oracle=If Leyline of the Meek is in your opening hand, you may begin the game with it on the battlefield.\nCreature tokens get +1/+1.

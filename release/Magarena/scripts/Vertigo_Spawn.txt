@@ -1,12 +1,12 @@
 name=Vertigo Spawn
-image=http://mtgimage.com/card/vertigo%20spawn.jpg
+image=http://magiccards.info/scans/en/gp/42.jpg
 value=2.500
 rarity=U
 type=Creature
 subtype=Illusion
 cost={1}{U}
 pt=0/3
-ability=Defender
+ability=Defender.;\
+        Whenever SN blocks a creature, tap that creature.~That creature doesn't untap during its controller's next untap step.
 timing=main
-requires_groovy_code
-oracle=Defender. Whenever Vertigo Spawn blocks a creature, tap that creature. That creature doesn't untap during its controller's next untap step.
+oracle=Defender\nWhenever Vertigo Spawn blocks a creature, tap that creature. That creature doesn't untap during its controller's next untap step.

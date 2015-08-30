@@ -6,7 +6,7 @@
                 new MagicEvent(
                     permanent,
                     otherPermanent.getController(),
-                    new MagicMayChoice(MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER),
+                    new MagicMayChoice(NEG_TARGET_CREATURE_OR_PLAYER),
                     new MagicDamageTargetPicker(otherPermanent.getPower()),
                     otherPermanent,
                     this,
@@ -20,7 +20,7 @@
             if (event.isYes()) {
                 event.processTarget(game, {
                     final MagicPermanent source = event.getRefPermanent();
-                    game.doAction(new MagicDealDamageAction(source, it, source.getPower()));
+                    game.doAction(new DealDamageAction(source, it, source.getPower()));
                 });
             }
         }

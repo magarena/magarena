@@ -1,5 +1,5 @@
 name=Fledgling Mawcor
-image=http://mtgimage.com/card/fledgling%20mawcor.jpg
+image=http://magiccards.info/scans/en/jvc/10.jpg
 value=3.152
 rarity=U
 type=Creature
@@ -10,4 +10,4 @@ ability=Flying;\
         {T}: SN deals 1 damage to target creature or player.;\
         Morph {U}{U}
 timing=main
-oracle=Flying. {T}: Fledgling Mawcor deals 1 damage to target creature or player. Morph {U}{U}
+oracle=Flying\n{T}: Fledgling Mawcor deals 1 damage to target creature or player.\nMorph {U}{U}

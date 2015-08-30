@@ -7,9 +7,9 @@
         @Override
         public Iterable getCostEvent(final MagicPermanent source) {
             return [
-            new MagicPayManaCostEvent(source,"{X}{U}{R}"),
-            new MagicTapEvent(source)
-         ];
+                new MagicPayManaCostEvent(source,"{X}{U}{R}"),
+                new MagicTapEvent(source)
+            ];
         }
 
         @Override
@@ -17,7 +17,7 @@
             final int amount = payedCost.getX();
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_CREATURE,
+                TARGET_CREATURE,
                 new MagicDamageTargetPicker(amount),
                 amount,
                 this,
@@ -29,10 +29,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final int amount = event.getRefInt();
-                game.doAction(new MagicDealDamageAction(
-                    new MagicDamage(event.getSource(),it,amount)
-                ));
-                game.doAction(new MagicDrawAction(it.getController(),amount));
+                game.doAction(new DealDamageAction(event.getSource(),it,amount));
+                game.doAction(new DrawAction(it.getController(),amount));
             });
         }
     }

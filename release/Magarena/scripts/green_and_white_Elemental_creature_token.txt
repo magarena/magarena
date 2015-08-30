@@ -5,4 +5,6 @@ value=3
 type=Creature
 subtype=Elemental
 color=gw
+pt=*/*
 ability=SN's power and toughness are each equal to the number of creatures you control.
+oracle=This creature's power and toughness are each equal to the number of creatures you control.

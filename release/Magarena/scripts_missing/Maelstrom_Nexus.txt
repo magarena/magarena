@@ -1,9 +1,9 @@
 name=Maelstrom Nexus
-image=http://mtgimage.com/card/maelstrom%20nexus.jpg
-value=2.500
+image=http://magiccards.info/scans/en/arb/130.jpg
+value=3.654
 rarity=M
 type=Enchantment
 cost={W}{U}{B}{R}{G}
 ability=The first spell you cast each turn has cascade.
-timing=main
+timing=enchantment
 oracle=The first spell you cast each turn has cascade.

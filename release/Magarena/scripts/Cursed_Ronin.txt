@@ -1,5 +1,5 @@
 name=Cursed Ronin
-image=http://mtgimage.com/card/cursed%20ronin.jpg
+image=http://magiccards.info/scans/en/chk/107.jpg
 value=2.750
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={3}{B}
 pt=1/1
 ability=bushido 1;{B}: SN gets +1/+1 until end of turn.
 timing=main
-oracle=Bushido 1. {B}: Cursed Ronin gets +1/+1 until end of turn.
+oracle=Bushido 1\n{B}: Cursed Ronin gets +1/+1 until end of turn.

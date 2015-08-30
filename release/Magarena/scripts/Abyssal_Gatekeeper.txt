@@ -1,5 +1,5 @@
 name=Abyssal Gatekeeper
-image=http://mtgimage.com/card/abyssal%20gatekeeper.jpg
+image=http://magiccards.info/scans/en/dvd/31.jpg
 value=3.938
 rarity=C
 type=Creature

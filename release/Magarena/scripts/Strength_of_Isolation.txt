@@ -1,5 +1,5 @@
 name=Strength of Isolation
-image=http://mtgimage.com/card/strength%20of%20isolation.jpg
+image=http://magiccards.info/scans/en/tr/17.jpg
 value=3.234
 rarity=U
 type=Enchantment
@@ -9,4 +9,4 @@ ability=Enchanted creature gets +1/+2 and has protection from black.;\
         Madness {W}
 timing=main
 enchant=pump,pos creature
-oracle=Enchant creature. Enchanted creature gets +1/+2 and has protection from black. Madness {W}
+oracle=Enchant creature\nEnchanted creature gets +1/+2 and has protection from black.\nMadness {W}

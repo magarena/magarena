@@ -1,11 +1,11 @@
 name=Wheel of Sun and Moon
-image=http://mtgimage.com/card/wheel%20of%20sun%20and%20moon.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/243.jpg
+value=4.510
 rarity=R
 type=Enchantment
 subtype=Aura
 cost={G/W}{G/W}
 ability=Enchant player;\
         If a card would be put into enchanted player's graveyard from anywhere, instead that card is revealed and put on the bottom of that player's library.
-timing=main
-oracle=Enchant player. If a card would be put into enchanted player's graveyard from anywhere, instead that card is revealed and put on the bottom of that player's library.
+timing=aura
+oracle=Enchant player\nIf a card would be put into enchanted player's graveyard from anywhere, instead that card is revealed and put on the bottom of that player's library.

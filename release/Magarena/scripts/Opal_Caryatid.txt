@@ -1,9 +1,9 @@
 name=Opal Caryatid
-image=http://mtgimage.com/card/opal%20caryatid.jpg
+image=http://magiccards.info/scans/en/us/24.jpg
 value=3.762
 rarity=C
 type=Enchantment
 cost={W}
+ability=When an opponent casts a creature spell, if SN is an enchantment, SN becomes a 2/2 Soldier creature.
 timing=main
-requires_groovy_code
 oracle=When an opponent casts a creature spell, if Opal Caryatid is an enchantment, Opal Caryatid becomes a 2/2 Soldier creature.

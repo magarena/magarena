@@ -1,6 +1,6 @@
 name=Iroas, God of Victory
-image=http://mtgimage.com/card/iroas%2C%20god%20of%20victory.jpg
-value=2.500
+image=http://magiccards.info/scans/en/jou/150.jpg
+value=3.758
 rarity=M
 type=Legendary,Enchantment,Creature
 subtype=God
@@ -10,5 +10,5 @@ ability=Indestructible;\
         As long as your devotion to red and white is less than seven, Iroas isn't a creature.;\
         Creatures you control can't be blocked except by two or more creatures.;\
         Prevent all damage that would be dealt to attacking creatures you control.
-timing=main
-oracle=Indestructible. As long as your devotion to red and white is less than seven, Iroas isn't a creature. Creatures you control can't be blocked except by two or more creatures. Prevent all damage that would be dealt to attacking creatures you control.
+timing=enchantment
+oracle=Indestructible\nAs long as your devotion to red and white is less than seven, Iroas isn't a creature.\nCreatures you control can't be blocked except by two or more creatures.\nPrevent all damage that would be dealt to attacking creatures you control.

@@ -1,11 +1,11 @@
 name=Knucklebone Witch
-image=http://mtgimage.com/card/knucklebone%20witch.jpg
+image=http://magiccards.info/scans/en/lw/120.jpg
 value=3.708
 rarity=R
 type=Creature
 subtype=Goblin,Shaman
 cost={B}
 pt=1/1
+ability=Whenever a Goblin you control is put into a graveyard from the battlefield, you may put a +1/+1 counter on SN.
 timing=fmain
-requires_groovy_code
 oracle=Whenever a Goblin you control is put into a graveyard from the battlefield, you may put a +1/+1 counter on Knucklebone Witch.

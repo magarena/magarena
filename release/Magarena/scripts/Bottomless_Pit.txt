@@ -1,5 +1,5 @@
 name=Bottomless Pit
-image=http://mtgimage.com/card/bottomless%20pit.jpg
+image=http://magiccards.info/scans/en/sh/1.jpg
 value=3.732
 rarity=U
 type=Enchantment

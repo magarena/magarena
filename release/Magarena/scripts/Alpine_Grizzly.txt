@@ -1,9 +1,10 @@
 name=Alpine Grizzly
-image=http://mtgimage.com/card/alpine%20grizzly.jpg
-value=2.800
+image=http://magiccards.info/scans/en/ktk/127.jpg
+value=3.083
 rarity=C
 type=Creature
 subtype=Bear
 cost={2}{G}
 pt=4/2
 timing=main
+oracle=NONE

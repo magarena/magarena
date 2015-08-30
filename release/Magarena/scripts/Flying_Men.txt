@@ -1,5 +1,5 @@
 name=Flying Men
-image=http://mtgimage.com/card/flying%20men.jpg
+image=http://magiccards.info/scans/en/tsts/20.jpg
 value=3.949
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Moonlight Bargain
-image=http://mtgimage.com/card/moonlight%20bargain.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rav/95.jpg
+value=2.860
 rarity=R
 type=Instant
 cost={3}{B}{B}

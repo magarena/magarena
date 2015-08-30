@@ -1,5 +1,5 @@
 name=Wirewood Savage
-image=http://mtgimage.com/card/wirewood%20savage.jpg
+image=http://magiccards.info/scans/en/gvl/6.jpg
 value=4.083
 rarity=C
 type=Creature

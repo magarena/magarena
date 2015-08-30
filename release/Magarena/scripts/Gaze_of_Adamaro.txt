@@ -1,0 +1,10 @@
+name=Gaze of Adamaro
+image=http://magiccards.info/scans/en/sok/98.jpg
+value=2.686
+rarity=U
+type=Instant
+subtype=Arcane
+cost={2}{R}{R}
+timing=removal
+requires_groovy_code=Sudden Impact
+oracle=Gaze of Adamaro deals damage to target player equal to the number of cards in that player's hand.

@@ -1,5 +1,5 @@
 name=Scorchwalker
-image=http://mtgimage.com/card/scorchwalker.jpg
+image=http://magiccards.info/scans/en/gtc/104.jpg
 value=3.080
 rarity=C
 type=Creature

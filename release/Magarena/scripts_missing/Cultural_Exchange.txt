@@ -1,6 +1,6 @@
 name=Cultural Exchange
-image=http://mtgimage.com/card/cultural%20exchange.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/79.jpg
+value=3.915
 rarity=R
 type=Sorcery
 cost={4}{U}{U}

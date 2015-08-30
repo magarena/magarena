@@ -1,11 +1,11 @@
 name=Pattern of Rebirth
-image=http://mtgimage.com/card/pattern%20of%20rebirth.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ud/115.jpg
+value=4.305
 rarity=R
 type=Enchantment
 subtype=Aura
 cost={3}{G}
 ability=Enchant creature;\
         When enchanted creature dies, that creature's controller may search his or her library for a creature card and put that card onto the battlefield. If that player does, he or she shuffles his or her library.
-timing=main
-oracle=Enchant creature. When enchanted creature dies, that creature's controller may search his or her library for a creature card and put that card onto the battlefield. If that player does, he or she shuffles his or her library.
+timing=aura
+oracle=Enchant creature\nWhen enchanted creature dies, that creature's controller may search his or her library for a creature card and put that card onto the battlefield. If that player does, he or she shuffles his or her library.

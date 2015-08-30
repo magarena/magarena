@@ -1,7 +1,7 @@
 name=Singing Tree
-image=http://mtgimage.com/card/singing%20tree.jpg
-value=2.500
-rarity=R
+image=http://magiccards.info/scans/en/med/130.jpg
+value=4.036
+rarity=U
 type=Creature
 subtype=Plant
 cost={3}{G}

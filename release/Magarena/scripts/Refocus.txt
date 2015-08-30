@@ -1,9 +1,9 @@
 name=Refocus
-image=http://mtgimage.com/card/refocus.jpg
+image=http://magiccards.info/scans/en/frf/47.jpg
 value=2.500
 rarity=C
 type=Instant
 cost={1}{U}
 effect=Untap target creature.~Draw a card.
 timing=tapping
-oracle=Untap target creature. Draw a card.
+oracle=Untap target creature.\nDraw a card.

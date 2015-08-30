@@ -1,9 +1,10 @@
 name=Guardians' Pledge
-image=http://mtgimage.com/card/guardians%27%20pledge.jpg
+image=http://magiccards.info/scans/en/m12/22.jpg
 value=3.107
 rarity=C
 type=Instant
 cost={1}{W}{W}
+ability=Cast SN with AI only if you control a white creature.
 effect=White creatures you control get +2/+2 until end of turn.
 timing=pump
 oracle=White creatures you control get +2/+2 until end of turn.

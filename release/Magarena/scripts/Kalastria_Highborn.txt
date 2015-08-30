@@ -1,5 +1,5 @@
 name=Kalastria Highborn
-image=http://mtgimage.com/card/kalastria%20highborn.jpg
+image=http://magiccards.info/scans/en/wwk/59.jpg
 value=4.048
 rarity=R
 type=Creature

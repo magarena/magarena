@@ -1,11 +1,11 @@
 name=Infinite Authority
-image=http://mtgimage.com/card/infinite%20authority.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lg/191.jpg
+value=2.108
 rarity=R
 type=Enchantment
 subtype=Aura
 cost={W}{W}{W}
 ability=Enchant creature;\
         Whenever enchanted creature blocks or becomes blocked by a creature with toughness 3 or less, destroy the other creature at end of combat. At the beginning of the next end step, if that creature was destroyed this way, put a +1/+1 counter on the first creature.
-timing=main
-oracle=Enchant creature. Whenever enchanted creature blocks or becomes blocked by a creature with toughness 3 or less, destroy the other creature at end of combat. At the beginning of the next end step, if that creature was destroyed this way, put a +1/+1 counter on the first creature.
+timing=aura
+oracle=Enchant creature\nWhenever enchanted creature blocks or becomes blocked by a creature with toughness 3 or less, destroy the other creature at end of combat. At the beginning of the next end step, if that creature was destroyed this way, put a +1/+1 counter on the first creature.

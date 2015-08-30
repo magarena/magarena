@@ -1,5 +1,5 @@
 name=Sigil Blessing
-image=http://mtgimage.com/card/sigil%20blessing.jpg
+image=http://magiccards.info/scans/en/ddg/30.jpg
 value=2.894
 rarity=C
 type=Instant

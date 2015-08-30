@@ -11,16 +11,12 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
-            game.doAction(new MagicRemoveCardAction(permanent.getCard(),MagicLocationType.Graveyard));
-            game.doAction(new MagicMoveCardAction(permanent.getCard(),MagicLocationType.Graveyard,MagicLocationType.Exile));
+            game.doAction(new ShiftCardAction(permanent.getCard(),MagicLocationType.Graveyard,MagicLocationType.Exile));
+
             final MagicPlayer player = event.getPlayer();
-            final List<MagicCard> targets = game.filterCards(player,MagicTargetFilterFactory.CREATURE_CARD_FROM_GRAVEYARD);
-            final MagicRandom rng = new MagicRandom(player.getGraveyard().getStateId());
-            int actualAmount = Math.min(targets.size(),2);
-            for (;actualAmount>0;actualAmount--) {
-                final int index = rng.nextInt(targets.size());
-                final MagicCard card = targets.get(index);
-                game.doAction(new MagicReanimateAction(
+            final MagicCardList cards = new MagicCardList(CREATURE_CARD_FROM_GRAVEYARD.filter(event));
+            for (final MagicCard card : cards.getRandomCards(2)) {
+                game.doAction(new ReanimateAction(
                     card,
                     player
                 ));

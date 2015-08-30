@@ -1,9 +1,9 @@
 name=Phyrexian Tower
-image=http://mtgimage.com/card/phyrexian%20tower.jpg
-value=2.500
+image=http://magiccards.info/scans/en/us/322.jpg
+value=4.198
 rarity=R
 type=Legendary,Land
 ability={T}: Add {1} to your mana pool.;\
         {T}, Sacrifice a creature: Add {B}{B} to your mana pool.
-timing=main
-oracle={T}: Add {1} to your mana pool. {T}, Sacrifice a creature: Add {B}{B} to your mana pool.
+timing=land
+oracle={T}: Add {1} to your mana pool.\n{T}, Sacrifice a creature: Add {B}{B} to your mana pool.

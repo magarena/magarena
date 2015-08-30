@@ -1,5 +1,5 @@
 name=Mycosynth Wellspring
-image=http://mtgimage.com/card/mycosynth%20wellspring.jpg
+image=http://magiccards.info/scans/en/c14/253.jpg
 value=3.468
 rarity=C
 type=Artifact

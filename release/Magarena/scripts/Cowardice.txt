@@ -1,9 +1,9 @@
 name=Cowardice
-image=http://mtgimage.com/card/cowardice.jpg
+image=http://magiccards.info/scans/en/9e/70.jpg
 value=3.645
 rarity=R
 type=Enchantment
 cost={3}{U}{U}
+ability=Whenever a creature becomes the target of a spell or ability, return that creature to its owner's hand.
 timing=main
-requires_groovy_code
 oracle=Whenever a creature becomes the target of a spell or ability, return that creature to its owner's hand.

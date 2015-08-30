@@ -1,11 +1,11 @@
 name=Soul Echo
-image=http://mtgimage.com/card/soul%20echo.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/244.jpg
+value=2.857
 rarity=R
 type=Enchantment
 cost={X}{W}{W}
 ability=SN enters the battlefield with X echo counters on it.;\
         You don't lose the game for having 0 or less life.;\
         At the beginning of your upkeep, sacrifice SN if there are no echo counters on it. Otherwise, target opponent may choose that for each 1 damage that would be dealt to you until your next upkeep, you remove an echo counter from SN instead.
-timing=main
-oracle=Soul Echo enters the battlefield with X echo counters on it. You don't lose the game for having 0 or less life. At the beginning of your upkeep, sacrifice Soul Echo if there are no echo counters on it. Otherwise, target opponent may choose that for each 1 damage that would be dealt to you until your next upkeep, you remove an echo counter from Soul Echo instead.
+timing=enchantment
+oracle=Soul Echo enters the battlefield with X echo counters on it.\nYou don't lose the game for having 0 or less life.\nAt the beginning of your upkeep, sacrifice Soul Echo if there are no echo counters on it. Otherwise, target opponent may choose that for each 1 damage that would be dealt to you until your next upkeep, you remove an echo counter from Soul Echo instead.

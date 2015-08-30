@@ -1,5 +1,5 @@
 name=Bouncing Beebles
-image=http://mtgimage.com/card/bouncing%20beebles.jpg
+image=http://magiccards.info/scans/en/ul/28.jpg
 value=3.756
 rarity=C
 type=Creature

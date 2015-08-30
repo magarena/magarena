@@ -1,6 +1,6 @@
 name=Sulfurous Blast
-image=http://mtgimage.com/card/sulfurous%20blast.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cmd/137.jpg
+value=3.362
 rarity=U
 type=Instant
 cost={2}{R}{R}

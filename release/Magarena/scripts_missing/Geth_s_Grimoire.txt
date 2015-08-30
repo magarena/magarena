@@ -1,9 +1,0 @@
-name=Geth's Grimoire
-image=http://mtgimage.com/card/geth%27s%20grimoire.jpg
-value=2.500
-rarity=U
-type=Artifact
-cost={4}
-ability=Whenever an opponent discards a card, you may draw a card.
-timing=main
-oracle=Whenever an opponent discards a card, you may draw a card.

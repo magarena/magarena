@@ -1,5 +1,5 @@
 name=Bloodfray Giant
-image=http://mtgimage.com/card/bloodfray%20giant.jpg
+image=http://magiccards.info/scans/en/rtr/89.jpg
 value=3.527
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{R}{R}
 pt=4/3
 ability=trample;unleash
 timing=main
-oracle=Trample. Unleash
+oracle=Trample\nUnleash

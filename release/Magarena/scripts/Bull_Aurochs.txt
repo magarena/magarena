@@ -1,12 +1,12 @@
 name=Bull Aurochs
-image=http://mtgimage.com/card/bull%20aurochs.jpg
+image=http://magiccards.info/scans/en/cs/107.jpg
 value=3.449
 rarity=C
 type=Creature
 subtype=Aurochs
 cost={1}{G}
 pt=2/1
-ability=trample
+ability=trample;\
+        Whenever SN attacks, SN gets +1/+0 until end of turn for each other attacking Aurochs.
 timing=main
-requires_groovy_code=Aurochs
-oracle=Trample. Whenever Bull Aurochs attacks, it gets +1/+0 until end of turn for each other attacking Aurochs.
+oracle=Trample\nWhenever Bull Aurochs attacks, it gets +1/+0 until end of turn for each other attacking Aurochs.

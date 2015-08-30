@@ -5,7 +5,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicSource;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicTurnFaceUpAction;
+import magic.model.action.TurnFaceUpAction;
 import magic.model.condition.MagicCondition;
 import java.util.List;
 import java.util.LinkedList;
@@ -15,9 +15,13 @@ public class MagicMorphActivation extends MagicPermanentActivation {
     private static final MagicActivationHints HINT = new MagicActivationHints(MagicTiming.Pump);
     private static final MagicCondition COND[] = new MagicCondition[]{ MagicCondition.FACE_DOWN_PERMANENT_CONDITION };
     private final List<MagicMatchedCostEvent> matchedCostEvents;
-
+    
     public MagicMorphActivation(final List<MagicMatchedCostEvent> aMatchedCostEvents) {
-        super(COND, HINT, "Morph");
+        this(aMatchedCostEvents, "Morph");
+    }
+
+    protected MagicMorphActivation(final List<MagicMatchedCostEvent> aMatchedCostEvents, final String name) {
+        super(COND, HINT, name);
         matchedCostEvents = aMatchedCostEvents;
     }
     
@@ -41,7 +45,7 @@ public class MagicMorphActivation extends MagicPermanentActivation {
 
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(new MagicTurnFaceUpAction(event.getPermanent()));
+        game.doAction(new TurnFaceUpAction(event.getPermanent()));
         game.logAppendMessage(event.getPlayer(), event.getPlayer() + " turns " + event.getPermanent() + " face up.");
     }
     

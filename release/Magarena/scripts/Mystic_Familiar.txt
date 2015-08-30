@@ -1,5 +1,5 @@
 name=Mystic Familiar
-image=http://mtgimage.com/card/mystic%20familiar.jpg
+image=http://magiccards.info/scans/en/tr/11.jpg
 value=3.438
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/2
 ability=flying;\
         As long as seven or more cards are in your graveyard, SN gets +1/+1 and has protection from black.
 timing=main
-oracle=Flying. Threshold — As long as seven or more cards are in your graveyard, Mystic Familiar gets +1/+1 and has protection from black.
+oracle=Flying\nThreshold — As long as seven or more cards are in your graveyard, Mystic Familiar gets +1/+1 and has protection from black.

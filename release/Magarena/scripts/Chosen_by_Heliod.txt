@@ -1,5 +1,5 @@
 name=Chosen by Heliod
-image=http://mtgimage.com/card/chosen%20by%20heliod.jpg
+image=http://magiccards.info/scans/en/ths/5.jpg
 value=3.028
 rarity=C
 type=Enchantment
@@ -9,4 +9,4 @@ ability=When SN enters the battlefield, draw a card.;\
         Enchanted creature gets +0/+2.
 timing=aura
 enchant=pump,pos creature
-oracle=Enchant creature. When Chosen by Heliod enters the battlefield, draw a card. Enchanted creature gets +0/+2.
+oracle=Enchant creature\nWhen Chosen by Heliod enters the battlefield, draw a card.\nEnchanted creature gets +0/+2.

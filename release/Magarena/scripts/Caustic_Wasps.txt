@@ -1,5 +1,5 @@
 name=Caustic Wasps
-image=http://mtgimage.com/card/caustic%20wasps.jpg
+image=http://magiccards.info/scans/en/mm/234.jpg
 value=3.231
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying
 timing=main
 requires_groovy_code
-oracle=Flying. Whenever Caustic Wasps deals combat damage to a player, you may destroy target artifact that player controls.
+oracle=Flying\nWhenever Caustic Wasps deals combat damage to a player, you may destroy target artifact that player controls.

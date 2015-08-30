@@ -1,5 +1,5 @@
 name=Femeref Knight
-image=http://mtgimage.com/card/femeref%20knight.jpg
+image=http://magiccards.info/scans/en/mr/222.jpg
 value=3.259
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{W}
 pt=2/2
 ability=flanking;{W}: SN gains vigilance until end of turn.
 timing=main
-oracle=Flanking. {W}: Femeref Knight gains vigilance until end of turn.
+oracle=Flanking\n{W}: Femeref Knight gains vigilance until end of turn.

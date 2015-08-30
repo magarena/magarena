@@ -1,6 +1,6 @@
 name=Enslaved Horror
-image=http://mtgimage.com/card/enslaved%20horror.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/134.jpg
+value=1.893
 rarity=U
 type=Creature
 subtype=Horror

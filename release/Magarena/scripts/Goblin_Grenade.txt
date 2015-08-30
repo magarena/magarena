@@ -1,5 +1,5 @@
 name=Goblin Grenade
-image=http://mtgimage.com/card/goblin%20grenade.jpg
+image=http://magiccards.info/scans/en/m12/140.jpg
 value=4.326
 rarity=U
 type=Sorcery
@@ -8,4 +8,4 @@ ability=As an additional cost to cast SN, sacrifice a Goblin.
 effect=SN deals 5 damage to target creature or player.
 removal=5
 timing=removal
-oracle=As an additional cost to cast Goblin Grenade, sacrifice a Goblin. Goblin Grenade deals 5 damage to target creature or player.
+oracle=As an additional cost to cast Goblin Grenade, sacrifice a Goblin.\nGoblin Grenade deals 5 damage to target creature or player.

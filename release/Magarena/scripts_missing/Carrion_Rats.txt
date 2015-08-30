@@ -1,6 +1,6 @@
 name=Carrion Rats
-image=http://mtgimage.com/card/carrion%20rats.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tr/54.jpg
+value=2.839
 rarity=C
 type=Creature
 subtype=Rat

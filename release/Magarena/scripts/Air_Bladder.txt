@@ -1,6 +1,5 @@
 name=Air Bladder
-image=http://mtgimage.com/card/air%20bladder.jpg
-ignore=12503
+image=http://magiccards.info/scans/en/ne/28.jpg
 value=1.432
 rarity=C
 type=Enchantment
@@ -10,4 +9,4 @@ ability=Enchanted creature has flying.;\
         Enchanted creature can block only creatures with flying.
 timing=aura
 enchant=flying,creature
-oracle=Enchant creature. Enchanted creature has flying. Enchanted creature can block only creatures with flying.
+oracle=Enchant creature\nEnchanted creature has flying.\nEnchanted creature can block only creatures with flying.

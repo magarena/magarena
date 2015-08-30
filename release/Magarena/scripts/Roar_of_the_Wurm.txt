@@ -1,5 +1,5 @@
 name=Roar of the Wurm
-image=http://mtgimage.com/card/roar%20of%20the%20wurm.jpg
+image=http://magiccards.info/scans/en/vma/228.jpg
 value=4.000
 rarity=U
 type=Sorcery
@@ -7,4 +7,4 @@ cost={6}{G}
 effect=Put a 6/6 green Wurm creature token onto the battlefield.
 ability=Flashback {3}{G}
 timing=main
-oracle=Put a 6/6 green Wurm creature token onto the battlefield. Flashback {3}{G}
+oracle=Put a 6/6 green Wurm creature token onto the battlefield.\nFlashback {3}{G}

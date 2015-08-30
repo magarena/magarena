@@ -1,0 +1,13 @@
+name=Goblin Mutant
+image=http://magiccards.info/scans/en/med/96.jpg
+value=2.900
+rarity=U
+type=Creature
+subtype=Goblin,Mutant
+cost={2}{R}{R}
+pt=5/3
+ability=Trample;\
+SN can't block creatures with power 3 or greater.
+timing=main
+requires_groovy_code
+oracle=Trample\nGoblin Mutant can't attack if defending player controls an untapped creature with power 3 or greater.\nGoblin Mutant can't block creatures with power 3 or greater.

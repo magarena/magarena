@@ -1,5 +1,5 @@
 name=Indrik Stomphowler
-image=http://mtgimage.com/card/indrik%20stomphowler.jpg
+image=http://magiccards.info/scans/en/gvl/10.jpg
 value=3.930
 rarity=U
 type=Creature

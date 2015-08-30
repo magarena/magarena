@@ -1,5 +1,5 @@
 name=Watcher Sliver
-image=http://mtgimage.com/card/watcher%20sliver.jpg
+image=http://magiccards.info/scans/en/ts/45.jpg
 value=3.111
 rarity=C
 type=Creature

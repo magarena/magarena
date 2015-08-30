@@ -1,9 +1,9 @@
 name=Logic Knot
-image=http://mtgimage.com/card/logic%20knot.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mma/51.jpg
+value=3.794
 rarity=C
 type=Instant
 cost={X}{U}{U}
 effect=Delve~Counter target spell unless its controller pays {X}.
 timing=removal
-oracle=Delve. Counter target spell unless its controller pays {X}.
+oracle=Delve\nCounter target spell unless its controller pays {X}.

@@ -1,6 +1,6 @@
 name=Talas Explorer
-image=http://mtgimage.com/card/talas%20explorer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/po2/49.jpg
+value=2.804
 rarity=C
 type=Creature
 subtype=Human,Pirate,Scout
@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying;\
         When SN enters the battlefield, look at target opponent's hand.
 timing=main
-oracle=Flying. When Talas Explorer enters the battlefield, look at target opponent's hand.
+oracle=Flying\nWhen Talas Explorer enters the battlefield, look at target opponent's hand.

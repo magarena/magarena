@@ -1,6 +1,6 @@
 name=Killing Wave
-image=http://mtgimage.com/card/killing%20wave.jpg
-value=2.500
+image=http://magiccards.info/scans/en/avr/111.jpg
+value=3.492
 rarity=R
 type=Sorcery
 cost={X}{B}

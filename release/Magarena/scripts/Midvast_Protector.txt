@@ -1,0 +1,11 @@
+name=Midvast Protector
+image=http://magiccards.info/scans/en/avr/28.jpg
+value=2.060
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={3}{W}
+pt=2/3
+ability=When SN enters the battlefield, target creature you control gains protection from the color of your choice until end of turn.
+timing=main
+oracle=When Midvast Protector enters the battlefield, target creature you control gains protection from the color of your choice until end of turn.

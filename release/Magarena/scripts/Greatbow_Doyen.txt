@@ -1,5 +1,5 @@
 name=Greatbow Doyen
-image=http://mtgimage.com/card/greatbow%20doyen.jpg
+image=http://magiccards.info/scans/en/mt/125.jpg
 value=3.695
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=other archer creatures you control get +1/+1
 static=player
 timing=main
 requires_groovy_code
-oracle=Other Archer creatures you control get +1/+1. Whenever an Archer you control deals damage to a creature, that Archer deals that much damage to that creature's controller.
+oracle=Other Archer creatures you control get +1/+1.\nWhenever an Archer you control deals damage to a creature, that Archer deals that much damage to that creature's controller.

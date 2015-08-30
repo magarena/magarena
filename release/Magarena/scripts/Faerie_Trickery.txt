@@ -1,10 +1,10 @@
 name=Faerie Trickery
-image=http://mtgimage.com/card/faerie%20trickery.jpg
+image=http://magiccards.info/scans/en/lw/62.jpg
 value=3.842
 rarity=C
 type=Tribal,Instant
 subtype=Faerie
 cost={1}{U}{U}
+effect=Counter target non-Faerie spell. If that spell is countered this way, exile it instead of putting it into its owner's graveyard.
 timing=counter
-requires_groovy_code
 oracle=Counter target non-Faerie spell. If that spell is countered this way, exile it instead of putting it into its owner's graveyard.

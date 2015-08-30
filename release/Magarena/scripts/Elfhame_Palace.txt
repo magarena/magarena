@@ -1,5 +1,5 @@
 name=Elfhame Palace
-image=http://mtgimage.com/card/elfhame%20palace.jpg
+image=http://magiccards.info/scans/en/pvc/64.jpg
 value=3.315
 rarity=U
 type=Land
@@ -7,4 +7,4 @@ mana=w3g3
 ability={T}: Add {G} or {W} to your mana pool.;\
         SN enters the battlefield tapped.
 timing=tapland
-oracle=Elfhame Palace enters the battlefield tapped. {T}: Add {G} or {W} to your mana pool.
+oracle=Elfhame Palace enters the battlefield tapped.\n{T}: Add {G} or {W} to your mana pool.

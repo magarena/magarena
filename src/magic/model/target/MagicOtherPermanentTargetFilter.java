@@ -1,6 +1,6 @@
 package magic.model.target;
 
-import magic.model.MagicGame;
+import magic.model.MagicSource;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 
@@ -9,16 +9,24 @@ public class MagicOtherPermanentTargetFilter extends MagicPermanentFilterImpl {
 
     private final MagicTargetFilter<MagicPermanent> targetFilter;
     private final long id;
+    
+    public MagicOtherPermanentTargetFilter(final MagicTargetFilter<MagicPermanent> aTargetFilter) {
+        targetFilter = aTargetFilter;
+        id = 0;
+    }
 
-    public MagicOtherPermanentTargetFilter(final MagicTargetFilter<MagicPermanent> targetFilter,final MagicPermanent invalidPermanent) {
-        this.targetFilter=targetFilter;
-        this.id=invalidPermanent.getId();
+    public MagicOtherPermanentTargetFilter(final MagicTargetFilter<MagicPermanent> aTargetFilter,final MagicPermanent invalidPermanent) {
+        targetFilter = aTargetFilter;
+        id = invalidPermanent.getId();
     }
+
     @Override
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
-        return targetFilter.accept(game,player,target) &&
-               target.getId() != id;
+    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        return targetFilter.accept(source,player,target) &&
+               ((id != 0 && id != target.getId()) ||
+                (id == 0 && source != target));
     }
+
     @Override
     public boolean acceptType(final MagicTargetType targetType) {
         return targetFilter.acceptType(targetType);

@@ -8,7 +8,7 @@
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source, "{U}"),
-                new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_CREATURE)
+                new MagicSacrificePermanentEvent(source,SACRIFICE_CREATURE)
             ];
         }
 

@@ -1,12 +1,12 @@
 name=Xathrid Demon
-image=http://mtgimage.com/card/xathrid%20demon.jpg
+image=http://magiccards.info/scans/en/c14/170.jpg
 value=2.500
 rarity=M
 type=Creature
 subtype=Demon
 cost={3}{B}{B}{B}
 pt=7/7
-ability=Flying; trample;\
+ability=Flying, trample;\
         At the beginning of your upkeep, sacrifice a creature other than SN, then each opponent loses life equal to the sacrificed creature's power. If you can't sacrifice a creature, tap SN and you lose 7 life.
 timing=main
-oracle=Flying, trample. At the beginning of your upkeep, sacrifice a creature other than Xathrid Demon, then each opponent loses life equal to the sacrificed creature's power. If you can't sacrifice a creature, tap Xathrid Demon and you lose 7 life.
+oracle=Flying, trample\nAt the beginning of your upkeep, sacrifice a creature other than Xathrid Demon, then each opponent loses life equal to the sacrificed creature's power. If you can't sacrifice a creature, tap Xathrid Demon and you lose 7 life.

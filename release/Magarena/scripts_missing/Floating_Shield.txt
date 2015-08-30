@@ -1,6 +1,6 @@
 name=Floating Shield
-image=http://mtgimage.com/card/floating%20shield.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tr/5.jpg
+value=2.618
 rarity=C
 type=Enchantment
 subtype=Aura
@@ -9,5 +9,5 @@ ability=Enchant creature;\
         As SN enters the battlefield, choose a color.;\
         Enchanted creature has protection from the chosen color. This effect doesn't remove SN.;\
         Sacrifice SN: Target creature gains protection from the chosen color until end of turn.
-timing=main
-oracle=Enchant creature. As Floating Shield enters the battlefield, choose a color. Enchanted creature has protection from the chosen color. This effect doesn't remove Floating Shield. Sacrifice Floating Shield: Target creature gains protection from the chosen color until end of turn.
+timing=aura
+oracle=Enchant creature\nAs Floating Shield enters the battlefield, choose a color.\nEnchanted creature has protection from the chosen color. This effect doesn't remove Floating Shield.\nSacrifice Floating Shield: Target creature gains protection from the chosen color until end of turn.

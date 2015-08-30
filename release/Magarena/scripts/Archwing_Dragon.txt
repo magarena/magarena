@@ -1,13 +1,12 @@
 name=Archwing Dragon
-image=http://mtgimage.com/card/archwing%20dragon.jpg
+image=http://magiccards.info/scans/en/avr/126.jpg
 value=3.832
 rarity=R
 type=Creature
 subtype=Dragon
 cost={2}{R}{R}
 pt=4/4
-ability=flying;\
-        haste;\
+ability=Flying; haste;\
         At the beginning of the end step, return SN to its owner's hand.
 timing=fmain
-oracle=Flying, haste. At the beginning of the end step, return Archwing Dragon to its owner's hand.
+oracle=Flying, haste\nAt the beginning of the end step, return Archwing Dragon to its owner's hand.

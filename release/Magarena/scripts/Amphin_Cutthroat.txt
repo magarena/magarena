@@ -1,5 +1,5 @@
 name=Amphin Cutthroat
-image=http://mtgimage.com/card/amphin%20cutthroat.jpg
+image=http://magiccards.info/scans/en/m12/43.jpg
 value=1.756
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Salamander,Rogue
 cost={3}{U}
 pt=2/4
 timing=main
+oracle=NONE

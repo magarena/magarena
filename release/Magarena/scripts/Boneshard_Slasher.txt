@@ -1,5 +1,5 @@
 name=Boneshard Slasher
-image=http://mtgimage.com/card/boneshard%20slasher.jpg
+image=http://magiccards.info/scans/en/tr/50.jpg
 value=2.900
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying;\
         As long as seven or more cards are in your graveyard, SN gets +2/+2 and has "When SN becomes the target of a spell or ability, sacrifice it."
 timing=main
-oracle=Flying. Threshold — As long as seven or more cards are in your graveyard, Boneshard Slasher gets +2/+2 and has "When Boneshard Slasher becomes the target of a spell or ability, sacrifice it."
+oracle=Flying\nThreshold — As long as seven or more cards are in your graveyard, Boneshard Slasher gets +2/+2 and has "When Boneshard Slasher becomes the target of a spell or ability, sacrifice it."

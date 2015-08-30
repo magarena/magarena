@@ -1,5 +1,5 @@
 name=Screeching Harpy
-image=http://mtgimage.com/card/screeching%20harpy.jpg
+image=http://magiccards.info/scans/en/tp/49.jpg
 value=2.732
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=flying;\
         {1}{B}: Regenerate SN.
 timing=main
-oracle=Flying. {1}{B}: Regenerate Screeching Harpy.
+oracle=Flying\n{1}{B}: Regenerate Screeching Harpy.

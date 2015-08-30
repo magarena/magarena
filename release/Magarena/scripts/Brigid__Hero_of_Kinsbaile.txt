@@ -1,5 +1,5 @@
 name=Brigid, Hero of Kinsbaile
-image=http://mtgimage.com/card/brigid%2C%20hero%20of%20kinsbaile.jpg
+image=http://magiccards.info/scans/en/lw/6.jpg
 value=4.025
 rarity=R
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=2/3
 ability=first strike
 timing=smain
 requires_groovy_code
-oracle=First strike. {T}: Brigid, Hero of Kinsbaile deals 2 damage to each attacking or blocking creature target player controls.
+oracle=First strike\n{T}: Brigid, Hero of Kinsbaile deals 2 damage to each attacking or blocking creature target player controls.

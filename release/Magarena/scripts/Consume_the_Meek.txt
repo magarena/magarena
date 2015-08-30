@@ -1,5 +1,5 @@
 name=Consume the Meek
-image=http://mtgimage.com/card/consume%20the%20meek.jpg
+image=http://magiccards.info/scans/en/roe/100.jpg
 value=4.222
 rarity=R
 type=Instant

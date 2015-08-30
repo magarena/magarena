@@ -1,6 +1,6 @@
 name=Spirit en-Dal
-image=http://mtgimage.com/card/spirit%20en-dal.jpg
-value=2.500
+image=http://magiccards.info/scans/en/fut/17.jpg
+value=3.892
 rarity=U
 type=Creature
 subtype=Spirit
@@ -9,4 +9,4 @@ pt=2/1
 ability=Shadow;\
         {1}{W}, Reveal SN from your hand: Target creature gains shadow until end of turn.
 timing=main
-oracle=Shadow. Forecast — {1}{W}, Reveal Spirit en-Dal from your hand: Target creature gains shadow until end of turn.
+oracle=Shadow\nForecast — {1}{W}, Reveal Spirit en-Dal from your hand: Target creature gains shadow until end of turn.

@@ -1,5 +1,5 @@
 name=Grizzled Leotau
-image=http://mtgimage.com/card/grizzled%20leotau.jpg
+image=http://magiccards.info/scans/en/arb/69.jpg
 value=3.195
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Cat
 cost={G}{W}
 pt=1/5
 timing=main
+oracle=NONE

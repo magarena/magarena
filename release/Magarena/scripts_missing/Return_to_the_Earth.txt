@@ -1,5 +1,5 @@
 name=Return to the Earth
-image=http://mtgimage.com/card/return%20to%20the%20earth.jpg
+image=http://magiccards.info/scans/en/frf/135.jpg
 value=2.500
 rarity=C
 type=Instant

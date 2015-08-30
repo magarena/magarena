@@ -1,5 +1,5 @@
 name=Gravelgill Axeshark
-image=http://mtgimage.com/card/gravelgill%20axeshark.jpg
+image=http://magiccards.info/scans/en/shm/164.jpg
 value=2.579
 ability=persist
 rarity=C

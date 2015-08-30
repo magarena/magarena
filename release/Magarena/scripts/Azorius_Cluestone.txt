@@ -1,5 +1,5 @@
 name=Azorius Cluestone
-image=http://mtgimage.com/card/azorius%20cluestone.jpg
+image=http://magiccards.info/scans/en/dgm/136.jpg
 value=2.595
 rarity=C
 type=Artifact
@@ -7,4 +7,4 @@ cost={3}
 ability={T}: Add {W} or {U} to your mana pool.;\
         {W}{U},{T},Sacrifice SN: Draw a card.
 timing=artifact
-oracle={T}: Add {W} or {U} to your mana pool. {W}{U}, {T}, Sacrifice Azorius Cluestone: Draw a card.
+oracle={T}: Add {W} or {U} to your mana pool.\n{W}{U}, {T}, Sacrifice Azorius Cluestone: Draw a card.

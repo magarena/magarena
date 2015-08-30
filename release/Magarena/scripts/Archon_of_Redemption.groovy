@@ -5,11 +5,7 @@
             final int amount=permanent.getPower();
             return new MagicEvent(
                 permanent,
-                new MagicSimpleMayChoice(
-                        MagicSimpleMayChoice.GAIN_LIFE,
-                        amount,
-                        MagicSimpleMayChoice.DEFAULT_YES
-                    ),
+                new MagicSimpleMayChoice(),
                 this,
                 "PN may\$ gain life equal to SN's power ("+amount+")."
             );
@@ -17,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicChangeLifeAction(event.getPlayer(),event.getPermanent().getPower()));
+                game.doAction(new ChangeLifeAction(event.getPlayer(),event.getPermanent().getPower()));
             }
         }
     },
@@ -31,11 +27,7 @@
                     otherPermanent.isFriend(permanent)) ?
                 new MagicEvent(
                     permanent,
-                    new MagicSimpleMayChoice(
-                        MagicSimpleMayChoice.GAIN_LIFE,
-                        amount,
-                        MagicSimpleMayChoice.DEFAULT_YES
-                    ),
+                    new MagicSimpleMayChoice(),
                     otherPermanent,
                     this,
                     "PN may\$ gain life equal to RN's power ("+amount+")."
@@ -46,7 +38,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()){
                 final MagicPermanent permanent=event.getRefPermanent();
-                game.doAction(new MagicChangeLifeAction(event.getPlayer(),permanent.getPower()));
+                game.doAction(new ChangeLifeAction(event.getPlayer(),permanent.getPower()));
             }
         }
     }

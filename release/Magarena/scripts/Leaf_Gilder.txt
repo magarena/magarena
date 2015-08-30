@@ -1,6 +1,6 @@
 name=Leaf Gilder
-image=http://mtgimage.com/card/leaf%20gilder.jpg
-value=2.480
+image=http://magiccards.info/scans/en/ori/184.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Elf,Druid

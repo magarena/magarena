@@ -1,5 +1,5 @@
 name=Leafdrake Roost
-image=http://mtgimage.com/card/leafdrake%20roost.jpg
+image=http://magiccards.info/scans/en/c13/196.jpg
 value=3.625
 rarity=U
 type=Enchantment
@@ -8,4 +8,4 @@ cost={3}{G}{U}
 ability=Enchanted land has "{G}{U}, {T}: Put a 2/2 green and blue Drake creature token with flying onto the battlefield."
 enchant=pump,pos land
 timing=enchantment
-oracle=Enchant land. Enchanted land has "{G}{U}, {T}: Put a 2/2 green and blue Drake creature token with flying onto the battlefield."
+oracle=Enchant land\nEnchanted land has "{G}{U}, {T}: Put a 2/2 green and blue Drake creature token with flying onto the battlefield."

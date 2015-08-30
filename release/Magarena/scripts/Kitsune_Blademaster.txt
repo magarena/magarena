@@ -1,5 +1,5 @@
 name=Kitsune Blademaster
-image=http://mtgimage.com/card/kitsune%20blademaster.jpg
+image=http://magiccards.info/scans/en/chk/25.jpg
 value=3.725
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{W}
 pt=2/2
 ability=first strike;bushido 1
 timing=main
-oracle=First strike. Bushido 1
+oracle=First strike\nBushido 1

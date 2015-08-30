@@ -1,0 +1,9 @@
+name=Foul Renewal
+image=http://magiccards.info/scans/en/dtk/101.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={3}{B}
+effect=Return target creature card from your graveyard to your hand. Target creature gets -X/-X until end of turn, where X is the toughness of the card returned this way.
+timing=removal
+oracle=Return target creature card from your graveyard to your hand. Target creature gets -X/-X until end of turn, where X is the toughness of the card returned this way.

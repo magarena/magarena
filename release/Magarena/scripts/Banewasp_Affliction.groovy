@@ -6,16 +6,17 @@
             return enchantedPermanent == died ?
                 new MagicEvent(
                     permanent,
+                    enchantedPermanent.getController(),
                     enchantedPermanent,
                     this,
-                    ""+enchantedPermanent.getController()+" loses life equal to "+enchantedPermanent.getName()+"'s toughness ("+enchantedPermanent.getToughness()+")."
+                    "PN loses life equal to RN's toughness (${enchantedPermanent.getToughness()})."
                 ):
                 MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int toughness = event.getRefPermanent().getToughness();
-            game.doAction(new MagicChangeLifeAction(event.getRefPermanent().getController(),-toughness));
+            game.doAction(new ChangeLifeAction(event.getPlayer(),-toughness));
         }
     }
 ]

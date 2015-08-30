@@ -1,5 +1,5 @@
 name=Grindclock
-image=http://mtgimage.com/card/grindclock.jpg
+image=http://magiccards.info/scans/en/m15/217.jpg
 value=2.500
 rarity=R
 type=Artifact
@@ -7,4 +7,4 @@ cost={2}
 ability={T}: Put a charge counter on SN.
 requires_groovy_code
 timing=main
-oracle={T}: Put a charge counter on Grindclock. {T}: Target player puts the top X cards of his or her library into his or her graveyard, where X is the number of charge counters on Grindclock.
+oracle={T}: Put a charge counter on Grindclock.\n{T}: Target player puts the top X cards of his or her library into his or her graveyard, where X is the number of charge counters on Grindclock.

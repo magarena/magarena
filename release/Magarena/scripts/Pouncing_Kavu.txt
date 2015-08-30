@@ -1,5 +1,5 @@
 name=Pouncing Kavu
-image=http://mtgimage.com/card/pouncing%20kavu.jpg
+image=http://magiccards.info/scans/en/in/158.jpg
 value=3.224
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=first strike;kicker {2}{R}
 timing=main
 requires_groovy_code
-oracle=Kicker {2}{R}. First strike. If Pouncing Kavu was kicked, it enters the battlefield with two +1/+1 counters on it and with haste.
+oracle=Kicker {2}{R}\nFirst strike\nIf Pouncing Kavu was kicked, it enters the battlefield with two +1/+1 counters on it and with haste.

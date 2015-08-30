@@ -1,6 +1,6 @@
 name=Betrothed of Fire
-image=http://mtgimage.com/card/betrothed%20of%20fire.jpg
-value=2.500
+image=http://magiccards.info/scans/en/wl/89.jpg
+value=2.859
 rarity=C
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={1}{R}
 ability=Enchant creature;\
         Sacrifice an untapped creature: Enchanted creature gets +2/+0 until end of turn.;\
         Sacrifice enchanted creature: Creatures you control get +2/+0 until end of turn.
-timing=main
-oracle=Enchant creature. Sacrifice an untapped creature: Enchanted creature gets +2/+0 until end of turn. Sacrifice enchanted creature: Creatures you control get +2/+0 until end of turn.
+timing=aura
+oracle=Enchant creature\nSacrifice an untapped creature: Enchanted creature gets +2/+0 until end of turn.\nSacrifice enchanted creature: Creatures you control get +2/+0 until end of turn.

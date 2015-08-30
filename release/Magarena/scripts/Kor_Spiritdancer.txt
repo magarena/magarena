@@ -1,12 +1,12 @@
 name=Kor Spiritdancer
-image=http://mtgimage.com/card/kor%20spiritdancer.jpg
+image=http://magiccards.info/scans/en/pc2/9.jpg
 value=4.100
 rarity=R
 type=Creature
 subtype=Kor,Wizard
 cost={1}{W}
 pt=0/2
-ability=Whenever you cast an Aura spell, you may draw a card.
+ability=SN gets +2/+2 for each Aura attached to it.;\
+        Whenever you cast an Aura spell, you may draw a card.
 timing=main
-requires_groovy_code=Rabid Wombat
-oracle=Kor Spiritdancer gets +2/+2 for each Aura attached to it. Whenever you cast an Aura spell, you may draw a card.
+oracle=Kor Spiritdancer gets +2/+2 for each Aura attached to it.\nWhenever you cast an Aura spell, you may draw a card.

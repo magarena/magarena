@@ -1,5 +1,5 @@
 name=Sphere of Duty
-image=http://mtgimage.com/card/sphere%20of%20duty.jpg
+image=http://magiccards.info/scans/en/od/48.jpg
 value=2.204
 rarity=U
 type=Enchantment

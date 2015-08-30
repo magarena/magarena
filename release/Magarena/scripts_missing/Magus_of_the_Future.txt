@@ -1,6 +1,6 @@
 name=Magus of the Future
-image=http://mtgimage.com/card/magus%20of%20the%20future.jpg
-value=2.500
+image=http://magiccards.info/scans/en/fut/40.jpg
+value=4.222
 rarity=R
 type=Creature
 subtype=Human,Wizard
@@ -9,4 +9,4 @@ pt=2/3
 ability=Play with the top card of your library revealed.;\
         You may play the top card of your library.
 timing=main
-oracle=Play with the top card of your library revealed. You may play the top card of your library.
+oracle=Play with the top card of your library revealed.\nYou may play the top card of your library.

@@ -1,6 +1,6 @@
 name=Shirei, Shizo's Caretaker
-image=http://mtgimage.com/card/shirei%2C%20shizo%27s%20caretaker.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bok/81.jpg
+value=4.025
 rarity=R
 type=Legendary,Creature
 subtype=Spirit

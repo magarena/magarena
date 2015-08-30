@@ -1,5 +1,5 @@
 name=Esper Cormorants
-image=http://mtgimage.com/card/esper%20cormorants.jpg
+image=http://magiccards.info/scans/en/cfx/105.jpg
 value=2.444
 ability=flying
 rarity=C

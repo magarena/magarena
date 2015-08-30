@@ -1,11 +1,11 @@
 name=Citadel Siege
-image=http://mtgimage.com/card/citadel%20siege.jpg
+image=http://magiccards.info/scans/en/frf/8.jpg
 value=2.500
 rarity=R
 type=Enchantment
 cost={2}{W}{W}
-ability=As SN enters the battlefield, choose Khans or Dragons.;\
-        • Khans — At the beginning of combat on your turn, put two +1/+1 counters on target creature you control.;\
-        • Dragons — At the beginning of combat on each opponent's turn, tap target creature that player controls.
-timing=main
-oracle=As Citadel Siege enters the battlefield, choose Khans or Dragons. • Khans — At the beginning of combat on your turn, put two +1/+1 counters on target creature you control. • Dragons — At the beginning of combat on each opponent's turn, tap target creature that player controls.
+ability=As SN enters the battlefield, choose Khans or Dragons. \
+        (1) Khans — At the beginning of combat on your turn, put two +1/+1 counters on target creature you control. \
+        (2) Dragons — At the beginning of combat on each opponent's turn, tap target creature that player controls.
+timing=enchantment
+oracle=As Citadel Siege enters the battlefield, choose Khans or Dragons.\n• Khans — At the beginning of combat on your turn, put two +1/+1 counters on target creature you control.\n• Dragons — At the beginning of combat on each opponent's turn, tap target creature that player controls.

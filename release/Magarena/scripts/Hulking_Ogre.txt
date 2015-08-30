@@ -1,5 +1,5 @@
 name=Hulking Ogre
-image=http://mtgimage.com/card/hulking%20ogre.jpg
+image=http://magiccards.info/scans/en/st/108.jpg
 value=2.466
 rarity=U
 type=Creature

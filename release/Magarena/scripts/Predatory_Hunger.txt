@@ -1,11 +1,11 @@
 name=Predatory Hunger
-image=http://mtgimage.com/card/predatory%20hunger.jpg
+image=http://magiccards.info/scans/en/ex/117.jpg
 value=3.800
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={G}
+ability=Whenever an opponent casts a creature spell, put a +1/+1 counter on enchanted creature.
 enchant=pump,pos creature
 timing=aura
-requires_groovy_code
-oracle=Enchant creature. Whenever an opponent casts a creature spell, put a +1/+1 counter on enchanted creature.
+oracle=Enchant creature\nWhenever an opponent casts a creature spell, put a +1/+1 counter on enchanted creature.

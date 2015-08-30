@@ -1,5 +1,5 @@
 name=Obstinate Baloth
-image=http://mtgimage.com/card/obstinate%20baloth.jpg
+image=http://magiccards.info/scans/en/m11/188.jpg
 value=4.250
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=When SN enters the battlefield, you gain 4 life.;\
         If a spell or ability an opponent controls causes you to discard SN, put it onto the battlefield instead of putting it into your graveyard.
 timing=main
-oracle=When Obstinate Baloth enters the battlefield, you gain 4 life. If a spell or ability an opponent controls causes you to discard Obstinate Baloth, put it onto the battlefield instead of putting it into your graveyard.
+oracle=When Obstinate Baloth enters the battlefield, you gain 4 life.\nIf a spell or ability an opponent controls causes you to discard Obstinate Baloth, put it onto the battlefield instead of putting it into your graveyard.

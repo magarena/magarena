@@ -1,12 +1,12 @@
 name=Fungal Shambler
-image=http://mtgimage.com/card/fungal%20shambler.jpg
+image=http://magiccards.info/scans/en/ap/100.jpg
 value=4.155
 rarity=R
 type=Creature
 subtype=Fungus,Beast
 cost={4}{G}{U}{B}
 pt=6/4
-ability=Trample
+ability=Trample;\
+        Whenever SN deals damage to an opponent, you draw a card.~That opponent discards a card.
 timing=main
-requires_groovy_code=Dimir Cutpurse
-oracle=Trample. Whenever Fungal Shambler deals damage to an opponent, you draw a card and that opponent discards a card.
+oracle=Trample\nWhenever Fungal Shambler deals damage to an opponent, you draw a card and that opponent discards a card.

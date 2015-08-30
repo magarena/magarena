@@ -1,10 +1,10 @@
 name=Arrow Volley Trap
-image=http://mtgimage.com/card/arrow%20volley%20trap.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddn/71.jpg
+value=2.000
 rarity=U
 type=Instant
 subtype=Trap
 cost={3}{W}{W}
 effect=If four or more creatures are attacking, you may pay {1}{W} rather than pay SN's mana cost.~SN deals 5 damage divided as you choose among any number of target attacking creatures.
 timing=removal
-oracle=If four or more creatures are attacking, you may pay {1}{W} rather than pay Arrow Volley Trap's mana cost. Arrow Volley Trap deals 5 damage divided as you choose among any number of target attacking creatures.
+oracle=If four or more creatures are attacking, you may pay {1}{W} rather than pay Arrow Volley Trap's mana cost.\nArrow Volley Trap deals 5 damage divided as you choose among any number of target attacking creatures.

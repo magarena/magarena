@@ -1,5 +1,5 @@
 name=Threads of Disloyalty
-image=http://mtgimage.com/card/threads%20of%20disloyalty.jpg
+image=http://magiccards.info/scans/en/bok/56.jpg
 value=4.378
 rarity=R
 type=Enchantment
@@ -8,4 +8,4 @@ cost={1}{U}{U}
 timing=aura
 ability=You control enchanted creature.
 enchant=gain control,neg creature with converted mana cost 2 or less
-oracle=Enchant creature with converted mana cost 2 or less. You control enchanted creature.
+oracle=Enchant creature with converted mana cost 2 or less\nYou control enchanted creature.

@@ -1,5 +1,5 @@
 name=Petravark
-image=http://mtgimage.com/card/petravark.jpg
+image=http://magiccards.info/scans/en/tr/109.jpg
 value=2.792
 removal=2
 rarity=C
@@ -10,4 +10,4 @@ pt=2/2
 ability=When SN enters the battlefield, exile target land.;\
         When SN leaves the battlefield, return the exiled card to the battlefield under its owner's control.
 timing=main
-oracle=When Petravark enters the battlefield, exile target land. When Petravark leaves the battlefield, return the exiled card to the battlefield under its owner's control.
+oracle=When Petravark enters the battlefield, exile target land.\nWhen Petravark leaves the battlefield, return the exiled card to the battlefield under its owner's control.

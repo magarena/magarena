@@ -1,9 +1,9 @@
 name=Provoke
-image=http://mtgimage.com/card/provoke.jpg
+image=http://magiccards.info/scans/en/vma/225.jpg
 value=2.500
 rarity=C
 type=Instant
 cost={1}{G}
 effect=Untap target creature you don't control. That creature blocks this turn if able.~Draw a card.
 timing=removal
-oracle=Untap target creature you don't control. That creature blocks this turn if able. Draw a card.
+oracle=Untap target creature you don't control. That creature blocks this turn if able.\nDraw a card.

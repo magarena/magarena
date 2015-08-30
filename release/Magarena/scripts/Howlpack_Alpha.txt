@@ -1,5 +1,5 @@
 name=Howlpack Alpha
-image=http://mtgimage.com/card/howlpack%20alpha.jpg
+image=http://magiccards.info/scans/en/isd/193b.jpg
 value=4.209
 rarity=R
 type=Creature
@@ -12,4 +12,4 @@ ability=Other Werewolf or Wolf creatures you control get +1/+1.;\
 transform=Mayor of Avabruck
 timing=main
 hidden
-oracle=Each other creature you control that's a Werewolf or a Wolf gets +1/+1. At the beginning of your end step, put a 2/2 green Wolf creature token onto the battlefield. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Howlpack Alpha.
+oracle=Each other creature you control that's a Werewolf or a Wolf gets +1/+1.\nAt the beginning of your end step, put a 2/2 green Wolf creature token onto the battlefield.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Howlpack Alpha.

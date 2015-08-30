@@ -1,9 +1,9 @@
 name=Breaking
-image=http://mtgimage.com/card/breakingentering.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dgm/124a.jpg
+value=3.800
 rarity=R
 type=Sorcery
 cost={U}{B}
 effect=Target player puts the top eight cards of his or her library into his or her graveyard.~Fuse
 timing=main
-oracle=Target player puts the top eight cards of his or her library into his or her graveyard. Fuse
+oracle=Target player puts the top eight cards of his or her library into his or her graveyard.\nFuse

@@ -1,9 +1,9 @@
 name=Soul Conduit
-image=http://mtgimage.com/card/soul%20conduit.jpg
-value=2.500
+image=http://magiccards.info/scans/en/nph/158.jpg
+value=3.408
 rarity=R
 type=Artifact
 cost={6}
 ability={6}, {T}: Two target players exchange life totals.
-timing=main
+timing=artifact
 oracle={6}, {T}: Two target players exchange life totals.

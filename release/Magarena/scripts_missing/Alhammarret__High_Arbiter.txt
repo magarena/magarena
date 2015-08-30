@@ -1,0 +1,13 @@
+name=Alhammarret, High Arbiter
+image=http://magiccards.info/scans/en/ori/43.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Sphinx
+cost={5}{U}{U}
+pt=5/5
+ability=Flying;\
+        As SN enters the battlefield, each opponent reveals his or her hand. You choose the name of a nonland card revealed this way.;\
+        Your opponents can't cast spells with the chosen name.
+timing=main
+oracle=Flying\nAs Alhammarret, High Arbiter enters the battlefield, each opponent reveals his or her hand. You choose the name of a nonland card revealed this way.\nYour opponents can't cast spells with the chosen name.

@@ -1,5 +1,5 @@
 name=Dauthi Mindripper
-image=http://mtgimage.com/card/dauthi%20mindripper.jpg
+image=http://magiccards.info/scans/en/tp/19.jpg
 value=3.756
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=Shadow
 timing=main
 requires_groovy_code=Mindstab Thrull
-oracle=Shadow. Whenever Dauthi Mindripper attacks and isn't blocked, you may sacrifice it. If you do, defending player discards three cards.
+oracle=Shadow\nWhenever Dauthi Mindripper attacks and isn't blocked, you may sacrifice it. If you do, defending player discards three cards.

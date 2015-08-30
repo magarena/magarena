@@ -1,5 +1,5 @@
 name=Spell Snare
-image=http://mtgimage.com/card/spell%20snare.jpg
+image=http://magiccards.info/scans/en/mma/64.jpg
 value=4.537
 rarity=U
 type=Instant

@@ -1,5 +1,5 @@
 name=Nesting Wurm
-image=http://mtgimage.com/card/nesting%20wurm.jpg
+image=http://magiccards.info/scans/en/ne/107.jpg
 value=3.446
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=4/3
 ability=Trample;\
         When SN enters the battlefield, you may search your library for up to three cards named SN, reveal them, and put them into your hand. If you do, shuffle your library.
 timing=main
-oracle=Trample. When Nesting Wurm enters the battlefield, you may search your library for up to three cards named Nesting Wurm, reveal them, and put them into your hand. If you do, shuffle your library.
+oracle=Trample\nWhen Nesting Wurm enters the battlefield, you may search your library for up to three cards named Nesting Wurm, reveal them, and put them into your hand. If you do, shuffle your library.

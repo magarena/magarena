@@ -1,11 +1,11 @@
 name=Infinite Hourglass
-image=http://mtgimage.com/card/infinite%20hourglass.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5e/378.jpg
+value=3.040
 rarity=R
 type=Artifact
 cost={4}
 ability=At the beginning of your upkeep, put a time counter on SN.;\
         All creatures get +1/+0 for each time counter on SN.;\
         {3}: Remove a time counter from SN. Any player may activate this ability but only during any upkeep step.
-timing=main
-oracle=At the beginning of your upkeep, put a time counter on Infinite Hourglass. All creatures get +1/+0 for each time counter on Infinite Hourglass. {3}: Remove a time counter from Infinite Hourglass. Any player may activate this ability but only during any upkeep step.
+timing=artifact
+oracle=At the beginning of your upkeep, put a time counter on Infinite Hourglass.\nAll creatures get +1/+0 for each time counter on Infinite Hourglass.\n{3}: Remove a time counter from Infinite Hourglass. Any player may activate this ability but only during any upkeep step.

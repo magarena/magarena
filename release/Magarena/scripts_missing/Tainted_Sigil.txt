@@ -1,9 +1,9 @@
 name=Tainted Sigil
-image=http://mtgimage.com/card/tainted%20sigil.jpg
-value=2.500
+image=http://magiccards.info/scans/en/arb/83.jpg
+value=3.236
 rarity=U
 type=Artifact
 cost={1}{W}{B}
 ability={T}, Sacrifice SN: You gain life equal to the total life lost by all players this turn.
-timing=main
+timing=artifact
 oracle={T}, Sacrifice Tainted Sigil: You gain life equal to the total life lost by all players this turn.

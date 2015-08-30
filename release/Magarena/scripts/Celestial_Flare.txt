@@ -1,6 +1,6 @@
 name=Celestial Flare
-image=http://mtgimage.com/card/celestial%20flare.jpg
-value=3.651
+image=http://magiccards.info/scans/en/ori/8.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={W}{W}

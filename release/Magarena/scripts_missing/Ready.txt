@@ -1,9 +1,9 @@
 name=Ready
-image=http://mtgimage.com/card/readywilling.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dgm/132a.jpg
+value=3.758
 rarity=R
 type=Instant
 cost={1}{G}{W}
 effect=Creatures you control gain indestructible until end of turn. Untap each creature you control.~Fuse
 timing=removal
-oracle=Creatures you control gain indestructible until end of turn. Untap each creature you control. Fuse
+oracle=Creatures you control gain indestructible until end of turn. Untap each creature you control.\nFuse

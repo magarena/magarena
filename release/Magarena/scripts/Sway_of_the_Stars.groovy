@@ -11,27 +11,23 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicPlayer player : game.getAPNAP()) {
-                final Collection<MagicPermanent> permanents = player.filterPermanents(MagicTargetFilterFactory.PERMANENT_YOU_OWN);
                 final MagicCardList hand = new MagicCardList(player.getHand());
+                for (final MagicCard it : hand) {
+                    game.doAction(new ShiftCardAction(it,MagicLocationType.OwnersHand,MagicLocationType.OwnersLibrary));
+                }
                 final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
-                for (final MagicPermanent permanent : permanents) {
-                    game.doAction(new MagicRemoveFromPlayAction(permanent,MagicLocationType.OwnersLibrary));
+                for (final MagicCard it : graveyard) {
+                    game.doAction(new ShiftCardAction(it,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
                 }
-                for (final MagicCard cardHand : hand) {
-                    game.doAction(new MagicRemoveCardAction(cardHand,MagicLocationType.OwnersHand));
-                    game.doAction(new MagicMoveCardAction(cardHand,MagicLocationType.OwnersHand,MagicLocationType.OwnersLibrary));
-                }
-                for (final MagicCard cardGraveyard : graveyard) {
-                    game.doAction(new MagicRemoveCardAction(cardGraveyard,MagicLocationType.Graveyard));
-                    game.doAction(new MagicMoveCardAction(cardGraveyard,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
-                }
-            }
-            for (final MagicPlayer player : game.getAPNAP()) {
-                game.doAction(new MagicDrawAction(player,7));
+                game.doAction(new RemoveAllFromPlayAction(
+                    PERMANENT_YOU_OWN.filter(player),
+                    MagicLocationType.OwnersLibrary
+                ));
+                game.doAction(new DrawAction(player,7));
             }
             for (final MagicPlayer player : game.getAPNAP()) {
                 final int changeLife = 7 - player.getLife();
-                game.doAction(new MagicChangeLifeAction(player,changeLife));
+                game.doAction(new ChangeLifeAction(player,changeLife));
             }
         }
     }

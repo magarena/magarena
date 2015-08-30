@@ -1,5 +1,5 @@
 name=Archon of Redemption
-image=http://mtgimage.com/card/archon%20of%20redemption.jpg
+image=http://magiccards.info/scans/en/wwk/3.jpg
 value=3.521
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=3/4
 ability=flying
 timing=smain
 requires_groovy_code
-oracle=Flying. Whenever Archon of Redemption or another creature with flying enters the battlefield under your control, you may gain life equal to that creature's power.
+oracle=Flying\nWhenever Archon of Redemption or another creature with flying enters the battlefield under your control, you may gain life equal to that creature's power.

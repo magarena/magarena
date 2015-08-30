@@ -1,0 +1,10 @@
+name=Thoughtcast
+image=http://magiccards.info/scans/en/ddf/71.jpg
+value=4.483
+rarity=C
+type=Sorcery
+cost={4}{U}
+ability=Affinity for artifacts.
+effect=Draw two cards.
+timing=main
+oracle=Affinity for artifacts\nDraw two cards.

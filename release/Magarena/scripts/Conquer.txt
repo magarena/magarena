@@ -1,5 +1,5 @@
 name=Conquer
-image=http://mtgimage.com/card/conquer.jpg
+image=http://magiccards.info/scans/en/me2/122.jpg
 value=2.485
 rarity=U
 type=Enchantment
@@ -8,4 +8,4 @@ cost={3}{R}{R}
 ability=You control enchanted land.
 enchant=gain control,neg land
 timing=aura
-oracle=Enchant land. You control enchanted land.
+oracle=Enchant land\nYou control enchanted land.

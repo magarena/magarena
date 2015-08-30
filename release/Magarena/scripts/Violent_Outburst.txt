@@ -1,5 +1,5 @@
 name=Violent Outburst
-image=http://mtgimage.com/card/violent%20outburst.jpg
+image=http://magiccards.info/scans/en/arb/63.jpg
 value=3.038
 rarity=C
 type=Instant
@@ -7,4 +7,4 @@ cost={1}{R}{G}
 ability=cascade
 effect=Creatures you control get +1/+0 until end of turn.
 timing=pump
-oracle=Cascade. Creatures you control get +1/+0 until end of turn.
+oracle=Cascade\nCreatures you control get +1/+0 until end of turn.

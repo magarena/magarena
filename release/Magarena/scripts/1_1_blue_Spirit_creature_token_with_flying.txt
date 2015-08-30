@@ -7,3 +7,4 @@ subtype=Spirit
 color=u
 pt=1/1
 ability=flying
+oracle=Flying

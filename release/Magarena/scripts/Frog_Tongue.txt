@@ -1,5 +1,5 @@
 name=Frog Tongue
-image=http://mtgimage.com/card/frog%20tongue.jpg
+image=http://magiccards.info/scans/en/tp/122.jpg
 value=3.738
 rarity=C
 type=Enchantment
@@ -9,4 +9,4 @@ ability=When SN enters the battlefield, draw a card.;\
         Enchanted creature has reach.
 timing=aura
 enchant=pump,pos creature
-oracle=Enchant creature. When Frog Tongue enters the battlefield, draw a card. Enchanted creature has reach.
+oracle=Enchant creature\nWhen Frog Tongue enters the battlefield, draw a card.\nEnchanted creature has reach.

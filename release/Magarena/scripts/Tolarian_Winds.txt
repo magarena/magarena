@@ -1,0 +1,10 @@
+name=Tolarian Winds
+image=http://magiccards.info/scans/en/7e/105.jpg
+value=4.282
+rarity=C
+type=Instant
+cost={1}{U}
+ability=Cast SN with AI only if you have one or more cards in hand.
+timing=draw
+requires_groovy_code
+oracle=Discard all the cards in your hand, then draw that many cards.

@@ -1,5 +1,5 @@
 name=Devastation
-image=http://mtgimage.com/card/devastation.jpg
+image=http://magiccards.info/scans/en/me4/112.jpg
 value=3.815
 rarity=R
 type=Sorcery

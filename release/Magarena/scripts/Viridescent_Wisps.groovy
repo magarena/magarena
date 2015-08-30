@@ -10,7 +10,7 @@ def color = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.POS_TARGET_CREATURE,
+                POS_TARGET_CREATURE,
                 MagicUnblockableTargetPicker.create(),
                 this,
                 "Target creature\$ becomes green and gets +1/+0 until end of turn. PN draws a card."
@@ -19,9 +19,9 @@ def color = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicChangeTurnPTAction(it,1,0));
-                game.doAction(new MagicAddStaticAction(it,color));
-                game.doAction(new MagicDrawAction(event.getPlayer()));
+                game.doAction(new ChangeTurnPTAction(it,1,0));
+                game.doAction(new AddStaticAction(it,color));
+                game.doAction(new DrawAction(event.getPlayer()));
             });
         }
     }

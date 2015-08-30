@@ -1,5 +1,5 @@
 name=Barbed Field
-image=http://mtgimage.com/card/barbed%20field.jpg
+image=http://magiccards.info/scans/en/pr/83.jpg
 value=2.946
 rarity=U
 type=Enchantment
@@ -8,4 +8,4 @@ cost={2}{R}{R}
 enchant=pump,pos land
 ability=Enchanted land has "{T}: SN deals 1 damage to target creature or player."
 timing=aura
-oracle=Enchant land. Enchanted land has "{T}: This land deals 1 damage to target creature or player."
+oracle=Enchant land\nEnchanted land has "{T}: This land deals 1 damage to target creature or player."

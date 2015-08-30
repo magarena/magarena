@@ -1,5 +1,5 @@
 name=Lava Tubes
-image=http://mtgimage.com/card/lava%20tubes.jpg
+image=http://magiccards.info/scans/en/ia/339.jpg
 value=2.300
 rarity=R
 type=Land
@@ -8,4 +8,4 @@ ability=At the beginning of your upkeep, remove a depletion counter from SN.;\
         {T}: Add {B} or {R} to your mana pool. Put a depletion counter on SN.
 timing=main
 requires_groovy_code=Land Cap
-oracle=Lava Tubes doesn't untap during your untap step if it has a depletion counter on it. At the beginning of your upkeep, remove a depletion counter from Lava Tubes. {T}: Add {B} or {R} to your mana pool. Put a depletion counter on Lava Tubes.
+oracle=Lava Tubes doesn't untap during your untap step if it has a depletion counter on it.\nAt the beginning of your upkeep, remove a depletion counter from Lava Tubes.\n{T}: Add {B} or {R} to your mana pool. Put a depletion counter on Lava Tubes.

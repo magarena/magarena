@@ -1,11 +1,11 @@
 name=Myr Mindservant
-image=http://mtgimage.com/card/myr%20mindservant.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mi/213.jpg
+value=3.250
 rarity=U
 type=Artifact,Creature
 subtype=Myr
 cost={1}
 pt=1/1
 ability={2}, {T}: Shuffle your library.
-timing=main
+timing=artifact
 oracle={2}, {T}: Shuffle your library.

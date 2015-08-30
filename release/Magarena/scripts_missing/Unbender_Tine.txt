@@ -1,9 +1,0 @@
-name=Unbender Tine
-image=http://mtgimage.com/card/unbender%20tine.jpg
-value=2.500
-rarity=U
-type=Artifact
-cost={2}{W}{U}
-ability={T}: Untap another target permanent.
-timing=main
-oracle={T}: Untap another target permanent.

@@ -1,6 +1,6 @@
 name=Thraximundar
-image=http://mtgimage.com/card/thraximundar.jpg
-value=2.500
+image=http://magiccards.info/scans/en/c13/221.jpg
+value=3.833
 rarity=M
 type=Legendary,Creature
 subtype=Zombie,Assassin
@@ -10,4 +10,4 @@ ability=Haste;\
         Whenever SN attacks, defending player sacrifices a creature.;\
         Whenever a player sacrifices a creature, you may put a +1/+1 counter on SN.
 timing=main
-oracle=Haste. Whenever Thraximundar attacks, defending player sacrifices a creature. Whenever a player sacrifices a creature, you may put a +1/+1 counter on Thraximundar.
+oracle=Haste\nWhenever Thraximundar attacks, defending player sacrifices a creature.\nWhenever a player sacrifices a creature, you may put a +1/+1 counter on Thraximundar.

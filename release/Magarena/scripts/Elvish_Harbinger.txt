@@ -1,5 +1,5 @@
 name=Elvish Harbinger
-image=http://mtgimage.com/card/elvish%20harbinger.jpg
+image=http://magiccards.info/scans/en/evg/4.jpg
 value=3.962
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/2
 ability=When SN enters the battlefield, you may search your library for an Elf card, reveal it, then shuffle your library and put that card on top of it.;\
         {T}: Add one mana of any color to your mana pool.
 timing=main
-oracle=When Elvish Harbinger enters the battlefield, you may search your library for an Elf card, reveal it, then shuffle your library and put that card on top of it. {T}: Add one mana of any color to your mana pool.
+oracle=When Elvish Harbinger enters the battlefield, you may search your library for an Elf card, reveal it, then shuffle your library and put that card on top of it.\n{T}: Add one mana of any color to your mana pool.

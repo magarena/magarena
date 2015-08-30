@@ -1,9 +1,9 @@
 name=Mask of Intolerance
-image=http://mtgimage.com/card/mask%20of%20intolerance.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ap/138.jpg
+value=3.741
 rarity=R
 type=Artifact
 cost={2}
 ability=At the beginning of each player's upkeep, if there are four or more basic land types among lands that player controls, SN deals 3 damage to him or her.
-timing=main
+timing=artifact
 oracle=At the beginning of each player's upkeep, if there are four or more basic land types among lands that player controls, Mask of Intolerance deals 3 damage to him or her.

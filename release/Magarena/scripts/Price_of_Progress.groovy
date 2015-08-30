@@ -11,10 +11,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicPlayer player : game.getAPNAP()) {
-                game.doAction(new MagicDealDamageAction(
+                game.doAction(new DealDamageAction(
                     event.getSource(), 
                     player, 
-                    player.getNrOfPermanents(MagicTargetFilterFactory.NONBASIC_LAND) * 2
+                    player.getNrOfPermanents(NONBASIC_LAND) * 2
                 ));
             }
         }

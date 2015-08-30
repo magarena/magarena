@@ -1,6 +1,6 @@
 name=Rofellos, Llanowar Emissary
-image=http://mtgimage.com/card/rofellos%2C%20llanowar%20emissary.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vma/229.jpg
+value=4.500
 rarity=R
 type=Legendary,Creature
 subtype=Elf,Druid

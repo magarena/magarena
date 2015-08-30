@@ -1,0 +1,11 @@
+name=Reduce in Stature
+image=http://magiccards.info/scans/en/dtk/72.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{U}
+ability=Enchant creature;\
+        Enchanted creature has base power and toughness 0/2.
+timing=aura
+oracle=Enchant creature\nEnchanted creature has base power and toughness 0/2.

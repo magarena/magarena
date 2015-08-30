@@ -1,10 +1,10 @@
 name=Tourach's Chant
-image=http://mtgimage.com/card/tourach%27s%20chant.jpg
-value=2.500
+image=http://magiccards.info/scans/en/fe/32.jpg
+value=2.914
 rarity=U
 type=Enchantment
 cost={1}{B}{B}
 ability=At the beginning of your upkeep, sacrifice SN unless you pay {B}.;\
         Whenever a player puts a Forest onto the battlefield, SN deals 3 damage to that player unless he or she puts a -1/-1 counter on a creature he or she controls.
-timing=main
-oracle=At the beginning of your upkeep, sacrifice Tourach's Chant unless you pay {B}. Whenever a player puts a Forest onto the battlefield, Tourach's Chant deals 3 damage to that player unless he or she puts a -1/-1 counter on a creature he or she controls.
+timing=enchantment
+oracle=At the beginning of your upkeep, sacrifice Tourach's Chant unless you pay {B}.\nWhenever a player puts a Forest onto the battlefield, Tourach's Chant deals 3 damage to that player unless he or she puts a -1/-1 counter on a creature he or she controls.

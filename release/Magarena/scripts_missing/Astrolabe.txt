@@ -1,9 +1,9 @@
 name=Astrolabe
-image=http://mtgimage.com/card/astrolabe.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me3/189.jpg
+value=2.778
 rarity=C
 type=Artifact
 cost={3}
 ability={1}, {T}, Sacrifice SN: Add two mana of any one color to your mana pool. Draw a card at the beginning of the next turn's upkeep.
-timing=main
+timing=artifact
 oracle={1}, {T}, Sacrifice Astrolabe: Add two mana of any one color to your mana pool. Draw a card at the beginning of the next turn's upkeep.

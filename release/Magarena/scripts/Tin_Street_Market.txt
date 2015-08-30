@@ -1,5 +1,5 @@
 name=Tin Street Market
-image=http://mtgimage.com/card/tin%20street%20market.jpg
+image=http://magiccards.info/scans/en/gtc/108.jpg
 value=1.167
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={4}{R}
 ability=Enchanted land has "{T}, Discard a card: Draw a card."
 enchant=pump,pos land
 timing=enchantment
-oracle=Enchant land. Enchanted land has "{T}, Discard a card: Draw a card."
+oracle=Enchant land\nEnchanted land has "{T}, Discard a card: Draw a card."

@@ -47,12 +47,13 @@ public class MagicFromCardFilterChoice extends MagicChoice {
     }
 
     private void createOptions(
-            final Collection<Object> options,
-            final List<MagicCard> cList,
-            final MagicCard[] cards,
-            final int count,
-            final int limit,
-            final int index) {
+        final Collection<Object> options,
+        final List<MagicCard> cList,
+        final MagicCard[] cards,
+        final int count,
+        final int limit,
+        final int index
+    ) {
         
         if (count == limit) {
             options.add(new MagicCardChoiceResult(cards));
@@ -70,12 +71,13 @@ public class MagicFromCardFilterChoice extends MagicChoice {
     }
     
     private void createOptionsUpTo(
-            final Collection<Object> options,
-            final List<MagicCard> cList,
-            final MagicCard[] cards,
-            final int count,
-            final int limit,
-            final int index) {
+        final Collection<Object> options,
+        final List<MagicCard> cList,
+        final MagicCard[] cards,
+        final int count,
+        final int limit,
+        final int index
+    ) {
        
         if (index >= cList.size() || count >= limit) {
             final MagicCardChoiceResult result = new MagicCardChoiceResult(cards);
@@ -105,15 +107,21 @@ public class MagicFromCardFilterChoice extends MagicChoice {
 
     // FIXME: need to implement ordering of cards for AI, needed by scry
     @Override
-    Collection<Object> getArtificialOptions(
-            final MagicGame game,
-            final MagicEvent event,
-            final MagicPlayer player,
-            final MagicSource source) {
+    Collection<Object> getArtificialOptions(final MagicGame game, final MagicEvent event) {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
 
         final List<Object> options = new ArrayList<Object>();
-        final List<MagicCard> cList = player.filterCards(filter);
+        final List<MagicCard> oList = player.filterCards(filter);
+        final List<Boolean> known = new ArrayList<Boolean>(oList.size());
 
+        //reveal the cards
+        for (final MagicCard card : oList) {
+            known.add(card.isGameKnown());
+            card.setGameKnown(true);
+        }
+
+        final List<MagicCard> cList = new MagicCardList(oList);
         Collections.sort(cList);
 
         final int actualAmount = Math.min(amount,cList.size());
@@ -121,19 +129,22 @@ public class MagicFromCardFilterChoice extends MagicChoice {
             options.add(new MagicCardChoiceResult());
         } else if (upTo) {
             createOptionsUpTo(options,cList,new MagicCard[actualAmount],0,actualAmount,0);
-            //System.out.println("END");
         } else {
             createOptions(options,cList,new MagicCard[actualAmount],0,actualAmount,0);
         }
+        
+        //hide the cards
+        for (int i = 0; i < oList.size(); i++) {
+            oList.get(i).setGameKnown(known.get(i));
+        }
+        
         return options;
     }
 
     @Override
-    public Object[] getPlayerChoiceResults(
-            final IUIGameController controller,
-            final MagicGame game,
-            final MagicPlayer player,
-            final MagicSource source) throws UndoClickedException {
+    public Object[] getPlayerChoiceResults(final IUIGameController controller, final MagicGame game, final MagicEvent event) throws UndoClickedException {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
 
         final MagicCardChoiceResult result=new MagicCardChoiceResult();
         final List<MagicCard> choiceList = player.filterCards(filter);

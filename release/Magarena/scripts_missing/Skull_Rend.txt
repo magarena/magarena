@@ -1,6 +1,6 @@
 name=Skull Rend
-image=http://mtgimage.com/card/skull%20rend.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rtr/195.jpg
+value=2.777
 rarity=C
 type=Sorcery
 cost={3}{B}{R}

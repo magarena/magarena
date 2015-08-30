@@ -1,9 +1,10 @@
 name=Hibernation
-image=http://mtgimage.com/card/hibernation.jpg
+image=http://magiccards.info/scans/en/8e/82.jpg
 value=3.786
 rarity=U
 type=Instant
 cost={2}{U}
+ability=Cast SN with AI only if there is a green permanent on the battlefield.
+effect=Return all green permanents to their owners' hands.
 timing=removal
-requires_groovy_code
 oracle=Return all green permanents to their owners' hands.

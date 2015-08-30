@@ -1,9 +1,0 @@
-name=Ichor Explosion
-image=http://mtgimage.com/card/ichor%20explosion.jpg
-value=2.500
-rarity=U
-type=Sorcery
-cost={5}{B}{B}
-effect=As an additional cost to cast SN, sacrifice a creature.~All creatures get -X/-X until end of turn, where X is the sacrificed creature's power.
-timing=main
-oracle=As an additional cost to cast Ichor Explosion, sacrifice a creature. All creatures get -X/-X until end of turn, where X is the sacrificed creature's power.

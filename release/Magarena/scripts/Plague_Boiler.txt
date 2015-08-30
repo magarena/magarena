@@ -1,0 +1,12 @@
+name=Plague Boiler
+image=http://magiccards.info/scans/en/c13/254.jpg
+value=3.647
+rarity=R
+type=Artifact
+cost={3}
+ability=At the beginning of your upkeep, put a plague counter on SN.;\
+        {1}{B}{G}: Put a plague counter on SN.;\
+        {1}{B}{G}: Remove a plague counter from SN.;\
+        When SN has three or more plague counters on it, sacrifice SN.~Destroy all nonland permanents.
+timing=artifact
+oracle=At the beginning of your upkeep, put a plague counter on Plague Boiler.\n{1}{B}{G}: Put a plague counter on Plague Boiler or remove a plague counter from it.\nWhen Plague Boiler has three or more plague counters on it, sacrifice it. If you do, destroy all nonland permanents.

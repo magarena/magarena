@@ -1,6 +1,6 @@
 name=Angry Mob
-image=http://mtgimage.com/card/angry%20mob.jpg
-value=2.500
+image=http://magiccards.info/scans/en/med/1.jpg
+value=2.906
 rarity=U
 type=Creature
 subtype=Human
@@ -9,4 +9,4 @@ pt=2+*/2+*
 ability=Trample
 timing=main
 requires_groovy_code
-oracle=Trample. As long as it's your turn, Angry Mob's power and toughness are each equal to 2 plus the number of Swamps your opponents control. As long as it's not your turn, Angry Mob's power and toughness are each 2.
+oracle=Trample\nAs long as it's your turn, Angry Mob's power and toughness are each equal to 2 plus the number of Swamps your opponents control. As long as it's not your turn, Angry Mob's power and toughness are each 2.

@@ -1,5 +1,5 @@
 name=Cairn Wanderer
-image=http://mtgimage.com/card/cairn%20wanderer.jpg
+image=http://magiccards.info/scans/en/lw/105.jpg
 value=4.078
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=changeling
 timing=main
 requires_groovy_code
-oracle=Changeling. As long as a creature card with flying is in a graveyard, Cairn Wanderer has flying. The same is true for fear, first strike, double strike, deathtouch, haste, landwalk, lifelink, protection, reach, trample, shroud, and vigilance.
+oracle=Changeling\nAs long as a creature card with flying is in a graveyard, Cairn Wanderer has flying. The same is true for fear, first strike, double strike, deathtouch, haste, landwalk, lifelink, protection, reach, trample, shroud, and vigilance.

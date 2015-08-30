@@ -1,6 +1,6 @@
 name=Power Taint
-image=http://mtgimage.com/card/power%20taint.jpg
-value=2.500
+image=http://magiccards.info/scans/en/us/90.jpg
+value=3.485
 rarity=C
 type=Enchantment
 subtype=Aura
@@ -9,4 +9,4 @@ ability=Cycling {2}
 timing=aura
 enchant=default,neg enchantment
 requires_groovy_code
-oracle=Enchant enchantment. At the beginning of the upkeep of enchanted enchantment's controller, that player loses 2 life unless he or she pays {2}. Cycling {2}
+oracle=Enchant enchantment\nAt the beginning of the upkeep of enchanted enchantment's controller, that player loses 2 life unless he or she pays {2}.\nCycling {2}

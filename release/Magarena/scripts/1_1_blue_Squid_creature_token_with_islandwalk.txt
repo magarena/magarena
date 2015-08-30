@@ -1,9 +1,10 @@
 name=1/1 blue Squid creature token with islandwalk
 token=Squid
-image=http://media.wizards.com/images/magic/daily/arcana/0004_MTGM15_TOK_EN%20copy.png
+image=http://magiccards.info/extras/token/magic-2015/squid.jpg
 value=1
 type=Creature
 subtype=Squid
 color=u
 pt=1/1
 ability=islandwalk
+oracle=Islandwalk

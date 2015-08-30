@@ -1,5 +1,5 @@
 name=Goldenglow Moth
-image=http://mtgimage.com/card/goldenglow%20moth.jpg
+image=http://magiccards.info/scans/en/m11/15.jpg
 value=3.323
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=0/1
 ability=flying;\
         Whenever SN blocks, you may gain 4 life.
 timing=main
-oracle=Flying. Whenever Goldenglow Moth blocks, you may gain 4 life.
+oracle=Flying\nWhenever Goldenglow Moth blocks, you may gain 4 life.

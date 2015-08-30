@@ -1,10 +1,10 @@
 name=Storm Cauldron
-image=http://mtgimage.com/card/storm%20cauldron.jpg
-value=2.500
+image=http://magiccards.info/scans/en/7e/320.jpg
+value=3.802
 rarity=R
 type=Artifact
 cost={5}
 ability=Each player may play an additional land during each of his or her turns.;\
         Whenever a land is tapped for mana, return it to its owner's hand.
-timing=main
-oracle=Each player may play an additional land during each of his or her turns. Whenever a land is tapped for mana, return it to its owner's hand.
+timing=artifact
+oracle=Each player may play an additional land during each of his or her turns.\nWhenever a land is tapped for mana, return it to its owner's hand.

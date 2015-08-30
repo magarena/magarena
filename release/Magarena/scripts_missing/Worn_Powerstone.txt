@@ -1,10 +1,10 @@
 name=Worn Powerstone
-image=http://mtgimage.com/card/worn%20powerstone.jpg
+image=http://magiccards.info/scans/en/c14/282.jpg
 value=2.500
 rarity=U
 type=Artifact
 cost={3}
 ability=SN enters the battlefield tapped.;\
         {T}: Add {2} to your mana pool.
-timing=main
-oracle=Worn Powerstone enters the battlefield tapped. {T}: Add {2} to your mana pool.
+timing=artifact
+oracle=Worn Powerstone enters the battlefield tapped.\n{T}: Add {2} to your mana pool.

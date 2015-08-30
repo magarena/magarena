@@ -1,5 +1,5 @@
 name=Hammer Mage
-image=http://mtgimage.com/card/hammer%20mage.jpg
+image=http://magiccards.info/scans/en/mm/193.jpg
 value=3.486
 rarity=U
 type=Creature

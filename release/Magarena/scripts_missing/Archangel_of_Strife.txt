@@ -1,6 +1,6 @@
 name=Archangel of Strife
-image=http://mtgimage.com/card/archangel%20of%20strife.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cmd/7.jpg
+value=3.775
 rarity=R
 type=Creature
 subtype=Angel
@@ -11,4 +11,4 @@ ability=Flying;\
         Creatures controlled by players who chose war get +3/+0.;\
         Creatures controlled by players who chose peace get +0/+3.
 timing=main
-oracle=Flying. As Archangel of Strife enters the battlefield, each player chooses war or peace. Creatures controlled by players who chose war get +3/+0. Creatures controlled by players who chose peace get +0/+3.
+oracle=Flying\nAs Archangel of Strife enters the battlefield, each player chooses war or peace.\nCreatures controlled by players who chose war get +3/+0.\nCreatures controlled by players who chose peace get +0/+3.

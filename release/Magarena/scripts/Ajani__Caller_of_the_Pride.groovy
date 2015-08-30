@@ -5,7 +5,7 @@
             return new MagicEvent(
                 source,
                 new MagicMayChoice(
-                    MagicTargetChoice.POS_TARGET_CREATURE
+                    POS_TARGET_CREATURE
                 ),
                 MagicPumpTargetPicker.create(),
                 this,
@@ -16,7 +16,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    game.doAction(new MagicChangeCountersAction(it,MagicCounterType.PlusOne,1));
+                    game.doAction(new ChangeCountersAction(it,MagicCounterType.PlusOne,1));
                 });
             }
         }
@@ -26,7 +26,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.POS_TARGET_CREATURE,
+                POS_TARGET_CREATURE,
                 MagicFlyingTargetPicker.create(),
                 this,
                 "Target creature\$ gains flying and double strike until end of turn."
@@ -35,7 +35,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicGainAbilityAction(it,MagicAbility.Flying,MagicAbility.DoubleStrike));
+                game.doAction(new GainAbilityAction(it,MagicAbility.Flying,MagicAbility.DoubleStrike));
             });
         }
     },
@@ -51,7 +51,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amt = event.getPlayer().getLife();
-            game.doAction(new MagicPlayTokensAction(event.getPlayer(), TokenCardDefinitions.get("2/2 white Cat creature token"), amt));
+            game.doAction(new PlayTokensAction(event.getPlayer(), CardDefinitions.getToken("2/2 white Cat creature token"), amt));
         }
     }
 ]

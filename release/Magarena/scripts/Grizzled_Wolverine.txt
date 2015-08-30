@@ -1,5 +1,5 @@
 name=Grizzled Wolverine
-image=http://mtgimage.com/card/grizzled%20wolverine.jpg
+image=http://magiccards.info/scans/en/ia/192.jpg
 value=3.000
 rarity=C
 type=Creature

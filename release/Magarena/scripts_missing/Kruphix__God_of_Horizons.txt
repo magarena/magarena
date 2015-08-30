@@ -1,6 +1,6 @@
 name=Kruphix, God of Horizons
-image=http://mtgimage.com/card/kruphix%2C%20god%20of%20horizons.jpg
-value=2.500
+image=http://magiccards.info/scans/en/jou/152.jpg
+value=3.678
 rarity=M
 type=Legendary,Enchantment,Creature
 subtype=God
@@ -10,5 +10,5 @@ ability=Indestructible;\
         As long as your devotion to green and blue is less than seven, Kruphix isn't a creature.;\
         You have no maximum hand size.;\
         If unused mana would empty from your mana pool, that mana becomes colorless instead.
-timing=main
-oracle=Indestructible. As long as your devotion to green and blue is less than seven, Kruphix isn't a creature. You have no maximum hand size. If unused mana would empty from your mana pool, that mana becomes colorless instead.
+timing=enchantment
+oracle=Indestructible\nAs long as your devotion to green and blue is less than seven, Kruphix isn't a creature.\nYou have no maximum hand size.\nIf unused mana would empty from your mana pool, that mana becomes colorless instead.

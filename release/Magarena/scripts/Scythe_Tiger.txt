@@ -1,5 +1,5 @@
 name=Scythe Tiger
-image=http://mtgimage.com/card/scythe%20tiger.jpg
+image=http://magiccards.info/scans/en/zen/183.jpg
 value=3.805
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/2
 ability=shroud
 timing=main
 requires_groovy_code
-oracle=Shroud. When Scythe Tiger enters the battlefield, sacrifice it unless you sacrifice a land.
+oracle=Shroud\nWhen Scythe Tiger enters the battlefield, sacrifice it unless you sacrifice a land.

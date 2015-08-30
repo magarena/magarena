@@ -1,9 +1,0 @@
-name=Nomads' Assembly
-image=http://mtgimage.com/card/nomads%27%20assembly.jpg
-value=2.500
-rarity=R
-type=Sorcery
-cost={4}{W}{W}
-effect=Put a 1/1 white Kor Soldier creature token onto the battlefield for each creature you control.~Rebound
-timing=main
-oracle=Put a 1/1 white Kor Soldier creature token onto the battlefield for each creature you control. Rebound

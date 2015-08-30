@@ -1,5 +1,5 @@
 name=Cloudseeder
-image=http://mtgimage.com/card/cloudseeder.jpg
+image=http://magiccards.info/scans/en/fut/33.jpg
 value=2.635
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{U}
 pt=1/1
 ability=flying;{U}, {T}, Discard a card: Put a 1/1 blue Faerie creature token named Cloud Sprite onto the battlefield.
 timing=main
-oracle=Flying. {U}, {T}, Discard a card: Put a 1/1 blue Faerie creature token named Cloud Sprite onto the battlefield. It has flying and "Cloud Sprite can block only creatures with flying."
+oracle=Flying\n{U}, {T}, Discard a card: Put a 1/1 blue Faerie creature token named Cloud Sprite onto the battlefield. It has flying and "Cloud Sprite can block only creatures with flying."

@@ -1,5 +1,5 @@
 name=Pilgrim's Eye
-image=http://mtgimage.com/card/pilgrim's%20eye.jpg
+image=http://magiccards.info/scans/en/c14/262.jpg
 value=3.111
 rarity=C
 type=Artifact,Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=flying;\
         When SN enters the battlefield, you may search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.
 timing=artifact
-oracle=Flying. When Pilgrim's Eye enters the battlefield, you may search your library for a basic land card, reveal it, put it into your hand, then shuffle your library.
+oracle=Flying\nWhen Pilgrim's Eye enters the battlefield, you may search your library for a basic land card, reveal it, put it into your hand, then shuffle your library.

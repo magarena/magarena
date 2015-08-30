@@ -1,9 +1,0 @@
-name=Tectonic Instability
-image=http://mtgimage.com/card/tectonic%20instability.jpg
-value=2.500
-rarity=R
-type=Enchantment
-cost={2}{R}
-ability=Whenever a land enters the battlefield, tap all lands its controller controls.
-timing=main
-oracle=Whenever a land enters the battlefield, tap all lands its controller controls.

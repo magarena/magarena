@@ -1,9 +1,0 @@
-name=Worthy Cause
-image=http://mtgimage.com/card/worthy%20cause.jpg
-value=2.500
-rarity=U
-type=Instant
-cost={W}
-effect=Buyback {2}~As an additional cost to cast SN, sacrifice a creature.~You gain life equal to the sacrificed creature's toughness.
-timing=removal
-oracle=Buyback {2}. As an additional cost to cast Worthy Cause, sacrifice a creature. You gain life equal to the sacrificed creature's toughness.

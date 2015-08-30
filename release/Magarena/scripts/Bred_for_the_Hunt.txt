@@ -1,9 +1,9 @@
 name=Bred for the Hunt
-image=http://mtgimage.com/card/bred%20for%20the%20hunt.jpg
+image=http://magiccards.info/scans/en/dgm/59.jpg
 value=3.755
 rarity=U
 type=Enchantment
 cost={1}{G}{U}
+ability=Whenever a creature you control with a +1/+1 counter on it deals combat damage to a player, you may draw a card.
 timing=enchantment
-requires_groovy_code
 oracle=Whenever a creature you control with a +1/+1 counter on it deals combat damage to a player, you may draw a card.

@@ -1,5 +1,5 @@
 name=Kjeldoran Gargoyle
-image=http://mtgimage.com/card/kjeldoran%20gargoyle.jpg
+image=http://magiccards.info/scans/en/cs/10.jpg
 value=2.667
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=flying;first strike
 timing=main
 requires_groovy_code=Mourning Thrull
-oracle=Flying, first strike. Whenever Kjeldoran Gargoyle deals damage, you gain that much life.
+oracle=Flying, first strike\nWhenever Kjeldoran Gargoyle deals damage, you gain that much life.

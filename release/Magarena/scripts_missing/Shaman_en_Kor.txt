@@ -1,5 +1,5 @@
 name=Shaman en-Kor
-image=http://mtgimage.com/card/shaman%20en-kor.jpg
+image=http://magiccards.info/scans/en/sh/115.jpg
 value=2.500
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=1/2
 ability={0}: The next 1 damage that would be dealt to SN this turn is dealt to target creature you control instead.;\
         {1}{W}: The next time a source of your choice would deal damage to target creature this turn, that damage is dealt to SN instead.
 timing=main
-oracle={0}: The next 1 damage that would be dealt to Shaman en-Kor this turn is dealt to target creature you control instead. {1}{W}: The next time a source of your choice would deal damage to target creature this turn, that damage is dealt to Shaman en-Kor instead.
+oracle={0}: The next 1 damage that would be dealt to Shaman en-Kor this turn is dealt to target creature you control instead.\n{1}{W}: The next time a source of your choice would deal damage to target creature this turn, that damage is dealt to Shaman en-Kor instead.

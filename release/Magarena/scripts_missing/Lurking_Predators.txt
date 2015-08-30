@@ -1,9 +1,9 @@
 name=Lurking Predators
-image=http://mtgimage.com/card/lurking%20predators.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m10/190.jpg
+value=4.177
 rarity=R
 type=Enchantment
 cost={4}{G}{G}
 ability=Whenever an opponent casts a spell, reveal the top card of your library. If it's a creature card, put it onto the battlefield. Otherwise, you may put that card on the bottom of your library.
-timing=main
+timing=enchantment
 oracle=Whenever an opponent casts a spell, reveal the top card of your library. If it's a creature card, put it onto the battlefield. Otherwise, you may put that card on the bottom of your library.

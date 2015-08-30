@@ -1,5 +1,5 @@
 name=Primoc Escapee
-image=http://mtgimage.com/card/primoc%20escapee.jpg
+image=http://magiccards.info/scans/en/le/49.jpg
 value=2.053
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={6}{U}
 pt=4/4
 ability=flying;cycling {2}
 timing=main
-oracle=Flying. Cycling {2}
+oracle=Flying\nCycling {2}

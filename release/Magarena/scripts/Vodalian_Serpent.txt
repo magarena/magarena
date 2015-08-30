@@ -1,5 +1,5 @@
 name=Vodalian Serpent
-image=http://mtgimage.com/card/vodalian%20serpent.jpg
+image=http://magiccards.info/scans/en/in/86.jpg
 value=2.536
 rarity=C
 type=Creature
@@ -10,4 +10,4 @@ ability=Kicker {2};\
         SN can't attack unless defending player controls an Island.
 timing=main
 requires_groovy_code
-oracle=Kicker {2}. Vodalian Serpent can't attack unless defending player controls an Island. If Vodalian Serpent was kicked, it enters the battlefield with four +1/+1 counters on it.
+oracle=Kicker {2}\nVodalian Serpent can't attack unless defending player controls an Island.\nIf Vodalian Serpent was kicked, it enters the battlefield with four +1/+1 counters on it.

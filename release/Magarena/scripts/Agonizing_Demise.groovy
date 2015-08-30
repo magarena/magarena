@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_NONBLACK_CREATURE,
+                NEG_TARGET_NONBLACK_CREATURE,
                 MagicDestroyTargetPicker.DestroyNoRegen,
                 this,
                 "Destroy target nonblack creature\$. It can't be regenerated."+
@@ -14,12 +14,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(MagicChangeStateAction.Set(it,MagicPermanentState.CannotBeRegenerated));
-                game.doAction(new MagicDestroyAction(it));
+                game.doAction(ChangeStateAction.Set(it,MagicPermanentState.CannotBeRegenerated));
+                game.doAction(new DestroyAction(it));
                 if (event.isKicked()) {
-                    final MagicDamage damage=new MagicDamage(event.getSource(),it.getController(),it.getPower());
-                    game.doAction(new MagicDealDamageAction(damage));
-                    game.logAppendMessage(event.getPlayer(),"("+it.getPower()+")");
+                    game.doAction(new DealDamageAction(event.getSource(),it.getController(),it.getPower()));
+                    game.logAppendValue(event.getPlayer(),it.getPower());
                 }
             });
         }

@@ -1,6 +1,6 @@
 name=Angus Mackenzie
-image=http://mtgimage.com/card/angus%20mackenzie.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me3/141.jpg
+value=4.060
 rarity=R
 type=Legendary,Creature
 subtype=Human,Cleric

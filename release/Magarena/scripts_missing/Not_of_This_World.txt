@@ -1,10 +1,10 @@
 name=Not of This World
-image=http://mtgimage.com/card/not%20of%20this%20world.jpg
-value=2.500
+image=http://magiccards.info/scans/en/roe/8.jpg
+value=3.500
 rarity=U
 type=Tribal,Instant
 subtype=Eldrazi
 cost={7}
 effect=Counter target spell or ability that targets a permanent you control.~SN costs {7} less to cast if it targets a spell or ability that targets a creature you control with power 7 or greater.
 timing=removal
-oracle=Counter target spell or ability that targets a permanent you control. Not of This World costs {7} less to cast if it targets a spell or ability that targets a creature you control with power 7 or greater.
+oracle=Counter target spell or ability that targets a permanent you control.\nNot of This World costs {7} less to cast if it targets a spell or ability that targets a creature you control with power 7 or greater.

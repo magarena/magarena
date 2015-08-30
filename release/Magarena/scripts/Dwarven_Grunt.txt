@@ -1,5 +1,5 @@
 name=Dwarven Grunt
-image=http://mtgimage.com/card/dwarven%20grunt.jpg
+image=http://magiccards.info/scans/en/od/185.jpg
 value=2.518
 ability=mountainwalk
 rarity=C

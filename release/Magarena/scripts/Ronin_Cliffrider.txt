@@ -1,5 +1,5 @@
 name=Ronin Cliffrider
-image=http://mtgimage.com/card/ronin%20cliffrider.jpg
+image=http://magiccards.info/scans/en/bok/116.jpg
 value=3.691
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=bushido 1
 timing=main
 requires_groovy_code
-oracle=Bushido 1. Whenever Ronin Cliffrider attacks, you may have it deal 1 damage to each creature defending player controls.
+oracle=Bushido 1\nWhenever Ronin Cliffrider attacks, you may have it deal 1 damage to each creature defending player controls.

@@ -1,6 +1,6 @@
 name=Wu Scout
-image=http://mtgimage.com/card/wu%20scout.jpg
-value=2.500
+image=http://magiccards.info/scans/en/p3k/62.jpg
+value=3.379
 rarity=C
 type=Creature
 subtype=Human,Soldier,Scout
@@ -9,4 +9,4 @@ pt=1/1
 ability=Horsemanship;\
         When SN enters the battlefield, look at target opponent's hand.
 timing=main
-oracle=Horsemanship. When Wu Scout enters the battlefield, look at target opponent's hand.
+oracle=Horsemanship\nWhen Wu Scout enters the battlefield, look at target opponent's hand.

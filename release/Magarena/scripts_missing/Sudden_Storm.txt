@@ -1,6 +1,6 @@
 name=Sudden Storm
-image=http://mtgimage.com/card/sudden%20storm.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bng/53.jpg
+value=3.021
 rarity=C
 type=Instant
 cost={3}{U}

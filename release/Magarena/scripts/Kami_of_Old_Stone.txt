@@ -1,5 +1,5 @@
 name=Kami of Old Stone
-image=http://mtgimage.com/card/kami%20of%20old%20stone.jpg
+image=http://magiccards.info/scans/en/9e/24.jpg
 value=2.273
 rarity=U
 type=Creature
@@ -7,3 +7,4 @@ subtype=Spirit
 cost={3}{W}
 pt=1/7
 timing=main
+oracle=NONE

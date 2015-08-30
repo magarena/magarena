@@ -1,5 +1,5 @@
 name=Hunting Drake
-image=http://mtgimage.com/card/hunting%20drake.jpg
+image=http://magiccards.info/scans/en/ps/27.jpg
 value=2.948
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=flying;\
         When SN enters the battlefield, put target red or green creature on top of its owner's library.
 timing=main
-oracle=Flying. When Hunting Drake enters the battlefield, put target red or green creature on top of its owner's library.
+oracle=Flying\nWhen Hunting Drake enters the battlefield, put target red or green creature on top of its owner's library.

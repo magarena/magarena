@@ -1,9 +1,9 @@
 name=Reviving Dose
-image=http://mtgimage.com/card/reviving%20dose.jpg
+image=http://magiccards.info/scans/en/10e/34.jpg
 value=2.765
 rarity=C
 type=Instant
 cost={2}{W}
 effect=You gain 3 life.~Draw a card.
 timing=draw
-oracle=You gain 3 life. Draw a card.
+oracle=You gain 3 life.\nDraw a card.

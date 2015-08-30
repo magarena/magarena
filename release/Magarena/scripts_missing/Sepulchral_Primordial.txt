@@ -1,6 +1,6 @@
 name=Sepulchral Primordial
-image=http://mtgimage.com/card/sepulchral%20primordial.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gtc/75.jpg
+value=3.493
 rarity=R
 type=Creature
 subtype=Avatar
@@ -9,4 +9,4 @@ pt=5/4
 ability=Intimidate;\
         When SN enters the battlefield, for each opponent, you may put up to one target creature card from that player's graveyard onto the battlefield under your control.
 timing=main
-oracle=Intimidate. When Sepulchral Primordial enters the battlefield, for each opponent, you may put up to one target creature card from that player's graveyard onto the battlefield under your control.
+oracle=Intimidate\nWhen Sepulchral Primordial enters the battlefield, for each opponent, you may put up to one target creature card from that player's graveyard onto the battlefield under your control.

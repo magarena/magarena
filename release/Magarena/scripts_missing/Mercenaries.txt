@@ -1,6 +1,6 @@
 name=Mercenaries
-image=http://mtgimage.com/card/mercenaries.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ia/268.jpg
+value=1.214
 rarity=R
 type=Creature
 subtype=Human,Mercenary

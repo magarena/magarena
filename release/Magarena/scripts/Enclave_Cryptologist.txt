@@ -1,5 +1,5 @@
 name=Enclave Cryptologist
-image=http://mtgimage.com/card/enclave%20cryptologist.jpg
+image=http://magiccards.info/scans/en/roe/66.jpg
 value=3.944
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=0/1
 ability=level up {1}{U} 3
 timing=main
 requires_groovy_code
-oracle=Level up {1}{U}. LEVEL 1-2. 0/1. {T}: Draw a card, then discard a card. LEVEL 3+. 0/1. {T}: Draw a card.
+oracle=Level up {1}{U}\nLEVEL 1-2\n0/1\n{T}: Draw a card, then discard a card.\nLEVEL 3+\n0/1\n{T}: Draw a card.

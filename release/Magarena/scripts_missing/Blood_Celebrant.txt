@@ -1,6 +1,6 @@
 name=Blood Celebrant
-image=http://mtgimage.com/card/blood%20celebrant.jpg
-value=2.500
+image=http://magiccards.info/scans/en/le/61.jpg
+value=2.333
 rarity=C
 type=Creature
 subtype=Human,Cleric

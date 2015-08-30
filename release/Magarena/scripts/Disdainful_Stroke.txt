@@ -1,6 +1,6 @@
 name=Disdainful Stroke
-image=http://mtgimage.com/card/disdainful%20stroke.jpg
-value=3.250
+image=http://magiccards.info/scans/en/ktk/37.jpg
+value=3.200
 rarity=C
 type=Instant
 cost={1}{U}

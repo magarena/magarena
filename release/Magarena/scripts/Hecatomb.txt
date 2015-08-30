@@ -1,5 +1,5 @@
 name=Hecatomb
-image=http://mtgimage.com/card/hecatomb.jpg
+image=http://magiccards.info/scans/en/med/71.jpg
 value=3.750
 rarity=R
 type=Enchantment
@@ -7,4 +7,4 @@ cost={1}{B}{B}
 ability=Tap an untapped Swamp you control: SN deals 1 damage to target creature or player.
 timing=main
 requires_groovy_code
-oracle=When Hecatomb enters the battlefield, sacrifice Hecatomb unless you sacrifice four creatures. Tap an untapped Swamp you control: Hecatomb deals 1 damage to target creature or player.
+oracle=When Hecatomb enters the battlefield, sacrifice Hecatomb unless you sacrifice four creatures.\nTap an untapped Swamp you control: Hecatomb deals 1 damage to target creature or player.

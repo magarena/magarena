@@ -1,11 +1,11 @@
 name=Awesome Presence
-image=http://mtgimage.com/card/awesome%20presence.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ai/34.jpg
+value=3.452
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={U}
 ability=Enchant creature;\
         Enchanted creature can't be blocked unless defending player pays {3} for each creature he or she controls that's blocking it.
-timing=main
-oracle=Enchant creature. Enchanted creature can't be blocked unless defending player pays {3} for each creature he or she controls that's blocking it.
+timing=aura
+oracle=Enchant creature\nEnchanted creature can't be blocked unless defending player pays {3} for each creature he or she controls that's blocking it.

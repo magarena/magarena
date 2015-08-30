@@ -1,0 +1,12 @@
+name=Glade Watcher
+image=http://magiccards.info/scans/en/dtk/188.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elemental
+cost={1}{G}
+pt=3/3
+ability=Defender;\
+        {G}: SN can attack this turn as though it didn't have defender. Activate this ability only if creatures you control have total power 8 or greater.
+timing=main
+oracle=Defender\nFormidable — {G}: Glade Watcher can attack this turn as though it didn't have defender. Activate this ability only if creatures you control have total power 8 or greater.

@@ -1,5 +1,5 @@
 name=Astral Steel
-image=http://mtgimage.com/card/astral%20steel.jpg
+image=http://magiccards.info/scans/en/sc/2.jpg
 value=2.210
 rarity=C
 type=Instant
@@ -7,4 +7,4 @@ cost={2}{W}
 effect=Target creature gets +1/+2 until end of turn.
 ability=storm
 timing=storm
-oracle=Target creature gets +1/+2 until end of turn. Storm
+oracle=Target creature gets +1/+2 until end of turn.\nStorm

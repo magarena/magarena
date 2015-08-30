@@ -1,11 +1,11 @@
 name=Goldenhide Ox
-image=http://mtgimage.com/card/goldenhide%20ox.jpg
-value=2.500
+image=http://magiccards.info/scans/en/jou/125.jpg
+value=2.722
 rarity=U
 type=Enchantment,Creature
 subtype=Ox
 cost={5}{G}
 pt=5/4
 ability=Whenever SN or another enchantment enters the battlefield under your control, target creature must be blocked this turn if able.
-timing=main
+timing=enchantment
 oracle=Constellation — Whenever Goldenhide Ox or another enchantment enters the battlefield under your control, target creature must be blocked this turn if able.

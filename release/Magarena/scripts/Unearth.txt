@@ -1,5 +1,5 @@
 name=Unearth
-image=http://mtgimage.com/card/unearth.jpg
+image=http://magiccards.info/scans/en/ul/72.jpg
 value=4.583
 rarity=C
 type=Sorcery
@@ -7,4 +7,4 @@ cost={B}
 ability=Cycling {2}
 effect=Return target creature card with converted mana cost 3 or less from your graveyard to the battlefield.
 timing=main
-oracle=Return target creature card with converted mana cost 3 or less from your graveyard to the battlefield. Cycling {2}
+oracle=Return target creature card with converted mana cost 3 or less from your graveyard to the battlefield.\nCycling {2}

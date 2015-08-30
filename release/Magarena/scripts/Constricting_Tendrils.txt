@@ -1,5 +1,5 @@
 name=Constricting Tendrils
-image=http://mtgimage.com/card/constricting%20tendrils.jpg
+image=http://magiccards.info/scans/en/cfx/22.jpg
 value=1.559
 rarity=C
 type=Instant
@@ -7,4 +7,4 @@ cost={U}
 timing=removal
 effect=Target creature gets -3/-0 until end of turn.
 ability=cycling {2}
-oracle=Target creature gets -3/-0 until end of turn. Cycling {2}
+oracle=Target creature gets -3/-0 until end of turn.\nCycling {2}

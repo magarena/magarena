@@ -1,5 +1,5 @@
 name=Spirit of the Hearth
-image=http://mtgimage.com/card/spirit%20of%20the%20hearth.jpg
+image=http://magiccards.info/scans/en/eve/14.jpg
 value=3.827
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=4/5
 ability=flying
 timing=fmain
 requires_groovy_code
-oracle=Flying. You have hexproof.
+oracle=Flying\nYou have hexproof.

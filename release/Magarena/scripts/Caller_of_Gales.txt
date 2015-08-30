@@ -1,5 +1,5 @@
 name=Caller of Gales
-image=http://mtgimage.com/card/caller%20of%20gales.jpg
+image=http://magiccards.info/scans/en/zen/43.jpg
 value=2.761
 rarity=C
 type=Creature

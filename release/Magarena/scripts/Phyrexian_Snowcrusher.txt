@@ -1,0 +1,12 @@
+name=Phyrexian Snowcrusher
+image=http://magiccards.info/scans/en/cs/140.jpg
+value=2.612
+rarity=U
+type=Snow,Artifact,Creature
+subtype=Juggernaut
+cost={6}
+pt=6/5
+ability=SN attacks each turn if able.;\
+        {1}{S}: SN gets +1/+0 until end of turn.
+timing=artifact
+oracle=Phyrexian Snowcrusher attacks each turn if able.\n{1}{S}: Phyrexian Snowcrusher gets +1/+0 until end of turn.

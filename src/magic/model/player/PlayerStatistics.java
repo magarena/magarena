@@ -1,21 +1,21 @@
 package magic.model.player;
 
-import magic.data.FileIO;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicColor;
-import magic.model.MagicDeck;
-import magic.model.MagicGame;
-import magic.model.MagicPlayer;
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicColor;
+import magic.model.MagicDeck;
+import magic.model.MagicGame;
+import magic.model.MagicPlayer;
+import magic.utility.FileIO;
 
 public class PlayerStatistics {
 
+    // properties
     private static final String TIMESTAMP = "timestamp";
     private static final String GAMES_PLAYED = "gamesPlayed";
     private static final String GAMES_WON = "gamesWon";
@@ -29,9 +29,11 @@ public class PlayerStatistics {
     private static final String COLOR_RED = "colorRed";
     private static final String COLOR_WHITE = "colorWhite";
 
+    private static final String NO_VALUE = "---";
+
     private long millisecTimestamp;
     private final Path statsFilePath;
-    private final PlayerProfile playerProfile;
+    private final boolean isHuman;
 
     public int gamesPlayed;
     public int gamesWon;
@@ -44,10 +46,11 @@ public class PlayerStatistics {
     public int colorGreen;
     public int colorRed;
     public int colorWhite;
+    private MagicColor mostUsedColor = null;
 
-    public PlayerStatistics(final PlayerProfile playerProfile) {
-        this.playerProfile = playerProfile;
-        statsFilePath = playerProfile.getProfilePath().resolve("player.stats");
+    public PlayerStatistics(final PlayerProfile aPlayerProfile) {
+        isHuman = aPlayerProfile.isHuman();
+        statsFilePath = aPlayerProfile.getProfilePath().resolve("player.stats");
         loadStats();
     }
 
@@ -75,6 +78,14 @@ public class PlayerStatistics {
         return gamesPlayed - gamesWon;
     }
 
+    public Integer getTurnsPlayed() {
+        return turnsPlayed;
+    }
+
+    public MagicColor getMostUsedColor() {
+        return mostUsedColor;
+    }
+
     private void loadStats() {
         final File statsFile = new File(statsFilePath.toString());
         final Properties properties = statsFile.exists() ? FileIO.toProp(statsFile) : new Properties();
@@ -90,6 +101,7 @@ public class PlayerStatistics {
         colorRed = Integer.parseInt(properties.getProperty(COLOR_RED,"0"));
         colorWhite = Integer.parseInt(properties.getProperty(COLOR_WHITE,"0"));
         millisecTimestamp = Long.parseLong(properties.getProperty(TIMESTAMP, "0"));
+        setMostUsedColor();
     }
 
     public void save() {
@@ -117,10 +129,24 @@ public class PlayerStatistics {
         }
     }
 
-    public void update(
-            final boolean isPlayerWinner,
-            final MagicPlayer player,
-            final MagicGame game) {
+    private void setMostUsedColor() {
+        final int[] colorCount = new int[MagicColor.NR_COLORS];
+        colorCount[0] = colorWhite;
+        colorCount[1] = colorBlue;
+        colorCount[2] = colorBlack;
+        colorCount[3] = colorGreen;
+        colorCount[4] = colorRed;
+        int mostCount = Integer.MIN_VALUE;
+        for (final MagicColor color : MagicColor.values()) {
+            final int count = colorCount[color.ordinal()];
+            if (count > mostCount) {
+                mostCount = count;
+                mostUsedColor = color;
+            }
+        }
+    }
+
+    public void update(final boolean isPlayerWinner, final MagicPlayer player, final MagicGame game) {
 
         gamesPlayed++;
 
@@ -128,10 +154,8 @@ public class PlayerStatistics {
             gamesWon++;
         }
 
-        if (!player.getPlayerDefinition().isArtificial()) {
-            if (game.isConceded()) {
-                gamesConceded++;
-            }
+        if (player.isHuman() && game.isConceded()) {
+            gamesConceded++;
         }
 
         turnsPlayed += game.getTurn();
@@ -170,97 +194,51 @@ public class PlayerStatistics {
                 }
             }
         }
+        setMostUsedColor();
 
         save();
     }
-
-    @Override
-    public String toString() {
-
-        final int gamesLost = gamesPlayed - gamesWon;
-        final int gamesWinPercentage = getPercentage(gamesWon, gamesPlayed);
-        final int averageTurns = (gamesPlayed > 0) ? turnsPlayed / gamesPlayed : 0;
-        final int duelsLost = duelsPlayed - duelsWon;
-        final int duelsWinPercentage = getPercentage(duelsWon, duelsPlayed);
-
-        final int[] colorCount = new int[MagicColor.NR_COLORS];
-        colorCount[0] = colorWhite;
-        colorCount[1] = colorBlue;
-        colorCount[2] = colorBlack;
-        colorCount[3] = colorGreen;
-        colorCount[4] = colorRed;
-        int mostCount = Integer.MIN_VALUE;
-        MagicColor mostColor = null;
-        for (final MagicColor color : MagicColor.values()) {
-            final int count = colorCount[color.ordinal()];
-            if (count > mostCount) {
-                mostCount = count;
-                mostColor = color;
-            }
-        }
-
-        final boolean showStatValues = (gamesPlayed > 0);
-        final StatsFormatter f = new StatsFormatter(showStatValues);
-        final StringBuilder sb = new StringBuilder();
-        sb.append(f.getStatLine("Last played:\t", f.getTimestampString(millisecTimestamp)));
-        sb.append(f.getStatLine("\nDuels completed:\t", duelsPlayed));
-        sb.append(f.getStatLine("\nDuels won / lost:\t", duelsWon, " / ", duelsLost, " (", duelsWinPercentage, "%)"));
-        sb.append(f.getStatLine("\nGames played:\t", gamesPlayed));
-        sb.append(f.getStatLine("\nGames won / lost\t", gamesWon, " / ", gamesLost, " (", gamesWinPercentage, "%)"));
-        sb.append(f.getStatLine("\nGames conceded:\t", playerProfile instanceof HumanPlayer ? gamesConceded : StatsFormatter.NO_VALUE));
-        sb.append(f.getStatLine("\nTurns played:\t", turnsPlayed));
-        sb.append(f.getStatLine("\nAverage turns per game:\t", averageTurns));
-        sb.append(f.getStatLine("\nMost used color:\t", mostColor.getName()));
-
-        return sb.toString();
-
+    
+    public int getDuelsWinPercentage() {
+        return getPercentage(duelsWon, duelsPlayed);
     }
 
-    private static final int getPercentage(final int value, final int total) {
+    public int getGamesWinPercentage() {
+        return getPercentage(gamesWon, gamesPlayed);
+    }
+
+    public boolean isHumanPlayer() {
+        return isHuman;
+    }
+
+    public int getGamesConceded() {
+        return  gamesConceded;
+    }
+
+    public int getAverageTurnsPerGame() {
+        return (gamesPlayed > 0) ? turnsPlayed / gamesPlayed : 0;
+    }
+
+    private static int getPercentage(final int value, final int total) {
         return total>0 ? (value*100)/total : 0;
     }
 
     public String getLastPlayed() {
-        final StatsFormatter f = new StatsFormatter(gamesPlayed > 0);
-        return f.getTimestampString(millisecTimestamp);
+        return gamesPlayed > 0 ? getTimestampString(millisecTimestamp) : NO_VALUE;
     }
 
-    private class StatsFormatter {
-
-        public static final String NO_VALUE = "---";
-
-        private final boolean showValues;
-
-        public StatsFormatter(final boolean showValues) {
-            this.showValues = showValues;
-        }
-
-        public String getStatLine(final String stat, final Object...values) {
-            final StringBuilder sb = new StringBuilder(stat);
-            if (showValues) {
-                for (Object obj : values) {
-                    sb.append(obj);
-                }
-            } else {
-                sb.append(NO_VALUE);
+    private String getTimestampString(final long millisecs) {
+        if (millisecs > 0) {
+            final Date timestampDate = new Date(millisecTimestamp);
+            String timestampString = new SimpleDateFormat("yyyy-MM-dd").format(timestampDate);
+            final String currentString = new SimpleDateFormat("yyyy-MM-dd").format(System.currentTimeMillis());
+            if (timestampString.equals(currentString)) {
+                timestampString = new SimpleDateFormat("HH:mm").format(timestampDate);
             }
-            return sb.toString();
+            return timestampString;
+        } else {
+            return NO_VALUE;
         }
-
-        public String getTimestampString(final long millisecs) {
-            if (millisecs > 0) {
-                final Date timestampDate = new Date(millisecTimestamp);
-                String timestampString = new SimpleDateFormat("yyyy-MM-dd").format(timestampDate);
-                final String currentString = new SimpleDateFormat("yyyy-MM-dd").format(System.currentTimeMillis());
-                if (timestampString.equals(currentString)) {
-                    timestampString = new SimpleDateFormat("HH:mm").format(timestampDate);
-                }
-                return timestampString;
-            } else {
-                return NO_VALUE;
-            }
-        }
-
     }
 
 }

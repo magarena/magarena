@@ -1,11 +1,11 @@
 name=Worldslayer
-image=http://mtgimage.com/card/worldslayer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m12/222.jpg
+value=3.841
 rarity=R
 type=Artifact
 subtype=Equipment
 cost={5}
 ability=Whenever equipped creature deals combat damage to a player, destroy all permanents other than SN.;\
         Equip {5}
-timing=main
-oracle=Whenever equipped creature deals combat damage to a player, destroy all permanents other than Worldslayer. Equip {5}
+timing=equipment
+oracle=Whenever equipped creature deals combat damage to a player, destroy all permanents other than Worldslayer.\nEquip {5}

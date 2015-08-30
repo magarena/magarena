@@ -1,5 +1,5 @@
 name=Daggerclaw Imp
-image=http://mtgimage.com/card/daggerclaw%20imp.jpg
+image=http://magiccards.info/scans/en/dvd/33.jpg
 value=2.698
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{B}
 pt=3/1
 ability=flying;SN can't block.
 timing=fmain
-oracle=Flying. Daggerclaw Imp can't block.
+oracle=Flying\nDaggerclaw Imp can't block.

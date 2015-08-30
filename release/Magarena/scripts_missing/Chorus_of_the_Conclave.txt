@@ -1,6 +1,6 @@
 name=Chorus of the Conclave
-image=http://mtgimage.com/card/chorus%20of%20the%20conclave.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cmd/189.jpg
+value=3.288
 rarity=R
 type=Legendary,Creature
 subtype=Dryad
@@ -9,4 +9,4 @@ pt=3/8
 ability=Forestwalk;\
         As an additional cost to cast creature spells, you may pay any amount of mana. If you do, that creature enters the battlefield with that many additional +1/+1 counters on it.
 timing=main
-oracle=Forestwalk. As an additional cost to cast creature spells, you may pay any amount of mana. If you do, that creature enters the battlefield with that many additional +1/+1 counters on it.
+oracle=Forestwalk\nAs an additional cost to cast creature spells, you may pay any amount of mana. If you do, that creature enters the battlefield with that many additional +1/+1 counters on it.

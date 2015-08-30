@@ -1,0 +1,12 @@
+name=Boltwing Marauder
+image=http://magiccards.info/scans/en/dtk/214.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Dragon
+cost={3}{B}{R}
+pt=5/4
+ability=Flying;\
+        Whenever another creature enters the battlefield under your control, target creature gets +2/+0 until end of turn.
+timing=main
+oracle=Flying\nWhenever another creature enters the battlefield under your control, target creature gets +2/+0 until end of turn.

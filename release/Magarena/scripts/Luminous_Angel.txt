@@ -1,5 +1,5 @@
 name=Luminous Angel
-image=http://mtgimage.com/card/luminous%20angel.jpg
+image=http://magiccards.info/scans/en/dvd/12.jpg
 value=3.373
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=flying;\
         At the beginning of your upkeep, you may put a 1/1 white Spirit creature token with flying onto the battlefield.
 timing=main
-oracle=Flying. At the beginning of your upkeep, you may put a 1/1 white Spirit creature token with flying onto the battlefield.
+oracle=Flying\nAt the beginning of your upkeep, you may put a 1/1 white Spirit creature token with flying onto the battlefield.

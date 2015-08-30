@@ -1,5 +1,5 @@
 name=Mox Sapphire
-image=http://mtgimage.com/card/mox%20sapphire.jpg
+image=http://magiccards.info/scans/en/vma/9.jpg
 value=5.000
 rarity=R
 type=Artifact

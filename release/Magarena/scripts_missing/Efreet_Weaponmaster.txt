@@ -1,6 +1,6 @@
 name=Efreet Weaponmaster
-image=http://mtgimage.com/card/efreet%20weaponmaster.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/175.jpg
+value=3.000
 rarity=C
 type=Creature
 subtype=Efreet,Monk
@@ -10,4 +10,4 @@ ability=First strike;\
         When SN enters the battlefield or is turned face up, another target creature you control gets +3/+0 until end of turn.;\
         Morph {2}{U}{R}{W}
 timing=main
-oracle=First strike. When Efreet Weaponmaster enters the battlefield or is turned face up, another target creature you control gets +3/+0 until end of turn. Morph {2}{U}{R}{W}
+oracle=First strike\nWhen Efreet Weaponmaster enters the battlefield or is turned face up, another target creature you control gets +3/+0 until end of turn.\nMorph {2}{U}{R}{W}

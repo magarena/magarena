@@ -1,5 +1,5 @@
 name=Artifact Mutation
-image=http://mtgimage.com/card/artifact%20mutation.jpg
+image=http://magiccards.info/scans/en/in/231.jpg
 value=4.532
 removal=1
 rarity=R

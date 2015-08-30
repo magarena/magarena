@@ -1,5 +1,5 @@
 name=Stormtide Leviathan
-image=http://mtgimage.com/card/stormtide%20leviathan.jpg
+image=http://magiccards.info/scans/en/m15/80.jpg
 value=4.100
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=Islandwalk;\
         Creatures without flying or islandwalk can't attack.
 timing=main
 requires_groovy_code
-oracle=Islandwalk. All lands are Islands in addition to their other types. Creatures without flying or islandwalk can't attack.
+oracle=Islandwalk\nAll lands are Islands in addition to their other types.\nCreatures without flying or islandwalk can't attack.

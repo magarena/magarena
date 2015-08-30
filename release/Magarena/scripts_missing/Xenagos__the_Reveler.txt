@@ -1,6 +1,6 @@
 name=Xenagos, the Reveler
-image=http://mtgimage.com/card/xenagos%2C%20the%20reveler.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ths/209.jpg
+value=3.737
 rarity=M
 type=Planeswalker
 subtype=Xenagos
@@ -9,4 +9,4 @@ ability=+1: Add X mana in any combination of {R} and/or {G} to your mana pool, w
         0: Put a 2/2 red and green Satyr creature token with haste onto the battlefield.;\
         −6: Exile the top seven cards of your library. You may put any number of creature and/or land cards from among them onto the battlefield.
 timing=main
-oracle=+1: Add X mana in any combination of {R} and/or {G} to your mana pool, where X is the number of creatures you control. 0: Put a 2/2 red and green Satyr creature token with haste onto the battlefield. −6: Exile the top seven cards of your library. You may put any number of creature and/or land cards from among them onto the battlefield.
+oracle=+1: Add X mana in any combination of {R} and/or {G} to your mana pool, where X is the number of creatures you control.\n0: Put a 2/2 red and green Satyr creature token with haste onto the battlefield.\n−6: Exile the top seven cards of your library. You may put any number of creature and/or land cards from among them onto the battlefield.

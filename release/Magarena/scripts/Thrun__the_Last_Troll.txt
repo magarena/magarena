@@ -1,5 +1,5 @@
 name=Thrun, the Last Troll
-image=http://mtgimage.com/card/thrun%2C%20the%20last%20troll.jpg
+image=http://magiccards.info/scans/en/mbs/92.jpg
 value=4.174
 rarity=M
 type=Legendary,Creature
@@ -10,4 +10,4 @@ ability=SN can't be countered.;\
         hexproof;\
         {1}{G}: Regenerate SN.
 timing=fmain
-oracle=Thrun, the Last Troll can't be countered. Hexproof. {1}{G}: Regenerate Thrun.
+oracle=Thrun, the Last Troll can't be countered.\nHexproof\n{1}{G}: Regenerate Thrun.

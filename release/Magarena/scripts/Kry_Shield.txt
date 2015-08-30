@@ -1,0 +1,9 @@
+name=Kry Shield
+image=http://magiccards.info/scans/en/lg/227.jpg
+value=2.222
+rarity=U
+type=Artifact
+cost={2}
+timing=artifact
+requires_groovy_code
+oracle={2}, {T}: Prevent all damage that would be dealt this turn by target creature you control. That creature gets +0/+X until end of turn, where X is its converted mana cost.

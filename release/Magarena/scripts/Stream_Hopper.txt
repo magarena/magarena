@@ -1,5 +1,5 @@
 name=Stream Hopper
-image=http://mtgimage.com/card/stream%20hopper.jpg
+image=http://magiccards.info/scans/en/eve/113.jpg
 value=2.708
 rarity=C
 type=Creature

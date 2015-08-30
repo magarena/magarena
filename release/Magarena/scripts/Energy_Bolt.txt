@@ -1,0 +1,9 @@
+name=Energy Bolt
+image=http://magiccards.info/scans/en/mr/323.jpg
+value=3.205
+rarity=R
+type=Sorcery
+cost={X}{R}{W}
+timing=main
+requires_groovy_code
+oracle=Choose one —\n• Energy Bolt deals X damage to target player.\n• Target player gains X life.

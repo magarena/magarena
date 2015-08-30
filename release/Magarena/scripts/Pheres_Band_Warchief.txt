@@ -1,5 +1,5 @@
 name=Pheres-Band Warchief
-image=http://mtgimage.com/card/pheres-band%20warchief.jpg
+image=http://magiccards.info/scans/en/jou/135.jpg
 value=3.724
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=Vigilance;\
         Trample;\
         Other Centaur creatures you control get +1/+1 and have vigilance and trample.
 timing=main
-oracle=Vigilance, trample. Other Centaur creatures you control get +1/+1 and have vigilance and trample.
+oracle=Vigilance, trample\nOther Centaur creatures you control get +1/+1 and have vigilance and trample.

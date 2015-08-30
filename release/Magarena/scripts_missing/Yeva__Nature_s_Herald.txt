@@ -1,6 +1,6 @@
 name=Yeva, Nature's Herald
-image=http://mtgimage.com/card/yeva%2C%20nature%27s%20herald.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m13/197.jpg
+value=4.010
 rarity=R
 type=Legendary,Creature
 subtype=Elf,Shaman
@@ -9,4 +9,4 @@ pt=4/4
 ability=Flash;\
         You may cast green creature cards as though they had flash.
 timing=main
-oracle=Flash. You may cast green creature cards as though they had flash.
+oracle=Flash\nYou may cast green creature cards as though they had flash.

@@ -1,11 +1,11 @@
 name=White Ward
-image=http://mtgimage.com/card/white%20ward.jpg
-value=2.500
+image=http://magiccards.info/scans/en/4e/307.jpg
+value=1.642
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={W}
 ability=Enchant creature;\
         Enchanted creature has protection from white. This effect doesn't remove SN.
-timing=main
-oracle=Enchant creature. Enchanted creature has protection from white. This effect doesn't remove White Ward.
+timing=aura
+oracle=Enchant creature\nEnchanted creature has protection from white. This effect doesn't remove White Ward.

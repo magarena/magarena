@@ -1,6 +1,6 @@
 name=Crystalline Nautilus
-image=http://mtgimage.com/card/crystalline%20nautilus.jpg
-value=2.500
+image=http://magiccards.info/scans/en/jou/34.jpg
+value=3.519
 rarity=U
 type=Enchantment,Creature
 subtype=Nautilus
@@ -9,5 +9,5 @@ pt=4/4
 ability=Bestow {3}{U}{U};\
         When SN becomes the target of a spell or ability, sacrifice it.;\
         Enchanted creature gets +4/+4 and has "When this creature becomes the target of a spell or ability, sacrifice it."
-timing=main
-oracle=Bestow {3}{U}{U}. When Crystalline Nautilus becomes the target of a spell or ability, sacrifice it. Enchanted creature gets +4/+4 and has "When this creature becomes the target of a spell or ability, sacrifice it."
+timing=enchantment
+oracle=Bestow {3}{U}{U}\nWhen Crystalline Nautilus becomes the target of a spell or ability, sacrifice it.\nEnchanted creature gets +4/+4 and has "When this creature becomes the target of a spell or ability, sacrifice it."

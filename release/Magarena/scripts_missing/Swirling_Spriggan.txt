@@ -1,6 +1,6 @@
 name=Swirling Spriggan
-image=http://mtgimage.com/card/swirling%20spriggan.jpg
-value=2.500
+image=http://magiccards.info/scans/en/eve/76.jpg
+value=2.712
 rarity=U
 type=Creature
 subtype=Goblin,Shaman

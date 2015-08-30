@@ -1,6 +1,6 @@
 name=Dirtcowl Wurm
-image=http://mtgimage.com/card/dirtcowl%20wurm.jpg
-value=2.500
+image=http://magiccards.info/scans/en/br/19.jpg
+value=3.943
 rarity=R
 type=Creature
 subtype=Wurm

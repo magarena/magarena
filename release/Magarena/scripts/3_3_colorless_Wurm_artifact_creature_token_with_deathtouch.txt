@@ -7,3 +7,4 @@ subtype=Wurm
 color=
 pt=3/3
 ability=deathtouch
+oracle=Deathtouch

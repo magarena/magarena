@@ -22,7 +22,7 @@ def OPP_FOUR_LANDS_CONDITION=new MagicCondition() {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_NONBASIC_LAND,
+                NEG_TARGET_NONBASIC_LAND,
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target nonbasic land\$."
@@ -31,7 +31,7 @@ def OPP_FOUR_LANDS_CONDITION=new MagicCondition() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicDestroyAction(it));
+                game.doAction(new DestroyAction(it));
             });
         }
     }

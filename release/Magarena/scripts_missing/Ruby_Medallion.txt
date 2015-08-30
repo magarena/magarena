@@ -1,9 +1,9 @@
 name=Ruby Medallion
-image=http://mtgimage.com/card/ruby%20medallion.jpg
+image=http://magiccards.info/scans/en/c14/265.jpg
 value=2.500
 rarity=R
 type=Artifact
 cost={2}
 ability=Red spells you cast cost {1} less to cast.
-timing=main
+timing=artifact
 oracle=Red spells you cast cost {1} less to cast.

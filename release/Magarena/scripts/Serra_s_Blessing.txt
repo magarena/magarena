@@ -1,5 +1,5 @@
 name=Serra's Blessing
-image=http://mtgimage.com/card/serra%27s%20blessing.jpg
+image=http://magiccards.info/scans/en/9e/44.jpg
 value=4.377
 rarity=U
 type=Enchantment

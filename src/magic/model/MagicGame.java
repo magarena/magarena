@@ -3,13 +3,15 @@ package magic.model;
 import magic.data.GeneralConfig;
 import magic.model.action.MagicAction;
 import magic.model.action.MagicActionList;
-import magic.model.action.MagicAddEventAction;
-import magic.model.action.MagicAddFirstEventAction;
-import magic.model.action.MagicExecuteFirstEventAction;
-import magic.model.action.MagicLogMarkerAction;
-import magic.model.action.MagicMarkerAction;
-import magic.model.action.MagicPutItemOnStackAction;
-import magic.model.action.MagicRemoveFromPlayAction;
+import magic.model.action.AddEventAction;
+import magic.model.action.AddFirstEventAction;
+import magic.model.action.ExecuteFirstEventAction;
+import magic.model.action.LogMarkerAction;
+import magic.model.action.MarkerAction;
+import magic.model.action.PutItemOnStackAction;
+import magic.model.action.RemoveFromPlayAction;
+import magic.model.action.EnqueueTriggerAction;
+import magic.model.action.DequeueTriggerAction;
 import magic.model.choice.MagicCombatCreature;
 import magic.model.choice.MagicDeclareAttackersResult;
 import magic.model.choice.MagicDeclareBlockersResult;
@@ -42,8 +44,10 @@ import magic.model.trigger.MagicPermanentTriggerMap;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
+import magic.model.trigger.MagicPreventDamageTrigger;
 import magic.exception.GameException;
 
+import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -68,6 +72,7 @@ public class MagicGame {
     private final MagicCardList exiledUntilEndOfTurn;
     private final MagicEventQueue events;
     private final MagicStack stack;
+    private final MagicStack pendingStack;
     private final MagicPlayer scorePlayer;
     private final MagicGameplay gameplay;
     private final MagicActionList actions;
@@ -84,10 +89,9 @@ public class MagicGame {
     private MagicPhaseType skipTurnTill = MagicPhaseType.Mulligan;
     private boolean stateCheckRequired;
     private boolean artificial;
-    private boolean fastChoices;
     private boolean immediate;
     private boolean disableLog;
-    private MagicPlayer visiblePlayer;
+    private final MagicPlayer visiblePlayer;
     private MagicPlayer turnPlayer;
     private MagicPlayer losingPlayer = MagicPlayer.NONE;
     private MagicPhase phase;
@@ -96,12 +100,19 @@ public class MagicGame {
     private MagicActionList undoPoints;
     private MagicLogBook logBook;
     private MagicLogMessageBuilder logMessageBuilder;
-    private MagicSource activeSource = MagicEvent.NO_SOURCE;
+    private MagicSource activeSource = MagicSource.NONE;
     private long[] keys;
     private long stateId;
     private long time = 1000000;
     private boolean isConceded = false;
 
+    // affects options available to AI for each choice
+    private boolean fastMana = false;
+    private boolean fastTarget = false;
+    private boolean fastBlocker = false;
+    private boolean hintTiming = true;
+    private boolean hintPriority = true;
+    private boolean hintTarget = true;
 
     public static MagicGame getInstance() {
         return INSTANCE;
@@ -111,21 +122,13 @@ public class MagicGame {
         return COUNT;
     }
 
-    static MagicGame create(
-            final MagicDuel duel,
-            final MagicGameplay gameplay,
-            final MagicPlayer[] players,
-            final MagicPlayer startPlayer) {
+    static MagicGame create(final MagicDuel duel, final MagicGameplay gameplay, final MagicPlayer[] players, final MagicPlayer startPlayer) {
         COUNT++;
         INSTANCE = new MagicGame(duel, gameplay, players, startPlayer);
         return INSTANCE;
     }
 
-    private MagicGame(
-            final MagicDuel aDuel,
-            final MagicGameplay aGameplay,
-            final MagicPlayer[] aPlayers,
-            final MagicPlayer startPlayer) {
+    private MagicGame(final MagicDuel aDuel, final MagicGameplay aGameplay, final MagicPlayer[] aPlayers, final MagicPlayer startPlayer) {
 
         artificial=false;
         duel = aDuel;
@@ -142,6 +145,7 @@ public class MagicGame {
         exiledUntilEndOfTurn=new MagicCardList();
         events=new MagicEventQueue();
         stack=new MagicStack();
+        pendingStack=new MagicStack();
         visiblePlayer=players[0];
         scorePlayer=visiblePlayer;
         turnPlayer=startPlayer;
@@ -191,6 +195,7 @@ public class MagicGame {
         //construct a new object using copyMap to copy internals
         events=new MagicEventQueue(copyMap, game.events);
         stack=new MagicStack(copyMap, game.stack);
+        pendingStack=new MagicStack(copyMap, game.pendingStack);
         triggers=new MagicPermanentTriggerMap(copyMap, game.triggers);
         additionalTriggers=new MagicPermanentTriggerMap(copyMap, game.additionalTriggers);
         statics=new MagicPermanentStaticMap(copyMap, game.statics);
@@ -200,8 +205,13 @@ public class MagicGame {
         turnTriggers=new MagicPermanentTriggerList(triggers, game.turnTriggers);
 
         //the following are NOT copied when game state is cloned
-        //fastChoices
+        //fastMana
+        //fastTarget
+        //fastBlocker
         //immediate
+        //hintTiming
+        //hintPriority
+        //hintTarget
         //skipTurnTill
         //mainPhaseCount
 
@@ -214,7 +224,7 @@ public class MagicGame {
         //there should be no pending actions
         assert game.delayedActions.isEmpty() : "delayedActions: " + game.delayedActions;
         delayedActions=new MagicActionList();
-
+        
         //no logging
         disableLog = true;
         undoPoints=null;
@@ -224,6 +234,10 @@ public class MagicGame {
 
     public void skipTurnTill(final MagicPhaseType skip) {
         skipTurnTill = skip;
+    }
+    
+    public void clearSkipTurnTill() {
+        skipTurnTill = MagicPhaseType.Mulligan;
     }
 
     public boolean shouldSkip() {
@@ -257,11 +271,12 @@ public class MagicGame {
             landsPlayed,
             maxLands,
             priorityPassedCount,
-            (creatureDiedThisTurn ? 1L : -1L),
-            (priorityPassed ? 1L : -1L),
-            (stateCheckRequired ? 1L : -1L),
+            creatureDiedThisTurn ? 1L : -1L,
+            priorityPassed       ? 1L : -1L,
+            stateCheckRequired   ? 1L : -1L,
             payedCost.getStateId(),
             stack.getStateId(),
+            pendingStack.getStateId(),
             events.getStateId(),
             players[0].getStateId(),
             players[1].getStateId(),
@@ -336,14 +351,6 @@ public class MagicGame {
         return false;
     }
 
-    private int getArtificialLevel() {
-        return duel.getDifficulty();
-    }
-
-    public int getArtificialLevel(final int idx) {
-        return duel.getDifficulty(idx);
-    }
-
     public boolean isArtificial() {
         return artificial;
     }
@@ -356,12 +363,58 @@ public class MagicGame {
         artificial = art;
     }
 
-    public void setFastChoices(final boolean aFastChoices) {
-        fastChoices = aFastChoices;
+    public boolean getFastMana() {
+        return fastMana;
+    }
+    
+    public void setFastMana(final boolean v) {
+        fastMana = v;
+    }
+    
+    public boolean getFastTarget() {
+        return fastTarget;
+    }
+    
+    public void setFastTarget(final boolean v) {
+        fastTarget = v;
+    }
+    
+    public boolean getFastBlocker() {
+        return fastBlocker;
+    }
+    
+    public void setFastBlocker(final boolean v) {
+        fastBlocker = v;
     }
 
-    public boolean getFastChoices() {
-        return fastChoices;
+    public void setFastChoices(final boolean v) {
+        fastMana = v;
+        fastTarget = v;
+        fastBlocker = v;
+    }
+
+    public boolean getHintTiming() {
+        return hintTiming;
+    }
+
+    public void setHintTiming(final boolean v) {
+        hintTiming = v;
+    }
+    
+    public boolean getHintPriority() {
+        return hintPriority;
+    }
+
+    public void setHintPriority(final boolean v) {
+        hintPriority = v;
+    }
+    
+    public boolean getHintTarget() {
+        return hintTarget;
+    }
+
+    public void setHintTarget(final boolean v) {
+        hintTarget = v;
     }
 
     public void setTurn(final int aTurn) {
@@ -479,7 +532,7 @@ public class MagicGame {
 
     public void showRandomizedHiddenCards() {
         getOpponent(scorePlayer).showRandomizedHandAndLibrary();
-        scorePlayer.getLibrary().shuffle(MagicRandom.nextRNGInt(999999));
+        scorePlayer.getLibrary().shuffle(MagicRandom.nextRNGInt());
         scorePlayer.getLibrary().setAIKnown(true);
     }
 
@@ -509,10 +562,11 @@ public class MagicGame {
     public void update() {
         doDelayedActions();
         MagicPermanent.update(this);
-       
+
         // add Soulbond trigger here
         triggers = new MagicPermanentTriggerMap(additionalTriggers);
-        triggers.add(new MagicPermanentTrigger(0,MagicPermanent.NONE,MagicWhenOtherComesIntoPlayTrigger.Soulbond));
+        triggers.add(new MagicPermanentTrigger(0, MagicPermanent.NONE, MagicWhenOtherComesIntoPlayTrigger.Soulbond));
+        triggers.add(new MagicPermanentTrigger(Long.MAX_VALUE, MagicPermanent.NONE, MagicPreventDamageTrigger.GlobalPreventDamageToTarget));
 
         for (final MagicPlayer player : players) {
         for (final MagicPermanent perm : player.getPermanents()) {
@@ -563,12 +617,12 @@ public class MagicGame {
             doAction(action);
         }
     }
-    
+
     public void snapshot() {
-        final MagicAction markerAction=new MagicMarkerAction();
+        final MagicAction markerAction=new MarkerAction();
         doAction(markerAction);
         if (artificial == false) {
-            doAction(new MagicLogMarkerAction());
+            doAction(new LogMarkerAction());
             undoPoints.addLast(markerAction);
         }
     }
@@ -588,7 +642,7 @@ public class MagicGame {
                 actions.addLast(action);
                 throw new GameException(ex, this);
             }
-        } while (!(action instanceof MagicMarkerAction));
+        } while (!(action instanceof MarkerAction));
     }
 
     public void undoAllActions() {
@@ -634,6 +688,20 @@ public class MagicGame {
             return;
         }
         logMessageBuilder.appendMessage(player,message);
+    }
+
+    public void logAppendValue(final MagicPlayer player, final int amount) {
+        if (disableLog) {
+            return;
+        }
+        logMessageBuilder.appendMessage(player, "(" + amount + ")");
+    }
+
+    public void logAppendX(final MagicPlayer player, final int X) {
+        if (disableLog) {
+            return;
+        }
+        logMessageBuilder.appendMessage(player, "(X="+X+")");
     }
 
     public void logMessage(final MagicPlayer player,final String message) {
@@ -687,7 +755,7 @@ public class MagicGame {
         if (event.getManaChoiceResultIndex() >= 0) {
             payedCost.set(choiceResults[event.getManaChoiceResultIndex()]);
         }
-        
+
         // Target in cost
         if (event.getTargetChoiceResultIndex() >= 0) {
             payedCost.set(choiceResults[event.getTargetChoiceResultIndex()]);
@@ -723,20 +791,39 @@ public class MagicGame {
         return false;
     }
 
-    public void addEvent(final MagicEvent event) {
-        doAction(new MagicAddEventAction(event));
+    public List<Object[]> advanceToNextEventWithChoices() {
+        while (isFinished() == false) {
+            if (hasNextEvent() == false) {
+                executePhase();
+            } else if (getNextEvent().hasChoice() == false) {
+                executeNextEvent();
+            } else {
+                final MagicEvent event = getNextEvent();
+                final List<Object[]> choices = event.getArtificialChoiceResults(this);
+                if (choices.size() == 1) {
+                    executeNextEvent(choices.get(0));
+                } else {
+                    return choices;
+                }
+            }
+        }
+        return Collections.emptyList();
     }
-    
+
+    public void addEvent(final MagicEvent event) {
+        doAction(new AddEventAction(event));
+    }
+
     public void addFirstEvent(final MagicEvent event) {
-        doAction(new MagicAddFirstEventAction(event));
+        doAction(new AddFirstEventAction(event));
     }
 
     public void executeNextEvent(final Object[] choiceResults) {
-        doAction(new MagicExecuteFirstEventAction(choiceResults));
+        doAction(new ExecuteFirstEventAction(choiceResults));
     }
 
     public void executeNextEvent() {
-        doAction(new MagicExecuteFirstEventAction(MagicEvent.NO_CHOICE_RESULTS));
+        doAction(new ExecuteFirstEventAction(MagicEvent.NO_CHOICE_RESULTS));
     }
 
     public MagicDuel getDuel() {
@@ -756,8 +843,8 @@ public class MagicGame {
      * <p>
      * @see <a href="http://www.slightlymagic.net/forum/viewtopic.php?f=115&p=155684">APNAP forum topic</a>
      */
-    public MagicPlayer[] getAPNAP() {
-        return new MagicPlayer[]{turnPlayer, turnPlayer.getOpponent()};
+    public List<MagicPlayer> getAPNAP() {
+        return Arrays.asList(turnPlayer, turnPlayer.getOpponent());
     }
 
     public MagicPlayer getPlayer(final int index) {
@@ -768,10 +855,9 @@ public class MagicGame {
         return players[1-player.getIndex()];
     }
 
-    public void setVisiblePlayer(final MagicPlayer aVisiblePlayer) {
-        visiblePlayer = aVisiblePlayer;
-    }
-
+    /**
+     * Player whose hand is shown by default at the start of a game.
+     */
     public MagicPlayer getVisiblePlayer() {
         return visiblePlayer;
     }
@@ -807,7 +893,7 @@ public class MagicGame {
     public MagicPlayer getLosingPlayer() {
         return losingPlayer;
     }
-    
+
     public MagicSource getActiveSource() {
         return activeSource;
     }
@@ -815,26 +901,32 @@ public class MagicGame {
     public boolean hasTurn(final MagicPlayer player) {
         return player == turnPlayer;
     }
+    
+    public int getNrOfPermanents(final MagicPermanentState state) {
+        return players[0].getNrOfPermanents(state) +
+               players[1].getNrOfPermanents(state);
+    }
 
     public int getNrOfPermanents(final MagicType type) {
         return players[0].getNrOfPermanents(type) +
                players[1].getNrOfPermanents(type);
     }
-    
+
     public int getNrOfPermanents(final MagicSubType subType) {
         return players[0].getNrOfPermanents(subType) +
                players[1].getNrOfPermanents(subType);
     }
-    
+
     public int getNrOfPermanents(final MagicColor color) {
         return players[0].getNrOfPermanents(color) +
                players[1].getNrOfPermanents(color);
     }
 
     public int getNrOfPermanents(final MagicTargetFilter<MagicPermanent> filter) {
-        return filterPermanents(filter).size();
+        return players[0].getNrOfPermanents(filter) +
+               players[1].getNrOfPermanents(filter);
     }
-    
+
     public boolean canPlaySorcery(final MagicPlayer controller) {
         return phase.getType().isMain() &&
                stack.isEmpty() &&
@@ -865,7 +957,7 @@ public class MagicGame {
         maxLands++;
     }
 
-    public void resetMaxLands() { 
+    public void resetMaxLands() {
         maxLands = 1;
     }
 
@@ -876,7 +968,7 @@ public class MagicGame {
         }
         return spellCount;
     }
-    
+
     public int getSpellsCastLastTurn() {
         int spellCount = 0;
         for (final MagicPlayer player : players) {
@@ -888,7 +980,7 @@ public class MagicGame {
     public void incSpellsCast(final MagicPlayer player) {
         player.incSpellsCast();
     }
-    
+
     public boolean getCreatureDiedThisTurn() {
         return creatureDiedThisTurn;
     }
@@ -899,6 +991,14 @@ public class MagicGame {
 
     public MagicStack getStack() {
         return stack;
+    }
+
+    public MagicStack getPendingTriggers() {
+        return pendingStack;
+    }
+
+    public boolean hasItem(final MagicSource source, final String desc) {
+       return stack.hasItem(source, desc) || pendingStack.hasItem(source, desc);
     }
 
     public void setPriorityPassed(final boolean passed) {
@@ -920,7 +1020,7 @@ public class MagicGame {
     public int getPriorityPassedCount() {
         return priorityPassedCount;
     }
-    
+
     public MagicSource createDelayedSource(final MagicObject obj, final MagicPlayer controller) {
         return new MagicCard(obj.getCardDefinition(), controller.map(this), getUniqueId());
     }
@@ -928,7 +1028,7 @@ public class MagicGame {
     public MagicPermanent createPermanent(final MagicCard card,final MagicPlayer controller) {
         return new MagicPermanent(getUniqueId(),card,controller);
     }
-    
+
     public MagicPermanent createPermanent(final MagicCard card, final MagicCardDefinition cardDef, final MagicPlayer controller) {
         return new MagicPermanent(getUniqueId(),card,cardDef,controller);
     }
@@ -949,7 +1049,7 @@ public class MagicGame {
         return stateCheckRequired;
     }
 
-    public void checkState() {
+    public void checkStatePutTriggers() {
         while (stateCheckRequired) {
             stateCheckRequired = false;
 
@@ -967,13 +1067,22 @@ public class MagicGame {
             update();
             // some action may set stateCheckRequired to true, if so loop again
         }
+
+        // update log with messages from state-based actions
+        logMessages();
+
+        // put pending triggers on stack
+        while (pendingStack.isEmpty() == false) {
+            doAction(new PutItemOnStackAction(pendingStack.peek()));
+            doAction(new DequeueTriggerAction());
+        }
     }
 
     public void checkUniquenessRule(final MagicPermanent permanent) {
         // 704.5k "legend rule"
         if (permanent.hasType(MagicType.Legendary)) {
             final MagicTargetFilter<MagicPermanent> targetFilter=new MagicLegendaryCopiesFilter(permanent.getName());
-            final Collection<MagicPermanent> targets=filterPermanents(permanent.getController(),targetFilter);
+            final Collection<MagicPermanent> targets=targetFilter.filter(permanent.getController());
             if (targets.size() > 1) {
                 addEvent(new MagicUniquenessEvent(permanent, targetFilter));
             }
@@ -982,28 +1091,23 @@ public class MagicGame {
         // 704.5j "planeswalker uniqueness rule."
         if (permanent.hasType(MagicType.Planeswalker)) {
             final MagicTargetFilter<MagicPermanent> targetFilter=new MagicPlaneswalkerCopiesFilter(permanent);
-            final Collection<MagicPermanent> targets=filterPermanents(permanent.getController(),targetFilter);
+            final Collection<MagicPermanent> targets=targetFilter.filter(permanent.getController());
             if (targets.size() > 1) {
                 addEvent(new MagicUniquenessEvent(permanent, targetFilter));
             }
         }
-    
+
         // 704.5m "world rule"
         if (permanent.hasType(MagicType.World)) {
-            final Collection<MagicPermanent> targets=filterPermanents(
-                permanent.getController(),
-                new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilterFactory.WORLD,
-                    permanent
-                )
-            );
+            final MagicTargetFilter<MagicPermanent> targetFilter = new MagicOtherPermanentTargetFilter(MagicTargetFilterFactory.WORLD, permanent);
+            final Collection<MagicPermanent> targets = targetFilter.filter(permanent.getController());
             for (final MagicPermanent world : targets) {
                 logAppendMessage(
                     world.getController(),
                     world.getName() + " is put into its owner's graveyard."
                 );
-                doAction(new MagicRemoveFromPlayAction(
-                    world, 
+                doAction(new RemoveFromPlayAction(
+                    world,
                     MagicLocationType.Graveyard
                 ));
             }
@@ -1021,7 +1125,7 @@ public class MagicGame {
                 assert obj == null ||
                        obj instanceof Enum ||
                        obj instanceof Number ||
-                       obj instanceof String : 
+                       obj instanceof String :
                        obj.getClass().getName() + " not mapped";
                 mappedData[index]=obj;
             }
@@ -1030,51 +1134,15 @@ public class MagicGame {
     }
 
     // ***** TARGETTING *****
-    
-    public List<MagicTarget> filterTargets(final MagicPlayer player,final MagicTargetFilter<MagicTarget> targetFilter) {
-        return targetFilter.filter(this, player, MagicTargetHint.None);
-    }
-    
-    public List<MagicPlayer> filterPlayers(final MagicPlayer player,final MagicTargetFilter<MagicPlayer> targetFilter) {
-        return targetFilter.filter(this, player, MagicTargetHint.None);
-    }
 
-    public List<MagicPermanent> filterPermanents(final MagicPlayer player,final MagicTargetFilter<MagicPermanent> targetFilter) {
-        return targetFilter.filter(this, player, MagicTargetHint.None);
-    }
-    
-    public List<MagicPermanent> filterPermanents(final MagicTargetFilter<MagicPermanent> targetFilter) {
-        return targetFilter.filter(this, turnPlayer, MagicTargetHint.None);
-    }
-
-    public List<MagicCard> filterCards(final MagicPlayer player,final MagicTargetFilter<MagicCard> targetFilter) {
-        return targetFilter.filter(this, player, MagicTargetHint.None);
-    }
-    
-    public List<MagicCard> filterCards(final MagicTargetFilter<MagicCard> targetFilter) {
-        return targetFilter.filter(this, turnPlayer, MagicTargetHint.None);
-    }
-
-    public List<MagicItemOnStack> filterItemOnStack(final MagicPlayer player,final MagicTargetFilter<MagicItemOnStack> targetFilter) {
-        return targetFilter.filter(this, player, MagicTargetHint.None);
-    }
-    
-    public List<MagicItemOnStack> filterItemOnStack(final MagicTargetFilter<MagicItemOnStack> targetFilter) {
-        return targetFilter.filter(this, turnPlayer, MagicTargetHint.None);
-    }
-
-    public boolean hasLegalTargets(
-            final MagicPlayer player,
-            final MagicSource source,
-            final MagicTargetChoice targetChoice,
-            final boolean hints) {
+    public boolean hasLegalTargets(final MagicPlayer player, final MagicSource source, final MagicTargetChoice targetChoice, final boolean hints) {
 
         if (targetChoice == MagicTargetChoice.NONE) {
             return true;
         }
 
         final Collection<? extends MagicTarget> targets = targetChoice.getTargetFilter().filter(
-            this,
+            source,
             player,
             targetChoice.getTargetHint(hints)
         );
@@ -1092,14 +1160,10 @@ public class MagicGame {
         return false;
     }
 
-    public List<MagicTarget> getLegalTargets(
-            final MagicPlayer player,
-            final MagicSource source,
-            final MagicTargetChoice targetChoice,
-            final MagicTargetHint targetHint) {
+    public List<MagicTarget> getLegalTargets(final MagicPlayer player, final MagicSource source, final MagicTargetChoice targetChoice, final MagicTargetHint targetHint) {
 
         final Collection<? extends MagicTarget> targets = targetChoice.getTargetFilter().filter(
-            this,
+            source,
             player,
             targetHint
         );
@@ -1128,18 +1192,14 @@ public class MagicGame {
         return options;
     }
 
-    public <T extends MagicTarget> boolean isLegalTarget(
-            final MagicPlayer player,
-            final MagicSource source,
-            final MagicTargetChoice targetChoice,
-            final T target) {
+    public <T extends MagicTarget> boolean isLegalTarget(final MagicPlayer player, final MagicSource source, final MagicTargetChoice targetChoice, final T target) {
 
         @SuppressWarnings("unchecked")
         MagicTargetFilter<T> targetFilter = (MagicTargetFilter<T>)targetChoice.getTargetFilter();
 
         if (target==null ||
             target==MagicTargetNone.getInstance() ||
-            !targetFilter.accept(this,player,target)) {
+            !targetFilter.accept(source,player,target)) {
             return false;
         }
 
@@ -1157,13 +1217,13 @@ public class MagicGame {
             addStatic(permanent, mstatic);
         }
     }
-    
+
     public void addStatics(final MagicPermanent permanent, final Collection<MagicStatic> mstatics) {
         for (final MagicStatic mstatic : mstatics) {
             addStatic(permanent, mstatic);
         }
     }
-    
+
     public Collection<MagicPermanentStatic> removeSelfStatics(final MagicPermanent permanent) {
         return statics.remove(permanent, permanent.getStatics());
     }
@@ -1197,7 +1257,7 @@ public class MagicGame {
     public void removeStatic(final MagicPermanent permanent,final MagicStatic mstatic) {
         statics.remove(permanent, mstatic);
     }
-    
+
     public void removeStatics(final MagicPermanent permanent,final Collection<MagicStatic> mstatics) {
         statics.remove(permanent, mstatics);
     }
@@ -1209,7 +1269,7 @@ public class MagicGame {
     public void setImmediate(final boolean aImmediate) {
         immediate = aImmediate;
     }
-    
+
     public boolean isImmediate() {
         return immediate;
     }
@@ -1264,11 +1324,7 @@ public class MagicGame {
         return additionalTriggers.remove(permanent);
     }
 
-    public <T> void executeTrigger(
-            final MagicTrigger<T> trigger,
-            final MagicPermanent permanent,
-            final MagicSource source,
-            final T data) {
+    public <T> void executeTrigger(final MagicTrigger<T> trigger, final MagicPermanent permanent, final MagicSource source, final T data) {
 
         if (trigger.accept(permanent, data) == false) {
             return;
@@ -1284,12 +1340,12 @@ public class MagicGame {
             if (event.hasChoice()) {
                 // ignore
             } else if (trigger.usesStack()) {
-                doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(event)));
+                doAction(new EnqueueTriggerAction(event));
             } else {
                 executeEvent(event, MagicEvent.NO_CHOICE_RESULTS);
             }
         } else if (trigger.usesStack()) {
-            doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(event)));
+            doAction(new EnqueueTriggerAction(event));
         } else {
             addEvent(event);
         }

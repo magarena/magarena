@@ -1,0 +1,11 @@
+name=Scourge of Fleets
+image=http://magiccards.info/scans/en/ddo/41.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Kraken
+cost={5}{U}{U}
+pt=6/6
+timing=main
+requires_groovy_code
+oracle=When Scourge of Fleets enters the battlefield, return each creature your opponents control with toughness X or less to its owner's hand, where X is the number of Islands you control.

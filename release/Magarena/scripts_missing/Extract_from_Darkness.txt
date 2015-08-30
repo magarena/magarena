@@ -1,6 +1,6 @@
 name=Extract from Darkness
-image=http://mtgimage.com/card/extract%20from%20darkness.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cns/45.jpg
+value=3.885
 rarity=U
 type=Sorcery
 cost={3}{U}{B}

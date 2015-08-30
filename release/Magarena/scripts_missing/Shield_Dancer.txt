@@ -1,6 +1,6 @@
 name=Shield Dancer
-image=http://mtgimage.com/card/shield%20dancer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pr/23.jpg
+value=3.862
 rarity=U
 type=Creature
 subtype=Human,Rebel

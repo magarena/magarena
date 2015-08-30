@@ -1,6 +1,6 @@
 name=Turn the Tables
-image=http://mtgimage.com/card/turn%20the%20tables.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ds/18.jpg
+value=3.364
 rarity=R
 type=Instant
 cost={3}{W}{W}

@@ -1,0 +1,254 @@
+Acid-Spewer Dragon
+Aerie Bowmasters
+Ainok Artillerist
+Ainok Survivalist
+Ambuscade Shaman
+Anafenza, Kin-Tree Spirit
+Ancestral Statue
+Ancient Carp
+Anticipate
+Arashin Foremost
+Arashin Sovereign
+Artful Maneuver
+Assault Formation
+Atarka Beastbreaker
+Atarka Efreet
+Atarka Monument
+Atarka Pummeler
+Atarka's Command
+Avatar of the Resolute
+Aven Sunstriker
+Aven Tactician
+Battle Mastery
+Belltoll Dragon
+Berserkers' Onslaught
+Blessed Reincarnation
+Blood-Chin Fanatic
+Blood-Chin Rager
+Boltwing Marauder
+Butcher's Glee
+Center Soul
+Champion of Arashin
+Circle of Elders
+Clone Legion
+Coat with Venom
+Collected Company
+Colossodon Yearling
+Commune with Lava
+Conifer Strider
+Contradict
+Corpseweft
+Crater Elemental
+Cunning Breezedancer
+Custodian of the Trove
+Damnable Pact
+Dance of the Skywise
+Deadly Wanderings
+Death Wind
+Deathbringer Regent
+Deathmist Raptor
+Defeat
+Den Protector
+Descent of the Dragons
+Dirgur Nemesis
+Display of Dominance
+Draconic Roar
+Dragon Fodder
+Dragon Hunter
+Dragon Tempest
+Dragon Whisperer
+Dragon's Eye Sentry
+Dragon-Scarred Bear
+Dragonloft Idol
+Dragonlord Atarka
+Dragonlord Dromoka
+Dragonlord Kolaghan
+Dragonlord Ojutai
+Dragonlord Silumgar
+Dragonlord's Prerogative
+Dragonlord's Servant
+Dromoka Captain
+Dromoka Dunecaster
+Dromoka Monument
+Dromoka Warrior
+Dromoka's Command
+Dromoka's Gift
+Duress
+Dutiful Attendant
+Echoes of the Kin Tree
+Elusive Spellfist
+Encase in Ice
+Enduring Scalelord
+Enduring Victory
+Epic Confrontation
+Evolving Wilds
+Explosive Vegetation
+Fate Forgotten
+Flatten
+Foe-Razer Regent
+Forest
+Foul Renewal
+Foul-Tongue Invocation
+Foul-Tongue Shriek
+Gate Smasher
+Glade Watcher
+Glaring Aegis
+Gleam of Authority
+Glint
+Graceblade Artisan
+Gravepurge
+Great Teacher's Decree
+Guardian Shield-Bearer
+Gudul Lurker
+Gurmag Drowner
+Hand of Silumgar
+Harbinger of the Hunt
+Hardened Berserker
+Haven of the Spirit Dragon
+Hedonist's Trove
+Herald of Dromoka
+Herdchaser Dragon
+Hidden Dragonslayer
+Icefall Regent
+Illusory Gains
+Impact Tremors
+Inspiring Call
+Ire Shaman
+Island
+Keeper of the Lens
+Kindled Fury
+Kolaghan Aspirant
+Kolaghan Forerunners
+Kolaghan Monument
+Kolaghan Skirmisher
+Kolaghan Stormsinger
+Kolaghan's Command
+Learn from the Past
+Lightning Berserker
+Lightwalker
+Living Lore
+Lose Calm
+Lurking Arynx
+Magmatic Chasm
+Marang River Skeleton
+Marsh Hulk
+Mind Rot
+Minister of Pain
+Mirror Mockery
+Misthoof Kirin
+Monastery Loremaster
+Mountain
+Mystic Meditation
+Myth Realized
+Narset Transcendent
+Naturalize
+Necromaster Dragon
+Negate
+Obscuring Æther
+Ojutai Exemplars
+Ojutai Interceptor
+Ojutai Monument
+Ojutai's Breath
+Ojutai's Command
+Ojutai's Summons
+Orator of Ojutai
+Pacifism
+Palace Familiar
+Pinion Feast
+Pitiless Horde
+Plains
+Press the Advantage
+Pristine Skywise
+Profaner of the Dead
+Profound Journey
+Qal Sisma Behemoth
+Qarsi Deceiver
+Qarsi Sadist
+Radiant Purge
+Rakshasa Gravecaller
+Reckless Imp
+Reduce in Stature
+Rending Volley
+Resupply
+Revealing Wind
+Risen Executioner
+Roast
+Ruthless Deathfang
+Sabertooth Outrider
+Salt Road Ambushers
+Salt Road Quartermasters
+Sandcrafter Mage
+Sandsteppe Scavenger
+Sandstorm Charger
+Sarkhan Unbroken
+Sarkhan's Rage
+Sarkhan's Triumph
+Savage Ventmaw
+Scale Blessing
+Scaleguard Sentinels
+Scion of Ugin
+Screamreach Brawler
+Secure the Wastes
+Segmented Krotiq
+Seismic Rupture
+Self-Inflicted Wound
+Servant of the Scale
+Shaman of Forgotten Ways
+Shambling Goblin
+Shape the Sands
+Sheltered Aerie
+Shieldhide Dragon
+Shorecrasher Elemental
+Sibsig Icebreakers
+Sidisi's Faithful
+Sidisi, Undead Vizier
+Sight Beyond Sight
+Sight of the Scalelords
+Silkwrap
+Silumgar Assassin
+Silumgar Butcher
+Silumgar Monument
+Silumgar Sorcerer
+Silumgar Spell-Eater
+Silumgar's Command
+Silumgar's Scorn
+Skywise Teachings
+Spidersilk Net
+Sprinting Warbrute
+Stampeding Elk Herd
+Stormcrag Elemental
+Stormrider Rig
+Stormwing Dragon
+Stratus Dancer
+Strongarm Monk
+Student of Ojutai
+Summit Prowler
+Sunbringer's Touch
+Sunscorch Regent
+Surge of Righteousness
+Surrak, the Hunt Caller
+Swamp
+Swift Warkite
+Taigam's Strike
+Tail Slash
+Tapestry of the Ages
+Territorial Roc
+Thunderbreak Regent
+Tormenting Voice
+Tread Upon
+Twin Bolt
+Ukud Cobra
+Ultimate Price
+Updraft Elemental
+Vandalize
+Vial of Dragonfire
+Virulent Plague
+Void Squall
+Volcanic Rush
+Volcanic Vision
+Vulturous Aven
+Wandering Tombshell
+Warbringer
+Youthful Scholar
+Zephyr Scribe
+Zurgo Bellstriker

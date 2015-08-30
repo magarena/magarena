@@ -1,11 +1,11 @@
 name=Fractured Loyalty
-image=http://mtgimage.com/card/fractured%20loyalty.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mi/93.jpg
+value=3.259
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{R}
 ability=Enchant creature;\
         Whenever enchanted creature becomes the target of a spell or ability, that spell or ability's controller gains control of that creature.
-timing=main
-oracle=Enchant creature. Whenever enchanted creature becomes the target of a spell or ability, that spell or ability's controller gains control of that creature.
+timing=aura
+oracle=Enchant creature\nWhenever enchanted creature becomes the target of a spell or ability, that spell or ability's controller gains control of that creature.

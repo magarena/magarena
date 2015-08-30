@@ -1,6 +1,6 @@
 name=Kjeldoran Knight
-image=http://mtgimage.com/card/kjeldoran%20knight.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ia/260.jpg
+value=3.324
 rarity=R
 type=Creature
 subtype=Human,Knight
@@ -10,4 +10,4 @@ ability=Banding;\
         {1}{W}: SN gets +1/+0 until end of turn.;\
         {W}{W}: SN gets +0/+2 until end of turn.
 timing=main
-oracle=Banding. {1}{W}: Kjeldoran Knight gets +1/+0 until end of turn. {W}{W}: Kjeldoran Knight gets +0/+2 until end of turn.
+oracle=Banding\n{1}{W}: Kjeldoran Knight gets +1/+0 until end of turn.\n{W}{W}: Kjeldoran Knight gets +0/+2 until end of turn.

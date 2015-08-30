@@ -1,0 +1,11 @@
+name=Atarka Beastbreaker
+image=http://magiccards.info/scans/en/dtk/174.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={1}{G}
+pt=2/2
+ability={4}{G}: SN gets +4/+4 until end of turn. Activate this ability only if creatures you control have total power 8 or greater.
+timing=main
+oracle=Formidable — {4}{G}: Atarka Beastbreaker gets +4/+4 until end of turn. Activate this ability only if creatures you control have total power 8 or greater.

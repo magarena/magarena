@@ -1,5 +1,5 @@
 name=Kinsbaile Balloonist
-image=http://mtgimage.com/card/kinsbaile%20balloonist.jpg
+image=http://magiccards.info/scans/en/lw/23.jpg
 value=2.736
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=flying;\
         Whenever SN attacks, you may have target creature gain flying until end of turn.
 timing=main
-oracle=Flying. Whenever Kinsbaile Balloonist attacks, you may have target creature gain flying until end of turn.
+oracle=Flying\nWhenever Kinsbaile Balloonist attacks, you may have target creature gain flying until end of turn.

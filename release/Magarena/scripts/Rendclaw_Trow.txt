@@ -1,5 +1,5 @@
 name=Rendclaw Trow
-image=http://mtgimage.com/card/rendclaw%20trow.jpg
+image=http://magiccards.info/scans/en/eve/127.jpg
 value=3.286
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{B/G}
 pt=2/2
 ability=wither;persist
 timing=smain
-oracle=Wither. Persist
+oracle=Wither\nPersist

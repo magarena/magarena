@@ -15,7 +15,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                NEG_TARGET_CREATURE_OR_PLAYER,
                 payedCost.getX(), 
                 this,
                 "SN deals RN damage to target creature or player\$."
@@ -24,7 +24,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
-                game.doAction(new MagicDealDamageAction(
+                game.doAction(new DealDamageAction(
                     event.getSource(),
                     it,
                     event.getRefInt()

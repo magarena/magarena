@@ -1,9 +1,9 @@
 name=Teferi's Veil
-image=http://mtgimage.com/card/teferi%27s%20veil.jpg
-value=2.500
+image=http://magiccards.info/scans/en/wl/53.jpg
+value=4.207
 rarity=U
 type=Enchantment
 cost={1}{U}
 ability=Whenever a creature you control attacks, it phases out at end of combat.
-timing=main
+timing=enchantment
 oracle=Whenever a creature you control attacks, it phases out at end of combat.

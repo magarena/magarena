@@ -1,6 +1,6 @@
 name=Lowland Tracker
-image=http://mtgimage.com/card/lowland%20tracker.jpg
-value=2.500
+image=http://magiccards.info/scans/en/le/17.jpg
+value=2.542
 rarity=C
 type=Creature
 subtype=Human,Soldier
@@ -9,4 +9,4 @@ pt=2/2
 ability=First strike;\
         Provoke
 timing=main
-oracle=First strike. Provoke
+oracle=First strike\nProvoke

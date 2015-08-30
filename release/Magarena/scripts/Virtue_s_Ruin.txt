@@ -1,9 +1,10 @@
 name=Virtue's Ruin
-image=http://mtgimage.com/card/virtue's%20ruin.jpg
+image=http://magiccards.info/scans/en/po/39.jpg
 value=4.202
 rarity=U
 type=Sorcery
 cost={2}{B}
+ability=Cast SN with AI only if an opponent controls a white creature.
 effect=Destroy all white creatures.
 timing=main
 oracle=Destroy all white creatures.

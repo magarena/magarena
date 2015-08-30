@@ -1,8 +1,9 @@
 name=Taiga
-image=http://mtgimage.com/set/me4/taiga.jpg
+image=http://magiccards.info/scans/en/vma/317.jpg
 value=4.500
 rarity=R
 type=Land
 subtype=Mountain,Forest
 mana=r4g4
 timing=land
+oracle=NONE

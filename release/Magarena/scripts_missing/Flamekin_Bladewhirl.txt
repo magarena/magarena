@@ -1,6 +1,6 @@
 name=Flamekin Bladewhirl
-image=http://mtgimage.com/card/flamekin%20bladewhirl.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lw/165.jpg
+value=2.933
 rarity=U
 type=Creature
 subtype=Elemental,Warrior

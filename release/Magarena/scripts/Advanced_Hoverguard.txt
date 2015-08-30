@@ -1,11 +1,12 @@
 name=Advanced Hoverguard
-image=http://mtgimage.com/card/advanced%20hoverguard.jpg
+image=http://magiccards.info/scans/en/5dn/22.jpg
 value=2.326
 rarity=C
 type=Creature
 subtype=Drone
 cost={3}{U}
 pt=2/2
-ability=flying;{U}: SN gains shroud until end of turn.
+ability=Flying;\
+        {U}: SN gains shroud until end of turn.
 timing=main
-oracle=Flying. {U}: Advanced Hoverguard gains shroud until end of turn.
+oracle=Flying\n{U}: Advanced Hoverguard gains shroud until end of turn.

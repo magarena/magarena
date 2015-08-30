@@ -1,9 +1,9 @@
 name=Hidden Spider
-image=http://mtgimage.com/card/hidden%20spider.jpg
-value=2.500
+image=http://magiccards.info/scans/en/us/264.jpg
+value=4.030
 rarity=C
 type=Enchantment
 cost={G}
 ability=When an opponent casts a creature spell with flying, if SN is an enchantment, SN becomes a 3/5 Spider creature with reach.
-timing=main
+timing=enchantment
 oracle=When an opponent casts a creature spell with flying, if Hidden Spider is an enchantment, Hidden Spider becomes a 3/5 Spider creature with reach.

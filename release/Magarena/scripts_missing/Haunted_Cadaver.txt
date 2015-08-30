@@ -1,6 +1,6 @@
 name=Haunted Cadaver
-image=http://mtgimage.com/card/haunted%20cadaver.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/154.jpg
+value=3.329
 rarity=C
 type=Creature
 subtype=Zombie
@@ -9,4 +9,4 @@ pt=2/2
 ability=Whenever SN deals combat damage to a player, you may sacrifice it. If you do, that player discards three cards.;\
         Morph {1}{B}
 timing=main
-oracle=Whenever Haunted Cadaver deals combat damage to a player, you may sacrifice it. If you do, that player discards three cards. Morph {1}{B}
+oracle=Whenever Haunted Cadaver deals combat damage to a player, you may sacrifice it. If you do, that player discards three cards.\nMorph {1}{B}

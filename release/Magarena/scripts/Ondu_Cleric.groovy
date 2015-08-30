@@ -6,14 +6,9 @@
                     otherPermanent.hasSubType(MagicSubType.Ally)) ?
                 new MagicEvent(
                     permanent,
-                    new MagicSimpleMayChoice(
-                        MagicSimpleMayChoice.GAIN_LIFE,
-                        1,
-                        MagicSimpleMayChoice.DEFAULT_YES
-                    ),
+                    new MagicSimpleMayChoice(),
                     this,
-                    "PN may\$ gain life equal to " +
-                    "the number of Allies he or she controls."
+                    "PN may\$ gain life equal to the number of Allies he or she controls."
                 ) :
                 MagicEvent.NONE;
         }
@@ -23,7 +18,7 @@
             if (event.isYes()) {
                 final MagicPlayer player = event.getPlayer();
                 final int amount =  player.getNrOfPermanents(MagicSubType.Ally);
-                game.doAction(new MagicChangeLifeAction(player,amount));
+                game.doAction(new ChangeLifeAction(player,amount));
             }
         }
     }

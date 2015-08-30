@@ -1,6 +1,6 @@
 name=Archery Training
-image=http://mtgimage.com/card/archery%20training.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ud/2.jpg
+value=3.922
 rarity=U
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={W}
 ability=Enchant creature;\
         At the beginning of your upkeep, you may put an arrow counter on SN.;\
         Enchanted creature has "{T}: This creature deals X damage to target attacking or blocking creature, where X is the number of arrow counters on SN."
-timing=main
-oracle=Enchant creature. At the beginning of your upkeep, you may put an arrow counter on Archery Training. Enchanted creature has "{T}: This creature deals X damage to target attacking or blocking creature, where X is the number of arrow counters on Archery Training."
+timing=aura
+oracle=Enchant creature\nAt the beginning of your upkeep, you may put an arrow counter on Archery Training.\nEnchanted creature has "{T}: This creature deals X damage to target attacking or blocking creature, where X is the number of arrow counters on Archery Training."

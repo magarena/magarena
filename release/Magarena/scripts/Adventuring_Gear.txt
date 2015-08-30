@@ -1,11 +1,11 @@
 name=Adventuring Gear
-image=http://mtgimage.com/card/adventuring%20gear.jpg
+image=http://magiccards.info/scans/en/zen/195.jpg
 value=3.471
 rarity=C
 type=Artifact
 subtype=Equipment
 cost={1}
-ability=Equip {1}
+ability=Whenever a land enters the battlefield under your control, equipped creature gets +2/+2 until end of turn.;\
+        Equip {1}
 timing=equipment
-requires_groovy_code
-oracle=Landfall — Whenever a land enters the battlefield under your control, equipped creature gets +2/+2 until end of turn. Equip {1}
+oracle=Landfall — Whenever a land enters the battlefield under your control, equipped creature gets +2/+2 until end of turn.\nEquip {1}

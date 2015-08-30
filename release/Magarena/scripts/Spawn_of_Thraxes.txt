@@ -1,0 +1,12 @@
+name=Spawn of Thraxes
+image=http://magiccards.info/scans/en/jou/112.jpg
+value=3.364
+rarity=R
+type=Creature
+subtype=Dragon
+cost={5}{R}{R}
+pt=5/5
+ability=Flying;\
+        When SN enters the battlefield, SN deals damage to target creature or player equal to the number of Mountains you control.
+timing=main
+oracle=Flying\nWhen Spawn of Thraxes enters the battlefield, it deals damage to target creature or player equal to the number of Mountains you control.

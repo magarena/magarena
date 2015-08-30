@@ -1,5 +1,5 @@
 name=Pox
-image=http://mtgimage.com/card/pox.jpg
+image=http://magiccards.info/scans/en/med/82.jpg
 value=4.458
 rarity=R
 type=Sorcery

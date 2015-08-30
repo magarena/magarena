@@ -1,5 +1,5 @@
 def NONLAIR_LAND_YOU_CONTROL = new MagicPermanentFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
         return !target.hasSubType(MagicSubType.Lair) && target.isLand() && target.isController(player);
     } 
 };
@@ -26,7 +26,7 @@ def A_NONLAIR_LAND_YOU_CONTROL = new MagicTargetChoice(
             if (event.isYes() && bounce.isSatisfied()) {
                 game.addEvent(bounce);
             } else {
-                game.doAction(new MagicSacrificeAction(event.getPermanent()));
+                game.doAction(new SacrificeAction(event.getPermanent()));
             }
         }
     }

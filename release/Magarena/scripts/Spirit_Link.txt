@@ -1,5 +1,5 @@
 name=Spirit Link
-image=http://mtgimage.com/card/spirit%20link.jpg
+image=http://magiccards.info/scans/en/10e/45.jpg
 value=4.023
 rarity=U
 type=Enchantment
@@ -8,4 +8,4 @@ cost={W}
 timing=aura
 enchant=lifelink,creature
 requires_groovy_code
-oracle=Enchant creature. Whenever enchanted creature deals damage, you gain that much life.
+oracle=Enchant creature\nWhenever enchanted creature deals damage, you gain that much life.

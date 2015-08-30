@@ -1,5 +1,5 @@
 name=Moss Diamond
-image=http://mtgimage.com/card/moss%20diamond.jpg
+image=http://magiccards.info/scans/en/c14/252.jpg
 value=2.545
 rarity=U
 type=Artifact
@@ -7,4 +7,4 @@ cost={2}
 ability=SN enters the battlefield tapped.;\
         {T}: Add {G} to your mana pool.
 timing=artifact
-oracle=Moss Diamond enters the battlefield tapped. {T}: Add {G} to your mana pool.
+oracle=Moss Diamond enters the battlefield tapped.\n{T}: Add {G} to your mana pool.

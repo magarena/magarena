@@ -1,6 +1,6 @@
 name=Autochthon Wurm
-image=http://mtgimage.com/card/autochthon%20wurm.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rav/191.jpg
+value=3.818
 rarity=R
 type=Creature
 subtype=Wurm
@@ -9,4 +9,4 @@ pt=9/14
 ability=Convoke;\
         Trample
 timing=main
-oracle=Convoke. Trample
+oracle=Convoke\nTrample

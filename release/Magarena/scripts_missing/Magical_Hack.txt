@@ -1,6 +1,6 @@
 name=Magical Hack
-image=http://mtgimage.com/card/magical%20hack.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5e/101.jpg
+value=3.106
 rarity=R
 type=Instant
 cost={U}

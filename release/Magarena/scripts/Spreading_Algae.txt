@@ -1,12 +1,12 @@
 name=Spreading Algae
-image=http://mtgimage.com/card/spreading%20algae.jpg
+image=http://magiccards.info/scans/en/8e/281.jpg
 value=3.500
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={G}
 timing=aura
-ability=When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.
+ability=When enchanted land becomes tapped, destroy RN.;\
+        When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.
 enchant=destroy,neg swamp
-requires_groovy_code=Brink of Disaster
-oracle=Enchant Swamp. When enchanted land becomes tapped, destroy it. When Spreading Algae is put into a graveyard from the battlefield, return Spreading Algae to its owner's hand.
+oracle=Enchant Swamp\nWhen enchanted land becomes tapped, destroy it.\nWhen Spreading Algae is put into a graveyard from the battlefield, return Spreading Algae to its owner's hand.

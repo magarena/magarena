@@ -1,5 +1,5 @@
 name=Saving Grasp
-image=http://mtgimage.com/card/saving%20grasp.jpg
+image=http://magiccards.info/scans/en/dka/46.jpg
 value=3.327
 rarity=C
 type=Instant
@@ -7,4 +7,4 @@ cost={U}
 effect=Return target creature you own to your hand.
 ability=Flashback {W}
 timing=removal
-oracle=Return target creature you own to your hand. Flashback {W}
+oracle=Return target creature you own to your hand.\nFlashback {W}

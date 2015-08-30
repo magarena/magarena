@@ -3,7 +3,7 @@ package magic.model.event;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeCountersAction;
+import magic.model.action.ChangeCountersAction;
 
 public class MagicAddCounterEvent extends MagicEvent {
 
@@ -13,7 +13,7 @@ public class MagicAddCounterEvent extends MagicEvent {
             new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MagicChangeCountersAction(
+                    game.doAction(new ChangeCountersAction(
                         event.getPermanent(),
                         counterType,
                         amount

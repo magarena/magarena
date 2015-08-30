@@ -1,10 +1,10 @@
 name=Sensei's Divining Top
-image=http://mtgimage.com/card/sensei%27s%20divining%20top.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/268.jpg
+value=4.588
 rarity=U
 type=Artifact
 cost={1}
 ability={1}: Look at the top three cards of your library, then put them back in any order.;\
         {T}: Draw a card, then put SN on top of its owner's library.
-timing=main
-oracle={1}: Look at the top three cards of your library, then put them back in any order. {T}: Draw a card, then put Sensei's Divining Top on top of its owner's library.
+timing=artifact
+oracle={1}: Look at the top three cards of your library, then put them back in any order.\n{T}: Draw a card, then put Sensei's Divining Top on top of its owner's library.

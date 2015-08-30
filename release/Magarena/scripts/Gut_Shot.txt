@@ -1,5 +1,5 @@
 name=Gut Shot
-image=http://mtgimage.com/card/gut%20shot.jpg
+image=http://magiccards.info/scans/en/nph/86.jpg
 value=3.901
 removal=1
 rarity=U

@@ -1,6 +1,6 @@
 name=Duct Crawler
-image=http://mtgimage.com/card/duct%20crawler.jpg
-value=2.500
+image=http://magiccards.info/scans/en/10e/198.jpg
+value=2.847
 rarity=C
 type=Creature
 subtype=Insect

@@ -1,5 +1,5 @@
 name=Winged Coatl
-image=http://mtgimage.com/card/winged%20coatl.jpg
+image=http://magiccards.info/scans/en/c13/226.jpg
 value=3.833
 removal=2
 rarity=C
@@ -9,4 +9,4 @@ cost={1}{G}{U}
 pt=1/1
 ability=flash;flying;deathtouch
 timing=flash
-oracle=Flash. Flying. Deathtouch
+oracle=Flash\nFlying\nDeathtouch

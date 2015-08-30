@@ -1,0 +1,11 @@
+name=Spiritual Asylum
+image=http://magiccards.info/scans/en/ne/23.jpg
+value=3.436
+rarity=R
+type=Enchantment
+cost={2}{W}{W}
+ability=Creatures and lands you control have shroud.;\
+        When a creature you control attacks, sacrifice SN.
+static=player
+timing=main
+oracle=Creatures and lands you control have shroud.\nWhen a creature you control attacks, sacrifice Spiritual Asylum.

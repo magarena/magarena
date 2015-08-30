@@ -1,9 +1,9 @@
 name=North Star
-image=http://mtgimage.com/card/north%20star.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lg/233.jpg
+value=1.571
 rarity=R
 type=Artifact
 cost={4}
 ability={4}, {T}: For one spell this turn, you may spend mana as though it were mana of any color to pay that spell's mana cost.
-timing=main
+timing=artifact
 oracle={4}, {T}: For one spell this turn, you may spend mana as though it were mana of any color to pay that spell's mana cost.

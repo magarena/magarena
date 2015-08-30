@@ -1,5 +1,5 @@
 name=Ring of Kalonia
-image=http://mtgimage.com/card/ring%20of%20kalonia.jpg
+image=http://magiccards.info/scans/en/m13/212.jpg
 value=3.777
 rarity=U
 type=Artifact
@@ -9,4 +9,4 @@ ability=Equipped creature has trample.;\
         Equip {1}
 timing=equipment
 requires_groovy_code
-oracle=Equipped creature has trample. At the beginning of your upkeep, put a +1/+1 counter on equipped creature if it's green. Equip {1}
+oracle=Equipped creature has trample.\nAt the beginning of your upkeep, put a +1/+1 counter on equipped creature if it's green.\nEquip {1}

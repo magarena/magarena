@@ -1,5 +1,5 @@
 name=Sip of Hemlock
-image=http://mtgimage.com/card/sip%20of%20hemlock.jpg
+image=http://magiccards.info/scans/en/ths/106.jpg
 value=2.011
 rarity=C
 type=Sorcery

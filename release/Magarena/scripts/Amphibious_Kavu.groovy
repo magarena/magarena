@@ -21,21 +21,15 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeTurnPTAction(
-                event.getPermanent(),
-                3,
-                3
-            ));
+            game.doAction(new ChangeTurnPTAction(event.getPermanent(),3,3));
         }
     },
-    new MagicWhenBlocksTrigger() {
+    new MagicWhenSelfBlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
             final MagicPermanent blocked = permanent.getBlockedCreature();
-            return (permanent == blocker &&
-                    blocked.isValid() &&
-                    (blocked.hasColor(MagicColor.Blue) ||
-                     blocked.hasColor(MagicColor.Black))) ?
+            return (blocked.hasColor(MagicColor.Blue) ||
+                     blocked.hasColor(MagicColor.Black)) ?
                 new MagicEvent(
                     permanent,
                     this,
@@ -45,12 +39,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeTurnPTAction(
-                event.getPermanent(),
-                3,
-                3
-            ));
+            game.doAction(new ChangeTurnPTAction(event.getPermanent(),3,3));
         }
     }
 ]
-

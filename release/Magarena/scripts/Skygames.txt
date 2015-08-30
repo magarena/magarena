@@ -1,5 +1,5 @@
 name=Skygames
-image=http://mtgimage.com/card/skygames.jpg
+image=http://magiccards.info/scans/en/gtc/51.jpg
 value=2.019
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={1}{U}
 enchant=pump,pos land
 ability=Enchanted land has "{T}: Target creature gains flying until end of turn. Activate this ability only any time you could cast a sorcery."
 timing=enchantment
-oracle=Enchant land. Enchanted land has "{T}: Target creature gains flying until end of turn. Activate this ability only any time you could cast a sorcery."
+oracle=Enchant land\nEnchanted land has "{T}: Target creature gains flying until end of turn. Activate this ability only any time you could cast a sorcery."

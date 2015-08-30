@@ -1,6 +1,6 @@
 name=Oracle of Bones
-image=http://mtgimage.com/card/oracle%20of%20bones.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bng/103.jpg
+value=3.762
 rarity=R
 type=Creature
 subtype=Minotaur,Shaman
@@ -10,4 +10,4 @@ ability=Haste;\
         Tribute 2;\
         When SN enters the battlefield, if tribute wasn't paid, you may cast an instant or sorcery card from your hand without paying its mana cost.
 timing=main
-oracle=Haste. Tribute 2. When Oracle of Bones enters the battlefield, if tribute wasn't paid, you may cast an instant or sorcery card from your hand without paying its mana cost.
+oracle=Haste\nTribute 2\nWhen Oracle of Bones enters the battlefield, if tribute wasn't paid, you may cast an instant or sorcery card from your hand without paying its mana cost.

@@ -1,5 +1,5 @@
 name=Durkwood Boars
-image=http://mtgimage.com/card/durkwood%20boars.jpg
+image=http://magiccards.info/scans/en/st2k/3.jpg
 value=2.136
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Boar
 cost={4}{G}
 pt=4/4
 timing=main
+oracle=NONE

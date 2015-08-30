@@ -1,5 +1,5 @@
 name=Silent Attendant
-image=http://mtgimage.com/card/silent%20attendant.jpg
+image=http://magiccards.info/scans/en/us/51.jpg
 value=2.515
 rarity=C
 type=Creature

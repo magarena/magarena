@@ -1,5 +1,5 @@
 name=Scarwood Goblins
-image=http://mtgimage.com/card/scarwood%20goblins.jpg
+image=http://magiccards.info/scans/en/dk/119.jpg
 value=2.060
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Goblin
 cost={R}{G}
 pt=2/2
 timing=main
+oracle=NONE

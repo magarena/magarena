@@ -1,5 +1,5 @@
 name=Spell Snip
-image=http://mtgimage.com/card/spell%20snip.jpg
+image=http://magiccards.info/scans/en/ala/57.jpg
 value=1.200
 rarity=C
 type=Instant
@@ -7,4 +7,4 @@ cost={2}{U}
 timing=counter
 effect=Counter target spell unless its controller pays {1}.
 ability=cycling {2}
-oracle=Counter target spell unless its controller pays {1}. Cycling {2}
+oracle=Counter target spell unless its controller pays {1}.\nCycling {2}

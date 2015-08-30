@@ -20,7 +20,7 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
+                TARGET_CREATURE_YOU_CONTROL,
                 new MagicBecomeTargetPicker(7,7,false),
                 this,
                 "Target creature\$ you control becomes 7/7 until end of turn."
@@ -30,7 +30,7 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicBecomesCreatureAction(it,PT));
+                game.doAction(new BecomesCreatureAction(it,PT));
             });
         }
     }

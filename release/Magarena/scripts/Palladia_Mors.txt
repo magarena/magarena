@@ -1,5 +1,5 @@
 name=Palladia-Mors
-image=http://mtgimage.com/card/palladia-mors.jpg
+image=http://magiccards.info/scans/en/me3/164.jpg
 value=3.904
 rarity=R
 type=Legendary,Creature
@@ -10,4 +10,4 @@ ability=flying;\
         trample;\
         At the beginning of your upkeep, you may pay {R}{G}{W}. If you don't, sacrifice SN.
 timing=main
-oracle=Flying, trample. At the beginning of your upkeep, sacrifice Palladia-Mors unless you pay {R}{G}{W}.
+oracle=Flying, trample\nAt the beginning of your upkeep, sacrifice Palladia-Mors unless you pay {R}{G}{W}.

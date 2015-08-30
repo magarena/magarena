@@ -6,10 +6,7 @@
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
-                new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
-                    source
-                ),
+                CREATURE_YOU_CONTROL.except(source),
                 MagicTargetHint.None,
                 "a creature other than " + source + " to sacrifice"
             );
@@ -31,7 +28,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicGainAbilityAction(
+            game.doAction(new GainAbilityAction(
                 event.getPermanent(),
                 event.getChosenColor().getProtectionAbility()
             ));

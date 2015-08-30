@@ -13,7 +13,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
                 new MagicCMCCardFilter(
-                    MagicTargetFilterFactory.CREATURE_CARD_FROM_HAND,
+                    CREATURE_CARD_FROM_HAND,
                     Operator.EQUAL,
                     source.getCounters(MagicCounterType.Charge)
                 ),
@@ -33,8 +33,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCard(game, {
-                game.doAction(new MagicRemoveCardAction(it,MagicLocationType.OwnersHand));
-                game.doAction(new MagicPlayCardAction(it,event.getPlayer()));
+                game.doAction(new ReturnCardAction(MagicLocationType.OwnersHand,it,event.getPlayer()));
             });
         }
     }

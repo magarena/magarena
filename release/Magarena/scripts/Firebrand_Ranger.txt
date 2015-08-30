@@ -1,5 +1,5 @@
 name=Firebrand Ranger
-image=http://mtgimage.com/card/firebrand%20ranger.jpg
+image=http://magiccards.info/scans/en/in/143.jpg
 value=3.393
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Wall of Diffusion
-image=http://mtgimage.com/card/wall%20of%20diffusion.jpg
+image=http://magiccards.info/scans/en/vma/191.jpg
 value=3.184
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=0/5
 ability=defender;\
         SN can block creatures with shadow as though SN had shadow.
 timing=smain
-oracle=Defender. Wall of Diffusion can block creatures with shadow as though Wall of Diffusion had shadow.
+oracle=Defender\nWall of Diffusion can block creatures with shadow as though Wall of Diffusion had shadow.

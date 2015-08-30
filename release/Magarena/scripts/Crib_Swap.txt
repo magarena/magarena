@@ -1,5 +1,5 @@
 name=Crib Swap
-image=http://mtgimage.com/card/crib%20swap.jpg
+image=http://magiccards.info/scans/en/lw/11.jpg
 value=4.065
 rarity=U
 type=Tribal,Instant
@@ -9,4 +9,4 @@ ability=changeling
 timing=removal
 removal=4
 requires_groovy_code
-oracle=Changeling. Exile target creature. Its controller puts a 1/1 colorless Shapeshifter creature token with changeling onto the battlefield.
+oracle=Changeling\nExile target creature. Its controller puts a 1/1 colorless Shapeshifter creature token with changeling onto the battlefield.

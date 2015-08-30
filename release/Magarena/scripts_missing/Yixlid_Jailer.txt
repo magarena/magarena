@@ -1,6 +1,6 @@
 name=Yixlid Jailer
-image=http://mtgimage.com/card/yixlid%20jailer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/fut/93.jpg
+value=4.424
 rarity=U
 type=Creature
 subtype=Zombie,Wizard

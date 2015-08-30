@@ -1,6 +1,6 @@
 name=Warmonger
-image=http://mtgimage.com/card/warmonger.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/225.jpg
+value=3.423
 rarity=U
 type=Creature
 subtype=Minotaur,Monger

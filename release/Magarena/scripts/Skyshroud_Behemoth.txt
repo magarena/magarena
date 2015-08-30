@@ -1,5 +1,5 @@
 name=Skyshroud Behemoth
-image=http://mtgimage.com/card/skyshroud%20behemoth.jpg
+image=http://magiccards.info/scans/en/ne/116.jpg
 value=2.007
 rarity=R
 type=Creature
@@ -8,4 +8,4 @@ cost={5}{G}{G}
 pt=10/10
 ability=SN enters the battlefield tapped.;fading 2
 timing=main
-oracle=Fading 2. Skyshroud Behemoth enters the battlefield tapped.
+oracle=Fading 2\nSkyshroud Behemoth enters the battlefield tapped.

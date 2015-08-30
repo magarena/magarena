@@ -1,5 +1,5 @@
 name=Squirrel Wrangler
-image=http://mtgimage.com/card/squirrel%20wrangler.jpg
+image=http://magiccards.info/scans/en/pr/127.jpg
 value=3.990
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability={1}{G},Sacrifice a land: Put two 1/1 green Squirrel creature tokens onto the battlefield.;\
         {1}{G},Sacrifice a land: Squirrel creatures get +1/+1 until end of turn.
 timing=main
-oracle={1}{G}, Sacrifice a land: Put two 1/1 green Squirrel creature tokens onto the battlefield. {1}{G}, Sacrifice a land: Squirrel creatures get +1/+1 until end of turn.
+oracle={1}{G}, Sacrifice a land: Put two 1/1 green Squirrel creature tokens onto the battlefield.\n{1}{G}, Sacrifice a land: Squirrel creatures get +1/+1 until end of turn.

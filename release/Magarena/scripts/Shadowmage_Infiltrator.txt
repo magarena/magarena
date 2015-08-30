@@ -1,5 +1,5 @@
 name=Shadowmage Infiltrator
-image=http://mtgimage.com/card/shadowmage%20infiltrator.jpg
+image=http://magiccards.info/scans/en/tsts/99.jpg
 value=4.357
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=1/3
 ability=fear;\
         Whenever SN deals combat damage to a player, you may draw a card.
 timing=main
-oracle=Fear. Whenever Shadowmage Infiltrator deals combat damage to a player, you may draw a card.
+oracle=Fear\nWhenever Shadowmage Infiltrator deals combat damage to a player, you may draw a card.

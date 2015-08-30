@@ -1,6 +1,6 @@
 name=Cruel Fate
-image=http://mtgimage.com/card/cruel%20fate.jpg
-value=2.500
+image=http://magiccards.info/scans/en/po/51.jpg
+value=1.819
 rarity=R
 type=Sorcery
 cost={4}{U}

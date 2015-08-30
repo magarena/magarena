@@ -1,5 +1,5 @@
 name=Soulless One
-image=http://mtgimage.com/card/soulless%20one.jpg
+image=http://magiccards.info/scans/en/pch/41.jpg
 value=4.383
 rarity=U
 type=Creature

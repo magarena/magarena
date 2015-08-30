@@ -1,5 +1,5 @@
 name=Siege Behemoth
-image=http://mtgimage.com/card/siege%20behemoth.jpg
+image=http://magiccards.info/scans/en/c14/46.jpg
 value=2.500
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=7/4
 ability=Hexproof;\
         As long as SN is attacking, for each creature you control, you may have that creature assign its combat damage as though it weren't blocked.
 timing=main
-oracle=Hexproof. As long as Siege Behemoth is attacking, for each creature you control, you may have that creature assign its combat damage as though it weren't blocked.
+oracle=Hexproof\nAs long as Siege Behemoth is attacking, for each creature you control, you may have that creature assign its combat damage as though it weren't blocked.

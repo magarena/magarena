@@ -1,5 +1,5 @@
 name=Molimo, Maro-Sorcerer
-image=http://mtgimage.com/card/molimo%2C%20maro%2Dsorcerer.jpg
+image=http://magiccards.info/scans/en/arc/64.jpg
 value=4.043
 rarity=R
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=*/*
 ability=trample;\
         SN's power and toughness are each equal to the number of lands you control.
 timing=smain
-oracle=Trample. Molimo, Maro-Sorcerer's power and toughness are each equal to the number of lands you control.
+oracle=Trample\nMolimo, Maro-Sorcerer's power and toughness are each equal to the number of lands you control.

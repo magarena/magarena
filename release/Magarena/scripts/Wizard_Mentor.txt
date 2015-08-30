@@ -1,5 +1,5 @@
 name=Wizard Mentor
-image=http://mtgimage.com/card/wizard%20mentor.jpg
+image=http://magiccards.info/scans/en/us/112.jpg
 value=3.323
 rarity=C
 type=Creature

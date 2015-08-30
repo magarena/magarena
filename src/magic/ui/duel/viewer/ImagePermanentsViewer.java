@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Set;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
+import magic.ui.utility.GraphicsUtils;
 import magic.ui.SwingGameController;
 
 public class ImagePermanentsViewer extends JPanel {
@@ -20,8 +21,8 @@ public class ImagePermanentsViewer extends JPanel {
     private static final int HORIZONTAL_SPACING = 40;
     private static final int VERTICAL_SPACING = 30;
 
-    private static final float CARD_WIDTH = (float) CONFIG.getMaxCardImageSize().width;
-    private static final float CARD_HEIGHT = (float) CONFIG.getMaxCardImageSize().height;
+    private static final float CARD_WIDTH = (float) GraphicsUtils.getMaxCardImageSize().width;
+    private static final float CARD_HEIGHT = (float) GraphicsUtils.getMaxCardImageSize().height;
     private static final float CARD_ASPECT_RATIO = CARD_WIDTH / CARD_HEIGHT;
 
     private final SwingGameController controller;

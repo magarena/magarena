@@ -1,5 +1,5 @@
 name=Bloodmark Mentor
-image=http://mtgimage.com/card/bloodmark%20mentor.jpg
+image=http://magiccards.info/scans/en/ddg/50.jpg
 value=3.770
 rarity=U
 type=Creature

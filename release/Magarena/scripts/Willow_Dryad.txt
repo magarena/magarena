@@ -1,5 +1,5 @@
 name=Willow Dryad
-image=http://mtgimage.com/card/willow%20dryad.jpg
+image=http://magiccards.info/scans/en/po/119.jpg
 value=2.481
 rarity=C
 type=Creature

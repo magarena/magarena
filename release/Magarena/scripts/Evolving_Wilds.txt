@@ -1,8 +1,8 @@
 name=Evolving Wilds
-image=http://mtgimage.com/card/evolving%20wilds.jpg
-value=3.667
+image=http://magiccards.info/scans/en/ori/246.jpg
+value=2.500
 rarity=C
 type=Land
-ability={T},Sacrifice SN:Search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.
+ability={T}, Sacrifice SN: Search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.
 timing=land
 oracle={T}, Sacrifice Evolving Wilds: Search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.

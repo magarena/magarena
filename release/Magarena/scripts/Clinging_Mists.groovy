@@ -12,17 +12,14 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicAddTurnTriggerAction(
-                MagicIfDamageWouldBeDealtTrigger.PreventCombatDamage
+            game.doAction(new AddTurnTriggerAction(
+                MagicPreventDamageTrigger.PreventCombatDamage
             ));
-            final MagicPlayer player = event.getPlayer();
             if (MagicCondition.FATEFUL_HOUR.accept(event.getSource())) {
-                final Collection<MagicPermanent> targets =
-                    game.filterPermanents(player,MagicTargetFilterFactory.ATTACKING_CREATURE);
-                for (final MagicPermanent perm : targets) {
-                    game.doAction(new MagicTapAction(perm));
-                    game.doAction(MagicChangeStateAction.Set(
-                        perm,
+                ATTACKING_CREATURE.filter(event) each {
+                    game.doAction(new TapAction(it));
+                    game.doAction(ChangeStateAction.Set(
+                        it,
                         MagicPermanentState.DoesNotUntapDuringNext
                     ));
                 }

@@ -1,9 +1,9 @@
 name=Overwhelming Stampede
-image=http://mtgimage.com/card/overwhelming%20stampede.jpg
+image=http://magiccards.info/scans/en/c14/208.jpg
 value=4.258
 rarity=R
 type=Sorcery
 cost={3}{G}{G}
-timing=pump
+timing=fmain
 requires_groovy_code
 oracle=Until end of turn, creatures you control gain trample and get +X/+X, where X is the greatest power among creatures you control.

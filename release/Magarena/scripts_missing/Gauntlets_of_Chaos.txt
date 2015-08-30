@@ -1,9 +1,9 @@
 name=Gauntlets of Chaos
-image=http://mtgimage.com/card/gauntlets%20of%20chaos.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me3/196.jpg
+value=2.909
 rarity=R
 type=Artifact
 cost={5}
 ability={5}, Sacrifice SN: Exchange control of target artifact, creature, or land you control and target permanent an opponent controls that shares one of those types with it. If those permanents are exchanged this way, destroy all Auras attached to them.
-timing=main
+timing=artifact
 oracle={5}, Sacrifice Gauntlets of Chaos: Exchange control of target artifact, creature, or land you control and target permanent an opponent controls that shares one of those types with it. If those permanents are exchanged this way, destroy all Auras attached to them.

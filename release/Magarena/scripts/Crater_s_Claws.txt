@@ -1,0 +1,9 @@
+name=Crater's Claws
+image=http://magiccards.info/scans/en/ktk/106.jpg
+value=4.000
+rarity=R
+type=Sorcery
+cost={X}{R}
+timing=main
+requires_groovy_code
+oracle=Crater's Claws deals X damage to target creature or player.\nFerocious — Crater's Claws deals X plus 2 damage to that creature or player instead if you control a creature with power 4 or greater.

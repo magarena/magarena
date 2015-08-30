@@ -1,0 +1,11 @@
+name=Ukud Cobra
+image=http://magiccards.info/scans/en/dtk/123.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Snake
+cost={3}{B}
+pt=2/5
+ability=Deathtouch
+timing=main
+oracle=Deathtouch

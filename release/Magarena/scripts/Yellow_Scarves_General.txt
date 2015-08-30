@@ -1,5 +1,5 @@
 name=Yellow Scarves General
-image=http://mtgimage.com/card/yellow%20scarves%20general.jpg
+image=http://magiccards.info/scans/en/p3k/126.jpg
 value=1.900
 rarity=R
 type=Creature
@@ -8,4 +8,4 @@ cost={3}{R}
 pt=2/2
 ability=horsemanship;SN can't block.
 timing=main
-oracle=Horsemanship. Yellow Scarves General can't block.
+oracle=Horsemanship\nYellow Scarves General can't block.

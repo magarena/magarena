@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_CREATURE,
+                TARGET_CREATURE,
                 MagicCopyPermanentPicker.create(),
                 this,
                 "Put a token onto the battlefield that's a copy of target creature\$. " +
@@ -16,7 +16,7 @@
             event.processTargetPermanent(game, {
                 final MagicPlayer player = event.getPlayer();
                 int count = event.isKicked() ? 5 : 1;
-                game.doAction(new MagicPlayTokensAction(
+                game.doAction(new PlayTokensAction(
                     player,
                     it,
                     count

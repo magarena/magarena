@@ -1,6 +1,6 @@
 name=Vedalken Plotter
-image=http://mtgimage.com/card/vedalken%20plotter.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cmd/66.jpg
+value=2.889
 rarity=U
 type=Creature
 subtype=Vedalken,Wizard

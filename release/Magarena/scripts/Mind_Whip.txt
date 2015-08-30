@@ -1,0 +1,11 @@
+name=Mind Whip
+image=http://magiccards.info/scans/en/ia/37.jpg
+value=2.919
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={2}{B}{B}
+timing=aura
+requires_groovy_code
+enchant=tap,neg creature
+oracle=Enchant creature\nAt the beginning of the upkeep of enchanted creature's controller, that player may pay {3}. If he or she doesn't, Mind Whip deals 2 damage to that player and you tap that creature.

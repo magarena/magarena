@@ -1,11 +1,11 @@
 name=Blight
-image=http://mtgimage.com/card/blight.jpg
+image=http://magiccards.info/scans/en/med/61.jpg
 value=3.780
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={B}{B}
+ability=When enchanted land becomes tapped, destroy RN.
 enchant=destroy,neg land
 timing=removal
-requires_groovy_code=Brink of Disaster
-oracle=Enchant land. When enchanted land becomes tapped, destroy it.
+oracle=Enchant land\nWhen enchanted land becomes tapped, destroy it.

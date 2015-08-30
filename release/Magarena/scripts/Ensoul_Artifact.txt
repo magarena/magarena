@@ -1,5 +1,5 @@
 name=Ensoul Artifact
-image=http://mtgimage.com/card/ensoul%20artifact.jpg
+image=http://magiccards.info/scans/en/m15/54.jpg
 value=3.700
 rarity=U
 type=Enchantment
@@ -9,4 +9,4 @@ set_pt=5/5
 given_type=Creature
 timing=main
 enchant=pump,pos artifact
-oracle=Enchant artifact. Enchanted artifact is a creature with base power and toughness 5/5 in addition to its other types.
+oracle=Enchant artifact\nEnchanted artifact is a creature with base power and toughness 5/5 in addition to its other types.

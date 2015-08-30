@@ -1,5 +1,5 @@
 name=Armor of Thorns
-image=http://mtgimage.com/card/armor%20of%20thorns.jpg
+image=http://magiccards.info/scans/en/vma/194.jpg
 value=2.500
 rarity=C
 type=Enchantment
@@ -9,4 +9,4 @@ enchant=pump,pos nonblack creature
 ability=Enchanted creature gets +2/+2.
 timing=aura
 requires_groovy_code=Lightning Reflexes
-oracle=You may cast Armor of Thorns as though it had flash. If you cast it any time a sorcery couldn't have been cast, the controller of the permanent it becomes sacrifices it at the beginning of the next cleanup step. Enchant nonblack creature. Enchanted creature gets +2/+2.
+oracle=You may cast Armor of Thorns as though it had flash. If you cast it any time a sorcery couldn't have been cast, the controller of the permanent it becomes sacrifices it at the beginning of the next cleanup step.\nEnchant nonblack creature\nEnchanted creature gets +2/+2.

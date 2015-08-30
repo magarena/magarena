@@ -1,6 +1,6 @@
 name=Reef Shaman
-image=http://mtgimage.com/card/reef%20shaman.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ap/29.jpg
+value=4.049
 rarity=C
 type=Creature
 subtype=Merfolk,Shaman

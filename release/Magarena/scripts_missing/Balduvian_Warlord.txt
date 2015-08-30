@@ -1,6 +1,6 @@
 name=Balduvian Warlord
-image=http://mtgimage.com/card/balduvian%20warlord.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cs/77.jpg
+value=2.956
 rarity=U
 type=Creature
 subtype=Human,Barbarian

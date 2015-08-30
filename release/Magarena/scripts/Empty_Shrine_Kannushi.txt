@@ -1,0 +1,11 @@
+name=Empty-Shrine Kannushi
+image=http://magiccards.info/scans/en/bok/2.jpg
+value=3.660
+rarity=U
+type=Creature
+subtype=Human,Cleric
+cost={W}
+pt=1/1
+timing=main
+requires_groovy_code
+oracle=Empty-Shrine Kannushi has protection from the colors of permanents you control.

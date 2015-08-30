@@ -1,5 +1,5 @@
 name=Wall of Bone
-image=http://mtgimage.com/card/wall%20of%20bone.jpg
+image=http://magiccards.info/scans/en/gvl/41.jpg
 value=3.724
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/4
 ability=defender;\
         {B}: Regenerate SN.
 timing=smain
-oracle=Defender. {B}: Regenerate Wall of Bone.
+oracle=Defender\n{B}: Regenerate Wall of Bone.

@@ -1,6 +1,6 @@
 name=Savage Firecat
-image=http://mtgimage.com/card/savage%20firecat.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/218.jpg
+value=3.667
 rarity=R
 type=Creature
 subtype=Elemental,Cat
@@ -10,4 +10,4 @@ ability=Trample;\
         SN enters the battlefield with seven +1/+1 counters on it.;\
         Whenever you tap a land for mana, remove a +1/+1 counter from SN.
 timing=main
-oracle=Trample. Savage Firecat enters the battlefield with seven +1/+1 counters on it. Whenever you tap a land for mana, remove a +1/+1 counter from Savage Firecat.
+oracle=Trample\nSavage Firecat enters the battlefield with seven +1/+1 counters on it.\nWhenever you tap a land for mana, remove a +1/+1 counter from Savage Firecat.

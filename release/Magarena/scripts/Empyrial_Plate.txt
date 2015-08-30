@@ -1,11 +1,11 @@
 name=Empyrial Plate
-image=http://mtgimage.com/card/empyrial%20plate.jpg
+image=http://magiccards.info/scans/en/mi/168.jpg
 value=3.917
 rarity=R
 type=Artifact
 subtype=Equipment
 cost={2}
-ability=Equip {2}
+ability=Equipped creature gets +1/+1 for each card in your hand.;\
+        Equip {2}
 timing=main
-requires_groovy_code
-oracle=Equipped creature gets +1/+1 for each card in your hand. Equip {2}
+oracle=Equipped creature gets +1/+1 for each card in your hand.\nEquip {2}

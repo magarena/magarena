@@ -13,7 +13,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             final MagicTargetChoice targetChoice = new MagicTargetChoice(
                 new MagicPTTargetFilter(
-                    MagicTargetFilterFactory.CREATURE,
+                    CREATURE,
                     source.getController().getNrOfPermanents(MagicType.Creature)
                 ),
                 MagicTargetHint.Negative,
@@ -33,7 +33,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 if (it.getPower() <= event.getPlayer().getNrOfPermanents(MagicType.Creature)) {
-                    game.doAction(new MagicGainControlAction(event.getPlayer(),it));
+                    game.doAction(new GainControlAction(event.getPlayer(),it));
                 }
             });
         }

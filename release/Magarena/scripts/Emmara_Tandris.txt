@@ -1,11 +1,11 @@
 name=Emmara Tandris
-image=http://mtgimage.com/card/emmara%20tandris.jpg
+image=http://magiccards.info/scans/en/dgm/68.jpg
 value=1.520
 rarity=R
 type=Legendary,Creature
 subtype=Elf,Shaman
 cost={5}{G}{W}
 pt=5/7
+ability=Prevent all damage that would be dealt to creature tokens you control.
 timing=main
-requires_groovy_code
 oracle=Prevent all damage that would be dealt to creature tokens you control.

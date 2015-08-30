@@ -1,5 +1,5 @@
 name=Heliod, God of the Sun
-image=http://mtgimage.com/card/heliod%2C%20god%20of%20the%20sun.jpg
+image=http://magiccards.info/scans/en/ths/17.jpg
 value=3.453
 rarity=M
 type=Legendary,Enchantment,Creature
@@ -11,4 +11,4 @@ ability=indestructible;\
         {2}{W}{W}: Put a 2/1 white Cleric enchantment creature token onto the battlefield.
 timing=main
 requires_groovy_code
-oracle=Indestructible. As long as your devotion to white is less than five, Heliod isn't a creature. Other creatures you control have vigilance. {2}{W}{W}: Put a 2/1 white Cleric enchantment creature token onto the battlefield.
+oracle=Indestructible\nAs long as your devotion to white is less than five, Heliod isn't a creature.\nOther creatures you control have vigilance.\n{2}{W}{W}: Put a 2/1 white Cleric enchantment creature token onto the battlefield.

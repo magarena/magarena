@@ -1,11 +1,12 @@
 name=Budoka Gardener
-image=http://mtgimage.com/card/budoka%20gardener.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/202a.jpg
+value=3.154
 rarity=R
 type=Creature
 subtype=Human,Monk
 cost={1}{G}
 pt=2/1
 ability={T}: You may put a land card from your hand onto the battlefield. If you control ten or more lands, flip SN.
+flip=Dokai, Weaver of Life
 timing=main
 oracle={T}: You may put a land card from your hand onto the battlefield. If you control ten or more lands, flip Budoka Gardener.

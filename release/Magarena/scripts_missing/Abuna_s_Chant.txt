@@ -1,9 +1,0 @@
-name=Abuna's Chant
-image=http://mtgimage.com/card/abuna%27s%20chant.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={3}{W}
-effect=Choose one — • You gain 5 life. • Prevent the next 5 damage that would be dealt to target creature this turn.~Entwine {2}
-timing=removal
-oracle=Choose one — • You gain 5 life. • Prevent the next 5 damage that would be dealt to target creature this turn. Entwine {2}

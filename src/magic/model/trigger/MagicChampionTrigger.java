@@ -1,13 +1,14 @@
 package magic.model.trigger;
 
 import magic.model.MagicGame;
+import magic.model.MagicSource;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSubType;
-import magic.model.action.MagicExileLinkAction;
+import magic.model.action.ExileLinkAction;
 import magic.model.action.MagicPermanentAction;
-import magic.model.action.MagicSacrificeAction;
+import magic.model.action.SacrificeAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
@@ -41,7 +42,7 @@ public class MagicChampionTrigger extends MagicWhenComesIntoPlayTrigger {
         final MagicTargetFilter<MagicPermanent> targetFilter = subtypes.length == 0 ?
             MagicTargetFilterFactory.CREATURE_YOU_CONTROL :
             new MagicPermanentFilterImpl() {
-                public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent tribal) {
+                public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent tribal) {
                     boolean hasSubType = false;
                     for (final MagicSubType subtype : subtypes) {
                         hasSubType |= tribal.hasSubType(subtype);
@@ -73,13 +74,13 @@ public class MagicChampionTrigger extends MagicWhenComesIntoPlayTrigger {
         if (event.isYes()) {
             event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    final MagicExileLinkAction act = new MagicExileLinkAction(permanent,creature);
+                    final ExileLinkAction act = new ExileLinkAction(permanent,creature);
                     game.doAction(act);
                     game.executeTrigger(MagicTriggerType.WhenChampioned, act);
                 }
             });
         } else {
-            game.doAction(new MagicSacrificeAction(permanent));
+            game.doAction(new SacrificeAction(permanent));
         }
     }
 }

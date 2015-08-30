@@ -1,9 +1,9 @@
 name=Sapphire Medallion
-image=http://mtgimage.com/card/sapphire%20medallion.jpg
+image=http://magiccards.info/scans/en/c14/266.jpg
 value=2.500
 rarity=R
 type=Artifact
 cost={2}
 ability=Blue spells you cast cost {1} less to cast.
-timing=main
+timing=artifact
 oracle=Blue spells you cast cost {1} less to cast.

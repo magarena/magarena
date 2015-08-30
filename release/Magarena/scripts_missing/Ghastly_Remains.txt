@@ -1,6 +1,6 @@
 name=Ghastly Remains
-image=http://mtgimage.com/card/ghastly%20remains.jpg
-value=2.500
+image=http://magiccards.info/scans/en/le/71.jpg
+value=3.000
 rarity=R
 type=Creature
 subtype=Zombie
@@ -9,4 +9,4 @@ pt=0/0
 ability=Amplify 1;\
         At the beginning of your upkeep, if SN is in your graveyard, you may pay {B}{B}{B}. If you do, return SN to your hand.
 timing=main
-oracle=Amplify 1. At the beginning of your upkeep, if Ghastly Remains is in your graveyard, you may pay {B}{B}{B}. If you do, return Ghastly Remains to your hand.
+oracle=Amplify 1\nAt the beginning of your upkeep, if Ghastly Remains is in your graveyard, you may pay {B}{B}{B}. If you do, return Ghastly Remains to your hand.

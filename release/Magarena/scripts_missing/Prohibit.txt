@@ -1,10 +1,9 @@
 name=Prohibit
-image=http://mtgimage.com/card/prohibit.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddm/25.jpg
+value=3.792
 rarity=C
 type=Instant
 cost={1}{U}
-ability=Kicker {2}
-effect=Counter target spell if its converted mana cost is 2 or less. If SN was kicked, counter that spell if its converted mana cost is 4 or less instead.
+effect=Kicker {2}~Counter target spell if its converted mana cost is 2 or less. If SN was kicked, counter that spell if its converted mana cost is 4 or less instead.
 timing=removal
-oracle=Kicker {2}. Counter target spell if its converted mana cost is 2 or less. If Prohibit was kicked, counter that spell if its converted mana cost is 4 or less instead.
+oracle=Kicker {2}\nCounter target spell if its converted mana cost is 2 or less. If Prohibit was kicked, counter that spell if its converted mana cost is 4 or less instead.

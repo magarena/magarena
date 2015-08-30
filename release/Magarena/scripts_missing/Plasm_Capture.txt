@@ -1,5 +1,5 @@
 name=Plasm Capture
-image=http://mtgimage.com/card/plasm%20capture.jpg
+image=http://magiccards.info/scans/en/ddo/55.jpg
 value=2.500
 rarity=R
 type=Instant

@@ -1,6 +1,6 @@
 name=Repel Intruders
-image=http://mtgimage.com/card/repel%20intruders.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/147.jpg
+value=2.929
 rarity=U
 type=Instant
 cost={3}{W/U}

@@ -1,5 +1,5 @@
 name=Soot Imp
-image=http://mtgimage.com/card/soot%20imp.jpg
+image=http://magiccards.info/scans/en/dvd/37.jpg
 value=3.273
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/2
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. Whenever a player casts a nonblack spell, that player loses 1 life.
+oracle=Flying\nWhenever a player casts a nonblack spell, that player loses 1 life.

@@ -1,6 +1,6 @@
 name=Sandstone Deadfall
-image=http://mtgimage.com/card/sandstone%20deadfall.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/307.jpg
+value=0.949
 rarity=U
 type=Artifact
 cost={3}

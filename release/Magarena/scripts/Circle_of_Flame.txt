@@ -1,9 +1,9 @@
 name=Circle of Flame
-image=http://mtgimage.com/card/circle%20of%20flame.jpg
+image=http://magiccards.info/scans/en/m15/135.jpg
 value=2.300
 rarity=U
 type=Enchantment
 cost={1}{R}
+ability=Whenever a creature without flying attacks you or a planeswalker you control, SN deals 1 damage to that creature.
 timing=enchantment
-requires_groovy_code
 oracle=Whenever a creature without flying attacks you or a planeswalker you control, Circle of Flame deals 1 damage to that creature.

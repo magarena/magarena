@@ -1,5 +1,5 @@
 name=Crocanura
-image=http://mtgimage.com/card/crocanura.jpg
+image=http://magiccards.info/scans/en/gtc/116.jpg
 value=3.176
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{G}
 pt=1/3
 ability=reach;evolve
 timing=main
-oracle=Reach. Evolve
+oracle=Reach\nEvolve

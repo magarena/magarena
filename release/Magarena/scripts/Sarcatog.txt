@@ -1,12 +1,12 @@
 name=Sarcatog
-image=http://mtgimage.com/card/sarcatog.jpg
+image=http://magiccards.info/scans/en/od/293.jpg
 value=3.241
 rarity=U
 type=Creature
 subtype=Atog
 cost={1}{B}{R}
 pt=1/2
-ability=Sacrifice an artifact: SN gets +1/+1 until end of turn.
+ability=Exile two cards from your graveyard: SN gets +1/+1 until end of turn.;\
+        Sacrifice an artifact: SN gets +1/+1 until end of turn.
 timing=main
-requires_groovy_code=Psychatog
-oracle=Exile two cards from your graveyard: Sarcatog gets +1/+1 until end of turn. Sacrifice an artifact: Sarcatog gets +1/+1 until end of turn.
+oracle=Exile two cards from your graveyard: Sarcatog gets +1/+1 until end of turn.\nSacrifice an artifact: Sarcatog gets +1/+1 until end of turn.

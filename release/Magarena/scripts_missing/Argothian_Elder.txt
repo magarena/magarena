@@ -1,6 +1,6 @@
 name=Argothian Elder
-image=http://mtgimage.com/card/argothian%20elder.jpg
-value=2.500
+image=http://magiccards.info/scans/en/br/6.jpg
+value=3.872
 rarity=U
 type=Creature
 subtype=Elf,Druid

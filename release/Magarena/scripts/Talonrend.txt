@@ -1,5 +1,5 @@
 name=Talonrend
-image=http://mtgimage.com/card/talonrend.jpg
+image=http://magiccards.info/scans/en/eve/30.jpg
 value=1.387
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={4}{U}
 pt=0/5
 ability=flying;{U/R}: SN gets +1/-1 until end of turn.
 timing=main
-oracle=Flying. {U/R}: Talonrend gets +1/-1 until end of turn.
+oracle=Flying\n{U/R}: Talonrend gets +1/-1 until end of turn.

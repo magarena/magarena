@@ -1,0 +1,11 @@
+name=Territorial Roc
+image=http://magiccards.info/scans/en/dtk/43.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Bird
+cost={1}{W}
+pt=1/3
+ability=Flying
+timing=main
+oracle=Flying

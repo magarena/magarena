@@ -1,0 +1,9 @@
+name=Sight of the Scalelords
+image=http://magiccards.info/scans/en/dtk/207.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={4}{G}
+ability=At the beginning of combat on your turn, creatures you control with toughness 4 or greater get +2/+2 and gain vigilance until end of turn.
+timing=enchantment
+oracle=At the beginning of combat on your turn, creatures you control with toughness 4 or greater get +2/+2 and gain vigilance until end of turn.

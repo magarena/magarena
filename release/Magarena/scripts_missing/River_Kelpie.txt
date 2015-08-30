@@ -1,6 +1,6 @@
 name=River Kelpie
-image=http://mtgimage.com/card/river%20kelpie.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/49.jpg
+value=4.180
 rarity=R
 type=Creature
 subtype=Beast
@@ -10,4 +10,4 @@ ability=Whenever SN or another permanent enters the battlefield from a graveyard
         Whenever a player casts a spell from a graveyard, draw a card.;\
         Persist
 timing=main
-oracle=Whenever River Kelpie or another permanent enters the battlefield from a graveyard, draw a card. Whenever a player casts a spell from a graveyard, draw a card. Persist
+oracle=Whenever River Kelpie or another permanent enters the battlefield from a graveyard, draw a card.\nWhenever a player casts a spell from a graveyard, draw a card.\nPersist

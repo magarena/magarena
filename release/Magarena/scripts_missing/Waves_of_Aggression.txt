@@ -1,9 +1,9 @@
 name=Waves of Aggression
-image=http://mtgimage.com/card/waves%20of%20aggression.jpg
-value=2.500
+image=http://magiccards.info/scans/en/eve/148.jpg
+value=3.833
 rarity=R
 type=Sorcery
 cost={3}{R/W}{R/W}
 effect=Untap all creatures that attacked this turn. After this main phase, there is an additional combat phase followed by an additional main phase.~Retrace
 timing=main
-oracle=Untap all creatures that attacked this turn. After this main phase, there is an additional combat phase followed by an additional main phase. Retrace
+oracle=Untap all creatures that attacked this turn. After this main phase, there is an additional combat phase followed by an additional main phase.\nRetrace

@@ -1,5 +1,5 @@
 name=Tuknir Deathlock
-image=http://mtgimage.com/card/tuknir%20deathlock.jpg
+image=http://magiccards.info/scans/en/me3/184.jpg
 value=2.000
 rarity=U
 type=Legendary,Creature
@@ -8,4 +8,4 @@ cost={R}{R}{G}{G}
 pt=2/2
 ability=flying;{R}{G},{T}:Target creature gets +2/+2 until end of turn.
 timing=main
-oracle=Flying. {R}{G}, {T}: Target creature gets +2/+2 until end of turn.
+oracle=Flying\n{R}{G}, {T}: Target creature gets +2/+2 until end of turn.

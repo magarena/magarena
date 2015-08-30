@@ -1,5 +1,5 @@
 name=Trygon Predator
-image=http://mtgimage.com/card/trygon%20predator.jpg
+image=http://magiccards.info/scans/en/mma/185.jpg
 value=4.577
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/3
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. Whenever Trygon Predator deals combat damage to a player, you may destroy target artifact or enchantment that player controls.
+oracle=Flying\nWhenever Trygon Predator deals combat damage to a player, you may destroy target artifact or enchantment that player controls.

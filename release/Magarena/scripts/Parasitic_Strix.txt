@@ -1,5 +1,5 @@
 name=Parasitic Strix
-image=http://mtgimage.com/card/parasitic%20strix.jpg
+image=http://magiccards.info/scans/en/cfx/32.jpg
 value=3.056
 rarity=C
 type=Artifact,Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=flying;\
         When SN enters the battlefield, if you control a black permanent, target player loses 2 life and you gain 2 life.
 timing=main
-oracle=Flying. When Parasitic Strix enters the battlefield, if you control a black permanent, target player loses 2 life and you gain 2 life.
+oracle=Flying\nWhen Parasitic Strix enters the battlefield, if you control a black permanent, target player loses 2 life and you gain 2 life.

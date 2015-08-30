@@ -1,9 +1,9 @@
 name=Ranger's Path
-image=http://mtgimage.com/card/ranger%27s%20path.jpg
+image=http://magiccards.info/scans/en/m13/186.jpg
 value=2.882
 rarity=C
 type=Sorcery
 cost={3}{G}
+effect=Search your library for up to two Forest cards and put them onto the battlefield tapped. Then shuffle your library.
 timing=main
-requires_groovy_code
 oracle=Search your library for up to two Forest cards and put them onto the battlefield tapped. Then shuffle your library.

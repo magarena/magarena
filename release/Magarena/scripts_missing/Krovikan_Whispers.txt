@@ -1,6 +1,6 @@
 name=Krovikan Whispers
-image=http://mtgimage.com/card/krovikan%20whispers.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cs/39.jpg
+value=1.803
 rarity=U
 type=Enchantment
 subtype=Aura
@@ -9,5 +9,5 @@ ability=Enchant creature;\
         Cumulative upkeep {U} or {B};\
         You control enchanted creature.;\
         When SN is put into a graveyard from the battlefield, you lose 2 life for each age counter on it.
-timing=main
-oracle=Enchant creature. Cumulative upkeep {U} or {B}. You control enchanted creature. When Krovikan Whispers is put into a graveyard from the battlefield, you lose 2 life for each age counter on it.
+timing=aura
+oracle=Enchant creature\nCumulative upkeep {U} or {B}\nYou control enchanted creature.\nWhen Krovikan Whispers is put into a graveyard from the battlefield, you lose 2 life for each age counter on it.

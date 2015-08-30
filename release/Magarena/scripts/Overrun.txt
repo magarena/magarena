@@ -1,9 +1,10 @@
 name=Overrun
-image=http://mtgimage.com/card/overrun.jpg
+image=http://magiccards.info/scans/en/c14/207.jpg
 value=4.171
 rarity=U
 type=Sorcery
 cost={2}{G}{G}{G}
-timing=pump
-requires_groovy_code
+ability=Cast SN with AI only if you control a creature.
+effect=Creatures you control get +3/+3 and gain trample until end of turn.
+timing=fmain
 oracle=Creatures you control get +3/+3 and gain trample until end of turn.

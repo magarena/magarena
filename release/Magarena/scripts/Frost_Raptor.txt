@@ -1,0 +1,12 @@
+name=Frost Raptor
+image=http://magiccards.info/scans/en/cs/34.jpg
+value=3.012
+rarity=C
+type=Snow,Creature
+subtype=Bird
+cost={2}{U}
+pt=2/2
+ability=Flying;\
+        {S}{S}: SN gains shroud until end of turn.
+timing=main
+oracle=Flying\n{S}{S}: Frost Raptor gains shroud until end of turn.

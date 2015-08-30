@@ -1,5 +1,5 @@
 name=Cloudthresher
-image=http://mtgimage.com/card/cloudthresher.jpg
+image=http://magiccards.info/scans/en/lw/202.jpg
 value=4.112
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=flash;reach;\
         When SN enters the battlefield, SN deals 2 damage to each creature with flying and each player.;\
         evoke {2}{G}{G}
 timing=flash
-oracle=Flash. Reach. When Cloudthresher enters the battlefield, it deals 2 damage to each creature with flying and each player. Evoke {2}{G}{G}
+oracle=Flash\nReach\nWhen Cloudthresher enters the battlefield, it deals 2 damage to each creature with flying and each player.\nEvoke {2}{G}{G}

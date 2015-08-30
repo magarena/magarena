@@ -1,5 +1,5 @@
 name=Root Maze
-image=http://mtgimage.com/card/root%20maze.jpg
+image=http://magiccards.info/scans/en/10e/292.jpg
 value=4.107
 rarity=R
 type=Enchantment

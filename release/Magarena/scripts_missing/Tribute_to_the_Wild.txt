@@ -1,7 +1,7 @@
 name=Tribute to the Wild
-image=http://mtgimage.com/card/tribute%20to%20the%20wild.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/vma/238.jpg
+value=3.000
+rarity=C
 type=Instant
 cost={1}{G}
 effect=Each opponent sacrifices an artifact or enchantment.

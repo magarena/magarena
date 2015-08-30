@@ -1,9 +1,0 @@
-name=Feint
-image=http://mtgimage.com/card/feint.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={R}
-effect=Tap all creatures blocking target attacking creature. Prevent all combat damage that would be dealt this turn by that creature and each creature blocking it.
-timing=removal
-oracle=Tap all creatures blocking target attacking creature. Prevent all combat damage that would be dealt this turn by that creature and each creature blocking it.

@@ -1,6 +1,6 @@
 name=Ashling the Pilgrim
-image=http://mtgimage.com/card/ashling%20the%20pilgrim.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lw/149.jpg
+value=4.019
 rarity=R
 type=Legendary,Creature
 subtype=Elemental,Shaman

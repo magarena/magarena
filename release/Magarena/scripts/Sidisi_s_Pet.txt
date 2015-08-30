@@ -1,5 +1,5 @@
 name=Sidisi's Pet
-image=http://mtgimage.com/card/sidisi%27s%20pet.jpg
+image=http://magiccards.info/scans/en/ktk/90.jpg
 value=2.250
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/4
 ability=Lifelink;\
         Morph {1}{B}
 timing=main
-oracle=Lifelink. Morph {1}{B}
+oracle=Lifelink\nMorph {1}{B}

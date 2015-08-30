@@ -1,12 +1,12 @@
 name=Loxodon Hierarch
-image=http://mtgimage.com/card/loxodon%20hierarch.jpg
+image=http://magiccards.info/scans/en/ddh/15.jpg
 value=3.882
 rarity=R
 type=Creature
 subtype=Elephant,Cleric
 cost={2}{G}{W}
 pt=4/4
-ability=When SN enters the battlefield, you gain 4 life.
+ability=When SN enters the battlefield, you gain 4 life.;\
+        {G}{W}, Sacrifice SN: Regenerate each creature you control.
 timing=fmain
-requires_groovy_code
-oracle=When Loxodon Hierarch enters the battlefield, you gain 4 life. {G}{W}, Sacrifice Loxodon Hierarch: Regenerate each creature you control.
+oracle=When Loxodon Hierarch enters the battlefield, you gain 4 life.\n{G}{W}, Sacrifice Loxodon Hierarch: Regenerate each creature you control.

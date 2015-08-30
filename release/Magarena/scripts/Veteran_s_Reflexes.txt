@@ -1,9 +1,9 @@
 name=Veteran's Reflexes
-image=http://mtgimage.com/card/veteran%27s%20reflexes.jpg
+image=http://magiccards.info/scans/en/wwk/23.jpg
 value=2.824
 rarity=C
 type=Instant
 cost={W}
+effect=Target creature gets +1/+1 until end of turn.~Untap *that creature*.
 timing=tapping
-requires_groovy_code
 oracle=Target creature gets +1/+1 until end of turn. Untap that creature.

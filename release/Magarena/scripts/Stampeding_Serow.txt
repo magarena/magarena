@@ -1,5 +1,5 @@
 name=Stampeding Serow
-image=http://mtgimage.com/card/stampeding%20serow.jpg
+image=http://magiccards.info/scans/en/sok/150.jpg
 value=3.632
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=5/4
 ability=trample;\
         At the beginning of your upkeep, return a green creature you control to its owner's hand.
 timing=main
-oracle=Trample. At the beginning of your upkeep, return a green creature you control to its owner's hand.
+oracle=Trample\nAt the beginning of your upkeep, return a green creature you control to its owner's hand.

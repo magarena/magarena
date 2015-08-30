@@ -1,5 +1,5 @@
 name=Shuko
-image=http://mtgimage.com/card/shuko.jpg
+image=http://magiccards.info/scans/en/bok/159.jpg
 value=4.169
 rarity=U
 type=Artifact
@@ -8,4 +8,4 @@ cost={1}
 ability=Equipped creature gets +1/+0.;\
         Equip {0}
 timing=main
-oracle=Equipped creature gets +1/+0. Equip {0}
+oracle=Equipped creature gets +1/+0.\nEquip {0}

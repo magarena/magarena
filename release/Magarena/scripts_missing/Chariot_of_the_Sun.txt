@@ -1,9 +1,9 @@
 name=Chariot of the Sun
-image=http://mtgimage.com/card/chariot%20of%20the%20sun.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/262.jpg
+value=2.217
 rarity=U
 type=Artifact
 cost={3}
 ability={2}, {T}: Until end of turn, target creature you control gains flying and has base toughness 1.
-timing=main
+timing=artifact
 oracle={2}, {T}: Until end of turn, target creature you control gains flying and has base toughness 1.

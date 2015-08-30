@@ -1,5 +1,5 @@
 name=Straw Soldiers
-image=http://mtgimage.com/card/straw%20soldiers.jpg
+image=http://magiccards.info/scans/en/p3k/54.jpg
 value=2.671
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Scarecrow,Soldier
 cost={1}{U}
 pt=1/3
 timing=main
+oracle=NONE

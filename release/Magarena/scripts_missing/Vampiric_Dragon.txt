@@ -1,6 +1,6 @@
 name=Vampiric Dragon
-image=http://mtgimage.com/card/vampiric%20dragon.jpg
-value=2.500
+image=http://magiccards.info/scans/en/arc/99.jpg
+value=4.070
 rarity=R
 type=Creature
 subtype=Vampire,Dragon
@@ -10,4 +10,4 @@ ability=Flying;\
         Whenever a creature dealt damage by SN this turn dies, put a +1/+1 counter on SN.;\
         {1}{R}: SN deals 1 damage to target creature.
 timing=main
-oracle=Flying. Whenever a creature dealt damage by Vampiric Dragon this turn dies, put a +1/+1 counter on Vampiric Dragon. {1}{R}: Vampiric Dragon deals 1 damage to target creature.
+oracle=Flying\nWhenever a creature dealt damage by Vampiric Dragon this turn dies, put a +1/+1 counter on Vampiric Dragon.\n{1}{R}: Vampiric Dragon deals 1 damage to target creature.

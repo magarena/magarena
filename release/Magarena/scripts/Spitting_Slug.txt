@@ -1,0 +1,11 @@
+name=Spitting Slug
+image=http://magiccards.info/scans/en/tsts/85.jpg
+value=3.310
+rarity=U
+type=Creature
+subtype=Slug
+cost={1}{G}{G}
+pt=2/4
+timing=main
+requires_groovy_code
+oracle=Whenever Spitting Slug blocks or becomes blocked, you may pay {1}{G}. If you do, Spitting Slug gains first strike until end of turn. Otherwise, each creature blocking or blocked by Spitting Slug gains first strike until end of turn.

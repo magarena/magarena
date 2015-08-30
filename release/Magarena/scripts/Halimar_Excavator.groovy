@@ -6,7 +6,7 @@
                     otherPermanent.hasSubType(MagicSubType.Ally)) ?
                 new MagicEvent(
                     permanent,
-                    MagicTargetChoice.NEG_TARGET_PLAYER,
+                    NEG_TARGET_PLAYER,
                     this,
                     "Target player\$ puts the top X cards of his or her " +
                     "library into his or her graveyard, where X is the " +
@@ -20,7 +20,7 @@
             event.processTargetPlayer(game, {
                 final MagicPlayer player = event.getPlayer();
                 final int amount = player.getNrOfPermanents(MagicSubType.Ally);
-                game.doAction(new MagicMillLibraryAction(it,amount));
+                game.doAction(new MillLibraryAction(it,amount));
             });
         }
     }

@@ -1,10 +1,10 @@
 name=Arcum's Weathervane
-image=http://mtgimage.com/card/arcum%27s%20weathervane.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cstd/44.jpg
+value=2.250
 rarity=U
 type=Artifact
 cost={2}
 ability={2}, {T}: Target snow land is no longer snow.;\
         {2}, {T}: Target nonsnow basic land becomes snow.
-timing=main
-oracle={2}, {T}: Target snow land is no longer snow. {2}, {T}: Target nonsnow basic land becomes snow.
+timing=artifact
+oracle={2}, {T}: Target snow land is no longer snow.\n{2}, {T}: Target nonsnow basic land becomes snow.

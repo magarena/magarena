@@ -1,5 +1,5 @@
 name=Cursed Totem
-image=http://mtgimage.com/card/cursed%20totem.jpg
+image=http://magiccards.info/scans/en/6e/278.jpg
 value=4.307
 rarity=R
 type=Artifact

@@ -1,9 +1,10 @@
 name=Boiling Seas
-image=http://mtgimage.com/card/boiling%20seas.jpg
+image=http://magiccards.info/scans/en/9e/178.jpg
 value=3.816
 rarity=U
 type=Sorcery
 cost={3}{R}
+ability=Cast SN with AI only if an opponent controls an Island.
 effect=Destroy all Islands.
 timing=removal
 oracle=Destroy all Islands.

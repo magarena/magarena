@@ -320,10 +320,6 @@ public class CardsCanvas extends JPanel {
         cardCanvasScale = (double)cardWidth / preferredCardSize.width;
     }
 
-    public int getCardsCount() {
-        return cards.size();
-    }
-
     public void setAnimationDelay(final int dealCardDelay, final int removeCardDelay) {
         this.dealCardDelay = dealCardDelay;
         this.removeCardDelay = removeCardDelay;

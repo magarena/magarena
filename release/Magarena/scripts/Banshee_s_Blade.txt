@@ -1,11 +1,12 @@
 name=Banshee's Blade
-image=http://mtgimage.com/card/banshee's%20blade.jpg
+image=http://magiccards.info/scans/en/mi/144.jpg
 value=3.282
 rarity=U
 type=Artifact
 subtype=Equipment
 cost={2}
-ability=Equip {2}
+ability=Equipped creature gets +1/+1 for each charge counter on SN.;\
+        Whenever equipped creature deals combat damage, put a charge counter on SN.;\
+        Equip {2}
 timing=equipment
-requires_groovy_code
-oracle=Equipped creature gets +1/+1 for each charge counter on Banshee's Blade. Whenever equipped creature deals combat damage, put a charge counter on Banshee's Blade. Equip {2}
+oracle=Equipped creature gets +1/+1 for each charge counter on Banshee's Blade.\nWhenever equipped creature deals combat damage, put a charge counter on Banshee's Blade.\nEquip {2}

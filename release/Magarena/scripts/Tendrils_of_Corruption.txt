@@ -1,9 +1,10 @@
 name=Tendrils of Corruption
-image=http://mtgimage.com/card/tendrils%20of%20corruption.jpg
+image=http://magiccards.info/scans/en/c14/166.jpg
 value=4.191
 rarity=C
 type=Instant
 cost={3}{B}
+ability=Cast SN with AI only if you control a Swamp.
 timing=removal
 requires_groovy_code
 oracle=Tendrils of Corruption deals X damage to target creature and you gain X life, where X is the number of Swamps you control.

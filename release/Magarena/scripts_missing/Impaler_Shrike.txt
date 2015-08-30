@@ -1,6 +1,6 @@
 name=Impaler Shrike
-image=http://mtgimage.com/card/impaler%20shrike.jpg
-value=2.500
+image=http://magiccards.info/scans/en/nph/36.jpg
+value=3.104
 rarity=C
 type=Creature
 subtype=Bird
@@ -9,4 +9,4 @@ pt=3/1
 ability=Flying;\
         Whenever SN deals combat damage to a player, you may sacrifice it. If you do, draw three cards.
 timing=main
-oracle=Flying. Whenever Impaler Shrike deals combat damage to a player, you may sacrifice it. If you do, draw three cards.
+oracle=Flying\nWhenever Impaler Shrike deals combat damage to a player, you may sacrifice it. If you do, draw three cards.

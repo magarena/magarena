@@ -1,10 +1,10 @@
 name=Lashknife Barrier
-image=http://mtgimage.com/card/lashknife%20barrier.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ps/9.jpg
+value=3.708
 rarity=U
 type=Enchantment
 cost={2}{W}
 ability=When SN enters the battlefield, draw a card.;\
         If a source would deal damage to a creature you control, it deals that much damage minus 1 to that creature instead.
-timing=main
-oracle=When Lashknife Barrier enters the battlefield, draw a card. If a source would deal damage to a creature you control, it deals that much damage minus 1 to that creature instead.
+timing=enchantment
+oracle=When Lashknife Barrier enters the battlefield, draw a card.\nIf a source would deal damage to a creature you control, it deals that much damage minus 1 to that creature instead.

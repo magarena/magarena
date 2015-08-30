@@ -1,0 +1,10 @@
+name=Alchemist's Vial
+image=http://magiccards.info/scans/en/ori/220.jpg
+value=2.500
+rarity=C
+type=Artifact
+cost={2}
+ability=When SN enters the battlefield, draw a card.;\
+        {1}, {T}, Sacrifice SN: Target creature can't attack or block this turn.
+timing=artifact
+oracle=When Alchemist's Vial enters the battlefield, draw a card.\n{1}, {T}, Sacrifice Alchemist's Vial: Target creature can't attack or block this turn.

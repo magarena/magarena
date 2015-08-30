@@ -1,5 +1,5 @@
 name=War Falcon
-image=http://mtgimage.com/card/war%20falcon.jpg
+image=http://magiccards.info/scans/en/m13/38.jpg
 value=3.685
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=Flying;\
         SN can't attack unless you control a Knight or Soldier.
 timing=main
-oracle=Flying. War Falcon can't attack unless you control a Knight or a Soldier.
+oracle=Flying\nWar Falcon can't attack unless you control a Knight or a Soldier.

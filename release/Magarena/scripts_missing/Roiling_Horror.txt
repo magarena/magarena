@@ -1,6 +1,6 @@
 name=Roiling Horror
-image=http://mtgimage.com/card/roiling%20horror.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pc/79.jpg
+value=2.838
 rarity=R
 type=Creature
 subtype=Horror
@@ -10,4 +10,4 @@ ability=SN's power and toughness are each equal to your life total minus the lif
         Suspend X—{X}{B}{B}{B}. X can't be 0.;\
         Whenever a time counter is removed from SN while it's exiled, target player loses 1 life and you gain 1 life.
 timing=main
-oracle=Roiling Horror's power and toughness are each equal to your life total minus the life total of an opponent with the most life. Suspend X—{X}{B}{B}{B}. X can't be 0. Whenever a time counter is removed from Roiling Horror while it's exiled, target player loses 1 life and you gain 1 life.
+oracle=Roiling Horror's power and toughness are each equal to your life total minus the life total of an opponent with the most life.\nSuspend X—{X}{B}{B}{B}. X can't be 0.\nWhenever a time counter is removed from Roiling Horror while it's exiled, target player loses 1 life and you gain 1 life.

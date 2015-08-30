@@ -1,6 +1,6 @@
 name=Lurebound Scarecrow
-image=http://mtgimage.com/card/lurebound%20scarecrow.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/256.jpg
+value=3.346
 rarity=U
 type=Artifact,Creature
 subtype=Scarecrow
@@ -8,5 +8,5 @@ cost={3}
 pt=4/4
 ability=As SN enters the battlefield, choose a color.;\
         When you control no permanents of the chosen color, sacrifice SN.
-timing=main
-oracle=As Lurebound Scarecrow enters the battlefield, choose a color. When you control no permanents of the chosen color, sacrifice Lurebound Scarecrow.
+timing=artifact
+oracle=As Lurebound Scarecrow enters the battlefield, choose a color.\nWhen you control no permanents of the chosen color, sacrifice Lurebound Scarecrow.

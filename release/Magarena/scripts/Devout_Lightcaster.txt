@@ -1,5 +1,5 @@
 name=Devout Lightcaster
-image=http://mtgimage.com/card/devout%20lightcaster.jpg
+image=http://magiccards.info/scans/en/zen/10.jpg
 value=3.886
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=protection from black;\
         When SN enters the battlefield, exile target black permanent.
 timing=main
-oracle=Protection from black. When Devout Lightcaster enters the battlefield, exile target black permanent.
+oracle=Protection from black\nWhen Devout Lightcaster enters the battlefield, exile target black permanent.

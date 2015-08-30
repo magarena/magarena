@@ -75,13 +75,14 @@ public class AnimationCanvas extends JPanel implements TimelineCallback {
     }
 
     public void playCardAnimation(
-            final BufferedImage image,
-            final Dimension startSize,
-            final Dimension endSize,
-            final Point startPosition,
-            final Point endPosition,
-            final Dimension previewSize,
-            final boolean highlightCardPosition) {
+        final BufferedImage image,
+        final Dimension startSize,
+        final Dimension endSize,
+        final Point startPosition,
+        final Point endPosition,
+        final Dimension previewSize,
+        final boolean highlightCardPosition
+    ) {
 
         assert SwingUtilities.isEventDispatchThread();
 

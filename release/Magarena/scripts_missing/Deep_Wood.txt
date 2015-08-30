@@ -1,9 +1,9 @@
 name=Deep Wood
-image=http://mtgimage.com/card/deep%20wood.jpg
-value=2.500
+image=http://magiccards.info/scans/en/po2/66.jpg
+value=2.722
 rarity=U
 type=Instant
 cost={1}{G}
 effect=Cast SN only during the declare attackers step and only if you've been attacked this step.~Prevent all damage that would be dealt to you this turn by attacking creatures.
 timing=removal
-oracle=Cast Deep Wood only during the declare attackers step and only if you've been attacked this step. Prevent all damage that would be dealt to you this turn by attacking creatures.
+oracle=Cast Deep Wood only during the declare attackers step and only if you've been attacked this step.\nPrevent all damage that would be dealt to you this turn by attacking creatures.

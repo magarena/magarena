@@ -1,5 +1,5 @@
 name=Reality Acid
-image=http://mtgimage.com/card/reality%20acid.jpg
+image=http://magiccards.info/scans/en/pc/45.jpg
 value=3.636
 removal=1
 rarity=C
@@ -10,4 +10,4 @@ ability=vanishing 3
 timing=main
 enchant=sacrifice,neg permanent
 requires_groovy_code
-oracle=Enchant permanent. Vanishing 3. When Reality Acid leaves the battlefield, enchanted permanent's controller sacrifices it.
+oracle=Enchant permanent\nVanishing 3\nWhen Reality Acid leaves the battlefield, enchanted permanent's controller sacrifices it.

@@ -1,6 +1,6 @@
 name=Symbiosis
-image=http://mtgimage.com/card/symbiosis.jpg
-value=2.500
+image=http://magiccards.info/scans/en/br/85.jpg
+value=3.446
 rarity=C
 type=Instant
 cost={1}{G}

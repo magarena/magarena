@@ -1,12 +1,12 @@
 name=Terra Stomper
-image=http://mtgimage.com/card/terra%20stomper.jpg
-value=3.312
+image=http://magiccards.info/scans/en/m15/284.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Beast
 cost={3}{G}{G}{G}
 pt=8/8
 ability=SN can't be countered.;\
-        trample
+        Trample
 timing=main
-oracle=Terra Stomper can't be countered. Trample
+oracle=Terra Stomper can't be countered.\nTrample

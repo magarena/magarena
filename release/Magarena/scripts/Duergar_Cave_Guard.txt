@@ -1,5 +1,5 @@
 name=Duergar Cave-Guard
-image=http://mtgimage.com/card/duergar%20cave%2Dguard.jpg
+image=http://magiccards.info/scans/en/eve/51.jpg
 value=2.477
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={3}{R}
 pt=1/3
 ability=wither;{R/W}: SN gets +1/+0 until end of turn.
 timing=main
-oracle=Wither. {R/W}: Duergar Cave-Guard gets +1/+0 until end of turn.
+oracle=Wither\n{R/W}: Duergar Cave-Guard gets +1/+0 until end of turn.

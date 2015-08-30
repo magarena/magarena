@@ -14,13 +14,13 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicDealDamageAction(event.getSource(), event.getPlayer(), 6));
+                game.doAction(new DealDamageAction(event.getSource(), event.getPlayer(), 6));
             } else {
-                final Collection<MagicPermanent> targets = game.filterPermanents(MagicTargetFilterFactory.CREATURE);
+                final Collection<MagicPermanent> targets = CREATURE.filter(event);
                 for (final MagicPermanent target : targets) {
-                    game.doAction(MagicChangeStateAction.Set(target,MagicPermanentState.CannotBeRegenerated));
+                    game.doAction(ChangeStateAction.Set(target,MagicPermanentState.CannotBeRegenerated));
                 }
-                game.doAction(new MagicDestroyAction(targets));
+                game.doAction(new DestroyAction(targets));
             }
         }
     }

@@ -1,5 +1,5 @@
 name=Breathstealer's Crypt
-image=http://mtgimage.com/card/breathstealer's%20crypt.jpg
+image=http://magiccards.info/scans/en/vi/127.jpg
 value=3.387
 rarity=R
 type=Enchantment

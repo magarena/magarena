@@ -1,5 +1,5 @@
 name=Festerhide Boar
-image=http://mtgimage.com/card/festerhide%20boar.jpg
+image=http://magiccards.info/scans/en/ddm/59.jpg
 value=3.778
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=trample
 timing=smain
 requires_groovy_code
-oracle=Trample. Morbid — Festerhide Boar enters the battlefield with two +1/+1 counters on it if a creature died this turn.
+oracle=Trample\nMorbid — Festerhide Boar enters the battlefield with two +1/+1 counters on it if a creature died this turn.

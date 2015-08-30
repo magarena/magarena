@@ -1,5 +1,5 @@
 name=Dross Crocodile
-image=http://mtgimage.com/card/dross%20crocodile.jpg
+image=http://magiccards.info/scans/en/10e/138.jpg
 value=2.738
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Zombie,Crocodile
 cost={3}{B}
 pt=5/1
 timing=main
+oracle=NONE

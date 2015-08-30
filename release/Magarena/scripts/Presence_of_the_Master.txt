@@ -1,5 +1,5 @@
 name=Presence of the Master
-image=http://mtgimage.com/card/presence%20of%20the%20master.jpg
+image=http://magiccards.info/scans/en/us/32.jpg
 value=3.696
 rarity=U
 type=Enchantment

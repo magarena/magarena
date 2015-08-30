@@ -1,5 +1,5 @@
 name=Telim'Tor
-image=http://mtgimage.com/card/telim%27tor.jpg
+image=http://magiccards.info/scans/en/mr/197.jpg
 value=3.076
 rarity=R
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=flanking;\
         Whenever SN attacks, attacking creatures with flanking get +1/+1 until end of turn.
 timing=main
-oracle=Flanking. Whenever Telim'Tor attacks, all attacking creatures with flanking get +1/+1 until end of turn.
+oracle=Flanking\nWhenever Telim'Tor attacks, all attacking creatures with flanking get +1/+1 until end of turn.

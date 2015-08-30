@@ -1,9 +1,9 @@
 name=Misfortune
-image=http://mtgimage.com/card/misfortune.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ai/194.jpg
+value=3.700
 rarity=R
 type=Sorcery
 cost={1}{B}{R}{G}
 timing=main
 requires_groovy_code
-oracle=An opponent chooses one — • You put a +1/+1 counter on each creature you control and gain 4 life. • You put a -1/-1 counter on each creature that player controls and Misfortune deals 4 damage to him or her.
+oracle=An opponent chooses one —\n• You put a +1/+1 counter on each creature you control and gain 4 life.\n• You put a -1/-1 counter on each creature that player controls and Misfortune deals 4 damage to him or her.

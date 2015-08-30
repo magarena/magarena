@@ -1,5 +1,5 @@
 name=Fumiko the Lowblood
-image=http://mtgimage.com/card/fumiko%20the%20lowblood.jpg
+image=http://magiccards.info/scans/en/bok/104.jpg
 value=3.980
 rarity=R
 type=Legendary,Creature
@@ -8,4 +8,4 @@ cost={2}{R}{R}
 pt=3/2
 timing=main
 requires_groovy_code
-oracle=Fumiko the Lowblood has bushido X, where X is the number of attacking creatures. Creatures your opponents control attack each turn if able.
+oracle=Fumiko the Lowblood has bushido X, where X is the number of attacking creatures.\nCreatures your opponents control attack each turn if able.

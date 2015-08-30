@@ -1,0 +1,11 @@
+name=Ink Dissolver
+image=http://magiccards.info/scans/en/mt/36.jpg
+value=2.934
+rarity=C
+type=Creature
+subtype=Merfolk,Wizard
+cost={1}{U}
+pt=2/1
+timing=main
+requires_groovy_code
+oracle=Kinship — At the beginning of your upkeep, you may look at the top card of your library. If it shares a creature type with Ink Dissolver, you may reveal it. If you do, each opponent puts the top three cards of his or her library into his or her graveyard.

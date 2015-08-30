@@ -15,7 +15,7 @@ def T = new MagicWhenDamageIsDealtTrigger() {
 
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(new MagicDestroyAction(event.getRefPermanent()));
+        game.doAction(new DestroyAction(event.getRefPermanent()));
     }
 }
 
@@ -32,19 +32,19 @@ def T = new MagicWhenDamageIsDealtTrigger() {
         @Override
         public void executeEvent(final MagicGame outerGame, final MagicEvent outerEvent) {
             final MagicWhenDamageIsDealtTrigger trigger = T;
-            outerGame.doAction(new MagicAddTriggerAction(outerEvent.getPermanent(), trigger));
+            outerGame.doAction(new AddTriggerAction(outerEvent.getPermanent(), trigger));
             // remove the trigger during player's next upkeep
             MagicAtUpkeepTrigger cleanup = new MagicAtUpkeepTrigger() {
                 @Override
                 public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
                     if (upkeepPlayer.getId() == outerEvent.getPlayer().getId()) {
-                        game.addDelayedAction(new MagicRemoveTriggerAction(permanent, trigger));
-                        game.addDelayedAction(new MagicRemoveTriggerAction(permanent, this));
+                        game.addDelayedAction(new RemoveTriggerAction(permanent, trigger));
+                        game.addDelayedAction(new RemoveTriggerAction(permanent, this));
                     }
                     return MagicEvent.NONE;
                 }
             };
-            outerGame.doAction(new MagicAddTriggerAction(outerEvent.getPermanent(), cleanup));
+            outerGame.doAction(new AddTriggerAction(outerEvent.getPermanent(), cleanup));
 
         }
     },
@@ -53,7 +53,7 @@ def T = new MagicWhenDamageIsDealtTrigger() {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_NONLAND_PERMANENT,
+                NEG_TARGET_NONLAND_PERMANENT,
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target nonland permanent."
@@ -62,7 +62,7 @@ def T = new MagicWhenDamageIsDealtTrigger() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicDestroyAction(it));
+                game.doAction(new DestroyAction(it));
             });
         }
     },
@@ -78,7 +78,7 @@ def T = new MagicWhenDamageIsDealtTrigger() {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicPlayTokensAction(event.getPlayer(), TokenCardDefinitions.get("1/1 black Assassin creature token"), 3));
+            game.doAction(new PlayTokensAction(event.getPlayer(), CardDefinitions.getToken("1/1 black Assassin creature token"), 3));
         }
     }
 ]

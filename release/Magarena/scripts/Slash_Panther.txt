@@ -1,5 +1,5 @@
 name=Slash Panther
-image=http://mtgimage.com/card/slash%20panther.jpg
+image=http://magiccards.info/scans/en/nph/96.jpg
 value=3.908
 rarity=C
 type=Artifact,Creature

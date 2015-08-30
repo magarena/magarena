@@ -1,5 +1,5 @@
 name=Dragon Hatchling
-image=http://mtgimage.com/card/dragon%20hatchling.jpg
+image=http://magiccards.info/scans/en/m14/138.jpg
 value=3.468
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{R}
 pt=0/1
 ability=flying;{R}: SN gets +1/+0 until end of turn.
 timing=main
-oracle=Flying. {R}: Dragon Hatchling gets +1/+0 until end of turn.
+oracle=Flying\n{R}: Dragon Hatchling gets +1/+0 until end of turn.

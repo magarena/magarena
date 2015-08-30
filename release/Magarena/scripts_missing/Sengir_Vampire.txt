@@ -1,6 +1,6 @@
 name=Sengir Vampire
-image=http://mtgimage.com/card/sengir%20vampire.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/277.jpg
+value=3.667
 rarity=U
 type=Creature
 subtype=Vampire
@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying;\
         Whenever a creature dealt damage by SN this turn dies, put a +1/+1 counter on SN.
 timing=main
-oracle=Flying. Whenever a creature dealt damage by Sengir Vampire this turn dies, put a +1/+1 counter on Sengir Vampire.
+oracle=Flying\nWhenever a creature dealt damage by Sengir Vampire this turn dies, put a +1/+1 counter on Sengir Vampire.

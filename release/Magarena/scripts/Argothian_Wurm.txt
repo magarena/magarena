@@ -1,5 +1,5 @@
 name=Argothian Wurm
-image=http://mtgimage.com/card/argothian%20wurm.jpg
+image=http://magiccards.info/scans/en/us/236.jpg
 value=3.890
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=6/6
 ability=trample
 timing=main
 requires_groovy_code
-oracle=Trample. When Argothian Wurm enters the battlefield, any player may sacrifice a land. If a player does, put Argothian Wurm on top of its owner's library.
+oracle=Trample\nWhen Argothian Wurm enters the battlefield, any player may sacrifice a land. If a player does, put Argothian Wurm on top of its owner's library.

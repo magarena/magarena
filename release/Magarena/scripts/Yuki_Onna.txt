@@ -1,5 +1,5 @@
 name=Yuki-Onna
-image=http://mtgimage.com/card/yuki-onna.jpg
+image=http://magiccards.info/scans/en/sok/120.jpg
 value=2.871
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=3/1
 ability=When SN enters the battlefield, destroy target artifact.;\
         Whenever you cast a Spirit or Arcane spell, you may return SN to its owner's hand.
 timing=main
-oracle=When Yuki-Onna enters the battlefield, destroy target artifact. Whenever you cast a Spirit or Arcane spell, you may return Yuki-Onna to its owner's hand.
+oracle=When Yuki-Onna enters the battlefield, destroy target artifact.\nWhenever you cast a Spirit or Arcane spell, you may return Yuki-Onna to its owner's hand.

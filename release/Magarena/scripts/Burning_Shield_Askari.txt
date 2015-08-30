@@ -1,5 +1,5 @@
 name=Burning Shield Askari
-image=http://mtgimage.com/card/burning%20shield%20askari.jpg
+image=http://magiccards.info/scans/en/mr/162.jpg
 value=3.731
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{R}
 pt=2/2
 ability=flanking;{R}{R}: SN gains first strike until end of turn.
 timing=main
-oracle=Flanking. {R}{R}: Burning Shield Askari gains first strike until end of turn.
+oracle=Flanking\n{R}{R}: Burning Shield Askari gains first strike until end of turn.

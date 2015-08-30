@@ -1,5 +1,5 @@
 name=Benalish Lancer
-image=http://mtgimage.com/card/benalish%20lancer.jpg
+image=http://magiccards.info/scans/en/ddg/12.jpg
 value=3.132
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 timing=main
 ability=kicker {2}{W}
 requires_groovy_code
-oracle=Kicker {2}{W}. If Benalish Lancer was kicked, it enters the battlefield with two +1/+1 counters on it and with first strike.
+oracle=Kicker {2}{W}\nIf Benalish Lancer was kicked, it enters the battlefield with two +1/+1 counters on it and with first strike.

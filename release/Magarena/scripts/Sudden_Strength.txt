@@ -1,9 +1,9 @@
 name=Sudden Strength
-image=http://mtgimage.com/card/sudden%20strength.jpg
+image=http://magiccards.info/scans/en/vma/233.jpg
 value=1.597
 rarity=C
 type=Instant
 cost={3}{G}
 effect=Target creature gets +3/+3 until end of turn.~Draw a card.
 timing=pump
-oracle=Target creature gets +3/+3 until end of turn. Draw a card.
+oracle=Target creature gets +3/+3 until end of turn.\nDraw a card.

@@ -13,11 +13,11 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent=event.getPermanent();
             final MagicPlayer player=event.getPlayer();
-            final MagicEvent sac = new MagicSacrificePermanentEvent(permanent,player,MagicTargetChoice.SACRIFICE_CREATURE);
+            final MagicEvent sac = new MagicSacrificePermanentEvent(permanent,player,SACRIFICE_CREATURE);
             if (sac.isSatisfied()) {
                 game.addEvent(sac);
             } else {
-                game.doAction(new MagicSacrificeAction(permanent));
+                game.doAction(new SacrificeAction(permanent));
             }
         }
     }

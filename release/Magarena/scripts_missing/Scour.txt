@@ -1,6 +1,6 @@
 name=Scour
-image=http://mtgimage.com/card/scour.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bok/20.jpg
+value=4.012
 rarity=U
 type=Instant
 cost={2}{W}{W}

@@ -1,6 +1,6 @@
 name=Morgue Toad
-image=http://mtgimage.com/card/morgue%20toad.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddh/47.jpg
+value=4.019
 rarity=C
 type=Creature
 subtype=Frog

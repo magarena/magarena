@@ -1,11 +1,11 @@
 name=Kemba, Kha Regent
-image=http://mtgimage.com/card/kemba%2C%20kha%20regent.jpg
+image=http://magiccards.info/scans/en/c14/75.jpg
 value=3.943
 rarity=R
 type=Legendary,Creature
 subtype=Cat,Cleric
 cost={1}{W}{W}
 pt=2/4
+ability=At the beginning of your upkeep, put a 2/2 white Cat creature token onto the battlefield for each Equipment attached to SN.
 timing=main
-requires_groovy_code
 oracle=At the beginning of your upkeep, put a 2/2 white Cat creature token onto the battlefield for each Equipment attached to Kemba, Kha Regent.

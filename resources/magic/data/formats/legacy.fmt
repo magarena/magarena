@@ -30,10 +30,12 @@ DIS
 DKA
 DRK
 DST
+DTK
 EVE
 EXO
 FEM
 FUT
+FRF
 GPT
 GTC
 HML
@@ -92,6 +94,7 @@ VIS
 WTH
 WWK
 ZEN
+pMEI
 
 # banned: prefix with !
 !Advantageous Proclamation
@@ -102,7 +105,7 @@ ZEN
 !Bazaar of Baghdad
 !Black Lotus
 !Black Vise
-!Brago’s Favor
+!Brago's Favor
 !Bronze Tablet
 !Channel
 !Chaos Orb
@@ -138,7 +141,7 @@ ZEN
 !Mox Pearl
 !Mox Ruby
 !Mox Sapphire
-!Muzzio’s Preparations
+!Muzzio's Preparations
 !Mystical Tutor
 !Necropotence
 !Oath of Druids
@@ -159,11 +162,11 @@ ZEN
 !Timmerian Fiends
 !Tinker
 !Tolarian Academy
+!Treasure Cruise
 !Unexpected Potential
 !Vampiric Tutor
 !Wheel of Fortune
 !Windfall
-!Worldgorger Dragon
 !Worldknit
 !Yawgmoth's Bargain
 !Yawgmoth's Will

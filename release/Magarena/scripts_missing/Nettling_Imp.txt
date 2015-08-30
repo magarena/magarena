@@ -1,6 +1,6 @@
 name=Nettling Imp
-image=http://mtgimage.com/card/nettling%20imp.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rv/27.jpg
+value=3.670
 rarity=U
 type=Creature
 subtype=Imp

@@ -1,6 +1,6 @@
 name=Warden of the Beyond
-image=http://mtgimage.com/card/warden%20of%20the%20beyond.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/42.jpg
+value=3.071
 rarity=U
 type=Creature
 subtype=Human,Wizard
@@ -9,4 +9,4 @@ pt=2/2
 ability=Vigilance;\
         SN gets +2/+2 as long as an opponent owns a card in exile.
 timing=main
-oracle=Vigilance. Warden of the Beyond gets +2/+2 as long as an opponent owns a card in exile.
+oracle=Vigilance\nWarden of the Beyond gets +2/+2 as long as an opponent owns a card in exile.

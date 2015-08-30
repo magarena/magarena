@@ -1,5 +1,5 @@
 name=Cackling Counterpart
-image=http://mtgimage.com/card/cackling%20counterpart.jpg
+image=http://magiccards.info/scans/en/c14/100.jpg
 value=3.802
 rarity=R
 type=Instant
@@ -7,4 +7,4 @@ cost={1}{U}{U}
 ability=Flashback {5}{U}{U}
 timing=token
 requires_groovy_code
-oracle=Put a token onto the battlefield that's a copy of target creature you control. Flashback {5}{U}{U}
+oracle=Put a token onto the battlefield that's a copy of target creature you control.\nFlashback {5}{U}{U}

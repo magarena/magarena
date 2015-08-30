@@ -1,11 +1,11 @@
 name=Coral Net
-image=http://mtgimage.com/card/coral%20net.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tr/35.jpg
+value=2.348
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={U}
 ability=Enchant green or white creature;\
         Enchanted creature has "At the beginning of your upkeep, sacrifice this creature unless you discard a card."
-timing=main
-oracle=Enchant green or white creature. Enchanted creature has "At the beginning of your upkeep, sacrifice this creature unless you discard a card."
+timing=aura
+oracle=Enchant green or white creature\nEnchanted creature has "At the beginning of your upkeep, sacrifice this creature unless you discard a card."

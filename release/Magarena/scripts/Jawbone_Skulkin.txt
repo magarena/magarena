@@ -1,5 +1,5 @@
 name=Jawbone Skulkin
-image=http://mtgimage.com/card/jawbone%20skulkin.jpg
+image=http://magiccards.info/scans/en/eve/170.jpg
 value=2.026
 rarity=C
 type=Artifact,Creature

@@ -1,5 +1,5 @@
 name=Hammer of Purphoros
-image=http://mtgimage.com/card/hammer%20of%20purphoros.jpg
+image=http://magiccards.info/scans/en/ths/124.jpg
 value=3.592
 rarity=R
 type=Legendary,Enchantment,Artifact
@@ -7,4 +7,4 @@ cost={1}{R}{R}
 ability=Creatures you control have haste;\
         {2}{R},{T},Sacrifice a land: Put a 3/3 colorless Golem enchantment artifact creature token onto the battlefield.
 timing=artifact
-oracle=Creatures you control have haste. {2}{R}, {T}, Sacrifice a land: Put a 3/3 colorless Golem enchantment artifact creature token onto the battlefield.
+oracle=Creatures you control have haste.\n{2}{R}, {T}, Sacrifice a land: Put a 3/3 colorless Golem enchantment artifact creature token onto the battlefield.

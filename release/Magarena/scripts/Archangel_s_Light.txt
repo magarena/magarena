@@ -1,5 +1,5 @@
 name=Archangel's Light
-image=http://mtgimage.com/card/archangel%27s%20light.jpg
+image=http://magiccards.info/scans/en/dka/1.jpg
 value=1.224
 rarity=M
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Corpse Blockade
-image=http://mtgimage.com/card/corpse%20blockade.jpg
+image=http://magiccards.info/scans/en/gtc/60.jpg
 value=2.144
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/4
 ability=defender;\
         Sacrifice another creature: SN gains deathtouch until end of turn.
 timing=main
-oracle=Defender. Sacrifice another creature: Corpse Blockade gains deathtouch until end of turn.
+oracle=Defender\nSacrifice another creature: Corpse Blockade gains deathtouch until end of turn.

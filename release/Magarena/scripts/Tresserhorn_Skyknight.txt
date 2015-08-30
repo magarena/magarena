@@ -1,0 +1,12 @@
+name=Tresserhorn Skyknight
+image=http://magiccards.info/scans/en/cs/73.jpg
+value=2.062
+rarity=U
+type=Creature
+subtype=Zombie,Knight
+cost={5}{B}{B}
+pt=5/3
+ability=Flying
+timing=main
+requires_groovy_code
+oracle=Flying\nPrevent all damage that would be dealt to Tresserhorn Skyknight by creatures with first strike.

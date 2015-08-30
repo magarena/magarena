@@ -1,0 +1,10 @@
+name=Forethought Amulet
+image=http://magiccards.info/scans/en/lg/221.jpg
+value=2.276
+rarity=R
+type=Artifact
+cost={5}
+ability=At the beginning of your upkeep, you may pay {3}. If you don't, sacrifice SN.
+timing=artifact
+requires_groovy_code
+oracle=At the beginning of your upkeep, sacrifice Forethought Amulet unless you pay {3}.\nIf an instant or sorcery source would deal 3 or more damage to you, it deals 2 damage to you instead.

@@ -1,9 +1,11 @@
 name=Sasaya's Essence
-image=http://mtgimage.com/card/sasaya%27s%20essence.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sok/145b.jpg
+value=3.274
 rarity=R
 type=Legendary,Enchantment
 cost={1}{G}{G}
 ability=Whenever a land you control is tapped for mana, for each other land you control with the same name, add one mana to your mana pool of any type that land produced.
-timing=main
+flip=Sasaya, Orochi Ascendant
+timing=enchantment
+hidden
 oracle=Whenever a land you control is tapped for mana, for each other land you control with the same name, add one mana to your mana pool of any type that land produced.

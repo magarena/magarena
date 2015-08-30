@@ -1,6 +1,6 @@
 name=Final Punishment
-image=http://mtgimage.com/card/final%20punishment.jpg
-value=2.500
+image=http://magiccards.info/scans/en/9e/131.jpg
+value=2.984
 rarity=R
 type=Sorcery
 cost={3}{B}{B}

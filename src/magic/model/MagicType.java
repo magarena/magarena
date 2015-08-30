@@ -1,12 +1,15 @@
 package magic.model;
 
 import java.util.EnumSet;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 
 public enum MagicType {
 
     // these are supertypes
     Basic,
+    Elite,
     Legendary,
     Ongoing,
     Snow,
@@ -27,8 +30,12 @@ public enum MagicType {
     ;
 
     public static final Set<MagicType> ALL_CARD_TYPES = EnumSet.range(Artifact, Vanguard);
+    public static final Set<MagicType> SUPERTYPES = EnumSet.range(Basic, World);
     public static final Set<MagicType> FILTER_TYPES = EnumSet.of(
+        Basic,
         Legendary,
+        Snow,
+        World,
         Artifact,
         Creature,
         Enchantment,
@@ -56,6 +63,24 @@ public enum MagicType {
             }
         }
         throw new RuntimeException("No corresponding MagicType for " + name);
+    }
+
+    public static EnumSet<MagicType> prefixTypes(final List<String> tokens) {
+        final EnumSet<MagicType> types = EnumSet.noneOf(MagicType.class);
+        boolean matched = true;
+        for (Iterator<String> iterator = tokens.iterator(); iterator.hasNext() && matched;) {
+            final String name = iterator.next();
+            matched = false;
+            for (final MagicType type : values()) {
+                if (type.toString().equalsIgnoreCase(name)) {
+                    matched = true;
+                    types.add(type);
+                    iterator.remove();
+                    break;
+                }
+            }
+        }
+        return types;
     }
 
     public static int getTypes(final String[] typeNames) {

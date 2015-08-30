@@ -1,6 +1,6 @@
 name=Crypsis
-image=http://mtgimage.com/card/crypsis.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bng/34.jpg
+value=3.273
 rarity=C
 type=Instant
 cost={1}{U}

@@ -1,9 +1,9 @@
 name=Eon Hub
-image=http://mtgimage.com/card/eon%20hub.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5dn/120.jpg
+value=4.387
 rarity=R
 type=Artifact
 cost={5}
 ability=Players skip their upkeep steps.
-timing=main
+timing=artifact
 oracle=Players skip their upkeep steps.

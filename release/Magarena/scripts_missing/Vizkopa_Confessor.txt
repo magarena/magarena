@@ -1,6 +1,6 @@
 name=Vizkopa Confessor
-image=http://mtgimage.com/card/vizkopa%20confessor.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gtc/205.jpg
+value=2.447
 rarity=U
 type=Creature
 subtype=Human,Cleric
@@ -9,4 +9,4 @@ pt=1/3
 ability=Extort;\
         When SN enters the battlefield, pay any amount of life. Target opponent reveals that many cards from his or her hand. You choose one of them and exile it.
 timing=main
-oracle=Extort. When Vizkopa Confessor enters the battlefield, pay any amount of life. Target opponent reveals that many cards from his or her hand. You choose one of them and exile it.
+oracle=Extort\nWhen Vizkopa Confessor enters the battlefield, pay any amount of life. Target opponent reveals that many cards from his or her hand. You choose one of them and exile it.

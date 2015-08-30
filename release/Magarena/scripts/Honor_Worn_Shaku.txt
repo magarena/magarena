@@ -1,5 +1,5 @@
 name=Honor-Worn Shaku
-image=http://mtgimage.com/card/honor-worn%20shaku.jpg
+image=http://magiccards.info/scans/en/chk/254.jpg
 value=2.108
 rarity=U
 type=Artifact
@@ -7,4 +7,4 @@ cost={3}
 ability={T}: Add {1} to your mana pool.;\
         Tap an untapped legendary permanent you control: Untap SN.
 timing=artifact
-oracle={T}: Add {1} to your mana pool. Tap an untapped legendary permanent you control: Untap Honor-Worn Shaku.
+oracle={T}: Add {1} to your mana pool.\nTap an untapped legendary permanent you control: Untap Honor-Worn Shaku.

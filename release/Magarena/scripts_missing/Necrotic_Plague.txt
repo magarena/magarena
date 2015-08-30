@@ -1,6 +1,6 @@
 name=Necrotic Plague
-image=http://mtgimage.com/card/necrotic%20plague.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m11/107.jpg
+value=2.854
 rarity=R
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={2}{B}{B}
 ability=Enchant creature;\
         Enchanted creature has "At the beginning of your upkeep, sacrifice this creature.";\
         When enchanted creature dies, its controller chooses target creature one of his or her opponents controls. Return SN from its owner's graveyard to the battlefield attached to that creature.
-timing=main
-oracle=Enchant creature. Enchanted creature has "At the beginning of your upkeep, sacrifice this creature.". When enchanted creature dies, its controller chooses target creature one of his or her opponents controls. Return Necrotic Plague from its owner's graveyard to the battlefield attached to that creature.
+timing=aura
+oracle=Enchant creature\nEnchanted creature has "At the beginning of your upkeep, sacrifice this creature."\nWhen enchanted creature dies, its controller chooses target creature one of his or her opponents controls. Return Necrotic Plague from its owner's graveyard to the battlefield attached to that creature.

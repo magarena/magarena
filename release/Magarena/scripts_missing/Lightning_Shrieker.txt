@@ -1,5 +1,5 @@
 name=Lightning Shrieker
-image=http://mtgimage.com/card/lightning%20shrieker.jpg
+image=http://magiccards.info/scans/en/frf/106.jpg
 value=2.500
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=5/5
 ability=Flying, trample, haste;\
         At the beginning of the end step, SN's owner shuffles it into his or her library.
 timing=main
-oracle=Flying, trample, haste. At the beginning of the end step, Lightning Shrieker's owner shuffles it into his or her library.
+oracle=Flying, trample, haste\nAt the beginning of the end step, Lightning Shrieker's owner shuffles it into his or her library.

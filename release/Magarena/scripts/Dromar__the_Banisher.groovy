@@ -18,12 +18,13 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 final MagicColor color=event.getChosenColor();
-                final Collection<MagicPermanent> targets=game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE);
-                for (final MagicPermanent creature : targets) {
-                    if (creature.hasColor(color)) {
-                        game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.OwnersHand));
+                final MagicPermanentList all = new MagicPermanentList();
+                CREATURE.filter(event) each {
+                    if (it.hasColor(color)) {
+                        all.add(it);
                     }
                 }
+                game.doAction(new RemoveAllFromPlayAction(all, MagicLocationType.OwnersHand));
             }
         }
     }

@@ -1,5 +1,5 @@
 name=Tireless Tribe
-image=http://mtgimage.com/card/tireless%20tribe.jpg
+image=http://magiccards.info/scans/en/od/56.jpg
 value=3.778
 rarity=C
 type=Creature

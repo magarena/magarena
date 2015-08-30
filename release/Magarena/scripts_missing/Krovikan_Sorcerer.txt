@@ -1,5 +1,5 @@
 name=Krovikan Sorcerer
-image=http://mtgimage.com/card/krovikan%20sorcerer.jpg
+image=http://magiccards.info/scans/en/vma/77.jpg
 value=2.500
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability={T}, Discard a nonblack card: Draw a card.;\
         {T}, Discard a black card: Draw two cards, then discard one of them.
 timing=main
-oracle={T}, Discard a nonblack card: Draw a card. {T}, Discard a black card: Draw two cards, then discard one of them.
+oracle={T}, Discard a nonblack card: Draw a card.\n{T}, Discard a black card: Draw two cards, then discard one of them.

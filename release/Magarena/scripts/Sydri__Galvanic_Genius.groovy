@@ -25,7 +25,7 @@ def TP = new MagicTargetPicker<MagicPermanent>() {
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Animate),
-        "Animate"
+        "Becomes"
     ) {
 
         @Override
@@ -37,7 +37,7 @@ def TP = new MagicTargetPicker<MagicPermanent>() {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.POS_TARGET_NONCREATURE_ARTIFACT,
+                POS_TARGET_NONCREATURE_ARTIFACT,
                 TP,
                 this,
                 "Target noncreature artifact\$ becomes an artifact creature with " +
@@ -48,7 +48,7 @@ def TP = new MagicTargetPicker<MagicPermanent>() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicBecomesCreatureAction(it,PT,ST));
+                game.doAction(new BecomesCreatureAction(it,PT,ST));
             });
         }
     }

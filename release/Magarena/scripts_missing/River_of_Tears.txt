@@ -1,8 +1,8 @@
 name=River of Tears
-image=http://mtgimage.com/card/river%20of%20tears.jpg
-value=2.500
+image=http://magiccards.info/scans/en/fut/179.jpg
+value=4.118
 rarity=R
 type=Land
 ability={T}: Add {U} to your mana pool. If you played a land this turn, add {B} to your mana pool instead.
-timing=main
+timing=land
 oracle={T}: Add {U} to your mana pool. If you played a land this turn, add {B} to your mana pool instead.

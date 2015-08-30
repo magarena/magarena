@@ -1,9 +1,9 @@
 name=Rite of Passage
-image=http://mtgimage.com/card/rite%20of%20passage.jpg
+image=http://magiccards.info/scans/en/5dn/91.jpg
 value=3.128
 rarity=R
 type=Enchantment
 cost={2}{G}
+ability=Whenever a creature you control is dealt damage, put a +1/+1 counter on RN.
 timing=main
-requires_groovy_code
 oracle=Whenever a creature you control is dealt damage, put a +1/+1 counter on it.

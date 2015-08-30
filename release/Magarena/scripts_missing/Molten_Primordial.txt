@@ -1,6 +1,6 @@
 name=Molten Primordial
-image=http://mtgimage.com/card/molten%20primordial.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gtc/101.jpg
+value=3.222
 rarity=R
 type=Creature
 subtype=Avatar
@@ -9,4 +9,4 @@ pt=6/4
 ability=Haste;\
         When SN enters the battlefield, for each opponent, gain control of up to one target creature that player controls until end of turn. Untap those creatures. They gain haste until end of turn.
 timing=main
-oracle=Haste. When Molten Primordial enters the battlefield, for each opponent, gain control of up to one target creature that player controls until end of turn. Untap those creatures. They gain haste until end of turn.
+oracle=Haste\nWhen Molten Primordial enters the battlefield, for each opponent, gain control of up to one target creature that player controls until end of turn. Untap those creatures. They gain haste until end of turn.

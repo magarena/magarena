@@ -1,5 +1,5 @@
 name=Demonic Torment
-image=http://mtgimage.com/card/demonic%20torment.jpg
+image=http://magiccards.info/scans/en/me3/62.jpg
 value=2.857
 rarity=U
 type=Enchantment
@@ -9,4 +9,4 @@ ability=Enchanted creature can't attack.
 timing=aura
 enchant=can't attack,neg creature
 requires_groovy_code=Defang
-oracle=Enchant creature. Enchanted creature can't attack. Prevent all combat damage that would be dealt by enchanted creature.
+oracle=Enchant creature\nEnchanted creature can't attack.\nPrevent all combat damage that would be dealt by enchanted creature.

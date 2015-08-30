@@ -1,5 +1,5 @@
 name=Living Wall
-image=http://mtgimage.com/card/living%20wall.jpg
+image=http://magiccards.info/scans/en/me4/212.jpg
 value=3.848
 rarity=U
 type=Artifact,Creature
@@ -9,4 +9,4 @@ pt=0/6
 ability=defender;\
         {1}: Regenerate SN.
 timing=smain
-oracle=Defender. {1}: Regenerate Living Wall.
+oracle=Defender\n{1}: Regenerate Living Wall.

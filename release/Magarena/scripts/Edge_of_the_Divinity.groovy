@@ -1,10 +1,7 @@
 [
     new MagicStatic(MagicLayer.ModPT) {
         @Override
-        public void modPowerToughness(
-            final MagicPermanent source,
-            final MagicPermanent permanent,
-            final MagicPowerToughness pt) {
+        public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
             pt.add(1, 2);
         }
         @Override
@@ -14,10 +11,7 @@
     },
     new MagicStatic(MagicLayer.ModPT) {
         @Override
-        public void modPowerToughness(
-            final MagicPermanent source,
-            final MagicPermanent permanent,
-            final MagicPowerToughness pt) {
+        public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
             pt.add(2, 1);
         }
         @Override

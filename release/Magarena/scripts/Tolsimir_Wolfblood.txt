@@ -1,5 +1,5 @@
 name=Tolsimir Wolfblood
-image=http://mtgimage.com/card/tolsimir%20wolfblood.jpg
+image=http://magiccards.info/scans/en/rav/236.jpg
 value=4.012
 rarity=R
 type=Legendary,Creature
@@ -11,4 +11,4 @@ ability=other green creatures you control get +1/+1;\
         {T}: Put a legendary 2/2 green and white Wolf creature token named Voja onto the battlefield.
 static=player
 timing=main
-oracle=Other green creatures you control get +1/+1. Other white creatures you control get +1/+1. {T}: Put a legendary 2/2 green and white Wolf creature token named Voja onto the battlefield.
+oracle=Other green creatures you control get +1/+1.\nOther white creatures you control get +1/+1.\n{T}: Put a legendary 2/2 green and white Wolf creature token named Voja onto the battlefield.

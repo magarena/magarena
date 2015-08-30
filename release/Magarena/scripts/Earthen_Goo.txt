@@ -1,12 +1,12 @@
 name=Earthen Goo
-image=http://mtgimage.com/card/earthen%20goo.jpg
+image=http://magiccards.info/scans/en/cs/80.jpg
 value=2.959
 rarity=U
 type=Creature
 subtype=Ooze
 cost={2}{R}
 pt=2/2
-ability=trample;cumulative upkeep {R/G}
+ability=trample;cumulative upkeep {R/G};\
+        SN gets +1/+1 for each age counter on it.
 timing=main
-requires_groovy_code
-oracle=Trample. Cumulative upkeep {R} or {G}. Earthen Goo gets +1/+1 for each age counter on it.
+oracle=Trample\nCumulative upkeep {R} or {G}\nEarthen Goo gets +1/+1 for each age counter on it.

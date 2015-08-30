@@ -1,6 +1,6 @@
 name=Structural Collapse
-image=http://mtgimage.com/card/structural%20collapse.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gtc/107.jpg
+value=1.375
 rarity=C
 type=Sorcery
 cost={5}{R}

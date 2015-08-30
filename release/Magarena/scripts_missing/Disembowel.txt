@@ -1,6 +1,6 @@
 name=Disembowel
-image=http://mtgimage.com/card/disembowel.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rav/85.jpg
+value=2.398
 rarity=C
 type=Instant
 cost={X}{B}

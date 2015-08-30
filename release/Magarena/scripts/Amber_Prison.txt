@@ -1,5 +1,5 @@
 name=Amber Prison
-image=http://mtgimage.com/card/amber%20prison.jpg
+image=http://magiccards.info/scans/en/6e/272.jpg
 value=3.464
 rarity=R
 type=Artifact
@@ -7,4 +7,4 @@ cost={4}
 ability=You may choose not to untap SN during your untap step.
 timing=main
 requires_groovy_code
-oracle=You may choose not to untap Amber Prison during your untap step. {4}, {T}: Tap target artifact, creature, or land. That permanent doesn't untap during its controller's untap step for as long as Amber Prison remains tapped.
+oracle=You may choose not to untap Amber Prison during your untap step.\n{4}, {T}: Tap target artifact, creature, or land. That permanent doesn't untap during its controller's untap step for as long as Amber Prison remains tapped.

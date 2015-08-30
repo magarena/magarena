@@ -1,9 +1,9 @@
 name=Scatter Arc
-image=http://mtgimage.com/card/scatter%20arc.jpg
+image=http://magiccards.info/scans/en/gtc/48.jpg
 value=2.420
 rarity=C
 type=Instant
 cost={3}{U}
 effect=Counter target noncreature spell.~Draw a card.
 timing=counter
-oracle=Counter target noncreature spell. Draw a card.
+oracle=Counter target noncreature spell.\nDraw a card.

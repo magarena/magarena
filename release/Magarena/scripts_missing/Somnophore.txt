@@ -1,6 +1,6 @@
 name=Somnophore
-image=http://mtgimage.com/card/somnophore.jpg
-value=2.500
+image=http://magiccards.info/scans/en/us/97.jpg
+value=4.181
 rarity=R
 type=Creature
 subtype=Illusion
@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         Whenever SN deals damage to a player, tap target creature that player controls. That creature doesn't untap during its controller's untap step for as long as SN remains on the battlefield.
 timing=main
-oracle=Flying. Whenever Somnophore deals damage to a player, tap target creature that player controls. That creature doesn't untap during its controller's untap step for as long as Somnophore remains on the battlefield.
+oracle=Flying\nWhenever Somnophore deals damage to a player, tap target creature that player controls. That creature doesn't untap during its controller's untap step for as long as Somnophore remains on the battlefield.

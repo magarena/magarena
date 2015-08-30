@@ -1,6 +1,6 @@
 name=Ghazbán Ogre
-image=http://mtgimage.com/card/ghazban%20ogre.jpg
-value=2.500
+image=http://magiccards.info/scans/en/med/120.jpg
+value=3.100
 rarity=C
 type=Creature
 subtype=Ogre

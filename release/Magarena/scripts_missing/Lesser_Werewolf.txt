@@ -1,7 +1,7 @@
 name=Lesser Werewolf
-image=http://mtgimage.com/card/lesser%20werewolf.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/me3/71.jpg
+value=2.638
+rarity=C
 type=Creature
 subtype=Werewolf
 cost={3}{B}

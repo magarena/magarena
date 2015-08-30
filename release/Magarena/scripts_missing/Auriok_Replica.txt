@@ -1,11 +1,11 @@
 name=Auriok Replica
-image=http://mtgimage.com/card/auriok%20replica.jpg
-value=2.500
+image=http://magiccards.info/scans/en/som/138.jpg
+value=2.543
 rarity=C
 type=Artifact,Creature
 subtype=Cleric
 cost={3}
 pt=2/2
 ability={W}, Sacrifice SN: Prevent all damage a source of your choice would deal to you this turn.
-timing=main
+timing=artifact
 oracle={W}, Sacrifice Auriok Replica: Prevent all damage a source of your choice would deal to you this turn.

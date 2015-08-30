@@ -1,5 +1,5 @@
 name=Zombie Master
-image=http://mtgimage.com/set/me4/zombie%20master.jpg
+image=http://magiccards.info/scans/en/me4/105.jpg
 value=4.395
 rarity=U
 type=Creature
@@ -10,4 +10,4 @@ ability=other Zombie creatures have swampwalk;\
         other Zombies have "{B}: Regenerate SN."
 static=all
 timing=main
-oracle=Other Zombie creatures have swampwalk. Other Zombies have "{B}: Regenerate this permanent."
+oracle=Other Zombie creatures have swampwalk.\nOther Zombies have "{B}: Regenerate this permanent."

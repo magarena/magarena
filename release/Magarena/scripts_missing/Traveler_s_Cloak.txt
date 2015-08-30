@@ -1,6 +1,6 @@
 name=Traveler's Cloak
-image=http://mtgimage.com/card/traveler%27s%20cloak.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cns/109.jpg
+value=3.800
 rarity=C
 type=Enchantment
 subtype=Aura
@@ -9,5 +9,5 @@ ability=Enchant creature;\
         As SN enters the battlefield, choose a land type.;\
         When SN enters the battlefield, draw a card.;\
         Enchanted creature has landwalk of the chosen type.
-timing=main
-oracle=Enchant creature. As Traveler's Cloak enters the battlefield, choose a land type. When Traveler's Cloak enters the battlefield, draw a card. Enchanted creature has landwalk of the chosen type.
+timing=aura
+oracle=Enchant creature\nAs Traveler's Cloak enters the battlefield, choose a land type.\nWhen Traveler's Cloak enters the battlefield, draw a card.\nEnchanted creature has landwalk of the chosen type.

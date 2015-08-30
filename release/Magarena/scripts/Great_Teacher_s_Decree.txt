@@ -1,0 +1,9 @@
+name=Great Teacher's Decree
+image=http://magiccards.info/scans/en/dtk/21.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={3}{W}
+effect=Creatures you control get +2/+1 until end of turn.~Rebound
+timing=main
+oracle=Creatures you control get +2/+1 until end of turn.\nRebound

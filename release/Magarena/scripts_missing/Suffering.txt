@@ -1,6 +1,6 @@
 name=Suffering
-image=http://mtgimage.com/card/painsuffering.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddh/72b.jpg
+value=4.184
 rarity=U
 type=Sorcery
 cost={3}{R}

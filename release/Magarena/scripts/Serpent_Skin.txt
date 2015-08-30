@@ -1,13 +1,13 @@
 name=Serpent Skin
-image=http://mtgimage.com/card/serpent%20skin.jpg
+image=http://magiccards.info/scans/en/chk/240.jpg
 value=3.014
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{G}
 ability=Flash;\
-        Enchanted creature gets +1/+1.
+        Enchanted creature gets +1/+1.;\
+        {G}: Regenerate enchanted creature.
 enchant=pump,pos creature
 timing=pumpFlash
-requires_groovy_code=Regeneration
-oracle=Flash. Enchant creature. Enchanted creature gets +1/+1. {G}: Regenerate enchanted creature.
+oracle=Flash\nEnchant creature\nEnchanted creature gets +1/+1.\n{G}: Regenerate enchanted creature.

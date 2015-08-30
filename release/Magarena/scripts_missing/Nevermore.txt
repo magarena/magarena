@@ -1,10 +1,10 @@
 name=Nevermore
-image=http://mtgimage.com/card/nevermore.jpg
-value=2.500
+image=http://magiccards.info/scans/en/isd/25.jpg
+value=3.796
 rarity=R
 type=Enchantment
 cost={1}{W}{W}
 ability=As SN enters the battlefield, name a nonland card.;\
         The named card can't be cast.
-timing=main
-oracle=As Nevermore enters the battlefield, name a nonland card. The named card can't be cast.
+timing=enchantment
+oracle=As Nevermore enters the battlefield, name a nonland card.\nThe named card can't be cast.

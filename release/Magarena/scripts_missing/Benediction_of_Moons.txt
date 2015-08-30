@@ -1,9 +1,9 @@
 name=Benediction of Moons
-image=http://mtgimage.com/card/benediction%20of%20moons.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gp/3.jpg
+value=2.026
 rarity=C
 type=Sorcery
 cost={W}
 effect=You gain 1 life for each player.~Haunt~When the creature SN haunts dies, you gain 1 life for each player.
 timing=main
-oracle=You gain 1 life for each player. Haunt. When the creature Benediction of Moons haunts dies, you gain 1 life for each player.
+oracle=You gain 1 life for each player.\nHaunt\nWhen the creature Benediction of Moons haunts dies, you gain 1 life for each player.

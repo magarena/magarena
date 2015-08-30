@@ -1,4 +1,4 @@
-def choice = MagicTargetChoice.Positive("target Sliver creature");
+def choice = Positive("target Sliver creature");
 
 def MagmaPump = new MagicPermanentActivation(
     new MagicActivationHints(MagicTiming.Pump),
@@ -26,16 +26,13 @@ def MagmaPump = new MagicPermanentActivation(
         event.processTargetPermanent(game, {
             final int amount = it.getController().getNrOfPermanents(MagicSubType.Sliver) +
                                it.getOpponent().getNrOfPermanents(MagicSubType.Sliver);
-            game.doAction(new MagicChangeTurnPTAction(it,amount,0));
+            game.doAction(new ChangeTurnPTAction(it,amount,0));
         });
     }
 };
 
 [
-    new MagicStatic(
-        MagicLayer.Ability,
-        MagicTargetFilterFactory.SLIVER
-    ) {
+    new MagicStatic(MagicLayer.Ability, SLIVER) {
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
             permanent.addAbility(MagmaPump);

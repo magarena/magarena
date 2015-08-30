@@ -1,0 +1,11 @@
+name=Mundungu
+image=http://magiccards.info/scans/en/vi/132.jpg
+value=4.221
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={1}{U}{B}
+pt=1/1
+timing=main
+requires_groovy_code
+oracle={T}: Counter target spell unless its controller pays {1} and 1 life.

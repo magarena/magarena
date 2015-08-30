@@ -1,5 +1,5 @@
 name=Convolute
-image=http://mtgimage.com/card/convolute.jpg
+image=http://magiccards.info/scans/en/rav/41.jpg
 value=2.451
 rarity=C
 type=Instant

@@ -1,5 +1,5 @@
 name=Mystic Monastery
-image=http://mtgimage.com/card/mystic%20monastery.jpg
+image=http://magiccards.info/scans/en/ktk/236.jpg
 value=3.750
 rarity=U
 type=Land
@@ -7,4 +7,4 @@ mana=u3r3w3
 ability=SN enters the battlefield tapped.;\
         {T}: Add {U} or {R} or {W} to your mana pool.
 timing=tapland
-oracle=Mystic Monastery enters the battlefield tapped. {T}: Add {U}, {R}, or {W} to your mana pool.
+oracle=Mystic Monastery enters the battlefield tapped.\n{T}: Add {U}, {R}, or {W} to your mana pool.

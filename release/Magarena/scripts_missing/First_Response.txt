@@ -1,9 +1,9 @@
 name=First Response
-image=http://mtgimage.com/card/first%20response.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/12.jpg
+value=2.583
 rarity=U
 type=Enchantment
 cost={3}{W}
 ability=At the beginning of each upkeep, if you lost life last turn, put a 1/1 white Soldier creature token onto the battlefield.
-timing=main
+timing=enchantment
 oracle=At the beginning of each upkeep, if you lost life last turn, put a 1/1 white Soldier creature token onto the battlefield.

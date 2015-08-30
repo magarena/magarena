@@ -1,5 +1,5 @@
 name=Convalescence
-image=http://mtgimage.com/card/convalescence.jpg
+image=http://magiccards.info/scans/en/ex/5.jpg
 value=1.780
 rarity=R
 type=Enchantment

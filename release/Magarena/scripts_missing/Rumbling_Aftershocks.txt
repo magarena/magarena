@@ -1,9 +1,9 @@
 name=Rumbling Aftershocks
-image=http://mtgimage.com/card/rumbling%20aftershocks.jpg
-value=2.500
+image=http://magiccards.info/scans/en/wwk/89.jpg
+value=1.449
 rarity=U
 type=Enchantment
 cost={4}{R}
 ability=Whenever you cast a kicked spell, you may have SN deal damage to target creature or player equal to the number of times that spell was kicked.
-timing=main
+timing=enchantment
 oracle=Whenever you cast a kicked spell, you may have Rumbling Aftershocks deal damage to target creature or player equal to the number of times that spell was kicked.

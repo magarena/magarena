@@ -1,5 +1,5 @@
 name=Cunning Bandit
-image=http://mtgimage.com/card/cunning%20bandit.jpg
+image=http://magiccards.info/scans/en/bok/99a.jpg
 value=3.241
 rarity=U
 type=Creature
@@ -10,4 +10,4 @@ ability=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on 
         At the beginning of the end step, if there are two or more ki counters on SN, you may flip SN.
 timing=main
 flip=Azamuki, Treachery Incarnate
-oracle=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on Cunning Bandit. At the beginning of the end step, if there are two or more ki counters on Cunning Bandit, you may flip it.
+oracle=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on Cunning Bandit.\nAt the beginning of the end step, if there are two or more ki counters on Cunning Bandit, you may flip it.

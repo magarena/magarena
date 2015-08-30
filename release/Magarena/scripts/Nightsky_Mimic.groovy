@@ -21,10 +21,10 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicAddStaticAction(
+            game.doAction(new AddStaticAction(
                 event.getPermanent(), PT
             ));
-            game.doAction(new MagicGainAbilityAction(
+            game.doAction(new GainAbilityAction(
                 event.getPermanent(), 
                 MagicAbility.Flying
             ));

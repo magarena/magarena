@@ -9,9 +9,9 @@ import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.action.MagicPermanentAction;
-import magic.model.action.MagicPlayCardFromStackAction;
-import magic.model.action.MagicPutItemOnStackAction;
-import magic.model.action.MagicRemoveCardAction;
+import magic.model.action.PlayCardFromStackAction;
+import magic.model.action.PutItemOnStackAction;
+import magic.model.action.RemoveCardAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.action.MagicPlayMod;
@@ -20,7 +20,7 @@ import magic.model.target.MagicPumpTargetPicker;
 
 import java.util.Arrays;
 
-public class MagicBestowActivation extends MagicCardActivation {
+public class MagicBestowActivation extends MagicHandCastActivation {
 
     final MagicManaCost cost;
     final public static MagicPlayAuraEvent BestowEvent = new MagicPlayAuraEvent(
@@ -32,7 +32,7 @@ public class MagicBestowActivation extends MagicCardActivation {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final boolean valid = event.processTargetPermanent(game,new MagicPermanentAction() {
                 public void doAction(final MagicPermanent creature) {
-                    game.doAction(new MagicPlayCardFromStackAction(
+                    game.doAction(new PlayCardFromStackAction(
                         event.getCardOnStack(),
                         creature,
                         MagicPlayMod.BESTOWED
@@ -40,7 +40,7 @@ public class MagicBestowActivation extends MagicCardActivation {
                 }
             });
             if (!valid) {
-                game.doAction(new MagicPlayCardFromStackAction(event.getCardOnStack()));
+                game.doAction(new PlayCardFromStackAction(event.getCardOnStack()));
             }
         }
     };
@@ -72,7 +72,7 @@ public class MagicBestowActivation extends MagicCardActivation {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCard card = event.getCard();
-            game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
+            game.doAction(new RemoveCardAction(card,MagicLocationType.OwnersHand));
                 
             final MagicCardOnStack cardOnStack=new MagicCardOnStack(
                 card,
@@ -100,7 +100,7 @@ public class MagicBestowActivation extends MagicCardActivation {
                 }
             };
 
-            game.doAction(new MagicPutItemOnStackAction(cardOnStack));
+            game.doAction(new PutItemOnStackAction(cardOnStack));
         }
     };
 }

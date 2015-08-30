@@ -1,5 +1,5 @@
 name=Nova Chaser
-image=http://mtgimage.com/card/nova%20chaser.jpg
+image=http://magiccards.info/scans/en/lw/187.jpg
 value=4.106
 removal=2
 rarity=R
@@ -7,6 +7,8 @@ type=Creature
 subtype=Elemental,Warrior
 cost={3}{R}
 pt=10/2
-ability=trample;champion Elemental
+ability=Trample;\
+        Champion an Elemental;\
+        Cast SN with AI only if you control an Elemental
 timing=main
-oracle=Trample. Champion an Elemental
+oracle=Trample\nChampion an Elemental

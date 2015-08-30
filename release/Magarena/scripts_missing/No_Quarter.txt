@@ -1,10 +1,10 @@
 name=No Quarter
-image=http://mtgimage.com/card/no%20quarter.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tp/193.jpg
+value=3.300
 rarity=R
 type=Enchantment
 cost={3}{R}
 ability=Whenever a creature becomes blocked by a creature with lesser power, destroy the blocking creature.;\
         Whenever a creature blocks a creature with lesser power, destroy the attacking creature.
-timing=main
-oracle=Whenever a creature becomes blocked by a creature with lesser power, destroy the blocking creature. Whenever a creature blocks a creature with lesser power, destroy the attacking creature.
+timing=enchantment
+oracle=Whenever a creature becomes blocked by a creature with lesser power, destroy the blocking creature.\nWhenever a creature blocks a creature with lesser power, destroy the attacking creature.

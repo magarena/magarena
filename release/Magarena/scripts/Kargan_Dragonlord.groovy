@@ -12,10 +12,7 @@
     },
     new MagicStatic(MagicLayer.Ability) {
         @Override
-        public void modAbilityFlags(
-                final MagicPermanent source,
-                final MagicPermanent permanent,
-                final Set<MagicAbility> flags) {
+        public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
             final int level = permanent.getCounters(MagicCounterType.Level);
             if (level >= 8) {
                 permanent.addAbility(MagicAbility.Trample, flags);
@@ -51,7 +48,7 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),1,0));
+            game.doAction(new ChangeTurnPTAction(event.getPermanent(),1,0));
         }
     }
 ]

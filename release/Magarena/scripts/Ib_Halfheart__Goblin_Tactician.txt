@@ -1,5 +1,5 @@
 name=Ib Halfheart, Goblin Tactician
-image=http://mtgimage.com/card/ib%20halfheart%2C%20goblin%20tactician.jpg
+image=http://magiccards.info/scans/en/evg/43.jpg
 value=4.045
 rarity=R
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=3/2
 ability=Sacrifice two Mountains: Put two 1/1 red Goblin creature tokens onto the battlefield.
 timing=fmain
 requires_groovy_code
-oracle=Whenever another Goblin you control becomes blocked, sacrifice it. If you do, it deals 4 damage to each creature blocking it. Sacrifice two Mountains: Put two 1/1 red Goblin creature tokens onto the battlefield.
+oracle=Whenever another Goblin you control becomes blocked, sacrifice it. If you do, it deals 4 damage to each creature blocking it.\nSacrifice two Mountains: Put two 1/1 red Goblin creature tokens onto the battlefield.

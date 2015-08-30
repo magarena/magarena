@@ -1,7 +1,7 @@
 name=Apprentice Wizard
-image=http://mtgimage.com/card/apprentice%20wizard.jpg
-value=2.500
-rarity=R
+image=http://magiccards.info/scans/en/med/30.jpg
+value=3.940
+rarity=C
 type=Creature
 subtype=Human,Wizard
 cost={1}{U}{U}

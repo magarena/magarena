@@ -1,6 +1,6 @@
 name=Lowland Oaf
-image=http://mtgimage.com/card/lowland%20oaf.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lw/184.jpg
+value=2.621
 rarity=C
 type=Creature
 subtype=Giant,Warrior

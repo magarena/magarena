@@ -1,0 +1,12 @@
+name=Hand of Emrakul
+image=http://magiccards.info/scans/en/roe/5.jpg
+value=4.004
+rarity=C
+type=Creature
+subtype=Eldrazi
+cost={9}
+pt=7/7
+ability=You may sacrifice four Eldrazi Spawn rather than pay SN's mana cost.;\
+        Annihilator 1
+timing=main
+oracle=You may sacrifice four Eldrazi Spawn rather than pay Hand of Emrakul's mana cost.\nAnnihilator 1

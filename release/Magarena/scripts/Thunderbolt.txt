@@ -1,9 +1,9 @@
 name=Thunderbolt
-image=http://mtgimage.com/card/thunderbolt.jpg
-value=2.500
+image=http://magiccards.info/scans/en/avr/159.jpg
+value=3.915
 rarity=C
 type=Instant
 cost={1}{R}
+effect=Choose one — (1) SN deals 3 damage to target player. (2) SN deals 4 damage to target creature with flying.
 timing=removal
-requires_groovy_code
-oracle=Choose one — • Thunderbolt deals 3 damage to target player. • Thunderbolt deals 4 damage to target creature with flying.
+oracle=Choose one —\n• Thunderbolt deals 3 damage to target player.\n• Thunderbolt deals 4 damage to target creature with flying.

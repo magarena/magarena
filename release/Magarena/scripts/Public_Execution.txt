@@ -1,0 +1,9 @@
+name=Public Execution
+image=http://magiccards.info/scans/en/m13/105.jpg
+value=2.529
+rarity=U
+type=Instant
+cost={5}{B}
+timing=removal
+requires_groovy_code
+oracle=Destroy target creature an opponent controls. Each other creature that player controls gets -2/-0 until end of turn.

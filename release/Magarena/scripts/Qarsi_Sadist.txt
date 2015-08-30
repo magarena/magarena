@@ -1,0 +1,12 @@
+name=Qarsi Sadist
+image=http://magiccards.info/scans/en/dtk/113.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={1}{B}
+pt=1/3
+ability=Exploit;\
+        When SN exploits a creature, target opponent loses 2 life and you gain 2 life.
+timing=main
+oracle=Exploit\nWhen Qarsi Sadist exploits a creature, target opponent loses 2 life and you gain 2 life.

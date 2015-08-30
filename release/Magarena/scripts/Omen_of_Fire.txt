@@ -1,9 +1,9 @@
 name=Omen of Fire
-image=http://mtgimage.com/card/omen%20of%20fire.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ai/112.jpg
+value=3.612
 rarity=R
 type=Instant
 cost={3}{R}{R}
 timing=removal
 requires_groovy_code
-oracle=Return all Islands to their owners' hands. Each player sacrifices a Plains or a white permanent for each white permanent he or she controls.
+oracle=Return all Islands to their owners' hands.\nEach player sacrifices a Plains or a white permanent for each white permanent he or she controls.

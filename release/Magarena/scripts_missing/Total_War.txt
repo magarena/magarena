@@ -1,9 +1,9 @@
 name=Total War
-image=http://mtgimage.com/card/total%20war.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ia/221.jpg
+value=3.037
 rarity=R
 type=Enchantment
 cost={3}{R}
 ability=Whenever a player attacks with one or more creatures, destroy all untapped non-Wall creatures that player controls that didn't attack, except for creatures the player hasn't controlled continuously since the beginning of the turn.
-timing=main
+timing=enchantment
 oracle=Whenever a player attacks with one or more creatures, destroy all untapped non-Wall creatures that player controls that didn't attack, except for creatures the player hasn't controlled continuously since the beginning of the turn.

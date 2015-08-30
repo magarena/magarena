@@ -1,9 +1,0 @@
-name=Scrapyard Salvo
-image=http://mtgimage.com/card/scrapyard%20salvo.jpg
-value=2.500
-rarity=C
-type=Sorcery
-cost={1}{R}{R}
-effect=SN deals damage to target player equal to the number of artifact cards in your graveyard.
-timing=main
-oracle=Scrapyard Salvo deals damage to target player equal to the number of artifact cards in your graveyard.

@@ -1,9 +1,9 @@
 name=High Market
-image=http://mtgimage.com/card/high%20market.jpg
+image=http://magiccards.info/scans/en/mm/320.jpg
 value=3.819
 rarity=M
 type=Land
 ability={T}: Add {1} to your mana pool.;\
         {T},Sacrifice a creature: You gain 1 life.
 timing=land
-oracle={T}: Add {1} to your mana pool. {T}, Sacrifice a creature: You gain 1 life.
+oracle={T}: Add {1} to your mana pool.\n{T}, Sacrifice a creature: You gain 1 life.

@@ -1,9 +1,9 @@
 name=Mind Slash
-image=http://mtgimage.com/card/mind%20slash.jpg
-value=2.500
+image=http://magiccards.info/scans/en/8e/145.jpg
+value=3.975
 rarity=U
 type=Enchantment
 cost={1}{B}{B}
 ability={B}, Sacrifice a creature: Target opponent reveals his or her hand. You choose a card from it. That player discards that card. Activate this ability only any time you could cast a sorcery.
-timing=main
+timing=enchantment
 oracle={B}, Sacrifice a creature: Target opponent reveals his or her hand. You choose a card from it. That player discards that card. Activate this ability only any time you could cast a sorcery.

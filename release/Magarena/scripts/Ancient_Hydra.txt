@@ -1,11 +1,12 @@
 name=Ancient Hydra
-image=http://mtgimage.com/card/ancient%20hydra.jpg
+image=http://magiccards.info/scans/en/ne/76.jpg
 value=3.219
 rarity=U
 type=Creature
 subtype=Hydra
 cost={4}{R}
 pt=5/1
-ability=fading 5;{1},Remove a fade counter from SN: SN deals 1 damage to target creature or player.
+ability=Fading 5;\
+        {1}, Remove a fade counter from SN: SN deals 1 damage to target creature or player.
 timing=main
-oracle=Fading 5. {1}, Remove a fade counter from Ancient Hydra: Ancient Hydra deals 1 damage to target creature or player.
+oracle=Fading 5\n{1}, Remove a fade counter from Ancient Hydra: Ancient Hydra deals 1 damage to target creature or player.

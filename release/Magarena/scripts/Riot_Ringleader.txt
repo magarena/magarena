@@ -1,5 +1,5 @@
 name=Riot Ringleader
-image=http://mtgimage.com/card/riot%20ringleader.jpg
+image=http://magiccards.info/scans/en/avr/152.jpg
 value=2.562
 rarity=C
 type=Creature

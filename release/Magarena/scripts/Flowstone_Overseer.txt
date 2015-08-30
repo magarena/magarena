@@ -1,5 +1,5 @@
 name=Flowstone Overseer
-image=http://mtgimage.com/card/flowstone%20overseer.jpg
+image=http://magiccards.info/scans/en/ne/82.jpg
 value=4.186
 rarity=R
 type=Creature

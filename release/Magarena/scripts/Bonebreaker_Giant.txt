@@ -1,5 +1,5 @@
 name=Bonebreaker Giant
-image=http://mtgimage.com/card/bonebreaker%20giant.jpg
+image=http://magiccards.info/scans/en/m12/123.jpg
 value=2.352
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Giant
 cost={4}{R}
 pt=4/4
 timing=main
+oracle=NONE

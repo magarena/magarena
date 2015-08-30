@@ -1,6 +1,6 @@
 name=Glistening Oil
-image=http://mtgimage.com/card/glistening%20oil.jpg
-value=2.500
+image=http://magiccards.info/scans/en/nph/62.jpg
+value=3.051
 rarity=R
 type=Enchantment
 subtype=Aura
@@ -9,5 +9,5 @@ ability=Enchant creature;\
         Enchanted creature has infect.;\
         At the beginning of your upkeep, put a -1/-1 counter on enchanted creature.;\
         When SN is put into a graveyard from the battlefield, return SN to its owner's hand.
-timing=main
-oracle=Enchant creature. Enchanted creature has infect. At the beginning of your upkeep, put a -1/-1 counter on enchanted creature. When Glistening Oil is put into a graveyard from the battlefield, return Glistening Oil to its owner's hand.
+timing=aura
+oracle=Enchant creature\nEnchanted creature has infect.\nAt the beginning of your upkeep, put a -1/-1 counter on enchanted creature.\nWhen Glistening Oil is put into a graveyard from the battlefield, return Glistening Oil to its owner's hand.

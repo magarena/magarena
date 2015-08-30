@@ -1,5 +1,5 @@
 name=Revelsong Horn
-image=http://mtgimage.com/card/revelsong%20horn.jpg
+image=http://magiccards.info/scans/en/shm/261.jpg
 value=1.567
 rarity=U
 type=Artifact

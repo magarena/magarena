@@ -1,9 +1,9 @@
 name=Helm of Chatzuk
-image=http://mtgimage.com/card/helm%20of%20chatzuk.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5e/376.jpg
+value=2.424
 rarity=R
 type=Artifact
 cost={1}
 ability={1}, {T}: Target creature gains banding until end of turn.
-timing=main
+timing=artifact
 oracle={1}, {T}: Target creature gains banding until end of turn.

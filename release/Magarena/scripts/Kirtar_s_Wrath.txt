@@ -1,9 +1,9 @@
 name=Kirtar's Wrath
-image=http://mtgimage.com/card/kirtar%27s%20wrath.jpg
-value=2.500
+image=http://magiccards.info/scans/en/c13/15.jpg
+value=3.767
 rarity=R
 type=Sorcery
 cost={4}{W}{W}
 timing=main
 requires_groovy_code
-oracle=Destroy all creatures. They can't be regenerated. Threshold — If seven or more cards are in your graveyard, instead destroy all creatures, then put two 1/1 white Spirit creature tokens with flying onto the battlefield. Creatures destroyed this way can't be regenerated.
+oracle=Destroy all creatures. They can't be regenerated.\nThreshold — If seven or more cards are in your graveyard, instead destroy all creatures, then put two 1/1 white Spirit creature tokens with flying onto the battlefield. Creatures destroyed this way can't be regenerated.

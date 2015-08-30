@@ -1,9 +1,9 @@
 name=Spinal Embrace
-image=http://mtgimage.com/card/spinal%20embrace.jpg
-value=2.500
+image=http://magiccards.info/scans/en/c13/218.jpg
+value=4.147
 rarity=R
 type=Instant
 cost={3}{U}{U}{B}
 effect=Cast SN only during combat.~Untap target creature you don't control and gain control of it. It gains haste until end of turn. At the beginning of the next end step, sacrifice it. If you do, you gain life equal to its toughness.
 timing=removal
-oracle=Cast Spinal Embrace only during combat. Untap target creature you don't control and gain control of it. It gains haste until end of turn. At the beginning of the next end step, sacrifice it. If you do, you gain life equal to its toughness.
+oracle=Cast Spinal Embrace only during combat.\nUntap target creature you don't control and gain control of it. It gains haste until end of turn. At the beginning of the next end step, sacrifice it. If you do, you gain life equal to its toughness.

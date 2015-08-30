@@ -1,0 +1,12 @@
+name=Salvage Titan
+image=http://magiccards.info/scans/en/ala/84.jpg
+value=4.202
+rarity=R
+type=Artifact,Creature
+subtype=Golem
+cost={4}{B}{B}
+pt=6/4
+ability=You may sacrifice three artifacts rather than pay SN's mana cost.;\
+        Exile three artifact cards from your graveyard: Return SN from your graveyard to your hand.
+timing=main
+oracle=You may sacrifice three artifacts rather than pay Salvage Titan's mana cost.\nExile three artifact cards from your graveyard: Return Salvage Titan from your graveyard to your hand.

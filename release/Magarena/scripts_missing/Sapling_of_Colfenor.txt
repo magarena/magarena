@@ -1,6 +1,6 @@
 name=Sapling of Colfenor
-image=http://mtgimage.com/card/sapling%20of%20colfenor.jpg
-value=2.500
+image=http://magiccards.info/scans/en/eve/128.jpg
+value=3.836
 rarity=R
 type=Legendary,Creature
 subtype=Treefolk,Shaman
@@ -9,4 +9,4 @@ pt=2/5
 ability=Indestructible;\
         Whenever SN attacks, reveal the top card of your library. If it's a creature card, you gain life equal to that card's toughness, lose life equal to its power, then put it into your hand.
 timing=main
-oracle=Indestructible. Whenever Sapling of Colfenor attacks, reveal the top card of your library. If it's a creature card, you gain life equal to that card's toughness, lose life equal to its power, then put it into your hand.
+oracle=Indestructible\nWhenever Sapling of Colfenor attacks, reveal the top card of your library. If it's a creature card, you gain life equal to that card's toughness, lose life equal to its power, then put it into your hand.

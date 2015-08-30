@@ -1,12 +1,12 @@
 name=Razia, Boros Archangel
-image=http://mtgimage.com/card/razia%2C%20boros%20archangel.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pch/92.jpg
+value=3.793
 rarity=R
 type=Legendary,Creature
 subtype=Angel
 cost={4}{R}{R}{W}{W}
 pt=6/3
-ability=Flying; vigilance; haste;\
+ability=Flying, vigilance, haste;\
         {T}: The next 3 damage that would be dealt to target creature you control this turn is dealt to another target creature instead.
 timing=main
-oracle=Flying, vigilance, haste. {T}: The next 3 damage that would be dealt to target creature you control this turn is dealt to another target creature instead.
+oracle=Flying, vigilance, haste\n{T}: The next 3 damage that would be dealt to target creature you control this turn is dealt to another target creature instead.

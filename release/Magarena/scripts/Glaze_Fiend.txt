@@ -1,5 +1,5 @@
 name=Glaze Fiend
-image=http://mtgimage.com/card/glaze%20fiend.jpg
+image=http://magiccards.info/scans/en/ala/77.jpg
 value=3.088
 rarity=C
 type=Artifact,Creature
@@ -9,4 +9,4 @@ pt=0/1
 ability=flying;\
         Whenever another artifact enters the battlefield under your control, SN gets +2/+2 until end of turn.
 timing=main
-oracle=Flying. Whenever another artifact enters the battlefield under your control, Glaze Fiend gets +2/+2 until end of turn.
+oracle=Flying\nWhenever another artifact enters the battlefield under your control, Glaze Fiend gets +2/+2 until end of turn.

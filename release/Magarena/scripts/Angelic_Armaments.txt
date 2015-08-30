@@ -1,5 +1,5 @@
 name=Angelic Armaments
-image=http://mtgimage.com/card/angelic%20armaments.jpg
+image=http://magiccards.info/scans/en/avr/212.jpg
 value=2.352
 rarity=U
 type=Artifact
@@ -10,4 +10,4 @@ ability=Equipped creature gets +2/+2 and has flying.;\
 given_subtype=Angel
 given_color=w
 timing=equipment
-oracle=Equipped creature gets +2/+2, has flying, and is a white Angel in addition to its other colors and types. Equip {4}
+oracle=Equipped creature gets +2/+2, has flying, and is a white Angel in addition to its other colors and types.\nEquip {4}

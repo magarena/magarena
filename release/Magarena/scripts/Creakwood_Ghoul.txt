@@ -1,5 +1,5 @@
 name=Creakwood Ghoul
-image=http://mtgimage.com/card/creakwood%20ghoul.jpg
+image=http://magiccards.info/scans/en/eve/34.jpg
 value=2.284
 rarity=U
 type=Creature

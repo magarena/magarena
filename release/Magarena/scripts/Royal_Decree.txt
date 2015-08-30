@@ -1,5 +1,5 @@
 name=Royal Decree
-image=http://mtgimage.com/card/royal%20decree.jpg
+image=http://magiccards.info/scans/en/me2/31.jpg
 value=3.444
 rarity=R
 type=Enchantment
@@ -7,4 +7,4 @@ cost={2}{W}{W}
 ability=cumulative upkeep {W}
 timing=enchantment
 requires_groovy_code
-oracle=Cumulative upkeep {W}. Whenever a Swamp, Mountain, black permanent, or red permanent becomes tapped, Royal Decree deals 1 damage to that permanent's controller.
+oracle=Cumulative upkeep {W}\nWhenever a Swamp, Mountain, black permanent, or red permanent becomes tapped, Royal Decree deals 1 damage to that permanent's controller.

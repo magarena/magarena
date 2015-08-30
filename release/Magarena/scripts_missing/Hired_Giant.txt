@@ -1,6 +1,6 @@
 name=Hired Giant
-image=http://mtgimage.com/card/hired%20giant.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/194.jpg
+value=2.278
 rarity=U
 type=Creature
 subtype=Giant

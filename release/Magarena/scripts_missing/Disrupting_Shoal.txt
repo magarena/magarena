@@ -1,10 +1,10 @@
 name=Disrupting Shoal
-image=http://mtgimage.com/card/disrupting%20shoal.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bok/33.jpg
+value=3.742
 rarity=R
 type=Instant
 subtype=Arcane
 cost={X}{U}{U}
 effect=You may exile a blue card with converted mana cost X from your hand rather than pay SN's mana cost.~Counter target spell if its converted mana cost is X.
 timing=removal
-oracle=You may exile a blue card with converted mana cost X from your hand rather than pay Disrupting Shoal's mana cost. Counter target spell if its converted mana cost is X.
+oracle=You may exile a blue card with converted mana cost X from your hand rather than pay Disrupting Shoal's mana cost.\nCounter target spell if its converted mana cost is X.

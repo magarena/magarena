@@ -1,5 +1,5 @@
 name=Horrifying Revelation
-image=http://mtgimage.com/card/horrifying%20revelation.jpg
+image=http://magiccards.info/scans/en/mbs/45.jpg
 value=2.961
 rarity=C
 type=Sorcery

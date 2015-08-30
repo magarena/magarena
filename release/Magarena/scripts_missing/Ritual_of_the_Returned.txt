@@ -1,9 +1,0 @@
-name=Ritual of the Returned
-image=http://mtgimage.com/card/ritual%20of%20the%20returned.jpg
-value=2.500
-rarity=U
-type=Instant
-cost={3}{B}
-effect=Exile target creature card from your graveyard. Put a black Zombie creature token onto the battlefield. Its power is equal to that card's power and its toughness is equal to that card's toughness.
-timing=removal
-oracle=Exile target creature card from your graveyard. Put a black Zombie creature token onto the battlefield. Its power is equal to that card's power and its toughness is equal to that card's toughness.

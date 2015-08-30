@@ -1,5 +1,5 @@
 name=Noble Vestige
-image=http://mtgimage.com/card/noble%20vestige.jpg
+image=http://magiccards.info/scans/en/zen/29.jpg
 value=1.627
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/2
 ability=flying;\
         {T}: Prevent the next 1 damage that would be dealt to target player this turn.
 timing=main
-oracle=Flying. {T}: Prevent the next 1 damage that would be dealt to target player this turn.
+oracle=Flying\n{T}: Prevent the next 1 damage that would be dealt to target player this turn.

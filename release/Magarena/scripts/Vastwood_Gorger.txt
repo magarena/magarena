@@ -1,9 +1,10 @@
 name=Vastwood Gorger
-image=http://mtgimage.com/card/vastwood%20gorger.jpg
-value=2.402
+image=http://magiccards.info/scans/en/ori/204.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Wurm
 cost={5}{G}
 pt=5/6
 timing=main
+oracle=NONE

@@ -1,6 +1,6 @@
 name=Blazing Effigy
-image=http://mtgimage.com/card/blazing%20effigy.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lg/134.jpg
+value=3.128
 rarity=C
 type=Creature
 subtype=Elemental

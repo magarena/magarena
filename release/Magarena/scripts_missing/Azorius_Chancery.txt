@@ -1,10 +1,10 @@
 name=Azorius Chancery
-image=http://mtgimage.com/card/azorius%20chancery.jpg
+image=http://magiccards.info/scans/en/c13/274.jpg
 value=2.500
 rarity=C
 type=Land
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, return a land you control to its owner's hand.;\
         {T}: Add {W}{U} to your mana pool.
-timing=main
-oracle=Azorius Chancery enters the battlefield tapped. When Azorius Chancery enters the battlefield, return a land you control to its owner's hand. {T}: Add {W}{U} to your mana pool.
+timing=land
+oracle=Azorius Chancery enters the battlefield tapped.\nWhen Azorius Chancery enters the battlefield, return a land you control to its owner's hand.\n{T}: Add {W}{U} to your mana pool.

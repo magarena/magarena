@@ -1,5 +1,5 @@
 name=Forbidden Lore
-image=http://mtgimage.com/card/forbidden%20lore.jpg
+image=http://magiccards.info/scans/en/me2/163.jpg
 value=2.775
 rarity=U
 type=Enchantment
@@ -8,4 +8,4 @@ cost={2}{G}
 ability=Enchanted land has "{T}: Target creature gets +2/+1 until end of turn."
 enchant=pump,pos land
 timing=aura
-oracle=Enchant land. Enchanted land has "{T}: Target creature gets +2/+1 until end of turn."
+oracle=Enchant land\nEnchanted land has "{T}: Target creature gets +2/+1 until end of turn."

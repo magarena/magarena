@@ -1,5 +1,5 @@
 name=Balefire Dragon
-image=http://mtgimage.com/card/balefire%20dragon.jpg
+image=http://magiccards.info/scans/en/isd/129.jpg
 value=3.884
 rarity=M
 type=Creature
@@ -9,4 +9,4 @@ pt=6/6
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. Whenever Balefire Dragon deals combat damage to a player, it deals that much damage to each creature that player controls.
+oracle=Flying\nWhenever Balefire Dragon deals combat damage to a player, it deals that much damage to each creature that player controls.

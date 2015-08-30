@@ -1,6 +1,6 @@
 name=Ertai's Trickery
-image=http://mtgimage.com/card/ertai%27s%20trickery.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ps/24.jpg
+value=1.725
 rarity=U
 type=Instant
 cost={U}

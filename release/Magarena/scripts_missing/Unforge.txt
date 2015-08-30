@@ -1,6 +1,6 @@
 name=Unforge
-image=http://mtgimage.com/card/unforge.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ds/71.jpg
+value=2.274
 rarity=C
 type=Instant
 cost={2}{R}

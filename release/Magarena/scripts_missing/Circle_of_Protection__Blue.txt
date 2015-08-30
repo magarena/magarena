@@ -1,9 +1,9 @@
 name=Circle of Protection: Blue
-image=http://mtgimage.com/card/circle%20of%20protection%20blue.jpg
-value=2.500
-rarity=C
+image=http://magiccards.info/scans/en/8e/11.jpg
+value=2.382
+rarity=U
 type=Enchantment
 cost={1}{W}
 ability={1}: The next time a blue source of your choice would deal damage to you this turn, prevent that damage.
-timing=main
+timing=enchantment
 oracle={1}: The next time a blue source of your choice would deal damage to you this turn, prevent that damage.

@@ -1,5 +1,5 @@
 name=Trash for Treasure
-image=http://mtgimage.com/card/trash%20for%20treasure.jpg
+image=http://magiccards.info/scans/en/mi/109.jpg
 value=4.025
 rarity=R
 type=Sorcery
@@ -7,4 +7,4 @@ cost={2}{R}
 ability=As an additional cost to cast SN, sacrifice an artifact.
 effect=Return target artifact card from your graveyard to the battlefield.
 timing=main
-oracle=As an additional cost to cast Trash for Treasure, sacrifice an artifact. Return target artifact card from your graveyard to the battlefield.
+oracle=As an additional cost to cast Trash for Treasure, sacrifice an artifact.\nReturn target artifact card from your graveyard to the battlefield.

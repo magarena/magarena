@@ -1,5 +1,5 @@
 name=Seal of Fire
-image=http://mtgimage.com/card/seal%20of%20fire.jpg
+image=http://magiccards.info/scans/en/jvc/50.jpg
 value=4.160
 removal=2
 rarity=C

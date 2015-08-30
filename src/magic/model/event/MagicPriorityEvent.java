@@ -54,7 +54,7 @@ public class MagicPriorityEvent extends MagicEvent {
                 // pay costs without choices first, eg {T}
                 for (final MagicEvent costEvent : sourceActivation.getCostEvent()) {
                     if (costEvent.hasChoice() == false) {
-                        game.addEvent(costEvent);
+                        game.executeEvent(costEvent, MagicEvent.NO_CHOICE_RESULTS);
                     }
                 }
 
@@ -72,7 +72,7 @@ public class MagicPriorityEvent extends MagicEvent {
 
     public MagicPriorityEvent(final MagicPlayer player) {
         super(
-            MagicEvent.NO_SOURCE,
+            MagicSource.NONE,
             player,
             MagicPlayChoice.getInstance(),
             EVENT_ACTION,

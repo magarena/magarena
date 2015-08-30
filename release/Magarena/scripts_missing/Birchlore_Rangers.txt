@@ -1,6 +1,6 @@
 name=Birchlore Rangers
-image=http://mtgimage.com/card/birchlore%20rangers.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/248.jpg
+value=3.658
 rarity=C
 type=Creature
 subtype=Elf,Druid
@@ -9,4 +9,4 @@ pt=1/1
 ability=Tap two untapped Elves you control: Add one mana of any color to your mana pool.;\
         Morph {G}
 timing=main
-oracle=Tap two untapped Elves you control: Add one mana of any color to your mana pool. Morph {G}
+oracle=Tap two untapped Elves you control: Add one mana of any color to your mana pool.\nMorph {G}

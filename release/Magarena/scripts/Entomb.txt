@@ -1,5 +1,5 @@
 name=Entomb
-image=http://mtgimage.com/card/entomb.jpg
+image=http://magiccards.info/scans/en/od/132.jpg
 value=4.524
 rarity=R
 type=Instant

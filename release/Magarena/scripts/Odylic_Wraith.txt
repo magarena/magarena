@@ -1,5 +1,5 @@
 name=Odylic Wraith
-image=http://mtgimage.com/card/odylic%20wraith.jpg
+image=http://magiccards.info/scans/en/wl/19.jpg
 value=2.862
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=swampwalk;\
         Whenever SN deals damage to a player, that player discards a card.
 timing=main
-oracle=Swampwalk. Whenever Odylic Wraith deals damage to a player, that player discards a card.
+oracle=Swampwalk\nWhenever Odylic Wraith deals damage to a player, that player discards a card.

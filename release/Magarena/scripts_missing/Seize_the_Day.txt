@@ -1,9 +1,9 @@
 name=Seize the Day
-image=http://mtgimage.com/card/seize%20the%20day.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/220.jpg
+value=4.048
 rarity=R
 type=Sorcery
 cost={3}{R}
 effect=Untap target creature. After this main phase, there is an additional combat phase followed by an additional main phase.~Flashback {2}{R}
 timing=main
-oracle=Untap target creature. After this main phase, there is an additional combat phase followed by an additional main phase. Flashback {2}{R}
+oracle=Untap target creature. After this main phase, there is an additional combat phase followed by an additional main phase.\nFlashback {2}{R}

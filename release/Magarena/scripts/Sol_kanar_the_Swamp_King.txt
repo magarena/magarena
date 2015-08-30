@@ -1,5 +1,5 @@
 name=Sol'kanar the Swamp King
-image=http://mtgimage.com/card/sol'kanar%20the%20swamp%20king.jpg
+image=http://magiccards.info/scans/en/tsts/100.jpg
 value=4.030
 rarity=R
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=5/5
 ability=swampwalk;\
         Whenever a player casts a black spell, you gain 1 life.
 timing=main
-oracle=Swampwalk. Whenever a player casts a black spell, you gain 1 life.
+oracle=Swampwalk\nWhenever a player casts a black spell, you gain 1 life.

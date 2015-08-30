@@ -1,6 +1,6 @@
 name=Stormchaser Chimera
-image=http://mtgimage.com/card/stormchaser%20chimera.jpg
-value=2.500
+image=http://magiccards.info/scans/en/jou/156.jpg
+value=3.500
 rarity=U
 type=Creature
 subtype=Chimera
@@ -9,4 +9,4 @@ pt=2/3
 ability=Flying;\
         {2}{U}{R}: Scry 1, then reveal the top card of your library. SN gets +X/+0 until end of turn, where X is that card's converted mana cost.
 timing=main
-oracle=Flying. {2}{U}{R}: Scry 1, then reveal the top card of your library. Stormchaser Chimera gets +X/+0 until end of turn, where X is that card's converted mana cost.
+oracle=Flying\n{2}{U}{R}: Scry 1, then reveal the top card of your library. Stormchaser Chimera gets +X/+0 until end of turn, where X is that card's converted mana cost.

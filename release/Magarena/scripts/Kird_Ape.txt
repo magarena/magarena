@@ -1,5 +1,5 @@
 name=Kird Ape
-image=http://mtgimage.com/card/kird%20ape.jpg
+image=http://magiccards.info/scans/en/ddh/2.jpg
 value=4.484
 rarity=C
 type=Creature

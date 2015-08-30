@@ -1,5 +1,5 @@
 name=Spawning Grounds
-image=http://mtgimage.com/card/spawning%20grounds.jpg
+image=http://magiccards.info/scans/en/c13/171.jpg
 value=3.921
 rarity=R
 type=Enchantment
@@ -8,4 +8,4 @@ cost={6}{G}{G}
 ability=Enchanted land has "{T}: Put a 5/5 green Beast creature token with trample onto the battlefield."
 enchant=pump,pos land
 timing=enchantment
-oracle=Enchant land. Enchanted land has "{T}: Put a 5/5 green Beast creature token with trample onto the battlefield."
+oracle=Enchant land\nEnchanted land has "{T}: Put a 5/5 green Beast creature token with trample onto the battlefield."

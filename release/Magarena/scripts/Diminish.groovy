@@ -11,7 +11,7 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_CREATURE,
+                TARGET_CREATURE,
                 MagicDestroyTargetPicker.DestroyNoRegen,
                 this,
                 "Target creature\$ becomes 1/1 until end of turn."
@@ -20,7 +20,7 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicBecomesCreatureAction(it,PT));
+                game.doAction(new BecomesCreatureAction(it,PT));
             });
         }
     }

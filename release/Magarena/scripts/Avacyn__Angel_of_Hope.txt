@@ -1,5 +1,5 @@
 name=Avacyn, Angel of Hope
-image=http://mtgimage.com/card/avacyn%2C%20angel%20of%20hope.jpg
+image=http://magiccards.info/scans/en/avr/6.jpg
 value=4.067
 rarity=M
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=8/8
 ability=flying;vigilance;indestructible;other permanents you control have indestructible
 static=player
 timing=main
-oracle=Flying, vigilance, indestructible. Other permanents you control have indestructible.
+oracle=Flying, vigilance, indestructible\nOther permanents you control have indestructible.

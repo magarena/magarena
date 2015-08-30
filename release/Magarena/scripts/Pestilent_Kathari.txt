@@ -1,5 +1,5 @@
 name=Pestilent Kathari
-image=http://mtgimage.com/card/pestilent%20kathari.jpg
+image=http://magiccards.info/scans/en/cfx/50.jpg
 value=3.000
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{B}
 pt=1/1
 ability=flying;deathtouch;{2}{R}: SN gains first strike until end of turn.
 timing=main
-oracle=Flying. Deathtouch. {2}{R}: Pestilent Kathari gains first strike until end of turn.
+oracle=Flying\nDeathtouch\n{2}{R}: Pestilent Kathari gains first strike until end of turn.

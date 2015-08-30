@@ -1,0 +1,11 @@
+name=Myr Enforcer
+image=http://magiccards.info/scans/en/mma/209.jpg
+value=4.080
+rarity=C
+type=Artifact,Creature
+subtype=Myr
+cost={7}
+pt=4/4
+ability=Affinity for artifacts
+timing=main
+oracle=Affinity for artifacts

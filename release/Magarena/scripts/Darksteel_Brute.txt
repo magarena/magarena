@@ -1,10 +1,10 @@
 name=Darksteel Brute
-image=http://mtgimage.com/card/darksteel%20brute.jpg
+image=http://magiccards.info/scans/en/ds/108.jpg
 value=3.088
 rarity=U
 type=Artifact
 cost={2}
-ability=indestructible
+ability=Indestructible.;\
+        {3}: SN becomes a 2/2 Beast artifact creature until end of turn.
 timing=artifact
-requires_groovy_code
-oracle=Indestructible. {3}: Darksteel Brute becomes a 2/2 Beast artifact creature until end of turn.
+oracle=Indestructible\n{3}: Darksteel Brute becomes a 2/2 Beast artifact creature until end of turn.

@@ -1,6 +1,6 @@
 name=Colfenor's Plans
-image=http://mtgimage.com/card/colfenor%27s%20plans.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lw/106.jpg
+value=1.838
 rarity=R
 type=Enchantment
 cost={2}{B}{B}
@@ -8,5 +8,5 @@ ability=When SN enters the battlefield, exile the top seven cards of your librar
         You may look at and play cards exiled with SN.;\
         Skip your draw step.;\
         You can't cast more than one spell each turn.
-timing=main
-oracle=When Colfenor's Plans enters the battlefield, exile the top seven cards of your library face down. You may look at and play cards exiled with Colfenor's Plans. Skip your draw step. You can't cast more than one spell each turn.
+timing=enchantment
+oracle=When Colfenor's Plans enters the battlefield, exile the top seven cards of your library face down.\nYou may look at and play cards exiled with Colfenor's Plans.\nSkip your draw step.\nYou can't cast more than one spell each turn.

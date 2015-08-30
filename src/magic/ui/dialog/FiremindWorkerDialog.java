@@ -1,11 +1,11 @@
 package magic.ui.dialog;
 
+import magic.translate.UiString;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
-
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
@@ -16,18 +16,22 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 import javax.swing.SwingConstants;
-
 import magic.ui.*;
 import magic.ui.theme.Theme;
+import magic.ui.utility.MagicStyle;
+import magic.ui.dialog.button.CancelButton;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.firemind.FiremindWorkerPanel;
-import magic.ui.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class FiremindWorkerDialog extends JDialog implements ActionListener, PropertyChangeListener {
+    
+    // translatable strings
+    private static final String _S1 = "Run Firemind Worker";
+    private static final String _S3 = "Run in background...";
 
-    private final JButton cancelButton = new JButton();
+    private final JButton cancelButton = new CancelButton();
     private final JButton backgroundButton = new JButton();
     private final FiremindWorkerPanel firemindWorkerPanel = new FiremindWorkerPanel();
 
@@ -78,7 +82,7 @@ public class FiremindWorkerDialog extends JDialog implements ActionListener, Pro
     }
 
     private void setLookAndFeel() {
-        setTitle("Run Firemind Worker");
+        setTitle(UiString.get(_S1));
         setResizable(false);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setSize(360, 460);
@@ -97,11 +101,10 @@ public class FiremindWorkerDialog extends JDialog implements ActionListener, Pro
 
     private JPanel getButtonPanel() {
         // cancel button
-        cancelButton.setText("Cancel");
         cancelButton.setFocusable(false);
         cancelButton.addActionListener(this);
         // background button
-        backgroundButton.setText("Run in background...");
+        backgroundButton.setText(UiString.get(_S3));
         backgroundButton.setFocusable(false);
         backgroundButton.addActionListener(this);
         // layout

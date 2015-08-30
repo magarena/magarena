@@ -21,7 +21,7 @@
             if (event.isYes()) {
                 final MagicPlayer player = event.getPlayer();
                 game.addEvent(new MagicPayLifeEvent(event.getSource(), player, 1));
-                game.doAction(new MagicDrawAction(player));
+                game.doAction(new DrawAction(player));
             }
         }
     }

@@ -6,9 +6,9 @@ import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicCardAction;
-import magic.model.action.MagicPlayCardAction;
+import magic.model.action.PlayCardAction;
 import magic.model.action.MagicPermanentAction;
-import magic.model.action.MagicRemoveCardAction;
+import magic.model.action.ReturnCardAction;
 import magic.model.choice.MagicChoice;
 import magic.model.target.MagicGraveyardTargetPicker;
 
@@ -45,8 +45,7 @@ public class MagicPutOntoBattlefieldEvent extends MagicEvent {
                     event.processTargetCard(game, new MagicCardAction() {
                         public void doAction(final MagicCard card) {
                             game.logAppendMessage(event.getPlayer(), "Chosen (" + card + ").");
-                            game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
-                            game.doAction(new MagicPlayCardAction(card,event.getPlayer(),mods));
+                            game.doAction(new ReturnCardAction(MagicLocationType.OwnersHand,card,event.getPlayer(),mods));
                         }
                     });
                 }

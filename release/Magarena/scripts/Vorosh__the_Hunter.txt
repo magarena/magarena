@@ -1,5 +1,5 @@
 name=Vorosh, the Hunter
-image=http://mtgimage.com/card/vorosh%2C%20the%20hunter.jpg
+image=http://magiccards.info/scans/en/cmd/235.jpg
 value=4.187
 rarity=R
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=6/6
 ability=flying;\
         Whenever SN deals combat damage to a player, you may pay {2}{G}. If you do, put six +1/+1 counters on SN.
 timing=smain
-oracle=Flying. Whenever Vorosh, the Hunter deals combat damage to a player, you may pay {2}{G}. If you do, put six +1/+1 counters on Vorosh.
+oracle=Flying\nWhenever Vorosh, the Hunter deals combat damage to a player, you may pay {2}{G}. If you do, put six +1/+1 counters on Vorosh.

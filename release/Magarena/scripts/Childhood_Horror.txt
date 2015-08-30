@@ -1,5 +1,5 @@
 name=Childhood Horror
-image=http://mtgimage.com/card/childhood%20horror.jpg
+image=http://magiccards.info/scans/en/od/123.jpg
 value=2.525
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=flying;\
         As long as seven or more cards are in your graveyard, SN gets +2/+2 and can't block.
 timing=main
-oracle=Flying. Threshold — As long as seven or more cards are in your graveyard, Childhood Horror gets +2/+2 and can't block.
+oracle=Flying\nThreshold — As long as seven or more cards are in your graveyard, Childhood Horror gets +2/+2 and can't block.

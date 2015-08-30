@@ -1,5 +1,5 @@
 name=Blighted Agent
-image=http://mtgimage.com/card/blighted%20agent.jpg
+image=http://magiccards.info/scans/en/nph/29.jpg
 value=3.785
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{U}
 pt=1/1
 ability=infect;SN can't be blocked.
 timing=main
-oracle=Infect. Blighted Agent can't be blocked.
+oracle=Infect\nBlighted Agent can't be blocked.

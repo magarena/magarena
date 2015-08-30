@@ -1,9 +1,10 @@
 name=Planar Despair
-image=http://mtgimage.com/card/planar%20despair.jpg
+image=http://magiccards.info/scans/en/ap/50.jpg
 value=3.069
 rarity=R
 type=Sorcery
 cost={3}{B}{B}
+ability=Cast SN with AI only if an opponent controls a creature.
 timing=main
 requires_groovy_code
 oracle=Domain — All creatures get -1/-1 until end of turn for each basic land type among lands you control.

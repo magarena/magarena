@@ -1,5 +1,5 @@
 name=Nav Squad Commandos
-image=http://mtgimage.com/card/nav%20squad%20commandos.jpg
+image=http://magiccards.info/scans/en/gtc/22.jpg
 value=2.120
 rarity=C
 type=Creature

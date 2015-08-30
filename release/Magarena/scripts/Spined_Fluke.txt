@@ -1,5 +1,5 @@
 name=Spined Fluke
-image=http://mtgimage.com/card/spined%20fluke.jpg
+image=http://magiccards.info/scans/en/us/160.jpg
 value=3.676
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=5/1
 ability=When SN enters the battlefield, sacrifice a creature.;\
         {B}: Regenerate SN.
 timing=main
-oracle=When Spined Fluke enters the battlefield, sacrifice a creature. {B}: Regenerate Spined Fluke.
+oracle=When Spined Fluke enters the battlefield, sacrifice a creature.\n{B}: Regenerate Spined Fluke.

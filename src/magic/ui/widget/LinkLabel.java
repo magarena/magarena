@@ -5,7 +5,7 @@ import java.awt.Cursor;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JLabel;
-import magic.data.URLUtils;
+import magic.ui.URLUtils;
 
 @SuppressWarnings("serial")
 public class LinkLabel extends JLabel {

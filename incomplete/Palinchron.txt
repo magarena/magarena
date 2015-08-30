@@ -1,0 +1,13 @@
+name=Palinchron
+image=http://magiccards.info/scans/en/vma/86.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Illusion
+cost={5}{U}{U}
+pt=4/5
+ability=Flying;\
+{2}{U}{U}: Return SN to its owner's hand.
+timing=main
+requires_groovy_code
+oracle=Flying. When Palinchron enters the battlefield, untap up to seven lands. {2}{U}{U}: Return Palinchron to its owner's hand.

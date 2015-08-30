@@ -1,8 +1,9 @@
 name=Banners Raised
-image=http://mtgimage.com/card/banners%20raised.jpg
+image=http://magiccards.info/scans/en/avr/127.jpg
 value=1.880
 rarity=C
 type=Instant
+ability=Cast SN with AI only if you control a creature.
 cost={R}
 effect=Creatures you control get +1/+0 until end of turn.
 timing=pump

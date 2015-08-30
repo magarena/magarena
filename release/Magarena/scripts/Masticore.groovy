@@ -15,7 +15,7 @@
             if (event.isYes() && event.getPlayer().getHandSize() > 0) {
                 game.addEvent(new MagicDiscardEvent(event.getPermanent(), event.getPlayer()));
             } else {
-                game.doAction(new MagicSacrificeAction(event.getPermanent()));
+                game.doAction(new SacrificeAction(event.getPermanent()));
             }
         }
     }

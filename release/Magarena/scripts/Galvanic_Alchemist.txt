@@ -1,5 +1,5 @@
 name=Galvanic Alchemist
-image=http://mtgimage.com/card/galvanic%20alchemist.jpg
+image=http://magiccards.info/scans/en/avr/54.jpg
 value=2.889
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/4
 ability=Soulbond;\
         As long as SN is paired with another creature, each of those creatures has "{2}{U}: Untap SN."
 timing=main
-oracle=Soulbond. As long as Galvanic Alchemist is paired with another creature, each of those creatures has "{2}{U}: Untap this creature."
+oracle=Soulbond\nAs long as Galvanic Alchemist is paired with another creature, each of those creatures has "{2}{U}: Untap this creature."

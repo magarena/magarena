@@ -1,10 +1,10 @@
 name=Energy Field
-image=http://mtgimage.com/card/energy%20field.jpg
-value=2.500
+image=http://magiccards.info/scans/en/us/73.jpg
+value=4.528
 rarity=R
 type=Enchantment
 cost={1}{U}
 ability=Prevent all damage that would be dealt to you by sources you don't control.;\
         When a card is put into your graveyard from anywhere, sacrifice SN.
-timing=main
-oracle=Prevent all damage that would be dealt to you by sources you don't control. When a card is put into your graveyard from anywhere, sacrifice Energy Field.
+timing=enchantment
+oracle=Prevent all damage that would be dealt to you by sources you don't control.\nWhen a card is put into your graveyard from anywhere, sacrifice Energy Field.

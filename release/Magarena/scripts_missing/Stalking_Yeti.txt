@@ -1,6 +1,6 @@
 name=Stalking Yeti
-image=http://mtgimage.com/card/stalking%20yeti.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cs/98.jpg
+value=2.919
 rarity=U
 type=Snow,Creature
 subtype=Yeti
@@ -9,4 +9,4 @@ pt=3/3
 ability=When SN enters the battlefield, if it's on the battlefield, it deals damage equal to its power to target creature an opponent controls and that creature deals damage equal to its power to SN.;\
         {2}{S}: Return SN to its owner's hand. Activate this ability only any time you could cast a sorcery.
 timing=main
-oracle=When Stalking Yeti enters the battlefield, if it's on the battlefield, it deals damage equal to its power to target creature an opponent controls and that creature deals damage equal to its power to Stalking Yeti. {2}{S}: Return Stalking Yeti to its owner's hand. Activate this ability only any time you could cast a sorcery.
+oracle=When Stalking Yeti enters the battlefield, if it's on the battlefield, it deals damage equal to its power to target creature an opponent controls and that creature deals damage equal to its power to Stalking Yeti.\n{2}{S}: Return Stalking Yeti to its owner's hand. Activate this ability only any time you could cast a sorcery.

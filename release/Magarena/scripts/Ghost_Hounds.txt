@@ -1,12 +1,12 @@
 name=Ghost Hounds
-image=http://mtgimage.com/card/ghost%20hounds.jpg
+image=http://magiccards.info/scans/en/hl/12.jpg
 value=2.807
 rarity=U
 type=Creature
 subtype=Hound,Spirit
 cost={1}{B}
 pt=1/1
-ability=vigilance
+ability=Vigilance.;\
+        Whenever SN blocks or becomes blocked by a white creature, SN gains first strike until end of turn.
 timing=main
-requires_groovy_code
-oracle=Vigilance. Whenever Ghost Hounds blocks or becomes blocked by a white creature, Ghost Hounds gains first strike until end of turn.
+oracle=Vigilance\nWhenever Ghost Hounds blocks or becomes blocked by a white creature, Ghost Hounds gains first strike until end of turn.

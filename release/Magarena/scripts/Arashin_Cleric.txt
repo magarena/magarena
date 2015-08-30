@@ -1,5 +1,5 @@
 name=Arashin Cleric
-image=http://mtgimage.com/card/arashin%20cleric.jpg
+image=http://magiccards.info/scans/en/frf/5.jpg
 value=2.500
 rarity=C
 type=Creature

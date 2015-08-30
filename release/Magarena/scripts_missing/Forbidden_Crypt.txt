@@ -1,10 +1,10 @@
 name=Forbidden Crypt
-image=http://mtgimage.com/card/forbidden%20crypt.jpg
-value=2.500
+image=http://magiccards.info/scans/en/6e/132.jpg
+value=3.179
 rarity=R
 type=Enchantment
 cost={3}{B}{B}
 ability=If you would draw a card, return a card from your graveyard to your hand instead. If you can't, you lose the game.;\
         If a card would be put into your graveyard from anywhere, exile that card instead.
-timing=main
-oracle=If you would draw a card, return a card from your graveyard to your hand instead. If you can't, you lose the game. If a card would be put into your graveyard from anywhere, exile that card instead.
+timing=enchantment
+oracle=If you would draw a card, return a card from your graveyard to your hand instead. If you can't, you lose the game.\nIf a card would be put into your graveyard from anywhere, exile that card instead.

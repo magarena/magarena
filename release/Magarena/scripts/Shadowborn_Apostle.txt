@@ -1,5 +1,5 @@
 name=Shadowborn Apostle
-image=http://mtgimage.com/card/shadowborn%20apostle.jpg
+image=http://magiccards.info/scans/en/m14/114.jpg
 value=3.598
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={B}
 pt=1/1
 ability={B}, Sacrifice six creatures named Shadowborn Apostle: Search your library for a Demon creature card and put it onto the battlefield. Then shuffle your library.
 timing=main
-oracle=A deck can have any number of cards named Shadowborn Apostle. {B}, Sacrifice six creatures named Shadowborn Apostle: Search your library for a Demon creature card and put it onto the battlefield. Then shuffle your library.
+oracle=A deck can have any number of cards named Shadowborn Apostle.\n{B}, Sacrifice six creatures named Shadowborn Apostle: Search your library for a Demon creature card and put it onto the battlefield. Then shuffle your library.

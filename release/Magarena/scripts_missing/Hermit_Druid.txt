@@ -1,5 +1,5 @@
 name=Hermit Druid
-image=http://mtgimage.com/card/hermit%20druid.jpg
+image=http://magiccards.info/scans/en/vma/216.jpg
 value=2.500
 rarity=R
 type=Creature

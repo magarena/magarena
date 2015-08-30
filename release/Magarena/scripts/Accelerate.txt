@@ -1,9 +1,9 @@
 name=Accelerate
-image=http://mtgimage.com/card/accelerate.jpg
+image=http://magiccards.info/scans/en/tr/90.jpg
 value=1.768
 rarity=C
 type=Instant
 cost={1}{R}
 effect=Target creature gains haste until end of turn.~Draw a card.
 timing=pump
-oracle=Target creature gains haste until end of turn. Draw a card.
+oracle=Target creature gains haste until end of turn.\nDraw a card.

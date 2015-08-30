@@ -1,5 +1,5 @@
 name=Nekrataal
-image=http://mtgimage.com/card/nekrataal.jpg
+image=http://magiccards.info/scans/en/c14/152.jpg
 value=4.067
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=first strike;\
         When SN enters the battlefield, destroy target nonartifact, nonblack creature. It can't be regenerated.
 timing=fmain
-oracle=First strike. When Nekrataal enters the battlefield, destroy target nonartifact, nonblack creature. That creature can't be regenerated.
+oracle=First strike\nWhen Nekrataal enters the battlefield, destroy target nonartifact, nonblack creature. That creature can't be regenerated.

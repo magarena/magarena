@@ -1,6 +1,6 @@
 name=Woebringer Demon
-image=http://mtgimage.com/card/woebringer%20demon.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rav/113.jpg
+value=3.344
 rarity=R
 type=Creature
 subtype=Demon
@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying;\
         At the beginning of each player's upkeep, that player sacrifices a creature. If the player can't, sacrifice SN.
 timing=main
-oracle=Flying. At the beginning of each player's upkeep, that player sacrifices a creature. If the player can't, sacrifice Woebringer Demon.
+oracle=Flying\nAt the beginning of each player's upkeep, that player sacrifices a creature. If the player can't, sacrifice Woebringer Demon.

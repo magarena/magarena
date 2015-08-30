@@ -1,6 +1,6 @@
 name=Glarecaster
-image=http://mtgimage.com/card/glarecaster.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/30.jpg
+value=3.518
 rarity=R
 type=Creature
 subtype=Bird,Cleric
@@ -9,4 +9,4 @@ pt=3/3
 ability=Flying;\
         {5}{W}: The next time damage would be dealt to SN and/or you this turn, that damage is dealt to target creature or player instead.
 timing=main
-oracle=Flying. {5}{W}: The next time damage would be dealt to Glarecaster and/or you this turn, that damage is dealt to target creature or player instead.
+oracle=Flying\n{5}{W}: The next time damage would be dealt to Glarecaster and/or you this turn, that damage is dealt to target creature or player instead.

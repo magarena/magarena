@@ -1,9 +1,9 @@
 name=Ley Line
-image=http://mtgimage.com/card/ley%20line.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/256.jpg
+value=2.161
 rarity=U
 type=Enchantment
 cost={3}{G}
 ability=At the beginning of each player's upkeep, that player may put a +1/+1 counter on target creature of his or her choice.
-timing=main
+timing=enchantment
 oracle=At the beginning of each player's upkeep, that player may put a +1/+1 counter on target creature of his or her choice.

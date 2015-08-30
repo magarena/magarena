@@ -1,0 +1,10 @@
+name=Stone Idol Trap
+image=http://magiccards.info/scans/en/wwk/93.jpg
+value=3.538
+rarity=R
+type=Instant
+subtype=Trap
+cost={5}{R}
+effect=Put a 6/12 colorless Construct artifact creature token with trample onto the battlefield. Exile it at the beginning of your next end step.
+timing=token
+oracle=Stone Idol Trap costs {1} less to cast for each attacking creature.\nPut a 6/12 colorless Construct artifact creature token with trample onto the battlefield. Exile it at the beginning of your next end step.

@@ -1,9 +1,0 @@
-name=Cleansing Beam
-image=http://mtgimage.com/card/cleansing%20beam.jpg
-value=2.500
-rarity=U
-type=Instant
-cost={4}{R}
-effect=SN deals 2 damage to target creature and each other creature that shares a color with it.
-timing=removal
-oracle=Radiance — Cleansing Beam deals 2 damage to target creature and each other creature that shares a color with it.

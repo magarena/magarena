@@ -1,5 +1,5 @@
 name=Smash
-image=http://mtgimage.com/card/smash.jpg
+image=http://magiccards.info/scans/en/10e/235.jpg
 value=3.854
 removal=1
 rarity=C
@@ -7,4 +7,4 @@ type=Instant
 cost={2}{R}
 effect=Destroy target artifact.~Draw a card.
 timing=removal
-oracle=Destroy target artifact. Draw a card.
+oracle=Destroy target artifact.\nDraw a card.

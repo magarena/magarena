@@ -1,0 +1,12 @@
+name=Pollenbright Wings
+image=http://magiccards.info/scans/en/pc2/103.jpg
+value=2.696
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={4}{G}{W}
+ability=Enchanted creature has flying.
+timing=aura
+enchant=flying,pos creature
+requires_groovy_code
+oracle=Enchant creature\nEnchanted creature has flying.\nWhenever enchanted creature deals combat damage to a player, put that many 1/1 green Saproling creature tokens onto the battlefield.

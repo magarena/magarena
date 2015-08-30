@@ -2,13 +2,14 @@ package magic.model.event;
 
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
+import magic.model.MagicSource;
 import magic.model.choice.MagicExcludeChoice;
 
 public class MagicExcludeEvent extends MagicEvent {
 
     public MagicExcludeEvent(final MagicPlayer player) {
         super(
-            MagicEvent.NO_SOURCE,
+            MagicSource.NONE,
             player,
             MagicExcludeChoice.getInstance(),
             EVENT_ACTION,

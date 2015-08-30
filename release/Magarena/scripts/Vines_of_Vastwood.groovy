@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_CREATURE,
+                TARGET_CREATURE,
                 MagicPumpTargetPicker.create(),
                 this,
                 "Target creature\$ can't be the target of spells or abilities your opponent controls this turn. " +
@@ -14,12 +14,12 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicGainAbilityAction(
+                game.doAction(new GainAbilityAction(
                     it,
                     MagicAbility.CannotBeTheTarget(event.getPlayer().getOpponent())
                 ));
                 if (event.isKicked()) {
-                    game.doAction(new MagicChangeTurnPTAction(it,4,4));
+                    game.doAction(new ChangeTurnPTAction(it,4,4));
                 }
             });
         }

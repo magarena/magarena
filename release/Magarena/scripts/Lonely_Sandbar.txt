@@ -1,5 +1,5 @@
 name=Lonely Sandbar
-image=http://mtgimage.com/card/lonely%20sandbar.jpg
+image=http://magiccards.info/scans/en/c14/304.jpg
 value=2.750
 rarity=C
 type=Land
@@ -8,4 +8,4 @@ ability=SN enters the battlefield tapped.;\
     {T}: Add {U} to your mana pool.;\
     cycling {U}
 timing=tapland
-oracle=Lonely Sandbar enters the battlefield tapped. {T}: Add {U} to your mana pool. Cycling {U}
+oracle=Lonely Sandbar enters the battlefield tapped.\n{T}: Add {U} to your mana pool.\nCycling {U}

@@ -1,6 +1,5 @@
 package magic.generator;
 
-import magic.data.CubeDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCondensedDeck;
 import magic.model.MagicDeckProfile;
@@ -33,11 +32,6 @@ public class Fairy_Horde_DeckGenerator extends RandomDeckGenerator {
         "Watery Grave",
         "Watery Grave"
     };
-
-    public Fairy_Horde_DeckGenerator() {
-        super(null);
-        setCubeDefinition(CubeDefinitions.getCubeDefinition(getColorText()));
-    }
 
     public String getColorText() {
         return colorText;

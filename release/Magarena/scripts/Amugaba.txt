@@ -1,11 +1,12 @@
 name=Amugaba
-image=http://mtgimage.com/card/amugaba.jpg
+image=http://magiccards.info/scans/en/od/61.jpg
 value=2.744
 rarity=R
 type=Creature
 subtype=Illusion
 cost={5}{U}{U}
 pt=6/6
-ability=flying;{2}{U},Discard a card:Return SN to its owner's hand.
+ability=Flying;\
+        {2}{U}, Discard a card: Return SN to its owner's hand.
 timing=main
-oracle=Flying. {2}{U}, Discard a card: Return Amugaba to its owner's hand.
+oracle=Flying\n{2}{U}, Discard a card: Return Amugaba to its owner's hand.

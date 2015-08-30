@@ -1,7 +1,7 @@
 name=Ransack
-image=http://mtgimage.com/card/ransack.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/st/47.jpg
+value=3.452
+rarity=R
 type=Sorcery
 cost={3}{U}
 effect=Look at the top five cards of target player's library. Put any number of them on the bottom of that library in any order and the rest on top of the library in any order.

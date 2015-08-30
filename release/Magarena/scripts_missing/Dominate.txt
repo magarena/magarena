@@ -1,6 +1,6 @@
 name=Dominate
-image=http://mtgimage.com/card/dominate.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ne/31.jpg
+value=3.598
 rarity=U
 type=Instant
 cost={X}{1}{U}{U}

@@ -1,9 +1,9 @@
 name=Squelch
-image=http://mtgimage.com/card/squelch.jpg
+image=http://magiccards.info/scans/en/chk/92.jpg
 value=3.982
 rarity=U
 type=Instant
 cost={1}{U}
 effect=Counter target activated ability.~Draw a card.
 timing=counter
-oracle=Counter target activated ability. Draw a card.
+oracle=Counter target activated ability.\nDraw a card.

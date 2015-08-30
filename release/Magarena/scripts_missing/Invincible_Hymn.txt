@@ -1,6 +1,6 @@
 name=Invincible Hymn
-image=http://mtgimage.com/card/invincible%20hymn.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ala/14.jpg
+value=2.988
 rarity=R
 type=Sorcery
 cost={6}{W}{W}

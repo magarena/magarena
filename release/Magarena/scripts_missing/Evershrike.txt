@@ -1,6 +1,6 @@
 name=Evershrike
-image=http://mtgimage.com/card/evershrike.jpg
-value=2.500
+image=http://magiccards.info/scans/en/eve/88.jpg
+value=3.938
 rarity=R
 type=Creature
 subtype=Elemental,Spirit
@@ -10,4 +10,4 @@ ability=Flying;\
         SN gets +2/+2 for each Aura attached to it.;\
         {X}{W/B}{W/B}: Return SN from your graveyard to the battlefield. You may put an Aura card with converted mana cost X or less from your hand onto the battlefield attached to it. If you don't, exile SN.
 timing=main
-oracle=Flying. Evershrike gets +2/+2 for each Aura attached to it. {X}{W/B}{W/B}: Return Evershrike from your graveyard to the battlefield. You may put an Aura card with converted mana cost X or less from your hand onto the battlefield attached to it. If you don't, exile Evershrike.
+oracle=Flying\nEvershrike gets +2/+2 for each Aura attached to it.\n{X}{W/B}{W/B}: Return Evershrike from your graveyard to the battlefield. You may put an Aura card with converted mana cost X or less from your hand onto the battlefield attached to it. If you don't, exile Evershrike.

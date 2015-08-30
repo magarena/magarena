@@ -1,11 +1,11 @@
 name=Timberpack Wolf
-image=http://mtgimage.com/card/timberpack%20wolf.jpg
-value=3.562
+image=http://magiccards.info/scans/en/ori/200.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Wolf
 cost={1}{G}
 pt=2/2
+ability=SN gets +1/+1 for each other creature you control named Timberpack Wolf.
 timing=main
-requires_groovy_code
 oracle=Timberpack Wolf gets +1/+1 for each other creature you control named Timberpack Wolf.

@@ -10,9 +10,9 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicPlayTokensAction(
+            game.doAction(new PlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("1/1 white Soldier creature token"),
+                CardDefinitions.getToken("1/1 white Soldier creature token"),
                 3
             ));
         }
@@ -28,8 +28,8 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicDestroyAction(
-                game.filterPermanents(MagicTargetFilterFactory.CREATURE_POWER_4_OR_MORE)
+            game.doAction(new DestroyAction(
+                CREATURE_POWER_4_OR_MORE.filter(event)
             ));
         }
     },
@@ -44,11 +44,8 @@
         }
         @Override
         public void executeEvent(final MagicGame outerGame, final MagicEvent event) {
-            outerGame.doAction(new MagicAddStaticAction(
-                new MagicStatic(
-                    MagicLayer.ModPT,
-                    MagicTargetFilterFactory.ANY
-                ) {
+            outerGame.doAction(new AddStaticAction(
+                new MagicStatic(MagicLayer.ModPT, ANY) {
                     @Override
                     public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
                         pt.add(2, 2);
@@ -59,11 +56,8 @@
                     }
                 }
             ));
-            outerGame.doAction(new MagicAddStaticAction(
-                new MagicStatic(
-                    MagicLayer.Ability,
-                    MagicTargetFilterFactory.ANY
-                ) {
+            outerGame.doAction(new AddStaticAction(
+                new MagicStatic(MagicLayer.Ability, ANY) {
                     @Override
                     public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
                         permanent.addAbility(MagicAbility.Flying, flags);

@@ -1,9 +1,9 @@
 name=Gods' Eye, Gate to the Reikai
-image=http://mtgimage.com/card/gods%27%20eye%2C%20gate%20to%20the%20reikai.jpg
+image=http://magiccards.info/scans/en/bok/164.jpg
 value=3.370
 rarity=U
 type=Legendary,Land
 ability={T}: Add {1} to your mana pool.;\
         When SN is put into a graveyard from the battlefield, put a 1/1 colorless Spirit creature token onto the battlefield.
 timing=land
-oracle={T}: Add {1} to your mana pool. When Gods' Eye, Gate to the Reikai is put into a graveyard from the battlefield, put a 1/1 colorless Spirit creature token onto the battlefield.
+oracle={T}: Add {1} to your mana pool.\nWhen Gods' Eye, Gate to the Reikai is put into a graveyard from the battlefield, put a 1/1 colorless Spirit creature token onto the battlefield.

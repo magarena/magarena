@@ -1,28 +1,29 @@
 package magic.ui.duel.choice;
 
-import magic.ui.IconImages;
-import magic.model.MagicColor;
-import magic.model.MagicSource;
-import magic.ui.SwingGameController;
-import magic.ui.duel.viewer.UserActionPanel;
-import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.TextLabel;
-
-import javax.swing.JButton;
-import javax.swing.JPanel;
-
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import javax.swing.JPanel;
 import magic.model.IGameController;
+import magic.model.MagicColor;
+import magic.model.MagicSource;
+import magic.ui.IconImages;
+import magic.ui.SwingGameController;
+import magic.translate.UiString;
+import magic.ui.duel.viewer.UserActionPanel;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.TextLabel;
 
+@SuppressWarnings("serial")
 public class ColorChoicePanel extends JPanel implements ActionListener {
 
-    private static final long serialVersionUID = 1L;
+    // translatable strings
+    private static final String _S1 = "Choose a color.";
 
-    private static final String MESSAGE="Choose a color.";
+    private static final String MESSAGE = UiString.get(_S1);
     private static final Dimension BUTTON_DIMENSION=new Dimension(35,35);
 
     private final SwingGameController controller;

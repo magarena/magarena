@@ -1,5 +1,5 @@
 name=Felhide Brawler
-image=http://mtgimage.com/card/felhide%20brawler.jpg
+image=http://magiccards.info/scans/en/bng/70.jpg
 value=1.804
 rarity=C
 type=Creature

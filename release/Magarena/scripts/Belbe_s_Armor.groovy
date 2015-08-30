@@ -16,7 +16,7 @@
             final int amount = payedCost.getX();
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_CREATURE,
+                TARGET_CREATURE,
                 amount,
                 this,
                 "Target creature\$ gets -X/+X until end of turn. (X="+amount+")"
@@ -27,7 +27,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount=event.getRefInt();
             event.processTargetPermanent(game, {
-                game.doAction(new MagicChangeTurnPTAction(it,-amount,+amount));
+                game.doAction(new ChangeTurnPTAction(it,-amount,+amount));
             });
         }
     }

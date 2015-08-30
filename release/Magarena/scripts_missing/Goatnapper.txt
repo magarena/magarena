@@ -1,6 +1,6 @@
 name=Goatnapper
-image=http://mtgimage.com/card/goatnapper.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lw/172.jpg
+value=4.127
 rarity=U
 type=Creature
 subtype=Goblin,Rogue

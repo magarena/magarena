@@ -1,5 +1,5 @@
 name=Ulamog, the Infinite Gyre
-image=http://mtgimage.com/card/ulamog%2C%20the%20infinite%20gyre.jpg
+image=http://magiccards.info/scans/en/roe/12.jpg
 value=4.093
 removal=3
 rarity=M
@@ -12,4 +12,4 @@ ability=annihilator 4;\
         When SN is put into a graveyard from anywhere, its owner shuffles his or her graveyard into his or her library.
 timing=main
 requires_groovy_code
-oracle=When you cast Ulamog, the Infinite Gyre, destroy target permanent. Indestructible. Annihilator 4. When Ulamog is put into a graveyard from anywhere, its owner shuffles his or her graveyard into his or her library.
+oracle=When you cast Ulamog, the Infinite Gyre, destroy target permanent.\nIndestructible\nAnnihilator 4\nWhen Ulamog is put into a graveyard from anywhere, its owner shuffles his or her graveyard into his or her library.

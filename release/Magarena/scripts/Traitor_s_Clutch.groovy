@@ -10,7 +10,7 @@ def color = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.POS_TARGET_CREATURE,
+                POS_TARGET_CREATURE,
                 MagicUnblockableTargetPicker.create(),
                 this,
                 "Target creature\$ gets +1/+0, becomes black, and gains shadow until end of turn."
@@ -19,9 +19,9 @@ def color = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicChangeTurnPTAction(it,1,0));
-                game.doAction(new MagicAddStaticAction(it,color));
-                game.doAction(new MagicGainAbilityAction(it,MagicAbility.Shadow));
+                game.doAction(new ChangeTurnPTAction(it,1,0));
+                game.doAction(new AddStaticAction(it,color));
+                game.doAction(new GainAbilityAction(it,MagicAbility.Shadow));
             });
         }
     }

@@ -115,9 +115,14 @@ public class MagicTargetNone extends MagicObjectImpl implements MagicTarget, Mag
     public long getStateId() {
         return hashCode();
     }
+    
+    @Override
+    public int getCounters(final MagicCounterType counterType) {
+        return 0;
+    }
 
     @Override
-    public boolean hasCounters(MagicCounterType counterType) {
-        return false;
+    public void changeCounters(final MagicCounterType counterType,final int amount) {
+        throw new RuntimeException(counterType + " cannot be modified on item on stack");
     }
 }

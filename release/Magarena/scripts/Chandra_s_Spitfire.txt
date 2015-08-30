@@ -1,5 +1,5 @@
 name=Chandra's Spitfire
-image=http://mtgimage.com/card/chandra%27s%20spitfire.jpg
+image=http://magiccards.info/scans/en/m11/129.jpg
 value=4.146
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/3
 timing=fmain
 ability=flying
 requires_groovy_code
-oracle=Flying. Whenever an opponent is dealt noncombat damage, Chandra's Spitfire gets +3/+0 until end of turn.
+oracle=Flying\nWhenever an opponent is dealt noncombat damage, Chandra's Spitfire gets +3/+0 until end of turn.

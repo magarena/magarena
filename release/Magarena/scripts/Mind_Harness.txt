@@ -1,5 +1,5 @@
 name=Mind Harness
-image=http://mtgimage.com/card/mind%20harness.jpg
+image=http://magiccards.info/scans/en/mr/78.jpg
 value=3.096
 rarity=U
 type=Enchantment
@@ -9,4 +9,4 @@ ability=cumulative upkeep {1};\
         You control enchanted creature.
 enchant=gain control,neg red or green creature
 timing=aura
-oracle=Enchant red or green creature. Cumulative upkeep {1}. You control enchanted creature.
+oracle=Enchant red or green creature\nCumulative upkeep {1}\nYou control enchanted creature.

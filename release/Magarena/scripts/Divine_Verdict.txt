@@ -1,5 +1,5 @@
 name=Divine Verdict
-image=http://mtgimage.com/card/divine%20verdict.jpg
+image=http://magiccards.info/scans/en/m15/271.jpg
 value=2.400
 rarity=C
 type=Instant

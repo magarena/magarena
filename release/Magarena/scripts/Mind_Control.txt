@@ -1,5 +1,5 @@
 name=Mind Control
-image=http://mtgimage.com/card/mind%20control.jpg
+image=http://magiccards.info/scans/en/m12/67.jpg
 value=3.867
 rarity=U
 type=Enchantment
@@ -8,4 +8,4 @@ cost={3}{U}{U}
 timing=aura
 ability=You control enchanted creature.
 enchant=gain control,neg creature
-oracle=Enchant creature. You control enchanted creature.
+oracle=Enchant creature\nYou control enchanted creature.

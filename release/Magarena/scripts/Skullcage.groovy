@@ -7,7 +7,7 @@
                     permanent,
                     upkeepPlayer,
                     this,
-                    "SN deals 2 damage to PN unless PN has exactly three or exactly four cards in hand."
+                    "SN deals 2 damage to PN unless he or she has exactly three or exactly four cards in hand."
                 ):
                 MagicEvent.NONE;
         }
@@ -16,8 +16,7 @@
             final MagicPlayer opponent=event.getPlayer();
             final int amount=opponent.getHandSize();
             if (amount < 3 || amount > 4) {
-                final MagicDamage damage=new MagicDamage(event.getSource(),opponent,2);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new DealDamageAction(event.getSource(),opponent,2));
             }
         }
     }

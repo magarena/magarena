@@ -1,20 +1,26 @@
 package magic.ui.screen;
 
-import magic.data.URLUtils;
+import java.awt.event.ActionEvent;
+import javax.swing.AbstractAction;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import magic.ui.ScreenController;
+import magic.ui.URLUtils;
+import magic.translate.UiString;
 import magic.ui.screen.widget.MenuPanel;
+import magic.ui.widget.KeysStripPanel;
 import net.miginfocom.swing.MigLayout;
 
-import javax.swing.AbstractAction;
-import javax.swing.JPanel;
-
-import java.awt.event.ActionEvent;
-import javax.swing.JLabel;
-import magic.ui.ScreenController;
-import magic.ui.widget.KeysStripPanel;
-
 @SuppressWarnings("serial")
-public class HelpMenuScreen extends AbstractScreen {
-   
+public class HelpMenuScreen extends AbstractScreen {   
+
+    // translatable strings
+    private static final String _S1 = "Help Menu";
+    private static final String _S2 = "ReadMe";
+    private static final String _S3 = "Online help";
+    private static final String _S4 = "Keywords glossary";
+    private static final String _S5 = "About Magarena";
+    private static final String _S6 = "Close menu";
 
     public HelpMenuScreen() {
         setContent(getScreenContent());
@@ -41,34 +47,34 @@ public class HelpMenuScreen extends AbstractScreen {
 
     private MenuPanel getMenuPanel() {
 
-        final MenuPanel menu = new MenuPanel("Help Menu");
+        final MenuPanel menu = new MenuPanel(UiString.get(_S1));
 
-        menu.addMenuItem("ReadMe", new AbstractAction() {
+        menu.addMenuItem(UiString.get(_S2), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 ScreenController.showReadMeScreen();
             }
         });
-        menu.addMenuItem("Online help", new AbstractAction() {
+        menu.addMenuItem(UiString.get(_S3), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 URLUtils.openURL(URLUtils.URL_USERGUIDE);
             }
         });
-        menu.addMenuItem("Keywords glossary", new AbstractAction() {
+        menu.addMenuItem(UiString.get(_S4), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 ScreenController.showKeywordsScreen();
             }
         });
-        menu.addMenuItem("About Magarena", new AbstractAction() {
+        menu.addMenuItem(UiString.get(_S5), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 ScreenController.showAboutDialog();
             }
         });
         menu.addBlankItem();
-        menu.addMenuItem("Close menu", new AbstractAction() {
+        menu.addMenuItem(UiString.get(_S6), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 ScreenController.closeActiveScreen(false);
@@ -79,9 +85,6 @@ public class HelpMenuScreen extends AbstractScreen {
 
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.MagScreen#isScreenReadyToClose(magic.ui.MagScreen)
-     */
     @Override
     public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
         return true;

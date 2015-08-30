@@ -1,9 +1,9 @@
 name=Grip of Chaos
-image=http://mtgimage.com/card/grip%20of%20chaos.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sc/98.jpg
+value=3.766
 rarity=R
 type=Enchantment
 cost={4}{R}{R}
 ability=Whenever a spell or ability is put onto the stack, if it has a single target, reselect its target at random.
-timing=main
+timing=enchantment
 oracle=Whenever a spell or ability is put onto the stack, if it has a single target, reselect its target at random.

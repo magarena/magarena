@@ -1,6 +1,6 @@
 name=Graceful Antelope
-image=http://mtgimage.com/card/graceful%20antelope.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/24.jpg
+value=2.756
 rarity=R
 type=Creature
 subtype=Antelope
@@ -9,4 +9,4 @@ pt=1/4
 ability=Plainswalk;\
         Whenever SN deals combat damage to a player, you may have target land become a Plains until SN leaves the battlefield.
 timing=main
-oracle=Plainswalk. Whenever Graceful Antelope deals combat damage to a player, you may have target land become a Plains until Graceful Antelope leaves the battlefield.
+oracle=Plainswalk\nWhenever Graceful Antelope deals combat damage to a player, you may have target land become a Plains until Graceful Antelope leaves the battlefield.

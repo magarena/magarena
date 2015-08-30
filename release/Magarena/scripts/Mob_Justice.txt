@@ -1,10 +1,11 @@
 name=Mob Justice
-image=http://mtgimage.com/card/mob%20justice.jpg
+image=http://magiccards.info/scans/en/sh/90.jpg
 value=3.859
 removal=3
 rarity=C
 type=Sorcery
 cost={1}{R}
+ability=Cast SN with AI only if you control a creature.
+effect=SN deals damage to target player equal to the number of creatures you control.
 timing=removal
-requires_groovy_code
 oracle=Mob Justice deals damage to target player equal to the number of creatures you control.

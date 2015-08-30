@@ -1,15 +1,15 @@
 [
-   new MagicPermanentActivation(
+    new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Removal),
         "Gain Life"
-   ) {
+    ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
-         return [
+            return [
                 new MagicPayManaCostEvent(source,"{W}"),
                 new MagicTapEvent(source),
-                new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_CLERIC)
-            ];         
+                new MagicSacrificePermanentEvent(source,SACRIFICE_CLERIC)
+            ];
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
@@ -22,7 +22,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeLifeAction(
+            game.doAction(new ChangeLifeAction(
                 event.getPlayer(),
                 event.getRefPermanent().getToughness()
             ));
@@ -34,17 +34,17 @@
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
-         return [
+            return [
                 new MagicPayManaCostEvent(source,"{B}"),
                 new MagicTapEvent(source),
-                new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_CLERIC)
-            ];         
+                new MagicSacrificePermanentEvent(source,SACRIFICE_CLERIC)
+            ];
         }
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_PLAYER,
+                NEG_TARGET_PLAYER,
                 payedCost.getTarget(),
                 this,
                 "Target player\$ loses life equal to RN's power."
@@ -53,7 +53,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                game.doAction(new MagicChangeLifeAction(
+                game.doAction(new ChangeLifeAction(
                     it,
                     -event.getRefPermanent().getPower()
                 ));

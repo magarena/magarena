@@ -1,10 +1,10 @@
 name=Mana Crypt
-image=http://mtgimage.com/card/mana%20crypt.jpg
-value=2.500
-rarity=R
+image=http://magiccards.info/scans/en/vma/272.jpg
+value=4.125
+rarity=M
 type=Artifact
 cost={0}
 ability=At the beginning of your upkeep, flip a coin. If you lose the flip, SN deals 3 damage to you.;\
         {T}: Add {2} to your mana pool.
-timing=main
-oracle=At the beginning of your upkeep, flip a coin. If you lose the flip, Mana Crypt deals 3 damage to you. {T}: Add {2} to your mana pool.
+timing=artifact
+oracle=At the beginning of your upkeep, flip a coin. If you lose the flip, Mana Crypt deals 3 damage to you.\n{T}: Add {2} to your mana pool.

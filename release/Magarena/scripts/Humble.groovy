@@ -17,7 +17,7 @@ def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_CREATURE,
+                TARGET_CREATURE,
                 new MagicBecomeTargetPicker(0,1,false),
                 this,
                 "Target creature\$ loses all abilities and becomes 0/1 until end of turn."
@@ -26,7 +26,7 @@ def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicBecomesCreatureAction(it,PT,AB));
+                game.doAction(new BecomesCreatureAction(it,PT,AB));
             });
         }
     }

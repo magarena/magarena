@@ -1,5 +1,5 @@
 name=Diregraf Escort
-image=http://mtgimage.com/card/diregraf%20escort.jpg
+image=http://magiccards.info/scans/en/avr/174.jpg
 value=1.527
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=Soulbond;\
         As long as SN is paired with another creature, both creatures have protection from Zombies.
 timing=main
-oracle=Soulbond. As long as Diregraf Escort is paired with another creature, both creatures have protection from Zombies.
+oracle=Soulbond\nAs long as Diregraf Escort is paired with another creature, both creatures have protection from Zombies.

@@ -1,12 +1,13 @@
 name=Archangel of Thune
-image=http://mtgimage.com/card/archangel%20of%20thune.jpg
+image=http://magiccards.info/scans/en/m14/5.jpg
 value=3.970
 rarity=M
 type=Creature
 subtype=Angel
 cost={3}{W}{W}
 pt=3/4
-ability=flying;lifelink;\
+ability=Flying;\
+        Lifelink;\
         Whenever you gain life, put a +1/+1 counter on each creature you control.
 timing=main
-oracle=Flying. Lifelink. Whenever you gain life, put a +1/+1 counter on each creature you control.
+oracle=Flying\nLifelink\nWhenever you gain life, put a +1/+1 counter on each creature you control.

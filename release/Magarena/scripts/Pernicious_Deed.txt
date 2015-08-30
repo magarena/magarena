@@ -1,5 +1,5 @@
 name=Pernicious Deed
-image=http://mtgimage.com/card/pernicious%20deed.jpg
+image=http://magiccards.info/scans/en/cns/191.jpg
 value=4.571
 rarity=R
 type=Enchantment

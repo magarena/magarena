@@ -1,5 +1,5 @@
 name=Lurking Skirge
-image=http://mtgimage.com/card/lurking%20skirge.jpg
+image=http://magiccards.info/scans/en/ul/55.jpg
 value=3.853
 rarity=R
 type=Enchantment

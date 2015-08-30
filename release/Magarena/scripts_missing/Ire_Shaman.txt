@@ -1,0 +1,13 @@
+name=Ire Shaman
+image=http://magiccards.info/scans/en/dtk/141.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Orc,Shaman
+cost={1}{R}
+pt=2/1
+ability=SN can't be blocked except by two or more creatures.;\
+        Megamorph {R};\
+        When SN is turned face up, exile the top card of your library. Until end of turn, you may play that card.
+timing=main
+oracle=Ire Shaman can't be blocked except by two or more creatures.\nMegamorph {R}\nWhen Ire Shaman is turned face up, exile the top card of your library. Until end of turn, you may play that card.

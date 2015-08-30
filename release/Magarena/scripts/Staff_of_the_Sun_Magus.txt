@@ -1,5 +1,5 @@
 name=Staff of the Sun Magus
-image=http://mtgimage.com/card/staff%20of%20the%20sun%20magus.jpg
+image=http://magiccards.info/scans/en/m15/235.jpg
 value=1.333
 rarity=U
 type=Artifact

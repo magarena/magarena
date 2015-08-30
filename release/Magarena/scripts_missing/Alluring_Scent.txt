@@ -1,7 +1,7 @@
 name=Alluring Scent
-image=http://mtgimage.com/card/alluring%20scent.jpg
-value=2.500
-rarity=R
+image=http://magiccards.info/scans/en/me4/141.jpg
+value=2.292
+rarity=C
 type=Sorcery
 cost={1}{G}{G}
 effect=All creatures able to block target creature this turn do so.

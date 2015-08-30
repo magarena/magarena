@@ -1,9 +1,9 @@
 name=Divine Congregation
-image=http://mtgimage.com/card/divine%20congregation.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ts/13.jpg
+value=2.643
 rarity=C
 type=Sorcery
 cost={3}{W}
 effect=You gain 2 life for each creature target player controls.~Suspend 5—{1}{W}
 timing=main
-oracle=You gain 2 life for each creature target player controls. Suspend 5—{1}{W}
+oracle=You gain 2 life for each creature target player controls.\nSuspend 5—{1}{W}

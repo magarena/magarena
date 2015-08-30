@@ -1,9 +1,9 @@
 name=Nostalgic Dreams
-image=http://mtgimage.com/card/nostalgic%20dreams.jpg
-value=2.500
-rarity=R
+image=http://magiccards.info/scans/en/vma/222.jpg
+value=4.000
+rarity=U
 type=Sorcery
 cost={G}{G}
 effect=As an additional cost to cast SN, discard X cards.~Return X target cards from your graveyard to your hand. Exile SN.
 timing=main
-oracle=As an additional cost to cast Nostalgic Dreams, discard X cards. Return X target cards from your graveyard to your hand. Exile Nostalgic Dreams.
+oracle=As an additional cost to cast Nostalgic Dreams, discard X cards.\nReturn X target cards from your graveyard to your hand. Exile Nostalgic Dreams.

@@ -1,0 +1,11 @@
+name=Ironclaw Orcs
+image=http://magiccards.info/scans/en/me2/132.jpg
+value=2.558
+rarity=C
+type=Creature
+subtype=Orc
+cost={1}{R}
+pt=2/2
+ability=SN can't block creatures with power 2 or greater.
+timing=main
+oracle=Ironclaw Orcs can't block creatures with power 2 or greater.

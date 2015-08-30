@@ -10,7 +10,7 @@
                 new MagicPayManaCostEvent(source,"{3}"),
                 new MagicSacrificePermanentEvent(
                     source,
-                    MagicTargetChoice.SACRIFICE_CREATURE
+                    SACRIFICE_CREATURE
                 )
             ];
         }
@@ -26,7 +26,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int sacrificed = event.getRefPermanent().getToughness();
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),sacrificed));
+            game.doAction(new ChangeLifeAction(event.getPlayer(),sacrificed));
         }
     }
 ]

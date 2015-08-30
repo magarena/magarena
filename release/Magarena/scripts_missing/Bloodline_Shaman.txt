@@ -1,6 +1,6 @@
 name=Bloodline Shaman
-image=http://mtgimage.com/card/bloodline%20shaman.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/249.jpg
+value=3.817
 rarity=U
 type=Creature
 subtype=Elf,Wizard,Shaman

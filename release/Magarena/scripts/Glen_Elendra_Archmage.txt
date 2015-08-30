@@ -1,5 +1,5 @@
 name=Glen Elendra Archmage
-image=http://mtgimage.com/card/glen%20elendra%20archmage.jpg
+image=http://magiccards.info/scans/en/mma/47.jpg
 value=4.536
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=flying;\
         {U},Sacrifice SN: Counter target noncreature spell.;\
         persist
 timing=main
-oracle=Flying. {U}, Sacrifice Glen Elendra Archmage: Counter target noncreature spell. Persist
+oracle=Flying\n{U}, Sacrifice Glen Elendra Archmage: Counter target noncreature spell.\nPersist

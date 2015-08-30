@@ -1,9 +1,10 @@
 name=Tobias Andrion
-image=http://mtgimage.com/card/tobias%20andrion.jpg
+image=http://magiccards.info/scans/en/me3/181.jpg
 value=1.282
-rarity=C
+rarity=U
 type=Legendary,Creature
 subtype=Human,Advisor
 cost={3}{W}{U}
 pt=4/4
 timing=main
+oracle=NONE

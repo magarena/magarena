@@ -1,5 +1,5 @@
 name=Champion of the Parish
-image=http://mtgimage.com/card/champion%20of%20the%20parish.jpg
+image=http://magiccards.info/scans/en/isd/6.jpg
 value=4.014
 rarity=R
 type=Creature

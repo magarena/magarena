@@ -1,0 +1,12 @@
+name=Shrieking Specter
+image=http://magiccards.info/scans/en/st/89.jpg
+value=1.354
+rarity=U
+type=Creature
+subtype=Specter
+cost={5}{B}
+pt=2/2
+ability=Flying;\
+        Whenever SN attacks, defending player discards a card.
+timing=main
+oracle=Flying\nWhenever Shrieking Specter attacks, defending player discards a card.

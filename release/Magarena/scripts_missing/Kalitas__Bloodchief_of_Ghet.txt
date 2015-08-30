@@ -1,6 +1,6 @@
 name=Kalitas, Bloodchief of Ghet
-image=http://mtgimage.com/card/kalitas%2C%20bloodchief%20of%20ghet.jpg
-value=2.500
+image=http://magiccards.info/scans/en/zen/99.jpg
+value=3.849
 rarity=M
 type=Legendary,Creature
 subtype=Vampire,Warrior

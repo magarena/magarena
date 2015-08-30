@@ -1,6 +1,6 @@
 name=Green Sun's Zenith
-image=http://mtgimage.com/card/green%20sun%27s%20zenith.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mbs/81.jpg
+value=4.598
 rarity=R
 type=Sorcery
 cost={X}{G}

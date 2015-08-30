@@ -1,6 +1,6 @@
 name=Chimney Imp
-image=http://mtgimage.com/card/chimney%20imp.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mi/59.jpg
+value=3.312
 rarity=C
 type=Creature
 subtype=Imp
@@ -9,4 +9,4 @@ pt=1/2
 ability=Flying;\
         When SN dies, target opponent puts a card from his or her hand on top of his or her library.
 timing=main
-oracle=Flying. When Chimney Imp dies, target opponent puts a card from his or her hand on top of his or her library.
+oracle=Flying\nWhen Chimney Imp dies, target opponent puts a card from his or her hand on top of his or her library.

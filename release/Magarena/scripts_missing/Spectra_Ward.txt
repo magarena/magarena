@@ -1,11 +1,11 @@
 name=Spectra Ward
-image=http://mtgimage.com/card/spectra%20ward.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/36.jpg
+value=3.500
 rarity=R
 type=Enchantment
 subtype=Aura
 cost={3}{W}{W}
 ability=Enchant creature;\
         Enchanted creature gets +2/+2 and has protection from all colors. This effect doesn't remove Auras.
-timing=main
-oracle=Enchant creature. Enchanted creature gets +2/+2 and has protection from all colors. This effect doesn't remove Auras.
+timing=aura
+oracle=Enchant creature\nEnchanted creature gets +2/+2 and has protection from all colors. This effect doesn't remove Auras.

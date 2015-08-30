@@ -1,5 +1,5 @@
 name=Darkwatch Elves
-image=http://mtgimage.com/card/darkwatch%20elves.jpg
+image=http://magiccards.info/scans/en/ul/99.jpg
 value=3.389
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{G}
 timing=main
 pt=2/2
 ability=cycling {2};protection from black
-oracle=Protection from black. Cycling {2}
+oracle=Protection from black\nCycling {2}

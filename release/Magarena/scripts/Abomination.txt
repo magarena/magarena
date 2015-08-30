@@ -1,11 +1,11 @@
 name=Abomination
-image=http://mtgimage.com/card/abomination.jpg
+image=http://magiccards.info/scans/en/4e/1.jpg
 value=2.867
 rarity=U
 type=Creature
 subtype=Horror
 cost={3}{B}{B}
 pt=2/6
+ability=Whenever SN blocks or becomes blocked by a green or white creature, destroy that creature at end of combat.
 timing=main
-requires_groovy_code
 oracle=Whenever Abomination blocks or becomes blocked by a green or white creature, destroy that creature at end of combat.

@@ -1,5 +1,5 @@
 name=Aven Archer
-image=http://mtgimage.com/card/aven%20archer.jpg
+image=http://magiccards.info/scans/en/od/6.jpg
 value=1.742
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={3}{W}{W}
 pt=2/2
 ability=flying;{2}{W},{T}:SN deals 2 damage to target attacking or blocking creature.
 timing=main
-oracle=Flying. {2}{W}, {T}: Aven Archer deals 2 damage to target attacking or blocking creature.
+oracle=Flying\n{2}{W}, {T}: Aven Archer deals 2 damage to target attacking or blocking creature.

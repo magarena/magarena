@@ -1,9 +1,9 @@
 name=Enduring Ideal
-image=http://mtgimage.com/card/enduring%20ideal.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sok/9.jpg
+value=3.800
 rarity=R
 type=Sorcery
 cost={5}{W}{W}
 effect=Search your library for an enchantment card and put it onto the battlefield. Then shuffle your library.~Epic
 timing=main
-oracle=Search your library for an enchantment card and put it onto the battlefield. Then shuffle your library. Epic
+oracle=Search your library for an enchantment card and put it onto the battlefield. Then shuffle your library.\nEpic

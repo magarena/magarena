@@ -1,6 +1,6 @@
 name=Revive the Fallen
-image=http://mtgimage.com/card/revive%20the%20fallen.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mt/76.jpg
+value=3.044
 rarity=U
 type=Sorcery
 cost={1}{B}

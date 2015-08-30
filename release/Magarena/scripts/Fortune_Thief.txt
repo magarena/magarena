@@ -1,5 +1,5 @@
 name=Fortune Thief
-image=http://mtgimage.com/card/fortune%20thief.jpg
+image=http://magiccards.info/scans/en/ts/156.jpg
 value=4.164
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=0/1
 ability=Morph {R}{R}
 timing=main
 requires_groovy_code=Ali from Cairo
-oracle=Damage that would reduce your life total to less than 1 reduces it to 1 instead. Morph {R}{R}
+oracle=Damage that would reduce your life total to less than 1 reduces it to 1 instead.\nMorph {R}{R}

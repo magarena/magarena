@@ -1,0 +1,12 @@
+name=Dromoka Captain
+image=http://magiccards.info/scans/en/dtk/12.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={2}{W}
+pt=1/1
+ability=First strike;\
+        Whenever SN attacks, bolster 1.
+timing=main
+oracle=First strike\nWhenever Dromoka Captain attacks, bolster 1.

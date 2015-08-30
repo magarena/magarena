@@ -1,7 +1,7 @@
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.Removal),
-        "Animate"
+        new MagicActivationHints(MagicTiming.Token),
+        "Reanimate"
     ) {
 
         @Override
@@ -24,16 +24,10 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final List<MagicCard> cards = game.filterCards(
-                    event.getPlayer(),
-                    MagicTargetFilterFactory.CARD_FROM_GRAVEYARD);
-            for (final MagicCard card : cards) {
-                if (card.getName().equals("Deathpact Angel")) {
-                    game.doAction(new MagicReanimateAction(
-                        card,
-                        event.getPlayer()
-                    ));
-                    break;
+            CARD_FROM_GRAVEYARD.filter(event) find {
+                if (it.getName().equals("Deathpact Angel")) {
+                    game.doAction(new ReanimateAction(it, event.getPlayer()));
+                    return true;
                 }
             }
         }

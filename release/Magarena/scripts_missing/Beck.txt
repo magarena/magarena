@@ -1,9 +1,9 @@
 name=Beck
-image=http://mtgimage.com/card/beckcall.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dgm/123a.jpg
+value=3.889
 rarity=R
 type=Sorcery
 cost={G}{U}
 effect=Whenever a creature enters the battlefield this turn, you may draw a card.~Fuse
 timing=main
-oracle=Whenever a creature enters the battlefield this turn, you may draw a card. Fuse
+oracle=Whenever a creature enters the battlefield this turn, you may draw a card.\nFuse

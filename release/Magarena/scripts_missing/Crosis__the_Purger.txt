@@ -1,6 +1,6 @@
 name=Crosis, the Purger
-image=http://mtgimage.com/card/crosis%2C%20the%20purger.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/242.jpg
+value=4.235
 rarity=R
 type=Legendary,Creature
 subtype=Dragon
@@ -9,4 +9,4 @@ pt=6/6
 ability=Flying;\
         Whenever SN deals combat damage to a player, you may pay {2}{B}. If you do, choose a color, then that player reveals his or her hand and discards all cards of that color.
 timing=main
-oracle=Flying. Whenever Crosis, the Purger deals combat damage to a player, you may pay {2}{B}. If you do, choose a color, then that player reveals his or her hand and discards all cards of that color.
+oracle=Flying\nWhenever Crosis, the Purger deals combat damage to a player, you may pay {2}{B}. If you do, choose a color, then that player reveals his or her hand and discards all cards of that color.

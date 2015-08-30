@@ -1,5 +1,5 @@
 name=Silverstorm Samurai
-image=http://mtgimage.com/card/silverstorm%20samurai.jpg
+image=http://magiccards.info/scans/en/bok/22.jpg
 value=1.755
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={4}{W}{W}
 pt=3/3
 ability=flash;bushido 1
 timing=flash
-oracle=Flash. Bushido 1
+oracle=Flash\nBushido 1

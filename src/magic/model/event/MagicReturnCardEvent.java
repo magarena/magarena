@@ -6,7 +6,7 @@ import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicCardAction;
-import magic.model.action.MagicDiscardCardAction;
+import magic.model.action.DiscardCardAction;
 import magic.model.choice.MagicTargetChoice;
 
 public class MagicReturnCardEvent extends MagicEvent {
@@ -26,7 +26,7 @@ public class MagicReturnCardEvent extends MagicEvent {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCard(game,new MagicCardAction() {
                 public void doAction(final MagicCard card) {
-                    game.doAction(new MagicDiscardCardAction(
+                    game.doAction(new DiscardCardAction(
                         event.getPlayer(),
                         card,
                         MagicLocationType.TopOfOwnersLibrary

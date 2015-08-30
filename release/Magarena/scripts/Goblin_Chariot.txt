@@ -1,5 +1,5 @@
 name=Goblin Chariot
-image=http://mtgimage.com/card/goblin%20chariot.jpg
+image=http://magiccards.info/scans/en/9e/191.jpg
 value=2.635
 ability=haste
 rarity=C

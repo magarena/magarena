@@ -6,7 +6,7 @@
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        MagicTargetChoice.CREATURE_CARD_FROM_HAND
+                        A_CREATURE_CARD_FROM_HAND
                     ),
                     MagicGraveyardTargetPicker.PutOntoBattlefield,
                     this,
@@ -20,11 +20,10 @@
             if (event.isYes()) {
                 event.processTargetCard(game, {
                     final MagicPermanent sn = event.getPermanent();
-                    game.doAction(new MagicRemoveCardAction(it,MagicLocationType.OwnersHand));
-                    game.doAction(new MagicPlayCardAction(it,event.getPlayer(), {
+                    game.doAction(new ReturnCardAction(MagicLocationType.OwnersHand,it,event.getPlayer(), {
                         final MagicPermanent perm ->
                         final MagicGame G = perm.getGame();
-                        G.doAction(new MagicAttachAction(sn.map(G), perm));
+                        G.doAction(new AttachAction(sn.map(G), perm));
                     }));
                 });
             }

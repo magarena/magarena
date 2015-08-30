@@ -5,15 +5,14 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
-import magic.model.action.MagicPlayCardAction;
+import magic.model.stack.MagicCardOnStack;
 import magic.model.action.MagicPlayMod;
-import magic.model.action.MagicRemoveCardAction;
-import magic.model.choice.MagicTargetChoice;
+import magic.model.action.PlayCardFromStackAction;
 import magic.model.condition.MagicCondition;
 
 import java.util.Arrays;
 
-public class MagicDashActivation extends MagicCardAbilityActivation {
+public class MagicDashActivation extends MagicHandCastActivation {
 
     final MagicManaCost cost;
 
@@ -36,11 +35,11 @@ public class MagicDashActivation extends MagicCardAbilityActivation {
             )
         );
     }
-
+    
     @Override
-    public MagicEvent getCardEvent(final MagicCard source,final MagicPayedCost payedCost) {
+    public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
         return new MagicEvent(
-            source,
+            cardOnStack,
             this,
             "Put SN onto the battlefield, " +
             "it gains haste and it's returned from the battlefield to its owner's hand at the beginning of the next end step."
@@ -49,11 +48,8 @@ public class MagicDashActivation extends MagicCardAbilityActivation {
 
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        final MagicCard card = event.getCard();
-        game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersHand));
-        game.doAction(new MagicPlayCardAction(
-            card,
-            event.getPlayer(),
+        game.doAction(new PlayCardFromStackAction(
+            event.getCardOnStack(),
             MagicPlayMod.HASTE, MagicPlayMod.RETURN_AT_END_OF_TURN
         ));
     }

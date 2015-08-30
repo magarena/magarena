@@ -1,6 +1,6 @@
 name=Ajani, Mentor of Heroes
-image=http://mtgimage.com/card/ajani%2C%20mentor%20of%20heroes.jpg
-value=2.500
+image=http://magiccards.info/scans/en/jou/145.jpg
+value=3.500
 rarity=M
 type=Planeswalker
 subtype=Ajani
@@ -9,4 +9,4 @@ ability=+1: Distribute three +1/+1 counters among one, two, or three target crea
         +1: Look at the top four cards of your library. You may reveal an Aura, creature, or planeswalker card from among them and put it into your hand. Put the rest on the bottom of your library in any order.;\
         −8: You gain 100 life.
 timing=main
-oracle=+1: Distribute three +1/+1 counters among one, two, or three target creatures you control. +1: Look at the top four cards of your library. You may reveal an Aura, creature, or planeswalker card from among them and put it into your hand. Put the rest on the bottom of your library in any order. −8: You gain 100 life.
+oracle=+1: Distribute three +1/+1 counters among one, two, or three target creatures you control.\n+1: Look at the top four cards of your library. You may reveal an Aura, creature, or planeswalker card from among them and put it into your hand. Put the rest on the bottom of your library in any order.\n−8: You gain 100 life.

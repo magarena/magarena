@@ -1,5 +1,5 @@
 name=Dinrova Horror
-image=http://mtgimage.com/card/dinrova%20horror.jpg
+image=http://magiccards.info/scans/en/gtc/155.jpg
 value=3.242
 rarity=U
 type=Creature

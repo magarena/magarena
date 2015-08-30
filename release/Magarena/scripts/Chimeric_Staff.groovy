@@ -11,8 +11,9 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
 
 [
     new MagicPermanentActivation(
+        [MagicCondition.NOT_EXCLUDE_COMBAT_CONDITION],
         new MagicActivationHints(MagicTiming.Animate),
-        "Animate"
+        "Becomes"
     ) {
 
         @Override
@@ -41,7 +42,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
                     pt.set(amount,amount);
                 }
             };
-            game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,ST));
+            game.doAction(new BecomesCreatureAction(event.getPermanent(),PT,ST));
         }
     }
 ]

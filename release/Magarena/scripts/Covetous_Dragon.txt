@@ -1,12 +1,12 @@
 name=Covetous Dragon
-image=http://mtgimage.com/card/covetous%20dragon.jpg
+image=http://magiccards.info/scans/en/ud/80.jpg
 value=4.259
 rarity=R
 type=Creature
 subtype=Dragon
 cost={4}{R}
 pt=6/5
-ability=Flying
-requires_groovy_code
+ability=Flying;\
+        When you control no artifacts, sacrifice SN.
 timing=main
-oracle=Flying. When you control no artifacts, sacrifice Covetous Dragon.
+oracle=Flying\nWhen you control no artifacts, sacrifice Covetous Dragon.

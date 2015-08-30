@@ -1,5 +1,5 @@
 name=Mystic Remora
-image=http://mtgimage.com/card/mystic%20remora.jpg
+image=http://magiccards.info/scans/en/med/42.jpg
 value=4.569
 rarity=U
 type=Enchantment
@@ -7,4 +7,4 @@ cost={U}
 ability=cumulative upkeep {1}
 timing=enchantment
 requires_groovy_code
-oracle=Cumulative upkeep {1}. Whenever an opponent casts a noncreature spell, you may draw a card unless that player pays {4}.
+oracle=Cumulative upkeep {1}\nWhenever an opponent casts a noncreature spell, you may draw a card unless that player pays {4}.

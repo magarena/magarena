@@ -1,0 +1,12 @@
+name=Minister of Pain
+image=http://magiccards.info/scans/en/dtk/111.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Shaman
+cost={2}{B}
+pt=2/3
+ability=Exploit;\
+        When SN exploits a creature, creatures your opponents control get -1/-1 until end of turn.
+timing=main
+oracle=Exploit\nWhen Minister of Pain exploits a creature, creatures your opponents control get -1/-1 until end of turn.

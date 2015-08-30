@@ -1,5 +1,5 @@
 name=Prescient Chimera
-image=http://mtgimage.com/card/prescient%20chimera.jpg
+image=http://magiccards.info/scans/en/ths/59.jpg
 value=3.487
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/4
 ability=flying;\
         Whenever you cast an instant or sorcery spell, scry 1.
 timing=main
-oracle=Flying. Whenever you cast an instant or sorcery spell, scry 1.
+oracle=Flying\nWhenever you cast an instant or sorcery spell, scry 1.

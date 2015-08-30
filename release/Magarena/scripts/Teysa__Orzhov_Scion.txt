@@ -1,5 +1,5 @@
 name=Teysa, Orzhov Scion
-image=http://mtgimage.com/card/teysa%2C%20orzhov%20scion.jpg
+image=http://magiccards.info/scans/en/gp/134.jpg
 value=4.004
 rarity=R
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=2/3
 ability=Sacrifice three white creatures: Exile target creature.;\
         Whenever another black creature you control dies, put a 1/1 white Spirit creature token with flying onto the battlefield.
 timing=main
-oracle=Sacrifice three white creatures: Exile target creature. Whenever another black creature you control dies, put a 1/1 white Spirit creature token with flying onto the battlefield.
+oracle=Sacrifice three white creatures: Exile target creature.\nWhenever another black creature you control dies, put a 1/1 white Spirit creature token with flying onto the battlefield.

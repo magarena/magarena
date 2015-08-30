@@ -1,9 +1,9 @@
 name=Junkyo Bell
-image=http://mtgimage.com/card/junkyo%20bell.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/258.jpg
+value=3.487
 rarity=R
 type=Artifact
 cost={4}
 ability=At the beginning of your upkeep, you may have target creature you control get +X/+X until end of turn, where X is the number of creatures you control. If you do, sacrifice that creature at the beginning of the next end step.
-timing=main
+timing=artifact
 oracle=At the beginning of your upkeep, you may have target creature you control get +X/+X until end of turn, where X is the number of creatures you control. If you do, sacrifice that creature at the beginning of the next end step.

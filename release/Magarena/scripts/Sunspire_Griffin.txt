@@ -1,5 +1,5 @@
 name=Sunspire Griffin
-image=http://mtgimage.com/card/sunspire%20griffin.jpg
+image=http://magiccards.info/scans/en/rtr/25.jpg
 value=2.848
 ability=flying
 rarity=C

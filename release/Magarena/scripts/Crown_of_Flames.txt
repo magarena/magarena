@@ -1,12 +1,12 @@
 name=Crown of Flames
-image=http://mtgimage.com/card/crown%20of%20flames.jpg
+image=http://magiccards.info/scans/en/in/142.jpg
 value=4.167
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={R}
-ability={R}:Return SN to its owner's hand.
+ability={R}: Enchanted creature gets +1/+0 until end of turn.;\
+        {R}: Return SN to its owner's hand.
 enchant=pump,pos creature
 timing=aura
-requires_groovy_code=Firebreathing
-oracle=Enchant creature. {R}: Enchanted creature gets +1/+0 until end of turn. {R}: Return Crown of Flames to its owner's hand.
+oracle=Enchant creature\n{R}: Enchanted creature gets +1/+0 until end of turn.\n{R}: Return Crown of Flames to its owner's hand.

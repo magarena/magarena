@@ -1,12 +1,12 @@
 name=Hypersonic Dragon
-image=http://mtgimage.com/card/hypersonic%20dragon.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rtr/170.jpg
+value=3.938
 rarity=R
 type=Creature
 subtype=Dragon
 cost={3}{U}{R}
 pt=4/4
-ability=Flying; haste;\
+ability=Flying, haste;\
         You may cast sorcery cards as though they had flash.
 timing=main
-oracle=Flying, haste. You may cast sorcery cards as though they had flash.
+oracle=Flying, haste\nYou may cast sorcery cards as though they had flash.

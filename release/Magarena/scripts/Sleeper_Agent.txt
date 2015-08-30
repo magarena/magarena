@@ -1,0 +1,12 @@
+name=Sleeper Agent
+image=http://magiccards.info/scans/en/10e/178.jpg
+value=3.449
+rarity=R
+type=Creature
+subtype=Minion
+cost={B}
+pt=3/3
+ability=At the beginning of your upkeep, SN deals 2 damage to you.
+timing=main
+requires_groovy_code
+oracle=When Sleeper Agent enters the battlefield, target opponent gains control of it.\nAt the beginning of your upkeep, Sleeper Agent deals 2 damage to you.

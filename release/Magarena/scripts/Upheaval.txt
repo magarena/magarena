@@ -1,9 +1,9 @@
 name=Upheaval
-image=http://mtgimage.com/card/upheaval.jpg
+image=http://magiccards.info/scans/en/vma/100.jpg
 value=2.500
 rarity=R
 type=Sorcery
 cost={4}{U}{U}
+effect=Return all permanents to their owners' hands.
 timing=main
-requires_groovy_code
 oracle=Return all permanents to their owners' hands.

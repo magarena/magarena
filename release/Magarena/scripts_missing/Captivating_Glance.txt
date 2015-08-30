@@ -1,11 +1,11 @@
 name=Captivating Glance
-image=http://mtgimage.com/card/captivating%20glance.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lw/55.jpg
+value=2.579
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{U}
 ability=Enchant creature;\
         At the beginning of your end step, clash with an opponent. If you win, gain control of enchanted creature. Otherwise, that player gains control of enchanted creature.
-timing=main
-oracle=Enchant creature. At the beginning of your end step, clash with an opponent. If you win, gain control of enchanted creature. Otherwise, that player gains control of enchanted creature.
+timing=aura
+oracle=Enchant creature\nAt the beginning of your end step, clash with an opponent. If you win, gain control of enchanted creature. Otherwise, that player gains control of enchanted creature.

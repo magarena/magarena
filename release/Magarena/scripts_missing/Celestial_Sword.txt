@@ -1,9 +1,9 @@
 name=Celestial Sword
-image=http://mtgimage.com/card/celestial%20sword.jpg
-value=2.500
-rarity=R
+image=http://magiccards.info/scans/en/me4/188.jpg
+value=2.292
+rarity=U
 type=Artifact
 cost={6}
 ability={3}, {T}: Target creature you control gets +3/+3 until end of turn. Its controller sacrifices it at the beginning of the next end step.
-timing=main
+timing=artifact
 oracle={3}, {T}: Target creature you control gets +3/+3 until end of turn. Its controller sacrifices it at the beginning of the next end step.

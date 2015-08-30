@@ -1,5 +1,5 @@
 name=Tolarian Serpent
-image=http://mtgimage.com/card/tolarian%20serpent.jpg
+image=http://magiccards.info/scans/en/wl/57.jpg
 value=2.625
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Envelop
-image=http://mtgimage.com/card/envelop.jpg
+image=http://magiccards.info/scans/en/ju/39.jpg
 value=3.068
 rarity=C
 type=Instant

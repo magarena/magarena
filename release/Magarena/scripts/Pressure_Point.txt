@@ -1,9 +1,9 @@
 name=Pressure Point
-image=http://mtgimage.com/card/pressure%20point.jpg
+image=http://magiccards.info/scans/en/frf/21.jpg
 value=2.500
 rarity=C
 type=Instant
 cost={1}{W}
 effect=Tap target creature.~Draw a card.
 timing=tapping
-oracle=Tap target creature. Draw a card.
+oracle=Tap target creature.\nDraw a card.

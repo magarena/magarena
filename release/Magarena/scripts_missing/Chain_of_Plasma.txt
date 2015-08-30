@@ -1,6 +1,6 @@
 name=Chain of Plasma
-image=http://mtgimage.com/card/chain%20of%20plasma.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/193.jpg
+value=3.779
 rarity=U
 type=Instant
 cost={1}{R}

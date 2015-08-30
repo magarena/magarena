@@ -1,5 +1,5 @@
 name=Pillar of Flame
-image=http://mtgimage.com/card/pillar%20of%20flame.jpg
+image=http://magiccards.info/scans/en/avr/149.jpg
 value=3.825
 removal=2
 rarity=C

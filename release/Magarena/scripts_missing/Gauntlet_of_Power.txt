@@ -1,11 +1,11 @@
 name=Gauntlet of Power
-image=http://mtgimage.com/card/gauntlet%20of%20power.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ts/255.jpg
+value=4.157
 rarity=R
 type=Artifact
 cost={5}
 ability=As SN enters the battlefield, choose a color.;\
         Creatures of the chosen color get +1/+1.;\
         Whenever a basic land is tapped for mana of the chosen color, its controller adds one mana of that color to his or her mana pool.
-timing=main
-oracle=As Gauntlet of Power enters the battlefield, choose a color. Creatures of the chosen color get +1/+1. Whenever a basic land is tapped for mana of the chosen color, its controller adds one mana of that color to his or her mana pool.
+timing=artifact
+oracle=As Gauntlet of Power enters the battlefield, choose a color.\nCreatures of the chosen color get +1/+1.\nWhenever a basic land is tapped for mana of the chosen color, its controller adds one mana of that color to his or her mana pool.

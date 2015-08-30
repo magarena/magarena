@@ -1,6 +1,6 @@
 name=Decimator Web
-image=http://mtgimage.com/card/decimator%20web.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mbs/105.jpg
+value=3.316
 rarity=R
 type=Artifact
 cost={4}

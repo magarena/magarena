@@ -1,6 +1,6 @@
 name=Zombie Boa
-image=http://mtgimage.com/card/zombie%20boa.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ap/54.jpg
+value=2.565
 rarity=C
 type=Creature
 subtype=Zombie,Snake

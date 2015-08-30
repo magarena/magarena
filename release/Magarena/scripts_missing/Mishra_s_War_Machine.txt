@@ -1,6 +1,6 @@
 name=Mishra's War Machine
-image=http://mtgimage.com/card/mishra%27s%20war%20machine.jpg
-value=2.500
+image=http://magiccards.info/scans/en/4e/355.jpg
+value=1.907
 rarity=R
 type=Artifact,Creature
 subtype=Juggernaut
@@ -8,5 +8,5 @@ cost={7}
 pt=5/5
 ability=Banding;\
         At the beginning of your upkeep, SN deals 3 damage to you unless you discard a card. If SN deals damage to you this way, tap it.
-timing=main
-oracle=Banding. At the beginning of your upkeep, Mishra's War Machine deals 3 damage to you unless you discard a card. If Mishra's War Machine deals damage to you this way, tap it.
+timing=artifact
+oracle=Banding\nAt the beginning of your upkeep, Mishra's War Machine deals 3 damage to you unless you discard a card. If Mishra's War Machine deals damage to you this way, tap it.

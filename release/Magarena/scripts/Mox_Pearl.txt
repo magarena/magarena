@@ -1,6 +1,6 @@
 name=Mox Pearl
-image=http://mtgimage.com/card/mox%20pearl.jpg
-value=4.833
+image=http://magiccards.info/scans/en/vma/7.jpg
+value=4.875
 rarity=R
 type=Artifact
 cost={0}

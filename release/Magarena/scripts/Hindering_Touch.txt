@@ -1,5 +1,5 @@
 name=Hindering Touch
-image=http://mtgimage.com/card/hindering%20touch.jpg
+image=http://magiccards.info/scans/en/sc/37.jpg
 value=2.778
 rarity=C
 type=Instant
@@ -7,4 +7,4 @@ cost={3}{U}
 effect=Counter target spell unless its controller pays {2}.
 ability=storm
 timing=counter
-oracle=Counter target spell unless its controller pays {2}. Storm
+oracle=Counter target spell unless its controller pays {2}.\nStorm

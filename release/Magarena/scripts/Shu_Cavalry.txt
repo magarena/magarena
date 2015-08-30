@@ -1,5 +1,5 @@
 name=Shu Cavalry
-image=http://mtgimage.com/card/shu%20cavalry.jpg
+image=http://magiccards.info/scans/en/me3/23.jpg
 value=3.545
 rarity=C
 type=Creature

@@ -1,0 +1,11 @@
+name=Nantuko Tracer
+image=http://magiccards.info/scans/en/ju/125.jpg
+value=2.812
+rarity=C
+type=Creature
+subtype=Insect,Druid
+cost={1}{G}
+pt=2/1
+ability=When SN enters the battlefield, you may put target card from a graveyard on the bottom of its owner's library.
+timing=main
+oracle=When Nantuko Tracer enters the battlefield, you may put target card from a graveyard on the bottom of its owner's library.

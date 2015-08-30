@@ -1,5 +1,5 @@
 name=Raiding Nightstalker
-image=http://mtgimage.com/card/raiding%20nightstalker.jpg
+image=http://magiccards.info/scans/en/po2/24.jpg
 value=3.100
 rarity=C
 type=Creature

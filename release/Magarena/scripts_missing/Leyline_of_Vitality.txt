@@ -1,11 +1,11 @@
 name=Leyline of Vitality
-image=http://mtgimage.com/card/leyline%20of%20vitality.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m11/183.jpg
+value=3.716
 rarity=R
 type=Enchantment
 cost={2}{G}{G}
 ability=If SN is in your opening hand, you may begin the game with it on the battlefield.;\
         Creatures you control get +0/+1.;\
         Whenever a creature enters the battlefield under your control, you may gain 1 life.
-timing=main
-oracle=If Leyline of Vitality is in your opening hand, you may begin the game with it on the battlefield. Creatures you control get +0/+1. Whenever a creature enters the battlefield under your control, you may gain 1 life.
+timing=enchantment
+oracle=If Leyline of Vitality is in your opening hand, you may begin the game with it on the battlefield.\nCreatures you control get +0/+1.\nWhenever a creature enters the battlefield under your control, you may gain 1 life.

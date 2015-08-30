@@ -1,11 +1,11 @@
 name=Scab-Clan Giant
-image=http://mtgimage.com/card/scab-clan%20giant.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dgm/101.jpg
+value=3.079
 rarity=U
 type=Creature
 subtype=Giant,Warrior
 cost={4}{R}{G}
 pt=4/5
-ability=When SN enters the battlefield, SN fights target creature an opponent controls chosen at random.
+ability=When SN enters the battlefield, it fights target creature an opponent controls chosen at random.
 timing=main
 oracle=When Scab-Clan Giant enters the battlefield, it fights target creature an opponent controls chosen at random.

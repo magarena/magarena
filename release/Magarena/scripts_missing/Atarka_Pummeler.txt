@@ -1,0 +1,11 @@
+name=Atarka Pummeler
+image=http://magiccards.info/scans/en/dtk/129.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Ogre,Warrior
+cost={4}{R}
+pt=4/5
+ability={3}{R}{R}: Each creature you control can't be blocked this turn except by two or more creatures. Activate this ability only if creatures you control have total power 8 or greater.
+timing=main
+oracle=Formidable — {3}{R}{R}: Each creature you control can't be blocked this turn except by two or more creatures. Activate this ability only if creatures you control have total power 8 or greater.

@@ -1,5 +1,5 @@
 name=Elvish Mystic
-image=http://mtgimage.com/card/elvish%20mystic.jpg
+image=http://magiccards.info/scans/en/c14/191.jpg
 value=3.875
 rarity=C
 type=Creature

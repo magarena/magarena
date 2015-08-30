@@ -1,5 +1,5 @@
 name=Relentless Skaabs
-image=http://mtgimage.com/card/relentless%20skaabs.jpg
+image=http://magiccards.info/scans/en/dka/45.jpg
 value=3.227
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=As an additional cost to cast SN, exile a creature card from your graveyard.;\
         Undying
 timing=main
-oracle=As an additional cost to cast Relentless Skaabs, exile a creature card from your graveyard. Undying
+oracle=As an additional cost to cast Relentless Skaabs, exile a creature card from your graveyard.\nUndying

@@ -1,5 +1,5 @@
 name=Priest of Iroas
-image=http://mtgimage.com/card/priest%20of%20iroas.jpg
+image=http://magiccards.info/scans/en/ths/134.jpg
 value=2.339
 rarity=C
 type=Creature

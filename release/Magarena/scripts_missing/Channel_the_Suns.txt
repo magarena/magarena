@@ -1,6 +1,6 @@
 name=Channel the Suns
-image=http://mtgimage.com/card/channel%20the%20suns.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5dn/84.jpg
+value=4.179
 rarity=U
 type=Sorcery
 cost={3}{G}

@@ -7,3 +7,4 @@ subtype=Eldrazi,Spawn
 color=
 pt=0/1
 ability=Sacrifice SN: Add {1} to your mana pool.
+oracle=Sacrifice this creature: Add {1} to your mana pool.

@@ -1,5 +1,5 @@
 name=Mystic Enforcer
-image=http://mtgimage.com/card/mystic%20enforcer.jpg
+image=http://magiccards.info/scans/en/tsts/96.jpg
 value=4.258
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=protection from black;\
         As long as seven or more cards are in your graveyard, SN gets +3/+3 and has flying.
 timing=main
-oracle=Protection from black. Threshold — As long as seven or more cards are in your graveyard, Mystic Enforcer gets +3/+3 and has flying.
+oracle=Protection from black\nThreshold — As long as seven or more cards are in your graveyard, Mystic Enforcer gets +3/+3 and has flying.

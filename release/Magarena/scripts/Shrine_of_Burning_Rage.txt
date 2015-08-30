@@ -1,11 +1,11 @@
 name=Shrine of Burning Rage
-image=http://mtgimage.com/card/shrine%20of%20burning%20rage.jpg
+image=http://magiccards.info/scans/en/nph/153.jpg
 value=3.742
 rarity=U
 type=Artifact
 cost={2}
 ability=At the beginning of your upkeep, put a charge counter on SN.;\
-        Whenever you cast a red spell, put a charge counter on SN.
+        Whenever you cast a red spell, put a charge counter on SN.;\
+        {3}, {T}, Sacrifice SN: SN deals damage equal to the number of charge counters on it to target creature or player.
 timing=artifact
-requires_groovy_code
-oracle=At the beginning of your upkeep or whenever you cast a red spell, put a charge counter on Shrine of Burning Rage. {3}, {T}, Sacrifice Shrine of Burning Rage: Shrine of Burning Rage deals damage equal to the number of charge counters on it to target creature or player.
+oracle=At the beginning of your upkeep or whenever you cast a red spell, put a charge counter on Shrine of Burning Rage.\n{3}, {T}, Sacrifice Shrine of Burning Rage: Shrine of Burning Rage deals damage equal to the number of charge counters on it to target creature or player.

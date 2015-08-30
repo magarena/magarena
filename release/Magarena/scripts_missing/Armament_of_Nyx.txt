@@ -1,11 +1,11 @@
 name=Armament of Nyx
-image=http://mtgimage.com/card/armament%20of%20nyx.jpg
-value=2.500
+image=http://magiccards.info/scans/en/jou/4.jpg
+value=2.929
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{W}
 ability=Enchant creature;\
         Enchanted creature has double strike as long as it's an enchantment. Otherwise, prevent all damage that would be dealt by enchanted creature.
-timing=main
-oracle=Enchant creature. Enchanted creature has double strike as long as it's an enchantment. Otherwise, prevent all damage that would be dealt by enchanted creature.
+timing=aura
+oracle=Enchant creature\nEnchanted creature has double strike as long as it's an enchantment. Otherwise, prevent all damage that would be dealt by enchanted creature.

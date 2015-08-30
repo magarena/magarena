@@ -1,11 +1,11 @@
 name=Jihad
-image=http://mtgimage.com/card/jihad.jpg
-value=2.500
+image=http://magiccards.info/scans/en/an/60.jpg
+value=3.931
 rarity=R
 type=Enchantment
 cost={W}{W}{W}
 ability=As SN enters the battlefield, choose a color and an opponent.;\
         White creatures get +2/+1 as long as the chosen player controls a nontoken permanent of the chosen color.;\
         When the chosen player controls no nontoken permanents of the chosen color, sacrifice SN.
-timing=main
-oracle=As Jihad enters the battlefield, choose a color and an opponent. White creatures get +2/+1 as long as the chosen player controls a nontoken permanent of the chosen color. When the chosen player controls no nontoken permanents of the chosen color, sacrifice Jihad.
+timing=enchantment
+oracle=As Jihad enters the battlefield, choose a color and an opponent.\nWhite creatures get +2/+1 as long as the chosen player controls a nontoken permanent of the chosen color.\nWhen the chosen player controls no nontoken permanents of the chosen color, sacrifice Jihad.

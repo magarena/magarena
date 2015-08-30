@@ -1,12 +1,12 @@
 name=Goblin Gaveleer
-image=http://mtgimage.com/card/goblin%20gaveleer.jpg
+image=http://magiccards.info/scans/en/som/92.jpg
 value=3.852
 rarity=C
 type=Creature
 subtype=Goblin,Warrior
 cost={R}
 pt=1/1
-ability=trample
+ability=trample;\
+        SN gets +2/+0 for each Equipment attached to it.
 timing=main
-requires_groovy_code
-oracle=Trample. Goblin Gaveleer gets +2/+0 for each Equipment attached to it.
+oracle=Trample\nGoblin Gaveleer gets +2/+0 for each Equipment attached to it.

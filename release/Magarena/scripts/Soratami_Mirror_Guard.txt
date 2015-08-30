@@ -1,5 +1,5 @@
 name=Soratami Mirror-Guard
-image=http://mtgimage.com/card/soratami%20mirror-guard.jpg
+image=http://magiccards.info/scans/en/chk/87.jpg
 value=2.257
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/1
 ability=flying;\
         {2}, Return a land you control to its owner's hand: Target creature with power 2 or less can't be blocked this turn.
 timing=main
-oracle=Flying. {2}, Return a land you control to its owner's hand: Target creature with power 2 or less can't be blocked this turn.
+oracle=Flying\n{2}, Return a land you control to its owner's hand: Target creature with power 2 or less can't be blocked this turn.

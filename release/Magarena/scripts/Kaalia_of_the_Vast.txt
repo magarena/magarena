@@ -1,5 +1,5 @@
 name=Kaalia of the Vast
-image=http://mtgimage.com/card/kaalia%20of%20the%20vast.jpg
+image=http://magiccards.info/scans/en/cma/9.jpg
 value=4.089
 rarity=M
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. Whenever Kaalia of the Vast attacks an opponent, you may put an Angel, Demon, or Dragon creature card from your hand onto the battlefield tapped and attacking that opponent.
+oracle=Flying\nWhenever Kaalia of the Vast attacks an opponent, you may put an Angel, Demon, or Dragon creature card from your hand onto the battlefield tapped and attacking that opponent.

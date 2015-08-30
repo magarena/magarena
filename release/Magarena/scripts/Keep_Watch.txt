@@ -1,9 +1,9 @@
 name=Keep Watch
-image=http://mtgimage.com/card/keep%20watch.jpg
+image=http://magiccards.info/scans/en/pch/10.jpg
 value=3.774
 rarity=C
 type=Instant
 cost={2}{U}
+effect=Draw a card for each attacking creature.
 timing=block
-requires_groovy_code
 oracle=Draw a card for each attacking creature.

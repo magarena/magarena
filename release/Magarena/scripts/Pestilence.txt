@@ -1,5 +1,5 @@
 name=Pestilence
-image=http://mtgimage.com/card/pestilence.jpg
+image=http://magiccards.info/scans/en/br/49.jpg
 value=4.378
 rarity=C
 type=Enchantment
@@ -7,4 +7,4 @@ cost={2}{B}{B}
 ability=At the beginning of the end step, if no creatures are on the battlefield, sacrifice SN.;\
         {B}: SN deals 1 damage to each creature and each player.
 timing=enchantment
-oracle=At the beginning of the end step, if no creatures are on the battlefield, sacrifice Pestilence. {B}: Pestilence deals 1 damage to each creature and each player.
+oracle=At the beginning of the end step, if no creatures are on the battlefield, sacrifice Pestilence.\n{B}: Pestilence deals 1 damage to each creature and each player.

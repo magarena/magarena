@@ -1,5 +1,5 @@
 name=Rushwood Elemental
-image=http://mtgimage.com/card/rushwood%20elemental.jpg
+image=http://magiccards.info/scans/en/mm/264.jpg
 value=4.142
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=trample;\
         At the beginning of your upkeep, you may put a +1/+1 counter on SN.
 timing=main
-oracle=Trample. At the beginning of your upkeep, you may put a +1/+1 counter on Rushwood Elemental.
+oracle=Trample\nAt the beginning of your upkeep, you may put a +1/+1 counter on Rushwood Elemental.

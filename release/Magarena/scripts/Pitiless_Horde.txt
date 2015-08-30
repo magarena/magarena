@@ -1,0 +1,12 @@
+name=Pitiless Horde
+image=http://magiccards.info/scans/en/dtk/112.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Orc,Berserker
+cost={2}{B}
+pt=5/3
+ability=At the beginning of your upkeep, you lose 2 life.;\
+        Dash {2}{B}{B}
+timing=main
+oracle=At the beginning of your upkeep, you lose 2 life.\nDash {2}{B}{B}

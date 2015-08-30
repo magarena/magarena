@@ -1,6 +1,6 @@
 name=Ma Chao, Western Warrior
-image=http://mtgimage.com/card/ma%20chao%2C%20western%20warrior.jpg
-value=2.500
+image=http://magiccards.info/scans/en/p3k/116.jpg
+value=3.816
 rarity=R
 type=Legendary,Creature
 subtype=Human,Soldier,Warrior
@@ -9,4 +9,4 @@ pt=3/3
 ability=Horsemanship;\
         Whenever SN attacks alone, it can't be blocked this combat.
 timing=main
-oracle=Horsemanship. Whenever Ma Chao, Western Warrior attacks alone, it can't be blocked this combat.
+oracle=Horsemanship\nWhenever Ma Chao, Western Warrior attacks alone, it can't be blocked this combat.

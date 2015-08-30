@@ -11,48 +11,36 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets =
-                    game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
+            final Collection<MagicPermanent> targets = CREATURE_YOU_CONTROL.filter(event);
             for (final MagicPermanent target : targets) {
-                game.doAction(new MagicExileLinkAction(
+                game.doAction(new ExileLinkAction(
                     event.getPermanent(),
                     target
                 ));
             }
-            game.doAction(new MagicPlayTokensAction(
+            game.doAction(new PlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("5/5 red Dragon creature token with flying"),
+                CardDefinitions.getToken("5/5 red Dragon creature token with flying"),
                 targets.size()
             ));
         }
     },
-    new MagicWhenLeavesPlayTrigger() {
+    new MagicWhenSelfLeavesPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
-            if (act.isPermanent(permanent) &&
-                !permanent.getExiledCards().isEmpty()) {
-                final MagicCardList clist = new MagicCardList(permanent.getExiledCards());
-                return new MagicEvent(
-                    permanent,
-                    permanent.getController(),
-                    this,
-                    clist.size() == 1 ?
-                        "Sacrifice all Dragons. Return " + clist.get(0) + " to the battlefield." :
-                        "Sacrifice all Dragons. Return exiled cards to the battlefield."
-                );
-            }
-            return MagicEvent.NONE;
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final RemoveFromPlayAction act) {
+            return new MagicEvent(
+                permanent,
+                this,
+                "Sacrifice all Dragons PN controls. Return exiled cards to the battlefield under your control."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets =
-                    game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.DRAGON_YOU_CONTROL);
-            for (final MagicPermanent target : targets) {
-                game.doAction(new MagicSacrificeAction(target));
+            DRAGON_YOU_CONTROL.filter(event) each {
+                game.doAction(new SacrificeAction(it));
             }
-            final MagicPermanent permanent = event.getPermanent();
-            game.doAction(new MagicReturnLinkedExileAction(
-                permanent,
+            game.doAction(new ReturnLinkedExileAction(
+                event.getPermanent(),
                 MagicLocationType.Play,
                 event.getPlayer()
             ));

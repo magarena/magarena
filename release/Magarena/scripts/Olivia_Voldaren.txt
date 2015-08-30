@@ -1,6 +1,6 @@
 name=Olivia Voldaren
-image=http://mtgimage.com/card/olivia%20voldaren.jpg
-value=3.938
+image=http://magiccards.info/scans/en/isd/215.jpg
+value=3.939
 rarity=M
 type=Legendary,Creature
 subtype=Vampire
@@ -9,4 +9,4 @@ pt=3/3
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. {1}{R}: Olivia Voldaren deals 1 damage to another target creature. That creature becomes a Vampire in addition to its other types. Put a +1/+1 counter on Olivia Voldaren. {3}{B}{B}: Gain control of target Vampire for as long as you control Olivia Voldaren.
+oracle=Flying\n{1}{R}: Olivia Voldaren deals 1 damage to another target creature. That creature becomes a Vampire in addition to its other types. Put a +1/+1 counter on Olivia Voldaren.\n{3}{B}{B}: Gain control of target Vampire for as long as you control Olivia Voldaren.

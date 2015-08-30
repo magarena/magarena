@@ -1,6 +1,5 @@
 package magic.generator;
 
-import magic.data.CubeDefinitions;
 import magic.model.MagicCondensedDeck;
 import magic.model.MagicDeckProfile;
 
@@ -34,11 +33,6 @@ public class Saint___Hero_DeckGenerator extends RandomDeckGenerator {
         "Seachrome Coast",
         "Seachrome Coast"
     };
-
-    public Saint___Hero_DeckGenerator() {
-        super(null);
-        setCubeDefinition(CubeDefinitions.getCubeDefinition(getColorText()));
-    }
 
     public String getColorText() {
         return colorText;

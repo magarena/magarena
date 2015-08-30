@@ -1,5 +1,5 @@
 name=Crypt Rats
-image=http://mtgimage.com/card/crypt%20rats.jpg
+image=http://magiccards.info/scans/en/7e/125.jpg
 value=4.255
 rarity=U
 type=Creature

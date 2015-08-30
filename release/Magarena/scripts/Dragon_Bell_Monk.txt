@@ -1,5 +1,5 @@
 name=Dragon Bell Monk
-image=http://mtgimage.com/card/dragon%20bell%20monk.jpg
+image=http://magiccards.info/scans/en/frf/10.jpg
 value=2.500
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Vigilance;\
         Prowess
 timing=main
-oracle=Vigilance. Prowess
+oracle=Vigilance\nProwess

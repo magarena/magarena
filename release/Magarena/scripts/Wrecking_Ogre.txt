@@ -1,5 +1,5 @@
 name=Wrecking Ogre
-image=http://mtgimage.com/card/wrecking%20ogre.jpg
+image=http://magiccards.info/scans/en/gtc/112.jpg
 value=3.479
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=double strike;\
         {3}{R}{R}, Discard SN: Target attacking creature gets +3/+3 and gains double strike until end of turn.
 timing=main
-oracle=Double strike. Bloodrush — {3}{R}{R}, Discard Wrecking Ogre: Target attacking creature gets +3/+3 and gains double strike until end of turn.
+oracle=Double strike\nBloodrush — {3}{R}{R}, Discard Wrecking Ogre: Target attacking creature gets +3/+3 and gains double strike until end of turn.

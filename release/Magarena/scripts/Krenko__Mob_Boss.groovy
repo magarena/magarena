@@ -20,9 +20,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amt = event.getPlayer().getNrOfPermanents(MagicSubType.Goblin);
-            game.doAction(new MagicPlayTokensAction(
+            game.doAction(new PlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("1/1 red Goblin creature token"),
+                CardDefinitions.getToken("1/1 red Goblin creature token"),
                 amt
             ));
         }

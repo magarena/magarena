@@ -1,12 +1,12 @@
 name=Unstable Hulk
-image=http://mtgimage.com/card/unstable%20hulk.jpg
-value=2.500
+image=http://magiccards.info/scans/en/le/115.jpg
+value=2.556
 rarity=R
 type=Creature
 subtype=Goblin,Mutant
 cost={1}{R}{R}
 pt=2/2
 ability=Morph {3}{R}{R};\
-        When SN is turned face up, SN gets +6/+6 and gains trample until end of turn. You skip your next turn.
+        When SN is turned face up, it gets +6/+6 and gains trample until end of turn. You skip your next turn.
 timing=main
-oracle=Morph {3}{R}{R}. When Unstable Hulk is turned face up, it gets +6/+6 and gains trample until end of turn. You skip your next turn.
+oracle=Morph {3}{R}{R}\nWhen Unstable Hulk is turned face up, it gets +6/+6 and gains trample until end of turn. You skip your next turn.

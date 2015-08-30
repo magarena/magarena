@@ -1,5 +1,5 @@
 name=Remote Isle
-image=http://mtgimage.com/card/remote%20isle.jpg
+image=http://magiccards.info/scans/en/c14/309.jpg
 value=3.692
 rarity=C
 type=Land
@@ -8,4 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {U} to your mana pool.;\
         cycling {2}
 timing=tapland
-oracle=Remote Isle enters the battlefield tapped. {T}: Add {U} to your mana pool. Cycling {2}
+oracle=Remote Isle enters the battlefield tapped.\n{T}: Add {U} to your mana pool.\nCycling {2}

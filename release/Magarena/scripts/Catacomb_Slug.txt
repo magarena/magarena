@@ -1,9 +1,10 @@
 name=Catacomb Slug
-image=http://mtgimage.com/card/catacomb%20slug.jpg
-value=1.889
+image=http://magiccards.info/scans/en/ori/86.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Slug
 cost={4}{B}
 pt=2/6
 timing=main
+oracle=NONE

@@ -1,5 +1,5 @@
 name=Spellstutter Sprite
-image=http://mtgimage.com/card/spellstutter%20sprite.jpg
+image=http://magiccards.info/scans/en/mma/65.jpg
 value=4.527
 rarity=C
 type=Creature
@@ -10,4 +10,4 @@ ability=Flash;\
         Flying
 timing=counter
 requires_groovy_code
-oracle=Flash. Flying. When Spellstutter Sprite enters the battlefield, counter target spell with converted mana cost X or less, where X is the number of Faeries you control.
+oracle=Flash\nFlying\nWhen Spellstutter Sprite enters the battlefield, counter target spell with converted mana cost X or less, where X is the number of Faeries you control.

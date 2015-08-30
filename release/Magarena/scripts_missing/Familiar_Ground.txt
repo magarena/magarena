@@ -1,9 +1,9 @@
 name=Familiar Ground
-image=http://mtgimage.com/card/familiar%20ground.jpg
-value=2.500
+image=http://magiccards.info/scans/en/7e/243.jpg
+value=3.360
 rarity=U
 type=Enchantment
 cost={2}{G}
 ability=Each creature you control can't be blocked by more than one creature.
-timing=main
+timing=enchantment
 oracle=Each creature you control can't be blocked by more than one creature.

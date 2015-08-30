@@ -1,5 +1,5 @@
 name=Kobolds of Kher Keep
-image=http://mtgimage.com/card/kobolds%20of%20kher%20keep.jpg
+image=http://magiccards.info/scans/en/me3/107.jpg
 value=3.767
 rarity=C
 type=Creature
@@ -8,3 +8,4 @@ color=r
 cost={0}
 pt=0/1
 timing=main
+oracle=NONE

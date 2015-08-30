@@ -1,11 +1,11 @@
 name=Riptide Replicator
-image=http://mtgimage.com/card/riptide%20replicator.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/309.jpg
+value=4.163
 rarity=R
 type=Artifact
 cost={X}{4}
 ability=As SN enters the battlefield, choose a color and a creature type.;\
         SN enters the battlefield with X charge counters on it.;\
         {4}, {T}: Put an X/X creature token of the chosen color and type onto the battlefield, where X is the number of charge counters on SN.
-timing=main
-oracle=As Riptide Replicator enters the battlefield, choose a color and a creature type. Riptide Replicator enters the battlefield with X charge counters on it. {4}, {T}: Put an X/X creature token of the chosen color and type onto the battlefield, where X is the number of charge counters on Riptide Replicator.
+timing=artifact
+oracle=As Riptide Replicator enters the battlefield, choose a color and a creature type.\nRiptide Replicator enters the battlefield with X charge counters on it.\n{4}, {T}: Put an X/X creature token of the chosen color and type onto the battlefield, where X is the number of charge counters on Riptide Replicator.

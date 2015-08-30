@@ -1,10 +1,7 @@
 [
     new MagicWhenSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicCardOnStack cardOnStack) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicCardOnStack cardOnStack) {
             return new MagicEvent(
                 cardOnStack,
                 this,
@@ -14,12 +11,10 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final List<MagicCard> cards = game.filterCards(
-                    event.getPlayer(),
-                    MagicTargetFilterFactory.CARD_FROM_GRAVEYARD);
+            final List<MagicCard> cards = CARD_FROM_GRAVEYARD.filter(event);
             for (final MagicCard card : cards) {
                 if (card.getName().equals(event.getSource().getName())) {
-                    game.doAction(new MagicReanimateAction(
+                    game.doAction(new ReanimateAction(
                         card,
                         event.getPlayer()
                     ));

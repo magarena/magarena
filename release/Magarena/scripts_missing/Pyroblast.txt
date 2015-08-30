@@ -1,9 +1,0 @@
-name=Pyroblast
-image=http://mtgimage.com/card/pyroblast.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={R}
-effect=Choose one — • Counter target spell if it's blue. • Destroy target permanent if it's blue.
-timing=removal
-oracle=Choose one — • Counter target spell if it's blue. • Destroy target permanent if it's blue.

@@ -1,13 +1,13 @@
 name=Kragma Warcaller
-image=http://mtgimage.com/card/kragma%20warcaller.jpg
+image=http://magiccards.info/scans/en/ths/195.jpg
 value=3.550
 rarity=U
 type=Creature
 subtype=Minotaur,Warrior
 cost={3}{B}{R}
 pt=2/3
-ability=minotaur creatures you control have haste
+ability=Minotaur creatures you control have haste;\
+        Whenever a Minotaur you control attacks, RN gets +2/+0 until end of turn.
 static=player
 timing=main
-requires_groovy_code
-oracle=Minotaur creatures you control have haste. Whenever a Minotaur you control attacks, it gets +2/+0 until end of turn.
+oracle=Minotaur creatures you control have haste.\nWhenever a Minotaur you control attacks, it gets +2/+0 until end of turn.

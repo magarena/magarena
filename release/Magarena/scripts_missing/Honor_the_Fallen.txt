@@ -1,6 +1,6 @@
 name=Honor the Fallen
-image=http://mtgimage.com/card/honor%20the%20fallen.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/21.jpg
+value=3.645
 rarity=R
 type=Instant
 cost={1}{W}

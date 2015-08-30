@@ -1,0 +1,11 @@
+name=Enchanted Being
+image=http://magiccards.info/scans/en/lg/181.jpg
+value=2.100
+rarity=C
+type=Creature
+subtype=Human
+cost={1}{W}{W}
+pt=2/2
+timing=main
+requires_groovy_code
+oracle=Prevent all combat damage that would be dealt to Enchanted Being by enchanted creatures.

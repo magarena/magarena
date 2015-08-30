@@ -1,5 +1,5 @@
 name=Ebon Drake
-image=http://mtgimage.com/card/ebon%20drake.jpg
+image=http://magiccards.info/scans/en/5dn/48.jpg
 value=1.913
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=flying;\
         Whenever a player casts a spell, you lose 1 life.
 timing=main
-oracle=Flying. Whenever a player casts a spell, you lose 1 life.
+oracle=Flying\nWhenever a player casts a spell, you lose 1 life.

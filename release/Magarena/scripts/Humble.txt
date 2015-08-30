@@ -1,5 +1,5 @@
 name=Humble
-image=http://mtgimage.com/card/humble.jpg
+image=http://magiccards.info/scans/en/us/18.jpg
 value=4.384
 rarity=U
 type=Instant

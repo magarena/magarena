@@ -4,8 +4,8 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.action.MagicDrawAction;
-import magic.model.action.MagicRemoveTriggerAction;
+import magic.model.action.DrawAction;
+import magic.model.action.RemoveTriggerAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 
@@ -24,7 +24,7 @@ public abstract class MagicAtUpkeepTrigger extends MagicTrigger<MagicPlayer> {
         return new MagicAtUpkeepTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
-                return sourceEvent.getEvent(permanent);
+                return sourceEvent.getEvent(permanent, upkeepPlayer);
             }
         };
     }
@@ -33,7 +33,7 @@ public abstract class MagicAtUpkeepTrigger extends MagicTrigger<MagicPlayer> {
         return new MagicAtUpkeepTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-                game.addDelayedAction(new MagicRemoveTriggerAction(this));
+                game.addDelayedAction(new RemoveTriggerAction(this));
                 return new MagicEvent(
                     game.createDelayedSource(staleSource, stalePlayer),
                     this,         
@@ -42,7 +42,7 @@ public abstract class MagicAtUpkeepTrigger extends MagicTrigger<MagicPlayer> {
             }
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new MagicDrawAction(event.getPlayer()));
+                game.doAction(new DrawAction(event.getPlayer()));
             }
         }; 
     }

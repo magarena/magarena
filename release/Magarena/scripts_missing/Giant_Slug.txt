@@ -1,6 +1,6 @@
 name=Giant Slug
-image=http://mtgimage.com/card/giant%20slug.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ch/5.jpg
+value=1.294
 rarity=C
 type=Creature
 subtype=Slug

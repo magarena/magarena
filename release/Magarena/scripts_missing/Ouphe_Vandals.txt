@@ -1,6 +1,6 @@
 name=Ouphe Vandals
-image=http://mtgimage.com/card/ouphe%20vandals.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5dn/90.jpg
+value=2.389
 rarity=U
 type=Creature
 subtype=Ouphe,Rogue

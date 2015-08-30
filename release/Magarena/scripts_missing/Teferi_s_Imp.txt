@@ -1,6 +1,6 @@
 name=Teferi's Imp
-image=http://mtgimage.com/card/teferi%27s%20imp.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/98.jpg
+value=3.064
 rarity=R
 type=Creature
 subtype=Imp
@@ -11,4 +11,4 @@ ability=Flying;\
         Whenever SN phases out, discard a card.;\
         Whenever SN phases in, draw a card.
 timing=main
-oracle=Flying. Phasing. Whenever Teferi's Imp phases out, discard a card. Whenever Teferi's Imp phases in, draw a card.
+oracle=Flying\nPhasing\nWhenever Teferi's Imp phases out, discard a card.\nWhenever Teferi's Imp phases in, draw a card.

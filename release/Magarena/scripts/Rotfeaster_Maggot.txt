@@ -1,0 +1,11 @@
+name=Rotfeaster Maggot
+image=http://magiccards.info/scans/en/m15/112.jpg
+value=3.000
+rarity=C
+type=Creature
+subtype=Insect
+cost={4}{B}
+pt=3/5
+timing=main
+requires_groovy_code
+oracle=When Rotfeaster Maggot enters the battlefield, exile target creature card from a graveyard. You gain life equal to that card's toughness.

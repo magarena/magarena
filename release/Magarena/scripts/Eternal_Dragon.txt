@@ -1,0 +1,13 @@
+name=Eternal Dragon
+image=http://magiccards.info/scans/en/vma/26.jpg
+value=4.000
+rarity=R
+type=Creature
+subtype=Dragon,Spirit
+cost={5}{W}{W}
+pt=5/5
+ability=Flying;\
+        {3}{W}{W}: Return SN from your graveyard to your hand. Activate this ability only during your upkeep.;\
+        Plainscycling {2}
+timing=main
+oracle=Flying\n{3}{W}{W}: Return Eternal Dragon from your graveyard to your hand. Activate this ability only during your upkeep.\nPlainscycling {2}

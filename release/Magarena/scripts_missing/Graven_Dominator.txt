@@ -1,6 +1,6 @@
 name=Graven Dominator
-image=http://mtgimage.com/card/graven%20dominator.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gp/7.jpg
+value=3.462
 rarity=R
 type=Creature
 subtype=Gargoyle
@@ -10,4 +10,4 @@ ability=Flying;\
         Haunt;\
         When SN enters the battlefield or the creature it haunts dies, each other creature has base power and toughness 1/1 until end of turn.
 timing=main
-oracle=Flying. Haunt. When Graven Dominator enters the battlefield or the creature it haunts dies, each other creature has base power and toughness 1/1 until end of turn.
+oracle=Flying\nHaunt\nWhen Graven Dominator enters the battlefield or the creature it haunts dies, each other creature has base power and toughness 1/1 until end of turn.

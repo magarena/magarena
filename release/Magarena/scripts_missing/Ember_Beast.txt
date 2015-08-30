@@ -1,6 +1,6 @@
 name=Ember Beast
-image=http://mtgimage.com/card/ember%20beast.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gtc/89.jpg
+value=3.100
 rarity=C
 type=Creature
 subtype=Beast

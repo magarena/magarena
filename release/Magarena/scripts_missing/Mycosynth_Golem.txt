@@ -1,6 +1,6 @@
 name=Mycosynth Golem
-image=http://mtgimage.com/card/mycosynth%20golem.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5dn/137.jpg
+value=4.435
 rarity=R
 type=Artifact,Creature
 subtype=Golem
@@ -8,5 +8,5 @@ cost={11}
 pt=4/5
 ability=Affinity for artifacts;\
         Artifact creature spells you cast have affinity for artifacts.
-timing=main
-oracle=Affinity for artifacts. Artifact creature spells you cast have affinity for artifacts.
+timing=artifact
+oracle=Affinity for artifacts\nArtifact creature spells you cast have affinity for artifacts.

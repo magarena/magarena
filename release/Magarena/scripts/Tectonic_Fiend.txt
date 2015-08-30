@@ -1,5 +1,5 @@
 name=Tectonic Fiend
-image=http://mtgimage.com/card/tectonic%20fiend.jpg
+image=http://magiccards.info/scans/en/ts/181.jpg
 value=0.955
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={4}{R}{R}
 pt=7/7
 ability=SN attacks each turn if able.;echo {4}{R}{R}
 timing=main
-oracle=Echo {4}{R}{R}. Tectonic Fiend attacks each turn if able.
+oracle=Echo {4}{R}{R}\nTectonic Fiend attacks each turn if able.

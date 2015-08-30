@@ -1,5 +1,5 @@
 name=Deathmark Prelate
-image=http://mtgimage.com/card/deathmark%20prelate.jpg
+image=http://magiccards.info/scans/en/le/65.jpg
 value=3.344
 rarity=U
 type=Creature

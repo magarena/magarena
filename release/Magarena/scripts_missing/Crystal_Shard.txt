@@ -1,9 +1,9 @@
 name=Crystal Shard
-image=http://mtgimage.com/card/crystal%20shard.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mi/159.jpg
+value=4.000
 rarity=U
 type=Artifact
 cost={3}
 ability={3}, {T} or {U}, {T}: Return target creature to its owner's hand unless its controller pays {1}.
-timing=main
+timing=artifact
 oracle={3}, {T} or {U}, {T}: Return target creature to its owner's hand unless its controller pays {1}.

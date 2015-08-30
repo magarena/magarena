@@ -1,5 +1,5 @@
 name=Keeper of the Nine Gales
-image=http://mtgimage.com/card/keeper%20of%20the%20nine%20gales.jpg
+image=http://magiccards.info/scans/en/le/42.jpg
 value=3.632
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=1/2
 ability=Flying;\
         {T}, Tap another two untapped Birds you control: Return target permanent to its owner's hand.
 timing=main
-oracle=Flying. {T}, Tap two untapped Birds you control: Return target permanent to its owner's hand.
+oracle=Flying\n{T}, Tap two untapped Birds you control: Return target permanent to its owner's hand.

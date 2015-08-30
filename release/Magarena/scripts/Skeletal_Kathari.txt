@@ -1,5 +1,5 @@
 name=Skeletal Kathari
-image=http://mtgimage.com/card/skeletal%20kathari.jpg
+image=http://magiccards.info/scans/en/ala/88.jpg
 value=1.787
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/2
 ability=flying;\
         {B}, Sacrifice a creature: Regenerate SN.
 timing=main
-oracle=Flying. {B}, Sacrifice a creature: Regenerate Skeletal Kathari.
+oracle=Flying\n{B}, Sacrifice a creature: Regenerate Skeletal Kathari.

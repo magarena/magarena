@@ -1,5 +1,5 @@
 name=Leonin Skyhunter
-image=http://mtgimage.com/card/leonin%20skyhunter.jpg
+image=http://magiccards.info/scans/en/ddg/7.jpg
 value=3.304
 ability=flying
 rarity=U

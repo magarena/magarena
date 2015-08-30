@@ -1,6 +1,6 @@
 name=Jace, Architect of Thought
-image=http://mtgimage.com/card/jace%2C%20architect%20of%20thought.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddm/1.jpg
+value=3.500
 rarity=M
 type=Planeswalker
 subtype=Jace
@@ -9,4 +9,4 @@ ability=+1: Until your next turn, whenever a creature an opponent controls attac
         −2: Reveal the top three cards of your library. An opponent separates those cards into two piles. Put one pile into your hand and the other on the bottom of your library in any order.;\
         −8: For each player, search that player's library for a nonland card and exile it, then that player shuffles his or her library. You may cast those cards without paying their mana costs.
 timing=main
-oracle=+1: Until your next turn, whenever a creature an opponent controls attacks, it gets -1/-0 until end of turn. −2: Reveal the top three cards of your library. An opponent separates those cards into two piles. Put one pile into your hand and the other on the bottom of your library in any order. −8: For each player, search that player's library for a nonland card and exile it, then that player shuffles his or her library. You may cast those cards without paying their mana costs.
+oracle=+1: Until your next turn, whenever a creature an opponent controls attacks, it gets -1/-0 until end of turn.\n−2: Reveal the top three cards of your library. An opponent separates those cards into two piles. Put one pile into your hand and the other on the bottom of your library in any order.\n−8: For each player, search that player's library for a nonland card and exile it, then that player shuffles his or her library. You may cast those cards without paying their mana costs.

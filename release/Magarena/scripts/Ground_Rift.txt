@@ -1,10 +1,10 @@
 name=Ground Rift
-image=http://mtgimage.com/card/ground%20rift.jpg
+image=http://magiccards.info/scans/en/ts/162.jpg
 value=2.391
 rarity=C
 type=Sorcery
 cost={R}
-effect=Target creature without flying gains "SN can't block." until end of turn.
+effect=Target creature without flying can't block this turn.
 ability=storm
-timing=main
-oracle=Target creature without flying can't block this turn. Storm
+timing=fmain
+oracle=Target creature without flying can't block this turn.\nStorm

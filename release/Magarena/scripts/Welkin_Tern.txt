@@ -1,5 +1,5 @@
 name=Welkin Tern
-image=http://mtgimage.com/card/welkin%20tern.jpg
+image=http://magiccards.info/scans/en/m15/84.jpg
 value=3.083
 ability=flying;SN can block only creatures with flying.
 rarity=C
@@ -8,4 +8,4 @@ subtype=Bird
 cost={1}{U}
 pt=2/1
 timing=main
-oracle=Flying. Welkin Tern can block only creatures with flying.
+oracle=Flying\nWelkin Tern can block only creatures with flying.

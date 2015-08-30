@@ -1,0 +1,11 @@
+name=Dragon's Eye Sentry
+image=http://magiccards.info/scans/en/dtk/11.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Monk
+cost={W}
+pt=1/3
+ability=Defender; first strike
+timing=main
+oracle=Defender, first strike

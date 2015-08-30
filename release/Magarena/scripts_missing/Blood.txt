@@ -1,9 +1,9 @@
 name=Blood
-image=http://mtgimage.com/card/fleshblood.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dgm/128b.jpg
+value=3.977
 rarity=R
 type=Sorcery
 cost={R}{G}
 effect=Target creature you control deals damage equal to its power to target creature or player.~Fuse
 timing=main
-oracle=Target creature you control deals damage equal to its power to target creature or player. Fuse
+oracle=Target creature you control deals damage equal to its power to target creature or player.\nFuse

@@ -1,7 +1,7 @@
 name=Wind Sail
-image=http://mtgimage.com/card/wind%20sail.jpg
-value=2.500
-rarity=C
+image=http://magiccards.info/scans/en/st/62.jpg
+value=2.214
+rarity=U
 type=Sorcery
 cost={1}{U}
 effect=One or two target creatures gain flying until end of turn.

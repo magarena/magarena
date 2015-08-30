@@ -1,5 +1,5 @@
 name=Voyager Staff
-image=http://mtgimage.com/card/voyager%20staff.jpg
+image=http://magiccards.info/scans/en/rav/274.jpg
 value=2.424
 rarity=U
 type=Artifact

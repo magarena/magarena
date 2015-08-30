@@ -1,10 +1,10 @@
 name=Semblance Anvil
-image=http://mtgimage.com/card/semblance%20anvil.jpg
-value=2.500
+image=http://magiccards.info/scans/en/som/201.jpg
+value=4.083
 rarity=R
 type=Artifact
 cost={3}
 ability=When SN enters the battlefield, you may exile a nonland card from your hand.;\
         Spells you cast that share a card type with the exiled card cost {2} less to cast.
-timing=main
-oracle=Imprint — When Semblance Anvil enters the battlefield, you may exile a nonland card from your hand. Spells you cast that share a card type with the exiled card cost {2} less to cast.
+timing=artifact
+oracle=Imprint — When Semblance Anvil enters the battlefield, you may exile a nonland card from your hand.\nSpells you cast that share a card type with the exiled card cost {2} less to cast.

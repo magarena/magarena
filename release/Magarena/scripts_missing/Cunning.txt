@@ -1,6 +1,6 @@
 name=Cunning
-image=http://mtgimage.com/card/cunning.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ex/28.jpg
+value=2.095
 rarity=C
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={1}{U}
 ability=Enchant creature;\
         Enchanted creature gets +3/+3.;\
         When enchanted creature attacks or blocks, sacrifice SN at the beginning of the next cleanup step.
-timing=main
-oracle=Enchant creature. Enchanted creature gets +3/+3. When enchanted creature attacks or blocks, sacrifice Cunning at the beginning of the next cleanup step.
+timing=aura
+oracle=Enchant creature\nEnchanted creature gets +3/+3.\nWhen enchanted creature attacks or blocks, sacrifice Cunning at the beginning of the next cleanup step.

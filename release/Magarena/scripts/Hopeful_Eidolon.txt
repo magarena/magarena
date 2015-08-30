@@ -1,5 +1,5 @@
 name=Hopeful Eidolon
-image=http://mtgimage.com/card/hopeful%20eidolon.jpg
+image=http://magiccards.info/scans/en/ths/19.jpg
 value=3.612
 rarity=C
 type=Enchantment,Creature
@@ -10,4 +10,4 @@ ability=Bestow {3}{W};\
         Lifelink;\
         Enchanted creature gets +1/+1 and has lifelink.
 timing=main
-oracle=Bestow {3}{W}. Lifelink. Enchanted creature gets +1/+1 and has lifelink.
+oracle=Bestow {3}{W}\nLifelink\nEnchanted creature gets +1/+1 and has lifelink.

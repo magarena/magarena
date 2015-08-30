@@ -1,6 +1,6 @@
 name=Anthousa, Setessan Hero
-image=http://mtgimage.com/card/anthousa%2C%20setessan%20hero.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ths/149.jpg
+value=2.788
 rarity=R
 type=Legendary,Creature
 subtype=Human,Warrior

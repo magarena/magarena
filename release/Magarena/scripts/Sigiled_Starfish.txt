@@ -1,7 +1,7 @@
 name=Sigiled Starfish
-image=http://mtgimage.com/card/sigiled%20starfish.jpg
-value=3.823
-rarity=C
+image=http://magiccards.info/scans/en/ori/73.jpg
+value=2.500
+rarity=U
 type=Creature
 subtype=Starfish
 cost={1}{U}

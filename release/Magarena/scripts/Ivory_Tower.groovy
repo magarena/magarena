@@ -8,13 +8,13 @@
                 "PN gains X life, where X is the number of cards in his or her hand minus 4."
             ); 
         }
- 
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final int amount = Math.max(0,player.getHandSize() - 4);
-            game.logAppendMessage(player,"(X="+amount+")");
-            game.doAction(new MagicChangeLifeAction(player,amount));
+            game.logAppendX(player,amount);
+            game.doAction(new ChangeLifeAction(player,amount));
         }
     }
 ]

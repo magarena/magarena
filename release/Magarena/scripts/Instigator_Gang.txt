@@ -1,5 +1,5 @@
 name=Instigator Gang
-image=http://mtgimage.com/card/instigator%20gang.jpg
+image=http://magiccards.info/scans/en/isd/149a.jpg
 value=3.844
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=Attacking creatures you control get +1/+0.;\
         At the beginning of each upkeep, if no spells were cast last turn, transform SN.
 transform=Wildblood Pack
 timing=main
-oracle=Attacking creatures you control get +1/+0. At the beginning of each upkeep, if no spells were cast last turn, transform Instigator Gang.
+oracle=Attacking creatures you control get +1/+0.\nAt the beginning of each upkeep, if no spells were cast last turn, transform Instigator Gang.

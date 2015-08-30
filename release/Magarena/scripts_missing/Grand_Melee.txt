@@ -1,10 +1,10 @@
 name=Grand Melee
-image=http://mtgimage.com/card/grand%20melee.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/211.jpg
+value=3.597
 rarity=R
 type=Enchantment
 cost={3}{R}
 ability=All creatures attack each turn if able.;\
         All creatures block each turn if able.
-timing=main
-oracle=All creatures attack each turn if able. All creatures block each turn if able.
+timing=enchantment
+oracle=All creatures attack each turn if able.\nAll creatures block each turn if able.

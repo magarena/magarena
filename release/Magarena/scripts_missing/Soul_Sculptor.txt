@@ -1,6 +1,6 @@
 name=Soul Sculptor
-image=http://mtgimage.com/card/soul%20sculptor.jpg
-value=2.500
+image=http://magiccards.info/scans/en/us/53.jpg
+value=3.814
 rarity=R
 type=Creature
 subtype=Human

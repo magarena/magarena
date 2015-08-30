@@ -1,5 +1,5 @@
 name=Woodfall Primus
-image=http://mtgimage.com/card/woodfall%20primus.jpg
+image=http://magiccards.info/scans/en/mma/174.jpg
 value=4.074
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=trample;\
         persist;\
         When SN enters the battlefield, destroy target noncreature permanent.
 timing=main
-oracle=Trample. When Woodfall Primus enters the battlefield, destroy target noncreature permanent. Persist
+oracle=Trample\nWhen Woodfall Primus enters the battlefield, destroy target noncreature permanent.\nPersist

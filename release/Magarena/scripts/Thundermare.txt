@@ -1,12 +1,12 @@
 name=Thundermare
-image=http://mtgimage.com/card/thundermare.jpg
+image=http://magiccards.info/scans/en/9e/224.jpg
 value=4.123
 rarity=R
 type=Creature
 subtype=Elemental,Horse
 cost={5}{R}
 pt=5/5
-ability=haste
+ability=haste;\
+        When SN enters the battlefield, tap all other creatures.
 timing=fmain
-requires_groovy_code=Timbermare
-oracle=Haste. When Thundermare enters the battlefield, tap all other creatures.
+oracle=Haste\nWhen Thundermare enters the battlefield, tap all other creatures.

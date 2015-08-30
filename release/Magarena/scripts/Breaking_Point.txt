@@ -1,9 +1,10 @@
 name=Breaking Point
-image=http://mtgimage.com/card/breaking%20point.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddk/67.jpg
+value=3.593
 rarity=R
 type=Sorcery
 cost={1}{R}{R}
+ability=Cast SN with AI only if an opponent controls a creature.
 timing=main
 requires_groovy_code
 oracle=Any player may have Breaking Point deal 6 damage to him or her. If no one does, destroy all creatures. Creatures destroyed this way can't be regenerated.

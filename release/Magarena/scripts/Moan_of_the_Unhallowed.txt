@@ -1,5 +1,5 @@
 name=Moan of the Unhallowed
-image=http://mtgimage.com/card/moan%20of%20the%20unhallowed.jpg
+image=http://magiccards.info/scans/en/isd/109.jpg
 value=3.762
 rarity=U
 type=Sorcery
@@ -7,4 +7,4 @@ cost={2}{B}{B}
 effect=Put two 2/2 black Zombie creature tokens onto the battlefield.
 ability=Flashback {5}{B}{B}
 timing=main
-oracle=Put two 2/2 black Zombie creature tokens onto the battlefield. Flashback {5}{B}{B}
+oracle=Put two 2/2 black Zombie creature tokens onto the battlefield.\nFlashback {5}{B}{B}

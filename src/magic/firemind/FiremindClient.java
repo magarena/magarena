@@ -17,7 +17,9 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.TimeZone;
 import java.util.List;
+import java.text.SimpleDateFormat;
 
 import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
@@ -49,6 +51,12 @@ public class FiremindClient {
             d.games_to_play = obj.getInt("games_to_play");
             d.deck1_text = obj.getString("deck1_text");
             d.deck2_text = obj.getString("deck2_text");
+            d.seed = obj.getInt("seed");
+            d.strAi1 = obj.getInt("str_ai1");
+            d.strAi2 = obj.getInt("str_ai2");
+            d.life = obj.getInt("life");
+            d.ai1 = obj.getString("ai1");
+            d.ai2 = obj.getString("ai2");
 
             JSONArray scripts = obj.getJSONArray("card_scripts");
             addedScripts = new ArrayList<String>();
@@ -83,11 +91,13 @@ public class FiremindClient {
     }
 
     private static void saveScriptFile(String name, String extension, String content){
-        File scriptsDirectory = MagicFileSystem.getDataPath(DataPath.SCRIPTS).toFile();
+        MagicFileSystem.getDataPath(DataPath.SCRIPTS_ORIG).toFile().mkdirs();
+        File scriptsDirectory = MagicFileSystem.getDataPath(DataPath.SCRIPTS_ORIG).toFile();
+        File scriptOrigsDirectory = MagicFileSystem.getDataPath(DataPath.SCRIPTS_ORIG).toFile();
         String filename = CardDefinitions.getCanonicalName(name)+"."+extension;
         File f = new File(scriptsDirectory.getAbsolutePath()+"/"+filename);
         if (f.exists()){
-          f.renameTo(new File(scriptsDirectory.getAbsolutePath()+"/"+filename+".orig"));
+          f.renameTo(new File(scriptOrigsDirectory.getAbsolutePath()+"/"+filename+".orig"));
         }else{
             addedScripts.add(f.getAbsolutePath());
         }
@@ -109,19 +119,27 @@ public class FiremindClient {
     }
     
     public static void resetChangedScripts(){
+        File scriptsDirectory = MagicFileSystem.getDataPath(DataPath.SCRIPTS_ORIG).toFile();
+        MagicFileSystem.getDataPath(DataPath.SCRIPTS_ORIG).toFile().mkdirs();
         String[] ext = new String[]{"orig"};
-        List<File> files = (List<File>) FileUtils.listFiles(MagicFileSystem.getDataPath(DataPath.SCRIPTS).toFile(), ext, true);
+        List<File> files = (List<File>) FileUtils.listFiles(MagicFileSystem.getDataPath(DataPath.SCRIPTS_ORIG).toFile(), ext, false);
         for(File f: files){
-            f.renameTo(new File(f.getAbsolutePath().substring(0, f.getAbsolutePath().lastIndexOf("."))));
+            f.renameTo(new File(scriptsDirectory.getAbsolutePath()+"/"+f.getName().substring(0, f.getName().lastIndexOf("."))));
         }
         for(String path: addedScripts){
             (new File(path)).delete();
         }
     }
     
-    public static boolean postGame(Integer duel_id, Integer game_number,
-            Date play_time, boolean win_deck1, Integer magarena_version_major,
-            Integer magarena_version_minor, String logFile) {
+    public static boolean postGame(
+        Integer duel_id, 
+        Integer game_number,
+        Date play_time, 
+        boolean win_deck1, 
+        Integer magarena_version_major,
+        Integer magarena_version_minor, 
+        String logFile
+    ) {
         CONFIG.load();
         String url = firemindHost + "/api/v1/duel_jobs/" + duel_id + "/games";
         System.out.println("Posting game result "+game_number);
@@ -137,7 +155,9 @@ public class FiremindClient {
 
             JSONObject parent = new JSONObject();
             parent.put("game_number", game_number);
-            parent.put("play_time", play_time);
+            SimpleDateFormat df = new SimpleDateFormat("dd MMM yyyy HH:mm:ss");
+            df.setTimeZone(TimeZone.getTimeZone("GMT"));
+            parent.put("play_time", df.format(play_time) + " GMT");
             parent.put("win_deck1", win_deck1);
             parent.put("magarena_version_major", magarena_version_major);
             parent.put("magarena_version_minor", magarena_version_minor);
@@ -305,7 +325,7 @@ public class FiremindClient {
         } catch (UnknownHostException e1) {
             env = "production";
         }
-        if (env == "production") {
+        if (env.equals("production")) {
             FiremindClient.setFiremindHost("https://www.firemind.ch");
         } else {
             FiremindClient.setFiremindHost("http://192.168.50.10");

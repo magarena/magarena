@@ -1,9 +1,9 @@
 name=Burning Vengeance
-image=http://mtgimage.com/card/burning%20vengeance.jpg
-value=2.500
+image=http://magiccards.info/scans/en/isd/133.jpg
+value=3.623
 rarity=U
 type=Enchantment
 cost={2}{R}
 ability=Whenever you cast a spell from your graveyard, SN deals 2 damage to target creature or player.
-timing=main
+timing=enchantment
 oracle=Whenever you cast a spell from your graveyard, Burning Vengeance deals 2 damage to target creature or player.

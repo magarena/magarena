@@ -1,9 +1,9 @@
 name=Necrobite
-image=http://mtgimage.com/card/necrobite.jpg
+image=http://magiccards.info/scans/en/m15/105.jpg
 value=2.600
 rarity=C
 type=Instant
 cost={2}{B}
+effect=Target creature gains deathtouch until end of turn.~Regenerate *it*.
 timing=pump
-requires_groovy_code
 oracle=Target creature gains deathtouch until end of turn. Regenerate it.

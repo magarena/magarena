@@ -1,9 +1,9 @@
 name=Phyrexian Altar
-image=http://mtgimage.com/card/phyrexian%20altar.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/306.jpg
+value=4.051
 rarity=R
 type=Artifact
 cost={3}
 ability=Sacrifice a creature: Add one mana of any color to your mana pool.
-timing=main
+timing=artifact
 oracle=Sacrifice a creature: Add one mana of any color to your mana pool.

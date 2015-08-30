@@ -1,5 +1,5 @@
 name=Overgrown Tomb
-image=http://mtgimage.com/card/overgrown%20tomb.jpg
+image=http://magiccards.info/scans/en/rtr/243.jpg
 value=4.303
 rarity=R
 type=Land

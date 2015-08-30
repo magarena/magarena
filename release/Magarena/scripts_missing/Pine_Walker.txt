@@ -1,6 +1,6 @@
 name=Pine Walker
-image=http://mtgimage.com/card/pine%20walker.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/143.jpg
+value=3.250
 rarity=U
 type=Creature
 subtype=Elemental
@@ -9,4 +9,4 @@ pt=5/5
 ability=Morph {4}{G};\
         Whenever SN or another creature you control is turned face up, untap that creature.
 timing=main
-oracle=Morph {4}{G}. Whenever Pine Walker or another creature you control is turned face up, untap that creature.
+oracle=Morph {4}{G}\nWhenever Pine Walker or another creature you control is turned face up, untap that creature.

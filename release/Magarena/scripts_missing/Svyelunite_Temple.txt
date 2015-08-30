@@ -1,10 +1,10 @@
 name=Svyelunite Temple
-image=http://mtgimage.com/card/svyelunite%20temple.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me2/237.jpg
+value=3.569
 rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\
         {T}: Add {U} to your mana pool.;\
         {T}, Sacrifice SN: Add {U}{U} to your mana pool.
-timing=main
-oracle=Svyelunite Temple enters the battlefield tapped. {T}: Add {U} to your mana pool. {T}, Sacrifice Svyelunite Temple: Add {U}{U} to your mana pool.
+timing=land
+oracle=Svyelunite Temple enters the battlefield tapped.\n{T}: Add {U} to your mana pool.\n{T}, Sacrifice Svyelunite Temple: Add {U}{U} to your mana pool.

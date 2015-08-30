@@ -1,6 +1,6 @@
 name=Magister of Worth
-image=http://mtgimage.com/card/magister%20of%20worth.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vma/255.jpg
+value=4.150
 rarity=R
 type=Creature
 subtype=Angel
@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying;\
         When SN enters the battlefield, starting with you, each player votes for grace or condemnation. If grace gets more votes, each player returns each creature card from his or her graveyard to the battlefield. If condemnation gets more votes or the vote is tied, destroy all creatures other than SN.
 timing=main
-oracle=Flying. Will of the council — When Magister of Worth enters the battlefield, starting with you, each player votes for grace or condemnation. If grace gets more votes, each player returns each creature card from his or her graveyard to the battlefield. If condemnation gets more votes or the vote is tied, destroy all creatures other than Magister of Worth.
+oracle=Flying\nWill of the council — When Magister of Worth enters the battlefield, starting with you, each player votes for grace or condemnation. If grace gets more votes, each player returns each creature card from his or her graveyard to the battlefield. If condemnation gets more votes or the vote is tied, destroy all creatures other than Magister of Worth.

@@ -1,9 +1,9 @@
 name=Culling the Weak
-image=http://mtgimage.com/card/culling%20the%20weak.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ex/55.jpg
+value=4.500
 rarity=C
 type=Instant
 cost={B}
 effect=As an additional cost to cast SN, sacrifice a creature.~Add {B}{B}{B}{B} to your mana pool.
 timing=removal
-oracle=As an additional cost to cast Culling the Weak, sacrifice a creature. Add {B}{B}{B}{B} to your mana pool.
+oracle=As an additional cost to cast Culling the Weak, sacrifice a creature.\nAdd {B}{B}{B}{B} to your mana pool.

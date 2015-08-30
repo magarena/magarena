@@ -1,6 +1,6 @@
 name=Voracious Dragon
-image=http://mtgimage.com/card/voracious%20dragon.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddg/56.jpg
+value=2.929
 rarity=R
 type=Creature
 subtype=Dragon
@@ -8,6 +8,6 @@ cost={3}{R}{R}
 pt=4/4
 ability=Flying;\
         Devour 1;\
-        When SN enters the battlefield, SN deals damage to target creature or player equal to twice the number of Goblins it devoured.
+        When SN enters the battlefield, it deals damage to target creature or player equal to twice the number of Goblins it devoured.
 timing=main
-oracle=Flying. Devour 1. When Voracious Dragon enters the battlefield, it deals damage to target creature or player equal to twice the number of Goblins it devoured.
+oracle=Flying\nDevour 1\nWhen Voracious Dragon enters the battlefield, it deals damage to target creature or player equal to twice the number of Goblins it devoured.

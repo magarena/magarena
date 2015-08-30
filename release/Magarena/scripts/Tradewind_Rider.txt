@@ -1,5 +1,5 @@
 name=Tradewind Rider
-image=http://mtgimage.com/card/tradewind%20rider.jpg
+image=http://magiccards.info/scans/en/vma/98.jpg
 value=2.500
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=1/4
 ability=Flying;\
         {T}, Tap another two untapped creatures you control: Return target permanent to its owner's hand.
 timing=main
-oracle=Flying. {T}, Tap two untapped creatures you control: Return target permanent to its owner's hand.
+oracle=Flying\n{T}, Tap two untapped creatures you control: Return target permanent to its owner's hand.

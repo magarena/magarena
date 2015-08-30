@@ -1,5 +1,5 @@
 name=Mons's Goblin Raiders
-image=http://mtgimage.com/card/mons%27s%20goblin%20raiders.jpg
+image=http://magiccards.info/scans/en/st2k/9.jpg
 value=1.983
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Goblin
 cost={R}
 pt=1/1
 timing=main
+oracle=NONE

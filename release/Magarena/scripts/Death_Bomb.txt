@@ -1,5 +1,5 @@
 name=Death Bomb
-image=http://mtgimage.com/card/death%20bomb.jpg
+image=http://magiccards.info/scans/en/ps/41.jpg
 value=1.820
 rarity=C
 type=Instant
@@ -7,4 +7,4 @@ cost={3}{B}
 ability=As an additional cost to cast SN, sacrifice a creature.
 timing=removal
 requires_groovy_code
-oracle=As an additional cost to cast Death Bomb, sacrifice a creature. Destroy target nonblack creature. It can't be regenerated. Its controller loses 2 life.
+oracle=As an additional cost to cast Death Bomb, sacrifice a creature.\nDestroy target nonblack creature. It can't be regenerated. Its controller loses 2 life.

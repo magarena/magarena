@@ -1,5 +1,5 @@
 name=Gutter Skulk
-image=http://mtgimage.com/card/gutter%20skulk.jpg
+image=http://magiccards.info/scans/en/gtc/67.jpg
 value=2.708
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Zombie,Rat
 cost={1}{B}
 pt=2/2
 timing=main
+oracle=NONE

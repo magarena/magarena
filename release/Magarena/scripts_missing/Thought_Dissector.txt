@@ -1,9 +1,9 @@
 name=Thought Dissector
-image=http://mtgimage.com/card/thought%20dissector.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ds/152.jpg
+value=3.652
 rarity=R
 type=Artifact
 cost={4}
 ability={X}, {T}: Target opponent reveals cards from the top of his or her library until an artifact card or X cards are revealed, whichever comes first. If an artifact card is revealed this way, put it onto the battlefield under your control and sacrifice SN. Put the rest of the revealed cards into that player's graveyard.
-timing=main
+timing=artifact
 oracle={X}, {T}: Target opponent reveals cards from the top of his or her library until an artifact card or X cards are revealed, whichever comes first. If an artifact card is revealed this way, put it onto the battlefield under your control and sacrifice Thought Dissector. Put the rest of the revealed cards into that player's graveyard.

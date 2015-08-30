@@ -1,5 +1,5 @@
 name=Extractor Demon
-image=http://mtgimage.com/card/extractor%20demon.jpg
+image=http://magiccards.info/scans/en/cmd/81.jpg
 value=3.178
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=Flying;\
         Whenever another creature leaves the battlefield, you may have target player put the top two cards of his or her library into his or her graveyard.;\
         Unearth {2}{B}
 timing=main
-oracle=Flying. Whenever another creature leaves the battlefield, you may have target player put the top two cards of his or her library into his or her graveyard. Unearth {2}{B}
+oracle=Flying\nWhenever another creature leaves the battlefield, you may have target player put the top two cards of his or her library into his or her graveyard.\nUnearth {2}{B}

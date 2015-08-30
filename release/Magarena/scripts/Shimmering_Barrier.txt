@@ -1,5 +1,5 @@
 name=Shimmering Barrier
-image=http://mtgimage.com/card/shimmering%20barrier.jpg
+image=http://magiccards.info/scans/en/us/50.jpg
 value=3.016
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{W}
 pt=1/3
 ability=defender;first strike;cycling {2}
 timing=main
-oracle=Defender. First strike. Cycling {2}
+oracle=Defender\nFirst strike\nCycling {2}

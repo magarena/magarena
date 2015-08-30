@@ -1,5 +1,5 @@
 name=Scrivener
-image=http://mtgimage.com/card/scrivener.jpg
+image=http://magiccards.info/scans/en/vma/91.jpg
 value=3.045
 rarity=C
 type=Creature

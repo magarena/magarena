@@ -1,5 +1,5 @@
 name=Kiki-Jiki, Mirror Breaker
-image=http://mtgimage.com/card/kiki%2Djiki%2C%20mirror%20breaker.jpg
+image=http://magiccards.info/scans/en/mma/120.jpg
 value=4.373
 rarity=R
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=haste
 timing=fmain
 requires_groovy_code
-oracle=Haste. {T}: Put a token that's a copy of target nonlegendary creature you control onto the battlefield. That token has haste. Sacrifice it at the beginning of the next end step.
+oracle=Haste\n{T}: Put a token that's a copy of target nonlegendary creature you control onto the battlefield. That token has haste. Sacrifice it at the beginning of the next end step.

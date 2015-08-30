@@ -1,6 +1,6 @@
 name=Into the Core
-image=http://mtgimage.com/card/into%20the%20core.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mbs/67.jpg
+value=3.463
 rarity=U
 type=Instant
 cost={2}{R}{R}

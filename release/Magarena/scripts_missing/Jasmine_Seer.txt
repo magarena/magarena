@@ -1,6 +1,6 @@
 name=Jasmine Seer
-image=http://mtgimage.com/card/jasmine%20seer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ud/10.jpg
+value=2.200
 rarity=U
 type=Creature
 subtype=Human,Wizard

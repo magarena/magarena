@@ -1,6 +1,6 @@
 name=Struggle for Sanity
-image=http://mtgimage.com/card/struggle%20for%20sanity.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/145.jpg
+value=3.339
 rarity=U
 type=Sorcery
 cost={2}{B}{B}

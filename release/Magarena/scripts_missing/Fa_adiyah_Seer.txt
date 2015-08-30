@@ -1,6 +1,6 @@
 name=Fa'adiyah Seer
-image=http://mtgimage.com/card/fa%27adiyah%20seer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pc/146.jpg
+value=2.873
 rarity=C
 type=Creature
 subtype=Human,Shaman

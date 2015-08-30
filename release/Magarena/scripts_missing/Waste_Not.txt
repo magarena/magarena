@@ -1,11 +1,11 @@
 name=Waste Not
-image=http://mtgimage.com/card/waste%20not.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/122.jpg
+value=3.818
 rarity=R
 type=Enchantment
 cost={1}{B}
 ability=Whenever an opponent discards a creature card, put a 2/2 black Zombie creature token onto the battlefield.;\
         Whenever an opponent discards a land card, add {B}{B} to your mana pool.;\
         Whenever an opponent discards a noncreature, nonland card, draw a card.
-timing=main
-oracle=Whenever an opponent discards a creature card, put a 2/2 black Zombie creature token onto the battlefield. Whenever an opponent discards a land card, add {B}{B} to your mana pool. Whenever an opponent discards a noncreature, nonland card, draw a card.
+timing=enchantment
+oracle=Whenever an opponent discards a creature card, put a 2/2 black Zombie creature token onto the battlefield.\nWhenever an opponent discards a land card, add {B}{B} to your mana pool.\nWhenever an opponent discards a noncreature, nonland card, draw a card.

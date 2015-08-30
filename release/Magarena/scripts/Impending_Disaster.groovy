@@ -13,11 +13,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (game.getNrOfPermanents(MagicType.Land) >= 7) {
-                game.doAction(new MagicSacrificeAction(event.getPermanent()));
-                final Collection<MagicPermanent> lands = game.filterPermanents(MagicTargetFilterFactory.LAND);
-                for (final MagicPermanent land : lands) {
-                    game.doAction(new MagicDestroyAction(land));
-                }
+                game.doAction(new SacrificeAction(event.getPermanent()));
+                game.doAction(new DestroyAction(LAND.filter(event)));
             }
         }
     }

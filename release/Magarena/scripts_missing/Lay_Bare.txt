@@ -1,6 +1,6 @@
 name=Lay Bare
-image=http://mtgimage.com/card/lay%20bare.jpg
-value=2.500
+image=http://magiccards.info/scans/en/roe/74.jpg
+value=2.328
 rarity=C
 type=Instant
 cost={2}{U}{U}

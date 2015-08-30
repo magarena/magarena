@@ -1,6 +1,6 @@
 name=Lost in the Mist
-image=http://mtgimage.com/card/lost%20in%20the%20mist.jpg
-value=2.500
+image=http://magiccards.info/scans/en/isd/63.jpg
+value=3.234
 rarity=C
 type=Instant
 cost={3}{U}{U}

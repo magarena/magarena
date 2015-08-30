@@ -1,5 +1,5 @@
 name=Avatar of Discord
-image=http://mtgimage.com/card/avatar%20of%20discord.jpg
+image=http://magiccards.info/scans/en/arc/79.jpg
 value=3.764
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=5/3
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. When Avatar of Discord enters the battlefield, sacrifice it unless you discard two cards.
+oracle=Flying\nWhen Avatar of Discord enters the battlefield, sacrifice it unless you discard two cards.

@@ -1,5 +1,5 @@
 name=Brainspoil
-image=http://mtgimage.com/card/brainspoil.jpg
+image=http://magiccards.info/scans/en/rav/78.jpg
 value=2.810
 rarity=C
 type=Sorcery
@@ -7,4 +7,4 @@ cost={3}{B}{B}
 timing=removal
 effect=Destroy target creature that isn't enchanted. It can't be regenerated.
 ability=Transmute {1}{B}{B}
-oracle=Destroy target creature that isn't enchanted. It can't be regenerated. Transmute {1}{B}{B}
+oracle=Destroy target creature that isn't enchanted. It can't be regenerated.\nTransmute {1}{B}{B}

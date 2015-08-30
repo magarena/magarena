@@ -1,6 +1,6 @@
 name=Martyr of Spores
-image=http://mtgimage.com/card/martyr%20of%20spores.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cs/113.jpg
+value=1.932
 rarity=C
 type=Creature
 subtype=Human,Shaman

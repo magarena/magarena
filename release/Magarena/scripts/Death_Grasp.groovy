@@ -5,7 +5,7 @@
             final int amount=payedCost.getX();
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                NEG_TARGET_CREATURE_OR_PLAYER,
                 new MagicDamageTargetPicker(amount),
                 this,
                 "SN deals " + amount + " damage to target creature or player\$. " +
@@ -16,9 +16,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getCardOnStack().getX();
             event.processTarget(game, {
-                final MagicDamage damage=new MagicDamage(event.getSource(),it,amount);
-                game.doAction(new MagicDealDamageAction(damage));
-                game.doAction(new MagicChangeLifeAction(event.getPlayer(),amount));
+                game.doAction(new DealDamageAction(event.getSource(),it,amount));
+                game.doAction(new ChangeLifeAction(event.getPlayer(),amount));
             });
         }
     }

@@ -1,11 +1,13 @@
 name=Tomoya the Revealer
-image=http://mtgimage.com/card/tomoya%20the%20revealer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/70b.jpg
+value=3.809
 rarity=R
 type=Legendary,Creature
 subtype=Human,Wizard
 cost={1}{U}
 pt=2/3
 ability={3}{U}{U}, {T}: Target player draws X cards, where X is the number of cards in your hand.
+flip=Jushi Apprentice
 timing=main
+hidden
 oracle={3}{U}{U}, {T}: Target player draws X cards, where X is the number of cards in your hand.

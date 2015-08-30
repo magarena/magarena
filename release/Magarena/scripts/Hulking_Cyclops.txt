@@ -1,5 +1,5 @@
 name=Hulking Cyclops
-image=http://mtgimage.com/card/hulking%20cyclops.jpg
+image=http://magiccards.info/scans/en/8e/195.jpg
 value=2.469
 ability=SN can't block.
 rarity=U

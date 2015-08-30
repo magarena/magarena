@@ -1,12 +1,13 @@
 name=Admonition Angel
-image=http://mtgimage.com/card/admonition%20angel.jpg
+image=http://magiccards.info/scans/en/wwk/1.jpg
 value=3.992
 rarity=M
 type=Creature
 subtype=Angel
 cost={3}{W}{W}{W}
 pt=6/6
-ability=flying;When SN leaves the battlefield, return all cards exiled with it to the battlefield under their owners' control.
+ability=Flying.;\
+        Whenever a land enters the battlefield under your control, you may exile another target nonland permanent.;\
+        When SN leaves the battlefield, return all cards exiled with it to the battlefield under their owners' control.
 timing=main
-requires_groovy_code
-oracle=Flying. Landfall — Whenever a land enters the battlefield under your control, you may exile target nonland permanent other than Admonition Angel. When Admonition Angel leaves the battlefield, return all cards exiled with it to the battlefield under their owners' control.
+oracle=Flying\nLandfall — Whenever a land enters the battlefield under your control, you may exile target nonland permanent other than Admonition Angel.\nWhen Admonition Angel leaves the battlefield, return all cards exiled with it to the battlefield under their owners' control.

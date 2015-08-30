@@ -1,5 +1,5 @@
 name=Errant Ephemeron
-image=http://mtgimage.com/card/errant%20ephemeron.jpg
+image=http://magiccards.info/scans/en/ddm/20.jpg
 value=2.500
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying;\
         Suspend 4—{1}{U}
 timing=main
-oracle=Flying. Suspend 4—{1}{U}
+oracle=Flying\nSuspend 4—{1}{U}

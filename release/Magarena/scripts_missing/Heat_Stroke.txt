@@ -1,9 +1,9 @@
 name=Heat Stroke
-image=http://mtgimage.com/card/heat%20stroke.jpg
-value=2.500
+image=http://magiccards.info/scans/en/wl/107.jpg
+value=4.283
 rarity=R
 type=Enchantment
 cost={2}{R}
 ability=At end of combat, destroy each creature that blocked or was blocked this turn.
-timing=main
+timing=enchantment
 oracle=At end of combat, destroy each creature that blocked or was blocked this turn.

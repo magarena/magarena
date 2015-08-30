@@ -1,9 +1,9 @@
 name=Fevered Strength
-image=http://mtgimage.com/set/me3/fevered%20strength.jpg
+image=http://magiccards.info/scans/en/me3/66.jpg
 value=2.733
 rarity=C
 type=Instant
 cost={2}{B}
 effect=Target creature gets +2/+0 until end of turn.~Draw a card at the beginning of the next turn's upkeep.
 timing=pump
-oracle=Target creature gets +2/+0 until end of turn. Draw a card at the beginning of the next turn's upkeep.
+oracle=Target creature gets +2/+0 until end of turn.\nDraw a card at the beginning of the next turn's upkeep.

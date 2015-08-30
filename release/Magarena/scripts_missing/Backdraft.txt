@@ -1,6 +1,6 @@
 name=Backdraft
-image=http://mtgimage.com/card/backdraft.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lg/132.jpg
+value=1.757
 rarity=U
 type=Instant
 cost={1}{R}

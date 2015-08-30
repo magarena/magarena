@@ -1,9 +1,9 @@
 name=Ebony Charm
-image=http://mtgimage.com/card/ebony%20charm.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/18.jpg
+value=4.342
 rarity=C
 type=Instant
 cost={B}
-effect=Choose one — • Target opponent loses 1 life and you gain 1 life. • Exile up to three target cards from a single graveyard. • Target creature gains fear until end of turn.
+effect=Choose one — (1) Target opponent loses 1 life and you gain 1 life. (2) Exile up to three target cards from a single graveyard. (3) Target creature gains fear until end of turn.
 timing=removal
-oracle=Choose one — • Target opponent loses 1 life and you gain 1 life. • Exile up to three target cards from a single graveyard. • Target creature gains fear until end of turn.
+oracle=Choose one —\n• Target opponent loses 1 life and you gain 1 life.\n• Exile up to three target cards from a single graveyard.\n• Target creature gains fear until end of turn.

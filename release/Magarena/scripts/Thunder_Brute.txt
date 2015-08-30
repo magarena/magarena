@@ -1,5 +1,5 @@
 name=Thunder Brute
-image=http://mtgimage.com/card/thunder%20brute.jpg
+image=http://magiccards.info/scans/en/bng/113.jpg
 value=3.661
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={4}{R}{R}
 pt=5/5
 ability=trample;tribute 3 effect SN gains haste until end of turn.
 timing=main
-oracle=Trample. Tribute 3. When Thunder Brute enters the battlefield, if tribute wasn't paid, it gains haste until end of turn.
+oracle=Trample\nTribute 3\nWhen Thunder Brute enters the battlefield, if tribute wasn't paid, it gains haste until end of turn.

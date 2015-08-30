@@ -1,6 +1,6 @@
 name=Dire Wolves
-image=http://mtgimage.com/card/dire%20wolves.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ia/118.jpg
+value=2.341
 rarity=C
 type=Creature
 subtype=Wolf

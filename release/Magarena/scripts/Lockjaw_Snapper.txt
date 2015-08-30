@@ -1,5 +1,5 @@
 name=Lockjaw Snapper
-image=http://mtgimage.com/card/lockjaw%20snapper.jpg
+image=http://magiccards.info/scans/en/shm/255.jpg
 value=2.774
 rarity=U
 type=Artifact,Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Wither;\
         When SN dies, put a -1/-1 counter on each creature with a -1/-1 counter on it.
 timing=artifact
-oracle=Wither. When Lockjaw Snapper dies, put a -1/-1 counter on each creature with a -1/-1 counter on it.
+oracle=Wither\nWhen Lockjaw Snapper dies, put a -1/-1 counter on each creature with a -1/-1 counter on it.

@@ -1,5 +1,5 @@
 name=Rockshard Elemental
-image=http://mtgimage.com/card/rockshard%20elemental.jpg
+image=http://magiccards.info/scans/en/le/109.jpg
 value=3.911
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=4/3
 ability=Double strike;\
         Morph {4}{R}{R}
 timing=main
-oracle=Double strike. Morph {4}{R}{R}
+oracle=Double strike\nMorph {4}{R}{R}

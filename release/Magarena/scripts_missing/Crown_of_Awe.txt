@@ -1,6 +1,6 @@
 name=Crown of Awe
-image=http://mtgimage.com/card/crown%20of%20awe.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/16.jpg
+value=3.026
 rarity=C
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={1}{W}
 ability=Enchant creature;\
         Enchanted creature has protection from black and from red.;\
         Sacrifice SN: Enchanted creature and other creatures that share a creature type with it gain protection from black and from red until end of turn.
-timing=main
-oracle=Enchant creature. Enchanted creature has protection from black and from red. Sacrifice Crown of Awe: Enchanted creature and other creatures that share a creature type with it gain protection from black and from red until end of turn.
+timing=aura
+oracle=Enchant creature\nEnchanted creature has protection from black and from red.\nSacrifice Crown of Awe: Enchanted creature and other creatures that share a creature type with it gain protection from black and from red until end of turn.

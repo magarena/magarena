@@ -1,6 +1,6 @@
 name=Mirrorweave
-image=http://mtgimage.com/card/mirrorweave.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/143.jpg
+value=4.057
 rarity=R
 type=Instant
 cost={2}{W/U}{W/U}

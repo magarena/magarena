@@ -1,6 +1,6 @@
 name=Mogis's Marauder
-image=http://mtgimage.com/card/mogis%27s%20marauder.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ths/97.jpg
+value=3.625
 rarity=U
 type=Creature
 subtype=Human,Berserker

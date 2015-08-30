@@ -1,11 +1,11 @@
 name=Insubordination
-image=http://mtgimage.com/card/insubordination.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/141.jpg
+value=2.760
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={B}{B}
 ability=Enchant creature;\
         At the beginning of the end step of enchanted creature's controller, SN deals 2 damage to that player unless that creature attacked this turn.
-timing=main
-oracle=Enchant creature. At the beginning of the end step of enchanted creature's controller, Insubordination deals 2 damage to that player unless that creature attacked this turn.
+timing=aura
+oracle=Enchant creature\nAt the beginning of the end step of enchanted creature's controller, Insubordination deals 2 damage to that player unless that creature attacked this turn.

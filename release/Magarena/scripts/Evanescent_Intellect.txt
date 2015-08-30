@@ -1,5 +1,5 @@
 name=Evanescent Intellect
-image=http://mtgimage.com/card/evanescent%20intellect.jpg
+image=http://magiccards.info/scans/en/bng/38.jpg
 value=2.192
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={U}
 ability=Enchanted creature has "{1}{U}, {T}: Target player puts the top three cards of his or her library into his or her graveyard."
 enchant=pump,pos creature
 timing=aura
-oracle=Enchant creature. Enchanted creature has "{1}{U}, {T}: Target player puts the top three cards of his or her library into his or her graveyard."
+oracle=Enchant creature\nEnchanted creature has "{1}{U}, {T}: Target player puts the top three cards of his or her library into his or her graveyard."

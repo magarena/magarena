@@ -1,11 +1,12 @@
 name=Gilt-Leaf Archdruid
-image=http://mtgimage.com/card/gilt-leaf%20archdruid.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mt/124.jpg
+value=3.758
 rarity=R
 type=Creature
 subtype=Elf,Druid
 cost={3}{G}{G}
 pt=3/3
+ability=Whenever you cast a Druid spell, you may draw a card.
 timing=main
 requires_groovy_code
-oracle=Whenever you cast a Druid spell, you may draw a card. Tap seven untapped Druids you control: Gain control of all lands target player controls.
+oracle=Whenever you cast a Druid spell, you may draw a card.\nTap seven untapped Druids you control: Gain control of all lands target player controls.

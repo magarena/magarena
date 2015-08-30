@@ -1,5 +1,5 @@
 name=Groundskeeper
-image=http://mtgimage.com/card/groundskeeper.jpg
+image=http://magiccards.info/scans/en/9e/247.jpg
 value=3.454
 rarity=U
 type=Creature

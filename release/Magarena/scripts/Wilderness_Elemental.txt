@@ -1,5 +1,5 @@
 name=Wilderness Elemental
-image=http://mtgimage.com/card/wilderness%20elemental.jpg
+image=http://magiccards.info/scans/en/cs/134.jpg
 value=3.489
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=*/3
 ability=Trample;\
         SN's power is equal to the number of nonbasic lands your opponents control.
 timing=main
-oracle=Trample. Wilderness Elemental's power is equal to the number of nonbasic lands your opponents control.
+oracle=Trample\nWilderness Elemental's power is equal to the number of nonbasic lands your opponents control.

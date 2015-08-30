@@ -1,5 +1,5 @@
 name=Divination
-image=http://mtgimage.com/card/divination.jpg
+image=http://magiccards.info/scans/en/m15/52.jpg
 value=3.125
 rarity=C
 type=Sorcery

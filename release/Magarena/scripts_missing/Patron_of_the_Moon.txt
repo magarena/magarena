@@ -1,6 +1,6 @@
 name=Patron of the Moon
-image=http://mtgimage.com/card/patron%20of%20the%20moon.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bok/45.jpg
+value=3.628
 rarity=R
 type=Legendary,Creature
 subtype=Spirit
@@ -10,4 +10,4 @@ ability=Moonfolk offering;\
         Flying;\
         {1}: Put up to two land cards from your hand onto the battlefield tapped.
 timing=main
-oracle=Moonfolk offering. Flying. {1}: Put up to two land cards from your hand onto the battlefield tapped.
+oracle=Moonfolk offering\nFlying\n{1}: Put up to two land cards from your hand onto the battlefield tapped.

@@ -1,5 +1,5 @@
 name=Moonwing Moth
-image=http://mtgimage.com/card/moonwing%20moth.jpg
+image=http://magiccards.info/scans/en/sok/20.jpg
 value=2.154
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{W}{W}
 pt=2/1
 ability=flying;{W}: SN gets +0/+1 until end of turn.
 timing=main
-oracle=Flying. {W}: Moonwing Moth gets +0/+1 until end of turn.
+oracle=Flying\n{W}: Moonwing Moth gets +0/+1 until end of turn.

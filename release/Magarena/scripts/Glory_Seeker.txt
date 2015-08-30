@@ -1,5 +1,5 @@
 name=Glory Seeker
-image=http://mtgimage.com/card/glory%20seeker.jpg
+image=http://magiccards.info/scans/en/ddf/7.jpg
 value=2.449
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Human,Soldier
 cost={1}{W}
 pt=2/2
 timing=main
+oracle=NONE

@@ -1,9 +1,9 @@
 name=Drain Life
-image=http://mtgimage.com/card/drain%20life.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bd/24.jpg
+value=3.868
 rarity=C
 type=Sorcery
 cost={X}{1}{B}
 effect=Spend only black mana on X.~SN deals X damage to target creature or player. You gain life equal to the damage dealt, but not more life than the player's life total before SN dealt damage or the creature's toughness.
 timing=main
-oracle=Spend only black mana on X. Drain Life deals X damage to target creature or player. You gain life equal to the damage dealt, but not more life than the player's life total before Drain Life dealt damage or the creature's toughness.
+oracle=Spend only black mana on X.\nDrain Life deals X damage to target creature or player. You gain life equal to the damage dealt, but not more life than the player's life total before Drain Life dealt damage or the creature's toughness.

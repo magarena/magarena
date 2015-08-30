@@ -1,6 +1,6 @@
 name=Pit Scorpion
-image=http://mtgimage.com/card/pit%20scorpion.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5e/49.jpg
+value=2.780
 rarity=C
 type=Creature
 subtype=Scorpion

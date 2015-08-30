@@ -1,6 +1,6 @@
 name=Peer Through Depths
-image=http://mtgimage.com/card/peer%20through%20depths.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mma/57.jpg
+value=3.654
 rarity=C
 type=Instant
 subtype=Arcane

@@ -1,9 +1,9 @@
 name=Gruul War Chant
-image=http://mtgimage.com/card/gruul%20war%20chant.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dgm/75.jpg
+value=3.775
 rarity=U
 type=Enchantment
 cost={2}{R}{G}
 ability=Each attacking creature you control gets +1/+0 and can't be blocked except by two or more creatures.
-timing=main
+timing=enchantment
 oracle=Each attacking creature you control gets +1/+0 and can't be blocked except by two or more creatures.

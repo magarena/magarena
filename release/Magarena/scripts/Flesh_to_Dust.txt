@@ -1,5 +1,5 @@
 name=Flesh to Dust
-image=http://mtgimage.com/card/flesh%20to%20dust.jpg
+image=http://magiccards.info/scans/en/m15/98.jpg
 value=2.812
 rarity=C
 type=Instant

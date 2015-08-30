@@ -1,11 +1,11 @@
 name=Crystal Golem
-image=http://mtgimage.com/card/crystal%20golem.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/263.jpg
+value=2.985
 rarity=U
 type=Artifact,Creature
 subtype=Golem
 cost={4}
 pt=3/3
 ability=At the beginning of your end step, SN phases out.
-timing=main
+timing=artifact
 oracle=At the beginning of your end step, Crystal Golem phases out.

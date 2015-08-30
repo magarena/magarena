@@ -1,11 +1,11 @@
 name=Green Ward
-image=http://mtgimage.com/card/green%20ward.jpg
-value=2.500
+image=http://magiccards.info/scans/en/4e/277.jpg
+value=1.609
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={W}
 ability=Enchant creature;\
         Enchanted creature has protection from green. This effect doesn't remove SN.
-timing=main
-oracle=Enchant creature. Enchanted creature has protection from green. This effect doesn't remove Green Ward.
+timing=aura
+oracle=Enchant creature\nEnchanted creature has protection from green. This effect doesn't remove Green Ward.

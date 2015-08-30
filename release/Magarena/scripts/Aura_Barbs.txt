@@ -1,0 +1,11 @@
+name=Aura Barbs
+image=http://magiccards.info/scans/en/bok/94.jpg
+value=3.094
+rarity=U
+type=Instant
+subtype=Arcane
+cost={2}{R}
+ability=Cast SN with AI only if an opponent controls an enchantment.
+timing=removal
+requires_groovy_code
+oracle=Each enchantment deals 2 damage to its controller, then each Aura attached to a creature deals 2 damage to the creature it's attached to.

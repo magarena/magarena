@@ -1,5 +1,5 @@
 name=Bayou Dragonfly
-image=http://mtgimage.com/card/bayou%20dragonfly.jpg
+image=http://magiccards.info/scans/en/tp/109.jpg
 value=3.419
 rarity=C
 type=Creature

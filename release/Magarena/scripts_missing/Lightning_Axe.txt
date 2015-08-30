@@ -1,9 +1,9 @@
 name=Lightning Axe
-image=http://mtgimage.com/card/lightning%20axe.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ts/168.jpg
+value=4.119
 rarity=C
 type=Instant
 cost={R}
 effect=As an additional cost to cast SN, discard a card or pay {5}.~SN deals 5 damage to target creature.
 timing=removal
-oracle=As an additional cost to cast Lightning Axe, discard a card or pay {5}. Lightning Axe deals 5 damage to target creature.
+oracle=As an additional cost to cast Lightning Axe, discard a card or pay {5}.\nLightning Axe deals 5 damage to target creature.

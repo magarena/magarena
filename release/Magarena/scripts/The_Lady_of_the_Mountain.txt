@@ -1,9 +1,10 @@
 name=The Lady of the Mountain
-image=http://mtgimage.com/card/the%20lady%20of%20the%20mountain.jpg
+image=http://magiccards.info/scans/en/me3/180.jpg
 value=2.400
-rarity=C
+rarity=U
 type=Legendary,Creature
 subtype=Giant
 cost={4}{R}{G}
 pt=5/5
 timing=main
+oracle=NONE

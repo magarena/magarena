@@ -1,10 +1,10 @@
 name=Thwart
-image=http://mtgimage.com/card/thwart.jpg
+image=http://magiccards.info/scans/en/mm/108.jpg
 value=3.857
 rarity=U
 type=Instant
 cost={2}{U}{U}
+ability=You may return three Islands you control to their owner's hand rather than pay SN's mana cost.
 effect=Counter target spell.
 timing=counter
-requires_groovy_code
-oracle=You may return three Islands you control to their owner's hand rather than pay Thwart's mana cost. Counter target spell.
+oracle=You may return three Islands you control to their owner's hand rather than pay Thwart's mana cost.\nCounter target spell.

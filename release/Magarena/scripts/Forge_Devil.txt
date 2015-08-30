@@ -1,5 +1,5 @@
 name=Forge Devil
-image=http://mtgimage.com/card/forge%20devil.jpg
+image=http://magiccards.info/scans/en/m15/140.jpg
 value=2.600
 rarity=C
 type=Creature

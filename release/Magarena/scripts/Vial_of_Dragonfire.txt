@@ -1,0 +1,9 @@
+name=Vial of Dragonfire
+image=http://magiccards.info/scans/en/dtk/247.jpg
+value=2.500
+rarity=C
+type=Artifact
+cost={2}
+ability={2}, {T}, Sacrifice SN: SN deals 2 damage to target creature.
+timing=main
+oracle={2}, {T}, Sacrifice Vial of Dragonfire: Vial of Dragonfire deals 2 damage to target creature.

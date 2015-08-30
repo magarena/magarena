@@ -1,11 +1,11 @@
 name=Temporal Distortion
-image=http://mtgimage.com/card/temporal%20distortion.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/79.jpg
+value=3.652
 rarity=R
 type=Enchantment
 cost={3}{U}{U}
 ability=Whenever a creature or land becomes tapped, put an hourglass counter on it.;\
         Each permanent with an hourglass counter on it doesn't untap during its controller's untap step.;\
         At the beginning of each player's upkeep, remove all hourglass counters from permanents that player controls.
-timing=main
-oracle=Whenever a creature or land becomes tapped, put an hourglass counter on it. Each permanent with an hourglass counter on it doesn't untap during its controller's untap step. At the beginning of each player's upkeep, remove all hourglass counters from permanents that player controls.
+timing=enchantment
+oracle=Whenever a creature or land becomes tapped, put an hourglass counter on it.\nEach permanent with an hourglass counter on it doesn't untap during its controller's untap step.\nAt the beginning of each player's upkeep, remove all hourglass counters from permanents that player controls.

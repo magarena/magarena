@@ -1,6 +1,6 @@
 name=Liliana of the Dark Realms
-image=http://mtgimage.com/card/liliana%20of%20the%20dark%20realms.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m14/102.jpg
+value=3.663
 rarity=M
 type=Planeswalker
 subtype=Liliana
@@ -9,4 +9,4 @@ ability=+1: Search your library for a Swamp card, reveal it, and put it into you
         −3: Target creature gets +X/+X or -X/-X until end of turn, where X is the number of Swamps you control.;\
         −6: You get an emblem with "Swamps you control have ‘{T}: Add {B}{B}{B}{B} to your mana pool.'"
 timing=main
-oracle=+1: Search your library for a Swamp card, reveal it, and put it into your hand. Then shuffle your library. −3: Target creature gets +X/+X or -X/-X until end of turn, where X is the number of Swamps you control. −6: You get an emblem with "Swamps you control have ‘{T}: Add {B}{B}{B}{B} to your mana pool.'"
+oracle=+1: Search your library for a Swamp card, reveal it, and put it into your hand. Then shuffle your library.\n−3: Target creature gets +X/+X or -X/-X until end of turn, where X is the number of Swamps you control.\n−6: You get an emblem with "Swamps you control have ‘{T}: Add {B}{B}{B}{B} to your mana pool.'"

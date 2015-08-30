@@ -1,12 +1,12 @@
 name=Windscouter
-image=http://mtgimage.com/card/windscouter.jpg
+image=http://magiccards.info/scans/en/pr/53.jpg
 value=1.295
 rarity=U
 type=Creature
 subtype=Human,Scout
 cost={3}{U}
 pt=3/3
-ability=Flying
+ability=Flying.;\
+        When SN attacks or blocks, return SN to its owner's hand at end of combat.
 timing=main
-requires_groovy_code
-oracle=Flying. When Windscouter attacks or blocks, return it to its owner's hand at end of combat.
+oracle=Flying\nWhen Windscouter attacks or blocks, return it to its owner's hand at end of combat.

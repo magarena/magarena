@@ -1,5 +1,5 @@
 name=Spitting Gourna
-image=http://mtgimage.com/card/spitting%20gourna.jpg
+image=http://magiccards.info/scans/en/on/284.jpg
 value=2.375
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/4
 ability=Reach;\
         Morph {4}{G}
 timing=main
-oracle=Reach. Morph {4}{G}
+oracle=Reach\nMorph {4}{G}

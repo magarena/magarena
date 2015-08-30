@@ -1,5 +1,5 @@
 name=Dragon Broodmother
-image=http://mtgimage.com/card/dragon%20broodmother.jpg
+image=http://magiccards.info/scans/en/arb/53.jpg
 value=4.093
 rarity=M
 type=Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=flying;\
         At the beginning of each upkeep, put a 1/1 red and green Dragon creature token with flying and devour 2 onto the battlefield.
 timing=main
-oracle=Flying. At the beginning of each upkeep, put a 1/1 red and green Dragon creature token with flying and devour 2 onto the battlefield.
+oracle=Flying\nAt the beginning of each upkeep, put a 1/1 red and green Dragon creature token with flying and devour 2 onto the battlefield.

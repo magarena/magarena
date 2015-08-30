@@ -1,8 +1,8 @@
 name=Adventurers' Guildhouse
-image=http://mtgimage.com/card/adventurers%27%20guildhouse.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lg/245.jpg
+value=1.477
 rarity=U
 type=Land
 ability=Green legendary creatures you control have "bands with other legendary creatures."
-timing=main
+timing=land
 oracle=Green legendary creatures you control have "bands with other legendary creatures."

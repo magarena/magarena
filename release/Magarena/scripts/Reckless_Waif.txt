@@ -1,5 +1,5 @@
 name=Reckless Waif
-image=http://mtgimage.com/card/reckless%20waif.jpg
+image=http://magiccards.info/scans/en/isd/159a.jpg
 value=3.845
 rarity=U
 type=Creature

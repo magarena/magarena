@@ -1,6 +1,6 @@
 name=Flamespeaker's Will
-image=http://mtgimage.com/card/flamespeaker%27s%20will.jpg
-value=2.500
+image=http://magiccards.info/scans/en/jou/95.jpg
+value=2.425
 rarity=C
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={R}
 ability=Enchant creature you control;\
         Enchanted creature gets +1/+1.;\
         Whenever enchanted creature deals combat damage to a player, you may sacrifice SN. If you do, destroy target artifact.
-timing=main
-oracle=Enchant creature you control. Enchanted creature gets +1/+1. Whenever enchanted creature deals combat damage to a player, you may sacrifice Flamespeaker's Will. If you do, destroy target artifact.
+timing=aura
+oracle=Enchant creature you control\nEnchanted creature gets +1/+1.\nWhenever enchanted creature deals combat damage to a player, you may sacrifice Flamespeaker's Will. If you do, destroy target artifact.

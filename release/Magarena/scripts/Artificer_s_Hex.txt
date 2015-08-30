@@ -1,5 +1,5 @@
 name=Artificer's Hex
-image=http://mtgimage.com/card/artificer's%20hex.jpg
+image=http://magiccards.info/scans/en/m14/85.jpg
 value=3.096
 rarity=U
 type=Enchantment
@@ -8,4 +8,4 @@ cost={B}
 enchant=destroy,neg equipment
 timing=aura
 requires_groovy_code
-oracle=Enchant Equipment. At the beginning of your upkeep, if enchanted Equipment is attached to a creature, destroy that creature.
+oracle=Enchant Equipment\nAt the beginning of your upkeep, if enchanted Equipment is attached to a creature, destroy that creature.

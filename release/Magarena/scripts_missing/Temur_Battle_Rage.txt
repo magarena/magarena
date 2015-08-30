@@ -1,9 +1,9 @@
 name=Temur Battle Rage
-image=http://mtgimage.com/card/temur%20battle%20rage.jpg
+image=http://magiccards.info/scans/en/frf/116.jpg
 value=2.500
 rarity=C
 type=Instant
 cost={1}{R}
 effect=Target creature gains double strike until end of turn.~That creature also gains trample until end of turn if you control a creature with power 4 or greater.
 timing=removal
-oracle=Target creature gains double strike until end of turn. Ferocious — That creature also gains trample until end of turn if you control a creature with power 4 or greater.
+oracle=Target creature gains double strike until end of turn.\nFerocious — That creature also gains trample until end of turn if you control a creature with power 4 or greater.

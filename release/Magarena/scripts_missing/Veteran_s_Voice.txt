@@ -1,11 +1,11 @@
 name=Veteran's Voice
-image=http://mtgimage.com/card/veteran%27s%20voice.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ai/123.jpg
+value=2.132
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={R}
 ability=Enchant creature you control;\
         Tap enchanted creature: Target creature other than the creature tapped this way gets +2/+1 until end of turn. Activate this ability only if enchanted creature is untapped.
-timing=main
-oracle=Enchant creature you control. Tap enchanted creature: Target creature other than the creature tapped this way gets +2/+1 until end of turn. Activate this ability only if enchanted creature is untapped.
+timing=aura
+oracle=Enchant creature you control\nTap enchanted creature: Target creature other than the creature tapped this way gets +2/+1 until end of turn. Activate this ability only if enchanted creature is untapped.

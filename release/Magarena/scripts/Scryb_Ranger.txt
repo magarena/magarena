@@ -1,5 +1,5 @@
 name=Scryb Ranger
-image=http://mtgimage.com/card/scryb%20ranger.jpg
+image=http://magiccards.info/scans/en/ts/215.jpg
 value=4.215
 rarity=U
 type=Creature
@@ -10,4 +10,4 @@ ability=Flash;\
         Flying; protection from blue;\
         Return a Forest you control to its owner's hand: Untap target creature. Activate this ability only once each turn.
 timing=main
-oracle=Flash. Flying, protection from blue. Return a Forest you control to its owner's hand: Untap target creature. Activate this ability only once each turn.
+oracle=Flash\nFlying, protection from blue\nReturn a Forest you control to its owner's hand: Untap target creature. Activate this ability only once each turn.

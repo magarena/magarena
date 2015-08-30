@@ -1,9 +1,9 @@
 name=Snakeform
-image=http://mtgimage.com/card/snakeform.jpg
+image=http://magiccards.info/scans/en/eve/161.jpg
 value=4.287
 rarity=C
 type=Instant
 cost={2}{G/U}
 timing=removal
 requires_groovy_code
-oracle=Target creature loses all abilities and becomes a 1/1 green Snake until end of turn. Draw a card.
+oracle=Until end of turn, target creature loses all abilities and becomes a green Snake with base power and toughness 1/1.\nDraw a card.

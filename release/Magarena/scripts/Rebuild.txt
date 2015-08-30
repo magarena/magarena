@@ -1,10 +1,11 @@
 name=Rebuild
-image=http://mtgimage.com/card/rebuild.jpg
+image=http://magiccards.info/scans/en/ul/40.jpg
 value=3.973
 rarity=U
 type=Instant
 cost={2}{U}
-ability=cycling {2}
+ability=cycling {2};\
+        Cast SN with AI only if there is an artifact on the battlefield.
+effect=Return all artifacts to their owners' hands.
 timing=removal
-requires_groovy_code
-oracle=Return all artifacts to their owners' hands. Cycling {2}
+oracle=Return all artifacts to their owners' hands.\nCycling {2}

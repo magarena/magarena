@@ -1,9 +1,0 @@
-name=Dark Deal
-image=http://mtgimage.com/card/dark%20deal.jpg
-value=2.500
-rarity=U
-type=Sorcery
-cost={2}{B}
-effect=Each player discards all the cards in his or her hand, then draws that many cards minus one.
-timing=main
-oracle=Each player discards all the cards in his or her hand, then draws that many cards minus one.

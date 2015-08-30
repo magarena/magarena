@@ -1,5 +1,5 @@
 name=Henchfiend of Ukor
-image=http://mtgimage.com/card/henchfiend%20of%20ukor.jpg
+image=http://magiccards.info/scans/en/fut/117.jpg
 value=2.550
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={3}{R}
 pt=3/2
 ability=haste;echo {1}{B};{B/R}: SN gets +1/+0 until end of turn.
 timing=main
-oracle=Haste. Echo {1}{B}. {B/R}: Henchfiend of Ukor gets +1/+0 until end of turn.
+oracle=Haste\nEcho {1}{B}\n{B/R}: Henchfiend of Ukor gets +1/+0 until end of turn.

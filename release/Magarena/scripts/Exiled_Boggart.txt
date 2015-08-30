@@ -1,5 +1,5 @@
 name=Exiled Boggart
-image=http://mtgimage.com/card/exiled%20boggart.jpg
+image=http://magiccards.info/scans/en/lw/109.jpg
 value=2.256
 rarity=C
 type=Creature

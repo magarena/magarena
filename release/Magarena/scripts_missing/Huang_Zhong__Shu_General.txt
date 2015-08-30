@@ -1,6 +1,6 @@
 name=Huang Zhong, Shu General
-image=http://mtgimage.com/card/huang%20zhong%2C%20shu%20general.jpg
-value=2.500
+image=http://magiccards.info/scans/en/p3k/8.jpg
+value=2.554
 rarity=R
 type=Legendary,Creature
 subtype=Human,Soldier

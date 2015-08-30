@@ -15,7 +15,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getRefInt();
-            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(),amount,amount));
+            game.doAction(new ChangeTurnPTAction(event.getPermanent(),amount,amount));
         }
     }
 ]

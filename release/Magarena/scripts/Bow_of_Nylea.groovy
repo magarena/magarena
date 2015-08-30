@@ -14,7 +14,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                new MagicFromCardListChoice(source.getController().getGraveyard(),4,true),
+                new MagicFromCardFilterChoice(CARD_FROM_GRAVEYARD,4,true,"to put on the bottom of your library"),
                 this,
                 "PN puts up to 4 target cards from his or her graveyard on the bottom of his or her library. "
             );
@@ -22,8 +22,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processChosenCards(game, {
-                game.doAction(new MagicRemoveCardAction(it,MagicLocationType.Graveyard));
-                game.doAction(new MagicMoveCardAction(it,MagicLocationType.Graveyard,MagicLocationType.BottomOfOwnersLibrary));
+                game.doAction(new ShiftCardAction(it, MagicLocationType.Graveyard, MagicLocationType.BottomOfOwnersLibrary));
             }); 
         }
     }

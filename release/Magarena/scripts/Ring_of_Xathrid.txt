@@ -1,11 +1,12 @@
 name=Ring of Xathrid
-image=http://mtgimage.com/card/ring%20of%20xathrid.jpg
+image=http://magiccards.info/scans/en/m13/215.jpg
 value=3.756
 rarity=U
 type=Artifact
 subtype=Equipment
 cost={2}
-ability=Equip {1}
+ability={2}: Regenerate equipped creature. Activate this ability only if SN is being equipped.;\
+        Equip {1}
 timing=equipment
 requires_groovy_code
-oracle={2}: Regenerate equipped creature. At the beginning of your upkeep, put a +1/+1 counter on equipped creature if it's black. Equip {1}
+oracle={2}: Regenerate equipped creature.\nAt the beginning of your upkeep, put a +1/+1 counter on equipped creature if it's black.\nEquip {1}

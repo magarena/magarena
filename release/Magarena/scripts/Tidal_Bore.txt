@@ -1,5 +1,5 @@
 name=Tidal Bore
-image=http://mtgimage.com/card/tidal%20bore.jpg
+image=http://magiccards.info/scans/en/mm/109.jpg
 value=2.897
 rarity=C
 type=Instant
@@ -7,4 +7,4 @@ cost={1}{U}
 ability=You may return an Island you control to its owner's hand rather than pay SN's mana cost.
 effect=You may tap or untap target creature.
 timing=tapping
-oracle=You may return an Island you control to its owner's hand rather than pay Tidal Bore's mana cost. You may tap or untap target creature.
+oracle=You may return an Island you control to its owner's hand rather than pay Tidal Bore's mana cost.\nYou may tap or untap target creature.

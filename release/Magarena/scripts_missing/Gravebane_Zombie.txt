@@ -1,7 +1,7 @@
 name=Gravebane Zombie
-image=http://mtgimage.com/card/gravebane%20zombie.jpg
-value=2.500
-rarity=C
+image=http://magiccards.info/scans/en/6e/133.jpg
+value=2.783
+rarity=U
 type=Creature
 subtype=Zombie
 cost={3}{B}

@@ -1,5 +1,5 @@
 name=Oversoul of Dusk
-image=http://mtgimage.com/card/oversoul%20of%20dusk.jpg
+image=http://magiccards.info/scans/en/shm/234.jpg
 value=4.093
 rarity=R
 type=Creature

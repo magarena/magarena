@@ -1,6 +1,6 @@
 name=Mercenary Informer
-image=http://mtgimage.com/card/mercenary%20informer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pr/15.jpg
+value=3.161
 rarity=R
 type=Creature
 subtype=Human,Rebel,Mercenary
@@ -9,4 +9,4 @@ pt=2/1
 ability=SN can't be the target of black spells or abilities from black sources.;\
         {2}{W}: Put target nontoken Mercenary on the bottom of its owner's library.
 timing=main
-oracle=Mercenary Informer can't be the target of black spells or abilities from black sources. {2}{W}: Put target nontoken Mercenary on the bottom of its owner's library.
+oracle=Mercenary Informer can't be the target of black spells or abilities from black sources.\n{2}{W}: Put target nontoken Mercenary on the bottom of its owner's library.

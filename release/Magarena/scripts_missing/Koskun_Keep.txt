@@ -1,10 +1,10 @@
 name=Koskun Keep
-image=http://mtgimage.com/card/koskun%20keep.jpg
-value=2.500
+image=http://magiccards.info/scans/en/hl/139.jpg
+value=1.333
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\
         {1}, {T}: Add {R} to your mana pool.;\
         {2}, {T}: Add {B} or {G} to your mana pool.
-timing=main
-oracle={T}: Add {1} to your mana pool. {1}, {T}: Add {R} to your mana pool. {2}, {T}: Add {B} or {G} to your mana pool.
+timing=land
+oracle={T}: Add {1} to your mana pool.\n{1}, {T}: Add {R} to your mana pool.\n{2}, {T}: Add {B} or {G} to your mana pool.

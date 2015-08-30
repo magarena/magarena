@@ -15,7 +15,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicMillLibraryAction(
+            game.doAction(new MillLibraryAction(
                 event.getPlayer(),
                 event.getRefInt()
             ));

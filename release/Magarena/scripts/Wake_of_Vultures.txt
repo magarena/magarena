@@ -1,5 +1,5 @@
 name=Wake of Vultures
-image=http://mtgimage.com/card/wake%20of%20vultures.jpg
+image=http://magiccards.info/scans/en/vi/24.jpg
 value=3.540
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/1
 ability=flying;\
         {1}{B}, Sacrifice a creature: Regenerate SN.
 timing=main
-oracle=Flying. {1}{B}, Sacrifice a creature: Regenerate Wake of Vultures.
+oracle=Flying\n{1}{B}, Sacrifice a creature: Regenerate Wake of Vultures.

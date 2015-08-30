@@ -7,3 +7,4 @@ subtype=Cleric
 color=wb
 pt=1/1
 requires_groovy_code
+oracle={3}{W}{B}{B}, {T}, Sacrifice this creature: Return a card named Deathpact Angel from your graveyard to the battlefield.

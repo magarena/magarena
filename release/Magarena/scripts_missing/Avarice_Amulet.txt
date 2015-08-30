@@ -1,6 +1,6 @@
 name=Avarice Amulet
-image=http://mtgimage.com/card/avarice%20amulet.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/212.jpg
+value=3.000
 rarity=R
 type=Artifact
 subtype=Equipment
@@ -8,5 +8,5 @@ cost={4}
 ability=Equipped creature gets +2/+0 and has vigilance and "At the beginning of your upkeep, draw a card.";\
         When equipped creature dies, target opponent gains control of SN.;\
         Equip {2}
-timing=main
-oracle=Equipped creature gets +2/+0 and has vigilance and "At the beginning of your upkeep, draw a card.". When equipped creature dies, target opponent gains control of Avarice Amulet. Equip {2}
+timing=equipment
+oracle=Equipped creature gets +2/+0 and has vigilance and "At the beginning of your upkeep, draw a card."\nWhen equipped creature dies, target opponent gains control of Avarice Amulet.\nEquip {2}

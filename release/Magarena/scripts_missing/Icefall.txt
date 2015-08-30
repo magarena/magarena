@@ -1,9 +1,9 @@
 name=Icefall
-image=http://mtgimage.com/card/icefall.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cs/85.jpg
+value=3.590
 rarity=C
 type=Sorcery
 cost={2}{R}{R}
 effect=Destroy target artifact or land.~Recover {R}{R}
 timing=main
-oracle=Destroy target artifact or land. Recover {R}{R}
+oracle=Destroy target artifact or land.\nRecover {R}{R}

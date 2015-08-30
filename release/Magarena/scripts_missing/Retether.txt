@@ -1,6 +1,6 @@
 name=Retether
-image=http://mtgimage.com/card/retether.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pc/13.jpg
+value=3.925
 rarity=R
 type=Sorcery
 cost={3}{W}

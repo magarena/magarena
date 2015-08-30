@@ -1,5 +1,5 @@
 name=Mwonvuli Ooze
-image=http://mtgimage.com/card/mwonvuli%20ooze.jpg
+image=http://magiccards.info/scans/en/wl/77.jpg
 value=2.397
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=1+*/1+*
 ability=cumulative upkeep {2}
 timing=main
 requires_groovy_code
-oracle=Cumulative upkeep {2}. Mwonvuli Ooze's power and toughness are each equal to 1 plus twice the number of age counters on it.
+oracle=Cumulative upkeep {2}\nMwonvuli Ooze's power and toughness are each equal to 1 plus twice the number of age counters on it.

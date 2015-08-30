@@ -1,5 +1,5 @@
 name=Crosis's Catacombs
-image=http://mtgimage.com/card/crosis%27s%20catacombs.jpg
+image=http://magiccards.info/scans/en/ps/136.jpg
 value=4.122
 rarity=U
 type=Land
@@ -8,4 +8,4 @@ mana=u3b3r3
 ability={T}: Add {U} or {B} or {R} to your mana pool.
 timing=land
 requires_groovy_code=Dromar's Cavern
-oracle=When Crosis's Catacombs enters the battlefield, sacrifice it unless you return a non-Lair land you control to its owner's hand. {T}: Add {U}, {B}, or {R} to your mana pool.
+oracle=When Crosis's Catacombs enters the battlefield, sacrifice it unless you return a non-Lair land you control to its owner's hand.\n{T}: Add {U}, {B}, or {R} to your mana pool.

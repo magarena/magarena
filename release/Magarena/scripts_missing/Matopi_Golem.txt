@@ -1,11 +1,11 @@
 name=Matopi Golem
-image=http://mtgimage.com/card/matopi%20golem.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vi/150.jpg
+value=1.667
 rarity=U
 type=Artifact,Creature
 subtype=Golem
 cost={5}
 pt=3/3
 ability={1}: Regenerate SN. When it regenerates this way, put a -1/-1 counter on it.
-timing=main
+timing=artifact
 oracle={1}: Regenerate Matopi Golem. When it regenerates this way, put a -1/-1 counter on it.

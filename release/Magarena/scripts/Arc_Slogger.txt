@@ -1,5 +1,5 @@
 name=Arc-Slogger
-image=http://mtgimage.com/card/arc-slogger.jpg
+image=http://magiccards.info/scans/en/mi/85.jpg
 value=3.886
 rarity=R
 type=Creature

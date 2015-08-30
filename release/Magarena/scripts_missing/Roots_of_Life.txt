@@ -1,10 +1,10 @@
 name=Roots of Life
-image=http://mtgimage.com/card/roots%20of%20life.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/135.jpg
+value=3.757
 rarity=U
 type=Enchantment
 cost={1}{G}{G}
 ability=As SN enters the battlefield, choose Island or Swamp.;\
         Whenever a land of the chosen type an opponent controls becomes tapped, you gain 1 life.
-timing=main
-oracle=As Roots of Life enters the battlefield, choose Island or Swamp. Whenever a land of the chosen type an opponent controls becomes tapped, you gain 1 life.
+timing=enchantment
+oracle=As Roots of Life enters the battlefield, choose Island or Swamp.\nWhenever a land of the chosen type an opponent controls becomes tapped, you gain 1 life.

@@ -1,6 +1,6 @@
 name=Thundercloud Elemental
-image=http://mtgimage.com/card/thundercloud%20elemental.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sc/54.jpg
+value=2.339
 rarity=U
 type=Creature
 subtype=Elemental
@@ -10,4 +10,4 @@ ability=Flying;\
         {3}{U}: Tap all creatures with toughness 2 or less.;\
         {3}{U}: All other creatures lose flying until end of turn.
 timing=main
-oracle=Flying. {3}{U}: Tap all creatures with toughness 2 or less. {3}{U}: All other creatures lose flying until end of turn.
+oracle=Flying\n{3}{U}: Tap all creatures with toughness 2 or less.\n{3}{U}: All other creatures lose flying until end of turn.

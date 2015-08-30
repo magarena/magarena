@@ -1,6 +1,6 @@
 name=Angelic Arbiter
-image=http://mtgimage.com/card/angelic%20arbiter.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cmd/5.jpg
+value=3.837
 rarity=R
 type=Creature
 subtype=Angel
@@ -10,4 +10,4 @@ ability=Flying;\
         Each opponent who cast a spell this turn can't attack with creatures.;\
         Each opponent who attacked with a creature this turn can't cast spells.
 timing=main
-oracle=Flying. Each opponent who cast a spell this turn can't attack with creatures. Each opponent who attacked with a creature this turn can't cast spells.
+oracle=Flying\nEach opponent who cast a spell this turn can't attack with creatures.\nEach opponent who attacked with a creature this turn can't cast spells.

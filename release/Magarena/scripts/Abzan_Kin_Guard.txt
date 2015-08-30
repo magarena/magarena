@@ -1,0 +1,11 @@
+name=Abzan Kin-Guard
+image=http://magiccards.info/scans/en/frf/120.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Warrior
+cost={3}{G}
+pt=3/3
+ability=SN has lifelink as long as you control a white or black permanent.
+timing=main
+oracle=Abzan Kin-Guard has lifelink as long as you control a white or black permanent.

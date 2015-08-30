@@ -1,11 +1,11 @@
 name=Tangle Asp
-image=http://mtgimage.com/card/tangle%20asp.jpg
+image=http://magiccards.info/scans/en/5dn/94.jpg
 value=3.880
 rarity=C
 type=Creature
 subtype=Snake
 cost={1}{G}
 pt=1/2
+ability=Whenever SN blocks or becomes blocked by a creature, destroy that creature at end of combat.
 timing=main
-requires_groovy_code
 oracle=Whenever Tangle Asp blocks or becomes blocked by a creature, destroy that creature at end of combat.

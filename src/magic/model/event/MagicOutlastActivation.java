@@ -7,7 +7,7 @@ import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeCountersAction;
+import magic.model.action.ChangeCountersAction;
 import magic.model.condition.MagicCondition;
 
 public class MagicOutlastActivation extends MagicPermanentActivation{
@@ -42,6 +42,6 @@ public class MagicOutlastActivation extends MagicPermanentActivation{
 
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(new MagicChangeCountersAction(event.getPermanent(), MagicCounterType.PlusOne, 1));
+        game.doAction(new ChangeCountersAction(event.getPermanent(), MagicCounterType.PlusOne, 1));
     }
 }

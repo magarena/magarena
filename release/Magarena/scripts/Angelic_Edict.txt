@@ -1,5 +1,5 @@
 name=Angelic Edict
-image=http://mtgimage.com/card/angelic%20edict.jpg
+image=http://magiccards.info/scans/en/gtc/2.jpg
 value=2.782
 rarity=C
 type=Sorcery

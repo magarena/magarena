@@ -1,6 +1,6 @@
 name=Wall of Vipers
-image=http://mtgimage.com/card/wall%20of%20vipers.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pr/80.jpg
+value=2.833
 rarity=U
 type=Creature
 subtype=Snake,Wall
@@ -9,4 +9,4 @@ pt=2/4
 ability=Defender;\
         {3}: Destroy SN and target creature it's blocking. Any player may activate this ability.
 timing=main
-oracle=Defender. {3}: Destroy Wall of Vipers and target creature it's blocking. Any player may activate this ability.
+oracle=Defender\n{3}: Destroy Wall of Vipers and target creature it's blocking. Any player may activate this ability.

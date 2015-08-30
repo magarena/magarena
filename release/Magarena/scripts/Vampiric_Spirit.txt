@@ -1,5 +1,5 @@
 name=Vampiric Spirit
-image=http://mtgimage.com/card/vampiric%20spirit.jpg
+image=http://magiccards.info/scans/en/8e/170.jpg
 value=2.729
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=4/3
 ability=flying;\
         When SN enters the battlefield, you lose 4 life.
 timing=main
-oracle=Flying. When Vampiric Spirit enters the battlefield, you lose 4 life.
+oracle=Flying\nWhen Vampiric Spirit enters the battlefield, you lose 4 life.

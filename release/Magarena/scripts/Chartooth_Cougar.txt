@@ -1,5 +1,5 @@
 name=Chartooth Cougar
-image=http://mtgimage.com/card/chartooth%20cougar.jpg
+image=http://magiccards.info/scans/en/vma/155.jpg
 value=3.625
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability={R}: SN gets +1/+0 until end of turn.;\
         Mountaincycling {2}
 timing=main
-oracle={R}: Chartooth Cougar gets +1/+0 until end of turn. Mountaincycling {2}
+oracle={R}: Chartooth Cougar gets +1/+0 until end of turn.\nMountaincycling {2}

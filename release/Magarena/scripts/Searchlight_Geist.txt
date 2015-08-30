@@ -1,5 +1,5 @@
 name=Searchlight Geist
-image=http://mtgimage.com/card/searchlight%20geist.jpg
+image=http://magiccards.info/scans/en/avr/119.jpg
 value=2.250
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{B}
 pt=2/1
 ability=flying;{3}{B}: SN gains deathtouch until end of turn.
 timing=main
-oracle=Flying. {3}{B}: Searchlight Geist gains deathtouch until end of turn.
+oracle=Flying\n{3}{B}: Searchlight Geist gains deathtouch until end of turn.

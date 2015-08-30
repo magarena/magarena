@@ -1,11 +1,12 @@
 name=Arcbound Stinger
-image=http://mtgimage.com/card/arcbound%20stinger.jpg
+image=http://magiccards.info/scans/en/mma/199.jpg
 value=3.447
 rarity=C
 type=Artifact,Creature
 subtype=Insect
 cost={2}
 pt=0/0
-ability=modular 1;flying
+ability=Flying;\
+        Modular 1
 timing=main
-oracle=Flying. Modular 1
+oracle=Flying\nModular 1

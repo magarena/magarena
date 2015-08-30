@@ -1,5 +1,5 @@
 name=Plated Wurm
-image=http://mtgimage.com/card/plated%20wurm.jpg
+image=http://magiccards.info/scans/en/po2/81.jpg
 value=2.981
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Wurm
 cost={4}{G}
 pt=4/5
 timing=main
+oracle=NONE

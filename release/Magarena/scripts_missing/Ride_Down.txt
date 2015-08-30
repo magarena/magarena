@@ -1,6 +1,6 @@
 name=Ride Down
-image=http://mtgimage.com/card/ride%20down.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/194.jpg
+value=3.250
 rarity=U
 type=Instant
 cost={R}{W}

@@ -1,10 +1,10 @@
 name=Golgari Rot Farm
-image=http://mtgimage.com/card/golgari%20rot%20farm.jpg
+image=http://magiccards.info/scans/en/c13/291.jpg
 value=2.500
 rarity=C
 type=Land
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, return a land you control to its owner's hand.;\
         {T}: Add {B}{G} to your mana pool.
-timing=main
-oracle=Golgari Rot Farm enters the battlefield tapped. When Golgari Rot Farm enters the battlefield, return a land you control to its owner's hand. {T}: Add {B}{G} to your mana pool.
+timing=land
+oracle=Golgari Rot Farm enters the battlefield tapped.\nWhen Golgari Rot Farm enters the battlefield, return a land you control to its owner's hand.\n{T}: Add {B}{G} to your mana pool.

@@ -1,9 +1,9 @@
 name=Resounding Wave
-image=http://mtgimage.com/card/resounding%20wave.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ala/54.jpg
+value=2.612
 rarity=C
 type=Instant
 cost={2}{U}
 effect=Return target permanent to its owner's hand.~Cycling {5}{W}{U}{B}~When you cycle SN, return two target permanents to their owners' hands.
 timing=removal
-oracle=Return target permanent to its owner's hand. Cycling {5}{W}{U}{B}. When you cycle Resounding Wave, return two target permanents to their owners' hands.
+oracle=Return target permanent to its owner's hand.\nCycling {5}{W}{U}{B}\nWhen you cycle Resounding Wave, return two target permanents to their owners' hands.

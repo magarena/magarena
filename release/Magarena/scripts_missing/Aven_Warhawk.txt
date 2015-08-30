@@ -1,6 +1,6 @@
 name=Aven Warhawk
-image=http://mtgimage.com/card/aven%20warhawk.jpg
-value=2.500
+image=http://magiccards.info/scans/en/le/4.jpg
+value=2.593
 rarity=U
 type=Creature
 subtype=Bird,Soldier
@@ -9,4 +9,4 @@ pt=2/2
 ability=Amplify 1;\
         Flying
 timing=main
-oracle=Amplify 1. Flying
+oracle=Amplify 1\nFlying

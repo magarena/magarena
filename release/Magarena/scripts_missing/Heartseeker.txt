@@ -1,11 +1,11 @@
 name=Heartseeker
-image=http://mtgimage.com/card/heartseeker.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ds/124.jpg
+value=3.306
 rarity=R
 type=Artifact
 subtype=Equipment
 cost={4}
 ability=Equipped creature gets +2/+1 and has "{T}, Unattach SN: Destroy target creature.";\
         Equip {5}
-timing=main
-oracle=Equipped creature gets +2/+1 and has "{T}, Unattach Heartseeker: Destroy target creature.". Equip {5}
+timing=equipment
+oracle=Equipped creature gets +2/+1 and has "{T}, Unattach Heartseeker: Destroy target creature."\nEquip {5}

@@ -12,8 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicSource source=event.getSource();
             for (final MagicPlayer player : game.getAPNAP()) {
-                final MagicDamage damage=new MagicDamage(source,player,1);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new DealDamageAction(source,player,1));
             }
         }
     }

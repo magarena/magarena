@@ -1,7 +1,7 @@
 name=Icatian Phalanx
-image=http://mtgimage.com/card/icatian%20phalanx.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/me2/16.jpg
+value=2.135
+rarity=C
 type=Creature
 subtype=Human,Soldier
 cost={4}{W}

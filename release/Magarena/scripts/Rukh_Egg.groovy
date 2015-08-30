@@ -12,14 +12,14 @@
         @Override
         public void executeEvent(final MagicGame outerGame, final MagicEvent event) {
             //insert trigger to act at the beginning of the next end step
-            outerGame.doAction(new MagicAddTriggerAction(new MagicAtEndOfTurnTrigger() {
+            outerGame.doAction(new AddTriggerAction(new MagicAtEndOfTurnTrigger() {
                 @Override
                 public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer eotPlayer) {
-                    game.doAction(new MagicPlayTokenAction(
+                    game.doAction(new PlayTokenAction(
                         game.getPlayer(event.getPlayer().getIndex()),
-                        TokenCardDefinitions.get("4/4 red Bird creature token with flying")
+                        CardDefinitions.getToken("4/4 red Bird creature token with flying")
                     ));
-                    game.addDelayedAction(new MagicRemoveTriggerAction(this));
+                    game.addDelayedAction(new RemoveTriggerAction(this));
                     return MagicEvent.NONE;
                 }
             }));

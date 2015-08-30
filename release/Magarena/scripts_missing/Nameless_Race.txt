@@ -1,6 +1,6 @@
 name=Nameless Race
-image=http://mtgimage.com/card/nameless%20race.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dk/12.jpg
+value=2.827
 rarity=R
 type=Creature
 cost={3}{B}
@@ -9,4 +9,4 @@ ability=Trample;\
         As SN enters the battlefield, pay any amount of life. The amount you pay can't be more than the total number of white nontoken permanents your opponents control plus the total number of white cards in their graveyards.;\
         SN's power and toughness are each equal to the life paid as it entered the battlefield.
 timing=main
-oracle=Trample. As Nameless Race enters the battlefield, pay any amount of life. The amount you pay can't be more than the total number of white nontoken permanents your opponents control plus the total number of white cards in their graveyards. Nameless Race's power and toughness are each equal to the life paid as it entered the battlefield.
+oracle=Trample\nAs Nameless Race enters the battlefield, pay any amount of life. The amount you pay can't be more than the total number of white nontoken permanents your opponents control plus the total number of white cards in their graveyards.\nNameless Race's power and toughness are each equal to the life paid as it entered the battlefield.

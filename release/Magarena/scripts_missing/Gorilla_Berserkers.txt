@@ -1,6 +1,6 @@
 name=Gorilla Berserkers
-image=http://mtgimage.com/card/gorilla%20berserkers.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ai/75.jpg
+value=3.760
 rarity=C
 type=Creature
 subtype=Ape,Berserker
@@ -9,4 +9,4 @@ pt=2/3
 ability=Trample; rampage 2;\
         SN can't be blocked except by three or more creatures.
 timing=main
-oracle=Trample; rampage 2. Gorilla Berserkers can't be blocked except by three or more creatures.
+oracle=Trample, rampage 2\nGorilla Berserkers can't be blocked except by three or more creatures.

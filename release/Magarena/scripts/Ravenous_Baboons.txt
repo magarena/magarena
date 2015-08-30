@@ -1,5 +1,5 @@
 name=Ravenous Baboons
-image=http://mtgimage.com/card/ravenous%20baboons.jpg
+image=http://magiccards.info/scans/en/ex/97.jpg
 value=4.000
 rarity=R
 type=Creature

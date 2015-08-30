@@ -1,11 +1,11 @@
 name=Grid Monitor
-image=http://mtgimage.com/card/grid%20monitor.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mi/183.jpg
+value=2.671
 rarity=R
 type=Artifact,Creature
 subtype=Construct
 cost={4}
 pt=4/6
 ability=You can't cast creature spells.
-timing=main
+timing=artifact
 oracle=You can't cast creature spells.

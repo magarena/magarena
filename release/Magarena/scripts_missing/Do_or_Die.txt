@@ -1,6 +1,6 @@
 name=Do or Die
-image=http://mtgimage.com/card/do%20or%20die.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/102.jpg
+value=4.263
 rarity=R
 type=Sorcery
 cost={1}{B}

@@ -1,5 +1,5 @@
 name=Midnight Covenant
-image=http://mtgimage.com/card/midnight%20covenant.jpg
+image=http://magiccards.info/scans/en/chk/125.jpg
 value=2.721
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={1}{B}
 ability=Enchanted creature has "{B}: SN gets +1/+1 until end of turn."
 enchant=pump,pos creature
 timing=aura
-oracle=Enchant creature. Enchanted creature has "{B}: This creature gets +1/+1 until end of turn."
+oracle=Enchant creature\nEnchanted creature has "{B}: This creature gets +1/+1 until end of turn."

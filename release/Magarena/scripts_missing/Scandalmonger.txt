@@ -1,6 +1,6 @@
 name=Scandalmonger
-image=http://mtgimage.com/card/scandalmonger.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/158.jpg
+value=2.750
 rarity=U
 type=Creature
 subtype=Boar,Monger

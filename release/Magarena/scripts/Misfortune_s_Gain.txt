@@ -1,5 +1,5 @@
 name=Misfortune's Gain
-image=http://mtgimage.com/card/misfortune's%20gain.jpg
+image=http://magiccards.info/scans/en/me3/21.jpg
 value=2.600
 rarity=C
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Stalking Vengeance
-image=http://mtgimage.com/card/stalking%20vengeance.jpg
+image=http://magiccards.info/scans/en/c13/121.jpg
 value=3.708
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=5/5
 ability=Haste
 timing=main
 requires_groovy_code
-oracle=Haste. Whenever another creature you control dies, it deals damage equal to its power to target player.
+oracle=Haste\nWhenever another creature you control dies, it deals damage equal to its power to target player.

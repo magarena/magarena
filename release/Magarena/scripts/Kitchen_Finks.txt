@@ -1,5 +1,5 @@
 name=Kitchen Finks
-image=http://mtgimage.com/card/kitchen%20finks.jpg
+image=http://magiccards.info/scans/en/mma/190.jpg
 value=4.198
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{G/W}{G/W}
 pt=3/2
 ability=persist;When SN enters the battlefield, you gain 2 life.
 timing=main
-oracle=When Kitchen Finks enters the battlefield, you gain 2 life. Persist
+oracle=When Kitchen Finks enters the battlefield, you gain 2 life.\nPersist

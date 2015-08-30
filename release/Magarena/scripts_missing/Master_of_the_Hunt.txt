@@ -1,6 +1,6 @@
 name=Master of the Hunt
-image=http://mtgimage.com/card/master%20of%20the%20hunt.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lg/108.jpg
+value=2.413
 rarity=R
 type=Creature
 subtype=Human

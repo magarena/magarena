@@ -1,5 +1,5 @@
 name=Pillory of the Sleepless
-image=http://mtgimage.com/card/pillory%20of%20the%20sleepless.jpg
+image=http://magiccards.info/scans/en/gp/125.jpg
 value=4.091
 removal=4
 rarity=C
@@ -10,4 +10,4 @@ ability=Enchanted creature can't attack or block.;\
         Enchanted creature has "At the beginning of your upkeep, you lose 1 life."
 timing=aura
 enchant=can't attack or block,neg creature
-oracle=Enchant creature. Enchanted creature can't attack or block. Enchanted creature has "At the beginning of your upkeep, you lose 1 life."
+oracle=Enchant creature\nEnchanted creature can't attack or block.\nEnchanted creature has "At the beginning of your upkeep, you lose 1 life."

@@ -1,6 +1,6 @@
 name=Field of Reality
-image=http://mtgimage.com/card/field%20of%20reality.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/60.jpg
+value=1.543
 rarity=C
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={2}{U}
 ability=Enchant creature;\
         Enchanted creature can't be blocked by Spirits.;\
         {1}{U}: Return SN to its owner's hand.
-timing=main
-oracle=Enchant creature. Enchanted creature can't be blocked by Spirits. {1}{U}: Return Field of Reality to its owner's hand.
+timing=aura
+oracle=Enchant creature\nEnchanted creature can't be blocked by Spirits.\n{1}{U}: Return Field of Reality to its owner's hand.

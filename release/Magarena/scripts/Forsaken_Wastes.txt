@@ -1,0 +1,9 @@
+name=Forsaken Wastes
+image=http://magiccards.info/scans/en/mr/23.jpg
+value=4.098
+rarity=R
+type=World,Enchantment
+cost={2}{B}
+timing=main
+requires_groovy_code
+oracle=Players can't gain life.\nAt the beginning of each player's upkeep, that player loses 1 life.\nWhenever Forsaken Wastes becomes the target of a spell, that spell's controller loses 5 life.

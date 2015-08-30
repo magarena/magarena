@@ -1,5 +1,5 @@
 name=Lightning Talons
-image=http://mtgimage.com/card/lightning%20talons.jpg
+image=http://magiccards.info/scans/en/m14/144.jpg
 value=2.979
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={2}{R}
 ability=Enchanted creature gets +3/+0 and has first strike.
 timing=aura
 enchant=first strike,pos creature
-oracle=Enchant creature. Enchanted creature gets +3/+0 and has first strike.
+oracle=Enchant creature\nEnchanted creature gets +3/+0 and has first strike.

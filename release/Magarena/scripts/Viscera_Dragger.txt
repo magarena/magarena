@@ -1,5 +1,5 @@
 name=Viscera Dragger
-image=http://mtgimage.com/card/viscera%20dragger.jpg
+image=http://magiccards.info/scans/en/ala/92.jpg
 value=3.519
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=Cycling {2};\
         Unearth {1}{B}
 timing=main
-oracle=Cycling {2}. Unearth {1}{B}
+oracle=Cycling {2}\nUnearth {1}{B}

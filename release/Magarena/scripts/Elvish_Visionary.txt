@@ -1,6 +1,6 @@
 name=Elvish Visionary
-image=http://mtgimage.com/card/elvish%20visionary.jpg
-value=3.873
+image=http://magiccards.info/scans/en/ori/175.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Elf,Shaman

@@ -23,7 +23,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getPermanent().getCounters(MagicCounterType.Charge);
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),amount));
+            game.doAction(new ChangeLifeAction(event.getPlayer(),amount));
         }
     }
 ]

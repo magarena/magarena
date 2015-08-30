@@ -1,5 +1,5 @@
 name=Multani's Acolyte
-image=http://mtgimage.com/card/multani%27s%20acolyte.jpg
+image=http://magiccards.info/scans/en/ul/108.jpg
 value=3.697
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=echo {G}{G};\
         When SN enters the battlefield, draw a card.
 timing=main
-oracle=Echo {G}{G}. When Multani's Acolyte enters the battlefield, draw a card.
+oracle=Echo {G}{G}\nWhen Multani's Acolyte enters the battlefield, draw a card.

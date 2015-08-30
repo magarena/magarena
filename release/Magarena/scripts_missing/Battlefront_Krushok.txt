@@ -1,5 +1,5 @@
 name=Battlefront Krushok
-image=http://mtgimage.com/card/battlefront%20krushok.jpg
+image=http://magiccards.info/scans/en/frf/125.jpg
 value=2.500
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=3/4
 ability=SN can't be blocked by more than one creature.;\
         Each creature you control with a +1/+1 counter on it can't be blocked by more than one creature.
 timing=main
-oracle=Battlefront Krushok can't be blocked by more than one creature. Each creature you control with a +1/+1 counter on it can't be blocked by more than one creature.
+oracle=Battlefront Krushok can't be blocked by more than one creature.\nEach creature you control with a +1/+1 counter on it can't be blocked by more than one creature.

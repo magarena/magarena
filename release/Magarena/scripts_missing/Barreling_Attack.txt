@@ -1,6 +1,6 @@
 name=Barreling Attack
-image=http://mtgimage.com/card/barreling%20attack.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/157.jpg
+value=2.267
 rarity=R
 type=Instant
 cost={2}{R}{R}

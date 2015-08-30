@@ -1,9 +1,9 @@
 name=Conjurer's Ban
-image=http://mtgimage.com/card/conjurer%27s%20ban.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gp/108.jpg
+value=2.782
 rarity=U
 type=Sorcery
 cost={W}{B}
 effect=Name a card. Until your next turn, the named card can't be played.~Draw a card.
 timing=main
-oracle=Name a card. Until your next turn, the named card can't be played. Draw a card.
+oracle=Name a card. Until your next turn, the named card can't be played.\nDraw a card.

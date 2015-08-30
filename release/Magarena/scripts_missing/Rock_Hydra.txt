@@ -1,6 +1,6 @@
 name=Rock Hydra
-image=http://mtgimage.com/card/rock%20hydra.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me4/133.jpg
+value=3.865
 rarity=R
 type=Creature
 subtype=Hydra
@@ -11,4 +11,4 @@ ability=SN enters the battlefield with X +1/+1 counters on it.;\
         {R}: Prevent the next 1 damage that would be dealt to SN this turn.;\
         {R}{R}{R}: Put a +1/+1 counter on SN. Activate this ability only during your upkeep.
 timing=main
-oracle=Rock Hydra enters the battlefield with X +1/+1 counters on it. For each 1 damage that would be dealt to Rock Hydra, if it has a +1/+1 counter on it, remove a +1/+1 counter from it and prevent that 1 damage. {R}: Prevent the next 1 damage that would be dealt to Rock Hydra this turn. {R}{R}{R}: Put a +1/+1 counter on Rock Hydra. Activate this ability only during your upkeep.
+oracle=Rock Hydra enters the battlefield with X +1/+1 counters on it.\nFor each 1 damage that would be dealt to Rock Hydra, if it has a +1/+1 counter on it, remove a +1/+1 counter from it and prevent that 1 damage.\n{R}: Prevent the next 1 damage that would be dealt to Rock Hydra this turn.\n{R}{R}{R}: Put a +1/+1 counter on Rock Hydra. Activate this ability only during your upkeep.

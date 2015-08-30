@@ -1,6 +1,6 @@
 name=Exsanguinate
-image=http://mtgimage.com/card/exsanguinate.jpg
-value=2.500
+image=http://magiccards.info/scans/en/som/61.jpg
+value=4.048
 rarity=U
 type=Sorcery
 cost={X}{B}{B}

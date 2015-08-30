@@ -1,6 +1,6 @@
 name=Corpsejack Menace
-image=http://mtgimage.com/card/corpsejack%20menace.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rtr/152.jpg
+value=4.051
 rarity=R
 type=Creature
 subtype=Fungus

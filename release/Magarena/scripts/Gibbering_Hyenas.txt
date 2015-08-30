@@ -1,0 +1,11 @@
+name=Gibbering Hyenas
+image=http://magiccards.info/scans/en/mr/117.jpg
+value=2.382
+rarity=C
+type=Creature
+subtype=Hyena
+cost={2}{G}
+pt=3/2
+ability=SN can't block black creatures.
+timing=main
+oracle=Gibbering Hyenas can't block black creatures.

@@ -1,5 +1,5 @@
 name=Lim-Dûl the Necromancer
-image=http://mtgimage.com/card/lim%2Ddul%20the%20necromancer.jpg
+image=http://magiccards.info/scans/en/ts/114.jpg
 value=4.024
 rarity=R
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability={1}{B}: Regenerate target Zombie.
 timing=fmain
 requires_groovy_code
-oracle=Whenever a creature an opponent controls dies, you may pay {1}{B}. If you do, return that card to the battlefield under your control. If it's a creature, it's a Zombie in addition to its other creature types. {1}{B}: Regenerate target Zombie.
+oracle=Whenever a creature an opponent controls dies, you may pay {1}{B}. If you do, return that card to the battlefield under your control. If it's a creature, it's a Zombie in addition to its other creature types.\n{1}{B}: Regenerate target Zombie.

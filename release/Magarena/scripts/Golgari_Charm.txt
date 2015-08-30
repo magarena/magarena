@@ -1,0 +1,9 @@
+name=Golgari Charm
+image=http://magiccards.info/scans/en/rtr/164.jpg
+value=3.657
+rarity=U
+type=Instant
+cost={B}{G}
+effect=Choose one — (1) All creatures get -1/-1 until end of turn. (2) Destroy target enchantment. (3) Regenerate each creature you control.
+timing=removal
+oracle=Choose one —\n• All creatures get -1/-1 until end of turn.\n• Destroy target enchantment.\n• Regenerate each creature you control.

@@ -1,9 +1,9 @@
 name=Verdant Succession
-image=http://mtgimage.com/card/verdant%20succession.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/280.jpg
+value=4.037
 rarity=R
 type=Enchantment
 cost={4}{G}
 ability=Whenever a green nontoken creature dies, that creature's controller may search his or her library for a card with the same name as that creature and put it onto the battlefield. If that player does, he or she shuffles his or her library.
-timing=main
+timing=enchantment
 oracle=Whenever a green nontoken creature dies, that creature's controller may search his or her library for a card with the same name as that creature and put it onto the battlefield. If that player does, he or she shuffles his or her library.

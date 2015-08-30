@@ -1,9 +1,9 @@
 name=Temporal Aperture
-image=http://mtgimage.com/card/temporal%20aperture.jpg
-value=2.500
+image=http://magiccards.info/scans/en/us/310.jpg
+value=4.264
 rarity=R
 type=Artifact
 cost={2}
 ability={5}, {T}: Shuffle your library, then reveal the top card. Until end of turn, for as long as that card remains on top of your library, play with the top card of your library revealed and you may play that card without paying its mana cost.
-timing=main
+timing=artifact
 oracle={5}, {T}: Shuffle your library, then reveal the top card. Until end of turn, for as long as that card remains on top of your library, play with the top card of your library revealed and you may play that card without paying its mana cost.

@@ -1,5 +1,5 @@
 name=Thelon of Havenwood
-image=http://mtgimage.com/card/thelon%20of%20havenwood.jpg
+image=http://magiccards.info/scans/en/ts/227.jpg
 value=4.107
 rarity=R
 type=Legendary,Creature
@@ -8,4 +8,4 @@ cost={G}{G}
 pt=2/2
 timing=main
 requires_groovy_code
-oracle=Each Fungus creature gets +1/+1 for each spore counter on it. {B}{G}, Exile a Fungus card from a graveyard: Put a spore counter on each Fungus on the battlefield.
+oracle=Each Fungus creature gets +1/+1 for each spore counter on it.\n{B}{G}, Exile a Fungus card from a graveyard: Put a spore counter on each Fungus on the battlefield.

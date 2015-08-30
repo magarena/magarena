@@ -1,13 +1,13 @@
 name=Mystic Restraints
-image=http://mtgimage.com/card/mystic%20restraints.jpg
+image=http://magiccards.info/scans/en/chk/76.jpg
 value=2.649
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{U}{U}
 ability=Flash;\
+        When SN enters the battlefield, tap enchanted creature.;\
         Enchanted creature doesn't untap during its controller's untap step.
 timing=flash
 enchant=can't attack or block,neg creature
-requires_groovy_code=Claustrophobia
-oracle=Flash. Enchant creature. When Mystic Restraints enters the battlefield, tap enchanted creature. Enchanted creature doesn't untap during its controller's untap step.
+oracle=Flash\nEnchant creature\nWhen Mystic Restraints enters the battlefield, tap enchanted creature.\nEnchanted creature doesn't untap during its controller's untap step.

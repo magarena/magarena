@@ -1,0 +1,9 @@
+name=Ghoulcaller's Bell
+image=http://magiccards.info/scans/en/isd/224.jpg
+value=2.552
+rarity=C
+type=Artifact
+cost={1}
+ability={T}: Each player puts the top card of his or her library into his or her graveyard.
+timing=artifact
+oracle={T}: Each player puts the top card of his or her library into his or her graveyard.

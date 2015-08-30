@@ -1,9 +1,9 @@
 name=Delif's Cone
-image=http://mtgimage.com/card/delif%27s%20cone.jpg
-value=2.500
+image=http://magiccards.info/scans/en/fe/169.jpg
+value=1.877
 rarity=C
 type=Artifact
 cost={0}
 ability={T}, Sacrifice SN: This turn, when target creature you control attacks and isn't blocked, you may gain life equal to its power. If you do, it assigns no combat damage this turn.
-timing=main
+timing=artifact
 oracle={T}, Sacrifice Delif's Cone: This turn, when target creature you control attacks and isn't blocked, you may gain life equal to its power. If you do, it assigns no combat damage this turn.

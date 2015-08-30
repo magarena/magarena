@@ -1,5 +1,5 @@
 name=Banishing Stroke
-image=http://mtgimage.com/card/banishing%20stroke.jpg
+image=http://magiccards.info/scans/en/avr/7.jpg
 value=3.526
 rarity=U
 type=Instant
@@ -7,4 +7,4 @@ cost={5}{W}
 ability=Miracle {W}
 timing=removal
 requires_groovy_code
-oracle=Put target artifact, creature, or enchantment on the bottom of its owner's library. Miracle {W}
+oracle=Put target artifact, creature, or enchantment on the bottom of its owner's library.\nMiracle {W}

@@ -1,11 +1,11 @@
 name=Cabal Inquisitor
-image=http://mtgimage.com/card/cabal%20inquisitor.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/119.jpg
+value=1.763
 rarity=C
 type=Creature
 subtype=Human,Minion
 cost={1}{B}
 pt=1/1
+ability={1}{B}, {T}, Exile two cards from your graveyard: Target player discards a card. Activate this ability only any time you could cast a sorcery, and only if seven or more cards are in your graveyard.
 timing=main
-requires_groovy_code
 oracle=Threshold — {1}{B}, {T}, Exile two cards from your graveyard: Target player discards a card. Activate this ability only any time you could cast a sorcery, and only if seven or more cards are in your graveyard.

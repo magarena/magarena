@@ -1,5 +1,5 @@
 name=Sprouting Vines
-image=http://mtgimage.com/card/sprouting%20vines.jpg
+image=http://magiccards.info/scans/en/c13/173.jpg
 value=2.950
 rarity=C
 type=Instant
@@ -7,4 +7,4 @@ cost={2}{G}
 ability=storm
 effect=Search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.
 timing=removal
-oracle=Search your library for a basic land card, reveal that card, and put it into your hand. Then shuffle your library. Storm
+oracle=Search your library for a basic land card, reveal that card, and put it into your hand. Then shuffle your library.\nStorm

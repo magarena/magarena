@@ -1,0 +1,10 @@
+name=Inspiring Call
+image=http://magiccards.info/scans/en/dtk/191.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={2}{G}
+effect=Draw a card for each creature you control with a +1/+1 counter on it.~\
+       Creatures you control with a +1/+1 counter on it gain indestructible until end of turn.
+timing=pump
+oracle=Draw a card for each creature you control with a +1/+1 counter on it. Those creatures gain indestructible until end of turn.

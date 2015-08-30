@@ -1,0 +1,11 @@
+name=Youthful Scholar
+image=http://magiccards.info/scans/en/dtk/84.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={3}{U}
+pt=2/2
+ability=When SN dies, draw two cards.
+timing=main
+oracle=When Youthful Scholar dies, draw two cards.

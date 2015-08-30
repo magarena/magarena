@@ -1,5 +1,5 @@
 name=Aven Brigadier
-image=http://mtgimage.com/card/aven%20brigadier.jpg
+image=http://magiccards.info/scans/en/on/7.jpg
 value=3.942
 rarity=R
 type=Creature
@@ -11,4 +11,4 @@ ability=flying;\
         other soldier creatures get +1/+1
 static=all
 timing=main
-oracle=Flying. Other Bird creatures get +1/+1. Other Soldier creatures get +1/+1.
+oracle=Flying\nOther Bird creatures get +1/+1.\nOther Soldier creatures get +1/+1.

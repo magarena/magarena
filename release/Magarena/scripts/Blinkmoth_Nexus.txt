@@ -1,11 +1,11 @@
 name=Blinkmoth Nexus
-image=http://mtgimage.com/card/blinkmoth%20nexus.jpg
+image=http://magiccards.info/scans/en/mma/220.jpg
 value=4.212
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\
+        {1}: SN becomes a 1/1 Blinkmoth artifact creature with flying until end of turn.;\
         {1}, {T}: Target Blinkmoth creature gets +1/+1 until end of turn.
 timing=land
 mana_or_combat
-requires_groovy_code
-oracle={T}: Add {1} to your mana pool. {1}: Blinkmoth Nexus becomes a 1/1 Blinkmoth artifact creature with flying until end of turn. It's still a land. {1}, {T}: Target Blinkmoth creature gets +1/+1 until end of turn.
+oracle={T}: Add {1} to your mana pool.\n{1}: Blinkmoth Nexus becomes a 1/1 Blinkmoth artifact creature with flying until end of turn. It's still a land.\n{1}, {T}: Target Blinkmoth creature gets +1/+1 until end of turn.

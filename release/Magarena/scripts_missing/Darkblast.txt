@@ -1,9 +1,9 @@
 name=Darkblast
-image=http://mtgimage.com/card/darkblast.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rav/82.jpg
+value=4.191
 rarity=U
 type=Instant
 cost={B}
 effect=Target creature gets -1/-1 until end of turn.~Dredge 3
 timing=removal
-oracle=Target creature gets -1/-1 until end of turn. Dredge 3
+oracle=Target creature gets -1/-1 until end of turn.\nDredge 3

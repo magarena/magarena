@@ -1,9 +1,9 @@
 name=Soulblast
-image=http://mtgimage.com/card/soulblast.jpg
-value=2.500
+image=http://magiccards.info/scans/en/10e/236.jpg
+value=3.940
 rarity=R
 type=Instant
 cost={3}{R}{R}{R}
 effect=As an additional cost to cast SN, sacrifice all creatures you control.~SN deals damage to target creature or player equal to the total power of the sacrificed creatures.
 timing=removal
-oracle=As an additional cost to cast Soulblast, sacrifice all creatures you control. Soulblast deals damage to target creature or player equal to the total power of the sacrificed creatures.
+oracle=As an additional cost to cast Soulblast, sacrifice all creatures you control.\nSoulblast deals damage to target creature or player equal to the total power of the sacrificed creatures.

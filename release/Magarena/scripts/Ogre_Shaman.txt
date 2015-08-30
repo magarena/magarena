@@ -1,5 +1,5 @@
 name=Ogre Shaman
-image=http://mtgimage.com/card/ogre%20shaman.jpg
+image=http://magiccards.info/scans/en/ex/91.jpg
 value=2.922
 rarity=R
 type=Creature

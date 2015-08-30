@@ -1,6 +1,6 @@
 name=Qasali Ambusher
-image=http://mtgimage.com/card/qasali%20ambusher.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ala/184.jpg
+value=3.746
 rarity=U
 type=Creature
 subtype=Cat,Warrior
@@ -9,4 +9,4 @@ pt=2/3
 ability=Reach;\
         If a creature is attacking you and you control a Forest and a Plains, you may cast SN without paying its mana cost and as though it had flash.
 timing=main
-oracle=Reach. If a creature is attacking you and you control a Forest and a Plains, you may cast Qasali Ambusher without paying its mana cost and as though it had flash.
+oracle=Reach\nIf a creature is attacking you and you control a Forest and a Plains, you may cast Qasali Ambusher without paying its mana cost and as though it had flash.

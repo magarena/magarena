@@ -1,0 +1,11 @@
+name=Granite Grip
+image=http://magiccards.info/scans/en/7e/195.jpg
+value=3.086
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{R}
+ability=Enchanted creature gets +1/+0 for each Mountain you control.
+timing=aura
+enchant=pump,pos creature
+oracle=Enchant creature\nEnchanted creature gets +1/+0 for each Mountain you control.

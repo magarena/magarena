@@ -1,11 +1,11 @@
 name=Loyal Sentry
-image=http://mtgimage.com/card/loyal%20sentry.jpg
+image=http://magiccards.info/scans/en/ddf/5.jpg
 value=4.214
 rarity=R
 type=Creature
 subtype=Human,Soldier
 cost={W}
 pt=1/1
+ability=When SN blocks a creature, destroy that creature.~Destroy SN.
 timing=main
-requires_groovy_code
 oracle=When Loyal Sentry blocks a creature, destroy that creature and Loyal Sentry.

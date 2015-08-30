@@ -1,5 +1,5 @@
 name=Temur Banner
-image=http://mtgimage.com/card/temur%20banner.jpg
+image=http://magiccards.info/scans/en/ktk/226.jpg
 value=2.500
 rarity=C
 type=Artifact
@@ -7,4 +7,4 @@ cost={3}
 ability={T}: Add {G} or {U} or {R} to your mana pool.;\
         {G}{U}{R}, {T}, Sacrifice SN: Draw a card.
 timing=artifact
-oracle={T}: Add {G}, {U}, or {R} to your mana pool. {G}{U}{R}, {T}, Sacrifice Temur Banner: Draw a card.
+oracle={T}: Add {G}, {U}, or {R} to your mana pool.\n{G}{U}{R}, {T}, Sacrifice Temur Banner: Draw a card.

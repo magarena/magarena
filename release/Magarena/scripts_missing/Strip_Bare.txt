@@ -1,6 +1,6 @@
 name=Strip Bare
-image=http://mtgimage.com/card/strip%20bare.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/24.jpg
+value=2.630
 rarity=C
 type=Instant
 cost={W}

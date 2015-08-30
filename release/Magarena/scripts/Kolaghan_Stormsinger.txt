@@ -1,0 +1,13 @@
+name=Kolaghan Stormsinger
+image=http://magiccards.info/scans/en/dtk/145.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Shaman
+cost={R}
+pt=1/1
+ability=Haste;\
+        Megamorph {R};\
+        When SN is turned face up, target creature gains haste until end of turn.
+timing=fmain
+oracle=Haste\nMegamorph {R}\nWhen Kolaghan Stormsinger is turned face up, target creature gains haste until end of turn.

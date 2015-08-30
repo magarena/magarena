@@ -1,0 +1,9 @@
+name=Filigree Fracture
+image=http://magiccards.info/scans/en/cfx/82.jpg
+value=2.671
+rarity=U
+type=Instant
+cost={2}{G}
+timing=removal
+requires_groovy_code
+oracle=Destroy target artifact or enchantment. If that permanent was blue or black, draw a card.

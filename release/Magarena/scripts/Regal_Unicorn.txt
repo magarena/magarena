@@ -1,5 +1,5 @@
 name=Regal Unicorn
-image=http://mtgimage.com/card/regal%20unicorn.jpg
+image=http://magiccards.info/scans/en/6e/35.jpg
 value=2.333
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Unicorn
 cost={2}{W}
 pt=2/3
 timing=main
+oracle=NONE

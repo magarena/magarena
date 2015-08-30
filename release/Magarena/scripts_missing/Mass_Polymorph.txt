@@ -1,6 +1,6 @@
 name=Mass Polymorph
-image=http://mtgimage.com/card/mass%20polymorph.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m11/64.jpg
+value=4.044
 rarity=R
 type=Sorcery
 cost={5}{U}

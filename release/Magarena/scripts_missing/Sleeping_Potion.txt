@@ -1,6 +1,6 @@
 name=Sleeping Potion
-image=http://mtgimage.com/card/sleeping%20potion.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ps/34.jpg
+value=3.188
 rarity=C
 type=Enchantment
 subtype=Aura
@@ -9,5 +9,5 @@ ability=Enchant creature;\
         When SN enters the battlefield, tap enchanted creature.;\
         Enchanted creature doesn't untap during its controller's untap step.;\
         When enchanted creature becomes the target of a spell or ability, sacrifice SN.
-timing=main
-oracle=Enchant creature. When Sleeping Potion enters the battlefield, tap enchanted creature. Enchanted creature doesn't untap during its controller's untap step. When enchanted creature becomes the target of a spell or ability, sacrifice Sleeping Potion.
+timing=aura
+oracle=Enchant creature\nWhen Sleeping Potion enters the battlefield, tap enchanted creature.\nEnchanted creature doesn't untap during its controller's untap step.\nWhen enchanted creature becomes the target of a spell or ability, sacrifice Sleeping Potion.

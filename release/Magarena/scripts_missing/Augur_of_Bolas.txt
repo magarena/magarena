@@ -1,6 +1,6 @@
 name=Augur of Bolas
-image=http://mtgimage.com/card/augur%20of%20bolas.jpg
-value=2.500
+image=http://magiccards.info/scans/en/c13/30.jpg
+value=3.971
 rarity=U
 type=Creature
 subtype=Merfolk,Wizard

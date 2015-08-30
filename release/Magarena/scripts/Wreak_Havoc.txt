@@ -1,5 +1,5 @@
 name=Wreak Havoc
-image=http://mtgimage.com/card/wreak%20havoc.jpg
+image=http://magiccards.info/scans/en/gp/139.jpg
 value=3.340
 removal=4
 rarity=U
@@ -8,4 +8,4 @@ cost={2}{R}{G}
 ability=SN can't be countered by spells or abilities.
 timing=main
 effect=Destroy target artifact or land.
-oracle=Wreak Havoc can't be countered by spells or abilities. Destroy target artifact or land.
+oracle=Wreak Havoc can't be countered by spells or abilities.\nDestroy target artifact or land.

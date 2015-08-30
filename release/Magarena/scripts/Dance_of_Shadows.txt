@@ -1,10 +1,11 @@
 name=Dance of Shadows
-image=http://mtgimage.com/card/dance%20of%20shadows.jpg
+image=http://magiccards.info/scans/en/chk/108.jpg
 value=1.786
 rarity=U
 type=Sorcery
 subtype=Arcane
 cost={3}{B}{B}
+ability=Cast SN with AI only if you control a creature.
+effect=Creatures you control get +1/+0 and gain fear until end of turn.
 timing=main
-requires_groovy_code
 oracle=Creatures you control get +1/+0 and gain fear until end of turn.

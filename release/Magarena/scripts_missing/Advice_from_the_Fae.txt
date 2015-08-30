@@ -1,6 +1,6 @@
 name=Advice from the Fae
-image=http://mtgimage.com/card/advice%20from%20the%20fae.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/28.jpg
+value=2.694
 rarity=U
 type=Sorcery
 cost={2/U}{2/U}{2/U}

@@ -1,5 +1,5 @@
 name=Cloudgoat Ranger
-image=http://mtgimage.com/card/cloudgoat%20ranger.jpg
+image=http://magiccards.info/scans/en/mma/10.jpg
 value=3.763
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=When SN enters the battlefield, put three 1/1 white Kithkin Soldier creature tokens onto the battlefield.;\
         Tap three untapped Kithkin you control: SN gets +2/+0 and gains flying until end of turn.
 timing=main
-oracle=When Cloudgoat Ranger enters the battlefield, put three 1/1 white Kithkin Soldier creature tokens onto the battlefield. Tap three untapped Kithkin you control: Cloudgoat Ranger gets +2/+0 and gains flying until end of turn.
+oracle=When Cloudgoat Ranger enters the battlefield, put three 1/1 white Kithkin Soldier creature tokens onto the battlefield.\nTap three untapped Kithkin you control: Cloudgoat Ranger gets +2/+0 and gains flying until end of turn.

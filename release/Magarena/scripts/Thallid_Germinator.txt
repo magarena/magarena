@@ -1,5 +1,5 @@
 name=Thallid Germinator
-image=http://mtgimage.com/card/thallid%20germinator.jpg
+image=http://magiccards.info/scans/en/mma/168.jpg
 value=3.462
 rarity=C
 type=Creature
@@ -10,4 +10,4 @@ ability=At the beginning of your upkeep, put a spore counter on SN.;\
         Sacrifice a Saproling: Target creature gets +1/+1 until end of turn.;\
         Remove three spore counters from SN: Put a 1/1 green Saproling creature token onto the battlefield.
 timing=main
-oracle=At the beginning of your upkeep, put a spore counter on Thallid Germinator. Remove three spore counters from Thallid Germinator: Put a 1/1 green Saproling creature token onto the battlefield. Sacrifice a Saproling: Target creature gets +1/+1 until end of turn.
+oracle=At the beginning of your upkeep, put a spore counter on Thallid Germinator.\nRemove three spore counters from Thallid Germinator: Put a 1/1 green Saproling creature token onto the battlefield.\nSacrifice a Saproling: Target creature gets +1/+1 until end of turn.

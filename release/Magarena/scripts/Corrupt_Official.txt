@@ -1,12 +1,12 @@
 name=Corrupt Official
-image=http://mtgimage.com/card/corrupt%20official.jpg
+image=http://magiccards.info/scans/en/mm/128.jpg
 value=2.632
 rarity=R
 type=Creature
 subtype=Human,Minion
 cost={4}{B}
 pt=3/1
+ability={2}{B}: Regenerate SN.;\
+        Whenever SN becomes blocked, defending player discards a card at random.
 timing=main
-ability={2}{B}: Regenerate SN.
-requires_groovy_code
-oracle={2}{B}: Regenerate Corrupt Official. Whenever Corrupt Official becomes blocked, defending player discards a card at random.
+oracle={2}{B}: Regenerate Corrupt Official.\nWhenever Corrupt Official becomes blocked, defending player discards a card at random.

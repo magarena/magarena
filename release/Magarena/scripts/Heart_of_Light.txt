@@ -1,0 +1,11 @@
+name=Heart of Light
+image=http://magiccards.info/scans/en/10e/19.jpg
+value=2.878
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{W}
+timing=aura
+enchant=can't attack,creature
+requires_groovy_code
+oracle=Enchant creature\nPrevent all damage that would be dealt to and dealt by enchanted creature.

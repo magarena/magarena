@@ -1,6 +1,6 @@
 name=Lone Revenant
-image=http://mtgimage.com/card/lone%20revenant.jpg
-value=2.500
+image=http://magiccards.info/scans/en/avr/64.jpg
+value=3.712
 rarity=R
 type=Creature
 subtype=Spirit
@@ -9,4 +9,4 @@ pt=4/4
 ability=Hexproof;\
         Whenever SN deals combat damage to a player, if you control no other creatures, look at the top four cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order.
 timing=main
-oracle=Hexproof. Whenever Lone Revenant deals combat damage to a player, if you control no other creatures, look at the top four cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order.
+oracle=Hexproof\nWhenever Lone Revenant deals combat damage to a player, if you control no other creatures, look at the top four cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order.

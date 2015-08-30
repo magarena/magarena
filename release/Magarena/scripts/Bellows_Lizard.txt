@@ -1,11 +1,11 @@
 name=Bellows Lizard
-image=http://mtgimage.com/card/bellows%20lizard.jpg
-value=2.081
+image=http://magiccards.info/scans/en/ori/132.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Lizard
-ability={1}{R}: SN gets +1/+0 until end of turn.
 cost={R}
 pt=1/1
+ability={1}{R}: SN gets +1/+0 until end of turn.
 timing=main
 oracle={1}{R}: Bellows Lizard gets +1/+0 until end of turn.

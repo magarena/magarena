@@ -1,11 +1,11 @@
 name=Myr Adapter
-image=http://mtgimage.com/card/myr%20adapter.jpg
+image=http://magiccards.info/scans/en/mi/210.jpg
 value=2.527
 rarity=C
 type=Artifact,Creature
 subtype=Myr
 cost={3}
 pt=1/1
+ability=SN gets +1/+1 for each Equipment attached to it.
 timing=main
-requires_groovy_code
 oracle=Myr Adapter gets +1/+1 for each Equipment attached to it.

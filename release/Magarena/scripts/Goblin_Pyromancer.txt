@@ -1,5 +1,5 @@
 name=Goblin Pyromancer
-image=http://mtgimage.com/card/goblin%20pyromancer.jpg
+image=http://magiccards.info/scans/en/on/206.jpg
 value=3.551
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=When SN enters the battlefield, Goblin creatures get +3/+0 until end of turn.;\
         At the beginning of the end step, destroy all Goblins.
 timing=fmain
-oracle=When Goblin Pyromancer enters the battlefield, Goblin creatures get +3/+0 until end of turn. At the beginning of the end step, destroy all Goblins.
+oracle=When Goblin Pyromancer enters the battlefield, Goblin creatures get +3/+0 until end of turn.\nAt the beginning of the end step, destroy all Goblins.

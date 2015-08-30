@@ -1,9 +1,9 @@
 name=Prahv, Spires of Order
-image=http://mtgimage.com/card/prahv%2C%20spires%20of%20order.jpg
-value=2.500
+image=http://magiccards.info/scans/en/di/177.jpg
+value=2.978
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\
         {4}{W}{U}, {T}: Prevent all damage a source of your choice would deal this turn.
-timing=main
-oracle={T}: Add {1} to your mana pool. {4}{W}{U}, {T}: Prevent all damage a source of your choice would deal this turn.
+timing=land
+oracle={T}: Add {1} to your mana pool.\n{4}{W}{U}, {T}: Prevent all damage a source of your choice would deal this turn.

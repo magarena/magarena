@@ -1,0 +1,9 @@
+name=Blessed Reincarnation
+image=http://magiccards.info/scans/en/dtk/47.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={3}{U}
+effect=Exile target creature an opponent controls. That player reveals cards from the top of his or her library until a creature card is revealed. The player puts that card onto the battlefield, then shuffles the rest into his or her library.~Rebound
+timing=removal
+oracle=Exile target creature an opponent controls. That player reveals cards from the top of his or her library until a creature card is revealed. The player puts that card onto the battlefield, then shuffles the rest into his or her library.\nRebound

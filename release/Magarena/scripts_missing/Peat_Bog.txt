@@ -1,9 +1,9 @@
 name=Peat Bog
-image=http://mtgimage.com/card/peat%20bog.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/322.jpg
+value=3.712
 rarity=C
 type=Land
 ability=SN enters the battlefield tapped with two depletion counters on it.;\
         {T}, Remove a depletion counter from SN: Add {B}{B} to your mana pool. If there are no depletion counters on SN, sacrifice it.
-timing=main
-oracle=Peat Bog enters the battlefield tapped with two depletion counters on it. {T}, Remove a depletion counter from Peat Bog: Add {B}{B} to your mana pool. If there are no depletion counters on Peat Bog, sacrifice it.
+timing=land
+oracle=Peat Bog enters the battlefield tapped with two depletion counters on it.\n{T}, Remove a depletion counter from Peat Bog: Add {B}{B} to your mana pool. If there are no depletion counters on Peat Bog, sacrifice it.

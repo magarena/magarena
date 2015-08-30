@@ -1,10 +1,10 @@
 name=Cloudform
-image=http://mtgimage.com/card/cloudform.jpg
+image=http://magiccards.info/scans/en/frf/32.jpg
 value=2.500
 rarity=U
 type=Enchantment
 cost={1}{U}{U}
 ability=When SN enters the battlefield, it becomes an Aura with enchant creature. Manifest the top card of your library and attach SN to it.;\
         Enchanted creature has flying and hexproof.
-timing=main
-oracle=When Cloudform enters the battlefield, it becomes an Aura with enchant creature. Manifest the top card of your library and attach Cloudform to it. Enchanted creature has flying and hexproof.
+timing=enchantment
+oracle=When Cloudform enters the battlefield, it becomes an Aura with enchant creature. Manifest the top card of your library and attach Cloudform to it.\nEnchanted creature has flying and hexproof.

@@ -1,9 +1,10 @@
 name=Hideous Visage
-image=http://mtgimage.com/card/hideous%20visage.jpg
+image=http://magiccards.info/scans/en/m12/100.jpg
 value=2.703
 rarity=C
 type=Sorcery
 cost={2}{B}
+ability=Cast SN with AI only if you control a creature.
 effect=Creatures you control gain intimidate until end of turn.
-timing=pump
+timing=fmain
 oracle=Creatures you control gain intimidate until end of turn.

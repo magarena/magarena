@@ -1,6 +1,6 @@
 name=Void Stalker
-image=http://mtgimage.com/card/void%20stalker.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m13/77.jpg
+value=3.857
 rarity=R
 type=Creature
 subtype=Elemental

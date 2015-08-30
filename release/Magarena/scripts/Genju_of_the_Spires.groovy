@@ -22,13 +22,8 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
 };
 [
     new MagicPermanentActivation(
-        [
-            new MagicArtificialCondition(
-                MagicConditionFactory.ManaCost("{3}")
-            )
-        ],
         new MagicActivationHints(MagicTiming.Animate),
-        "Animate"
+        "Becomes"
     ) {
 
         @Override
@@ -39,24 +34,22 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
+                source,
                 source.getEnchantedPermanent(),
                 this,
-                "SN becomes a 6/1 red Spirit creature until end of turn." +
+                "RN becomes a 6/1 red Spirit creature until end of turn." +
                 "It's still a land."
             );
         }
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,ST,LC));
+            game.doAction(new BecomesCreatureAction(event.getRefPermanent(),PT,ST,LC));
         }
     },
     new MagicWhenOtherDiesTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicPermanent died) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent died) {
             return (permanent.getEnchantedPermanent() == died) ?
                 new MagicEvent(
                     permanent,
@@ -68,11 +61,11 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicCard card = event.getRefCard();
-            if (card.isInGraveyard()) {
-                game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-                game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
-            }
+            game.doAction(new ShiftCardAction(
+                event.getRefCard(),
+                MagicLocationType.Graveyard,
+                MagicLocationType.OwnersHand
+            ));
         }
     }
 ]

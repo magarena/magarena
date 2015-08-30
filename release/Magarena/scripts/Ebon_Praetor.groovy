@@ -7,7 +7,7 @@
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_CREATURE),
+                new MagicSacrificePermanentEvent(source,SACRIFICE_CREATURE),
                 new MagicPlayAbilityEvent(source)
             ];
         }
@@ -25,13 +25,13 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeCountersAction(
+            game.doAction(new ChangeCountersAction(
                 event.getPermanent(),
                 MagicCounterType.MinusTwo,
                 -1
             ));
             if (event.getRefPermanent().hasSubType(MagicSubType.Thrull)) { 
-                game.doAction(new MagicChangeCountersAction(
+                game.doAction(new ChangeCountersAction(
                     event.getPermanent(),
                     MagicCounterType.PlusOnePlusZero,
                     1

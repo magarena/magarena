@@ -1,5 +1,5 @@
 name=Veldt
-image=http://mtgimage.com/card/veldt.jpg
+image=http://magiccards.info/scans/en/ia/358.jpg
 value=2.400
 rarity=R
 type=Land
@@ -8,4 +8,4 @@ ability=At the beginning of your upkeep, remove a depletion counter from SN.;\
         {T}: Add {G} or {W} to your mana pool. Put a depletion counter on SN.
 timing=main
 requires_groovy_code=Land Cap
-oracle=Veldt doesn't untap during your untap step if it has a depletion counter on it. At the beginning of your upkeep, remove a depletion counter from Veldt. {T}: Add {G} or {W} to your mana pool. Put a depletion counter on Veldt.
+oracle=Veldt doesn't untap during your untap step if it has a depletion counter on it.\nAt the beginning of your upkeep, remove a depletion counter from Veldt.\n{T}: Add {G} or {W} to your mana pool. Put a depletion counter on Veldt.

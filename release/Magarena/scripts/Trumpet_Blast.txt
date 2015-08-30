@@ -1,5 +1,5 @@
 name=Trumpet Blast
-image=http://mtgimage.com/card/trumpet%20blast.jpg
+image=http://magiccards.info/scans/en/ktk/124.jpg
 value=2.750
 rarity=C
 type=Instant

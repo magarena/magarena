@@ -1,0 +1,10 @@
+name=Roar of Reclamation
+image=http://magiccards.info/scans/en/5dn/14.jpg
+value=3.574
+rarity=R
+type=Sorcery
+cost={5}{W}{W}
+ability=Cast SN with AI only if you have an artifact card in your graveyard.
+timing=main
+requires_groovy_code
+oracle=Each player returns all artifact cards from his or her graveyard to the battlefield.

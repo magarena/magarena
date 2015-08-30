@@ -1,10 +1,10 @@
 name=Mizzium Transreliquat
-image=http://mtgimage.com/card/mizzium%20transreliquat.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gp/153.jpg
+value=4.200
 rarity=R
 type=Artifact
 cost={3}
 ability={3}: SN becomes a copy of target artifact until end of turn.;\
         {1}{U}{R}: SN becomes a copy of target artifact and gains this ability.
-timing=main
-oracle={3}: Mizzium Transreliquat becomes a copy of target artifact until end of turn. {1}{U}{R}: Mizzium Transreliquat becomes a copy of target artifact and gains this ability.
+timing=artifact
+oracle={3}: Mizzium Transreliquat becomes a copy of target artifact until end of turn.\n{1}{U}{R}: Mizzium Transreliquat becomes a copy of target artifact and gains this ability.

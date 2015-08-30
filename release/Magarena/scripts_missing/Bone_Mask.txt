@@ -1,9 +1,9 @@
 name=Bone Mask
-image=http://mtgimage.com/card/bone%20mask.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/260.jpg
+value=2.594
 rarity=R
 type=Artifact
 cost={4}
 ability={2}, {T}: The next time a source of your choice would deal damage to you this turn, prevent that damage. Exile cards from the top of your library equal to the damage prevented this way.
-timing=main
+timing=artifact
 oracle={2}, {T}: The next time a source of your choice would deal damage to you this turn, prevent that damage. Exile cards from the top of your library equal to the damage prevented this way.

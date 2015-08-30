@@ -1,6 +1,6 @@
 name=Quagnoth
-image=http://mtgimage.com/card/quagnoth.jpg
-value=2.500
+image=http://magiccards.info/scans/en/fut/150.jpg
+value=3.836
 rarity=R
 type=Creature
 subtype=Beast
@@ -10,4 +10,4 @@ ability=Split second;\
         Shroud;\
         When a spell or ability an opponent controls causes you to discard SN, return it to your hand.
 timing=main
-oracle=Split second. Shroud. When a spell or ability an opponent controls causes you to discard Quagnoth, return it to your hand.
+oracle=Split second\nShroud\nWhen a spell or ability an opponent controls causes you to discard Quagnoth, return it to your hand.

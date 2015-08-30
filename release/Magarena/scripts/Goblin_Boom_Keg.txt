@@ -1,0 +1,10 @@
+name=Goblin Boom Keg
+image=http://magiccards.info/scans/en/frf/159.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={4}
+ability=At the beginning of your upkeep, sacrifice SN.
+timing=artifact
+requires_groovy_code
+oracle=At the beginning of your upkeep, sacrifice Goblin Boom Keg.\nWhen Goblin Boom Keg is put into a graveyard from the battlefield, it deals 3 damage to target creature or player.

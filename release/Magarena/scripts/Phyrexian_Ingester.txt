@@ -1,11 +1,12 @@
 name=Phyrexian Ingester
-image=http://mtgimage.com/card/phyrexian%20ingester.jpg
+image=http://magiccards.info/scans/en/c14/119.jpg
 value=3.685
 rarity=R
 type=Creature
 subtype=Beast
 cost={6}{U}
 pt=3/3
+ability=When SN enters the battlefield, you may exile another target nontoken creature.
 timing=main
 requires_groovy_code
-oracle=Imprint — When Phyrexian Ingester enters the battlefield, you may exile target nontoken creature. Phyrexian Ingester gets +X/+Y, where X is the exiled creature card's power and Y is its toughness.
+oracle=Imprint — When Phyrexian Ingester enters the battlefield, you may exile target nontoken creature.\nPhyrexian Ingester gets +X/+Y, where X is the exiled creature card's power and Y is its toughness.

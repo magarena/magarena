@@ -1,5 +1,5 @@
 name=Cavalry Pegasus
-image=http://mtgimage.com/card/cavalry%20pegasus.jpg
+image=http://magiccards.info/scans/en/ths/2.jpg
 value=3.342
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=flying;\
         Whenever SN attacks, attacking Humans gain flying until end of turn.
 timing=main
-oracle=Flying. Whenever Cavalry Pegasus attacks, each attacking Human gains flying until end of turn.
+oracle=Flying\nWhenever Cavalry Pegasus attacks, each attacking Human gains flying until end of turn.

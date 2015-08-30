@@ -1,9 +1,0 @@
-name=Rally the Righteous
-image=http://mtgimage.com/card/rally%20the%20righteous.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={1}{R}{W}
-effect=Untap target creature and each other creature that shares a color with it. Those creatures get +2/+0 until end of turn.
-timing=removal
-oracle=Radiance — Untap target creature and each other creature that shares a color with it. Those creatures get +2/+0 until end of turn.

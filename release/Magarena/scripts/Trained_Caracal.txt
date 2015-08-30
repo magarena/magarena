@@ -1,5 +1,5 @@
 name=Trained Caracal
-image=http://mtgimage.com/card/trained%20caracal.jpg
+image=http://magiccards.info/scans/en/rtr/27.jpg
 value=2.711
 ability=lifelink
 rarity=C

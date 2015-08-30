@@ -1,10 +1,10 @@
 name=Null Chamber
-image=http://mtgimage.com/card/null%20chamber.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/235.jpg
+value=3.293
 rarity=R
 type=World,Enchantment
 cost={3}{W}
 ability=As SN enters the battlefield, you and an opponent each name a card other than a basic land card.;\
         The named cards can't be played.
-timing=main
-oracle=As Null Chamber enters the battlefield, you and an opponent each name a card other than a basic land card. The named cards can't be played.
+timing=enchantment
+oracle=As Null Chamber enters the battlefield, you and an opponent each name a card other than a basic land card.\nThe named cards can't be played.

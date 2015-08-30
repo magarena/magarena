@@ -1,7 +1,7 @@
 [
     new MagicCDA() {
         @Override
-        public void modPowerToughness(final MagicGame game,final MagicPlayer player,final MagicPowerToughness pt) {
+        public void modPowerToughness(final MagicGame game, final MagicPlayer player, final MagicPermanent permanent, final MagicPowerToughness pt) {
             final MagicCardList cardList = new MagicCardList(player.getGraveyard());
             cardList.addAll(player.getOpponent().getGraveyard());
             int types = 0;

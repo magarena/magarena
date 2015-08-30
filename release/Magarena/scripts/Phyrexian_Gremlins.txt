@@ -1,5 +1,5 @@
 name=Phyrexian Gremlins
-image=http://mtgimage.com/card/phyrexian%20gremlins.jpg
+image=http://magiccards.info/scans/en/aq/48.jpg
 value=3.542
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=You may choose not to untap SN during your untap step.
 timing=main
 requires_groovy_code
-oracle=You may choose not to untap Phyrexian Gremlins during your untap step. {T}: Tap target artifact. It doesn't untap during its controller's untap step for as long as Phyrexian Gremlins remains tapped.
+oracle=You may choose not to untap Phyrexian Gremlins during your untap step.\n{T}: Tap target artifact. It doesn't untap during its controller's untap step for as long as Phyrexian Gremlins remains tapped.

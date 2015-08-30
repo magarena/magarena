@@ -1,5 +1,5 @@
 name=Mogis, God of Slaughter
-image=http://mtgimage.com/card/mogis%2C%20god%20of%20slaughter.jpg
+image=http://magiccards.info/scans/en/bng/151.jpg
 value=3.834
 rarity=M
 type=Legendary,Enchantment,Creature
@@ -9,4 +9,4 @@ pt=7/5
 ability=indestructible
 timing=main
 requires_groovy_code
-oracle=Indestructible. As long as your devotion to black and red is less than seven, Mogis isn't a creature. At the beginning of each opponent's upkeep, Mogis deals 2 damage to that player unless he or she sacrifices a creature.
+oracle=Indestructible\nAs long as your devotion to black and red is less than seven, Mogis isn't a creature.\nAt the beginning of each opponent's upkeep, Mogis deals 2 damage to that player unless he or she sacrifices a creature.

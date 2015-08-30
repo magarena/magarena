@@ -1,5 +1,5 @@
 name=Pulse Tracker
-image=http://mtgimage.com/card/pulse%20tracker.jpg
+image=http://magiccards.info/scans/en/ddm/43.jpg
 value=3.475
 rarity=C
 type=Creature

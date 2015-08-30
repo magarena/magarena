@@ -1,0 +1,9 @@
+name=Dwarven Armory
+image=http://magiccards.info/scans/en/ia/182.jpg
+value=3.000
+rarity=R
+type=Enchantment
+cost={2}{R}{R}
+timing=enchantment
+requires_groovy_code
+oracle={2}, Sacrifice a land: Put a +2/+2 counter on target creature. Activate this ability only during any upkeep step.

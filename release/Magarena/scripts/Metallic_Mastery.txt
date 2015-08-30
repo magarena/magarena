@@ -1,9 +1,9 @@
 name=Metallic Mastery
-image=http://mtgimage.com/card/metallic%20mastery.jpg
+image=http://magiccards.info/scans/en/mbs/71.jpg
 value=2.762
 rarity=U
 type=Sorcery
 cost={2}{R}
+effect=Gain control of target artifact until end of turn.~Untap *that artifact*.~*It* gains haste until end of turn.
 timing=main
-requires_groovy_code
 oracle=Gain control of target artifact until end of turn. Untap that artifact. It gains haste until end of turn.

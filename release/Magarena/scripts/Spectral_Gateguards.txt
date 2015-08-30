@@ -1,5 +1,5 @@
 name=Spectral Gateguards
-image=http://mtgimage.com/card/spectral%20gateguards.jpg
+image=http://magiccards.info/scans/en/avr/37.jpg
 value=2.172
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/5
 ability=Soulbond;\
         As long as SN is paired with another creature, both creatures have vigilance.
 timing=main
-oracle=Soulbond. As long as Spectral Gateguards is paired with another creature, both creatures have vigilance.
+oracle=Soulbond\nAs long as Spectral Gateguards is paired with another creature, both creatures have vigilance.

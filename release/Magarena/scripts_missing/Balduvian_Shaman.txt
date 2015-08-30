@@ -1,6 +1,6 @@
 name=Balduvian Shaman
-image=http://mtgimage.com/card/balduvian%20shaman.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ia/59.jpg
+value=1.961
 rarity=C
 type=Creature
 subtype=Human,Cleric,Shaman

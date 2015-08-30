@@ -1,5 +1,5 @@
 name=Walking Dead
-image=http://mtgimage.com/card/walking%20dead.jpg
+image=http://magiccards.info/scans/en/lg/40.jpg
 value=3.895
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Dungrove Elder
-image=http://mtgimage.com/card/dungrove%20elder.jpg
+image=http://magiccards.info/scans/en/m12/171.jpg
 value=4.189
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=*/*
 ability=hexproof;\
         SN's power and toughness are each equal to the number of Forests you control.
 timing=smain
-oracle=Hexproof. Dungrove Elder's power and toughness are each equal to the number of Forests you control.
+oracle=Hexproof\nDungrove Elder's power and toughness are each equal to the number of Forests you control.

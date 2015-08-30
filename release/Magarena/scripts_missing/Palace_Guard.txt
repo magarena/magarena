@@ -1,6 +1,6 @@
 name=Palace Guard
-image=http://mtgimage.com/card/palace%20guard.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m11/24.jpg
+value=3.445
 rarity=C
 type=Creature
 subtype=Human,Soldier

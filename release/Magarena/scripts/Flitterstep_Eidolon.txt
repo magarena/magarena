@@ -1,5 +1,5 @@
 name=Flitterstep Eidolon
-image=http://mtgimage.com/card/flitterstep%20eidolon.jpg
+image=http://magiccards.info/scans/en/bng/40.jpg
 value=3.056
 rarity=U
 type=Enchantment,Creature
@@ -10,4 +10,4 @@ ability=Bestow {5}{U};\
         SN can't be blocked.;\
         Enchanted creature gets +1/+1 and can't be blocked.
 timing=main
-oracle=Bestow {5}{U}. Flitterstep Eidolon can't be blocked. Enchanted creature gets +1/+1 and can't be blocked.
+oracle=Bestow {5}{U}\nFlitterstep Eidolon can't be blocked.\nEnchanted creature gets +1/+1 and can't be blocked.

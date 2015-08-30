@@ -1,9 +1,9 @@
 name=Cached Defenses
-image=http://mtgimage.com/card/cached%20defenses.jpg
+image=http://magiccards.info/scans/en/frf/126.jpg
 value=2.500
 rarity=U
 type=Sorcery
 cost={2}{G}
 effect=Bolster 3.
-timing=pump
+timing=fmain
 oracle=Bolster 3.

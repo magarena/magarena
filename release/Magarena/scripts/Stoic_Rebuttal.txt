@@ -1,0 +1,10 @@
+name=Stoic Rebuttal
+image=http://magiccards.info/scans/en/som/46.jpg
+value=3.803
+rarity=C
+type=Instant
+cost={1}{U}{U}
+effect=Counter target spell.
+timing=counter
+requires_groovy_code
+oracle=Metalcraft — Stoic Rebuttal costs {1} less to cast if you control three or more artifacts.\nCounter target spell.

@@ -1,6 +1,6 @@
 name=Hypnotic Siren
-image=http://mtgimage.com/card/hypnotic%20siren.jpg
-value=2.500
+image=http://magiccards.info/scans/en/jou/42.jpg
+value=3.704
 rarity=R
 type=Enchantment,Creature
 subtype=Siren
@@ -10,5 +10,5 @@ ability=Bestow {5}{U}{U};\
         Flying;\
         You control enchanted creature.;\
         Enchanted creature gets +1/+1 and has flying.
-timing=main
-oracle=Bestow {5}{U}{U}. Flying. You control enchanted creature. Enchanted creature gets +1/+1 and has flying.
+timing=enchantment
+oracle=Bestow {5}{U}{U}\nFlying\nYou control enchanted creature.\nEnchanted creature gets +1/+1 and has flying.

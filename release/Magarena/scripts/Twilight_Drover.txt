@@ -1,5 +1,5 @@
 name=Twilight Drover
-image=http://mtgimage.com/card/twilight%20drover.jpg
+image=http://magiccards.info/scans/en/ddk/9.jpg
 value=3.529
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=Whenever a creature token leaves the battlefield, put a +1/+1 counter on SN.;\
         {2}{W}, Remove a +1/+1 counter from SN: Put two 1/1 white Spirit creature tokens with flying onto the battlefield.
 timing=main
-oracle=Whenever a creature token leaves the battlefield, put a +1/+1 counter on Twilight Drover. {2}{W}, Remove a +1/+1 counter from Twilight Drover: Put two 1/1 white Spirit creature tokens with flying onto the battlefield.
+oracle=Whenever a creature token leaves the battlefield, put a +1/+1 counter on Twilight Drover.\n{2}{W}, Remove a +1/+1 counter from Twilight Drover: Put two 1/1 white Spirit creature tokens with flying onto the battlefield.

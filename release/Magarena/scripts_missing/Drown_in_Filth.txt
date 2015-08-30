@@ -1,6 +1,6 @@
 name=Drown in Filth
-image=http://mtgimage.com/card/drown%20in%20filth.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dgm/67.jpg
+value=3.564
 rarity=C
 type=Sorcery
 cost={B}{G}

@@ -1,5 +1,5 @@
 name=Magmaw
-image=http://mtgimage.com/card/magmaw.jpg
+image=http://magiccards.info/scans/en/roe/158.jpg
 value=2.990
 rarity=R
 type=Creature

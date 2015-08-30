@@ -1,6 +1,6 @@
 name=Time Elemental
-image=http://mtgimage.com/card/time%20elemental.jpg
-value=2.500
+image=http://magiccards.info/scans/en/med/53.jpg
+value=3.420
 rarity=R
 type=Creature
 subtype=Elemental
@@ -9,4 +9,4 @@ pt=0/2
 ability=When SN attacks or blocks, at end of combat, sacrifice it and it deals 5 damage to you.;\
         {2}{U}{U}, {T}: Return target permanent that isn't enchanted to its owner's hand.
 timing=main
-oracle=When Time Elemental attacks or blocks, at end of combat, sacrifice it and it deals 5 damage to you. {2}{U}{U}, {T}: Return target permanent that isn't enchanted to its owner's hand.
+oracle=When Time Elemental attacks or blocks, at end of combat, sacrifice it and it deals 5 damage to you.\n{2}{U}{U}, {T}: Return target permanent that isn't enchanted to its owner's hand.

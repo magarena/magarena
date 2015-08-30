@@ -1,5 +1,5 @@
 name=Aquamorph Entity
-image=http://mtgimage.com/card/aquamorph%20entity.jpg
+image=http://magiccards.info/scans/en/ddn/54.jpg
 value=2.500
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=*/*
 ability=As SN enters the battlefield or is turned face up, it becomes your choice of 5/1 or 1/5.;\
         Morph {2}{U}
 timing=main
-oracle=As Aquamorph Entity enters the battlefield or is turned face up, it becomes your choice of 5/1 or 1/5. Morph {2}{U}
+oracle=As Aquamorph Entity enters the battlefield or is turned face up, it becomes your choice of 5/1 or 1/5.\nMorph {2}{U}

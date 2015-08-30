@@ -1,5 +1,5 @@
 name=Expunge
-image=http://mtgimage.com/card/expunge.jpg
+image=http://magiccards.info/scans/en/vma/118.jpg
 value=4.000
 removal=2
 rarity=C
@@ -8,4 +8,4 @@ cost={2}{B}
 timing=removal
 ability=cycling {2}
 effect=Destroy target nonartifact, nonblack creature. It can't be regenerated.
-oracle=Destroy target nonartifact, nonblack creature. It can't be regenerated. Cycling {2}
+oracle=Destroy target nonartifact, nonblack creature. It can't be regenerated.\nCycling {2}

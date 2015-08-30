@@ -1,11 +1,11 @@
 name=Platinum Emperion
-image=http://mtgimage.com/card/platinum%20emperion.jpg
-value=2.500
+image=http://magiccards.info/scans/en/som/193.jpg
+value=4.309
 rarity=M
 type=Artifact,Creature
 subtype=Golem
 cost={8}
 pt=8/8
 ability=Your life total can't change.
-timing=main
+timing=artifact
 oracle=Your life total can't change.

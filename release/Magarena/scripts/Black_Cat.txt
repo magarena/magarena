@@ -1,5 +1,5 @@
 name=Black Cat
-image=http://mtgimage.com/card/black%20cat.jpg
+image=http://magiccards.info/scans/en/m15/86.jpg
 value=3.667
 rarity=C
 type=Creature

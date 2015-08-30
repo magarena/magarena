@@ -1,9 +1,9 @@
 name=Whispering Madness
-image=http://mtgimage.com/card/whispering%20madness.jpg
+image=http://magiccards.info/scans/en/gtc/207.jpg
 value=3.578
 rarity=R
 type=Sorcery
 cost={2}{U}{B}
 timing=main
 requires_groovy_code
-oracle=Each player discards his or her hand, then draws cards equal to the greatest number of cards a player discarded this way. Cipher
+oracle=Each player discards his or her hand, then draws cards equal to the greatest number of cards a player discarded this way.\nCipher

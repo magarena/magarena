@@ -1,5 +1,5 @@
 name=Nine-Ringed Bo
-image=http://mtgimage.com/card/nine-ringed%20bo.jpg
+image=http://magiccards.info/scans/en/chk/263.jpg
 value=1.028
 rarity=U
 type=Artifact

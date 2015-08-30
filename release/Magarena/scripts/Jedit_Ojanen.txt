@@ -1,5 +1,5 @@
 name=Jedit Ojanen
-image=http://mtgimage.com/card/jedit%20ojanen.jpg
+image=http://magiccards.info/scans/en/me3/153.jpg
 value=1.194
 rarity=U
 type=Legendary,Creature
@@ -7,3 +7,4 @@ subtype=Cat,Warrior
 cost={4}{W}{W}{U}
 pt=5/5
 timing=main
+oracle=NONE

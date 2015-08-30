@@ -1,10 +1,9 @@
 name=Elemental Appeal
-image=http://mtgimage.com/card/elemental%20appeal.jpg
-value=2.500
+image=http://magiccards.info/scans/en/zen/123.jpg
+value=3.847
 rarity=R
 type=Sorcery
 cost={R}{R}{R}{R}
-ability=Kicker {5}
-effect=Put a 7/1 red Elemental creature token with trample and haste onto the battlefield. Exile it at the beginning of the next end step. If SN was kicked, that creature gets +7/+0 until end of turn.
+effect=Kicker {5}~Put a 7/1 red Elemental creature token with trample and haste onto the battlefield. Exile it at the beginning of the next end step. If SN was kicked, that creature gets +7/+0 until end of turn.
 timing=main
-oracle=Kicker {5}. Put a 7/1 red Elemental creature token with trample and haste onto the battlefield. Exile it at the beginning of the next end step. If Elemental Appeal was kicked, that creature gets +7/+0 until end of turn.
+oracle=Kicker {5}\nPut a 7/1 red Elemental creature token with trample and haste onto the battlefield. Exile it at the beginning of the next end step. If Elemental Appeal was kicked, that creature gets +7/+0 until end of turn.

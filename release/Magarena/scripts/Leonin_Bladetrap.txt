@@ -1,5 +1,5 @@
 name=Leonin Bladetrap
-image=http://mtgimage.com/card/leonin%20bladetrap.jpg
+image=http://magiccards.info/scans/en/c13/245.jpg
 value=3.579
 rarity=U
 type=Artifact
@@ -7,4 +7,4 @@ cost={3}
 ability=flash;\
         {2}, Sacrifice SN: SN deals 2 damage to each attacking creature without flying.
 timing=flash
-oracle=Flash. {2}, Sacrifice Leonin Bladetrap: Leonin Bladetrap deals 2 damage to each attacking creature without flying.
+oracle=Flash\n{2}, Sacrifice Leonin Bladetrap: Leonin Bladetrap deals 2 damage to each attacking creature without flying.

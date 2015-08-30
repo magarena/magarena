@@ -1,6 +1,6 @@
 name=Mistform Mutant
-image=http://mtgimage.com/card/mistform%20mutant.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/95.jpg
+value=2.455
 rarity=U
 type=Creature
 subtype=Illusion,Mutant

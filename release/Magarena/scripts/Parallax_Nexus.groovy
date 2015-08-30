@@ -1,7 +1,7 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
     event.processTargetCard(game, {
-        game.doAction(new MagicExileLinkAction(
+        game.doAction(new ExileLinkAction(
             event.getPermanent(),
             it,
             MagicLocationType.OwnersHand
@@ -29,7 +29,7 @@ def action = {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_OPPONENT,
+                TARGET_OPPONENT,
                 this,
                 "Target opponent\$ exiles a card from his or her hand."
             );
@@ -41,32 +41,25 @@ def action = {
                 game.addEvent(new MagicEvent(
                     event.getSource(),
                     it,
-                    MagicTargetChoice.A_CARD_FROM_HAND,
+                    A_CARD_FROM_HAND,
                     action,
                     "PN exiles a card from his or her hand."
                 ));
             });
         }
     },
-    new MagicWhenLeavesPlayTrigger() {
+    new MagicWhenSelfLeavesPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
-            if (act.isPermanent(permanent) && !permanent.getExiledCards().isEmpty()) {
-                final MagicCardList clist = new MagicCardList(permanent.getExiledCards());
-                return new MagicEvent(
-                    permanent,
-                    this,
-                    clist.size() == 1 ?
-                        "Return " + clist.get(0) + " to its owner's hand" :
-                        "Return exiled cards to their owner's hand"
-                );
-            }
-            return MagicEvent.NONE;
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final RemoveFromPlayAction act) {
+            return new MagicEvent(
+                permanent,
+                this,
+                "Return exiled cards to their owner's hand"
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPermanent permanent = event.getPermanent();
-            game.doAction(new MagicReturnLinkedExileAction(permanent,MagicLocationType.OwnersHand));
+            game.doAction(new ReturnLinkedExileAction(event.getPermanent(),MagicLocationType.OwnersHand));
         }
     }
 ]

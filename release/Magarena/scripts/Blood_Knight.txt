@@ -1,5 +1,5 @@
 name=Blood Knight
-image=http://mtgimage.com/card/blood%20knight.jpg
+image=http://magiccards.info/scans/en/pc/115.jpg
 value=4.274
 ability=first strike;protection from white
 rarity=U

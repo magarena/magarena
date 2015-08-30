@@ -1,5 +1,5 @@
 name=Charging Paladin
-image=http://mtgimage.com/card/charging%20paladin.jpg
+image=http://magiccards.info/scans/en/dvd/4.jpg
 value=2.927
 rarity=C
 type=Creature

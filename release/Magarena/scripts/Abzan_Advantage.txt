@@ -1,0 +1,10 @@
+name=Abzan Advantage
+image=http://magiccards.info/scans/en/frf/2.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{W}
+ability=Cast SN with AI only if an opponent controls an enchantment.
+effect=Target player sacrifices an enchantment.~Bolster 1.
+timing=removal
+oracle=Target player sacrifices an enchantment. Bolster 1.

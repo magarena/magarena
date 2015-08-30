@@ -1,11 +1,11 @@
 name=Ashling's Prerogative
-image=http://mtgimage.com/card/ashling%27s%20prerogative.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lw/150.jpg
+value=3.518
 rarity=R
 type=Enchantment
 cost={1}{R}
 ability=As SN enters the battlefield, choose odd or even.;\
         Each creature with converted mana cost of the chosen value has haste.;\
         Each creature without converted mana cost of the chosen value enters the battlefield tapped.
-timing=main
-oracle=As Ashling's Prerogative enters the battlefield, choose odd or even. Each creature with converted mana cost of the chosen value has haste. Each creature without converted mana cost of the chosen value enters the battlefield tapped.
+timing=enchantment
+oracle=As Ashling's Prerogative enters the battlefield, choose odd or even.\nEach creature with converted mana cost of the chosen value has haste.\nEach creature without converted mana cost of the chosen value enters the battlefield tapped.

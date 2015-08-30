@@ -1,5 +1,5 @@
 name=Frost Ogre
-image=http://mtgimage.com/card/frost%20ogre.jpg
+image=http://magiccards.info/scans/en/bok/102.jpg
 value=2.197
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Ogre,Warrior
 cost={3}{R}{R}
 pt=5/3
 timing=main
+oracle=NONE

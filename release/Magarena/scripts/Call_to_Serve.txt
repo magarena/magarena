@@ -1,5 +1,5 @@
 name=Call to Serve
-image=http://mtgimage.com/card/call%20to%20serve.jpg
+image=http://magiccards.info/scans/en/avr/9.jpg
 value=2.800
 rarity=C
 type=Enchantment
@@ -9,4 +9,4 @@ ability=Enchanted creature gets +1/+2 and has flying.
 given_subtype=Angel
 timing=aura
 enchant=pump,pos nonblack creature
-oracle=Enchant nonblack creature. Enchanted creature gets +1/+2, has flying, and is an Angel in addition to its other types.
+oracle=Enchant nonblack creature\nEnchanted creature gets +1/+2, has flying, and is an Angel in addition to its other types.

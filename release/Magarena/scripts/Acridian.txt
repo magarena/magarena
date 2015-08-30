@@ -1,11 +1,11 @@
 name=Acridian
-image=http://mtgimage.com/card/acridian.jpg
+image=http://magiccards.info/scans/en/us/230.jpg
 value=3.286
 rarity=C
 type=Creature
 subtype=Insect
 cost={1}{G}
 pt=2/4
-ability=echo {1}{G}
+ability=Echo {1}{G}
 timing=main
 oracle=Echo {1}{G}

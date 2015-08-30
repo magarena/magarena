@@ -1,5 +1,5 @@
 name=Entangling Vines
-image=http://mtgimage.com/card/entangling%20vines.jpg
+image=http://magiccards.info/scans/en/m10/181.jpg
 value=2.025
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={3}{G}
 ability=Enchanted creature doesn't untap during its controller's untap step.
 timing=aura
 enchant=can't attack or block,neg tapped creature
-oracle=Enchant tapped creature. Enchanted creature doesn't untap during its controller's untap step.
+oracle=Enchant tapped creature\nEnchanted creature doesn't untap during its controller's untap step.

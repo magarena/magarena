@@ -1,5 +1,5 @@
 name=Maggot Carrier
-image=http://mtgimage.com/card/maggot%20carrier.jpg
+image=http://magiccards.info/scans/en/8e/142.jpg
 value=3.649
 rarity=C
 type=Creature

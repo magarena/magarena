@@ -1,5 +1,5 @@
 name=Simic Cluestone
-image=http://mtgimage.com/card/simic%20cluestone.jpg
+image=http://magiccards.info/scans/en/dgm/145.jpg
 value=2.672
 rarity=C
 type=Artifact
@@ -7,4 +7,4 @@ cost={3}
 ability={T}: Add {G} or {U} to your mana pool.;\
         {G}{U},{T},Sacrifice SN: Draw a card.
 timing=artifact
-oracle={T}: Add {G} or {U} to your mana pool. {G}{U}, {T}, Sacrifice Simic Cluestone: Draw a card.
+oracle={T}: Add {G} or {U} to your mana pool.\n{G}{U}, {T}, Sacrifice Simic Cluestone: Draw a card.

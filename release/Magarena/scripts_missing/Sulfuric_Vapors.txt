@@ -1,9 +1,9 @@
 name=Sulfuric Vapors
-image=http://mtgimage.com/card/sulfuric%20vapors.jpg
-value=2.500
+image=http://magiccards.info/scans/en/us/220.jpg
+value=3.500
 rarity=R
 type=Enchantment
 cost={3}{R}
 ability=If a red spell would deal damage to a permanent or player, it deals that much damage plus 1 to that permanent or player instead.
-timing=main
+timing=enchantment
 oracle=If a red spell would deal damage to a permanent or player, it deals that much damage plus 1 to that permanent or player instead.

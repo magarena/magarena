@@ -1,0 +1,11 @@
+name=Brassclaw Orcs
+image=http://magiccards.info/scans/en/me2/119.jpg
+value=2.414
+rarity=C
+type=Creature
+subtype=Orc
+cost={2}{R}
+pt=3/2
+ability=SN can't block creatures with power 2 or greater.
+timing=main
+oracle=Brassclaw Orcs can't block creatures with power 2 or greater.

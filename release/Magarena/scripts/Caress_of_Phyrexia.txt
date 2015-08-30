@@ -1,6 +1,6 @@
 name=Caress of Phyrexia
-image=http://mtgimage.com/card/caress%20of%20phyrexia.jpg
-value=2.500
+image=http://magiccards.info/scans/en/nph/53.jpg
+value=3.103
 rarity=U
 type=Sorcery
 cost={3}{B}{B}

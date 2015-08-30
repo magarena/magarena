@@ -1,0 +1,10 @@
+name=1/1 green Insect creature token with flying named Butterfly
+token=Butterfly
+image=http://cdn.staticneo.com/w/mtg/7/77/Butterfly.jpg
+value=3
+type=Creature
+subtype=Insect
+color=g
+ability=flying
+pt=1/1
+oracle=Flying

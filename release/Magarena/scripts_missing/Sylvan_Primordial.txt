@@ -1,6 +1,6 @@
 name=Sylvan Primordial
-image=http://mtgimage.com/card/sylvan%20primordial.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gtc/136.jpg
+value=3.763
 rarity=R
 type=Creature
 subtype=Avatar
@@ -9,4 +9,4 @@ pt=6/8
 ability=Reach;\
         When SN enters the battlefield, for each opponent, destroy target noncreature permanent that player controls. For each permanent destroyed this way, search your library for a Forest card and put that card onto the battlefield tapped. Then shuffle your library.
 timing=main
-oracle=Reach. When Sylvan Primordial enters the battlefield, for each opponent, destroy target noncreature permanent that player controls. For each permanent destroyed this way, search your library for a Forest card and put that card onto the battlefield tapped. Then shuffle your library.
+oracle=Reach\nWhen Sylvan Primordial enters the battlefield, for each opponent, destroy target noncreature permanent that player controls. For each permanent destroyed this way, search your library for a Forest card and put that card onto the battlefield tapped. Then shuffle your library.

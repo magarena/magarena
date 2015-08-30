@@ -1,12 +1,12 @@
 name=Narset, Enlightened Master
-image=http://mtgimage.com/card/narset%2C%20enlightened%20master.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/190.jpg
+value=3.500
 rarity=M
 type=Legendary,Creature
 subtype=Human,Monk
 cost={3}{U}{R}{W}
 pt=3/2
-ability=First strike; hexproof;\
+ability=First strike, hexproof;\
         Whenever SN attacks, exile the top four cards of your library. Until end of turn, you may cast noncreature cards exiled with Narset this turn without paying their mana costs.
 timing=main
-oracle=First strike, hexproof. Whenever Narset, Enlightened Master attacks, exile the top four cards of your library. Until end of turn, you may cast noncreature cards exiled with Narset this turn without paying their mana costs.
+oracle=First strike, hexproof\nWhenever Narset, Enlightened Master attacks, exile the top four cards of your library. Until end of turn, you may cast noncreature cards exiled with Narset this turn without paying their mana costs.

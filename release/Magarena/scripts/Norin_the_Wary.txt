@@ -1,5 +1,5 @@
 name=Norin the Wary
-image=http://mtgimage.com/card/norin%20the%20wary.jpg
+image=http://magiccards.info/scans/en/ts/171.jpg
 value=4.127
 rarity=R
 type=Legendary,Creature

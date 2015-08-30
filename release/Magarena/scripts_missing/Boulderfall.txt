@@ -1,6 +1,6 @@
 name=Boulderfall
-image=http://mtgimage.com/card/boulderfall.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ths/115.jpg
+value=1.759
 rarity=C
 type=Instant
 cost={6}{R}{R}

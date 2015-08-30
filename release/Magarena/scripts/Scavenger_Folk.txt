@@ -1,5 +1,5 @@
 name=Scavenger Folk
-image=http://mtgimage.com/set/me4/scavenger%20folk.jpg
+image=http://magiccards.info/scans/en/me4/166.jpg
 value=3.657
 rarity=C
 type=Creature

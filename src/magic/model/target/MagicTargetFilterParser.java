@@ -14,6 +14,11 @@ public enum MagicTargetFilterParser {
             return MagicTargetFilterFactory.cardName(ARG.any(arg)).from(MagicTargetType.Library);
         }
     },
+    CardNamedFromYourHand("card named " + ARG.ANY + " from your hand") {
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return MagicTargetFilterFactory.cardName(ARG.any(arg)).from(MagicTargetType.Hand);
+        }
+    },
     CardNamedFromYourGraveyard("card named " + ARG.ANY + " from your graveyard") {
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
             return MagicTargetFilterFactory.cardName(ARG.any(arg)).from(MagicTargetType.Graveyard);
@@ -35,6 +40,11 @@ public enum MagicTargetFilterParser {
         }
     },
     CreatureNamedYouControl("creature named " + ARG.ANY + " you control") {
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return MagicTargetFilterFactory.creatureName(ARG.any(arg), Control.You);
+        }
+    },
+    CreatureYouControlNamed("creature you control named " + ARG.ANY) {
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
             return MagicTargetFilterFactory.creatureName(ARG.any(arg), Control.You);
         }

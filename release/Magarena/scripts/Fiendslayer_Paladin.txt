@@ -1,5 +1,5 @@
 name=Fiendslayer Paladin
-image=http://mtgimage.com/card/fiendslayer%20paladin.jpg
+image=http://magiccards.info/scans/en/m14/18.jpg
 value=3.694
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=first strike;lifelink;\
         SN can't be the target of black or red spells your opponents control.
 timing=main
-oracle=First strike. Lifelink. Fiendslayer Paladin can't be the target of black or red spells your opponents control.
+oracle=First strike\nLifelink\nFiendslayer Paladin can't be the target of black or red spells your opponents control.

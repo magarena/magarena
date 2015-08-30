@@ -1,5 +1,5 @@
 name=Azure Mage
-image=http://mtgimage.com/card/azure%20mage.jpg
+image=http://magiccards.info/scans/en/c14/98.jpg
 value=3.768
 rarity=U
 type=Creature

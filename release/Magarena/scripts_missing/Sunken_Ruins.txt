@@ -1,9 +1,9 @@
 name=Sunken Ruins
-image=http://mtgimage.com/card/sunken%20ruins.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/280.jpg
+value=4.322
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\
         {U/B}, {T}: Add {U}{U}, {U}{B}, or {B}{B} to your mana pool.
-timing=main
-oracle={T}: Add {1} to your mana pool. {U/B}, {T}: Add {U}{U}, {U}{B}, or {B}{B} to your mana pool.
+timing=land
+oracle={T}: Add {1} to your mana pool.\n{U/B}, {T}: Add {U}{U}, {U}{B}, or {B}{B} to your mana pool.

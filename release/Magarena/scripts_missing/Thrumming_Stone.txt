@@ -1,9 +1,9 @@
 name=Thrumming Stone
-image=http://mtgimage.com/card/thrumming%20stone.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cs/142.jpg
+value=4.183
 rarity=R
 type=Legendary,Artifact
 cost={5}
 ability=Spells you cast have ripple 4.
-timing=main
+timing=artifact
 oracle=Spells you cast have ripple 4.

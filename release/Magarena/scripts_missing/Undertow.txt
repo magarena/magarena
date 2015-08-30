@@ -1,9 +1,9 @@
 name=Undertow
-image=http://mtgimage.com/card/undertow.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lg/82.jpg
+value=1.734
 rarity=U
 type=Enchantment
 cost={2}{U}
 ability=Creatures with islandwalk can be blocked as though they didn't have islandwalk.
-timing=main
+timing=enchantment
 oracle=Creatures with islandwalk can be blocked as though they didn't have islandwalk.

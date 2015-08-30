@@ -1,9 +1,9 @@
 name=Liquid Fire
-image=http://mtgimage.com/card/liquid%20fire.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/201.jpg
+value=2.148
 rarity=U
 type=Sorcery
 cost={4}{R}{R}
 effect=As an additional cost to cast SN, choose a number between 0 and 5.~SN deals X damage to target creature and 5 minus X damage to that creature's controller, where X is the chosen number.
 timing=main
-oracle=As an additional cost to cast Liquid Fire, choose a number between 0 and 5. Liquid Fire deals X damage to target creature and 5 minus X damage to that creature's controller, where X is the chosen number.
+oracle=As an additional cost to cast Liquid Fire, choose a number between 0 and 5.\nLiquid Fire deals X damage to target creature and 5 minus X damage to that creature's controller, where X is the chosen number.

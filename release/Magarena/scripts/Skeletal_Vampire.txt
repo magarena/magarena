@@ -1,5 +1,5 @@
 name=Skeletal Vampire
-image=http://mtgimage.com/card/skeletal%20vampire.jpg
+image=http://magiccards.info/scans/en/mma/96.jpg
 value=3.625
 rarity=R
 type=Creature
@@ -11,4 +11,4 @@ ability=flying;\
         {3}{B}{B}, Sacrifice a Bat: put two 1/1 black Bat creature tokens with flying onto the battlefield.;\
         Sacrifice a Bat: Regenerate SN.
 timing=main
-oracle=Flying. When Skeletal Vampire enters the battlefield, put two 1/1 black Bat creature tokens with flying onto the battlefield. {3}{B}{B}, Sacrifice a Bat: Put two 1/1 black Bat creature tokens with flying onto the battlefield. Sacrifice a Bat: Regenerate Skeletal Vampire.
+oracle=Flying\nWhen Skeletal Vampire enters the battlefield, put two 1/1 black Bat creature tokens with flying onto the battlefield.\n{3}{B}{B}, Sacrifice a Bat: Put two 1/1 black Bat creature tokens with flying onto the battlefield.\nSacrifice a Bat: Regenerate Skeletal Vampire.

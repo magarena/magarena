@@ -1,5 +1,5 @@
 name=Chasm Drake
-image=http://mtgimage.com/card/chasm%20drake.jpg
+image=http://magiccards.info/scans/en/m12/48.jpg
 value=3.088
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=flying;\
         Whenever SN attacks, target creature you control gains flying until end of turn.
 timing=main
-oracle=Flying. Whenever Chasm Drake attacks, target creature you control gains flying until end of turn.
+oracle=Flying\nWhenever Chasm Drake attacks, target creature you control gains flying until end of turn.

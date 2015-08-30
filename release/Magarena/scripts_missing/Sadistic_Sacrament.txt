@@ -1,10 +1,9 @@
 name=Sadistic Sacrament
-image=http://mtgimage.com/card/sadistic%20sacrament.jpg
-value=2.500
+image=http://magiccards.info/scans/en/zen/110.jpg
+value=4.471
 rarity=R
 type=Sorcery
 cost={B}{B}{B}
-ability=Kicker {7}
-effect=Search target player's library for up to three cards, exile them, then that player shuffles his or her library. If SN was kicked, instead search that player's library for up to fifteen cards, exile them, then that player shuffles his or her library.
+effect=Kicker {7}~Search target player's library for up to three cards, exile them, then that player shuffles his or her library. If SN was kicked, instead search that player's library for up to fifteen cards, exile them, then that player shuffles his or her library.
 timing=main
-oracle=Kicker {7}. Search target player's library for up to three cards, exile them, then that player shuffles his or her library. If Sadistic Sacrament was kicked, instead search that player's library for up to fifteen cards, exile them, then that player shuffles his or her library.
+oracle=Kicker {7}\nSearch target player's library for up to three cards, exile them, then that player shuffles his or her library. If Sadistic Sacrament was kicked, instead search that player's library for up to fifteen cards, exile them, then that player shuffles his or her library.

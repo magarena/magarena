@@ -1,9 +1,9 @@
 name=School of the Unseen
-image=http://mtgimage.com/card/school%20of%20the%20unseen.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ai/186.jpg
+value=2.094
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\
         {2}, {T}: Add one mana of any color to your mana pool.
-timing=main
-oracle={T}: Add {1} to your mana pool. {2}, {T}: Add one mana of any color to your mana pool.
+timing=land
+oracle={T}: Add {1} to your mana pool.\n{2}, {T}: Add one mana of any color to your mana pool.

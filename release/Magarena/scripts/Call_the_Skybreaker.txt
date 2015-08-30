@@ -1,5 +1,5 @@
 name=Call the Skybreaker
-image=http://mtgimage.com/card/call%20the%20skybreaker.jpg
+image=http://magiccards.info/scans/en/cmd/188.jpg
 value=3.056
 rarity=R
 type=Sorcery
@@ -7,4 +7,4 @@ cost={5}{U/R}{U/R}
 effect=Put a 5/5 blue and red Elemental creature token with flying onto the battlefield.
 ability=Retrace
 timing=token
-oracle=Put a 5/5 blue and red Elemental creature token with flying onto the battlefield. Retrace
+oracle=Put a 5/5 blue and red Elemental creature token with flying onto the battlefield.\nRetrace

@@ -1,6 +1,6 @@
 name=Windborn Muse
-image=http://mtgimage.com/card/windborn%20muse.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cmd/38.jpg
+value=4.171
 rarity=R
 type=Creature
 subtype=Spirit
@@ -9,4 +9,4 @@ pt=2/3
 ability=Flying;\
         Creatures can't attack you unless their controller pays {2} for each creature he or she controls that's attacking you.
 timing=main
-oracle=Flying. Creatures can't attack you unless their controller pays {2} for each creature he or she controls that's attacking you.
+oracle=Flying\nCreatures can't attack you unless their controller pays {2} for each creature he or she controls that's attacking you.

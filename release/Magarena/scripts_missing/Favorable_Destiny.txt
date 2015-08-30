@@ -1,6 +1,6 @@
 name=Favorable Destiny
-image=http://mtgimage.com/card/favorable%20destiny.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/220.jpg
+value=3.032
 rarity=U
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={1}{W}
 ability=Enchant creature;\
         Enchanted creature gets +1/+2 as long as it's white.;\
         Enchanted creature has shroud as long as its controller controls another creature.
-timing=main
-oracle=Enchant creature. Enchanted creature gets +1/+2 as long as it's white. Enchanted creature has shroud as long as its controller controls another creature.
+timing=aura
+oracle=Enchant creature\nEnchanted creature gets +1/+2 as long as it's white.\nEnchanted creature has shroud as long as its controller controls another creature.

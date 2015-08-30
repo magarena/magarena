@@ -1,5 +1,5 @@
 name=Boros Guildmage
-image=http://mtgimage.com/card/boros%20guildmage.jpg
+image=http://magiccards.info/scans/en/cmd/186.jpg
 value=3.750
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability={1}{R}: Target creature gains haste until end of turn.;\
         {1}{W}: Target creature gains first strike until end of turn.
 timing=main
-oracle={1}{R}: Target creature gains haste until end of turn. {1}{W}: Target creature gains first strike until end of turn.
+oracle={1}{R}: Target creature gains haste until end of turn.\n{1}{W}: Target creature gains first strike until end of turn.

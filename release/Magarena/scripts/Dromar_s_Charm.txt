@@ -1,0 +1,9 @@
+name=Dromar's Charm
+image=http://magiccards.info/scans/en/c13/187.jpg
+value=4.208
+rarity=U
+type=Instant
+cost={W}{U}{B}
+effect=Choose one — (1) You gain 5 life. (2) Counter target spell. (3) Target creature gets -2/-2 until end of turn.
+timing=counter
+oracle=Choose one —\n• You gain 5 life.\n• Counter target spell.\n• Target creature gets -2/-2 until end of turn.

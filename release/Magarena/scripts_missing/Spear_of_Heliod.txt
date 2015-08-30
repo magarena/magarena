@@ -1,10 +1,10 @@
 name=Spear of Heliod
-image=http://mtgimage.com/card/spear%20of%20heliod.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ths/33.jpg
+value=3.538
 rarity=R
 type=Legendary,Enchantment,Artifact
 cost={1}{W}{W}
 ability=Creatures you control get +1/+1.;\
         {1}{W}{W}, {T}: Destroy target creature that dealt damage to you this turn.
-timing=main
-oracle=Creatures you control get +1/+1. {1}{W}{W}, {T}: Destroy target creature that dealt damage to you this turn.
+timing=artifact
+oracle=Creatures you control get +1/+1.\n{1}{W}{W}, {T}: Destroy target creature that dealt damage to you this turn.

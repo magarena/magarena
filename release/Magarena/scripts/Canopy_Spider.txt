@@ -1,5 +1,5 @@
 name=Canopy Spider
-image=http://mtgimage.com/card/canopy%20spider.jpg
+image=http://magiccards.info/scans/en/10e/254.jpg
 value=3.300
 ability=reach
 rarity=C

@@ -1,6 +1,6 @@
 name=Haze Frog
-image=http://mtgimage.com/card/haze%20frog.jpg
-value=2.500
+image=http://magiccards.info/scans/en/roe/187.jpg
+value=2.273
 rarity=C
 type=Creature
 subtype=Frog
@@ -9,4 +9,4 @@ pt=2/1
 ability=Flash;\
         When SN enters the battlefield, prevent all combat damage that other creatures would deal this turn.
 timing=main
-oracle=Flash. When Haze Frog enters the battlefield, prevent all combat damage that other creatures would deal this turn.
+oracle=Flash\nWhen Haze Frog enters the battlefield, prevent all combat damage that other creatures would deal this turn.

@@ -18,7 +18,7 @@ def choice = new MagicTargetChoice("an Island you control");
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_CREATURE,
+                TARGET_CREATURE,
                 MagicBounceTargetPicker.create(),
                 this,
                 "Return target creature\$ to its owner's hand."
@@ -28,7 +28,7 @@ def choice = new MagicTargetChoice("an Island you control");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.OwnersHand));            
+                game.doAction(new RemoveFromPlayAction(it,MagicLocationType.OwnersHand));            
             });
         }
     }

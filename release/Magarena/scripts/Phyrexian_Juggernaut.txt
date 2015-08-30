@@ -1,5 +1,5 @@
 name=Phyrexian Juggernaut
-image=http://mtgimage.com/card/phyrexian%20juggernaut.jpg
+image=http://magiccards.info/scans/en/mbs/121.jpg
 value=3.470
 rarity=U
 type=Artifact,Creature
@@ -8,4 +8,4 @@ cost={6}
 pt=5/5
 ability=infect;SN attacks each turn if able.
 timing=main
-oracle=Infect. Phyrexian Juggernaut attacks each turn if able.
+oracle=Infect\nPhyrexian Juggernaut attacks each turn if able.

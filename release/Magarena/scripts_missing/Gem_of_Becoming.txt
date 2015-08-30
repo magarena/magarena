@@ -1,9 +1,9 @@
 name=Gem of Becoming
-image=http://mtgimage.com/card/gem%20of%20becoming.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m13/205.jpg
+value=3.490
 rarity=U
 type=Artifact
 cost={3}
 ability={3}, {T}, Sacrifice SN: Search your library for an Island card, a Swamp card, and a Mountain card. Reveal those cards and put them into your hand. Then shuffle your library.
-timing=main
+timing=artifact
 oracle={3}, {T}, Sacrifice Gem of Becoming: Search your library for an Island card, a Swamp card, and a Mountain card. Reveal those cards and put them into your hand. Then shuffle your library.

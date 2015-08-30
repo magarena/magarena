@@ -1,5 +1,5 @@
 name=Wren's Run Packmaster
-image=http://mtgimage.com/card/wren%27s%20run%20packmaster.jpg
+image=http://magiccards.info/scans/en/c14/227.jpg
 value=4.214
 removal=2
 rarity=R
@@ -7,8 +7,9 @@ type=Creature
 subtype=Elf,Warrior
 cost={3}{G}
 pt=5/5
-ability=Champion Elf;\
+ability=Champion an Elf;\
         Each Wolf you control has deathtouch;\
-        {2}{G}: Put a 2/2 green Wolf creature token onto the battlefield.
+        {2}{G}: Put a 2/2 green Wolf creature token onto the battlefield.;\
+        Cast SN with AI only if you control an Elf
 timing=main
-oracle=Champion an Elf. {2}{G}: Put a 2/2 green Wolf creature token onto the battlefield. Each Wolf you control has deathtouch.
+oracle=Champion an Elf\n{2}{G}: Put a 2/2 green Wolf creature token onto the battlefield.\nWolves you control have deathtouch.

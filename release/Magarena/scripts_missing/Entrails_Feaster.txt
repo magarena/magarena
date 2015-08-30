@@ -1,6 +1,6 @@
 name=Entrails Feaster
-image=http://mtgimage.com/card/entrails%20feaster.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/143.jpg
+value=3.789
 rarity=R
 type=Creature
 subtype=Zombie,Cat

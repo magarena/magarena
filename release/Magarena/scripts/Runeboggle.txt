@@ -1,9 +1,9 @@
 name=Runeboggle
-image=http://mtgimage.com/card/runeboggle.jpg
+image=http://magiccards.info/scans/en/gp/33.jpg
 value=2.083
 rarity=C
 type=Instant
 cost={2}{U}
 effect=Counter target spell unless its controller pays {1}.~Draw a card.
 timing=counter
-oracle=Counter target spell unless its controller pays {1}. Draw a card.
+oracle=Counter target spell unless its controller pays {1}.\nDraw a card.

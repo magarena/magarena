@@ -1,0 +1,11 @@
+name=Sigil of Valor
+image=http://magiccards.info/scans/en/ori/239.jpg
+value=2.500
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={2}
+ability=Whenever equipped creature attacks alone, it gets +1/+1 until end of turn for each other creature you control.;\
+        Equip {1}
+timing=equipment
+oracle=Whenever equipped creature attacks alone, it gets +1/+1 until end of turn for each other creature you control.\nEquip {1}

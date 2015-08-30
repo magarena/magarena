@@ -1,6 +1,6 @@
 name=Mercenary Knight
-image=http://mtgimage.com/card/mercenary%20knight.jpg
-value=2.500
+image=http://magiccards.info/scans/en/po/22.jpg
+value=4.076
 rarity=R
 type=Creature
 subtype=Human,Mercenary,Knight

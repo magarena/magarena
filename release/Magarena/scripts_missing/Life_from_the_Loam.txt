@@ -1,9 +1,9 @@
 name=Life from the Loam
-image=http://mtgimage.com/card/life%20from%20the%20loam.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mma/153.jpg
+value=4.560
 rarity=R
 type=Sorcery
 cost={1}{G}
 effect=Return up to three target land cards from your graveyard to your hand.~Dredge 3
 timing=main
-oracle=Return up to three target land cards from your graveyard to your hand. Dredge 3
+oracle=Return up to three target land cards from your graveyard to your hand.\nDredge 3

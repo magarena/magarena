@@ -1,11 +1,11 @@
 name=Knowledge Vault
-image=http://mtgimage.com/card/knowledge%20vault.jpg
-value=2.500
-rarity=R
+image=http://magiccards.info/scans/en/me3/198.jpg
+value=2.780
+rarity=U
 type=Artifact
 cost={4}
 ability={2}, {T}: Exile the top card of your library face down.;\
         {0}: Sacrifice SN. If you do, discard your hand, then put all cards exiled with SN into their owner's hand.;\
         When SN leaves the battlefield, put all cards exiled with SN into their owner's graveyard.
-timing=main
-oracle={2}, {T}: Exile the top card of your library face down. {0}: Sacrifice Knowledge Vault. If you do, discard your hand, then put all cards exiled with Knowledge Vault into their owner's hand. When Knowledge Vault leaves the battlefield, put all cards exiled with Knowledge Vault into their owner's graveyard.
+timing=artifact
+oracle={2}, {T}: Exile the top card of your library face down.\n{0}: Sacrifice Knowledge Vault. If you do, discard your hand, then put all cards exiled with Knowledge Vault into their owner's hand.\nWhen Knowledge Vault leaves the battlefield, put all cards exiled with Knowledge Vault into their owner's graveyard.

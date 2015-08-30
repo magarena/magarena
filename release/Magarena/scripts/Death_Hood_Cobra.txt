@@ -1,5 +1,5 @@
 name=Death-Hood Cobra
-image=http://mtgimage.com/card/death%2Dhood%20cobra.jpg
+image=http://magiccards.info/scans/en/ddm/47.jpg
 value=3.708
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{G}
 pt=2/2
 ability={1}{G}: SN gains deathtouch until end of turn.;{1}{G}: SN gains reach until end of turn.
 timing=main
-oracle={1}{G}: Death-Hood Cobra gains reach until end of turn. {1}{G}: Death-Hood Cobra gains deathtouch until end of turn.
+oracle={1}{G}: Death-Hood Cobra gains reach until end of turn.\n{1}{G}: Death-Hood Cobra gains deathtouch until end of turn.

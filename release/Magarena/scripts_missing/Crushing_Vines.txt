@@ -1,9 +1,0 @@
-name=Crushing Vines
-image=http://mtgimage.com/card/crushing%20vines.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={2}{G}
-effect=Choose one — • Destroy target creature with flying. • Destroy target artifact.
-timing=removal
-oracle=Choose one — • Destroy target creature with flying. • Destroy target artifact.

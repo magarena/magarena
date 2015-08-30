@@ -1,10 +1,10 @@
 name=Worm Harvest
-image=http://mtgimage.com/card/worm%20harvest.jpg
+image=http://magiccards.info/scans/en/mma/195.jpg
 value=3.870
 rarity=U
 type=Sorcery
 cost={2}{B/G}{B/G}{B/G}
 ability=Retrace
+effect=Put a 1/1 black and green Worm creature token onto the battlefield for each land card in your graveyard.
 timing=token
-requires_groovy_code
-oracle=Put a 1/1 black and green Worm creature token onto the battlefield for each land card in your graveyard. Retrace
+oracle=Put a 1/1 black and green Worm creature token onto the battlefield for each land card in your graveyard.\nRetrace

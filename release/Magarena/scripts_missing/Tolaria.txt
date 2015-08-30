@@ -1,9 +1,9 @@
 name=Tolaria
-image=http://mtgimage.com/card/tolaria.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lg/253.jpg
+value=3.155
 rarity=U
 type=Legendary,Land
 ability={T}: Add {U} to your mana pool.;\
         {T}: Target creature loses banding and all "bands with other" abilities until end of turn. Activate this ability only during any upkeep step.
-timing=main
-oracle={T}: Add {U} to your mana pool. {T}: Target creature loses banding and all "bands with other" abilities until end of turn. Activate this ability only during any upkeep step.
+timing=land
+oracle={T}: Add {U} to your mana pool.\n{T}: Target creature loses banding and all "bands with other" abilities until end of turn. Activate this ability only during any upkeep step.

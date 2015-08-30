@@ -1,9 +1,10 @@
 name=Sandstorm
-image=http://mtgimage.com/card/sandstorm.jpg
+image=http://magiccards.info/scans/en/me4/164.jpg
 value=3.362
 rarity=C
 type=Instant
 cost={G}
+ability=Cast SN with AI only if an opponent controls an attacking creature.
 effect=SN deals 1 damage to each attacking creature.
 timing=block
 oracle=Sandstorm deals 1 damage to each attacking creature.

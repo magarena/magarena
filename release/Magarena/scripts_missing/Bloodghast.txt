@@ -1,6 +1,6 @@
 name=Bloodghast
-image=http://mtgimage.com/card/bloodghast.jpg
-value=2.500
+image=http://magiccards.info/scans/en/zen/83.jpg
+value=4.458
 rarity=R
 type=Creature
 subtype=Vampire,Spirit
@@ -10,4 +10,4 @@ ability=SN can't block.;\
         SN has haste as long as an opponent has 10 or less life.;\
         Whenever a land enters the battlefield under your control, you may return SN from your graveyard to the battlefield.
 timing=main
-oracle=Bloodghast can't block. Bloodghast has haste as long as an opponent has 10 or less life. Landfall — Whenever a land enters the battlefield under your control, you may return Bloodghast from your graveyard to the battlefield.
+oracle=Bloodghast can't block.\nBloodghast has haste as long as an opponent has 10 or less life.\nLandfall — Whenever a land enters the battlefield under your control, you may return Bloodghast from your graveyard to the battlefield.

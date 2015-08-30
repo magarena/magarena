@@ -1,12 +1,12 @@
 name=Armada Wurm
-image=http://mtgimage.com/card/armada%20wurm.jpg
+image=http://magiccards.info/scans/en/rtr/143.jpg
 value=4.010
 rarity=M
 type=Creature
 subtype=Wurm
 cost={2}{G}{G}{W}{W}
 pt=5/5
-ability=trample;\
+ability=Trample;\
         When SN enters the battlefield, put a 5/5 green Wurm creature token with trample onto the battlefield.
 timing=main
-oracle=Trample. When Armada Wurm enters the battlefield, put a 5/5 green Wurm creature token with trample onto the battlefield.
+oracle=Trample\nWhen Armada Wurm enters the battlefield, put a 5/5 green Wurm creature token with trample onto the battlefield.

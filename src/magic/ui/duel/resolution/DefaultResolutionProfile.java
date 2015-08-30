@@ -4,7 +4,7 @@ import magic.ui.theme.Theme;
 
 import java.awt.Dimension;
 import java.awt.Rectangle;
-import magic.ui.MagicStyle;
+import magic.ui.utility.MagicStyle;
 
 public class DefaultResolutionProfile implements ResolutionProfile {
 

@@ -1,6 +1,6 @@
 name=Kemba's Legion
-image=http://mtgimage.com/card/kemba%27s%20legion.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mbs/9.jpg
+value=2.060
 rarity=U
 type=Creature
 subtype=Cat,Soldier
@@ -9,4 +9,4 @@ pt=4/6
 ability=Vigilance;\
         SN can block an additional creature for each Equipment attached to SN.
 timing=main
-oracle=Vigilance. Kemba's Legion can block an additional creature for each Equipment attached to Kemba's Legion.
+oracle=Vigilance\nKemba's Legion can block an additional creature for each Equipment attached to Kemba's Legion.

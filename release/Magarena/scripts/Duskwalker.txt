@@ -1,5 +1,5 @@
 name=Duskwalker
-image=http://mtgimage.com/card/duskwalker.jpg
+image=http://magiccards.info/scans/en/in/104.jpg
 value=2.714
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 timing=main
 ability=kicker {3}{B}
 requires_groovy_code
-oracle=Kicker {3}{B}. If Duskwalker was kicked, it enters the battlefield with two +1/+1 counters on it and with fear.
+oracle=Kicker {3}{B}\nIf Duskwalker was kicked, it enters the battlefield with two +1/+1 counters on it and with fear.

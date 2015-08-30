@@ -1,5 +1,5 @@
 name=Geist Trappers
-image=http://mtgimage.com/card/geist%20trappers.jpg
+image=http://magiccards.info/scans/en/avr/179.jpg
 value=1.938
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/5
 ability=Soulbond;\
         As long as SN is paired with another creature, both creatures have reach.
 timing=main
-oracle=Soulbond. As long as Geist Trappers is paired with another creature, both creatures have reach.
+oracle=Soulbond\nAs long as Geist Trappers is paired with another creature, both creatures have reach.

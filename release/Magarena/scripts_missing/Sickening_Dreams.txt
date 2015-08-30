@@ -1,9 +1,9 @@
 name=Sickening Dreams
-image=http://mtgimage.com/card/sickening%20dreams.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tr/83.jpg
+value=3.545
 rarity=U
 type=Sorcery
 cost={1}{B}
 effect=As an additional cost to cast SN, discard X cards.~SN deals X damage to each creature and each player.
 timing=main
-oracle=As an additional cost to cast Sickening Dreams, discard X cards. Sickening Dreams deals X damage to each creature and each player.
+oracle=As an additional cost to cast Sickening Dreams, discard X cards.\nSickening Dreams deals X damage to each creature and each player.

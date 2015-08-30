@@ -1,6 +1,6 @@
 name=Heartmender
-image=http://mtgimage.com/card/heartmender.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/228.jpg
+value=4.040
 rarity=R
 type=Creature
 subtype=Elemental
@@ -9,4 +9,4 @@ pt=2/2
 ability=At the beginning of your upkeep, remove a -1/-1 counter from each creature you control.;\
         Persist
 timing=main
-oracle=At the beginning of your upkeep, remove a -1/-1 counter from each creature you control. Persist
+oracle=At the beginning of your upkeep, remove a -1/-1 counter from each creature you control.\nPersist

@@ -11,15 +11,14 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
+            final Collection<MagicPermanent> targets = CREATURE_YOU_CONTROL.filter(event); 
             int power=0;
             for (final MagicPermanent creature : targets) {
                 power=Math.max(power,creature.getPowerToughness().power());
             }
             for (final MagicPermanent creature : targets) {
-                game.doAction(new MagicChangeTurnPTAction(creature,power,power));
-                game.doAction(new MagicGainAbilityAction(creature,MagicAbility.Trample));
+                game.doAction(new ChangeTurnPTAction(creature,power,power));
+                game.doAction(new GainAbilityAction(creature,MagicAbility.Trample));
             }
         }
     }

@@ -1,5 +1,5 @@
 name=Gustcloak Harrier
-image=http://mtgimage.com/card/gustcloak%20harrier.jpg
+image=http://magiccards.info/scans/en/ddo/10.jpg
 value=3.339
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=flying
 timing=main
 requires_groovy_code=Gustcloak Skirmisher
-oracle=Flying. Whenever Gustcloak Harrier becomes blocked, you may untap it and remove it from combat.
+oracle=Flying\nWhenever Gustcloak Harrier becomes blocked, you may untap it and remove it from combat.

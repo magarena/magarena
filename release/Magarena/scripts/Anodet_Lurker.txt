@@ -1,5 +1,5 @@
 name=Anodet Lurker
-image=http://mtgimage.com/card/anodet%20lurker.jpg
+image=http://magiccards.info/scans/en/5dn/101.jpg
 value=1.629
 rarity=C
 type=Artifact,Creature

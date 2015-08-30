@@ -1,11 +1,11 @@
 name=Woodwraith Corrupter
-image=http://mtgimage.com/card/woodwraith%20corrupter.jpg
+image=http://magiccards.info/scans/en/rav/240.jpg
 value=3.153
 rarity=R
 type=Creature
 subtype=Elemental,Horror
 cost={3}{B}{B}{G}
 pt=3/6
+ability={1}{B}{G}, {T}: Target Forest becomes a 4/4 black and green Elemental Horror creature. It's still a land.
 timing=main
-requires_groovy_code
 oracle={1}{B}{G}, {T}: Target Forest becomes a 4/4 black and green Elemental Horror creature. It's still a land.

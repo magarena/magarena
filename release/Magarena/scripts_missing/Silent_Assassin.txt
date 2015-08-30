@@ -1,6 +1,6 @@
 name=Silent Assassin
-image=http://mtgimage.com/card/silent%20assassin.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/160.jpg
+value=3.066
 rarity=R
 type=Creature
 subtype=Human,Mercenary,Assassin

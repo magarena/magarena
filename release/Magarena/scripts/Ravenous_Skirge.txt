@@ -1,5 +1,5 @@
 name=Ravenous Skirge
-image=http://mtgimage.com/card/ravenous%20skirge.jpg
+image=http://magiccards.info/scans/en/us/152.jpg
 value=2.750
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=flying;\
         Whenever SN attacks, SN gets +2/+0 until end of turn.
 timing=main
-oracle=Flying. Whenever Ravenous Skirge attacks, it gets +2/+0 until end of turn.
+oracle=Flying\nWhenever Ravenous Skirge attacks, it gets +2/+0 until end of turn.

@@ -1,6 +1,6 @@
 name=Last-Ditch Effort
-image=http://mtgimage.com/card/last-ditch%20effort.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ul/83.jpg
+value=3.957
 rarity=U
 type=Instant
 cost={R}

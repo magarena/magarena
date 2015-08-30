@@ -1,6 +1,6 @@
 name=Guided Passage
-image=http://mtgimage.com/card/guided%20passage.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ap/105.jpg
+value=4.326
 rarity=R
 type=Sorcery
 cost={U}{R}{G}

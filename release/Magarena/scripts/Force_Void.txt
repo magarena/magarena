@@ -1,9 +1,9 @@
 name=Force Void
-image=http://mtgimage.com/card/force%20void.jpg
+image=http://magiccards.info/scans/en/ia/70.jpg
 value=1.827
 rarity=U
 type=Instant
 cost={2}{U}
 effect=Counter target spell unless its controller pays {1}.~Draw a card at the beginning of the next turn's upkeep.
 timing=counter
-oracle=Counter target spell unless its controller pays {1}. Draw a card at the beginning of the next turn's upkeep.
+oracle=Counter target spell unless its controller pays {1}.\nDraw a card at the beginning of the next turn's upkeep.

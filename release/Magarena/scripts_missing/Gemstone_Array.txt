@@ -1,10 +1,10 @@
 name=Gemstone Array
-image=http://mtgimage.com/card/gemstone%20array.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5dn/124.jpg
+value=3.830
 rarity=U
 type=Artifact
 cost={4}
 ability={2}: Put a charge counter on SN.;\
         Remove a charge counter from SN: Add one mana of any color to your mana pool.
-timing=main
-oracle={2}: Put a charge counter on Gemstone Array. Remove a charge counter from Gemstone Array: Add one mana of any color to your mana pool.
+timing=artifact
+oracle={2}: Put a charge counter on Gemstone Array.\nRemove a charge counter from Gemstone Array: Add one mana of any color to your mana pool.

@@ -1,6 +1,6 @@
 name=Mistform Sliver
-image=http://mtgimage.com/card/mistform%20sliver.jpg
-value=2.500
+image=http://magiccards.info/scans/en/le/46.jpg
+value=2.514
 rarity=C
 type=Creature
 subtype=Illusion,Sliver

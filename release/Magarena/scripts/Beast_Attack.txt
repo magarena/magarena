@@ -1,5 +1,5 @@
 name=Beast Attack
-image=http://mtgimage.com/card/beast%20attack.jpg
+image=http://magiccards.info/scans/en/gvl/23.jpg
 value=3.961
 rarity=U
 type=Instant
@@ -7,4 +7,4 @@ cost={2}{G}{G}{G}
 effect=Put a 4/4 green Beast creature token onto the battlefield.
 ability=Flashback {2}{G}{G}{G}
 timing=flash
-oracle=Put a 4/4 green Beast creature token onto the battlefield. Flashback {2}{G}{G}{G}
+oracle=Put a 4/4 green Beast creature token onto the battlefield.\nFlashback {2}{G}{G}{G}

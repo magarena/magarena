@@ -1,5 +1,5 @@
 name=Sidar Jabari
-image=http://mtgimage.com/card/sidar%20jabari.jpg
+image=http://magiccards.info/scans/en/vma/45.jpg
 value=3.844
 rarity=R
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=flanking;\
         Whenever SN attacks, tap target creature defending player controls.
 timing=main
-oracle=Flanking. Whenever Sidar Jabari attacks, tap target creature defending player controls.
+oracle=Flanking\nWhenever Sidar Jabari attacks, tap target creature defending player controls.

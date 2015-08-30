@@ -1,5 +1,5 @@
 name=Tireless Missionaries
-image=http://mtgimage.com/card/tireless%20missionaries.jpg
+image=http://magiccards.info/scans/en/m15/39.jpg
 value=0.571
 rarity=C
 type=Creature

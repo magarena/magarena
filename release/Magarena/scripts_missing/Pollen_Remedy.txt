@@ -1,10 +1,9 @@
 name=Pollen Remedy
-image=http://mtgimage.com/card/pollen%20remedy.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ps/13.jpg
+value=3.000
 rarity=C
 type=Instant
 cost={W}
-ability=Kicker—Sacrifice a land.
-effect=Prevent the next 3 damage that would be dealt this turn to any number of target creatures and/or players, divided as you choose. If SN was kicked, prevent the next 6 damage this way instead.
+effect=Kicker—Sacrifice a land.~Prevent the next 3 damage that would be dealt this turn to any number of target creatures and/or players, divided as you choose. If SN was kicked, prevent the next 6 damage this way instead.
 timing=removal
-oracle=Kicker—Sacrifice a land. Prevent the next 3 damage that would be dealt this turn to any number of target creatures and/or players, divided as you choose. If Pollen Remedy was kicked, prevent the next 6 damage this way instead.
+oracle=Kicker—Sacrifice a land.\nPrevent the next 3 damage that would be dealt this turn to any number of target creatures and/or players, divided as you choose. If Pollen Remedy was kicked, prevent the next 6 damage this way instead.

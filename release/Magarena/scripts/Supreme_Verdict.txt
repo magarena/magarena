@@ -1,5 +1,5 @@
 name=Supreme Verdict
-image=http://mtgimage.com/card/supreme%20verdict.jpg
+image=http://magiccards.info/scans/en/rtr/201.jpg
 value=4.052
 rarity=R
 type=Sorcery
@@ -9,4 +9,4 @@ ability=SN can't be countered.;\
 effect=Destroy all creatures.
 timing=removal
 removal=2
-oracle=Supreme Verdict can't be countered. Destroy all creatures.
+oracle=Supreme Verdict can't be countered.\nDestroy all creatures.

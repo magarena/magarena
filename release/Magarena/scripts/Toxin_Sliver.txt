@@ -1,5 +1,5 @@
 name=Toxin Sliver
-image=http://mtgimage.com/card/toxin%20sliver.jpg
+image=http://magiccards.info/scans/en/le/84.jpg
 value=3.940
 rarity=R
 type=Creature

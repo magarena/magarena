@@ -1,5 +1,5 @@
 name=Eviscerator
-image=http://mtgimage.com/card/eviscerator.jpg
+image=http://magiccards.info/scans/en/ul/52.jpg
 value=3.033
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=5/5
 ability=protection from white;\
         When SN enters the battlefield, you lose 5 life.
 timing=main
-oracle=Protection from white. When Eviscerator enters the battlefield, you lose 5 life.
+oracle=Protection from white\nWhen Eviscerator enters the battlefield, you lose 5 life.

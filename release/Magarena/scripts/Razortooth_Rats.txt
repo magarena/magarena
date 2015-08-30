@@ -1,5 +1,5 @@
 name=Razortooth Rats
-image=http://mtgimage.com/card/razortooth%20rats.jpg
+image=http://magiccards.info/scans/en/9e/158.jpg
 value=2.862
 ability=fear
 rarity=C

@@ -1,14 +1,11 @@
 [
     new MagicWhenSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicCardOnStack spell) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicCardOnStack spell) {
             return new MagicEvent(
                 spell,
                 new MagicMayChoice(
-                    MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD
+                    TARGET_CREATURE_CARD_FROM_GRAVEYARD
                 ),
                 MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
@@ -21,7 +18,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetCard(game, {
-                    game.doAction(new MagicReanimateAction(
+                    game.doAction(new ReanimateAction(
                         it,
                         event.getPlayer()
                     ));

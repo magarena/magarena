@@ -1,6 +1,6 @@
 name=Manaforge Cinder
-image=http://mtgimage.com/card/manaforge%20cinder.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/191.jpg
+value=3.411
 rarity=C
 type=Creature
 subtype=Elemental,Shaman

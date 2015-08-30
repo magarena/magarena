@@ -1,9 +1,9 @@
 name=Explosive Vegetation
-image=http://mtgimage.com/card/explosive%20vegetation.jpg
+image=http://magiccards.info/scans/en/dtk/186.jpg
 value=3.804
 rarity=U
 type=Sorcery
 cost={3}{G}
+effect=Search your library for up to two basic land cards and put them onto the battlefield tapped. Then shuffle your library.
 timing=main
-requires_groovy_code
 oracle=Search your library for up to two basic land cards and put them onto the battlefield tapped. Then shuffle your library.

@@ -1,0 +1,12 @@
+name=Valeron Wardens
+image=http://magiccards.info/scans/en/ori/203.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Monk
+cost={2}{G}
+pt=1/3
+ability=Renown 2;\
+        Whenever a creature you control becomes renowned, draw a card.
+timing=main
+oracle=Renown 2\nWhenever a creature you control becomes renowned, draw a card.

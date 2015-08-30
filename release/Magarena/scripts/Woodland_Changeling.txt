@@ -1,5 +1,5 @@
 name=Woodland Changeling
-image=http://mtgimage.com/card/woodland%20changeling.jpg
+image=http://magiccards.info/scans/en/lw/242.jpg
 value=3.273
 ability=changeling
 rarity=C

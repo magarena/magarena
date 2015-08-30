@@ -1,11 +1,11 @@
 name=Call to Arms
-image=http://mtgimage.com/card/call%20to%20arms.jpg
-value=2.500
-rarity=R
+image=http://magiccards.info/scans/en/me3/4.jpg
+value=2.288
+rarity=U
 type=Enchantment
 cost={1}{W}
 ability=As SN enters the battlefield, choose a color and an opponent.;\
         White creatures get +1/+1 as long as the chosen color is the most common color among nontoken permanents the chosen player controls but isn't tied for most common.;\
         When the chosen color isn't the most common color among nontoken permanents the chosen player controls or is tied for most common, sacrifice SN.
-timing=main
-oracle=As Call to Arms enters the battlefield, choose a color and an opponent. White creatures get +1/+1 as long as the chosen color is the most common color among nontoken permanents the chosen player controls but isn't tied for most common. When the chosen color isn't the most common color among nontoken permanents the chosen player controls or is tied for most common, sacrifice Call to Arms.
+timing=enchantment
+oracle=As Call to Arms enters the battlefield, choose a color and an opponent.\nWhite creatures get +1/+1 as long as the chosen color is the most common color among nontoken permanents the chosen player controls but isn't tied for most common.\nWhen the chosen color isn't the most common color among nontoken permanents the chosen player controls or is tied for most common, sacrifice Call to Arms.

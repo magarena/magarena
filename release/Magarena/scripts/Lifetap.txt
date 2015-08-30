@@ -1,9 +1,9 @@
 name=Lifetap
-image=http://mtgimage.com/card/lifetap.jpg
+image=http://magiccards.info/scans/en/5e/99.jpg
 value=3.029
 rarity=U
 type=Enchantment
 cost={U}{U}
+ability=Whenever a Forest an opponent controls becomes tapped, you gain 1 life.
 timing=main
-requires_groovy_code
 oracle=Whenever a Forest an opponent controls becomes tapped, you gain 1 life.

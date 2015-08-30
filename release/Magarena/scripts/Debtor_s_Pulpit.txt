@@ -1,5 +1,5 @@
 name=Debtor's Pulpit
-image=http://mtgimage.com/card/debtor%27s%20pulpit.jpg
+image=http://magiccards.info/scans/en/gtc/10.jpg
 value=1.791
 rarity=U
 type=Enchantment
@@ -8,4 +8,4 @@ cost={4}{W}
 enchant=pump,pos land
 ability=Enchanted land has "{T}: Tap target creature."
 timing=aura
-oracle=Enchant land. Enchanted land has "{T}: Tap target creature."
+oracle=Enchant land\nEnchanted land has "{T}: Tap target creature."

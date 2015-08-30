@@ -1,9 +1,9 @@
 name=War Cadence
-image=http://mtgimage.com/card/war%20cadence.jpg
-value=2.500
+image=http://magiccards.info/scans/en/c13/128.jpg
+value=3.818
 rarity=U
 type=Enchantment
 cost={2}{R}
 ability={X}{R}: This turn, creatures can't block unless their controller pays {X} for each blocking creature he or she controls.
-timing=main
+timing=enchantment
 oracle={X}{R}: This turn, creatures can't block unless their controller pays {X} for each blocking creature he or she controls.

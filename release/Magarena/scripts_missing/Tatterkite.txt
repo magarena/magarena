@@ -1,6 +1,6 @@
 name=Tatterkite
-image=http://mtgimage.com/card/tatterkite.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/264.jpg
+value=3.026
 rarity=U
 type=Artifact,Creature
 subtype=Scarecrow
@@ -8,5 +8,5 @@ cost={3}
 pt=2/1
 ability=Flying;\
         SN can't have counters placed on it.
-timing=main
-oracle=Flying. Tatterkite can't have counters placed on it.
+timing=artifact
+oracle=Flying\nTatterkite can't have counters placed on it.

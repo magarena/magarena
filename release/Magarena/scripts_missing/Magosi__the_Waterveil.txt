@@ -1,11 +1,11 @@
 name=Magosi, the Waterveil
-image=http://mtgimage.com/card/magosi%2C%20the%20waterveil.jpg
-value=2.500
+image=http://magiccards.info/scans/en/zen/218.jpg
+value=3.512
 rarity=R
 type=Land
 ability=SN enters the battlefield tapped.;\
         {T}: Add {U} to your mana pool.;\
         {U}, {T}: Put an eon counter on SN. Skip your next turn.;\
         {T}, Remove an eon counter from SN and return it to its owner's hand: Take an extra turn after this one.
-timing=main
-oracle=Magosi, the Waterveil enters the battlefield tapped. {T}: Add {U} to your mana pool. {U}, {T}: Put an eon counter on Magosi, the Waterveil. Skip your next turn. {T}, Remove an eon counter from Magosi, the Waterveil and return it to its owner's hand: Take an extra turn after this one.
+timing=land
+oracle=Magosi, the Waterveil enters the battlefield tapped.\n{T}: Add {U} to your mana pool.\n{U}, {T}: Put an eon counter on Magosi, the Waterveil. Skip your next turn.\n{T}, Remove an eon counter from Magosi, the Waterveil and return it to its owner's hand: Take an extra turn after this one.

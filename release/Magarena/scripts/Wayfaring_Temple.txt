@@ -1,5 +1,5 @@
 name=Wayfaring Temple
-image=http://mtgimage.com/card/wayfaring%20temple.jpg
+image=http://magiccards.info/scans/en/rtr/209.jpg
 value=3.892
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=*/*
 ability=SN's power and toughness are each equal to the number of creatures you control.;\
         Whenever SN deals combat damage to a player, populate.
 timing=main
-oracle=Wayfaring Temple's power and toughness are each equal to the number of creatures you control. Whenever Wayfaring Temple deals combat damage to a player, populate.
+oracle=Wayfaring Temple's power and toughness are each equal to the number of creatures you control.\nWhenever Wayfaring Temple deals combat damage to a player, populate.

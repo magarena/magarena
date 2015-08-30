@@ -7,3 +7,4 @@ subtype=Graveborn
 color=BR
 pt=3/1
 ability=haste
+oracle=Haste

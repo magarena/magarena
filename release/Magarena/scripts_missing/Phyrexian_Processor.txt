@@ -1,10 +1,10 @@
 name=Phyrexian Processor
-image=http://mtgimage.com/card/phyrexian%20processor.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pvc/29.jpg
+value=4.562
 rarity=R
 type=Artifact
 cost={4}
 ability=As SN enters the battlefield, pay any amount of life.;\
         {4}, {T}: Put an X/X black Minion creature token onto the battlefield, where X is the life paid as SN entered the battlefield.
-timing=main
-oracle=As Phyrexian Processor enters the battlefield, pay any amount of life. {4}, {T}: Put an X/X black Minion creature token onto the battlefield, where X is the life paid as Phyrexian Processor entered the battlefield.
+timing=artifact
+oracle=As Phyrexian Processor enters the battlefield, pay any amount of life.\n{4}, {T}: Put an X/X black Minion creature token onto the battlefield, where X is the life paid as Phyrexian Processor entered the battlefield.

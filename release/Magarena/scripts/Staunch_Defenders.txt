@@ -1,5 +1,5 @@
 name=Staunch Defenders
-image=http://mtgimage.com/card/staunch%20defenders.jpg
+image=http://magiccards.info/scans/en/8e/49.jpg
 value=3.214
 rarity=U
 type=Creature

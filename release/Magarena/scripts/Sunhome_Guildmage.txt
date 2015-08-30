@@ -1,5 +1,5 @@
 name=Sunhome Guildmage
-image=http://mtgimage.com/card/sunhome%20guildmage.jpg
+image=http://magiccards.info/scans/en/gtc/200.jpg
 value=3.411
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability={1}{R}{W}: Creatures you control get +1/+0 until end of turn.;\
         {2}{R}{W}: Put a 1/1 red and white Soldier creature token with haste onto the battlefield.
 timing=main
-oracle={1}{R}{W}: Creatures you control get +1/+0 until end of turn. {2}{R}{W}: Put a 1/1 red and white Soldier creature token with haste onto the battlefield.
+oracle={1}{R}{W}: Creatures you control get +1/+0 until end of turn.\n{2}{R}{W}: Put a 1/1 red and white Soldier creature token with haste onto the battlefield.

@@ -1,4 +1,4 @@
-def choice = MagicTargetChoice.Negative("target creature with power 2 or less");
+def choice = Negative("target creature with power 2 or less");
 
 [
     new MagicSpellCardEvent() {
@@ -15,8 +15,8 @@ def choice = MagicTargetChoice.Negative("target creature with power 2 or less");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.Exile));
-                game.doAction(new MagicChangeLifeAction(it.getController(),4));
+                game.doAction(new RemoveFromPlayAction(it,MagicLocationType.Exile));
+                game.doAction(new ChangeLifeAction(it.getController(),4));
             });
         }
     }

@@ -1,0 +1,9 @@
+name=Ashnod's Cylix
+image=http://magiccards.info/scans/en/me2/203.jpg
+value=3.345
+rarity=R
+type=Artifact
+cost={2}
+timing=artifact
+requires_groovy_code
+oracle={3}, {T}: Target player looks at the top three cards of his or her library, puts one of them back on top of his or her library, then exiles the rest.

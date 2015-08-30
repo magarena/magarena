@@ -1,9 +1,9 @@
 name=Nighthaze
-image=http://mtgimage.com/card/nighthaze.jpg
+image=http://magiccards.info/scans/en/roe/118.jpg
 value=2.250
 rarity=C
 type=Sorcery
 cost={B}
 effect=Target creature gains swampwalk until end of turn.~Draw a card.
 timing=main
-oracle=Target creature gains swampwalk until end of turn. Draw a card.
+oracle=Target creature gains swampwalk until end of turn.\nDraw a card.

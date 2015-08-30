@@ -1,9 +1,0 @@
-name=Bower Passage
-image=http://mtgimage.com/card/bower%20passage.jpg
-value=2.500
-rarity=U
-type=Enchantment
-cost={1}{G}
-ability=Creatures with flying can't block creatures you control.
-timing=main
-oracle=Creatures with flying can't block creatures you control.

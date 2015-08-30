@@ -12,9 +12,9 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final int amount = player.getNrOfPermanents(MagicSubType.Zombie);
-            game.doAction(new MagicDrawAction(player,amount));
-            game.doAction(new MagicChangeLifeAction(player,-amount));
-            game.logAppendMessage(player," (X="+amount+")");
+            game.doAction(new DrawAction(player,amount));
+            game.doAction(new ChangeLifeAction(player,-amount));
+            game.logAppendX(player,amount);
         }
     }
 ]

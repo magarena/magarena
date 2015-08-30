@@ -1,6 +1,6 @@
 name=Seed Spark
-image=http://mtgimage.com/card/seed%20spark.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rav/30.jpg
+value=3.206
 rarity=U
 type=Instant
 cost={3}{W}

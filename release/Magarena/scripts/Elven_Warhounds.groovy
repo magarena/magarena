@@ -1,23 +1,17 @@
 [
-    new MagicWhenSelfBecomesBlockedTrigger() {
+    new MagicWhenSelfBecomesBlockedByTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
-            final MagicPermanentList plist = new MagicPermanentList(permanent.getBlockingCreatures());
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
             return new MagicEvent(
                 permanent,
-                plist,
+                blocker,
                 this,
-                plist.size() == 1 ?
-                    "Put " + plist.get(0) + " on top of its owner's library." :
-                    "Put blocking creatures on top of their owner's library."
+                "PN puts RN on top of its owner's library."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPermanentList plist = event.getRefPermanentList();
-            for (final MagicPermanent blocker : plist) {
-                game.doAction(new MagicRemoveFromPlayAction(blocker,MagicLocationType.TopOfOwnersLibrary));
-            }
+            game.doAction(new RemoveFromPlayAction(event.getRefPermanent(), MagicLocationType.TopOfOwnersLibrary));
         }
     }
 ]

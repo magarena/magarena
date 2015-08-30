@@ -1,5 +1,5 @@
 name=Jhovall Rider
-image=http://mtgimage.com/card/jhovall%20rider.jpg
+image=http://magiccards.info/scans/en/mm/26.jpg
 value=2.300
 rarity=U
 type=Creature

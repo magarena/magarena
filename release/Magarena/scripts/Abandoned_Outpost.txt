@@ -1,5 +1,5 @@
 name=Abandoned Outpost
-image=http://mtgimage.com/card/abandoned%20outpost.jpg
+image=http://magiccards.info/scans/en/od/312.jpg
 value=2.240
 rarity=C
 type=Land
@@ -8,4 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {W} to your mana pool.;\
         {T}, Sacrifice SN: Add one mana of any color to your mana pool.
 timing=tapland
-oracle=Abandoned Outpost enters the battlefield tapped. {T}: Add {W} to your mana pool. {T}, Sacrifice Abandoned Outpost: Add one mana of any color to your mana pool.
+oracle=Abandoned Outpost enters the battlefield tapped.\n{T}: Add {W} to your mana pool.\n{T}, Sacrifice Abandoned Outpost: Add one mana of any color to your mana pool.

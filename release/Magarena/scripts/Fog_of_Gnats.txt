@@ -1,5 +1,5 @@
 name=Fog of Gnats
-image=http://mtgimage.com/card/fog%20of%20gnats.jpg
+image=http://magiccards.info/scans/en/ul/53.jpg
 value=4.292
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=flying;\
         {B}: Regenerate SN.
 timing=main
-oracle=Flying. {B}: Regenerate Fog of Gnats.
+oracle=Flying\n{B}: Regenerate Fog of Gnats.

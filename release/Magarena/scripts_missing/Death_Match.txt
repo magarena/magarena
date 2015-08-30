@@ -1,9 +1,9 @@
 name=Death Match
-image=http://mtgimage.com/card/death%20match.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/136.jpg
+value=3.463
 rarity=R
 type=Enchantment
 cost={3}{B}
 ability=Whenever a creature enters the battlefield, that creature's controller may have target creature of his or her choice get -3/-3 until end of turn.
-timing=main
+timing=enchantment
 oracle=Whenever a creature enters the battlefield, that creature's controller may have target creature of his or her choice get -3/-3 until end of turn.

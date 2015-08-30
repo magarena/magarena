@@ -1,9 +1,10 @@
 name=Turn the Tide
-image=http://mtgimage.com/card/turn%20the%20tide.jpg
+image=http://magiccards.info/scans/en/cns/110.jpg
 value=2.667
 rarity=C
 type=Instant
 cost={1}{U}
+ability=Cast SN with AI only if an opponent controls a creature.
 effect=Creatures your opponents control get -2/-0 until end of turn.
 timing=removal
 oracle=Creatures your opponents control get -2/-0 until end of turn.

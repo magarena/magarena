@@ -1,5 +1,5 @@
 name=Xiahou Dun, the One-Eyed
-image=http://mtgimage.com/card/xiahou%20dun%2C%20the%20one-eyed.jpg
+image=http://magiccards.info/scans/en/me3/83.jpg
 value=4.122
 rarity=R
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=3/2
 ability=Horsemanship;\
         Sacrifice SN: Return target black card from your graveyard to your hand. Activate this ability only during your turn, before attackers are declared.
 timing=main
-oracle=Horsemanship. Sacrifice Xiahou Dun, the One-Eyed: Return target black card from your graveyard to your hand. Activate this ability only during your turn, before attackers are declared.
+oracle=Horsemanship\nSacrifice Xiahou Dun, the One-Eyed: Return target black card from your graveyard to your hand. Activate this ability only during your turn, before attackers are declared.

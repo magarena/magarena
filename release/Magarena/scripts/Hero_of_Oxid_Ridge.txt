@@ -1,5 +1,5 @@
 name=Hero of Oxid Ridge
-image=http://mtgimage.com/card/hero%20of%20oxid%20ridge.jpg
+image=http://magiccards.info/scans/en/mbs/66.jpg
 value=3.868
 rarity=M
 type=Creature
@@ -10,4 +10,4 @@ ability=Haste;\
         Battle cry;\
         Whenever SN attacks, creatures with power 1 or less can't block this turn.
 timing=main
-oracle=Haste. Battle cry. Whenever Hero of Oxid Ridge attacks, creatures with power 1 or less can't block this turn.
+oracle=Haste\nBattle cry\nWhenever Hero of Oxid Ridge attacks, creatures with power 1 or less can't block this turn.

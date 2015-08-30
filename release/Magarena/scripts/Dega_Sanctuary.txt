@@ -1,0 +1,9 @@
+name=Dega Sanctuary
+image=http://magiccards.info/scans/en/ap/5.jpg
+value=3.707
+rarity=U
+type=Enchantment
+cost={2}{W}
+timing=enchantment
+requires_groovy_code
+oracle=At the beginning of your upkeep, if you control a black or red permanent, you gain 2 life. If you control a black permanent and a red permanent, you gain 4 life instead.

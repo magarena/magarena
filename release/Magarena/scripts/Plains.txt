@@ -1,9 +1,9 @@
 name=Plains
-image=http://mtgimage.com/set/ZEN/plains1.jpg
+image=http://magiccards.info/scans/en/zen/230.jpg
 value=3.500
-rarity=L
+rarity=B
 type=Basic,Land
 subtype=Plains
 mana=w4
 timing=land
-oracle=W
+oracle=NONE

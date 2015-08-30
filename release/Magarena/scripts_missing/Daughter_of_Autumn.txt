@@ -1,6 +1,6 @@
 name=Daughter of Autumn
-image=http://mtgimage.com/card/daughter%20of%20autumn.jpg
-value=2.500
+image=http://magiccards.info/scans/en/hl/56.jpg
+value=1.438
 rarity=R
 type=Legendary,Creature
 subtype=Avatar

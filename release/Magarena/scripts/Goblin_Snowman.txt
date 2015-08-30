@@ -1,0 +1,11 @@
+name=Goblin Snowman
+image=http://magiccards.info/scans/en/tsts/64.jpg
+value=4.103
+rarity=U
+type=Creature
+subtype=Goblin
+cost={3}{R}
+pt=1/1
+timing=main
+requires_groovy_code
+oracle=Whenever Goblin Snowman blocks, prevent all combat damage that would be dealt to and dealt by it this turn.\n{T}: Goblin Snowman deals 1 damage to target creature it's blocking.

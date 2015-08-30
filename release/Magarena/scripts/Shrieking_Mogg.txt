@@ -1,12 +1,12 @@
 name=Shrieking Mogg
-image=http://mtgimage.com/card/shrieking%20mogg.jpg
+image=http://magiccards.info/scans/en/ne/99.jpg
 value=3.557
 rarity=R
 type=Creature
 subtype=Goblin
 cost={1}{R}
 pt=1/1
-ability=haste
+ability=haste;\
+        When SN enters the battlefield, tap all other creatures.
 timing=fmain
-requires_groovy_code=Timbermare
-oracle=Haste. When Shrieking Mogg enters the battlefield, tap all other creatures.
+oracle=Haste\nWhen Shrieking Mogg enters the battlefield, tap all other creatures.

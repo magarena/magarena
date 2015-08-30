@@ -1,0 +1,11 @@
+name=Marshmist Titan
+image=http://magiccards.info/scans/en/bng/76.jpg
+value=3.702
+rarity=C
+type=Creature
+subtype=Giant
+cost={6}{B}
+pt=4/5
+timing=main
+requires_groovy_code
+oracle=Marshmist Titan costs {X} less to cast, where X is your devotion to black.

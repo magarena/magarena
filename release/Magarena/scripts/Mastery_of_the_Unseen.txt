@@ -1,0 +1,10 @@
+name=Mastery of the Unseen
+image=http://magiccards.info/scans/en/frf/19.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={1}{W}
+ability=Whenever a permanent you control is turned face up, you gain 1 life for each creature you control.;\
+        {3}{W}: Manifest the top card of your library.
+timing=enchantment
+oracle=Whenever a permanent you control is turned face up, you gain 1 life for each creature you control.\n{3}{W}: Manifest the top card of your library.

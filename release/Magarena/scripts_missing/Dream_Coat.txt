@@ -1,11 +1,11 @@
 name=Dream Coat
-image=http://mtgimage.com/card/dream%20coat.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lg/51.jpg
+value=2.547
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={U}
 ability=Enchant creature;\
         {0}: Enchanted creature becomes the color or colors of your choice. Activate this ability only once each turn.
-timing=main
-oracle=Enchant creature. {0}: Enchanted creature becomes the color or colors of your choice. Activate this ability only once each turn.
+timing=aura
+oracle=Enchant creature\n{0}: Enchanted creature becomes the color or colors of your choice. Activate this ability only once each turn.

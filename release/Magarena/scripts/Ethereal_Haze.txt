@@ -1,0 +1,10 @@
+name=Ethereal Haze
+image=http://magiccards.info/scans/en/chk/9.jpg
+value=3.897
+rarity=C
+type=Instant
+subtype=Arcane
+cost={W}
+timing=attack
+requires_groovy_code
+oracle=Prevent all damage that would be dealt by creatures this turn.

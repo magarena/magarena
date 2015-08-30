@@ -25,7 +25,7 @@
         @Override
         public void executeEvent(final MagicGame game,final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            game.doAction(new MagicDrawAction(player));
+            game.doAction(new DrawAction(player));
         }
     }
 ]

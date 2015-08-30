@@ -1,10 +1,10 @@
 name=Jester's Scepter
-image=http://mtgimage.com/card/jester%27s%20scepter.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cs/137.jpg
+value=3.922
 rarity=R
 type=Artifact
 cost={3}
 ability=When SN enters the battlefield, exile the top five cards of target player's library face down. You may look at those cards for as long as they remain exiled.;\
         {2}, {T}, Put a card exiled with SN into its owner's graveyard: Counter target spell if it has the same name as that card.
-timing=main
-oracle=When Jester's Scepter enters the battlefield, exile the top five cards of target player's library face down. You may look at those cards for as long as they remain exiled. {2}, {T}, Put a card exiled with Jester's Scepter into its owner's graveyard: Counter target spell if it has the same name as that card.
+timing=artifact
+oracle=When Jester's Scepter enters the battlefield, exile the top five cards of target player's library face down. You may look at those cards for as long as they remain exiled.\n{2}, {T}, Put a card exiled with Jester's Scepter into its owner's graveyard: Counter target spell if it has the same name as that card.

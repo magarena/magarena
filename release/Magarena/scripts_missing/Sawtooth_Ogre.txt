@@ -1,6 +1,6 @@
 name=Sawtooth Ogre
-image=http://mtgimage.com/card/sawtooth%20ogre.jpg
-value=2.500
+image=http://magiccards.info/scans/en/wl/114.jpg
+value=3.211
 rarity=C
 type=Creature
 subtype=Ogre

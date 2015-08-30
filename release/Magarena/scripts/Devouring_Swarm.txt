@@ -1,5 +1,5 @@
 name=Devouring Swarm
-image=http://mtgimage.com/card/devouring%20swarm.jpg
+image=http://magiccards.info/scans/en/m12/91.jpg
 value=2.750
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=flying;\
         Sacrifice a creature: SN gets +1/+1 until end of turn.
 timing=main
-oracle=Flying. Sacrifice a creature: Devouring Swarm gets +1/+1 until end of turn.
+oracle=Flying\nSacrifice a creature: Devouring Swarm gets +1/+1 until end of turn.

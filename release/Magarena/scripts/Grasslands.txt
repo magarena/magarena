@@ -1,9 +1,9 @@
 name=Grasslands
-image=http://mtgimage.com/card/grasslands.jpg
+image=http://magiccards.info/scans/en/vma/299.jpg
 value=2.500
 rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\
         {T},Sacrifice SN: Search your library for a Forest or Plains card and put it onto the battlefield. Then shuffle your library.
 timing=land
-oracle=Grasslands enters the battlefield tapped. {T}, Sacrifice Grasslands: Search your library for a Forest or Plains card and put it onto the battlefield. Then shuffle your library.
+oracle=Grasslands enters the battlefield tapped.\n{T}, Sacrifice Grasslands: Search your library for a Forest or Plains card and put it onto the battlefield. Then shuffle your library.

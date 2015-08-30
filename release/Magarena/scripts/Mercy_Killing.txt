@@ -1,0 +1,9 @@
+name=Mercy Killing
+image=http://magiccards.info/scans/en/shm/231.jpg
+value=3.852
+rarity=U
+type=Instant
+cost={2}{G/W}
+timing=token
+requires_groovy_code
+oracle=Target creature's controller sacrifices it, then puts X 1/1 green and white Elf Warrior creature tokens onto the battlefield, where X is that creature's power.

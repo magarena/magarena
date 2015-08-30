@@ -1,6 +1,6 @@
 name=Wizened Snitches
-image=http://mtgimage.com/card/wizened%20snitches.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rav/75.jpg
+value=2.458
 rarity=U
 type=Creature
 subtype=Faerie,Rogue
@@ -9,4 +9,4 @@ pt=1/3
 ability=Flying;\
         Players play with the top card of their libraries revealed.
 timing=main
-oracle=Flying. Players play with the top card of their libraries revealed.
+oracle=Flying\nPlayers play with the top card of their libraries revealed.

@@ -1,5 +1,5 @@
 name=Indomitable Will
-image=http://mtgimage.com/card/indomitable%20will.jpg
+image=http://magiccards.info/scans/en/chk/17.jpg
 value=2.586
 rarity=C
 type=Enchantment
@@ -9,4 +9,4 @@ ability=Flash;\
         Enchanted creature gets +1/+2.
 timing=pumpFlash
 enchant=pump,pos creature
-oracle=Flash. Enchant creature. Enchanted creature gets +1/+2.
+oracle=Flash\nEnchant creature\nEnchanted creature gets +1/+2.

@@ -1,5 +1,5 @@
 name=Familiar's Ruse
-image=http://mtgimage.com/card/familiar's%20ruse.jpg
+image=http://magiccards.info/scans/en/lw/64.jpg
 value=3.791
 rarity=U
 type=Instant
@@ -7,4 +7,4 @@ cost={U}{U}
 ability=As an additional cost to cast SN, return a creature you control to its owner's hand.
 effect=Counter target spell.
 timing=counter
-oracle=As an additional cost to cast Familiar's Ruse, return a creature you control to its owner's hand. Counter target spell.
+oracle=As an additional cost to cast Familiar's Ruse, return a creature you control to its owner's hand.\nCounter target spell.

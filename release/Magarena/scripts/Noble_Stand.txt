@@ -1,0 +1,9 @@
+name=Noble Stand
+image=http://magiccards.info/scans/en/ne/14.jpg
+value=3.019
+rarity=U
+type=Enchantment
+cost={4}{W}
+ability=Whenever a creature you control blocks, you gain 2 life.
+timing=enchantment
+oracle=Whenever a creature you control blocks, you gain 2 life.

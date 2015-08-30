@@ -1,10 +1,10 @@
 name=Khalni Gem
-image=http://mtgimage.com/card/khalni%20gem.jpg
-value=2.500
+image=http://magiccards.info/scans/en/zen/205.jpg
+value=3.614
 rarity=U
 type=Artifact
 cost={4}
 ability=When SN enters the battlefield, return two lands you control to their owner's hand.;\
         {T}: Add two mana of any one color to your mana pool.
-timing=main
-oracle=When Khalni Gem enters the battlefield, return two lands you control to their owner's hand. {T}: Add two mana of any one color to your mana pool.
+timing=artifact
+oracle=When Khalni Gem enters the battlefield, return two lands you control to their owner's hand.\n{T}: Add two mana of any one color to your mana pool.

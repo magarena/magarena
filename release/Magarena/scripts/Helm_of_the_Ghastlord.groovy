@@ -11,7 +11,7 @@ def Draw = new MagicWhenDamageIsDealtTrigger() {
     }
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(new MagicDrawAction(event.getPlayer()));
+        game.doAction(new DrawAction(event.getPlayer()));
     }
 };
 def Discard = new MagicWhenDamageIsDealtTrigger() {
@@ -30,8 +30,8 @@ def Discard = new MagicWhenDamageIsDealtTrigger() {
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         game.addEvent(new MagicDiscardEvent(event.getSource(), event.getRefPlayer()));
     }
-}; 
-  
+};
+
 [
     new MagicStatic(MagicLayer.ModPT) {
         @Override

@@ -1,9 +1,9 @@
 name=Devastating Dreams
-image=http://mtgimage.com/card/devastating%20dreams.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tr/95.jpg
+value=3.743
 rarity=R
 type=Sorcery
 cost={R}{R}
 effect=As an additional cost to cast SN, discard X cards at random.~Each player sacrifices X lands. SN deals X damage to each creature.
 timing=main
-oracle=As an additional cost to cast Devastating Dreams, discard X cards at random. Each player sacrifices X lands. Devastating Dreams deals X damage to each creature.
+oracle=As an additional cost to cast Devastating Dreams, discard X cards at random.\nEach player sacrifices X lands. Devastating Dreams deals X damage to each creature.

@@ -1,9 +1,9 @@
 name=Sunhome, Fortress of the Legion
-image=http://mtgimage.com/card/sunhome%2C%20fortress%20of%20the%20legion.jpg
+image=http://magiccards.info/scans/en/pch/138.jpg
 value=3.488
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\
         {2}{R}{W}, {T}: Target creature gains double strike until end of turn.
 timing=land
-oracle={T}: Add {1} to your mana pool. {2}{R}{W}, {T}: Target creature gains double strike until end of turn.
+oracle={T}: Add {1} to your mana pool.\n{2}{R}{W}, {T}: Target creature gains double strike until end of turn.

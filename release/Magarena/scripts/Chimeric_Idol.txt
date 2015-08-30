@@ -1,9 +1,9 @@
 name=Chimeric Idol
-image=http://mtgimage.com/card/chimeric%20idol.jpg
+image=http://magiccards.info/scans/en/vma/264.jpg
 value=3.500
 rarity=U
 type=Artifact
 cost={3}
+ability={0}: Tap all lands you control.~SN becomes a 3/3 Turtle artifact creature until end of turn. Activate this ability with AI no more than three times each turn.
 timing=main
-requires_groovy_code
 oracle={0}: Tap all lands you control. Chimeric Idol becomes a 3/3 Turtle artifact creature until end of turn.

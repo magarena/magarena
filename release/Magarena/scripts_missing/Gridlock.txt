@@ -1,6 +1,6 @@
 name=Gridlock
-image=http://mtgimage.com/card/gridlock.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gtc/36.jpg
+value=2.946
 rarity=U
 type=Instant
 cost={X}{U}

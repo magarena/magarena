@@ -1,6 +1,6 @@
 name=Pale Moon
-image=http://mtgimage.com/card/pale%20moon.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ne/36.jpg
+value=1.382
 rarity=R
 type=Instant
 cost={1}{U}

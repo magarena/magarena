@@ -1,11 +1,11 @@
 name=Ghitu Fire-Eater
-image=http://mtgimage.com/card/ghitu%20fire-eater.jpg
+image=http://magiccards.info/scans/en/7e/184.jpg
 value=3.293
 rarity=U
 type=Creature
 subtype=Human,Nomad
 cost={2}{R}
 pt=2/2
+ability={T}, Sacrifice SN: SN deals damage equal to its power to target creature or player.
 timing=main
-requires_groovy_code
 oracle={T}, Sacrifice Ghitu Fire-Eater: Ghitu Fire-Eater deals damage equal to its power to target creature or player.

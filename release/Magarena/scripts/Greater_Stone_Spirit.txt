@@ -1,5 +1,5 @@
 name=Greater Stone Spirit
-image=http://mtgimage.com/card/greater%20stone%20spirit.jpg
+image=http://magiccards.info/scans/en/ddi/61.jpg
 value=2.433
 rarity=U
 type=Creature
@@ -7,6 +7,6 @@ subtype=Elemental,Spirit
 cost={4}{R}{R}
 pt=4/4
 ability=SN can't be blocked by creatures with flying.;\
-        {2}{R}:Target creature gets +0/+2 and gains "{R}:SN gets +1/+0 until end of turn." until end of turn.
+        {2}{R}: Target creature gets +0/+2 and gains "{R}: This creature gets +1/+0 until end of turn." until end of turn.
 timing=main
-oracle=Greater Stone Spirit can't be blocked by creatures with flying. {2}{R}: Until end of turn, target creature gets +0/+2 and gains "{R}: This creature gets +1/+0 until end of turn."
+oracle=Greater Stone Spirit can't be blocked by creatures with flying.\n{2}{R}: Until end of turn, target creature gets +0/+2 and gains "{R}: This creature gets +1/+0 until end of turn."

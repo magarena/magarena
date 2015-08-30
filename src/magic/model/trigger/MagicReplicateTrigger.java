@@ -2,7 +2,7 @@ package magic.model.trigger;
 
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicCopyCardOnStackAction;
+import magic.model.action.CopyCardOnStackAction;
 import magic.model.event.MagicEvent;
 import magic.model.stack.MagicCardOnStack;
 
@@ -33,7 +33,7 @@ public class MagicReplicateTrigger extends MagicWhenSpellIsCastTrigger {
         final MagicCardOnStack cardOnStack = event.getCardOnStack();
         final int kickerCount = cardOnStack.getKicker();
         for (int i = 0; i < kickerCount; i++) {
-            game.doAction(new MagicCopyCardOnStackAction(
+            game.doAction(new CopyCardOnStackAction(
                 cardOnStack.getController(),
                 cardOnStack
             ));

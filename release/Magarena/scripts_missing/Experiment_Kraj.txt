@@ -1,6 +1,6 @@
 name=Experiment Kraj
-image=http://mtgimage.com/card/experiment%20kraj.jpg
-value=2.500
+image=http://magiccards.info/scans/en/di/110.jpg
+value=4.193
 rarity=R
 type=Legendary,Creature
 subtype=Ooze,Mutant
@@ -9,4 +9,4 @@ pt=4/6
 ability=SN has all activated abilities of each other creature with a +1/+1 counter on it.;\
         {T}: Put a +1/+1 counter on target creature.
 timing=main
-oracle=Experiment Kraj has all activated abilities of each other creature with a +1/+1 counter on it. {T}: Put a +1/+1 counter on target creature.
+oracle=Experiment Kraj has all activated abilities of each other creature with a +1/+1 counter on it.\n{T}: Put a +1/+1 counter on target creature.

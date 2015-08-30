@@ -8,7 +8,7 @@
                     new MagicSimpleMayChoice(
                         MagicSimpleMayChoice.DRAW_CARDS,
                         1,
-                        MagicSimpleMayChoice.DEFAULT_YES
+                        MagicSimpleMayChoice.DEFAULT_NONE
                     ),
                     this,
                     "PN may\$ draw a card."
@@ -18,7 +18,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()){
-                game.doAction(new MagicDrawAction(event.getPlayer()));
+                game.doAction(new DrawAction(event.getPlayer()));
             }
         }
     }

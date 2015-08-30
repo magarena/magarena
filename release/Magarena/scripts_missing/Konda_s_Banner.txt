@@ -1,6 +1,6 @@
 name=Konda's Banner
-image=http://mtgimage.com/card/konda%27s%20banner.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/259.jpg
+value=3.698
 rarity=R
 type=Legendary,Artifact
 subtype=Equipment
@@ -9,5 +9,5 @@ ability=SN can be attached only to a legendary creature.;\
         Creatures that share a color with equipped creature get +1/+1.;\
         Creatures that share a creature type with equipped creature get +1/+1.;\
         Equip {2}
-timing=main
-oracle=Konda's Banner can be attached only to a legendary creature. Creatures that share a color with equipped creature get +1/+1. Creatures that share a creature type with equipped creature get +1/+1. Equip {2}
+timing=equipment
+oracle=Konda's Banner can be attached only to a legendary creature.\nCreatures that share a color with equipped creature get +1/+1.\nCreatures that share a creature type with equipped creature get +1/+1.\nEquip {2}

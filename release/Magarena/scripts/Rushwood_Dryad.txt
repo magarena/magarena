@@ -1,5 +1,5 @@
 name=Rushwood Dryad
-image=http://mtgimage.com/card/rushwood%20dryad.jpg
+image=http://magiccards.info/scans/en/10e/294.jpg
 value=3.000
 ability=forestwalk
 rarity=C

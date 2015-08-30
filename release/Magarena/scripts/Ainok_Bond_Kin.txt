@@ -1,6 +1,6 @@
 name=Ainok Bond-Kin
-image=http://mtgimage.com/card/ainok%20bond-kin.jpg
-value=3.667
+image=http://magiccards.info/scans/en/ktk/3.jpg
+value=3.643
 rarity=C
 type=Creature
 subtype=Hound,Soldier
@@ -9,4 +9,4 @@ pt=2/1
 ability=Outlast {1}{W};\
         Each creature you control with a +1/+1 counter on it has first strike.
 timing=main
-oracle=Outlast {1}{W}. Each creature you control with a +1/+1 counter on it has first strike.
+oracle=Outlast {1}{W}\nEach creature you control with a +1/+1 counter on it has first strike.

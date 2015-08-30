@@ -1,11 +1,11 @@
 name=Tombstone Stairwell
-image=http://mtgimage.com/card/tombstone%20stairwell.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/47.jpg
+value=4.315
 rarity=R
 type=World,Enchantment
 cost={2}{B}{B}
 ability=Cumulative upkeep {1}{B};\
         At the beginning of each upkeep, if SN is on the battlefield, each player puts a 2/2 black Zombie creature token with haste named Tombspawn onto the battlefield for each creature card in his or her graveyard.;\
         At the beginning of each end step or when SN leaves the battlefield, destroy all tokens put onto the battlefield with SN. They can't be regenerated.
-timing=main
-oracle=Cumulative upkeep {1}{B}. At the beginning of each upkeep, if Tombstone Stairwell is on the battlefield, each player puts a 2/2 black Zombie creature token with haste named Tombspawn onto the battlefield for each creature card in his or her graveyard. At the beginning of each end step or when Tombstone Stairwell leaves the battlefield, destroy all tokens put onto the battlefield with Tombstone Stairwell. They can't be regenerated.
+timing=enchantment
+oracle=Cumulative upkeep {1}{B}\nAt the beginning of each upkeep, if Tombstone Stairwell is on the battlefield, each player puts a 2/2 black Zombie creature token with haste named Tombspawn onto the battlefield for each creature card in his or her graveyard.\nAt the beginning of each end step or when Tombstone Stairwell leaves the battlefield, destroy all tokens put onto the battlefield with Tombstone Stairwell. They can't be regenerated.

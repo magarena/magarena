@@ -1,6 +1,6 @@
 name=Redirect
-image=http://mtgimage.com/card/redirect.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m13/64.jpg
+value=4.043
 rarity=R
 type=Instant
 cost={U}{U}

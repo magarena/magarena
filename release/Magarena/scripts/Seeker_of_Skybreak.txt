@@ -1,11 +1,11 @@
 name=Seeker of Skybreak
-image=http://mtgimage.com/card/seeker%20of%20skybreak.jpg
+image=http://magiccards.info/scans/en/7e/268.jpg
 value=4.169
 rarity=C
 type=Creature
 subtype=Elf
 cost={1}{G}
 pt=2/1
-ability={T}:Untap target creature.
+ability={T}: Untap target creature. Activate this ability with AI no more than three times each turn.
 timing=main
 oracle={T}: Untap target creature.

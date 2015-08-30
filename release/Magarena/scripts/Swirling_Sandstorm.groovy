@@ -11,9 +11,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (MagicCondition.THRESHOLD_CONDITION.accept(event.getSource())) {
-                final Collection<MagicPermanent> targets = game.filterPermanents(MagicTargetFilterFactory.CREATURE_WITHOUT_FLYING);
-                for (final MagicPermanent target : targets) {
-                    game.doAction(new MagicDealDamageAction(event.getSource(),target,5));
+                CREATURE_WITHOUT_FLYING.filter(event) each {
+                    game.doAction(new DealDamageAction(event.getSource(),it,5));
                 }
             }
         }

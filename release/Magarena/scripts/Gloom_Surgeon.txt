@@ -1,5 +1,5 @@
 name=Gloom Surgeon
-image=http://mtgimage.com/card/gloom%20surgeon.jpg
+image=http://magiccards.info/scans/en/avr/104.jpg
 value=2.973
 rarity=R
 type=Creature

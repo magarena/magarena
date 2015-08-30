@@ -1,5 +1,5 @@
 name=Flowstone Wyvern
-image=http://mtgimage.com/card/flowstone%20wyvern.jpg
+image=http://magiccards.info/scans/en/tp/176.jpg
 value=2.529
 rarity=R
 type=Creature
@@ -8,4 +8,4 @@ cost={3}{R}{R}
 pt=3/3
 ability=flying;{R}: SN gets +2/-2 until end of turn.
 timing=main
-oracle=Flying. {R}: Flowstone Wyvern gets +2/-2 until end of turn.
+oracle=Flying\n{R}: Flowstone Wyvern gets +2/-2 until end of turn.

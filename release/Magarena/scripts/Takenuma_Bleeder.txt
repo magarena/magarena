@@ -1,5 +1,5 @@
 name=Takenuma Bleeder
-image=http://mtgimage.com/card/takenuma%20bleeder.jpg
+image=http://magiccards.info/scans/en/bok/86.jpg
 value=1.903
 rarity=C
 type=Creature

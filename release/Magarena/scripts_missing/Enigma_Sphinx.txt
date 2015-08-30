@@ -1,6 +1,6 @@
 name=Enigma Sphinx
-image=http://mtgimage.com/card/enigma%20sphinx.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pc2/89.jpg
+value=3.021
 rarity=R
 type=Artifact,Creature
 subtype=Sphinx
@@ -9,5 +9,5 @@ pt=5/4
 ability=Flying;\
         When SN is put into your graveyard from the battlefield, put it into your library third from the top.;\
         Cascade
-timing=main
-oracle=Flying. When Enigma Sphinx is put into your graveyard from the battlefield, put it into your library third from the top. Cascade
+timing=artifact
+oracle=Flying\nWhen Enigma Sphinx is put into your graveyard from the battlefield, put it into your library third from the top.\nCascade

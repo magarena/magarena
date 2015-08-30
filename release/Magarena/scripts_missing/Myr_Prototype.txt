@@ -1,6 +1,6 @@
 name=Myr Prototype
-image=http://mtgimage.com/card/myr%20prototype.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mi/214.jpg
+value=1.659
 rarity=U
 type=Artifact,Creature
 subtype=Myr
@@ -8,5 +8,5 @@ cost={5}
 pt=2/2
 ability=At the beginning of your upkeep, put a +1/+1 counter on SN.;\
         SN can't attack or block unless you pay {1} for each +1/+1 counter on it.
-timing=main
-oracle=At the beginning of your upkeep, put a +1/+1 counter on Myr Prototype. Myr Prototype can't attack or block unless you pay {1} for each +1/+1 counter on it.
+timing=artifact
+oracle=At the beginning of your upkeep, put a +1/+1 counter on Myr Prototype.\nMyr Prototype can't attack or block unless you pay {1} for each +1/+1 counter on it.

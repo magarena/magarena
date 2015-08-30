@@ -1,5 +1,5 @@
 name=Dark Withering
-image=http://mtgimage.com/card/dark%20withering.jpg
+image=http://magiccards.info/scans/en/ts/101.jpg
 value=3.185
 rarity=C
 type=Instant
@@ -7,4 +7,4 @@ cost={4}{B}{B}
 effect=Destroy target nonblack creature.
 ability=Madness {B}
 timing=removal
-oracle=Destroy target nonblack creature. Madness {B}
+oracle=Destroy target nonblack creature.\nMadness {B}

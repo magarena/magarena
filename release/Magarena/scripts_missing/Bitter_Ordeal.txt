@@ -1,9 +1,9 @@
 name=Bitter Ordeal
-image=http://mtgimage.com/card/bitter%20ordeal.jpg
-value=2.500
+image=http://magiccards.info/scans/en/fut/80.jpg
+value=4.350
 rarity=R
 type=Sorcery
 cost={2}{B}
 effect=Search target player's library for a card and exile it. Then that player shuffles his or her library.~Gravestorm
 timing=main
-oracle=Search target player's library for a card and exile it. Then that player shuffles his or her library. Gravestorm
+oracle=Search target player's library for a card and exile it. Then that player shuffles his or her library.\nGravestorm

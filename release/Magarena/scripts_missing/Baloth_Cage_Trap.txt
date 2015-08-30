@@ -1,10 +1,10 @@
 name=Baloth Cage Trap
-image=http://mtgimage.com/card/baloth%20cage%20trap.jpg
-value=2.500
+image=http://magiccards.info/scans/en/zen/156.jpg
+value=3.824
 rarity=U
 type=Instant
 subtype=Trap
 cost={3}{G}{G}
 effect=If an opponent had an artifact enter the battlefield under his or her control this turn, you may pay {1}{G} rather than pay SN's mana cost.~Put a 4/4 green Beast creature token onto the battlefield.
 timing=removal
-oracle=If an opponent had an artifact enter the battlefield under his or her control this turn, you may pay {1}{G} rather than pay Baloth Cage Trap's mana cost. Put a 4/4 green Beast creature token onto the battlefield.
+oracle=If an opponent had an artifact enter the battlefield under his or her control this turn, you may pay {1}{G} rather than pay Baloth Cage Trap's mana cost.\nPut a 4/4 green Beast creature token onto the battlefield.

@@ -1,0 +1,9 @@
+name=Tail Slash
+image=http://magiccards.info/scans/en/dtk/161.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{R}
+effect=Target creature you control deals damage equal to its power to target creature you don't control.
+timing=removal
+oracle=Target creature you control deals damage equal to its power to target creature you don't control.

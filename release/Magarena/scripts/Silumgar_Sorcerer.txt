@@ -1,0 +1,14 @@
+name=Silumgar Sorcerer
+image=http://magiccards.info/scans/en/dtk/76.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={1}{U}{U}
+pt=2/1
+ability=Flash;\
+        Flying;\
+        Exploit;\
+        When SN exploits a creature, counter target creature spell.
+timing=counterflash
+oracle=Flash\nFlying\nExploit\nWhen Silumgar Sorcerer exploits a creature, counter target creature spell.

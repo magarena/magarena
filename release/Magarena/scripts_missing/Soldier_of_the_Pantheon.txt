@@ -1,6 +1,6 @@
 name=Soldier of the Pantheon
-image=http://mtgimage.com/card/soldier%20of%20the%20pantheon.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ths/32.jpg
+value=3.743
 rarity=R
 type=Creature
 subtype=Human,Soldier
@@ -9,4 +9,4 @@ pt=2/1
 ability=Protection from multicolored;\
         Whenever an opponent casts a multicolored spell, you gain 1 life.
 timing=main
-oracle=Protection from multicolored. Whenever an opponent casts a multicolored spell, you gain 1 life.
+oracle=Protection from multicolored\nWhenever an opponent casts a multicolored spell, you gain 1 life.

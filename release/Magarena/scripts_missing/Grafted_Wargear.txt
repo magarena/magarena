@@ -1,6 +1,6 @@
 name=Grafted Wargear
-image=http://mtgimage.com/card/grafted%20wargear.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5dn/126.jpg
+value=4.340
 rarity=U
 type=Artifact
 subtype=Equipment
@@ -8,5 +8,5 @@ cost={3}
 ability=Equipped creature gets +3/+2.;\
         Whenever SN becomes unattached from a permanent, sacrifice that permanent.;\
         Equip {0}
-timing=main
-oracle=Equipped creature gets +3/+2. Whenever Grafted Wargear becomes unattached from a permanent, sacrifice that permanent. Equip {0}
+timing=equipment
+oracle=Equipped creature gets +3/+2.\nWhenever Grafted Wargear becomes unattached from a permanent, sacrifice that permanent.\nEquip {0}

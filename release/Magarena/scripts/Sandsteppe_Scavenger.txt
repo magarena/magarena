@@ -1,0 +1,11 @@
+name=Sandsteppe Scavenger
+image=http://magiccards.info/scans/en/dtk/200.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Hound,Scout
+cost={4}{G}
+pt=2/2
+ability=When SN enters the battlefield, bolster 2.
+timing=main
+oracle=When Sandsteppe Scavenger enters the battlefield, bolster 2.

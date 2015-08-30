@@ -1,0 +1,12 @@
+name=Whirler Rogue
+image=http://magiccards.info/scans/en/ori/83.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Rogue,Artificer
+cost={2}{U}{U}
+pt=2/2
+ability=When SN enters the battlefield, put two 1/1 colorless Thopter artifact creature tokens with flying onto the battlefield.;\
+        Tap two untapped artifacts you control: Target creature can't be blocked this turn.
+timing=main
+oracle=When Whirler Rogue enters the battlefield, put two 1/1 colorless Thopter artifact creature tokens with flying onto the battlefield.\nTap two untapped artifacts you control: Target creature can't be blocked this turn.

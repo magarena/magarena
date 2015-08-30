@@ -1,10 +1,10 @@
 name=Selesnya Sanctuary
-image=http://mtgimage.com/card/selesnya%20sanctuary.jpg
+image=http://magiccards.info/scans/en/c13/322.jpg
 value=2.500
 rarity=C
 type=Land
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, return a land you control to its owner's hand.;\
         {T}: Add {G}{W} to your mana pool.
-timing=main
-oracle=Selesnya Sanctuary enters the battlefield tapped. When Selesnya Sanctuary enters the battlefield, return a land you control to its owner's hand. {T}: Add {G}{W} to your mana pool.
+timing=land
+oracle=Selesnya Sanctuary enters the battlefield tapped.\nWhen Selesnya Sanctuary enters the battlefield, return a land you control to its owner's hand.\n{T}: Add {G}{W} to your mana pool.

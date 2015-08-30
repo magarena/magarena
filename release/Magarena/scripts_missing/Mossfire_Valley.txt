@@ -1,8 +1,8 @@
 name=Mossfire Valley
-image=http://mtgimage.com/card/mossfire%20valley.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/321.jpg
+value=4.062
 rarity=R
 type=Land
 ability={1}, {T}: Add {R}{G} to your mana pool.
-timing=main
+timing=land
 oracle={1}, {T}: Add {R}{G} to your mana pool.

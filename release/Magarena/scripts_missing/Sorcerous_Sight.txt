@@ -1,9 +1,9 @@
 name=Sorcerous Sight
-image=http://mtgimage.com/card/sorcerous%20sight.jpg
-value=2.500
+image=http://magiccards.info/scans/en/po/69.jpg
+value=2.250
 rarity=C
 type=Sorcery
 cost={U}
 effect=Look at target opponent's hand.~Draw a card.
 timing=main
-oracle=Look at target opponent's hand. Draw a card.
+oracle=Look at target opponent's hand.\nDraw a card.

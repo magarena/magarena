@@ -1,9 +1,9 @@
 name=Solfatara
-image=http://mtgimage.com/card/solfatara.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vi/93.jpg
+value=3.153
 rarity=C
 type=Instant
 cost={2}{R}
 effect=Target player can't play land cards this turn.~Draw a card at the beginning of the next turn's upkeep.
 timing=removal
-oracle=Target player can't play land cards this turn. Draw a card at the beginning of the next turn's upkeep.
+oracle=Target player can't play land cards this turn.\nDraw a card at the beginning of the next turn's upkeep.

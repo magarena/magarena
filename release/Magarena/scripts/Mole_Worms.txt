@@ -1,5 +1,5 @@
 name=Mole Worms
-image=http://mtgimage.com/card/mole%20worms.jpg
+image=http://magiccards.info/scans/en/5e/41.jpg
 value=2.528
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=You may choose not to untap SN during your untap step.
 timing=main
 requires_groovy_code
-oracle=You may choose not to untap Mole Worms during your untap step. {T}: Tap target land. It doesn't untap during its controller's untap step for as long as Mole Worms remains tapped.
+oracle=You may choose not to untap Mole Worms during your untap step.\n{T}: Tap target land. It doesn't untap during its controller's untap step for as long as Mole Worms remains tapped.

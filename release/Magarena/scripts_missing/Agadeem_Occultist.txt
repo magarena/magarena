@@ -1,6 +1,6 @@
 name=Agadeem Occultist
-image=http://mtgimage.com/card/agadeem%20occultist.jpg
-value=2.500
+image=http://magiccards.info/scans/en/wwk/48.jpg
+value=3.513
 rarity=R
 type=Creature
 subtype=Human,Shaman,Ally

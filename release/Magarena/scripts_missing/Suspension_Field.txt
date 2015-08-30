@@ -1,9 +1,9 @@
 name=Suspension Field
-image=http://mtgimage.com/card/suspension%20field.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/25.jpg
+value=3.750
 rarity=U
 type=Enchantment
 cost={1}{W}
 ability=When SN enters the battlefield, you may exile target creature with toughness 3 or greater until SN leaves the battlefield.
-timing=main
+timing=enchantment
 oracle=When Suspension Field enters the battlefield, you may exile target creature with toughness 3 or greater until Suspension Field leaves the battlefield.

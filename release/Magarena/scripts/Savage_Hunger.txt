@@ -1,5 +1,5 @@
 name=Savage Hunger
-image=http://mtgimage.com/card/savage%20hunger.jpg
+image=http://magiccards.info/scans/en/ala/147.jpg
 value=1.351
 rarity=C
 type=Enchantment
@@ -9,4 +9,4 @@ ability=Enchanted creature gets +1/+0 and has trample.;\
         Cycling {2}
 timing=aura
 enchant=trample,pos creature
-oracle=Enchant creature. Enchanted creature gets +1/+0 and has trample. Cycling {2}
+oracle=Enchant creature\nEnchanted creature gets +1/+0 and has trample.\nCycling {2}

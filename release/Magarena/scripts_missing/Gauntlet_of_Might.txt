@@ -1,10 +1,10 @@
 name=Gauntlet of Might
-image=http://mtgimage.com/card/gauntlet%20of%20might.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me4/202.jpg
+value=4.543
 rarity=R
 type=Artifact
 cost={4}
 ability=Red creatures get +1/+1.;\
         Whenever a Mountain is tapped for mana, its controller adds {R} to his or her mana pool.
-timing=main
-oracle=Red creatures get +1/+1. Whenever a Mountain is tapped for mana, its controller adds {R} to his or her mana pool.
+timing=artifact
+oracle=Red creatures get +1/+1.\nWhenever a Mountain is tapped for mana, its controller adds {R} to his or her mana pool.

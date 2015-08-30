@@ -1,9 +1,9 @@
 name=Teferi's Realm
-image=http://mtgimage.com/card/teferi%27s%20realm.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vi/44.jpg
+value=3.912
 rarity=R
 type=World,Enchantment
 cost={1}{U}{U}
 ability=At the beginning of each player's upkeep, that player chooses artifact, creature, land, or non-Aura enchantment. All nontoken permanents of that type phase out.
-timing=main
+timing=enchantment
 oracle=At the beginning of each player's upkeep, that player chooses artifact, creature, land, or non-Aura enchantment. All nontoken permanents of that type phase out.

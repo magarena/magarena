@@ -1,5 +1,5 @@
 name=Ogre Resister
-image=http://mtgimage.com/card/ogre%20resister.jpg
+image=http://magiccards.info/scans/en/mbs/72.jpg
 value=2.648
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Ogre
 cost={2}{R}{R}
 pt=4/3
 timing=main
+oracle=NONE

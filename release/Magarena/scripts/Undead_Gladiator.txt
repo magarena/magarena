@@ -1,0 +1,12 @@
+name=Undead Gladiator
+image=http://magiccards.info/scans/en/on/178.jpg
+value=3.923
+rarity=R
+type=Creature
+subtype=Zombie,Barbarian
+cost={1}{B}{B}
+pt=3/1
+ability={1}{B}, Discard a card: Return SN from your graveyard to your hand. Activate this ability only during your upkeep.;\
+        Cycling {1}{B}
+timing=main
+oracle={1}{B}, Discard a card: Return Undead Gladiator from your graveyard to your hand. Activate this ability only during your upkeep.\nCycling {1}{B}

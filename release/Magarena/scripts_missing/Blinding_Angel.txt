@@ -1,6 +1,6 @@
 name=Blinding Angel
-image=http://mtgimage.com/card/blinding%20angel.jpg
-value=2.500
+image=http://magiccards.info/scans/en/9e/7.jpg
+value=4.397
 rarity=R
 type=Creature
 subtype=Angel
@@ -9,4 +9,4 @@ pt=2/4
 ability=Flying;\
         Whenever SN deals combat damage to a player, that player skips his or her next combat phase.
 timing=main
-oracle=Flying. Whenever Blinding Angel deals combat damage to a player, that player skips his or her next combat phase.
+oracle=Flying\nWhenever Blinding Angel deals combat damage to a player, that player skips his or her next combat phase.

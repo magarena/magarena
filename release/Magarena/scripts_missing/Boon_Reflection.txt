@@ -1,9 +1,9 @@
 name=Boon Reflection
-image=http://mtgimage.com/card/boon%20reflection.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/5.jpg
+value=3.833
 rarity=R
 type=Enchantment
 cost={4}{W}
 ability=If you would gain life, you gain twice that much life instead.
-timing=main
+timing=enchantment
 oracle=If you would gain life, you gain twice that much life instead.

@@ -7,3 +7,4 @@ subtype=Elemental
 color=ur
 pt=5/5
 ability=flying
+oracle=Flying

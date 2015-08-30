@@ -1,5 +1,5 @@
 name=Feral Shadow
-image=http://mtgimage.com/card/feral%20shadow.jpg
+image=http://magiccards.info/scans/en/bd/26.jpg
 value=2.783
 rarity=C
 type=Creature

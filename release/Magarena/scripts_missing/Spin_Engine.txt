@@ -1,11 +1,11 @@
 name=Spin Engine
-image=http://mtgimage.com/card/spin%20engine.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mbs/135.jpg
+value=2.780
 rarity=C
 type=Artifact,Creature
 subtype=Construct
 cost={3}
 pt=3/1
 ability={R}: Target creature can't block SN this turn.
-timing=main
+timing=artifact
 oracle={R}: Target creature can't block Spin Engine this turn.

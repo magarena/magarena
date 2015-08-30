@@ -1,11 +1,11 @@
 name=Dread Specter
-image=http://mtgimage.com/card/dread%20specter.jpg
+image=http://magiccards.info/scans/en/mr/17.jpg
 value=2.595
 rarity=U
 type=Creature
 subtype=Specter
 cost={3}{B}
 pt=2/2
+ability=Whenever SN blocks or becomes blocked by a nonblack creature, destroy that creature at end of combat.
 timing=main
-requires_groovy_code=Deathgazer
 oracle=Whenever Dread Specter blocks or becomes blocked by a nonblack creature, destroy that creature at end of combat.

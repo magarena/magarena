@@ -1,9 +1,9 @@
 name=Goblin Charbelcher
-image=http://mtgimage.com/card/goblin%20charbelcher.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mi/176.jpg
+value=4.570
 rarity=R
 type=Artifact
 cost={4}
 ability={3}, {T}: Reveal cards from the top of your library until you reveal a land card. SN deals damage equal to the number of nonland cards revealed this way to target creature or player. If the revealed land card was a Mountain, SN deals double that damage instead. Put the revealed cards on the bottom of your library in any order.
-timing=main
+timing=artifact
 oracle={3}, {T}: Reveal cards from the top of your library until you reveal a land card. Goblin Charbelcher deals damage equal to the number of nonland cards revealed this way to target creature or player. If the revealed land card was a Mountain, Goblin Charbelcher deals double that damage instead. Put the revealed cards on the bottom of your library in any order.

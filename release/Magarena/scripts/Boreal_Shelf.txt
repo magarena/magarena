@@ -1,5 +1,5 @@
 name=Boreal Shelf
-image=http://mtgimage.com/card/boreal%20shelf.jpg
+image=http://magiccards.info/scans/en/cs/144.jpg
 value=4.062
 rarity=U
 type=Snow,Land
@@ -7,4 +7,4 @@ mana=w3u3
 ability=SN enters the battlefield tapped.;\
         {T}: Add {W} or {U} to your mana pool.
 timing=tapland
-oracle=Boreal Shelf enters the battlefield tapped. {T}: Add {W} or {U} to your mana pool.
+oracle=Boreal Shelf enters the battlefield tapped.\n{T}: Add {W} or {U} to your mana pool.

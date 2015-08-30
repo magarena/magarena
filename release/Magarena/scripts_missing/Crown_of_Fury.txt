@@ -1,6 +1,6 @@
 name=Crown of Fury
-image=http://mtgimage.com/card/crown%20of%20fury.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/196.jpg
+value=2.810
 rarity=C
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={1}{R}
 ability=Enchant creature;\
         Enchanted creature gets +1/+0 and has first strike.;\
         Sacrifice SN: Enchanted creature and other creatures that share a creature type with it get +1/+0 and gain first strike until end of turn.
-timing=main
-oracle=Enchant creature. Enchanted creature gets +1/+0 and has first strike. Sacrifice Crown of Fury: Enchanted creature and other creatures that share a creature type with it get +1/+0 and gain first strike until end of turn.
+timing=aura
+oracle=Enchant creature\nEnchanted creature gets +1/+0 and has first strike.\nSacrifice Crown of Fury: Enchanted creature and other creatures that share a creature type with it get +1/+0 and gain first strike until end of turn.

@@ -1,5 +1,5 @@
 name=Thorn-Thrash Viashino
-image=http://mtgimage.com/card/thorn%2Dthrash%20viashino.jpg
+image=http://magiccards.info/scans/en/pc2/52.jpg
 value=2.455
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={3}{R}
 pt=2/2
 ability=devour 2;{G}: SN gains trample until end of turn.
 timing=main
-oracle=Devour 2. {G}: Thorn-Thrash Viashino gains trample until end of turn.
+oracle=Devour 2\n{G}: Thorn-Thrash Viashino gains trample until end of turn.

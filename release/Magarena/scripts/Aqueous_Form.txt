@@ -1,5 +1,5 @@
 name=Aqueous Form
-image=http://mtgimage.com/card/aqueous%20form.jpg
+image=http://magiccards.info/scans/en/ths/39.jpg
 value=3.654
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={U}
 ability=Enchanted creature can't be blocked and "Whenever SN attacks, scry 1."
 timing=aura
 enchant=unblockable,pos creature
-oracle=Enchant creature. Enchanted creature can't be blocked. Whenever enchanted creature attacks, scry 1.
+oracle=Enchant creature\nEnchanted creature can't be blocked.\nWhenever enchanted creature attacks, scry 1.

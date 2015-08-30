@@ -1,14 +1,9 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
     if (event.isYes()) {
-        final MagicDamage damage = new MagicDamage(
-            event.getSource(),
-            event.getPlayer(),
-            2
-        );
-        game.doAction(new MagicDealDamageAction(damage));
+        game.doAction(new DealDamageAction(event.getSource(),event.getPlayer(),2));
     } else {
-        game.doAction(new MagicDestroyAction(event.getRefPermanent()));
+        game.doAction(new DestroyAction(event.getRefPermanent()));
     }
 }
 
@@ -27,7 +22,7 @@ def action = {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_LAND,
+                NEG_TARGET_LAND,
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target land\$ unless its controller has " +

@@ -1,6 +1,6 @@
 name=Knight of Sursi
-image=http://mtgimage.com/card/knight%20of%20sursi.jpg
-value=2.500
+image=http://magiccards.info/scans/en/fut/10.jpg
+value=3.113
 rarity=C
 type=Creature
 subtype=Human,Knight
@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying; flanking ;\
         Suspend 3—{W}
 timing=main
-oracle=Flying; flanking . Suspend 3—{W}
+oracle=Flying, flanking \nSuspend 3—{W}

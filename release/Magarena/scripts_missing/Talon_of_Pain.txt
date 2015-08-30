@@ -1,10 +1,10 @@
 name=Talon of Pain
-image=http://mtgimage.com/card/talon%20of%20pain.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ds/150.jpg
+value=3.986
 rarity=U
 type=Artifact
 cost={4}
 ability=Whenever a source you control other than SN deals damage to an opponent, put a charge counter on SN.;\
         {X}, {T}, Remove X charge counters from SN: SN deals X damage to target creature or player.
-timing=main
-oracle=Whenever a source you control other than Talon of Pain deals damage to an opponent, put a charge counter on Talon of Pain. {X}, {T}, Remove X charge counters from Talon of Pain: Talon of Pain deals X damage to target creature or player.
+timing=artifact
+oracle=Whenever a source you control other than Talon of Pain deals damage to an opponent, put a charge counter on Talon of Pain.\n{X}, {T}, Remove X charge counters from Talon of Pain: Talon of Pain deals X damage to target creature or player.

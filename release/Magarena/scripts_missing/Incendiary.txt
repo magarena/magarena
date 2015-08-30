@@ -1,6 +1,6 @@
 name=Incendiary
-image=http://mtgimage.com/card/incendiary.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ud/89.jpg
+value=3.212
 rarity=U
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={R}
 ability=Enchant creature;\
         At the beginning of your upkeep, you may put a fuse counter on SN.;\
         When enchanted creature dies, SN deals X damage to target creature or player, where X is the number of fuse counters on SN.
-timing=main
-oracle=Enchant creature. At the beginning of your upkeep, you may put a fuse counter on Incendiary. When enchanted creature dies, Incendiary deals X damage to target creature or player, where X is the number of fuse counters on Incendiary.
+timing=aura
+oracle=Enchant creature\nAt the beginning of your upkeep, you may put a fuse counter on Incendiary.\nWhen enchanted creature dies, Incendiary deals X damage to target creature or player, where X is the number of fuse counters on Incendiary.

@@ -1,0 +1,12 @@
+name=Enduring Scalelord
+image=http://magiccards.info/scans/en/dtk/222.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dragon
+cost={4}{G}{W}
+pt=4/4
+ability=Flying;\
+        Whenever one or more +1/+1 counters are placed on another creature you control, you may put a +1/+1 counter on SN.
+timing=main
+oracle=Flying\nWhenever one or more +1/+1 counters are placed on another creature you control, you may put a +1/+1 counter on Enduring Scalelord.

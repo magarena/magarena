@@ -1,11 +1,11 @@
 name=Spirit Shackle
-image=http://mtgimage.com/card/spirit%20shackle.jpg
+image=http://magiccards.info/scans/en/me3/74.jpg
 value=2.077
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={B}{B}
+ability=Whenever enchanted creature becomes tapped, put a -0/-2 counter on RN.
 enchant=default,neg creature
 timing=aura
-requires_groovy_code
-oracle=Enchant creature. Whenever enchanted creature becomes tapped, put a -0/-2 counter on it.
+oracle=Enchant creature\nWhenever enchanted creature becomes tapped, put a -0/-2 counter on it.

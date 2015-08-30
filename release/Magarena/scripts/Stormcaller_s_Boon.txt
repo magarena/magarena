@@ -1,9 +1,9 @@
 name=Stormcaller's Boon
-image=http://mtgimage.com/card/stormcaller%27s%20boon.jpg
+image=http://magiccards.info/scans/en/arb/13.jpg
 value=2.686
 rarity=C
 type=Enchantment
 cost={2}{W}{U}
 ability=cascade;Sacrifice SN:Creatures you control gain flying until end of turn.
 timing=enchantment
-oracle=Sacrifice Stormcaller's Boon: Creatures you control gain flying until end of turn. Cascade
+oracle=Sacrifice Stormcaller's Boon: Creatures you control gain flying until end of turn.\nCascade

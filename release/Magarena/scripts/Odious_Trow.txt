@@ -1,5 +1,5 @@
 name=Odious Trow
-image=http://mtgimage.com/card/odious%20trow.jpg
+image=http://magiccards.info/scans/en/eve/125.jpg
 value=3.020
 rarity=C
 type=Creature

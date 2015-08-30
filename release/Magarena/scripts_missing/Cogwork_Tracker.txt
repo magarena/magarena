@@ -1,6 +1,6 @@
 name=Cogwork Tracker
-image=http://mtgimage.com/card/cogwork%20tracker.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cns/60.jpg
+value=3.100
 rarity=U
 type=Artifact,Creature
 subtype=Hound,Construct
@@ -9,5 +9,5 @@ pt=4/4
 ability=Reveal SN as you draft it and note the player who passed it to you.;\
         SN attacks each turn if able.;\
         SN attacks a player you noted for cards named SN each turn if able.
-timing=main
-oracle=Reveal Cogwork Tracker as you draft it and note the player who passed it to you. Cogwork Tracker attacks each turn if able. Cogwork Tracker attacks a player you noted for cards named Cogwork Tracker each turn if able.
+timing=artifact
+oracle=Reveal Cogwork Tracker as you draft it and note the player who passed it to you.\nCogwork Tracker attacks each turn if able.\nCogwork Tracker attacks a player you noted for cards named Cogwork Tracker each turn if able.

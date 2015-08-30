@@ -1,5 +1,5 @@
 name=Brand
-image=http://mtgimage.com/card/brand.jpg
+image=http://magiccards.info/scans/en/us/176.jpg
 value=3.802
 rarity=R
 type=Instant
@@ -7,4 +7,4 @@ cost={R}
 ability=Cycling {2}
 timing=removal
 requires_groovy_code
-oracle=Gain control of all permanents you own. Cycling {2}
+oracle=Gain control of all permanents you own.\nCycling {2}

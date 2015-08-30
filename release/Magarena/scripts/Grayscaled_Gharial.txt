@@ -1,5 +1,5 @@
 name=Grayscaled Gharial
-image=http://mtgimage.com/card/grayscaled%20gharial.jpg
+image=http://magiccards.info/scans/en/rav/52.jpg
 value=2.594
 ability=islandwalk
 rarity=C

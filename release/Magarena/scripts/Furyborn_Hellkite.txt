@@ -1,5 +1,5 @@
 name=Furyborn Hellkite
-image=http://mtgimage.com/card/furyborn%20hellkite.jpg
+image=http://magiccards.info/scans/en/m12/135.jpg
 value=4.157
 rarity=M
 type=Creature
@@ -8,4 +8,4 @@ cost={4}{R}{R}{R}
 pt=6/6
 ability=bloodthirst 6;flying
 timing=main
-oracle=Bloodthirst 6. Flying
+oracle=Bloodthirst 6\nFlying

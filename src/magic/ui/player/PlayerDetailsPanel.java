@@ -1,15 +1,12 @@
 package magic.ui.player;
 
-import magic.model.player.AiPlayer;
-import magic.model.player.PlayerProfile;
-import magic.ui.widget.FontsAndBorders;
-import net.miginfocom.swing.MigLayout;
-
+import java.awt.Color;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
-
-import java.awt.Color;
+import magic.model.player.PlayerProfile;
+import magic.ui.widget.FontsAndBorders;
+import net.miginfocom.swing.MigLayout;
 
 /**
  * Composite JPanel which displays player name and if applicable,
@@ -57,8 +54,8 @@ public class PlayerDetailsPanel extends JPanel {
 
     public void setPlayer(final PlayerProfile player) {
         playerNameLabel.setText(player.getPlayerName());
-        playerTypeLabel.setText(getPlayerType(player));
-        playerAttributesLabel.setText(getPlayerAttributes(player));
+        playerTypeLabel.setText(player.getPlayerTypeLabel());
+        playerAttributesLabel.setText(player.getPlayerAttributeLabel());
         refreshLayout();
     }
 
@@ -69,18 +66,4 @@ public class PlayerDetailsPanel extends JPanel {
         add(playerNameLabel, "w 100%");
         add(playerAttributesLabel, "w 100%");
     }
-
-    private String getPlayerType(final PlayerProfile player) {
-        return PlayerProfile.isAiPlayer(player) ? "AI : " + ((AiPlayer)player).getAiType() : "";
-    }
-
-    private String getPlayerAttributes(final PlayerProfile player) {
-        if (PlayerProfile.isAiPlayer(player)) {
-            final AiPlayer aiPlayer = (AiPlayer)player;
-            return "Level: " + aiPlayer.getAiLevel() + "  Extra Life: " + aiPlayer.getExtraLife();
-        } else {
-            return "";
-        }
-    }
-
 }

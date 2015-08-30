@@ -1,12 +1,12 @@
 name=Illusionary Armor
-image=http://mtgimage.com/card/illusionary%20armor.jpg
+image=http://magiccards.info/scans/en/m14/59.jpg
 value=1.329
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={4}{U}
-ability=Enchanted creature gets +4/+4.
+ability=Enchanted creature gets +4/+4.;\
+        When enchanted creature becomes the target of a spell or ability, sacrifice SN.
 timing=aura
 enchant=pump,pos creature
-requires_groovy_code
-oracle=Enchant creature. Enchanted creature gets +4/+4. When enchanted creature becomes the target of a spell or ability, sacrifice Illusionary Armor.
+oracle=Enchant creature\nEnchanted creature gets +4/+4.\nWhen enchanted creature becomes the target of a spell or ability, sacrifice Illusionary Armor.

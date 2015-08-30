@@ -1,9 +1,9 @@
 name=Damping Engine
-image=http://mtgimage.com/card/damping%20engine.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ul/124.jpg
+value=3.750
 rarity=R
 type=Artifact
 cost={4}
 ability=A player who controls more permanents than each other player can't play lands or cast artifact, creature, or enchantment spells. That player may sacrifice a permanent for that player to ignore this effect until end of turn.
-timing=main
+timing=artifact
 oracle=A player who controls more permanents than each other player can't play lands or cast artifact, creature, or enchantment spells. That player may sacrifice a permanent for that player to ignore this effect until end of turn.

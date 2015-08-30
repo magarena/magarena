@@ -1,5 +1,5 @@
 name=Azorius Æthermage
-image=http://mtgimage.com/card/azorius%20aethermage.jpg
+image=http://magiccards.info/scans/en/di/104.jpg
 value=3.188
 rarity=U
 type=Creature

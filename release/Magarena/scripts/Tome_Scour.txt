@@ -1,5 +1,5 @@
 name=Tome Scour
-image=http://mtgimage.com/card/tome%20scour.jpg
+image=http://magiccards.info/scans/en/m14/75.jpg
 value=3.312
 rarity=C
 type=Sorcery

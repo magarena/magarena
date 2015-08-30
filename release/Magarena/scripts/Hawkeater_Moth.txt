@@ -1,5 +1,5 @@
 name=Hawkeater Moth
-image=http://mtgimage.com/card/hawkeater%20moth.jpg
+image=http://magiccards.info/scans/en/us/259.jpg
 value=2.486
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={3}{G}
 pt=1/2
 ability=flying;shroud
 timing=main
-oracle=Flying; shroud
+oracle=Flying\nShroud

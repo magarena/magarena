@@ -1,5 +1,5 @@
 name=Foothill Guide
-image=http://mtgimage.com/card/foothill%20guide.jpg
+image=http://magiccards.info/scans/en/on/29.jpg
 value=3.015
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=Protection from Goblins;\
         Morph {W}
 timing=main
-oracle=Protection from Goblins. Morph {W}
+oracle=Protection from Goblins\nMorph {W}

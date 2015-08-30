@@ -1,0 +1,11 @@
+name=Invasive Species
+image=http://magiccards.info/scans/en/m15/181.jpg
+value=2.750
+rarity=C
+type=Creature
+subtype=Insect
+cost={2}{G}
+pt=3/3
+ability=When SN enters the battlefield, return another permanent you control to its owner's hand.
+timing=main
+oracle=When Invasive Species enters the battlefield, return another permanent you control to its owner's hand.

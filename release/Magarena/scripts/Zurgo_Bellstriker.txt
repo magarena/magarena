@@ -1,0 +1,12 @@
+name=Zurgo Bellstriker
+image=http://magiccards.info/scans/en/dtk/169.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Orc,Warrior
+cost={R}
+pt=2/2
+ability=SN can't block creatures with power 2 or greater.;\
+        Dash {1}{R}
+timing=main
+oracle=Zurgo Bellstriker can't block creatures with power 2 or greater.\nDash {1}{R}

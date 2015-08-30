@@ -1,11 +1,11 @@
 name=Animate Artifact
-image=http://mtgimage.com/card/animate%20artifact.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me4/38.jpg
+value=2.903
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={3}{U}
 ability=Enchant artifact;\
         As long as enchanted artifact isn't a creature, it's an artifact creature with power and toughness each equal to its converted mana cost.
-timing=main
-oracle=Enchant artifact. As long as enchanted artifact isn't a creature, it's an artifact creature with power and toughness each equal to its converted mana cost.
+timing=aura
+oracle=Enchant artifact\nAs long as enchanted artifact isn't a creature, it's an artifact creature with power and toughness each equal to its converted mana cost.

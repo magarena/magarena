@@ -1,5 +1,5 @@
 name=Rith's Grove
-image=http://mtgimage.com/card/rith%27s%20grove.jpg
+image=http://magiccards.info/scans/en/ps/141.jpg
 value=3.953
 rarity=U
 type=Land
@@ -8,4 +8,4 @@ mana=r3g3w3
 ability={T}: Add {R} or {G} or {W} to your mana pool.
 timing=land
 requires_groovy_code=Dromar's Cavern
-oracle=When Rith's Grove enters the battlefield, sacrifice it unless you return a non-Lair land you control to its owner's hand. {T}: Add {R}, {G}, or {W} to your mana pool.
+oracle=When Rith's Grove enters the battlefield, sacrifice it unless you return a non-Lair land you control to its owner's hand.\n{T}: Add {R}, {G}, or {W} to your mana pool.

@@ -1,5 +1,5 @@
 name=Brilliant Halo
-image=http://mtgimage.com/card/brilliant%20halo.jpg
+image=http://magiccards.info/scans/en/vma/19.jpg
 value=3.385
 rarity=C
 type=Enchantment
@@ -9,4 +9,4 @@ ability=Enchanted creature gets +1/+2.;\
         When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.
 timing=aura
 enchant=pump,pos creature
-oracle=Enchant creature. Enchanted creature gets +1/+2. When Brilliant Halo is put into a graveyard from the battlefield, return Brilliant Halo to its owner's hand.
+oracle=Enchant creature\nEnchanted creature gets +1/+2.\nWhen Brilliant Halo is put into a graveyard from the battlefield, return Brilliant Halo to its owner's hand.

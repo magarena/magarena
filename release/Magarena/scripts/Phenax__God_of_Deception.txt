@@ -1,5 +1,5 @@
 name=Phenax, God of Deception
-image=http://mtgimage.com/card/phenax%2C%20god%20of%20deception.jpg
+image=http://magiccards.info/scans/en/bng/152.jpg
 value=3.526
 rarity=M
 type=Legendary,Enchantment,Creature
@@ -9,4 +9,4 @@ pt=4/7
 ability=indestructible
 timing=main
 requires_groovy_code
-oracle=Indestructible. As long as your devotion to blue and black is less than seven, Phenax isn't a creature. Creatures you control have "{T}: Target player puts the top X cards of his or her library into his or her graveyard, where X is this creature's toughness."
+oracle=Indestructible\nAs long as your devotion to blue and black is less than seven, Phenax isn't a creature.\nCreatures you control have "{T}: Target player puts the top X cards of his or her library into his or her graveyard, where X is this creature's toughness."

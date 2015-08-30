@@ -1,10 +1,10 @@
 name=Castle Sengir
-image=http://mtgimage.com/card/castle%20sengir.jpg
-value=2.500
+image=http://magiccards.info/scans/en/hl/138.jpg
+value=1.735
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\
         {1}, {T}: Add {B} to your mana pool.;\
         {2}, {T}: Add {U} or {R} to your mana pool.
-timing=main
-oracle={T}: Add {1} to your mana pool. {1}, {T}: Add {B} to your mana pool. {2}, {T}: Add {U} or {R} to your mana pool.
+timing=land
+oracle={T}: Add {1} to your mana pool.\n{1}, {T}: Add {B} to your mana pool.\n{2}, {T}: Add {U} or {R} to your mana pool.

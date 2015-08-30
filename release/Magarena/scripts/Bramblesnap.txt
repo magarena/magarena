@@ -1,5 +1,5 @@
 name=Bramblesnap
-image=http://mtgimage.com/card/bramblesnap.jpg
+image=http://magiccards.info/scans/en/roe/180.jpg
 value=3.828
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=trample;\
         Tap an untapped creature you control: SN gets +1/+1 until end of turn.
 timing=main
-oracle=Trample. Tap an untapped creature you control: Bramblesnap gets +1/+1 until end of turn.
+oracle=Trample\nTap an untapped creature you control: Bramblesnap gets +1/+1 until end of turn.

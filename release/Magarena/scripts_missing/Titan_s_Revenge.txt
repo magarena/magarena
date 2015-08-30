@@ -1,6 +1,6 @@
 name=Titan's Revenge
-image=http://mtgimage.com/card/titan%27s%20revenge.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mt/110.jpg
+value=3.444
 rarity=R
 type=Sorcery
 cost={X}{R}{R}

@@ -1,6 +1,6 @@
 name=Sunscape Familiar
-image=http://mtgimage.com/card/sunscape%20familiar.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ps/17.jpg
+value=4.261
 rarity=C
 type=Creature
 subtype=Wall
@@ -9,4 +9,4 @@ pt=0/3
 ability=Defender;\
         Green spells and blue spells you cast cost {1} less to cast.
 timing=main
-oracle=Defender. Green spells and blue spells you cast cost {1} less to cast.
+oracle=Defender\nGreen spells and blue spells you cast cost {1} less to cast.

@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 new MagicMayChoice(
-                    MagicTargetChoice.TARGET_ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS
+                    TARGET_ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS
                 ),
                 MagicDestroyTargetPicker.Destroy,
                 this,
@@ -17,7 +17,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    game.doAction(new MagicDestroyAction(it));
+                    game.doAction(new DestroyAction(it));
                 });
             }
         }

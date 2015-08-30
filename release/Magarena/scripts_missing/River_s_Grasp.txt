@@ -1,6 +1,6 @@
 name=River's Grasp
-image=http://mtgimage.com/card/river%27s%20grasp.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/174.jpg
+value=3.171
 rarity=U
 type=Sorcery
 cost={3}{U/B}

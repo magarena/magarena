@@ -1,11 +1,11 @@
 name=Power Artifact
-image=http://mtgimage.com/card/power%20artifact.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/me4/57.jpg
+value=4.475
+rarity=R
 type=Enchantment
 subtype=Aura
 cost={U}{U}
 ability=Enchant artifact;\
         Enchanted artifact's activated abilities cost {2} less to activate. This effect can't reduce the amount of mana an ability costs to activate to less than one mana.
-timing=main
-oracle=Enchant artifact. Enchanted artifact's activated abilities cost {2} less to activate. This effect can't reduce the amount of mana an ability costs to activate to less than one mana.
+timing=aura
+oracle=Enchant artifact\nEnchanted artifact's activated abilities cost {2} less to activate. This effect can't reduce the amount of mana an ability costs to activate to less than one mana.

@@ -1,5 +1,5 @@
 name=Astral Slide
-image=http://mtgimage.com/card/astral%20slide.jpg
+image=http://magiccards.info/scans/en/vma/13.jpg
 value=4.000
 rarity=U
 type=Enchantment

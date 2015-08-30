@@ -1,5 +1,5 @@
 name=Geist Snatch
-image=http://mtgimage.com/card/geist%20snatch.jpg
+image=http://magiccards.info/scans/en/avr/55.jpg
 value=2.321
 rarity=C
 type=Instant

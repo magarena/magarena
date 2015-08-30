@@ -1,9 +1,9 @@
 name=Nightmare Void
-image=http://mtgimage.com/card/nightmare%20void.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddj/73.jpg
+value=3.056
 rarity=U
 type=Sorcery
 cost={3}{B}
 effect=Target player reveals his or her hand. You choose a card from it. That player discards that card.~Dredge 2
 timing=main
-oracle=Target player reveals his or her hand. You choose a card from it. That player discards that card. Dredge 2
+oracle=Target player reveals his or her hand. You choose a card from it. That player discards that card.\nDredge 2

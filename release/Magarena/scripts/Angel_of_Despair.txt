@@ -1,5 +1,5 @@
 name=Angel of Despair
-image=http://mtgimage.com/card/angel%20of%20despair.jpg
+image=http://magiccards.info/scans/en/cmd/180.jpg
 value=4.250
 removal=4
 rarity=R
@@ -7,7 +7,7 @@ type=Creature
 subtype=Angel
 cost={3}{W}{W}{B}{B}
 pt=5/5
-ability=flying;\
+ability=Flying;\
         When SN enters the battlefield, destroy target permanent.
 timing=fmain
-oracle=Flying. When Angel of Despair enters the battlefield, destroy target permanent.
+oracle=Flying\nWhen Angel of Despair enters the battlefield, destroy target permanent.

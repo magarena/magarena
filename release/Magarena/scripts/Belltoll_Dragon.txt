@@ -1,0 +1,13 @@
+name=Belltoll Dragon
+image=http://magiccards.info/scans/en/dtk/46.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dragon
+cost={5}{U}
+pt=3/3
+ability=Flying, hexproof;\
+        Megamorph {5}{U}{U};\
+        When SN is turned face up, put a +1/+1 counter on each other Dragon creature you control.
+timing=main
+oracle=Flying, hexproof\nMegamorph {5}{U}{U}\nWhen Belltoll Dragon is turned face up, put a +1/+1 counter on each other Dragon creature you control.

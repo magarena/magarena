@@ -1,0 +1,12 @@
+name=Salt Road Quartermasters
+image=http://magiccards.info/scans/en/dtk/199.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={2}{G}
+pt=1/1
+ability=SN enters the battlefield with two +1/+1 counters on it.;\
+        {2}{G}, Remove a +1/+1 counter from SN: Put a +1/+1 counter on target creature.
+timing=main
+oracle=Salt Road Quartermasters enters the battlefield with two +1/+1 counters on it.\n{2}{G}, Remove a +1/+1 counter from Salt Road Quartermasters: Put a +1/+1 counter on target creature.

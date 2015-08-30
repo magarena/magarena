@@ -1,6 +1,6 @@
 name=Erratic Mutation
-image=http://mtgimage.com/card/erratic%20mutation.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mma/42.jpg
+value=2.357
 rarity=C
 type=Instant
 cost={2}{U}

@@ -1,10 +1,10 @@
 name=Veil of Secrecy
-image=http://mtgimage.com/card/veil%20of%20secrecy.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bok/59.jpg
+value=3.355
 rarity=C
 type=Instant
 subtype=Arcane
 cost={1}{U}
 effect=Target creature gains shroud until end of turn and can't be blocked this turn.~Splice onto Arcane—Return a blue creature you control to its owner's hand.
 timing=removal
-oracle=Target creature gains shroud until end of turn and can't be blocked this turn. Splice onto Arcane—Return a blue creature you control to its owner's hand.
+oracle=Target creature gains shroud until end of turn and can't be blocked this turn.\nSplice onto Arcane—Return a blue creature you control to its owner's hand.

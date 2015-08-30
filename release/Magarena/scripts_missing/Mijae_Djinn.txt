@@ -1,6 +1,6 @@
 name=Mijae Djinn
-image=http://mtgimage.com/card/mijae%20djinn.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me4/127.jpg
+value=3.562
 rarity=R
 type=Creature
 subtype=Djinn

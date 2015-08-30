@@ -1,6 +1,6 @@
 name=Ghastlord of Fugue
-image=http://mtgimage.com/card/ghastlord%20of%20fugue.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/162.jpg
+value=4.115
 rarity=R
 type=Creature
 subtype=Spirit,Avatar
@@ -9,4 +9,4 @@ pt=4/4
 ability=SN can't be blocked.;\
         Whenever SN deals combat damage to a player, that player reveals his or her hand. You choose a card from it. That player exiles that card.
 timing=main
-oracle=Ghastlord of Fugue can't be blocked. Whenever Ghastlord of Fugue deals combat damage to a player, that player reveals his or her hand. You choose a card from it. That player exiles that card.
+oracle=Ghastlord of Fugue can't be blocked.\nWhenever Ghastlord of Fugue deals combat damage to a player, that player reveals his or her hand. You choose a card from it. That player exiles that card.

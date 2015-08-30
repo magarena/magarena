@@ -1,12 +1,12 @@
 name=Elephant Guide
-image=http://mtgimage.com/card/elephant%20guide.jpg
+image=http://magiccards.info/scans/en/vma/205.jpg
 value=4.400
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{G}
-ability=Enchanted creature gets +3/+3.
+ability=Enchanted creature gets +3/+3.;\
+        When enchanted creature dies, put a 3/3 green Elephant creature token onto the battlefield.
 timing=aura
 enchant=pump,pos creature
-requires_groovy_code
-oracle=Enchant creature. Enchanted creature gets +3/+3. When enchanted creature dies, put a 3/3 green Elephant creature token onto the battlefield.
+oracle=Enchant creature\nEnchanted creature gets +3/+3.\nWhen enchanted creature dies, put a 3/3 green Elephant creature token onto the battlefield.

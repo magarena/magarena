@@ -1,0 +1,11 @@
+name=Summon the School
+image=http://magiccards.info/scans/en/lw/42.jpg
+value=3.638
+rarity=U
+type=Tribal,Sorcery
+subtype=Merfolk
+cost={3}{W}
+ability=Tap four untapped Merfolk you control: Return SN from your graveyard to your hand.
+effect=Put two 1/1 blue Merfolk Wizard creature tokens onto the battlefield.
+timing=token
+oracle=Put two 1/1 blue Merfolk Wizard creature tokens onto the battlefield.\nTap four untapped Merfolk you control: Return Summon the School from your graveyard to your hand.

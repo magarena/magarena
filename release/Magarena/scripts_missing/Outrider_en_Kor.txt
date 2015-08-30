@@ -1,6 +1,6 @@
 name=Outrider en-Kor
-image=http://mtgimage.com/card/outrider%20en-kor.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ts/31.jpg
+value=3.784
 rarity=U
 type=Creature
 subtype=Kor,Rebel,Knight
@@ -9,4 +9,4 @@ pt=2/2
 ability=Flanking;\
         {0}: The next 1 damage that would be dealt to SN this turn is dealt to target creature you control instead.
 timing=main
-oracle=Flanking. {0}: The next 1 damage that would be dealt to Outrider en-Kor this turn is dealt to target creature you control instead.
+oracle=Flanking\n{0}: The next 1 damage that would be dealt to Outrider en-Kor this turn is dealt to target creature you control instead.

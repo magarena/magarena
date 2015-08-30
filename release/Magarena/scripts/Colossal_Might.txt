@@ -1,5 +1,5 @@
 name=Colossal Might
-image=http://mtgimage.com/card/colossal%20might.jpg
+image=http://magiccards.info/scans/en/cmd/190.jpg
 value=2.837
 rarity=C
 type=Instant

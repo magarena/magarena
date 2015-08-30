@@ -1,9 +1,9 @@
 name=Aluren
-image=http://mtgimage.com/card/aluren.jpg
+image=http://magiccards.info/scans/en/tp/107.jpg
 value=2.500
 rarity=R
 type=Enchantment
 cost={2}{G}{G}
 ability=Any player may play creature cards with converted mana cost 3 or less without paying their mana cost and as though they had flash.
-timing=main
+timing=enchantment
 oracle=Any player may play creature cards with converted mana cost 3 or less without paying their mana cost and as though they had flash.

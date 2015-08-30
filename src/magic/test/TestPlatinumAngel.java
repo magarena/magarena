@@ -1,24 +1,14 @@
 
 package magic.test;
 
-import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.model.MagicPlayerDefinition;
 import magic.model.phase.MagicMainPhase;
 
 class TestPlatinumAngel extends TestGameBuilder {
     public MagicGame getGame() {
-        final MagicDuel duel=new MagicDuel();
-        duel.setDifficulty(6);
-
-        final MagicDeckProfile profile=new MagicDeckProfile("bgruw");
-        final MagicPlayerDefinition player1=new MagicPlayerDefinition("Player",false,profile);
-        final MagicPlayerDefinition player2=new MagicPlayerDefinition("Computer",true,profile);
-        duel.setPlayers(new MagicPlayerDefinition[]{player1,player2});
-        duel.setStartPlayer(0);
-
+        final MagicDuel duel=createDuel();
         final MagicGame game=duel.nextGame();
         game.setPhase(MagicMainPhase.getFirstInstance());
         final MagicPlayer player=game.getPlayer(0);
@@ -28,23 +18,25 @@ class TestPlatinumAngel extends TestGameBuilder {
 
         P.setLife(2);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Swamp",false,4);
-        createPermanent(game,P,"Plains",false,2);
-        createPermanent(game,P,"Platinum Angel",false,1);
-        createPermanent(game,P,"Air Servant",false,1);
+        createPermanent(P,"Mountain",false,1);
+        createPermanent(P,"Swamp",false,4);
+        createPermanent(P,"Plains",false,2);
+        createPermanent(P,"Lich's Mirror",false,1);
+        createPermanent(P,"Platinum Angel",false,1);
+        createPermanent(P,"Air Servant",false,1);
         addToHand(P,"Doom Blade",2);
         addToHand(P,"Demystify",2);
         addToHand(P,"Stomping Ground",1);
-
+        addToHand(P,"Lightning Bolt",1);
 
         P = opponent;
 
         P.setLife(2);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Swamp",false,4);
-        createPermanent(game,P,"Plains",false,2);
-        createPermanent(game,P,"Platinum Angel",false,1);
-        createPermanent(game,P,"Alpha Myr",false,1);
+        createPermanent(P,"Swamp",false,4);
+        createPermanent(P,"Plains",false,2);
+        createPermanent(P,"Platinum Angel",false,1);
+        createPermanent(P,"Alpha Myr",false,1);
 
         return game;
     }

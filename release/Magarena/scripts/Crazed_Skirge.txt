@@ -1,5 +1,5 @@
 name=Crazed Skirge
-image=http://mtgimage.com/card/crazed%20skirge.jpg
+image=http://magiccards.info/scans/en/br/16.jpg
 value=2.688
 rarity=U
 type=Creature

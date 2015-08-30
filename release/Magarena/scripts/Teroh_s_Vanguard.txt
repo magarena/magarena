@@ -1,5 +1,5 @@
 name=Teroh's Vanguard
-image=http://mtgimage.com/card/teroh's%20vanguard.jpg
+image=http://magiccards.info/scans/en/tr/19.jpg
 value=2.452
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/3
 ability=flash;\
         As long as seven or more cards are in your graveyard, SN has "When SN enters the battlefield, creatures you control gain protection from black until end of turn."
 timing=pumpFlash
-oracle=Flash. Threshold — As long as seven or more cards are in your graveyard, Teroh's Vanguard has "When Teroh's Vanguard enters the battlefield, creatures you control gain protection from black until end of turn."
+oracle=Flash\nThreshold — As long as seven or more cards are in your graveyard, Teroh's Vanguard has "When Teroh's Vanguard enters the battlefield, creatures you control gain protection from black until end of turn."

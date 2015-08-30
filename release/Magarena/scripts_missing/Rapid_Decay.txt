@@ -1,9 +1,9 @@
 name=Rapid Decay
-image=http://mtgimage.com/card/rapid%20decay.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ud/67.jpg
+value=3.217
 rarity=R
 type=Instant
 cost={1}{B}
 effect=Exile up to three target cards from a single graveyard.~Cycling {2}
 timing=removal
-oracle=Exile up to three target cards from a single graveyard. Cycling {2}
+oracle=Exile up to three target cards from a single graveyard.\nCycling {2}

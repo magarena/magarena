@@ -1,10 +1,9 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
     event.processTargetCard(game, {
-        game.doAction(new MagicRemoveCardAction(it,MagicLocationType.Graveyard));
-        game.doAction(new MagicMoveCardAction(it,MagicLocationType.Graveyard,MagicLocationType.Exile));
+        game.doAction(new ShiftCardAction(it,MagicLocationType.Graveyard,MagicLocationType.Exile));
         if (it.hasType(MagicType.Creature)) {
-            game.doAction(new MagicChangeLifeAction(event.getRefPlayer(),2));
+            game.doAction(new ChangeLifeAction(event.getRefPlayer(),2));
         }
     });
 }
@@ -22,7 +21,7 @@ def action = {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_PLAYER,
+                TARGET_PLAYER,
                 this,
                 "Target player\$ exiles a card from his or her graveyard. " +
                 "If it's a creature card, PN gains 2 life."
@@ -36,7 +35,7 @@ def action = {
                     game.addEvent(new MagicEvent(
                         event.getSource(),
                         it,
-                        MagicTargetChoice.TARGET_CARD_FROM_GRAVEYARD,
+                        TARGET_CARD_FROM_GRAVEYARD,
                         MagicGraveyardTargetPicker.ExileOwn,
                         player,
                         action,

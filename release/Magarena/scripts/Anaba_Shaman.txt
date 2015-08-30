@@ -1,5 +1,5 @@
 name=Anaba Shaman
-image=http://mtgimage.com/card/anaba%20shaman.jpg
+image=http://magiccards.info/scans/en/9e/172.jpg
 value=2.122
 rarity=C
 type=Creature

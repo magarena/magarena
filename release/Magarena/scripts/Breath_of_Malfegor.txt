@@ -1,5 +1,5 @@
 name=Breath of Malfegor
-image=http://mtgimage.com/card/breath%20of%20malfegor.jpg
+image=http://magiccards.info/scans/en/arb/35.jpg
 value=3.022
 rarity=C
 type=Instant

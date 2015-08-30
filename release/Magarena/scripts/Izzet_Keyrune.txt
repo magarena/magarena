@@ -1,10 +1,11 @@
 name=Izzet Keyrune
-image=http://mtgimage.com/card/izzet%20keyrune.jpg
+image=http://magiccards.info/scans/en/rtr/230.jpg
 value=2.905
 rarity=U
 type=Artifact
 cost={3}
-ability={T}: Add {U} or {R} to your mana pool.
+ability={T}: Add {U} or {R} to your mana pool.;\
+        {U}{R}: Until end of turn, SN becomes a 2/1 blue and red Elemental artifact creature.;\
+        Whenever SN deals combat damage to a player, you may draw a card. If you do, discard a card.
 timing=main
-requires_groovy_code=Jeskai Elder;Izzet Keyrune
-oracle={T}: Add {U} or {R} to your mana pool. {U}{R}: Until end of turn, Izzet Keyrune becomes a 2/1 blue and red Elemental artifact creature. Whenever Izzet Keyrune deals combat damage to a player, you may draw a card. If you do, discard a card.
+oracle={T}: Add {U} or {R} to your mana pool.\n{U}{R}: Until end of turn, Izzet Keyrune becomes a 2/1 blue and red Elemental artifact creature.\nWhenever Izzet Keyrune deals combat damage to a player, you may draw a card. If you do, discard a card.

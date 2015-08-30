@@ -1,5 +1,5 @@
 name=Furnace Whelp
-image=http://mtgimage.com/card/furnace%20whelp.jpg
+image=http://magiccards.info/scans/en/m15/279.jpg
 value=2.700
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{R}{R}
 pt=2/2
 ability=flying;{R}: SN gets +1/+0 until end of turn.
 timing=main
-oracle=Flying. {R}: Furnace Whelp gets +1/+0 until end of turn.
+oracle=Flying\n{R}: Furnace Whelp gets +1/+0 until end of turn.

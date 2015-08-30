@@ -1,6 +1,6 @@
 name=Miraculous Recovery
-image=http://mtgimage.com/card/miraculous%20recovery.jpg
-value=4.364
+image=http://magiccards.info/scans/en/ddl/30.jpg
+value=4.304
 rarity=U
 type=Instant
 cost={4}{W}

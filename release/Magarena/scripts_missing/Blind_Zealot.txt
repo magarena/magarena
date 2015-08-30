@@ -1,6 +1,6 @@
 name=Blind Zealot
-image=http://mtgimage.com/card/blind%20zealot.jpg
-value=2.500
+image=http://magiccards.info/scans/en/nph/52.jpg
+value=3.560
 rarity=C
 type=Creature
 subtype=Human,Cleric
@@ -9,4 +9,4 @@ pt=2/2
 ability=Intimidate;\
         Whenever SN deals combat damage to a player, you may sacrifice it. If you do, destroy target creature that player controls.
 timing=main
-oracle=Intimidate. Whenever Blind Zealot deals combat damage to a player, you may sacrifice it. If you do, destroy target creature that player controls.
+oracle=Intimidate\nWhenever Blind Zealot deals combat damage to a player, you may sacrifice it. If you do, destroy target creature that player controls.

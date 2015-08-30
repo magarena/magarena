@@ -1,5 +1,5 @@
 name=Rabble-Rouser
-image=http://mtgimage.com/card/rabble%2Drouser.jpg
+image=http://magiccards.info/scans/en/gp/73.jpg
 value=2.441
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=bloodthirst 1
 timing=main
 requires_groovy_code
-oracle=Bloodthirst 1. {R}, {T}: Attacking creatures get +X/+0 until end of turn, where X is Rabble-Rouser's power.
+oracle=Bloodthirst 1\n{R}, {T}: Attacking creatures get +X/+0 until end of turn, where X is Rabble-Rouser's power.

@@ -1,5 +1,5 @@
 name=Samite Pilgrim
-image=http://mtgimage.com/card/samite%20pilgrim.jpg
+image=http://magiccards.info/scans/en/ps/15.jpg
 value=3.261
 rarity=C
 type=Creature

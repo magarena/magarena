@@ -1,9 +1,9 @@
 name=Ruthless Instincts
-image=http://mtgimage.com/card/ruthless%20instincts.jpg
+image=http://magiccards.info/scans/en/frf/136.jpg
 value=2.500
 rarity=U
 type=Instant
 cost={2}{G}
-effect=Choose one — • Target nonattacking creature gains reach and deathtouch until end of turn. Untap it. • Target attacking creature gets +2/+2 and gains trample until end of turn.
+effect=Choose one — (1) Target nonattacking creature gains reach and deathtouch until end of turn. Untap it. (2) Target attacking creature gets +2/+2 and gains trample until end of turn.
 timing=removal
-oracle=Choose one — • Target nonattacking creature gains reach and deathtouch until end of turn. Untap it. • Target attacking creature gets +2/+2 and gains trample until end of turn.
+oracle=Choose one —\n• Target nonattacking creature gains reach and deathtouch until end of turn. Untap it.\n• Target attacking creature gets +2/+2 and gains trample until end of turn.

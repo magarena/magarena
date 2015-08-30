@@ -5,7 +5,7 @@
             final int amount = payedCost.getX();
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                NEG_TARGET_CREATURE_OR_PLAYER,
                 new MagicDamageTargetPicker(amount),
                 amount,
                 this,
@@ -20,13 +20,13 @@
             int dealtDamage = 0;
             event.processTarget(game, {
                 final MagicDamage damage=new MagicDamage(event.getSource(),it,amount);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new DealDamageAction(damage));
                 dealtDamage = damage.getDealtAmount();
-                game.doAction(new MagicChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.OwnersLibrary));
+                game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.OwnersLibrary));
             });
             event.processTargetPermanent(game, {
                 if (dealtDamage > 0) {
-                    game.doAction(new MagicAddTurnTriggerAction(
+                    game.doAction(new AddTurnTriggerAction(
                         it,
                         MagicWhenSelfLeavesPlayTrigger.IfDieExileInstead
                     ));

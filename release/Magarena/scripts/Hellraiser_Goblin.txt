@@ -1,11 +1,11 @@
 name=Hellraiser Goblin
-image=http://mtgimage.com/card/hellraiser%20goblin.jpg
+image=http://magiccards.info/scans/en/ddn/7.jpg
 value=2.944
 rarity=U
 type=Creature
 subtype=Goblin,Berserker
 cost={2}{R}
 pt=2/2
-ability=creatures you control have haste, SN attacks each turn if able.
+ability=Creatures you control have haste and attack each combat if able.
 timing=main
 oracle=Creatures you control have haste and attack each combat if able.

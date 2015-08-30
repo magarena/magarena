@@ -1,6 +1,6 @@
 name=Ydwen Efreet
-image=http://mtgimage.com/card/ydwen%20efreet.jpg
-value=2.500
+image=http://magiccards.info/scans/en/med/112.jpg
+value=3.888
 rarity=R
 type=Creature
 subtype=Efreet

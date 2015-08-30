@@ -1,5 +1,5 @@
 name=Leonin Snarecaster
-image=http://mtgimage.com/card/leonin%20snarecaster.jpg
+image=http://magiccards.info/scans/en/ddn/4.jpg
 value=2.000
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Murk Dwellers
-image=http://mtgimage.com/card/murk%20dwellers.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5e/42.jpg
+value=1.654
 rarity=C
 type=Creature
 subtype=Zombie

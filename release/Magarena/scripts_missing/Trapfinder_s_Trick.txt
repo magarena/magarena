@@ -1,6 +1,6 @@
 name=Trapfinder's Trick
-image=http://mtgimage.com/card/trapfinder%27s%20trick.jpg
-value=2.500
+image=http://magiccards.info/scans/en/zen/73.jpg
+value=1.467
 rarity=C
 type=Sorcery
 cost={1}{U}

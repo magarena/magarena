@@ -1,5 +1,5 @@
 name=One-Eyed Scarecrow
-image=http://mtgimage.com/card/one%2Deyed%20scarecrow.jpg
+image=http://magiccards.info/scans/en/isd/230.jpg
 value=2.831
 removal=1
 rarity=C
@@ -10,4 +10,4 @@ pt=2/3
 ability=defender;creatures with flying your opponents control get -1/-0
 static=opponent
 timing=artifact
-oracle=Defender. Creatures with flying your opponents control get -1/-0.
+oracle=Defender\nCreatures with flying your opponents control get -1/-0.

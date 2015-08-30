@@ -1,5 +1,5 @@
 name=Harbinger of Night
-image=http://mtgimage.com/card/harbinger%20of%20night.jpg
+image=http://magiccards.info/scans/en/mr/26.jpg
 value=4.174
 rarity=R
 type=Creature

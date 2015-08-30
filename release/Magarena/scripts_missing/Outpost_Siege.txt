@@ -1,11 +1,11 @@
 name=Outpost Siege
-image=http://mtgimage.com/card/outpost%20siege.jpg
+image=http://magiccards.info/scans/en/frf/110.jpg
 value=2.500
 rarity=R
 type=Enchantment
 cost={3}{R}
-ability=As SN enters the battlefield, choose Khans or Dragons.;\
-        • Khans — At the beginning of your upkeep, exile the top card of your library. Until end of turn, you may play that card.;\
-        • Dragons — Whenever a creature you control leaves the battlefield, SN deals 1 damage to target creature or player.
-timing=main
-oracle=As Outpost Siege enters the battlefield, choose Khans or Dragons. • Khans — At the beginning of your upkeep, exile the top card of your library. Until end of turn, you may play that card. • Dragons — Whenever a creature you control leaves the battlefield, Outpost Siege deals 1 damage to target creature or player.
+ability=As SN enters the battlefield, choose Khans or Dragons. \
+        (1) Khans — At the beginning of your upkeep, exile the top card of your library. Until end of turn, you may play that card. \
+        (2) Dragons — Whenever a creature you control leaves the battlefield, SN deals 1 damage to target creature or player.
+timing=enchantment
+oracle=As Outpost Siege enters the battlefield, choose Khans or Dragons.\n• Khans — At the beginning of your upkeep, exile the top card of your library. Until end of turn, you may play that card.\n• Dragons — Whenever a creature you control leaves the battlefield, Outpost Siege deals 1 damage to target creature or player.

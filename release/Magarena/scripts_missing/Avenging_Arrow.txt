@@ -1,6 +1,6 @@
 name=Avenging Arrow
-image=http://mtgimage.com/card/avenging%20arrow.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rtr/4.jpg
+value=2.411
 rarity=C
 type=Instant
 cost={2}{W}

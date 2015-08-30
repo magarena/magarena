@@ -1,11 +1,11 @@
 name=Judge of Currents
-image=http://mtgimage.com/card/judge%20of%20currents.jpg
+image=http://magiccards.info/scans/en/lw/22.jpg
 value=3.453
 rarity=C
 type=Creature
 subtype=Merfolk,Wizard
 cost={1}{W}
 pt=1/1
-timing=fmain
-requires_groovy_code
+ability=Whenever a Merfolk you control becomes tapped, you may gain 1 life.
+timing=main
 oracle=Whenever a Merfolk you control becomes tapped, you may gain 1 life.

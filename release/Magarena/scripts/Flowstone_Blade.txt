@@ -1,11 +1,11 @@
 name=Flowstone Blade
-image=http://mtgimage.com/card/flowstone%20blade.jpg
+image=http://magiccards.info/scans/en/cns/143.jpg
 value=2.500
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={R}
+ability={R}: Enchanted creature gets +1/-1 until end of turn.
 enchant=pump,creature
 timing=aura
-requires_groovy_code
-oracle=Enchant creature. {R}: Enchanted creature gets +1/-1 until end of turn.
+oracle=Enchant creature\n{R}: Enchanted creature gets +1/-1 until end of turn.

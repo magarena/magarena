@@ -1,0 +1,11 @@
+name=Warden of the First Tree
+image=http://magiccards.info/scans/en/frf/143.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Human
+cost={G}
+pt=1/1
+timing=main
+requires_groovy_code
+oracle={1}{W/B}: Warden of the First Tree becomes a Human Warrior with base power and toughness 3/3.\n{2}{W/B}{W/B}: If Warden of the First Tree is a Warrior, it becomes a Human Spirit Warrior with trample and lifelink.\n{3}{W/B}{W/B}{W/B}: If Warden of the First Tree is a Spirit, put five +1/+1 counters on it.

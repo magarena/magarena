@@ -1,5 +1,5 @@
 name=Ogre Warrior
-image=http://mtgimage.com/card/ogre%20warrior.jpg
+image=http://magiccards.info/scans/en/st2k/12.jpg
 value=1.774
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Ogre,Warrior
 cost={3}{R}
 pt=3/3
 timing=main
+oracle=NONE

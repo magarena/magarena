@@ -3,9 +3,11 @@ package magic.ui.widget.downloader;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.Proxy;
 import java.nio.file.Path;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.CancellationException;
@@ -19,17 +21,25 @@ import javax.swing.JProgressBar;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
+import magic.data.DownloadableFile;
 import magic.data.ImagesDownloadList;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.model.MagicCardDefinition;
+import magic.translate.UiString;
+import magic.ui.dialog.IImageDownloadListener;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
+import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public abstract class ImageDownloadPanel extends JPanel {
+
+    // translatable strings
+    private static final String _S1 = "Cancel";
+    private static final String _S2 = "!!! ERROR - See console for details !!!";
 
     public enum DownloaderState {
         STOPPED,
@@ -41,23 +51,28 @@ public abstract class ImageDownloadPanel extends JPanel {
 
     private final MigLayout migLayout = new MigLayout();
     protected final JLabel captionLabel = getCaptionLabel(getProgressCaption());
-    private final JButton downloadButton = new JButton();
-    private final JButton cancelButton = new JButton("Cancel");
+    protected final JButton downloadButton = new JButton();
+    private final JButton cancelButton = new JButton(UiString.get(_S1));
     protected final JProgressBar progressBar = new JProgressBar();
+    protected volatile boolean isException = false;
 
     private ImagesDownloadList files;
     private boolean isCancelled = false;
     private SwingWorker<Void, Integer> imagesDownloader;
     private ImagesScanner imagesScanner;
     private DownloaderState downloaderState = DownloaderState.STOPPED;
+    private final IImageDownloadListener listener;
 
     protected abstract String getProgressCaption();
     protected abstract Collection<MagicCardDefinition> getCards();
     protected abstract String getLogFilename();
     protected abstract String getDownloadButtonCaption();
-    protected abstract SwingWorker<Void, Integer> getImageDownloadWorker(final ImagesDownloadList downloadList, final Proxy proxy);
+    protected abstract String doFileDownloadAndGetName(final DownloadableFile file, final Proxy proxy) throws IOException;
+    protected abstract int getCustomCount(final int countInteger);
+    protected abstract void doCustomActionAfterDownload(final int errorCount);
 
-    public ImageDownloadPanel() {
+    public ImageDownloadPanel(final IImageDownloadListener listener) {
+        this.listener = listener;
         setLookAndFeel();
         refreshLayout();
         setActions();
@@ -85,7 +100,7 @@ public abstract class ImageDownloadPanel extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
                 setDownloadingState();
-                imagesDownloader = getImageDownloadWorker(files, CONFIG.getProxy());
+                imagesDownloader = new ImageDownloadWorker(files, CONFIG.getProxy());
                 imagesDownloader.execute();
                 notifyStatusChanged(DownloaderState.DOWNLOADING);
             }
@@ -200,10 +215,102 @@ public abstract class ImageDownloadPanel extends JPanel {
             if (!isCancelled) {
                 downloadButton.setEnabled(files.size() > 0);
                 captionLabel.setIcon(null);
-                captionLabel.setText(getProgressCaption() + files.size());
+                captionLabel.setText(String.format("%s = %d",
+                        getProgressCaption(),
+                        files.size())
+                );
             }
             notifyStatusChanged(DownloaderState.STOPPED);
         }
+    }
+
+    private class ImageDownloadWorker extends SwingWorker<Void, Integer> {
+
+        private final List<String> downloadedImages = new ArrayList<>();
+        private final Proxy proxy;
+        private final ImagesDownloadList downloadList;
+        private volatile int errorCount = 0;
+
+        public ImageDownloadWorker(final ImagesDownloadList downloadList, final Proxy proxy) {
+            this.downloadList = downloadList;
+            this.proxy = proxy;
+        }
+
+        @Override
+        protected Void doInBackground() throws Exception {
+            int fileCount = 0;
+            errorCount = 0;
+            for (DownloadableFile file : downloadList) {
+                try {
+                    final String name = doFileDownloadAndGetName(file, proxy);
+                    if (!name.isEmpty()) {
+                        downloadedImages.add(name);
+                    }
+                } catch (IOException ex) {
+                    final String msg = String.format("%s [%s]", ex.toString(), file.getFilename());
+                    listener.setMessage(msg);
+                }
+                fileCount++;
+                if (isCancelled()) {
+                    break;
+                } else {
+                    publish(new Integer(fileCount));
+                }
+            }
+            return null;
+        }
+
+        @Override
+        protected void done() {
+            try {
+                get();
+            } catch (ExecutionException | InterruptedException ex) {
+                isException = true;
+                if (ex.getCause() instanceof IOException) {
+                    listener.setMessage(ex.getCause().getMessage());
+                } else {
+                    throw new RuntimeException(ex);
+                }
+            } catch (CancellationException ex) {
+                System.err.println("ImageDownloadWorker cancelled.");
+            }
+            setButtonState(false);
+            resetProgressBar();
+            doCustomActionAfterDownload(errorCount);
+            if (isException) {
+                captionLabel.setText(UiString.get(_S2));
+                captionLabel.setHorizontalAlignment(SwingConstants.CENTER);
+                captionLabel.setIcon(null);
+                downloadButton.setEnabled(false);
+            } else {
+                magic.ui.CachedImagesProvider.getInstance().clearCache();
+                if (MagicSystem.isDevMode() && downloadedImages.size() > 0) {
+                    saveDownloadLog(downloadedImages);
+                }
+                buildDownloadImagesList();
+            }
+            
+            notifyStatusChanged(DownloaderState.STOPPED);
+        }
+
+        @Override
+        protected void process(List<Integer> chunks) {
+            final int countInteger = chunks.get(chunks.size() - 1);
+            if (!isCancelled()) {
+                progressBar.setValue(countInteger);
+                captionLabel.setText(String.format("%s = %d",
+                        getProgressCaption(),
+                        downloadList.size() - getCustomCount(countInteger))
+                );
+            }
+        }
+
+        private void resetProgressBar() {
+            assert SwingUtilities.isEventDispatchThread();
+            progressBar.setValue(0);
+            progressBar.setString(null);
+        }
+
     }
 
 }

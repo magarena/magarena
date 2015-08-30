@@ -1,9 +1,9 @@
 name=Well
-image=http://mtgimage.com/card/alivewell.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dgm/121b.jpg
+value=3.333
 rarity=U
 type=Sorcery
 cost={W}
 effect=You gain 2 life for each creature you control.~Fuse
 timing=main
-oracle=You gain 2 life for each creature you control. Fuse
+oracle=You gain 2 life for each creature you control.\nFuse

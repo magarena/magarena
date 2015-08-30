@@ -1,0 +1,13 @@
+name=Encase in Ice
+image=http://magiccards.info/scans/en/dtk/54.jpg
+value=2.500
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={1}{U}
+ability=Flash;\
+        Enchant red or green creature;\
+        When SN enters the battlefield, tap enchanted creature.;\
+        Enchanted creature doesn't untap during its controller's untap step.
+timing=aura
+oracle=Flash\nEnchant red or green creature\nWhen Encase in Ice enters the battlefield, tap enchanted creature.\nEnchanted creature doesn't untap during its controller's untap step.

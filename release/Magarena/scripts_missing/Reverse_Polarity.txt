@@ -1,7 +1,7 @@
 name=Reverse Polarity
-image=http://mtgimage.com/card/reverse%20polarity.jpg
-value=2.500
-rarity=C
+image=http://magiccards.info/scans/en/rv/220.jpg
+value=2.375
+rarity=U
 type=Instant
 cost={W}{W}
 effect=You gain X life, where X is twice the damage dealt to you so far this turn by artifacts.

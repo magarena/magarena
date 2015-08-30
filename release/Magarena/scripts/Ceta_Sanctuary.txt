@@ -1,0 +1,9 @@
+name=Ceta Sanctuary
+image=http://magiccards.info/scans/en/ap/20.jpg
+value=3.500
+rarity=U
+type=Enchantment
+cost={2}{U}
+timing=enchantment
+requires_groovy_code
+oracle=At the beginning of your upkeep, if you control a red or green permanent, draw a card, then discard a card. If you control a red permanent and a green permanent, instead draw two cards, then discard a card.

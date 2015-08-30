@@ -1,9 +1,9 @@
 name=Urza's Power Plant
-image=http://mtgimage.com/card/urza%27s%20power%20plant.jpg
-value=2.500
-rarity=C
+image=http://magiccards.info/scans/en/me4/258.jpg
+value=4.485
+rarity=B
 type=Land
 subtype=Urza's,Power_Plant
 ability={T}: Add {1} to your mana pool. If you control an Urza's Mine and an Urza's Tower, add {2} to your mana pool instead.
-timing=main
+timing=land
 oracle={T}: Add {1} to your mana pool. If you control an Urza's Mine and an Urza's Tower, add {2} to your mana pool instead.

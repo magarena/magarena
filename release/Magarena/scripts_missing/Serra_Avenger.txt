@@ -1,6 +1,6 @@
 name=Serra Avenger
-image=http://mtgimage.com/card/serra%20avenger.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m13/33.jpg
+value=4.247
 rarity=R
 type=Creature
 subtype=Angel
@@ -10,4 +10,4 @@ ability=You can't cast SN during your first, second, or third turns of the game.
         Flying;\
         Vigilance
 timing=main
-oracle=You can't cast Serra Avenger during your first, second, or third turns of the game. Flying. Vigilance
+oracle=You can't cast Serra Avenger during your first, second, or third turns of the game.\nFlying\nVigilance

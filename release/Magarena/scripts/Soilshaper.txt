@@ -1,11 +1,11 @@
 name=Soilshaper
-image=http://mtgimage.com/card/soilshaper.jpg
+image=http://magiccards.info/scans/en/chk/243.jpg
 value=2.650
 rarity=U
 type=Creature
 subtype=Spirit
 cost={1}{G}
 pt=1/1
+ability=Whenever you cast a Spirit or Arcane spell, target land becomes a 3/3 creature until end of turn. It's still a land.
 timing=main
-requires_groovy_code
 oracle=Whenever you cast a Spirit or Arcane spell, target land becomes a 3/3 creature until end of turn. It's still a land.

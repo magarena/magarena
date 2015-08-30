@@ -1,5 +1,5 @@
 name=Predator Dragon
-image=http://mtgimage.com/card/predator%20dragon.jpg
+image=http://magiccards.info/scans/en/ala/109.jpg
 value=3.948
 rarity=R
 type=Creature
@@ -8,4 +8,4 @@ cost={3}{R}{R}{R}
 pt=4/4
 ability=flying;haste;devour 2
 timing=fmain
-oracle=Flying, haste. Devour 2
+oracle=Flying, haste\nDevour 2

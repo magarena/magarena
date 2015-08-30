@@ -1,0 +1,10 @@
+name=3/3 black Angel creature token with flying
+token=Angel
+image=http://cdn.staticneo.com/w/mtg/b/bb/Angel3.jpg
+value=3
+type=Creature
+subtype=Angel
+color=b
+pt=3/3
+ability=Flying
+oracle=Flying

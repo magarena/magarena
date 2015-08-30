@@ -1,0 +1,11 @@
+name=Dragon-Scarred Bear
+image=http://magiccards.info/scans/en/dtk/183.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Bear
+cost={2}{G}
+pt=3/2
+ability={1}{G}: Regenerate SN. Activate this ability only if creatures you control have total power 8 or greater.
+timing=main
+oracle=Formidable — {1}{G}: Regenerate Dragon-Scarred Bear. Activate this ability only if creatures you control have total power 8 or greater.

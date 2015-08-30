@@ -1,9 +1,0 @@
-name=Dense Canopy
-image=http://mtgimage.com/card/dense%20canopy.jpg
-value=2.500
-rarity=U
-type=Enchantment
-cost={1}{G}
-ability=Creatures with flying can block only creatures with flying.
-timing=main
-oracle=Creatures with flying can block only creatures with flying.

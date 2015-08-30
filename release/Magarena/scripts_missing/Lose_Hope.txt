@@ -1,6 +1,6 @@
 name=Lose Hope
-image=http://mtgimage.com/card/lose%20hope.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5dn/52.jpg
+value=3.500
 rarity=C
 type=Instant
 cost={B}

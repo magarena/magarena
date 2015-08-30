@@ -1,9 +1,9 @@
 name=Heartstone
-image=http://mtgimage.com/card/heartstone.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sh/128.jpg
+value=3.909
 rarity=U
 type=Artifact
 cost={3}
 ability=Activated abilities of creatures cost {1} less to activate. This effect can't reduce the amount of mana an ability costs to activate to less than one mana.
-timing=main
+timing=artifact
 oracle=Activated abilities of creatures cost {1} less to activate. This effect can't reduce the amount of mana an ability costs to activate to less than one mana.

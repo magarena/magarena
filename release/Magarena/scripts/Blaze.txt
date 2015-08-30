@@ -1,5 +1,5 @@
 name=Blaze
-image=http://mtgimage.com/card/blaze.jpg
+image=http://magiccards.info/scans/en/pch/47.jpg
 value=3.158
 removal=4
 rarity=U

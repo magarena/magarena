@@ -1,5 +1,5 @@
 name=Nameless Inversion
-image=http://mtgimage.com/card/nameless%20inversion.jpg
+image=http://magiccards.info/scans/en/lw/128.jpg
 value=4.265
 rarity=C
 type=Tribal,Instant
@@ -8,4 +8,4 @@ ability=changeling
 cost={1}{B}
 timing=removal
 requires_groovy_code
-oracle=Changeling. Target creature gets +3/-3 and loses all creature types until end of turn.
+oracle=Changeling\nTarget creature gets +3/-3 and loses all creature types until end of turn.

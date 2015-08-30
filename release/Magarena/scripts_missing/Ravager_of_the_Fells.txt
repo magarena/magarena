@@ -1,6 +1,6 @@
 name=Ravager of the Fells
-image=http://mtgimage.com/card/ravager%20of%20the%20fells.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dka/140b.jpg
+value=3.953
 rarity=M
 type=Creature
 subtype=Werewolf
@@ -9,5 +9,7 @@ pt=4/4
 ability=Trample;\
         Whenever this creature transforms into SN, it deals 2 damage to target opponent and 2 damage to up to one target creature that player controls.;\
         At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
+transform=Huntmaster of the Fells
 timing=main
-oracle=Trample. Whenever this creature transforms into Ravager of the Fells, it deals 2 damage to target opponent and 2 damage to up to one target creature that player controls. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Ravager of the Fells.
+hidden
+oracle=Trample\nWhenever this creature transforms into Ravager of the Fells, it deals 2 damage to target opponent and 2 damage to up to one target creature that player controls.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Ravager of the Fells.

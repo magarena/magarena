@@ -1,12 +1,12 @@
 name=Phyrexian Devourer
-image=http://mtgimage.com/card/phyrexian%20devourer.jpg
-value=2.500
-rarity=R
+image=http://magiccards.info/scans/en/me2/216.jpg
+value=3.354
+rarity=U
 type=Artifact,Creature
 subtype=Construct
 cost={6}
 pt=1/1
 ability=When SN's power is 7 or greater, sacrifice it.;\
         Exile the top card of your library: Put X +1/+1 counters on SN, where X is the exiled card's converted mana cost.
-timing=main
-oracle=When Phyrexian Devourer's power is 7 or greater, sacrifice it. Exile the top card of your library: Put X +1/+1 counters on Phyrexian Devourer, where X is the exiled card's converted mana cost.
+timing=artifact
+oracle=When Phyrexian Devourer's power is 7 or greater, sacrifice it.\nExile the top card of your library: Put X +1/+1 counters on Phyrexian Devourer, where X is the exiled card's converted mana cost.

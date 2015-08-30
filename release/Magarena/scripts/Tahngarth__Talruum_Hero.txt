@@ -1,5 +1,5 @@
 name=Tahngarth, Talruum Hero
-image=http://mtgimage.com/card/tahngarth%2C%20talruum%20hero.jpg
+image=http://magiccards.info/scans/en/ps/74a.jpg
 value=4.071
 rarity=R
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=vigilance
 timing=main
 requires_groovy_code
-oracle=Vigilance. {1}{R}, {T}: Tahngarth, Talruum Hero deals damage equal to its power to target creature. That creature deals damage equal to its power to Tahngarth.
+oracle=Vigilance\n{1}{R}, {T}: Tahngarth, Talruum Hero deals damage equal to its power to target creature. That creature deals damage equal to its power to Tahngarth.

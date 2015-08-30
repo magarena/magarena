@@ -1,6 +1,6 @@
 name=Shambling Swarm
-image=http://mtgimage.com/card/shambling%20swarm.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tr/82.jpg
+value=3.516
 rarity=R
 type=Creature
 subtype=Horror

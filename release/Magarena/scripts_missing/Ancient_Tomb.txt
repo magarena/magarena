@@ -1,8 +1,8 @@
 name=Ancient Tomb
-image=http://mtgimage.com/card/ancient%20tomb.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/vma/289.jpg
+value=4.333
+rarity=R
 type=Land
 ability={T}: Add {2} to your mana pool. SN deals 2 damage to you.
-timing=main
+timing=land
 oracle={T}: Add {2} to your mana pool. Ancient Tomb deals 2 damage to you.

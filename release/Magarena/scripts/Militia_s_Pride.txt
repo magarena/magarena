@@ -1,10 +1,10 @@
 name=Militia's Pride
-image=http://mtgimage.com/card/militia%27s%20pride.jpg
+image=http://magiccards.info/scans/en/lw/30.jpg
 value=3.948
 rarity=R
 type=Tribal,Enchantment
 subtype=Kithkin
 cost={1}{W}
+ability=Whenever a nontoken creature you control attacks, you may pay {W}. If you do, put a 1/1 white Kithkin Soldier creature token onto the battlefield tapped and attacking.
 timing=enchantment
-requires_groovy_code
 oracle=Whenever a nontoken creature you control attacks, you may pay {W}. If you do, put a 1/1 white Kithkin Soldier creature token onto the battlefield tapped and attacking.

@@ -1,0 +1,12 @@
+name=Dromoka, the Eternal
+image=http://magiccards.info/scans/en/frf/151.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Dragon
+cost={3}{G}{W}
+pt=5/5
+ability=Flying;\
+        Whenever a Dragon you control attacks, bolster 2.
+timing=main
+oracle=Flying\nWhenever a Dragon you control attacks, bolster 2.

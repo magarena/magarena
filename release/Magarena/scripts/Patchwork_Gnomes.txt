@@ -1,5 +1,5 @@
 name=Patchwork Gnomes
-image=http://mtgimage.com/card/patchwork%20gnomes.jpg
+image=http://magiccards.info/scans/en/od/306.jpg
 value=2.636
 rarity=U
 type=Artifact,Creature

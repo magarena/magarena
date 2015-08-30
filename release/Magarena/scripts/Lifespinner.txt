@@ -1,0 +1,11 @@
+name=Lifespinner
+image=http://magiccards.info/scans/en/bok/133.jpg
+value=3.194
+rarity=U
+type=Creature
+subtype=Spirit
+cost={3}{G}
+pt=3/3
+timing=main
+requires_groovy_code
+oracle={T}, Sacrifice three Spirits: Search your library for a legendary Spirit permanent card and put it onto the battlefield. Then shuffle your library.

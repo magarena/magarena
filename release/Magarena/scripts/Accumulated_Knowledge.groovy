@@ -1,5 +1,5 @@
 [
-   new MagicSpellCardEvent() {
+    new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
@@ -11,14 +11,14 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int amount = game.filterCards(
-                MagicTargetFilterFactory.cardName("Accumulated Knowledge")
+            final int amount = cardName("Accumulated Knowledge")
                 .from(MagicTargetType.Graveyard)
                 .from(MagicTargetType.OpponentsGraveyard)
-            ).size();
-            game.doAction(new MagicDrawAction(event.getPlayer()));
-            game.logAppendMessage(event.getPlayer()," (X="+amount+")");
-            game.doAction(new MagicDrawAction(event.getPlayer(),amount));
+                .filter(event)
+                .size();
+            game.doAction(new DrawAction(event.getPlayer()));
+            game.logAppendX(event.getPlayer(),amount);
+            game.doAction(new DrawAction(event.getPlayer(),amount));
         }
     }
 ]

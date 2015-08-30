@@ -1,5 +1,5 @@
 name=Kami of the Palace Fields
-image=http://mtgimage.com/card/kami%20of%20the%20palace%20fields.jpg
+image=http://magiccards.info/scans/en/chk/24.jpg
 value=1.721
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={5}{W}
 pt=3/2
 ability=flying;first strike;soulshift 5
 timing=main
-oracle=Flying, first strike. Soulshift 5
+oracle=Flying, first strike\nSoulshift 5

@@ -1,6 +1,6 @@
 name=Grief Tyrant
-image=http://mtgimage.com/card/grief%20tyrant.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/189.jpg
+value=3.319
 rarity=U
 type=Creature
 subtype=Horror
@@ -9,4 +9,4 @@ pt=8/8
 ability=SN enters the battlefield with four -1/-1 counters on it.;\
         When SN dies, put a -1/-1 counter on target creature for each -1/-1 counter on SN.
 timing=main
-oracle=Grief Tyrant enters the battlefield with four -1/-1 counters on it. When Grief Tyrant dies, put a -1/-1 counter on target creature for each -1/-1 counter on Grief Tyrant.
+oracle=Grief Tyrant enters the battlefield with four -1/-1 counters on it.\nWhen Grief Tyrant dies, put a -1/-1 counter on target creature for each -1/-1 counter on Grief Tyrant.

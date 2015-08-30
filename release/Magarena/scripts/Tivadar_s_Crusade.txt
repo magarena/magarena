@@ -1,9 +1,10 @@
 name=Tivadar's Crusade
-image=http://mtgimage.com/card/tivadar%27s%20crusade.jpg
+image=http://magiccards.info/scans/en/med/28.jpg
 value=3.643
 rarity=U
 type=Sorcery
 cost={1}{W}{W}
+ability=Cast SN with AI only if an opponent controls a Goblin.
 effect=Destroy all Goblins.
 timing=removal
 oracle=Destroy all Goblins.

@@ -1,5 +1,5 @@
 name=Stonefare Crocodile
-image=http://mtgimage.com/card/stonefare%20crocodile.jpg
+image=http://magiccards.info/scans/en/ddm/56.jpg
 value=2.889
 rarity=C
 type=Creature

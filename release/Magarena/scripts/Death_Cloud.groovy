@@ -12,19 +12,19 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getCardOnStack().getX();
             for (final MagicPlayer player : game.getAPNAP()) {
-                game.doAction(new MagicChangeLifeAction(player,-amount));
+                game.doAction(new ChangeLifeAction(player,-amount));
             }
             for (final MagicPlayer player : game.getAPNAP()) {
                 game.addEvent(new MagicDiscardEvent(event.getSource(),player,amount));
             }
             for (final MagicPlayer player : game.getAPNAP()) {
                 for (final int count = 1; count <= amount; count++) {
-                    game.addEvent(new MagicSacrificePermanentEvent(event.getSource(),player,MagicTargetChoice.SACRIFICE_CREATURE));
+                    game.addEvent(new MagicSacrificePermanentEvent(event.getSource(),player,SACRIFICE_CREATURE));
                 }
             }
             for (final MagicPlayer player : game.getAPNAP()) {
                 for (final int count = 1; count <= amount; count++) {
-                    game.addEvent(new MagicSacrificePermanentEvent(event.getSource(),player,MagicTargetChoice.SACRIFICE_LAND));
+                    game.addEvent(new MagicSacrificePermanentEvent(event.getSource(),player,SACRIFICE_LAND));
                 }
             }
         }

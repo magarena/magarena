@@ -1,0 +1,11 @@
+name=Lightwalker
+image=http://magiccards.info/scans/en/dtk/24.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={1}{W}
+pt=2/1
+ability=SN has flying as long as it has a +1/+1 counter on it.
+timing=main
+oracle=Lightwalker has flying as long as it has a +1/+1 counter on it.

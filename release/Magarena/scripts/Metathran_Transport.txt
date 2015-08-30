@@ -1,5 +1,5 @@
 name=Metathran Transport
-image=http://mtgimage.com/card/metathran%20transport.jpg
+image=http://magiccards.info/scans/en/in/62.jpg
 value=3.241
 rarity=U
 type=Creature
@@ -7,7 +7,7 @@ subtype=Metathran
 cost={1}{U}{U}
 pt=1/3
 ability=Flying;\
-        SN can't be blocked by blue creatures.
+        SN can't be blocked by blue creatures.;\
+        {U}: Target creature becomes blue until end of turn.
 timing=main
-requires_groovy_code=Fylamarid
-oracle=Flying. Metathran Transport can't be blocked by blue creatures. {U}: Target creature becomes blue until end of turn.
+oracle=Flying\nMetathran Transport can't be blocked by blue creatures.\n{U}: Target creature becomes blue until end of turn.

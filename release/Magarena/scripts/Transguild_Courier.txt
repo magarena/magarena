@@ -1,5 +1,5 @@
 name=Transguild Courier
-image=http://mtgimage.com/card/transguild%20courier.jpg
+image=http://magiccards.info/scans/en/di/168.jpg
 value=3.965
 rarity=U
 type=Artifact,Creature
@@ -8,3 +8,4 @@ cost={4}
 color=wburg
 pt=3/3
 timing=artifact
+oracle=NONE

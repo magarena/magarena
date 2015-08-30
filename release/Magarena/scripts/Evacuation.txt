@@ -1,10 +1,11 @@
 name=Evacuation
-image=http://mtgimage.com/card/evacuation.jpg
+image=http://magiccards.info/scans/en/10e/83.jpg
 value=4.365
 removal=1
 rarity=R
 type=Instant
 cost={3}{U}{U}
+ability=Cast SN with AI only if there is a creature on the battlefield.
+effect=Return all creatures to their owners' hands.
 timing=removal
-requires_groovy_code
 oracle=Return all creatures to their owners' hands.

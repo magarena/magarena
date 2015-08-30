@@ -1,0 +1,10 @@
+name=Orim's Chant
+image=http://magiccards.info/scans/en/ps/11.jpg
+value=4.602
+rarity=R
+type=Instant
+cost={W}
+ability=Kicker {W}
+timing=tapping
+requires_groovy_code
+oracle=Kicker {W}\nTarget player can't cast spells this turn.\nIf Orim's Chant was kicked, creatures can't attack this turn.

@@ -1,9 +1,9 @@
 name=Day of the Dragons
-image=http://mtgimage.com/card/day%20of%20the%20dragons.jpg
+image=http://magiccards.info/scans/en/sc/31.jpg
 value=4.340
 rarity=R
 type=Enchantment
 cost={4}{U}{U}{U}
 timing=enchantment
 requires_groovy_code
-oracle=When Day of the Dragons enters the battlefield, exile all creatures you control. Then put that many 5/5 red Dragon creature tokens with flying onto the battlefield. When Day of the Dragons leaves the battlefield, sacrifice all Dragons you control. Then return the exiled cards to the battlefield under your control.
+oracle=When Day of the Dragons enters the battlefield, exile all creatures you control. Then put that many 5/5 red Dragon creature tokens with flying onto the battlefield.\nWhen Day of the Dragons leaves the battlefield, sacrifice all Dragons you control. Then return the exiled cards to the battlefield under your control.

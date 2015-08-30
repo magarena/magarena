@@ -1,10 +1,10 @@
 name=Serra's Liturgy
-image=http://mtgimage.com/card/serra%27s%20liturgy.jpg
-value=2.500
+image=http://magiccards.info/scans/en/us/49.jpg
+value=2.864
 rarity=R
 type=Enchantment
 cost={2}{W}{W}
 ability=At the beginning of your upkeep, you may put a verse counter on SN.;\
         {W}, Sacrifice SN: Destroy up to X target artifacts and/or enchantments, where X is the number of verse counters on SN.
-timing=main
-oracle=At the beginning of your upkeep, you may put a verse counter on Serra's Liturgy. {W}, Sacrifice Serra's Liturgy: Destroy up to X target artifacts and/or enchantments, where X is the number of verse counters on Serra's Liturgy.
+timing=enchantment
+oracle=At the beginning of your upkeep, you may put a verse counter on Serra's Liturgy.\n{W}, Sacrifice Serra's Liturgy: Destroy up to X target artifacts and/or enchantments, where X is the number of verse counters on Serra's Liturgy.

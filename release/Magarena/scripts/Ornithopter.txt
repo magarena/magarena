@@ -1,5 +1,5 @@
 name=Ornithopter
-image=http://mtgimage.com/card/ornithopter.jpg
+image=http://magiccards.info/scans/en/m15/223.jpg
 value=3.438
 ability=flying
 rarity=C

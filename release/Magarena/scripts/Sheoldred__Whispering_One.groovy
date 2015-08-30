@@ -19,7 +19,7 @@
                 game.addEvent(new MagicSacrificePermanentEvent(
                     event.getSource(),
                     opponent,
-                    MagicTargetChoice.SACRIFICE_CREATURE
+                    SACRIFICE_CREATURE
                 ));
             }
         }

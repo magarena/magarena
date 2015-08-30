@@ -1,5 +1,5 @@
 name=Silhana Ledgewalker
-image=http://mtgimage.com/card/silhana%20ledgewalker.jpg
+image=http://magiccards.info/scans/en/pc2/77.jpg
 value=4.016
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=hexproof;\
         SN can't be blocked except by creatures with flying.
 timing=fmain
-oracle=Hexproof. Silhana Ledgewalker can't be blocked except by creatures with flying.
+oracle=Hexproof\nSilhana Ledgewalker can't be blocked except by creatures with flying.

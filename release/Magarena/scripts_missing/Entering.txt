@@ -1,9 +1,9 @@
 name=Entering
-image=http://mtgimage.com/card/breakingentering.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dgm/124b.jpg
+value=3.800
 rarity=R
 type=Sorcery
 cost={4}{B}{R}
 effect=Put a creature card from a graveyard onto the battlefield under your control. It gains haste until end of turn.~Fuse
 timing=main
-oracle=Put a creature card from a graveyard onto the battlefield under your control. It gains haste until end of turn. Fuse
+oracle=Put a creature card from a graveyard onto the battlefield under your control. It gains haste until end of turn.\nFuse

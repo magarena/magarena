@@ -1,5 +1,5 @@
 name=Malachite Golem
-image=http://mtgimage.com/card/malachite%20golem.jpg
+image=http://magiccards.info/scans/en/mi/202.jpg
 value=1.517
 rarity=C
 type=Artifact,Creature

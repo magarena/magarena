@@ -1,5 +1,5 @@
 name=Charging Slateback
-image=http://mtgimage.com/card/charging%20slateback.jpg
+image=http://magiccards.info/scans/en/on/194.jpg
 value=1.648
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=4/3
 ability=SN can't block.;\
         Morph {4}{R}
 timing=main
-oracle=Charging Slateback can't block. Morph {4}{R}
+oracle=Charging Slateback can't block.\nMorph {4}{R}

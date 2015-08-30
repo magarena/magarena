@@ -1,5 +1,5 @@
 def NONARTIFACT_CREATURE_YOU_CONTROL=new MagicPermanentFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
         return !target.hasType(MagicType.Artifact) && target.isCreature() && target.isController(player);
     } 
 };
@@ -24,9 +24,9 @@ def TARGET_NONARTIFACT_CREATURE_YOU_CONTROL = new MagicTargetChoice(
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-             event.processTargetPermanent(game, {
-                game.doAction(MagicChangeStateAction.Set(it,MagicPermanentState.CannotBeRegenerated));
-                game.doAction(new MagicDestroyAction(it));
+            event.processTargetPermanent(game, {
+                game.doAction(ChangeStateAction.Set(it,MagicPermanentState.CannotBeRegenerated));
+                game.doAction(new DestroyAction(it));
             });
         }
     }

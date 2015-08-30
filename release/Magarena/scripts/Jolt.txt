@@ -1,9 +1,9 @@
 name=Jolt
-image=http://mtgimage.com/card/jolt.jpg
+image=http://magiccards.info/scans/en/mr/70.jpg
 value=2.900
 rarity=C
 type=Instant
 cost={2}{U}
 effect=You may tap or untap target artifact, creature, or land.~Draw a card at the beginning of the next turn's upkeep.
 timing=tapping
-oracle=You may tap or untap target artifact, creature, or land. Draw a card at the beginning of the next turn's upkeep.
+oracle=You may tap or untap target artifact, creature, or land.\nDraw a card at the beginning of the next turn's upkeep.

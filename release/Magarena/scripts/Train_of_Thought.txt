@@ -1,5 +1,5 @@
 name=Train of Thought
-image=http://mtgimage.com/card/train%20of%20thought.jpg
+image=http://magiccards.info/scans/en/ddj/19.jpg
 value=2.893
 rarity=C
 type=Sorcery
@@ -7,4 +7,4 @@ cost={1}{U}
 ability=replicate {1}{U}
 effect=Draw a card.
 timing=draw
-oracle=Replicate {1}{U}. Draw a card.
+oracle=Replicate {1}{U}\nDraw a card.

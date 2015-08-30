@@ -1,9 +1,9 @@
 name=Lens of Clarity
-image=http://mtgimage.com/card/lens%20of%20clarity.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/223.jpg
+value=2.000
 rarity=C
 type=Artifact
 cost={1}
 ability=You may look at the top card of your library and at face-down creatures you don't control.
-timing=main
+timing=artifact
 oracle=You may look at the top card of your library and at face-down creatures you don't control.

@@ -1,9 +1,0 @@
-name=Crux of Fate
-image=http://mtgimage.com/card/crux%20of%20fate.jpg
-value=2.500
-rarity=R
-type=Sorcery
-cost={3}{B}{B}
-effect=Choose one — • Destroy all Dragon creatures. • Destroy all non-Dragon creatures.
-timing=main
-oracle=Choose one — • Destroy all Dragon creatures. • Destroy all non-Dragon creatures.

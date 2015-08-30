@@ -1,11 +1,11 @@
 name=Scarecrow
-image=http://mtgimage.com/card/scarecrow.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me4/225.jpg
+value=2.810
 rarity=U
 type=Artifact,Creature
 subtype=Scarecrow
 cost={5}
 pt=2/2
 ability={6}, {T}: Prevent all damage that would be dealt to you this turn by creatures with flying.
-timing=main
+timing=artifact
 oracle={6}, {T}: Prevent all damage that would be dealt to you this turn by creatures with flying.

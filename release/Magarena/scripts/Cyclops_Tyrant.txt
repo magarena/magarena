@@ -1,0 +1,12 @@
+name=Cyclops Tyrant
+image=http://magiccards.info/scans/en/m14/135.jpg
+value=1.441
+rarity=C
+type=Creature
+subtype=Cyclops
+cost={5}{R}
+pt=3/4
+ability=Intimidate;\
+        SN can't block creatures with power 2 or less.
+timing=main
+oracle=Intimidate\nCyclops Tyrant can't block creatures with power 2 or less.

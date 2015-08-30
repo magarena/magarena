@@ -1,10 +1,11 @@
 name=Tribute to Hunger
-image=http://mtgimage.com/card/tribute%20to%20hunger.jpg
+image=http://magiccards.info/scans/en/isd/119.jpg
 value=3.812
 removal=2
 rarity=U
 type=Instant
 cost={2}{B}
+ability=Cast SN with AI only if an opponent controls a creature.
 timing=removal
 requires_groovy_code
 oracle=Target opponent sacrifices a creature. You gain life equal to that creature's toughness.

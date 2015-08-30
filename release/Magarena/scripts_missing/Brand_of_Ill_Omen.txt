@@ -1,6 +1,6 @@
 name=Brand of Ill Omen
-image=http://mtgimage.com/card/brand%20of%20ill%20omen.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ia/177.jpg
+value=3.630
 rarity=R
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={3}{R}
 ability=Enchant creature;\
         Cumulative upkeep {R};\
         Enchanted creature's controller can't cast creature spells.
-timing=main
-oracle=Enchant creature. Cumulative upkeep {R}. Enchanted creature's controller can't cast creature spells.
+timing=aura
+oracle=Enchant creature\nCumulative upkeep {R}\nEnchanted creature's controller can't cast creature spells.

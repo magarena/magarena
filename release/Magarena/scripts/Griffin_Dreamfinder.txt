@@ -1,5 +1,5 @@
 name=Griffin Dreamfinder
-image=http://mtgimage.com/card/griffin%20dreamfinder.jpg
+image=http://magiccards.info/scans/en/bng/16.jpg
 value=2.652
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/4
 ability=flying;\
         When SN enters the battlefield, return target enchantment card from your graveyard to your hand.
 timing=main
-oracle=Flying. When Griffin Dreamfinder enters the battlefield, return target enchantment card from your graveyard to your hand.
+oracle=Flying\nWhen Griffin Dreamfinder enters the battlefield, return target enchantment card from your graveyard to your hand.

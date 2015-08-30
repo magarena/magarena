@@ -1,5 +1,5 @@
 name=Minotaur Tactician
-image=http://mtgimage.com/card/minotaur%20tactician.jpg
+image=http://magiccards.info/scans/en/ap/65.jpg
 value=1.387
 rarity=C
 type=Creature
@@ -10,4 +10,4 @@ ability=haste;\
         SN gets +1/+1 as long as you control a white creature.;\
         SN gets +1/+1 as long as you control a blue creature.
 timing=main
-oracle=Haste. Minotaur Tactician gets +1/+1 as long as you control a white creature. Minotaur Tactician gets +1/+1 as long as you control a blue creature.
+oracle=Haste\nMinotaur Tactician gets +1/+1 as long as you control a white creature.\nMinotaur Tactician gets +1/+1 as long as you control a blue creature.

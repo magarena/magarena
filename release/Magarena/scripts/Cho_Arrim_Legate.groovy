@@ -1,12 +1,12 @@
 def PLAINS_AND_SWAMP_CONDITION = new MagicCondition() {
     public boolean accept(final MagicSource source) {
         return source.getOpponent().controlsPermanent(MagicSubType.Swamp) &&
-             source.getController().controlsPermanent(MagicSubType.Plains);
+               source.getController().controlsPermanent(MagicSubType.Plains);
     }
 };
 
 [
-     new MagicCardActivation(
+    new MagicHandCastActivation(
         [PLAINS_AND_SWAMP_CONDITION, MagicCondition.CARD_CONDITION],
         new MagicActivationHints(MagicTiming.Main, true),
         "Free"

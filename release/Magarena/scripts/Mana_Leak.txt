@@ -1,5 +1,5 @@
 name=Mana Leak
-image=http://mtgimage.com/card/mana%20leak.jpg
+image=http://magiccards.info/scans/en/ddn/64.jpg
 value=4.459
 rarity=C
 type=Instant

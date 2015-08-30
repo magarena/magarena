@@ -1,6 +1,6 @@
 name=Wash Out
-image=http://mtgimage.com/card/wash%20out.jpg
-value=2.500
+image=http://magiccards.info/scans/en/c13/66.jpg
+value=4.294
 rarity=U
 type=Sorcery
 cost={3}{U}

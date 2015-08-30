@@ -1,9 +1,9 @@
 name=Wild Defiance
-image=http://mtgimage.com/card/wild%20defiance.jpg
+image=http://magiccards.info/scans/en/avr/203.jpg
 value=3.775
 rarity=R
 type=Enchantment
 cost={2}{G}
+ability=Whenever a creature you control becomes the target of an instant or sorcery spell, that creature gets +3/+3 until end of turn.
 timing=enchantment
-requires_groovy_code
 oracle=Whenever a creature you control becomes the target of an instant or sorcery spell, that creature gets +3/+3 until end of turn.

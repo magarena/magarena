@@ -1,9 +1,9 @@
 name=Memory Crystal
-image=http://mtgimage.com/card/memory%20crystal.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ex/134.jpg
+value=4.053
 rarity=R
 type=Artifact
 cost={3}
 ability=Buyback costs cost {2} less.
-timing=main
+timing=artifact
 oracle=Buyback costs cost {2} less.

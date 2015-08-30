@@ -1,6 +1,6 @@
 name=Godsend
-image=http://mtgimage.com/card/godsend.jpg
-value=2.500
+image=http://magiccards.info/scans/en/jou/12.jpg
+value=3.903
 rarity=M
 type=Legendary,Artifact
 subtype=Equipment
@@ -9,5 +9,5 @@ ability=Equipped creature gets +3/+3.;\
         Whenever equipped creature blocks or becomes blocked by one or more creatures, you may exile one of those creatures.;\
         Opponents can't cast cards with the same name as cards exiled with SN.;\
         Equip {3}
-timing=main
-oracle=Equipped creature gets +3/+3. Whenever equipped creature blocks or becomes blocked by one or more creatures, you may exile one of those creatures. Opponents can't cast cards with the same name as cards exiled with Godsend. Equip {3}
+timing=equipment
+oracle=Equipped creature gets +3/+3.\nWhenever equipped creature blocks or becomes blocked by one or more creatures, you may exile one of those creatures.\nOpponents can't cast cards with the same name as cards exiled with Godsend.\nEquip {3}

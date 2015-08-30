@@ -1,11 +1,11 @@
 name=Labyrinth Minotaur
-image=http://mtgimage.com/card/labyrinth%20minotaur.jpg
+image=http://magiccards.info/scans/en/me3/39.jpg
 value=3.367
 rarity=C
 type=Creature
 subtype=Minotaur
 cost={3}{U}
 pt=1/4
+ability=Whenever SN blocks a creature, that creature doesn't untap during its controller's next untap step.
 timing=main
-requires_groovy_code=Wall of Frost
 oracle=Whenever Labyrinth Minotaur blocks a creature, that creature doesn't untap during its controller's next untap step.

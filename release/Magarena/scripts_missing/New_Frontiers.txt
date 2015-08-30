@@ -1,6 +1,6 @@
 name=New Frontiers
-image=http://mtgimage.com/card/new%20frontiers.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/257.jpg
+value=3.650
 rarity=R
 type=Sorcery
 cost={X}{G}

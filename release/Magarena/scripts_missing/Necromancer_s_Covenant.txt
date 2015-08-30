@@ -1,10 +1,10 @@
 name=Necromancer's Covenant
-image=http://mtgimage.com/card/necromancer%27s%20covenant.jpg
-value=2.500
+image=http://magiccards.info/scans/en/arb/82.jpg
+value=3.667
 rarity=R
 type=Enchantment
 cost={3}{W}{B}{B}
 ability=When SN enters the battlefield, exile all creature cards from target player's graveyard, then put a 2/2 black Zombie creature token onto the battlefield for each card exiled this way.;\
         Zombies you control have lifelink.
-timing=main
-oracle=When Necromancer's Covenant enters the battlefield, exile all creature cards from target player's graveyard, then put a 2/2 black Zombie creature token onto the battlefield for each card exiled this way. Zombies you control have lifelink.
+timing=enchantment
+oracle=When Necromancer's Covenant enters the battlefield, exile all creature cards from target player's graveyard, then put a 2/2 black Zombie creature token onto the battlefield for each card exiled this way.\nZombies you control have lifelink.

@@ -1,0 +1,11 @@
+name=Flamespeaker Adept
+image=http://magiccards.info/scans/en/ths/123.jpg
+value=3.490
+rarity=U
+type=Creature
+subtype=Human,Shaman
+cost={2}{R}
+pt=2/3
+ability=Whenever you scry, SN gets +2/+0 and gains first strike until end of turn.
+timing=main
+oracle=Whenever you scry, Flamespeaker Adept gets +2/+0 and gains first strike until end of turn.

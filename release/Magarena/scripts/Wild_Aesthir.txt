@@ -1,5 +1,5 @@
 name=Wild Aesthir
-image=http://mtgimage.com/card/wild%20aesthir.jpg
+image=http://magiccards.info/scans/en/me4/34.jpg
 value=3.317
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=flying;first strike;\
         {W}{W}: SN gets +2/+0 until end of turn. Activate this ability only once each turn.
 timing=main
-oracle=Flying, first strike. {W}{W}: Wild Aesthir gets +2/+0 until end of turn. Activate this ability only once each turn.
+oracle=Flying, first strike\n{W}{W}: Wild Aesthir gets +2/+0 until end of turn. Activate this ability only once each turn.

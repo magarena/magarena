@@ -3,7 +3,7 @@ def DISCARD_THREE_CARDS = {
     new MagicAtEndOfTurnTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {
-            game.addDelayedAction(new MagicRemoveTriggerAction(this));
+            game.addDelayedAction(new RemoveTriggerAction(this));
             return new MagicEvent(
                 game.createDelayedSource(staleSource, stalePlayer),
                 this,
@@ -29,8 +29,8 @@ def DISCARD_THREE_CARDS = {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicDrawAction(event.getPlayer(),3));
-            game.doAction(new MagicAddTriggerAction(DISCARD_THREE_CARDS(event.getSource(), event.getPlayer())));
+            game.doAction(new DrawAction(event.getPlayer(),3));
+            game.doAction(new AddTriggerAction(DISCARD_THREE_CARDS(event.getSource(), event.getPlayer())));
         }
     }
 ]

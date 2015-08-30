@@ -1,5 +1,5 @@
 name=Bola Warrior
-image=http://mtgimage.com/card/bola%20warrior.jpg
+image=http://magiccards.info/scans/en/ne/78.jpg
 value=2.100
 rarity=C
 type=Creature

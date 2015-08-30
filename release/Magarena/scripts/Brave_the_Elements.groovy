@@ -7,17 +7,14 @@
                 MagicColorChoice.ALL_INSTANCE,
                 this,
                 "Choose a color\$. " +
-                "White creatures PN controls have protection from the chosen color until end of turn."
+                "White creatures PN controls gain protection from the chosen color until end of turn."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicColor color = event.getChosenColor();
-            final MagicAbility protection = color.getProtectionAbility();
-            final Collection<MagicPermanent> targets =
-                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.WHITE_CREATURE_YOU_CONTROL);
-            for (final MagicPermanent target : targets) {
-                game.doAction(new MagicGainAbilityAction(target, protection));
+            final MagicAbility protection = event.getChosenColor().getProtectionAbility();
+            WHITE_CREATURE_YOU_CONTROL.filter(event) each {
+                game.doAction(new GainAbilityAction(it, protection));
             }
         }
     }

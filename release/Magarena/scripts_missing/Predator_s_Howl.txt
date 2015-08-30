@@ -1,9 +1,9 @@
 name=Predator's Howl
-image=http://mtgimage.com/card/predator%27s%20howl.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cns/37.jpg
+value=3.611
 rarity=U
 type=Instant
 cost={3}{G}
 effect=Put a 2/2 green Wolf creature token onto the battlefield.~Put three 2/2 green Wolf creature tokens onto the battlefield instead if a creature died this turn.
 timing=removal
-oracle=Put a 2/2 green Wolf creature token onto the battlefield. Morbid — Put three 2/2 green Wolf creature tokens onto the battlefield instead if a creature died this turn.
+oracle=Put a 2/2 green Wolf creature token onto the battlefield.\nMorbid — Put three 2/2 green Wolf creature tokens onto the battlefield instead if a creature died this turn.

@@ -1,5 +1,5 @@
 name=Nyxborn Triton
-image=http://mtgimage.com/card/nyxborn%20triton.jpg
+image=http://magiccards.info/scans/en/bng/46.jpg
 value=3.114
 rarity=C
 type=Enchantment,Creature
@@ -9,4 +9,4 @@ pt=2/3
 ability=Bestow {4}{U};\
         Enchanted creature gets +2/+3.
 timing=main
-oracle=Bestow {4}{U}. Enchanted creature gets +2/+3.
+oracle=Bestow {4}{U}\nEnchanted creature gets +2/+3.

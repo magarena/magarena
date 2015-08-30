@@ -1,9 +1,9 @@
 name=Horror of Horrors
-image=http://mtgimage.com/card/horror%20of%20horrors.jpg
+image=http://magiccards.info/scans/en/9e/140.jpg
 value=2.036
 rarity=U
 type=Enchantment
 cost={3}{B}{B}
-ability=Sacrifice a Swamp:Regenerate target black creature.
+ability=Sacrifice a Swamp: Regenerate target black creature.
 timing=enchantment
 oracle=Sacrifice a Swamp: Regenerate target black creature.

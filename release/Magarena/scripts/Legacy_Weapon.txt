@@ -1,5 +1,5 @@
 name=Legacy Weapon
-image=http://mtgimage.com/card/legacy%20weapon.jpg
+image=http://magiccards.info/scans/en/10e/330.jpg
 value=4.153
 rarity=R
 type=Legendary,Artifact
@@ -7,4 +7,4 @@ cost={7}
 ability=When SN is put into a graveyard from anywhere, shuffle it into its owner's library.;\
         {W}{U}{B}{R}{G}: Exile target permanent.
 timing=artifact
-oracle={W}{U}{B}{R}{G}: Exile target permanent. If Legacy Weapon would be put into a graveyard from anywhere, reveal Legacy Weapon and shuffle it into its owner's library instead.
+oracle={W}{U}{B}{R}{G}: Exile target permanent.\nIf Legacy Weapon would be put into a graveyard from anywhere, reveal Legacy Weapon and shuffle it into its owner's library instead.

@@ -1,6 +1,6 @@
 name=Hamletback Goliath
-image=http://mtgimage.com/card/hamletback%20goliath.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m13/136.jpg
+value=3.623
 rarity=R
 type=Creature
 subtype=Giant,Warrior

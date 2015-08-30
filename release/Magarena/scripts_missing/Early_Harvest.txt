@@ -1,9 +1,0 @@
-name=Early Harvest
-image=http://mtgimage.com/card/early%20harvest.jpg
-value=2.500
-rarity=R
-type=Instant
-cost={1}{G}{G}
-effect=Target player untaps all basic lands he or she controls.
-timing=removal
-oracle=Target player untaps all basic lands he or she controls.

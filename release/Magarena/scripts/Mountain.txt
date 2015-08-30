@@ -1,9 +1,9 @@
 name=Mountain
-image=http://mtgimage.com/set/ZEN/mountain1.jpg
+image=http://magiccards.info/scans/en/zen/242.jpg
 value=3.500
-rarity=L
+rarity=B
 type=Basic,Land
 subtype=Mountain
 mana=r4
 timing=land
-oracle=R
+oracle=NONE

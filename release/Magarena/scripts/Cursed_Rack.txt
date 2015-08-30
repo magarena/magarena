@@ -1,0 +1,9 @@
+name=Cursed Rack
+image=http://magiccards.info/scans/en/med/155.jpg
+value=3.914
+rarity=U
+type=Artifact
+cost={4}
+timing=artifact
+requires_groovy_code
+oracle=As Cursed Rack enters the battlefield, choose an opponent.\nThe chosen player's maximum hand size is four.

@@ -1,5 +1,5 @@
 name=Dawnbringer Charioteers
-image=http://mtgimage.com/card/dawnbringer%20charioteers.jpg
+image=http://magiccards.info/scans/en/jou/6.jpg
 value=3.763
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=2/4
 ability=Flying;lifelink;\
         Whenever you cast a spell that targets SN, put a +1/+1 counter on SN.
 timing=main
-oracle=Flying, lifelink. Heroic — Whenever you cast a spell that targets Dawnbringer Charioteers, put a +1/+1 counter on Dawnbringer Charioteers.
+oracle=Flying, lifelink\nHeroic — Whenever you cast a spell that targets Dawnbringer Charioteers, put a +1/+1 counter on Dawnbringer Charioteers.

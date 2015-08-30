@@ -1,10 +1,10 @@
 name=Story Circle
-image=http://mtgimage.com/card/story%20circle.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/10e/49.jpg
+value=4.330
+rarity=R
 type=Enchantment
 cost={1}{W}{W}
 ability=As SN enters the battlefield, choose a color.;\
         {W}: The next time a source of your choice of the chosen color would deal damage to you this turn, prevent that damage.
-timing=main
-oracle=As Story Circle enters the battlefield, choose a color. {W}: The next time a source of your choice of the chosen color would deal damage to you this turn, prevent that damage.
+timing=enchantment
+oracle=As Story Circle enters the battlefield, choose a color.\n{W}: The next time a source of your choice of the chosen color would deal damage to you this turn, prevent that damage.

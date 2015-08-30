@@ -1,5 +1,5 @@
 name=Akroma, Angel of Wrath
-image=http://mtgimage.com/card/akroma%2C%20angel%20of%20wrath.jpg
+image=http://magiccards.info/scans/en/dvd/1.jpg
 value=4.475
 rarity=M
 type=Legendary,Creature

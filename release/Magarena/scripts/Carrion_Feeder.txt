@@ -1,5 +1,5 @@
 name=Carrion Feeder
-image=http://mtgimage.com/card/carrion%20feeder.jpg
+image=http://magiccards.info/scans/en/pvc/2.jpg
 value=4.348
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=SN can't block.;\
         Sacrifice a creature: Put a +1/+1 counter on SN.
 timing=main
-oracle=Carrion Feeder can't block. Sacrifice a creature: Put a +1/+1 counter on Carrion Feeder.
+oracle=Carrion Feeder can't block.\nSacrifice a creature: Put a +1/+1 counter on Carrion Feeder.

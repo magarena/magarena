@@ -1,5 +1,5 @@
 name=Changeling Titan
-image=http://mtgimage.com/card/changeling%20titan.jpg
+image=http://magiccards.info/scans/en/lw/200.jpg
 value=3.710
 removal=2
 rarity=U
@@ -7,6 +7,8 @@ type=Creature
 subtype=Shapeshifter
 cost={4}{G}
 pt=7/7
-ability=changeling;champion creature
+ability=Changeling;\
+        Champion a creature;\
+        Cast SN with AI only if you control a creature
 timing=main
-oracle=Changeling. Champion a creature
+oracle=Changeling\nChampion a creature

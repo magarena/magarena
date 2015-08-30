@@ -1,11 +1,11 @@
 name=Dawn's Reflection
-image=http://mtgimage.com/card/dawn%27s%20reflection.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5dn/85.jpg
+value=3.750
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={3}{G}
 ability=Enchant land;\
         Whenever enchanted land is tapped for mana, its controller adds two mana in any combination of colors to his or her mana pool.
-timing=main
-oracle=Enchant land. Whenever enchanted land is tapped for mana, its controller adds two mana in any combination of colors to his or her mana pool.
+timing=aura
+oracle=Enchant land\nWhenever enchanted land is tapped for mana, its controller adds two mana in any combination of colors to his or her mana pool.

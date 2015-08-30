@@ -1,5 +1,5 @@
 name=Serpent of the Endless Sea
-image=http://mtgimage.com/card/serpent%20of%20the%20endless%20sea.jpg
+image=http://magiccards.info/scans/en/m10/70.jpg
 value=2.781
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=*/*
 ability=SN's power and toughness are each equal to the number of Islands you control.;\
         SN can't attack unless defending player controls an Island.
 timing=main
-oracle=Serpent of the Endless Sea's power and toughness are each equal to the number of Islands you control. Serpent of the Endless Sea can't attack unless defending player controls an Island.
+oracle=Serpent of the Endless Sea's power and toughness are each equal to the number of Islands you control.\nSerpent of the Endless Sea can't attack unless defending player controls an Island.

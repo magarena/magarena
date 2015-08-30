@@ -1,5 +1,5 @@
 name=Shinen of Fear's Chill
-image=http://mtgimage.com/card/shinen%20of%20fear%27s%20chill.jpg
+image=http://magiccards.info/scans/en/sok/88.jpg
 value=0.982
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/2
 ability=SN can't block.;\
         {1}{B}, Discard SN: Target creature can't block this turn.
 timing=main
-oracle=Shinen of Fear's Chill can't block. Channel — {1}{B}, Discard Shinen of Fear's Chill: Target creature can't block this turn.
+oracle=Shinen of Fear's Chill can't block.\nChannel — {1}{B}, Discard Shinen of Fear's Chill: Target creature can't block this turn.

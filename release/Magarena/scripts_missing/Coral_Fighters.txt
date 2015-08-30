@@ -1,6 +1,6 @@
 name=Coral Fighters
-image=http://mtgimage.com/card/coral%20fighters.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddi/4.jpg
+value=3.656
 rarity=U
 type=Creature
 subtype=Merfolk,Soldier

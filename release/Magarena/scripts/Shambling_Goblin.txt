@@ -1,0 +1,11 @@
+name=Shambling Goblin
+image=http://magiccards.info/scans/en/dtk/118.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie,Goblin
+cost={B}
+pt=1/1
+ability=When SN dies, target creature an opponent controls gets -1/-1 until end of turn.
+timing=main
+oracle=When Shambling Goblin dies, target creature an opponent controls gets -1/-1 until end of turn.

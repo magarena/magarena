@@ -1,5 +1,5 @@
 name=Amphin Pathmage
-image=http://mtgimage.com/card/amphin%20pathmage.jpg
+image=http://magiccards.info/scans/en/m15/45.jpg
 value=3.071
 rarity=C
 type=Creature

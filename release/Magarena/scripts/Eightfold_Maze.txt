@@ -1,5 +1,5 @@
 name=Eightfold Maze
-image=http://mtgimage.com/card/eightfold%20maze.jpg
+image=http://magiccards.info/scans/en/me3/9.jpg
 value=2.976
 rarity=R
 type=Instant
@@ -7,4 +7,4 @@ cost={2}{W}
 ability=Cast SN only during the declare attackers step and only if you've been attacked this step.
 effect=Destroy target attacking creature.
 timing=attack
-oracle=Cast Eightfold Maze only during the declare attackers step and only if you've been attacked this step. Destroy target attacking creature.
+oracle=Cast Eightfold Maze only during the declare attackers step and only if you've been attacked this step.\nDestroy target attacking creature.

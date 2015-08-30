@@ -1,12 +1,12 @@
 name=Mercurial Kite
-image=http://mtgimage.com/card/mercurial%20kite.jpg
+image=http://magiccards.info/scans/en/sc/39.jpg
 value=2.500
 rarity=C
 type=Creature
 subtype=Bird
 cost={3}{U}
 pt=2/2
-ability=Flying
+ability=Flying.;\
+        Whenever SN deals combat damage to a creature, tap that creature. That creature doesn't untap during its controller's next untap step.
 timing=main
-requires_groovy_code=Orochi Ranger
-oracle=Flying. Whenever Mercurial Kite deals combat damage to a creature, tap that creature. That creature doesn't untap during its controller's next untap step.
+oracle=Flying\nWhenever Mercurial Kite deals combat damage to a creature, tap that creature. That creature doesn't untap during its controller's next untap step.

@@ -1,6 +1,6 @@
 name=Swan Song
-image=http://mtgimage.com/card/swan%20song.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ths/65.jpg
+value=4.079
 rarity=R
 type=Instant
 cost={U}

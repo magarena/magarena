@@ -1,7 +1,7 @@
 name=Telekinesis
-image=http://mtgimage.com/card/telekinesis.jpg
-value=2.500
-rarity=R
+image=http://magiccards.info/scans/en/med/52.jpg
+value=3.816
+rarity=C
 type=Instant
 cost={U}{U}
 effect=Tap target creature. Prevent all combat damage that would be dealt by that creature this turn. It doesn't untap during its controller's next two untap steps.

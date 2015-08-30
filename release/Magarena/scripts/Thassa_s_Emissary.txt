@@ -1,5 +1,5 @@
 name=Thassa's Emissary
-image=http://mtgimage.com/card/thassa's%20emissary.jpg
+image=http://magiccards.info/scans/en/ths/68.jpg
 value=3.417
 rarity=U
 type=Enchantment,Creature
@@ -8,7 +8,7 @@ cost={3}{U}
 pt=3/3
 ability=Bestow {5}{U};\
         Whenever SN deals combat damage to a player, draw a card.;\
+        Whenever enchanted creature deals combat damage to a player, draw a card.;\
         Enchanted creature gets +3/+3.
 timing=main
-requires_groovy_code
-oracle=Bestow {5}{U}. Whenever Thassa's Emissary or enchanted creature deals combat damage to a player, draw a card. Enchanted creature gets +3/+3.
+oracle=Bestow {5}{U}\nWhenever Thassa's Emissary or enchanted creature deals combat damage to a player, draw a card.\nEnchanted creature gets +3/+3.

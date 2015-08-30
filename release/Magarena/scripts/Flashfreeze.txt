@@ -1,5 +1,5 @@
 name=Flashfreeze
-image=http://mtgimage.com/card/flashfreeze.jpg
+image=http://magiccards.info/scans/en/m12/52.jpg
 value=3.523
 rarity=U
 type=Instant

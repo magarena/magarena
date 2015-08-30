@@ -1,11 +1,11 @@
 name=Lore Seeker
-image=http://mtgimage.com/card/lore%20seeker.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cns/62.jpg
+value=3.923
 rarity=R
 type=Artifact,Creature
 subtype=Construct
 cost={2}
 pt=2/2
 ability=Reveal SN as you draft it. After you draft SN, you may add a booster pack to the draft.
-timing=main
+timing=artifact
 oracle=Reveal Lore Seeker as you draft it. After you draft Lore Seeker, you may add a booster pack to the draft.

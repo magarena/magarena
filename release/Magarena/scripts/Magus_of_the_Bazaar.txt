@@ -1,5 +1,5 @@
 name=Magus of the Bazaar
-image=http://mtgimage.com/card/magus%20of%20the%20bazaar.jpg
+image=http://magiccards.info/scans/en/pc/43.jpg
 value=3.877
 rarity=R
 type=Creature

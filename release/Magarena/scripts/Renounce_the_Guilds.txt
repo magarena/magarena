@@ -1,5 +1,5 @@
 name=Renounce the Guilds
-image=http://mtgimage.com/card/renounce%20the%20guilds.jpg
+image=http://magiccards.info/scans/en/dgm/5.jpg
 value=3.127
 removal=3
 rarity=R

@@ -1,5 +1,5 @@
 name=Nimbus Swimmer
-image=http://mtgimage.com/card/nimbus%20swimmer.jpg
+image=http://magiccards.info/scans/en/ddo/54.jpg
 value=3.070
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=0/0
 ability=flying;\
         SN enters the battlefield with X +1/+1 counters on it.
 timing=main
-oracle=Flying. Nimbus Swimmer enters the battlefield with X +1/+1 counters on it.
+oracle=Flying\nNimbus Swimmer enters the battlefield with X +1/+1 counters on it.

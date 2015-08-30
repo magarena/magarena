@@ -1,0 +1,11 @@
+name=Aboroth
+image=http://magiccards.info/scans/en/wl/59.jpg
+value=3.258
+rarity=R
+type=Creature
+subtype=Elemental
+cost={4}{G}{G}
+pt=9/9
+timing=main
+requires_groovy_code
+oracle=Cumulative upkeep—Put a -1/-1 counter on Aboroth.

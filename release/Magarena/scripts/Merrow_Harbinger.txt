@@ -1,5 +1,5 @@
 name=Merrow Harbinger
-image=http://mtgimage.com/card/merrow%20harbinger.jpg
+image=http://magiccards.info/scans/en/lw/73.jpg
 value=3.194
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/3
 ability=islandwalk;\
         When SN enters the battlefield, you may search your library for a Merfolk card, reveal it, then shuffle your library and put that card on top of it.
 timing=main
-oracle=Islandwalk. When Merrow Harbinger enters the battlefield, you may search your library for a Merfolk card, reveal it, then shuffle your library and put that card on top of it.
+oracle=Islandwalk\nWhen Merrow Harbinger enters the battlefield, you may search your library for a Merfolk card, reveal it, then shuffle your library and put that card on top of it.

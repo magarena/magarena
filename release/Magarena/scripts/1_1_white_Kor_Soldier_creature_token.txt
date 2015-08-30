@@ -1,0 +1,8 @@
+name=1/1 white Kor Soldier creature token
+token=Kor Soldier
+image=http://magiccards.info/extras/token/zendikar/kor-soldier.jpg
+value=1
+type=Creature
+subtype=Kor,Soldier
+color=w
+pt=1/1

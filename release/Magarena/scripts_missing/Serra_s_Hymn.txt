@@ -1,10 +1,10 @@
 name=Serra's Hymn
-image=http://mtgimage.com/card/serra%27s%20hymn.jpg
-value=2.500
+image=http://magiccards.info/scans/en/us/48.jpg
+value=2.097
 rarity=U
 type=Enchantment
 cost={W}
 ability=At the beginning of your upkeep, you may put a verse counter on SN.;\
         Sacrifice SN: Prevent the next X damage that would be dealt this turn to any number of target creatures and/or players, divided as you choose, where X is the number of verse counters on SN.
-timing=main
-oracle=At the beginning of your upkeep, you may put a verse counter on Serra's Hymn. Sacrifice Serra's Hymn: Prevent the next X damage that would be dealt this turn to any number of target creatures and/or players, divided as you choose, where X is the number of verse counters on Serra's Hymn.
+timing=enchantment
+oracle=At the beginning of your upkeep, you may put a verse counter on Serra's Hymn.\nSacrifice Serra's Hymn: Prevent the next X damage that would be dealt this turn to any number of target creatures and/or players, divided as you choose, where X is the number of verse counters on Serra's Hymn.

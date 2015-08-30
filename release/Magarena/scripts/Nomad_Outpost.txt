@@ -1,5 +1,5 @@
 name=Nomad Outpost
-image=http://mtgimage.com/card/nomad%20outpost.jpg
+image=http://magiccards.info/scans/en/ktk/237.jpg
 value=3.750
 rarity=U
 type=Land
@@ -7,4 +7,4 @@ mana=r3w3b3
 ability=SN enters the battlefield tapped.;\
         {T}: Add {R} or {W} or {B} to your mana pool.
 timing=tapland
-oracle=Nomad Outpost enters the battlefield tapped. {T}: Add {R}, {W}, or {B} to your mana pool.
+oracle=Nomad Outpost enters the battlefield tapped.\n{T}: Add {R}, {W}, or {B} to your mana pool.

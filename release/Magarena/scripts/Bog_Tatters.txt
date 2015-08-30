@@ -1,5 +1,5 @@
 name=Bog Tatters
-image=http://mtgimage.com/card/bog%20tatters.jpg
+image=http://magiccards.info/scans/en/zen/84.jpg
 value=2.120
 ability=swampwalk
 rarity=C

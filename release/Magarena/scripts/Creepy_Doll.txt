@@ -1,0 +1,12 @@
+name=Creepy Doll
+image=http://magiccards.info/scans/en/isd/220.jpg
+value=3.117
+rarity=R
+type=Artifact,Creature
+subtype=Construct
+cost={5}
+pt=1/1
+ability=Indestructible;\
+        Whenever SN deals combat damage to a creature, flip a coin. If you win the flip, destroy that creature.
+timing=main
+oracle=Indestructible\nWhenever Creepy Doll deals combat damage to a creature, flip a coin. If you win the flip, destroy that creature.

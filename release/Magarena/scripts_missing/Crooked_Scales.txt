@@ -1,9 +1,9 @@
 name=Crooked Scales
-image=http://mtgimage.com/card/crooked%20scales.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/291.jpg
+value=2.891
 rarity=R
 type=Artifact
 cost={4}
 ability={4}, {T}: Flip a coin. If you win the flip, destroy target creature an opponent controls. If you lose the flip, destroy target creature you control unless you pay {3} and repeat this process.
-timing=main
+timing=artifact
 oracle={4}, {T}: Flip a coin. If you win the flip, destroy target creature an opponent controls. If you lose the flip, destroy target creature you control unless you pay {3} and repeat this process.

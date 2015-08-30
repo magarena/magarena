@@ -1,5 +1,5 @@
 name=Abrupt Decay
-image=http://mtgimage.com/card/abrupt%20decay.jpg
+image=http://magiccards.info/scans/en/rtr/141.jpg
 value=4.394
 rarity=R
 type=Instant
@@ -7,4 +7,4 @@ cost={B}{G}
 ability=SN can't be countered by spells or abilities.
 timing=removal
 effect=Destroy target nonland permanent with converted mana cost 3 or less.
-oracle=Abrupt Decay can't be countered by spells or abilities. Destroy target nonland permanent with converted mana cost 3 or less.
+oracle=Abrupt Decay can't be countered by spells or abilities.\nDestroy target nonland permanent with converted mana cost 3 or less.

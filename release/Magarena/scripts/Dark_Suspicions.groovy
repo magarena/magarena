@@ -2,8 +2,8 @@
     new MagicAtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
-           return permanent.isOpponent(upkeepPlayer) ?
-               new MagicEvent(
+            return permanent.isOpponent(upkeepPlayer) ?
+                new MagicEvent(
                     permanent,
                     permanent.getController(),
                     upkeepPlayer,
@@ -15,8 +15,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getRefPlayer().getHandSize() - event.getPlayer().getHandSize();
+            game.logAppendX(event.getPlayer(),amount);
             if (amount > 0) {
-                game.doAction(new MagicChangeLifeAction(event.getRefPlayer(),-amount));
+                game.doAction(new ChangeLifeAction(event.getRefPlayer(),-amount));
             }
         }
     }

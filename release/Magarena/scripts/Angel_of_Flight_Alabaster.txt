@@ -1,12 +1,12 @@
 name=Angel of Flight Alabaster
-image=http://mtgimage.com/card/angel%20of%20flight%20alabaster.jpg
+image=http://magiccards.info/scans/en/isd/2.jpg
 value=3.799
 rarity=R
 type=Creature
 subtype=Angel
 cost={4}{W}
 pt=4/4
-ability=flying;\
+ability=Flying;\
         At the beginning of your upkeep, return target Spirit card from your graveyard to your hand.
 timing=main
-oracle=Flying. At the beginning of your upkeep, return target Spirit card from your graveyard to your hand.
+oracle=Flying\nAt the beginning of your upkeep, return target Spirit card from your graveyard to your hand.

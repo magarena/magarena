@@ -1,9 +1,9 @@
 name=Alchemist's Refuge
-image=http://mtgimage.com/card/alchemist%27s%20refuge.jpg
-value=2.500
+image=http://magiccards.info/scans/en/avr/225.jpg
+value=4.038
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\
         {G}{U}, {T}: You may cast nonland cards this turn as though they had flash.
-timing=main
-oracle={T}: Add {1} to your mana pool. {G}{U}, {T}: You may cast nonland cards this turn as though they had flash.
+timing=land
+oracle={T}: Add {1} to your mana pool.\n{G}{U}, {T}: You may cast nonland cards this turn as though they had flash.

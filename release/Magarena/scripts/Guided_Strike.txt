@@ -1,9 +1,9 @@
 name=Guided Strike
-image=http://mtgimage.com/card/guided%20strike.jpg
+image=http://magiccards.info/scans/en/ju/13.jpg
 value=3.589
 rarity=C
 type=Instant
 cost={1}{W}
 effect=Target creature gets +1/+0 and gains first strike until end of turn.~Draw a card.
 timing=pump
-oracle=Target creature gets +1/+0 and gains first strike until end of turn. Draw a card.
+oracle=Target creature gets +1/+0 and gains first strike until end of turn.\nDraw a card.

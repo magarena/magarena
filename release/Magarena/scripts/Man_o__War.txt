@@ -1,5 +1,5 @@
 name=Man-o'-War
-image=http://mtgimage.com/card/man%2Do%27%2Dwar.jpg
+image=http://magiccards.info/scans/en/ddo/38.jpg
 value=4.500
 removal=2
 rarity=C

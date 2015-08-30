@@ -1,0 +1,12 @@
+name=Phage the Untouchable
+image=http://magiccards.info/scans/en/cns/120.jpg
+value=4.250
+rarity=M
+type=Legendary,Creature
+subtype=Avatar,Minion
+cost={3}{B}{B}{B}{B}
+pt=4/4
+ability=Whenever SN deals combat damage to a creature, destroy that creature. It can't be regenerated.
+timing=main
+requires_groovy_code
+oracle=When Phage the Untouchable enters the battlefield, if you didn't cast it from your hand, you lose the game.\nWhenever Phage deals combat damage to a creature, destroy that creature. It can't be regenerated.\nWhenever Phage deals combat damage to a player, that player loses the game.

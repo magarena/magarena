@@ -1,6 +1,6 @@
 name=Hunt Down
-image=http://mtgimage.com/card/hunt%20down.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lw/218.jpg
+value=2.108
 rarity=C
 type=Sorcery
 cost={G}

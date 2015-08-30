@@ -1,11 +1,12 @@
 name=Bramblewood Paragon
-image=http://mtgimage.com/card/bramblewood%20paragon.jpg
+image=http://magiccards.info/scans/en/mt/115.jpg
 value=3.771
 rarity=U
 type=Creature
 subtype=Elf,Warrior
 cost={1}{G}
 pt=2/2
+ability=Each creature you control with a +1/+1 counter on it has trample.
 timing=main
 requires_groovy_code
-oracle=Each other Warrior creature you control enters the battlefield with an additional +1/+1 counter on it. Each creature you control with a +1/+1 counter on it has trample.
+oracle=Each other Warrior creature you control enters the battlefield with an additional +1/+1 counter on it.\nEach creature you control with a +1/+1 counter on it has trample.

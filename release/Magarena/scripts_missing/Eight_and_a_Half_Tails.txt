@@ -1,6 +1,6 @@
 name=Eight-and-a-Half-Tails
-image=http://mtgimage.com/card/eight-and-a-half-tails.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/8.jpg
+value=4.076
 rarity=R
 type=Legendary,Creature
 subtype=Fox,Cleric
@@ -9,4 +9,4 @@ pt=2/2
 ability={1}{W}: Target permanent you control gains protection from white until end of turn.;\
         {1}: Target spell or permanent becomes white until end of turn.
 timing=main
-oracle={1}{W}: Target permanent you control gains protection from white until end of turn. {1}: Target spell or permanent becomes white until end of turn.
+oracle={1}{W}: Target permanent you control gains protection from white until end of turn.\n{1}: Target spell or permanent becomes white until end of turn.

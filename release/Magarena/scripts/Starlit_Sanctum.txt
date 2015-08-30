@@ -1,9 +1,9 @@
 name=Starlit Sanctum
-image=http://mtgimage.com/card/starlit%20sanctum.jpg
+image=http://magiccards.info/scans/en/on/325.jpg
 value=4.198
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.
 timing=land
 requires_groovy_code
-oracle={T}: Add {1} to your mana pool. {W}, {T}, Sacrifice a Cleric creature: You gain life equal to the sacrificed creature's toughness. {B}, {T}, Sacrifice a Cleric creature: Target player loses life equal to the sacrificed creature's power.
+oracle={T}: Add {1} to your mana pool.\n{W}, {T}, Sacrifice a Cleric creature: You gain life equal to the sacrificed creature's toughness.\n{B}, {T}, Sacrifice a Cleric creature: Target player loses life equal to the sacrificed creature's power.

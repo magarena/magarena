@@ -1,5 +1,5 @@
 name=Empyrial Archangel
-image=http://mtgimage.com/card/empyrial%20archangel.jpg
+image=http://magiccards.info/scans/en/ala/166.jpg
 value=4.014
 rarity=M
 type=Creature
@@ -9,4 +9,4 @@ pt=5/8
 ability=flying;shroud
 timing=fmain
 requires_groovy_code
-oracle=Flying, shroud. All damage that would be dealt to you is dealt to Empyrial Archangel instead.
+oracle=Flying\nShroud\nAll damage that would be dealt to you is dealt to Empyrial Archangel instead.

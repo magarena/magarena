@@ -1,5 +1,5 @@
 name=Shields of Velis Vel
-image=http://mtgimage.com/card/shields%20of%20velis%20vel.jpg
+image=http://magiccards.info/scans/en/lw/39.jpg
 value=2.887
 rarity=C
 type=Tribal,Instant
@@ -8,4 +8,4 @@ cost={W}
 ability=changeling
 timing=pump
 requires_groovy_code
-oracle=Changeling. Creatures target player controls get +0/+1 and gain all creature types until end of turn.
+oracle=Changeling\nCreatures target player controls get +0/+1 and gain all creature types until end of turn.

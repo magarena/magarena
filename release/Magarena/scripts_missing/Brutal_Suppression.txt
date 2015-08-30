@@ -1,9 +1,9 @@
 name=Brutal Suppression
-image=http://mtgimage.com/card/brutal%20suppression.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pr/85.jpg
+value=2.200
 rarity=U
 type=Enchantment
 cost={R}
 ability=Activated abilities of nontoken Rebels cost an additional "Sacrifice a land" to activate.
-timing=main
+timing=enchantment
 oracle=Activated abilities of nontoken Rebels cost an additional "Sacrifice a land" to activate.

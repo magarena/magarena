@@ -1,5 +1,5 @@
 name=Meishin, the Mind Cage
-image=http://mtgimage.com/card/meishin%2C%20the%20mind%20cage.jpg
+image=http://magiccards.info/scans/en/sok/44.jpg
 value=3.033
 rarity=R
 type=Legendary,Enchantment

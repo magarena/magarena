@@ -1,6 +1,6 @@
 name=Undead Warchief
-image=http://mtgimage.com/card/undead%20warchief.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pch/44.jpg
+value=4.302
 rarity=U
 type=Creature
 subtype=Zombie
@@ -9,4 +9,4 @@ pt=1/1
 ability=Zombie spells you cast cost {1} less to cast.;\
         Zombie creatures you control get +2/+1.
 timing=main
-oracle=Zombie spells you cast cost {1} less to cast. Zombie creatures you control get +2/+1.
+oracle=Zombie spells you cast cost {1} less to cast.\nZombie creatures you control get +2/+1.

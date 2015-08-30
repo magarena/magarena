@@ -1,6 +1,6 @@
 name=Akron Legionnaire
-image=http://mtgimage.com/card/akron%20legionnaire.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me3/1.jpg
+value=1.098
 rarity=R
 type=Creature
 subtype=Giant,Soldier

@@ -1,5 +1,5 @@
 name=Kazuul, Tyrant of the Cliffs
-image=http://mtgimage.com/card/kazuul%2C%20tyrant%20of%20the%20cliffs.jpg
+image=http://magiccards.info/scans/en/wwk/84.jpg
 value=4.073
 rarity=R
 type=Legendary,Creature

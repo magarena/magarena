@@ -1,5 +1,5 @@
 name=Crashing Boars
-image=http://mtgimage.com/card/crashing%20boars.jpg
+image=http://magiccards.info/scans/en/bd/52.jpg
 value=2.500
 rarity=U
 type=Creature

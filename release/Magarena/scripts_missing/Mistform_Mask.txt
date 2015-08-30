@@ -1,11 +1,11 @@
 name=Mistform Mask
-image=http://mtgimage.com/card/mistform%20mask.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/94.jpg
+value=1.900
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
 ability=Enchant creature;\
         {1}: Enchanted creature becomes the creature type of your choice until end of turn.
-timing=main
-oracle=Enchant creature. {1}: Enchanted creature becomes the creature type of your choice until end of turn.
+timing=aura
+oracle=Enchant creature\n{1}: Enchanted creature becomes the creature type of your choice until end of turn.

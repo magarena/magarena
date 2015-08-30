@@ -1,5 +1,5 @@
 name=Leonin Relic-Warder
-image=http://mtgimage.com/card/leonin%20relic%2Dwarder.jpg
+image=http://magiccards.info/scans/en/mbs/10.jpg
 value=4.309
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=When SN enters the battlefield, you may exile target artifact or enchantment.;\
         When SN leaves the battlefield, return the exiled card to the battlefield under its owner's control.
 timing=main
-oracle=When Leonin Relic-Warder enters the battlefield, you may exile target artifact or enchantment. When Leonin Relic-Warder leaves the battlefield, return the exiled card to the battlefield under its owner's control.
+oracle=When Leonin Relic-Warder enters the battlefield, you may exile target artifact or enchantment.\nWhen Leonin Relic-Warder leaves the battlefield, return the exiled card to the battlefield under its owner's control.

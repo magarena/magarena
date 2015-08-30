@@ -1,9 +1,0 @@
-name=Dark Temper
-image=http://mtgimage.com/card/dark%20temper.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={2}{R}
-effect=SN deals 2 damage to target creature. If you control a black permanent, destroy the creature instead.
-timing=removal
-oracle=Dark Temper deals 2 damage to target creature. If you control a black permanent, destroy the creature instead.

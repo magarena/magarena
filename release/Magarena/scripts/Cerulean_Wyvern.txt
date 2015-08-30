@@ -1,5 +1,5 @@
 name=Cerulean Wyvern
-image=http://mtgimage.com/card/cerulean%20wyvern.jpg
+image=http://magiccards.info/scans/en/mr/57.jpg
 value=2.941
 rarity=U
 type=Creature

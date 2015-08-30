@@ -1,5 +1,5 @@
 name=Halo Hunter
-image=http://mtgimage.com/card/halo%20hunter.jpg
+image=http://magiccards.info/scans/en/zen/96.jpg
 value=3.447
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=6/3
 ability=intimidate;\
         When SN enters the battlefield, destroy target Angel.
 timing=main
-oracle=Intimidate. When Halo Hunter enters the battlefield, destroy target Angel.
+oracle=Intimidate\nWhen Halo Hunter enters the battlefield, destroy target Angel.

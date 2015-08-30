@@ -1,5 +1,5 @@
 name=Red Cliffs Armada
-image=http://mtgimage.com/set/me2/red%20cliffs%20armada.jpg
+image=http://magiccards.info/scans/en/me2/62.jpg
 value=2.452
 rarity=U
 type=Creature

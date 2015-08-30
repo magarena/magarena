@@ -1,6 +1,6 @@
 name=Prismatic Boon
-image=http://mtgimage.com/card/prismatic%20boon.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/334.jpg
+value=3.065
 rarity=U
 type=Instant
 cost={X}{W}{U}

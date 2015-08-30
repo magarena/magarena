@@ -1,5 +1,5 @@
 name=Corrupt Eunuchs
-image=http://mtgimage.com/card/corrupt%20eunuchs.jpg
+image=http://magiccards.info/scans/en/me3/92.jpg
 value=2.963
 rarity=U
 type=Creature

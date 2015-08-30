@@ -1,10 +1,10 @@
 name=Saprazzan Cove
-image=http://mtgimage.com/card/saprazzan%20cove.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/327.jpg
+value=3.661
 rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\
         {T}: Put a storage counter on SN.;\
         {T}, Remove any number of storage counters from SN: Add {U} to your mana pool for each storage counter removed this way.
-timing=main
-oracle=Saprazzan Cove enters the battlefield tapped. {T}: Put a storage counter on Saprazzan Cove. {T}, Remove any number of storage counters from Saprazzan Cove: Add {U} to your mana pool for each storage counter removed this way.
+timing=land
+oracle=Saprazzan Cove enters the battlefield tapped.\n{T}: Put a storage counter on Saprazzan Cove.\n{T}, Remove any number of storage counters from Saprazzan Cove: Add {U} to your mana pool for each storage counter removed this way.

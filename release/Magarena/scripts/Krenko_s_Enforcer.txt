@@ -1,5 +1,5 @@
 name=Krenko's Enforcer
-image=http://mtgimage.com/card/krenko%27s%20enforcer.jpg
+image=http://magiccards.info/scans/en/m15/152.jpg
 value=3.250
 rarity=C
 type=Creature

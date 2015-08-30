@@ -1,11 +1,11 @@
 name=Alaborn Grenadier
-image=http://mtgimage.com/card/alaborn%20grenadier.jpg
+image=http://magiccards.info/scans/en/po2/122.jpg
 value=3.108
 rarity=C
 type=Creature
 subtype=Human,Soldier
 cost={W}{W}
 pt=2/2
-ability=vigilance
+ability=Vigilance
 timing=main
 oracle=Vigilance

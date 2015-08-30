@@ -1,0 +1,10 @@
+name=1/1 colorless Snake artifact creature token
+token=Snake
+image=http://cdn.staticneo.com/w/mtg/0/01/Snake3.jpg
+value=1
+type=Artifact,Creature
+subtype=Snake
+color=
+pt=1/1
+requires_groovy_code=Pit Scorpion
+oracle=Whenever this creature deals damage to a player, that player gets a poison counter.

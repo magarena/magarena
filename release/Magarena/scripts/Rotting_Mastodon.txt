@@ -1,5 +1,5 @@
 name=Rotting Mastodon
-image=http://mtgimage.com/card/rotting%20mastodon.jpg
+image=http://magiccards.info/scans/en/ktk/87.jpg
 value=2.500
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Zombie,Elephant
 cost={4}{B}
 pt=2/8
 timing=main
+oracle=NONE

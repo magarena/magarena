@@ -1,9 +1,9 @@
 name=Enervate
-image=http://mtgimage.com/card/enervate.jpg
+image=http://magiccards.info/scans/en/me2/47.jpg
 value=3.625
 rarity=C
 type=Instant
 cost={1}{U}
 effect=Tap target artifact, creature, or land.~Draw a card at the beginning of the next turn's upkeep.
 timing=main
-oracle=Tap target artifact, creature, or land. Draw a card at the beginning of the next turn's upkeep.
+oracle=Tap target artifact, creature, or land.\nDraw a card at the beginning of the next turn's upkeep.

@@ -1,6 +1,6 @@
 name=Aven Mindcensor
-image=http://mtgimage.com/card/aven%20mindcensor.jpg
-value=2.500
+image=http://magiccards.info/scans/en/fut/18.jpg
+value=4.441
 rarity=U
 type=Creature
 subtype=Bird,Wizard
@@ -10,4 +10,4 @@ ability=Flash;\
         Flying;\
         If an opponent would search a library, that player searches the top four cards of that library instead.
 timing=main
-oracle=Flash. Flying. If an opponent would search a library, that player searches the top four cards of that library instead.
+oracle=Flash\nFlying\nIf an opponent would search a library, that player searches the top four cards of that library instead.

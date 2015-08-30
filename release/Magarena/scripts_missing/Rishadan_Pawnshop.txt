@@ -1,9 +1,0 @@
-name=Rishadan Pawnshop
-image=http://mtgimage.com/card/rishadan%20pawnshop.jpg
-value=2.500
-rarity=R
-type=Artifact
-cost={2}
-ability={2}, {T}: Shuffle target nontoken permanent you control into its owner's library.
-timing=main
-oracle={2}, {T}: Shuffle target nontoken permanent you control into its owner's library.

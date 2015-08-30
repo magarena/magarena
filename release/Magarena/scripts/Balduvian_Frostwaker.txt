@@ -1,11 +1,11 @@
 name=Balduvian Frostwaker
-image=http://mtgimage.com/card/balduvian%20frostwaker.jpg
+image=http://magiccards.info/scans/en/cs/28.jpg
 value=3.370
 rarity=U
 type=Creature
 subtype=Human,Wizard
 cost={2}{U}
 pt=1/1
+ability={U}, {T}: Target snow land becomes a 2/2 blue Elemental creature with flying. It's still a land.
 timing=main
-requires_groovy_code
 oracle={U}, {T}: Target snow land becomes a 2/2 blue Elemental creature with flying. It's still a land.

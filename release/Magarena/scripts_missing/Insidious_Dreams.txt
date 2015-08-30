@@ -1,9 +1,9 @@
 name=Insidious Dreams
-image=http://mtgimage.com/card/insidious%20dreams.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tr/66.jpg
+value=4.041
 rarity=R
 type=Instant
 cost={3}{B}
 effect=As an additional cost to cast SN, discard X cards.~Search your library for X cards. Then shuffle your library and put those cards on top of it in any order.
 timing=removal
-oracle=As an additional cost to cast Insidious Dreams, discard X cards. Search your library for X cards. Then shuffle your library and put those cards on top of it in any order.
+oracle=As an additional cost to cast Insidious Dreams, discard X cards.\nSearch your library for X cards. Then shuffle your library and put those cards on top of it in any order.

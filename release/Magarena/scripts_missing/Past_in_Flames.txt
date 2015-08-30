@@ -1,9 +1,9 @@
 name=Past in Flames
-image=http://mtgimage.com/card/past%20in%20flames.jpg
-value=2.500
+image=http://magiccards.info/scans/en/isd/155.jpg
+value=4.183
 rarity=M
 type=Sorcery
 cost={3}{R}
 effect=Each instant and sorcery card in your graveyard gains flashback until end of turn. The flashback cost is equal to its mana cost.~Flashback {4}{R}
 timing=main
-oracle=Each instant and sorcery card in your graveyard gains flashback until end of turn. The flashback cost is equal to its mana cost. Flashback {4}{R}
+oracle=Each instant and sorcery card in your graveyard gains flashback until end of turn. The flashback cost is equal to its mana cost.\nFlashback {4}{R}

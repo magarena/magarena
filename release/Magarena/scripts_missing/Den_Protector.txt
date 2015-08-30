@@ -1,0 +1,13 @@
+name=Den Protector
+image=http://magiccards.info/scans/en/dtk/181.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Warrior
+cost={1}{G}
+pt=2/1
+ability=Creatures with power less than SN's power can't block it.;\
+        Megamorph {1}{G};\
+        When SN is turned face up, return target card from your graveyard to your hand.
+timing=main
+oracle=Creatures with power less than Den Protector's power can't block it.\nMegamorph {1}{G}\nWhen Den Protector is turned face up, return target card from your graveyard to your hand.

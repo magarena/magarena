@@ -23,7 +23,7 @@ def POWER_4_OR_GREATER_CONDITION = new MagicCondition() {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.POS_TARGET_CREATURE,
+                POS_TARGET_CREATURE,
                 MagicPumpTargetPicker.create(),
                 this,
                 "Target creature\$ gets +4/+4 until end of turn."
@@ -33,7 +33,7 @@ def POWER_4_OR_GREATER_CONDITION = new MagicCondition() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicChangeTurnPTAction(it,4,4));
+                game.doAction(new ChangeTurnPTAction(it,4,4));
             });
         }
     }

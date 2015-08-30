@@ -1,6 +1,6 @@
 name=Ethersworn Shieldmage
-image=http://mtgimage.com/card/ethersworn%20shieldmage.jpg
-value=2.500
+image=http://magiccards.info/scans/en/arc/84.jpg
+value=2.870
 rarity=C
 type=Artifact,Creature
 subtype=Vedalken,Wizard
@@ -8,5 +8,5 @@ cost={1}{W}{U}
 pt=2/2
 ability=Flash;\
         When SN enters the battlefield, prevent all damage that would be dealt to artifact creatures this turn.
-timing=main
-oracle=Flash. When Ethersworn Shieldmage enters the battlefield, prevent all damage that would be dealt to artifact creatures this turn.
+timing=artifact
+oracle=Flash\nWhen Ethersworn Shieldmage enters the battlefield, prevent all damage that would be dealt to artifact creatures this turn.

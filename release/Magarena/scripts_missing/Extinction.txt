@@ -1,6 +1,6 @@
 name=Extinction
-image=http://mtgimage.com/card/extinction.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tp/29.jpg
+value=4.287
 rarity=R
 type=Sorcery
 cost={4}{B}

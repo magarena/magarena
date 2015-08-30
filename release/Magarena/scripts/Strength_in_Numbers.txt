@@ -1,9 +1,10 @@
 name=Strength in Numbers
-image=http://mtgimage.com/card/strength%20in%20numbers.jpg
+image=http://magiccards.info/scans/en/ts/224.jpg
 value=3.230
 rarity=C
 type=Instant
 cost={1}{G}
+ability=Cast SN with AI only if there is an attacking creature on the battlefield.
 timing=pump
 requires_groovy_code
 oracle=Until end of turn, target creature gains trample and gets +X/+X, where X is the number of attacking creatures.

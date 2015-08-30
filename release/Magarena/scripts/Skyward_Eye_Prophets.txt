@@ -1,0 +1,12 @@
+name=Skyward Eye Prophets
+image=http://magiccards.info/scans/en/c13/214.jpg
+value=3.192
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={3}{G}{W}{U}
+pt=3/3
+ability=Vigilance
+timing=main
+requires_groovy_code
+oracle=Vigilance\n{T}: Reveal the top card of your library. If it's a land card, put it onto the battlefield. Otherwise, put it into your hand.

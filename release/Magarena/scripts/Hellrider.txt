@@ -1,12 +1,12 @@
 name=Hellrider
-image=http://mtgimage.com/card/hellrider.jpg
+image=http://magiccards.info/scans/en/ddk/52.jpg
 value=3.712
 rarity=R
 type=Creature
 subtype=Devil
 cost={2}{R}{R}
 pt=3/3
-ability=haste
+ability=haste;\
+        Whenever a creature you control attacks, SN deals 1 damage to defending player.
 timing=fmain
-requires_groovy_code
-oracle=Haste. Whenever a creature you control attacks, Hellrider deals 1 damage to defending player.
+oracle=Haste\nWhenever a creature you control attacks, Hellrider deals 1 damage to defending player.

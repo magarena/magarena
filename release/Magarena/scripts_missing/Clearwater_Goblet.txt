@@ -1,10 +1,10 @@
 name=Clearwater Goblet
-image=http://mtgimage.com/card/clearwater%20goblet.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5dn/109.jpg
+value=4.269
 rarity=R
 type=Artifact
 cost={5}
 ability=Sunburst;\
         At the beginning of your upkeep, you may gain life equal to the number of charge counters on SN.
-timing=main
-oracle=Sunburst. At the beginning of your upkeep, you may gain life equal to the number of charge counters on Clearwater Goblet.
+timing=artifact
+oracle=Sunburst\nAt the beginning of your upkeep, you may gain life equal to the number of charge counters on Clearwater Goblet.

@@ -1,5 +1,5 @@
 name=Marsh Casualties
-image=http://mtgimage.com/card/marsh%20casualties.jpg
+image=http://magiccards.info/scans/en/ddm/69.jpg
 value=3.571
 removal=2
 rarity=U
@@ -8,4 +8,4 @@ cost={B}{B}
 timing=removal
 ability=kicker {3}
 requires_groovy_code
-oracle=Kicker {3}. Creatures target player controls get -1/-1 until end of turn. If Marsh Casualties was kicked, those creatures get -2/-2 until end of turn instead.
+oracle=Kicker {3}\nCreatures target player controls get -1/-1 until end of turn. If Marsh Casualties was kicked, those creatures get -2/-2 until end of turn instead.

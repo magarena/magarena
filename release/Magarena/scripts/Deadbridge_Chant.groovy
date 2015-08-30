@@ -14,20 +14,19 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final List<MagicCard> targets = game.filterCards(player,MagicTargetFilterFactory.CARD_FROM_GRAVEYARD);
-            final MagicRandom rng = new MagicRandom(player.getGraveyard().getStateId());
-            if (targets.isEmpty() == false) {
-                final int index = rng.nextInt(targets.size());
-                final MagicCard card = targets.get(index);
+            for (final MagicCard card : player.getGraveyard().getRandomCards(1)) {
                 if (card.hasType(MagicType.Creature)) {
-                    game.doAction(new MagicReanimateAction(
+                    game.doAction(new ReanimateAction(
                         card,
                         player
                     ));
                 } else {
-                    game.doAction(new MagicRemoveCardAction(card,MagicLocationType.Graveyard));
-                    game.doAction(new MagicMoveCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
-                    game.logAppendMessage(player,""+player.getName()+" returns ("+card.getName()+") to his or her hand.");
+                    game.doAction(new ShiftCardAction(
+                        card,
+                        MagicLocationType.Graveyard,
+                        MagicLocationType.OwnersHand
+                    ));
+                    game.logAppendMessage(player, "${player.getName()} returns (${card.getName()}) to his or her hand.");
                 }
             }
         }

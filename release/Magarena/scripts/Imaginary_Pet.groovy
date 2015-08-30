@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.getPlayer().getHandSize() >= 1) {
-                game.doAction(new MagicRemoveFromPlayAction(event.getPermanent(),MagicLocationType.OwnersHand));
+                game.doAction(new RemoveFromPlayAction(event.getPermanent(),MagicLocationType.OwnersHand));
             }
         }
     }

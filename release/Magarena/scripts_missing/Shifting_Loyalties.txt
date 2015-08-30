@@ -1,5 +1,5 @@
 name=Shifting Loyalties
-image=http://mtgimage.com/card/shifting%20loyalties.jpg
+image=http://magiccards.info/scans/en/frf/51.jpg
 value=2.500
 rarity=U
 type=Sorcery

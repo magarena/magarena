@@ -1,5 +1,5 @@
 name=Goblin Bully
-image=http://mtgimage.com/card/goblin%20bully.jpg
+image=http://magiccards.info/scans/en/me4/117.jpg
 value=2.182
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Goblin
 cost={1}{R}
 pt=2/1
 timing=main
+oracle=NONE

@@ -1,5 +1,5 @@
 name=Zanikev Locust
-image=http://mtgimage.com/card/zanikev%20locust.jpg
+image=http://magiccards.info/scans/en/rtr/84.jpg
 value=1.767
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=Flying;\
         Scavenge {2}{B}{B}
 timing=main
-oracle=Flying. Scavenge {2}{B}{B}
+oracle=Flying\nScavenge {2}{B}{B}

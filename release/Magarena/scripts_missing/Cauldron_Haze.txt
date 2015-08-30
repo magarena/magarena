@@ -1,6 +1,6 @@
 name=Cauldron Haze
-image=http://mtgimage.com/card/cauldron%20haze.jpg
-value=2.500
+image=http://magiccards.info/scans/en/eve/84.jpg
+value=3.602
 rarity=U
 type=Instant
 cost={1}{W/B}

@@ -1,22 +1,22 @@
 package magic.ui.screen.widget;
 
-import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.TexturedPanel;
-import net.miginfocom.swing.MigLayout;
-
-import javax.swing.AbstractAction;
-import javax.swing.BorderFactory;
-
 import java.awt.Color;
 import java.awt.Dimension;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.AbstractAction;
+import javax.swing.BorderFactory;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
-import magic.ui.MagicStyle;
+import magic.ui.utility.MagicStyle;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.TexturedPanel;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class MenuPanel extends TexturedPanel implements IThemeStyle {
+
+    private static final Dimension PREFERRED_SIZE = new Dimension(320, 405);
 
     private final String title;
     private final List<MenuButton> menuItems = new ArrayList<>();
@@ -29,8 +29,8 @@ public class MenuPanel extends TexturedPanel implements IThemeStyle {
 
         this.title = title0;
 
-        setPreferredSize(new Dimension(300, 380));
-        setMaximumSize(new Dimension(300, 380));
+        setPreferredSize(PREFERRED_SIZE);
+        setMaximumSize(PREFERRED_SIZE);
 
         refreshStyle();
 
@@ -62,7 +62,7 @@ public class MenuPanel extends TexturedPanel implements IThemeStyle {
         removeAll();
         setLayout(new MigLayout("insets 6, gap 0, flowy"));
         if (this.title != null) {
-            add(getMenuTitlePanel(), "w 100%, pad 0 0 10 0, gapbottom 15");
+            add(getMenuTitlePanel(), "w 100%, pad 0 0 10 0, gapbottom 20");
         }
         for (MenuButton menuItem : menuItems) {
             add(menuItem, "w 100%");

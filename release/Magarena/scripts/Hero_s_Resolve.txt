@@ -1,5 +1,5 @@
 name=Hero's Resolve
-image=http://mtgimage.com/card/hero%27s%20resolve.jpg
+image=http://magiccards.info/scans/en/tp/235.jpg
 value=3.410
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={1}{W}
 ability=Enchanted creature gets +1/+5.
 timing=aura
 enchant=pump,pos creature
-oracle=Enchant creature. Enchanted creature gets +1/+5.
+oracle=Enchant creature\nEnchanted creature gets +1/+5.

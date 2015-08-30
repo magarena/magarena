@@ -34,15 +34,13 @@ public enum MagicTriggerType {
     WhenChampioned,         // MagicExiledUntilThisLeavesPlayAction
     WhenCycle,              // card
     WhenOtherCycle,         // card
+    WhenScry,               // player
     IfDamageWouldBeDealt,   // item on stack
     IfPlayerWouldLose,      // player[]
     IfLifeWouldChange,      // MagicChangeLifeAction
     WhenClash,              // MagicPlayer
     Protection,             // MagicPermanent
     CannotBeBlocked,        // MagicPermanent
+    CantBlock,              // MagicPermanent
     ;
-
-    public boolean usesStack() {
-        return this != IfDamageWouldBeDealt;
-    }
 }

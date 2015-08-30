@@ -1,5 +1,5 @@
 name=Novijen Sages
-image=http://mtgimage.com/card/novijen%20sages.jpg
+image=http://magiccards.info/scans/en/di/27.jpg
 value=2.500
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=0/0
 ability=Graft 4;\
         {1}, Remove two +1/+1 counters from among creatures you control: Draw a card.
 timing=main
-oracle=Graft 4. {1}, Remove two +1/+1 counters from among creatures you control: Draw a card.
+oracle=Graft 4\n{1}, Remove two +1/+1 counters from among creatures you control: Draw a card.

@@ -1,6 +1,6 @@
 name=Predatory Focus
-image=http://mtgimage.com/card/predatory%20focus.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gp/92.jpg
+value=3.575
 rarity=U
 type=Sorcery
 cost={3}{G}{G}

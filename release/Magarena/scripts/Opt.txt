@@ -1,11 +1,9 @@
 name=Opt
-image=http://mtgimage.com/card/opt.jpg
+image=http://magiccards.info/scans/en/in/64.jpg
 value=4.164
 rarity=C
 type=Instant
 cost={U}
 timing=draw
 requires_groovy_code
-#Opt is using the scry event, but shouldn't trigger
-#Future 'Whenever you scry' triggers
-oracle=Look at the top card of your library. You may put that card on the bottom of your library. Draw a card.
+oracle=Look at the top card of your library. You may put that card on the bottom of your library.\nDraw a card.

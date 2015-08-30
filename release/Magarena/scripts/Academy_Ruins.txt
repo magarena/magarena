@@ -1,9 +1,9 @@
 name=Academy Ruins
-image=http://mtgimage.com/card/academy%20ruins.jpg
+image=http://magiccards.info/scans/en/mma/219.jpg
 value=4.556
 rarity=R
 type=Legendary,Land
 ability={T}: Add {1} to your mana pool.;\
         {1}{U}, {T}: Put target artifact card from your graveyard on top of your library.
 timing=land
-oracle={T}: Add {1} to your mana pool. {1}{U}, {T}: Put target artifact card from your graveyard on top of your library.
+oracle={T}: Add {1} to your mana pool.\n{1}{U}, {T}: Put target artifact card from your graveyard on top of your library.

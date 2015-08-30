@@ -1,5 +1,5 @@
 name=Ogre Slumlord
-image=http://mtgimage.com/card/ogre%20slumlord.jpg
+image=http://magiccards.info/scans/en/gtc/74.jpg
 value=3.621
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=Whenever another nontoken creature dies, you may put a 1/1 black Rat creature token onto the battlefield.;\
         Rats you control have deathtouch
 timing=main
-oracle=Whenever another nontoken creature dies, you may put a 1/1 black Rat creature token onto the battlefield. Rats you control have deathtouch.
+oracle=Whenever another nontoken creature dies, you may put a 1/1 black Rat creature token onto the battlefield.\nRats you control have deathtouch.

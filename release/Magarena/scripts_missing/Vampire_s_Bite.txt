@@ -1,10 +1,9 @@
 name=Vampire's Bite
-image=http://mtgimage.com/card/vampire%27s%20bite.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddk/19.jpg
+value=3.077
 rarity=C
 type=Instant
 cost={B}
-ability=Kicker {2}{B}
-effect=Target creature gets +3/+0 until end of turn. If SN was kicked, that creature gains lifelink until end of turn.
+effect=Kicker {2}{B}~Target creature gets +3/+0 until end of turn. If SN was kicked, that creature gains lifelink until end of turn.
 timing=removal
-oracle=Kicker {2}{B}. Target creature gets +3/+0 until end of turn. If Vampire's Bite was kicked, that creature gains lifelink until end of turn.
+oracle=Kicker {2}{B}\nTarget creature gets +3/+0 until end of turn. If Vampire's Bite was kicked, that creature gains lifelink until end of turn.

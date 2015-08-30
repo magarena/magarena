@@ -1,83 +1,65 @@
 package magic.ui.screen;
 
-import magic.model.player.HumanPlayer;
-import magic.model.player.IPlayerProfileListener;
-import magic.model.player.PlayerProfile;
-import magic.model.player.PlayerProfiles;
-import magic.ui.screen.interfaces.IStatusBar;
-import magic.ui.player.HumanPlayerJList;
-
-import javax.swing.AbstractAction;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-
 import java.awt.event.ActionEvent;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
+import javax.swing.AbstractAction;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import magic.model.player.HumanProfile;
+import magic.model.player.IPlayerProfileListener;
+import magic.model.player.PlayerProfile;
+import magic.model.player.PlayerProfiles;
+import magic.translate.UiString;
+import magic.ui.player.HumanPlayerJList;
+import magic.ui.screen.interfaces.IStatusBar;
 
 @SuppressWarnings("serial")
 public class SelectHumanPlayerScreen
     extends SelectPlayerScreen
     implements IStatusBar {
 
-    // CTR
+    // translatable strings
+    private static final String _S1 = "Select Player";
+    private static final String _S2 = "Player Name";
+    private static final String _S3 = "New Player";
+    private static final String _S4 = "Update Player";
+
     public SelectHumanPlayerScreen(final IPlayerProfileListener listener, final PlayerProfile playerProfile) {
         super(new HumanPlayerJList());
         addListener(listener);
         refreshProfilesJList(playerProfile);
     }
 
-    private HumanPlayer[] getPlayerProfilesArray() {
+    private HumanProfile[] getPlayerProfilesArray() {
         final List<PlayerProfile> sortedPlayersList = getSortedPlayersList();
-        return sortedPlayersList.toArray(new HumanPlayer[sortedPlayersList.size()]);
+        return sortedPlayersList.toArray(new HumanProfile[0]);
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.screen.SelectPlayerAbstractScreen#createDefaultPlayerProfiles()
-     */
     @Override
     protected void createDefaultPlayerProfiles() throws IOException {
-        final HumanPlayer profile = new HumanPlayer();
-        profile.setPlayerName(getDefaultPlayerProfileName());
-        profile.save();
+        PlayerProfiles.createDefaultHumanPlayerProfiles();
     }
 
-    private String getDefaultPlayerProfileName() {
-        final String systemUserName = System.getProperty("user.name");
-        return systemUserName == null ? "Player" : systemUserName;
-    }
-
-    /* (non-Javadoc)
-     * @see magic.ui.IMagStatusBar#getScreenCaption()
-     */
     @Override
     public String getScreenCaption() {
-        return "Select Player";
+        return UiString.get(_S1);
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.MagScreen#canScreenClose()
-     */
     @Override
     public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
         return true;
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.screen.interfaces.IStatusBar#getStatusPanel()
-     */
     @Override
     public JPanel getStatusPanel() {
         return null;
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.screen.SelectPlayerAbstractScreen#getPreferredWidth()
-     */
     @Override
     protected int getPreferredWidth() {
-        return 420;
+        return 490;
     }
 
     private class NewPlayerAction extends AbstractAction {
@@ -90,13 +72,12 @@ public class SelectHumanPlayerScreen
         private void doNewPlayerProfile() {
             final String newName = (String)JOptionPane.showInputDialog(
                     getFrame(),
-                    "<html><b>Player Name</b><br></html>",
-                    "New Player",
+                    String.format("<html><b>%s</b><br></html>", UiString.get(_S2)),
+                    UiString.get(_S3),
                     JOptionPane.PLAIN_MESSAGE,
                     null, null, null);
             if (newName != null && !newName.trim().isEmpty()) {
-                final PlayerProfile newProfile = new HumanPlayer();
-                newProfile.setPlayerName(newName);
+                final PlayerProfile newProfile = HumanProfile.create(newName);
                 newProfile.save();
                 PlayerProfiles.getPlayerProfiles().put(newProfile.getId(), newProfile);
                 refreshProfilesJList(newProfile);
@@ -117,8 +98,8 @@ public class SelectHumanPlayerScreen
             final PlayerProfile profile = getSelectedPlayer();
             final String newName = (String)JOptionPane.showInputDialog(
                     getFrame(),
-                    "<html><b>Player Name</b><br></html>",
-                    "Update Player",
+                    String.format("<html><b>%s</b><br></html>", UiString.get(_S2)),
+                    UiString.get(_S4),
                     JOptionPane.PLAIN_MESSAGE,
                     null, null, profile.getPlayerName());
             if (newName != null && !newName.trim().isEmpty()) {
@@ -134,6 +115,7 @@ public class SelectHumanPlayerScreen
     protected void refreshProfilesJList() {
         refreshProfilesJList(null);
     }
+
     @Override
     protected void refreshProfilesJList(PlayerProfile playerProfile) {
         ((HumanPlayerJList)getJList()).setListData(getPlayerProfilesArray());
@@ -145,17 +127,11 @@ public class SelectHumanPlayerScreen
         return PlayerProfiles.getHumanPlayerProfiles();
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.screen.SelectPlayerScreen#getNewPlayerAction()
-     */
     @Override
     protected AbstractAction getNewPlayerAction() {
         return new NewPlayerAction();
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.screen.SelectPlayerScreen#getEditPlayerAction()
-     */
     @Override
     protected AbstractAction getEditPlayerAction() {
         return new EditPlayerAction();

@@ -1,5 +1,7 @@
 package magic.ui;
 
+import magic.translate.UiString;
+import magic.ui.utility.GraphicsUtils;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.Transferable;
 import java.awt.datatransfer.UnsupportedFlavorException;
@@ -19,6 +21,11 @@ import javax.activation.MimetypesFileTypeMap;
  * This might be an image file or an image dragged directly from the internet browser.
  */
 public class ImageDropTargetListener implements DropTargetListener {
+
+    // translatable strings
+    private static final String _S1 = "Sorry, this did not work.";
+    private static final String _S2 = "Try downloading the image first and then dragging the file into Magarena.";
+    private static final String _S3 = "Invalid image!";
 
     private final IImageDragDropListener listener;
 
@@ -68,8 +75,7 @@ public class ImageDropTargetListener implements DropTargetListener {
                     // linux workaround - no need to crash out.
                     if (files == null || files.isEmpty()) {
                         ScreenController.showWarningMessage(
-                                "Sorry, this did not work.\n"
-                                + "Try downloading the image first and then dragging the file into Magarena.");
+                                String.format("%s\n%s", UiString.get(_S1), UiString.get(_S2)));
                         break;
                     }
 
@@ -78,7 +84,7 @@ public class ImageDropTargetListener implements DropTargetListener {
                     if (isValidImageFile(imageFile)) {
                         listener.setDroppedImageFile(imageFile);
                     } else {
-                        ScreenController.showWarningMessage("Invalid image!");
+                        ScreenController.showWarningMessage(UiString.get(_S3));
                     }
                     break;
                 }
@@ -95,7 +101,7 @@ public class ImageDropTargetListener implements DropTargetListener {
 
     private boolean isValidImageFile(final File imageFile) {
         return isValidMimeType(imageFile, "image")
-                && GraphicsUtilities.isValidImageFile(imageFile.toPath());
+                && GraphicsUtils.isValidImageFile(imageFile.toPath());
     }
 
     private boolean isValidMimeType(final File file, final String mimeType) {

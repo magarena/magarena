@@ -1,13 +1,8 @@
 [
     new MagicWhenOtherDiesTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicPermanent otherPermanent) {
-            return (permanent != otherPermanent &&
-                    otherPermanent.isCreature() 
-                    ) ?
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent otherPermanent) {
+            return (permanent != otherPermanent && otherPermanent.isCreature()) ?
                 new MagicEvent(
                     permanent,
                     otherPermanent.getController(),
@@ -24,7 +19,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicDrawAction(event.getPlayer()));
+                game.doAction(new DrawAction(event.getPlayer()));
             }
         }
     }

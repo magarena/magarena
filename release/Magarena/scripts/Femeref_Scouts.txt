@@ -1,5 +1,5 @@
 name=Femeref Scouts
-image=http://mtgimage.com/card/femeref%20scouts.jpg
+image=http://magiccards.info/scans/en/mr/223.jpg
 value=2.250
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Human,Scout
 cost={2}{W}
 pt=1/4
 timing=main
+oracle=NONE

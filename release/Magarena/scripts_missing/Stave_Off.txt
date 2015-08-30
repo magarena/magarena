@@ -1,9 +1,0 @@
-name=Stave Off
-image=http://mtgimage.com/card/stave%20off.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={W}
-effect=Target creature gains protection from the color of your choice until end of turn.
-timing=removal
-oracle=Target creature gains protection from the color of your choice until end of turn.

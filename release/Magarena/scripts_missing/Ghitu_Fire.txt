@@ -1,9 +1,9 @@
 name=Ghitu Fire
-image=http://mtgimage.com/card/ghitu%20fire.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/144.jpg
+value=3.682
 rarity=R
 type=Sorcery
 cost={X}{R}
-effect=You may cast SN any time you could cast an instant if you pay {2} more to cast it.~SN deals X damage to target creature or player.
+effect=You may cast SN as though it had flash if you pay {2} more to cast it.~SN deals X damage to target creature or player.
 timing=main
-oracle=You may cast Ghitu Fire any time you could cast an instant if you pay {2} more to cast it. Ghitu Fire deals X damage to target creature or player.
+oracle=You may cast Ghitu Fire as though it had flash if you pay {2} more to cast it.\nGhitu Fire deals X damage to target creature or player.

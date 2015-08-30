@@ -1,5 +1,5 @@
 name=Symbol of Unsummoning
-image=http://mtgimage.com/card/symbol%20of%20unsummoning.jpg
+image=http://magiccards.info/scans/en/me4/65.jpg
 value=3.029
 removal=2
 rarity=C
@@ -7,4 +7,4 @@ type=Sorcery
 cost={2}{U}
 effect=Return target creature to its owner's hand.~Draw a card.
 timing=removal
-oracle=Return target creature to its owner's hand. Draw a card.
+oracle=Return target creature to its owner's hand.\nDraw a card.

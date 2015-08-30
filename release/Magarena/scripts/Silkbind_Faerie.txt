@@ -1,5 +1,5 @@
 name=Silkbind Faerie
-image=http://mtgimage.com/card/silkbind%20faerie.jpg
+image=http://magiccards.info/scans/en/shm/148.jpg
 value=2.989
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/3
 ability=flying;\
         {1}{W/U},{Q}: Tap target creature.
 timing=main
-oracle=Flying. {1}{W/U}, {Q}: Tap target creature.
+oracle=Flying\n{1}{W/U}, {Q}: Tap target creature.

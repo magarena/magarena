@@ -1,6 +1,6 @@
 name=Merrow Bonegnawer
-image=http://mtgimage.com/card/merrow%20bonegnawer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/eve/37.jpg
+value=2.542
 rarity=C
 type=Creature
 subtype=Merfolk,Rogue
@@ -9,4 +9,4 @@ pt=1/1
 ability={T}: Target player exiles a card from his or her graveyard.;\
         Whenever you cast a black spell, you may untap SN.
 timing=main
-oracle={T}: Target player exiles a card from his or her graveyard. Whenever you cast a black spell, you may untap Merrow Bonegnawer.
+oracle={T}: Target player exiles a card from his or her graveyard.\nWhenever you cast a black spell, you may untap Merrow Bonegnawer.

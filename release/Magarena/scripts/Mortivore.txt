@@ -1,5 +1,5 @@
 name=Mortivore
-image=http://mtgimage.com/card/mortivore.jpg
+image=http://magiccards.info/scans/en/cmd/89.jpg
 value=4.183
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=*/*
 ability=SN's power and toughness are each equal to the number of creature cards in all graveyards.;\
         {B}: Regenerate SN.
 timing=smain
-oracle=Mortivore's power and toughness are each equal to the number of creature cards in all graveyards. {B}: Regenerate Mortivore.
+oracle=Mortivore's power and toughness are each equal to the number of creature cards in all graveyards.\n{B}: Regenerate Mortivore.

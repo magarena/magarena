@@ -1,5 +1,5 @@
 name=Baleful Strix
-image=http://mtgimage.com/card/baleful%20strix.jpg
+image=http://magiccards.info/scans/en/vma/243.jpg
 value=4.333
 rarity=U
 type=Artifact,Creature
@@ -10,4 +10,4 @@ ability=flying;\
         deathtouch;\
         When SN enters the battlefield, draw a card.
 timing=main
-oracle=Flying, deathtouch. When Baleful Strix enters the battlefield, draw a card.
+oracle=Flying, deathtouch\nWhen Baleful Strix enters the battlefield, draw a card.

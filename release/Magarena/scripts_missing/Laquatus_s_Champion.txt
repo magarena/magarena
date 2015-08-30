@@ -1,6 +1,6 @@
 name=Laquatus's Champion
-image=http://mtgimage.com/card/laquatus%27s%20champion.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vma/125.jpg
+value=4.500
 rarity=R
 type=Creature
 subtype=Nightmare,Horror
@@ -10,4 +10,4 @@ ability=When SN enters the battlefield, target player loses 6 life.;\
         When SN leaves the battlefield, that player gains 6 life.;\
         {B}: Regenerate SN.
 timing=main
-oracle=When Laquatus's Champion enters the battlefield, target player loses 6 life. When Laquatus's Champion leaves the battlefield, that player gains 6 life. {B}: Regenerate Laquatus's Champion.
+oracle=When Laquatus's Champion enters the battlefield, target player loses 6 life.\nWhen Laquatus's Champion leaves the battlefield, that player gains 6 life.\n{B}: Regenerate Laquatus's Champion.

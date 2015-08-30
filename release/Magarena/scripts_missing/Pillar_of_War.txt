@@ -1,6 +1,6 @@
 name=Pillar of War
-image=http://mtgimage.com/card/pillar%20of%20war.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bng/160.jpg
+value=3.167
 rarity=U
 type=Artifact,Creature
 subtype=Golem
@@ -8,5 +8,5 @@ cost={3}
 pt=3/3
 ability=Defender;\
         As long as SN is enchanted, it can attack as though it didn't have defender.
-timing=main
-oracle=Defender. As long as Pillar of War is enchanted, it can attack as though it didn't have defender.
+timing=artifact
+oracle=Defender\nAs long as Pillar of War is enchanted, it can attack as though it didn't have defender.

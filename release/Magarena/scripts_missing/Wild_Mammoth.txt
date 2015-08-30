@@ -1,6 +1,6 @@
 name=Wild Mammoth
-image=http://mtgimage.com/card/wild%20mammoth.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ne/124.jpg
+value=2.879
 rarity=U
 type=Creature
 subtype=Elephant

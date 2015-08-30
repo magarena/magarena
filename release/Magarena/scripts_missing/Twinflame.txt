@@ -1,9 +1,9 @@
 name=Twinflame
-image=http://mtgimage.com/card/twinflame.jpg
-value=2.500
+image=http://magiccards.info/scans/en/jou/115.jpg
+value=3.233
 rarity=R
 type=Sorcery
 cost={1}{R}
 effect=SN costs {2}{R} more to cast for each target beyond the first.~Choose any number of target creatures you control. For each of them, put a token that's a copy of that creature onto the battlefield. Those tokens have haste. Exile them at the beginning of the next end step.
 timing=main
-oracle=Strive — Twinflame costs {2}{R} more to cast for each target beyond the first. Choose any number of target creatures you control. For each of them, put a token that's a copy of that creature onto the battlefield. Those tokens have haste. Exile them at the beginning of the next end step.
+oracle=Strive — Twinflame costs {2}{R} more to cast for each target beyond the first.\nChoose any number of target creatures you control. For each of them, put a token that's a copy of that creature onto the battlefield. Those tokens have haste. Exile them at the beginning of the next end step.

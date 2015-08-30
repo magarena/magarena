@@ -10,11 +10,13 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> creatures = game.filterPermanents(MagicTargetFilterFactory.CREATURE);
-            for (final MagicPermanent creature : creatures) {
-                if (creature.isEnchanted()) {
-                    final MagicDamage damage = new MagicDamage(event.getSource(),creature,creature.getAuraPermanents().size()*2);
-                    game.doAction(new MagicDealDamageAction(damage));
+            CREATURE.filter(event) each {
+                if (it.isEnchanted()) {
+                    game.doAction(new DealDamageAction(
+                        event.getSource(), 
+                        it, 
+                        it.getAuraPermanents().size()*2
+                    ));
                 }
             }
         }

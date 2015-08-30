@@ -1,11 +1,11 @@
 name=Curse of Bloodletting
-image=http://mtgimage.com/card/curse%20of%20bloodletting.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dka/85.jpg
+value=3.682
 rarity=R
 type=Enchantment
 subtype=Aura,Curse
 cost={3}{R}{R}
 ability=Enchant player;\
         If a source would deal damage to enchanted player, it deals double that damage to that player instead.
-timing=main
-oracle=Enchant player. If a source would deal damage to enchanted player, it deals double that damage to that player instead.
+timing=aura
+oracle=Enchant player\nIf a source would deal damage to enchanted player, it deals double that damage to that player instead.

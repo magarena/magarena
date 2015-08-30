@@ -1,10 +1,10 @@
 name=Purgatory
-image=http://mtgimage.com/card/purgatory.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/335.jpg
+value=3.968
 rarity=R
 type=Enchantment
 cost={2}{W}{B}
 ability=Whenever a nontoken creature is put into your graveyard from the battlefield, exile that card.;\
         At the beginning of your upkeep, you may pay {4} and 2 life. If you do, return a card exiled with SN to the battlefield.
-timing=main
-oracle=Whenever a nontoken creature is put into your graveyard from the battlefield, exile that card. At the beginning of your upkeep, you may pay {4} and 2 life. If you do, return a card exiled with Purgatory to the battlefield.
+timing=enchantment
+oracle=Whenever a nontoken creature is put into your graveyard from the battlefield, exile that card.\nAt the beginning of your upkeep, you may pay {4} and 2 life. If you do, return a card exiled with Purgatory to the battlefield.

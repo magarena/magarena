@@ -1,6 +1,6 @@
 name=Act on Impulse
-image=http://mtgimage.com/card/act%20on%20impulse.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/126.jpg
+value=2.857
 rarity=U
 type=Sorcery
 cost={2}{R}

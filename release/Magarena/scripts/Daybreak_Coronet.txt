@@ -1,0 +1,11 @@
+name=Daybreak Coronet
+image=http://magiccards.info/scans/en/fut/21.jpg
+value=2.500
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={W}{W}
+ability=Enchanted creature gets +3/+3 and has first strike, vigilance, and lifelink.
+timing=aura
+enchant=pump,pos creature with another Aura attached to it
+oracle=Enchant creature with another Aura attached to it\nEnchanted creature gets +3/+3 and has first strike, vigilance, and lifelink.

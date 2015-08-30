@@ -1,0 +1,9 @@
+name=Revealing Wind
+image=http://magiccards.info/scans/en/dtk/197.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{G}
+effect=Prevent all combat damage that would be dealt this turn. You may look at each face-down creature that's attacking or blocking.
+timing=removal
+oracle=Prevent all combat damage that would be dealt this turn. You may look at each face-down creature that's attacking or blocking.

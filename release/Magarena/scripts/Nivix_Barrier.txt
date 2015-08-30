@@ -1,0 +1,13 @@
+name=Nivix Barrier
+image=http://magiccards.info/scans/en/ori/66.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Illusion,Wall
+cost={3}{U}
+pt=0/4
+ability=Flash;\
+        Defender;\
+        When SN enters the battlefield, target attacking creature gets -4/-0 until end of turn.
+timing=main
+oracle=Flash\nDefender\nWhen Nivix Barrier enters the battlefield, target attacking creature gets -4/-0 until end of turn.

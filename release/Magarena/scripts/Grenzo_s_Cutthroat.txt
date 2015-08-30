@@ -1,5 +1,5 @@
 name=Grenzo's Cutthroat
-image=http://mtgimage.com/card/grenzo%27s%20cutthroat.jpg
+image=http://magiccards.info/scans/en/cns/32.jpg
 value=3.643
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=First strike;\
         Dethrone
 timing=main
-oracle=First strike. Dethrone
+oracle=First strike\nDethrone

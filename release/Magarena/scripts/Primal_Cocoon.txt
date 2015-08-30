@@ -1,11 +1,12 @@
 name=Primal Cocoon
-image=http://mtgimage.com/card/primal%20cocoon.jpg
+image=http://magiccards.info/scans/en/m11/191.jpg
 value=3.261
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={G}
+ability=At the beginning of your upkeep, put a +1/+1 counter on enchanted creature.;\
+        When enchanted creature attacks or blocks, sacrifice SN.
 timing=aura
 enchant=pump,pos creature
-requires_groovy_code
-oracle=Enchant creature. At the beginning of your upkeep, put a +1/+1 counter on enchanted creature. When enchanted creature attacks or blocks, sacrifice Primal Cocoon.
+oracle=Enchant creature\nAt the beginning of your upkeep, put a +1/+1 counter on enchanted creature.\nWhen enchanted creature attacks or blocks, sacrifice Primal Cocoon.

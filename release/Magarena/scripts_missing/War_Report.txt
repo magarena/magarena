@@ -1,9 +1,0 @@
-name=War Report
-image=http://mtgimage.com/card/war%20report.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={3}{W}
-effect=You gain life equal to the number of creatures on the battlefield plus the number of artifacts on the battlefield.
-timing=removal
-oracle=You gain life equal to the number of creatures on the battlefield plus the number of artifacts on the battlefield.

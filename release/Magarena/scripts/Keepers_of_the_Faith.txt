@@ -1,5 +1,5 @@
 name=Keepers of the Faith
-image=http://mtgimage.com/card/keepers%20of%20the%20faith.jpg
+image=http://magiccards.info/scans/en/ch/65.jpg
 value=1.795
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Human,Cleric
 cost={1}{W}{W}
 pt=2/3
 timing=main
+oracle=NONE

@@ -1,10 +1,11 @@
 name=Gleam of Resistance
-image=http://mtgimage.com/card/gleam%20of%20resistance.jpg
+image=http://magiccards.info/scans/en/mma/17.jpg
 value=2.147
 rarity=C
 type=Instant
 cost={4}{W}
-ability=Basic landcycling {1}{W}
+ability=Basic landcycling {1}{W};\
+        Cast SN with AI only if you control a creature.
 effect=Creatures you control get +1/+2 until end of turn.~Untap all creatures you control.
 timing=pump
-oracle=Creatures you control get +1/+2 until end of turn. Untap those creatures. Basic landcycling {1}{W}
+oracle=Creatures you control get +1/+2 until end of turn. Untap those creatures.\nBasic landcycling {1}{W}

@@ -1,9 +1,0 @@
-name=Excise
-image=http://mtgimage.com/card/excise.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={X}{W}
-effect=Exile target attacking creature unless its controller pays {X}.
-timing=removal
-oracle=Exile target attacking creature unless its controller pays {X}.

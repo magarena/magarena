@@ -1,5 +1,5 @@
 name=Weight of Spires
-image=http://mtgimage.com/card/weight%20of%20spires.jpg
+image=http://magiccards.info/scans/en/di/78.jpg
 value=2.431
 rarity=U
 type=Instant

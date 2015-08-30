@@ -1,5 +1,5 @@
 name=Crackleburr
-image=http://mtgimage.com/card/crackleburr.jpg
+image=http://magiccards.info/scans/en/eve/100.jpg
 value=3.901
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability={U/R}{U/R}, {T}, Tap another two untapped red creatures you control: SN deals 3 damage to target creature or player.;\
         {U/R}{U/R}, {Q}, Untap another two tapped blue creatures you control: Return target creature to its owner's hand.
 timing=main
-oracle={U/R}{U/R}, {T}, Tap two untapped red creatures you control: Crackleburr deals 3 damage to target creature or player. {U/R}{U/R}, {Q}, Untap two tapped blue creatures you control: Return target creature to its owner's hand.
+oracle={U/R}{U/R}, {T}, Tap two untapped red creatures you control: Crackleburr deals 3 damage to target creature or player.\n{U/R}{U/R}, {Q}, Untap two tapped blue creatures you control: Return target creature to its owner's hand.

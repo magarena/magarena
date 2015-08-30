@@ -1,5 +1,5 @@
 name=Nihil Spellbomb
-image=http://mtgimage.com/card/nihil%20spellbomb.jpg
+image=http://magiccards.info/scans/en/c13/249.jpg
 value=4.483
 rarity=C
 type=Artifact
@@ -7,4 +7,4 @@ cost={1}
 ability=When SN is put into a graveyard from the battlefield, you may pay {B}. If you do, draw a card.
 timing=main
 requires_groovy_code=Tormod's Crypt
-oracle={T}, Sacrifice Nihil Spellbomb: Exile all cards from target player's graveyard. When Nihil Spellbomb is put into a graveyard from the battlefield, you may pay {B}. If you do, draw a card.
+oracle={T}, Sacrifice Nihil Spellbomb: Exile all cards from target player's graveyard.\nWhen Nihil Spellbomb is put into a graveyard from the battlefield, you may pay {B}. If you do, draw a card.

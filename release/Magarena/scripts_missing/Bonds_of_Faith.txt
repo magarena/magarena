@@ -1,11 +1,11 @@
 name=Bonds of Faith
-image=http://mtgimage.com/card/bonds%20of%20faith.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddl/24.jpg
+value=3.357
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{W}
 ability=Enchant creature;\
         Enchanted creature gets +2/+2 as long as it's a Human. Otherwise, it can't attack or block.
-timing=main
-oracle=Enchant creature. Enchanted creature gets +2/+2 as long as it's a Human. Otherwise, it can't attack or block.
+timing=aura
+oracle=Enchant creature\nEnchanted creature gets +2/+2 as long as it's a Human. Otherwise, it can't attack or block.

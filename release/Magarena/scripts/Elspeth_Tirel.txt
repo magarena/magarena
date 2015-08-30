@@ -1,11 +1,11 @@
 name=Elspeth Tirel
-image=http://mtgimage.com/card/elspeth%20tirel.jpg
+image=http://magiccards.info/scans/en/som/6.jpg
 value=3.998
 rarity=M
 type=Planeswalker
 subtype=Elspeth
 cost={3}{W}{W}
-ability=loyalty 4
+loyalty=4
 timing=main
 requires_groovy_code
-oracle=+2: You gain 1 life for each creature you control. -2: Put three 1/1 white Soldier creature tokens onto the battlefield. -5: Destroy all other permanents except for lands and tokens.
+oracle=+2: You gain 1 life for each creature you control.\n−2: Put three 1/1 white Soldier creature tokens onto the battlefield.\n−5: Destroy all other permanents except for lands and tokens.

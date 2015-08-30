@@ -1,9 +1,9 @@
 name=Ooze Flux
-image=http://mtgimage.com/card/ooze%20flux.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gtc/128.jpg
+value=3.316
 rarity=R
 type=Enchantment
 cost={3}{G}
 ability={1}{G}, Remove one or more +1/+1 counters from among creatures you control: Put an X/X green Ooze creature token onto the battlefield, where X is the number of +1/+1 counters removed this way.
-timing=main
+timing=enchantment
 oracle={1}{G}, Remove one or more +1/+1 counters from among creatures you control: Put an X/X green Ooze creature token onto the battlefield, where X is the number of +1/+1 counters removed this way.

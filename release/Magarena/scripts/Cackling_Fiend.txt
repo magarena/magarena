@@ -1,5 +1,5 @@
 name=Cackling Fiend
-image=http://mtgimage.com/card/cackling%20fiend.jpg
+image=http://magiccards.info/scans/en/br/11.jpg
 value=2.538
 rarity=C
 type=Creature

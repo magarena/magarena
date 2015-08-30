@@ -1,9 +1,10 @@
 name=Gale Force
-image=http://mtgimage.com/card/gale%20force.jpg
+image=http://magiccards.info/scans/en/chk/209.jpg
 value=2.370
 rarity=U
 type=Sorcery
 cost={4}{G}
+ability=Cast SN with AI only if an opponent controls a creature with flying.
 effect=SN deals 5 damage to each creature with flying.
 timing=main
 oracle=Gale Force deals 5 damage to each creature with flying.

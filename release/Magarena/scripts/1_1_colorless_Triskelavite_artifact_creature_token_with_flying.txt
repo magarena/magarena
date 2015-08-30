@@ -1,5 +1,5 @@
 name=1/1 colorless Triskelavite artifact creature token with flying
-image=http://s8.postimg.org/dofwqzmj9/TRISKELAVITE.jpg
+image=http://cdn.staticneo.com/w/mtg/a/a7/Triskelavite.jpg
 token=Triskelavite
 type=Artifact,Creature
 subtype=Triskelavite
@@ -7,3 +7,4 @@ color=
 value=1
 pt=1/1
 ability=flying;Sacrifice SN:SN deals 1 damage to target creature or player.
+oracle=Flying\nSacrifice this creature: This creature deals 1 damage to target creature or player.

@@ -1,0 +1,11 @@
+name=Ghoulcaller Gisa
+image=http://magiccards.info/scans/en/c14/23.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Human,Wizard
+cost={3}{B}{B}
+pt=3/4
+timing=main
+requires_groovy_code
+oracle={B}, {T}, Sacrifice another creature: Put X 2/2 black Zombie creature tokens onto the battlefield, where X is the sacrificed creature's power.

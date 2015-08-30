@@ -5,20 +5,19 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicSource;
-import magic.model.action.MagicPutItemOnStackAction;
-import magic.model.action.MagicRemoveCardAction;
+import magic.model.action.CastCardAction;
 import magic.model.stack.MagicCardOnStack;
 
 import java.util.LinkedList;
 import java.util.List;
 
-public class MagicFlashbackActivation extends MagicGraveyardActivation {
+public class MagicFlashbackActivation extends MagicGraveyardCastActivation {
     
     private final List<MagicMatchedCostEvent> matchedCostEvents;
     
     public MagicFlashbackActivation(final MagicCardDefinition cdef, final List<MagicMatchedCostEvent> aMatchedCostEvents) {
         super(
-            MagicCardActivation.CARD_CONDITION,
+            MagicHandCastActivation.CARD_CONDITION,
             cdef.getActivationHints(),
             "Flashback"
         );
@@ -45,15 +44,11 @@ public class MagicFlashbackActivation extends MagicGraveyardActivation {
     
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        final MagicCard card = event.getCard();
-        game.doAction(new MagicRemoveCardAction(card, MagicLocationType.Graveyard)); 
-        
-        final MagicCardOnStack cardOnStack=new MagicCardOnStack(
-            card,
-            MagicFlashbackActivation.this,
-            game.getPayedCost()
-        );
-        cardOnStack.setMoveLocation(MagicLocationType.Exile);
-        game.doAction(new MagicPutItemOnStackAction(cardOnStack));
+        game.doAction(CastCardAction.WithoutManaCost(
+            event.getPlayer(),
+            event.getCard(),
+            MagicLocationType.Graveyard,
+            MagicLocationType.Exile
+        ));
     }
 }

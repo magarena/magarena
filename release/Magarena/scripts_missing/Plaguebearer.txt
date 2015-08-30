@@ -1,6 +1,6 @@
 name=Plaguebearer
-image=http://mtgimage.com/card/plaguebearer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ex/71.jpg
+value=4.444
 rarity=R
 type=Creature
 subtype=Zombie

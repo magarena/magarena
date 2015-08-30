@@ -2,7 +2,6 @@ package magic.ui.screen;
 
 import java.awt.event.ActionEvent;
 import java.io.File;
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -12,17 +11,19 @@ import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import magic.data.DeckType;
-import magic.data.DeckUtils;
+import magic.utility.DeckUtils;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.data.MagicSetDefinitions;
+import magic.exception.InvalidDeckException;
 import magic.model.MagicDeck;
-import magic.ui.explorer.ExplorerPanel;
+import magic.ui.MagicFileChoosers;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.ui.ScreenOptionsOverlay;
 import magic.ui.dialog.DownloadImagesDialog;
+import magic.ui.deck.editor.DeckEditorSplitPanel;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.screen.interfaces.IOptionsMenu;
@@ -38,14 +39,14 @@ public class DeckEditorSplitScreen
     extends AbstractScreen
     implements IStatusBar, IActionBar, IOptionsMenu, IWikiPage, IDeckConsumer {
 
-    private final ExplorerPanel screenContent;
+    private final DeckEditorSplitPanel screenContent;
     private final boolean isStandalone;
     private final DeckStatusPanel deckStatusPanel = new DeckStatusPanel();
 
     // CTR : opens Deck Editor ready to update passed in deck.
     public DeckEditorSplitScreen(final MagicDeck deck) {
         isStandalone = (deck == null);
-        this.screenContent = new ExplorerPanel(deck);
+        this.screenContent = new DeckEditorSplitPanel(deck);
         setContent(this.screenContent);
     }
     // CTR : open Deck Editor in standalone mode starting with an empty deck.
@@ -68,7 +69,7 @@ public class DeckEditorSplitScreen
     private MagicDeck loadDeck(final Path deckFilePath) {
         try {
             return DeckUtils.loadDeckFromFile(deckFilePath);
-        } catch (IOException ex) {
+        } catch (InvalidDeckException ex) {
             // if the most recent deck is invalid for some reason then I think it suffices
             // to log the error to console and open the deck editor with an empty deck.
             System.err.println(ex);
@@ -229,7 +230,7 @@ public class DeckEditorSplitScreen
         };
         final MagicDeck deck = screenContent.getDeck();
         fileChooser.setDialogTitle("Save deck");
-        fileChooser.setFileFilter(DeckUtils.DECK_FILEFILTER);
+        fileChooser.setFileFilter(MagicFileChoosers.DECK_FILEFILTER);
         fileChooser.setAcceptAllFileFilterUsed(false);
         if (deck != null) {
             fileChooser.setSelectedFile(new File(deck.getFilename()));
@@ -291,12 +292,14 @@ public class DeckEditorSplitScreen
             super(frame);
         }
 
-        /* (non-Javadoc)
-         * @see magic.ui.ScreenOptionsOverlay#getScreenMenu()
-         */
         @Override
         protected MenuPanel getScreenMenu() {
             return null;
+        }
+
+        @Override
+        protected boolean showPreferencesOption() {
+            return false;
         }
 
     }

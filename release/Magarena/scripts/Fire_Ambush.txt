@@ -1,5 +1,5 @@
 name=Fire Ambush
-image=http://mtgimage.com/card/fire%20ambush.jpg
+image=http://magiccards.info/scans/en/me3/97.jpg
 value=2.700
 rarity=C
 type=Sorcery

@@ -1,0 +1,10 @@
+name=Tormented Thoughts
+image=http://magiccards.info/scans/en/ori/122.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={2}{B}
+ability=As an additional cost to cast SN, sacrifice a creature.
+timing=main
+requires_groovy_code
+oracle=As an additional cost to cast Tormented Thoughts, sacrifice a creature.\nTarget player discards a number of cards equal to the sacrificed creature's power.

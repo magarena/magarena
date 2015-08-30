@@ -1,5 +1,5 @@
 name=Spidersilk Net
-image=http://mtgimage.com/card/spidersilk%20net.jpg
+image=http://magiccards.info/scans/en/dtk/244.jpg
 value=3.610
 rarity=C
 type=Artifact
@@ -8,4 +8,4 @@ cost={0}
 ability=Equipped creature gets +0/+2 and has reach.;\
         Equip {2}
 timing=equipment
-oracle=Equipped creature gets +0/+2 and has reach. Equip {2}
+oracle=Equipped creature gets +0/+2 and has reach.\nEquip {2}

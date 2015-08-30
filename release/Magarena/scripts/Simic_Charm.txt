@@ -1,0 +1,9 @@
+name=Simic Charm
+image=http://magiccards.info/scans/en/gtc/195.jpg
+value=3.742
+rarity=U
+type=Instant
+cost={G}{U}
+effect=Choose one — (1) Target creature gets +3/+3 until end of turn. (2) Permanents you control gain hexproof until end of turn. (3) Return target creature to its owner's hand.
+timing=pump
+oracle=Choose one —\n• Target creature gets +3/+3 until end of turn.\n• Permanents you control gain hexproof until end of turn.\n• Return target creature to its owner's hand.

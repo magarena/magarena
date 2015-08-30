@@ -1,0 +1,11 @@
+name=Gangrenous Zombies
+image=http://magiccards.info/scans/en/cstd/26.jpg
+value=3.069
+rarity=C
+type=Creature
+subtype=Zombie
+cost={1}{B}{B}
+pt=2/2
+timing=main
+requires_groovy_code
+oracle={T}, Sacrifice Gangrenous Zombies: Gangrenous Zombies deals 1 damage to each creature and each player. If you control a snow Swamp, Gangrenous Zombies deals 2 damage to each creature and each player instead.

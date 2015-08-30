@@ -1,9 +1,9 @@
 name=Refresh
-image=http://mtgimage.com/card/refresh.jpg
+image=http://magiccards.info/scans/en/od/264.jpg
 value=1.893
 rarity=C
 type=Instant
 cost={2}{G}
 effect=Regenerate target creature.~Draw a card.
 timing=pump
-oracle=Regenerate target creature. Draw a card.
+oracle=Regenerate target creature.\nDraw a card.

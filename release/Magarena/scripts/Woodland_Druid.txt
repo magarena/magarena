@@ -1,5 +1,5 @@
 name=Woodland Druid
-image=http://mtgimage.com/card/woodland%20druid.jpg
+image=http://magiccards.info/scans/en/od/284.jpg
 value=2.675
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Human,Druid
 cost={G}
 pt=1/2
 timing=main
+oracle=NONE

@@ -1,5 +1,5 @@
 name=Lava Spike
-image=http://mtgimage.com/card/lava%20spike.jpg
+image=http://magiccards.info/scans/en/mma/121.jpg
 value=4.141
 rarity=C
 type=Sorcery

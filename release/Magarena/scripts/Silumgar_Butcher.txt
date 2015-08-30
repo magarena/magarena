@@ -1,0 +1,12 @@
+name=Silumgar Butcher
+image=http://magiccards.info/scans/en/dtk/122.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie,Djinn
+cost={4}{B}
+pt=3/3
+ability=Exploit;\
+        When SN exploits a creature, target creature gets -3/-3 until end of turn.
+timing=main
+oracle=Exploit\nWhen Silumgar Butcher exploits a creature, target creature gets -3/-3 until end of turn.

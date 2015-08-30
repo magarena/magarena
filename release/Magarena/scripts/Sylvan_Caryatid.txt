@@ -1,5 +1,5 @@
 name=Sylvan Caryatid
-image=http://mtgimage.com/card/sylvan%20caryatid.jpg
+image=http://magiccards.info/scans/en/ths/180.jpg
 value=3.619
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=0/3
 ability=defender;hexproof;\
         {T}: Add one mana of any color to your mana pool.
 timing=main
-oracle=Defender, hexproof. {T}: Add one mana of any color to your mana pool.
+oracle=Defender, hexproof\n{T}: Add one mana of any color to your mana pool.

@@ -1,5 +1,5 @@
 name=Instill Infection
-image=http://mtgimage.com/card/instill%20infection.jpg
+image=http://magiccards.info/scans/en/som/68.jpg
 value=1.572
 removal=1
 rarity=C
@@ -7,4 +7,4 @@ type=Instant
 cost={3}{B}
 effect=Put a -1/-1 counter on target creature.~Draw a card.
 timing=removal
-oracle=Put a -1/-1 counter on target creature. Draw a card.
+oracle=Put a -1/-1 counter on target creature.\nDraw a card.

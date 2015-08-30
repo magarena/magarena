@@ -1,7 +1,7 @@
 package magic.model;
 
 public enum MagicRarity {
-    Basic('L'),
+    Basic('B'),
     Common('C'),
     Uncommon('U'),
     Rare('R'),

@@ -1,5 +1,5 @@
 name=Hunting Triad
-image=http://mtgimage.com/card/hunting%20triad.jpg
+image=http://magiccards.info/scans/en/c14/200.jpg
 value=3.533
 rarity=U
 type=Tribal,Sorcery
@@ -8,4 +8,4 @@ cost={3}{G}
 effect=Put three 1/1 green Elf Warrior creature tokens onto the battlefield.
 ability=Reinforce 3—{3}{G}
 timing=token
-oracle=Put three 1/1 green Elf Warrior creature tokens onto the battlefield. Reinforce 3—{3}{G}
+oracle=Put three 1/1 green Elf Warrior creature tokens onto the battlefield.\nReinforce 3—{3}{G}

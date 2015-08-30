@@ -1,11 +1,11 @@
 name=Rock Basilisk
-image=http://mtgimage.com/card/rock%20basilisk.jpg
+image=http://magiccards.info/scans/en/mr/339.jpg
 value=3.203
 rarity=R
 type=Creature
 subtype=Basilisk
 cost={4}{R}{G}
 pt=4/5
+ability=Whenever SN blocks or becomes blocked by a non-Wall creature, destroy that creature at end of combat.
 timing=main
-requires_groovy_code
 oracle=Whenever Rock Basilisk blocks or becomes blocked by a non-Wall creature, destroy that creature at end of combat.

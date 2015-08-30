@@ -1,9 +1,0 @@
-name=Surge of Zeal
-image=http://mtgimage.com/card/surge%20of%20zeal.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={R}
-effect=Target creature and each other creature that shares a color with it gain haste until end of turn.
-timing=removal
-oracle=Radiance — Target creature and each other creature that shares a color with it gain haste until end of turn.

@@ -1,11 +1,11 @@
 name=Nephalia Smuggler
-image=http://mtgimage.com/card/nephalia%20smuggler.jpg
+image=http://magiccards.info/scans/en/avr/69.jpg
 value=2.985
 rarity=U
 type=Creature
 subtype=Human,Rogue
 cost={U}
 pt=1/1
+ability={3}{U}, {T}: Exile another target creature you control, then return that card to the battlefield under your control.
 timing=main
-requires_groovy_code
 oracle={3}{U}, {T}: Exile another target creature you control, then return that card to the battlefield under your control.

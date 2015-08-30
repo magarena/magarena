@@ -1,6 +1,6 @@
 name=March of the Returned
-image=http://mtgimage.com/card/march%20of%20the%20returned.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ths/96.jpg
+value=2.655
 rarity=C
 type=Sorcery
 cost={3}{B}

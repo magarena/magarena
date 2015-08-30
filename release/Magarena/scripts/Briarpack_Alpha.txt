@@ -1,5 +1,5 @@
 name=Briarpack Alpha
-image=http://mtgimage.com/card/briarpack%20alpha.jpg
+image=http://magiccards.info/scans/en/m14/166.jpg
 value=3.588
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=flash;\
         When SN enters the battlefield, target creature gets +2/+2 until end of turn.
 timing=pumpflash
-oracle=Flash. When Briarpack Alpha enters the battlefield, target creature gets +2/+2 until end of turn.
+oracle=Flash\nWhen Briarpack Alpha enters the battlefield, target creature gets +2/+2 until end of turn.

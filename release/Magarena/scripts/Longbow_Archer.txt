@@ -1,5 +1,5 @@
 name=Longbow Archer
-image=http://mtgimage.com/card/longbow%20archer.jpg
+image=http://magiccards.info/scans/en/7e/26.jpg
 value=4.380
 ability=first strike;reach
 rarity=U

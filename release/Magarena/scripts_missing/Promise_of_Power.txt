@@ -1,9 +1,0 @@
-name=Promise of Power
-image=http://mtgimage.com/card/promise%20of%20power.jpg
-value=2.500
-rarity=R
-type=Sorcery
-cost={2}{B}{B}{B}
-effect=Choose one — • You draw five cards and you lose 5 life. • Put an X/X black Demon creature token with flying onto the battlefield, where X is the number of cards in your hand as the token enters the battlefield.~Entwine {4}
-timing=main
-oracle=Choose one — • You draw five cards and you lose 5 life. • Put an X/X black Demon creature token with flying onto the battlefield, where X is the number of cards in your hand as the token enters the battlefield. Entwine {4}

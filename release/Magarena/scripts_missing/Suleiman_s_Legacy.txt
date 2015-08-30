@@ -1,10 +1,10 @@
 name=Suleiman's Legacy
-image=http://mtgimage.com/card/suleiman%27s%20legacy.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vi/138.jpg
+value=3.819
 rarity=R
 type=Enchantment
 cost={R}{W}
 ability=When SN enters the battlefield, destroy all Djinns and Efreets. They can't be regenerated.;\
         Whenever a Djinn or Efreet enters the battlefield, destroy it. It can't be regenerated.
-timing=main
-oracle=When Suleiman's Legacy enters the battlefield, destroy all Djinns and Efreets. They can't be regenerated. Whenever a Djinn or Efreet enters the battlefield, destroy it. It can't be regenerated.
+timing=enchantment
+oracle=When Suleiman's Legacy enters the battlefield, destroy all Djinns and Efreets. They can't be regenerated.\nWhenever a Djinn or Efreet enters the battlefield, destroy it. It can't be regenerated.

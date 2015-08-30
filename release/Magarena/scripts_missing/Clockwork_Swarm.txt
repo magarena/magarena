@@ -1,6 +1,6 @@
 name=Clockwork Swarm
-image=http://mtgimage.com/card/clockwork%20swarm.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me4/192.jpg
+value=3.056
 rarity=C
 type=Artifact,Creature
 subtype=Insect
@@ -10,5 +10,5 @@ ability=SN enters the battlefield with four +1/+0 counters on it.;\
         SN can't be blocked by Walls.;\
         At end of combat, if SN attacked or blocked this combat, remove a +1/+0 counter from it.;\
         {X}, {T}: Put up to X +1/+0 counters on SN. This ability can't cause the total number of +1/+0 counters on SN to be greater than four. Activate this ability only during your upkeep.
-timing=main
-oracle=Clockwork Swarm enters the battlefield with four +1/+0 counters on it. Clockwork Swarm can't be blocked by Walls. At end of combat, if Clockwork Swarm attacked or blocked this combat, remove a +1/+0 counter from it. {X}, {T}: Put up to X +1/+0 counters on Clockwork Swarm. This ability can't cause the total number of +1/+0 counters on Clockwork Swarm to be greater than four. Activate this ability only during your upkeep.
+timing=artifact
+oracle=Clockwork Swarm enters the battlefield with four +1/+0 counters on it.\nClockwork Swarm can't be blocked by Walls.\nAt end of combat, if Clockwork Swarm attacked or blocked this combat, remove a +1/+0 counter from it.\n{X}, {T}: Put up to X +1/+0 counters on Clockwork Swarm. This ability can't cause the total number of +1/+0 counters on Clockwork Swarm to be greater than four. Activate this ability only during your upkeep.

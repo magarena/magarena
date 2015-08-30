@@ -1,5 +1,5 @@
 name=Ink-Eyes, Servant of Oni
-image=http://mtgimage.com/card/ink%2Deyes%2C%20servant%20of%20oni.jpg
+image=http://magiccards.info/scans/en/pc2/33.jpg
 value=3.920
 rarity=R
 type=Legendary,Creature
@@ -10,4 +10,4 @@ ability=ninjutsu {3}{B}{B};\
         {1}{B}: Regenerate SN.
 timing=main
 requires_groovy_code=Scion of Darkness
-oracle=Ninjutsu {3}{B}{B}. Whenever Ink-Eyes, Servant of Oni deals combat damage to a player, you may put target creature card from that player's graveyard onto the battlefield under your control. {1}{B}: Regenerate Ink-Eyes.
+oracle=Ninjutsu {3}{B}{B}\nWhenever Ink-Eyes, Servant of Oni deals combat damage to a player, you may put target creature card from that player's graveyard onto the battlefield under your control.\n{1}{B}: Regenerate Ink-Eyes.

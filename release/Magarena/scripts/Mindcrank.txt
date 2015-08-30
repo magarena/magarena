@@ -1,5 +1,5 @@
 name=Mindcrank
-image=http://mtgimage.com/card/mindcrank.jpg
+image=http://magiccards.info/scans/en/nph/144.jpg
 value=3.513
 rarity=U
 type=Artifact

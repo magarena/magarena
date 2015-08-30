@@ -1,6 +1,6 @@
 name=Sleight of Hand
-image=http://mtgimage.com/card/sleight%20of%20hand.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me4/62.jpg
+value=4.345
 rarity=C
 type=Sorcery
 cost={U}

@@ -15,14 +15,11 @@
             final MagicPlayer player=event.getPlayer();
             int x = event.getCardOnStack().getX();
             if (x >= 5) {
-                final Collection<MagicPermanent> targets = game.filterPermanents(player,MagicTargetFilterFactory.CREATURE);
-                for (final MagicPermanent target : targets) {
-                    game.doAction(new MagicDestroyAction(target));
-                }
+                game.doAction(new DestroyAction(CREATURE.filter(event)));
             }
-            game.doAction(new MagicPlayTokensAction(
+            game.doAction(new PlayTokensAction(
                 player,
-                TokenCardDefinitions.get("1/1 white Soldier creature token"),
+                CardDefinitions.getToken("1/1 white Soldier creature token"),
                 x
             ));
         }

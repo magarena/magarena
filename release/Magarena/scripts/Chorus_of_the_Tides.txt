@@ -1,5 +1,5 @@
 name=Chorus of the Tides
-image=http://mtgimage.com/card/chorus%20of%20the%20tides.jpg
+image=http://magiccards.info/scans/en/bng/33.jpg
 value=3.000
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={3}{U}
 pt=3/2
 ability=flying;Whenever you cast a spell that targets SN, scry 1.
 timing=main
-oracle=Flying. Heroic — Whenever you cast a spell that targets Chorus of the Tides, scry 1.
+oracle=Flying\nHeroic — Whenever you cast a spell that targets Chorus of the Tides, scry 1.

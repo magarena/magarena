@@ -1,11 +1,11 @@
 name=Viscid Lemures
-image=http://mtgimage.com/card/viscid%20lemures.jpg
+image=http://magiccards.info/scans/en/ts/141.jpg
 value=1.959
 rarity=C
 type=Creature
 subtype=Spirit
 cost={4}{B}
 pt=4/3
-ability={0}:SN gets -1/-0 and gains swampwalk until end of turn.
+ability={0}:SN gets -1/-0 and gains swampwalk until end of turn. Activate this ability with AI no more than three times each turn.
 timing=main
 oracle={0}: Viscid Lemures gets -1/-0 and gains swampwalk until end of turn.

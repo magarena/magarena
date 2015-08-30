@@ -1,5 +1,5 @@
 name=Renegade Demon
-image=http://mtgimage.com/card/renegade%20demon.jpg
+image=http://magiccards.info/scans/en/avr/118.jpg
 value=2.138
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Demon
 cost={3}{B}{B}
 pt=5/3
 timing=main
+oracle=NONE

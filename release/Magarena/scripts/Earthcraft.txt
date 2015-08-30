@@ -1,5 +1,5 @@
 name=Earthcraft
-image=http://mtgimage.com/card/earthcraft.jpg
+image=http://magiccards.info/scans/en/tp/116.jpg
 value=4.543
 rarity=R
 type=Enchantment

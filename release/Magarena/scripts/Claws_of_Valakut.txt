@@ -1,12 +1,12 @@
 name=Claws of Valakut
-image=http://mtgimage.com/card/claws%20of%20valakut.jpg
+image=http://magiccards.info/scans/en/ddg/72.jpg
 value=3.464
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{R}{R}
-ability=Enchanted creature has first strike.
+ability=Enchanted creature gets +1/+0 for each Mountain you control.;\
+        Enchanted creature has first strike.
 enchant=pump,pos creature
 timing=aura
-requires_groovy_code
-oracle=Enchant creature. Enchanted creature gets +1/+0 for each Mountain you control and has first strike.
+oracle=Enchant creature\nEnchanted creature gets +1/+0 for each Mountain you control and has first strike.

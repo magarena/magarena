@@ -7,3 +7,4 @@ subtype=Zombie,Goblin
 color=b
 ability=When SN dies, target creature gets -1/-1 until end of turn.
 pt=1/1
+oracle=When Festering Goblin dies, target creature gets -1/-1 until end of turn.

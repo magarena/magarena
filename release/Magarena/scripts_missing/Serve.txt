@@ -1,9 +1,9 @@
 name=Serve
-image=http://mtgimage.com/card/protectserve.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dgm/131b.jpg
+value=2.565
 rarity=U
 type=Instant
 cost={1}{U}
 effect=Target creature gets -6/-0 until end of turn.~Fuse
 timing=removal
-oracle=Target creature gets -6/-0 until end of turn. Fuse
+oracle=Target creature gets -6/-0 until end of turn.\nFuse

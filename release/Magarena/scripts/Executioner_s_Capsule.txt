@@ -1,5 +1,5 @@
 name=Executioner's Capsule
-image=http://mtgimage.com/card/executioner%27s%20capsule.jpg
+image=http://magiccards.info/scans/en/mma/83.jpg
 value=4.273
 rarity=U
 type=Artifact

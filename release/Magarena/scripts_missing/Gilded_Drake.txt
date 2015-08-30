@@ -1,6 +1,6 @@
 name=Gilded Drake
-image=http://mtgimage.com/card/gilded%20drake.jpg
-value=2.500
+image=http://magiccards.info/scans/en/us/76.jpg
+value=4.574
 rarity=R
 type=Creature
 subtype=Drake
@@ -9,4 +9,4 @@ pt=3/3
 ability=Flying;\
         When SN enters the battlefield, exchange control of SN and up to one target creature an opponent controls. If you don't make an exchange, sacrifice SN. This ability can't be countered except by spells and abilities.
 timing=main
-oracle=Flying. When Gilded Drake enters the battlefield, exchange control of Gilded Drake and up to one target creature an opponent controls. If you don't make an exchange, sacrifice Gilded Drake. This ability can't be countered except by spells and abilities.
+oracle=Flying\nWhen Gilded Drake enters the battlefield, exchange control of Gilded Drake and up to one target creature an opponent controls. If you don't make an exchange, sacrifice Gilded Drake. This ability can't be countered except by spells and abilities.

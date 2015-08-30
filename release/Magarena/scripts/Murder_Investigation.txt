@@ -1,6 +1,6 @@
 name=Murder Investigation
-image=http://mtgimage.com/card/murder%20investigation.jpg
-value=2.946
+image=http://magiccards.info/scans/en/ori/27.jpg
+value=2.500
 rarity=U
 type=Enchantment
 subtype=Aura
@@ -8,4 +8,4 @@ cost={1}{W}
 timing=aura
 enchant=power,creature you control
 requires_groovy_code
-oracle=Enchant creature you control. When enchanted creature dies, put X 1/1 white Soldier creature tokens onto the battlefield, where X is its power.
+oracle=Enchant creature you control\nWhen enchanted creature dies, put X 1/1 white Soldier creature tokens onto the battlefield, where X is its power.

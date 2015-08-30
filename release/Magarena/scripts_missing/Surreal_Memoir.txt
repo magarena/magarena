@@ -1,9 +1,9 @@
 name=Surreal Memoir
-image=http://mtgimage.com/card/surreal%20memoir.jpg
-value=2.500
+image=http://magiccards.info/scans/en/roe/167.jpg
+value=3.856
 rarity=U
 type=Sorcery
 cost={3}{R}
 effect=Return an instant card at random from your graveyard to your hand.~Rebound
 timing=main
-oracle=Return an instant card at random from your graveyard to your hand. Rebound
+oracle=Return an instant card at random from your graveyard to your hand.\nRebound

@@ -1,5 +1,5 @@
 name=Crawling Filth
-image=http://mtgimage.com/card/crawling%20filth.jpg
+image=http://magiccards.info/scans/en/bok/64.jpg
 value=1.026
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={5}{B}
 pt=2/2
 ability=fear;soulshift 5
 timing=main
-oracle=Fear. Soulshift 5
+oracle=Fear\nSoulshift 5

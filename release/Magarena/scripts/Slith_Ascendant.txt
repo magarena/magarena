@@ -1,5 +1,5 @@
 name=Slith Ascendant
-image=http://mtgimage.com/card/slith%20ascendant.jpg
+image=http://magiccards.info/scans/en/mi/23.jpg
 value=3.635
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=flying;\
         Whenever SN deals combat damage to a player, put a +1/+1 counter on SN.
 timing=main
-oracle=Flying. Whenever Slith Ascendant deals combat damage to a player, put a +1/+1 counter on it.
+oracle=Flying\nWhenever Slith Ascendant deals combat damage to a player, put a +1/+1 counter on it.

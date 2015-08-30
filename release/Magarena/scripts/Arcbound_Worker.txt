@@ -1,11 +1,11 @@
 name=Arcbound Worker
-image=http://mtgimage.com/card/arcbound%20worker.jpg
+image=http://magiccards.info/scans/en/mma/201.jpg
 value=3.913
 rarity=C
 type=Artifact,Creature
 subtype=Construct
 cost={1}
 pt=0/0
-ability=modular 1
+ability=Modular 1
 timing=main
 oracle=Modular 1

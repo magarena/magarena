@@ -6,22 +6,18 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "SN deals "+amount+" damage to each creature with flying and each player."
+                "SN deals X damage to each creature with flying and each player. (X="+amount+")"
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicSource source = event.getSource();
             final int amount = event.getCardOnStack().getX();
-            final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE_WITH_FLYING);
-            for (final MagicPermanent target : targets) {
-                final MagicDamage damage=new MagicDamage(source,target,amount);
-                game.doAction(new MagicDealDamageAction(damage));
+            CREATURE_WITH_FLYING.filter(event) each {
+                game.doAction(new DealDamageAction(source,it,amount));
             }
-            for (final MagicPlayer player : game.getAPNAP()) {
-                final MagicDamage damage=new MagicDamage(source,player,amount);
-                game.doAction(new MagicDealDamageAction(damage));
+            game.getAPNAP() each {
+                game.doAction(new DealDamageAction(source,it,amount));
             }
         }
     }

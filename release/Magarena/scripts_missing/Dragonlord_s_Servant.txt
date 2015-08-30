@@ -1,0 +1,11 @@
+name=Dragonlord's Servant
+image=http://magiccards.info/scans/en/dtk/138.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Goblin,Shaman
+cost={1}{R}
+pt=1/3
+ability=Dragon spells you cast cost {1} less to cast.
+timing=main
+oracle=Dragon spells you cast cost {1} less to cast.

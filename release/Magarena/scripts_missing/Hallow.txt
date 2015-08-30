@@ -1,6 +1,6 @@
 name=Hallow
-image=http://mtgimage.com/card/hallow.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ds/4.jpg
+value=4.035
 rarity=C
 type=Instant
 cost={W}

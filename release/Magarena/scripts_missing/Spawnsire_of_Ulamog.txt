@@ -1,6 +1,6 @@
 name=Spawnsire of Ulamog
-image=http://mtgimage.com/card/spawnsire%20of%20ulamog.jpg
-value=2.500
+image=http://magiccards.info/scans/en/roe/11.jpg
+value=4.113
 rarity=R
 type=Creature
 subtype=Eldrazi
@@ -10,4 +10,4 @@ ability=Annihilator 1;\
         {4}: Put two 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield. They have "Sacrifice this creature: Add {1} to your mana pool.";\
         {20}: Cast any number of Eldrazi cards you own from outside the game without paying their mana costs.
 timing=main
-oracle=Annihilator 1. {4}: Put two 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield. They have "Sacrifice this creature: Add {1} to your mana pool.". {20}: Cast any number of Eldrazi cards you own from outside the game without paying their mana costs.
+oracle=Annihilator 1\n{4}: Put two 0/1 colorless Eldrazi Spawn creature tokens onto the battlefield. They have "Sacrifice this creature: Add {1} to your mana pool."\n{20}: Cast any number of Eldrazi cards you own from outside the game without paying their mana costs.

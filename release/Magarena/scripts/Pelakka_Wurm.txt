@@ -1,5 +1,5 @@
 name=Pelakka Wurm
-image=http://mtgimage.com/card/pelakka%20wurm.jpg
+image=http://magiccards.info/scans/en/cns/172.jpg
 value=3.750
 rarity=U
 type=Creature
@@ -10,4 +10,4 @@ ability=trample;\
         When SN enters the battlefield, you gain 7 life.;\
         When SN dies, draw a card.
 timing=fmain
-oracle=Trample. When Pelakka Wurm enters the battlefield, you gain 7 life. When Pelakka Wurm dies, draw a card.
+oracle=Trample\nWhen Pelakka Wurm enters the battlefield, you gain 7 life.\nWhen Pelakka Wurm dies, draw a card.

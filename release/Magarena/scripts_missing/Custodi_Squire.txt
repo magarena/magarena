@@ -1,6 +1,6 @@
 name=Custodi Squire
-image=http://mtgimage.com/card/custodi%20squire.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cns/18.jpg
+value=3.786
 rarity=C
 type=Creature
 subtype=Spirit,Cleric
@@ -9,4 +9,4 @@ pt=3/3
 ability=Flying;\
         When SN enters the battlefield, starting with you, each player votes for an artifact, creature, or enchantment card in your graveyard. Return each card with the most votes or tied for most votes to your hand.
 timing=main
-oracle=Flying. Will of the council — When Custodi Squire enters the battlefield, starting with you, each player votes for an artifact, creature, or enchantment card in your graveyard. Return each card with the most votes or tied for most votes to your hand.
+oracle=Flying\nWill of the council — When Custodi Squire enters the battlefield, starting with you, each player votes for an artifact, creature, or enchantment card in your graveyard. Return each card with the most votes or tied for most votes to your hand.

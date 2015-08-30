@@ -1,5 +1,5 @@
 name=Mox Ruby
-image=http://mtgimage.com/card/mox%20ruby.jpg
+image=http://magiccards.info/scans/en/vma/8.jpg
 value=4.875
 rarity=R
 type=Artifact

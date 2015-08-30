@@ -37,7 +37,7 @@ import javax.swing.border.Border;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import magic.ui.IconImages;
-import magic.data.URLUtils;
+import magic.ui.URLUtils;
 import magic.ui.ScreenController;
 import magic.ui.avatar.AvatarImageSet;
 import magic.ui.avatar.WrapLayout;
@@ -49,19 +49,26 @@ import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.theme.PlayerAvatar;
 import magic.ui.theme.Theme;
-import magic.ui.GraphicsUtilities;
+import magic.ui.utility.GraphicsUtils;
 import magic.ui.ImageFileIO;
+import magic.translate.UiString;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
-import magic.ui.MagicStyle;
+import magic.ui.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class AvatarImagesScreen
-    extends AbstractScreen
-    implements IStatusBar, IActionBar {
+public class AvatarImagesScreen extends AbstractScreen implements IStatusBar, IActionBar {
+
+    // translatable strings.
+    private static final String _S1 = "Select Avatar";
+    private static final String _S2 = "Click to select this avatar image.";
+    private static final String _S3 = "Avatars";
+    private static final String _S4 = "Cancel";
+    private static final String _S5 = "Avatars online...";
+    private static final String _S6 = "Get more avatars from the Magarena forum.";
 
     private JPanel viewer;
     private MenuButton rightActionButton = null;
@@ -108,7 +115,7 @@ public class AvatarImagesScreen
             final String filePath = imagePath.toAbsolutePath().toString();
             try (final InputStream ins = new FileInputStream(new File(filePath))) {
                 final BufferedImage image = ImageFileIO.toImg(ins, IconImages.MISSING);
-                final ImageIcon icon = new ImageIcon(GraphicsUtilities.scale(image, PlayerAvatar.LARGE_SIZE, PlayerAvatar.LARGE_SIZE));
+                final ImageIcon icon = new ImageIcon(GraphicsUtils.scale(image, PlayerAvatar.LARGE_SIZE, PlayerAvatar.LARGE_SIZE));
                 final JLabel iconLabel = new JLabel(icon);
                 imagePathMap.put(iconLabel, imagePath);
                 iconLabel.setBorder(FontsAndBorders.EMPTY_BORDER);
@@ -152,17 +159,17 @@ public class AvatarImagesScreen
         // paint the Icon to the BufferedImage.
         icon.paintIcon(null, g, 0,0);
         g.dispose();
-        rightActionButton =
-                new ActionBarButton(
-                        new ImageIcon(GraphicsUtilities.scale(bi, 46, 46)),
-                        "Select Avatar", "Click to select this avatar image.",
-                        new AbstractAction() {
-                            @Override
-                            public void actionPerformed(ActionEvent e) {
-                                notifyConsumer(iconLabel);
-                                ScreenController.closeActiveScreen(false);
-                            }
-                        });
+        rightActionButton = new ActionBarButton(
+            new ImageIcon(GraphicsUtils.scale(bi, 46, 46)),
+            UiString.get(_S1), UiString.get(_S2),
+            new AbstractAction() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    notifyConsumer(iconLabel);
+                    ScreenController.closeActiveScreen(false);
+                }
+            }
+        );
 
         refreshActionBar();
         this.selectedImageLabel = iconLabel;
@@ -231,7 +238,7 @@ public class AvatarImagesScreen
 
     private AvatarImageSet[] getAvatarImageSetsArray() {
         final List<AvatarImageSet> imageSetsList = getAvatarImageSetsList();
-        return imageSetsList.toArray(new AvatarImageSet[imageSetsList.size()]);
+        return imageSetsList.toArray(new AvatarImageSet[0]);
     }
 
     private List<AvatarImageSet> getAvatarImageSetsList() {
@@ -276,15 +283,16 @@ public class AvatarImagesScreen
             setOpaque(false);
         }
 
-        /* (non-Javadoc)
-         * @see javax.swing.ListCellRenderer#getListCellRendererComponent(javax.swing.JList, java.lang.Object, int, boolean, boolean)
-         */
         @Override
         public Component getListCellRendererComponent(
-                JList<? extends AvatarImageSet> list, AvatarImageSet value, int index,
-                boolean isSelected, boolean cellHasFocus) {
+            JList<? extends AvatarImageSet> list, 
+            AvatarImageSet value, 
+            int index,
+            boolean isSelected, 
+            boolean cellHasFocus
+        ) {
 
-            final Color foreColor = isSelected ? MagicStyle.HIGHLIGHT_COLOR : Color.WHITE;
+            final Color foreColor = isSelected ? MagicStyle.getRolloverColor() : Color.WHITE;
 
             final JLabel setNameLabel = new JLabel(value.getName());
             setNameLabel.setFont(FontsAndBorders.FONT2);
@@ -300,7 +308,7 @@ public class AvatarImagesScreen
             itemPanel.setPreferredSize(new Dimension(0, 70));
             itemPanel.setOpaque(false);
             itemPanel.setForeground(foreColor);
-            itemPanel.setBorder(isSelected ? BorderFactory.createLineBorder(MagicStyle.HIGHLIGHT_COLOR, 1) : null);
+            itemPanel.setBorder(isSelected ? BorderFactory.createLineBorder(MagicStyle.getRolloverColor(), 1) : null);
             itemPanel.add(new JLabel(value.getSampleImage()), "w 70!, h 70!");
             itemPanel.add(infoPanel, "w 100%");
             return itemPanel;
@@ -309,56 +317,38 @@ public class AvatarImagesScreen
 
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagStatusBar#getScreenCaption()
-     */
     @Override
     public String getScreenCaption() {
-        return "Avatars";
+        return UiString.get(_S3);
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getLeftAction()
-     */
     @Override
     public MenuButton getLeftAction() {
-        return MenuButton.getCloseScreenButton("Cancel");
+        return MenuButton.getCloseScreenButton(UiString.get(_S4));
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getRightAction()
-     */
     @Override
     public MenuButton getRightAction() {
         return rightActionButton;
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getMiddleActions()
-     */
     @Override
     public List<MenuButton> getMiddleActions() {
-        final List<MenuButton> buttons = new ArrayList<MenuButton>();
-        buttons.add(new MenuButton("Avatars online...", new AbstractAction() {
+        final List<MenuButton> buttons = new ArrayList<>();
+        buttons.add(new MenuButton(UiString.get(_S5), new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 URLUtils.openURL(URLUtils.URL_AVATARS);
             }
-        }, "Get more avatars from the Magarena forum."));
+        }, UiString.get(_S6)));
         return buttons;
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.MagScreen#canScreenClose()
-     */
     @Override
     public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
         return true;
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.interfaces.IStatusBar#getStatusPanel()
-     */
     @Override
     public JPanel getStatusPanel() {
         return null;

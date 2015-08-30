@@ -1,5 +1,5 @@
 name=Suture Spirit
-image=http://mtgimage.com/card/suture%20spirit.jpg
+image=http://magiccards.info/scans/en/eve/16.jpg
 value=2.979
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=flying;\
         {W/B}{W/B}{W/B}: Regenerate target creature.
 timing=main
-oracle=Flying. {W/B}{W/B}{W/B}: Regenerate target creature.
+oracle=Flying\n{W/B}{W/B}{W/B}: Regenerate target creature.

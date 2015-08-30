@@ -1,9 +1,9 @@
 name=Force Away
-image=http://mtgimage.com/card/force%20away.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/40.jpg
+value=3.167
 rarity=C
 type=Instant
 cost={1}{U}
 effect=Return target creature to its owner's hand.~If you control a creature with power 4 or greater, you may draw a card. If you do, discard a card.
 timing=removal
-oracle=Return target creature to its owner's hand. Ferocious — If you control a creature with power 4 or greater, you may draw a card. If you do, discard a card.
+oracle=Return target creature to its owner's hand.\nFerocious — If you control a creature with power 4 or greater, you may draw a card. If you do, discard a card.

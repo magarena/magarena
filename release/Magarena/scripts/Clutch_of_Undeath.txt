@@ -1,5 +1,5 @@
 name=Clutch of Undeath
-image=http://mtgimage.com/card/clutch%20of%20undeath.jpg
+image=http://magiccards.info/scans/en/sc/61.jpg
 value=2.013
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={3}{B}{B}
 enchant=pump,creature
 timing=aura
 requires_groovy_code
-oracle=Enchant creature. Enchanted creature gets +3/+3 as long as it's a Zombie. Otherwise, it gets -3/-3.
+oracle=Enchant creature\nEnchanted creature gets +3/+3 as long as it's a Zombie. Otherwise, it gets -3/-3.

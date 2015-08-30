@@ -1,5 +1,5 @@
 name=Knight of Infamy
-image=http://mtgimage.com/card/knight%20of%20infamy.jpg
+image=http://magiccards.info/scans/en/m13/96.jpg
 value=3.884
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{B}
 pt=2/1
 ability=exalted;protection from white
 timing=main
-oracle=Protection from white. Exalted
+oracle=Protection from white\nExalted

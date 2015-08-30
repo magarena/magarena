@@ -1,5 +1,5 @@
 name=Carnivorous Plant
-image=http://mtgimage.com/card/carnivorous%20plant.jpg
+image=http://magiccards.info/scans/en/med/115.jpg
 value=2.903
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Ugin's Construct
-image=http://mtgimage.com/card/ugin%27s%20construct.jpg
+image=http://magiccards.info/scans/en/frf/164.jpg
 value=2.500
 rarity=U
 type=Artifact,Creature
@@ -7,5 +7,5 @@ subtype=Construct
 cost={4}
 pt=4/5
 ability=When SN enters the battlefield, sacrifice a permanent that's one or more colors.
-timing=main
+timing=artifact
 oracle=When Ugin's Construct enters the battlefield, sacrifice a permanent that's one or more colors.

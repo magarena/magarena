@@ -1,6 +1,6 @@
 name=Singe-Mind Ogre
-image=http://mtgimage.com/card/singe-mind%20ogre.jpg
-value=2.500
+image=http://magiccards.info/scans/en/arb/45.jpg
+value=3.020
 rarity=C
 type=Creature
 subtype=Ogre,Mutant

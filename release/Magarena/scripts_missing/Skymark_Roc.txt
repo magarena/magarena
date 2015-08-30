@@ -1,6 +1,6 @@
 name=Skymark Roc
-image=http://mtgimage.com/card/skymark%20roc.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rtr/196.jpg
+value=3.739
 rarity=U
 type=Creature
 subtype=Bird
@@ -9,4 +9,4 @@ pt=3/3
 ability=Flying;\
         Whenever SN attacks, you may return target creature defending player controls with toughness 2 or less to its owner's hand.
 timing=main
-oracle=Flying. Whenever Skymark Roc attacks, you may return target creature defending player controls with toughness 2 or less to its owner's hand.
+oracle=Flying\nWhenever Skymark Roc attacks, you may return target creature defending player controls with toughness 2 or less to its owner's hand.

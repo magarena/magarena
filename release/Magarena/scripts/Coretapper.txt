@@ -1,5 +1,5 @@
 name=Coretapper
-image=http://mtgimage.com/card/coretapper.jpg
+image=http://magiccards.info/scans/en/ds/107.jpg
 value=4.424
 rarity=U
 type=Artifact,Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability={T}: Put a charge counter on target artifact.;\
         Sacrifice SN: Put two charge counters on target artifact.
 timing=main
-oracle={T}: Put a charge counter on target artifact. Sacrifice Coretapper: Put two charge counters on target artifact.
+oracle={T}: Put a charge counter on target artifact.\nSacrifice Coretapper: Put two charge counters on target artifact.

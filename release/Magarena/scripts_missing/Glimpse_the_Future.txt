@@ -1,9 +1,0 @@
-name=Glimpse the Future
-image=http://mtgimage.com/card/glimpse%20the%20future.jpg
-value=2.500
-rarity=U
-type=Sorcery
-cost={2}{U}
-effect=Look at the top three cards of your library. Put one of them into your hand and the rest into your graveyard.
-timing=main
-oracle=Look at the top three cards of your library. Put one of them into your hand and the rest into your graveyard.

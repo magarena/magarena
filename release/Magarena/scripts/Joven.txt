@@ -1,5 +1,5 @@
 name=Joven
-image=http://mtgimage.com/card/joven.jpg
+image=http://magiccards.info/scans/en/hl/97.jpg
 value=2.860
 rarity=C
 type=Legendary,Creature

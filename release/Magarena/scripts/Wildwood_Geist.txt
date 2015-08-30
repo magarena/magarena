@@ -1,5 +1,5 @@
 name=Wildwood Geist
-image=http://mtgimage.com/card/wildwood%20geist.jpg
+image=http://magiccards.info/scans/en/avr/204.jpg
 value=1.586
 rarity=C
 type=Creature

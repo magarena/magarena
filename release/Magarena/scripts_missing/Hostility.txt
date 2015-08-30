@@ -1,5 +1,5 @@
 name=Hostility
-image=http://mtgimage.com/card/hostility.jpg
+image=http://magiccards.info/scans/en/jvc/48.jpg
 value=2.500
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=Haste;\
         If a spell you control would deal damage to an opponent, prevent that damage. Put a 3/1 red Elemental Shaman creature token with haste onto the battlefield for each 1 damage prevented this way.;\
         When SN is put into a graveyard from anywhere, shuffle it into its owner's library.
 timing=main
-oracle=Haste. If a spell you control would deal damage to an opponent, prevent that damage. Put a 3/1 red Elemental Shaman creature token with haste onto the battlefield for each 1 damage prevented this way. When Hostility is put into a graveyard from anywhere, shuffle it into its owner's library.
+oracle=Haste\nIf a spell you control would deal damage to an opponent, prevent that damage. Put a 3/1 red Elemental Shaman creature token with haste onto the battlefield for each 1 damage prevented this way.\nWhen Hostility is put into a graveyard from anywhere, shuffle it into its owner's library.

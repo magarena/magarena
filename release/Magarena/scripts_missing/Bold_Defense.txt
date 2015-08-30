@@ -1,10 +1,9 @@
 name=Bold Defense
-image=http://mtgimage.com/card/bold%20defense.jpg
-value=2.500
+image=http://magiccards.info/scans/en/zen/3.jpg
+value=1.569
 rarity=C
 type=Instant
 cost={2}{W}
-ability=Kicker {3}{W}
-effect=Creatures you control get +1/+1 until end of turn. If SN was kicked, instead creatures you control get +2/+2 and gain first strike until end of turn.
+effect=Kicker {3}{W}~Creatures you control get +1/+1 until end of turn. If SN was kicked, instead creatures you control get +2/+2 and gain first strike until end of turn.
 timing=removal
-oracle=Kicker {3}{W}. Creatures you control get +1/+1 until end of turn. If Bold Defense was kicked, instead creatures you control get +2/+2 and gain first strike until end of turn.
+oracle=Kicker {3}{W}\nCreatures you control get +1/+1 until end of turn. If Bold Defense was kicked, instead creatures you control get +2/+2 and gain first strike until end of turn.

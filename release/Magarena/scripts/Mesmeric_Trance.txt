@@ -1,5 +1,5 @@
 name=Mesmeric Trance
-image=http://mtgimage.com/card/mesmeric%20trance.jpg
+image=http://magiccards.info/scans/en/me2/55.jpg
 value=3.140
 rarity=R
 type=Enchantment
@@ -7,4 +7,4 @@ cost={1}{U}{U}
 ability=cumulative upkeep {1};\
         {U},Discard a card: Draw a card.
 timing=enchantment
-oracle=Cumulative upkeep {1}. {U}, Discard a card: Draw a card.
+oracle=Cumulative upkeep {1}\n{U}, Discard a card: Draw a card.

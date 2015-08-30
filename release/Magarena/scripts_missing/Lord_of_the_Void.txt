@@ -1,6 +1,6 @@
 name=Lord of the Void
-image=http://mtgimage.com/card/lord%20of%20the%20void.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gtc/71.jpg
+value=3.828
 rarity=M
 type=Creature
 subtype=Demon
@@ -9,4 +9,4 @@ pt=7/7
 ability=Flying;\
         Whenever SN deals combat damage to a player, exile the top seven cards of that player's library, then put a creature card from among them onto the battlefield under your control.
 timing=main
-oracle=Flying. Whenever Lord of the Void deals combat damage to a player, exile the top seven cards of that player's library, then put a creature card from among them onto the battlefield under your control.
+oracle=Flying\nWhenever Lord of the Void deals combat damage to a player, exile the top seven cards of that player's library, then put a creature card from among them onto the battlefield under your control.

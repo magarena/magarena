@@ -1,9 +1,9 @@
 name=Headstone
-image=http://mtgimage.com/card/headstone.jpg
+image=http://magiccards.info/scans/en/hl/15.jpg
 value=2.573
 rarity=C
 type=Instant
 cost={1}{B}
 effect=Exile target card from a graveyard.~Draw a card at the beginning of the next turn's upkeep.
 timing=removal
-oracle=Exile target card from a graveyard. Draw a card at the beginning of the next turn's upkeep.
+oracle=Exile target card from a graveyard.\nDraw a card at the beginning of the next turn's upkeep.

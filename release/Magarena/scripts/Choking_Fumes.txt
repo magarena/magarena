@@ -1,5 +1,5 @@
 name=Choking Fumes
-image=http://mtgimage.com/card/choking%20fumes.jpg
+image=http://magiccards.info/scans/en/mbs/4.jpg
 value=3.295
 rarity=U
 type=Instant

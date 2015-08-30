@@ -1,5 +1,5 @@
 name=Mesa Enchantress
-image=http://mtgimage.com/card/mesa%20enchantress.jpg
+image=http://magiccards.info/scans/en/m12/25.jpg
 value=3.871
 rarity=R
 type=Creature

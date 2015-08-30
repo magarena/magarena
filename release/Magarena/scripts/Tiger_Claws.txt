@@ -1,5 +1,5 @@
 name=Tiger Claws
-image=http://mtgimage.com/card/tiger%20claws.jpg
+image=http://magiccards.info/scans/en/mm/279.jpg
 value=3.460
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={2}{G}
 ability=Flash;Enchanted creature gets +1/+1 and has trample.
 timing=flash
 enchant=pump,pos creature
-oracle=Flash. Enchant creature. Enchanted creature gets +1/+1 and has trample.
+oracle=Flash\nEnchant creature\nEnchanted creature gets +1/+1 and has trample.

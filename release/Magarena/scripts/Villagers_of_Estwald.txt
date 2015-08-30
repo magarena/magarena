@@ -1,5 +1,5 @@
 name=Villagers of Estwald
-image=http://mtgimage.com/card/villagers%20of%20estwald.jpg
+image=http://magiccards.info/scans/en/isd/209a.jpg
 value=3.240
 rarity=C
 type=Creature

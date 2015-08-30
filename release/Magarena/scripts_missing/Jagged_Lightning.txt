@@ -1,6 +1,6 @@
 name=Jagged Lightning
-image=http://mtgimage.com/card/jagged%20lightning.jpg
-value=2.500
+image=http://magiccards.info/scans/en/st/109.jpg
+value=3.250
 rarity=U
 type=Sorcery
 cost={3}{R}{R}

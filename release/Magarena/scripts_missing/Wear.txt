@@ -1,9 +1,9 @@
 name=Wear
-image=http://mtgimage.com/card/weartear.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dgm/135a.jpg
+value=4.315
 rarity=U
 type=Instant
 cost={1}{R}
 effect=Destroy target artifact.~Fuse
 timing=removal
-oracle=Destroy target artifact. Fuse
+oracle=Destroy target artifact.\nFuse

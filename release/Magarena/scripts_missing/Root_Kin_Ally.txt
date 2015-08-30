@@ -1,5 +1,5 @@
 name=Root-Kin Ally
-image=http://mtgimage.com/card/root-kin%20ally.jpg
+image=http://magiccards.info/scans/en/rav/180.jpg
 value=2.500
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=Convoke;\
         Tap two untapped creatures you control: SN gets +2/+2 until end of turn.
 timing=main
-oracle=Convoke. Tap two untapped creatures you control: Root-Kin Ally gets +2/+2 until end of turn.
+oracle=Convoke\nTap two untapped creatures you control: Root-Kin Ally gets +2/+2 until end of turn.

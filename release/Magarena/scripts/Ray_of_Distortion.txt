@@ -1,5 +1,5 @@
 name=Ray of Distortion
-image=http://mtgimage.com/card/ray%20of%20distortion.jpg
+image=http://magiccards.info/scans/en/od/42.jpg
 value=2.062
 rarity=C
 type=Instant
@@ -7,4 +7,4 @@ cost={3}{W}
 effect=Destroy target artifact or enchantment.
 ability=Flashback {4}{W}{W}
 timing=removal
-oracle=Destroy target artifact or enchantment. Flashback {4}{W}{W}
+oracle=Destroy target artifact or enchantment.\nFlashback {4}{W}{W}

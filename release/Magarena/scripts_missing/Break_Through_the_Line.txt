@@ -1,9 +1,0 @@
-name=Break Through the Line
-image=http://mtgimage.com/card/break%20through%20the%20line.jpg
-value=2.500
-rarity=U
-type=Enchantment
-cost={1}{R}
-ability={R}: Target creature with power 2 or less gains haste until end of turn and can't be blocked this turn.
-timing=main
-oracle={R}: Target creature with power 2 or less gains haste until end of turn and can't be blocked this turn.

@@ -1,6 +1,6 @@
 name=Warp World
-image=http://mtgimage.com/card/warp%20world.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m10/163.jpg
+value=3.920
 rarity=R
 type=Sorcery
 cost={5}{R}{R}{R}

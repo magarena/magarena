@@ -1,6 +1,6 @@
 name=Coastal Wizard
-image=http://mtgimage.com/card/coastal%20wizard.jpg
-value=2.500
+image=http://magiccards.info/scans/en/po2/34.jpg
+value=1.841
 rarity=R
 type=Creature
 subtype=Human,Wizard

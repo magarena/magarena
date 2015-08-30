@@ -1,12 +1,12 @@
 name=Thrull Retainer
-image=http://mtgimage.com/card/thrull%20retainer.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/med/84.jpg
+value=3.362
+rarity=C
 type=Enchantment
 subtype=Aura
 cost={B}
 ability=Enchant creature;\
         Enchanted creature gets +1/+1.;\
         Sacrifice SN: Regenerate enchanted creature.
-timing=main
-oracle=Enchant creature. Enchanted creature gets +1/+1. Sacrifice Thrull Retainer: Regenerate enchanted creature.
+timing=aura
+oracle=Enchant creature\nEnchanted creature gets +1/+1.\nSacrifice Thrull Retainer: Regenerate enchanted creature.

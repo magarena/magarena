@@ -1,7 +1,7 @@
 name=Soldevi Sage
-image=http://mtgimage.com/card/soldevi%20sage.jpg
-value=2.500
-rarity=C
+image=http://magiccards.info/scans/en/6e/99.jpg
+value=2.200
+rarity=U
 type=Creature
 subtype=Human,Wizard
 cost={1}{U}

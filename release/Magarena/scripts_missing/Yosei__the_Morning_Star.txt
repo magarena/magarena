@@ -1,7 +1,7 @@
 name=Yosei, the Morning Star
-image=http://mtgimage.com/card/yosei%2C%20the%20morning%20star.jpg
-value=2.500
-rarity=R
+image=http://magiccards.info/scans/en/mma/35.jpg
+value=4.057
+rarity=M
 type=Legendary,Creature
 subtype=Dragon,Spirit
 cost={4}{W}{W}
@@ -9,4 +9,4 @@ pt=5/5
 ability=Flying;\
         When SN dies, target player skips his or her next untap step. Tap up to five target permanents that player controls.
 timing=main
-oracle=Flying. When Yosei, the Morning Star dies, target player skips his or her next untap step. Tap up to five target permanents that player controls.
+oracle=Flying\nWhen Yosei, the Morning Star dies, target player skips his or her next untap step. Tap up to five target permanents that player controls.

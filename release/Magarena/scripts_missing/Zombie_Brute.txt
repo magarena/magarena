@@ -1,6 +1,6 @@
 name=Zombie Brute
-image=http://mtgimage.com/card/zombie%20brute.jpg
-value=2.500
+image=http://magiccards.info/scans/en/le/87.jpg
+value=3.442
 rarity=U
 type=Creature
 subtype=Zombie
@@ -9,4 +9,4 @@ pt=5/4
 ability=Amplify 1;\
         Trample
 timing=main
-oracle=Amplify 1. Trample
+oracle=Amplify 1\nTrample

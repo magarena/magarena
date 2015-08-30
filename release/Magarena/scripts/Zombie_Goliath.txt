@@ -1,5 +1,5 @@
 name=Zombie Goliath
-image=http://mtgimage.com/card/zombie%20goliath.jpg
+image=http://magiccards.info/scans/en/cns/135.jpg
 value=1.312
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Zombie,Giant
 cost={4}{B}
 pt=4/3
 timing=main
+oracle=NONE

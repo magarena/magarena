@@ -1,5 +1,5 @@
 name=Death Watch
-image=http://mtgimage.com/card/death%20watch.jpg
+image=http://magiccards.info/scans/en/vi/7.jpg
 value=3.511
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={B}
 timing=main
 enchant=destroy,neg creature
 requires_groovy_code
-oracle=Enchant creature. When enchanted creature dies, its controller loses life equal to its power and you gain life equal to its toughness.
+oracle=Enchant creature\nWhen enchanted creature dies, its controller loses life equal to its power and you gain life equal to its toughness.

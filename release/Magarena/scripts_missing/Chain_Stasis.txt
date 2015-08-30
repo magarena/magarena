@@ -1,6 +1,6 @@
 name=Chain Stasis
-image=http://mtgimage.com/card/chain%20stasis.jpg
-value=2.500
+image=http://magiccards.info/scans/en/hl/28.jpg
+value=3.120
 rarity=R
 type=Instant
 cost={U}

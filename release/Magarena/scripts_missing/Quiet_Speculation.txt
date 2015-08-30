@@ -1,6 +1,6 @@
 name=Quiet Speculation
-image=http://mtgimage.com/card/quiet%20speculation.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ju/49.jpg
+value=3.759
 rarity=U
 type=Sorcery
 cost={1}{U}

@@ -1,11 +1,12 @@
 name=Realm Razer
-image=http://mtgimage.com/card/realm%20razer.jpg
+image=http://magiccards.info/scans/en/ala/187.jpg
 value=3.566
 rarity=R
 type=Creature
 subtype=Beast
 cost={3}{R}{G}{W}
 pt=4/2
+ability=When SN enters the battlefield, exile all lands.
 timing=main
 requires_groovy_code
-oracle=When Realm Razer enters the battlefield, exile all lands. When Realm Razer leaves the battlefield, return the exiled cards to the battlefield tapped under their owners' control.
+oracle=When Realm Razer enters the battlefield, exile all lands.\nWhen Realm Razer leaves the battlefield, return the exiled cards to the battlefield tapped under their owners' control.

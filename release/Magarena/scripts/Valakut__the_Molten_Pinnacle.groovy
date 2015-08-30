@@ -7,7 +7,7 @@
                     MagicCondition.LEAST_FIVE_OTHER_MOUNTAINS.accept(other)) ?
                 new MagicEvent(
                     permanent,
-                    new MagicMayChoice(MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER),
+                    new MagicMayChoice(NEG_TARGET_CREATURE_OR_PLAYER),
                     new MagicDamageTargetPicker(3),
                     other,
                     this,
@@ -22,12 +22,7 @@
                 return;
             }
             event.processTarget(game, {
-                final MagicDamage damage = new MagicDamage(
-                    event.getSource(),
-                    it,
-                    3
-                );
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new DealDamageAction(event.getSource(),it,3));
             });
         }
     }

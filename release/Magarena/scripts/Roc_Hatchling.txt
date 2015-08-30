@@ -1,5 +1,5 @@
 name=Roc Hatchling
-image=http://mtgimage.com/card/roc%20hatchling.jpg
+image=http://magiccards.info/scans/en/wl/113.jpg
 value=3.561
 rarity=U
 type=Creature
@@ -10,4 +10,4 @@ ability=SN enters the battlefield with four shell counters on it.;\
         At the beginning of your upkeep, remove a shell counter from SN.;\
         As long as SN has no shell counters on it, it gets +3/+2 and has flying.
 timing=main
-oracle=Roc Hatchling enters the battlefield with four shell counters on it. At the beginning of your upkeep, remove a shell counter from Roc Hatchling. As long as Roc Hatchling has no shell counters on it, it gets +3/+2 and has flying.
+oracle=Roc Hatchling enters the battlefield with four shell counters on it.\nAt the beginning of your upkeep, remove a shell counter from Roc Hatchling.\nAs long as Roc Hatchling has no shell counters on it, it gets +3/+2 and has flying.

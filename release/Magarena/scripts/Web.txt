@@ -1,5 +1,5 @@
 name=Web
-image=http://mtgimage.com/card/web.jpg
+image=http://magiccards.info/scans/en/9e/281.jpg
 value=2.727
 rarity=R
 type=Enchantment
@@ -8,4 +8,4 @@ cost={G}
 ability=Enchanted creature gets +0/+2 and has reach.
 timing=aura
 enchant=flying,pos creature
-oracle=Enchant creature. Enchanted creature gets +0/+2 and has reach.
+oracle=Enchant creature\nEnchanted creature gets +0/+2 and has reach.

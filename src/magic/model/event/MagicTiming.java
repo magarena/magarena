@@ -75,8 +75,11 @@ public enum MagicTiming {
                 return game.isPhase(MagicPhaseType.FirstMain);
             case SecondMain:
             case TapLand:
-            case NextTurn:
                 return game.isPhase(MagicPhaseType.SecondMain);
+            case NextTurn:
+                return
+                    game.getTurnPlayer() != controller &&
+                    game.isPhase(MagicPhaseType.SecondMain);
             case Flash:
                 return
                     game.getTurnPlayer() != controller &&
@@ -156,7 +159,7 @@ public enum MagicTiming {
             if (timing.getCode().equalsIgnoreCase(code)) {
                 return timing;
             }
-         }
-        return None;
+        }
+        throw new RuntimeException("unknown timing: \"" + code + "\"");
     }
 }

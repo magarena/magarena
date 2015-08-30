@@ -1,6 +1,6 @@
 name=Psychic Theft
-image=http://mtgimage.com/card/psychic%20theft.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pr/40.jpg
+value=3.273
 rarity=R
 type=Sorcery
 cost={1}{U}

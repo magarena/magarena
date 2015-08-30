@@ -1,11 +1,11 @@
 name=Air Elemental
-image=http://mtgimage.com/card/air%20elemental.jpg
+image=http://magiccards.info/scans/en/me4/37.jpg
 value=3.342
-ability=flying
 rarity=U
 type=Creature
 subtype=Elemental
 cost={3}{U}{U}
 pt=4/4
+ability=Flying
 timing=main
 oracle=Flying

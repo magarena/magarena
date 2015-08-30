@@ -1,6 +1,6 @@
 name=Molten Sentry
-image=http://mtgimage.com/card/molten%20sentry.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rav/136.jpg
+value=1.793
 rarity=R
 type=Creature
 subtype=Elemental

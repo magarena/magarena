@@ -1,6 +1,6 @@
 name=Thalia, Guardian of Thraben
-image=http://mtgimage.com/card/thalia%2C%20guardian%20of%20thraben.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dka/24.jpg
+value=4.561
 rarity=R
 type=Legendary,Creature
 subtype=Human,Soldier
@@ -9,4 +9,4 @@ pt=2/1
 ability=First strike;\
         Noncreature spells cost {1} more to cast.
 timing=main
-oracle=First strike. Noncreature spells cost {1} more to cast.
+oracle=First strike\nNoncreature spells cost {1} more to cast.

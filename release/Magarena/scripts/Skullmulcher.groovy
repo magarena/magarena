@@ -1,7 +1,7 @@
 def drawCards = {
     final MagicGame game,final MagicPermanent permanent ->
     if (permanent.hasCounters()) {
-        game.doAction(new MagicDrawAction(
+        game.doAction(new DrawAction(
             permanent.getController(),
             permanent.getCounters(MagicCounterType.PlusOne)
         ));
@@ -9,14 +9,11 @@ def drawCards = {
 }
 
 [
-    new MagicWhenComesIntoPlayTrigger() {
+    new MagicWhenComesIntoPlayTrigger(MagicTrigger.REPLACEMENT) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
             final MagicTargetChoice targetChoice=new MagicTargetChoice(
-                new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
-                    permanent
-                ),
+                CREATURE_YOU_CONTROL.except(permanent),
                 MagicTargetHint.None,
                 "a creature other than "+permanent+" to sacrifice"
             );
@@ -34,17 +31,12 @@ def drawCards = {
         }
 
         @Override
-        public boolean usesStack() {
-            return false;
-        }
-
-        @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent=event.getPermanent();
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    game.doAction(new MagicSacrificeAction(it));
-                    game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.PlusOne,1));
+                    game.doAction(new SacrificeAction(it));
+                    game.doAction(new ChangeCountersAction(permanent,MagicCounterType.PlusOne,1));
                     final MagicEvent newEvent=executeTrigger(game,permanent,MagicPayedCost.NO_COST);
                     if (newEvent.isValid()) {
                         game.addEvent(newEvent);

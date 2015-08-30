@@ -1,5 +1,5 @@
 name=Bog-Strider Ash
-image=http://mtgimage.com/card/bog-strider%20ash.jpg
+image=http://magiccards.info/scans/en/lw/198.jpg
 value=1.878
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/4
 ability=swampwalk;\
         Whenever a player casts a Goblin spell, you may pay {G}. If you do, you gain 2 life.
 timing=main
-oracle=Swampwalk. Whenever a player casts a Goblin spell, you may pay {G}. If you do, you gain 2 life.
+oracle=Swampwalk\nWhenever a player casts a Goblin spell, you may pay {G}. If you do, you gain 2 life.

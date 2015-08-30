@@ -1,6 +1,6 @@
 name=Murmurs from Beyond
-image=http://mtgimage.com/card/murmurs%20from%20beyond.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cmd/53.jpg
+value=2.532
 rarity=C
 type=Instant
 subtype=Arcane

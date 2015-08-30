@@ -1,10 +1,10 @@
 name=Hundred-Talon Strike
-image=http://mtgimage.com/card/hundred-talon%20strike.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bok/8.jpg
+value=3.059
 rarity=C
 type=Instant
 subtype=Arcane
 cost={W}
 effect=Target creature gets +1/+0 and gains first strike until end of turn.~Splice onto Arcane—Tap an untapped white creature you control.
 timing=removal
-oracle=Target creature gets +1/+0 and gains first strike until end of turn. Splice onto Arcane—Tap an untapped white creature you control.
+oracle=Target creature gets +1/+0 and gains first strike until end of turn.\nSplice onto Arcane—Tap an untapped white creature you control.

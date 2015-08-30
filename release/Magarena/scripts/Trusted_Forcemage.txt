@@ -1,5 +1,5 @@
 name=Trusted Forcemage
-image=http://mtgimage.com/card/trusted%20forcemage.jpg
+image=http://magiccards.info/scans/en/avr/199.jpg
 value=2.986
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Soulbond;\
         As long as SN is paired with another creature, each of those creatures gets +1/+1.
 timing=main
-oracle=Soulbond. As long as Trusted Forcemage is paired with another creature, each of those creatures gets +1/+1.
+oracle=Soulbond\nAs long as Trusted Forcemage is paired with another creature, each of those creatures gets +1/+1.

@@ -8,13 +8,18 @@
                     permanent,
                     cardOnStack,
                     this,
-                    "Counter RN. "+cardOnStack.getCard().getController().toString()+" puts X 1/1 white and blue Bird creature tokens with flying onto the battlefield, where X is RN's converted mana cost. ("+cardOnStack.getConvertedCost()+")"
+                    "Counter RN. ${cardOnStack.getController()} puts X 1/1 white and blue Bird creature tokens with flying onto the battlefield, " + 
+                    "where X is RN's converted mana cost. (${cardOnStack.getConvertedCost()})"
                 );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicPlayTokensAction(event.getRefCardOnStack().getCard().getController(), TokenCardDefinitions.get("1/1 white and blue Bird creature token with flying"), event.getRefCardOnStack().getConvertedCost()));
-            game.doAction(new MagicCounterItemOnStackAction(event.getRefCardOnStack()));
+            game.doAction(new PlayTokensAction(
+                event.getRefCardOnStack().getController(), 
+                CardDefinitions.getToken("1/1 white and blue Bird creature token with flying"), 
+                event.getRefCardOnStack().getConvertedCost()
+            ));
+            game.doAction(new CounterItemOnStackAction(event.getRefCardOnStack()));
         }
     }
 ]

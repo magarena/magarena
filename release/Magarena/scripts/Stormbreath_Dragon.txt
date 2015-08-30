@@ -1,5 +1,5 @@
 name=Stormbreath Dragon
-image=http://mtgimage.com/card/stormbreath%20dragon.jpg
+image=http://magiccards.info/scans/en/ths/143.jpg
 value=3.823
 rarity=M
 type=Creature
@@ -10,4 +10,4 @@ ability=flying;haste;protection from white;\
         {5}{R}{R}: Monstrosity 3.
 timing=main
 requires_groovy_code
-oracle=Flying, haste, protection from white. {5}{R}{R}: Monstrosity 3. When Stormbreath Dragon becomes monstrous, it deals damage to each opponent equal to the number of cards in that player's hand.
+oracle=Flying, haste, protection from white\n{5}{R}{R}: Monstrosity 3.\nWhen Stormbreath Dragon becomes monstrous, it deals damage to each opponent equal to the number of cards in that player's hand.

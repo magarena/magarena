@@ -1,6 +1,6 @@
 name=Silhouette
-image=http://mtgimage.com/card/silhouette.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lg/77.jpg
+value=1.925
 rarity=U
 type=Instant
 cost={1}{U}

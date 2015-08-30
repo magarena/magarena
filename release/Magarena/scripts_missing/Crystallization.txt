@@ -1,6 +1,6 @@
 name=Crystallization
-image=http://mtgimage.com/card/crystallization.jpg
-value=2.500
+image=http://magiccards.info/scans/en/arb/144.jpg
+value=3.442
 rarity=C
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={G/U}{W}
 ability=Enchant creature;\
         Enchanted creature can't attack or block.;\
         When enchanted creature becomes the target of a spell or ability, exile that creature.
-timing=main
-oracle=Enchant creature. Enchanted creature can't attack or block. When enchanted creature becomes the target of a spell or ability, exile that creature.
+timing=aura
+oracle=Enchant creature\nEnchanted creature can't attack or block.\nWhen enchanted creature becomes the target of a spell or ability, exile that creature.

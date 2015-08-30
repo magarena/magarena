@@ -1,6 +1,6 @@
 name=Chameleon Spirit
-image=http://mtgimage.com/card/chameleon%20spirit.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/65.jpg
+value=3.700
 rarity=U
 type=Creature
 subtype=Illusion,Spirit
@@ -9,4 +9,4 @@ pt=*/*
 ability=As SN enters the battlefield, choose a color.;\
         SN's power and toughness are each equal to the number of permanents of the chosen color your opponents control.
 timing=main
-oracle=As Chameleon Spirit enters the battlefield, choose a color. Chameleon Spirit's power and toughness are each equal to the number of permanents of the chosen color your opponents control.
+oracle=As Chameleon Spirit enters the battlefield, choose a color.\nChameleon Spirit's power and toughness are each equal to the number of permanents of the chosen color your opponents control.

@@ -1,6 +1,6 @@
 name=Grappling Hook
-image=http://mtgimage.com/card/grappling%20hook.jpg
-value=2.500
+image=http://magiccards.info/scans/en/zen/203.jpg
+value=3.507
 rarity=R
 type=Artifact
 subtype=Equipment
@@ -8,5 +8,5 @@ cost={4}
 ability=Equipped creature has double strike.;\
         Whenever equipped creature attacks, you may have target creature block it this turn if able.;\
         Equip {4}
-timing=main
-oracle=Equipped creature has double strike. Whenever equipped creature attacks, you may have target creature block it this turn if able. Equip {4}
+timing=equipment
+oracle=Equipped creature has double strike.\nWhenever equipped creature attacks, you may have target creature block it this turn if able.\nEquip {4}

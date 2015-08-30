@@ -1,5 +1,5 @@
 name=Scalding Devil
-image=http://mtgimage.com/card/scalding%20devil.jpg
+image=http://magiccards.info/scans/en/avr/155.jpg
 value=1.897
 rarity=C
 type=Creature

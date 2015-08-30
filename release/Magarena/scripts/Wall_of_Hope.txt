@@ -1,5 +1,5 @@
 name=Wall of Hope
-image=http://mtgimage.com/card/wall%20of%20hope.jpg
+image=http://magiccards.info/scans/en/le/24.jpg
 value=3.663
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=0/3
 ability=defender
 timing=main
 requires_groovy_code
-oracle=Defender. Whenever Wall of Hope is dealt damage, you gain that much life.
+oracle=Defender\nWhenever Wall of Hope is dealt damage, you gain that much life.

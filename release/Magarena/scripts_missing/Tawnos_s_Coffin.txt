@@ -1,10 +1,10 @@
 name=Tawnos's Coffin
-image=http://mtgimage.com/card/tawnos%27s%20coffin.jpg
-value=2.500
+image=http://magiccards.info/scans/en/med/169.jpg
+value=3.897
 rarity=R
 type=Artifact
 cost={4}
 ability=You may choose not to untap SN during your untap step.;\
         {3}, {T}: Exile target creature and all Auras attached to it. Note the number and kind of counters that were on that creature. When SN leaves the battlefield or becomes untapped, return that exiled card to the battlefield under its owner's control tapped with the noted number and kind of counters on it. If you do, return the other exiled cards to the battlefield under their owner's control attached to that permanent.
-timing=main
-oracle=You may choose not to untap Tawnos's Coffin during your untap step. {3}, {T}: Exile target creature and all Auras attached to it. Note the number and kind of counters that were on that creature. When Tawnos's Coffin leaves the battlefield or becomes untapped, return that exiled card to the battlefield under its owner's control tapped with the noted number and kind of counters on it. If you do, return the other exiled cards to the battlefield under their owner's control attached to that permanent.
+timing=artifact
+oracle=You may choose not to untap Tawnos's Coffin during your untap step.\n{3}, {T}: Exile target creature and all Auras attached to it. Note the number and kind of counters that were on that creature. When Tawnos's Coffin leaves the battlefield or becomes untapped, return that exiled card to the battlefield under its owner's control tapped with the noted number and kind of counters on it. If you do, return the other exiled cards to the battlefield under their owner's control attached to that permanent.

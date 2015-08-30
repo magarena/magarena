@@ -1,10 +1,10 @@
 name=Mystic Barrier
-image=http://mtgimage.com/card/mystic%20barrier.jpg
-value=2.500
+image=http://magiccards.info/scans/en/c13/18.jpg
+value=3.615
 rarity=R
 type=Enchantment
 cost={4}{W}
 ability=When SN enters the battlefield or at the beginning of your upkeep, choose left or right.;\
         Each player may attack only the opponent seated nearest him or her in the last chosen direction and planeswalkers controlled by that player.
-timing=main
-oracle=When Mystic Barrier enters the battlefield or at the beginning of your upkeep, choose left or right. Each player may attack only the opponent seated nearest him or her in the last chosen direction and planeswalkers controlled by that player.
+timing=enchantment
+oracle=When Mystic Barrier enters the battlefield or at the beginning of your upkeep, choose left or right.\nEach player may attack only the opponent seated nearest him or her in the last chosen direction and planeswalkers controlled by that player.

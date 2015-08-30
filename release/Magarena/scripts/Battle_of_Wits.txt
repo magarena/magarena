@@ -1,5 +1,5 @@
 name=Battle of Wits
-image=http://mtgimage.com/card/battle%20of%20wits.jpg
+image=http://magiccards.info/scans/en/m13/44.jpg
 value=3.210
 rarity=R
 type=Enchantment

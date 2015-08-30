@@ -1,5 +1,5 @@
 name=Angelic Chorus
-image=http://mtgimage.com/card/angelic%20chorus.jpg
+image=http://magiccards.info/scans/en/10e/4.jpg
 value=4.069
 rarity=R
 type=Enchantment

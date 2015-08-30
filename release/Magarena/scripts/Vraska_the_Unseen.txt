@@ -1,11 +1,11 @@
 name=Vraska the Unseen
-image=http://mtgimage.com/card/vraska%20the%20unseen.jpg
+image=http://magiccards.info/scans/en/ddm/42.jpg
 value=3.872
 rarity=M
 type=Planeswalker
 subtype=Vraska
 cost={3}{B}{G}
-ability=loyalty 5
+loyalty=5
 timing=main
 requires_groovy_code
-oracle=+1: Until your next turn, whenever a creature deals combat damage to Vraska the Unseen, destroy that creature. -3: Destroy target nonland permanent. -7: Put three 1/1 black Assassin creature tokens onto the battlefield with "Whenever this creature deals combat damage to a player, that player loses the game."
+oracle=+1: Until your next turn, whenever a creature deals combat damage to Vraska the Unseen, destroy that creature.\n−3: Destroy target nonland permanent.\n−7: Put three 1/1 black Assassin creature tokens onto the battlefield with "Whenever this creature deals combat damage to a player, that player loses the game."

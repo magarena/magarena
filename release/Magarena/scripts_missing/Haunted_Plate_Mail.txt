@@ -1,6 +1,6 @@
 name=Haunted Plate Mail
-image=http://mtgimage.com/card/haunted%20plate%20mail.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/218.jpg
+value=3.400
 rarity=R
 type=Artifact
 subtype=Equipment
@@ -8,5 +8,5 @@ cost={4}
 ability=Equipped creature gets +4/+4.;\
         {0}: Until end of turn, SN becomes a 4/4 Spirit artifact creature that's no longer an Equipment. Activate this ability only if you control no creatures.;\
         Equip {4}
-timing=main
-oracle=Equipped creature gets +4/+4. {0}: Until end of turn, Haunted Plate Mail becomes a 4/4 Spirit artifact creature that's no longer an Equipment. Activate this ability only if you control no creatures. Equip {4}
+timing=equipment
+oracle=Equipped creature gets +4/+4.\n{0}: Until end of turn, Haunted Plate Mail becomes a 4/4 Spirit artifact creature that's no longer an Equipment. Activate this ability only if you control no creatures.\nEquip {4}

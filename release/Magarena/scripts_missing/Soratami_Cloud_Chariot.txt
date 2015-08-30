@@ -1,10 +1,10 @@
 name=Soratami Cloud Chariot
-image=http://mtgimage.com/card/soratami%20cloud%20chariot.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sok/160.jpg
+value=2.887
 rarity=U
 type=Artifact
 cost={5}
 ability={2}: Target creature you control gains flying until end of turn.;\
         {2}: Prevent all combat damage that would be dealt to and dealt by target creature you control this turn.
-timing=main
-oracle={2}: Target creature you control gains flying until end of turn. {2}: Prevent all combat damage that would be dealt to and dealt by target creature you control this turn.
+timing=artifact
+oracle={2}: Target creature you control gains flying until end of turn.\n{2}: Prevent all combat damage that would be dealt to and dealt by target creature you control this turn.

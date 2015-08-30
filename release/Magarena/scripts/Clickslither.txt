@@ -1,5 +1,5 @@
 name=Clickslither
-image=http://mtgimage.com/card/clickslither.jpg
+image=http://magiccards.info/scans/en/vma/156.jpg
 value=4.000
 rarity=R
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{R}{R}{R}
 pt=3/3
 ability=haste;Sacrifice a Goblin:SN gets +2/+2 and gains trample until end of turn.
 timing=main
-oracle=Haste. Sacrifice a Goblin: Clickslither gets +2/+2 and gains trample until end of turn.
+oracle=Haste\nSacrifice a Goblin: Clickslither gets +2/+2 and gains trample until end of turn.

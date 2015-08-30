@@ -1,6 +1,6 @@
 name=Sidisi, Brood Tyrant
-image=http://mtgimage.com/card/sidisi%2C%20brood%20tyrant.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/199.jpg
+value=3.375
 rarity=M
 type=Legendary,Creature
 subtype=Naga,Shaman
@@ -9,4 +9,4 @@ pt=3/3
 ability=Whenever SN enters the battlefield or attacks, put the top three cards of your library into your graveyard.;\
         Whenever one or more creature cards are put into your graveyard from your library, put a 2/2 black Zombie creature token onto the battlefield.
 timing=main
-oracle=Whenever Sidisi, Brood Tyrant enters the battlefield or attacks, put the top three cards of your library into your graveyard. Whenever one or more creature cards are put into your graveyard from your library, put a 2/2 black Zombie creature token onto the battlefield.
+oracle=Whenever Sidisi, Brood Tyrant enters the battlefield or attacks, put the top three cards of your library into your graveyard.\nWhenever one or more creature cards are put into your graveyard from your library, put a 2/2 black Zombie creature token onto the battlefield.

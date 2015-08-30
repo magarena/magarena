@@ -1,12 +1,12 @@
 name=Bog Serpent
-image=http://mtgimage.com/card/bog%20serpent.jpg
+image=http://magiccards.info/scans/en/pc/84.jpg
 value=1.123
 rarity=C
 type=Creature
 subtype=Serpent
 cost={5}{B}
 pt=5/5
-ability=SN can't attack unless defending player controls a Swamp.
+ability=SN can't attack unless defending player controls a Swamp.;\
+        When you control no Swamps, sacrifice SN.
 timing=main
-requires_groovy_code
-oracle=Bog Serpent can't attack unless defending player controls a Swamp. When you control no Swamps, sacrifice Bog Serpent.
+oracle=Bog Serpent can't attack unless defending player controls a Swamp.\nWhen you control no Swamps, sacrifice Bog Serpent.

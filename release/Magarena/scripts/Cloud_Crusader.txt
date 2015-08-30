@@ -1,5 +1,5 @@
 name=Cloud Crusader
-image=http://mtgimage.com/card/cloud%20crusader.jpg
+image=http://magiccards.info/scans/en/m11/10.jpg
 value=2.895
 ability=flying;first strike
 rarity=C
@@ -8,4 +8,4 @@ subtype=Human,Knight
 cost={2}{W}{W}
 pt=2/3
 timing=main
-oracle=Flying. First strike
+oracle=Flying\nFirst strike

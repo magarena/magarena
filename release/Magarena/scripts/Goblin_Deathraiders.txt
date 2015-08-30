@@ -1,5 +1,5 @@
 name=Goblin Deathraiders
-image=http://mtgimage.com/card/goblin%20deathraiders.jpg
+image=http://magiccards.info/scans/en/ddn/6.jpg
 value=3.150
 rarity=C
 type=Creature

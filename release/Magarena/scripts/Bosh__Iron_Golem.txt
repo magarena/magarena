@@ -1,5 +1,5 @@
 name=Bosh, Iron Golem
-image=http://mtgimage.com/card/bosh%2C%20iron%20golem.jpg
+image=http://magiccards.info/scans/en/c14/230.jpg
 value=4.228
 rarity=R
 type=Legendary,Artifact,Creature
@@ -9,4 +9,4 @@ pt=6/7
 ability=trample
 timing=main
 requires_groovy_code
-oracle=Trample. {3}{R}, Sacrifice an artifact: Bosh, Iron Golem deals damage equal to the sacrificed artifact's converted mana cost to target creature or player.
+oracle=Trample\n{3}{R}, Sacrifice an artifact: Bosh, Iron Golem deals damage equal to the sacrificed artifact's converted mana cost to target creature or player.

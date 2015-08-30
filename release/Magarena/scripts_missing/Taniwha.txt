@@ -1,6 +1,6 @@
 name=Taniwha
-image=http://mtgimage.com/card/taniwha.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/95.jpg
+value=3.083
 rarity=R
 type=Legendary,Creature
 subtype=Serpent
@@ -10,4 +10,4 @@ ability=Trample;\
         Phasing;\
         At the beginning of your upkeep, all lands you control phase out.
 timing=main
-oracle=Trample. Phasing. At the beginning of your upkeep, all lands you control phase out.
+oracle=Trample\nPhasing\nAt the beginning of your upkeep, all lands you control phase out.

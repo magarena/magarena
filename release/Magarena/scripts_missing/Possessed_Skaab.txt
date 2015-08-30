@@ -1,0 +1,12 @@
+name=Possessed Skaab
+image=http://magiccards.info/scans/en/ori/215.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Zombie
+cost={3}{U}{B}
+pt=3/2
+ability=When SN enters the battlefield, return target instant, sorcery, or creature card from your graveyard to your hand.;\
+        If SN would die, exile it instead.
+timing=main
+oracle=When Possessed Skaab enters the battlefield, return target instant, sorcery, or creature card from your graveyard to your hand.\nIf Possessed Skaab would die, exile it instead.

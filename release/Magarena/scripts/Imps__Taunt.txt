@@ -1,5 +1,5 @@
 name=Imps' Taunt
-image=http://mtgimage.com/card/imps%27%20taunt.jpg
+image=http://magiccards.info/scans/en/tp/32.jpg
 value=2.432
 removal=1
 rarity=U
@@ -8,4 +8,4 @@ cost={1}{B}
 timing=mustattack
 ability=buyback {3}
 requires_groovy_code
-oracle=Buyback {3}. Target creature attacks this turn if able.
+oracle=Buyback {3}\nTarget creature attacks this turn if able.

@@ -1,5 +1,5 @@
 name=Genju of the Spires
-image=http://mtgimage.com/card/genju%20of%20the%20spires.jpg
+image=http://magiccards.info/scans/en/bok/105.jpg
 value=4.225
 rarity=U
 type=Enchantment
@@ -8,4 +8,4 @@ cost={R}
 enchant=pump,pos mountain
 timing=enchantment
 requires_groovy_code
-oracle=Enchant Mountain. {2}: Enchanted Mountain becomes a 6/1 red Spirit creature until end of turn. It's still a land. When enchanted Mountain is put into a graveyard, you may return Genju of the Spires from your graveyard to your hand.
+oracle=Enchant Mountain\n{2}: Enchanted Mountain becomes a 6/1 red Spirit creature until end of turn. It's still a land.\nWhen enchanted Mountain is put into a graveyard, you may return Genju of the Spires from your graveyard to your hand.

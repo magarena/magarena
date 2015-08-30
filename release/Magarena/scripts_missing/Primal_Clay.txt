@@ -1,11 +1,11 @@
 name=Primal Clay
-image=http://mtgimage.com/card/primal%20clay.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m13/210.jpg
+value=3.545
 rarity=U
 type=Artifact,Creature
 subtype=Shapeshifter
 cost={4}
 pt=*/*
 ability=As SN enters the battlefield, it becomes your choice of a 3/3 artifact creature, a 2/2 artifact creature with flying, or a 1/6 Wall artifact creature with defender in addition to its other types.
-timing=main
+timing=artifact
 oracle=As Primal Clay enters the battlefield, it becomes your choice of a 3/3 artifact creature, a 2/2 artifact creature with flying, or a 1/6 Wall artifact creature with defender in addition to its other types.

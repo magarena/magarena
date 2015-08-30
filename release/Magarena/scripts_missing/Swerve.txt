@@ -1,6 +1,6 @@
 name=Swerve
-image=http://mtgimage.com/card/swerve.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ala/200.jpg
+value=4.067
 rarity=U
 type=Instant
 cost={U}{R}

@@ -14,7 +14,7 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicLoseGameAction(event.getPlayer().getOpponent()));
+            game.doAction(new LoseGameAction(event.getPlayer().getOpponent()));
         }
     }
 ]

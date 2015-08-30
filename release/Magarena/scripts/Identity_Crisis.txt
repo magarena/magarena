@@ -1,5 +1,5 @@
 name=Identity Crisis
-image=http://mtgimage.com/card/identity%20crisis.jpg
+image=http://magiccards.info/scans/en/arb/81.jpg
 value=3.276
 rarity=R
 type=Sorcery

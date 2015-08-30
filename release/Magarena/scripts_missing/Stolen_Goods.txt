@@ -1,6 +1,6 @@
 name=Stolen Goods
-image=http://mtgimage.com/card/stolen%20goods.jpg
-value=2.500
+image=http://magiccards.info/scans/en/avr/78.jpg
+value=3.296
 rarity=R
 type=Sorcery
 cost={3}{U}

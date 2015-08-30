@@ -1,5 +1,5 @@
 name=Minion of Tevesh Szat
-image=http://mtgimage.com/card/minion%20of%20tevesh%20szat.jpg
+image=http://magiccards.info/scans/en/me4/91.jpg
 value=2.560
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability={T}: Target creature gets +3/-2 until end of turn.
 timing=main
 requires_groovy_code
-oracle=At the beginning of your upkeep, Minion of Tevesh Szat deals 2 damage to you unless you pay {B}{B}. {T}: Target creature gets +3/-2 until end of turn.
+oracle=At the beginning of your upkeep, Minion of Tevesh Szat deals 2 damage to you unless you pay {B}{B}.\n{T}: Target creature gets +3/-2 until end of turn.

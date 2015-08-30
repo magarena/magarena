@@ -1,6 +1,6 @@
 name=Stinkdrinker Bandit
-image=http://mtgimage.com/card/stinkdrinker%20bandit.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mt/80.jpg
+value=3.300
 rarity=U
 type=Creature
 subtype=Goblin,Rogue
@@ -9,4 +9,4 @@ pt=2/1
 ability=Prowl {1}{B};\
         Whenever a Rogue you control attacks and isn't blocked, it gets +2/+1 until end of turn.
 timing=main
-oracle=Prowl {1}{B}. Whenever a Rogue you control attacks and isn't blocked, it gets +2/+1 until end of turn.
+oracle=Prowl {1}{B}\nWhenever a Rogue you control attacks and isn't blocked, it gets +2/+1 until end of turn.

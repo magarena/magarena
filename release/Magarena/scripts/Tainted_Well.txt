@@ -1,5 +1,5 @@
 name=Tainted Well
-image=http://mtgimage.com/card/tainted%20well.jpg
+image=http://magiccards.info/scans/en/in/126.jpg
 value=3.111
 rarity=C
 type=Enchantment
@@ -9,4 +9,4 @@ ability=When SN enters the battlefield, draw a card.
 timing=main
 enchant=default,land
 requires_groovy_code=Evil Presence
-oracle=Enchant land. When Tainted Well enters the battlefield, draw a card. Enchanted land is a Swamp.
+oracle=Enchant land\nWhen Tainted Well enters the battlefield, draw a card.\nEnchanted land is a Swamp.

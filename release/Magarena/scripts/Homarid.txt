@@ -1,5 +1,5 @@
 name=Homarid
-image=http://mtgimage.com/card/homarid.jpg
+image=http://magiccards.info/scans/en/fe/38.jpg
 value=2.571
 rarity=C
 type=Creature
@@ -12,4 +12,4 @@ ability=SN enters the battlefield with a tide counter on it.;\
         As long as there are exactly three tide counters on SN, it gets +1/+1.
 timing=main
 requires_groovy_code
-oracle=Homarid enters the battlefield with a tide counter on it. At the beginning of your upkeep, put a tide counter on Homarid. As long as there is exactly one tide counter on Homarid, it gets -1/-1. As long as there are exactly three tide counters on Homarid, it gets +1/+1. Whenever there are four tide counters on Homarid, remove all tide counters from it.
+oracle=Homarid enters the battlefield with a tide counter on it.\nAt the beginning of your upkeep, put a tide counter on Homarid.\nAs long as there is exactly one tide counter on Homarid, it gets -1/-1.\nAs long as there are exactly three tide counters on Homarid, it gets +1/+1.\nWhenever there are four tide counters on Homarid, remove all tide counters from it.

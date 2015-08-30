@@ -1,0 +1,11 @@
+name=Kitsune Palliator
+image=http://magiccards.info/scans/en/bok/14.jpg
+value=2.125
+rarity=U
+type=Creature
+subtype=Fox,Cleric
+cost={2}{W}
+pt=0/2
+timing=main
+requires_groovy_code
+oracle={T}: Prevent the next 1 damage that would be dealt to each creature and each player this turn.

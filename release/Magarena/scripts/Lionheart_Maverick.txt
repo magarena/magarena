@@ -1,5 +1,5 @@
 name=Lionheart Maverick
-image=http://mtgimage.com/card/lionheart%20maverick.jpg
+image=http://magiccards.info/scans/en/ddg/3.jpg
 value=3.204
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={W}
 pt=1/1
 ability=vigilance;{4}{W}: SN gets +1/+2 until end of turn.
 timing=main
-oracle=Vigilance. {4}{W}: Lionheart Maverick gets +1/+2 until end of turn.
+oracle=Vigilance\n{4}{W}: Lionheart Maverick gets +1/+2 until end of turn.

@@ -1,5 +1,6 @@
 package magic.data;
 
+import magic.utility.DeckUtils;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.EnumSet;

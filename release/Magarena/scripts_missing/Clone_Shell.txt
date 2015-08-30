@@ -1,6 +1,6 @@
 name=Clone Shell
-image=http://mtgimage.com/card/clone%20shell.jpg
-value=2.500
+image=http://magiccards.info/scans/en/som/143.jpg
+value=2.988
 rarity=U
 type=Artifact,Creature
 subtype=Shapeshifter
@@ -8,5 +8,5 @@ cost={5}
 pt=2/2
 ability=When SN enters the battlefield, look at the top four cards of your library, exile one face down, then put the rest on the bottom of your library in any order.;\
         When SN dies, turn the exiled card face up. If it's a creature card, put it onto the battlefield under your control.
-timing=main
-oracle=Imprint — When Clone Shell enters the battlefield, look at the top four cards of your library, exile one face down, then put the rest on the bottom of your library in any order. When Clone Shell dies, turn the exiled card face up. If it's a creature card, put it onto the battlefield under your control.
+timing=artifact
+oracle=Imprint — When Clone Shell enters the battlefield, look at the top four cards of your library, exile one face down, then put the rest on the bottom of your library in any order.\nWhen Clone Shell dies, turn the exiled card face up. If it's a creature card, put it onto the battlefield under your control.

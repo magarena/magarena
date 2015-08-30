@@ -1,13 +1,13 @@
 name=Azamuki, Treachery Incarnate
-image=http://mtgimage.com/card/azamuki%2C%20treachery%20incarnate.jpg
+image=http://magiccards.info/scans/en/bok/99b.jpg
 value=3.241
 rarity=U
 type=Legendary,Creature
 subtype=Spirit
 cost={1}{R}{R}
 pt=5/2
+ability=Remove a ki counter from SN: Gain control of target creature until end of turn.
 flip=Cunning Bandit
 timing=main
 hidden
-requires_groovy_code
 oracle=Remove a ki counter from Azamuki, Treachery Incarnate: Gain control of target creature until end of turn.

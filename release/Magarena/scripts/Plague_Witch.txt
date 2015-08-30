@@ -1,5 +1,5 @@
 name=Plague Witch
-image=http://mtgimage.com/card/plague%20witch.jpg
+image=http://magiccards.info/scans/en/ne/66.jpg
 value=2.636
 rarity=C
 type=Creature

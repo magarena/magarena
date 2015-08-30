@@ -1,5 +1,5 @@
 name=Knighthood
-image=http://mtgimage.com/card/knighthood.jpg
+image=http://magiccards.info/scans/en/7e/25.jpg
 value=4.011
 rarity=U
 type=Enchantment

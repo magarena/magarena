@@ -1,5 +1,5 @@
 name=Eldrazi Monument
-image=http://mtgimage.com/card/eldrazi%20monument.jpg
+image=http://magiccards.info/scans/en/zen/199.jpg
 value=4.065
 rarity=M
 type=Artifact
@@ -9,4 +9,4 @@ ability=creatures you control get +1/+1;\
 static=player
 timing=main
 requires_groovy_code
-oracle=Creatures you control get +1/+1 and have flying and indestructible. At the beginning of your upkeep, sacrifice a creature. If you can't, sacrifice Eldrazi Monument.
+oracle=Creatures you control get +1/+1 and have flying and indestructible.\nAt the beginning of your upkeep, sacrifice a creature. If you can't, sacrifice Eldrazi Monument.

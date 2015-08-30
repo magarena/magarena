@@ -1,5 +1,5 @@
 name=Nimbus Wings
-image=http://mtgimage.com/card/nimbus%20wings.jpg
+image=http://magiccards.info/scans/en/zen/28.jpg
 value=2.951
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={1}{W}
 ability=Enchanted creature gets +1/+2 and has flying.
 timing=aura
 enchant=flying,pos creature
-oracle=Enchant creature. Enchanted creature gets +1/+2 and has flying.
+oracle=Enchant creature\nEnchanted creature gets +1/+2 and has flying.

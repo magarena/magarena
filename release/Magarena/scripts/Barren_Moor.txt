@@ -1,5 +1,5 @@
 name=Barren Moor
-image=http://mtgimage.com/card/barren%20moor.jpg
+image=http://magiccards.info/scans/en/c14/284.jpg
 value=3.500
 rarity=C
 type=Land
@@ -8,4 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {B} to your mana pool.;\
         cycling {B}
 timing=tapland
-oracle=Barren Moor enters the battlefield tapped. {T}: Add {B} to your mana pool. Cycling {B}
+oracle=Barren Moor enters the battlefield tapped.\n{T}: Add {B} to your mana pool.\nCycling {B}

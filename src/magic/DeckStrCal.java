@@ -1,16 +1,18 @@
 package magic;
 
+import java.io.File;
+
 import magic.headless.HeadlessGameController;
-import magic.ai.MagicAI;
 import magic.ai.MagicAIImpl;
-import magic.data.DeckUtils;
+import magic.utility.DeckUtils;
 import magic.data.DuelConfig;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
-import magic.model.MagicGameLog;
 import magic.model.MagicRandom;
-import java.io.File;
-import magic.data.CardDefinitions;
+import magic.model.MagicDeckProfile;
+import magic.model.DuelPlayerConfig;
+import magic.model.player.AiProfile;
+import magic.data.DeckGenerators;
 import magic.exception.handler.ConsoleExceptionHandler;
 import magic.utility.ProgressReporter;
 import magic.utility.MagicSystem;
@@ -19,14 +21,13 @@ public class DeckStrCal {
 
     private static int games = 10;
     private static int repeat = 1;
-    private static int str1 = 6;
-    private static int str2 = 6;
     private static int life = 20;
     private static int seed;
-    private static String deck1 = "";
-    private static String deck2 = "";
-    private static MagicAIImpl ai1 = MagicAIImpl.MMAB;
-    private static MagicAIImpl ai2 = MagicAIImpl.MMAB;
+    private static String profile = "**";
+    private static String[] deck = {"", ""};
+    private static MagicAIImpl[] ai = {MagicAIImpl.MMAB, MagicAIImpl.MMAB};
+    private static int[] str = {6, 6};
+    private static boolean duplicate = false;
 
     // Command line parsing.
     private static boolean parseArguments(final String[] args) {
@@ -43,32 +44,34 @@ public class DeckStrCal {
                 }
             } else if ("--str1".equals(curr)) {
                 try { //parse CLI option
-                    str1 = Integer.parseInt(next);
+                    str[0] = Integer.parseInt(next);
                 } catch (final NumberFormatException ex) {
                     System.err.println("ERROR! AI strength not an integer");
                     validArgs = false;
                 }
             } else if ("--str2".equals(curr)) {
                 try { //parse CLI option
-                    str2 = Integer.parseInt(next);
+                    str[1] = Integer.parseInt(next);
                 } catch (final NumberFormatException ex) {
                     System.err.println("ERROR! AI strength not an integer");
                     validArgs = false;
                 }
             } else if ("--deck1".equals(curr)) {
-                deck1 = next;
+                deck[0] = next;
             } else if ("--deck2".equals(curr)) {
-                deck2 = next;
+                deck[1] = next;
+            } else if ("--profile".equals(curr)) {
+                profile = next;
             } else if ("--ai1".equals(curr)) {
                 try { //parse CLI option
-                    ai1 = MagicAIImpl.valueOf(next);
+                    ai[0] = MagicAIImpl.valueOf(next);
                 } catch (final IllegalArgumentException ex) {
                     System.err.println("Error: " + next + " is not valid AI");
                     validArgs = false;
                 }
             } else if ("--ai2".equals(curr)) {
                 try { //parse CLI option
-                    ai2 = MagicAIImpl.valueOf(next);
+                    ai[1] = MagicAIImpl.valueOf(next);
                 } catch (final IllegalArgumentException ex) {
                     System.err.println("Error: " + next + " is not valid AI");
                     validArgs = false;
@@ -94,24 +97,21 @@ public class DeckStrCal {
                     System.err.println("ERROR! seed is not an integer");
                     validArgs = false;
                 }
+            } else if ("--duplicate".equals(curr)) {
+                duplicate = true;
             } else {
                 System.err.println("Error: unknown option " + curr);
                 validArgs = false;
             }
         }
 
-        if (deck1.length() == 0) {
-            System.err.println("Using player profile to generate deck 1");
-        } else if (!(new File(deck1)).exists()) {
-            System.err.println("Error: file " + deck1 + " does not exist");
-            validArgs = false;
-        }
-
-        if (deck2.length() == 0) {
-            System.err.println("Using player profile to generate deck 2");
-        } else if (!(new File(deck2)).exists()) {
-            System.err.println("Error: file " + deck2 + " does not exist");
-            validArgs = false;
+        for (int i = 0; i < 2; i++) {
+            if (deck[i].length() == 0) {
+                System.err.println("Using profile " + profile + " to generate deck " + (i+1));
+            } else if (!(new File(deck[i])).exists()) {
+                System.err.println("Error: file " + deck[i] + " does not exist");
+                validArgs = false;
+            }
         }
 
         return validArgs;
@@ -121,7 +121,7 @@ public class DeckStrCal {
         // Set the random seed
         if (seed != 0) {
             MagicRandom.setRNGState(seed);
-            seed = MagicRandom.nextRNGInt(Integer.MAX_VALUE) + 1;
+            seed = MagicRandom.nextRNGInt() + 1;
         }
 
         // Set number of games.
@@ -132,20 +132,24 @@ public class DeckStrCal {
         // Set difficulty.
         final MagicDuel testDuel=new MagicDuel(config);
         testDuel.initialize();
-        testDuel.setDifficulty(0, str1);
-        testDuel.setDifficulty(1, str2);
-
-        // Set the AI
-        testDuel.setAIs(new MagicAI[]{ai1.getAI(), ai2.getAI()});
-        testDuel.getPlayer(0).setArtificial(true);
-        testDuel.getPlayer(1).setArtificial(true);
+        
+        // Create players 
+        final DuelPlayerConfig[] players = new DuelPlayerConfig[2];
+        for (int i = 0; i < 2; i++) {
+            players[i] = new DuelPlayerConfig(
+                AiProfile.create(ai[i], str[i]),
+                MagicDeckProfile.getDeckProfile(profile)
+            );
+        }
+        testDuel.setPlayers(players);
 
         // Set the deck.
-        if (deck1.length() > 0) {
-            DeckUtils.loadDeck(deck1, testDuel.getPlayer(0));
-        }
-        if (deck2.length() > 0) {
-            DeckUtils.loadDeck(deck2, testDuel.getPlayer(1));
+        for (int i = 0; i < 2; i++) {
+            if (deck[i].length() > 0) {
+                DeckUtils.loadAndSetPlayerDeck(deck[i], players[i]);
+            } else {
+                DeckGenerators.setRandomDeck(players[i]);
+            }
         }
 
         return testDuel;
@@ -198,12 +202,12 @@ public class DeckStrCal {
             controller.runGame();
             if (testDuel.getGamesPlayed() > played) {
                 System.err.println(
-                        deck1 + "\t" +
-                        ai1 + "\t" +
-                        str1 + "\t" +
-                        deck2 + "\t" +
-                        ai2 + "\t" +
-                        str2 + "\t" +
+                        deck[0] + "\t" +
+                        ai[0] + "\t" +
+                        str[0] + "\t" +
+                        deck[1] + "\t" +
+                        ai[1] + "\t" +
+                        str[1] + "\t" +
                         testDuel.getGamesTotal() + "\t" +
                         testDuel.getGamesWon() + "\t" +
                         (testDuel.getGamesPlayed() - testDuel.getGamesWon())
@@ -212,12 +216,12 @@ public class DeckStrCal {
             }
         }
         System.out.println(
-                deck1 + "\t" +
-                ai1 + "\t" +
-                str1 + "\t" +
-                deck2 + "\t" +
-                ai2 + "\t" +
-                str2 + "\t" +
+                deck[0] + "\t" +
+                ai[0] + "\t" +
+                str[0] + "\t" +
+                deck[1] + "\t" +
+                ai[1] + "\t" +
+                str[1] + "\t" +
                 testDuel.getGamesTotal() + "\t" +
                 testDuel.getGamesWon() + "\t" +
                 (testDuel.getGamesPlayed() - testDuel.getGamesWon())

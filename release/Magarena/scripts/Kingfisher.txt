@@ -1,5 +1,5 @@
 name=Kingfisher
-image=http://mtgimage.com/card/kingfisher.jpg
+image=http://magiccards.info/scans/en/ud/36.jpg
 value=3.030
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=flying;\
         When SN dies, draw a card.
 timing=main
-oracle=Flying. When Kingfisher dies, draw a card.
+oracle=Flying\nWhen Kingfisher dies, draw a card.

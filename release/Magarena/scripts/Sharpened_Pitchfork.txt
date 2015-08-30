@@ -1,5 +1,5 @@
 name=Sharpened Pitchfork
-image=http://mtgimage.com/card/sharpened%20pitchfork.jpg
+image=http://magiccards.info/scans/en/isd/232.jpg
 value=3.176
 rarity=U
 type=Artifact
@@ -9,4 +9,4 @@ ability=Equipped creature has first strike.;\
         Equip {1}
 timing=equipment
 requires_groovy_code
-oracle=Equipped creature has first strike. As long as equipped creature is a Human, it gets +1/+1. Equip {1}
+oracle=Equipped creature has first strike.\nAs long as equipped creature is a Human, it gets +1/+1.\nEquip {1}

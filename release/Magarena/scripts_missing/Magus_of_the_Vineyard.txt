@@ -1,6 +1,6 @@
 name=Magus of the Vineyard
-image=http://mtgimage.com/card/magus%20of%20the%20vineyard.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cmd/166.jpg
+value=3.766
 rarity=R
 type=Creature
 subtype=Human,Wizard

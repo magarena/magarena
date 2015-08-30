@@ -1,0 +1,11 @@
+name=Student of Ojutai
+image=http://magiccards.info/scans/en/dtk/40.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Monk
+cost={3}{W}
+pt=2/4
+ability=Whenever you cast a noncreature spell, you gain 2 life.
+timing=main
+oracle=Whenever you cast a noncreature spell, you gain 2 life.

@@ -1,5 +1,5 @@
 name=Burst of Strength
-image=http://mtgimage.com/card/burst%20of%20strength.jpg
+image=http://magiccards.info/scans/en/gtc/115.jpg
 value=2.947
 rarity=C
 type=Instant

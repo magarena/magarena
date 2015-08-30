@@ -1,5 +1,5 @@
 name=Kami of Ancient Law
-image=http://mtgimage.com/card/kami%20of%20ancient%20law.jpg
+image=http://magiccards.info/scans/en/chk/21.jpg
 value=4.317
 rarity=C
 type=Creature

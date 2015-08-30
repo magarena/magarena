@@ -1,5 +1,5 @@
 name=Bone Shredder
-image=http://mtgimage.com/card/bone%20shredder.jpg
+image=http://magiccards.info/scans/en/pvc/5.jpg
 value=3.625
 removal=1
 rarity=U
@@ -11,4 +11,4 @@ ability=flying;\
         echo {2}{B};\
         When SN enters the battlefield, destroy target nonartifact, nonblack creature.
 timing=main
-oracle=Flying. Echo {2}{B}. When Bone Shredder enters the battlefield, destroy target nonartifact, nonblack creature.
+oracle=Flying\nEcho {2}{B}\nWhen Bone Shredder enters the battlefield, destroy target nonartifact, nonblack creature.

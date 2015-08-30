@@ -1,5 +1,5 @@
 name=Fleeting Image
-image=http://mtgimage.com/card/fleeting%20image.jpg
+image=http://magiccards.info/scans/en/9e/78.jpg
 value=3.139
 rarity=R
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{U}
 pt=2/1
 ability=flying;{1}{U}: Return SN to its owner's hand.
 timing=main
-oracle=Flying. {1}{U}: Return Fleeting Image to its owner's hand.
+oracle=Flying\n{1}{U}: Return Fleeting Image to its owner's hand.

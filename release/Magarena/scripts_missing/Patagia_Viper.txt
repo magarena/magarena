@@ -1,6 +1,6 @@
 name=Patagia Viper
-image=http://mtgimage.com/card/patagia%20viper.jpg
-value=2.500
+image=http://magiccards.info/scans/en/di/89.jpg
+value=3.432
 rarity=U
 type=Creature
 subtype=Snake
@@ -10,4 +10,4 @@ ability=Flying;\
         When SN enters the battlefield, put two 1/1 green and blue Snake creature tokens onto the battlefield.;\
         When SN enters the battlefield, sacrifice it unless {U} was spent to cast it.
 timing=main
-oracle=Flying. When Patagia Viper enters the battlefield, put two 1/1 green and blue Snake creature tokens onto the battlefield. When Patagia Viper enters the battlefield, sacrifice it unless {U} was spent to cast it.
+oracle=Flying\nWhen Patagia Viper enters the battlefield, put two 1/1 green and blue Snake creature tokens onto the battlefield.\nWhen Patagia Viper enters the battlefield, sacrifice it unless {U} was spent to cast it.

@@ -1,6 +1,6 @@
 name=Azorius Herald
-image=http://mtgimage.com/card/azorius%20herald.jpg
-value=2.500
+image=http://magiccards.info/scans/en/c13/6.jpg
+value=3.846
 rarity=U
 type=Creature
 subtype=Spirit
@@ -10,4 +10,4 @@ ability=SN can't be blocked.;\
         When SN enters the battlefield, you gain 4 life.;\
         When SN enters the battlefield, sacrifice it unless {U} was spent to cast it.
 timing=main
-oracle=Azorius Herald can't be blocked. When Azorius Herald enters the battlefield, you gain 4 life. When Azorius Herald enters the battlefield, sacrifice it unless {U} was spent to cast it.
+oracle=Azorius Herald can't be blocked.\nWhen Azorius Herald enters the battlefield, you gain 4 life.\nWhen Azorius Herald enters the battlefield, sacrifice it unless {U} was spent to cast it.

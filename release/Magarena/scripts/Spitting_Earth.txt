@@ -1,9 +1,9 @@
 name=Spitting Earth
-image=http://mtgimage.com/card/spitting%20earth.jpg
+image=http://magiccards.info/scans/en/ddg/67.jpg
 value=3.648
 rarity=C
 type=Sorcery
 cost={1}{R}
+effect=SN deals damage to target creature equal to the number of Mountains you control.
 timing=main
-requires_groovy_code=Seismic Strike
 oracle=Spitting Earth deals damage to target creature equal to the number of Mountains you control.

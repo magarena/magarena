@@ -1,7 +1,7 @@
 name=Predatory Nightstalker
-image=http://mtgimage.com/card/predatory%20nightstalker.jpg
+image=http://magiccards.info/scans/en/vma/134.jpg
 value=2.500
-rarity=U
+rarity=C
 type=Creature
 subtype=Nightstalker
 cost={3}{B}{B}

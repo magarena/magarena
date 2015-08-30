@@ -1,12 +1,12 @@
 name=Stone-Tongue Basilisk
-image=http://mtgimage.com/card/stone-tongue%20basilisk.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/276.jpg
+value=3.600
 rarity=R
 type=Creature
 subtype=Basilisk
 cost={4}{G}{G}{G}
 pt=4/5
 ability=Whenever SN deals combat damage to a creature, destroy that creature at end of combat.;\
-        Threshold — As long as seven or more cards are in your graveyard, all creatures able to block SN do so.
+        As long as seven or more cards are in your graveyard, all creatures able to block SN do so.
 timing=main
-oracle=Whenever Stone-Tongue Basilisk deals combat damage to a creature, destroy that creature at end of combat. Threshold — As long as seven or more cards are in your graveyard, all creatures able to block Stone-Tongue Basilisk do so.
+oracle=Whenever Stone-Tongue Basilisk deals combat damage to a creature, destroy that creature at end of combat.\nThreshold — As long as seven or more cards are in your graveyard, all creatures able to block Stone-Tongue Basilisk do so.

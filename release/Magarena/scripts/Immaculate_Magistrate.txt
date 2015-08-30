@@ -1,5 +1,5 @@
 name=Immaculate Magistrate
-image=http://mtgimage.com/card/immaculate%20magistrate.jpg
+image=http://magiccards.info/scans/en/c14/201.jpg
 value=4.111
 rarity=R
 type=Creature

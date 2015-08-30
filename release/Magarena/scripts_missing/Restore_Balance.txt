@@ -1,9 +1,9 @@
 name=Restore Balance
-image=http://mtgimage.com/card/restore%20balance.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ts/38.jpg
+value=2.890
 rarity=R
 type=Sorcery
 color=w
 effect=Suspend 6—{W}~Each player chooses a number of lands he or she controls equal to the number of lands controlled by the player who controls the fewest, then sacrifices the rest. Players sacrifice creatures and discard cards the same way.
 timing=main
-oracle=Suspend 6—{W}. Each player chooses a number of lands he or she controls equal to the number of lands controlled by the player who controls the fewest, then sacrifices the rest. Players sacrifice creatures and discard cards the same way.
+oracle=Suspend 6—{W}\nEach player chooses a number of lands he or she controls equal to the number of lands controlled by the player who controls the fewest, then sacrifices the rest. Players sacrifice creatures and discard cards the same way.

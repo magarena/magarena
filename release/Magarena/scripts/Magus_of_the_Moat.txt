@@ -1,5 +1,5 @@
 name=Magus of the Moat
-image=http://mtgimage.com/card/magus%20of%20the%20moat.jpg
+image=http://magiccards.info/scans/en/fut/12.jpg
 value=4.212
 rarity=R
 type=Creature

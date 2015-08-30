@@ -1,6 +1,6 @@
 name=Barbarian Guides
-image=http://mtgimage.com/card/barbarian%20guides.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ia/174.jpg
+value=2.023
 rarity=C
 type=Creature
 subtype=Human,Barbarian

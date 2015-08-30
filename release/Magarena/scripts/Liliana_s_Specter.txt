@@ -1,5 +1,5 @@
 name=Liliana's Specter
-image=http://mtgimage.com/card/liliana%27s%20specter.jpg
+image=http://magiccards.info/scans/en/cns/116.jpg
 value=4.125
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=flying
 timing=fmain
 requires_groovy_code
-oracle=Flying. When Liliana's Specter enters the battlefield, each opponent discards a card.
+oracle=Flying\nWhen Liliana's Specter enters the battlefield, each opponent discards a card.

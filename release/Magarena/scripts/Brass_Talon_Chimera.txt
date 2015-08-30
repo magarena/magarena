@@ -1,6 +1,6 @@
 name=Brass-Talon Chimera
-image=http://mtgimage.com/card/brass-talon%20chimera.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vi/142.jpg
+value=3.471
 rarity=U
 type=Artifact,Creature
 subtype=Chimera
@@ -9,4 +9,4 @@ pt=2/2
 ability=First strike
 timing=main
 requires_groovy_code
-oracle=First strike. Sacrifice Brass-Talon Chimera: Put a +2/+2 counter on target Chimera creature. It gains first strike.
+oracle=First strike\nSacrifice Brass-Talon Chimera: Put a +2/+2 counter on target Chimera creature. It gains first strike.

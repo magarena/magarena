@@ -1,9 +1,9 @@
 name=Unnatural Selection
-image=http://mtgimage.com/card/unnatural%20selection.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ap/32.jpg
+value=3.809
 rarity=R
 type=Enchantment
 cost={1}{U}
 ability={1}: Choose a creature type other than Wall. Target creature becomes that type until end of turn.
-timing=main
+timing=enchantment
 oracle={1}: Choose a creature type other than Wall. Target creature becomes that type until end of turn.

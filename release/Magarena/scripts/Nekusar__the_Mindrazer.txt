@@ -1,11 +1,12 @@
 name=Nekusar, the Mindrazer
-image=http://mtgimage.com/card/nekusar,%20the%20mindrazer.jpg
+image=http://magiccards.info/scans/en/c13/201.jpg
 value=3.724
 rarity=M
 type=Legendary,Creature
 subtype=Zombie,Wizard
 cost={2}{U}{B}{R}
 pt=2/4
+ability=At the beginning of each player's draw step, that player draws an additional card.;\
+        Whenever an opponent draws a card, SN deals 1 damage to that player.
 timing=main
-requires_groovy_code=Underworld Dreams;Kami of the Crescent Moon
-oracle=At the beginning of each player's draw step, that player draws an additional card. Whenever an opponent draws a card, Nekusar, the Mindrazer deals 1 damage to that player.
+oracle=At the beginning of each player's draw step, that player draws an additional card.\nWhenever an opponent draws a card, Nekusar, the Mindrazer deals 1 damage to that player.

@@ -1,5 +1,5 @@
 name=Goblin Wizard
-image=http://mtgimage.com/card/goblin%20wizard.jpg
+image=http://magiccards.info/scans/en/med/97.jpg
 value=3.942
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability={T}: You may put a Goblin permanent card from your hand onto the battlefield.;\
         {R}: Target Goblin gains protection from white until end of turn.
 timing=main
-oracle={T}: You may put a Goblin permanent card from your hand onto the battlefield. {R}: Target Goblin gains protection from white until end of turn.
+oracle={T}: You may put a Goblin permanent card from your hand onto the battlefield.\n{R}: Target Goblin gains protection from white until end of turn.

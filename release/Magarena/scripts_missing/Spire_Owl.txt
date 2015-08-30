@@ -1,6 +1,6 @@
 name=Spire Owl
-image=http://mtgimage.com/card/spire%20owl.jpg
-value=2.500
+image=http://magiccards.info/scans/en/us/98.jpg
+value=3.987
 rarity=C
 type=Creature
 subtype=Bird
@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying;\
         When SN enters the battlefield, look at the top four cards of your library, then put them back in any order.
 timing=main
-oracle=Flying. When Spire Owl enters the battlefield, look at the top four cards of your library, then put them back in any order.
+oracle=Flying\nWhen Spire Owl enters the battlefield, look at the top four cards of your library, then put them back in any order.

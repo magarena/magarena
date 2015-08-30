@@ -12,7 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicSubType subType = event.getChosenSubType();
-            game.doAction(new MagicGainAbilityAction(event.getPermanent(),subType.getLandwalkAbility()));
+            game.doAction(new GainAbilityAction(event.getPermanent(),subType.getLandwalkAbility()));
         }
     }
 ]

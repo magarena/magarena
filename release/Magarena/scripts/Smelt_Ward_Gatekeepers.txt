@@ -1,11 +1,12 @@
 name=Smelt-Ward Gatekeepers
-image=http://mtgimage.com/card/smelt-ward%20gatekeepers.jpg
+image=http://magiccards.info/scans/en/dgm/39.jpg
 value=3.375
 rarity=C
 type=Creature
 subtype=Human,Warrior
 cost={3}{R}
 pt=2/4
+ability=When SN enters the battlefield, if you control two or more Gates, gain control of target creature an opponent controls until end of turn.\
+        ~Untap *that creature*.~*It* gains haste until end of turn.
 timing=main
-requires_groovy_code
 oracle=When Smelt-Ward Gatekeepers enters the battlefield, if you control two or more Gates, gain control of target creature an opponent controls until end of turn. Untap that creature. It gains haste until end of turn.

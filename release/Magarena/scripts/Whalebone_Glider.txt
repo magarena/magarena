@@ -1,5 +1,5 @@
 name=Whalebone Glider
-image=http://mtgimage.com/card/whalebone%20glider.jpg
+image=http://magiccards.info/scans/en/cstd/47.jpg
 value=2.516
 rarity=U
 type=Artifact

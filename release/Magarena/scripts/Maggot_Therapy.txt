@@ -1,5 +1,5 @@
 name=Maggot Therapy
-image=http://mtgimage.com/card/maggot%20therapy.jpg
+image=http://magiccards.info/scans/en/mm/145.jpg
 value=3.071
 rarity=C
 type=Enchantment
@@ -9,4 +9,4 @@ ability=Flash;\
         Enchanted creature gets +2/-2.
 timing=flash
 enchant=weaken +2/-2,creature
-oracle=Flash. Enchant creature. Enchanted creature gets +2/-2.
+oracle=Flash\nEnchant creature\nEnchanted creature gets +2/-2.

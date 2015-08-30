@@ -1,6 +1,6 @@
 name=Frantic Search
-image=http://mtgimage.com/card/frantic%20search.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vma/70.jpg
+value=4.500
 rarity=C
 type=Instant
 cost={2}{U}

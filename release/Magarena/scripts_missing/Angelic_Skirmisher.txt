@@ -1,6 +1,6 @@
 name=Angelic Skirmisher
-image=http://mtgimage.com/card/angelic%20skirmisher.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gtc/3.jpg
+value=3.789
 rarity=R
 type=Creature
 subtype=Angel
@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying;\
         At the beginning of each combat, choose first strike, vigilance, or lifelink. Creatures you control gain that ability until end of turn.
 timing=main
-oracle=Flying. At the beginning of each combat, choose first strike, vigilance, or lifelink. Creatures you control gain that ability until end of turn.
+oracle=Flying\nAt the beginning of each combat, choose first strike, vigilance, or lifelink. Creatures you control gain that ability until end of turn.

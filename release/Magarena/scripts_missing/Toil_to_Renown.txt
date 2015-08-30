@@ -1,9 +1,0 @@
-name=Toil to Renown
-image=http://mtgimage.com/card/toil%20to%20renown.jpg
-value=2.500
-rarity=C
-type=Sorcery
-cost={1}{G}
-effect=You gain 1 life for each tapped artifact, creature, and land you control.
-timing=main
-oracle=You gain 1 life for each tapped artifact, creature, and land you control.

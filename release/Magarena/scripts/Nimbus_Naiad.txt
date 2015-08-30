@@ -1,5 +1,5 @@
 name=Nimbus Naiad
-image=http://mtgimage.com/card/nimbus%20naiad.jpg
+image=http://magiccards.info/scans/en/ths/56.jpg
 value=3.500
 rarity=C
 type=Enchantment,Creature
@@ -10,4 +10,4 @@ ability=Bestow {4}{U};\
         Flying;\
         Enchanted creature gets +2/+2 and has flying.
 timing=main
-oracle=Bestow {4}{U}. Flying. Enchanted creature gets +2/+2 and has flying.
+oracle=Bestow {4}{U}\nFlying\nEnchanted creature gets +2/+2 and has flying.

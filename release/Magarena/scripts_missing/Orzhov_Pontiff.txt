@@ -1,14 +1,14 @@
 name=Orzhov Pontiff
-image=http://mtgimage.com/card/orzhov%20pontiff.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gp/124.jpg
+value=3.440
 rarity=R
 type=Creature
 subtype=Human,Cleric
 cost={1}{W}{B}
 pt=1/1
 ability=Haunt;\
-        When SN enters the battlefield or the creature it haunts dies, choose one —;\
-        • Creatures you control get +1/+1 until end of turn.;\
-        • Creatures you don't control get -1/-1 until end of turn.
+        When SN enters the battlefield or the creature it haunts dies, choose one — \
+        (1) Creatures you control get +1/+1 until end of turn. \
+        (2) Creatures you don't control get -1/-1 until end of turn.
 timing=main
-oracle=Haunt. When Orzhov Pontiff enters the battlefield or the creature it haunts dies, choose one — • Creatures you control get +1/+1 until end of turn. • Creatures you don't control get -1/-1 until end of turn.
+oracle=Haunt\nWhen Orzhov Pontiff enters the battlefield or the creature it haunts dies, choose one —\n• Creatures you control get +1/+1 until end of turn.\n• Creatures you don't control get -1/-1 until end of turn.

@@ -1,5 +1,5 @@
 name=Cephalid Snitch
-image=http://mtgimage.com/card/cephalid%20snitch.jpg
+image=http://magiccards.info/scans/en/tr/30.jpg
 value=0.985
 rarity=C
 type=Creature

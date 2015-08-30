@@ -1,5 +1,5 @@
 name=Jace's Archivist
-image=http://mtgimage.com/card/jace%27s%20archivist.jpg
+image=http://magiccards.info/scans/en/c13/48.jpg
 value=3.731
 rarity=R
 type=Creature

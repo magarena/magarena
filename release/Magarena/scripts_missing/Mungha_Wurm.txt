@@ -1,6 +1,6 @@
 name=Mungha Wurm
-image=http://mtgimage.com/card/mungha%20wurm.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pr/119.jpg
+value=2.639
 rarity=R
 type=Creature
 subtype=Wurm

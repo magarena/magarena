@@ -1,0 +1,13 @@
+name=Acid-Spewer Dragon
+image=http://magiccards.info/scans/en/dtk/86.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dragon
+cost={5}{B}
+pt=3/3
+ability=Flying, deathtouch;\
+        Megamorph {5}{B}{B};\
+        When SN is turned face up, put a +1/+1 counter on each other Dragon creature you control.
+timing=main
+oracle=Flying, deathtouch\nMegamorph {5}{B}{B}\nWhen Acid-Spewer Dragon is turned face up, put a +1/+1 counter on each other Dragon creature you control.

@@ -1,5 +1,5 @@
 name=Champion's Victory
-image=http://mtgimage.com/card/champion%27s%20victory.jpg
+image=http://magiccards.info/scans/en/p3k/39.jpg
 value=1.662
 rarity=U
 type=Instant
@@ -7,4 +7,4 @@ cost={U}
 ability=Cast SN only during the declare attackers step and only if you've been attacked this step.
 effect=Return target attacking creature to its owner's hand.
 timing=attack
-oracle=Cast Champion's Victory only during the declare attackers step and only if you've been attacked this step. Return target attacking creature to its owner's hand.
+oracle=Cast Champion's Victory only during the declare attackers step and only if you've been attacked this step.\nReturn target attacking creature to its owner's hand.

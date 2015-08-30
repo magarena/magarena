@@ -1,6 +1,6 @@
 name=Suffer the Past
-image=http://mtgimage.com/card/suffer%20the%20past.jpg
-value=2.500
+image=http://magiccards.info/scans/en/roe/128.jpg
+value=4.047
 rarity=U
 type=Instant
 cost={X}{B}

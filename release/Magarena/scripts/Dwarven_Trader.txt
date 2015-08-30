@@ -1,5 +1,5 @@
 name=Dwarven Trader
-image=http://mtgimage.com/card/dwarven%20trader.jpg
+image=http://magiccards.info/scans/en/hl/92.jpg
 value=1.974
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Dwarf
 cost={R}
 pt=1/1
 timing=main
+oracle=NONE

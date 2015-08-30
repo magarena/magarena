@@ -1,9 +1,9 @@
 name=Rain of Rust
-image=http://mtgimage.com/card/rain%20of%20rust.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5dn/76.jpg
+value=1.000
 rarity=C
 type=Instant
 cost={3}{R}{R}
-effect=Choose one — • Destroy target artifact. • Destroy target land.~Entwine {3}{R}
+effect=Choose one — (1) Destroy target artifact. (2) Destroy target land.~Entwine {3}{R}
 timing=removal
-oracle=Choose one — • Destroy target artifact. • Destroy target land. Entwine {3}{R}
+oracle=Choose one —\n• Destroy target artifact.\n• Destroy target land.\nEntwine {3}{R}

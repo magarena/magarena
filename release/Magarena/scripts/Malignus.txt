@@ -1,5 +1,5 @@
 name=Malignus
-image=http://mtgimage.com/card/malignus.jpg
+image=http://magiccards.info/scans/en/avr/148.jpg
 value=3.806
 rarity=M
 type=Creature
@@ -8,4 +8,4 @@ cost={3}{R}{R}
 pt=*/*
 timing=main
 requires_groovy_code
-oracle=Malignus's power and toughness are each equal to half the highest life total among your opponents, rounded up. Damage that would be dealt by Malignus can't be prevented.
+oracle=Malignus's power and toughness are each equal to half the highest life total among your opponents, rounded up.\nDamage that would be dealt by Malignus can't be prevented.

@@ -1,12 +1,12 @@
 name=Hero of Bladehold
-image=http://mtgimage.com/card/hero%20of%20bladehold.jpg
+image=http://magiccards.info/scans/en/mbs/8.jpg
 value=4.270
 rarity=M
 type=Creature
 subtype=Human,Knight
 cost={2}{W}{W}
 pt=3/4
-ability=battle cry
+ability=battle cry;\
+        Whenever SN attacks, put two 1/1 white Soldier creature tokens onto the battlefield tapped and attacking.
 timing=fmain
-requires_groovy_code
-oracle=Battle cry. Whenever Hero of Bladehold attacks, put two 1/1 white Soldier creature tokens onto the battlefield tapped and attacking.
+oracle=Battle cry\nWhenever Hero of Bladehold attacks, put two 1/1 white Soldier creature tokens onto the battlefield tapped and attacking.

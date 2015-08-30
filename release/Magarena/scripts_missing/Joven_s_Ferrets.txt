@@ -1,12 +1,12 @@
 name=Joven's Ferrets
-image=http://mtgimage.com/card/joven%27s%20ferrets.jpg
-value=2.500
-rarity=C
+image=http://magiccards.info/scans/en/me2/169.jpg
+value=4.010
+rarity=U
 type=Creature
 subtype=Ferret
 cost={G}
 pt=1/1
-ability=Whenever SN attacks, SN gets +0/+2 until end of turn.;\
+ability=Whenever SN attacks, it gets +0/+2 until end of turn.;\
         At end of combat, tap all creatures that blocked SN this turn. They don't untap during their controller's next untap step.
 timing=main
-oracle=Whenever Joven's Ferrets attacks, it gets +0/+2 until end of turn. At end of combat, tap all creatures that blocked Joven's Ferrets this turn. They don't untap during their controller's next untap step.
+oracle=Whenever Joven's Ferrets attacks, it gets +0/+2 until end of turn.\nAt end of combat, tap all creatures that blocked Joven's Ferrets this turn. They don't untap during their controller's next untap step.

@@ -1,0 +1,11 @@
+name=Farrel's Mantle
+image=http://magiccards.info/scans/en/me2/13.jpg
+value=3.380
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={2}{W}
+timing=aura
+enchant=pump,pos creature
+requires_groovy_code
+oracle=Enchant creature\nWhenever enchanted creature attacks and isn't blocked, its controller may have it deal damage equal to its power plus 2 to another target creature. If that player does, the attacking creature assigns no combat damage this turn.

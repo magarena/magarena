@@ -1,7 +1,7 @@
 name=Elvish Aberration
-image=http://mtgimage.com/card/elvish%20aberration.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/vma/206.jpg
+value=3.667
+rarity=C
 type=Creature
 subtype=Elf,Mutant
 cost={5}{G}
@@ -9,4 +9,4 @@ pt=4/5
 ability={T}: Add {G}{G}{G} to your mana pool.;\
         Forestcycling {2}
 timing=main
-oracle={T}: Add {G}{G}{G} to your mana pool. Forestcycling {2}
+oracle={T}: Add {G}{G}{G} to your mana pool.\nForestcycling {2}

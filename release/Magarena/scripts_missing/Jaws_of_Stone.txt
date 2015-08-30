@@ -1,6 +1,6 @@
 name=Jaws of Stone
-image=http://mtgimage.com/card/jaws%20of%20stone.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddi/72.jpg
+value=2.804
 rarity=U
 type=Sorcery
 cost={5}{R}

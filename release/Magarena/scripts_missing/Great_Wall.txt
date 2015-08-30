@@ -1,9 +1,9 @@
 name=Great Wall
-image=http://mtgimage.com/card/great%20wall.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lg/186.jpg
+value=1.068
 rarity=U
 type=Enchantment
 cost={2}{W}
 ability=Creatures with plainswalk can be blocked as though they didn't have plainswalk.
-timing=main
+timing=enchantment
 oracle=Creatures with plainswalk can be blocked as though they didn't have plainswalk.

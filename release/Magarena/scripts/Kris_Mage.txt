@@ -1,5 +1,5 @@
 name=Kris Mage
-image=http://mtgimage.com/card/kris%20mage.jpg
+image=http://magiccards.info/scans/en/mm/195.jpg
 value=2.950
 rarity=C
 type=Creature

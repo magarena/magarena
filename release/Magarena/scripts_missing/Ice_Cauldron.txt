@@ -1,10 +1,10 @@
 name=Ice Cauldron
-image=http://mtgimage.com/card/ice%20cauldron.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me4/206.jpg
+value=3.552
 rarity=R
 type=Artifact
 cost={4}
 ability={X}, {T}: Put a charge counter on SN and exile a nonland card from your hand. You may cast that card for as long as it remains exiled. Note the type and amount of mana spent to pay this activation cost. Activate this ability only if there are no charge counters on SN.;\
         {T}, Remove a charge counter from SN: Add SN's last noted type and amount of mana to your mana pool. Spend this mana only to cast the last card exiled with SN.
-timing=main
-oracle={X}, {T}: Put a charge counter on Ice Cauldron and exile a nonland card from your hand. You may cast that card for as long as it remains exiled. Note the type and amount of mana spent to pay this activation cost. Activate this ability only if there are no charge counters on Ice Cauldron. {T}, Remove a charge counter from Ice Cauldron: Add Ice Cauldron's last noted type and amount of mana to your mana pool. Spend this mana only to cast the last card exiled with Ice Cauldron.
+timing=artifact
+oracle={X}, {T}: Put a charge counter on Ice Cauldron and exile a nonland card from your hand. You may cast that card for as long as it remains exiled. Note the type and amount of mana spent to pay this activation cost. Activate this ability only if there are no charge counters on Ice Cauldron.\n{T}, Remove a charge counter from Ice Cauldron: Add Ice Cauldron's last noted type and amount of mana to your mana pool. Spend this mana only to cast the last card exiled with Ice Cauldron.

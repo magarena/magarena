@@ -1,11 +1,11 @@
 name=Torture Chamber
-image=http://mtgimage.com/card/torture%20chamber.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tp/303.jpg
+value=1.841
 rarity=R
 type=Artifact
 cost={3}
 ability=At the beginning of your upkeep, put a pain counter on SN.;\
         At the beginning of your end step, SN deals damage to you equal to the number of pain counters on it.;\
         {1}, {T}, Remove all pain counters from SN: SN deals damage to target creature equal to the number of pain counters removed this way.
-timing=main
-oracle=At the beginning of your upkeep, put a pain counter on Torture Chamber. At the beginning of your end step, Torture Chamber deals damage to you equal to the number of pain counters on it. {1}, {T}, Remove all pain counters from Torture Chamber: Torture Chamber deals damage to target creature equal to the number of pain counters removed this way.
+timing=artifact
+oracle=At the beginning of your upkeep, put a pain counter on Torture Chamber.\nAt the beginning of your end step, Torture Chamber deals damage to you equal to the number of pain counters on it.\n{1}, {T}, Remove all pain counters from Torture Chamber: Torture Chamber deals damage to target creature equal to the number of pain counters removed this way.

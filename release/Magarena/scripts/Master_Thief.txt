@@ -1,5 +1,5 @@
 name=Master Thief
-image=http://mtgimage.com/card/master%20thief.jpg
+image=http://magiccards.info/scans/en/m12/64.jpg
 value=3.898
 rarity=U
 type=Creature

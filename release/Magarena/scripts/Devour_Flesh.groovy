@@ -1,8 +1,8 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
     event.processTargetPermanent(game, {
-        game.doAction(new MagicSacrificeAction(it));
-        game.doAction(new MagicChangeLifeAction(event.getPlayer(), it.getToughness()));
+        game.doAction(new SacrificeAction(it));
+        game.doAction(new ChangeLifeAction(event.getPlayer(), it.getToughness()));
     });
 }
 
@@ -12,7 +12,7 @@ def action = {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_PLAYER_CONTROLS_CREATURE,
+                TARGET_PLAYER_CONTROLS_CREATURE,
                 this,
                 "Target player\$ sacrifices a creature, then gains life equal to that creature's toughness."
             );
@@ -23,7 +23,7 @@ def action = {
                 game.addEvent(new MagicEvent(
                     event.getSource(),
                     it,
-                    MagicTargetChoice.SACRIFICE_CREATURE,
+                    SACRIFICE_CREATURE,
                     MagicSacrificeTargetPicker.create(),
                     action,
                     "Choose a creature to sacrifice\$."

@@ -1,9 +1,0 @@
-name=Dwarven Armory
-image=http://mtgimage.com/card/dwarven%20armory.jpg
-value=2.500
-rarity=R
-type=Enchantment
-cost={2}{R}{R}
-ability={2}, Sacrifice a land: Put a +2/+2 counter on target creature. Activate this ability only during any upkeep step.
-timing=main
-oracle={2}, Sacrifice a land: Put a +2/+2 counter on target creature. Activate this ability only during any upkeep step.

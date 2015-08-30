@@ -1,5 +1,5 @@
 name=Nylea, God of the Hunt
-image=http://mtgimage.com/card/nylea%2C%20god%20of%20the%20hunt.jpg
+image=http://magiccards.info/scans/en/ths/166.jpg
 value=3.518
 rarity=M
 type=Legendary,Enchantment,Creature
@@ -11,4 +11,4 @@ ability=indestructible;\
         {3}{G}: Target creature gets +2/+2 until end of turn.
 timing=main
 requires_groovy_code
-oracle=Indestructible. As long as your devotion to green is less than five, Nylea isn't a creature. Other creatures you control have trample. {3}{G}: Target creature gets +2/+2 until end of turn.
+oracle=Indestructible\nAs long as your devotion to green is less than five, Nylea isn't a creature.\nOther creatures you control have trample.\n{3}{G}: Target creature gets +2/+2 until end of turn.

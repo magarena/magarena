@@ -1,5 +1,5 @@
 name=Sanguine Guard
-image=http://mtgimage.com/card/sanguine%20guard.jpg
+image=http://magiccards.info/scans/en/pvc/9.jpg
 value=3.897
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=first strike;\
         {1}{B}: Regenerate SN.
 timing=main
-oracle=First strike. {1}{B}: Regenerate Sanguine Guard.
+oracle=First strike\n{1}{B}: Regenerate Sanguine Guard.

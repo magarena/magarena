@@ -1,6 +1,6 @@
 name=Archetype of Endurance
-image=http://mtgimage.com/card/archetype%20of%20endurance.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bng/116.jpg
+value=3.118
 rarity=U
 type=Enchantment,Creature
 subtype=Boar
@@ -8,5 +8,5 @@ cost={6}{G}{G}
 pt=6/5
 ability=Creatures you control have hexproof.;\
         Creatures your opponents control lose hexproof and can't have or gain hexproof.
-timing=main
-oracle=Creatures you control have hexproof. Creatures your opponents control lose hexproof and can't have or gain hexproof.
+timing=enchantment
+oracle=Creatures you control have hexproof.\nCreatures your opponents control lose hexproof and can't have or gain hexproof.

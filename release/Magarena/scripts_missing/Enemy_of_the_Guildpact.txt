@@ -1,6 +1,6 @@
 name=Enemy of the Guildpact
-image=http://mtgimage.com/card/enemy%20of%20the%20guildpact.jpg
-value=2.500
+image=http://magiccards.info/scans/en/di/44.jpg
+value=2.708
 rarity=C
 type=Creature
 subtype=Spirit

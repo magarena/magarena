@@ -1,5 +1,5 @@
 name=Benthicore
-image=http://mtgimage.com/card/benthicore.jpg
+image=http://magiccards.info/scans/en/lw/53.jpg
 value=3.095
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=5/5
 ability=When SN enters the battlefield, put two 1/1 blue Merfolk Wizard creature tokens onto the battlefield.;\
         Tap two untapped Merfolk you control: Untap SN.~SN gains shroud until end of turn.
 timing=main
-oracle=When Benthicore enters the battlefield, put two 1/1 blue Merfolk Wizard creature tokens onto the battlefield. Tap two untapped Merfolk you control: Untap Benthicore. It gains shroud until end of turn.
+oracle=When Benthicore enters the battlefield, put two 1/1 blue Merfolk Wizard creature tokens onto the battlefield.\nTap two untapped Merfolk you control: Untap Benthicore. It gains shroud until end of turn.

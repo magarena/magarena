@@ -13,11 +13,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicSource source=event.getSource();
             final int amount=event.getCardOnStack().getX();
-            final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE);
-            for (final MagicPermanent target : targets) {
-                final MagicDamage damage=new MagicDamage(source,target,amount);
-                game.doAction(new MagicDealDamageAction(damage));
+            CREATURE.filter(event) each {
+                game.doAction(new DealDamageAction(source,it,amount));
             }
         }
     }

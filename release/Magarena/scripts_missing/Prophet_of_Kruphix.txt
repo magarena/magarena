@@ -1,6 +1,6 @@
 name=Prophet of Kruphix
-image=http://mtgimage.com/card/prophet%20of%20kruphix.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ths/199.jpg
+value=3.942
 rarity=R
 type=Creature
 subtype=Human,Wizard
@@ -9,4 +9,4 @@ pt=2/3
 ability=Untap all creatures and lands you control during each other player's untap step.;\
         You may cast creature cards as though they had flash.
 timing=main
-oracle=Untap all creatures and lands you control during each other player's untap step. You may cast creature cards as though they had flash.
+oracle=Untap all creatures and lands you control during each other player's untap step.\nYou may cast creature cards as though they had flash.

@@ -1,5 +1,5 @@
 name=Mardu Skullhunter
-image=http://mtgimage.com/card/mardu%20skullhunter.jpg
+image=http://magiccards.info/scans/en/ktk/78.jpg
 value=3.250
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, if you attacked with a creature this turn, target opponent discards a card.
 timing=smain
-oracle=Mardu Skullhunter enters the battlefield tapped. Raid — When Mardu Skullhunter enters the battlefield, if you attacked with a creature this turn, target opponent discards a card.
+oracle=Mardu Skullhunter enters the battlefield tapped.\nRaid — When Mardu Skullhunter enters the battlefield, if you attacked with a creature this turn, target opponent discards a card.

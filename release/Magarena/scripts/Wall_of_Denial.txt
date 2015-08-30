@@ -1,5 +1,5 @@
 name=Wall of Denial
-image=http://mtgimage.com/card/wall%20of%20denial.jpg
+image=http://magiccards.info/scans/en/ddi/11.jpg
 value=3.784
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{W}{U}
 pt=0/8
 ability=defender;flying;shroud
 timing=smain
-oracle=Defender, flying. Shroud
+oracle=Defender, flying\nShroud

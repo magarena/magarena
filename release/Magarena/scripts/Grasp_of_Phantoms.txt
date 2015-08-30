@@ -1,5 +1,5 @@
 name=Grasp of Phantoms
-image=http://mtgimage.com/card/grasp%20of%20phantoms.jpg
+image=http://magiccards.info/scans/en/isd/58.jpg
 value=3.189
 rarity=U
 type=Sorcery
@@ -7,4 +7,4 @@ cost={3}{U}
 effect=Put target creature on top of its owner's library.
 ability=Flashback {7}{U}
 timing=main
-oracle=Put target creature on top of its owner's library. Flashback {7}{U}
+oracle=Put target creature on top of its owner's library.\nFlashback {7}{U}

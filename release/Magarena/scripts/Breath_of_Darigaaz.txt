@@ -1,5 +1,5 @@
 name=Breath of Darigaaz
-image=http://mtgimage.com/card/breath%20of%20darigaaz.jpg
+image=http://magiccards.info/scans/en/cmd/112.jpg
 value=4.091
 removal=3
 rarity=U
@@ -8,4 +8,4 @@ cost={1}{R}
 timing=removal
 ability=kicker {2}
 requires_groovy_code
-oracle=Kicker {2}. Breath of Darigaaz deals 1 damage to each creature without flying and each player. If Breath of Darigaaz was kicked, it deals 4 damage to each creature without flying and each player instead.
+oracle=Kicker {2}\nBreath of Darigaaz deals 1 damage to each creature without flying and each player. If Breath of Darigaaz was kicked, it deals 4 damage to each creature without flying and each player instead.

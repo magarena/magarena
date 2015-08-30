@@ -10,9 +10,9 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicPlayTokenAction(
+            game.doAction(new PlayTokenAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("1/1 white Soldier creature token")
+                CardDefinitions.getToken("1/1 white Soldier creature token")
             ));
         }
     },
@@ -21,7 +21,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.POS_TARGET_CREATURE,
+                POS_TARGET_CREATURE,
                 MagicPumpTargetPicker.create(),
                 this,
                 "Target creature\$ gets +3/+3 and gains flying until end of turn."
@@ -30,8 +30,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicChangeTurnPTAction(it,3,3));
-                game.doAction(new MagicGainAbilityAction(it,MagicAbility.Flying));
+                game.doAction(new ChangeTurnPTAction(it,3,3));
+                game.doAction(new GainAbilityAction(it,MagicAbility.Flying));
             });
         }
     },
@@ -46,10 +46,8 @@
         }
         @Override
         public void executeEvent(final MagicGame outerGame, final MagicEvent event) {
-            outerGame.doAction(new MagicAddStaticAction(
-                new MagicStatic(
-                    MagicLayer.Ability,
-                    MagicTargetFilterFactory.ANY) {
+            outerGame.doAction(new AddStaticAction(
+                new MagicStatic(MagicLayer.Ability, ANY) {
                     @Override
                     public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
                         permanent.addAbility(MagicAbility.Indestructible, flags);

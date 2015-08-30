@@ -1,10 +1,10 @@
 name=War Dance
-image=http://mtgimage.com/card/war%20dance.jpg
-value=2.500
+image=http://magiccards.info/scans/en/us/282.jpg
+value=2.788
 rarity=U
 type=Enchantment
 cost={G}
 ability=At the beginning of your upkeep, you may put a verse counter on SN.;\
         Sacrifice SN: Target creature gets +X/+X until end of turn, where X is the number of verse counters on SN.
-timing=main
-oracle=At the beginning of your upkeep, you may put a verse counter on War Dance. Sacrifice War Dance: Target creature gets +X/+X until end of turn, where X is the number of verse counters on War Dance.
+timing=enchantment
+oracle=At the beginning of your upkeep, you may put a verse counter on War Dance.\nSacrifice War Dance: Target creature gets +X/+X until end of turn, where X is the number of verse counters on War Dance.

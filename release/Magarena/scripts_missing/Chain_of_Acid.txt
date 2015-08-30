@@ -1,6 +1,6 @@
 name=Chain of Acid
-image=http://mtgimage.com/card/chain%20of%20acid.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/252.jpg
+value=3.397
 rarity=U
 type=Sorcery
 cost={3}{G}

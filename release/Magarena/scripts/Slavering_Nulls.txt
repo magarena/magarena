@@ -1,0 +1,11 @@
+name=Slavering Nulls
+image=http://magiccards.info/scans/en/ddh/45.jpg
+value=3.359
+rarity=U
+type=Creature
+subtype=Goblin,Zombie
+cost={1}{R}
+pt=2/1
+ability=Whenever SN deals combat damage to a player, if you control a Swamp, you may have that player discard a card.
+timing=main
+oracle=Whenever Slavering Nulls deals combat damage to a player, if you control a Swamp, you may have that player discard a card.

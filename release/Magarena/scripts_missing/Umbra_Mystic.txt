@@ -1,6 +1,6 @@
 name=Umbra Mystic
-image=http://mtgimage.com/card/umbra%20mystic.jpg
-value=2.500
+image=http://magiccards.info/scans/en/roe/52.jpg
+value=3.742
 rarity=R
 type=Creature
 subtype=Human,Wizard

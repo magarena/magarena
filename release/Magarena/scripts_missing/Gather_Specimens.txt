@@ -1,6 +1,6 @@
 name=Gather Specimens
-image=http://mtgimage.com/card/gather%20specimens.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ala/45.jpg
+value=3.069
 rarity=R
 type=Instant
 cost={3}{U}{U}{U}

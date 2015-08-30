@@ -1,11 +1,11 @@
 name=Adder-Staff Boggart
-image=http://mtgimage.com/card/adder-staff%20boggart.jpg
+image=http://magiccards.info/scans/en/lw/148.jpg
 value=2.872
 rarity=C
 type=Creature
 subtype=Goblin,Warrior
 cost={1}{R}
 pt=2/1
+ability=When SN enters the battlefield, clash with an opponent. If you win, put a +1/+1 counter on SN.
 timing=main
-requires_groovy_code
 oracle=When Adder-Staff Boggart enters the battlefield, clash with an opponent. If you win, put a +1/+1 counter on Adder-Staff Boggart.

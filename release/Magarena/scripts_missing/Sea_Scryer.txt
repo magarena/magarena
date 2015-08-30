@@ -1,6 +1,6 @@
 name=Sea Scryer
-image=http://mtgimage.com/card/sea%20scryer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/90.jpg
+value=3.243
 rarity=C
 type=Creature
 subtype=Merfolk,Wizard
@@ -9,4 +9,4 @@ pt=1/1
 ability={T}: Add {1} to your mana pool.;\
         {1}, {T}: Add {U} to your mana pool.
 timing=main
-oracle={T}: Add {1} to your mana pool. {1}, {T}: Add {U} to your mana pool.
+oracle={T}: Add {1} to your mana pool.\n{1}, {T}: Add {U} to your mana pool.

@@ -1,11 +1,11 @@
 name=High Priest of Penance
-image=http://mtgimage.com/card/high%20priest%20of%20penance.jpg
+image=http://magiccards.info/scans/en/gtc/171.jpg
 value=3.928
 rarity=R
 type=Creature
 subtype=Human,Cleric
 cost={W}{B}
 pt=1/1
+ability=Whenever SN is dealt damage, you may destroy target nonland permanent.
 timing=main
-requires_groovy_code
 oracle=Whenever High Priest of Penance is dealt damage, you may destroy target nonland permanent.

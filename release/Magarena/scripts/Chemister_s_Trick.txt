@@ -1,9 +1,9 @@
 name=Chemister's Trick
-image=http://mtgimage.com/card/chemister%27s%20trick.jpg
+image=http://magiccards.info/scans/en/rtr/149.jpg
 value=2.627
 rarity=C
 type=Instant
 cost={U}{R}
 timing=mustattack
 requires_groovy_code
-oracle=Target creature you don't control gets -2/-0 until end of turn and attacks this turn if able. Overload {3}{U}{R}
+oracle=Target creature you don't control gets -2/-0 until end of turn and attacks this turn if able.\nOverload {3}{U}{R}

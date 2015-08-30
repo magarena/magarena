@@ -1,5 +1,5 @@
 name=Crowd of Cinders
-image=http://mtgimage.com/card/crowd%20of%20cinders.jpg
+image=http://magiccards.info/scans/en/shm/63.jpg
 value=3.417
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ ability=fear;\
         SN's power and toughness are each equal to the number of black permanents you control.
 pt=*/*
 timing=main
-oracle=Fear. Crowd of Cinders's power and toughness are each equal to the number of black permanents you control.
+oracle=Fear\nCrowd of Cinders's power and toughness are each equal to the number of black permanents you control.

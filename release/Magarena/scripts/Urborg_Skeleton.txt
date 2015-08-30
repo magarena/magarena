@@ -1,5 +1,5 @@
 name=Urborg Skeleton
-image=http://mtgimage.com/card/urborg%20skeleton.jpg
+image=http://magiccards.info/scans/en/in/134.jpg
 value=3.488
 rarity=C
 type=Creature
@@ -10,4 +10,4 @@ timing=main
 ability=kicker {3};\
         {B}: Regenerate SN.
 requires_groovy_code=Ardent Soldier
-oracle=Kicker {3}. {B}: Regenerate Urborg Skeleton. If Urborg Skeleton was kicked, it enters the battlefield with a +1/+1 counter on it.
+oracle=Kicker {3}\n{B}: Regenerate Urborg Skeleton.\nIf Urborg Skeleton was kicked, it enters the battlefield with a +1/+1 counter on it.

@@ -1,6 +1,6 @@
 name=O-Naginata
-image=http://mtgimage.com/card/o-naginata.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sok/157.jpg
+value=3.925
 rarity=U
 type=Artifact
 subtype=Equipment
@@ -8,5 +8,5 @@ cost={1}
 ability=SN can be attached only to a creature with power 3 or greater.;\
         Equipped creature gets +3/+0 and has trample.;\
         Equip {2}
-timing=main
-oracle=O-Naginata can be attached only to a creature with power 3 or greater. Equipped creature gets +3/+0 and has trample. Equip {2}
+timing=equipment
+oracle=O-Naginata can be attached only to a creature with power 3 or greater.\nEquipped creature gets +3/+0 and has trample.\nEquip {2}

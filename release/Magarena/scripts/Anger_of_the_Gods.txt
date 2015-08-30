@@ -1,10 +1,11 @@
 name=Anger of the Gods
-image=http://mtgimage.com/card/anger%20of%20the%20gods.jpg
+image=http://magiccards.info/scans/en/ths/112.jpg
 value=3.670
 removal=3
 rarity=R
 type=Sorcery
 cost={1}{R}{R}
+ability=Cast SN with AI only if an opponent controls a creature.
 timing=removal
 requires_groovy_code
 oracle=Anger of the Gods deals 3 damage to each creature. If a creature dealt damage this way would die this turn, exile it instead.

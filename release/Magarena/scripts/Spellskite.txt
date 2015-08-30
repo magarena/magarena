@@ -1,5 +1,5 @@
 name=Spellskite
-image=http://mtgimage.com/card/spellskite.jpg
+image=http://magiccards.info/scans/en/nph/159.jpg
 value=4.252
 rarity=R
 type=Artifact,Creature

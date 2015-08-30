@@ -1,5 +1,5 @@
 name=Stonewright
-image=http://mtgimage.com/card/stonewright.jpg
+image=http://magiccards.info/scans/en/avr/157.jpg
 value=3.473
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=Soulbond;\
         As long as SN is paired with another creature, each of those creatures has "{R}: SN gets +1/+0 until end of turn."
 timing=main
-oracle=Soulbond. As long as Stonewright is paired with another creature, each of those creatures has "{R}: This creature gets +1/+0 until end of turn."
+oracle=Soulbond\nAs long as Stonewright is paired with another creature, each of those creatures has "{R}: This creature gets +1/+0 until end of turn."

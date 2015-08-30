@@ -1,6 +1,6 @@
 name=Initiates of the Ebon Hand
-image=http://mtgimage.com/card/initiates%20of%20the%20ebon%20hand.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5e/31.jpg
+value=3.293
 rarity=C
 type=Creature
 subtype=Cleric

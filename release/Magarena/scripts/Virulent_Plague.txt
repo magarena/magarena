@@ -1,0 +1,9 @@
+name=Virulent Plague
+image=http://magiccards.info/scans/en/dtk/125.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={2}{B}
+ability=Creature tokens get -2/-2.
+timing=main
+oracle=Creature tokens get -2/-2.

@@ -1,9 +1,9 @@
 name=Last Caress
-image=http://mtgimage.com/card/last%20caress.jpg
+image=http://magiccards.info/scans/en/ap/41.jpg
 value=2.439
 rarity=C
 type=Sorcery
 cost={2}{B}
 effect=Target player loses 1 life and you gain 1 life.~Draw a card.
 timing=main
-oracle=Target player loses 1 life and you gain 1 life. Draw a card.
+oracle=Target player loses 1 life and you gain 1 life.\nDraw a card.

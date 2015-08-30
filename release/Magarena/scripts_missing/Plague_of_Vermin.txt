@@ -1,6 +1,6 @@
 name=Plague of Vermin
-image=http://mtgimage.com/card/plague%20of%20vermin.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/73.jpg
+value=2.671
 rarity=R
 type=Sorcery
 cost={6}{B}

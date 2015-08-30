@@ -1,5 +1,5 @@
 name=Kyren Negotiations
-image=http://mtgimage.com/card/kyren%20negotiations.jpg
+image=http://magiccards.info/scans/en/mm/198.jpg
 value=3.917
 rarity=U
 type=Enchantment

@@ -1,10 +1,10 @@
 name=Mana Prism
-image=http://mtgimage.com/card/mana%20prism.jpg
+image=http://magiccards.info/scans/en/vma/273.jpg
 value=2.500
-rarity=U
+rarity=C
 type=Artifact
 cost={3}
 ability={T}: Add {1} to your mana pool.;\
         {1}, {T}: Add one mana of any color to your mana pool.
-timing=main
-oracle={T}: Add {1} to your mana pool. {1}, {T}: Add one mana of any color to your mana pool.
+timing=artifact
+oracle={T}: Add {1} to your mana pool.\n{1}, {T}: Add one mana of any color to your mana pool.

@@ -1,10 +1,9 @@
 name=Plummet
-image=http://mtgimage.com/card/plummet.jpg
-value=2.400
-removal=3
+image=http://magiccards.info/scans/en/mm2/155.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{G}
-timing=removal
 effect=Destroy target creature with flying.
+timing=removal
 oracle=Destroy target creature with flying.

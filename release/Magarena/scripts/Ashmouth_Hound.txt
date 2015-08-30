@@ -1,11 +1,11 @@
 name=Ashmouth Hound
-image=http://mtgimage.com/card/ashmouth%20hound.jpg
+image=http://magiccards.info/scans/en/ddk/45.jpg
 value=3.375
 rarity=C
 type=Creature
 subtype=Elemental,Hound
 cost={1}{R}
 pt=2/1
+ability=Whenever SN blocks or becomes blocked by a creature, SN deals 1 damage to that creature.
 timing=main
-requires_groovy_code
 oracle=Whenever Ashmouth Hound blocks or becomes blocked by a creature, Ashmouth Hound deals 1 damage to that creature.

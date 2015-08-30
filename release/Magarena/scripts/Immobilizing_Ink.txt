@@ -1,5 +1,5 @@
 name=Immobilizing Ink
-image=http://mtgimage.com/card/immobilizing%20ink.jpg
+image=http://magiccards.info/scans/en/od/87.jpg
 value=2.662
 rarity=C
 type=Enchantment
@@ -9,4 +9,4 @@ ability=Enchanted creature doesn't untap during its controller's untap step.;\
         Enchanted creature has "{1}, Discard a card: Untap SN."
 timing=aura
 enchant=tap,creature
-oracle=Enchant creature. Enchanted creature doesn't untap during its controller's untap step. Enchanted creature has "{1}, Discard a card: Untap this creature."
+oracle=Enchant creature\nEnchanted creature doesn't untap during its controller's untap step.\nEnchanted creature has "{1}, Discard a card: Untap this creature."

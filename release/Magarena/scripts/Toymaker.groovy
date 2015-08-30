@@ -8,7 +8,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Animate),
-        "Animate"
+        "Becomes"
     ) {
 
         @Override
@@ -24,7 +24,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.POS_TARGET_NONCREATURE_ARTIFACT,
+                POS_TARGET_NONCREATURE_ARTIFACT,
                 this,
                 "Target noncreature artifact\$ becomes an artifact creature with with power and toughness "+
                 "each equal to its converted mana cost until end of turn."
@@ -41,7 +41,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
                         pt.set(amount,amount);
                     }
                 };
-                game.doAction(new MagicBecomesCreatureAction(it,PT,ST));
+                game.doAction(new BecomesCreatureAction(it,PT,ST));
             });
         }
     }

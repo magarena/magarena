@@ -1,5 +1,5 @@
 name=Rishadan Airship
-image=http://mtgimage.com/card/rishadan%20airship.jpg
+image=http://magiccards.info/scans/en/mm/91.jpg
 value=3.312
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{U}
 pt=3/1
 ability=flying;SN can block only creatures with flying.
 timing=main
-oracle=Flying. Rishadan Airship can block only creatures with flying.
+oracle=Flying\nRishadan Airship can block only creatures with flying.

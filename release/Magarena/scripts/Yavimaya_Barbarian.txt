@@ -1,5 +1,5 @@
 name=Yavimaya Barbarian
-image=http://mtgimage.com/card/yavimaya%20barbarian.jpg
+image=http://magiccards.info/scans/en/in/290.jpg
 value=3.570
 ability=protection from blue
 rarity=C

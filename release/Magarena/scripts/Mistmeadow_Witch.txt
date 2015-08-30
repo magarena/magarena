@@ -1,5 +1,5 @@
 name=Mistmeadow Witch
-image=http://mtgimage.com/card/mistmeadow%20witch.jpg
+image=http://magiccards.info/scans/en/c13/230.jpg
 value=3.750
 rarity=U
 type=Creature

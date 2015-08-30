@@ -1,5 +1,5 @@
 name=Aku Djinn
-image=http://mtgimage.com/card/aku%20djinn.jpg
+image=http://magiccards.info/scans/en/vi/1.jpg
 value=3.273
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=5/6
 ability=Trample
 timing=main
 requires_groovy_code
-oracle=Trample. At the beginning of your upkeep, put a +1/+1 counter on each creature each opponent controls.
+oracle=Trample\nAt the beginning of your upkeep, put a +1/+1 counter on each creature each opponent controls.

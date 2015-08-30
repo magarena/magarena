@@ -1,9 +1,9 @@
 name=Imi Statue
-image=http://mtgimage.com/card/imi%20statue.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/255.jpg
+value=3.286
 rarity=R
 type=Artifact
 cost={3}
 ability=Players can't untap more than one artifact during their untap steps.
-timing=main
+timing=artifact
 oracle=Players can't untap more than one artifact during their untap steps.

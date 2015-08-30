@@ -7,3 +7,4 @@ color=R
 value=1
 pt=1/1
 ability=mountainwalk
+oracle=Mountainwalk

@@ -1,10 +1,10 @@
 name=Dueling Grounds
-image=http://mtgimage.com/card/dueling%20grounds.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/245.jpg
+value=4.208
 rarity=R
 type=Enchantment
 cost={1}{G}{W}
 ability=No more than one creature can attack each turn.;\
         No more than one creature can block each turn.
-timing=main
-oracle=No more than one creature can attack each turn. No more than one creature can block each turn.
+timing=enchantment
+oracle=No more than one creature can attack each turn.\nNo more than one creature can block each turn.

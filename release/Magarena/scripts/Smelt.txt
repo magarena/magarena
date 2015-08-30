@@ -1,5 +1,5 @@
 name=Smelt
-image=http://mtgimage.com/card/smelt.jpg
+image=http://magiccards.info/scans/en/m14/156.jpg
 value=4.255
 removal=1
 rarity=C

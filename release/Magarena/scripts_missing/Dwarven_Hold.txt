@@ -1,11 +1,11 @@
 name=Dwarven Hold
-image=http://mtgimage.com/card/dwarven%20hold.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5e/414.jpg
+value=3.109
 rarity=R
 type=Land
 ability=SN enters the battlefield tapped.;\
         You may choose not to untap SN during your untap step.;\
         At the beginning of your upkeep, if SN is tapped, put a storage counter on it.;\
         {T}, Remove any number of storage counters from SN: Add {R} to your mana pool for each storage counter removed this way.
-timing=main
-oracle=Dwarven Hold enters the battlefield tapped. You may choose not to untap Dwarven Hold during your untap step. At the beginning of your upkeep, if Dwarven Hold is tapped, put a storage counter on it. {T}, Remove any number of storage counters from Dwarven Hold: Add {R} to your mana pool for each storage counter removed this way.
+timing=land
+oracle=Dwarven Hold enters the battlefield tapped.\nYou may choose not to untap Dwarven Hold during your untap step.\nAt the beginning of your upkeep, if Dwarven Hold is tapped, put a storage counter on it.\n{T}, Remove any number of storage counters from Dwarven Hold: Add {R} to your mana pool for each storage counter removed this way.

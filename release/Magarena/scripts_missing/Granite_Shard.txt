@@ -1,9 +1,9 @@
 name=Granite Shard
-image=http://mtgimage.com/card/granite%20shard.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mi/182.jpg
+value=3.013
 rarity=U
 type=Artifact
 cost={3}
 ability={3}, {T} or {R}, {T}: SN deals 1 damage to target creature or player.
-timing=main
+timing=artifact
 oracle={3}, {T} or {R}, {T}: Granite Shard deals 1 damage to target creature or player.

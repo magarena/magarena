@@ -1,5 +1,5 @@
 name=Nezumi Graverobber
-image=http://mtgimage.com/card/nezumi%20graverobber.jpg
+image=http://magiccards.info/scans/en/cmd/92a.jpg
 value=4.027
 rarity=U
 type=Creature

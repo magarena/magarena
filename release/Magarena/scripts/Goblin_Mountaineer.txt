@@ -1,5 +1,5 @@
 name=Goblin Mountaineer
-image=http://mtgimage.com/card/goblin%20mountaineer.jpg
+image=http://magiccards.info/scans/en/ala/102.jpg
 value=2.524
 ability=mountainwalk
 rarity=C

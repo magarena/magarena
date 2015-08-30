@@ -1,6 +1,6 @@
 name=Living Inferno
-image=http://mtgimage.com/card/living%20inferno.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gp/69.jpg
+value=3.400
 rarity=R
 type=Creature
 subtype=Elemental

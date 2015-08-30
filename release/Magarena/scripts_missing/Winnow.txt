@@ -1,9 +1,9 @@
 name=Winnow
-image=http://mtgimage.com/card/winnow.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/45.jpg
+value=3.611
 rarity=R
 type=Instant
 cost={1}{W}
 effect=Destroy target nonland permanent if another permanent with the same name is on the battlefield.~Draw a card.
 timing=removal
-oracle=Destroy target nonland permanent if another permanent with the same name is on the battlefield. Draw a card.
+oracle=Destroy target nonland permanent if another permanent with the same name is on the battlefield.\nDraw a card.

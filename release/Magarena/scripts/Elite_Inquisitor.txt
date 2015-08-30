@@ -1,5 +1,5 @@
 name=Elite Inquisitor
-image=http://mtgimage.com/card/elite%20inquisitor.jpg
+image=http://magiccards.info/scans/en/isd/13.jpg
 value=3.905
 rarity=R
 type=Creature
@@ -8,4 +8,4 @@ cost={W}{W}
 pt=2/2
 ability=first strike;vigilance;protection from Vampires;protection from Werewolves;protection from Zombies
 timing=main
-oracle=First strike, vigilance. Protection from Vampires, from Werewolves, and from Zombies
+oracle=First strike, vigilance\nProtection from Vampires, from Werewolves, and from Zombies

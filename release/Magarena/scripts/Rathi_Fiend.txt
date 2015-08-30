@@ -1,5 +1,5 @@
 name=Rathi Fiend
-image=http://mtgimage.com/card/rathi%20fiend.jpg
+image=http://magiccards.info/scans/en/ne/68.jpg
 value=3.348
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=When SN enters the battlefield, each player loses 3 life.;\
         {3}, {T}: Search your library for a Mercenary permanent card with converted mana cost 3 or less and put it onto the battlefield. Then shuffle your library.
 timing=main
-oracle=When Rathi Fiend enters the battlefield, each player loses 3 life. {3}, {T}: Search your library for a Mercenary permanent card with converted mana cost 3 or less and put it onto the battlefield. Then shuffle your library.
+oracle=When Rathi Fiend enters the battlefield, each player loses 3 life.\n{3}, {T}: Search your library for a Mercenary permanent card with converted mana cost 3 or less and put it onto the battlefield. Then shuffle your library.

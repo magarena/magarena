@@ -1,5 +1,5 @@
 name=Overwhelming Intellect
-image=http://mtgimage.com/card/overwhelming%20intellect.jpg
+image=http://magiccards.info/scans/en/ddj/28.jpg
 value=3.333
 rarity=U
 type=Instant

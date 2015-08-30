@@ -1,11 +1,11 @@
 name=Anti-Magic Aura
-image=http://mtgimage.com/card/anti-magic%20aura.jpg
-value=2.500
-rarity=C
+image=http://magiccards.info/scans/en/5e/72.jpg
+value=2.081
+rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{U}
 ability=Enchant creature;\
         Enchanted creature can't be the target of spells and can't be enchanted by other Auras.
-timing=main
-oracle=Enchant creature. Enchanted creature can't be the target of spells and can't be enchanted by other Auras.
+timing=aura
+oracle=Enchant creature\nEnchanted creature can't be the target of spells and can't be enchanted by other Auras.

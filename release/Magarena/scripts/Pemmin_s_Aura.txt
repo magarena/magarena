@@ -1,11 +1,15 @@
 name=Pemmin's Aura
-image=http://mtgimage.com/card/pemmin%27s%20aura.jpg
+image=http://magiccards.info/scans/en/sc/45.jpg
 value=4.426
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{U}{U}
+ability={U}: Untap enchanted creature.;\
+        {U}: Enchanted creature gains flying until end of turn.;\
+        {U}: Enchanted creature gains shroud until end of turn.;\
+        {1}: Enchanted creature gets +1/-1 until end of turn.;\
+        {1}: Enchanted creature gets -1/+1 until end of turn.
 enchant=pump,pos creature
 timing=aura
-requires_groovy_code
-oracle=Enchant creature. {U}: Untap enchanted creature. {U}: Enchanted creature gains flying until end of turn. {U}: Enchanted creature gains shroud until end of turn. {1}: Enchanted creature gets +1/-1 or -1/+1 until end of turn.
+oracle=Enchant creature\n{U}: Untap enchanted creature.\n{U}: Enchanted creature gains flying until end of turn.\n{U}: Enchanted creature gains shroud until end of turn.\n{1}: Enchanted creature gets +1/-1 or -1/+1 until end of turn.

@@ -1,5 +1,5 @@
 name=Nomad Stadium
-image=http://mtgimage.com/card/nomad%20stadium.jpg
+image=http://magiccards.info/scans/en/od/322.jpg
 value=0.989
 rarity=U
 type=Land
@@ -7,4 +7,4 @@ mana=w2
 ability={T}: Add {W} to your mana pool. SN deals 1 damage to you.;\
         {W}, {T}, Sacrifice SN: You gain 4 life. Activate this ability only if seven or more cards are in your graveyard.
 timing=land
-oracle={T}: Add {W} to your mana pool. Nomad Stadium deals 1 damage to you. Threshold — {W}, {T}, Sacrifice Nomad Stadium: You gain 4 life. Activate this ability only if seven or more cards are in your graveyard.
+oracle={T}: Add {W} to your mana pool. Nomad Stadium deals 1 damage to you.\nThreshold — {W}, {T}, Sacrifice Nomad Stadium: You gain 4 life. Activate this ability only if seven or more cards are in your graveyard.

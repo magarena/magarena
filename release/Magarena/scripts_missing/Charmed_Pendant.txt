@@ -1,9 +1,9 @@
 name=Charmed Pendant
-image=http://mtgimage.com/card/charmed%20pendant.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/298.jpg
+value=2.855
 rarity=R
 type=Artifact
 cost={4}
 ability={T}, Put the top card of your library into your graveyard: For each colored mana symbol in that card's mana cost, add one mana of that color to your mana pool. Activate this ability only any time you could cast an instant.
-timing=main
+timing=artifact
 oracle={T}, Put the top card of your library into your graveyard: For each colored mana symbol in that card's mana cost, add one mana of that color to your mana pool. Activate this ability only any time you could cast an instant.

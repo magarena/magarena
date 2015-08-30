@@ -1,10 +1,10 @@
 name=Mind Peel
-image=http://mtgimage.com/card/mind%20peel.jpg
+image=http://magiccards.info/scans/en/sh/13.jpg
 value=3.242
 rarity=U
 type=Sorcery
 cost={B}
 ability=buyback {2}{B}{B}
-effect=Target player discards a card.
+effect=Target player discards a card.~Buyback
 timing=removal
-oracle=Buyback {2}{B}{B}. Target player discards a card.
+oracle=Buyback {2}{B}{B}\nTarget player discards a card.

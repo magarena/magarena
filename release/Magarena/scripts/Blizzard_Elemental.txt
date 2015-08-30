@@ -1,5 +1,5 @@
 name=Blizzard Elemental
-image=http://mtgimage.com/card/blizzard%20elemental.jpg
+image=http://magiccards.info/scans/en/bd/2.jpg
 value=2.857
 rarity=R
 type=Creature
@@ -8,4 +8,4 @@ cost={5}{U}{U}
 pt=5/5
 ability=flying;{3}{U}:Untap SN.
 timing=main
-oracle=Flying. {3}{U}: Untap Blizzard Elemental.
+oracle=Flying\n{3}{U}: Untap Blizzard Elemental.

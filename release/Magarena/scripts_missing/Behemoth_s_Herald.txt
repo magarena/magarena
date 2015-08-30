@@ -1,11 +1,11 @@
 name=Behemoth's Herald
-image=http://mtgimage.com/card/behemoth%27s%20herald.jpg
+image=http://magiccards.info/scans/en/ala/124.jpg
 value=1.717
 rarity=U
 type=Creature
 subtype=Elf,Shaman
 cost={G}
 pt=1/1
-ability={2}{G}, {T}, Sacrifice a red creature, Sacrifice a green creature, Sacrifice a white creature: Search your library for a card named Godsire and put it onto the battlefield. Then shuffle your library.
+ability={2}{G}, {T}, Sacrifice a red creature, a green creature, and a white creature: Search your library for a card named Godsire and put it onto the battlefield. Then shuffle your library.
 timing=main
 oracle={2}{G}, {T}, Sacrifice a red creature, a green creature, and a white creature: Search your library for a card named Godsire and put it onto the battlefield. Then shuffle your library.

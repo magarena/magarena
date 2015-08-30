@@ -1,5 +1,5 @@
 name=Dauntless Escort
-image=http://mtgimage.com/card/dauntless%20escort.jpg
+image=http://magiccards.info/scans/en/arb/67.jpg
 value=3.933
 rarity=R
 type=Creature

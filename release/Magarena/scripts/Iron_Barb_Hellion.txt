@@ -1,5 +1,5 @@
 name=Iron-Barb Hellion
-image=http://mtgimage.com/card/iron%2Dbarb%20hellion.jpg
+image=http://magiccards.info/scans/en/5dn/69.jpg
 value=1.871
 ability=haste;SN can't block.
 rarity=U
@@ -8,4 +8,4 @@ subtype=Hellion,Beast
 cost={5}{R}
 pt=5/4
 timing=fmain
-oracle=Haste. Iron-Barb Hellion can't block.
+oracle=Haste\nIron-Barb Hellion can't block.

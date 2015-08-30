@@ -1,6 +1,6 @@
 name=Orcish Farmer
-image=http://mtgimage.com/card/orcish%20farmer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me2/141.jpg
+value=2.770
 rarity=C
 type=Creature
 subtype=Orc

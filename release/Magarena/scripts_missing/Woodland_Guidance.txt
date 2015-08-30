@@ -1,9 +1,9 @@
 name=Woodland Guidance
-image=http://mtgimage.com/card/woodland%20guidance.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lw/243.jpg
+value=2.963
 rarity=U
 type=Sorcery
 cost={3}{G}
 effect=Return target card from your graveyard to your hand. Clash with an opponent. If you win, untap all Forests you control.~Exile SN.
 timing=main
-oracle=Return target card from your graveyard to your hand. Clash with an opponent. If you win, untap all Forests you control. Exile Woodland Guidance.
+oracle=Return target card from your graveyard to your hand. Clash with an opponent. If you win, untap all Forests you control.\nExile Woodland Guidance.

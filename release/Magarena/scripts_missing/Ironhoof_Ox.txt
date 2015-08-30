@@ -1,7 +1,7 @@
 name=Ironhoof Ox
-image=http://mtgimage.com/card/ironhoof%20ox.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/me4/158.jpg
+value=3.286
+rarity=C
 type=Creature
 subtype=Ox
 cost={3}{G}{G}

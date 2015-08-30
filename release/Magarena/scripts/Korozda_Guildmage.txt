@@ -1,5 +1,5 @@
 name=Korozda Guildmage
-image=http://mtgimage.com/card/korozda%20guildmage.jpg
+image=http://magiccards.info/scans/en/rtr/176.jpg
 value=3.625
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability={1}{B}{G}:Target creature gets +1/+1 and gains intimidate until end of turn.
 timing=main
 requires_groovy_code
-oracle={1}{B}{G}: Target creature gets +1/+1 and gains intimidate until end of turn. {2}{B}{G}, Sacrifice a nontoken creature: Put X 1/1 green Saproling creature tokens onto the battlefield, where X is the sacrificed creature's toughness.
+oracle={1}{B}{G}: Target creature gets +1/+1 and gains intimidate until end of turn.\n{2}{B}{G}, Sacrifice a nontoken creature: Put X 1/1 green Saproling creature tokens onto the battlefield, where X is the sacrificed creature's toughness.

@@ -1,11 +1,11 @@
 name=Leonin Bola
-image=http://mtgimage.com/card/leonin%20bola.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ds/127.jpg
+value=3.306
 rarity=C
 type=Artifact
 subtype=Equipment
 cost={1}
 ability=Equipped creature has "{T}, Unattach SN: Tap target creature.";\
         Equip {1}
-timing=main
-oracle=Equipped creature has "{T}, Unattach Leonin Bola: Tap target creature.". Equip {1}
+timing=equipment
+oracle=Equipped creature has "{T}, Unattach Leonin Bola: Tap target creature."\nEquip {1}

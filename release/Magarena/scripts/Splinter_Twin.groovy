@@ -25,7 +25,7 @@ def Copy = new MagicPermanentActivation(
             event.getPermanent(),
             player
         );
-        game.doAction(new MagicPlayCardAction(
+        game.doAction(new PlayCardAction(
             card,
             player,
             [MagicPlayMod.HASTE, MagicPlayMod.EXILE_AT_END_OF_TURN]

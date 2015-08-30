@@ -1,9 +1,10 @@
 name=2/3 red Minotaur creature token with haste
 token=Minotaur
-image=http://media.wizards.com/images/magic/daily/arcana/arc1477_minotaur.jpg
+image=http://magiccards.info/extras/token/journey-into-nyx/minotaur.jpg
 value=3
 type=Creature
 subtype=Minotaur
 color=R
 pt=2/3
 ability=haste
+oracle=Haste

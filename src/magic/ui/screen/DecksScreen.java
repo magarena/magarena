@@ -15,6 +15,7 @@ import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.model.MagicDeck;
 import magic.ui.ScreenController;
+import magic.translate.UiString;
 import magic.ui.cardtable.CardTable;
 import magic.ui.dialog.DecksFilterDialog;
 import magic.ui.screen.interfaces.IActionBar;
@@ -35,6 +36,23 @@ public class DecksScreen
     extends AbstractScreen
     implements IStatusBar, IActionBar {
 
+    // translatable strings
+    private static final String _S1 = "Decks";
+    private static final String _S2 = "Cancel";
+    private static final String _S3 = "Select";
+    private static final String _S4 = "No deck specified.";
+    private static final String _S5 = "This deck is invalid.";
+    private static final String _S6 = "Sample Hand";
+    private static final String _S7 = "See what kind of Hand you might be dealt from this deck.";
+    private static final String _S8 = "A deck with a minimum of 7 cards is required first.";
+    private static final String _S9 = "This deck is invalid.";
+    private static final String _S10 = "Deck View";
+    private static final String _S11 = "Shows complete deck using tiled card images.";
+    private static final String _S12 = "Deck is empty! Nothing to show.";
+    private static final String _S13 = "This deck is invalid.";
+    private static final String _S14 = "%s (%d cards)";
+    private static final String _S15 = "NO DECK";
+
     private final ScreenContent screenContent;
     private final IDeckConsumer deckConsumer;
     private final DeckStatusPanel deckStatusPanel;
@@ -46,36 +64,27 @@ public class DecksScreen
         setContent(screenContent);
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagStatusBar#getScreenCaption()
-     */
     @Override
     public String getScreenCaption() {
-        return "Decks";
+        return UiString.get(_S1);
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getLeftAction()
-     */
     @Override
     public MenuButton getLeftAction() {
-        return MenuButton.getCloseScreenButton("Cancel");
+        return MenuButton.getCloseScreenButton(UiString.get(_S2));
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getRightAction()
-     */
     @Override
     public MenuButton getRightAction() {
         return new ActionBarButton(
-                "Select",
+                UiString.get(_S3),
                 new AbstractAction() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         if (screenContent.getDeck() == null) {
-                            showInvalidActionMessage("No deck specified.");
+                            showInvalidActionMessage(UiString.get(_S4));
                         } else if (screenContent.getDeck().isValid() == false) {
-                            showInvalidActionMessage("This deck is invalid.");
+                            showInvalidActionMessage(UiString.get(_S5));
                         } else {
                             deckConsumer.setDeck(screenContent.getDeck(), screenContent.getDeckPath());
                             ScreenController.closeActiveScreen(false);
@@ -84,23 +93,20 @@ public class DecksScreen
                 });
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getMiddleActions()
-     */
     @Override
     public List<MenuButton> getMiddleActions() {
         final List<MenuButton> buttons = new ArrayList<>();
         buttons.add(
                 new ActionBarButton(
                         IconImages.getIcon(MagicIcon.HAND_ICON),
-                        "Sample Hand", "See what kind of Hand you might be dealt from this deck.",
+                        UiString.get(_S6), UiString.get(_S7),
                         new AbstractAction() {
                             @Override
                             public void actionPerformed(final ActionEvent e) {
                                 if (screenContent.getDeck() == null || screenContent.getDeck().size() < 7) {
-                                    showInvalidActionMessage("A deck with a minimum of 7 cards is required first.");
+                                    showInvalidActionMessage(UiString.get(_S8));
                                 } else if (screenContent.getDeck().isValid() == false) {
-                                    showInvalidActionMessage("This deck is invalid.");
+                                    showInvalidActionMessage(UiString.get(_S9));
                                 } else {
                                     ScreenController.showSampleHandScreen(screenContent.getDeck());
                                 }
@@ -110,14 +116,14 @@ public class DecksScreen
         buttons.add(
                 new ActionBarButton(
                         IconImages.getIcon(MagicIcon.TILED_ICON),
-                        "Deck View", "Shows complete deck using tiled card images.",
+                        UiString.get(_S10), UiString.get(_S11),
                         new AbstractAction() {
                             @Override
                             public void actionPerformed(final ActionEvent e) {
                                 if (screenContent.getDeck() == null || screenContent.getDeck().size() == 0) {
-                                    showInvalidActionMessage("Deck is empty! Nothing to show.");
+                                    showInvalidActionMessage(UiString.get(_S12));
                                 } else if (screenContent.getDeck().isValid() == false) {
-                                    showInvalidActionMessage("This deck is invalid.");
+                                    showInvalidActionMessage(UiString.get(_S13));
                                 } else {
                                     ScreenController.showDeckView(screenContent.getDeck());
                                 }
@@ -132,18 +138,12 @@ public class DecksScreen
         ScreenController.showWarningMessage(message);
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.MagScreen#canScreenClose()
-     */
     @Override
     public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
         DecksFilterDialog.resetFilterHistory();
         return true;
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.interfaces.IStatusBar#getStatusPanel()
-     */
     @Override
     public JPanel getStatusPanel() {
         return deckStatusPanel;
@@ -234,7 +234,7 @@ public class DecksScreen
                 deckFilePath = deckPath;
                 descViewer.setDeckDescription(deck);
                 deckTable.setCards(deck);
-                deckTable.setTitle(deck.getName() + " (" + deck.size() + " cards)");
+                deckTable.setTitle(UiString.get(_S14, deck.getName(), deck.size()));
                 deckStatusPanel.setDeck(deck, deck.isValid() || deck.size() > 0);
                 splitter.setVisible(deck.isValid() || deck.size() > 0);
             } else {
@@ -242,7 +242,7 @@ public class DecksScreen
                 deckFilePath = null;
                 descViewer.setDeckDescription(selectedDeck);
                 deckTable.setCards(deck);
-                deckTable.setTitle("NO DECK");
+                deckTable.setTitle(UiString.get(_S15));
                 deckStatusPanel.setDeck(null, false);
                 splitter.setVisible(false);
             }

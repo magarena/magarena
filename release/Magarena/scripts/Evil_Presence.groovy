@@ -3,7 +3,7 @@
         @Override
         public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
             permanent.loseAllAbilities();
-            permanent.addAbility(new MagicTapManaActivation(MagicManaType.getList("{B}")));
+            permanent.addAbility(MagicTapManaActivation.Black);
         }
         @Override
         public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) { 

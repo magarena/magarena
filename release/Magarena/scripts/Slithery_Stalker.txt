@@ -1,5 +1,5 @@
 name=Slithery Stalker
-image=http://mtgimage.com/card/slithery%20stalker.jpg
+image=http://magiccards.info/scans/en/tr/84.jpg
 value=2.045
 rarity=U
 type=Creature
@@ -10,4 +10,4 @@ ability=Swampwalk;\
         When SN enters the battlefield, exile target green or white creature an opponent controls.;\
         When SN leaves the battlefield, return the exiled card to the battlefield under its owner's control.
 timing=main
-oracle=Swampwalk. When Slithery Stalker enters the battlefield, exile target green or white creature an opponent controls. When Slithery Stalker leaves the battlefield, return the exiled card to the battlefield under its owner's control.
+oracle=Swampwalk\nWhen Slithery Stalker enters the battlefield, exile target green or white creature an opponent controls.\nWhen Slithery Stalker leaves the battlefield, return the exiled card to the battlefield under its owner's control.

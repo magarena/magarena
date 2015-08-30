@@ -1,6 +1,6 @@
 name=Brontotherium
-image=http://mtgimage.com/card/brontotherium.jpg
-value=2.500
+image=http://magiccards.info/scans/en/le/119.jpg
+value=3.793
 rarity=U
 type=Creature
 subtype=Beast
@@ -9,4 +9,4 @@ pt=5/3
 ability=Trample;\
         Provoke
 timing=main
-oracle=Trample. Provoke
+oracle=Trample\nProvoke

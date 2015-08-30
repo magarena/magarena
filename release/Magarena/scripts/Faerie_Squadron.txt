@@ -1,5 +1,5 @@
 name=Faerie Squadron
-image=http://mtgimage.com/card/faerie%20squadron.jpg
+image=http://magiccards.info/scans/en/in/58.jpg
 value=2.894
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 timing=main
 ability=kicker {3}{U}
 requires_groovy_code
-oracle=Kicker {3}{U}. If Faerie Squadron was kicked, it enters the battlefield with two +1/+1 counters on it and with flying.
+oracle=Kicker {3}{U}\nIf Faerie Squadron was kicked, it enters the battlefield with two +1/+1 counters on it and with flying.

@@ -1,5 +1,5 @@
 name=Epic Proportions
-image=http://mtgimage.com/card/epic%20proportions.jpg
+image=http://magiccards.info/scans/en/lw/209.jpg
 value=3.686
 rarity=R
 type=Enchantment
@@ -9,4 +9,4 @@ ability=Flash;\
         Enchanted creature gets +5/+5 and has trample.
 timing=pumpFlash
 enchant=pump,pos creature
-oracle=Flash. Enchant creature. Enchanted creature gets +5/+5 and has trample.
+oracle=Flash\nEnchant creature\nEnchanted creature gets +5/+5 and has trample.

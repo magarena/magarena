@@ -1,5 +1,5 @@
 name=Infinite Reflection
-image=http://mtgimage.com/card/infinite%20reflection.jpg
+image=http://magiccards.info/scans/en/c14/114.jpg
 value=2.500
 rarity=R
 type=Enchantment
@@ -8,5 +8,5 @@ cost={5}{U}
 ability=Enchant creature;\
         When SN enters the battlefield attached to a creature, each other nontoken creature you control becomes a copy of that creature.;\
         Nontoken creatures you control enter the battlefield as a copy of enchanted creature.
-timing=main
-oracle=Enchant creature. When Infinite Reflection enters the battlefield attached to a creature, each other nontoken creature you control becomes a copy of that creature. Nontoken creatures you control enter the battlefield as a copy of enchanted creature.
+timing=aura
+oracle=Enchant creature\nWhen Infinite Reflection enters the battlefield attached to a creature, each other nontoken creature you control becomes a copy of that creature.\nNontoken creatures you control enter the battlefield as a copy of enchanted creature.

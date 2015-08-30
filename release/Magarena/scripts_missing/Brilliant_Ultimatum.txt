@@ -1,6 +1,6 @@
 name=Brilliant Ultimatum
-image=http://mtgimage.com/card/brilliant%20ultimatum.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ala/159.jpg
+value=2.920
 rarity=R
 type=Sorcery
 cost={W}{W}{U}{U}{U}{B}{B}

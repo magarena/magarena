@@ -1,0 +1,9 @@
+name=Earnest Fellowship
+image=http://magiccards.info/scans/en/od/21.jpg
+value=3.765
+rarity=R
+type=Enchantment
+cost={1}{W}
+timing=enchantment
+requires_groovy_code
+oracle=Each creature has protection from its colors.

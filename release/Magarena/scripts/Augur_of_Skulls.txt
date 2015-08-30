@@ -1,5 +1,5 @@
 name=Augur of Skulls
-image=http://mtgimage.com/card/augur%20of%20skulls.jpg
+image=http://magiccards.info/scans/en/fut/63.jpg
 value=4.097
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability={1}{B}:Regenerate SN.;\
         Sacrifice SN: Target player discards two cards. Activate this ability only during your upkeep.
 timing=main
-oracle={1}{B}: Regenerate Augur of Skulls. Sacrifice Augur of Skulls: Target player discards two cards. Activate this ability only during your upkeep.
+oracle={1}{B}: Regenerate Augur of Skulls.\nSacrifice Augur of Skulls: Target player discards two cards. Activate this ability only during your upkeep.

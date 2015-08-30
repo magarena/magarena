@@ -1,5 +1,5 @@
 name=Pearled Unicorn
-image=http://mtgimage.com/card/pearled%20unicorn.jpg
+image=http://magiccards.info/scans/en/5e/326.jpg
 value=1.711
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Unicorn
 cost={2}{W}
 pt=2/2
 timing=main
+oracle=NONE

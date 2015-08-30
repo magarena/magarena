@@ -1,6 +1,6 @@
 name=Brighthearth Banneret
-image=http://mtgimage.com/card/brighthearth%20banneret.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mt/88.jpg
+value=3.514
 rarity=C
 type=Creature
 subtype=Elemental,Warrior
@@ -9,4 +9,4 @@ pt=1/1
 ability=Elemental spells and Warrior spells you cast cost {1} less to cast.;\
         Reinforce 1—{1}{R}
 timing=main
-oracle=Elemental spells and Warrior spells you cast cost {1} less to cast. Reinforce 1—{1}{R}
+oracle=Elemental spells and Warrior spells you cast cost {1} less to cast.\nReinforce 1—{1}{R}

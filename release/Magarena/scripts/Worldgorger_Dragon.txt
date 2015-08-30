@@ -1,0 +1,13 @@
+name=Worldgorger Dragon
+image=http://magiccards.info/scans/en/vma/193.jpg
+value=4.500
+rarity=R
+type=Creature
+subtype=Nightmare,Dragon
+cost={3}{R}{R}{R}
+pt=7/7
+ability=Flying; trample;\
+        When SN enters the battlefield, exile all other permanents you control.;\
+        When SN leaves the battlefield, return the exiled cards to the battlefield under their owners' control.
+timing=main
+oracle=Flying, trample\nWhen Worldgorger Dragon enters the battlefield, exile all other permanents you control.\nWhen Worldgorger Dragon leaves the battlefield, return the exiled cards to the battlefield under their owners' control.

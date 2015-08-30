@@ -1,5 +1,5 @@
 name=Volcano Imp
-image=http://mtgimage.com/card/volcano%20imp.jpg
+image=http://magiccards.info/scans/en/ps/56.jpg
 value=1.783
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={3}{B}
 pt=2/2
 ability=flying;{1}{R}: SN gains first strike until end of turn.
 timing=main
-oracle=Flying. {1}{R}: Volcano Imp gains first strike until end of turn.
+oracle=Flying\n{1}{R}: Volcano Imp gains first strike until end of turn.

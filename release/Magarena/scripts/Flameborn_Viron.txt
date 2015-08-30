@@ -1,5 +1,5 @@
 name=Flameborn Viron
-image=http://mtgimage.com/card/flameborn%20viron.jpg
+image=http://magiccards.info/scans/en/nph/83.jpg
 value=2.117
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Insect
 cost={4}{R}{R}
 pt=6/4
 timing=main
+oracle=NONE

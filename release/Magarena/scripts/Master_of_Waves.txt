@@ -1,5 +1,5 @@
 name=Master of Waves
-image=http://mtgimage.com/card/master%20of%20waves.jpg
+image=http://magiccards.info/scans/en/ths/53.jpg
 value=3.659
 rarity=M
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=protection from red;elemental creatures you control get +1/+1
 timing=main
 requires_groovy_code
-oracle=Protection from red. Elemental creatures you control get +1/+1. When Master of Waves enters the battlefield, put a number of 1/0 blue Elemental creature tokens onto the battlefield equal to your devotion to blue.
+oracle=Protection from red\nElemental creatures you control get +1/+1.\nWhen Master of Waves enters the battlefield, put a number of 1/0 blue Elemental creature tokens onto the battlefield equal to your devotion to blue.

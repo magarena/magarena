@@ -1,5 +1,5 @@
 name=Eron the Relentless
-image=http://mtgimage.com/card/eron%20the%20relentless.jpg
+image=http://magiccards.info/scans/en/tsts/61.jpg
 value=3.640
 rarity=U
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=5/2
 ability=haste;\
         {R}{R}{R}: Regenerate SN.
 timing=fmain
-oracle=Haste. {R}{R}{R}: Regenerate Eron the Relentless.
+oracle=Haste\n{R}{R}{R}: Regenerate Eron the Relentless.

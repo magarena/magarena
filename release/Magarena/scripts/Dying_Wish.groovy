@@ -6,7 +6,7 @@
             return enchantedPermanent == died ?
                 new MagicEvent(
                     permanent,
-                    MagicTargetChoice.NEG_TARGET_PLAYER,
+                    NEG_TARGET_PLAYER,
                     enchantedPermanent,
                     this,
                     "Target player\$ loses X life and PN gains X life, where X is RN's power. (X="+
@@ -18,8 +18,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount=event.getRefPermanent().getPower();
             event.processTargetPlayer(game, {
-                game.doAction(new MagicChangeLifeAction(it,-amount));
-                game.doAction(new MagicChangeLifeAction(event.getPlayer(),amount));
+                game.doAction(new ChangeLifeAction(it,-amount));
+                game.doAction(new ChangeLifeAction(event.getPlayer(),amount));
             });
         }
     }

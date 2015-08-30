@@ -1,5 +1,5 @@
 name=Vanishment
-image=http://mtgimage.com/card/vanishment.jpg
+image=http://magiccards.info/scans/en/avr/82.jpg
 value=3.021
 removal=3
 rarity=U
@@ -8,4 +8,4 @@ cost={4}{U}
 effect=Put target nonland permanent on top of its owner's library.
 ability=miracle {U}
 timing=removal
-oracle=Put target nonland permanent on top of its owner's library. Miracle {U}
+oracle=Put target nonland permanent on top of its owner's library.\nMiracle {U}

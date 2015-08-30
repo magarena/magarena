@@ -1,11 +1,11 @@
 name=Thran Weaponry
-image=http://mtgimage.com/card/thran%20weaponry.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ul/135.jpg
+value=2.907
 rarity=R
 type=Artifact
 cost={4}
 ability=Echo {4};\
         You may choose not to untap SN during your untap step.;\
         {2}, {T}: All creatures get +2/+2 for as long as SN remains tapped.
-timing=main
-oracle=Echo {4}. You may choose not to untap Thran Weaponry during your untap step. {2}, {T}: All creatures get +2/+2 for as long as Thran Weaponry remains tapped.
+timing=artifact
+oracle=Echo {4}\nYou may choose not to untap Thran Weaponry during your untap step.\n{2}, {T}: All creatures get +2/+2 for as long as Thran Weaponry remains tapped.

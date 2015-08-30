@@ -6,7 +6,7 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicSource;
-import magic.model.action.MagicChangeCountersAction;
+import magic.model.action.ChangeCountersAction;
 import magic.model.condition.MagicArtificialCondition;
 import magic.model.condition.MagicCondition;
 
@@ -49,10 +49,10 @@ public class MagicLevelUpActivation extends MagicPermanentActivation {
 
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Level,1));
+        game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.Level,1));
     }
 
-    private static final class MaximumCondition implements MagicCondition {
+    private static final class MaximumCondition extends MagicCondition {
 
         private final int maximum;
 

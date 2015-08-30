@@ -1,12 +1,13 @@
 name=Bladewing the Risen
-image=http://mtgimage.com/card/bladewing%20the%20risen.jpg
+image=http://magiccards.info/scans/en/cmd/185.jpg
 value=4.090
 rarity=R
 type=Legendary,Creature
 subtype=Zombie,Dragon
 cost={3}{B}{B}{R}{R}
 pt=4/4
-ability=When SN enters the battlefield, you may return target Dragon permanent card from your graveyard to the battlefield.;\
+ability=Flying.;\
+        When SN enters the battlefield, you may return target Dragon permanent card from your graveyard to the battlefield.;\
         {B}{R}: Dragon creatures get +1/+1 until end of turn.
 timing=main
-oracle=Flying. When Bladewing the Risen enters the battlefield, you may return target Dragon permanent card from your graveyard to the battlefield. {B}{R}: Dragon creatures get +1/+1 until end of turn.
+oracle=Flying\nWhen Bladewing the Risen enters the battlefield, you may return target Dragon permanent card from your graveyard to the battlefield.\n{B}{R}: Dragon creatures get +1/+1 until end of turn.

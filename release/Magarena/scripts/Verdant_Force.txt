@@ -1,5 +1,5 @@
 name=Verdant Force
-image=http://mtgimage.com/card/verdant%20force.jpg
+image=http://magiccards.info/scans/en/pch/81.jpg
 value=4.083
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Hazerider Drake
-image=http://mtgimage.com/card/hazerider%20drake.jpg
+image=http://magiccards.info/scans/en/mr/328.jpg
 value=2.759
 rarity=U
 type=Creature

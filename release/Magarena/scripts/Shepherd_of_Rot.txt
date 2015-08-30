@@ -1,5 +1,5 @@
 name=Shepherd of Rot
-image=http://mtgimage.com/card/shepherd%20of%20rot.jpg
+image=http://magiccards.info/scans/en/pch/40.jpg
 value=3.990
 rarity=C
 type=Creature

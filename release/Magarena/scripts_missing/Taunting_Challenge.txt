@@ -1,6 +1,6 @@
 name=Taunting Challenge
-image=http://mtgimage.com/card/taunting%20challenge.jpg
-value=2.500
+image=http://magiccards.info/scans/en/p3k/152.jpg
+value=3.059
 rarity=R
 type=Sorcery
 cost={1}{G}{G}

@@ -1,6 +1,6 @@
 name=Golgari Decoy
-image=http://mtgimage.com/card/golgari%20decoy.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rtr/127.jpg
+value=3.074
 rarity=U
 type=Creature
 subtype=Elf,Rogue
@@ -9,4 +9,4 @@ pt=2/2
 ability=All creatures able to block SN do so.;\
         Scavenge {3}{G}{G}
 timing=main
-oracle=All creatures able to block Golgari Decoy do so. Scavenge {3}{G}{G}
+oracle=All creatures able to block Golgari Decoy do so.\nScavenge {3}{G}{G}

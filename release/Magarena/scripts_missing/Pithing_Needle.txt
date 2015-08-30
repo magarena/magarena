@@ -1,10 +1,10 @@
 name=Pithing Needle
-image=http://mtgimage.com/card/pithing%20needle.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rtr/231.jpg
+value=4.304
 rarity=R
 type=Artifact
 cost={1}
 ability=As SN enters the battlefield, name a card.;\
         Activated abilities of sources with the chosen name can't be activated unless they're mana abilities.
-timing=main
-oracle=As Pithing Needle enters the battlefield, name a card. Activated abilities of sources with the chosen name can't be activated unless they're mana abilities.
+timing=artifact
+oracle=As Pithing Needle enters the battlefield, name a card.\nActivated abilities of sources with the chosen name can't be activated unless they're mana abilities.

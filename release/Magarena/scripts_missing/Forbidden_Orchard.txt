@@ -1,9 +1,9 @@
 name=Forbidden Orchard
-image=http://mtgimage.com/card/forbidden%20orchard.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/276.jpg
+value=4.516
 rarity=R
 type=Land
 ability={T}: Add one mana of any color to your mana pool.;\
         Whenever you tap SN for mana, target opponent puts a 1/1 colorless Spirit creature token onto the battlefield.
-timing=main
-oracle={T}: Add one mana of any color to your mana pool. Whenever you tap Forbidden Orchard for mana, target opponent puts a 1/1 colorless Spirit creature token onto the battlefield.
+timing=land
+oracle={T}: Add one mana of any color to your mana pool.\nWhenever you tap Forbidden Orchard for mana, target opponent puts a 1/1 colorless Spirit creature token onto the battlefield.

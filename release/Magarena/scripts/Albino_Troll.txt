@@ -1,12 +1,12 @@
 name=Albino Troll
-image=http://mtgimage.com/card/albino%20troll.jpg
+image=http://magiccards.info/scans/en/gvl/3.jpg
 value=3.902
 rarity=U
 type=Creature
 subtype=Troll
 cost={1}{G}
 pt=3/3
-ability=echo {1}{G};\
+ability=Echo {1}{G};\
         {1}{G}: Regenerate SN.
 timing=main
-oracle=Echo {1}{G}. {1}{G}: Regenerate Albino Troll.
+oracle=Echo {1}{G}\n{1}{G}: Regenerate Albino Troll.

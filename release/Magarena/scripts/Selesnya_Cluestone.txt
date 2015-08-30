@@ -1,5 +1,5 @@
 name=Selesnya Cluestone
-image=http://mtgimage.com/card/selesnya%20cluestone.jpg
+image=http://magiccards.info/scans/en/dgm/144.jpg
 value=2.727
 rarity=C
 type=Artifact
@@ -7,4 +7,4 @@ cost={3}
 ability={T}: Add {G} or {W} to your mana pool.;\
         {G}{W},{T},Sacrifice SN: Draw a card.
 timing=artifact
-oracle={T}: Add {G} or {W} to your mana pool. {G}{W}, {T}, Sacrifice Selesnya Cluestone: Draw a card.
+oracle={T}: Add {G} or {W} to your mana pool.\n{G}{W}, {T}, Sacrifice Selesnya Cluestone: Draw a card.

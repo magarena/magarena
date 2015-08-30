@@ -10,13 +10,9 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets = game.filterPermanents(
-                event.getPlayer(),
-                MagicTargetFilterFactory.CREATURE_YOU_CONTROL
-            );
-            for (final MagicPermanent creature : targets) {
-                game.doAction(new MagicChangeTurnPTAction(creature, 1, 1));
-                game.doAction(new MagicGainAbilityAction(creature, MagicAbility.Haste));
+            CREATURE_YOU_CONTROL.filter(event) each {
+                game.doAction(new ChangeTurnPTAction(it, 1, 1));
+                game.doAction(new GainAbilityAction(it, MagicAbility.Haste));
             }
         }
     },
@@ -25,7 +21,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 MagicExileTargetPicker.create(),
                 this,
                 "Gain control of target creature\$ until end of turn. Untap that creature. It gains haste until end of turn."
@@ -34,9 +30,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicGainControlAction(event.getPlayer(),it,MagicStatic.UntilEOT));
-                game.doAction(new MagicUntapAction(it));
-                game.doAction(new MagicGainAbilityAction(it,MagicAbility.Haste));
+                game.doAction(new GainControlAction(event.getPlayer(),it,MagicStatic.UntilEOT));
+                game.doAction(new UntapAction(it));
+                game.doAction(new GainAbilityAction(it,MagicAbility.Haste));
             });
         }
     },
@@ -51,9 +47,9 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicPlayTokensAction(
+            game.doAction(new PlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("4/4 red Dragon creature token with flying"),
+                CardDefinitions.getToken("4/4 red Dragon creature token with flying"),
                 5
             ));
         }

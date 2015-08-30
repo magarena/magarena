@@ -1,5 +1,5 @@
 name=Alaborn Trooper
-image=http://mtgimage.com/card/alaborn%20trooper.jpg
+image=http://magiccards.info/scans/en/me4/2.jpg
 value=2.040
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Human,Soldier
 cost={2}{W}
 pt=2/3
 timing=main
+oracle=NONE

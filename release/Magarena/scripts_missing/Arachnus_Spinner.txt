@@ -1,6 +1,6 @@
 name=Arachnus Spinner
-image=http://mtgimage.com/card/arachnus%20spinner.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m12/162.jpg
+value=4.135
 rarity=R
 type=Creature
 subtype=Spider
@@ -9,4 +9,4 @@ pt=5/7
 ability=Reach;\
         Tap an untapped Spider you control: Search your graveyard and/or library for a card named Arachnus Web and put it onto the battlefield attached to target creature. If you search your library this way, shuffle it.
 timing=main
-oracle=Reach. Tap an untapped Spider you control: Search your graveyard and/or library for a card named Arachnus Web and put it onto the battlefield attached to target creature. If you search your library this way, shuffle it.
+oracle=Reach\nTap an untapped Spider you control: Search your graveyard and/or library for a card named Arachnus Web and put it onto the battlefield attached to target creature. If you search your library this way, shuffle it.

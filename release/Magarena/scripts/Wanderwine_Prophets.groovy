@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 new MagicMayChoice(
-                    MagicTargetChoice.SACRIFICE_MERFOLK
+                    SACRIFICE_MERFOLK
                 ),
                 MagicSacrificeTargetPicker.create(),
                 this,
@@ -18,8 +18,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    game.doAction(new MagicSacrificeAction(it));
-                    game.doAction(new MagicChangeExtraTurnsAction(event.getPlayer(),1));
+                    game.doAction(new SacrificeAction(it));
+                    game.doAction(new ChangeExtraTurnsAction(event.getPlayer(),1));
                 });
             }
         }

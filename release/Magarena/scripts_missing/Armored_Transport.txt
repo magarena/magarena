@@ -1,11 +1,11 @@
 name=Armored Transport
-image=http://mtgimage.com/card/armored%20transport.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gtc/226.jpg
+value=3.188
 rarity=C
 type=Artifact,Creature
 subtype=Construct
 cost={3}
 pt=2/1
 ability=Prevent all combat damage that would be dealt to SN by creatures blocking it.
-timing=main
+timing=artifact
 oracle=Prevent all combat damage that would be dealt to Armored Transport by creatures blocking it.

@@ -1,13 +1,13 @@
 name=Phyrexian Metamorph
-image=http://mtgimage.com/card/phyrexian%20metamorph.jpg
+image=http://magiccards.info/scans/en/nph/42.jpg
 value=4.525
 rarity=R
 type=Artifact,Creature
 subtype=Shapeshifter
 cost={3}{U/P}
 pt=0/0
-ability=alt cost {3}, Pay 2 life named Pay 2 life;\
-        Cast SN with AI only if there is an artifact or creature on the battlefield.
+ability=Cast SN with AI only if there is an artifact or creature on the battlefield.;\
+        alt cost {3}, Pay 2 life named Pay 2 life
 timing=main
 requires_groovy_code
 oracle=You may have Phyrexian Metamorph enter the battlefield as a copy of any artifact or creature on the battlefield, except it's an artifact in addition to its other types.

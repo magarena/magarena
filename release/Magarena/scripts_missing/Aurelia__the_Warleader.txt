@@ -1,12 +1,12 @@
 name=Aurelia, the Warleader
-image=http://mtgimage.com/card/aurelia%2C%20the%20warleader.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gtc/143.jpg
+value=4.039
 rarity=M
 type=Legendary,Creature
 subtype=Angel
 cost={2}{R}{R}{W}{W}
 pt=3/4
-ability=Flying; vigilance; haste;\
+ability=Flying, vigilance, haste;\
         Whenever SN attacks for the first time each turn, untap all creatures you control. After this phase, there is an additional combat phase.
 timing=main
-oracle=Flying, vigilance, haste. Whenever Aurelia, the Warleader attacks for the first time each turn, untap all creatures you control. After this phase, there is an additional combat phase.
+oracle=Flying, vigilance, haste\nWhenever Aurelia, the Warleader attacks for the first time each turn, untap all creatures you control. After this phase, there is an additional combat phase.

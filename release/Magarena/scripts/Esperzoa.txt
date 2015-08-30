@@ -1,5 +1,5 @@
 name=Esperzoa
-image=http://mtgimage.com/card/esperzoa.jpg
+image=http://magiccards.info/scans/en/mma/43.jpg
 value=4.075
 rarity=U
 type=Artifact,Creature
@@ -9,4 +9,4 @@ pt=4/3
 ability=flying;\
         At the beginning of your upkeep, return an artifact you control to its owner's hand.
 timing=main
-oracle=Flying. At the beginning of your upkeep, return an artifact you control to its owner's hand.
+oracle=Flying\nAt the beginning of your upkeep, return an artifact you control to its owner's hand.

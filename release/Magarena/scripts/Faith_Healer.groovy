@@ -1,12 +1,12 @@
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Removal),
-        "Gain Life"
+        "+Life"
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_ENCHANTMENT)
+                new MagicSacrificePermanentEvent(source,SACRIFICE_ENCHANTMENT)
             ];
         }
         @Override
@@ -20,7 +20,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),event.getRefPermanent().getConvertedCost()));
+            game.doAction(new ChangeLifeAction(event.getPlayer(),event.getRefPermanent().getConvertedCost()));
         }
     }
 ]

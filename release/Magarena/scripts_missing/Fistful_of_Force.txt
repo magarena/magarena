@@ -1,6 +1,6 @@
 name=Fistful of Force
-image=http://mtgimage.com/card/fistful%20of%20force.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lw/212.jpg
+value=2.457
 rarity=C
 type=Instant
 cost={1}{G}

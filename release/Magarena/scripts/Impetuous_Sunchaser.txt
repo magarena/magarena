@@ -1,5 +1,5 @@
 name=Impetuous Sunchaser
-image=http://mtgimage.com/card/impetuous%20sunchaser.jpg
+image=http://magiccards.info/scans/en/bng/99.jpg
 value=3.628
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{R}
 pt=1/1
 ability=flying;haste;SN attacks each turn if able.
 timing=fmain
-oracle=Flying, haste. Impetuous Sunchaser attacks each turn if able.
+oracle=Flying, haste\nImpetuous Sunchaser attacks each turn if able.

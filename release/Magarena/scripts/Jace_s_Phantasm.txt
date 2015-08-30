@@ -1,5 +1,5 @@
 name=Jace's Phantasm
-image=http://mtgimage.com/card/jace's%20phantasm.jpg
+image=http://magiccards.info/scans/en/ddm/3.jpg
 value=3.868
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying;\
         SN gets +4/+4 as long as an opponent has ten or more cards in his or her graveyard.
 timing=main
-oracle=Flying. Jace's Phantasm gets +4/+4 as long as an opponent has ten or more cards in his or her graveyard.
+oracle=Flying\nJace's Phantasm gets +4/+4 as long as an opponent has ten or more cards in his or her graveyard.

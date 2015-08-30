@@ -1,17 +1,14 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
-    if (event.isYes()) {
-        event.payManaCost(game);
-    } else {
-        final MagicDamage damage = new MagicDamage(event.getSource(),event.getPlayer(),2);
-        game.doAction(new MagicDealDamageAction(damage));
+    if (event.isNo()) {
+        game.doAction(new DealDamageAction(event.getSource(),event.getPlayer(),2));
     }
 }
 
 [
     new MagicWhenOtherSpellIsCastTrigger() {
         @Override
-       public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
             return permanent.isEnemy(cardOnStack) && cardOnStack.hasType(MagicType.Creature) ?
                 new MagicEvent(
                     permanent,

@@ -14,9 +14,9 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicPlayTokensAction(
+            game.doAction(new PlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("2/2 green Wolf creature token"),
+                CardDefinitions.getToken("2/2 green Wolf creature token"),
                 event.getRefInt()
             ));
         }

@@ -13,7 +13,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_OPPONENT,
+                TARGET_OPPONENT,
                 payedCost.getX(),
                 this,
                 "Choose a color. Target opponent\$ exiles the top RN cards of his or her library. " +
@@ -34,12 +34,11 @@
                         final MagicPlayer player = event.getRefPlayer();
                         final int x = outerEvent.getRefInt();
                         for (final MagicCard card : player.getLibrary().getCardsFromTop(x)) {
-                            game.doAction(new MagicRemoveCardAction(card,MagicLocationType.OwnersLibrary));
-                            game.doAction(new MagicMoveCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Exile));
+                            game.doAction(new ShiftCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Exile));
                             if (card.hasColor(color)) {
-                                game.doAction(new MagicPlayTokenAction(
+                                game.doAction(new PlayTokenAction(
                                     event.getPlayer(),
-                                    TokenCardDefinitions.get("1/1 black Faerie Rogue creature token with flying")
+                                    CardDefinitions.getToken("1/1 black Faerie Rogue creature token with flying")
                                 ));
                             }
                         }

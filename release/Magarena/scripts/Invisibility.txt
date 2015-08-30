@@ -1,5 +1,5 @@
 name=Invisibility
-image=http://mtgimage.com/card/invisibility.jpg
+image=http://magiccards.info/scans/en/m15/61.jpg
 value=2.100
 rarity=U
 type=Enchantment
@@ -8,4 +8,4 @@ cost={U}{U}
 ability=Enchanted creature can't be blocked except by Walls.
 enchant=unblockable,pos creature
 timing=aura
-oracle=Enchant creature. Enchanted creature can't be blocked except by Walls.
+oracle=Enchant creature\nEnchanted creature can't be blocked except by Walls.

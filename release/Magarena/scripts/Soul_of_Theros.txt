@@ -1,0 +1,13 @@
+name=Soul of Theros
+image=http://magiccards.info/scans/en/m15/34.jpg
+value=4.000
+rarity=M
+type=Creature
+subtype=Avatar
+cost={4}{W}{W}
+pt=6/6
+ability=Vigilance;\
+        {4}{W}{W}: Creatures you control get +2/+2 and gain first strike and lifelink until end of turn.;\
+        {4}{W}{W}, Exile SN from your graveyard: Creatures you control get +2/+2 and gain first strike and lifelink until end of turn.
+timing=main
+oracle=Vigilance\n{4}{W}{W}: Creatures you control get +2/+2 and gain first strike and lifelink until end of turn.\n{4}{W}{W}, Exile Soul of Theros from your graveyard: Creatures you control get +2/+2 and gain first strike and lifelink until end of turn.

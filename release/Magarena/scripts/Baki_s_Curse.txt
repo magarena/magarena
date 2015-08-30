@@ -1,5 +1,5 @@
 name=Baki's Curse
-image=http://mtgimage.com/card/baki%27s%20curse.jpg
+image=http://magiccards.info/scans/en/hl/27.jpg
 value=1.830
 rarity=R
 type=Sorcery

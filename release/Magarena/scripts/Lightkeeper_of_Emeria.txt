@@ -1,5 +1,5 @@
 name=Lightkeeper of Emeria
-image=http://mtgimage.com/card/lightkeeper%20of%20emeria.jpg
+image=http://magiccards.info/scans/en/cmd/18.jpg
 value=2.512
 rarity=U
 type=Creature
@@ -10,4 +10,4 @@ ability=Multikicker {W};\
         Flying
 timing=main
 requires_groovy_code
-oracle=Multikicker {W}. Flying. When Lightkeeper of Emeria enters the battlefield, you gain 2 life for each time it was kicked.
+oracle=Multikicker {W}\nFlying\nWhen Lightkeeper of Emeria enters the battlefield, you gain 2 life for each time it was kicked.

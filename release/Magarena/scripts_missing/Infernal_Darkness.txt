@@ -1,10 +1,10 @@
 name=Infernal Darkness
-image=http://mtgimage.com/card/infernal%20darkness.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me2/97.jpg
+value=4.058
 rarity=R
 type=Enchantment
 cost={2}{B}{B}
 ability=Cumulative upkeep—Pay {B} and 1 life.;\
         If a land is tapped for mana, it produces {B} instead of any other type.
-timing=main
-oracle=Cumulative upkeep—Pay {B} and 1 life. If a land is tapped for mana, it produces {B} instead of any other type.
+timing=enchantment
+oracle=Cumulative upkeep—Pay {B} and 1 life.\nIf a land is tapped for mana, it produces {B} instead of any other type.

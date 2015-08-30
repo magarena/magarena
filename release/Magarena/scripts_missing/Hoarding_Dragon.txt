@@ -1,6 +1,6 @@
 name=Hoarding Dragon
-image=http://mtgimage.com/card/hoarding%20dragon.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/149.jpg
+value=3.800
 rarity=R
 type=Creature
 subtype=Dragon
@@ -10,4 +10,4 @@ ability=Flying;\
         When SN enters the battlefield, you may search your library for an artifact card, exile it, then shuffle your library.;\
         When SN dies, you may put the exiled card into its owner's hand.
 timing=main
-oracle=Flying. When Hoarding Dragon enters the battlefield, you may search your library for an artifact card, exile it, then shuffle your library. When Hoarding Dragon dies, you may put the exiled card into its owner's hand.
+oracle=Flying\nWhen Hoarding Dragon enters the battlefield, you may search your library for an artifact card, exile it, then shuffle your library.\nWhen Hoarding Dragon dies, you may put the exiled card into its owner's hand.

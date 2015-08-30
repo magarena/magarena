@@ -1,10 +1,10 @@
 name=Long-Forgotten Gohei
-image=http://mtgimage.com/card/long-forgotten%20gohei.jpg
+image=http://magiccards.info/scans/en/chk/261.jpg
 value=2.500
 rarity=R
 type=Artifact
 cost={3}
 ability=Arcane spells you cast cost {1} less to cast.;\
         Spirit creatures you control get +1/+1.
-timing=main
-oracle=Arcane spells you cast cost {1} less to cast. Spirit creatures you control get +1/+1.
+timing=artifact
+oracle=Arcane spells you cast cost {1} less to cast.\nSpirit creatures you control get +1/+1.

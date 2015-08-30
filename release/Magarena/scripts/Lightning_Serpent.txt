@@ -1,5 +1,5 @@
 name=Lightning Serpent
-image=http://mtgimage.com/card/lightning%20serpent.jpg
+image=http://magiccards.info/scans/en/cs/88.jpg
 value=3.933
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=trample;haste;\
         SN enters the battlefield with X +1/+0 counters on it.;\
         At the beginning of the end step, sacrifice SN.
 timing=fmain
-oracle=Trample, haste. Lightning Serpent enters the battlefield with X +1/+0 counters on it. At the beginning of the end step, sacrifice Lightning Serpent.
+oracle=Trample, haste\nLightning Serpent enters the battlefield with X +1/+0 counters on it.\nAt the beginning of the end step, sacrifice Lightning Serpent.

@@ -1,9 +1,0 @@
-name=Bathe in Light
-image=http://mtgimage.com/card/bathe%20in%20light.jpg
-value=2.500
-rarity=U
-type=Instant
-cost={1}{W}
-effect=Choose a color. Target creature and each other creature that shares a color with it gain protection from the chosen color until end of turn.
-timing=removal
-oracle=Radiance — Choose a color. Target creature and each other creature that shares a color with it gain protection from the chosen color until end of turn.

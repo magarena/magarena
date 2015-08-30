@@ -1,11 +1,11 @@
 name=Dizzying Gaze
-image=http://mtgimage.com/card/dizzying%20gaze.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ex/81.jpg
+value=2.672
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={R}
 ability=Enchant creature you control;\
         {R}: Enchanted creature deals 1 damage to target creature with flying.
-timing=main
-oracle=Enchant creature you control. {R}: Enchanted creature deals 1 damage to target creature with flying.
+timing=aura
+oracle=Enchant creature you control\n{R}: Enchanted creature deals 1 damage to target creature with flying.

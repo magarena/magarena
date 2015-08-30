@@ -1,9 +1,9 @@
 name=Goblin War Drums
-image=http://mtgimage.com/card/goblin%20war%20drums.jpg
-value=2.500
-rarity=C
+image=http://magiccards.info/scans/en/7e/194.jpg
+value=4.082
+rarity=U
 type=Enchantment
 cost={2}{R}
 ability=Each creature you control can't be blocked except by two or more creatures.
-timing=main
+timing=enchantment
 oracle=Each creature you control can't be blocked except by two or more creatures.

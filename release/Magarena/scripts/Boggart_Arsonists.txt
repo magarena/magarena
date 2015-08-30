@@ -1,5 +1,5 @@
 name=Boggart Arsonists
-image=http://mtgimage.com/card/boggart%20arsonists.jpg
+image=http://magiccards.info/scans/en/shm/85.jpg
 value=2.363
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{R}
 pt=2/1
 ability=plainswalk;{2}{R},Sacrifice SN:Destroy target Scarecrow.;{2}{R},Sacrifice SN:Destroy target Plains.
 timing=main
-oracle=Plainswalk. {2}{R}, Sacrifice Boggart Arsonists: Destroy target Scarecrow or Plains.
+oracle=Plainswalk\n{2}{R}, Sacrifice Boggart Arsonists: Destroy target Scarecrow or Plains.

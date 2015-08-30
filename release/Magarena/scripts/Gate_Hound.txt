@@ -1,5 +1,5 @@
 name=Gate Hound
-image=http://mtgimage.com/card/gate%20hound.jpg
+image=http://magiccards.info/scans/en/rav/19.jpg
 value=1.575
 rarity=C
 type=Creature

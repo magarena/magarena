@@ -1,5 +1,5 @@
 name=Gluttonous Cyclops
-image=http://mtgimage.com/card/gluttonous%20cyclops.jpg
+image=http://magiccards.info/scans/en/jou/99.jpg
 value=2.205
 rarity=C
 type=Creature

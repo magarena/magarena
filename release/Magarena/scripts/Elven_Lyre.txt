@@ -1,5 +1,5 @@
 name=Elven Lyre
-image=http://mtgimage.com/card/elven%20lyre.jpg
+image=http://magiccards.info/scans/en/me2/208.jpg
 value=1.661
 rarity=C
 type=Artifact

@@ -1,13 +1,13 @@
 name=Gaea's Revenge
-image=http://mtgimage.com/card/gaea%27s%20revenge.jpg
-value=4.247
-rarity=M
+image=http://magiccards.info/scans/en/ori/177.jpg
+value=2.500
+rarity=R
 type=Creature
 subtype=Elemental
 cost={5}{G}{G}
 pt=8/5
 ability=SN can't be countered.;\
-        haste;\
+        Haste;\
         SN can't be the target of nongreen spells or abilities from nongreen sources.
 timing=fmain
-oracle=Gaea's Revenge can't be countered. Haste. Gaea's Revenge can't be the target of nongreen spells or abilities from nongreen sources.
+oracle=Gaea's Revenge can't be countered.\nHaste\nGaea's Revenge can't be the target of nongreen spells or abilities from nongreen sources.

@@ -1,5 +1,5 @@
 name=Utter End
-image=http://mtgimage.com/card/utter%20end.jpg
+image=http://magiccards.info/scans/en/ktk/210.jpg
 value=4.167
 rarity=R
 type=Instant

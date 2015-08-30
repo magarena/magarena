@@ -1,6 +1,6 @@
 name=Blazing Blade Askari
-image=http://mtgimage.com/card/blazing%20blade%20askari.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ts/146.jpg
+value=2.686
 rarity=C
 type=Creature
 subtype=Human,Knight
@@ -9,4 +9,4 @@ pt=2/2
 ability=Flanking;\
         {2}: SN becomes colorless until end of turn.
 timing=main
-oracle=Flanking. {2}: Blazing Blade Askari becomes colorless until end of turn.
+oracle=Flanking\n{2}: Blazing Blade Askari becomes colorless until end of turn.

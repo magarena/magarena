@@ -1,5 +1,5 @@
 name=Soul Barrier
-image=http://mtgimage.com/card/soul%20barrier.jpg
+image=http://magiccards.info/scans/en/5e/125.jpg
 value=4.102
 rarity=U
 type=Enchantment

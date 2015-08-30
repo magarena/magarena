@@ -1,5 +1,5 @@
 name=Riot Spikes
-image=http://mtgimage.com/card/riot%20spikes.jpg
+image=http://magiccards.info/scans/en/di/146.jpg
 value=2.541
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={B/R}
 ability=Enchanted creature gets +2/-1.
 timing=aura
 enchant=pump,creature
-oracle=Enchant creature. Enchanted creature gets +2/-1.
+oracle=Enchant creature\nEnchanted creature gets +2/-1.

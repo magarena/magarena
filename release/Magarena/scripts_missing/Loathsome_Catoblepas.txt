@@ -1,6 +1,6 @@
 name=Loathsome Catoblepas
-image=http://mtgimage.com/card/loathsome%20catoblepas.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ths/95.jpg
+value=1.951
 rarity=C
 type=Creature
 subtype=Beast
@@ -9,4 +9,4 @@ pt=3/3
 ability={2}{G}: SN must be blocked this turn if able.;\
         When SN dies, target creature an opponent controls gets -3/-3 until end of turn.
 timing=main
-oracle={2}{G}: Loathsome Catoblepas must be blocked this turn if able. When Loathsome Catoblepas dies, target creature an opponent controls gets -3/-3 until end of turn.
+oracle={2}{G}: Loathsome Catoblepas must be blocked this turn if able.\nWhen Loathsome Catoblepas dies, target creature an opponent controls gets -3/-3 until end of turn.

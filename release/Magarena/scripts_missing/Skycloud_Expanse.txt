@@ -1,8 +1,8 @@
 name=Skycloud Expanse
-image=http://mtgimage.com/card/skycloud%20expanse.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/327.jpg
+value=3.838
 rarity=R
 type=Land
 ability={1}, {T}: Add {W}{U} to your mana pool.
-timing=main
+timing=land
 oracle={1}, {T}: Add {W}{U} to your mana pool.

@@ -1,5 +1,5 @@
 name=Llanowar Dead
-image=http://mtgimage.com/card/llanowar%20dead.jpg
+image=http://magiccards.info/scans/en/ap/109.jpg
 value=3.789
 rarity=C
 type=Creature

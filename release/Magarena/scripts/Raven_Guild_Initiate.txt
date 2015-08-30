@@ -1,11 +1,11 @@
 name=Raven Guild Initiate
-image=http://mtgimage.com/card/raven%20guild%20initiate.jpg
+image=http://magiccards.info/scans/en/sc/46.jpg
 value=2.486
 rarity=C
 type=Creature
 subtype=Human,Wizard
 cost={2}{U}
 pt=1/4
-ability=Morph Return a Bird you control to its owner's hand
+ability=Morph—Return a Bird you control to its owner's hand
 timing=main
 oracle=Morph—Return a Bird you control to its owner's hand.

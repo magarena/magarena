@@ -1,5 +1,5 @@
 name=Shoreline Ranger
-image=http://mtgimage.com/card/shoreline%20ranger.jpg
+image=http://magiccards.info/scans/en/cns/106.jpg
 value=3.900
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/4
 ability=Flying;\
         Islandcycling {2}
 timing=main
-oracle=Flying. Islandcycling {2}
+oracle=Flying\nIslandcycling {2}

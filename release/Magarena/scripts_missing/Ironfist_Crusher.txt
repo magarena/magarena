@@ -1,6 +1,6 @@
 name=Ironfist Crusher
-image=http://mtgimage.com/card/ironfist%20crusher.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/42.jpg
+value=3.058
 rarity=U
 type=Creature
 subtype=Human,Soldier
@@ -9,4 +9,4 @@ pt=2/4
 ability=SN can block any number of creatures.;\
         Morph {3}{W}
 timing=main
-oracle=Ironfist Crusher can block any number of creatures. Morph {3}{W}
+oracle=Ironfist Crusher can block any number of creatures.\nMorph {3}{W}

@@ -1,5 +1,5 @@
 name=Broodwarden
-image=http://mtgimage.com/card/broodwarden.jpg
+image=http://magiccards.info/scans/en/roe/181.jpg
 value=3.945
 rarity=U
 type=Creature

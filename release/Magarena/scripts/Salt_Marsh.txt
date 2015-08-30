@@ -1,5 +1,5 @@
 name=Salt Marsh
-image=http://mtgimage.com/card/salt%20marsh.jpg
+image=http://magiccards.info/scans/en/8e/325.jpg
 value=3.854
 rarity=U
 type=Land
@@ -7,4 +7,4 @@ mana=u3b3
 ability={T}: Add {U} or {B} to your mana pool.;\
         SN enters the battlefield tapped.
 timing=tapland
-oracle=Salt Marsh enters the battlefield tapped. {T}: Add {U} or {B} to your mana pool.
+oracle=Salt Marsh enters the battlefield tapped.\n{T}: Add {U} or {B} to your mana pool.

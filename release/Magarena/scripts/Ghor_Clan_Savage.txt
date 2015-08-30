@@ -1,5 +1,5 @@
 name=Ghor-Clan Savage
-image=http://mtgimage.com/card/ghor%2Dclan%20savage.jpg
+image=http://magiccards.info/scans/en/ddl/53.jpg
 value=2.500
 rarity=C
 type=Creature

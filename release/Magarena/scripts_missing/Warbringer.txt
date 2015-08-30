@@ -1,0 +1,12 @@
+name=Warbringer
+image=http://magiccards.info/scans/en/dtk/168.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Orc,Berserker
+cost={3}{R}
+pt=3/3
+ability=Dash costs you pay cost {2} less.;\
+        Dash {2}{R}
+timing=main
+oracle=Dash costs you pay cost {2} less.\nDash {2}{R}

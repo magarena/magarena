@@ -1,6 +1,6 @@
 name=Veiling Oddity
-image=http://mtgimage.com/card/veiling%20oddity.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pc/51.jpg
+value=2.946
 rarity=C
 type=Creature
 subtype=Illusion
@@ -9,4 +9,4 @@ pt=2/3
 ability=Suspend 4—{1}{U};\
         When the last time counter is removed from SN while it's exiled, creatures can't be blocked this turn.
 timing=main
-oracle=Suspend 4—{1}{U}. When the last time counter is removed from Veiling Oddity while it's exiled, creatures can't be blocked this turn.
+oracle=Suspend 4—{1}{U}\nWhen the last time counter is removed from Veiling Oddity while it's exiled, creatures can't be blocked this turn.

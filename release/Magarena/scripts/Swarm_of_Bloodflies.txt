@@ -1,5 +1,5 @@
 name=Swarm of Bloodflies
-image=http://mtgimage.com/card/swarm%20of%20bloodflies.jpg
+image=http://magiccards.info/scans/en/ktk/92.jpg
 value=3.000
 rarity=U
 type=Creature
@@ -10,4 +10,4 @@ ability=Flying;\
         SN enters the battlefield with two +1/+1 counters on it.;\
         Whenever another creature dies, put a +1/+1 counter on SN.
 timing=main
-oracle=Flying. Swarm of Bloodflies enters the battlefield with two +1/+1 counters on it. Whenever another creature dies, put a +1/+1 counter on Swarm of Bloodflies.
+oracle=Flying\nSwarm of Bloodflies enters the battlefield with two +1/+1 counters on it.\nWhenever another creature dies, put a +1/+1 counter on Swarm of Bloodflies.

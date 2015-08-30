@@ -1,5 +1,5 @@
 name=Scavenging Scarab
-image=http://mtgimage.com/card/scavenging%20scarab.jpg
+image=http://magiccards.info/scans/en/ds/51.jpg
 value=1.035
 ability=SN can't block.
 rarity=C

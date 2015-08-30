@@ -1,5 +1,5 @@
 name=Soulsworn Spirit
-image=http://mtgimage.com/card/soulsworn%20spirit.jpg
+image=http://magiccards.info/scans/en/rtr/51.jpg
 value=2.606
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=SN can't be blocked.;\
         When SN enters the battlefield, detain target creature an opponent controls.
 timing=main
-oracle=Soulsworn Spirit can't be blocked. When Soulsworn Spirit enters the battlefield, detain target creature an opponent controls.
+oracle=Soulsworn Spirit can't be blocked.\nWhen Soulsworn Spirit enters the battlefield, detain target creature an opponent controls.

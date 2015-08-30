@@ -1,0 +1,9 @@
+name=Piracy Charm
+image=http://magiccards.info/scans/en/pc/58.jpg
+value=4.087
+rarity=C
+type=Instant
+cost={U}
+effect=Choose one — (1) Target creature gains islandwalk until end of turn. (2) Target creature gets +2/-1 until end of turn. (3) Target player discards a card.
+timing=removal
+oracle=Choose one —\n• Target creature gains islandwalk until end of turn.\n• Target creature gets +2/-1 until end of turn.\n• Target player discards a card.

@@ -1,5 +1,5 @@
 name=Oni of Wild Places
-image=http://mtgimage.com/card/oni%20of%20wild%20places.jpg
+image=http://magiccards.info/scans/en/ddn/19.jpg
 value=2.919
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=6/5
 ability=Haste;\
         At the beginning of your upkeep, return a red creature you control to its owner's hand.
 timing=main
-oracle=Haste. At the beginning of your upkeep, return a red creature you control to its owner's hand.
+oracle=Haste\nAt the beginning of your upkeep, return a red creature you control to its owner's hand.

@@ -1,9 +1,9 @@
 name=Arcum's Whistle
-image=http://mtgimage.com/card/arcum%27s%20whistle.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ia/286.jpg
+value=2.161
 rarity=U
 type=Artifact
 cost={3}
 ability={3}, {T}: Choose target non-Wall creature the active player has controlled continuously since the beginning of the turn. That player may pay {X}, where X is that creature's converted mana cost. If he or she doesn't, the creature attacks this turn if able, and at the beginning of the next end step, destroy it if it didn't attack. Activate this ability only before attackers are declared.
-timing=main
+timing=artifact
 oracle={3}, {T}: Choose target non-Wall creature the active player has controlled continuously since the beginning of the turn. That player may pay {X}, where X is that creature's converted mana cost. If he or she doesn't, the creature attacks this turn if able, and at the beginning of the next end step, destroy it if it didn't attack. Activate this ability only before attackers are declared.

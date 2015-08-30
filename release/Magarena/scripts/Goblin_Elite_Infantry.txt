@@ -1,5 +1,5 @@
 name=Goblin Elite Infantry
-image=http://mtgimage.com/card/goblin%20elite%20infantry.jpg
+image=http://magiccards.info/scans/en/10e/206.jpg
 value=1.308
 rarity=C
 type=Creature

@@ -1,0 +1,9 @@
+name=Blue Elemental Blast
+image=http://magiccards.info/scans/en/me4/39.jpg
+value=4.189
+rarity=U
+type=Instant
+cost={U}
+effect=Choose one — (1) Counter target red spell. (2) Destroy target red permanent.
+timing=counter
+oracle=Choose one —\n• Counter target red spell.\n• Destroy target red permanent.

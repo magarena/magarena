@@ -1,5 +1,5 @@
 name=Moonglove Changeling
-image=http://mtgimage.com/card/moonglove%20changeling.jpg
+image=http://magiccards.info/scans/en/mt/67.jpg
 value=2.958
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{B}
 pt=2/2
 ability=changeling;{B}: SN gains deathtouch until end of turn.
 timing=main
-oracle=Changeling. {B}: Moonglove Changeling gains deathtouch until end of turn.
+oracle=Changeling\n{B}: Moonglove Changeling gains deathtouch until end of turn.

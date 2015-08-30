@@ -1,11 +1,11 @@
 name=Samite Blessing
-image=http://mtgimage.com/card/samite%20blessing.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sh/113.jpg
+value=2.933
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={W}
 ability=Enchant creature;\
         Enchanted creature has "{T}: The next time a source of your choice would deal damage to target creature this turn, prevent that damage."
-timing=main
-oracle=Enchant creature. Enchanted creature has "{T}: The next time a source of your choice would deal damage to target creature this turn, prevent that damage."
+timing=aura
+oracle=Enchant creature\nEnchanted creature has "{T}: The next time a source of your choice would deal damage to target creature this turn, prevent that damage."

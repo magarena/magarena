@@ -1,0 +1,11 @@
+name=Magus of the Mirror
+image=http://magiccards.info/scans/en/cns/117.jpg
+value=3.375
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={4}{B}{B}
+pt=4/2
+timing=main
+requires_groovy_code=Mirror Universe
+oracle={T}, Sacrifice Magus of the Mirror: Exchange life totals with target opponent. Activate this ability only during your upkeep.

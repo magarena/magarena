@@ -1,9 +1,9 @@
 name=Dreams of the Dead
-image=http://mtgimage.com/card/dreams%20of%20the%20dead.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/me2/46.jpg
+value=2.861
+rarity=R
 type=Enchantment
 cost={3}{U}
 ability={1}{U}: Return target white or black creature card from your graveyard to the battlefield. That creature gains "Cumulative upkeep {2}." If the creature would leave the battlefield, exile it instead of putting it anywhere else.
-timing=main
+timing=enchantment
 oracle={1}{U}: Return target white or black creature card from your graveyard to the battlefield. That creature gains "Cumulative upkeep {2}." If the creature would leave the battlefield, exile it instead of putting it anywhere else.

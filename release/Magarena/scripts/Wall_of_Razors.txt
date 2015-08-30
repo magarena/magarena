@@ -1,5 +1,5 @@
 name=Wall of Razors
-image=http://mtgimage.com/card/wall%20of%20razors.jpg
+image=http://magiccards.info/scans/en/sh/100.jpg
 value=4.000
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{R}
 pt=4/1
 ability=defender;first strike
 timing=main
-oracle=Defender. First strike
+oracle=Defender\nFirst strike

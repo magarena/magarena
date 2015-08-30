@@ -1,0 +1,11 @@
+name=Animal Boneyard
+image=http://magiccards.info/scans/en/od/4.jpg
+value=2.732
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={2}{W}
+timing=aura
+enchant=pump,pos land
+requires_groovy_code
+oracle=Enchant land\nEnchanted land has "{T}, Sacrifice a creature: You gain life equal to the sacrificed creature's toughness."

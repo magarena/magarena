@@ -1,13 +1,13 @@
 name=Arbor Colossus
-image=http://mtgimage.com/card/arbor%20colossus.jpg
+image=http://magiccards.info/scans/en/ths/150.jpg
 value=3.623
 rarity=R
 type=Creature
 subtype=Giant
 cost={2}{G}{G}{G}
 pt=6/6
-ability=reach;\
+ability=Reach;\
         {3}{G}{G}{G}: Monstrosity 3.;\
         When SN becomes monstrous, destroy target creature with flying an opponent controls.
 timing=main
-oracle=Reach. {3}{G}{G}{G}: Monstrosity 3. When Arbor Colossus becomes monstrous, destroy target creature with flying an opponent controls.
+oracle=Reach\n{3}{G}{G}{G}: Monstrosity 3.\nWhen Arbor Colossus becomes monstrous, destroy target creature with flying an opponent controls.

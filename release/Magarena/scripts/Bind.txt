@@ -1,9 +1,9 @@
 name=Bind
-image=http://mtgimage.com/card/bind.jpg
+image=http://magiccards.info/scans/en/in/182.jpg
 value=4.150
 rarity=R
 type=Instant
 cost={1}{G}
 effect=Counter target activated ability.~Draw a card.
 timing=counter
-oracle=Counter target activated ability. Draw a card.
+oracle=Counter target activated ability.\nDraw a card.

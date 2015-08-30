@@ -1,11 +1,11 @@
 name=Errantry
-image=http://mtgimage.com/card/errantry.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me2/124.jpg
+value=2.652
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{R}
 ability=Enchant creature;\
         Enchanted creature gets +3/+0 and can only attack alone.
-timing=main
-oracle=Enchant creature. Enchanted creature gets +3/+0 and can only attack alone.
+timing=aura
+oracle=Enchant creature\nEnchanted creature gets +3/+0 and can only attack alone.

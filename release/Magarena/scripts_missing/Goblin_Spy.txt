@@ -1,6 +1,6 @@
 name=Goblin Spy
-image=http://mtgimage.com/card/goblin%20spy.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/145.jpg
+value=3.841
 rarity=U
 type=Creature
 subtype=Goblin,Rogue

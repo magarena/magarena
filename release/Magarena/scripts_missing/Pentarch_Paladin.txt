@@ -1,6 +1,6 @@
 name=Pentarch Paladin
-image=http://mtgimage.com/card/pentarch%20paladin.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ts/32.jpg
+value=3.924
 rarity=R
 type=Creature
 subtype=Human,Knight
@@ -10,4 +10,4 @@ ability=Flanking;\
         As SN enters the battlefield, choose a color.;\
         {W}{W}, {T}: Destroy target permanent of the chosen color.
 timing=main
-oracle=Flanking. As Pentarch Paladin enters the battlefield, choose a color. {W}{W}, {T}: Destroy target permanent of the chosen color.
+oracle=Flanking\nAs Pentarch Paladin enters the battlefield, choose a color.\n{W}{W}, {T}: Destroy target permanent of the chosen color.

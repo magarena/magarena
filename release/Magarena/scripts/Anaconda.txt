@@ -1,11 +1,11 @@
 name=Anaconda
-image=http://mtgimage.com/card/anaconda.jpg
+image=http://magiccards.info/scans/en/9e/229.jpg
 value=3.273
-ability=swampwalk
 rarity=U
 type=Creature
 subtype=Snake
 cost={3}{G}
 pt=3/3
+ability=Swampwalk
 timing=main
 oracle=Swampwalk

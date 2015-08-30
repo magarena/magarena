@@ -1,6 +1,6 @@
 name=Dunerider Outlaw
-image=http://mtgimage.com/card/dunerider%20outlaw.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pc/86.jpg
+value=3.588
 rarity=U
 type=Creature
 subtype=Human,Rebel,Rogue
@@ -9,4 +9,4 @@ pt=1/1
 ability=Protection from green;\
         At the beginning of each end step, if SN dealt damage to an opponent this turn, put a +1/+1 counter on it.
 timing=main
-oracle=Protection from green. At the beginning of each end step, if Dunerider Outlaw dealt damage to an opponent this turn, put a +1/+1 counter on it.
+oracle=Protection from green\nAt the beginning of each end step, if Dunerider Outlaw dealt damage to an opponent this turn, put a +1/+1 counter on it.

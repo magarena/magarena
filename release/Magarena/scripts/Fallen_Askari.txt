@@ -1,5 +1,5 @@
 name=Fallen Askari
-image=http://mtgimage.com/card/fallen%20askari.jpg
+image=http://magiccards.info/scans/en/vma/119.jpg
 value=3.500
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{B}
 pt=2/2
 ability=flanking;SN can't block.
 timing=main
-oracle=Flanking. Fallen Askari can't block.
+oracle=Flanking\nFallen Askari can't block.

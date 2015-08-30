@@ -1,5 +1,5 @@
 name=Kavu Chameleon
-image=http://mtgimage.com/card/kavu%20chameleon.jpg
+image=http://magiccards.info/scans/en/in/191.jpg
 value=4.048
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=SN can't be countered.
 timing=fmain
 requires_groovy_code=Spiritmonger
-oracle=Kavu Chameleon can't be countered. {G}: Kavu Chameleon becomes the color of your choice until end of turn.
+oracle=Kavu Chameleon can't be countered.\n{G}: Kavu Chameleon becomes the color of your choice until end of turn.

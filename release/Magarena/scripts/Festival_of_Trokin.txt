@@ -1,9 +1,9 @@
 name=Festival of Trokin
-image=http://mtgimage.com/card/festival%20of%20trokin.jpg
+image=http://magiccards.info/scans/en/po2/136.jpg
 value=3.958
 rarity=C
 type=Sorcery
 cost={W}
+effect=You gain 2 life for each creature you control.
 timing=main
-requires_groovy_code
 oracle=You gain 2 life for each creature you control.

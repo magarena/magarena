@@ -1,9 +1,9 @@
 name=Murderous Cut
-image=http://mtgimage.com/card/murderous%20cut.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/81.jpg
+value=3.900
 rarity=U
 type=Instant
 cost={4}{B}
 effect=Delve~Destroy target creature.
 timing=removal
-oracle=Delve. Destroy target creature.
+oracle=Delve\nDestroy target creature.

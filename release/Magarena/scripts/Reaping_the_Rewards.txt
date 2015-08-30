@@ -1,10 +1,10 @@
 name=Reaping the Rewards
-image=http://mtgimage.com/card/reaping%20the%20rewards.jpg
+image=http://magiccards.info/scans/en/ex/16.jpg
 value=2.143
 rarity=C
 type=Instant
 cost={W}
-ability=Buyback Sacrifice a land.
-effect=You gain 2 life.
+ability=Buyback—Sacrifice a land.
+effect=You gain 2 life.~Buyback
 timing=removal
-oracle=Buyback—Sacrifice a land. You gain 2 life.
+oracle=Buyback—Sacrifice a land.\nYou gain 2 life.

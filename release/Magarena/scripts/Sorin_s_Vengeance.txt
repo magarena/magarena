@@ -1,5 +1,5 @@
 name=Sorin's Vengeance
-image=http://mtgimage.com/card/sorin%27s%20vengeance.jpg
+image=http://magiccards.info/scans/en/m12/111.jpg
 value=4.129
 rarity=R
 type=Sorcery

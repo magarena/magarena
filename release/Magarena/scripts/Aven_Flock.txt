@@ -1,5 +1,5 @@
 name=Aven Flock
-image=http://mtgimage.com/card/aven%20flock.jpg
+image=http://magiccards.info/scans/en/9e/4.jpg
 value=1.382
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={4}{W}
 pt=2/3
 ability=flying;{W}: SN gets +0/+1 until end of turn.
 timing=main
-oracle=Flying. {W}: Aven Flock gets +0/+1 until end of turn.
+oracle=Flying\n{W}: Aven Flock gets +0/+1 until end of turn.

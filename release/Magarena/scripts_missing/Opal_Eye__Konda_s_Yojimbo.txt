@@ -1,6 +1,6 @@
 name=Opal-Eye, Konda's Yojimbo
-image=http://mtgimage.com/card/opal-eye%2C%20konda%27s%20yojimbo.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bok/17.jpg
+value=3.791
 rarity=R
 type=Legendary,Creature
 subtype=Fox,Samurai
@@ -11,4 +11,4 @@ ability=Defender;\
         {T}: The next time a source of your choice would deal damage this turn, that damage is dealt to SN instead.;\
         {1}{W}: Prevent the next 1 damage that would be dealt to Opal-Eye this turn.
 timing=main
-oracle=Defender. Bushido 1. {T}: The next time a source of your choice would deal damage this turn, that damage is dealt to Opal-Eye, Konda's Yojimbo instead. {1}{W}: Prevent the next 1 damage that would be dealt to Opal-Eye this turn.
+oracle=Defender\nBushido 1\n{T}: The next time a source of your choice would deal damage this turn, that damage is dealt to Opal-Eye, Konda's Yojimbo instead.\n{1}{W}: Prevent the next 1 damage that would be dealt to Opal-Eye this turn.

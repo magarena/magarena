@@ -1,5 +1,5 @@
 name=Withengar Unbound
-image=http://mtgimage.com/card/withengar%20unbound.jpg
+image=http://magiccards.info/scans/en/dka/147b.jpg
 value=3.839
 rarity=M
 type=Legendary,Creature
@@ -12,4 +12,4 @@ ability=Flying;\
 transform=Elbrus, the Binding Blade
 timing=main
 hidden
-oracle=Flying, intimidate, trample. Whenever a player loses the game, put thirteen +1/+1 counters on Withengar Unbound.
+oracle=Flying, intimidate, trample\nWhenever a player loses the game, put thirteen +1/+1 counters on Withengar Unbound.

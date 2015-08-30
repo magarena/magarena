@@ -1,5 +1,5 @@
 name=Whirlwind Adept
-image=http://mtgimage.com/card/whirlwind%20adept.jpg
+image=http://magiccards.info/scans/en/ktk/63.jpg
 value=2.500
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=4/2
 ability=Hexproof;\
         Prowess
 timing=main
-oracle=Hexproof. Prowess
+oracle=Hexproof\nProwess

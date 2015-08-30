@@ -1,11 +1,11 @@
 name=One with Nature
-image=http://mtgimage.com/card/one%20with%20nature.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sc/125.jpg
+value=3.912
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={G}
 ability=Enchant creature;\
         Whenever enchanted creature deals combat damage to a player, you may search your library for a basic land card, put that card onto the battlefield tapped, then shuffle your library.
-timing=main
-oracle=Enchant creature. Whenever enchanted creature deals combat damage to a player, you may search your library for a basic land card, put that card onto the battlefield tapped, then shuffle your library.
+timing=aura
+oracle=Enchant creature\nWhenever enchanted creature deals combat damage to a player, you may search your library for a basic land card, put that card onto the battlefield tapped, then shuffle your library.

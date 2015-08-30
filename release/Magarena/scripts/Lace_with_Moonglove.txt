@@ -1,9 +1,9 @@
 name=Lace with Moonglove
-image=http://mtgimage.com/card/lace%20with%20moonglove.jpg
+image=http://magiccards.info/scans/en/lw/225.jpg
 value=3.316
 rarity=C
 type=Instant
 cost={2}{G}
 effect=Target creature gains deathtouch until end of turn.~Draw a card.
 timing=pump
-oracle=Target creature gains deathtouch until end of turn. Draw a card.
+oracle=Target creature gains deathtouch until end of turn.\nDraw a card.

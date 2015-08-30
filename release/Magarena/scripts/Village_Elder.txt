@@ -1,5 +1,5 @@
 name=Village Elder
-image=http://mtgimage.com/card/village%20elder.jpg
+image=http://magiccards.info/scans/en/br/94.jpg
 value=2.324
 rarity=C
 type=Creature

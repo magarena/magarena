@@ -1,9 +1,9 @@
 name=Lightning Blow
-image=http://mtgimage.com/set/me3/lightning%20blow.jpg
+image=http://magiccards.info/scans/en/me3/18.jpg
 value=2.204
 rarity=C
 type=Instant
 cost={1}{W}
 effect=Target creature gains first strike until end of turn.~Draw a card at the beginning of the next turn's upkeep.
 timing=pump
-oracle=Target creature gains first strike until end of turn. Draw a card at the beginning of the next turn's upkeep.
+oracle=Target creature gains first strike until end of turn.\nDraw a card at the beginning of the next turn's upkeep.

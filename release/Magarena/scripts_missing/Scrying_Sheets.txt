@@ -1,9 +1,0 @@
-name=Scrying Sheets
-image=http://mtgimage.com/card/scrying%20sheets.jpg
-value=2.500
-rarity=R
-type=Snow,Land
-ability={T}: Add {1} to your mana pool.;\
-        {1}{S}, {T}: Look at the top card of your library. If that card is snow, you may reveal it and put it into your hand.
-timing=main
-oracle={T}: Add {1} to your mana pool. {1}{S}, {T}: Look at the top card of your library. If that card is snow, you may reveal it and put it into your hand.

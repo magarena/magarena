@@ -1,5 +1,5 @@
 name=Chub Toad
-image=http://mtgimage.com/card/chub%20toad.jpg
+image=http://magiccards.info/scans/en/med/116.jpg
 value=2.686
 rarity=C
 type=Creature

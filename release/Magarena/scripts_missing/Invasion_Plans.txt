@@ -1,10 +1,10 @@
 name=Invasion Plans
-image=http://mtgimage.com/card/invasion%20plans.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sh/89.jpg
+value=4.236
 rarity=R
 type=Enchantment
 cost={2}{R}
 ability=All creatures block each turn if able.;\
         The attacking player chooses how each creature blocks each turn.
-timing=main
-oracle=All creatures block each turn if able. The attacking player chooses how each creature blocks each turn.
+timing=enchantment
+oracle=All creatures block each turn if able.\nThe attacking player chooses how each creature blocks each turn.

@@ -1,5 +1,5 @@
 name=Stromgald Cabal
-image=http://mtgimage.com/card/stromgald%20cabal.jpg
+image=http://magiccards.info/scans/en/me2/113.jpg
 value=3.683
 rarity=R
 type=Creature

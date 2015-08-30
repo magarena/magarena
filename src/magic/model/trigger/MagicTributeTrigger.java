@@ -4,8 +4,8 @@ import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicChangeCountersAction;
-import magic.model.action.MagicPutItemOnStackAction;
+import magic.model.action.ChangeCountersAction;
+import magic.model.action.PutItemOnStackAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
@@ -21,18 +21,19 @@ public abstract class MagicTributeTrigger extends MagicWhenComesIntoPlayTrigger 
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
             if (event.isYes()) {
-                game.doAction(new MagicChangeCountersAction(
+                game.doAction(new ChangeCountersAction(
                     permanent,
                     MagicCounterType.PlusOne,
                     event.getRefInt()
                 ));
             } else {
-                game.doAction(new MagicPutItemOnStackAction(new MagicTriggerOnStack(getEvent(permanent))));
+                game.doAction(new PutItemOnStackAction(new MagicTriggerOnStack(getEvent(permanent))));
             }
         }
     };
 
     public MagicTributeTrigger(final int aAmt) {
+        super(MagicTrigger.REPLACEMENT);
         amt = aAmt;
     }
     
@@ -55,11 +56,6 @@ public abstract class MagicTributeTrigger extends MagicWhenComesIntoPlayTrigger 
             action,
             "PN may$ put RN +1/+1 counters on SN."
         );
-    }
-
-    @Override
-    public boolean usesStack() {
-        return false;
     }
     
     public abstract MagicEvent getEvent(final MagicPermanent permanent);

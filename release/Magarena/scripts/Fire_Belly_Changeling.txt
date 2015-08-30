@@ -1,5 +1,5 @@
 name=Fire-Belly Changeling
-image=http://mtgimage.com/card/fire-belly%20changeling.jpg
+image=http://magiccards.info/scans/en/ddg/51.jpg
 value=2.700
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=Changeling;\
         {R}: SN gets +1/+0 until end of turn. Activate this ability no more than twice each turn.
 timing=main
-oracle=Changeling. {R}: Fire-Belly Changeling gets +1/+0 until end of turn. Activate this ability no more than twice each turn.
+oracle=Changeling\n{R}: Fire-Belly Changeling gets +1/+0 until end of turn. Activate this ability no more than twice each turn.

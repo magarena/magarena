@@ -1,9 +1,0 @@
-name=Rush of Knowledge
-image=http://mtgimage.com/card/rush%20of%20knowledge.jpg
-value=2.500
-rarity=C
-type=Sorcery
-cost={4}{U}
-effect=Draw cards equal to the highest converted mana cost among permanents you control.
-timing=main
-oracle=Draw cards equal to the highest converted mana cost among permanents you control.

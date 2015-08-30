@@ -1,6 +1,6 @@
 name=Riptide Entrancer
-image=http://mtgimage.com/card/riptide%20entrancer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/108.jpg
+value=3.864
 rarity=R
 type=Creature
 subtype=Human,Wizard
@@ -9,4 +9,4 @@ pt=1/1
 ability=Whenever SN deals combat damage to a player, you may sacrifice it. If you do, gain control of target creature that player controls.;\
         Morph {U}{U}
 timing=main
-oracle=Whenever Riptide Entrancer deals combat damage to a player, you may sacrifice it. If you do, gain control of target creature that player controls. Morph {U}{U}
+oracle=Whenever Riptide Entrancer deals combat damage to a player, you may sacrifice it. If you do, gain control of target creature that player controls.\nMorph {U}{U}

@@ -1,3 +1,10 @@
+def action = {
+    final MagicGame game, final MagicEvent event ->
+    if (event.isNo()) {
+        game.doAction(new PlayTokenAction(event.getRefPlayer(),CardDefinitions.getToken("3/3 red Ogre creature token")));
+    }
+}
+
 [
     new MagicWhenAttacksTrigger() {
         @Override
@@ -6,18 +13,22 @@
                 new MagicEvent(
                     permanent,
                     this,
-                    "Put a 3/3 red Ogre creature token onto the battlefield unless your opponent pays {3}."
+                    "PN puts a 3/3 red Ogre creature token onto the battlefield unless their opponent pays {3}."
                 ):
                 MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player=event.getPlayer();
-            game.addEvent(new MagicPlayOgreUnlessEvent(
+            game.addEvent(new MagicEvent(
                 event.getPermanent(),
                 player.getOpponent(),
+                new MagicMayChoice(
+                    new MagicPayManaCostChoice(MagicManaCost.create("{3}"))
+                ),
                 player,
-                MagicManaCost.create("{3}")
+                action,
+                "PN may\$ pay {3}."
             ));
         }
     }

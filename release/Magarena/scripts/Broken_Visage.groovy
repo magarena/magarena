@@ -21,13 +21,13 @@ def choice = new MagicTargetChoice("target nonartifact attacking creature");
                 final MagicPermanent creature ->
                 final int power = creature.getPower();
                 final int toughness = creature.getToughness();
-                game.doAction(MagicChangeStateAction.Set(creature,MagicPermanentState.CannotBeRegenerated));
-                game.doAction(new MagicDestroyAction(creature));
-                game.doAction(new MagicPlayTokenAction(
+                game.doAction(ChangeStateAction.Set(creature,MagicPermanentState.CannotBeRegenerated));
+                game.doAction(new DestroyAction(creature));
+                game.doAction(new PlayTokenAction(
                     event.getPlayer(),
                     MagicCardDefinition.create({
                         it.setName("Spirit");
-                        it.setFullName("black Spirit creature token");
+                        it.setDistinctName("black Spirit creature token");
                         it.setPowerToughness(power,toughness);
                         it.setColors("b");
                         it.addSubType(MagicSubType.Spirit);

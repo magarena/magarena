@@ -1,5 +1,5 @@
 name=Mitotic Slime
-image=http://mtgimage.com/card/mitotic%20slime.jpg
+image=http://magiccards.info/scans/en/pc2/67.jpg
 value=3.862
 rarity=R
 type=Creature

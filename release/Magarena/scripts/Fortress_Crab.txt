@@ -1,5 +1,5 @@
 name=Fortress Crab
-image=http://mtgimage.com/card/fortress%20crab.jpg
+image=http://magiccards.info/scans/en/isd/56.jpg
 value=2.842
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Crab
 cost={3}{U}
 pt=1/6
 timing=main
+oracle=NONE

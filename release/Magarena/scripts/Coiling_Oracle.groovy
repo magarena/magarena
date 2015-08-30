@@ -1,5 +1,5 @@
 [
-     new MagicWhenComesIntoPlayTrigger() {
+    new MagicWhenComesIntoPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(
@@ -12,18 +12,15 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicCard card : event.getPlayer().getLibrary().getCardsFromTop(1)) {
-                game.doAction(new MagicRevealAction(card));
-                game.doAction(new MagicRemoveCardAction(
-                    card,
-                    MagicLocationType.OwnersLibrary
-                ));
+                game.doAction(new RevealAction(card));
                 if (card.hasType(MagicType.Land)) {
-                    game.doAction(new MagicPlayCardAction(
+                    game.doAction(new ReturnCardAction(
+                        MagicLocationType.OwnersLibrary,
                         card,
                         event.getPlayer()
                     ));
                 } else {
-                    game.doAction(new MagicMoveCardAction(
+                    game.doAction(new ShiftCardAction(
                         card,
                         MagicLocationType.OwnersLibrary,
                         MagicLocationType.OwnersHand

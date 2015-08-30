@@ -1,10 +1,11 @@
 name=Ravages of War
-image=http://mtgimage.com/card/ravages%20of%20war.jpg
+image=http://magiccards.info/scans/en/me2/27.jpg
 value=4.033
 removal=2
 rarity=R
 type=Sorcery
 cost={3}{W}
+ability=Cast SN with AI only if an opponent controls a land.
 effect=Destroy all lands.
 timing=removal
 oracle=Destroy all lands.

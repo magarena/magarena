@@ -1,11 +1,11 @@
 name=Elvish Guidance
-image=http://mtgimage.com/card/elvish%20guidance.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/255.jpg
+value=3.881
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{G}
 ability=Enchant land;\
         Whenever enchanted land is tapped for mana, its controller adds {G} to his or her mana pool for each Elf on the battlefield.
-timing=main
-oracle=Enchant land. Whenever enchanted land is tapped for mana, its controller adds {G} to his or her mana pool for each Elf on the battlefield.
+timing=aura
+oracle=Enchant land\nWhenever enchanted land is tapped for mana, its controller adds {G} to his or her mana pool for each Elf on the battlefield.

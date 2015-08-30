@@ -1,9 +1,9 @@
 name=Eternal Dominion
-image=http://mtgimage.com/card/eternal%20dominion.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sok/36.jpg
+value=3.918
 rarity=R
 type=Sorcery
 cost={7}{U}{U}{U}
 effect=Search target opponent's library for an artifact, creature, enchantment, or land card. Put that card onto the battlefield under your control. Then that player shuffles his or her library.~Epic
 timing=main
-oracle=Search target opponent's library for an artifact, creature, enchantment, or land card. Put that card onto the battlefield under your control. Then that player shuffles his or her library. Epic
+oracle=Search target opponent's library for an artifact, creature, enchantment, or land card. Put that card onto the battlefield under your control. Then that player shuffles his or her library.\nEpic

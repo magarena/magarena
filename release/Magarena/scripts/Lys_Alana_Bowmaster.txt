@@ -1,5 +1,5 @@
 name=Lys Alana Bowmaster
-image=http://mtgimage.com/card/lys%20alana%20bowmaster.jpg
+image=http://magiccards.info/scans/en/mt/130.jpg
 value=2.917
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=reach;\
         Whenever you cast an Elf spell, you may have SN deal 2 damage to target creature with flying.
 timing=main
-oracle=Reach. Whenever you cast an Elf spell, you may have Lys Alana Bowmaster deal 2 damage to target creature with flying.
+oracle=Reach\nWhenever you cast an Elf spell, you may have Lys Alana Bowmaster deal 2 damage to target creature with flying.

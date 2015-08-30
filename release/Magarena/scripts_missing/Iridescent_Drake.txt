@@ -1,6 +1,6 @@
 name=Iridescent Drake
-image=http://mtgimage.com/card/iridescent%20drake.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ud/35.jpg
+value=3.536
 rarity=U
 type=Creature
 subtype=Drake
@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         When SN enters the battlefield, put target Aura card from a graveyard onto the battlefield under your control attached to SN.
 timing=main
-oracle=Flying. When Iridescent Drake enters the battlefield, put target Aura card from a graveyard onto the battlefield under your control attached to Iridescent Drake.
+oracle=Flying\nWhen Iridescent Drake enters the battlefield, put target Aura card from a graveyard onto the battlefield under your control attached to Iridescent Drake.

@@ -1,11 +1,11 @@
 name=Cabal Surgeon
-image=http://mtgimage.com/card/cabal%20surgeon.jpg
+image=http://magiccards.info/scans/en/tr/52.jpg
 value=1.783
 rarity=C
 type=Creature
 subtype=Human,Minion
 cost={2}{B}{B}
 pt=2/1
+ability={2}{B}{B}, {T}, Exile two cards from your graveyard: Return target creature card from your graveyard to your hand.
 timing=main
-requires_groovy_code
 oracle={2}{B}{B}, {T}, Exile two cards from your graveyard: Return target creature card from your graveyard to your hand.

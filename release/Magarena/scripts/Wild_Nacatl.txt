@@ -1,5 +1,5 @@
 name=Wild Nacatl
-image=http://mtgimage.com/card/wild%20nacatl.jpg
+image=http://magiccards.info/scans/en/ddh/4.jpg
 value=4.185
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=SN gets +1/+1 as long as you control a Mountain.;\
         SN gets +1/+1 as long as you control a Plains.
 timing=main
-oracle=Wild Nacatl gets +1/+1 as long as you control a Mountain. Wild Nacatl gets +1/+1 as long as you control a Plains.
+oracle=Wild Nacatl gets +1/+1 as long as you control a Mountain.\nWild Nacatl gets +1/+1 as long as you control a Plains.

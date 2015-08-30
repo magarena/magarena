@@ -1,5 +1,5 @@
 name=Tidal Kraken
-image=http://mtgimage.com/card/tidal%20kraken.jpg
+image=http://magiccards.info/scans/en/9e/105.jpg
 value=3.868
 rarity=R
 type=Creature

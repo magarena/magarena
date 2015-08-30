@@ -1,0 +1,9 @@
+name=Sight Beyond Sight
+image=http://magiccards.info/scans/en/dtk/75.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={3}{U}
+effect=Look at the top two cards of your library. Put one of them into your hand and the other on the bottom of your library.~Rebound
+timing=main
+oracle=Look at the top two cards of your library. Put one of them into your hand and the other on the bottom of your library.\nRebound

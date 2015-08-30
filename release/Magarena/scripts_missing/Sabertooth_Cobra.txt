@@ -1,6 +1,6 @@
 name=Sabertooth Cobra
-image=http://mtgimage.com/card/sabertooth%20cobra.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/136.jpg
+value=3.756
 rarity=C
 type=Creature
 subtype=Snake

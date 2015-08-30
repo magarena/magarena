@@ -1,5 +1,7 @@
 package magic.model.event;
 
+import java.util.List;
+
 import magic.ai.ArtificialScoringSystem;
 import magic.model.MagicCard;
 import magic.model.MagicCardList;
@@ -29,7 +31,6 @@ import magic.model.choice.MagicExcludeResult;
 import magic.model.choice.MagicPayManaCostResult;
 import magic.model.choice.MagicPlayChoiceResult;
 import magic.model.choice.MagicTargetChoice;
-import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.target.MagicDefaultTargetPicker;
@@ -37,19 +38,10 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetNone;
 import magic.model.target.MagicTargetPicker;
 
-import java.util.List;
-
 public class MagicEvent implements MagicCopyable {
 
     public static final Object[] NO_CHOICE_RESULTS = new Object[0];
-    public static final MagicSource NO_SOURCE = MagicCard.NONE;
-    public static final MagicEvent[] NO_EVENTS = new MagicEvent[0];
     public static final MagicCopyable NO_REF = new MagicInteger(-1);
-    public static final MagicEventAction NO_ACTION = new MagicEventAction() {
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            //do nothing
-        }
-    };
 
     static class MagicInteger implements MagicCopyable {
         public final int value;
@@ -74,7 +66,7 @@ public class MagicEvent implements MagicCopyable {
         }
     }
 
-    public static final MagicEvent NONE = new MagicEvent(NO_SOURCE, MagicPlayer.NONE, NO_REF, NO_ACTION, "") {
+    public static final MagicEvent NONE = new MagicEvent(MagicSource.NONE, MagicPlayer.NONE, NO_REF, MagicEventAction.NONE, "") {
         @Override
         public boolean isValid() {
             return false;
@@ -99,13 +91,14 @@ public class MagicEvent implements MagicCopyable {
     private Object[] chosen;
 
     public MagicEvent(
-            final MagicSource source,
-            final MagicPlayer player,
-            final MagicChoice choice,
-            final MagicTargetPicker<?> targetPicker,
-            final MagicCopyable ref,
-            final MagicEventAction action,
-            final String description) {
+        final MagicSource source,
+        final MagicPlayer player,
+        final MagicChoice choice,
+        final MagicTargetPicker<?> targetPicker,
+        final MagicCopyable ref,
+        final MagicEventAction action,
+        final String description
+    ) {
         assert source != null : "source is null";
         assert player != null : "player is null";
         assert choice != null : "choice is null";
@@ -123,158 +116,175 @@ public class MagicEvent implements MagicCopyable {
     }
 
     public MagicEvent(
-            final MagicSource source,
-            final MagicPlayer player,
-            final MagicChoice choice,
-            final MagicTargetPicker<?> targetPicker,
-            final int ref,
-            final MagicEventAction action,
-            final String description) {
+        final MagicSource source,
+        final MagicPlayer player,
+        final MagicChoice choice,
+        final MagicTargetPicker<?> targetPicker,
+        final int ref,
+        final MagicEventAction action,
+        final String description
+    ) {
         this(source,player,choice,targetPicker,new MagicInteger(ref),action,description);
     }
 
 
     public MagicEvent(
-            final MagicSource source,
-            final MagicChoice choice,
-            final MagicTargetPicker<?> targetPicker,
-            final MagicCopyable ref,
-            final MagicEventAction action,
-            final String description) {
+        final MagicSource source,
+        final MagicChoice choice,
+        final MagicTargetPicker<?> targetPicker,
+        final MagicCopyable ref,
+        final MagicEventAction action,
+        final String description
+    ) {
         this(source,source.getController(),choice,targetPicker,ref,action,description);
     }
 
     public MagicEvent(
-            final MagicSource source,
-            final MagicChoice choice,
-            final MagicTargetPicker<?> targetPicker,
-            final int ref,
-            final MagicEventAction action,
-            final String description) {
+        final MagicSource source,
+        final MagicChoice choice,
+        final MagicTargetPicker<?> targetPicker,
+        final int ref,
+        final MagicEventAction action,
+        final String description
+    ) {
         this(source,source.getController(),choice,targetPicker,new MagicInteger(ref),action,description);
     }
 
     public MagicEvent(
-            final MagicSource source,
-            final MagicPlayer player,
-            final MagicChoice choice,
-            final MagicTargetPicker<?> targetPicker,
-            final MagicEventAction action,
-            final String description) {
+        final MagicSource source,
+        final MagicPlayer player,
+        final MagicChoice choice,
+        final MagicTargetPicker<?> targetPicker,
+        final MagicEventAction action,
+        final String description
+    ) {
         this(source,player,choice,targetPicker,NO_REF,action,description);
     }
 
     public MagicEvent(
-            final MagicSource source,
-            final MagicChoice choice,
-            final MagicTargetPicker<?> targetPicker,
-            final MagicEventAction action,
-            final String description) {
+        final MagicSource source,
+        final MagicChoice choice,
+        final MagicTargetPicker<?> targetPicker,
+        final MagicEventAction action,
+        final String description
+    ) {
         this(source,source.getController(),choice,targetPicker,NO_REF,action,description);
     }
 
     public MagicEvent(
-            final MagicSource source,
-            final MagicPlayer player,
-            final MagicChoice choice,
-            final MagicCopyable ref,
-            final MagicEventAction action,
-            final String description) {
+        final MagicSource source,
+        final MagicPlayer player,
+        final MagicChoice choice,
+        final MagicCopyable ref,
+        final MagicEventAction action,
+        final String description
+    ) {
         this(source,player,choice,MagicDefaultTargetPicker.create(),ref,action,description);
     }
 
     public MagicEvent(
-            final MagicSource source,
-            final MagicPlayer player,
-            final MagicChoice choice,
-            final int ref,
-            final MagicEventAction action,
-            final String description) {
+        final MagicSource source,
+        final MagicPlayer player,
+        final MagicChoice choice,
+        final int ref,
+        final MagicEventAction action,
+        final String description
+    ) {
         this(source,player,choice,MagicDefaultTargetPicker.create(),new MagicInteger(ref),action,description);
     }
 
 
     public MagicEvent(
-            final MagicSource source,
-            final MagicChoice choice,
-            final MagicCopyable ref,
-            final MagicEventAction action,
-            final String description) {
+        final MagicSource source,
+        final MagicChoice choice,
+        final MagicCopyable ref,
+        final MagicEventAction action,
+        final String description
+    ) {
         this(source,source.getController(),choice,MagicDefaultTargetPicker.create(),ref,action,description);
     }
 
     public MagicEvent(
-            final MagicSource source,
-            final MagicChoice choice,
-            final int ref,
-            final MagicEventAction action,
-            final String description) {
+        final MagicSource source,
+        final MagicChoice choice,
+        final int ref,
+        final MagicEventAction action,
+        final String description
+    ) {
         this(source,source.getController(),choice,MagicDefaultTargetPicker.create(),new MagicInteger(ref),action,description);
     }
 
     public MagicEvent(
-            final MagicSource source,
-            final MagicPlayer player,
-            final MagicChoice choice,
-            final MagicEventAction action,
-            final String description) {
+        final MagicSource source,
+        final MagicPlayer player,
+        final MagicChoice choice,
+        final MagicEventAction action,
+        final String description
+    ) {
         this(source,player,choice,MagicDefaultTargetPicker.create(),NO_REF,action,description);
     }
 
     public MagicEvent(
-            final MagicSource source,
-            final MagicChoice choice,
-            final MagicEventAction action,
-            final String description) {
+        final MagicSource source,
+        final MagicChoice choice,
+        final MagicEventAction action,
+        final String description
+    ) {
         this(source,source.getController(),choice,MagicDefaultTargetPicker.create(),NO_REF,action,description);
     }
 
     public MagicEvent(
-            final MagicSource source,
-            final MagicPlayer player,
-            final MagicCopyable ref,
-            final MagicEventAction action,
-            final String description) {
+        final MagicSource source,
+        final MagicPlayer player,
+        final MagicCopyable ref,
+        final MagicEventAction action,
+        final String description
+    ) {
         this(source,player,MagicChoice.NONE,MagicDefaultTargetPicker.create(),ref,action,description);
     }
 
     public MagicEvent(
-            final MagicSource source,
-            final MagicPlayer player,
-            final int ref,
-            final MagicEventAction action,
-            final String description) {
+        final MagicSource source,
+        final MagicPlayer player,
+        final int ref,
+        final MagicEventAction action,
+        final String description
+    ) {
         this(source,player,MagicChoice.NONE,MagicDefaultTargetPicker.create(),new MagicInteger(ref),action,description);
     }
 
     public MagicEvent(
-            final MagicSource source,
-            final MagicCopyable ref,
-            final MagicEventAction action,
-            final String description) {
+        final MagicSource source,
+        final MagicCopyable ref,
+        final MagicEventAction action,
+        final String description
+    ) {
         this(source,source.getController(),MagicChoice.NONE,MagicDefaultTargetPicker.create(),ref,action,description);
     }
 
     public MagicEvent(
-            final MagicSource source,
-            final int ref,
-            final MagicEventAction action,
-            final String description) {
+        final MagicSource source,
+        final int ref,
+        final MagicEventAction action,
+        final String description
+    ) {
         this(source,source.getController(),MagicChoice.NONE,MagicDefaultTargetPicker.create(),new MagicInteger(ref),action,description);
     }
 
     public MagicEvent(
-            final MagicSource source,
-            final MagicPlayer player,
-            final MagicEventAction action,
-            final String description) {
+        final MagicSource source,
+        final MagicPlayer player,
+        final MagicEventAction action,
+        final String description
+    ) {
         this(source,player,MagicChoice.NONE,MagicDefaultTargetPicker.create(),NO_REF,action,description);
     }
 
     public MagicEvent(
-            final MagicSource source,
-            final MagicEventAction action,
-            final String description) {
+        final MagicSource source,
+        final MagicEventAction action,
+        final String description
+    ) {
         this(source,source.getController(),MagicChoice.NONE,MagicDefaultTargetPicker.create(),NO_REF,action,description);
     }
 
@@ -298,13 +308,25 @@ public class MagicEvent implements MagicCopyable {
     public boolean isValid() {
         return true;
     }
-
+    
     public final MagicSource getSource() {
         return source;
     }
 
+    public final MagicPlayer getPlayer() {
+        return player;
+    }
+
+    public final boolean hasRef() {
+        return ref != NO_REF;
+    }
+    
     public final MagicPermanent getPermanent() {
         return (MagicPermanent)source;
+    }
+
+    public final MagicCopyable getRef() {
+        return ref;
     }
 
     public final MagicPermanent getRefPermanent() {
@@ -334,6 +356,14 @@ public class MagicEvent implements MagicCopyable {
     public final MagicCard getRefCard() {
         return (MagicCard)ref;
     }
+    
+    public final MagicSource getRefSource() {
+        return (MagicSource)ref;
+    }
+    
+    public final MagicTarget getRefTarget() {
+        return (MagicTarget)ref;
+    }
 
     public final MagicPermanentActivation getRefPermanentActivation() {
         return (MagicPermanentActivation)ref;
@@ -355,10 +385,6 @@ public class MagicEvent implements MagicCopyable {
         return (MagicCardOnStack)source;
     }
 
-    public final MagicPlayer getPlayer() {
-        return player;
-    }
-
     public final boolean hasChoice() {
         return choice.isValid();
     }
@@ -366,18 +392,14 @@ public class MagicEvent implements MagicCopyable {
     public final MagicChoice getChoice() {
         return choice;
     }
-    
-    public final boolean hasOptions() {
-        return choice.hasOptions(player.getGame(), player, source, false);
-    }
-
+   
     public final MagicTargetPicker<?> getTargetPicker() {
         return targetPicker;
     }
 
     public final List<Object[]> getArtificialChoiceResults(final MagicGame game) {
         final long start = System.currentTimeMillis();
-        final List<Object[]> choices = choice.getArtificialChoiceResults(game,this,player,source);
+        final List<Object[]> choices = choice.getArtificialChoiceResults(game,this);
         final long time = System.currentTimeMillis() - start;
         if (time > 1000) {
             System.err.println("WARNING. ACR:  " + choice.getDescription() + description + " time: " + time);
@@ -387,7 +409,7 @@ public class MagicEvent implements MagicCopyable {
 
     public final Object[] getSimulationChoiceResult(final MagicGame game) {
         final long start = System.currentTimeMillis();
-        final Object[] res = choice.getSimulationChoiceResult(game,this,player,source);
+        final Object[] res = choice.getSimulationChoiceResult(game,this);
         final long time = System.currentTimeMillis() - start;
         if (time > 1000) {
             System.err.println("WARNING. RCR:  " + choice.getDescription() + description + " time: " + time);
@@ -396,7 +418,7 @@ public class MagicEvent implements MagicCopyable {
     }
 
     public MagicTargetChoice getTargetChoice() {
-        return choice.getTargetChoice();
+        return chosen != null ? choice.getTargetChoice(chosen) : choice.getTargetChoice();
     }
 
     public void clearTargetChoice(Object[] choiceResults) {
@@ -611,16 +633,13 @@ public class MagicEvent implements MagicCopyable {
         }
     }
 
-    private static final void payManaCost(
-            final MagicGame game,
-            final MagicPlayer player,
-            final MagicPayManaCostResult result) {
+    private static final void payManaCost(final MagicGame game, final MagicPlayer player, final MagicPayManaCostResult result) {
         result.doAction(game,player);
         // Let each payed mana cost influence score.
         game.changeScore(ArtificialScoringSystem.getManaScore(result.getConverted()));
     }
 
-    final void payManaCost(final MagicGame game) {
+    public final void payManaCost(final MagicGame game) {
         final int manaIndex=getManaChoiceResultIndex();
         assert manaIndex < chosen.length :
             this + "\n" +
@@ -636,21 +655,28 @@ public class MagicEvent implements MagicCopyable {
 
     public final void executeEvent(final MagicGame game,final Object[] choiceResults) {
         chosen = choiceResults;
+        payManaCost(game);
         action.executeEvent(game,this);
         chosen = null;
     }
-
-    public MagicCondition[] getConditions() {
-        return MagicActivation.NO_COND;
-    }
     
-    public boolean isSatisfied() {
-        for (final MagicCondition condition : getConditions()) {
-            if (!condition.accept(source)) {
-                return false;
+    public final void executeAllEvents(final MagicGame game, final MagicSourceEvent... sourceEvents) {
+        for (int i = 0; i < sourceEvents.length; i++) {
+            sourceEvents[i].getAction().executeEvent(game, this);
+        }
+    }
+
+    public final void executeModalEvent(final MagicGame game, final MagicSourceEvent... sourceEvents) {
+        for (int i = 0; i < sourceEvents.length; i++) {
+            if (isMode(i+1)) {
+                sourceEvents[i].getAction().executeEvent(game, this);
+                break;
             }
         }
-        return true;
+    }
+
+    public boolean isSatisfied() {
+        return choice.hasOptions(player.getGame(), player, source, false);
     }
 
     public String toString() {
@@ -670,11 +696,11 @@ public class MagicEvent implements MagicCopyable {
         });
     }
 
-    public MagicEventAction getMagicEventAction() {
+    public MagicEventAction getEventAction() {
         return action;
     }
-
-    public void onAddEvent(final MagicGame game) {
-        //do nothing
+    
+    public String getDescription() {
+        return description;
     }
 }

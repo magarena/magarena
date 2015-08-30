@@ -1,9 +1,9 @@
 name=Mimeofacture
-image=http://mtgimage.com/card/mimeofacture.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gp/30.jpg
+value=3.536
 rarity=R
 type=Sorcery
 cost={3}{U}
 effect=Replicate {3}{U}~Choose target permanent an opponent controls. Search that player's library for a card with the same name and put it onto the battlefield under your control. Then that player shuffles his or her library.
 timing=main
-oracle=Replicate {3}{U}. Choose target permanent an opponent controls. Search that player's library for a card with the same name and put it onto the battlefield under your control. Then that player shuffles his or her library.
+oracle=Replicate {3}{U}\nChoose target permanent an opponent controls. Search that player's library for a card with the same name and put it onto the battlefield under your control. Then that player shuffles his or her library.

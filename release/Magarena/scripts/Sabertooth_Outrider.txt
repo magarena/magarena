@@ -1,0 +1,12 @@
+name=Sabertooth Outrider
+image=http://magiccards.info/scans/en/dtk/152.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={3}{R}
+pt=4/2
+ability=Trample;\
+        Whenever SN attacks, if creatures you control have total power 8 or greater, SN gains first strike until end of turn.
+timing=main
+oracle=Trample\nFormidable — Whenever Sabertooth Outrider attacks, if creatures you control have total power 8 or greater, Sabertooth Outrider gains first strike until end of turn.

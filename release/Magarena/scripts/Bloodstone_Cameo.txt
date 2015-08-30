@@ -1,5 +1,5 @@
 name=Bloodstone Cameo
-image=http://mtgimage.com/card/bloodstone%20cameo.jpg
+image=http://magiccards.info/scans/en/in/298.jpg
 value=2.200
 rarity=U
 type=Artifact

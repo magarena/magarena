@@ -1,0 +1,9 @@
+name=Funeral Charm
+image=http://magiccards.info/scans/en/tsts/44.jpg
+value=4.284
+rarity=C
+type=Instant
+cost={B}
+effect=Choose one — (1) Target player discards a card. (2) Target creature gets +2/-1 until end of turn. (3) Target creature gains swampwalk until end of turn.
+timing=removal
+oracle=Choose one —\n• Target player discards a card.\n• Target creature gets +2/-1 until end of turn.\n• Target creature gains swampwalk until end of turn.

@@ -1,6 +1,6 @@
 name=Suncrusher
-image=http://mtgimage.com/card/suncrusher.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5dn/159.jpg
+value=3.434
 rarity=R
 type=Artifact,Creature
 subtype=Construct
@@ -9,5 +9,5 @@ pt=3/3
 ability=Sunburst;\
         {4}, {T}, Remove a +1/+1 counter from SN: Destroy target creature.;\
         {2}, Remove a +1/+1 counter from SN: Return SN to its owner's hand.
-timing=main
-oracle=Sunburst. {4}, {T}, Remove a +1/+1 counter from Suncrusher: Destroy target creature. {2}, Remove a +1/+1 counter from Suncrusher: Return Suncrusher to its owner's hand.
+timing=artifact
+oracle=Sunburst\n{4}, {T}, Remove a +1/+1 counter from Suncrusher: Destroy target creature.\n{2}, Remove a +1/+1 counter from Suncrusher: Return Suncrusher to its owner's hand.

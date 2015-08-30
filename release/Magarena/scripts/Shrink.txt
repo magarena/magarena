@@ -1,5 +1,5 @@
 name=Shrink
-image=http://mtgimage.com/card/shrink.jpg
+image=http://magiccards.info/scans/en/me2/175.jpg
 value=3.050
 rarity=C
 type=Instant

@@ -3,18 +3,18 @@ package magic.model.event;
 import magic.model.MagicCard;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
+import magic.model.MagicSource;
 import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
-import magic.model.action.MagicDrawAction;
-import magic.model.action.MagicMoveCardAction;
-import magic.model.action.MagicRemoveCardAction;
+import magic.model.action.DrawAction;
+import magic.model.action.ShiftCardAction;
 import magic.model.choice.MagicMulliganChoice;
 
 public class MagicMulliganEvent extends MagicEvent {
 
     public MagicMulliganEvent(final MagicPlayer player) {
         super(
-            MagicEvent.NO_SOURCE,
+            MagicSource.NONE,
             player,
             new MagicMulliganChoice(),
             EVENT_ACTION,
@@ -29,19 +29,15 @@ public class MagicMulliganEvent extends MagicEvent {
                 final MagicCardList hand = new MagicCardList(player.getHand());
                 final int size = hand.size();
                 for (final MagicCard card : hand) {
-                    game.doAction(new MagicMoveCardAction(
+                    game.doAction(new ShiftCardAction(
                         card,
                         MagicLocationType.OwnersHand,
                         MagicLocationType.OwnersLibrary
                     ));
-                    game.doAction(new MagicRemoveCardAction(
-                        card,
-                        MagicLocationType.OwnersHand
-                    ));
                 }
                 final MagicCardList library = player.getLibrary();
                 library.shuffle();
-                game.doAction(new MagicDrawAction(player,size - 1));
+                game.doAction(new DrawAction(player,size - 1));
                 game.addEvent(new MagicMulliganEvent(player));
             }
         }

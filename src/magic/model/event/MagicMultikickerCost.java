@@ -3,7 +3,7 @@ package magic.model.event;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicSource;
-import magic.model.action.MagicSetKickerAction;
+import magic.model.action.SetKickerAction;
 import magic.model.choice.MagicKickerChoice;
 
 public class MagicMultikickerCost extends MagicAdditionalCost implements MagicEventAction {
@@ -35,9 +35,8 @@ public class MagicMultikickerCost extends MagicAdditionalCost implements MagicEv
 
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        event.payManaCost(game);
         if (event.getKickerFromChosen() > 0) {
-            game.doAction(new MagicSetKickerAction(event.getKickerFromChosen()));
+            game.doAction(new SetKickerAction(event.getKickerFromChosen()));
         }
     }
 }

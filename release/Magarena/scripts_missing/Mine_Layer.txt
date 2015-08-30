@@ -1,6 +1,6 @@
 name=Mine Layer
-image=http://mtgimage.com/card/mine%20layer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/205.jpg
+value=3.371
 rarity=R
 type=Creature
 subtype=Dwarf
@@ -10,4 +10,4 @@ ability={1}{R}, {T}: Put a mine counter on target land.;\
         Whenever a land with a mine counter on it becomes tapped, destroy it.;\
         When SN leaves the battlefield, remove all mine counters from all lands.
 timing=main
-oracle={1}{R}, {T}: Put a mine counter on target land. Whenever a land with a mine counter on it becomes tapped, destroy it. When Mine Layer leaves the battlefield, remove all mine counters from all lands.
+oracle={1}{R}, {T}: Put a mine counter on target land.\nWhenever a land with a mine counter on it becomes tapped, destroy it.\nWhen Mine Layer leaves the battlefield, remove all mine counters from all lands.

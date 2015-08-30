@@ -1,23 +1,13 @@
 package magic.test;
 
-import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.model.MagicPlayerDefinition;
 import magic.model.phase.MagicMainPhase;
 
 class TestStorm extends TestGameBuilder {
     public MagicGame getGame() {
-        final MagicDuel duel=new MagicDuel();
-        duel.setDifficulty(6);
-
-        final MagicDeckProfile profile=new MagicDeckProfile("bgruw");
-        final MagicPlayerDefinition player1=new MagicPlayerDefinition("Player",false,profile);
-        final MagicPlayerDefinition player2=new MagicPlayerDefinition("Computer",true,profile);
-        duel.setPlayers(new MagicPlayerDefinition[]{player1,player2});
-        duel.setStartPlayer(0);
-
+        final MagicDuel duel=createDuel();
         final MagicGame game=duel.nextGame();
         game.setPhase(MagicMainPhase.getFirstInstance());
         final MagicPlayer player=game.getPlayer(0);
@@ -27,16 +17,18 @@ class TestStorm extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
-        createPermanent(game,P,"Grizzly Bears",false,2);
+        createPermanent(P,"Island",false,8);
+        createPermanent(P,"Grizzly Bears",false,2);
         addToHand(P, "Astral Steel", 3);
         addToHand(P, "Brain Freeze", 3);
+        addToHand(P, "Flusterstorm", 3);
 
         P = opponent;
 
         P.setLife(1);
         addToLibrary(P, "Plains", 10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Island",false,8);
+        //addToHand(P, "Flusterstorm", 3);
 
         return game;
     }

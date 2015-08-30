@@ -1,18 +1,19 @@
 package magic.ui.screen.widget;
 
-import magic.ui.widget.FontsAndBorders;
-import magic.ui.MagicStyle;
-
-import javax.swing.AbstractAction;
-import javax.swing.JButton;
-import javax.swing.SwingConstants;
-
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import javax.swing.AbstractAction;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.SwingConstants;
 import magic.ui.ScreenController;
+import magic.ui.utility.GraphicsUtils;
+import magic.ui.utility.MagicStyle;
+import magic.ui.widget.FontsAndBorders;
 
 @SuppressWarnings("serial")
 public class MenuButton extends JButton {
@@ -67,7 +68,7 @@ public class MenuButton extends JButton {
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent e) {
-                setForeground(MagicStyle.HIGHLIGHT_COLOR);
+                setForeground(MagicStyle.getRolloverColor());
             }
             @Override
             public void mouseExited(MouseEvent e) {
@@ -75,7 +76,7 @@ public class MenuButton extends JButton {
             }
             @Override
             public void mousePressed(MouseEvent e) {
-                setForeground(MagicStyle.HIGHLIGHT_COLOR.darker());
+                setForeground(MagicStyle.getPressedColor());
                 setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
 
             }
@@ -111,6 +112,19 @@ public class MenuButton extends JButton {
 
     public static MenuButton getCloseScreenButton(final String caption) {
         return new MenuButton(caption, closeScreenAction);
+    }
+
+    @Override
+    public void setIcon(final Icon defaultIcon) {
+        super.setIcon(defaultIcon);
+        setRolloverIcon(GraphicsUtils.getRecoloredIcon(
+                (ImageIcon) defaultIcon,
+                MagicStyle.getRolloverColor())
+        );
+        setPressedIcon(GraphicsUtils.getRecoloredIcon(
+                (ImageIcon) defaultIcon,
+                MagicStyle.getPressedColor())
+        );
     }
 
 }

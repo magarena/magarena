@@ -1,5 +1,5 @@
 name=Crumbling Colossus
-image=http://mtgimage.com/card/crumbling%20colossus.jpg
+image=http://magiccards.info/scans/en/m12/204.jpg
 value=2.700
 rarity=U
 type=Artifact,Creature
@@ -9,4 +9,4 @@ pt=7/4
 ability=Trample;\
         When SN attacks, sacrifice SN at end of combat.
 timing=main
-oracle=Trample. When Crumbling Colossus attacks, sacrifice it at end of combat.
+oracle=Trample\nWhen Crumbling Colossus attacks, sacrifice it at end of combat.

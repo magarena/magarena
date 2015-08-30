@@ -1,11 +1,11 @@
 name=Witch Hunt
-image=http://mtgimage.com/card/witch%20hunt.jpg
-value=2.500
+image=http://magiccards.info/scans/en/c13/133.jpg
+value=3.705
 rarity=R
 type=Enchantment
 cost={4}{R}
 ability=Players can't gain life.;\
         At the beginning of your upkeep, SN deals 4 damage to you.;\
         At the beginning of your end step, target opponent chosen at random gains control of SN.
-timing=main
-oracle=Players can't gain life. At the beginning of your upkeep, Witch Hunt deals 4 damage to you. At the beginning of your end step, target opponent chosen at random gains control of Witch Hunt.
+timing=enchantment
+oracle=Players can't gain life.\nAt the beginning of your upkeep, Witch Hunt deals 4 damage to you.\nAt the beginning of your end step, target opponent chosen at random gains control of Witch Hunt.

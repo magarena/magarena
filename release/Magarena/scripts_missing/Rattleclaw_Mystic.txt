@@ -1,6 +1,6 @@
 name=Rattleclaw Mystic
-image=http://mtgimage.com/card/rattleclaw%20mystic.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/144.jpg
+value=3.833
 rarity=R
 type=Creature
 subtype=Human,Shaman
@@ -10,4 +10,4 @@ ability={T}: Add {G}, {U}, or {R} to your mana pool.;\
         Morph {2};\
         When SN is turned face up, add {G}{U}{R} to your mana pool.
 timing=main
-oracle={T}: Add {G}, {U}, or {R} to your mana pool. Morph {2}. When Rattleclaw Mystic is turned face up, add {G}{U}{R} to your mana pool.
+oracle={T}: Add {G}, {U}, or {R} to your mana pool.\nMorph {2}\nWhen Rattleclaw Mystic is turned face up, add {G}{U}{R} to your mana pool.

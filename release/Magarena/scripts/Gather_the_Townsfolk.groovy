@@ -12,9 +12,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             int amount = MagicCondition.FATEFUL_HOUR.accept(event.getSource()) ? 5 : 2;
-            game.doAction(new MagicPlayTokensAction(
+            game.doAction(new PlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("1/1 white Human creature token"),
+                CardDefinitions.getToken("1/1 white Human creature token"),
                 amount
             ));
         }

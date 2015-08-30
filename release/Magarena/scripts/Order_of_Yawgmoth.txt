@@ -1,5 +1,5 @@
 name=Order of Yawgmoth
-image=http://mtgimage.com/card/order%20of%20yawgmoth.jpg
+image=http://magiccards.info/scans/en/pvc/11.jpg
 value=4.114
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=fear;\
         Whenever SN deals damage to a player, that player discards a card.
 timing=main
-oracle=Fear. Whenever Order of Yawgmoth deals damage to a player, that player discards a card.
+oracle=Fear\nWhenever Order of Yawgmoth deals damage to a player, that player discards a card.

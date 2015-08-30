@@ -1,0 +1,9 @@
+name=Crux of Fate
+image=http://magiccards.info/scans/en/frf/65.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={3}{B}{B}
+effect=Choose one — (1) Destroy all Dragon creatures. (2) Destroy all non-Dragon creatures.
+timing=main
+oracle=Choose one —\n• Destroy all Dragon creatures.\n• Destroy all non-Dragon creatures.

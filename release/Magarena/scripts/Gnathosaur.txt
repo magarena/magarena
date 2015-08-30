@@ -1,5 +1,5 @@
 name=Gnathosaur
-image=http://mtgimage.com/card/gnathosaur.jpg
+image=http://magiccards.info/scans/en/mbs/63.jpg
 value=2.000
 rarity=C
 type=Creature

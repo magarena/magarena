@@ -1,5 +1,5 @@
 name=Totally Lost
-image=http://mtgimage.com/card/totally%20lost.jpg
+image=http://magiccards.info/scans/en/gtc/54.jpg
 value=2.910
 removal=3
 rarity=C

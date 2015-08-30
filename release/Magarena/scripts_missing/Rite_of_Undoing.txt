@@ -1,9 +1,9 @@
 name=Rite of Undoing
-image=http://mtgimage.com/card/rite%20of%20undoing.jpg
+image=http://magiccards.info/scans/en/frf/49.jpg
 value=2.500
 rarity=U
 type=Instant
 cost={4}{U}
 effect=Delve~Return target nonland permanent you control and target nonland permanent you don't control to their owners' hands.
 timing=removal
-oracle=Delve. Return target nonland permanent you control and target nonland permanent you don't control to their owners' hands.
+oracle=Delve\nReturn target nonland permanent you control and target nonland permanent you don't control to their owners' hands.

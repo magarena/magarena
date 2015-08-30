@@ -1,9 +1,9 @@
 name=Reverent Silence
-image=http://mtgimage.com/card/reverent%20silence.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ne/111.jpg
+value=4.046
 rarity=C
 type=Sorcery
 cost={3}{G}
 effect=If you control a Forest, rather than pay SN's mana cost, you may have each other player gain 6 life.~Destroy all enchantments.
 timing=main
-oracle=If you control a Forest, rather than pay Reverent Silence's mana cost, you may have each other player gain 6 life. Destroy all enchantments.
+oracle=If you control a Forest, rather than pay Reverent Silence's mana cost, you may have each other player gain 6 life.\nDestroy all enchantments.

@@ -1,9 +1,9 @@
 name=Sphere of Safety
-image=http://mtgimage.com/card/sphere%20of%20safety.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rtr/24.jpg
+value=3.423
 rarity=U
 type=Enchantment
 cost={4}{W}
 ability=Creatures can't attack you or a planeswalker you control unless their controller pays {X} for each of those creatures, where X is the number of enchantments you control.
-timing=main
+timing=enchantment
 oracle=Creatures can't attack you or a planeswalker you control unless their controller pays {X} for each of those creatures, where X is the number of enchantments you control.

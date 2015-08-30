@@ -1,5 +1,5 @@
 name=Clockwork Condor
-image=http://mtgimage.com/card/clockwork%20condor.jpg
+image=http://magiccards.info/scans/en/ddf/50.jpg
 value=1.636
 rarity=C
 type=Artifact,Creature
@@ -10,4 +10,4 @@ ability=Flying;\
         SN enters the battlefield with three +1/+1 counters on it.;\
         Whenever SN attacks or blocks, remove a +1/+1 counter from SN at end of combat.
 timing=artifact
-oracle=Flying. Clockwork Condor enters the battlefield with three +1/+1 counters on it. Whenever Clockwork Condor attacks or blocks, remove a +1/+1 counter from it at end of combat.
+oracle=Flying\nClockwork Condor enters the battlefield with three +1/+1 counters on it.\nWhenever Clockwork Condor attacks or blocks, remove a +1/+1 counter from it at end of combat.

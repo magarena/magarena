@@ -1,5 +1,5 @@
 name=Defy Gravity
-image=http://mtgimage.com/card/defy%20gravity.jpg
+image=http://magiccards.info/scans/en/ju/38.jpg
 value=2.340
 rarity=C
 type=Instant
@@ -7,4 +7,4 @@ cost={U}
 effect=Target creature gains flying until end of turn.
 ability=Flashback {U}
 timing=pumpFlash
-oracle=Target creature gains flying until end of turn. Flashback {U}
+oracle=Target creature gains flying until end of turn.\nFlashback {U}

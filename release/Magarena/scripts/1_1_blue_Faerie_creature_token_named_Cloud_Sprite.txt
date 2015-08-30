@@ -1,9 +1,10 @@
 name=1/1 blue Faerie creature token named Cloud Sprite
 token=Cloud Sprite
-image=http://i167.photobucket.com/albums/u148/Ruja/Magic%20Tokens/FSCloudSprite.png
+image=http://cdn.staticneo.com/w/mtg/a/a7/Cloud_Sprite.jpg
 value=1
 type=Creature
 subtype=Faerie
 color=u
 ability=flying;SN can block only creatures with flying.
 pt=1/1
+oracle=Flying\nCloud Sprite can block only creatures with flying.

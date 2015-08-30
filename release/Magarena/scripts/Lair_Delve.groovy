@@ -12,18 +12,14 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCardList top2 = event.getPlayer().getLibrary().getCardsFromTop(2) ;
-            game.doAction(new MagicRevealAction(top2));
+            game.doAction(new RevealAction(top2));
             for (final MagicCard top : top2) {
-                game.doAction(new MagicRemoveCardAction(
-                    top,
-                    MagicLocationType.OwnersLibrary
-                ));
-                game.doAction(new MagicMoveCardAction(
+                game.doAction(new ShiftCardAction(
                     top,
                     MagicLocationType.OwnersLibrary,
                     top.hasType(MagicType.Creature) || top.hasType(MagicType.Land) ?
-                      MagicLocationType.OwnersHand :
-                      MagicLocationType.BottomOfOwnersLibrary
+                        MagicLocationType.OwnersHand :
+                        MagicLocationType.BottomOfOwnersLibrary
                 ));
             }
         }

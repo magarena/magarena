@@ -1,5 +1,5 @@
 name=Kithkin Shielddare
-image=http://mtgimage.com/card/kithkin%20shielddare.jpg
+image=http://magiccards.info/scans/en/shm/10.jpg
 value=2.210
 rarity=C
 type=Creature

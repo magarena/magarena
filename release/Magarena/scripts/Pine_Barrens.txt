@@ -1,5 +1,5 @@
 name=Pine Barrens
-image=http://mtgimage.com/card/pine%20barrens.jpg
+image=http://magiccards.info/scans/en/vma/307.jpg
 value=2.456
 rarity=R
 type=Land
@@ -8,4 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {1} to your mana pool.;\
         {T}: Add {B} or {G} to your mana pool. SN deals 1 damage to you.
 timing=tapland
-oracle=Pine Barrens enters the battlefield tapped. {T}: Add {1} to your mana pool. {T}: Add {B} or {G} to your mana pool. Pine Barrens deals 1 damage to you.
+oracle=Pine Barrens enters the battlefield tapped.\n{T}: Add {1} to your mana pool.\n{T}: Add {B} or {G} to your mana pool. Pine Barrens deals 1 damage to you.

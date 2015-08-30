@@ -37,7 +37,7 @@ def AB = new MagicStatic(MagicLayer.Ability) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.getPermanent().isEnchantment()) {
-                game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,AB,ST));
+                game.doAction(new BecomesCreatureAction(event.getPermanent(),PT,AB,ST));
             }
         }
     }

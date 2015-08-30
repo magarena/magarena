@@ -1,5 +1,5 @@
 name=Kindled Fury
-image=http://mtgimage.com/card/kindled%20fury.jpg
+image=http://magiccards.info/scans/en/dtk/142.jpg
 value=2.286
 rarity=C
 type=Instant

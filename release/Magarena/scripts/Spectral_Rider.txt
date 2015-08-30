@@ -1,5 +1,5 @@
 name=Spectral Rider
-image=http://mtgimage.com/card/spectral%20rider.jpg
+image=http://magiccards.info/scans/en/isd/35.jpg
 value=3.833
 rarity=U
 type=Creature

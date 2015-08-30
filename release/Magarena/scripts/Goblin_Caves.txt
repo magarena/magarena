@@ -1,6 +1,6 @@
 name=Goblin Caves
-image=http://mtgimage.com/card/goblin%20caves.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me4/119.jpg
+value=3.283
 rarity=C
 type=Enchantment
 subtype=Aura
@@ -8,4 +8,4 @@ cost={1}{R}{R}
 enchant=pump,land
 timing=aura
 requires_groovy_code
-oracle=Enchant land. As long as enchanted land is a basic Mountain, Goblin creatures get +0/+2.
+oracle=Enchant land\nAs long as enchanted land is a basic Mountain, Goblin creatures get +0/+2.

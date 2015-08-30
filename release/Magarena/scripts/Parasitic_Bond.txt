@@ -1,5 +1,5 @@
 name=Parasitic Bond
-image=http://mtgimage.com/card/parasitic%20bond.jpg
+image=http://magiccards.info/scans/en/us/145.jpg
 value=3.059
 rarity=U
 type=Enchantment
@@ -8,4 +8,4 @@ cost={3}{B}
 enchant=weaken,neg creature
 timing=aura
 requires_groovy_code
-oracle=Enchant creature. At the beginning of the upkeep of enchanted creature's controller, Parasitic Bond deals 2 damage to that player.
+oracle=Enchant creature\nAt the beginning of the upkeep of enchanted creature's controller, Parasitic Bond deals 2 damage to that player.

@@ -1,10 +1,11 @@
 name=Shatterstorm
-image=http://mtgimage.com/card/shatterstorm.jpg
+image=http://magiccards.info/scans/en/10e/229.jpg
 value=4.339
 removal=2
 rarity=R
 type=Sorcery
 cost={2}{R}{R}
+ability=Cast SN with AI only if an opponent controls an artifact.
 effect=Destroy all artifacts. They can't be regenerated.
 timing=removal
 oracle=Destroy all artifacts. They can't be regenerated.

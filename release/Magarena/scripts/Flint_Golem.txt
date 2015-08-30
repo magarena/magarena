@@ -1,0 +1,11 @@
+name=Flint Golem
+image=http://magiccards.info/scans/en/ne/130.jpg
+value=3.103
+rarity=U
+type=Artifact,Creature
+subtype=Golem
+cost={4}
+pt=2/3
+ability=Whenever SN becomes blocked, defending player puts the top three cards of his or her library into his or her graveyard.
+timing=main
+oracle=Whenever Flint Golem becomes blocked, defending player puts the top three cards of his or her library into his or her graveyard.

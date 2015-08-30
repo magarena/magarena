@@ -1,9 +1,9 @@
 name=Riptide Laboratory
-image=http://mtgimage.com/card/riptide%20laboratory.jpg
+image=http://magiccards.info/scans/en/on/322.jpg
 value=4.134
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\
         {T},{1}{U}:Return target Wizard you control to its owner's hand.
 timing=land
-oracle={T}: Add {1} to your mana pool. {1}{U}, {T}: Return target Wizard you control to its owner's hand.
+oracle={T}: Add {1} to your mana pool.\n{1}{U}, {T}: Return target Wizard you control to its owner's hand.

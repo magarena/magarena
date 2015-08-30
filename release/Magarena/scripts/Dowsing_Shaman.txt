@@ -1,5 +1,5 @@
 name=Dowsing Shaman
-image=http://mtgimage.com/card/dowsing%20shaman.jpg
+image=http://magiccards.info/scans/en/pc2/63.jpg
 value=3.000
 rarity=U
 type=Creature

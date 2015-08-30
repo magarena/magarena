@@ -1,6 +1,6 @@
 name=Mesa Pegasus
-image=http://mtgimage.com/card/mesa%20pegasus.jpg
-value=2.500
+image=http://magiccards.info/scans/en/med/20.jpg
+value=2.816
 rarity=C
 type=Creature
 subtype=Pegasus
@@ -8,4 +8,4 @@ cost={1}{W}
 pt=1/1
 ability=Flying; banding
 timing=main
-oracle=Flying; banding
+oracle=Flying, banding

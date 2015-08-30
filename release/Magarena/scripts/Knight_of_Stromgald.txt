@@ -1,5 +1,5 @@
 name=Knight of Stromgald
-image=http://mtgimage.com/card/knight%20of%20stromgald.jpg
+image=http://magiccards.info/scans/en/me2/99.jpg
 value=4.012
 rarity=U
 type=Creature
@@ -10,4 +10,4 @@ ability=protection from white;\
         {B}: SN gains first strike until end of turn.;\
         {B}{B}: SN gets +1/+0 until end of turn.
 timing=main
-oracle=Protection from white. {B}: Knight of Stromgald gains first strike until end of turn. {B}{B}: Knight of Stromgald gets +1/+0 until end of turn.
+oracle=Protection from white\n{B}: Knight of Stromgald gains first strike until end of turn.\n{B}{B}: Knight of Stromgald gets +1/+0 until end of turn.

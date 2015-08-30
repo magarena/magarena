@@ -1,5 +1,5 @@
 name=Roil Elemental
-image=http://mtgimage.com/card/roil%20elemental.jpg
+image=http://magiccards.info/scans/en/zen/62.jpg
 value=3.938
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=3/2
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. Landfall — Whenever a land enters the battlefield under your control, you may gain control of target creature for as long as you control Roil Elemental.
+oracle=Flying\nLandfall — Whenever a land enters the battlefield under your control, you may gain control of target creature for as long as you control Roil Elemental.

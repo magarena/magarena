@@ -1,5 +1,5 @@
 name=Kessig Recluse
-image=http://mtgimage.com/card/kessig%20recluse.jpg
+image=http://magiccards.info/scans/en/dka/121.jpg
 value=3.138
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{G}{G}
 pt=2/3
 ability=reach;deathtouch
 timing=main
-oracle=Reach. Deathtouch
+oracle=Reach\nDeathtouch

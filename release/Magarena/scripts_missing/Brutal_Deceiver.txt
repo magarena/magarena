@@ -1,6 +1,6 @@
 name=Brutal Deceiver
-image=http://mtgimage.com/card/brutal%20deceiver.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/161.jpg
+value=2.323
 rarity=C
 type=Creature
 subtype=Spirit
@@ -9,4 +9,4 @@ pt=2/2
 ability={1}: Look at the top card of your library.;\
         {2}: Reveal the top card of your library. If it's a land card, SN gets +1/+0 and gains first strike until end of turn. Activate this ability only once each turn.
 timing=main
-oracle={1}: Look at the top card of your library. {2}: Reveal the top card of your library. If it's a land card, Brutal Deceiver gets +1/+0 and gains first strike until end of turn. Activate this ability only once each turn.
+oracle={1}: Look at the top card of your library.\n{2}: Reveal the top card of your library. If it's a land card, Brutal Deceiver gets +1/+0 and gains first strike until end of turn. Activate this ability only once each turn.

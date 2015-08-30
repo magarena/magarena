@@ -1,6 +1,6 @@
 name=Herald of Leshrac
-image=http://mtgimage.com/card/herald%20of%20leshrac.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cs/62.jpg
+value=3.900
 rarity=R
 type=Creature
 subtype=Avatar
@@ -11,4 +11,4 @@ ability=Flying;\
         SN gets +1/+1 for each land you control but don't own.;\
         When SN leaves the battlefield, each player gains control of each land he or she owns that you control.
 timing=main
-oracle=Flying. Cumulative upkeep—Gain control of a land you don't control. Herald of Leshrac gets +1/+1 for each land you control but don't own. When Herald of Leshrac leaves the battlefield, each player gains control of each land he or she owns that you control.
+oracle=Flying\nCumulative upkeep—Gain control of a land you don't control.\nHerald of Leshrac gets +1/+1 for each land you control but don't own.\nWhen Herald of Leshrac leaves the battlefield, each player gains control of each land he or she owns that you control.

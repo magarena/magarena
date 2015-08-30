@@ -1,29 +1,3 @@
-def control = {
-    final int you, final MagicTargetFilter<MagicPermanent> filter ->
-    return new MagicStatic(MagicLayer.Ability,filter) {
-        @Override
-        public void modAbilityFlags(
-            final MagicPermanent source,
-            final MagicPermanent permanent,
-            final Set<MagicAbility> flags) {
-            permanent.addAbility(MagicAbility.DoesNotUntap, flags);
-        }
-        @Override
-        public boolean condition(
-            final MagicGame game,
-            final MagicPermanent source,
-            final MagicPermanent target) {
-            if (you != source.getController().getIndex()) {
-                //remove this static after the update
-                game.addDelayedAction(new MagicRemoveStaticAction(source, this));
-                return false;
-            } else {
-                return true;
-            }
-        }
-    };
-}
-                
 def choice = new MagicTargetChoice("target red or green creature an opponent controls");
 
 [
@@ -43,9 +17,15 @@ def choice = new MagicTargetChoice("target red or green creature an opponent con
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final MagicPermanent source = event.getPermanent();
-                game.doAction(new MagicTapAction(it));
-                final MagicTargetFilter<MagicPermanent> filter = new MagicPermanentTargetFilter(it);
-                game.doAction(new MagicAddStaticAction(source, control(source.getController().getIndex(), filter)));
+                game.doAction(new TapAction(it));
+                game.doAction(new AddStaticAction(
+                    source, 
+                    MagicStatic.AsLongAsCond(
+                        it, 
+                        MagicAbility.DoesNotUntap, 
+                        MagicConditionFactory.PlayerControlsSource(event.getPlayer()
+                    ))
+                ));
             });
         }
     }

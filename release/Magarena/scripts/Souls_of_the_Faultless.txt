@@ -1,5 +1,5 @@
 name=Souls of the Faultless
-image=http://mtgimage.com/card/souls%20of%20the%20faultless.jpg
+image=http://magiccards.info/scans/en/gp/131.jpg
 value=4.140
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=0/4
 ability=defender
 timing=smain
 requires_groovy_code
-oracle=Defender. Whenever Souls of the Faultless is dealt combat damage, you gain that much life and attacking player loses that much life.
+oracle=Defender\nWhenever Souls of the Faultless is dealt combat damage, you gain that much life and attacking player loses that much life.

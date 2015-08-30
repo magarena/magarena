@@ -1,5 +1,5 @@
 name=Ghalma's Warden
-image=http://mtgimage.com/card/ghalma%27s%20warden.jpg
+image=http://magiccards.info/scans/en/som/8.jpg
 value=2.664
 rarity=C
 type=Creature

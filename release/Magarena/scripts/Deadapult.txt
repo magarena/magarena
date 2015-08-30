@@ -1,5 +1,5 @@
 name=Deadapult
-image=http://mtgimage.com/card/deadapult.jpg
+image=http://magiccards.info/scans/en/ps/59.jpg
 value=4.139
 rarity=R
 type=Enchantment

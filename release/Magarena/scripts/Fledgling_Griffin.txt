@@ -1,5 +1,5 @@
 name=Fledgling Griffin
-image=http://mtgimage.com/card/fledgling%20griffin.jpg
+image=http://magiccards.info/scans/en/wwk/5.jpg
 value=2.825
 rarity=C
 type=Creature

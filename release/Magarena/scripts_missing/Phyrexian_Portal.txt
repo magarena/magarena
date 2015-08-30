@@ -1,9 +1,9 @@
 name=Phyrexian Portal
-image=http://mtgimage.com/card/phyrexian%20portal.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me2/217.jpg
+value=3.603
 rarity=R
 type=Artifact
 cost={3}
 ability={3}: If your library has ten or more cards in it, target opponent looks at the top ten cards of your library and separates them into two face-down piles. Exile one of those piles. Search the other pile for a card, put it into your hand, then shuffle the rest of that pile into your library.
-timing=main
+timing=artifact
 oracle={3}: If your library has ten or more cards in it, target opponent looks at the top ten cards of your library and separates them into two face-down piles. Exile one of those piles. Search the other pile for a card, put it into your hand, then shuffle the rest of that pile into your library.

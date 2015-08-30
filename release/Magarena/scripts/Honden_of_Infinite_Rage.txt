@@ -1,10 +1,10 @@
 name=Honden of Infinite Rage
-image=http://mtgimage.com/card/honden%20of%20infinite%20rage.jpg
+image=http://magiccards.info/scans/en/chk/172.jpg
 value=3.970
 rarity=U
 type=Legendary,Enchantment
 subtype=Shrine
 cost={2}{R}
+ability=At the beginning of your upkeep, SN deals damage to target creature or player equal to the number of Shrines you control.
 timing=main
-requires_groovy_code
 oracle=At the beginning of your upkeep, Honden of Infinite Rage deals damage to target creature or player equal to the number of Shrines you control.

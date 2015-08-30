@@ -1,11 +1,11 @@
 name=Nim Grotesque
-image=http://mtgimage.com/card/nim%20grotesque.jpg
+image=http://magiccards.info/scans/en/5dn/56.jpg
 value=1.812
 rarity=U
 type=Creature
 subtype=Zombie
 cost={6}{B}
 pt=3/6
+ability=SN gets +1/+0 for each artifact you control.
 timing=main
-requires_groovy_code
 oracle=Nim Grotesque gets +1/+0 for each artifact you control.

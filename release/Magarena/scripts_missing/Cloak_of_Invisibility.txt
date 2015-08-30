@@ -1,11 +1,11 @@
 name=Cloak of Invisibility
-image=http://mtgimage.com/card/cloak%20of%20invisibility.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/58.jpg
+value=3.112
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={U}
 ability=Enchant creature;\
         Enchanted creature has phasing and can't be blocked except by Walls.
-timing=main
-oracle=Enchant creature. Enchanted creature has phasing and can't be blocked except by Walls.
+timing=aura
+oracle=Enchant creature\nEnchanted creature has phasing and can't be blocked except by Walls.

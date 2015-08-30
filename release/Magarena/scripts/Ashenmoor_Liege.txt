@@ -1,5 +1,5 @@
 name=Ashenmoor Liege
-image=http://mtgimage.com/card/ashenmoor%20liege.jpg
+image=http://magiccards.info/scans/en/shm/181.jpg
 value=3.822
 rarity=R
 type=Creature
@@ -11,4 +11,4 @@ ability=other black creatures you control get +1/+1;\
 static=player
 timing=main
 requires_groovy_code
-oracle=Other black creatures you control get +1/+1. Other red creatures you control get +1/+1. Whenever Ashenmoor Liege becomes the target of a spell or ability an opponent controls, that player loses 4 life.
+oracle=Other black creatures you control get +1/+1.\nOther red creatures you control get +1/+1.\nWhenever Ashenmoor Liege becomes the target of a spell or ability an opponent controls, that player loses 4 life.

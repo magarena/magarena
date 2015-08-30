@@ -1,5 +1,5 @@
 name=Ratchet Bomb
-image=http://mtgimage.com/card/ratchet%20bomb.jpg
+image=http://magiccards.info/scans/en/m14/215.jpg
 value=4.425
 rarity=R
 type=Artifact
@@ -7,4 +7,4 @@ cost={2}
 timing=artifact
 ability={T}:Put a charge counter on SN.
 requires_groovy_code
-oracle={T}: Put a charge counter on Ratchet Bomb. {T}, Sacrifice Ratchet Bomb: Destroy each nonland permanent with converted mana cost equal to the number of charge counters on Ratchet Bomb.
+oracle={T}: Put a charge counter on Ratchet Bomb.\n{T}, Sacrifice Ratchet Bomb: Destroy each nonland permanent with converted mana cost equal to the number of charge counters on Ratchet Bomb.

@@ -1,5 +1,5 @@
 name=Bound in Silence
-image=http://mtgimage.com/card/bound%20in%20silence.jpg
+image=http://magiccards.info/scans/en/mma/8.jpg
 value=3.417
 removal=3
 rarity=U
@@ -9,4 +9,4 @@ cost={2}{W}
 ability=Enchanted creature can't attack or block.
 timing=tapping
 enchant=can't attack or block,neg creature
-oracle=Enchant creature. Enchanted creature can't attack or block.
+oracle=Enchant creature\nEnchanted creature can't attack or block.

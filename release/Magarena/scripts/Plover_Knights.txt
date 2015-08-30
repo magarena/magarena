@@ -1,5 +1,5 @@
 name=Plover Knights
-image=http://mtgimage.com/card/plover%20knights.jpg
+image=http://magiccards.info/scans/en/ddg/20.jpg
 value=2.781
 ability=flying;first strike
 rarity=C

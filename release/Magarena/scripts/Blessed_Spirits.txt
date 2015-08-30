@@ -1,0 +1,12 @@
+name=Blessed Spirits
+image=http://magiccards.info/scans/en/ori/7.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Spirit
+cost={2}{W}
+pt=2/2
+ability=Flying;\
+        Whenever you cast an enchantment spell, put a +1/+1 counter on SN.
+timing=main
+oracle=Flying\nWhenever you cast an enchantment spell, put a +1/+1 counter on Blessed Spirits.

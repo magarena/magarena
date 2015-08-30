@@ -1,5 +1,5 @@
 name=Messenger's Speed
-image=http://mtgimage.com/card/messenger%27s%20speed.jpg
+image=http://magiccards.info/scans/en/ths/129.jpg
 value=3.410
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={R}
 ability=Enchanted creature has trample and haste.
 enchant=trample,pos creature
 timing=fmain
-oracle=Enchant creature. Enchanted creature has trample and haste.
+oracle=Enchant creature\nEnchanted creature has trample and haste.

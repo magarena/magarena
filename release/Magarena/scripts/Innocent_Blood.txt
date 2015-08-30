@@ -1,5 +1,5 @@
 name=Innocent Blood
-image=http://mtgimage.com/card/innocent%20blood.jpg
+image=http://magiccards.info/scans/en/pch/33.jpg
 value=4.537
 removal=2
 rarity=C

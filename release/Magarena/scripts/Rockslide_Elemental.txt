@@ -1,5 +1,5 @@
 name=Rockslide Elemental
-image=http://mtgimage.com/card/rockslide%20elemental.jpg
+image=http://magiccards.info/scans/en/pch/63.jpg
 value=2.973
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=first strike;\
         Whenever another creature dies, you may put a +1/+1 counter on SN.
 timing=main
-oracle=First strike. Whenever another creature dies, you may put a +1/+1 counter on Rockslide Elemental.
+oracle=First strike\nWhenever another creature dies, you may put a +1/+1 counter on Rockslide Elemental.

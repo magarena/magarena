@@ -1,6 +1,6 @@
 name=Mistform Warchief
-image=http://mtgimage.com/card/mistform%20warchief.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sc/43.jpg
+value=3.756
 rarity=U
 type=Creature
 subtype=Illusion
@@ -9,4 +9,4 @@ pt=1/3
 ability=Creature spells you cast that share a creature type with SN cost {1} less to cast.;\
         {T}: SN becomes the creature type of your choice until end of turn.
 timing=main
-oracle=Creature spells you cast that share a creature type with Mistform Warchief cost {1} less to cast. {T}: Mistform Warchief becomes the creature type of your choice until end of turn.
+oracle=Creature spells you cast that share a creature type with Mistform Warchief cost {1} less to cast.\n{T}: Mistform Warchief becomes the creature type of your choice until end of turn.

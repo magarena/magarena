@@ -1,5 +1,5 @@
 name=Goblin Cohort
-image=http://mtgimage.com/card/goblin%20cohort.jpg
+image=http://magiccards.info/scans/en/evg/38.jpg
 value=2.500
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Dross Harvester
-image=http://mtgimage.com/card/dross%20harvester.jpg
+image=http://magiccards.info/scans/en/mi/63.jpg
 value=3.769
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=protection from white;\
         At the beginning of your end step, you lose 4 life.;\
         Whenever a creature dies, you gain 2 life.
 timing=main
-oracle=Protection from white. At the beginning of your end step, you lose 4 life. Whenever a creature dies, you gain 2 life.
+oracle=Protection from white\nAt the beginning of your end step, you lose 4 life.\nWhenever a creature dies, you gain 2 life.

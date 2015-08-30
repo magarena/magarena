@@ -1,11 +1,11 @@
 name=Ferocity
-image=http://mtgimage.com/card/ferocity.jpg
+image=http://magiccards.info/scans/en/mm/245.jpg
 value=3.848
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{G}
+ability=Whenever enchanted creature blocks or becomes blocked, you may put a +1/+1 counter on RN.
 timing=aura
 enchant=pump,pos creature
-requires_groovy_code
-oracle=Enchant creature. Whenever enchanted creature blocks or becomes blocked, you may put a +1/+1 counter on it.
+oracle=Enchant creature\nWhenever enchanted creature blocks or becomes blocked, you may put a +1/+1 counter on it.

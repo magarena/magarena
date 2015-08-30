@@ -1,6 +1,6 @@
 name=Lightwielder Paladin
-image=http://mtgimage.com/card/lightwielder%20paladin.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m10/19.jpg
+value=3.662
 rarity=R
 type=Creature
 subtype=Human,Knight
@@ -9,4 +9,4 @@ pt=4/4
 ability=First strike;\
         Whenever SN deals combat damage to a player, you may exile target black or red permanent that player controls.
 timing=main
-oracle=First strike. Whenever Lightwielder Paladin deals combat damage to a player, you may exile target black or red permanent that player controls.
+oracle=First strike\nWhenever Lightwielder Paladin deals combat damage to a player, you may exile target black or red permanent that player controls.

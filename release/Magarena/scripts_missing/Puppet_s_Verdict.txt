@@ -1,9 +1,0 @@
-name=Puppet's Verdict
-image=http://mtgimage.com/card/puppet%27s%20verdict.jpg
-value=2.500
-rarity=R
-type=Instant
-cost={1}{R}{R}
-effect=Flip a coin. If you win the flip, destroy all creatures with power 2 or less. If you lose the flip, destroy all creatures with power 3 or greater.
-timing=removal
-oracle=Flip a coin. If you win the flip, destroy all creatures with power 2 or less. If you lose the flip, destroy all creatures with power 3 or greater.

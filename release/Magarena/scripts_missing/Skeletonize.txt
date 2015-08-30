@@ -1,6 +1,6 @@
 name=Skeletonize
-image=http://mtgimage.com/card/skeletonize.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ala/114.jpg
+value=2.731
 rarity=U
 type=Instant
 cost={4}{R}

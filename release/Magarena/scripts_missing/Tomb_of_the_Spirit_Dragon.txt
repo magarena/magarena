@@ -1,9 +1,0 @@
-name=Tomb of the Spirit Dragon
-image=http://mtgimage.com/card/tomb%20of%20the%20spirit%20dragon.jpg
-value=2.500
-rarity=U
-type=Land
-ability={T}: Add {1} to your mana pool.;\
-        {2}, {T}: You gain 1 life for each colorless creature you control.
-timing=main
-oracle={T}: Add {1} to your mana pool. {2}, {T}: You gain 1 life for each colorless creature you control.

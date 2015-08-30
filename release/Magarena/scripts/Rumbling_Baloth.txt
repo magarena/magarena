@@ -1,5 +1,5 @@
 name=Rumbling Baloth
-image=http://mtgimage.com/card/rumbling%20baloth.jpg
+image=http://magiccards.info/scans/en/m14/193.jpg
 value=3.194
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Beast
 cost={2}{G}{G}
 pt=4/4
 timing=main
+oracle=NONE

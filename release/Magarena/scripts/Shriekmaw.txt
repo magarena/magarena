@@ -1,5 +1,5 @@
 name=Shriekmaw
-image=http://mtgimage.com/card/shriekmaw.jpg
+image=http://magiccards.info/scans/en/c14/160.jpg
 value=4.179
 rarity=U
 type=Creature
@@ -10,4 +10,4 @@ ability=fear;\
         When SN enters the battlefield, destroy target nonartifact, nonblack creature.;\
         evoke {1}{B}
 timing=main
-oracle=Fear. When Shriekmaw enters the battlefield, destroy target nonartifact, nonblack creature. Evoke {1}{B}
+oracle=Fear\nWhen Shriekmaw enters the battlefield, destroy target nonartifact, nonblack creature.\nEvoke {1}{B}

@@ -1,5 +1,5 @@
 name=Mageta's Boon
-image=http://mtgimage.com/card/mageta%27s%20boon.jpg
+image=http://magiccards.info/scans/en/pr/14.jpg
 value=2.963
 rarity=C
 type=Enchantment
@@ -9,4 +9,4 @@ ability=Flash;\
         Enchanted creature gets +1/+2.
 timing=pumpFlash
 enchant=pump,pos creature
-oracle=Flash. Enchant creature. Enchanted creature gets +1/+2.
+oracle=Flash\nEnchant creature\nEnchanted creature gets +1/+2.

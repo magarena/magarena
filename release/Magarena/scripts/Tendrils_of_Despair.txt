@@ -1,5 +1,5 @@
 name=Tendrils of Despair
-image=http://mtgimage.com/card/tendrils%20of%20despair.jpg
+image=http://magiccards.info/scans/en/wl/25.jpg
 value=3.868
 rarity=C
 type=Sorcery
@@ -7,4 +7,4 @@ cost={B}
 ability=As an additional cost to cast SN, sacrifice a creature.
 effect=Target opponent discards two cards.
 timing=main
-oracle=As an additional cost to cast Tendrils of Despair, sacrifice a creature. Target opponent discards two cards.
+oracle=As an additional cost to cast Tendrils of Despair, sacrifice a creature.\nTarget opponent discards two cards.

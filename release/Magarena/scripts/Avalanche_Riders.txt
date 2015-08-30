@@ -1,5 +1,5 @@
 name=Avalanche Riders
-image=http://mtgimage.com/card/avalanche%20riders.jpg
+image=http://magiccards.info/scans/en/tsts/55.jpg
 value=4.211
 removal=1
 rarity=U
@@ -11,4 +11,4 @@ ability=haste;\
         echo {3}{R};\
         When SN enters the battlefield, destroy target land.
 timing=main
-oracle=Haste. Echo {3}{R}. When Avalanche Riders enters the battlefield, destroy target land.
+oracle=Haste\nEcho {3}{R}\nWhen Avalanche Riders enters the battlefield, destroy target land.

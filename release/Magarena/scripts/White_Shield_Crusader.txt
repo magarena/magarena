@@ -1,5 +1,5 @@
 name=White Shield Crusader
-image=http://mtgimage.com/card/white%20shield%20crusader.jpg
+image=http://magiccards.info/scans/en/cs/24.jpg
 value=4.180
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={W}{W}
 pt=2/1
 ability=protection from black;{W}: SN gains flying until end of turn.;{W}{W}: SN gets +1/+0 until end of turn.
 timing=main
-oracle=Protection from black. {W}: White Shield Crusader gains flying until end of turn. {W}{W}: White Shield Crusader gets +1/+0 until end of turn.
+oracle=Protection from black\n{W}: White Shield Crusader gains flying until end of turn.\n{W}{W}: White Shield Crusader gets +1/+0 until end of turn.

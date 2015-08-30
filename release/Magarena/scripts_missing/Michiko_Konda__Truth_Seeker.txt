@@ -1,6 +1,6 @@
 name=Michiko Konda, Truth Seeker
-image=http://mtgimage.com/card/michiko%20konda%2C%20truth%20seeker.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sok/19.jpg
+value=3.899
 rarity=R
 type=Legendary,Creature
 subtype=Human,Advisor

@@ -1,5 +1,5 @@
 name=Primordial Hydra
-image=http://mtgimage.com/card/primordial%20hydra.jpg
+image=http://magiccards.info/scans/en/m13/183.jpg
 value=4.227
 rarity=M
 type=Creature
@@ -10,4 +10,4 @@ ability=SN enters the battlefield with X +1/+1 counters on it.;\
         SN has trample as long as it has ten or more +1/+1 counters on it.
 timing=main
 requires_groovy_code
-oracle=Primordial Hydra enters the battlefield with X +1/+1 counters on it. At the beginning of your upkeep, double the number of +1/+1 counters on Primordial Hydra. Primordial Hydra has trample as long as it has ten or more +1/+1 counters on it.
+oracle=Primordial Hydra enters the battlefield with X +1/+1 counters on it.\nAt the beginning of your upkeep, double the number of +1/+1 counters on Primordial Hydra.\nPrimordial Hydra has trample as long as it has ten or more +1/+1 counters on it.

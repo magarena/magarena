@@ -1,11 +1,11 @@
 name=Song of the Dryads
-image=http://mtgimage.com/card/song%20of%20the%20dryads.jpg
+image=http://magiccards.info/scans/en/c14/47.jpg
 value=2.500
 rarity=R
 type=Enchantment
 subtype=Aura
 cost={2}{G}
-enchant=default,permanent
-ability=Enchanted permanent is a colorless Forest land.
-timing=main
-oracle=Enchant permanent. Enchanted permanent is a colorless Forest land.
+ability=Enchant permanent;\
+        Enchanted permanent is a colorless Forest land.
+timing=aura
+oracle=Enchant permanent\nEnchanted permanent is a colorless Forest land.

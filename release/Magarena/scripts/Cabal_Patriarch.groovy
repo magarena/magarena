@@ -22,7 +22,7 @@ def choice = new MagicTargetChoice("a creature card from your graveyard");
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 new MagicWeakenTargetPicker(2,2),
                 this,
                 "Target creature\$ gets -2/-2 until end of turn."
@@ -32,7 +32,7 @@ def choice = new MagicTargetChoice("a creature card from your graveyard");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicChangeTurnPTAction(it,-2,-2));
+                game.doAction(new ChangeTurnPTAction(it,-2,-2));
             });
         }
     }

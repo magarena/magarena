@@ -1,6 +1,6 @@
 name=Phylactery Lich
-image=http://mtgimage.com/card/phylactery%20lich.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m13/104.jpg
+value=3.670
 rarity=R
 type=Creature
 subtype=Zombie
@@ -10,4 +10,4 @@ ability=Indestructible;\
         As SN enters the battlefield, put a phylactery counter on an artifact you control.;\
         When you control no permanents with phylactery counters on them, sacrifice SN.
 timing=main
-oracle=Indestructible. As Phylactery Lich enters the battlefield, put a phylactery counter on an artifact you control. When you control no permanents with phylactery counters on them, sacrifice Phylactery Lich.
+oracle=Indestructible\nAs Phylactery Lich enters the battlefield, put a phylactery counter on an artifact you control.\nWhen you control no permanents with phylactery counters on them, sacrifice Phylactery Lich.

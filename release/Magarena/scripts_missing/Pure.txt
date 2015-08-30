@@ -1,6 +1,6 @@
 name=Pure
-image=http://mtgimage.com/card/puresimple.jpg
-value=2.500
+image=http://magiccards.info/scans/en/di/154a.jpg
+value=3.788
 rarity=U
 type=Sorcery
 cost={1}{R}{G}

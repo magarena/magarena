@@ -1,10 +1,10 @@
 name=Aggressive Mining
-image=http://mtgimage.com/card/aggressive%20mining.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/127.jpg
+value=2.636
 rarity=R
 type=Enchantment
 cost={3}{R}
 ability=You can't play lands.;\
         Sacrifice a land: Draw two cards. Activate this ability only once each turn.
-timing=main
-oracle=You can't play lands. Sacrifice a land: Draw two cards. Activate this ability only once each turn.
+timing=enchantment
+oracle=You can't play lands.\nSacrifice a land: Draw two cards. Activate this ability only once each turn.

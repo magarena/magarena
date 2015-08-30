@@ -1,0 +1,9 @@
+name=Natural Balance
+image=http://magiccards.info/scans/en/mr/129.jpg
+value=3.806
+rarity=R
+type=Sorcery
+cost={2}{G}{G}
+timing=main
+requires_groovy_code
+oracle=Each player who controls six or more lands chooses five lands he or she controls and sacrifices the rest. Each player who controls four or fewer lands may search his or her library for up to X basic land cards and put them onto the battlefield, where X is five minus the number of lands he or she controls. Then each player who searched his or her library this way shuffles it.

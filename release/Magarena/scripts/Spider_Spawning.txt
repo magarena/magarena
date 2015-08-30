@@ -1,10 +1,10 @@
 name=Spider Spawning
-image=http://mtgimage.com/card/spider%20spawning.jpg
+image=http://magiccards.info/scans/en/isd/203.jpg
 value=3.757
 rarity=U
 type=Sorcery
 cost={4}{G}
 ability=Flashback {6}{B}
+effect=Put a 1/2 green Spider creature token with reach onto the battlefield for each creature card in your graveyard.
 timing=main
-requires_groovy_code
-oracle=Put a 1/2 green Spider creature token with reach onto the battlefield for each creature card in your graveyard. Flashback {6}{B}
+oracle=Put a 1/2 green Spider creature token with reach onto the battlefield for each creature card in your graveyard.\nFlashback {6}{B}

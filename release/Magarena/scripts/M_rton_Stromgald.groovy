@@ -11,15 +11,10 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> attackers = game.filterPermanents(
-                new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilterFactory.ATTACKING_CREATURE,
-                    event.getPermanent()
-                )
-            );
+            final Collection<MagicPermanent> attackers = ATTACKING_CREATURE.except(event.getPermanent()).filter(event);
             final int amount = attackers.size()
             for (final MagicPermanent creature:attackers) {
-                game.doAction(new MagicChangeTurnPTAction(creature,amount,amount));
+                game.doAction(new ChangeTurnPTAction(creature,amount,amount));
             }
         }
     },
@@ -36,15 +31,10 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> blockers = game.filterPermanents(
-                new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilterFactory.BLOCKING_CREATURE,
-                    event.getPermanent()
-                )
-            );
+            final Collection<MagicPermanent> blockers = BLOCKING_CREATURE.except(event.getPermanent()).filter(event);
             final int amount = blockers.size()
             for (final MagicPermanent creature:blockers) {
-                game.doAction(new MagicChangeTurnPTAction(creature,amount,amount));
+                game.doAction(new ChangeTurnPTAction(creature,amount,amount));
             }
         }
     }

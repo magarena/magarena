@@ -1,0 +1,11 @@
+name=Separatist Voidmage
+image=http://magiccards.info/scans/en/ori/72.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={3}{U}
+pt=2/2
+ability=When SN enters the battlefield, you may return target creature to its owner's hand.
+timing=main
+oracle=When Separatist Voidmage enters the battlefield, you may return target creature to its owner's hand.

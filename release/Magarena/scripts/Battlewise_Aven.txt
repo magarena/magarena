@@ -1,5 +1,5 @@
 name=Battlewise Aven
-image=http://mtgimage.com/card/battlewise%20aven.jpg
+image=http://magiccards.info/scans/en/ju/4.jpg
 value=2.710
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         As long as seven or more cards are in your graveyard, SN gets +1/+1 and has first strike.
 timing=main
-oracle=Flying. Threshold — As long as seven or more cards are in your graveyard, Battlewise Aven gets +1/+1 and has first strike.
+oracle=Flying\nThreshold — As long as seven or more cards are in your graveyard, Battlewise Aven gets +1/+1 and has first strike.

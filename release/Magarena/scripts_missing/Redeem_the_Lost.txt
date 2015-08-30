@@ -1,6 +1,6 @@
 name=Redeem the Lost
-image=http://mtgimage.com/card/redeem%20the%20lost.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mt/21.jpg
+value=2.971
 rarity=U
 type=Instant
 cost={1}{W}

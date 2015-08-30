@@ -1,5 +1,5 @@
 name=Harbinger of Spring
-image=http://mtgimage.com/card/harbinger%20of%20spring.jpg
+image=http://magiccards.info/scans/en/bok/128.jpg
 value=2.689
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=Protection from non-Spirit creatures;\
         Soulshift 4
 timing=main
-oracle=Protection from non-Spirit creatures. Soulshift 4
+oracle=Protection from non-Spirit creatures\nSoulshift 4

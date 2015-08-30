@@ -1,6 +1,6 @@
 name=Polukranos, World Eater
-image=http://mtgimage.com/card/polukranos%2C%20world%20eater.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ths/172.jpg
+value=3.547
 rarity=M
 type=Legendary,Creature
 subtype=Hydra
@@ -9,4 +9,4 @@ pt=5/5
 ability={X}{X}{G}: Monstrosity X.;\
         When SN becomes monstrous, it deals X damage divided as you choose among any number of target creatures your opponents control. Each of those creatures deals damage equal to its power to Polukranos.
 timing=main
-oracle={X}{X}{G}: Monstrosity X. When Polukranos, World Eater becomes monstrous, it deals X damage divided as you choose among any number of target creatures your opponents control. Each of those creatures deals damage equal to its power to Polukranos.
+oracle={X}{X}{G}: Monstrosity X.\nWhen Polukranos, World Eater becomes monstrous, it deals X damage divided as you choose among any number of target creatures your opponents control. Each of those creatures deals damage equal to its power to Polukranos.

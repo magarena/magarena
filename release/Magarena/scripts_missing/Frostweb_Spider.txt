@@ -1,6 +1,6 @@
 name=Frostweb Spider
-image=http://mtgimage.com/card/frostweb%20spider.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cs/109.jpg
+value=2.940
 rarity=C
 type=Snow,Creature
 subtype=Spider
@@ -9,4 +9,4 @@ pt=1/3
 ability=Reach;\
         Whenever SN blocks a creature with flying, put a +1/+1 counter on SN at end of combat.
 timing=main
-oracle=Reach. Whenever Frostweb Spider blocks a creature with flying, put a +1/+1 counter on Frostweb Spider at end of combat.
+oracle=Reach\nWhenever Frostweb Spider blocks a creature with flying, put a +1/+1 counter on Frostweb Spider at end of combat.

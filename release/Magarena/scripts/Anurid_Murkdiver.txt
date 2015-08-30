@@ -1,11 +1,11 @@
 name=Anurid Murkdiver
-image=http://mtgimage.com/card/anurid%20murkdiver.jpg
+image=http://magiccards.info/scans/en/on/124.jpg
 value=1.719
-ability=swampwalk
 rarity=C
 type=Creature
 subtype=Zombie,Frog,Beast
 cost={4}{B}{B}
 pt=4/3
+ability=Swampwalk
 timing=main
 oracle=Swampwalk

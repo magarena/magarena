@@ -1,5 +1,5 @@
 name=Scarwood Hag
-image=http://mtgimage.com/card/scarwood%20hag.jpg
+image=http://magiccards.info/scans/en/dk/49.jpg
 value=1.551
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability={G}{G}{G}{G}, {T}: Target creature gains forestwalk until end of turn.;\
         {T}: Target creature loses forestwalk until end of turn.
 timing=main
-oracle={G}{G}{G}{G}, {T}: Target creature gains forestwalk until end of turn. {T}: Target creature loses forestwalk until end of turn.
+oracle={G}{G}{G}{G}, {T}: Target creature gains forestwalk until end of turn.\n{T}: Target creature loses forestwalk until end of turn.

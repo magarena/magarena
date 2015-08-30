@@ -1,6 +1,6 @@
 name=Gruul Scrapper
-image=http://mtgimage.com/card/gruul%20scrapper.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gp/89.jpg
+value=1.804
 rarity=C
 type=Creature
 subtype=Human,Berserker

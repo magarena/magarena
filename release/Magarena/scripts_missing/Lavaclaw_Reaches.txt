@@ -1,10 +1,10 @@
 name=Lavaclaw Reaches
-image=http://mtgimage.com/card/lavaclaw%20reaches.jpg
-value=2.500
+image=http://magiccards.info/scans/en/wwk/139.jpg
+value=3.462
 rarity=R
 type=Land
 ability=SN enters the battlefield tapped.;\
         {T}: Add {B} or {R} to your mana pool.;\
         {1}{B}{R}: Until end of turn, SN becomes a 2/2 black and red Elemental creature with "{X}: This creature gets +X/+0 until end of turn." It's still a land.
-timing=main
-oracle=Lavaclaw Reaches enters the battlefield tapped. {T}: Add {B} or {R} to your mana pool. {1}{B}{R}: Until end of turn, Lavaclaw Reaches becomes a 2/2 black and red Elemental creature with "{X}: This creature gets +X/+0 until end of turn." It's still a land.
+timing=land
+oracle=Lavaclaw Reaches enters the battlefield tapped.\n{T}: Add {B} or {R} to your mana pool.\n{1}{B}{R}: Until end of turn, Lavaclaw Reaches becomes a 2/2 black and red Elemental creature with "{X}: This creature gets +X/+0 until end of turn." It's still a land.

@@ -1,6 +1,6 @@
 name=Herald of War
-image=http://mtgimage.com/card/herald%20of%20war.jpg
-value=2.500
+image=http://magiccards.info/scans/en/avr/24.jpg
+value=3.792
 rarity=R
 type=Creature
 subtype=Angel
@@ -10,4 +10,4 @@ ability=Flying;\
         Whenever SN attacks, put a +1/+1 counter on it.;\
         Angel spells and Human spells you cast cost {1} less to cast for each +1/+1 counter on SN.
 timing=main
-oracle=Flying. Whenever Herald of War attacks, put a +1/+1 counter on it. Angel spells and Human spells you cast cost {1} less to cast for each +1/+1 counter on Herald of War.
+oracle=Flying\nWhenever Herald of War attacks, put a +1/+1 counter on it.\nAngel spells and Human spells you cast cost {1} less to cast for each +1/+1 counter on Herald of War.

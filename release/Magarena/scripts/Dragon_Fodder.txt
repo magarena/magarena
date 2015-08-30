@@ -1,6 +1,6 @@
 name=Dragon Fodder
-image=http://mtgimage.com/card/dragon%20fodder.jpg
-value=3.450
+image=http://magiccards.info/scans/en/ori/140.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={1}{R}

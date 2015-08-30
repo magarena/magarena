@@ -1,5 +1,5 @@
 name=Plagued Rusalka
-image=http://mtgimage.com/card/plagued%20rusalka.jpg
+image=http://magiccards.info/scans/en/cns/121.jpg
 value=3.300
 rarity=U
 type=Creature

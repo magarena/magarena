@@ -1,5 +1,5 @@
 name=Sea Gate Oracle
-image=http://mtgimage.com/card/sea%20gate%20oracle.jpg
+image=http://magiccards.info/scans/en/c14/124.jpg
 value=2.500
 rarity=C
 type=Creature

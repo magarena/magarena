@@ -1,5 +1,5 @@
 name=Scavenger Drake
-image=http://mtgimage.com/card/scavenger%20drake.jpg
+image=http://magiccards.info/scans/en/ala/85.jpg
 value=2.897
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=flying;\
         Whenever another creature dies, you may put a +1/+1 counter on SN.
 timing=main
-oracle=Flying. Whenever another creature dies, you may put a +1/+1 counter on Scavenger Drake.
+oracle=Flying\nWhenever another creature dies, you may put a +1/+1 counter on Scavenger Drake.

@@ -1,5 +1,5 @@
 name=Coiling Oracle
-image=http://mtgimage.com/card/coiling%20oracle.jpg
+image=http://magiccards.info/scans/en/ddo/51.jpg
 value=4.300
 rarity=C
 type=Creature

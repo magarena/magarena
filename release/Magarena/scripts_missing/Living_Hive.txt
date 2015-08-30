@@ -1,6 +1,6 @@
 name=Living Hive
-image=http://mtgimage.com/card/living%20hive.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pch/75.jpg
+value=4.107
 rarity=R
 type=Creature
 subtype=Elemental,Insect
@@ -9,4 +9,4 @@ pt=6/6
 ability=Trample;\
         Whenever SN deals combat damage to a player, put that many 1/1 green Insect creature tokens onto the battlefield.
 timing=main
-oracle=Trample. Whenever Living Hive deals combat damage to a player, put that many 1/1 green Insect creature tokens onto the battlefield.
+oracle=Trample\nWhenever Living Hive deals combat damage to a player, put that many 1/1 green Insect creature tokens onto the battlefield.

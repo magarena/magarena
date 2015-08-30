@@ -1,5 +1,5 @@
 name=Hellkite Overlord
-image=http://mtgimage.com/card/hellkite%20overlord.jpg
+image=http://magiccards.info/scans/en/ala/172.jpg
 value=4.484
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=flying;trample;haste;\
         {R}: SN gets +1/+0 until end of turn.;\
         {B}{G}: Regenerate SN.
 timing=fmain
-oracle=Flying, trample, haste. {R}: Hellkite Overlord gets +1/+0 until end of turn. {B}{G}: Regenerate Hellkite Overlord.
+oracle=Flying, trample, haste\n{R}: Hellkite Overlord gets +1/+0 until end of turn.\n{B}{G}: Regenerate Hellkite Overlord.

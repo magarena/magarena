@@ -7,3 +7,4 @@ subtype=Knight
 color=w
 pt=2/2
 ability=vigilance
+oracle=Vigilance

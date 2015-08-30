@@ -1,5 +1,5 @@
 name=Pillaging Horde
-image=http://mtgimage.com/card/pillaging%20horde.jpg
+image=http://magiccards.info/scans/en/vma/180.jpg
 value=2.000
 rarity=R
 type=Creature

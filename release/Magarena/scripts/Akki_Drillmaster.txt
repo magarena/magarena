@@ -1,11 +1,11 @@
 name=Akki Drillmaster
-image=http://mtgimage.com/card/akki%20drillmaster.jpg
+image=http://magiccards.info/scans/en/sok/92.jpg
 value=2.819
 rarity=C
 type=Creature
 subtype=Goblin,Shaman
 cost={2}{R}
 pt=2/2
-ability={T}:Target creature gains haste until end of turn.
+ability={T}: Target creature gains haste until end of turn.
 timing=main
 oracle={T}: Target creature gains haste until end of turn.

@@ -1,5 +1,5 @@
 name=Lord of Lineage
-image=http://mtgimage.com/card/lord%20of%20lineage.jpg
+image=http://magiccards.info/scans/en/isd/90b.jpg
 value=3.943
 rarity=R
 type=Creature
@@ -12,4 +12,4 @@ ability=Flying;\
 transform=Bloodline Keeper
 timing=main
 hidden
-oracle=Flying. Other Vampire creatures you control get +2/+2. {T}: Put a 2/2 black Vampire creature token with flying onto the battlefield.
+oracle=Flying\nOther Vampire creatures you control get +2/+2.\n{T}: Put a 2/2 black Vampire creature token with flying onto the battlefield.

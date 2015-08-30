@@ -1,0 +1,9 @@
+name=Azorius Charm
+image=http://magiccards.info/scans/en/rtr/145.jpg
+value=4.012
+rarity=U
+type=Instant
+cost={W}{U}
+effect=Choose one — (1) Creatures you control gain lifelink until end of turn. (2) Draw a card. (3) Put target attacking or blocking creature on top of its owner's library.
+timing=removal
+oracle=Choose one —\n• Creatures you control gain lifelink until end of turn.\n• Draw a card.\n• Put target attacking or blocking creature on top of its owner's library.

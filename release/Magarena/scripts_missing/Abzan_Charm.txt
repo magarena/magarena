@@ -1,9 +1,9 @@
 name=Abzan Charm
-image=http://mtgimage.com/card/abzan%20charm.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/161.jpg
+value=4.100
 rarity=U
 type=Instant
 cost={W}{B}{G}
-effect=Choose one — • Exile target creature with power 3 or greater. • You draw two cards and you lose 2 life. • Distribute two +1/+1 counters among one or two target creatures.
+effect=Choose one — (1) Exile target creature with power 3 or greater. (2) You draw two cards and you lose 2 life. (3) Distribute two +1/+1 counters among one or two target creatures.
 timing=removal
-oracle=Choose one — • Exile target creature with power 3 or greater. • You draw two cards and you lose 2 life. • Distribute two +1/+1 counters among one or two target creatures.
+oracle=Choose one —\n• Exile target creature with power 3 or greater.\n• You draw two cards and you lose 2 life.\n• Distribute two +1/+1 counters among one or two target creatures.

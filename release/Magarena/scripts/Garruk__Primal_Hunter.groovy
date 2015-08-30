@@ -10,9 +10,9 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicPlayTokenAction(
+            game.doAction(new PlayTokenAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("3/3 green Beast creature token")
+                CardDefinitions.getToken("3/3 green Beast creature token")
             ));
         }
     },
@@ -27,14 +27,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets = game.filterPermanents(
-                    event.getPlayer(),
-                    MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
             int power = 0;
-            for (final MagicPermanent creature : targets) {
-                power = Math.max(power,creature.getPower());
+            CREATURE_YOU_CONTROL.filter(event) each {
+                power = Math.max(power, it.getPower());
             }
-            game.doAction(new MagicDrawAction(
+            game.doAction(new DrawAction(
                 event.getPlayer(),
                 power
             ));
@@ -52,9 +49,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amt = event.getPlayer().getNrOfPermanents(MagicType.Land);
-            game.doAction(new MagicPlayTokensAction(
+            game.doAction(new PlayTokensAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("6/6 green Wurm creature token"),
+                CardDefinitions.getToken("6/6 green Wurm creature token"),
                 amt
             ));
         }

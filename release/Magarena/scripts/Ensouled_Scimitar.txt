@@ -1,0 +1,12 @@
+name=Ensouled Scimitar
+image=http://magiccards.info/scans/en/5dn/119.jpg
+value=3.750
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={3}
+ability={3}: SN becomes a 1/5 Spirit artifact creature with flying until end of turn.;\
+        Equipped creature gets +1/+5.;\
+        Equip {2}
+timing=main
+oracle={3}: Ensouled Scimitar becomes a 1/5 Spirit artifact creature with flying until end of turn.\nEquipped creature gets +1/+5.\nEquip {2}

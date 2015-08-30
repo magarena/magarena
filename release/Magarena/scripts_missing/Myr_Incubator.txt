@@ -1,9 +1,9 @@
 name=Myr Incubator
-image=http://mtgimage.com/card/myr%20incubator.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mi/212.jpg
+value=4.114
 rarity=R
 type=Artifact
 cost={6}
 ability={6}, {T}, Sacrifice SN: Search your library for any number of artifact cards, exile them, then put that many 1/1 colorless Myr artifact creature tokens onto the battlefield. Then shuffle your library.
-timing=main
+timing=artifact
 oracle={6}, {T}, Sacrifice Myr Incubator: Search your library for any number of artifact cards, exile them, then put that many 1/1 colorless Myr artifact creature tokens onto the battlefield. Then shuffle your library.

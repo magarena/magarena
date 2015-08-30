@@ -1,5 +1,5 @@
 name=Norwood Ranger
-image=http://mtgimage.com/card/norwood%20ranger.jpg
+image=http://magiccards.info/scans/en/9e/260.jpg
 value=2.622
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Elf,Scout
 cost={G}
 pt=1/2
 timing=main
+oracle=NONE

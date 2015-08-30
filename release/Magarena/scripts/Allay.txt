@@ -1,11 +1,11 @@
 name=Allay
-image=http://mtgimage.com/card/allay.jpg
+image=http://magiccards.info/scans/en/ex/1.jpg
 value=2.986
 removal=1
 rarity=C
 type=Instant
 cost={1}{W}
 ability=buyback {3}
-effect=Destroy target enchantment.
+effect=Destroy target enchantment.~Buyback
 timing=removal
-oracle=Buyback {3}. Destroy target enchantment.
+oracle=Buyback {3}\nDestroy target enchantment.

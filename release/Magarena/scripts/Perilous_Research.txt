@@ -1,5 +1,5 @@
 name=Perilous Research
-image=http://mtgimage.com/card/perilous%20research.jpg
+image=http://magiccards.info/scans/en/mma/58.jpg
 value=3.935
 rarity=C
 type=Instant

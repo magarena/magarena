@@ -1,5 +1,5 @@
 name=Squire
-image=http://mtgimage.com/card/squire.jpg
+image=http://magiccards.info/scans/en/tsts/15.jpg
 value=1.608
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Human,Soldier
 cost={1}{W}
 pt=1/2
 timing=main
+oracle=NONE

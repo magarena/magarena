@@ -1,5 +1,5 @@
 name=Agrus Kos, Wojek Veteran
-image=http://mtgimage.com/card/agrus%20kos%2C%20wojek%20veteran.jpg
+image=http://magiccards.info/scans/en/rav/190.jpg
 value=3.735
 rarity=R
 type=Legendary,Creature

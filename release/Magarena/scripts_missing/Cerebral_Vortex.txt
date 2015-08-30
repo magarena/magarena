@@ -1,6 +1,6 @@
 name=Cerebral Vortex
-image=http://mtgimage.com/card/cerebral%20vortex.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gp/107.jpg
+value=3.808
 rarity=R
 type=Instant
 cost={1}{U}{R}

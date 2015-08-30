@@ -1,5 +1,5 @@
 name=Demonic Hordes
-image=http://mtgimage.com/card/demonic%20hordes.jpg
+image=http://magiccards.info/scans/en/me4/76.jpg
 value=4.011
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=5/5
 ability={T}: Destroy target land.
 timing=main
 requires_groovy_code
-oracle={T}: Destroy target land. At the beginning of your upkeep, unless you pay {B}{B}{B}, tap Demonic Hordes and sacrifice a land of an opponent's choice.
+oracle={T}: Destroy target land.\nAt the beginning of your upkeep, unless you pay {B}{B}{B}, tap Demonic Hordes and sacrifice a land of an opponent's choice.

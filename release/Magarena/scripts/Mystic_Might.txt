@@ -1,5 +1,5 @@
 name=Mystic Might
-image=http://mtgimage.com/card/mystic%20might.jpg
+image=http://magiccards.info/scans/en/ia/86.jpg
 value=2.000
 rarity=R
 type=Enchantment
@@ -9,4 +9,4 @@ ability=cumulative upkeep {1}{U};\
         Enchanted land has "{T}: Target creature gets +2/+2 until end of turn."
 enchant=pump,land you control
 timing=aura
-oracle=Enchant land you control. Cumulative upkeep {1}{U}. Enchanted land has "{T}: Target creature gets +2/+2 until end of turn."
+oracle=Enchant land you control\nCumulative upkeep {1}{U}\nEnchanted land has "{T}: Target creature gets +2/+2 until end of turn."

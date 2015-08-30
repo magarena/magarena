@@ -1,0 +1,9 @@
+name=Epic Confrontation
+image=http://magiccards.info/scans/en/dtk/185.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={1}{G}
+effect=Target creature you control gets +1/+2 until end of turn. It fights target creature you don't control.
+timing=main
+oracle=Target creature you control gets +1/+2 until end of turn. It fights target creature you don't control.

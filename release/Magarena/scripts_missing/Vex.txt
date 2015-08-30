@@ -1,6 +1,6 @@
 name=Vex
-image=http://mtgimage.com/card/vex.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ds/36.jpg
+value=1.536
 rarity=C
 type=Instant
 cost={2}{U}

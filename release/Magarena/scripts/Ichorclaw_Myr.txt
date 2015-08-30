@@ -1,5 +1,5 @@
 name=Ichorclaw Myr
-image=http://mtgimage.com/card/ichorclaw%20myr.jpg
+image=http://magiccards.info/scans/en/som/166.jpg
 value=4.097
 rarity=C
 type=Artifact,Creature
@@ -8,4 +8,4 @@ cost={2}
 pt=1/1
 ability=infect;Whenever SN becomes blocked, SN gets +2/+2 until end of turn.
 timing=main
-oracle=Infect. Whenever Ichorclaw Myr becomes blocked, it gets +2/+2 until end of turn.
+oracle=Infect\nWhenever Ichorclaw Myr becomes blocked, it gets +2/+2 until end of turn.

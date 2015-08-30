@@ -1,0 +1,12 @@
+name=Throwing Knife
+image=http://magiccards.info/scans/en/ori/241.jpg
+value=2.500
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={2}
+ability=Equipped creature gets +2/+0.;\
+        Whenever equipped creature attacks, you may sacrifice SN. If you do, SN deals 2 damage to target creature or player.;\
+        Equip {2}
+timing=equipment
+oracle=Equipped creature gets +2/+0.\nWhenever equipped creature attacks, you may sacrifice Throwing Knife. If you do, Throwing Knife deals 2 damage to target creature or player.\nEquip {2}

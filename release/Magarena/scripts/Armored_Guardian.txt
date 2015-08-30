@@ -1,0 +1,12 @@
+name=Armored Guardian
+image=http://magiccards.info/scans/en/in/230.jpg
+value=3.098
+rarity=R
+type=Creature
+subtype=Cat,Soldier
+cost={3}{W}{U}
+pt=2/5
+ability={1}{W}{W}: Target creature you control gains protection from the color of your choice until end of turn.;\
+        {1}{U}{U}: SN gains shroud until end of turn.
+timing=main
+oracle={1}{W}{W}: Target creature you control gains protection from the color of your choice until end of turn.\n{1}{U}{U}: Armored Guardian gains shroud until end of turn.

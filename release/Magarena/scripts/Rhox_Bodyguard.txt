@@ -1,5 +1,5 @@
 name=Rhox Bodyguard
-image=http://mtgimage.com/card/rhox%20bodyguard.jpg
+image=http://magiccards.info/scans/en/cfx/122.jpg
 value=2.107
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/3
 ability=exalted;\
         When SN enters the battlefield, you gain 3 life.
 timing=main
-oracle=Exalted. When Rhox Bodyguard enters the battlefield, you gain 3 life.
+oracle=Exalted\nWhen Rhox Bodyguard enters the battlefield, you gain 3 life.

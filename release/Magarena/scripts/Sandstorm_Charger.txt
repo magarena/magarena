@@ -1,0 +1,11 @@
+name=Sandstorm Charger
+image=http://magiccards.info/scans/en/dtk/34.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Beast
+cost={4}{W}
+pt=3/4
+ability=Megamorph {4}{W}
+timing=main
+oracle=Megamorph {4}{W}

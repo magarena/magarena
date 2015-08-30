@@ -1,5 +1,5 @@
 name=Mindeye Drake
-image=http://mtgimage.com/card/mindeye%20drake.jpg
+image=http://magiccards.info/scans/en/gtc/43.jpg
 value=2.067
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/5
 ability=flying;\
         When SN dies, target player puts the top five cards of his or her library into his or her graveyard.
 timing=main
-oracle=Flying. When Mindeye Drake dies, target player puts the top five cards of his or her library into his or her graveyard.
+oracle=Flying\nWhen Mindeye Drake dies, target player puts the top five cards of his or her library into his or her graveyard.

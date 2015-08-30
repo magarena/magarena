@@ -1,11 +1,11 @@
 name=Kjeldoran Skycaptain
-image=http://mtgimage.com/card/kjeldoran%20skycaptain.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/me2/23.jpg
+value=2.550
+rarity=C
 type=Creature
 subtype=Human,Soldier
 cost={4}{W}
 pt=2/2
 ability=Flying; first strike; banding
 timing=main
-oracle=Flying; first strike; banding
+oracle=Flying, first strike, banding

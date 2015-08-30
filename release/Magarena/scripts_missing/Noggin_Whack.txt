@@ -1,10 +1,10 @@
 name=Noggin Whack
-image=http://mtgimage.com/card/noggin%20whack.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mt/70.jpg
+value=3.529
 rarity=U
 type=Tribal,Sorcery
 subtype=Rogue
 cost={2}{B}{B}
 effect=Prowl {1}{B}~Target player reveals three cards from his or her hand. You choose two of them. That player discards those cards.
 timing=main
-oracle=Prowl {1}{B}. Target player reveals three cards from his or her hand. You choose two of them. That player discards those cards.
+oracle=Prowl {1}{B}\nTarget player reveals three cards from his or her hand. You choose two of them. That player discards those cards.

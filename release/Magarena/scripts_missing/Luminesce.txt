@@ -1,6 +1,6 @@
 name=Luminesce
-image=http://mtgimage.com/card/luminesce.jpg
-value=2.500
+image=http://magiccards.info/scans/en/10e/28.jpg
+value=2.359
 rarity=U
 type=Instant
 cost={W}

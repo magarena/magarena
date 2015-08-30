@@ -1,0 +1,12 @@
+name=Thought Eater
+image=http://magiccards.info/scans/en/od/106.jpg
+value=2.515
+rarity=U
+type=Creature
+subtype=Beast
+cost={1}{U}
+pt=2/2
+ability=Flying
+timing=main
+requires_groovy_code
+oracle=Flying\nYour maximum hand size is reduced by three.

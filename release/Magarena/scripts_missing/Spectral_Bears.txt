@@ -1,6 +1,6 @@
 name=Spectral Bears
-image=http://mtgimage.com/card/spectral%20bears.jpg
-value=2.500
+image=http://magiccards.info/scans/en/med/131.jpg
+value=3.357
 rarity=U
 type=Creature
 subtype=Bear,Spirit

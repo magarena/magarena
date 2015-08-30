@@ -1,0 +1,11 @@
+name=Helm of the Gods
+image=http://magiccards.info/scans/en/ori/230.jpg
+value=2.500
+rarity=R
+type=Artifact
+subtype=Equipment
+cost={1}
+ability=Equipped creature gets +1/+1 for each enchantment you control.;\
+        Equip {1}
+timing=equipment
+oracle=Equipped creature gets +1/+1 for each enchantment you control.\nEquip {1}

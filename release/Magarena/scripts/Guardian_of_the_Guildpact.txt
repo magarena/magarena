@@ -1,5 +1,5 @@
 name=Guardian of the Guildpact
-image=http://mtgimage.com/card/guardian%20of%20the%20guildpact.jpg
+image=http://magiccards.info/scans/en/di/10.jpg
 value=3.890
 rarity=C
 type=Creature

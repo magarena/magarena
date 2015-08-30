@@ -1,5 +1,5 @@
 name=Llanowar Vanguard
-image=http://mtgimage.com/card/llanowar%20vanguard.jpg
+image=http://magiccards.info/scans/en/in/197.jpg
 value=1.595
 rarity=C
 type=Creature

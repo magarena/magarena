@@ -1,5 +1,5 @@
 name=Chainer's Edict
-image=http://mtgimage.com/set/TOR/chainer%27s%20edict.jpg
+image=http://magiccards.info/scans/en/vma/108.jpg
 value=4.000
 removal=3
 rarity=U
@@ -9,4 +9,4 @@ ability=Flashback {5}{B}{B};\
         Cast SN with AI only if an opponent controls a creature.
 effect=Target player sacrifices a creature.
 timing=removal
-oracle=Target player sacrifices a creature. Flashback {5}{B}{B}
+oracle=Target player sacrifices a creature.\nFlashback {5}{B}{B}

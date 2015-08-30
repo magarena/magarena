@@ -1,11 +1,11 @@
 name=Imposing Visage
-image=http://mtgimage.com/card/imposing%20visage.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5e/241.jpg
+value=2.672
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={R}
 ability=Enchant creature;\
         Enchanted creature can't be blocked except by two or more creatures.
-timing=main
-oracle=Enchant creature. Enchanted creature can't be blocked except by two or more creatures.
+timing=aura
+oracle=Enchant creature\nEnchanted creature can't be blocked except by two or more creatures.

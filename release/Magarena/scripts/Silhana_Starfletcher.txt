@@ -1,5 +1,5 @@
 name=Silhana Starfletcher
-image=http://mtgimage.com/card/silhana%20starfletcher.jpg
+image=http://magiccards.info/scans/en/gp/95.jpg
 value=3.119
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/3
 ability=Reach
 timing=main
 requires_groovy_code=Sol Grail
-oracle=Reach. As Silhana Starfletcher enters the battlefield, choose a color. {T}: Add one mana of the chosen color to your mana pool.
+oracle=Reach\nAs Silhana Starfletcher enters the battlefield, choose a color.\n{T}: Add one mana of the chosen color to your mana pool.

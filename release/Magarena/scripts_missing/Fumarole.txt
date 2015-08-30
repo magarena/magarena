@@ -1,9 +1,9 @@
 name=Fumarole
-image=http://mtgimage.com/card/fumarole.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me2/194.jpg
+value=3.511
 rarity=U
 type=Sorcery
 cost={3}{B}{R}
 effect=As an additional cost to cast SN, pay 3 life.~Destroy target creature and target land.
 timing=main
-oracle=As an additional cost to cast Fumarole, pay 3 life. Destroy target creature and target land.
+oracle=As an additional cost to cast Fumarole, pay 3 life.\nDestroy target creature and target land.

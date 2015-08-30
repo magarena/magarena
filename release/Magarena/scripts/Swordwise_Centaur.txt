@@ -1,5 +1,5 @@
 name=Swordwise Centaur
-image=http://mtgimage.com/card/swordwise%20centaur.jpg
+image=http://magiccards.info/scans/en/bng/142.jpg
 value=3.593
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Centaur,Warrior
 cost={G}{G}
 pt=3/2
 timing=main
+oracle=NONE

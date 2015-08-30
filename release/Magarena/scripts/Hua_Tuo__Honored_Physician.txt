@@ -1,5 +1,5 @@
 name=Hua Tuo, Honored Physician
-image=http://mtgimage.com/card/hua%20tuo%2C%20honored%20physician.jpg
+image=http://magiccards.info/scans/en/c13/149.jpg
 value=3.783
 rarity=R
 type=Legendary,Creature

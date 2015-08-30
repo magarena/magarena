@@ -1,5 +1,5 @@
 name=Gravity Sphere
-image=http://mtgimage.com/card/gravity%20sphere.jpg
+image=http://magiccards.info/scans/en/lg/149.jpg
 value=4.246
 rarity=R
 type=World,Enchantment

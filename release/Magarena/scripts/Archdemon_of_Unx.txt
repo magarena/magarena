@@ -1,5 +1,5 @@
 name=Archdemon of Unx
-image=http://mtgimage.com/card/archdemon%20of%20unx.jpg
+image=http://magiccards.info/scans/en/ala/64.jpg
 value=2.966
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=6/6
 ability=flying;trample;\
         At the beginning of your upkeep, sacrifice a non-Zombie creature.~Put a 2/2 black Zombie creature token onto the battlefield.
 timing=main
-oracle=Flying, trample. At the beginning of your upkeep, sacrifice a non-Zombie creature, then put a 2/2 black Zombie creature token onto the battlefield.
+oracle=Flying, trample\nAt the beginning of your upkeep, sacrifice a non-Zombie creature, then put a 2/2 black Zombie creature token onto the battlefield.

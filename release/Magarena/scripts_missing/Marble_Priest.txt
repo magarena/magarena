@@ -1,6 +1,6 @@
 name=Marble Priest
-image=http://mtgimage.com/card/marble%20priest.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lg/231.jpg
+value=1.919
 rarity=U
 type=Artifact,Creature
 subtype=Cleric
@@ -8,5 +8,5 @@ cost={5}
 pt=3/3
 ability=All Walls able to block SN do so.;\
         Prevent all combat damage that would be dealt to SN by Walls.
-timing=main
-oracle=All Walls able to block Marble Priest do so. Prevent all combat damage that would be dealt to Marble Priest by Walls.
+timing=artifact
+oracle=All Walls able to block Marble Priest do so.\nPrevent all combat damage that would be dealt to Marble Priest by Walls.

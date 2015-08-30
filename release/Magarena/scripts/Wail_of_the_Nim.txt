@@ -1,0 +1,10 @@
+name=Wail of the Nim
+image=http://magiccards.info/scans/en/mi/81.jpg
+value=3.689
+rarity=C
+type=Instant
+cost={2}{B}
+ability=Entwine {B}
+effect=Choose one — (1) Regenerate each creature you control. (2) SN deals 1 damage to each creature and each player.
+timing=removal
+oracle=Choose one —\n• Regenerate each creature you control.\n• Wail of the Nim deals 1 damage to each creature and each player.\nEntwine {B}

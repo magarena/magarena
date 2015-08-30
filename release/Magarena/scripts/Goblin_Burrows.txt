@@ -1,9 +1,9 @@
 name=Goblin Burrows
-image=http://mtgimage.com/card/goblin%20burrows.jpg
+image=http://magiccards.info/scans/en/evg/58.jpg
 value=4.000
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\
         {1}{R}, {T}: Target Goblin creature gets +2/+0 until end of turn.
 timing=land
-oracle={T}: Add {1} to your mana pool. {1}{R}, {T}: Target Goblin creature gets +2/+0 until end of turn.
+oracle={T}: Add {1} to your mana pool.\n{1}{R}, {T}: Target Goblin creature gets +2/+0 until end of turn.

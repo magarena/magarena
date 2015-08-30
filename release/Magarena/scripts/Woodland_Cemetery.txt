@@ -1,5 +1,5 @@
 name=Woodland Cemetery
-image=http://mtgimage.com/card/woodland%20cemetery.jpg
+image=http://magiccards.info/scans/en/isd/249.jpg
 value=3.888
 rarity=R
 type=Land
@@ -7,4 +7,4 @@ mana=b3g3
 ability={T}: Add {B} or {G} to your mana pool.;\
         SN enters the battlefield tapped unless you control a Swamp or a Forest.
 timing=land
-oracle=Woodland Cemetery enters the battlefield tapped unless you control a Swamp or a Forest. {T}: Add {B} or {G} to your mana pool.
+oracle=Woodland Cemetery enters the battlefield tapped unless you control a Swamp or a Forest.\n{T}: Add {B} or {G} to your mana pool.

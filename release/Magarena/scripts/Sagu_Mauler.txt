@@ -1,5 +1,5 @@
 name=Sagu Mauler
-image=http://mtgimage.com/card/sagu%20mauler.jpg
+image=http://magiccards.info/scans/en/ktk/196.jpg
 value=4.500
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=6/6
 ability=Trample;hexproof;\
         Morph {3}{G}{U}
 timing=main
-oracle=Trample, hexproof. Morph {3}{G}{U}
+oracle=Trample, hexproof\nMorph {3}{G}{U}

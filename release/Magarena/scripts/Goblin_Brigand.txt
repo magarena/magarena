@@ -1,5 +1,5 @@
 name=Goblin Brigand
-image=http://mtgimage.com/card/goblin%20brigand.jpg
+image=http://magiccards.info/scans/en/9e/190.jpg
 value=2.283
 ability=SN attacks each turn if able.
 rarity=C

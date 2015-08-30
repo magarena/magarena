@@ -1,5 +1,5 @@
 name=Psychic Membrane
-image=http://mtgimage.com/card/psychic%20membrane.jpg
+image=http://magiccards.info/scans/en/mi/46.jpg
 value=2.857
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=0/3
 ability=Defender;\
         Whenever SN blocks, you may draw a card.
 timing=main
-oracle=Defender. Whenever Psychic Membrane blocks, you may draw a card.
+oracle=Defender\nWhenever Psychic Membrane blocks, you may draw a card.

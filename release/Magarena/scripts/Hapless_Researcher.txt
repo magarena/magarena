@@ -1,5 +1,5 @@
 name=Hapless Researcher
-image=http://mtgimage.com/card/hapless%20researcher.jpg
+image=http://magiccards.info/scans/en/ju/42.jpg
 value=2.818
 rarity=C
 type=Creature

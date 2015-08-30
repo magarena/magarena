@@ -1,5 +1,5 @@
 name=Safehold Elite
-image=http://mtgimage.com/card/safehold%20elite.jpg
+image=http://magiccards.info/scans/en/shm/239.jpg
 value=3.831
 rarity=C
 type=Creature

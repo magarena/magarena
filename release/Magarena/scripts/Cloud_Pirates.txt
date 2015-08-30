@@ -1,5 +1,5 @@
 name=Cloud Pirates
-image=http://mtgimage.com/card/cloud%20pirates.jpg
+image=http://magiccards.info/scans/en/po/47.jpg
 value=2.961
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={U}
 pt=1/1
 ability=flying;SN can block only creatures with flying.
 timing=main
-oracle=Flying. Cloud Pirates can block only creatures with flying.
+oracle=Flying\nCloud Pirates can block only creatures with flying.

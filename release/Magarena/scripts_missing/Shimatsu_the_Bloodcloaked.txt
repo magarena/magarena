@@ -1,6 +1,6 @@
 name=Shimatsu the Bloodcloaked
-image=http://mtgimage.com/card/shimatsu%20the%20bloodcloaked.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/186.jpg
+value=1.825
 rarity=R
 type=Legendary,Creature
 subtype=Demon,Spirit

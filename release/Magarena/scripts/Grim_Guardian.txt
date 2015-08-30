@@ -1,5 +1,5 @@
 name=Grim Guardian
-image=http://mtgimage.com/card/grim%20guardian.jpg
+image=http://magiccards.info/scans/en/jou/73.jpg
 value=3.661
 rarity=C
 type=Enchantment,Creature

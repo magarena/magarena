@@ -1,0 +1,9 @@
+name=Shared Animosity
+image=http://magiccards.info/scans/en/mt/104.jpg
+value=3.544
+rarity=R
+type=Enchantment
+cost={2}{R}
+timing=enchantment
+requires_groovy_code
+oracle=Whenever a creature you control attacks, it gets +1/+0 until end of turn for each other attacking creature that shares a creature type with it.

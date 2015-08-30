@@ -1,10 +1,10 @@
 name=Palliation Accord
-image=http://mtgimage.com/card/palliation%20accord.jpg
+image=http://magiccards.info/scans/en/di/122.jpg
 value=3.580
 rarity=U
 type=Enchantment
 cost={3}{W}{U}
-ability=Remove a shield counter from SN: Prevent the next 1 damage that would be dealt to you this turn.
+ability=Whenever a creature an opponent controls becomes tapped, put a shield counter on SN.;\
+        Remove a shield counter from SN: Prevent the next 1 damage that would be dealt to you this turn.
 timing=enchantment
-requires_groovy_code
-oracle=Whenever a creature an opponent controls becomes tapped, put a shield counter on Palliation Accord. Remove a shield counter from Palliation Accord: Prevent the next 1 damage that would be dealt to you this turn.
+oracle=Whenever a creature an opponent controls becomes tapped, put a shield counter on Palliation Accord.\nRemove a shield counter from Palliation Accord: Prevent the next 1 damage that would be dealt to you this turn.

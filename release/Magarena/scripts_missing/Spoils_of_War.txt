@@ -1,9 +1,9 @@
 name=Spoils of War
-image=http://mtgimage.com/card/spoils%20of%20war.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ia/52.jpg
+value=2.946
 rarity=R
 type=Sorcery
 cost={X}{B}
 effect=X is the number of artifact and/or creature cards in an opponent's graveyard as you cast SN.~Distribute X +1/+1 counters among any number of target creatures.
 timing=main
-oracle=X is the number of artifact and/or creature cards in an opponent's graveyard as you cast Spoils of War. Distribute X +1/+1 counters among any number of target creatures.
+oracle=X is the number of artifact and/or creature cards in an opponent's graveyard as you cast Spoils of War.\nDistribute X +1/+1 counters among any number of target creatures.

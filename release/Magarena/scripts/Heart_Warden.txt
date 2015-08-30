@@ -1,5 +1,5 @@
 name=Heart Warden
-image=http://mtgimage.com/card/heart%20warden.jpg
+image=http://magiccards.info/scans/en/ud/108.jpg
 value=4.107
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability={T}: Add {G} to your mana pool.;\
 {2},Sacrifice SN: Draw a card.
 timing=main
-oracle={T}: Add {G} to your mana pool. {2}, Sacrifice Heart Warden: Draw a card.
+oracle={T}: Add {G} to your mana pool.\n{2}, Sacrifice Heart Warden: Draw a card.

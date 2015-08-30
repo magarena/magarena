@@ -1,6 +1,6 @@
 name=Forked Bolt
-image=http://mtgimage.com/card/forked%20bolt.jpg
-value=2.500
+image=http://magiccards.info/scans/en/roe/146.jpg
+value=3.984
 rarity=U
 type=Sorcery
 cost={R}

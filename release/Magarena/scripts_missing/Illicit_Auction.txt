@@ -1,6 +1,6 @@
 name=Illicit Auction
-image=http://mtgimage.com/card/illicit%20auction.jpg
-value=2.500
+image=http://magiccards.info/scans/en/6e/190.jpg
+value=3.490
 rarity=R
 type=Sorcery
 cost={3}{R}{R}

@@ -1,6 +1,6 @@
 name=Forgotten Lore
-image=http://mtgimage.com/card/forgotten%20lore.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me2/164.jpg
+value=3.433
 rarity=U
 type=Sorcery
 cost={G}

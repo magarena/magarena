@@ -1,5 +1,5 @@
 name=Banisher Priest
-image=http://mtgimage.com/card/banisher%20priest.jpg
+image=http://magiccards.info/scans/en/ddo/2.jpg
 value=3.623
 rarity=U
 type=Creature

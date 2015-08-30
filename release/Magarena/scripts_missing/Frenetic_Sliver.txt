@@ -1,6 +1,6 @@
 name=Frenetic Sliver
-image=http://mtgimage.com/card/frenetic%20sliver.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pc/157.jpg
+value=3.250
 rarity=U
 type=Creature
 subtype=Sliver

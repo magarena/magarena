@@ -1,6 +1,6 @@
 name=Zedruu the Greathearted
-image=http://mtgimage.com/card/zedruu%20the%20greathearted.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cmd/240.jpg
+value=3.822
 rarity=M
 type=Legendary,Creature
 subtype=Minotaur,Monk
@@ -9,4 +9,4 @@ pt=2/4
 ability=At the beginning of your upkeep, you gain X life and draw X cards, where X is the number of permanents you own that your opponents control.;\
         {R}{W}{U}: Target opponent gains control of target permanent you control.
 timing=main
-oracle=At the beginning of your upkeep, you gain X life and draw X cards, where X is the number of permanents you own that your opponents control. {R}{W}{U}: Target opponent gains control of target permanent you control.
+oracle=At the beginning of your upkeep, you gain X life and draw X cards, where X is the number of permanents you own that your opponents control.\n{R}{W}{U}: Target opponent gains control of target permanent you control.

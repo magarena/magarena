@@ -1,5 +1,5 @@
 name=Shifting Wall
-image=http://mtgimage.com/card/shifting%20wall.jpg
+image=http://magiccards.info/scans/en/sh/134.jpg
 value=3.571
 rarity=U
 type=Artifact,Creature
@@ -9,4 +9,4 @@ pt=0/0
 ability=defender;\
         SN enters the battlefield with X +1/+1 counters on it.
 timing=main
-oracle=Defender. Shifting Wall enters the battlefield with X +1/+1 counters on it.
+oracle=Defender\nShifting Wall enters the battlefield with X +1/+1 counters on it.

@@ -49,7 +49,7 @@ public class CardTablePanel extends TexturedPanel {
     private final MigLayout migLayout = new MigLayout();
     private final JScrollPane scrollpane = new JScrollPane();
     private final CardTableModel tableModel;
-    private final JTable table;
+    private JTable table;
     private final ListSelectionModel selectionModel;
 
     private final TitleBar titleBar;
@@ -77,7 +77,7 @@ public class CardTablePanel extends TexturedPanel {
                 if (isRowSelected) {
                     c.setForeground(table.getSelectionForeground());
                 } else {
-                    c.setForeground(card.isMissing() ? Color.GRAY : defaultForeColor);
+                    c.setForeground(card.isInvalid() ? Color.GRAY : defaultForeColor);
                 }
                 return c;
             }
@@ -128,7 +128,7 @@ public class CardTablePanel extends TexturedPanel {
         
         setLayout(migLayout);
         refreshLayout();
-
+        
     }
 
     private ListSelectionListener getTableListSelectionListener() {
@@ -223,12 +223,13 @@ public class CardTablePanel extends TexturedPanel {
     }
 
     public void setCards(final List<MagicCardDefinition> defs) {
+        final boolean isRowSelected = table.getSelectedRow() != -1;
         tableModel.setCards(defs);
         table.tableChanged(new TableModelEvent(tableModel));
         table.repaint();
-
-        reselectLastCards();
-
+        if (isRowSelected) {
+            reselectLastCards();
+        }
     }
 
     public void setTitle(final String title) {
@@ -238,6 +239,23 @@ public class CardTablePanel extends TexturedPanel {
     public void setHeaderVisible(boolean b) {
         titleBar.setVisible(b);
         refreshLayout();
+    }
+
+    public void clearSelection() {
+        table.clearSelection();
+    }
+
+    public JTable getDeckTable() {
+        return table;
+    }
+
+    public void setDeckTable(JTable aDeckTable) {
+        this.table = aDeckTable;
+        scrollpane.setViewportView(table);
+    }
+
+    public JTable getTable() {
+        return table;
     }
 
     private class ColumnListener extends MouseAdapter {
@@ -324,9 +342,9 @@ public class CardTablePanel extends TexturedPanel {
         }
     }
 
-    public void setSelectedCard(MagicCardDefinition card) {
-        final int index = tableModel.findCardIndex(card);
-        if (index != -1) {
+    public void setSelectedCard(MagicCardDefinition aCard) {
+        final int index = tableModel.findCardIndex(aCard);
+        if (index != -1 && getSelectedCards().contains(aCard) == false) {
             table.getSelectionModel().addSelectionInterval(index, index);
         } else if (tableModel.getRowCount() > 0) {
             table.getSelectionModel().addSelectionInterval(0, 0);
@@ -339,6 +357,6 @@ public class CardTablePanel extends TexturedPanel {
     
     public void showCardCount(final boolean b) {
         tableModel.showCardCount(b);
-    }         
+    }
 
 }

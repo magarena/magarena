@@ -1,0 +1,260 @@
+Acid Rain
+Aesthir Glider
+Air Elemental
+Al-abara's Carpet
+Alaborn Musketeer
+Alaborn Trooper
+Aladdin
+Alchor's Tomb
+Ali from Cairo
+Alluring Scent
+Amulet of Kroog
+Angelic Voices
+Animate Artifact
+Argivian Blacksmith
+Argothian Pixies
+Argothian Treefolk
+Armageddon
+Armageddon Clock
+Artifact Blast
+Ashnod's Altar
+Atog
+Badlands
+Balance
+Basalt Monolith
+Bayou
+Bee Sting
+Bird Maiden
+Black Knight
+Blaze of Glory
+Blue Elemental Blast
+Book of Rass
+Bottle of Suleiman
+Braingeyser
+Brass Man
+Bronze Horse
+Candelabra of Tawnos
+Celestial Sword
+Champion Lancer
+Channel
+Citanul Druid
+City of Brass
+Clay Statue
+Clockwork Avian
+Clockwork Gnomes
+Clockwork Swarm
+Cloud Dragon
+Cloud Spirit
+Colossus of Sardia
+Control Magic
+Conversion
+Copy Artifact
+Coral Helm
+Counterspell
+Crumble
+Cyclone
+Cyclopean Mummy
+Cyclopean Tomb
+Dakmor Plague
+Dark Ritual
+Deathcoil Wurm
+Deathgrip
+Demonic Hordes
+Demonic Tutor
+Detonate
+Devastation
+Diabolic Machine
+Divine Offering
+Dragon Engine
+Drain Power
+Dread Reaper
+Dread Wight
+Drop of Honey
+Drowned
+Dust to Dust
+Ebon Dragon
+Ebony Horse
+Ebony Rhino
+Elephant Graveyard
+Elite Cat Warrior
+Energy Flux
+Eye for an Eye
+False Summoning
+Fastbond
+Fire Imp
+Fire Tempest
+Fireball
+Floodwater Dam
+Flying Carpet
+Fog
+Force of Nature
+Fork
+Foul Spirit
+Gaea's Avenger
+Gate to Phyrexia
+Gauntlet of Might
+Giant Growth
+Giant Tortoise
+Glasses of Urza
+Gloom
+Goblin Bully
+Goblin Cavaliers
+Goblin Caves
+Goblin Firestarter
+Goblin General
+Goblin Shrine
+Goblin Warrens
+Gorilla War Cry
+Grapeshot Catapult
+Gravebind
+Guardian Beast
+Harsh Justice
+Hasran Ogress
+Healing Salve
+Horn of Deafening
+Howl from Beyond
+Ice Cauldron
+Icy Manipulator
+In the Eye of Chaos
+Instill Energy
+Ironhoof Ox
+Island Sanctuary
+Jade Monolith
+Juggernaut
+Junún Efreet
+Just Fate
+Kismet
+Kormus Bell
+Kudzu
+Last Chance
+Lava Flow
+Leeches
+Library of Alexandria
+Library of Leng
+Lich
+Lifeforce
+Lim-Dûl's Cohort
+Living Lands
+Living Wall
+Mahamoti Djinn
+Mana Matrix
+Mana Vault
+Martyr's Cry
+Martyrs of Korlis
+Maze of Ith
+Mightstone
+Mijae Djinn
+Minion of Tevesh Szat
+Mishra's Workshop
+Mystic Decree
+Naked Singularity
+Oasis
+Obelisk of Undoing
+Obsianus Golem
+Ogre Taskmaster
+Onulet
+Orcish Mechanics
+Osai Vultures
+Overwhelming Forces
+Owl Familiar
+Pentagram of the Ages
+Personal Incarnation
+Phantasmal Forces
+Phantasmal Terrain
+Planar Gate
+Plateau
+Power Artifact
+Primal Clay
+Primitive Justice
+Prodigal Sorcerer
+Prowling Nightstalker
+Radjan Spirit
+Rain of Daggers
+Rakalite
+Reconstruction
+Red Elemental Blast
+Regrowth
+Righteous Charge
+Ring of Renewal
+Roc of Kher Ridges
+Rock Hydra
+Rockslide Ambush
+Sandstorm
+Savannah
+Savannah Lions
+Scarecrow
+Scarwood Bandits
+Scavenger Folk
+Scavenging Ghoul
+Scrubland
+Sea Serpent
+Sedge Troll
+Sengir Vampire
+Serendib Djinn
+Serra Angel
+Serra Aviary
+Serra Bestiary
+Shapeshifter
+Shivan Dragon
+Sinkhole
+Sleight of Hand
+Smoke
+Sol Ring
+Soldevi Golem
+Soldevi Machinist
+Soul Shred
+Southern Elephant
+Spotted Griffin
+Squall
+Staff of Zegon
+Stasis
+Steam Catapult
+Strip Mine
+Swords to Plowshares
+Sylvan Tutor
+Symbol of Unsummoning
+Tablet of Epityr
+Taiga
+Talas Researcher
+Tawnos's Wand
+Tawnos's Weaponry
+Temple Acolyte
+Terror
+Tetravus
+Theft of Dreams
+Thing from the Deep
+Thunder Dragon
+Time Vault
+Titania's Song
+Transmute Artifact
+Triassic Egg
+Tropical Island
+Tsunami
+Tundra
+Two-Headed Giant of Foriys
+Underground Sea
+Urza's Chalice
+Urza's Mine
+Urza's Miter
+Urza's Power Plant
+Urza's Tower
+Veteran Bodyguard
+Vibrating Sphere
+Volcanic Island
+War Mammoth
+Warp Artifact
+Water Elemental
+Weakness
+Weakstone
+Wheel of Fortune
+Whiptail Wurm
+White Knight
+Wicked Pact
+Wild Aesthir
+Wild Griffin
+Wild Ox
+Wood Elemental
+Word of Command
+Xenic Poltergeist
+Yotian Soldier
+Zombie Master

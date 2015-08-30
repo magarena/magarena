@@ -1,6 +1,6 @@
 name=Head Games
-image=http://mtgimage.com/card/head%20games.jpg
-value=2.500
+image=http://magiccards.info/scans/en/10e/148.jpg
+value=3.950
 rarity=R
 type=Sorcery
 cost={3}{B}{B}

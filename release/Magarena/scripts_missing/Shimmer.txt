@@ -1,10 +1,10 @@
 name=Shimmer
-image=http://mtgimage.com/card/shimmer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/92.jpg
+value=4.363
 rarity=R
 type=Enchantment
 cost={2}{U}{U}
 ability=As SN enters the battlefield, choose a land type.;\
         Each land of the chosen type has phasing.
-timing=main
-oracle=As Shimmer enters the battlefield, choose a land type. Each land of the chosen type has phasing.
+timing=enchantment
+oracle=As Shimmer enters the battlefield, choose a land type.\nEach land of the chosen type has phasing.

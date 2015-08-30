@@ -1,10 +1,10 @@
 name=Evermind
-image=http://mtgimage.com/card/evermind.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sok/37.jpg
+value=2.984
 rarity=U
 type=Instant
 subtype=Arcane
 color=u
 effect=Draw a card.~Splice onto Arcane {1}{U}
 timing=removal
-oracle=Draw a card. Splice onto Arcane {1}{U}
+oracle=Draw a card.\nSplice onto Arcane {1}{U}

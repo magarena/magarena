@@ -1,5 +1,5 @@
 name=Oreskos Sun Guide
-image=http://mtgimage.com/card/oreskos%20sun%20guide.jpg
+image=http://magiccards.info/scans/en/bng/22.jpg
 value=3.400
 rarity=C
 type=Creature

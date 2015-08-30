@@ -1,5 +1,5 @@
 name=Evangel of Heliod
-image=http://mtgimage.com/card/evangel%20of%20heliod.jpg
+image=http://magiccards.info/scans/en/ths/11.jpg
 value=3.431
 rarity=U
 type=Creature

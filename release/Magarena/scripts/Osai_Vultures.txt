@@ -1,5 +1,5 @@
 name=Osai Vultures
-image=http://mtgimage.com/card/osai%20vultures.jpg
+image=http://magiccards.info/scans/en/me4/21.jpg
 value=2.250
 rarity=C
 type=Creature
@@ -10,4 +10,4 @@ ability=Flying;\
         At the beginning of each end step, if a creature died this turn, put a carrion counter on SN.;\
         Remove two carrion counters from SN: SN gets +1/+1 until end of turn.
 timing=main
-oracle=Flying. At the beginning of each end step, if a creature died this turn, put a carrion counter on Osai Vultures. Remove two carrion counters from Osai Vultures: Osai Vultures gets +1/+1 until end of turn.
+oracle=Flying\nAt the beginning of each end step, if a creature died this turn, put a carrion counter on Osai Vultures.\nRemove two carrion counters from Osai Vultures: Osai Vultures gets +1/+1 until end of turn.

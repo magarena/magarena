@@ -1,6 +1,6 @@
 name=Tempt with Vengeance
-image=http://mtgimage.com/card/tempt%20with%20vengeance.jpg
-value=2.500
+image=http://magiccards.info/scans/en/c13/125.jpg
+value=3.781
 rarity=R
 type=Sorcery
 cost={X}{R}

@@ -1,0 +1,10 @@
+name=Sphinx's Tutelage
+image=http://magiccards.info/scans/en/ori/76.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={2}{U}
+ability=Whenever you draw a card, target opponent puts the top two cards of his or her library into his or her graveyard. If they're both nonland cards that share a color, repeat this process.;\
+        {5}{U}: Draw a card, then discard a card.
+timing=enchantment
+oracle=Whenever you draw a card, target opponent puts the top two cards of his or her library into his or her graveyard. If they're both nonland cards that share a color, repeat this process.\n{5}{U}: Draw a card, then discard a card.

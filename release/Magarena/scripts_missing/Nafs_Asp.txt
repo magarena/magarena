@@ -1,6 +1,6 @@
 name=Nafs Asp
-image=http://mtgimage.com/card/nafs%20asp.jpg
-value=2.500
+image=http://magiccards.info/scans/en/4e/148.jpg
+value=3.308
 rarity=C
 type=Creature
 subtype=Snake

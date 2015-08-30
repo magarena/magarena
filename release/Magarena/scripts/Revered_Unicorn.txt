@@ -1,5 +1,5 @@
 name=Revered Unicorn
-image=http://mtgimage.com/card/revered%20unicorn.jpg
+image=http://magiccards.info/scans/en/wl/139.jpg
 value=3.463
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/3
 ability=cumulative upkeep {1}
 timing=main
 requires_groovy_code
-oracle=Cumulative upkeep {1}. When Revered Unicorn leaves the battlefield, you gain life equal to the number of age counters on it.
+oracle=Cumulative upkeep {1}\nWhen Revered Unicorn leaves the battlefield, you gain life equal to the number of age counters on it.

@@ -1,6 +1,6 @@
 name=Priest of Gix
-image=http://mtgimage.com/card/priest%20of%20gix.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pvc/7.jpg
+value=4.430
 rarity=U
 type=Creature
 subtype=Human,Cleric,Minion

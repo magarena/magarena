@@ -1,11 +1,11 @@
 name=Malignant Growth
-image=http://mtgimage.com/card/malignant%20growth.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/332.jpg
+value=2.603
 rarity=R
 type=Enchantment
 cost={3}{G}{U}
 ability=Cumulative upkeep {1};\
         At the beginning of your upkeep, put a growth counter on SN.;\
         At the beginning of each opponent's draw step, that player draws an additional card for each growth counter on SN, then SN deals damage to the player equal to the number of cards he or she drew this way.
-timing=main
-oracle=Cumulative upkeep {1}. At the beginning of your upkeep, put a growth counter on Malignant Growth. At the beginning of each opponent's draw step, that player draws an additional card for each growth counter on Malignant Growth, then Malignant Growth deals damage to the player equal to the number of cards he or she drew this way.
+timing=enchantment
+oracle=Cumulative upkeep {1}\nAt the beginning of your upkeep, put a growth counter on Malignant Growth.\nAt the beginning of each opponent's draw step, that player draws an additional card for each growth counter on Malignant Growth, then Malignant Growth deals damage to the player equal to the number of cards he or she drew this way.

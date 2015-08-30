@@ -11,9 +11,9 @@
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-             return new MagicEvent(
+            return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_PLAYER,
+                NEG_TARGET_PLAYER,
                 this,
                 "Target player\$ loses X life and puts the top X cards of his or her library into his or her graveyard, " + 
                 "where X is the number of Zombies you control."
@@ -24,8 +24,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 final int amount = event.getPlayer().getNrOfPermanents(MagicSubType.Zombie);
-                game.doAction(new MagicChangeLifeAction(it,-amount));
-                game.doAction(new MagicMillLibraryAction(it,amount));
+                game.doAction(new ChangeLifeAction(it,-amount));
+                game.doAction(new MillLibraryAction(it,amount));
             });
         }
     }

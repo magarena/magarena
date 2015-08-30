@@ -1,6 +1,6 @@
 name=Sandbar Crocodile
-image=http://mtgimage.com/card/sandbar%20crocodile.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/88.jpg
+value=2.900
 rarity=C
 type=Creature
 subtype=Crocodile

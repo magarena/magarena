@@ -1,9 +1,9 @@
 name=Implode
-image=http://mtgimage.com/card/implode.jpg
+image=http://magiccards.info/scans/en/ps/62.jpg
 value=3.338
 rarity=U
 type=Sorcery
 cost={4}{R}
 effect=Destroy target land.~Draw a card.
 timing=main
-oracle=Destroy target land. Draw a card.
+oracle=Destroy target land.\nDraw a card.

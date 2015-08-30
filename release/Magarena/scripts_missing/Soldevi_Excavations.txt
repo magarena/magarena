@@ -1,10 +1,10 @@
 name=Soldevi Excavations
-image=http://mtgimage.com/card/soldevi%20excavations.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me2/236.jpg
+value=4.329
 rarity=R
 type=Land
 ability=If SN would enter the battlefield, sacrifice an untapped Island instead. If you do, put SN onto the battlefield. If you don't, put it into its owner's graveyard.;\
         {T}: Add {1}{U} to your mana pool.;\
         {1}, {T}: Look at the top card of your library. You may put that card on the bottom of your library.
-timing=main
-oracle=If Soldevi Excavations would enter the battlefield, sacrifice an untapped Island instead. If you do, put Soldevi Excavations onto the battlefield. If you don't, put it into its owner's graveyard. {T}: Add {1}{U} to your mana pool. {1}, {T}: Look at the top card of your library. You may put that card on the bottom of your library.
+timing=land
+oracle=If Soldevi Excavations would enter the battlefield, sacrifice an untapped Island instead. If you do, put Soldevi Excavations onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add {1}{U} to your mana pool.\n{1}, {T}: Look at the top card of your library. You may put that card on the bottom of your library.

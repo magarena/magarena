@@ -1,11 +1,11 @@
 name=Predatory Urge
-image=http://mtgimage.com/card/predatory%20urge.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pc2/74.jpg
+value=3.375
 rarity=R
 type=Enchantment
 subtype=Aura
 cost={3}{G}
 ability=Enchant creature;\
         Enchanted creature has "{T}: This creature deals damage equal to its power to target creature. That creature deals damage equal to its power to this creature."
-timing=main
-oracle=Enchant creature. Enchanted creature has "{T}: This creature deals damage equal to its power to target creature. That creature deals damage equal to its power to this creature."
+timing=aura
+oracle=Enchant creature\nEnchanted creature has "{T}: This creature deals damage equal to its power to target creature. That creature deals damage equal to its power to this creature."

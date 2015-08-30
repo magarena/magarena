@@ -1,0 +1,11 @@
+name=Lyzolda, the Blood Witch
+image=http://magiccards.info/scans/en/di/117.jpg
+value=3.854
+rarity=R
+type=Legendary,Creature
+subtype=Human,Cleric
+cost={1}{B}{R}
+pt=3/1
+timing=main
+requires_groovy_code
+oracle={2}, Sacrifice a creature: Lyzolda, the Blood Witch deals 2 damage to target creature or player if the sacrificed creature was red. Draw a card if the sacrificed creature was black.

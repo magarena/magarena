@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_PLAYER,
+                NEG_TARGET_PLAYER,
                 this,
                 "Target player\$ discards a card, then puts the top card of his or her library into his or her graveyard."
             );
@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 game.addEvent(new MagicDiscardEvent(event.getSource(),it));
-                game.doAction(new MagicMillLibraryAction(it,1));
+                game.doAction(new MillLibraryAction(it,1));
             });
         }
     }

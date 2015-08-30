@@ -1,6 +1,6 @@
 name=Brain Gorgers
-image=http://mtgimage.com/card/brain%20gorgers.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pc/65.jpg
+value=2.905
 rarity=C
 type=Creature
 subtype=Zombie
@@ -9,4 +9,4 @@ pt=4/2
 ability=When you cast SN, any player may sacrifice a creature. If a player does, counter SN.;\
         Madness {1}{B}
 timing=main
-oracle=When you cast Brain Gorgers, any player may sacrifice a creature. If a player does, counter Brain Gorgers. Madness {1}{B}
+oracle=When you cast Brain Gorgers, any player may sacrifice a creature. If a player does, counter Brain Gorgers.\nMadness {1}{B}

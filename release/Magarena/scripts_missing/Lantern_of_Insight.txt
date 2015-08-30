@@ -1,10 +1,10 @@
 name=Lantern of Insight
-image=http://mtgimage.com/card/lantern%20of%20insight.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5dn/135.jpg
+value=3.977
 rarity=U
 type=Artifact
 cost={1}
 ability=Players play with the top card of their libraries revealed.;\
         {T}, Sacrifice SN: Target player shuffles his or her library.
-timing=main
-oracle=Players play with the top card of their libraries revealed. {T}, Sacrifice Lantern of Insight: Target player shuffles his or her library.
+timing=artifact
+oracle=Players play with the top card of their libraries revealed.\n{T}, Sacrifice Lantern of Insight: Target player shuffles his or her library.

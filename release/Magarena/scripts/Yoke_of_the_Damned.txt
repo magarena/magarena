@@ -1,11 +1,11 @@
 name=Yoke of the Damned
-image=http://mtgimage.com/card/yoke%20of%20the%20damned.jpg
+image=http://magiccards.info/scans/en/ddj/68.jpg
 value=3.045
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{B}
+ability=When a creature dies, destroy enchanted creature.
 timing=aura
 enchant=destroy,neg creature
-requires_groovy_code
-oracle=Enchant creature. When a creature dies, destroy enchanted creature.
+oracle=Enchant creature\nWhen a creature dies, destroy enchanted creature.

@@ -1,5 +1,5 @@
 name=Sphinx of Jwar Isle
-image=http://mtgimage.com/card/sphinx%20of%20jwar%20isle.jpg
+image=http://magiccards.info/scans/en/c14/126.jpg
 value=2.500
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=Flying;\
         Shroud;\
         You may look at the top card of your library.
 timing=main
-oracle=Flying. Shroud. You may look at the top card of your library.
+oracle=Flying\nShroud\nYou may look at the top card of your library.

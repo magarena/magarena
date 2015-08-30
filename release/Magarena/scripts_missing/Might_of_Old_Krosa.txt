@@ -1,6 +1,6 @@
 name=Might of Old Krosa
-image=http://mtgimage.com/card/might%20of%20old%20krosa.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ts/204.jpg
+value=4.134
 rarity=U
 type=Instant
 cost={G}

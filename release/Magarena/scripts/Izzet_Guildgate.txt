@@ -1,5 +1,5 @@
 name=Izzet Guildgate
-image=http://mtgimage.com/card/izzet%20guildgate.jpg
+image=http://magiccards.info/scans/en/c13/297.jpg
 value=3.000
 rarity=C
 type=Land
@@ -8,4 +8,4 @@ mana=u3r3
 ability={T}: Add {U} or {R} to your mana pool.;\
         SN enters the battlefield tapped.
 timing=tapland
-oracle=Izzet Guildgate enters the battlefield tapped. {T}: Add {U} or {R} to your mana pool.
+oracle=Izzet Guildgate enters the battlefield tapped.\n{T}: Add {U} or {R} to your mana pool.

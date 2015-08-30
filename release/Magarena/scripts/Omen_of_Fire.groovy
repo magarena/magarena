@@ -1,5 +1,5 @@
 def PLAINS_OR_WHITE_PERMANENT = new MagicPermanentFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
         return target.hasSubType(MagicSubType.Plains) || target.hasColor(MagicColor.White) &&
                target.isController(player);
     } 
@@ -23,15 +23,18 @@ def A_PLAINS_OR_WHITE_PERMANENT = new MagicTargetChoice(
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.ISLAND);
-            for (final MagicPermanent target : targets) {
-                game.doAction(new MagicRemoveFromPlayAction(target,MagicLocationType.OwnersHand));
-            }
-            for (final MagicPlayer player : game.getAPNAP()) {
-                final int amount = player.getNrOfPermanents(MagicColor.White);
-                for (final int count = 1; count <= amount; count++) {
-                    game.addEvent(new MagicSacrificePermanentEvent(event.getCardOnStack(),player,A_PLAINS_OR_WHITE_PERMANENT));
+            game.doAction(new RemoveAllFromPlayAction(
+                ISLAND.filter(event),
+                MagicLocationType.OwnersHand
+            ));
+            game.getAPNAP() each {
+                final int amount = it.getNrOfPermanents(MagicColor.White);
+                for (int i = 0; i < amount; i++) {
+                    game.addEvent(new MagicSacrificePermanentEvent(
+                        event.getSource(), 
+                        it,
+                        A_PLAINS_OR_WHITE_PERMANENT
+                    ));
                 }
             }
         }

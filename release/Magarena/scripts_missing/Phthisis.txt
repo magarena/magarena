@@ -1,9 +1,9 @@
 name=Phthisis
-image=http://mtgimage.com/card/phthisis.jpg
-value=2.500
+image=http://magiccards.info/scans/en/c13/85.jpg
+value=3.711
 rarity=U
 type=Sorcery
 cost={3}{B}{B}{B}{B}
 effect=Destroy target creature. Its controller loses life equal to its power plus its toughness.~Suspend 5—{1}{B}
 timing=main
-oracle=Destroy target creature. Its controller loses life equal to its power plus its toughness. Suspend 5—{1}{B}
+oracle=Destroy target creature. Its controller loses life equal to its power plus its toughness.\nSuspend 5—{1}{B}

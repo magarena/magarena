@@ -1,9 +1,9 @@
 name=Overwhelm
-image=http://mtgimage.com/card/overwhelm.jpg
+image=http://magiccards.info/scans/en/m15/189.jpg
 value=2.500
 rarity=U
 type=Sorcery
 cost={5}{G}{G}
 effect=Convoke~Creatures you control get +3/+3 until end of turn.
 timing=main
-oracle=Convoke. Creatures you control get +3/+3 until end of turn.
+oracle=Convoke\nCreatures you control get +3/+3 until end of turn.

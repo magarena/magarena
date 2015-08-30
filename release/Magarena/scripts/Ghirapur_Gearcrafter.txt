@@ -1,0 +1,11 @@
+name=Ghirapur Gearcrafter
+image=http://magiccards.info/scans/en/ori/149.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Artificer
+cost={2}{R}
+pt=2/1
+ability=When SN enters the battlefield, put a 1/1 colorless Thopter artifact creature token with flying onto the battlefield.
+timing=main
+oracle=When Ghirapur Gearcrafter enters the battlefield, put a 1/1 colorless Thopter artifact creature token with flying onto the battlefield.

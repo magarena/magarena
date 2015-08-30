@@ -1,5 +1,5 @@
 name=Rend Spirit
-image=http://mtgimage.com/card/rend%20spirit.jpg
+image=http://magiccards.info/scans/en/chk/141.jpg
 value=1.796
 rarity=C
 type=Instant

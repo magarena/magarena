@@ -1,5 +1,5 @@
 name=Berserkers of Blood Ridge
-image=http://mtgimage.com/card/berserkers%20of%20blood%20ridge.jpg
+image=http://magiccards.info/scans/en/m11/124.jpg
 value=1.051
 ability=SN attacks each turn if able.
 rarity=C

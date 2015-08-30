@@ -1,5 +1,5 @@
 name=Woodripper
-image=http://mtgimage.com/card/woodripper.jpg
+image=http://magiccards.info/scans/en/ne/125.jpg
 value=3.731
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=4/6
 ability=fading 3;\
         {1}, Remove a fade counter from SN: Destroy target artifact.
 timing=main
-oracle=Fading 3. {1}, Remove a fade counter from Woodripper: Destroy target artifact.
+oracle=Fading 3\n{1}, Remove a fade counter from Woodripper: Destroy target artifact.

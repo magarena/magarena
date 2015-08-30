@@ -1,5 +1,5 @@
 name=Zuran Orb
-image=http://mtgimage.com/card/zuran%20orb.jpg
+image=http://magiccards.info/scans/en/med/174.jpg
 value=4.506
 rarity=U
 type=Artifact

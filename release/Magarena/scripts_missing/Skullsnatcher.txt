@@ -1,6 +1,6 @@
 name=Skullsnatcher
-image=http://mtgimage.com/card/skullsnatcher.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pc2/36.jpg
+value=3.368
 rarity=C
 type=Creature
 subtype=Rat,Ninja
@@ -9,4 +9,4 @@ pt=2/1
 ability=Ninjutsu {B};\
         Whenever SN deals combat damage to a player, exile up to two target cards from that player's graveyard.
 timing=main
-oracle=Ninjutsu {B}. Whenever Skullsnatcher deals combat damage to a player, exile up to two target cards from that player's graveyard.
+oracle=Ninjutsu {B}\nWhenever Skullsnatcher deals combat damage to a player, exile up to two target cards from that player's graveyard.

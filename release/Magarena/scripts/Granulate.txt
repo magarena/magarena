@@ -1,0 +1,10 @@
+name=Granulate
+image=http://magiccards.info/scans/en/5dn/67.jpg
+value=3.327
+rarity=R
+type=Sorcery
+cost={2}{R}{R}
+ability=Cast SN with AI only if an opponent controls an artifact.
+timing=main
+requires_groovy_code
+oracle=Destroy each nonland artifact with converted mana cost 4 or less.

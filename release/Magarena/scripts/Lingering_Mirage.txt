@@ -1,5 +1,5 @@
 name=Lingering Mirage
-image=http://mtgimage.com/card/lingering%20mirage.jpg
+image=http://magiccards.info/scans/en/us/84.jpg
 value=2.630
 rarity=U
 type=Enchantment
@@ -9,4 +9,4 @@ ability=Cycling {2}
 timing=main
 enchant=default,land
 requires_groovy_code=Sea's Claim
-oracle=Enchant land. Enchanted land is an Island. Cycling {2}
+oracle=Enchant land\nEnchanted land is an Island.\nCycling {2}

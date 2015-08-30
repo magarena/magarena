@@ -1,12 +1,12 @@
 name=Sliver Overlord
-image=http://mtgimage.com/card/sliver%20overlord.jpg
+image=http://magiccards.info/scans/en/sc/139.jpg
 value=4.232
 rarity=M
 type=Legendary,Creature
 subtype=Sliver,Mutant
 cost={W}{U}{B}{R}{G}
 pt=7/7
-ability={3}: Search your library for a Sliver card, reveal it, and put it into your hand. Then shuffle your library.
+ability={3}: Search your library for a Sliver card, reveal it, and put it into your hand. Then shuffle your library.;\
+        {3}: Gain control of target Sliver.
 timing=main
-requires_groovy_code
-oracle={3}: Search your library for a Sliver card, reveal that card, and put it into your hand. Then shuffle your library. {3}: Gain control of target Sliver.
+oracle={3}: Search your library for a Sliver card, reveal that card, and put it into your hand. Then shuffle your library.\n{3}: Gain control of target Sliver.

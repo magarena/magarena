@@ -1,5 +1,5 @@
 name=Three Visits
-image=http://mtgimage.com/card/three%20visits.jpg
+image=http://magiccards.info/scans/en/me3/135.jpg
 value=4.250
 rarity=C
 type=Sorcery

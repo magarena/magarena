@@ -1,6 +1,6 @@
 name=Teremko Griffin
-image=http://mtgimage.com/card/teremko%20griffin.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/247.jpg
+value=2.875
 rarity=C
 type=Creature
 subtype=Griffin
@@ -8,4 +8,4 @@ cost={3}{W}
 pt=2/2
 ability=Flying; banding
 timing=main
-oracle=Flying; banding
+oracle=Flying, banding

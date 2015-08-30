@@ -1,5 +1,5 @@
 name=Lightning Prowess
-image=http://mtgimage.com/card/lightning%20prowess.jpg
+image=http://magiccards.info/scans/en/avr/145.jpg
 value=2.735
 rarity=U
 type=Enchantment
@@ -8,4 +8,4 @@ cost={2}{R}
 ability=Enchanted creature has haste and "{T}: SN deals 1 damage to target creature or player."
 enchant=pump,pos creature
 timing=aura
-oracle=Enchant creature. Enchanted creature has haste and "{T}: This creature deals 1 damage to target creature or player."
+oracle=Enchant creature\nEnchanted creature has haste and "{T}: This creature deals 1 damage to target creature or player."

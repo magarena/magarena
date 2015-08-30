@@ -1,5 +1,5 @@
 name=Dementia Bat
-image=http://mtgimage.com/card/dementia%20bat.jpg
+image=http://magiccards.info/scans/en/nph/55.jpg
 value=1.697
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         {4}{B}, Sacrifice SN: Target player discards two cards.
 timing=main
-oracle=Flying. {4}{B}, Sacrifice Dementia Bat: Target player discards two cards.
+oracle=Flying\n{4}{B}, Sacrifice Dementia Bat: Target player discards two cards.

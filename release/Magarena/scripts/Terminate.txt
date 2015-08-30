@@ -1,5 +1,5 @@
 name=Terminate
-image=http://mtgimage.com/card/terminate.jpg
+image=http://magiccards.info/scans/en/ddk/64.jpg
 value=4.272
 removal=5
 rarity=C

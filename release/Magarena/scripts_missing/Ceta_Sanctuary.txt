@@ -1,9 +1,0 @@
-name=Ceta Sanctuary
-image=http://mtgimage.com/card/ceta%20sanctuary.jpg
-value=2.500
-rarity=U
-type=Enchantment
-cost={2}{U}
-ability=At the beginning of your upkeep, if you control a red or green permanent, draw a card, then discard a card. If you control a red permanent and a green permanent, instead draw two cards, then discard a card.
-timing=main
-oracle=At the beginning of your upkeep, if you control a red or green permanent, draw a card, then discard a card. If you control a red permanent and a green permanent, instead draw two cards, then discard a card.

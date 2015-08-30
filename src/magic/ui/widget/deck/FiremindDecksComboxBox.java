@@ -1,6 +1,6 @@
 package magic.ui.widget.deck;
 
-import magic.data.DeckUtils;
+import magic.utility.DeckUtils;
 
 @SuppressWarnings("serial")
 public class FiremindDecksComboxBox extends DeckFilesComboBox {

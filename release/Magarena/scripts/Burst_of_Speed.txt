@@ -1,9 +1,10 @@
 name=Burst of Speed
-image=http://mtgimage.com/card/burst%20of%20speed.jpg
+image=http://magiccards.info/scans/en/m10/129.jpg
 value=2.196
 rarity=C
 type=Sorcery
 cost={R}
+ability=Cast SN with AI only if you control a creature.
 effect=Creatures you control gain haste until end of turn.
 timing=fmain
 oracle=Creatures you control gain haste until end of turn.

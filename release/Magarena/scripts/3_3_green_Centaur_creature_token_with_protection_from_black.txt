@@ -7,3 +7,4 @@ subtype=Centaur
 color=g
 pt=3/3
 ability=protection from black
+oracle=Protection from black

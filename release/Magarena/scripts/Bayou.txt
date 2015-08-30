@@ -1,8 +1,9 @@
 name=Bayou
-image=http://mtgimage.com/set/me4/bayou.jpg
+image=http://magiccards.info/scans/en/vma/293.jpg
 value=4.500
 rarity=R
 type=Land
 subtype=Swamp,Forest
 mana=b4g4
 timing=land
+oracle=NONE

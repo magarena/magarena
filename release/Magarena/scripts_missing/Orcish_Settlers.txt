@@ -1,6 +1,6 @@
 name=Orcish Settlers
-image=http://mtgimage.com/card/orcish%20settlers.jpg
-value=2.500
+image=http://magiccards.info/scans/en/wl/112.jpg
+value=4.300
 rarity=U
 type=Creature
 subtype=Orc

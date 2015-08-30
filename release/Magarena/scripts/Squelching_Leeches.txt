@@ -1,5 +1,5 @@
 name=Squelching Leeches
-image=http://mtgimage.com/card/squelching%20leeches.jpg
+image=http://magiccards.info/scans/en/jou/84.jpg
 value=3.673
 rarity=U
 type=Creature

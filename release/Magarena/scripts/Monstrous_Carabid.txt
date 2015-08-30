@@ -1,5 +1,5 @@
 name=Monstrous Carabid
-image=http://mtgimage.com/card/monstrous%20carabid.jpg
+image=http://magiccards.info/scans/en/arb/43.jpg
 value=2.221
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={3}{B}{R}
 pt=4/4
 ability=SN attacks each turn if able.;cycling {B/R}
 timing=main
-oracle=Monstrous Carabid attacks each turn if able. Cycling {B/R}
+oracle=Monstrous Carabid attacks each turn if able.\nCycling {B/R}

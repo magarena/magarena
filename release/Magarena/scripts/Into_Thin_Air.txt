@@ -1,0 +1,10 @@
+name=Into Thin Air
+image=http://magiccards.info/scans/en/5dn/33.jpg
+value=1.550
+rarity=C
+type=Instant
+cost={5}{U}
+ability=Affinity for artifacts.
+effect=Return target artifact to its owner's hand.
+timing=removal
+oracle=Affinity for artifacts\nReturn target artifact to its owner's hand.

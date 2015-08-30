@@ -1,0 +1,9 @@
+name=Psychic Rebuttal
+image=http://magiccards.info/scans/en/ori/67.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={1}{U}
+effect=Counter target instant or sorcery spell that targets you.~If there are two or more instant and/or sorcery cards in your graveyard, you may copy the spell countered this way. You may choose new targets for the copy.
+timing=removal
+oracle=Counter target instant or sorcery spell that targets you.\nSpell mastery — If there are two or more instant and/or sorcery cards in your graveyard, you may copy the spell countered this way. You may choose new targets for the copy.

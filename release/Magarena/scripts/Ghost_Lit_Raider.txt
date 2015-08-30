@@ -1,5 +1,5 @@
 name=Ghost-Lit Raider
-image=http://mtgimage.com/card/ghost-lit%20raider.jpg
+image=http://magiccards.info/scans/en/sok/99.jpg
 value=3.567
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability={2}{R}, {T}: SN deals 2 damage to target creature.;\
         {3}{R}, Discard SN: SN deals 4 damage to target creature.
 timing=main
-oracle={2}{R}, {T}: Ghost-Lit Raider deals 2 damage to target creature. Channel — {3}{R}, Discard Ghost-Lit Raider: Ghost-Lit Raider deals 4 damage to target creature.
+oracle={2}{R}, {T}: Ghost-Lit Raider deals 2 damage to target creature.\nChannel — {3}{R}, Discard Ghost-Lit Raider: Ghost-Lit Raider deals 4 damage to target creature.

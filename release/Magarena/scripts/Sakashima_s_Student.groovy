@@ -11,7 +11,7 @@ def ST = new MagicStatic(MagicLayer.Type) {
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                new MagicMayChoice(MagicTargetChoice.CREATURE),
+                new MagicMayChoice(A_CREATURE),
                 MagicCopyPermanentPicker.create(),
                 this,
                 "Put SN onto the battlefield. You may\$ have SN enter the battlefield as a copy of any creature\$ on the battlefield, " + 
@@ -22,15 +22,13 @@ def ST = new MagicStatic(MagicLayer.Type) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                event.processTargetPermanent(game, {
-                    game.doAction(new MagicEnterAsCopyAction(event.getCardOnStack(), it, {
-                        final MagicPermanent perm ->
-                        final MagicGame G = perm.getGame();
-                        G.doAction(new MagicAddStaticAction(perm, ST));
-                    }));
-                });
+                game.doAction(new EnterAsCopyAction(event.getCardOnStack(), event.getTarget(), {
+                    final MagicPermanent perm ->
+                    final MagicGame G = perm.getGame();
+                    G.doAction(new AddStaticAction(perm, ST));
+                }));
             } else {
-                game.doAction(new MagicPlayCardFromStackAction(
+                game.doAction(new PlayCardFromStackAction(
                     event.getCardOnStack()
                 ));
             }

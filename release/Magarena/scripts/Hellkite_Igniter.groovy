@@ -20,7 +20,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int X = event.getPlayer().getNrOfPermanents(MagicType.Artifact);
-            game.doAction(new MagicChangeTurnPTAction(event.getPermanent(), +X, +0));
+            game.doAction(new ChangeTurnPTAction(event.getPermanent(), +X, +0));
         }
     }
 ]

@@ -1,12 +1,9 @@
 [
-    new MagicWhenComesIntoPlayTrigger() {
+    new MagicWhenComesIntoPlayTrigger(MagicTrigger.REPLACEMENT) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
             final MagicTargetChoice targetChoice=new MagicTargetChoice(
-                new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
-                    permanent
-                ),
+                CREATURE_YOU_CONTROL.except(permanent),
                 MagicTargetHint.None,
                 "a creature other than "+permanent+" to sacrifice"
             );
@@ -22,18 +19,13 @@
         }
 
         @Override
-        public boolean usesStack() {
-            return false;
-        }
-
-        @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 final MagicPermanent permanent=event.getPermanent();
                 event.processTargetPermanent(game, {
-                    game.doAction(new MagicSacrificeAction(it));
-                    game.doAction(new MagicChangeCountersAction(permanent,MagicCounterType.PlusOne,2));
-                    game.doAction(new MagicChangeLifeAction(event.getPlayer(),2));
+                    game.doAction(new SacrificeAction(it));
+                    game.doAction(new ChangeCountersAction(permanent,MagicCounterType.PlusOne,2));
+                    game.doAction(new ChangeLifeAction(event.getPlayer(),2));
                     final MagicEvent newEvent=executeTrigger(game,permanent,MagicPayedCost.NO_COST);
                     if (newEvent.isValid()) {
                         game.addEvent(newEvent);

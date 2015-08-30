@@ -14,7 +14,7 @@
             if (event.isYes()) {
                 game.addEvent(new MagicPayLifeEvent(event.getSource(), event.getPlayer(), 2));
             } else {
-                game.doAction(new MagicTapAction(event.getPermanent()));
+                game.doAction(new TapAction(event.getPermanent()));
             }
         }
     }

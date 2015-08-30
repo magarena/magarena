@@ -1,0 +1,11 @@
+name=Godo's Irregulars
+image=http://magiccards.info/scans/en/sok/101.jpg
+value=3.430
+rarity=U
+type=Creature
+subtype=Human,Warrior
+cost={R}
+pt=1/1
+ability={R}: SN deals 1 damage to target creature blocking it.
+timing=main
+oracle={R}: Godo's Irregulars deals 1 damage to target creature blocking it.

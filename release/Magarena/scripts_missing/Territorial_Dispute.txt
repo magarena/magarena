@@ -1,10 +1,10 @@
 name=Territorial Dispute
-image=http://mtgimage.com/card/territorial%20dispute.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/217.jpg
+value=2.079
 rarity=R
 type=Enchantment
 cost={4}{R}{R}
 ability=At the beginning of your upkeep, sacrifice SN unless you sacrifice a land.;\
         Players can't play lands.
-timing=main
-oracle=At the beginning of your upkeep, sacrifice Territorial Dispute unless you sacrifice a land. Players can't play lands.
+timing=enchantment
+oracle=At the beginning of your upkeep, sacrifice Territorial Dispute unless you sacrifice a land.\nPlayers can't play lands.

@@ -1,6 +1,6 @@
 name=Neurok Familiar
-image=http://mtgimage.com/card/neurok%20familiar.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mi/43.jpg
+value=2.750
 rarity=C
 type=Creature
 subtype=Bird
@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying;\
         When SN enters the battlefield, reveal the top card of your library. If it's an artifact card, put it into your hand. Otherwise, put it into your graveyard.
 timing=main
-oracle=Flying. When Neurok Familiar enters the battlefield, reveal the top card of your library. If it's an artifact card, put it into your hand. Otherwise, put it into your graveyard.
+oracle=Flying\nWhen Neurok Familiar enters the battlefield, reveal the top card of your library. If it's an artifact card, put it into your hand. Otherwise, put it into your graveyard.

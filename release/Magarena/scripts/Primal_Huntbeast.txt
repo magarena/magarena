@@ -1,5 +1,5 @@
 name=Primal Huntbeast
-image=http://mtgimage.com/card/primal%20huntbeast.jpg
+image=http://magiccards.info/scans/en/m13/182.jpg
 value=3.333
 rarity=C
 type=Creature

@@ -1,11 +1,11 @@
 name=Erosion
-image=http://mtgimage.com/card/erosion.jpg
-value=2.500
+image=http://magiccards.info/scans/en/4e/70.jpg
+value=1.644
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={U}{U}{U}
 ability=Enchant land;\
         At the beginning of the upkeep of enchanted land's controller, destroy that land unless that player pays {1} or 1 life.
-timing=main
-oracle=Enchant land. At the beginning of the upkeep of enchanted land's controller, destroy that land unless that player pays {1} or 1 life.
+timing=aura
+oracle=Enchant land\nAt the beginning of the upkeep of enchanted land's controller, destroy that land unless that player pays {1} or 1 life.

@@ -2,6 +2,7 @@ package magic.model.event;
 
 import magic.model.MagicCard;
 import magic.model.MagicGame;
+import magic.model.MagicSource;
 import magic.model.MagicManaCost;
 import magic.model.MagicPlayer;
 import magic.model.MagicLocationType;
@@ -19,7 +20,7 @@ public class MagicTransmuteActivation extends MagicCardAbilityActivation {
         
     private static MagicTargetChoice getTransmuteChoice(final int cmc) {
         final MagicCardFilterImpl transmuteFilter = new MagicCardFilterImpl() {
-            public boolean accept(final MagicGame game,final MagicPlayer player,final MagicCard target) {
+            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
                 return target.getConvertedCost() == cmc;
             }
             public boolean acceptType(final MagicTargetType targetType) {

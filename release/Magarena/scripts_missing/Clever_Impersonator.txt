@@ -1,6 +1,6 @@
 name=Clever Impersonator
-image=http://mtgimage.com/card/clever%20impersonator.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/34.jpg
+value=4.583
 rarity=M
 type=Creature
 subtype=Shapeshifter

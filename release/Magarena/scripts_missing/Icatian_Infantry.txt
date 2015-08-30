@@ -1,6 +1,6 @@
 name=Icatian Infantry
-image=http://mtgimage.com/card/icatian%20infantry.jpg
-value=2.500
+image=http://magiccards.info/scans/en/fe/147.jpg
+value=2.988
 rarity=C
 type=Creature
 subtype=Human,Soldier
@@ -9,4 +9,4 @@ pt=1/1
 ability={1}: SN gains first strike until end of turn.;\
         {1}: SN gains banding until end of turn.
 timing=main
-oracle={1}: Icatian Infantry gains first strike until end of turn. {1}: Icatian Infantry gains banding until end of turn.
+oracle={1}: Icatian Infantry gains first strike until end of turn.\n{1}: Icatian Infantry gains banding until end of turn.

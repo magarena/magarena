@@ -12,14 +12,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
             final int X = permanent.getPower();
-            final Collection targets = game.filterPermanents(
-                event.getPlayer(),
-                MagicTargetFilterFactory.CREATURE_YOU_CONTROL
-            );
-            for (final MagicPermanent target : targets) {
-                if (target != permanent) {
-                    game.doAction(new MagicChangeTurnPTAction(target,X,X));
-                }
+            CREATURE_YOU_CONTROL.except(permanent).filter(event) each {
+                game.doAction(new ChangeTurnPTAction(it,X,X));
             }
         }
     }

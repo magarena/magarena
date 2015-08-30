@@ -1,9 +1,9 @@
 name=Lifeblood
-image=http://mtgimage.com/card/lifeblood.jpg
+image=http://magiccards.info/scans/en/lg/196.jpg
 value=1.838
 rarity=R
 type=Enchantment
 cost={2}{W}{W}
+ability=Whenever a Mountain an opponent controls becomes tapped, you gain 1 life.
 timing=main
-requires_groovy_code
 oracle=Whenever a Mountain an opponent controls becomes tapped, you gain 1 life.

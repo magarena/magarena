@@ -1,5 +1,5 @@
 name=Screaming Seahawk
-image=http://mtgimage.com/card/screaming%20seahawk.jpg
+image=http://magiccards.info/scans/en/cns/105.jpg
 value=2.571
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         When SN enters the battlefield, you may search your library for a card named Screaming Seahawk, reveal it, and put it into your hand. If you do, shuffle your library.
 timing=main
-oracle=Flying. When Screaming Seahawk enters the battlefield, you may search your library for a card named Screaming Seahawk, reveal it, and put it into your hand. If you do, shuffle your library.
+oracle=Flying\nWhen Screaming Seahawk enters the battlefield, you may search your library for a card named Screaming Seahawk, reveal it, and put it into your hand. If you do, shuffle your library.

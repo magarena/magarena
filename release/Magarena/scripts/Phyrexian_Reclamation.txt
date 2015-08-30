@@ -1,5 +1,5 @@
 name=Phyrexian Reclamation
-image=http://mtgimage.com/card/phyrexian%20reclamation.jpg
+image=http://magiccards.info/scans/en/c13/88.jpg
 value=4.286
 rarity=U
 type=Enchantment

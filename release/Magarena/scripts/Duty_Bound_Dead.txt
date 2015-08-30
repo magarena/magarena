@@ -1,5 +1,5 @@
 name=Duty-Bound Dead
-image=http://mtgimage.com/card/duty%2Dbound%20dead.jpg
+image=http://magiccards.info/scans/en/m13/92.jpg
 value=3.905
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=0/2
 ability=exalted;\
         {3}{B}: Regenerate SN.
 timing=main
-oracle=Exalted. {3}{B}: Regenerate Duty-Bound Dead.
+oracle=Exalted\n{3}{B}: Regenerate Duty-Bound Dead.

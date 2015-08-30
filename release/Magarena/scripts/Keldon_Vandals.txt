@@ -1,5 +1,5 @@
 name=Keldon Vandals
-image=http://mtgimage.com/card/keldon%20vandals.jpg
+image=http://magiccards.info/scans/en/ud/91.jpg
 value=3.943
 removal=1
 rarity=C
@@ -10,4 +10,4 @@ pt=4/1
 ability=echo {2}{R};\
         When SN enters the battlefield, destroy target artifact.
 timing=main
-oracle=Echo {2}{R}. When Keldon Vandals enters the battlefield, destroy target artifact.
+oracle=Echo {2}{R}\nWhen Keldon Vandals enters the battlefield, destroy target artifact.

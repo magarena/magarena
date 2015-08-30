@@ -1,10 +1,10 @@
 name=Karoo
-image=http://mtgimage.com/card/karoo.jpg
+image=http://magiccards.info/scans/en/c14/303.jpg
 value=2.500
 rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, sacrifice it unless you return an untapped Plains you control to its owner's hand.;\
         {T}: Add {1}{W} to your mana pool.
-timing=main
-oracle=Karoo enters the battlefield tapped. When Karoo enters the battlefield, sacrifice it unless you return an untapped Plains you control to its owner's hand. {T}: Add {1}{W} to your mana pool.
+timing=land
+oracle=Karoo enters the battlefield tapped.\nWhen Karoo enters the battlefield, sacrifice it unless you return an untapped Plains you control to its owner's hand.\n{T}: Add {1}{W} to your mana pool.

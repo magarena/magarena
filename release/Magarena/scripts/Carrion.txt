@@ -1,0 +1,10 @@
+name=Carrion
+image=http://magiccards.info/scans/en/mr/9.jpg
+value=3.679
+rarity=R
+type=Instant
+cost={1}{B}{B}
+ability=As an additional cost to cast SN, sacrifice a creature.
+timing=token
+requires_groovy_code
+oracle=As an additional cost to cast Carrion, sacrifice a creature.\nPut X 0/1 black Insect creature tokens onto the battlefield, where X is the sacrificed creature's power.

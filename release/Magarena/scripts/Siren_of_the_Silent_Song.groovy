@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 permanent.getOpponent(),
-                MagicTargetChoice.A_CARD_FROM_HAND,
+                A_CARD_FROM_HAND,
                 this,
                 "PN discards a card\$, then puts the top card of his or her library into his or her graveyard."
             );
@@ -13,8 +13,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCard(game, {
-                game.doAction(new MagicDiscardCardAction(event.getPlayer(),it));
-                game.doAction(new MagicMillLibraryAction(event.getPlayer(),1));
+                game.doAction(new DiscardCardAction(event.getPlayer(),it));
+                game.doAction(new MillLibraryAction(event.getPlayer(),1));
             });
         }
     }

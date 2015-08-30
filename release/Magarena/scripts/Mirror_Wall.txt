@@ -1,12 +1,12 @@
 name=Mirror Wall
-image=http://mtgimage.com/card/mirror%20wall.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ju/47.jpg
+value=2.481
 rarity=C
 type=Creature
 subtype=Wall
 cost={3}{U}
 pt=3/4
-ability=Defender;\
-{W}: SN loses defender until end of turn.
+ability=Defender.;\
+        {W}: SN can attack as though it didn't have defender this turn.
 timing=main
-oracle=Defender. {W}: Mirror Wall can attack this turn as though it didn't have defender.
+oracle=Defender\n{W}: Mirror Wall can attack this turn as though it didn't have defender.

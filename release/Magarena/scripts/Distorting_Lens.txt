@@ -1,0 +1,9 @@
+name=Distorting Lens
+image=http://magiccards.info/scans/en/8e/299.jpg
+value=3.852
+rarity=R
+type=Artifact
+cost={2}
+timing=artifact
+requires_groovy_code
+oracle={T}: Target permanent becomes the color of your choice until end of turn.

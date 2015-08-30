@@ -1,5 +1,5 @@
 name=Dream Stalker
-image=http://mtgimage.com/card/dream%20stalker.jpg
+image=http://magiccards.info/scans/en/ddm/7.jpg
 value=3.778
 rarity=C
 type=Creature

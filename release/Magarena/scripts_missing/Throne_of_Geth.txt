@@ -1,9 +1,9 @@
 name=Throne of Geth
-image=http://mtgimage.com/card/throne%20of%20geth.jpg
-value=2.500
+image=http://magiccards.info/scans/en/som/211.jpg
+value=3.733
 rarity=U
 type=Artifact
 cost={2}
 ability={T}, Sacrifice an artifact: Proliferate.
-timing=main
+timing=artifact
 oracle={T}, Sacrifice an artifact: Proliferate.

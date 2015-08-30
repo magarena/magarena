@@ -1,9 +1,9 @@
 name=Twinning Glass
-image=http://mtgimage.com/card/twinning%20glass.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lw/264.jpg
+value=2.539
 rarity=R
 type=Artifact
 cost={4}
 ability={1}, {T}: You may cast a nonland card from your hand without paying its mana cost if it has the same name as a spell that was cast this turn.
-timing=main
+timing=artifact
 oracle={1}, {T}: You may cast a nonland card from your hand without paying its mana cost if it has the same name as a spell that was cast this turn.

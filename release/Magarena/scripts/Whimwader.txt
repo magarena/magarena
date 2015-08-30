@@ -1,5 +1,5 @@
 name=Whimwader
-image=http://mtgimage.com/card/whimwader.jpg
+image=http://magiccards.info/scans/en/shm/54.jpg
 value=1.892
 rarity=C
 type=Creature

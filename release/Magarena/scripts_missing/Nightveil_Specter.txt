@@ -1,6 +1,6 @@
 name=Nightveil Specter
-image=http://mtgimage.com/card/nightveil%20specter.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gtc/222.jpg
+value=4.022
 rarity=R
 type=Creature
 subtype=Specter
@@ -10,4 +10,4 @@ ability=Flying;\
         Whenever SN deals combat damage to a player, that player exiles the top card of his or her library.;\
         You may play cards exiled with SN.
 timing=main
-oracle=Flying. Whenever Nightveil Specter deals combat damage to a player, that player exiles the top card of his or her library. You may play cards exiled with Nightveil Specter.
+oracle=Flying\nWhenever Nightveil Specter deals combat damage to a player, that player exiles the top card of his or her library.\nYou may play cards exiled with Nightveil Specter.

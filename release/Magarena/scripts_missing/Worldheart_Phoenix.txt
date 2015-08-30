@@ -1,5 +1,5 @@
 name=Worldheart Phoenix
-image=http://mtgimage.com/card/worldheart%20phoenix.jpg
+image=http://magiccards.info/scans/en/cfx/77.jpg
 value=2.500
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         You may cast SN from your graveyard by paying {W}{U}{B}{R}{G} rather than paying its mana cost. If you do, it enters the battlefield with two +1/+1 counters on it.
 timing=main
-oracle=Flying. You may cast Worldheart Phoenix from your graveyard by paying {W}{U}{B}{R}{G} rather than paying its mana cost. If you do, it enters the battlefield with two +1/+1 counters on it.
+oracle=Flying\nYou may cast Worldheart Phoenix from your graveyard by paying {W}{U}{B}{R}{G} rather than paying its mana cost. If you do, it enters the battlefield with two +1/+1 counters on it.

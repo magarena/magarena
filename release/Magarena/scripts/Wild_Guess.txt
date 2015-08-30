@@ -1,5 +1,5 @@
 name=Wild Guess
-image=http://mtgimage.com/card/wild%20guess.jpg
+image=http://magiccards.info/scans/en/m14/161.jpg
 value=3.094
 rarity=C
 type=Sorcery
@@ -7,4 +7,4 @@ cost={R}{R}
 ability=As an additional cost to cast SN, discard a card.
 effect=Draw two cards.
 timing=main
-oracle=As an additional cost to cast Wild Guess, discard a card. Draw two cards.
+oracle=As an additional cost to cast Wild Guess, discard a card.\nDraw two cards.

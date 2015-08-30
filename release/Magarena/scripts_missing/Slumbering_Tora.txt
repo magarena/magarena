@@ -1,9 +1,0 @@
-name=Slumbering Tora
-image=http://mtgimage.com/card/slumbering%20tora.jpg
-value=2.500
-rarity=R
-type=Artifact
-cost={3}
-ability={2}, Discard a Spirit or Arcane card: SN becomes an X/X Cat artifact creature until end of turn, where X is the discarded card's converted mana cost.
-timing=main
-oracle={2}, Discard a Spirit or Arcane card: Slumbering Tora becomes an X/X Cat artifact creature until end of turn, where X is the discarded card's converted mana cost.

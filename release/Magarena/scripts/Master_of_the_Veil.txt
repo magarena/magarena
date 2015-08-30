@@ -1,5 +1,5 @@
 name=Master of the Veil
-image=http://mtgimage.com/card/master%20of%20the%20veil.jpg
+image=http://magiccards.info/scans/en/le/43.jpg
 value=3.119
 rarity=U
 type=Creature
@@ -7,6 +7,6 @@ subtype=Human,Wizard
 cost={2}{U}{U}
 pt=2/3
 ability=Morph {2}{U};\
-        When SN is turned face up, you may turn target creature with morph face down.
+        When SN is turned face up, you may turn target creature with a morph ability face down.
 timing=main
-oracle=Morph {2}{U}. When Master of the Veil is turned face up, you may turn target creature with morph face down.
+oracle=Morph {2}{U}\nWhen Master of the Veil is turned face up, you may turn target creature with morph face down.

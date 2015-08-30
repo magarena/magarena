@@ -1,12 +1,13 @@
 name=Oona's Blackguard
-image=http://mtgimage.com/card/oona%27s%20blackguard.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mt/72.jpg
+value=3.769
 rarity=U
 type=Creature
 subtype=Faerie,Rogue
 cost={1}{B}
 pt=1/1
-ability=Flying
+ability=Flying;\
+        Whenever a creature you control with a +1/+1 counter on it deals combat damage to a player, that player discards a card.
 timing=main
 requires_groovy_code
-oracle=Flying. Each other Rogue creature you control enters the battlefield with an additional +1/+1 counter on it. Whenever a creature you control with a +1/+1 counter on it deals combat damage to a player, that player discards a card.
+oracle=Flying\nEach other Rogue creature you control enters the battlefield with an additional +1/+1 counter on it.\nWhenever a creature you control with a +1/+1 counter on it deals combat damage to a player, that player discards a card.

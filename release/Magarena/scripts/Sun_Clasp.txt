@@ -1,12 +1,12 @@
 name=Sun Clasp
-image=http://mtgimage.com/card/sun%20clasp.jpg
+image=http://magiccards.info/scans/en/br/83.jpg
 value=2.870
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{W}
-ability=Enchanted creature gets +1/+3.
+ability=Enchanted creature gets +1/+3.;\
+        {W}: Return enchanted creature to its owner's hand.
 enchant=pump,creature
 timing=aura
-requires_groovy_code
-oracle=Enchant creature. Enchanted creature gets +1/+3. {W}: Return enchanted creature to its owner's hand.
+oracle=Enchant creature\nEnchanted creature gets +1/+3.\n{W}: Return enchanted creature to its owner's hand.

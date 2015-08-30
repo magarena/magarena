@@ -1,6 +1,6 @@
 name=Viscerid Deepwalker
-image=http://mtgimage.com/card/viscerid%20deepwalker.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ts/91.jpg
+value=2.684
 rarity=C
 type=Creature
 subtype=Homarid,Warrior
@@ -9,4 +9,4 @@ pt=2/3
 ability={U}: SN gets +1/+0 until end of turn.;\
         Suspend 4—{U}
 timing=main
-oracle={U}: Viscerid Deepwalker gets +1/+0 until end of turn. Suspend 4—{U}
+oracle={U}: Viscerid Deepwalker gets +1/+0 until end of turn.\nSuspend 4—{U}

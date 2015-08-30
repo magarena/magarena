@@ -1,5 +1,5 @@
 name=Serrated Arrows
-image=http://mtgimage.com/card/serrated%20arrows.jpg
+image=http://magiccards.info/scans/en/gvl/20.jpg
 value=4.173
 removal=2
 rarity=C
@@ -9,4 +9,4 @@ ability=SN enters the battlefield with three arrowhead counters on it.;\
         {T}, Remove an arrowhead counter from SN: Put a -1/-1 counter on target creature.
 timing=artifact
 requires_groovy_code
-oracle=Serrated Arrows enters the battlefield with three arrowhead counters on it. At the beginning of your upkeep, if there are no arrowhead counters on Serrated Arrows, sacrifice it. {T}, Remove an arrowhead counter from Serrated Arrows: Put a -1/-1 counter on target creature.
+oracle=Serrated Arrows enters the battlefield with three arrowhead counters on it.\nAt the beginning of your upkeep, if there are no arrowhead counters on Serrated Arrows, sacrifice it.\n{T}, Remove an arrowhead counter from Serrated Arrows: Put a -1/-1 counter on target creature.

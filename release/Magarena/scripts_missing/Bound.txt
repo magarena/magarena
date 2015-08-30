@@ -1,6 +1,6 @@
 name=Bound
-image=http://mtgimage.com/card/bounddetermined.jpg
-value=2.500
+image=http://magiccards.info/scans/en/di/149a.jpg
+value=3.971
 rarity=R
 type=Instant
 cost={3}{B}{G}

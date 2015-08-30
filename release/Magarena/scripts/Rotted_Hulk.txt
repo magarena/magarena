@@ -1,5 +1,5 @@
 name=Rotted Hulk
-image=http://mtgimage.com/card/rotted%20hulk.jpg
+image=http://magiccards.info/scans/en/jou/81.jpg
 value=1.891
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Elemental
 cost={3}{B}
 pt=2/5
 timing=main
+oracle=NONE

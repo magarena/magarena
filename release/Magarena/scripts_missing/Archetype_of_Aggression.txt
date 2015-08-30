@@ -1,6 +1,6 @@
 name=Archetype of Aggression
-image=http://mtgimage.com/card/archetype%20of%20aggression.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bng/88.jpg
+value=3.827
 rarity=U
 type=Enchantment,Creature
 subtype=Human,Warrior
@@ -8,5 +8,5 @@ cost={1}{R}{R}
 pt=3/2
 ability=Creatures you control have trample.;\
         Creatures your opponents control lose trample and can't have or gain trample.
-timing=main
-oracle=Creatures you control have trample. Creatures your opponents control lose trample and can't have or gain trample.
+timing=enchantment
+oracle=Creatures you control have trample.\nCreatures your opponents control lose trample and can't have or gain trample.

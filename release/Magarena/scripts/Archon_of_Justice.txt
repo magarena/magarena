@@ -1,11 +1,12 @@
 name=Archon of Justice
-image=http://mtgimage.com/card/archon%20of%20justice.jpg
+image=http://magiccards.info/scans/en/m12/6.jpg
 value=3.872
 rarity=R
 type=Creature
 subtype=Archon
 cost={3}{W}{W}
 pt=4/4
-ability=flying;When SN dies, exile target permanent.
+ability=Flying;\
+        When SN dies, exile target permanent.
 timing=main
-oracle=Flying. When Archon of Justice dies, exile target permanent.
+oracle=Flying\nWhen Archon of Justice dies, exile target permanent.

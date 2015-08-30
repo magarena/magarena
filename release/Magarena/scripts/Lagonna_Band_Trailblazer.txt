@@ -1,5 +1,5 @@
 name=Lagonna-Band Trailblazer
-image=http://mtgimage.com/card/lagonna-band%20trailblazer.jpg
+image=http://magiccards.info/scans/en/jou/14.jpg
 value=3.823
 rarity=C
 type=Creature

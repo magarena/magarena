@@ -1,0 +1,12 @@
+name=Temur Runemark
+image=http://magiccards.info/scans/en/frf/140.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{G}
+ability=Enchanted creature gets +2/+2.;\
+        Enchanted creature has trample as long as you control a blue or red permanent.
+timing=aura
+enchant=pump,pos creature
+oracle=Enchant creature\nEnchanted creature gets +2/+2.\nEnchanted creature has trample as long as you control a blue or red permanent.

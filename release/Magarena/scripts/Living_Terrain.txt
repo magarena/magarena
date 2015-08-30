@@ -1,5 +1,5 @@
 name=Living Terrain
-image=http://mtgimage.com/card/living%20terrain.jpg
+image=http://magiccards.info/scans/en/8e/260.jpg
 value=3.539
 rarity=U
 type=Enchantment
@@ -11,4 +11,4 @@ given_subtype=Treefolk
 given_color=g
 set_pt=5/6
 timing=enchantment
-oracle=Enchant land. Enchanted land is a 5/6 green Treefolk creature that's still a land.
+oracle=Enchant land\nEnchanted land is a 5/6 green Treefolk creature that's still a land.

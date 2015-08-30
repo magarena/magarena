@@ -1,5 +1,5 @@
 name=Kin-Tree Warden
-image=http://mtgimage.com/card/kin-tree%20warden.jpg
+image=http://magiccards.info/scans/en/ktk/139.jpg
 value=2.000
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability={2}: Regenerate SN.;\
         Morph {G}
 timing=main
-oracle={2}: Regenerate Kin-Tree Warden. Morph {G}
+oracle={2}: Regenerate Kin-Tree Warden.\nMorph {G}

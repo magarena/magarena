@@ -1,9 +1,10 @@
 name=Summit Prowler
-image=http://mtgimage.com/card/summit%20prowler.jpg
-value=2.250
+image=http://magiccards.info/scans/en/dtk/160.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Yeti
 cost={2}{R}{R}
 pt=4/3
 timing=main
+oracle=NONE

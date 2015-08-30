@@ -1,9 +1,9 @@
 name=Collective Restraint
-image=http://mtgimage.com/card/collective%20restraint.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/49.jpg
+value=4.222
 rarity=R
 type=Enchantment
 cost={3}{U}
 ability=Creatures can't attack you unless their controller pays {X} for each creature he or she controls that's attacking you, where X is the number of basic land types among lands you control.
-timing=main
+timing=enchantment
 oracle=Domain — Creatures can't attack you unless their controller pays {X} for each creature he or she controls that's attacking you, where X is the number of basic land types among lands you control.

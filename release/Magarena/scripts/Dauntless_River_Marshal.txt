@@ -1,5 +1,5 @@
 name=Dauntless River Marshal
-image=http://mtgimage.com/card/dauntless%20river%20marshal.jpg
+image=http://magiccards.info/scans/en/m15/8.jpg
 value=3.667
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=SN gets +1/+1 as long as you control an Island.;\
         {3}{U}: Tap target creature.
 timing=main
-oracle=Dauntless River Marshal gets +1/+1 as long as you control an Island. {3}{U}: Tap target creature.
+oracle=Dauntless River Marshal gets +1/+1 as long as you control an Island.\n{3}{U}: Tap target creature.

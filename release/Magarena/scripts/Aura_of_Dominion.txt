@@ -1,0 +1,11 @@
+name=Aura of Dominion
+image=http://magiccards.info/scans/en/chk/51.jpg
+value=2.833
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={U}{U}
+ability={1}, Tap an untapped creature you control: Untap enchanted creature.
+timing=aura
+enchant=default,pos creature
+oracle=Enchant creature\n{1}, Tap an untapped creature you control: Untap enchanted creature.

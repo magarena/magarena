@@ -1,5 +1,5 @@
 name=Ixidor, Reality Sculptor
-image=http://mtgimage.com/card/ixidor%2C%20reality%20sculptor.jpg
+image=http://magiccards.info/scans/en/on/89.jpg
 value=3.968
 rarity=R
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=3/4
 ability=Face-down creatures get +1/+1.;\
         {2}{U}: Turn target face-down creature face up.
 timing=main
-oracle=Face-down creatures get +1/+1. {2}{U}: Turn target face-down creature face up.
+oracle=Face-down creatures get +1/+1.\n{2}{U}: Turn target face-down creature face up.

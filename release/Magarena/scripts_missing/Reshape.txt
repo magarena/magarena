@@ -1,9 +1,9 @@
 name=Reshape
-image=http://mtgimage.com/card/reshape.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ds/31.jpg
+value=3.803
 rarity=R
 type=Sorcery
 cost={X}{U}{U}
 effect=As an additional cost to cast SN, sacrifice an artifact.~Search your library for an artifact card with converted mana cost X or less and put it onto the battlefield. Then shuffle your library.
 timing=main
-oracle=As an additional cost to cast Reshape, sacrifice an artifact. Search your library for an artifact card with converted mana cost X or less and put it onto the battlefield. Then shuffle your library.
+oracle=As an additional cost to cast Reshape, sacrifice an artifact.\nSearch your library for an artifact card with converted mana cost X or less and put it onto the battlefield. Then shuffle your library.

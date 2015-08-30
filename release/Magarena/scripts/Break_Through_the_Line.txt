@@ -1,0 +1,9 @@
+name=Break Through the Line
+image=http://magiccards.info/scans/en/frf/94.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={1}{R}
+timing=enchantment
+requires_groovy_code
+oracle={R}: Target creature with power 2 or less gains haste until end of turn and can't be blocked this turn.

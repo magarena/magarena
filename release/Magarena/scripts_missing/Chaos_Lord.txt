@@ -1,6 +1,6 @@
 name=Chaos Lord
-image=http://mtgimage.com/card/chaos%20lord.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ia/178.jpg
+value=2.320
 rarity=R
 type=Creature
 subtype=Human
@@ -10,4 +10,4 @@ ability=First strike;\
         At the beginning of your upkeep, target opponent gains control of SN if the number of permanents is even.;\
         SN can attack as though it had haste unless it entered the battlefield this turn.
 timing=main
-oracle=First strike. At the beginning of your upkeep, target opponent gains control of Chaos Lord if the number of permanents is even. Chaos Lord can attack as though it had haste unless it entered the battlefield this turn.
+oracle=First strike\nAt the beginning of your upkeep, target opponent gains control of Chaos Lord if the number of permanents is even.\nChaos Lord can attack as though it had haste unless it entered the battlefield this turn.

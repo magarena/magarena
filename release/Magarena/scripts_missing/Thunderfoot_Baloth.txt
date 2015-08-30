@@ -1,5 +1,5 @@
 name=Thunderfoot Baloth
-image=http://mtgimage.com/card/thunderfoot%20baloth.jpg
+image=http://magiccards.info/scans/en/c14/49.jpg
 value=2.500
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=5/5
 ability=Trample;\
         As long as you control your commander, SN gets +2/+2 and other creatures you control get +2/+2 and have trample.
 timing=main
-oracle=Trample. Lieutenant — As long as you control your commander, Thunderfoot Baloth gets +2/+2 and other creatures you control get +2/+2 and have trample.
+oracle=Trample\nLieutenant — As long as you control your commander, Thunderfoot Baloth gets +2/+2 and other creatures you control get +2/+2 and have trample.

@@ -1,5 +1,5 @@
 name=Wei Scout
-image=http://mtgimage.com/card/wei%20scout.jpg
+image=http://magiccards.info/scans/en/p3k/90.jpg
 value=2.481
 rarity=C
 type=Creature

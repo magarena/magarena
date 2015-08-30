@@ -1,6 +1,6 @@
 name=Emblazoned Golem
-image=http://mtgimage.com/card/emblazoned%20golem.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ap/136.jpg
+value=2.766
 rarity=U
 type=Artifact,Creature
 subtype=Golem
@@ -9,5 +9,5 @@ pt=1/2
 ability=Kicker {X};\
         Spend only colored mana on X. No more than one mana of each color may be spent this way.;\
         If SN was kicked, it enters the battlefield with X +1/+1 counters on it.
-timing=main
-oracle=Kicker {X}. Spend only colored mana on X. No more than one mana of each color may be spent this way. If Emblazoned Golem was kicked, it enters the battlefield with X +1/+1 counters on it.
+timing=artifact
+oracle=Kicker {X}\nSpend only colored mana on X. No more than one mana of each color may be spent this way.\nIf Emblazoned Golem was kicked, it enters the battlefield with X +1/+1 counters on it.

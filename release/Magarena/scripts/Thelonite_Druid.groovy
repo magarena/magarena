@@ -14,14 +14,14 @@ def TY = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Animate),
-        "Animate"
+        "Becomes"
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicTapEvent(source),
                 new MagicPayManaCostEvent(source,"{1}{G}"),
-                new MagicSacrificePermanentEvent(source,MagicTargetChoice.SACRIFICE_CREATURE)
+                new MagicSacrificePermanentEvent(source,SACRIFICE_CREATURE)
             ];
         }
         @Override
@@ -34,10 +34,8 @@ def TY = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> forests=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.FOREST_YOU_CONTROL);
-            for (final MagicPermanent forest : forests) {
-                game.doAction(new MagicBecomesCreatureAction(forest,PT,TY));
+            FOREST_YOU_CONTROL.filter(event.getPlayer()) each {
+                game.doAction(new BecomesCreatureAction(it,PT,TY));
             }
         }
     }

@@ -1,0 +1,12 @@
+name=Arashin Foremost
+image=http://magiccards.info/scans/en/dtk/3.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Warrior
+cost={1}{W}{W}
+pt=2/2
+ability=Double strike;\
+        Whenever SN enters the battlefield or attacks, another target Warrior creature you control gains double strike until end of turn.
+timing=main
+oracle=Double strike\nWhenever Arashin Foremost enters the battlefield or attacks, another target Warrior creature you control gains double strike until end of turn.

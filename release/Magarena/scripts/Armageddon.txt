@@ -1,10 +1,11 @@
 name=Armageddon
-image=http://mtgimage.com/card/armageddon.jpg
+image=http://magiccards.info/scans/en/vma/12.jpg
 value=4.367
 removal=2
 rarity=R
 type=Sorcery
 cost={3}{W}
+ability=Cast SN with AI only if an opponent controls a land.
 effect=Destroy all lands.
 timing=removal
 oracle=Destroy all lands.

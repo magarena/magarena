@@ -1,6 +1,6 @@
 name=Koth of the Hammer
-image=http://mtgimage.com/card/koth%20of%20the%20hammer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddi/44.jpg
+value=4.041
 rarity=M
 type=Planeswalker
 subtype=Koth
@@ -9,4 +9,4 @@ ability=+1: Untap target Mountain. It becomes a 4/4 red Elemental creature until
         −2: Add {R} to your mana pool for each Mountain you control.;\
         −5: You get an emblem with "Mountains you control have ‘{T}: This land deals 1 damage to target creature or player.'"
 timing=main
-oracle=+1: Untap target Mountain. It becomes a 4/4 red Elemental creature until end of turn. It's still a land. −2: Add {R} to your mana pool for each Mountain you control. −5: You get an emblem with "Mountains you control have ‘{T}: This land deals 1 damage to target creature or player.'"
+oracle=+1: Untap target Mountain. It becomes a 4/4 red Elemental creature until end of turn. It's still a land.\n−2: Add {R} to your mana pool for each Mountain you control.\n−5: You get an emblem with "Mountains you control have ‘{T}: This land deals 1 damage to target creature or player.'"

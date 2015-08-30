@@ -1,5 +1,5 @@
 name=Drake Hatchling
-image=http://mtgimage.com/card/drake%20hatchling.jpg
+image=http://magiccards.info/scans/en/mm/76.jpg
 value=2.731
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/3
 ability=flying;\
         {U}: SN gets +1/+0 until end of turn. Activate this ability only once each turn.
 timing=main
-oracle=Flying. {U}: Drake Hatchling gets +1/+0 until end of turn. Activate this ability only once each turn.
+oracle=Flying\n{U}: Drake Hatchling gets +1/+0 until end of turn. Activate this ability only once each turn.

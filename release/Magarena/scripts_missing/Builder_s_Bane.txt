@@ -1,6 +1,6 @@
 name=Builder's Bane
-image=http://mtgimage.com/card/builder%27s%20bane.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/160.jpg
+value=3.152
 rarity=C
 type=Sorcery
 cost={X}{X}{R}

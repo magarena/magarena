@@ -1,0 +1,12 @@
+name=Thornscape Master
+image=http://magiccards.info/scans/en/in/216.jpg
+value=3.403
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={2}{G}{G}
+pt=2/2
+ability={R}{R}, {T}: SN deals 2 damage to target creature.;\
+        {W}{W}, {T}: Target creature gains protection from the color of your choice until end of turn.
+timing=main
+oracle={R}{R}, {T}: Thornscape Master deals 2 damage to target creature.\n{W}{W}, {T}: Target creature gains protection from the color of your choice until end of turn.

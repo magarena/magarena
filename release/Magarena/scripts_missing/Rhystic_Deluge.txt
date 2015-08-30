@@ -1,9 +1,9 @@
 name=Rhystic Deluge
-image=http://mtgimage.com/card/rhystic%20deluge.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pr/43.jpg
+value=3.135
 rarity=C
 type=Enchantment
 cost={2}{U}
 ability={U}: Tap target creature unless its controller pays {1}.
-timing=main
+timing=enchantment
 oracle={U}: Tap target creature unless its controller pays {1}.

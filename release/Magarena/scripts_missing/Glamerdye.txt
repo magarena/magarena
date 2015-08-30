@@ -1,9 +1,9 @@
 name=Glamerdye
-image=http://mtgimage.com/card/glamerdye.jpg
-value=2.500
+image=http://magiccards.info/scans/en/eve/21.jpg
+value=2.980
 rarity=R
 type=Instant
 cost={1}{U}
 effect=Change the text of target spell or permanent by replacing all instances of one color word with another.~Retrace
 timing=removal
-oracle=Change the text of target spell or permanent by replacing all instances of one color word with another. Retrace
+oracle=Change the text of target spell or permanent by replacing all instances of one color word with another.\nRetrace

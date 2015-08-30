@@ -1,0 +1,11 @@
+name=Gnat Miser
+image=http://magiccards.info/scans/en/sok/70.jpg
+value=3.617
+rarity=C
+type=Creature
+subtype=Rat,Shaman
+cost={B}
+pt=1/1
+timing=main
+requires_groovy_code
+oracle=Each opponent's maximum hand size is reduced by one.

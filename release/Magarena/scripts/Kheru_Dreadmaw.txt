@@ -1,0 +1,12 @@
+name=Kheru Dreadmaw
+image=http://magiccards.info/scans/en/ktk/76.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie,Crocodile
+cost={4}{B}
+pt=4/4
+ability=Defender
+timing=main
+requires_groovy_code
+oracle=Defender\n{1}{G}, Sacrifice another creature: You gain life equal to the sacrificed creature's toughness.

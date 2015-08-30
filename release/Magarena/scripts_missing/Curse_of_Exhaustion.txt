@@ -1,11 +1,11 @@
 name=Curse of Exhaustion
-image=http://mtgimage.com/card/curse%20of%20exhaustion.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dka/5.jpg
+value=3.942
 rarity=U
 type=Enchantment
 subtype=Aura,Curse
 cost={2}{W}{W}
 ability=Enchant player;\
         Enchanted player can't cast more than one spell each turn.
-timing=main
-oracle=Enchant player. Enchanted player can't cast more than one spell each turn.
+timing=aura
+oracle=Enchant player\nEnchanted player can't cast more than one spell each turn.

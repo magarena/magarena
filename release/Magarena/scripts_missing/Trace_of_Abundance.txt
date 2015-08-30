@@ -1,6 +1,6 @@
 name=Trace of Abundance
-image=http://mtgimage.com/card/trace%20of%20abundance.jpg
-value=2.500
+image=http://magiccards.info/scans/en/arb/142.jpg
+value=3.545
 rarity=C
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={R/W}{G}
 ability=Enchant land;\
         Enchanted land has shroud.;\
         Whenever enchanted land is tapped for mana, its controller adds one mana of any color to his or her mana pool.
-timing=main
-oracle=Enchant land. Enchanted land has shroud. Whenever enchanted land is tapped for mana, its controller adds one mana of any color to his or her mana pool.
+timing=aura
+oracle=Enchant land\nEnchanted land has shroud.\nWhenever enchanted land is tapped for mana, its controller adds one mana of any color to his or her mana pool.

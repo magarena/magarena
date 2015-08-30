@@ -1,6 +1,6 @@
 name=Vengeful Archon
-image=http://mtgimage.com/card/vengeful%20archon.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m11/37.jpg
+value=4.051
 rarity=R
 type=Creature
 subtype=Archon
@@ -9,4 +9,4 @@ pt=7/7
 ability=Flying;\
         {X}: Prevent the next X damage that would be dealt to you this turn. If damage is prevented this way, SN deals that much damage to target player.
 timing=main
-oracle=Flying. {X}: Prevent the next X damage that would be dealt to you this turn. If damage is prevented this way, Vengeful Archon deals that much damage to target player.
+oracle=Flying\n{X}: Prevent the next X damage that would be dealt to you this turn. If damage is prevented this way, Vengeful Archon deals that much damage to target player.

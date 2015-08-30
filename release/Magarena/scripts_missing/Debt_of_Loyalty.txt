@@ -1,6 +1,6 @@
 name=Debt of Loyalty
-image=http://mtgimage.com/card/debt%20of%20loyalty.jpg
-value=2.500
+image=http://magiccards.info/scans/en/wl/127.jpg
+value=4.281
 rarity=R
 type=Instant
 cost={1}{W}{W}

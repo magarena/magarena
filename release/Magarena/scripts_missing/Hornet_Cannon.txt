@@ -1,9 +1,9 @@
 name=Hornet Cannon
-image=http://mtgimage.com/card/hornet%20cannon.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pvc/28.jpg
+value=2.612
 rarity=U
 type=Artifact
 cost={4}
 ability={3}, {T}: Put a 1/1 colorless Insect artifact creature token with flying and haste named Hornet onto the battlefield. Destroy it at the beginning of the next end step.
-timing=main
+timing=artifact
 oracle={3}, {T}: Put a 1/1 colorless Insect artifact creature token with flying and haste named Hornet onto the battlefield. Destroy it at the beginning of the next end step.

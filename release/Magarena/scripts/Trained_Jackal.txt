@@ -1,5 +1,5 @@
 name=Trained Jackal
-image=http://mtgimage.com/card/trained%20jackal.jpg
+image=http://magiccards.info/scans/en/p3k/155.jpg
 value=3.423
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Hound
 cost={G}
 pt=1/2
 timing=main
+oracle=NONE

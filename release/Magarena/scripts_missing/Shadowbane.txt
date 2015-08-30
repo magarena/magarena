@@ -1,6 +1,6 @@
 name=Shadowbane
-image=http://mtgimage.com/card/shadowbane.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/242.jpg
+value=3.283
 rarity=U
 type=Instant
 cost={1}{W}

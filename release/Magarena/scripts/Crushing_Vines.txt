@@ -1,0 +1,9 @@
+name=Crushing Vines
+image=http://magiccards.info/scans/en/dka/110.jpg
+value=3.516
+rarity=C
+type=Instant
+cost={2}{G}
+effect=Choose one — (1) Destroy target creature with flying. (2) Destroy target artifact.
+timing=removal
+oracle=Choose one —\n• Destroy target creature with flying.\n• Destroy target artifact.

@@ -1,5 +1,5 @@
 name=Eerie Procession
-image=http://mtgimage.com/card/eerie%20procession.jpg
+image=http://magiccards.info/scans/en/chk/58.jpg
 value=3.292
 rarity=U
 type=Sorcery

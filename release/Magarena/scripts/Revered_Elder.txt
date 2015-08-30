@@ -1,5 +1,5 @@
 name=Revered Elder
-image=http://mtgimage.com/card/revered%20elder.jpg
+image=http://magiccards.info/scans/en/mm/43.jpg
 value=2.117
 rarity=C
 type=Creature

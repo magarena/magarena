@@ -1,0 +1,9 @@
+name=Stitch in Time
+image=http://magiccards.info/scans/en/gp/132.jpg
+value=4.083
+rarity=R
+type=Sorcery
+cost={1}{U}{R}
+timing=main
+requires_groovy_code
+oracle=Flip a coin. If you win the flip, take an extra turn after this one.

@@ -1,9 +1,9 @@
 name=Primitive Etchings
-image=http://mtgimage.com/card/primitive%20etchings.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sc/126.jpg
+value=4.015
 rarity=R
 type=Enchantment
 cost={2}{G}{G}
 ability=Reveal the first card you draw each turn. Whenever you reveal a creature card this way, draw a card.
-timing=main
+timing=enchantment
 oracle=Reveal the first card you draw each turn. Whenever you reveal a creature card this way, draw a card.

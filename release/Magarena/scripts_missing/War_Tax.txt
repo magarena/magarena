@@ -1,9 +1,9 @@
 name=War Tax
-image=http://mtgimage.com/card/war%20tax.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/113.jpg
+value=4.097
 rarity=U
 type=Enchantment
 cost={2}{U}
 ability={X}{U}: This turn, creatures can't attack unless their controller pays {X} for each attacking creature he or she controls.
-timing=main
+timing=enchantment
 oracle={X}{U}: This turn, creatures can't attack unless their controller pays {X} for each attacking creature he or she controls.

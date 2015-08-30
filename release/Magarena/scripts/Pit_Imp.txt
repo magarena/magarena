@@ -1,5 +1,5 @@
 name=Pit Imp
-image=http://mtgimage.com/card/pit%20imp.jpg
+image=http://magiccards.info/scans/en/tp/42.jpg
 value=3.138
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=0/1
 ability=Flying;\
         {B}: SN gets +1/+0 until end of turn. Activate this ability no more than twice each turn.
 timing=main
-oracle=Flying. {B}: Pit Imp gets +1/+0 until end of turn. Activate this ability no more than twice each turn.
+oracle=Flying\n{B}: Pit Imp gets +1/+0 until end of turn. Activate this ability no more than twice each turn.

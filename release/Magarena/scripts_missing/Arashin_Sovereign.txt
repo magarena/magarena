@@ -1,0 +1,12 @@
+name=Arashin Sovereign
+image=http://magiccards.info/scans/en/dtk/212.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Dragon
+cost={5}{G}{W}
+pt=6/6
+ability=Flying;\
+        When SN dies, you may put it on the top or bottom of its owner's library.
+timing=main
+oracle=Flying\nWhen Arashin Sovereign dies, you may put it on the top or bottom of its owner's library.

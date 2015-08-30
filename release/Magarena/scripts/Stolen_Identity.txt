@@ -1,9 +1,9 @@
 name=Stolen Identity
-image=http://mtgimage.com/card/stolen%20identity.jpg
+image=http://magiccards.info/scans/en/gtc/53.jpg
 value=3.652
 rarity=R
 type=Sorcery
 cost={4}{U}{U}
 timing=main
 requires_groovy_code
-oracle=Put a token onto the battlefield that's a copy of target artifact or creature. Cipher
+oracle=Put a token onto the battlefield that's a copy of target artifact or creature.\nCipher

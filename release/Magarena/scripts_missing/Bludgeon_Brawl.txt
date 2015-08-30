@@ -1,9 +1,9 @@
 name=Bludgeon Brawl
-image=http://mtgimage.com/card/bludgeon%20brawl.jpg
-value=2.500
+image=http://magiccards.info/scans/en/nph/80.jpg
+value=3.191
 rarity=R
 type=Enchantment
 cost={2}{R}
 ability=Each noncreature, non-Equipment artifact is an Equipment with equip {X} and "Equipped creature gets +X/+0," where X is that artifact's converted mana cost.
-timing=main
+timing=enchantment
 oracle=Each noncreature, non-Equipment artifact is an Equipment with equip {X} and "Equipped creature gets +X/+0," where X is that artifact's converted mana cost.

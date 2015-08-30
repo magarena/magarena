@@ -1,5 +1,5 @@
 name=Seton's Scout
-image=http://mtgimage.com/card/seton%27s%20scout.jpg
+image=http://magiccards.info/scans/en/tr/138.jpg
 value=3.717
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=reach;\
         SN gets +2/+2 as long as seven or more cards are in your graveyard.
 timing=main
-oracle=Reach. Threshold — Seton's Scout gets +2/+2 as long as seven or more cards are in your graveyard.
+oracle=Reach\nThreshold — Seton's Scout gets +2/+2 as long as seven or more cards are in your graveyard.

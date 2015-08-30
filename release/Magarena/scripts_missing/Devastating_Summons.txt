@@ -1,9 +1,9 @@
 name=Devastating Summons
-image=http://mtgimage.com/card/devastating%20summons.jpg
-value=2.500
+image=http://magiccards.info/scans/en/roe/140.jpg
+value=3.909
 rarity=R
 type=Sorcery
 cost={R}
 effect=As an additional cost to cast SN, sacrifice X lands.~Put two X/X red Elemental creature tokens onto the battlefield.
 timing=main
-oracle=As an additional cost to cast Devastating Summons, sacrifice X lands. Put two X/X red Elemental creature tokens onto the battlefield.
+oracle=As an additional cost to cast Devastating Summons, sacrifice X lands.\nPut two X/X red Elemental creature tokens onto the battlefield.

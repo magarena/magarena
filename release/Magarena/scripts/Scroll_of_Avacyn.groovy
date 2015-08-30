@@ -23,9 +23,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            game.doAction(new MagicDrawAction(player));
+            game.doAction(new DrawAction(player));
             if (player.controlsPermanent(MagicSubType.Angel)) {
-                game.doAction(new MagicChangeLifeAction(player,5));
+                game.doAction(new ChangeLifeAction(player,5));
             }
         }
     }

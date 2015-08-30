@@ -1,5 +1,5 @@
 name=Glacial Wall
-image=http://mtgimage.com/card/glacial%20wall.jpg
+image=http://magiccards.info/scans/en/7e/78.jpg
 value=3.011
 ability=defender
 rarity=U

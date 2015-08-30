@@ -1,9 +1,9 @@
 name=Spiritualize
-image=http://mtgimage.com/card/spiritualize.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/53.jpg
+value=2.632
 rarity=U
 type=Instant
 cost={2}{W}
 effect=Until end of turn, whenever target creature deals damage, you gain that much life.~Draw a card.
 timing=removal
-oracle=Until end of turn, whenever target creature deals damage, you gain that much life. Draw a card.
+oracle=Until end of turn, whenever target creature deals damage, you gain that much life.\nDraw a card.

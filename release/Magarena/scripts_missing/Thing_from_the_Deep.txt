@@ -1,6 +1,6 @@
 name=Thing from the Deep
-image=http://mtgimage.com/card/thing%20from%20the%20deep.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me4/68.jpg
+value=2.333
 rarity=R
 type=Creature
 subtype=Leviathan

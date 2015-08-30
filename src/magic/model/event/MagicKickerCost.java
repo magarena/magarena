@@ -2,7 +2,7 @@ package magic.model.event;
 
 import magic.model.MagicGame;
 import magic.model.MagicSource;
-import magic.model.action.MagicSetKickerAction;
+import magic.model.action.SetKickerAction;
 import magic.model.choice.MagicMayChoice;
 
 public class MagicKickerCost extends MagicAdditionalCost implements MagicEventAction {
@@ -22,6 +22,11 @@ public class MagicKickerCost extends MagicAdditionalCost implements MagicEventAc
     public static MagicKickerCost Buyback(final MagicMatchedCostEvent aCost) {
         return new MagicKickerCost(aCost, "buyback");
     }
+    
+    public static MagicKickerCost Entwine(final MagicMatchedCostEvent aCost) {
+        return new MagicKickerCost(aCost, "entwine");
+    }
+
 
     public MagicEvent getEvent(final MagicSource source) {
         return new MagicEvent(
@@ -40,7 +45,7 @@ public class MagicKickerCost extends MagicAdditionalCost implements MagicEventAc
         final MagicEvent costEvent = cost.getEvent(event.getSource());
         if (event.isYes() & costEvent.isSatisfied()) {
             game.addFirstEvent(costEvent);
-            game.doAction(new MagicSetKickerAction(1));
+            game.doAction(new SetKickerAction(1));
         }
     }
 }

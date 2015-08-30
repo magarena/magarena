@@ -1,5 +1,5 @@
 name=Fatal Frenzy
-image=http://mtgimage.com/card/fatal%20frenzy.jpg
+image=http://magiccards.info/scans/en/pc/98.jpg
 value=3.707
 rarity=R
 type=Instant

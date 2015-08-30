@@ -1,5 +1,5 @@
 name=Tumble Magnet
-image=http://mtgimage.com/card/tumble%20magnet.jpg
+image=http://magiccards.info/scans/en/som/218.jpg
 value=3.684
 rarity=C
 type=Artifact
@@ -7,4 +7,4 @@ cost={3}
 ability=SN enters the battlefield with three charge counters on it.;\
         {T},Remove a charge counter from SN: Tap target artifact or creature.
 timing=artifact
-oracle=Tumble Magnet enters the battlefield with three charge counters on it. {T}, Remove a charge counter from Tumble Magnet: Tap target artifact or creature.
+oracle=Tumble Magnet enters the battlefield with three charge counters on it.\n{T}, Remove a charge counter from Tumble Magnet: Tap target artifact or creature.

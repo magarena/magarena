@@ -1,5 +1,5 @@
 name=Cavern Harpy
-image=http://mtgimage.com/card/cavern%20harpy.jpg
+image=http://magiccards.info/scans/en/ps/97.jpg
 value=4.106
 rarity=C
 type=Creature
@@ -10,4 +10,4 @@ ability=flying;\
         When SN enters the battlefield, return a blue or black creature you control to its owner's hand.;\
         Pay 1 life: Return SN to its owner's hand.
 timing=main
-oracle=Flying. When Cavern Harpy enters the battlefield, return a blue or black creature you control to its owner's hand. Pay 1 life: Return Cavern Harpy to its owner's hand.
+oracle=Flying\nWhen Cavern Harpy enters the battlefield, return a blue or black creature you control to its owner's hand.\nPay 1 life: Return Cavern Harpy to its owner's hand.

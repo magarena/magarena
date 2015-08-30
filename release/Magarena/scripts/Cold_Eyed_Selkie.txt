@@ -1,5 +1,5 @@
 name=Cold-Eyed Selkie
-image=http://mtgimage.com/card/cold-eyed%20selkie.jpg
+image=http://magiccards.info/scans/en/mma/186.jpg
 value=4.270
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=Islandwalk
 timing=main
 requires_groovy_code
-oracle=Islandwalk. Whenever Cold-Eyed Selkie deals combat damage to a player, you may draw that many cards.
+oracle=Islandwalk\nWhenever Cold-Eyed Selkie deals combat damage to a player, you may draw that many cards.

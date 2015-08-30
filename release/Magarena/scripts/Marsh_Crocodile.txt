@@ -1,5 +1,5 @@
 name=Marsh Crocodile
-image=http://mtgimage.com/card/marsh%20crocodile.jpg
+image=http://magiccards.info/scans/en/ps/115.jpg
 value=3.649
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=When SN enters the battlefield, return a blue or black creature you control to its owner's hand.
 timing=main
 requires_groovy_code
-oracle=When Marsh Crocodile enters the battlefield, return a blue or black creature you control to its owner's hand. When Marsh Crocodile enters the battlefield, each player discards a card.
+oracle=When Marsh Crocodile enters the battlefield, return a blue or black creature you control to its owner's hand.\nWhen Marsh Crocodile enters the battlefield, each player discards a card.

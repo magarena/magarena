@@ -1,5 +1,5 @@
 name=Call to the Grave
-image=http://mtgimage.com/card/call%20to%20the%20grave.jpg
+image=http://magiccards.info/scans/en/m12/85.jpg
 value=4.086
 rarity=R
 type=Enchantment
@@ -7,4 +7,4 @@ cost={4}{B}
 ability=At the beginning of the end step, if no creatures are on the battlefield, sacrifice SN.
 timing=enchantment
 requires_groovy_code
-oracle=At the beginning of each player's upkeep, that player sacrifices a non-Zombie creature. At the beginning of the end step, if no creatures are on the battlefield, sacrifice Call to the Grave.
+oracle=At the beginning of each player's upkeep, that player sacrifices a non-Zombie creature.\nAt the beginning of the end step, if no creatures are on the battlefield, sacrifice Call to the Grave.

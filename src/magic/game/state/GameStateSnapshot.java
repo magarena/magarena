@@ -3,15 +3,13 @@ package magic.game.state;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import magic.ai.MagicAI;
-import magic.ai.MagicAIImpl;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.MagicPlayerDefinition;
+import magic.model.DuelPlayerConfig;
 
 public final class GameStateSnapshot {
     private GameStateSnapshot() {}
@@ -20,7 +18,7 @@ public final class GameStateSnapshot {
 
         final GameState gameState = new GameState();
 
-        gameState.setDifficulty(game.getDuel().getDifficulty());
+        gameState.setDifficulty(game.getPlayer(1).getAiProfile().getAiLevel());
         // will always be 0 since it is not possible to save when AI has priority.
         gameState.setStartPlayerIndex(game.getPriorityPlayer().getIndex());
 
@@ -32,28 +30,17 @@ public final class GameStateSnapshot {
         return gameState;
     }
 
-    private static String getAiType(final MagicAI ai) {
-        if (ai != null) {
-            for (MagicAIImpl aiType : MagicAIImpl.SUPPORTED_AIS) {
-                if (aiType.getAI() == ai) {
-                    return aiType.name();
-                }
-            }
-        }
-        return "";
-    }
-
     private static void saveGamePlayerState(final int playerIndex, final GameState gameState, final MagicGame game) {
         final MagicDuel duel = game.getDuel();
-        final MagicPlayerDefinition playerDef = duel.getPlayer(playerIndex);
+        final DuelPlayerConfig playerDef = duel.getPlayer(playerIndex);
         final GamePlayerState gamePlayerState = gameState.getPlayer(playerIndex);
+        final MagicPlayer player = game.getPlayer(playerIndex);
         gamePlayerState.setName(playerDef.getName());
 //        gamePlayerState.setFace(playerDef.getAvatar().getFace());
         gamePlayerState.setDeckProfileColors(playerDef.getDeckProfile().getColorText());
-        if (playerDef.isArtificial()) {
-            gamePlayerState.setAiType(getAiType(duel.getAIs()[playerIndex]));
+        if (player.isArtificial()) {
+            gamePlayerState.setAiType(player.getAiProfile().getAiType().name());
         }
-        final MagicPlayer player = game.getPlayer(playerIndex);
         gamePlayerState.setLife(player.getLife());
         savePlayerLibraryState(player, gamePlayerState);
         savePlayerHandState(player, gamePlayerState);
@@ -65,7 +52,7 @@ public final class GameStateSnapshot {
     private static void savePlayerPermanentsState(final MagicPlayer player, final GamePlayerState gamePlayerState) {
         final Map<GameCardState, Integer> cards = new HashMap<>();
         for (final MagicPermanent card : player.getPermanents()) {
-            final GameCardState tsCard = new GameCardState(card.getCardDefinition().getFullName(), 0, card.isTapped());
+            final GameCardState tsCard = new GameCardState(card.getCardDefinition().getDistinctName(), 0, card.isTapped());
             updateCardCount2(tsCard, cards);
         }
         for (final GameCardState card : cards.keySet()) {

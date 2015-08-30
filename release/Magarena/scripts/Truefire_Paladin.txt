@@ -1,5 +1,5 @@
 name=Truefire Paladin
-image=http://mtgimage.com/card/truefire%20paladin.jpg
+image=http://magiccards.info/scans/en/ddl/8.jpg
 value=3.917
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={R}{W}
 pt=2/2
 ability=vigilance;{R}{W}: SN gains first strike until end of turn.;{R}{W}: SN gets +2/+0 until end of turn.
 timing=main
-oracle=Vigilance. {R}{W}: Truefire Paladin gets +2/+0 until end of turn. {R}{W}: Truefire Paladin gains first strike until end of turn.
+oracle=Vigilance\n{R}{W}: Truefire Paladin gets +2/+0 until end of turn.\n{R}{W}: Truefire Paladin gains first strike until end of turn.

@@ -1,5 +1,5 @@
 name=Angelic Curator
-image=http://mtgimage.com/card/angelic%20curator.jpg
+image=http://magiccards.info/scans/en/ul/1.jpg
 value=3.033
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Form of the Dragon
-image=http://mtgimage.com/card/form%20of%20the%20dragon.jpg
+image=http://magiccards.info/scans/en/9e/187.jpg
 value=4.547
 rarity=R
 type=Enchantment
@@ -8,4 +8,4 @@ ability=At the beginning of your upkeep, SN deals 5 damage to target creature or
         Creatures without flying you don't control can't attack.
 timing=enchantment
 requires_groovy_code
-oracle=At the beginning of your upkeep, Form of the Dragon deals 5 damage to target creature or player. At the beginning of each end step, your life total becomes 5. Creatures without flying can't attack you.
+oracle=At the beginning of your upkeep, Form of the Dragon deals 5 damage to target creature or player.\nAt the beginning of each end step, your life total becomes 5.\nCreatures without flying can't attack you.

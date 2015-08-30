@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 MagicExileTargetPicker.create(),
                 this,
                 "Exile target creature\$. " + 
@@ -14,13 +14,13 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.Exile));
+                game.doAction(new RemoveFromPlayAction(it,MagicLocationType.Exile));
                 game.addEvent(new MagicSearchOntoBattlefieldEvent(
                     event.getSource(),
                     it.getController(),
                     new MagicMayChoice(
                         "Search for a basic land card?",
-                        MagicTargetChoice.BASIC_LAND_CARD_FROM_LIBRARY
+                        A_BASIC_LAND_CARD_FROM_LIBRARY
                     ),
                     MagicPlayMod.TAPPED
                 ));

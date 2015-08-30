@@ -1,6 +1,6 @@
 name=Tajuru Preserver
-image=http://mtgimage.com/card/tajuru%20preserver.jpg
-value=2.500
+image=http://magiccards.info/scans/en/roe/211.jpg
+value=4.383
 rarity=R
 type=Creature
 subtype=Elf,Shaman

@@ -1,9 +1,9 @@
 name=Whiteout
-image=http://mtgimage.com/card/whiteout.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/me2/185.jpg
+value=2.944
+rarity=C
 type=Instant
 cost={1}{G}
 effect=All creatures lose flying until end of turn.~Sacrifice a snow land: Return SN from your graveyard to your hand.
 timing=removal
-oracle=All creatures lose flying until end of turn. Sacrifice a snow land: Return Whiteout from your graveyard to your hand.
+oracle=All creatures lose flying until end of turn.\nSacrifice a snow land: Return Whiteout from your graveyard to your hand.

@@ -1,5 +1,5 @@
 name=Drogskol Captain
-image=http://mtgimage.com/card/drogskol%20captain.jpg
+image=http://magiccards.info/scans/en/dka/136.jpg
 value=3.891
 rarity=U
 type=Creature
@@ -11,4 +11,4 @@ ability=flying;\
         other spirit creatures you control have hexproof
 static=player
 timing=main
-oracle=Flying. Other Spirit creatures you control get +1/+1 and have hexproof.
+oracle=Flying\nOther Spirit creatures you control get +1/+1 and have hexproof.

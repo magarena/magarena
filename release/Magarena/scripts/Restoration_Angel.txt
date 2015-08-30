@@ -1,5 +1,5 @@
 name=Restoration Angel
-image=http://mtgimage.com/card/restoration%20angel.jpg
+image=http://magiccards.info/scans/en/avr/32.jpg
 value=4.453
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=3/4
 ability=flash;flying;\
         When SN enters the battlefield, you may exile target non-Angel creature you control, then return that card to the battlefield under your control.
 timing=flash
-oracle=Flash. Flying. When Restoration Angel enters the battlefield, you may exile target non-Angel creature you control, then return that card to the battlefield under your control.
+oracle=Flash\nFlying\nWhen Restoration Angel enters the battlefield, you may exile target non-Angel creature you control, then return that card to the battlefield under your control.

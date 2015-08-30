@@ -1,5 +1,5 @@
 name=Giant Warthog
-image=http://mtgimage.com/card/giant%20warthog.jpg
+image=http://magiccards.info/scans/en/ju/118.jpg
 value=3.203
 ability=trample
 rarity=C

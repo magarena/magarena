@@ -1,6 +1,6 @@
 name=Loyal Pegasus
-image=http://mtgimage.com/card/loyal%20pegasus.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bng/19.jpg
+value=3.567
 rarity=C
 type=Creature
 subtype=Pegasus
@@ -9,4 +9,4 @@ pt=2/1
 ability=Flying;\
         SN can't attack or block alone.
 timing=main
-oracle=Flying. Loyal Pegasus can't attack or block alone.
+oracle=Flying\nLoyal Pegasus can't attack or block alone.

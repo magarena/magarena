@@ -1,6 +1,6 @@
 name=Hollowborn Barghest
-image=http://mtgimage.com/card/hollowborn%20barghest.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/68.jpg
+value=3.713
 rarity=R
 type=Creature
 subtype=Demon,Hound
@@ -9,4 +9,4 @@ pt=7/6
 ability=At the beginning of your upkeep, if you have no cards in hand, each opponent loses 2 life.;\
         At the beginning of each opponent's upkeep, if that player has no cards in hand, he or she loses 2 life.
 timing=main
-oracle=At the beginning of your upkeep, if you have no cards in hand, each opponent loses 2 life. At the beginning of each opponent's upkeep, if that player has no cards in hand, he or she loses 2 life.
+oracle=At the beginning of your upkeep, if you have no cards in hand, each opponent loses 2 life.\nAt the beginning of each opponent's upkeep, if that player has no cards in hand, he or she loses 2 life.

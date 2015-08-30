@@ -1,10 +1,7 @@
 [
     new MagicAtEndOfTurnTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicPlayer player) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer player) {
             return (!player.getOpponent().hasState(MagicPlayerState.WasDealtDamage)) ?
                 new MagicEvent(
                     permanent,
@@ -16,12 +13,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicDamage damage = new MagicDamage(
-                event.getSource(),
-                event.getPlayer(),
-                2
-            );
-            game.doAction(new MagicDealDamageAction(damage));
+            game.doAction(new DealDamageAction(event.getSource(),event.getPlayer(),2));
         }
     }
 ]

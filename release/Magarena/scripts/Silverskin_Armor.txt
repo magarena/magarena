@@ -1,5 +1,5 @@
 name=Silverskin Armor
-image=http://mtgimage.com/card/silverskin%20armor.jpg
+image=http://magiccards.info/scans/en/mbs/132.jpg
 value=2.808
 rarity=U
 type=Artifact
@@ -9,4 +9,4 @@ ability=Equipped creature gets +1/+1.;\
         Equip {2}
 given_type=Artifact
 timing=main
-oracle=Equipped creature gets +1/+1 and is an artifact in addition to its other types. Equip {2}
+oracle=Equipped creature gets +1/+1 and is an artifact in addition to its other types.\nEquip {2}

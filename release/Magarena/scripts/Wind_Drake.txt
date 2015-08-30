@@ -1,5 +1,5 @@
 name=Wind Drake
-image=http://mtgimage.com/card/wind%20drake.jpg
+image=http://magiccards.info/scans/en/dgm/20.jpg
 value=2.819
 ability=flying
 rarity=C

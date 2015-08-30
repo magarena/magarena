@@ -1,5 +1,5 @@
 name=Abhorrent Overlord
-image=http://mtgimage.com/card/abhorrent%20overlord.jpg
+image=http://magiccards.info/scans/en/ths/75.jpg
 value=3.466
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=flying;\
         At the beginning of your upkeep, sacrifice a creature.
 timing=main
 requires_groovy_code
-oracle=Flying. When Abhorrent Overlord enters the battlefield, put a number of 1/1 black Harpy creature tokens with flying onto the battlefield equal to your devotion to black. At the beginning of your upkeep, sacrifice a creature.
+oracle=Flying\nWhen Abhorrent Overlord enters the battlefield, put a number of 1/1 black Harpy creature tokens with flying onto the battlefield equal to your devotion to black.\nAt the beginning of your upkeep, sacrifice a creature.

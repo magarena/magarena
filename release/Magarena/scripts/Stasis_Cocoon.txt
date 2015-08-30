@@ -1,0 +1,12 @@
+name=Stasis Cocoon
+image=http://magiccards.info/scans/en/5dn/18.jpg
+value=3.044
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{W}
+ability=Enchanted artifact can't attack or block;\
+        Enchanted artifact can't activate abilities.
+timing=aura
+enchant=default,neg artifact
+oracle=Enchant artifact\nEnchanted artifact can't attack or block, and its activated abilities can't be activated.

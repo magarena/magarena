@@ -1,5 +1,5 @@
 name=Sungrace Pegasus
-image=http://mtgimage.com/card/sungrace%20pegasus.jpg
+image=http://magiccards.info/scans/en/m15/38.jpg
 value=3.083
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/2
 ability=Flying;\
         Lifelink
 timing=main
-oracle=Flying. Lifelink
+oracle=Flying\nLifelink

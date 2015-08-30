@@ -1,9 +1,9 @@
 name=Sol Ring
-image=http://mtgimage.com/card/sol%20ring.jpg
+image=http://magiccards.info/scans/en/c14/270.jpg
 value=2.500
 rarity=U
 type=Artifact
 cost={1}
 ability={T}: Add {2} to your mana pool.
-timing=main
+timing=artifact
 oracle={T}: Add {2} to your mana pool.

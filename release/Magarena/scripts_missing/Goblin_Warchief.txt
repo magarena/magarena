@@ -1,5 +1,5 @@
 name=Goblin Warchief
-image=http://mtgimage.com/card/goblin%20warchief.jpg
+image=http://magiccards.info/scans/en/ddn/9.jpg
 value=2.500
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Goblin spells you cast cost {1} less to cast.;\
         Goblin creatures you control have haste.
 timing=main
-oracle=Goblin spells you cast cost {1} less to cast. Goblin creatures you control have haste.
+oracle=Goblin spells you cast cost {1} less to cast.\nGoblin creatures you control have haste.

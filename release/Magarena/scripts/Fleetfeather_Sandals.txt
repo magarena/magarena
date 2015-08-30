@@ -1,5 +1,5 @@
 name=Fleetfeather Sandals
-image=http://mtgimage.com/card/fleetfeather%20sandals.jpg
+image=http://magiccards.info/scans/en/ths/216.jpg
 value=3.433
 rarity=C
 type=Artifact
@@ -8,4 +8,4 @@ cost={2}
 ability=Equipped creature has flying and haste.;\
         Equip {2}
 timing=equipment
-oracle=Equipped creature has flying and haste. Equip {2}
+oracle=Equipped creature has flying and haste.\nEquip {2}

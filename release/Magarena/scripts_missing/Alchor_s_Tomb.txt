@@ -1,9 +1,0 @@
-name=Alchor's Tomb
-image=http://mtgimage.com/card/alchor%27s%20tomb.jpg
-value=2.500
-rarity=R
-type=Artifact
-cost={4}
-ability={2}, {T}: Target permanent you control becomes the color of your choice.
-timing=main
-oracle={2}, {T}: Target permanent you control becomes the color of your choice.

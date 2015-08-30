@@ -1,9 +1,9 @@
 name=Liar's Pendulum
-image=http://mtgimage.com/card/liar%27s%20pendulum.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mi/196.jpg
+value=3.096
 rarity=R
 type=Artifact
 cost={1}
 ability={2}, {T}: Name a card. Target opponent guesses whether a card with that name is in your hand. You may reveal your hand. If you do and your opponent guessed wrong, draw a card.
-timing=main
+timing=artifact
 oracle={2}, {T}: Name a card. Target opponent guesses whether a card with that name is in your hand. You may reveal your hand. If you do and your opponent guessed wrong, draw a card.

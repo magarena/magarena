@@ -1,9 +1,9 @@
 name=Absolute Grace
-image=http://mtgimage.com/card/absolute%20grace.jpg
+image=http://magiccards.info/scans/en/us/1.jpg
 value=3.615
 rarity=U
 type=Enchantment
 cost={1}{W}
-ability=all creatures have protection from black
-timing=enchantment
+ability=All creatures have protection from black.
+timing=main
 oracle=All creatures have protection from black.

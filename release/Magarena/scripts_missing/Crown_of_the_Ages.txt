@@ -1,9 +1,9 @@
 name=Crown of the Ages
-image=http://mtgimage.com/card/crown%20of%20the%20ages.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5e/360.jpg
+value=3.435
 rarity=R
 type=Artifact
 cost={2}
 ability={4}, {T}: Attach target Aura attached to a creature to another creature.
-timing=main
+timing=artifact
 oracle={4}, {T}: Attach target Aura attached to a creature to another creature.

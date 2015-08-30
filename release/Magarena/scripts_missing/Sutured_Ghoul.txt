@@ -1,6 +1,6 @@
 name=Sutured Ghoul
-image=http://mtgimage.com/card/sutured%20ghoul.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m12/112.jpg
+value=4.091
 rarity=R
 type=Creature
 subtype=Zombie
@@ -10,4 +10,4 @@ ability=Trample;\
         As SN enters the battlefield, exile any number of creature cards from your graveyard.;\
         SN's power is equal to the total power of the exiled cards and its toughness is equal to their total toughness.
 timing=main
-oracle=Trample. As Sutured Ghoul enters the battlefield, exile any number of creature cards from your graveyard. Sutured Ghoul's power is equal to the total power of the exiled cards and its toughness is equal to their total toughness.
+oracle=Trample\nAs Sutured Ghoul enters the battlefield, exile any number of creature cards from your graveyard.\nSutured Ghoul's power is equal to the total power of the exiled cards and its toughness is equal to their total toughness.

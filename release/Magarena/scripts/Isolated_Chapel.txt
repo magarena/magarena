@@ -1,5 +1,5 @@
 name=Isolated Chapel
-image=http://mtgimage.com/card/isolated%20chapel.jpg
+image=http://magiccards.info/scans/en/md1/16.jpg
 value=3.375
 rarity=R
 type=Land
@@ -7,4 +7,4 @@ mana=w3b3
 ability={T}: Add {W} or {B} to your mana pool.;\
         SN enters the battlefield tapped unless you control a Plains or a Swamp.
 timing=land
-oracle=Isolated Chapel enters the battlefield tapped unless you control a Plains or a Swamp. {T}: Add {W} or {B} to your mana pool.
+oracle=Isolated Chapel enters the battlefield tapped unless you control a Plains or a Swamp.\n{T}: Add {W} or {B} to your mana pool.

@@ -1,5 +1,5 @@
 name=Deadbridge Chant
-image=http://mtgimage.com/card/deadbridge%20chant.jpg
+image=http://magiccards.info/scans/en/dgm/63.jpg
 value=3.801
 rarity=M
 type=Enchantment
@@ -7,4 +7,4 @@ cost={4}{B}{G}
 ability=When SN enters the battlefield, put the top ten cards of your library into your graveyard.
 timing=main
 requires_groovy_code
-oracle=When Deadbridge Chant enters the battlefield, put the top ten cards of your library into your graveyard. At the beginning of your upkeep, choose a card at random in your graveyard. If it's a creature card, put it onto the battlefield. Otherwise, put it into your hand.
+oracle=When Deadbridge Chant enters the battlefield, put the top ten cards of your library into your graveyard.\nAt the beginning of your upkeep, choose a card at random in your graveyard. If it's a creature card, put it onto the battlefield. Otherwise, put it into your hand.

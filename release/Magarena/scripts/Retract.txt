@@ -1,9 +1,10 @@
 name=Retract
-image=http://mtgimage.com/card/retract.jpg
+image=http://magiccards.info/scans/en/ds/32.jpg
 value=2.878
 rarity=R
 type=Instant
 cost={U}
+ability=Cast SN with AI only if you control an artifact.
+effect=Return all artifacts you control to their owner's hand.
 timing=removal
-requires_groovy_code
 oracle=Return all artifacts you control to their owner's hand.

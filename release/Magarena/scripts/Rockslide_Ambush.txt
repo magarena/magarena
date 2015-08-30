@@ -1,9 +1,9 @@
 name=Rockslide Ambush
-image=http://mtgimage.com/card/rockslide%20ambush.jpg
+image=http://magiccards.info/scans/en/me4/134.jpg
 value=3.676
 rarity=C
 type=Sorcery
 cost={1}{R}
+effect=SN deals damage to target creature equal to the number of Mountains you control.
 timing=main
-requires_groovy_code=Seismic Strike
 oracle=Rockslide Ambush deals damage to target creature equal to the number of Mountains you control.

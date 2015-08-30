@@ -1,5 +1,5 @@
 name=Seal of Removal
-image=http://mtgimage.com/card/seal%20of%20removal.jpg
+image=http://magiccards.info/scans/en/ne/42.jpg
 value=4.167
 rarity=C
 type=Enchantment

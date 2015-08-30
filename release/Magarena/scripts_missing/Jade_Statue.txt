@@ -1,9 +1,9 @@
 name=Jade Statue
-image=http://mtgimage.com/card/jade%20statue.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/9e/300.jpg
+value=3.255
+rarity=R
 type=Artifact
 cost={4}
 ability={2}: SN becomes a 3/6 Golem artifact creature until end of combat. Activate this ability only during combat.
-timing=main
+timing=artifact
 oracle={2}: Jade Statue becomes a 3/6 Golem artifact creature until end of combat. Activate this ability only during combat.

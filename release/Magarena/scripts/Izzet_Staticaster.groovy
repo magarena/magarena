@@ -1,5 +1,5 @@
 [
-     new MagicPermanentActivation(
+    new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Removal),
         "Damage"
     ) {
@@ -9,10 +9,10 @@
             return [new MagicTapEvent(source)];
         }
         @Override
-         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
+        public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 new MagicDamageTargetPicker(1),
                 this,
                 "SN deals 1 damage to target creature\$ "+
@@ -22,14 +22,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicTargetFilter<MagicPermanent> targetFilter = new MagicNameTargetFilter(
-                    MagicTargetFilterFactory.CREATURE,
+                new MagicNameTargetFilter(
+                    CREATURE,
                     it.getName()
-                );
-                final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(),targetFilter);
-                for (final MagicPermanent creature : targets) {
-                    final MagicDamage damage = new MagicDamage(event.getSource(),creature,1);
-                    game.doAction(new MagicDealDamageAction(damage));
+                ).filter(event) each {
+                    game.doAction(new DealDamageAction(event.getSource(), it, 1));
                 }
             });
         }

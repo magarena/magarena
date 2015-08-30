@@ -1,5 +1,5 @@
 name=Gempalm Avenger
-image=http://mtgimage.com/card/gempalm%20avenger.jpg
+image=http://magiccards.info/scans/en/ddo/9.jpg
 value=2.875
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/5
 ability=Cycling {2}{W};\
         When you cycle SN, Soldier creatures get +1/+1 and gain first strike until end of turn.
 timing=main
-oracle=Cycling {2}{W}. When you cycle Gempalm Avenger, Soldier creatures get +1/+1 and gain first strike until end of turn.
+oracle=Cycling {2}{W}\nWhen you cycle Gempalm Avenger, Soldier creatures get +1/+1 and gain first strike until end of turn.

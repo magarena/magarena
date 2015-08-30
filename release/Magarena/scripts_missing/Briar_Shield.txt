@@ -1,6 +1,6 @@
 name=Briar Shield
-image=http://mtgimage.com/card/briar%20shield.jpg
-value=2.500
+image=http://magiccards.info/scans/en/wl/63.jpg
+value=3.333
 rarity=C
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={G}
 ability=Enchant creature;\
         Enchanted creature gets +1/+1.;\
         Sacrifice SN: Enchanted creature gets +3/+3 until end of turn.
-timing=main
-oracle=Enchant creature. Enchanted creature gets +1/+1. Sacrifice Briar Shield: Enchanted creature gets +3/+3 until end of turn.
+timing=aura
+oracle=Enchant creature\nEnchanted creature gets +1/+1.\nSacrifice Briar Shield: Enchanted creature gets +3/+3 until end of turn.

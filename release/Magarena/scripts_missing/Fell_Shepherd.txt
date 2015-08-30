@@ -1,6 +1,6 @@
 name=Fell Shepherd
-image=http://mtgimage.com/card/fell%20shepherd.jpg
-value=2.500
+image=http://magiccards.info/scans/en/c13/78.jpg
+value=3.700
 rarity=R
 type=Creature
 subtype=Avatar
@@ -9,4 +9,4 @@ pt=8/6
 ability=Whenever SN deals combat damage to a player, you may return to your hand all creature cards that were put into your graveyard from the battlefield this turn.;\
         {B}, Sacrifice another creature: Target creature gets -2/-2 until end of turn.
 timing=main
-oracle=Whenever Fell Shepherd deals combat damage to a player, you may return to your hand all creature cards that were put into your graveyard from the battlefield this turn. {B}, Sacrifice another creature: Target creature gets -2/-2 until end of turn.
+oracle=Whenever Fell Shepherd deals combat damage to a player, you may return to your hand all creature cards that were put into your graveyard from the battlefield this turn.\n{B}, Sacrifice another creature: Target creature gets -2/-2 until end of turn.

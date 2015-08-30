@@ -1,9 +1,9 @@
 name=Elkin Bottle
-image=http://mtgimage.com/card/elkin%20bottle.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me2/207.jpg
+value=3.340
 rarity=R
 type=Artifact
 cost={3}
 ability={3}, {T}: Exile the top card of your library. Until the beginning of your next upkeep, you may play that card.
-timing=main
+timing=artifact
 oracle={3}, {T}: Exile the top card of your library. Until the beginning of your next upkeep, you may play that card.

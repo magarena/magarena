@@ -1,5 +1,5 @@
 name=Caustic Tar
-image=http://mtgimage.com/card/caustic%20tar.jpg
+image=http://magiccards.info/scans/en/m15/89.jpg
 value=2.500
 rarity=U
 type=Enchantment
@@ -8,4 +8,4 @@ cost={4}{B}{B}
 enchant=pump,pos land
 ability=Enchanted land has "{T}: Target player loses 3 life."
 timing=enchantment
-oracle=Enchant land. Enchanted land has "{T}: Target player loses 3 life."
+oracle=Enchant land\nEnchanted land has "{T}: Target player loses 3 life."

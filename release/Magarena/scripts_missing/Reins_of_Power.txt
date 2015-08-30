@@ -1,6 +1,6 @@
 name=Reins of Power
-image=http://mtgimage.com/card/reins%20of%20power.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cmd/57.jpg
+value=4.402
 rarity=R
 type=Instant
 cost={2}{U}{U}

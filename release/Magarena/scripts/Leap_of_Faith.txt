@@ -1,9 +1,9 @@
 name=Leap of Faith
-image=http://mtgimage.com/card/leap%20of%20faith.jpg
+image=http://magiccards.info/scans/en/avr/26.jpg
 value=1.315
 rarity=C
 type=Instant
 cost={2}{W}
+effect=Target creature gains flying until end of turn.~Prevent all damage that would be dealt to *that creature* this turn.
 timing=pump
-requires_groovy_code
 oracle=Target creature gains flying until end of turn. Prevent all damage that would be dealt to that creature this turn.

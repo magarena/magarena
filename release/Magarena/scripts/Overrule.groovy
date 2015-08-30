@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_SPELL,
+                NEG_TARGET_SPELL,
                 payedCost.getX(),
                 this,
                 "Counter target spell\$ unless its controller pays {RN}. PN gains RN life."
@@ -18,7 +18,7 @@
                     it, 
                     MagicManaCost.create("{" + event.getRefInt() + "}")
                 ));
-                game.doAction(new MagicChangeLifeAction(event.getPlayer(),event.getRefInt()));
+                game.doAction(new ChangeLifeAction(event.getPlayer(),event.getRefInt()));
             });
         }
     }

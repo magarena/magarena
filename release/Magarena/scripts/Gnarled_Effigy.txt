@@ -1,5 +1,5 @@
 name=Gnarled Effigy
-image=http://mtgimage.com/card/gnarled%20effigy.jpg
+image=http://magiccards.info/scans/en/shm/251.jpg
 value=2.096
 rarity=U
 type=Artifact

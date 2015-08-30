@@ -1,6 +1,6 @@
 name=Aura Gnarlid
-image=http://mtgimage.com/card/aura%20gnarlid.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pc2/55.jpg
+value=3.817
 rarity=C
 type=Creature
 subtype=Beast
@@ -9,4 +9,4 @@ pt=2/2
 ability=Creatures with power less than SN's power can't block it.;\
         SN gets +1/+1 for each Aura on the battlefield.
 timing=main
-oracle=Creatures with power less than Aura Gnarlid's power can't block it. Aura Gnarlid gets +1/+1 for each Aura on the battlefield.
+oracle=Creatures with power less than Aura Gnarlid's power can't block it.\nAura Gnarlid gets +1/+1 for each Aura on the battlefield.

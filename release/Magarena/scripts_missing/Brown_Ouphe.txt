@@ -1,7 +1,7 @@
 name=Brown Ouphe
-image=http://mtgimage.com/card/brown%20ouphe.jpg
-value=2.500
-rarity=C
+image=http://magiccards.info/scans/en/mi/115.jpg
+value=3.610
+rarity=U
 type=Creature
 subtype=Ouphe
 cost={G}

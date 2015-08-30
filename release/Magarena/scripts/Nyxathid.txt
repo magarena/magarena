@@ -1,5 +1,5 @@
 name=Nyxathid
-image=http://mtgimage.com/card/nyxathid.jpg
+image=http://magiccards.info/scans/en/cfx/49.jpg
 value=3.932
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=7/7
 timing=main
 ability=As SN enters the battlefield, choose an opponent.
 requires_groovy_code
-oracle=As Nyxathid enters the battlefield, choose an opponent. Nyxathid gets -1/-1 for each card in the chosen player's hand.
+oracle=As Nyxathid enters the battlefield, choose an opponent.\nNyxathid gets -1/-1 for each card in the chosen player's hand.

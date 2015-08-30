@@ -1,0 +1,9 @@
+name=Clash of Wills
+image=http://magiccards.info/scans/en/ori/49.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={X}{U}
+effect=Counter target spell unless its controller pays {X}.
+timing=removal
+oracle=Counter target spell unless its controller pays {X}.

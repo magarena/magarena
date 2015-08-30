@@ -23,7 +23,7 @@
                 if (library.getCardAtTop().hasType(MagicType.Land)) {
                     landCards++;
                 }
-                game.doAction(new MagicMillLibraryAction(player,1));
+                game.doAction(new MillLibraryAction(player,1));
             }
         }
     }

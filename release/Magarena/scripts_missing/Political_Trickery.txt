@@ -1,6 +1,6 @@
 name=Political Trickery
-image=http://mtgimage.com/card/political%20trickery.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/81.jpg
+value=3.266
 rarity=R
 type=Sorcery
 cost={2}{U}

@@ -1,5 +1,5 @@
 name=Blastoderm
-image=http://mtgimage.com/card/blastoderm.jpg
+image=http://magiccards.info/scans/en/vma/198.jpg
 value=4.000
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{G}{G}
 pt=5/5
 ability=shroud;fading 3
 timing=main
-oracle=Shroud. Fading 3
+oracle=Shroud\nFading 3

@@ -1,10 +1,10 @@
 name=Haze of Rage
-image=http://mtgimage.com/card/haze%20of%20rage.jpg
+image=http://magiccards.info/scans/en/fut/100.jpg
 value=3.231
 rarity=U
 type=Sorcery
 cost={1}{R}
-effect=Creatures you control get +1/+0 until end of turn.
+effect=Creatures you control get +1/+0 until end of turn.~Buyback
 ability=buyback {2};storm
 timing=main
-oracle=Buyback {2}. Creatures you control get +1/+0 until end of turn. Storm
+oracle=Buyback {2}\nCreatures you control get +1/+0 until end of turn.\nStorm

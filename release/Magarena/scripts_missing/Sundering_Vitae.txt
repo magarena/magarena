@@ -1,9 +1,9 @@
 name=Sundering Vitae
-image=http://mtgimage.com/card/sundering%20vitae.jpg
+image=http://magiccards.info/scans/en/rav/185.jpg
 value=2.500
 rarity=C
 type=Instant
 cost={2}{G}
 effect=Convoke~Destroy target artifact or enchantment.
 timing=removal
-oracle=Convoke. Destroy target artifact or enchantment.
+oracle=Convoke\nDestroy target artifact or enchantment.

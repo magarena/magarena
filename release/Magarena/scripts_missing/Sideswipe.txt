@@ -1,6 +1,6 @@
 name=Sideswipe
-image=http://mtgimage.com/card/sideswipe.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/187.jpg
+value=1.068
 rarity=U
 type=Instant
 cost={1}{R}

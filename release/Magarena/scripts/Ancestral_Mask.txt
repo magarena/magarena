@@ -1,11 +1,11 @@
 name=Ancestral Mask
-image=http://mtgimage.com/card/ancestral%20mask.jpg
+image=http://magiccards.info/scans/en/mm/229.jpg
 value=4.254
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{G}
+ability=Enchanted creature gets +2/+2 for each other enchantment on the battlefield.
 timing=main
 enchant=pump,pos creature
-requires_groovy_code
-oracle=Enchant creature. Enchanted creature gets +2/+2 for each other enchantment on the battlefield.
+oracle=Enchant creature\nEnchanted creature gets +2/+2 for each other enchantment on the battlefield.

@@ -1,0 +1,9 @@
+name=Void Squall
+image=http://magiccards.info/scans/en/dtk/83.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={4}{U}
+effect=Return target nonland permanent to its owner's hand.~Rebound
+timing=main
+oracle=Return target nonland permanent to its owner's hand.\nRebound

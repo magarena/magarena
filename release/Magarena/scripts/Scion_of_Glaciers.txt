@@ -1,5 +1,5 @@
 name=Scion of Glaciers
-image=http://mtgimage.com/card/scion%20of%20glaciers.jpg
+image=http://magiccards.info/scans/en/ktk/53.jpg
 value=3.000
 rarity=U
 type=Creature

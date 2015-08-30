@@ -1,10 +1,10 @@
 name=Chrome Mox
-image=http://mtgimage.com/card/chrome%20mox.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mi/152.jpg
+value=4.590
 rarity=R
 type=Artifact
 cost={0}
 ability=When SN enters the battlefield, you may exile a nonartifact, nonland card from your hand.;\
         {T}: Add one mana of any of the exiled card's colors to your mana pool.
-timing=main
-oracle=Imprint — When Chrome Mox enters the battlefield, you may exile a nonartifact, nonland card from your hand. {T}: Add one mana of any of the exiled card's colors to your mana pool.
+timing=artifact
+oracle=Imprint — When Chrome Mox enters the battlefield, you may exile a nonartifact, nonland card from your hand.\n{T}: Add one mana of any of the exiled card's colors to your mana pool.

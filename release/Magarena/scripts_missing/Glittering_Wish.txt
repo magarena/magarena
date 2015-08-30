@@ -1,6 +1,6 @@
 name=Glittering Wish
-image=http://mtgimage.com/card/glittering%20wish.jpg
-value=2.500
+image=http://magiccards.info/scans/en/fut/156.jpg
+value=4.207
 rarity=R
 type=Sorcery
 cost={G}{W}

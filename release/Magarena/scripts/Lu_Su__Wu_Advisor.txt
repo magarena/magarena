@@ -1,5 +1,5 @@
 name=Lu Su, Wu Advisor
-image=http://mtgimage.com/card/lu%20su%2C%20wu%20advisor.jpg
+image=http://magiccards.info/scans/en/p3k/47.jpg
 value=2.697
 rarity=R
 type=Legendary,Creature

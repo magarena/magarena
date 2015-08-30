@@ -1,5 +1,5 @@
 [
-    new MagicWhenAttacksTrigger(1) {
+    new MagicWhenAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             final MagicPermanent equippedCreature=permanent.getEquippedCreature();
@@ -15,8 +15,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent=event.getPermanent();
-            final MagicDamage damage=new MagicDamage(permanent,event.getPlayer(),permanent.getPower());
-            game.doAction(new MagicDealDamageAction(damage));
+            game.doAction(new DealDamageAction(permanent,event.getPlayer(),permanent.getPower()));
         }
     }
 ]

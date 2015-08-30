@@ -1,5 +1,5 @@
 name=Vault Skirge
-image=http://mtgimage.com/card/vault%20skirge.jpg
+image=http://magiccards.info/scans/en/nph/76.jpg
 value=3.825
 rarity=C
 type=Artifact,Creature
@@ -8,4 +8,4 @@ cost={1}{B/P}
 pt=1/1
 ability=flying;lifelink;alt cost Pay 2 life, {1} named Pay 2 life
 timing=main
-oracle=Flying. Lifelink
+oracle=Flying\nLifelink

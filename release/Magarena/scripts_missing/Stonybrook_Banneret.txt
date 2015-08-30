@@ -1,6 +1,6 @@
 name=Stonybrook Banneret
-image=http://mtgimage.com/card/stonybrook%20banneret.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mt/51.jpg
+value=4.282
 rarity=C
 type=Creature
 subtype=Merfolk,Wizard
@@ -9,4 +9,4 @@ pt=1/1
 ability=Islandwalk;\
         Merfolk spells and Wizard spells you cast cost {1} less to cast.
 timing=main
-oracle=Islandwalk. Merfolk spells and Wizard spells you cast cost {1} less to cast.
+oracle=Islandwalk\nMerfolk spells and Wizard spells you cast cost {1} less to cast.

@@ -1,5 +1,5 @@
 name=Launch
-image=http://mtgimage.com/card/launch.jpg
+image=http://magiccards.info/scans/en/us/82.jpg
 value=3.766
 rarity=C
 type=Enchantment
@@ -9,4 +9,4 @@ ability=Enchanted creature has flying.;\
         When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.
 timing=aura
 enchant=flying,pos creature
-oracle=Enchant creature. Enchanted creature has flying. When Launch is put into a graveyard from the battlefield, return Launch to its owner's hand.
+oracle=Enchant creature\nEnchanted creature has flying.\nWhen Launch is put into a graveyard from the battlefield, return Launch to its owner's hand.

@@ -1,5 +1,5 @@
 name=Griptide
-image=http://mtgimage.com/card/griptide.jpg
+image=http://magiccards.info/scans/en/ddm/28.jpg
 value=3.389
 removal=3
 rarity=C

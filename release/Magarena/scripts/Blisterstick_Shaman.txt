@@ -1,5 +1,5 @@
 name=Blisterstick Shaman
-image=http://mtgimage.com/card/blisterstick%20shaman.jpg
+image=http://magiccards.info/scans/en/mbs/58.jpg
 value=2.686
 rarity=C
 type=Creature

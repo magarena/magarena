@@ -1,6 +1,6 @@
 name=Fatespinner
-image=http://mtgimage.com/card/fatespinner.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mi/36.jpg
+value=4.357
 rarity=R
 type=Creature
 subtype=Human,Wizard

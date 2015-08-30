@@ -1,0 +1,11 @@
+name=Benevolent Bodyguard
+image=http://magiccards.info/scans/en/vma/17.jpg
+value=3.000
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={W}
+pt=1/1
+ability=Sacrifice SN: Target creature you control gains protection from the color of your choice until end of turn.
+timing=main
+oracle=Sacrifice Benevolent Bodyguard: Target creature you control gains protection from the color of your choice until end of turn.

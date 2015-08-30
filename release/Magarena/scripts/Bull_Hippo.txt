@@ -1,5 +1,5 @@
 name=Bull Hippo
-image=http://mtgimage.com/card/bull%20hippo.jpg
+image=http://magiccards.info/scans/en/7e/233.jpg
 value=3.347
 ability=islandwalk
 rarity=U

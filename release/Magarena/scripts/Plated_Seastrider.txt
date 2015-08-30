@@ -1,5 +1,5 @@
 name=Plated Seastrider
-image=http://mtgimage.com/card/plated%20seastrider.jpg
+image=http://magiccards.info/scans/en/cns/103.jpg
 value=3.083
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Beast
 cost={U}{U}
 pt=1/4
 timing=main
+oracle=NONE

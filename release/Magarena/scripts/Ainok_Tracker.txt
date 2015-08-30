@@ -1,5 +1,5 @@
 name=Ainok Tracker
-image=http://mtgimage.com/card/ainok%20tracker.jpg
+image=http://magiccards.info/scans/en/ktk/96.jpg
 value=2.167
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=First strike;\
         Morph {4}{R}
 timing=main
-oracle=First strike. Morph {4}{R}
+oracle=First strike\nMorph {4}{R}

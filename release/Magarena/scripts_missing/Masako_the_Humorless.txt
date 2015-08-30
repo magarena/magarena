@@ -1,6 +1,6 @@
 name=Masako the Humorless
-image=http://mtgimage.com/card/masako%20the%20humorless.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/33.jpg
+value=3.956
 rarity=R
 type=Legendary,Creature
 subtype=Human,Advisor
@@ -9,4 +9,4 @@ pt=2/1
 ability=Flash;\
         Tapped creatures you control can block as though they were untapped.
 timing=main
-oracle=Flash. Tapped creatures you control can block as though they were untapped.
+oracle=Flash\nTapped creatures you control can block as though they were untapped.

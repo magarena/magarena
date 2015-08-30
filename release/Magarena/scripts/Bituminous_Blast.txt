@@ -1,5 +1,5 @@
 name=Bituminous Blast
-image=http://mtgimage.com/card/bituminous%20blast.jpg
+image=http://magiccards.info/scans/en/pc2/83.jpg
 value=3.750
 rarity=U
 type=Instant
@@ -8,4 +8,4 @@ ability=cascade
 effect=SN deals 4 damage to target creature.
 removal=4
 timing=removal
-oracle=Cascade. Bituminous Blast deals 4 damage to target creature.
+oracle=Cascade\nBituminous Blast deals 4 damage to target creature.

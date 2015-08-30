@@ -1,12 +1,13 @@
 name=Goblin Rabblemaster
-image=http://mtgimage.com/card/goblin%20rabblemaster.jpg
+image=http://magiccards.info/scans/en/m15/145.jpg
 value=4.000
 rarity=R
 type=Creature
 subtype=Goblin,Warrior
 cost={2}{R}
 pt=2/2
-ability=Other Goblin creatures you control have attacks each turn if able.
+ability=Other Goblin creatures you control attack each turn if able.;\
+        At the beginning of combat on your turn, put a 1/1 red Goblin creature token with haste onto the battlefield.;\
+        Whenever SN attacks, SN gets +1/+0 until end of turn for each other attacking Goblin.
 timing=main
-requires_groovy_code
-oracle=Other Goblin creatures you control attack each turn if able. At the beginning of combat on your turn, put a 1/1 red Goblin creature token with haste onto the battlefield. Whenever Goblin Rabblemaster attacks, it gets +1/+0 until end of turn for each other attacking Goblin.
+oracle=Other Goblin creatures you control attack each turn if able.\nAt the beginning of combat on your turn, put a 1/1 red Goblin creature token with haste onto the battlefield.\nWhenever Goblin Rabblemaster attacks, it gets +1/+0 until end of turn for each other attacking Goblin.

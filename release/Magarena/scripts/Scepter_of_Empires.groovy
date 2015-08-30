@@ -13,7 +13,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_PLAYER,
+                NEG_TARGET_PLAYER,
                 new MagicDamageTargetPicker(1),
                 this,
                 "SN deals 1 damage to target player\$. " +
@@ -30,12 +30,7 @@
             final MagicPlayer player = source.getController();
             final int amount = (player.controlsPermanent(crown) && player.controlsPermanent(throne))? 3 : 1;
             event.processTarget(game, {
-                final MagicDamage damage = new MagicDamage(
-                    source,
-                    it,
-                    amount
-                );
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new DealDamageAction(source,it,amount));
             });
         }
     }

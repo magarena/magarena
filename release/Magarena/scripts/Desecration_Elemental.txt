@@ -1,5 +1,5 @@
 name=Desecration Elemental
-image=http://mtgimage.com/card/desecration%20elemental.jpg
+image=http://magiccards.info/scans/en/5dn/45.jpg
 value=3.531
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=8/8
 ability=fear;\
         Whenever a player casts a spell, sacrifice a creature.
 timing=main
-oracle=Fear. Whenever a player casts a spell, sacrifice a creature.
+oracle=Fear\nWhenever a player casts a spell, sacrifice a creature.

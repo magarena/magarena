@@ -1,5 +1,5 @@
 name=Helium Squirter
-image=http://mtgimage.com/card/helium%20squirter.jpg
+image=http://magiccards.info/scans/en/di/26.jpg
 value=2.872
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=0/0
 ability=graft 3;\
         {1}: Target creature with a +1/+1 counter on it gains flying until end of turn.
 timing=main
-oracle=Graft 3. {1}: Target creature with a +1/+1 counter on it gains flying until end of turn.
+oracle=Graft 3\n{1}: Target creature with a +1/+1 counter on it gains flying until end of turn.

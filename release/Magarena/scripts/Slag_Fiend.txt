@@ -1,5 +1,5 @@
 name=Slag Fiend
-image=http://mtgimage.com/card/slag%20fiend.jpg
+image=http://magiccards.info/scans/en/nph/95.jpg
 value=3.689
 rarity=R
 type=Creature

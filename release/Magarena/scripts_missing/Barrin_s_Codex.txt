@@ -1,10 +1,10 @@
 name=Barrin's Codex
-image=http://mtgimage.com/card/barrin%27s%20codex.jpg
-value=2.500
+image=http://magiccards.info/scans/en/us/286.jpg
+value=2.948
 rarity=R
 type=Artifact
 cost={4}
 ability=At the beginning of your upkeep, you may put a page counter on SN.;\
         {4}, {T}, Sacrifice SN: Draw X cards, where X is the number of page counters on SN.
-timing=main
-oracle=At the beginning of your upkeep, you may put a page counter on Barrin's Codex. {4}, {T}, Sacrifice Barrin's Codex: Draw X cards, where X is the number of page counters on Barrin's Codex.
+timing=artifact
+oracle=At the beginning of your upkeep, you may put a page counter on Barrin's Codex.\n{4}, {T}, Sacrifice Barrin's Codex: Draw X cards, where X is the number of page counters on Barrin's Codex.

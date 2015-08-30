@@ -1,6 +1,6 @@
 name=Wurmskin Forger
-image=http://mtgimage.com/card/wurmskin%20forger.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mi/140.jpg
+value=1.264
 rarity=C
 type=Creature
 subtype=Elf,Warrior

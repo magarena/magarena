@@ -1,5 +1,5 @@
 name=Scaled Wurm
-image=http://mtgimage.com/card/scaled%20wurm.jpg
+image=http://magiccards.info/scans/en/cns/178.jpg
 value=2.625
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Wurm
 cost={7}{G}
 pt=7/6
 timing=main
+oracle=NONE

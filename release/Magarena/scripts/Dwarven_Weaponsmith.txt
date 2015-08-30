@@ -1,5 +1,5 @@
 name=Dwarven Weaponsmith
-image=http://mtgimage.com/card/dwarven%20weaponsmith.jpg
+image=http://magiccards.info/scans/en/rv/144.jpg
 value=2.000
 rarity=U
 type=Creature

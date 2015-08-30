@@ -1,5 +1,5 @@
 name=Concordant Crossroads
-image=http://mtgimage.com/card/concordant%20crossroads.jpg
+image=http://magiccards.info/scans/en/me3/114.jpg
 value=4.575
 rarity=R
 type=World,Enchantment

@@ -1,9 +1,9 @@
 name=Spoils of Blood
-image=http://mtgimage.com/card/spoils%20of%20blood.jpg
+image=http://magiccards.info/scans/en/c14/30.jpg
 value=2.500
 rarity=R
 type=Instant
 cost={B}
 effect=Put an X/X black Horror creature token onto the battlefield, where X is the number of creatures that died this turn.
-timing=token
-oracle=Put an X/X black Horror creature token onto the battlefield, where X is the number of creatures that dies this turn.
+timing=removal
+oracle=Put an X/X black Horror creature token onto the battlefield, where X is the number of creatures that died this turn.

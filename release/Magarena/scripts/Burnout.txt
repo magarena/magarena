@@ -1,9 +1,9 @@
 name=Burnout
-image=http://mtgimage.com/set/me2/burnout.jpg
+image=http://magiccards.info/scans/en/me2/121.jpg
 value=3.950
 rarity=U
 type=Instant
 cost={1}{R}
 timing=counter
 requires_groovy_code
-oracle=Counter target instant spell if it's blue. Draw a card at the beginning of the next turn's upkeep.
+oracle=Counter target instant spell if it's blue.\nDraw a card at the beginning of the next turn's upkeep.

@@ -1,6 +1,6 @@
 name=Martyr's Cry
-image=http://mtgimage.com/card/martyr%27s%20cry.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me4/19.jpg
+value=3.413
 rarity=R
 type=Sorcery
 cost={W}{W}

@@ -1,5 +1,5 @@
 name=Crypt Ghast
-image=http://mtgimage.com/card/crypt%20ghast.jpg
+image=http://magiccards.info/scans/en/c14/139.jpg
 value=2.500
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Extort;\
         Whenever you tap a Swamp for mana, add {B} to your mana pool.
 timing=main
-oracle=Extort. Whenever you tap a Swamp for mana, add {B} to your mana pool.
+oracle=Extort\nWhenever you tap a Swamp for mana, add {B} to your mana pool.

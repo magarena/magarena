@@ -28,19 +28,25 @@ import javax.swing.SwingUtilities;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import magic.data.DeckType;
-import magic.data.DeckUtils;
+import magic.utility.DeckUtils;
+import magic.exception.InvalidDeckException;
 import magic.firemind.FiremindJsonReader;
 import magic.model.MagicDeck;
 import magic.ui.ScreenController;
+import magic.translate.UiString;
 import magic.ui.dialog.DecksFilterDialog;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.theme.Theme;
 import magic.ui.widget.FontsAndBorders;
-import magic.ui.MagicStyle;
+import magic.ui.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class DeckPicker extends JPanel {
+
+    // translatable strings
+    private static final String _S1 = "All Decks (%d)";
+    private static final String _S2 = "Filtered Decks (%d)";
 
     private static final Color HIGHLIGHT_BACK = MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND);
     private static final Color HIGHLIGHT_FORE = MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_FOREGROUND);
@@ -137,7 +143,7 @@ public class DeckPicker extends JPanel {
 
     final public void refreshContent() {
         // deck types combo
-        final DeckType deckTypes[] = DeckType.PREDEFINED_DECKS.toArray(new DeckType[DeckType.PREDEFINED_DECKS.size()]);
+        final DeckType deckTypes[] = DeckType.PREDEFINED_DECKS.toArray(new DeckType[0]);
         deckTypeJCombo.setModel(new DefaultComboBoxModel<>(deckTypes));
         deckTypeJCombo.setSelectedIndex(0);
         refreshDecksList();
@@ -177,7 +183,7 @@ public class DeckPicker extends JPanel {
         try (DirectoryStream<Path> ds = Files.newDirectoryStream(decksPath, "*.{dec}")) {
             final List<MagicDeck> decks = loadDecks(ds);
             sortDecksByFilename(decks);
-            return decks.toArray(new MagicDeck[decks.size()]);
+            return decks.toArray(new MagicDeck[0]);
         } catch (IOException e) {
            throw new RuntimeException(e);
         }        
@@ -210,7 +216,7 @@ public class DeckPicker extends JPanel {
     private MagicDeck loadDeck(final Path deckFilePath) {
         try {
             return DeckUtils.loadDeckFromFile(deckFilePath);
-        } catch (IOException ex) {
+        } catch (InvalidDeckException ex) {
             // Instead of prompting user with an error dialog for each
             // invalid deck found, create an empty deck flagged as invalid
             // with its description set to the error message. Invalid decks
@@ -311,11 +317,7 @@ public class DeckPicker extends JPanel {
         }
 
         public void setDecksCount(final int deckCount) {
-            if (deckFilter == null) {
-                filterButton.setText("All Decks (" + deckCount + ")");
-            } else {
-                filterButton.setText("Filtered Decks (" + deckCount + ")");
-            }
+            filterButton.setText(UiString.get(deckFilter == null ? _S1 : _S2, deckCount));
         }
 
     }

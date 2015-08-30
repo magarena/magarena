@@ -1,5 +1,5 @@
 name=Ticking Gnomes
-image=http://mtgimage.com/card/ticking%20gnomes.jpg
+image=http://magiccards.info/scans/en/ul/136.jpg
 value=2.656
 removal=1
 rarity=U
@@ -10,4 +10,4 @@ pt=3/3
 ability=echo {3};\
         Sacrifice SN: SN deals 1 damage to target creature or player.
 timing=main
-oracle=Echo {3}. Sacrifice Ticking Gnomes: Ticking Gnomes deals 1 damage to target creature or player.
+oracle=Echo {3}\nSacrifice Ticking Gnomes: Ticking Gnomes deals 1 damage to target creature or player.

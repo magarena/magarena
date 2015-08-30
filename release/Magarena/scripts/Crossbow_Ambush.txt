@@ -1,9 +1,10 @@
 name=Crossbow Ambush
-image=http://mtgimage.com/card/crossbow%20ambush.jpg
+image=http://magiccards.info/scans/en/sh/55.jpg
 value=3.147
 rarity=C
 type=Instant
 cost={G}
+ability=Cast SN with AI only if you control a creature.
 effect=Creatures you control gain reach until end of turn.
 timing=block
 oracle=Creatures you control gain reach until end of turn.

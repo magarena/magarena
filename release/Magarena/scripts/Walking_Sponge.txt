@@ -1,5 +1,5 @@
 name=Walking Sponge
-image=http://mtgimage.com/card/walking%20sponge.jpg
+image=http://magiccards.info/scans/en/ul/47.jpg
 value=3.905
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Ankh of Mishra
-image=http://mtgimage.com/card/ankh%20of%20mishra.jpg
+image=http://magiccards.info/scans/en/vma/263.jpg
 value=4.000
 rarity=R
 type=Artifact

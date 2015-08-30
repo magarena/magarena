@@ -1,5 +1,5 @@
 name=Jeska, Warrior Adept
-image=http://mtgimage.com/card/jeska%2C%20warrior%20adept.jpg
+image=http://magiccards.info/scans/en/ju/93.jpg
 value=4.026
 rarity=R
 type=Legendary,Creature
@@ -8,4 +8,4 @@ cost={2}{R}{R}
 pt=3/1
 ability=first strike;haste;{T}: SN deals 1 damage to target creature or player.
 timing=fmain
-oracle=First strike, haste. {T}: Jeska, Warrior Adept deals 1 damage to target creature or player.
+oracle=First strike, haste\n{T}: Jeska, Warrior Adept deals 1 damage to target creature or player.

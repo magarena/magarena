@@ -1,5 +1,5 @@
 name=Fabled Hero
-image=http://mtgimage.com/card/fabled%20hero.jpg
+image=http://magiccards.info/scans/en/ths/12.jpg
 value=3.690
 rarity=R
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{W}{W}
 pt=2/2
 ability=double strike;Whenever you cast a spell that targets SN, put a +1/+1 counter on SN.
 timing=main
-oracle=Double strike. Heroic — Whenever you cast a spell that targets Fabled Hero, put a +1/+1 counter on Fabled Hero.
+oracle=Double strike\nHeroic — Whenever you cast a spell that targets Fabled Hero, put a +1/+1 counter on Fabled Hero.

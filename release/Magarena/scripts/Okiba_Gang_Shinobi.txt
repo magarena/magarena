@@ -1,5 +1,5 @@
 name=Okiba-Gang Shinobi
-image=http://mtgimage.com/card/okiba%2Dgang%20shinobi.jpg
+image=http://magiccards.info/scans/en/pc2/35.jpg
 value=3.207
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/2
 ability=ninjutsu {3}{B};\
         Whenever SN deals combat damage to a player, that player discards two cards.
 timing=main
-oracle=Ninjutsu {3}{B}. Whenever Okiba-Gang Shinobi deals combat damage to a player, that player discards two cards.
+oracle=Ninjutsu {3}{B}\nWhenever Okiba-Gang Shinobi deals combat damage to a player, that player discards two cards.

@@ -1,11 +1,11 @@
 name=Accorder Paladin
-image=http://mtgimage.com/card/accorder%20paladin.jpg
+image=http://magiccards.info/scans/en/mbs/1.jpg
 value=3.876
 rarity=U
 type=Creature
 subtype=Human,Knight
 cost={1}{W}
 pt=3/1
-ability=battle cry
+ability=Battle cry
 timing=main
 oracle=Battle cry

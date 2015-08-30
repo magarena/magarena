@@ -1,9 +1,9 @@
 name=Brink of Madness
-image=http://mtgimage.com/card/brink%20of%20madness.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ul/50.jpg
+value=3.812
 rarity=R
 type=Enchantment
 cost={2}{B}{B}
 ability=At the beginning of your upkeep, if you have no cards in hand, sacrifice SN and target opponent discards his or her hand.
-timing=main
+timing=enchantment
 oracle=At the beginning of your upkeep, if you have no cards in hand, sacrifice Brink of Madness and target opponent discards his or her hand.

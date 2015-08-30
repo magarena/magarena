@@ -1,5 +1,5 @@
 name=Devoted Hero
-image=http://mtgimage.com/card/devoted%20hero.jpg
+image=http://magiccards.info/scans/en/st/13.jpg
 value=3.013
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Elf,Soldier
 cost={W}
 pt=1/2
 timing=main
+oracle=NONE

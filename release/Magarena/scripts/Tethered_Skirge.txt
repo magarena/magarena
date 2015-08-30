@@ -1,5 +1,5 @@
 name=Tethered Skirge
-image=http://mtgimage.com/card/tethered%20skirge.jpg
+image=http://magiccards.info/scans/en/ul/70.jpg
 value=2.078
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         Whenever SN becomes the target of a spell or ability, you lose 1 life.
 timing=main
-oracle=Flying. Whenever Tethered Skirge becomes the target of a spell or ability, you lose 1 life.
+oracle=Flying\nWhenever Tethered Skirge becomes the target of a spell or ability, you lose 1 life.

@@ -1,15 +1,15 @@
 package magic.ui.duel;
 
-import magic.ui.duel.animation.PlayCardAnimation;
 import magic.model.MagicCardList;
 import magic.model.event.MagicEvent;
 import magic.ui.SwingGameController;
+import magic.ui.duel.animation.PlayCardAnimation;
 import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfileType;
 import magic.ui.duel.viewer.BattlefieldViewer;
 import magic.ui.duel.viewer.HandGraveyardExileViewer;
 import magic.ui.duel.viewer.StackCombatViewer;
-import magic.ui.duel.viewer.StackViewer;
+import magic.ui.duel.sidebar.StackViewer;
 
 @SuppressWarnings("serial")
 public class TextModeBattlefieldPanel extends BattlefieldPanel {

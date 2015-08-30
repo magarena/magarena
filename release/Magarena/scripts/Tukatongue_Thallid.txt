@@ -1,5 +1,5 @@
 name=Tukatongue Thallid
-image=http://mtgimage.com/card/tukatongue%20thallid.jpg
+image=http://magiccards.info/scans/en/pc2/79.jpg
 value=2.931
 rarity=C
 type=Creature

@@ -1,0 +1,11 @@
+name=Goblin Tinkerer
+image=http://magiccards.info/scans/en/mr/180.jpg
+value=3.682
+rarity=C
+type=Creature
+subtype=Goblin,Artificer
+cost={1}{R}
+pt=1/2
+timing=main
+requires_groovy_code
+oracle={R}, {T}: Destroy target artifact. That artifact deals damage equal to its converted mana cost to Goblin Tinkerer.

@@ -1,7 +1,7 @@
 name=Clockwork Steed
-image=http://mtgimage.com/card/clockwork%20steed.jpg
-value=2.500
-rarity=C
+image=http://magiccards.info/scans/en/me2/205.jpg
+value=2.764
+rarity=U
 type=Artifact,Creature
 subtype=Horse
 cost={4}
@@ -10,5 +10,5 @@ ability=SN enters the battlefield with four +1/+0 counters on it.;\
         SN can't be blocked by artifact creatures.;\
         At end of combat, if SN attacked or blocked this combat, remove a +1/+0 counter from it.;\
         {X}, {T}: Put up to X +1/+0 counters on SN. This ability can't cause the total number of +1/+0 counters on SN to be greater than four. Activate this ability only during your upkeep.
-timing=main
-oracle=Clockwork Steed enters the battlefield with four +1/+0 counters on it. Clockwork Steed can't be blocked by artifact creatures. At end of combat, if Clockwork Steed attacked or blocked this combat, remove a +1/+0 counter from it. {X}, {T}: Put up to X +1/+0 counters on Clockwork Steed. This ability can't cause the total number of +1/+0 counters on Clockwork Steed to be greater than four. Activate this ability only during your upkeep.
+timing=artifact
+oracle=Clockwork Steed enters the battlefield with four +1/+0 counters on it.\nClockwork Steed can't be blocked by artifact creatures.\nAt end of combat, if Clockwork Steed attacked or blocked this combat, remove a +1/+0 counter from it.\n{X}, {T}: Put up to X +1/+0 counters on Clockwork Steed. This ability can't cause the total number of +1/+0 counters on Clockwork Steed to be greater than four. Activate this ability only during your upkeep.

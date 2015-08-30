@@ -1,9 +1,9 @@
 name=Impatience
-image=http://mtgimage.com/card/impatience.jpg
-value=2.500
+image=http://magiccards.info/scans/en/7e/197.jpg
+value=2.529
 rarity=R
 type=Enchantment
 cost={2}{R}
 ability=At the beginning of each player's end step, if that player didn't cast a spell this turn, SN deals 2 damage to him or her.
-timing=main
+timing=enchantment
 oracle=At the beginning of each player's end step, if that player didn't cast a spell this turn, Impatience deals 2 damage to him or her.

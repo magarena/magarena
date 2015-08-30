@@ -1,0 +1,13 @@
+name=Icefeather Aven
+image=http://magiccards.info/scans/en/ktk/178.jpg
+value=4.375
+rarity=U
+type=Creature
+subtype=Bird,Shaman
+cost={G}{U}
+pt=2/2
+ability=Flying;\
+        Morph {1}{G}{U};\
+        When SN is turned face up, you may return another target creature to its owner's hand.
+timing=main
+oracle=Flying\nMorph {1}{G}{U}\nWhen Icefeather Aven is turned face up, you may return another target creature to its owner's hand.

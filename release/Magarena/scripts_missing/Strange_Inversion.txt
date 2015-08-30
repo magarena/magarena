@@ -1,10 +1,10 @@
 name=Strange Inversion
-image=http://mtgimage.com/card/strange%20inversion.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/192.jpg
+value=2.217
 rarity=U
 type=Instant
 subtype=Arcane
 cost={2}{R}
 effect=Switch target creature's power and toughness until end of turn.~Splice onto Arcane {1}{R}
 timing=removal
-oracle=Switch target creature's power and toughness until end of turn. Splice onto Arcane {1}{R}
+oracle=Switch target creature's power and toughness until end of turn.\nSplice onto Arcane {1}{R}

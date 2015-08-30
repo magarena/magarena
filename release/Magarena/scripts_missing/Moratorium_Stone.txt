@@ -1,10 +1,10 @@
 name=Moratorium Stone
-image=http://mtgimage.com/card/moratorium%20stone.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gp/154.jpg
+value=3.371
 rarity=R
 type=Artifact
 cost={1}
 ability={2}, {T}: Exile target card from a graveyard.;\
         {2}{W}{B}, {T}, Sacrifice SN: Exile target nonland card from a graveyard, all other cards from graveyards with the same name as that card, and all permanents with that name.
-timing=main
-oracle={2}, {T}: Exile target card from a graveyard. {2}{W}{B}, {T}, Sacrifice Moratorium Stone: Exile target nonland card from a graveyard, all other cards from graveyards with the same name as that card, and all permanents with that name.
+timing=artifact
+oracle={2}, {T}: Exile target card from a graveyard.\n{2}{W}{B}, {T}, Sacrifice Moratorium Stone: Exile target nonland card from a graveyard, all other cards from graveyards with the same name as that card, and all permanents with that name.

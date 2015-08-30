@@ -1,10 +1,10 @@
 name=Delaying Shield
-image=http://mtgimage.com/card/delaying%20shield.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/17.jpg
+value=3.850
 rarity=R
 type=Enchantment
 cost={3}{W}
 ability=If damage would be dealt to you, put that many delay counters on SN instead.;\
         At the beginning of your upkeep, remove all delay counters from SN. For each delay counter removed this way, you lose 1 life unless you pay {1}{W}.
-timing=main
-oracle=If damage would be dealt to you, put that many delay counters on Delaying Shield instead. At the beginning of your upkeep, remove all delay counters from Delaying Shield. For each delay counter removed this way, you lose 1 life unless you pay {1}{W}.
+timing=enchantment
+oracle=If damage would be dealt to you, put that many delay counters on Delaying Shield instead.\nAt the beginning of your upkeep, remove all delay counters from Delaying Shield. For each delay counter removed this way, you lose 1 life unless you pay {1}{W}.

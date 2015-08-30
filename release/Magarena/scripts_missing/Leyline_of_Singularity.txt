@@ -1,10 +1,10 @@
 name=Leyline of Singularity
-image=http://mtgimage.com/card/leyline%20of%20singularity.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gp/29.jpg
+value=4.073
 rarity=R
 type=Enchantment
 cost={2}{U}{U}
 ability=If SN is in your opening hand, you may begin the game with it on the battlefield.;\
         All nonland permanents are legendary.
-timing=main
-oracle=If Leyline of Singularity is in your opening hand, you may begin the game with it on the battlefield. All nonland permanents are legendary.
+timing=enchantment
+oracle=If Leyline of Singularity is in your opening hand, you may begin the game with it on the battlefield.\nAll nonland permanents are legendary.

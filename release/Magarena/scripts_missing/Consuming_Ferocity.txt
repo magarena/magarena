@@ -1,6 +1,6 @@
 name=Consuming Ferocity
-image=http://mtgimage.com/card/consuming%20ferocity.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/166.jpg
+value=1.706
 rarity=U
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={1}{R}
 ability=Enchant non-Wall creature;\
         Enchanted creature gets +1/+0.;\
         At the beginning of your upkeep, put a +1/+0 counter on enchanted creature. If that creature has three or more +1/+0 counters on it, it deals damage equal to its power to its controller, then destroy that creature and it can't be regenerated.
-timing=main
-oracle=Enchant non-Wall creature. Enchanted creature gets +1/+0. At the beginning of your upkeep, put a +1/+0 counter on enchanted creature. If that creature has three or more +1/+0 counters on it, it deals damage equal to its power to its controller, then destroy that creature and it can't be regenerated.
+timing=aura
+oracle=Enchant non-Wall creature\nEnchanted creature gets +1/+0.\nAt the beginning of your upkeep, put a +1/+0 counter on enchanted creature. If that creature has three or more +1/+0 counters on it, it deals damage equal to its power to its controller, then destroy that creature and it can't be regenerated.

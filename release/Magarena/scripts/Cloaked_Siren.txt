@@ -1,5 +1,5 @@
 name=Cloaked Siren
-image=http://mtgimage.com/card/cloaked%20siren.jpg
+image=http://magiccards.info/scans/en/jou/32.jpg
 value=3.365
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/2
 ability=Flash;\
         Flying
 timing=flash
-oracle=Flash. Flying
+oracle=Flash\nFlying

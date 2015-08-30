@@ -1,12 +1,12 @@
 name=Zealous Conscripts
-image=http://mtgimage.com/card/zealous%20conscripts.jpg
+image=http://magiccards.info/scans/en/avr/166.jpg
 value=3.894
-ability=haste
 rarity=R
 type=Creature
 subtype=Human,Warrior
 cost={4}{R}
 pt=3/3
+ability=Haste;\
+        When SN enters the battlefield, gain control of target permanent until end of turn.~Untap *that permanent*.~*It* gains haste until end of turn.
 timing=main
-requires_groovy_code
-oracle=Haste. When Zealous Conscripts enters the battlefield, gain control of target permanent until end of turn. Untap that permanent. It gains haste until end of turn.
+oracle=Haste\nWhen Zealous Conscripts enters the battlefield, gain control of target permanent until end of turn. Untap that permanent. It gains haste until end of turn.

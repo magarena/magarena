@@ -1,9 +1,9 @@
 name=Implements of Sacrifice
-image=http://mtgimage.com/card/implements%20of%20sacrifice.jpg
-value=2.500
+image=http://magiccards.info/scans/en/fe/173.jpg
+value=2.819
 rarity=R
 type=Artifact
 cost={2}
 ability={1}, {T}, Sacrifice SN: Add two mana of any one color to your mana pool.
-timing=main
+timing=artifact
 oracle={1}, {T}, Sacrifice Implements of Sacrifice: Add two mana of any one color to your mana pool.

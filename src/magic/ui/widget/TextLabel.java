@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import magic.ui.IconImages;
-import magic.ui.MagicStyle;
+import magic.ui.utility.MagicStyle;
 
 public class TextLabel extends JPanel {
 
@@ -71,18 +71,17 @@ public class TextLabel extends JPanel {
         }
     }
 
-    private TComponent buildComponent(final String textPart,final boolean info) {
-
+    private TComponent buildComponent(final String textPart, final boolean info, final boolean isBlueInfo) {
         if (textPart.isEmpty()) {
             return null;
         }
         final TComponent component;
-        if (textPart.charAt(0)=='{') {
+        if (textPart.charAt(0)=='{' && TextImages.contains(textPart)) {
             component = new IconComponent(IconImages.getIcon(TextImages.getIcon(textPart)));
         } else if (info) {
-            component=new TextComponent(textPart,this,FontsAndBorders.FONT0,true);
+            component = new TextComponent(textPart,this,FontsAndBorders.FONT0,isBlueInfo);
         } else {
-            component=new TextComponent(textPart,this,FontsAndBorders.FONT1,false);
+            component = new TextComponent(textPart,this,FontsAndBorders.FONT1,false);
         }
         return component;
     }
@@ -92,31 +91,41 @@ public class TextLabel extends JPanel {
         text=text.replaceAll("\\s+"," ").trim()+' ';
         int startIndex=0;
         boolean info=false;
+        boolean isBlueInfo = false;
         for (int index=0;index<text.length();index++) {
-
             final char ch=text.charAt(index);
             if (ch==' ') {
-                addComponent(buildComponent(text.substring(startIndex,index),info));
+                addComponent(buildComponent(text.substring(startIndex,index),info,isBlueInfo));
                 addComponent(SPACE_LABEL);
                 startIndex=index+1;
             } else if (ch=='|') {
-                addComponent(buildComponent(text.substring(startIndex,index),info));
+                addComponent(buildComponent(text.substring(startIndex,index),info,isBlueInfo));
                 addComponent(BREAK_LABEL);
                 startIndex=index+1;
             } else if (ch=='{') {
-                addComponent(buildComponent(text.substring(startIndex,index),info));
+                addComponent(buildComponent(text.substring(startIndex,index),info,isBlueInfo));
                 startIndex=index;
             } else if (ch=='}') {
-                addComponent(buildComponent(text.substring(startIndex,index+1),info));
+                addComponent(buildComponent(text.substring(startIndex,index+1),info,isBlueInfo));
                 startIndex=index+1;
             } else if (ch=='(') {
-                addComponent(buildComponent(text.substring(startIndex,index),info));
+                addComponent(buildComponent(text.substring(startIndex,index),info,isBlueInfo));
                 startIndex=index;
-                info=true;
+                info = true;
+                isBlueInfo = true;
             } else if (ch==')') {
-                addComponent(buildComponent(text.substring(startIndex,index+1),info));
+                addComponent(buildComponent(text.substring(startIndex,index+1),info,isBlueInfo));
                 startIndex=index+1;
-                info=false;
+                info = false;
+                isBlueInfo = false;
+            } else if (ch=='[') {
+                addComponent(buildComponent(text.substring(startIndex,index),info,isBlueInfo));
+                startIndex=index+1;
+                info = true;
+            } else if (ch==']') {
+                addComponent(buildComponent(text.substring(startIndex,index),info,isBlueInfo));
+                startIndex=index+1;
+                info = false;
             }
         }
     }

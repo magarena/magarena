@@ -13,25 +13,25 @@ import magic.model.IGameController;
 import magic.model.MagicSource;
 import magic.model.choice.MagicPlayChoiceResult;
 import magic.ui.SwingGameController;
+import magic.translate.UiString;
 import magic.ui.duel.viewer.UserActionPanel;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TextLabel;
 
+@SuppressWarnings("serial")
 public class PlayChoicePanel extends JPanel implements ActionListener {
 
-    private static final long serialVersionUID = 1L;
+    // translatable strings
+    private static final String _S1 = "Choose which ability to play.";
 
-    private static final String MESSAGE="Choose which ability to play.";
+    private static final String MESSAGE = UiString.get(_S1);
     private static final Dimension BUTTON_DIMENSION=new Dimension(70,25);
 
     private final SwingGameController controller;
     private final List<MagicPlayChoiceResult> results;
     private MagicPlayChoiceResult result;
 
-    public PlayChoicePanel(
-            final IGameController controller,
-            final MagicSource source,
-            final List<MagicPlayChoiceResult> results) {
+    public PlayChoicePanel(final IGameController controller, final MagicSource source, final List<MagicPlayChoiceResult> results) {
 
         this.controller=(SwingGameController) controller;
         this.results=results;

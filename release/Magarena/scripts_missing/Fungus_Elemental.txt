@@ -1,6 +1,6 @@
 name=Fungus Elemental
-image=http://mtgimage.com/card/fungus%20elemental.jpg
-value=2.500
+image=http://magiccards.info/scans/en/wl/70.jpg
+value=2.869
 rarity=R
 type=Creature
 subtype=Fungus,Elemental

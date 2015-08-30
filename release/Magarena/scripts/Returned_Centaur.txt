@@ -1,6 +1,6 @@
 name=Returned Centaur
-image=http://mtgimage.com/card/returned%20centaur.jpg
-value=3.016
+image=http://magiccards.info/scans/en/ori/116.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Zombie,Centaur

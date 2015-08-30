@@ -1,5 +1,5 @@
 name=Faithless Looting
-image=http://mtgimage.com/card/faithless%20looting.jpg
+image=http://magiccards.info/scans/en/c14/175.jpg
 value=4.347
 rarity=C
 type=Sorcery
@@ -7,4 +7,4 @@ cost={R}
 effect=Draw two cards, then discard two cards.
 ability=Flashback {2}{R}
 timing=draw
-oracle=Draw two cards, then discard two cards. Flashback {2}{R}
+oracle=Draw two cards, then discard two cards.\nFlashback {2}{R}

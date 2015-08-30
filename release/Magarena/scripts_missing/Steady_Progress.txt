@@ -1,9 +1,9 @@
 name=Steady Progress
-image=http://mtgimage.com/card/steady%20progress.jpg
+image=http://magiccards.info/scans/en/som/45.jpg
 value=2.500
 rarity=C
 type=Instant
 cost={2}{U}
 effect=Proliferate.~Draw a card.
 timing=removal
-oracle=Proliferate. Draw a card.
+oracle=Proliferate.\nDraw a card.

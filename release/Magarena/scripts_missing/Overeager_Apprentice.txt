@@ -1,5 +1,5 @@
 name=Overeager Apprentice
-image=http://mtgimage.com/card/overeager%20apprentice.jpg
+image=http://magiccards.info/scans/en/dvd/35.jpg
 value=2.500
 rarity=C
 type=Creature

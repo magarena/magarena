@@ -1,5 +1,5 @@
 name=Conjurer's Bauble
-image=http://mtgimage.com/card/conjurer's%20bauble.jpg
+image=http://magiccards.info/scans/en/5dn/112.jpg
 value=3.636
 rarity=C
 type=Artifact

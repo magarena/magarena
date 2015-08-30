@@ -1,7 +1,7 @@
 name=Bogardan Hellkite
-image=http://mtgimage.com/card/bogardan%20hellkite.jpg
+image=http://magiccards.info/scans/en/c14/173.jpg
 value=2.500
-rarity=R
+rarity=M
 type=Creature
 subtype=Dragon
 cost={6}{R}{R}
@@ -10,4 +10,4 @@ ability=Flash;\
         Flying;\
         When SN enters the battlefield, it deals 5 damage divided as you choose among any number of target creatures and/or players.
 timing=main
-oracle=Flash. Flying. When Bogardan Hellkite enters the battlefield, it deals 5 damage divided as you choose among any number of target creatures and/or players.
+oracle=Flash\nFlying\nWhen Bogardan Hellkite enters the battlefield, it deals 5 damage divided as you choose among any number of target creatures and/or players.

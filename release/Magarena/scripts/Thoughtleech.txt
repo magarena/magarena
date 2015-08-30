@@ -1,9 +1,9 @@
 name=Thoughtleech
-image=http://mtgimage.com/card/thoughtleech.jpg
+image=http://magiccards.info/scans/en/7e/274.jpg
 value=3.159
 rarity=U
 type=Enchantment
 cost={G}{G}
+ability=Whenever an Island an opponent controls becomes tapped, you may gain 1 life.
 timing=main
-requires_groovy_code
 oracle=Whenever an Island an opponent controls becomes tapped, you may gain 1 life.

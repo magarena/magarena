@@ -1,0 +1,12 @@
+name=Stormcrag Elemental
+image=http://magiccards.info/scans/en/dtk/158.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elemental
+cost={5}{R}
+pt=5/5
+ability=Trample;\
+        Megamorph {4}{R}{R}
+timing=main
+oracle=Trample\nMegamorph {4}{R}{R}

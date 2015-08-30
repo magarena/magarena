@@ -1,6 +1,6 @@
 name=Serra Bestiary
-image=http://mtgimage.com/card/serra%20bestiary.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me4/27.jpg
+value=2.339
 rarity=C
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={W}{W}
 ability=Enchant creature;\
         At the beginning of your upkeep, sacrifice SN unless you pay {W}{W}.;\
         Enchanted creature can't attack or block, and its activated abilities with {T} in their costs can't be activated.
-timing=main
-oracle=Enchant creature. At the beginning of your upkeep, sacrifice Serra Bestiary unless you pay {W}{W}. Enchanted creature can't attack or block, and its activated abilities with {T} in their costs can't be activated.
+timing=aura
+oracle=Enchant creature\nAt the beginning of your upkeep, sacrifice Serra Bestiary unless you pay {W}{W}.\nEnchanted creature can't attack or block, and its activated abilities with {T} in their costs can't be activated.

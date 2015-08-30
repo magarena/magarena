@@ -1,5 +1,5 @@
 name=Karplusan Yeti
-image=http://mtgimage.com/card/karplusan%20yeti.jpg
+image=http://magiccards.info/scans/en/9e/198.jpg
 value=3.468
 rarity=R
 type=Creature

@@ -1,5 +1,5 @@
 name=Treetop Bracers
-image=http://mtgimage.com/card/treetop%20bracers.jpg
+image=http://magiccards.info/scans/en/10e/304.jpg
 value=2.970
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={1}{G}
 ability=Enchanted creature gets +1/+1 and can't be blocked except by creatures with flying.
 timing=aura
 enchant=unblockable,pos creature
-oracle=Enchant creature. Enchanted creature gets +1/+1 and can't be blocked except by creatures with flying.
+oracle=Enchant creature\nEnchanted creature gets +1/+1 and can't be blocked except by creatures with flying.

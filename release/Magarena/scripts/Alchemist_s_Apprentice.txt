@@ -1,5 +1,5 @@
 name=Alchemist's Apprentice
-image=http://mtgimage.com/card/alchemist%27s%20apprentice.jpg
+image=http://magiccards.info/scans/en/avr/42.jpg
 value=2.697
 rarity=C
 type=Creature

@@ -1,9 +1,0 @@
-name=Light of Sanction
-image=http://mtgimage.com/card/light%20of%20sanction.jpg
-value=2.500
-rarity=R
-type=Enchantment
-cost={1}{W}{W}
-ability=Prevent all damage that would be dealt to creatures you control by sources you control.
-timing=main
-oracle=Prevent all damage that would be dealt to creatures you control by sources you control.

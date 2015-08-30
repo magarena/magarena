@@ -11,6 +11,10 @@ import magic.model.event.MagicPlayAuraEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.event.MagicTiming;
 import magic.model.mstatic.MagicStatic;
+import magic.exception.ScriptParseException;
+
+import java.text.SimpleDateFormat;
+import java.text.ParseException;
 
 public enum CardProperty {
 
@@ -75,18 +79,33 @@ public enum CardProperty {
             card.setAbilityProperty(value);
         }
     },
-    LOAD_ABILITY() {
+    LOYALTY() {
         public void setProperty(final MagicCardDefinition card, final String value) {
-            final String[] names=value.split(SEMI);
+            card.setStartingLoyalty(Integer.parseInt(value));
+        }
+    },
+    LOAD_ABILITY_COMMA() {
+        public void setProperty(final MagicCardDefinition card, final String value) {
+            final String[] names=value.split(COMMA);
             for (final String name : names) {
                 MagicAbility.getAbility(name).addAbility(card, name);
             }
         }
     },
-    GIVEN_PT() {
+    LOAD_ABILITY() {
         public void setProperty(final MagicCardDefinition card, final String value) {
-            final String[] pt = value.replace('+','0').split("/");
-            card.add(MagicStatic.genPTStatic(Integer.parseInt(pt[0]), Integer.parseInt(pt[1])));
+            final String[] names=value.split(SEMI);
+            for (final String name : names) {
+                try {
+                    MagicAbility.getAbility(name).addAbility(card, name);
+                } catch (final ScriptParseException origPE) {
+                    try {
+                        LOAD_ABILITY_COMMA.setProperty(card, name);
+                    } catch (final ScriptParseException newPE) {
+                        throw origPE;
+                    }
+                }
+            }
         }
     },
     SET_PT() {
@@ -97,7 +116,7 @@ public enum CardProperty {
     },
     GIVEN_ABILITY() {
         public void setProperty(final MagicCardDefinition card, final String value) {
-            card.add(MagicStatic.genABStatic(MagicAbility.getAbilityList(value.split(SEMI))));
+            card.add(MagicStatic.linkedABStatic(MagicAbility.getAbilityList(value.split(SEMI))));
         }
     },
     GIVEN_SUBTYPE() {
@@ -130,11 +149,13 @@ public enum CardProperty {
             card.setTiming(MagicTiming.getTimingFor(value));
         }
     },
-    IGNORE() {
+    IMAGE_UPDATED() {
         public void setProperty(final MagicCardDefinition card, final String value) {
-            final String[] sizes=value.split(COMMA);
-            for (final String size : sizes) {
-                card.addIgnore(Long.parseLong(size));
+            final SimpleDateFormat format = new SimpleDateFormat(IMAGE_UPDATED_FORMAT);
+            try {
+                card.setImageUpdated(format.parse(value));
+            } catch (final ParseException pe) {
+                throw new RuntimeException(pe);
             }
         }
     },
@@ -157,9 +178,9 @@ public enum CardProperty {
     NAME() {
         public void setProperty(final MagicCardDefinition card, final String value) {
             assert card.getName() == null;
-            assert card.getFullName() == null;
+            assert card.getDistinctName() == null;
             card.setName(value);
-            card.setFullName(value);
+            card.setDistinctName(value);
         }
     },
     EFFECT() {
@@ -169,7 +190,7 @@ public enum CardProperty {
     },
     LOAD_EFFECT() {
         public void setProperty(final MagicCardDefinition card, final String value) {
-            card.add(MagicSpellCardEvent.create(value));
+            card.add(MagicSpellCardEvent.create(card, value));
         }
     },
     REQUIRES_GROOVY_CODE() {
@@ -179,7 +200,7 @@ public enum CardProperty {
     },
     LOAD_GROOVY_CODE() {
         public void setProperty(final MagicCardDefinition card, final String value) {
-            final String cardName = !value.isEmpty() ? value : card.getFullName();
+            final String cardName = !value.isEmpty() ? value : card.getDistinctName();
             final String[] names = cardName.split(SEMI);
             for (final String name : names) {
                 CardDefinitions.addCardSpecificGroovyCode(card, name);
@@ -207,6 +228,8 @@ public enum CardProperty {
         }
     }
     ;
+
+    public static final String IMAGE_UPDATED_FORMAT = "yyyy-MM-dd";
 
     private static final String SEMI = "\\s*;\\s*";
     private static final String COMMA = "\\s*,\\s*";

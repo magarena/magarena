@@ -1,5 +1,5 @@
 name=Thunder-Thrash Elder
-image=http://mtgimage.com/card/thunder%2Dthrash%20elder.jpg
+image=http://magiccards.info/scans/en/pc2/53.jpg
 value=2.744
 rarity=U
 type=Creature

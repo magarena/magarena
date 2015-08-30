@@ -1,5 +1,5 @@
 name=Æther Figment
-image=http://mtgimage.com/card/aether%20figment.jpg
+image=http://magiccards.info/scans/en/ddm/5.jpg
 value=3.833
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=SN can't be blocked.;kicker {3}
 timing=main
 requires_groovy_code
-oracle=Kicker {3}. Æther Figment can't be blocked. If Æther Figment was kicked, it enters the battlefield with two +1/+1 counters on it.
+oracle=Kicker {3}\nÆther Figment can't be blocked.\nIf Æther Figment was kicked, it enters the battlefield with two +1/+1 counters on it.

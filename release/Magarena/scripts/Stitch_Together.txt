@@ -1,9 +1,9 @@
 name=Stitch Together
-image=http://mtgimage.com/card/stitch%20together.jpg
+image=http://magiccards.info/scans/en/cmd/102.jpg
 value=4.213
 rarity=U
 type=Sorcery
 cost={B}{B}
 timing=draw
 requires_groovy_code
-oracle=Return target creature card from your graveyard to your hand. Threshold — Return that card from your graveyard to the battlefield instead if seven or more cards are in your graveyard.
+oracle=Return target creature card from your graveyard to your hand.\nThreshold — Return that card from your graveyard to the battlefield instead if seven or more cards are in your graveyard.

@@ -1,5 +1,5 @@
 name=Viashino Slasher
-image=http://mtgimage.com/card/viashino%20slasher.jpg
+image=http://magiccards.info/scans/en/rav/149.jpg
 value=1.462
 rarity=C
 type=Creature

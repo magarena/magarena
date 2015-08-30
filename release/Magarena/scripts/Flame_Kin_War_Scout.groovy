@@ -15,10 +15,10 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicSacrificeAction sac = new MagicSacrificeAction(event.getPermanent());
+            final SacrificeAction sac = new SacrificeAction(event.getPermanent());
             game.doAction(sac);
             if (sac.isValid()) {
-                game.doAction(new MagicDealDamageAction(
+                game.doAction(new DealDamageAction(
                     event.getPermanent(),
                     event.getRefPermanent(),
                     4

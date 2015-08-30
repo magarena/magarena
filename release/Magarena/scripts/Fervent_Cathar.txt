@@ -1,5 +1,5 @@
 name=Fervent Cathar
-image=http://mtgimage.com/card/fervent%20cathar.jpg
+image=http://magiccards.info/scans/en/avr/135.jpg
 value=2.564
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=Haste;\
         When SN enters the battlefield, target creature can't block this turn.
 timing=fmain
-oracle=Haste. When Fervent Cathar enters the battlefield, target creature can't block this turn.
+oracle=Haste\nWhen Fervent Cathar enters the battlefield, target creature can't block this turn.

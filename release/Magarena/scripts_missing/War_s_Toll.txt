@@ -1,10 +1,10 @@
 name=War's Toll
-image=http://mtgimage.com/card/war%27s%20toll.jpg
-value=2.500
+image=http://magiccards.info/scans/en/di/77.jpg
+value=3.778
 rarity=R
 type=Enchantment
 cost={3}{R}
 ability=Whenever an opponent taps a land for mana, tap all lands that player controls.;\
         If a creature an opponent controls attacks, all creatures that opponent controls attack if able.
-timing=main
-oracle=Whenever an opponent taps a land for mana, tap all lands that player controls. If a creature an opponent controls attacks, all creatures that opponent controls attack if able.
+timing=enchantment
+oracle=Whenever an opponent taps a land for mana, tap all lands that player controls.\nIf a creature an opponent controls attacks, all creatures that opponent controls attack if able.

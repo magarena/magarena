@@ -12,17 +12,17 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
+            final MagicPlayer player = event.getPlayer();
             final MagicEvent sac = new MagicSacrificePermanentEvent(
                 event.getPermanent(),
-                event.getPlayer(),
-                MagicTargetChoice.SACRIFICE_ARTIFACT
+                player,
+                SACRIFICE_ARTIFACT
             );
             if (event.isYes() && sac.isSatisfied()) {
                 game.addEvent(sac);
             } else {
-                game.doAction(new MagicTapAction(event.getPermanent()));
-                final MagicDamage damage = new MagicDamage(event.getSource(),event.getPlayer(),2)
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new TapAction(event.getPermanent()));
+                game.doAction(new DealDamageAction(event.getSource(),player,2));
             }
         }
     }

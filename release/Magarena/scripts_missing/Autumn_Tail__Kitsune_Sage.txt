@@ -1,11 +1,13 @@
 name=Autumn-Tail, Kitsune Sage
-image=http://mtgimage.com/card/autumn-tail%2C%20kitsune%20sage.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/28b.jpg
+value=3.700
 rarity=R
 type=Legendary,Creature
 subtype=Fox,Wizard
 cost={3}{W}
 pt=4/5
 ability={1}: Attach target Aura attached to a creature to another creature.
+flip=Kitsune Mystic
 timing=main
+hidden
 oracle={1}: Attach target Aura attached to a creature to another creature.

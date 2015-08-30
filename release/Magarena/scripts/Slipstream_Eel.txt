@@ -1,5 +1,5 @@
 name=Slipstream Eel
-image=http://mtgimage.com/card/slipstream%20eel.jpg
+image=http://magiccards.info/scans/en/cmd/62.jpg
 value=1.750
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=6/6
 ability=SN can't attack unless defending player controls an Island.;\
         Cycling {1}{U}
 timing=main
-oracle=Slipstream Eel can't attack unless defending player controls an Island. Cycling {1}{U}
+oracle=Slipstream Eel can't attack unless defending player controls an Island.\nCycling {1}{U}

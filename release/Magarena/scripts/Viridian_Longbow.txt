@@ -1,5 +1,5 @@
 name=Viridian Longbow
-image=http://mtgimage.com/card/viridian%20longbow.jpg
+image=http://magiccards.info/scans/en/mi/270.jpg
 value=3.978
 rarity=C
 type=Artifact
@@ -8,4 +8,4 @@ cost={1}
 ability=Equipped creature has "{T}:SN deals 1 damage to target creature or player.";\
         Equip {3}
 timing=equipment
-oracle=Equipped creature has "{T}: This creature deals 1 damage to target creature or player.". Equip {3}
+oracle=Equipped creature has "{T}: This creature deals 1 damage to target creature or player."\nEquip {3}

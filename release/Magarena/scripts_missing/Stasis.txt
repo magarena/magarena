@@ -1,10 +1,10 @@
 name=Stasis
-image=http://mtgimage.com/card/stasis.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me4/64.jpg
+value=4.546
 rarity=R
 type=Enchantment
 cost={1}{U}
 ability=Players skip their untap steps.;\
         At the beginning of your upkeep, sacrifice SN unless you pay {U}.
-timing=main
-oracle=Players skip their untap steps. At the beginning of your upkeep, sacrifice Stasis unless you pay {U}.
+timing=enchantment
+oracle=Players skip their untap steps.\nAt the beginning of your upkeep, sacrifice Stasis unless you pay {U}.

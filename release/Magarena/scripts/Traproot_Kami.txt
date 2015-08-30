@@ -1,5 +1,5 @@
 name=Traproot Kami
-image=http://mtgimage.com/card/traproot%20kami.jpg
+image=http://magiccards.info/scans/en/bok/147.jpg
 value=4.108
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=0/*
 ability=Defender; reach;\
         SN's toughness is equal to the number of Forests on the battlefield.
 timing=main
-oracle=Defender; reach. Traproot Kami's toughness is equal to the number of Forests on the battlefield.
+oracle=Defender, reach\nTraproot Kami's toughness is equal to the number of Forests on the battlefield.

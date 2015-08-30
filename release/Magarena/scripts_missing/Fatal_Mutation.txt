@@ -1,11 +1,11 @@
 name=Fatal Mutation
-image=http://mtgimage.com/card/fatal%20mutation.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sc/66.jpg
+value=1.306
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={B}
 ability=Enchant creature;\
         When enchanted creature is turned face up, destroy it. It can't be regenerated.
-timing=main
-oracle=Enchant creature. When enchanted creature is turned face up, destroy it. It can't be regenerated.
+timing=aura
+oracle=Enchant creature\nWhen enchanted creature is turned face up, destroy it. It can't be regenerated.

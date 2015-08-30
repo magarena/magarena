@@ -1,11 +1,11 @@
 name=Ben-Ben, Akki Hermit
-image=http://mtgimage.com/card/ben-ben%2C%20akki%20hermit.jpg
+image=http://magiccards.info/scans/en/chk/157.jpg
 value=2.685
 rarity=R
 type=Legendary,Creature
 subtype=Goblin,Shaman
 cost={2}{R}{R}
 pt=1/1
+ability={T}: SN deals damage to target attacking creature equal to the number of untapped Mountains you control.
 timing=main
-requires_groovy_code
 oracle={T}: Ben-Ben, Akki Hermit deals damage to target attacking creature equal to the number of untapped Mountains you control.

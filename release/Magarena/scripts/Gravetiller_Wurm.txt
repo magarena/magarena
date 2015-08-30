@@ -1,5 +1,5 @@
 name=Gravetiller Wurm
-image=http://mtgimage.com/card/gravetiller%20wurm.jpg
+image=http://magiccards.info/scans/en/dka/116.jpg
 value=3.427
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=trample
 timing=smain
 requires_groovy_code
-oracle=Trample. Morbid — Gravetiller Wurm enters the battlefield with four +1/+1 counters on it if a creature died this turn.
+oracle=Trample\nMorbid — Gravetiller Wurm enters the battlefield with four +1/+1 counters on it if a creature died this turn.

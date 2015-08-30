@@ -1,5 +1,5 @@
 name=Defender of the Order
-image=http://mtgimage.com/card/defender%20of%20the%20order.jpg
+image=http://magiccards.info/scans/en/le/11.jpg
 value=2.738
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=2/4
 ability=Morph {W}{W};\
         When SN is turned face up, creatures you control get +0/+2 until end of turn.
 timing=main
-oracle=Morph {W}{W}. When Defender of the Order is turned face up, creatures you control get +0/+2 until end of turn.
+oracle=Morph {W}{W}\nWhen Defender of the Order is turned face up, creatures you control get +0/+2 until end of turn.

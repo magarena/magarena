@@ -1,5 +1,5 @@
 name=Fire Diamond
-image=http://mtgimage.com/card/fire%20diamond.jpg
+image=http://magiccards.info/scans/en/c14/240.jpg
 value=3.167
 rarity=U
 type=Artifact
@@ -7,4 +7,4 @@ cost={2}
 ability=SN enters the battlefield tapped.;\
         {T}: Add {R} to your mana pool.
 timing=artifact
-oracle=Fire Diamond enters the battlefield tapped. {T}: Add {R} to your mana pool.
+oracle=Fire Diamond enters the battlefield tapped.\n{T}: Add {R} to your mana pool.

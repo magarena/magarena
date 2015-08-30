@@ -1,5 +1,5 @@
 name=Mana Chains
-image=http://mtgimage.com/card/mana%20chains.jpg
+image=http://magiccards.info/scans/en/wl/41.jpg
 value=3.980
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={U}
 ability=Enchanted creature has "Cumulative upkeep {1}"
 enchant=sacrifice,neg creature
 timing=aura
-oracle=Enchant creature. Enchanted creature has "Cumulative upkeep {1}."
+oracle=Enchant creature\nEnchanted creature has "Cumulative upkeep {1}."

@@ -10,10 +10,8 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayer player = event.getPlayer();
-            final List<MagicPermanent> permanents = game.filterPermanents(player, MagicTargetFilterFactory.PERMANENT_YOU_OWN);
-            for (final MagicPermanent permanent : permanents) {
-                game.doAction(new MagicGainControlAction(player, permanent));
+            PERMANENT_YOU_OWN.filter(event) each {
+                game.doAction(new GainControlAction(event.getPlayer(), it));
             }
         }
     }

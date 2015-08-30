@@ -1,0 +1,11 @@
+name=Electryte
+image=http://magiccards.info/scans/en/us/183.jpg
+value=2.929
+rarity=R
+type=Creature
+subtype=Beast
+cost={3}{R}{R}
+pt=3/3
+timing=main
+requires_groovy_code
+oracle=Whenever Electryte deals combat damage to defending player, it deals damage equal to its power to each blocking creature.

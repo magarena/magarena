@@ -1,5 +1,6 @@
 name=Vizzerdrix
-image=http://mtgimage.com/card/vizzerdrix.jpg
+image=http://magiccards.info/scans/en/9eb/7.jpg
+image_updated=2015-05-22
 value=2.175
 rarity=R
 type=Creature
@@ -7,3 +8,4 @@ subtype=Rabbit,Beast
 cost={6}{U}
 pt=6/6
 timing=main
+oracle=NONE

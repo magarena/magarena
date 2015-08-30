@@ -1,0 +1,11 @@
+name=Mirror Mockery
+image=http://magiccards.info/scans/en/dtk/62.jpg
+value=2.500
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={1}{U}
+ability=Enchant creature;\
+        Whenever enchanted creature attacks, you may put a token onto the battlefield that's a copy of that creature. Exile that token at end of combat.
+timing=aura
+oracle=Enchant creature\nWhenever enchanted creature attacks, you may put a token onto the battlefield that's a copy of that creature. Exile that token at end of combat.

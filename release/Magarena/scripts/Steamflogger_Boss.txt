@@ -1,0 +1,11 @@
+name=Steamflogger Boss
+image=http://magiccards.info/scans/en/fut/121.jpg
+value=3.750
+rarity=R
+type=Creature
+subtype=Goblin,Rigger
+cost={3}{R}
+pt=3/3
+ability=Other Rigger creatures you control get +1/+0 and have haste.
+timing=main
+oracle=Other Rigger creatures you control get +1/+0 and have haste.\nIf a Rigger you control would assemble a Contraption, it assembles two Contraptions instead.

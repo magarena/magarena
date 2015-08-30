@@ -1,6 +1,6 @@
 name=Chief of the Edge
-image=http://mtgimage.com/card/chief%20of%20the%20edge.jpg
-value=3.500
+image=http://magiccards.info/scans/en/ktk/169.jpg
+value=3.625
 rarity=U
 type=Creature
 subtype=Human,Warrior

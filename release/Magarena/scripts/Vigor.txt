@@ -1,5 +1,5 @@
 name=Vigor
-image=http://mtgimage.com/card/vigor.jpg
+image=http://magiccards.info/scans/en/lw/240.jpg
 value=4.263
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=trample;\
         When SN is put into a graveyard from anywhere, shuffle it into its owner's library.
 timing=fmain
 requires_groovy_code
-oracle=Trample. If damage would be dealt to a creature you control other than Vigor, prevent that damage. Put a +1/+1 counter on that creature for each 1 damage prevented this way. When Vigor is put into a graveyard from anywhere, shuffle it into its owner's library.
+oracle=Trample\nIf damage would be dealt to a creature you control other than Vigor, prevent that damage. Put a +1/+1 counter on that creature for each 1 damage prevented this way.\nWhen Vigor is put into a graveyard from anywhere, shuffle it into its owner's library.

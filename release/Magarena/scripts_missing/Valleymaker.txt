@@ -1,6 +1,6 @@
 name=Valleymaker
-image=http://mtgimage.com/card/valleymaker.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/221.jpg
+value=3.015
 rarity=R
 type=Creature
 subtype=Giant,Shaman
@@ -9,4 +9,4 @@ pt=5/5
 ability={T}, Sacrifice a Mountain: SN deals 3 damage to target creature.;\
         {T}, Sacrifice a Forest: Choose a player. That player adds {G}{G}{G} to his or her mana pool.
 timing=main
-oracle={T}, Sacrifice a Mountain: Valleymaker deals 3 damage to target creature. {T}, Sacrifice a Forest: Choose a player. That player adds {G}{G}{G} to his or her mana pool.
+oracle={T}, Sacrifice a Mountain: Valleymaker deals 3 damage to target creature.\n{T}, Sacrifice a Forest: Choose a player. That player adds {G}{G}{G} to his or her mana pool.

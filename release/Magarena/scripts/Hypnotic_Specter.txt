@@ -1,5 +1,5 @@
 name=Hypnotic Specter
-image=http://mtgimage.com/card/hypnotic%20specter.jpg
+image=http://magiccards.info/scans/en/m10/100.jpg
 value=4.571
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=flying;\
         Whenever SN deals damage to an opponent, that player discards a card at random.
 timing=main
-oracle=Flying. Whenever Hypnotic Specter deals damage to an opponent, that player discards a card at random.
+oracle=Flying\nWhenever Hypnotic Specter deals damage to an opponent, that player discards a card at random.

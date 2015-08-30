@@ -1,5 +1,5 @@
 name=Frostwind Invoker
-image=http://mtgimage.com/card/frostwind%20invoker.jpg
+image=http://magiccards.info/scans/en/roe/68.jpg
 value=2.289
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={4}{U}
 pt=3/3
 ability=flying;{8}: Creatures you control gain flying until end of turn.
 timing=main
-oracle=Flying. {8}: Creatures you control gain flying until end of turn.
+oracle=Flying\n{8}: Creatures you control gain flying until end of turn.

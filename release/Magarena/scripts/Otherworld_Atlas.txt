@@ -1,5 +1,5 @@
 name=Otherworld Atlas
-image=http://mtgimage.com/card/otherworld%20atlas.jpg
+image=http://magiccards.info/scans/en/avr/219.jpg
 value=2.975
 rarity=R
 type=Artifact
@@ -7,4 +7,4 @@ cost={4}
 timing=artifact
 ability={T}:Put a charge counter on SN.
 requires_groovy_code
-oracle={T}: Put a charge counter on Otherworld Atlas. {T}: Each player draws a card for each charge counter on Otherworld Atlas.
+oracle={T}: Put a charge counter on Otherworld Atlas.\n{T}: Each player draws a card for each charge counter on Otherworld Atlas.

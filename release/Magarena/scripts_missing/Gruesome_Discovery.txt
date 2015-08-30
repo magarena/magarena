@@ -1,9 +1,9 @@
 name=Gruesome Discovery
-image=http://mtgimage.com/card/gruesome%20discovery.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dka/66.jpg
+value=2.817
 rarity=C
 type=Sorcery
 cost={2}{B}{B}
 effect=Target player discards two cards.~If a creature died this turn, instead that player reveals his or her hand, you choose two cards from it, then that player discards those cards.
 timing=main
-oracle=Target player discards two cards. Morbid — If a creature died this turn, instead that player reveals his or her hand, you choose two cards from it, then that player discards those cards.
+oracle=Target player discards two cards.\nMorbid — If a creature died this turn, instead that player reveals his or her hand, you choose two cards from it, then that player discards those cards.

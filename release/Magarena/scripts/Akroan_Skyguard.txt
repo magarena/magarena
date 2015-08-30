@@ -1,11 +1,12 @@
 name=Akroan Skyguard
-image=http://mtgimage.com/card/akroan%20skyguard.jpg
+image=http://magiccards.info/scans/en/bng/3.jpg
 value=3.764
 rarity=C
 type=Creature
 subtype=Human,Soldier
 cost={1}{W}
 pt=1/1
-ability=flying;Whenever you cast a spell that targets SN, put a +1/+1 counter on SN.
+ability=Flying;\
+        Whenever you cast a spell that targets SN, put a +1/+1 counter on SN.
 timing=main
-oracle=Flying. Heroic — Whenever you cast a spell that targets Akroan Skyguard, put a +1/+1 counter on Akroan Skyguard.
+oracle=Flying\nHeroic — Whenever you cast a spell that targets Akroan Skyguard, put a +1/+1 counter on Akroan Skyguard.

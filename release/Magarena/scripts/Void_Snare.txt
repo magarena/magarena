@@ -1,5 +1,5 @@
 name=Void Snare
-image=http://mtgimage.com/card/void%20snare.jpg
+image=http://magiccards.info/scans/en/m15/82.jpg
 value=3.722
 rarity=C
 type=Sorcery

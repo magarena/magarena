@@ -1,6 +1,6 @@
 name=Floating-Dream Zubera
-image=http://mtgimage.com/card/floating-dream%20zubera.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/61.jpg
+value=3.194
 rarity=C
 type=Creature
 subtype=Zubera,Spirit

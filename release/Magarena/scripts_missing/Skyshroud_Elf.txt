@@ -1,5 +1,5 @@
 name=Skyshroud Elf
-image=http://mtgimage.com/card/skyshroud%20elf.jpg
+image=http://magiccards.info/scans/en/tp/149.jpg
 value=2.500
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability={T}: Add {G} to your mana pool.;\
         {1}: Add {R} or {W} to your mana pool.
 timing=main
-oracle={T}: Add {G} to your mana pool. {1}: Add {R} or {W} to your mana pool.
+oracle={T}: Add {G} to your mana pool.\n{1}: Add {R} or {W} to your mana pool.

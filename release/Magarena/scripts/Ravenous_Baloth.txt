@@ -1,5 +1,5 @@
 name=Ravenous Baloth
-image=http://mtgimage.com/card/ravenous%20baloth.jpg
+image=http://magiccards.info/scans/en/c13/165.jpg
 value=4.000
 rarity=R
 type=Creature

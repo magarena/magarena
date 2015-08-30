@@ -1,5 +1,5 @@
 name=Goblin Rock Sled
-image=http://mtgimage.com/card/goblin%20rock%20sled.jpg
+image=http://magiccards.info/scans/en/4e/217.jpg
 value=2.119
 rarity=C
 type=Creature
@@ -10,4 +10,4 @@ ability=Trample;\
         SN can't attack unless defending player controls a Mountain.
 timing=main
 requires_groovy_code
-oracle=Trample. Goblin Rock Sled doesn't untap during your untap step if it attacked during your last turn. Goblin Rock Sled can't attack unless defending player controls a Mountain.
+oracle=Trample\nGoblin Rock Sled doesn't untap during your untap step if it attacked during your last turn.\nGoblin Rock Sled can't attack unless defending player controls a Mountain.

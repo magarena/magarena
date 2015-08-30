@@ -1,6 +1,6 @@
 name=Solitary Confinement
-image=http://mtgimage.com/card/solitary%20confinement.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ju/24.jpg
+value=4.149
 rarity=R
 type=Enchantment
 cost={2}{W}
@@ -8,5 +8,5 @@ ability=At the beginning of your upkeep, sacrifice SN unless you discard a card.
         Skip your draw step.;\
         You have shroud.;\
         Prevent all damage that would be dealt to you.
-timing=main
-oracle=At the beginning of your upkeep, sacrifice Solitary Confinement unless you discard a card. Skip your draw step. You have shroud. Prevent all damage that would be dealt to you.
+timing=enchantment
+oracle=At the beginning of your upkeep, sacrifice Solitary Confinement unless you discard a card.\nSkip your draw step.\nYou have shroud.\nPrevent all damage that would be dealt to you.

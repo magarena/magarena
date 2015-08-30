@@ -1,5 +1,5 @@
 name=Sleep
-image=http://mtgimage.com/card/sleep.jpg
+image=http://magiccards.info/scans/en/m13/67.jpg
 value=3.912
 removal=1
 rarity=U

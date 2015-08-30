@@ -1,5 +1,5 @@
 name=Drainpipe Vermin
-image=http://mtgimage.com/card/drainpipe%20vermin.jpg
+image=http://magiccards.info/scans/en/rtr/66.jpg
 value=2.808
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Fact or Fiction
-image=http://mtgimage.com/card/fact%20or%20fiction.jpg
+image=http://magiccards.info/scans/en/vma/67.jpg
 value=2.500
 rarity=U
 type=Instant

@@ -18,14 +18,14 @@ public class MagicDeckProfile {
     private DeckType deckType = DeckType.Random;
     private String deckValue = ANY_THREE;
 
-    public MagicDeckProfile(final String colorText) {
-        this(colorText, null);
-    }
-
-    public MagicDeckProfile(final String colorText, final String deckGeneratorName) {
+    private MagicDeckProfile(final String colorText, final String deckGeneratorName) {
         this.deckGeneratorName = deckGeneratorName;
         this.deckValue = deckGeneratorName;
         setColors(colorText);
+    }
+
+    public MagicDeckProfile(final String colorText) {
+        this(colorText, ANY_DECK);
     }
 
     public MagicDeckProfile(DeckType deckType2, String deckValue2) {

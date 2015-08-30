@@ -1,5 +1,5 @@
 name=Viridian Corrupter
-image=http://mtgimage.com/card/viridian%20corrupter.jpg
+image=http://magiccards.info/scans/en/mbs/94.jpg
 value=3.979
 removal=1
 rarity=U
@@ -10,4 +10,4 @@ pt=2/2
 ability=infect;\
         When SN enters the battlefield, destroy target artifact.
 timing=main
-oracle=Infect. When Viridian Corrupter enters the battlefield, destroy target artifact.
+oracle=Infect\nWhen Viridian Corrupter enters the battlefield, destroy target artifact.

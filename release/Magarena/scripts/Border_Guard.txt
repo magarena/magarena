@@ -1,5 +1,5 @@
 name=Border Guard
-image=http://mtgimage.com/card/border%20guard.jpg
+image=http://magiccards.info/scans/en/st/9.jpg
 value=2.062
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Human,Soldier
 cost={2}{W}
 pt=1/4
 timing=main
+oracle=NONE

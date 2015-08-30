@@ -1,5 +1,5 @@
 name=Body of Jukai
-image=http://mtgimage.com/card/body%20of%20jukai.jpg
+image=http://magiccards.info/scans/en/bok/121.jpg
 value=2.615
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={7}{G}{G}
 pt=8/5
 ability=trample;soulshift 8
 timing=main
-oracle=Trample. Soulshift 8
+oracle=Trample\nSoulshift 8

@@ -1,6 +1,6 @@
 name=Absolver Thrull
-image=http://mtgimage.com/card/absolver%20thrull.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gp/1.jpg
+value=2.963
 rarity=C
 type=Creature
 subtype=Thrull,Cleric
@@ -9,4 +9,4 @@ pt=2/3
 ability=Haunt;\
         When SN enters the battlefield or the creature it haunts dies, destroy target enchantment.
 timing=main
-oracle=Haunt. When Absolver Thrull enters the battlefield or the creature it haunts dies, destroy target enchantment.
+oracle=Haunt\nWhen Absolver Thrull enters the battlefield or the creature it haunts dies, destroy target enchantment.

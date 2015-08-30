@@ -1,0 +1,10 @@
+name=Starfield of Nyx
+image=http://magiccards.info/scans/en/ori/33.jpg
+value=2.500
+rarity=M
+type=Enchantment
+cost={4}{W}
+ability=At the beginning of your upkeep, you may return target enchantment card from your graveyard to the battlefield.;\
+        As long as you control five or more enchantments, each other non-Aura enchantment you control is a creature in addition to its other types and has base power and base toughness each equal to its converted mana cost.
+timing=enchantment
+oracle=At the beginning of your upkeep, you may return target enchantment card from your graveyard to the battlefield.\nAs long as you control five or more enchantments, each other non-Aura enchantment you control is a creature in addition to its other types and has base power and base toughness each equal to its converted mana cost.

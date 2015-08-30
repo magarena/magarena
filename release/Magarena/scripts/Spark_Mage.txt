@@ -1,6 +1,6 @@
 name=Spark Mage
-image=http://mtgimage.com/card/spark%20mage.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/222.jpg
+value=2.931
 rarity=U
 type=Creature
 subtype=Dwarf,Wizard

@@ -1,5 +1,5 @@
 name=Calciderm
-image=http://mtgimage.com/card/calciderm.jpg
+image=http://magiccards.info/scans/en/pc/23.jpg
 value=3.977
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{W}{W}
 pt=5/5
 ability=shroud;vanishing 4
 timing=main
-oracle=Shroud. Vanishing 4
+oracle=Shroud\nVanishing 4

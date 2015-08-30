@@ -1,5 +1,5 @@
 name=Boros Recruit
-image=http://mtgimage.com/card/boros%20recruit.jpg
+image=http://magiccards.info/scans/en/rav/243.jpg
 value=3.915
 ability=first strike
 rarity=C

@@ -1,5 +1,5 @@
 name=Vile Consumption
-image=http://mtgimage.com/card/vile%20consumption.jpg
+image=http://magiccards.info/scans/en/in/285.jpg
 value=4.263
 rarity=R
 type=Enchantment

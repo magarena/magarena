@@ -1,11 +1,11 @@
 name=Burning Anger
-image=http://mtgimage.com/card/burning%20anger.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/133.jpg
+value=3.357
 rarity=R
 type=Enchantment
 subtype=Aura
 cost={4}{R}
 ability=Enchant creature;\
         Enchanted creature has "{T}: This creature deals damage equal to its power to target creature or player."
-timing=main
-oracle=Enchant creature. Enchanted creature has "{T}: This creature deals damage equal to its power to target creature or player."
+timing=aura
+oracle=Enchant creature\nEnchanted creature has "{T}: This creature deals damage equal to its power to target creature or player."

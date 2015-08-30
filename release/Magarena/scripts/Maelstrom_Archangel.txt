@@ -1,5 +1,5 @@
 name=Maelstrom Archangel
-image=http://mtgimage.com/card/maelstrom%20archangel.jpg
+image=http://magiccards.info/scans/en/cfx/115.jpg
 value=4.091
 rarity=M
 type=Creature
@@ -9,4 +9,4 @@ pt=5/5
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. Whenever Maelstrom Archangel deals combat damage to a player, you may cast a nonland card from your hand without paying its mana cost.
+oracle=Flying\nWhenever Maelstrom Archangel deals combat damage to a player, you may cast a nonland card from your hand without paying its mana cost.

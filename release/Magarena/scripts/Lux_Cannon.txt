@@ -1,9 +1,9 @@
 name=Lux Cannon
-image=http://mtgimage.com/card/lux%20cannon.jpg
+image=http://magiccards.info/scans/en/som/173.jpg
 value=3.858
 rarity=M
 type=Artifact
 cost={4}
 ability={T}:Put a charge counter on SN.;{T},Remove three charge counters from SN:Destroy target permanent.
 timing=artifact
-oracle={T}: Put a charge counter on Lux Cannon. {T}, Remove three charge counters from Lux Cannon: Destroy target permanent.
+oracle={T}: Put a charge counter on Lux Cannon.\n{T}, Remove three charge counters from Lux Cannon: Destroy target permanent.

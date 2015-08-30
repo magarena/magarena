@@ -1,5 +1,5 @@
 name=Soltari Guerrillas
-image=http://mtgimage.com/card/soltari%20guerrillas.jpg
+image=http://magiccards.info/scans/en/tp/347.jpg
 value=2.500
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=3/2
 ability=Shadow;\
         {0}: The next time SN would deal combat damage to an opponent this turn, it deals that damage to target creature instead.
 timing=main
-oracle=Shadow. {0}: The next time Soltari Guerrillas would deal combat damage to an opponent this turn, it deals that damage to target creature instead.
+oracle=Shadow\n{0}: The next time Soltari Guerrillas would deal combat damage to an opponent this turn, it deals that damage to target creature instead.

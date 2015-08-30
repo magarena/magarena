@@ -1,5 +1,5 @@
 name=Commander's Authority
-image=http://mtgimage.com/card/commander%27s%20authority.jpg
+image=http://magiccards.info/scans/en/avr/13.jpg
 value=2.048
 rarity=U
 type=Enchantment
@@ -8,4 +8,4 @@ cost={4}{W}
 ability=Enchanted creature has "At the beginning of your upkeep, put a 1/1 white Human creature token onto the battlefield."
 timing=aura
 enchant=pump,pos creature
-oracle=Enchant creature. Enchanted creature has "At the beginning of your upkeep, put a 1/1 white Human creature token onto the battlefield."
+oracle=Enchant creature\nEnchanted creature has "At the beginning of your upkeep, put a 1/1 white Human creature token onto the battlefield."

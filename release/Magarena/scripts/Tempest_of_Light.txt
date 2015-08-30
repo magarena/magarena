@@ -1,10 +1,11 @@
 name=Tempest of Light
-image=http://mtgimage.com/card/tempest%20of%20light.jpg
+image=http://magiccards.info/scans/en/m10/36.jpg
 value=3.689
 removal=2
 rarity=U
 type=Instant
 cost={2}{W}
+ability=Cast SN with AI only if an opponent controls an enchantment.
 effect=Destroy all enchantments.
 timing=removal
 oracle=Destroy all enchantments.

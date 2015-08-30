@@ -1,5 +1,5 @@
 name=Longshot Squad
-image=http://mtgimage.com/card/longshot%20squad.jpg
+image=http://magiccards.info/scans/en/ktk/140.jpg
 value=3.250
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=Outlast {1}{G};\
         Each creature you control with a +1/+1 counter on it has reach.
 timing=main
-oracle=Outlast {1}{G}. Each creature you control with a +1/+1 counter on it has reach.
+oracle=Outlast {1}{G}\nEach creature you control with a +1/+1 counter on it has reach.

@@ -1,5 +1,5 @@
 name=Disrupting Scepter
-image=http://mtgimage.com/card/disrupting%20scepter.jpg
+image=http://magiccards.info/scans/en/9e/295.jpg
 value=3.094
 rarity=R
 type=Artifact

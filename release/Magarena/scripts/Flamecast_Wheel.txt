@@ -1,5 +1,5 @@
 name=Flamecast Wheel
-image=http://mtgimage.com/card/flamecast%20wheel.jpg
+image=http://magiccards.info/scans/en/ths/215.jpg
 value=1.623
 rarity=U
 type=Artifact

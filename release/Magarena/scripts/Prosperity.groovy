@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getCardOnStack().getX();
             for (final MagicPlayer player : game.getAPNAP()) {
-                game.doAction(new MagicDrawAction(player,amount));
+                game.doAction(new DrawAction(player,amount));
             }
         }
     }

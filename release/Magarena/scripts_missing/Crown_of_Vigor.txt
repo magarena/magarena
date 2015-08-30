@@ -1,6 +1,6 @@
 name=Crown of Vigor
-image=http://mtgimage.com/card/crown%20of%20vigor.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/253.jpg
+value=2.276
 rarity=C
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={1}{G}
 ability=Enchant creature;\
         Enchanted creature gets +1/+1.;\
         Sacrifice SN: Enchanted creature and other creatures that share a creature type with it get +1/+1 until end of turn.
-timing=main
-oracle=Enchant creature. Enchanted creature gets +1/+1. Sacrifice Crown of Vigor: Enchanted creature and other creatures that share a creature type with it get +1/+1 until end of turn.
+timing=aura
+oracle=Enchant creature\nEnchanted creature gets +1/+1.\nSacrifice Crown of Vigor: Enchanted creature and other creatures that share a creature type with it get +1/+1 until end of turn.

@@ -1,9 +1,9 @@
 name=Fog Patch
-image=http://mtgimage.com/card/fog%20patch.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ne/104.jpg
+value=3.712
 rarity=C
 type=Instant
 cost={1}{G}
 effect=Cast SN only during the declare blockers step.~Attacking creatures become blocked.
 timing=removal
-oracle=Cast Fog Patch only during the declare blockers step. Attacking creatures become blocked.
+oracle=Cast Fog Patch only during the declare blockers step.\nAttacking creatures become blocked.

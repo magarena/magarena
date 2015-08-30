@@ -1,6 +1,6 @@
 name=Spectral Force
-image=http://mtgimage.com/card/spectral%20force.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ts/217.jpg
+value=3.641
 rarity=R
 type=Creature
 subtype=Elemental,Spirit
@@ -9,4 +9,4 @@ pt=8/8
 ability=Trample;\
         Whenever SN attacks, if defending player controls no black permanents, it doesn't untap during your next untap step.
 timing=main
-oracle=Trample. Whenever Spectral Force attacks, if defending player controls no black permanents, it doesn't untap during your next untap step.
+oracle=Trample\nWhenever Spectral Force attacks, if defending player controls no black permanents, it doesn't untap during your next untap step.

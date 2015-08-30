@@ -1,0 +1,9 @@
+name=Colfenor's Urn
+image=http://magiccards.info/scans/en/lw/254.jpg
+value=3.081
+rarity=R
+type=Artifact
+cost={3}
+timing=artifact
+requires_groovy_code
+oracle=Whenever a creature with toughness 4 or greater is put into your graveyard from the battlefield, you may exile it.\nAt the beginning of the end step, if three or more cards have been exiled with Colfenor's Urn, sacrifice it. If you do, return those cards to the battlefield under their owner's control.

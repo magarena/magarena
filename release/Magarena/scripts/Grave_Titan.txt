@@ -1,5 +1,5 @@
 name=Grave Titan
-image=http://mtgimage.com/card/grave%20titan.jpg
+image=http://magiccards.info/scans/en/c14/145.jpg
 value=4.377
 rarity=M
 type=Creature
@@ -10,4 +10,4 @@ ability=deathtouch;\
         When SN enters the battlefield, Put two 2/2 black Zombie creature tokens onto the battlefield.;\
         Whenever SN attacks, put two 2/2 black Zombie creature tokens onto the battlefield.
 timing=main
-oracle=Deathtouch. Whenever Grave Titan enters the battlefield or attacks, put two 2/2 black Zombie creature tokens onto the battlefield.
+oracle=Deathtouch\nWhenever Grave Titan enters the battlefield or attacks, put two 2/2 black Zombie creature tokens onto the battlefield.

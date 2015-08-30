@@ -1,5 +1,5 @@
 name=Gryff Vanguard
-image=http://mtgimage.com/card/gryff%20vanguard.jpg
+image=http://magiccards.info/scans/en/avr/59.jpg
 value=2.805
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/2
 ability=flying;\
         When SN enters the battlefield, draw a card.
 timing=main
-oracle=Flying. When Gryff Vanguard enters the battlefield, draw a card.
+oracle=Flying\nWhen Gryff Vanguard enters the battlefield, draw a card.

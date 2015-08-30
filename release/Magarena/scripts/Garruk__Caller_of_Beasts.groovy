@@ -11,18 +11,14 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCardList top5 = event.getPlayer().getLibrary().getCardsFromTop(5);
+            game.doAction(new RevealAction(top5));
             for (final MagicCard top : top5) {
-                game.doAction(new MagicRevealAction(top5));
-                game.doAction(new MagicRemoveCardAction(
-                    top,
-                    MagicLocationType.OwnersLibrary
-                ));
-                game.doAction(new MagicMoveCardAction(
+                game.doAction(new ShiftCardAction(
                     top,
                     MagicLocationType.OwnersLibrary,
                     top.hasType(MagicType.Creature) ?
-                      MagicLocationType.OwnersHand :
-                      MagicLocationType.BottomOfOwnersLibrary
+                        MagicLocationType.OwnersHand :
+                        MagicLocationType.BottomOfOwnersLibrary
                 ));
             }
         }
@@ -30,19 +26,19 @@
     new MagicPlaneswalkerActivation(-3) {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-             return new MagicEvent(
+            return new MagicEvent(
                 source,
                 this,
                 "PN may put a green creature card from his or her hand onto the battlefield."
             );
-       }
+        }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.addEvent(new MagicPutOntoBattlefieldEvent(
                 event,
                 new MagicMayChoice(
                     "Put a green creature card onto the battlefield?",
-                    MagicTargetChoice.A_GREEN_CREATURE_CARD_FROM_HAND
+                    A_GREEN_CREATURE_CARD_FROM_HAND
                 )
             ));
         }
@@ -59,7 +55,7 @@
         @Override
         public void executeEvent(final MagicGame outerGame, final MagicEvent outerEvent) {
             final MagicPlayer you = outerEvent.getPlayer();
-            outerGame.doAction(new MagicAddTriggerAction(
+            outerGame.doAction(new AddTriggerAction(
                 new MagicWhenOtherSpellIsCastTrigger() {
                     @Override
                     public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicCardOnStack cardOnStack) {
@@ -77,7 +73,7 @@
                         if (event.isYes()) {
                             game.addEvent(new MagicSearchOntoBattlefieldEvent(
                                 event,
-                                MagicTargetChoice.CREATURE_CARD_FROM_LIBRARY
+                                A_CREATURE_CARD_FROM_LIBRARY
                             ));
                         }
                     }

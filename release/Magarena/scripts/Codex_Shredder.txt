@@ -1,5 +1,5 @@
 name=Codex Shredder
-image=http://mtgimage.com/card/codex%20shredder.jpg
+image=http://magiccards.info/scans/en/rtr/228.jpg
 value=3.205
 rarity=U
 type=Artifact
@@ -7,4 +7,4 @@ cost={1}
 ability={T}:Target player puts the top card of his or her library into his or her graveyard.;\
         {5},{T},Sacrifice SN:Return target card from your graveyard to your hand.
 timing=artifact
-oracle={T}: Target player puts the top card of his or her library into his or her graveyard. {5}, {T}, Sacrifice Codex Shredder: Return target card from your graveyard to your hand.
+oracle={T}: Target player puts the top card of his or her library into his or her graveyard.\n{5}, {T}, Sacrifice Codex Shredder: Return target card from your graveyard to your hand.

@@ -1,0 +1,10 @@
+name=Disorder
+image=http://magiccards.info/scans/en/7e/179.jpg
+value=2.750
+rarity=U
+type=Sorcery
+cost={1}{R}
+ability=Cast SN with AI only if an opponent controls a white creature.
+timing=main
+requires_groovy_code
+oracle=Disorder deals 2 damage to each white creature and each player who controls a white creature.

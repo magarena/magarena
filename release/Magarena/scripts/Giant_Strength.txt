@@ -1,5 +1,5 @@
 name=Giant Strength
-image=http://mtgimage.com/card/giant%20strength.jpg
+image=http://magiccards.info/scans/en/vma/163.jpg
 value=2.906
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={R}{R}
 ability=Enchanted creature gets +2/+2.
 timing=aura
 enchant=pump,pos creature
-oracle=Enchant creature. Enchanted creature gets +2/+2.
+oracle=Enchant creature\nEnchanted creature gets +2/+2.

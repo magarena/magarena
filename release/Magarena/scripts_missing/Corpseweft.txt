@@ -1,0 +1,9 @@
+name=Corpseweft
+image=http://magiccards.info/scans/en/dtk/92.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={2}{B}
+ability={1}{B}, Exile one or more creature cards from your graveyard: Put an X/X black Zombie Horror creature token onto the battlefield tapped, where X is twice the number of cards exiled this way.
+timing=enchantment
+oracle={1}{B}, Exile one or more creature cards from your graveyard: Put an X/X black Zombie Horror creature token onto the battlefield tapped, where X is twice the number of cards exiled this way.

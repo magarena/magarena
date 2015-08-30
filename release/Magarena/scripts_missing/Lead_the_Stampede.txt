@@ -1,6 +1,6 @@
 name=Lead the Stampede
-image=http://mtgimage.com/card/lead%20the%20stampede.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cns/170.jpg
+value=3.833
 rarity=U
 type=Sorcery
 cost={2}{G}

@@ -1,6 +1,6 @@
 name=Catacomb Dragon
-image=http://mtgimage.com/card/catacomb%20dragon.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/10.jpg
+value=3.915
 rarity=R
 type=Creature
 subtype=Dragon
@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying;\
         Whenever SN becomes blocked by a nonartifact, non-Dragon creature, that creature gets -X/-0 until end of turn, where X is half the creature's power, rounded down.
 timing=main
-oracle=Flying. Whenever Catacomb Dragon becomes blocked by a nonartifact, non-Dragon creature, that creature gets -X/-0 until end of turn, where X is half the creature's power, rounded down.
+oracle=Flying\nWhenever Catacomb Dragon becomes blocked by a nonartifact, non-Dragon creature, that creature gets -X/-0 until end of turn, where X is half the creature's power, rounded down.

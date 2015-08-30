@@ -1,9 +1,9 @@
 name=Ornate Kanzashi
-image=http://mtgimage.com/card/ornate%20kanzashi.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bok/157.jpg
+value=3.103
 rarity=R
 type=Artifact
 cost={5}
 ability={2}, {T}: Target opponent exiles the top card of his or her library. You may play that card this turn.
-timing=main
+timing=artifact
 oracle={2}, {T}: Target opponent exiles the top card of his or her library. You may play that card this turn.

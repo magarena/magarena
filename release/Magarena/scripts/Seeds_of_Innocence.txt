@@ -1,5 +1,5 @@
 name=Seeds of Innocence
-image=http://mtgimage.com/card/seeds%20of%20innocence.jpg
+image=http://magiccards.info/scans/en/mr/139.jpg
 value=3.024
 rarity=R
 type=Sorcery

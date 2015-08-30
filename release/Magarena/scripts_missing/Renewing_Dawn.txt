@@ -1,9 +1,0 @@
-name=Renewing Dawn
-image=http://mtgimage.com/card/renewing%20dawn.jpg
-value=2.500
-rarity=U
-type=Sorcery
-cost={1}{W}
-effect=You gain 2 life for each Mountain target opponent controls.
-timing=main
-oracle=You gain 2 life for each Mountain target opponent controls.

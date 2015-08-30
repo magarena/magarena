@@ -1,6 +1,6 @@
 name=Timber Wolves
-image=http://mtgimage.com/card/timber%20wolves.jpg
-value=2.500
+image=http://magiccards.info/scans/en/4e/159.jpg
+value=3.295
 rarity=R
 type=Creature
 subtype=Wolf

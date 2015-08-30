@@ -1,9 +1,0 @@
-name=Chimeric Coils
-image=http://mtgimage.com/card/chimeric%20coils.jpg
-value=2.500
-rarity=U
-type=Artifact
-cost={1}
-ability={X}{1}: SN becomes an X/X Construct artifact creature. Sacrifice it at the beginning of the next end step.
-timing=main
-oracle={X}{1}: Chimeric Coils becomes an X/X Construct artifact creature. Sacrifice it at the beginning of the next end step.

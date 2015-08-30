@@ -1,5 +1,5 @@
 name=Verduran Emissary
-image=http://mtgimage.com/card/verduran%20emissary.jpg
+image=http://magiccards.info/scans/en/pvc/43.jpg
 value=2.700
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/3
 ability=Kicker {1}{R};\
         When SN enters the battlefield, if it was kicked, destroy target artifact. It can't be regenerated.
 timing=main
-oracle=Kicker {1}{R}. When Verduran Emissary enters the battlefield, if it was kicked, destroy target artifact. It can't be regenerated.
+oracle=Kicker {1}{R}\nWhen Verduran Emissary enters the battlefield, if it was kicked, destroy target artifact. It can't be regenerated.

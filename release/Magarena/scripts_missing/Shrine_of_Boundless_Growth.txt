@@ -1,10 +1,10 @@
 name=Shrine of Boundless Growth
-image=http://mtgimage.com/card/shrine%20of%20boundless%20growth.jpg
-value=2.500
+image=http://magiccards.info/scans/en/nph/152.jpg
+value=2.992
 rarity=U
 type=Artifact
 cost={3}
 ability=At the beginning of your upkeep or whenever you cast a green spell, put a charge counter on SN.;\
         {T}, Sacrifice SN: Add {1} to your mana pool for each charge counter on SN.
-timing=main
-oracle=At the beginning of your upkeep or whenever you cast a green spell, put a charge counter on Shrine of Boundless Growth. {T}, Sacrifice Shrine of Boundless Growth: Add {1} to your mana pool for each charge counter on Shrine of Boundless Growth.
+timing=artifact
+oracle=At the beginning of your upkeep or whenever you cast a green spell, put a charge counter on Shrine of Boundless Growth.\n{T}, Sacrifice Shrine of Boundless Growth: Add {1} to your mana pool for each charge counter on Shrine of Boundless Growth.

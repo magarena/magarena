@@ -1,7 +1,7 @@
 name=Charging Rhino
-image=http://mtgimage.com/card/charging%20rhino.jpg
-value=2.500
-rarity=R
+image=http://magiccards.info/scans/en/m15/171.jpg
+value=3.000
+rarity=C
 type=Creature
 subtype=Rhino
 cost={3}{G}{G}

@@ -1,5 +1,5 @@
 name=Putrefax
-image=http://mtgimage.com/card/putrefax.jpg
+image=http://magiccards.info/scans/en/som/126.jpg
 value=4.014
 rarity=R
 type=Creature
@@ -11,4 +11,4 @@ ability=trample;\
         infect;\
         At the beginning of the end step, sacrifice SN.
 timing=fmain
-oracle=Trample, haste. Infect. At the beginning of the end step, sacrifice Putrefax.
+oracle=Trample, haste\nInfect\nAt the beginning of the end step, sacrifice Putrefax.

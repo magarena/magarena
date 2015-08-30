@@ -1,6 +1,6 @@
 name=In Garruk's Wake
-image=http://mtgimage.com/card/in%20garruk%27s%20wake.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/100.jpg
+value=3.071
 rarity=R
 type=Sorcery
 cost={7}{B}{B}

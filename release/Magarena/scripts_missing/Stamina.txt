@@ -1,6 +1,6 @@
 name=Stamina
-image=http://mtgimage.com/card/stamina.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/277.jpg
+value=2.769
 rarity=U
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={2}{G}
 ability=Enchant creature;\
         Enchanted creature has vigilance.;\
         Sacrifice SN: Regenerate enchanted creature.
-timing=main
-oracle=Enchant creature. Enchanted creature has vigilance. Sacrifice Stamina: Regenerate enchanted creature.
+timing=aura
+oracle=Enchant creature\nEnchanted creature has vigilance.\nSacrifice Stamina: Regenerate enchanted creature.

@@ -1,5 +1,5 @@
 name=Blightsteel Colossus
-image=http://mtgimage.com/card/blightsteel%20colossus.jpg
+image=http://magiccards.info/scans/en/mbs/99.jpg
 value=4.118
 rarity=M
 type=Artifact,Creature
@@ -11,4 +11,4 @@ ability=trample;\
         indestructible;\
         If SN would be put into a graveyard from anywhere, reveal SN and shuffle it into its owner's library instead.
 timing=main
-oracle=Trample, infect, indestructible. If Blightsteel Colossus would be put into a graveyard from anywhere, reveal Blightsteel Colossus and shuffle it into its owner's library instead.
+oracle=Trample, infect, indestructible\nIf Blightsteel Colossus would be put into a graveyard from anywhere, reveal Blightsteel Colossus and shuffle it into its owner's library instead.

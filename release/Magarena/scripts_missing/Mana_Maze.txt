@@ -1,9 +1,9 @@
 name=Mana Maze
-image=http://mtgimage.com/card/mana%20maze.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/59.jpg
+value=3.806
 rarity=R
 type=Enchantment
 cost={1}{U}
 ability=Players can't cast spells that share a color with the spell most recently cast this turn.
-timing=main
+timing=enchantment
 oracle=Players can't cast spells that share a color with the spell most recently cast this turn.

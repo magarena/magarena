@@ -1,6 +1,6 @@
 name=Counterlash
-image=http://mtgimage.com/card/counterlash.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dka/33.jpg
+value=3.526
 rarity=R
 type=Instant
 cost={4}{U}{U}

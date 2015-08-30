@@ -1,5 +1,5 @@
 name=Godhead of Awe
-image=http://mtgimage.com/card/godhead%20of%20awe.jpg
+image=http://magiccards.info/scans/en/shm/142.jpg
 value=4.080
 removal=3
 rarity=R
@@ -11,4 +11,4 @@ ability=flying
 static=all
 timing=smain
 requires_groovy_code
-oracle=Flying. Other creatures are 1/1.
+oracle=Flying\nOther creatures have base power and toughness 1/1.

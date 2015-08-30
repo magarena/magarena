@@ -1,12 +1,12 @@
 [
-     new MagicCardActivation(
+    new MagicHandCastActivation(
         [MagicCondition.CARD_CONDITION],
         new MagicActivationHints(MagicTiming.Main, true),
         "Cast"
     ) {
         @Override
         public void change(final MagicCardDefinition cdef) {
-            cdef.setCardAct(this);
+            cdef.setHandAct(this);
         }
 
         @Override

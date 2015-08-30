@@ -1,0 +1,11 @@
+name=Kiora's Follower
+image=http://magiccards.info/scans/en/ddo/52.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Merfolk
+cost={G}{U}
+pt=2/2
+ability={T}: Untap another target permanent.
+timing=main
+oracle={T}: Untap another target permanent.

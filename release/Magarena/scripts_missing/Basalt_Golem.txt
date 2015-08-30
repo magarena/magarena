@@ -1,6 +1,6 @@
 name=Basalt Golem
-image=http://mtgimage.com/card/basalt%20golem.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/259.jpg
+value=3.841
 rarity=U
 type=Artifact,Creature
 subtype=Golem
@@ -8,5 +8,5 @@ cost={5}
 pt=2/4
 ability=SN can't be blocked by artifact creatures.;\
         Whenever SN becomes blocked by a creature, that creature's controller sacrifices it at end of combat. If the player does, he or she puts a 0/2 colorless Wall artifact creature token with defender onto the battlefield.
-timing=main
-oracle=Basalt Golem can't be blocked by artifact creatures. Whenever Basalt Golem becomes blocked by a creature, that creature's controller sacrifices it at end of combat. If the player does, he or she puts a 0/2 colorless Wall artifact creature token with defender onto the battlefield.
+timing=artifact
+oracle=Basalt Golem can't be blocked by artifact creatures.\nWhenever Basalt Golem becomes blocked by a creature, that creature's controller sacrifices it at end of combat. If the player does, he or she puts a 0/2 colorless Wall artifact creature token with defender onto the battlefield.

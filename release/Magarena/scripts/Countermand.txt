@@ -1,5 +1,5 @@
 name=Countermand
-image=http://mtgimage.com/card/countermand.jpg
+image=http://magiccards.info/scans/en/jou/33.jpg
 value=2.143
 rarity=C
 type=Instant

@@ -1,6 +1,6 @@
 name=Silent Arbiter
-image=http://mtgimage.com/card/silent%20arbiter.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cns/204.jpg
+value=4.083
 rarity=R
 type=Artifact,Creature
 subtype=Construct
@@ -8,5 +8,5 @@ cost={4}
 pt=1/5
 ability=No more than one creature can attack each combat.;\
         No more than one creature can block each combat.
-timing=main
-oracle=No more than one creature can attack each combat. No more than one creature can block each combat.
+timing=artifact
+oracle=No more than one creature can attack each combat.\nNo more than one creature can block each combat.

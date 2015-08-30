@@ -1,5 +1,5 @@
 name=False Demise
-image=http://mtgimage.com/card/false%20demise.jpg
+image=http://magiccards.info/scans/en/mm/80.jpg
 value=4.177
 rarity=U
 type=Enchantment
@@ -8,4 +8,4 @@ cost={2}{U}
 enchant=gain control,creature
 timing=enchantment
 requires_groovy_code=Unhallowed Pact
-oracle=Enchant creature. When enchanted creature dies, return that card to the battlefield under your control.
+oracle=Enchant creature\nWhen enchanted creature dies, return that card to the battlefield under your control.

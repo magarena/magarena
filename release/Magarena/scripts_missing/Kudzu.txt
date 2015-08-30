@@ -1,11 +1,11 @@
 name=Kudzu
-image=http://mtgimage.com/card/kudzu.jpg
-value=2.500
-rarity=R
+image=http://magiccards.info/scans/en/me4/159.jpg
+value=3.714
+rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{G}{G}
 ability=Enchant land;\
         When enchanted land becomes tapped, destroy it. That land's controller attaches SN to a land of his or her choice.
-timing=main
-oracle=Enchant land. When enchanted land becomes tapped, destroy it. That land's controller attaches Kudzu to a land of his or her choice.
+timing=aura
+oracle=Enchant land\nWhen enchanted land becomes tapped, destroy it. That land's controller attaches Kudzu to a land of his or her choice.

@@ -1,6 +1,6 @@
 name=Peregrination
-image=http://mtgimage.com/card/peregrination.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bng/132.jpg
+value=3.139
 rarity=U
 type=Sorcery
 cost={3}{G}

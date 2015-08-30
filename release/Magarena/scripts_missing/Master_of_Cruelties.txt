@@ -1,13 +1,13 @@
 name=Master of Cruelties
-image=http://mtgimage.com/card/master%20of%20cruelties.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dgm/82.jpg
+value=3.858
 rarity=M
 type=Creature
 subtype=Demon
 cost={3}{B}{R}
 pt=1/4
-ability=First strike; deathtouch;\
+ability=First strike, deathtouch;\
         SN can only attack alone.;\
         Whenever SN attacks a player and isn't blocked, that player's life total becomes 1. SN assigns no combat damage this combat.
 timing=main
-oracle=First strike, deathtouch. Master of Cruelties can only attack alone. Whenever Master of Cruelties attacks a player and isn't blocked, that player's life total becomes 1. Master of Cruelties assigns no combat damage this combat.
+oracle=First strike, deathtouch\nMaster of Cruelties can only attack alone.\nWhenever Master of Cruelties attacks a player and isn't blocked, that player's life total becomes 1. Master of Cruelties assigns no combat damage this combat.

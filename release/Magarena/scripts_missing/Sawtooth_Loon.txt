@@ -1,6 +1,6 @@
 name=Sawtooth Loon
-image=http://mtgimage.com/card/sawtooth%20loon.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddi/17.jpg
+value=3.714
 rarity=U
 type=Creature
 subtype=Bird
@@ -10,4 +10,4 @@ ability=Flying;\
         When SN enters the battlefield, return a white or blue creature you control to its owner's hand.;\
         When SN enters the battlefield, draw two cards, then put two cards from your hand on the bottom of your library.
 timing=main
-oracle=Flying. When Sawtooth Loon enters the battlefield, return a white or blue creature you control to its owner's hand. When Sawtooth Loon enters the battlefield, draw two cards, then put two cards from your hand on the bottom of your library.
+oracle=Flying\nWhen Sawtooth Loon enters the battlefield, return a white or blue creature you control to its owner's hand.\nWhen Sawtooth Loon enters the battlefield, draw two cards, then put two cards from your hand on the bottom of your library.

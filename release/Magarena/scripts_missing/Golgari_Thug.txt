@@ -1,6 +1,6 @@
 name=Golgari Thug
-image=http://mtgimage.com/card/golgari%20thug.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddj/48.jpg
+value=4.533
 rarity=U
 type=Creature
 subtype=Human,Warrior
@@ -9,4 +9,4 @@ pt=1/1
 ability=When SN dies, put target creature card from your graveyard on top of your library.;\
         Dredge 4
 timing=main
-oracle=When Golgari Thug dies, put target creature card from your graveyard on top of your library. Dredge 4
+oracle=When Golgari Thug dies, put target creature card from your graveyard on top of your library.\nDredge 4

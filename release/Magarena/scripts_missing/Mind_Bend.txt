@@ -1,7 +1,7 @@
 name=Mind Bend
-image=http://mtgimage.com/card/mind%20bend.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/10e/93.jpg
+value=3.885
+rarity=R
 type=Instant
 cost={U}
 effect=Change the text of target permanent by replacing all instances of one color word with another or one basic land type with another.

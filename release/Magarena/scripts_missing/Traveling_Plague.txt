@@ -1,6 +1,6 @@
 name=Traveling Plague
-image=http://mtgimage.com/card/traveling%20plague.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/166.jpg
+value=2.375
 rarity=R
 type=Enchantment
 subtype=Aura
@@ -9,5 +9,5 @@ ability=Enchant creature;\
         At the beginning of each upkeep, put a plague counter on SN.;\
         Enchanted creature gets -1/-1 for each plague counter on SN.;\
         When enchanted creature leaves the battlefield, that creature's controller returns SN from its owner's graveyard to the battlefield.
-timing=main
-oracle=Enchant creature. At the beginning of each upkeep, put a plague counter on Traveling Plague. Enchanted creature gets -1/-1 for each plague counter on Traveling Plague. When enchanted creature leaves the battlefield, that creature's controller returns Traveling Plague from its owner's graveyard to the battlefield.
+timing=aura
+oracle=Enchant creature\nAt the beginning of each upkeep, put a plague counter on Traveling Plague.\nEnchanted creature gets -1/-1 for each plague counter on Traveling Plague.\nWhen enchanted creature leaves the battlefield, that creature's controller returns Traveling Plague from its owner's graveyard to the battlefield.

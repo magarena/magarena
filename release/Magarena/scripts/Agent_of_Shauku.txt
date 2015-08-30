@@ -1,11 +1,11 @@
 name=Agent of Shauku
-image=http://mtgimage.com/card/agent%20of%20shauku.jpg
+image=http://magiccards.info/scans/en/pr/55.jpg
 value=2.230
 rarity=C
 type=Creature
 subtype=Human,Mercenary
 cost={1}{B}
 pt=1/1
-ability={1}{B},Sacrifice a land:Target creature gets +2/+0 until end of turn.
+ability={1}{B}, Sacrifice a land: Target creature gets +2/+0 until end of turn.
 timing=main
 oracle={1}{B}, Sacrifice a land: Target creature gets +2/+0 until end of turn.

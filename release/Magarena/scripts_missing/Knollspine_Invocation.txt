@@ -1,9 +1,9 @@
 name=Knollspine Invocation
-image=http://mtgimage.com/card/knollspine%20invocation.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/99.jpg
+value=3.016
 rarity=R
 type=Enchantment
 cost={1}{R}{R}
 ability={X}, Discard a card with converted mana cost X: SN deals X damage to target creature or player.
-timing=main
+timing=enchantment
 oracle={X}, Discard a card with converted mana cost X: Knollspine Invocation deals X damage to target creature or player.

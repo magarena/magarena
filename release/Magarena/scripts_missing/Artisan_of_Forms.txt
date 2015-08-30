@@ -1,6 +1,6 @@
 name=Artisan of Forms
-image=http://mtgimage.com/card/artisan%20of%20forms.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ths/40.jpg
+value=3.542
 rarity=R
 type=Creature
 subtype=Human,Wizard

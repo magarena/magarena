@@ -1,6 +1,6 @@
 name=Toshiro Umezawa
-image=http://mtgimage.com/card/toshiro%20umezawa.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bok/89.jpg
+value=4.016
 rarity=R
 type=Legendary,Creature
 subtype=Human,Samurai
@@ -9,4 +9,4 @@ pt=2/2
 ability=Bushido 1;\
         Whenever a creature an opponent controls dies, you may cast target instant card from your graveyard. If that card would be put into a graveyard this turn, exile it instead.
 timing=main
-oracle=Bushido 1. Whenever a creature an opponent controls dies, you may cast target instant card from your graveyard. If that card would be put into a graveyard this turn, exile it instead.
+oracle=Bushido 1\nWhenever a creature an opponent controls dies, you may cast target instant card from your graveyard. If that card would be put into a graveyard this turn, exile it instead.

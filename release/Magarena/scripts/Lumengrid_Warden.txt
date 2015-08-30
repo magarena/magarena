@@ -1,5 +1,5 @@
 name=Lumengrid Warden
-image=http://mtgimage.com/card/lumengrid%20warden.jpg
+image=http://magiccards.info/scans/en/10e/89.jpg
 value=2.000
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Human,Wizard
 cost={1}{U}
 pt=1/3
 timing=main
+oracle=NONE

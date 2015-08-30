@@ -1,6 +1,6 @@
 name=Lullmage Mentor
-image=http://mtgimage.com/card/lullmage%20mentor.jpg
-value=2.500
+image=http://magiccards.info/scans/en/zen/54.jpg
+value=4.197
 rarity=R
 type=Creature
 subtype=Merfolk,Wizard
@@ -9,4 +9,4 @@ pt=2/2
 ability=Whenever a spell or ability you control counters a spell, you may put a 1/1 blue Merfolk creature token onto the battlefield.;\
         Tap seven untapped Merfolk you control: Counter target spell.
 timing=main
-oracle=Whenever a spell or ability you control counters a spell, you may put a 1/1 blue Merfolk creature token onto the battlefield. Tap seven untapped Merfolk you control: Counter target spell.
+oracle=Whenever a spell or ability you control counters a spell, you may put a 1/1 blue Merfolk creature token onto the battlefield.\nTap seven untapped Merfolk you control: Counter target spell.

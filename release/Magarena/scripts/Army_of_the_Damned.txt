@@ -1,5 +1,5 @@
 name=Army of the Damned
-image=http://mtgimage.com/card/army%20of%20the%20damned.jpg
+image=http://magiccards.info/scans/en/c13/69.jpg
 value=3.833
 rarity=M
 type=Sorcery
@@ -7,4 +7,4 @@ cost={5}{B}{B}{B}
 effect=Put thirteen 2/2 black Zombie creature tokens onto the battlefield.
 ability=Flashback {7}{B}{B}{B}
 timing=main
-oracle=Put thirteen 2/2 black Zombie creature tokens onto the battlefield tapped. Flashback {7}{B}{B}{B}
+oracle=Put thirteen 2/2 black Zombie creature tokens onto the battlefield tapped.\nFlashback {7}{B}{B}{B}

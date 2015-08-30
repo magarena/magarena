@@ -1,0 +1,9 @@
+name=Sarkhan's Triumph
+image=http://magiccards.info/scans/en/dtk/154.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={2}{R}
+effect=Search your library for a Dragon creature card, reveal it, put it into your hand, then shuffle your library.
+timing=draw
+oracle=Search your library for a Dragon creature card, reveal it, put it into your hand, then shuffle your library.

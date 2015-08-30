@@ -15,7 +15,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.POS_TARGET_CREATURE,
+                POS_TARGET_CREATURE,
                 MagicPreventTargetPicker.create(),
                 this,
                 "Prevent the next X damage that would be dealt to target creature\$ this turn, "+
@@ -28,8 +28,8 @@
             event.processTargetPermanent(game,{
                 final MagicPlayer player = event.getPlayer()
                 final int amount = player.getDomain();
-                game.logAppendMessage(player," (X="+amount+")");
-                game.doAction(new MagicPreventDamageAction(it,amount));
+                game.logAppendX(player,amount);
+                game.doAction(new PreventDamageAction(it,amount));
             });
         }
     }

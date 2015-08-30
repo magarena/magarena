@@ -1,10 +1,10 @@
 name=Dictate of Karametra
-image=http://mtgimage.com/card/dictate%20of%20karametra.jpg
-value=2.500
+image=http://magiccards.info/scans/en/jou/121.jpg
+value=3.667
 rarity=R
 type=Enchantment
 cost={3}{G}{G}
 ability=Flash;\
         Whenever a player taps a land for mana, that player adds one mana to his or her mana pool of any type that land produced.
-timing=main
-oracle=Flash. Whenever a player taps a land for mana, that player adds one mana to his or her mana pool of any type that land produced.
+timing=enchantment
+oracle=Flash\nWhenever a player taps a land for mana, that player adds one mana to his or her mana pool of any type that land produced.

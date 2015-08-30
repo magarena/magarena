@@ -1,5 +1,5 @@
 name=Kyren Legate
-image=http://mtgimage.com/card/kyren%20legate.jpg
+image=http://magiccards.info/scans/en/mm/197.jpg
 value=3.690
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=Haste
 timing=main
 requires_groovy_code
-oracle=Haste. If an opponent controls a Plains and you control a Mountain, you may cast Kyren Legate without paying its mana cost.
+oracle=Haste\nIf an opponent controls a Plains and you control a Mountain, you may cast Kyren Legate without paying its mana cost.

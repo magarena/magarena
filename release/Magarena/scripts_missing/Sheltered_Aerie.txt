@@ -1,0 +1,11 @@
+name=Sheltered Aerie
+image=http://magiccards.info/scans/en/dtk/206.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={2}{G}
+ability=Enchant land;\
+        Enchanted land has "{T}: Add two mana of any one color to your mana pool."
+timing=aura
+oracle=Enchant land\nEnchanted land has "{T}: Add two mana of any one color to your mana pool."

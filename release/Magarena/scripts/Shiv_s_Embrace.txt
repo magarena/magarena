@@ -1,12 +1,12 @@
 name=Shiv's Embrace
-image=http://mtgimage.com/card/shiv's%20embrace.jpg
+image=http://magiccards.info/scans/en/m14/153.jpg
 value=3.617
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{R}{R}
-ability=Enchanted creature gets +2/+2 and has flying.
+ability=Enchanted creature gets +2/+2 and has flying.;\
+        {R}: Enchanted creature gets +1/+0 until end of turn.
 enchant=pump,pos creature
 timing=aura
-requires_groovy_code=Firebreathing
-oracle=Enchant creature. Enchanted creature gets +2/+2 and has flying. {R}: Enchanted creature gets +1/+0 until end of turn.
+oracle=Enchant creature\nEnchanted creature gets +2/+2 and has flying.\n{R}: Enchanted creature gets +1/+0 until end of turn.

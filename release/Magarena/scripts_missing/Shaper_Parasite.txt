@@ -1,5 +1,5 @@
 name=Shaper Parasite
-image=http://mtgimage.com/card/shaper%20parasite.jpg
+image=http://magiccards.info/scans/en/c14/125.jpg
 value=2.500
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/3
 ability=Morph {2}{U};\
         When SN is turned face up, target creature gets +2/-2 or -2/+2 until end of turn.
 timing=main
-oracle=Morph {2}{U}. When Shaper Parasite is turned face up, target creature gets +2/-2 or -2/+2 until end of turn.
+oracle=Morph {2}{U}\nWhen Shaper Parasite is turned face up, target creature gets +2/-2 or -2/+2 until end of turn.

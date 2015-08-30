@@ -1,6 +1,6 @@
 name=Scrounge
-image=http://mtgimage.com/card/scrounge.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ds/53.jpg
+value=2.636
 rarity=U
 type=Sorcery
 cost={2}{B}

@@ -1,9 +1,9 @@
 name=Grinning Totem
-image=http://mtgimage.com/card/grinning%20totem.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tsts/110.jpg
+value=4.107
 rarity=R
 type=Artifact
 cost={4}
 ability={2}, {T}, Sacrifice SN: Search target opponent's library for a card and exile it. Then that player shuffles his or her library. Until the beginning of your next upkeep, you may play that card. At the beginning of your next upkeep, if you haven't played it, put it into its owner's graveyard.
-timing=main
+timing=artifact
 oracle={2}, {T}, Sacrifice Grinning Totem: Search target opponent's library for a card and exile it. Then that player shuffles his or her library. Until the beginning of your next upkeep, you may play that card. At the beginning of your next upkeep, if you haven't played it, put it into its owner's graveyard.

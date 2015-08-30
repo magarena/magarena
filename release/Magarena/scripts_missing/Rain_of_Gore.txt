@@ -1,9 +1,9 @@
 name=Rain of Gore
-image=http://mtgimage.com/card/rain%20of%20gore.jpg
-value=2.500
+image=http://magiccards.info/scans/en/di/126.jpg
+value=3.938
 rarity=R
 type=Enchantment
 cost={B}{R}
 ability=If a spell or ability would cause its controller to gain life, that player loses that much life instead.
-timing=main
+timing=enchantment
 oracle=If a spell or ability would cause its controller to gain life, that player loses that much life instead.

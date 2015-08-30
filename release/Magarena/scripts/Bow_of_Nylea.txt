@@ -1,5 +1,5 @@
 name=Bow of Nylea
-image=http://mtgimage.com/card/bow%20of%20nylea.jpg
+image=http://magiccards.info/scans/en/ths/153.jpg
 value=3.759
 rarity=R
 type=Legendary,Enchantment,Artifact
@@ -10,4 +10,4 @@ ability=attacking creatures you control have deathtouch.;\
         {1}{G},{T}:You gain 3 life.
 timing=artifact
 requires_groovy_code
-oracle=Attacking creatures you control have deathtouch. {1}{G}, {T}: Choose one — Put a +1/+1 counter on target creature; or Bow of Nylea deals 2 damage to target creature with flying; or you gain 3 life; or put up to four target cards from your graveyard on the bottom of your library in any order.
+oracle=Attacking creatures you control have deathtouch.\n{1}{G}, {T}: Choose one —\n• Put a +1/+1 counter on target creature.\n• Bow of Nylea deals 2 damage to target creature with flying.\n• You gain 3 life.\n• Put up to four target cards from your graveyard on the bottom of your library in any order.

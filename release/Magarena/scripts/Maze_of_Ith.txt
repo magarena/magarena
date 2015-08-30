@@ -1,5 +1,5 @@
 name=Maze of Ith
-image=http://mtgimage.com/card/maze%20of%20ith.jpg
+image=http://magiccards.info/scans/en/me4/246.jpg
 value=4.564
 rarity=U
 type=Land

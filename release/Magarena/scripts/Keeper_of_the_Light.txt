@@ -1,0 +1,11 @@
+name=Keeper of the Light
+image=http://magiccards.info/scans/en/ex/8.jpg
+value=3.320
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={W}{W}
+pt=1/2
+timing=main
+requires_groovy_code
+oracle={W}, {T}: Choose target opponent who had more life than you did as you activated this ability. You gain 3 life.

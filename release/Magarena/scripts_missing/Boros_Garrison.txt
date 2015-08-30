@@ -1,10 +1,10 @@
 name=Boros Garrison
-image=http://mtgimage.com/card/boros%20garrison.jpg
+image=http://magiccards.info/scans/en/c13/279.jpg
 value=2.500
 rarity=C
 type=Land
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, return a land you control to its owner's hand.;\
         {T}: Add {R}{W} to your mana pool.
-timing=main
-oracle=Boros Garrison enters the battlefield tapped. When Boros Garrison enters the battlefield, return a land you control to its owner's hand. {T}: Add {R}{W} to your mana pool.
+timing=land
+oracle=Boros Garrison enters the battlefield tapped.\nWhen Boros Garrison enters the battlefield, return a land you control to its owner's hand.\n{T}: Add {R}{W} to your mana pool.

@@ -1,5 +1,5 @@
 name=Decorated Griffin
-image=http://mtgimage.com/card/decorated%20griffin.jpg
+image=http://magiccards.info/scans/en/ths/7.jpg
 value=2.557
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={4}{W}
 pt=2/3
 ability=flying;{1}{W}: Prevent the next 1 damage that would be dealt to you this turn.
 timing=main
-oracle=Flying. {1}{W}: Prevent the next 1 combat damage that would be dealt to you this turn.
+oracle=Flying\n{1}{W}: Prevent the next 1 combat damage that would be dealt to you this turn.

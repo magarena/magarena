@@ -1,5 +1,5 @@
 name=Skyhunter Skirmisher
-image=http://mtgimage.com/card/skyhunter%20skirmisher.jpg
+image=http://magiccards.info/scans/en/c14/89.jpg
 value=3.931
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Lingering Souls
-image=http://mtgimage.com/card/lingering%20souls.jpg
+image=http://magiccards.info/scans/en/md1/11.jpg
 value=3.542
 rarity=U
 type=Sorcery
@@ -7,4 +7,4 @@ cost={2}{W}
 effect=Put two 1/1 white Spirit creature tokens with flying onto the battlefield.
 ability=Flashback {1}{B}
 timing=main
-oracle=Put two 1/1 white Spirit creature tokens with flying onto the battlefield. Flashback {1}{B}
+oracle=Put two 1/1 white Spirit creature tokens with flying onto the battlefield.\nFlashback {1}{B}

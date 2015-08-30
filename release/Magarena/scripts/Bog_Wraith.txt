@@ -1,5 +1,5 @@
 name=Bog Wraith
-image=http://mtgimage.com/card/bog%20wraith.jpg
+image=http://magiccards.info/scans/en/m10/86.jpg
 value=2.821
 ability=swampwalk
 rarity=U

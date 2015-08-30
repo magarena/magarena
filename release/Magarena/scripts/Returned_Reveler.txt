@@ -1,0 +1,11 @@
+name=Returned Reveler
+image=http://magiccards.info/scans/en/jou/79.jpg
+value=2.816
+rarity=C
+type=Creature
+subtype=Zombie,Satyr
+cost={1}{B}
+pt=1/3
+ability=When SN dies, each player puts the top three cards of his or her library into his or her graveyard.
+timing=main
+oracle=When Returned Reveler dies, each player puts the top three cards of his or her library into his or her graveyard.

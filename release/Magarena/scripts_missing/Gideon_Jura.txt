@@ -1,6 +1,6 @@
 name=Gideon Jura
-image=http://mtgimage.com/card/gideon%20jura.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m12/16.jpg
+value=4.098
 rarity=M
 type=Planeswalker
 subtype=Gideon
@@ -9,4 +9,4 @@ ability=+2: During target opponent's next turn, creatures that player controls a
         −2: Destroy target tapped creature.;\
         0: Until end of turn, SN becomes a 6/6 Human Soldier creature that's still a planeswalker. Prevent all damage that would be dealt to him this turn.
 timing=main
-oracle=+2: During target opponent's next turn, creatures that player controls attack Gideon Jura if able. −2: Destroy target tapped creature. 0: Until end of turn, Gideon Jura becomes a 6/6 Human Soldier creature that's still a planeswalker. Prevent all damage that would be dealt to him this turn.
+oracle=+2: During target opponent's next turn, creatures that player controls attack Gideon Jura if able.\n−2: Destroy target tapped creature.\n0: Until end of turn, Gideon Jura becomes a 6/6 Human Soldier creature that's still a planeswalker. Prevent all damage that would be dealt to him this turn.

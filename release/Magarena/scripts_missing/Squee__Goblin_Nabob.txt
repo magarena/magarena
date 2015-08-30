@@ -1,6 +1,6 @@
 name=Squee, Goblin Nabob
-image=http://mtgimage.com/card/squee%2C%20goblin%20nabob.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mma/130.jpg
+value=4.521
 rarity=R
 type=Legendary,Creature
 subtype=Goblin

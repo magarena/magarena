@@ -1,5 +1,5 @@
 name=Kavu Lair
-image=http://mtgimage.com/card/kavu%20lair.jpg
+image=http://magiccards.info/scans/en/in/193.jpg
 value=3.757
 rarity=R
 type=Enchantment

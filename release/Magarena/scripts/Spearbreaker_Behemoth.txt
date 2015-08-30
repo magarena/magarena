@@ -1,5 +1,5 @@
 name=Spearbreaker Behemoth
-image=http://mtgimage.com/card/spearbreaker%20behemoth.jpg
+image=http://magiccards.info/scans/en/ala/150.jpg
 value=3.464
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=5/5
 ability=Indestructible;\
         {1}: Target creature with power 5 or greater gains indestructible until end of turn.
 timing=main
-oracle=Indestructible. {1}: Target creature with power 5 or greater gains indestructible until end of turn.
+oracle=Indestructible\n{1}: Target creature with power 5 or greater gains indestructible until end of turn.

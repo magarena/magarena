@@ -1,6 +1,6 @@
 name=Incremental Growth
-image=http://mtgimage.com/card/incremental%20growth.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/138.jpg
+value=3.333
 rarity=U
 type=Sorcery
 cost={3}{G}{G}

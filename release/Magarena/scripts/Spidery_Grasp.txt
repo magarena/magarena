@@ -1,9 +1,9 @@
 name=Spidery Grasp
-image=http://mtgimage.com/card/spidery%20grasp.jpg
+image=http://magiccards.info/scans/en/isd/204.jpg
 value=2.730
 rarity=C
 type=Instant
 cost={2}{G}
+effect=Untap target creature.~*It* gets +2/+4 and gains reach until end of turn.
 timing=tapping
-requires_groovy_code
 oracle=Untap target creature. It gets +2/+4 and gains reach until end of turn.

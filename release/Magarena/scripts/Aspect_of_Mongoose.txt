@@ -1,5 +1,5 @@
 name=Aspect of Mongoose
-image=http://mtgimage.com/card/aspect%20of%20mongoose.jpg
+image=http://magiccards.info/scans/en/ts/191.jpg
 value=3.862
 rarity=U
 type=Enchantment
@@ -9,4 +9,4 @@ ability=Enchanted creature has shroud.;\
         When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.
 timing=aura
 enchant=shroud,pos creature
-oracle=Enchant creature. Enchanted creature has shroud. When Aspect of Mongoose is put into a graveyard from the battlefield, return Aspect of Mongoose to its owner's hand.
+oracle=Enchant creature\nEnchanted creature has shroud.\nWhen Aspect of Mongoose is put into a graveyard from the battlefield, return Aspect of Mongoose to its owner's hand.

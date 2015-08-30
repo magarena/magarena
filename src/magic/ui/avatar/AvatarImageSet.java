@@ -47,7 +47,7 @@ public class AvatarImageSet {
                 final String filePath = itr.next().toAbsolutePath().toString();
                 final InputStream ins = new FileInputStream(new File(filePath));
                 final BufferedImage image = ImageFileIO.toImg(ins, IconImages.MISSING);
-                this.sampleImage = new ImageIcon(magic.ui.GraphicsUtilities.scale(image, PlayerAvatar.MEDIUM_SIZE, PlayerAvatar.MEDIUM_SIZE));
+                this.sampleImage = new ImageIcon(magic.ui.utility.GraphicsUtils.scale(image, PlayerAvatar.MEDIUM_SIZE, PlayerAvatar.MEDIUM_SIZE));
             }
         } catch (IOException e) {
             e.printStackTrace();

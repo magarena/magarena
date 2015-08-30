@@ -1,5 +1,5 @@
 name=Crumbling Necropolis
-image=http://mtgimage.com/card/crumbling%20necropolis.jpg
+image=http://magiccards.info/scans/en/c13/283.jpg
 value=3.893
 rarity=U
 type=Land
@@ -7,4 +7,4 @@ mana=u3b3r3
 ability={T}: Add {U} or {B} or {R} to your mana pool.;\
         SN enters the battlefield tapped.
 timing=tapland
-oracle=Crumbling Necropolis enters the battlefield tapped. {T}: Add {U}, {B}, or {R} to your mana pool.
+oracle=Crumbling Necropolis enters the battlefield tapped.\n{T}: Add {U}, {B}, or {R} to your mana pool.

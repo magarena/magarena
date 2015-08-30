@@ -1,11 +1,11 @@
 name=Curse of Thirst
-image=http://mtgimage.com/card/curse%20of%20thirst.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dka/57.jpg
+value=2.173
 rarity=U
 type=Enchantment
 subtype=Aura,Curse
 cost={4}{B}
 ability=Enchant player;\
         At the beginning of enchanted player's upkeep, SN deals damage to that player equal to the number of Curses attached to him or her.
-timing=main
-oracle=Enchant player. At the beginning of enchanted player's upkeep, Curse of Thirst deals damage to that player equal to the number of Curses attached to him or her.
+timing=aura
+oracle=Enchant player\nAt the beginning of enchanted player's upkeep, Curse of Thirst deals damage to that player equal to the number of Curses attached to him or her.

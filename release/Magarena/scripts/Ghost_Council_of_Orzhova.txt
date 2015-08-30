@@ -1,5 +1,5 @@
 name=Ghost Council of Orzhova
-image=http://mtgimage.com/card/ghost%20council%20of%20orzhova.jpg
+image=http://magiccards.info/scans/en/gp/114.jpg
 value=3.929
 rarity=R
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=When SN enters the battlefield, target opponent loses 1 life and you gain 1 life.;\
         {1}, Sacrifice a creature: Exile SN. Return it to the battlefield under its owner's control at the beginning of the next end step.
 timing=main
-oracle=When Ghost Council of Orzhova enters the battlefield, target opponent loses 1 life and you gain 1 life. {1}, Sacrifice a creature: Exile Ghost Council of Orzhova. Return it to the battlefield under its owner's control at the beginning of the next end step.
+oracle=When Ghost Council of Orzhova enters the battlefield, target opponent loses 1 life and you gain 1 life.\n{1}, Sacrifice a creature: Exile Ghost Council of Orzhova. Return it to the battlefield under its owner's control at the beginning of the next end step.

@@ -1,0 +1,12 @@
+name=Unyaro Griffin
+image=http://magiccards.info/scans/en/6e/49.jpg
+value=2.797
+rarity=U
+type=Creature
+subtype=Griffin
+cost={3}{W}
+pt=2/2
+ability=Flying
+timing=main
+requires_groovy_code
+oracle=Flying\nSacrifice Unyaro Griffin: Counter target red instant or sorcery spell.

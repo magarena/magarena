@@ -1,5 +1,5 @@
 name=Pursuit of Flight
-image=http://mtgimage.com/card/pursuit%20of%20flight.jpg
+image=http://magiccards.info/scans/en/rtr/102.jpg
 value=2.500
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={1}{R}
 ability=Enchanted creature gets +2/+2 and has "{U}: SN gains flying until end of turn."
 enchant=pump,pos creature
 timing=aura
-oracle=Enchant creature. Enchanted creature gets +2/+2 and has "{U}: This creature gains flying until end of turn."
+oracle=Enchant creature\nEnchanted creature gets +2/+2 and has "{U}: This creature gains flying until end of turn."

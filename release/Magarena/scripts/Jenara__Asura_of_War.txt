@@ -1,5 +1,5 @@
 name=Jenara, Asura of War
-image=http://mtgimage.com/card/jenara%2C%20asura%20of%20war.jpg
+image=http://magiccards.info/scans/en/arb/128.jpg
 value=4.005
 rarity=M
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=flying;\
         {1}{W}: Put a +1/+1 counter on SN.
 timing=main
-oracle=Flying. {1}{W}: Put a +1/+1 counter on Jenara, Asura of War.
+oracle=Flying\n{1}{W}: Put a +1/+1 counter on Jenara, Asura of War.

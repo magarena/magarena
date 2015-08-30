@@ -1,5 +1,5 @@
 name=Wall of Essence
-image=http://mtgimage.com/card/wall%20of%20essence.jpg
+image=http://magiccards.info/scans/en/m15/41.jpg
 value=3.000
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=0/4
 ability=defender
 timing=main
 requires_groovy_code
-oracle=Defender. Whenever Wall of Essence is dealt combat damage, you gain that much life.
+oracle=Defender\nWhenever Wall of Essence is dealt combat damage, you gain that much life.

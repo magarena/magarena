@@ -1,5 +1,5 @@
 name=Skeletal Snake
-image=http://mtgimage.com/card/skeletal%20snake.jpg
+image=http://magiccards.info/scans/en/po/34.jpg
 value=2.210
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Snake,Skeleton
 cost={1}{B}
 pt=2/1
 timing=main
+oracle=NONE

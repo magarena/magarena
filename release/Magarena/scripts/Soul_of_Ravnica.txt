@@ -1,0 +1,13 @@
+name=Soul of Ravnica
+image=http://magiccards.info/scans/en/m15/78.jpg
+value=3.455
+rarity=M
+type=Creature
+subtype=Avatar
+cost={4}{U}{U}
+pt=6/6
+ability=Flying;\
+        {5}{U}{U}: Draw a card for each color among permanents you control.;\
+        {5}{U}{U}, Exile SN from your graveyard: Draw a card for each color among permanents you control.
+timing=main
+oracle=Flying\n{5}{U}{U}: Draw a card for each color among permanents you control.\n{5}{U}{U}, Exile Soul of Ravnica from your graveyard: Draw a card for each color among permanents you control.

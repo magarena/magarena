@@ -1,6 +1,6 @@
 name=Defender of Chaos
-image=http://mtgimage.com/card/defender%20of%20chaos.jpg
-value=4.065
+image=http://magiccards.info/scans/en/ul/75.jpg
+value=4.047
 rarity=C
 type=Creature
 subtype=Human,Knight
@@ -8,4 +8,4 @@ cost={2}{R}
 pt=2/1
 ability=flash;protection from white
 timing=flash
-oracle=Flash. Protection from white
+oracle=Flash\nProtection from white

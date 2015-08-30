@@ -1,6 +1,6 @@
 name=Vodalian War Machine
-image=http://mtgimage.com/card/vodalian%20war%20machine.jpg
-value=2.500
+image=http://magiccards.info/scans/en/fe/66.jpg
+value=3.290
 rarity=R
 type=Creature
 subtype=Wall
@@ -11,4 +11,4 @@ ability=Defender;\
         Tap an untapped Merfolk you control: SN gets +2/+1 until end of turn.;\
         When SN dies, destroy all Merfolk tapped this turn to pay for its abilities.
 timing=main
-oracle=Defender. Tap an untapped Merfolk you control: Vodalian War Machine can attack this turn as though it didn't have defender. Tap an untapped Merfolk you control: Vodalian War Machine gets +2/+1 until end of turn. When Vodalian War Machine dies, destroy all Merfolk tapped this turn to pay for its abilities.
+oracle=Defender\nTap an untapped Merfolk you control: Vodalian War Machine can attack this turn as though it didn't have defender.\nTap an untapped Merfolk you control: Vodalian War Machine gets +2/+1 until end of turn.\nWhen Vodalian War Machine dies, destroy all Merfolk tapped this turn to pay for its abilities.

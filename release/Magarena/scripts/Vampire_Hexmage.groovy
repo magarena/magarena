@@ -1,5 +1,5 @@
 def PERMANENT_COUNTERS = new MagicPermanentFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
         return target.hasCounters();
     }
 };
@@ -32,7 +32,7 @@ def TARGET_PERMANENT_WITH_COUNTERS = new MagicTargetChoice(
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 for (final MagicCounterType counterType : it.getCounterTypes()) {
-                    game.doAction(new MagicChangeCountersAction(it,counterType,-it.getCounters(counterType)));
+                    game.doAction(new ChangeCountersAction(it,counterType,-it.getCounters(counterType)));
                 }
             });
         }

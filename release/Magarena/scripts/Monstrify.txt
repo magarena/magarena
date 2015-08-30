@@ -1,10 +1,10 @@
 name=Monstrify
-image=http://mtgimage.com/card/monstrify.jpg
+image=http://magiccards.info/scans/en/eve/70.jpg
 value=2.107
 rarity=C
 type=Sorcery
 cost={3}{G}
 ability=Retrace
 effect=Target creature gets +4/+4 until end of turn.
-timing=pump
-oracle=Target creature gets +4/+4 until end of turn. Retrace
+timing=fmain
+oracle=Target creature gets +4/+4 until end of turn.\nRetrace

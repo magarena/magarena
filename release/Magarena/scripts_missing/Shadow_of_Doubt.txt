@@ -1,9 +1,9 @@
 name=Shadow of Doubt
-image=http://mtgimage.com/card/shadow%20of%20doubt.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rav/253.jpg
+value=4.113
 rarity=R
 type=Instant
 cost={U/B}{U/B}
 effect=Players can't search libraries this turn.~Draw a card.
 timing=removal
-oracle=Players can't search libraries this turn. Draw a card.
+oracle=Players can't search libraries this turn.\nDraw a card.

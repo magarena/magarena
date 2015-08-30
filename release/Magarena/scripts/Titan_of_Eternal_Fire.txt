@@ -1,5 +1,5 @@
 name=Titan of Eternal Fire
-image=http://mtgimage.com/card/titan%20of%20eternal%20fire.jpg
+image=http://magiccards.info/scans/en/ths/144.jpg
 value=3.388
 rarity=R
 type=Creature

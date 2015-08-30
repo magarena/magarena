@@ -1,11 +1,12 @@
 name=Duskmantle Guildmage
-image=http://mtgimage.com/card/duskmantle%20guildmage.jpg
+image=http://magiccards.info/scans/en/gtc/158.jpg
 value=3.870
 rarity=U
 type=Creature
 subtype=Human,Wizard
 cost={U}{B}
 pt=2/2
+ability={2}{U}{B}: Target player puts the top two cards of his or her library into his or her graveyard.
 timing=main
 requires_groovy_code
-oracle={1}{U}{B}: Whenever a card is put into an opponent's graveyard from anywhere this turn, that player loses 1 life. {2}{U}{B}: Target player puts the top two cards of his or her library into his or her graveyard.
+oracle={1}{U}{B}: Whenever a card is put into an opponent's graveyard from anywhere this turn, that player loses 1 life.\n{2}{U}{B}: Target player puts the top two cards of his or her library into his or her graveyard.

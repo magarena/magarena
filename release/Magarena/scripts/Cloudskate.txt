@@ -1,5 +1,5 @@
 name=Cloudskate
-image=http://mtgimage.com/card/cloudskate.jpg
+image=http://magiccards.info/scans/en/ne/29.jpg
 value=3.184
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{U}
 pt=2/2
 ability=flying;fading 3
 timing=main
-oracle=Flying. Fading 3
+oracle=Flying\nFading 3

@@ -1,0 +1,12 @@
+name=Swift Warkite
+image=http://magiccards.info/scans/en/dtk/233.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dragon
+cost={4}{B}{R}
+pt=4/4
+ability=Flying;\
+        When SN enters the battlefield, you may put a creature card with converted mana cost 3 or less from your hand or graveyard onto the battlefield. That creature gains haste. Return it to your hand at the beginning of the next end step.
+timing=main
+oracle=Flying\nWhen Swift Warkite enters the battlefield, you may put a creature card with converted mana cost 3 or less from your hand or graveyard onto the battlefield. That creature gains haste. Return it to your hand at the beginning of the next end step.

@@ -1,5 +1,5 @@
 name=Kiss of the Amesha
-image=http://mtgimage.com/card/kiss%20of%20the%20amesha.jpg
+image=http://magiccards.info/scans/en/ala/177.jpg
 value=3.021
 rarity=U
 type=Sorcery

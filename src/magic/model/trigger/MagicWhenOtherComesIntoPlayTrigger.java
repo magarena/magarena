@@ -6,7 +6,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicType;
-import magic.model.action.MagicChangeCountersAction;
+import magic.model.action.ChangeCountersAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSoulbondEvent;
@@ -29,23 +29,11 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
         return new MagicWhenOtherComesIntoPlayTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent played) {
-                return permanent == played || filter.accept(permanent.getGame(), permanent.getController(), played);
+                return permanent == played || filter.accept(permanent, permanent.getController(), played);
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent played) {
-                return sourceEvent.getEvent(permanent);
-            }
-        };
-    }
-    public static final MagicWhenOtherComesIntoPlayTrigger createAnother(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
-        return new MagicWhenOtherComesIntoPlayTrigger() {
-            @Override
-            public boolean accept(final MagicPermanent permanent, final MagicPermanent played) {
-                return permanent != played && filter.accept(permanent.getGame(), permanent.getController(), played);
-            }
-            @Override
-            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent played) {
-                return sourceEvent.getEvent(permanent);
+                return sourceEvent.getEvent(permanent, played);
             }
         };
     }
@@ -54,11 +42,11 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
         return new MagicWhenOtherComesIntoPlayTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent played) {
-                return filter.accept(permanent.getGame(), permanent.getController(), played);
+                return filter.accept(permanent, permanent.getController(), played);
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent played) {
-                return sourceEvent.getEvent(permanent);
+                return sourceEvent.getEvent(permanent, played);
             }
         };
     }
@@ -82,7 +70,7 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.getRefPermanent().getPowerValue() > event.getPermanent().getPowerValue() ||
                 event.getRefPermanent().getToughnessValue() > event.getPermanent().getToughnessValue()) {
-                    game.doAction(new MagicChangeCountersAction(
+                    game.doAction(new ChangeCountersAction(
                         event.getPermanent(),
                         MagicCounterType.PlusOne,
                         1
@@ -108,13 +96,13 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isYes()) {
-                game.doAction(new MagicChangeCountersAction(
+            if (event.isYes() && event.getPermanent().hasCounters(MagicCounterType.PlusOne)) {
+                game.doAction(new ChangeCountersAction(
                     event.getPermanent(),
                     MagicCounterType.PlusOne,
                     -1
                 ));
-                game.doAction(new MagicChangeCountersAction(
+                game.doAction(new ChangeCountersAction(
                     event.getRefPermanent(),
                     MagicCounterType.PlusOne,
                     1
@@ -131,10 +119,10 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
                 controller.getNrOfPermanents(MagicType.Creature) > 1) {
                 final boolean hasSoulbond = otherPermanent.hasAbility(MagicAbility.Soulbond);
                 if ((hasSoulbond &&
-                     game.filterPermanents(controller,MagicTargetFilterFactory.UNPAIRED_CREATURE_YOU_CONTROL).size() > 1)
+                     MagicTargetFilterFactory.UNPAIRED_CREATURE_YOU_CONTROL.filter(controller).size() > 1)
                     ||
                     (!hasSoulbond &&
-                     game.filterPermanents(controller,MagicTargetFilterFactory.UNPAIRED_SOULBOND_CREATURE).size() > 0)) {
+                     MagicTargetFilterFactory.UNPAIRED_SOULBOND_CREATURE.filter(controller).size() > 0)) {
                     return new MagicSoulbondEvent(otherPermanent,hasSoulbond);
                 } else {
                     return MagicEvent.NONE;

@@ -1,0 +1,11 @@
+name=Prickleboar
+image=http://magiccards.info/scans/en/ori/158.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Boar
+cost={4}{R}
+pt=3/3
+ability=As long as it's your turn, SN gets +2/+0 and has first strike.
+timing=main
+oracle=As long as it's your turn, Prickleboar gets +2/+0 and has first strike.

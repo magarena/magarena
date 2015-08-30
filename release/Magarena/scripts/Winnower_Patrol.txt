@@ -1,0 +1,11 @@
+name=Winnower Patrol
+image=http://magiccards.info/scans/en/mt/139.jpg
+value=3.522
+rarity=C
+type=Creature
+subtype=Elf,Warrior
+cost={2}{G}
+pt=3/2
+ability=At the beginning of your upkeep, you may look at the top card of your library. If it shares a creature type with SN, you may reveal it. If you do, put a +1/+1 counter on SN.
+timing=main
+oracle=Kinship — At the beginning of your upkeep, you may look at the top card of your library. If it shares a creature type with Winnower Patrol, you may reveal it. If you do, put a +1/+1 counter on Winnower Patrol.

@@ -1,6 +1,6 @@
 name=Void
-image=http://mtgimage.com/card/void.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tsts/105.jpg
+value=4.327
 rarity=R
 type=Sorcery
 cost={3}{B}{R}

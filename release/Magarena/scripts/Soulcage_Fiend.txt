@@ -1,5 +1,5 @@
 name=Soulcage Fiend
-image=http://mtgimage.com/card/soulcage%20fiend.jpg
+image=http://magiccards.info/scans/en/avr/120.jpg
 value=3.064
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Grizzly Bears
-image=http://mtgimage.com/card/grizzly%20bears.jpg
+image=http://magiccards.info/scans/en/10e/268.jpg
 value=3.745
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Bear
 cost={1}{G}
 pt=2/2
 timing=main
+oracle=NONE

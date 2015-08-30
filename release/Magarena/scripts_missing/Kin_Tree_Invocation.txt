@@ -1,6 +1,6 @@
 name=Kin-Tree Invocation
-image=http://mtgimage.com/card/kin-tree%20invocation.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/183.jpg
+value=3.500
 rarity=U
 type=Sorcery
 cost={B}{G}

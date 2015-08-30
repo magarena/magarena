@@ -13,16 +13,13 @@ def ConsumptionUpkeep = new MagicAtYourUpkeepTrigger() {
         if (event.isYes()) {
             game.addEvent(new MagicPayLifeEvent(event.getSource(), event.getPlayer(), 1));
         } else {
-            game.doAction(new MagicSacrificeAction(event.getPermanent()));
+            game.doAction(new SacrificeAction(event.getPermanent()));
         }
     }
 };
 
 [
-    new MagicStatic(
-        MagicLayer.Ability,
-        MagicTargetFilterFactory.CREATURE
-    ) {
+    new MagicStatic(MagicLayer.Ability, CREATURE) {
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
             permanent.addAbility(ConsumptionUpkeep);

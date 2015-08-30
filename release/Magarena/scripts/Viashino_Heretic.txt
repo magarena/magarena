@@ -1,0 +1,11 @@
+name=Viashino Heretic
+image=http://magiccards.info/scans/en/ul/95.jpg
+value=4.443
+rarity=U
+type=Creature
+subtype=Viashino
+cost={2}{R}
+pt=1/3
+timing=main
+requires_groovy_code
+oracle={1}{R}, {T}: Destroy target artifact. Viashino Heretic deals damage to that artifact's controller equal to the artifact's converted mana cost.

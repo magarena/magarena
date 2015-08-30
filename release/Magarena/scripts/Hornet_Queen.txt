@@ -1,5 +1,5 @@
 name=Hornet Queen
-image=http://mtgimage.com/card/hornet%20queen.jpg
+image=http://magiccards.info/scans/en/m15/178.jpg
 value=3.812
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=flying;\
         When SN enters the battlefield, put four 1/1 green Insect creature tokens with flying and deathtouch onto the battlefield.
 pt=2/2
 timing=main
-oracle=Flying, deathtouch. When Hornet Queen enters the battlefield, put four 1/1 green Insect creature tokens with flying and deathtouch onto the battlefield.
+oracle=Flying\nDeathtouch\nWhen Hornet Queen enters the battlefield, put four 1/1 green Insect creature tokens with flying and deathtouch onto the battlefield.

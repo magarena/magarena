@@ -1,6 +1,6 @@
 name=Champion of Lambholt
-image=http://mtgimage.com/card/champion%20of%20lambholt.jpg
-value=2.500
+image=http://magiccards.info/scans/en/avr/171.jpg
+value=3.922
 rarity=R
 type=Creature
 subtype=Human,Warrior
@@ -9,4 +9,4 @@ pt=1/1
 ability=Creatures with power less than SN's power can't block creatures you control.;\
         Whenever another creature enters the battlefield under your control, put a +1/+1 counter on SN.
 timing=main
-oracle=Creatures with power less than Champion of Lambholt's power can't block creatures you control. Whenever another creature enters the battlefield under your control, put a +1/+1 counter on Champion of Lambholt.
+oracle=Creatures with power less than Champion of Lambholt's power can't block creatures you control.\nWhenever another creature enters the battlefield under your control, put a +1/+1 counter on Champion of Lambholt.

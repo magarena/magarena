@@ -1,5 +1,5 @@
 name=Zealot il-Vec
-image=http://mtgimage.com/card/zealot%20il%2Dvec.jpg
+image=http://magiccards.info/scans/en/ts/47.jpg
 value=2.684
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=shadow
 timing=main
 requires_groovy_code
-oracle=Shadow. Whenever Zealot il-Vec attacks and isn't blocked, you may have it deal 1 damage to target creature. If you do, prevent all combat damage Zealot il-Vec would deal this turn.
+oracle=Shadow\nWhenever Zealot il-Vec attacks and isn't blocked, you may have it deal 1 damage to target creature. If you do, prevent all combat damage Zealot il-Vec would deal this turn.

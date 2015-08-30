@@ -1,0 +1,11 @@
+name=Parallel Evolution
+image=http://magiccards.info/scans/en/tr/136.jpg
+value=3.565
+rarity=R
+type=Sorcery
+cost={3}{G}{G}
+ability=Cast SN with AI only if you control a creature token.;\
+        Flashback {4}{G}{G}{G}
+timing=main
+requires_groovy_code
+oracle=For each creature token on the battlefield, its controller puts a token that's a copy of that creature onto the battlefield.\nFlashback {4}{G}{G}{G}

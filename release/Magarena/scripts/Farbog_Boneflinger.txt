@@ -1,5 +1,5 @@
 name=Farbog Boneflinger
-image=http://mtgimage.com/card/farbog%20boneflinger.jpg
+image=http://magiccards.info/scans/en/dka/61.jpg
 value=1.340
 rarity=U
 removal=2

@@ -1,9 +1,0 @@
-name=Greater Good
-image=http://mtgimage.com/card/greater%20good.jpg
-value=2.500
-rarity=R
-type=Enchantment
-cost={2}{G}{G}
-ability=Sacrifice a creature: Draw cards equal to the sacrificed creature's power, then discard three cards.
-timing=main
-oracle=Sacrifice a creature: Draw cards equal to the sacrificed creature's power, then discard three cards.

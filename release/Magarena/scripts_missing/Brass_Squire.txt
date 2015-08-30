@@ -1,11 +1,11 @@
 name=Brass Squire
-image=http://mtgimage.com/card/brass%20squire.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mbs/101.jpg
+value=3.658
 rarity=U
 type=Artifact,Creature
 subtype=Myr
 cost={3}
 pt=1/3
 ability={T}: Attach target Equipment you control to target creature you control.
-timing=main
+timing=artifact
 oracle={T}: Attach target Equipment you control to target creature you control.

@@ -1,10 +1,9 @@
 name=Wake the Dead
-image=http://mtgimage.com/card/wake%20the%20dead.jpg
+image=http://magiccards.info/scans/en/c14/31.jpg
 value=2.500
 rarity=R
 type=Instant
 cost={X}{B}{B}
-ability=Cast SN only during combat on an opponent's turn.
-effect=Return X target creature cards from your graveyard to the battlefield. Sacrifice those creatures at the beginning of the next end step.
-timing=attack
-oracle=Cast Wake the Dead only during combat on an opponent's turn. Return X target creature cards from your graveyard to the battlefield. Sacrifice those creatures at the beginning of the next end step.
+effect=Cast SN only during combat on an opponent's turn.~Return X target creature cards from your graveyard to the battlefield. Sacrifice those creatures at the beginning of the next end step.
+timing=removal
+oracle=Cast Wake the Dead only during combat on an opponent's turn.\nReturn X target creature cards from your graveyard to the battlefield. Sacrifice those creatures at the beginning of the next end step.

@@ -1,5 +1,5 @@
 name=Harbor Serpent
-image=http://mtgimage.com/card/harbor%20serpent.jpg
+image=http://magiccards.info/scans/en/m13/53.jpg
 value=2.395
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=5/5
 ability=Islandwalk;\
         SN can't attack unless there are five or more Islands on the battlefield.
 timing=main
-oracle=Islandwalk. Harbor Serpent can't attack unless there are five or more Islands on the battlefield.
+oracle=Islandwalk\nHarbor Serpent can't attack unless there are five or more Islands on the battlefield.

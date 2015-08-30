@@ -1,5 +1,5 @@
 name=Stormsurge Kraken
-image=http://mtgimage.com/card/stormsurge%20kraken.jpg
+image=http://magiccards.info/scans/en/c14/18.jpg
 value=2.500
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=5/5
 ability=Hexproof;\
         As long as you control your commander, SN gets +2/+2 and has "Whenever SN becomes blocked, you may draw two cards."
 timing=main
-oracle=Hexproof. Lieutenant — As long as you control your commander, Stormsurge Kraken gets +2/+2 and has "Whenever Stormsurge Kraken becomes blocked, you may draw two cards."
+oracle=Hexproof\nLieutenant — As long as you control your commander, Stormsurge Kraken gets +2/+2 and has "Whenever Stormsurge Kraken becomes blocked, you may draw two cards."

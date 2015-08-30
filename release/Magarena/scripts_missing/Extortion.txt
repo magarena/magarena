@@ -1,6 +1,6 @@
 name=Extortion
-image=http://mtgimage.com/card/extortion.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/135.jpg
+value=2.929
 rarity=R
 type=Sorcery
 cost={3}{B}{B}

@@ -1,27 +1,27 @@
 package magic.data;
 
-import java.awt.Dimension;
+import magic.utility.FileIO;
+import java.awt.Color;
 import java.io.File;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.Proxy;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Properties;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
 
 public class GeneralConfig {
 
-    public static final String VERSION = "1.58";
+    public static final String VERSION = "1.65";
     public static final String SOFTWARE_TITLE =
             "Magarena " + GeneralConfig.VERSION + (MagicSystem.isDevMode() ? " [DEV MODE]" : "");
 
-    private static final GeneralConfig INSTANCE=new GeneralConfig();
-
-    public static final Dimension MAXIMUM_CARD_SIZE = new Dimension(480, 680);
-    public static final Dimension HIGH_QUALITY_IMAGE_SIZE = new Dimension(480, 680);
-    public static final Dimension SMALL_SCREEN_IMAGE_SIZE = new Dimension(312, 445);
+    private static final GeneralConfig INSTANCE = new GeneralConfig();
 
     public static final String CONFIG_FILENAME="general.cfg";
     private static final String LEFT="left";
@@ -37,14 +37,10 @@ public class GeneralConfig {
     private static final String SMART_TARGET="target";
     private static final String POPUP_DELAY="popup";
     private static final String MESSAGE_DELAY = "message";
-    private static final String STRENGTH_DIFFICULTY="strengthDifficulty";
-    private static final String STRENGTH_GAMES="strengthGames";
     private static final String HIGH_QUALITY="hq";
     private static final String SOUND="sound";
     private static final String TOUCHSCREEN = "touchscreen";
     private static final String MOUSEWHEEL_POPUP = "mousewheel";
-    private static final String LOG_SCROLLBAR = "logScrollbar";
-    private static final String LOG_TOPINSERT = "logTopInsert";
     private static final String FULLSCREEN = "fullScreen";
     private static final String PREVIEW_CARD_ON_SELECT = "previewCardOnSelect";
     private static final String SHOW_LOG_MESSAGES = "showLogMessages";
@@ -67,9 +63,12 @@ public class GeneralConfig {
     private static final String IGNORED_VERSION_ALERT = "ignoredVersionAlert";
     private static final String UI_SOUND = "uiSound";
     private static final String PAUSE_GAME_POPUP = "pauseGamePopup";
-
-    // The most common size of card retrieved from http://mtgimage.com.
-    public static final Dimension PREFERRED_CARD_SIZE = HIGH_QUALITY_IMAGE_SIZE;
+    private static final String DOWNLOADER_RUN_DATE = "imageDownloaderRunDate";
+    private static final String DUEL_SIDEBAR_LAYOUT ="duelSidebarLayout";
+    private static final String HIDE_AI_ACTION_PROMPT ="hideAiActionPrompt";
+    private static final String ROLLOVER_COLOR ="rolloverColor";
+    private static final String UI_SOUND_VOLUME = "uiSoundVolume";
+    private static final String TRANSLATION = "translation";
 
     private static final int DEFAULT_LEFT=-1;
     private static final int DEFAULT_TOP=0;
@@ -82,17 +81,13 @@ public class GeneralConfig {
     private static final boolean DEFAULT_TEXT_VIEW = false;
     private static final boolean DEFAULT_SINGLE=true;
     private static final boolean DEFAULT_PASS=true;
-    private static final boolean DEFAULT_TARGET=true;
+    private static final boolean DEFAULT_TARGET=false;
     private static final int DEFAULT_POPUP_DELAY=300;
     private static final int DEFAULT_MESSAGE_DELAY = 2000;
-    private static final int DEFAULT_STRENGTH_DIFFICULTY=2;
-    private static final int DEFAULT_STRENGTH_GAMES=100;
     private static final boolean DEFAULT_HIGH_QUALITY=false;
     private static final boolean DEFAULT_SOUND=true;
     private static final boolean DEFAULT_TOUCHSCREEN = false;
     private static final boolean DEFAULT_MOUSEWHEEL_POPUP = false;
-    private static final boolean DEFAULT_LOG_SCROLLBAR = true;
-    private static final boolean DEFAULT_LOG_TOPINSERT = false;
     private static final boolean DEFAULT_FULLSCREEN = false;
     private static final boolean DEFAULT_PREVIEW_CARD_ON_SELECT = true;
     private static final boolean DEFAULT_SHOW_LOG_MESSAGES = true;
@@ -106,6 +101,12 @@ public class GeneralConfig {
     private static final double DEFAULT_CARD_POPUP_SCALE = 1.0d;
     private static final int DEFAULT_OVERLAY_PERMANENT_MIN_HEIGHT = 30; // pixels
     private static final boolean DEFAULT_PAUSE_GAME_POPUP = false;
+    private static final String DEFAULT_DOWNLOADER_RUN_DATE = "1970-01-01";
+    private static final String DEFAULT_DUEL_SIDEBAR_LAYOUT = "LOGSTACK,PLAYER2,TURNINFO,PLAYER1";
+    private static final boolean DEFAULT_HIDE_AI_ACTION_PROMPT = false;
+    private static final int DEFAULT_ROLLOVER_COLOR = Color.YELLOW.getRGB();
+    private static final int DEFAULT_SOUND_VOLUME = 50;
+    public static final String DEFAULT_TRANSLATION = "";
 
     private int left=DEFAULT_LEFT;
     private int top=DEFAULT_TOP;
@@ -121,19 +122,14 @@ public class GeneralConfig {
     private boolean smartTarget=DEFAULT_TARGET;
     private int popupDelay=DEFAULT_POPUP_DELAY;
     private int messageDelay = DEFAULT_MESSAGE_DELAY;
-    private int strengthDifficulty=DEFAULT_STRENGTH_DIFFICULTY;
-    private int strengthGames=DEFAULT_STRENGTH_GAMES;
     private boolean highQuality=DEFAULT_HIGH_QUALITY;
     private boolean sound=DEFAULT_SOUND;
     private boolean touchscreen = DEFAULT_TOUCHSCREEN;
     private boolean mouseWheelPopup = DEFAULT_MOUSEWHEEL_POPUP;
-    private boolean isLogScrollbarVisible = DEFAULT_LOG_SCROLLBAR;
-    private boolean isLogMessageAddedToTop = DEFAULT_LOG_TOPINSERT;
     private boolean fullScreen = DEFAULT_FULLSCREEN;
     private boolean previewCardOnSelect = DEFAULT_PREVIEW_CARD_ON_SELECT;
     private boolean showLogMessages = DEFAULT_SHOW_LOG_MESSAGES;
     private boolean isMulliganScreenActive = DEFAULT_MULLIGAN_SCREEN;
-    private boolean isLogViewerDisabled = false;
     private String mostRecentDeckFilename = "";
     private boolean isMissingFiles = false;
     private boolean isCustomBackground = DEFAULT_CUSTOM_BACKGROUND;
@@ -153,6 +149,12 @@ public class GeneralConfig {
     private String ignoredVersionAlert = "";
     private boolean isUiSound = true;
     private boolean isGamePausedOnPopup = DEFAULT_PAUSE_GAME_POPUP;
+    private String imageDownloaderRunDate = DEFAULT_DOWNLOADER_RUN_DATE;
+    private String duelSidebarLayout = DEFAULT_DUEL_SIDEBAR_LAYOUT;
+    private boolean hideAiActionPrompt = DEFAULT_HIDE_AI_ACTION_PROMPT;
+    private Color rolloverColor = new Color(DEFAULT_ROLLOVER_COLOR);
+    private int uiSoundVolume = DEFAULT_SOUND_VOLUME;
+    private String translation = DEFAULT_TRANSLATION;
 
     private GeneralConfig() { }
 
@@ -250,27 +252,6 @@ public class GeneralConfig {
     }
     public void setMostRecentDeckFilename(final String filename) {
         mostRecentDeckFilename = filename.trim();
-    }
-
-    public boolean isLogViewerDisabled() {
-        return isLogViewerDisabled;
-    }
-    public void setLogViewerDisabled(boolean isLogViewerDisabled) {
-        this.isLogViewerDisabled = isLogViewerDisabled;
-    }
-
-    public boolean isLogMessageAddedToTop() {
-        return this.isLogMessageAddedToTop;
-    }
-    public void setLogMessageAddedToTop(final boolean b) {
-        this.isLogMessageAddedToTop = b;
-    }
-
-    public boolean isLogScrollbarVisible() {
-        return this.isLogScrollbarVisible;
-    }
-    public void setLogScrollbarVisible(final boolean b) {
-        this.isLogScrollbarVisible = b;
     }
 
     public int getLeft() {
@@ -399,22 +380,6 @@ public class GeneralConfig {
 
     public void setMessageDelay(final int messageDelay) {
         this.messageDelay = messageDelay;
-    }
-
-    public int getStrengthDifficulty() {
-        return strengthDifficulty;
-    }
-
-    public void setStrengthDifficulty(final int strengthDifficulty) {
-        this.strengthDifficulty=strengthDifficulty;
-    }
-
-    public int getStrengthGames() {
-        return strengthGames;
-    }
-
-    public void setStrengthGames(final int strengthGames) {
-        this.strengthGames=strengthGames;
     }
 
     public boolean isHighQuality() {
@@ -548,6 +513,54 @@ public class GeneralConfig {
         isGamePausedOnPopup = b;
     }
 
+    public String getDuelSidebarLayout() {
+        return duelSidebarLayout;
+    }
+    public void setDuelSidebarLayout(final String layout) {
+        duelSidebarLayout = layout;
+    }
+
+    public Date getImageDownloaderRunDate() {
+        try {
+            final SimpleDateFormat df = new SimpleDateFormat(CardProperty.IMAGE_UPDATED_FORMAT);
+            return df.parse(imageDownloaderRunDate);
+        } catch (ParseException ex) {
+            throw new RuntimeException(ex);
+        }
+    }
+    public void setImageDownloaderRunDate(final Date runDate) {
+        final SimpleDateFormat df = new SimpleDateFormat(CardProperty.IMAGE_UPDATED_FORMAT);
+        imageDownloaderRunDate = df.format(runDate);
+    }
+
+    public boolean getHideAiActionPrompt() {
+        return hideAiActionPrompt;
+    }
+    public void setHideAiActionPrompt(final boolean b) {
+        hideAiActionPrompt = b;
+    }
+
+    public Color getRolloverColor() {
+        return rolloverColor;
+    }
+    public void setRolloverColor(final Color aColor) {
+        rolloverColor = aColor;
+    }
+
+    public int getUiSoundVolume() {
+        return uiSoundVolume;
+    }
+    public void setUiSoundVolume(final int aInt) {
+        uiSoundVolume = aInt;
+    }
+
+    public String getTranslation() {
+        return translation;
+    }
+    public void setTranslation(final String aString) {
+        translation = aString;
+    }
+
     private void load(final Properties properties) {
         left=Integer.parseInt(properties.getProperty(LEFT,""+DEFAULT_LEFT));
         top=Integer.parseInt(properties.getProperty(TOP,""+DEFAULT_TOP));
@@ -562,14 +575,10 @@ public class GeneralConfig {
         smartTarget=Boolean.parseBoolean(properties.getProperty(SMART_TARGET,""+DEFAULT_TARGET));
         popupDelay=Integer.parseInt(properties.getProperty(POPUP_DELAY,""+DEFAULT_POPUP_DELAY));
         messageDelay = Integer.parseInt(properties.getProperty(MESSAGE_DELAY,"" + DEFAULT_MESSAGE_DELAY));
-        strengthDifficulty=Integer.parseInt(properties.getProperty(STRENGTH_DIFFICULTY,""+DEFAULT_STRENGTH_DIFFICULTY));
-        strengthGames=Integer.parseInt(properties.getProperty(STRENGTH_GAMES,""+DEFAULT_STRENGTH_GAMES));
         highQuality=Boolean.parseBoolean(properties.getProperty(HIGH_QUALITY,""+DEFAULT_HIGH_QUALITY));
         sound=Boolean.parseBoolean(properties.getProperty(SOUND,""+DEFAULT_SOUND));
         touchscreen = Boolean.parseBoolean(properties.getProperty(TOUCHSCREEN,""+DEFAULT_TOUCHSCREEN));
         mouseWheelPopup = Boolean.parseBoolean(properties.getProperty(MOUSEWHEEL_POPUP, "" + DEFAULT_MOUSEWHEEL_POPUP));
-        isLogScrollbarVisible = Boolean.parseBoolean(properties.getProperty(LOG_SCROLLBAR, "" + DEFAULT_LOG_SCROLLBAR));
-        isLogMessageAddedToTop = Boolean.parseBoolean(properties.getProperty(LOG_TOPINSERT, "" + DEFAULT_LOG_TOPINSERT));
         fullScreen = Boolean.parseBoolean(properties.getProperty(FULLSCREEN, "" + DEFAULT_FULLSCREEN));
         previewCardOnSelect = Boolean.parseBoolean(properties.getProperty(PREVIEW_CARD_ON_SELECT, "" + DEFAULT_PREVIEW_CARD_ON_SELECT));
         showLogMessages = Boolean.parseBoolean(properties.getProperty(SHOW_LOG_MESSAGES, "" + DEFAULT_SHOW_LOG_MESSAGES));
@@ -592,6 +601,12 @@ public class GeneralConfig {
         ignoredVersionAlert = properties.getProperty(IGNORED_VERSION_ALERT, "");
         isUiSound = Boolean.parseBoolean(properties.getProperty(UI_SOUND, "" + true));
         isGamePausedOnPopup = Boolean.parseBoolean(properties.getProperty(PAUSE_GAME_POPUP, "" + DEFAULT_PAUSE_GAME_POPUP));
+        imageDownloaderRunDate = properties.getProperty(DOWNLOADER_RUN_DATE, DEFAULT_DOWNLOADER_RUN_DATE);
+        duelSidebarLayout = properties.getProperty(DUEL_SIDEBAR_LAYOUT, DEFAULT_DUEL_SIDEBAR_LAYOUT);
+        hideAiActionPrompt = Boolean.parseBoolean(properties.getProperty(HIDE_AI_ACTION_PROMPT, "" + DEFAULT_HIDE_AI_ACTION_PROMPT));
+        rolloverColor = new Color(Integer.parseInt(properties.getProperty(ROLLOVER_COLOR, "" + DEFAULT_ROLLOVER_COLOR)));
+        uiSoundVolume = Integer.parseInt(properties.getProperty(UI_SOUND_VOLUME, "" + DEFAULT_SOUND_VOLUME));
+        translation = properties.getProperty(TRANSLATION, DEFAULT_TRANSLATION);
     }
 
     public void load() {
@@ -612,14 +627,10 @@ public class GeneralConfig {
         properties.setProperty(SMART_TARGET,String.valueOf(smartTarget));
         properties.setProperty(POPUP_DELAY,String.valueOf(popupDelay));
         properties.setProperty(MESSAGE_DELAY,String.valueOf(messageDelay));
-        properties.setProperty(STRENGTH_DIFFICULTY,String.valueOf(strengthDifficulty));
-        properties.setProperty(STRENGTH_GAMES,String.valueOf(strengthGames));
         properties.setProperty(HIGH_QUALITY,String.valueOf(highQuality));
         properties.setProperty(SOUND,String.valueOf(sound));
         properties.setProperty(TOUCHSCREEN,String.valueOf(touchscreen));
         properties.setProperty(MOUSEWHEEL_POPUP, String.valueOf(mouseWheelPopup));
-        properties.setProperty(LOG_SCROLLBAR, String.valueOf(isLogScrollbarVisible));
-        properties.setProperty(LOG_TOPINSERT, String.valueOf(isLogMessageAddedToTop));
         properties.setProperty(FULLSCREEN, String.valueOf(fullScreen));
         properties.setProperty(PREVIEW_CARD_ON_SELECT, String.valueOf(previewCardOnSelect));
         properties.setProperty(SHOW_LOG_MESSAGES, String.valueOf(showLogMessages));
@@ -640,6 +651,12 @@ public class GeneralConfig {
         properties.setProperty(IGNORED_VERSION_ALERT, ignoredVersionAlert);
         properties.setProperty(UI_SOUND, String.valueOf(isUiSound));
         properties.setProperty(PAUSE_GAME_POPUP, String.valueOf(isGamePausedOnPopup));
+        properties.setProperty(DOWNLOADER_RUN_DATE, imageDownloaderRunDate);
+        properties.setProperty(DUEL_SIDEBAR_LAYOUT, duelSidebarLayout);
+        properties.setProperty(HIDE_AI_ACTION_PROMPT, String.valueOf(hideAiActionPrompt));
+        properties.setProperty(ROLLOVER_COLOR, String.valueOf(rolloverColor.getRGB()));
+        properties.setProperty(UI_SOUND_VOLUME, String.valueOf(uiSoundVolume));
+        properties.setProperty(TRANSLATION, translation);
     }
 
     public void save() {
@@ -660,12 +677,8 @@ public class GeneralConfig {
         return INSTANCE;
     }
 
-    public Dimension getMaxCardImageSize() {
-        if (isHighQuality()) {
-            return HIGH_QUALITY_IMAGE_SIZE;
-        } else {
-            return SMALL_SCREEN_IMAGE_SIZE;
-        }
+    public boolean isCustomCardImagesPath() {
+        return cardImagesPath.isEmpty() == false;
     }
 
 }

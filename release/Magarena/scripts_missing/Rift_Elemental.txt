@@ -1,6 +1,6 @@
 name=Rift Elemental
-image=http://mtgimage.com/card/rift%20elemental.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mma/127.jpg
+value=3.867
 rarity=C
 type=Creature
 subtype=Elemental

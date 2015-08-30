@@ -1,5 +1,5 @@
 name=War-Spike Changeling
-image=http://mtgimage.com/card/war%2Dspike%20changeling.jpg
+image=http://magiccards.info/scans/en/mma/139.jpg
 value=2.767
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={3}{R}
 pt=3/3
 ability=changeling;{R}: SN gains first strike until end of turn.
 timing=main
-oracle=Changeling. {R}: War-Spike Changeling gains first strike until end of turn.
+oracle=Changeling\n{R}: War-Spike Changeling gains first strike until end of turn.

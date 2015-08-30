@@ -1,5 +1,5 @@
 name=Obelisk of Alara
-image=http://mtgimage.com/card/obelisk%20of%20alara.jpg
+image=http://magiccards.info/scans/en/cfx/140.jpg
 value=3.426
 rarity=R
 type=Artifact
@@ -10,4 +10,4 @@ ability={1}{W},{T}: You gain 5 life.;\
         {1}{R},{T}: SN deals 3 damage to target player.;\
         {1}{G},{T}: Target creature gets +4/+4 until end of turn.
 timing=artifact
-oracle={1}{W}, {T}: You gain 5 life. {1}{U}, {T}: Draw a card, then discard a card. {1}{B}, {T}: Target creature gets -2/-2 until end of turn. {1}{R}, {T}: Obelisk of Alara deals 3 damage to target player. {1}{G}, {T}: Target creature gets +4/+4 until end of turn.
+oracle={1}{W}, {T}: You gain 5 life.\n{1}{U}, {T}: Draw a card, then discard a card.\n{1}{B}, {T}: Target creature gets -2/-2 until end of turn.\n{1}{R}, {T}: Obelisk of Alara deals 3 damage to target player.\n{1}{G}, {T}: Target creature gets +4/+4 until end of turn.

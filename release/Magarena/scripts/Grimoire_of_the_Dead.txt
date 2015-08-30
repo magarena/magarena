@@ -1,5 +1,5 @@
 name=Grimoire of the Dead
-image=http://mtgimage.com/card/grimoire%20of%20the%20dead.jpg
+image=http://magiccards.info/scans/en/isd/226.jpg
 value=3.860
 rarity=M
 type=Legendary,Artifact
@@ -7,4 +7,4 @@ cost={4}
 ability={1}, {T}, Discard a card: Put a study counter on SN.
 timing=artifact
 requires_groovy_code
-oracle={1}, {T}, Discard a card: Put a study counter on Grimoire of the Dead. {T}, Remove three study counters from Grimoire of the Dead and sacrifice it: Put all creature cards from all graveyards onto the battlefield under your control. They're black Zombies in addition to their other colors and types.
+oracle={1}, {T}, Discard a card: Put a study counter on Grimoire of the Dead.\n{T}, Remove three study counters from Grimoire of the Dead and sacrifice it: Put all creature cards from all graveyards onto the battlefield under your control. They're black Zombies in addition to their other colors and types.

@@ -1,0 +1,13 @@
+name=Orgg
+image=http://magiccards.info/scans/en/tsts/67.jpg
+value=3.371
+rarity=R
+type=Creature
+subtype=Orgg
+cost={3}{R}{R}
+pt=6/6
+ability=Trample;\
+SN can't block creatures with power 3 or greater.
+timing=main
+requires_groovy_code
+oracle=Trample\nOrgg can't attack if defending player controls an untapped creature with power 3 or greater.\nOrgg can't block creatures with power 3 or greater.

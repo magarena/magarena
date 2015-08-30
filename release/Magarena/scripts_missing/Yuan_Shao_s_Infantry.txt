@@ -1,6 +1,6 @@
 name=Yuan Shao's Infantry
-image=http://mtgimage.com/card/yuan%20shao%27s%20infantry.jpg
-value=2.500
+image=http://magiccards.info/scans/en/p3k/129.jpg
+value=2.688
 rarity=U
 type=Creature
 subtype=Human,Soldier

@@ -1,5 +1,5 @@
 name=Leshrac's Rite
-image=http://mtgimage.com/card/leshrac%27s%20rite.jpg
+image=http://magiccards.info/scans/en/7e/144.jpg
 value=2.206
 rarity=U
 type=Enchantment
@@ -8,4 +8,4 @@ cost={B}
 ability=Enchanted creature has swampwalk.
 timing=aura
 enchant=unblockable,pos creature
-oracle=Enchant creature. Enchanted creature has swampwalk.
+oracle=Enchant creature\nEnchanted creature has swampwalk.

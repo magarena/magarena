@@ -1,11 +1,11 @@
 name=Elvish Berserker
-image=http://mtgimage.com/card/elvish%20berserker.jpg
+image=http://magiccards.info/scans/en/10e/260.jpg
 value=3.585
 rarity=C
 type=Creature
 subtype=Elf,Berserker
 cost={G}
 pt=1/1
-ability=Whenever SN becomes blocked, it gets +1/+1 until end of turn for each creature blocking it.
+ability=Whenever SN becomes blocked, SN gets +1/+1 until end of turn for each creature blocking it.
 timing=main
 oracle=Whenever Elvish Berserker becomes blocked, it gets +1/+1 until end of turn for each creature blocking it.

@@ -1,0 +1,10 @@
+name=Solar Tide
+image=http://magiccards.info/scans/en/mi/24.jpg
+value=3.440
+rarity=R
+type=Sorcery
+cost={4}{W}{W}
+ability=Entwine—Sacrifice two lands.
+effect=Choose one — (1) Destroy all creatures with power 2 or less. (2) Destroy all creatures with power 3 or greater.
+timing=main
+oracle=Choose one —\n• Destroy all creatures with power 2 or less.\n• Destroy all creatures with power 3 or greater.\nEntwine—Sacrifice two lands.

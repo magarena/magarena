@@ -1,5 +1,5 @@
 name=Woolly Mammoths
-image=http://mtgimage.com/card/woolly%20mammoths.jpg
+image=http://magiccards.info/scans/en/me2/188.jpg
 value=2.875
 rarity=C
 type=Creature

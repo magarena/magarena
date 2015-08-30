@@ -1,5 +1,5 @@
 name=Crimson Kobolds
-image=http://mtgimage.com/card/crimson%20kobolds.jpg
+image=http://magiccards.info/scans/en/me3/93.jpg
 value=4.047
 rarity=C
 type=Creature
@@ -8,3 +8,4 @@ color=r
 cost={0}
 pt=0/1
 timing=main
+oracle=NONE

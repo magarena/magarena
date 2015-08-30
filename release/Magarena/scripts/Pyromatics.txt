@@ -1,5 +1,5 @@
 name=Pyromatics
-image=http://mtgimage.com/card/pyromatics.jpg
+image=http://magiccards.info/scans/en/ddj/20.jpg
 value=2.694
 rarity=C
 type=Instant
@@ -8,4 +8,4 @@ ability=replicate {1}{R}
 effect=SN deals 1 damage to target creature or player.
 removal=1
 timing=removal
-oracle=Replicate {1}{R}. Pyromatics deals 1 damage to target creature or player.
+oracle=Replicate {1}{R}\nPyromatics deals 1 damage to target creature or player.

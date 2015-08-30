@@ -1,6 +1,6 @@
 name=Goblin Vandal
-image=http://mtgimage.com/card/goblin%20vandal.jpg
-value=2.500
+image=http://magiccards.info/scans/en/wl/105.jpg
+value=2.942
 rarity=C
 type=Creature
 subtype=Goblin,Rogue

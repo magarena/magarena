@@ -1,5 +1,5 @@
 name=Vithian Stinger
-image=http://mtgimage.com/card/vithian%20stinger.jpg
+image=http://magiccards.info/scans/en/ddk/47.jpg
 value=3.577
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=0/1
 ability={T}: SN deals 1 damage to target creature or player.;\
         Unearth {1}{R}
 timing=main
-oracle={T}: Vithian Stinger deals 1 damage to target creature or player. Unearth {1}{R}
+oracle={T}: Vithian Stinger deals 1 damage to target creature or player.\nUnearth {1}{R}

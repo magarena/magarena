@@ -1,9 +1,9 @@
 name=Skyshroud Blessing
-image=http://mtgimage.com/card/skyshroud%20blessing.jpg
+image=http://magiccards.info/scans/en/ps/92.jpg
 value=3.204
 rarity=U
 type=Instant
 cost={1}{G}
 effect=All lands gain shroud until end of turn.~Draw a card.
 timing=pump
-oracle=All lands gain shroud until end of turn. Draw a card.
+oracle=All lands gain shroud until end of turn.\nDraw a card.

@@ -1,6 +1,6 @@
 name=Alabaster Leech
-image=http://mtgimage.com/card/alabaster%20leech.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/1.jpg
+value=0.943
 rarity=R
 type=Creature
 subtype=Leech

@@ -1,6 +1,6 @@
 name=Valor
-image=http://mtgimage.com/card/valor.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tsts/16.jpg
+value=3.889
 rarity=U
 type=Creature
 subtype=Incarnation
@@ -9,4 +9,4 @@ pt=2/2
 ability=First strike;\
         As long as SN is in your graveyard and you control a Plains, creatures you control have first strike.
 timing=main
-oracle=First strike. As long as Valor is in your graveyard and you control a Plains, creatures you control have first strike.
+oracle=First strike\nAs long as Valor is in your graveyard and you control a Plains, creatures you control have first strike.

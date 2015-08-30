@@ -1,6 +1,6 @@
 name=Sphinx of the Chimes
-image=http://mtgimage.com/card/sphinx%20of%20the%20chimes.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rtr/52.jpg
+value=3.597
 rarity=R
 type=Creature
 subtype=Sphinx
@@ -9,4 +9,4 @@ pt=5/6
 ability=Flying;\
         Discard two nonland cards with the same name: Draw four cards.
 timing=main
-oracle=Flying. Discard two nonland cards with the same name: Draw four cards.
+oracle=Flying\nDiscard two nonland cards with the same name: Draw four cards.

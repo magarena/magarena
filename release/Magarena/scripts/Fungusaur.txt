@@ -1,11 +1,11 @@
 name=Fungusaur
-image=http://mtgimage.com/card/fungusaur.jpg
+image=http://magiccards.info/scans/en/8e/250.jpg
 value=3.755
 rarity=R
 type=Creature
 subtype=Fungus,Lizard
 cost={3}{G}
 pt=2/2
+ability=Whenever SN is dealt damage, put a +1/+1 counter on SN.
 timing=main
-requires_groovy_code
 oracle=Whenever Fungusaur is dealt damage, put a +1/+1 counter on it.

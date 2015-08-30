@@ -1,11 +1,11 @@
 name=Mask of Memory
-image=http://mtgimage.com/card/mask%20of%20memory.jpg
+image=http://magiccards.info/scans/en/c14/249.jpg
 value=4.186
 rarity=U
 type=Artifact
 subtype=Equipment
 cost={2}
-ability=Equip {1}
+ability=Whenever equipped creature deals combat damage to a player, you may draw two cards. If you do, discard a card.;\
+        Equip {1}
 timing=equipment
-requires_groovy_code
-oracle=Whenever equipped creature deals combat damage to a player, you may draw two cards. If you do, discard a card. Equip {1}
+oracle=Whenever equipped creature deals combat damage to a player, you may draw two cards. If you do, discard a card.\nEquip {1}

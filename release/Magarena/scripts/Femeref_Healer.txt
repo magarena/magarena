@@ -1,5 +1,5 @@
 name=Femeref Healer
-image=http://mtgimage.com/card/femeref%20healer.jpg
+image=http://magiccards.info/scans/en/mr/221.jpg
 value=2.500
 rarity=C
 type=Creature

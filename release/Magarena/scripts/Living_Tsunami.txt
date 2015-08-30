@@ -1,0 +1,12 @@
+name=Living Tsunami
+image=http://magiccards.info/scans/en/zen/52.jpg
+value=3.742
+rarity=U
+type=Creature
+subtype=Elemental
+cost={2}{U}{U}
+pt=4/4
+ability=Flying
+timing=main
+requires_groovy_code
+oracle=Flying\nAt the beginning of your upkeep, sacrifice Living Tsunami unless you return a land you control to its owner's hand.

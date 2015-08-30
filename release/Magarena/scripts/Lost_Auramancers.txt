@@ -1,0 +1,12 @@
+name=Lost Auramancers
+image=http://magiccards.info/scans/en/fut/11.jpg
+value=3.561
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={2}{W}{W}
+pt=3/3
+ability=Vanishing 3
+timing=main
+requires_groovy_code
+oracle=Vanishing 3\nWhen Lost Auramancers dies, if it had no time counters on it, you may search your library for an enchantment card and put it onto the battlefield. If you do, shuffle your library.

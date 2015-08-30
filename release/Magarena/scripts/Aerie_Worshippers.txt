@@ -1,5 +1,5 @@
 name=Aerie Worshippers
-image=http://mtgimage.com/card/aerie%20worshippers.jpg
+image=http://magiccards.info/scans/en/bng/30.jpg
 value=3.662
 rarity=U
 type=Creature

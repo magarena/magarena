@@ -14,9 +14,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent rn = event.getRefPermanent();
-            game.doAction(new MagicPlayTokenAction(
+            game.doAction(new PlayTokenAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("2/2 white Cat creature token"),
+                CardDefinitions.getToken("2/2 white Cat creature token"),
                 {
                     final MagicPermanent token ->
                     final MagicGame G1 = token.getGame();
@@ -29,7 +29,7 @@
                             {
                                 final MagicGame G2, final MagicEvent E ->
                                 if (E.isYes()) {
-                                    G2.doAction(new MagicAttachAction(
+                                    G2.doAction(new AttachAction(
                                         E.getPermanent(), 
                                         E.getRefPermanent()
                                     ));

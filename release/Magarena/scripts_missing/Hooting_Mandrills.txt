@@ -1,6 +1,6 @@
 name=Hooting Mandrills
-image=http://mtgimage.com/card/hooting%20mandrills.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/137.jpg
+value=4.000
 rarity=C
 type=Creature
 subtype=Ape
@@ -9,4 +9,4 @@ pt=4/4
 ability=Delve;\
         Trample
 timing=main
-oracle=Delve. Trample
+oracle=Delve\nTrample

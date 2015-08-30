@@ -1,0 +1,13 @@
+name=Skarrgan Firebird
+image=http://magiccards.info/scans/en/ddl/57.jpg
+value=3.929
+rarity=R
+type=Creature
+subtype=Phoenix
+cost={4}{R}{R}
+pt=3/3
+ability=Bloodthirst 3;\
+        Flying;\
+        {R}{R}{R}: Return SN from your graveyard to your hand. Activate this ability only if an opponent was dealt damage this turn.
+timing=main
+oracle=Bloodthirst 3\nFlying\n{R}{R}{R}: Return Skarrgan Firebird from your graveyard to your hand. Activate this ability only if an opponent was dealt damage this turn.

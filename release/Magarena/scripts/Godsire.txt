@@ -1,5 +1,5 @@
 name=Godsire
-image=http://mtgimage.com/card/godsire.jpg
+image=http://magiccards.info/scans/en/ala/170.jpg
 value=4.015
 rarity=M
 type=Creature
@@ -9,4 +9,4 @@ pt=8/8
 ability=vigilance;\
         {T}: Put an 8/8 Beast creature token that's red, green, and white onto the battlefield.
 timing=main
-oracle=Vigilance. {T}: Put an 8/8 Beast creature token that's red, green, and white onto the battlefield.
+oracle=Vigilance\n{T}: Put an 8/8 Beast creature token that's red, green, and white onto the battlefield.

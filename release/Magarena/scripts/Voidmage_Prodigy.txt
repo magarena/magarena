@@ -1,5 +1,5 @@
 name=Voidmage Prodigy
-image=http://mtgimage.com/card/voidmage%20prodigy.jpg
+image=http://magiccards.info/scans/en/tsts/34.jpg
 value=3.973
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability={U}{U}, Sacrifice a Wizard: Counter target spell.;\
         Morph {U}
 timing=main
-oracle={U}{U}, Sacrifice a Wizard: Counter target spell. Morph {U}
+oracle={U}{U}, Sacrifice a Wizard: Counter target spell.\nMorph {U}

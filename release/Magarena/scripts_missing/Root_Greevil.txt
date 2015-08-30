@@ -1,6 +1,6 @@
 name=Root Greevil
-image=http://mtgimage.com/card/root%20greevil.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ps/91.jpg
+value=3.741
 rarity=C
 type=Creature
 subtype=Beast

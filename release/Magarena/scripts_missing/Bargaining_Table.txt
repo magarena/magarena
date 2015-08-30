@@ -1,9 +1,9 @@
 name=Bargaining Table
-image=http://mtgimage.com/card/bargaining%20table.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/288.jpg
+value=3.815
 rarity=R
 type=Artifact
 cost={5}
 ability={X}, {T}: Draw a card. X is the number of cards in an opponent's hand.
-timing=main
+timing=artifact
 oracle={X}, {T}: Draw a card. X is the number of cards in an opponent's hand.

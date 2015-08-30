@@ -1,5 +1,5 @@
 name=Thraben Purebloods
-image=http://mtgimage.com/card/thraben%20purebloods.jpg
+image=http://magiccards.info/scans/en/isd/37.jpg
 value=1.971
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Hound
 cost={4}{W}
 pt=3/5
 timing=main
+oracle=NONE

@@ -1,12 +1,12 @@
 name=Venomous Dragonfly
-image=http://mtgimage.com/card/venomous%20dragonfly.jpg
+image=http://magiccards.info/scans/en/mm/282.jpg
 value=2.691
 rarity=C
 type=Creature
 subtype=Insect
 cost={3}{G}
 pt=1/1
-ability=flying
+ability=Flying.;\
+        Whenever SN blocks or becomes blocked by a creature, destroy that creature at end of combat.
 timing=main
-requires_groovy_code=Tangle Asp
-oracle=Flying. Whenever Venomous Dragonfly blocks or becomes blocked by a creature, destroy that creature at end of combat.
+oracle=Flying\nWhenever Venomous Dragonfly blocks or becomes blocked by a creature, destroy that creature at end of combat.

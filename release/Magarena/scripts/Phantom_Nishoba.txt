@@ -1,5 +1,5 @@
 name=Phantom Nishoba
-image=http://mtgimage.com/card/phantom%20nishoba.jpg
+image=http://magiccards.info/scans/en/ju/140.jpg
 value=4.211
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=trample;\
         SN enters the battlefield with seven +1/+1 counters on it.
 timing=main
 requires_groovy_code=Phantom Nomad;Mourning Thrull
-oracle=Trample. Phantom Nishoba enters the battlefield with seven +1/+1 counters on it. Whenever Phantom Nishoba deals damage, you gain that much life. If damage would be dealt to Phantom Nishoba, prevent that damage. Remove a +1/+1 counter from Phantom Nishoba.
+oracle=Trample\nPhantom Nishoba enters the battlefield with seven +1/+1 counters on it.\nWhenever Phantom Nishoba deals damage, you gain that much life.\nIf damage would be dealt to Phantom Nishoba, prevent that damage. Remove a +1/+1 counter from Phantom Nishoba.

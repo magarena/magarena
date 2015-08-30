@@ -1,6 +1,6 @@
 name=Part Water
-image=http://mtgimage.com/card/part%20water.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lg/66.jpg
+value=1.606
 rarity=U
 type=Sorcery
 cost={X}{X}{U}

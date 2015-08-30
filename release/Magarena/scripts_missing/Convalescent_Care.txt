@@ -1,9 +1,0 @@
-name=Convalescent Care
-image=http://mtgimage.com/card/convalescent%20care.jpg
-value=2.500
-rarity=R
-type=Enchantment
-cost={1}{W}{W}
-ability=At the beginning of your upkeep, if you have 5 or less life, you gain 3 life and draw a card.
-timing=main
-oracle=At the beginning of your upkeep, if you have 5 or less life, you gain 3 life and draw a card.

@@ -1,11 +1,12 @@
 name=Angelic Page
-image=http://mtgimage.com/card/angelic%20page.jpg
+image=http://magiccards.info/scans/en/dvd/3.jpg
 value=2.856
 rarity=C
 type=Creature
 subtype=Angel,Spirit
 cost={1}{W}
 pt=1/1
-ability=flying;{T}:Target attacking or blocking creature gets +1/+1 until end of turn.
+ability=Flying;\
+        {T}: Target attacking or blocking creature gets +1/+1 until end of turn.
 timing=main
-oracle=Flying. {T}: Target attacking or blocking creature gets +1/+1 until end of turn.
+oracle=Flying\n{T}: Target attacking or blocking creature gets +1/+1 until end of turn.

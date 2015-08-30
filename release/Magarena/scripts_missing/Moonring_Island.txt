@@ -1,10 +1,10 @@
 name=Moonring Island
-image=http://mtgimage.com/card/moonring%20island.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/276.jpg
+value=2.438
 rarity=U
 type=Land
 subtype=Island
 ability=SN enters the battlefield tapped.;\
         {U}, {T}: Look at the top card of target player's library. Activate this ability only if you control two or more blue permanents.
-timing=main
-oracle=Moonring Island enters the battlefield tapped. {U}, {T}: Look at the top card of target player's library. Activate this ability only if you control two or more blue permanents.
+timing=land
+oracle=Moonring Island enters the battlefield tapped.\n{U}, {T}: Look at the top card of target player's library. Activate this ability only if you control two or more blue permanents.

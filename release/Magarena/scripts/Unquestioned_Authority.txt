@@ -1,5 +1,5 @@
 name=Unquestioned Authority
-image=http://mtgimage.com/card/unquestioned%20authority.jpg
+image=http://magiccards.info/scans/en/cns/85.jpg
 value=4.125
 rarity=U
 type=Enchantment
@@ -9,4 +9,4 @@ ability=When SN enters the battlefield, draw a card.;\
         Enchanted creature has protection from creatures.
 timing=aura
 enchant=unblockable,pos creature
-oracle=Enchant creature. When Unquestioned Authority enters the battlefield, draw a card. Enchanted creature has protection from creatures.
+oracle=Enchant creature\nWhen Unquestioned Authority enters the battlefield, draw a card.\nEnchanted creature has protection from creatures.

@@ -1,5 +1,5 @@
 name=Riptide Chimera
-image=http://mtgimage.com/card/riptide%20chimera.jpg
+image=http://magiccards.info/scans/en/jou/48.jpg
 value=3.750
 rarity=U
 type=Enchantment,Creature
@@ -9,4 +9,4 @@ pt=3/4
 ability=Flying;\
         At the beginning of your upkeep, return an enchantment you control to its owner's hand.
 timing=main
-oracle=Flying. At the beginning of your upkeep, return an enchantment you control to its owner's hand.
+oracle=Flying\nAt the beginning of your upkeep, return an enchantment you control to its owner's hand.

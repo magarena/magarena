@@ -1,5 +1,5 @@
 name=Zhuge Jin, Wu Strategist
-image=http://mtgimage.com/card/zhuge%20jin%2C%20wu%20strategist.jpg
+image=http://magiccards.info/scans/en/p3k/66.jpg
 value=3.390
 rarity=R
 type=Legendary,Creature

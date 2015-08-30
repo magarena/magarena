@@ -1,9 +1,9 @@
 name=Bone to Ash
-image=http://mtgimage.com/card/bone%20to%20ash.jpg
-value=2.367
+image=http://magiccards.info/scans/en/ori/47.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={2}{U}{U}
 effect=Counter target creature spell.~Draw a card.
 timing=counter
-oracle=Counter target creature spell. Draw a card.
+oracle=Counter target creature spell.\nDraw a card.

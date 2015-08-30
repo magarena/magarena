@@ -1,5 +1,5 @@
 name=Screeching Drake
-image=http://mtgimage.com/card/screeching%20drake.jpg
+image=http://magiccards.info/scans/en/me2/63.jpg
 value=2.727
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={3}{U}
 pt=2/2
 ability=flying;When SN enters the battlefield, draw a card, then discards a card.
 timing=main
-oracle=Flying. When Screeching Drake enters the battlefield, draw a card, then discard a card.
+oracle=Flying\nWhen Screeching Drake enters the battlefield, draw a card, then discard a card.

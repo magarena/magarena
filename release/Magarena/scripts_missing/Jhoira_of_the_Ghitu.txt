@@ -1,6 +1,6 @@
 name=Jhoira of the Ghitu
-image=http://mtgimage.com/card/jhoira%20of%20the%20ghitu.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mma/177.jpg
+value=3.922
 rarity=R
 type=Legendary,Creature
 subtype=Human,Wizard

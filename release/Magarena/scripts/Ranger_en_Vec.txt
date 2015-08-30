@@ -1,5 +1,5 @@
 name=Ranger en-Vec
-image=http://mtgimage.com/card/ranger%20en%2Dvec.jpg
+image=http://magiccards.info/scans/en/tp/343.jpg
 value=4.031
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=first strike;\
         {G}: Regenerate SN.
 timing=main
-oracle=First strike. {G}: Regenerate Ranger en-Vec.
+oracle=First strike\n{G}: Regenerate Ranger en-Vec.

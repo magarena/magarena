@@ -1,11 +1,11 @@
 name=Wayfaring Giant
-image=http://mtgimage.com/card/wayfaring%20giant.jpg
+image=http://magiccards.info/scans/en/in/44.jpg
 value=1.829
 rarity=U
 type=Creature
 subtype=Giant
 cost={5}{W}
 pt=1/3
+ability=SN gets +1/+1 for each basic land type among lands you control.
 timing=main
-requires_groovy_code
 oracle=Domain — Wayfaring Giant gets +1/+1 for each basic land type among lands you control.

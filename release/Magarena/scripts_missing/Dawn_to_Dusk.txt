@@ -1,9 +1,9 @@
 name=Dawn to Dusk
-image=http://mtgimage.com/card/dawn%20to%20dusk.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bng/6.jpg
+value=3.413
 rarity=U
 type=Sorcery
 cost={2}{W}{W}
-effect=Choose one or both — • Return target enchantment card from your graveyard to your hand. • Destroy target enchantment.
+effect=Choose one or both — (1) Return target enchantment card from your graveyard to your hand. (2) Destroy target enchantment.
 timing=main
-oracle=Choose one or both — • Return target enchantment card from your graveyard to your hand. • Destroy target enchantment.
+oracle=Choose one or both —\n• Return target enchantment card from your graveyard to your hand.\n• Destroy target enchantment.

@@ -1,9 +1,0 @@
-name=Murderous Betrayal
-image=http://mtgimage.com/card/murderous%20betrayal.jpg
-value=2.500
-rarity=R
-type=Enchantment
-cost={B}{B}{B}
-ability={B}{B}, Pay half your life, rounded up: Destroy target nonblack creature. It can't be regenerated.
-timing=main
-oracle={B}{B}, Pay half your life, rounded up: Destroy target nonblack creature. It can't be regenerated.

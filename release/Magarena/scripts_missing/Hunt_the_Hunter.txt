@@ -1,6 +1,6 @@
 name=Hunt the Hunter
-image=http://mtgimage.com/card/hunt%20the%20hunter.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ths/159.jpg
+value=2.368
 rarity=U
 type=Sorcery
 cost={G}

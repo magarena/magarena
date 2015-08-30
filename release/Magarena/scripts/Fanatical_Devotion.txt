@@ -1,5 +1,5 @@
 name=Fanatical Devotion
-image=http://mtgimage.com/card/fanatical%20devotion.jpg
+image=http://magiccards.info/scans/en/ne/8.jpg
 value=3.217
 rarity=C
 type=Enchantment

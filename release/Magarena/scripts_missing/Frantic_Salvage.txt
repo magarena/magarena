@@ -1,9 +1,9 @@
 name=Frantic Salvage
-image=http://mtgimage.com/card/frantic%20salvage.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mbs/6.jpg
+value=2.932
 rarity=C
 type=Instant
 cost={3}{W}
 effect=Put any number of target artifact cards from your graveyard on top of your library.~Draw a card.
 timing=removal
-oracle=Put any number of target artifact cards from your graveyard on top of your library. Draw a card.
+oracle=Put any number of target artifact cards from your graveyard on top of your library.\nDraw a card.

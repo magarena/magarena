@@ -1,5 +1,5 @@
 name=Rathi Intimidator
-image=http://mtgimage.com/card/rathi%20intimidator.jpg
+image=http://magiccards.info/scans/en/ne/69.jpg
 value=3.364
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=fear;\
         {2}, {T}: Search your library for a Mercenary permanent card with converted mana cost 2 or less and put it onto the battlefield. Then shuffle your library.
 timing=main
-oracle=Fear. {2}, {T}: Search your library for a Mercenary permanent card with converted mana cost 2 or less and put it onto the battlefield. Then shuffle your library.
+oracle=Fear\n{2}, {T}: Search your library for a Mercenary permanent card with converted mana cost 2 or less and put it onto the battlefield. Then shuffle your library.

@@ -1,5 +1,5 @@
 name=Impact Resonance
-image=http://mtgimage.com/card/impact%20resonance.jpg
+image=http://magiccards.info/scans/en/c14/36.jpg
 value=2.500
 rarity=R
 type=Instant

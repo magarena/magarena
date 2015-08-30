@@ -1,5 +1,5 @@
 name=Pyrohemia
-image=http://mtgimage.com/card/pyrohemia.jpg
+image=http://magiccards.info/scans/en/cmd/132.jpg
 value=3.944
 rarity=U
 type=Enchantment
@@ -7,4 +7,4 @@ cost={2}{R}{R}
 ability=At the beginning of the end step, if no creatures are on the battlefield, sacrifice SN.;\
         {R}: SN deals 1 damage to each creature and each player.
 timing=enchantment
-oracle=At the beginning of the end step, if no creatures are on the battlefield, sacrifice Pyrohemia. {R}: Pyrohemia deals 1 damage to each creature and each player.
+oracle=At the beginning of the end step, if no creatures are on the battlefield, sacrifice Pyrohemia.\n{R}: Pyrohemia deals 1 damage to each creature and each player.

@@ -1,6 +1,6 @@
 name=Inquisition of Kozilek
-image=http://mtgimage.com/card/inquisition%20of%20kozilek.jpg
-value=2.500
+image=http://magiccards.info/scans/en/md1/4.jpg
+value=4.375
 rarity=U
 type=Sorcery
 cost={B}

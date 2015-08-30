@@ -1,12 +1,12 @@
 name=Phyrexian Slayer
-image=http://mtgimage.com/card/phyrexian%20slayer.jpg
+image=http://magiccards.info/scans/en/in/118.jpg
 value=2.870
 rarity=C
 type=Creature
 subtype=Minion
 cost={3}{B}
 pt=2/2
-ability=flying
+ability=Flying.;\
+        Whenever SN becomes blocked by a white creature, destroy that creature. It can't be regenerated.
 timing=main
-requires_groovy_code
-oracle=Flying. Whenever Phyrexian Slayer becomes blocked by a white creature, destroy that creature. It can't be regenerated.
+oracle=Flying\nWhenever Phyrexian Slayer becomes blocked by a white creature, destroy that creature. It can't be regenerated.

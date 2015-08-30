@@ -1,12 +1,12 @@
 name=Crimson Roc
-image=http://mtgimage.com/card/crimson%20roc.jpg
+image=http://magiccards.info/scans/en/mr/168.jpg
 value=2.375
 rarity=U
 type=Creature
 subtype=Bird
 cost={4}{R}
 pt=2/2
-ability=Flying
+ability=Flying.;\
+        Whenever SN blocks a creature without flying, SN gets +1/+0 and gains first strike until end of turn.
 timing=main
-requires_groovy_code
-oracle=Flying. Whenever Crimson Roc blocks a creature without flying, Crimson Roc gets +1/+0 and gains first strike until end of turn.
+oracle=Flying\nWhenever Crimson Roc blocks a creature without flying, Crimson Roc gets +1/+0 and gains first strike until end of turn.

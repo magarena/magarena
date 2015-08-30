@@ -17,7 +17,7 @@
             final int X = source.getController().getNrOfPermanents(MagicSubType.Merfolk);
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_ATTACKING_OR_BLOCKING_CREATURE,
+                NEG_TARGET_ATTACKING_OR_BLOCKING_CREATURE,
                 new MagicDamageTargetPicker(X),
                 this,
                 "SN deals X damage to target attacking or blocking creature\$, "+
@@ -29,8 +29,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game,{
                 final int X = event.getPlayer().getNrOfPermanents(MagicSubType.Merfolk);
-                final MagicDamage damage=new MagicDamage(event.getSource(),it,X);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new DealDamageAction(event.getSource(),it,X));
             });
         }
     }

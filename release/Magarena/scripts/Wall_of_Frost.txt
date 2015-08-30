@@ -1,12 +1,12 @@
 name=Wall of Frost
-image=http://mtgimage.com/card/wall%20of%20frost.jpg
+image=http://magiccards.info/scans/en/m15/83.jpg
 value=3.214
 rarity=U
 type=Creature
 subtype=Wall
 cost={1}{U}{U}
 pt=0/7
-ability=defender
+ability=Defender.;\
+        Whenever SN blocks a creature, that creature doesn't untap during its controller's next untap step.
 timing=smain
-requires_groovy_code
-oracle=Defender. Whenever Wall of Frost blocks a creature, that creature doesn't untap during its controller's next untap step.
+oracle=Defender\nWhenever Wall of Frost blocks a creature, that creature doesn't untap during its controller's next untap step.

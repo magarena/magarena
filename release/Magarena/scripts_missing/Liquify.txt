@@ -1,9 +1,0 @@
-name=Liquify
-image=http://mtgimage.com/card/liquify.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={2}{U}
-effect=Counter target spell with converted mana cost 3 or less. If that spell is countered this way, exile it instead of putting it into its owner's graveyard.
-timing=removal
-oracle=Counter target spell with converted mana cost 3 or less. If that spell is countered this way, exile it instead of putting it into its owner's graveyard.

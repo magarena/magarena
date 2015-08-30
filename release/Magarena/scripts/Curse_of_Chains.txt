@@ -1,5 +1,5 @@
 name=Curse of Chains
-image=http://mtgimage.com/card/curse%20of%20chains.jpg
+image=http://magiccards.info/scans/en/shm/139.jpg
 value=3.672
 removal=2
 rarity=C
@@ -9,4 +9,4 @@ cost={1}{W/U}
 timing=nextturn
 enchant=can't attack or block,neg creature
 requires_groovy_code=Narcolepsy
-oracle=Enchant creature. At the beginning of each upkeep, tap enchanted creature.
+oracle=Enchant creature\nAt the beginning of each upkeep, tap enchanted creature.

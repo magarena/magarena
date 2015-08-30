@@ -1,6 +1,6 @@
 name=Summoner's Egg
-image=http://mtgimage.com/card/summoner%27s%20egg.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5dn/157.jpg
+value=4.185
 rarity=R
 type=Artifact,Creature
 subtype=Construct
@@ -8,5 +8,5 @@ cost={4}
 pt=0/4
 ability=When SN enters the battlefield, you may exile a card from your hand face down.;\
         When SN dies, turn the exiled card face up. If it's a creature card, put it onto the battlefield under your control.
-timing=main
-oracle=Imprint — When Summoner's Egg enters the battlefield, you may exile a card from your hand face down. When Summoner's Egg dies, turn the exiled card face up. If it's a creature card, put it onto the battlefield under your control.
+timing=artifact
+oracle=Imprint — When Summoner's Egg enters the battlefield, you may exile a card from your hand face down.\nWhen Summoner's Egg dies, turn the exiled card face up. If it's a creature card, put it onto the battlefield under your control.

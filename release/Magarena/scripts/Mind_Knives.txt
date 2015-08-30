@@ -1,5 +1,5 @@
 name=Mind Knives
-image=http://mtgimage.com/card/mind%20knives.jpg
+image=http://magiccards.info/scans/en/po/23.jpg
 value=2.744
 rarity=C
 type=Sorcery

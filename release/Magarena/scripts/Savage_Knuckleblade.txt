@@ -1,5 +1,5 @@
 name=Savage Knuckleblade
-image=http://mtgimage.com/card/savage%20knuckleblade.jpg
+image=http://magiccards.info/scans/en/ktk/197.jpg
 value=4.167
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability={2}{G}: SN gets +2/+2 until end of turn. Activate this ability only once
         {2}{U}: Return SN to its owner's hand.;\
         {R}: SN gains haste until end of turn.
 timing=main
-oracle={2}{G}: Savage Knuckleblade gets +2/+2 until end of turn. Activate this ability only once each turn. {2}{U}: Return Savage Knuckleblade to its owner's hand. {R}: Savage Knuckleblade gains haste until end of turn.
+oracle={2}{G}: Savage Knuckleblade gets +2/+2 until end of turn. Activate this ability only once each turn.\n{2}{U}: Return Savage Knuckleblade to its owner's hand.\n{R}: Savage Knuckleblade gains haste until end of turn.

@@ -1,5 +1,5 @@
 name=Brindle Shoat
-image=http://mtgimage.com/card/brindle%20shoat.jpg
+image=http://magiccards.info/scans/en/vma/199.jpg
 value=3.438
 rarity=U
 type=Creature

@@ -1,9 +1,9 @@
 name=Skeletal Scrying
-image=http://mtgimage.com/card/skeletal%20scrying.jpg
+image=http://magiccards.info/scans/en/c14/162.jpg
 value=2.500
 rarity=U
 type=Instant
 cost={X}{B}
 effect=As an additional cost to cast SN, exile X cards from your graveyard.~You draw X cards and you lose X life.
 timing=removal
-oracle=As an additional cost to cast Skeletal Scrying, exile X cards from your graveyard. You draw X cards and you lose X life.
+oracle=As an additional cost to cast Skeletal Scrying, exile X cards from your graveyard.\nYou draw X cards and you lose X life.

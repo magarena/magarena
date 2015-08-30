@@ -1,6 +1,6 @@
 name=Tephraderm
-image=http://mtgimage.com/card/tephraderm.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/239.jpg
+value=4.172
 rarity=R
 type=Creature
 subtype=Beast
@@ -9,4 +9,4 @@ pt=4/5
 ability=Whenever a creature deals damage to SN, SN deals that much damage to that creature.;\
         Whenever a spell deals damage to SN, SN deals that much damage to that spell's controller.
 timing=main
-oracle=Whenever a creature deals damage to Tephraderm, Tephraderm deals that much damage to that creature. Whenever a spell deals damage to Tephraderm, Tephraderm deals that much damage to that spell's controller.
+oracle=Whenever a creature deals damage to Tephraderm, Tephraderm deals that much damage to that creature.\nWhenever a spell deals damage to Tephraderm, Tephraderm deals that much damage to that spell's controller.

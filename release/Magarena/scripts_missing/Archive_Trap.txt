@@ -1,10 +1,10 @@
 name=Archive Trap
-image=http://mtgimage.com/card/archive%20trap.jpg
-value=2.500
+image=http://magiccards.info/scans/en/zen/41.jpg
+value=4.483
 rarity=R
 type=Instant
 subtype=Trap
 cost={3}{U}{U}
 effect=If an opponent searched his or her library this turn, you may pay {0} rather than pay SN's mana cost.~Target opponent puts the top thirteen cards of his or her library into his or her graveyard.
 timing=removal
-oracle=If an opponent searched his or her library this turn, you may pay {0} rather than pay Archive Trap's mana cost. Target opponent puts the top thirteen cards of his or her library into his or her graveyard.
+oracle=If an opponent searched his or her library this turn, you may pay {0} rather than pay Archive Trap's mana cost.\nTarget opponent puts the top thirteen cards of his or her library into his or her graveyard.

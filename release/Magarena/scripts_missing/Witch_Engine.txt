@@ -1,6 +1,6 @@
 name=Witch Engine
-image=http://mtgimage.com/card/witch%20engine.jpg
-value=2.500
+image=http://magiccards.info/scans/en/us/169.jpg
+value=3.321
 rarity=R
 type=Creature
 subtype=Horror
@@ -9,4 +9,4 @@ pt=4/4
 ability=Swampwalk;\
         {T}: Add {B}{B}{B}{B} to your mana pool. Target opponent gains control of SN.
 timing=main
-oracle=Swampwalk. {T}: Add {B}{B}{B}{B} to your mana pool. Target opponent gains control of Witch Engine.
+oracle=Swampwalk\n{T}: Add {B}{B}{B}{B} to your mana pool. Target opponent gains control of Witch Engine.

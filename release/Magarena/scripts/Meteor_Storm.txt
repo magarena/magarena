@@ -1,5 +1,5 @@
 name=Meteor Storm
-image=http://mtgimage.com/card/meteor%20storm.jpg
+image=http://magiccards.info/scans/en/in/256.jpg
 value=1.929
 rarity=R
 type=Enchantment

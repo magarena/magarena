@@ -1,5 +1,5 @@
 name=Fire Whip
-image=http://mtgimage.com/card/fire%20whip.jpg
+image=http://magiccards.info/scans/en/tsts/63.jpg
 value=4.208
 rarity=C
 type=Enchantment
@@ -9,4 +9,4 @@ ability=Enchanted creature has "{T}: SN deals 1 damage to target creature or pla
         Sacrifice SN:SN deals 1 damage to target creature or player.
 enchant=pump,creature you control
 timing=aura
-oracle=Enchant creature you control. Enchanted creature has "{T}: This creature deals 1 damage to target creature or player.". Sacrifice Fire Whip: Fire Whip deals 1 damage to target creature or player.
+oracle=Enchant creature you control\nEnchanted creature has "{T}: This creature deals 1 damage to target creature or player."\nSacrifice Fire Whip: Fire Whip deals 1 damage to target creature or player.

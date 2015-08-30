@@ -1,6 +1,6 @@
 name=Primal Plasma
-image=http://mtgimage.com/card/primal%20plasma.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pc2/23.jpg
+value=2.442
 rarity=C
 type=Creature
 subtype=Elemental,Shapeshifter

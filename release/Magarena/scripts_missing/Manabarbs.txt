@@ -1,9 +1,9 @@
 name=Manabarbs
-image=http://mtgimage.com/card/manabarbs.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m12/150.jpg
+value=4.077
 rarity=R
 type=Enchantment
 cost={3}{R}
 ability=Whenever a player taps a land for mana, SN deals 1 damage to that player.
-timing=main
+timing=enchantment
 oracle=Whenever a player taps a land for mana, Manabarbs deals 1 damage to that player.

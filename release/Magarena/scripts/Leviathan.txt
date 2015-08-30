@@ -1,6 +1,6 @@
 name=Leviathan
-image=http://mtgimage.com/card/leviathan.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tsts/23.jpg
+value=2.314
 rarity=R
 type=Creature
 subtype=Leviathan
@@ -11,4 +11,4 @@ ability=Trample;\
         SN doesn't untap during your untap step.
 timing=main
 requires_groovy_code
-oracle=Trample. Leviathan enters the battlefield tapped and doesn't untap during your untap step. At the beginning of your upkeep, you may sacrifice two Islands. If you do, untap Leviathan. Leviathan can't attack unless you sacrifice two Islands.
+oracle=Trample\nLeviathan enters the battlefield tapped and doesn't untap during your untap step.\nAt the beginning of your upkeep, you may sacrifice two Islands. If you do, untap Leviathan.\nLeviathan can't attack unless you sacrifice two Islands.

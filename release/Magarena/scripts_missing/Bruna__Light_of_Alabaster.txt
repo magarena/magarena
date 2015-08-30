@@ -1,12 +1,12 @@
 name=Bruna, Light of Alabaster
-image=http://mtgimage.com/card/bruna%2C%20light%20of%20alabaster.jpg
-value=2.500
+image=http://magiccards.info/scans/en/avr/208.jpg
+value=3.967
 rarity=M
 type=Legendary,Creature
 subtype=Angel
 cost={3}{W}{W}{U}
 pt=5/5
-ability=Flying; vigilance;\
+ability=Flying, vigilance;\
         Whenever SN attacks or blocks, you may attach to it any number of Auras on the battlefield and you may put onto the battlefield attached to it any number of Aura cards that could enchant it from your graveyard and/or hand.
 timing=main
-oracle=Flying, vigilance. Whenever Bruna, Light of Alabaster attacks or blocks, you may attach to it any number of Auras on the battlefield and you may put onto the battlefield attached to it any number of Aura cards that could enchant it from your graveyard and/or hand.
+oracle=Flying, vigilance\nWhenever Bruna, Light of Alabaster attacks or blocks, you may attach to it any number of Auras on the battlefield and you may put onto the battlefield attached to it any number of Aura cards that could enchant it from your graveyard and/or hand.

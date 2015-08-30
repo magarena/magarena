@@ -1,5 +1,5 @@
 name=Vorapede
-image=http://mtgimage.com/card/vorapede.jpg
+image=http://magiccards.info/scans/en/dka/131.jpg
 value=3.927
 rarity=M
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{G}{G}{G}
 pt=5/4
 ability=vigilance;trample;undying
 timing=main
-oracle=Vigilance, trample. Undying
+oracle=Vigilance, trample\nUndying

@@ -1,0 +1,11 @@
+name=Pilgrim of the Fires
+image=http://magiccards.info/scans/en/frf/162.jpg
+value=2.500
+rarity=U
+type=Artifact,Creature
+subtype=Golem
+cost={7}
+pt=6/4
+ability=First strike; trample
+timing=main
+oracle=First strike, trample

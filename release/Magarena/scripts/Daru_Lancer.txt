@@ -1,5 +1,5 @@
 name=Daru Lancer
-image=http://mtgimage.com/card/daru%20lancer.jpg
+image=http://magiccards.info/scans/en/on/20.jpg
 value=2.683
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/4
 ability=First strike;\
         Morph {2}{W}{W}
 timing=main
-oracle=First strike. Morph {2}{W}{W}
+oracle=First strike\nMorph {2}{W}{W}

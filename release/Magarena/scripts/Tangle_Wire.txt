@@ -1,0 +1,10 @@
+name=Tangle Wire
+image=http://magiccards.info/scans/en/ne/139.jpg
+value=4.562
+rarity=R
+type=Artifact
+cost={3}
+ability=Fading 4
+timing=artifact
+requires_groovy_code
+oracle=Fading 4\nAt the beginning of each player's upkeep, that player taps an untapped artifact, creature, or land he or she controls for each fade counter on Tangle Wire.

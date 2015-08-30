@@ -1,5 +1,5 @@
 name=Boneknitter
-image=http://mtgimage.com/card/boneknitter.jpg
+image=http://magiccards.info/scans/en/on/128.jpg
 value=3.266
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability={1}{B}: Regenerate target Zombie.;\
         Morph {2}{B}
 timing=main
-oracle={1}{B}: Regenerate target Zombie. Morph {2}{B}
+oracle={1}{B}: Regenerate target Zombie.\nMorph {2}{B}

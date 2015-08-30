@@ -1,5 +1,5 @@
 name=Horizon Chimera
-image=http://mtgimage.com/card/horizon%20chimera.jpg
+image=http://magiccards.info/scans/en/ths/194.jpg
 value=3.655
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=3/2
 ability=flash;flying;trample;\
         Whenever you draw a card, you gain 1 life.
 timing=flash
-oracle=Flash. Flying, trample. Whenever you draw a card, you gain 1 life.
+oracle=Flash\nFlying, trample\nWhenever you draw a card, you gain 1 life.

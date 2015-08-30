@@ -1,6 +1,6 @@
 name=Cho-Arrim Bruiser
-image=http://mtgimage.com/card/cho-arrim%20bruiser.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/9.jpg
+value=3.556
 rarity=R
 type=Creature
 subtype=Ogre,Rebel

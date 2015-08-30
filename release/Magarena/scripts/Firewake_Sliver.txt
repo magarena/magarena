@@ -1,5 +1,5 @@
 name=Firewake Sliver
-image=http://mtgimage.com/card/firewake%20sliver.jpg
+image=http://magiccards.info/scans/en/ts/238.jpg
 value=3.188
 rarity=U
 type=Creature
@@ -10,4 +10,4 @@ ability=all sliver creatures have haste;\
         all Slivers have "{1}, Sacrifice SN: Target Sliver creature gets +2/+2 until end of turn."
 static=all
 timing=main
-oracle=All Sliver creatures have haste. All Slivers have "{1}, Sacrifice this permanent: Target Sliver creature gets +2/+2 until end of turn."
+oracle=All Sliver creatures have haste.\nAll Slivers have "{1}, Sacrifice this permanent: Target Sliver creature gets +2/+2 until end of turn."

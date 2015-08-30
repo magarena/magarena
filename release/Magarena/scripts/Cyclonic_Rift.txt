@@ -1,5 +1,5 @@
 name=Cyclonic Rift
-image=http://mtgimage.com/card/cyclonic%20rift.jpg
+image=http://magiccards.info/scans/en/c14/104.jpg
 value=4.039
 rarity=R
 type=Instant
@@ -7,4 +7,4 @@ cost={1}{U}
 effect=Return target nonland permanent you don't control to its owner's hand.
 timing=removal
 requires_groovy_code
-oracle=Return target nonland permanent you don't control to its owner's hand. Overload {6}{U}
+oracle=Return target nonland permanent you don't control to its owner's hand.\nOverload {6}{U}

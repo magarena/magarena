@@ -1,0 +1,9 @@
+name=Pillar Tombs of Aku
+image=http://magiccards.info/scans/en/vi/17.jpg
+value=3.419
+rarity=R
+type=World,Enchantment
+cost={2}{B}{B}
+timing=enchantment
+requires_groovy_code
+oracle=At the beginning of each player's upkeep, that player may sacrifice a creature. If that player doesn't, he or she loses 5 life and you sacrifice Pillar Tombs of Aku.

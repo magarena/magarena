@@ -1,0 +1,9 @@
+name=Call of the Wild
+image=http://magiccards.info/scans/en/8e/235.jpg
+value=4.282
+rarity=R
+type=Enchantment
+cost={2}{G}{G}
+timing=enchantment
+requires_groovy_code
+oracle={2}{G}{G}: Reveal the top card of your library. If it's a creature card, put it onto the battlefield. Otherwise, put it into your graveyard.

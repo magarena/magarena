@@ -1,5 +1,5 @@
 name=Major Teroh
-image=http://mtgimage.com/card/major%20teroh.jpg
+image=http://magiccards.info/scans/en/tr/8.jpg
 value=3.908
 rarity=R
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=2/3
 ability=Flying;\
         {3}{W}{W}, Sacrifice SN: Exile all black creatures.
 timing=main
-oracle=Flying. {3}{W}{W}, Sacrifice Major Teroh: Exile all black creatures.
+oracle=Flying\n{3}{W}{W}, Sacrifice Major Teroh: Exile all black creatures.

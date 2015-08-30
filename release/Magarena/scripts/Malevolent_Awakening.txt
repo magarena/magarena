@@ -1,5 +1,5 @@
 name=Malevolent Awakening
-image=http://mtgimage.com/card/malevolent%20awakening.jpg
+image=http://magiccards.info/scans/en/od/147.jpg
 value=3.028
 rarity=U
 type=Enchantment

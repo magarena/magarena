@@ -1,9 +1,9 @@
 name=Mana Cylix
-image=http://mtgimage.com/card/mana%20cylix.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/cfx/138.jpg
+value=3.271
+rarity=C
 type=Artifact
 cost={1}
 ability={1}, {T}: Add one mana of any color to your mana pool.
-timing=main
+timing=artifact
 oracle={1}, {T}: Add one mana of any color to your mana pool.

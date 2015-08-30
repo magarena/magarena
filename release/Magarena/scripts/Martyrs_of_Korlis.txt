@@ -1,0 +1,11 @@
+name=Martyrs of Korlis
+image=http://magiccards.info/scans/en/me4/20.jpg
+value=2.963
+rarity=U
+type=Creature
+subtype=Human
+cost={3}{W}{W}
+pt=1/6
+timing=main
+requires_groovy_code
+oracle=As long as Martyrs of Korlis is untapped, all damage that would be dealt to you by artifacts is dealt to Martyrs of Korlis instead.

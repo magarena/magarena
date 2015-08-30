@@ -1,10 +1,10 @@
 name=Dormant Volcano
-image=http://mtgimage.com/card/dormant%20volcano.jpg
+image=http://magiccards.info/scans/en/c14/291.jpg
 value=2.500
 rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, sacrifice it unless you return an untapped Mountain you control to its owner's hand.;\
         {T}: Add {1}{R} to your mana pool.
-timing=main
-oracle=Dormant Volcano enters the battlefield tapped. When Dormant Volcano enters the battlefield, sacrifice it unless you return an untapped Mountain you control to its owner's hand. {T}: Add {1}{R} to your mana pool.
+timing=land
+oracle=Dormant Volcano enters the battlefield tapped.\nWhen Dormant Volcano enters the battlefield, sacrifice it unless you return an untapped Mountain you control to its owner's hand.\n{T}: Add {1}{R} to your mana pool.

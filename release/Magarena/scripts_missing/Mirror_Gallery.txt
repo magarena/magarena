@@ -1,9 +1,9 @@
 name=Mirror Gallery
-image=http://mtgimage.com/card/mirror%20gallery.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bok/154.jpg
+value=4.232
 rarity=R
 type=Artifact
 cost={5}
 ability=The "legend rule" doesn't apply.
-timing=main
+timing=artifact
 oracle=The "legend rule" doesn't apply.

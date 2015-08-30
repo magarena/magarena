@@ -1,5 +1,5 @@
 name=Morality Shift
-image=http://mtgimage.com/card/morality%20shift.jpg
+image=http://magiccards.info/scans/en/ju/70.jpg
 value=3.814
 rarity=R
 type=Sorcery

@@ -1,6 +1,6 @@
 name=Gurzigost
-image=http://mtgimage.com/card/gurzigost.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tr/126.jpg
+value=4.103
 rarity=R
 type=Creature
 subtype=Beast
@@ -9,4 +9,4 @@ pt=6/8
 ability=At the beginning of your upkeep, sacrifice SN unless you put two cards from your graveyard on the bottom of your library.;\
         {G}{G}, Discard a card: You may have SN assign its combat damage this turn as though it weren't blocked.
 timing=main
-oracle=At the beginning of your upkeep, sacrifice Gurzigost unless you put two cards from your graveyard on the bottom of your library. {G}{G}, Discard a card: You may have Gurzigost assign its combat damage this turn as though it weren't blocked.
+oracle=At the beginning of your upkeep, sacrifice Gurzigost unless you put two cards from your graveyard on the bottom of your library.\n{G}{G}, Discard a card: You may have Gurzigost assign its combat damage this turn as though it weren't blocked.

@@ -1,5 +1,5 @@
 name=Gruul Cluestone
-image=http://mtgimage.com/card/gruul%20cluestone.jpg
+image=http://magiccards.info/scans/en/dgm/140.jpg
 value=2.719
 rarity=C
 type=Artifact
@@ -7,4 +7,4 @@ cost={3}
 ability={T}: Add {R} or {G} to your mana pool.;\
         {R}{G},{T},Sacrifice SN: Draw a card.
 timing=artifact
-oracle={T}: Add {R} or {G} to your mana pool. {R}{G}, {T}, Sacrifice Gruul Cluestone: Draw a card.
+oracle={T}: Add {R} or {G} to your mana pool.\n{R}{G}, {T}, Sacrifice Gruul Cluestone: Draw a card.

@@ -1,5 +1,5 @@
 name=Downhill Charge
-image=http://mtgimage.com/card/downhill%20charge.jpg
+image=http://magiccards.info/scans/en/ddi/69.jpg
 value=4.000
 rarity=C
 type=Instant
@@ -7,4 +7,4 @@ cost={2}{R}
 ability=You may sacrifice a Mountain rather than pay SN's mana cost.
 timing=pump
 requires_groovy_code
-oracle=You may sacrifice a Mountain rather than pay Downhill Charge's mana cost. Target creature gets +X/+0 until end of turn, where X is the number of Mountains you control.
+oracle=You may sacrifice a Mountain rather than pay Downhill Charge's mana cost.\nTarget creature gets +X/+0 until end of turn, where X is the number of Mountains you control.

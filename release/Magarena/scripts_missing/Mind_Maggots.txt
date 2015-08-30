@@ -1,6 +1,6 @@
 name=Mind Maggots
-image=http://mtgimage.com/card/mind%20maggots.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ex/66.jpg
+value=3.425
 rarity=U
 type=Creature
 subtype=Insect

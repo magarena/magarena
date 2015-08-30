@@ -1,6 +1,6 @@
 name=Viashino Racketeer
-image=http://mtgimage.com/card/viashino%20racketeer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rtr/112.jpg
+value=1.760
 rarity=C
 type=Creature
 subtype=Viashino,Rogue

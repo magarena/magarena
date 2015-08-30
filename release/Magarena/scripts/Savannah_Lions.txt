@@ -1,9 +1,10 @@
 name=Savannah Lions
-image=http://mtgimage.com/card/savannah%20lions.jpg
+image=http://magiccards.info/scans/en/me4/24.jpg
 value=4.058
-rarity=U
+rarity=R
 type=Creature
 subtype=Cat
 cost={W}
 pt=2/1
 timing=main
+oracle=NONE

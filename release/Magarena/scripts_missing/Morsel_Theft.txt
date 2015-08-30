@@ -1,10 +1,10 @@
 name=Morsel Theft
-image=http://mtgimage.com/card/morsel%20theft.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mt/68.jpg
+value=3.532
 rarity=C
 type=Tribal,Sorcery
 subtype=Rogue
 cost={2}{B}{B}
 effect=Prowl {1}{B}~Target player loses 3 life and you gain 3 life. If SN's prowl cost was paid, draw a card.
 timing=main
-oracle=Prowl {1}{B}. Target player loses 3 life and you gain 3 life. If Morsel Theft's prowl cost was paid, draw a card.
+oracle=Prowl {1}{B}\nTarget player loses 3 life and you gain 3 life. If Morsel Theft's prowl cost was paid, draw a card.

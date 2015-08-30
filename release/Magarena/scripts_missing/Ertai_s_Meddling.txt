@@ -1,9 +1,9 @@
 name=Ertai's Meddling
-image=http://mtgimage.com/card/ertai%27s%20meddling.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tp/61.jpg
+value=4.410
 rarity=R
 type=Instant
 cost={X}{U}
 effect=X can't be 0.~Target spell's controller exiles it with X delay counters on it.~At the beginning of each of that player's upkeeps, if that card is exiled, remove a delay counter from it. If the card has no delay counters on it, he or she puts it onto the stack as a copy of the original spell.
 timing=removal
-oracle=X can't be 0. Target spell's controller exiles it with X delay counters on it. At the beginning of each of that player's upkeeps, if that card is exiled, remove a delay counter from it. If the card has no delay counters on it, he or she puts it onto the stack as a copy of the original spell.
+oracle=X can't be 0.\nTarget spell's controller exiles it with X delay counters on it.\nAt the beginning of each of that player's upkeeps, if that card is exiled, remove a delay counter from it. If the card has no delay counters on it, he or she puts it onto the stack as a copy of the original spell.

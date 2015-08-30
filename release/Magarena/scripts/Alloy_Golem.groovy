@@ -12,7 +12,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicColor color = event.getChosenColor();
-            game.doAction(new MagicAddStaticAction(event.getPermanent(), 
+            game.doAction(new AddStaticAction(event.getPermanent(), 
                 new MagicStatic(MagicLayer.Color) {
                     @Override
                     public int getColorFlags(final MagicPermanent perm, final int flags) {

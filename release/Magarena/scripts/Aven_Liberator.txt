@@ -1,0 +1,13 @@
+name=Aven Liberator
+image=http://magiccards.info/scans/en/sc/4.jpg
+value=2.674
+rarity=C
+type=Creature
+subtype=Bird,Soldier
+cost={2}{W}{W}
+pt=2/3
+ability=Flying;\
+        Morph {3}{W};\
+        When SN is turned face up, target creature you control gains protection from the color of your choice until end of turn.
+timing=main
+oracle=Flying\nMorph {3}{W}\nWhen Aven Liberator is turned face up, target creature you control gains protection from the color of your choice until end of turn.

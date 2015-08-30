@@ -1,6 +1,6 @@
 name=Diluvian Primordial
-image=http://mtgimage.com/card/diluvian%20primordial.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gtc/33.jpg
+value=3.069
 rarity=R
 type=Creature
 subtype=Avatar
@@ -9,4 +9,4 @@ pt=5/5
 ability=Flying;\
         When SN enters the battlefield, for each opponent, you may cast up to one target instant or sorcery card from that player's graveyard without paying its mana cost. If a card cast this way would be put into a graveyard this turn, exile it instead.
 timing=main
-oracle=Flying. When Diluvian Primordial enters the battlefield, for each opponent, you may cast up to one target instant or sorcery card from that player's graveyard without paying its mana cost. If a card cast this way would be put into a graveyard this turn, exile it instead.
+oracle=Flying\nWhen Diluvian Primordial enters the battlefield, for each opponent, you may cast up to one target instant or sorcery card from that player's graveyard without paying its mana cost. If a card cast this way would be put into a graveyard this turn, exile it instead.

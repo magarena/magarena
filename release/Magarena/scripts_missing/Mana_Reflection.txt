@@ -1,9 +1,9 @@
 name=Mana Reflection
-image=http://mtgimage.com/card/mana%20reflection.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/122.jpg
+value=4.012
 rarity=R
 type=Enchantment
 cost={4}{G}{G}
 ability=If you tap a permanent for mana, it produces twice as much of that mana instead.
-timing=main
+timing=enchantment
 oracle=If you tap a permanent for mana, it produces twice as much of that mana instead.

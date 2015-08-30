@@ -1,5 +1,5 @@
 name=Medicine Bag
-image=http://mtgimage.com/card/medicine%20bag.jpg
+image=http://magiccards.info/scans/en/ex/133.jpg
 value=2.043
 rarity=U
 type=Artifact

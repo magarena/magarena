@@ -1,6 +1,6 @@
 name=Thoughtpicker Witch
-image=http://mtgimage.com/card/thoughtpicker%20witch.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rav/109.jpg
+value=3.833
 rarity=C
 type=Creature
 subtype=Human,Wizard

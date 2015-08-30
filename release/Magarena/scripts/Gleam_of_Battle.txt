@@ -1,9 +1,9 @@
 name=Gleam of Battle
-image=http://mtgimage.com/card/gleam%20of%20battle.jpg
+image=http://magiccards.info/scans/en/dgm/73.jpg
 value=3.162
 rarity=U
 type=Enchantment
 cost={4}{R}{W}
+ability=Whenever a creature you control attacks, put a +1/+1 counter on RN.
 timing=main
-requires_groovy_code
 oracle=Whenever a creature you control attacks, put a +1/+1 counter on it.

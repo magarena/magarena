@@ -1,9 +1,9 @@
 name=Widespread Panic
-image=http://mtgimage.com/card/widespread%20panic.jpg
-value=2.500
+image=http://magiccards.info/scans/en/c13/131.jpg
+value=3.477
 rarity=R
 type=Enchantment
 cost={2}{R}
 ability=Whenever a spell or ability causes its controller to shuffle his or her library, that player puts a card from his or her hand on top of his or her library.
-timing=main
+timing=enchantment
 oracle=Whenever a spell or ability causes its controller to shuffle his or her library, that player puts a card from his or her hand on top of his or her library.

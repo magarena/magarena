@@ -1,5 +1,5 @@
 name=Murkfiend Liege
-image=http://mtgimage.com/card/murkfiend%20liege.jpg
+image=http://magiccards.info/scans/en/c13/231.jpg
 value=4.000
 rarity=R
 type=Creature
@@ -11,4 +11,4 @@ ability=other green creatures you control get +1/+1;\
 static=player
 timing=main
 requires_groovy_code
-oracle=Other green creatures you control get +1/+1. Other blue creatures you control get +1/+1. Untap all green and/or blue creatures you control during each other player's untap step.
+oracle=Other green creatures you control get +1/+1.\nOther blue creatures you control get +1/+1.\nUntap all green and/or blue creatures you control during each other player's untap step.

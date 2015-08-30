@@ -1,6 +1,6 @@
 name=Bloodstained Mire
-image=http://mtgimage.com/card/bloodstained%20mire.jpg
-value=4.300
+image=http://magiccards.info/scans/en/ktk/230.jpg
+value=4.333
 rarity=R
 type=Land
 ability={T},Pay 1 life,Sacrifice SN:Search your library for a Swamp or Mountain card and put it onto the battlefield. Then shuffle your library.

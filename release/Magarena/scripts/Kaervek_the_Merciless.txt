@@ -1,5 +1,5 @@
 name=Kaervek the Merciless
-image=http://mtgimage.com/card/kaervek%20the%20merciless.jpg
+image=http://magiccards.info/scans/en/arc/88.jpg
 value=4.000
 rarity=R
 type=Legendary,Creature

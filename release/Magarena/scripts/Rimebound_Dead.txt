@@ -1,0 +1,11 @@
+name=Rimebound Dead
+image=http://magiccards.info/scans/en/cs/69.jpg
+value=3.942
+rarity=C
+type=Snow,Creature
+subtype=Skeleton
+cost={B}
+pt=1/1
+ability={S}: Regenerate SN.
+timing=main
+oracle={S}: Regenerate Rimebound Dead.

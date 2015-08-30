@@ -1,9 +1,10 @@
 name=Marsh Gas
-image=http://mtgimage.com/card/marsh%20gas.jpg
+image=http://magiccards.info/scans/en/4e/30.jpg
 value=2.133
 rarity=C
 type=Instant
 cost={B}
+ability=Cast SN with AI only if an opponent controls a creature.
 effect=All creatures get -2/-0 until end of turn.
 timing=removal
 oracle=All creatures get -2/-0 until end of turn.

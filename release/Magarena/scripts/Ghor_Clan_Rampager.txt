@@ -1,5 +1,5 @@
 name=Ghor-Clan Rampager
-image=http://mtgimage.com/card/ghor%2Dclan%20rampager.jpg
+image=http://magiccards.info/scans/en/gtc/167.jpg
 value=4.025
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=trample;\
         {R}{G}, Discard SN: Target attacking creature gets +4/+4 and gains trample until end of turn.
 timing=main
-oracle=Trample. Bloodrush — {R}{G}, Discard Ghor-Clan Rampager: Target attacking creature gets +4/+4 and gains trample until end of turn.
+oracle=Trample\nBloodrush — {R}{G}, Discard Ghor-Clan Rampager: Target attacking creature gets +4/+4 and gains trample until end of turn.

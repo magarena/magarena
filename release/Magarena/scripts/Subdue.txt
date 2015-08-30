@@ -1,0 +1,9 @@
+name=Subdue
+image=http://magiccards.info/scans/en/lg/120.jpg
+value=2.196
+rarity=C
+type=Instant
+cost={G}
+timing=block
+requires_groovy_code
+oracle=Prevent all combat damage that would be dealt by target creature this turn. That creature gets +0/+X until end of turn, where X is its converted mana cost.

@@ -1,5 +1,5 @@
 name=Arcbound Reclaimer
-image=http://mtgimage.com/card/arcbound%20reclaimer.jpg
+image=http://magiccards.info/scans/en/ds/101.jpg
 value=3.594
 rarity=R
 type=Artifact,Creature
@@ -7,6 +7,6 @@ subtype=Golem
 cost={4}
 pt=0/0
 ability=Remove a +1/+1 counter from SN: Put target artifact card from your graveyard on top of your library.;\
-        modular 2
+        Modular 2
 timing=main
-oracle=Remove a +1/+1 counter from Arcbound Reclaimer: Put target artifact card from your graveyard on top of your library. Modular 2
+oracle=Remove a +1/+1 counter from Arcbound Reclaimer: Put target artifact card from your graveyard on top of your library.\nModular 2

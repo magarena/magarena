@@ -1,5 +1,5 @@
 name=Tivadar of Thorn
-image=http://mtgimage.com/card/tivadar%20of%20thorn.jpg
+image=http://magiccards.info/scans/en/ts/44.jpg
 value=3.563
 rarity=R
 type=Legendary,Creature
@@ -10,4 +10,4 @@ ability=first strike;\
         protection from red;\
         When SN enters the battlefield, destroy target Goblin.
 timing=main
-oracle=First strike, protection from red. When Tivadar of Thorn enters the battlefield, destroy target Goblin.
+oracle=First strike, protection from red\nWhen Tivadar of Thorn enters the battlefield, destroy target Goblin.

@@ -1,5 +1,5 @@
 name=Stingscourger
-image=http://mtgimage.com/card/stingscourger.jpg
+image=http://magiccards.info/scans/en/mma/131.jpg
 value=4.017
 removal=2
 rarity=C
@@ -10,4 +10,4 @@ pt=2/2
 ability=echo {3}{R};\
         When SN enters the battlefield, return target creature an opponent controls to its owner's hand.
 timing=main
-oracle=Echo {3}{R}. When Stingscourger enters the battlefield, return target creature an opponent controls to its owner's hand.
+oracle=Echo {3}{R}\nWhen Stingscourger enters the battlefield, return target creature an opponent controls to its owner's hand.

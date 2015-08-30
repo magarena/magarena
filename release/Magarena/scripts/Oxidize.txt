@@ -1,5 +1,5 @@
 name=Oxidize
-image=http://mtgimage.com/card/oxidize.jpg
+image=http://magiccards.info/scans/en/ds/79.jpg
 value=4.310
 removal=1
 rarity=U

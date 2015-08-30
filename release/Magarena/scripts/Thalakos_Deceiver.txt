@@ -1,5 +1,5 @@
 name=Thalakos Deceiver
-image=http://mtgimage.com/card/thalakos%20deceiver.jpg
+image=http://magiccards.info/scans/en/sh/45.jpg
 value=3.978
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=shadow
 timing=main
 requires_groovy_code
-oracle=Shadow. Whenever Thalakos Deceiver attacks and isn't blocked, you may sacrifice it. If you do, gain control of target creature.
+oracle=Shadow\nWhenever Thalakos Deceiver attacks and isn't blocked, you may sacrifice it. If you do, gain control of target creature.

@@ -15,7 +15,7 @@
                 game.addEvent(new MagicBounceChosenPermanentEvent(
                     event.getSource(),
                     player,
-                    MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL
+                    TARGET_CREATURE_YOU_CONTROL
                 ));
             }
         }

@@ -1,10 +1,10 @@
 name=Inkmoth Nexus
-image=http://mtgimage.com/card/inkmoth%20nexus.jpg
+image=http://magiccards.info/scans/en/mbs/145.jpg
 value=4.348
 rarity=R
 type=Land
-ability={T}: Add {1} to your mana pool.
+ability={T}: Add {1} to your mana pool.;\
+        {1}: SN becomes a 1/1 Blinkmoth artifact creature with flying and infect until end of turn. It's still a land.
 timing=land
 mana_or_combat
-requires_groovy_code
-oracle={T}: Add {1} to your mana pool. {1}: Inkmoth Nexus becomes a 1/1 Blinkmoth artifact creature with flying and infect until end of turn. It's still a land.
+oracle={T}: Add {1} to your mana pool.\n{1}: Inkmoth Nexus becomes a 1/1 Blinkmoth artifact creature with flying and infect until end of turn. It's still a land.

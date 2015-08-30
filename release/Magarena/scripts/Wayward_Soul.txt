@@ -1,5 +1,5 @@
 name=Wayward Soul
-image=http://mtgimage.com/card/wayward%20soul.jpg
+image=http://magiccards.info/scans/en/bd/18.jpg
 value=3.019
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/2
 ability=flying;\
         {U}: Put SN on top of its owner's library.
 timing=main
-oracle=Flying. {U}: Put Wayward Soul on top of its owner's library.
+oracle=Flying\n{U}: Put Wayward Soul on top of its owner's library.

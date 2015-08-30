@@ -1,6 +1,6 @@
 name=Wall of Dust
-image=http://mtgimage.com/card/wall%20of%20dust.jpg
-value=2.500
+image=http://magiccards.info/scans/en/4e/247.jpg
+value=3.328
 rarity=U
 type=Creature
 subtype=Wall
@@ -9,4 +9,4 @@ pt=1/4
 ability=Defender;\
         Whenever SN blocks a creature, that creature can't attack during its controller's next turn.
 timing=main
-oracle=Defender. Whenever Wall of Dust blocks a creature, that creature can't attack during its controller's next turn.
+oracle=Defender\nWhenever Wall of Dust blocks a creature, that creature can't attack during its controller's next turn.

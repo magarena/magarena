@@ -1,11 +1,11 @@
 name=Accursed Spirit
-image=http://mtgimage.com/card/accursed%20spirit.jpg
+image=http://magiccards.info/scans/en/m15/85.jpg
 value=3.071
 rarity=C
 type=Creature
 subtype=Spirit
 cost={3}{B}
 pt=3/2
-ability=intimidate
+ability=Intimidate
 timing=main
 oracle=Intimidate

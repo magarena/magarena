@@ -1,5 +1,5 @@
 name=Korozda Monitor
-image=http://mtgimage.com/card/korozda%20monitor.jpg
+image=http://magiccards.info/scans/en/rtr/129.jpg
 value=2.560
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=Trample;\
         Scavenge {5}{G}{G}
 timing=main
-oracle=Trample. Scavenge {5}{G}{G}
+oracle=Trample\nScavenge {5}{G}{G}

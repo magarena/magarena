@@ -1,12 +1,12 @@
 name=Sylvan Messenger
-image=http://mtgimage.com/card/sylvan%20messenger.jpg
-value=4.071
+image=http://magiccards.info/scans/en/ori/199.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Elf
 cost={3}{G}
 pt=2/2
-ability=Trample
+ability=Trample;\
+        When SN enters the battlefield, reveal the top four cards of your library. Put all Elf cards revealed this way into your hand and the rest on the bottom of your library in any order.
 timing=main
-requires_groovy_code
-oracle=Trample. When Sylvan Messenger enters the battlefield, reveal the top four cards of your library. Put all Elf cards revealed this way into your hand and the rest on the bottom of your library in any order.
+oracle=Trample\nWhen Sylvan Messenger enters the battlefield, reveal the top four cards of your library. Put all Elf cards revealed this way into your hand and the rest on the bottom of your library in any order.

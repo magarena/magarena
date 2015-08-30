@@ -1,6 +1,6 @@
 name=Pili-Pala
-image=http://mtgimage.com/card/pili-pala.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/258.jpg
+value=3.615
 rarity=C
 type=Artifact,Creature
 subtype=Scarecrow
@@ -8,5 +8,5 @@ cost={2}
 pt=1/1
 ability=Flying;\
         {2}, {Q}: Add one mana of any color to your mana pool.
-timing=main
-oracle=Flying. {2}, {Q}: Add one mana of any color to your mana pool.
+timing=artifact
+oracle=Flying\n{2}, {Q}: Add one mana of any color to your mana pool.

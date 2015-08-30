@@ -1,22 +1,12 @@
 package magic.ui;
 
-import magic.ui.cardtable.CardTable;
-import magic.data.DuelConfig;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicDeck;
-import magic.model.MagicDuel;
-import magic.model.MagicPlayerDefinition;
-import magic.model.player.HumanPlayer;
-import magic.model.player.PlayerProfile;
-import magic.ui.duel.viewer.CardViewer;
-import magic.ui.duel.viewer.DeckDescriptionViewer;
-import magic.ui.duel.viewer.DeckStatisticsViewer;
-import magic.ui.duel.viewer.DeckStrengthViewer;
-import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.TexturedPanel;
-import magic.ui.player.PlayerDetailsPanel;
-import net.miginfocom.swing.MigLayout;
-
+import magic.translate.UiString;
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
@@ -27,27 +17,39 @@ import javax.swing.JTabbedPane;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.SpringLayout;
 import javax.swing.SwingConstants;
-
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import magic.data.DeckType;
+import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
+import magic.exception.InvalidDeckException;
+import magic.model.DuelPlayerConfig;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicDeck;
+import magic.model.MagicDuel;
+import magic.model.player.PlayerProfile;
+import magic.ui.cardtable.CardTable;
+import magic.ui.duel.viewer.CardViewer;
+import magic.ui.duel.viewer.DeckDescriptionViewer;
+import magic.ui.duel.viewer.DeckStatisticsViewer;
+import magic.ui.player.PlayerDetailsPanel;
+import magic.ui.utility.GraphicsUtils;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.TexturedPanel;
+import net.miginfocom.swing.MigLayout;
 
+@SuppressWarnings("serial")
 public class DuelDecksPanel extends TexturedPanel {
 
-    private static final long serialVersionUID = 1L;
+    // translatable strings
+    private static final String _S1 = "Generate Deck";
+    private static final String _S2 = "Deck (%s) - %d cards";
 
     private static final int SPACING = 10;
-    private static final String GENERATE_BUTTON_TEXT = "Generate Deck";
+    private static final String GENERATE_BUTTON_TEXT = UiString.get(_S1);
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
     private final MigLayout migLayout = new MigLayout();
     private final MagicDuel duel;
     private final JTabbedPane tabbedPane;
-    private final DeckStrengthViewer strengthViewer;
     private final DeckDescriptionViewer[] deckDescriptionViewers;
     private final CardViewer cardViewer;
     private final CardTable[] cardTables;
@@ -72,8 +74,8 @@ public class DuelDecksPanel extends TexturedPanel {
 
         // card image
         cardViewer=new CardViewer();
-        cardViewer.setPreferredSize(CONFIG.getMaxCardImageSize());
-        cardViewer.setMaximumSize(CONFIG.getMaxCardImageSize());
+        cardViewer.setPreferredSize(GraphicsUtils.getMaxCardImageSize());
+        cardViewer.setMaximumSize(GraphicsUtils.getMaxCardImageSize());
         cardViewer.setCard(MagicCardDefinition.UNKNOWN);
         cardViewer.setAlignmentX(Component.LEFT_ALIGNMENT);
 
@@ -90,19 +92,15 @@ public class DuelDecksPanel extends TexturedPanel {
         // create tabs for each player
         tabbedPane = new JTabbedPane(JTabbedPane.TOP);
 
-        final MagicPlayerDefinition[] players = duel.getPlayers();
+        final DuelPlayerConfig[] players = duel.getPlayers();
         cardTables = new CardTable[players.length];
         deckDescriptionViewers = new DeckDescriptionViewer[players.length];
         statsViewers = new DeckStatisticsViewer[players.length];
         generateButtons = new JButton[players.length];
 
-        // deck strength tester
-        strengthViewer=new DeckStrengthViewer(duel);
-        strengthViewer.setAlignmentX(Component.LEFT_ALIGNMENT);
-
         for (int i = 0; i < players.length; i++) {
 
-            final MagicPlayerDefinition player = players[i];
+            final DuelPlayerConfig player = players[i];
 
             // deck description
             deckDescriptionViewers[i] = new DeckDescriptionViewer();
@@ -118,11 +116,15 @@ public class DuelDecksPanel extends TexturedPanel {
             // generate deck button
             generateButtons[i] = new JButton(GENERATE_BUTTON_TEXT);
             generateButtons[i].setFont(FontsAndBorders.FONT2);
-            generateButtons[i].setEnabled(duel.getGamesPlayed() == 0);
+            generateButtons[i].setEnabled(duel.getGamesPlayed() == 0 && player.getDeckProfile().getDeckType() == DeckType.Random);
             generateButtons[i].addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(final ActionEvent event) {
-                    duel.buildDeck(player);
+                    try {
+                        duel.buildDeck(player);
+                    } catch (InvalidDeckException ex) {
+                        ScreenController.showWarningMessage(ex.getMessage());
+                    }
                     updateDecksAfterEdit();
                 }
             });
@@ -138,10 +140,7 @@ public class DuelDecksPanel extends TexturedPanel {
             rightPanel.add(deckDescriptionViewers[i]);
             rightPanel.add(Box.createVerticalStrut(SPACING));
 
-            if (!player.isArtificial()) {
-                rightPanel.add(strengthViewer);
-                rightPanel.add(Box.createVerticalStrut(SPACING));
-
+            if (player.getProfile().isHuman()) {
                 // show card
                 cardViewer.setCard(player.getDeck().get(0));
             }
@@ -201,7 +200,7 @@ public class DuelDecksPanel extends TexturedPanel {
         tabbedPane.setPreferredSize(new Dimension(800, 0));
 
         // layout screen components.
-        final Dimension imageSize = CONFIG.getMaxCardImageSize();
+        final Dimension imageSize = GraphicsUtils.getMaxCardImageSize();
         migLayout.setLayoutConstraints("insets 0, gap 0");
         if (CONFIG.isHighQuality()) {
             migLayout.setColumnConstraints("[][grow]");
@@ -218,14 +217,14 @@ public class DuelDecksPanel extends TexturedPanel {
     }
 
     String generateTitle(final MagicDeck deck) {
-        return "Deck (" + deck.getName() + ") - " + deck.size() + " cards";
+        return UiString.get(_S2, deck.getName(), deck.size());
     }
 
     public MagicDuel getDuel() {
         return duel;
     }
 
-    public MagicPlayerDefinition getSelectedPlayer() {
+    public DuelPlayerConfig getSelectedPlayer() {
         return duel.getPlayers()[tabbedPane.getSelectedIndex()];
     }
 
@@ -235,17 +234,13 @@ public class DuelDecksPanel extends TexturedPanel {
 
     public void updateDecksAfterEdit() {
         for (int i = 0; i < statsViewers.length; i++) {
-            final MagicPlayerDefinition player = duel.getPlayers()[i];
+            final DuelPlayerConfig player = duel.getPlayers()[i];
             final MagicDeck deck = player.getDeck();
             cardTables[i].setCards(deck);
             cardTables[i].setTitle(generateTitle(deck));
             statsViewers[i].setDeck(deck);
             deckDescriptionViewers[i].setPlayer(player);
         }
-    }
-
-    public void haltStrengthViewer() {
-        strengthViewer.halt();
     }
 
     @SuppressWarnings("serial")
@@ -257,15 +252,13 @@ public class DuelDecksPanel extends TexturedPanel {
             add(new JLabel(IconImages.getPlayerAvatar(profile).getIcon(4)));
             add(new PlayerDetailsPanel(profile, Color.BLACK), "w 100%");
             add(getScoreLabel(getScore(profile)), "w 100%");
-            setPreferredSize(new Dimension(250, 54));
+            setPreferredSize(new Dimension(280, 54));
         }
 
         private int getScore(final PlayerProfile profile) {
-            if (profile instanceof HumanPlayer) {
-                return duel.getGamesWon();
-            } else {
-                return duel.getGamesPlayed() - duel.getGamesWon();
-            }
+            return profile.isHuman()
+                    ? duel.getGamesWon()
+                    : duel.getGamesPlayed() - duel.getGamesWon();
         }
 
         private JLabel getScoreLabel(final int score) {

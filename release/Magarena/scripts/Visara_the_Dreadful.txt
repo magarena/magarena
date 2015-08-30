@@ -1,5 +1,5 @@
 name=Visara the Dreadful
-image=http://mtgimage.com/card/visara%20the%20dreadful.jpg
+image=http://magiccards.info/scans/en/vma/146.jpg
 value=4.000
 rarity=M
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=5/5
 ability=flying;\
         {T}: Destroy target creature. It can't be regenerated.
 timing=main
-oracle=Flying. {T}: Destroy target creature. It can't be regenerated.
+oracle=Flying\n{T}: Destroy target creature. It can't be regenerated.

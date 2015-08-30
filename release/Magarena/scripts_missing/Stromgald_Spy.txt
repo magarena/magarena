@@ -1,6 +1,6 @@
 name=Stromgald Spy
-image=http://mtgimage.com/card/stromgald%20spy.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ai/29.jpg
+value=3.269
 rarity=U
 type=Creature
 subtype=Human,Rogue

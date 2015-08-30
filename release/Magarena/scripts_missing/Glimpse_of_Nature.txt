@@ -1,6 +1,6 @@
 name=Glimpse of Nature
-image=http://mtgimage.com/card/glimpse%20of%20nature.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/210.jpg
+value=4.237
 rarity=R
 type=Sorcery
 cost={G}

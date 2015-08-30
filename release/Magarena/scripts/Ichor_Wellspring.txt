@@ -1,5 +1,5 @@
 name=Ichor Wellspring
-image=http://mtgimage.com/card/ichor%20wellspring.jpg
+image=http://magiccards.info/scans/en/c14/241.jpg
 value=3.837
 rarity=C
 type=Artifact

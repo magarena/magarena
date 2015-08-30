@@ -1,0 +1,12 @@
+name=Rune-Tail, Kitsune Ascendant
+image=http://magiccards.info/scans/en/sok/27a.jpg
+value=3.929
+rarity=R
+type=Legendary,Creature
+subtype=Fox,Monk
+cost={2}{W}
+pt=2/2
+ability=When you have 30 or more life, flip SN.
+flip=Rune-Tail's Essence
+timing=main
+oracle=When you have 30 or more life, flip Rune-Tail, Kitsune Ascendant.

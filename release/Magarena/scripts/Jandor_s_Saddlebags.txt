@@ -1,5 +1,5 @@
 name=Jandor's Saddlebags
-image=http://mtgimage.com/card/jandor%27s%20saddlebags.jpg
+image=http://magiccards.info/scans/en/7e/304.jpg
 value=1.950
 rarity=R
 type=Artifact

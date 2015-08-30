@@ -1,6 +1,6 @@
 name=Punish the Enemy
-image=http://mtgimage.com/card/punish%20the%20enemy.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dgm/35.jpg
+value=2.948
 rarity=C
 type=Instant
 cost={4}{R}

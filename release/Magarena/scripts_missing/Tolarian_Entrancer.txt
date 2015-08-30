@@ -1,6 +1,6 @@
 name=Tolarian Entrancer
-image=http://mtgimage.com/card/tolarian%20entrancer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/wl/56.jpg
+value=4.293
 rarity=R
 type=Creature
 subtype=Human,Wizard

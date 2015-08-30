@@ -1,5 +1,5 @@
 name=Cinderbones
-image=http://mtgimage.com/card/cinderbones.jpg
+image=http://magiccards.info/scans/en/shm/59.jpg
 value=2.415
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=wither;\
         {1}{B}: Regenerate SN.
 timing=main
-oracle=Wither. {1}{B}: Regenerate Cinderbones.
+oracle=Wither\n{1}{B}: Regenerate Cinderbones.

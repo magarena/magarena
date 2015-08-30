@@ -1,5 +1,5 @@
 name=Jhessian Zombies
-image=http://mtgimage.com/card/jhessian%20zombies.jpg
+image=http://magiccards.info/scans/en/ddh/56.jpg
 value=2.381
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/4
 ability=Fear;\
         Islandcycling {2};Swampcycling {2}
 timing=main
-oracle=Fear. Islandcycling {2}, swampcycling {2}
+oracle=Fear\nIslandcycling {2}, swampcycling {2}

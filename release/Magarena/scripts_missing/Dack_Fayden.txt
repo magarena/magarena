@@ -1,6 +1,6 @@
 name=Dack Fayden
-image=http://mtgimage.com/card/dack%20fayden.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cns/42.jpg
+value=3.862
 rarity=M
 type=Planeswalker
 subtype=Dack
@@ -9,4 +9,4 @@ ability=+1: Target player draws two cards, then discards two cards.;\
         −2: Gain control of target artifact.;\
         −6: You get an emblem with "Whenever you cast a spell that targets one or more permanents, gain control of those permanents."
 timing=main
-oracle=+1: Target player draws two cards, then discards two cards. −2: Gain control of target artifact. −6: You get an emblem with "Whenever you cast a spell that targets one or more permanents, gain control of those permanents."
+oracle=+1: Target player draws two cards, then discards two cards.\n−2: Gain control of target artifact.\n−6: You get an emblem with "Whenever you cast a spell that targets one or more permanents, gain control of those permanents."

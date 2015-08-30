@@ -1,13 +1,13 @@
 name=Mad Auntie
-image=http://mtgimage.com/card/mad%20auntie.jpg
+image=http://magiccards.info/scans/en/mma/90.jpg
 value=3.955
 rarity=R
 type=Creature
 subtype=Goblin,Shaman
 cost={2}{B}
 pt=2/2
-ability=other goblin creatures you control get +1/+1
+ability=Other Goblin creatures you control get +1/+1.;\
+        {T}: Regenerate another target Goblin.
 static=player
 timing=main
-requires_groovy_code
-oracle=Other Goblin creatures you control get +1/+1. {T}: Regenerate another target Goblin.
+oracle=Other Goblin creatures you control get +1/+1.\n{T}: Regenerate another target Goblin.

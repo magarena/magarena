@@ -1,5 +1,5 @@
 name=Tendrils of Agony
-image=http://mtgimage.com/card/tendrils%20of%20agony.jpg
+image=http://magiccards.info/scans/en/vma/142.jpg
 value=4.500
 rarity=U
 type=Sorcery
@@ -7,4 +7,4 @@ cost={2}{B}{B}
 effect=Target player loses 2 life and you gain 2 life.
 ability=storm
 timing=main
-oracle=Target player loses 2 life and you gain 2 life. Storm
+oracle=Target player loses 2 life and you gain 2 life.\nStorm

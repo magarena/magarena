@@ -1,5 +1,5 @@
 name=Shivan Zombie
-image=http://mtgimage.com/card/shivan%20zombie.jpg
+image=http://magiccards.info/scans/en/in/271.jpg
 value=3.900
 ability=protection from white
 rarity=C

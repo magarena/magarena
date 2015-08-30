@@ -1,6 +1,6 @@
 name=Dread Slaver
-image=http://mtgimage.com/card/dread%20slaver.jpg
-value=2.500
+image=http://magiccards.info/scans/en/avr/98.jpg
+value=3.413
 rarity=R
 type=Creature
 subtype=Zombie,Horror

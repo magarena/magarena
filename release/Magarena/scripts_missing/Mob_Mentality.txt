@@ -1,6 +1,6 @@
 name=Mob Mentality
-image=http://mtgimage.com/card/mob%20mentality.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vi/88.jpg
+value=3.243
 rarity=U
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={R}
 ability=Enchant creature;\
         Enchanted creature has trample.;\
         Whenever all non-Wall creatures you control attack, enchanted creature gets +X/+0 until end of turn, where X is the number of attacking creatures.
-timing=main
-oracle=Enchant creature. Enchanted creature has trample. Whenever all non-Wall creatures you control attack, enchanted creature gets +X/+0 until end of turn, where X is the number of attacking creatures.
+timing=aura
+oracle=Enchant creature\nEnchanted creature has trample.\nWhenever all non-Wall creatures you control attack, enchanted creature gets +X/+0 until end of turn, where X is the number of attacking creatures.

@@ -1,5 +1,5 @@
 name=Steal Enchantment
-image=http://mtgimage.com/card/steal%20enchantment.jpg
+image=http://magiccards.info/scans/en/tp/90.jpg
 value=3.927
 rarity=U
 type=Enchantment
@@ -8,4 +8,4 @@ cost={U}{U}
 ability=You control enchanted enchantment.
 enchant=gain control,neg enchantment
 timing=enchantment
-oracle=Enchant enchantment. You control enchanted enchantment.
+oracle=Enchant enchantment\nYou control enchanted enchantment.

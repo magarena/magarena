@@ -1,5 +1,5 @@
 name=Fettergeist
-image=http://mtgimage.com/card/fettergeist.jpg
+image=http://magiccards.info/scans/en/avr/52.jpg
 value=3.264
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=3/4
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. At the beginning of your upkeep, sacrifice Fettergeist unless you pay {1} for each other creature you control.
+oracle=Flying\nAt the beginning of your upkeep, sacrifice Fettergeist unless you pay {1} for each other creature you control.

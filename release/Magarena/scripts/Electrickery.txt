@@ -1,5 +1,5 @@
 name=Electrickery
-image=http://mtgimage.com/card/electrickery.jpg
+image=http://magiccards.info/scans/en/rtr/93.jpg
 value=3.604
 rarity=C
 type=Instant
@@ -8,4 +8,4 @@ effect=SN deals 1 damage to target creature you don't control.
 removal=1
 timing=removal
 requires_groovy_code
-oracle=Electrickery deals 1 damage to target creature you don't control. Overload {1}{R}
+oracle=Electrickery deals 1 damage to target creature you don't control.\nOverload {1}{R}

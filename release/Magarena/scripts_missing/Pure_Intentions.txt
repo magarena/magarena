@@ -1,10 +1,10 @@
 name=Pure Intentions
-image=http://mtgimage.com/card/pure%20intentions.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sok/25.jpg
+value=2.697
 rarity=R
 type=Instant
 subtype=Arcane
 cost={W}
 effect=Whenever a spell or ability an opponent controls causes you to discard cards this turn, return those cards from your graveyard to your hand.~When a spell or ability an opponent controls causes you to discard SN, return SN from your graveyard to your hand at the beginning of the next end step.
 timing=removal
-oracle=Whenever a spell or ability an opponent controls causes you to discard cards this turn, return those cards from your graveyard to your hand. When a spell or ability an opponent controls causes you to discard Pure Intentions, return Pure Intentions from your graveyard to your hand at the beginning of the next end step.
+oracle=Whenever a spell or ability an opponent controls causes you to discard cards this turn, return those cards from your graveyard to your hand.\nWhen a spell or ability an opponent controls causes you to discard Pure Intentions, return Pure Intentions from your graveyard to your hand at the beginning of the next end step.

@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_CREATURE_YOU_CONTROL,
+                TARGET_CREATURE_YOU_CONTROL,
                 this,
                 "PN gain life equal to that creature\$'s power plus its toughness."
             );
@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             event.processTargetPermanent(game, {
-                game.doAction(new MagicChangeLifeAction(player,it.getPower()+it.getToughness()));
+                game.doAction(new ChangeLifeAction(player,it.getPower()+it.getToughness()));
             });
         }
     }

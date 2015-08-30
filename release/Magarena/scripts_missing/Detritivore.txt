@@ -1,6 +1,6 @@
 name=Detritivore
-image=http://mtgimage.com/card/detritivore.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pc/96.jpg
+value=3.060
 rarity=R
 type=Creature
 subtype=Lhurgoyf
@@ -10,4 +10,4 @@ ability=SN's power and toughness are each equal to the number of nonbasic land c
         Suspend X—{X}{3}{R}. X can't be 0.;\
         Whenever a time counter is removed from SN while it's exiled, destroy target nonbasic land.
 timing=main
-oracle=Detritivore's power and toughness are each equal to the number of nonbasic land cards in your opponents' graveyards. Suspend X—{X}{3}{R}. X can't be 0. Whenever a time counter is removed from Detritivore while it's exiled, destroy target nonbasic land.
+oracle=Detritivore's power and toughness are each equal to the number of nonbasic land cards in your opponents' graveyards.\nSuspend X—{X}{3}{R}. X can't be 0.\nWhenever a time counter is removed from Detritivore while it's exiled, destroy target nonbasic land.

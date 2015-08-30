@@ -1,11 +1,11 @@
 name=Fleshformer
-image=http://mtgimage.com/card/fleshformer.jpg
+image=http://magiccards.info/scans/en/cfx/45.jpg
 value=2.189
 rarity=U
 type=Creature
 subtype=Human,Wizard
 cost={2}{B}
 pt=2/2
+ability={W}{U}{B}{R}{G}: Target creature gets -2/-2 until end of turn.~SN gets +2/+2 and gains fear until end of turn. Activate this ability only during your turn.
 timing=main
-requires_groovy_code
 oracle={W}{U}{B}{R}{G}: Fleshformer gets +2/+2 and gains fear until end of turn. Target creature gets -2/-2 until end of turn. Activate this ability only during your turn.

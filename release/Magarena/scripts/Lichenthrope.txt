@@ -1,0 +1,12 @@
+name=Lichenthrope
+image=http://magiccards.info/scans/en/vi/62.jpg
+value=2.543
+rarity=R
+type=Creature
+subtype=Plant,Fungus
+cost={3}{G}{G}
+pt=5/5
+ability=At the beginning of your upkeep, remove a -1/-1 counter from SN.
+timing=main
+requires_groovy_code
+oracle=If damage would be dealt to Lichenthrope, put that many -1/-1 counters on it instead.\nAt the beginning of your upkeep, remove a -1/-1 counter from Lichenthrope.

@@ -1,6 +1,6 @@
 name=Dawning Purist
-image=http://mtgimage.com/card/dawning%20purist.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/22.jpg
+value=2.826
 rarity=U
 type=Creature
 subtype=Human,Cleric
@@ -9,4 +9,4 @@ pt=2/2
 ability=Whenever SN deals combat damage to a player, you may destroy target enchantment that player controls.;\
         Morph {1}{W}
 timing=main
-oracle=Whenever Dawning Purist deals combat damage to a player, you may destroy target enchantment that player controls. Morph {1}{W}
+oracle=Whenever Dawning Purist deals combat damage to a player, you may destroy target enchantment that player controls.\nMorph {1}{W}

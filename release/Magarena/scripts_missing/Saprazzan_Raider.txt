@@ -1,6 +1,6 @@
 name=Saprazzan Raider
-image=http://mtgimage.com/card/saprazzan%20raider.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/102.jpg
+value=1.054
 rarity=C
 type=Creature
 subtype=Merfolk

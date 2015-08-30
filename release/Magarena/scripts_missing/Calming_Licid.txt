@@ -1,6 +1,6 @@
 name=Calming Licid
-image=http://mtgimage.com/card/calming%20licid.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sh/102.jpg
+value=3.267
 rarity=U
 type=Creature
 subtype=Licid
@@ -9,4 +9,4 @@ pt=2/2
 ability={W}, {T}: SN loses this ability and becomes an Aura enchantment with enchant creature. Attach it to target creature. You may pay {W} to end this effect.;\
         Enchanted creature can't attack.
 timing=main
-oracle={W}, {T}: Calming Licid loses this ability and becomes an Aura enchantment with enchant creature. Attach it to target creature. You may pay {W} to end this effect. Enchanted creature can't attack.
+oracle={W}, {T}: Calming Licid loses this ability and becomes an Aura enchantment with enchant creature. Attach it to target creature. You may pay {W} to end this effect.\nEnchanted creature can't attack.

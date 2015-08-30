@@ -1,10 +1,10 @@
 name=Brush with Death
-image=http://mtgimage.com/card/brush%20with%20death.jpg
+image=http://magiccards.info/scans/en/sh/2.jpg
 value=2.788
 rarity=C
 type=Sorcery
 cost={2}{B}
 ability=buyback {2}{B}{B}
-effect=Target opponent loses 2 life and you gain 2 life.
+effect=Target opponent loses 2 life and you gain 2 life.~Buyback
 timing=removal
-oracle=Buyback {2}{B}{B}. Target opponent loses 2 life. You gain 2 life.
+oracle=Buyback {2}{B}{B}\nTarget opponent loses 2 life. You gain 2 life.

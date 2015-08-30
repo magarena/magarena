@@ -1,5 +1,5 @@
 name=Archfiend of Depravity
-image=http://mtgimage.com/card/archfiend%20of%20depravity.jpg
+image=http://magiccards.info/scans/en/frf/62.jpg
 value=2.500
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=5/4
 ability=Flying;\
         At the beginning of each opponent's end step, that player chooses up to two creatures he or she controls, then sacrifices the rest.
 timing=main
-oracle=Flying. At the beginning of each opponent's end step, that player chooses up to two creatures he or she controls, then sacrifices the rest.
+oracle=Flying\nAt the beginning of each opponent's end step, that player chooses up to two creatures he or she controls, then sacrifices the rest.

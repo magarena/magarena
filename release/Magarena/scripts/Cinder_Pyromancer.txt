@@ -1,5 +1,5 @@
 name=Cinder Pyromancer
-image=http://mtgimage.com/card/cinder%20pyromancer.jpg
+image=http://magiccards.info/scans/en/eve/50.jpg
 value=2.992
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=0/1
 ability={T}:SN deals 1 damage to target player.;\
         Whenever you cast a red spell, you may untap SN.
 timing=main
-oracle={T}: Cinder Pyromancer deals 1 damage to target player. Whenever you cast a red spell, you may untap Cinder Pyromancer.
+oracle={T}: Cinder Pyromancer deals 1 damage to target player.\nWhenever you cast a red spell, you may untap Cinder Pyromancer.

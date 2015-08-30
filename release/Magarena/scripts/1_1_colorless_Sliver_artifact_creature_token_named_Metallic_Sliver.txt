@@ -1,6 +1,6 @@
 name=1/1 colorless Sliver artifact creature token named Metallic Sliver
 token=Metallic Sliver
-image=http://i167.photobucket.com/albums/u148/Ruja/Magic%20Tokens/FSMetallicSliver.png
+image=http://cdn.staticneo.com/w/mtg/b/bf/Metallic_Sliver.jpg
 value=1
 type=Artifact,Creature
 subtype=Sliver

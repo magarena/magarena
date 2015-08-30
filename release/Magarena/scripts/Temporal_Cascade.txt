@@ -1,0 +1,10 @@
+name=Temporal Cascade
+image=http://magiccards.info/scans/en/mi/52.jpg
+value=2.929
+rarity=R
+type=Sorcery
+cost={5}{U}{U}
+ability=Entwine {2}
+timing=main
+requires_groovy_code
+oracle=Choose one —\n• Each player shuffles his or her hand and graveyard into his or her library.\n• Each player draws seven cards.\nEntwine {2}

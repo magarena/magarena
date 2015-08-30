@@ -1,0 +1,10 @@
+name=Hurly-Burly
+image=http://magiccards.info/scans/en/lw/177.jpg
+value=3.402
+rarity=C
+type=Sorcery
+cost={1}{R}
+ability=Cast SN with AI only if an opponent controls a creature.
+effect=Choose one — (1) SN deals 1 damage to each creature without flying. (2) SN deals 1 damage to each creature with flying.
+timing=main
+oracle=Choose one —\n• Hurly-Burly deals 1 damage to each creature without flying.\n• Hurly-Burly deals 1 damage to each creature with flying.

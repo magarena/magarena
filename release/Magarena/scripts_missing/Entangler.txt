@@ -1,11 +1,11 @@
 name=Entangler
-image=http://mtgimage.com/card/entangler.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pr/7.jpg
+value=3.894
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{W}{W}
 ability=Enchant creature;\
         Enchanted creature can block any number of creatures.
-timing=main
-oracle=Enchant creature. Enchanted creature can block any number of creatures.
+timing=aura
+oracle=Enchant creature\nEnchanted creature can block any number of creatures.

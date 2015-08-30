@@ -1,5 +1,5 @@
 name=Court Street Denizen
-image=http://mtgimage.com/card/court%20street%20denizen.jpg
+image=http://magiccards.info/scans/en/ddo/5.jpg
 value=2.930
 rarity=C
 type=Creature

@@ -1,0 +1,12 @@
+name=Honored Hierarch
+image=http://magiccards.info/scans/en/ori/182.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Druid
+cost={G}
+pt=1/1
+ability=Renown 1;\
+        As long as SN is renowned, it has vigilance and "{T}: Add one mana of any color to your mana pool."
+timing=main
+oracle=Renown 1\nAs long as Honored Hierarch is renowned, it has vigilance and "{T}: Add one mana of any color to your mana pool."

@@ -1,5 +1,5 @@
 name=Wu Light Cavalry
-image=http://mtgimage.com/card/wu%20light%20cavalry.jpg
+image=http://magiccards.info/scans/en/p3k/60.jpg
 value=2.855
 rarity=C
 type=Creature

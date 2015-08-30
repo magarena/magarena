@@ -1,5 +1,5 @@
 name=Kathari Remnant
-image=http://mtgimage.com/card/kathari%20remnant.jpg
+image=http://magiccards.info/scans/en/pc2/98.jpg
 value=2.814
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=0/1
 ability=flying;cascade;\
         {B}: Regenerate SN.
 timing=main
-oracle=Flying. {B}: Regenerate Kathari Remnant. Cascade
+oracle=Flying\n{B}: Regenerate Kathari Remnant.\nCascade

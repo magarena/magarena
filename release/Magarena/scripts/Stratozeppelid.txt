@@ -1,5 +1,5 @@
 name=Stratozeppelid
-image=http://mtgimage.com/card/stratozeppelid.jpg
+image=http://magiccards.info/scans/en/gp/36.jpg
 value=2.015
 ability=flying;SN can block only creatures with flying.
 rarity=U
@@ -8,4 +8,4 @@ subtype=Beast
 cost={4}{U}
 pt=4/4
 timing=fmain
-oracle=Flying. Stratozeppelid can block only creatures with flying.
+oracle=Flying\nStratozeppelid can block only creatures with flying.

@@ -1,5 +1,5 @@
 name=Paleoloth
-image=http://mtgimage.com/card/paleoloth.jpg
+image=http://magiccards.info/scans/en/cfx/88.jpg
 value=3.066
 rarity=R
 type=Creature

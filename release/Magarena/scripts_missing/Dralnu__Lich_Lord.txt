@@ -1,6 +1,6 @@
 name=Dralnu, Lich Lord
-image=http://mtgimage.com/card/dralnu%2C%20lich%20lord.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ts/237.jpg
+value=3.942
 rarity=R
 type=Legendary,Creature
 subtype=Zombie,Wizard
@@ -9,4 +9,4 @@ pt=3/3
 ability=If damage would be dealt to SN, sacrifice that many permanents instead.;\
         {T}: Target instant or sorcery card in your graveyard gains flashback until end of turn. The flashback cost is equal to its mana cost.
 timing=main
-oracle=If damage would be dealt to Dralnu, Lich Lord, sacrifice that many permanents instead. {T}: Target instant or sorcery card in your graveyard gains flashback until end of turn. The flashback cost is equal to its mana cost.
+oracle=If damage would be dealt to Dralnu, Lich Lord, sacrifice that many permanents instead.\n{T}: Target instant or sorcery card in your graveyard gains flashback until end of turn. The flashback cost is equal to its mana cost.

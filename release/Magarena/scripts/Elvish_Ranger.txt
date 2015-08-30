@@ -1,5 +1,5 @@
 name=Elvish Ranger
-image=http://mtgimage.com/card/elvish%20ranger.jpg
+image=http://magiccards.info/scans/en/me2/158.jpg
 value=2.529
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Elf
 cost={2}{G}
 pt=4/1
 timing=main
+oracle=NONE

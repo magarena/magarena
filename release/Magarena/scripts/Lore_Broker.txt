@@ -1,5 +1,5 @@
 name=Lore Broker
-image=http://mtgimage.com/card/lore%20broker.jpg
+image=http://magiccards.info/scans/en/rav/57.jpg
 value=3.230
 rarity=U
 type=Creature

@@ -1,10 +1,10 @@
 name=Sulfur Vent
-image=http://mtgimage.com/card/sulfur%20vent.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/328.jpg
+value=3.192
 rarity=C
 type=Land
 ability=SN enters the battlefield tapped.;\
         {T}: Add {B} to your mana pool.;\
         {T}, Sacrifice SN: Add {U}{R} to your mana pool.
-timing=main
-oracle=Sulfur Vent enters the battlefield tapped. {T}: Add {B} to your mana pool. {T}, Sacrifice Sulfur Vent: Add {U}{R} to your mana pool.
+timing=land
+oracle=Sulfur Vent enters the battlefield tapped.\n{T}: Add {B} to your mana pool.\n{T}, Sacrifice Sulfur Vent: Add {U}{R} to your mana pool.

@@ -1,6 +1,6 @@
 name=Firestorm Phoenix
-image=http://mtgimage.com/card/firestorm%20phoenix.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me3/99.jpg
+value=2.952
 rarity=R
 type=Creature
 subtype=Phoenix
@@ -9,4 +9,4 @@ pt=3/2
 ability=Flying;\
         If SN would die, return SN to its owner's hand instead. Until that player's next turn, that player plays with that card revealed in his or her hand and can't play it.
 timing=main
-oracle=Flying. If Firestorm Phoenix would die, return Firestorm Phoenix to its owner's hand instead. Until that player's next turn, that player plays with that card revealed in his or her hand and can't play it.
+oracle=Flying\nIf Firestorm Phoenix would die, return Firestorm Phoenix to its owner's hand instead. Until that player's next turn, that player plays with that card revealed in his or her hand and can't play it.

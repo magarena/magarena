@@ -1,5 +1,5 @@
 name=Callow Jushi
-image=http://mtgimage.com/card/callow%20jushi.jpg
+image=http://magiccards.info/scans/en/bok/31a.jpg
 value=3.577
 rarity=U
 type=Creature
@@ -10,4 +10,4 @@ ability=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on 
         At the beginning of the end step, if there are two or more ki counters on SN, you may flip SN.
 timing=main
 flip=Jaraku the Interloper
-oracle=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on Callow Jushi. At the beginning of the end step, if there are two or more ki counters on Callow Jushi, you may flip it.
+oracle=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on Callow Jushi.\nAt the beginning of the end step, if there are two or more ki counters on Callow Jushi, you may flip it.

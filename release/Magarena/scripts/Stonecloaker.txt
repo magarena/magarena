@@ -1,5 +1,5 @@
 name=Stonecloaker
-image=http://mtgimage.com/card/stonecloaker.jpg
+image=http://magiccards.info/scans/en/ddn/53.jpg
 value=3.500
 rarity=U
 type=Creature
@@ -11,4 +11,4 @@ ability=flash;\
         When SN enters the battlefield, return a creature you control to its owner's hand.;\
         When SN enters the battlefield, exile target card from a graveyard.
 timing=main
-oracle=Flash. Flying. When Stonecloaker enters the battlefield, return a creature you control to its owner's hand. When Stonecloaker enters the battlefield, exile target card from a graveyard.
+oracle=Flash\nFlying\nWhen Stonecloaker enters the battlefield, return a creature you control to its owner's hand.\nWhen Stonecloaker enters the battlefield, exile target card from a graveyard.

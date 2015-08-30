@@ -1,6 +1,6 @@
 name=Sapphire Leech
-image=http://mtgimage.com/card/sapphire%20leech.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/71.jpg
+value=1.398
 rarity=R
 type=Creature
 subtype=Leech
@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         Blue spells you cast cost {U} more to cast.
 timing=main
-oracle=Flying. Blue spells you cast cost {U} more to cast.
+oracle=Flying\nBlue spells you cast cost {U} more to cast.

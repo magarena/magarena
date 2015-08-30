@@ -1,6 +1,6 @@
 name=Polymorphist's Jest
-image=http://mtgimage.com/card/polymorphist%27s%20jest.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/75.jpg
+value=3.773
 rarity=R
 type=Instant
 cost={1}{U}{U}

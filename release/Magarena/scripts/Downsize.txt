@@ -1,5 +1,5 @@
 name=Downsize
-image=http://mtgimage.com/card/downsize.jpg
+image=http://magiccards.info/scans/en/rtr/38.jpg
 value=2.709
 rarity=C
 type=Instant
@@ -7,4 +7,4 @@ cost={U}
 effect=Target creature you don't control gets -4/-0 until end of turn.
 timing=removal
 requires_groovy_code
-oracle=Target creature you don't control gets -4/-0 until end of turn. Overload {2}{U}
+oracle=Target creature you don't control gets -4/-0 until end of turn.\nOverload {2}{U}

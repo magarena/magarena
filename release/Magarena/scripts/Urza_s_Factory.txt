@@ -1,5 +1,5 @@
 name=Urza's Factory
-image=http://mtgimage.com/card/urza%27s%20factory.jpg
+image=http://magiccards.info/scans/en/c13/331.jpg
 value=3.000
 rarity=U
 type=Land
@@ -7,4 +7,4 @@ subtype=Urza's
 ability={T}: Add {1} to your mana pool.;\
         {T},{7}: Put a 2/2 colorless Assembly-Worker artifact creature token onto the battlefield.
 timing=land
-oracle={T}: Add {1} to your mana pool. {7}, {T}: Put a 2/2 colorless Assembly-Worker artifact creature token onto the battlefield.
+oracle={T}: Add {1} to your mana pool.\n{7}, {T}: Put a 2/2 colorless Assembly-Worker artifact creature token onto the battlefield.

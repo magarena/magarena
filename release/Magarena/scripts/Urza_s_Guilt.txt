@@ -1,5 +1,5 @@
 name=Urza's Guilt
-image=http://mtgimage.com/card/urza's%20guilt.jpg
+image=http://magiccards.info/scans/en/ps/130.jpg
 value=3.630
 rarity=R
 type=Sorcery

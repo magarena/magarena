@@ -1,5 +1,5 @@
 name=Skyhunter Prowler
-image=http://mtgimage.com/card/skyhunter%20prowler.jpg
+image=http://magiccards.info/scans/en/10e/42.jpg
 value=3.070
 rarity=C
 type=Creature

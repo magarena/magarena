@@ -1,9 +1,9 @@
 name=Skyscribing
-image=http://mtgimage.com/card/skyscribing.jpg
-value=2.500
+image=http://magiccards.info/scans/en/c13/57.jpg
+value=3.679
 rarity=U
 type=Sorcery
 cost={X}{U}{U}
 effect=Each player draws X cards.~{2}{U}, Reveal SN from your hand: Each player draws a card.
 timing=main
-oracle=Each player draws X cards. Forecast — {2}{U}, Reveal Skyscribing from your hand: Each player draws a card.
+oracle=Each player draws X cards.\nForecast — {2}{U}, Reveal Skyscribing from your hand: Each player draws a card.

@@ -1,0 +1,9 @@
+name=Slate of Ancestry
+image=http://magiccards.info/scans/en/evg/25.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={4}
+ability={4}, {T}, Discard your hand: Draw a card for each creature you control.
+timing=artifact
+oracle={4}, {T}, Discard your hand: Draw a card for each creature you control.

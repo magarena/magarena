@@ -13,7 +13,7 @@ import javax.swing.border.Border;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.util.Set;
-import magic.ui.MagicStyle;
+import magic.ui.utility.MagicStyle;
 
 public class PermanentButton extends PanelButton implements ChoiceViewer {
 
@@ -22,11 +22,7 @@ public class PermanentButton extends PanelButton implements ChoiceViewer {
     private final PermanentViewerInfo permanentInfo;
     private final SwingGameController controller;
 
-    public PermanentButton(
-            final PermanentViewerInfo permanentInfo,
-            final SwingGameController controller,
-            final Border border,
-            final int maxWidth) {
+    public PermanentButton(final PermanentViewerInfo permanentInfo, final SwingGameController controller, final Border border, final int maxWidth) {
 
         this.permanentInfo=permanentInfo;
         this.controller=controller;

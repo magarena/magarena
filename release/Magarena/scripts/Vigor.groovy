@@ -1,5 +1,5 @@
 [
-    new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.PREVENT_DAMAGE) {
+    new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.REPLACE_DAMAGE) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicDamage damage) {
             final MagicTarget target = damage.getTarget();
@@ -17,7 +17,7 @@
                     damage.getTarget(),
                     {
                         final MagicGame G, final MagicEvent E ->
-                        G.doAction(new MagicChangeCountersAction(
+                        G.doAction(new ChangeCountersAction(
                             E.getRefPermanent(),
                             MagicCounterType.PlusOne,
                             amount

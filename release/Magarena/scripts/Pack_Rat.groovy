@@ -24,7 +24,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCard card=MagicCard.createTokenCard(event.getPermanent(), event.getPlayer());
-            game.doAction(new MagicPlayCardAction(card));
+            game.doAction(new PlayCardAction(card));
         }
     }
 ]

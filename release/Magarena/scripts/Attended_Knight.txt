@@ -1,5 +1,5 @@
 name=Attended Knight
-image=http://mtgimage.com/card/attended%20knight.jpg
+image=http://magiccards.info/scans/en/m13/5.jpg
 value=3.704
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ ability=first strike;\
         When SN enters the battlefield, put a 1/1 white Soldier creature token onto the battlefield.
 pt=2/2
 timing=main
-oracle=First strike. When Attended Knight enters the battlefield, put a 1/1 white Soldier creature token onto the battlefield.
+oracle=First strike\nWhen Attended Knight enters the battlefield, put a 1/1 white Soldier creature token onto the battlefield.

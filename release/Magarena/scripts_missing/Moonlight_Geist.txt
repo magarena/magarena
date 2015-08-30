@@ -1,6 +1,6 @@
 name=Moonlight Geist
-image=http://mtgimage.com/card/moonlight%20geist.jpg
-value=2.500
+image=http://magiccards.info/scans/en/avr/29.jpg
+value=2.062
 rarity=C
 type=Creature
 subtype=Spirit
@@ -9,4 +9,4 @@ pt=2/1
 ability=Flying;\
         {3}{W}: Prevent all combat damage that would be dealt to and dealt by SN this turn.
 timing=main
-oracle=Flying. {3}{W}: Prevent all combat damage that would be dealt to and dealt by Moonlight Geist this turn.
+oracle=Flying\n{3}{W}: Prevent all combat damage that would be dealt to and dealt by Moonlight Geist this turn.

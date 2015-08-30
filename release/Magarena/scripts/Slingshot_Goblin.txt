@@ -1,5 +1,5 @@
 name=Slingshot Goblin
-image=http://mtgimage.com/card/slingshot%20goblin.jpg
+image=http://magiccards.info/scans/en/ps/72.jpg
 value=2.673
 rarity=C
 type=Creature

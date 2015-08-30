@@ -1,9 +1,10 @@
 name=Aven Warcraft
-image=http://mtgimage.com/card/aven%20warcraft.jpg
+image=http://magiccards.info/scans/en/ju/2.jpg
 value=2.620
 rarity=U
 type=Instant
 cost={2}{W}
+ability=Cast SN with AI only if you control a creature.
 timing=pump
 requires_groovy_code
-oracle=Creatures you control get +0/+2 until end of turn. Threshold — If seven or more cards are in your graveyard, choose a color. Creatures you control also gain protection from the chosen color until end of turn.
+oracle=Creatures you control get +0/+2 until end of turn.\nThreshold — If seven or more cards are in your graveyard, choose a color. Creatures you control also gain protection from the chosen color until end of turn.

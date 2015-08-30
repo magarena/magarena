@@ -1,5 +1,5 @@
 name=Emancipation Angel
-image=http://mtgimage.com/card/emancipation%20angel.jpg
+image=http://magiccards.info/scans/en/avr/19.jpg
 value=3.898
 removal=2
 rarity=U
@@ -10,4 +10,4 @@ pt=3/3
 ability=flying;\
         When SN enters the battlefield, return a permanent you control to its owner's hand.
 timing=main
-oracle=Flying. When Emancipation Angel enters the battlefield, return a permanent you control to its owner's hand.
+oracle=Flying\nWhen Emancipation Angel enters the battlefield, return a permanent you control to its owner's hand.

@@ -1,6 +1,6 @@
 name=Desert Nomads
-image=http://mtgimage.com/card/desert%20nomads.jpg
-value=2.500
+image=http://magiccards.info/scans/en/an/47.jpg
+value=2.627
 rarity=C
 type=Creature
 subtype=Human,Nomad
@@ -9,4 +9,4 @@ pt=2/2
 ability=Desertwalk;\
         Prevent all damage that would be dealt to SN by Deserts.
 timing=main
-oracle=Desertwalk. Prevent all damage that would be dealt to Desert Nomads by Deserts.
+oracle=Desertwalk\nPrevent all damage that would be dealt to Desert Nomads by Deserts.

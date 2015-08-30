@@ -1,11 +1,11 @@
 name=Synod Centurion
-image=http://mtgimage.com/card/synod%20centurion.jpg
+image=http://magiccards.info/scans/en/ddf/53.jpg
 value=3.741
 rarity=U
 type=Artifact,Creature
 subtype=Construct
 cost={4}
 pt=4/4
+ability=When you control no other artifacts, sacrifice SN.
 timing=main
-requires_groovy_code
 oracle=When you control no other artifacts, sacrifice Synod Centurion.

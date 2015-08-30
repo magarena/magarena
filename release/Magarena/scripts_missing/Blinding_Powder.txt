@@ -1,11 +1,11 @@
 name=Blinding Powder
-image=http://mtgimage.com/card/blinding%20powder.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bok/153.jpg
+value=3.032
 rarity=U
 type=Artifact
 subtype=Equipment
 cost={1}
 ability=Equipped creature has "Unattach SN: Prevent all combat damage that would be dealt to this creature this turn.";\
         Equip {2}
-timing=main
-oracle=Equipped creature has "Unattach Blinding Powder: Prevent all combat damage that would be dealt to this creature this turn.". Equip {2}
+timing=equipment
+oracle=Equipped creature has "Unattach Blinding Powder: Prevent all combat damage that would be dealt to this creature this turn."\nEquip {2}

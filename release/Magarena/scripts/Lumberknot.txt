@@ -1,5 +1,5 @@
 name=Lumberknot
-image=http://mtgimage.com/card/lumberknot.jpg
+image=http://magiccards.info/scans/en/pc2/66.jpg
 value=3.597
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=hexproof;\
         Whenever a creature dies, put a +1/+1 counter on SN.
 timing=main
-oracle=Hexproof. Whenever a creature dies, put a +1/+1 counter on Lumberknot.
+oracle=Hexproof\nWhenever a creature dies, put a +1/+1 counter on Lumberknot.

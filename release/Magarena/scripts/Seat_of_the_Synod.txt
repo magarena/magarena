@@ -1,5 +1,5 @@
 name=Seat of the Synod
-image=http://mtgimage.com/card/seat%20of%20the%20synod.jpg
+image=http://magiccards.info/scans/en/ddf/74.jpg
 value=4.516
 rarity=C
 type=Artifact,Land

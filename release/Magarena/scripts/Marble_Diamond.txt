@@ -1,5 +1,5 @@
 name=Marble Diamond
-image=http://mtgimage.com/card/marble%20diamond.jpg
+image=http://magiccards.info/scans/en/c14/248.jpg
 value=3.085
 rarity=U
 type=Artifact
@@ -7,4 +7,4 @@ cost={2}
 ability=SN enters the battlefield tapped.;\
         {T}: Add {W} to your mana pool.
 timing=artifact
-oracle=Marble Diamond enters the battlefield tapped. {T}: Add {W} to your mana pool.
+oracle=Marble Diamond enters the battlefield tapped.\n{T}: Add {W} to your mana pool.

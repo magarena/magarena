@@ -1,7 +1,7 @@
 name=Errand of Duty
-image=http://mtgimage.com/card/errand%20of%20duty.jpg
-value=2.500
-rarity=C
+image=http://magiccards.info/scans/en/me2/12.jpg
+value=2.661
+rarity=U
 type=Instant
 cost={1}{W}
 effect=Put a 1/1 white Knight creature token with banding onto the battlefield.

@@ -1,6 +1,6 @@
 name=Tower Above
-image=http://mtgimage.com/card/tower%20above.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/131.jpg
+value=3.733
 rarity=U
 type=Sorcery
 cost={2/G}{2/G}{2/G}

@@ -1,5 +1,5 @@
 name=Fault Riders
-image=http://mtgimage.com/card/fault%20riders.jpg
+image=http://magiccards.info/scans/en/pr/88.jpg
 value=3.571
 rarity=C
 type=Creature

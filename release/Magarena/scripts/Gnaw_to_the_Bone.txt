@@ -1,10 +1,10 @@
 name=Gnaw to the Bone
-image=http://mtgimage.com/card/gnaw%20to%20the%20bone.jpg
+image=http://magiccards.info/scans/en/isd/183.jpg
 value=3.581
 rarity=C
 type=Instant
 cost={2}{G}
 ability=Flashback {2}{G}
+effect=You gain 2 life for each creature card in your graveyard.
 timing=pump
-requires_groovy_code
-oracle=You gain 2 life for each creature card in your graveyard. Flashback {2}{G}
+oracle=You gain 2 life for each creature card in your graveyard.\nFlashback {2}{G}

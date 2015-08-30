@@ -1,10 +1,10 @@
 name=Acorn Harvest
-image=http://mtgimage.com/card/acorn%20harvest.jpg
+image=http://magiccards.info/scans/en/tr/118.jpg
 value=3.293
 rarity=C
 type=Sorcery
 cost={3}{G}
 effect=Put two 1/1 green Squirrel creature tokens onto the battlefield.
-ability=Flashback {1}{G}, Pay 3 life.
+ability=Flashback—{1}{G}, Pay 3 life.
 timing=main
-oracle=Put two 1/1 green Squirrel creature tokens onto the battlefield. Flashback—{1}{G}, Pay 3 life.
+oracle=Put two 1/1 green Squirrel creature tokens onto the battlefield.\nFlashback—{1}{G}, Pay 3 life.

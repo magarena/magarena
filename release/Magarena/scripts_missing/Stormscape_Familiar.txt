@@ -1,6 +1,6 @@
 name=Stormscape Familiar
-image=http://mtgimage.com/card/stormscape%20familiar.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tsts/32.jpg
+value=4.358
 rarity=C
 type=Creature
 subtype=Bird
@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying;\
         White spells and black spells you cast cost {1} less to cast.
 timing=main
-oracle=Flying. White spells and black spells you cast cost {1} less to cast.
+oracle=Flying\nWhite spells and black spells you cast cost {1} less to cast.

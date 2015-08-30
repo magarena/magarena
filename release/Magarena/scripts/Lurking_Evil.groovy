@@ -1,33 +1,13 @@
-def PT = new MagicStatic(MagicLayer.SetPT) {
-    @Override
-    public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
-        pt.set(4,4);
-    }
-};
-def ST = new MagicStatic(MagicLayer.Type) {
-    @Override
-    public void modSubTypeFlags(final MagicPermanent permanent,final Set<MagicSubType> flags) {
-        flags.add(MagicSubType.Horror);
-    }
-    @Override
-    public int getTypeFlags(final MagicPermanent permanent,final int flags) {
-        return MagicType.Creature.getMask();
-    }
-};
-def AB = new MagicStatic(MagicLayer.Ability) {
-    @Override
-    public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
-        permanent.addAbility(MagicAbility.Flying, flags);
-    }
-};
+def EFFECT = MagicRuleEventAction.create("SN becomes a 4/4 Horror creature with flying.");
 
 [
-   new MagicPermanentActivation(
+    new MagicPermanentActivation(
+        [MagicCondition.NOT_EXCLUDE_COMBAT_CONDITION],
         new MagicActivationHints(MagicTiming.Animate),
-        "Animate"
+        "Becomes"
     ) {
 
-       @Override
+        @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayLifeEvent(source,(source.getController().getLife().abs() + 1).intdiv(2))
@@ -36,15 +16,7 @@ def AB = new MagicStatic(MagicLayer.Ability) {
 
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-            new MagicEvent(
-                source,
-                this,
-                "SN becomes a 4/4 Horror creature with flying."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,AB,ST));
+            return EFFECT.getEvent(source);
         }
     }
 ]

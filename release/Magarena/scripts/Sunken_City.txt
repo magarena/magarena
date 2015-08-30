@@ -1,5 +1,5 @@
 name=Sunken City
-image=http://mtgimage.com/card/sunken%20city.jpg
+image=http://magiccards.info/scans/en/med/51.jpg
 value=3.591
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ ability=blue creatures get +1/+1;\
         At the beginning of your upkeep, you may pay {U}{U}. If you don't, sacrifice SN.
 static=all
 timing=enchantment
-oracle=At the beginning of your upkeep, sacrifice Sunken City unless you pay {U}{U}. Blue creatures get +1/+1.
+oracle=At the beginning of your upkeep, sacrifice Sunken City unless you pay {U}{U}.\nBlue creatures get +1/+1.

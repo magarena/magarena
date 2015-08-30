@@ -2,14 +2,24 @@ package magic.model.choice;
 
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
+import magic.model.MagicCostManaType;
 import magic.model.MagicGame;
+import magic.model.MagicManaCost;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.MagicType;
+import magic.model.condition.MagicCondition;
+import magic.model.MagicPayedCost;
+import magic.model.action.PlayCardAction;
 import magic.model.event.MagicEvent;
+import magic.model.phase.MagicMainPhase;
 import magic.exception.UndoClickedException;
+
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
+
 import magic.model.IUIGameController;
 
 public class MagicMulliganChoice extends MagicChoice {
@@ -24,60 +34,77 @@ public class MagicMulliganChoice extends MagicChoice {
     }
 
     @Override
-    Collection<Object> getArtificialOptions(
-            final MagicGame game,
-            final MagicEvent event,
-            final MagicPlayer player,
-            final MagicSource source) {
+    Collection<Object> getArtificialOptions(final MagicGame game, final MagicEvent event) {
         throw new UnsupportedOperationException();
     }
 
     @Override
-    public List<Object[]> getArtificialChoiceResults(
-            final MagicGame game,
-            final MagicEvent event,
-            final MagicPlayer player,
-            final MagicSource source) {
-        int minLands = (game.getTurnPlayer() == player) ? 3 : 2;
-        final int maxLands = 4;
-        int lands = 0;
-        int high = 0;
-        int nonLandManaSources = 0;
+    public List<Object[]> getArtificialChoiceResults(final MagicGame game, final MagicEvent event) {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
 
-        if (player.getHandSize() <= 5) {
+        int costSum = 0;
+        for (final MagicCard card: player.getLibrary()){
+            costSum += card.getConvertedCost();
+        }
+        for (final MagicCard card: player.getHand()){
+            costSum += card.getConvertedCost();
+            //System.err.println("MULLIGAN: card=" + card);
+        }
+        
+        // There is more fine tuning to be done here
+        int minLands = 2;
+        int maxLands = 3;
+        if (costSum > 90) {
+            minLands = 3;
+            maxLands = 4;
+        } else if(costSum > 70) {
+            minLands = 2;
+            maxLands = 4;
+        }
+
+        final int hand = player.getHandSize();
+        
+        if (hand <= 4) {
             return NO_CHOICE_LIST;
         }
 
-        for (final MagicCard card : player.getHand()) {
-            final MagicCardDefinition cardDefinition = card.getCardDefinition();
-            if (cardDefinition.isLand()) {
-                lands++;
-            } else {
-                if (!cardDefinition.getManaActivations().isEmpty()) {
-                    nonLandManaSources++;
-                }
-                if (cardDefinition.getConvertedCost()>4) {
-                    high++;
-                }
+        final MagicGame assumedGame = new MagicGame(game, player);
+        final MagicPlayer assumedPlayer = assumedGame.getPlayer(player.getIndex());
+        assumedGame.setPhase(MagicMainPhase.getFirstInstance());
+
+        int numLands = 0;
+        for (final MagicCard card : assumedPlayer.getHand()) {
+            if (card.hasType(MagicType.Land)) {
+                numLands++;
+                assumedGame.doAction(new PlayCardAction(card, assumedPlayer));
             }
         }
 
-        if (nonLandManaSources >= 1) {
-            minLands--;
+        int playable = 0;
+        for (final MagicCard card : assumedPlayer.getHand()) {
+            if (card.hasType(MagicType.Land) == false && 
+                card.getCost().getCondition().accept(card)) {
+                playable++;
+            }
         }
-        if (lands >= minLands && lands <= maxLands && high <= 2) {
+          
+        //System.err.println("MULLIGAN: hand=" + hand + " lands=" + numLands + " playable=" + playable);
+
+        if ((hand >  6 && playable > 1) ||
+            (hand <= 6 && playable > 0)) { 
+            return NO_CHOICE_LIST;
+        } else if (numLands < minLands || numLands > maxLands) {
+            return YES_CHOICE_LIST;
+        } else {
             return NO_CHOICE_LIST;
         }
-
-        return YES_CHOICE_LIST;
     }
 
     @Override
-    public Object[] getPlayerChoiceResults(
-            final IUIGameController controller,
-            final MagicGame game,
-            final MagicPlayer player,
-            final MagicSource source) throws UndoClickedException {
+    public Object[] getPlayerChoiceResults(final IUIGameController controller, final MagicGame game, final MagicEvent event) throws UndoClickedException {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
 
         if (player.getHandSize() <= 1) {
             return new Object[]{NO_CHOICE};

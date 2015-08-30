@@ -1,5 +1,5 @@
 name=Pariah
-image=http://mtgimage.com/card/pariah.jpg
+image=http://magiccards.info/scans/en/10e/33.jpg
 value=4.344
 rarity=R
 type=Enchantment
@@ -8,4 +8,4 @@ cost={2}{W}
 timing=aura
 enchant=destroy,creature
 requires_groovy_code
-oracle=Enchant creature. All damage that would be dealt to you is dealt to enchanted creature instead.
+oracle=Enchant creature\nAll damage that would be dealt to you is dealt to enchanted creature instead.

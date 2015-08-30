@@ -1,5 +1,5 @@
 name=Nyxborn Wolf
-image=http://mtgimage.com/card/nyxborn%20wolf.jpg
+image=http://magiccards.info/scans/en/bng/131.jpg
 value=2.633
 rarity=C
 type=Enchantment,Creature
@@ -9,4 +9,4 @@ pt=3/1
 ability=Bestow {4}{G};\
         Enchanted creature gets +3/+1.
 timing=main
-oracle=Bestow {4}{G}. Enchanted creature gets +3/+1.
+oracle=Bestow {4}{G}\nEnchanted creature gets +3/+1.

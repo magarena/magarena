@@ -1,5 +1,5 @@
 name=Esper Battlemage
-image=http://mtgimage.com/card/esper%20battlemage.jpg
+image=http://magiccards.info/scans/en/ala/40.jpg
 value=3.051
 rarity=U
 type=Artifact,Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability={W},{T}: Prevent the next 2 damage that would be dealt to you this turn.;\
         {B},{T}: Target creature gets -1/-1 until end of turn.
 timing=main
-oracle={W}, {T}: Prevent the next 2 damage that would be dealt to you this turn. {B}, {T}: Target creature gets -1/-1 until end of turn.
+oracle={W}, {T}: Prevent the next 2 damage that would be dealt to you this turn.\n{B}, {T}: Target creature gets -1/-1 until end of turn.

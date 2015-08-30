@@ -1,6 +1,6 @@
 name=Irini Sengir
-image=http://mtgimage.com/card/irini%20sengir.jpg
-value=2.500
+image=http://magiccards.info/scans/en/hl/17.jpg
+value=2.350
 rarity=U
 type=Legendary,Creature
 subtype=Vampire,Dwarf

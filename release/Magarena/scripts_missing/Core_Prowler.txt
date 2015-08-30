@@ -1,6 +1,6 @@
 name=Core Prowler
-image=http://mtgimage.com/card/core%20prowler.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mbs/103.jpg
+value=3.192
 rarity=U
 type=Artifact,Creature
 subtype=Horror
@@ -8,5 +8,5 @@ cost={4}
 pt=2/2
 ability=Infect;\
         When SN dies, proliferate.
-timing=main
-oracle=Infect. When Core Prowler dies, proliferate.
+timing=artifact
+oracle=Infect\nWhen Core Prowler dies, proliferate.

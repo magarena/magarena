@@ -1,5 +1,5 @@
 name=Servant of Volrath
-image=http://mtgimage.com/card/servant%20of%20volrath.jpg
+image=http://magiccards.info/scans/en/tp/50.jpg
 value=1.737
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Exalted Angel
-image=http://mtgimage.com/card/exalted%20angel.jpg
+image=http://magiccards.info/scans/en/on/28.jpg
 value=4.413
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=Flying;\
         Morph {2}{W}{W}
 timing=main
 requires_groovy_code=Mourning Thrull
-oracle=Flying. Whenever Exalted Angel deals damage, you gain that much life. Morph {2}{W}{W}
+oracle=Flying\nWhenever Exalted Angel deals damage, you gain that much life.\nMorph {2}{W}{W}

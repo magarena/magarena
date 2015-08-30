@@ -1,11 +1,11 @@
 name=Keen Sense
-image=http://mtgimage.com/card/keen%20sense.jpg
+image=http://magiccards.info/scans/en/pc/152.jpg
 value=3.927
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={G}
+ability=Whenever enchanted creature deals damage to an opponent, you may draw a card.
 timing=aura
 enchant=pump,pos creature
-requires_groovy_code=Curiosity
-oracle=Enchant creature. Whenever enchanted creature deals damage to an opponent, you may draw a card.
+oracle=Enchant creature\nWhenever enchanted creature deals damage to an opponent, you may draw a card.

@@ -1,6 +1,6 @@
 name=Dakra Mystic
-image=http://mtgimage.com/card/dakra%20mystic.jpg
-value=2.500
+image=http://magiccards.info/scans/en/jou/35.jpg
+value=3.802
 rarity=U
 type=Creature
 subtype=Merfolk,Wizard

@@ -1,5 +1,5 @@
 name=Spike Tiller
-image=http://mtgimage.com/card/spike%20tiller.jpg
+image=http://magiccards.info/scans/en/ts/218.jpg
 value=3.118
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=SN enters the battlefield with three +1/+1 counters on it.;\
         {2}, Remove a +1/+1 counter from SN: Put a +1/+1 counter on target creature.
 timing=main
 requires_groovy_code
-oracle=Spike Tiller enters the battlefield with three +1/+1 counters on it. {2}, Remove a +1/+1 counter from Spike Tiller: Put a +1/+1 counter on target creature. {2}, Remove a +1/+1 counter from Spike Tiller: Target land becomes a 2/2 creature that's still a land. Put a +1/+1 counter on it.
+oracle=Spike Tiller enters the battlefield with three +1/+1 counters on it.\n{2}, Remove a +1/+1 counter from Spike Tiller: Put a +1/+1 counter on target creature.\n{2}, Remove a +1/+1 counter from Spike Tiller: Target land becomes a 2/2 creature that's still a land. Put a +1/+1 counter on it.

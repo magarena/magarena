@@ -1,6 +1,6 @@
 name=Zombie Scavengers
-image=http://mtgimage.com/card/zombie%20scavengers.jpg
-value=2.500
+image=http://magiccards.info/scans/en/wl/29.jpg
+value=2.780
 rarity=C
 type=Creature
 subtype=Zombie

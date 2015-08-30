@@ -1,5 +1,5 @@
 name=Nearheath Pilgrim
-image=http://mtgimage.com/card/nearheath%20pilgrim.jpg
+image=http://magiccards.info/scans/en/avr/31.jpg
 value=3.704
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=Soulbond;\
         As long as SN is paired with another creature, both creatures have lifelink.
 timing=main
-oracle=Soulbond. As long as Nearheath Pilgrim is paired with another creature, both creatures have lifelink.
+oracle=Soulbond\nAs long as Nearheath Pilgrim is paired with another creature, both creatures have lifelink.

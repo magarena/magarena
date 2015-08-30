@@ -1,9 +1,9 @@
 name=Dread Return
-image=http://mtgimage.com/card/dread%20return.jpg
+image=http://magiccards.info/scans/en/c14/142.jpg
 value=2.500
 rarity=U
 type=Sorcery
 cost={2}{B}{B}
 effect=Return target creature card from your graveyard to the battlefield.~Flashback—Sacrifice three creatures.
 timing=main
-oracle=Return target creature card from your graveyard to the battlefield. Flashback—Sacrifice three creatures.
+oracle=Return target creature card from your graveyard to the battlefield.\nFlashback—Sacrifice three creatures.

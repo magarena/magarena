@@ -1,0 +1,9 @@
+name=Excise
+image=http://magiccards.info/scans/en/pr/8.jpg
+value=3.394
+rarity=C
+type=Instant
+cost={X}{W}
+timing=attack
+requires_groovy_code
+oracle=Exile target attacking creature unless its controller pays {X}.

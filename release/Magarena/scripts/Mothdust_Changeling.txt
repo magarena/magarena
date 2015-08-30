@@ -1,5 +1,5 @@
 name=Mothdust Changeling
-image=http://mtgimage.com/card/mothdust%20changeling.jpg
+image=http://magiccards.info/scans/en/mma/53.jpg
 value=2.955
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=changeling;\
         Tap an untapped creature you control:SN gains flying until end of turn.
 timing=main
-oracle=Changeling. Tap an untapped creature you control: Mothdust Changeling gains flying until end of turn.
+oracle=Changeling\nTap an untapped creature you control: Mothdust Changeling gains flying until end of turn.

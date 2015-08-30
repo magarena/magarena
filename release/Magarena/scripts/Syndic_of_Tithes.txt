@@ -1,5 +1,5 @@
 name=Syndic of Tithes
-image=http://mtgimage.com/card/syndic%20of%20tithes.jpg
+image=http://magiccards.info/scans/en/gtc/26.jpg
 value=3.246
 rarity=C
 type=Creature

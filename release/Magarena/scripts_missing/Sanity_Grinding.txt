@@ -1,6 +1,6 @@
 name=Sanity Grinding
-image=http://mtgimage.com/card/sanity%20grinding.jpg
-value=2.500
+image=http://magiccards.info/scans/en/eve/29.jpg
+value=3.517
 rarity=R
 type=Sorcery
 cost={U}{U}{U}

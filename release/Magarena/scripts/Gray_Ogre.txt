@@ -1,5 +1,5 @@
 name=Gray Ogre
-image=http://mtgimage.com/card/gray%20ogre.jpg
+image=http://magiccards.info/scans/en/4e/218.jpg
 value=1.352
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Ogre
 cost={2}{R}
 pt=2/2
 timing=main
+oracle=NONE

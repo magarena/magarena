@@ -1,5 +1,5 @@
 name=Goblin Roughrider
-image=http://mtgimage.com/card/goblin%20roughrider.jpg
+image=http://magiccards.info/scans/en/m15/146.jpg
 value=2.000
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Goblin,Knight
 cost={2}{R}
 pt=3/2
 timing=main
+oracle=NONE

@@ -1,5 +1,5 @@
 name=Mirror-Sigil Sergeant
-image=http://mtgimage.com/card/mirror-sigil%20sergeant.jpg
+image=http://magiccards.info/scans/en/cfx/12.jpg
 value=3.979
 rarity=M
 type=Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=Trample
 timing=main
 requires_groovy_code
-oracle=Trample. At the beginning of your upkeep, if you control a blue permanent, you may put a token that's a copy of Mirror-Sigil Sergeant onto the battlefield.
+oracle=Trample\nAt the beginning of your upkeep, if you control a blue permanent, you may put a token that's a copy of Mirror-Sigil Sergeant onto the battlefield.

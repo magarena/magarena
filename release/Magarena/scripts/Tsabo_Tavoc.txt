@@ -1,5 +1,5 @@
 name=Tsabo Tavoc
-image=http://mtgimage.com/card/tsabo%20tavoc.jpg
+image=http://magiccards.info/scans/en/in/281.jpg
 value=4.049
 rarity=R
 type=Legendary,Creature
@@ -8,4 +8,4 @@ cost={5}{B}{R}
 pt=7/4
 ability=first strike;protection from legendary creatures;{B}{B},{T}:Destroy target legendary creature. It can't be regenerated.
 timing=main
-oracle=First strike, protection from legendary creatures. {B}{B}, {T}: Destroy target legendary creature. It can't be regenerated.
+oracle=First strike, protection from legendary creatures\n{B}{B}, {T}: Destroy target legendary creature. It can't be regenerated.

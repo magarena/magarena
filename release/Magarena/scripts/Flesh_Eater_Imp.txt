@@ -1,5 +1,5 @@
 name=Flesh-Eater Imp
-image=http://mtgimage.com/card/flesh%2Deater%20imp.jpg
+image=http://magiccards.info/scans/en/mbs/42.jpg
 value=3.446
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=flying;infect;\
         Sacrifice a creature: SN gets +1/+1 until end of turn.
 timing=main
-oracle=Flying. Infect. Sacrifice a creature: Flesh-Eater Imp gets +1/+1 until end of turn.
+oracle=Flying\nInfect\nSacrifice a creature: Flesh-Eater Imp gets +1/+1 until end of turn.

@@ -1,11 +1,11 @@
 name=Cooperation
-image=http://mtgimage.com/card/cooperation.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ia/242.jpg
+value=2.625
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{W}
 ability=Enchant creature;\
         Enchanted creature has banding.
-timing=main
-oracle=Enchant creature. Enchanted creature has banding.
+timing=aura
+oracle=Enchant creature\nEnchanted creature has banding.

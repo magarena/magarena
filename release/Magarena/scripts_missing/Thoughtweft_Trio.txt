@@ -1,13 +1,13 @@
 name=Thoughtweft Trio
-image=http://mtgimage.com/card/thoughtweft%20trio.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lw/44.jpg
+value=4.059
 rarity=R
 type=Creature
 subtype=Kithkin,Soldier
 cost={2}{W}{W}
 pt=5/5
-ability=First strike; vigilance;\
+ability=First strike, vigilance;\
         Champion a Kithkin;\
         SN can block any number of creatures.
 timing=main
-oracle=First strike, vigilance. Champion a Kithkin. Thoughtweft Trio can block any number of creatures.
+oracle=First strike, vigilance\nChampion a Kithkin\nThoughtweft Trio can block any number of creatures.

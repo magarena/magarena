@@ -1,0 +1,11 @@
+name=Lingering Death
+image=http://magiccards.info/scans/en/sc/69.jpg
+value=3.134
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{B}
+timing=aura
+enchant=sacrifice,neg creature
+requires_groovy_code
+oracle=Enchant creature\nAt the beginning of the end step of enchanted creature's controller, that player sacrifices that creature.

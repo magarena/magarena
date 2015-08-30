@@ -1,10 +1,11 @@
 name=Part the Veil
-image=http://mtgimage.com/card/part%20the%20veil.jpg
+image=http://magiccards.info/scans/en/chk/77.jpg
 value=2.061
 rarity=R
 type=Instant
 subtype=Arcane
 cost={3}{U}
+ability=Cast SN with AI only if you control a creature.
+effect=Return all creatures you control to their owner's hand.
 timing=removal
-requires_groovy_code
 oracle=Return all creatures you control to their owner's hand.

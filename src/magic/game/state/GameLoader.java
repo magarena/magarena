@@ -7,8 +7,11 @@ import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.model.MagicPlayerDefinition;
+import magic.model.DuelPlayerConfig;
 import magic.model.phase.MagicMainPhase;
+import magic.model.player.AiProfile;
+import magic.model.player.HumanProfile;
+import magic.model.player.PlayerProfile;
 import magic.test.TestGameBuilder;
 
 public final class GameLoader {
@@ -31,38 +34,28 @@ public final class GameLoader {
 
     private static MagicDuel getDuelState(final GameState gameState) {
         final MagicDuel duel = new MagicDuel();
-        duel.setDifficulty(gameState.getDifficulty());
-        final MagicDeckProfile deckProfile1 = new MagicDeckProfile(gameState.getPlayer(0).getDeckProfileColors());
-        final MagicPlayerDefinition playerDef1 =
-                new MagicPlayerDefinition(
-                        gameState.getPlayer(0).getName(),
-                        gameState.getPlayer(0).isAi(),
-                        deckProfile1);
-        final MagicDeckProfile deckProfile2 = new MagicDeckProfile(gameState.getPlayer(1).getDeckProfileColors());
-        final MagicPlayerDefinition playerDef2 =
-                new MagicPlayerDefinition(
-                        gameState.getPlayer(1).getName(),
-                        gameState.getPlayer(1).isAi(),
-                        deckProfile2);
-        duel.setPlayers(new MagicPlayerDefinition[]{playerDef1, playerDef2});
+        final DuelPlayerConfig[] playerDefs = new DuelPlayerConfig[2];
+
+        for (int i = 0; i < playerDefs.length; i++) {
+            final PlayerProfile pp = gameState.getPlayer(i).isAi() ?
+                AiProfile.create(
+                    gameState.getPlayer(i).getName(), 
+                    MagicAIImpl.valueOf(gameState.getPlayer(i).getAiType()),
+                    gameState.getDifficulty()
+                ) :
+                HumanProfile.create(
+                    gameState.getPlayer(i).getName()
+                );
+            final MagicDeckProfile deckProfile = new MagicDeckProfile(gameState.getPlayer(i).getDeckProfileColors());
+            playerDefs[i] = new DuelPlayerConfig(pp, deckProfile);
+        }
+        
+        duel.setPlayers(playerDefs);
         duel.setStartPlayer(gameState.getStartPlayerIndex());
-        // AI
-        MagicAI ai1 = null;
-        if (gameState.getPlayer(0).isAi()) {
-            ai1 = MagicAIImpl.valueOf(gameState.getPlayer(0).getAiType()).getAI();
-        }
-        MagicAI ai2 = null;
-        if (gameState.getPlayer(1).isAi()) {
-            ai2 = MagicAIImpl.valueOf(gameState.getPlayer(1).getAiType()).getAI();
-        }
-        duel.setAIs(new MagicAI[]{ai1, ai2});
         return duel;
     }
 
-    private static void setPlayerGameState(
-            final MagicPlayer player,
-            final GamePlayerState playerState,
-            final MagicGame game) {
+    private static void setPlayerGameState(final MagicPlayer player, final GamePlayerState playerState, final MagicGame game) {
 
         player.setLife(playerState.getLife());
 
@@ -75,7 +68,7 @@ public final class GameLoader {
         // Battlefield
         final List<GameCardState> permanents = playerState.getPermanents();
         for (GameCardState permanent : permanents) {
-            TestGameBuilder.createPermanent(game, player, permanent.getCardName(), permanent.isTapped(), permanent.getQuantity());
+            TestGameBuilder.createPermanent(player, permanent.getCardName(), permanent.isTapped(), permanent.getQuantity());
         }
 
         // Hand

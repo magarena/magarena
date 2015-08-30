@@ -1,6 +1,6 @@
 name=Hunter's Prowess
-image=http://mtgimage.com/card/hunter%27s%20prowess.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bng/124.jpg
+value=3.609
 rarity=R
 type=Sorcery
 cost={4}{G}

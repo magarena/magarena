@@ -1,5 +1,5 @@
 name=Soulsworn Jury
-image=http://mtgimage.com/card/soulsworn%20jury.jpg
+image=http://magiccards.info/scans/en/di/17.jpg
 value=3.510
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{W}
 pt=1/4
 ability=defender;{1}{U},Sacrifice SN:Counter target creature spell.
 timing=main
-oracle=Defender. {1}{U}, Sacrifice Soulsworn Jury: Counter target creature spell.
+oracle=Defender\n{1}{U}, Sacrifice Soulsworn Jury: Counter target creature spell.

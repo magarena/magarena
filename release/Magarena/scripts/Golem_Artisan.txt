@@ -1,5 +1,5 @@
 name=Golem Artisan
-image=http://mtgimage.com/card/golem%20artisan.jpg
+image=http://magiccards.info/scans/en/som/159.jpg
 value=3.426
 rarity=U
 type=Artifact,Creature
@@ -8,4 +8,4 @@ cost={5}
 pt=3/3
 ability={2}:Target artifact creature gets +1/+1 until end of turn.;{2}:Target artifact creature gains flying until end of turn.;{2}:Target artifact creature gains trample until end of turn.;{2}:Target artifact creature gains haste until end of turn.
 timing=artifact
-oracle={2}: Target artifact creature gets +1/+1 until end of turn. {2}: Target artifact creature gains your choice of flying, trample, or haste until end of turn.
+oracle={2}: Target artifact creature gets +1/+1 until end of turn.\n{2}: Target artifact creature gains your choice of flying, trample, or haste until end of turn.

@@ -1,9 +1,9 @@
 name=Dosan's Oldest Chant
-image=http://mtgimage.com/card/dosan's%20oldest%20chant.jpg
+image=http://magiccards.info/scans/en/sok/127.jpg
 value=2.111
 rarity=C
 type=Sorcery
 cost={4}{G}
 effect=You gain 6 life.~Draw a card.
 timing=main
-oracle=You gain 6 life. Draw a card.
+oracle=You gain 6 life.\nDraw a card.

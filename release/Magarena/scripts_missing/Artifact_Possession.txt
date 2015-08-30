@@ -1,11 +1,11 @@
 name=Artifact Possession
-image=http://mtgimage.com/card/artifact%20possession.jpg
-value=2.500
+image=http://magiccards.info/scans/en/aq/45.jpg
+value=2.121
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{B}
 ability=Enchant artifact;\
         Whenever enchanted artifact becomes tapped or a player activates an ability of enchanted artifact without {T} in its activation cost, SN deals 2 damage to that artifact's controller.
-timing=main
-oracle=Enchant artifact. Whenever enchanted artifact becomes tapped or a player activates an ability of enchanted artifact without {T} in its activation cost, Artifact Possession deals 2 damage to that artifact's controller.
+timing=aura
+oracle=Enchant artifact\nWhenever enchanted artifact becomes tapped or a player activates an ability of enchanted artifact without {T} in its activation cost, Artifact Possession deals 2 damage to that artifact's controller.

@@ -1,5 +1,5 @@
 name=Frilled Oculus
-image=http://mtgimage.com/card/frilled%20oculus.jpg
+image=http://magiccards.info/scans/en/gtc/35.jpg
 value=2.971
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Cutthroat Maneuver
-image=http://mtgimage.com/card/cutthroat%20maneuver.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ths/82.jpg
+value=2.274
 rarity=U
 type=Instant
 cost={3}{B}

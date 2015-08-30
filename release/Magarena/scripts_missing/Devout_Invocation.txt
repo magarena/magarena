@@ -1,6 +1,6 @@
 name=Devout Invocation
-image=http://mtgimage.com/card/devout%20invocation.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m14/16.jpg
+value=3.637
 rarity=M
 type=Sorcery
 cost={6}{W}

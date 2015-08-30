@@ -1,10 +1,10 @@
 name=Catalyst Stone
-image=http://mtgimage.com/card/catalyst%20stone.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/297.jpg
+value=3.902
 rarity=R
 type=Artifact
 cost={2}
 ability=Flashback costs you pay cost up to {2} less.;\
         Flashback costs your opponents pay cost {2} more.
-timing=main
-oracle=Flashback costs you pay cost up to {2} less. Flashback costs your opponents pay cost {2} more.
+timing=artifact
+oracle=Flashback costs you pay cost up to {2} less.\nFlashback costs your opponents pay cost {2} more.

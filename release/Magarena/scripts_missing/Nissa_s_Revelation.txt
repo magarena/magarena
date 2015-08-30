@@ -1,0 +1,9 @@
+name=Nissa's Revelation
+image=http://magiccards.info/scans/en/ori/191.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={5}{G}{G}
+effect=Scry 5, then reveal the top card of your library. If it's a creature card, you draw cards equal to its power and you gain life equal to its toughness.
+timing=main
+oracle=Scry 5, then reveal the top card of your library. If it's a creature card, you draw cards equal to its power and you gain life equal to its toughness.

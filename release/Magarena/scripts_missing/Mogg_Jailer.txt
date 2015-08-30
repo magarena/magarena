@@ -1,6 +1,6 @@
 name=Mogg Jailer
-image=http://mtgimage.com/card/mogg%20jailer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ps/68.jpg
+value=2.640
 rarity=U
 type=Creature
 subtype=Goblin

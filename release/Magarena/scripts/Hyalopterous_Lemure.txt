@@ -1,11 +1,11 @@
 name=Hyalopterous Lemure
-image=http://mtgimage.com/card/hyalopterous%20lemure.jpg
+image=http://magiccards.info/scans/en/med/72.jpg
 value=3.423
 rarity=C
 type=Creature
 subtype=Spirit
 cost={4}{B}
 pt=4/3
-ability={0}:SN gets -1/-0 and gains flying until end of turn.
+ability={0}:SN gets -1/-0 and gains flying until end of turn. Activate this ability with AI no more than three times each turn.
 timing=main
 oracle={0}: Hyalopterous Lemure gets -1/-0 and gains flying until end of turn.

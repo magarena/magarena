@@ -1,5 +1,5 @@
 name=Corrupted Conscience
-image=http://mtgimage.com/card/corrupted%20conscience.jpg
+image=http://magiccards.info/scans/en/mbs/22.jpg
 value=3.730
 rarity=U
 type=Enchantment
@@ -9,4 +9,4 @@ ability=You control enchanted creature.;\
         Enchanted creature has infect.
 timing=aura
 enchant=gain control,neg creature
-oracle=Enchant creature. You control enchanted creature. Enchanted creature has infect.
+oracle=Enchant creature\nYou control enchanted creature.\nEnchanted creature has infect.

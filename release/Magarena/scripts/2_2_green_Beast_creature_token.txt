@@ -1,0 +1,8 @@
+name=2/2 green Beast creature token
+token=Beast
+image=http://cdn.staticneo.com/w/mtg/c/cd/Beast5.jpg
+value=2
+type=Creature
+subtype=Beast
+color=g
+pt=2/2

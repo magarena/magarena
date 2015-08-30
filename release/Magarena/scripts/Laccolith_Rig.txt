@@ -1,0 +1,11 @@
+name=Laccolith Rig
+image=http://magiccards.info/scans/en/ne/88.jpg
+value=3.574
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={R}
+timing=aura
+requires_groovy_code
+enchant=pump,creature
+oracle=Enchant creature\nWhenever enchanted creature becomes blocked, you may have it deal damage equal to its power to target creature. If you do, the first creature assigns no combat damage this turn.

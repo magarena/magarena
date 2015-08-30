@@ -1,9 +1,9 @@
 name=Rocky Tar Pit
-image=http://mtgimage.com/card/rocky%20tar%20pit.jpg
+image=http://magiccards.info/scans/en/vma/309.jpg
 value=3.448
 rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\
         {T}, Sacrifice SN: Search your library for a Swamp or Mountain card and put it onto the battlefield. Then shuffle your library.
 timing=land
-oracle=Rocky Tar Pit enters the battlefield tapped. {T}, Sacrifice Rocky Tar Pit: Search your library for a Swamp or Mountain card and put it onto the battlefield. Then shuffle your library.
+oracle=Rocky Tar Pit enters the battlefield tapped.\n{T}, Sacrifice Rocky Tar Pit: Search your library for a Swamp or Mountain card and put it onto the battlefield. Then shuffle your library.

@@ -1,9 +1,9 @@
 name=Ignite Memories
-image=http://mtgimage.com/card/ignite%20memories.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ts/164.jpg
+value=4.074
 rarity=U
 type=Sorcery
 cost={4}{R}
 effect=Target player reveals a card at random from his or her hand. SN deals damage to that player equal to that card's converted mana cost.~Storm
 timing=main
-oracle=Target player reveals a card at random from his or her hand. Ignite Memories deals damage to that player equal to that card's converted mana cost. Storm
+oracle=Target player reveals a card at random from his or her hand. Ignite Memories deals damage to that player equal to that card's converted mana cost.\nStorm

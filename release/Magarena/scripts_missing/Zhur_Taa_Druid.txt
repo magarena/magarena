@@ -1,6 +1,6 @@
 name=Zhur-Taa Druid
-image=http://mtgimage.com/card/zhur-taa%20druid.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddl/48.jpg
+value=3.759
 rarity=C
 type=Creature
 subtype=Human,Druid
@@ -9,4 +9,4 @@ pt=1/1
 ability={T}: Add {G} to your mana pool.;\
         Whenever you tap SN for mana, it deals 1 damage to each opponent.
 timing=main
-oracle={T}: Add {G} to your mana pool. Whenever you tap Zhur-Taa Druid for mana, it deals 1 damage to each opponent.
+oracle={T}: Add {G} to your mana pool.\nWhenever you tap Zhur-Taa Druid for mana, it deals 1 damage to each opponent.

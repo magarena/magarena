@@ -1,11 +1,12 @@
 name=Aquastrand Spider
-image=http://mtgimage.com/card/aquastrand%20spider.jpg
+image=http://magiccards.info/scans/en/cmd/141.jpg
 value=2.741
 rarity=C
 type=Creature
 subtype=Spider,Mutant
 cost={1}{G}
 pt=0/0
-ability=graft 2;{G}:Target creature with a +1/+1 counter on it gains reach until end of turn.
+ability=Graft 2;\
+        {G}: Target creature with a +1/+1 counter on it gains reach until end of turn.
 timing=main
-oracle=Graft 2. {G}: Target creature with a +1/+1 counter on it gains reach until end of turn.
+oracle=Graft 2\n{G}: Target creature with a +1/+1 counter on it gains reach until end of turn.

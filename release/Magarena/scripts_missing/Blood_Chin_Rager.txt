@@ -1,0 +1,11 @@
+name=Blood-Chin Rager
+image=http://magiccards.info/scans/en/dtk/89.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Warrior
+cost={1}{B}
+pt=2/2
+ability=Whenever SN attacks, each Warrior creature you control can't be blocked this turn except by two or more creatures.
+timing=main
+oracle=Whenever Blood-Chin Rager attacks, each Warrior creature you control can't be blocked this turn except by two or more creatures.

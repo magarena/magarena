@@ -1,0 +1,9 @@
+name=Unbender Tine
+image=http://magiccards.info/scans/en/arc/97.jpg
+value=3.227
+rarity=U
+type=Artifact
+cost={2}{W}{U}
+ability={T}: Untap another target permanent.
+timing=artifact
+oracle={T}: Untap another target permanent.

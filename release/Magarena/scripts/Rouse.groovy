@@ -1,5 +1,5 @@
 [
-    new MagicCardActivation(
+    new MagicHandCastActivation(
         [MagicCondition.SWAMP_CONDITION, MagicCondition.CARD_CONDITION],
         new MagicActivationHints(MagicTiming.Pump,true),
         "Pay Life"

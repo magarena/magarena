@@ -4,6 +4,7 @@ import magic.data.GeneralConfig;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.MagicPermanentState;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceActivation;
@@ -16,27 +17,37 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import magic.model.IUIGameController;
+import magic.translate.StringContext;
+import magic.translate.UiString;
 
 public class MagicPlayChoice extends MagicChoice {
 
-    private static final MagicChoice INSTANCE=new MagicPlayChoice();
+    // translatable strings
+    private static final String _S_PLAY_MESSAGE = "Play a card or ability.";
+    @StringContext(eg = "{f} will be replaced by an icon.")
+    private static final String _S_CONTINUE_MESSAGE = "Click {f} or Space to pass.";
+    @StringContext(eg = "| represents a new line. Position to fit text in user prompt.")
+    private static final String _S_SKIP_MESSAGE = "Right click {f} or Shift+Space to|skip till end of turn.";
+    
+    private static final String MESSAGE = String.format("%s|%s|[%s]",
+            UiString.get(_S_PLAY_MESSAGE),
+            UiString.get(_S_CONTINUE_MESSAGE),
+            UiString.get(_S_SKIP_MESSAGE)
+    );
 
-    private static final String MESSAGE="Play a card or ability.|Press {f} to pass priority.";
-    private static final String CONTINUE_MESSAGE="Press {f} to pass priority.";
+    private static final MagicChoice INSTANCE=new MagicPlayChoice();
 
     private static final Collection<Object> PASS_OPTIONS=Collections.<Object>singleton(MagicPlayChoiceResult.SKIP);
     private static final Object[] PASS_CHOICE_RESULTS= {MagicPlayChoiceResult.SKIP};
 
     private MagicPlayChoice() {
-        super("Play a card or ability.");
+        super(UiString.get(_S_PLAY_MESSAGE));
     }
 
     @Override
-    Collection<Object> getArtificialOptions(
-            final MagicGame game,
-            final MagicEvent event,
-            final MagicPlayer player,
-            final MagicSource source) {
+    Collection<Object> getArtificialOptions(final MagicGame game, final MagicEvent event) {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
 
         // When something is already on top of stack for the player, always pass.
         if (game.getStack().hasItemOnTopOfPlayer(player)) {
@@ -60,11 +71,7 @@ public class MagicPlayChoice extends MagicChoice {
         return options.size() > 1 ? options : PASS_OPTIONS;
     }
 
-    private static void addValidChoices(
-            final MagicGame game,
-            final MagicPlayer player,
-            final boolean isAI,
-            final Collection<Object> validChoices) {
+    private static void addValidChoices(final MagicGame game, final MagicPlayer player, final boolean isAI, final Collection<Object> validChoices) {
         final Set<MagicSourceActivation<? extends MagicSource>> sourceActivations = player.getSourceActivations();
         MagicActivation<? extends MagicSource> skip = null;
         for (final MagicSourceActivation<? extends MagicSource> sourceActivation : sourceActivations) {
@@ -81,11 +88,9 @@ public class MagicPlayChoice extends MagicChoice {
     }
 
     @Override
-    public Object[] getPlayerChoiceResults(
-            final IUIGameController controller,
-            final MagicGame game,
-            final MagicPlayer player,
-            final MagicSource source) throws UndoClickedException {
+    public Object[] getPlayerChoiceResults(final IUIGameController controller, final MagicGame game, final MagicEvent event) throws UndoClickedException {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
         
         controller.focusViewers(0);
 
@@ -103,8 +108,7 @@ public class MagicPlayChoice extends MagicChoice {
              game.isPhase(MagicPhaseType.DeclareBlockers) ||
              game.isPhase(MagicPhaseType.CombatDamage) ||
              game.isPhase(MagicPhaseType.EndOfCombat)) &&
-            player.getNrOfAttackers() == 0 &&
-            player.getOpponent().getNrOfAttackers() == 0 &&
+            game.getNrOfPermanents(MagicPermanentState.Attacking) == 0 &&
             game.getStack().isEmpty()) {
             return PASS_CHOICE_RESULTS;
         }
@@ -112,7 +116,7 @@ public class MagicPlayChoice extends MagicChoice {
         //skip if phase is combat damage, not supposed to be able to do
         //anything but resolve triggers
         if (game.isPhase(MagicPhaseType.CombatDamage)) {
-            if (!game.getStack().isEmpty()) {
+            if (game.getStack().hasItem()) {
                 controller.pause(GeneralConfig.getInstance().getMessageDelay());
             }
             return PASS_CHOICE_RESULTS;
@@ -133,7 +137,7 @@ public class MagicPlayChoice extends MagicChoice {
 
             if (skip) {
                 //pause if there is an item on the stack
-                if (!game.getStack().isEmpty()) {
+                if (game.getStack().hasItem()) {
                     controller.pause(GeneralConfig.getInstance().getMessageDelay());
                 }
                 return PASS_CHOICE_RESULTS;
@@ -141,15 +145,19 @@ public class MagicPlayChoice extends MagicChoice {
         }
 
         if (game.shouldSkip()) {
-            if (game.getStack().isEmpty()) {
-                return PASS_CHOICE_RESULTS;
+            if (game.getStack().isEmpty() == false) {
+                game.clearSkipTurnTill();
+            } else if (game.isPhase(MagicPhaseType.DeclareAttackers) && game.getNrOfPermanents(MagicPermanentState.Attacking) > 0) { 
+                game.clearSkipTurnTill();
             } else {
-                game.skipTurnTill(MagicPhaseType.Mulligan);
+                return PASS_CHOICE_RESULTS;
             }
+        } else {
+            game.clearSkipTurnTill();
         }
 
         if (validChoices.isEmpty()) {
-            controller.showMessage(source,CONTINUE_MESSAGE);
+            controller.showMessage(source, UiString.get(_S_CONTINUE_MESSAGE));
         } else {
             controller.showMessage(source,MESSAGE);
             controller.setValidChoices(validChoices,false);

@@ -1,6 +1,6 @@
 name=Heaven's Gate
-image=http://mtgimage.com/card/heaven%27s%20gate.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lg/188.jpg
+value=1.955
 rarity=U
 type=Instant
 cost={W}

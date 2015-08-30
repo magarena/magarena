@@ -1,0 +1,11 @@
+name=Oaken Brawler
+image=http://magiccards.info/scans/en/lw/33.jpg
+value=2.278
+rarity=C
+type=Creature
+subtype=Treefolk,Warrior
+cost={3}{W}
+pt=2/4
+ability=When SN enters the battlefield, clash with an opponent. If you win, put a +1/+1 counter on SN.
+timing=main
+oracle=When Oaken Brawler enters the battlefield, clash with an opponent. If you win, put a +1/+1 counter on Oaken Brawler.

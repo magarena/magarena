@@ -1,0 +1,9 @@
+name=Nature's Resurgence
+image=http://magiccards.info/scans/en/7e/259.jpg
+value=3.420
+rarity=R
+type=Sorcery
+cost={2}{G}{G}
+timing=draw
+requires_groovy_code
+oracle=Each player draws a card for each creature card in his or her graveyard.

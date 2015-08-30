@@ -1,0 +1,12 @@
+name=Scaleguard Sentinels
+image=http://magiccards.info/scans/en/dtk/201.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={G}{G}
+pt=2/3
+ability=As an additional cost to cast SN, you may reveal a Dragon card from your hand.;\
+        SN enters the battlefield with a +1/+1 counter on it if you revealed a Dragon card or controlled a Dragon as you cast SN.
+timing=main
+oracle=As an additional cost to cast Scaleguard Sentinels, you may reveal a Dragon card from your hand.\nScaleguard Sentinels enters the battlefield with a +1/+1 counter on it if you revealed a Dragon card or controlled a Dragon as you cast Scaleguard Sentinels.

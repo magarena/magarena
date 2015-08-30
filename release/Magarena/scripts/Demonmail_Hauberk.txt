@@ -1,0 +1,11 @@
+name=Demonmail Hauberk
+image=http://magiccards.info/scans/en/isd/221.jpg
+value=3.198
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={4}
+ability=Equipped creature gets +4/+2.;\
+        Equip—Sacrifice a creature.
+timing=equipment
+oracle=Equipped creature gets +4/+2.\nEquip—Sacrifice a creature.

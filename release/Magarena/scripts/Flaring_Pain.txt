@@ -1,5 +1,5 @@
 name=Flaring Pain
-image=http://mtgimage.com/card/flaring%20pain.jpg
+image=http://magiccards.info/scans/en/ju/89.jpg
 value=2.864
 rarity=C
 type=Instant
@@ -7,4 +7,4 @@ cost={1}{R}
 timing=removal
 ability=Flashback {R}
 requires_groovy_code
-oracle=Damage can't be prevented this turn. Flashback {R}
+oracle=Damage can't be prevented this turn.\nFlashback {R}

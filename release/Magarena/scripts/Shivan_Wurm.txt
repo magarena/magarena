@@ -1,5 +1,5 @@
 name=Shivan Wurm
-image=http://mtgimage.com/card/shivan%20wurm.jpg
+image=http://magiccards.info/scans/en/vma/261.jpg
 value=4.321
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=7/7
 ability=trample;\
         When SN enters the battlefield, return a red or green creature you control to its owner's hand.
 timing=main
-oracle=Trample. When Shivan Wurm enters the battlefield, return a red or green creature you control to its owner's hand.
+oracle=Trample\nWhen Shivan Wurm enters the battlefield, return a red or green creature you control to its owner's hand.

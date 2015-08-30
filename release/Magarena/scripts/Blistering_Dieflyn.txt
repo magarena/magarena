@@ -1,5 +1,5 @@
 name=Blistering Dieflyn
-image=http://mtgimage.com/card/blistering%20dieflyn.jpg
+image=http://magiccards.info/scans/en/shm/82.jpg
 value=1.578
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={3}{R}
 pt=0/1
 ability=flying;{B/R}: SN gets +1/+0 until end of turn.
 timing=main
-oracle=Flying. {B/R}: Blistering Dieflyn gets +1/+0 until end of turn.
+oracle=Flying\n{B/R}: Blistering Dieflyn gets +1/+0 until end of turn.

@@ -1,5 +1,5 @@
 name=Grave Betrayal
-image=http://mtgimage.com/card/grave%20betrayal.jpg
+image=http://magiccards.info/scans/en/rtr/67.jpg
 value=3.846
 rarity=R
 type=Enchantment

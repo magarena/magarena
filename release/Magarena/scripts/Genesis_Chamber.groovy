@@ -16,9 +16,9 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicPlayTokenAction(
+            game.doAction(new PlayTokenAction(
                 event.getPlayer(),
-                TokenCardDefinitions.get("1/1 colorless Myr artifact creature token")
+                CardDefinitions.getToken("1/1 colorless Myr artifact creature token")
             ));
         }
     }

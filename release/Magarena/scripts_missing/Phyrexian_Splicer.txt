@@ -1,9 +1,9 @@
 name=Phyrexian Splicer
-image=http://mtgimage.com/card/phyrexian%20splicer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tp/293.jpg
+value=3.432
 rarity=U
 type=Artifact
 cost={2}
 ability={2}, {T}, Choose flying, first strike, trample, or shadow: Until end of turn, target creature with the chosen ability loses it and another target creature gains it.
-timing=main
+timing=artifact
 oracle={2}, {T}, Choose flying, first strike, trample, or shadow: Until end of turn, target creature with the chosen ability loses it and another target creature gains it.

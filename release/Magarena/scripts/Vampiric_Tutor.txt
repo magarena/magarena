@@ -1,5 +1,5 @@
 name=Vampiric Tutor
-image=http://mtgimage.com/card/vampiric%20tutor.jpg
+image=http://magiccards.info/scans/en/vma/145.jpg
 value=5.000
 rarity=R
 type=Instant

@@ -1,6 +1,6 @@
 name=Volunteer Reserves
-image=http://mtgimage.com/card/volunteer%20reserves.jpg
-value=2.500
+image=http://magiccards.info/scans/en/wl/145.jpg
+value=2.526
 rarity=U
 type=Creature
 subtype=Human,Soldier
@@ -9,4 +9,4 @@ pt=2/4
 ability=Banding;\
         Cumulative upkeep {1}
 timing=main
-oracle=Banding. Cumulative upkeep {1}
+oracle=Banding\nCumulative upkeep {1}

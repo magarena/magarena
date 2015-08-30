@@ -1,11 +1,11 @@
 name=Blessing
-image=http://mtgimage.com/card/blessing.jpg
+image=http://magiccards.info/scans/en/m14/8.jpg
 value=3.153
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={W}{W}
+ability={W}: Enchanted creature gets +1/+1 until end of turn.
 enchant=pump,pos creature
 timing=aura
-requires_groovy_code
-oracle=Enchant creature. {W}: Enchanted creature gets +1/+1 until end of turn.
+oracle=Enchant creature\n{W}: Enchanted creature gets +1/+1 until end of turn.

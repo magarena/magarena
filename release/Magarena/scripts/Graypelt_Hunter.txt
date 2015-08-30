@@ -1,5 +1,5 @@
 name=Graypelt Hunter
-image=http://mtgimage.com/card/graypelt%20hunter.jpg
+image=http://magiccards.info/scans/en/wwk/103.jpg
 value=3.198
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=trample;\
         Whenever SN or another Ally enters the battlefield under your control, you may put a +1/+1 counter on SN.
 timing=main
-oracle=Trample. Whenever Graypelt Hunter or another Ally enters the battlefield under your control, you may put a +1/+1 counter on Graypelt Hunter.
+oracle=Trample\nWhenever Graypelt Hunter or another Ally enters the battlefield under your control, you may put a +1/+1 counter on Graypelt Hunter.

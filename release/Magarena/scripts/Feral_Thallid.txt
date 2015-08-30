@@ -1,5 +1,5 @@
 name=Feral Thallid
-image=http://mtgimage.com/card/feral%20thallid.jpg
+image=http://magiccards.info/scans/en/me2/161.jpg
 value=2.773
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=6/3
 ability=At the beginning of your upkeep, put a spore counter on SN.;\
         Remove three spore counters from SN: Regenerate SN.
 timing=main
-oracle=At the beginning of your upkeep, put a spore counter on Feral Thallid. Remove three spore counters from Feral Thallid: Regenerate Feral Thallid.
+oracle=At the beginning of your upkeep, put a spore counter on Feral Thallid.\nRemove three spore counters from Feral Thallid: Regenerate Feral Thallid.

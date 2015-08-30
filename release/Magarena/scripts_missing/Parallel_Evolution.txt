@@ -1,9 +1,0 @@
-name=Parallel Evolution
-image=http://mtgimage.com/card/parallel%20evolution.jpg
-value=2.500
-rarity=R
-type=Sorcery
-cost={3}{G}{G}
-effect=For each creature token on the battlefield, its controller puts a token that's a copy of that creature onto the battlefield.~Flashback {4}{G}{G}{G}
-timing=main
-oracle=For each creature token on the battlefield, its controller puts a token that's a copy of that creature onto the battlefield. Flashback {4}{G}{G}{G}

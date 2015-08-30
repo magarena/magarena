@@ -1,11 +1,12 @@
 name=Hush
-image=http://mtgimage.com/card/hush.jpg
+image=http://magiccards.info/scans/en/us/266.jpg
 value=3.450
 rarity=C
 type=Sorcery
 cost={3}{G}
+ability=Cycling {2};\
+        Cast SN with AI only if an opponent controls an enchantment.
 effect=Destroy all enchantments.
 removal=2
 timing=removal
-ability=cycling {2}
-oracle=Destroy all enchantments. Cycling {2}
+oracle=Destroy all enchantments.\nCycling {2}

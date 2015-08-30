@@ -1,5 +1,5 @@
 name=Murderous Redcap
-image=http://mtgimage.com/card/murderous%20redcap.jpg
+image=http://magiccards.info/scans/en/mma/192.jpg
 value=3.865
 removal=2
 rarity=U
@@ -7,7 +7,7 @@ type=Creature
 subtype=Goblin,Assassin
 cost={2}{B/R}{B/R}
 pt=2/2
-ability=persist
+ability=When SN enters the battlefield, SN deals damage equal to its power to target creature or player.;\
+        persist
 timing=fmain
-requires_groovy_code
-oracle=When Murderous Redcap enters the battlefield, it deals damage equal to its power to target creature or player. Persist
+oracle=When Murderous Redcap enters the battlefield, it deals damage equal to its power to target creature or player.\nPersist

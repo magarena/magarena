@@ -1,5 +1,5 @@
 name=Carrion Wall
-image=http://mtgimage.com/card/carrion%20wall.jpg
+image=http://magiccards.info/scans/en/8e/121.jpg
 value=3.242
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=3/2
 ability=defender;\
         {1}{B}: Regenerate SN.
 timing=main
-oracle=Defender. {1}{B}: Regenerate Carrion Wall.
+oracle=Defender\n{1}{B}: Regenerate Carrion Wall.

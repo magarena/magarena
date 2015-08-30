@@ -1,13 +1,13 @@
 name=Avacyn, Guardian Angel
-image=http://mtgimage.com/card/avacyn%2C%20guardian%20angel.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/3.jpg
+value=3.833
 rarity=R
 type=Legendary,Creature
 subtype=Angel
 cost={2}{W}{W}{W}
 pt=5/4
-ability=Flying; vigilance;\
+ability=Flying, vigilance;\
         {1}{W}: Prevent all damage that would be dealt to another target creature this turn by sources of the color of your choice.;\
         {5}{W}{W}: Prevent all damage that would be dealt to target player this turn by sources of the color of your choice.
 timing=main
-oracle=Flying, vigilance. {1}{W}: Prevent all damage that would be dealt to another target creature this turn by sources of the color of your choice. {5}{W}{W}: Prevent all damage that would be dealt to target player this turn by sources of the color of your choice.
+oracle=Flying, vigilance\n{1}{W}: Prevent all damage that would be dealt to another target creature this turn by sources of the color of your choice.\n{5}{W}{W}: Prevent all damage that would be dealt to target player this turn by sources of the color of your choice.

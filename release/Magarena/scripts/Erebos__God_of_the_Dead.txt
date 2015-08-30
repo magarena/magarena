@@ -1,5 +1,5 @@
 name=Erebos, God of the Dead
-image=http://mtgimage.com/card/erebos%2C%20god%20of%20the%20dead.jpg
+image=http://magiccards.info/scans/en/ths/85.jpg
 value=3.802
 rarity=M
 type=Legendary,Enchantment,Creature
@@ -10,4 +10,4 @@ ability=indestructible;\
         {1}{B}, Pay 2 life: Draw a card.
 timing=main
 requires_groovy_code
-oracle=Indestructible. As long as your devotion to black is less than five, Erebos isn't a creature. Your opponents can't gain life. {1}{B}, Pay 2 life: Draw a card.
+oracle=Indestructible\nAs long as your devotion to black is less than five, Erebos isn't a creature.\nYour opponents can't gain life.\n{1}{B}, Pay 2 life: Draw a card.

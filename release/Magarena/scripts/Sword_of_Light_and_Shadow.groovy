@@ -8,7 +8,7 @@
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        MagicTargetChoice.TARGET_CREATURE_CARD_FROM_GRAVEYARD
+                        TARGET_CREATURE_CARD_FROM_GRAVEYARD
                     ),
                     MagicGraveyardTargetPicker.ReturnToHand,
                     this,
@@ -19,11 +19,10 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicChangeLifeAction(event.getPlayer(),3));
+            game.doAction(new ChangeLifeAction(event.getPlayer(),3));
             if (event.isYes()) {
                 event.processTargetCard(game, {
-                    game.doAction(new MagicRemoveCardAction(it,MagicLocationType.Graveyard));
-                    game.doAction(new MagicMoveCardAction(it,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
+                    game.doAction(new ShiftCardAction(it,MagicLocationType.Graveyard,MagicLocationType.OwnersHand));
                 });
             }
         }

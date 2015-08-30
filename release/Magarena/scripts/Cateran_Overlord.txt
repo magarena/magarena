@@ -1,5 +1,5 @@
 name=Cateran Overlord
-image=http://mtgimage.com/card/cateran%20overlord.jpg
+image=http://magiccards.info/scans/en/mm/123.jpg
 value=3.553
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=7/5
 ability=Sacrifice a creature: Regenerate SN.;\
         {6}, {T}: Search your library for a Mercenary permanent card with converted mana cost 6 or less and put it onto the battlefield. Then shuffle your library.
 timing=main
-oracle=Sacrifice a creature: Regenerate Cateran Overlord. {6}, {T}: Search your library for a Mercenary permanent card with converted mana cost 6 or less and put it onto the battlefield. Then shuffle your library.
+oracle=Sacrifice a creature: Regenerate Cateran Overlord.\n{6}, {T}: Search your library for a Mercenary permanent card with converted mana cost 6 or less and put it onto the battlefield. Then shuffle your library.

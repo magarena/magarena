@@ -1,5 +1,5 @@
 name=Balduvian Barbarians
-image=http://mtgimage.com/card/balduvian%20barbarians.jpg
+image=http://magiccards.info/scans/en/9e/174.jpg
 value=2.432
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Human,Barbarian
 cost={1}{R}{R}
 pt=3/2
 timing=main
+oracle=NONE

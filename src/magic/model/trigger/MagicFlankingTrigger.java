@@ -4,7 +4,7 @@ import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentList;
-import magic.model.action.MagicChangeTurnPTAction;
+import magic.model.action.ChangeTurnPTAction;
 import magic.model.event.MagicEvent;
 
 public class MagicFlankingTrigger extends MagicWhenBecomesBlockedTrigger {
@@ -42,7 +42,7 @@ public class MagicFlankingTrigger extends MagicWhenBecomesBlockedTrigger {
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         for (final MagicPermanent blocker : event.getRefPermanentList()) {
-            game.doAction(new MagicChangeTurnPTAction(blocker,-1,-1));
+            game.doAction(new ChangeTurnPTAction(blocker,-1,-1));
         }
     }
 }

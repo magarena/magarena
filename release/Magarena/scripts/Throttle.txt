@@ -1,5 +1,5 @@
 name=Throttle
-image=http://mtgimage.com/card/throttle.jpg
+image=http://magiccards.info/scans/en/ktk/93.jpg
 value=2.250
 rarity=C
 type=Instant

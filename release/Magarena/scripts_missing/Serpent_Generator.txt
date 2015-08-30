@@ -1,9 +1,0 @@
-name=Serpent Generator
-image=http://mtgimage.com/card/serpent%20generator.jpg
-value=2.500
-rarity=R
-type=Artifact
-cost={6}
-ability={4}, {T}: Put a 1/1 colorless Snake artifact creature token onto the battlefield. It has "Whenever this creature deals damage to a player, that player gets a poison counter."
-timing=main
-oracle={4}, {T}: Put a 1/1 colorless Snake artifact creature token onto the battlefield. It has "Whenever this creature deals damage to a player, that player gets a poison counter."

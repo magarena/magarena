@@ -1,9 +1,0 @@
-name=Distorting Lens
-image=http://mtgimage.com/card/distorting%20lens.jpg
-value=2.500
-rarity=R
-type=Artifact
-cost={2}
-ability={T}: Target permanent becomes the color of your choice until end of turn.
-timing=main
-oracle={T}: Target permanent becomes the color of your choice until end of turn.

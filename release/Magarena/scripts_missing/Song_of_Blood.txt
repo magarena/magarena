@@ -1,9 +1,9 @@
 name=Song of Blood
-image=http://mtgimage.com/card/song%20of%20blood.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vi/94.jpg
+value=2.756
 rarity=C
 type=Sorcery
 cost={1}{R}
 effect=Put the top four cards of your library into your graveyard.~Whenever a creature attacks this turn, it gets +1/+0 until end of turn for each creature card put into your graveyard this way.
 timing=main
-oracle=Put the top four cards of your library into your graveyard. Whenever a creature attacks this turn, it gets +1/+0 until end of turn for each creature card put into your graveyard this way.
+oracle=Put the top four cards of your library into your graveyard.\nWhenever a creature attacks this turn, it gets +1/+0 until end of turn for each creature card put into your graveyard this way.

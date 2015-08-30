@@ -7,9 +7,7 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
 
 def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
     @Override
-    public void modSubTypeFlags(
-            final MagicPermanent permanent,
-            final Set<MagicSubType> flags) {
+    public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
         flags.addAll(MagicSubType.ALL_CREATURES);
     }
     @Override
@@ -20,13 +18,9 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
 
 [
     new MagicPermanentActivation(
-        [
-            new MagicArtificialCondition(
-                MagicConditionFactory.ManaCost("{2}")
-            )
-        ],
+        [MagicCondition.NOT_EXCLUDE_COMBAT_CONDITION],
         new MagicActivationHints(MagicTiming.Animate),
-        "Animate"
+        "Becomes"
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
@@ -44,7 +38,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicBecomesCreatureAction(event.getPermanent(),PT,ST));
+            game.doAction(new BecomesCreatureAction(event.getPermanent(),PT,ST));
         }
     }
 ]

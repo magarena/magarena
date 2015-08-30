@@ -1,6 +1,6 @@
 name=Brawler's Plate
-image=http://mtgimage.com/card/brawler%27s%20plate.jpg
-value=1.857
+image=http://magiccards.info/scans/en/ori/224.jpg
+value=2.500
 rarity=U
 type=Artifact
 subtype=Equipment
@@ -8,4 +8,4 @@ cost={3}
 ability=Equipped creature gets +2/+2 and has trample.;\
         Equip {4}
 timing=main
-oracle=Equipped creature gets +2/+2 and has trample. Equip {4}
+oracle=Equipped creature gets +2/+2 and has trample.\nEquip {4}

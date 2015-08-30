@@ -1,0 +1,11 @@
+name=Shrine of Limitless Power
+image=http://magiccards.info/scans/en/nph/154.jpg
+value=2.087
+rarity=U
+type=Artifact
+cost={3}
+ability=At the beginning of your upkeep, put a charge counter on SN.;\
+        Whenever you cast a black spell, put a charge counter on SN.;\
+        {4}, {T}, Sacrifice SN: Target player discards a card for each charge counter on SN.
+timing=artifact
+oracle=At the beginning of your upkeep or whenever you cast a black spell, put a charge counter on Shrine of Limitless Power.\n{4}, {T}, Sacrifice Shrine of Limitless Power: Target player discards a card for each charge counter on Shrine of Limitless Power.

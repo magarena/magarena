@@ -1,6 +1,6 @@
 name=Master of Arms
-image=http://mtgimage.com/card/master%20of%20arms.jpg
-value=2.500
+image=http://magiccards.info/scans/en/wl/136.jpg
+value=3.170
 rarity=U
 type=Creature
 subtype=Human,Soldier
@@ -9,4 +9,4 @@ pt=2/2
 ability=First strike;\
         {1}{W}: Tap target creature blocking SN.
 timing=main
-oracle=First strike. {1}{W}: Tap target creature blocking Master of Arms.
+oracle=First strike\n{1}{W}: Tap target creature blocking Master of Arms.

@@ -1,0 +1,10 @@
+name=Cold Storage
+image=http://magiccards.info/scans/en/tp/270.jpg
+value=3.618
+rarity=R
+type=Artifact
+cost={4}
+ability={3}: Exile target creature you control.
+timing=artifact
+requires_groovy_code
+oracle={3}: Exile target creature you control.\nSacrifice Cold Storage: Return each creature card exiled with Cold Storage to the battlefield under your control.

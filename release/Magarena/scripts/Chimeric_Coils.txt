@@ -1,0 +1,9 @@
+name=Chimeric Coils
+image=http://magiccards.info/scans/en/5dn/108.jpg
+value=2.536
+rarity=U
+type=Artifact
+cost={1}
+timing=artifact
+requires_groovy_code
+oracle={X}{1}: Chimeric Coils becomes an X/X Construct artifact creature. Sacrifice it at the beginning of the next end step.

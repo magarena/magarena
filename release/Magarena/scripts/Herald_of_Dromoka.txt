@@ -1,0 +1,12 @@
+name=Herald of Dromoka
+image=http://magiccards.info/scans/en/dtk/22.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Warrior
+cost={1}{W}
+pt=2/2
+ability=Vigilance;\
+        Other Warrior creatures you control have vigilance.
+timing=fmain
+oracle=Vigilance\nOther Warrior creatures you control have vigilance.

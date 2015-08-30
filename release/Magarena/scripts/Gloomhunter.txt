@@ -1,5 +1,5 @@
 name=Gloomhunter
-image=http://mtgimage.com/card/gloomhunter.jpg
+image=http://magiccards.info/scans/en/roe/111.jpg
 value=1.670
 ability=flying
 rarity=C

@@ -18,13 +18,12 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent goblin = event.getRefPermanent();
-            final MagicSacrificeAction sac = new MagicSacrificeAction(goblin);
+            final SacrificeAction sac = new SacrificeAction(goblin);
             final MagicPermanentList blockingCreatures = goblin.getBlockingCreatures();
             game.doAction(sac);
             if (sac.isValid()) {
                 for (final MagicPermanent blocker : blockingCreatures) {
-                    final MagicDamage damage = new MagicDamage(goblin, blocker, 4);
-                    game.doAction(new MagicDealDamageAction(damage));
+                    game.doAction(new DealDamageAction(goblin, blocker, 4));
                 }
             }
         }

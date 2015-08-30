@@ -1,5 +1,5 @@
 name=Quill-Slinger Boggart
-image=http://mtgimage.com/card/quill-slinger%20boggart.jpg
+image=http://magiccards.info/scans/en/lw/137.jpg
 value=2.294
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Forgotten Cave
-image=http://mtgimage.com/card/forgotten%20cave.jpg
+image=http://magiccards.info/scans/en/c14/296.jpg
 value=2.000
 rarity=C
 type=Land
@@ -8,4 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {R} to your mana pool.;\
         cycling {R}
 timing=tapland
-oracle=Forgotten Cave enters the battlefield tapped. {T}: Add {R} to your mana pool. Cycling {R}
+oracle=Forgotten Cave enters the battlefield tapped.\n{T}: Add {R} to your mana pool.\nCycling {R}

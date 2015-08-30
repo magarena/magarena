@@ -1,6 +1,6 @@
 name=Iron-Heart Chimera
-image=http://mtgimage.com/card/iron-heart%20chimera.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vi/146.jpg
+value=3.391
 rarity=U
 type=Artifact,Creature
 subtype=Chimera
@@ -9,4 +9,4 @@ pt=2/2
 ability=Vigilance
 timing=main
 requires_groovy_code
-oracle=Vigilance. Sacrifice Iron-Heart Chimera: Put a +2/+2 counter on target Chimera creature. It gains vigilance.
+oracle=Vigilance\nSacrifice Iron-Heart Chimera: Put a +2/+2 counter on target Chimera creature. It gains vigilance.

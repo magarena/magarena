@@ -4,8 +4,10 @@ import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicSource;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicLocationType;
 import magic.model.ARG;
-import magic.model.action.MagicPutItemOnStackAction;
+import magic.model.action.PutItemOnStackAction;
 import magic.model.choice.MagicChoice;
 import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicAbilityOnStack;
@@ -13,7 +15,7 @@ import magic.model.stack.MagicAbilityOnStack;
 import java.util.List;
 import java.util.LinkedList;
 
-public abstract class MagicCardAbilityActivation extends MagicCardActivation {
+public abstract class MagicCardAbilityActivation extends MagicHandCastActivation {
 
     final String name;
 
@@ -43,10 +45,10 @@ public abstract class MagicCardAbilityActivation extends MagicCardActivation {
                         MagicCardAbilityActivation.this,
                         getCardEvent(event.getCard(), game.getPayedCost())
                     );
-                    game.doAction(new MagicPutItemOnStackAction(abilityOnStack));
+                    game.doAction(new PutItemOnStackAction(abilityOnStack));
                 }
             },
-            name + " SN."
+            "Play activated ability of SN."
         );
     }
 
@@ -55,7 +57,7 @@ public abstract class MagicCardAbilityActivation extends MagicCardActivation {
         return getCardEvent(source, MagicPayedCost.NO_COST).getChoice();
     }
     
-    public static final MagicCardAbilityActivation create(final String act) {
+    public static final MagicCardAbilityActivation create(final String act, final MagicLocationType loc) {
         final String[] token = act.split(ARG.COLON, 2);
         
         // build the actual costs
@@ -66,7 +68,7 @@ public abstract class MagicCardAbilityActivation extends MagicCardActivation {
         // add restriction as a MagicMatchedCostEvent
         final String[] part = token[1].split(ActivationRestriction);
         if (part.length > 1) {
-            matchedCostEvents.addAll(MagicConditionCostEvent.build(part[1]));
+            matchedCostEvents.addAll(MagicCondition.build(part[1]));
         }
         
         // parse the effect        
@@ -98,6 +100,17 @@ public abstract class MagicCardAbilityActivation extends MagicCardActivation {
             @Override
             public MagicEvent getCardEvent(final MagicCard source, final MagicPayedCost payedCost) {
                 return sourceEvent.getEvent(source);
+            }
+            
+            @Override
+            public void change(final MagicCardDefinition cdef) {
+                if (loc == MagicLocationType.OwnersHand) {
+                    cdef.addHandAct(this);
+                } else if (loc == MagicLocationType.Graveyard) {
+                    cdef.addGraveyardAct(this);
+                } else {
+                    throw new RuntimeException("unknown location: \"" + loc + "\"");
+                }
             }
         };
     }

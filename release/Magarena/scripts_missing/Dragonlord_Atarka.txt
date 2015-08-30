@@ -1,0 +1,12 @@
+name=Dragonlord Atarka
+image=http://magiccards.info/scans/en/dtk/216.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Elder,Dragon
+cost={5}{R}{G}
+pt=8/8
+ability=Flying, trample;\
+        When SN enters the battlefield, it deals 5 damage divided as you choose among any number of target creatures and/or planeswalkers your opponents control.
+timing=main
+oracle=Flying, trample\nWhen Dragonlord Atarka enters the battlefield, it deals 5 damage divided as you choose among any number of target creatures and/or planeswalkers your opponents control.

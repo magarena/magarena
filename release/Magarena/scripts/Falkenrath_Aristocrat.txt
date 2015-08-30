@@ -1,5 +1,5 @@
 name=Falkenrath Aristocrat
-image=http://mtgimage.com/card/falkenrath%20aristocrat.jpg
+image=http://magiccards.info/scans/en/dka/138.jpg
 value=3.856
 rarity=M
 type=Creature
@@ -9,4 +9,4 @@ pt=4/1
 ability=flying;haste
 timing=fmain
 requires_groovy_code
-oracle=Flying, haste. Sacrifice a creature: Falkenrath Aristocrat gains indestructible until end of turn. If the sacrificed creature was a Human, put a +1/+1 counter on Falkenrath Aristocrat.
+oracle=Flying, haste\nSacrifice a creature: Falkenrath Aristocrat gains indestructible until end of turn. If the sacrificed creature was a Human, put a +1/+1 counter on Falkenrath Aristocrat.

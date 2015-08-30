@@ -1,9 +1,9 @@
 name=Infernal Tutor
-image=http://mtgimage.com/card/infernal%20tutor.jpg
-value=2.500
+image=http://magiccards.info/scans/en/di/46.jpg
+value=4.167
 rarity=R
 type=Sorcery
 cost={1}{B}
 effect=Reveal a card from your hand. Search your library for a card with the same name as that card, reveal it, put it into your hand, then shuffle your library.~If you have no cards in hand, instead search your library for a card, put it into your hand, then shuffle your library.
 timing=main
-oracle=Reveal a card from your hand. Search your library for a card with the same name as that card, reveal it, put it into your hand, then shuffle your library. Hellbent — If you have no cards in hand, instead search your library for a card, put it into your hand, then shuffle your library.
+oracle=Reveal a card from your hand. Search your library for a card with the same name as that card, reveal it, put it into your hand, then shuffle your library.\nHellbent — If you have no cards in hand, instead search your library for a card, put it into your hand, then shuffle your library.

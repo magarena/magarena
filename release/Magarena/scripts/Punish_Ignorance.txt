@@ -1,5 +1,5 @@
 name=Punish Ignorance
-image=http://mtgimage.com/card/punish%20ignorance.jpg
+image=http://magiccards.info/scans/en/ala/183.jpg
 value=3.201
 rarity=R
 type=Instant

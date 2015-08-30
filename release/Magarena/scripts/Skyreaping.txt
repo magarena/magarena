@@ -1,9 +1,11 @@
 name=Skyreaping
-image=http://mtgimage.com/card/skyreaping.jpg
+image=http://magiccards.info/scans/en/bng/140.jpg
 value=3.522
 rarity=U
 type=Sorcery
 cost={1}{G}
+ability=Cast SN with AI only if an opponent controls a creature with flying.;\
+        Cast SN with AI only if you have devotion to green.
 timing=main
 requires_groovy_code
 oracle=Skyreaping deals damage to each creature with flying equal to your devotion to green.

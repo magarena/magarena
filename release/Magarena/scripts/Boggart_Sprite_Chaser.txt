@@ -1,5 +1,5 @@
 name=Boggart Sprite-Chaser
-image=http://mtgimage.com/card/boggart%20sprite%2Dchaser.jpg
+image=http://magiccards.info/scans/en/lw/156.jpg
 value=2.439
 rarity=C
 type=Creature

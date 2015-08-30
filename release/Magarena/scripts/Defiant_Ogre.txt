@@ -1,0 +1,13 @@
+name=Defiant Ogre
+image=http://magiccards.info/scans/en/frf/96.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Ogre,Warrior
+cost={5}{R}
+pt=3/5
+ability=When SN enters the battlefield, choose one — \
+        (1) Put a +1/+1 counter on SN. \
+        (2) Destroy target artifact.
+timing=main
+oracle=When Defiant Ogre enters the battlefield, choose one —\n• Put a +1/+1 counter on Defiant Ogre.\n• Destroy target artifact.

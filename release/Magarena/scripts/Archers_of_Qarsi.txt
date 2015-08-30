@@ -1,5 +1,5 @@
 name=Archers of Qarsi
-image=http://mtgimage.com/card/archers%20of%20qarsi.jpg
+image=http://magiccards.info/scans/en/frf/124.jpg
 value=2.500
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=5/2
 ability=Defender;\
         Reach
 timing=main
-oracle=Defender. Reach
+oracle=Defender\nReach

@@ -1,5 +1,5 @@
 name=Fable of Wolf and Owl
-image=http://mtgimage.com/card/fable%20of%20wolf%20and%20owl.jpg
+image=http://magiccards.info/scans/en/eve/150.jpg
 value=3.922
 rarity=R
 type=Enchantment
@@ -7,4 +7,4 @@ cost={3}{G/U}{G/U}{G/U}
 ability=Whenever you cast a green spell, you may put a 2/2 green Wolf creature token onto the battlefield.;\
         Whenever you cast a blue spell, you may put a 1/1 blue Bird creature token with flying onto the battlefield.
 timing=main
-oracle=Whenever you cast a green spell, you may put a 2/2 green Wolf creature token onto the battlefield. Whenever you cast a blue spell, you may put a 1/1 blue Bird creature token with flying onto the battlefield.
+oracle=Whenever you cast a green spell, you may put a 2/2 green Wolf creature token onto the battlefield.\nWhenever you cast a blue spell, you may put a 1/1 blue Bird creature token with flying onto the battlefield.

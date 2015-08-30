@@ -1,5 +1,5 @@
 name=Sphinx Sovereign
-image=http://mtgimage.com/card/sphinx%20sovereign.jpg
+image=http://magiccards.info/scans/en/ala/196.jpg
 value=3.026
 rarity=M
 type=Artifact,Creature
@@ -9,4 +9,4 @@ pt=6/6
 ability=flying
 timing=artifact
 requires_groovy_code
-oracle=Flying. At the beginning of your end step, you gain 3 life if Sphinx Sovereign is untapped. Otherwise, each opponent loses 3 life.
+oracle=Flying\nAt the beginning of your end step, you gain 3 life if Sphinx Sovereign is untapped. Otherwise, each opponent loses 3 life.

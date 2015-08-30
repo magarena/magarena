@@ -1,5 +1,5 @@
 name=Mardu Banner
-image=http://mtgimage.com/card/mardu%20banner.jpg
+image=http://magiccards.info/scans/en/ktk/224.jpg
 value=2.000
 rarity=C
 type=Artifact
@@ -7,4 +7,4 @@ cost={3}
 ability={T}: Add {R} or {W} or {B} to your mana pool.;\
         {R}{W}{B}, {T}, Sacrifice SN: Draw a card.
 timing=artifact
-oracle={T}: Add {R}, {W}, or {B} to your mana pool. {R}{W}{B}, {T}, Sacrifice Mardu Banner: Draw a card.
+oracle={T}: Add {R}, {W}, or {B} to your mana pool.\n{R}{W}{B}, {T}, Sacrifice Mardu Banner: Draw a card.

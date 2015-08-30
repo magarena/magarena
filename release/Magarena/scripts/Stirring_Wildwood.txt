@@ -1,12 +1,12 @@
 name=Stirring Wildwood
-image=http://mtgimage.com/card/stirring%20wildwood.jpg
+image=http://magiccards.info/scans/en/wwk/144.jpg
 value=3.794
 rarity=R
 type=Land
 mana=g3w3
 timing=tapland
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {G} or {W} to your mana pool.
+        {T}: Add {G} or {W} to your mana pool.;\
+        {1}{G}{W}: Until end of turn, SN becomes a 3/4 green and white Elemental creature with reach. It's still a land.
 mana_or_combat
-requires_groovy_code
-oracle=Stirring Wildwood enters the battlefield tapped. {T}: Add {G} or {W} to your mana pool. {1}{G}{W}: Until end of turn, Stirring Wildwood becomes a 3/4 green and white Elemental creature with reach. It's still a land.
+oracle=Stirring Wildwood enters the battlefield tapped.\n{T}: Add {G} or {W} to your mana pool.\n{1}{G}{W}: Until end of turn, Stirring Wildwood becomes a 3/4 green and white Elemental creature with reach. It's still a land.

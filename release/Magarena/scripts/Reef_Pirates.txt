@@ -1,5 +1,5 @@
 name=Reef Pirates
-image=http://mtgimage.com/card/reef%20pirates.jpg
+image=http://magiccards.info/scans/en/5e/116.jpg
 value=2.893
 rarity=C
 type=Creature

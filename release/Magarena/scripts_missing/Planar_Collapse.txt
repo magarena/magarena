@@ -1,9 +1,9 @@
 name=Planar Collapse
-image=http://mtgimage.com/card/planar%20collapse.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ul/18.jpg
+value=3.986
 rarity=R
 type=Enchantment
 cost={1}{W}
 ability=At the beginning of your upkeep, if there are four or more creatures on the battlefield, sacrifice SN and destroy all creatures. They can't be regenerated.
-timing=main
+timing=enchantment
 oracle=At the beginning of your upkeep, if there are four or more creatures on the battlefield, sacrifice Planar Collapse and destroy all creatures. They can't be regenerated.

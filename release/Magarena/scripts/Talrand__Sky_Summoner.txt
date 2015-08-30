@@ -1,5 +1,5 @@
 name=Talrand, Sky Summoner
-image=http://mtgimage.com/card/talrand,%20sky%20summoner.jpg
+image=http://magiccards.info/scans/en/m13/72.jpg
 value=4.173
 rarity=R
 type=Legendary,Creature

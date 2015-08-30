@@ -1,10 +1,10 @@
 name=Shining Shoal
-image=http://mtgimage.com/card/shining%20shoal.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bok/21.jpg
+value=4.156
 rarity=R
 type=Instant
 subtype=Arcane
 cost={X}{W}{W}
 effect=You may exile a white card with converted mana cost X from your hand rather than pay SN's mana cost.~The next X damage that a source of your choice would deal to you and/or creatures you control this turn is dealt to target creature or player instead.
 timing=removal
-oracle=You may exile a white card with converted mana cost X from your hand rather than pay Shining Shoal's mana cost. The next X damage that a source of your choice would deal to you and/or creatures you control this turn is dealt to target creature or player instead.
+oracle=You may exile a white card with converted mana cost X from your hand rather than pay Shining Shoal's mana cost.\nThe next X damage that a source of your choice would deal to you and/or creatures you control this turn is dealt to target creature or player instead.

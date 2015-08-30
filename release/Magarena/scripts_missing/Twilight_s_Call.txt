@@ -1,9 +1,9 @@
 name=Twilight's Call
-image=http://mtgimage.com/card/twilight%27s%20call.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddj/76.jpg
+value=4.406
 rarity=R
 type=Sorcery
 cost={4}{B}{B}
-effect=You may cast SN any time you could cast an instant if you pay {2} more to cast it.~Each player returns all creature cards from his or her graveyard to the battlefield.
+effect=You may cast SN as though it had flash if you pay {2} more to cast it.~Each player returns all creature cards from his or her graveyard to the battlefield.
 timing=main
-oracle=You may cast Twilight's Call any time you could cast an instant if you pay {2} more to cast it. Each player returns all creature cards from his or her graveyard to the battlefield.
+oracle=You may cast Twilight's Call as though it had flash if you pay {2} more to cast it.\nEach player returns all creature cards from his or her graveyard to the battlefield.

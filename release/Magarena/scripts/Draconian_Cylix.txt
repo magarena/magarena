@@ -1,5 +1,5 @@
 name=Draconian Cylix
-image=http://mtgimage.com/card/draconian%20cylix.jpg
+image=http://magiccards.info/scans/en/fe/171.jpg
 value=2.013
 rarity=R
 type=Artifact

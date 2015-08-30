@@ -1,5 +1,5 @@
 name=Sewerdreg
-image=http://mtgimage.com/card/sewerdreg.jpg
+image=http://magiccards.info/scans/en/rav/104.jpg
 value=1.117
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=swampwalk;\
         Sacrifice SN:Exile target card from a graveyard.
 timing=main
-oracle=Swampwalk. Sacrifice Sewerdreg: Exile target card from a graveyard.
+oracle=Swampwalk\nSacrifice Sewerdreg: Exile target card from a graveyard.

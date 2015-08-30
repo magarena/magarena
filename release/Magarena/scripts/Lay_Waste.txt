@@ -1,5 +1,5 @@
 name=Lay Waste
-image=http://mtgimage.com/card/lay%20waste.jpg
+image=http://magiccards.info/scans/en/on/216.jpg
 value=2.783
 removal=2
 rarity=C
@@ -8,4 +8,4 @@ cost={3}{R}
 timing=removal
 ability=cycling {2}
 effect=Destroy target land.
-oracle=Destroy target land. Cycling {2}
+oracle=Destroy target land.\nCycling {2}

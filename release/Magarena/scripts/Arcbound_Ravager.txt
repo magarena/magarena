@@ -1,11 +1,12 @@
 name=Arcbound Ravager
-image=http://mtgimage.com/card/arcbound%20ravager.jpg
+image=http://magiccards.info/scans/en/mma/198.jpg
 value=4.569
 rarity=R
 type=Artifact,Creature
 subtype=Beast
 cost={2}
 pt=0/0
-ability=modular 1;Sacrifice an artifact: Put a +1/+1 counter on SN.
+ability=Sacrifice an artifact: Put a +1/+1 counter on SN.;\
+        Modular 1
 timing=main
-oracle=Sacrifice an artifact: Put a +1/+1 counter on Arcbound Ravager. Modular 1
+oracle=Sacrifice an artifact: Put a +1/+1 counter on Arcbound Ravager.\nModular 1

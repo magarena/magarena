@@ -1,5 +1,5 @@
 name=Shatterskull Giant
-image=http://mtgimage.com/card/shatterskull%20giant.jpg
+image=http://magiccards.info/scans/en/zen/148.jpg
 value=2.811
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Giant,Warrior
 cost={2}{R}{R}
 pt=4/3
 timing=main
+oracle=NONE

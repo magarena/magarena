@@ -1,5 +1,5 @@
 name=Aysen Crusader
-image=http://mtgimage.com/set/me2/aysen%20crusader.jpg
+image=http://magiccards.info/scans/en/me2/7.jpg
 value=3.345
 rarity=R
 type=Creature

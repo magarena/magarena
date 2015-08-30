@@ -1,5 +1,5 @@
 name=War-Wing Siren
-image=http://mtgimage.com/card/war-wing%20siren.jpg
+image=http://magiccards.info/scans/en/jou/57.jpg
 value=3.648
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/3
 ability=Flying;\
         Whenever you cast a spell that targets SN, put a +1/+1 counter on SN.
 timing=main
-oracle=Flying. Heroic — Whenever you cast a spell that targets War-Wing Siren, put a +1/+1 counter on War-Wing Siren.
+oracle=Flying\nHeroic — Whenever you cast a spell that targets War-Wing Siren, put a +1/+1 counter on War-Wing Siren.

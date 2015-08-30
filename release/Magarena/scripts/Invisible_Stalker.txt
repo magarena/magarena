@@ -1,5 +1,5 @@
 name=Invisible Stalker
-image=http://mtgimage.com/card/invisible%20stalker.jpg
+image=http://magiccards.info/scans/en/isd/60.jpg
 value=3.960
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=hexproof;\
         SN can't be blocked.
 timing=main
-oracle=Hexproof. Invisible Stalker can't be blocked.
+oracle=Hexproof\nInvisible Stalker can't be blocked.

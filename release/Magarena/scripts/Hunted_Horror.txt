@@ -1,5 +1,5 @@
 name=Hunted Horror
-image=http://mtgimage.com/card/hunted%20horror.jpg
+image=http://magiccards.info/scans/en/rav/90.jpg
 value=4.070
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=7/7
 ability=trample
 timing=main
 requires_groovy_code
-oracle=Trample. When Hunted Horror enters the battlefield, target opponent puts two 3/3 green Centaur creature tokens with protection from black onto the battlefield.
+oracle=Trample\nWhen Hunted Horror enters the battlefield, target opponent puts two 3/3 green Centaur creature tokens with protection from black onto the battlefield.

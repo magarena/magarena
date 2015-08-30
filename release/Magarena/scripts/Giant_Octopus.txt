@@ -1,5 +1,6 @@
 name=Giant Octopus
-image=http://mtgimage.com/card/giant%20octopus.jpg
+image=http://magiccards.info/scans/en/9eb/4.jpg
+image_updated=2015-05-22
 value=2.192
 rarity=C
 type=Creature
@@ -7,3 +8,4 @@ subtype=Octopus
 cost={3}{U}
 pt=3/3
 timing=main
+oracle=NONE

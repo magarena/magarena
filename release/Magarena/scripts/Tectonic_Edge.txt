@@ -1,9 +1,9 @@
 name=Tectonic Edge
-image=http://mtgimage.com/card/tectonic%20edge.jpg
+image=http://magiccards.info/scans/en/c14/313.jpg
 value=3.608
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.
 timing=land
 requires_groovy_code
-oracle={T}: Add {1} to your mana pool. {1}, {T}, Sacrifice Tectonic Edge: Destroy target nonbasic land. Activate this ability only if an opponent controls four or more lands.
+oracle={T}: Add {1} to your mana pool.\n{1}, {T}, Sacrifice Tectonic Edge: Destroy target nonbasic land. Activate this ability only if an opponent controls four or more lands.

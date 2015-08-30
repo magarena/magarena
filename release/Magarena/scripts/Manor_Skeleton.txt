@@ -1,5 +1,5 @@
 name=Manor Skeleton
-image=http://mtgimage.com/card/manor%20skeleton.jpg
+image=http://magiccards.info/scans/en/isd/106.jpg
 value=3.008
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=haste;\
         {1}{B}: Regenerate SN.
 timing=fmain
-oracle=Haste. {1}{B}: Regenerate Manor Skeleton.
+oracle=Haste\n{1}{B}: Regenerate Manor Skeleton.

@@ -1,12 +1,12 @@
 name=Horobi, Death's Wail
-image=http://mtgimage.com/card/horobi%2C%20death%27s%20wail.jpg
+image=http://magiccards.info/scans/en/chk/117.jpg
 value=3.913
 rarity=R
 type=Legendary,Creature
 subtype=Spirit
 cost={2}{B}{B}
 pt=4/4
-ability=Flying
+ability=Flying;\
+        Whenever a creature becomes the target of a spell or ability, destroy that creature.
 timing=main
-requires_groovy_code
-oracle=Flying. Whenever a creature becomes the target of a spell or ability, destroy that creature.
+oracle=Flying\nWhenever a creature becomes the target of a spell or ability, destroy that creature.

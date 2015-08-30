@@ -1,7 +1,7 @@
 name=Greater Werewolf
-image=http://mtgimage.com/card/greater%20werewolf.jpg
-value=2.500
-rarity=C
+image=http://magiccards.info/scans/en/5e/28.jpg
+value=3.000
+rarity=U
 type=Creature
 subtype=Werewolf
 cost={4}{B}

@@ -1,6 +1,6 @@
 name=Thoughtbound Primoc
-image=http://mtgimage.com/card/thoughtbound%20primoc.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/240.jpg
+value=2.158
 rarity=U
 type=Creature
 subtype=Bird,Beast
@@ -9,4 +9,4 @@ pt=2/3
 ability=Flying;\
         At the beginning of your upkeep, if a player controls more Wizards than each other player, the player who controls the most Wizards gains control of SN.
 timing=main
-oracle=Flying. At the beginning of your upkeep, if a player controls more Wizards than each other player, the player who controls the most Wizards gains control of Thoughtbound Primoc.
+oracle=Flying\nAt the beginning of your upkeep, if a player controls more Wizards than each other player, the player who controls the most Wizards gains control of Thoughtbound Primoc.

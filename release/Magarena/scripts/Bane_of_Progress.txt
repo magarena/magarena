@@ -1,5 +1,5 @@
 name=Bane of Progress
-image=http://mtgimage.com/card/bane%20of%20progress.jpg
+image=http://magiccards.info/scans/en/c13/137.jpg
 value=3.776
 rarity=R
 type=Creature

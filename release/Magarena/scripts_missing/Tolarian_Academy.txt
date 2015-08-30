@@ -1,8 +1,8 @@
 name=Tolarian Academy
-image=http://mtgimage.com/card/tolarian%20academy.jpg
-value=2.500
-rarity=R
+image=http://magiccards.info/scans/en/vma/319.jpg
+value=5.000
+rarity=M
 type=Legendary,Land
 ability={T}: Add {U} to your mana pool for each artifact you control.
-timing=main
+timing=land
 oracle={T}: Add {U} to your mana pool for each artifact you control.

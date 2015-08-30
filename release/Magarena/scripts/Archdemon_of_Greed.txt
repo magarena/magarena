@@ -1,5 +1,5 @@
 name=Archdemon of Greed
-image=http://mtgimage.com/card/archdemon%20of%20greed.jpg
+image=http://magiccards.info/scans/en/dka/71b.jpg
 value=3.273
 rarity=R
 type=Creature
@@ -11,4 +11,4 @@ requires_groovy_code
 transform=Ravenous Demon
 timing=main
 hidden
-oracle=Flying, trample. At the beginning of your upkeep, sacrifice a Human. If you can't, tap Archdemon of Greed and it deals 9 damage to you.
+oracle=Flying, trample\nAt the beginning of your upkeep, sacrifice a Human. If you can't, tap Archdemon of Greed and it deals 9 damage to you.

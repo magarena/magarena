@@ -1,9 +1,9 @@
 name=Consign to Dust
-image=http://mtgimage.com/card/consign%20to%20dust.jpg
-value=2.500
+image=http://magiccards.info/scans/en/jou/119.jpg
+value=2.875
 rarity=U
 type=Instant
 cost={2}{G}
 effect=SN costs {2}{G} more to cast for each target beyond the first.~Destroy any number of target artifacts and/or enchantments.
 timing=removal
-oracle=Strive — Consign to Dust costs {2}{G} more to cast for each target beyond the first. Destroy any number of target artifacts and/or enchantments.
+oracle=Strive — Consign to Dust costs {2}{G} more to cast for each target beyond the first.\nDestroy any number of target artifacts and/or enchantments.

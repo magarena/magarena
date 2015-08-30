@@ -1,5 +1,5 @@
 name=Lu Meng, Wu General
-image=http://mtgimage.com/card/lu%20meng,%20wu%20general.jpg
+image=http://magiccards.info/scans/en/me3/41.jpg
 value=3.966
 rarity=U
 type=Legendary,Creature

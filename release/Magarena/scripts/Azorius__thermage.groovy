@@ -1,9 +1,9 @@
 [
     new MagicWhenLeavesPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction act) {
-            if (act.getPermanent().getOwner() == permanent.getController() &&
-                act.getToLocation() == MagicLocationType.OwnersHand) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final RemoveFromPlayAction act) {
+            if (act.getPermanent().isOwner(permanent.getController()) &&
+                act.to(MagicLocationType.OwnersHand)) {
                 return new MagicEvent(
                     permanent,
                     new MagicMayChoice(
@@ -18,7 +18,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicDrawAction(event.getPlayer()));
+                game.doAction(new DrawAction(event.getPlayer()));
             }
         }
     }

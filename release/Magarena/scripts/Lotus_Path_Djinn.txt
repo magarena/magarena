@@ -1,5 +1,5 @@
 name=Lotus Path Djinn
-image=http://mtgimage.com/card/lotus%20path%20djinn.jpg
+image=http://magiccards.info/scans/en/frf/39.jpg
 value=2.500
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/3
 ability=Flying;\
         Prowess
 timing=main
-oracle=Flying. Prowess
+oracle=Flying\nProwess

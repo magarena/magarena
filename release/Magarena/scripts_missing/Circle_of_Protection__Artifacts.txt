@@ -1,9 +1,9 @@
 name=Circle of Protection: Artifacts
-image=http://mtgimage.com/card/circle%20of%20protection%20artifacts.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5dn/8.jpg
+value=2.840
 rarity=U
 type=Enchantment
 cost={1}{W}
 ability={2}: The next time an artifact source of your choice would deal damage to you this turn, prevent that damage.
-timing=main
+timing=enchantment
 oracle={2}: The next time an artifact source of your choice would deal damage to you this turn, prevent that damage.

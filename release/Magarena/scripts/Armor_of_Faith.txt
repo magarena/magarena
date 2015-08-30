@@ -1,12 +1,12 @@
 name=Armor of Faith
-image=http://mtgimage.com/card/armor%20of%20faith.jpg
+image=http://magiccards.info/scans/en/me2/4.jpg
 value=2.786
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={W}
-ability=Enchanted creature gets +1/+1.
+ability=Enchanted creature gets +1/+1.;\
+        {W}: Enchanted creature gets +0/+1 until end of turn.
 timing=aura
 enchant=pump,pos creature
-requires_groovy_code
-oracle=Enchant creature. Enchanted creature gets +1/+1. {W}: Enchanted creature gets +0/+1 until end of turn.
+oracle=Enchant creature\nEnchanted creature gets +1/+1.\n{W}: Enchanted creature gets +0/+1 until end of turn.

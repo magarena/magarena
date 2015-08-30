@@ -1,5 +1,5 @@
 def UNTAPPED_ISLAND_YOU_CONTROL = new MagicPermanentFilterImpl() {
-    public boolean accept(final MagicGame game,final MagicPlayer player,final MagicPermanent target) {
+    public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
         return target.isUntapped() && target.hasSubType(MagicSubType.Island) && target.isController(player);
     } 
 };
@@ -27,7 +27,7 @@ def AN_UNTAPPED_ISLAND_YOU_CONTROL = new MagicTargetChoice(
             if (event.isYes() && cost.isSatisfied()) {
                 game.addEvent(cost);
             } else {
-                game.doAction(new MagicSacrificeAction(event.getPermanent()));
+                game.doAction(new SacrificeAction(event.getPermanent()));
             }
         }
     }

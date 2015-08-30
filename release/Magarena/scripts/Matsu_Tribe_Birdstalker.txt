@@ -1,12 +1,12 @@
 name=Matsu-Tribe Birdstalker
-image=http://mtgimage.com/card/matsu-tribe%20birdstalker.jpg
+image=http://magiccards.info/scans/en/sok/137.jpg
 value=1.865
 rarity=C
 type=Creature
 subtype=Snake,Warrior,Archer
 cost={2}{G}{G}
 pt=2/2
-ability={G}: SN gains reach until end of turn.
+ability=Whenever SN deals combat damage to a creature, tap that creature and it doesn't untap during its controller's next untap step.;\
+        {G}: SN gains reach until end of turn.
 timing=main
-requires_groovy_code=Orochi Ranger
-oracle=Whenever Matsu-Tribe Birdstalker deals combat damage to a creature, tap that creature and it doesn't untap during its controller's next untap step. {G}: Matsu-Tribe Birdstalker gains reach until end of turn.
+oracle=Whenever Matsu-Tribe Birdstalker deals combat damage to a creature, tap that creature and it doesn't untap during its controller's next untap step.\n{G}: Matsu-Tribe Birdstalker gains reach until end of turn.

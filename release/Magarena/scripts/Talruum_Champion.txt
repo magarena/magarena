@@ -1,5 +1,5 @@
 name=Talruum Champion
-image=http://mtgimage.com/card/talruum%20champion.jpg
+image=http://magiccards.info/scans/en/vi/97.jpg
 value=3.367
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=first strike
 timing=main
 requires_groovy_code
-oracle=First strike. Whenever Talruum Champion blocks or becomes blocked by a creature, that creature loses first strike until end of turn.
+oracle=First strike\nWhenever Talruum Champion blocks or becomes blocked by a creature, that creature loses first strike until end of turn.

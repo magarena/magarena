@@ -1,5 +1,5 @@
 name=Unholy Strength
-image=http://mtgimage.com/card/unholy%20strength.jpg
+image=http://magiccards.info/scans/en/m11/119.jpg
 value=3.385
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={B}
 ability=Enchanted creature gets +2/+1.
 timing=aura
 enchant=pump,pos creature
-oracle=Enchant creature. Enchanted creature gets +2/+1.
+oracle=Enchant creature\nEnchanted creature gets +2/+1.

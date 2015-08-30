@@ -1,5 +1,5 @@
 name=Prowling Nightstalker
-image=http://mtgimage.com/card/prowling%20nightstalker.jpg
+image=http://magiccards.info/scans/en/me4/93.jpg
 value=3.087
 rarity=C
 type=Creature

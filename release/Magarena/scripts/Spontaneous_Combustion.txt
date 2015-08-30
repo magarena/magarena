@@ -1,5 +1,5 @@
 name=Spontaneous Combustion
-image=http://mtgimage.com/card/spontaneous%20combustion.jpg
+image=http://magiccards.info/scans/en/cns/194.jpg
 value=3.857
 rarity=U
 type=Instant
@@ -7,4 +7,4 @@ cost={1}{B}{R}
 ability=As an additional cost to cast SN, sacrifice a creature.
 effect=SN deals 3 damage to each creature.
 timing=removal
-oracle=As an additional cost to cast Spontaneous Combustion, sacrifice a creature. Spontaneous Combustion deals 3 damage to each creature.
+oracle=As an additional cost to cast Spontaneous Combustion, sacrifice a creature.\nSpontaneous Combustion deals 3 damage to each creature.

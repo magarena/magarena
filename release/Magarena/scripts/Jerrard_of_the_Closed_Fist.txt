@@ -1,5 +1,5 @@
 name=Jerrard of the Closed Fist
-image=http://mtgimage.com/card/jerrard%20of%20the%20closed%20fist.jpg
+image=http://magiccards.info/scans/en/me3/154.jpg
 value=2.500
 rarity=U
 type=Legendary,Creature
@@ -7,3 +7,4 @@ subtype=Human,Knight
 cost={3}{R}{G}{G}
 pt=6/5
 timing=main
+oracle=NONE

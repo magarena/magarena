@@ -1,0 +1,9 @@
+name=Brawl
+image=http://magiccards.info/scans/en/mm/178.jpg
+value=3.650
+rarity=R
+type=Instant
+cost={3}{R}{R}
+effect=Until end of turn, all creatures gain "{T}: This creature deals damage equal to its power to target creature."
+timing=removal
+oracle=Until end of turn, all creatures gain "{T}: This creature deals damage equal to its power to target creature."

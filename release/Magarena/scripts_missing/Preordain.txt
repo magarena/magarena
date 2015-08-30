@@ -1,6 +1,6 @@
 name=Preordain
-image=http://mtgimage.com/card/preordain.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddi/24.jpg
+value=4.322
 rarity=C
 type=Sorcery
 cost={U}

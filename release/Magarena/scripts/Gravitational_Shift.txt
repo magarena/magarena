@@ -1,5 +1,5 @@
 name=Gravitational Shift
-image=http://mtgimage.com/card/gravitational%20shift.jpg
+image=http://magiccards.info/scans/en/roe/69.jpg
 value=3.885
 rarity=R
 type=Enchantment
@@ -7,4 +7,4 @@ cost={3}{U}{U}
 ability=Creatures with flying get +2/+0.;\
         Creatures without flying get -2/-0.
 timing=main
-oracle=Creatures with flying get +2/+0. Creatures without flying get -2/-0.
+oracle=Creatures with flying get +2/+0.\nCreatures without flying get -2/-0.

@@ -1,9 +1,0 @@
-name=Forbidden Alchemy
-image=http://mtgimage.com/card/forbidden%20alchemy.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={2}{U}
-effect=Look at the top four cards of your library. Put one of them into your hand and the rest into your graveyard.~Flashback {6}{B}
-timing=removal
-oracle=Look at the top four cards of your library. Put one of them into your hand and the rest into your graveyard. Flashback {6}{B}

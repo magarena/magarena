@@ -5,7 +5,7 @@
             final int amount = payedCost.isKicked() ? 10 : 3;
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_CREATURE_OR_PLAYER,
+                NEG_TARGET_CREATURE_OR_PLAYER,
                 new MagicDamageTargetPicker(amount),
                 this,
                 "SN deals 3 damage to target creature or player\$. "+
@@ -20,7 +20,7 @@
                 if (event.isKicked()) {
                     damage.setUnpreventable();
                 }
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new DealDamageAction(damage));
             });
         }
     }

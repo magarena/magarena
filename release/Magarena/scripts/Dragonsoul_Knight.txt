@@ -1,12 +1,12 @@
 name=Dragonsoul Knight
-image=http://mtgimage.com/card/dragonsoul%20knight.jpg
+image=http://magiccards.info/scans/en/cfx/62.jpg
 value=3.014
 rarity=U
 type=Creature
 subtype=Human,Knight
 cost={2}{R}
 pt=2/2
-ability=First strike
+ability=First strike;\
+        {W}{U}{B}{R}{G}: Until end of turn, SN becomes a Dragon.~SN gets +5/+3 and gains flying and trample until end of turn.
 timing=main
-requires_groovy_code
-oracle=First strike. {W}{U}{B}{R}{G}: Until end of turn, Dragonsoul Knight becomes a Dragon, gets +5/+3, and gains flying and trample.
+oracle=First strike\n{W}{U}{B}{R}{G}: Until end of turn, Dragonsoul Knight becomes a Dragon, gets +5/+3, and gains flying and trample.

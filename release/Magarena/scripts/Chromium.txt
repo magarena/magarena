@@ -1,5 +1,5 @@
 name=Chromium
-image=http://mtgimage.com/card/chromium.jpg
+image=http://magiccards.info/scans/en/me3/147.jpg
 value=3.188
 rarity=R
 type=Legendary,Creature
@@ -10,4 +10,4 @@ ability=flying;\
         rampage 2;\
         At the beginning of your upkeep, you may pay {W}{U}{B}. If you don't, sacrifice SN.
 timing=main
-oracle=Flying. Rampage 2. At the beginning of your upkeep, sacrifice Chromium unless you pay {W}{U}{B}.
+oracle=Flying\nRampage 2\nAt the beginning of your upkeep, sacrifice Chromium unless you pay {W}{U}{B}.

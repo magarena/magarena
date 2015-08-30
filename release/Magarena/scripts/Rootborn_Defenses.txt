@@ -1,9 +1,10 @@
 name=Rootborn Defenses
-image=http://mtgimage.com/card/rootborn%20defenses.jpg
+image=http://magiccards.info/scans/en/rtr/19.jpg
 value=3.822
 rarity=C
 type=Instant
 cost={2}{W}
+ability=Cast SN with AI only if you control a creature.
 effect=Populate.~Creatures you control gain indestructible until end of turn.
 timing=pump
 oracle=Populate. Creatures you control gain indestructible until end of turn.

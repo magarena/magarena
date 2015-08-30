@@ -1,11 +1,11 @@
 name=Seeker
-image=http://mtgimage.com/card/seeker.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/4e/299.jpg
+value=1.649
+rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{W}{W}
 ability=Enchant creature;\
         Enchanted creature can't be blocked except by artifact creatures and/or white creatures.
-timing=main
-oracle=Enchant creature. Enchanted creature can't be blocked except by artifact creatures and/or white creatures.
+timing=aura
+oracle=Enchant creature\nEnchanted creature can't be blocked except by artifact creatures and/or white creatures.

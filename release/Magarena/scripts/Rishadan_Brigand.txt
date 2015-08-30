@@ -1,5 +1,5 @@
 name=Rishadan Brigand
-image=http://mtgimage.com/card/rishadan%20brigand.jpg
+image=http://magiccards.info/scans/en/mm/92.jpg
 value=3.750
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=Flying;\
         SN can block only creatures with flying.
 timing=main
 requires_groovy_code
-oracle=Flying. When Rishadan Brigand enters the battlefield, each opponent sacrifices a permanent unless he or she pays {3}. Rishadan Brigand can block only creatures with flying.
+oracle=Flying\nWhen Rishadan Brigand enters the battlefield, each opponent sacrifices a permanent unless he or she pays {3}.\nRishadan Brigand can block only creatures with flying.

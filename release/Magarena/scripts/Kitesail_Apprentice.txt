@@ -1,5 +1,5 @@
 name=Kitesail Apprentice
-image=http://mtgimage.com/card/kitesail%20apprentice.jpg
+image=http://magiccards.info/scans/en/wwk/10.jpg
 value=3.230
 rarity=C
 type=Creature

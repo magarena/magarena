@@ -1,5 +1,5 @@
 name=Nighthowler
-image=http://mtgimage.com/card/nighthowler.jpg
+image=http://magiccards.info/scans/en/ths/98.jpg
 value=3.627
 rarity=R
 type=Enchantment,Creature
@@ -9,4 +9,4 @@ pt=0/0
 ability=Bestow {2}{B}{B}
 timing=main
 requires_groovy_code
-oracle=Bestow {2}{B}{B}. Nighthowler and enchanted creature each get +X/+X, where X is the number of creature cards in all graveyards.
+oracle=Bestow {2}{B}{B}\nNighthowler and enchanted creature each get +X/+X, where X is the number of creature cards in all graveyards.

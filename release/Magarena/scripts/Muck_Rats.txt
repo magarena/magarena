@@ -1,5 +1,5 @@
 name=Muck Rats
-image=http://mtgimage.com/card/muck%20rats.jpg
+image=http://magiccards.info/scans/en/st/84.jpg
 value=1.756
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Rat
 cost={B}
 pt=1/1
 timing=main
+oracle=NONE

@@ -1,5 +1,5 @@
 name=Wei Infantry
-image=http://mtgimage.com/card/wei%20infantry.jpg
+image=http://magiccards.info/scans/en/me3/80.jpg
 value=2.368
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Human,Soldier
 cost={1}{B}
 pt=2/1
 timing=main
+oracle=NONE

@@ -26,7 +26,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isNo()) {
-                game.doAction(new MagicChangeTurnPTAction(event.getPermanent(), 1, 1));
+                game.doAction(new ChangeTurnPTAction(event.getPermanent(), 1, 1));
             }
         }
     }

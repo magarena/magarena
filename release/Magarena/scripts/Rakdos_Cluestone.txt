@@ -1,5 +1,5 @@
 name=Rakdos Cluestone
-image=http://mtgimage.com/card/rakdos%20cluestone.jpg
+image=http://magiccards.info/scans/en/dgm/143.jpg
 value=2.646
 rarity=C
 type=Artifact
@@ -7,4 +7,4 @@ cost={3}
 ability={T}: Add {B} or {R} to your mana pool.;\
         {B}{R},{T},Sacrifice SN: Draw a card.
 timing=artifact
-oracle={T}: Add {B} or {R} to your mana pool. {B}{R}, {T}, Sacrifice Rakdos Cluestone: Draw a card.
+oracle={T}: Add {B} or {R} to your mana pool.\n{B}{R}, {T}, Sacrifice Rakdos Cluestone: Draw a card.

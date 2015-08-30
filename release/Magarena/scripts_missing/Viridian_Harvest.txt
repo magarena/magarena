@@ -1,11 +1,11 @@
 name=Viridian Harvest
-image=http://mtgimage.com/card/viridian%20harvest.jpg
-value=2.500
+image=http://magiccards.info/scans/en/nph/125.jpg
+value=1.777
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={G}
 ability=Enchant artifact;\
         When enchanted artifact is put into a graveyard, you gain 6 life.
-timing=main
-oracle=Enchant artifact. When enchanted artifact is put into a graveyard, you gain 6 life.
+timing=aura
+oracle=Enchant artifact\nWhen enchanted artifact is put into a graveyard, you gain 6 life.

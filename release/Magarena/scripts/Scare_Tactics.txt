@@ -1,9 +1,10 @@
 name=Scare Tactics
-image=http://mtgimage.com/card/scare%20tactics.jpg
+image=http://magiccards.info/scans/en/ex/73.jpg
 value=3.118
 rarity=C
 type=Instant
 cost={B}
+ability=Cast SN with AI only if you control a creature.
 effect=Creatures you control get +1/+0 until end of turn.
-timing=removal
+timing=pump
 oracle=Creatures you control get +1/+0 until end of turn.

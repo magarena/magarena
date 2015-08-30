@@ -1,5 +1,5 @@
 name=Felidar Sovereign
-image=http://mtgimage.com/card/felidar%20sovereign.jpg
+image=http://magiccards.info/scans/en/zen/12.jpg
 value=4.118
 rarity=M
 type=Creature
@@ -9,4 +9,4 @@ pt=4/6
 ability=Vigilance;lifelink
 timing=main
 requires_groovy_code
-oracle=Vigilance, lifelink. At the beginning of your upkeep, if you have 40 or more life, you win the game.
+oracle=Vigilance, lifelink\nAt the beginning of your upkeep, if you have 40 or more life, you win the game.

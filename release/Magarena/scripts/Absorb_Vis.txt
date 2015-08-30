@@ -1,5 +1,5 @@
 name=Absorb Vis
-image=http://mtgimage.com/card/absorb%20vis.jpg
+image=http://magiccards.info/scans/en/mma/71.jpg
 value=2.635
 rarity=C
 type=Sorcery
@@ -7,4 +7,4 @@ cost={6}{B}
 ability=Basic landcycling {1}{B}
 effect=Target player loses 4 life and you gain 4 life.
 timing=main
-oracle=Target player loses 4 life and you gain 4 life. Basic landcycling {1}{B}
+oracle=Target player loses 4 life and you gain 4 life.\nBasic landcycling {1}{B}

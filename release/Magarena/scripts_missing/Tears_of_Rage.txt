@@ -1,9 +1,9 @@
 name=Tears of Rage
-image=http://mtgimage.com/card/tears%20of%20rage.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ds/70.jpg
+value=2.625
 rarity=U
 type=Instant
 cost={2}{R}{R}
 effect=Cast SN only during the declare attackers step.~Attacking creatures you control get +X/+0 until end of turn, where X is the number of attacking creatures. Sacrifice those creatures at the beginning of the next end step.
 timing=removal
-oracle=Cast Tears of Rage only during the declare attackers step. Attacking creatures you control get +X/+0 until end of turn, where X is the number of attacking creatures. Sacrifice those creatures at the beginning of the next end step.
+oracle=Cast Tears of Rage only during the declare attackers step.\nAttacking creatures you control get +X/+0 until end of turn, where X is the number of attacking creatures. Sacrifice those creatures at the beginning of the next end step.

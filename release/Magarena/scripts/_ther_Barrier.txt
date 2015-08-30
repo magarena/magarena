@@ -1,5 +1,5 @@
 name=Æther Barrier
-image=http://mtgimage.com/card/aether%20barrier.jpg
+image=http://magiccards.info/scans/en/ne/27.jpg
 value=3.833
 rarity=R
 type=Enchantment

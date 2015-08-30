@@ -1,6 +1,6 @@
 name=Distant Memories
-image=http://mtgimage.com/card/distant%20memories.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mbs/24.jpg
+value=2.448
 rarity=R
 type=Sorcery
 cost={2}{U}{U}

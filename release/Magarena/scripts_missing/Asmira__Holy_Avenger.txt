@@ -1,6 +1,6 @@
 name=Asmira, Holy Avenger
-image=http://mtgimage.com/card/asmira%2C%20holy%20avenger.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/316.jpg
+value=3.933
 rarity=R
 type=Legendary,Creature
 subtype=Human,Cleric
@@ -9,4 +9,4 @@ pt=2/3
 ability=Flying;\
         At the beginning of each end step, put a +1/+1 counter on SN for each creature put into your graveyard from the battlefield this turn.
 timing=main
-oracle=Flying. At the beginning of each end step, put a +1/+1 counter on Asmira, Holy Avenger for each creature put into your graveyard from the battlefield this turn.
+oracle=Flying\nAt the beginning of each end step, put a +1/+1 counter on Asmira, Holy Avenger for each creature put into your graveyard from the battlefield this turn.

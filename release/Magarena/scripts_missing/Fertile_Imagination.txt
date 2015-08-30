@@ -1,6 +1,6 @@
 name=Fertile Imagination
-image=http://mtgimage.com/card/fertile%20imagination.jpg
-value=2.500
+image=http://magiccards.info/scans/en/di/84.jpg
+value=2.097
 rarity=U
 type=Sorcery
 cost={2}{G}{G}

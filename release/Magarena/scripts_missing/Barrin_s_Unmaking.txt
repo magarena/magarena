@@ -1,6 +1,6 @@
 name=Barrin's Unmaking
-image=http://mtgimage.com/card/barrin%27s%20unmaking.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/46.jpg
+value=2.130
 rarity=C
 type=Instant
 cost={1}{U}

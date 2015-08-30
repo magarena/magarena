@@ -3,7 +3,7 @@
         [
             MagicCondition.METALCRAFT_CONDITION
         ],
-        new MagicActivationHints(MagicTiming.Removal,1),
+        new MagicActivationHints(MagicTiming.Removal),
         "Exile"
     ) {
         @Override
@@ -24,7 +24,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicExileUntilEndOfTurnAction(event.getPermanent()));
+            game.doAction(new ExileUntilEndOfTurnAction(event.getPermanent()));
         }
     }
 ]

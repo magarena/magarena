@@ -1,0 +1,9 @@
+name=Rending Volley
+image=http://magiccards.info/scans/en/dtk/150.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={R}
+effect=SN can't be countered by spells or abilities.~SN deals 4 damage to target white or blue creature.
+timing=removal
+oracle=Rending Volley can't be countered by spells or abilities.\nRending Volley deals 4 damage to target white or blue creature.

@@ -12,11 +12,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int lands = event.getPlayer().getNrOfPermanents(MagicType.Land);
-            game.logAppendMessage(event.getPlayer()," (X="+lands+")");
+            game.logAppendX(event.getPlayer(),lands);
             game.addEvent(new MagicSearchOntoBattlefieldEvent(
                 event,
                 new MagicFromCardFilterChoice(
-                    MagicTargetFilterFactory.BASIC_LAND_CARD_FROM_LIBRARY,
+                    BASIC_LAND_CARD_FROM_LIBRARY,
                     lands, 
                     true, 
                     "to put onto the battlefield tapped"

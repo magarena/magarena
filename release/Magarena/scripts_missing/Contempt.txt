@@ -1,11 +1,11 @@
 name=Contempt
-image=http://mtgimage.com/card/contempt.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sh/27.jpg
+value=3.370
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
 ability=Enchant creature;\
         When enchanted creature attacks, return it and SN to their owners' hands at end of combat.
-timing=main
-oracle=Enchant creature. When enchanted creature attacks, return it and Contempt to their owners' hands at end of combat.
+timing=aura
+oracle=Enchant creature\nWhen enchanted creature attacks, return it and Contempt to their owners' hands at end of combat.

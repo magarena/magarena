@@ -1,7 +1,7 @@
 [
     new MagicWhenBecomesMonstrousTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicChangeStateAction action) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final ChangeStateAction action) {
             return action.permanent == permanent ?
                 new MagicEvent(
                     permanent,
@@ -18,7 +18,7 @@
                     game.addEvent(new MagicSacrificePermanentEvent(
                         event.getSource(),
                         player,
-                        MagicTargetChoice.SACRIFICE_LAND
+                        SACRIFICE_LAND
                     ));
                 }
             }

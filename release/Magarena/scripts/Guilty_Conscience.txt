@@ -1,5 +1,5 @@
 name=Guilty Conscience
-image=http://mtgimage.com/card/guilty%20conscience.jpg
+image=http://magiccards.info/scans/en/sc/17.jpg
 value=4.053
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={W}
 timing=aura
 enchant=can't attack,neg creature
 requires_groovy_code
-oracle=Enchant creature. Whenever enchanted creature deals damage, Guilty Conscience deals that much damage to that creature.
+oracle=Enchant creature\nWhenever enchanted creature deals damage, Guilty Conscience deals that much damage to that creature.

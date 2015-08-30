@@ -17,6 +17,7 @@ import magic.ui.CardImagesProvider;
 import magic.data.GeneralConfig;
 import magic.ui.IconImages;
 import magic.model.MagicCardDefinition;
+import magic.ui.utility.GraphicsUtils;
 import magic.ui.cardtable.ICardSelectionListener;
 import magic.ui.widget.TransparentImagePanel;
 
@@ -91,7 +92,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
             }
             @Override
             public void mouseEntered(MouseEvent e) {
-                if (!isGameScreenPopup && currentCardDefinition.hasMultipleAspects() && !currentCardDefinition.isMissing()) {
+                if (!isGameScreenPopup && currentCardDefinition.hasMultipleAspects() && currentCardDefinition.isValid()) {
                     setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
                 } else {
                     setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
@@ -107,7 +108,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
     }
 
     private void switchCardAspect() {
-        if (currentCardDefinition.hasMultipleAspects()) {
+        if (currentCardDefinition.hasMultipleAspects() && currentCardDefinition.isValid()) {
             setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
             if (currentCardDefinition.isDoubleFaced()) {
                 setCard(currentCardDefinition.getTransformedDefinition());
@@ -139,12 +140,12 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
             } else {
                 cardImage = IMAGE_HELPER.getImage(cardDefinition,index,false);
                 if (isGameScreenPopup) {
-                    setSize(CONFIG.getMaxCardImageSize());
+                    setSize(GraphicsUtils.getMaxCardImageSize());
                     revalidate();
                 }
             }
 
-            if (cardDefinition.isMissing() && cardImage != IconImages.MISSING_CARD) {
+            if (cardDefinition.isInvalid() && cardImage != IconImages.MISSING_CARD) {
                 setCardImage(getGreyScaleImage(cardImage));
             } else {
                 setCardImage(cardImage);

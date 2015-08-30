@@ -1,12 +1,12 @@
 name=Sea Serpent
-image=http://mtgimage.com/card/sea%20serpent.jpg
+image=http://magiccards.info/scans/en/me4/60.jpg
 value=1.485
 rarity=C
 type=Creature
 subtype=Serpent
 cost={5}{U}
 pt=5/5
-ability=SN can't attack unless defending player controls an Island.
+ability=SN can't attack unless defending player controls an Island.;\
+        When you control no Islands, sacrifice SN.
 timing=main
-requires_groovy_code
-oracle=Sea Serpent can't attack unless defending player controls an Island. When you control no Islands, sacrifice Sea Serpent.
+oracle=Sea Serpent can't attack unless defending player controls an Island.\nWhen you control no Islands, sacrifice Sea Serpent.

@@ -1,10 +1,10 @@
 name=Magistrate's Scepter
-image=http://mtgimage.com/card/magistrate%27s%20scepter.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/304.jpg
+value=4.202
 rarity=R
 type=Artifact
 cost={3}
 ability={4}, {T}: Put a charge counter on SN.;\
         {T}, Remove three charge counters from SN: Take an extra turn after this one.
-timing=main
-oracle={4}, {T}: Put a charge counter on Magistrate's Scepter. {T}, Remove three charge counters from Magistrate's Scepter: Take an extra turn after this one.
+timing=artifact
+oracle={4}, {T}: Put a charge counter on Magistrate's Scepter.\n{T}, Remove three charge counters from Magistrate's Scepter: Take an extra turn after this one.

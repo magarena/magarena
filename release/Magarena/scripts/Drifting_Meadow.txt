@@ -1,5 +1,5 @@
 name=Drifting Meadow
-image=http://mtgimage.com/card/drifting%20meadow.jpg
+image=http://magiccards.info/scans/en/c14/292.jpg
 value=3.438
 rarity=C
 type=Land
@@ -8,4 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {W} to your mana pool.;\
         cycling {2}
 timing=tapland
-oracle=Drifting Meadow enters the battlefield tapped. {T}: Add {W} to your mana pool. Cycling {2}
+oracle=Drifting Meadow enters the battlefield tapped.\n{T}: Add {W} to your mana pool.\nCycling {2}

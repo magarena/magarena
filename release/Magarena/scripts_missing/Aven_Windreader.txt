@@ -1,6 +1,6 @@
 name=Aven Windreader
-image=http://mtgimage.com/card/aven%20windreader.jpg
-value=2.500
+image=http://magiccards.info/scans/en/10e/69.jpg
+value=2.221
 rarity=C
 type=Creature
 subtype=Bird,Soldier,Wizard
@@ -9,4 +9,4 @@ pt=3/3
 ability=Flying;\
         {1}{U}: Target player reveals the top card of his or her library.
 timing=main
-oracle=Flying. {1}{U}: Target player reveals the top card of his or her library.
+oracle=Flying\n{1}{U}: Target player reveals the top card of his or her library.

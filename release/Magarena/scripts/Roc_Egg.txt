@@ -1,5 +1,5 @@
 name=Roc Egg
-image=http://mtgimage.com/card/roc%20egg.jpg
+image=http://magiccards.info/scans/en/m12/32.jpg
 value=3.163
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=0/3
 ability=defender;\
         When SN dies, put a 3/3 white Bird creature token with flying onto the battlefield.
 timing=main
-oracle=Defender. When Roc Egg dies, put a 3/3 white Bird creature token with flying onto the battlefield.
+oracle=Defender\nWhen Roc Egg dies, put a 3/3 white Bird creature token with flying onto the battlefield.

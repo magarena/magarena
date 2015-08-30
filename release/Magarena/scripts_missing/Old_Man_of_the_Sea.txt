@@ -1,6 +1,6 @@
 name=Old Man of the Sea
-image=http://mtgimage.com/card/old%20man%20of%20the%20sea.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me3/45.jpg
+value=4.430
 rarity=R
 type=Creature
 subtype=Djinn
@@ -9,4 +9,4 @@ pt=2/3
 ability=You may choose not to untap SN during your untap step.;\
         {T}: Gain control of target creature with power less than or equal to SN's power for as long as SN remains tapped and that creature's power remains less than or equal to SN's power.
 timing=main
-oracle=You may choose not to untap Old Man of the Sea during your untap step. {T}: Gain control of target creature with power less than or equal to Old Man of the Sea's power for as long as Old Man of the Sea remains tapped and that creature's power remains less than or equal to Old Man of the Sea's power.
+oracle=You may choose not to untap Old Man of the Sea during your untap step.\n{T}: Gain control of target creature with power less than or equal to Old Man of the Sea's power for as long as Old Man of the Sea remains tapped and that creature's power remains less than or equal to Old Man of the Sea's power.

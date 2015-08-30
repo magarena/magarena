@@ -1,12 +1,12 @@
 name=Overbeing of Myth
-image=http://mtgimage.com/card/overbeing%20of%20myth.jpg
+image=http://magiccards.info/scans/en/eve/157.jpg
 value=4.043
 rarity=R
 type=Creature
 subtype=Spirit,Avatar
 cost={G/U}{G/U}{G/U}{G/U}{G/U}
 pt=*/*
-ability=SN's power and toughness are each equal to the number of cards in your hand.
+ability=SN's power and toughness are each equal to the number of cards in your hand.;\
+        At the beginning of your draw step, draw an additional card.
 timing=main
-requires_groovy_code
-oracle=Overbeing of Myth's power and toughness are each equal to the number of cards in your hand. At the beginning of your draw step, draw an additional card.
+oracle=Overbeing of Myth's power and toughness are each equal to the number of cards in your hand.\nAt the beginning of your draw step, draw an additional card.

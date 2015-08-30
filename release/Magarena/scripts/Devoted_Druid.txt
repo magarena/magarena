@@ -1,5 +1,5 @@
 name=Devoted Druid
-image=http://mtgimage.com/card/devoted%20druid.jpg
+image=http://magiccards.info/scans/en/shm/110.jpg
 value=4.183
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=0/2
 ability={T}: Add {G} to your mana pool.;\
         Put a -1/-1 counter on SN: Untap SN.
 timing=main
-oracle={T}: Add {G} to your mana pool. Put a -1/-1 counter on Devoted Druid: Untap Devoted Druid.
+oracle={T}: Add {G} to your mana pool.\nPut a -1/-1 counter on Devoted Druid: Untap Devoted Druid.

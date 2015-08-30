@@ -1,12 +1,12 @@
 name=Arctic Wolves
-image=http://mtgimage.com/card/arctic%20wolves.jpg
+image=http://magiccards.info/scans/en/wl/60.jpg
 value=2.088
 rarity=U
 type=Creature
 subtype=Wolf
 cost={3}{G}{G}
 pt=4/5
-ability=cumulative upkeep {2};\
+ability=Cumulative upkeep {2};\
         When SN enters the battlefield, draw a card.
 timing=main
-oracle=Cumulative upkeep {2}. When Arctic Wolves enters the battlefield, draw a card.
+oracle=Cumulative upkeep {2}\nWhen Arctic Wolves enters the battlefield, draw a card.

@@ -1,5 +1,5 @@
 name=Skull Collector
-image=http://mtgimage.com/card/skull%20collector.jpg
+image=http://magiccards.info/scans/en/sok/90.jpg
 value=3.234
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=At the beginning of your upkeep, return a black creature you control to its owner's hand.;\
         {1}{B}: Regenerate SN.
 timing=main
-oracle=At the beginning of your upkeep, return a black creature you control to its owner's hand. {1}{B}: Regenerate Skull Collector.
+oracle=At the beginning of your upkeep, return a black creature you control to its owner's hand.\n{1}{B}: Regenerate Skull Collector.

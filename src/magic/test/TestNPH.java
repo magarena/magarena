@@ -1,23 +1,13 @@
 package magic.test;
 
-import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.model.MagicPlayerDefinition;
 import magic.model.phase.MagicMainPhase;
 
 class TestNPH extends TestGameBuilder {
     public MagicGame getGame() {
-        final MagicDuel duel=new MagicDuel();
-        duel.setDifficulty(6);
-
-        final MagicDeckProfile profile=new MagicDeckProfile("bgruw");
-        final MagicPlayerDefinition player1=new MagicPlayerDefinition("Player",false,profile);
-        final MagicPlayerDefinition player2=new MagicPlayerDefinition("Computer",true,profile);
-        duel.setPlayers(new MagicPlayerDefinition[]{player1,player2});
-        duel.setStartPlayer(0);
-
+        final MagicDuel duel=createDuel();
         final MagicGame game=duel.nextGame();
         game.setPhase(MagicMainPhase.getFirstInstance());
         final MagicPlayer player=game.getPlayer(0);
@@ -43,11 +33,11 @@ class TestNPH extends TestGameBuilder {
         addToHand(player,"Urabrask the Hidden",1);
         addToHand(player,"Sickleslicer",1);
 
-        createPermanent(game,player,"Raging Goblin",false,1);
-        createPermanent(game,player,"Bonesplitter",false,1);
-        createPermanent(game,player,"Rupture Spire",false,7);
-        createPermanent(game,opponent,"Bloodrock Cyclops",false,1);
-        createPermanent(game,opponent,"Silver Knight",false,1);
+        createPermanent(player,"Raging Goblin",false,1);
+        createPermanent(player,"Bonesplitter",false,1);
+        createPermanent(player,"Rupture Spire",false,7);
+        createPermanent(opponent,"Bloodrock Cyclops",false,1);
+        createPermanent(opponent,"Silver Knight",false,1);
 
         return game;
     }

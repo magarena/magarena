@@ -1,11 +1,11 @@
 name=Sentinel
-image=http://mtgimage.com/card/sentinel.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ch/87.jpg
+value=4.206
 rarity=R
 type=Artifact,Creature
 subtype=Shapeshifter
 cost={4}
 pt=1/1
 ability={0}: Change SN's base toughness to 1 plus the power of target creature blocking or blocked by SN.
-timing=main
+timing=artifact
 oracle={0}: Change Sentinel's base toughness to 1 plus the power of target creature blocking or blocked by Sentinel.

@@ -1,5 +1,5 @@
 name=Mayor of Avabruck
-image=http://mtgimage.com/card/mayor%20of%20avabruck.jpg
+image=http://magiccards.info/scans/en/isd/193a.jpg
 value=4.209
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=Other Human creatures you control get +1/+1.;\
         At the beginning of each upkeep, if no spells were cast last turn, transform SN.
 transform=Howlpack Alpha
 timing=main
-oracle=Other Human creatures you control get +1/+1. At the beginning of each upkeep, if no spells were cast last turn, transform Mayor of Avabruck.
+oracle=Other Human creatures you control get +1/+1.\nAt the beginning of each upkeep, if no spells were cast last turn, transform Mayor of Avabruck.

@@ -1,0 +1,13 @@
+name=Deathmist Raptor
+image=http://magiccards.info/scans/en/dtk/180.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Lizard,Beast
+cost={1}{G}{G}
+pt=3/3
+ability=Deathtouch;\
+        Whenever a permanent you control is turned face up, you may return SN from your graveyard to the battlefield face up or face down.;\
+        Megamorph {4}{G}
+timing=main
+oracle=Deathtouch\nWhenever a permanent you control is turned face up, you may return Deathmist Raptor from your graveyard to the battlefield face up or face down.\nMegamorph {4}{G}

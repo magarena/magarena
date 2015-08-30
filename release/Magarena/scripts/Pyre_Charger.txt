@@ -1,5 +1,5 @@
 name=Pyre Charger
-image=http://mtgimage.com/card/pyre%20charger.jpg
+image=http://magiccards.info/scans/en/jvc/38.jpg
 value=3.012
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={R}{R}
 pt=1/1
 ability=haste;{R}: SN gets +1/+0 until end of turn.
 timing=fmain
-oracle=Haste. {R}: Pyre Charger gets +1/+0 until end of turn.
+oracle=Haste\n{R}: Pyre Charger gets +1/+0 until end of turn.

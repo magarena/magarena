@@ -1,5 +1,5 @@
 name=Warped Researcher
-image=http://mtgimage.com/card/warped%20researcher.jpg
+image=http://magiccards.info/scans/en/le/56.jpg
 value=2.500
 rarity=U
 type=Creature

@@ -1,11 +1,11 @@
 name=Mageta the Lion
-image=http://mtgimage.com/card/mageta%20the%20lion.jpg
+image=http://magiccards.info/scans/en/pr/13.jpg
 value=4.028
 rarity=R
 type=Legendary,Creature
 subtype=Human,Spellshaper
 cost={3}{W}{W}
 pt=3/3
+ability={2}{W}{W}, {T}, Discard two cards: Destroy all other creatures. They can't be regenerated.
 timing=main
-requires_groovy_code
 oracle={2}{W}{W}, {T}, Discard two cards: Destroy all creatures except for Mageta the Lion. Those creatures can't be regenerated.

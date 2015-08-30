@@ -1,0 +1,14 @@
+name=Ashcloud Phoenix
+image=http://magiccards.info/scans/en/ktk/99.jpg
+value=3.500
+rarity=M
+type=Creature
+subtype=Phoenix
+cost={2}{R}{R}
+pt=4/1
+ability=Flying;\
+        Morph {4}{R}{R};\
+        When SN is turned face up, SN deals 2 damage to each player.
+timing=main
+requires_groovy_code
+oracle=Flying\nWhen Ashcloud Phoenix dies, return it to the battlefield face down under your control.\nMorph {4}{R}{R}\nWhen Ashcloud Phoenix is turned face up, it deals 2 damage to each player.

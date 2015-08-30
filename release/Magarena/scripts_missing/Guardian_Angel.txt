@@ -1,6 +1,6 @@
 name=Guardian Angel
-image=http://mtgimage.com/card/guardian%20angel.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rv/205.jpg
+value=2.655
 rarity=C
 type=Instant
 cost={X}{W}

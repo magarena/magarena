@@ -1,5 +1,5 @@
 name=Indebted Samurai
-image=http://mtgimage.com/card/indebted%20samurai.jpg
+image=http://magiccards.info/scans/en/bok/9.jpg
 value=3.185
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/3
 ability=bushido 1;\
         Whenever a Samurai you control dies, you may put a +1/+1 counter on SN.
 timing=fmain
-oracle=Bushido 1. Whenever a Samurai you control dies, you may put a +1/+1 counter on Indebted Samurai.
+oracle=Bushido 1\nWhenever a Samurai you control dies, you may put a +1/+1 counter on Indebted Samurai.

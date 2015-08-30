@@ -1,5 +1,5 @@
 name=Tor Wauki
-image=http://mtgimage.com/card/tor%20wauki.jpg
+image=http://magiccards.info/scans/en/me3/182.jpg
 value=3.077
 rarity=U
 type=Legendary,Creature

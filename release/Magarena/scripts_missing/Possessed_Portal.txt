@@ -1,10 +1,10 @@
 name=Possessed Portal
-image=http://mtgimage.com/card/possessed%20portal.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5dn/144.jpg
+value=4.056
 rarity=R
 type=Artifact
 cost={8}
 ability=If a player would draw a card, that player skips that draw instead.;\
         At the beginning of each end step, each player sacrifices a permanent unless he or she discards a card.
-timing=main
-oracle=If a player would draw a card, that player skips that draw instead. At the beginning of each end step, each player sacrifices a permanent unless he or she discards a card.
+timing=artifact
+oracle=If a player would draw a card, that player skips that draw instead.\nAt the beginning of each end step, each player sacrifices a permanent unless he or she discards a card.

@@ -1,11 +1,11 @@
 name=Ajani, Caller of the Pride
-image=http://mtgimage.com/card/ajani%2C%20caller%20of%20the%20pride.jpg
+image=http://magiccards.info/scans/en/m14/1.jpg
 value=3.717
 rarity=M
 type=Planeswalker
 subtype=Ajani
 cost={1}{W}{W}
-ability=loyalty 4
+loyalty=4
 timing=main
 requires_groovy_code
-oracle=+1: Put a +1/+1 counter on up to one target creature. -3: Target creature gains flying and double strike until end of turn. -8: Put X 2/2 white Cat creature tokens onto the battlefield, where X is your life total.
+oracle=+1: Put a +1/+1 counter on up to one target creature.\n−3: Target creature gains flying and double strike until end of turn.\n−8: Put X 2/2 white Cat creature tokens onto the battlefield, where X is your life total.

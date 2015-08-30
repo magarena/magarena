@@ -1,12 +1,12 @@
 name=Cockatrice
-image=http://mtgimage.com/card/cockatrice.jpg
+image=http://magiccards.info/scans/en/tsts/75.jpg
 value=3.780
 rarity=R
 type=Creature
 subtype=Cockatrice
 cost={3}{G}{G}
 pt=2/4
-ability=flying
+ability=Flying.;\
+        Whenever SN blocks or becomes blocked by a non-Wall creature, destroy that creature at end of combat.
 timing=main
-requires_groovy_code=Rock Basilisk
-oracle=Flying. Whenever Cockatrice blocks or becomes blocked by a non-Wall creature, destroy that creature at end of combat.
+oracle=Flying\nWhenever Cockatrice blocks or becomes blocked by a non-Wall creature, destroy that creature at end of combat.

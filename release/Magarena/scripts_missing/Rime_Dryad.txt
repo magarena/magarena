@@ -1,6 +1,6 @@
 name=Rime Dryad
-image=http://mtgimage.com/card/rime%20dryad.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ia/148.jpg
+value=3.691
 rarity=C
 type=Creature
 subtype=Dryad

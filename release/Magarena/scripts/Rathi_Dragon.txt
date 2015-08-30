@@ -1,5 +1,5 @@
 name=Rathi Dragon
-image=http://mtgimage.com/card/rathi%20dragon.jpg
+image=http://magiccards.info/scans/en/9e/210.jpg
 value=3.796
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=5/5
 ability=Flying
 timing=main
 requires_groovy_code
-oracle=Flying. When Rathi Dragon enters the battlefield, sacrifice it unless you sacrifice two Mountains.
+oracle=Flying\nWhen Rathi Dragon enters the battlefield, sacrifice it unless you sacrifice two Mountains.

@@ -1,5 +1,5 @@
 name=Divinity of Pride
-image=http://mtgimage.com/card/divinity%20of%20pride.jpg
+image=http://magiccards.info/scans/en/c13/228.jpg
 value=3.946
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=lifelink;flying;\
         SN gets +4/+4 as long as you have 25 or more life.
 timing=main
-oracle=Flying, lifelink. Divinity of Pride gets +4/+4 as long as you have 25 or more life.
+oracle=Flying, lifelink\nDivinity of Pride gets +4/+4 as long as you have 25 or more life.

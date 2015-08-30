@@ -1,6 +1,6 @@
 name=Wall of Putrid Flesh
-image=http://mtgimage.com/card/wall%20of%20putrid%20flesh.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lg/41.jpg
+value=2.632
 rarity=U
 type=Creature
 subtype=Wall
@@ -10,4 +10,4 @@ ability=Defender;\
         Protection from white;\
         Prevent all damage that would be dealt to SN by enchanted creatures.
 timing=main
-oracle=Defender. Protection from white. Prevent all damage that would be dealt to Wall of Putrid Flesh by enchanted creatures.
+oracle=Defender\nProtection from white\nPrevent all damage that would be dealt to Wall of Putrid Flesh by enchanted creatures.

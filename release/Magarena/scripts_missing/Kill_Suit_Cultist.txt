@@ -1,6 +1,6 @@
 name=Kill-Suit Cultist
-image=http://mtgimage.com/card/kill-suit%20cultist.jpg
-value=2.500
+image=http://magiccards.info/scans/en/di/65.jpg
+value=2.408
 rarity=C
 type=Creature
 subtype=Goblin,Berserker
@@ -9,4 +9,4 @@ pt=1/1
 ability=SN attacks each turn if able.;\
         {B}, Sacrifice SN: The next time damage would be dealt to target creature this turn, destroy that creature instead.
 timing=main
-oracle=Kill-Suit Cultist attacks each turn if able. {B}, Sacrifice Kill-Suit Cultist: The next time damage would be dealt to target creature this turn, destroy that creature instead.
+oracle=Kill-Suit Cultist attacks each turn if able.\n{B}, Sacrifice Kill-Suit Cultist: The next time damage would be dealt to target creature this turn, destroy that creature instead.

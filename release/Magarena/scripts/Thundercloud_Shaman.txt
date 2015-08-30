@@ -1,0 +1,11 @@
+name=Thundercloud Shaman
+image=http://magiccards.info/scans/en/mma/135.jpg
+value=3.533
+rarity=U
+type=Creature
+subtype=Giant,Shaman
+cost={3}{R}{R}
+pt=4/4
+timing=main
+requires_groovy_code
+oracle=When Thundercloud Shaman enters the battlefield, it deals damage equal to the number of Giants you control to each non-Giant creature.

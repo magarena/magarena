@@ -1,9 +1,9 @@
 name=Reflecting Mirror
-image=http://mtgimage.com/card/reflecting%20mirror.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dk/103.jpg
+value=2.742
 rarity=U
 type=Artifact
 cost={4}
 ability={X}, {T}: Change the target of target spell with a single target if that target is you. The new target must be a player. X is twice the converted mana cost of that spell.
-timing=main
+timing=artifact
 oracle={X}, {T}: Change the target of target spell with a single target if that target is you. The new target must be a player. X is twice the converted mana cost of that spell.

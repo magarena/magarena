@@ -1,5 +1,5 @@
 name=Hammerheim Deadeye
-image=http://mtgimage.com/card/hammerheim%20deadeye.jpg
+image=http://magiccards.info/scans/en/mma/119.jpg
 value=1.781
 removal=2
 rarity=U
@@ -10,4 +10,4 @@ pt=3/3
 ability=echo {5}{R};\
         When SN enters the battlefield, destroy target creature with flying.
 timing=main
-oracle=Echo {5}{R}. When Hammerheim Deadeye enters the battlefield, destroy target creature with flying.
+oracle=Echo {5}{R}\nWhen Hammerheim Deadeye enters the battlefield, destroy target creature with flying.

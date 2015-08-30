@@ -5,10 +5,10 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.action.MagicChangeCountersAction;
-import magic.model.action.MagicDestroyAction;
-import magic.model.action.MagicRemoveFromPlayAction;
-import magic.model.action.MagicSacrificeAction;
+import magic.model.action.ChangeCountersAction;
+import magic.model.action.DestroyAction;
+import magic.model.action.RemoveFromPlayAction;
+import magic.model.action.SacrificeAction;
 import magic.model.event.MagicEvent;
 
 public abstract class MagicAtEndOfCombatTrigger extends MagicTrigger<MagicPlayer> {
@@ -33,7 +33,7 @@ public abstract class MagicAtEndOfCombatTrigger extends MagicTrigger<MagicPlayer
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicRemoveFromPlayAction(
+            game.doAction(new RemoveFromPlayAction(
                 event.getPermanent(),
                 MagicLocationType.OwnersHand
             ));
@@ -51,7 +51,7 @@ public abstract class MagicAtEndOfCombatTrigger extends MagicTrigger<MagicPlayer
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicRemoveFromPlayAction(event.getPermanent(), MagicLocationType.Exile));
+            game.doAction(new RemoveFromPlayAction(event.getPermanent(), MagicLocationType.Exile));
         }
     };
     
@@ -66,7 +66,7 @@ public abstract class MagicAtEndOfCombatTrigger extends MagicTrigger<MagicPlayer
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicDestroyAction(event.getPermanent()));
+            game.doAction(new DestroyAction(event.getPermanent()));
         }
     };
     
@@ -81,7 +81,7 @@ public abstract class MagicAtEndOfCombatTrigger extends MagicTrigger<MagicPlayer
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicSacrificeAction(event.getPermanent()));
+            game.doAction(new SacrificeAction(event.getPermanent()));
         }
     };
     
@@ -97,7 +97,7 @@ public abstract class MagicAtEndOfCombatTrigger extends MagicTrigger<MagicPlayer
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.getPermanent().hasCounters(MagicCounterType.PlusOne)) {
-                game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,-1));
+                game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,-1));
             }
         }
     };

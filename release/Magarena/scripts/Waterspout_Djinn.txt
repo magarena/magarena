@@ -1,5 +1,5 @@
 name=Waterspout Djinn
-image=http://mtgimage.com/card/waterspout%20djinn.jpg
+image=http://magiccards.info/scans/en/jvc/11.jpg
 value=2.500
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying
 timing=main
 requires_groovy_code
-oracle=Flying. At the beginning of your upkeep, sacrifice Waterspout Djinn unless you return an untapped Island you control to its owner's hand.
+oracle=Flying\nAt the beginning of your upkeep, sacrifice Waterspout Djinn unless you return an untapped Island you control to its owner's hand.

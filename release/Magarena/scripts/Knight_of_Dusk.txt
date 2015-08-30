@@ -1,0 +1,11 @@
+name=Knight of Dusk
+image=http://magiccards.info/scans/en/10e/152.jpg
+value=4.046
+rarity=U
+type=Creature
+subtype=Human,Knight
+cost={1}{B}{B}
+pt=2/2
+timing=main
+requires_groovy_code
+oracle={B}{B}: Destroy target creature blocking Knight of Dusk.

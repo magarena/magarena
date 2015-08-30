@@ -1,5 +1,5 @@
 name=Woodlurker Mimic
-image=http://mtgimage.com/card/woodlurker%20mimic.jpg
+image=http://magiccards.info/scans/en/eve/130.jpg
 value=3.377
 rarity=C
 type=Creature

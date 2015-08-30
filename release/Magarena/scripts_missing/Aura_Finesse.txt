@@ -1,9 +1,9 @@
 name=Aura Finesse
-image=http://mtgimage.com/card/aura%20finesse.jpg
-value=2.500
+image=http://magiccards.info/scans/en/roe/54.jpg
+value=3.008
 rarity=C
 type=Instant
 cost={U}
 effect=Attach target Aura you control to target creature.~Draw a card.
 timing=removal
-oracle=Attach target Aura you control to target creature. Draw a card.
+oracle=Attach target Aura you control to target creature.\nDraw a card.

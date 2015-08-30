@@ -1,0 +1,12 @@
+name=Street Wraith
+image=http://magiccards.info/scans/en/mma/99.jpg
+value=4.276
+rarity=C
+type=Creature
+subtype=Wraith
+cost={3}{B}{B}
+pt=3/4
+ability=Swampwalk;\
+        Cycling—Pay 2 life.
+timing=main
+oracle=Swampwalk\nCycling—Pay 2 life.

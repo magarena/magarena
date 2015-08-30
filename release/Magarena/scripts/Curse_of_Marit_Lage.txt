@@ -1,5 +1,5 @@
 name=Curse of Marit Lage
-image=http://mtgimage.com/card/curse%20of%20marit%20lage.jpg
+image=http://magiccards.info/scans/en/ia/181.jpg
 value=3.605
 rarity=R
 type=Enchantment
@@ -7,4 +7,4 @@ cost={3}{R}{R}
 ability=When SN enters the battlefield, tap all Islands.;\
         Islands have "SN doesn't untap during your untap step."
 timing=enchantment
-oracle=When Curse of Marit Lage enters the battlefield, tap all Islands. Islands don't untap during their controllers' untap steps.
+oracle=When Curse of Marit Lage enters the battlefield, tap all Islands.\nIslands don't untap during their controllers' untap steps.

@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             return new MagicEvent(
                 permanent,
-                MagicTargetChoice.SACRIFICE_CREATURE,
+                SACRIFICE_CREATURE,
                 MagicSacrificeTargetPicker.create(),
                 this,
                 "Sacrifice a creature. " +
@@ -16,8 +16,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final int toughness=it.getToughness();
-                game.doAction(new MagicSacrificeAction(it));
-                game.doAction(new MagicChangeLifeAction(event.getPlayer(),toughness));
+                game.doAction(new SacrificeAction(it));
+                game.doAction(new ChangeLifeAction(event.getPlayer(),toughness));
             });
         }
     }

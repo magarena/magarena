@@ -1,11 +1,11 @@
 name=Soldevi Sentry
-image=http://mtgimage.com/card/soldevi%20sentry.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ai/175.jpg
+value=2.295
 rarity=C
 type=Artifact,Creature
 subtype=Soldier
 cost={1}
 pt=1/1
 ability={1}: Choose target opponent. Regenerate SN. When it regenerates this way, that player may draw a card.
-timing=main
+timing=artifact
 oracle={1}: Choose target opponent. Regenerate Soldevi Sentry. When it regenerates this way, that player may draw a card.

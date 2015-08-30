@@ -1,5 +1,5 @@
 name=Chromatic Lantern
-image=http://mtgimage.com/card/chromatic%20lantern.jpg
+image=http://magiccards.info/scans/en/rtr/226.jpg
 value=4.236
 rarity=R
 type=Artifact
@@ -7,4 +7,4 @@ cost={3}
 ability=lands you control have "{T}: Add one mana of any color to your mana pool.";\
         {T}: Add one mana of any color to your mana pool.
 timing=main
-oracle=Lands you control have "{T}: Add one mana of any color to your mana pool.". {T}: Add one mana of any color to your mana pool.
+oracle=Lands you control have "{T}: Add one mana of any color to your mana pool."\n{T}: Add one mana of any color to your mana pool.

@@ -1,0 +1,9 @@
+name=Sunbringer's Touch
+image=http://magiccards.info/scans/en/dtk/209.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={2}{G}{G}
+effect=Bolster X, where X is the number of cards in your hand. Each creature you control with a +1/+1 counter on it gains trample until end of turn.
+timing=main
+oracle=Bolster X, where X is the number of cards in your hand. Each creature you control with a +1/+1 counter on it gains trample until end of turn.

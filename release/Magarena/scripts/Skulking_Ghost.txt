@@ -1,5 +1,5 @@
 name=Skulking Ghost
-image=http://mtgimage.com/card/skulking%20ghost.jpg
+image=http://magiccards.info/scans/en/mr/41.jpg
 value=3.245
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=flying;\
         When SN becomes the target of a spell or ability, sacrifice it.
 timing=main
-oracle=Flying. When Skulking Ghost becomes the target of a spell or ability, sacrifice it.
+oracle=Flying\nWhen Skulking Ghost becomes the target of a spell or ability, sacrifice it.

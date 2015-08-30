@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_ARTIFACT_OR_CREATURE,
+                TARGET_ARTIFACT_OR_CREATURE,
                 MagicCopyPermanentPicker.create(),
                 this,
                 "Put a token onto the battlefield that's a copy of target artifact or creature\$. " +
@@ -15,11 +15,11 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final MagicPlayer player = event.getPlayer();
-                game.doAction(new MagicPlayCardAction(
+                game.doAction(new PlayCardAction(
                     MagicCard.createTokenCard(it, player),
                     player
                 ));
-                game.doAction(new MagicCipherAction(
+                game.doAction(new CipherAction(
                     event.getCardOnStack(), 
                     event.getPlayer()
                 ));

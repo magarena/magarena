@@ -1,6 +1,6 @@
 name=Battery
-image=http://mtgimage.com/card/assaultbattery.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pch/103b.jpg
+value=3.628
 rarity=U
 type=Sorcery
 cost={3}{G}

@@ -1,5 +1,5 @@
 name=Wildblood Pack
-image=http://mtgimage.com/card/wildblood%20pack.jpg
+image=http://magiccards.info/scans/en/isd/149b.jpg
 value=3.844
 color=r
 rarity=R
@@ -12,4 +12,4 @@ ability=Trample;\
 transform=Instigator Gang
 timing=main
 hidden
-oracle=Trample. Attacking creatures you control get +3/+0. At the beginning of each upkeep, if a player cast two or more spells last turn, transform Wildblood Pack.
+oracle=Trample\nAttacking creatures you control get +3/+0.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Wildblood Pack.

@@ -1,11 +1,11 @@
 name=Anarchist
-image=http://mtgimage.com/card/anarchist.jpg
+image=http://magiccards.info/scans/en/9e/173.jpg
 value=3.367
-rarity=U
+rarity=C
 type=Creature
 subtype=Human,Wizard
 cost={4}{R}
 pt=2/2
-ability=When SN enters the battlefield, return target sorcery card from your graveyard to your hand.
+ability=When SN enters the battlefield, you may return target sorcery card from your graveyard to your hand.
 timing=main
 oracle=When Anarchist enters the battlefield, you may return target sorcery card from your graveyard to your hand.

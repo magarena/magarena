@@ -1,12 +1,13 @@
 name=Brimaz, King of Oreskos
-image=http://mtgimage.com/card/brimaz%2C%20king%20of%20oreskos.jpg
+image=http://magiccards.info/scans/en/bng/5.jpg
 value=3.973
 rarity=M
 type=Legendary,Creature
 subtype=Cat,Soldier
 cost={1}{W}{W}
-ability=vigilance
+ability=vigilance;\
+        Whenever SN attacks, put a 1/1 white Cat Soldier creature token with vigilance onto the battlefield attacking.
 pt=3/4
 timing=main
 requires_groovy_code
-oracle=Vigilance . Whenever Brimaz, King of Oreskos attacks, put a 1/1 white Cat Soldier creature token with vigilance onto the battlefield attacking. Whenever Brimaz blocks a creature, put a 1/1 white Cat Soldier creature token with vigilance onto the battlefield blocking that creature.
+oracle=Vigilance\nWhenever Brimaz, King of Oreskos attacks, put a 1/1 white Cat Soldier creature token with vigilance onto the battlefield attacking.\nWhenever Brimaz blocks a creature, put a 1/1 white Cat Soldier creature token with vigilance onto the battlefield blocking that creature.

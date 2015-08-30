@@ -1,0 +1,11 @@
+name=Riptide Director
+image=http://magiccards.info/scans/en/le/50.jpg
+value=3.850
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={2}{U}{U}
+pt=2/3
+ability={2}{U}{U}, {T}: Draw a card for each Wizard you control.
+timing=main
+oracle={2}{U}{U}, {T}: Draw a card for each Wizard you control.

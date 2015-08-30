@@ -1,10 +1,10 @@
 name=Shared Fate
-image=http://mtgimage.com/card/shared%20fate.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mi/49.jpg
+value=3.787
 rarity=R
 type=Enchantment
 cost={4}{U}
 ability=If a player would draw a card, that player exiles the top card of an opponent's library face down instead.;\
         Each player may look at and play cards he or she exiled with SN.
-timing=main
-oracle=If a player would draw a card, that player exiles the top card of an opponent's library face down instead. Each player may look at and play cards he or she exiled with Shared Fate.
+timing=enchantment
+oracle=If a player would draw a card, that player exiles the top card of an opponent's library face down instead.\nEach player may look at and play cards he or she exiled with Shared Fate.

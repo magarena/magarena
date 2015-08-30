@@ -1,6 +1,6 @@
 name=Arctic Foxes
-image=http://mtgimage.com/card/arctic%20foxes.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ia/226.jpg
+value=1.854
 rarity=C
 type=Creature
 subtype=Fox

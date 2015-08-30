@@ -1,9 +1,9 @@
 name=Reroute
-image=http://mtgimage.com/card/reroute.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rav/139.jpg
+value=3.911
 rarity=U
 type=Instant
 cost={1}{R}
 effect=Change the target of target activated ability with a single target.~Draw a card.
 timing=removal
-oracle=Change the target of target activated ability with a single target. Draw a card.
+oracle=Change the target of target activated ability with a single target.\nDraw a card.

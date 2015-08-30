@@ -1,9 +1,9 @@
 name=Predator, Flagship
-image=http://mtgimage.com/card/predator%2C%20flagship.jpg
+image=http://magiccards.info/scans/en/c14/263.jpg
 value=4.000
 rarity=R
 type=Legendary,Artifact
 cost={5}
 ability={2}:Target creature gains flying until end of turn.;{5},{T}:Destroy target creature with flying.
 timing=artifact
-oracle={2}: Target creature gains flying until end of turn. {5}, {T}: Destroy target creature with flying.
+oracle={2}: Target creature gains flying until end of turn.\n{5}, {T}: Destroy target creature with flying.

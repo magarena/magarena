@@ -1,5 +1,5 @@
 name=Cylian Sunsinger
-image=http://mtgimage.com/card/cylian%20sunsinger.jpg
+image=http://magiccards.info/scans/en/cfx/80.jpg
 value=2.893
 rarity=R
 type=Creature

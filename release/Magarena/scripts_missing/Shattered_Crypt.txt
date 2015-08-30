@@ -1,6 +1,6 @@
 name=Shattered Crypt
-image=http://mtgimage.com/card/shattered%20crypt.jpg
-value=2.500
+image=http://magiccards.info/scans/en/wl/22.jpg
+value=1.886
 rarity=C
 type=Sorcery
 cost={X}{B}{B}

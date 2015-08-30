@@ -1,6 +1,6 @@
 name=Arm with Æther
-image=http://mtgimage.com/card/arm%20with%20aether.jpg
-value=2.500
+image=http://magiccards.info/scans/en/nph/28.jpg
+value=2.870
 rarity=U
 type=Sorcery
 cost={2}{U}

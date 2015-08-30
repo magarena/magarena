@@ -1,6 +1,6 @@
 name=Vintara Elephant
-image=http://mtgimage.com/card/vintara%20elephant.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pr/131.jpg
+value=1.643
 rarity=C
 type=Creature
 subtype=Elephant
@@ -9,4 +9,4 @@ pt=4/3
 ability=Trample;\
         {3}: SN loses trample until end of turn. Any player may activate this ability.
 timing=main
-oracle=Trample. {3}: Vintara Elephant loses trample until end of turn. Any player may activate this ability.
+oracle=Trample\n{3}: Vintara Elephant loses trample until end of turn. Any player may activate this ability.

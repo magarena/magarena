@@ -1,10 +1,11 @@
 name=Ensnare
-image=http://mtgimage.com/card/ensnare.jpg
+image=http://magiccards.info/scans/en/ne/32.jpg
 value=4.000
 rarity=U
 type=Instant
 cost={3}{U}
+ability=You may return two Islands you control to their owner's hand rather than pay SN's mana cost.;\
+        Cast SN with AI only if an opponent controls an untapped creature.
 effect=Tap all creatures.
 timing=tapping
-requires_groovy_code
-oracle=You may return two Islands you control to their owner's hand rather than pay Ensnare's mana cost. Tap all creatures.
+oracle=You may return two Islands you control to their owner's hand rather than pay Ensnare's mana cost.\nTap all creatures.

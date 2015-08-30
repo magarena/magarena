@@ -1,5 +1,5 @@
 name=Masked Admirers
-image=http://mtgimage.com/card/masked%20admirers.jpg
+image=http://magiccards.info/scans/en/c14/206.jpg
 value=2.500
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=3/2
 ability=When SN enters the battlefield, draw a card.;\
         Whenever you cast a creature spell, you may pay {G}{G}. If you do, return SN from your graveyard to your hand.
 timing=main
-oracle=When Masked Admirers enters the battlefield, draw a card. Whenever you cast a creature spell, you may pay {G}{G}. If you do, return Masked Admirers from your graveyard to your hand.
+oracle=When Masked Admirers enters the battlefield, draw a card.\nWhenever you cast a creature spell, you may pay {G}{G}. If you do, return Masked Admirers from your graveyard to your hand.

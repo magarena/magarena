@@ -1,9 +1,9 @@
 name=Holistic Wisdom
-image=http://mtgimage.com/card/holistic%20wisdom.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/243.jpg
+value=3.447
 rarity=R
 type=Enchantment
 cost={1}{G}{G}
 ability={2}, Exile a card from your hand: Return target card from your graveyard to your hand if it shares a card type with the card exiled this way.
-timing=main
+timing=enchantment
 oracle={2}, Exile a card from your hand: Return target card from your graveyard to your hand if it shares a card type with the card exiled this way.

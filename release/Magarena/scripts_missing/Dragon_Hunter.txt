@@ -1,0 +1,12 @@
+name=Dragon Hunter
+image=http://magiccards.info/scans/en/dtk/10.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Warrior
+cost={W}
+pt=2/1
+ability=Protection from Dragons;\
+        SN can block Dragons as though it had reach.
+timing=main
+oracle=Protection from Dragons\nDragon Hunter can block Dragons as though it had reach.

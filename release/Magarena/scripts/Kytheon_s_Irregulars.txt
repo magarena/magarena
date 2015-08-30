@@ -1,0 +1,12 @@
+name=Kytheon's Irregulars
+image=http://magiccards.info/scans/en/ori/24.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Soldier
+cost={2}{W}{W}
+pt=4/3
+ability=Renown 1;\
+        {W}{W}: Tap target creature.
+timing=main
+oracle=Renown 1\n{W}{W}: Tap target creature.

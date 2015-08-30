@@ -1,10 +1,10 @@
 name=Rending Vines
-image=http://mtgimage.com/card/rending%20vines.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sok/143.jpg
+value=2.303
 rarity=C
 type=Instant
 subtype=Arcane
 cost={1}{G}{G}
 effect=Destroy target artifact or enchantment if its converted mana cost is less than or equal to the number of cards in your hand.~Draw a card.
 timing=removal
-oracle=Destroy target artifact or enchantment if its converted mana cost is less than or equal to the number of cards in your hand. Draw a card.
+oracle=Destroy target artifact or enchantment if its converted mana cost is less than or equal to the number of cards in your hand.\nDraw a card.

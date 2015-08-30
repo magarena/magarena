@@ -1,5 +1,5 @@
 name=Cadaver Imp
-image=http://mtgimage.com/card/cadaver%20imp.jpg
+image=http://magiccards.info/scans/en/pc2/31.jpg
 value=3.056
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=flying;\
         When SN enters the battlefield, you may return target creature card from your graveyard to your hand.
 timing=main
-oracle=Flying. When Cadaver Imp enters the battlefield, you may return target creature card from your graveyard to your hand.
+oracle=Flying\nWhen Cadaver Imp enters the battlefield, you may return target creature card from your graveyard to your hand.

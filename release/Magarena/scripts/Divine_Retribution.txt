@@ -1,9 +1,9 @@
 name=Divine Retribution
-image=http://mtgimage.com/card/divine%20retribution.jpg
+image=http://magiccards.info/scans/en/mr/216.jpg
 value=2.538
 rarity=R
 type=Instant
 cost={1}{W}
+effect=SN deals damage to target attacking creature equal to the number of attacking creatures.
 timing=block
-requires_groovy_code
 oracle=Divine Retribution deals damage to target attacking creature equal to the number of attacking creatures.

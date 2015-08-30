@@ -1,11 +1,11 @@
 name=Mark of Sakiko
-image=http://mtgimage.com/card/mark%20of%20sakiko.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bok/135.jpg
+value=3.330
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{G}
 ability=Enchant creature;\
         Enchanted creature has "Whenever this creature deals combat damage to a player, add that much {G} to your mana pool. Until end of turn, this mana doesn't empty from your mana pool as steps and phases end."
-timing=main
-oracle=Enchant creature. Enchanted creature has "Whenever this creature deals combat damage to a player, add that much {G} to your mana pool. Until end of turn, this mana doesn't empty from your mana pool as steps and phases end."
+timing=aura
+oracle=Enchant creature\nEnchanted creature has "Whenever this creature deals combat damage to a player, add that much {G} to your mana pool. Until end of turn, this mana doesn't empty from your mana pool as steps and phases end."

@@ -1,6 +1,6 @@
 name=Jade Leech
-image=http://mtgimage.com/card/jade%20leech.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/190.jpg
+value=2.492
 rarity=R
 type=Creature
 subtype=Leech

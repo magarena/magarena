@@ -1,5 +1,5 @@
 name=Soul Seizer
-image=http://mtgimage.com/card/soul%20seizer.jpg
+image=http://magiccards.info/scans/en/dka/50a.jpg
 value=2.288
 rarity=U
 type=Creature
@@ -10,4 +10,4 @@ ability=Flying
 transform=Ghastly Haunting
 timing=main
 requires_groovy_code
-oracle=Flying. When Soul Seizer deals combat damage to a player, you may transform it. If you do, attach it to target creature that player controls.
+oracle=Flying\nWhen Soul Seizer deals combat damage to a player, you may transform it. If you do, attach it to target creature that player controls.

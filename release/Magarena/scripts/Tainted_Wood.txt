@@ -1,10 +1,10 @@
 name=Tainted Wood
-image=http://mtgimage.com/card/tainted%20wood.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddm/78.jpg
+value=3.950
 rarity=U
 type=Land
 mana=b3g3
 ability={T}: Add {1} to your mana pool.
 timing=land
 requires_groovy_code
-oracle={T}: Add {1} to your mana pool. {T}: Add {B} or {G} to your mana pool. Activate this ability only if you control a Swamp.
+oracle={T}: Add {1} to your mana pool.\n{T}: Add {B} or {G} to your mana pool. Activate this ability only if you control a Swamp.

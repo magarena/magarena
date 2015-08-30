@@ -1,5 +1,5 @@
 name=Citanul Woodreaders
-image=http://mtgimage.com/card/citanul%20woodreaders.jpg
+image=http://magiccards.info/scans/en/mma/140.jpg
 value=3.333
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/4
 ability=kicker {2}{G};\
         When SN enters the battlefield, if it was kicked, draw two cards.
 timing=main
-oracle=Kicker {2}{G}. When Citanul Woodreaders enters the battlefield, if it was kicked, draw two cards.
+oracle=Kicker {2}{G}\nWhen Citanul Woodreaders enters the battlefield, if it was kicked, draw two cards.

@@ -60,14 +60,14 @@ public class MMAB implements MagicAI {
         final ArtificialScoreBoard scoreBoard = new ArtificialScoreBoard();
         final ExecutorService executor = Executors.newFixedThreadPool(THREADS);
         final List<ArtificialChoiceResults> achoices=new ArrayList<ArtificialChoiceResults>();
-        final int artificialLevel = sourceGame.getArtificialLevel(scorePlayer.getIndex());
+        final int artificialLevel = scorePlayer.getAiProfile().getAiLevel();
         final int rounds = (size + THREADS - 1) / THREADS;
         final long slice = artificialLevel * SEC_TO_NANO / rounds;
         
         for (final Object[] choice : choices) {
             final ArtificialChoiceResults achoice=new ArtificialChoiceResults(choice);
             achoices.add(achoice);
-            
+                    
             final MagicGame workerGame=new MagicGame(sourceGame,scorePlayer);
             if (!CHEAT) {
                 workerGame.hideHiddenCards();
@@ -75,17 +75,19 @@ public class MMAB implements MagicAI {
             if (DECKSTR) {
                 workerGame.setMainPhases(artificialLevel);
             }
-            workerGame.setFastChoices(true);
-            final MMABWorker worker=new MMABWorker(
-                Thread.currentThread().getId(),
-                workerGame,
-                scoreBoard,
-                CHEAT
-            );
+            workerGame.setFastMana(true);
+            workerGame.setFastTarget(true);
+            workerGame.setFastBlocker(true);
             
             executor.execute(new Runnable() {
                 @Override
                 public void run() {
+                    final MMABWorker worker=new MMABWorker(
+                        Thread.currentThread().getId(),
+                        workerGame,
+                        scoreBoard,
+                        CHEAT
+                    );
                     worker.evaluateGame(achoice, scoreRef.get(), System.nanoTime() + slice);
                     scoreRef.update(achoice.aiScore.getScore());
                 }

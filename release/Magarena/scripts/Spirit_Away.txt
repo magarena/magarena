@@ -1,5 +1,5 @@
 name=Spirit Away
-image=http://mtgimage.com/card/spirit%20away.jpg
+image=http://magiccards.info/scans/en/avr/76.jpg
 value=2.929
 rarity=R
 type=Enchantment
@@ -9,4 +9,4 @@ timing=aura
 ability=You control enchanted creature.;\
         Enchanted creature gets +2/+2 and has flying.
 enchant=gain control,neg creature
-oracle=Enchant creature. You control enchanted creature. Enchanted creature gets +2/+2 and has flying.
+oracle=Enchant creature\nYou control enchanted creature.\nEnchanted creature gets +2/+2 and has flying.

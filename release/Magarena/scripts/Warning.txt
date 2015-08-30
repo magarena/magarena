@@ -1,5 +1,5 @@
 name=Warning
-image=http://mtgimage.com/card/warning.jpg
+image=http://magiccards.info/scans/en/me2/38.jpg
 value=2.696
 rarity=C
 type=Instant

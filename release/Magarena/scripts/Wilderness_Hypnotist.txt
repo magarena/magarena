@@ -1,5 +1,5 @@
 name=Wilderness Hypnotist
-image=http://mtgimage.com/card/wilderness%20hypnotist.jpg
+image=http://magiccards.info/scans/en/eve/32.jpg
 value=1.021
 rarity=C
 type=Creature

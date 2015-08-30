@@ -1,5 +1,5 @@
 name=Syphon Mind
-image=http://mtgimage.com/card/syphon%20mind.jpg
+image=http://magiccards.info/scans/en/c14/165.jpg
 value=2.500
 rarity=C
 type=Sorcery

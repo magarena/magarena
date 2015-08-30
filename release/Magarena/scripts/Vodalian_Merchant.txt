@@ -1,5 +1,5 @@
 name=Vodalian Merchant
-image=http://mtgimage.com/card/vodalian%20merchant.jpg
+image=http://magiccards.info/scans/en/in/85.jpg
 value=3.061
 rarity=C
 type=Creature

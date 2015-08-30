@@ -1,10 +1,10 @@
 name=Dictate of Kruphix
-image=http://mtgimage.com/card/dictate%20of%20kruphix.jpg
+image=http://magiccards.info/scans/en/jou/37.jpg
 value=3.788
 rarity=R
 type=Enchantment
 cost={1}{U}{U}
-ability=Flash
+ability=Flash;\
+        At the beginning of each player's draw step, that player draws an additional card.
 timing=flash
-requires_groovy_code
-oracle=Flash. At the beginning of each player's draw step, that player draws an additional card.
+oracle=Flash\nAt the beginning of each player's draw step, that player draws an additional card.

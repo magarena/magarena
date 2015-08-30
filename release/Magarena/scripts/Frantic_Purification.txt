@@ -1,5 +1,5 @@
 name=Frantic Purification
-image=http://mtgimage.com/card/frantic%20purification.jpg
+image=http://magiccards.info/scans/en/tr/6.jpg
 value=1.979
 rarity=C
 type=Instant
@@ -7,4 +7,4 @@ cost={2}{W}
 effect=Destroy target enchantment.
 ability=Madness {W}
 timing=removal
-oracle=Destroy target enchantment. Madness {W}
+oracle=Destroy target enchantment.\nMadness {W}

@@ -1,10 +1,8 @@
 package magic.test;
 
-import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.model.MagicPlayerDefinition;
 import magic.model.phase.MagicMainPhase;
 
 class TestFlashfreeze extends TestGameBuilder {
@@ -14,15 +12,7 @@ class TestFlashfreeze extends TestGameBuilder {
      * Fixed by making the protection check use getColorFlags in addition to getColoredTypeg
      */
     public MagicGame getGame() {
-        final MagicDuel duel=new MagicDuel();
-        duel.setDifficulty(6);
-
-        final MagicDeckProfile profile=new MagicDeckProfile("bgruw");
-        final MagicPlayerDefinition player1=new MagicPlayerDefinition("Player",false,profile);
-        final MagicPlayerDefinition player2=new MagicPlayerDefinition("Computer",true,profile);
-        duel.setPlayers(new MagicPlayerDefinition[]{player1,player2});
-        duel.setStartPlayer(0);
-
+        final MagicDuel duel=createDuel();
         final MagicGame game=duel.nextGame();
         game.setPhase(MagicMainPhase.getFirstInstance());
         final MagicPlayer player=game.getPlayer(0);
@@ -33,7 +23,7 @@ class TestFlashfreeze extends TestGameBuilder {
         P.setLife(4);
         P.setPoison(0);
         addToLibrary(P,"Plains",10);
-        createPermanent(game,P,"Rupture Spire",false,8);
+        createPermanent(P,"Rupture Spire",false,8);
         addToHand(P,"Flashfreeze",3);
 
 
@@ -42,8 +32,8 @@ class TestFlashfreeze extends TestGameBuilder {
         P.setLife(4);
         P.setPoison(0);
         addToLibrary(P,"Island",10);
-        createPermanent(game,P,"Rupture Spire",false,5);
-        createPermanent(game,P,"Tectonic Edge",false,3);
+        createPermanent(P,"Rupture Spire",false,5);
+        createPermanent(P,"Tectonic Edge",false,3);
         addToHand(P,"Llanowar Elves", 1);
         addToHand(P,"Mogg Fanatic", 1);
         addToHand(P,"Prickly Boggart", 1);

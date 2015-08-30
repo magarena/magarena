@@ -1,9 +1,9 @@
 name=Omen
-image=http://mtgimage.com/card/omen.jpg
-value=2.500
+image=http://magiccards.info/scans/en/po/63.jpg
+value=2.314
 rarity=C
 type=Sorcery
 cost={1}{U}
 effect=Look at the top three cards of your library, then put them back in any order. You may shuffle your library.~Draw a card.
 timing=main
-oracle=Look at the top three cards of your library, then put them back in any order. You may shuffle your library. Draw a card.
+oracle=Look at the top three cards of your library, then put them back in any order. You may shuffle your library.\nDraw a card.

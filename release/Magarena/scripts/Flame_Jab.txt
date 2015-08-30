@@ -1,5 +1,5 @@
 name=Flame Jab
-image=http://mtgimage.com/card/flame%20jab.jpg
+image=http://magiccards.info/scans/en/eve/53.jpg
 value=3.284
 rarity=C
 type=Sorcery
@@ -7,4 +7,4 @@ cost={R}
 ability=Retrace
 effect=SN deals 1 damage to target creature or player.
 timing=removal
-oracle=Flame Jab deals 1 damage to target creature or player. Retrace
+oracle=Flame Jab deals 1 damage to target creature or player.\nRetrace

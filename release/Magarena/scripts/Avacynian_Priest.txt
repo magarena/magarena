@@ -1,5 +1,5 @@
 name=Avacynian Priest
-image=http://mtgimage.com/card/avacynian%20priest.jpg
+image=http://magiccards.info/scans/en/isd/4.jpg
 value=2.774
 rarity=C
 type=Creature

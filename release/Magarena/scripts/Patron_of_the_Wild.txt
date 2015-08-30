@@ -1,5 +1,5 @@
 name=Patron of the Wild
-image=http://mtgimage.com/card/patron%20of%20the%20wild.jpg
+image=http://magiccards.info/scans/en/le/134.jpg
 value=2.205
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=Morph {2}{G};\
         When SN is turned face up, target creature gets +3/+3 until end of turn.
 timing=main
-oracle=Morph {2}{G}. When Patron of the Wild is turned face up, target creature gets +3/+3 until end of turn.
+oracle=Morph {2}{G}\nWhen Patron of the Wild is turned face up, target creature gets +3/+3 until end of turn.

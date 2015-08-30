@@ -1,9 +1,9 @@
 name=Intellectual Offering
-image=http://mtgimage.com/card/intellectual%20offering.jpg
+image=http://magiccards.info/scans/en/c14/15.jpg
 value=2.500
 rarity=R
 type=Instant
 cost={4}{U}
 effect=Choose an opponent. You and that player each draw three cards.~Choose an opponent. Untap all nonland permanents you control and all nonland permanents that player controls.
-timing=smain
-oracle=Choose an opponent. You and that player each draw three cards. Choose an opponent. Untap all nonland permanents you control and all nonland permanents that player controls.
+timing=removal
+oracle=Choose an opponent. You and that player each draw three cards.\nChoose an opponent. Untap all nonland permanents you control and all nonland permanents that player controls.

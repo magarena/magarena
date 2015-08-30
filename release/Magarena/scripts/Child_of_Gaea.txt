@@ -1,5 +1,5 @@
 name=Child of Gaea
-image=http://mtgimage.com/card/child%20of%20gaea.jpg
+image=http://magiccards.info/scans/en/us/242.jpg
 value=4.255
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=Trample;\
         At the beginning of your upkeep, you may pay {G}{G}. If you don't, sacrifice SN.;\
         {1}{G}: Regenerate SN.
 timing=main
-oracle=Trample. At the beginning of your upkeep, sacrifice Child of Gaea unless you pay {G}{G}. {1}{G}: Regenerate Child of Gaea.
+oracle=Trample\nAt the beginning of your upkeep, sacrifice Child of Gaea unless you pay {G}{G}.\n{1}{G}: Regenerate Child of Gaea.

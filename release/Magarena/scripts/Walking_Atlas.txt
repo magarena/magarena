@@ -1,5 +1,5 @@
 name=Walking Atlas
-image=http://mtgimage.com/card/walking%20atlas.jpg
+image=http://magiccards.info/scans/en/wwk/131.jpg
 value=3.623
 rarity=C
 type=Artifact,Creature

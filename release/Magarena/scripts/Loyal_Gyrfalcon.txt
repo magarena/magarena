@@ -1,5 +1,5 @@
 name=Loyal Gyrfalcon
-image=http://mtgimage.com/card/loyal%20gyrfalcon.jpg
+image=http://magiccards.info/scans/en/eve/11.jpg
 value=1.973
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=Defender; flying;\
         Whenever you cast a white spell, SN loses defender until end of turn.
 timing=main
-oracle=Defender, flying. Whenever you cast a white spell, Loyal Gyrfalcon loses defender until end of turn.
+oracle=Defender, flying\nWhenever you cast a white spell, Loyal Gyrfalcon loses defender until end of turn.

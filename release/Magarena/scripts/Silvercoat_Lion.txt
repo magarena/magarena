@@ -1,5 +1,5 @@
 name=Silvercoat Lion
-image=http://mtgimage.com/card/silvercoat%20lion.jpg
+image=http://magiccards.info/scans/en/m13/35.jpg
 value=2.153
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Cat
 cost={1}{W}
 pt=2/2
 timing=main
+oracle=NONE

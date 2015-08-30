@@ -1,11 +1,11 @@
 name=Vow of Duty
-image=http://mtgimage.com/card/vow%20of%20duty.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cns/87.jpg
+value=3.500
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{W}
 ability=Enchant creature;\
         Enchanted creature gets +2/+2, has vigilance, and can't attack you or a planeswalker you control.
-timing=main
-oracle=Enchant creature. Enchanted creature gets +2/+2, has vigilance, and can't attack you or a planeswalker you control.
+timing=aura
+oracle=Enchant creature\nEnchanted creature gets +2/+2, has vigilance, and can't attack you or a planeswalker you control.

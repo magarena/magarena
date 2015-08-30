@@ -1,5 +1,5 @@
 name=Skirsdag Cultist
-image=http://mtgimage.com/card/skirsdag%20cultist.jpg
+image=http://magiccards.info/scans/en/ddk/53.jpg
 value=2.650
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Blightspeaker
-image=http://mtgimage.com/card/blightspeaker.jpg
+image=http://magiccards.info/scans/en/mma/73.jpg
 value=3.824
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability={T}: Target player loses 1 life.;\
         {4}, {T}: Search your library for a Rebel permanent card with converted mana cost 3 or less and put it onto the battlefield. Then shuffle your library.
 timing=main
-oracle={T}: Target player loses 1 life. {4}, {T}: Search your library for a Rebel permanent card with converted mana cost 3 or less and put it onto the battlefield. Then shuffle your library.
+oracle={T}: Target player loses 1 life.\n{4}, {T}: Search your library for a Rebel permanent card with converted mana cost 3 or less and put it onto the battlefield. Then shuffle your library.

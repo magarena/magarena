@@ -1,6 +1,6 @@
 name=Plated Pegasus
-image=http://mtgimage.com/card/plated%20pegasus.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ts/34.jpg
+value=2.848
 rarity=U
 type=Creature
 subtype=Pegasus
@@ -10,4 +10,4 @@ ability=Flash;\
         Flying;\
         If a spell would deal damage to a creature or player, prevent 1 damage that spell would deal to that creature or player.
 timing=main
-oracle=Flash. Flying. If a spell would deal damage to a creature or player, prevent 1 damage that spell would deal to that creature or player.
+oracle=Flash\nFlying\nIf a spell would deal damage to a creature or player, prevent 1 damage that spell would deal to that creature or player.

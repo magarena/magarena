@@ -1,0 +1,12 @@
+name=Nim Devourer
+image=http://magiccards.info/scans/en/mi/70.jpg
+value=3.408
+rarity=R
+type=Creature
+subtype=Zombie
+cost={3}{B}{B}
+pt=4/1
+ability=SN gets +1/+0 for each artifact you control.;\
+        {B}{B}: Return SN from your graveyard to the battlefield.~Sacrifice a creature. Activate this ability only during your upkeep.
+timing=main
+oracle=Nim Devourer gets +1/+0 for each artifact you control.\n{B}{B}: Return Nim Devourer from your graveyard to the battlefield, then sacrifice a creature. Activate this ability only during your upkeep.

@@ -11,13 +11,13 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayer player = event.getPlayer();
-            final Collection<MagicPermanent> targets = 
-                game.filterPermanents(player,MagicTargetFilterFactory.ENCHANTMENT);
-            targets.addAll(game.filterPermanents(player,MagicTargetFilterFactory.ARTIFACT));
-            final MagicDestroyAction destroy = new MagicDestroyAction(targets);
+            final DestroyAction destroy = new DestroyAction(ARTIFACT_OR_ENCHANTMENT.filter(event));
             game.doAction(destroy);
-            game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,destroy.getNumDestroyed()));
+            game.doAction(new ChangeCountersAction(
+                event.getPermanent(),
+                MagicCounterType.PlusOne,
+                destroy.getNumDestroyed()
+            ));
         }
     }
 ]

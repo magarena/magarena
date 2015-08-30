@@ -1,9 +1,9 @@
 name=Wrap in Vigor
-image=http://mtgimage.com/card/wrap%20in%20vigor.jpg
+image=http://magiccards.info/scans/en/cns/183.jpg
 value=3.800
 rarity=C
 type=Instant
 cost={1}{G}
+effect=Regenerate each creature you control.
 timing=pump
-requires_groovy_code
 oracle=Regenerate each creature you control.

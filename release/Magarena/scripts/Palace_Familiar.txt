@@ -1,0 +1,12 @@
+name=Palace Familiar
+image=http://magiccards.info/scans/en/dtk/69.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Bird
+cost={1}{U}
+pt=1/1
+ability=Flying;\
+        When SN dies, draw a card.
+timing=main
+oracle=Flying\nWhen Palace Familiar dies, draw a card.

@@ -1,9 +1,0 @@
-name=Calming Verse
-image=http://mtgimage.com/card/calming%20verse.jpg
-value=2.500
-rarity=C
-type=Sorcery
-cost={3}{G}
-effect=Destroy all enchantments you don't control. Then, if you control an untapped land, destroy all enchantments you control.
-timing=main
-oracle=Destroy all enchantments you don't control. Then, if you control an untapped land, destroy all enchantments you control.

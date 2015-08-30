@@ -1,0 +1,12 @@
+name=Ironclaw Buzzardiers
+image=http://magiccards.info/scans/en/ts/165.jpg
+value=2.274
+rarity=C
+type=Creature
+subtype=Orc,Scout
+cost={2}{R}
+pt=2/2
+ability=SN can't block creatures with power 2 or greater.;\
+        {R}: SN gains flying until end of turn.
+timing=main
+oracle=Ironclaw Buzzardiers can't block creatures with power 2 or greater.\n{R}: Ironclaw Buzzardiers gains flying until end of turn.

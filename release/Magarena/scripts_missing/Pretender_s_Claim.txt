@@ -1,11 +1,11 @@
 name=Pretender's Claim
-image=http://mtgimage.com/card/pretender%27s%20claim.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/151.jpg
+value=2.854
 rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{B}
 ability=Enchant creature;\
         Whenever enchanted creature becomes blocked, tap all lands defending player controls.
-timing=main
-oracle=Enchant creature. Whenever enchanted creature becomes blocked, tap all lands defending player controls.
+timing=aura
+oracle=Enchant creature\nWhenever enchanted creature becomes blocked, tap all lands defending player controls.

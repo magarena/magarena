@@ -1,10 +1,10 @@
 name=Forbid
-image=http://mtgimage.com/card/forbid.jpg
+image=http://magiccards.info/scans/en/ex/35.jpg
 value=4.425
 rarity=U
 type=Instant
 cost={1}{U}{U}
-ability=Buyback Discard two cards.
-effect=Counter target spell.
+ability=Buyback—Discard two cards.
+effect=Counter target spell.~Buyback
 timing=counter
-oracle=Buyback—Discard two cards. Counter target spell.
+oracle=Buyback—Discard two cards.\nCounter target spell.

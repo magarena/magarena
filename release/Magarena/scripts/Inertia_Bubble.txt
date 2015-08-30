@@ -1,5 +1,5 @@
 name=Inertia Bubble
-image=http://mtgimage.com/card/inertia%20bubble.jpg
+image=http://magiccards.info/scans/en/mi/37.jpg
 value=2.167
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={1}{U}
 ability=Enchanted artifact doesn't untap during its controller's untap step.
 enchant=tap,neg artifact
 timing=enchantment
-oracle=Enchant artifact. Enchanted artifact doesn't untap during its controller's untap step.
+oracle=Enchant artifact\nEnchanted artifact doesn't untap during its controller's untap step.

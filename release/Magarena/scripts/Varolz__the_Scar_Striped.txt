@@ -1,5 +1,5 @@
 name=Varolz, the Scar-Striped
-image=http://mtgimage.com/card/varolz%2C%20the%20scar%2Dstriped.jpg
+image=http://magiccards.info/scans/en/dgm/112.jpg
 value=3.908
 rarity=R
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Sacrifice another creature: Regenerate SN.
 timing=main
 requires_groovy_code
-oracle=Each creature card in your graveyard has scavenge. The scavenge cost is equal to its mana cost. Sacrifice another creature: Regenerate Varolz, the Scar-Striped.
+oracle=Each creature card in your graveyard has scavenge. The scavenge cost is equal to its mana cost.\nSacrifice another creature: Regenerate Varolz, the Scar-Striped.

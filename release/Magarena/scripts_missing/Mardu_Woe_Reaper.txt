@@ -1,5 +1,5 @@
 name=Mardu Woe-Reaper
-image=http://mtgimage.com/card/mardu%20woe-reaper.jpg
+image=http://magiccards.info/scans/en/frf/18.jpg
 value=2.500
 rarity=U
 type=Creature

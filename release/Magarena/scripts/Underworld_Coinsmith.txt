@@ -1,5 +1,5 @@
 name=Underworld Coinsmith
-image=http://mtgimage.com/card/underworld%20coinsmith.jpg
+image=http://magiccards.info/scans/en/jou/157.jpg
 value=3.677
 rarity=U
 type=Enchantment,Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Whenever SN or another enchantment enters the battlefield under your control, you gain 1 life.;\
         {W}{B}, Pay 1 life: Each opponent loses 1 life.
 timing=main
-oracle=Constellation — Whenever Underworld Coinsmith or another enchantment enters the battlefield under your control, you gain 1 life. {W}{B}, Pay 1 life: Each opponent loses 1 life.
+oracle=Constellation — Whenever Underworld Coinsmith or another enchantment enters the battlefield under your control, you gain 1 life.\n{W}{B}, Pay 1 life: Each opponent loses 1 life.

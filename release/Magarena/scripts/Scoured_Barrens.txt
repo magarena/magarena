@@ -1,5 +1,5 @@
 name=Scoured Barrens
-image=http://mtgimage.com/card/scoured%20barrens.jpg
+image=http://magiccards.info/scans/en/frf/171.jpg
 value=3.333
 rarity=C
 type=Land
@@ -8,4 +8,4 @@ ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, you gain 1 life.;\
         {T}: Add {W} or {B} to your mana pool.
 timing=tapland
-oracle=Scoured Barrens enters the battlefield tapped. When Scoured Barrens enters the battlefield, you gain 1 life. {T}: Add {W} or {B} to your mana pool.
+oracle=Scoured Barrens enters the battlefield tapped.\nWhen Scoured Barrens enters the battlefield, you gain 1 life.\n{T}: Add {W} or {B} to your mana pool.

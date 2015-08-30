@@ -1,6 +1,6 @@
 name=Tin-Wing Chimera
-image=http://mtgimage.com/card/tin-wing%20chimera.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vi/157.jpg
+value=3.346
 rarity=U
 type=Artifact,Creature
 subtype=Chimera
@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying
 timing=main
 requires_groovy_code
-oracle=Flying. Sacrifice Tin-Wing Chimera: Put a +2/+2 counter on target Chimera creature. It gains flying.
+oracle=Flying\nSacrifice Tin-Wing Chimera: Put a +2/+2 counter on target Chimera creature. It gains flying.

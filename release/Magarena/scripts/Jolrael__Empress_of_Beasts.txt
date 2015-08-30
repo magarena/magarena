@@ -1,0 +1,11 @@
+name=Jolrael, Empress of Beasts
+image=http://magiccards.info/scans/en/tsts/81.jpg
+value=4.022
+rarity=R
+type=Legendary,Creature
+subtype=Human,Spellshaper
+cost={3}{G}{G}
+pt=3/3
+timing=main
+requires_groovy_code
+oracle={2}{G}, {T}, Discard two cards: All lands target player controls become 3/3 creatures until end of turn. They're still lands.

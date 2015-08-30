@@ -1,10 +1,10 @@
 name=Engineered Explosives
-image=http://mtgimage.com/card/engineered%20explosives.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mma/204.jpg
+value=4.227
 rarity=R
 type=Artifact
 cost={X}
 ability=Sunburst;\
         {2}, Sacrifice SN: Destroy each nonland permanent with converted mana cost equal to the number of charge counters on SN.
-timing=main
-oracle=Sunburst. {2}, Sacrifice Engineered Explosives: Destroy each nonland permanent with converted mana cost equal to the number of charge counters on Engineered Explosives.
+timing=artifact
+oracle=Sunburst\n{2}, Sacrifice Engineered Explosives: Destroy each nonland permanent with converted mana cost equal to the number of charge counters on Engineered Explosives.

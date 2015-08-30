@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 new MagicWeakenTargetPicker(3,3),
                 this,
                 "Target creature\$ and all other creatures with the same " +
@@ -14,14 +14,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicTargetFilter<MagicPermanent> targetFilter =
-                    new MagicNameTargetFilter(it.getName());
-                final Collection<MagicPermanent> targets =
-                    game.filterPermanents(event.getPlayer(),targetFilter);
-                for (final MagicPermanent permanent : targets) {
-                    if (permanent.isCreature()) {
-                        game.doAction(new MagicChangeTurnPTAction(permanent,-3,-3));
-                    }
+                final MagicTargetFilter<MagicPermanent> targetFilter = new MagicNameTargetFilter(CREATURE, it.getName());
+                targetFilter.filter(event) each {
+                    final MagicPermanent creature ->
+                    game.doAction(new ChangeTurnPTAction(creature,-3,-3));
                 }
             });
         }

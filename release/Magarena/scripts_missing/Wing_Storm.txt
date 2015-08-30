@@ -1,9 +1,0 @@
-name=Wing Storm
-image=http://mtgimage.com/card/wing%20storm.jpg
-value=2.500
-rarity=U
-type=Sorcery
-cost={2}{G}
-effect=SN deals damage to each player equal to twice the number of creatures with flying that player controls.
-timing=main
-oracle=Wing Storm deals damage to each player equal to twice the number of creatures with flying that player controls.

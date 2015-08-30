@@ -1,9 +1,10 @@
 name=Tower Defense
-image=http://mtgimage.com/card/tower%20defense.jpg
+image=http://magiccards.info/scans/en/gtc/137.jpg
 value=2.824
 rarity=U
 type=Instant
 cost={1}{G}
+ability=Cast SN with AI only if you control a creature.
 effect=Creatures you control get +0/+5 and gain reach until end of turn.
 timing=pump
 oracle=Creatures you control get +0/+5 and gain reach until end of turn.

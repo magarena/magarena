@@ -1,4 +1,4 @@
-def choice = MagicTargetChoice.Negative("target nonartifact creature");
+def choice = Negative("target nonartifact creature");
 
 [
     new MagicSpellCardEvent() {
@@ -16,9 +16,9 @@ def choice = MagicTargetChoice.Negative("target nonartifact creature");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicDestroyAction(it));
-                game.doAction(new MagicMillLibraryAction(it.getController(),it.getPower()));
-                game.logAppendMessage(event.getPlayer(),"("+it.getPower()+")");
+                game.doAction(new DestroyAction(it));
+                game.doAction(new MillLibraryAction(it.getController(),it.getPower()));
+                game.logAppendValue(event.getPlayer(),it.getPower());
             });
         }
     }

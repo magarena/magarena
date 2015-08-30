@@ -1,5 +1,5 @@
 name=Lightning Reaver
-image=http://mtgimage.com/card/lightning%20reaver.jpg
+image=http://magiccards.info/scans/en/arb/42.jpg
 value=3.796
 rarity=R
 type=Creature
@@ -11,4 +11,4 @@ ability=fear;\
         Whenever SN deals combat damage to a player, put a charge counter on SN.
 timing=main
 requires_groovy_code
-oracle=Haste; fear. Whenever Lightning Reaver deals combat damage to a player, put a charge counter on it. At the beginning of your end step, Lightning Reaver deals damage equal to the number of charge counters on it to each opponent.
+oracle=Haste, fear\nWhenever Lightning Reaver deals combat damage to a player, put a charge counter on it.\nAt the beginning of your end step, Lightning Reaver deals damage equal to the number of charge counters on it to each opponent.

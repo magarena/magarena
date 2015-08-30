@@ -1,6 +1,6 @@
 name=Howlgeist
-image=http://mtgimage.com/card/howlgeist.jpg
-value=2.500
+image=http://magiccards.info/scans/en/avr/182.jpg
+value=3.059
 rarity=U
 type=Creature
 subtype=Spirit,Wolf
@@ -9,4 +9,4 @@ pt=4/2
 ability=Creatures with power less than SN's power can't block it.;\
         Undying
 timing=main
-oracle=Creatures with power less than Howlgeist's power can't block it. Undying
+oracle=Creatures with power less than Howlgeist's power can't block it.\nUndying

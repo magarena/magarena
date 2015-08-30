@@ -1,6 +1,6 @@
 name=Mortician Beetle
-image=http://mtgimage.com/card/mortician%20beetle.jpg
-value=2.500
+image=http://magiccards.info/scans/en/roe/117.jpg
+value=4.175
 rarity=R
 type=Creature
 subtype=Insect

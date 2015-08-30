@@ -1,5 +1,5 @@
 name=Skyspear Cavalry
-image=http://mtgimage.com/card/skyspear%20cavalry.jpg
+image=http://magiccards.info/scans/en/jou/26.jpg
 value=3.405
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         Double strike
 timing=main
-oracle=Flying. Double strike
+oracle=Flying\nDouble strike

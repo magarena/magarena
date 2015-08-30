@@ -1,5 +1,5 @@
 name=Death's-Head Buzzard
-image=http://mtgimage.com/card/death's-head%20buzzard.jpg
+image=http://magiccards.info/scans/en/vma/115.jpg
 value=4.000
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{B}{B}
 pt=2/1
 ability=flying;When SN dies, all creatures get -1/-1 until end of turn.
 timing=main
-oracle=Flying. When Death's-Head Buzzard dies, all creatures get -1/-1 until end of turn.
+oracle=Flying\nWhen Death's-Head Buzzard dies, all creatures get -1/-1 until end of turn.

@@ -1,5 +1,5 @@
 name=Fiery Hellhound
-image=http://mtgimage.com/card/fiery%20hellhound.jpg
+image=http://magiccards.info/scans/en/ddi/49.jpg
 value=2.864
 rarity=C
 type=Creature

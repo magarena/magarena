@@ -1,9 +1,9 @@
 name=Ion Storm
-image=http://mtgimage.com/card/ion%20storm.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5dn/68.jpg
+value=4.034
 rarity=R
 type=Enchantment
 cost={2}{R}
 ability={1}{R}, Remove a +1/+1 counter or a charge counter from a permanent you control: SN deals 2 damage to target creature or player.
-timing=main
+timing=enchantment
 oracle={1}{R}, Remove a +1/+1 counter or a charge counter from a permanent you control: Ion Storm deals 2 damage to target creature or player.

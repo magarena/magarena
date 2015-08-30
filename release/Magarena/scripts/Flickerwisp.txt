@@ -1,12 +1,12 @@
 name=Flickerwisp
-image=http://mtgimage.com/card/flickerwisp.jpg
+image=http://magiccards.info/scans/en/c14/71.jpg
 value=3.737
 rarity=U
 type=Creature
 subtype=Elemental
 cost={1}{W}{W}
 pt=3/1
-ability=Flying
+ability=Flying;\
+        When SN enters the battlefield, exile another target permanent. Return that card to the battlefield under its owner's control at the beginning of the next end step.
 timing=main
-requires_groovy_code
-oracle=Flying. When Flickerwisp enters the battlefield, exile another target permanent. Return that card to the battlefield under its owner's control at the beginning of the next end step.
+oracle=Flying\nWhen Flickerwisp enters the battlefield, exile another target permanent. Return that card to the battlefield under its owner's control at the beginning of the next end step.

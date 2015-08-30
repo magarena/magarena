@@ -1,5 +1,5 @@
 name=Vaporkin
-image=http://mtgimage.com/card/vaporkin.jpg
+image=http://magiccards.info/scans/en/ths/72.jpg
 value=3.382
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{U}
 pt=2/1
 ability=flying;SN can block only creatures with flying.
 timing=main
-oracle=Flying. Vaporkin can block only creatures with flying.
+oracle=Flying\nVaporkin can block only creatures with flying.

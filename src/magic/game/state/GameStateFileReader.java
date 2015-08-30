@@ -4,7 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
-import magic.data.FileIO;
+import magic.utility.FileIO;
 import magic.utility.MagicFileSystem;
 
 public final class GameStateFileReader {
@@ -47,11 +47,7 @@ public final class GameStateFileReader {
         player.setDeckProfileColors(prop.getProperty(keyPrefix + ".deck.color"));
     }
 
-    private static void setCardsZoneState(
-            final Properties prop,
-            final String zoneName,
-            final List<GameCardState> cards,
-            final int playerIndex) {
+    private static void setCardsZoneState(final Properties prop, final String zoneName, final List<GameCardState> cards, final int playerIndex) {
 
         final List<String> usedKeys = new ArrayList<>();
         for (int i = 0; i < prop.size(); i++) {

@@ -1,6 +1,6 @@
 name=Vampiric Embrace
-image=http://mtgimage.com/card/vampiric%20embrace.jpg
-value=2.500
+image=http://magiccards.info/scans/en/us/164.jpg
+value=3.788
 rarity=U
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={2}{B}{B}
 ability=Enchant creature;\
         Enchanted creature gets +2/+2 and has flying.;\
         Whenever a creature dealt damage by enchanted creature this turn dies, put a +1/+1 counter on that creature.
-timing=main
-oracle=Enchant creature. Enchanted creature gets +2/+2 and has flying. Whenever a creature dealt damage by enchanted creature this turn dies, put a +1/+1 counter on that creature.
+timing=aura
+oracle=Enchant creature\nEnchanted creature gets +2/+2 and has flying.\nWhenever a creature dealt damage by enchanted creature this turn dies, put a +1/+1 counter on that creature.

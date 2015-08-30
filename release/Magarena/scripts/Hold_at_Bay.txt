@@ -1,5 +1,5 @@
 name=Hold at Bay
-image=http://mtgimage.com/card/hold%20at%20bay.jpg
+image=http://magiccards.info/scans/en/bng/18.jpg
 value=1.855
 rarity=C
 type=Instant

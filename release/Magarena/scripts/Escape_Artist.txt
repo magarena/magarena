@@ -1,5 +1,5 @@
 name=Escape Artist
-image=http://mtgimage.com/card/escape%20artist.jpg
+image=http://magiccards.info/scans/en/od/84.jpg
 value=3.057
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=SN can't be blocked;\
         {U},Discard a card:Return SN to its owner's hand.
 timing=main
-oracle=Escape Artist can't be blocked. {U}, Discard a card: Return Escape Artist to its owner's hand.
+oracle=Escape Artist can't be blocked.\n{U}, Discard a card: Return Escape Artist to its owner's hand.

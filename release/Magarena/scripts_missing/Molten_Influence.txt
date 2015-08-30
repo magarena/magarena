@@ -1,6 +1,6 @@
 name=Molten Influence
-image=http://mtgimage.com/card/molten%20influence.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/207.jpg
+value=3.784
 rarity=R
 type=Instant
 cost={1}{R}

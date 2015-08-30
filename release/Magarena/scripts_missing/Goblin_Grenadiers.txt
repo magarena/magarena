@@ -1,6 +1,6 @@
 name=Goblin Grenadiers
-image=http://mtgimage.com/card/goblin%20grenadiers.jpg
-value=2.500
+image=http://magiccards.info/scans/en/wl/104.jpg
+value=3.650
 rarity=U
 type=Creature
 subtype=Goblin

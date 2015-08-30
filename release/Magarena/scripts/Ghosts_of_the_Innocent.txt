@@ -1,0 +1,11 @@
+name=Ghosts of the Innocent
+image=http://magiccards.info/scans/en/rav/20.jpg
+value=2.730
+rarity=R
+type=Creature
+subtype=Spirit
+cost={5}{W}{W}
+pt=4/5
+timing=main
+requires_groovy_code
+oracle=If a source would deal damage to a creature or player, it deals half that damage, rounded down, to that creature or player instead.

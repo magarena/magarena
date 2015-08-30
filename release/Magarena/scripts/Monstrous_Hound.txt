@@ -1,5 +1,5 @@
 name=Monstrous Hound
-image=http://mtgimage.com/card/monstrous%20hound.jpg
+image=http://magiccards.info/scans/en/ex/89.jpg
 value=2.128
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=SN can't attack unless you control more lands than defending player.;\
         SN can't block unless you control more lands than attacking player.
 timing=main
-oracle=Monstrous Hound can't attack unless you control more lands than defending player. Monstrous Hound can't block unless you control more lands than attacking player.
+oracle=Monstrous Hound can't attack unless you control more lands than defending player.\nMonstrous Hound can't block unless you control more lands than attacking player.

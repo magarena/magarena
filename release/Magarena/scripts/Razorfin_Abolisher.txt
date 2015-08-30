@@ -1,5 +1,5 @@
 name=Razorfin Abolisher
-image=http://mtgimage.com/card/razorfin%20abolisher.jpg
+image=http://magiccards.info/scans/en/eve/28.jpg
 value=2.959
 rarity=U
 type=Creature

@@ -1,10 +1,10 @@
 name=Pitfall Trap
-image=http://mtgimage.com/card/pitfall%20trap.jpg
-value=2.500
+image=http://magiccards.info/scans/en/zen/32.jpg
+value=3.058
 rarity=U
 type=Instant
 subtype=Trap
 cost={2}{W}
 effect=If exactly one creature is attacking, you may pay {W} rather than pay SN's mana cost.~Destroy target attacking creature without flying.
 timing=removal
-oracle=If exactly one creature is attacking, you may pay {W} rather than pay Pitfall Trap's mana cost. Destroy target attacking creature without flying.
+oracle=If exactly one creature is attacking, you may pay {W} rather than pay Pitfall Trap's mana cost.\nDestroy target attacking creature without flying.

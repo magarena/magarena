@@ -1,6 +1,6 @@
 name=Frogtosser Banneret
-image=http://mtgimage.com/card/frogtosser%20banneret.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mt/64.jpg
+value=3.713
 rarity=C
 type=Creature
 subtype=Goblin,Rogue
@@ -9,4 +9,4 @@ pt=1/1
 ability=Haste;\
         Goblin spells and Rogue spells you cast cost {1} less to cast.
 timing=main
-oracle=Haste. Goblin spells and Rogue spells you cast cost {1} less to cast.
+oracle=Haste\nGoblin spells and Rogue spells you cast cost {1} less to cast.

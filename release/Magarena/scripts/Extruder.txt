@@ -1,5 +1,5 @@
 name=Extruder
-image=http://mtgimage.com/card/extruder.jpg
+image=http://magiccards.info/scans/en/ud/130.jpg
 value=3.190
 rarity=U
 type=Artifact,Creature
@@ -9,4 +9,4 @@ pt=4/3
 ability=echo {4};\
         Sacrifice an artifact: Put a +1/+1 counter on target creature.
 timing=main
-oracle=Echo {4}. Sacrifice an artifact: Put a +1/+1 counter on target creature.
+oracle=Echo {4}\nSacrifice an artifact: Put a +1/+1 counter on target creature.

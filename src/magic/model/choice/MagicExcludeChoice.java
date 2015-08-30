@@ -26,11 +26,9 @@ public class MagicExcludeChoice extends MagicChoice {
     }
 
     @Override
-    Collection<Object> getArtificialOptions(
-            final MagicGame game,
-            final MagicEvent event,
-            final MagicPlayer player,
-            final MagicSource source) {
+    Collection<Object> getArtificialOptions(final MagicGame game, final MagicEvent event) {
+        final MagicPlayer player = event.getPlayer();
+        final MagicSource source = event.getSource();
 
         final List<MagicPermanent> excludePermanents=new ArrayList<MagicPermanent>();
         for (final MagicPermanent permanent : player.getPermanents()) {
@@ -61,11 +59,7 @@ public class MagicExcludeChoice extends MagicChoice {
     }
 
     @Override
-    public Object[] getPlayerChoiceResults(
-            final IUIGameController controller,
-            final MagicGame game,
-            final MagicPlayer player,
-            final MagicSource source) {
+    public Object[] getPlayerChoiceResults(final IUIGameController controller, final MagicGame game, final MagicEvent event) {
         // Should be done only by AI player.
         throw new UnsupportedOperationException();
     }

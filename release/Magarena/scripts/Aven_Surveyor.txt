@@ -1,0 +1,14 @@
+name=Aven Surveyor
+image=http://magiccards.info/scans/en/frf/31.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Bird,Scout
+cost={3}{U}{U}
+pt=2/2
+ability=Flying;\
+        When SN enters the battlefield, choose one — \
+        (1) Put a +1/+1 counter on SN. \
+        (2) Return target creature to its owner's hand.
+timing=main
+oracle=Flying\nWhen Aven Surveyor enters the battlefield, choose one —\n• Put a +1/+1 counter on Aven Surveyor.\n• Return target creature to its owner's hand.

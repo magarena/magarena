@@ -1,11 +1,11 @@
 name=Vedalken Ghoul
-image=http://mtgimage.com/card/vedalken%20ghoul.jpg
+image=http://magiccards.info/scans/en/arb/32.jpg
 value=3.000
 rarity=C
 type=Creature
 subtype=Vedalken,Zombie
 cost={U}{B}
 pt=1/1
+ability=Whenever SN becomes blocked, defending player loses 4 life.
 timing=main
-requires_groovy_code
 oracle=Whenever Vedalken Ghoul becomes blocked, defending player loses 4 life.

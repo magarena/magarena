@@ -1,12 +1,12 @@
 name=Daru Stinger
-image=http://mtgimage.com/card/daru%20stinger.jpg
-value=2.500
+image=http://magiccards.info/scans/en/le/10.jpg
+value=3.162
 rarity=C
 type=Creature
-subtype=Human,Soldier
+subtype=Soldier
 cost={3}{W}
 pt=1/1
 ability=Amplify 1;\
         {T}: SN deals damage equal to the number of +1/+1 counters on it to target attacking or blocking creature.
 timing=main
-oracle=Amplify 1. {T}: Daru Stinger deals damage equal to the number of +1/+1 counters on it to target attacking or blocking creature.
+oracle=Amplify 1\n{T}: Daru Stinger deals damage equal to the number of +1/+1 counters on it to target attacking or blocking creature.

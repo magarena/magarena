@@ -1,6 +1,6 @@
 name=Phyrexian Colossus
-image=http://mtgimage.com/card/phyrexian%20colossus.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pvc/16.jpg
+value=4.134
 rarity=R
 type=Artifact,Creature
 subtype=Golem
@@ -9,5 +9,5 @@ pt=8/8
 ability=SN doesn't untap during your untap step.;\
         Pay 8 life: Untap SN.;\
         SN can't be blocked except by three or more creatures.
-timing=main
-oracle=Phyrexian Colossus doesn't untap during your untap step. Pay 8 life: Untap Phyrexian Colossus. Phyrexian Colossus can't be blocked except by three or more creatures.
+timing=artifact
+oracle=Phyrexian Colossus doesn't untap during your untap step.\nPay 8 life: Untap Phyrexian Colossus.\nPhyrexian Colossus can't be blocked except by three or more creatures.

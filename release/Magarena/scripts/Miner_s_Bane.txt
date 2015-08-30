@@ -1,5 +1,5 @@
 name=Miner's Bane
-image=http://mtgimage.com/card/miner%27s%20bane.jpg
+image=http://magiccards.info/scans/en/m15/157.jpg
 value=2.071
 rarity=C
 type=Creature

@@ -1,0 +1,12 @@
+name=Atarka, World Render
+image=http://magiccards.info/scans/en/frf/149.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Dragon
+cost={5}{R}{G}
+pt=6/4
+ability=Flying; trample;\
+        Whenever a Dragon you control attacks, RN gains double strike until end of turn.
+timing=main
+oracle=Flying, trample\nWhenever a Dragon you control attacks, it gains double strike until end of turn.

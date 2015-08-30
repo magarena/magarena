@@ -1,6 +1,6 @@
 name=Kumano's Pupils
-image=http://mtgimage.com/card/kumano%27s%20pupils.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/177.jpg
+value=1.241
 rarity=U
 type=Creature
 subtype=Human,Shaman

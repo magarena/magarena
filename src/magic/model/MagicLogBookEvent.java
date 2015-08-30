@@ -7,7 +7,7 @@ public class MagicLogBookEvent extends EventObject {
 
     private final MagicMessage _msg;
 
-    public MagicLogBookEvent(Object source, MagicMessage msg) {
+    public MagicLogBookEvent(final Object source, final MagicMessage msg) {
         super(source);
         _msg = msg;
     }

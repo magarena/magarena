@@ -1,9 +1,9 @@
 name=Duskmantle, House of Shadow
-image=http://mtgimage.com/card/duskmantle,%20house%20of%20shadow.jpg
+image=http://magiccards.info/scans/en/rav/277.jpg
 value=3.045
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\
         {U}{B},{T}:Target player puts the top card of his or her library into his or her graveyard.
 timing=land
-oracle={T}: Add {1} to your mana pool. {U}{B}, {T}: Target player puts the top card of his or her library into his or her graveyard.
+oracle={T}: Add {1} to your mana pool.\n{U}{B}, {T}: Target player puts the top card of his or her library into his or her graveyard.

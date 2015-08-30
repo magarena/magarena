@@ -1,11 +1,11 @@
 name=Earth Servant
-image=http://mtgimage.com/card/earth%20servant.jpg
+image=http://magiccards.info/scans/en/ddi/60.jpg
 value=2.562
 rarity=U
 type=Creature
 subtype=Elemental
 cost={5}{R}
 pt=4/4
-timing=smain
-requires_groovy_code
+ability=SN gets +0/+1 for each Mountain you control.
+timing=main
 oracle=Earth Servant gets +0/+1 for each Mountain you control.

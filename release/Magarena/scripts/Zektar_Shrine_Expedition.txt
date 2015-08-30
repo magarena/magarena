@@ -1,10 +1,10 @@
 name=Zektar Shrine Expedition
-image=http://mtgimage.com/card/zektar%20shrine%20expedition.jpg
+image=http://magiccards.info/scans/en/zen/155.jpg
 value=3.860
 rarity=C
 type=Enchantment
 cost={1}{R}
-ability=Whenever a land enters the battlefield under your control, you may put a quest counter on SN.
+ability=Whenever a land enters the battlefield under your control, you may put a quest counter on SN.;\
+        Remove three quest counters from SN, Sacrifice SN: Put a 7/1 red Elemental creature token with trample and haste onto the battlefield. Exile it at the beginning of the next end step.
 timing=enchantment
-requires_groovy_code
-oracle=Landfall — Whenever a land enters the battlefield under your control, you may put a quest counter on Zektar Shrine Expedition. Remove three quest counters from Zektar Shrine Expedition and sacrifice it: Put a 7/1 red Elemental creature token with trample and haste onto the battlefield. Exile it at the beginning of the next end step.
+oracle=Landfall — Whenever a land enters the battlefield under your control, you may put a quest counter on Zektar Shrine Expedition.\nRemove three quest counters from Zektar Shrine Expedition and sacrifice it: Put a 7/1 red Elemental creature token with trample and haste onto the battlefield. Exile it at the beginning of the next end step.

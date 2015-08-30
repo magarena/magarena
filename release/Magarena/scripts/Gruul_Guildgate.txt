@@ -1,5 +1,5 @@
 name=Gruul Guildgate
-image=http://mtgimage.com/card/gruul%20guildgate.jpg
+image=http://magiccards.info/scans/en/c13/294.jpg
 value=3.679
 rarity=C
 type=Land
@@ -8,4 +8,4 @@ mana=r3g3
 ability={T}: Add {R} or {G} to your mana pool.;\
         SN enters the battlefield tapped.
 timing=tapland
-oracle=Gruul Guildgate enters the battlefield tapped. {T}: Add {R} or {G} to your mana pool.
+oracle=Gruul Guildgate enters the battlefield tapped.\n{T}: Add {R} or {G} to your mana pool.

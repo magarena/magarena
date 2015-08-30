@@ -1,5 +1,5 @@
 name=Abyssal Nightstalker
-image=http://mtgimage.com/card/abyssal%20nightstalker.jpg
+image=http://magiccards.info/scans/en/po2/1.jpg
 value=2.859
 rarity=U
 type=Creature

@@ -1,5 +1,5 @@
 name=Golgari Longlegs
-image=http://mtgimage.com/card/golgari%20longlegs.jpg
+image=http://magiccards.info/scans/en/rtr/216.jpg
 value=2.463
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Insect
 cost={3}{B/G}{B/G}
 pt=5/4
 timing=main
+oracle=NONE

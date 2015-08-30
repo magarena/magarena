@@ -3,7 +3,7 @@ package magic.model.event;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.action.MagicPermanentAction;
-import magic.model.action.MagicSoulbondAction;
+import magic.model.action.SoulbondAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicOtherPermanentTargetFilter;
@@ -43,7 +43,7 @@ public class MagicSoulbondEvent extends MagicEvent {
             if (event.isYes()) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent creature) {
-                        game.doAction(new MagicSoulbondAction(
+                        game.doAction(new SoulbondAction(
                             event.getPermanent(),
                             creature,
                             true

@@ -22,7 +22,7 @@
                     event,
                     new MagicTargetChoice(
                         new MagicCardFilterImpl() {
-                            public boolean accept(final MagicGame game2,final MagicPlayer player,final MagicCard target) {
+                            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
                                 return target.getName().equals(name);
                             }
                             public boolean acceptType(final MagicTargetType targetType) {

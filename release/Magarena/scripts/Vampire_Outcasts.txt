@@ -1,5 +1,5 @@
 name=Vampire Outcasts
-image=http://mtgimage.com/card/vampire%20outcasts.jpg
+image=http://magiccards.info/scans/en/ddk/15.jpg
 value=2.962
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{B}{B}
 pt=2/2
 ability=bloodthirst 2;lifelink
 timing=main
-oracle=Bloodthirst 2. Lifelink
+oracle=Bloodthirst 2\nLifelink

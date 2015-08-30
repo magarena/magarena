@@ -1,9 +1,0 @@
-name=Evolution Charm
-image=http://mtgimage.com/card/evolution%20charm.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={1}{G}
-effect=Choose one — • Search your library for a basic land card, reveal it, put it into your hand, then shuffle your library. • Return target creature card from your graveyard to your hand. • Target creature gains flying until end of turn.
-timing=removal
-oracle=Choose one — • Search your library for a basic land card, reveal it, put it into your hand, then shuffle your library. • Return target creature card from your graveyard to your hand. • Target creature gains flying until end of turn.

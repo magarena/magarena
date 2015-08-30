@@ -1,10 +1,10 @@
 name=Thieves' Fortune
-image=http://mtgimage.com/card/thieves%27%20fortune.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mt/54.jpg
+value=3.016
 rarity=U
 type=Tribal,Instant
 subtype=Rogue
 cost={2}{U}
 effect=Prowl {U}~Look at the top four cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order.
 timing=removal
-oracle=Prowl {U}. Look at the top four cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order.
+oracle=Prowl {U}\nLook at the top four cards of your library. Put one of them into your hand and the rest on the bottom of your library in any order.

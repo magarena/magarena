@@ -1,5 +1,5 @@
 name=Disciple of Grace
-image=http://mtgimage.com/card/disciple%20of%20grace.jpg
+image=http://magiccards.info/scans/en/on/25.jpg
 value=3.018
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{W}
 pt=1/2
 ability=cycling {2};protection from black
 timing=main
-oracle=Protection from black. Cycling {2}
+oracle=Protection from black\nCycling {2}

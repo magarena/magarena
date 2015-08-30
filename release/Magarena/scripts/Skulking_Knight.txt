@@ -1,5 +1,5 @@
 name=Skulking Knight
-image=http://mtgimage.com/card/skulking%20knight.jpg
+image=http://magiccards.info/scans/en/ts/130.jpg
 value=2.724
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=flanking;\
         When SN becomes the target of a spell or ability, sacrifice it.
 timing=main
-oracle=Flanking. When Skulking Knight becomes the target of a spell or ability, sacrifice it.
+oracle=Flanking\nWhen Skulking Knight becomes the target of a spell or ability, sacrifice it.

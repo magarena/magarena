@@ -1,9 +1,0 @@
-name=Necra Sanctuary
-image=http://mtgimage.com/card/necra%20sanctuary.jpg
-value=2.500
-rarity=U
-type=Enchantment
-cost={2}{B}
-ability=At the beginning of your upkeep, if you control a green or white permanent, target player loses 1 life. If you control a green permanent and a white permanent, that player loses 3 life instead.
-timing=main
-oracle=At the beginning of your upkeep, if you control a green or white permanent, target player loses 1 life. If you control a green permanent and a white permanent, that player loses 3 life instead.

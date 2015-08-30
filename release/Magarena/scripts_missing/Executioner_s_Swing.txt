@@ -1,6 +1,6 @@
 name=Executioner's Swing
-image=http://mtgimage.com/card/executioner%27s%20swing.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gtc/161.jpg
+value=2.815
 rarity=C
 type=Instant
 cost={W}{B}

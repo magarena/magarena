@@ -21,7 +21,7 @@
                 game.addEvent(new MagicSacrificePermanentEvent(
                     permanent,
                     player,
-                    MagicTargetChoice.SACRIFICE_PERMANENT
+                    SACRIFICE_PERMANENT
                 ));
                 amount--;
             }

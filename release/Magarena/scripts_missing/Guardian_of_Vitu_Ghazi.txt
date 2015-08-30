@@ -1,6 +1,6 @@
 name=Guardian of Vitu-Ghazi
-image=http://mtgimage.com/card/guardian%20of%20vitu-ghazi.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rav/212.jpg
+value=2.978
 rarity=C
 type=Creature
 subtype=Elemental
@@ -9,4 +9,4 @@ pt=4/7
 ability=Convoke;\
         Vigilance
 timing=main
-oracle=Convoke. Vigilance
+oracle=Convoke\nVigilance

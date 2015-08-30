@@ -1,5 +1,5 @@
 name=Phyrexian War Beast
-image=http://mtgimage.com/card/phyrexian%20war%20beast.jpg
+image=http://magiccards.info/scans/en/med/162.jpg
 value=3.786
 rarity=C
 type=Artifact,Creature

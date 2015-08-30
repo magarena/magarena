@@ -1,6 +1,6 @@
 name=Bala Ged Thief
-image=http://mtgimage.com/card/bala%20ged%20thief.jpg
-value=2.500
+image=http://magiccards.info/scans/en/zen/79.jpg
+value=3.287
 rarity=R
 type=Creature
 subtype=Human,Rogue,Ally

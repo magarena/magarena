@@ -1,5 +1,5 @@
 name=Xantid Swarm
-image=http://mtgimage.com/card/xantid%20swarm.jpg
+image=http://magiccards.info/scans/en/sc/135.jpg
 value=4.569
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=0/1
 ability=flying
 timing=main
 requires_groovy_code
-oracle=Flying. Whenever Xantid Swarm attacks, defending player can't cast spells this turn.
+oracle=Flying\nWhenever Xantid Swarm attacks, defending player can't cast spells this turn.

@@ -1,5 +1,5 @@
 name=Academy Rector
-image=http://mtgimage.com/card/academy%20rector.jpg
+image=http://magiccards.info/scans/en/ud/1.jpg
 value=4.567
 rarity=R
 type=Creature

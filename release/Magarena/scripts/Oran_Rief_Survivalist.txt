@@ -1,5 +1,5 @@
 name=Oran-Rief Survivalist
-image=http://mtgimage.com/card/oran%2Drief%20survivalist.jpg
+image=http://magiccards.info/scans/en/zen/174.jpg
 value=3.820
 rarity=C
 type=Creature

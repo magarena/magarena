@@ -1,12 +1,12 @@
 name=Dandân
-image=http://mtgimage.com/card/dandan.jpg
+image=http://magiccards.info/scans/en/tsts/19.jpg
 value=2.984
 rarity=C
 type=Creature
 subtype=Fish
 cost={U}{U}
 pt=4/1
-ability=SN can't attack unless defending player controls an Island.
+ability=SN can't attack unless defending player controls an Island.;\
+        When you control no Islands, sacrifice SN.
 timing=main
-requires_groovy_code=Sea Serpent
-oracle=Dandân can't attack unless defending player controls an Island. When you control no Islands, sacrifice Dandân.
+oracle=Dandân can't attack unless defending player controls an Island.\nWhen you control no Islands, sacrifice Dandân.

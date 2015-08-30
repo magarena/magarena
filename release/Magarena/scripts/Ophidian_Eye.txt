@@ -1,12 +1,12 @@
 name=Ophidian Eye
-image=http://mtgimage.com/card/ophidian%20eye.jpg
+image=http://magiccards.info/scans/en/ts/70.jpg
 value=2.955
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{U}
-ability=flash
+ability=flash;\
+        Whenever enchanted creature deals damage to an opponent, you may draw a card.
 timing=flash
 enchant=unblockable,pos creature
-requires_groovy_code=Curiosity
-oracle=Flash. Enchant creature. Whenever enchanted creature deals damage to an opponent, you may draw a card.
+oracle=Flash\nEnchant creature\nWhenever enchanted creature deals damage to an opponent, you may draw a card.

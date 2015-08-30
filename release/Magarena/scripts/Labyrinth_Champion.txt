@@ -1,5 +1,5 @@
 name=Labyrinth Champion
-image=http://mtgimage.com/card/labyrinth%20champion.jpg
+image=http://magiccards.info/scans/en/ths/126.jpg
 value=3.337
 rarity=R
 type=Creature

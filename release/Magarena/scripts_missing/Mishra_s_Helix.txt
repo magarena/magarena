@@ -1,9 +1,9 @@
 name=Mishra's Helix
-image=http://mtgimage.com/card/mishra%27s%20helix.jpg
-value=2.500
+image=http://magiccards.info/scans/en/us/302.jpg
+value=4.107
 rarity=R
 type=Artifact
 cost={5}
 ability={X}, {T}: Tap X target lands.
-timing=main
+timing=artifact
 oracle={X}, {T}: Tap X target lands.

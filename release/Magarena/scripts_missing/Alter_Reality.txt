@@ -1,9 +1,9 @@
 name=Alter Reality
-image=http://mtgimage.com/card/alter%20reality.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tr/22.jpg
+value=3.851
 rarity=R
 type=Instant
 cost={1}{U}
 effect=Change the text of target spell or permanent by replacing all instances of one color word with another.~Flashback {1}{U}
 timing=removal
-oracle=Change the text of target spell or permanent by replacing all instances of one color word with another. Flashback {1}{U}
+oracle=Change the text of target spell or permanent by replacing all instances of one color word with another.\nFlashback {1}{U}

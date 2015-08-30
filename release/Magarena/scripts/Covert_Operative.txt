@@ -1,5 +1,5 @@
 name=Covert Operative
-image=http://mtgimage.com/card/covert%20operative.jpg
+image=http://magiccards.info/scans/en/le/33.jpg
 value=2.694
 rarity=C
 type=Creature

@@ -1,6 +1,6 @@
 name=Reincarnation
-image=http://mtgimage.com/card/reincarnation.jpg
-value=2.500
+image=http://magiccards.info/scans/en/c13/166.jpg
+value=4.111
 rarity=U
 type=Instant
 cost={1}{G}{G}

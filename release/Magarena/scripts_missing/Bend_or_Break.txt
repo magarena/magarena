@@ -1,6 +1,6 @@
 name=Bend or Break
-image=http://mtgimage.com/card/bend%20or%20break.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/137.jpg
+value=4.027
 rarity=R
 type=Sorcery
 cost={3}{R}

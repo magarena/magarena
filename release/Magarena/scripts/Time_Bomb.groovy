@@ -25,15 +25,12 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent source=event.getPermanent();
             final int amount=source.getCounters(MagicCounterType.Charge);
-            final Collection<MagicPermanent> creatures=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE);
-            for (final MagicPermanent creature : creatures) {
-                final MagicDamage damage=new MagicDamage(source,creature,amount);
-                game.doAction(new MagicDealDamageAction(damage));
+            game.logAppendValue(event.getPlayer(),amount);
+            CREATURE.filter(event) each {
+                game.doAction(new DealDamageAction(source,it,amount));
             }
-            for (final MagicPlayer player : game.getAPNAP()) {
-                final MagicDamage damage=new MagicDamage(source,player,amount);
-                game.doAction(new MagicDealDamageAction(damage));
+            game.getAPNAP() each {
+                game.doAction(new DealDamageAction(source,it,amount));
             }
         }
     }

@@ -1,5 +1,5 @@
 name=Chimeric Staff
-image=http://mtgimage.com/card/chimeric%20staff.jpg
+image=http://magiccards.info/scans/en/10e/313.jpg
 value=3.633
 rarity=R
 type=Artifact

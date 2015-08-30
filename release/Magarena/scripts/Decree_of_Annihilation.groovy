@@ -10,30 +10,31 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> artifacts = game.filterPermanents(MagicTargetFilterFactory.ARTIFACT);
-            for (final MagicPermanent artifact : artifacts) {
-                game.doAction(new MagicRemoveFromPlayAction(artifact,MagicLocationType.Exile));
-            }
-            final Collection<MagicPermanent> creatures = game.filterPermanents(MagicTargetFilterFactory.CREATURE);
-            for (final MagicPermanent creature : creatures) {
-                game.doAction(new MagicRemoveFromPlayAction(creature,MagicLocationType.Exile));
-            }
-            final Collection<MagicPermanent> lands = game.filterPermanents(MagicTargetFilterFactory.LAND);
-            for (final MagicPermanent land : lands) {
-                game.doAction(new MagicRemoveFromPlayAction(land,MagicLocationType.Exile));
-            }
+            final MagicPermanentList all = new MagicPermanentList();
+            all.addAll(ARTIFACT.filter(event));
+            all.addAll(CREATURE.filter(event));
+            all.addAll(LAND.filter(event));
+            game.doAction(new RemoveAllFromPlayAction(all, MagicLocationType.Exile));
+            
             for (final MagicPlayer player : game.getAPNAP()) {
                 final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
-                for (final MagicCard cardGraveyard : graveyard) {
-                    game.doAction(new MagicRemoveCardAction(cardGraveyard,MagicLocationType.Graveyard));
-                    game.doAction(new MagicMoveCardAction(cardGraveyard,MagicLocationType.Graveyard,MagicLocationType.Exile));
+                for (final MagicCard it : graveyard) {
+                    game.doAction(new ShiftCardAction(
+                        it,
+                        MagicLocationType.Graveyard,
+                        MagicLocationType.Exile
+                    ));
                 }
             }
+
             for (final MagicPlayer player : game.getAPNAP()) {
                 final MagicCardList hand = new MagicCardList(player.getHand());
-                for (final MagicCard cardHand : hand) {
-                    game.doAction(new MagicRemoveCardAction(cardHand,MagicLocationType.OwnersHand));
-                    game.doAction(new MagicMoveCardAction(cardHand,MagicLocationType.OwnersHand,MagicLocationType.Exile));
+                for (final MagicCard it : hand) {
+                    game.doAction(new ShiftCardAction(
+                        it,
+                        MagicLocationType.OwnersHand,
+                        MagicLocationType.Exile
+                    ));
                 }
             }
         }

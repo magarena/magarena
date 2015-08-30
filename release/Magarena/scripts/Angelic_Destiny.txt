@@ -1,5 +1,5 @@
 name=Angelic Destiny
-image=http://mtgimage.com/card/angelic%20destiny.jpg
+image=http://magiccards.info/scans/en/m12/3.jpg
 value=4.172
 rarity=M
 type=Enchantment
@@ -10,4 +10,4 @@ given_subtype=Angel
 timing=aura
 enchant=pump,pos creature
 requires_groovy_code
-oracle=Enchant creature. Enchanted creature gets +4/+4, has flying and first strike, and is an Angel in addition to its other types. When enchanted creature dies, return Angelic Destiny to its owner's hand.
+oracle=Enchant creature\nEnchanted creature gets +4/+4, has flying and first strike, and is an Angel in addition to its other types.\nWhen enchanted creature dies, return Angelic Destiny to its owner's hand.

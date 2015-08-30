@@ -1,6 +1,6 @@
 name=Atogatog
-image=http://mtgimage.com/card/atogatog.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/286.jpg
+value=3.532
 rarity=R
 type=Legendary,Creature
 subtype=Atog

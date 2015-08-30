@@ -1,5 +1,5 @@
 name=Battlegrace Angel
-image=http://mtgimage.com/card/battlegrace%20angel.jpg
+image=http://magiccards.info/scans/en/ala/6.jpg
 value=3.898
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=flying;exalted
 timing=fmain
 requires_groovy_code
-oracle=Flying. Exalted. Whenever a creature you control attacks alone, it gains lifelink until end of turn.
+oracle=Flying\nExalted\nWhenever a creature you control attacks alone, it gains lifelink until end of turn.

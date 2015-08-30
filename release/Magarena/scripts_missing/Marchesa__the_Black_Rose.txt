@@ -1,6 +1,6 @@
 name=Marchesa, the Black Rose
-image=http://mtgimage.com/card/marchesa%2C%20the%20black%20rose.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vma/256.jpg
+value=4.212
 rarity=M
 type=Legendary,Creature
 subtype=Human,Wizard
@@ -10,4 +10,4 @@ ability=Dethrone;\
         Other creatures you control have dethrone.;\
         Whenever a creature you control with a +1/+1 counter on it dies, return that card to the battlefield under your control at the beginning of the next end step.
 timing=main
-oracle=Dethrone. Other creatures you control have dethrone. Whenever a creature you control with a +1/+1 counter on it dies, return that card to the battlefield under your control at the beginning of the next end step.
+oracle=Dethrone\nOther creatures you control have dethrone.\nWhenever a creature you control with a +1/+1 counter on it dies, return that card to the battlefield under your control at the beginning of the next end step.

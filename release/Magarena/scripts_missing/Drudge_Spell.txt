@@ -1,10 +1,10 @@
 name=Drudge Spell
-image=http://mtgimage.com/card/drudge%20spell.jpg
-value=2.500
+image=http://magiccards.info/scans/en/hl/6.jpg
+value=3.130
 rarity=U
 type=Enchantment
 cost={B}{B}
 ability={B}, Exile two creature cards from your graveyard: Put a 1/1 black Skeleton creature token onto the battlefield. It has "{B}: Regenerate this creature.";\
         When SN leaves the battlefield, destroy all Skeleton tokens. They can't be regenerated.
-timing=main
-oracle={B}, Exile two creature cards from your graveyard: Put a 1/1 black Skeleton creature token onto the battlefield. It has "{B}: Regenerate this creature.". When Drudge Spell leaves the battlefield, destroy all Skeleton tokens. They can't be regenerated.
+timing=enchantment
+oracle={B}, Exile two creature cards from your graveyard: Put a 1/1 black Skeleton creature token onto the battlefield. It has "{B}: Regenerate this creature."\nWhen Drudge Spell leaves the battlefield, destroy all Skeleton tokens. They can't be regenerated.

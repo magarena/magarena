@@ -1,10 +1,10 @@
 name=Dakmor Salvage
-image=http://mtgimage.com/card/dakmor%20salvage.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mma/222.jpg
+value=4.387
 rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\
         {T}: Add {B} to your mana pool.;\
         Dredge 2
-timing=main
-oracle=Dakmor Salvage enters the battlefield tapped. {T}: Add {B} to your mana pool. Dredge 2
+timing=land
+oracle=Dakmor Salvage enters the battlefield tapped.\n{T}: Add {B} to your mana pool.\nDredge 2

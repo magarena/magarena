@@ -1,5 +1,5 @@
 name=Tahngarth's Rage
-image=http://mtgimage.com/card/tahngarth%27s%20rage.jpg
+image=http://magiccards.info/scans/en/tp/209.jpg
 value=2.527
 rarity=U
 type=Enchantment
@@ -8,4 +8,4 @@ cost={R}
 timing=aura
 enchant=pump,creature
 requires_groovy_code
-oracle=Enchant creature. Enchanted creature gets +3/+0 as long as it's attacking. Otherwise, it gets -2/-1.
+oracle=Enchant creature\nEnchanted creature gets +3/+0 as long as it's attacking. Otherwise, it gets -2/-1.

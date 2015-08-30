@@ -1,5 +1,5 @@
 name=Wolfbriar Elemental
-image=http://mtgimage.com/card/wolfbriar%20elemental.jpg
+image=http://magiccards.info/scans/en/c14/225.jpg
 value=4.143
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=4/4
 timing=main
 ability=multikicker {G}
 requires_groovy_code
-oracle=Multikicker {G}. When Wolfbriar Elemental enters the battlefield, put a 2/2 green Wolf creature token onto the battlefield for each time it was kicked.
+oracle=Multikicker {G}\nWhen Wolfbriar Elemental enters the battlefield, put a 2/2 green Wolf creature token onto the battlefield for each time it was kicked.

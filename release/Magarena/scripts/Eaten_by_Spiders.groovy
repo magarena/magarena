@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_CREATURE_WITH_FLYING,
+                NEG_TARGET_CREATURE_WITH_FLYING,
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target creature\$ with flying and " +
@@ -17,7 +17,7 @@
                 final MagicPermanentList perms = new MagicPermanentList();
                 perms.add(it);
                 perms.addAll(it.getEquipmentPermanents());
-                game.doAction(new MagicDestroyAction(perms));
+                game.doAction(new DestroyAction(perms));
             });
         }
     }

@@ -1,5 +1,5 @@
 name=Mortiphobia
-image=http://mtgimage.com/card/mortiphobia.jpg
+image=http://magiccards.info/scans/en/tr/72.jpg
 value=1.790
 rarity=U
 type=Enchantment
@@ -7,4 +7,4 @@ cost={1}{B}{B}
 ability={1}{B},Discard a card:Exile target card from a graveyard.;\
         {1}{B},Sacrifice SN:Exile target card from a graveyard.
 timing=enchantment
-oracle={1}{B}, Discard a card: Exile target card from a graveyard. {1}{B}, Sacrifice Mortiphobia: Exile target card from a graveyard.
+oracle={1}{B}, Discard a card: Exile target card from a graveyard.\n{1}{B}, Sacrifice Mortiphobia: Exile target card from a graveyard.

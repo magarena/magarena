@@ -1,5 +1,5 @@
 name=Phantasmal Dragon
-image=http://mtgimage.com/card/phantasmal%20dragon.jpg
+image=http://magiccards.info/scans/en/ddm/14.jpg
 value=3.900
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=5/5
 ability=flying;\
         When SN becomes the target of a spell or ability, sacrifice it.
 timing=main
-oracle=Flying. When Phantasmal Dragon becomes the target of a spell or ability, sacrifice it.
+oracle=Flying\nWhen Phantasmal Dragon becomes the target of a spell or ability, sacrifice it.

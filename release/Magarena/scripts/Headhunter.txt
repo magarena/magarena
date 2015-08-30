@@ -1,5 +1,5 @@
 name=Headhunter
-image=http://mtgimage.com/card/headhunter.jpg
+image=http://magiccards.info/scans/en/on/156.jpg
 value=3.286
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=Whenever SN deals combat damage to a player, that player discards a card.;\
         Morph {B}
 timing=main
-oracle=Whenever Headhunter deals combat damage to a player, that player discards a card. Morph {B}
+oracle=Whenever Headhunter deals combat damage to a player, that player discards a card.\nMorph {B}

@@ -1,5 +1,5 @@
 name=Tidewalker
-image=http://mtgimage.com/card/tidewalker.jpg
+image=http://magiccards.info/scans/en/pc/49.jpg
 value=3.167
 rarity=U
 type=Creature
@@ -7,6 +7,7 @@ subtype=Elemental
 cost={2}{U}
 pt=*/*
 timing=main
-ability=vanishing 0
-requires_groovy_code
-oracle=Tidewalker enters the battlefield with a time counter on it for each Island you control. Vanishing. Tidewalker's power and toughness are each equal to the number of time counters on it.
+ability=SN enters the battlefield with a time counter on it for each Island you control.;\
+        Vanishing 0;\
+        SN's power and toughness are each equal to the number of time counters on it.
+oracle=Tidewalker enters the battlefield with a time counter on it for each Island you control.\nVanishing\nTidewalker's power and toughness are each equal to the number of time counters on it.

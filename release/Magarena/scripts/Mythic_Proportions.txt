@@ -1,5 +1,5 @@
 name=Mythic Proportions
-image=http://mtgimage.com/card/mythic%20proportions.jpg
+image=http://magiccards.info/scans/en/on/274.jpg
 value=3.644
 rarity=R
 type=Enchantment
@@ -8,4 +8,4 @@ cost={4}{G}{G}{G}
 ability=Enchanted creature gets +8/+8 and has trample.
 timing=aura
 enchant=trample,pos creature
-oracle=Enchant creature. Enchanted creature gets +8/+8 and has trample.
+oracle=Enchant creature\nEnchanted creature gets +8/+8 and has trample.

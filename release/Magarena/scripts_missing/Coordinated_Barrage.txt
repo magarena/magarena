@@ -1,6 +1,6 @@
 name=Coordinated Barrage
-image=http://mtgimage.com/card/coordinated%20barrage.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mt/7.jpg
+value=2.903
 rarity=C
 type=Instant
 cost={W}

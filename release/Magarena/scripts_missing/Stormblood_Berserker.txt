@@ -1,5 +1,5 @@
 name=Stormblood Berserker
-image=http://mtgimage.com/card/stormblood%20berserker.jpg
+image=http://magiccards.info/scans/en/m12/156.jpg
 value=2.500
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=Bloodthirst 2;\
         SN can't be blocked except by two or more creatures.
 timing=main
-oracle=Bloodthirst 2. Stormblood Berserker can't be blocked except by two or more creatures.
+oracle=Bloodthirst 2\nStormblood Berserker can't be blocked except by two or more creatures.

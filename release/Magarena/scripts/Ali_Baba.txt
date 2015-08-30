@@ -1,11 +1,11 @@
 name=Ali Baba
-image=http://mtgimage.com/card/ali%20baba.jpg
+image=http://magiccards.info/scans/en/4e/193.jpg
 value=2.383
 rarity=U
 type=Creature
 subtype=Human,Rogue
 cost={R}
 pt=1/1
-ability={R}:Tap target Wall.
+ability={R}: Tap target Wall.
 timing=main
 oracle={R}: Tap target Wall.

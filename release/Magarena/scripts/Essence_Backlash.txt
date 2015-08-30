@@ -1,0 +1,9 @@
+name=Essence Backlash
+image=http://magiccards.info/scans/en/rtr/160.jpg
+value=3.000
+rarity=C
+type=Instant
+cost={2}{U}{R}
+timing=counter
+requires_groovy_code
+oracle=Counter target creature spell. Essence Backlash deals damage equal to that spell's power to its controller.

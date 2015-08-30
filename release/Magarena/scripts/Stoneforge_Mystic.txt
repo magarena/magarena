@@ -1,5 +1,5 @@
 name=Stoneforge Mystic
-image=http://mtgimage.com/card/stoneforge%20mystic.jpg
+image=http://magiccards.info/scans/en/wwk/20.jpg
 value=4.433
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=1/2
 ability=When SN enters the battlefield, you may search your library for an Equipment card, reveal it, and put it into your hand. Then shuffle your library.;\
         {1}{W}, {T}: You may put an Equipment card from your hand onto the battlefield.
 timing=main
-oracle=When Stoneforge Mystic enters the battlefield, you may search your library for an Equipment card, reveal it, put it into your hand, then shuffle your library. {1}{W}, {T}: You may put an Equipment card from your hand onto the battlefield.
+oracle=When Stoneforge Mystic enters the battlefield, you may search your library for an Equipment card, reveal it, put it into your hand, then shuffle your library.\n{1}{W}, {T}: You may put an Equipment card from your hand onto the battlefield.

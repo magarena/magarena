@@ -1,5 +1,5 @@
 name=War Priest of Thune
-image=http://mtgimage.com/card/war%20priest%20of%20thune.jpg
+image=http://magiccards.info/scans/en/m13/39.jpg
 value=4.234
 removal=1
 rarity=U

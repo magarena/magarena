@@ -1,11 +1,11 @@
 name=Eagle of the Watch
-image=http://mtgimage.com/card/eagle%20of%20the%20watch.jpg
-value=2.525
+image=http://magiccards.info/scans/en/jou/9.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Bird
 cost={2}{W}
 pt=2/1
-ability=Flying;vigilance
+ability=Flying, vigilance
 timing=main
 oracle=Flying, vigilance

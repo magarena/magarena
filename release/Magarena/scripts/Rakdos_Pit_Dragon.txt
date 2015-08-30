@@ -1,5 +1,5 @@
 name=Rakdos Pit Dragon
-image=http://mtgimage.com/card/rakdos%20pit%20dragon.jpg
+image=http://magiccards.info/scans/en/jvc/44.jpg
 value=4.270
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability={R}{R}:SN gains flying until end of turn.;\
         {R}:SN gets +1/+0 until end of turn.;\
         SN has double strike as long as you have no cards in hand.
 timing=main
-oracle={R}{R}: Rakdos Pit Dragon gains flying until end of turn. {R}: Rakdos Pit Dragon gets +1/+0 until end of turn. Hellbent — Rakdos Pit Dragon has double strike as long as you have no cards in hand.
+oracle={R}{R}: Rakdos Pit Dragon gains flying until end of turn.\n{R}: Rakdos Pit Dragon gets +1/+0 until end of turn.\nHellbent — Rakdos Pit Dragon has double strike as long as you have no cards in hand.

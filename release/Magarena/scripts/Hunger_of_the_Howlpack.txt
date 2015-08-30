@@ -1,9 +1,9 @@
 name=Hunger of the Howlpack
-image=http://mtgimage.com/card/hunger%20of%20the%20howlpack.jpg
+image=http://magiccards.info/scans/en/cns/168.jpg
 value=4.125
 rarity=C
 type=Instant
 cost={G}
 timing=pump
 requires_groovy_code
-oracle=Put a +1/+1 counter on target creature. Morbid — Put three +1/+1 counters on that creature instead if a creature died this turn.
+oracle=Put a +1/+1 counter on target creature.\nMorbid — Put three +1/+1 counters on that creature instead if a creature died this turn.

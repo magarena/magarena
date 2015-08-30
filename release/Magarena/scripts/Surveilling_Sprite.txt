@@ -1,5 +1,5 @@
 name=Surveilling Sprite
-image=http://mtgimage.com/card/surveilling%20sprite.jpg
+image=http://magiccards.info/scans/en/ddh/43.jpg
 value=3.152
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=flying;\
         When SN dies, you may draw a card.
 timing=main
-oracle=Flying. When Surveilling Sprite dies, you may draw a card.
+oracle=Flying\nWhen Surveilling Sprite dies, you may draw a card.

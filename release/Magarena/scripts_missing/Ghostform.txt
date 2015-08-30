@@ -1,6 +1,6 @@
 name=Ghostform
-image=http://mtgimage.com/card/ghostform.jpg
-value=2.500
+image=http://magiccards.info/scans/en/avr/56.jpg
+value=2.851
 rarity=C
 type=Sorcery
 cost={1}{U}

@@ -10,8 +10,8 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {  
             return (permanent.isFriend(cardOnStack) &&
-                    cardOnStack.hasColor(MagicColor.Red) && 
-                    cardOnStack.hasColor(MagicColor.White)) ?
+                    cardOnStack.hasColor(MagicColor.Blue) && 
+                    cardOnStack.hasColor(MagicColor.Green)) ?
                 new MagicEvent(
                     permanent,
                     this,
@@ -21,10 +21,10 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicAddStaticAction(
+            game.doAction(new AddStaticAction(
                 event.getPermanent(), PT
             ));
-            game.doAction(new MagicGainAbilityAction(
+            game.doAction(new GainAbilityAction(
                 event.getPermanent(), 
                 MagicAbility.Trample
             ));

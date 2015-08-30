@@ -1,5 +1,5 @@
 name=Pride Guardian
-image=http://mtgimage.com/card/pride%20guardian.jpg
+image=http://magiccards.info/scans/en/cns/77.jpg
 value=3.200
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=0/3
 ability=defender;\
         Whenever SN blocks, you gain 3 life.
 timing=main
-oracle=Defender. Whenever Pride Guardian blocks, you gain 3 life.
+oracle=Defender\nWhenever Pride Guardian blocks, you gain 3 life.

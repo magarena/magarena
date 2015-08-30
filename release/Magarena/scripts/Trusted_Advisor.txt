@@ -1,0 +1,12 @@
+name=Trusted Advisor
+image=http://magiccards.info/scans/en/sok/59.jpg
+value=3.661
+rarity=U
+type=Creature
+subtype=Human,Advisor
+cost={U}
+pt=1/2
+ability=At the beginning of your upkeep, return a blue creature you control to its owner's hand.
+timing=main
+requires_groovy_code
+oracle=Your maximum hand size is increased by two.\nAt the beginning of your upkeep, return a blue creature you control to its owner's hand.

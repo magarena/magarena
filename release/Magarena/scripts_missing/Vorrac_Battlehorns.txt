@@ -1,11 +1,11 @@
 name=Vorrac Battlehorns
-image=http://mtgimage.com/card/vorrac%20battlehorns.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mi/271.jpg
+value=3.854
 rarity=C
 type=Artifact
 subtype=Equipment
 cost={2}
 ability=Equipped creature has trample and can't be blocked by more than one creature.;\
         Equip {1}
-timing=main
-oracle=Equipped creature has trample and can't be blocked by more than one creature. Equip {1}
+timing=equipment
+oracle=Equipped creature has trample and can't be blocked by more than one creature.\nEquip {1}

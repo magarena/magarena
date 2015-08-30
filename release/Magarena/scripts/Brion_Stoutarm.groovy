@@ -7,10 +7,7 @@
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             final MagicTargetChoice targetChoice=new MagicTargetChoice(
-                new MagicOtherPermanentTargetFilter(
-                    MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
-                    source
-                ),
+                CREATURE_YOU_CONTROL.except(source),
                 MagicTargetHint.None,
                 "a creature other than " + source + " to sacrifice"
             );
@@ -25,7 +22,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_PLAYER,
+                NEG_TARGET_PLAYER,
                 payedCost.getTarget(),
                 this,
                 "SN deals damage equal to the power of RN to target player\$."
@@ -36,8 +33,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 final MagicPermanent sacrificed=event.getRefPermanent();
-                final MagicDamage damage=new MagicDamage(event.getSource(),it,sacrificed.getPower());
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new DealDamageAction(event.getSource(),it,sacrificed.getPower()));
             });
         }
     }

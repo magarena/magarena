@@ -1,0 +1,10 @@
+name=Tooth and Nail
+image=http://magiccards.info/scans/en/mma/170.jpg
+value=4.198
+rarity=R
+type=Sorcery
+cost={5}{G}{G}
+ability=Entwine {2}
+timing=main
+requires_groovy_code
+oracle=Choose one —\n• Search your library for up to two creature cards, reveal them, put them into your hand, then shuffle your library.\n• Put up to two creature cards from your hand onto the battlefield.\nEntwine {2}

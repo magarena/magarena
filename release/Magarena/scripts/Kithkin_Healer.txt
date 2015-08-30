@@ -1,5 +1,5 @@
 name=Kithkin Healer
-image=http://mtgimage.com/card/kithkin%20healer.jpg
+image=http://magiccards.info/scans/en/lw/27.jpg
 value=2.179
 rarity=C
 type=Creature

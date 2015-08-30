@@ -1,6 +1,6 @@
 name=Courser of Kruphix
-image=http://mtgimage.com/card/courser%20of%20kruphix.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bng/119.jpg
+value=3.979
 rarity=R
 type=Enchantment,Creature
 subtype=Centaur
@@ -9,5 +9,5 @@ pt=2/4
 ability=Play with the top card of your library revealed.;\
         You may play the top card of your library if it's a land card.;\
         Whenever a land enters the battlefield under your control, you gain 1 life.
-timing=main
-oracle=Play with the top card of your library revealed. You may play the top card of your library if it's a land card. Whenever a land enters the battlefield under your control, you gain 1 life.
+timing=enchantment
+oracle=Play with the top card of your library revealed.\nYou may play the top card of your library if it's a land card.\nWhenever a land enters the battlefield under your control, you gain 1 life.

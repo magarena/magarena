@@ -1,6 +1,6 @@
 name=Mana Geyser
-image=http://mtgimage.com/card/mana%20geyser.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cns/147.jpg
+value=2.643
 rarity=C
 type=Sorcery
 cost={3}{R}{R}

@@ -1,6 +1,6 @@
 name=Slithermuse
-image=http://mtgimage.com/card/slithermuse.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mt/50.jpg
+value=3.419
 rarity=R
 type=Creature
 subtype=Elemental
@@ -9,4 +9,4 @@ pt=3/3
 ability=Evoke {3}{U}
 timing=main
 requires_groovy_code
-oracle=When Slithermuse leaves the battlefield, choose an opponent. If that player has more cards in hand than you, draw cards equal to the difference. Evoke {3}{U}
+oracle=When Slithermuse leaves the battlefield, choose an opponent. If that player has more cards in hand than you, draw cards equal to the difference.\nEvoke {3}{U}

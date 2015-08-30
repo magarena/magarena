@@ -1,5 +1,5 @@
 name=Invader Parasite
-image=http://mtgimage.com/card/invader%20parasite.jpg
+image=http://magiccards.info/scans/en/nph/87.jpg
 value=3.331
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=3/2
 ability=When SN enters the battlefield, exile target land.
 timing=main
 requires_groovy_code
-oracle=Imprint — When Invader Parasite enters the battlefield, exile target land. Whenever a land with the same name as the exiled card enters the battlefield under an opponent's control, Invader Parasite deals 2 damage to that player.
+oracle=Imprint — When Invader Parasite enters the battlefield, exile target land.\nWhenever a land with the same name as the exiled card enters the battlefield under an opponent's control, Invader Parasite deals 2 damage to that player.

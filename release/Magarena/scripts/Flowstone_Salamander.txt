@@ -1,0 +1,11 @@
+name=Flowstone Salamander
+image=http://magiccards.info/scans/en/tp/175.jpg
+value=3.268
+rarity=U
+type=Creature
+subtype=Salamander
+cost={3}{R}{R}
+pt=3/4
+ability={R}: SN deals 1 damage to target creature blocking it.
+timing=main
+oracle={R}: Flowstone Salamander deals 1 damage to target creature blocking it.

@@ -1,5 +1,5 @@
 name=Eye of Ramos
-image=http://mtgimage.com/card/eye%20of%20ramos.jpg
+image=http://magiccards.info/scans/en/mm/294.jpg
 value=3.481
 rarity=R
 type=Artifact
@@ -7,4 +7,4 @@ cost={3}
 ability={T}: Add {U} to your mana pool.;\
         Sacrifice SN: Add {U} to your mana pool.
 timing=artifact
-oracle={T}: Add {U} to your mana pool. Sacrifice Eye of Ramos: Add {U} to your mana pool.
+oracle={T}: Add {U} to your mana pool.\nSacrifice Eye of Ramos: Add {U} to your mana pool.

@@ -1,11 +1,11 @@
 name=Heroic Defiance
-image=http://mtgimage.com/card/heroic%20defiance.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ps/6.jpg
+value=2.568
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{W}
 ability=Enchant creature;\
         Enchanted creature gets +3/+3 unless it shares a color with the most common color among all permanents or a color tied for most common.
-timing=main
-oracle=Enchant creature. Enchanted creature gets +3/+3 unless it shares a color with the most common color among all permanents or a color tied for most common.
+timing=aura
+oracle=Enchant creature\nEnchanted creature gets +3/+3 unless it shares a color with the most common color among all permanents or a color tied for most common.

@@ -1,5 +1,5 @@
 name=Rashka the Slayer
-image=http://mtgimage.com/card/rashka%20the%20slayer.jpg
+image=http://magiccards.info/scans/en/hl/115.jpg
 value=2.694
 rarity=U
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=Reach
 timing=main
 requires_groovy_code
-oracle=Reach. Whenever Rashka the Slayer blocks one or more black creatures, Rashka gets +1/+2 until end of turn.
+oracle=Reach\nWhenever Rashka the Slayer blocks one or more black creatures, Rashka gets +1/+2 until end of turn.

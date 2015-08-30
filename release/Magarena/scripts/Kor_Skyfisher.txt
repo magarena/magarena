@@ -1,5 +1,5 @@
 name=Kor Skyfisher
-image=http://mtgimage.com/card/kor%20skyfisher.jpg
+image=http://magiccards.info/scans/en/ddo/16.jpg
 value=3.828
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/3
 ability=Flying;\
         When SN enters the battlefield, return a permanent you control to its owner's hand.
 timing=main
-oracle=Flying. When Kor Skyfisher enters the battlefield, return a permanent you control to its owner's hand.
+oracle=Flying\nWhen Kor Skyfisher enters the battlefield, return a permanent you control to its owner's hand.

@@ -1,6 +1,6 @@
 name=Resolute Archangel
-image=http://mtgimage.com/card/resolute%20archangel.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/28.jpg
+value=3.500
 rarity=R
 type=Creature
 subtype=Angel
@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying;\
         When SN enters the battlefield, if your life total is less than your starting life total, it becomes equal to your starting life total.
 timing=main
-oracle=Flying. When Resolute Archangel enters the battlefield, if your life total is less than your starting life total, it becomes equal to your starting life total.
+oracle=Flying\nWhen Resolute Archangel enters the battlefield, if your life total is less than your starting life total, it becomes equal to your starting life total.

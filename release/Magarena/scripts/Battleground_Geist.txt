@@ -1,5 +1,5 @@
 name=Battleground Geist
-image=http://mtgimage.com/card/battleground%20geist.jpg
+image=http://magiccards.info/scans/en/isd/45.jpg
 value=2.877
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=flying;other spirit creatures you control get +1/+0
 static=player
 timing=main
-oracle=Flying. Other Spirit creatures you control get +1/+0.
+oracle=Flying\nOther Spirit creatures you control get +1/+0.

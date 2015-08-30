@@ -1,5 +1,5 @@
 name=Mournwhelk
-image=http://mtgimage.com/card/mournwhelk.jpg
+image=http://magiccards.info/scans/en/lw/127.jpg
 value=2.176
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={6}{B}
 pt=3/3
 ability=When SN enters the battlefield, target player discards two cards.;evoke {3}{B}
 timing=main
-oracle=When Mournwhelk enters the battlefield, target player discards two cards. Evoke {3}{B}
+oracle=When Mournwhelk enters the battlefield, target player discards two cards.\nEvoke {3}{B}

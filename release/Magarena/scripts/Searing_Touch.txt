@@ -1,11 +1,11 @@
 name=Searing Touch
-image=http://mtgimage.com/card/searing%20touch.jpg
+image=http://magiccards.info/scans/en/tp/201.jpg
 value=2.703
 removal=1
 rarity=U
 type=Instant
 cost={R}
 ability=buyback {4}
-effect=SN deals 1 damage to target creature or player.
+effect=SN deals 1 damage to target creature or player.~Buyback
 timing=removal
-oracle=Buyback {4}. Searing Touch deals 1 damage to target creature or player.
+oracle=Buyback {4}\nSearing Touch deals 1 damage to target creature or player.

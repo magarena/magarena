@@ -1,0 +1,9 @@
+name=Barren Glory
+image=http://magiccards.info/scans/en/fut/3.jpg
+value=3.522
+rarity=R
+type=Enchantment
+cost={4}{W}{W}
+timing=enchantment
+requires_groovy_code
+oracle=At the beginning of your upkeep, if you control no permanents other than Barren Glory and have no cards in hand, you win the game.

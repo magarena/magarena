@@ -1,0 +1,11 @@
+name=Denizen of the Deep
+image=http://magiccards.info/scans/en/10e/80.jpg
+value=3.368
+rarity=R
+type=Creature
+subtype=Serpent
+cost={6}{U}{U}
+pt=11/11
+ability=When SN enters the battlefield, return each other creature you control to its owner's hand.
+timing=main
+oracle=When Denizen of the Deep enters the battlefield, return each other creature you control to its owner's hand.

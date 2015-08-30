@@ -1,5 +1,5 @@
 name=Wall of Limbs
-image=http://mtgimage.com/card/wall%20of%20limbs.jpg
+image=http://magiccards.info/scans/en/m15/121.jpg
 value=2.583
 rarity=U
 type=Creature
@@ -10,4 +10,4 @@ ability=Defender;\
         Whenever you gain life, put a +1/+1 counter on SN.
 timing=main
 requires_groovy_code
-oracle=Defender. Whenever you gain life, put a +1/+1 counter on Wall of Limbs. {5}{B}{B}, Sacrifice Wall of Limbs: Target player loses X life, where X is Wall of Limbs's power.
+oracle=Defender\nWhenever you gain life, put a +1/+1 counter on Wall of Limbs.\n{5}{B}{B}, Sacrifice Wall of Limbs: Target player loses X life, where X is Wall of Limbs's power.

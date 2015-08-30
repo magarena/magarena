@@ -1,7 +1,7 @@
 name=Pyrotechnics
-image=http://mtgimage.com/card/pyrotechnics.jpg
+image=http://magiccards.info/scans/en/frf/111.jpg
 value=2.500
-rarity=C
+rarity=U
 type=Sorcery
 cost={4}{R}
 effect=SN deals 4 damage divided as you choose among any number of target creatures and/or players.

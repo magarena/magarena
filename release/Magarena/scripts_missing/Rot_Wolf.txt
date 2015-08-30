@@ -1,6 +1,6 @@
 name=Rot Wolf
-image=http://mtgimage.com/card/rot%20wolf.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mbs/90.jpg
+value=3.605
 rarity=C
 type=Creature
 subtype=Wolf
@@ -9,4 +9,4 @@ pt=2/2
 ability=Infect;\
         Whenever a creature dealt damage by SN this turn dies, you may draw a card.
 timing=main
-oracle=Infect. Whenever a creature dealt damage by Rot Wolf this turn dies, you may draw a card.
+oracle=Infect\nWhenever a creature dealt damage by Rot Wolf this turn dies, you may draw a card.

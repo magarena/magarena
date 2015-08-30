@@ -1,12 +1,12 @@
 name=Timbermare
-image=http://mtgimage.com/card/timbermare.jpg
+image=http://magiccards.info/scans/en/pc/140.jpg
 value=4.136
 rarity=R
 type=Creature
 subtype=Elemental,Horse
 cost={3}{G}
 pt=5/5
-ability=haste;echo {5}{G}
+ability=haste;echo {5}{G};\
+        When SN enters the battlefield, tap all other creatures.
 timing=fmain
-requires_groovy_code
-oracle=Haste. Echo {5}{G}. When Timbermare enters the battlefield, tap all other creatures.
+oracle=Haste\nEcho {5}{G}\nWhen Timbermare enters the battlefield, tap all other creatures.

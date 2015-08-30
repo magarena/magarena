@@ -1,6 +1,6 @@
 name=Flash
-image=http://mtgimage.com/card/flash.jpg
-value=2.500
+image=http://magiccards.info/scans/en/6e/67.jpg
+value=4.590
 rarity=R
 type=Instant
 cost={1}{U}

@@ -1,5 +1,5 @@
 name=Smog Elemental
-image=http://mtgimage.com/card/smog%20elemental.jpg
+image=http://magiccards.info/scans/en/gtc/79.jpg
 value=2.880
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={4}{B}{B}
 pt=3/3
 ability=flying;creatures with flying your opponents control get -1/-1
 timing=main
-oracle=Flying. Creatures with flying your opponents control get -1/-1.
+oracle=Flying\nCreatures with flying your opponents control get -1/-1.

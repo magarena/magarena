@@ -1,5 +1,5 @@
 name=Spine of Ish Sah
-image=http://mtgimage.com/card/spine%20of%20ish%20sah.jpg
+image=http://magiccards.info/scans/en/c14/272.jpg
 value=3.667
 rarity=R
 type=Artifact
@@ -7,4 +7,4 @@ cost={7}
 timing=artifact
 ability=When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.;\
         When SN enters the battlefield, destroy target permanent.
-oracle=When Spine of Ish Sah enters the battlefield, destroy target permanent. When Spine of Ish Sah is put into a graveyard from the battlefield, return Spine of Ish Sah to its owner's hand.
+oracle=When Spine of Ish Sah enters the battlefield, destroy target permanent.\nWhen Spine of Ish Sah is put into a graveyard from the battlefield, return Spine of Ish Sah to its owner's hand.

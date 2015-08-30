@@ -1,9 +1,9 @@
 name=Recover
-image=http://mtgimage.com/card/recover.jpg
+image=http://magiccards.info/scans/en/10e/172.jpg
 value=3.534
 rarity=C
 type=Sorcery
 cost={2}{B}
 effect=Return target creature card from your graveyard to your hand.~Draw a card.
 timing=draw
-oracle=Return target creature card from your graveyard to your hand. Draw a card.
+oracle=Return target creature card from your graveyard to your hand.\nDraw a card.

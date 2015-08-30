@@ -1,5 +1,5 @@
 name=Chimeric Mass
-image=http://mtgimage.com/card/chimeric%20mass.jpg
+image=http://magiccards.info/scans/en/som/141.jpg
 value=3.624
 rarity=R
 type=Artifact
@@ -7,4 +7,4 @@ cost={X}
 ability=SN enters the battlefield with X charge counters on it.
 timing=artifact
 requires_groovy_code
-oracle=Chimeric Mass enters the battlefield with X charge counters on it. {1}: Until end of turn, Chimeric Mass becomes a Construct artifact creature with "This creature's power and toughness are each equal to the number of charge counters on it."
+oracle=Chimeric Mass enters the battlefield with X charge counters on it.\n{1}: Until end of turn, Chimeric Mass becomes a Construct artifact creature with "This creature's power and toughness are each equal to the number of charge counters on it."

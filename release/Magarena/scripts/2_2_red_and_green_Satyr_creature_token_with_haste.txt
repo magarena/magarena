@@ -7,4 +7,4 @@ color=RG
 type=Creature
 ability=haste
 subtype=Satyr
-#Token image doesn't have haste
+oracle=Haste

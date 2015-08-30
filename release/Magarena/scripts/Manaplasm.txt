@@ -1,5 +1,5 @@
 name=Manaplasm
-image=http://mtgimage.com/card/manaplasm.jpg
+image=http://magiccards.info/scans/en/ala/138.jpg
 value=3.419
 rarity=R
 type=Creature

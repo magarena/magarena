@@ -1,6 +1,6 @@
 name=Weight of Conscience
-image=http://mtgimage.com/card/weight%20of%20conscience.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mt/28.jpg
+value=3.075
 rarity=C
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={1}{W}
 ability=Enchant creature;\
         Enchanted creature can't attack.;\
         Tap two untapped creatures you control that share a creature type: Exile enchanted creature.
-timing=main
-oracle=Enchant creature. Enchanted creature can't attack. Tap two untapped creatures you control that share a creature type: Exile enchanted creature.
+timing=aura
+oracle=Enchant creature\nEnchanted creature can't attack.\nTap two untapped creatures you control that share a creature type: Exile enchanted creature.

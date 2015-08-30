@@ -1,5 +1,5 @@
 name=Goblin Striker
-image=http://mtgimage.com/card/goblin%20striker.jpg
+image=http://magiccards.info/scans/en/mi/94.jpg
 value=3.067
 ability=first strike;haste
 rarity=C

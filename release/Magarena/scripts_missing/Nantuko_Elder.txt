@@ -1,6 +1,6 @@
 name=Nantuko Elder
-image=http://mtgimage.com/card/nantuko%20elder.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/254.jpg
+value=3.167
 rarity=U
 type=Creature
 subtype=Insect,Druid

@@ -1,0 +1,11 @@
+name=Mistfolk
+image=http://magiccards.info/scans/en/cstd/14.jpg
+value=3.838
+rarity=C
+type=Creature
+subtype=Illusion
+cost={U}{U}
+pt=1/2
+timing=main
+requires_groovy_code
+oracle={U}: Counter target spell that targets Mistfolk.

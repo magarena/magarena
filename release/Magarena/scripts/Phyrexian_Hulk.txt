@@ -1,5 +1,5 @@
 name=Phyrexian Hulk
-image=http://mtgimage.com/card/phyrexian%20hulk.jpg
+image=http://magiccards.info/scans/en/m13/209.jpg
 value=1.844
 rarity=U
 type=Artifact,Creature
@@ -7,3 +7,4 @@ subtype=Golem
 cost={6}
 pt=5/4
 timing=main
+oracle=NONE

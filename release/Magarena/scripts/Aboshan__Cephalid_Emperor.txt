@@ -1,5 +1,5 @@
 name=Aboshan, Cephalid Emperor
-image=http://mtgimage.com/card/aboshan%2C%20cephalid%20emperor.jpg
+image=http://magiccards.info/scans/en/od/58.jpg
 value=3.918
 rarity=R
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=Tap an untapped Cephalid you control: Tap target permanent.;\
         {U}{U}{U}: Tap all creatures without flying.
 timing=main
-oracle=Tap an untapped Cephalid you control: Tap target permanent. {U}{U}{U}: Tap all creatures without flying.
+oracle=Tap an untapped Cephalid you control: Tap target permanent.\n{U}{U}{U}: Tap all creatures without flying.

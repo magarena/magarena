@@ -1,0 +1,9 @@
+name=Send to Sleep
+image=http://magiccards.info/scans/en/ori/71.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{U}
+effect=Tap up to two target creatures.~If there are two or more instant and/or sorcery cards in your graveyard, those creatures don't untap during their controllers' next untap steps.
+timing=removal
+oracle=Tap up to two target creatures.\nSpell mastery — If there are two or more instant and/or sorcery cards in your graveyard, those creatures don't untap during their controllers' next untap steps.

@@ -6,7 +6,7 @@ import java.nio.file.Path;
 import java.util.Calendar;
 import java.util.List;
 import java.util.ArrayList;
-import magic.data.DeckUtils;
+import magic.utility.DeckUtils;
 import magic.data.GeneralConfig;
 import magic.data.json.DownloadableJsonFile;
 import magic.model.MagicDeck;

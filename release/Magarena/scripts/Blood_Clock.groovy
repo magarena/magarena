@@ -14,12 +14,12 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicChangeLifeAction(event.getPlayer(),-2));
+                game.doAction(new ChangeLifeAction(event.getPlayer(),-2));
             } else {
                 game.addEvent(new MagicBounceChosenPermanentEvent(
                     event.getSource(), 
                     event.getPlayer(), 
-                    MagicTargetChoice.PERMANENT_YOU_CONTROL
+                    A_PERMANENT_YOU_CONTROL
                 ));
             }
         }

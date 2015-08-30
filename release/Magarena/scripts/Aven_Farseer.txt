@@ -1,5 +1,5 @@
 name=Aven Farseer
-image=http://mtgimage.com/card/aven%20farseer.jpg
+image=http://magiccards.info/scans/en/sc/3.jpg
 value=2.318
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying
 timing=main
 requires_groovy_code
-oracle=Flying. Whenever a permanent is turned face up, put a +1/+1 counter on Aven Farseer.
+oracle=Flying\nWhenever a permanent is turned face up, put a +1/+1 counter on Aven Farseer.

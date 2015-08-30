@@ -1,5 +1,5 @@
 name=Mirror Entity
-image=http://mtgimage.com/card/mirror%20entity.jpg
+image=http://magiccards.info/scans/en/c13/17.jpg
 value=4.050
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=changeling
 timing=fmain
 requires_groovy_code
-oracle=Changeling. {X}: Creatures you control become X/X and gain all creature types until end of turn.
+oracle=Changeling\n{X}: Until end of turn, creatures you control have base power and toughness X/X and gain all creature types.

@@ -1,6 +1,6 @@
 name=Veteran Bodyguard
-image=http://mtgimage.com/card/veteran%20bodyguard.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me4/32.jpg
+value=3.870
 rarity=R
 type=Creature
 subtype=Human

@@ -1,5 +1,5 @@
 name=Cadaverous Knight
-image=http://mtgimage.com/card/cadaverous%20knight.jpg
+image=http://magiccards.info/scans/en/pch/20.jpg
 value=3.803
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=flanking;\
         {1}{B}{B}: Regenerate SN.
 timing=main
-oracle=Flanking. {1}{B}{B}: Regenerate Cadaverous Knight.
+oracle=Flanking\n{1}{B}{B}: Regenerate Cadaverous Knight.

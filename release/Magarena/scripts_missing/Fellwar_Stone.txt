@@ -1,9 +1,9 @@
 name=Fellwar Stone
-image=http://mtgimage.com/card/fellwar%20stone.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cmd/248.jpg
+value=3.924
 rarity=U
 type=Artifact
 cost={2}
 ability={T}: Add to your mana pool one mana of any color that a land an opponent controls could produce.
-timing=main
+timing=artifact
 oracle={T}: Add to your mana pool one mana of any color that a land an opponent controls could produce.

@@ -1,0 +1,9 @@
+name=Feint
+image=http://magiccards.info/scans/en/lg/144.jpg
+value=2.750
+rarity=C
+type=Instant
+cost={R}
+timing=block
+requires_groovy_code
+oracle=Tap all creatures blocking target attacking creature. Prevent all combat damage that would be dealt this turn by that creature and each creature blocking it.

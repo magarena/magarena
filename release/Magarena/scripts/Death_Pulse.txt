@@ -1,5 +1,5 @@
 name=Death Pulse
-image=http://mtgimage.com/card/death%20pulse.jpg
+image=http://magiccards.info/scans/en/on/137.jpg
 value=3.704
 rarity=U
 type=Instant
@@ -8,4 +8,4 @@ ability=Cycling {1}{B}{B};\
         When you cycle SN, you may have target creature get -1/-1 until end of turn.
 effect=Target creature gets -4/-4 until end of turn.
 timing=removal
-oracle=Target creature gets -4/-4 until end of turn. Cycling {1}{B}{B}. When you cycle Death Pulse, you may have target creature get -1/-1 until end of turn.
+oracle=Target creature gets -4/-4 until end of turn.\nCycling {1}{B}{B}\nWhen you cycle Death Pulse, you may have target creature get -1/-1 until end of turn.

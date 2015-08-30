@@ -1,5 +1,5 @@
 name=Eidolon of the Great Revel
-image=http://mtgimage.com/card/eidolon%20of%20the%20great%20revel.jpg
+image=http://magiccards.info/scans/en/jou/94.jpg
 value=4.205
 rarity=R
 type=Enchantment,Creature

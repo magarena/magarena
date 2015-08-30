@@ -1,5 +1,5 @@
 name=Rugged Highlands
-image=http://mtgimage.com/card/rugged%20highlands.jpg
+image=http://magiccards.info/scans/en/frf/170.jpg
 value=3.333
 rarity=C
 type=Land
@@ -8,4 +8,4 @@ ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, you gain 1 life.;\
         {T}: Add {R} or {G} to your mana pool.
 timing=tapland
-oracle=Rugged Highlands enters the battlefield tapped. When Rugged Highlands enters the battlefield, you gain 1 life. {T}: Add {R} or {G} to your mana pool.
+oracle=Rugged Highlands enters the battlefield tapped.\nWhen Rugged Highlands enters the battlefield, you gain 1 life.\n{T}: Add {R} or {G} to your mana pool.

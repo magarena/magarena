@@ -1,0 +1,10 @@
+name=Ancient Carp
+image=http://magiccards.info/scans/en/dtk/44.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Fish
+cost={4}{U}
+pt=2/5
+timing=main
+oracle=NONE

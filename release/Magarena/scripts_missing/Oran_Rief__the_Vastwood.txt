@@ -1,10 +1,10 @@
 name=Oran-Rief, the Vastwood
-image=http://mtgimage.com/card/oran-rief%2C%20the%20vastwood.jpg
+image=http://magiccards.info/scans/en/c14/305.jpg
 value=2.500
 rarity=R
 type=Land
 ability=SN enters the battlefield tapped.;\
         {T}: Add {G} to your mana pool.;\
         {T}: Put a +1/+1 counter on each green creature that entered the battlefield this turn.
-timing=main
-oracle=Oran-Rief, the Vastwood enters the battlefield tapped. {T}: Add {G} to your mana pool. {T}: Put a +1/+1 counter on each green creature that entered the battlefield this turn.
+timing=land
+oracle=Oran-Rief, the Vastwood enters the battlefield tapped.\n{T}: Add {G} to your mana pool.\n{T}: Put a +1/+1 counter on each green creature that entered the battlefield this turn.

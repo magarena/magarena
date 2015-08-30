@@ -1,5 +1,5 @@
 name=Sejiri Merfolk
-image=http://mtgimage.com/card/sejiri%20merfolk.jpg
+image=http://magiccards.info/scans/en/wwk/36.jpg
 value=4.131
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=Axebane Guardian
-image=http://mtgimage.com/card/axebane%20guardian.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rtr/115.jpg
+value=3.306
 rarity=C
 type=Creature
 subtype=Human,Druid
@@ -9,4 +9,4 @@ pt=0/3
 ability=Defender;\
         {T}: Add X mana in any combination of colors to your mana pool, where X is the number of creatures with defender you control.
 timing=main
-oracle=Defender. {T}: Add X mana in any combination of colors to your mana pool, where X is the number of creatures with defender you control.
+oracle=Defender\n{T}: Add X mana in any combination of colors to your mana pool, where X is the number of creatures with defender you control.

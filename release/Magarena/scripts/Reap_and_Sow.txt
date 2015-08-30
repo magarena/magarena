@@ -1,0 +1,10 @@
+name=Reap and Sow
+image=http://magiccards.info/scans/en/ds/81.jpg
+value=3.671
+rarity=C
+type=Sorcery
+cost={3}{G}
+ability=Entwine {1}{G}
+effect=Choose one — (1) Destroy target land. (2) Search your library for a land card, put that card onto the battlefield, then shuffle your library.
+timing=main
+oracle=Choose one —\n• Destroy target land.\n• Search your library for a land card, put that card onto the battlefield, then shuffle your library.\nEntwine {1}{G}

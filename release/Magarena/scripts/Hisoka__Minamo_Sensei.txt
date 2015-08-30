@@ -1,0 +1,11 @@
+name=Hisoka, Minamo Sensei
+image=http://magiccards.info/scans/en/chk/66.jpg
+value=2.289
+rarity=R
+type=Legendary,Creature
+subtype=Human,Wizard
+cost={2}{U}{U}
+pt=1/3
+timing=main
+requires_groovy_code
+oracle={2}{U}, Discard a card: Counter target spell if it has the same converted mana cost as the discarded card.

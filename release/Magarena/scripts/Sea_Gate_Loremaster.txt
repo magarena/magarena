@@ -1,11 +1,11 @@
 name=Sea Gate Loremaster
-image=http://mtgimage.com/card/sea%20gate%20loremaster.jpg
+image=http://magiccards.info/scans/en/zen/63.jpg
 value=3.865
 rarity=R
 type=Creature
 subtype=Merfolk,Wizard,Ally
 cost={4}{U}
 pt=1/3
+ability={T}: Draw a card for each Ally you control.
 timing=main
-requires_groovy_code
 oracle={T}: Draw a card for each Ally you control.

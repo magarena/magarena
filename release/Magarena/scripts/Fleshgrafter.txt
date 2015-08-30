@@ -1,5 +1,5 @@
 name=Fleshgrafter
-image=http://mtgimage.com/card/fleshgrafter.jpg
+image=http://magiccards.info/scans/en/5dn/51.jpg
 value=2.658
 rarity=C
 type=Creature

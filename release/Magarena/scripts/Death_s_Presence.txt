@@ -1,5 +1,5 @@
 name=Death's Presence
-image=http://mtgimage.com/card/death%27s%20presence.jpg
+image=http://magiccards.info/scans/en/rtr/121.jpg
 value=3.243
 rarity=R
 type=Enchantment

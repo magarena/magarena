@@ -1,0 +1,9 @@
+name=Dark Tutelage
+image=http://magiccards.info/scans/en/m11/90.jpg
+value=3.508
+rarity=R
+type=Enchantment
+cost={2}{B}
+timing=enchantment
+requires_groovy_code=Dark Confidant
+oracle=At the beginning of your upkeep, reveal the top card of your library and put that card into your hand. You lose life equal to its converted mana cost.

@@ -1,5 +1,5 @@
 name=Thassa's Devourer
-image=http://mtgimage.com/card/thassa's%20devourer.jpg
+image=http://magiccards.info/scans/en/jou/53.jpg
 value=2.250
 rarity=C
 type=Enchantment,Creature

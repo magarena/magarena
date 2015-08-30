@@ -1,5 +1,5 @@
 name=Feast of Blood
-image=http://mtgimage.com/card/feast%20of%20blood.jpg
+image=http://magiccards.info/scans/en/zen/88.jpg
 value=3.862
 rarity=U
 type=Sorcery
@@ -7,4 +7,4 @@ cost={1}{B}
 ability=Cast SN only if you control two or more Vampires.
 effect=Destroy target creature.~You gain 4 life.
 timing=main
-oracle=Cast Feast of Blood only if you control two or more Vampires. Destroy target creature. You gain 4 life.
+oracle=Cast Feast of Blood only if you control two or more Vampires.\nDestroy target creature. You gain 4 life.

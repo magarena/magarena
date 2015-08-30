@@ -1,9 +1,9 @@
 name=Conjured Currency
-image=http://mtgimage.com/card/conjured%20currency.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rtr/33.jpg
+value=2.768
 rarity=R
 type=Enchantment
 cost={5}{U}
 ability=At the beginning of your upkeep, you may exchange control of SN and target permanent you neither own nor control.
-timing=main
+timing=enchantment
 oracle=At the beginning of your upkeep, you may exchange control of Conjured Currency and target permanent you neither own nor control.

@@ -1,0 +1,12 @@
+name=Simic Basilisk
+image=http://magiccards.info/scans/en/di/91.jpg
+value=2.286
+rarity=U
+type=Creature
+subtype=Basilisk,Mutant
+cost={4}{G}{G}
+pt=0/0
+ability=Graft 3;\
+        {1}{G}: Until end of turn, target creature with a +1/+1 counter on it gains "Whenever this creature deals combat damage to a creature, destroy that creature at end of combat."
+timing=main
+oracle=Graft 3\n{1}{G}: Until end of turn, target creature with a +1/+1 counter on it gains "Whenever this creature deals combat damage to a creature, destroy that creature at end of combat."

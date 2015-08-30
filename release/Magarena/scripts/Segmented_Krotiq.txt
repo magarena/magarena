@@ -1,0 +1,11 @@
+name=Segmented Krotiq
+image=http://magiccards.info/scans/en/dtk/202.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Insect
+cost={5}{G}
+pt=6/5
+ability=Megamorph {6}{G}
+timing=main
+oracle=Megamorph {6}{G}

@@ -1,9 +1,9 @@
 name=Flame Fusillade
-image=http://mtgimage.com/card/flame%20fusillade.jpg
+image=http://magiccards.info/scans/en/rav/123.jpg
 value=4.319
 rarity=R
 type=Sorcery
 cost={3}{R}
-effect=Until end of turn, permanents you control gain "{T}: SN deals 1 damage to target creature or player."
+effect=Until end of turn, permanents you control gain "{T}: This permanent deals 1 damage to target creature or player."
 timing=main
 oracle=Until end of turn, permanents you control gain "{T}: This permanent deals 1 damage to target creature or player."

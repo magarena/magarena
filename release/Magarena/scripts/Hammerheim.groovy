@@ -23,7 +23,7 @@ def List<MagicAbility> landwalkAbilities = [
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 this,
                 "Target creature\$ loses all landwalk abilities until end of turn"
             );
@@ -32,7 +32,7 @@ def List<MagicAbility> landwalkAbilities = [
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicLoseAbilityAction(it,landwalkAbilities));
+                game.doAction(new LoseAbilityAction(it,landwalkAbilities));
             });
         }
     }

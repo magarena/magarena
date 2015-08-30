@@ -1,6 +1,6 @@
 name=Rysorian Badger
-image=http://mtgimage.com/card/rysorian%20badger.jpg
-value=2.500
+image=http://magiccards.info/scans/en/hl/69.jpg
+value=3.235
 rarity=R
 type=Creature
 subtype=Badger

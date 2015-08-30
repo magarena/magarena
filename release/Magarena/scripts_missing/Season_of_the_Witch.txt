@@ -1,10 +1,10 @@
 name=Season of the Witch
-image=http://mtgimage.com/card/season%20of%20the%20witch.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dk/14.jpg
+value=3.053
 rarity=R
 type=Enchantment
 cost={B}{B}{B}
 ability=At the beginning of your upkeep, sacrifice SN unless you pay 2 life.;\
         At the beginning of the end step, destroy all untapped creatures that didn't attack this turn, except for creatures that couldn't attack.
-timing=main
-oracle=At the beginning of your upkeep, sacrifice Season of the Witch unless you pay 2 life. At the beginning of the end step, destroy all untapped creatures that didn't attack this turn, except for creatures that couldn't attack.
+timing=enchantment
+oracle=At the beginning of your upkeep, sacrifice Season of the Witch unless you pay 2 life.\nAt the beginning of the end step, destroy all untapped creatures that didn't attack this turn, except for creatures that couldn't attack.

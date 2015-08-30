@@ -17,7 +17,7 @@
             final int amount = event.getPermanent().getCounters(MagicCounterType.PlusOne);
             if (amount>=1) {
                 final MagicPlayer player = event.getPlayer();
-                game.doAction(new MagicDrawAction(player,amount));
+                game.doAction(new DrawAction(player,amount));
             }
         }
     }

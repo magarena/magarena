@@ -1,5 +1,5 @@
 name=Pride of Lions
-image=http://mtgimage.com/card/pride%20of%20lions.jpg
+image=http://magiccards.info/scans/en/ddh/19.jpg
 value=3.962
 rarity=U
 type=Creature

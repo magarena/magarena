@@ -1,5 +1,5 @@
 name=Knight of Meadowgrain
-image=http://mtgimage.com/card/knight%20of%20meadowgrain.jpg
+image=http://magiccards.info/scans/en/ddg/5.jpg
 value=3.944
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={W}{W}
 pt=2/2
 ability=first strike;lifelink
 timing=main
-oracle=First strike. Lifelink
+oracle=First strike\nLifelink

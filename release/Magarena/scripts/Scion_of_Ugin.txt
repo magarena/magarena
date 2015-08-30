@@ -1,0 +1,11 @@
+name=Scion of Ugin
+image=http://magiccards.info/scans/en/dtk/1.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dragon,Spirit
+cost={6}
+pt=4/4
+ability=Flying
+timing=main
+oracle=Flying

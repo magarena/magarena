@@ -1,5 +1,5 @@
 name=Thran Lens
-image=http://mtgimage.com/card/thran%20lens.jpg
+image=http://magiccards.info/scans/en/ul/133.jpg
 value=3.703
 rarity=R
 type=Artifact

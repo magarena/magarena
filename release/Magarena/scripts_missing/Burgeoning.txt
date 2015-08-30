@@ -1,9 +1,9 @@
 name=Burgeoning
-image=http://mtgimage.com/card/burgeoning.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sh/52.jpg
+value=4.435
 rarity=R
 type=Enchantment
 cost={G}
 ability=Whenever an opponent plays a land, you may put a land card from your hand onto the battlefield.
-timing=main
+timing=enchantment
 oracle=Whenever an opponent plays a land, you may put a land card from your hand onto the battlefield.

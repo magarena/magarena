@@ -1,6 +1,6 @@
 name=Shambling Shell
-image=http://mtgimage.com/card/shambling%20shell.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddj/57.jpg
+value=4.393
 rarity=C
 type=Creature
 subtype=Plant,Zombie
@@ -9,4 +9,4 @@ pt=3/1
 ability=Sacrifice SN: Put a +1/+1 counter on target creature.;\
         Dredge 3
 timing=main
-oracle=Sacrifice Shambling Shell: Put a +1/+1 counter on target creature. Dredge 3
+oracle=Sacrifice Shambling Shell: Put a +1/+1 counter on target creature.\nDredge 3

@@ -1,9 +1,9 @@
 name=Statecraft
-image=http://mtgimage.com/card/statecraft.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/106.jpg
+value=3.710
 rarity=R
 type=Enchantment
 cost={3}{U}
 ability=Prevent all combat damage that would be dealt to and dealt by creatures you control.
-timing=main
+timing=enchantment
 oracle=Prevent all combat damage that would be dealt to and dealt by creatures you control.

@@ -1,0 +1,12 @@
+name=Knight of Valor
+image=http://magiccards.info/scans/en/vi/111.jpg
+value=3.662
+rarity=C
+type=Creature
+subtype=Human,Knight
+cost={2}{W}
+pt=2/2
+ability=Flanking
+timing=main
+requires_groovy_code
+oracle=Flanking\n{1}{W}: Each creature without flanking blocking Knight of Valor gets -1/-1 until end of turn. Activate this ability only once each turn.

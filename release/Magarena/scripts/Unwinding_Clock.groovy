@@ -3,9 +3,8 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             if (permanent.isOpponent(upkeepPlayer)) {
-                final Collection<MagicPermanent> targets = game.filterPermanents(permanent.getController(),MagicTargetFilterFactory.ARTIFACT_YOU_CONTROL);
-                for (final MagicPermanent artifact : targets) {
-                    game.doAction(new MagicUntapAction(artifact));
+                ARTIFACT_YOU_CONTROL.filter(permanent) each {
+                    game.doAction(new UntapAction(it));
                 }
             }
             return MagicEvent.NONE;

@@ -1,5 +1,5 @@
 name=Liege of the Pit
-image=http://mtgimage.com/card/liege%20of%20the%20pit.jpg
+image=http://magiccards.info/scans/en/ts/113.jpg
 value=3.830
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=Flying; trample;\
         Morph {B}{B}{B}{B}
 timing=main
 requires_groovy_code=Lord of the Pit
-oracle=Flying, trample. At the beginning of your upkeep, sacrifice a creature other than Liege of the Pit. If you can't, Liege of the Pit deals 7 damage to you. Morph {B}{B}{B}{B}
+oracle=Flying, trample\nAt the beginning of your upkeep, sacrifice a creature other than Liege of the Pit. If you can't, Liege of the Pit deals 7 damage to you.\nMorph {B}{B}{B}{B}

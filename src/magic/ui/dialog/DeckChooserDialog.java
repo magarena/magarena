@@ -1,55 +1,83 @@
 package magic.ui.dialog;
 
-import magic.data.DeckType;
-import magic.ui.MagicFrame;
-import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.deck.CustomDecksComboxBox;
-import magic.ui.widget.deck.PrebuiltDecksComboxBox;
-import magic.ui.widget.deck.RandomDecksComboBox;
-import net.miginfocom.swing.MigLayout;
-
+import java.awt.Cursor;
+import java.awt.Dimension;
+import java.awt.event.ActionEvent;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 import javax.swing.AbstractAction;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
-import javax.swing.JComponent;
-import javax.swing.JDialog;
-import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JRootPane;
-import javax.swing.KeyStroke;
+import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
-
-import java.awt.event.ActionEvent;
-import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
-import magic.ui.widget.deck.FiremindDecksComboxBox;
+import magic.data.DeckType;
 import magic.firemind.FiremindJsonReader;
+import magic.ui.ScreenController;
+import magic.translate.UiString;
+import magic.ui.dialog.button.CancelButton;
+import magic.ui.dialog.button.SaveButton;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.deck.CustomDecksComboxBox;
+import magic.ui.widget.deck.FiremindDecksComboxBox;
+import magic.ui.widget.deck.PrebuiltDecksComboxBox;
+import magic.ui.widget.deck.RandomDecksComboBox;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class DeckChooserDialog extends JDialog {
+public class DeckChooserDialog extends MagicDialog {
+
+    // translatable strings
+    private static final String _S2 = "Select Deck";
 
     private final JComboBox<DeckType> deckTypeCombo;
-    private DeckType selectedDeckType = DeckType.Random;
-    private JComboBox<String> deckValueCombo;
+    private JComboBox<String> deckNameCombo;
     private final DecksPanel decksPanel;
     private boolean isCancelled = false;
-    private final JButton saveButton = new JButton("Save");
+    private final JButton saveButton = new SaveButton();
 
-    // CTR : edit an existing profile.
-    public DeckChooserDialog(final MagicFrame frame) {
+    public DeckChooserDialog(final DeckType aDeckType, final String aDeckName) {
 
-        super(frame, true);
-        this.setTitle("Select Deck");
-        this.setSize(300, 180);
-        this.setLocationRelativeTo(frame);
-        this.setResizable(false);
-        this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        super(ScreenController.getMainFrame(), UiString.get(_S2), new Dimension(300, 180));
+        
+        deckTypeCombo = getDeckTypeComboBox();
+        deckTypeCombo.setSelectedItem(aDeckType);
+        addDeckTypeComboBoxListener();
 
-        decksPanel = new DecksPanel();
+        decksPanel = new DecksPanel(aDeckName);
+        decksPanel.setDeckType(aDeckType);
 
-        deckTypeCombo = new JComboBox<>();
-        deckTypeCombo.setModel(new DefaultComboBoxModel<>(DeckType.values()));
+        setSaveButtonAction();
+
+        refreshLayout();
+
+        setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+
+        setVisible(true);
+
+    }
+
+    private void refreshLayout() {
+        final JPanel panel = getDialogContentPanel();
+        panel.setLayout(new MigLayout("flowy, gap 0"));
+        panel.add(deckTypeCombo, "w 100%");
+        panel.add(decksPanel, "w 100%");
+        panel.add(getButtonPanel(), "w 100%, h 30!, pushy, aligny bottom");
+    }
+
+    private JComboBox<DeckType> getDeckTypeComboBox() {
+        final JComboBox<DeckType> cbo = new JComboBox<>();
+        cbo.setModel(new DefaultComboBoxModel<>(DeckType.values()));
+        cbo.setLightWeightPopupEnabled(false);
+        cbo.setFocusable(false);
+        cbo.setFont(FontsAndBorders.FONT2);
+        ((JLabel)cbo.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
+        return cbo;
+    }
+
+    private void addDeckTypeComboBoxListener() {
         deckTypeCombo.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(final ItemEvent e) {
@@ -57,66 +85,37 @@ public class DeckChooserDialog extends JDialog {
                     SwingUtilities.invokeLater(new Runnable() {
                         @Override
                         public void run() {
-                            selectedDeckType = (DeckType)e.getItem();
-                            decksPanel.setDeckType(selectedDeckType);
+                            setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                            decksPanel.setDeckType((DeckType) e.getItem());
+                            setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
                         }
                     });
                 }
             }
         });
-        deckTypeCombo.setLightWeightPopupEnabled(false);
-        deckTypeCombo.setFocusable(false);
-        deckTypeCombo.setFont(FontsAndBorders.FONT2);
-        deckTypeCombo.setSelectedIndex(0);
+    }
 
-        decksPanel.setDeckType((DeckType)deckTypeCombo.getSelectedItem());
-
+    private void setSaveButtonAction() {
         saveButton.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (getDeckValue().trim() != "") {
+                if (getDeckName().trim().length() > 0) {
                     dispose();
                 }
-            }
-        });
-
-        getContentPane().setLayout(new MigLayout("flowy"));
-        getContentPane().add(deckTypeCombo);
-        getContentPane().add(decksPanel, "w 100%");
-        getContentPane().add(getButtonPanel(), "w 100%, h 40!, pushy, aligny bottom");
-
-        setEscapeKeyAction();
-
-        setVisible(true);
-    }
-
-    private void setEscapeKeyAction() {
-        JRootPane root = getRootPane();
-        root.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("ESCAPE"), "closeDialog");
-        root.getActionMap().put("closeDialog", new AbstractAction() {
-            @Override
-            public void actionPerformed(final ActionEvent e) {
-                dispose();
             }
         });
     }
 
     private JPanel getButtonPanel() {
-        final JPanel buttonPanel = new JPanel(new MigLayout("alignx right"));
-        buttonPanel.add(saveButton, "w 80!");
-        buttonPanel.add(getCancelButton(), "w 80!");
+        final JPanel buttonPanel = new JPanel(new MigLayout("insets 0, alignx right"));
+        buttonPanel.add(getCancelButton());
+        buttonPanel.add(saveButton);
         return buttonPanel;
     }
 
     private JButton getCancelButton() {
-        final JButton btn = new JButton("Cancel");
-        btn.addActionListener(new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                isCancelled = true;
-                dispose();
-            }
-        });
+        final JButton btn = new CancelButton();
+        btn.addActionListener(getCancelAction());
         return btn;
     }
 
@@ -124,15 +123,32 @@ public class DeckChooserDialog extends JDialog {
         return isCancelled;
     }
 
+    @Override
+    protected AbstractAction getCancelAction() {
+        return new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                isCancelled = true;
+                dispose();
+            }
+        };
+    }
+
     private class DecksPanel extends JPanel {
 
-        public DecksPanel() {
+        private String defaultDeckName;
+
+        public DecksPanel(final String aDefaultDeckName) {
+            this.defaultDeckName = aDefaultDeckName;
             setLayout(new MigLayout("insets 0"));
         }
 
         public void setDeckType(final DeckType deckType) {
             removeAll();
-            add(getDecksCombo(deckType), deckType == DeckType.Random ? "w 170!" : "w 10:100%");
+            // NB! "w 100%" works more like "w 100%!" when applied to
+            // a JComboBox hence the need for the min value so that it
+            // fits to the container width instead of exceeding it.
+            add(getDecksCombo(deckType), "w 10:100%");
             revalidate();
             repaint();
         }
@@ -140,31 +156,33 @@ public class DeckChooserDialog extends JDialog {
         private JComboBox<String> getDecksCombo(final DeckType deckType) {
             switch (deckType) {
             case Random:
-                deckValueCombo = new RandomDecksComboBox("");
+                deckNameCombo = new RandomDecksComboBox("");
                 break;
             case Preconstructed:
-                deckValueCombo = new PrebuiltDecksComboxBox();
+                deckNameCombo = new PrebuiltDecksComboxBox();
                 break;
             case Custom:
-                deckValueCombo = new CustomDecksComboxBox();
+                deckNameCombo = new CustomDecksComboxBox();
                 break;
             case Firemind:
                 FiremindJsonReader.refreshTopDecks();
-                deckValueCombo = new FiremindDecksComboxBox();
+                deckNameCombo = new FiremindDecksComboxBox();
                 break;
             }
-            saveButton.setEnabled(deckValueCombo.getItemCount() > 0);
-            return deckValueCombo;
+            deckNameCombo.setSelectedItem(defaultDeckName);
+            defaultDeckName = "";
+            saveButton.setEnabled(deckNameCombo.getItemCount() > 0);
+            return deckNameCombo;
         }
 
     }
 
     public DeckType getDeckType() {
-        return selectedDeckType;
+        return deckTypeCombo.getItemAt(deckTypeCombo.getSelectedIndex());
     }
 
-    public String getDeckValue() {
-        return (String)deckValueCombo.getSelectedItem();
+    public String getDeckName() {
+        return (String)deckNameCombo.getSelectedItem();
     }
 
 }

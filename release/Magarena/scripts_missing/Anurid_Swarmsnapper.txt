@@ -1,6 +1,6 @@
 name=Anurid Swarmsnapper
-image=http://mtgimage.com/card/anurid%20swarmsnapper.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ju/105.jpg
+value=3.273
 rarity=U
 type=Creature
 subtype=Frog,Beast
@@ -9,4 +9,4 @@ pt=1/4
 ability=Reach;\
         {1}{G}: SN can block an additional creature this turn.
 timing=main
-oracle=Reach. {1}{G}: Anurid Swarmsnapper can block an additional creature this turn.
+oracle=Reach\n{1}{G}: Anurid Swarmsnapper can block an additional creature this turn.

@@ -1,5 +1,5 @@
 name=Darkness
-image=http://mtgimage.com/card/darkness.jpg
+image=http://magiccards.info/scans/en/tsts/40.jpg
 value=4.323
 rarity=C
 type=Instant

@@ -1,7 +1,7 @@
 name=Winter Blast
-image=http://mtgimage.com/card/winter%20blast.jpg
-value=2.500
-rarity=R
+image=http://magiccards.info/scans/en/med/138.jpg
+value=3.833
+rarity=U
 type=Sorcery
 cost={X}{G}
 effect=Tap X target creatures. SN deals 2 damage to each of those creatures with flying.

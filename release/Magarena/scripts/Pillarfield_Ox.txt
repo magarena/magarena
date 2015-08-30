@@ -1,5 +1,5 @@
 name=Pillarfield Ox
-image=http://mtgimage.com/card/pillarfield%20ox.jpg
+image=http://magiccards.info/scans/en/cns/76.jpg
 value=2.750
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Ox
 cost={3}{W}
 pt=2/4
 timing=main
+oracle=NONE

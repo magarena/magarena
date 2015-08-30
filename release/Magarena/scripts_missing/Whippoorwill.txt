@@ -1,6 +1,6 @@
 name=Whippoorwill
-image=http://mtgimage.com/card/whippoorwill.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dk/54.jpg
+value=3.519
 rarity=U
 type=Creature
 subtype=Bird

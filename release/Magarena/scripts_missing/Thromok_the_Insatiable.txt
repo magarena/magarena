@@ -1,6 +1,6 @@
 name=Thromok the Insatiable
-image=http://mtgimage.com/card/thromok%20the%20insatiable.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pc2/106.jpg
+value=4.076
 rarity=M
 type=Legendary,Creature
 subtype=Hellion

@@ -1,5 +1,5 @@
 name=Pteron Ghost
-image=http://mtgimage.com/card/pteron%20ghost.jpg
+image=http://magiccards.info/scans/en/ds/10.jpg
 value=2.421
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=flying;\
         Sacrifice SN: Regenerate target artifact.
 timing=main
-oracle=Flying. Sacrifice Pteron Ghost: Regenerate target artifact.
+oracle=Flying\nSacrifice Pteron Ghost: Regenerate target artifact.

@@ -1,5 +1,5 @@
 name=Barbed Sliver
-image=http://mtgimage.com/card/barbed%20sliver.jpg
+image=http://magiccards.info/scans/en/tp/163.jpg
 value=2.393
 rarity=U
 type=Creature

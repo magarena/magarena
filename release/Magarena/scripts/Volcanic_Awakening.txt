@@ -1,5 +1,5 @@
 name=Volcanic Awakening
-image=http://mtgimage.com/card/volcanic%20awakening.jpg
+image=http://magiccards.info/scans/en/ts/186.jpg
 value=2.878
 rarity=U
 type=Sorcery
@@ -7,4 +7,4 @@ cost={4}{R}{R}
 timing=main
 ability=storm
 effect=Destroy target land.
-oracle=Destroy target land. Storm
+oracle=Destroy target land.\nStorm

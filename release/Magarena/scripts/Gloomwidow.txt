@@ -1,5 +1,5 @@
 name=Gloomwidow
-image=http://mtgimage.com/card/gloomwidow.jpg
+image=http://magiccards.info/scans/en/avr/180.jpg
 value=2.667
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{G}
 pt=3/3
 ability=reach;SN can block only creatures with flying.
 timing=main
-oracle=Reach. Gloomwidow can block only creatures with flying.
+oracle=Reach\nGloomwidow can block only creatures with flying.

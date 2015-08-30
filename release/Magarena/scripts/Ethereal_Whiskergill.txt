@@ -1,5 +1,5 @@
 name=Ethereal Whiskergill
-image=http://mtgimage.com/card/ethereal%20whiskergill.jpg
+image=http://magiccards.info/scans/en/lw/60.jpg
 value=2.288
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=4/3
 ability=Flying;\
         SN can't attack unless defending player controls an Island.
 timing=main
-oracle=Flying. Ethereal Whiskergill can't attack unless defending player controls an Island.
+oracle=Flying\nEthereal Whiskergill can't attack unless defending player controls an Island.

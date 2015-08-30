@@ -1,11 +1,11 @@
 name=Crown of Convergence
-image=http://mtgimage.com/card/crown%20of%20convergence.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rav/258.jpg
+value=3.259
 rarity=R
 type=Artifact
 cost={2}
 ability=Play with the top card of your library revealed.;\
         As long as the top card of your library is a creature card, creatures you control that share a color with that card get +1/+1.;\
         {G}{W}: Put the top card of your library on the bottom of your library.
-timing=main
-oracle=Play with the top card of your library revealed. As long as the top card of your library is a creature card, creatures you control that share a color with that card get +1/+1. {G}{W}: Put the top card of your library on the bottom of your library.
+timing=artifact
+oracle=Play with the top card of your library revealed.\nAs long as the top card of your library is a creature card, creatures you control that share a color with that card get +1/+1.\n{G}{W}: Put the top card of your library on the bottom of your library.

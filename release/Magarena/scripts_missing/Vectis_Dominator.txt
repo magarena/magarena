@@ -1,11 +1,11 @@
 name=Vectis Dominator
-image=http://mtgimage.com/card/vectis%20dominator.jpg
-value=2.500
+image=http://magiccards.info/scans/en/arb/84.jpg
+value=2.292
 rarity=C
 type=Artifact,Creature
 subtype=Human,Wizard
 cost={1}{W}{B}
 pt=0/2
 ability={T}: Tap target creature unless its controller pays 2 life.
-timing=main
+timing=artifact
 oracle={T}: Tap target creature unless its controller pays 2 life.

@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 new MagicMayChoice(
-                    MagicTargetChoice.CREATURE_YOU_CONTROL
+                    A_CREATURE_YOU_CONTROL
                 ),
                 MagicBounceTargetPicker.create(),
                 this,
@@ -16,10 +16,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isNo()) {
-                game.doAction(new MagicSacrificeAction(event.getPermanent()));
+                game.doAction(new SacrificeAction(event.getPermanent()));
             } else {
                 event.processTargetPermanent(game, {
-                    game.doAction(new MagicRemoveFromPlayAction(it,MagicLocationType.OwnersHand));
+                    game.doAction(new RemoveFromPlayAction(it,MagicLocationType.OwnersHand));
                 });
             }
         }

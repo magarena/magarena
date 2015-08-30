@@ -1,9 +1,9 @@
 name=Gitaxian Probe
-image=http://mtgimage.com/card/gitaxian%20probe.jpg
-value=2.500
+image=http://magiccards.info/scans/en/nph/35.jpg
+value=4.348
 rarity=C
 type=Sorcery
 cost={U/P}
 effect=Look at target player's hand.~Draw a card.
 timing=main
-oracle=Look at target player's hand. Draw a card.
+oracle=Look at target player's hand.\nDraw a card.

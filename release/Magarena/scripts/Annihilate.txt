@@ -1,9 +1,9 @@
 name=Annihilate
-image=http://mtgimage.com/card/annihilate.jpg
+image=http://magiccards.info/scans/en/c14/134.jpg
 value=3.312
 rarity=U
 type=Instant
 cost={3}{B}{B}
 effect=Destroy target nonblack creature. It can't be regenerated.~Draw a card.
 timing=removal
-oracle=Destroy target nonblack creature. It can't be regenerated. Draw a card.
+oracle=Destroy target nonblack creature. It can't be regenerated.\nDraw a card.

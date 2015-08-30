@@ -1,6 +1,6 @@
 name=Phyrexian Tyranny
-image=http://mtgimage.com/card/phyrexian%20tyranny.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ps/118.jpg
+value=3.755
 rarity=R
 type=Enchantment
 cost={U}{B}{R}

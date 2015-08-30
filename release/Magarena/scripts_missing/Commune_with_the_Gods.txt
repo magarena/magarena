@@ -1,6 +1,6 @@
 name=Commune with the Gods
-image=http://mtgimage.com/card/commune%20with%20the%20gods.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ths/155.jpg
+value=3.183
 rarity=C
 type=Sorcery
 cost={1}{G}

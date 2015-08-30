@@ -1,5 +1,5 @@
 name=Kuldotha Forgemaster
-image=http://mtgimage.com/card/kuldotha%20forgemaster.jpg
+image=http://magiccards.info/scans/en/som/169.jpg
 value=4.413
 rarity=R
 type=Artifact,Creature

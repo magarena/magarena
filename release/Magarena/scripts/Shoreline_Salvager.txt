@@ -1,5 +1,5 @@
 name=Shoreline Salvager
-image=http://mtgimage.com/card/shoreline%20salvager.jpg
+image=http://magiccards.info/scans/en/wwk/67.jpg
 value=2.781
 rarity=U
 type=Creature

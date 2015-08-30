@@ -1,0 +1,10 @@
+name=Mercadia's Downfall
+image=http://magiccards.info/scans/en/mm/205.jpg
+value=2.395
+rarity=U
+type=Instant
+cost={2}{R}
+ability=Cast SN with AI only if an opponent controls a nonbasic land.
+timing=block
+requires_groovy_code
+oracle=Each attacking creature gets +1/+0 until end of turn for each nonbasic land defending player controls.

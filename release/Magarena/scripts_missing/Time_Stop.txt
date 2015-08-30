@@ -1,6 +1,6 @@
 name=Time Stop
-image=http://mtgimage.com/card/time%20stop.jpg
-value=2.500
+image=http://magiccards.info/scans/en/10e/117.jpg
+value=3.996
 rarity=R
 type=Instant
 cost={4}{U}{U}

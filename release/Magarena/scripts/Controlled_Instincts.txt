@@ -1,5 +1,5 @@
 name=Controlled Instincts
-image=http://mtgimage.com/card/controlled%20instincts.jpg
+image=http://magiccards.info/scans/en/cfx/23.jpg
 value=2.038
 rarity=U
 type=Enchantment
@@ -8,4 +8,4 @@ cost={U}
 ability=Enchanted creature doesn't untap during its controller's untap step.
 enchant=tap,neg red or green creature
 timing=aura
-oracle=Enchant red or green creature. Enchanted creature doesn't untap during its controller's untap step.
+oracle=Enchant red or green creature\nEnchanted creature doesn't untap during its controller's untap step.

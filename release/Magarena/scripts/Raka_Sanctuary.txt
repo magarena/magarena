@@ -1,0 +1,9 @@
+name=Raka Sanctuary
+image=http://magiccards.info/scans/en/ap/67.jpg
+value=3.446
+rarity=U
+type=Enchantment
+cost={2}{R}
+timing=enchantment
+requires_groovy_code
+oracle=At the beginning of your upkeep, if you control a white or blue permanent, Raka Sanctuary deals 1 damage to target creature. If you control a white permanent and a blue permanent, Raka Sanctuary deals 3 damage to that creature instead.

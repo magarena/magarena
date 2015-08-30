@@ -1,5 +1,5 @@
 name=Stormbind
-image=http://mtgimage.com/card/stormbind.jpg
+image=http://magiccards.info/scans/en/tsts/102.jpg
 value=3.776
 rarity=R
 type=Enchantment

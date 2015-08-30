@@ -1,5 +1,5 @@
 name=Bloodpyre Elemental
-image=http://mtgimage.com/card/bloodpyre%20elemental.jpg
+image=http://magiccards.info/scans/en/ala/93.jpg
 value=2.032
 rarity=C
 type=Creature

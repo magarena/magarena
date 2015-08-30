@@ -1,9 +1,9 @@
 name=Flux
-image=http://mtgimage.com/card/flux.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/wl/39.jpg
+value=3.671
+rarity=C
 type=Sorcery
 cost={2}{U}
 effect=Each player discards any number of cards, then draws that many cards.~Draw a card.
 timing=main
-oracle=Each player discards any number of cards, then draws that many cards. Draw a card.
+oracle=Each player discards any number of cards, then draws that many cards.\nDraw a card.

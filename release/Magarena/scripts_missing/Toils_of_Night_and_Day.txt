@@ -1,6 +1,6 @@
 name=Toils of Night and Day
-image=http://mtgimage.com/card/toils%20of%20night%20and%20day.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bok/57.jpg
+value=2.828
 rarity=C
 type=Instant
 subtype=Arcane

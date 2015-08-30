@@ -1,6 +1,6 @@
 name=Leeching Bite
-image=http://mtgimage.com/card/leeching%20bite.jpg
-value=2.500
+image=http://magiccards.info/scans/en/nph/113.jpg
+value=2.820
 rarity=C
 type=Instant
 cost={1}{G}

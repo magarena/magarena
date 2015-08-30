@@ -1,5 +1,5 @@
 name=Rhox
-image=http://mtgimage.com/card/rhox.jpg
+image=http://magiccards.info/scans/en/10e/291.jpg
 value=4.295
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=5/5
 timing=main
 ability={2}{G}: Regenerate SN.
 requires_groovy_code
-oracle=You may have Rhox assign its combat damage as though it weren't blocked. {2}{G}: Regenerate Rhox.
+oracle=You may have Rhox assign its combat damage as though it weren't blocked.\n{2}{G}: Regenerate Rhox.

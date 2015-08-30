@@ -1,5 +1,5 @@
 name=Firemane Avenger
-image=http://mtgimage.com/card/firemane%20avenger.jpg
+image=http://magiccards.info/scans/en/gtc/163.jpg
 value=4.019
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=flying;\
         Whenever SN and at least two other creatures attack, SN deals 3 damage to target creature or player.~You gain 3 life.
 timing=main
-oracle=Flying. Battalion — Whenever Firemane Avenger and at least two other creatures attack, Firemane Avenger deals 3 damage to target creature or player and you gain 3 life.
+oracle=Flying\nBattalion — Whenever Firemane Avenger and at least two other creatures attack, Firemane Avenger deals 3 damage to target creature or player and you gain 3 life.

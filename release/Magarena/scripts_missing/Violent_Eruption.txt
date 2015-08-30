@@ -1,9 +1,9 @@
 name=Violent Eruption
-image=http://mtgimage.com/card/violent%20eruption.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tr/117.jpg
+value=4.148
 rarity=U
 type=Instant
 cost={1}{R}{R}{R}
 effect=SN deals 4 damage divided as you choose among any number of target creatures and/or players.~Madness {1}{R}{R}
 timing=removal
-oracle=Violent Eruption deals 4 damage divided as you choose among any number of target creatures and/or players. Madness {1}{R}{R}
+oracle=Violent Eruption deals 4 damage divided as you choose among any number of target creatures and/or players.\nMadness {1}{R}{R}

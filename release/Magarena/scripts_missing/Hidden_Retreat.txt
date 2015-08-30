@@ -1,9 +1,9 @@
 name=Hidden Retreat
-image=http://mtgimage.com/card/hidden%20retreat.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sh/106.jpg
+value=3.130
 rarity=R
 type=Enchantment
 cost={2}{W}
 ability=Put a card from your hand on top of your library: Prevent all damage that would be dealt by target instant or sorcery spell this turn.
-timing=main
+timing=enchantment
 oracle=Put a card from your hand on top of your library: Prevent all damage that would be dealt by target instant or sorcery spell this turn.

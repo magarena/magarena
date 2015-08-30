@@ -1,11 +1,11 @@
 name=Thicket Basilisk
-image=http://mtgimage.com/card/thicket%20basilisk.jpg
+image=http://magiccards.info/scans/en/med/134.jpg
 value=3.202
 rarity=U
 type=Creature
 subtype=Basilisk
 cost={3}{G}{G}
 pt=2/4
+ability=Whenever SN blocks or becomes blocked by a non-Wall creature, destroy that creature at end of combat.
 timing=main
-requires_groovy_code=Rock Basilisk
 oracle=Whenever Thicket Basilisk blocks or becomes blocked by a non-Wall creature, destroy that creature at end of combat.

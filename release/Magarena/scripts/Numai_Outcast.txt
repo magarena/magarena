@@ -1,5 +1,5 @@
 name=Numai Outcast
-image=http://mtgimage.com/card/numai%20outcast.jpg
+image=http://magiccards.info/scans/en/chk/134.jpg
 value=0.852
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=bushido 2;\
         {B}, Pay 5 life: Regenerate SN.
 timing=main
-oracle=Bushido 2. {B}, Pay 5 life: Regenerate Numai Outcast.
+oracle=Bushido 2\n{B}, Pay 5 life: Regenerate Numai Outcast.

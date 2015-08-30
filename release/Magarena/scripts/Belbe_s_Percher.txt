@@ -1,5 +1,5 @@
 name=Belbe's Percher
-image=http://mtgimage.com/card/belbe%27s%20percher.jpg
+image=http://magiccards.info/scans/en/ne/53.jpg
 value=2.611
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{B}
 pt=2/2
 ability=flying;SN can block only creatures with flying.
 timing=main
-oracle=Flying. Belbe's Percher can block only creatures with flying.
+oracle=Flying\nBelbe's Percher can block only creatures with flying.

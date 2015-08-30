@@ -1,0 +1,12 @@
+name=Dragon Mage
+image=http://magiccards.info/scans/en/sc/87.jpg
+value=4.305
+rarity=R
+type=Creature
+subtype=Dragon,Wizard
+cost={5}{R}{R}
+pt=5/5
+ability=Flying
+timing=main
+requires_groovy_code
+oracle=Flying\nWhenever Dragon Mage deals combat damage to a player, each player discards his or her hand, then draws seven cards.

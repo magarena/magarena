@@ -1,6 +1,6 @@
 name=Infectious Rage
-image=http://mtgimage.com/card/infectious%20rage.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ju/92.jpg
+value=2.857
 rarity=U
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={1}{R}
 ability=Enchant creature;\
         Enchanted creature gets +2/-1.;\
         When enchanted creature dies, choose a creature at random SN can enchant. Return SN to the battlefield attached to that creature.
-timing=main
-oracle=Enchant creature. Enchanted creature gets +2/-1. When enchanted creature dies, choose a creature at random Infectious Rage can enchant. Return Infectious Rage to the battlefield attached to that creature.
+timing=aura
+oracle=Enchant creature\nEnchanted creature gets +2/-1.\nWhen enchanted creature dies, choose a creature at random Infectious Rage can enchant. Return Infectious Rage to the battlefield attached to that creature.

@@ -1,9 +1,9 @@
 name=Sandstone Needle
-image=http://mtgimage.com/card/sandstone%20needle.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/326.jpg
+value=4.182
 rarity=C
 type=Land
 ability=SN enters the battlefield tapped with two depletion counters on it.;\
         {T}, Remove a depletion counter from SN: Add {R}{R} to your mana pool. If there are no depletion counters on SN, sacrifice it.
-timing=main
-oracle=Sandstone Needle enters the battlefield tapped with two depletion counters on it. {T}, Remove a depletion counter from Sandstone Needle: Add {R}{R} to your mana pool. If there are no depletion counters on Sandstone Needle, sacrifice it.
+timing=land
+oracle=Sandstone Needle enters the battlefield tapped with two depletion counters on it.\n{T}, Remove a depletion counter from Sandstone Needle: Add {R}{R} to your mana pool. If there are no depletion counters on Sandstone Needle, sacrifice it.

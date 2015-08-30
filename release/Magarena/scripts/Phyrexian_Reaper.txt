@@ -1,11 +1,11 @@
 name=Phyrexian Reaper
-image=http://mtgimage.com/card/phyrexian%20reaper.jpg
+image=http://magiccards.info/scans/en/in/117.jpg
 value=2.797
 rarity=C
 type=Creature
 subtype=Zombie
 cost={4}{B}
 pt=3/3
+ability=Whenever SN becomes blocked by a green creature, destroy that creature. It can't be regenerated.
 timing=main
-requires_groovy_code
 oracle=Whenever Phyrexian Reaper becomes blocked by a green creature, destroy that creature. It can't be regenerated.

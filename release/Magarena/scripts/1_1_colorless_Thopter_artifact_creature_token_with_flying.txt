@@ -7,3 +7,4 @@ color=
 subtype=Thopter
 type=Artifact,Creature
 ability=flying
+oracle=Flying

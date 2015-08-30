@@ -1,4 +1,4 @@
-def choice = MagicTargetChoice.Negative("target creature with Defender");
+def choice = Negative("target creature with Defender");
 
 [
     new MagicPermanentActivation(
@@ -28,9 +28,8 @@ def choice = MagicTargetChoice.Negative("target creature with Defender");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicDestroyAction(it));
-                final MagicDamage damage=new MagicDamage(event.getSource(),it.getController(),2);
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new DestroyAction(it));
+                game.doAction(new DealDamageAction(event.getSource(),it.getController(),2));
             });
         }
     }

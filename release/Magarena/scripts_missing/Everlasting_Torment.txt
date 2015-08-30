@@ -1,11 +1,11 @@
 name=Everlasting Torment
-image=http://mtgimage.com/card/everlasting%20torment.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/186.jpg
+value=4.043
 rarity=R
 type=Enchantment
 cost={2}{B/R}
 ability=Players can't gain life.;\
         Damage can't be prevented.;\
         All damage is dealt as though its source had wither.
-timing=main
-oracle=Players can't gain life. Damage can't be prevented. All damage is dealt as though its source had wither.
+timing=enchantment
+oracle=Players can't gain life.\nDamage can't be prevented.\nAll damage is dealt as though its source had wither.

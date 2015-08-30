@@ -1,5 +1,5 @@
 name=Stone Golem
-image=http://mtgimage.com/card/stone%20golem.jpg
+image=http://magiccards.info/scans/en/m11/215.jpg
 value=2.787
 rarity=U
 type=Artifact,Creature
@@ -7,3 +7,4 @@ subtype=Golem
 cost={5}
 pt=4/4
 timing=main
+oracle=NONE

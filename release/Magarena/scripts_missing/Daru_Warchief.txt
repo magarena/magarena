@@ -1,6 +1,6 @@
 name=Daru Warchief
-image=http://mtgimage.com/card/daru%20warchief.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sc/6.jpg
+value=4.428
 rarity=U
 type=Creature
 subtype=Human,Soldier
@@ -9,4 +9,4 @@ pt=1/1
 ability=Soldier spells you cast cost {1} less to cast.;\
         Soldier creatures you control get +1/+2.
 timing=main
-oracle=Soldier spells you cast cost {1} less to cast. Soldier creatures you control get +1/+2.
+oracle=Soldier spells you cast cost {1} less to cast.\nSoldier creatures you control get +1/+2.

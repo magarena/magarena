@@ -14,16 +14,13 @@ def TabernacleUpkeep = new MagicAtYourUpkeepTrigger() {
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         if (event.isNo()) {
-            game.doAction(new MagicDestroyAction(event.getPermanent()));
+            game.doAction(new DestroyAction(event.getPermanent()));
         }
     }
 };
 
 [
-    new MagicStatic(
-        MagicLayer.Ability,
-        MagicTargetFilterFactory.CREATURE
-    ) {
+    new MagicStatic(MagicLayer.Ability, CREATURE) {
         @Override
         public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
             permanent.addAbility(TabernacleUpkeep);

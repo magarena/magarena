@@ -1,6 +1,5 @@
 package magic.generator;
 
-import magic.data.CubeDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCondensedDeck;
 import magic.model.MagicDeckProfile;
@@ -39,11 +38,6 @@ public class Vampire_Rage_DeckGenerator extends RandomDeckGenerator {
         "Dragonskull Summit",
         "Dragonskull Summit"
     };
-
-    public Vampire_Rage_DeckGenerator() {
-        super(null);
-        setCubeDefinition(CubeDefinitions.getCubeDefinition(getColorText()));
-    }
 
     public String getColorText() {
         return colorText;

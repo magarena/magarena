@@ -1,10 +1,11 @@
 name=Zealous Persecution
-image=http://mtgimage.com/card/zealous%20persecution.jpg
+image=http://magiccards.info/scans/en/md1/9.jpg
 value=3.929
 removal=1
 rarity=U
 type=Instant
 cost={W}{B}
+ability=Cast SN with AI only if there is a creature on the battlefield.
 effect=Creatures you control get +1/+1 until end of turn.~Creatures your opponents control get -1/-1 until end of turn.
 timing=removal
 oracle=Until end of turn, creatures you control get +1/+1 and creatures your opponents control get -1/-1.

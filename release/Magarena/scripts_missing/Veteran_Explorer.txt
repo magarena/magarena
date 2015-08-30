@@ -1,6 +1,6 @@
 name=Veteran Explorer
-image=http://mtgimage.com/card/veteran%20explorer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cmd/177.jpg
+value=3.617
 rarity=U
 type=Creature
 subtype=Human,Soldier,Scout

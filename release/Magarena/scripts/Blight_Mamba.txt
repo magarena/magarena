@@ -1,5 +1,5 @@
 name=Blight Mamba
-image=http://mtgimage.com/card/blight%20mamba.jpg
+image=http://magiccards.info/scans/en/som/112.jpg
 value=3.762
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=infect;\
         {1}{G}: Regenerate SN.
 timing=main
-oracle=Infect. {1}{G}: Regenerate Blight Mamba.
+oracle=Infect\n{1}{G}: Regenerate Blight Mamba.

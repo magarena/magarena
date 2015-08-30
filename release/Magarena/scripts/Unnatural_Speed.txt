@@ -1,5 +1,5 @@
 name=Unnatural Speed
-image=http://mtgimage.com/card/unnatural%20speed.jpg
+image=http://magiccards.info/scans/en/chk/197.jpg
 value=1.351
 rarity=C
 type=Instant

@@ -1,6 +1,6 @@
 name=Ink-Treader Nephilim
-image=http://mtgimage.com/card/ink-treader%20nephilim.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gp/117.jpg
+value=4.027
 rarity=R
 type=Creature
 subtype=Nephilim

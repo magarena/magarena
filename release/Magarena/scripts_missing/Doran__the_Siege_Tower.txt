@@ -1,6 +1,6 @@
 name=Doran, the Siege Tower
-image=http://mtgimage.com/card/doran%2C%20the%20siege%20tower.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lw/247.jpg
+value=4.179
 rarity=R
 type=Legendary,Creature
 subtype=Treefolk,Shaman

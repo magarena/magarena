@@ -1,5 +1,5 @@
 name=Foul Spirit
-image=http://mtgimage.com/set/me4/foul%20spirit.jpg
+image=http://magiccards.info/scans/en/me4/81.jpg
 value=2.225
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=3/2
 ability=Flying;\
         When SN enters the battlefield, sacrifice a land.
 timing=main
-oracle=Flying. When Foul Spirit enters the battlefield, sacrifice a land.
+oracle=Flying\nWhen Foul Spirit enters the battlefield, sacrifice a land.

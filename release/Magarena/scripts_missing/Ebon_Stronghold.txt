@@ -1,10 +1,10 @@
 name=Ebon Stronghold
-image=http://mtgimage.com/card/ebon%20stronghold.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me2/228.jpg
+value=3.391
 rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\
         {T}: Add {B} to your mana pool.;\
         {T}, Sacrifice SN: Add {B}{B} to your mana pool.
-timing=main
-oracle=Ebon Stronghold enters the battlefield tapped. {T}: Add {B} to your mana pool. {T}, Sacrifice Ebon Stronghold: Add {B}{B} to your mana pool.
+timing=land
+oracle=Ebon Stronghold enters the battlefield tapped.\n{T}: Add {B} to your mana pool.\n{T}, Sacrifice Ebon Stronghold: Add {B}{B} to your mana pool.

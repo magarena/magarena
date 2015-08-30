@@ -1,0 +1,13 @@
+name=Sidisi, Undead Vizier
+image=http://magiccards.info/scans/en/dtk/120.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Zombie,Naga
+cost={3}{B}{B}
+pt=4/6
+ability=Deathtouch;\
+        Exploit;\
+        When SN exploits a creature, you may search your library for a card, put it into your hand, then shuffle your library.
+timing=main
+oracle=Deathtouch\nExploit\nWhen Sidisi, Undead Vizier exploits a creature, you may search your library for a card, put it into your hand, then shuffle your library.

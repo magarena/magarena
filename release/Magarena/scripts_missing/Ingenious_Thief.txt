@@ -1,7 +1,7 @@
 name=Ingenious Thief
-image=http://mtgimage.com/card/ingenious%20thief.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/st/40.jpg
+value=2.685
+rarity=C
 type=Creature
 subtype=Human,Rogue
 cost={1}{U}
@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying;\
         When SN enters the battlefield, look at target player's hand.
 timing=main
-oracle=Flying. When Ingenious Thief enters the battlefield, look at target player's hand.
+oracle=Flying\nWhen Ingenious Thief enters the battlefield, look at target player's hand.

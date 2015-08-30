@@ -1,6 +1,6 @@
 name=Debt to the Deathless
-image=http://mtgimage.com/card/debt%20to%20the%20deathless.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dgm/64.jpg
+value=3.784
 rarity=U
 type=Sorcery
 cost={X}{W}{W}{B}{B}

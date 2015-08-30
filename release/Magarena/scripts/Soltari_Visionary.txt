@@ -1,5 +1,5 @@
 name=Soltari Visionary
-image=http://mtgimage.com/card/soltari%20visionary.jpg
+image=http://magiccards.info/scans/en/ex/20.jpg
 value=4.368
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=shadow
 timing=main
 requires_groovy_code
-oracle=Shadow. Whenever Soltari Visionary deals damage to a player, destroy target enchantment that player controls.
+oracle=Shadow\nWhenever Soltari Visionary deals damage to a player, destroy target enchantment that player controls.

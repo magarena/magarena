@@ -1,0 +1,10 @@
+name=Consuming Bonfire
+image=http://magiccards.info/scans/en/lw/161.jpg
+value=1.420
+rarity=C
+type=Tribal,Sorcery
+subtype=Elemental
+cost={3}{R}{R}
+effect=Choose one — (1) SN deals 4 damage to target non-Elemental creature. (2) SN deals 7 damage to target Treefolk creature.
+timing=main
+oracle=Choose one —\n• Consuming Bonfire deals 4 damage to target non-Elemental creature.\n• Consuming Bonfire deals 7 damage to target Treefolk creature.

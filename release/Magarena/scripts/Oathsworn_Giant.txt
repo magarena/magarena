@@ -1,5 +1,5 @@
 name=Oathsworn Giant
-image=http://mtgimage.com/card/oathsworn%20giant.jpg
+image=http://magiccards.info/scans/en/rav/27.jpg
 value=3.786
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=3/4
 ability=Vigilance;\
         Other creatures you control get +0/+2 and have vigilance.
 timing=main
-oracle=Vigilance. Other creatures you control get +0/+2 and have vigilance.
+oracle=Vigilance\nOther creatures you control get +0/+2 and have vigilance.

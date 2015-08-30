@@ -1,5 +1,5 @@
 name=Ratcatcher
-image=http://mtgimage.com/card/ratcatcher.jpg
+image=http://magiccards.info/scans/en/di/52.jpg
 value=3.946
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=Fear;\
         At the beginning of your upkeep, you may search your library for a Rat card, reveal it, and put it into your hand. If you do, shuffle your library.
 timing=main
-oracle=Fear. At the beginning of your upkeep, you may search your library for a Rat card, reveal it, and put it into your hand. If you do, shuffle your library.
+oracle=Fear\nAt the beginning of your upkeep, you may search your library for a Rat card, reveal it, and put it into your hand. If you do, shuffle your library.

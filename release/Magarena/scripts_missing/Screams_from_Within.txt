@@ -1,6 +1,6 @@
 name=Screams from Within
-image=http://mtgimage.com/card/screams%20from%20within.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ds/52.jpg
+value=4.149
 rarity=U
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={1}{B}{B}
 ability=Enchant creature;\
         Enchanted creature gets -1/-1.;\
         When enchanted creature dies, return SN from your graveyard to the battlefield.
-timing=main
-oracle=Enchant creature. Enchanted creature gets -1/-1. When enchanted creature dies, return Screams from Within from your graveyard to the battlefield.
+timing=aura
+oracle=Enchant creature\nEnchanted creature gets -1/-1.\nWhen enchanted creature dies, return Screams from Within from your graveyard to the battlefield.

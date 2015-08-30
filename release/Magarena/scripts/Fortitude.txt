@@ -1,12 +1,12 @@
 name=Fortitude
-image=http://mtgimage.com/card/fortitude.jpg
+image=http://magiccards.info/scans/en/us/253.jpg
 value=1.936
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{G}
-ability=When SN is put into a graveyard from the battlefield, return SN to its owner's hand.
+ability=Sacrifice a Forest: Regenerate enchanted creature.;\
+        When SN is put into a graveyard from the battlefield, return SN to its owner's hand.
 enchant=pump,pos creature
 timing=aura
-requires_groovy_code
-oracle=Enchant creature. Sacrifice a Forest: Regenerate enchanted creature. When Fortitude is put into a graveyard from the battlefield, return Fortitude to its owner's hand.
+oracle=Enchant creature\nSacrifice a Forest: Regenerate enchanted creature.\nWhen Fortitude is put into a graveyard from the battlefield, return Fortitude to its owner's hand.

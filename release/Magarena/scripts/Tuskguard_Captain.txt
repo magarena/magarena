@@ -1,5 +1,5 @@
 name=Tuskguard Captain
-image=http://mtgimage.com/card/tuskguard%20captain.jpg
+image=http://magiccards.info/scans/en/ktk/156.jpg
 value=3.250
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/3
 ability=Outlast {G};\
         Each creature you control with a +1/+1 counter on it has trample.
 timing=main
-oracle=Outlast {G}. Each creature you control with a +1/+1 counter on it has trample.
+oracle=Outlast {G}\nEach creature you control with a +1/+1 counter on it has trample.

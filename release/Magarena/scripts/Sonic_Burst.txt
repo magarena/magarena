@@ -1,5 +1,5 @@
 name=Sonic Burst
-image=http://mtgimage.com/card/sonic%20burst.jpg
+image=http://magiccards.info/scans/en/bd/46.jpg
 value=2.533
 rarity=C
 type=Instant
@@ -7,4 +7,4 @@ cost={1}{R}
 ability=As an additional cost to cast SN, discard a card at random.
 effect=SN deals 4 damage to target creature or player.
 timing=removal
-oracle=As an additional cost to cast Sonic Burst, discard a card at random. Sonic Burst deals 4 damage to target creature or player.
+oracle=As an additional cost to cast Sonic Burst, discard a card at random.\nSonic Burst deals 4 damage to target creature or player.

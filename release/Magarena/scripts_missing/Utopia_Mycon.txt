@@ -1,6 +1,6 @@
 name=Utopia Mycon
-image=http://mtgimage.com/card/utopia%20mycon.jpg
-value=2.500
+image=http://magiccards.info/scans/en/fut/140.jpg
+value=3.880
 rarity=U
 type=Creature
 subtype=Fungus
@@ -10,4 +10,4 @@ ability=At the beginning of your upkeep, put a spore counter on SN.;\
         Remove three spore counters from SN: Put a 1/1 green Saproling creature token onto the battlefield.;\
         Sacrifice a Saproling: Add one mana of any color to your mana pool.
 timing=main
-oracle=At the beginning of your upkeep, put a spore counter on Utopia Mycon. Remove three spore counters from Utopia Mycon: Put a 1/1 green Saproling creature token onto the battlefield. Sacrifice a Saproling: Add one mana of any color to your mana pool.
+oracle=At the beginning of your upkeep, put a spore counter on Utopia Mycon.\nRemove three spore counters from Utopia Mycon: Put a 1/1 green Saproling creature token onto the battlefield.\nSacrifice a Saproling: Add one mana of any color to your mana pool.

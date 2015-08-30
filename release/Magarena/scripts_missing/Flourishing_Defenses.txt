@@ -1,9 +1,9 @@
 name=Flourishing Defenses
-image=http://mtgimage.com/card/flourishing%20defenses.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/114.jpg
+value=3.280
 rarity=U
 type=Enchantment
 cost={4}{G}
 ability=Whenever a -1/-1 counter is placed on a creature, you may put a 1/1 green Elf Warrior creature token onto the battlefield.
-timing=main
+timing=enchantment
 oracle=Whenever a -1/-1 counter is placed on a creature, you may put a 1/1 green Elf Warrior creature token onto the battlefield.

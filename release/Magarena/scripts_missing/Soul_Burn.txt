@@ -1,9 +1,9 @@
 name=Soul Burn
-image=http://mtgimage.com/card/soul%20burn.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cstd/31.jpg
+value=3.129
 rarity=C
 type=Sorcery
 cost={X}{2}{B}
 effect=Spend only black and/or red mana on X.~SN deals X damage to target creature or player. You gain life equal to the damage dealt, but not more than the amount of {B} spent on X, the player's life total before SN dealt damage, or the creature's toughness.
 timing=main
-oracle=Spend only black and/or red mana on X. Soul Burn deals X damage to target creature or player. You gain life equal to the damage dealt, but not more than the amount of {B} spent on X, the player's life total before Soul Burn dealt damage, or the creature's toughness.
+oracle=Spend only black and/or red mana on X.\nSoul Burn deals X damage to target creature or player. You gain life equal to the damage dealt, but not more than the amount of {B} spent on X, the player's life total before Soul Burn dealt damage, or the creature's toughness.

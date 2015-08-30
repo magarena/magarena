@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_SPELL,
+                NEG_TARGET_SPELL,
                 this,
                 "Counter target spell\$ unless its controller pays {1} for each basic land type among lands PN controls."
             );
@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
                 final int amount = event.getPlayer().getDomain();
-                game.logAppendMessage(event.getPlayer()," ("+amount+")");
+                game.logAppendValue(event.getPlayer(),amount);
                 game.addEvent(new MagicCounterUnlessEvent(event.getSource(),it,MagicManaCost.create("{" + amount + "}")));
             });
         }

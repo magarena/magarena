@@ -1,5 +1,5 @@
 name=Scuzzback Scrapper
-image=http://mtgimage.com/card/scuzzback%20scrapper.jpg
+image=http://magiccards.info/scans/en/shm/217.jpg
 value=3.302
 ability=wither
 rarity=C

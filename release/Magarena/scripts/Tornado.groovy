@@ -16,7 +16,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_PERMANENT,
+                NEG_TARGET_PERMANENT,
                 this,
                 "Destroy target permanent\$ and put a velocity counter on SN."
             );
@@ -25,8 +25,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(new MagicDestroyAction(it));
-                game.doAction(new MagicChangeCountersAction(event.getPermanent(),MagicCounterType.Velocity,1));
+                game.doAction(new DestroyAction(it));
+                game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.Velocity,1));
             });
         }
     }

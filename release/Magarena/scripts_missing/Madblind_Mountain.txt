@@ -1,10 +1,10 @@
 name=Madblind Mountain
-image=http://mtgimage.com/card/madblind%20mountain.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/274.jpg
+value=1.926
 rarity=U
 type=Land
 subtype=Mountain
 ability=SN enters the battlefield tapped.;\
         {R}, {T}: Shuffle your library. Activate this ability only if you control two or more red permanents.
-timing=main
-oracle=Madblind Mountain enters the battlefield tapped. {R}, {T}: Shuffle your library. Activate this ability only if you control two or more red permanents.
+timing=land
+oracle=Madblind Mountain enters the battlefield tapped.\n{R}, {T}: Shuffle your library. Activate this ability only if you control two or more red permanents.

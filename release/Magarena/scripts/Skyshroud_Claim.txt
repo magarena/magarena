@@ -1,9 +1,9 @@
 name=Skyshroud Claim
-image=http://mtgimage.com/card/skyshroud%20claim.jpg
+image=http://magiccards.info/scans/en/ne/117.jpg
 value=4.123
 rarity=C
 type=Sorcery
 cost={3}{G}
+effect=Search your library for up to two Forest cards and put them onto the battlefield. Then shuffle your library.
 timing=main
-requires_groovy_code
 oracle=Search your library for up to two Forest cards and put them onto the battlefield. Then shuffle your library.

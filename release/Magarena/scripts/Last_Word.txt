@@ -1,5 +1,5 @@
 name=Last Word
-image=http://mtgimage.com/card/last%20word.jpg
+image=http://magiccards.info/scans/en/ds/23.jpg
 value=4.043
 rarity=R
 type=Instant
@@ -7,4 +7,4 @@ cost={2}{U}{U}
 timing=counter
 ability=SN can't be countered by spells or abilities.
 effect=Counter target spell.
-oracle=Last Word can't be countered by spells or abilities. Counter target spell.
+oracle=Last Word can't be countered by spells or abilities.\nCounter target spell.

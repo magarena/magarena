@@ -1,6 +1,6 @@
 name=Stonehewer Giant
-image=http://mtgimage.com/card/stonehewer%20giant.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mma/31.jpg
+value=3.819
 rarity=R
 type=Creature
 subtype=Giant,Warrior
@@ -9,4 +9,4 @@ pt=4/4
 ability=Vigilance;\
         {1}{W}, {T}: Search your library for an Equipment card and put it onto the battlefield. Attach it to a creature you control. Then shuffle your library.
 timing=main
-oracle=Vigilance. {1}{W}, {T}: Search your library for an Equipment card and put it onto the battlefield. Attach it to a creature you control. Then shuffle your library.
+oracle=Vigilance\n{1}{W}, {T}: Search your library for an Equipment card and put it onto the battlefield. Attach it to a creature you control. Then shuffle your library.

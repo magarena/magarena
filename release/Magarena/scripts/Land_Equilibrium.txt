@@ -1,0 +1,9 @@
+name=Land Equilibrium
+image=http://magiccards.info/scans/en/me3/40.jpg
+value=4.488
+rarity=R
+type=Enchantment
+cost={2}{U}{U}
+timing=enchantment
+requires_groovy_code
+oracle=If an opponent who controls at least as many lands as you do would put a land onto the battlefield, that player instead puts that land onto the battlefield then sacrifices a land.

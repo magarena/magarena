@@ -1,5 +1,5 @@
 name=Awaken the Ancient
-image=http://mtgimage.com/card/awaken%20the%20ancient.jpg
+image=http://magiccards.info/scans/en/m14/126.jpg
 value=3.658
 rarity=R
 type=Enchantment
@@ -12,4 +12,4 @@ given_color=r
 set_pt=7/7
 given_ability=haste
 timing=enchantment
-oracle=Enchant Mountain. Enchanted Mountain is a 7/7 red Giant creature with haste. It's still a land.
+oracle=Enchant Mountain\nEnchanted Mountain is a 7/7 red Giant creature with haste. It's still a land.

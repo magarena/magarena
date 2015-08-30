@@ -1,6 +1,6 @@
 name=Sawtooth Thresher
-image=http://mtgimage.com/card/sawtooth%20thresher.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5dn/149.jpg
+value=2.640
 rarity=C
 type=Artifact,Creature
 subtype=Construct
@@ -8,5 +8,5 @@ cost={6}
 pt=1/1
 ability=Sunburst;\
         Remove two +1/+1 counters from SN: SN gets +4/+4 until end of turn.
-timing=main
-oracle=Sunburst. Remove two +1/+1 counters from Sawtooth Thresher: Sawtooth Thresher gets +4/+4 until end of turn.
+timing=artifact
+oracle=Sunburst\nRemove two +1/+1 counters from Sawtooth Thresher: Sawtooth Thresher gets +4/+4 until end of turn.

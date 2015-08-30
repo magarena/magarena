@@ -1,5 +1,5 @@
 name=Southern Elephant
-image=http://mtgimage.com/card/southern%20elephant.jpg
+image=http://magiccards.info/scans/en/me4/167.jpg
 value=2.688
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Elephant
 cost={3}{G}
 pt=3/4
 timing=main
+oracle=NONE

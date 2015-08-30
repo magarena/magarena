@@ -1,5 +1,5 @@
 name=Goblin Chieftain
-image=http://mtgimage.com/card/goblin%20chieftain.jpg
+image=http://magiccards.info/scans/en/m12/138.jpg
 value=3.984
 rarity=R
 type=Creature
@@ -11,4 +11,4 @@ ability=haste;\
         other goblin creatures you control have haste
 static=player
 timing=main
-oracle=Haste. Other Goblin creatures you control get +1/+1 and have haste.
+oracle=Haste\nOther Goblin creatures you control get +1/+1 and have haste.

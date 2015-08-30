@@ -1,0 +1,13 @@
+name=Living Lore
+image=http://magiccards.info/scans/en/dtk/61.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Avatar
+cost={3}{U}
+pt=*/*
+ability=As SN enters the battlefield, exile an instant or sorcery card from your graveyard.;\
+        SN's power and toughness are each equal to the exiled card's converted mana cost.;\
+        Whenever SN deals combat damage, you may sacrifice it. If you do, you may cast the exiled card without paying its mana cost.
+timing=main
+oracle=As Living Lore enters the battlefield, exile an instant or sorcery card from your graveyard.\nLiving Lore's power and toughness are each equal to the exiled card's converted mana cost.\nWhenever Living Lore deals combat damage, you may sacrifice it. If you do, you may cast the exiled card without paying its mana cost.

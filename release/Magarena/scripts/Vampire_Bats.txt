@@ -1,5 +1,5 @@
 name=Vampire Bats
-image=http://mtgimage.com/card/vampire%20bats.jpg
+image=http://magiccards.info/scans/en/gvl/35.jpg
 value=3.348
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=0/1
 ability=Flying;\
         {B}: SN gets +1/+0 until end of turn. Activate this ability no more than twice each turn.
 timing=main
-oracle=Flying. {B}: Vampire Bats gets +1/+0 until end of turn. Activate this ability no more than twice each turn.
+oracle=Flying\n{B}: Vampire Bats gets +1/+0 until end of turn. Activate this ability no more than twice each turn.

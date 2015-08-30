@@ -1,13 +1,13 @@
 package magic.model;
 
 import magic.ai.ArtificialScoringSystem;
-import magic.model.action.MagicAttachAction;
-import magic.model.action.MagicChangeControlAction;
-import magic.model.action.MagicChangeCountersAction;
-import magic.model.action.MagicChangeStateAction;
-import magic.model.action.MagicDestroyAction;
-import magic.model.action.MagicRemoveFromPlayAction;
-import magic.model.action.MagicSoulbondAction;
+import magic.model.action.AttachAction;
+import magic.model.action.ChangeControlAction;
+import magic.model.action.ChangeCountersAction;
+import magic.model.action.ChangeStateAction;
+import magic.model.action.DestroyAction;
+import magic.model.action.RemoveFromPlayAction;
+import magic.model.action.SoulbondAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicBestowActivation;
@@ -75,11 +75,11 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     // remember order among blockers (blockedName + id + block order)
     private String blockedName;
     private long stateId;
-    
+
     public MagicPermanent(final long aId,final MagicCard aCard,final MagicPlayer aController) {
         this(aId, aCard, aCard.getCardDefinition(), aController);
     }
-    
+
     public MagicPermanent(final long aId, final MagicCard aCard, final MagicCardDefinition aCardDef, final MagicPlayer aController) {
         id = aId;
         card = aCard;
@@ -87,14 +87,21 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         firstController = aController;
 
         counters = new EnumMap<MagicCounterType, Integer>(MagicCounterType.class);
-        equipmentPermanents=new MagicPermanentSet();
-        auraPermanents=new MagicPermanentSet();
-        blockingCreatures=new MagicPermanentList();
+        equipmentPermanents = new MagicPermanentSet();
+        auraPermanents = new MagicPermanentSet();
+        blockingCreatures = new MagicPermanentList();
         exiledCards = new MagicCardList();
+
+        cachedController = firstController;
+        cachedTypeFlags = getCardDefinition().getTypeFlags();
+        cachedSubTypeFlags = getCardDefinition().genSubTypeFlags();
+        cachedColorFlags = getCardDefinition().getColorFlags();
+        cachedAbilityFlags = getCardDefinition().genAbilityFlags();
+        cachedPowerToughness = getCardDefinition().genPowerToughness();
         cachedActivations = new LinkedList<MagicActivation<MagicPermanent>>();
         cachedManaActivations = new LinkedList<MagicManaActivation>();
-        cachedTriggers    = new LinkedList<MagicTrigger<?>>();
-        etbTriggers       = new LinkedList<MagicWhenComesIntoPlayTrigger>();
+        cachedTriggers = new LinkedList<MagicTrigger<?>>();
+        etbTriggers = new LinkedList<MagicWhenComesIntoPlayTrigger>();
     }
 
     private MagicPermanent(final MagicCopyMap copyMap, final MagicPermanent sourcePermanent) {
@@ -208,14 +215,14 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public int getManaId() {
         // Creatures or lands that can be animated are unique
         // Enchanted/equipped permanents are unique
-        // 'Summoned' permanents are unique 
+        // 'Summoned' permanents are unique
         if (hasExcludeManaOrCombat() || isEnchanted() || isEquipped() || hasState(MagicPermanentState.Summoned) ) {
             return (int)id;
         }
         // Uniqueness is determined by card definition and number of charge counters.
         return -((cardDefinition.getIndex()<<16)+getCounters(MagicCounterType.Charge));
     }
-    
+
     public boolean hasExcludeManaOrCombat() {
         return getCardDefinition().hasExcludeManaOrCombat() || (producesMana() && isCreature());
     }
@@ -231,11 +238,11 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public boolean isNonToken() {
         return !card.isToken();
     }
-    
+
     public boolean isDoubleFaced() {
         return card.isDoubleFaced();
     }
-    
+
     public boolean isFlipCard() {
         return card.isFlipCard();
     }
@@ -284,7 +291,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         ability.addAbility(abilityList);
         abilityList.giveAbility(this, flags);
     }
-    
+
     public void addAbility(final MagicAbility ability) {
         final MagicAbilityList abilityList = new MagicAbilityList();
         ability.addAbility(abilityList);
@@ -294,7 +301,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public void addAbility(final MagicActivation<MagicPermanent> act) {
         cachedActivations.add(act);
     }
-    
+
     public void addAbility(final MagicTrigger<?> trig) {
         if (trig instanceof MagicWhenComesIntoPlayTrigger) {
             etbTriggers.add((MagicWhenComesIntoPlayTrigger)trig);
@@ -302,11 +309,11 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             cachedTriggers.add(trig);
         }
     }
-    
+
     public void addAbility(final MagicManaActivation act) {
         cachedManaActivations.add(act);
     }
-    
+
     public Collection<MagicActivation<MagicPermanent>> getActivations() {
         return cachedActivations;
     }
@@ -330,7 +337,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public int getConvertedCost() {
         return getCardDefinition().getConvertedCost();
     }
-    
+
     public int getDevotion(final MagicColor... colors) {
         int devotion = 0;
         for (final MagicCostManaType mt : getCardDefinition().getCost().getCostManaTypes(0)) {
@@ -355,8 +362,18 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         return cachedManaActivations.size();
     }
 
+    public boolean isName(final String other) {
+        final String name = getName();
+        return name.isEmpty() == false && name.equalsIgnoreCase(other);
+    }
+
     public String getName() {
-        return getCardDefinition().getName();
+        final String name = getCardDefinition().getName();
+        if (name.isEmpty() && getGame().isReal()) {
+            return "Permanent #" + (id % 1000);
+        } else {
+            return name;
+        }
     }
 
     @Override
@@ -399,13 +416,13 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         MagicPermanent.updateProperties(game);
         MagicPermanent.updateScoreFixController(game);
     }
-    
+
     private static void updateScoreFixController(final MagicGame game) {
         for (final MagicPlayer player : game.getPlayers()) {
         for (final MagicPermanent perm : player.getPermanents()) {
             final MagicPlayer curr = perm.getController();
             if (curr != player) {
-                game.addDelayedAction(new MagicChangeControlAction(curr, perm, perm.getScore()));
+                game.addDelayedAction(new ChangeControlAction(curr, perm, perm.getScore()));
             }
             perm.updateScore();
         }}
@@ -447,6 +464,9 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
                 break;
             case CDASubtype:
                 getCardDefinition().applyCDASubType(getGame(), getController(), cachedSubTypeFlags);
+                break;
+            case CDAColor:
+                cachedColorFlags = getCardDefinition().applyCDAColor(getGame(), getController(), cachedColorFlags);
                 break;
             case CDAPT:
                 getCardDefinition().applyCDAPowerToughness(getGame(), getController(), this, cachedPowerToughness);
@@ -527,6 +547,13 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         return color.hasColor(getColorFlags());
     }
 
+    @Override
+    public int getCounters(final MagicCounterType counterType) {
+        final Integer cnt = counters.get(counterType);
+        return cnt != null ? cnt : 0;
+    }
+
+    @Override
     public void changeCounters(final MagicCounterType counterType,final int amount) {
         final int oldAmt = getCounters(counterType);
         final int newAmt = oldAmt + amount;
@@ -541,17 +568,8 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         return counters.keySet();
     }
 
-    public int getCounters(final MagicCounterType counterType) {
-        final Integer cnt = counters.get(counterType);
-        return cnt != null ? cnt : 0;
-    }
-
     public boolean hasCounters() {
-        return counters.size() > 0; 
-    }
-    
-    public boolean hasCounters(final MagicCounterType counterType) {
-        return getCounters(counterType) > 0; 
+        return counters.size() > 0;
     }
 
     public boolean hasSubType(final MagicSubType subType) {
@@ -569,7 +587,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public int getPower() {
         return getPowerToughness().getPositivePower();
     }
-    
+
     public int getPowerValue() {
         return getPowerToughness().power();
     }
@@ -577,11 +595,11 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public int getToughness() {
         return getPowerToughness().getPositiveToughness();
     }
-    
+
     public int getToughnessValue() {
         return getPowerToughness().toughness();
     }
-    
+
     public Set<MagicAbility> getAbilityFlags() {
         return cachedAbilityFlags;
     }
@@ -604,7 +622,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public int getStaticScore() {
         return cardDefinition.getStaticType().getScore(this);
     }
-    
+
     public int getCountersScore() {
         int amount = 0;
         for (final Map.Entry<MagicCounterType, Integer> entry : counters.entrySet()) {
@@ -732,7 +750,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public MagicCardList getExiledCards() {
         return exiledCards;
     }
-    
+
     public MagicCard getExiledCard() {
         return exiledCards.getCardAtTop();
     }
@@ -761,52 +779,68 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         if (isCreature()) {
             final int toughness=getToughness();
             if (toughness<=0) {
-                game.logAppendMessage(getController(),getName()+" is put into its owner's graveyard.");
-                game.addDelayedAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
+                game.logAppendMessage(getController(), getName() + " is put into its owner's graveyard.");
+                game.addDelayedAction(new RemoveFromPlayAction(this,MagicLocationType.Graveyard));
             } else if (hasState(MagicPermanentState.Destroyed)) {
-                game.addDelayedAction(MagicChangeStateAction.Clear(this,MagicPermanentState.Destroyed));
-                game.addDelayedAction(new MagicDestroyAction(this));
+                game.addDelayedAction(ChangeStateAction.Clear(this,MagicPermanentState.Destroyed));
+                game.addDelayedAction(new DestroyAction(this));
             } else if (toughness-damage<=0) {
-                game.addDelayedAction(new MagicDestroyAction(this));
+                game.addDelayedAction(new DestroyAction(this));
             }
 
             // Soulbond
-            if (pairedCreature.isValid() &&
-                !pairedCreature.isCreature()) {
-                game.doAction(new MagicSoulbondAction(this,pairedCreature,false));
+            if (pairedCreature.isValid() && pairedCreature.isCreature() == false) {
+                game.logAppendMessage(getController(), getName() + " becomes unpaired as " + pairedCreature.getName() + " is no longer a creature.");
+                game.addDelayedAction(new SoulbondAction(this,pairedCreature,false));
             }
         }
 
         if (isAura()) {
             //not targeting since Aura is already attached
             final MagicTargetChoice tchoice = new MagicTargetChoice(getAuraTargetChoice(), false);
-            if (isCreature() ||
-                !enchantedPermanent.isValid() ||
-                !game.isLegalTarget(getController(),this,tchoice,enchantedPermanent) ||
-                enchantedPermanent.hasProtectionFrom(this)) {
-                // 702.102e If an Aura with bestow is attached to an illegal object or player, it becomes unattached. 
+            String reason = "";
+            if (isCreature()) {
+                reason = "it is a creature.";
+            } else if (enchantedPermanent.isValid() == false
+                    || game.isLegalTarget(getController(),this,tchoice,enchantedPermanent) == false) {
+                reason = "it no longer enchants a valid permanent.";
+            } else if (enchantedPermanent.hasProtectionFrom(this)) {
+                reason = enchantedPermanent.getName() + " has protection.";
+            }
+
+            if (reason.isEmpty() == false) {
+                // 702.102e If an Aura with bestow is attached to an illegal object or player, it becomes unattached.
                 // This is an exception to rule 704.5n.
                 if (hasAbility(MagicAbility.Bestow)) {
-                    game.logAppendMessage(getController(),getName()+" becomes unattached.");
-                    game.addDelayedAction(new MagicAttachAction(this, MagicPermanent.NONE));
+                    game.logAppendMessage(getController(), getName() + " becomes unattached as " + reason);
+                    game.addDelayedAction(new AttachAction(this, MagicPermanent.NONE));
                 } else {
                 // 704.5n
-                    game.logAppendMessage(getController(),getName()+" is put into its owner's graveyard.");
-                    game.addDelayedAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
+                    game.logAppendMessage(getController(), getName() + " is put into its owner's graveyard as " + reason);
+                    game.addDelayedAction(new RemoveFromPlayAction(this,MagicLocationType.Graveyard));
                 }
             }
         }
 
         if (isEquipment() && equippedCreature.isValid()) {
-            if (isCreature() || !equippedCreature.isCreature() || equippedCreature.hasProtectionFrom(this)) {
-                game.addDelayedAction(new MagicAttachAction(this,MagicPermanent.NONE));
+            String reason = "";
+            if (isCreature()) {
+                reason = "it is a creature.";
+            } else if (equippedCreature.isCreature() == false) {
+                reason = equippedCreature.getName() + " is no longer a creature.";
+            } else if (equippedCreature.hasProtectionFrom(this)) {
+                reason = equippedCreature.getName() + " has protection.";
+            }
+            if (reason.isEmpty() == false) {
+                game.logAppendMessage(getController(), getName() + " becomes unattached as " + reason);
+                game.addDelayedAction(new AttachAction(this,MagicPermanent.NONE));
             }
         }
 
         // rule 704.5i If a planeswalker has loyalty 0, it's put into its owner's graveyard.
         if (isPlaneswalker() && getCounters(MagicCounterType.Loyalty) == 0) {
-            game.logAppendMessage(getController(),getName()+" is put into its owner's graveyard.");
-            game.addDelayedAction(new MagicRemoveFromPlayAction(this,MagicLocationType.Graveyard));
+            game.logAppendMessage(getController(), getName() + " is put into its owner's graveyard.");
+            game.addDelayedAction(new RemoveFromPlayAction(this,MagicLocationType.Graveyard));
         }
 
         // +1/+1 and -1/-1 counters cancel each other out.
@@ -815,8 +849,8 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             final int minusCounters=getCounters(MagicCounterType.MinusOne);
             if (minusCounters>0) {
                 final int amount=-Math.min(plusCounters,minusCounters);
-                game.addDelayedAction(MagicChangeCountersAction.Enters(this,MagicCounterType.PlusOne,amount));
-                game.addDelayedAction(MagicChangeCountersAction.Enters(this,MagicCounterType.MinusOne,amount));
+                game.addDelayedAction(ChangeCountersAction.Enters(this,MagicCounterType.PlusOne,amount));
+                game.addDelayedAction(ChangeCountersAction.Enters(this,MagicCounterType.MinusOne,amount));
             }
         }
     }
@@ -852,7 +886,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         }
 
         final MagicPermanent permanent = (MagicPermanent)source;
-        
+
         for (MagicTrigger<?> trigger: cachedTriggers) {
             if (trigger.getType() == MagicTriggerType.Protection) {
                 @SuppressWarnings("unchecked")
@@ -867,15 +901,14 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     }
 
     public boolean canAttack() {
-        if (!isCreature() ||
-            !canTap() ||
-            hasAbility(MagicAbility.CannotAttack) ||
+        if (hasAbility(MagicAbility.CannotAttack) ||
+            hasAbility(MagicAbility.CannotAttackOrBlock) ||
             hasState(MagicPermanentState.ExcludeFromCombat) ||
-            hasState(MagicPermanentState.CannotAttack)) {
+            hasState(MagicPermanentState.CannotAttack) ||
+            (hasAbility(MagicAbility.Defender) && !hasAbility(MagicAbility.CanAttackWithDefender))) {
             return false;
         }
-        return !hasAbility(MagicAbility.CannotAttackOrBlock) &&
-               !hasAbility(MagicAbility.Defender);
+        return isCreature() && canTap();
     }
 
     public boolean canBlock() {
@@ -932,7 +965,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         } else if (hasAbility(MagicAbility.Shadow)) {
             return false;
         }
-        
+
         if (!attacker.hasAbility(MagicAbility.Flying) &&
             hasAbility(MagicAbility.CannotBlockWithoutFlying)) {
             return false;
@@ -950,12 +983,24 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             !hasAbility(MagicAbility.Horsemanship)) {
             return false;
         }
-        
+
+        //cannot be blocked by ...
         for (MagicTrigger<?> trigger: attacker.getTriggers()) {
             if (trigger.getType() == MagicTriggerType.CannotBeBlocked) {
                 @SuppressWarnings("unchecked")
                 final MagicTrigger<MagicPermanent> cannotBeBlocked = (MagicTrigger<MagicPermanent>)trigger;
                 if (cannotBeBlocked.accept(attacker, this)) {
+                    return false;
+                }
+            }
+        }
+
+        //can't block ...
+        for (MagicTrigger<?> trigger: getTriggers()) {
+            if (trigger.getType() == MagicTriggerType.CantBlock) {
+                @SuppressWarnings("unchecked")
+                final MagicTrigger<MagicPermanent> cantBlock = (MagicTrigger<MagicPermanent>)trigger;
+                if (cantBlock.accept(this, attacker)) {
                     return false;
                 }
             }
@@ -1064,11 +1109,11 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public boolean isFaceDown() {
         return hasState(MagicPermanentState.FaceDown);
     }
-    
+
     public boolean isFlipped() {
         return hasState(MagicPermanentState.Flipped);
     }
-    
+
     public boolean isTransformed() {
         return hasState(MagicPermanentState.Transformed);
     }
@@ -1120,14 +1165,14 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         if (hasAbility(MagicAbility.CannotBeTheTarget1) && source.getController().getIndex() == 1) {
             return false;
         }
-    
+
         // Can't be the target of nongreen spells or abilities from nongreen sources
         if (hasAbility(MagicAbility.CannotBeTheTargetOfNonGreen) && source.hasColor(MagicColor.Green) == false) {
             return false;
         }
-        
+
         // Can't be the target of black or red spell your opponent control
-        if (hasAbility(MagicAbility.CannotBeTheTargetOfBlackOrRedOpponentSpell) && 
+        if (hasAbility(MagicAbility.CannotBeTheTargetOfBlackOrRedOpponentSpell) &&
             (source.hasColor(MagicColor.Black) || source.hasColor(MagicColor.Red)) &&
             source.isSpell() && isEnemy(source)) {
             return false;
@@ -1215,6 +1260,10 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             return false;
         }
         @Override
+        public boolean canTap() {
+            return false;
+        }
+        @Override
         public void changeCounters(final MagicCounterType counterType,final int amount) {
             //do nothing
         }
@@ -1235,6 +1284,14 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         }
         @Override
         public void addAbility(final MagicManaActivation act) {
+            //do nothing
+        }
+        @Override
+        public void addExiledCard(final MagicCard card) {
+            //do nothing
+        }
+        @Override
+        public void removeExiledCard(final MagicCard card) {
             //do nothing
         }
     };

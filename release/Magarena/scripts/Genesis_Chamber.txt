@@ -1,5 +1,5 @@
 name=Genesis Chamber
-image=http://mtgimage.com/card/genesis%20chamber.jpg
+image=http://magiccards.info/scans/en/ds/122.jpg
 value=4.019
 rarity=U
 type=Artifact

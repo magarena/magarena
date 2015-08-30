@@ -1,5 +1,5 @@
 name=Memnite
-image=http://mtgimage.com/card/memnite.jpg
+image=http://magiccards.info/scans/en/som/174.jpg
 value=4.506
 rarity=U
 type=Artifact,Creature
@@ -7,3 +7,4 @@ subtype=Construct
 cost={0}
 pt=1/1
 timing=main
+oracle=NONE

@@ -1,5 +1,5 @@
 name=Krovikan Mist
-image=http://mtgimage.com/card/krovikan%20mist.jpg
+image=http://magiccards.info/scans/en/ddm/8.jpg
 value=4.038
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=*/*
 ability=flying;\
         SN's power and toughness are each equal to the number of Illusions on the battlefield.
 timing=main
-oracle=Flying. Krovikan Mist's power and toughness are each equal to the number of Illusions on the battlefield.
+oracle=Flying\nKrovikan Mist's power and toughness are each equal to the number of Illusions on the battlefield.

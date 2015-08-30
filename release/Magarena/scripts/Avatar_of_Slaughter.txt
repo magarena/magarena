@@ -1,12 +1,11 @@
 name=Avatar of Slaughter
-image=http://mtgimage.com/card/avatar%20of%20slaughter.jpg
+image=http://magiccards.info/scans/en/cmd/111.jpg
 value=4.052
 rarity=R
 type=Creature
 subtype=Avatar
 cost={6}{R}{R}
 pt=8/8
-ability=all creatures have double strike;\
-        all creatures have SN attacks each turn if able.
+ability=All creatures have double strike and attack each turn if able.
 timing=main
 oracle=All creatures have double strike and attack each turn if able.

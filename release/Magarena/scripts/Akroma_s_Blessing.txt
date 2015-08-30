@@ -1,10 +1,11 @@
 name=Akroma's Blessing
-image=http://mtgimage.com/card/akroma's%20blessing.jpg
+image=http://magiccards.info/scans/en/vma/11.jpg
 value=3.500
 rarity=U
 type=Instant
 cost={2}{W}
-ability=cycling {W}
+ability=cycling {W};\
+        Cast SN with AI only if you control a creature.
 timing=pump
 requires_groovy_code
-oracle=Choose a color. Creatures you control gain protection from the chosen color until end of turn. Cycling {W}
+oracle=Choose a color. Creatures you control gain protection from the chosen color until end of turn.\nCycling {W}

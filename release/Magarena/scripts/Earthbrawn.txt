@@ -1,5 +1,5 @@
 name=Earthbrawn
-image=http://mtgimage.com/card/earthbrawn.jpg
+image=http://magiccards.info/scans/en/mt/119.jpg
 value=2.662
 rarity=C
 type=Instant
@@ -7,4 +7,4 @@ cost={1}{G}
 effect=Target creature gets +3/+3 until end of turn.
 ability=Reinforce 1—{1}{G}
 timing=pump
-oracle=Target creature gets +3/+3 until end of turn. Reinforce 1—{1}{G}
+oracle=Target creature gets +3/+3 until end of turn.\nReinforce 1—{1}{G}

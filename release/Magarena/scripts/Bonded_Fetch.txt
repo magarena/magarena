@@ -1,5 +1,5 @@
 name=Bonded Fetch
-image=http://mtgimage.com/card/bonded%20fetch.jpg
+image=http://magiccards.info/scans/en/fut/50.jpg
 value=3.315
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=0/2
 ability=defender;haste;\
         {T}: Draw a card, then discard a card.
 timing=fmain
-oracle=Defender, haste. {T}: Draw a card, then discard a card.
+oracle=Defender, haste\n{T}: Draw a card, then discard a card.

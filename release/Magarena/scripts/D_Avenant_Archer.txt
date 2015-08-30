@@ -1,5 +1,5 @@
 name=D'Avenant Archer
-image=http://mtgimage.com/card/d'avenant%20archer.jpg
+image=http://magiccards.info/scans/en/me3/6.jpg
 value=2.423
 rarity=C
 type=Creature

@@ -1,0 +1,9 @@
+name=1/1 green and white Elf Warrior creature token
+token=Elf Warrior
+image=http://cdn.staticneo.com/w/mtg/9/9c/Elf_Warrior1.jpg
+value=2
+type=Creature
+subtype=Elf,Warrior
+color=gw
+pt=1/1
+oracle=NONE

@@ -1,5 +1,6 @@
 [
     new MagicPermanentActivation(
+        [new MagicArtificialCondition(MagicConditionFactory.GraveyardAtLeast(1))],
         new MagicActivationHints(MagicTiming.Draw),
         "Card"
     ) {
@@ -22,15 +23,12 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCardList top1 = event.getPlayer().getGraveyard().getCardsFromTop(1) ;
             for (final MagicCard top : top1) {
-                game.doAction(new MagicRemoveCardAction(
-                    top,
-                    MagicLocationType.Graveyard
-                ));
-                game.doAction(new MagicMoveCardAction(
+                game.doAction(new ShiftCardAction(
                     top,
                     MagicLocationType.Graveyard,
                     MagicLocationType.BottomOfOwnersLibrary
                 ));
+                game.logAppendMessage(event.getPlayer()," ("+top.getName()+")");
             }
         }
     }

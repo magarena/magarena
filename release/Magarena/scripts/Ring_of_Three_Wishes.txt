@@ -1,5 +1,5 @@
 name=Ring of Three Wishes
-image=http://mtgimage.com/card/ring%20of%20three%20wishes.jpg
+image=http://magiccards.info/scans/en/m14/216.jpg
 value=3.648
 rarity=M
 type=Artifact
@@ -7,4 +7,4 @@ cost={5}
 ability=SN enters the battlefield with three wish counters on it.;\
         {5}, {T}, Remove a wish counter from SN: Search your library for a card and put that card into your hand. Then shuffle your library.
 timing=artifact
-oracle=Ring of Three Wishes enters the battlefield with three wish counters on it. {5}, {T}, Remove a wish counter from Ring of Three Wishes: Search your library for a card and put that card into your hand. Then shuffle your library.
+oracle=Ring of Three Wishes enters the battlefield with three wish counters on it.\n{5}, {T}, Remove a wish counter from Ring of Three Wishes: Search your library for a card and put that card into your hand. Then shuffle your library.

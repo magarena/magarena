@@ -7,10 +7,27 @@ import java.nio.file.Path;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.filechooser.FileFilter;
+import static magic.utility.DeckUtils.DECK_EXTENSION;
 import magic.utility.MagicFileSystem;
 
 public class MagicFileChoosers {
     private MagicFileChoosers() {}
+
+    public static final FileFilter DECK_FILEFILTER = getFileFilter("Magarena deck", DECK_EXTENSION);
+    public static final FileFilter SAVED_GAME_FILEFILTER = getFileFilter("Saved game", ".game");
+
+    private static FileFilter getFileFilter(final String description, final String fileExtension) {
+        return new FileFilter() {
+            @Override
+            public boolean accept(final File file) {
+                return file.isDirectory() || file.getName().endsWith(fileExtension);
+            }
+            @Override
+            public String getDescription() {
+                return description;
+            }
+        };
+    }
 
     public static File getSaveGameFile(final Component dialogParent) {
         final Path saveGamePath = MagicFileSystem.getDataPath(MagicFileSystem.DataPath.SAVED_GAMES);
@@ -50,17 +67,5 @@ public class MagicFileChoosers {
             return null;
         }
     }
-
-    public static final FileFilter SAVED_GAME_FILEFILTER = new FileFilter() {
-        @Override
-        public boolean accept(final File file) {
-            return file.isDirectory() || file.getName().endsWith(".game");
-        }
-        @Override
-        public String getDescription() {
-            return "Saved game";
-        }
-    };
-
 
 }

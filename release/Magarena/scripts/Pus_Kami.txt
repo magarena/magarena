@@ -1,5 +1,5 @@
 name=Pus Kami
-image=http://mtgimage.com/card/pus%20kami.jpg
+image=http://magiccards.info/scans/en/bok/79.jpg
 value=1.610
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability={B},Sacrifice SN: Destroy target nonblack creature.;\
         soulshift 6
 timing=main
-oracle={B}, Sacrifice Pus Kami: Destroy target nonblack creature. Soulshift 6
+oracle={B}, Sacrifice Pus Kami: Destroy target nonblack creature.\nSoulshift 6

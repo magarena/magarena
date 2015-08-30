@@ -1,5 +1,5 @@
 name=Vampire Interloper
-image=http://mtgimage.com/card/vampire%20interloper.jpg
+image=http://magiccards.info/scans/en/isd/123.jpg
 value=3.142
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{B}
 pt=2/1
 ability=flying;SN can't block.
 timing=main
-oracle=Flying. Vampire Interloper can't block.
+oracle=Flying\nVampire Interloper can't block.

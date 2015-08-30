@@ -1,12 +1,12 @@
 name=Horde of Notions
-image=http://mtgimage.com/card/horde%20of%20notions.jpg
+image=http://magiccards.info/scans/en/lw/249.jpg
 value=2.500
 rarity=R
 type=Legendary,Creature
 subtype=Elemental
 cost={W}{U}{B}{R}{G}
 pt=5/5
-ability=Vigilance; trample; haste;\
+ability=Vigilance, trample, haste;\
         {W}{U}{B}{R}{G}: You may play target Elemental card from your graveyard without paying its mana cost.
 timing=main
-oracle=Vigilance, trample, haste. {W}{U}{B}{R}{G}: You may play target Elemental card from your graveyard without paying its mana cost.
+oracle=Vigilance, trample, haste\n{W}{U}{B}{R}{G}: You may play target Elemental card from your graveyard without paying its mana cost.

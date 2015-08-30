@@ -1,6 +1,6 @@
 name=Barrow Ghoul
-image=http://mtgimage.com/card/barrow%20ghoul.jpg
-value=2.500
+image=http://magiccards.info/scans/en/wl/3.jpg
+value=3.451
 rarity=C
 type=Creature
 subtype=Zombie

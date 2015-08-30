@@ -1,5 +1,5 @@
 name=Goblin General
-image=http://mtgimage.com/card/goblin%20general.jpg
+image=http://magiccards.info/scans/en/vma/165.jpg
 value=3.500
 rarity=U
 type=Creature

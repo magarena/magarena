@@ -1,11 +1,11 @@
 name=Argivian Archaeologist
-image=http://mtgimage.com/card/argivian%20archaeologist.jpg
+image=http://magiccards.info/scans/en/med/3.jpg
 value=4.092
 rarity=R
 type=Creature
 subtype=Human,Artificer
 cost={1}{W}{W}
 pt=1/1
-ability={W}{W},{T}:Return target artifact card from your graveyard to your hand.
+ability={W}{W}, {T}: Return target artifact card from your graveyard to your hand.
 timing=main
 oracle={W}{W}, {T}: Return target artifact card from your graveyard to your hand.

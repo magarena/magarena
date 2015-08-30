@@ -1,12 +1,12 @@
 name=Marauding Knight
-image=http://mtgimage.com/card/marauding%20knight.jpg
+image=http://magiccards.info/scans/en/in/110.jpg
 value=4.132
 rarity=R
 type=Creature
 subtype=Zombie,Knight
 cost={2}{B}{B}
 pt=2/2
-ability=Protection from white
+ability=Protection from white;\
+        SN gets +1/+1 for each Plains your opponents control.
 timing=main
-requires_groovy_code
-oracle=Protection from white. Marauding Knight gets +1/+1 for each Plains your opponents control.
+oracle=Protection from white\nMarauding Knight gets +1/+1 for each Plains your opponents control.

@@ -1,10 +1,10 @@
 name=Cobra Trap
-image=http://mtgimage.com/card/cobra%20trap.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cmd/146.jpg
+value=2.850
 rarity=U
 type=Instant
 subtype=Trap
 cost={4}{G}{G}
 effect=If a noncreature permanent under your control was destroyed this turn by a spell or ability an opponent controlled, you may pay {G} rather than pay SN's mana cost.~Put four 1/1 green Snake creature tokens onto the battlefield.
 timing=removal
-oracle=If a noncreature permanent under your control was destroyed this turn by a spell or ability an opponent controlled, you may pay {G} rather than pay Cobra Trap's mana cost. Put four 1/1 green Snake creature tokens onto the battlefield.
+oracle=If a noncreature permanent under your control was destroyed this turn by a spell or ability an opponent controlled, you may pay {G} rather than pay Cobra Trap's mana cost.\nPut four 1/1 green Snake creature tokens onto the battlefield.

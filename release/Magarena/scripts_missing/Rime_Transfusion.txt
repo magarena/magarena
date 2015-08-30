@@ -1,11 +1,11 @@
 name=Rime Transfusion
-image=http://mtgimage.com/card/rime%20transfusion.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cs/68.jpg
+value=3.538
 rarity=U
 type=Snow,Enchantment
 subtype=Aura
 cost={1}{B}
 ability=Enchant creature;\
         Enchanted creature gets +2/+1 and has "{S}: This creature can't be blocked this turn except by snow creatures."
-timing=main
-oracle=Enchant creature. Enchanted creature gets +2/+1 and has "{S}: This creature can't be blocked this turn except by snow creatures."
+timing=aura
+oracle=Enchant creature\nEnchanted creature gets +2/+1 and has "{S}: This creature can't be blocked this turn except by snow creatures."

@@ -1,6 +1,6 @@
 name=Petalmane Baku
-image=http://mtgimage.com/card/petalmane%20baku.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bok/139.jpg
+value=3.100
 rarity=C
 type=Creature
 subtype=Spirit
@@ -9,4 +9,4 @@ pt=1/2
 ability=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on SN.;\
         {1}, Remove X ki counters from SN: Add X mana of any one color to your mana pool.
 timing=main
-oracle=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on Petalmane Baku. {1}, Remove X ki counters from Petalmane Baku: Add X mana of any one color to your mana pool.
+oracle=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on Petalmane Baku.\n{1}, Remove X ki counters from Petalmane Baku: Add X mana of any one color to your mana pool.

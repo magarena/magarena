@@ -1,12 +1,12 @@
 name=Ezuri's Archers
-image=http://mtgimage.com/card/ezuri%27s%20archers.jpg
+image=http://magiccards.info/scans/en/som/120.jpg
 value=4.092
 rarity=C
 type=Creature
 subtype=Elf,Archer
 cost={G}
 pt=1/2
-ability=reach
-timing=smain
-requires_groovy_code
-oracle=Reach. Whenever Ezuri's Archers blocks a creature with flying, Ezuri's Archers gets +3/+0 until end of turn.
+ability=Reach.;\
+        Whenever SN blocks a creature with flying, SN gets +3/+0 until end of turn.
+timing=main
+oracle=Reach\nWhenever Ezuri's Archers blocks a creature with flying, Ezuri's Archers gets +3/+0 until end of turn.

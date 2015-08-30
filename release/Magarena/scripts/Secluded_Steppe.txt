@@ -1,5 +1,5 @@
 name=Secluded Steppe
-image=http://mtgimage.com/card/secluded%20steppe.jpg
+image=http://magiccards.info/scans/en/ddo/29.jpg
 value=3.500
 rarity=C
 type=Land
@@ -8,4 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {W} to your mana pool.;\
         cycling {W}
 timing=tapland
-oracle=Secluded Steppe enters the battlefield tapped. {T}: Add {W} to your mana pool. Cycling {W}
+oracle=Secluded Steppe enters the battlefield tapped.\n{T}: Add {W} to your mana pool.\nCycling {W}

@@ -1,9 +1,10 @@
 name=Airborne Aid
-image=http://mtgimage.com/card/airborne%20aid.jpg
+image=http://magiccards.info/scans/en/on/62.jpg
 value=2.905
 rarity=C
 type=Sorcery
 cost={3}{U}
+ability=Cast SN with AI only if there is a Bird on the battlefield.
+effect=Draw a card for each Bird on the battlefield.
 timing=main
-requires_groovy_code
 oracle=Draw a card for each Bird on the battlefield.

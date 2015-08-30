@@ -1,5 +1,5 @@
 name=Antagonism
-image=http://mtgimage.com/card/antagonism.jpg
+image=http://magiccards.info/scans/en/us/173.jpg
 value=3.684
 rarity=R
 type=Enchantment

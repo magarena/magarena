@@ -1,5 +1,5 @@
 name=Mana Skimmer
-image=http://mtgimage.com/card/mana%20skimmer.jpg
+image=http://magiccards.info/scans/en/ts/117.jpg
 value=2.815
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying
 timing=main
 requires_groovy_code
-oracle=Flying. Whenever Mana Skimmer deals damage to a player, tap target land that player controls. That land doesn't untap during its controller's next untap step.
+oracle=Flying\nWhenever Mana Skimmer deals damage to a player, tap target land that player controls. That land doesn't untap during its controller's next untap step.

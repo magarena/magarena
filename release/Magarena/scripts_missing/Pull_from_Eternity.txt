@@ -1,6 +1,6 @@
 name=Pull from Eternity
-image=http://mtgimage.com/card/pull%20from%20eternity.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ts/35.jpg
+value=3.777
 rarity=U
 type=Instant
 cost={W}

@@ -1,5 +1,5 @@
 name=Jagwasp Swarm
-image=http://mtgimage.com/card/jagwasp%20swarm.jpg
+image=http://magiccards.info/scans/en/wwk/58.jpg
 value=2.333
 ability=flying
 rarity=C

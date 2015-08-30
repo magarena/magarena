@@ -1,6 +1,6 @@
 name=Disperse
-image=http://mtgimage.com/card/disperse.jpg
-value=3.762
+image=http://magiccards.info/scans/en/ori/54.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{U}

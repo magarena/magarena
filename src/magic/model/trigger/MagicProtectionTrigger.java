@@ -20,7 +20,7 @@ public abstract class MagicProtectionTrigger extends MagicTrigger<MagicPermanent
         return new MagicProtectionTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent other) {
-                return filter.accept(permanent.getGame(), permanent.getController(), other);
+                return filter.accept(permanent, permanent.getController(), other);
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent other) {

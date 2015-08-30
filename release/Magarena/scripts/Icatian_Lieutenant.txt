@@ -1,5 +1,5 @@
 name=Icatian Lieutenant
-image=http://mtgimage.com/card/icatian%20lieutenant.jpg
+image=http://magiccards.info/scans/en/med/17.jpg
 value=2.407
 rarity=C
 type=Creature

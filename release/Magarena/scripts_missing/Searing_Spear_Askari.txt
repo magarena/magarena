@@ -1,6 +1,6 @@
 name=Searing Spear Askari
-image=http://mtgimage.com/card/searing%20spear%20askari.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/191.jpg
+value=3.900
 rarity=C
 type=Creature
 subtype=Human,Knight
@@ -9,4 +9,4 @@ pt=2/2
 ability=Flanking;\
         {1}{R}: SN can't be blocked except by two or more creatures this turn.
 timing=main
-oracle=Flanking. {1}{R}: Searing Spear Askari can't be blocked except by two or more creatures this turn.
+oracle=Flanking\n{1}{R}: Searing Spear Askari can't be blocked except by two or more creatures this turn.

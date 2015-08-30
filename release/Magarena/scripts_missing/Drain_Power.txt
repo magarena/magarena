@@ -1,6 +1,6 @@
 name=Drain Power
-image=http://mtgimage.com/card/drain%20power.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me4/46.jpg
+value=4.050
 rarity=R
 type=Sorcery
 cost={U}{U}

@@ -1,0 +1,13 @@
+name=Academy Elite
+image=http://magiccards.info/scans/en/vma/55.jpg
+value=3.083
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={3}{U}
+pt=0/0
+ability=Cast SN with AI only if there is an instant or sorcery card in a graveyard.;\
+        {2}{U}, Remove a +1/+1 counter from SN: Draw a card, then discard a card.
+timing=main
+requires_groovy_code
+oracle=Academy Elite enters the battlefield with X +1/+1 counters on it, where X is the number of instant and sorcery cards in all graveyards.\n{2}{U}, Remove a +1/+1 counter from Academy Elite: Draw a card, then discard a card.

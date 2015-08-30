@@ -1,5 +1,5 @@
 name=Bant Sojourners
-image=http://mtgimage.com/card/bant%20sojourners.jpg
+image=http://magiccards.info/scans/en/arb/125.jpg
 value=2.922
 rarity=C
 type=Creature
@@ -10,4 +10,4 @@ ability=When you cycle SN, you may put a 1/1 white Soldier creature token onto t
         When SN dies, you may put a 1/1 white Soldier creature token onto the battlefield.;\
         Cycling {2}{W}
 timing=main
-oracle=When you cycle Bant Sojourners or it dies, you may put a 1/1 white Soldier creature token onto the battlefield. Cycling {2}{W}
+oracle=When you cycle Bant Sojourners or it dies, you may put a 1/1 white Soldier creature token onto the battlefield.\nCycling {2}{W}

@@ -1,0 +1,12 @@
+name=Warmonger's Chariot
+image=http://magiccards.info/scans/en/cns/207.jpg
+value=3.100
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={2}
+ability=Equipped creature gets +2/+2.;\
+        Equip {3}
+timing=equipment
+requires_groovy_code
+oracle=Equipped creature gets +2/+2.\nAs long as equipped creature has defender, it can attack as though it didn't have defender.\nEquip {3}

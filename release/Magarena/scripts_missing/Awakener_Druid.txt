@@ -1,6 +1,6 @@
 name=Awakener Druid
-image=http://mtgimage.com/card/awakener%20druid.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m11/163.jpg
+value=3.102
 rarity=U
 type=Creature
 subtype=Human,Druid

@@ -1,10 +1,11 @@
 name=Massive Raid
-image=http://mtgimage.com/card/massive%20raid.jpg
+image=http://magiccards.info/scans/en/gtc/100.jpg
 value=3.170
 removal=3
 rarity=C
 type=Instant
 cost={1}{R}{R}
+ability=Cast SN with AI only if you control a creature.
+effect=SN deals damage to target creature or player equal to the number of creatures you control.
 timing=removal
-requires_groovy_code
 oracle=Massive Raid deals damage to target creature or player equal to the number of creatures you control.

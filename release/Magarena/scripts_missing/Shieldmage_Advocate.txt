@@ -1,6 +1,6 @@
 name=Shieldmage Advocate
-image=http://mtgimage.com/card/shieldmage%20advocate.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ju/22.jpg
+value=2.650
 rarity=C
 type=Creature
 subtype=Human,Cleric

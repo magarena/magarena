@@ -1,5 +1,5 @@
 name=Master Decoy
-image=http://mtgimage.com/card/master%20decoy.jpg
+image=http://magiccards.info/scans/en/ddn/50.jpg
 value=2.000
 rarity=C
 type=Creature

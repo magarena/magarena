@@ -1,5 +1,5 @@
 name=Cloudchaser Eagle
-image=http://mtgimage.com/card/cloudchaser%20eagle.jpg
+image=http://magiccards.info/scans/en/7e/11.jpg
 value=3.078
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=flying;\
         When SN enters the battlefield, destroy target enchantment.
 timing=main
-oracle=Flying. When Cloudchaser Eagle enters the battlefield, destroy target enchantment.
+oracle=Flying\nWhen Cloudchaser Eagle enters the battlefield, destroy target enchantment.

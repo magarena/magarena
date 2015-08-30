@@ -7,3 +7,4 @@ subtype=Knight
 color=w
 pt=2/2
 ability=first strike
+oracle=First Strike

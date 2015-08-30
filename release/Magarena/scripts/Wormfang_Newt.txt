@@ -1,5 +1,5 @@
 name=Wormfang Newt
-image=http://mtgimage.com/card/wormfang%20newt.jpg
+image=http://magiccards.info/scans/en/ju/59.jpg
 value=1.656
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=When SN enters the battlefield, exile a land you control.;\
         When SN leaves the battlefield, return the exiled card to the battlefield under its owner's control.
 timing=main
-oracle=When Wormfang Newt enters the battlefield, exile a land you control. When Wormfang Newt leaves the battlefield, return the exiled card to the battlefield under its owner's control.
+oracle=When Wormfang Newt enters the battlefield, exile a land you control.\nWhen Wormfang Newt leaves the battlefield, return the exiled card to the battlefield under its owner's control.

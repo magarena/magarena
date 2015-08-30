@@ -1,6 +1,6 @@
 name=Shisato, Whispering Hunter
-image=http://mtgimage.com/card/shisato%2C%20whispering%20hunter.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/242.jpg
+value=2.880
 rarity=R
 type=Legendary,Creature
 subtype=Snake,Warrior
@@ -9,4 +9,4 @@ pt=2/2
 ability=At the beginning of your upkeep, sacrifice a Snake.;\
         Whenever SN deals combat damage to a player, that player skips his or her next untap step.
 timing=main
-oracle=At the beginning of your upkeep, sacrifice a Snake. Whenever Shisato, Whispering Hunter deals combat damage to a player, that player skips his or her next untap step.
+oracle=At the beginning of your upkeep, sacrifice a Snake.\nWhenever Shisato, Whispering Hunter deals combat damage to a player, that player skips his or her next untap step.

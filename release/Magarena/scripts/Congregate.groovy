@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.POS_TARGET_PLAYER,
+                POS_TARGET_PLAYER,
                 this,
                 "Target player\$ gains 2 life for each creature on the battlefield."
             );
@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 final int amount = game.getNrOfPermanents(MagicType.Creature);
-                game.doAction(new MagicChangeLifeAction(it,amount*2));
+                game.doAction(new ChangeLifeAction(it,amount*2));
             });
         }
     }

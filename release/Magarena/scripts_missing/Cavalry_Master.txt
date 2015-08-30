@@ -1,6 +1,6 @@
 name=Cavalry Master
-image=http://mtgimage.com/card/cavalry%20master.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ts/6.jpg
+value=3.895
 rarity=U
 type=Creature
 subtype=Human,Knight
@@ -9,4 +9,4 @@ pt=3/3
 ability=Flanking;\
         Other creatures you control with flanking have flanking.
 timing=main
-oracle=Flanking. Other creatures you control with flanking have flanking.
+oracle=Flanking\nOther creatures you control with flanking have flanking.

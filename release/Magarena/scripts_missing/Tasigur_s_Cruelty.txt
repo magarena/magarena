@@ -1,9 +1,9 @@
 name=Tasigur's Cruelty
-image=http://mtgimage.com/card/tasigur%27s%20cruelty.jpg
+image=http://magiccards.info/scans/en/frf/88.jpg
 value=2.500
 rarity=C
 type=Sorcery
 cost={5}{B}
 effect=Delve~Each opponent discards two cards.
 timing=main
-oracle=Delve. Each opponent discards two cards.
+oracle=Delve\nEach opponent discards two cards.

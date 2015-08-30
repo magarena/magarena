@@ -1,9 +1,0 @@
-name=Momentous Fall
-image=http://mtgimage.com/card/momentous%20fall.jpg
-value=2.500
-rarity=R
-type=Instant
-cost={2}{G}{G}
-effect=As an additional cost to cast SN, sacrifice a creature.~You draw cards equal to the sacrificed creature's power, then you gain life equal to its toughness.
-timing=removal
-oracle=As an additional cost to cast Momentous Fall, sacrifice a creature. You draw cards equal to the sacrificed creature's power, then you gain life equal to its toughness.

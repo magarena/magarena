@@ -1,5 +1,5 @@
 name=Broodhatch Nantuko
-image=http://mtgimage.com/card/broodhatch%20nantuko.jpg
+image=http://magiccards.info/scans/en/on/250.jpg
 value=3.633
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=Morph {2}{G}
 timing=main
 requires_groovy_code=Saber Ants
-oracle=Whenever Broodhatch Nantuko is dealt damage, you may put that many 1/1 green Insect creature tokens onto the battlefield. Morph {2}{G}
+oracle=Whenever Broodhatch Nantuko is dealt damage, you may put that many 1/1 green Insect creature tokens onto the battlefield.\nMorph {2}{G}

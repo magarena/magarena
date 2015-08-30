@@ -1,0 +1,9 @@
+name=Ojutai's Summons
+image=http://magiccards.info/scans/en/dtk/68.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={3}{U}{U}
+effect=Put a 2/2 blue Djinn Monk creature token with flying onto the battlefield.~Rebound
+timing=main
+oracle=Put a 2/2 blue Djinn Monk creature token with flying onto the battlefield.\nRebound

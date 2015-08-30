@@ -1,6 +1,6 @@
 name=Myojin of Life's Web
-image=http://mtgimage.com/card/myojin%20of%20life%27s%20web.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/229.jpg
+value=3.969
 rarity=R
 type=Legendary,Creature
 subtype=Spirit
@@ -10,4 +10,4 @@ ability=SN enters the battlefield with a divinity counter on it if you cast it f
         SN has indestructible as long as it has a divinity counter on it.;\
         Remove a divinity counter from SN: Put any number of creature cards from your hand onto the battlefield.
 timing=main
-oracle=Myojin of Life's Web enters the battlefield with a divinity counter on it if you cast it from your hand. Myojin of Life's Web has indestructible as long as it has a divinity counter on it. Remove a divinity counter from Myojin of Life's Web: Put any number of creature cards from your hand onto the battlefield.
+oracle=Myojin of Life's Web enters the battlefield with a divinity counter on it if you cast it from your hand.\nMyojin of Life's Web has indestructible as long as it has a divinity counter on it.\nRemove a divinity counter from Myojin of Life's Web: Put any number of creature cards from your hand onto the battlefield.

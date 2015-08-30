@@ -1,6 +1,6 @@
 name=Lys Alana Scarblade
-image=http://mtgimage.com/card/lys%20alana%20scarblade.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lw/122.jpg
+value=3.131
 rarity=U
 type=Creature
 subtype=Elf,Assassin

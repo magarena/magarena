@@ -1,6 +1,6 @@
 name=Sightless Brawler
-image=http://mtgimage.com/card/sightless%20brawler.jpg
-value=2.500
+image=http://magiccards.info/scans/en/jou/24.jpg
+value=3.105
 rarity=U
 type=Enchantment,Creature
 subtype=Human,Warrior
@@ -9,5 +9,5 @@ pt=3/2
 ability=Bestow {4}{W};\
         SN can't attack alone.;\
         Enchanted creature gets +3/+2 and can't attack alone.
-timing=main
-oracle=Bestow {4}{W}. Sightless Brawler can't attack alone. Enchanted creature gets +3/+2 and can't attack alone.
+timing=enchantment
+oracle=Bestow {4}{W}\nSightless Brawler can't attack alone.\nEnchanted creature gets +3/+2 and can't attack alone.

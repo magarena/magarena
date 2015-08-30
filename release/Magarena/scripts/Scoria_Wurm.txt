@@ -1,0 +1,11 @@
+name=Scoria Wurm
+image=http://magiccards.info/scans/en/10e/227.jpg
+value=2.280
+rarity=R
+type=Creature
+subtype=Wurm
+cost={4}{R}
+pt=7/7
+ability=At the beginning of your upkeep, flip a coin. If you lose the flip, return SN to its owner's hand.
+timing=main
+oracle=At the beginning of your upkeep, flip a coin. If you lose the flip, return Scoria Wurm to its owner's hand.

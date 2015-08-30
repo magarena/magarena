@@ -1,0 +1,9 @@
+name=Emerald Charm
+image=http://magiccards.info/scans/en/vi/56.jpg
+value=4.390
+rarity=C
+type=Instant
+cost={G}
+effect=Choose one — (1) Untap target permanent. (2) Destroy target non-Aura enchantment. (3) Target creature loses flying until end of turn.
+timing=removal
+oracle=Choose one —\n• Untap target permanent.\n• Destroy target non-Aura enchantment.\n• Target creature loses flying until end of turn.

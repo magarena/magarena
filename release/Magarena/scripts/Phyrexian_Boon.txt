@@ -1,5 +1,5 @@
 name=Phyrexian Boon
-image=http://mtgimage.com/card/phyrexian%20boon.jpg
+image=http://magiccards.info/scans/en/med/81.jpg
 value=3.630
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={2}{B}
 enchant=default,creature
 timing=aura
 requires_groovy_code
-oracle=Enchant creature. Enchanted creature gets +2/+1 as long as it's black. Otherwise, it gets -1/-2.
+oracle=Enchant creature\nEnchanted creature gets +2/+1 as long as it's black. Otherwise, it gets -1/-2.

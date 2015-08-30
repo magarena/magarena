@@ -1,5 +1,5 @@
 name=Defender of Law
-image=http://mtgimage.com/card/defender%20of%20law.jpg
+image=http://magiccards.info/scans/en/ul/5.jpg
 value=3.355
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{W}
 pt=2/1
 ability=flash;protection from red
 timing=flash
-oracle=Flash. Protection from red
+oracle=Flash\nProtection from red

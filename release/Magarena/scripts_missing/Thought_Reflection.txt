@@ -1,9 +1,9 @@
 name=Thought Reflection
-image=http://mtgimage.com/card/thought%20reflection.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/53.jpg
+value=3.317
 rarity=R
 type=Enchantment
 cost={4}{U}{U}{U}
 ability=If you would draw a card, draw two cards instead.
-timing=main
+timing=enchantment
 oracle=If you would draw a card, draw two cards instead.

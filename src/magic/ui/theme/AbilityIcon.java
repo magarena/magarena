@@ -9,7 +9,7 @@ import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicObject;
 import magic.ui.card.CardIcon;
-import magic.ui.MagicStyle;
+import magic.ui.utility.MagicStyle;
 
 /**
  * Used to assign an ability with an icon which is displayed

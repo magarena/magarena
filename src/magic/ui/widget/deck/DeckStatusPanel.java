@@ -1,22 +1,20 @@
-/**
- *
- */
 package magic.ui.widget.deck;
-
-import magic.model.MagicDeck;
-import net.miginfocom.swing.MigLayout;
-
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.SwingConstants;
 
 import java.awt.Color;
 import java.awt.Font;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.SwingConstants;
+import magic.model.MagicDeck;
+import magic.translate.UiString;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class DeckStatusPanel extends JPanel {
 
-    // ui
+    // translatable strings
+    private static final String _S1 = "%d cards";
+
     private final MigLayout migLayout = new MigLayout();
     private final JLabel deckNameLabel = new JLabel();
     private final JLabel deckSizeLabel = new JLabel();
@@ -31,7 +29,7 @@ public class DeckStatusPanel extends JPanel {
 
     public void setDeck(final MagicDeck deck, final boolean showDeckSize) {
         deckNameLabel.setText(deck != null ? deck.getName() : "");
-        deckSizeLabel.setText(showDeckSize && deck != null ? deck.size() + " cards": "");
+        deckSizeLabel.setText(showDeckSize && deck != null ? UiString.get(_S1, deck.size()): "");
         refreshLayout();
         revalidate();
     }

@@ -1,12 +1,12 @@
 name=Masked Gorgon
-image=http://mtgimage.com/card/masked%20gorgon.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ju/69.jpg
+value=2.186
 rarity=R
 type=Creature
 subtype=Gorgon
 cost={4}{B}
 pt=5/5
 ability=Green creatures and white creatures have protection from Gorgons.;\
-        Threshold — SN has protection from green and from white as long as seven or more cards are in your graveyard.
+        SN has protection from green and from white as long as seven or more cards are in your graveyard.
 timing=main
-oracle=Green creatures and white creatures have protection from Gorgons. Threshold — Masked Gorgon has protection from green and from white as long as seven or more cards are in your graveyard.
+oracle=Green creatures and white creatures have protection from Gorgons.\nThreshold — Masked Gorgon has protection from green and from white as long as seven or more cards are in your graveyard.

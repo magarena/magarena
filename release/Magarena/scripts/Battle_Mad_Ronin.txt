@@ -1,5 +1,5 @@
 name=Battle-Mad Ronin
-image=http://mtgimage.com/card/battle%2Dmad%20ronin.jpg
+image=http://magiccards.info/scans/en/chk/156.jpg
 value=2.743
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{R}
 pt=1/1
 ability=SN attacks each turn if able.;bushido 2
 timing=main
-oracle=Bushido 2. Battle-Mad Ronin attacks each turn if able.
+oracle=Bushido 2\nBattle-Mad Ronin attacks each turn if able.

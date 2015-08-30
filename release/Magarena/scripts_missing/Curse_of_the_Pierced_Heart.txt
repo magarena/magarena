@@ -1,11 +1,11 @@
 name=Curse of the Pierced Heart
-image=http://mtgimage.com/card/curse%20of%20the%20pierced%20heart.jpg
-value=2.500
+image=http://magiccards.info/scans/en/isd/138.jpg
+value=3.444
 rarity=C
 type=Enchantment
 subtype=Aura,Curse
 cost={1}{R}
 ability=Enchant player;\
         At the beginning of enchanted player's upkeep, SN deals 1 damage to that player.
-timing=main
-oracle=Enchant player. At the beginning of enchanted player's upkeep, Curse of the Pierced Heart deals 1 damage to that player.
+timing=aura
+oracle=Enchant player\nAt the beginning of enchanted player's upkeep, Curse of the Pierced Heart deals 1 damage to that player.

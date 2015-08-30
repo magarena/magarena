@@ -1,9 +1,9 @@
 name=Lifeline
-image=http://mtgimage.com/card/lifeline.jpg
-value=2.500
+image=http://magiccards.info/scans/en/us/299.jpg
+value=4.346
 rarity=R
 type=Artifact
 cost={5}
 ability=Whenever a creature dies, if another creature is on the battlefield, return the first card to the battlefield under its owner's control at the beginning of the next end step.
-timing=main
+timing=artifact
 oracle=Whenever a creature dies, if another creature is on the battlefield, return the first card to the battlefield under its owner's control at the beginning of the next end step.

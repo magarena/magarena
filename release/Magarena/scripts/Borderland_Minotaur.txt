@@ -1,5 +1,5 @@
 name=Borderland Minotaur
-image=http://mtgimage.com/card/borderland%20minotaur.jpg
+image=http://magiccards.info/scans/en/ths/114.jpg
 value=2.821
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Minotaur,Warrior
 cost={2}{R}{R}
 pt=4/3
 timing=main
+oracle=NONE

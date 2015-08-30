@@ -1,5 +1,5 @@
 name=Thieving Magpie
-image=http://mtgimage.com/card/thieving%20magpie.jpg
+image=http://magiccards.info/scans/en/10e/115.jpg
 value=4.280
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/3
 ability=flying;\
         Whenever SN deals damage to an opponent, draw a card.
 timing=main
-oracle=Flying. Whenever Thieving Magpie deals damage to an opponent, draw a card.
+oracle=Flying\nWhenever Thieving Magpie deals damage to an opponent, draw a card.

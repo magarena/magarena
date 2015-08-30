@@ -1,11 +1,11 @@
 name=Spirit of the Labyrinth
-image=http://mtgimage.com/card/spirit%20of%20the%20labyrinth.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bng/27.jpg
+value=4.491
 rarity=R
 type=Enchantment,Creature
 subtype=Spirit
 cost={1}{W}
 pt=3/1
 ability=Each player can't draw more than one card each turn.
-timing=main
+timing=enchantment
 oracle=Each player can't draw more than one card each turn.

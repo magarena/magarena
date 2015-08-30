@@ -1,5 +1,5 @@
 name=The Abyss
-image=http://mtgimage.com/card/the%20abyss.jpg
+image=http://magiccards.info/scans/en/me3/77.jpg
 value=4.642
 rarity=R
 type=World,Enchantment

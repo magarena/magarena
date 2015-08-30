@@ -1,5 +1,5 @@
 name=Orzhov Guildmage
-image=http://mtgimage.com/card/orzhov%20guildmage.jpg
+image=http://magiccards.info/scans/en/cmd/217.jpg
 value=3.686
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability={2}{W}: Target player gains 1 life.;\
         {2}{B}: Each player loses 1 life.
 timing=main
-oracle={2}{W}: Target player gains 1 life. {2}{B}: Each player loses 1 life.
+oracle={2}{W}: Target player gains 1 life.\n{2}{B}: Each player loses 1 life.

@@ -1,11 +1,12 @@
 name=Serra Angel
-image=http://mtgimage.com/card/serra%20angel.jpg
-value=3.286
-ability=flying;vigilance
-rarity=R
+image=http://magiccards.info/scans/en/m15/273.jpg
+value=2.500
+rarity=U
 type=Creature
 subtype=Angel
 cost={3}{W}{W}
 pt=4/4
+ability=Flying;\
+        Vigilance
 timing=main
-oracle=Flying. Vigilance
+oracle=Flying\nVigilance

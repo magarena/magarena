@@ -1,6 +1,6 @@
 name=Bloodlord of Vaasgoth
-image=http://mtgimage.com/card/bloodlord%20of%20vaasgoth.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m12/82.jpg
+value=3.950
 rarity=M
 type=Creature
 subtype=Vampire,Warrior
@@ -10,4 +10,4 @@ ability=Bloodthirst 3;\
         Flying;\
         Whenever you cast a Vampire creature spell, it gains bloodthirst 3.
 timing=main
-oracle=Bloodthirst 3. Flying. Whenever you cast a Vampire creature spell, it gains bloodthirst 3.
+oracle=Bloodthirst 3\nFlying\nWhenever you cast a Vampire creature spell, it gains bloodthirst 3.

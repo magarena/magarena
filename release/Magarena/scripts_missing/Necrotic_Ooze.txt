@@ -1,6 +1,6 @@
 name=Necrotic Ooze
-image=http://mtgimage.com/card/necrotic%20ooze.jpg
-value=2.500
+image=http://magiccards.info/scans/en/som/72.jpg
+value=4.172
 rarity=R
 type=Creature
 subtype=Ooze

@@ -1,0 +1,12 @@
+name=Ixidron
+image=http://magiccards.info/scans/en/c14/116.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Illusion
+cost={3}{U}{U}
+pt=*/*
+ability=SN's power and toughness are each equal to the number of face-down creatures on the battlefield.
+timing=main
+requires_groovy_code
+oracle=As Ixidron enters the battlefield, turn all other nontoken creatures face down.\nIxidron's power and toughness are each equal to the number of face-down creatures on the battlefield.

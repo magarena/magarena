@@ -1,9 +1,9 @@
 name=Deserted Temple
-image=http://mtgimage.com/card/deserted%20temple.jpg
+image=http://magiccards.info/scans/en/od/320.jpg
 value=4.062
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\
         {1},{T}: Untap target land.
 timing=land
-oracle={T}: Add {1} to your mana pool. {1}, {T}: Untap target land.
+oracle={T}: Add {1} to your mana pool.\n{1}, {T}: Untap target land.

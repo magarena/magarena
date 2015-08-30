@@ -1,5 +1,5 @@
 name=Kongming's Contraptions
-image=http://mtgimage.com/card/kongming%27s%20contraptions.jpg
+image=http://magiccards.info/scans/en/p3k/10.jpg
 value=2.569
 rarity=R
 type=Creature

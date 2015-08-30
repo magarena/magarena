@@ -1,11 +1,13 @@
 name=Homicidal Brute
-image=http://mtgimage.com/card/homicidal%20brute.jpg
-value=2.500
+image=http://magiccards.info/scans/en/isd/47b.jpg
+value=3.034
 rarity=U
 type=Creature
 subtype=Human,Mutant
 color=r
 pt=5/1
 ability=At the beginning of your end step, if SN didn't attack this turn, tap SN, then transform it.
+transform=Civilized Scholar
 timing=main
+hidden
 oracle=At the beginning of your end step, if Homicidal Brute didn't attack this turn, tap Homicidal Brute, then transform it.

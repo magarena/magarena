@@ -1,6 +1,6 @@
 name=Feast of Worms
-image=http://mtgimage.com/card/feast%20of%20worms.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/207.jpg
+value=2.023
 rarity=U
 type=Sorcery
 subtype=Arcane

@@ -1,5 +1,5 @@
 name=Timberline Ridge
-image=http://mtgimage.com/card/timberline%20ridge.jpg
+image=http://magiccards.info/scans/en/ia/356.jpg
 value=2.140
 rarity=R
 type=Land
@@ -8,4 +8,4 @@ ability=At the beginning of your upkeep, remove a depletion counter from SN.;\
         {T}: Add {R} or {G} to your mana pool. Put a depletion counter on SN.
 timing=main
 requires_groovy_code=Land Cap
-oracle=Timberline Ridge doesn't untap during your untap step if it has a depletion counter on it. At the beginning of your upkeep, remove a depletion counter from Timberline Ridge. {T}: Add {R} or {G} to your mana pool. Put a depletion counter on Timberline Ridge.
+oracle=Timberline Ridge doesn't untap during your untap step if it has a depletion counter on it.\nAt the beginning of your upkeep, remove a depletion counter from Timberline Ridge.\n{T}: Add {R} or {G} to your mana pool. Put a depletion counter on Timberline Ridge.

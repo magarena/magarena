@@ -1,5 +1,5 @@
 name=Encrust
-image=http://mtgimage.com/card/encrust.jpg
+image=http://magiccards.info/scans/en/m15/53.jpg
 value=2.700
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={1}{U}{U}
 ability=Enchanted permanent doesn't untap during its controller's untap step and its activated abilities can't be activated.
 enchant=can't attack or block,neg artifact or creature
 timing=enchantment
-oracle=Enchant artifact or creature. Enchanted permanent doesn't untap during its controller's untap step and its activated abilities can't be activated.
+oracle=Enchant artifact or creature\nEnchanted permanent doesn't untap during its controller's untap step and its activated abilities can't be activated.

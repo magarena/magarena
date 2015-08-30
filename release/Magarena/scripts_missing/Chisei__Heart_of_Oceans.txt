@@ -1,6 +1,6 @@
 name=Chisei, Heart of Oceans
-image=http://mtgimage.com/card/chisei%2C%20heart%20of%20oceans.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bok/32.jpg
+value=3.595
 rarity=R
 type=Legendary,Creature
 subtype=Spirit
@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying;\
         At the beginning of your upkeep, sacrifice SN unless you remove a counter from a permanent you control.
 timing=main
-oracle=Flying. At the beginning of your upkeep, sacrifice Chisei, Heart of Oceans unless you remove a counter from a permanent you control.
+oracle=Flying\nAt the beginning of your upkeep, sacrifice Chisei, Heart of Oceans unless you remove a counter from a permanent you control.

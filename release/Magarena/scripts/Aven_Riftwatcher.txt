@@ -1,5 +1,5 @@
 name=Aven Riftwatcher
-image=http://mtgimage.com/card/aven%20riftwatcher.jpg
+image=http://magiccards.info/scans/en/pc/1.jpg
 value=3.809
 rarity=C
 type=Creature
@@ -11,4 +11,4 @@ ability=flying;\
         When SN enters the battlefield, you gain 2 life.;\
         When SN leaves the battlefield, you gain 2 life.
 timing=main
-oracle=Flying. Vanishing 3. When Aven Riftwatcher enters the battlefield or leaves the battlefield, you gain 2 life.
+oracle=Flying\nVanishing 3\nWhen Aven Riftwatcher enters the battlefield or leaves the battlefield, you gain 2 life.

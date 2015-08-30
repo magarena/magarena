@@ -1,11 +1,11 @@
 name=Gift of the Woods
-image=http://mtgimage.com/card/gift%20of%20the%20woods.jpg
+image=http://magiccards.info/scans/en/ai/74.jpg
 value=3.288
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={G}
+ability=Whenever enchanted creature blocks or becomes blocked, RN gets +0/+3 until end of turn.~You gain 1 life.
 timing=aura
 enchant=pump,pos creature
-requires_groovy_code
-oracle=Enchant creature. Whenever enchanted creature blocks or becomes blocked, it gets +0/+3 until end of turn and you gain 1 life.
+oracle=Enchant creature\nWhenever enchanted creature blocks or becomes blocked, it gets +0/+3 until end of turn and you gain 1 life.

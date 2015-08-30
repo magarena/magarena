@@ -1,5 +1,5 @@
 name=Titania's Chosen
-image=http://mtgimage.com/card/titania's%20chosen.jpg
+image=http://magiccards.info/scans/en/c14/221.jpg
 value=4.022
 rarity=U
 type=Creature

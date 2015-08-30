@@ -1,0 +1,11 @@
+name=Prime Speaker Zegana
+image=http://magiccards.info/scans/en/gtc/188.jpg
+value=4.035
+rarity=M
+type=Legendary,Creature
+subtype=Merfolk,Wizard
+cost={2}{G}{G}{U}{U}
+pt=1/1
+timing=main
+requires_groovy_code
+oracle=Prime Speaker Zegana enters the battlefield with X +1/+1 counters on it, where X is the greatest power among other creatures you control.\nWhen Prime Speaker Zegana enters the battlefield, draw cards equal to its power.

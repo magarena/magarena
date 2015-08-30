@@ -1,5 +1,5 @@
 name=Mikaeus, the Unhallowed
-image=http://mtgimage.com/card/mikaeus%2C%20the%20unhallowed.jpg
+image=http://magiccards.info/scans/en/dka/70.jpg
 value=3.897
 rarity=M
 type=Legendary,Creature
@@ -7,9 +7,9 @@ subtype=Zombie,Cleric
 cost={3}{B}{B}{B}
 pt=5/5
 ability=intimidate;\
+        Whenever a Human deals damage to you, destroy RN.;\
         other non-human creatures you control get +1/+1;\
         other non-human creatures you control have undying
 static=player
 timing=main
-requires_groovy_code
-oracle=Intimidate. Whenever a Human deals damage to you, destroy it. Other non-Human creatures you control get +1/+1 and have undying.
+oracle=Intimidate\nWhenever a Human deals damage to you, destroy it.\nOther non-Human creatures you control get +1/+1 and have undying.

@@ -1,5 +1,5 @@
 name=Plated Rootwalla
-image=http://mtgimage.com/card/plated%20rootwalla.jpg
+image=http://magiccards.info/scans/en/br/52.jpg
 value=2.203
 rarity=C
 type=Creature

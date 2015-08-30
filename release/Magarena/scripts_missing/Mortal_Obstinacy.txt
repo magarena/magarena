@@ -1,6 +1,6 @@
 name=Mortal Obstinacy
-image=http://mtgimage.com/card/mortal%20obstinacy.jpg
-value=2.500
+image=http://magiccards.info/scans/en/jou/17.jpg
+value=3.000
 rarity=C
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={W}
 ability=Enchant creature you control;\
         Enchanted creature gets +1/+1.;\
         Whenever enchanted creature deals combat damage to a player, you may sacrifice SN. If you do, destroy target enchantment.
-timing=main
-oracle=Enchant creature you control. Enchanted creature gets +1/+1. Whenever enchanted creature deals combat damage to a player, you may sacrifice Mortal Obstinacy. If you do, destroy target enchantment.
+timing=aura
+oracle=Enchant creature you control\nEnchanted creature gets +1/+1.\nWhenever enchanted creature deals combat damage to a player, you may sacrifice Mortal Obstinacy. If you do, destroy target enchantment.

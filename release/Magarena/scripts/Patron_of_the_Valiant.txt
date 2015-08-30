@@ -1,0 +1,12 @@
+name=Patron of the Valiant
+image=http://magiccards.info/scans/en/ori/28.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Angel
+cost={3}{W}{W}
+pt=4/4
+ability=Flying;\
+        When SN enters the battlefield, put a +1/+1 counter on each creature you control with a +1/+1 counter on it.
+timing=main
+oracle=Flying\nWhen Patron of the Valiant enters the battlefield, put a +1/+1 counter on each creature you control with a +1/+1 counter on it.

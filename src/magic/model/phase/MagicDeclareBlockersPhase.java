@@ -17,7 +17,7 @@ public class MagicDeclareBlockersPhase extends MagicPhase {
 
     @Override
     public void executeBeginStep(final MagicGame game) {
-        game.addEvent(new MagicDeclareBlockersEvent(game.getTurnPlayer().getOpponent()));
+        game.addEvent(new MagicDeclareBlockersEvent(game.getDefendingPlayer()));
         game.setStep(MagicStep.ActivePlayer);
     }
 }

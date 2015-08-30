@@ -1,5 +1,5 @@
 name=Monastery Flock
-image=http://mtgimage.com/card/monastery%20flock.jpg
+image=http://magiccards.info/scans/en/ktk/47.jpg
 value=1.750
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=0/5
 ability=Defender;flying;\
         Morph {U}
 timing=main
-oracle=Defender, flying. Morph {U}
+oracle=Defender, flying\nMorph {U}

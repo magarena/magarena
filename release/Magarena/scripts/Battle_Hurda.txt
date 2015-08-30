@@ -1,5 +1,5 @@
 name=Battle Hurda
-image=http://mtgimage.com/card/battle%20hurda.jpg
+image=http://magiccards.info/scans/en/wwk/4.jpg
 value=1.647
 ability=first strike
 rarity=C

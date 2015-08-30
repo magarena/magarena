@@ -1,9 +1,0 @@
-name=Thoughts of Ruin
-image=http://mtgimage.com/card/thoughts%20of%20ruin.jpg
-value=2.500
-rarity=R
-type=Sorcery
-cost={2}{R}{R}
-effect=Each player sacrifices a land for each card in your hand.
-timing=main
-oracle=Each player sacrifices a land for each card in your hand.

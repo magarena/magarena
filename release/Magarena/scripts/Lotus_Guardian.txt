@@ -1,5 +1,5 @@
 name=Lotus Guardian
-image=http://mtgimage.com/card/lotus%20guardian.jpg
+image=http://magiccards.info/scans/en/in/305.jpg
 value=2.199
 rarity=R
 type=Artifact,Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=flying;\
         {T}: Add one mana of any color to your mana pool.
 timing=main
-oracle=Flying. {T}: Add one mana of any color to your mana pool.
+oracle=Flying\n{T}: Add one mana of any color to your mana pool.

@@ -1,9 +1,9 @@
 name=Gruul Signet
-image=http://mtgimage.com/card/gruul%20signet.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cmd/250.jpg
+value=3.482
 rarity=C
 type=Artifact
 cost={2}
 ability={1}, {T}: Add {R}{G} to your mana pool.
-timing=main
+timing=artifact
 oracle={1}, {T}: Add {R}{G} to your mana pool.

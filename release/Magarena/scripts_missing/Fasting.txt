@@ -1,11 +1,11 @@
 name=Fasting
-image=http://mtgimage.com/card/fasting.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dk/80.jpg
+value=0.949
 rarity=U
 type=Enchantment
 cost={W}
 ability=At the beginning of your upkeep, put a hunger counter on SN. Then destroy SN if it has five or more hunger counters on it.;\
         If you would begin your draw step, you may skip that step instead. If you do, you gain 2 life.;\
         When you draw a card, destroy SN.
-timing=main
-oracle=At the beginning of your upkeep, put a hunger counter on Fasting. Then destroy Fasting if it has five or more hunger counters on it. If you would begin your draw step, you may skip that step instead. If you do, you gain 2 life. When you draw a card, destroy Fasting.
+timing=enchantment
+oracle=At the beginning of your upkeep, put a hunger counter on Fasting. Then destroy Fasting if it has five or more hunger counters on it.\nIf you would begin your draw step, you may skip that step instead. If you do, you gain 2 life.\nWhen you draw a card, destroy Fasting.

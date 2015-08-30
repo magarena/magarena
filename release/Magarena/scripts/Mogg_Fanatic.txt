@@ -1,5 +1,5 @@
 name=Mogg Fanatic
-image=http://mtgimage.com/card/mogg%20fanatic.jpg
+image=http://magiccards.info/scans/en/evg/44.jpg
 value=4.439
 rarity=U
 type=Creature

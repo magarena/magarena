@@ -1,9 +1,9 @@
 name=Spiritual Focus
-image=http://mtgimage.com/card/spiritual%20focus.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/49.jpg
+value=3.817
 rarity=R
 type=Enchantment
 cost={1}{W}
 ability=Whenever a spell or ability an opponent controls causes you to discard a card, you gain 2 life and you may draw a card.
-timing=main
+timing=enchantment
 oracle=Whenever a spell or ability an opponent controls causes you to discard a card, you gain 2 life and you may draw a card.

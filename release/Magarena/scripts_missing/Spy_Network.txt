@@ -1,6 +1,6 @@
 name=Spy Network
-image=http://mtgimage.com/card/spy%20network.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/115.jpg
+value=4.063
 rarity=C
 type=Instant
 cost={U}

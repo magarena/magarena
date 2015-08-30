@@ -1,9 +1,9 @@
 name=Thran Dynamo
-image=http://mtgimage.com/card/thran%20dynamo.jpg
+image=http://magiccards.info/scans/en/c14/277.jpg
 value=2.500
 rarity=U
 type=Artifact
 cost={4}
 ability={T}: Add {3} to your mana pool.
-timing=main
+timing=artifact
 oracle={T}: Add {3} to your mana pool.

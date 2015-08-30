@@ -1,6 +1,5 @@
 package magic.ui.screen;
 
-import magic.data.GeneralConfig;
 import magic.model.MagicCardList;
 import magic.ui.canvas.cards.CardsCanvas;
 import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
@@ -13,13 +12,18 @@ import javax.swing.JPanel;
 import java.awt.Dimension;
 import java.util.Collections;
 import java.util.List;
+import magic.ui.CardImagesProvider;
+import magic.translate.UiString;
 
 @SuppressWarnings("serial")
 public class CardZoneScreen
-    extends AbstractScreen
-    implements IStatusBar, IActionBar {
+        extends AbstractScreen
+        implements IStatusBar, IActionBar {
 
-    private final static Dimension cardSize = GeneralConfig.PREFERRED_CARD_SIZE;
+    // translatable strings
+    private static final String _S1 = "Close";
+
+    private final static Dimension cardSize = CardImagesProvider.PREFERRED_CARD_SIZE;
 
     private final CardsCanvas content;
     private final String screenCaption;
@@ -34,49 +38,31 @@ public class CardZoneScreen
         setContent(content);
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagStatusBar#getScreenCaption()
-     */
     @Override
     public String getScreenCaption() {
         return screenCaption;
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getLeftAction()
-     */
     @Override
     public MenuButton getLeftAction() {
-        return MenuButton.getCloseScreenButton("Close");
+        return MenuButton.getCloseScreenButton(UiString.get(_S1));
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getRightAction()
-     */
     @Override
     public MenuButton getRightAction() {
         return null;
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.IMagActionBar#getMiddleActions()
-     */
     @Override
     public List<MenuButton> getMiddleActions() {
         return null;
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.MagScreen#canScreenClose()
-     */
     @Override
     public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
         return true;
     }
 
-    /* (non-Javadoc)
-     * @see magic.ui.screen.interfaces.IStatusBar#getStatusPanel()
-     */
     @Override
     public JPanel getStatusPanel() {
         return null;

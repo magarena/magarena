@@ -1,10 +1,10 @@
 name=Caves of Koilos
-image=http://mtgimage.com/card/caves%20of%20koilos.jpg
-value=4.062
+image=http://magiccards.info/scans/en/ori/245.jpg
+value=2.500
 rarity=R
 type=Land
 mana=w2b2
 ability={T}: Add {1} to your mana pool.;\
         {T}: Add {W} or {B} to your mana pool. SN deals 1 damage to you.
 timing=land
-oracle={T}: Add {1} to your mana pool. {T}: Add {W} or {B} to your mana pool. Caves of Koilos deals 1 damage to you.
+oracle={T}: Add {1} to your mana pool.\n{T}: Add {W} or {B} to your mana pool. Caves of Koilos deals 1 damage to you.

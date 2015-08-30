@@ -1,6 +1,6 @@
 name=Shimian Specter
-image=http://mtgimage.com/card/shimian%20specter.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m13/109.jpg
+value=3.943
 rarity=R
 type=Creature
 subtype=Specter
@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying;\
         Whenever SN deals combat damage to a player, that player reveals his or her hand. You choose a nonland card from it. Search that player's graveyard, hand, and library for all cards with the same name as that card and exile them. Then that player shuffles his or her library.
 timing=main
-oracle=Flying. Whenever Shimian Specter deals combat damage to a player, that player reveals his or her hand. You choose a nonland card from it. Search that player's graveyard, hand, and library for all cards with the same name as that card and exile them. Then that player shuffles his or her library.
+oracle=Flying\nWhenever Shimian Specter deals combat damage to a player, that player reveals his or her hand. You choose a nonland card from it. Search that player's graveyard, hand, and library for all cards with the same name as that card and exile them. Then that player shuffles his or her library.

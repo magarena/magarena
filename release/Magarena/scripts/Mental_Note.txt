@@ -1,9 +1,9 @@
 name=Mental Note
-image=http://mtgimage.com/card/mental%20note.jpg
+image=http://magiccards.info/scans/en/ju/46.jpg
 value=3.295
 rarity=C
 type=Instant
 cost={U}
 effect=Put the top two cards of your library into your graveyard.~Draw a card.
 timing=draw
-oracle=Put the top two cards of your library into your graveyard. Draw a card.
+oracle=Put the top two cards of your library into your graveyard.\nDraw a card.

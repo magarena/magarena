@@ -1,8 +1,8 @@
 name=Cabal Coffers
-image=http://mtgimage.com/card/cabal%20coffers.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pch/132.jpg
+value=4.348
 rarity=U
 type=Land
 ability={2}, {T}: Add {B} to your mana pool for each Swamp you control.
-timing=main
+timing=land
 oracle={2}, {T}: Add {B} to your mana pool for each Swamp you control.

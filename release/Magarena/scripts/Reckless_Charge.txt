@@ -1,5 +1,5 @@
 name=Reckless Charge
-image=http://mtgimage.com/card/reckless%20charge.jpg
+image=http://magiccards.info/scans/en/vma/181.jpg
 value=4.016
 rarity=C
 type=Sorcery
@@ -7,4 +7,4 @@ cost={R}
 effect=Target creature gets +3/+0 and gains haste until end of turn.
 ability=Flashback {2}{R}
 timing=fmain
-oracle=Target creature gets +3/+0 and gains haste until end of turn. Flashback {2}{R}
+oracle=Target creature gets +3/+0 and gains haste until end of turn.\nFlashback {2}{R}

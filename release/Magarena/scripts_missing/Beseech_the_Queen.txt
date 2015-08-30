@@ -1,6 +1,6 @@
 name=Beseech the Queen
-image=http://mtgimage.com/card/beseech%20the%20queen.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pch/19.jpg
+value=3.577
 rarity=U
 type=Sorcery
 cost={2/B}{2/B}{2/B}

@@ -1,12 +1,12 @@
 name=Sword of Fire and Ice
-image=http://mtgimage.com/card/sword%20of%20fire%20and%20ice.jpg
+image=http://magiccards.info/scans/en/mma/216.jpg
 value=4.563
 rarity=R
 type=Artifact
 subtype=Equipment
 cost={3}
 ability=Equipped creature gets +2/+2 and has protection from red and from blue.;\
+        Whenever equipped creature deals combat damage to a player, SN deals 2 damage to target creature or player.~You draw a card.;\
         Equip {2}
 timing=equipment
-requires_groovy_code
-oracle=Equipped creature gets +2/+2 and has protection from red and from blue. Whenever equipped creature deals combat damage to a player, Sword of Fire and Ice deals 2 damage to target creature or player and you draw a card. Equip {2}
+oracle=Equipped creature gets +2/+2 and has protection from red and from blue.\nWhenever equipped creature deals combat damage to a player, Sword of Fire and Ice deals 2 damage to target creature or player and you draw a card.\nEquip {2}

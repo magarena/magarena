@@ -1,9 +1,9 @@
 name=Assemble the Legion
-image=http://mtgimage.com/card/assemble%20the%20legion.jpg
+image=http://magiccards.info/scans/en/gtc/142.jpg
 value=3.825
 rarity=R
 type=Enchantment
 cost={3}{R}{W}
+ability=At the beginning of your upkeep, put a muster counter on SN.~Put a 1/1 red and white Soldier creature token with haste onto the battlefield for each muster counter on SN.
 timing=enchantment
-requires_groovy_code
 oracle=At the beginning of your upkeep, put a muster counter on Assemble the Legion. Then put a 1/1 red and white Soldier creature token with haste onto the battlefield for each muster counter on Assemble the Legion.

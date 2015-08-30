@@ -1,9 +1,9 @@
 name=Patrician's Scorn
-image=http://mtgimage.com/card/patrician%27s%20scorn.jpg
-value=2.500
+image=http://magiccards.info/scans/en/fut/29.jpg
+value=3.423
 rarity=C
 type=Instant
 cost={3}{W}
 effect=If you've cast another white spell this turn, you may cast SN without paying its mana cost.~Destroy all enchantments.
 timing=removal
-oracle=If you've cast another white spell this turn, you may cast Patrician's Scorn without paying its mana cost. Destroy all enchantments.
+oracle=If you've cast another white spell this turn, you may cast Patrician's Scorn without paying its mana cost.\nDestroy all enchantments.

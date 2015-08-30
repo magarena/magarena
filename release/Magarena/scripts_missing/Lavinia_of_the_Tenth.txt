@@ -1,6 +1,6 @@
 name=Lavinia of the Tenth
-image=http://mtgimage.com/card/lavinia%20of%20the%20tenth.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dgm/80.jpg
+value=3.784
 rarity=R
 type=Legendary,Creature
 subtype=Human,Soldier
@@ -9,4 +9,4 @@ pt=4/4
 ability=Protection from red;\
         When SN enters the battlefield, detain each nonland permanent your opponents control with converted mana cost 4 or less.
 timing=main
-oracle=Protection from red. When Lavinia of the Tenth enters the battlefield, detain each nonland permanent your opponents control with converted mana cost 4 or less.
+oracle=Protection from red\nWhen Lavinia of the Tenth enters the battlefield, detain each nonland permanent your opponents control with converted mana cost 4 or less.

@@ -1,9 +1,9 @@
 name=Nissa's Expedition
-image=http://mtgimage.com/card/nissa%27s%20expedition.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/188.jpg
+value=3.167
 rarity=U
 type=Sorcery
 cost={4}{G}
 effect=Convoke~Search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle your library.
 timing=main
-oracle=Convoke. Search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle your library.
+oracle=Convoke\nSearch your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle your library.

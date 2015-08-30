@@ -1,5 +1,5 @@
 name=Plague Dogs
-image=http://mtgimage.com/card/plague%20dogs.jpg
+image=http://magiccards.info/scans/en/ud/66.jpg
 value=3.443
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=When SN dies, all creatures get -1/-1 until end of turn.;\
         {2},Sacrifice SN: Draw a card.
 timing=main
-oracle=When Plague Dogs dies, all creatures get -1/-1 until end of turn. {2}, Sacrifice Plague Dogs: Draw a card.
+oracle=When Plague Dogs dies, all creatures get -1/-1 until end of turn.\n{2}, Sacrifice Plague Dogs: Draw a card.

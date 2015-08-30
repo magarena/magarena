@@ -1,6 +1,6 @@
 name=Renounce
-image=http://mtgimage.com/card/renounce.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/42.jpg
+value=3.241
 rarity=U
 type=Instant
 cost={1}{W}

@@ -1,6 +1,6 @@
 name=Truce
-image=http://mtgimage.com/card/truce.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5e/341.jpg
+value=3.226
 rarity=R
 type=Instant
 cost={2}{W}

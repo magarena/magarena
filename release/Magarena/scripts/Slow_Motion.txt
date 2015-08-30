@@ -1,6 +1,6 @@
 name=Slow Motion
-image=http://mtgimage.com/card/slow%20motion.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ul/42.jpg
+value=3.989
 rarity=C
 type=Enchantment
 subtype=Aura
@@ -9,4 +9,4 @@ ability=When SN is put into a graveyard from the battlefield, return SN to its o
 timing=aura
 enchant=destroy,neg creature
 requires_groovy_code
-oracle=Enchant creature. At the beginning of the upkeep of enchanted creature's controller, that player sacrifices that creature unless he or she pays {2}. When Slow Motion is put into a graveyard from the battlefield, return Slow Motion to its owner's hand.
+oracle=Enchant creature\nAt the beginning of the upkeep of enchanted creature's controller, that player sacrifices that creature unless he or she pays {2}.\nWhen Slow Motion is put into a graveyard from the battlefield, return Slow Motion to its owner's hand.

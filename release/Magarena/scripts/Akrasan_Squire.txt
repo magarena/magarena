@@ -1,11 +1,11 @@
 name=Akrasan Squire
-image=http://mtgimage.com/card/akrasan%20squire.jpg
+image=http://magiccards.info/scans/en/ala/1.jpg
 value=3.646
 rarity=C
 type=Creature
 subtype=Human,Soldier
 cost={W}
 pt=1/1
-ability=exalted
 timing=fmain
+ability=Exalted
 oracle=Exalted

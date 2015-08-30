@@ -1,6 +1,6 @@
 name=Ayesha Tanaka
-image=http://mtgimage.com/card/ayesha%20tanaka.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ch/108.jpg
+value=2.787
 rarity=R
 type=Legendary,Creature
 subtype=Human,Artificer
@@ -9,4 +9,4 @@ pt=2/2
 ability=Banding;\
         {T}: Counter target activated ability from an artifact source unless that ability's controller pays {W}.
 timing=main
-oracle=Banding. {T}: Counter target activated ability from an artifact source unless that ability's controller pays {W}.
+oracle=Banding\n{T}: Counter target activated ability from an artifact source unless that ability's controller pays {W}.

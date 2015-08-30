@@ -1,5 +1,5 @@
 name=Dragon Blood
-image=http://mtgimage.com/card/dragon%20blood.jpg
+image=http://magiccards.info/scans/en/ddl/67.jpg
 value=2.750
 rarity=U
 type=Artifact

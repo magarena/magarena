@@ -1,0 +1,9 @@
+name=Valor in Akros
+image=http://magiccards.info/scans/en/ori/39.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={3}{W}
+ability=Whenever a creature enters the battlefield under your control, creatures you control get +1/+1 until end of turn.
+timing=enchantment
+oracle=Whenever a creature enters the battlefield under your control, creatures you control get +1/+1 until end of turn.

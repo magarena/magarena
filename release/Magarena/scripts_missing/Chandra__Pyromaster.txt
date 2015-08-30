@@ -1,6 +1,6 @@
 name=Chandra, Pyromaster
-image=http://mtgimage.com/card/chandra%2C%20pyromaster.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/134.jpg
+value=4.667
 rarity=M
 type=Planeswalker
 subtype=Chandra
@@ -9,4 +9,4 @@ ability=+1: SN deals 1 damage to target player and 1 damage to up to one target 
         0: Exile the top card of your library. You may play it this turn.;\
         −7: Exile the top ten cards of your library. Choose an instant or sorcery card exiled this way and copy it three times. You may cast the copies without paying their mana costs.
 timing=main
-oracle=+1: Chandra, Pyromaster deals 1 damage to target player and 1 damage to up to one target creature that player controls. That creature can't block this turn. 0: Exile the top card of your library. You may play it this turn. −7: Exile the top ten cards of your library. Choose an instant or sorcery card exiled this way and copy it three times. You may cast the copies without paying their mana costs.
+oracle=+1: Chandra, Pyromaster deals 1 damage to target player and 1 damage to up to one target creature that player controls. That creature can't block this turn.\n0: Exile the top card of your library. You may play it this turn.\n−7: Exile the top ten cards of your library. Choose an instant or sorcery card exiled this way and copy it three times. You may cast the copies without paying their mana costs.

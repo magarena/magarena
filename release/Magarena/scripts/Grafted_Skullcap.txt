@@ -1,0 +1,10 @@
+name=Grafted Skullcap
+image=http://magiccards.info/scans/en/7e/298.jpg
+value=3.688
+rarity=R
+type=Artifact
+cost={4}
+ability=At the beginning of your draw step, draw an additional card.;\
+        At the beginning of your end step, discard your hand.
+timing=artifact
+oracle=At the beginning of your draw step, draw an additional card.\nAt the beginning of your end step, discard your hand.

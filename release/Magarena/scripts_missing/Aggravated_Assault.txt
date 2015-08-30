@@ -1,9 +1,9 @@
 name=Aggravated Assault
-image=http://mtgimage.com/card/aggravated%20assault.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/185.jpg
+value=4.289
 rarity=R
 type=Enchantment
 cost={2}{R}
 ability={3}{R}{R}: Untap all creatures you control. After this main phase, there is an additional combat phase followed by an additional main phase. Activate this ability only any time you could cast a sorcery.
-timing=main
+timing=enchantment
 oracle={3}{R}{R}: Untap all creatures you control. After this main phase, there is an additional combat phase followed by an additional main phase. Activate this ability only any time you could cast a sorcery.

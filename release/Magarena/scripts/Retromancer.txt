@@ -1,5 +1,5 @@
 name=Retromancer
-image=http://mtgimage.com/card/retromancer.jpg
+image=http://magiccards.info/scans/en/us/209.jpg
 value=3.081
 rarity=C
 type=Creature

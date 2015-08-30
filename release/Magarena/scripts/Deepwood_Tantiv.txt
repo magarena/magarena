@@ -1,5 +1,5 @@
 name=Deepwood Tantiv
-image=http://mtgimage.com/card/deepwood%20tantiv.jpg
+image=http://magiccards.info/scans/en/mm/241.jpg
 value=2.129
 rarity=U
 type=Creature

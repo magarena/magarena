@@ -15,7 +15,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.TARGET_OPPONENT,
+                TARGET_OPPONENT,
                 this,
                 "Target opponent\$ loses 2 life, gets a poison counter, then puts the top six cards of his or her library into his or her graveyard."
             );
@@ -24,9 +24,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
-                game.doAction(new MagicChangeLifeAction(it, -2));
-                game.doAction(new MagicChangePoisonAction(it, 1));
-                game.doAction(new MagicMillLibraryAction(it, 6));
+                game.doAction(new ChangeLifeAction(it, -2));
+                game.doAction(new ChangePoisonAction(it, 1));
+                game.doAction(new MillLibraryAction(it, 6));
             });
         }
     }

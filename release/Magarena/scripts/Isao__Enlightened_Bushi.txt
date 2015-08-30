@@ -1,5 +1,5 @@
 name=Isao, Enlightened Bushi
-image=http://mtgimage.com/card/isao%2C%20enlightened%20bushi.jpg
+image=http://magiccards.info/scans/en/bok/129.jpg
 value=3.893
 rarity=R
 type=Legendary,Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=SN can't be countered.;bushido 2;\
         {2}: Regenerate target Samurai.
 timing=main
-oracle=Isao, Enlightened Bushi can't be countered. Bushido 2. {2}: Regenerate target Samurai.
+oracle=Isao, Enlightened Bushi can't be countered.\nBushido 2\n{2}: Regenerate target Samurai.

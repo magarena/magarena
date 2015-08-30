@@ -1,9 +1,9 @@
 name=Opal Archangel
-image=http://mtgimage.com/card/opal%20archangel.jpg
+image=http://magiccards.info/scans/en/us/23.jpg
 value=3.558
 rarity=R
 type=Enchantment
 cost={4}{W}
+ability=When an opponent casts a creature spell, if SN is an enchantment, SN becomes a 5/5 Angel creature with flying and vigilance.
 timing=main
-requires_groovy_code
 oracle=When an opponent casts a creature spell, if Opal Archangel is an enchantment, Opal Archangel becomes a 5/5 Angel creature with flying and vigilance.

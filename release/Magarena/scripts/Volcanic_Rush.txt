@@ -1,0 +1,9 @@
+name=Volcanic Rush
+image=http://magiccards.info/scans/en/dtk/166.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={4}{R}
+effect=Attacking creatures get +2/+0 and gain trample until end of turn.
+timing=attack
+oracle=Attacking creatures get +2/+0 and gain trample until end of turn.

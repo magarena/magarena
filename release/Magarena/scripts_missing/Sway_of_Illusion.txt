@@ -1,9 +1,9 @@
 name=Sway of Illusion
-image=http://mtgimage.com/card/sway%20of%20illusion.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/77.jpg
+value=3.823
 rarity=U
 type=Instant
 cost={1}{U}
 effect=Any number of target creatures become the color of your choice until end of turn.~Draw a card.
 timing=removal
-oracle=Any number of target creatures become the color of your choice until end of turn. Draw a card.
+oracle=Any number of target creatures become the color of your choice until end of turn.\nDraw a card.

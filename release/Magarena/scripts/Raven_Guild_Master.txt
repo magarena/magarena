@@ -1,5 +1,5 @@
 name=Raven Guild Master
-image=http://mtgimage.com/card/raven%20guild%20master.jpg
+image=http://magiccards.info/scans/en/sc/47.jpg
 value=4.377
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=Morph {2}{U}{U}
 timing=main
 requires_groovy_code
-oracle=Whenever Raven Guild Master deals combat damage to a player, that player exiles the top ten cards of his or her library. Morph {2}{U}{U}
+oracle=Whenever Raven Guild Master deals combat damage to a player, that player exiles the top ten cards of his or her library.\nMorph {2}{U}{U}

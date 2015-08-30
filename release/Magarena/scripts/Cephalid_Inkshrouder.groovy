@@ -21,8 +21,8 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicGainAbilityAction(event.getPermanent(),MagicAbility.Shroud));
-            game.doAction(new MagicGainAbilityAction(event.getPermanent(),MagicAbility.Unblockable));
+            game.doAction(new GainAbilityAction(event.getPermanent(),MagicAbility.Shroud));
+            game.doAction(new GainAbilityAction(event.getPermanent(),MagicAbility.Unblockable));
         }
     }
 ]

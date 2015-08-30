@@ -7,3 +7,4 @@ subtype=Vampire
 color=b
 pt=2/2
 ability=flying
+oracle=Flying

@@ -1,9 +1,11 @@
 name=Kuon's Essence
-image=http://mtgimage.com/card/kuon%27s%20essence.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sok/78b.jpg
+value=3.103
 rarity=R
 type=Legendary,Enchantment
 cost={B}{B}{B}
 ability=At the beginning of each player's upkeep, that player sacrifices a creature.
-timing=main
+flip=Kuon, Ogre Ascendant
+timing=enchantment
+hidden
 oracle=At the beginning of each player's upkeep, that player sacrifices a creature.

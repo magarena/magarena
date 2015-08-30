@@ -1,5 +1,5 @@
 name=Auriok Champion
-image=http://mtgimage.com/card/auriok%20champion.jpg
+image=http://magiccards.info/scans/en/5dn/3.jpg
 value=4.059
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=protection from black;protection from red;\
         Whenever another creature enters the battlefield, you may gain 1 life.
 timing=main
-oracle=Protection from black and from red. Whenever another creature enters the battlefield, you may gain 1 life.
+oracle=Protection from black and from red\nWhenever another creature enters the battlefield, you may gain 1 life.

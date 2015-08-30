@@ -1,11 +1,11 @@
 name=Copperhorn Scout
-image=http://mtgimage.com/card/copperhorn%20scout.jpg
+image=http://magiccards.info/scans/en/cns/160.jpg
 value=3.400
 rarity=C
 type=Creature
 subtype=Elf,Scout
 cost={G}
 pt=1/1
+ability=Whenever SN attacks, untap each other creature you control.
 timing=main
-requires_groovy_code
 oracle=Whenever Copperhorn Scout attacks, untap each other creature you control.

@@ -1,9 +1,9 @@
 name=Well-Laid Plans
-image=http://mtgimage.com/card/well-laid%20plans.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/88.jpg
+value=2.397
 rarity=R
 type=Enchantment
 cost={2}{U}
 ability=Prevent all damage that would be dealt to a creature by another creature if they share a color.
-timing=main
+timing=enchantment
 oracle=Prevent all damage that would be dealt to a creature by another creature if they share a color.

@@ -1,9 +1,9 @@
 name=Lodestone Bauble
-image=http://mtgimage.com/card/lodestone%20bauble.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me2/213.jpg
+value=3.764
 rarity=R
 type=Artifact
 cost={0}
 ability={1}, {T}, Sacrifice SN: Put up to four target basic land cards from a player's graveyard on top of his or her library in any order. That player draws a card at the beginning of the next turn's upkeep.
-timing=main
+timing=artifact
 oracle={1}, {T}, Sacrifice Lodestone Bauble: Put up to four target basic land cards from a player's graveyard on top of his or her library in any order. That player draws a card at the beginning of the next turn's upkeep.

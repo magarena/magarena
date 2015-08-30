@@ -1,5 +1,5 @@
 name=Flow of Maggots
-image=http://mtgimage.com/card/flow%20of%20maggots.jpg
+image=http://magiccards.info/scans/en/ia/13.jpg
 value=1.750
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Cumulative upkeep {1};\
         SN can't be blocked except by Walls.
 timing=main
-oracle=Cumulative upkeep {1}. Flow of Maggots can't be blocked by non-Wall creatures.
+oracle=Cumulative upkeep {1}\nFlow of Maggots can't be blocked by non-Wall creatures.

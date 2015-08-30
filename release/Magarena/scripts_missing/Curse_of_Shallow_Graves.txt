@@ -1,11 +1,11 @@
 name=Curse of Shallow Graves
-image=http://mtgimage.com/card/curse%20of%20shallow%20graves.jpg
-value=2.500
+image=http://magiccards.info/scans/en/c13/71.jpg
+value=3.638
 rarity=U
 type=Enchantment
 subtype=Aura,Curse
 cost={2}{B}
 ability=Enchant player;\
         Whenever a player attacks enchanted player with one or more creatures, that attacking player may put a 2/2 black Zombie creature token onto the battlefield tapped.
-timing=main
-oracle=Enchant player. Whenever a player attacks enchanted player with one or more creatures, that attacking player may put a 2/2 black Zombie creature token onto the battlefield tapped.
+timing=aura
+oracle=Enchant player\nWhenever a player attacks enchanted player with one or more creatures, that attacking player may put a 2/2 black Zombie creature token onto the battlefield tapped.

@@ -1,0 +1,11 @@
+name=Necrosavant
+image=http://magiccards.info/scans/en/6e/145.jpg
+value=3.581
+rarity=R
+type=Creature
+subtype=Zombie,Giant
+cost={3}{B}{B}{B}
+pt=5/5
+ability={3}{B}{B}, Sacrifice a creature: Return SN from your graveyard to the battlefield. Activate this ability only during your upkeep.
+timing=main
+oracle={3}{B}{B}, Sacrifice a creature: Return Necrosavant from your graveyard to the battlefield. Activate this ability only during your upkeep.

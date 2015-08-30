@@ -1,5 +1,5 @@
 name=Dregs of Sorrow
-image=http://mtgimage.com/card/dregs%20of%20sorrow.jpg
+image=http://magiccards.info/scans/en/c14/143.jpg
 value=2.500
 rarity=R
 type=Sorcery

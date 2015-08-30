@@ -1,5 +1,5 @@
 name=Puncture Blast
-image=http://mtgimage.com/card/puncture%20blast.jpg
+image=http://magiccards.info/scans/en/eve/60.jpg
 value=3.456
 removal=3
 rarity=C
@@ -8,4 +8,4 @@ cost={2}{R}
 ability=wither
 effect=SN deals 3 damage to target creature or player.
 timing=removal
-oracle=Wither. Puncture Blast deals 3 damage to target creature or player.
+oracle=Wither\nPuncture Blast deals 3 damage to target creature or player.

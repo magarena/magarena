@@ -1,0 +1,11 @@
+name=Grasp of the Hieromancer
+image=http://magiccards.info/scans/en/ori/15.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{W}
+ability=Enchant creature;\
+        Enchanted creature gets +1/+1 and has "Whenever this creature attacks, tap target creature defending player controls."
+timing=aura
+oracle=Enchant creature\nEnchanted creature gets +1/+1 and has "Whenever this creature attacks, tap target creature defending player controls."

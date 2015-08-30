@@ -1,5 +1,5 @@
 name=Ballista Squad
-image=http://mtgimage.com/card/ballista%20squad.jpg
+image=http://magiccards.info/scans/en/10e/8.jpg
 value=3.934
 rarity=U
 type=Creature

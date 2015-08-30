@@ -1,6 +1,6 @@
 name=Daring Thief
-image=http://mtgimage.com/card/daring%20thief.jpg
-value=2.500
+image=http://magiccards.info/scans/en/jou/36.jpg
+value=3.778
 rarity=R
 type=Creature
 subtype=Human,Rogue

@@ -1,5 +1,5 @@
 name=Lord of the Undead
-image=http://mtgimage.com/card/lord%20of%20the%20undead.jpg
+image=http://magiccards.info/scans/en/10e/155.jpg
 value=4.328
 rarity=R
 type=Creature
@@ -10,4 +10,4 @@ ability=other zombie creatures get +1/+1;\
         {1}{B}, {T}: Return target Zombie card from your graveyard to your hand.
 static=all
 timing=main
-oracle=Other Zombie creatures get +1/+1. {1}{B}, {T}: Return target Zombie card from your graveyard to your hand.
+oracle=Other Zombie creatures get +1/+1.\n{1}{B}, {T}: Return target Zombie card from your graveyard to your hand.

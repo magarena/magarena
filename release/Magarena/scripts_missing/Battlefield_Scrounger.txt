@@ -1,6 +1,6 @@
 name=Battlefield Scrounger
-image=http://mtgimage.com/card/battlefield%20scrounger.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ju/106.jpg
+value=3.355
 rarity=C
 type=Creature
 subtype=Centaur

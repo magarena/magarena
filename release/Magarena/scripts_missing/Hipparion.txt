@@ -1,7 +1,7 @@
 name=Hipparion
-image=http://mtgimage.com/card/hipparion.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/5e/310.jpg
+value=1.972
+rarity=C
 type=Creature
 subtype=Horse
 cost={1}{W}

@@ -1,5 +1,5 @@
 name=Falkenrath Torturer
-image=http://mtgimage.com/card/falkenrath%20torturer.jpg
+image=http://magiccards.info/scans/en/dka/60.jpg
 value=2.021
 rarity=C
 type=Creature

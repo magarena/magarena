@@ -1,0 +1,12 @@
+name=Morinfen
+image=http://magiccards.info/scans/en/wl/17.jpg
+value=2.571
+rarity=R
+type=Legendary,Creature
+subtype=Horror
+cost={3}{B}{B}
+pt=5/4
+ability=Flying
+timing=main
+requires_groovy_code=Gallowbraid
+oracle=Flying\nCumulative upkeep—Pay 1 life.

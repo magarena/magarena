@@ -1,10 +1,10 @@
 name=Jeweled Torque
-image=http://mtgimage.com/card/jeweled%20torque.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/301.jpg
+value=2.630
 rarity=U
 type=Artifact
 cost={2}
 ability=As SN enters the battlefield, choose a color.;\
         Whenever a player casts a spell of the chosen color, you may pay {2}. If you do, you gain 2 life.
-timing=main
-oracle=As Jeweled Torque enters the battlefield, choose a color. Whenever a player casts a spell of the chosen color, you may pay {2}. If you do, you gain 2 life.
+timing=artifact
+oracle=As Jeweled Torque enters the battlefield, choose a color.\nWhenever a player casts a spell of the chosen color, you may pay {2}. If you do, you gain 2 life.

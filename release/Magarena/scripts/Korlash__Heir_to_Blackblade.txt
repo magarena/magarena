@@ -1,0 +1,13 @@
+name=Korlash, Heir to Blackblade
+image=http://magiccards.info/scans/en/fut/87.jpg
+value=4.209
+rarity=R
+type=Legendary,Creature
+subtype=Zombie,Warrior
+cost={2}{B}{B}
+pt=*/*
+ability=SN's power and toughness are each equal to the number of Swamps you control.;\
+        {1}{B}: Regenerate SN.
+timing=main
+requires_groovy_code
+oracle=Korlash, Heir to Blackblade's power and toughness are each equal to the number of Swamps you control.\n{1}{B}: Regenerate Korlash.\nGrandeur — Discard another card named Korlash, Heir to Blackblade: Search your library for up to two Swamp cards, put them onto the battlefield tapped, then shuffle your library.

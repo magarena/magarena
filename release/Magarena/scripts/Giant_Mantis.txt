@@ -1,5 +1,5 @@
 name=Giant Mantis
-image=http://mtgimage.com/card/giant%20mantis.jpg
+image=http://magiccards.info/scans/en/vma/213.jpg
 value=3.362
 rarity=C
 type=Creature

@@ -1,5 +1,5 @@
 name=Recycle
-image=http://mtgimage.com/card/recycle.jpg
+image=http://magiccards.info/scans/en/tp/142.jpg
 value=2.500
 rarity=R
 type=Enchantment
@@ -7,5 +7,5 @@ cost={4}{G}{G}
 ability=Skip your draw step.;\
         Whenever you play a card, draw a card.;\
         Your maximum hand size is two.
-timing=main
-oracle=Skip your draw step. Whenever you play a card, draw a card. Your maximum hand size is two.
+timing=enchantment
+oracle=Skip your draw step.\nWhenever you play a card, draw a card.\nYour maximum hand size is two.

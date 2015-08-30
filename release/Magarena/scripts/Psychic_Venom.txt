@@ -1,5 +1,5 @@
 name=Psychic Venom
-image=http://mtgimage.com/card/psychic%20venom.jpg
+image=http://magiccards.info/scans/en/med/46.jpg
 value=3.717
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={1}{U}
 enchant=default,neg land
 timing=enchantment
 requires_groovy_code
-oracle=Enchant land. Whenever enchanted land becomes tapped, Psychic Venom deals 2 damage to that land's controller.
+oracle=Enchant land\nWhenever enchanted land becomes tapped, Psychic Venom deals 2 damage to that land's controller.

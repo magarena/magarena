@@ -1,11 +1,11 @@
 name=Mire Blight
-image=http://mtgimage.com/card/mire%20blight.jpg
+image=http://magiccards.info/scans/en/zen/104.jpg
 value=2.950
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={B}
+ability=When enchanted creature is dealt damage, destroy RN.
 timing=aura
 enchant=destroy,neg creature
-requires_groovy_code=Mortal Wound
-oracle=Enchant creature. When enchanted creature is dealt damage, destroy it.
+oracle=Enchant creature\nWhen enchanted creature is dealt damage, destroy it.

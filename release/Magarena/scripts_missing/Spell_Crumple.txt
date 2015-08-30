@@ -1,9 +1,0 @@
-name=Spell Crumple
-image=http://mtgimage.com/card/spell%20crumple.jpg
-value=2.500
-rarity=U
-type=Instant
-cost={1}{U}{U}
-effect=Counter target spell. If that spell is countered this way, put it on the bottom of its owner's library instead of into that player's graveyard. Put SN on the bottom of its owner's library.
-timing=removal
-oracle=Counter target spell. If that spell is countered this way, put it on the bottom of its owner's library instead of into that player's graveyard. Put Spell Crumple on the bottom of its owner's library.

@@ -1,0 +1,9 @@
+name=Secure the Wastes
+image=http://magiccards.info/scans/en/dtk/36.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={X}{W}
+effect=Put X 1/1 white Warrior creature tokens onto the battlefield.
+timing=removal
+oracle=Put X 1/1 white Warrior creature tokens onto the battlefield.

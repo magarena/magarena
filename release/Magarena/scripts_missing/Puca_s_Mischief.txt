@@ -1,9 +1,9 @@
 name=Puca's Mischief
-image=http://mtgimage.com/card/puca%27s%20mischief.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/47.jpg
+value=3.856
 rarity=R
 type=Enchantment
 cost={3}{U}
 ability=At the beginning of your upkeep, you may exchange control of target nonland permanent you control and target nonland permanent an opponent controls with an equal or lesser converted mana cost.
-timing=main
+timing=enchantment
 oracle=At the beginning of your upkeep, you may exchange control of target nonland permanent you control and target nonland permanent an opponent controls with an equal or lesser converted mana cost.

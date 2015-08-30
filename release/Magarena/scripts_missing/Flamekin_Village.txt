@@ -1,11 +1,10 @@
 name=Flamekin Village
-image=http://mtgimage.com/card/flamekin%20village.jpg
+image=http://magiccards.info/scans/en/c14/60.jpg
 value=2.500
 rarity=R
 type=Land
-mana=r3
 ability=As SN enters the battlefield, you may reveal an Elemental card from your hand. If you don't, SN enters the battlefield tapped.;\
         {T}: Add {R} to your mana pool.;\
         {R}, {T}: Target creature gains haste until end of turn.
-timing=main
-oracle=As Flamekin Village enters the battlefield, you may reveal an Elemental card from your hand. If you don't, Flamekin Village enters the battlefield tapped. {T}: Add {R} to your mana pool. {R}, {T}: Target creature gains haste until end of turn.
+timing=land
+oracle=As Flamekin Village enters the battlefield, you may reveal an Elemental card from your hand. If you don't, Flamekin Village enters the battlefield tapped.\n{T}: Add {R} to your mana pool.\n{R}, {T}: Target creature gains haste until end of turn.

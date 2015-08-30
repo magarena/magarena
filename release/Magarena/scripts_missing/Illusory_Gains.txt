@@ -1,0 +1,12 @@
+name=Illusory Gains
+image=http://magiccards.info/scans/en/dtk/59.jpg
+value=2.500
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={3}{U}{U}
+ability=Enchant creature;\
+        You control enchanted creature.;\
+        Whenever a creature enters the battlefield under an opponent's control, attach SN to that creature.
+timing=aura
+oracle=Enchant creature\nYou control enchanted creature.\nWhenever a creature enters the battlefield under an opponent's control, attach Illusory Gains to that creature.

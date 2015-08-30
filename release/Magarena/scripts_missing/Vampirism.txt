@@ -1,6 +1,6 @@
 name=Vampirism
-image=http://mtgimage.com/card/vampirism.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vi/23.jpg
+value=3.075
 rarity=U
 type=Enchantment
 subtype=Aura
@@ -9,5 +9,5 @@ ability=Enchant creature;\
         When SN enters the battlefield, draw a card at the beginning of the next turn's upkeep.;\
         Enchanted creature gets +1/+1 for each other creature you control.;\
         Other creatures you control get -1/-1.
-timing=main
-oracle=Enchant creature. When Vampirism enters the battlefield, draw a card at the beginning of the next turn's upkeep. Enchanted creature gets +1/+1 for each other creature you control. Other creatures you control get -1/-1.
+timing=aura
+oracle=Enchant creature\nWhen Vampirism enters the battlefield, draw a card at the beginning of the next turn's upkeep.\nEnchanted creature gets +1/+1 for each other creature you control.\nOther creatures you control get -1/-1.

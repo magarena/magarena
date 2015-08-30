@@ -1,9 +1,9 @@
 name=Strionic Resonator
-image=http://mtgimage.com/card/strionic%20resonator.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m14/224.jpg
+value=3.846
 rarity=R
 type=Artifact
 cost={2}
 ability={2}, {T}: Copy target triggered ability you control. You may choose new targets for the copy.
-timing=main
+timing=artifact
 oracle={2}, {T}: Copy target triggered ability you control. You may choose new targets for the copy.

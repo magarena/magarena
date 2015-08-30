@@ -10,20 +10,14 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets =
-                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.ATTACKING_CREATURE);
-            final Collection<MagicPermanent> targets2 =
-                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
-            for (final MagicPermanent target : targets) {
-                final MagicDamage damage = new MagicDamage(event.getSource(),target,2);
-                game.doAction(new MagicDealDamageAction(damage));
+            final MagicSource source = event.getSource();
+            ATTACKING_CREATURE.filter(event) each {
+                game.doAction(new DealDamageAction(source,it,2));
             }
-            for (final MagicPermanent target : targets2) {
-                final MagicDamage damage2 = new MagicDamage(event.getSource(),target,1);
-                game.doAction(new MagicDealDamageAction(damage2));
+            game.doAction(new DealDamageAction(source,event.getPlayer(),1));
+            CREATURE_YOU_CONTROL.filter(event) each {
+                game.doAction(new DealDamageAction(source,it,1));
             }
-            final MagicDamage damage3 = new MagicDamage(event.getSource(),event.getPlayer(),1);
-            game.doAction(new MagicDealDamageAction(damage3));
         }
     }
 ]

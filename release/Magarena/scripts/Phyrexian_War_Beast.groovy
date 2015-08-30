@@ -1,7 +1,7 @@
 [
     new MagicWhenSelfLeavesPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicRemoveFromPlayAction data) {
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final RemoveFromPlayAction data) {
             return new MagicEvent(
                 permanent,
                 this,
@@ -11,9 +11,8 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
-            final MagicDamage damage = new MagicDamage(permanent,permanent.getController(),1);
-            game.addEvent(new MagicSacrificePermanentEvent(permanent, MagicTargetChoice.LAND_YOU_CONTROL));
-            game.doAction(new MagicDealDamageAction(damage));
+            game.addEvent(new MagicSacrificePermanentEvent(permanent,A_LAND_YOU_CONTROL));
+            game.doAction(new DealDamageAction(permanent,permanent.getController(),1));
         }
     }
 ]

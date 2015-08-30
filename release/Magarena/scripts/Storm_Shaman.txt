@@ -1,5 +1,5 @@
 name=Storm Shaman
-image=http://mtgimage.com/card/storm%20shaman.jpg
+image=http://magiccards.info/scans/en/7e/222.jpg
 value=3.143
 rarity=U
 type=Creature

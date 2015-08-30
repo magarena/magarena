@@ -1,11 +1,11 @@
 name=Kavu Howler
-image=http://mtgimage.com/card/kavu%20howler.jpg
+image=http://magiccards.info/scans/en/ap/79.jpg
 value=3.186
 rarity=U
 type=Creature
 subtype=Kavu
 cost={4}{G}{G}
 pt=4/5
+ability=When SN enters the battlefield, reveal the top four cards of your library. Put all Kavu cards revealed this way into your hand and the rest on the bottom of your library in any order.
 timing=main
-requires_groovy_code
 oracle=When Kavu Howler enters the battlefield, reveal the top four cards of your library. Put all Kavu cards revealed this way into your hand and the rest on the bottom of your library in any order.

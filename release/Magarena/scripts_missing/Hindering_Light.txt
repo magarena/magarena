@@ -1,9 +1,9 @@
 name=Hindering Light
-image=http://mtgimage.com/card/hindering%20light.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ala/173.jpg
+value=3.715
 rarity=C
 type=Instant
 cost={W}{U}
 effect=Counter target spell that targets you or a permanent you control.~Draw a card.
 timing=removal
-oracle=Counter target spell that targets you or a permanent you control. Draw a card.
+oracle=Counter target spell that targets you or a permanent you control.\nDraw a card.

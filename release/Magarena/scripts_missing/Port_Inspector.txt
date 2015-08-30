@@ -1,6 +1,6 @@
 name=Port Inspector
-image=http://mtgimage.com/card/port%20inspector.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/90.jpg
+value=2.617
 rarity=C
 type=Creature
 subtype=Human

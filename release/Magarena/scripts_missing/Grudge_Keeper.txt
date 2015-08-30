@@ -1,6 +1,6 @@
 name=Grudge Keeper
-image=http://mtgimage.com/card/grudge%20keeper.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cns/28.jpg
+value=3.500
 rarity=C
 type=Creature
 subtype=Zombie,Wizard

@@ -1,5 +1,5 @@
 name=Smoldering Tar
-image=http://mtgimage.com/card/smoldering%20tar.jpg
+image=http://magiccards.info/scans/en/in/275.jpg
 value=3.283
 rarity=U
 type=Enchantment
@@ -7,4 +7,4 @@ cost={2}{B}{R}
 ability=At the beginning of your upkeep, target player loses 1 life.;\
         Sacrifice SN: SN deals 4 damage to target creature. Activate this ability only any time you could cast a sorcery.
 timing=enchantment
-oracle=At the beginning of your upkeep, target player loses 1 life. Sacrifice Smoldering Tar: Smoldering Tar deals 4 damage to target creature. Activate this ability only any time you could cast a sorcery.
+oracle=At the beginning of your upkeep, target player loses 1 life.\nSacrifice Smoldering Tar: Smoldering Tar deals 4 damage to target creature. Activate this ability only any time you could cast a sorcery.

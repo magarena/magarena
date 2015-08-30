@@ -25,7 +25,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (MagicCondition.HELLBENT.accept(event.getSource())) {
-                game.doAction(new MagicDrawAction(event.getPlayer()));
+                game.doAction(new DrawAction(event.getPlayer()));
             }
         }
     }

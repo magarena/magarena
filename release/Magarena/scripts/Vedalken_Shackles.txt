@@ -1,0 +1,10 @@
+name=Vedalken Shackles
+image=http://magiccards.info/scans/en/mma/218.jpg
+value=4.458
+rarity=M
+type=Artifact
+cost={3}
+ability=You may choose not to untap SN during your untap step.
+timing=artifact
+requires_groovy_code
+oracle=You may choose not to untap Vedalken Shackles during your untap step.\n{2}, {T}: Gain control of target creature with power less than or equal to the number of Islands you control for as long as Vedalken Shackles remains tapped.

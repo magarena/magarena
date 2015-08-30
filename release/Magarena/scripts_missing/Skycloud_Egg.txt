@@ -1,9 +1,9 @@
 name=Skycloud Egg
-image=http://mtgimage.com/card/skycloud%20egg.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/309.jpg
+value=2.654
 rarity=U
 type=Artifact
 cost={1}
 ability={2}, {T}, Sacrifice SN: Add {W}{U} to your mana pool. Draw a card.
-timing=main
+timing=artifact
 oracle={2}, {T}, Sacrifice Skycloud Egg: Add {W}{U} to your mana pool. Draw a card.

@@ -1,0 +1,11 @@
+name=Pestilence Rats
+image=http://magiccards.info/scans/en/ia/45.jpg
+value=2.865
+rarity=C
+type=Creature
+subtype=Rat
+cost={2}{B}
+pt=*/3
+ability=SN's power is equal to the number of other Rats on the battlefield.
+timing=main
+oracle=Pestilence Rats's power is equal to the number of other Rats on the battlefield.

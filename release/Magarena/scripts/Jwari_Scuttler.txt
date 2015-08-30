@@ -1,5 +1,5 @@
 name=Jwari Scuttler
-image=http://mtgimage.com/card/jwari%20scuttler.jpg
+image=http://magiccards.info/scans/en/roe/73.jpg
 value=2.056
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Crab
 cost={2}{U}
 pt=2/3
 timing=main
+oracle=NONE

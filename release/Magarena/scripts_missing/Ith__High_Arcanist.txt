@@ -1,6 +1,6 @@
 name=Ith, High Arcanist
-image=http://mtgimage.com/card/ith%2C%20high%20arcanist.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ts/241.jpg
+value=3.773
 rarity=R
 type=Legendary,Creature
 subtype=Human,Wizard
@@ -10,4 +10,4 @@ ability=Vigilance;\
         {T}: Untap target attacking creature. Prevent all combat damage that would be dealt to and dealt by that creature this turn.;\
         Suspend 4—{W}{U}
 timing=main
-oracle=Vigilance. {T}: Untap target attacking creature. Prevent all combat damage that would be dealt to and dealt by that creature this turn. Suspend 4—{W}{U}
+oracle=Vigilance\n{T}: Untap target attacking creature. Prevent all combat damage that would be dealt to and dealt by that creature this turn.\nSuspend 4—{W}{U}

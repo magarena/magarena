@@ -1,0 +1,9 @@
+name=Darigaaz's Charm
+image=http://magiccards.info/scans/en/pvc/59.jpg
+value=3.707
+rarity=U
+type=Instant
+cost={B}{R}{G}
+effect=Choose one — (1) Return target creature card from your graveyard to your hand. (2) SN deals 3 damage to target creature or player. (3) Target creature gets +3/+3 until end of turn.
+timing=removal
+oracle=Choose one —\n• Return target creature card from your graveyard to your hand.\n• Darigaaz's Charm deals 3 damage to target creature or player.\n• Target creature gets +3/+3 until end of turn.

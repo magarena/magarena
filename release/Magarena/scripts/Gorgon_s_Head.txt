@@ -1,5 +1,5 @@
 name=Gorgon's Head
-image=http://mtgimage.com/card/gorgon's%20head.jpg
+image=http://magiccards.info/scans/en/bng/158.jpg
 value=3.298
 rarity=U
 type=Artifact
@@ -8,4 +8,4 @@ cost={1}
 ability=Equipped creature has deathtouch.;\
         Equip {2}
 timing=equipment
-oracle=Equipped creature has deathtouch. Equip {2}
+oracle=Equipped creature has deathtouch.\nEquip {2}

@@ -2,8 +2,7 @@
     new MagicAtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return permanent.getOpponent().getLife() > 
-                   permanent.getController().getLife() ?
+            return permanent.getOpponent().getLife() > permanent.getController().getLife() ?
                 new MagicEvent(
                     permanent,
                     this,
@@ -13,9 +12,8 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.getPermanent().getOpponent().getLife() > 
-                event.getPermanent().getController().getLife()) {
-                game.doAction(new MagicGainControlAction(event.getPermanent().getOpponent(),event.getPermanent()));
+            if (event.getPlayer().getOpponent().getLife() > event.getPlayer().getLife()) {
+                game.doAction(new GainControlAction(event.getPlayer().getOpponent(), event.getPermanent()));
             }
         }
     }

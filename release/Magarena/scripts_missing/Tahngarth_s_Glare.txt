@@ -1,6 +1,6 @@
 name=Tahngarth's Glare
-image=http://mtgimage.com/card/tahngarth%27s%20glare.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ap/70.jpg
+value=2.038
 rarity=C
 type=Sorcery
 cost={R}

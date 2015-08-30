@@ -1,5 +1,5 @@
 name=Pulse of the Forge
-image=http://mtgimage.com/card/pulse%20of%20the%20forge.jpg
+image=http://magiccards.info/scans/en/ds/66.jpg
 value=4.245
 removal=4
 rarity=R

@@ -1,0 +1,9 @@
+name=Coat with Venom
+image=http://magiccards.info/scans/en/dtk/91.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={B}
+effect=Target creature gets +1/+2 and gains deathtouch until end of turn.
+timing=pump
+oracle=Target creature gets +1/+2 and gains deathtouch until end of turn.

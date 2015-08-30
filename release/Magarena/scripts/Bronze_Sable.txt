@@ -1,5 +1,5 @@
 name=Bronze Sable
-image=http://mtgimage.com/card/bronze%20sable.jpg
+image=http://magiccards.info/scans/en/m15/214.jpg
 value=1.571
 rarity=C
 type=Artifact,Creature
@@ -7,3 +7,4 @@ subtype=Sable
 cost={2}
 pt=2/1
 timing=artifact
+oracle=NONE

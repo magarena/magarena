@@ -1,6 +1,6 @@
 name=Psychic Miasma
-image=http://mtgimage.com/card/psychic%20miasma.jpg
-value=2.500
+image=http://magiccards.info/scans/en/som/76.jpg
+value=2.273
 rarity=C
 type=Sorcery
 cost={1}{B}

@@ -1,0 +1,9 @@
+name=Enduring Victory
+image=http://magiccards.info/scans/en/dtk/16.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={4}{W}
+effect=Destroy target attacking or blocking creature.~Bolster 1.
+timing=removal
+oracle=Destroy target attacking or blocking creature. Bolster 1.

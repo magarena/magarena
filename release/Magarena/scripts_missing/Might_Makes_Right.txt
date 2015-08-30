@@ -1,9 +1,9 @@
 name=Might Makes Right
-image=http://mtgimage.com/card/might%20makes%20right.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/156.jpg
+value=2.083
 rarity=U
 type=Enchantment
 cost={5}{R}
 ability=At the beginning of combat on your turn, if you control each creature on the battlefield with the greatest power, gain control of target creature an opponent controls until end of turn. Untap that creature. It gains haste until end of turn.
-timing=main
+timing=enchantment
 oracle=At the beginning of combat on your turn, if you control each creature on the battlefield with the greatest power, gain control of target creature an opponent controls until end of turn. Untap that creature. It gains haste until end of turn.

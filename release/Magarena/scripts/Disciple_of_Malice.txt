@@ -1,5 +1,5 @@
 name=Disciple of Malice
-image=http://mtgimage.com/card/disciple%20of%20malice.jpg
+image=http://magiccards.info/scans/en/on/139.jpg
 value=3.000
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{B}
 pt=1/2
 ability=cycling {2};protection from white
 timing=main
-oracle=Protection from white. Cycling {2}
+oracle=Protection from white\nCycling {2}

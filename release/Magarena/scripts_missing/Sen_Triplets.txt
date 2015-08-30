@@ -1,11 +1,11 @@
 name=Sen Triplets
-image=http://mtgimage.com/card/sen%20triplets.jpg
-value=2.500
+image=http://magiccards.info/scans/en/arb/109.jpg
+value=3.998
 rarity=M
 type=Legendary,Artifact,Creature
 subtype=Human,Wizard
 cost={2}{W}{U}{B}
 pt=3/3
 ability=At the beginning of your upkeep, choose target opponent. This turn, that player can't cast spells or activate abilities and plays with his or her hand revealed. You may play cards from that player's hand this turn.
-timing=main
+timing=artifact
 oracle=At the beginning of your upkeep, choose target opponent. This turn, that player can't cast spells or activate abilities and plays with his or her hand revealed. You may play cards from that player's hand this turn.

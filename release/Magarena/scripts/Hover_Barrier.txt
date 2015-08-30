@@ -1,5 +1,5 @@
 name=Hover Barrier
-image=http://mtgimage.com/card/hover%20barrier.jpg
+image=http://magiccards.info/scans/en/rtr/40.jpg
 value=3.028
 ability=flying;defender
 rarity=U

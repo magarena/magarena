@@ -1,5 +1,5 @@
 name=Victory's Herald
-image=http://mtgimage.com/card/victory%27s%20herald.jpg
+image=http://magiccards.info/scans/en/mbs/18.jpg
 value=3.741
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=4/4
 ability=flying;\
         Whenever SN attacks, attacking creatures gain flying and lifelink until end of turn.
 timing=main
-oracle=Flying. Whenever Victory's Herald attacks, attacking creatures gain flying and lifelink until end of turn.
+oracle=Flying\nWhenever Victory's Herald attacks, attacking creatures gain flying and lifelink until end of turn.

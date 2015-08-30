@@ -1,5 +1,5 @@
 name=Relic Bane
-image=http://mtgimage.com/card/relic%20bane.jpg
+image=http://magiccards.info/scans/en/mi/76.jpg
 value=2.906
 rarity=U
 type=Enchantment
@@ -8,4 +8,4 @@ cost={1}{B}{B}
 ability=Enchanted artifact has "At the beginning of your upkeep, you lose 2 life."
 timing=aura
 enchant=destroy,neg artifact
-oracle=Enchant artifact. Enchanted artifact has "At the beginning of your upkeep, you lose 2 life."
+oracle=Enchant artifact\nEnchanted artifact has "At the beginning of your upkeep, you lose 2 life."

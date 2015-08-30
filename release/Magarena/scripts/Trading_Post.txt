@@ -1,5 +1,5 @@
 name=Trading Post
-image=http://mtgimage.com/card/trading%20post.jpg
+image=http://magiccards.info/scans/en/c14/279.jpg
 value=3.750
 rarity=R
 type=Artifact
@@ -9,4 +9,4 @@ ability={1},{T},Discard a card: You gain 4 life.;\
         {1},{T},Sacrifice a creature: Return target creature card from your graveyard to your hand.;\
         {1},{T},Sacrifice an artifact: Draw a card.
 timing=artifact
-oracle={1}, {T}, Discard a card: You gain 4 life. {1}, {T}, Pay 1 life: Put a 0/1 white Goat creature token onto the battlefield. {1}, {T}, Sacrifice a creature: Return target artifact card from your graveyard to your hand. {1}, {T}, Sacrifice an artifact: Draw a card.
+oracle={1}, {T}, Discard a card: You gain 4 life.\n{1}, {T}, Pay 1 life: Put a 0/1 white Goat creature token onto the battlefield.\n{1}, {T}, Sacrifice a creature: Return target artifact card from your graveyard to your hand.\n{1}, {T}, Sacrifice an artifact: Draw a card.

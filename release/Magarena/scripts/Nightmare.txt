@@ -1,12 +1,12 @@
 name=Nightmare
-image=http://mtgimage.com/card/nightmare.jpg
+image=http://magiccards.info/scans/en/m15/276.jpg
 value=3.312
 rarity=R
 type=Creature
 subtype=Nightmare,Horse
 cost={5}{B}
 pt=*/*
-ability=flying;\
+ability=Flying;\
         SN's power and toughness are each equal to the number of Swamps you control.
 timing=smain
-oracle=Flying. Nightmare's power and toughness are each equal to the number of Swamps you control.
+oracle=Flying\nNightmare's power and toughness are each equal to the number of Swamps you control.

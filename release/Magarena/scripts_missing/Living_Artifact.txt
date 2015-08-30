@@ -1,6 +1,6 @@
 name=Living Artifact
-image=http://mtgimage.com/card/living%20artifact.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5e/173.jpg
+value=2.568
 rarity=R
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={G}
 ability=Enchant artifact;\
         Whenever you're dealt damage, put that many vitality counters on SN.;\
         At the beginning of your upkeep, you may remove a vitality counter from SN. If you do, you gain 1 life.
-timing=main
-oracle=Enchant artifact. Whenever you're dealt damage, put that many vitality counters on Living Artifact. At the beginning of your upkeep, you may remove a vitality counter from Living Artifact. If you do, you gain 1 life.
+timing=aura
+oracle=Enchant artifact\nWhenever you're dealt damage, put that many vitality counters on Living Artifact.\nAt the beginning of your upkeep, you may remove a vitality counter from Living Artifact. If you do, you gain 1 life.

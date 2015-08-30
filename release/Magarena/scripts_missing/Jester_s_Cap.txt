@@ -1,9 +1,9 @@
 name=Jester's Cap
-image=http://mtgimage.com/card/jester%27s%20cap.jpg
-value=2.500
+image=http://magiccards.info/scans/en/9e/301.jpg
+value=4.025
 rarity=R
 type=Artifact
 cost={4}
 ability={2}, {T}, Sacrifice SN: Search target player's library for three cards and exile them. Then that player shuffles his or her library.
-timing=main
+timing=artifact
 oracle={2}, {T}, Sacrifice Jester's Cap: Search target player's library for three cards and exile them. Then that player shuffles his or her library.

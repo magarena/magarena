@@ -1,9 +1,9 @@
 name=Words of Waste
-image=http://mtgimage.com/card/words%20of%20waste.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/182.jpg
+value=3.571
 rarity=R
 type=Enchantment
 cost={2}{B}
 ability={1}: The next time you would draw a card this turn, each opponent discards a card instead.
-timing=main
+timing=enchantment
 oracle={1}: The next time you would draw a card this turn, each opponent discards a card instead.

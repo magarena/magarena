@@ -1,0 +1,9 @@
+name=Commune with Lava
+image=http://magiccards.info/scans/en/dtk/131.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={X}{R}{R}
+effect=Exile the top X cards of your library. Until the end of your next turn, you may play those cards.
+timing=removal
+oracle=Exile the top X cards of your library. Until the end of your next turn, you may play those cards.

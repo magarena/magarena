@@ -1,5 +1,5 @@
 name=No-Dachi
-image=http://mtgimage.com/card/no%2Ddachi.jpg
+image=http://magiccards.info/scans/en/chk/264.jpg
 value=3.137
 rarity=U
 type=Artifact
@@ -8,4 +8,4 @@ cost={2}
 ability=Equipped creature gets +2/+0 and has first strike.;\
         Equip {3}
 timing=equipment
-oracle=Equipped creature gets +2/+0 and has first strike. Equip {3}
+oracle=Equipped creature gets +2/+0 and has first strike.\nEquip {3}

@@ -1,5 +1,5 @@
 name=Hovermyr
-image=http://mtgimage.com/card/hovermyr.jpg
+image=http://magiccards.info/scans/en/nph/138.jpg
 value=3.739
 ability=flying;vigilance
 rarity=C

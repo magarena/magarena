@@ -1,5 +1,5 @@
 name=Angelic Voices
-image=http://mtgimage.com/card/angelic%20voices.jpg
+image=http://magiccards.info/scans/en/me4/3.jpg
 value=2.310
 rarity=R
 type=Enchantment

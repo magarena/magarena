@@ -1,6 +1,6 @@
 name=Glamer Spinners
-image=http://mtgimage.com/card/glamer%20spinners.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/141.jpg
+value=2.338
 rarity=U
 type=Creature
 subtype=Faerie,Wizard
@@ -10,4 +10,4 @@ ability=Flash;\
         Flying;\
         When SN enters the battlefield, attach all Auras enchanting target permanent to another permanent with the same controller.
 timing=main
-oracle=Flash. Flying. When Glamer Spinners enters the battlefield, attach all Auras enchanting target permanent to another permanent with the same controller.
+oracle=Flash\nFlying\nWhen Glamer Spinners enters the battlefield, attach all Auras enchanting target permanent to another permanent with the same controller.

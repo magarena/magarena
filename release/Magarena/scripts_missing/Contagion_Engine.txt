@@ -1,10 +1,10 @@
 name=Contagion Engine
-image=http://mtgimage.com/card/contagion%20engine.jpg
-value=2.500
+image=http://magiccards.info/scans/en/som/145.jpg
+value=4.133
 rarity=R
 type=Artifact
 cost={6}
 ability=When SN enters the battlefield, put a -1/-1 counter on each creature target player controls.;\
         {4}, {T}: Proliferate, then proliferate again.
-timing=main
-oracle=When Contagion Engine enters the battlefield, put a -1/-1 counter on each creature target player controls. {4}, {T}: Proliferate, then proliferate again.
+timing=artifact
+oracle=When Contagion Engine enters the battlefield, put a -1/-1 counter on each creature target player controls.\n{4}, {T}: Proliferate, then proliferate again.

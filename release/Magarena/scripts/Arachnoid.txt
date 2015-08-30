@@ -1,11 +1,11 @@
 name=Arachnoid
-image=http://mtgimage.com/card/arachnoid.jpg
+image=http://magiccards.info/scans/en/5dn/102.jpg
 value=1.371
-ability=reach
 rarity=U
 type=Artifact,Creature
 subtype=Spider
 cost={6}
 pt=2/6
+ability=Reach
 timing=main
 oracle=Reach

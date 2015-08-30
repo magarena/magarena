@@ -1,5 +1,5 @@
 name=Wall of Distortion
-image=http://mtgimage.com/card/wall%20of%20distortion.jpg
+image=http://magiccards.info/scans/en/mm/171.jpg
 value=2.632
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/3
 ability=Defender;\
         {2}{B}, {T}: Target player discards a card. Activate this ability only any time you could cast a sorcery.
 timing=main
-oracle=Defender. {2}{B}, {T}: Target player discards a card. Activate this ability only any time you could cast a sorcery.
+oracle=Defender\n{2}{B}, {T}: Target player discards a card. Activate this ability only any time you could cast a sorcery.

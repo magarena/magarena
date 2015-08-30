@@ -1,6 +1,6 @@
 name=Shrouded Serpent
-image=http://mtgimage.com/card/shrouded%20serpent.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pr/47.jpg
+value=1.951
 rarity=R
 type=Creature
 subtype=Serpent

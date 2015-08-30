@@ -1,5 +1,5 @@
 name=Sicken
-image=http://mtgimage.com/card/sicken.jpg
+image=http://magiccards.info/scans/en/us/156.jpg
 value=2.852
 rarity=C
 type=Enchantment
@@ -9,4 +9,4 @@ ability=Enchanted creature gets -1/-1.;\
         Cycling {2}
 timing=aura
 enchant=weaken,neg creature
-oracle=Enchant creature. Enchanted creature gets -1/-1. Cycling {2}
+oracle=Enchant creature\nEnchanted creature gets -1/-1.\nCycling {2}

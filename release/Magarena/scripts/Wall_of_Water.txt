@@ -1,5 +1,5 @@
 name=Wall of Water
-image=http://mtgimage.com/card/wall%20of%20water.jpg
+image=http://magiccards.info/scans/en/4e/114.jpg
 value=3.074
 rarity=U
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{U}{U}
 pt=0/5
 ability=defender;{U}:SN gets +1/+0 until end of turn.
 timing=main
-oracle=Defender. {U}: Wall of Water gets +1/+0 until end of turn.
+oracle=Defender\n{U}: Wall of Water gets +1/+0 until end of turn.

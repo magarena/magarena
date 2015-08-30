@@ -1,5 +1,5 @@
 name=Condemn
-image=http://mtgimage.com/card/condemn.jpg
+image=http://magiccards.info/scans/en/c14/69.jpg
 value=4.412
 removal=3
 rarity=U

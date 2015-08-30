@@ -1,9 +1,9 @@
 name=Spell Burst
-image=http://mtgimage.com/card/spell%20burst.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ts/79.jpg
+value=3.522
 rarity=U
 type=Instant
 cost={X}{U}
 effect=Buyback {3}~Counter target spell with converted mana cost X.
 timing=removal
-oracle=Buyback {3}. Counter target spell with converted mana cost X.
+oracle=Buyback {3}\nCounter target spell with converted mana cost X.

@@ -1,5 +1,5 @@
 name=Aura Thief
-image=http://mtgimage.com/card/aura%20thief.jpg
+image=http://magiccards.info/scans/en/ud/26.jpg
 value=4.085
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Flying
 timing=main
 requires_groovy_code
-oracle=Flying. When Aura Thief dies, you gain control of all enchantments.
+oracle=Flying\nWhen Aura Thief dies, you gain control of all enchantments.

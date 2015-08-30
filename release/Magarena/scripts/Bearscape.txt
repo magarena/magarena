@@ -1,9 +1,9 @@
 name=Bearscape
-image=http://mtgimage.com/card/bearscape.jpg
+image=http://magiccards.info/scans/en/od/229.jpg
 value=4.043
 rarity=R
 type=Enchantment
 cost={1}{G}{G}
+ability={1}{G}, Exile two cards from your graveyard: Put a 2/2 green Bear creature token onto the battlefield.
 timing=enchantment
-requires_groovy_code
 oracle={1}{G}, Exile two cards from your graveyard: Put a 2/2 green Bear creature token onto the battlefield.

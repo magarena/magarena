@@ -1,5 +1,5 @@
 name=Bladed Sentinel
-image=http://mtgimage.com/card/bladed%20sentinel.jpg
+image=http://magiccards.info/scans/en/mbs/98.jpg
 value=2.037
 rarity=C
 type=Artifact,Creature

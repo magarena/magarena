@@ -1,6 +1,6 @@
 name=Guard Dogs
-image=http://mtgimage.com/card/guard%20dogs.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ps/5.jpg
+value=2.659
 rarity=U
 type=Creature
 subtype=Hound

@@ -1,5 +1,5 @@
 name=Specter's Wail
-image=http://mtgimage.com/card/specter's%20wail.jpg
+image=http://magiccards.info/scans/en/mm/164.jpg
 value=2.375
 rarity=C
 type=Sorcery

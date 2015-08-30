@@ -1,6 +1,6 @@
 name=Inkfathom Witch
-image=http://mtgimage.com/card/inkfathom%20witch.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pc2/97.jpg
+value=2.870
 rarity=U
 type=Creature
 subtype=Merfolk,Wizard
@@ -9,4 +9,4 @@ pt=1/1
 ability=Fear;\
         {2}{U}{B}: Each unblocked creature has base power and toughness 4/1 until end of turn.
 timing=main
-oracle=Fear. {2}{U}{B}: Each unblocked creature has base power and toughness 4/1 until end of turn.
+oracle=Fear\n{2}{U}{B}: Each unblocked creature has base power and toughness 4/1 until end of turn.

@@ -1,5 +1,5 @@
 name=Kinsbaile Skirmisher
-image=http://mtgimage.com/card/kinsbaile%20skirmisher.jpg
+image=http://magiccards.info/scans/en/ddo/15.jpg
 value=3.083
 rarity=C
 type=Creature

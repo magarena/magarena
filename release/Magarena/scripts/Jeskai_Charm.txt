@@ -1,0 +1,9 @@
+name=Jeskai Charm
+image=http://magiccards.info/scans/en/ktk/181.jpg
+value=3.833
+rarity=U
+type=Instant
+cost={U}{R}{W}
+effect=Choose one — (1) Put target creature on top of its owner's library. (2) SN deals 4 damage to target opponent. (3) Creatures you control get +1/+1 and gain lifelink until end of turn.
+timing=removal
+oracle=Choose one —\n• Put target creature on top of its owner's library.\n• Jeskai Charm deals 4 damage to target opponent.\n• Creatures you control get +1/+1 and gain lifelink until end of turn.

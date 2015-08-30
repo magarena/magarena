@@ -1,6 +1,6 @@
 name=Kaho, Minamo Historian
-image=http://mtgimage.com/card/kaho%2C%20minamo%20historian.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sok/41.jpg
+value=3.927
 rarity=R
 type=Legendary,Creature
 subtype=Human,Wizard
@@ -9,4 +9,4 @@ pt=2/2
 ability=When SN enters the battlefield, search your library for up to three instant cards and exile them. Then shuffle your library.;\
         {X}, {T}: You may cast a card with converted mana cost X exiled with Kaho without paying its mana cost.
 timing=main
-oracle=When Kaho, Minamo Historian enters the battlefield, search your library for up to three instant cards and exile them. Then shuffle your library. {X}, {T}: You may cast a card with converted mana cost X exiled with Kaho without paying its mana cost.
+oracle=When Kaho, Minamo Historian enters the battlefield, search your library for up to three instant cards and exile them. Then shuffle your library.\n{X}, {T}: You may cast a card with converted mana cost X exiled with Kaho without paying its mana cost.

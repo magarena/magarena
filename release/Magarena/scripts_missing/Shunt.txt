@@ -1,6 +1,6 @@
 name=Shunt
-image=http://mtgimage.com/card/shunt.jpg
-value=2.500
+image=http://magiccards.info/scans/en/10e/233.jpg
+value=3.972
 rarity=R
 type=Instant
 cost={1}{R}{R}

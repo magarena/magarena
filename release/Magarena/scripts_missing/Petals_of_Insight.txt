@@ -1,7 +1,7 @@
 name=Petals of Insight
-image=http://mtgimage.com/card/petals%20of%20insight.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/mma/60.jpg
+value=3.679
+rarity=C
 type=Sorcery
 subtype=Arcane
 cost={4}{U}

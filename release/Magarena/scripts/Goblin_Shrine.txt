@@ -1,6 +1,6 @@
 name=Goblin Shrine
-image=http://mtgimage.com/card/goblin%20shrine.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me4/122.jpg
+value=2.783
 rarity=C
 type=Enchantment
 subtype=Aura
@@ -9,4 +9,4 @@ ability=When SN leaves the battlefield, SN deals 1 damage to each Goblin creatur
 enchant=pump,land
 timing=aura
 requires_groovy_code
-oracle=Enchant land. As long as enchanted land is a basic Mountain, Goblin creatures get +1/+0. When Goblin Shrine leaves the battlefield, it deals 1 damage to each Goblin creature.
+oracle=Enchant land\nAs long as enchanted land is a basic Mountain, Goblin creatures get +1/+0.\nWhen Goblin Shrine leaves the battlefield, it deals 1 damage to each Goblin creature.

@@ -1,5 +1,5 @@
 name=Dragon Tyrant
-image=http://mtgimage.com/card/dragon%20tyrant.jpg
+image=http://magiccards.info/scans/en/sc/88.jpg
 value=4.338
 rarity=R
 type=Creature
@@ -12,4 +12,4 @@ ability=flying;\
         At the beginning of your upkeep, you may pay {R}{R}{R}{R}. If you don't, sacrifice SN.;\
         {R}:SN gets +1/+0 until end of turn.
 timing=main
-oracle=Flying, trample. Double strike. At the beginning of your upkeep, sacrifice Dragon Tyrant unless you pay {R}{R}{R}{R}. {R}: Dragon Tyrant gets +1/+0 until end of turn.
+oracle=Flying, trample\nDouble strike\nAt the beginning of your upkeep, sacrifice Dragon Tyrant unless you pay {R}{R}{R}{R}.\n{R}: Dragon Tyrant gets +1/+0 until end of turn.

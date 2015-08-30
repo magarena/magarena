@@ -1,6 +1,6 @@
 name=Windborne Charge
-image=http://mtgimage.com/card/windborne%20charge.jpg
-value=2.500
+image=http://magiccards.info/scans/en/zen/38.jpg
+value=2.849
 rarity=U
 type=Sorcery
 cost={2}{W}{W}

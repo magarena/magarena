@@ -1,6 +1,6 @@
 name=Lairwatch Giant
-image=http://mtgimage.com/card/lairwatch%20giant.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lw/29.jpg
+value=3.088
 rarity=C
 type=Creature
 subtype=Giant,Warrior
@@ -9,4 +9,4 @@ pt=5/3
 ability=SN can block an additional creature.;\
         Whenever SN blocks two or more creatures, it gains first strike until end of turn.
 timing=main
-oracle=Lairwatch Giant can block an additional creature. Whenever Lairwatch Giant blocks two or more creatures, it gains first strike until end of turn.
+oracle=Lairwatch Giant can block an additional creature.\nWhenever Lairwatch Giant blocks two or more creatures, it gains first strike until end of turn.

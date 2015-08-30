@@ -1,5 +1,5 @@
 name=Pianna, Nomad Captain
-image=http://mtgimage.com/card/pianna,%20nomad%20captain.jpg
+image=http://magiccards.info/scans/en/vma/39.jpg
 value=4.000
 rarity=R
 type=Legendary,Creature

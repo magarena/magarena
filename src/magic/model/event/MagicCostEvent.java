@@ -5,9 +5,11 @@ import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicCard;
 import magic.model.MagicSource;
+import magic.model.MagicLocationType;
 import magic.model.ARG;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicOtherPermanentTargetFilter;
+import magic.model.target.MagicOtherCardTargetFilter;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 
@@ -16,7 +18,7 @@ import java.util.regex.Pattern;
 
 public enum MagicCostEvent {
             
-    SacrificeSelf("Sacrifice SN") {
+    SacrificeSelf("Sacrifice (SN|this permanent|this land)") {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicSacrificeEvent((MagicPermanent)source);
         }
@@ -29,7 +31,7 @@ public enum MagicCostEvent {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             final int amt = ARG.amount(arg);
             final String chosen = MagicTargetFilterFactory.toSingular(ARG.any(arg)) + " to sacrifice";
-            final MagicTargetFilter<MagicPermanent> regular = MagicTargetFilterFactory.singlePermanent(chosen);
+            final MagicTargetFilter<MagicPermanent> regular = MagicTargetFilterFactory.Permanent(chosen);
             final MagicTargetFilter<MagicPermanent> filter = arg.group("another") != null ? 
                 new MagicOtherPermanentTargetFilter(regular, (MagicPermanent)source) :
                 regular;
@@ -53,7 +55,7 @@ public enum MagicCostEvent {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             final int amt = ARG.amount(arg);
             final String chosen = MagicTargetFilterFactory.toSingular(ARG.any(arg));
-            final MagicTargetFilter<MagicPermanent> regular = MagicTargetFilterFactory.singlePermanent(chosen);
+            final MagicTargetFilter<MagicPermanent> regular = MagicTargetFilterFactory.Permanent(chosen);
             final MagicTargetFilter<MagicPermanent> filter = arg.group("another") != null ? 
                 new MagicOtherPermanentTargetFilter(regular, (MagicPermanent)source) :
                 regular;
@@ -89,7 +91,9 @@ public enum MagicCostEvent {
     DiscardChosen("Discard " + ARG.ANY) {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             final String chosen = ARG.any(arg) + " from your hand";
-            return new MagicDiscardChosenEvent(source, new MagicTargetChoice(chosen));
+            final MagicTargetFilter<MagicCard> regular = MagicTargetFilterFactory.Card(chosen);
+            final MagicTargetFilter<MagicCard> filter = (source instanceof MagicCard) ? new MagicOtherCardTargetFilter(regular, (MagicCard)source) : regular;
+            return new MagicDiscardChosenEvent(source, new MagicTargetChoice(filter, chosen));
         }
     },
     ExileSelf("Exile SN") {
@@ -101,14 +105,32 @@ public enum MagicCostEvent {
             return false;
         }
     },
+    ExileCardSelf("Exile SN from your graveyard") {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
+            return new MagicExileSelfEvent((MagicCard)source, MagicLocationType.Graveyard);
+        }
+    },
     ExileTopNCardsLibrary("Exile the top( " + ARG.AMOUNT + ")? card(s)? of your library") {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicExileTopLibraryEvent(source, ARG.amount(arg));
         }
     },
-    ExileCard("Exile " + ARG.ANY) {
+    ExileCards("Exile " + ARG.AMOUNT + " " + ARG.ANY) {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
-            return new MagicExileCardEvent(source, new MagicTargetChoice(ARG.any(arg)));
+            final int amt = ARG.amount(arg);
+            final String chosen = MagicTargetFilterFactory.toSingular(ARG.any(arg));
+            final MagicTargetFilter<MagicCard> regular = MagicTargetFilterFactory.Card(chosen);
+            final MagicTargetFilter<MagicCard> filter = (source instanceof MagicCard) ? new MagicOtherCardTargetFilter(regular, (MagicCard)source) : regular;
+            final MagicTargetChoice choice = new MagicTargetChoice(
+                filter, 
+                ("aeiou".indexOf(chosen.charAt(0)) >= 0 ? "an " : "a ") + chosen
+            );
+            return new MagicRepeatedCardsEvent(
+                source,
+                choice,
+                amt,
+                MagicChainEventFactory.ExileCard
+            );
         }
     },
     TapSelf("\\{T\\}") {
@@ -133,7 +155,7 @@ public enum MagicCostEvent {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             final int amt = ARG.amount(arg);
             final String chosen = MagicTargetFilterFactory.toSingular(ARG.any(arg));
-            final MagicTargetFilter<MagicPermanent> untapped = MagicTargetFilterFactory.untapped(MagicTargetFilterFactory.singlePermanent(chosen));
+            final MagicTargetFilter<MagicPermanent> untapped = MagicTargetFilterFactory.untapped(MagicTargetFilterFactory.Permanent(chosen));
             final MagicTargetFilter<MagicPermanent> filter = arg.group("another") != null ? 
                 new MagicOtherPermanentTargetFilter(untapped, (MagicPermanent)source) :
                 untapped;
@@ -145,7 +167,7 @@ public enum MagicCostEvent {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             final int amt = ARG.amount(arg);
             final String chosen = MagicTargetFilterFactory.toSingular(ARG.any(arg));
-            final MagicTargetFilter<MagicPermanent> tapped = MagicTargetFilterFactory.tapped(MagicTargetFilterFactory.singlePermanent(chosen));
+            final MagicTargetFilter<MagicPermanent> tapped = MagicTargetFilterFactory.tapped(MagicTargetFilterFactory.Permanent(chosen));
             final MagicTargetFilter<MagicPermanent> filter = arg.group("another") != null ? 
                 new MagicOtherPermanentTargetFilter(tapped, (MagicPermanent)source) :
                 tapped;

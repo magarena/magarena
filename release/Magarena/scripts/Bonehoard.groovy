@@ -1,13 +1,8 @@
 [
-    new MagicStatic(
-        MagicLayer.ModPT,
-        MagicTargetFilterFactory.CREATURE) {
+    new MagicStatic(MagicLayer.ModPT, CREATURE) {
         @Override
         public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
-            final MagicGame game = source.getGame();
-            final int amount = game.filterCards(
-                        source.getController(),
-                        MagicTargetFilterFactory.CREATURE_CARD_FROM_ALL_GRAVEYARDS).size();
+            final int amount = CREATURE_CARD_FROM_ALL_GRAVEYARDS.filter(source).size();
             pt.add(amount,amount);
         }
         @Override

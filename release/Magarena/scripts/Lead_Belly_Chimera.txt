@@ -1,6 +1,6 @@
 name=Lead-Belly Chimera
-image=http://mtgimage.com/card/lead-belly%20chimera.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vi/148.jpg
+value=3.406
 rarity=U
 type=Artifact,Creature
 subtype=Chimera
@@ -9,4 +9,4 @@ pt=2/2
 ability=Trample
 timing=main
 requires_groovy_code
-oracle=Trample. Sacrifice Lead-Belly Chimera: Put a +2/+2 counter on target Chimera creature. It gains trample.
+oracle=Trample\nSacrifice Lead-Belly Chimera: Put a +2/+2 counter on target Chimera creature. It gains trample.

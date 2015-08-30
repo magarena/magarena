@@ -1,5 +1,5 @@
 name=Deus of Calamity
-image=http://mtgimage.com/card/deus%20of%20calamity.jpg
+image=http://magiccards.info/scans/en/ddl/54.jpg
 value=3.868
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=6/6
 ability=trample
 timing=main
 requires_groovy_code
-oracle=Trample. Whenever Deus of Calamity deals 6 or more damage to an opponent, destroy target land that player controls.
+oracle=Trample\nWhenever Deus of Calamity deals 6 or more damage to an opponent, destroy target land that player controls.

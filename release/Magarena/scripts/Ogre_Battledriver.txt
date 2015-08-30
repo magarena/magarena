@@ -1,11 +1,11 @@
 name=Ogre Battledriver
-image=http://mtgimage.com/card/ogre%20battledriver.jpg
+image=http://magiccards.info/scans/en/ddn/16.jpg
 value=3.636
 rarity=R
 type=Creature
 subtype=Ogre,Warrior
 cost={2}{R}{R}
 pt=3/3
+ability=Whenever another creature enters the battlefield under your control, that creature gets +2/+0 and gains haste until end of turn.
 timing=main
-requires_groovy_code
 oracle=Whenever another creature enters the battlefield under your control, that creature gets +2/+0 and gains haste until end of turn.

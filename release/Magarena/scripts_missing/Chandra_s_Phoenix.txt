@@ -1,6 +1,6 @@
 name=Chandra's Phoenix
-image=http://mtgimage.com/card/chandra%27s%20phoenix.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m14/134.jpg
+value=3.709
 rarity=R
 type=Creature
 subtype=Phoenix
@@ -10,4 +10,4 @@ ability=Flying;\
         Haste;\
         Whenever an opponent is dealt damage by a red instant or sorcery spell you control or by a red planeswalker you control, return SN from your graveyard to your hand.
 timing=main
-oracle=Flying. Haste. Whenever an opponent is dealt damage by a red instant or sorcery spell you control or by a red planeswalker you control, return Chandra's Phoenix from your graveyard to your hand.
+oracle=Flying\nHaste\nWhenever an opponent is dealt damage by a red instant or sorcery spell you control or by a red planeswalker you control, return Chandra's Phoenix from your graveyard to your hand.

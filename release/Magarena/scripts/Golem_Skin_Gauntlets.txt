@@ -1,0 +1,11 @@
+name=Golem-Skin Gauntlets
+image=http://magiccards.info/scans/en/mi/181.jpg
+value=3.275
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={1}
+ability=Equip {2}
+timing=equipment
+requires_groovy_code
+oracle=Equipped creature gets +1/+0 for each Equipment attached to it.\nEquip {2}

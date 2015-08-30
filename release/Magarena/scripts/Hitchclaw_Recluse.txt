@@ -1,0 +1,11 @@
+name=Hitchclaw Recluse
+image=http://magiccards.info/scans/en/ori/181.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Spider
+cost={2}{G}
+pt=1/4
+ability=Reach
+timing=main
+oracle=Reach

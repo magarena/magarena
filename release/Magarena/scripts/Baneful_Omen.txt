@@ -1,0 +1,9 @@
+name=Baneful Omen
+image=http://magiccards.info/scans/en/roe/96.jpg
+value=3.641
+rarity=R
+type=Enchantment
+cost={4}{B}{B}{B}
+timing=enchantment
+requires_groovy_code
+oracle=At the beginning of your end step, you may reveal the top card of your library. If you do, each opponent loses life equal to that card's converted mana cost.

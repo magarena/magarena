@@ -1,5 +1,5 @@
 name=Murder
-image=http://mtgimage.com/card/murder.jpg
+image=http://magiccards.info/scans/en/m13/101.jpg
 value=3.684
 removal=5
 rarity=C

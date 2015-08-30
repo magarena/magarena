@@ -1,5 +1,5 @@
 name=Walker of the Grove
-image=http://mtgimage.com/card/walker%20of%20the%20grove.jpg
+image=http://magiccards.info/scans/en/c13/175.jpg
 value=3.667
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={6}{G}{G}
 pt=7/7
 ability=When SN leaves the battlefield, put a 4/4 green Elemental creature token onto the battlefield.;evoke {4}{G}
 timing=main
-oracle=When Walker of the Grove leaves the battlefield, put a 4/4 green Elemental creature token onto the battlefield. Evoke {4}{G}
+oracle=When Walker of the Grove leaves the battlefield, put a 4/4 green Elemental creature token onto the battlefield.\nEvoke {4}{G}

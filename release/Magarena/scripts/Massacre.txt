@@ -1,10 +1,11 @@
 name=Massacre
-image=http://mtgimage.com/card/massacre.jpg
+image=http://magiccards.info/scans/en/ne/58.jpg
 value=4.438
 rarity=U
 type=Sorcery
 cost={2}{B}{B}
+ability=Cast SN with AI only if an opponent controls a creature.
 effect=All creatures get -2/-2 until end of turn.
 timing=main
 requires_groovy_code
-oracle=If an opponent controls a Plains and you control a Swamp, you may cast Massacre without paying its mana cost. All creatures get -2/-2 until end of turn.
+oracle=If an opponent controls a Plains and you control a Swamp, you may cast Massacre without paying its mana cost.\nAll creatures get -2/-2 until end of turn.

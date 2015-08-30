@@ -1,12 +1,12 @@
 name=Air Servant
-image=http://mtgimage.com/card/air%20servant.jpg
+image=http://magiccards.info/scans/en/cns/90.jpg
 value=3.600
 rarity=U
 type=Creature
 subtype=Elemental
 cost={4}{U}
 pt=4/3
-ability=flying;\
+ability=Flying;\
         {2}{U}: Tap target creature with flying.
 timing=main
-oracle=Flying. {2}{U}: Tap target creature with flying.
+oracle=Flying\n{2}{U}: Tap target creature with flying.

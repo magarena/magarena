@@ -1,5 +1,5 @@
 name=Stromkirk Noble
-image=http://mtgimage.com/card/stromkirk%20noble.jpg
+image=http://magiccards.info/scans/en/isd/164.jpg
 value=3.845
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=SN can't be blocked by Humans.;\
         Whenever SN deals combat damage to a player, put a +1/+1 counter on SN.
 timing=main
-oracle=Stromkirk Noble can't be blocked by Humans. Whenever Stromkirk Noble deals combat damage to a player, put a +1/+1 counter on it.
+oracle=Stromkirk Noble can't be blocked by Humans.\nWhenever Stromkirk Noble deals combat damage to a player, put a +1/+1 counter on it.

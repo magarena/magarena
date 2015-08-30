@@ -1,6 +1,6 @@
 name=Wind Shear
-image=http://mtgimage.com/card/wind%20shear.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vi/75.jpg
+value=3.243
 rarity=U
 type=Instant
 cost={2}{G}

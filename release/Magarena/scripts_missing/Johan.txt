@@ -1,6 +1,6 @@
 name=Johan
-image=http://mtgimage.com/card/johan.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ch/112.jpg
+value=3.284
 rarity=R
 type=Legendary,Creature
 subtype=Human,Wizard

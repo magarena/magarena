@@ -1,5 +1,5 @@
 name=Winds of Rath
-image=http://mtgimage.com/card/winds%20of%20rath.jpg
+image=http://magiccards.info/scans/en/vma/53.jpg
 value=2.500
 rarity=R
 type=Sorcery

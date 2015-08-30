@@ -1,5 +1,5 @@
 name=Riptide Biologist
-image=http://mtgimage.com/card/riptide%20biologist.jpg
+image=http://magiccards.info/scans/en/on/106.jpg
 value=1.911
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/2
 ability=Protection from Beasts;\
         Morph {2}{U}
 timing=main
-oracle=Protection from Beasts. Morph {2}{U}
+oracle=Protection from Beasts\nMorph {2}{U}

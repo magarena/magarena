@@ -1,6 +1,6 @@
 name=Bamboozle
-image=http://mtgimage.com/card/bamboozle.jpg
-value=2.500
+image=http://magiccards.info/scans/en/od/68.jpg
+value=3.109
 rarity=U
 type=Sorcery
 cost={2}{U}

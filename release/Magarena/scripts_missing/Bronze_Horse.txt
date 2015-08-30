@@ -1,12 +1,12 @@
 name=Bronze Horse
-image=http://mtgimage.com/card/bronze%20horse.jpg
-value=2.500
-rarity=R
+image=http://magiccards.info/scans/en/me4/186.jpg
+value=2.900
+rarity=U
 type=Artifact,Creature
 subtype=Horse
 cost={7}
 pt=4/4
 ability=Trample;\
         As long as you control another creature, prevent all damage that would be dealt to SN by spells that target it.
-timing=main
-oracle=Trample. As long as you control another creature, prevent all damage that would be dealt to Bronze Horse by spells that target it.
+timing=artifact
+oracle=Trample\nAs long as you control another creature, prevent all damage that would be dealt to Bronze Horse by spells that target it.

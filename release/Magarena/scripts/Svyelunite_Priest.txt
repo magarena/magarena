@@ -1,5 +1,5 @@
 name=Svyelunite Priest
-image=http://mtgimage.com/card/svyelunite%20priest.jpg
+image=http://magiccards.info/scans/en/fe/53.jpg
 value=1.729
 rarity=U
 type=Creature

@@ -1,6 +1,6 @@
 name=Quillmane Baku
-image=http://mtgimage.com/card/quillmane%20baku.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bok/48.jpg
+value=1.518
 rarity=C
 type=Creature
 subtype=Spirit
@@ -9,4 +9,4 @@ pt=3/3
 ability=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on SN.;\
         {1}, {T}, Remove X ki counters from SN: Return target creature with converted mana cost X or less to its owner's hand.
 timing=main
-oracle=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on Quillmane Baku. {1}, {T}, Remove X ki counters from Quillmane Baku: Return target creature with converted mana cost X or less to its owner's hand.
+oracle=Whenever you cast a Spirit or Arcane spell, you may put a ki counter on Quillmane Baku.\n{1}, {T}, Remove X ki counters from Quillmane Baku: Return target creature with converted mana cost X or less to its owner's hand.

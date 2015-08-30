@@ -1,0 +1,8 @@
+name=0/1 black Insect creature token
+token=Insect
+image=http://cdn.staticneo.com/w/mtg/d/df/Insect3.jpg
+value=1
+type=Creature
+subtype=Insect
+color=b
+pt=0/1

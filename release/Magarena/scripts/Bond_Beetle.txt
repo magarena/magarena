@@ -1,5 +1,5 @@
 name=Bond Beetle
-image=http://mtgimage.com/card/bond%20beetle.jpg
+image=http://magiccards.info/scans/en/m13/161.jpg
 value=3.615
 rarity=C
 type=Creature

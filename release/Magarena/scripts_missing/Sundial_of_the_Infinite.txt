@@ -1,9 +1,9 @@
 name=Sundial of the Infinite
-image=http://mtgimage.com/card/sundial%20of%20the%20infinite.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m12/218.jpg
+value=4.221
 rarity=R
 type=Artifact
 cost={2}
 ability={1}, {T}: End the turn. Activate this ability only during your turn.
-timing=main
+timing=artifact
 oracle={1}, {T}: End the turn. Activate this ability only during your turn.

@@ -1,6 +1,6 @@
 name=Intimidation Bolt
-image=http://mtgimage.com/card/intimidation%20bolt.jpg
-value=2.500
+image=http://magiccards.info/scans/en/arb/99.jpg
+value=3.430
 rarity=U
 type=Instant
 cost={1}{R}{W}

@@ -1,5 +1,5 @@
 name=Phyrexian Obliterator
-image=http://mtgimage.com/card/phyrexian%20obliterator.jpg
+image=http://magiccards.info/scans/en/nph/68.jpg
 value=4.354
 rarity=M
 type=Creature
@@ -9,4 +9,4 @@ pt=5/5
 ability=trample
 timing=main
 requires_groovy_code
-oracle=Trample. Whenever a source deals damage to Phyrexian Obliterator, that source's controller sacrifices that many permanents.
+oracle=Trample\nWhenever a source deals damage to Phyrexian Obliterator, that source's controller sacrifices that many permanents.

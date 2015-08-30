@@ -1,9 +1,9 @@
 name=Sanctimony
-image=http://mtgimage.com/card/sanctimony.jpg
-value=2.500
+image=http://magiccards.info/scans/en/8e/42.jpg
+value=3.533
 rarity=U
 type=Enchantment
 cost={1}{W}
 ability=Whenever an opponent taps a Mountain for mana, you may gain 1 life.
-timing=main
+timing=enchantment
 oracle=Whenever an opponent taps a Mountain for mana, you may gain 1 life.

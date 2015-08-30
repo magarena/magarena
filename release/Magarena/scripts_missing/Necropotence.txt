@@ -1,11 +1,11 @@
 name=Necropotence
-image=http://mtgimage.com/card/necropotence.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vma/130.jpg
+value=4.833
 rarity=R
 type=Enchantment
 cost={B}{B}{B}
 ability=Skip your draw step.;\
         Whenever you discard a card, exile that card from your graveyard.;\
         Pay 1 life: Exile the top card of your library face down. Put that card into your hand at the beginning of your next end step.
-timing=main
-oracle=Skip your draw step. Whenever you discard a card, exile that card from your graveyard. Pay 1 life: Exile the top card of your library face down. Put that card into your hand at the beginning of your next end step.
+timing=enchantment
+oracle=Skip your draw step.\nWhenever you discard a card, exile that card from your graveyard.\nPay 1 life: Exile the top card of your library face down. Put that card into your hand at the beginning of your next end step.

@@ -1,9 +1,9 @@
 name=Skybind
-image=http://mtgimage.com/card/skybind.jpg
-value=2.500
+image=http://magiccards.info/scans/en/jou/25.jpg
+value=2.773
 rarity=R
 type=Enchantment
 cost={3}{W}{W}
 ability=Whenever SN or another enchantment enters the battlefield under your control, exile target nonenchantment permanent. Return that card to the battlefield under its owner's control at the beginning of the next end step.
-timing=main
+timing=enchantment
 oracle=Constellation — Whenever Skybind or another enchantment enters the battlefield under your control, exile target nonenchantment permanent. Return that card to the battlefield under its owner's control at the beginning of the next end step.

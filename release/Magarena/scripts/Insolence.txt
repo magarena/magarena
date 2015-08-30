@@ -1,5 +1,5 @@
 name=Insolence
-image=http://mtgimage.com/card/insolence.jpg
+image=http://magiccards.info/scans/en/ps/63.jpg
 value=2.357
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={2}{R}
 enchant=default,neg creature
 timing=enchantment
 requires_groovy_code
-oracle=Enchant creature. Whenever enchanted creature becomes tapped, Insolence deals 2 damage to that creature's controller.
+oracle=Enchant creature\nWhenever enchanted creature becomes tapped, Insolence deals 2 damage to that creature's controller.

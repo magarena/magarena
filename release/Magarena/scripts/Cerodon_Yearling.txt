@@ -1,5 +1,5 @@
 name=Cerodon Yearling
-image=http://mtgimage.com/card/cerodon%20yearling.jpg
+image=http://magiccards.info/scans/en/pch/86.jpg
 value=3.841
 rarity=C
 type=Creature

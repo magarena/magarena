@@ -1,5 +1,5 @@
 name=Skullmulcher
-image=http://mtgimage.com/card/skullmulcher.jpg
+image=http://magiccards.info/scans/en/ala/148.jpg
 value=3.153
 rarity=R
 type=Creature
@@ -8,4 +8,4 @@ cost={4}{G}
 pt=3/3
 timing=main
 requires_groovy_code
-oracle=Devour 1. When Skullmulcher enters the battlefield, draw a card for each creature it devoured.
+oracle=Devour 1\nWhen Skullmulcher enters the battlefield, draw a card for each creature it devoured.

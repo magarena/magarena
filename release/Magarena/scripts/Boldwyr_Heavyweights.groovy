@@ -19,7 +19,7 @@
                 game.addEvent(new MagicSearchOntoBattlefieldEvent(
                     event,
                     new MagicFromCardFilterChoice(
-                        MagicTargetFilterFactory.CREATURE_CARD_FROM_LIBRARY,
+                        CREATURE_CARD_FROM_LIBRARY,
                         1, 
                         true, 
                         "to put onto the battlefield"

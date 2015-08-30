@@ -1,5 +1,5 @@
 name=Vaevictis Asmadi
-image=http://mtgimage.com/card/vaevictis%20asmadi.jpg
+image=http://magiccards.info/scans/en/me3/185.jpg
 value=3.578
 rarity=R
 type=Legendary,Creature
@@ -12,4 +12,4 @@ ability=flying;\
         {G}:SN gets +1/+0 until end of turn.;\
         At the beginning of your upkeep, you may pay {B}{R}{G}. If you don't, sacrifice SN.
 timing=main
-oracle=Flying. At the beginning of your upkeep, sacrifice Vaevictis Asmadi unless you pay {B}{R}{G}. {B}: Vaevictis Asmadi gets +1/+0 until end of turn. {R}: Vaevictis Asmadi gets +1/+0 until end of turn. {G}: Vaevictis Asmadi gets +1/+0 until end of turn.
+oracle=Flying\nAt the beginning of your upkeep, sacrifice Vaevictis Asmadi unless you pay {B}{R}{G}.\n{B}: Vaevictis Asmadi gets +1/+0 until end of turn.\n{R}: Vaevictis Asmadi gets +1/+0 until end of turn.\n{G}: Vaevictis Asmadi gets +1/+0 until end of turn.

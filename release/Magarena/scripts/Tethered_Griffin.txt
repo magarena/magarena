@@ -1,12 +1,12 @@
 name=Tethered Griffin
-image=http://mtgimage.com/card/tethered%20griffin.jpg
+image=http://magiccards.info/scans/en/ud/21.jpg
 value=3.840
 rarity=R
 type=Creature
 subtype=Griffin
 cost={W}
 pt=2/3
-ability=Flying
+ability=Flying;\
+        When you control no enchantments, sacrifice SN.
 timing=main
-requires_groovy_code
-oracle=Flying. When you control no enchantments, sacrifice Tethered Griffin.
+oracle=Flying\nWhen you control no enchantments, sacrifice Tethered Griffin.

@@ -1,5 +1,5 @@
 name=Cliffrunner Behemoth
-image=http://mtgimage.com/card/cliffrunner%20behemoth.jpg
+image=http://magiccards.info/scans/en/cfx/79.jpg
 value=3.414
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=5/3
 ability=SN has haste as long as you control a red permanent.;\
         SN has lifelink as long as you control a white permanent.
 timing=main
-oracle=Cliffrunner Behemoth has haste as long as you control a red permanent. Cliffrunner Behemoth has lifelink as long as you control a white permanent.
+oracle=Cliffrunner Behemoth has haste as long as you control a red permanent.\nCliffrunner Behemoth has lifelink as long as you control a white permanent.

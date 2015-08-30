@@ -1,0 +1,11 @@
+name=Giant Caterpillar
+image=http://magiccards.info/scans/en/mm/249.jpg
+value=2.744
+rarity=C
+type=Creature
+subtype=Insect
+cost={3}{G}
+pt=3/3
+timing=main
+requires_groovy_code
+oracle={G}, Sacrifice Giant Caterpillar: Put a 1/1 green Insect creature token with flying named Butterfly onto the battlefield at the beginning of the next end step.

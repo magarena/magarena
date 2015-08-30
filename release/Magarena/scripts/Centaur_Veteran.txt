@@ -1,5 +1,5 @@
 name=Centaur Veteran
-image=http://mtgimage.com/card/centaur%20veteran.jpg
+image=http://magiccards.info/scans/en/tr/123.jpg
 value=1.514
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/3
 ability=trample;\
         {G}, Discard a card: Regenerate SN.
 timing=main
-oracle=Trample. {G}, Discard a card: Regenerate Centaur Veteran.
+oracle=Trample\n{G}, Discard a card: Regenerate Centaur Veteran.

@@ -1,6 +1,6 @@
 name=Prismwake Merrow
-image=http://mtgimage.com/card/prismwake%20merrow.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/46.jpg
+value=2.111
 rarity=C
 type=Creature
 subtype=Merfolk,Wizard
@@ -9,4 +9,4 @@ pt=2/1
 ability=Flash;\
         When SN enters the battlefield, target permanent becomes the color or colors of your choice until end of turn.
 timing=main
-oracle=Flash. When Prismwake Merrow enters the battlefield, target permanent becomes the color or colors of your choice until end of turn.
+oracle=Flash\nWhen Prismwake Merrow enters the battlefield, target permanent becomes the color or colors of your choice until end of turn.

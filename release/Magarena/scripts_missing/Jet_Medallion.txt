@@ -1,9 +1,9 @@
 name=Jet Medallion
-image=http://mtgimage.com/card/jet%20medallion.jpg
+image=http://magiccards.info/scans/en/c14/243.jpg
 value=2.500
 rarity=R
 type=Artifact
 cost={2}
 ability=Black spells you cast cost {1} less to cast.
-timing=main
+timing=artifact
 oracle=Black spells you cast cost {1} less to cast.

@@ -1,10 +1,10 @@
 name=Slingbow Trap
-image=http://mtgimage.com/card/slingbow%20trap.jpg
-value=2.500
+image=http://magiccards.info/scans/en/wwk/111.jpg
+value=2.051
 rarity=U
 type=Instant
 subtype=Trap
 cost={3}{G}
 effect=If a black creature with flying is attacking, you may pay {G} rather than pay SN's mana cost.~Destroy target attacking creature with flying.
 timing=removal
-oracle=If a black creature with flying is attacking, you may pay {G} rather than pay Slingbow Trap's mana cost. Destroy target attacking creature with flying.
+oracle=If a black creature with flying is attacking, you may pay {G} rather than pay Slingbow Trap's mana cost.\nDestroy target attacking creature with flying.

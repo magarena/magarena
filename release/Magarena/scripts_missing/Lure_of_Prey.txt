@@ -1,9 +1,9 @@
 name=Lure of Prey
-image=http://mtgimage.com/card/lure%20of%20prey.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/125.jpg
+value=4.198
 rarity=R
 type=Instant
 cost={2}{G}{G}
 effect=Cast SN only if an opponent cast a creature spell this turn.~You may put a green creature card from your hand onto the battlefield.
 timing=removal
-oracle=Cast Lure of Prey only if an opponent cast a creature spell this turn. You may put a green creature card from your hand onto the battlefield.
+oracle=Cast Lure of Prey only if an opponent cast a creature spell this turn.\nYou may put a green creature card from your hand onto the battlefield.

@@ -1,5 +1,5 @@
 name=Urborg Volcano
-image=http://mtgimage.com/card/urborg%20volcano.jpg
+image=http://magiccards.info/scans/en/8e/327.jpg
 value=3.671
 rarity=U
 type=Land
@@ -7,4 +7,4 @@ mana=b3r3
 ability={T}: Add {B} or {R} to your mana pool.;\
         SN enters the battlefield tapped.
 timing=tapland
-oracle=Urborg Volcano enters the battlefield tapped. {T}: Add {B} or {R} to your mana pool.
+oracle=Urborg Volcano enters the battlefield tapped.\n{T}: Add {B} or {R} to your mana pool.

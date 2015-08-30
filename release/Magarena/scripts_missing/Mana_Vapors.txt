@@ -1,9 +1,0 @@
-name=Mana Vapors
-image=http://mtgimage.com/card/mana%20vapors.jpg
-value=2.500
-rarity=U
-type=Sorcery
-cost={1}{U}
-effect=Lands target player controls don't untap during his or her next untap step.
-timing=main
-oracle=Lands target player controls don't untap during his or her next untap step.

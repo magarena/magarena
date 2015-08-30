@@ -1,9 +1,9 @@
 name=Chill
-image=http://mtgimage.com/card/chill.jpg
-value=2.500
+image=http://magiccards.info/scans/en/6e/60.jpg
+value=4.180
 rarity=U
 type=Enchantment
 cost={1}{U}
 ability=Red spells cost {2} more to cast.
-timing=main
+timing=enchantment
 oracle=Red spells cost {2} more to cast.

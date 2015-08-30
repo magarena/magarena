@@ -1,5 +1,5 @@
 name=Sell-Sword Brute
-image=http://mtgimage.com/card/sell-sword%20brute.jpg
+image=http://magiccards.info/scans/en/rav/142.jpg
 value=1.293
 rarity=C
 type=Creature

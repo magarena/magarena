@@ -1,12 +1,12 @@
 name=Crimson Hellkite
-image=http://mtgimage.com/card/crimson%20hellkite.jpg
-value=2.500
+image=http://magiccards.info/scans/en/7e/178.jpg
+value=3.414
 rarity=R
 type=Creature
 subtype=Dragon
 cost={6}{R}{R}{R}
 pt=6/6
 ability=Flying;\
-        {X}, {T}: SN deals X damage to target creature. Spend only red mana this way.
+        {X}, {T}: SN deals X damage to target creature. Spend only red mana on X.
 timing=main
-oracle=Flying. {X}, {T}: Crimson Hellkite deals X damage to target creature. Spend only red mana this way.
+oracle=Flying\n{X}, {T}: Crimson Hellkite deals X damage to target creature. Spend only red mana on X.

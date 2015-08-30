@@ -1,5 +1,5 @@
 name=Thalakos Mistfolk
-image=http://mtgimage.com/card/thalakos%20mistfolk.jpg
+image=http://magiccards.info/scans/en/tp/93.jpg
 value=3.103
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=shadow;\
         {U}: Put SN on top of its owner's library.
 timing=main
-oracle=Shadow. {U}: Put Thalakos Mistfolk on top of its owner's library.
+oracle=Shadow\n{U}: Put Thalakos Mistfolk on top of its owner's library.

@@ -1,11 +1,11 @@
 name=Overgrowth
-image=http://mtgimage.com/card/overgrowth.jpg
-value=2.500
+image=http://magiccards.info/scans/en/10e/283.jpg
+value=3.854
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{G}
 ability=Enchant land;\
         Whenever enchanted land is tapped for mana, its controller adds {G}{G} to his or her mana pool.
-timing=main
-oracle=Enchant land. Whenever enchanted land is tapped for mana, its controller adds {G}{G} to his or her mana pool.
+timing=aura
+oracle=Enchant land\nWhenever enchanted land is tapped for mana, its controller adds {G}{G} to his or her mana pool.

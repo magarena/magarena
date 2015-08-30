@@ -1,5 +1,5 @@
 name=Kindle
-image=http://mtgimage.com/card/kindle.jpg
+image=http://magiccards.info/scans/en/vma/176.jpg
 value=3.500
 rarity=C
 type=Instant

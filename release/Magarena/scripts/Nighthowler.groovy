@@ -2,7 +2,7 @@
     new MagicStatic(MagicLayer.ModPT) {
         @Override
         public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
-            final int size = source.getGame().filterCards(MagicTargetFilterFactory.CREATURE_CARD_FROM_ALL_GRAVEYARDS).size();                             
+            final int size = CREATURE_CARD_FROM_ALL_GRAVEYARDS.filter(source).size();
             pt.add(size,size);
         }
         @Override

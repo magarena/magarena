@@ -1,5 +1,5 @@
 name=Festering Evil
-image=http://mtgimage.com/card/festering%20evil.jpg
+image=http://magiccards.info/scans/en/wl/10.jpg
 value=3.300
 rarity=U
 type=Enchantment
@@ -7,4 +7,4 @@ cost={3}{B}{B}
 ability=At the beginning of your upkeep, SN deals 1 damage to each creature and each player.;\
         {B}{B}, Sacrifice SN: SN deals 3 damage to each creature and each player.
 timing=enchantment
-oracle=At the beginning of your upkeep, Festering Evil deals 1 damage to each creature and each player. {B}{B}, Sacrifice Festering Evil: Festering Evil deals 3 damage to each creature and each player.
+oracle=At the beginning of your upkeep, Festering Evil deals 1 damage to each creature and each player.\n{B}{B}, Sacrifice Festering Evil: Festering Evil deals 3 damage to each creature and each player.

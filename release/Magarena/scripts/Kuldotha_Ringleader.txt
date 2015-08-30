@@ -1,5 +1,5 @@
 name=Kuldotha Ringleader
-image=http://mtgimage.com/card/kuldotha%20ringleader.jpg
+image=http://magiccards.info/scans/en/mbs/70.jpg
 value=2.844
 ability=battle cry;SN attacks each turn if able.
 rarity=C
@@ -8,4 +8,4 @@ subtype=Giant,Berserker
 cost={4}{R}
 pt=4/4
 timing=fmain
-oracle=Battle cry. Kuldotha Ringleader attacks each turn if able.
+oracle=Battle cry\nKuldotha Ringleader attacks each turn if able.

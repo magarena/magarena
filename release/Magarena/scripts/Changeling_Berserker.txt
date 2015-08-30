@@ -1,5 +1,5 @@
 name=Changeling Berserker
-image=http://mtgimage.com/card/changeling%20berserker.jpg
+image=http://magiccards.info/scans/en/lw/160.jpg
 value=3.591
 removal=2
 rarity=U
@@ -7,6 +7,9 @@ type=Creature
 subtype=Shapeshifter
 cost={3}{R}
 pt=5/3
-ability=changeling;haste;champion creature
+ability=Changeling;\
+        Haste;\
+        Champion a creature;\
+        Cast SN with AI only if you control a creature
 timing=main
-oracle=Changeling. Haste. Champion a creature
+oracle=Changeling\nHaste\nChampion a creature

@@ -1,5 +1,5 @@
 name=Bog Glider
-image=http://mtgimage.com/card/bog%20glider.jpg
+image=http://magiccards.info/scans/en/pr/58.jpg
 value=2.050
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying;\
         {T}, Sacrifice a land: Search your library for a Mercenary permanent card with converted mana cost 2 or less and put it onto the battlefield. Then shuffle your library.
 timing=main
-oracle=Flying. {T}, Sacrifice a land: Search your library for a Mercenary permanent card with converted mana cost 2 or less and put it onto the battlefield. Then shuffle your library.
+oracle=Flying\n{T}, Sacrifice a land: Search your library for a Mercenary permanent card with converted mana cost 2 or less and put it onto the battlefield. Then shuffle your library.

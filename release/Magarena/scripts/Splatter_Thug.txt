@@ -1,5 +1,5 @@
 name=Splatter Thug
-image=http://mtgimage.com/card/splatter%20thug.jpg
+image=http://magiccards.info/scans/en/rtr/105.jpg
 value=3.074
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{R}
 pt=2/2
 ability=first strike;unleash
 timing=main
-oracle=First strike. Unleash
+oracle=First strike\nUnleash

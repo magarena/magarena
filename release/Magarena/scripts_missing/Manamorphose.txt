@@ -1,9 +1,9 @@
 name=Manamorphose
-image=http://mtgimage.com/card/manamorphose.jpg
-value=2.500
-rarity=C
+image=http://magiccards.info/scans/en/mma/191.jpg
+value=4.561
+rarity=U
 type=Instant
 cost={1}{R/G}
 effect=Add two mana in any combination of colors to your mana pool.~Draw a card.
 timing=removal
-oracle=Add two mana in any combination of colors to your mana pool. Draw a card.
+oracle=Add two mana in any combination of colors to your mana pool.\nDraw a card.

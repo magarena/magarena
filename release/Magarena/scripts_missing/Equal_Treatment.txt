@@ -1,9 +1,9 @@
 name=Equal Treatment
-image=http://mtgimage.com/card/equal%20treatment.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tr/4.jpg
+value=3.667
 rarity=U
 type=Instant
 cost={1}{W}
 effect=If any source would deal 1 or more damage to a creature or player this turn, it deals 2 damage to that creature or player instead.~Draw a card.
 timing=removal
-oracle=If any source would deal 1 or more damage to a creature or player this turn, it deals 2 damage to that creature or player instead. Draw a card.
+oracle=If any source would deal 1 or more damage to a creature or player this turn, it deals 2 damage to that creature or player instead.\nDraw a card.

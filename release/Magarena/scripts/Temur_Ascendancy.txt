@@ -1,5 +1,5 @@
 name=Temur Ascendancy
-image=http://mtgimage.com/card/temur%20ascendancy.jpg
+image=http://magiccards.info/scans/en/ktk/207.jpg
 value=3.750
 rarity=R
 type=Enchantment
@@ -7,4 +7,4 @@ cost={G}{U}{R}
 ability=Creatures you control have haste.;\
         Whenever a creature with power 4 or greater enters the battlefield under your control, you may draw a card.
 timing=main
-oracle=Creatures you control have haste. Whenever a creature with power 4 or greater enters the battlefield under your control, you may draw a card.
+oracle=Creatures you control have haste.\nWhenever a creature with power 4 or greater enters the battlefield under your control, you may draw a card.

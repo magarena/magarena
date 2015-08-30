@@ -1,5 +1,5 @@
 name=Titan Forge
-image=http://mtgimage.com/card/titan%20forge.jpg
+image=http://magiccards.info/scans/en/mbs/141.jpg
 value=3.485
 rarity=R
 type=Artifact
@@ -7,4 +7,4 @@ cost={3}
 ability={3},{T}: Put a charge counter on SN.;\
         {T},Remove three charge counters from SN: Put a 9/9 colorless Golem artifact creature token onto the battlefield.
 timing=artifact
-oracle={3}, {T}: Put a charge counter on Titan Forge. {T}, Remove three charge counters from Titan Forge: Put a 9/9 colorless Golem artifact creature token onto the battlefield.
+oracle={3}, {T}: Put a charge counter on Titan Forge.\n{T}, Remove three charge counters from Titan Forge: Put a 9/9 colorless Golem artifact creature token onto the battlefield.

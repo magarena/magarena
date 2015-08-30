@@ -1,6 +1,6 @@
 name=Diaochan, Artful Beauty
-image=http://mtgimage.com/card/diaochan%2C%20artful%20beauty.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cma/5.jpg
+value=3.500
 rarity=R
 type=Legendary,Creature
 subtype=Human,Advisor

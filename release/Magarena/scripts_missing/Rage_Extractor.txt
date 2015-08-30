@@ -1,9 +1,9 @@
 name=Rage Extractor
-image=http://mtgimage.com/card/rage%20extractor.jpg
-value=2.500
+image=http://magiccards.info/scans/en/nph/91.jpg
+value=3.572
 rarity=U
 type=Artifact
 cost={4}{R/P}
 ability=Whenever you cast a spell with {P} in its mana cost, SN deals damage equal to that spell's converted mana cost to target creature or player.
-timing=main
+timing=artifact
 oracle=Whenever you cast a spell with {P} in its mana cost, Rage Extractor deals damage equal to that spell's converted mana cost to target creature or player.

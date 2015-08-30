@@ -1,9 +1,9 @@
 name=Bad River
-image=http://mtgimage.com/card/bad%20river.jpg
+image=http://magiccards.info/scans/en/vma/290.jpg
 value=3.000
 rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\
         {T},Sacrifice SN: Search your library for an Island or Swamp card and put it onto the battlefield. Then shuffle your library.
 timing=land
-oracle=Bad River enters the battlefield tapped. {T}, Sacrifice Bad River: Search your library for an Island or Swamp card and put it onto the battlefield. Then shuffle your library.
+oracle=Bad River enters the battlefield tapped.\n{T}, Sacrifice Bad River: Search your library for an Island or Swamp card and put it onto the battlefield. Then shuffle your library.

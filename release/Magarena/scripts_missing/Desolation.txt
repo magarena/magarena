@@ -1,9 +1,9 @@
 name=Desolation
-image=http://mtgimage.com/card/desolation.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vi/8.jpg
+value=3.583
 rarity=U
 type=Enchantment
 cost={1}{B}{B}
 ability=At the beginning of each end step, each player who tapped a land for mana this turn sacrifices a land. SN deals 2 damage to each player who sacrificed a Plains this way.
-timing=main
+timing=enchantment
 oracle=At the beginning of each end step, each player who tapped a land for mana this turn sacrifices a land. Desolation deals 2 damage to each player who sacrificed a Plains this way.

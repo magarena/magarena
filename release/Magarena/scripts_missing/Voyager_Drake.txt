@@ -1,6 +1,6 @@
 name=Voyager Drake
-image=http://mtgimage.com/card/voyager%20drake.jpg
-value=2.500
+image=http://magiccards.info/scans/en/wwk/45.jpg
+value=3.009
 rarity=U
 type=Creature
 subtype=Drake
@@ -10,4 +10,4 @@ ability=Multikicker {U};\
         Flying;\
         When SN enters the battlefield, up to X target creatures gain flying until end of turn, where X is the number of times SN was kicked.
 timing=main
-oracle=Multikicker {U}. Flying. When Voyager Drake enters the battlefield, up to X target creatures gain flying until end of turn, where X is the number of times Voyager Drake was kicked.
+oracle=Multikicker {U}\nFlying\nWhen Voyager Drake enters the battlefield, up to X target creatures gain flying until end of turn, where X is the number of times Voyager Drake was kicked.

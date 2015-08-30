@@ -1,9 +1,9 @@
 name=Wild Pair
-image=http://mtgimage.com/card/wild%20pair.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pc/144.jpg
+value=4.349
 rarity=R
 type=Enchantment
 cost={4}{G}{G}
 ability=Whenever a creature enters the battlefield, if you cast it from your hand, you may search your library for a creature card with the same total power and toughness and put it onto the battlefield. If you do, shuffle your library.
-timing=main
+timing=enchantment
 oracle=Whenever a creature enters the battlefield, if you cast it from your hand, you may search your library for a creature card with the same total power and toughness and put it onto the battlefield. If you do, shuffle your library.

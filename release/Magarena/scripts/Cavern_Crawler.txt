@@ -1,5 +1,5 @@
 name=Cavern Crawler
-image=http://mtgimage.com/card/cavern%20crawler.jpg
+image=http://magiccards.info/scans/en/mm/181.jpg
 value=1.471
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={2}{R}
 pt=0/3
 ability=mountainwalk;{R}: SN gets +1/-1 until end of turn.
 timing=main
-oracle=Mountainwalk. {R}: Cavern Crawler gets +1/-1 until end of turn.
+oracle=Mountainwalk\n{R}: Cavern Crawler gets +1/-1 until end of turn.

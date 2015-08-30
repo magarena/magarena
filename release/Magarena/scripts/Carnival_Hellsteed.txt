@@ -1,5 +1,5 @@
 name=Carnival Hellsteed
-image=http://mtgimage.com/card/carnival%20hellsteed.jpg
+image=http://magiccards.info/scans/en/rtr/147.jpg
 value=3.422
 rarity=R
 type=Creature
@@ -8,4 +8,4 @@ cost={4}{B}{R}
 pt=5/4
 ability=first strike;haste;unleash
 timing=main
-oracle=First strike, haste. Unleash
+oracle=First strike, haste\nUnleash

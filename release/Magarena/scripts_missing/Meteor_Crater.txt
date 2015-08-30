@@ -1,8 +1,8 @@
 name=Meteor Crater
-image=http://mtgimage.com/card/meteor%20crater.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ps/140.jpg
+value=4.105
 rarity=R
 type=Land
 ability={T}: Choose a color of a permanent you control. Add one mana of that color to your mana pool.
-timing=main
+timing=land
 oracle={T}: Choose a color of a permanent you control. Add one mana of that color to your mana pool.

@@ -1,9 +1,9 @@
 name=Disharmony
-image=http://mtgimage.com/card/disharmony.jpg
-value=2.500
-rarity=R
+image=http://magiccards.info/scans/en/me3/95.jpg
+value=3.317
+rarity=U
 type=Instant
 cost={2}{R}
 effect=Cast SN only during combat before blockers are declared.~Untap target attacking creature and remove it from combat. Gain control of that creature until end of turn.
 timing=removal
-oracle=Cast Disharmony only during combat before blockers are declared. Untap target attacking creature and remove it from combat. Gain control of that creature until end of turn.
+oracle=Cast Disharmony only during combat before blockers are declared.\nUntap target attacking creature and remove it from combat. Gain control of that creature until end of turn.

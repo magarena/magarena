@@ -1,6 +1,6 @@
 name=Opaline Bracers
-image=http://mtgimage.com/card/opaline%20bracers.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5dn/141.jpg
+value=3.040
 rarity=C
 type=Artifact
 subtype=Equipment
@@ -8,5 +8,5 @@ cost={4}
 ability=Sunburst;\
         Equipped creature gets +X/+X, where X is the number of charge counters on SN.;\
         Equip {2}
-timing=main
-oracle=Sunburst. Equipped creature gets +X/+X, where X is the number of charge counters on Opaline Bracers. Equip {2}
+timing=equipment
+oracle=Sunburst\nEquipped creature gets +X/+X, where X is the number of charge counters on Opaline Bracers.\nEquip {2}

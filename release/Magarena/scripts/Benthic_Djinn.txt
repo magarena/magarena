@@ -1,5 +1,5 @@
 name=Benthic Djinn
-image=http://mtgimage.com/card/benthic%20djinn.jpg
+image=http://magiccards.info/scans/en/mr/317.jpg
 value=2.851
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=5/3
 ability=islandwalk;\
         At the beginning of your upkeep, you lose 2 life.
 timing=main
-oracle=Islandwalk. At the beginning of your upkeep, you lose 2 life.
+oracle=Islandwalk\nAt the beginning of your upkeep, you lose 2 life.

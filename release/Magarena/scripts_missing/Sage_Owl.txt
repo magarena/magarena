@@ -1,6 +1,6 @@
 name=Sage Owl
-image=http://mtgimage.com/card/sage%20owl.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m10/69.jpg
+value=3.991
 rarity=C
 type=Creature
 subtype=Bird
@@ -9,4 +9,4 @@ pt=1/1
 ability=Flying;\
         When SN enters the battlefield, look at the top four cards of your library, then put them back in any order.
 timing=main
-oracle=Flying. When Sage Owl enters the battlefield, look at the top four cards of your library, then put them back in any order.
+oracle=Flying\nWhen Sage Owl enters the battlefield, look at the top four cards of your library, then put them back in any order.

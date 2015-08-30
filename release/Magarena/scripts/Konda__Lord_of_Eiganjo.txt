@@ -1,5 +1,5 @@
 name=Konda, Lord of Eiganjo
-image=http://mtgimage.com/card/konda%2C%20lord%20of%20eiganjo.jpg
+image=http://magiccards.info/scans/en/chk/30.jpg
 value=4.012
 rarity=R
 type=Legendary,Creature
@@ -8,4 +8,4 @@ cost={5}{W}{W}
 pt=3/3
 ability=vigilance;indestructible;bushido 5
 timing=main
-oracle=Indestructible. Vigilance. Bushido 5
+oracle=Indestructible\nVigilance\nBushido 5

@@ -1,5 +1,5 @@
 name=Carnassid
-image=http://mtgimage.com/card/carnassid.jpg
+image=http://magiccards.info/scans/en/sh/53.jpg
 value=3.077
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=5/4
 ability=trample;\
         {1}{G}: Regenerate SN.
 timing=main
-oracle=Trample. {1}{G}: Regenerate Carnassid.
+oracle=Trample\n{1}{G}: Regenerate Carnassid.

@@ -1,10 +1,11 @@
 name=Damnation
-image=http://mtgimage.com/card/damnation.jpg
+image=http://magiccards.info/scans/en/pc/85.jpg
 value=4.424
 removal=2
 rarity=R
 type=Sorcery
 cost={2}{B}{B}
+ability=Cast SN with AI only if an opponent controls a creature.
 effect=Destroy all creatures. They can't be regenerated.
 timing=removal
 oracle=Destroy all creatures. They can't be regenerated.

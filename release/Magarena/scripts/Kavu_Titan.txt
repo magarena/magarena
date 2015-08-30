@@ -1,5 +1,5 @@
 name=Kavu Titan
-image=http://mtgimage.com/card/kavu%20titan.jpg
+image=http://magiccards.info/scans/en/in/194.jpg
 value=4.279
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 timing=main
 ability=kicker {2}{G}
 requires_groovy_code
-oracle=Kicker {2}{G}. If Kavu Titan was kicked, it enters the battlefield with three +1/+1 counters on it and with trample.
+oracle=Kicker {2}{G}\nIf Kavu Titan was kicked, it enters the battlefield with three +1/+1 counters on it and with trample.

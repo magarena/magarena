@@ -1,5 +1,5 @@
 name=Warlord's Axe
-image=http://mtgimage.com/card/warlord%27s%20axe.jpg
+image=http://magiccards.info/scans/en/m11/220.jpg
 value=1.291
 rarity=U
 type=Artifact
@@ -8,4 +8,4 @@ cost={3}
 ability=Equipped creature gets +3/+1.;\
         Equip {4}
 timing=equipment
-oracle=Equipped creature gets +3/+1. Equip {4}
+oracle=Equipped creature gets +3/+1.\nEquip {4}

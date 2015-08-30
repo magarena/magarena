@@ -1,9 +1,9 @@
 name=Blood Frenzy
-image=http://mtgimage.com/card/blood%20frenzy.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tp/164.jpg
+value=3.833
 rarity=C
 type=Instant
 cost={1}{R}
 effect=Cast SN only before the combat damage step.~Target attacking or blocking creature gets +4/+0 until end of turn. Destroy that creature at the beginning of the next end step.
 timing=removal
-oracle=Cast Blood Frenzy only before the combat damage step. Target attacking or blocking creature gets +4/+0 until end of turn. Destroy that creature at the beginning of the next end step.
+oracle=Cast Blood Frenzy only before the combat damage step.\nTarget attacking or blocking creature gets +4/+0 until end of turn. Destroy that creature at the beginning of the next end step.

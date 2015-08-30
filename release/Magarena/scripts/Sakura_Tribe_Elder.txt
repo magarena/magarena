@@ -1,5 +1,5 @@
 name=Sakura-Tribe Elder
-image=http://mtgimage.com/card/sakura-tribe%20elder.jpg
+image=http://magiccards.info/scans/en/cns/177.jpg
 value=4.500
 rarity=C
 type=Creature

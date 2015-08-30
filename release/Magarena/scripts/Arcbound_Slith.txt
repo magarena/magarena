@@ -1,5 +1,5 @@
 name=Arcbound Slith
-image=http://mtgimage.com/card/arcbound%20slith.jpg
+image=http://magiccards.info/scans/en/pch/106.jpg
 value=4.311
 rarity=U
 type=Artifact,Creature
@@ -7,6 +7,6 @@ subtype=Slith
 cost={2}
 pt=0/0
 ability=Whenever SN deals combat damage to a player, put a +1/+1 counter on SN.;\
-        modular 1
+        Modular 1
 timing=main
-oracle=Whenever Arcbound Slith deals combat damage to a player, put a +1/+1 counter on it. Modular 1
+oracle=Whenever Arcbound Slith deals combat damage to a player, put a +1/+1 counter on it.\nModular 1

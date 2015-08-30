@@ -1,5 +1,5 @@
 name=Scion of Darkness
-image=http://mtgimage.com/card/scion%20of%20darkness.jpg
+image=http://magiccards.info/scans/en/arc/23.jpg
 value=4.090
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=6/6
 timing=main
 ability=trample;cycling {3}
 requires_groovy_code
-oracle=Trample. Whenever Scion of Darkness deals combat damage to a player, you may put target creature card from that player's graveyard onto the battlefield under your control. Cycling {3}
+oracle=Trample\nWhenever Scion of Darkness deals combat damage to a player, you may put target creature card from that player's graveyard onto the battlefield under your control.\nCycling {3}

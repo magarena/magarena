@@ -1,10 +1,10 @@
 name=Sword of the Ages
-image=http://mtgimage.com/card/sword%20of%20the%20ages.jpg
-value=2.500
+image=http://magiccards.info/scans/en/me3/202.jpg
+value=3.958
 rarity=R
 type=Artifact
 cost={6}
 ability=SN enters the battlefield tapped.;\
         {T}, Sacrifice SN and any number of creatures you control: SN deals X damage to target creature or player, where X is the total power of the creatures sacrificed this way, then exile SN and those creature cards.
-timing=main
-oracle=Sword of the Ages enters the battlefield tapped. {T}, Sacrifice Sword of the Ages and any number of creatures you control: Sword of the Ages deals X damage to target creature or player, where X is the total power of the creatures sacrificed this way, then exile Sword of the Ages and those creature cards.
+timing=artifact
+oracle=Sword of the Ages enters the battlefield tapped.\n{T}, Sacrifice Sword of the Ages and any number of creatures you control: Sword of the Ages deals X damage to target creature or player, where X is the total power of the creatures sacrificed this way, then exile Sword of the Ages and those creature cards.

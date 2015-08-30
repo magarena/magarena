@@ -1,5 +1,5 @@
 name=Pheres-Band Thunderhoof
-image=http://mtgimage.com/card/pheres-band%20thunderhoof.jpg
+image=http://magiccards.info/scans/en/jou/134.jpg
 value=3.175
 rarity=C
 type=Creature

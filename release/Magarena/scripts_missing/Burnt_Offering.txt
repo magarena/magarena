@@ -1,9 +1,9 @@
 name=Burnt Offering
-image=http://mtgimage.com/card/burnt%20offering.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ia/4.jpg
+value=4.109
 rarity=C
 type=Instant
 cost={B}
 effect=As an additional cost to cast SN, sacrifice a creature.~Add X mana in any combination of {B} and/or {R} to your mana pool, where X is the sacrificed creature's converted mana cost.
 timing=removal
-oracle=As an additional cost to cast Burnt Offering, sacrifice a creature. Add X mana in any combination of {B} and/or {R} to your mana pool, where X is the sacrificed creature's converted mana cost.
+oracle=As an additional cost to cast Burnt Offering, sacrifice a creature.\nAdd X mana in any combination of {B} and/or {R} to your mana pool, where X is the sacrificed creature's converted mana cost.

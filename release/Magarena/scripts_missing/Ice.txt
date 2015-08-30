@@ -1,9 +1,9 @@
 name=Ice
-image=http://mtgimage.com/card/fireice.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddj/32b.jpg
+value=4.597
 rarity=U
 type=Instant
 cost={1}{U}
 effect=Tap target permanent.~Draw a card.
 timing=removal
-oracle=Tap target permanent. Draw a card.
+oracle=Tap target permanent.\nDraw a card.

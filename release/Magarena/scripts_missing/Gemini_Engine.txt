@@ -1,11 +1,11 @@
 name=Gemini Engine
-image=http://mtgimage.com/card/gemini%20engine.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ds/121.jpg
+value=4.035
 rarity=R
 type=Artifact,Creature
 subtype=Construct
 cost={6}
 pt=3/4
 ability=Whenever SN attacks, put a colorless Construct artifact creature token named Twin onto the battlefield attacking. Its power is equal to SN's power and its toughness is equal to SN's toughness. Sacrifice the token at end of combat.
-timing=main
+timing=artifact
 oracle=Whenever Gemini Engine attacks, put a colorless Construct artifact creature token named Twin onto the battlefield attacking. Its power is equal to Gemini Engine's power and its toughness is equal to Gemini Engine's toughness. Sacrifice the token at end of combat.

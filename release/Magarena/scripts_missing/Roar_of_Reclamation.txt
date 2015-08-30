@@ -1,9 +1,0 @@
-name=Roar of Reclamation
-image=http://mtgimage.com/card/roar%20of%20reclamation.jpg
-value=2.500
-rarity=R
-type=Sorcery
-cost={5}{W}{W}
-effect=Each player returns all artifact cards from his or her graveyard to the battlefield.
-timing=main
-oracle=Each player returns all artifact cards from his or her graveyard to the battlefield.

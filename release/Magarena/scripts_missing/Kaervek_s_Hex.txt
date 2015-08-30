@@ -1,6 +1,6 @@
 name=Kaervek's Hex
-image=http://mtgimage.com/card/kaervek%27s%20hex.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mr/28.jpg
+value=2.233
 rarity=U
 type=Sorcery
 cost={3}{B}

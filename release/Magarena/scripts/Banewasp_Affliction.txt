@@ -1,5 +1,5 @@
 name=Banewasp Affliction
-image=http://mtgimage.com/card/banewasp%20affliction.jpg
+image=http://magiccards.info/scans/en/ala/65.jpg
 value=2.264
 rarity=C
 type=Enchantment
@@ -8,4 +8,4 @@ cost={1}{B}
 timing=main
 enchant=toughness,neg creature
 requires_groovy_code
-oracle=Enchant creature. When enchanted creature dies, that creature's controller loses life equal to its toughness.
+oracle=Enchant creature\nWhen enchanted creature dies, that creature's controller loses life equal to its toughness.

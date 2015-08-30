@@ -15,7 +15,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_PLAYER,
+                NEG_TARGET_PLAYER,
                 this,
                 "Target player\$ loses X life, where X is SN's power. (X="+source.getPower()+")"
             );
@@ -25,7 +25,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPlayer(game, {
                 final int amount=event.getPermanent().getPower();
-                game.doAction(new MagicChangeLifeAction(it, -amount));
+                game.doAction(new ChangeLifeAction(it, -amount));
             });
         }
     }

@@ -1,6 +1,6 @@
 name=Weed Strangle
-image=http://mtgimage.com/card/weed%20strangle.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lw/147.jpg
+value=2.520
 rarity=C
 type=Sorcery
 cost={3}{B}{B}

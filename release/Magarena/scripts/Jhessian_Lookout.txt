@@ -1,5 +1,5 @@
 name=Jhessian Lookout
-image=http://mtgimage.com/card/jhessian%20lookout.jpg
+image=http://magiccards.info/scans/en/ala/46.jpg
 value=1.581
 rarity=C
 type=Creature
@@ -7,3 +7,4 @@ subtype=Human,Scout
 cost={1}{U}
 pt=2/1
 timing=main
+oracle=NONE

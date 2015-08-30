@@ -1,6 +1,6 @@
 name=Lightning Bolt
-image=http://mtgimage.com/card/lightning%20bolt.jpg
-value=4.602
+image=http://magiccards.info/scans/en/m11/149.jpg
+value=4.603
 removal=3
 rarity=C
 type=Instant

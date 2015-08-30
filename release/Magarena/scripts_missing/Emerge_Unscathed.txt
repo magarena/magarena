@@ -1,9 +1,0 @@
-name=Emerge Unscathed
-image=http://mtgimage.com/card/emerge%20unscathed.jpg
-value=2.500
-rarity=U
-type=Instant
-cost={W}
-effect=Target creature you control gains protection from the color of your choice until end of turn.~Rebound
-timing=removal
-oracle=Target creature you control gains protection from the color of your choice until end of turn. Rebound

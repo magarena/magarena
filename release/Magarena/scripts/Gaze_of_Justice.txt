@@ -1,5 +1,5 @@
 name=Gaze of Justice
-image=http://mtgimage.com/card/gaze%20of%20justice.jpg
+image=http://magiccards.info/scans/en/ts/20.jpg
 value=3.559
 rarity=C
 type=Sorcery
@@ -8,4 +8,4 @@ ability=As an additional cost to cast SN, tap three untapped white creatures you
         Flashback {5}{W}
 effect=Exile target creature.
 timing=main
-oracle=As an additional cost to cast Gaze of Justice, tap three untapped white creatures you control. Exile target creature. Flashback {5}{W}
+oracle=As an additional cost to cast Gaze of Justice, tap three untapped white creatures you control.\nExile target creature.\nFlashback {5}{W}

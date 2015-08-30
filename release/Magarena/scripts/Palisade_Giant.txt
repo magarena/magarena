@@ -1,0 +1,11 @@
+name=Palisade Giant
+image=http://magiccards.info/scans/en/rtr/15.jpg
+value=3.364
+rarity=R
+type=Creature
+subtype=Giant,Soldier
+cost={4}{W}{W}
+pt=2/7
+timing=main
+requires_groovy_code
+oracle=All damage that would be dealt to you or another permanent you control is dealt to Palisade Giant instead.

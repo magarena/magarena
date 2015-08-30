@@ -1,5 +1,5 @@
 name=Stillmoon Cavalier
-image=http://mtgimage.com/card/stillmoon%20cavalier.jpg
+image=http://magiccards.info/scans/en/eve/95.jpg
 value=4.298
 rarity=R
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{W/B}{W/B}
 pt=2/1
 ability=protection from white;protection from black;{W/B}{W/B}: SN gets +1/+0 until end of turn.;{W/B}: SN gains flying until end of turn.;{W/B}: SN gains first strike until end of turn.
 timing=main
-oracle=Protection from white and from black. {W/B}: Stillmoon Cavalier gains flying until end of turn. {W/B}: Stillmoon Cavalier gains first strike until end of turn. {W/B}{W/B}: Stillmoon Cavalier gets +1/+0 until end of turn.
+oracle=Protection from white and from black\n{W/B}: Stillmoon Cavalier gains flying until end of turn.\n{W/B}: Stillmoon Cavalier gains first strike until end of turn.\n{W/B}{W/B}: Stillmoon Cavalier gets +1/+0 until end of turn.

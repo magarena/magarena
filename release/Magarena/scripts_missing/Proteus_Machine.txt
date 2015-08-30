@@ -1,6 +1,6 @@
 name=Proteus Machine
-image=http://mtgimage.com/card/proteus%20machine.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sc/141.jpg
+value=3.132
 rarity=U
 type=Artifact,Creature
 subtype=Shapeshifter
@@ -8,5 +8,5 @@ cost={3}
 pt=2/2
 ability=Morph {0};\
         When SN is turned face up, it becomes the creature type of your choice.
-timing=main
-oracle=Morph {0}. When Proteus Machine is turned face up, it becomes the creature type of your choice.
+timing=artifact
+oracle=Morph {0}\nWhen Proteus Machine is turned face up, it becomes the creature type of your choice.

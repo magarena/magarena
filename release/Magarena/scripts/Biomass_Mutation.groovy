@@ -16,21 +16,12 @@
             final int X = event.getRefInt();
             final MagicStatic PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
                 @Override
-                public void modPowerToughness(
-                    final MagicPermanent S,
-                    final MagicPermanent P,
-                    final MagicPowerToughness pt
-                ) {
+                public void modPowerToughness(final MagicPermanent S, final MagicPermanent P, final MagicPowerToughness pt) {
                     pt.set(X,X);
                 }
             };
-            final MagicPlayer you = event.getPlayer();
-            final Collection<MagicPermanent> creatures = you.filterPermanents(MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
-            for (final MagicPermanent creature : creatures) {
-                game.doAction(new MagicBecomesCreatureAction(
-                    creature,
-                    PT
-                ));
+            CREATURE_YOU_CONTROL.filter(event) each {
+                game.doAction(new BecomesCreatureAction(it, PT));
             }
         }
     }

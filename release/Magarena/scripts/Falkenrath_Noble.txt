@@ -1,5 +1,5 @@
 name=Falkenrath Noble
-image=http://mtgimage.com/card/falkenrath%20noble.jpg
+image=http://magiccards.info/scans/en/isd/100.jpg
 value=3.818
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=flying;\
         Whenever SN or another creature dies, target player loses 1 life and you gain 1 life.
 timing=fmain
-oracle=Flying. Whenever Falkenrath Noble or another creature dies, target player loses 1 life and you gain 1 life.
+oracle=Flying\nWhenever Falkenrath Noble or another creature dies, target player loses 1 life and you gain 1 life.

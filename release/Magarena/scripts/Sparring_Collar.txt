@@ -1,5 +1,5 @@
 name=Sparring Collar
-image=http://mtgimage.com/card/sparring%20collar.jpg
+image=http://magiccards.info/scans/en/5dn/154.jpg
 value=2.942
 rarity=C
 type=Artifact
@@ -9,4 +9,4 @@ ability=Equipped creature has first strike.;\
         {R}{R}: Attach SN to target creature you control.;\
         Equip {1}
 timing=artifact
-oracle=Equipped creature has first strike. {R}{R}: Attach Sparring Collar to target creature you control. Equip {1}
+oracle=Equipped creature has first strike.\n{R}{R}: Attach Sparring Collar to target creature you control.\nEquip {1}

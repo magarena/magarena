@@ -1,11 +1,11 @@
 name=Inferno Elemental
-image=http://mtgimage.com/card/inferno%20elemental.jpg
+image=http://magiccards.info/scans/en/m10/142.jpg
 value=3.130
 rarity=U
 type=Creature
 subtype=Elemental
 cost={4}{R}{R}
 pt=4/4
+ability=Whenever SN blocks or becomes blocked by a creature, SN deals 3 damage to that creature.
 timing=main
-requires_groovy_code
 oracle=Whenever Inferno Elemental blocks or becomes blocked by a creature, Inferno Elemental deals 3 damage to that creature.

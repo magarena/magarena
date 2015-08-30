@@ -1,0 +1,9 @@
+name=Hope Charm
+image=http://magiccards.info/scans/en/vi/108.jpg
+value=3.070
+rarity=C
+type=Instant
+cost={W}
+effect=Choose one — (1) Target creature gains first strike until end of turn. (2) Target player gains 2 life. (3) Destroy target Aura.
+timing=pump
+oracle=Choose one —\n• Target creature gains first strike until end of turn.\n• Target player gains 2 life.\n• Destroy target Aura.

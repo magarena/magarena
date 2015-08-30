@@ -1,5 +1,5 @@
 name=Sustainer of the Realm
-image=http://mtgimage.com/card/sustainer%20of%20the%20realm.jpg
+image=http://magiccards.info/scans/en/dvd/8.jpg
 value=3.367
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/3
 ability=flying;\
         Whenever SN blocks, SN gets +0/+2 until end of turn.
 timing=main
-oracle=Flying. Whenever Sustainer of the Realm blocks, it gets +0/+2 until end of turn.
+oracle=Flying\nWhenever Sustainer of the Realm blocks, it gets +0/+2 until end of turn.

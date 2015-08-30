@@ -1,9 +1,10 @@
 name=Resuscitate
-image=http://mtgimage.com/card/resuscitate.jpg
+image=http://magiccards.info/scans/en/ex/121.jpg
 value=2.562
 rarity=U
 type=Instant
 cost={1}{G}
-effect=Until end of turn, creatures you control gain "{1}: Regenerate SN."
+ability=Cast SN with AI only if you control a creature.
+effect=Until end of turn, creatures you control gain "{1}: Regenerate this creature."
 timing=pump
 oracle=Until end of turn, creatures you control gain "{1}: Regenerate this creature."

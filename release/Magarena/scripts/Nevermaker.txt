@@ -1,5 +1,5 @@
 name=Nevermaker
-image=http://mtgimage.com/card/nevermaker.jpg
+image=http://magiccards.info/scans/en/mt/44.jpg
 value=3.458
 rarity=U
 type=Creature
@@ -10,4 +10,4 @@ ability=flying;\
         evoke {3}{U};\
         When SN leaves the battlefield, put target nonland permanent on top of its owner's library.
 timing=main
-oracle=Flying. When Nevermaker leaves the battlefield, put target nonland permanent on top of its owner's library. Evoke {3}{U}
+oracle=Flying\nWhen Nevermaker leaves the battlefield, put target nonland permanent on top of its owner's library.\nEvoke {3}{U}

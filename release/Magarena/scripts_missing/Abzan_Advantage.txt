@@ -1,9 +1,0 @@
-name=Abzan Advantage
-image=http://mtgimage.com/card/abzan%20advantage.jpg
-value=2.500
-rarity=C
-type=Instant
-cost={1}{W}
-effect=Target player sacrifices an enchantment. Bolster 1.
-timing=removal
-oracle=Target player sacrifices an enchantment. Bolster 1.

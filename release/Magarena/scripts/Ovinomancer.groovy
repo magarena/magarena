@@ -17,7 +17,7 @@ def choice = new MagicTargetChoice("a basic land you control");
             if (event.isYes() && costEvent.isSatisfied()) {
                 game.addEvent(costEvent);
             } else {
-                game.doAction(new MagicSacrificeAction(event.getPermanent()));
+                game.doAction(new SacrificeAction(event.getPermanent()));
             }
         }
     },
@@ -38,7 +38,7 @@ def choice = new MagicTargetChoice("a basic land you control");
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 MagicDestroyTargetPicker.DestroyNoRegen,
                 this,
                 "Destroy target creature\$. It can't be regenerated. "+
@@ -49,11 +49,11 @@ def choice = new MagicTargetChoice("a basic land you control");
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                game.doAction(MagicChangeStateAction.Set(it,MagicPermanentState.CannotBeRegenerated));
-                game.doAction(new MagicDestroyAction(it));
-                game.doAction(new MagicPlayTokenAction(
+                game.doAction(ChangeStateAction.Set(it,MagicPermanentState.CannotBeRegenerated));
+                game.doAction(new DestroyAction(it));
+                game.doAction(new PlayTokenAction(
                     it.getController(),
-                    TokenCardDefinitions.get("0/1 green Sheep creature token")
+                    CardDefinitions.getToken("0/1 green Sheep creature token")
                 ));
             });
         }

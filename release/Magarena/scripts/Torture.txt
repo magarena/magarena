@@ -1,11 +1,11 @@
 name=Torture
-image=http://mtgimage.com/card/torture.jpg
+image=http://magiccards.info/scans/en/shm/80.jpg
 value=2.958
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={B}
+ability={1}{B}: Put a -1/-1 counter on enchanted creature.
 enchant=weaken,creature
 timing=aura
-requires_groovy_code
-oracle=Enchant creature. {1}{B}: Put a -1/-1 counter on enchanted creature.
+oracle=Enchant creature\n{1}{B}: Put a -1/-1 counter on enchanted creature.

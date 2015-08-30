@@ -1,5 +1,5 @@
 name=Gift of Granite
-image=http://mtgimage.com/card/gift%20of%20granite.jpg
+image=http://magiccards.info/scans/en/fut/7.jpg
 value=2.087
 rarity=C
 type=Enchantment
@@ -9,4 +9,4 @@ ability=flash;\
         Enchanted creature gets +0/+2.
 timing=pumpflash
 enchant=pump,pos creature
-oracle=Flash. Enchant creature. Enchanted creature gets +0/+2.
+oracle=Flash\nEnchant creature\nEnchanted creature gets +0/+2.

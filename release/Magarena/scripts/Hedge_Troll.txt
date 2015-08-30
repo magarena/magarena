@@ -1,5 +1,5 @@
 name=Hedge Troll
-image=http://mtgimage.com/card/hedge%20troll.jpg
+image=http://magiccards.info/scans/en/pc/151.jpg
 value=4.108
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=SN gets +1/+1 as long as you control a Plains.;\
         {W}: Regenerate SN.
 timing=main
-oracle=Hedge Troll gets +1/+1 as long as you control a Plains. {W}: Regenerate Hedge Troll.
+oracle=Hedge Troll gets +1/+1 as long as you control a Plains.\n{W}: Regenerate Hedge Troll.

@@ -1,5 +1,5 @@
 name=Transmutation
-image=http://mtgimage.com/card/transmutation.jpg
+image=http://magiccards.info/scans/en/ch/12.jpg
 value=2.283
 rarity=C
 type=Instant

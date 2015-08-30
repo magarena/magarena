@@ -1,5 +1,6 @@
 name=Silverback Ape
-image=http://mtgimage.com/card/silverback%20ape.jpg
+image=http://magiccards.info/scans/en/8eb/7.jpg
+image_updated=2015-05-22
 value=3.238
 rarity=U
 type=Creature
@@ -7,3 +8,4 @@ subtype=Ape
 cost={3}{G}{G}
 pt=5/5
 timing=main
+oracle=NONE

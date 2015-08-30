@@ -1,5 +1,5 @@
 name=Narstad Scrapper
-image=http://mtgimage.com/card/narstad%20scrapper.jpg
+image=http://magiccards.info/scans/en/avr/218.jpg
 value=1.250
 rarity=C
 type=Artifact,Creature

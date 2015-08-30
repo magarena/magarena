@@ -1,5 +1,5 @@
 name=Brain Freeze
-image=http://mtgimage.com/card/brain%20freeze.jpg
+image=http://magiccards.info/scans/en/vma/57.jpg
 value=4.000
 rarity=U
 type=Instant
@@ -7,4 +7,4 @@ cost={1}{U}
 ability=storm
 effect=Target player puts the top three cards of his or her library into his or her graveyard.
 timing=storm
-oracle=Target player puts the top three cards of his or her library into his or her graveyard. Storm
+oracle=Target player puts the top three cards of his or her library into his or her graveyard.\nStorm

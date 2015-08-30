@@ -1,6 +1,6 @@
 name=Mindblaze
-image=http://mtgimage.com/card/mindblaze.jpg
-value=2.500
+image=http://magiccards.info/scans/en/chk/180.jpg
+value=2.703
 rarity=R
 type=Sorcery
 cost={5}{R}

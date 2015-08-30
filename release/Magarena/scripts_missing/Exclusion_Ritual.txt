@@ -1,10 +1,10 @@
 name=Exclusion Ritual
-image=http://mtgimage.com/card/exclusion%20ritual.jpg
-value=2.500
+image=http://magiccards.info/scans/en/nph/10.jpg
+value=2.978
 rarity=U
 type=Enchantment
 cost={4}{W}{W}
 ability=When SN enters the battlefield, exile target nonland permanent.;\
         Players can't cast spells with the same name as the exiled card.
-timing=main
-oracle=Imprint — When Exclusion Ritual enters the battlefield, exile target nonland permanent. Players can't cast spells with the same name as the exiled card.
+timing=enchantment
+oracle=Imprint — When Exclusion Ritual enters the battlefield, exile target nonland permanent.\nPlayers can't cast spells with the same name as the exiled card.

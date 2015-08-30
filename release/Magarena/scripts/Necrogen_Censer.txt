@@ -1,5 +1,5 @@
 name=Necrogen Censer
-image=http://mtgimage.com/card/necrogen%20censer.jpg
+image=http://magiccards.info/scans/en/som/184.jpg
 value=2.957
 rarity=C
 type=Artifact
@@ -7,4 +7,4 @@ cost={3}
 ability=SN enters the battlefield with two charge counters on it.;\
         {T}, Remove a charge counter from SN: Target player loses 2 life.
 timing=artifact
-oracle=Necrogen Censer enters the battlefield with two charge counters on it. {T}, Remove a charge counter from Necrogen Censer: Target player loses 2 life.
+oracle=Necrogen Censer enters the battlefield with two charge counters on it.\n{T}, Remove a charge counter from Necrogen Censer: Target player loses 2 life.

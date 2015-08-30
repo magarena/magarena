@@ -1,9 +1,9 @@
 name=Orzhov Signet
-image=http://mtgimage.com/card/orzhov%20signet.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cmd/255.jpg
+value=3.522
 rarity=C
 type=Artifact
 cost={2}
 ability={1}, {T}: Add {W}{B} to your mana pool.
-timing=main
+timing=artifact
 oracle={1}, {T}: Add {W}{B} to your mana pool.

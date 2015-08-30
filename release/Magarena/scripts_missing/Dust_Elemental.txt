@@ -1,6 +1,6 @@
 name=Dust Elemental
-image=http://mtgimage.com/card/dust%20elemental.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pc/5.jpg
+value=4.128
 rarity=R
 type=Creature
 subtype=Elemental
@@ -10,4 +10,4 @@ ability=Flash;\
         Flying; fear;\
         When SN enters the battlefield, return three creatures you control to their owner's hand.
 timing=main
-oracle=Flash. Flying; fear. When Dust Elemental enters the battlefield, return three creatures you control to their owner's hand.
+oracle=Flash\nFlying, fear\nWhen Dust Elemental enters the battlefield, return three creatures you control to their owner's hand.

@@ -1,11 +1,11 @@
 name=Steel Golem
-image=http://mtgimage.com/card/steel%20golem.jpg
-value=2.500
+image=http://magiccards.info/scans/en/10e/344.jpg
+value=2.711
 rarity=U
 type=Artifact,Creature
 subtype=Golem
 cost={3}
 pt=3/4
 ability=You can't cast creature spells.
-timing=main
+timing=artifact
 oracle=You can't cast creature spells.

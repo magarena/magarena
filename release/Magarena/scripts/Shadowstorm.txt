@@ -1,10 +1,11 @@
 name=Shadowstorm
-image=http://mtgimage.com/card/shadowstorm.jpg
+image=http://magiccards.info/scans/en/tp/202.jpg
 value=2.065
 removal=1
 rarity=U
 type=Sorcery
 cost={R}
+ability=Cast SN with AI only if an opponent controls a creature with shadow.
 effect=SN deals 2 damage to each creature with shadow.
 timing=removal
 oracle=Shadowstorm deals 2 damage to each creature with shadow.

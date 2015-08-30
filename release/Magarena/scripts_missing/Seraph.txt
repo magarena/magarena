@@ -1,6 +1,6 @@
 name=Seraph
-image=http://mtgimage.com/card/seraph.jpg
-value=2.500
+image=http://magiccards.info/scans/en/med/26.jpg
+value=3.250
 rarity=R
 type=Creature
 subtype=Angel
@@ -9,4 +9,4 @@ pt=4/4
 ability=Flying;\
         Whenever a creature dealt damage by SN this turn dies, put that card onto the battlefield under your control at the beginning of the next end step. Sacrifice the creature when you lose control of SN.
 timing=main
-oracle=Flying. Whenever a creature dealt damage by Seraph this turn dies, put that card onto the battlefield under your control at the beginning of the next end step. Sacrifice the creature when you lose control of Seraph.
+oracle=Flying\nWhenever a creature dealt damage by Seraph this turn dies, put that card onto the battlefield under your control at the beginning of the next end step. Sacrifice the creature when you lose control of Seraph.

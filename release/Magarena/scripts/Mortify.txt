@@ -1,5 +1,5 @@
 name=Mortify
-image=http://mtgimage.com/card/mortify.jpg
+image=http://magiccards.info/scans/en/cns/190.jpg
 value=4.417
 removal=5
 rarity=U

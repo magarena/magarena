@@ -1,6 +1,6 @@
 name=Tsabo's Assassin
-image=http://mtgimage.com/card/tsabo%27s%20assassin.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/128.jpg
+value=3.471
 rarity=R
 type=Creature
 subtype=Zombie,Assassin

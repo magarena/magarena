@@ -1,6 +1,6 @@
 name=Bitter Revelation
-image=http://mtgimage.com/card/bitter%20revelation.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/65.jpg
+value=2.700
 rarity=C
 type=Sorcery
 cost={3}{B}

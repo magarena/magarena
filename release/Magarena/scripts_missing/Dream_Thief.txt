@@ -1,6 +1,6 @@
 name=Dream Thief
-image=http://mtgimage.com/card/dream%20thief.jpg
-value=2.500
+image=http://magiccards.info/scans/en/eve/20.jpg
+value=2.256
 rarity=C
 type=Creature
 subtype=Faerie,Rogue
@@ -9,4 +9,4 @@ pt=2/1
 ability=Flying;\
         When SN enters the battlefield, draw a card if you've cast another blue spell this turn.
 timing=main
-oracle=Flying. When Dream Thief enters the battlefield, draw a card if you've cast another blue spell this turn.
+oracle=Flying\nWhen Dream Thief enters the battlefield, draw a card if you've cast another blue spell this turn.

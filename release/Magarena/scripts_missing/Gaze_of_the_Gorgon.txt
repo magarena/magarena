@@ -1,6 +1,6 @@
 name=Gaze of the Gorgon
-image=http://mtgimage.com/card/gaze%20of%20the%20gorgon.jpg
-value=2.500
+image=http://magiccards.info/scans/en/rav/246.jpg
+value=3.395
 rarity=C
 type=Instant
 cost={3}{B/G}

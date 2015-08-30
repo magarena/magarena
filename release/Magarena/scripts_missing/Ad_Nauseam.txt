@@ -1,6 +1,6 @@
 name=Ad Nauseam
-image=http://mtgimage.com/card/ad%20nauseam.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ala/63.jpg
+value=4.146
 rarity=R
 type=Instant
 cost={3}{B}{B}

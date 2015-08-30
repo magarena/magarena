@@ -1,12 +1,12 @@
 name=Primal Whisperer
-image=http://mtgimage.com/card/primal%20whisperer.jpg
+image=http://magiccards.info/scans/en/le/135.jpg
 value=2.500
 rarity=R
 type=Creature
 subtype=Elf,Soldier
 cost={4}{G}
 pt=2/2
-ability=Morph {3}{G}
+ability=SN gets +2/+2 for each face-down creature on the battlefield.;\
+        Morph {3}{G}
 timing=main
-requires_groovy_code
-oracle=Primal Whisperer gets +2/+2 for each face-down creature on the battlefield. Morph {3}{G}
+oracle=Primal Whisperer gets +2/+2 for each face-down creature on the battlefield.\nMorph {3}{G}

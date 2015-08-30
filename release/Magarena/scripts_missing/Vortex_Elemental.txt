@@ -1,6 +1,6 @@
 name=Vortex Elemental
-image=http://mtgimage.com/card/vortex%20elemental.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bng/56.jpg
+value=3.843
 rarity=U
 type=Creature
 subtype=Elemental
@@ -9,4 +9,4 @@ pt=0/1
 ability={U}: Put SN and each creature blocking or blocked by it on top of their owners' libraries, then those players shuffle their libraries.;\
         {3}{U}{U}: Target creature blocks SN this turn if able.
 timing=main
-oracle={U}: Put Vortex Elemental and each creature blocking or blocked by it on top of their owners' libraries, then those players shuffle their libraries. {3}{U}{U}: Target creature blocks Vortex Elemental this turn if able.
+oracle={U}: Put Vortex Elemental and each creature blocking or blocked by it on top of their owners' libraries, then those players shuffle their libraries.\n{3}{U}{U}: Target creature blocks Vortex Elemental this turn if able.

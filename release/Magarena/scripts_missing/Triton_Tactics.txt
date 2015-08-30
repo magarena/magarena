@@ -1,6 +1,6 @@
 name=Triton Tactics
-image=http://mtgimage.com/card/triton%20tactics.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ths/71.jpg
+value=3.627
 rarity=U
 type=Instant
 cost={U}

@@ -1,6 +1,6 @@
 name=Taigam's Scheming
-image=http://mtgimage.com/card/taigam%27s%20scheming.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/57.jpg
+value=2.250
 rarity=C
 type=Sorcery
 cost={1}{U}

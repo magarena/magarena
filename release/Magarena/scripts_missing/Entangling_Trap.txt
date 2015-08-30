@@ -1,9 +1,0 @@
-name=Entangling Trap
-image=http://mtgimage.com/card/entangling%20trap.jpg
-value=2.500
-rarity=U
-type=Enchantment
-cost={1}{W}
-ability=Whenever you clash, tap target creature an opponent controls. If you won, that creature doesn't untap during its controller's next untap step.
-timing=main
-oracle=Whenever you clash, tap target creature an opponent controls. If you won, that creature doesn't untap during its controller's next untap step.

@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.getPlayer().getOpponent().controlsPermanent(MagicType.Creature) == false) {
-                game.doAction(new MagicDealDamageAction(event.getSource(),event.getPlayer(),4));
+                game.doAction(new DealDamageAction(event.getSource(),event.getPlayer(),4));
             }
         }
     }

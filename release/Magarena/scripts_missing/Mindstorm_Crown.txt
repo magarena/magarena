@@ -1,9 +1,9 @@
 name=Mindstorm Crown
-image=http://mtgimage.com/card/mindstorm%20crown.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mi/207.jpg
+value=3.539
 rarity=U
 type=Artifact
 cost={3}
 ability=At the beginning of your upkeep, draw a card if you had no cards in hand at the beginning of this turn. If you had a card in hand, SN deals 1 damage to you.
-timing=main
+timing=artifact
 oracle=At the beginning of your upkeep, draw a card if you had no cards in hand at the beginning of this turn. If you had a card in hand, Mindstorm Crown deals 1 damage to you.

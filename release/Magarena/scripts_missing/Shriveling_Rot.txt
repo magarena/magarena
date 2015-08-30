@@ -1,9 +1,9 @@
 name=Shriveling Rot
-image=http://mtgimage.com/card/shriveling%20rot.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ds/54.jpg
+value=3.577
 rarity=R
 type=Instant
 cost={2}{B}{B}
-effect=Choose one — • Until end of turn, whenever a creature is dealt damage, destroy it. • Until end of turn, whenever a creature dies, that creature's controller loses life equal to its toughness.~Entwine {2}{B}
+effect=Choose one — (1) Until end of turn, whenever a creature is dealt damage, destroy it. (2) Until end of turn, whenever a creature dies, that creature's controller loses life equal to its toughness.~Entwine {2}{B}
 timing=removal
-oracle=Choose one — • Until end of turn, whenever a creature is dealt damage, destroy it. • Until end of turn, whenever a creature dies, that creature's controller loses life equal to its toughness. Entwine {2}{B}
+oracle=Choose one —\n• Until end of turn, whenever a creature is dealt damage, destroy it.\n• Until end of turn, whenever a creature dies, that creature's controller loses life equal to its toughness.\nEntwine {2}{B}

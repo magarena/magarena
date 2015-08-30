@@ -1,9 +1,9 @@
 name=Gerrard's Command
-image=http://mtgimage.com/card/gerrard's%20command.jpg
+image=http://magiccards.info/scans/en/pvc/53.jpg
 value=4.229
 rarity=C
 type=Instant
 cost={G}{W}
+effect=Untap target creature.~*It* gets +3/+3 until end of turn.
 timing=tapping
-requires_groovy_code
 oracle=Untap target creature. It gets +3/+3 until end of turn.

@@ -22,10 +22,8 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final Collection<MagicPermanent> targets=
-                game.filterPermanents(event.getPlayer(),MagicTargetFilterFactory.CREATURE);
-            for (final MagicPermanent creature : targets) {
-                game.doAction(new MagicAddStaticAction(creature,MagicStatic.SwitchPT));
+            CREATURE.filter(event) each {
+                game.doAction(new AddStaticAction(it,MagicStatic.SwitchPT));
             }
         }
     }

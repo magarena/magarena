@@ -1,12 +1,12 @@
 name=Kavu Mauler
-image=http://mtgimage.com/card/kavu%20mauler.jpg
+image=http://magiccards.info/scans/en/ap/80.jpg
 value=3.727
 rarity=R
 type=Creature
 subtype=Kavu
 cost={4}{G}{G}
 pt=4/4
-ability=Trample
+ability=Trample;\
+        Whenever SN attacks, SN gets +1/+1 until end of turn for each other attacking Kavu.
 timing=main
-requires_groovy_code
-oracle=Trample. Whenever Kavu Mauler attacks, it gets +1/+1 until end of turn for each other attacking Kavu.
+oracle=Trample\nWhenever Kavu Mauler attacks, it gets +1/+1 until end of turn for each other attacking Kavu.

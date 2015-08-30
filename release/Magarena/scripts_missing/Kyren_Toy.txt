@@ -1,10 +1,10 @@
 name=Kyren Toy
-image=http://mtgimage.com/card/kyren%20toy.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mm/303.jpg
+value=3.207
 rarity=R
 type=Artifact
 cost={3}
 ability={1}, {T}: Put a charge counter on SN.;\
         {T}, Remove X charge counters from SN: Add {X}{1} to your mana pool.
-timing=main
-oracle={1}, {T}: Put a charge counter on Kyren Toy. {T}, Remove X charge counters from Kyren Toy: Add {X}{1} to your mana pool.
+timing=artifact
+oracle={1}, {T}: Put a charge counter on Kyren Toy.\n{T}, Remove X charge counters from Kyren Toy: Add {X}{1} to your mana pool.

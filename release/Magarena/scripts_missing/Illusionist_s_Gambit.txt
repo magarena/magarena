@@ -1,9 +1,9 @@
 name=Illusionist's Gambit
-image=http://mtgimage.com/card/illusionist%27s%20gambit.jpg
-value=2.500
+image=http://magiccards.info/scans/en/c13/47.jpg
+value=3.829
 rarity=R
 type=Instant
 cost={2}{U}{U}
 effect=Cast SN only during the declare blockers step on an opponent's turn.~Remove all attacking creatures from combat and untap them. After this phase, there is an additional combat phase. Each of those creatures attacks that combat if able. They can't attack you or a planeswalker you control that combat.
 timing=removal
-oracle=Cast Illusionist's Gambit only during the declare blockers step on an opponent's turn. Remove all attacking creatures from combat and untap them. After this phase, there is an additional combat phase. Each of those creatures attacks that combat if able. They can't attack you or a planeswalker you control that combat.
+oracle=Cast Illusionist's Gambit only during the declare blockers step on an opponent's turn.\nRemove all attacking creatures from combat and untap them. After this phase, there is an additional combat phase. Each of those creatures attacks that combat if able. They can't attack you or a planeswalker you control that combat.

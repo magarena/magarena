@@ -1,6 +1,5 @@
 package magic.generator;
 
-import magic.data.CubeDefinitions;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCondensedDeck;
 import magic.model.MagicDeckProfile;
@@ -23,11 +22,6 @@ public class Elf_Horde_DeckGenerator extends RandomDeckGenerator {
         "Llanowar Elves",
         "Llanowar Elves"
     };
-
-    public Elf_Horde_DeckGenerator() {
-        super(null);
-        setCubeDefinition(CubeDefinitions.getCubeDefinition(getColorText()));
-    }
 
     public String getColorText() {
         return colorText;

@@ -1,11 +1,11 @@
 name=Garruk, Caller of Beasts
-image=http://mtgimage.com/card/garruk%2C%20caller%20of%20beasts.jpg
+image=http://magiccards.info/scans/en/m14/172.jpg
 value=3.512
 rarity=M
 type=Planeswalker
 subtype=Garruk
 cost={4}{G}{G}
-ability=loyalty 4
+loyalty=4
 timing=main
 requires_groovy_code
-oracle=+1: Reveal the top five cards of your library. Put all creature cards revealed this way into your hand and the rest on the bottom of your library in any order. -3: You may put a green creature card from your hand onto the battlefield. -7: You get an emblem with "Whenever you cast a creature spell, you may search your library for a creature card, put it onto the battlefield, then shuffle your library."
+oracle=+1: Reveal the top five cards of your library. Put all creature cards revealed this way into your hand and the rest on the bottom of your library in any order.\n−3: You may put a green creature card from your hand onto the battlefield.\n−7: You get an emblem with "Whenever you cast a creature spell, you may search your library for a creature card, put it onto the battlefield, then shuffle your library."

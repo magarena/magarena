@@ -1,11 +1,11 @@
 name=Lost in Thought
-image=http://mtgimage.com/card/lost%20in%20thought.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ju/45.jpg
+value=3.056
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
 ability=Enchant creature;\
         Enchanted creature can't attack or block, and its activated abilities can't be activated. Its controller may exile three cards from his or her graveyard for that player to ignore this effect until end of turn.
-timing=main
-oracle=Enchant creature. Enchanted creature can't attack or block, and its activated abilities can't be activated. Its controller may exile three cards from his or her graveyard for that player to ignore this effect until end of turn.
+timing=aura
+oracle=Enchant creature\nEnchanted creature can't attack or block, and its activated abilities can't be activated. Its controller may exile three cards from his or her graveyard for that player to ignore this effect until end of turn.

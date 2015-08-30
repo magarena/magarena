@@ -1,6 +1,6 @@
 name=Snap
-image=http://mtgimage.com/card/snap.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ul/43.jpg
+value=4.560
 rarity=C
 type=Instant
 cost={1}{U}

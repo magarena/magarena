@@ -1,5 +1,5 @@
 name=Riptide Survivor
-image=http://mtgimage.com/card/riptide%20survivor.jpg
+image=http://magiccards.info/scans/en/c14/121.jpg
 value=2.500
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=Morph {1}{U}{U}
 timing=main
 requires_groovy_code
-oracle=Morph {1}{U}{U}. When Riptide Survivor is turned face up, discard two cards, then draw three cards.
+oracle=Morph {1}{U}{U}\nWhen Riptide Survivor is turned face up, discard two cards, then draw three cards.

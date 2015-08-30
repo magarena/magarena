@@ -1,0 +1,11 @@
+name=Indentured Oaf
+image=http://magiccards.info/scans/en/rav/133.jpg
+value=1.703
+rarity=U
+type=Creature
+subtype=Ogre,Warrior
+cost={3}{R}
+pt=4/3
+timing=main
+requires_groovy_code
+oracle=Prevent all damage that Indentured Oaf would deal to red creatures.

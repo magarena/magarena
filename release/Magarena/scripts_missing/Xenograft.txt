@@ -1,10 +1,10 @@
 name=Xenograft
-image=http://mtgimage.com/card/xenograft.jpg
-value=2.500
+image=http://magiccards.info/scans/en/nph/51.jpg
+value=3.038
 rarity=R
 type=Enchantment
 cost={4}{U}
 ability=As SN enters the battlefield, choose a creature type.;\
         Each creature you control is the chosen type in addition to its other types.
-timing=main
-oracle=As Xenograft enters the battlefield, choose a creature type. Each creature you control is the chosen type in addition to its other types.
+timing=enchantment
+oracle=As Xenograft enters the battlefield, choose a creature type.\nEach creature you control is the chosen type in addition to its other types.

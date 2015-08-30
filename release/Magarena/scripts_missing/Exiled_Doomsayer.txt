@@ -1,6 +1,6 @@
 name=Exiled Doomsayer
-image=http://mtgimage.com/card/exiled%20doomsayer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sc/13.jpg
+value=1.839
 rarity=R
 type=Creature
 subtype=Human,Cleric

@@ -1,6 +1,6 @@
 name=Elvish Bard
-image=http://mtgimage.com/card/elvish%20bard.jpg
-value=2.500
+image=http://magiccards.info/scans/en/9e/236.jpg
+value=3.276
 rarity=U
 type=Creature
 subtype=Elf,Shaman

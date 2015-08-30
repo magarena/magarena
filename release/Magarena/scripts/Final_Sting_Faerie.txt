@@ -1,0 +1,12 @@
+name=Final-Sting Faerie
+image=http://magiccards.info/scans/en/mt/63.jpg
+value=3.000
+rarity=C
+type=Creature
+subtype=Faerie,Assassin
+cost={3}{B}
+pt=2/2
+ability=Flying;\
+        When SN enters the battlefield, destroy target creature that was dealt damage this turn.
+timing=main
+oracle=Flying\nWhen Final-Sting Faerie enters the battlefield, destroy target creature that was dealt damage this turn.

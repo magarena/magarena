@@ -1,6 +1,6 @@
 name=Defiling Tears
-image=http://mtgimage.com/card/defiling%20tears.jpg
-value=2.500
+image=http://magiccards.info/scans/en/in/99.jpg
+value=1.797
 rarity=U
 type=Instant
 cost={2}{B}

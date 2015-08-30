@@ -1,6 +1,6 @@
 name=Karona's Zealot
-image=http://mtgimage.com/card/karona%27s%20zealot.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sc/18.jpg
+value=2.340
 rarity=U
 type=Creature
 subtype=Human,Cleric
@@ -9,4 +9,4 @@ pt=2/5
 ability=Morph {3}{W}{W};\
         When SN is turned face up, all damage that would be dealt to it this turn is dealt to target creature instead.
 timing=main
-oracle=Morph {3}{W}{W}. When Karona's Zealot is turned face up, all damage that would be dealt to it this turn is dealt to target creature instead.
+oracle=Morph {3}{W}{W}\nWhen Karona's Zealot is turned face up, all damage that would be dealt to it this turn is dealt to target creature instead.

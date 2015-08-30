@@ -1,9 +1,9 @@
 name=Quagmire
-image=http://mtgimage.com/card/quagmire.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lg/29.jpg
+value=1.585
 rarity=U
 type=Enchantment
 cost={2}{B}
 ability=Creatures with swampwalk can be blocked as though they didn't have swampwalk.
-timing=main
+timing=enchantment
 oracle=Creatures with swampwalk can be blocked as though they didn't have swampwalk.

@@ -1,0 +1,13 @@
+name=Shieldhide Dragon
+image=http://magiccards.info/scans/en/dtk/37.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Dragon
+cost={5}{W}
+pt=3/3
+ability=Flying, lifelink;\
+        Megamorph {5}{W}{W};\
+        When SN is turned face up, put a +1/+1 counter on each other Dragon creature you control.
+timing=main
+oracle=Flying, lifelink\nMegamorph {5}{W}{W}\nWhen Shieldhide Dragon is turned face up, put a +1/+1 counter on each other Dragon creature you control.

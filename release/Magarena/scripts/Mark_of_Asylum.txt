@@ -1,9 +1,9 @@
 name=Mark of Asylum
-image=http://mtgimage.com/card/mark%20of%20asylum.jpg
+image=http://magiccards.info/scans/en/cfx/10.jpg
 value=3.236
 rarity=R
 type=Enchantment
 cost={1}{W}
-timing=main
-requires_groovy_code
+ability=Prevent all noncombat damage that would be dealt to creatures you control.
+timing=enchantment
 oracle=Prevent all noncombat damage that would be dealt to creatures you control.

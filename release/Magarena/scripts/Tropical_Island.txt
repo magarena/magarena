@@ -1,8 +1,9 @@
 name=Tropical Island
-image=http://mtgimage.com/set/me4/tropical%20island.jpg
+image=http://magiccards.info/scans/en/vma/321.jpg
 value=4.500
 rarity=R
 type=Land
 subtype=Forest,Island
 mana=u4g4
 timing=land
+oracle=NONE

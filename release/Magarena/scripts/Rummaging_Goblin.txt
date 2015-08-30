@@ -1,5 +1,5 @@
 name=Rummaging Goblin
-image=http://mtgimage.com/card/rummaging%20goblin.jpg
+image=http://magiccards.info/scans/en/m15/159.jpg
 value=2.071
 rarity=C
 type=Creature

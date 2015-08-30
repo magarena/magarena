@@ -1,5 +1,5 @@
 name=Deathcurse Ogre
-image=http://mtgimage.com/card/deathcurse%20ogre.jpg
+image=http://magiccards.info/scans/en/chk/109.jpg
 value=1.292
 rarity=C
 type=Creature

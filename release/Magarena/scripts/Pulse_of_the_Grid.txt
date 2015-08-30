@@ -1,5 +1,5 @@
 name=Pulse of the Grid
-image=http://mtgimage.com/card/pulse%20of%20the%20grid.jpg
+image=http://magiccards.info/scans/en/ds/29.jpg
 value=3.462
 rarity=R
 type=Instant

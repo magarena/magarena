@@ -1,5 +1,5 @@
 name=Kokusho, the Evening Star
-image=http://mtgimage.com/card/kokusho%2C%20the%20evening%20star.jpg
+image=http://magiccards.info/scans/en/mma/89.jpg
 value=4.136
 rarity=R
 type=Legendary,Creature
@@ -10,4 +10,4 @@ ability=flying
 timing=main
 requires_groovy_code
 # Need to determine the amount of life lost by opponents - some cards prevent life from being lost. See Platinum Emperion
-oracle=Flying. When Kokusho, the Evening Star dies, each opponent loses 5 life. You gain life equal to the life lost this way.
+oracle=Flying\nWhen Kokusho, the Evening Star dies, each opponent loses 5 life. You gain life equal to the life lost this way.

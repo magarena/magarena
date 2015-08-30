@@ -1,5 +1,5 @@
 name=Resplendent Mentor
-image=http://mtgimage.com/card/resplendent%20mentor.jpg
+image=http://magiccards.info/scans/en/shm/19.jpg
 value=2.569
 rarity=U
 type=Creature

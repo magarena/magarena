@@ -1,6 +1,6 @@
 name=Kheru Lich Lord
-image=http://mtgimage.com/card/kheru%20lich%20lord.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/182.jpg
+value=3.500
 rarity=R
 type=Creature
 subtype=Zombie,Wizard

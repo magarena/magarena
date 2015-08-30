@@ -7,7 +7,7 @@
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
-                        MagicTargetChoice.NEG_TARGET_ARTIFACT
+                        NEG_TARGET_ARTIFACT
                     ),
                     MagicDestroyTargetPicker.Destroy,
                     this,
@@ -21,20 +21,14 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 event.processTargetPermanent(game, {
-                    game.doAction(new MagicDestroyAction(it));
+                    game.doAction(new DestroyAction(it));
                     final MagicCard card = it.getCard();
-                    final MagicPlayer player = event.getPlayer();
                     // only deal damage when the target is destroyed
                     if (card.isInGraveyard() 
                         ||
                         (card.isToken() && !card.getOwner().getPermanents().contains(it))) {
-                        final int amount = player.getNrOfPermanents(MagicSubType.Ally);
-                        final MagicDamage damage = new MagicDamage(
-                            event.getPermanent(),
-                            card.getOwner(),
-                            amount
-                        );
-                        game.doAction(new MagicDealDamageAction(damage));
+                        final int amount = event.getPlayer().getNrOfPermanents(MagicSubType.Ally);
+                        game.doAction(new DealDamageAction(event.getPermanent(),card.getOwner(),amount));
                     }
                 });
             }

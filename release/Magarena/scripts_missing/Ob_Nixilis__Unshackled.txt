@@ -1,13 +1,13 @@
 name=Ob Nixilis, Unshackled
-image=http://mtgimage.com/card/ob%20nixilis%2C%20unshackled.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m15/110.jpg
+value=3.600
 rarity=R
 type=Legendary,Creature
 subtype=Demon
 cost={4}{B}{B}
 pt=4/4
-ability=Flying; trample;\
+ability=Flying, trample;\
         Whenever an opponent searches his or her library, that player sacrifices a creature and loses 10 life.;\
         Whenever another creature dies, put a +1/+1 counter on SN.
 timing=main
-oracle=Flying, trample. Whenever an opponent searches his or her library, that player sacrifices a creature and loses 10 life. Whenever another creature dies, put a +1/+1 counter on Ob Nixilis, Unshackled.
+oracle=Flying, trample\nWhenever an opponent searches his or her library, that player sacrifices a creature and loses 10 life.\nWhenever another creature dies, put a +1/+1 counter on Ob Nixilis, Unshackled.

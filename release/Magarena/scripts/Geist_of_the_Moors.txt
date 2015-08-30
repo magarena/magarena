@@ -1,5 +1,5 @@
 name=Geist of the Moors
-image=http://mtgimage.com/card/geist%20of%20the%20moors.jpg
+image=http://magiccards.info/scans/en/m15/13.jpg
 value=2.917
 rarity=U
 type=Creature

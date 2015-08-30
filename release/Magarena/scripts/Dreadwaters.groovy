@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.TARGET_PLAYER,
+                TARGET_PLAYER,
                 this,
                 "Target player\$ puts the top X cards of his or her library into " +
                 "his or her graveyard, where X is the number of lands you control."
@@ -15,7 +15,7 @@
             event.processTargetPlayer(game, {
                 final MagicPlayer player = event.getPlayer();
                 final int amount = player.getNrOfPermanents(MagicType.Land);
-                game.doAction(new MagicMillLibraryAction(it,amount));
+                game.doAction(new MillLibraryAction(it,amount));
             });
         }
     }

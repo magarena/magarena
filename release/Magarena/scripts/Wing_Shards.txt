@@ -1,5 +1,5 @@
 name=Wing Shards
-image=http://mtgimage.com/card/wing%20shards.jpg
+image=http://magiccards.info/scans/en/c14/97.jpg
 value=4.341
 rarity=U
 type=Instant
@@ -8,4 +8,4 @@ ability=Storm;\
         Cast SN with AI only if an opponent controls an attacking creature.
 effect=Target player sacrifices an attacking creature.
 timing=block
-oracle=Target player sacrifices an attacking creature. Storm
+oracle=Target player sacrifices an attacking creature.\nStorm

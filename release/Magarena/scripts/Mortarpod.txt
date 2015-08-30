@@ -1,5 +1,5 @@
 name=Mortarpod
-image=http://mtgimage.com/card/mortarpod.jpg
+image=http://magiccards.info/scans/en/mbs/115.jpg
 value=3.990
 rarity=U
 type=Artifact
@@ -9,4 +9,4 @@ ability=Living weapon;\
         Equipped creature gets +0/+1 and has "Sacrifice SN: SN deals 1 damage to target creature or player.";\
         Equip {2}
 timing=equipment
-oracle=Living weapon. Equipped creature gets +0/+1 and has "Sacrifice this creature: This creature deals 1 damage to target creature or player.". Equip {2}
+oracle=Living weapon\nEquipped creature gets +0/+1 and has "Sacrifice this creature: This creature deals 1 damage to target creature or player."\nEquip {2}

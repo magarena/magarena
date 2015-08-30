@@ -1,5 +1,5 @@
 name=Rootwalla
-image=http://mtgimage.com/card/rootwalla.jpg
+image=http://magiccards.info/scans/en/m14/192.jpg
 value=3.183
 rarity=C
 type=Creature

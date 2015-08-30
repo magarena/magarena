@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 new MagicDamageTargetPicker(4,true),
                 this,
                 "SN deals 3 damage to target creature\$. " +
@@ -17,7 +17,7 @@
             event.processTarget(game, {
                 final MagicDamage damage=new MagicDamage(event.getSource(),it,4);
                 damage.setNoRegeneration();
-                game.doAction(new MagicDealDamageAction(damage));
+                game.doAction(new DealDamageAction(damage));
                 game.addEvent(new MagicScryEvent(event));
             });
         }

@@ -1,6 +1,6 @@
 name=Sengir Autocrat
-image=http://mtgimage.com/card/sengir%20autocrat.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tsts/45.jpg
+value=3.763
 rarity=U
 type=Creature
 subtype=Human
@@ -9,4 +9,4 @@ pt=2/2
 ability=When SN enters the battlefield, put three 0/1 black Serf creature tokens onto the battlefield.;\
         When SN leaves the battlefield, exile all Serf tokens.
 timing=main
-oracle=When Sengir Autocrat enters the battlefield, put three 0/1 black Serf creature tokens onto the battlefield. When Sengir Autocrat leaves the battlefield, exile all Serf tokens.
+oracle=When Sengir Autocrat enters the battlefield, put three 0/1 black Serf creature tokens onto the battlefield.\nWhen Sengir Autocrat leaves the battlefield, exile all Serf tokens.

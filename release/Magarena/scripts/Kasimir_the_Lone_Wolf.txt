@@ -1,5 +1,5 @@
 name=Kasimir the Lone Wolf
-image=http://mtgimage.com/card/kasimir%20the%20lone%20wolf.jpg
+image=http://magiccards.info/scans/en/lg/277.jpg
 value=1.018
 rarity=U
 type=Legendary,Creature
@@ -7,3 +7,4 @@ subtype=Human,Warrior
 cost={4}{W}{U}
 pt=5/3
 timing=main
+oracle=NONE

@@ -1,6 +1,6 @@
 name=Lancers en-Kor
-image=http://mtgimage.com/card/lancers%20en-kor.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sh/108.jpg
+value=3.426
 rarity=U
 type=Creature
 subtype=Kor,Soldier
@@ -9,4 +9,4 @@ pt=3/3
 ability=Trample;\
         {0}: The next 1 damage that would be dealt to SN this turn is dealt to target creature you control instead.
 timing=main
-oracle=Trample. {0}: The next 1 damage that would be dealt to Lancers en-Kor this turn is dealt to target creature you control instead.
+oracle=Trample\n{0}: The next 1 damage that would be dealt to Lancers en-Kor this turn is dealt to target creature you control instead.

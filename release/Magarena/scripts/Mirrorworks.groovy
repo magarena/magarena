@@ -1,10 +1,7 @@
 [
     new MagicWhenOtherComesIntoPlayTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-                final MagicGame game,
-                final MagicPermanent permanent,
-                final MagicPermanent otherPermanent) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent otherPermanent) {
             return (otherPermanent != permanent &&
                     otherPermanent.isNonToken() &&
                     otherPermanent.isArtifact()) ?
@@ -24,7 +21,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                game.doAction(new MagicPlayTokenAction(
+                game.doAction(new PlayTokenAction(
                     event.getPlayer(),
                     event.getRefPermanent()
                 ));

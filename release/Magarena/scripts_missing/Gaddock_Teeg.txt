@@ -1,6 +1,6 @@
 name=Gaddock Teeg
-image=http://mtgimage.com/card/gaddock%20teeg.jpg
-value=2.500
+image=http://magiccards.info/scans/en/lw/248.jpg
+value=4.477
 rarity=R
 type=Legendary,Creature
 subtype=Kithkin,Advisor
@@ -9,4 +9,4 @@ pt=2/2
 ability=Noncreature spells with converted mana cost 4 or greater can't be cast.;\
         Noncreature spells with {X} in their mana costs can't be cast.
 timing=main
-oracle=Noncreature spells with converted mana cost 4 or greater can't be cast. Noncreature spells with {X} in their mana costs can't be cast.
+oracle=Noncreature spells with converted mana cost 4 or greater can't be cast.\nNoncreature spells with {X} in their mana costs can't be cast.

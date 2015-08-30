@@ -1,5 +1,5 @@
 name=Emerald Dragonfly
-image=http://mtgimage.com/card/emerald%20dragonfly.jpg
+image=http://magiccards.info/scans/en/ch/35.jpg
 value=3.090
 rarity=C
 type=Creature
@@ -8,4 +8,4 @@ cost={1}{G}
 pt=1/1
 ability=flying;{G}{G}: SN gains first strike until end of turn.
 timing=main
-oracle=Flying. {G}{G}: Emerald Dragonfly gains first strike until end of turn.
+oracle=Flying\n{G}{G}: Emerald Dragonfly gains first strike until end of turn.

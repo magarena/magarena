@@ -1,5 +1,5 @@
 name=Adamaro, First to Desire
-image=http://mtgimage.com/card/adamaro%2C%20first%20to%20desire.jpg
+image=http://magiccards.info/scans/en/sok/91.jpg
 value=3.116
 rarity=R
 type=Legendary,Creature

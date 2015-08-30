@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            game.doAction(new MagicChangeLifeAction(
+            game.doAction(new ChangeLifeAction(
                 player,
                 player.getNrOfPermanents(MagicType.Creature)
             ));
@@ -28,9 +28,9 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new MagicPlayTokensAction(
+            game.doAction(new PlayTokensAction(
                 event.getPlayer(), 
-                TokenCardDefinitions.get("1/1 white Soldier creature token"), 
+                CardDefinitions.getToken("1/1 white Soldier creature token"), 
                 3
             ));
         }
@@ -46,12 +46,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicTargetFilter<MagicPermanent> AllOtherPermanent = new MagicOtherPermanentTargetFilter(
-                MagicTargetFilterFactory.NONLAND_NONTOKEN_PERMANENT,
-                event.getPermanent()
-            );
-            final Collection<MagicPermanent> targets = game.filterPermanents(event.getPlayer(), AllOtherPermanent);
-            game.doAction(new MagicDestroyAction(targets));
+            game.doAction(new DestroyAction(
+                NONLAND_NONTOKEN_PERMANENT
+                .except(event.getPermanent())
+                .filter(event)
+            ));
         }
     }
 ]

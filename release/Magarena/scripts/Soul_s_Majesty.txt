@@ -1,5 +1,5 @@
 name=Soul's Majesty
-image=http://mtgimage.com/card/soul%27s%20majesty.jpg
+image=http://magiccards.info/scans/en/cfx/92.jpg
 value=3.080
 rarity=R
 type=Sorcery

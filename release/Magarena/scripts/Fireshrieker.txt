@@ -1,5 +1,5 @@
 name=Fireshrieker
-image=http://mtgimage.com/card/fireshrieker.jpg
+image=http://magiccards.info/scans/en/cns/199.jpg
 value=3.625
 rarity=U
 type=Artifact
@@ -8,4 +8,4 @@ cost={3}
 ability=Equipped creature has double strike.;\
         Equip {2}
 timing=equipment
-oracle=Equipped creature has double strike. Equip {2}
+oracle=Equipped creature has double strike.\nEquip {2}

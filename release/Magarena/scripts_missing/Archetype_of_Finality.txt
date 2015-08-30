@@ -1,6 +1,6 @@
 name=Archetype of Finality
-image=http://mtgimage.com/card/archetype%20of%20finality.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bng/58.jpg
+value=3.466
 rarity=U
 type=Enchantment,Creature
 subtype=Gorgon
@@ -8,5 +8,5 @@ cost={4}{B}{B}
 pt=2/3
 ability=Creatures you control have deathtouch.;\
         Creatures your opponents control lose deathtouch and can't have or gain deathtouch.
-timing=main
-oracle=Creatures you control have deathtouch. Creatures your opponents control lose deathtouch and can't have or gain deathtouch.
+timing=enchantment
+oracle=Creatures you control have deathtouch.\nCreatures your opponents control lose deathtouch and can't have or gain deathtouch.

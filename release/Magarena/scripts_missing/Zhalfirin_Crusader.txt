@@ -1,5 +1,5 @@
 name=Zhalfirin Crusader
-image=http://mtgimage.com/card/zhalfirin%20crusader.jpg
+image=http://magiccards.info/scans/en/vma/54.jpg
 value=2.500
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Flanking;\
         {1}{W}: The next 1 damage that would be dealt to SN this turn is dealt to target creature or player instead.
 timing=main
-oracle=Flanking. {1}{W}: The next 1 damage that would be dealt to Zhalfirin Crusader this turn is dealt to target creature or player instead.
+oracle=Flanking\n{1}{W}: The next 1 damage that would be dealt to Zhalfirin Crusader this turn is dealt to target creature or player instead.

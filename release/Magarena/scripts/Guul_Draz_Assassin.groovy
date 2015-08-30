@@ -30,7 +30,7 @@
             final int amount = source.getCounters(MagicCounterType.Level) >= 4 ? -4:-2;
             return new MagicEvent(
                 source,
-                MagicTargetChoice.NEG_TARGET_CREATURE,
+                NEG_TARGET_CREATURE,
                 new MagicWeakenTargetPicker(amount,amount),
                 amount,
                 this,
@@ -42,7 +42,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int amount = event.getRefInt();
             event.processTargetPermanent(game, {
-                game.doAction(new MagicChangeTurnPTAction(it,amount,amount));
+                game.doAction(new ChangeTurnPTAction(it,amount,amount));
             });
         }
     }

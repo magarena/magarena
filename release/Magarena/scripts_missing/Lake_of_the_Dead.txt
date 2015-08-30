@@ -1,10 +1,10 @@
 name=Lake of the Dead
-image=http://mtgimage.com/card/lake%20of%20the%20dead.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vma/302.jpg
+value=4.000
 rarity=R
 type=Land
 ability=If SN would enter the battlefield, sacrifice a Swamp instead. If you do, put SN onto the battlefield. If you don't, put it into its owner's graveyard.;\
         {T}: Add {B} to your mana pool.;\
         {T}, Sacrifice a Swamp: Add {B}{B}{B}{B} to your mana pool.
-timing=main
-oracle=If Lake of the Dead would enter the battlefield, sacrifice a Swamp instead. If you do, put Lake of the Dead onto the battlefield. If you don't, put it into its owner's graveyard. {T}: Add {B} to your mana pool. {T}, Sacrifice a Swamp: Add {B}{B}{B}{B} to your mana pool.
+timing=land
+oracle=If Lake of the Dead would enter the battlefield, sacrifice a Swamp instead. If you do, put Lake of the Dead onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add {B} to your mana pool.\n{T}, Sacrifice a Swamp: Add {B}{B}{B}{B} to your mana pool.

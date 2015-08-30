@@ -1,6 +1,6 @@
 name=Forfend
-image=http://mtgimage.com/card/forfend.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mt/10.jpg
+value=2.028
 rarity=C
 type=Instant
 cost={1}{W}

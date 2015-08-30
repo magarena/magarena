@@ -1,9 +1,9 @@
 name=Jayemdae Tome
-image=http://mtgimage.com/card/jayemdae%20tome.jpg
-value=3.085
-rarity=R
+image=http://magiccards.info/scans/en/ori/231.jpg
+value=2.500
+rarity=U
 type=Artifact
 cost={4}
-ability={4},{T}: Draw a card.
+ability={4}, {T}: Draw a card.
 timing=artifact
 oracle={4}, {T}: Draw a card.

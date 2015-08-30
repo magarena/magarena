@@ -1,6 +1,6 @@
 name=Earwig Squad
-image=http://mtgimage.com/card/earwig%20squad.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mma/82.jpg
+value=4.238
 rarity=R
 type=Creature
 subtype=Goblin,Rogue
@@ -9,4 +9,4 @@ pt=5/3
 ability=Prowl {2}{B};\
         When SN enters the battlefield, if its prowl cost was paid, search target opponent's library for three cards and exile them. Then that player shuffles his or her library.
 timing=main
-oracle=Prowl {2}{B}. When Earwig Squad enters the battlefield, if its prowl cost was paid, search target opponent's library for three cards and exile them. Then that player shuffles his or her library.
+oracle=Prowl {2}{B}\nWhen Earwig Squad enters the battlefield, if its prowl cost was paid, search target opponent's library for three cards and exile them. Then that player shuffles his or her library.

@@ -1,9 +1,0 @@
-name=Barren Glory
-image=http://mtgimage.com/card/barren%20glory.jpg
-value=2.500
-rarity=R
-type=Enchantment
-cost={4}{W}{W}
-ability=At the beginning of your upkeep, if you control no permanents other than SN and have no cards in hand, you win the game.
-timing=main
-oracle=At the beginning of your upkeep, if you control no permanents other than Barren Glory and have no cards in hand, you win the game.

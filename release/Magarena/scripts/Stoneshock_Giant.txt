@@ -1,5 +1,5 @@
 name=Stoneshock Giant
-image=http://mtgimage.com/card/stoneshock%20giant.jpg
+image=http://magiccards.info/scans/en/ths/142.jpg
 value=3.106
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=5/4
 ability={6}{R}{R}: Monstrosity 3.;\
         When SN becomes monstrous, creatures without flying your opponents control can't block this turn.
 timing=main
-oracle={6}{R}{R}: Monstrosity 3. When Stoneshock Giant becomes monstrous, creatures without flying your opponents control can't block this turn.
+oracle={6}{R}{R}: Monstrosity 3.\nWhen Stoneshock Giant becomes monstrous, creatures without flying your opponents control can't block this turn.

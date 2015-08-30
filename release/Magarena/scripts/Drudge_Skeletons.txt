@@ -1,5 +1,5 @@
 name=Drudge Skeletons
-image=http://mtgimage.com/card/drudge%20skeletons.jpg
+image=http://magiccards.info/scans/en/gvl/36.jpg
 value=4.014
 rarity=C
 type=Creature

@@ -1,11 +1,11 @@
 name=Razor Boomerang
-image=http://mtgimage.com/card/razor%20boomerang.jpg
-value=2.500
+image=http://magiccards.info/scans/en/wwk/129.jpg
+value=0.795
 rarity=U
 type=Artifact
 subtype=Equipment
 cost={3}
 ability=Equipped creature has "{T}, Unattach SN: SN deals 1 damage to target creature or player. Return SN to its owner's hand.";\
         Equip {2}
-timing=main
-oracle=Equipped creature has "{T}, Unattach Razor Boomerang: Razor Boomerang deals 1 damage to target creature or player. Return Razor Boomerang to its owner's hand.". Equip {2}
+timing=equipment
+oracle=Equipped creature has "{T}, Unattach Razor Boomerang: Razor Boomerang deals 1 damage to target creature or player. Return Razor Boomerang to its owner's hand."\nEquip {2}

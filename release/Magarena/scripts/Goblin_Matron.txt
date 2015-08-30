@@ -1,5 +1,5 @@
 name=Goblin Matron
-image=http://mtgimage.com/card/goblin%20matron.jpg
+image=http://magiccards.info/scans/en/vma/168.jpg
 value=4.500
 rarity=U
 type=Creature

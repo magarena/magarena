@@ -1,5 +1,5 @@
 name=Gempalm Strider
-image=http://mtgimage.com/card/gempalm%20strider.jpg
+image=http://magiccards.info/scans/en/evg/6.jpg
 value=3.397
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=Cycling {2}{G}{G};\
         When you cycle SN, Elf creatures get +2/+2 until end of turn.
 timing=main
-oracle=Cycling {2}{G}{G}. When you cycle Gempalm Strider, Elf creatures get +2/+2 until end of turn.
+oracle=Cycling {2}{G}{G}\nWhen you cycle Gempalm Strider, Elf creatures get +2/+2 until end of turn.

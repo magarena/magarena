@@ -1,5 +1,5 @@
 name=Toxic Iguanar
-image=http://mtgimage.com/card/toxic%20iguanar.jpg
+image=http://magiccards.info/scans/en/cfx/72.jpg
 value=2.967
 rarity=C
 type=Creature

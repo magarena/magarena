@@ -1,5 +1,5 @@
 name=Faerie Harbinger
-image=http://mtgimage.com/card/faerie%20harbinger.jpg
+image=http://magiccards.info/scans/en/lw/61.jpg
 value=3.128
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=flash;flying;\
         When SN enters the battlefield, you may search your library for a Faerie card, reveal it, then shuffle your library and put that card on top of it.
 timing=main
-oracle=Flash. Flying. When Faerie Harbinger enters the battlefield, you may search your library for a Faerie card, reveal it, then shuffle your library and put that card on top of it.
+oracle=Flash\nFlying\nWhen Faerie Harbinger enters the battlefield, you may search your library for a Faerie card, reveal it, then shuffle your library and put that card on top of it.

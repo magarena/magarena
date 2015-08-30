@@ -1,11 +1,11 @@
 name=Brainwash
-image=http://mtgimage.com/card/brainwash.jpg
-value=2.500
+image=http://magiccards.info/scans/en/5e/289.jpg
+value=2.796
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={W}
 ability=Enchant creature;\
         Enchanted creature can't attack unless its controller pays {3}.
-timing=main
-oracle=Enchant creature. Enchanted creature can't attack unless its controller pays {3}.
+timing=aura
+oracle=Enchant creature\nEnchanted creature can't attack unless its controller pays {3}.

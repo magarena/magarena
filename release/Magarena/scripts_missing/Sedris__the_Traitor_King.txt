@@ -1,6 +1,6 @@
 name=Sedris, the Traitor King
-image=http://mtgimage.com/card/sedris%2C%20the%20traitor%20king.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ala/193.jpg
+value=3.579
 rarity=M
 type=Legendary,Creature
 subtype=Zombie,Warrior

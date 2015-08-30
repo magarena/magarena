@@ -1,10 +1,10 @@
 name=Beastmaster Ascension
-image=http://mtgimage.com/card/beastmaster%20ascension.jpg
+image=http://magiccards.info/scans/en/c14/186.jpg
 value=4.049
 rarity=R
 type=Enchantment
 cost={2}{G}
-ability=As long as SN has seven or more quest counters on it, creatures you control get +5/+5.
+ability=Whenever a creature you control attacks, you may put a quest counter on SN.;\
+        As long as SN has seven or more quest counters on it, creatures you control get +5/+5.
 timing=enchantment
-requires_groovy_code
-oracle=Whenever a creature you control attacks, you may put a quest counter on Beastmaster Ascension. As long as Beastmaster Ascension has seven or more quest counters on it, creatures you control get +5/+5.
+oracle=Whenever a creature you control attacks, you may put a quest counter on Beastmaster Ascension.\nAs long as Beastmaster Ascension has seven or more quest counters on it, creatures you control get +5/+5.

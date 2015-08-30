@@ -1,5 +1,5 @@
 name=Town Sentry
-image=http://mtgimage.com/card/town%20sentry.jpg
+image=http://magiccards.info/scans/en/po2/145.jpg
 value=2.283
 rarity=C
 type=Creature

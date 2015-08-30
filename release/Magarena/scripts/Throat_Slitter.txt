@@ -1,5 +1,5 @@
 name=Throat Slitter
-image=http://mtgimage.com/card/throat%20slitter.jpg
+image=http://magiccards.info/scans/en/pc2/37.jpg
 value=3.115
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=2/2
 ability=ninjutsu {2}{B}
 timing=main
 requires_groovy_code
-oracle=Ninjutsu {2}{B}. Whenever Throat Slitter deals combat damage to a player, destroy target nonblack creature that player controls.
+oracle=Ninjutsu {2}{B}\nWhenever Throat Slitter deals combat damage to a player, destroy target nonblack creature that player controls.

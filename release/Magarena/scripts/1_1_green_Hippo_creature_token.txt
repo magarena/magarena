@@ -1,6 +1,6 @@
 name=1/1 green Hippo creature token
 token=Hippo
-image=http://www.magiclibrarities.net/rarities/magic-the-gathering-online-hippo-token-invasion-old.jpg
+image=http://cdn.staticneo.com/w/mtg/8/82/Hippo.jpg
 value=1
 type=Creature
 subtype=Hippo

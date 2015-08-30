@@ -1,6 +1,6 @@
 name=Ogre Enforcer
-image=http://mtgimage.com/card/ogre%20enforcer.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vi/89.jpg
+value=3.562
 rarity=R
 type=Creature
 subtype=Ogre

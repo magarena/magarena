@@ -1,5 +1,5 @@
 name=Skull Catapult
-image=http://mtgimage.com/card/skull%20catapult.jpg
+image=http://magiccards.info/scans/en/cstd/46.jpg
 value=2.795
 rarity=U
 type=Artifact

@@ -1,6 +1,6 @@
 name=Latulla's Orders
-image=http://mtgimage.com/card/latulla%27s%20orders.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pr/96.jpg
+value=3.029
 rarity=C
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={1}{R}
 ability=Flash;\
         Enchant creature;\
         Whenever enchanted creature deals combat damage to defending player, you may destroy target artifact that player controls.
-timing=main
-oracle=Flash. Enchant creature. Whenever enchanted creature deals combat damage to defending player, you may destroy target artifact that player controls.
+timing=aura
+oracle=Flash\nEnchant creature\nWhenever enchanted creature deals combat damage to defending player, you may destroy target artifact that player controls.

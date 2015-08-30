@@ -1,5 +1,5 @@
 name=Dauntless Dourbark
-image=http://mtgimage.com/card/dauntless%20dourbark.jpg
+image=http://magiccards.info/scans/en/lw/203.jpg
 value=4.223
 rarity=R
 type=Creature
@@ -9,4 +9,4 @@ pt=*/*
 ability=SN's power and toughness are each equal to the number of Forests and Treefolk you control.;\
         SN has trample as long as you control another Treefolk.
 timing=main
-oracle=Dauntless Dourbark's power and toughness are each equal to the number of Forests you control plus the number of Treefolk you control. Dauntless Dourbark has trample as long as you control another Treefolk.
+oracle=Dauntless Dourbark's power and toughness are each equal to the number of Forests you control plus the number of Treefolk you control.\nDauntless Dourbark has trample as long as you control another Treefolk.

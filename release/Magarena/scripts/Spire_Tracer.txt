@@ -1,5 +1,5 @@
 name=Spire Tracer
-image=http://mtgimage.com/card/spire%20tracer.jpg
+image=http://magiccards.info/scans/en/gtc/135.jpg
 value=3.186
 rarity=C
 type=Creature

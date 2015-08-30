@@ -1,5 +1,5 @@
 name=Suq'Ata Assassin
-image=http://mtgimage.com/card/suq%27ata%20assassin.jpg
+image=http://magiccards.info/scans/en/vi/19.jpg
 value=3.051
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=fear
 timing=main
 requires_groovy_code=Crypt Cobra
-oracle=Fear. Whenever Suq'Ata Assassin attacks and isn't blocked, defending player gets a poison counter.
+oracle=Fear\nWhenever Suq'Ata Assassin attacks and isn't blocked, defending player gets a poison counter.

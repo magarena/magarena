@@ -1,5 +1,5 @@
 name=Crafty Pathmage
-image=http://mtgimage.com/card/crafty%20pathmage.jpg
+image=http://magiccards.info/scans/en/10e/77.jpg
 value=3.024
 rarity=C
 type=Creature

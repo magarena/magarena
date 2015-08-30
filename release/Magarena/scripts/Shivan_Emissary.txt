@@ -1,5 +1,5 @@
 name=Shivan Emissary
-image=http://mtgimage.com/card/shivan%20emissary.jpg
+image=http://magiccards.info/scans/en/in/166.jpg
 value=2.443
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=1/1
 ability=Kicker {1}{B};\
         When SN enters the battlefield, if it was kicked, destroy target nonblack creature. It can't be regenerated.
 timing=main
-oracle=Kicker {1}{B}. When Shivan Emissary enters the battlefield, if it was kicked, destroy target nonblack creature. It can't be regenerated.
+oracle=Kicker {1}{B}\nWhen Shivan Emissary enters the battlefield, if it was kicked, destroy target nonblack creature. It can't be regenerated.

@@ -1,5 +1,5 @@
 name=Foul Familiar
-image=http://mtgimage.com/card/foul%20familiar.jpg
+image=http://magiccards.info/scans/en/me2/90.jpg
 value=3.069
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=3/1
 ability=SN can't block.;\
         {B},Pay 1 life:Return SN to its owner's hand.
 timing=main
-oracle=Foul Familiar can't block. {B}, Pay 1 life: Return Foul Familiar to its owner's hand.
+oracle=Foul Familiar can't block.\n{B}, Pay 1 life: Return Foul Familiar to its owner's hand.

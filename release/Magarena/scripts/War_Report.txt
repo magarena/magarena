@@ -1,0 +1,9 @@
+name=War Report
+image=http://magiccards.info/scans/en/nph/26.jpg
+value=3.106
+rarity=C
+type=Instant
+cost={3}{W}
+timing=removal
+requires_groovy_code
+oracle=You gain life equal to the number of creatures on the battlefield plus the number of artifacts on the battlefield.

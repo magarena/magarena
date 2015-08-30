@@ -1,0 +1,11 @@
+name=Blazing Hellhound
+image=http://magiccards.info/scans/en/ori/210.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elemental,Hound
+cost={2}{B}{R}
+pt=4/3
+ability={1}, Sacrifice another creature: SN deals 1 damage to target creature or player.
+timing=main
+oracle={1}, Sacrifice another creature: Blazing Hellhound deals 1 damage to target creature or player.

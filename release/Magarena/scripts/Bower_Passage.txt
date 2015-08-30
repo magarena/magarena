@@ -1,0 +1,10 @@
+name=Bower Passage
+image=http://magiccards.info/scans/en/avr/170.jpg
+value=3.609
+rarity=U
+type=Enchantment
+cost={1}{G}
+# awkward wording as filter is evaluated with respect to blocker
+ability=Creatures with flying your opponents control can't block creatures your opponents control.
+timing=main
+oracle=Creatures with flying can't block creatures you control.

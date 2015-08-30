@@ -1,6 +1,6 @@
 name=Goblin Assassin
-image=http://mtgimage.com/card/goblin%20assassin.jpg
-value=2.500
+image=http://magiccards.info/scans/en/le/95.jpg
+value=3.364
 rarity=U
 type=Creature
 subtype=Goblin,Assassin

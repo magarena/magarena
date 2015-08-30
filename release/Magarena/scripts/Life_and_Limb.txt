@@ -1,5 +1,5 @@
 name=Life and Limb
-image=http://mtgimage.com/card/life%20and%20limb.jpg
+image=http://magiccards.info/scans/en/pc/133.jpg
 value=4.127
 rarity=R
 type=Enchantment

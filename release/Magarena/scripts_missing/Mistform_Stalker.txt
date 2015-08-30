@@ -1,6 +1,6 @@
 name=Mistform Stalker
-image=http://mtgimage.com/card/mistform%20stalker.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/98.jpg
+value=2.763
 rarity=U
 type=Creature
 subtype=Illusion
@@ -9,4 +9,4 @@ pt=1/1
 ability={1}: SN becomes the creature type of your choice until end of turn.;\
         {2}{U}{U}: SN gets +2/+2 and gains flying until end of turn.
 timing=main
-oracle={1}: Mistform Stalker becomes the creature type of your choice until end of turn. {2}{U}{U}: Mistform Stalker gets +2/+2 and gains flying until end of turn.
+oracle={1}: Mistform Stalker becomes the creature type of your choice until end of turn.\n{2}{U}{U}: Mistform Stalker gets +2/+2 and gains flying until end of turn.

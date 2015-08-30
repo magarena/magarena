@@ -1,5 +1,5 @@
 name=Dynacharge
-image=http://mtgimage.com/card/dynacharge.jpg
+image=http://magiccards.info/scans/en/rtr/92.jpg
 value=2.781
 rarity=C
 type=Instant
@@ -7,4 +7,4 @@ cost={R}
 effect=Target creature you control gets +2/+0 until end of turn.
 timing=pump
 requires_groovy_code
-oracle=Target creature you control gets +2/+0 until end of turn. Overload {2}{R}
+oracle=Target creature you control gets +2/+0 until end of turn.\nOverload {2}{R}

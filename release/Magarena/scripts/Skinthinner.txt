@@ -1,5 +1,5 @@
 name=Skinthinner
-image=http://mtgimage.com/card/skinthinner.jpg
+image=http://magiccards.info/scans/en/le/80.jpg
 value=2.259
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=Morph {3}{B}{B};\
         When SN is turned face up, destroy target nonblack creature. It can't be regenerated.
 timing=main
-oracle=Morph {3}{B}{B}. When Skinthinner is turned face up, destroy target nonblack creature. It can't be regenerated.
+oracle=Morph {3}{B}{B}\nWhen Skinthinner is turned face up, destroy target nonblack creature. It can't be regenerated.

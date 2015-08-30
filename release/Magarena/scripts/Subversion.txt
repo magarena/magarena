@@ -1,5 +1,5 @@
 name=Subversion
-image=http://mtgimage.com/card/subversion.jpg
+image=http://magiccards.info/scans/en/br/82.jpg
 value=4.045
 rarity=R
 type=Enchantment

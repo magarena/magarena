@@ -1,5 +1,5 @@
 name=Iron Star
-image=http://mtgimage.com/card/iron%20star.jpg
+image=http://magiccards.info/scans/en/8e/304.jpg
 value=1.330
 rarity=U
 type=Artifact

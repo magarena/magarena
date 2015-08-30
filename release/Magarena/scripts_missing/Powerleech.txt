@@ -1,9 +1,9 @@
 name=Powerleech
-image=http://mtgimage.com/card/powerleech.jpg
-value=2.500
+image=http://magiccards.info/scans/en/aq/64.jpg
+value=3.093
 rarity=U
 type=Enchantment
 cost={G}{G}
 ability=Whenever an artifact an opponent controls becomes tapped or an opponent activates an artifact's ability without {T} in its activation cost, you gain 1 life.
-timing=main
+timing=enchantment
 oracle=Whenever an artifact an opponent controls becomes tapped or an opponent activates an artifact's ability without {T} in its activation cost, you gain 1 life.

@@ -1,6 +1,6 @@
 name=Ordeal of Heliod
-image=http://mtgimage.com/card/ordeal%20of%20heliod.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ths/25.jpg
+value=3.535
 rarity=U
 type=Enchantment
 subtype=Aura
@@ -8,5 +8,5 @@ cost={1}{W}
 ability=Enchant creature;\
         Whenever enchanted creature attacks, put a +1/+1 counter on it. Then if it has three or more +1/+1 counters on it, sacrifice SN.;\
         When you sacrifice SN, you gain 10 life.
-timing=main
-oracle=Enchant creature. Whenever enchanted creature attacks, put a +1/+1 counter on it. Then if it has three or more +1/+1 counters on it, sacrifice Ordeal of Heliod. When you sacrifice Ordeal of Heliod, you gain 10 life.
+timing=aura
+oracle=Enchant creature\nWhenever enchanted creature attacks, put a +1/+1 counter on it. Then if it has three or more +1/+1 counters on it, sacrifice Ordeal of Heliod.\nWhen you sacrifice Ordeal of Heliod, you gain 10 life.

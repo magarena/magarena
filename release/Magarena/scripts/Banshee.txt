@@ -1,0 +1,11 @@
+name=Banshee
+image=http://magiccards.info/scans/en/me3/59.jpg
+value=2.561
+rarity=U
+type=Creature
+subtype=Spirit
+cost={2}{B}{B}
+pt=0/1
+timing=main
+requires_groovy_code
+oracle={X}, {T}: Banshee deals half X damage, rounded down, to target creature or player, and half X damage, rounded up, to you.

@@ -1,10 +1,10 @@
 name=Steely Resolve
-image=http://mtgimage.com/card/steely%20resolve.jpg
-value=2.500
+image=http://magiccards.info/scans/en/on/286.jpg
+value=3.862
 rarity=R
 type=Enchantment
 cost={1}{G}
 ability=As SN enters the battlefield, choose a creature type.;\
         Creatures of the chosen type have shroud.
-timing=main
-oracle=As Steely Resolve enters the battlefield, choose a creature type. Creatures of the chosen type have shroud.
+timing=enchantment
+oracle=As Steely Resolve enters the battlefield, choose a creature type.\nCreatures of the chosen type have shroud.

@@ -1,5 +1,5 @@
 name=Dazzling Ramparts
-image=http://mtgimage.com/card/dazzling%20ramparts.jpg
+image=http://magiccards.info/scans/en/ktk/6.jpg
 value=2.000
 rarity=U
 type=Creature
@@ -9,4 +9,4 @@ pt=0/7
 ability=Defender;\
         {1}{W}, {T}: Tap target creature.
 timing=main
-oracle=Defender. {1}{W}, {T}: Tap target creature.
+oracle=Defender\n{1}{W}, {T}: Tap target creature.

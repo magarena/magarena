@@ -1,5 +1,5 @@
 name=Faultgrinder
-image=http://mtgimage.com/card/faultgrinder.jpg
+image=http://magiccards.info/scans/en/cmd/122.jpg
 value=1.938
 rarity=C
 type=Creature
@@ -10,4 +10,4 @@ ability=trample;\
         When SN enters the battlefield, destroy target land.;\
         evoke {4}{R}
 timing=main
-oracle=Trample. When Faultgrinder enters the battlefield, destroy target land. Evoke {4}{R}
+oracle=Trample\nWhen Faultgrinder enters the battlefield, destroy target land.\nEvoke {4}{R}

@@ -1,5 +1,5 @@
 name=Gossamer Phantasm
-image=http://mtgimage.com/card/gossamer%20phantasm.jpg
+image=http://magiccards.info/scans/en/pc/55.jpg
 value=2.398
 rarity=C
 type=Creature
@@ -9,4 +9,4 @@ pt=2/1
 ability=flying;\
         When SN becomes the target of a spell or ability, sacrifice it.
 timing=main
-oracle=Flying. When Gossamer Phantasm becomes the target of a spell or ability, sacrifice it.
+oracle=Flying\nWhen Gossamer Phantasm becomes the target of a spell or ability, sacrifice it.

@@ -1,6 +1,6 @@
 name=Laboratory Maniac
-image=http://mtgimage.com/card/laboratory%20maniac.jpg
-value=2.500
+image=http://magiccards.info/scans/en/isd/61.jpg
+value=4.477
 rarity=R
 type=Creature
 subtype=Human,Wizard

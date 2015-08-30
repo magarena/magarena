@@ -1,9 +1,0 @@
-name=Call of the Wild
-image=http://mtgimage.com/card/call%20of%20the%20wild.jpg
-value=2.500
-rarity=R
-type=Enchantment
-cost={2}{G}{G}
-ability={2}{G}{G}: Reveal the top card of your library. If it's a creature card, put it onto the battlefield. Otherwise, put it into your graveyard.
-timing=main
-oracle={2}{G}{G}: Reveal the top card of your library. If it's a creature card, put it onto the battlefield. Otherwise, put it into your graveyard.

@@ -1,6 +1,6 @@
 name=Viridian Joiner
-image=http://mtgimage.com/card/viridian%20joiner.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mi/138.jpg
+value=3.655
 rarity=C
 type=Creature
 subtype=Elf,Druid

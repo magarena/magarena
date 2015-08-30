@@ -1,6 +1,6 @@
 name=Kentaro, the Smiling Cat
-image=http://mtgimage.com/card/kentaro%2C%20the%20smiling%20cat.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bok/13.jpg
+value=3.518
 rarity=R
 type=Legendary,Creature
 subtype=Human,Samurai
@@ -9,4 +9,4 @@ pt=2/1
 ability=Bushido 1;\
         You may pay {X} rather than pay the mana cost for Samurai spells you cast, where X is that spell's converted mana cost.
 timing=main
-oracle=Bushido 1. You may pay {X} rather than pay the mana cost for Samurai spells you cast, where X is that spell's converted mana cost.
+oracle=Bushido 1\nYou may pay {X} rather than pay the mana cost for Samurai spells you cast, where X is that spell's converted mana cost.

@@ -9,8 +9,10 @@ import magic.model.target.MagicTargetType;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.stack.MagicCardOnStack;
 import java.util.Collection;
+import java.util.EnumMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 public class MagicCard
@@ -74,6 +76,7 @@ public class MagicCard
     private final MagicPlayer owner;
     private final long id;
     private final int imageIndex;
+    private final Map<MagicCounterType, Integer> counters;
     private final boolean token;
     private boolean aiKnown = true;
     private boolean gameKnown = false;
@@ -93,6 +96,7 @@ public class MagicCard
     private MagicCard(final MagicCardDefinition aCardDefinition,final MagicPlayer aOwner,final long aId, final boolean aToken) {
         aCardDefinition.loadAbilities();
         cardDefinition = aCardDefinition;
+        counters = new EnumMap<MagicCounterType, Integer>(MagicCounterType.class);
         owner = aOwner;
         id = aId;
         imageIndex = (int)Math.abs(id % 1000);
@@ -103,6 +107,7 @@ public class MagicCard
         copyMap.put(sourceCard, this);
 
         cardDefinition = sourceCard.cardDefinition;
+        counters = new EnumMap<MagicCounterType,Integer>(sourceCard.counters);
         owner = copyMap.copy(sourceCard.owner);
         id = sourceCard.id;
         imageIndex = sourceCard.imageIndex;
@@ -143,7 +148,7 @@ public class MagicCard
     }
 
     public long getStateId() {
-        return getCardDefinition().getIndex();
+        return (getCardDefinition().getIndex() * 10L + (aiKnown ? 1 : 0) + (gameKnown ? 2 : 0) + (token ? 4 : 0)) ^ counters.hashCode();
     }
 
     public int getImageIndex() {
@@ -165,7 +170,7 @@ public class MagicCard
     public boolean isDoubleFaced() {
         return getCardDefinition().isDoubleFaced();
     }
-    
+
     public boolean isFlipCard() {
         return getCardDefinition().isFlipCard();
     }
@@ -201,10 +206,14 @@ public class MagicCard
         return getCardDefinition().getCost();
     }
 
-    public Iterable<? extends MagicEvent> getCostEvent() {
+    public Iterable<MagicEvent> getCostEvent() {
         return getCardDefinition().getCostEvent(this);
     }
     
+    public Iterable<MagicEvent> getAdditionalCostEvent() {
+        return getCardDefinition().getAdditionalCostEvent(this);
+    }
+
     public boolean isGameKnown() {
         return gameKnown;
     }
@@ -219,6 +228,31 @@ public class MagicCard
 
     public void setAIKnown(final boolean bool) {
         aiKnown = bool;
+    }
+
+    public boolean isIn(final MagicLocationType loc) {
+        switch (loc) {
+            case Stack:
+                return isOnStack();
+            case Play:
+                return isOnBattlefield();
+            case OwnersHand:
+                return isInHand();
+            case OwnersLibrary:
+                return isInLibrary();
+            case TopOfOwnersLibrary:
+                return getOwner().getLibrary().getCardAtTop() == this;
+            case BottomOfOwnersLibrary:
+                return getOwner().getLibrary().getCardAtBottom() == this;
+            case Graveyard:
+                return isInGraveyard();
+            case OpponentsGraveyard:
+                return false;
+            case Exile:
+                return isInExile();
+            default:
+                throw new RuntimeException("unknown location: \"" + loc + "\"");
+        }
     }
 
     public boolean isInHand() {
@@ -260,6 +294,12 @@ public class MagicCard
         return false;
     }
 
+    /*
+    public boolean isSuspended() {
+        return isInExile() && hasAbility(MagicAbility.Suspend) && hasCounters(MagicCounterType.Time);
+    }
+    */
+
     public MagicLocationType getLocation() {
         if (isInHand()) {
             return MagicLocationType.OwnersHand;
@@ -276,8 +316,8 @@ public class MagicCard
         } else {
             throw new RuntimeException(this + " not found");
         }
-    } 
-      
+    }
+
 
     @Override
     public String getName() {
@@ -325,7 +365,8 @@ public class MagicCard
     }
 
     private int getColorFlags() {
-        return getCardDefinition().getColorFlags();
+        final int init = getCardDefinition().getColorFlags();
+        return getCardDefinition().applyCDAColor(getGame(), getOwner(), init);
     }
 
     @Override
@@ -359,8 +400,8 @@ public class MagicCard
     @Override
     public Collection<MagicSourceActivation<? extends MagicSource>> getSourceActivations() {
         List<MagicSourceActivation<? extends MagicSource>> sourceActs = new LinkedList<>();
-        final Collection<MagicActivation<MagicCard>> activations = isInHand() ? 
-            getCardDefinition().getCardActivations() :
+        final Collection<MagicActivation<MagicCard>> activations = isInHand() ?
+            getCardDefinition().getHandActivations() :
             getCardDefinition().getGraveyardActivations();
         for (final MagicActivation<MagicCard> act : activations) {
             sourceActs.add(MagicSourceActivation.create(this, act));
@@ -411,10 +452,29 @@ public class MagicCard
 
         return false;
     }
+    
+    public boolean hasCounters() {
+        return counters.size() > 0;
+    }
+    
+    @Override
+    public int getCounters(final MagicCounterType counterType) {
+        final Integer cnt = counters.get(counterType);
+        return cnt != null ? cnt : 0;
+    }
 
     @Override
-    public boolean hasCounters(MagicCounterType counterType) {
-        // Some cards can have counters in different zones
-        return false;
+    public void changeCounters(final MagicCounterType counterType,final int amount) {
+        final int oldAmt = getCounters(counterType);
+        final int newAmt = oldAmt + amount;
+        if (newAmt == 0) {
+            counters.remove(counterType);
+        } else {
+            counters.put(counterType, newAmt);
+        }
+    }
+
+    public Collection<MagicCounterType> getCounterTypes() {
+        return counters.keySet();
     }
 }
