@@ -75,15 +75,24 @@ lodici
 melvin
 ShawnieBoy
 
-    up to commit 3d56e5ed118e8c58b150d4cb9fc12e0c0388a3fa
-    
-- options for the on screen game log accessed via a new menu icon on the log titlebar.
-- if log is switched off it is now completely transparent (issue #170).
-- add new deck pack from ubeefx.
-- add Russian UI translation.
-- keywords help page (keywords.txt) can now be translated.
+- options for game log accessed via a new menu icon on the its titlebar
+
+- game log is completely hidden when turned off (issue #170)
+
+- add new deck pack from ubeefx
+
+- add Russian UI translation
+
+- keywords help page (keywords.txt) can now be translated
+
+- added the following to the card script:
+  * ability: devoid
+  * ability: ingest
+  * ability: awaken <n> <cost>
  
 - fixed the following bugs:
+    fix: Undead Leotau should get +1/-1 instead of +1/+1
+    fix: Owl Familiar was missing flying
     miracle: check that card is still in hand when trigger resolves before casting
     prevent discarding card used to cast the spell as additional cost
     add "Cast SN with AI only if you have devotion to green" to Skyreaping
@@ -108,6 +117,10 @@ ShawnieBoy
     fix Shuriken's throw ability to be on itself instead of the equipped creature
 
 - added the following cards:
+Anchor to the Æther, Artificer's Epiphany, Chandra's Ignition,
+Deep-Sea Terror, Displacement Wave, Dominator Drone,
+Dwynen, Gilt-Leaf Daen, Fiery Impulse, Graveblade Marauder, Sheer Drop,
+Vine Snare, Woodland Bellower
 
 Release 1.64 (July 31, 2015)
 ============
