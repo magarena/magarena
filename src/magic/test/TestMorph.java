@@ -18,7 +18,7 @@ class TestMorph extends TestGameBuilder {
         P.setLife(5);
         addToLibrary(P, "Forest", 20);
         createPermanent(P, "Thousand Winds", false, 3);
-        createPermanent(P, "Island", false, 6);
+        createPermanent(P, "Island", false, 10);
         addToHand(P, "Backslide", 2);
 //        addToHand(P, "Lightning Bolt", 1);
 //        addToHand(P, "Ludevic's Test Subject", 2);

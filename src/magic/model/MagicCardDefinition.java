@@ -54,21 +54,6 @@ public class MagicCardDefinition implements MagicAbilityStore {
         }
     };
 
-    public static final MagicCardDefinition MORPH = new MagicCardDefinition() {
-        //definition for face down cards
-        @Override
-        protected void initialize() {
-            setName("");
-            setDistinctName("2/2 face-down creature");
-            setValue(1);
-            addType(MagicType.Creature);
-            setCost(MagicManaCost.create("{0}"));
-            setPowerToughness(2, 2);
-            setTiming(MagicTiming.Main);
-            setIndex(1000001);
-        }
-    };
-
     // name displayed in UI, may be repeated in tokens
     private String name;
 

@@ -24,10 +24,6 @@ public class CachedImagesProvider implements CardImagesProvider {
 
     @Override
     public BufferedImage getImage(final MagicCardDefinition cardDefinition, final int index, final boolean orig) {
-
-        if (cardDefinition == MagicCardDefinition.MORPH) {
-            return getMorphImage(orig);
-        }
         if (cardDefinition == MagicCardDefinition.UNKNOWN) {
             return IconImages.MISSING_CARD;
         }
