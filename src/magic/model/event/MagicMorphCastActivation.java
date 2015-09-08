@@ -61,7 +61,7 @@ public class MagicMorphCastActivation extends MagicHandCastActivation {
             final MagicCard card = event.getCard();
             game.doAction(new RemoveCardAction(card,MagicLocationType.OwnersHand));
 
-            final MagicCardDefinition morph = CardDefinitions.getCard("face-down creature");
+            final MagicCardDefinition morph = CardDefinitions.getCard("Morph");
                 
             final MagicCardOnStack cardOnStack=new MagicCardOnStack(
                 card,

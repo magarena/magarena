@@ -25,6 +25,7 @@ public class TurnFaceUpAction extends MagicAction {
             oldStatics = permanent.getStatics();
             
             game.doAction(ChangeStateAction.Clear(permanent, MagicPermanentState.FaceDown));
+            game.doAction(ChangeStateAction.Clear(permanent, MagicPermanentState.Manifest));
 
             newStatics = permanent.getStatics();
             game.removeStatics(permanent, oldStatics);

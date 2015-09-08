@@ -251,7 +251,11 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     @Override
     public MagicCardDefinition getCardDefinition() {
         if (isFaceDown()) {
-            return CardDefinitions.getCard("face-down creature");
+            if (hasState(MagicPermanentState.Manifest)) {
+                return CardDefinitions.getCard("Manifest");
+            } else {
+                return CardDefinitions.getCard("Morph");
+            }
         } else if (isFlipped()) {
             return cardDefinition.getFlippedDefinition();
         } else if (isTransformed()) {

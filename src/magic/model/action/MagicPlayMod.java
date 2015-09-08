@@ -141,6 +141,7 @@ public enum MagicPlayMod implements MagicPermanentAction {
                 game.doAction(new GainAbilityAction(perm, morphAct, MagicStatic.Forever));
             }
             perm.setState(MagicPermanentState.FaceDown);
+            perm.setState(MagicPermanentState.Manifest);
         }
     },
     MORPH() {
