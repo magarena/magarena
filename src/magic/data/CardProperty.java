@@ -179,8 +179,9 @@ public enum CardProperty {
         public void setProperty(final MagicCardDefinition card, final String value) {
             assert card.getName() == null;
             assert card.getDistinctName() == null;
-            card.setName(value);
-            card.setDistinctName(value);
+            final String[] names = value.split(SEMI);
+            card.setName(names[0]);
+            card.setDistinctName(names[names.length - 1]);
         }
     },
     EFFECT() {
