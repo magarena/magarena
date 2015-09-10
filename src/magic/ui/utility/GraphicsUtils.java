@@ -1,6 +1,5 @@
 package magic.ui.utility;
 
-import magic.ui.image.filter.WhiteColorSwapImageFilter;
 import java.awt.AlphaComposite;
 import java.awt.Color;
 import java.awt.Component;
@@ -34,18 +33,11 @@ import magic.data.GeneralConfig;
 import magic.ui.CardImagesProvider;
 import magic.ui.ScreenController;
 import magic.ui.image.filter.GrayScaleImageFilter;
+import magic.ui.image.filter.WhiteColorSwapImageFilter;
 import magic.ui.theme.Theme;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicFileSystem;
 
-/**
- * <p><code>GraphicsUtilities</code> contains a set of tools to perform
- * common graphics operations easily.
- *
- * @author Romain Guy <romain.guy@mac.com>
- * @author rbair
- * @author Karl Schaefer
- */
 final public class GraphicsUtils {
 
     private static final GrayScaleImageFilter GRAYSCALE_FILTER = new GrayScaleImageFilter();
