@@ -1,23 +1,22 @@
 package magic.ui.widget;
 
-import javax.swing.JPanel;
-
 import java.awt.AlphaComposite;
-import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.image.BufferedImage;
+import java.awt.Graphics;
+import java.awt.Image;
+import javax.swing.JPanel;
 
 @SuppressWarnings("serial")
 public class TransparentImagePanel extends JPanel {
 
-    private BufferedImage image;
+    private Image image;
     private float opacity = 1.0f;
 
     public void setOpacity(final float opacity) {
         this.opacity = opacity >= 1.0f ? 1.0f : opacity;
     }
 
-    public void setImage(final BufferedImage image) {
+    public void setImage(final Image image) {
         this.image = image;
     }
 

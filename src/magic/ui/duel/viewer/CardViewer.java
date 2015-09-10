@@ -2,7 +2,7 @@ package magic.ui.duel.viewer;
 
 import java.awt.BorderLayout;
 import java.awt.Cursor;
-import java.awt.Graphics;
+import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
@@ -146,7 +146,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
             }
 
             if (cardDefinition.isInvalid() && cardImage != IconImages.MISSING_CARD) {
-                setCardImage(getGreyScaleImage(cardImage));
+                setCardImage(GraphicsUtils.getGreyScaleImage(cardImage));
             } else {
                 setCardImage(cardImage);
             }
@@ -157,19 +157,11 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
         setCard(cardDefinition, 0);
     }
 
-    private void setCardImage(final BufferedImage newImage) {
+    private void setCardImage(final Image newImage) {
         cardPanel.setImage(newImage);
         repaint();
     }
 
-
-    private BufferedImage getGreyScaleImage(final BufferedImage image) {
-        final BufferedImage gsImage = new BufferedImage(image.getWidth(), image.getHeight(), BufferedImage.TYPE_BYTE_GRAY);
-        final Graphics gsg = gsImage.getGraphics();
-        gsg.drawImage(image, 0, 0, this);
-        gsg.dispose();
-        return gsImage;
-    }
 
     public void showDelayed(final int delay) {
         timer.setInitialDelay(delay);
