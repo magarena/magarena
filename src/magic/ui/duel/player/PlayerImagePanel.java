@@ -28,7 +28,7 @@ public class PlayerImagePanel extends AnimationPanel {
     private final CounterOverlay poisonCounter;
     private final CounterOverlay damageCounter;    
     private final BufferedImage activeImage;
-    private final BufferedImage inactiveImage;
+    private final Image inactiveImage;
     private PlayerViewerInfo playerInfo;
     private int life = 0;
     private int damageColorOpacity = 0;
