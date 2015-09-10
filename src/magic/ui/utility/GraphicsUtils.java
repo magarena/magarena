@@ -1,5 +1,6 @@
 package magic.ui.utility;
 
+import magic.ui.image.filter.WhiteColorSwapImageFilter;
 import java.awt.AlphaComposite;
 import java.awt.Color;
 import java.awt.Component;

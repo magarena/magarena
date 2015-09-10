@@ -1,12 +1,12 @@
-package magic.ui.utility;
+package magic.ui.image.filter;
 
 import java.awt.image.RGBImageFilter;
 import java.util.Arrays;
 
-class WhiteColorSwapImageFilter extends RGBImageFilter {
+public class WhiteColorSwapImageFilter extends RGBImageFilter {
     private final float[] filter;
 
-    WhiteColorSwapImageFilter(float[] arrays) {
+    public WhiteColorSwapImageFilter(float[] arrays) {
         super();
         filter = Arrays.copyOf(arrays, arrays.length);
         canFilterIndexColorModel = true;
