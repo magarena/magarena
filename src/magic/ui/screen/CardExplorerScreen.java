@@ -67,31 +67,33 @@ public class CardExplorerScreen
     public List<MenuButton> getMiddleActions() {
         final List<MenuButton> buttons = new ArrayList<>();
         buttons.add(
-                new ActionBarButton(
-                        IconImages.getIcon(MagicIcon.EDIT_ICON),
-                        UiString.get(_S3), UiString.get(_S4),
-                        new AbstractAction() {
-                            @Override
-                            public void actionPerformed(final ActionEvent e) {
-                                content.showCardScriptScreen();
-                            }
-                        })
+            new ActionBarButton(
+                IconImages.getIcon(MagicIcon.EDIT_ICON),
+                UiString.get(_S3), UiString.get(_S4),
+                new AbstractAction() {
+                    @Override
+                    public void actionPerformed(final ActionEvent e) {
+                        content.showCardScriptScreen();
+                    }
+                }
+            )
         );
         if (MagicSystem.isDevMode() || MagicSystem.isDebugMode()) {
             buttons.add(
-                    new ActionBarButton(
-                            IconImages.getIcon(MagicIcon.SAVE_ICON),
-                            "Save Missing Cards [DevMode Only]", "Creates CardsMissingInMagarena.txt which can be used by the Scripts Builder.",
-                            new AbstractAction() {
-                                @Override
-                                public void actionPerformed(final ActionEvent e) {
-                                    try {
-                                        saveMissingCardsList();
-                                    } catch (IOException e1) {
-                                        throw new RuntimeException(e1);
-                                    }
-                                }
-                            })
+                new ActionBarButton(
+                    IconImages.getIcon(MagicIcon.SAVE_ICON),
+                    "Save Missing Cards [DevMode Only]", "Creates CardsMissingInMagarena.txt which can be used by the Scripts Builder.",
+                    new AbstractAction() {
+                        @Override
+                        public void actionPerformed(final ActionEvent e) {
+                            try {
+                                saveMissingCardsList();
+                            } catch (IOException e1) {
+                                throw new RuntimeException(e1);
+                            }
+                        }
+                    }
+                )
             );
         }
         return buttons;
