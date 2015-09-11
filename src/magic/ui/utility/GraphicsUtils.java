@@ -166,6 +166,10 @@ final public class GraphicsUtils {
         return getCompatibleBufferedImage(width, height, Transparency.OPAQUE);
     }
 
+    public static BufferedImage getCompatibleBufferedImage(BufferedImage image) {
+        return getCompatibleBufferedImage(image.getWidth(), image.getHeight(), image.getTransparency());
+    }
+
     public static boolean isValidImageFile(final Path imageFilePath) {
         try {
             final BufferedImage image = ImageIO.read(imageFilePath.toFile());
@@ -284,6 +288,15 @@ final public class GraphicsUtils {
                 GRAYSCALE_FILTER
         );
         return Toolkit.getDefaultToolkit().createImage(fis);
+    }
+
+    public static BufferedImage getTranslucentImage(BufferedImage image, float opacity) {
+        final BufferedImage newImage = GraphicsUtils.getCompatibleBufferedImage(image);
+        final Graphics2D g2d = newImage.createGraphics();
+        g2d.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, opacity));
+        g2d.drawImage(image, 0, 0, null);
+        g2d.dispose();
+        return newImage;
     }
 
 }

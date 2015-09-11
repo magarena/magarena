@@ -12,7 +12,9 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicPermanent;
 import magic.model.DuelPlayerConfig;
 import magic.model.player.PlayerProfile;
+import magic.ui.image.CardProxyImageBuilder;
 import magic.ui.theme.PlayerAvatar;
+import magic.ui.utility.GraphicsUtils;
 import magic.utility.MagicResources;
 
 public final class IconImages {
@@ -55,20 +57,14 @@ public final class IconImages {
     }
 
     private static ImageIcon getSizedManaIcon(final int pos, final boolean big) {
-        final int imgW = 75;
-        final int imgH = 75;
-        final int icoW = 15;
-        final int icoH = 15;
-        final int bigW = 25;
-        final int bigH = 25;
+        final int imgW = MANA_ICON_SHEET.getWidth() / 10;
+        final int imgH = MANA_ICON_SHEET.getHeight() / 7;
         final int row = pos / 10;
         final int col = pos % 10;
         final BufferedImage subimage = MANA_ICON_SHEET.getSubimage(col * imgW, row * imgH, imgW, imgH);
-        if (big) {
-            return new ImageIcon(magic.ui.utility.GraphicsUtils.scale(subimage,bigW,bigH));
-        } else {
-            return new ImageIcon(magic.ui.utility.GraphicsUtils.scale(subimage,icoW,icoH));
-        }
+        return big 
+                ? new ImageIcon(GraphicsUtils.scale(subimage, 25, 25))
+                : new ImageIcon(GraphicsUtils.scale(subimage, 15, 15));
     }
 
     private static ImageIcon getManaIcon(final MagicIcon manaIcon, final boolean isBigIcon) {
@@ -200,5 +196,9 @@ public final class IconImages {
 
     public static BufferedImage getMissingCardImage() {
         return MISSING_CARD;
+    }
+
+    public static BufferedImage getMissingCardImage(MagicCardDefinition cardDef) {
+        return CardProxyImageBuilder.getInstance().getImage(cardDef, 0, true);
     }
 }

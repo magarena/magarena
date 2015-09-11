@@ -2,6 +2,15 @@ package magic.data;
 
 public enum MagicIcon {
 
+    // Future Sight symbols
+    FS_CREATURE("creature_black.png"),
+    FS_LAND("land_black.png"),
+    FS_INSTANT("instant_black.png"),
+    FS_ARTIFACT("artifact_black.png"),
+    FS_ENCHANTMENT("enchantment_black.png"),
+    FS_SORCERY("sorcery_black.png"),
+    FS_PLANESWALKER("planeswalker_black.png"),
+
     ILLEGAL_ICON("card_illegal.png"),
     LEGAL_ICON("card_legal.png"),
     BANNED_ICON("card_banned.png"),
@@ -180,6 +189,7 @@ public enum MagicIcon {
     MANA_ANY("anymana.gif"),
 
     // mana icons are stored in a sprite/icon sheet.
+    MANA_UNTAPPED(51),
     MANA_TAPPED(50),
     MANA_WHITE(24),
     MANA_BLUE(25),

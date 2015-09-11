@@ -1,17 +1,13 @@
 package magic.ui;
 
-import magic.ui.utility.GraphicsUtils;
 import java.awt.Dimension;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.Map;
 import magic.model.MagicCardDefinition;
+import magic.ui.utility.GraphicsUtils;
 import magic.utility.MagicFileSystem;
 
-/**
- * For a given MagicCardDefinition object returns the corresponding image from
- * the cards directory
- */
 public class CachedImagesProvider implements CardImagesProvider {
 
     private static final CardImagesProvider INSTANCE=new CachedImagesProvider();
@@ -27,21 +23,14 @@ public class CachedImagesProvider implements CardImagesProvider {
         if (cardDef == MagicCardDefinition.UNKNOWN) {
             return IconImages.getMissingCardImage();
         }
-        if (cardDef.isInvalid()) {
-            if (!MagicFileSystem.getCardImageFile(cardDef, index).exists()) {
-                return IconImages.getMissingCardImage();
-            }
-        } else if (!cardDef.isValid()) {
-            return IconImages.getMissingCardImage();
-        }        
         final File imageFile = MagicFileSystem.getCardImageFile(cardDef, index);
-        return orig ? getOriginalImage(imageFile) : getScaledImage(imageFile);
+        return orig ? getOriginalImage(imageFile, cardDef) : getScaledImage(imageFile, cardDef);
     }
 
-    private BufferedImage getOriginalImage(final File imageFile) {
+    private BufferedImage getOriginalImage(final File imageFile, final MagicCardDefinition cardDef) {
         final String cacheKey = imageFile.getName();
         if (!origImages.containsKey(cacheKey)) {
-            final BufferedImage image = ImageFileIO.toImg(imageFile, IconImages.getMissingCardImage());
+            final BufferedImage image = ImageFileIO.toImg(imageFile, IconImages.getMissingCardImage(cardDef));
             origImages.put(cacheKey, image);
             return image;
         } else {
@@ -60,8 +49,8 @@ public class CachedImagesProvider implements CardImagesProvider {
         }
     }
 
-    private BufferedImage getScaledImage(final File imageFile) {
-        return getScaledImage(imageFile.getName(), getOriginalImage(imageFile));
+    private BufferedImage getScaledImage(final File imageFile, final MagicCardDefinition cardDef) {
+        return getScaledImage(imageFile.getName(), getOriginalImage(imageFile, cardDef));
     }
 
     public static CardImagesProvider getInstance() {
