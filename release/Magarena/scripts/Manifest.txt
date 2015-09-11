@@ -4,6 +4,6 @@ value=1
 type=Creature
 cost={0}
 pt=2/2
-hidden
+overlay
 timing=main
 oracle=NONE

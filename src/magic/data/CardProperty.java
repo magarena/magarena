@@ -227,7 +227,12 @@ public enum CardProperty {
         public void setProperty(final MagicCardDefinition card, final String value) {
             card.setHidden();
         }
-    }
+    },
+    OVERLAY() {
+        public void setProperty(final MagicCardDefinition card, final String value) {
+            card.setOverlay();
+        }
+    },
     ;
 
     public static final String IMAGE_UPDATED_FORMAT = "yyyy-MM-dd";

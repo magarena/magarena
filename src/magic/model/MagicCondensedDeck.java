@@ -29,9 +29,7 @@ public class MagicCondensedDeck extends ArrayList<MagicCondensedCardDefinition> 
         super();
 
         for (final MagicCardDefinition card : list) {
-            if (!card.getName().isEmpty()) {
-                addCard(card, true);
-            }
+            addCard(card, true);
         }
     }
 
