@@ -25,14 +25,14 @@ public class CachedImagesProvider implements CardImagesProvider {
     @Override
     public BufferedImage getImage(final MagicCardDefinition cardDefinition, final int index, final boolean orig) {
         if (cardDefinition == MagicCardDefinition.UNKNOWN) {
-            return IconImages.MISSING_CARD;
+            return IconImages.getMissingCardImage();
         }
         if (cardDefinition.isInvalid()) {
             if (!MagicFileSystem.getCardImageFile(cardDefinition, index).exists()) {
-                return IconImages.MISSING_CARD;
+                return IconImages.getMissingCardImage();
             }
         } else if (!cardDefinition.isValid()) {
-            return IconImages.MISSING_CARD;
+            return IconImages.getMissingCardImage();
         }        
         final File imageFile = MagicFileSystem.getCardImageFile(cardDefinition, index);
         return orig ? getOriginalImage(imageFile) : getScaledImage(imageFile);
@@ -41,7 +41,7 @@ public class CachedImagesProvider implements CardImagesProvider {
     private BufferedImage getOriginalImage(final File imageFile) {
         final String cacheKey = imageFile.getName();
         if (!origImages.containsKey(cacheKey)) {
-            final BufferedImage image = ImageFileIO.toImg(imageFile, IconImages.MISSING_CARD);
+            final BufferedImage image = ImageFileIO.toImg(imageFile, IconImages.getMissingCardImage());
             origImages.put(cacheKey, image);
             return image;
         } else {

@@ -24,7 +24,7 @@ public final class IconImages {
     // BufferedImages
     public static final BufferedImage MISSING = loadImage("missing.png");
     public static final BufferedImage MISSING2 = loadImage("missing2.png");
-    public static final BufferedImage MISSING_CARD = loadImage("missing_card.png");
+    private static final BufferedImage MISSING_CARD = loadImage("missing_card.png");
     public static final BufferedImage WIZARD = loadImage("wizard.png");
 
     // default texture images
@@ -196,5 +196,9 @@ public final class IconImages {
 
     public static void getClearAvatarsCache() {
         avatarsMap.clear();
+    }
+
+    public static BufferedImage getMissingCardImage() {
+        return MISSING_CARD;
     }
 }

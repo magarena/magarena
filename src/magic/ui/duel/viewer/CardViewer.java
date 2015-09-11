@@ -124,7 +124,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
         
         if (cardDefinition == null) {
             currentCardDefinition = MagicCardDefinition.UNKNOWN;
-            setCardImage(IconImages.MISSING_CARD);
+            setCardImage(IconImages.getMissingCardImage());
 
         } else if (cardDefinition != currentCardDefinition || index != currentIndex) {
             currentCardDefinition = cardDefinition;
@@ -145,7 +145,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
                 }
             }
 
-            if (cardDefinition.isInvalid() && cardImage != IconImages.MISSING_CARD) {
+            if (cardDefinition.isInvalid() && cardImage != IconImages.getMissingCardImage()) {
                 setCardImage(GraphicsUtils.getGreyScaleImage(cardImage));
             } else {
                 setCardImage(cardImage);
