@@ -21,6 +21,8 @@ import magic.utility.MagicFileSystem.DataPath;
 @SuppressWarnings("serial")
 public class GameLogScreen extends TextFileReaderScreen implements IStatusBar {
 
+    private static boolean isBasicView = true;
+
     // translatable strings
     private static final String _S1 = "Logs directory";
     private static final String _S2 = "Opens the logs directory containing 'game.log' in the default file explorer.";
@@ -32,7 +34,6 @@ public class GameLogScreen extends TextFileReaderScreen implements IStatusBar {
 
     private static final Path LOGS_DIRECTORY = MagicFileSystem.getDataPath(DataPath.LOGS);
     private static final Path TEXT_FILE = LOGS_DIRECTORY.resolve("game.log");
-    private boolean isBasicView = true;
 
     public GameLogScreen() {
         reloadTextFile();
