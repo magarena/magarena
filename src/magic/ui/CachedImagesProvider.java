@@ -74,12 +74,4 @@ public class CachedImagesProvider implements CardImagesProvider {
         scaledImages.clear();
     }
 
-    private BufferedImage getMorphImage(final boolean orig) {
-        if (orig) {
-            return IconImages.CARD_BACK;
-        } else {
-            return getScaledImage("mtgCardBackFace", IconImages.CARD_BACK);
-        }
-    }
-
 }
