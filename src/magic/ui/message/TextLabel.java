@@ -176,26 +176,6 @@ public class TextLabel extends JPanel {
         }
     }
 
-    private static class EmptyComponent extends TComponent {
-
-        @Override
-        public boolean requiresNewLine() {
-
-            return false;
-        }
-
-        @Override
-        public Dimension getPreferredSize() {
-
-            return new Dimension(0,0);
-        }
-
-        @Override
-        public void paint(final JComponent com,final Graphics g,final int x,final int y) {
-
-        }
-    }
-
     private class TextComponent extends TComponent {
 
         private final String text;
