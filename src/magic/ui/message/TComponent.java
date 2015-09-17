@@ -9,15 +9,15 @@ abstract class TComponent {
     int lx;
     int ly;
 
-    public void setLocation(final int x, final int y) {
+    void setLocation(final int x, final int y) {
 
         this.lx = x;
         this.ly = y;
     }
 
-    public abstract boolean requiresNewLine();
+    abstract boolean requiresNewLine();
 
-    public abstract Dimension getPreferredSize();
+    abstract Dimension getPreferredSize();
 
-    public abstract void paint(final JComponent com, final Graphics g, final int x, final int y);
+    abstract void paint(final JComponent com, final Graphics g, final int x, final int y);
 }

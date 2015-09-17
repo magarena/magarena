@@ -20,7 +20,7 @@ class TextComponent extends TComponent {
     private final boolean choice;
     private final boolean newLine;
 
-    public TextComponent(final String text, final JComponent component, final Font font, final boolean choice) {
+    TextComponent(final String text, final JComponent component, final Font font, final boolean choice) {
         this.text = text;
         this.font = font;
         this.metrics = component.getFontMetrics(font);
@@ -34,17 +34,17 @@ class TextComponent extends TComponent {
     }
 
     @Override
-    public boolean requiresNewLine() {
+    boolean requiresNewLine() {
         return newLine;
     }
 
     @Override
-    public Dimension getPreferredSize() {
+    Dimension getPreferredSize() {
         return new Dimension(metrics.stringWidth(text) + 1, metrics.getHeight());
     }
 
     @Override
-    public void paint(final JComponent com, final Graphics g, final int x, final int y) {
+    void paint(final JComponent com, final Graphics g, final int x, final int y) {
         g.setColor(choice ? choiceColor : textColor);
         g.setFont(font);
         g.drawString(text, lx + x, ly + y + metrics.getAscent());
