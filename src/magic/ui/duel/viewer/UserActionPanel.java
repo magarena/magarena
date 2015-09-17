@@ -23,7 +23,7 @@ import magic.ui.IconImages;
 import magic.model.MagicGame;
 import magic.model.phase.MagicPhaseType;
 import magic.ui.SwingGameController;
-import magic.ui.widget.TextLabel;
+import magic.ui.message.TextLabel;
 
 @SuppressWarnings("serial")
 public class UserActionPanel extends JPanel implements ActionListener {

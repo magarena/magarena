@@ -8,7 +8,7 @@ import magic.data.MagicIcon;
 import magic.model.MagicMessage;
 import magic.ui.IconImages;
 import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.TextLabel;
+import magic.ui.message.TextLabel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

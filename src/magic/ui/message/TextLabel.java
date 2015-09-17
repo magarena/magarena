@@ -1,4 +1,4 @@
-package magic.ui.widget;
+package magic.ui.message;
 
 import magic.data.TextImages;
 import magic.ui.theme.Theme;
@@ -20,6 +20,7 @@ import java.util.List;
 import java.util.Map;
 import magic.ui.IconImages;
 import magic.ui.utility.MagicStyle;
+import magic.ui.widget.FontsAndBorders;
 
 public class TextLabel extends JPanel {
 

@@ -4,8 +4,8 @@ import magic.ui.SwingGameController;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.PanelButton;
-import magic.ui.widget.TextLabel;
 
+import magic.ui.message.TextLabel;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.Border;

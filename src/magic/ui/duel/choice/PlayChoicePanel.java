@@ -16,7 +16,7 @@ import magic.ui.SwingGameController;
 import magic.translate.UiString;
 import magic.ui.duel.viewer.UserActionPanel;
 import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.TextLabel;
+import magic.ui.message.TextLabel;
 
 @SuppressWarnings("serial")
 public class PlayChoicePanel extends JPanel implements ActionListener {
