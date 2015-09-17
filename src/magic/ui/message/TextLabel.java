@@ -1,15 +1,10 @@
 package magic.ui.message;
 
 import magic.data.TextImages;
-import magic.ui.theme.Theme;
-
-import javax.swing.JComponent;
 import javax.swing.JPanel;
 
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Insets;
@@ -18,7 +13,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import magic.ui.IconImages;
-import magic.ui.utility.MagicStyle;
 import magic.ui.widget.FontsAndBorders;
 
 public class TextLabel extends JPanel {
@@ -36,8 +30,6 @@ public class TextLabel extends JPanel {
     private final List<TComponent> components;
     private final int maxWidth;
     private final boolean center;
-    private Color textColor;
-    private Color choiceColor;
 
     static {
 
@@ -46,9 +38,6 @@ public class TextLabel extends JPanel {
     }
 
     public TextLabel(final String text,final int maxWidth,final boolean center) {
-
-        textColor=MagicStyle.getTheme().getTextColor();
-        choiceColor=MagicStyle.getTheme().getColor(Theme.COLOR_CHOICE_FOREGROUND);
         components=new ArrayList<TComponent>();
         this.maxWidth=maxWidth;
         this.center=center;
@@ -59,9 +48,7 @@ public class TextLabel extends JPanel {
     }
 
     public void setColors(final Color aTextColor,final Color aChoiceColor) {
-
-        this.textColor=aTextColor;
-        this.choiceColor=aChoiceColor;
+        TextComponent.setColors(aTextColor, aChoiceColor);
     }
 
     private void addComponent(final TComponent component) {
@@ -172,44 +159,6 @@ public class TextLabel extends JPanel {
         for (final TComponent component : components) {
 
             component.paint(this,g,cx,cy);
-        }
-    }
-
-    private class TextComponent extends TComponent {
-
-        private final String text;
-        private final Font font;
-        private final FontMetrics metrics;
-        private final boolean choice;
-        private final boolean newLine;
-
-        public TextComponent(final String text,final JComponent component,final Font font,final boolean choice) {
-
-            this.text=text;
-            this.font=font;
-            this.metrics=component.getFontMetrics(font);
-            this.choice=choice;
-            this.newLine=!(".".equals(text)||",".equals(text));
-        }
-
-        @Override
-        public boolean requiresNewLine() {
-
-            return newLine;
-        }
-
-        @Override
-        public Dimension getPreferredSize() {
-
-            return new Dimension(metrics.stringWidth(text)+1,metrics.getHeight());
-        }
-
-        @Override
-        public void paint(final JComponent com,final Graphics g,final int x,final int y) {
-
-            g.setColor(choice?choiceColor:textColor);
-            g.setFont(font);
-            g.drawString(text,lx+x,ly+y+metrics.getAscent());
         }
     }
 
