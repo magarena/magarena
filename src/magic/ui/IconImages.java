@@ -25,7 +25,6 @@ public final class IconImages {
     public static final BufferedImage MISSING = loadImage("missing.png");
     public static final BufferedImage MISSING2 = loadImage("missing2.png");
     public static final BufferedImage MISSING_CARD = loadImage("missing_card.png");
-    public static final BufferedImage CARD_BACK = loadImage("card_back.jpg");
     public static final BufferedImage WIZARD = loadImage("wizard.png");
 
     // default texture images
