@@ -16,7 +16,9 @@ public class ActionBarButton extends MenuButton {
     public ActionBarButton(ImageIcon icon, String actionName, String tooltip, AbstractAction action, boolean showSeparator) {
         super("", action, tooltip, showSeparator);
         setIcon(icon);
-        setToolTipText("<html><b>" + actionName + "</b><br>" + tooltip + "</html>");
+        if (tooltip != null) {
+            setToolTipText("<html><b>" + actionName + "</b><br>" + tooltip + "</html>");
+        }
     }
     public ActionBarButton(ImageIcon icon, String actionName, String tooltip, AbstractAction action) {
         this(icon, actionName, tooltip, action, true);
