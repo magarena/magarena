@@ -91,18 +91,9 @@ public enum MagicIcon {
     ATTACK("attack.gif"),
     BLOCK("block.gif"),
     BLOCKED("blocked.gif"),
-    MESSAGE("message.png"),
-    PROGRESS("progress.png"),
-    TROPHY("trophy.gif"),
-    GOLD("gold.png"),
-    SILVER("silver.png"),
-    BRONZE("bronze.png"),
-    CLOVER("clover.gif"),
     LOSE("lose.png"),
     TARGET("target.gif"),
     VALID("valid.gif"),
-    STRENGTH("strength.png"),
-    PICTURE("picture.png"),
 
     // ability icons
     FLYING("flying.png"),
