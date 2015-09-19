@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Set;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
+import magic.model.MagicCard;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.SwingGameController;
 
@@ -217,5 +218,30 @@ public class ImagePermanentsViewer extends JPanel {
 
     public boolean isValidChoice(final PermanentViewerInfo permanentInfo) {
         return validChoices.contains(permanentInfo.permanent);
+    }
+
+    ImagePermanentViewer getViewer(MagicCard card) {
+        for (final ImagePermanentViewer viewer : viewers) {
+            if (viewer.permanentInfo.magicCardId == card.getId()) {
+                return viewer;
+            }
+            for (final PermanentViewerInfo info : viewer.permanentInfo.linked) {
+                if (info.permanent.getCard().getId() == card.getId()) {
+                    return viewer;
+                }
+            }
+            for (final PermanentViewerInfo info : viewer.permanentInfo.blockers) {
+                if (info.permanent.getCard().getId() == card.getId()) {
+                    return viewer;
+                }
+            }
+        }
+        return null;
+    }
+
+    void highlightCard(ImagePermanentViewer aViewer, long cardId) {
+        if (aViewer != null) {
+            aViewer.doShowHighlight(cardId);
+        }
     }
 }

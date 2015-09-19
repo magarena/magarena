@@ -9,8 +9,8 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.RenderingHints;
+import java.awt.Stroke;
 import java.awt.Transparency;
-import java.awt.font.FontRenderContext;
 import java.awt.image.BufferedImage;
 import javax.swing.JToggleButton;
 import magic.data.GeneralConfig;
@@ -31,6 +31,9 @@ public class ZoneToggleButton extends JToggleButton {
     }
 
     private static final Font ZONE_FONT = new Font("Dialog", Font.BOLD, 14);
+    private static final Color DEFAULT_BORDER_COLOR = new Color(0, 0, 0, 100);
+    private static final Color HIGHLIGHT_COLOR = MagicStyle.getTranslucentColor(MagicStyle.getRolloverColor(), 110);
+    private static final Stroke DEFAULT_BORDER_STROKE = new BasicStroke(3.0f);
 
     private BufferedImage zoneIconImage = null;
     private final MagicIcon magicIcon;
@@ -41,6 +44,7 @@ public class ZoneToggleButton extends JToggleButton {
     private int imageOffset = 0;
     private boolean animateOnChange = false;
     private boolean isActive = false;
+    private boolean isHighlighted = false;
 
     public int getImageOffset() {
         return imageOffset;
@@ -84,6 +88,10 @@ public class ZoneToggleButton extends JToggleButton {
         final Image image = getZoneIconAsImage();
         final int x = getWidth() / 2 - image.getWidth(null) / 2;
 
+        if (isHighlighted) {
+            drawSelectedFill(g);
+        }
+        
         if (animateOnChange) {
             g.drawImage(image, x, 4, x+32, 4+32, 0+imageOffset, 0+imageOffset, 32-imageOffset, 32-imageOffset, null);
         } else {
@@ -95,28 +103,27 @@ public class ZoneToggleButton extends JToggleButton {
         if (isSelected()) {
             drawSelectedRoundBorder(g);
         }
+
     }
 
     private void drawSelectedFill(Graphics g) {
         final Graphics2D g2d = (Graphics2D) g;
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-        g2d.setColor(MagicStyle.getTranslucentColor(MagicStyle.getRolloverColor(), 110));
-        g2d.fillRoundRect(0, 0, getWidth(), getHeight()-1, 18, 18);
+        g2d.setColor(HIGHLIGHT_COLOR);
+        g2d.fillRoundRect(0, 0, getWidth(), getHeight()-1, 16, 16);
+        drawSelectedRoundBorder(g, MagicStyle.getRolloverColor());
     }
 
-    private void drawSelectedBorder(Graphics g) {
+    private void drawSelectedRoundBorder(Graphics g, Color aColor) {
         final Graphics2D g2d = (Graphics2D) g;
-        g2d.setStroke(new BasicStroke(4.0f));
-        g2d.setColor(MagicStyle.getRolloverColor());
-        g2d.drawRect(0, 0, getWidth(), getHeight());
+        g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        g2d.setStroke(DEFAULT_BORDER_STROKE);
+        g2d.setColor(aColor);
+        g2d.drawRoundRect(1, 1, getWidth()-3, getHeight()-3, 16, 16);
     }
 
     private void drawSelectedRoundBorder(Graphics g) {
-        final Graphics2D g2d = (Graphics2D) g;
-        g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-        g2d.setStroke(new BasicStroke(3.0f));
-        g2d.setColor(new Color(0, 0, 0, 100));
-        g2d.drawRoundRect(1, 1, getWidth()-3, getHeight()-3, 16, 16);
+        drawSelectedRoundBorder(g, DEFAULT_BORDER_COLOR);
     }
 
     private BufferedImage getZoneIconAsImage() {
@@ -135,8 +142,6 @@ public class ZoneToggleButton extends JToggleButton {
         g2d.setFont(ZONE_FONT);
         g2d.setColor(Color.BLACK);
         g2d.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
-        FontRenderContext frc = g2d.getFontRenderContext();
-        final int textHeight = Math.round(ZONE_FONT.getLineMetrics(text, frc).getHeight());
         final FontMetrics metrics = g2d.getFontMetrics(ZONE_FONT);
         int textWidth = metrics.stringWidth(text);
         int textX = x + ((iconImage.getWidth(null) / 2) - (textWidth / 2));
@@ -156,18 +161,37 @@ public class ZoneToggleButton extends JToggleButton {
         }
     }
 
-    public void doAlertAnimation() {
+    private void doAlertAnimation(int loopCount) {
         if (GeneralConfig.getInstance().isAnimateGameplay()) {
             timeline1 = new Timeline();
             timeline1.setDuration(200);
             timeline1.addPropertyToInterpolate(
                     Timeline.property("imageOffset").on(this).from(0).to(4));
-            timeline1.playLoop(4, Timeline.RepeatBehavior.REVERSE);
+            timeline1.playLoop(loopCount, Timeline.RepeatBehavior.REVERSE);
         }
+    }
+
+    public void doAlertAnimation() {
+        doAlertAnimation(4);
     }
 
     public boolean isActive() {
         return isActive;
+    }
+
+    void doHighlight(boolean b) {
+        if (b != isHighlighted) {
+            isHighlighted = b;
+            if (isHighlighted) {
+                doAlertAnimation(2);
+            } else {
+                if (timeline1 != null) {
+                    timeline1.abort();
+                    setImageOffset(0);
+                }
+            }
+            repaint();
+        }
     }
 
 }

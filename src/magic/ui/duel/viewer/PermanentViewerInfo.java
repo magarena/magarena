@@ -45,6 +45,7 @@ public class PermanentViewerInfo {
         }
     };
 
+    public final long magicCardId;
     public final MagicPermanent permanent;
     public final MagicCardDefinition cardDefinition;
     public final String name;
@@ -91,6 +92,7 @@ public class PermanentViewerInfo {
         attacking=permanent.isAttacking();
         blocking=permanent.isBlocking();
         blockingInvalid=permanent.getBlockedCreature().isInvalid();
+        magicCardId = permanent.getCard().getId();
 
         artifact=permanent.isEquipped() ||
             (permanent.isArtifact() && permanent.getEquippedCreature().isInvalid());

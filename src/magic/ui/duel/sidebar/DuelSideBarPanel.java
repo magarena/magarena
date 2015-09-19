@@ -9,6 +9,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
+import magic.model.MagicCard;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerZone;
 import magic.ui.IPlayerZoneListener;
@@ -173,6 +174,11 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
             }
         }
         throw new RuntimeException("Missing GamePlayerPanel for " + player.getName());
+    }
+
+    public void doHighlightPlayerZone(MagicCard card, MagicPlayerZone zone, boolean b) {
+        final GamePlayerPanel playerPanel = playerCompositePanels[card.getController().getIndex()].getPlayerPanel();
+        playerPanel.doHighlightPlayerZone(zone, b);
     }
 
     private class LayoutSlot {

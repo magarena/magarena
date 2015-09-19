@@ -1,5 +1,6 @@
 package magic.ui.duel;
 
+import magic.model.MagicCard;
 import magic.model.MagicCardList;
 import magic.model.event.MagicEvent;
 import magic.ui.SwingGameController;
@@ -79,6 +80,11 @@ public class TextModeBattlefieldPanel extends BattlefieldPanel {
     @Override
     public void setPlayCardFromHandAnimation(PlayCardAnimation event) {
         // not implemented
+    }
+
+    @Override
+    public void highlightCard(MagicCard card, boolean b) {
+        // not supported
     }
 
 }

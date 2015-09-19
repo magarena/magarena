@@ -101,4 +101,8 @@ public class GamePlayerPanel extends TexturedPanel implements ChoiceViewer {
         zoneButtonsPanel.doFlashPlayerHandZoneButton();
     }
 
+    public void doHighlightPlayerZone(MagicPlayerZone zone, boolean b) {
+        zoneButtonsPanel.doHighlightPlayerZone(zone, b);
+    }
+
 }

@@ -5,7 +5,9 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
+import java.awt.Rectangle;
 import javax.swing.JComponent;
+import magic.model.MagicMessage;
 
 class TextComponent extends TComponent {
 
@@ -15,6 +17,7 @@ class TextComponent extends TComponent {
     private final FontMetrics metrics;
     private final boolean isChoice;
     private final boolean newLine;
+    private final String cardInfo;
 
     TextComponent(
         final String text,
@@ -27,6 +30,7 @@ class TextComponent extends TComponent {
         this.text = text;
         this.isChoice = isChoice;
         this.choiceColor = aColor;
+        this.cardInfo = aCardInfo;
 
         final boolean isBoldFont = aCardInfo.isEmpty() == false && isChoice == false && !text.startsWith("#");
         this.font = isBoldFont ? aFont.deriveFont(Font.BOLD) : aFont;
@@ -52,5 +56,28 @@ class TextComponent extends TComponent {
         g.setFont(font);
         g.drawString(text, lx + x, ly + y + metrics.getAscent());
     }
-    
+
+    @Override
+    Rectangle getBounds() {
+        return new Rectangle(
+                lx,
+                ly,
+                metrics.stringWidth(text) + 1,
+                metrics.getHeight());
+    }
+
+    @Override
+    boolean isInteractive() {
+        return cardInfo.isEmpty() == false;
+    }
+
+    long getCardId() {
+        final String[] info = cardInfo.split(String.valueOf(MagicMessage.CARD_ID_DELIMITER));
+        if (info.length > 1) {
+            return Long.parseLong(info[1]);
+        } else {
+            return 0L;
+        }
+    }
+
 }

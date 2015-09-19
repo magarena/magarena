@@ -39,7 +39,7 @@ class StackButton extends PanelButton implements ChoiceViewer {
         sourceLabel.setForeground(ThemeFactory.getInstance().getCurrentTheme().getNameColor());
         panel.add(sourceLabel, BorderLayout.NORTH);
 
-        final TextLabel textLabel = new TextLabel(stackInfo.description, MESSAGE_FONT, maxWidth, false);
+        final TextLabel textLabel = new TextLabel(stackInfo.description, MESSAGE_FONT, maxWidth, false, aController);
         panel.add(textLabel, BorderLayout.CENTER);
     }
 

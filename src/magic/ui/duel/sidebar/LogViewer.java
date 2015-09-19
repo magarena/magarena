@@ -58,7 +58,7 @@ class LogViewer extends TexturedPanel {
     }
 
     private MessagePanel getNewMessagePanel(final MagicMessage message) {
-        return new MessagePanel(message, this);
+        return new MessagePanel(message, this, controller);
     }
 
     private class LogScrollPane extends JScrollPane {

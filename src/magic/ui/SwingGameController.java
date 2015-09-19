@@ -35,6 +35,7 @@ import magic.game.state.GameState;
 import magic.game.state.GameStateFileWriter;
 import magic.game.state.GameStateSnapshot;
 import magic.model.IUIGameController;
+import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.model.MagicColor;
@@ -305,6 +306,36 @@ public class SwingGameController implements IUIGameController {
         this.userActionPanel = userActionPanel;
     }
 
+    public void viewCardPopupCentered(final MagicObject cardObject, final int popupDelay) {
+
+        // mouse wheel rotation event can fire more than once
+        // so ignore all but the first event.
+        if (cardObject == cardPopup.getMagicObject()) {
+            return;
+        }
+
+        // ignore if user wants current popup to remain open
+        // so they can view ability icon tooltips.
+        if (isControlKeyDown && cardPopup.isVisible()) {
+            return;
+        }
+
+        final Rectangle containerZone = gamePanel.getBattlefieldPanelBounds();
+
+        // set popup image and size.
+        cardPopup.setCard(cardObject, containerZone.getSize());
+
+        final int x = containerZone.x + (int)((containerZone.getWidth() / 2) - (cardPopup.getWidth() / 2));
+        final int y = containerZone.y + (int)((containerZone.getHeight() / 2) - (cardPopup.getHeight() / 2));
+        cardPopup.setLocation(x,y);
+        
+        cardPopup.showDelayed(popupDelay);
+    }
+
+    public void viewCardPopupCentered(final MagicObject cardObject) {
+        viewCardPopupCentered(cardObject, getPopupDelay());
+    }
+
     /**
      *
      * @param cardObject
@@ -312,7 +343,12 @@ public class SwingGameController implements IUIGameController {
      * @param cardRect : screen position & size of selected card on battlefield.
      * @param popupAboveBelowOnly : if true then the popup will restrict its height to always fit above/below the selected card.
      */
-    public void viewCardPopup(final MagicObject cardObject, final int index, final Rectangle cardRect, final boolean popupAboveBelowOnly) {
+    public void viewCardPopup(
+        final MagicObject cardObject,
+        final int index,
+        final Rectangle cardRect,
+        final boolean popupAboveBelowOnly,
+        final int popupDelay) {
 
         // mouse wheel rotation event can fire more than once
         // so ignore all but the first event.
@@ -392,7 +428,11 @@ public class SwingGameController implements IUIGameController {
         }
 
         cardPopup.setLocation(x,y);
-        cardPopup.showDelayed(getPopupDelay());
+        cardPopup.showDelayed(popupDelay);
+    }
+
+    public void viewCardPopup(final MagicObject cardObject, final int index, final Rectangle cardRect, final boolean popupAboveBelowOnly) {
+        viewCardPopup(cardObject, index, cardRect, popupAboveBelowOnly, getPopupDelay());
     }
 
     public boolean isPopupVisible() {
@@ -967,5 +1007,27 @@ public class SwingGameController implements IUIGameController {
 
     public void doFlashPlayerHandZoneButton() {
         gamePanel.doFlashPlayerHandZoneButton();
+    }
+
+    public void highlightCard(long magicCardId, boolean b) {
+        if (magicCardId > 0) {
+            final MagicCard card = viewerInfo.getMagicCard(magicCardId);
+            if (card != MagicCard.NONE) {
+                gamePanel.highlightCard(card, b);
+            } else {
+                System.err.printf("Highlight failed! MagicCard #%d not found!\n", magicCardId);
+            }
+        }
+    }
+
+    public void showMagicCardImage(long magicCardId) {
+        if (magicCardId > 0) {
+            final MagicCard card = viewerInfo.getMagicCard(magicCardId);
+            if (card != MagicCard.NONE) {
+                viewCardPopupCentered(card, 0);
+            } else {
+                System.err.printf("Highlight failed! MagicCard #%d not found!\n", magicCardId);
+            }
+        }
     }
 }

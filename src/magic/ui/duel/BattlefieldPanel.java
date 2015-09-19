@@ -1,6 +1,7 @@
 package magic.ui.duel;
 
 import javax.swing.JPanel;
+import magic.model.MagicCard;
 import magic.model.MagicCardList;
 import magic.model.event.MagicEvent;
 import magic.ui.duel.animation.PlayCardAnimation;
@@ -25,5 +26,7 @@ public abstract class BattlefieldPanel extends JPanel {
     public abstract void setPlayCardFromHandAnimation(final PlayCardAnimation event);
     
     public abstract StackViewer getStackViewer();
+
+    public abstract void highlightCard(MagicCard card, boolean b);
 
 }

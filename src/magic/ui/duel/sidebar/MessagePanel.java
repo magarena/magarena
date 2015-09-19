@@ -12,6 +12,7 @@ import javax.swing.border.CompoundBorder;
 import magic.data.MagicIcon;
 import magic.model.MagicMessage;
 import magic.ui.IconImages;
+import magic.ui.SwingGameController;
 import magic.ui.message.TextLabel;
 import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
@@ -32,21 +33,21 @@ class MessagePanel extends JPanel {
 
     private final MagicMessage message;
 
-    MessagePanel(final MagicMessage message0, final JComponent container) {
+    MessagePanel(final MagicMessage message0, final JComponent container, SwingGameController aController) {
 
         message = message0;
 
         setOpaque(false);
         setBorder(SEPARATOR_BORDER);
 
-        setMessagePanelLayout(container);
+        setMessagePanelLayout(container, aController);
     }
 
     MagicMessage getMessage() {
         return message;
     }
 
-    private void setMessagePanelLayout(final JComponent container) {
+    private void setMessagePanelLayout(final JComponent container, SwingGameController aController) {
 
         final int GAP = 8; // pixels
         setLayout(new MigLayout("insets 0, gap " + GAP, "[][][grow,right]", "[top]"));
@@ -72,7 +73,8 @@ class MessagePanel extends JPanel {
             MESSAGE_FONT,
             textLabelWidth,
             false,
-            CHOICE_COLOR
+            CHOICE_COLOR,
+            aController
         );
 
         add(playerPanel);
