@@ -39,6 +39,7 @@ import magic.model.MagicPermanent;
 import magic.ui.SwingGameController;
 import magic.ui.theme.AbilityIcon;
 import magic.ui.utility.GraphicsUtils;
+import magic.ui.widget.FontsAndBorders;
 import magic.utility.MagicSystem;
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.ease.Spline;
@@ -199,6 +200,13 @@ public class AnnotatedCardPanel extends JPanel {
         g.drawImage(scaledImage, popupSize.width - imageOnlyPopupSize.width, 0, this);
         //
         drawIcons(g2d);
+
+        if (MagicSystem.isDevMode() && magicObject != null && magicObject instanceof MagicPermanent) {
+            final MagicPermanent card = (MagicPermanent) magicObject;
+            g.setFont(FontsAndBorders.FONT1);
+            GraphicsUtils.drawStringWithOutline(g, Long.toString(card.getCard().getId()), 2, 14);
+        }
+        
     }
 
     private BufferedImage getImageCopy(final BufferedImage image) {

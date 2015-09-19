@@ -276,6 +276,8 @@ public class ImagePermanentViewer extends JPanel {
                 g.drawImage(image, x1, y1, x2, y2, 0, 0, imageSize.width, imageSize.height, this);
             }
 
+            ImageDrawingUtils.drawCardId(g, linkedInfo.permanent.getCard().getId(), 0, 0);
+
             // Add overlays, unless card image size is so small the overlays would be unreadable.
             if (linkedRect.height > CONFIG.getOverlayMinimumHeight()) {
 

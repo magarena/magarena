@@ -241,6 +241,8 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
             //draw the card image
             g.drawImage(image, x1, y1, x2, y2, 0, 0, imageSize.width, imageSize.height, this);
 
+            ImageDrawingUtils.drawCardId(g, card.getId(), x1, 0);
+
             //draw the overlay icons
             if (showInfo) {
                 if (cardDefinition.isLand()) {

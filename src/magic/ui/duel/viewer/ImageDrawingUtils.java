@@ -22,6 +22,8 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Set;
 import magic.data.MagicIcon;
+import magic.ui.utility.GraphicsUtils;
+import magic.utility.MagicSystem;
 
 public class ImageDrawingUtils {
     public static void drawCostInfo(
@@ -465,4 +467,12 @@ public class ImageDrawingUtils {
             g.drawString(damage,dx,flip?y+14:y+28);
         }
     }
+
+    public static void drawCardId(final Graphics g, long id, int x, int y) {
+        if (MagicSystem.isDevMode()) {
+            g.setFont(FontsAndBorders.FONT1.deriveFont(11f));
+            GraphicsUtils.drawStringWithOutline(g, Long.toString(id), x + 6, y + 13);
+        }
+    }
+
 }
