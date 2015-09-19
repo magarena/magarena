@@ -6,39 +6,34 @@ import java.awt.Font;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
 import javax.swing.JComponent;
-import magic.ui.theme.Theme;
-import magic.ui.utility.MagicStyle;
 
 class TextComponent extends TComponent {
 
-    private static Color textColor = MagicStyle.getTheme().getTextColor();
-    private static Color choiceColor = MagicStyle.getTheme().getColor(Theme.COLOR_CHOICE_FOREGROUND);
-
+    private final Color choiceColor;
     private final String text;
     private final Font font;
     private final FontMetrics metrics;
-    private final boolean choice;
+    private final boolean isChoice;
     private final boolean newLine;
-    private final String cardInfo;
 
     TextComponent(
         final String text,
         final JComponent component,
         final Font aFont,
-        final boolean choice,
-        final String aCardInfo) {
-        
-        this.text = text;
-        this.font = aFont;
-        this.metrics = component.getFontMetrics(aFont);
-        this.choice = choice;
-        this.newLine = !(".".equals(text) || ",".equals(text));
-        this.cardInfo = aCardInfo;
-    }
+        final boolean isChoice,
+        final String aCardInfo,
+        final Color aColor) {
 
-    static void setColors(final Color aTextColor, final Color aChoiceColor) {
-        textColor = aTextColor;
-        choiceColor = aChoiceColor;
+        this.text = text;
+        this.isChoice = isChoice;
+        this.choiceColor = aColor;
+
+        final boolean isBoldFont = aCardInfo.isEmpty() == false && isChoice == false && !text.startsWith("#");
+        this.font = isBoldFont ? aFont.deriveFont(Font.BOLD) : aFont;
+        this.metrics = component.getFontMetrics(this.font);
+
+        this.newLine = !(".".equals(text) || ",".equals(text));
+
     }
 
     @Override
@@ -53,7 +48,7 @@ class TextComponent extends TComponent {
 
     @Override
     void paint(final JComponent com, final Graphics g, final int x, final int y) {
-        g.setColor(choice ? choiceColor : textColor);
+        g.setColor(text.startsWith("#") ? Color.DARK_GRAY : isChoice ? choiceColor : Color.BLACK);
         g.setFont(font);
         g.drawString(text, lx + x, ly + y + metrics.getAscent());
     }

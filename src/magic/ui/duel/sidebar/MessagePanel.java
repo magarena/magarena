@@ -24,6 +24,8 @@ class MessagePanel extends JPanel {
         FontsAndBorders.EMPTY_BORDER
     );
 
+    private static final Color CHOICE_COLOR = Color.RED.darker();
+
     private static int lastTurn = 0;
     private static int textLabelWidth = 0;
     private static final Font MESSAGE_FONT = FontsAndBorders.FONT1.deriveFont(Font.PLAIN);
@@ -69,9 +71,9 @@ class MessagePanel extends JPanel {
             message.getText(),
             MESSAGE_FONT,
             textLabelWidth,
-            false
+            false,
+            CHOICE_COLOR
         );
-        textLabel.setColors(Color.BLACK,Color.BLUE);
 
         add(playerPanel);
         add(textLabel);

@@ -14,6 +14,8 @@ import javax.swing.JPanel;
 import magic.data.TextImages;
 import magic.model.MagicMessage;
 import magic.ui.IconImages;
+import magic.ui.theme.Theme;
+import magic.ui.utility.MagicStyle;
 import magic.ui.widget.FontsAndBorders;
 import magic.utility.MagicSystem;
 
@@ -32,17 +34,19 @@ public class TextLabel extends JPanel {
     private final int maxWidth;
     private final boolean center;
     private final Font defaultFont;
+    private final Color choiceColor;
 
     static {
         final Toolkit tk = Toolkit.getDefaultToolkit();
         desktopHintsMap = (Map<?, ?>) (tk.getDesktopProperty("awt.font.desktophints"));
     }
 
-    public TextLabel(String text, Font aFont, int maxWidth, boolean center) {
+    public TextLabel(String text, Font aFont, int maxWidth, boolean center, Color aColor) {
 
         this.defaultFont = aFont;
         this.maxWidth = maxWidth;
         this.center = center;
+        this.choiceColor = aColor;
 
         components = new ArrayList<>();
 
@@ -54,11 +58,7 @@ public class TextLabel extends JPanel {
     }
 
     public TextLabel(final String text, final int maxWidth, final boolean center) {
-        this(text, FontsAndBorders.FONT1, maxWidth, center);
-    }
-
-    public void setColors(final Color aTextColor, final Color aChoiceColor) {
-        TextComponent.setColors(aTextColor, aChoiceColor);
+        this(text, FontsAndBorders.FONT1, maxWidth, center, MagicStyle.getTheme().getColor(Theme.COLOR_CHOICE_FOREGROUND));
     }
 
     private void addComponent(final TComponent component) {
@@ -81,9 +81,9 @@ public class TextLabel extends JPanel {
         if (textPart.charAt(0) == '{' && TextImages.contains(textPart)) {
             component = new IconComponent(IconImages.getIcon(TextImages.getIcon(textPart)));
         } else if (info) {
-            component = new TextComponent(textPart, this, FontsAndBorders.FONT0, isBlueInfo, aCardInfo);
+            component = new TextComponent(textPart, this, FontsAndBorders.FONT0, isBlueInfo, aCardInfo, choiceColor);
         } else {
-            component = new TextComponent(textPart, this, defaultFont, false, aCardInfo);
+            component = new TextComponent(textPart, this, defaultFont, false, aCardInfo, choiceColor);
         }
         return component;
     }
@@ -145,7 +145,7 @@ public class TextLabel extends JPanel {
                 addComponent(buildComponent(text.substring(startIndex, index), info, isBlueInfo));
                 startIndex = index + 1;
             } else if (ch == '>') {
-                final String s = String.format(info ? " (%s)" : "%s", text.substring(startIndex, index));
+                final String s = String.format(info ? "#%s" : "%s", text.substring(startIndex, index));
                 addComponent(buildComponent(s, info, isBlueInfo, cardInfo));
                 info = false;
                 isBlueInfo = false;
