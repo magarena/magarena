@@ -85,7 +85,7 @@ public class MagicMessage {
 
     private static final String CARD_TOKEN = "<%s" + CARD_ID_DELIMITER + "%d>";
 
-    private static String getCardToken(final MagicObject obj) {
+    public static String getCardToken(final MagicObject obj) {
 
         if (obj == null) {
             return "";

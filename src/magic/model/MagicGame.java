@@ -27,9 +27,7 @@ import magic.model.phase.MagicGameplay;
 import magic.model.phase.MagicPhase;
 import magic.model.phase.MagicPhaseType;
 import magic.model.phase.MagicStep;
-import magic.model.stack.MagicItemOnStack;
 import magic.model.stack.MagicStack;
-import magic.model.stack.MagicTriggerOnStack;
 import magic.model.target.MagicLegendaryCopiesFilter;
 import magic.model.target.MagicOtherPermanentTargetFilter;
 import magic.model.target.MagicPlaneswalkerCopiesFilter;
@@ -717,7 +715,7 @@ public class MagicGame {
         }
         final SortedSet<String> names=new TreeSet<String>();
         for (final MagicPermanent attacker : result) {
-            names.add(attacker.getName());
+            names.add(MagicMessage.getCardToken(attacker));
         }
         final StringBuilder builder = new StringBuilder(player + " attacks with ");
         MagicMessage.addNames(builder,names);
