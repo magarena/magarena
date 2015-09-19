@@ -8,6 +8,7 @@ import magic.model.MagicPermanentState;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import magic.model.MagicMessage;
 
 public class DestroyAction extends MagicAction {
 
@@ -68,8 +69,10 @@ public class DestroyAction extends MagicAction {
         numDestroyed = toBeDestroyed.size();
 
         for (final MagicPermanent permanent : toBeDestroyed) {
-            // Destroyed
-            game.logAppendMessage(permanent.getController(),permanent.getName()+" is destroyed.");
+            game.logAppendMessage(
+                permanent.getController(),
+                String.format("%s is destroyed.", MagicMessage.getCardToken(permanent))
+            );
         }
 
         game.doAction(new RemoveAllFromPlayAction(toBeDestroyed, MagicLocationType.Graveyard));
