@@ -1,6 +1,7 @@
 package magic.ui.duel.sidebar;
 
 import java.awt.Color;
+import java.awt.Font;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
@@ -16,6 +17,7 @@ class MessagePanel extends JPanel {
 
     private static int lastTurn = 0;
     private static int textLabelWidth = 0;
+    private static final Font MESSAGE_FONT = FontsAndBorders.FONT1.deriveFont(Font.PLAIN);
 
     private final MagicMessage message;
 
@@ -44,7 +46,12 @@ class MessagePanel extends JPanel {
                     (gap * 2);
         }
 
-        final TextLabel textLabel=new TextLabel(message.getText(), textLabelWidth, false);
+        final TextLabel textLabel = new TextLabel(
+            message.getText(),
+            MESSAGE_FONT,
+            textLabelWidth,
+            false
+        );
         textLabel.setColors(Color.BLACK,Color.BLUE);
 
         add(playerPanel);

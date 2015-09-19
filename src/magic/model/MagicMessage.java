@@ -8,6 +8,8 @@ import java.util.Iterator;
 
 public class MagicMessage {
 
+    public static final char CARD_ID_DELIMITER = '#';
+
     private final MagicPlayer player;
     private final int life;
     private final int turn;

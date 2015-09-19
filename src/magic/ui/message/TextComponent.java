@@ -19,13 +19,21 @@ class TextComponent extends TComponent {
     private final FontMetrics metrics;
     private final boolean choice;
     private final boolean newLine;
+    private final String cardInfo;
 
-    TextComponent(final String text, final JComponent component, final Font font, final boolean choice) {
+    TextComponent(
+        final String text,
+        final JComponent component,
+        final Font aFont,
+        final boolean choice,
+        final String aCardInfo) {
+        
         this.text = text;
-        this.font = font;
-        this.metrics = component.getFontMetrics(font);
+        this.font = aFont;
+        this.metrics = component.getFontMetrics(aFont);
         this.choice = choice;
         this.newLine = !(".".equals(text) || ",".equals(text));
+        this.cardInfo = aCardInfo;
     }
 
     static void setColors(final Color aTextColor, final Color aChoiceColor) {

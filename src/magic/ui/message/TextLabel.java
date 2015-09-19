@@ -2,6 +2,7 @@ package magic.ui.message;
 
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.Graphics;
 import java.awt.Insets;
@@ -11,8 +12,10 @@ import java.util.List;
 import java.util.Map;
 import javax.swing.JPanel;
 import magic.data.TextImages;
+import magic.model.MagicMessage;
 import magic.ui.IconImages;
 import magic.ui.widget.FontsAndBorders;
+import magic.utility.MagicSystem;
 
 @SuppressWarnings("serial")
 public class TextLabel extends JPanel {
@@ -28,20 +31,30 @@ public class TextLabel extends JPanel {
     private final List<TComponent> components;
     private final int maxWidth;
     private final boolean center;
+    private final Font defaultFont;
 
     static {
         final Toolkit tk = Toolkit.getDefaultToolkit();
         desktopHintsMap = (Map<?, ?>) (tk.getDesktopProperty("awt.font.desktophints"));
     }
 
-    public TextLabel(final String text, final int maxWidth, final boolean center) {
-        components = new ArrayList<>();
+    public TextLabel(String text, Font aFont, int maxWidth, boolean center) {
+
+        this.defaultFont = aFont;
         this.maxWidth = maxWidth;
         this.center = center;
-        setLayout(null);
+
+        components = new ArrayList<>();
+
         setOpaque(false);
+        setLayout(null);
+
         buildComponents(text);
         layoutComponents();
+    }
+
+    public TextLabel(final String text, final int maxWidth, final boolean center) {
+        this(text, FontsAndBorders.FONT1, maxWidth, center);
     }
 
     public void setColors(final Color aTextColor, final Color aChoiceColor) {
@@ -54,34 +67,53 @@ public class TextLabel extends JPanel {
         }
     }
 
-    private TComponent buildComponent(final String textPart, final boolean info, final boolean isBlueInfo) {
+    private TComponent buildComponent(
+            final String textPart,
+            final boolean info,
+            final boolean isBlueInfo,
+            final String aCardInfo) {
+
         if (textPart.isEmpty()) {
             return null;
         }
+
         final TComponent component;
         if (textPart.charAt(0) == '{' && TextImages.contains(textPart)) {
             component = new IconComponent(IconImages.getIcon(TextImages.getIcon(textPart)));
         } else if (info) {
-            component = new TextComponent(textPart, this, FontsAndBorders.FONT0, isBlueInfo);
+            component = new TextComponent(textPart, this, FontsAndBorders.FONT0, isBlueInfo, aCardInfo);
         } else {
-            component = new TextComponent(textPart, this, FontsAndBorders.FONT1, false);
+            component = new TextComponent(textPart, this, defaultFont, false, aCardInfo);
         }
         return component;
     }
 
+    private TComponent buildComponent(final String textPart, final boolean info, final boolean isBlueInfo) {
+        return buildComponent(textPart, info, isBlueInfo, "");
+    }
+
+    private String replaceWhitespace(final String text, final String replace) {
+        // whitespace = mutliple spaces, tabs, line breaks, form feeds, etc.
+        return text.replaceAll("\\s+", replace).trim();
+    }
+
     private void buildComponents(String text) {
-        text = text.replaceAll("\\s+", " ").trim() + ' ';
-        int startIndex = 0;
+
+        text = replaceWhitespace(text, " ") + ' ';
+
         boolean info = false;
         boolean isBlueInfo = false;
+        String cardInfo = "";
+        int startIndex = 0;
+
         for (int index = 0; index < text.length(); index++) {
             final char ch = text.charAt(index);
             if (ch == ' ') {
-                addComponent(buildComponent(text.substring(startIndex, index), info, isBlueInfo));
+                addComponent(buildComponent(text.substring(startIndex, index), info, isBlueInfo, cardInfo));
                 addComponent(SPACE_LABEL);
                 startIndex = index + 1;
             } else if (ch == '|') {
-                addComponent(buildComponent(text.substring(startIndex, index), info, isBlueInfo));
+                addComponent(buildComponent(text.substring(startIndex, index), info, isBlueInfo, cardInfo));
                 addComponent(BREAK_LABEL);
                 startIndex = index + 1;
             } else if (ch == '{') {
@@ -108,6 +140,26 @@ public class TextLabel extends JPanel {
                 addComponent(buildComponent(text.substring(startIndex, index), info, isBlueInfo));
                 startIndex = index + 1;
                 info = false;
+            } else if (ch == '<') {
+                cardInfo = text.substring(index + 1, text.indexOf(">", index + 1));
+                addComponent(buildComponent(text.substring(startIndex, index), info, isBlueInfo));
+                startIndex = index + 1;
+            } else if (ch == '>') {
+                final String s = String.format(info ? " (%s)" : "%s", text.substring(startIndex, index));
+                addComponent(buildComponent(s, info, isBlueInfo, cardInfo));
+                info = false;
+                isBlueInfo = false;
+                cardInfo = "";
+                startIndex = index + 1;
+            } else if (ch == MagicMessage.CARD_ID_DELIMITER) {
+                addComponent(buildComponent(text.substring(startIndex, index), info, isBlueInfo, cardInfo));
+                startIndex = index + 1;
+                if (MagicSystem.isDevMode()) {
+                    info = true;
+                    isBlueInfo = true;
+                } else {
+                    startIndex = text.indexOf(">", index + 1);
+                }
             }
         }
     }
