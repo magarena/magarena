@@ -57,6 +57,10 @@ public class TextLabel extends JPanel {
         layoutComponents();
     }
 
+    public TextLabel(String text, Font aFont, int maxWidth, boolean center) {
+        this(text, aFont, maxWidth, center, MagicStyle.getTheme().getColor(Theme.COLOR_CHOICE_FOREGROUND));
+    }
+
     public TextLabel(final String text, final int maxWidth, final boolean center) {
         this(text, FontsAndBorders.FONT1, maxWidth, center, MagicStyle.getTheme().getColor(Theme.COLOR_CHOICE_FOREGROUND));
     }
