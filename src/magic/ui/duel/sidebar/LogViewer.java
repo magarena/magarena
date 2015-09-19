@@ -1,6 +1,5 @@
 package magic.ui.duel.sidebar;
 
-import java.awt.Color;
 import java.awt.Component;
 import java.awt.event.AdjustmentEvent;
 import java.awt.event.AdjustmentListener;
@@ -9,7 +8,6 @@ import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
-import javax.swing.border.CompoundBorder;
 import magic.model.MagicMessage;
 import magic.ui.SwingGameController;
 import magic.ui.widget.FontsAndBorders;
@@ -18,11 +16,6 @@ import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class LogViewer extends TexturedPanel {
-
-    private static final CompoundBorder SEPARATOR_BORDER=BorderFactory.createCompoundBorder(
-        BorderFactory.createMatteBorder(0,0,1,0,Color.GRAY),
-        FontsAndBorders.EMPTY_BORDER
-    );
 
     private final SwingGameController controller;
     private final JPanel messagePanels;
@@ -65,10 +58,7 @@ class LogViewer extends TexturedPanel {
     }
 
     private MessagePanel getNewMessagePanel(final MagicMessage message) {
-        final MessagePanel panel = new MessagePanel(message, getWidth());
-        panel.setOpaque(false);
-        panel.setBorder(SEPARATOR_BORDER);
-        return panel;
+        return new MessagePanel(message, this);
     }
 
     private class LogScrollPane extends JScrollPane {

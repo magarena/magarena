@@ -23,7 +23,7 @@ public class TextLabel extends JPanel {
     private static final TComponent SPACE_LABEL = new EmptyComponent();
     private static final TComponent BREAK_LABEL = new EmptyComponent();
 
-    private static final int SPACE_WIDTH = 4;
+    private static final int SPACE_WIDTH = 3;
     private static final int LINE_HEIGHT = 16;
 
     private static final Map<?, ?> desktopHintsMap;
@@ -176,7 +176,7 @@ public class TextLabel extends JPanel {
                 y += LINE_HEIGHT;
             } else {
                 final Dimension csize = component.getPreferredSize();
-                if (component.requiresNewLine() && x + csize.width >= maxWidth) {
+                if (component.requiresNewLine() && x + csize.width > maxWidth) {
                     x = 0;
                     y += LINE_HEIGHT;
                 }
