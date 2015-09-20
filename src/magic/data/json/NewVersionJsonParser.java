@@ -68,7 +68,7 @@ public final class NewVersionJsonParser {
      *         The result is a positive integer if str1 is _numerically_ greater than str2. 
      *         The result is zero if the strings are _numerically_ equal.
      */
-    private static int versionCompare(String str1, String str2) {
+    public static int versionCompare(String str1, String str2) {
         String[] vals1 = str1.split("\\.");
         String[] vals2 = str2.split("\\.");
         int i = 0;
