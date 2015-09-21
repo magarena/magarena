@@ -29,7 +29,7 @@ class TextComponent extends TComponent {
         this.text = text;
         this.cardInfo = aCardInfo;
 
-        final boolean isBoldFont = aCardInfo.isEmpty() == false && !text.startsWith("#");
+        final boolean isBoldFont = isInteractive() && !text.startsWith("#");
         this.font = isBoldFont ? aFont.deriveFont(Font.BOLD) : aFont;
         this.metrics = component.getFontMetrics(this.font);
 
@@ -70,8 +70,8 @@ class TextComponent extends TComponent {
     }
 
     @Override
-    boolean isInteractive() {
-        return cardInfo.isEmpty() == false;
+    final boolean isInteractive() {
+        return cardInfo.isEmpty() == false && getCardId() > 0;
     }
 
     long getCardId() {
