@@ -1,0 +1,254 @@
+Adverse Conditions
+Akoum Firebird
+Akoum Hellkite
+Akoum Stonewaker
+Aligned Hedron Network
+Ally Encampment
+Altar's Reap
+Angel of Renewal
+Angelic Captain
+Angelic Gift
+Anticipate
+Bane of Bala Ged
+Barrage Tyrant
+Beastcaller Savant
+Belligerent Whiptail
+Benthic Infiltrator
+Blight Herder
+Blighted Cataract
+Blighted Fen
+Blighted Gorge
+Blighted Steppe
+Blighted Woodland
+Blisterpod
+Bloodbond Vampire
+Boiling Earth
+Bone Splinters
+Breaker of Armies
+Brilliant Spectrum
+Bring to Light
+Brood Butcher
+Brood Monitor
+Broodhunter Wurm
+Brutal Expulsion
+Call the Scions
+Canopy Vista
+Carrier Thrall
+Catacomb Sifter
+Chasm Guide
+Cinder Glade
+Cliffside Lookout
+Cloud Manta
+Clutch of Currents
+Coastal Discovery
+Complete Disregard
+Conduit of Ruin
+Coralhelm Guide
+Courier Griffin
+Crumble to Dust
+Cryptic Cruiser
+Culling Drone
+Dampening Pulse
+Deathless Behemoth
+Defiant Bloodlord
+Demon's Grasp
+Desolation Twin
+Dispel
+Dominator Drone
+Dragonmaster Outcast
+Drana's Emissary
+Drana, Liberator of Malakir
+Drowner of Hope
+Dust Stalker
+Dutiful Return
+Earthen Arms
+Eldrazi Devastator
+Eldrazi Skyspawner
+Emeria Shepherd
+Encircling Fissure
+Endless One
+Evolving Wilds
+Exert Influence
+Expedition Envoy
+Eyeless Watcher
+Fathom Feeder
+Felidar Cub
+Felidar Sovereign
+Fertile Thicket
+Firemantle Mage
+Forerunner of Slaughter
+Forest
+Fortified Rampart
+From Beyond
+Geyserfield Stalker
+Ghostly Sentinel
+Giant Mantis
+Gideon's Reproach
+Gideon, Ally of Zendikar
+Goblin War Paint
+Grave Birthing
+Greenwarden of Murasa
+Grip of Desolation
+Grove Rumbler
+Grovetender Druids
+Gruesome Slaughter
+Guardian of Tazeem
+Guul Draz Overseer
+Hagra Sharpshooter
+Halimar Tidecaller
+Hedron Archive
+Hedron Blade
+Herald of Kozilek
+Hero of Goma Fada
+Horribly Awry
+Incubator Drone
+Infuse with the Elements
+Inspired Charge
+Island
+Jaddi Offshoot
+Kalastria Healer
+Kalastria Nightwatch
+Kiora, Master of the Depths
+Kitesail Scout
+Kor Bladewhirl
+Kor Castigator
+Kor Entanglers
+Kozilek's Channeler
+Kozilek's Sentinel
+Lantern Scout
+Lavastep Raider
+Lifespring Druid
+Lithomancer's Focus
+Looming Spires
+Lumbering Falls
+Makindi Patrol
+Makindi Sliderunner
+Malakir Familiar
+March from the Tomb
+Mind Raker
+Mire's Malice
+Mist Intruder
+Molten Nursery
+Mortuary Mire
+Mountain
+Munda, Ambush Leader
+Murasa Ranger
+Murk Strider
+Natural Connection
+Nettle Drone
+Nirkana Assassin
+Nissa's Renewal
+Noyan Dar, Roil Shaper
+Ob Nixilis Reignited
+Oblivion Sower
+Omnath, Locus of Rage
+Ondu Champion
+Ondu Greathorn
+Ondu Rising
+Oracle of Dust
+Oran-Rief Hydra
+Oran-Rief Invoker
+Outnumber
+Painful Truths
+Part the Waterveil
+Pathway Arrows
+Pilgrim's Eye
+Plains
+Planar Outburst
+Plated Crusher
+Plummet
+Prairie Stream
+Prism Array
+Processor Assault
+Quarantine Field
+Radiant Flames
+Reckless Cohort
+Reclaiming Vines
+Resolute Blademaster
+Retreat to Coralhelm
+Retreat to Emeria
+Retreat to Hagra
+Retreat to Kazandu
+Retreat to Valakut
+Rising Miasma
+Roil Spout
+Roil's Retribution
+Roilmage's Trick
+Rolling Thunder
+Rot Shambler
+Ruin Processor
+Ruination Guide
+Ruinous Path
+Rush of Ice
+Salvage Drone
+Sanctum of Ugin
+Sandstone Bridge
+Scatter to the Winds
+Scour from Existence
+Scythe Leopard
+Seek the Wilds
+Serene Steward
+Serpentine Spike
+Shadow Glider
+Shambling Vent
+Shatterskull Recruit
+Sheer Drop
+Shrine of the Forsaken Gods
+Silent Skimmer
+Sire of Stagnation
+Skitterskin
+Skyline Cascade
+Skyrider Elf
+Slab Hammer
+Sludge Crawler
+Smite the Monstrous
+Smoldering Marsh
+Smothering Abomination
+Snapping Gnarlid
+Spawning Bed
+Spell Shrivel
+Stasis Snare
+Stone Haven Medic
+Stonefury
+Sunken Hollow
+Sure Strike
+Swamp
+Swarm Surge
+Swell of Growth
+Sylvan Scrying
+Tajuru Beastmaster
+Tajuru Stalwart
+Tajuru Warcaller
+Tandem Tactics
+Territorial Baloth
+Tide Drifter
+Tightening Coils
+Titan's Presence
+Touch of the Void
+Transgress the Mind
+Tunneling Geopede
+Turn Against
+Ugin's Insight
+Ulamog's Despoiler
+Ulamog's Nullifier
+Ulamog's Reclaimer
+Ulamog, the Ceaseless Hunger
+Undergrowth Champion
+Unified Front
+Unnatural Aggression
+Valakut Invoker
+Valakut Predator
+Vampiric Rites
+Vestige of Emrakul
+Veteran Warleader
+Vile Aggregate
+Void Attendant
+Void Winnower
+Volcanic Upheaval
+Voracious Null
+Wasteland Strangler
+Wave-Wing Elemental
+Windrider Patrol
+Woodland Wanderer
+Zada, Hedron Grinder
+Zulaport Cutthroat
