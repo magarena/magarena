@@ -73,11 +73,17 @@ public class MagicMessage {
             .replaceAll("RN", ref.toString());
     }
 
-    public static String replaceChoices(final String sourceText,final Object[] choices) {
+    public static String replaceChoices(final String sourceText, final Object[] choices) {
+
         String result = sourceText;
+
         for (int idx = 0; result.indexOf('$') >= 0; idx++) {
-            final String choice = (idx < choices.length && choices[idx] != null) ? choices[idx].toString() : "";
-            final String replacement = (!choice.isEmpty()) ? " (" + choice + ")" : "";
+
+            final String choice = (idx < choices.length && choices[idx] != null) 
+                ? getCardToken(choices[idx])
+                : "";
+
+            final String replacement = !choice.isEmpty() ? " (" + choice + ")" : "";
             result = result.replaceFirst("\\$", replacement);
         }
         return result;
@@ -85,7 +91,7 @@ public class MagicMessage {
 
     private static final String CARD_TOKEN = "<%s" + CARD_ID_DELIMITER + "%d>";
 
-    public static String getCardToken(final MagicObject obj) {
+    public static String getCardToken(final Object obj) {
 
         if (obj == null) {
             return "";
@@ -94,18 +100,24 @@ public class MagicMessage {
         if (obj instanceof MagicCard) {
             final MagicCard card = (MagicCard) obj;
             return String.format(CARD_TOKEN, card.getName(), card.getId());
+        }
 
-        } else if (obj instanceof MagicPermanent) {
+        if (obj instanceof MagicPermanent) {
             final MagicPermanent card = (MagicPermanent) obj;
             return String.format(CARD_TOKEN, card.getName(), card.getCard().getId());
+        }
 
-        } else if (obj instanceof MagicCardOnStack) {
+        if (obj instanceof MagicCardOnStack) {
             final MagicCardOnStack card = (MagicCardOnStack) obj;
             return String.format(CARD_TOKEN, card.getName(), card.getCard().getId());
-
-        } else {
-            System.err.println("MagicSource object not supported : " + obj.getClass());
-            return "???";
         }
+
+        if (obj instanceof MagicObject) {
+            System.err.println("Cannot derive card token from MagicObject : " + obj.getClass());
+        }
+
+        return obj.toString();
+
     }
+
 }

@@ -35,6 +35,7 @@ class TComponentBuilder {
 
         final String msg = replaceWhitespace(source, " ") + ' ';
 
+        boolean isCardId = false;
         boolean isTinyFont = false;
         boolean isChoice = false;
         String cardInfo = "";
@@ -118,20 +119,21 @@ class TComponentBuilder {
                 startIndex = index + 1;
 
             } else if (ch == '>') {
-                final String textPart = String.format(isTinyFont ? "#%s" : "%s", msg.substring(startIndex, index));
+                final String textPart = String.format(isCardId ? "#%s" : "%s", msg.substring(startIndex, index));
                 addTComponent(textPart, isTinyFont, isChoice, cardInfo);
-                isTinyFont = false;
-                isChoice = false;
+                isCardId = false;
+                isTinyFont = isChoice;
                 cardInfo = "";
                 startIndex = index + 1;
 
-            } else if (ch == MagicMessage.CARD_ID_DELIMITER) {
+            } else if (ch == MagicMessage.CARD_ID_DELIMITER && !cardInfo.isEmpty()) {
                 final String textPart = msg.substring(startIndex, index);
                 addTComponent(textPart, isTinyFont, isChoice, cardInfo);
                 startIndex = index + 1;
                 // only display card id if running in dev mode.
                 if (MagicSystem.isDevMode()) {
                     isTinyFont = true;
+                    isCardId = true;
                 } else {
                     startIndex = msg.indexOf(">", index + 1);
                 }

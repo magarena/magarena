@@ -11,11 +11,10 @@ import magic.model.MagicMessage;
 
 class TextComponent extends TComponent {
 
-    private final Color choiceColor;
     private final String text;
     private final Font font;
+    private final Color fontColor;
     private final FontMetrics metrics;
-    private final boolean isChoice;
     private final boolean newLine;
     private final String cardInfo;
 
@@ -25,16 +24,20 @@ class TextComponent extends TComponent {
         final Font aFont,
         final boolean isChoice,
         final String aCardInfo,
-        final Color aColor) {
+        final Color choiceColor) {
 
         this.text = text;
-        this.isChoice = isChoice;
-        this.choiceColor = aColor;
         this.cardInfo = aCardInfo;
 
-        final boolean isBoldFont = aCardInfo.isEmpty() == false && isChoice == false && !text.startsWith("#");
+        final boolean isBoldFont = aCardInfo.isEmpty() == false && !text.startsWith("#");
         this.font = isBoldFont ? aFont.deriveFont(Font.BOLD) : aFont;
         this.metrics = component.getFontMetrics(this.font);
+
+        fontColor = text.startsWith("#") & !isChoice
+            ? Color.DARK_GRAY
+            : isChoice
+                ? choiceColor
+                : Color.BLACK;
 
         this.newLine = !(".".equals(text) || ",".equals(text));
 
@@ -52,7 +55,7 @@ class TextComponent extends TComponent {
 
     @Override
     void paint(final JComponent com, final Graphics g, final int x, final int y) {
-        g.setColor(text.startsWith("#") ? Color.DARK_GRAY : isChoice ? choiceColor : Color.BLACK);
+        g.setColor(fontColor);
         g.setFont(font);
         g.drawString(text, lx + x, ly + y + metrics.getAscent());
     }
