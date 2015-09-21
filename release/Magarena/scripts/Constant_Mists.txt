@@ -5,6 +5,6 @@ rarity=U
 type=Instant
 cost={1}{G}
 ability=Buyback—Sacrifice a land.
-effect=Prevent all combat damage that would be dealt this turn.~Buyback
+effect=Prevent all combat damage that would be dealt this turn.
 timing=block
 oracle=Buyback—Sacrifice a land.\nPrevent all combat damage that would be dealt this turn.

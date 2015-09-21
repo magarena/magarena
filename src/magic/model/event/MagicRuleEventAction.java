@@ -2881,23 +2881,6 @@ public enum MagicRuleEventAction {
             return EVENT_ACTION;
         }
     },
-    Buyback(
-        "buyback"
-    ) {
-        private final MagicEventAction EVENT_ACTION = new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                final MagicCardOnStack spell = event.getCardOnStack();
-                if (spell.isKicked()) {
-                    game.doAction(new ChangeCardDestinationAction(spell, MagicLocationType.OwnersHand));
-                }
-            }
-        };
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            return EVENT_ACTION;
-        }
-    },
     SelfBecomes(
         "sn become(s)? a(n)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<duration> until end of turn)?(?<additionTo>(\\. It's| that's) still.*)?\\.",
         MagicTiming.Animate,

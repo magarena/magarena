@@ -5,6 +5,6 @@ rarity=R
 type=Sorcery
 cost={1}{G}
 ability=Buyback {3}
-effect=Target land becomes a 2/2 creature that's still a land.~Buyback
+effect=Target land becomes a 2/2 creature that's still a land.
 timing=main
 oracle=Buyback {3}\nTarget land becomes a 2/2 creature that's still a land.

@@ -6,6 +6,6 @@ rarity=C
 type=Instant
 cost={1}{R}
 ability=buyback {3}
-effect=Destroy target artifact.~Buyback
+effect=Destroy target artifact.
 timing=removal
 oracle=Buyback {3}\nDestroy target artifact.

@@ -5,6 +5,6 @@ rarity=C
 type=Instant
 cost={1}{U}{U}
 ability=buyback {3}
-effect=Return target permanent to its owner's hand.~Buyback
+effect=Return target permanent to its owner's hand.
 timing=removal
 oracle=Buyback {3}\nReturn target permanent to its owner's hand.

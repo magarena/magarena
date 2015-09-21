@@ -5,6 +5,6 @@ rarity=C
 type=Instant
 cost={U}
 ability=buyback {2}{U}
-effect=Tap target artifact, creature, or land.~Buyback
+effect=Tap target artifact, creature, or land.
 timing=tapping
 oracle=Buyback {2}{U}\nTap target artifact, creature, or land.
