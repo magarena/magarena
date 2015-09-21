@@ -64,12 +64,9 @@ public class MagicMessage {
     }
 
     public static String replaceName(final String sourceText,final Object source, final Object player, final Object ref) {
-        final String sn = source instanceof MagicObject
-            ? getCardToken((MagicObject) source)
-            : source.toString();
         return sourceText
             .replaceAll("PN", player.toString())
-            .replaceAll("SN", sn)
+            .replaceAll("SN", getCardToken(source))
             .replaceAll("RN", ref.toString());
     }
 
