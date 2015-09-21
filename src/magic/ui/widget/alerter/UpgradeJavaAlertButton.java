@@ -18,7 +18,7 @@ public class UpgradeJavaAlertButton extends AlertButton {
     private static final String _S2 = "Please upgrade Java to version 1.8 or greater.";
     private static final String _S3 = "This is the last version of Magarena that will work with Java %s.";
     private static final String _S4 = "Sorry for the inconvenience.";
-    private static final String _S5 = "Java Upgrade Required!";
+    private static final String _S5 = "Java upgrade required!";
 
     @Override
     protected AbstractAction getAlertAction() {
