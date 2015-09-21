@@ -14899,3 +14899,7 @@ Zuran Orb
 Zuran Spellcaster
 Zurgo Bellstriker
 Zurgo Helmsmasher
+;Manifest
+;Morph
+Dominator Drone
+Sheer Drop
