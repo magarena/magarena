@@ -3595,7 +3595,10 @@ public enum MagicRuleEventAction {
             .replaceAll("(Y|y)ou ","PN ")
             .replaceAll("you.", "PN.")
             .replaceAll("(P|p)ut ","PN puts ")
-            .replaceAll("Choose one ","Choose one\\$ ");
+            .replaceAll("Choose one ","Choose one\\$ ")
+            //replace final period with target indicator and period
+            .replaceAll("\\.$", "\\$.") 
+            ;
     }
 
     private static String renameThisThat(final String text) {
@@ -3678,7 +3681,7 @@ public enum MagicRuleEventAction {
                                 }
                             }
                         },
-                        "PN may$ pay " + mayCost + "$. If you do, " + contextRule + "$"
+                        "PN may$ pay " + mayCost + "$. If you do, " + contextRule
                     ) : MagicEvent.NONE;
                 }
             };
@@ -3708,7 +3711,7 @@ public enum MagicRuleEventAction {
                                 }
                             }
                         },
-                        "PN may$ " + contextRule + "$"
+                        "PN may$ " + contextRule
                     ) : MagicEvent.NONE;
                 }
             };
@@ -3731,7 +3734,7 @@ public enum MagicRuleEventAction {
                                 action.executeEvent(game, event);
                             }
                         },
-                        capitalize(playerRule) + "$"
+                        capitalize(playerRule)
                     ) : MagicEvent.NONE;
                 }
             };
