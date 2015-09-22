@@ -109,10 +109,6 @@ public class MagicMessage {
             return String.format(CARD_TOKEN, card.getName(), card.getCard().getId());
         }
 
-        if (obj instanceof MagicObject) {
-            System.err.println("Cannot derive card token from MagicObject : " + obj.getClass());
-        }
-
         // Please do not remove, thanks ~ lodici.
         // System.err.printf("getCardToken() : %s (%s)\n", obj.toString(), obj.getClass());
 
