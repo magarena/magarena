@@ -68,8 +68,23 @@ Thanks to
 Thank you for your support and have fun!
 
 
-Release 1.66 (TBD)
+Release 1.66 (September 26, 2015)
 ============
+lodici
+melvin
+ShawnieBoy
+
+    replace clunky (two clicks) log/stack popup menu with single click icon buttons.
+    Restore last selected view (basic/advanced) when opening log file screen.
+    Change log message default font to plain, StackButton message uses same default plain font as log.
+    Display alert at startup if current JRE is less than 1.8. (see issue #429).
+    highlight image or player zone on mouse over log entry; click to show full size card image.
+
+- fixed the following bugs:
+    move adding of target indicator into personalize method, put it before the
+    final period. fixes #442
+
+- added the following cards:
 
 Release 1.65 (August 30, 2015)
 ============
