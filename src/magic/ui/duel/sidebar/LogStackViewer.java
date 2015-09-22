@@ -16,6 +16,7 @@ import magic.data.MagicIcon;
 import magic.translate.UiString;
 import magic.ui.IconImages;
 import magic.ui.ScreenController;
+import magic.ui.message.MessageStyle;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.widget.ActionButtonTitleBar;
 import magic.ui.widget.TexturedPanel;
@@ -34,6 +35,7 @@ class LogStackViewer extends TexturedPanel {
     private final StackViewer stackViewer;
     private final ActionButtonTitleBar logTitleBar;
     private final ActionButtonTitleBar stackTitleBar;
+    private MessageStyle messageStyle = MessageStyle.PLAIN;
 
     LogStackViewer(LogViewer aLogBookViewer, StackViewer aStackViewer) {
         
@@ -77,8 +79,24 @@ class LogStackViewer extends TexturedPanel {
         );
     }
 
+    private JButton getMessageStyleActionButton() {
+        return new ActionBarButton(
+            IconImages.getIcon(MagicIcon.MARKER_ICON),
+            "Cycle message style",
+            "Click to cycle through various styles for the log/stack messages.",
+            new AbstractAction() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    messageStyle = messageStyle.getNext();
+                    logViewer.setMessageStyle(messageStyle);
+                }
+            }
+        );
+    }
+
     private List<JButton> getLogActionButtons() {
         final List<JButton> btns = new ArrayList<>();
+        btns.add(getMessageStyleActionButton());
         btns.add(getLogFileActionButton());
         btns.add(getLogViewActionButton(MagicIcon.DOWNARROW_ICON));
         return btns;

@@ -10,6 +10,8 @@ import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 import magic.model.MagicMessage;
 import magic.ui.SwingGameController;
+import magic.ui.message.MessageStyle;
+import magic.ui.message.TextComponent;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
@@ -59,6 +61,13 @@ class LogViewer extends TexturedPanel {
 
     private MessagePanel getNewMessagePanel(final MagicMessage message) {
         return new MessagePanel(message, this, controller);
+    }
+
+    void setMessageStyle(MessageStyle aStyle) {
+        TextComponent.messageStyle = aStyle;
+        messagePanels.removeAll();
+        update();
+        revalidate();
     }
 
     private class LogScrollPane extends JScrollPane {

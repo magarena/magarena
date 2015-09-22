@@ -9,7 +9,9 @@ import java.awt.Rectangle;
 import javax.swing.JComponent;
 import magic.model.MagicMessage;
 
-class TextComponent extends TComponent {
+public class TextComponent extends TComponent {
+
+    public static MessageStyle messageStyle = MessageStyle.PLAIN;
 
     private final String text;
     private final Font font;
@@ -29,18 +31,38 @@ class TextComponent extends TComponent {
         this.text = text;
         this.cardInfo = aCardInfo;
 
-        final boolean isBoldFont = isInteractive() && !text.startsWith("#");
-        this.font = isBoldFont ? aFont.deriveFont(Font.BOLD) : aFont;
+        this.fontColor = getTextColor(isChoice, choiceColor);
+        this.font = getTextFont(aFont);
         this.metrics = component.getFontMetrics(this.font);
-
-        fontColor = text.startsWith("#") & !isChoice
-            ? Color.DARK_GRAY
-            : isChoice
-                ? choiceColor
-                : Color.BLACK;
-
+        
         this.newLine = !(".".equals(text) || ",".equals(text));
 
+    }
+    
+    private Color getTextColor(boolean isChoice, Color choiceColor) {
+        return isCardId() & !isChoice
+            ? Color.DARK_GRAY
+            : isInteractive() && messageStyle != MessageStyle.PLAINBOLDMONO
+                ? Color.BLUE
+                : isChoice
+                    ? choiceColor
+                    : Color.BLACK;        
+    }
+
+    private Font getTextFont(final Font aFont) {
+        final boolean isBoldFont =
+            messageStyle != MessageStyle.PLAIN
+            && (isInteractive() || messageStyle == MessageStyle.BOLD)
+            && !isCardId();
+        return messageStyle == MessageStyle.PLAIN
+            ? aFont
+            : isBoldFont
+                ? aFont.deriveFont(Font.BOLD)
+                : aFont;
+    }
+
+    private boolean isCardId() {
+        return text.startsWith("#");
     }
 
     @Override

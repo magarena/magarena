@@ -20,7 +20,7 @@ public class ActionButtonTitleBar extends TitleBar {
 
         actionsPanel.setOpaque(false);
 
-        actionsPanel.setLayout(new MigLayout("insets 0, gap 10", "", "grow, fill"));
+        actionsPanel.setLayout(new MigLayout("insets 0, gap 12", "", "grow, fill"));
         for (JButton btn : actionButtons) {
             actionsPanel.add(btn, "w 16!, h 16!");
         }

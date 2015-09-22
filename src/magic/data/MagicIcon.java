@@ -39,6 +39,7 @@ public enum MagicIcon {
     ARROWUP_ICON("w_arrowup.png"),
     PLUS_ICON("w_plus28.png"),
     MINUS_ICON("w_minus28.png"),
+    MARKER_ICON("w_marker.png"),
 
     MISSING_ICON("missing2.png"),
     ARENA("arena.png"),
