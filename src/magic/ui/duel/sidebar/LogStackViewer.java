@@ -2,6 +2,7 @@ package magic.ui.duel.sidebar;
 
 import java.awt.Color;
 import java.awt.Component;
+import java.awt.Font;
 import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
@@ -19,11 +20,14 @@ import magic.ui.ScreenController;
 import magic.ui.message.MessageStyle;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.widget.ActionButtonTitleBar;
+import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class LogStackViewer extends TexturedPanel {
+
+    public static final Font MESSAGE_FONT = FontsAndBorders.FONT1.deriveFont(Font.PLAIN);
 
     // translatable strings
     private static final String _S1 = "View log file";

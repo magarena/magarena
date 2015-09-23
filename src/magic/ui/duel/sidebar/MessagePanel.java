@@ -1,7 +1,6 @@
 package magic.ui.duel.sidebar;
 
 import java.awt.Color;
-import java.awt.Font;
 import java.awt.Insets;
 import javax.swing.BorderFactory;
 import javax.swing.JComponent;
@@ -29,7 +28,6 @@ class MessagePanel extends JPanel {
 
     private static int lastTurn = 0;
     private static int textLabelWidth = 0;
-    private static final Font MESSAGE_FONT = FontsAndBorders.FONT1.deriveFont(Font.PLAIN);
 
     private final MagicMessage message;
 
@@ -70,7 +68,7 @@ class MessagePanel extends JPanel {
 
         final TextLabel textLabel = new TextLabel(
             message.getText(),
-            MESSAGE_FONT,
+            LogStackViewer.MESSAGE_FONT,
             textLabelWidth,
             false,
             CHOICE_COLOR,

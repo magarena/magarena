@@ -2,7 +2,6 @@ package magic.ui.duel.sidebar;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.Font;
 import java.awt.Rectangle;
 import java.util.Set;
 import javax.swing.JLabel;
@@ -17,8 +16,6 @@ import magic.ui.message.TextLabel;
 
 @SuppressWarnings("serial")
 class StackButton extends PanelButton implements ChoiceViewer {
-
-    private static final Font MESSAGE_FONT = FontsAndBorders.FONT1.deriveFont(Font.PLAIN);
 
     private final StackViewerInfo stackInfo;
     private final SwingGameController controller;
@@ -39,7 +36,13 @@ class StackButton extends PanelButton implements ChoiceViewer {
         sourceLabel.setForeground(ThemeFactory.getInstance().getCurrentTheme().getNameColor());
         panel.add(sourceLabel, BorderLayout.NORTH);
 
-        final TextLabel textLabel = new TextLabel(stackInfo.description, MESSAGE_FONT, maxWidth, false, aController);
+        final TextLabel textLabel = new TextLabel(
+            stackInfo.description,
+            LogStackViewer.MESSAGE_FONT,
+            maxWidth,
+            false,
+            aController
+        );
         panel.add(textLabel, BorderLayout.CENTER);
     }
 
