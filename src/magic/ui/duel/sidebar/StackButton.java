@@ -2,6 +2,7 @@ package magic.ui.duel.sidebar;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Rectangle;
 import java.util.Set;
 import javax.swing.JLabel;
@@ -33,7 +34,7 @@ class StackButton extends PanelButton implements ChoiceViewer {
 
         final JLabel sourceLabel = new JLabel(stackInfo.name);
         sourceLabel.setIcon(stackInfo.icon);
-        sourceLabel.setForeground(ThemeFactory.getInstance().getCurrentTheme().getNameColor());
+        sourceLabel.setFont(sourceLabel.getFont().deriveFont(Font.BOLD | Font.ITALIC));
         panel.add(sourceLabel, BorderLayout.NORTH);
 
         final TextLabel textLabel = new TextLabel(
