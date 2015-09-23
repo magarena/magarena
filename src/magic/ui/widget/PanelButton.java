@@ -9,9 +9,8 @@ import java.awt.Color;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
+@SuppressWarnings("serial")
 public abstract class PanelButton extends TexturedPanel {
-
-    private static final long serialVersionUID = 1L;
 
     private final JPanel layeredPanel;
     private final JPanel overlayPanel;
