@@ -19,15 +19,13 @@ import net.miginfocom.swing.MigLayout;
 public class StackViewer extends JPanel implements ChoiceViewer {
 
     private final SwingGameController controller;
-    private final boolean isImageMode;
     private final Collection<StackButton> buttons;
     private JScrollPane stackScrollPane;
     private ScrollablePanel stackScrollablePanel;
 
-    public StackViewer(final SwingGameController controller, final boolean isImageMode0) {
+    public StackViewer(final SwingGameController controller) {
 
         this.controller=controller;
-        this.isImageMode=isImageMode0;
 
         controller.registerChoiceViewer(this);
         buttons=new ArrayList<>();

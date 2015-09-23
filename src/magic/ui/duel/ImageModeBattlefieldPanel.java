@@ -44,7 +44,7 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
         imagePlayerPermanentViewer = new ImageBattlefieldViewer(controller, false);
         imageOpponentPermanentViewer = new ImageBattlefieldViewer(controller, true);
         imageCombatViewer = new ImageCombatViewer(controller);
-        imageStackViewer = new StackViewer(controller, true);
+        imageStackViewer = new StackViewer(controller);
         //
         playerZoneViewer.addPropertyChangeListener(PlayerZoneViewer.CP_PLAYER_ZONE,
                 new PropertyChangeListener() {
