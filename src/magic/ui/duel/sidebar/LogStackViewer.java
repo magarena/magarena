@@ -28,6 +28,7 @@ import net.miginfocom.swing.MigLayout;
 class LogStackViewer extends TexturedPanel {
 
     public static final Font MESSAGE_FONT = FontsAndBorders.FONT1.deriveFont(Font.PLAIN);
+    public static final Color CHOICE_COLOR = Color.RED.darker();
 
     // translatable strings
     private static final String _S1 = "View log file";

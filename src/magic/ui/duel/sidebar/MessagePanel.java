@@ -24,8 +24,6 @@ class MessagePanel extends JPanel {
         FontsAndBorders.EMPTY_BORDER
     );
 
-    private static final Color CHOICE_COLOR = Color.RED.darker();
-
     private static int lastTurn = 0;
     private static int textLabelWidth = 0;
 
@@ -71,7 +69,7 @@ class MessagePanel extends JPanel {
             LogStackViewer.MESSAGE_FONT,
             textLabelWidth,
             false,
-            CHOICE_COLOR,
+            LogStackViewer.CHOICE_COLOR,
             aController
         );
 

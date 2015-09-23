@@ -41,6 +41,7 @@ class StackButton extends PanelButton implements ChoiceViewer {
             LogStackViewer.MESSAGE_FONT,
             maxWidth,
             false,
+            LogStackViewer.CHOICE_COLOR,
             aController
         );
         panel.add(textLabel, BorderLayout.CENTER);
