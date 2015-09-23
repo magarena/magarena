@@ -60,13 +60,8 @@ public class TextLabel extends JPanel {
     }
 
     // CTR
-    public TextLabel(String text, Font aFont, int maxWidth, boolean center, SwingGameController aController) {
-        this(text, aFont, maxWidth, center, MagicStyle.getTheme().getColor(Theme.COLOR_CHOICE_FOREGROUND), aController);
-    }
-
-    // CTR
     public TextLabel(String text, int maxWidth, boolean center) {
-        this(text, FontsAndBorders.FONT1, maxWidth, center, null);
+        this(text, FontsAndBorders.FONT1, maxWidth, center, MagicStyle.getTheme().getColor(Theme.COLOR_CHOICE_FOREGROUND), null);
     }
 
     private void setMouseListeners() {
