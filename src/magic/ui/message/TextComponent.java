@@ -7,11 +7,12 @@ import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Rectangle;
 import javax.swing.JComponent;
+import magic.data.GeneralConfig;
 import magic.model.MagicMessage;
 
 public class TextComponent extends TComponent {
 
-    public static MessageStyle messageStyle = MessageStyle.PLAIN;
+    public static MessageStyle messageStyle = GeneralConfig.getInstance().getLogMessageStyle();
 
     private final String text;
     private final Font font;
