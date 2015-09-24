@@ -65,8 +65,8 @@ public class AnimationCanvas extends JPanel implements TimelineCallback {
 
         addMouseListener(new MouseAdapter() {
             @Override
-            public void mouseClicked(MouseEvent e) {
-                if (e.getButton() == MouseEvent.BUTTON1 && e.getClickCount() == 1) {
+            public void mousePressed(MouseEvent e) {
+                if (SwingUtilities.isLeftMouseButton(e)) {
                     doCancelAction();
                 }
             }
