@@ -69,6 +69,7 @@ class LogViewer extends TexturedPanel {
         messagePanels.removeAll();
         update();
         revalidate();
+        repaint();
         GeneralConfig.getInstance().setLogMessageStyle(aStyle);
         GeneralConfig.getInstance().save();
     }
