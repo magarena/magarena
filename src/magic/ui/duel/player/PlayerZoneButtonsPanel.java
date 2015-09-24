@@ -58,8 +58,8 @@ public class PlayerZoneButtonsPanel extends JPanel {
         final ZoneToggleButton btn = new ZoneToggleButton(zone, cardCount, isActive);
         btn.addMouseListener(new MouseAdapter() {
             @Override
-            public void mousePressed(MouseEvent e) {
-                if (btn.isActive()) {
+            public void mouseReleased(MouseEvent e) {
+                if (btn.isActive() && SwingUtilities.isLeftMouseButton(e)) {
                     controller.getPlayerZoneViewer().setPlayerZone(playerInfo, zone);
                 }
             }
