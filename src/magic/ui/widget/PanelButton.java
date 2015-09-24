@@ -8,6 +8,7 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import javax.swing.SwingUtilities;
 
 @SuppressWarnings("serial")
 public abstract class PanelButton extends TexturedPanel {
@@ -32,16 +33,25 @@ public abstract class PanelButton extends TexturedPanel {
         layeredPanel.add(overlayPanel);
 
         addMouseListener(new MouseAdapter() {
+
+            private boolean isLeftClick(MouseEvent e) {
+                return SwingUtilities.isLeftMouseButton(e);
+            }
+
             @Override
             public void mousePressed(final MouseEvent event) {
-                setBorder(FontsAndBorders.DOWN_BORDER);
+                if (isLeftClick(event) && overlayPanel.isVisible()) {
+                    setBorder(FontsAndBorders.DOWN_BORDER);
+                }
             }
 
             @Override
             public void mouseReleased(final MouseEvent event) {
-                setBorder(FontsAndBorders.UP_BORDER);
-                if (PanelButton.this.contains(event.getX(),event.getY())) {
-                    PanelButton.this.mouseClicked();
+                if (isLeftClick(event)) {
+                    setBorder(FontsAndBorders.UP_BORDER);
+                    if (PanelButton.this.contains(event.getX(),event.getY())) {
+                        PanelButton.this.mouseClicked();
+                    }
                 }
             }
 
