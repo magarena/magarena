@@ -94,6 +94,7 @@ class LogStackViewer extends TexturedPanel {
                 public void actionPerformed(ActionEvent e) {
                     messageStyle = messageStyle.getNext();
                     logViewer.setMessageStyle(messageStyle);
+                    stackViewer.update();
                 }
             }
         );
@@ -109,6 +110,7 @@ class LogStackViewer extends TexturedPanel {
 
     private List<JButton> getStackActionButtons() {
         final List<JButton> btns = new ArrayList<>();
+        btns.add(getMessageStyleActionButton());
         btns.add(getLogFileActionButton());
         btns.add(getLogViewActionButton(MagicIcon.UPARROW_ICON));
         return btns;
