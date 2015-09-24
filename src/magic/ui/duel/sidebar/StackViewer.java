@@ -51,7 +51,7 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 
     public void update() {
 
-        final int maxWidth=getWidth()-40;
+        final int maxWidth = getWidth() - 30;
 
         stackScrollablePanel.removeAll();
         buttons.clear();
