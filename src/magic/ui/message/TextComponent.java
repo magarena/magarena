@@ -28,6 +28,8 @@ public class TextComponent extends TComponent {
         final String aCardInfo,
         final Color choiceColor) {
 
+        System.out.println(text);
+
         this.text = text;
         this.cardInfo = aCardInfo;
 
@@ -40,13 +42,21 @@ public class TextComponent extends TComponent {
     }
     
     private Color getTextColor(boolean isChoice, Color choiceColor) {
-        return isCardId() & !isChoice
-            ? Color.DARK_GRAY
-            : isInteractive() && messageStyle != MessageStyle.PLAINBOLDMONO
+        if (isCardId() && isChoice == false) {
+            return Color.DARK_GRAY;
+        }
+        if (isInteractive() && messageStyle != MessageStyle.PLAINBOLDMONO) {
+            return Color.BLUE;
+        }
+        if (text.equals("(") || text.equals(")")) {
+            return messageStyle != MessageStyle.PLAINBOLDMONO
                 ? Color.BLUE
-                : isChoice
-                    ? choiceColor
-                    : Color.BLACK;        
+                : choiceColor;
+        }
+        if (isChoice) {
+            return choiceColor;
+        }
+        return Color.BLACK;
     }
 
     private Font getTextFont(final Font aFont) {
