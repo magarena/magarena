@@ -35,6 +35,8 @@ class LogStackViewer extends TexturedPanel {
     private static final String _S2 = "Shows the complete game log that is written to file.";
     private static final String _S4 = "Log";
     private static final String _S5 = "Stack";
+    private static final String _S6 = "Cycle message style";
+    private static final String _S7 = "Click to cycle through various styles for the log/stack messages.";
 
     private final LogViewer logViewer;
     private final StackViewer stackViewer;
@@ -87,8 +89,8 @@ class LogStackViewer extends TexturedPanel {
     private JButton getMessageStyleActionButton() {
         return new ActionBarButton(
             IconImages.getIcon(MagicIcon.MARKER_ICON),
-            "Cycle message style",
-            "Click to cycle through various styles for the log/stack messages.",
+            UiString.get(_S6),
+            UiString.get(_S7),
             new AbstractAction() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
