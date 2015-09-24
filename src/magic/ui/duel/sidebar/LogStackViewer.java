@@ -42,7 +42,7 @@ class LogStackViewer extends TexturedPanel {
     private final StackViewer stackViewer;
     private final ActionButtonTitleBar logTitleBar;
     private final ActionButtonTitleBar stackTitleBar;
-    private MessageStyle messageStyle = MessageStyle.PLAIN;
+    private MessageStyle messageStyle = GeneralConfig.getInstance().getLogMessageStyle();
 
     LogStackViewer(LogViewer aLogBookViewer, StackViewer aStackViewer) {
         
