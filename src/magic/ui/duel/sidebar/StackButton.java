@@ -48,6 +48,15 @@ class StackButton extends PanelButton implements ChoiceViewer {
         panel.add(textLabel, BorderLayout.CENTER);
     }
 
+    private void doShowCardImage() {
+        final Rectangle rect = new Rectangle(
+            getParent().getLocationOnScreen().x,
+            getLocationOnScreen().y,
+            getParent().getWidth(),
+            getHeight());
+        controller.viewInfoRight(stackInfo.cardDefinition, 0, rect);
+    }
+
     @Override
     public void mouseClicked() {
         controller.processClick(stackInfo.itemOnStack);
@@ -55,12 +64,7 @@ class StackButton extends PanelButton implements ChoiceViewer {
 
     @Override
     public void mouseEntered() {
-        final Rectangle rect = new Rectangle(
-                getParent().getLocationOnScreen().x,
-                getLocationOnScreen().y,
-                getParent().getWidth(),
-                getHeight());
-        controller.viewInfoRight(stackInfo.cardDefinition, 0, rect);
+        doShowCardImage();
     }
 
     @Override
