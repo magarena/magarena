@@ -67,15 +67,40 @@ public class TextLabel extends JPanel {
     private void setMouseListeners() {
 
         addMouseListener(new MouseAdapter() {
+
+            private boolean dispatchMouseEvent() {
+                return (activeComponent == null
+                    || (activeComponent != null && !activeComponent.isInteractive()));
+            }
+
+            private boolean isLeftClick(MouseEvent e) {
+                return SwingUtilities.isLeftMouseButton(e);
+            }
+
+            // so StackButton works when it is a selectable choice.
+            private void doDispatchEvent(MouseEvent ev) {
+                ev.getComponent().getParent().getParent().getParent().dispatchEvent(ev);
+            }
+
             @Override
             public void mouseExited(MouseEvent e) {
                 doMouseExitAction();
                 setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
             }
             @Override
-            public void mouseReleased(MouseEvent e) {
-                if (SwingUtilities.isLeftMouseButton(e)) {
-                    doMouseClickAction();
+            public void mousePressed(MouseEvent ev) {
+                if (isLeftClick(ev) && dispatchMouseEvent()) {
+                    doDispatchEvent(ev);
+                }
+            }
+            @Override
+            public void mouseReleased(MouseEvent ev) {
+                if (isLeftClick(ev)) {
+                    if (dispatchMouseEvent()) {
+                        doDispatchEvent(ev);
+                    } else {
+                        doMouseClickAction();
+                    }
                 }
             }
         });
