@@ -28,8 +28,6 @@ public class TextComponent extends TComponent {
         final String aCardInfo,
         final Color choiceColor) {
 
-        System.out.println(text);
-
         this.text = text;
         this.cardInfo = aCardInfo;
 
