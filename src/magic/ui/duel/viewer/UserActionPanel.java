@@ -65,11 +65,9 @@ public class UserActionPanel extends JPanel implements ActionListener {
         actionButton.addActionListener(this);
         actionButton.addMouseListener(new MouseAdapter() {
             @Override
-            public void mouseClicked(MouseEvent e) {
-                if (SwingUtilities.isRightMouseButton(e) && e.getClickCount() == 1) {
+            public void mouseReleased(MouseEvent e) {
+                if (SwingUtilities.isRightMouseButton(e)) {
                     controller.passKeyPressed();
-                } else {
-                    super.mouseClicked(e);
                 }               
             }
         });
