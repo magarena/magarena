@@ -478,6 +478,12 @@ public class SwingGameController implements IUIGameController {
         }
     }
 
+    public void hideInfoNoDelay() {
+        if (!isControlKeyDown) {
+            cardPopup.hideNoDelay();
+        }
+    }
+
     @Override
     public void setSourceCardDefinition(final MagicSource source) {
         sourceCardDefinition=source.getCardDefinition();

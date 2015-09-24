@@ -127,7 +127,7 @@ public class TextLabel extends JPanel {
 
     private void clearActiveComponent() {
         if (controller != null) {
-            controller.hideInfo();
+            controller.hideInfoNoDelay();
             if (activeComponent != null) {
                 controller.highlightCard(activeComponent.getCardId(), false);
             }

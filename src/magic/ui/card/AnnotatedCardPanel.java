@@ -125,13 +125,35 @@ public class AnnotatedCardPanel extends JPanel {
         visibilityTimer.restart();
     }
 
-    public void hideDelayed() {
+    /**
+     * Hides the card image panel after {@code delay} milliseconds.
+     * <p>
+     * The hide request is cancelled if a request to show a card image is received
+     * before the delay expires (see {@link hideDelayed()}).
+     *
+     * @param delay the time in milliseconds to wait before hiding the card panel.
+     */
+    private void hideCardPanel(int delay) {
         assert SwingUtilities.isEventDispatchThread();
         preferredVisibility = false;
-        visibilityTimer.setInitialDelay(100);
+        visibilityTimer.setInitialDelay(delay);
         visibilityTimer.restart();
     }
 
+    /**
+     * Requests that the card image panel is hidden after 100 milliseconds.
+     * <p>
+     * This method is primarily used to prevent the popup flickering on and off
+     * as the mouse is moved over cards on the battlefield and in the player zones.
+     */
+    public void hideDelayed() {
+        hideCardPanel(100);
+    }
+
+    public void hideNoDelay() {
+        hideCardPanel(0);
+    }
+    
     private void showPopup() {
         if (isFadeInActive) {
             if (opacity == 0f) {
