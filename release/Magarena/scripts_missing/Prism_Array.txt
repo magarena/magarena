@@ -1,0 +1,11 @@
+name=Prism Array
+image=http://magiccards.info/scans/en/bfz/81.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={4}{U}
+ability=SN enters the battlefield with a crystal counter on it for each color of mana spent to cast it.;\
+        Remove a crystal counter from SN: Tap target creature.;\
+        {W}{U}{B}{R}{G}: Scry 3.
+timing=enchantment
+oracle=Converge — Prism Array enters the battlefield with a crystal counter on it for each color of mana spent to cast it.\nRemove a crystal counter from Prism Array: Tap target creature.\n{W}{U}{B}{R}{G}: Scry 3.

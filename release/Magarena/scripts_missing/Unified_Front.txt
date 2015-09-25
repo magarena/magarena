@@ -1,0 +1,9 @@
+name=Unified Front
+image=http://magiccards.info/scans/en/bfz/53.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={3}{W}
+effect=Put a 1/1 white Kor Ally creature token onto the battlefield for each color of mana spent to cast SN.
+timing=main
+oracle=Converge — Put a 1/1 white Kor Ally creature token onto the battlefield for each color of mana spent to cast Unified Front.

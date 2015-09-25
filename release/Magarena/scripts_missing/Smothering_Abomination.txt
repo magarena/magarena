@@ -1,0 +1,14 @@
+name=Smothering Abomination
+image=http://magiccards.info/scans/en/bfz/99.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Eldrazi
+cost={2}{B}{B}
+pt=4/3
+ability=Devoid;\
+        Flying;\
+        At the beginning of your upkeep, sacrifice a creature.;\
+        Whenever you sacrifice a creature, draw a card.
+timing=main
+oracle=Devoid\nFlying\nAt the beginning of your upkeep, sacrifice a creature.\nWhenever you sacrifice a creature, draw a card.

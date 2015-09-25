@@ -1,0 +1,11 @@
+name=Retreat to Kazandu
+image=http://magiccards.info/scans/en/bfz/186.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={2}{G}
+ability=Whenever a land enters the battlefield under your control, choose one — \
+        (1) Put a +1/+1 counter on target creature. \
+        (2) You gain 2 life.
+timing=enchantment
+oracle=Landfall — Whenever a land enters the battlefield under your control, choose one —\n• Put a +1/+1 counter on target creature.\n• You gain 2 life.

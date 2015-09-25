@@ -1,0 +1,9 @@
+name=Rising Miasma
+image=http://magiccards.info/scans/en/bfz/122.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={3}{B}
+effect=All creatures get -2/-2 until end of turn.~Awaken 3—{5}{B}{B}
+timing=main
+oracle=All creatures get -2/-2 until end of turn.\nAwaken 3—{5}{B}{B}

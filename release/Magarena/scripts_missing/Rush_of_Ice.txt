@@ -1,0 +1,9 @@
+name=Rush of Ice
+image=http://magiccards.info/scans/en/bfz/84.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={U}
+effect=Tap target creature. It doesn't untap during its controller's next untap step.~Awaken 3—{4}{U}
+timing=main
+oracle=Tap target creature. It doesn't untap during its controller's next untap step.\nAwaken 3—{4}{U}

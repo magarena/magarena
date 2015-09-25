@@ -1,0 +1,9 @@
+name=Mire's Malice
+image=http://magiccards.info/scans/en/bfz/117.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={3}{B}
+effect=Target opponent discards two cards.~Awaken 3—{5}{B}
+timing=main
+oracle=Target opponent discards two cards.\nAwaken 3—{5}{B}

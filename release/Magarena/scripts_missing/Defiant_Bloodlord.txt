@@ -1,0 +1,12 @@
+name=Defiant Bloodlord
+image=http://magiccards.info/scans/en/bfz/107.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Vampire
+cost={5}{B}{B}
+pt=4/5
+ability=Flying;\
+        Whenever you gain life, target opponent loses that much life.
+timing=main
+oracle=Flying\nWhenever you gain life, target opponent loses that much life.

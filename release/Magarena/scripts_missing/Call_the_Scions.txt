@@ -1,0 +1,9 @@
+name=Call the Scions
+image=http://magiccards.info/scans/en/bfz/165.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={2}{G}
+effect=Devoid~Put two 1/1 colorless Eldrazi Scion creature tokens onto the battlefield. They have "Sacrifice this creature: Add {1} to your mana pool."
+timing=main
+oracle=Devoid\nPut two 1/1 colorless Eldrazi Scion creature tokens onto the battlefield. They have "Sacrifice this creature: Add {1} to your mana pool."

@@ -1,0 +1,12 @@
+name=Oran-Rief Hydra
+image=http://magiccards.info/scans/en/bfz/181.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Hydra
+cost={4}{G}{G}
+pt=5/5
+ability=Trample;\
+        Whenever a land enters the battlefield under your control, put a +1/+1 counter on SN. If that land is a Forest, put two +1/+1 counters on SN instead.
+timing=main
+oracle=Trample\nLandfall — Whenever a land enters the battlefield under your control, put a +1/+1 counter on Oran-Rief Hydra. If that land is a Forest, put two +1/+1 counters on Oran-Rief Hydra instead.

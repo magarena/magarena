@@ -1,0 +1,10 @@
+name=Skyline Cascade
+image=http://magiccards.info/scans/en/bfz/246.jpg
+value=2.500
+rarity=C
+type=Land
+ability=SN enters the battlefield tapped.;\
+        When SN enters the battlefield, target creature an opponent controls doesn't untap during its controller's next untap step.;\
+        {T}: Add {U} to your mana pool.
+timing=land
+oracle=Skyline Cascade enters the battlefield tapped.\nWhen Skyline Cascade enters the battlefield, target creature an opponent controls doesn't untap during its controller's next untap step.\n{T}: Add {U} to your mana pool.

@@ -1,0 +1,11 @@
+name=Kozilek's Channeler
+image=http://magiccards.info/scans/en/bfz/10.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Eldrazi
+cost={5}
+pt=4/4
+ability={T}: Add {2} to your mana pool.
+timing=main
+oracle={T}: Add {2} to your mana pool.

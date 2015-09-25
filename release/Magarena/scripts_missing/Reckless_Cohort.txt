@@ -1,0 +1,11 @@
+name=Reckless Cohort
+image=http://magiccards.info/scans/en/bfz/152.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Warrior,Ally
+cost={1}{R}
+pt=2/2
+ability=SN attacks each combat if able unless you control another Ally.
+timing=main
+oracle=Reckless Cohort attacks each combat if able unless you control another Ally.

@@ -1,0 +1,12 @@
+name=Kiora, Master of the Depths
+image=http://magiccards.info/scans/en/bfz/213.jpg
+value=2.500
+rarity=M
+type=Planeswalker
+subtype=Kiora
+cost={2}{G}{U}
+ability=+1: Untap up to one target creature and up to one target land.;\
+        −2: Reveal the top four cards of your library. You may put a creature card and/or a land card from among them into your hand. Put the rest into your graveyard.;\
+        −8: You get an emblem with "Whenever a creature enters the battlefield under your control, you may have it fight target creature." Then put three 8/8 blue Octopus creature tokens onto the battlefield.
+timing=main
+oracle=+1: Untap up to one target creature and up to one target land.\n−2: Reveal the top four cards of your library. You may put a creature card and/or a land card from among them into your hand. Put the rest into your graveyard.\n−8: You get an emblem with "Whenever a creature enters the battlefield under your control, you may have it fight target creature." Then put three 8/8 blue Octopus creature tokens onto the battlefield.

@@ -1,0 +1,12 @@
+name=Veteran Warleader
+image=http://magiccards.info/scans/en/bfz/221.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Soldier,Ally
+cost={1}{G}{W}
+pt=*/*
+ability=SN's power and toughness are each equal to the number of creatures you control.;\
+        Tap another untapped Ally you control: SN gains your choice of first strike, vigilance, or trample until end of turn.
+timing=main
+oracle=Veteran Warleader's power and toughness are each equal to the number of creatures you control.\nTap another untapped Ally you control: Veteran Warleader gains your choice of first strike, vigilance, or trample until end of turn.

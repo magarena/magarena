@@ -1,0 +1,9 @@
+name=Nissa's Renewal
+image=http://magiccards.info/scans/en/bfz/180.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={5}{G}
+effect=Search your library for up to three basic land cards, put them onto the battlefield tapped, then shuffle your library. You gain 7 life.
+timing=main
+oracle=Search your library for up to three basic land cards, put them onto the battlefield tapped, then shuffle your library. You gain 7 life.

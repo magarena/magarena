@@ -1,0 +1,11 @@
+name=Makindi Patrol
+image=http://magiccards.info/scans/en/bfz/39.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Knight,Ally
+cost={2}{W}
+pt=2/3
+ability=Whenever SN or another Ally enters the battlefield under your control, creatures you control gain vigilance until end of turn.
+timing=main
+oracle=Rally — Whenever Makindi Patrol or another Ally enters the battlefield under your control, creatures you control gain vigilance until end of turn.

@@ -1,0 +1,9 @@
+name=Blighted Fen
+image=http://magiccards.info/scans/en/bfz/230.jpg
+value=2.500
+rarity=U
+type=Land
+ability={T}: Add {1} to your mana pool.;\
+        {4}{B}, {T}, Sacrifice SN: Target opponent sacrifices a creature.
+timing=land
+oracle={T}: Add {1} to your mana pool.\n{4}{B}, {T}, Sacrifice Blighted Fen: Target opponent sacrifices a creature.

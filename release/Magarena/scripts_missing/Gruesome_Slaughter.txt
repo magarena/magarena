@@ -1,0 +1,9 @@
+name=Gruesome Slaughter
+image=http://magiccards.info/scans/en/bfz/9.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={6}
+effect=Until end of turn, colorless creatures you control gain "{T}: This creature deals damage equal to its power to target creature."
+timing=main
+oracle=Until end of turn, colorless creatures you control gain "{T}: This creature deals damage equal to its power to target creature."

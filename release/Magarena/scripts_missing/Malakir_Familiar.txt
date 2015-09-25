@@ -1,0 +1,12 @@
+name=Malakir Familiar
+image=http://magiccards.info/scans/en/bfz/116.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Bat
+cost={2}{B}
+pt=2/1
+ability=Flying, deathtouch;\
+        Whenever you gain life, SN gets +1/+1 until end of turn.
+timing=main
+oracle=Flying, deathtouch\nWhenever you gain life, Malakir Familiar gets +1/+1 until end of turn.

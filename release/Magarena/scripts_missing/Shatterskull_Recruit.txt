@@ -1,0 +1,11 @@
+name=Shatterskull Recruit
+image=http://magiccards.info/scans/en/bfz/155.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Giant,Warrior,Ally
+cost={3}{R}{R}
+pt=4/4
+ability=Menace
+timing=main
+oracle=Menace

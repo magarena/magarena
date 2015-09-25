@@ -1,0 +1,12 @@
+name=Munda, Ambush Leader
+image=http://magiccards.info/scans/en/bfz/215.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Kor,Ally
+cost={2}{R}{W}
+pt=3/4
+ability=Haste;\
+        Whenever SN or another Ally enters the battlefield under your control, you may look at the top four cards of your library. If you do, reveal any number of Ally cards from among them, then put those cards on top of your library in any order and the rest on the bottom in any order.
+timing=main
+oracle=Haste\nRally — Whenever Munda, Ambush Leader or another Ally enters the battlefield under your control, you may look at the top four cards of your library. If you do, reveal any number of Ally cards from among them, then put those cards on top of your library in any order and the rest on the bottom in any order.

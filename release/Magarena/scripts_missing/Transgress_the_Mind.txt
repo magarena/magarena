@@ -1,0 +1,9 @@
+name=Transgress the Mind
+image=http://magiccards.info/scans/en/bfz/101.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={1}{B}
+effect=Devoid~Target player reveals his or her hand. You choose a card from it with converted mana cost 3 or greater and exile that card.
+timing=main
+oracle=Devoid\nTarget player reveals his or her hand. You choose a card from it with converted mana cost 3 or greater and exile that card.

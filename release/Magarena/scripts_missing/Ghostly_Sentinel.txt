@@ -1,0 +1,11 @@
+name=Ghostly Sentinel
+image=http://magiccards.info/scans/en/bfz/28.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Kor,Spirit
+cost={4}{W}
+pt=3/3
+ability=Flying, vigilance
+timing=main
+oracle=Flying, vigilance

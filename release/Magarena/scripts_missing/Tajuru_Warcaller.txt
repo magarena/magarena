@@ -1,0 +1,11 @@
+name=Tajuru Warcaller
+image=http://magiccards.info/scans/en/bfz/195.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elf,Warrior,Ally
+cost={3}{G}{G}
+pt=2/1
+ability=Whenever SN or another Ally enters the battlefield under your control, creatures you control get +2/+2 until end of turn.
+timing=main
+oracle=Rally — Whenever Tajuru Warcaller or another Ally enters the battlefield under your control, creatures you control get +2/+2 until end of turn.

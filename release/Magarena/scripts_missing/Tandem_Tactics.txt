@@ -1,0 +1,9 @@
+name=Tandem Tactics
+image=http://magiccards.info/scans/en/bfz/52.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{W}
+effect=Up to two target creatures each get +1/+2 until end of turn. You gain 2 life.
+timing=removal
+oracle=Up to two target creatures each get +1/+2 until end of turn. You gain 2 life.

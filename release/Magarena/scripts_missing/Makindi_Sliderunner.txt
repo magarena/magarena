@@ -1,0 +1,12 @@
+name=Makindi Sliderunner
+image=http://magiccards.info/scans/en/bfz/148.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Beast
+cost={1}{R}
+pt=2/1
+ability=Trample;\
+        Whenever a land enters the battlefield under your control, SN gets +1/+1 until end of turn.
+timing=main
+oracle=Trample\nLandfall — Whenever a land enters the battlefield under your control, Makindi Sliderunner gets +1/+1 until end of turn.

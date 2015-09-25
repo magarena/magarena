@@ -1,0 +1,13 @@
+name=Benthic Infiltrator
+image=http://magiccards.info/scans/en/bfz/55.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Eldrazi,Drone
+cost={2}{U}
+pt=1/4
+ability=Devoid;\
+        Ingest;\
+        SN can't be blocked.
+timing=main
+oracle=Devoid\nIngest\nBenthic Infiltrator can't be blocked.

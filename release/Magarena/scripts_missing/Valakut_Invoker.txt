@@ -1,0 +1,11 @@
+name=Valakut Invoker
+image=http://magiccards.info/scans/en/bfz/159.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Shaman
+cost={2}{R}
+pt=2/3
+ability={8}: SN deals 3 damage to target creature or player.
+timing=main
+oracle={8}: Valakut Invoker deals 3 damage to target creature or player.

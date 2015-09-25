@@ -1,0 +1,12 @@
+name=Angelic Gift
+image=http://magiccards.info/scans/en/bfz/19.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{W}
+ability=Enchant creature;\
+        When SN enters the battlefield, draw a card.;\
+        Enchanted creature has flying.
+timing=aura
+oracle=Enchant creature\nWhen Angelic Gift enters the battlefield, draw a card.\nEnchanted creature has flying.

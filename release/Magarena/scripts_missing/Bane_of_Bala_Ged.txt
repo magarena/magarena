@@ -1,0 +1,11 @@
+name=Bane of Bala Ged
+image=http://magiccards.info/scans/en/bfz/1.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Eldrazi
+cost={7}
+pt=7/5
+ability=Whenever SN attacks, defending player exiles two permanents he or she controls.
+timing=main
+oracle=Whenever Bane of Bala Ged attacks, defending player exiles two permanents he or she controls.

@@ -1,0 +1,11 @@
+name=Serene Steward
+image=http://magiccards.info/scans/en/bfz/46.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Cleric,Ally
+cost={1}{W}
+pt=2/2
+ability=Whenever you gain life, you may pay {W}. If you do, put a +1/+1 counter on target creature.
+timing=main
+oracle=Whenever you gain life, you may pay {W}. If you do, put a +1/+1 counter on target creature.

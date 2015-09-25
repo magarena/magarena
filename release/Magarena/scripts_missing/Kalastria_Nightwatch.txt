@@ -1,0 +1,11 @@
+name=Kalastria Nightwatch
+image=http://magiccards.info/scans/en/bfz/115.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vampire,Warrior,Ally
+cost={4}{B}
+pt=4/5
+ability=Whenever you gain life, SN gains flying until end of turn.
+timing=main
+oracle=Whenever you gain life, Kalastria Nightwatch gains flying until end of turn.

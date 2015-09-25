@@ -1,0 +1,12 @@
+name=Mind Raker
+image=http://magiccards.info/scans/en/bfz/95.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Eldrazi,Processor
+cost={3}{B}
+pt=3/3
+ability=Devoid;\
+        When SN enters the battlefield, you may put a card an opponent owns from exile into that player's graveyard. If you do, each opponent discards a card.
+timing=main
+oracle=Devoid\nWhen Mind Raker enters the battlefield, you may put a card an opponent owns from exile into that player's graveyard. If you do, each opponent discards a card.

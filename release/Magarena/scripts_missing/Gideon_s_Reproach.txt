@@ -1,0 +1,9 @@
+name=Gideon's Reproach
+image=http://magiccards.info/scans/en/bfz/30.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{W}
+effect=SN deals 4 damage to target attacking or blocking creature.
+timing=removal
+oracle=Gideon's Reproach deals 4 damage to target attacking or blocking creature.

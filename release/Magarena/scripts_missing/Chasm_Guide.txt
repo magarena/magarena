@@ -1,0 +1,11 @@
+name=Chasm Guide
+image=http://magiccards.info/scans/en/bfz/143.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Goblin,Scout,Ally
+cost={3}{R}
+pt=3/2
+ability=Whenever SN or another Ally enters the battlefield under your control, creatures you control gain haste until end of turn.
+timing=main
+oracle=Rally — Whenever Chasm Guide or another Ally enters the battlefield under your control, creatures you control gain haste until end of turn.

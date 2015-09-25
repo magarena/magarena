@@ -1,0 +1,11 @@
+name=Pathway Arrows
+image=http://magiccards.info/scans/en/bfz/225.jpg
+value=2.500
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={1}
+ability=Equipped creature has "{2}, {T}: This creature deals 1 damage to target creature. If a colorless creature is dealt damage this way, tap it.";\
+        Equip {2}
+timing=equipment
+oracle=Equipped creature has "{2}, {T}: This creature deals 1 damage to target creature. If a colorless creature is dealt damage this way, tap it."\nEquip {2}

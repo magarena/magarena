@@ -1,0 +1,12 @@
+name=Grove Rumbler
+image=http://magiccards.info/scans/en/bfz/211.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elemental
+cost={2}{R}{G}
+pt=3/3
+ability=Trample;\
+        Whenever a land enters the battlefield under your control, SN gets +2/+2 until end of turn.
+timing=main
+oracle=Trample\nLandfall — Whenever a land enters the battlefield under your control, Grove Rumbler gets +2/+2 until end of turn.

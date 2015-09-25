@@ -1,0 +1,11 @@
+name=Tightening Coils
+image=http://magiccards.info/scans/en/bfz/86.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{U}
+ability=Enchant creature;\
+        Enchanted creature gets -6/-0 and loses flying.
+timing=aura
+oracle=Enchant creature\nEnchanted creature gets -6/-0 and loses flying.

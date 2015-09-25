@@ -1,0 +1,9 @@
+name=Lithomancer's Focus
+image=http://magiccards.info/scans/en/bfz/38.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={W}
+effect=Target creature gets +2/+2 until end of turn. Prevent all damage that would be dealt to that creature this turn by colorless sources.
+timing=removal
+oracle=Target creature gets +2/+2 until end of turn. Prevent all damage that would be dealt to that creature this turn by colorless sources.

@@ -1,0 +1,12 @@
+name=Void Winnower
+image=http://magiccards.info/scans/en/bfz/17.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Eldrazi
+cost={9}
+pt=11/9
+ability=Your opponents can't cast spells with even converted mana costs.;\
+        Your opponents can't block with creatures with even converted mana costs.
+timing=main
+oracle=Your opponents can't cast spells with even converted mana costs.\nYour opponents can't block with creatures with even converted mana costs.

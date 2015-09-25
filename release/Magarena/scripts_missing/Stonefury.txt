@@ -1,0 +1,9 @@
+name=Stonefury
+image=http://magiccards.info/scans/en/bfz/156.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={3}{R}{R}
+effect=SN deals damage to target creature equal to the number of lands you control.
+timing=removal
+oracle=Stonefury deals damage to target creature equal to the number of lands you control.

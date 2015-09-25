@@ -1,0 +1,9 @@
+name=Complete Disregard
+image=http://magiccards.info/scans/en/bfz/90.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{B}
+effect=Devoid~Exile target creature with power 3 or less.
+timing=removal
+oracle=Devoid\nExile target creature with power 3 or less.

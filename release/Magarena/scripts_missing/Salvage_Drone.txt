@@ -1,0 +1,13 @@
+name=Salvage Drone
+image=http://magiccards.info/scans/en/bfz/65.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Eldrazi,Drone
+cost={U}
+pt=1/1
+ability=Devoid;\
+        Ingest;\
+        When SN dies, you may draw a card. If you do, discard a card.
+timing=main
+oracle=Devoid\nIngest\nWhen Salvage Drone dies, you may draw a card. If you do, discard a card.

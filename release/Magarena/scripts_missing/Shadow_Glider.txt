@@ -1,0 +1,11 @@
+name=Shadow Glider
+image=http://magiccards.info/scans/en/bfz/47.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Kor,Soldier
+cost={2}{W}
+pt=2/2
+ability=Flying
+timing=main
+oracle=Flying

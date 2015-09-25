@@ -1,0 +1,10 @@
+name=Hedron Archive
+image=http://magiccards.info/scans/en/bfz/223.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={4}
+ability={T}: Add {2} to your mana pool.;\
+        {2}, {T}, Sacrifice SN: Draw two cards.
+timing=artifact
+oracle={T}: Add {2} to your mana pool.\n{2}, {T}, Sacrifice Hedron Archive: Draw two cards.

@@ -1,0 +1,9 @@
+name=Coastal Discovery
+image=http://magiccards.info/scans/en/bfz/73.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={3}{U}
+effect=Draw two cards.~Awaken 4—{5}{U}
+timing=main
+oracle=Draw two cards.\nAwaken 4—{5}{U}

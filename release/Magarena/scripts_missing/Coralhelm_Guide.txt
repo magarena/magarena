@@ -1,0 +1,11 @@
+name=Coralhelm Guide
+image=http://magiccards.info/scans/en/bfz/74.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Merfolk,Scout,Ally
+cost={1}{U}
+pt=2/1
+ability={4}{U}: Target creature can't be blocked this turn.
+timing=main
+oracle={4}{U}: Target creature can't be blocked this turn.

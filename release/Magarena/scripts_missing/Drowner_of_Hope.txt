@@ -1,0 +1,13 @@
+name=Drowner of Hope
+image=http://magiccards.info/scans/en/bfz/57.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Eldrazi
+cost={5}{U}
+pt=5/5
+ability=Devoid;\
+        When SN enters the battlefield, put two 1/1 colorless Eldrazi Scion creature tokens onto the battlefield. They have "Sacrifice this creature: Add {1} to your mana pool.";\
+        Sacrifice an Eldrazi Scion: Tap target creature.
+timing=main
+oracle=Devoid\nWhen Drowner of Hope enters the battlefield, put two 1/1 colorless Eldrazi Scion creature tokens onto the battlefield. They have "Sacrifice this creature: Add {1} to your mana pool."\nSacrifice an Eldrazi Scion: Tap target creature.

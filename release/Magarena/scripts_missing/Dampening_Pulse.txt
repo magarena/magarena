@@ -1,0 +1,9 @@
+name=Dampening Pulse
+image=http://magiccards.info/scans/en/bfz/75.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={3}{U}
+ability=Creatures your opponents control get -1/-0.
+timing=enchantment
+oracle=Creatures your opponents control get -1/-0.

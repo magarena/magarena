@@ -1,0 +1,13 @@
+name=Nettle Drone
+image=http://magiccards.info/scans/en/bfz/131.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Eldrazi,Drone
+cost={2}{R}
+pt=3/1
+ability=Devoid;\
+        {T}: SN deals 1 damage to each opponent.;\
+        Whenever you cast a colorless spell, untap SN.
+timing=main
+oracle=Devoid\n{T}: Nettle Drone deals 1 damage to each opponent.\nWhenever you cast a colorless spell, untap Nettle Drone.

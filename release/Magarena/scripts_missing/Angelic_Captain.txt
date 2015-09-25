@@ -1,0 +1,12 @@
+name=Angelic Captain
+image=http://magiccards.info/scans/en/bfz/208.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Angel,Ally
+cost={3}{R}{W}
+pt=4/3
+ability=Flying;\
+        Whenever SN attacks, it gets +1/+1 until end of turn for each other attacking Ally.
+timing=main
+oracle=Flying\nWhenever Angelic Captain attacks, it gets +1/+1 until end of turn for each other attacking Ally.

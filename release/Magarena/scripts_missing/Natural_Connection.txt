@@ -1,0 +1,9 @@
+name=Natural Connection
+image=http://magiccards.info/scans/en/bfz/179.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{G}
+effect=Search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library.
+timing=removal
+oracle=Search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library.

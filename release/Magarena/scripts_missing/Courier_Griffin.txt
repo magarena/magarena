@@ -1,0 +1,12 @@
+name=Courier Griffin
+image=http://magiccards.info/scans/en/bfz/21.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Griffin
+cost={3}{W}
+pt=2/3
+ability=Flying;\
+        When SN enters the battlefield, you gain 2 life.
+timing=main
+oracle=Flying\nWhen Courier Griffin enters the battlefield, you gain 2 life.

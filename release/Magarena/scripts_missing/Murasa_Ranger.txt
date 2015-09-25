@@ -1,0 +1,11 @@
+name=Murasa Ranger
+image=http://magiccards.info/scans/en/bfz/178.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Warrior
+cost={3}{G}
+pt=3/3
+ability=Whenever a land enters the battlefield under your control, you may pay {3}{G}. If you do, put two +1/+1 counters on SN.
+timing=main
+oracle=Landfall — Whenever a land enters the battlefield under your control, you may pay {3}{G}. If you do, put two +1/+1 counters on Murasa Ranger.

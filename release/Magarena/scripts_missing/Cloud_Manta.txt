@@ -1,0 +1,11 @@
+name=Cloud Manta
+image=http://magiccards.info/scans/en/bfz/71.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Fish
+cost={3}{U}
+pt=3/2
+ability=Flying
+timing=main
+oracle=Flying

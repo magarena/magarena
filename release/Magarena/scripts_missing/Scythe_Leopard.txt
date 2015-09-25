@@ -1,0 +1,11 @@
+name=Scythe Leopard
+image=http://magiccards.info/scans/en/bfz/188.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Cat
+cost={G}
+pt=1/1
+ability=Whenever a land enters the battlefield under your control, SN gets +1/+1 until end of turn.
+timing=main
+oracle=Landfall — Whenever a land enters the battlefield under your control, Scythe Leopard gets +1/+1 until end of turn.

@@ -1,0 +1,11 @@
+name=Felidar Cub
+image=http://magiccards.info/scans/en/bfz/25.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Cat,Beast
+cost={1}{W}
+pt=2/2
+ability=Sacrifice SN: Destroy target enchantment.
+timing=main
+oracle=Sacrifice Felidar Cub: Destroy target enchantment.

@@ -1,0 +1,9 @@
+name=Cinder Glade
+image=http://magiccards.info/scans/en/exp/4.jpg
+value=2.500
+rarity=M
+type=Land
+subtype=Mountain,Forest
+ability=SN enters the battlefield tapped unless you control two or more basic lands.
+timing=land
+oracle=Cinder Glade enters the battlefield tapped unless you control two or more basic lands.

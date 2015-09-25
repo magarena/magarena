@@ -1,0 +1,12 @@
+name=Windrider Patrol
+image=http://magiccards.info/scans/en/bfz/89.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Merfolk,Wizard
+cost={3}{U}{U}
+pt=4/3
+ability=Flying;\
+        Whenever SN deals combat damage to a player, scry 2.
+timing=main
+oracle=Flying\nWhenever Windrider Patrol deals combat damage to a player, scry 2.

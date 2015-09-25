@@ -1,0 +1,11 @@
+name=Eldrazi Devastator
+image=http://magiccards.info/scans/en/bfz/7.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Eldrazi
+cost={8}
+pt=8/9
+ability=Trample
+timing=main
+oracle=Trample

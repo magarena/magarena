@@ -1,0 +1,10 @@
+name=Looming Spires
+image=http://magiccards.info/scans/en/bfz/238.jpg
+value=2.500
+rarity=C
+type=Land
+ability=SN enters the battlefield tapped.;\
+        When SN enters the battlefield, target creature gets +1/+1 and gains first strike until end of turn.;\
+        {T}: Add {R} to your mana pool.
+timing=land
+oracle=Looming Spires enters the battlefield tapped.\nWhen Looming Spires enters the battlefield, target creature gets +1/+1 and gains first strike until end of turn.\n{T}: Add {R} to your mana pool.

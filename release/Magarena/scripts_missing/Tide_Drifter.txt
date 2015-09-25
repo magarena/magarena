@@ -1,0 +1,12 @@
+name=Tide Drifter
+image=http://magiccards.info/scans/en/bfz/67.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Eldrazi,Drone
+cost={1}{U}
+pt=0/5
+ability=Devoid;\
+        Other colorless creatures you control get +0/+1.
+timing=main
+oracle=Devoid\nOther colorless creatures you control get +0/+1.

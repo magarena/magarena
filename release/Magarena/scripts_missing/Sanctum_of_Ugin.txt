@@ -1,0 +1,9 @@
+name=Sanctum of Ugin
+image=http://magiccards.info/scans/en/bfz/242.jpg
+value=2.500
+rarity=R
+type=Land
+ability={T}: Add {1} to your mana pool.;\
+        Whenever you cast a colorless spell with converted mana cost 7 or greater, you may sacrifice SN. If you do, search your library for a colorless creature card, reveal it, put it into your hand, then shuffle your library.
+timing=land
+oracle={T}: Add {1} to your mana pool.\nWhenever you cast a colorless spell with converted mana cost 7 or greater, you may sacrifice Sanctum of Ugin. If you do, search your library for a colorless creature card, reveal it, put it into your hand, then shuffle your library.

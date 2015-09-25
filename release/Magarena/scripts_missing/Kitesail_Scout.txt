@@ -1,0 +1,11 @@
+name=Kitesail Scout
+image=http://magiccards.info/scans/en/bfz/33.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Kor,Scout
+cost={W}
+pt=1/1
+ability=Flying
+timing=main
+oracle=Flying
