@@ -1,6 +1,6 @@
 name=Dragonmaster Outcast
-image=http://magiccards.info/scans/en/wwk/81.jpg
-value=4.325
+image=http://magiccards.info/scans/en/bfz/144.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Human,Shaman

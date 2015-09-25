@@ -1,10 +1,10 @@
 name=Altar's Reap
-image=http://magiccards.info/scans/en/cns/112.jpg
-value=3.917
+image=http://magiccards.info/scans/en/bfz/103.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{B}
 ability=As an additional cost to cast SN, sacrifice a creature.
 effect=Draw two cards.
-timing=draw
+timing=removal
 oracle=As an additional cost to cast Altar's Reap, sacrifice a creature.\nDraw two cards.

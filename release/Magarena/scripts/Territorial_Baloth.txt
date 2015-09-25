@@ -1,6 +1,6 @@
 name=Territorial Baloth
-image=http://magiccards.info/scans/en/zen/188.jpg
-value=2.977
+image=http://magiccards.info/scans/en/bfz/196.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Beast

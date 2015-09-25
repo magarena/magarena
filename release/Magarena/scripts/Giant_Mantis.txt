@@ -1,11 +1,11 @@
 name=Giant Mantis
-image=http://magiccards.info/scans/en/vma/213.jpg
-value=3.362
+image=http://magiccards.info/scans/en/bfz/173.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Insect
 cost={3}{G}
 pt=2/4
-ability=reach
+ability=Reach
 timing=main
 oracle=Reach
