@@ -36,6 +36,7 @@ public class GamePlayerPanel extends TexturedPanel implements ChoiceViewer {
         zoneButtonsPanel = new PlayerZoneButtonsPanel(playerInfo, controller);
 
         avatarPanel = new PlayerImagePanel(playerInfo, controller.getGame());
+        avatarPanel.setOpaque(false);
 
         avatarButton = new PanelButton() {
             @Override
