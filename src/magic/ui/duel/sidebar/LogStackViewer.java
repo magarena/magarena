@@ -19,6 +19,7 @@ import magic.ui.IconImages;
 import magic.ui.ScreenController;
 import magic.ui.message.MessageStyle;
 import magic.ui.screen.widget.ActionBarButton;
+import magic.ui.screen.widget.DialButton;
 import magic.ui.widget.ActionButtonTitleBar;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
@@ -87,8 +88,9 @@ class LogStackViewer extends TexturedPanel {
     }
 
     private JButton getMessageStyleActionButton() {
-        return new ActionBarButton(
-            IconImages.getIcon(MagicIcon.MARKER_ICON),
+        return new DialButton(
+            MessageStyle.values().length,
+            messageStyle.ordinal(),
             UiString.get(_S6),
             UiString.get(_S7),
             new AbstractAction() {
