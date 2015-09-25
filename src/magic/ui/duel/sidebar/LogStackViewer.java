@@ -107,6 +107,9 @@ class LogStackViewer extends TexturedPanel {
         btns.add(getMessageStyleActionButton());
         btns.add(getLogFileActionButton());
         btns.add(getLogViewActionButton(MagicIcon.DOWNARROW_ICON));
+        for (JButton btn : btns) {
+            btn.setFocusable(false);
+        }
         return btns;
     }
 
@@ -115,6 +118,9 @@ class LogStackViewer extends TexturedPanel {
         btns.add(getMessageStyleActionButton());
         btns.add(getLogFileActionButton());
         btns.add(getLogViewActionButton(MagicIcon.UPARROW_ICON));
+        for (JButton btn : btns) {
+            btn.setFocusable(false);
+        }
         return btns;
     }
 
