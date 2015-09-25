@@ -31,18 +31,22 @@ public class StackViewer extends JPanel implements ChoiceViewer {
         buttons=new ArrayList<>();
 
         refreshLayout();
+        setOpaque(false);
     }
 
     private void refreshLayout() {
 
         stackScrollablePanel = new ScrollablePanel();
         stackScrollablePanel.setLayout(new MigLayout("insets 0, gap 0, flowy"));
+        stackScrollablePanel.setOpaque(false);
 
         stackScrollPane = new JScrollPane(stackScrollablePanel);
         stackScrollPane.setMinimumSize(new Dimension(0, 0));
         stackScrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
         stackScrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         stackScrollPane.setBorder(null);
+        stackScrollPane.setOpaque(false);
+        stackScrollPane.getViewport().setOpaque(false);
 
         removeAll();
         setLayout(new MigLayout("insets 0, gap 0, flowy"));

@@ -22,6 +22,7 @@ public abstract class PanelButton extends TexturedPanel {
 
         // create subpanel with overlay manager so color overlay and buttons overlap
         layeredPanel = new JPanel();
+        layeredPanel.setOpaque(false);
         final OverlayLayout layout = new OverlayLayout(layeredPanel);
         layeredPanel.setLayout(layout);
 

@@ -46,6 +46,8 @@ class StackButton extends PanelButton implements ChoiceViewer {
             aController
         );
         panel.add(textLabel, BorderLayout.CENTER);
+
+        setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
     }
 
     private void doShowCardImage() {

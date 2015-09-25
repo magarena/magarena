@@ -11,6 +11,7 @@ import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
+import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
@@ -22,11 +23,10 @@ import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.DialButton;
 import magic.ui.widget.ActionButtonTitleBar;
 import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-class LogStackViewer extends TexturedPanel {
+class LogStackViewer extends JPanel {
 
     public static final Font MESSAGE_FONT = FontsAndBorders.FONT1.deriveFont(Font.PLAIN);
     public static final Color CHOICE_COLOR = Color.RED.darker();
