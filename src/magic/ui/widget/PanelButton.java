@@ -15,6 +15,7 @@ public abstract class PanelButton extends TexturedPanel {
 
     private final JPanel layeredPanel;
     private final JPanel overlayPanel;
+    private boolean isValidChoice = false;
 
     public PanelButton() {
         setLayout(new BorderLayout());
@@ -41,7 +42,7 @@ public abstract class PanelButton extends TexturedPanel {
 
             @Override
             public void mousePressed(final MouseEvent event) {
-                if (isLeftClick(event) && overlayPanel.isVisible()) {
+                if (isLeftClick(event) && isValidChoice) {
                     setBorder(FontsAndBorders.DOWN_BORDER);
                 }
             }
@@ -71,8 +72,13 @@ public abstract class PanelButton extends TexturedPanel {
     }
 
     public void setValid(final boolean valid) {
+        isValidChoice = valid;
         overlayPanel.setBackground(getValidColor());
         overlayPanel.setVisible(valid);
+    }
+
+    public void setValidNoOverlay(final boolean valid) {
+        isValidChoice = valid;
     }
 
     public void setComponent(final JComponent component) {
