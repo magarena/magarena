@@ -115,7 +115,7 @@ public final class UiString {
     /**
      * Returns the names of all classes in specified package (including sub-packages).
      */
-    private static List<String> getClassNamesInPackage(final File jarFile, String packageName) throws IOException {
+    public static List<String> getClassNamesInPackage(final File jarFile, String packageName) throws IOException {
 
         final List<String> classes = new ArrayList<>();
 
