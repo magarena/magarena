@@ -1,6 +1,6 @@
 name=Sylvan Scrying
-image=http://magiccards.info/scans/en/bfz/192.jpg
-value=2.500
+image=http://magiccards.info/scans/en/10e/302.jpg
+value=4.327
 rarity=U
 type=Sorcery
 cost={1}{G}

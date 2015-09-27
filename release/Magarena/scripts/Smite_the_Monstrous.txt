@@ -1,9 +1,10 @@
 name=Smite the Monstrous
-image=http://magiccards.info/scans/en/bfz/49.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ktk/24.jpg
+value=2.750
+removal=3
 rarity=C
 type=Instant
 cost={3}{W}
-effect=Destroy target creature with power 4 or greater.
 timing=removal
+effect=Destroy target creature with power 4 or greater.
 oracle=Destroy target creature with power 4 or greater.

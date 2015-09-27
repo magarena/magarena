@@ -1,6 +1,6 @@
 name=Bone Splinters
-image=http://magiccards.info/scans/en/bfz/105.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddn/22.jpg
+value=3.012
 rarity=C
 type=Sorcery
 cost={B}

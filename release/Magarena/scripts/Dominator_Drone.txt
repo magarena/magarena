@@ -1,5 +1,5 @@
 name=Dominator Drone
-image=http://magiccards.info/scans/en/bfz/92.jpg
+image=http://mythicspoiler.com/bfz/cards/dominatordrone.jpg
 value=2.500
 rarity=C
 type=Creature
