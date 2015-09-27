@@ -27,8 +27,6 @@
 Æthersnipe
 Ætherspouts
 Æthertow
-;Manifest
-;Morph
 Abandon Hope
 Abandoned Outpost
 Abattoir Ghoul

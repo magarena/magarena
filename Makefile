@@ -576,7 +576,7 @@ check_unused_choice:
 
 check_all_cards:
 	diff \
-	<(grep "name=" `grep "token=" -Lr release/Magarena/scripts release/Magarena/scripts_missing` -h | sed 's/name=//' | sort | uniq) \
+	<(grep "name=" `grep "token=\|^overlay" -Lr release/Magarena/scripts release/Magarena/scripts_missing` -h | sed 's/name=//' | sort | uniq) \
 	<(sort resources/magic/data/AllCardNames.txt)
 
 crash.txt: $(wildcard *.log)
