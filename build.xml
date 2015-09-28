@@ -81,7 +81,7 @@
       <jar destfile="release/Magarena.jar" basedir="build" includes="**/*.*">
       <manifest>
         <attribute name="Main-Class" value="magic.MagicMain" />
-        <attribute name="SplashScreen-Image" value="magic/data/textures/splash.png" />
+        <attribute name="SplashScreen-Image" value="magic/data/textures/splash.jpg" />
         <attribute name="Class-Path" 
                    value="lib/groovy-all-${groovy-version}.jar
                           lib/miglayout-core-4.2.jar
