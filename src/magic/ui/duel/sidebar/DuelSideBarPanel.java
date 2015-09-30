@@ -89,10 +89,6 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
         return gameStatusPanel;
     }
 
-    public LogViewer getLogBookViewer() {
-        return logBookViewer;
-    }
-
     public void doSetLayout() {
 
         final int insets = 6;
