@@ -56,7 +56,9 @@ public class TextLabel extends JPanel {
         TComponentBuilder.buildTComponents(components, text, this, aFont, aColor);
         layoutTComponents();
 
-        setMouseListeners();
+        if (controller != null) {
+            setMouseListeners();
+        }
     }
 
     // CTR
