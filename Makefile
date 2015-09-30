@@ -186,12 +186,13 @@ log.clean:
 inf: $(MAG)
 	-while true; do make debug=true 0`date +%s`.t; done
 
-buildhive:
+circleci:
 	$(eval MAG_ID := $(shell date +%s))
-	make clean games=100 ai1=MMABC ai2=MCTS ${MAG_ID}.t || (cat ${MAG_ID}.out && false)
+	make clean games=3 ai1=MMABC ai2=MCTS ${MAG_ID}.t || (cat ${MAG_ID}.out && false)
 	touch cards/standard_all.out cards/modern_all.out
 	touch cards/standard_all.txt cards/modern_all.txt
 	make zips
+	mv release/Magarena.jar *.zip ${CIRCLE_ARTIFACTS}
 
 test-self-play:
 	for i in `seq 1 10`; do tsp make games=100 ai1=MMABC ai2=MCTS flags=-ea `date +%N`.t; done
