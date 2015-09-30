@@ -25,7 +25,7 @@ public class MagicRepeatedPermanentsEvent extends MagicEvent {
                     }
                 }
             },
-            ""
+            factory.getEvent(source, targetChoice).getDescription()
         );
         cond = MagicConditionFactory.YouControlAtLeast(targetChoice.getPermanentFilter(), amt);
     }
