@@ -42,6 +42,7 @@ class LogViewer extends TexturedPanel {
     }
 
     void update() {
+        boolean isRemoved = false;
         final List<MagicMessage> msgs = controller.getViewerInfo().getLog();
         final int n = msgs.size();
         int i = 0;
@@ -53,10 +54,16 @@ class LogViewer extends TexturedPanel {
                 c++;
             } else {
                 messagePanels.remove(c);
+                isRemoved = true;
             }
         }
+        final boolean isAdded = i < n;
         for (;i < n; i++) {
             messagePanels.add(getNewMessagePanel(msgs.get(i)), "w 100%");
+        }
+        if (isAdded || isRemoved) {
+            messagePanels.revalidate();
+            scrollPane.repaint();
         }
     }
 
@@ -68,8 +75,6 @@ class LogViewer extends TexturedPanel {
         TextComponent.messageStyle = aStyle;
         messagePanels.removeAll();
         update();
-        revalidate();
-        repaint();
         GeneralConfig.getInstance().setLogMessageStyle(aStyle);
         GeneralConfig.getInstance().save();
     }
