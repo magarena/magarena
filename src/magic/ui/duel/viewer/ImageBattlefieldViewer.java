@@ -14,7 +14,7 @@ import java.util.Set;
 import magic.model.MagicCard;
 import magic.ui.utility.MagicStyle;
 
-public class ImageBattlefieldViewer extends JPanel implements IChoiceViewer, Updatable {
+public class ImageBattlefieldViewer extends JPanel implements IChoiceViewer, IUpdatable {
 
     private static final long serialVersionUID = 1L;
 

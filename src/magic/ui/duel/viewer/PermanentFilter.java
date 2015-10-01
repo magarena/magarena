@@ -52,12 +52,12 @@ public class PermanentFilter implements ActionListener {
     private static final Dimension HORIZONTAL_BUTTON_DIMENSION=new Dimension(28,20);
     private static final Dimension VERTICAL_BUTTON_DIMENSION=new Dimension(24,24);
 
-    private final Updatable viewer;
+    private final IUpdatable viewer;
     private final SwingGameController controller;
     private final JToggleButton[] filterButtons;
     private int filter;
 
-    public PermanentFilter(final Updatable aViewer,final SwingGameController aController) {
+    public PermanentFilter(final IUpdatable aViewer,final SwingGameController aController) {
         viewer = aViewer;
         controller = aController;
         filterButtons=new JToggleButton[PermanentFilter.FILTER_ICONS.length];

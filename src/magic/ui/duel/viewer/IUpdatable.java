@@ -1,5 +1,5 @@
 package magic.ui.duel.viewer;
 
-public interface Updatable {
+public interface IUpdatable {
     public void update();
 }
