@@ -1,20 +1,20 @@
-package magic.ui.duel.viewer;
-
-import magic.ui.SwingGameController;
-import magic.ui.widget.FontsAndBorders;
-
-import javax.swing.border.Border;
+package magic.ui.duel.textmode;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.SortedSet;
 import java.util.TreeSet;
+import javax.swing.border.Border;
+import magic.ui.SwingGameController;
+import magic.ui.duel.viewer.PermanentViewerInfo;
+import magic.ui.duel.viewer.PlayerViewerInfo;
+import magic.ui.widget.FontsAndBorders;
 
-public class CombatViewer extends PermanentsViewer {
+class CombatViewer extends PermanentsViewer {
 
     private static final long serialVersionUID = 1L;
 
-    public CombatViewer(final SwingGameController controller) {
+    CombatViewer(final SwingGameController controller) {
         super(controller);
         update();
     }

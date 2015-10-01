@@ -1,13 +1,13 @@
-package magic.ui.duel.viewer;
+package magic.ui.duel.textmode;
 
 import magic.model.MagicCardList;
 import magic.ui.SwingGameController;
 import magic.ui.theme.Theme;
 
-public class OtherViewer extends CardListViewer {
+class OtherViewer extends CardListViewer {
     private static final long serialVersionUID = 1L;
 
-    public OtherViewer(final MagicCardList cards, final SwingGameController controller) {
+    OtherViewer(final MagicCardList cards, final SwingGameController controller) {
         super(
             controller,
             cards,

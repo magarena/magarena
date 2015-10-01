@@ -1,19 +1,17 @@
-package magic.ui.duel.viewer;
-
-import magic.ui.SwingGameController;
-import magic.ui.theme.Theme;
-import magic.ui.widget.TabSelector;
-import magic.ui.widget.TitleBar;
-
-import javax.swing.JPanel;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
+package magic.ui.duel.textmode;
 
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
+import javax.swing.JPanel;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
+import magic.ui.SwingGameController;
+import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
+import magic.ui.widget.TabSelector;
+import magic.ui.widget.TitleBar;
 
-public class StackCombatViewer extends JPanel implements ChangeListener {
+class StackCombatViewer extends JPanel implements ChangeListener {
 
     private static final long serialVersionUID = 1L;
 
@@ -23,7 +21,7 @@ public class StackCombatViewer extends JPanel implements ChangeListener {
     private final TitleBar titleBar;
     private final TabSelector tabSelector;
 
-    public StackCombatViewer(final SwingGameController controller) {
+    StackCombatViewer(final SwingGameController controller) {
 
         combatViewer=new CombatViewer(controller);
 
@@ -44,7 +42,7 @@ public class StackCombatViewer extends JPanel implements ChangeListener {
         titleBar.add(tabSelector,BorderLayout.EAST);
     }
 
-    public void update() {
+    void update() {
         combatViewer.update();
     }
 

@@ -1,22 +1,21 @@
-package magic.ui.widget;
-
-import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
-
-import javax.swing.BoxLayout;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
+package magic.ui.duel.textmode;
 
 import java.awt.BorderLayout;
 import java.awt.Rectangle;
+import javax.swing.BoxLayout;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
+import magic.ui.widget.FontsAndBorders;
 
-public class ViewerScrollPane extends JScrollPane {
+class ViewerScrollPane extends JScrollPane {
 
     private static final long serialVersionUID = 1L;
 
     private JPanel contentPanel;
 
-    public ViewerScrollPane() {
+    ViewerScrollPane() {
 
         setOpaque(false);
         getViewport().setOpaque(false);
@@ -27,7 +26,7 @@ public class ViewerScrollPane extends JScrollPane {
         getVerticalScrollBar().setBlockIncrement(80);
     }
 
-    public synchronized JPanel getContent() {
+    synchronized JPanel getContent() {
         if (contentPanel==null) {
             contentPanel=new JPanel();
             contentPanel.setLayout(new BoxLayout(contentPanel,BoxLayout.Y_AXIS));
@@ -36,7 +35,7 @@ public class ViewerScrollPane extends JScrollPane {
         return contentPanel;
     }
 
-    public synchronized void switchContent() {
+    synchronized void switchContent() {
         if (contentPanel!=null) {
             final Rectangle rect=getViewport().getViewRect();
             final JPanel mainPanel=new JPanel(new BorderLayout());

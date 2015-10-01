@@ -1,28 +1,28 @@
-package magic.ui.duel.viewer;
-
-import magic.ui.SwingGameController;
-import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
-import magic.ui.widget.PanelButton;
-
-import magic.ui.message.TextLabel;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.border.Border;
+package magic.ui.duel.textmode;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.util.Set;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.border.Border;
+import magic.ui.SwingGameController;
+import magic.ui.duel.viewer.ChoiceViewer;
+import magic.ui.duel.viewer.PermanentViewerInfo;
+import magic.ui.message.TextLabel;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.utility.MagicStyle;
+import magic.ui.widget.PanelButton;
 
-public class PermanentButton extends PanelButton implements ChoiceViewer {
+class PermanentButton extends PanelButton implements ChoiceViewer {
 
     private static final long serialVersionUID = 1L;
 
     private final PermanentViewerInfo permanentInfo;
     private final SwingGameController controller;
 
-    public PermanentButton(final PermanentViewerInfo permanentInfo, final SwingGameController controller, final Border border, final int maxWidth) {
+    PermanentButton(final PermanentViewerInfo permanentInfo, final SwingGameController controller, final Border border, final int maxWidth) {
 
         this.permanentInfo=permanentInfo;
         this.controller=controller;

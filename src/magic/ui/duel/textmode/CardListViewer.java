@@ -1,14 +1,4 @@
-package magic.ui.duel.viewer;
-
-import magic.model.MagicCard;
-import magic.model.MagicCardList;
-import magic.ui.SwingGameController;
-import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
-import magic.ui.widget.FontsAndBorders;
-
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
+package magic.ui.duel.textmode;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -16,8 +6,17 @@ import java.awt.GridLayout;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Set;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import magic.model.MagicCard;
+import magic.model.MagicCardList;
+import magic.ui.SwingGameController;
+import magic.ui.duel.viewer.ChoiceViewer;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
+import magic.ui.widget.FontsAndBorders;
 
-public abstract class CardListViewer extends JPanel implements ChoiceViewer {
+abstract class CardListViewer extends JPanel implements ChoiceViewer {
     private static final long serialVersionUID = 1L;
     private static final int  LINE_HEIGHT      = 26;
 
@@ -76,7 +75,7 @@ public abstract class CardListViewer extends JPanel implements ChoiceViewer {
         buttons=new ArrayList<CardButton>();
     }
 
-    public void update() {
+    void update() {
         final JPanel cardPanel = new JPanel();
         cardPanel.setBackground(ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_VIEWER_BACKGROUND));
         cardPanel.setBorder(FontsAndBorders.BLACK_BORDER);
@@ -107,11 +106,11 @@ public abstract class CardListViewer extends JPanel implements ChoiceViewer {
         }
     }
 
-    public String getIcon() {
+    String getIcon() {
         return this.icon;
     }
 
-    public String getTitle() {
+    String getTitle() {
         return this.title;
     }
 }

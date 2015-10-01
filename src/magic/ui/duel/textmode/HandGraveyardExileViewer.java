@@ -1,19 +1,17 @@
-package magic.ui.duel.viewer;
-
-import magic.model.MagicCardList;
-import magic.ui.SwingGameController;
-import magic.ui.widget.TabSelector;
-import magic.ui.widget.TitleBar;
-
-import javax.swing.JPanel;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
+package magic.ui.duel.textmode;
 
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
+import javax.swing.JPanel;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
+import magic.model.MagicCardList;
+import magic.ui.SwingGameController;
 import magic.ui.utility.MagicStyle;
+import magic.ui.widget.TabSelector;
+import magic.ui.widget.TitleBar;
 
-public class HandGraveyardExileViewer extends JPanel implements ChangeListener {
+class HandGraveyardExileViewer extends JPanel implements ChangeListener {
     private static final long serialVersionUID = 1L;
 
     private final CardListViewer[] viewers;
@@ -23,7 +21,7 @@ public class HandGraveyardExileViewer extends JPanel implements ChangeListener {
     private final TabSelector tabSelector;
     private final MagicCardList other = new MagicCardList();
 
-    public HandGraveyardExileViewer(final SwingGameController controller) {
+    HandGraveyardExileViewer(final SwingGameController controller) {
 
         viewers = new CardListViewer[]{
             new HandViewer(controller),
@@ -55,19 +53,19 @@ public class HandGraveyardExileViewer extends JPanel implements ChangeListener {
         titleBar.add(tabSelector,BorderLayout.EAST);
     }
 
-    public void update() {
+    void update() {
         for (final CardListViewer viewer : viewers) {
             viewer.update();
         }
     }
     
-    public void showCards(final MagicCardList cards) {
+    void showCards(final MagicCardList cards) {
         other.clear();
         other.addAll(cards);
         viewers[5].update();
     }
 
-    public void setSelectedTab(final int selectedTab) {
+    void setSelectedTab(final int selectedTab) {
         if (selectedTab>=0) {
             tabSelector.setSelectedTab(selectedTab);
         }

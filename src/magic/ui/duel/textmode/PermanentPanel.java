@@ -1,14 +1,4 @@
-package magic.ui.duel.viewer;
-
-import magic.ui.SwingGameController;
-import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
-import magic.ui.widget.FontsAndBorders;
-
-import javax.swing.BorderFactory;
-import javax.swing.BoxLayout;
-import javax.swing.JPanel;
-import javax.swing.border.Border;
+package magic.ui.duel.textmode;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -16,15 +6,25 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 import java.util.SortedSet;
+import javax.swing.BorderFactory;
+import javax.swing.BoxLayout;
+import javax.swing.JPanel;
+import javax.swing.border.Border;
+import magic.ui.SwingGameController;
+import magic.ui.duel.viewer.ChoiceViewer;
+import magic.ui.duel.viewer.PermanentViewerInfo;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
+import magic.ui.widget.FontsAndBorders;
 
-public class PermanentPanel extends JPanel implements ChoiceViewer {
+class PermanentPanel extends JPanel implements ChoiceViewer {
 
     private static final long serialVersionUID = 1L;
 
     private final PermanentButton button;
     private final List<PermanentButton> linkedButtons;
 
-    public PermanentPanel(final PermanentViewerInfo permanentInfo, final SwingGameController controller, final Border border, final int maxWidth) {
+    PermanentPanel(final PermanentViewerInfo permanentInfo, final SwingGameController controller, final Border border, final int maxWidth) {
 
         setBorder(FontsAndBorders.SMALL_EMPTY_BORDER);
         setLayout(new BorderLayout());
@@ -32,7 +32,7 @@ public class PermanentPanel extends JPanel implements ChoiceViewer {
         button=new PermanentButton(permanentInfo,controller,border,maxWidth);
         add(button,BorderLayout.NORTH);
 
-        linkedButtons=new ArrayList<PermanentButton>();
+        linkedButtons=new ArrayList<>();
         final SortedSet<PermanentViewerInfo> linked=permanentInfo.linked;
         if (!linked.isEmpty()) {
             final Color attachedColor=ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_SEPARATOR_BACKGROUND);

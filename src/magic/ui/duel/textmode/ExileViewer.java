@@ -1,12 +1,12 @@
-package magic.ui.duel.viewer;
+package magic.ui.duel.textmode;
 
 import magic.ui.SwingGameController;
 import magic.ui.theme.Theme;
 
-public class ExileViewer extends CardListViewer {
+class ExileViewer extends CardListViewer {
     private static final long serialVersionUID = 1L;
 
-    public ExileViewer(final SwingGameController controller, final boolean opponent) {
+    ExileViewer(final SwingGameController controller, final boolean opponent) {
         super(
             controller,
             controller.getViewerInfo().getPlayerInfo(opponent).exile,

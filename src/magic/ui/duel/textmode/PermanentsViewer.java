@@ -1,13 +1,4 @@
-package magic.ui.duel.viewer;
-
-import magic.ui.SwingGameController;
-import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
-import magic.ui.widget.TitleBar;
-import magic.ui.widget.ViewerScrollPane;
-
-import javax.swing.JPanel;
-import javax.swing.border.Border;
+package magic.ui.duel.textmode;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -18,8 +9,17 @@ import java.util.Collection;
 import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
+import javax.swing.JPanel;
+import javax.swing.border.Border;
+import magic.ui.SwingGameController;
+import magic.ui.duel.viewer.ChoiceViewer;
+import magic.ui.duel.viewer.PermanentViewerInfo;
+import magic.ui.duel.viewer.Updatable;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
+import magic.ui.widget.TitleBar;
 
-public abstract class PermanentsViewer extends JPanel implements ChoiceViewer, Updatable {
+abstract class PermanentsViewer extends JPanel implements ChoiceViewer, Updatable {
 
     private static final long serialVersionUID = 1L;
 

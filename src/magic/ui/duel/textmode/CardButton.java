@@ -1,23 +1,22 @@
-package magic.ui.duel.viewer;
-
-import javax.swing.JLabel;
-import javax.swing.JPanel;
+package magic.ui.duel.textmode;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.util.Set;
-
-import magic.ui.IconImages;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
+import magic.ui.IconImages;
 import magic.ui.SwingGameController;
+import magic.ui.duel.viewer.ChoiceViewer;
 import magic.ui.theme.ThemeFactory;
+import magic.ui.utility.MagicStyle;
 import magic.ui.widget.CostPanel;
 import magic.ui.widget.PanelButton;
-import magic.ui.utility.MagicStyle;
 
-public class CardButton extends PanelButton implements ChoiceViewer {
+class CardButton extends PanelButton implements ChoiceViewer {
     private static final long serialVersionUID = 1L;
 
     private final SwingGameController controller;
@@ -25,7 +24,7 @@ public class CardButton extends PanelButton implements ChoiceViewer {
     private final boolean showCost;
     private final JLabel nameLabel;
 
-    public CardButton(final SwingGameController controller, final MagicCard card, final int lineHeight, final boolean showCost) {
+    CardButton(final SwingGameController controller, final MagicCard card, final int lineHeight, final boolean showCost) {
         super();
         this.controller = controller;
         this.card       = card;
