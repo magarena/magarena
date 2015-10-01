@@ -1,12 +1,4 @@
-package magic.ui.duel.viewer;
-
-import magic.ui.IUpdatable;
-import magic.ui.IconImages;
-import magic.ui.SwingGameController;
-
-import javax.swing.ImageIcon;
-import javax.swing.JPanel;
-import javax.swing.JToggleButton;
+package magic.ui.duel;
 
 import java.awt.Dimension;
 import java.awt.GridLayout;
@@ -15,7 +7,16 @@ import java.awt.event.ActionListener;
 import java.util.Comparator;
 import java.util.SortedSet;
 import java.util.TreeSet;
+import javax.swing.ImageIcon;
+import javax.swing.JPanel;
+import javax.swing.JToggleButton;
 import magic.data.MagicIcon;
+import magic.ui.IUpdatable;
+import magic.ui.IconImages;
+import magic.ui.SwingGameController;
+import magic.ui.duel.viewer.PermanentViewerInfo;
+import magic.ui.duel.viewer.PlayerViewerInfo;
+import magic.ui.duel.viewer.ViewerInfo;
 
 public class PermanentFilter implements ActionListener {
 

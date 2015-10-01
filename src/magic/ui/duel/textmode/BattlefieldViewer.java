@@ -6,7 +6,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 import javax.swing.border.Border;
 import magic.ui.SwingGameController;
-import magic.ui.duel.viewer.PermanentFilter;
+import magic.ui.duel.PermanentFilter;
 import magic.ui.duel.viewer.PermanentViewerInfo;
 import magic.ui.widget.TitleBar;
 
