@@ -1,7 +1,7 @@
-package magic.ui.duel.viewer;
+package magic.ui;
 
 import java.util.Set;
 
-public interface ChoiceViewer {
+public interface IChoiceViewer {
     void showValidChoices(final Set<?> validChoices);
 }

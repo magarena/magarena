@@ -11,13 +11,13 @@ import javax.swing.BoxLayout;
 import javax.swing.JPanel;
 import javax.swing.border.Border;
 import magic.ui.SwingGameController;
-import magic.ui.duel.viewer.ChoiceViewer;
+import magic.ui.IChoiceViewer;
 import magic.ui.duel.viewer.PermanentViewerInfo;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 
-class PermanentPanel extends JPanel implements ChoiceViewer {
+class PermanentPanel extends JPanel implements IChoiceViewer {
 
     private static final long serialVersionUID = 1L;
 

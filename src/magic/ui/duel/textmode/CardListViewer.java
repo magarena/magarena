@@ -11,12 +11,12 @@ import javax.swing.JScrollPane;
 import magic.model.MagicCard;
 import magic.model.MagicCardList;
 import magic.ui.SwingGameController;
-import magic.ui.duel.viewer.ChoiceViewer;
+import magic.ui.IChoiceViewer;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 
-abstract class CardListViewer extends JPanel implements ChoiceViewer {
+abstract class CardListViewer extends JPanel implements IChoiceViewer {
     private static final long serialVersionUID = 1L;
     private static final int  LINE_HEIGHT      = 26;
 

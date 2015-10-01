@@ -11,12 +11,12 @@ import javax.swing.JScrollPane;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.Scrollable;
 import magic.ui.SwingGameController;
-import magic.ui.duel.viewer.ChoiceViewer;
+import magic.ui.IChoiceViewer;
 import magic.ui.duel.viewer.StackViewerInfo;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class StackViewer extends JPanel implements ChoiceViewer {
+public class StackViewer extends JPanel implements IChoiceViewer {
 
     private final SwingGameController controller;
     private final Collection<StackButton> buttons;

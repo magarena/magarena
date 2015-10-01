@@ -12,14 +12,14 @@ import java.util.TreeSet;
 import javax.swing.JPanel;
 import javax.swing.border.Border;
 import magic.ui.SwingGameController;
-import magic.ui.duel.viewer.ChoiceViewer;
+import magic.ui.IChoiceViewer;
 import magic.ui.duel.viewer.PermanentViewerInfo;
 import magic.ui.duel.viewer.Updatable;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.TitleBar;
 
-abstract class PermanentsViewer extends JPanel implements ChoiceViewer, Updatable {
+abstract class PermanentsViewer extends JPanel implements IChoiceViewer, Updatable {
 
     private static final long serialVersionUID = 1L;
 
@@ -28,7 +28,7 @@ abstract class PermanentsViewer extends JPanel implements ChoiceViewer, Updatabl
     TitleBar titleBar;
     protected final SwingGameController controller;
 
-    private final Collection<ChoiceViewer> targetViewers;
+    private final Collection<IChoiceViewer> targetViewers;
     private final ViewerScrollPane viewerPane;
 
     PermanentsViewer(final SwingGameController controller) {
@@ -100,7 +100,7 @@ abstract class PermanentsViewer extends JPanel implements ChoiceViewer, Updatabl
 
     @Override
     public void showValidChoices(final Set<?> validChoices) {
-        for (final ChoiceViewer targetViewer : targetViewers) {
+        for (final IChoiceViewer targetViewer : targetViewers) {
             targetViewer.showValidChoices(validChoices);
         }
     }

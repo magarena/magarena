@@ -62,7 +62,6 @@ import magic.ui.duel.choice.ModeChoicePanel;
 import magic.ui.duel.choice.MulliganChoicePanel;
 import magic.ui.duel.choice.MultiKickerChoicePanel;
 import magic.ui.duel.choice.PlayChoicePanel;
-import magic.ui.duel.viewer.ChoiceViewer;
 import magic.ui.duel.viewer.PlayerViewerInfo;
 import magic.ui.duel.viewer.PlayerZoneViewer;
 import magic.ui.duel.viewer.UserActionPanel;
@@ -89,7 +88,7 @@ public class SwingGameController implements IUIGameController {
     private final AtomicBoolean running = new AtomicBoolean(false);
     private final AtomicBoolean isPaused =  new AtomicBoolean(false);
     private final AtomicBoolean gameConceded = new AtomicBoolean(false);
-    private final Collection<ChoiceViewer> choiceViewers = new ArrayList<>();
+    private final Collection<IChoiceViewer> choiceViewers = new ArrayList<>();
     private Set<?> validChoices = Collections.emptySet();
     private AnnotatedCardPanel cardPopup;
     private UserActionPanel userActionPanel;
@@ -518,13 +517,13 @@ public class SwingGameController implements IUIGameController {
         });
     }
 
-    public void registerChoiceViewer(final ChoiceViewer choiceViewer) {
+    public void registerChoiceViewer(final IChoiceViewer choiceViewer) {
         choiceViewers.add(choiceViewer);
     }
 
     private void showValidChoices() {
         assert SwingUtilities.isEventDispatchThread();
-        for (final ChoiceViewer choiceViewer : choiceViewers) {
+        for (final IChoiceViewer choiceViewer : choiceViewers) {
             choiceViewer.showValidChoices(validChoices);
         }
     }

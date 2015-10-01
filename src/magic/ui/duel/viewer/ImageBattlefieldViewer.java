@@ -1,5 +1,6 @@
 package magic.ui.duel.viewer;
 
+import magic.ui.IChoiceViewer;
 import magic.ui.SwingGameController;
 import magic.ui.theme.Theme;
 import magic.ui.widget.FontsAndBorders;
@@ -13,7 +14,7 @@ import java.util.Set;
 import magic.model.MagicCard;
 import magic.ui.utility.MagicStyle;
 
-public class ImageBattlefieldViewer extends JPanel implements ChoiceViewer, Updatable {
+public class ImageBattlefieldViewer extends JPanel implements IChoiceViewer, Updatable {
 
     private static final long serialVersionUID = 1L;
 

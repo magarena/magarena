@@ -10,7 +10,7 @@ import javax.swing.JLabel;
 import magic.data.GeneralConfig;
 import magic.model.MagicPlayerZone;
 import magic.ui.SwingGameController;
-import magic.ui.duel.viewer.ChoiceViewer;
+import magic.ui.IChoiceViewer;
 import magic.ui.duel.viewer.PlayerViewerInfo;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.PanelButton;
@@ -18,7 +18,7 @@ import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class GamePlayerPanel extends TexturedPanel implements ChoiceViewer {
+public class GamePlayerPanel extends TexturedPanel implements IChoiceViewer {
     
     private PlayerViewerInfo playerInfo;
     private PlayerZoneButtonsPanel zoneButtonsPanel;

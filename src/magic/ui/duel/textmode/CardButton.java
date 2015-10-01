@@ -10,13 +10,13 @@ import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.ui.IconImages;
 import magic.ui.SwingGameController;
-import magic.ui.duel.viewer.ChoiceViewer;
+import magic.ui.IChoiceViewer;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.utility.MagicStyle;
 import magic.ui.widget.CostPanel;
 import magic.ui.widget.PanelButton;
 
-class CardButton extends PanelButton implements ChoiceViewer {
+class CardButton extends PanelButton implements IChoiceViewer {
     private static final long serialVersionUID = 1L;
 
     private final SwingGameController controller;

@@ -7,7 +7,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.Border;
 import magic.ui.SwingGameController;
-import magic.ui.duel.viewer.ChoiceViewer;
+import magic.ui.IChoiceViewer;
 import magic.ui.duel.viewer.PermanentViewerInfo;
 import magic.ui.message.TextLabel;
 import magic.ui.theme.Theme;
@@ -15,7 +15,7 @@ import magic.ui.theme.ThemeFactory;
 import magic.ui.utility.MagicStyle;
 import magic.ui.widget.PanelButton;
 
-class PermanentButton extends PanelButton implements ChoiceViewer {
+class PermanentButton extends PanelButton implements IChoiceViewer {
 
     private static final long serialVersionUID = 1L;
 

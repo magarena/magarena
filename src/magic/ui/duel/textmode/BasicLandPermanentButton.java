@@ -9,13 +9,13 @@ import javax.swing.JPanel;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.ui.SwingGameController;
-import magic.ui.duel.viewer.ChoiceViewer;
+import magic.ui.IChoiceViewer;
 import magic.ui.duel.viewer.PermanentViewerInfo;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.PanelButton;
 
-class BasicLandPermanentButton extends PanelButton implements ChoiceViewer {
+class BasicLandPermanentButton extends PanelButton implements IChoiceViewer {
 
     private static final long serialVersionUID = 1L;
 
