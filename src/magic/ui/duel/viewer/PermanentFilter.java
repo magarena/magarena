@@ -1,5 +1,6 @@
 package magic.ui.duel.viewer;
 
+import magic.ui.IUpdatable;
 import magic.ui.IconImages;
 import magic.ui.SwingGameController;
 
