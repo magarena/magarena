@@ -1,5 +1,6 @@
 package magic.ui.duel.viewer;
 
+import magic.ui.utility.ImageDrawingUtils;
 import magic.data.GeneralConfig;
 import magic.ui.CachedImagesProvider;
 import magic.ui.IconImages;

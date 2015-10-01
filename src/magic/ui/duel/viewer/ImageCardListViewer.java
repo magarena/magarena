@@ -1,5 +1,6 @@
 package magic.ui.duel.viewer;
 
+import magic.ui.utility.ImageDrawingUtils;
 import magic.ui.IChoiceViewer;
 import java.awt.BasicStroke;
 import java.awt.Color;

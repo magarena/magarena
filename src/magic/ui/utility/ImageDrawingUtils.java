@@ -1,6 +1,16 @@
-package magic.ui.duel.viewer;
+package magic.ui.utility;
 
-import magic.ui.IconImages;
+import java.awt.Color;
+import java.awt.FontMetrics;
+import java.awt.Graphics;
+import java.awt.image.ImageObserver;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import javax.swing.ImageIcon;
+import magic.data.MagicIcon;
 import magic.model.MagicAbility;
 import magic.model.MagicColor;
 import magic.model.MagicCounterType;
@@ -8,24 +18,12 @@ import magic.model.MagicManaCost;
 import magic.model.MagicManaType;
 import magic.model.MagicPermanent;
 import magic.model.event.MagicManaActivation;
+import magic.ui.IconImages;
 import magic.ui.widget.FontsAndBorders;
-
-import javax.swing.ImageIcon;
-
-import java.awt.Color;
-import java.awt.FontMetrics;
-import java.awt.Graphics;
-import java.awt.image.ImageObserver;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Collection;
-import java.util.List;
-import java.util.Set;
-import magic.data.MagicIcon;
-import magic.ui.utility.GraphicsUtils;
 import magic.utility.MagicSystem;
 
 public class ImageDrawingUtils {
+
     public static void drawCostInfo(
         final Graphics g,
         final ImageObserver observer,
@@ -52,7 +50,7 @@ public class ImageDrawingUtils {
         int ax,
         final int ay
     ) {
-        final Set<MagicManaType> types = new HashSet<MagicManaType>();
+        final Set<MagicManaType> types = new HashSet<>();
         for (final MagicManaActivation manaAct : acts) {
             for (final MagicManaType manaType : manaAct.getManaTypes()) {
                 if (manaType != MagicManaType.Colorless) {
@@ -60,7 +58,7 @@ public class ImageDrawingUtils {
                 }
             }
         }
-        final List<ImageIcon> icons = new ArrayList<ImageIcon>();
+        final List<ImageIcon> icons = new ArrayList<>();
         if (types.size()==MagicColor.NR_COLORS) {
             icons.add(IconImages.getIcon(MagicIcon.MANA_ANY));
         } else if (types.isEmpty() && !acts.isEmpty()) {
