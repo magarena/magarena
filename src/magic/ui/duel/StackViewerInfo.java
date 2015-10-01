@@ -1,13 +1,12 @@
-package magic.ui.duel.viewer;
-
-import magic.model.MagicCardDefinition;
-import magic.model.MagicGame;
-import magic.model.stack.MagicItemOnStack;
+package magic.ui.duel;
 
 import javax.swing.ImageIcon;
 import magic.data.MagicIcon;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicGame;
 import magic.model.stack.MagicAbilityOnStack;
 import magic.model.stack.MagicCardOnStack;
+import magic.model.stack.MagicItemOnStack;
 import magic.model.stack.MagicTriggerOnStack;
 import magic.ui.IconImages;
 

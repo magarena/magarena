@@ -1,7 +1,7 @@
 package magic.ui;
 
 import magic.model.MagicPlayerZone;
-import magic.ui.duel.viewer.PlayerViewerInfo;
+import magic.ui.duel.PlayerViewerInfo;
 
 public interface IPlayerZoneListener {
 

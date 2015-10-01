@@ -1,4 +1,4 @@
-package magic.ui.duel.viewer;
+package magic.ui.duel;
 
 import java.util.ArrayList;
 import java.util.Iterator;

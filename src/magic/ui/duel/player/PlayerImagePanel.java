@@ -14,7 +14,7 @@ import magic.ui.utility.GraphicsUtils;
 import magic.ui.IconImages;
 import magic.ui.utility.MagicStyle;
 import magic.ui.duel.CounterOverlay;
-import magic.ui.duel.viewer.PlayerViewerInfo;
+import magic.ui.duel.PlayerViewerInfo;
 import magic.ui.theme.ThemeFactory;
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.ease.Spline;

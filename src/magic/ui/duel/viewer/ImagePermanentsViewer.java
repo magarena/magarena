@@ -1,5 +1,6 @@
 package magic.ui.duel.viewer;
 
+import magic.ui.duel.PermanentViewerInfo;
 import java.awt.Dimension;
 import java.awt.Point;
 import java.util.ArrayList;

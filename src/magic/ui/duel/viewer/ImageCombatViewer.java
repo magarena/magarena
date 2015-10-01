@@ -1,5 +1,8 @@
 package magic.ui.duel.viewer;
 
+import magic.ui.duel.ViewerInfo;
+import magic.ui.duel.PlayerViewerInfo;
+import magic.ui.duel.PermanentViewerInfo;
 import magic.ui.IChoiceViewer;
 import magic.ui.SwingGameController;
 import magic.ui.theme.Theme;

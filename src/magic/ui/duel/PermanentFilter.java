@@ -14,9 +14,6 @@ import magic.data.MagicIcon;
 import magic.ui.IUpdatable;
 import magic.ui.IconImages;
 import magic.ui.SwingGameController;
-import magic.ui.duel.viewer.PermanentViewerInfo;
-import magic.ui.duel.viewer.PlayerViewerInfo;
-import magic.ui.duel.viewer.ViewerInfo;
 
 public class PermanentFilter implements ActionListener {
 

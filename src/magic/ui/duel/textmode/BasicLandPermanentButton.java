@@ -10,7 +10,7 @@ import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.ui.SwingGameController;
 import magic.ui.IChoiceViewer;
-import magic.ui.duel.viewer.PermanentViewerInfo;
+import magic.ui.duel.PermanentViewerInfo;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.PanelButton;

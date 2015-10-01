@@ -1,8 +1,12 @@
-package magic.ui.duel.viewer;
+package magic.ui.duel;
 
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Set;
+import java.util.SortedSet;
+import java.util.TreeSet;
 import javax.swing.ImageIcon;
-import magic.ui.IconImages;
-
 import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
@@ -13,13 +17,7 @@ import magic.model.MagicPermanentState;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.stack.MagicItemOnStack;
-
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Set;
-import java.util.SortedSet;
-import java.util.TreeSet;
+import magic.ui.IconImages;
 
 public class PermanentViewerInfo {
 

@@ -11,7 +11,7 @@ import magic.data.GeneralConfig;
 import magic.model.MagicPlayerZone;
 import magic.ui.SwingGameController;
 import magic.ui.IChoiceViewer;
-import magic.ui.duel.viewer.PlayerViewerInfo;
+import magic.ui.duel.PlayerViewerInfo;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.PanelButton;
 import magic.ui.widget.TexturedPanel;

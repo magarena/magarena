@@ -62,10 +62,10 @@ import magic.ui.duel.choice.ModeChoicePanel;
 import magic.ui.duel.choice.MulliganChoicePanel;
 import magic.ui.duel.choice.MultiKickerChoicePanel;
 import magic.ui.duel.choice.PlayChoicePanel;
-import magic.ui.duel.viewer.PlayerViewerInfo;
+import magic.ui.duel.PlayerViewerInfo;
 import magic.ui.duel.viewer.PlayerZoneViewer;
 import magic.ui.duel.viewer.UserActionPanel;
-import magic.ui.duel.viewer.ViewerInfo;
+import magic.ui.duel.ViewerInfo;
 import magic.ui.screen.MulliganScreen;
 import magic.utility.MagicSystem;
 

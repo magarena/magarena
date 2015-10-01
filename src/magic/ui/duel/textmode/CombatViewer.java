@@ -6,8 +6,8 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 import javax.swing.border.Border;
 import magic.ui.SwingGameController;
-import magic.ui.duel.viewer.PermanentViewerInfo;
-import magic.ui.duel.viewer.PlayerViewerInfo;
+import magic.ui.duel.PermanentViewerInfo;
+import magic.ui.duel.PlayerViewerInfo;
 import magic.ui.widget.FontsAndBorders;
 
 class CombatViewer extends PermanentsViewer {
