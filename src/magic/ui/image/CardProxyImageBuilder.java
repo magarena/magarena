@@ -180,7 +180,7 @@ public class CardProxyImageBuilder {
     }
 
     // identifies "{?}" tokens in oracle text.
-    private static final Pattern TOKEN_PATTERN = Pattern.compile("\\{*.\\}");
+    private static final Pattern TOKEN_PATTERN = Pattern.compile("\\{(.*?)\\}");
 
     // use an obscure character that is never likely to appear in oracle text.
     private static final String ICON_PLACEHOLDER = "\u25D9"; // ◙
