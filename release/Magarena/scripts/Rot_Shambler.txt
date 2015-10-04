@@ -1,0 +1,11 @@
+name=Rot Shambler
+image=http://magiccards.info/scans/en/bfz/187.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Fungus
+cost={1}{G}
+pt=1/1
+ability=Whenever another creature you control dies, put a +1/+1 counter on SN.
+timing=main
+oracle=Whenever another creature you control dies, put a +1/+1 counter on Rot Shambler.

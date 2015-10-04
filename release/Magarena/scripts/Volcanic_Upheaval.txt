@@ -1,0 +1,9 @@
+name=Volcanic Upheaval
+image=http://magiccards.info/scans/en/bfz/161.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={3}{R}
+effect=Destroy target land.
+timing=removal
+oracle=Destroy target land.

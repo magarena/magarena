@@ -1,0 +1,10 @@
+name=Broodhunter Wurm
+image=http://magiccards.info/scans/en/bfz/171.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Wurm
+cost={3}{G}
+pt=4/3
+timing=main
+oracle=NONE

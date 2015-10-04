@@ -1,0 +1,12 @@
+name=Emeria Shepherd
+image=http://magiccards.info/scans/en/bfz/22.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Angel
+cost={5}{W}{W}
+pt=4/4
+ability=Flying;\
+        Whenever a land enters the battlefield under your control, you may return target nonland permanent card from your graveyard to your hand. If that land is a Plains, you may return that nonland permanent card to the battlefield instead.
+timing=main
+oracle=Flying\nLandfall — Whenever a land enters the battlefield under your control, you may return target nonland permanent card from your graveyard to your hand. If that land is a Plains, you may return that nonland permanent card to the battlefield instead.

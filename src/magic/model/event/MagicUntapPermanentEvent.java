@@ -24,7 +24,7 @@ public class MagicUntapPermanentEvent extends MagicEvent {
             targetChoice,
             MagicTapTargetPicker.Untap,
             EVENT_ACTION,
-            "Choose "+targetChoice.getTargetDescription()+"$."
+            "Untap "+targetChoice.getTargetDescription()+"$."
         );
     }
 

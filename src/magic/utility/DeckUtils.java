@@ -205,7 +205,7 @@ public class DeckUtils {
                         deck.add(cardDefinition);
                     }
 
-                    if (!cardDefinition.isValid() || cardDefinition.isHidden()) {
+                    if (cardDefinition.isInvalid() || cardDefinition.isNonPlayable()) {
                         lineErrors.add(UiString.get(_S7, lineNumber, cardDefinition.getName()));
                     }
 

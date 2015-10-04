@@ -1,0 +1,9 @@
+name=Swell of Growth
+image=http://magiccards.info/scans/en/bfz/191.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{G}
+effect=Target creature gets +2/+2 until end of turn. You may put a land card from your hand onto the battlefield.
+timing=removal
+oracle=Target creature gets +2/+2 until end of turn. You may put a land card from your hand onto the battlefield.

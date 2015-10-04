@@ -1,0 +1,11 @@
+name=Tunneling Geopede
+image=http://magiccards.info/scans/en/bfz/158.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Insect
+cost={2}{R}
+pt=3/2
+ability=Whenever a land enters the battlefield under your control, SN deals 1 damage to each opponent.
+timing=main
+oracle=Landfall — Whenever a land enters the battlefield under your control, Tunneling Geopede deals 1 damage to each opponent.

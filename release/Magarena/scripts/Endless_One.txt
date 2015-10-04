@@ -1,0 +1,11 @@
+name=Endless One
+image=http://magiccards.info/scans/en/bfz/8.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Eldrazi
+cost={X}
+pt=0/0
+ability=SN enters the battlefield with X +1/+1 counters on it.
+timing=main
+oracle=Endless One enters the battlefield with X +1/+1 counters on it.

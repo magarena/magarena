@@ -1,0 +1,12 @@
+name=Barrage Tyrant
+image=http://magiccards.info/scans/en/bfz/127.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Eldrazi
+cost={4}{R}
+pt=5/3
+ability=Devoid;\
+        {2}{R}, Sacrifice another colorless creature: SN deals damage equal to the sacrificed creature's power to target creature or player.
+timing=main
+oracle=Devoid\n{2}{R}, Sacrifice another colorless creature: Barrage Tyrant deals damage equal to the sacrificed creature's power to target creature or player.

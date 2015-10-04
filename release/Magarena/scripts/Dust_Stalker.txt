@@ -1,0 +1,13 @@
+name=Dust Stalker
+image=http://magiccards.info/scans/en/bfz/202.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Eldrazi
+cost={2}{B}{R}
+pt=5/3
+ability=Devoid;\
+        Haste;\
+        At the beginning of each end step, if you control no other colorless creatures, return SN to its owner's hand.
+timing=main
+oracle=Devoid\nHaste\nAt the beginning of each end step, if you control no other colorless creatures, return Dust Stalker to its owner's hand.

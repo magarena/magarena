@@ -1,0 +1,11 @@
+name=Kor Bladewhirl
+image=http://magiccards.info/scans/en/bfz/34.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Kor,Soldier,Ally
+cost={1}{W}
+pt=2/2
+ability=Whenever SN or another Ally enters the battlefield under your control, creatures you control gain first strike until end of turn.
+timing=main
+oracle=Rally — Whenever Kor Bladewhirl or another Ally enters the battlefield under your control, creatures you control gain first strike until end of turn.

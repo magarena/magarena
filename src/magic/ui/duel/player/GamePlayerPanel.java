@@ -10,15 +10,15 @@ import javax.swing.JLabel;
 import magic.data.GeneralConfig;
 import magic.model.MagicPlayerZone;
 import magic.ui.SwingGameController;
-import magic.ui.duel.viewer.ChoiceViewer;
-import magic.ui.duel.viewer.PlayerViewerInfo;
+import magic.ui.IChoiceViewer;
+import magic.ui.duel.PlayerViewerInfo;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.PanelButton;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class GamePlayerPanel extends TexturedPanel implements ChoiceViewer {
+public class GamePlayerPanel extends TexturedPanel implements IChoiceViewer {
     
     private PlayerViewerInfo playerInfo;
     private PlayerZoneButtonsPanel zoneButtonsPanel;
@@ -36,6 +36,7 @@ public class GamePlayerPanel extends TexturedPanel implements ChoiceViewer {
         zoneButtonsPanel = new PlayerZoneButtonsPanel(playerInfo, controller);
 
         avatarPanel = new PlayerImagePanel(playerInfo, controller.getGame());
+        avatarPanel.setOpaque(false);
 
         avatarButton = new PanelButton() {
             @Override
@@ -72,10 +73,12 @@ public class GamePlayerPanel extends TexturedPanel implements ChoiceViewer {
 
     @Override
     public void showValidChoices(Set<?> validChoices) {
+        final boolean isValid = isThisPlayerValidChoice(validChoices);
         if (GeneralConfig.getInstance().isAnimateGameplay()) {
-            avatarPanel.doPulsingBorderAnimation(isThisPlayerValidChoice(validChoices));
+            avatarPanel.doPulsingBorderAnimation(isValid);
+            avatarButton.setValidNoOverlay(isValid);
         } else {
-            avatarPanel.showValidChoiceIndicator(isThisPlayerValidChoice(validChoices));
+            avatarButton.setValid(isValid);
         }
     }
 
@@ -99,6 +102,10 @@ public class GamePlayerPanel extends TexturedPanel implements ChoiceViewer {
 
     public void doFlashPlayerHandZoneButton() {
         zoneButtonsPanel.doFlashPlayerHandZoneButton();
+    }
+
+    public void doHighlightPlayerZone(MagicPlayerZone zone, boolean b) {
+        zoneButtonsPanel.doHighlightPlayerZone(zone, b);
     }
 
 }

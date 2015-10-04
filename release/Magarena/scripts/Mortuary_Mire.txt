@@ -1,0 +1,10 @@
+name=Mortuary Mire
+image=http://magiccards.info/scans/en/bfz/240.jpg
+value=2.500
+rarity=C
+type=Land
+ability=SN enters the battlefield tapped.;\
+        When SN enters the battlefield, you may put target creature card from your graveyard on top of your library.;\
+        {T}: Add {B} to your mana pool.
+timing=land
+oracle=Mortuary Mire enters the battlefield tapped.\nWhen Mortuary Mire enters the battlefield, you may put target creature card from your graveyard on top of your library.\n{T}: Add {B} to your mana pool.

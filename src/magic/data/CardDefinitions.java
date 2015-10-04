@@ -104,10 +104,10 @@ public class CardDefinitions {
 
         cardDef.setIndex(cdefIndex.getAndIncrement());
         
-        if (cardDef.isToken() == false && cardDef.isHidden() == false) {
+        if (cardDef.isPlayable()) {
             cardDef.add(new MagicHandCastActivation(cardDef));
         }
-        
+       
         allPlayableCardDefs.put(cardDef.getAsciiName(), cardDef);
     }
 
@@ -216,7 +216,7 @@ public class CardDefinitions {
         
         // update card lists
         for (final MagicCardDefinition cardDefinition : allPlayableCardDefs.values()) {
-            if (cardDefinition.isToken() == false && cardDefinition.isHidden() == false) {
+            if (cardDefinition.isPlayable()) {
                 defaultPlayableCardDefs.add(cardDefinition);
 
                 if (cardDefinition.isLand() == false) {

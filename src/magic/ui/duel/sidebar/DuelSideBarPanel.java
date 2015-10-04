@@ -9,6 +9,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
+import magic.model.MagicCard;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerZone;
 import magic.ui.IPlayerZoneListener;
@@ -17,7 +18,7 @@ import magic.ui.duel.player.GamePlayerPanel;
 import magic.ui.duel.player.PlayerZoneButtonsPanel;
 import magic.ui.duel.resolution.DefaultResolutionProfile;
 import magic.ui.duel.viewer.GameStatusPanel;
-import magic.ui.duel.viewer.PlayerViewerInfo;
+import magic.ui.duel.PlayerViewerInfo;
 import magic.ui.duel.viewer.UserActionPanel;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
@@ -86,10 +87,6 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
 
     public GameStatusPanel getGameStatusPanel() {
         return gameStatusPanel;
-    }
-
-    public LogViewer getLogBookViewer() {
-        return logBookViewer;
     }
 
     public void doSetLayout() {
@@ -173,6 +170,11 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
             }
         }
         throw new RuntimeException("Missing GamePlayerPanel for " + player.getName());
+    }
+
+    public void doHighlightPlayerZone(MagicCard card, MagicPlayerZone zone, boolean b) {
+        final GamePlayerPanel playerPanel = playerCompositePanels[card.getController().getIndex()].getPlayerPanel();
+        playerPanel.doHighlightPlayerZone(zone, b);
     }
 
     private class LayoutSlot {

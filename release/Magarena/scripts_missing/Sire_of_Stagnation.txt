@@ -1,0 +1,12 @@
+name=Sire of Stagnation
+image=http://magiccards.info/scans/en/bfz/206.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Eldrazi
+cost={4}{U}{B}
+pt=5/7
+ability=Devoid;\
+        Whenever a land enters the battlefield under an opponent's control, that player exiles the top two cards of his or her library and you draw two cards.
+timing=main
+oracle=Devoid\nWhenever a land enters the battlefield under an opponent's control, that player exiles the top two cards of his or her library and you draw two cards.

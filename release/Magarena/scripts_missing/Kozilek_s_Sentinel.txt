@@ -1,0 +1,12 @@
+name=Kozilek's Sentinel
+image=http://magiccards.info/scans/en/bfz/129.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Eldrazi,Drone
+cost={1}{R}
+pt=1/4
+ability=Devoid;\
+        Whenever you cast a colorless spell, SN gets +1/+0 until end of turn.
+timing=main
+oracle=Devoid\nWhenever you cast a colorless spell, Kozilek's Sentinel gets +1/+0 until end of turn.

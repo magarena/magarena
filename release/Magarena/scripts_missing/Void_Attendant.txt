@@ -1,0 +1,12 @@
+name=Void Attendant
+image=http://magiccards.info/scans/en/bfz/169.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Eldrazi,Processor
+cost={2}{G}
+pt=2/3
+ability=Devoid;\
+        {1}{G}, Put a card an opponent owns from exile into that player's graveyard: Put a 1/1 colorless Eldrazi Scion creature token onto the battlefield. It has "Sacrifice this creature: Add {1} to your mana pool."
+timing=main
+oracle=Devoid\n{1}{G}, Put a card an opponent owns from exile into that player's graveyard: Put a 1/1 colorless Eldrazi Scion creature token onto the battlefield. It has "Sacrifice this creature: Add {1} to your mana pool."

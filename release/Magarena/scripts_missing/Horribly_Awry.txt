@@ -1,0 +1,9 @@
+name=Horribly Awry
+image=http://magiccards.info/scans/en/bfz/59.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={1}{U}
+effect=Devoid~Counter target creature spell with converted mana cost 4 or less. If that spell is countered this way, exile it instead of putting it into its owner's graveyard.
+timing=removal
+oracle=Devoid\nCounter target creature spell with converted mana cost 4 or less. If that spell is countered this way, exile it instead of putting it into its owner's graveyard.

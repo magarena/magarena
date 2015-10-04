@@ -1,5 +1,6 @@
 package magic.ui.duel;
 
+import magic.ui.duel.textmode.TextModeBattlefieldPanel;
 import magic.ui.duel.sidebar.DuelSideBarPanel;
 import java.awt.Component;
 import magic.ui.duel.dialog.DuelDialogPanel;
@@ -16,6 +17,7 @@ import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
+import magic.model.MagicCard;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
@@ -35,7 +37,7 @@ import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public final class DuelPanel extends JPanel {
-
+    
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
     private static final String ACTION_KEY="action";
     private static final String UNDO_KEY="undo";
@@ -331,6 +333,30 @@ public final class DuelPanel extends JPanel {
 
     public void doFlashPlayerHandZoneButton() {
         sidebarPanel.doFlashPlayerHandZoneButton();
+    }
+
+    public void highlightCard(MagicCard card, boolean b) {
+        switch (card.getLocation()) {
+            case Play:
+                battlefieldPanel.highlightCard(card, b);
+                break;
+            case Graveyard:
+                sidebarPanel.doHighlightPlayerZone(card, MagicPlayerZone.GRAVEYARD, b);
+                break;
+            case Exile:
+                sidebarPanel.doHighlightPlayerZone(card, MagicPlayerZone.EXILE, b);
+                break;
+            case OwnersHand:
+                sidebarPanel.doHighlightPlayerZone(card, MagicPlayerZone.HAND, b);
+                break;
+            case OwnersLibrary:
+                sidebarPanel.doHighlightPlayerZone(card, MagicPlayerZone.LIBRARY, b);
+                break;                                
+        }
+    }
+
+    public Rectangle getBattlefieldPanelBounds() {
+        return battlefieldPanel.getBounds();
     }
 
 }

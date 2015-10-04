@@ -1,0 +1,11 @@
+name=Lavastep Raider
+image=http://magiccards.info/scans/en/bfz/147.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Goblin,Warrior
+cost={R}
+pt=1/2
+ability={2}{R}: SN gets +2/+0 until end of turn.
+timing=main
+oracle={2}{R}: Lavastep Raider gets +2/+0 until end of turn.

@@ -1,0 +1,11 @@
+name=Fortified Rampart
+image=http://magiccards.info/scans/en/bfz/27.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Wall
+cost={1}{W}
+pt=0/6
+ability=Defender
+timing=main
+oracle=Defender

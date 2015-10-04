@@ -9,6 +9,7 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import javax.swing.JComponent;
 import javax.swing.SwingUtilities;
+import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.model.MagicPlayer;
@@ -43,7 +44,7 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
         imagePlayerPermanentViewer = new ImageBattlefieldViewer(controller, false);
         imageOpponentPermanentViewer = new ImageBattlefieldViewer(controller, true);
         imageCombatViewer = new ImageCombatViewer(controller);
-        imageStackViewer = new StackViewer(controller, true);
+        imageStackViewer = new StackViewer(controller);
         //
         playerZoneViewer.addPropertyChangeListener(PlayerZoneViewer.CP_PLAYER_ZONE,
                 new PropertyChangeListener() {
@@ -163,6 +164,13 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
         super.paintComponent(g);
         final Image overlayImage = textOverlay.getOverlayImage(getWidth(), getHeight());
         g.drawImage(overlayImage, 0, 0, this);
+    }
+
+    @Override
+    public void highlightCard(MagicCard card, boolean b) {
+        if (!imagePlayerPermanentViewer.highlightCard(card, b))
+            if (!imageOpponentPermanentViewer.highlightCard(card, b))
+                imageCombatViewer.highlightCard(card, b);
     }
 
 }

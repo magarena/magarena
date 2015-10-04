@@ -1,0 +1,10 @@
+name=Shambling Vent
+image=http://magiccards.info/scans/en/bfz/244.jpg
+value=2.500
+rarity=R
+type=Land
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {W} or {B} to your mana pool.;\
+        {1}{W}{B}: SN becomes a 2/3 white and black Elemental creature with lifelink until end of turn. It's still a land.
+timing=land
+oracle=Shambling Vent enters the battlefield tapped.\n{T}: Add {W} or {B} to your mana pool.\n{1}{W}{B}: Shambling Vent becomes a 2/3 white and black Elemental creature with lifelink until end of turn. It's still a land.

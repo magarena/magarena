@@ -13,6 +13,7 @@ import java.awt.GraphicsConfiguration;
 import java.awt.GraphicsDevice.WindowTranslucency;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
+import java.awt.Image;
 import java.awt.Paint;
 import java.awt.Rectangle;
 import java.awt.RenderingHints;
@@ -20,7 +21,6 @@ import java.awt.Toolkit;
 import java.awt.Transparency;
 import java.awt.image.BufferedImage;
 import java.awt.image.FilteredImageSource;
-import java.awt.image.ImageProducer;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
@@ -32,19 +32,15 @@ import javax.swing.JComponent;
 import magic.data.GeneralConfig;
 import magic.ui.CardImagesProvider;
 import magic.ui.ScreenController;
+import magic.ui.image.filter.GrayScaleImageFilter;
+import magic.ui.image.filter.WhiteColorSwapImageFilter;
 import magic.ui.theme.Theme;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicFileSystem;
 
-/**
- * <p><code>GraphicsUtilities</code> contains a set of tools to perform
- * common graphics operations easily.
- *
- * @author Romain Guy <romain.guy@mac.com>
- * @author rbair
- * @author Karl Schaefer
- */
 final public class GraphicsUtils {
+
+    private static final GrayScaleImageFilter GRAYSCALE_FILTER = new GrayScaleImageFilter();
 
     private final static GraphicsConfiguration GC = (java.awt.GraphicsEnvironment.isHeadless() == false) ?
         GraphicsEnvironment
@@ -170,6 +166,10 @@ final public class GraphicsUtils {
         return getCompatibleBufferedImage(width, height, Transparency.OPAQUE);
     }
 
+    public static BufferedImage getCompatibleBufferedImage(BufferedImage image) {
+        return getCompatibleBufferedImage(image.getWidth(), image.getHeight(), image.getTransparency());
+    }
+
     public static boolean isValidImageFile(final Path imageFilePath) {
         try {
             final BufferedImage image = ImageIO.read(imageFilePath.toFile());
@@ -274,35 +274,29 @@ final public class GraphicsUtils {
         g2d.dispose();
     }
 
-    public static BufferedImage getGreyScaleImage(final BufferedImage colorImage) {
-        
-        final BufferedImage greyscaleImage = new BufferedImage(
-                colorImage.getWidth(),
-                colorImage.getHeight(),
-                BufferedImage.TYPE_BYTE_GRAY
-        );
-
-        final Graphics g = greyscaleImage.createGraphics();
-        g.drawImage(colorImage, 0, 0, null);
-        g.dispose();
-
-        return greyscaleImage;
-    }
-    
-    private static float[] getImageFilterValues(final Color color) {
-        return new float[]{
-            color.getRed() / 255f,
-            color.getGreen() / 255f,
-            color.getBlue() / 255f};
-    }
-    
     public static Icon getRecoloredIcon(final ImageIcon defaultIcon, final Color newColor) {
-        final ImageProducer ip = defaultIcon.getImage().getSource();
-        final float[] filter = getImageFilterValues(newColor);
-        return new ImageIcon(
-                Toolkit.getDefaultToolkit().createImage(
-                        new FilteredImageSource(ip, new WhiteColorSwapImageFilter(filter)))
+        final FilteredImageSource fis = new FilteredImageSource(
+                defaultIcon.getImage().getSource(),
+                new WhiteColorSwapImageFilter(newColor)
         );
+        return new ImageIcon(Toolkit.getDefaultToolkit().createImage(fis));
+    }
+
+    public static Image getGreyScaleImage(final Image colorImage) {
+        final FilteredImageSource fis = new FilteredImageSource(
+                colorImage.getSource(),
+                GRAYSCALE_FILTER
+        );
+        return Toolkit.getDefaultToolkit().createImage(fis);
+    }
+
+    public static BufferedImage getTranslucentImage(BufferedImage image, float opacity) {
+        final BufferedImage newImage = GraphicsUtils.getCompatibleBufferedImage(image);
+        final Graphics2D g2d = newImage.createGraphics();
+        g2d.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, opacity));
+        g2d.drawImage(image, 0, 0, null);
+        g2d.dispose();
+        return newImage;
     }
 
 }

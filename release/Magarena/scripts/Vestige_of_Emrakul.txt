@@ -1,0 +1,12 @@
+name=Vestige of Emrakul
+image=http://magiccards.info/scans/en/bfz/136.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Eldrazi,Drone
+cost={3}{R}
+pt=3/4
+ability=Devoid;\
+        Trample
+timing=main
+oracle=Devoid\nTrample

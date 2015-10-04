@@ -1,0 +1,9 @@
+name=Canopy Vista
+image=http://magiccards.info/scans/en/exp/5.jpg
+value=2.500
+rarity=M
+type=Land
+subtype=Forest,Plains
+ability=SN enters the battlefield tapped unless you control two or more basic lands.
+timing=land
+oracle=Canopy Vista enters the battlefield tapped unless you control two or more basic lands.

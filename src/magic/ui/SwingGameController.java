@@ -35,6 +35,7 @@ import magic.game.state.GameState;
 import magic.game.state.GameStateFileWriter;
 import magic.game.state.GameStateSnapshot;
 import magic.model.IUIGameController;
+import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.model.MagicColor;
@@ -61,11 +62,10 @@ import magic.ui.duel.choice.ModeChoicePanel;
 import magic.ui.duel.choice.MulliganChoicePanel;
 import magic.ui.duel.choice.MultiKickerChoicePanel;
 import magic.ui.duel.choice.PlayChoicePanel;
-import magic.ui.duel.viewer.ChoiceViewer;
-import magic.ui.duel.viewer.PlayerViewerInfo;
+import magic.ui.duel.PlayerViewerInfo;
 import magic.ui.duel.viewer.PlayerZoneViewer;
 import magic.ui.duel.viewer.UserActionPanel;
-import magic.ui.duel.viewer.ViewerInfo;
+import magic.ui.duel.ViewerInfo;
 import magic.ui.screen.MulliganScreen;
 import magic.utility.MagicSystem;
 
@@ -88,7 +88,7 @@ public class SwingGameController implements IUIGameController {
     private final AtomicBoolean running = new AtomicBoolean(false);
     private final AtomicBoolean isPaused =  new AtomicBoolean(false);
     private final AtomicBoolean gameConceded = new AtomicBoolean(false);
-    private final Collection<ChoiceViewer> choiceViewers = new ArrayList<>();
+    private final Collection<IChoiceViewer> choiceViewers = new ArrayList<>();
     private Set<?> validChoices = Collections.emptySet();
     private AnnotatedCardPanel cardPopup;
     private UserActionPanel userActionPanel;
@@ -305,6 +305,36 @@ public class SwingGameController implements IUIGameController {
         this.userActionPanel = userActionPanel;
     }
 
+    public void viewCardPopupCentered(final MagicObject cardObject, final int popupDelay) {
+
+        // mouse wheel rotation event can fire more than once
+        // so ignore all but the first event.
+        if (cardObject == cardPopup.getMagicObject()) {
+            return;
+        }
+
+        // ignore if user wants current popup to remain open
+        // so they can view ability icon tooltips.
+        if (isControlKeyDown && cardPopup.isVisible()) {
+            return;
+        }
+
+        final Rectangle containerZone = gamePanel.getBattlefieldPanelBounds();
+
+        // set popup image and size.
+        cardPopup.setCard(cardObject, containerZone.getSize());
+
+        final int x = containerZone.x + (int)((containerZone.getWidth() / 2) - (cardPopup.getWidth() / 2));
+        final int y = containerZone.y + (int)((containerZone.getHeight() / 2) - (cardPopup.getHeight() / 2));
+        cardPopup.setLocation(x,y);
+        
+        cardPopup.showDelayed(popupDelay);
+    }
+
+    public void viewCardPopupCentered(final MagicObject cardObject) {
+        viewCardPopupCentered(cardObject, getPopupDelay());
+    }
+
     /**
      *
      * @param cardObject
@@ -312,7 +342,12 @@ public class SwingGameController implements IUIGameController {
      * @param cardRect : screen position & size of selected card on battlefield.
      * @param popupAboveBelowOnly : if true then the popup will restrict its height to always fit above/below the selected card.
      */
-    public void viewCardPopup(final MagicObject cardObject, final int index, final Rectangle cardRect, final boolean popupAboveBelowOnly) {
+    public void viewCardPopup(
+        final MagicObject cardObject,
+        final int index,
+        final Rectangle cardRect,
+        final boolean popupAboveBelowOnly,
+        final int popupDelay) {
 
         // mouse wheel rotation event can fire more than once
         // so ignore all but the first event.
@@ -392,7 +427,11 @@ public class SwingGameController implements IUIGameController {
         }
 
         cardPopup.setLocation(x,y);
-        cardPopup.showDelayed(getPopupDelay());
+        cardPopup.showDelayed(popupDelay);
+    }
+
+    public void viewCardPopup(final MagicObject cardObject, final int index, final Rectangle cardRect, final boolean popupAboveBelowOnly) {
+        viewCardPopup(cardObject, index, cardRect, popupAboveBelowOnly, getPopupDelay());
     }
 
     public boolean isPopupVisible() {
@@ -438,6 +477,12 @@ public class SwingGameController implements IUIGameController {
         }
     }
 
+    public void hideInfoNoDelay() {
+        if (!isControlKeyDown) {
+            cardPopup.hideNoDelay();
+        }
+    }
+
     @Override
     public void setSourceCardDefinition(final MagicSource source) {
         sourceCardDefinition=source.getCardDefinition();
@@ -472,13 +517,13 @@ public class SwingGameController implements IUIGameController {
         });
     }
 
-    public void registerChoiceViewer(final ChoiceViewer choiceViewer) {
+    public void registerChoiceViewer(final IChoiceViewer choiceViewer) {
         choiceViewers.add(choiceViewer);
     }
 
     private void showValidChoices() {
         assert SwingUtilities.isEventDispatchThread();
-        for (final ChoiceViewer choiceViewer : choiceViewers) {
+        for (final IChoiceViewer choiceViewer : choiceViewers) {
             choiceViewer.showValidChoices(validChoices);
         }
     }
@@ -967,5 +1012,27 @@ public class SwingGameController implements IUIGameController {
 
     public void doFlashPlayerHandZoneButton() {
         gamePanel.doFlashPlayerHandZoneButton();
+    }
+
+    public void highlightCard(long magicCardId, boolean b) {
+        if (magicCardId > 0) {
+            final MagicCard card = viewerInfo.getMagicCard(magicCardId);
+            if (card != MagicCard.NONE) {
+                gamePanel.highlightCard(card, b);
+            } else {
+                System.err.printf("Highlight failed! MagicCard #%d not found!\n", magicCardId);
+            }
+        }
+    }
+
+    public void showMagicCardImage(long magicCardId) {
+        if (magicCardId > 0) {
+            final MagicCard card = viewerInfo.getMagicCard(magicCardId);
+            if (card != MagicCard.NONE) {
+                viewCardPopupCentered(card, 0);
+            } else {
+                System.err.printf("Highlight failed! MagicCard #%d not found!\n", magicCardId);
+            }
+        }
     }
 }

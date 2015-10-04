@@ -1,5 +1,8 @@
 package magic.ui.duel.viewer;
 
+import magic.ui.duel.PermanentFilter;
+import magic.ui.IUpdatable;
+import magic.ui.IChoiceViewer;
 import magic.ui.SwingGameController;
 import magic.ui.theme.Theme;
 import magic.ui.widget.FontsAndBorders;
@@ -10,9 +13,10 @@ import javax.swing.JPanel;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.util.Set;
+import magic.model.MagicCard;
 import magic.ui.utility.MagicStyle;
 
-public class ImageBattlefieldViewer extends JPanel implements ChoiceViewer, Updatable {
+public class ImageBattlefieldViewer extends JPanel implements IChoiceViewer, IUpdatable {
 
     private static final long serialVersionUID = 1L;
 
@@ -56,5 +60,11 @@ public class ImageBattlefieldViewer extends JPanel implements ChoiceViewer, Upda
     @Override
     public void showValidChoices(final Set<?> validChoices) {
         permanentsViewer.showValidChoices(validChoices);
+    }
+
+    public boolean highlightCard(MagicCard card, boolean b) {
+        final ImagePermanentViewer viewer = permanentsViewer.getViewer(card);
+        permanentsViewer.highlightCard(viewer, b ? card.getId() : 0);
+        return viewer != null;
     }
 }

@@ -10,6 +10,7 @@ import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.SwingConstants;
+import javax.swing.SwingUtilities;
 import magic.ui.ScreenController;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.utility.MagicStyle;
@@ -76,8 +77,10 @@ public class MenuButton extends JButton {
             }
             @Override
             public void mousePressed(MouseEvent e) {
-                setForeground(MagicStyle.getPressedColor());
-                setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                if (SwingUtilities.isLeftMouseButton(e)) {
+                    setForeground(MagicStyle.getPressedColor());
+                    setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                }
 
             }
             @Override

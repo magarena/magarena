@@ -1,6 +1,7 @@
 package magic.model;
 
 import magic.ai.ArtificialScoringSystem;
+import magic.data.CardDefinitions;
 import magic.model.action.AttachAction;
 import magic.model.action.ChangeControlAction;
 import magic.model.action.ChangeCountersAction;
@@ -250,7 +251,11 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     @Override
     public MagicCardDefinition getCardDefinition() {
         if (isFaceDown()) {
-            return MagicCardDefinition.MORPH;
+            if (hasState(MagicPermanentState.Manifest)) {
+                return CardDefinitions.getCard("Manifest");
+            } else {
+                return CardDefinitions.getCard("Morph");
+            }
         } else if (isFlipped()) {
             return cardDefinition.getFlippedDefinition();
         } else if (isTransformed()) {

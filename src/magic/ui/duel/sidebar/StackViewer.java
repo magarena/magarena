@@ -11,40 +11,42 @@ import javax.swing.JScrollPane;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.Scrollable;
 import magic.ui.SwingGameController;
-import magic.ui.duel.viewer.ChoiceViewer;
-import magic.ui.duel.viewer.StackViewerInfo;
+import magic.ui.IChoiceViewer;
+import magic.ui.duel.StackViewerInfo;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class StackViewer extends JPanel implements ChoiceViewer {
+public class StackViewer extends JPanel implements IChoiceViewer {
 
     private final SwingGameController controller;
-    private final boolean isImageMode;
     private final Collection<StackButton> buttons;
     private JScrollPane stackScrollPane;
     private ScrollablePanel stackScrollablePanel;
 
-    public StackViewer(final SwingGameController controller, final boolean isImageMode0) {
+    public StackViewer(final SwingGameController controller) {
 
         this.controller=controller;
-        this.isImageMode=isImageMode0;
 
         controller.registerChoiceViewer(this);
         buttons=new ArrayList<>();
 
         refreshLayout();
+        setOpaque(false);
     }
 
     private void refreshLayout() {
 
         stackScrollablePanel = new ScrollablePanel();
         stackScrollablePanel.setLayout(new MigLayout("insets 0, gap 0, flowy"));
+        stackScrollablePanel.setOpaque(false);
 
         stackScrollPane = new JScrollPane(stackScrollablePanel);
         stackScrollPane.setMinimumSize(new Dimension(0, 0));
         stackScrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
         stackScrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         stackScrollPane.setBorder(null);
+        stackScrollPane.setOpaque(false);
+        stackScrollPane.getViewport().setOpaque(false);
 
         removeAll();
         setLayout(new MigLayout("insets 0, gap 0, flowy"));
@@ -53,7 +55,7 @@ public class StackViewer extends JPanel implements ChoiceViewer {
 
     public void update() {
 
-        final int maxWidth=getWidth()-40;
+        final int maxWidth = getWidth() - 30;
 
         stackScrollablePanel.removeAll();
         buttons.clear();

@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import magic.model.MagicPlayerZone;
 import magic.ui.SwingGameController;
-import magic.ui.duel.viewer.PlayerViewerInfo;
+import magic.ui.duel.PlayerViewerInfo;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -58,8 +58,8 @@ public class PlayerZoneButtonsPanel extends JPanel {
         final ZoneToggleButton btn = new ZoneToggleButton(zone, cardCount, isActive);
         btn.addMouseListener(new MouseAdapter() {
             @Override
-            public void mousePressed(MouseEvent e) {
-                if (btn.isActive()) {
+            public void mouseReleased(MouseEvent e) {
+                if (btn.isActive() && SwingUtilities.isLeftMouseButton(e)) {
                     controller.getPlayerZoneViewer().setPlayerZone(playerInfo, zone);
                 }
             }
@@ -108,6 +108,10 @@ public class PlayerZoneButtonsPanel extends JPanel {
 
     void doFlashPlayerHandZoneButton() {
         zoneButtons.get(MagicPlayerZone.HAND).doAlertAnimation();
+    }
+
+    void doHighlightPlayerZone(MagicPlayerZone zone, boolean b) {
+        zoneButtons.get(zone).doHighlight(b);
     }
 
 }

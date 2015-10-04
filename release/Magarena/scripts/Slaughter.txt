@@ -5,6 +5,6 @@ rarity=U
 type=Instant
 cost={2}{B}{B}
 ability=Buyback—Pay 4 life.
-effect=Destroy target nonblack creature. It can't be regenerated.~Buyback
+effect=Destroy target nonblack creature. It can't be regenerated.
 timing=removal
 oracle=Buyback—Pay 4 life.\nDestroy target nonblack creature. It can't be regenerated.

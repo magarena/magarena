@@ -1,0 +1,11 @@
+name=Oran-Rief Invoker
+image=http://magiccards.info/scans/en/bfz/182.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Shaman
+cost={1}{G}
+pt=2/2
+ability={8}: SN gets +5/+5 and gains trample until end of turn.
+timing=main
+oracle={8}: Oran-Rief Invoker gets +5/+5 and gains trample until end of turn.

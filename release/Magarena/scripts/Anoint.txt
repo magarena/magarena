@@ -5,6 +5,6 @@ rarity=C
 type=Instant
 cost={W}
 ability=buyback {3}
-effect=Prevent the next 3 damage that would be dealt to target creature this turn.~Buyback
+effect=Prevent the next 3 damage that would be dealt to target creature this turn.
 timing=pump
 oracle=Buyback {3}\nPrevent the next 3 damage that would be dealt to target creature this turn.

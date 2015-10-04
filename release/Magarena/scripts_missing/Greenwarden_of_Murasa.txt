@@ -1,0 +1,12 @@
+name=Greenwarden of Murasa
+image=http://magiccards.info/scans/en/bfz/174.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Elemental
+cost={4}{G}{G}
+pt=5/4
+ability=When SN enters the battlefield, you may return target card from your graveyard to your hand.;\
+        When SN dies, you may exile it. If you do, return target card from your graveyard to your hand.
+timing=main
+oracle=When Greenwarden of Murasa enters the battlefield, you may return target card from your graveyard to your hand.\nWhen Greenwarden of Murasa dies, you may exile it. If you do, return target card from your graveyard to your hand.

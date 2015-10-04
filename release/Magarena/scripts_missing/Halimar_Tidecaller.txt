@@ -1,0 +1,12 @@
+name=Halimar Tidecaller
+image=http://magiccards.info/scans/en/bfz/79.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Wizard,Ally
+cost={2}{U}
+pt=2/3
+ability=When SN enters the battlefield, you may return target card with awaken from your graveyard to your hand.;\
+        Land creatures you control have flying.
+timing=main
+oracle=When Halimar Tidecaller enters the battlefield, you may return target card with awaken from your graveyard to your hand.\nLand creatures you control have flying.

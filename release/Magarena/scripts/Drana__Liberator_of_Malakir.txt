@@ -1,0 +1,12 @@
+name=Drana, Liberator of Malakir
+image=http://magiccards.info/scans/en/bfz/109.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Vampire,Ally
+cost={1}{B}{B}
+pt=2/3
+ability=Flying, first strike;\
+        Whenever SN deals combat damage to a player, put a +1/+1 counter on each attacking creature you control.
+timing=main
+oracle=Flying, first strike\nWhenever Drana, Liberator of Malakir deals combat damage to a player, put a +1/+1 counter on each attacking creature you control.

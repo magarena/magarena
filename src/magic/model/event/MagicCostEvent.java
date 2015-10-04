@@ -30,7 +30,7 @@ public enum MagicCostEvent {
     SacrificeMultiple("Sacrifice (?<another>another )?(" + ARG.AMOUNT + " )?" + ARG.ANY) {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             final int amt = ARG.amount(arg);
-            final String chosen = MagicTargetFilterFactory.toSingular(ARG.any(arg)) + " to sacrifice";
+            final String chosen = MagicTargetFilterFactory.toSingular(ARG.any(arg)) + " you control";
             final MagicTargetFilter<MagicPermanent> regular = MagicTargetFilterFactory.Permanent(chosen);
             final MagicTargetFilter<MagicPermanent> filter = arg.group("another") != null ? 
                 new MagicOtherPermanentTargetFilter(regular, (MagicPermanent)source) :

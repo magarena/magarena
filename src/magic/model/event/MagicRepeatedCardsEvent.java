@@ -25,7 +25,7 @@ public class MagicRepeatedCardsEvent extends MagicEvent {
                     }
                 }
             },
-            ""
+            factory.getEvent(source, targetChoice).getDescription()
         );
         cond = MagicConditionFactory.YouHaveAtLeast(targetChoice.getCardFilter(), amt);
     }

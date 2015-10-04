@@ -1,0 +1,12 @@
+name=Ondu Greathorn
+image=http://magiccards.info/scans/en/bfz/40.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Beast
+cost={3}{W}
+pt=2/3
+ability=First strike;\
+        Whenever a land enters the battlefield under your control, SN gets +2/+2 until end of turn.
+timing=main
+oracle=First strike\nLandfall — Whenever a land enters the battlefield under your control, Ondu Greathorn gets +2/+2 until end of turn.

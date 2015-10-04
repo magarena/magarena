@@ -23,7 +23,7 @@ public class MagicExileCardEvent extends MagicEvent {
             player,
             targetChoice,
             EVENT_ACTION,
-            "Choose " + targetChoice.getTargetDescription() + "$."
+            "Exile " + targetChoice.getTargetDescription() + "$."
         );
     }
 

@@ -1,0 +1,9 @@
+name=Roil's Retribution
+image=http://magiccards.info/scans/en/bfz/45.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={3}{W}{W}
+effect=SN deals 5 damage divided as you choose among any number of target attacking or blocking creatures.
+timing=removal
+oracle=Roil's Retribution deals 5 damage divided as you choose among any number of target attacking or blocking creatures.

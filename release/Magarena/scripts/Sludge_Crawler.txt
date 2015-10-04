@@ -1,0 +1,13 @@
+name=Sludge Crawler
+image=http://magiccards.info/scans/en/bfz/98.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Eldrazi,Drone
+cost={B}
+pt=1/1
+ability=Devoid;\
+        Ingest;\
+        {2}: SN gets +1/+1 until end of turn.
+timing=main
+oracle=Devoid\nIngest\n{2}: Sludge Crawler gets +1/+1 until end of turn.

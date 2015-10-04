@@ -12,12 +12,13 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
+import magic.ui.message.MessageStyle;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
 
 public class GeneralConfig {
 
-    public static final String VERSION = "1.65";
+    public static final String VERSION = "1.67";
     public static final String SOFTWARE_TITLE =
             "Magarena " + GeneralConfig.VERSION + (MagicSystem.isDevMode() ? " [DEV MODE]" : "");
 
@@ -69,6 +70,7 @@ public class GeneralConfig {
     private static final String ROLLOVER_COLOR ="rolloverColor";
     private static final String UI_SOUND_VOLUME = "uiSoundVolume";
     private static final String TRANSLATION = "translation";
+    private static final String LOG_MESSAGE_STYLE = "logMessageStyle";
 
     private static final int DEFAULT_LEFT=-1;
     private static final int DEFAULT_TOP=0;
@@ -155,6 +157,7 @@ public class GeneralConfig {
     private Color rolloverColor = new Color(DEFAULT_ROLLOVER_COLOR);
     private int uiSoundVolume = DEFAULT_SOUND_VOLUME;
     private String translation = DEFAULT_TRANSLATION;
+    private MessageStyle logMessageStyle = MessageStyle.PLAIN;
 
     private GeneralConfig() { }
 
@@ -561,6 +564,13 @@ public class GeneralConfig {
         translation = aString;
     }
 
+    public MessageStyle getLogMessageStyle() {
+        return logMessageStyle;
+    }
+    public void setLogMessageStyle(MessageStyle aStyle) {
+        logMessageStyle = aStyle;
+    }
+
     private void load(final Properties properties) {
         left=Integer.parseInt(properties.getProperty(LEFT,""+DEFAULT_LEFT));
         top=Integer.parseInt(properties.getProperty(TOP,""+DEFAULT_TOP));
@@ -607,6 +617,7 @@ public class GeneralConfig {
         rolloverColor = new Color(Integer.parseInt(properties.getProperty(ROLLOVER_COLOR, "" + DEFAULT_ROLLOVER_COLOR)));
         uiSoundVolume = Integer.parseInt(properties.getProperty(UI_SOUND_VOLUME, "" + DEFAULT_SOUND_VOLUME));
         translation = properties.getProperty(TRANSLATION, DEFAULT_TRANSLATION);
+        logMessageStyle = MessageStyle.valueOf(properties.getProperty(LOG_MESSAGE_STYLE, MessageStyle.PLAIN.name()));
     }
 
     public void load() {
@@ -657,6 +668,7 @@ public class GeneralConfig {
         properties.setProperty(ROLLOVER_COLOR, String.valueOf(rolloverColor.getRGB()));
         properties.setProperty(UI_SOUND_VOLUME, String.valueOf(uiSoundVolume));
         properties.setProperty(TRANSLATION, translation);
+        properties.setProperty(LOG_MESSAGE_STYLE, logMessageStyle.name());
     }
 
     public void save() {

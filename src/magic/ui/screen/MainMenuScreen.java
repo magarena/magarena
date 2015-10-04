@@ -14,6 +14,7 @@ import magic.game.state.GameStateFileReader;
 import magic.ui.IconImages;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
+import magic.ui.dialog.GameStateRunner;
 import magic.ui.screen.interfaces.IWikiPage;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuPanel;
@@ -136,11 +137,11 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
             miglayout.setLayoutConstraints("insets 4 0 0 0");
             final ActionBarButton btn = new ActionBarButton(
                     IconImages.getIcon(MagicIcon.LOAD_ICON),
-                    "Resume saved game", "Select a previously saved game and run.",
+                    "Load and run game state", "Select a previously saved game or test class and run.",
                     new AbstractAction() {
                         @Override
                         public void actionPerformed(final ActionEvent e) {
-                            loadSavedGame();
+                            new GameStateRunner(getFrame());
                         }
                     }
             );

@@ -1,0 +1,10 @@
+name=;Manifest
+image=http://magiccards.info/extras/token/fate-reforged/manifest.jpg
+value=1
+type=Creature
+rarity=C
+cost={0}
+pt=2/2
+overlay
+timing=main
+oracle=NONE

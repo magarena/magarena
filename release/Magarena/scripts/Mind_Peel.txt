@@ -5,6 +5,6 @@ rarity=U
 type=Sorcery
 cost={B}
 ability=buyback {2}{B}{B}
-effect=Target player discards a card.~Buyback
+effect=Target player discards a card.
 timing=removal
 oracle=Buyback {2}{B}{B}\nTarget player discards a card.

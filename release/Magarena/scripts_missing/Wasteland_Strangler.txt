@@ -1,0 +1,12 @@
+name=Wasteland Strangler
+image=http://magiccards.info/scans/en/bfz/102.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Eldrazi,Processor
+cost={2}{B}
+pt=3/2
+ability=Devoid;\
+        When SN enters the battlefield, you may put a card an opponent owns from exile into that player's graveyard. If you do, target creature gets -3/-3 until end of turn.
+timing=main
+oracle=Devoid\nWhen Wasteland Strangler enters the battlefield, you may put a card an opponent owns from exile into that player's graveyard. If you do, target creature gets -3/-3 until end of turn.

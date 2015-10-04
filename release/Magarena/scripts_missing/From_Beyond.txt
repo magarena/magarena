@@ -1,0 +1,11 @@
+name=From Beyond
+image=http://magiccards.info/scans/en/bfz/167.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={3}{G}
+ability=Devoid;\
+        At the beginning of your upkeep, put a 1/1 colorless Eldrazi Scion creature token onto the battlefield. It has "Sacrifice this creature: Add {1} to your mana pool.";\
+        {1}{G}, Sacrifice SN: Search your library for an Eldrazi card, reveal it, put it into your hand, then shuffle your library.
+timing=enchantment
+oracle=Devoid\nAt the beginning of your upkeep, put a 1/1 colorless Eldrazi Scion creature token onto the battlefield. It has "Sacrifice this creature: Add {1} to your mana pool."\n{1}{G}, Sacrifice From Beyond: Search your library for an Eldrazi card, reveal it, put it into your hand, then shuffle your library.

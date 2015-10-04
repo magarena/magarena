@@ -54,28 +54,11 @@ public class MagicCardDefinition implements MagicAbilityStore {
         }
     };
 
-    public static final MagicCardDefinition MORPH = new MagicCardDefinition() {
-        //definition for face down cards
-        @Override
-        protected void initialize() {
-            setName("");
-            setDistinctName("2/2 face-down creature");
-            setValue(1);
-            addType(MagicType.Creature);
-            setCost(MagicManaCost.create("{0}"));
-            setPowerToughness(2, 2);
-            setTiming(MagicTiming.Main);
-            setIndex(1000001);
-        }
-    };
-
     // name displayed in UI, may be repeated in tokens
     private String name;
 
     // name used for mapping and persistence, must be unique
     private String distinctName;
-
-    private boolean isValid = true;
 
     private String imageURL;
     private int imageCount = 1;
@@ -85,8 +68,10 @@ public class MagicCardDefinition implements MagicAbilityStore {
     private int removal;
     private int score=-1; // not initialized
     private MagicRarity rarity;
+    private boolean valid = true;
     private boolean token = false;
     private boolean hidden = false;
+    private boolean overlay = false;
     private boolean excludeManaOrCombat = false;
     private int typeFlags;
     private EnumSet<MagicType> cardType = EnumSet.noneOf(MagicType.class);
@@ -163,9 +148,25 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public void setHidden() {
         hidden = true;
     }
-
+    
     public boolean isHidden() {
         return hidden;
+    }
+    
+    public void setOverlay() {
+        overlay = true;
+    }
+    
+    public boolean isOverlay() {
+        return overlay;
+    }
+
+    public boolean isPlayable() {
+        return overlay == false && token == false && hidden == false;
+    }
+    
+    public boolean isNonPlayable() {
+        return isPlayable() == false;
     }
 
     public void loadAbilities() {
@@ -196,15 +197,15 @@ public class MagicCardDefinition implements MagicAbilityStore {
     }
 
     public boolean isValid() {
-        return isValid;
+        return valid;
     }
 
     public boolean isInvalid() {
-        return isValid == false;
+        return valid == false;
     }
 
     public void setInvalid() {
-        isValid = false;
+        valid = false;
     }
 
     public void setImageUpdated(final Date d) {

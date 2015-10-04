@@ -30,7 +30,7 @@ public class MagicRavnicaLandTrigger extends MagicWhenComesIntoPlayTrigger {
                 permanent,
                 new MagicMayChoice(),
                 this,
-                "PN may$ pay 2 life. If you don't, "+permanent.getName()+" enters the battlefield tapped."
+                "PN may$ pay 2 life. If you don't, SN enters the battlefield tapped."
             );
         }
     }

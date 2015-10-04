@@ -77,19 +77,12 @@ public class MagicDiscardEvent extends MagicEvent {
         return cond.accept(getSource()) && super.isSatisfied();
     }
 
-    private static final String genDescription(final MagicPlayer player,final int amount) {
+    private static String genDescription(final MagicPlayer player,final int amount) {
         final int actualAmount = Math.min(amount,player.getHandSize());
-        String description = "";
         switch (actualAmount) {
-            case 0:
-                description = "has no cards to discard.";
-                break;
-            case 1:
-                description = "discards a card$.";
-                break;
-            default :
-                description = "discards " + amount + " cards$.";
+            case 0: return "has no cards to discard.";
+            case 1: return "discards a card$.";
+            default : return "discards " + amount + " cards$.";
         }
-        return description;
     }
 }

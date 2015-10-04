@@ -1,0 +1,11 @@
+name=Hero of Goma Fada
+image=http://magiccards.info/scans/en/bfz/31.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Knight,Ally
+cost={4}{W}
+pt=4/3
+ability=Whenever SN or another Ally enters the battlefield under your control, creatures you control gain indestructible until end of turn.
+timing=main
+oracle=Rally — Whenever Hero of Goma Fada or another Ally enters the battlefield under your control, creatures you control gain indestructible until end of turn.

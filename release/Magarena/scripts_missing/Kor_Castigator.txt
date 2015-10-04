@@ -1,0 +1,11 @@
+name=Kor Castigator
+image=http://magiccards.info/scans/en/bfz/35.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Kor,Wizard,Ally
+cost={1}{W}
+pt=3/1
+ability=SN can't be blocked by Eldrazi Scions.
+timing=main
+oracle=Kor Castigator can't be blocked by Eldrazi Scions.

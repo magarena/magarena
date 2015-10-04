@@ -1,0 +1,11 @@
+name=Bloodbond Vampire
+image=http://magiccards.info/scans/en/bfz/104.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Vampire,Shaman,Ally
+cost={2}{B}{B}
+pt=3/3
+ability=Whenever you gain life, put a +1/+1 counter on SN.
+timing=main
+oracle=Whenever you gain life, put a +1/+1 counter on Bloodbond Vampire.

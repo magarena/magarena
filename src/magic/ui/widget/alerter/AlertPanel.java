@@ -20,6 +20,7 @@ public class AlertPanel extends JPanel {
 
     private void setAlertButtons() {
         alertButtons.clear();
+        alertButtons.add(new UpgradeJavaAlertButton());
         alertButtons.add(new NewVersionAlertButton());
         alertButtons.add(new MissingImagesAlertButton());
     }

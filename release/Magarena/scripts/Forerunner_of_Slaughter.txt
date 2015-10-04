@@ -1,0 +1,12 @@
+name=Forerunner of Slaughter
+image=http://magiccards.info/scans/en/bfz/204.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Eldrazi,Drone
+cost={B}{R}
+pt=3/2
+ability=Devoid;\
+        {1}: Target colorless creature gains haste until end of turn.
+timing=main
+oracle=Devoid\n{1}: Target colorless creature gains haste until end of turn.

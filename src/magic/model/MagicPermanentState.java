@@ -18,6 +18,7 @@ public enum MagicPermanentState {
     MustPayEchoCost("echo", ""),
     Monstrous("monstrous", ""),
     FaceDown("face down", ""),
+    Manifest("manifest", ""),
     Flipped("flipped", ""),
     Transformed("transformed", ""),
     DealtFirstStrike("dealt first strike", ""),
@@ -36,6 +37,7 @@ public enum MagicPermanentState {
             | MustPayEchoCost.getMask()
             | Monstrous.getMask()
             | FaceDown.getMask()
+            | Manifest.getMask()
             | Flipped.getMask()
             | Transformed.getMask()
             | Renowned.getMask();

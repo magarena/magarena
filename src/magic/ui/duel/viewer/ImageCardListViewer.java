@@ -1,5 +1,7 @@
 package magic.ui.duel.viewer;
 
+import magic.ui.utility.ImageDrawingUtils;
+import magic.ui.IChoiceViewer;
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -38,7 +40,7 @@ import magic.ui.widget.FontsAndBorders;
 import magic.ui.utility.MagicStyle;
 
 @SuppressWarnings("serial")
-public class ImageCardListViewer extends JPanel implements ChoiceViewer {
+public class ImageCardListViewer extends JPanel implements IChoiceViewer {
 
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
     private static final MagicCardList EMPTY_CARD_LIST=new MagicCardList();
@@ -240,6 +242,8 @@ public class ImageCardListViewer extends JPanel implements ChoiceViewer {
 
             //draw the card image
             g.drawImage(image, x1, y1, x2, y2, 0, 0, imageSize.width, imageSize.height, this);
+
+            ImageDrawingUtils.drawCardId(g, card.getId(), x1, 0);
 
             //draw the overlay icons
             if (showInfo) {

@@ -1,0 +1,9 @@
+name=Unholy Hunger
+image=http://magiccards.info/scans/en/ori/125.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={3}{B}{B}
+timing=removal
+requires_groovy_code
+oracle=Destroy target creature.\nSpell mastery — If there are two or more instant and/or sorcery cards in your graveyard, you gain 2 life.

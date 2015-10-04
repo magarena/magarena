@@ -1,0 +1,11 @@
+name=Breaker of Armies
+image=http://magiccards.info/scans/en/bfz/3.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Eldrazi
+cost={8}
+pt=10/8
+ability=All creatures able to block SN do so.
+timing=main
+oracle=All creatures able to block Breaker of Armies do so.

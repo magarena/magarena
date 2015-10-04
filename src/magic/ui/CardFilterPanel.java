@@ -318,6 +318,10 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
      * @return
      */
     private boolean filter(final MagicCardDefinition cardDefinition) {
+        // never show overlay cards
+        if (cardDefinition.isOverlay()) {
+            return false;
+        }
 
         // search text in name, abilities, type, text, etc.
         if (nameTextField != null) {
@@ -503,7 +507,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
                 if (filter(cardDef)) {
                     totalFilteredCards++;
                     cardDefinitions.add(cardDef);
-                    if (!cardDef.isToken() && !cardDef.isHidden()) {
+                    if (cardDef.isPlayable()) {
                         if (cardDef.isInvalid()) {
                             missingCards++;
                         } else {

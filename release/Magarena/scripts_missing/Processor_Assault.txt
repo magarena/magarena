@@ -1,0 +1,9 @@
+name=Processor Assault
+image=http://magiccards.info/scans/en/bfz/132.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={1}{R}
+effect=Devoid~As an additional cost to cast SN, put a card an opponent owns from exile into that player's graveyard.~SN deals 5 damage to target creature.
+timing=main
+oracle=Devoid\nAs an additional cost to cast Processor Assault, put a card an opponent owns from exile into that player's graveyard.\nProcessor Assault deals 5 damage to target creature.

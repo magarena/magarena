@@ -1,0 +1,9 @@
+name=Demon's Grasp
+image=http://magiccards.info/scans/en/bfz/108.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={4}{B}
+effect=Target creature gets -5/-5 until end of turn.
+timing=main
+oracle=Target creature gets -5/-5 until end of turn.

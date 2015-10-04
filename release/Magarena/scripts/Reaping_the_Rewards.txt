@@ -5,6 +5,6 @@ rarity=C
 type=Instant
 cost={W}
 ability=Buyback—Sacrifice a land.
-effect=You gain 2 life.~Buyback
+effect=You gain 2 life.
 timing=removal
 oracle=Buyback—Sacrifice a land.\nYou gain 2 life.

@@ -1,0 +1,13 @@
+name=Mist Intruder
+image=http://magiccards.info/scans/en/bfz/61.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Eldrazi,Drone
+cost={1}{U}
+pt=1/2
+ability=Devoid;\
+        Flying;\
+        Ingest
+timing=main
+oracle=Devoid\nFlying\nIngest

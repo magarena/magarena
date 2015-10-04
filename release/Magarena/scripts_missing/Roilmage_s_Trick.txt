@@ -1,0 +1,9 @@
+name=Roilmage's Trick
+image=http://magiccards.info/scans/en/bfz/83.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={3}{U}
+effect=Creatures your opponents control get -X/-0 until end of turn, where X is the number of colors of mana spent to cast SN.~Draw a card.
+timing=removal
+oracle=Converge — Creatures your opponents control get -X/-0 until end of turn, where X is the number of colors of mana spent to cast Roilmage's Trick.\nDraw a card.

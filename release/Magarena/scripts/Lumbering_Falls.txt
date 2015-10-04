@@ -1,0 +1,10 @@
+name=Lumbering Falls
+image=http://magiccards.info/scans/en/bfz/239.jpg
+value=2.500
+rarity=R
+type=Land
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {G} or {U} to your mana pool.;\
+        {2}{G}{U}: SN becomes a 3/3 green and blue Elemental creature with hexproof until end of turn. It's still a land.
+timing=land
+oracle=Lumbering Falls enters the battlefield tapped.\n{T}: Add {G} or {U} to your mana pool.\n{2}{G}{U}: Lumbering Falls becomes a 3/3 green and blue Elemental creature with hexproof until end of turn. It's still a land.

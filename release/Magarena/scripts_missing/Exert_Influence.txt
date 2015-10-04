@@ -1,0 +1,9 @@
+name=Exert Influence
+image=http://magiccards.info/scans/en/bfz/77.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={4}{U}
+effect=Gain control of target creature if its power is less than or equal to the number of colors of mana spent to cast SN.
+timing=main
+oracle=Converge — Gain control of target creature if its power is less than or equal to the number of colors of mana spent to cast Exert Influence.

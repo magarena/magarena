@@ -1,0 +1,11 @@
+name=Belligerent Whiptail
+image=http://magiccards.info/scans/en/bfz/141.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Wurm
+cost={3}{R}
+pt=4/2
+ability=Whenever a land enters the battlefield under your control, SN gains first strike until end of turn.
+timing=main
+oracle=Landfall — Whenever a land enters the battlefield under your control, Belligerent Whiptail gains first strike until end of turn.

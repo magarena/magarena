@@ -1,0 +1,12 @@
+name=Deathless Behemoth
+image=http://magiccards.info/scans/en/bfz/5.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Eldrazi
+cost={6}
+pt=6/6
+ability=Vigilance;\
+        Sacrifice two Eldrazi Scions: Return SN from your graveyard to your hand. Activate this ability only any time you could cast a sorcery.
+timing=main
+oracle=Vigilance\nSacrifice two Eldrazi Scions: Return Deathless Behemoth from your graveyard to your hand. Activate this ability only any time you could cast a sorcery.

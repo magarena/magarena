@@ -5,9 +5,12 @@ import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicAbility;
+import magic.model.MagicLocationType;
+import magic.model.MagicMessage;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicOrChoice;
+import magic.model.action.ChangeCardDestinationAction;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -28,6 +31,9 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
         if (cdef.hasAbility(MagicAbility.Entwine)) {
             return Entwine(rule);
         }
+        if (cdef.hasAbility(MagicAbility.Buyback)) {
+            return Buyback(rule);
+        }
         final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(rule);
         return new MagicSpellCardEvent() {
             @Override
@@ -36,8 +42,33 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
             }
         };
     }
+   
+    private static MagicSpellCardEvent Buyback(final String rule) {
+        final MagicSourceEvent effect = MagicRuleEventAction.create(rule);
+        return new MagicSpellCardEvent() {
+            @Override
+            public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
+                final MagicEvent event = effect.getEvent(cardOnStack);
+                return new MagicEvent(
+                    event.getSource(),
+                    event.getChoice(),
+                    this,
+                    event.getDescription()
+                );
+            }
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                effect.getAction().executeEvent(game, event);
+                final MagicCardOnStack spell = event.getCardOnStack();
+                if (spell.isKicked()) {
+                    game.doAction(new ChangeCardDestinationAction(spell, MagicLocationType.OwnersHand));
+                    game.logAppendMessage(event.getPlayer(), MagicMessage.getCardToken(spell) + " is put into " + event.getPlayer() + "'s hand as it resolves.");
+                }
+            }
+        };
+    }
     
-    public static MagicSpellCardEvent Entwine(final String rule) {
+    private static MagicSpellCardEvent Entwine(final String rule) {
         final Pattern pattern = Pattern.compile("choose one — \\(1\\) (?<effect1>.*) \\(2\\) (?<effect2>.*)", Pattern.CASE_INSENSITIVE);
         final Matcher matcher = pattern.matcher(rule);
         if (!matcher.matches()) {

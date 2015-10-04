@@ -1,0 +1,9 @@
+name=Planar Outburst
+image=http://magiccards.info/scans/en/bfz/42.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={3}{W}{W}
+effect=Destroy all nonland creatures.~Awaken 4—{5}{W}{W}{W}
+timing=main
+oracle=Destroy all nonland creatures.\nAwaken 4—{5}{W}{W}{W}

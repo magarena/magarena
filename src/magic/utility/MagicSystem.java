@@ -27,6 +27,8 @@ final public class MagicSystem {
     public static final boolean IS_WINDOWS_OS = System.getProperty("os.name").toLowerCase().startsWith("windows");
     private static final ProgressReporter reporter = new ProgressReporter();
 
+    private static final boolean IS_DEV_MODE = Boolean.getBoolean("devMode") || Boolean.getBoolean("debug");
+
     // Load card definitions in the background so that it does not delay the
     // loading of the UI. Override done() to ensure exceptions not suppressed.
     private static final FutureTask<Void> loadCards = new FutureTask<Void>(new Runnable() {
@@ -55,7 +57,7 @@ final public class MagicSystem {
     }
 
     public static boolean isDevMode() {
-        return Boolean.getBoolean("devMode") || isDebugMode();
+        return IS_DEV_MODE;
     }
 
     public static boolean isDebugMode() {

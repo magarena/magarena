@@ -1,6 +1,5 @@
 package magic.ui.duel.sidebar;
 
-import java.awt.Color;
 import java.awt.Component;
 import java.awt.event.AdjustmentEvent;
 import java.awt.event.AdjustmentListener;
@@ -9,20 +8,17 @@ import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
-import javax.swing.border.CompoundBorder;
+import magic.data.GeneralConfig;
 import magic.model.MagicMessage;
 import magic.ui.SwingGameController;
+import magic.ui.message.MessageStyle;
+import magic.ui.message.TextComponent;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class LogViewer extends TexturedPanel {
-
-    private static final CompoundBorder SEPARATOR_BORDER=BorderFactory.createCompoundBorder(
-        BorderFactory.createMatteBorder(0,0,1,0,Color.GRAY),
-        FontsAndBorders.EMPTY_BORDER
-    );
 
     private final SwingGameController controller;
     private final JPanel messagePanels;
@@ -46,6 +42,7 @@ class LogViewer extends TexturedPanel {
     }
 
     void update() {
+        boolean isRemoved = false;
         final List<MagicMessage> msgs = controller.getViewerInfo().getLog();
         final int n = msgs.size();
         int i = 0;
@@ -57,18 +54,29 @@ class LogViewer extends TexturedPanel {
                 c++;
             } else {
                 messagePanels.remove(c);
+                isRemoved = true;
             }
         }
+        final boolean isAdded = i < n;
         for (;i < n; i++) {
             messagePanels.add(getNewMessagePanel(msgs.get(i)), "w 100%");
+        }
+        if (isAdded || isRemoved) {
+            messagePanels.revalidate();
+            scrollPane.repaint();
         }
     }
 
     private MessagePanel getNewMessagePanel(final MagicMessage message) {
-        final MessagePanel panel = new MessagePanel(message, getWidth());
-        panel.setOpaque(false);
-        panel.setBorder(SEPARATOR_BORDER);
-        return panel;
+        return new MessagePanel(message, this, controller);
+    }
+
+    void setMessageStyle(MessageStyle aStyle) {
+        TextComponent.messageStyle = aStyle;
+        messagePanels.removeAll();
+        update();
+        GeneralConfig.getInstance().setLogMessageStyle(aStyle);
+        GeneralConfig.getInstance().save();
     }
 
     private class LogScrollPane extends JScrollPane {

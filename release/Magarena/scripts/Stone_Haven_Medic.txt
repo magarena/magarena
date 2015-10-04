@@ -1,0 +1,11 @@
+name=Stone Haven Medic
+image=http://magiccards.info/scans/en/bfz/51.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Kor,Cleric
+cost={1}{W}
+pt=1/3
+ability={W}, {T}: You gain 1 life.
+timing=main
+oracle={W}, {T}: You gain 1 life.

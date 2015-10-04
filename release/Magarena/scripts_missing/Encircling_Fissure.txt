@@ -1,0 +1,9 @@
+name=Encircling Fissure
+image=http://magiccards.info/scans/en/bfz/23.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={2}{W}
+effect=Prevent all combat damage that would be dealt this turn by creatures target opponent controls.~Awaken 2—{4}{W}
+timing=removal
+oracle=Prevent all combat damage that would be dealt this turn by creatures target opponent controls.\nAwaken 2—{4}{W}

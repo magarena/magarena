@@ -1,0 +1,9 @@
+name=Ugin's Insight
+image=http://magiccards.info/scans/en/bfz/87.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={3}{U}{U}
+effect=Scry X, where X is the highest converted mana cost among permanents you control, then draw three cards.
+timing=main
+oracle=Scry X, where X is the highest converted mana cost among permanents you control, then draw three cards.

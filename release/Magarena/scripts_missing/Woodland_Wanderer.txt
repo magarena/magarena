@@ -1,0 +1,12 @@
+name=Woodland Wanderer
+image=http://magiccards.info/scans/en/bfz/198.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Elemental
+cost={3}{G}
+pt=2/2
+ability=Vigilance, trample;\
+        SN enters the battlefield with a +1/+1 counter on it for each color of mana spent to cast it.
+timing=main
+oracle=Vigilance, trample\nConverge — Woodland Wanderer enters the battlefield with a +1/+1 counter on it for each color of mana spent to cast it.

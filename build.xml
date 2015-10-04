@@ -4,8 +4,8 @@
   </description>
   <property environment="env"/>
   <property name="debuglevel" value="source,lines,vars"/>
-  <property name="target" value="1.7"/>
-  <property name="source" value="1.7"/>
+  <property name="source" value="1.8"/>
+  <property name="target" value="1.8"/>
   <property name="lib" value="release/lib" />
   <property name="groovy-version" value="2.4.1" />
   
@@ -71,6 +71,7 @@
     <copy includeemptydirs="false" todir="build">
       <fileset dir="resources">
         <exclude name="**/.svn"/>
+        <exclude name="**/_excluded/**"/>
       </fileset>
     </copy>
   </target>
@@ -80,7 +81,7 @@
       <jar destfile="release/Magarena.jar" basedir="build" includes="**/*.*">
       <manifest>
         <attribute name="Main-Class" value="magic.MagicMain" />
-        <attribute name="SplashScreen-Image" value="magic/data/textures/splash.png" />
+        <attribute name="SplashScreen-Image" value="magic/data/textures/splash.jpg" />
         <attribute name="Class-Path" 
                    value="lib/groovy-all-${groovy-version}.jar
                           lib/miglayout-core-4.2.jar

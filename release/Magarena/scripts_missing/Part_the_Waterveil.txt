@@ -1,0 +1,9 @@
+name=Part the Waterveil
+image=http://magiccards.info/scans/en/bfz/80.jpg
+value=2.500
+rarity=M
+type=Sorcery
+cost={4}{U}{U}
+effect=Take an extra turn after this one. Exile SN.~Awaken 6—{6}{U}{U}{U}
+timing=main
+oracle=Take an extra turn after this one. Exile Part the Waterveil.\nAwaken 6—{6}{U}{U}{U}

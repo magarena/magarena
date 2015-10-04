@@ -14,7 +14,7 @@ import magic.ui.utility.GraphicsUtils;
 import magic.ui.IconImages;
 import magic.ui.utility.MagicStyle;
 import magic.ui.duel.CounterOverlay;
-import magic.ui.duel.viewer.PlayerViewerInfo;
+import magic.ui.duel.PlayerViewerInfo;
 import magic.ui.theme.ThemeFactory;
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.ease.Spline;
@@ -28,7 +28,7 @@ public class PlayerImagePanel extends AnimationPanel {
     private final CounterOverlay poisonCounter;
     private final CounterOverlay damageCounter;    
     private final BufferedImage activeImage;
-    private final BufferedImage inactiveImage;
+    private final Image inactiveImage;
     private PlayerViewerInfo playerInfo;
     private int life = 0;
     private int damageColorOpacity = 0;

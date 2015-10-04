@@ -22,7 +22,7 @@ public class MagicTapPermanentEvent extends MagicEvent {
             targetChoice,
             MagicTapTargetPicker.Tap,
             EVENT_ACTION,
-            "Choose "+targetChoice.getTargetDescription()+"$."
+            "Tap "+targetChoice.getTargetDescription()+"$."
         );
     }
 

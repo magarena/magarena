@@ -68,6 +68,32 @@ Thanks to
 Thank you for your support and have fun!
 
 
+Release 1.67 (October 31, 2015)
+============
+
+Release 1.66 (September 26, 2015)
+============
+lodici
+melvin
+ShawnieBoy
+
+- card names in log/stack are now interactive, mouse over to highlight card
+  location or click to view full size image
+
+- choose one of four styles for the log/stack messages
+
+- replaced clunky two-click log/stack popup menu with single click icon bar
+
+- restore last selected view (basic/advanced) when opening log file screen
+
+- display alert at startup if current JRE is less than 1.8
+
+- fixed the following bugs:
+  * libpng warning: iCCP: known incorrect sRGB profile (issue #439).
+  * target indicator should appear before before period instead of after it (issue #442)
+
+- added the following cards:
+Embermaw Hellion, Unholy Hunger
 
 Release 1.65 (August 30, 2015)
 ============
@@ -91,30 +117,27 @@ ShawnieBoy
   * ability: awaken <n> <cost>
  
 - fixed the following bugs:
-    fix: Undead Leotau should get +1/-1 instead of +1/+1
-    fix: Owl Familiar was missing flying
-    miracle: check that card is still in hand when trigger resolves before casting
-    prevent discarding card used to cast the spell as additional cost
-    add "Cast SN with AI only if you have devotion to green" to Skyreaping
-    fix: "translation" setting was being overwritten when importing. Should use language selected as part of startup.
-    casting without mana cost takes into account additional costs
-    correct colour check for Raka Sanctuary fixes #414
-    add option for revealed or hidden for MagicSearchToLocationEvent fixes #411
-    revert Warstorm Surge to use Groovy re #415
-    revert Stalking Vengeance re #415
-    add AI activation restriction to Echoes of the Kin Tree #399
-    fix Colfenor's Urn didn't return any cards to play after it was sacrificed
-    fixed so that cascade moves cards to bottom after casting instead of before
-    fix Garruk Relentless infinite transform, only perform transform action if permanent is valid (still on the battlefield)
-    incremental update from snapshot to solve slow log issue #419
-    correct Disciple of Kangee activation cost
-    Bloodthirsty Ogre requires a Demon permanent not Demon creature.
-    Lifespinner fix #425 -
-    Use MagicRepeatedPermanentsEvent for multiple sacrifice,
-    Use MagicSearchOntoBattlefieldEvent instead of MagicPutOntoBattlefield
-    fixed: Shallow Grave should reanimate the top creature card, not the top card
-    fixed: That Which Was Taken's target choice was not targetted fixes issue #424
-    fix Shuriken's throw ability to be on itself instead of the equipped creature
+  * log widget causes UI to slow down when there are many log entries (issue #419)
+  * translation setting is overwritten when importing
+  * casting without mana cost does not allow paying additional costs
+  * card used to cast a spell can be discarded to pay for its own additional cost
+  * miracle trigger did not check that card still in hand before casting
+  * cascade should move cards to bottom after casting instead of before
+  * AI would cast Skyreaping when it has zero devotion to green
+  * AI would cast Echoes of the Kin Tree when it doesn't have any creature in play (issue #399)
+  * Demonic Tutor's chosen card is revealed in the log (issue #411)
+  * Raka Sanctuary checks for green permanent instead of blue (issue #414)
+  * Warstorm Surge and Stalking Vengeance's trigger deals incorrect damage (issue #415)
+  * That Which Was Taken's target choice should be targetted (issue #424)
+  * Lifespinner's ability can be activated without three Spirits (issue #425)
+  * Garruk Relentless's transform triggered infinitely
+  * Disciple of Kangee's ability should cost {U} and not {2}
+  * Shuriken's throw ability causes the MCTS AI to crash
+  * Bloodthirsty Ogre's ability requires a Demon permanent not Demon creature
+  * Undead Leotau's ability should give it +1/-1 instead of +1/+1
+  * Owl Familiar missing flying
+  * Shallow Grave should reanimate the top creature card, not the top card
+  * Colfenor's Urn didn't return any cards to play after it was sacrificed
 
 - added the following cards:
 Anchor to the Æther, Artificer's Epiphany, Chandra's Ignition,

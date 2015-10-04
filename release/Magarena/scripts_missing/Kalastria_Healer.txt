@@ -1,0 +1,11 @@
+name=Kalastria Healer
+image=http://magiccards.info/scans/en/bfz/114.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vampire,Cleric,Ally
+cost={1}{B}
+pt=1/2
+ability=Whenever SN or another Ally enters the battlefield under your control, each opponent loses 1 life and you gain 1 life.
+timing=main
+oracle=Rally — Whenever Kalastria Healer or another Ally enters the battlefield under your control, each opponent loses 1 life and you gain 1 life.

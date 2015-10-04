@@ -27,9 +27,7 @@ import magic.model.phase.MagicGameplay;
 import magic.model.phase.MagicPhase;
 import magic.model.phase.MagicPhaseType;
 import magic.model.phase.MagicStep;
-import magic.model.stack.MagicItemOnStack;
 import magic.model.stack.MagicStack;
-import magic.model.stack.MagicTriggerOnStack;
 import magic.model.target.MagicLegendaryCopiesFilter;
 import magic.model.target.MagicOtherPermanentTargetFilter;
 import magic.model.target.MagicPlaneswalkerCopiesFilter;
@@ -717,7 +715,7 @@ public class MagicGame {
         }
         final SortedSet<String> names=new TreeSet<String>();
         for (final MagicPermanent attacker : result) {
-            names.add(attacker.getName());
+            names.add(MagicMessage.getCardToken(attacker));
         }
         final StringBuilder builder = new StringBuilder(player + " attacks with ");
         MagicMessage.addNames(builder,names);
@@ -725,23 +723,23 @@ public class MagicGame {
         logBook.add(new MagicMessage(this,player,builder.toString()));
     }
 
-    public void logBlockers(final MagicPlayer player,final MagicDeclareBlockersResult result) {
+    public void logBlockers(final MagicPlayer player, final MagicDeclareBlockersResult result) {
         if (disableLog) {
             return;
         }
-        final SortedSet<String> names=new TreeSet<String>();
+        final SortedSet<String> names = new TreeSet<String>();
         for (final MagicCombatCreature[] creatures : result) {
-            for (int index=1;index<creatures.length;index++) {
-                names.add(creatures[index].getName());
+            for (int index = 1; index < creatures.length; index++) {
+                names.add(MagicMessage.getCardToken(creatures[index].permanent));
             }
         }
         if (names.isEmpty()) {
             return;
         }
         final StringBuilder builder = new StringBuilder(player + " blocks with ");
-        MagicMessage.addNames(builder,names);
+        MagicMessage.addNames(builder, names);
         builder.append('.');
-        logBook.add(new MagicMessage(this,player,builder.toString()));
+        logBook.add(new MagicMessage(this, player, builder.toString()));
     }
 
     public void executeEvent(final MagicEvent event,final Object[] choiceResults) {

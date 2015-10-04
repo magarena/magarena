@@ -1,0 +1,13 @@
+name=Skitterskin
+image=http://magiccards.info/scans/en/bfz/97.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Eldrazi,Drone
+cost={3}{B}
+pt=4/3
+ability=Devoid;\
+        SN can't block.;\
+        {1}{B}: Regenerate SN. Activate this ability only if you control another colorless creature.
+timing=main
+oracle=Devoid\nSkitterskin can't block.\n{1}{B}: Regenerate Skitterskin. Activate this ability only if you control another colorless creature.

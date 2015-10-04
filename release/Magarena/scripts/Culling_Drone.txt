@@ -1,0 +1,12 @@
+name=Culling Drone
+image=http://magiccards.info/scans/en/bfz/91.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Eldrazi,Drone
+cost={1}{B}
+pt=2/2
+ability=Devoid;\
+        Ingest
+timing=main
+oracle=Devoid\nIngest

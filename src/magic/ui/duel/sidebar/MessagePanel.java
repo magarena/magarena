@@ -1,51 +1,77 @@
 package magic.ui.duel.sidebar;
 
 import java.awt.Color;
+import java.awt.Insets;
+import javax.swing.BorderFactory;
+import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
+import javax.swing.border.CompoundBorder;
 import magic.data.MagicIcon;
 import magic.model.MagicMessage;
 import magic.ui.IconImages;
+import magic.ui.SwingGameController;
+import magic.ui.message.TextLabel;
 import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.TextLabel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class MessagePanel extends JPanel {
+
+    private static final CompoundBorder SEPARATOR_BORDER = BorderFactory.createCompoundBorder(
+        BorderFactory.createMatteBorder(0, 0, 1, 0, Color.GRAY),
+        FontsAndBorders.EMPTY_BORDER
+    );
 
     private static int lastTurn = 0;
     private static int textLabelWidth = 0;
 
     private final MagicMessage message;
 
-    MessagePanel(final MagicMessage message0, final int containerWidth) {
+    MessagePanel(final MagicMessage message0, final JComponent container, SwingGameController aController) {
+
         message = message0;
-        setMessagePanelLayout(containerWidth);
+
+        setOpaque(false);
+        setBorder(SEPARATOR_BORDER);
+
+        setMessagePanelLayout(container, aController);
     }
 
     MagicMessage getMessage() {
         return message;
     }
 
-    private void setMessagePanelLayout(final int containerWidth) {
+    private void setMessagePanelLayout(final JComponent container, SwingGameController aController) {
 
-        int gap = 8; // pixels
-        setLayout(new MigLayout("insets 0, gap " + gap, "[][][grow,right]", "[top]"));
+        final int GAP = 8; // pixels
+        setLayout(new MigLayout("insets 0, gap " + GAP, "[][][grow,right]", "[top]"));
 
         JPanel playerPanel = getPlayerPanel();
         JPanel turnPanel = getTurnPanel();
+        
+        final Insets insets1 = container.getInsets();
+        final Insets insets2 = SEPARATOR_BORDER.getBorderInsets(this);
+        final int totalInsets = insets1.left + insets1.right + insets2.left + insets2.right;
 
         if (textLabelWidth == 0) {
             textLabelWidth =
-                    containerWidth -
+                    container.getWidth() -
                     playerPanel.getPreferredSize().width -
                     turnPanel.getPreferredSize().width -
-                    (gap * 2);
-        }
+                    totalInsets -
+                    (GAP * 2);
+        }        
 
-        final TextLabel textLabel=new TextLabel(message.getText(), textLabelWidth, false);
-        textLabel.setColors(Color.BLACK,Color.BLUE);
+        final TextLabel textLabel = new TextLabel(
+            message.getText(),
+            LogStackViewer.MESSAGE_FONT,
+            textLabelWidth,
+            false,
+            LogStackViewer.CHOICE_COLOR,
+            aController
+        );
 
         add(playerPanel);
         add(textLabel);

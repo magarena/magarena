@@ -1,8 +1,6 @@
 package magic.model.event;
 
-
-import java.util.Arrays;
-
+import magic.data.CardDefinitions;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
@@ -20,6 +18,8 @@ import magic.model.action.MagicPlayMod;
 import magic.model.action.PutItemOnStackAction;
 import magic.model.action.RemoveCardAction;
 import magic.model.action.PlayCardFromStackAction;
+
+import java.util.Arrays;
 
 public class MagicMorphCastActivation extends MagicHandCastActivation {
 
@@ -60,6 +60,8 @@ public class MagicMorphCastActivation extends MagicHandCastActivation {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCard card = event.getCard();
             game.doAction(new RemoveCardAction(card,MagicLocationType.OwnersHand));
+
+            final MagicCardDefinition morph = CardDefinitions.getCard("Morph");
                 
             final MagicCardOnStack cardOnStack=new MagicCardOnStack(
                 card,
@@ -68,19 +70,19 @@ public class MagicMorphCastActivation extends MagicHandCastActivation {
             ) {
                 @Override
                 public boolean hasColor(final MagicColor color) {
-                    return MagicCardDefinition.MORPH.hasColor(color);
+                    return morph.hasColor(color);
                 }
                 @Override
                 public boolean hasAbility(final MagicAbility ability) {
-                    return MagicCardDefinition.MORPH.hasAbility(ability);
+                    return morph.hasAbility(ability);
                 }
                 @Override
                 public boolean hasSubType(final MagicSubType subType) {
-                    return MagicCardDefinition.MORPH.hasSubType(subType);
+                    return morph.hasSubType(subType);
                 }
                 @Override
                 public boolean hasType(final MagicType type) {
-                    return MagicCardDefinition.MORPH.hasType(type);
+                    return morph.hasType(type);
                 }
                 @Override
                 public boolean canBeCountered() {

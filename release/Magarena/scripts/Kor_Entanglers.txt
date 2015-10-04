@@ -1,0 +1,11 @@
+name=Kor Entanglers
+image=http://magiccards.info/scans/en/bfz/36.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Kor,Soldier,Ally
+cost={4}{W}
+pt=3/4
+ability=Whenever SN or another Ally enters the battlefield under your control, tap target creature an opponent controls.
+timing=main
+oracle=Rally — Whenever Kor Entanglers or another Ally enters the battlefield under your control, tap target creature an opponent controls.

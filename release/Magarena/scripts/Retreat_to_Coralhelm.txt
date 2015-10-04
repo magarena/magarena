@@ -1,0 +1,11 @@
+name=Retreat to Coralhelm
+image=http://magiccards.info/scans/en/bfz/82.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={2}{U}
+ability=Whenever a land enters the battlefield under your control, choose one — \
+        (1) You may tap or untap target creature. \
+        (2) Scry 1.
+timing=enchantment
+oracle=Landfall — Whenever a land enters the battlefield under your control, choose one —\n• You may tap or untap target creature.\n• Scry 1.

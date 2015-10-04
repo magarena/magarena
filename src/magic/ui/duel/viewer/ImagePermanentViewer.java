@@ -1,5 +1,7 @@
 package magic.ui.duel.viewer;
 
+import magic.ui.duel.PermanentViewerInfo;
+import magic.ui.utility.ImageDrawingUtils;
 import magic.data.GeneralConfig;
 import magic.ui.CachedImagesProvider;
 import magic.ui.IconImages;
@@ -49,8 +51,8 @@ public class ImagePermanentViewer extends JPanel {
     private static final Color MOUSE_OVER_TCOLOR = MagicStyle.getTranslucentColor(MOUSE_OVER_COLOR, 30);
 
     private final ImagePermanentsViewer viewer;
-    private final PermanentViewerInfo permanentInfo;
-    private final List<PermanentViewerInfo> linkedInfos;
+    public final PermanentViewerInfo permanentInfo;
+    public final List<PermanentViewerInfo> linkedInfos;
     private final Dimension logicalSize;
     private final List<Rectangle> linkedLogicalRectangles;
     private List<Rectangle> linkedScreenRectangles;
@@ -58,6 +60,7 @@ public class ImagePermanentViewer extends JPanel {
     private int logicalRow=1;
     private boolean isMouseOver = false;
     private static int currentCardIndex = -1;
+    private long highlightedId = 0;
 
     public ImagePermanentViewer(final ImagePermanentsViewer viewer,final PermanentViewerInfo permanentInfo) {
         this.viewer=viewer;
@@ -276,6 +279,8 @@ public class ImagePermanentViewer extends JPanel {
                 g.drawImage(image, x1, y1, x2, y2, 0, 0, imageSize.width, imageSize.height, this);
             }
 
+            ImageDrawingUtils.drawCardId(g, linkedInfo.permanent.getCard().getId(), 0, 0);
+
             // Add overlays, unless card image size is so small the overlays would be unreadable.
             if (linkedRect.height > CONFIG.getOverlayMinimumHeight()) {
 
@@ -351,6 +356,13 @@ public class ImagePermanentViewer extends JPanel {
                 paintMouseOverHighlight(g2d, getMouseOverRectangle());
             }
 
+            if (highlightedId == linkedInfo.permanent.getCard().getId()) {
+                g2d.setPaint(MagicStyle.getRolloverColor());
+                g2d.setStroke(new BasicStroke(4));
+                g2d.drawRect(x1 + 2, y1 + 2, x2 - x1 - 2, y2 - y1 - 2);
+                g2d.setStroke(defaultStroke);
+            }
+
         }
     }
 
@@ -387,6 +399,11 @@ public class ImagePermanentViewer extends JPanel {
         transform.rotate(Math.PI/2);
         transform.translate(-imageSize.width/2, -imageSize.height/2);
         return transform;
+    }
+
+    void doShowHighlight(long id) {
+        highlightedId = id;
+        repaint();
     }
 
 }

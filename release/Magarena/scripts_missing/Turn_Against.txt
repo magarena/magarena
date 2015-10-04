@@ -1,0 +1,9 @@
+name=Turn Against
+image=http://magiccards.info/scans/en/bfz/135.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={4}{R}
+effect=Devoid~Gain control of target creature until end of turn. Untap that creature. It gains haste until end of turn.
+timing=removal
+oracle=Devoid\nGain control of target creature until end of turn. Untap that creature. It gains haste until end of turn.

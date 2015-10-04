@@ -2,11 +2,22 @@ package magic.data;
 
 public enum MagicIcon {
 
+    // Future Sight symbols
+    FS_CREATURE("creature_black.png"),
+    FS_LAND("land_black.png"),
+    FS_INSTANT("instant_black.png"),
+    FS_ARTIFACT("artifact_black.png"),
+    FS_ENCHANTMENT("enchantment_black.png"),
+    FS_SORCERY("sorcery_black.png"),
+    FS_PLANESWALKER("planeswalker_black.png"),
+
     ILLEGAL_ICON("card_illegal.png"),
     LEGAL_ICON("card_legal.png"),
     BANNED_ICON("card_banned.png"),
     RESTRICTED_ICON("card_restricted.png"),
-
+    LOG_FILE("w_examine.png"),
+    UPARROW_ICON("w_up.png"),
+    DOWNARROW_ICON("w_down.png"),
     MENU_ICON("w_menu5@18.png"),
     HEADER_ICON("headerIcon.png"),
     OPTIONS_ICON("w_book.png"),
@@ -37,6 +48,7 @@ public enum MagicIcon {
     ARROWUP_ICON("w_arrowup.png"),
     PLUS_ICON("w_plus28.png"),
     MINUS_ICON("w_minus28.png"),
+    MARKER_ICON("w_marker.png"),
 
     MISSING_ICON("missing2.png"),
     ARENA("arena.png"),
@@ -89,18 +101,9 @@ public enum MagicIcon {
     ATTACK("attack.gif"),
     BLOCK("block.gif"),
     BLOCKED("blocked.gif"),
-    MESSAGE("message.png"),
-    PROGRESS("progress.png"),
-    TROPHY("trophy.gif"),
-    GOLD("gold.png"),
-    SILVER("silver.png"),
-    BRONZE("bronze.png"),
-    CLOVER("clover.gif"),
     LOSE("lose.png"),
     TARGET("target.gif"),
     VALID("valid.gif"),
-    STRENGTH("strength.png"),
-    PICTURE("picture.png"),
 
     // ability icons
     FLYING("flying.png"),
@@ -186,6 +189,7 @@ public enum MagicIcon {
     MANA_ANY("anymana.gif"),
 
     // mana icons are stored in a sprite/icon sheet.
+    MANA_UNTAPPED(51),
     MANA_TAPPED(50),
     MANA_WHITE(24),
     MANA_BLUE(25),

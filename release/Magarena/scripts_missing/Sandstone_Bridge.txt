@@ -1,0 +1,10 @@
+name=Sandstone Bridge
+image=http://magiccards.info/scans/en/bfz/243.jpg
+value=2.500
+rarity=C
+type=Land
+ability=SN enters the battlefield tapped.;\
+        When SN enters the battlefield, target creature gets +1/+1 and gains vigilance until end of turn.;\
+        {T}: Add {W} to your mana pool.
+timing=land
+oracle=Sandstone Bridge enters the battlefield tapped.\nWhen Sandstone Bridge enters the battlefield, target creature gets +1/+1 and gains vigilance until end of turn.\n{T}: Add {W} to your mana pool.

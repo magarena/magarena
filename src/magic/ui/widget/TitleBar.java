@@ -20,8 +20,8 @@ public class TitleBar extends JPanel {
         setPreferredSize(new Dimension(getPreferredSize().width, 22));
         setMinimumSize(getPreferredSize());
 
-        setLayout(new MigLayout("insets 0 4 0 4, gap 0", "grow", "grow, fill"));
-        add(label);
+        setLayout(new MigLayout("insets 0 4 0 4", "", "grow, fill"));
+        add(label, "pushx");
 
         setBackground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND));
         

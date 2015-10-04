@@ -1,0 +1,9 @@
+name=Blighted Gorge
+image=http://magiccards.info/scans/en/bfz/231.jpg
+value=2.500
+rarity=U
+type=Land
+ability={T}: Add {1} to your mana pool.;\
+        {4}{R}, {T}, Sacrifice SN: SN deals 2 damage to target creature or player.
+timing=land
+oracle={T}: Add {1} to your mana pool.\n{4}{R}, {T}, Sacrifice Blighted Gorge: Blighted Gorge deals 2 damage to target creature or player.
