@@ -18,6 +18,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.RejectedExecutionException;
 
 /*
 AI using Monte Carlo Tree Search
@@ -224,7 +225,8 @@ public class MCTSAI implements MagicAI {
             try {
                 queue.take().run();
             } catch (InterruptedException e) {
-                throw new RuntimeException(e);
+                // occurs when shutdownNow is invoked
+                return;
             }
         }
 
@@ -247,7 +249,12 @@ public class MCTSAI implements MagicAI {
 
         // submit random play to executor
         if (running) {
-            executor.execute(genSimulationTask(rootGame, path, queue));
+            try {
+                executor.execute(genSimulationTask(rootGame, path, queue));
+            } catch (RejectedExecutionException e) {
+                // occurs when trying to submit to a execute that has shutdown
+                return;
+            }
         }
         
         // virtual loss + game theoretic value propagation
@@ -276,7 +283,12 @@ public class MCTSAI implements MagicAI {
        
         // end simulations once root is AI win or time is up
         if (running && root.isAIWin() == false) {
-            executor.execute(updateTask);
+            try {
+                executor.execute(updateTask);
+            } catch (RejectedExecutionException e) {
+                // occurs when trying to submit to a execute that has shutdown
+                return;
+            }
         } else {
             executor.shutdown();
         }
