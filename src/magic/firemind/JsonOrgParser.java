@@ -23,7 +23,12 @@ public final class JsonOrgParser {
         final List<String> formats = new ArrayList<>(Arrays.asList(JSONObject.getNames(jsonRoot)));
         for (String format : formats) {
             final JSONObject jsonFormat = jsonRoot.getJSONObject(format);
-            final List<String> deckNames = new ArrayList<>(Arrays.asList(JSONObject.getNames(jsonFormat)));
+            final String[] deckNamesArray = JSONObject.getNames(jsonFormat);
+            if (deckNamesArray == null)
+                continue;   // no decks specified for given format.
+            
+            final List<String> deckNames = new ArrayList<>(Arrays.asList(deckNamesArray));
+
             for (String deckName : deckNames) {
                 final JSONObject jsonDeck = jsonFormat.getJSONObject(deckName);
                 final MagicDeck deck = new MagicDeck();
