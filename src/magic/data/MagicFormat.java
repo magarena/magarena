@@ -2,6 +2,7 @@ package magic.data;
 
 import java.util.List;
 import java.util.ArrayList;
+import java.util.stream.Collectors;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.utility.DeckUtils;
@@ -61,11 +62,10 @@ public abstract class MagicFormat {
     };
 
     private static List<String> getFormatLabels(final List<MagicFormat> formats) {
-        final List<String> fmts = new ArrayList<>();
-        for (final MagicFormat fmt : formats) {
-            fmts.add(fmt.getLabel());
-        }
-        return fmts;
+        return formats
+            .stream()
+            .map(f -> f.getLabel())
+            .collect(Collectors.toList());
     }
 
     public static List<MagicFormat> getDuelFormats() {
