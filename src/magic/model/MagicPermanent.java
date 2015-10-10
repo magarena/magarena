@@ -784,7 +784,10 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
         if (isCreature()) {
             final int toughness=getToughness();
             if (toughness<=0) {
-                game.logAppendMessage(getController(), getName() + " is put into its owner's graveyard.");
+                game.logAppendMessage(getController(),
+                    String.format("%s is put into its owner's graveyard.",
+                        MagicMessage.getCardToken(this))
+                );
                 game.addDelayedAction(new RemoveFromPlayAction(this,MagicLocationType.Graveyard));
             } else if (hasState(MagicPermanentState.Destroyed)) {
                 game.addDelayedAction(ChangeStateAction.Clear(this,MagicPermanentState.Destroyed));
@@ -795,7 +798,11 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
 
             // Soulbond
             if (pairedCreature.isValid() && pairedCreature.isCreature() == false) {
-                game.logAppendMessage(getController(), getName() + " becomes unpaired as " + pairedCreature.getName() + " is no longer a creature.");
+                game.logAppendMessage(getController(), 
+                    String.format("%s becomes unpaired as %s is no longer a creature.",
+                        MagicMessage.getCardToken(this),
+                        MagicMessage.getCardToken(pairedCreature))
+                );
                 game.addDelayedAction(new SoulbondAction(this,pairedCreature,false));
             }
         }
@@ -810,18 +817,26 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
                     || game.isLegalTarget(getController(),this,tchoice,enchantedPermanent) == false) {
                 reason = "it no longer enchants a valid permanent.";
             } else if (enchantedPermanent.hasProtectionFrom(this)) {
-                reason = enchantedPermanent.getName() + " has protection.";
+                reason = String.format("%s has protection.", MagicMessage.getCardToken(enchantedPermanent));
             }
 
             if (reason.isEmpty() == false) {
                 // 702.102e If an Aura with bestow is attached to an illegal object or player, it becomes unattached.
                 // This is an exception to rule 704.5n.
                 if (hasAbility(MagicAbility.Bestow)) {
-                    game.logAppendMessage(getController(), getName() + " becomes unattached as " + reason);
+                    game.logAppendMessage(getController(),
+                        String.format("%s becomes unattached as %s",
+                            MagicMessage.getCardToken(this), 
+                            reason)
+                    );
                     game.addDelayedAction(new AttachAction(this, MagicPermanent.NONE));
                 } else {
                 // 704.5n
-                    game.logAppendMessage(getController(), getName() + " is put into its owner's graveyard as " + reason);
+                    game.logAppendMessage(getController(),
+                        String.format("%s is put into its owner's graveyard as %s",
+                            MagicMessage.getCardToken(this),
+                            reason)
+                    );
                     game.addDelayedAction(new RemoveFromPlayAction(this,MagicLocationType.Graveyard));
                 }
             }
@@ -832,19 +847,26 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             if (isCreature()) {
                 reason = "it is a creature.";
             } else if (equippedCreature.isCreature() == false) {
-                reason = equippedCreature.getName() + " is no longer a creature.";
+                reason = String.format("%s is no longer a creature.", MagicMessage.getCardToken(equippedCreature));
             } else if (equippedCreature.hasProtectionFrom(this)) {
-                reason = equippedCreature.getName() + " has protection.";
+                reason = String.format("%s has protection.", MagicMessage.getCardToken(equippedCreature));
             }
             if (reason.isEmpty() == false) {
-                game.logAppendMessage(getController(), getName() + " becomes unattached as " + reason);
+                game.logAppendMessage(getController(),
+                    String.format("%s becomes unattached as %s",
+                        MagicMessage.getCardToken(this),
+                        reason)
+                );
                 game.addDelayedAction(new AttachAction(this,MagicPermanent.NONE));
             }
         }
 
         // rule 704.5i If a planeswalker has loyalty 0, it's put into its owner's graveyard.
         if (isPlaneswalker() && getCounters(MagicCounterType.Loyalty) == 0) {
-            game.logAppendMessage(getController(), getName() + " is put into its owner's graveyard.");
+            game.logAppendMessage(getController(),
+                String.format("%s is put into its owner's graveyard.",
+                    MagicMessage.getCardToken(this))
+            );
             game.addDelayedAction(new RemoveFromPlayAction(this,MagicLocationType.Graveyard));
         }
 
