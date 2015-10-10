@@ -72,9 +72,9 @@ public enum MagicSubType {
     Minotaur, Monger, Mongoose, Monk, Moonfolk, Mutant, Myr, Mystic, Naga, Nautilus,
     Nephilim, Nightmare, Nightstalker, Ninja, Noggle, Nomad, Nymph, Octopus, Ogre, Ooze,
     Orb, Orc, Orgg, Ouphe, Ox, Oyster, Pegasus, Pentavite, Pest, Phelddagrif,
-    Phoenix, Pincher, Pirate, Plant, Praetor, Prism, Rabbit, Rat, Rebel,
+    Phoenix, Pincher, Pirate, Plant, Praetor, Prism, Processor, Rabbit, Rat, Rebel,
     Reflection, Rhino, Rigger, Rogue, Sable, Salamander, Samurai, Sand, Saproling, Satyr,
-    Scarecrow, Scorpion, Scout, Serf, Serpent, Shade, Shaman, Shapeshifter, Sheep,
+    Scarecrow, Scion, Scorpion, Scout, Serf, Serpent, Shade, Shaman, Shapeshifter, Sheep,
     Siren, Skeleton, Slith, Sliver, Slug, Snake, Soldier, Soltari, Spawn, Specter,
     Spellshaper, Sphinx, Spider, Spike, Spirit, Splinter, Sponge, Squid, Squirrel,
     Starfish, Surrakar, Survivor, Tetravite, Thalakos, Thopter, Thrull, Treefolk,
@@ -91,11 +91,11 @@ public enum MagicSubType {
     ;
 
     public static final Set<MagicSubType> ALL_BASIC_LANDS = EnumSet.range(Forest, Swamp);
-    
+
     public static final Set<MagicSubType> ALL_LANDS = EnumSet.range(Forest, Gate);
-    
+
     public static final Set<MagicSubType> ALL_ARTIFACTS = EnumSet.range(Contraption, Fortification);
-    
+
     public static final Set<MagicSubType> ALL_ENCHANTMENTS = EnumSet.range(Aura, Shrine);
 
     public static final Set<MagicSubType> ALL_CREATURES = EnumSet.range(Assembly_Worker, Zubera);
@@ -138,7 +138,7 @@ public enum MagicSubType {
         }
         return givenSubTypeFlags;
     }
-    
+
     public static EnumSet<MagicSubType> prefixSubTypes(final List<String> tokens) {
         final EnumSet<MagicSubType> subTypes = EnumSet.noneOf(MagicSubType.class);
         boolean matched = true;
@@ -151,12 +151,12 @@ public enum MagicSubType {
                     subTypes.add(type);
                     iterator.remove();
                     break;
-                } 
+                }
             }
         }
         return subTypes;
     }
-    
+
     @SuppressWarnings("incomplete-switch")
     public MagicAbility getLandwalkAbility() {
         switch (this) {
