@@ -66,15 +66,14 @@ public class RandomDeckGenerator {
         }
 
         landCards.clear();
-        for (final MagicCardDefinition card : CardDefinitions.getNonBasicLandCards()) {
-            if (cubeDefinition.isCardLegal(card)) {
+        CardDefinitions.getNonBasicLandCards().stream()
+            .filter(card -> cubeDefinition.isCardLegal(card) && acceptPossibleLandCard(card))
+            .forEach(card -> {
                 for (int count = 4; count > 0; count--) {
-                    if (acceptPossibleLandCard(card)) {
-                        landCards.add(card);
-                    }
+                    landCards.add(card);
                 }
-            }
-        }
+            });
+
     }
 
     public boolean acceptPossibleLandCard(final MagicCardDefinition card) {
