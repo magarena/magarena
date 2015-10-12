@@ -19,8 +19,7 @@ public class MagicTappedIntoPlayUnlessTrigger extends MagicWhenComesIntoPlayTrig
 
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
-        final MagicPlayer player = permanent.getController();
-        return (condition.accept(permanent)) ?
+        return condition.accept(permanent) ?
             new MagicEvent(
                 permanent,
                 this,
