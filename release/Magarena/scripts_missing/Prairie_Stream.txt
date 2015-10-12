@@ -1,5 +1,5 @@
 name=Prairie Stream
-image=http://magiccards.info/scans/en/exp/1.jpg
+image=http://magiccards.info/scans/en/bfz/241.jpg
 value=2.500
 rarity=M
 type=Land

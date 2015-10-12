@@ -1,5 +1,5 @@
 name=Cinder Glade
-image=http://magiccards.info/scans/en/exp/4.jpg
+image=http://magiccards.info/scans/en/bfz/235.jpg
 value=2.500
 rarity=M
 type=Land

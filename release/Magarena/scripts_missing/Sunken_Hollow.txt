@@ -1,5 +1,5 @@
 name=Sunken Hollow
-image=http://magiccards.info/scans/en/exp/2.jpg
+image=http://magiccards.info/scans/en/bfz/249.jpg
 value=2.500
 rarity=M
 type=Land
