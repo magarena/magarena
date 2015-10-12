@@ -25,7 +25,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
-import java.util.stream.Collectors;
+import java.util.stream.Stream;
 import magic.utility.ProgressReporter;
 import magic.utility.MagicSystem;
 import magic.model.MagicCardDefinition;
@@ -318,11 +318,10 @@ public class CardDefinitions {
         return combined;
     }
 
-    public static List<MagicCardDefinition> getNonBasicLandCards() {
+    public static Stream<MagicCardDefinition> getNonBasicLandCards() {
         MagicSystem.waitForAllCards();
         return defaultPlayableCardDefs.stream()
-            .filter(card -> card.isLand() && !card.isBasic())
-            .collect(Collectors.toList());
+            .filter(card -> card.isLand() && !card.isBasic());
     }
 
     public static List<MagicCardDefinition> getSpellCards() {

@@ -66,7 +66,7 @@ public class RandomDeckGenerator {
         }
 
         landCards.clear();
-        CardDefinitions.getNonBasicLandCards().stream()
+        CardDefinitions.getNonBasicLandCards()
             .filter(card -> cubeDefinition.isCardLegal(card) && acceptPossibleLandCard(card))
             .forEach(card -> {
                 for (int count = 4; count > 0; count--) {
