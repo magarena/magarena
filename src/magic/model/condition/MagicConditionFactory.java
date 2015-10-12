@@ -174,6 +174,15 @@ public class MagicConditionFactory {
         };
     }
 
+    public static MagicCondition YouControlOr(final MagicTargetFilter<MagicPermanent> filter1,final MagicTargetFilter<MagicPermanent> filter2) {
+        return new MagicCondition() {
+            @Override
+            public boolean accept(final MagicSource source) {
+                return source.getController().controlsPermanent(filter1) || source.getController().controlsPermanent(filter2);
+            }
+        };
+    }
+
     public static MagicCondition PlayerControlsSource(final MagicPlayer player) {
         final long id = player.getId();
         return new MagicCondition() {

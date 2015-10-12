@@ -4,6 +4,7 @@ import magic.model.ARG;
 import magic.model.MagicColor;
 import magic.model.MagicCounterType;
 import magic.model.MagicAbility;
+import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 import magic.model.event.MagicMatchedCostEvent;
 
@@ -14,6 +15,14 @@ import java.util.LinkedList;
 
 public enum MagicConditionParser {
 
+    YouControlOr("you control a(n)? " + ARG.WORD1 +" or a(n)? "+ ARG.WORD2) {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicConditionFactory.YouControlOr(
+                MagicTargetFilterFactory.Permanent(ARG.word1(arg)),
+                MagicTargetFilterFactory.Permanent(ARG.word2(arg))
+            );
+        }
+    },
     YouControl("you control a(n)? " + ARG.WORDRUN) {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicConditionFactory.YouControl(
