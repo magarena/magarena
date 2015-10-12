@@ -68,12 +68,13 @@ public class RandomDeckGenerator {
         landCards.clear();
         CardDefinitions.getNonBasicLandCards()
             .filter(card -> cubeDefinition.isCardLegal(card) && acceptPossibleLandCard(card))
-            .forEach(card -> {
-                for (int count = 4; count > 0; count--) {
-                    landCards.add(card);
-                }
-            });
+            .forEach(card -> addCopiesToLandCardsList(card, 4));
+    }
 
+    private void addCopiesToLandCardsList(final MagicCardDefinition aCard, final int amount) {
+        for (int count = amount; count > 0; count--) {
+            landCards.add(aCard);
+        }
     }
 
     public boolean acceptPossibleLandCard(final MagicCardDefinition card) {
