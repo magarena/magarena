@@ -66,7 +66,7 @@ public class RandomDeckGenerator {
         }
 
         landCards.clear();
-        for (final MagicCardDefinition card : CardDefinitions.getLandCards()) {
+        for (final MagicCardDefinition card : CardDefinitions.getNonBasicLandCards()) {
             if (cubeDefinition.isCardLegal(card)) {
                 for (int count = 4; count > 0; count--) {
                     if (acceptPossibleLandCard(card)) {

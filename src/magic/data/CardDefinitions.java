@@ -318,7 +318,7 @@ public class CardDefinitions {
         return combined;
     }
 
-    public static List<MagicCardDefinition> getLandCards() {
+    public static List<MagicCardDefinition> getNonBasicLandCards() {
         MagicSystem.waitForAllCards();
         return defaultPlayableCardDefs.stream()
             .filter(card -> card.isLand() && !card.isBasic())
