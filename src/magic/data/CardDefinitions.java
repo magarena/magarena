@@ -25,6 +25,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import magic.utility.ProgressReporter;
 import magic.utility.MagicSystem;
@@ -61,7 +62,6 @@ public class CardDefinitions {
     private static final List<MagicCardDefinition> defaultPlayableCardDefs = new ArrayList<>();
 
     private static Map<String, MagicCardDefinition> missingCards = null;
-    private static final List<MagicCardDefinition> spellCards = new ArrayList<>();
 
     private static final AtomicInteger cdefIndex = new AtomicInteger(1);
 
@@ -218,12 +218,9 @@ public class CardDefinitions {
         for (final MagicCardDefinition cardDefinition : allPlayableCardDefs.values()) {
             if (cardDefinition.isPlayable()) {
                 defaultPlayableCardDefs.add(cardDefinition);
-
-                if (cardDefinition.isLand() == false) {
-                    spellCards.add(cardDefinition);
-                }
             }
         }
+
     }
 
     public static void postCardDefinitions() {
@@ -326,7 +323,9 @@ public class CardDefinitions {
 
     public static List<MagicCardDefinition> getSpellCards() {
         MagicSystem.waitForAllCards();
-        return spellCards;
+        return defaultPlayableCardDefs.stream()
+            .filter(card -> !card.isLand())
+            .collect(Collectors.toList());
     }
 
     private static void printStatistics() {
