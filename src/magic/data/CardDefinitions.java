@@ -281,8 +281,7 @@ public class CardDefinitions {
     }
 
     private static Stream<MagicCardDefinition> getDefaultPlayableCardDefStream() {
-        MagicSystem.waitForAllCards();
-        return allPlayableCardDefs.values().stream()
+        return getAllPlayableCardDefs().stream()
             .filter(card -> card.isPlayable());
     }
 
@@ -314,13 +313,11 @@ public class CardDefinitions {
     }
 
     public static Stream<MagicCardDefinition> getNonBasicLandCards() {
-        MagicSystem.waitForAllCards();
         return getDefaultPlayableCardDefStream()
             .filter(card -> card.isLand() && !card.isBasic());
     }
 
     public static List<MagicCardDefinition> getSpellCards() {
-        MagicSystem.waitForAllCards();
         return getDefaultPlayableCardDefStream()
             .filter(card -> !card.isLand())
             .collect(Collectors.toList());
