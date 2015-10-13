@@ -504,7 +504,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
             : cardPool.stream().filter(c -> filter(c));
     }
 
-    public List<MagicCardDefinition> getCardDefinitions() {
+    public List<MagicCardDefinition> getFilteredCards() {
         final List<MagicCardDefinition> filteredList = getFilteredStream().collect(Collectors.toList());
         updateCardTotals(filteredList);
         return filteredList;

@@ -91,7 +91,7 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
 
     private Container getMainContentContainer() {
 
-        cardPoolDefs = filterPanel.getCardDefinitions();
+        cardPoolDefs = filterPanel.getFilteredCards();
 
         cardPoolTable = new CardTable(cardPoolDefs, generatePoolTitle(), false);
         cardPoolTable.addMouseListener(new CardPoolMouseListener());
@@ -123,7 +123,7 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
     }
 
     public void updateCardPool() {
-        cardPoolDefs = filterPanel.getCardDefinitions();
+        cardPoolDefs = filterPanel.getFilteredCards();
         cardPoolTable.setCards(cardPoolDefs);
         cardPoolTable.setTitle(generatePoolTitle());
     }
