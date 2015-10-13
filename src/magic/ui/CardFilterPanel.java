@@ -11,6 +11,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 import javax.swing.BoxLayout;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
@@ -496,31 +498,29 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         public boolean checkCard(MagicCardDefinition card, int i);
     }
 
+    private Stream<MagicCardDefinition> getFilteredStream() {
+        return listener.isDeckEditor()
+            ? cardPool.stream().filter(c -> !c.isHidden() && filter(c))
+            : cardPool.stream().filter(c -> filter(c));
+    }
+
     public List<MagicCardDefinition> getCardDefinitions() {
+        final List<MagicCardDefinition> filteredList = getFilteredStream().collect(Collectors.toList());
+        updateCardTotals(filteredList);
+        return filteredList;
+    }
 
-        final List<MagicCardDefinition> cardDefinitions = new ArrayList<>();
+    private void updateCardTotals(final List<MagicCardDefinition> cards) {
 
-        missingCards = 0;
-        playableCards = 0;
-        totalFilteredCards = 0;
+        totalFilteredCards = cards.size();
 
-        for (final MagicCardDefinition cardDef : cardPool) {
-            if (!cardDef.isHidden() || !listener.isDeckEditor()) {
-                if (filter(cardDef)) {
-                    totalFilteredCards++;
-                    cardDefinitions.add(cardDef);
-                    if (cardDef.isPlayable()) {
-                        if (cardDef.isInvalid()) {
-                            missingCards++;
-                        } else {
-                            playableCards++;
-                        }
-                    }
-                }
-            }
-        }
+        missingCards = (int) cards.stream()
+            .filter(c -> c.isPlayable() && c.isInvalid())
+            .count();
 
-        return cardDefinitions;
+        playableCards = (int) cards.stream()
+            .filter(c -> c.isPlayable() && !c.isInvalid())
+            .count();
     }
 
     public void resetFilters() {
