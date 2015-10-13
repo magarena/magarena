@@ -56,11 +56,6 @@ public class CardDefinitions {
     // Contains reference to all playable MagicCardDefinitions indexed by card name.
     private static final ConcurrentMap<String, MagicCardDefinition> allPlayableCardDefs = new ConcurrentHashMap<>();
 
-    // Only contains reference to the main MagicCardDefinition aspect of a card. This is
-    // required for functions like the Deck Editor where you should not be able to select
-    // the reverse side of a double-side card, for example.
-    private static final List<MagicCardDefinition> defaultPlayableCardDefs = new ArrayList<>();
-
     private static Map<String, MagicCardDefinition> missingCards = null;
 
     private static final AtomicInteger cdefIndex = new AtomicInteger(1);
@@ -213,13 +208,6 @@ public class CardDefinitions {
             }
         }
         reporter.setMessage("Loading cards...100%");
-        
-        // update card lists
-        for (final MagicCardDefinition cardDefinition : allPlayableCardDefs.values()) {
-            if (cardDefinition.isPlayable()) {
-                defaultPlayableCardDefs.add(cardDefinition);
-            }
-        }
 
     }
 
@@ -292,12 +280,22 @@ public class CardDefinitions {
         throw new RuntimeException("No matching basic land for MagicColor " + color);
     }
 
+    private static Stream<MagicCardDefinition> getDefaultPlayableCardDefStream() {
+        MagicSystem.waitForAllCards();
+        return allPlayableCardDefs.values().stream()
+            .filter(card -> card.isPlayable());
+    }
+
     /**
-     * Returns a list of all playable MagicCardDefinitions EXCEPT those classed as hidden.
+     * Returns a list of all playable MagicCardDefinitions except those classed as hidden.
+     * <p>
+     * Only contains reference to the main MagicCardDefinition aspect of a card. This is
+     * required for functions like the Deck Editor where you should not be able to select
+     * the reverse side of a double-side card, for example.
      */
     public static List<MagicCardDefinition> getDefaultPlayableCardDefs() {
-        MagicSystem.waitForAllCards();
-        return defaultPlayableCardDefs;
+        return getDefaultPlayableCardDefStream()
+            .collect(Collectors.toList());
     }
 
     /**
@@ -317,20 +315,20 @@ public class CardDefinitions {
 
     public static Stream<MagicCardDefinition> getNonBasicLandCards() {
         MagicSystem.waitForAllCards();
-        return defaultPlayableCardDefs.stream()
+        return getDefaultPlayableCardDefStream()
             .filter(card -> card.isLand() && !card.isBasic());
     }
 
     public static List<MagicCardDefinition> getSpellCards() {
         MagicSystem.waitForAllCards();
-        return defaultPlayableCardDefs.stream()
+        return getDefaultPlayableCardDefStream()
             .filter(card -> !card.isLand())
             .collect(Collectors.toList());
     }
 
     private static void printStatistics() {
         if (MagicSystem.showStartupStats()) {
-            final CardStatistics statistics=new CardStatistics(defaultPlayableCardDefs);
+            final CardStatistics statistics=new CardStatistics(getDefaultPlayableCardDefs());
             statistics.printStatictics(System.err);
         }
     }
