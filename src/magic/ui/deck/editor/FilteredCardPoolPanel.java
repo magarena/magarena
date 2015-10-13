@@ -36,7 +36,7 @@ class FilteredCardPoolPanel extends JPanel implements ICardFilterPanelListener {
     FilteredCardPoolPanel() {
 
         filterPanel = new CardFilterPanel(this);
-        cardPool = filterPanel.getCardDefinitions(true);
+        cardPool = filterPanel.getCardDefinitions();
         cardPoolTable = new CardTablePanel(cardPool, getCardPoolTitle());
 
         setLookAndFeel();
@@ -91,7 +91,7 @@ class FilteredCardPoolPanel extends JPanel implements ICardFilterPanelListener {
     }
 
    void refreshContent() {
-        cardPool = filterPanel.getCardDefinitions(isDeckEditor());
+        cardPool = filterPanel.getCardDefinitions();
         cardPoolTable.setCards(cardPool);
         cardPoolTable.setTitle(getCardPoolTitle());
     }

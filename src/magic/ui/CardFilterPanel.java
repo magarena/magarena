@@ -134,7 +134,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     private int totalFilteredCards = 0;
     private int playableCards = 0;
     private int missingCards = 0;
-
+    
     private boolean disableUpdate; // so when we change several filters, it doesn't update until the end
 
     public CardFilterPanel(final ICardFilterPanelListener aListener) {
@@ -490,11 +490,11 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         public boolean checkCard(MagicCardDefinition card, int i);
     }
 
-    public List<MagicCardDefinition> getCardDefinitions(final boolean isDeckEditor) {
+    public List<MagicCardDefinition> getCardDefinitions() {
 
         final List<MagicCardDefinition> cardDefinitions = new ArrayList<>();
 
-        final List<MagicCardDefinition> cards = isDeckEditor ?
+        final List<MagicCardDefinition> cards = listener.isDeckEditor() ?
                 CardDefinitions.getDefaultPlayableCardDefs() :
                 CardDefinitions.getAllCards();
 
@@ -503,7 +503,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         totalFilteredCards = 0;
 
         for (final MagicCardDefinition cardDef : cards) {
-            if (!cardDef.isHidden() || !isDeckEditor) {
+            if (!cardDef.isHidden() || !listener.isDeckEditor()) {
                 if (filter(cardDef)) {
                     totalFilteredCards++;
                     cardDefinitions.add(cardDef);
