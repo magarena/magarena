@@ -37,8 +37,9 @@ public class RandomDeckGenerator {
         }
 
         spellCards.clear();
+        final List<MagicCardDefinition> cardPool = CardDefinitions.getSpellCards();
         for (int rarity =  getMinRarity(); rarity <= getMaxRarity(); rarity++) {
-            for (final MagicCardDefinition card : CardDefinitions.getSpellCards()) {
+            for (final MagicCardDefinition card : cardPool) {
                 if (card.getRarity() >= getMinRarity() && card.getRarity() <= rarity && cubeDefinition.isCardLegal(card)) {
                     if (acceptPossibleSpellCard(card)) {
                         spellCards.add(card);
