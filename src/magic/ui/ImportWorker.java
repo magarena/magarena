@@ -1,6 +1,5 @@
 package magic.ui;
 
-import magic.translate.UiString;
 import java.io.File;
 import java.io.FileFilter;
 import java.io.IOException;
@@ -16,7 +15,9 @@ import magic.data.CardDefinitions;
 import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
+import magic.model.MagicLogger;
 import magic.model.player.PlayerProfiles;
+import magic.translate.UiString;
 import magic.utility.FileIO;
 import magic.utility.MagicFileSystem;
 import org.apache.commons.io.FileUtils;
@@ -45,9 +46,11 @@ public class ImportWorker extends SwingWorker<Void, Void> {
 
     private final Path importDataPath;
     private String progressNote = "";
+    private final MagicLogger logger;
 
     public ImportWorker(final File magarenaDirectory) {
         this.importDataPath = magarenaDirectory.toPath().resolve(MagicFileSystem.DATA_DIRECTORY_NAME);
+        logger = new MagicLogger("import", "Magarena Import Log");
     }
 
     @Override
@@ -69,12 +72,14 @@ public class ImportWorker extends SwingWorker<Void, Void> {
             get();
         } catch (InterruptedException | ExecutionException ex) {
             System.err.println(ex.getCause());
+			logger.log(ex.getCause().toString());
             setProgressNote(String.format("%s\n", UiString.get(_S1)));
         } catch (CancellationException ex) {
             // cancelled by user.
         }
         setProgressNote("");
         setProgress(0);
+		logger.writeLog();
     }
 
     /**
@@ -303,6 +308,9 @@ public class ImportWorker extends SwingWorker<Void, Void> {
             firePropertyChange("progressNote", this.progressNote, progressNote);
         }
         this.progressNote = progressNote;
+        if (!progressNote.isEmpty()) {
+            logger.log(progressNote);
+        }
     }
-
+    
 }
