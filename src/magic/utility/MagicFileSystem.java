@@ -39,7 +39,6 @@ public final class MagicFileSystem {
         CARDS("cards"),
         TOKENS("tokens");
 
-        private final GeneralConfig CONFIG = GeneralConfig.getInstance();
         private final String directoryName;
 
         private ImagesPath(final String directoryName) {
@@ -47,7 +46,7 @@ public final class MagicFileSystem {
         }
 
         public Path getPath() {
-            return CONFIG.getCardImagesPath().resolve(directoryName);
+            return GeneralConfig.getInstance().getCardImagesPath().resolve(directoryName);
         }
     }
 
@@ -78,7 +77,8 @@ public final class MagicFileSystem {
         AVATARS("avatars"),
         FIREMIND("firemind"),
         SAVED_GAMES("saved_games"),
-        TRANSLATIONS("translations")
+        TRANSLATIONS("translations"),
+        IMAGES("images")
         ;
 
         private final Path directoryPath;

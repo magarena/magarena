@@ -218,7 +218,7 @@ public class GeneralConfig {
 
     public Path getCardImagesPath() {
         if (cardImagesPath.isEmpty()) {
-            return MagicFileSystem.getDataPath();
+            return MagicFileSystem.getDataPath(MagicFileSystem.DataPath.IMAGES);
         } else {
             return Paths.get(cardImagesPath);
         }
