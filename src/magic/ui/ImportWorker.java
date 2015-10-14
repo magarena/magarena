@@ -43,6 +43,7 @@ public class ImportWorker extends SwingWorker<Void, Void> {
     private static final String _S11 = "CANCELLED";
 
     private static final String OK_STRING = String.format("%s\n", UiString.get(_S3));
+    private static final String FAIL_STRING = String.format("%s\n", UiString.get(_S1));
 
     private final Path importDataPath;
     private String progressNote = "";
@@ -73,7 +74,7 @@ public class ImportWorker extends SwingWorker<Void, Void> {
         } catch (InterruptedException | ExecutionException ex) {
             System.err.println(ex.getCause());
 			logger.log(ex.getCause().toString());
-            setProgressNote(String.format("%s\n", UiString.get(_S1)));
+            setProgressNote(FAIL_STRING);
         } catch (CancellationException ex) {
             // cancelled by user.
         }
