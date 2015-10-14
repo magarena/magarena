@@ -244,17 +244,24 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
     /**
      * Delete "duels" folder and replace with imported copy.
      */
-    private void importNewDuelConfig() throws IOException {
+    private void importNewDuelConfig() {
         setProgressNote(UiString.get(_S9));
+        boolean isOk = true;
         final String directoryName = "duels";
         final Path targetPath = MagicFileSystem.getDataPath().resolve(directoryName);
-        FileUtils.deleteDirectory(targetPath.toFile());
         final Path sourcePath = importDataPath.resolve(directoryName);
         if (sourcePath.toFile().exists()) {
-            FileUtils.copyDirectory(sourcePath.toFile(), targetPath.toFile());
+            try {
+                FileUtils.deleteDirectory(targetPath.toFile());
+                FileUtils.copyDirectory(sourcePath.toFile(), targetPath.toFile());
+            } catch (IOException ex) {
+                System.err.println(ex);
+                logger.log(ex.toString());
+                isOk = false;
+            }
             DuelConfig.getInstance().load();
         }
-        setProgressNote(OK_STRING);
+        setProgressNote(isOk ? OK_STRING : FAIL_STRING);
     }
 
     /**
