@@ -58,7 +58,7 @@ public class ImportWorker extends SwingWorker<Void, Void> {
         if (!isCancelled()) { importCustomDecks(); }
         if (!isCancelled()) { importAvatars(); }
         if (!isCancelled()) { importMods(); }
-        if (!isCancelled()) { importCardData(); }
+        if (!isCancelled()) { importCardImages(); }
         if (!isCancelled()) { updateNewCardsLog(); }
         return null;
     }
@@ -242,7 +242,7 @@ public class ImportWorker extends SwingWorker<Void, Void> {
      * Copy card images only if imported version stores them
      * in the "Magarena\cards" and "Magarena\tokens" directories.
      */
-    private void importCardData() {
+    private void importCardImages() {
 
         setProgressNote(UiString.get(_S10));
 
