@@ -2,8 +2,6 @@ package magic.ui.deck.editor;
 
 import java.awt.Cursor;
 import java.awt.event.ActionEvent;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import javax.swing.JTable;
@@ -120,57 +118,36 @@ class MainViewsPanel extends JPanel implements IDeckEditorListener {
     }
 
     private void addPropertyChangeListeners() {
-        
-        deckPanel.addPropertyChangeListener(
-                DeckPanel.CP_REMOVE_FROM_DECK,
-                new PropertyChangeListener() {
-                    @Override
-                    public void propertyChange(PropertyChangeEvent evt) {
-                        doRemoveCardFromDeck(deckPanel.getSelectedCard());
-                    }
-                });
-        deckPanel.addPropertyChangeListener(
-                DeckPanel.CP_ADD_TO_DECK,
-                new PropertyChangeListener() {
-                    @Override
-                    public void propertyChange(PropertyChangeEvent evt) {
-                        doAddCardToDeck(deckPanel.getSelectedCard());
-                    }
-                });
-        deckPanel.addPropertyChangeListener(
-                DeckPanel.CP_CARD_SELECTED,
-                new PropertyChangeListener() {
-                    @Override
-                    public void propertyChange(PropertyChangeEvent evt) {
-                        listener.cardSelected(getSelectedCard());
-                    }
-                });
 
+        // DeckPanel
+        deckPanel.addPropertyChangeListener(
+            DeckPanel.CP_REMOVE_FROM_DECK,
+            evt -> doRemoveCardFromDeck(deckPanel.getSelectedCard())
+        );
+        deckPanel.addPropertyChangeListener(
+            DeckPanel.CP_ADD_TO_DECK,
+            evt -> doAddCardToDeck(deckPanel.getSelectedCard())
+        );
+        deckPanel.addPropertyChangeListener(
+            DeckPanel.CP_CARD_SELECTED,
+            evt -> listener.cardSelected(getSelectedCard())
+        );
+
+        // CardRecallPanel
         recallPanel.addPropertyChangeListener(
-                CardRecallPanel.CP_CARD_SELECTED,
-                new PropertyChangeListener() {
-                    @Override
-                    public void propertyChange(PropertyChangeEvent evt) {
-                        listener.cardSelected(getSelectedCard());
-                    }
-                });
+            CardRecallPanel.CP_CARD_SELECTED,
+            evt -> listener.cardSelected(getSelectedCard())
+        );
         
+        // LegalityPanel
         legalityPanel.addPropertyChangeListener(
-                LegalityPanel.CP_CARD_SELECTED,
-                new PropertyChangeListener() {
-                    @Override
-                    public void propertyChange(PropertyChangeEvent evt) {
-                        deckPanel.setSelectedCard(legalityPanel.getSelectedCard());
-                    }
-                });
+            LegalityPanel.CP_CARD_SELECTED,
+            evt -> deckPanel.setSelectedCard(legalityPanel.getSelectedCard())
+        );
         legalityPanel.addPropertyChangeListener(
-                CardsLegalityPanel.CP_CARD_DCLICKED,
-                new PropertyChangeListener() {
-                    @Override
-                    public void propertyChange(PropertyChangeEvent evt) {
-                        deckPanel.setSelectedCard(legalityPanel.getSelectedCard());
-                    }
-                });
+            CardsLegalityPanel.CP_CARD_DCLICKED,
+            evt -> deckPanel.setSelectedCard(legalityPanel.getSelectedCard())
+        );
     }
 
     private void doAddCardToDeck(final MagicCardDefinition card) {
