@@ -39,6 +39,8 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
     private static final String _S8 = "- player profiles...";
     private static final String _S9 = "- new duel settings...";
     private static final String _S10 = "- card images...";
+    private static final String _S11 = "There was problem during the import process.";
+    private static final String _S12 = "Please see the following file for more details -";
 
     private static final String OK_STRING = String.format("%s\n", UiString.get(_S3));
     private static final String FAIL_STRING = String.format("%s\n", UiString.get(_S1));
@@ -89,8 +91,8 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
 
         if (!isOk) {
             ScreenController.showWarningMessage(String.format("%s\n\n%s\n%s",
-                "There was problem during the import process.",
-                "Please see the following file for more details -",
+                UiString.get(_S11),
+                UiString.get(_S12),
                 "...\\Magarena\\logs\\import.log")
             );
         }
