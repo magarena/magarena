@@ -60,7 +60,6 @@ public class ImportWorker extends SwingWorker<Void, Void> {
         if (!isCancelled()) { importMods(); }
         if (!isCancelled()) { importCardData(); }
         if (!isCancelled()) { updateNewCardsLog(); }
-//        if (!isCancelled()) { updateLowQualityCardImages(); }
         return null;
     }
 
@@ -305,46 +304,5 @@ public class ImportWorker extends SwingWorker<Void, Void> {
         }
         this.progressNote = progressNote;
     }
-
-    
-/*
-    private int doDownloadHighQualityImages(final Collection<DownloadableFile> downloadList, final Proxy proxy) throws IOException {
-        int errorCount = 0;
-        int totalCount = downloadList.size();
-        int fileCount = 0;
-        int imageSizeChangedCount = 0;
-        for (DownloadableFile downloadableFile : downloadList) {
-            try {
-                if (MagicDownload.isRemoteFileDownloadable(downloadableFile)) {
-                    imageSizeChangedCount += MagicDownload.doDownloadImageFile(downloadableFile, proxy);
-                }
-            } catch (IOException ex) {
-                final String msg = ex.toString() + " [" + downloadableFile.getFilename() + "]";
-                System.err.println(msg);
-            }
-            fileCount++;
-            if (isCancelled()) {
-                break;
-            } else {
-//                setProgress((int) (((double) fileCount / totalCount) * 100));
-            }
-
-        }
-        magic.ui.CachedImagesProvider.getInstance().clearCache();
-        return imageSizeChangedCount;
-    }
-
-    private void updateLowQualityCardImages() throws IOException {
-        if (highQualityCheckBox.isSelected()) {
-            setProgressNote("- Scanning for low quality images...");
-            final List<MagicCardDefinition> cards = MagicDownload.getLowQualityImageCards();
-            setProgressNote(cards.size() + " found.\n");
-            setProgressNote("- Downloading high quality images (if available)...");
-            final ImagesDownloadList downloads = new ImagesDownloadList(cards);
-            final int downloadCount = doDownloadHighQualityImages(downloads, GeneralConfig.getInstance().getProxy());
-            setProgressNote(downloadCount + "\n");
-        }
-    }
-*/
 
 }
