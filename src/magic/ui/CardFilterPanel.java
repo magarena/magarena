@@ -321,11 +321,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         populateCheckboxPopup("flowy, insets 2", popup, checkboxValues, newCheckboxes, newFilterButtons, hideAND);
     }
 
-    /**
-     * @param cardDefinition
-     * @return
-     */
-    private boolean filter(final MagicCardDefinition cardDefinition) {
+    private boolean isCardfiltered(final MagicCardDefinition cardDefinition) {
         // never show overlay cards
         if (cardDefinition.isOverlay()) {
             return false;
@@ -500,8 +496,8 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
 
     private Stream<MagicCardDefinition> getFilteredStream() {
         return listener.isDeckEditor()
-            ? cardPool.stream().filter(c -> !c.isHidden() && filter(c))
-            : cardPool.stream().filter(c -> filter(c));
+            ? cardPool.stream().filter(c -> !c.isHidden() && isCardfiltered(c))
+            : cardPool.stream().filter(c -> isCardfiltered(c));
     }
 
     public List<MagicCardDefinition> getFilteredCards() {
