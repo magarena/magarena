@@ -251,6 +251,7 @@ public class DeckTablePanel extends TexturedPanel {
 
     public void setDeckTable(JTable aDeckTable) {
         this.table = aDeckTable;
+        table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF); // ensures horizontal scrollbar is visible.
         scrollpane.setViewportView(table);
     }
 
