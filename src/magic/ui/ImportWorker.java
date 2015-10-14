@@ -14,7 +14,6 @@ import javax.swing.SwingWorker;
 import magic.data.CardDefinitions;
 import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
-import magic.model.MagicCardDefinition;
 import magic.model.MagicLogger;
 import magic.model.player.PlayerProfiles;
 import magic.translate.UiString;
@@ -40,7 +39,6 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
     private static final String _S8 = "- player profiles...";
     private static final String _S9 = "- new duel settings...";
     private static final String _S10 = "- card images...";
-    private static final String _S11 = "CANCELLED";
 
     private static final String OK_STRING = String.format("%s\n", UiString.get(_S3));
     private static final String FAIL_STRING = String.format("%s\n", UiString.get(_S1));
@@ -65,6 +63,7 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
         if (!isCancelled()) { importMods(); }
         if (!isCancelled()) { importCardImages(); }
         if (!isCancelled()) { updateNewCardsLog(); }
+        CachedImagesProvider.getInstance().clearCache();
         return !isFailed;
     }
 
@@ -152,7 +151,6 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
     /**
      * Merges "general.cfg" file.
      * If setting already exists then imported value takes precedence.
-     *
      */
     private void importPreferences() throws IOException {
         setProgressNote(UiString.get(_S5));
@@ -260,63 +258,61 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
     }
 
     /**
-     * Copy card images only if imported version stores them
-     * in the "Magarena\cards" and "Magarena\tokens" directories.
+     * Moves an existing images folder to the current "\Magarena\images" folder.
+     * <p>
+     * Normally this will just be a case of "renaming" the folder which will be
+     * instantaneous. However if the new location is on a different drive or
+     * filesystem then a "copy and delete" operation will be required which
+     * could take some time depending on how many image files are in the folder
+     * to be moved.
      */
+    private boolean moveImages(final String directoryName) {
+
+        boolean isOk = true;
+
+        final File imagesFolder = MagicFileSystem.getDataPath(MagicFileSystem.DataPath.IMAGES).toFile();
+
+        // pre-version 1.67: default images folder location = "\Magarena".
+        File importFolder = new File(importDataPath.toFile(), directoryName);
+        if (!importFolder.exists()) {
+            // version 1.67+: default images folder location = "\Magarena\<images>".
+            final String folderName = MagicFileSystem.DataPath.IMAGES.getPath().getFileName().toString();
+            importFolder = new File(importDataPath.resolve(folderName).toFile(), directoryName);
+        }
+
+        if (importFolder.exists()) {
+            try {
+                FileUtils.moveDirectoryToDirectory(importFolder, imagesFolder, true);
+            } catch (IOException ex) {
+                System.err.println(ex);
+                logger.log(ex.toString());
+                isOk = false;
+            }
+        }
+
+        return isOk;
+    }
+
     private void importCardImages() {
 
         setProgressNote(UiString.get(_S10));
 
-        boolean isMissingFiles = false;
-
-        if (GeneralConfig.getInstance().isCustomCardImagesPath() == false) {
-
-            final File[] oldDirs = {
-                new File(importDataPath.toFile(), MagicFileSystem.CARD_IMAGE_FOLDER),
-                new File(importDataPath.toFile(), MagicFileSystem.TOKEN_IMAGE_FOLDER)
-            };
-
-            final List<MagicCardDefinition> cards = CardDefinitions.getAllCards();
-            final double totalFiles = cards.size();
-            int loopCount = 0;
-
-            for (final MagicCardDefinition card : cards) {
-
-                //check if file is in previous version
-                for (final File oldDir : oldDirs) {
-                    final File newFile = MagicFileSystem.getCardImageFile(card);
-                    final File oldFile = new File(oldDir, newFile.getName());
-                    if (oldFile.exists()) {
-                        try {
-                            FileUtils.copyFile(oldFile, newFile);
-                            break;
-                        } catch (IOException ex) {
-                            System.err.println("Unable to copy " + oldFile);
-                        }
-                    } else {
-                        isMissingFiles = true;
-                    }
-                }
-
-                loopCount++;
-                setProgress((int) ((loopCount / totalFiles) * 100));
-
-                if (isCancelled()) {
-                    setProgressNote(String.format("%s\n", UiString.get(_S11)));
-                    return;
-                }
-
-            }
-
-            // refresh
-            magic.ui.CachedImagesProvider.getInstance().clearCache();
-
+        // skip if user-defined location. This is stored in the general.cfg file.
+        if (GeneralConfig.getInstance().isCustomCardImagesPath()) {
+            setProgressNote(OK_STRING);
+            return;
         }
 
-        GeneralConfig.getInstance().setIsMissingFiles(isMissingFiles);
+        String result = OK_STRING;
+        if (!moveImages(MagicFileSystem.TOKEN_IMAGE_FOLDER)) {
+            result = FAIL_STRING;
+        }
+        if (!moveImages(MagicFileSystem.CARD_IMAGE_FOLDER)) {
+            result = FAIL_STRING;
+        }
+        setProgressNote(result);
 
-        setProgressNote(OK_STRING);
-
+        isFailed = !OK_STRING.equals(result);
     }
 
     private void setProgressNote(final String progressNote) {
