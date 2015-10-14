@@ -27,7 +27,7 @@ import org.apache.commons.io.filefilter.FileFilterUtils;
 import org.apache.commons.io.filefilter.IOFileFilter;
 import org.apache.commons.io.filefilter.NameFileFilter;
 
-public class ImportWorker extends SwingWorker<Void, Void> {
+public class ImportWorker extends SwingWorker<Boolean, Void> {
 
     // translatable strings
     private static final String _S1 = "FAIL";
@@ -48,6 +48,7 @@ public class ImportWorker extends SwingWorker<Void, Void> {
     private final Path importDataPath;
     private String progressNote = "";
     private final MagicLogger logger;
+    private boolean isFailed = false;
 
     public ImportWorker(final File magarenaDirectory) {
         this.importDataPath = magarenaDirectory.toPath().resolve(MagicFileSystem.DATA_DIRECTORY_NAME);
@@ -55,7 +56,7 @@ public class ImportWorker extends SwingWorker<Void, Void> {
     }
 
     @Override
-    public Void doInBackground() throws IOException {
+    public Boolean doInBackground() throws IOException {
         if (!isCancelled()) { importPreferences(); }
         if (!isCancelled()) { importNewDuelConfig(); }
         if (!isCancelled()) { importPlayerProfiles(); }
@@ -64,23 +65,37 @@ public class ImportWorker extends SwingWorker<Void, Void> {
         if (!isCancelled()) { importMods(); }
         if (!isCancelled()) { importCardImages(); }
         if (!isCancelled()) { updateNewCardsLog(); }
-        return null;
+        return !isFailed;
     }
 
     @Override
     public void done() {
+
+        boolean isOk = true;
+
         try {
-            get();
+            isOk = get();
         } catch (InterruptedException | ExecutionException ex) {
             System.err.println(ex.getCause());
-			logger.log(ex.getCause().toString());
+            logger.log(ex.getCause().toString());
             setProgressNote(FAIL_STRING);
+            isOk = false;
         } catch (CancellationException ex) {
             // cancelled by user.
         }
+
         setProgressNote("");
         setProgress(0);
-		logger.writeLog();
+        logger.writeLog();
+
+        if (!isOk) {
+            ScreenController.showWarningMessage(String.format("%s\n\n%s\n%s",
+                "There was problem during the import process.",
+                "Please see the following file for more details -",
+                "...\\Magarena\\logs\\import.log")
+            );
+        }
+
     }
 
     /**
