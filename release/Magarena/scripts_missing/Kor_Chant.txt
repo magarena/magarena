@@ -1,7 +1,7 @@
 name=Kor Chant
-image=http://magiccards.info/scans/en/cns/73.jpg
+image=http://magiccards.info/scans/en/tpr/17.jpg
 value=2.500
-rarity=C
+rarity=U
 type=Instant
 cost={2}{W}
 effect=All damage that would be dealt this turn to target creature you control by a source of your choice is dealt to another target creature instead.
