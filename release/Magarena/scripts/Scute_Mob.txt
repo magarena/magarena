@@ -1,11 +1,11 @@
 name=Scute Mob
-image=http://magiccards.info/scans/en/zen/182.jpg
-value=4.134
+image=http://magiccards.info/scans/en/ddp/22.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Insect
 cost={G}
-ability=At the beginning of your upkeep, if you control five or more lands, put four +1/+1 counters on SN.
 pt=1/1
+ability=At the beginning of your upkeep, if you control five or more lands, put four +1/+1 counters on SN.
 timing=main
 oracle=At the beginning of your upkeep, if you control five or more lands, put four +1/+1 counters on Scute Mob.

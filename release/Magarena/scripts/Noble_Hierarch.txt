@@ -1,6 +1,6 @@
 name=Noble Hierarch
-image=http://magiccards.info/scans/en/cfx/87.jpg
-value=4.600
+image=http://magiccards.info/scans/en/mm2/151.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Druid

@@ -1,6 +1,6 @@
 name=Necrogenesis
-image=http://magiccards.info/scans/en/cmd/212.jpg
-value=3.000
+image=http://magiccards.info/scans/en/mm2/181.jpg
+value=2.500
 rarity=U
 type=Enchantment
 cost={B}{G}

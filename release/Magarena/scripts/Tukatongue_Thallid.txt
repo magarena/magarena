@@ -1,6 +1,6 @@
 name=Tukatongue Thallid
-image=http://magiccards.info/scans/en/pc2/79.jpg
-value=2.931
+image=http://magiccards.info/scans/en/mm2/167.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Fungus

@@ -1,6 +1,6 @@
 name=Moonlit Strider
-image=http://magiccards.info/scans/en/bok/16.jpg
-value=2.278
+image=http://magiccards.info/scans/en/mm2/27.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Spirit

@@ -1,12 +1,12 @@
 name=Somber Hoverguard
-image=http://magiccards.info/scans/en/mi/51.jpg
-value=3.694
+image=http://magiccards.info/scans/en/mm2/57.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Drone
 cost={5}{U}
 pt=3/2
-ability=Affinity for artifacts.;\
+ability=Affinity for artifacts;\
         Flying
 timing=main
 oracle=Affinity for artifacts\nFlying

@@ -1,7 +1,7 @@
 name=Apocalypse Hydra
-image=http://magiccards.info/scans/en/cfx/98.jpg
-value=3.901
-rarity=M
+image=http://magiccards.info/scans/en/mm2/171.jpg
+value=2.500
+rarity=R
 type=Creature
 subtype=Hydra
 cost={X}{R}{G}

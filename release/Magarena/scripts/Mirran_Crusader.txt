@@ -1,11 +1,11 @@
 name=Mirran Crusader
-image=http://magiccards.info/scans/en/mbs/14.jpg
-value=4.054
+image=http://magiccards.info/scans/en/mm2/25.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Knight
 cost={1}{W}{W}
 pt=2/2
-ability=double strike;protection from black;protection from green
+ability=Double strike, protection from black, protection from green
 timing=main
 oracle=Double strike, protection from black and from green

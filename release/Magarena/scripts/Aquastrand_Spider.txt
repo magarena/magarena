@@ -1,6 +1,6 @@
 name=Aquastrand Spider
-image=http://magiccards.info/scans/en/cmd/141.jpg
-value=2.741
+image=http://magiccards.info/scans/en/mm2/140.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Spider,Mutant

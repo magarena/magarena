@@ -1,6 +1,6 @@
 name=Waking Nightmare
-image=http://magiccards.info/scans/en/chk/149.jpg
-value=3.306
+image=http://magiccards.info/scans/en/mm2/103.jpg
+value=2.500
 rarity=C
 type=Sorcery
 subtype=Arcane

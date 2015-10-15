@@ -1,7 +1,7 @@
 name=Rusted Relic
-image=http://magiccards.info/scans/en/som/199.jpg
-value=3.243
-rarity=U
+image=http://magiccards.info/scans/en/mm2/227.jpg
+value=2.500
+rarity=C
 type=Artifact
 cost={4}
 timing=artifact

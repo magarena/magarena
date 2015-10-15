@@ -1,10 +1,9 @@
 name=Lightning Bolt
-image=http://magiccards.info/scans/en/m11/149.jpg
-value=4.603
-removal=3
-rarity=C
+image=http://magiccards.info/scans/en/mm2/122.jpg
+value=2.500
+rarity=U
 type=Instant
 cost={R}
-timing=removal
 effect=SN deals 3 damage to target creature or player.
+timing=removal
 oracle=Lightning Bolt deals 3 damage to target creature or player.

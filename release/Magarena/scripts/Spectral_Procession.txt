@@ -1,6 +1,6 @@
 name=Spectral Procession
-image=http://magiccards.info/scans/en/c14/90.jpg
-value=3.611
+image=http://magiccards.info/scans/en/mm2/33.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={2/W}{2/W}{2/W}

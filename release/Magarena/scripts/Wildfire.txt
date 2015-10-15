@@ -1,6 +1,6 @@
 name=Wildfire
-image=http://magiccards.info/scans/en/9e/228.jpg
-value=4.029
+image=http://magiccards.info/scans/en/mm2/134.jpg
+value=2.500
 rarity=R
 type=Sorcery
 cost={4}{R}{R}

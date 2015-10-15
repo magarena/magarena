@@ -1,7 +1,6 @@
 name=Ulamog, the Infinite Gyre
-image=http://magiccards.info/scans/en/roe/12.jpg
-value=4.093
-removal=3
+image=http://magiccards.info/scans/en/mm2/6.jpg
+value=2.500
 rarity=M
 type=Legendary,Creature
 subtype=Eldrazi

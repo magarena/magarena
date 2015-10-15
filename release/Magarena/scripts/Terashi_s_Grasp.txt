@@ -1,7 +1,7 @@
 name=Terashi's Grasp
-image=http://magiccards.info/scans/en/mma/32.jpg
-value=3.867
-rarity=U
+image=http://magiccards.info/scans/en/mm2/37.jpg
+value=2.500
+rarity=C
 type=Sorcery
 subtype=Arcane
 cost={2}{W}

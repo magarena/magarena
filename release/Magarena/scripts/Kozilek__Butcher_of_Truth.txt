@@ -1,12 +1,12 @@
 name=Kozilek, Butcher of Truth
-image=http://magiccards.info/scans/en/roe/6.jpg
-value=4.398
+image=http://magiccards.info/scans/en/mm2/5.jpg
+value=2.500
 rarity=M
 type=Legendary,Creature
 subtype=Eldrazi
 cost={10}
 pt=12/12
-ability=annihilator 4;\
+ability=Annihilator 4;\
         When SN is put into a graveyard from anywhere, its owner shuffles his or her graveyard into his or her library.
 timing=main
 requires_groovy_code

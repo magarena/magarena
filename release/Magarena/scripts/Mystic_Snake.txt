@@ -1,12 +1,12 @@
 name=Mystic Snake
 image=http://magiccards.info/scans/en/tsts/97.jpg
-value=4.375
+value=2.500
 rarity=R
 type=Creature
 subtype=Snake
 cost={1}{G}{U}{U}
 pt=2/2
-ability=flash;\
+ability=Flash;\
         When SN enters the battlefield, counter target spell.
 timing=counterflash
 oracle=Flash\nWhen Mystic Snake enters the battlefield, counter target spell.

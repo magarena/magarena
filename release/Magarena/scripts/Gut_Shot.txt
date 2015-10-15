@@ -1,8 +1,7 @@
 name=Gut Shot
-image=http://magiccards.info/scans/en/nph/86.jpg
-value=3.901
-removal=1
-rarity=U
+image=http://magiccards.info/scans/en/mm2/117.jpg
+value=2.500
+rarity=C
 type=Instant
 cost={R/P}
 ability=alt cost Pay 2 life named Pay 2 life

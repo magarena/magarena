@@ -1,7 +1,7 @@
 name=Tarmogoyf
-image=http://magiccards.info/scans/en/mma/166.jpg
-value=4.420
-rarity=R
+image=http://magiccards.info/scans/en/mm2/165.jpg
+value=2.500
+rarity=M
 type=Creature
 subtype=Lhurgoyf
 cost={1}{G}

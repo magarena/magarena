@@ -1,12 +1,12 @@
 name=Shadowmage Infiltrator
 image=http://magiccards.info/scans/en/tsts/99.jpg
-value=4.357
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Wizard
 cost={1}{U}{B}
 pt=1/3
-ability=fear;\
+ability=Fear;\
         Whenever SN deals combat damage to a player, you may draw a card.
 timing=main
 oracle=Fear\nWhenever Shadowmage Infiltrator deals combat damage to a player, you may draw a card.

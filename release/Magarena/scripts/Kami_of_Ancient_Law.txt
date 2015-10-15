@@ -1,11 +1,11 @@
 name=Kami of Ancient Law
-image=http://magiccards.info/scans/en/chk/21.jpg
-value=4.317
+image=http://magiccards.info/scans/en/mm2/21.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Spirit
 cost={1}{W}
 pt=2/2
-ability=Sacrifice SN:Destroy target enchantment.
+ability=Sacrifice SN: Destroy target enchantment.
 timing=main
 oracle=Sacrifice Kami of Ancient Law: Destroy target enchantment.

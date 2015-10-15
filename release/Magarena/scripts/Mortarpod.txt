@@ -1,6 +1,6 @@
 name=Mortarpod
-image=http://magiccards.info/scans/en/mbs/115.jpg
-value=3.990
+image=http://magiccards.info/scans/en/mm2/222.jpg
+value=2.500
 rarity=U
 type=Artifact
 subtype=Equipment
