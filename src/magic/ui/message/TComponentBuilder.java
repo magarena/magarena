@@ -19,6 +19,7 @@ class TComponentBuilder {
     private static JComponent container;
     private static Font defaultFont;
     private static Color choiceColor;
+    private static Color interactiveColor;
     private static List<TComponent> components;
 
     static void buildTComponents(
@@ -26,12 +27,14 @@ class TComponentBuilder {
         final String source,
         final JComponent aContainer,
         final Font aFont,
-        final Color aColor) {
+        final Color aColor,
+        final Color interactiveColor) {
 
         TComponentBuilder.components = components;
         TComponentBuilder.container = aContainer;
         TComponentBuilder.defaultFont = aFont;
         TComponentBuilder.choiceColor = aColor;
+        TComponentBuilder.interactiveColor = interactiveColor;
 
         final String msg = replaceWhitespace(source, " ") + ' ';
 
@@ -173,7 +176,8 @@ class TComponentBuilder {
             isTinyFont ? FontsAndBorders.FONT0 : defaultFont,
             isChoice,
             aCardInfo,
-            choiceColor
+            choiceColor,
+            TComponentBuilder.interactiveColor
         );
     }
 

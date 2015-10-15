@@ -53,10 +53,13 @@ public class TextLabel extends JPanel {
         setOpaque(false);
         setLayout(null);
 
-        TComponentBuilder.buildTComponents(components, text, this, aFont, aColor);
+        final boolean isUserPromptText = controller == null;
+        final Color interactiveColor = isUserPromptText ? Color.BLACK : Color.BLUE;
+
+        TComponentBuilder.buildTComponents(components, text, this, aFont, aColor, interactiveColor);
         layoutTComponents();
 
-        if (controller != null) {
+        if (!isUserPromptText) {
             setMouseListeners();
         }
     }
