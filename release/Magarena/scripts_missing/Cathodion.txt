@@ -1,11 +1,11 @@
 name=Cathodion
-image=http://magiccards.info/scans/en/c14/234.jpg
+image=http://magiccards.info/scans/en/mm2/203.jpg
 value=2.500
-rarity=U
+rarity=C
 type=Artifact,Creature
 subtype=Construct
 cost={3}
 pt=3/3
 ability=When SN dies, add {3} to your mana pool.
-timing=artifact
+timing=main
 oracle=When Cathodion dies, add {3} to your mana pool.

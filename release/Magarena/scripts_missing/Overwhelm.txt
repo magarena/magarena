@@ -1,5 +1,5 @@
 name=Overwhelm
-image=http://magiccards.info/scans/en/m15/189.jpg
+image=http://magiccards.info/scans/en/mm2/152.jpg
 value=2.500
 rarity=U
 type=Sorcery

@@ -1,5 +1,5 @@
 name=Tezzeret the Seeker
-image=http://magiccards.info/scans/en/ddf/39.jpg
+image=http://magiccards.info/scans/en/mm2/62.jpg
 value=2.500
 rarity=M
 type=Planeswalker
