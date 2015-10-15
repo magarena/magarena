@@ -1,5 +1,5 @@
 name=Sheer Drop
-image=http://mythicspoiler.com/bfz/cards/sheerdrop.jpg
+image=http://magiccards.info/scans/en/bfz/48.jpg
 value=2.500
 removal=3
 rarity=C

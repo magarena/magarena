@@ -1,5 +1,5 @@
 name=Mountain
-image=http://magiccards.info/scans/en/zen/242.jpg
+image=http://magiccards.info/scans/en/bfz/269.jpg
 value=3.500
 rarity=B
 type=Basic,Land

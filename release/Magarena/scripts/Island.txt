@@ -1,5 +1,5 @@
 name=Island
-image=http://magiccards.info/scans/en/zen/234.jpg
+image=http://magiccards.info/scans/en/bfz/259.jpg
 value=3.500
 rarity=B
 type=Basic,Land
