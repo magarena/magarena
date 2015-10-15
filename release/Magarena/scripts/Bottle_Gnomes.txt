@@ -1,7 +1,7 @@
 name=Bottle Gnomes
-image=http://magiccards.info/scans/en/c14/231.jpg
-value=4.077
-rarity=U
+image=http://magiccards.info/scans/en/tpr/217.jpg
+value=2.500
+rarity=C
 type=Artifact,Creature
 subtype=Gnome
 cost={3}

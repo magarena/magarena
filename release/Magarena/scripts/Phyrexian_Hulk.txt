@@ -1,6 +1,6 @@
 name=Phyrexian Hulk
-image=http://magiccards.info/scans/en/m13/209.jpg
-value=1.844
+image=http://magiccards.info/scans/en/tpr/230.jpg
+value=2.500
 rarity=U
 type=Artifact,Creature
 subtype=Golem

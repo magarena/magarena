@@ -1,6 +1,6 @@
 name=Erratic Portal
-image=http://magiccards.info/scans/en/ex/132.jpg
-value=4.212
+image=http://magiccards.info/scans/en/tpr/222.jpg
+value=2.500
 rarity=R
 type=Artifact
 cost={4}

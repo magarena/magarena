@@ -1,9 +1,9 @@
 name=Emmessi Tome
-image=http://magiccards.info/scans/en/tp/274.jpg
-value=1.595
-rarity=R
+image=http://magiccards.info/scans/en/tpr/221.jpg
+value=2.500
+rarity=U
 type=Artifact
 cost={4}
-ability={5},{T}:Draw two cards, then discard a card.
+ability={5}, {T}: Draw two cards, then discard a card.
 timing=artifact
 oracle={5}, {T}: Draw two cards, then discard a card.

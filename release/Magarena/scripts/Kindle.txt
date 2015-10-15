@@ -1,6 +1,6 @@
 name=Kindle
-image=http://magiccards.info/scans/en/vma/176.jpg
-value=3.500
+image=http://magiccards.info/scans/en/tpr/137.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{R}

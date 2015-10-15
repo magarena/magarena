@@ -1,7 +1,7 @@
 name=Scabland
-image=http://magiccards.info/scans/en/vma/312.jpg
-value=2.600
-rarity=R
+image=http://magiccards.info/scans/en/tpr/243.jpg
+value=2.500
+rarity=U
 type=Land
 mana=w2r2
 ability=SN enters the battlefield tapped.;\

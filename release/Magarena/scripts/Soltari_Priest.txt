@@ -1,11 +1,12 @@
 name=Soltari Priest
-image=http://magiccards.info/scans/en/tsts/14.jpg
-value=4.329
+image=http://magiccards.info/scans/en/tpr/32.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Soltari,Cleric
 cost={W}{W}
 pt=2/1
-ability=shadow;protection from red
+ability=Protection from red;\
+        Shadow
 timing=main
 oracle=Protection from red\nShadow

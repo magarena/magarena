@@ -1,11 +1,11 @@
 name=Paladin en-Vec
-image=http://magiccards.info/scans/en/10e/32.jpg
-value=4.280
+image=http://magiccards.info/scans/en/tpr/23.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Human,Knight
 cost={1}{W}{W}
 pt=2/2
-ability=first strike;protection from black;protection from red
+ability=First strike, protection from black, protection from red
 timing=main
 oracle=First strike, protection from black and from red

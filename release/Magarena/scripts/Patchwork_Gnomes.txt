@@ -1,11 +1,11 @@
 name=Patchwork Gnomes
-image=http://magiccards.info/scans/en/od/306.jpg
-value=2.636
-rarity=U
+image=http://magiccards.info/scans/en/tpr/229.jpg
+value=2.500
+rarity=C
 type=Artifact,Creature
 subtype=Gnome
 cost={3}
 pt=2/1
 ability=Discard a card: Regenerate SN.
-timing=artifact
+timing=main
 oracle=Discard a card: Regenerate Patchwork Gnomes.

@@ -1,6 +1,6 @@
 name=Verdant Force
-image=http://magiccards.info/scans/en/pch/81.jpg
-value=4.083
+image=http://magiccards.info/scans/en/tpr/202.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Elemental

@@ -1,11 +1,12 @@
 name=Dungeon Shade
-image=http://magiccards.info/scans/en/sh/8.jpg
-value=3.534
+image=http://magiccards.info/scans/en/tpr/103.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Shade,Spirit
 cost={3}{B}
 pt=1/1
-ability=flying;{B}: SN gets +1/+1 until end of turn.
+ability=Flying;\
+        {B}: SN gets +1/+1 until end of turn.
 timing=main
 oracle=Flying\n{B}: Dungeon Shade gets +1/+1 until end of turn.

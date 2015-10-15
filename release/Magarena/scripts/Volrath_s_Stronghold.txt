@@ -1,7 +1,7 @@
 name=Volrath's Stronghold
-image=http://magiccards.info/scans/en/sh/137.jpg
-value=4.453
-rarity=R
+image=http://magiccards.info/scans/en/tpr/248.jpg
+value=2.500
+rarity=M
 type=Legendary,Land
 ability={T}: Add {1} to your mana pool.;\
         {1}{B}, {T}: Put target creature card from your graveyard on top of your library.

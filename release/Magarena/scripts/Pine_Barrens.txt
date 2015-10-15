@@ -1,7 +1,7 @@
 name=Pine Barrens
-image=http://magiccards.info/scans/en/vma/307.jpg
-value=2.456
-rarity=R
+image=http://magiccards.info/scans/en/tpr/240.jpg
+value=2.500
+rarity=U
 type=Land
 mana=b2g2
 ability=SN enters the battlefield tapped.;\

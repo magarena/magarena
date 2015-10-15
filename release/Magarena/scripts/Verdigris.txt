@@ -1,9 +1,9 @@
 name=Verdigris
-image=http://magiccards.info/scans/en/tp/158.jpg
-value=1.419
-rarity=U
+image=http://magiccards.info/scans/en/tpr/204.jpg
+value=2.500
+rarity=C
 type=Instant
 cost={2}{G}
-timing=removal
 effect=Destroy target artifact.
+timing=removal
 oracle=Destroy target artifact.

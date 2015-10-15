@@ -1,12 +1,12 @@
 name=Soltari Lancer
-image=http://magiccards.info/scans/en/tp/256.jpg
-value=3.453
+image=http://magiccards.info/scans/en/tpr/30.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Soltari,Knight
 cost={2}{W}
 pt=2/2
-ability=shadow;\
+ability=Shadow;\
         SN has first strike as long as it's attacking.
 timing=main
 oracle=Shadow\nSoltari Lancer has first strike as long as it's attacking.

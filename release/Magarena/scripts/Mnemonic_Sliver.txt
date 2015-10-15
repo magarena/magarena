@@ -1,12 +1,11 @@
 name=Mnemonic Sliver
-image=http://magiccards.info/scans/en/tp/77.jpg
-value=3.208
-rarity=U
+image=http://magiccards.info/scans/en/tpr/62.jpg
+value=2.500
+rarity=C
 type=Creature
 subtype=Sliver
 cost={2}{U}
 pt=2/2
-ability=all slivers have "{2},Sacrifice SN: Draw a card."
-static=all
+ability=All Slivers have "{2}, Sacrifice this permanent: Draw a card."
 timing=main
 oracle=All Slivers have "{2}, Sacrifice this permanent: Draw a card."

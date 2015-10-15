@@ -1,12 +1,11 @@
 name=Barbed Sliver
-image=http://magiccards.info/scans/en/tp/163.jpg
-value=2.393
-rarity=U
+image=http://magiccards.info/scans/en/tpr/126.jpg
+value=2.500
+rarity=C
 type=Creature
 subtype=Sliver
 cost={2}{R}
 pt=2/2
-ability=all Sliver creatures have "{2}: SN gets +1/+0 until end of turn."
+ability=All Sliver creatures have "{2}: This creature gets +1/+0 until end of turn."
 timing=main
-static=all
 oracle=All Sliver creatures have "{2}: This creature gets +1/+0 until end of turn."

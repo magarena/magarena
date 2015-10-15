@@ -1,12 +1,11 @@
 name=Clot Sliver
-image=http://magiccards.info/scans/en/tp/6.jpg
-value=3.812
+image=http://magiccards.info/scans/en/tpr/85.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Sliver
 cost={1}{B}
 pt=1/1
-static=all
-ability=all Slivers have "{2}: Regenerate SN."
+ability=All Slivers have "{2}: Regenerate this permanent."
 timing=main
 oracle=All Slivers have "{2}: Regenerate this permanent."

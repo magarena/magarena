@@ -1,11 +1,11 @@
 name=Mirri, Cat Warrior
-image=http://magiccards.info/scans/en/10e/279.jpg
-value=4.226
+image=http://magiccards.info/scans/en/tpr/180.jpg
+value=2.500
 rarity=R
 type=Legendary,Creature
 subtype=Cat,Warrior
 cost={1}{G}{G}
 pt=2/3
-ability=first strike;forestwalk;vigilance
+ability=First strike, forestwalk, vigilance
 timing=main
 oracle=First strike, forestwalk, vigilance

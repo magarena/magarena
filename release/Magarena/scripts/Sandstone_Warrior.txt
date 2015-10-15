@@ -1,11 +1,12 @@
 name=Sandstone Warrior
-image=http://magiccards.info/scans/en/9e/215.jpg
-value=3.355
+image=http://magiccards.info/scans/en/tpr/154.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Human,Soldier,Warrior
 cost={2}{R}{R}
 pt=1/3
-ability=first strike;{R}: SN gets +1/+0 until end of turn.
+ability=First strike;\
+        {R}: SN gets +1/+0 until end of turn.
 timing=main
 oracle=First strike\n{R}: Sandstone Warrior gets +1/+0 until end of turn.

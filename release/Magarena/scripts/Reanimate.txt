@@ -1,6 +1,6 @@
 name=Reanimate
-image=http://magiccards.info/scans/en/vma/136.jpg
-value=4.667
+image=http://magiccards.info/scans/en/tpr/112.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={B}

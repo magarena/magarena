@@ -1,12 +1,12 @@
 name=Thalakos Seer
-image=http://magiccards.info/scans/en/tp/94.jpg
-value=3.830
+image=http://magiccards.info/scans/en/tpr/72.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Thalakos,Wizard
 cost={U}{U}
 pt=1/1
-ability=shadow;\
+ability=Shadow;\
         When SN leaves the battlefield, draw a card.
 timing=main
 oracle=Shadow\nWhen Thalakos Seer leaves the battlefield, draw a card.

@@ -1,6 +1,6 @@
 name=Gallantry
-image=http://magiccards.info/scans/en/od/23.jpg
-value=3.196
+image=http://magiccards.info/scans/en/tpr/14.jpg
+value=2.500
 rarity=U
 type=Instant
 cost={1}{W}

@@ -1,7 +1,7 @@
 name=Forbid
-image=http://magiccards.info/scans/en/ex/35.jpg
-value=4.425
-rarity=U
+image=http://magiccards.info/scans/en/tpr/50.jpg
+value=2.500
+rarity=R
 type=Instant
 cost={1}{U}{U}
 ability=Buyback—Discard two cards.
