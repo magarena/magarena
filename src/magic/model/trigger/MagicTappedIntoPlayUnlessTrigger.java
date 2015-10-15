@@ -3,7 +3,6 @@ package magic.model.trigger;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
 import magic.model.action.TapAction;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicEvent;
@@ -14,17 +13,17 @@ public class MagicTappedIntoPlayUnlessTrigger extends MagicWhenComesIntoPlayTrig
 
     public MagicTappedIntoPlayUnlessTrigger(final MagicCondition condition) {
         super(MagicTrigger.REPLACEMENT);
-        this.condition=condition;
+        this.condition = condition;
     }
 
     @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
+    public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
         return condition.accept(permanent) ?
             new MagicEvent(
                 permanent,
                 this,
                 "SN enters the battlefield tapped."
-            ):
+            ) :
             MagicEvent.NONE;
     }
 
