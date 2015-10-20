@@ -46,7 +46,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
     }
 
     protected MagicStatic(final MagicLayer aLayer, final MagicTargetFilter<MagicPermanent> aFilter) {
-        this(aLayer, aFilter, false);
+        this(aLayer, aFilter, Forever);
     }
 
     protected MagicStatic(final MagicLayer aLayer, final boolean aIsUntilEOT) {
