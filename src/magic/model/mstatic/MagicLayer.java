@@ -10,6 +10,7 @@ public enum MagicLayer {
     CDAColor,    //5a. CDA color
     Color,       //5b. color changing
     Ability,     //6.  ability adding/removing
+    AbilityCond, //6b. ability adding/removing that depends on condition
     CDAPT,       //7a. CDA p/t
     SetPT,       //7b. set p/t to specific value
     ModPT,       //7c. modify p/t

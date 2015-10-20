@@ -498,6 +498,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
                 cachedColorFlags = mstatic.getColorFlags(this, cachedColorFlags);
                 break;
             case Ability:
+            case AbilityCond:
                 mstatic.modAbilityFlags(source, this, cachedAbilityFlags);
                 break;
             case SetPT:
