@@ -92,7 +92,7 @@ public class FiremindClient {
 
     private static void saveScriptFile(String name, String extension, String content){
         MagicFileSystem.getDataPath(DataPath.SCRIPTS_ORIG).toFile().mkdirs();
-        File scriptsDirectory = MagicFileSystem.getDataPath(DataPath.SCRIPTS_ORIG).toFile();
+        File scriptsDirectory = MagicFileSystem.getDataPath(DataPath.SCRIPTS).toFile();
         File scriptOrigsDirectory = MagicFileSystem.getDataPath(DataPath.SCRIPTS_ORIG).toFile();
         String filename = CardDefinitions.getCanonicalName(name)+"."+extension;
         File f = new File(scriptsDirectory.getAbsolutePath()+"/"+filename);
