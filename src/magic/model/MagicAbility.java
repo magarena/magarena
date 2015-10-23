@@ -544,16 +544,10 @@ public enum MagicAbility {
             }
         }
     },
-    EntersTappedUnlessTwo("SN enters the battlefield tapped unless you control two or fewer other lands\\.", -10) {
+    EntersTappedUnless("SN enters the battlefield tapped unless "+ARG.COND+"\\.", -10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicTappedIntoPlayUnlessTwoTrigger.create());
-        }
-    },
-    EntersTappedUnless("SN enters the battlefield tapped unless you control a(n)? " + ARG.WORD1 + " or a(n)? " + ARG.WORD2 + "\\.", -10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            final MagicSubType t1 = MagicSubType.getSubType(ARG.word1(arg));
-            final MagicSubType t2 = MagicSubType.getSubType(ARG.word2(arg));
-            card.add(new MagicTappedIntoPlayUnlessTrigger(t1,t2));
+            final MagicCondition condition = MagicConditionParser.build(ARG.cond(arg));
+            card.add(new MagicTappedIntoPlayUnlessTrigger(MagicConditionFactory.Unless(condition)));
         }
     },
     WhenMonstrous("When SN becomes monstrous, " + ARG.EFFECT, 0) {

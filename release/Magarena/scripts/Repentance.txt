@@ -1,6 +1,6 @@
 name=Repentance
-image=http://magiccards.info/scans/en/tp/249.jpg
-value=3.905
+image=http://magiccards.info/scans/en/tpr/25.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={2}{W}

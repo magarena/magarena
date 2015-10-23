@@ -1,7 +1,7 @@
 name=Lowland Basilisk
-image=http://magiccards.info/scans/en/sh/59.jpg
-value=3.145
-rarity=C
+image=http://magiccards.info/scans/en/tpr/178.jpg
+value=2.500
+rarity=U
 type=Creature
 subtype=Basilisk
 cost={2}{G}

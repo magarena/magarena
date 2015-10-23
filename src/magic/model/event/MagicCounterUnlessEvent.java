@@ -3,6 +3,7 @@ package magic.model.event;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
+import magic.model.MagicMessage;
 import magic.model.MagicSource;
 import magic.model.action.CounterItemOnStackAction;
 import magic.model.choice.MagicMayChoice;
@@ -35,8 +36,10 @@ public class MagicCounterUnlessEvent extends MagicEvent {
                     }
                 }
             },
-            "You may$ pay "+cost.getText()+"$. " +
-            "If you don't, counter "+itemOnStack.getName()+"."
+            String.format("You may$ pay %s$. If you don't, counter %s.",
+                cost.getText(),
+                MagicMessage.getCardToken(itemOnStack)
+            )
         );
     }
 }

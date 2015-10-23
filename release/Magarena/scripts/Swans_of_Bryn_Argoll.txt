@@ -1,6 +1,6 @@
 name=Swans of Bryn Argoll
-image=http://magiccards.info/scans/en/shm/151.jpg
-value=4.154
+image=http://magiccards.info/scans/en/mm2/199.jpg
+value=2.500
 rarity=R
 type=Creature
 subtype=Bird,Spirit

@@ -1,6 +1,6 @@
 name=Sylvan Bounty
-image=http://magiccards.info/scans/en/mma/165.jpg
-value=1.444
+image=http://magiccards.info/scans/en/mm2/164.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={5}{G}

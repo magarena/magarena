@@ -1,6 +1,6 @@
 name=Reality Anchor
-image=http://magiccards.info/scans/en/tp/140.jpg
-value=1.737
+image=http://magiccards.info/scans/en/tpr/188.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{G}

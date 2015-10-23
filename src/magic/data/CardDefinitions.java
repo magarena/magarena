@@ -25,6 +25,8 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 import magic.utility.ProgressReporter;
 import magic.utility.MagicSystem;
 import magic.model.MagicCardDefinition;
@@ -54,14 +56,7 @@ public class CardDefinitions {
     // Contains reference to all playable MagicCardDefinitions indexed by card name.
     private static final ConcurrentMap<String, MagicCardDefinition> allPlayableCardDefs = new ConcurrentHashMap<>();
 
-    // Only contains reference to the main MagicCardDefinition aspect of a card. This is
-    // required for functions like the Deck Editor where you should not be able to select
-    // the reverse side of a double-side card, for example.
-    private static final List<MagicCardDefinition> defaultPlayableCardDefs = new ArrayList<>();
-
     private static Map<String, MagicCardDefinition> missingCards = null;
-    private static final List<MagicCardDefinition> landCards = new ArrayList<>();
-    private static final List<MagicCardDefinition> spellCards = new ArrayList<>();
 
     private static final AtomicInteger cdefIndex = new AtomicInteger(1);
 
@@ -213,19 +208,7 @@ public class CardDefinitions {
             }
         }
         reporter.setMessage("Loading cards...100%");
-        
-        // update card lists
-        for (final MagicCardDefinition cardDefinition : allPlayableCardDefs.values()) {
-            if (cardDefinition.isPlayable()) {
-                defaultPlayableCardDefs.add(cardDefinition);
 
-                if (cardDefinition.isLand() == false) {
-                    spellCards.add(cardDefinition);
-                } else if (cardDefinition.isBasic() == false) {
-                    landCards.add(cardDefinition);
-                }
-            }
-        }
     }
 
     public static void postCardDefinitions() {
@@ -297,12 +280,21 @@ public class CardDefinitions {
         throw new RuntimeException("No matching basic land for MagicColor " + color);
     }
 
+    private static Stream<MagicCardDefinition> getDefaultPlayableCardDefStream() {
+        return getAllPlayableCardDefs().stream()
+            .filter(card -> card.isPlayable());
+    }
+
     /**
-     * Returns a list of all playable MagicCardDefinitions EXCEPT those classed as hidden.
+     * Returns a list of all playable MagicCardDefinitions except those classed as hidden.
+     * <p>
+     * Only contains reference to the main MagicCardDefinition aspect of a card. This is
+     * required for functions like the Deck Editor where you should not be able to select
+     * the reverse side of a double-side card, for example.
      */
     public static List<MagicCardDefinition> getDefaultPlayableCardDefs() {
-        MagicSystem.waitForAllCards();
-        return defaultPlayableCardDefs;
+        return getDefaultPlayableCardDefStream()
+            .collect(Collectors.toList());
     }
 
     /**
@@ -320,19 +312,20 @@ public class CardDefinitions {
         return combined;
     }
 
-    public static List<MagicCardDefinition> getLandCards() {
-        MagicSystem.waitForAllCards();
-        return landCards;
+    public static Stream<MagicCardDefinition> getNonBasicLandCards() {
+        return getDefaultPlayableCardDefStream()
+            .filter(card -> card.isLand() && !card.isBasic());
     }
 
     public static List<MagicCardDefinition> getSpellCards() {
-        MagicSystem.waitForAllCards();
-        return spellCards;
+        return getDefaultPlayableCardDefStream()
+            .filter(card -> !card.isLand())
+            .collect(Collectors.toList());
     }
 
     private static void printStatistics() {
         if (MagicSystem.showStartupStats()) {
-            final CardStatistics statistics=new CardStatistics(defaultPlayableCardDefs);
+            final CardStatistics statistics=new CardStatistics(getDefaultPlayableCardDefs());
             statistics.printStatictics(System.err);
         }
     }

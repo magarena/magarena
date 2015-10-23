@@ -3,32 +3,27 @@ package magic.model.trigger;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.MagicSubType;
 import magic.model.action.TapAction;
+import magic.model.condition.MagicCondition;
 import magic.model.event.MagicEvent;
 
 public class MagicTappedIntoPlayUnlessTrigger extends MagicWhenComesIntoPlayTrigger {
 
-    private final MagicSubType subType1;
-    private final MagicSubType subType2;
+    private final MagicCondition condition;
 
-    public MagicTappedIntoPlayUnlessTrigger(final MagicSubType subType1,final MagicSubType subType2) {
+    public MagicTappedIntoPlayUnlessTrigger(final MagicCondition condition) {
         super(MagicTrigger.REPLACEMENT);
-        this.subType1=subType1;
-        this.subType2=subType2;
+        this.condition = condition;
     }
 
     @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
-        final MagicPlayer player = permanent.getController();
-        return (!player.controlsPermanent(subType1) &&
-                !player.controlsPermanent(subType2)) ?
+    public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
+        return condition.accept(permanent) ?
             new MagicEvent(
                 permanent,
                 this,
                 "SN enters the battlefield tapped."
-            ):
+            ) :
             MagicEvent.NONE;
     }
 

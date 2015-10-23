@@ -1,5 +1,5 @@
 name=Swamp
-image=http://magiccards.info/scans/en/zen/238.jpg
+image=http://magiccards.info/scans/en/bfz/264.jpg
 value=3.500
 rarity=B
 type=Basic,Land

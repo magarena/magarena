@@ -1,11 +1,12 @@
 name=Flowstone Wyvern
-image=http://magiccards.info/scans/en/tp/176.jpg
-value=2.529
-rarity=R
+image=http://magiccards.info/scans/en/tpr/134.jpg
+value=2.500
+rarity=U
 type=Creature
 subtype=Drake
 cost={3}{R}{R}
 pt=3/3
-ability=flying;{R}: SN gets +2/-2 until end of turn.
+ability=Flying;\
+        {R}: SN gets +2/-2 until end of turn.
 timing=main
 oracle=Flying\n{R}: Flowstone Wyvern gets +2/-2 until end of turn.

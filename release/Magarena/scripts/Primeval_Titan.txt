@@ -1,12 +1,12 @@
 name=Primeval Titan
-image=http://magiccards.info/scans/en/m12/188.jpg
-value=4.282
+image=http://magiccards.info/scans/en/mm2/156.jpg
+value=2.500
 rarity=M
 type=Creature
 subtype=Giant
 cost={4}{G}{G}
 pt=6/6
-ability=Trample.;\
+ability=Trample;\
         Whenever SN enters the battlefield or attacks, you may search your library for up to two land cards, put them onto the battlefield tapped, then shuffle your library.
 timing=main
 oracle=Trample\nWhenever Primeval Titan enters the battlefield or attacks, you may search your library for up to two land cards, put them onto the battlefield tapped, then shuffle your library.

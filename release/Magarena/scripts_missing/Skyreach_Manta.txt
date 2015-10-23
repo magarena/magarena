@@ -1,5 +1,5 @@
 name=Skyreach Manta
-image=http://magiccards.info/scans/en/mma/215.jpg
+image=http://magiccards.info/scans/en/mm2/229.jpg
 value=2.500
 rarity=C
 type=Artifact,Creature
@@ -8,5 +8,5 @@ cost={5}
 pt=0/0
 ability=Sunburst;\
         Flying
-timing=artifact
+timing=main
 oracle=Sunburst\nFlying

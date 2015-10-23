@@ -1,6 +1,6 @@
 name=Wings of Velis Vel
-image=http://magiccards.info/scans/en/lw/97.jpg
-value=3.188
+image=http://magiccards.info/scans/en/mm2/70.jpg
+value=2.500
 rarity=C
 type=Tribal,Instant
 subtype=Shapeshifter

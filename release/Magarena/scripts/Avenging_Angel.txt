@@ -1,12 +1,12 @@
 name=Avenging Angel
-image=http://magiccards.info/scans/en/tp/219.jpg
-value=3.317
-rarity=R
+image=http://magiccards.info/scans/en/tpr/6.jpg
+value=2.500
+rarity=U
 type=Creature
 subtype=Angel
 cost={3}{W}{W}
 pt=3/3
-ability=flying
+ability=Flying
 timing=main
 requires_groovy_code
 oracle=Flying\nWhen Avenging Angel dies, you may put it on top of its owner's library.

@@ -1,11 +1,11 @@
 name=Canyon Wildcat
-image=http://magiccards.info/scans/en/ddh/6.jpg
-value=3.289
-ability=mountainwalk
+image=http://magiccards.info/scans/en/tpr/127.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Cat
 cost={1}{R}
 pt=2/1
+ability=Mountainwalk
 timing=main
 oracle=Mountainwalk

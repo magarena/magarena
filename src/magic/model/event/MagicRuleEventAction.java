@@ -2,6 +2,7 @@ package magic.model.event;
 
 import java.util.Collection;
 import java.util.List;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -36,6 +37,7 @@ import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
 import magic.model.condition.MagicConditionParser;
 import magic.model.mstatic.MagicStatic;
+import magic.model.mstatic.MagicLayer;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.target.*;
@@ -3245,7 +3247,22 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            return GainGroup.getAction(matcher);
+            final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(matcher.group("group"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final int pIdx = event.getPlayer().getIndex();
+                    game.doAction(new AddStaticAction(new MagicStatic(MagicLayer.Game, MagicStatic.UntilEOT) {
+                        @Override
+                        public void modGame(final MagicPermanent source, final MagicGame game) {
+                            for (MagicPermanent perm : filter.filter(game.getPlayer(pIdx))) {
+                                perm.addAbility(abilityList);
+                            }
+                        }
+                    }));
+                }
+            };
         }
         @Override
         public MagicTiming getTiming(final Matcher matcher) {

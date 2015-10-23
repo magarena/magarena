@@ -1,10 +1,9 @@
 name=Disenchant
-image=http://magiccards.info/scans/en/cstd/1.jpg
-value=4.515
-removal=1
+image=http://magiccards.info/scans/en/tpr/11.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={1}{W}
-timing=removal
 effect=Destroy target artifact or enchantment.
+timing=removal
 oracle=Destroy target artifact or enchantment.

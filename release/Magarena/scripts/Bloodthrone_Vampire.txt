@@ -1,6 +1,6 @@
 name=Bloodthrone Vampire
-image=http://magiccards.info/scans/en/m13/83.jpg
-value=2.963
+image=http://magiccards.info/scans/en/ddp/46.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Vampire

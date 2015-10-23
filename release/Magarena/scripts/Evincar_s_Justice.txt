@@ -1,8 +1,7 @@
 name=Evincar's Justice
-image=http://magiccards.info/scans/en/cmd/80.jpg
-value=3.571
-removal=2
-rarity=C
+image=http://magiccards.info/scans/en/tpr/104.jpg
+value=2.500
+rarity=U
 type=Sorcery
 cost={2}{B}{B}
 ability=buyback {3}

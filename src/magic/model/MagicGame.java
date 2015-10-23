@@ -919,10 +919,14 @@ public class MagicGame {
         return players[0].getNrOfPermanents(color) +
                players[1].getNrOfPermanents(color);
     }
-
+    
     public int getNrOfPermanents(final MagicTargetFilter<MagicPermanent> filter) {
-        return players[0].getNrOfPermanents(filter) +
-               players[1].getNrOfPermanents(filter);
+        return getNrOfPermanents(MagicSource.NONE, filter);
+    }
+    
+    public int getNrOfPermanents(final MagicSource source, final MagicTargetFilter<MagicPermanent> filter) {
+        return players[0].getNrOfPermanents(source, filter) +
+               players[1].getNrOfPermanents(source, filter);
     }
 
     public boolean canPlaySorcery(final MagicPlayer controller) {

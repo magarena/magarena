@@ -1,11 +1,11 @@
 name=Plagued Rusalka
-image=http://magiccards.info/scans/en/cns/121.jpg
-value=3.300
-rarity=U
+image=http://magiccards.info/scans/en/mm2/89.jpg
+value=2.500
+rarity=C
 type=Creature
 subtype=Spirit
 cost={B}
 pt=1/1
-ability={B},Sacrifice a creature:Target creature gets -1/-1 until end of turn.
+ability={B}, Sacrifice a creature: Target creature gets -1/-1 until end of turn.
 timing=main
 oracle={B}, Sacrifice a creature: Target creature gets -1/-1 until end of turn.

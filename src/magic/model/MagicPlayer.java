@@ -568,9 +568,13 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
     }
 
     public int getNrOfPermanents(final MagicTargetFilter<MagicPermanent> filter) {
+        return getNrOfPermanents(MagicSource.NONE, filter);
+    }
+
+    public int getNrOfPermanents(final MagicSource source, final MagicTargetFilter<MagicPermanent> filter) {
         int count = 0;
         for (final MagicPermanent permanent : permanents) {
-            if (filter.accept(MagicSource.NONE, this, permanent)) {
+            if (filter.accept(source, this, permanent)) {
                 count++;
             }
         }
@@ -578,8 +582,12 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
     }
 
     public boolean controlsPermanent(final MagicTargetFilter<MagicPermanent> filter) {
+        return controlsPermanent(MagicSource.NONE, filter);
+    }
+
+    public boolean controlsPermanent(final MagicSource source, final MagicTargetFilter<MagicPermanent> filter) {
         for (final MagicPermanent permanent : permanents) {
-            if (filter.accept(MagicSource.NONE, this, permanent)) {
+            if (filter.accept(source, this, permanent)) {
                 return true;
             }
         }

@@ -1,12 +1,11 @@
 name=Crystalline Sliver
-image=http://magiccards.info/scans/en/sh/139.jpg
-value=4.421
+image=http://magiccards.info/scans/en/tpr/207.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Sliver
 cost={W}{U}
 pt=2/2
-ability=all sliver creatures have shroud
-static=all
+ability=All Slivers have shroud.
 timing=main
 oracle=All Slivers have shroud.

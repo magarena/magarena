@@ -1,10 +1,9 @@
 name=Deathmark
-image=http://magiccards.info/scans/en/m12/90.jpg
-value=3.746
-removal=3
+image=http://magiccards.info/scans/en/mm2/77.jpg
+value=2.500
 rarity=U
 type=Sorcery
 cost={B}
-timing=removal
 effect=Destroy target green or white creature.
+timing=removal
 oracle=Destroy target green or white creature.

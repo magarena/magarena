@@ -1,7 +1,7 @@
 name=Sliver Queen
-image=http://magiccards.info/scans/en/sh/141.jpg
-value=4.460
-rarity=R
+image=http://magiccards.info/scans/en/tpr/211.jpg
+value=2.500
+rarity=M
 type=Legendary,Creature
 subtype=Sliver
 cost={W}{U}{B}{R}{G}

@@ -1,5 +1,5 @@
 name=Evolving Wilds
-image=http://magiccards.info/scans/en/ori/246.jpg
+image=http://magiccards.info/scans/en/bfz/236.jpg
 value=2.500
 rarity=C
 type=Land

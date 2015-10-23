@@ -1,0 +1,10 @@
+name=1/1 colorless Eldrazi Scion creature token
+token=Eldrazi Scion
+image=http://media.wizards.com/2015/images/daily/jzkBRlkQ2X.png
+value=1
+type=Creature
+subtype=Eldrazi,Scion
+color=
+pt=1/1
+ability=Sacrifice SN: Add {1} to your mana pool.
+oracle=Sacrifice this creature: Add {1} to your mana pool.

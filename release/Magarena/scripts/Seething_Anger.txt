@@ -1,10 +1,10 @@
 name=Seething Anger
-image=http://magiccards.info/scans/en/sh/96.jpg
-value=2.768
+image=http://magiccards.info/scans/en/tpr/156.jpg
+value=2.500
 rarity=C
 type=Sorcery
 cost={R}
-ability=buyback {3}
+ability=Buyback {3}
 effect=Target creature gets +3/+0 until end of turn.
 timing=fmain
 oracle=Buyback {3}\nTarget creature gets +3/+0 until end of turn.

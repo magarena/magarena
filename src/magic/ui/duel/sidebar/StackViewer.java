@@ -67,6 +67,7 @@ public class StackViewer extends JPanel implements IChoiceViewer {
             buttons.add(btn);
             stackScrollablePanel.add(btn, "w 100%");
         }
+        stackScrollablePanel.revalidate();
 
         // set preferred size for layout manager.
         int preferredHeight =

@@ -1,6 +1,6 @@
 name=Vines of Vastwood
-image=http://magiccards.info/scans/en/zen/193.jpg
-value=4.176
+image=http://magiccards.info/scans/en/mm2/168.jpg
+value=2.500
 rarity=C
 type=Instant
 cost={G}

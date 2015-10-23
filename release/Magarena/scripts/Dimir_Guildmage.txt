@@ -1,6 +1,6 @@
 name=Dimir Guildmage
-image=http://magiccards.info/scans/en/rav/245.jpg
-value=3.822
+image=http://magiccards.info/scans/en/mm2/192.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Human,Wizard

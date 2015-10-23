@@ -1,9 +1,9 @@
 name=Wayfarer's Bauble
-image=http://magiccards.info/scans/en/c14/281.jpg
-value=3.909
+image=http://magiccards.info/scans/en/mm2/234.jpg
+value=2.500
 rarity=C
 type=Artifact
 cost={1}
-ability={2},{T},Sacrifice SN:Search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.
+ability={2}, {T}, Sacrifice SN: Search your library for a basic land card and put that card onto the battlefield tapped. Then shuffle your library.
 timing=artifact
 oracle={2}, {T}, Sacrifice Wayfarer's Bauble: Search your library for a basic land card and put that card onto the battlefield tapped. Then shuffle your library.

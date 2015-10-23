@@ -1,6 +1,6 @@
 name=Trained Armodon
-image=http://magiccards.info/scans/en/9e/274.jpg
-value=2.949
+image=http://magiccards.info/scans/en/tpr/200.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Elephant

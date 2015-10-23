@@ -1,7 +1,7 @@
 name=Mogg Fanatic
-image=http://magiccards.info/scans/en/evg/44.jpg
-value=4.439
-rarity=U
+image=http://magiccards.info/scans/en/tpr/144.jpg
+value=2.500
+rarity=C
 type=Creature
 subtype=Goblin
 cost={R}

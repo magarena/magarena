@@ -1,11 +1,11 @@
 name=Telethopter
-image=http://magiccards.info/scans/en/tp/301.jpg
-value=1.539
-rarity=U
+image=http://magiccards.info/scans/en/tpr/232.jpg
+value=2.500
+rarity=C
 type=Artifact,Creature
 subtype=Thopter
 cost={4}
 pt=3/1
-ability=Tap an untapped creature you control:SN gains flying until end of turn.
-timing=artifact
+ability=Tap an untapped creature you control: SN gains flying until end of turn.
+timing=main
 oracle=Tap an untapped creature you control: Telethopter gains flying until end of turn.

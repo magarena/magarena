@@ -1,7 +1,7 @@
 name=Wood Sage
-image=http://magiccards.info/scans/en/cns/195.jpg
+image=http://magiccards.info/scans/en/tpr/216.jpg
 value=2.500
-rarity=U
+rarity=R
 type=Creature
 subtype=Human,Druid
 cost={G}{U}

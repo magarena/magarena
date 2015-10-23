@@ -1,11 +1,12 @@
 name=Dauthi Slayer
-image=http://magiccards.info/scans/en/tsts/41.jpg
-value=4.187
-rarity=C
+image=http://magiccards.info/scans/en/tpr/97.jpg
+value=2.500
+rarity=U
 type=Creature
 subtype=Dauthi,Soldier
 cost={B}{B}
 pt=2/2
-ability=shadow;SN attacks each turn if able.
+ability=Shadow;\
+        SN attacks each turn if able.
 timing=main
 oracle=Shadow\nDauthi Slayer attacks each turn if able.

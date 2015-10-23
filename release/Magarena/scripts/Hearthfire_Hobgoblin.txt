@@ -1,11 +1,11 @@
 name=Hearthfire Hobgoblin
-image=http://magiccards.info/scans/en/pch/102.jpg
-value=3.804
-ability=double strike
+image=http://magiccards.info/scans/en/mm2/194.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Goblin,Soldier
 cost={R/W}{R/W}{R/W}
 pt=2/2
+ability=Double strike
 timing=main
 oracle=Double strike

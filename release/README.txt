@@ -3,7 +3,7 @@ Magarena
 Homepage: http://magarena.github.io
 Forum   : http://www.slightlymagic.net/forum/viewforum.php?f=82
 
-Requires: Java Runtime Environment 7 (http://java.com) or above must be installed on your computer
+Requires: Java Runtime Environment 8 (http://java.com) or above must be installed on your computer
 
 Starting Magarena:
   On Windows, double click on Magarena.exe
@@ -70,6 +70,24 @@ Thank you for your support and have fun!
 
 Release 1.67 (October 31, 2015)
 ============
+
+    Format and legality changes effective as of Oct 2nd
+    display usable proxy image when card image is missing
+    store "cards" and "tokens" images folders in new location -> \Magarena\images.
+
+    fix: sometimes on undo the log item was not removed because the log was not being repainted properly.
+    fix missing event description for first event in repeated events, fixes #436
+    fix missing event description for repeated card events
+    Disable interactive card names in message text displayed in user prompt panel. (fixes #456)
+    fix: proxy image causes exception if oracle text contains hybrid mana symbol.
+    fix #469: Horizontal scrollbar goes missing in deck editor.
+    Prevent NPE if firemind json feed contains formats with no decks (fixes #461).
+    pass source from MagicCondition.accept into getNrOfPermanents and controlsPermanent, fixes #467
+    rename script files for Manifest and Morph to match the constants used for getCard, fixes #470
+    Text in user prompt is not interactive so don't color (fixes #457).
+    fix: visible stack button style not updated as toggle button is clicked
+    tokenize card name in log message (fixes #464).
+    tokenize card name in log messages (fixes #463).
 
 Release 1.66 (September 26, 2015)
 ============

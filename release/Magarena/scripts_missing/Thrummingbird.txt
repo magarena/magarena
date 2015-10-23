@@ -1,7 +1,7 @@
 name=Thrummingbird
-image=http://magiccards.info/scans/en/som/47.jpg
+image=http://magiccards.info/scans/en/mm2/65.jpg
 value=2.500
-rarity=U
+rarity=C
 type=Creature
 subtype=Bird,Horror
 cost={1}{U}

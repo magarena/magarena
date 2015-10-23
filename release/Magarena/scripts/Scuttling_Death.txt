@@ -1,12 +1,12 @@
 name=Scuttling Death
-image=http://magiccards.info/scans/en/chk/142.jpg
-value=1.141
+image=http://magiccards.info/scans/en/mm2/94.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Spirit
 cost={4}{B}
 pt=4/2
 ability=Sacrifice SN: Target creature gets -1/-1 until end of turn.;\
-        soulshift 4
+        Soulshift 4
 timing=main
 oracle=Sacrifice Scuttling Death: Target creature gets -1/-1 until end of turn.\nSoulshift 4

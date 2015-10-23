@@ -1,11 +1,11 @@
 name=Scion of the Wild
-image=http://magiccards.info/scans/en/10e/295.jpg
-value=4.105
-rarity=R
+image=http://magiccards.info/scans/en/mm2/160.jpg
+value=2.500
+rarity=C
 type=Creature
 subtype=Avatar
 cost={1}{G}{G}
 pt=*/*
 ability=SN's power and toughness are each equal to the number of creatures you control.
-timing=smain
+timing=main
 oracle=Scion of the Wild's power and toughness are each equal to the number of creatures you control.

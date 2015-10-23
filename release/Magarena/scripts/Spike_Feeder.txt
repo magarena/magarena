@@ -1,13 +1,13 @@
 name=Spike Feeder
-image=http://magiccards.info/scans/en/cmd/172.jpg
-value=3.323
+image=http://magiccards.info/scans/en/tpr/196.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Spike
 cost={1}{G}{G}
 pt=0/0
 ability=SN enters the battlefield with two +1/+1 counters on it.;\
-        {2},Remove a +1/+1 counter from SN: Put a +1/+1 counter on target creature.;\
+        {2}, Remove a +1/+1 counter from SN: Put a +1/+1 counter on target creature.;\
         Remove a +1/+1 counter from SN: You gain 2 life.
 timing=main
 oracle=Spike Feeder enters the battlefield with two +1/+1 counters on it.\n{2}, Remove a +1/+1 counter from Spike Feeder: Put a +1/+1 counter on target creature.\nRemove a +1/+1 counter from Spike Feeder: You gain 2 life.

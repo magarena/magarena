@@ -1,7 +1,7 @@
 name=Caldera Lake
-image=http://magiccards.info/scans/en/vma/295.jpg
-value=0.500
-rarity=R
+image=http://magiccards.info/scans/en/tpr/235.jpg
+value=2.500
+rarity=U
 type=Land
 mana=u2r2
 ability=SN enters the battlefield tapped.;\

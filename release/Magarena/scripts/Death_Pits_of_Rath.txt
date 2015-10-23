@@ -1,6 +1,6 @@
 name=Death Pits of Rath
-image=http://magiccards.info/scans/en/9e/123.jpg
-value=4.160
+image=http://magiccards.info/scans/en/tpr/99.jpg
+value=2.500
 rarity=R
 type=Enchantment
 cost={3}{B}{B}

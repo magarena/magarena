@@ -1,6 +1,6 @@
 name=Goblin Fireslinger
-image=http://magiccards.info/scans/en/m12/139.jpg
-value=3.955
+image=http://magiccards.info/scans/en/mm2/114.jpg
+value=2.500
 rarity=C
 type=Creature
 subtype=Goblin,Warrior

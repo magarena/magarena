@@ -1,6 +1,6 @@
 name=Artisan of Kozilek
-image=http://magiccards.info/scans/en/c14/62.jpg
-value=3.843
+image=http://magiccards.info/scans/en/ddp/42.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Eldrazi

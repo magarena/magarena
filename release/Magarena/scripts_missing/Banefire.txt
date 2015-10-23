@@ -1,5 +1,5 @@
 name=Banefire
-image=http://magiccards.info/scans/en/ddn/31.jpg
+image=http://magiccards.info/scans/en/mm2/104.jpg
 value=2.500
 rarity=R
 type=Sorcery

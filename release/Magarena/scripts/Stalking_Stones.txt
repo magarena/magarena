@@ -1,10 +1,10 @@
 name=Stalking Stones
-image=http://magiccards.info/scans/en/ddf/75.jpg
-value=3.500
+image=http://magiccards.info/scans/en/tpr/245.jpg
+value=2.500
 rarity=U
 type=Land
 ability={T}: Add {1} to your mana pool.;\
         {6}: SN becomes a 3/3 Elemental artifact creature that's still a land.
-timing=main
+timing=land
 mana_or_combat
 oracle={T}: Add {1} to your mana pool.\n{6}: Stalking Stones becomes a 3/3 Elemental artifact creature that's still a land.

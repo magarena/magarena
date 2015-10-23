@@ -11,6 +11,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 import javax.swing.BoxLayout;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
@@ -134,13 +136,19 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     private int totalFilteredCards = 0;
     private int playableCards = 0;
     private int missingCards = 0;
-
+    
+    private static List<MagicCardDefinition> cardPool;
+    
     private boolean disableUpdate; // so when we change several filters, it doesn't update until the end
 
     public CardFilterPanel(final ICardFilterPanelListener aListener) {
 
         this.listener = aListener;
 
+        cardPool = listener.isDeckEditor()
+            ? CardDefinitions.getDefaultPlayableCardDefs()
+            : CardDefinitions.getAllCards();
+        
         disableUpdate = false;
 
         layout.setLayoutConstraints("flowy, wrap 2, gap 4");
@@ -313,11 +321,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         populateCheckboxPopup("flowy, insets 2", popup, checkboxValues, newCheckboxes, newFilterButtons, hideAND);
     }
 
-    /**
-     * @param cardDefinition
-     * @return
-     */
-    private boolean filter(final MagicCardDefinition cardDefinition) {
+    private boolean isCardfiltered(final MagicCardDefinition cardDefinition) {
         // never show overlay cards
         if (cardDefinition.isOverlay()) {
             return false;
@@ -490,35 +494,29 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         public boolean checkCard(MagicCardDefinition card, int i);
     }
 
-    public List<MagicCardDefinition> getCardDefinitions(final boolean isDeckEditor) {
+    private Stream<MagicCardDefinition> getFilteredStream() {
+        return listener.isDeckEditor()
+            ? cardPool.stream().filter(c -> !c.isHidden() && isCardfiltered(c))
+            : cardPool.stream().filter(c -> isCardfiltered(c));
+    }
 
-        final List<MagicCardDefinition> cardDefinitions = new ArrayList<>();
+    public List<MagicCardDefinition> getFilteredCards() {
+        final List<MagicCardDefinition> filteredList = getFilteredStream().collect(Collectors.toList());
+        updateCardTotals(filteredList);
+        return filteredList;
+    }
 
-        final List<MagicCardDefinition> cards = isDeckEditor ?
-                CardDefinitions.getDefaultPlayableCardDefs() :
-                CardDefinitions.getAllCards();
+    private void updateCardTotals(final List<MagicCardDefinition> cards) {
 
-        missingCards = 0;
-        playableCards = 0;
-        totalFilteredCards = 0;
+        totalFilteredCards = cards.size();
 
-        for (final MagicCardDefinition cardDef : cards) {
-            if (!cardDef.isHidden() || !isDeckEditor) {
-                if (filter(cardDef)) {
-                    totalFilteredCards++;
-                    cardDefinitions.add(cardDef);
-                    if (cardDef.isPlayable()) {
-                        if (cardDef.isInvalid()) {
-                            missingCards++;
-                        } else {
-                            playableCards++;
-                        }
-                    }
-                }
-            }
-        }
+        missingCards = (int) cards.stream()
+            .filter(c -> c.isPlayable() && c.isInvalid())
+            .count();
 
-        return cardDefinitions;
+        playableCards = (int) cards.stream()
+            .filter(c -> c.isPlayable() && !c.isInvalid())
+            .count();
     }
 
     public void resetFilters() {

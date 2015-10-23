@@ -110,7 +110,7 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
     private Container getMainContentContainer() {
 
         // card pool
-        cardPoolDefs = filterPanel.getCardDefinitions(true);
+        cardPoolDefs = filterPanel.getFilteredCards();
 
         cardPoolTable = new CardTable(cardPoolDefs, generatePoolTitle(), false);
         cardPoolTable.addMouseListener(new CardPoolMouseListener());
@@ -175,7 +175,7 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
     }
 
     public void updateCardPool() {
-        cardPoolDefs = filterPanel.getCardDefinitions(true);
+        cardPoolDefs = filterPanel.getFilteredCards();
         cardPoolTable.setCards(cardPoolDefs);
         cardPoolTable.setTitle(generatePoolTitle());
     }

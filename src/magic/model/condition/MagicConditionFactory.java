@@ -169,7 +169,16 @@ public class MagicConditionFactory {
         return new MagicCondition() {
             @Override
             public boolean accept(final MagicSource source) {
-                return source.getController().controlsPermanent(filter);
+                return source.getController().controlsPermanent(source, filter);
+            }
+        };
+    }
+
+    public static MagicCondition YouControlOr(final MagicTargetFilter<MagicPermanent> filter1,final MagicTargetFilter<MagicPermanent> filter2) {
+        return new MagicCondition() {
+            @Override
+            public boolean accept(final MagicSource source) {
+                return source.getController().controlsPermanent(source, filter1) || source.getController().controlsPermanent(source, filter2);
             }
         };
     }
@@ -197,7 +206,7 @@ public class MagicConditionFactory {
         return new MagicCondition() {
             @Override
             public boolean accept(final MagicSource source) {
-                return source.getController().getNrOfPermanents(filter) >= amt;
+                return source.getController().getNrOfPermanents(source, filter) >= amt;
             }
         };
     }
@@ -206,7 +215,7 @@ public class MagicConditionFactory {
         return new MagicCondition() {
             @Override
             public boolean accept(final MagicSource source) {
-                return source.getController().getNrOfPermanents(filter) <= amt;
+                return source.getController().getNrOfPermanents(source, filter) <= amt;
             }
         };
     }
@@ -215,7 +224,7 @@ public class MagicConditionFactory {
         return new MagicCondition() {
             @Override
             public boolean accept(final MagicSource source) {
-                return source.getOpponent().getNrOfPermanents(filter) >= amt;
+                return source.getOpponent().getNrOfPermanents(source, filter) >= amt;
             }
         };
     }
@@ -224,7 +233,7 @@ public class MagicConditionFactory {
         return new MagicCondition() {
             @Override
             public boolean accept(final MagicSource source) {
-                return source.getController().getNrOfPermanents(filter) == 0;
+                return source.getController().getNrOfPermanents(source, filter) == 0;
             }
         };
     }
@@ -233,7 +242,7 @@ public class MagicConditionFactory {
         return new MagicCondition() {
             @Override
             public boolean accept(final MagicSource source) {
-                return source.getGame().getNrOfPermanents(filter) == amt;
+                return source.getGame().getNrOfPermanents(source, filter) == amt;
             }
         };
     }
@@ -242,7 +251,7 @@ public class MagicConditionFactory {
         return new MagicCondition() {
             @Override
             public boolean accept(final MagicSource source) {
-                return source.getGame().getNrOfPermanents(filter) >= amt;
+                return source.getGame().getNrOfPermanents(source, filter) >= amt;
             }
         };
     }
@@ -273,7 +282,7 @@ public class MagicConditionFactory {
         return new MagicCondition() {
             @Override
             public boolean accept(final MagicSource source) {
-                return source.getOpponent().controlsPermanent(filter);
+                return source.getOpponent().controlsPermanent(source, filter);
             }
         };
     }

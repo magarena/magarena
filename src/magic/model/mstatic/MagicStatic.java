@@ -46,7 +46,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
     }
 
     protected MagicStatic(final MagicLayer aLayer, final MagicTargetFilter<MagicPermanent> aFilter) {
-        this(aLayer, aFilter, false);
+        this(aLayer, aFilter, Forever);
     }
 
     protected MagicStatic(final MagicLayer aLayer, final boolean aIsUntilEOT) {
@@ -174,7 +174,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
     }
 
     public static MagicStatic genABStatic(final MagicCondition condition, final MagicTargetFilter<MagicPermanent> filter, final MagicAbilityList abilityList) {
-        return new MagicStatic(MagicLayer.Ability, filter) {
+        return new MagicStatic(MagicLayer.AbilityCond, filter) {
             @Override
             public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
                 abilityList.giveAbility(permanent, flags);
@@ -187,7 +187,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
     }
 
     public static MagicStatic genABStatic(final MagicCondition condition, final MagicAbilityList abilityList) {
-        return new MagicStatic(MagicLayer.Ability) {
+        return new MagicStatic(MagicLayer.AbilityCond) {
             @Override
             public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
                 abilityList.giveAbility(permanent, flags);

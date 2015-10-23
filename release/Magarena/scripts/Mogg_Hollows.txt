@@ -1,10 +1,10 @@
 name=Mogg Hollows
-image=http://magiccards.info/scans/en/br/45.jpg
-value=2.419
+image=http://magiccards.info/scans/en/tpr/239.jpg
+value=2.500
 rarity=U
 type=Land
 mana=r2g2
 ability={T}: Add {1} to your mana pool.;\
         {T}: Add {R} or {G} to your mana pool. SN doesn't untap during your next untap step.
-timing=main
+timing=land
 oracle={T}: Add {1} to your mana pool.\n{T}: Add {R} or {G} to your mana pool. Mogg Hollows doesn't untap during your next untap step.

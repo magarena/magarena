@@ -1,12 +1,12 @@
 name=Spitebellows
-image=http://magiccards.info/scans/en/c14/181.jpg
-value=3.600
+image=http://magiccards.info/scans/en/mm2/128.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Elemental
 cost={5}{R}
 pt=6/1
 ability=When SN leaves the battlefield, SN deals 6 damage to target creature.;\
-        evoke {1}{G}{G}
+        Evoke {1}{R}{R}
 timing=main
 oracle=When Spitebellows leaves the battlefield, it deals 6 damage to target creature.\nEvoke {1}{R}{R}

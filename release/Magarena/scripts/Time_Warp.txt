@@ -1,6 +1,6 @@
 name=Time Warp
-image=http://magiccards.info/scans/en/m10/75.jpg
-value=4.164
+image=http://magiccards.info/scans/en/tpr/74.jpg
+value=2.500
 rarity=M
 type=Sorcery
 cost={3}{U}{U}

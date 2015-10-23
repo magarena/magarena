@@ -1,12 +1,12 @@
 name=Screeching Harpy
-image=http://magiccards.info/scans/en/tp/49.jpg
-value=2.732
+image=http://magiccards.info/scans/en/tpr/116.jpg
+value=2.500
 rarity=U
 type=Creature
 subtype=Harpy,Beast
 cost={2}{B}{B}
 pt=2/2
-ability=flying;\
+ability=Flying;\
         {1}{B}: Regenerate SN.
 timing=main
 oracle=Flying\n{1}{B}: Regenerate Screeching Harpy.

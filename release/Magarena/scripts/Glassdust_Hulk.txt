@@ -1,7 +1,7 @@
 name=Glassdust Hulk
-image=http://magiccards.info/scans/en/arb/7.jpg
-value=3.273
-rarity=C
+image=http://magiccards.info/scans/en/mm2/177.jpg
+value=2.500
+rarity=U
 type=Artifact,Creature
 subtype=Golem
 cost={3}{W}{U}

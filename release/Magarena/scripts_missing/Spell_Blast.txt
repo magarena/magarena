@@ -1,9 +1,9 @@
 name=Spell Blast
-image=http://magiccards.info/scans/en/m14/72.jpg
+image=http://magiccards.info/scans/en/tpr/69.jpg
 value=2.500
-rarity=U
+rarity=C
 type=Instant
 cost={X}{U}
 effect=Counter target spell with converted mana cost X.
-timing=removal
+timing=counter
 oracle=Counter target spell with converted mana cost X.

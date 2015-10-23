@@ -1,7 +1,7 @@
 name=Cranial Plating
-image=http://magiccards.info/scans/en/pch/110.jpg
-value=4.552
-rarity=C
+image=http://magiccards.info/scans/en/mm2/206.jpg
+value=2.500
+rarity=U
 type=Artifact
 subtype=Equipment
 cost={2}

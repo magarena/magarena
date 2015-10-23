@@ -1,5 +1,5 @@
 name=Tezzeret's Gambit
-image=http://magiccards.info/scans/en/nph/47.jpg
+image=http://magiccards.info/scans/en/mm2/63.jpg
 value=2.500
 rarity=U
 type=Sorcery

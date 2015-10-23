@@ -1,7 +1,7 @@
 name=Mutagenic Growth
-image=http://magiccards.info/scans/en/nph/116.jpg
-value=3.789
-rarity=C
+image=http://magiccards.info/scans/en/mm2/149.jpg
+value=2.500
+rarity=U
 type=Instant
 cost={G/P}
 ability=alt cost Pay 2 life named Pay 2 life
