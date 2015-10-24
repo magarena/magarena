@@ -18,7 +18,7 @@ def TARGET_INSTANT_OR_AURA_TARGETS_YOUR_PERM = new MagicTargetChoice(
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
             return new MagicEvent(
-                cardOnStack
+                cardOnStack,
                 TARGET_INSTANT_OR_AURA_TARGETS_YOUR_PERM,
                 this,
                 "Counter target instant or Aura spell\$ that targets a permanent you control."
