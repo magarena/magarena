@@ -113,7 +113,7 @@ class TComponentBuilder {
                 isTinyFont = false;
 
             //
-            // "<card_name#MagicCard_id>"
+            // "<card_name~MagicCard_id>"
             //
             } else if (ch == '<') {
                 final String textPart = msg.substring(startIndex, index);

@@ -13,6 +13,7 @@ import magic.model.MagicMessage;
 public class TextComponent extends TComponent {
 
     public static MessageStyle messageStyle = GeneralConfig.getInstance().getLogMessageStyle();
+    private static final String CARD_ID_DELIM = String.valueOf(MagicMessage.CARD_ID_DELIMITER);
 
     private final String text;
     private final Font font;
@@ -72,7 +73,7 @@ public class TextComponent extends TComponent {
     }
 
     private boolean isCardId() {
-        return text.startsWith(String.valueOf(MagicMessage.CARD_ID_DELIMITER));
+        return text.startsWith(CARD_ID_DELIM);
     }
 
     @Override
@@ -107,7 +108,7 @@ public class TextComponent extends TComponent {
     }
 
     long getCardId() {
-        final String[] info = cardInfo.split(String.valueOf(MagicMessage.CARD_ID_DELIMITER));
+        final String[] info = cardInfo.split(CARD_ID_DELIM);
         if (info.length > 1) {
             return Long.parseLong(info[1]);
         } else {
