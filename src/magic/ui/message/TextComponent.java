@@ -72,7 +72,7 @@ public class TextComponent extends TComponent {
     }
 
     private boolean isCardId() {
-        return text.startsWith("#");
+        return text.startsWith(String.valueOf(MagicMessage.CARD_ID_DELIMITER));
     }
 
     @Override

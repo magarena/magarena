@@ -7,7 +7,7 @@ import magic.model.stack.MagicCardOnStack;
 
 public class MagicMessage {
 
-    public static final char CARD_ID_DELIMITER = '#';
+    public static final char CARD_ID_DELIMITER = '~';
 
     private final MagicPlayer player;
     private final int life;
