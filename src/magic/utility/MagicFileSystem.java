@@ -51,7 +51,7 @@ public final class MagicFileSystem {
     }
 
     // Top level install directory containing exe, etc.
-    private static final Path INSTALL_PATH;
+    public static final Path INSTALL_PATH;
     static {
         if (System.getProperty("magarena.dir", "").isEmpty()) {
             INSTALL_PATH = Paths.get(System.getProperty("user.dir"));
@@ -236,6 +236,28 @@ public final class MagicFileSystem {
             return getDataPath().getParent();
         }
         return p;
+    }
+
+    /**
+     * Confirms if two paths point to the same location regardless of whether
+     * the path is relative or absolute.
+     */
+    public static boolean isSamePath(Path p1, Path p2) {
+        return p1.toAbsolutePath().equals(p2.toAbsolutePath());
+    }
+
+    /**
+     * Determines whether p2 is the same as or a sub-directory of p1.
+     */
+    public static boolean directoryContains(Path p1, Path p2) {
+        if (p1 == null || p2 == null) {
+            return false;
+        }
+        if (isSamePath(p1, p2)) {
+            return true;
+        } else {
+            return directoryContains(p1, p2.getParent());
+        }
     }
 
 }

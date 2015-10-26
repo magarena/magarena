@@ -223,11 +223,11 @@ public class GeneralConfig {
             return Paths.get(cardImagesPath);
         }
     }
-    public void setCardImagesPath(final Path path) {
-        if (path.equals(MagicFileSystem.getDataPath())) {
+    public void setCardImagesPath(final Path p) {
+        if (MagicFileSystem.directoryContains(MagicFileSystem.INSTALL_PATH, p)) {
             this.cardImagesPath = "";
         } else {
-            this.cardImagesPath = path.toAbsolutePath().toString();
+            this.cardImagesPath = p.toAbsolutePath().toString();
         }
     }
 

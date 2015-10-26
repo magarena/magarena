@@ -3,6 +3,7 @@ package magic.ui.widget;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.InvalidPathException;
 import java.nio.file.Path;
@@ -15,6 +16,8 @@ import javax.swing.JTextField;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
 import magic.ui.utility.DesktopUtils;
+import magic.utility.MagicFileSystem;
+import magic.utility.MagicFileSystem.DataPath;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -45,13 +48,12 @@ public class DirectoryChooser extends JPanel implements MouseListener {
             public void actionPerformed(ActionEvent e) {
                 final JFileChooser fileChooser = new ImagesDirectoryChooser(defaultPath.toString());
                 final int action = fileChooser.showOpenDialog(ScreenController.getMainFrame());
-                if (action==JFileChooser.APPROVE_OPTION) {
-                    try {
-                        textField.setText(fileChooser.getSelectedFile().getCanonicalPath());
-                        System.out.println(fileChooser.getSelectedFile().getFreeSpace());
-                    } catch (IOException e1) {
-                        // TODO Auto-generated catch block
-                        e1.printStackTrace();
+                if (action == JFileChooser.APPROVE_OPTION) {
+                    final File f = fileChooser.getSelectedFile();
+                    if (MagicFileSystem.directoryContains(MagicFileSystem.INSTALL_PATH, f.toPath())) {
+                        textField.setText(MagicFileSystem.getDataPath(DataPath.IMAGES).toString());
+                    } else {
+                        textField.setText(f.toString());
                     }
                 }
             }
