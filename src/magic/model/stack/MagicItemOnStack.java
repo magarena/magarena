@@ -77,6 +77,11 @@ public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicT
         return getSource().getCardDefinition();
     }
     
+    // only for rendering the card image popup
+    final public MagicCardDefinition getRealCardDefinition() {
+        return getSource().getCardDefinition();
+    }
+    
     public int getConvertedCost() {
         return 0;
     }

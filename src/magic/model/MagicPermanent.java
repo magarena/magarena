@@ -266,7 +266,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     }
 
     // only for rendering the card image popup
-    public MagicCardDefinition getRealCardDefinition() {
+    final public MagicCardDefinition getRealCardDefinition() {
         if (isFaceDown()) {
             return cardDefinition;
         } else {

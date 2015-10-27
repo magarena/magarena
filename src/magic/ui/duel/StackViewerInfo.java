@@ -21,7 +21,9 @@ public class StackViewerInfo {
 
     public StackViewerInfo(final MagicGame game,final MagicItemOnStack itemOnStack) {
         this.itemOnStack=itemOnStack;
-        cardDefinition=itemOnStack.getCardDefinition();
+        cardDefinition=itemOnStack.getController().isHuman() ?
+            itemOnStack.getRealCardDefinition() :
+            itemOnStack.getCardDefinition();
         name=itemOnStack.getName();
         description=itemOnStack.getDescription();
         visible=itemOnStack.getController()==game.getVisiblePlayer();
