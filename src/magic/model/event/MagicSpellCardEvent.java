@@ -62,7 +62,13 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
                 final MagicCardOnStack spell = event.getCardOnStack();
                 if (spell.isKicked()) {
                     game.doAction(new ChangeCardDestinationAction(spell, MagicLocationType.OwnersHand));
-                    game.logAppendMessage(event.getPlayer(), MagicMessage.getCardToken(spell) + " is put into " + event.getPlayer() + "'s hand as it resolves.");
+                    game.logAppendMessage(
+					    event.getPlayer(), 
+						String.format("%s is put into %s's hand as it resolves.",
+						    MagicMessage.getCardToken(spell),
+							event.getPlayer()
+						)
+					);
                 }
             }
         };
