@@ -11,6 +11,7 @@ import magic.model.event.MagicEventAction;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import magic.model.MagicMessage;
 
 public class RevealAction extends MagicAction {
     
@@ -48,7 +49,7 @@ public class RevealAction extends MagicAction {
     private static String cardNames(final Collection<MagicCard> cards) {
         final StringBuffer sb = new StringBuffer();
         for (final MagicCard card : cards) {
-            sb.append(card.toString());
+            sb.append(MagicMessage.getCardToken(card));
             sb.append(", ");
         }
         sb.delete(sb.length() - 2, sb.length());
