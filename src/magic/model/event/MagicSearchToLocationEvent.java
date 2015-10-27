@@ -3,6 +3,7 @@ package magic.model.event;
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
+import magic.model.MagicMessage;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicCardAction;
@@ -56,7 +57,10 @@ public class MagicSearchToLocationEvent extends MagicEvent {
                     event.processChosenCards(game, new MagicCardAction() {
                         public void doAction(final MagicCard card) {
                             if (revealed) {
-                                game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
+                                game.logAppendMessage(
+                                    event.getPlayer(),
+                                    String.format("Found (%s).", MagicMessage.getCardToken(card))
+                                );
                                 game.doAction(new AIRevealAction(card));
                             }
                             game.doAction(new ShiftCardAction(card,MagicLocationType.OwnersLibrary, toLocation));
@@ -67,7 +71,10 @@ public class MagicSearchToLocationEvent extends MagicEvent {
                     event.processTargetCard(game, new MagicCardAction() {
                         public void doAction(final MagicCard card) {
                             if (revealed) {
-                                game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
+                                game.logAppendMessage(
+                                    event.getPlayer(),
+                                    String.format("Found (%s).", MagicMessage.getCardToken(card))
+                                );
                                 game.doAction(new AIRevealAction(card));
                             }
                             game.doAction(new ShiftCardAction(card, MagicLocationType.OwnersLibrary, toLocation));
