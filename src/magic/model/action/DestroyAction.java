@@ -36,7 +36,10 @@ public class DestroyAction extends MagicAction {
 
             // Regeneration
             if (destroy && permanent.isRegenerated()) {
-                game.logAppendMessage(permanent.getController(),permanent.getName()+" is regenerated.");
+                game.logAppendMessage(
+                    permanent.getController(),
+                    String.format("%s is regenerated.", MagicMessage.getCardToken(permanent))
+                );
                 game.doAction(new TapAction(permanent));
                 game.doAction(new RemoveAllDamageAction(permanent));
                 game.doAction(new RemoveFromCombatAction(permanent));
@@ -48,7 +51,10 @@ public class DestroyAction extends MagicAction {
             if (destroy && permanent.isEnchanted()) {
                 for (final MagicPermanent aura : permanent.getAuraPermanents()) {
                     if (aura.hasAbility(MagicAbility.TotemArmor)) {
-                        game.logAppendMessage(permanent.getController(),"Remove all damage from "+permanent.getName()+'.');
+                        game.logAppendMessage(
+                            permanent.getController(),
+                            String.format("Remove all damage from %s.", MagicMessage.getCardToken(permanent))
+                        );
                         game.doAction(new RemoveAllDamageAction(permanent));
                         toBeDestroyed.add(aura);
                         destroy = false;
