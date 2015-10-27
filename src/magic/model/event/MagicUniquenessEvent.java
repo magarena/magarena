@@ -11,6 +11,7 @@ import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetHint;
 
 import java.util.Collection;
+import magic.model.MagicMessage;
 
 public class MagicUniquenessEvent extends MagicEvent {
 
@@ -37,7 +38,9 @@ public class MagicUniquenessEvent extends MagicEvent {
                         if (target != permanent) {
                             game.logAppendMessage(
                                 event.getPlayer(),
-                                "Put " + target + " into its owner's graveyard (Uniqueness rule)."
+                                String.format("Put %s into its owner's graveyard (Uniqueness rule).",
+                                    MagicMessage.getCardToken(target)
+                                )
                             );
                             game.doAction(new RemoveFromPlayAction(target,MagicLocationType.Graveyard));
                         }
