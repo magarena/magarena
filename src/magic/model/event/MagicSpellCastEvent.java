@@ -23,7 +23,7 @@ public class MagicSpellCastEvent extends MagicEvent {
             final MagicItemOnStack itemOnStack = event.getRefItemOnStack();
 
             // execute spell is cast triggers
-            for (final MagicWhenSpellIsCastTrigger trigger : itemOnStack.getSource().getCardDefinition().getSpellIsCastTriggers()) {
+            for (final MagicWhenSpellIsCastTrigger trigger : itemOnStack.getCardDefinition().getSpellIsCastTriggers()) {
                 game.executeTrigger(
                     trigger,
                     MagicPermanent.NONE,
