@@ -6,8 +6,6 @@ import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicCardAction;
-import magic.model.action.PlayCardAction;
-import magic.model.action.MagicPlayMod;
 import magic.model.action.ReturnCardAction;
 import magic.model.action.ShuffleLibraryAction;
 import magic.model.action.AIRevealAction;
@@ -18,6 +16,7 @@ import magic.model.target.MagicGraveyardTargetPicker;
 
 import java.util.Arrays;
 import java.util.List;
+import magic.model.MagicMessage;
 
 public class MagicSearchOntoBattlefieldEvent extends MagicEvent {
     public MagicSearchOntoBattlefieldEvent(final MagicEvent event, final MagicChoice choice, final MagicPermanentAction... mods) {
@@ -53,7 +52,10 @@ public class MagicSearchOntoBattlefieldEvent extends MagicEvent {
                 } else if (event.getChosen()[0] instanceof MagicCardChoiceResult) {
                     event.processChosenCards(game, new MagicCardAction() {
                         public void doAction(final MagicCard card) {
-                            game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
+                            game.logAppendMessage(
+                                event.getPlayer(),
+                                String.format("Found (%s).", MagicMessage.getCardToken(card))
+                            );
                             game.doAction(new AIRevealAction(card));
                             game.doAction(new ReturnCardAction(MagicLocationType.OwnersLibrary,card,event.getPlayer(),mods));
                         }
@@ -62,7 +64,10 @@ public class MagicSearchOntoBattlefieldEvent extends MagicEvent {
                 } else {
                     event.processTargetCard(game, new MagicCardAction() {
                         public void doAction(final MagicCard card) {
-                            game.logAppendMessage(event.getPlayer(), "Found (" + card + ").");
+                            game.logAppendMessage(
+                                event.getPlayer(),
+                                String.format("Found (%s).", MagicMessage.getCardToken(card))
+                            );
                             game.doAction(new AIRevealAction(card));
                             game.doAction(new ReturnCardAction(MagicLocationType.OwnersLibrary,card,event.getPlayer(),mods));
                         }
