@@ -198,4 +198,8 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
     public boolean isKicked() {
         return payedCost.isKicked();
     }
+
+    public boolean isFaceDown() {
+        return false;
+    }
 }

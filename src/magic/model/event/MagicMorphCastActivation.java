@@ -100,6 +100,10 @@ public class MagicMorphCastActivation extends MagicHandCastActivation {
                 public String getName() {
                     return "Face-down creature spell #" + (getId() % 1000);
                 }
+                @Override
+                public boolean isFaceDown() {
+                    return true;
+                }
             };
 
             game.doAction(new PutItemOnStackAction(cardOnStack));
