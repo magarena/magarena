@@ -6,7 +6,6 @@ import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.action.MagicCardAction;
-import magic.model.action.PlayCardAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.action.ReturnCardAction;
 import magic.model.choice.MagicChoice;
@@ -14,6 +13,7 @@ import magic.model.target.MagicGraveyardTargetPicker;
 
 import java.util.Arrays;
 import java.util.List;
+import magic.model.MagicMessage;
 
 public class MagicPutOntoBattlefieldEvent extends MagicEvent {
     
@@ -44,7 +44,10 @@ public class MagicPutOntoBattlefieldEvent extends MagicEvent {
                 if (event.isNo() == false) {
                     event.processTargetCard(game, new MagicCardAction() {
                         public void doAction(final MagicCard card) {
-                            game.logAppendMessage(event.getPlayer(), "Chosen (" + card + ").");
+                            game.logAppendMessage(
+                                event.getPlayer(),
+                                String.format("Chosen (%s).", MagicMessage.getCardToken(card))
+                            );
                             game.doAction(new ReturnCardAction(MagicLocationType.OwnersHand,card,event.getPlayer(),mods));
                         }
                     });
