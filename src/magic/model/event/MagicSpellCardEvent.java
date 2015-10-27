@@ -63,12 +63,12 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
                 if (spell.isKicked()) {
                     game.doAction(new ChangeCardDestinationAction(spell, MagicLocationType.OwnersHand));
                     game.logAppendMessage(
-					    event.getPlayer(), 
-						String.format("%s is put into %s's hand as it resolves.",
-						    MagicMessage.getCardToken(spell),
-							event.getPlayer()
-						)
-					);
+                        event.getPlayer(),
+                        String.format("%s is put into %s's hand as it resolves.",
+                            MagicMessage.getCardToken(spell),
+                            event.getPlayer()
+                        )
+                    );
                 }
             }
         };
