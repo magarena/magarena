@@ -11,6 +11,7 @@ import magic.model.event.MagicEventAction;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.stream.Collectors;
 import magic.model.MagicMessage;
 
 public class RevealAction extends MagicAction {
@@ -32,6 +33,7 @@ public class RevealAction extends MagicAction {
         game.doAction(new AIRevealAction(cards));
         final MagicPlayer you = cards.get(0).getController();
         final String message = you + " reveals " + cardNames(cards);
+        System.out.println(message);
         game.logAppendMessage(you, message);
         game.addEvent(new MagicEvent(
             MagicSource.NONE,
@@ -46,14 +48,9 @@ public class RevealAction extends MagicAction {
         //do nothing for now
     }
 
-    private static String cardNames(final Collection<MagicCard> cards) {
-        final StringBuffer sb = new StringBuffer();
-        for (final MagicCard card : cards) {
-            sb.append(MagicMessage.getCardToken(card));
-            sb.append(", ");
-        }
-        sb.delete(sb.length() - 2, sb.length());
-        sb.append('.');
-        return sb.toString();
+    public static String cardNames(final Collection<MagicCard> cards) {
+        return cards.stream()
+            .map(card -> MagicMessage.getCardToken(card))
+            .collect(Collectors.joining(", ", "", cards.isEmpty() ? "" : "."));
     }
 }
