@@ -33,7 +33,6 @@ public class RevealAction extends MagicAction {
         game.doAction(new AIRevealAction(cards));
         final MagicPlayer you = cards.get(0).getController();
         final String message = you + " reveals " + cardNames(cards);
-        System.out.println(message);
         game.logAppendMessage(you, message);
         game.addEvent(new MagicEvent(
             MagicSource.NONE,
