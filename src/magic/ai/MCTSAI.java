@@ -182,12 +182,12 @@ public class MCTSAI implements MagicAI {
         return startGame.map(RCHOICES.get(bestC));
     }
 
-    private Runnable genSimulationTask(final MagicGame rootGame, final LinkedList<MCTSGameTree> path, final BlockingQueue<Runnable> queue) {
+    private Runnable genSimulationTask(final MagicGame rootGame, final LinkedList<MCTSGameTree> path, final BlockingQueue<Runnable> queue, final long END_TIME) {
         return new Runnable() {
             @Override
             public void run() {
                 // propagate result of random play up the path
-                final double score = randomPlay(path.getLast(), rootGame);
+                final double score = randomPlay(path.getLast(), rootGame, END_TIME);
                 queue.offer(genBackpropagationTask(score, path));
             }
         };
@@ -250,7 +250,7 @@ public class MCTSAI implements MagicAI {
         // submit random play to executor
         if (running) {
             try {
-                executor.execute(genSimulationTask(rootGame, path, queue));
+                executor.execute(genSimulationTask(rootGame, path, queue, END_TIME));
             } catch (RejectedExecutionException e) {
                 // occurs when trying to submit to a execute that has shutdown
                 return;
@@ -422,7 +422,7 @@ public class MCTSAI implements MagicAI {
     }
 
     //returns a reward in the range [0, 1]
-    private double randomPlay(final MCTSGameTree node, final MagicGame game) {
+    private double randomPlay(final MCTSGameTree node, final MagicGame game, final long END_TIME) {
         //terminal node, no need for random play
         if (game.isFinished()) {
             if (game.getLosingPlayer() == game.getScorePlayer()) {
@@ -437,7 +437,7 @@ public class MCTSAI implements MagicAI {
         if (!CHEAT) {
             game.showRandomizedHiddenCards();
         }
-        final int[] counts = runSimulation(game);
+        final int[] counts = runSimulation(game, END_TIME);
 
         //System.err.println("COUNTS:\t" + counts[0] + "\t" + counts[1]);
 
@@ -452,7 +452,7 @@ public class MCTSAI implements MagicAI {
         }
     }
     
-    private int[] runSimulation(final MagicGame game) {
+    private int[] runSimulation(final MagicGame game, final long END_TIME) {
 
         int aiChoices = 0;
         int oppChoices = 0;
@@ -461,7 +461,10 @@ public class MCTSAI implements MagicAI {
         game.setFastChoices(true);
 
         // simulate game until it is finished or reached MAX_CHOICES
-        while (game.advanceToNextEventWithChoice() && aiChoices < MAX_CHOICES && oppChoices < MAX_CHOICES) {
+        while (game.advanceToNextEventWithChoice() && 
+               aiChoices < MAX_CHOICES && 
+               oppChoices < MAX_CHOICES &&
+               System.currentTimeMillis() < END_TIME) {
             final MagicEvent event = game.getNextEvent();
             
             if (event.getPlayer() == game.getScorePlayer()) {
@@ -473,7 +476,9 @@ public class MCTSAI implements MagicAI {
             //get simulation choice and execute
             final Object[] choice = event.getSimulationChoiceResult(game);
             assert choice != null : "ERROR! No choice found during MCTS sim";
-            game.executeNextEvent(choice);
+            if (System.currentTimeMillis() < END_TIME) {
+                game.executeNextEvent(choice);
+            }
 
             //terminate early if score > MIN_SCORE or score < -MIN_SCORE
             if (game.getScore() < -MIN_SCORE) {
