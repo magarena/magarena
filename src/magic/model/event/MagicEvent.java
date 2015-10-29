@@ -9,8 +9,8 @@ import magic.model.MagicColor;
 import magic.model.MagicCopyMap;
 import magic.model.MagicCopyable;
 import magic.model.MagicGame;
-import magic.model.MagicObject;
 import magic.model.MagicMessage;
+import magic.model.MagicObjectImpl;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentList;
@@ -692,7 +692,7 @@ public class MagicEvent implements MagicCopyable {
             targetPicker.hashCode(),
             action.hashCode(),
             description.hashCode(),
-            MagicObject.getStateId(ref),
+            MagicObjectImpl.getStateId(ref),
         });
     }
 

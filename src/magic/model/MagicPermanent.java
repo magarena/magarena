@@ -33,7 +33,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class MagicPermanent implements MagicSource,MagicTarget,Comparable<MagicPermanent>,MagicMappable<MagicPermanent> {
+public class MagicPermanent extends MagicObjectImpl implements MagicSource,MagicTarget,Comparable<MagicPermanent>,MagicMappable<MagicPermanent> {
 
     public static final int NO_COLOR_FLAGS=-1;
 

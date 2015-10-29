@@ -15,7 +15,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class MagicCard implements MagicSource,MagicTarget,Comparable<MagicCard>,MagicMappable<MagicCard> {
+public class MagicCard
+    extends MagicObjectImpl
+    implements MagicSource,MagicTarget,Comparable<MagicCard>,MagicMappable<MagicCard> {
 
     public static final MagicCard NONE = new MagicCard(MagicCardDefinition.UNKNOWN, MagicPlayer.NONE, 0) {
         @Override

@@ -7,12 +7,13 @@ import magic.model.MagicCopyMap;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicMappable;
+import magic.model.MagicObjectImpl;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
 
-public class MagicTargetNone implements MagicTarget, MagicMappable<MagicTargetNone> {
+public class MagicTargetNone extends MagicObjectImpl implements MagicTarget, MagicMappable<MagicTargetNone> {
 
     private static final MagicTarget INSTANCE=new MagicTargetNone();
 
