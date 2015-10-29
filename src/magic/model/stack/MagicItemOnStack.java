@@ -7,7 +7,6 @@ import magic.model.MagicCopyMap;
 import magic.model.MagicGame;
 import magic.model.MagicMappable;
 import magic.model.MagicObject;
-import magic.model.MagicObjectImpl;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
@@ -20,7 +19,7 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetNone;
 
-public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicTarget, MagicMappable<MagicItemOnStack> {
+public abstract class MagicItemOnStack implements MagicTarget, MagicMappable<MagicItemOnStack> {
 
     private final MagicSource source;
     private final MagicPlayer controller;
@@ -204,7 +203,7 @@ public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicT
     private long getStateId(final Object[] arr) {
         final long[] keys = new long[arr.length];
         for (int i = 0; i < arr.length; i++) {
-            keys[i] = MagicObjectImpl.getStateId(arr[i]);
+            keys[i] = MagicObject.getStateId(arr[i]);
         }
         return magic.model.MurmurHash3.hash(keys);
     }
