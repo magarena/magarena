@@ -3252,15 +3252,22 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final int pIdx = event.getPlayer().getIndex();
-                    game.doAction(new AddStaticAction(new MagicStatic(MagicLayer.Game, MagicStatic.UntilEOT) {
-                        @Override
-                        public void modGame(final MagicPermanent source, final MagicGame game) {
-                            for (MagicPermanent perm : filter.filter(game.getPlayer(pIdx))) {
-                                perm.addAbility(abilityList);
-                            }
+                    if (filter.isStatic()) {
+                        final Collection<MagicPermanent> targets = filter.filter(event);
+                        for (final MagicPermanent creature : targets) {
+                            game.doAction(new GainAbilityAction(creature,abilityList));
                         }
-                    }));
+                    } else {
+                        final int pIdx = event.getPlayer().getIndex();
+                        game.doAction(new AddStaticAction(new MagicStatic(MagicLayer.Game, MagicStatic.UntilEOT) {
+                            @Override
+                            public void modGame(final MagicPermanent source, final MagicGame game) {
+                                for (MagicPermanent perm : filter.filter(game.getPlayer(pIdx))) {
+                                    perm.addAbility(abilityList);
+                                }
+                            }
+                        }));
+                    }
                 }
             };
         }

@@ -915,12 +915,20 @@ public class MagicTargetFilterFactory {
             final MagicPermanent perm = (MagicPermanent)source;
             return perm.getEnchantedPermanent() == target;
         }
+        @Override
+        public boolean isStatic() {
+            return true;
+        }
     };
 
     public static final MagicPermanentFilterImpl ENCHANTED_ARTIFACT = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
             final MagicPermanent perm = (MagicPermanent)source;
             return perm.getEnchantedPermanent() == target && target.isArtifact();
+        }
+        @Override
+        public boolean isStatic() {
+            return true;
         }
     };
 
@@ -929,12 +937,9 @@ public class MagicTargetFilterFactory {
             final MagicPermanent perm = (MagicPermanent)source;
             return perm.getEnchantedPermanent() == target && target.isCreature();
         }
-    };
-
-    public static final MagicPermanentFilterImpl CREATURE_WITH_ANOTHER_AURA = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
-            final int amount = source.isPermanent() && source.hasSubType(MagicSubType.Aura) ? 1 : 0;
-            return target.isCreature() && target.getAuraPermanents().size() >= 1+amount;
+        @Override
+        public boolean isStatic() {
+            return true;
         }
     };
 
@@ -943,12 +948,27 @@ public class MagicTargetFilterFactory {
             final MagicPermanent perm = (MagicPermanent)source;
             return perm.getEnchantedPermanent() == target && target.isLand();
         }
+        @Override
+        public boolean isStatic() {
+            return true;
+        }
     };
 
     public static final MagicPermanentFilterImpl EQUIPPED_CREATURE = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             final MagicPermanent perm = (MagicPermanent)source;
             return perm.getEquippedCreature() == target && target.isCreature();
+        }
+        @Override
+        public boolean isStatic() {
+            return true;
+        }
+    };
+
+    public static final MagicPermanentFilterImpl CREATURE_WITH_ANOTHER_AURA = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            final int amount = source.isPermanent() && source.hasSubType(MagicSubType.Aura) ? 1 : 0;
+            return target.isCreature() && target.getAuraPermanents().size() >= 1+amount;
         }
     };
 
