@@ -29,6 +29,9 @@ import magic.data.MagicIcon;
 import magic.ui.CardImagesProvider;
 import magic.translate.UiString;
 import magic.translate.StringContext;
+import magic.ui.canvas.cards.ICardsCanvasListener;
+import magic.ui.deck.editor.DeckEditorSideBarPanel;
+import magic.ui.utility.GraphicsUtils;
 
 @SuppressWarnings("serial")
 public class DeckTiledCardsScreen
@@ -68,19 +71,58 @@ public class DeckTiledCardsScreen
 
     private final static Dimension cardSize = CardImagesProvider.PREFERRED_CARD_SIZE;
 
-    private final CardsCanvas content;
+    private final ContentPanel content;
     private final MagicDeck deck;
     private final StatusPanel statusPanel;
 
     public DeckTiledCardsScreen(final MagicDeck deck) {
         this.deck = deck;
         this.statusPanel = new StatusPanel(deck.getName(), getCardTypeCaption(CardTypeFilter.ALL, deck.size()));
-        content = new CardsCanvas(cardSize);
-        content.setAnimationEnabled(false);
-        content.setStackDuplicateCards(true);
-        content.setLayoutMode(LayoutMode.SCALE_TO_FIT);
-        content.refresh(getFilteredDeck(deck, CardTypeFilter.ALL), cardSize);
+        content = new ContentPanel();
         setContent(content);
+    }
+
+    private class ContentPanel extends JPanel implements ICardsCanvasListener {
+
+        private final DeckEditorSideBarPanel sidebar;
+        private final CardsCanvas canvas;
+
+        public ContentPanel() {
+
+            sidebar = new DeckEditorSideBarPanel();
+            sidebar.getStatsViewer().setDeck(deck);
+
+            canvas = new CardsCanvas(cardSize);
+            canvas.setListener(this);
+            canvas.setAnimationEnabled(false);
+            canvas.setStackDuplicateCards(true);
+            canvas.setLayoutMode(LayoutMode.SCALE_TO_FIT);
+            canvas.refresh(getFilteredDeck(deck, CardTypeFilter.ALL), cardSize);
+
+            setLayout(new MigLayout("insets 0, gap 0"));
+            refreshLayout();
+
+            setOpaque(false);
+
+        }
+
+        public void refreshLayout() {
+            removeAll();
+            add(sidebar, "h 100%, w " + GraphicsUtils.getMaxCardImageSize().width + "!, hidemode 3");
+            add(canvas, "w 100%, h 100%");
+            revalidate();
+        }
+
+        public void refresh(List<MagicCard> cards, Dimension cardSize) {
+            sidebar.setCard(MagicCardDefinition.UNKNOWN);
+            canvas.refresh(cards, cardSize);
+        }
+
+        @Override
+        public void cardSelected(MagicCard aCard) {
+            sidebar.setCard(aCard.getCardDefinition());
+        }
+
     }
 
     private List<MagicCard> getFilteredDeck(final MagicDeck deck, final CardTypeFilter filterType) {

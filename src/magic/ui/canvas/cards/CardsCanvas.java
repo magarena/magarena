@@ -56,6 +56,7 @@ public class CardsCanvas extends JPanel {
     private Dimension canvasSize;
     private int currentCardIndex = -1;
     private boolean refreshLayout = false;
+    private ICardsCanvasListener listener = new NullCardsCanvasListener();
 
     // CTR
     public CardsCanvas(final Dimension preferredCardSize) {
@@ -69,6 +70,11 @@ public class CardsCanvas extends JPanel {
 
         setMouseListener();
         setMouseMotionListener();
+
+    }
+
+    public void setListener(ICardsCanvasListener aListener) {
+        this.listener = aListener;
     }
     
     private void setMouseListener() {
@@ -100,6 +106,9 @@ public class CardsCanvas extends JPanel {
             public void mouseMoved(final MouseEvent event) {
                 final int cardIndex = getCardIndexAt(event.getX(), event.getY());
                 if (currentCardIndex != cardIndex) {
+                    if (cardIndex >= 0) {
+                        listener.cardSelected(cards.get(cardIndex).getMagicCard());
+                    }
                     currentCardIndex = cardIndex;
                     repaint();
                 }
