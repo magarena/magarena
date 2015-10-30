@@ -99,10 +99,14 @@ public class DeckTiledCardsScreen
             canvas.setLayoutMode(LayoutMode.SCALE_TO_FIT);
             canvas.refresh(getFilteredDeck(deck, CardTypeFilter.ALL), cardSize);
 
+            setOpaque(false);
             setLayout(new MigLayout("insets 0, gap 0"));
             refreshLayout();
 
-            setOpaque(false);
+            sidebar.setCard(deck.isEmpty() 
+                ? MagicCardDefinition.UNKNOWN
+                : deck.get(0)
+            );
 
         }
 
@@ -114,7 +118,10 @@ public class DeckTiledCardsScreen
         }
 
         public void refresh(List<MagicCard> cards, Dimension cardSize) {
-            sidebar.setCard(MagicCardDefinition.UNKNOWN);
+            sidebar.setCard(cards.isEmpty() 
+                ? MagicCardDefinition.UNKNOWN
+                : cards.get(0).getCardDefinition()
+            );
             canvas.refresh(cards, cardSize);
         }
 
