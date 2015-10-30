@@ -120,6 +120,7 @@ public class MagicMessage {
     public static String getTokenizedCardNames(final Collection<MagicCard> cards) {
         return cards.stream()
             .map(card -> MagicMessage.getCardToken(card))
+            .sorted()
             .collect(Collectors.joining(", ", "", cards.isEmpty() ? "" : "."));
     }
 
