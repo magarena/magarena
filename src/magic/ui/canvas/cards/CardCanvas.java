@@ -9,7 +9,7 @@ import magic.ui.CachedImagesProvider;
 
 final class CardCanvas {
 
-    private final Dimension cardSize;
+    private Dimension cardSize;
     private Point position;
     private final Rectangle boundary = new Rectangle();
     private final MagicCard card;
@@ -50,6 +50,14 @@ final class CardCanvas {
 
     public BufferedImage getBackImage() {
         return null;
+    }
+
+    Rectangle getBounds() {
+        return new Rectangle(position, cardSize);
+    }
+
+    void setSize(int cardWidth, int cardHeight) {
+        cardSize = new Dimension(cardWidth, cardHeight);
     }
 
 }
