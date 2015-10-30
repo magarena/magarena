@@ -41,7 +41,7 @@ public class MillLibraryAction extends MagicAction {
                     "%s puts the top %d cards of his or her library into his or her graveyard. (%s)",
                     player,
                     count,
-                    MagicMessage.getTokenizedCardNames(topN)
+                    count > 5 ? "..." : MagicMessage.getTokenizedCardNames(topN)
                 )
             );
         }
