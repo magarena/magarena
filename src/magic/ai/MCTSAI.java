@@ -351,7 +351,7 @@ public class MCTSAI implements MagicAI {
         path.add(curr);
 
         for (List<Object[]> choices = getNextChoices(game);
-             !choices.isEmpty();
+             !choices.isEmpty() && !Thread.currentThread().isInterrupted();
              choices = getNextChoices(game)) {
 
             assert choices.size() > 0 : "ERROR! No choice at start of genNewTreeNode";
@@ -461,7 +461,10 @@ public class MCTSAI implements MagicAI {
         game.setFastChoices(true);
 
         // simulate game until it is finished or reached MAX_CHOICES
-        while (game.advanceToNextEventWithChoice() && aiChoices < MAX_CHOICES && oppChoices < MAX_CHOICES) {
+        while (aiChoices < MAX_CHOICES &&
+               oppChoices < MAX_CHOICES &&
+               !Thread.currentThread().isInterrupted() &&
+               game.advanceToNextEventWithChoice()) {
             final MagicEvent event = game.getNextEvent();
             
             if (event.getPlayer() == game.getScorePlayer()) {
