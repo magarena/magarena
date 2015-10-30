@@ -3,7 +3,6 @@ package magic.model.action;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-import java.util.stream.Collectors;
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicMessage;
@@ -32,7 +31,7 @@ public class RevealAction extends MagicAction {
         }
         game.doAction(new AIRevealAction(cards));
         final MagicPlayer you = cards.get(0).getController();
-        final String message = you + " reveals " + cardNames(cards);
+        final String message = you + " reveals " + MagicMessage.getTokenizedCardNames(cards);
         game.logAppendMessage(you, message);
         game.addEvent(new MagicEvent(
             MagicSource.NONE,
@@ -48,9 +47,4 @@ public class RevealAction extends MagicAction {
         //do nothing for now
     }
 
-    public static String cardNames(final Collection<MagicCard> cards) {
-        return cards.stream()
-            .map(card -> MagicMessage.getCardToken(card))
-            .collect(Collectors.joining(", ", "", cards.isEmpty() ? "" : "."));
-    }
 }

@@ -2,6 +2,7 @@ package magic.model;
 
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.stream.Collectors;
 import magic.model.phase.MagicPhaseType;
 import magic.model.stack.MagicCardOnStack;
 
@@ -114,6 +115,12 @@ public class MagicMessage {
 
         return obj.toString();
 
+    }
+
+    public static String getTokenizedCardNames(final Collection<MagicCard> cards) {
+        return cards.stream()
+            .map(card -> MagicMessage.getCardToken(card))
+            .collect(Collectors.joining(", ", "", cards.isEmpty() ? "" : "."));
     }
 
 }

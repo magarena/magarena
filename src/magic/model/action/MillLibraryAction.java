@@ -8,6 +8,7 @@ import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
 
 import java.util.List;
+import magic.model.MagicMessage;
 
 public class MillLibraryAction extends MagicAction {
 
@@ -36,8 +37,12 @@ public class MillLibraryAction extends MagicAction {
             setScore(player,ArtificialScoringSystem.getMillScore(count));
             game.logMessage(
                 player,
-                player + " puts the top " + count +
-                " cards of his or her library into his or her graveyard."
+                String.format(
+                    "%s puts the top %d cards of his or her library into his or her graveyard. (%s)",
+                    player,
+                    count,
+                    MagicMessage.getTokenizedCardNames(topN)
+                )
             );
         }
     }
