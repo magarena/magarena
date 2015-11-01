@@ -1,9 +1,10 @@
 name=Wrecking Ball
-image=http://magiccards.info/scans/en/mm2/189.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/cmd/238.jpg
+value=3.304
+removal=4
+rarity=C
 type=Instant
 cost={2}{B}{R}
-effect=Destroy target creature or land.
 timing=removal
+effect=Destroy target creature or land.
 oracle=Destroy target creature or land.

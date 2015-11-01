@@ -1,7 +1,7 @@
 name=Lotus Petal
-image=http://magiccards.info/scans/en/tpr/225.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/tp/284.jpg
+value=4.595
+rarity=M
 type=Artifact
 cost={0}
 ability={T}, Sacrifice SN: Add one mana of any color to your mana pool.

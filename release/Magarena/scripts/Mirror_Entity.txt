@@ -1,12 +1,12 @@
 name=Mirror Entity
-image=http://magiccards.info/scans/en/mm2/26.jpg
-value=2.500
+image=http://magiccards.info/scans/en/c13/17.jpg
+value=4.050
 rarity=R
 type=Creature
 subtype=Shapeshifter
 cost={2}{W}
 pt=1/1
-ability=Changeling
+ability=changeling
 timing=fmain
 requires_groovy_code
 oracle=Changeling\n{X}: Until end of turn, creatures you control have base power and toughness X/X and gain all creature types.

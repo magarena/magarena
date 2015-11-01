@@ -1,12 +1,12 @@
 name=Pelakka Wurm
-image=http://magiccards.info/scans/en/mm2/154.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cns/172.jpg
+value=3.750
 rarity=U
 type=Creature
 subtype=Wurm
 cost={4}{G}{G}{G}
 pt=7/7
-ability=Trample;\
+ability=trample;\
         When SN enters the battlefield, you gain 7 life.;\
         When SN dies, draw a card.
 timing=fmain

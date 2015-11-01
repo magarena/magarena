@@ -1,6 +1,6 @@
 name=Pegasus Stampede
-image=http://magiccards.info/scans/en/tpr/24.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ex/14.jpg
+value=2.851
 rarity=U
 type=Sorcery
 cost={1}{W}

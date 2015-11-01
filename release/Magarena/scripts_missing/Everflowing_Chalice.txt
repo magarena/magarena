@@ -1,5 +1,5 @@
 name=Everflowing Chalice
-image=http://magiccards.info/scans/en/mm2/212.jpg
+image=http://magiccards.info/scans/en/c14/239.jpg
 value=2.500
 rarity=U
 type=Artifact

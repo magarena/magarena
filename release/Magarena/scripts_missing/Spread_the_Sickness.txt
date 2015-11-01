@@ -1,7 +1,7 @@
 name=Spread the Sickness
-image=http://magiccards.info/scans/en/mm2/98.jpg
+image=http://magiccards.info/scans/en/mbs/56.jpg
 value=2.500
-rarity=U
+rarity=C
 type=Sorcery
 cost={4}{B}
 effect=Destroy target creature, then proliferate.

@@ -1,6 +1,6 @@
 name=Curiosity
-image=http://magiccards.info/scans/en/tpr/44.jpg
-value=2.500
+image=http://magiccards.info/scans/en/isd/49.jpg
+value=4.083
 rarity=U
 type=Enchantment
 subtype=Aura

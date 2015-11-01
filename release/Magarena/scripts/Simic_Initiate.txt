@@ -1,11 +1,11 @@
 name=Simic Initiate
-image=http://magiccards.info/scans/en/mm2/162.jpg
-value=2.500
+image=http://magiccards.info/scans/en/di/92.jpg
+value=3.239
 rarity=C
 type=Creature
 subtype=Human,Mutant
 cost={G}
 pt=0/0
-ability=Graft 1
+ability=graft 1
 timing=main
 oracle=Graft 1

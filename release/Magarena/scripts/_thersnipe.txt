@@ -1,5 +1,5 @@
 name=Æthersnipe
-image=http://magiccards.info/scans/en/mm2/39.jpg
+image=http://magiccards.info/scans/en/mma/36.jpg
 value=3.643
 rarity=C
 type=Creature

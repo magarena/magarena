@@ -1,6 +1,6 @@
 name=Angelic Blessing
-image=http://magiccards.info/scans/en/tpr/1.jpg
-value=2.500
+image=http://magiccards.info/scans/en/10e/3.jpg
+value=2.727
 rarity=C
 type=Sorcery
 cost={2}{W}

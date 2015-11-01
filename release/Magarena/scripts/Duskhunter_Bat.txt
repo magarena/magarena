@@ -1,12 +1,11 @@
 name=Duskhunter Bat
-image=http://magiccards.info/scans/en/mm2/81.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddk/6.jpg
+value=3.062
 rarity=C
 type=Creature
 subtype=Bat
 cost={1}{B}
 pt=1/1
-ability=Bloodthirst 1;\
-        Flying
+ability=bloodthirst 1;flying
 timing=main
 oracle=Bloodthirst 1\nFlying

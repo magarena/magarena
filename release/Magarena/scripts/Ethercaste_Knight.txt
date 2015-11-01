@@ -1,11 +1,11 @@
 name=Ethercaste Knight
-image=http://magiccards.info/scans/en/mm2/175.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/arb/3.jpg
+value=3.061
+rarity=C
 type=Artifact,Creature
 subtype=Human,Knight
 cost={W}{U}
 pt=1/3
-ability=Exalted
+ability=exalted
 timing=fmain
 oracle=Exalted

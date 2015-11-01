@@ -1,7 +1,7 @@
 name=Eldrazi Temple
-image=http://magiccards.info/scans/en/ddp/68.jpg
+image=http://magiccards.info/scans/en/roe/227.jpg
 value=2.500
-rarity=U
+rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\
         {T}: Add {2} to your mana pool. Spend this mana only to cast colorless Eldrazi spells or activate abilities of colorless Eldrazi.

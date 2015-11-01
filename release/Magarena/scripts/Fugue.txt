@@ -1,6 +1,6 @@
 name=Fugue
-image=http://magiccards.info/scans/en/tpr/105.jpg
-value=2.500
+image=http://magiccards.info/scans/en/7e/137.jpg
+value=2.649
 rarity=U
 type=Sorcery
 cost={3}{B}{B}

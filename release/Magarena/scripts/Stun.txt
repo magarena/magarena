@@ -1,9 +1,9 @@
 name=Stun
-image=http://magiccards.info/scans/en/tpr/163.jpg
-value=2.500
+image=http://magiccards.info/scans/en/10e/240.jpg
+value=2.806
 rarity=C
 type=Instant
 cost={1}{R}
 effect=Target creature can't block this turn.~Draw a card.
-timing=attack
+timing=block
 oracle=Target creature can't block this turn.\nDraw a card.

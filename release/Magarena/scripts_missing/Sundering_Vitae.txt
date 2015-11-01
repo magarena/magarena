@@ -1,5 +1,5 @@
 name=Sundering Vitae
-image=http://magiccards.info/scans/en/mm2/163.jpg
+image=http://magiccards.info/scans/en/rav/185.jpg
 value=2.500
 rarity=C
 type=Instant

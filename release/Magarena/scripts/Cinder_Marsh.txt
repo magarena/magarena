@@ -1,10 +1,10 @@
 name=Cinder Marsh
-image=http://magiccards.info/scans/en/tpr/236.jpg
-value=2.500
+image=http://magiccards.info/scans/en/br/13.jpg
+value=2.732
 rarity=U
 type=Land
 mana=b2r2
 ability={T}: Add {1} to your mana pool.;\
         {T}: Add {B} or {R} to your mana pool. SN doesn't untap during your next untap step.
-timing=land
+timing=main
 oracle={T}: Add {1} to your mana pool.\n{T}: Add {B} or {R} to your mana pool. Cinder Marsh doesn't untap during your next untap step.

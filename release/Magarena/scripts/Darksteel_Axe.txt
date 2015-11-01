@@ -1,12 +1,12 @@
 name=Darksteel Axe
-image=http://magiccards.info/scans/en/mm2/208.jpg
-value=2.500
+image=http://magiccards.info/scans/en/som/149.jpg
+value=3.495
 rarity=U
 type=Artifact
 subtype=Equipment
 cost={1}
-ability=Indestructible;\
-        Equipped creature gets +2/+0.;\
+ability=indestructible;\
+        Equipped creature gets +2/+0;\
         Equip {2}
 timing=equipment
 oracle=Indestructible\nEquipped creature gets +2/+0.\nEquip {2}

@@ -1,10 +1,11 @@
 name=Fanning the Flames
-image=http://magiccards.info/scans/en/tpr/130.jpg
-value=2.500
-rarity=R
+image=http://magiccards.info/scans/en/sh/80.jpg
+value=3.764
+removal=3
+rarity=U
 type=Sorcery
 cost={X}{R}{R}
 timing=removal
-ability=Buyback {3}
+ability=buyback {3}
 requires_groovy_code
 oracle=Buyback {3}\nFanning the Flames deals X damage to target creature or player.

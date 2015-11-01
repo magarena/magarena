@@ -1,11 +1,11 @@
 name=Mage il-Vec
-image=http://magiccards.info/scans/en/tpr/140.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/ex/86.jpg
+value=1.478
+rarity=C
 type=Creature
 subtype=Human,Wizard
 cost={2}{R}
 pt=2/2
-ability={T}, Discard a card at random: SN deals 1 damage to target creature or player.
+ability={T},Discard a card at random:SN deals 1 damage to target creature or player.
 timing=main
 oracle={T}, Discard a card at random: Mage il-Vec deals 1 damage to target creature or player.

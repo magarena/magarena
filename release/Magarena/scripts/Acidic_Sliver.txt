@@ -1,11 +1,12 @@
 name=Acidic Sliver
-image=http://magiccards.info/scans/en/tpr/206.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sh/138.jpg
+value=3.976
 rarity=U
 type=Creature
 subtype=Sliver
 cost={B}{R}
 pt=2/2
-ability=All Slivers have "{2}, Sacrifice this permanent: This permanent deals 2 damage to target creature or player."
+static=all
+ability=All Slivers have "{2}, Sacrifice this permanent: SN deals 2 damage to target creature or player."
 timing=main
 oracle=All Slivers have "{2}, Sacrifice this permanent: This permanent deals 2 damage to target creature or player."

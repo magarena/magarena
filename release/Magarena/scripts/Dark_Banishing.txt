@@ -1,9 +1,9 @@
 name=Dark Banishing
-image=http://magiccards.info/scans/en/tpr/92.jpg
-value=2.500
+image=http://magiccards.info/scans/en/dvd/50.jpg
+value=3.911
 rarity=C
 type=Instant
 cost={2}{B}
-effect=Destroy target nonblack creature. It can't be regenerated.
 timing=removal
+effect=Destroy target nonblack creature. It can't be regenerated.
 oracle=Destroy target nonblack creature. It can't be regenerated.

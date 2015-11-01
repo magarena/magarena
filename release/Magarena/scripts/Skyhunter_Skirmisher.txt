@@ -1,11 +1,11 @@
 name=Skyhunter Skirmisher
-image=http://magiccards.info/scans/en/mm2/32.jpg
-value=2.500
-rarity=C
+image=http://magiccards.info/scans/en/c14/89.jpg
+value=3.931
+rarity=U
 type=Creature
 subtype=Cat,Knight
 cost={1}{W}{W}
 pt=1/1
-ability=Flying, double strike
+ability=flying;double strike
 timing=main
 oracle=Flying, double strike

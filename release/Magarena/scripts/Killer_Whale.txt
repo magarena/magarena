@@ -1,6 +1,6 @@
 name=Killer Whale
-image=http://magiccards.info/scans/en/tpr/55.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vma/76.jpg
+value=3.364
 rarity=U
 type=Creature
 subtype=Whale

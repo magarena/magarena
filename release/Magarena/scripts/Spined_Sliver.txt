@@ -1,11 +1,12 @@
 name=Spined Sliver
-image=http://magiccards.info/scans/en/tpr/213.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tsts/101.jpg
+value=4.306
 rarity=U
 type=Creature
 subtype=Sliver
 cost={R}{G}
 pt=2/2
+static=all
 timing=main
 requires_groovy_code
 oracle=Whenever a Sliver becomes blocked, that Sliver gets +1/+1 until end of turn for each creature blocking it.

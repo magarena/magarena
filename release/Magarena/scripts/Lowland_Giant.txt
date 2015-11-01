@@ -1,6 +1,6 @@
 name=Lowland Giant
-image=http://magiccards.info/scans/en/tpr/139.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bd/42.jpg
+value=2.871
 rarity=C
 type=Creature
 subtype=Giant

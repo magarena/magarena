@@ -1,6 +1,6 @@
 name=Dream Prowler
-image=http://magiccards.info/scans/en/tpr/47.jpg
-value=2.500
+image=http://magiccards.info/scans/en/9e/74.jpg
+value=2.915
 rarity=U
 type=Creature
 subtype=Illusion

@@ -1,9 +1,10 @@
 name=Smite
-image=http://magiccards.info/scans/en/tpr/28.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gtc/25.jpg
+value=3.976
+removal=3
 rarity=C
 type=Instant
 cost={W}
-effect=Destroy target blocked creature.
 timing=block
+effect=Destroy target blocked creature.
 oracle=Destroy target blocked creature.

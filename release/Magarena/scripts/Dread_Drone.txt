@@ -1,6 +1,6 @@
 name=Dread Drone
-image=http://magiccards.info/scans/en/mm2/80.jpg
-value=2.500
+image=http://magiccards.info/scans/en/roe/108.jpg
+value=2.580
 rarity=C
 type=Creature
 subtype=Eldrazi,Drone

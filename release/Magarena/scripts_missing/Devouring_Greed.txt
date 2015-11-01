@@ -1,7 +1,7 @@
 name=Devouring Greed
-image=http://magiccards.info/scans/en/mm2/78.jpg
+image=http://magiccards.info/scans/en/chk/110.jpg
 value=2.500
-rarity=U
+rarity=C
 type=Sorcery
 subtype=Arcane
 cost={2}{B}{B}

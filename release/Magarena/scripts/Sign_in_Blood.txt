@@ -1,6 +1,6 @@
 name=Sign in Blood
-image=http://magiccards.info/scans/en/mm2/97.jpg
-value=2.500
+image=http://magiccards.info/scans/en/c14/161.jpg
+value=3.500
 rarity=C
 type=Sorcery
 cost={B}{B}

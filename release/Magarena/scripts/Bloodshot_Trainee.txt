@@ -1,6 +1,6 @@
 name=Bloodshot Trainee
-image=http://magiccards.info/scans/en/mm2/107.jpg
-value=2.500
+image=http://magiccards.info/scans/en/som/85.jpg
+value=2.909
 rarity=U
 type=Creature
 subtype=Goblin,Warrior

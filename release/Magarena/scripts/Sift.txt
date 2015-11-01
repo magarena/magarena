@@ -1,6 +1,6 @@
 name=Sift
-image=http://magiccards.info/scans/en/tpr/67.jpg
-value=2.500
+image=http://magiccards.info/scans/en/10e/108.jpg
+value=3.170
 rarity=C
 type=Sorcery
 cost={3}{U}

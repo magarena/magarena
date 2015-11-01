@@ -1,6 +1,6 @@
 name=Water Servant
-image=http://magiccards.info/scans/en/mm2/69.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m14/80.jpg
+value=3.483
 rarity=U
 type=Creature
 subtype=Elemental

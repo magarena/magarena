@@ -1,6 +1,6 @@
 name=Horned Turtle
-image=http://magiccards.info/scans/en/tpr/53.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m10/55.jpg
+value=2.187
 rarity=C
 type=Creature
 subtype=Turtle

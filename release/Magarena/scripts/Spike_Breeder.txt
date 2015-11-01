@@ -1,13 +1,13 @@
 name=Spike Breeder
-image=http://magiccards.info/scans/en/tpr/194.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/sh/66.jpg
+value=3.719
+rarity=R
 type=Creature
 subtype=Spike
 cost={3}{G}
 pt=0/0
 ability=SN enters the battlefield with three +1/+1 counters on it.;\
-        {2}, Remove a +1/+1 counter from SN: Put a +1/+1 counter on target creature.;\
-        {2}, Remove a +1/+1 counter from SN: Put a 1/1 green Spike creature token onto the battlefield.
+        {2},Remove a +1/+1 counter from SN: Put a +1/+1 counter on target creature.;\
+        {2},Remove a +1/+1 counter from SN: Put a 1/1 green Spike creature token onto the battlefield.
 timing=main
 oracle=Spike Breeder enters the battlefield with three +1/+1 counters on it.\n{2}, Remove a +1/+1 counter from Spike Breeder: Put a +1/+1 counter on target creature.\n{2}, Remove a +1/+1 counter from Spike Breeder: Put a 1/1 green Spike creature token onto the battlefield.

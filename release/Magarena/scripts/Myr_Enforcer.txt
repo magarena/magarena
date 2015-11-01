@@ -1,6 +1,6 @@
 name=Myr Enforcer
-image=http://magiccards.info/scans/en/mm2/224.jpg
-value=2.500
+image=http://magiccards.info/scans/en/mma/209.jpg
+value=4.080
 rarity=C
 type=Artifact,Creature
 subtype=Myr

@@ -1,7 +1,7 @@
 name=Living Death
-image=http://magiccards.info/scans/en/tpr/109.jpg
+image=http://magiccards.info/scans/en/vma/126.jpg
 value=2.500
-rarity=M
+rarity=R
 type=Sorcery
 cost={3}{B}{B}
 effect=Each player exiles all creature cards from his or her graveyard, then sacrifices all creatures he or she controls, then puts all cards he or she exiled this way onto the battlefield.

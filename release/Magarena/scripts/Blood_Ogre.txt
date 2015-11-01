@@ -1,12 +1,11 @@
 name=Blood Ogre
-image=http://magiccards.info/scans/en/mm2/106.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddl/49.jpg
+value=3.700
 rarity=C
 type=Creature
 subtype=Ogre,Warrior
 cost={2}{R}
 pt=2/2
-ability=Bloodthirst 1;\
-        First strike
+ability=bloodthirst 1;first strike
 timing=main
 oracle=Bloodthirst 1\nFirst strike

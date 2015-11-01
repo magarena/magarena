@@ -1,9 +1,9 @@
 name=Rampant Growth
-image=http://magiccards.info/scans/en/mm2/157.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m12/190.jpg
+value=4.011
 rarity=C
 type=Sorcery
 cost={1}{G}
-effect=Search your library for a basic land card and put that card onto the battlefield tapped. Then shuffle your library.
+effect=Search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.
 timing=main
 oracle=Search your library for a basic land card and put that card onto the battlefield tapped. Then shuffle your library.

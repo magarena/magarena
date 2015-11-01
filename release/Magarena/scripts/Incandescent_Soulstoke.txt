@@ -1,7 +1,7 @@
 name=Incandescent Soulstoke
-image=http://magiccards.info/scans/en/mm2/119.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/lw/178.jpg
+value=4.233
+rarity=R
 type=Creature
 subtype=Elemental,Shaman
 cost={2}{R}

@@ -1,7 +1,7 @@
 name=Etched Monstrosity
-image=http://magiccards.info/scans/en/mm2/210.jpg
-value=2.500
-rarity=R
+image=http://magiccards.info/scans/en/nph/135.jpg
+value=3.660
+rarity=M
 type=Artifact,Creature
 subtype=Golem
 cost={5}

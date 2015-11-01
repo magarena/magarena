@@ -1,10 +1,10 @@
 name=Elvish Fury
-image=http://magiccards.info/scans/en/tpr/170.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tp/120.jpg
+value=2.868
 rarity=C
 type=Instant
 cost={G}
-ability=Buyback {4}
+ability=buyback {4}
 effect=Target creature gets +2/+2 until end of turn.
 timing=pump
 oracle=Buyback {4}\nTarget creature gets +2/+2 until end of turn.

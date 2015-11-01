@@ -1,11 +1,12 @@
 name=Hibernation Sliver
-image=http://magiccards.info/scans/en/tpr/209.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sh/140.jpg
+value=4.145
 rarity=U
 type=Creature
 subtype=Sliver
 cost={U}{B}
 pt=2/2
-ability=All Slivers have "Pay 2 life: Return this permanent to its owner's hand."
+ability=all slivers have "Pay 2 life: Return SN to its owner's hand."
+static=all
 timing=main
 oracle=All Slivers have "Pay 2 life: Return this permanent to its owner's hand."

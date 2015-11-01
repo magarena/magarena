@@ -1,6 +1,6 @@
 name=Nest Invader
-image=http://magiccards.info/scans/en/mm2/150.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pc2/69.jpg
+value=3.891
 rarity=C
 type=Creature
 subtype=Eldrazi,Drone

@@ -1,6 +1,6 @@
 name=Battlegrace Angel
-image=http://magiccards.info/scans/en/mm2/10.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ala/6.jpg
+value=3.898
 rarity=R
 type=Creature
 subtype=Angel

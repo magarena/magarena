@@ -1,9 +1,9 @@
 name=Shatter
-image=http://magiccards.info/scans/en/tpr/159.jpg
+image=http://magiccards.info/scans/en/ktk/120.jpg
 value=2.500
 rarity=C
 type=Instant
 cost={1}{R}
-effect=Destroy target artifact.
 timing=removal
+effect=Destroy target artifact.
 oracle=Destroy target artifact.

@@ -1,12 +1,12 @@
 name=Scavenger Drake
-image=http://magiccards.info/scans/en/mm2/93.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ala/85.jpg
+value=2.897
 rarity=U
 type=Creature
 subtype=Drake
 cost={3}{B}
 pt=1/1
-ability=Flying;\
+ability=flying;\
         Whenever another creature dies, you may put a +1/+1 counter on SN.
 timing=main
 oracle=Flying\nWhenever another creature dies, you may put a +1/+1 counter on Scavenger Drake.

@@ -1,6 +1,6 @@
 name=Overwhelming Stampede
-image=http://magiccards.info/scans/en/mm2/153.jpg
-value=2.500
+image=http://magiccards.info/scans/en/c14/208.jpg
+value=4.258
 rarity=R
 type=Sorcery
 cost={3}{G}{G}

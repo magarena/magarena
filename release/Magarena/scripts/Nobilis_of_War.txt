@@ -1,12 +1,11 @@
 name=Nobilis of War
-image=http://magiccards.info/scans/en/mm2/195.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddl/15.jpg
+value=4.182
 rarity=R
 type=Creature
 subtype=Spirit,Avatar
 cost={R/W}{R/W}{R/W}{R/W}{R/W}
 pt=3/4
-ability=Flying;\
-        Attacking creatures you control get +2/+0.
-timing=fmain
+ability=flying;attacking creatures you control get +2/+0
+timing=main
 oracle=Flying\nAttacking creatures you control get +2/+0.

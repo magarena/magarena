@@ -1,13 +1,14 @@
 name=Creakwood Liege
-image=http://magiccards.info/scans/en/mm2/191.jpg
-value=2.500
+image=http://magiccards.info/scans/en/eve/117.jpg
+value=4.205
 rarity=R
 type=Creature
 subtype=Horror
 cost={1}{B/G}{B/G}{B/G}
 pt=2/2
-ability=Other black creatures you control get +1/+1.;\
-        Other green creatures you control get +1/+1.;\
+ability=other black creatures you control get +1/+1;\
+        other green creatures you control get +1/+1;\
         At the beginning of your upkeep, you may put a 1/1 black and green Worm creature token onto the battlefield.
+static=player
 timing=main
 oracle=Other black creatures you control get +1/+1.\nOther green creatures you control get +1/+1.\nAt the beginning of your upkeep, you may put a 1/1 black and green Worm creature token onto the battlefield.

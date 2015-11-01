@@ -1,7 +1,7 @@
 name=Elven Rite
-image=http://magiccards.info/scans/en/tpr/169.jpg
+image=http://magiccards.info/scans/en/sh/56.jpg
 value=2.500
-rarity=C
+rarity=U
 type=Sorcery
 cost={1}{G}
 effect=Distribute two +1/+1 counters among one or two target creatures.

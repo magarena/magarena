@@ -1,12 +1,12 @@
 name=Wall of Souls
-image=http://magiccards.info/scans/en/tpr/123.jpg
-value=2.500
+image=http://magiccards.info/scans/en/sh/25.jpg
+value=4.255
 rarity=U
 type=Creature
 subtype=Wall
 cost={1}{B}
 pt=0/4
-ability=Defender
-timing=smain
+ability=defender
+timing=main
 requires_groovy_code
 oracle=Defender\nWhenever Wall of Souls is dealt combat damage, it deals that much damage to target opponent.

@@ -1,9 +1,10 @@
 name=Celestial Purge
-image=http://magiccards.info/scans/en/mm2/11.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m12/11.jpg
+value=3.645
+removal=4
 rarity=U
 type=Instant
 cost={1}{W}
-effect=Exile target black or red permanent.
 timing=removal
+effect=Exile target black or red permanent.
 oracle=Exile target black or red permanent.

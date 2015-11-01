@@ -1,11 +1,11 @@
 name=Master Decoy
-image=http://magiccards.info/scans/en/tpr/18.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddn/50.jpg
+value=2.000
 rarity=C
 type=Creature
 subtype=Human,Soldier
 cost={1}{W}
 pt=1/2
-ability={W}, {T}: Tap target creature.
+ability={W},{T}:Tap target creature.
 timing=main
 oracle={W}, {T}: Tap target creature.

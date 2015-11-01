@@ -1,6 +1,6 @@
 name=Spike Hatcher
-image=http://magiccards.info/scans/en/tpr/197.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ex/126.jpg
+value=3.290
 rarity=R
 type=Creature
 subtype=Spike

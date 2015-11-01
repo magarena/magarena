@@ -1,7 +1,7 @@
 name=Orzhov Basilica
-image=http://magiccards.info/scans/en/mm2/246.jpg
+image=http://magiccards.info/scans/en/c13/311.jpg
 value=2.500
-rarity=U
+rarity=C
 type=Land
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, return a land you control to its owner's hand.;\

@@ -1,5 +1,5 @@
 name=Dark Ritual
-image=http://magiccards.info/scans/en/tpr/93.jpg
+image=http://magiccards.info/scans/en/vma/113.jpg
 value=2.500
 rarity=C
 type=Instant

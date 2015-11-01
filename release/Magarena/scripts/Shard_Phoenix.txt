@@ -1,7 +1,7 @@
 name=Shard Phoenix
-image=http://magiccards.info/scans/en/tpr/158.jpg
+image=http://magiccards.info/scans/en/9e/217.jpg
 value=2.500
-rarity=M
+rarity=R
 type=Creature
 subtype=Phoenix
 cost={4}{R}

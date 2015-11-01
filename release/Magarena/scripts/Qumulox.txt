@@ -1,12 +1,12 @@
 name=Qumulox
-image=http://magiccards.info/scans/en/mm2/54.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddf/59.jpg
+value=4.069
 rarity=U
 type=Creature
 subtype=Beast
 cost={6}{U}{U}
 pt=5/4
-ability=Affinity for artifacts;\
+ability=Affinity for artifacts.;\
         Flying
 timing=main
 oracle=Affinity for artifacts\nFlying

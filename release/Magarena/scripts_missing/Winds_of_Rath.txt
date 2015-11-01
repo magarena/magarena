@@ -1,5 +1,5 @@
 name=Winds of Rath
-image=http://magiccards.info/scans/en/tpr/40.jpg
+image=http://magiccards.info/scans/en/vma/53.jpg
 value=2.500
 rarity=R
 type=Sorcery

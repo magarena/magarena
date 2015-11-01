@@ -1,9 +1,9 @@
 name=Counterspell
-image=http://magiccards.info/scans/en/tpr/43.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/vma/64.jpg
+value=4.500
+rarity=C
 type=Instant
 cost={U}{U}
-effect=Counter target spell.
 timing=counter
+effect=Counter target spell.
 oracle=Counter target spell.

@@ -1,12 +1,11 @@
 name=Ghostly Changeling
-image=http://magiccards.info/scans/en/mm2/83.jpg
-value=2.500
-rarity=C
+image=http://magiccards.info/scans/en/lw/116.jpg
+value=2.684
+rarity=U
 type=Creature
 subtype=Shapeshifter
 cost={2}{B}
 pt=2/2
-ability=Changeling;\
-        {1}{B}: SN gets +1/+1 until end of turn.
+ability=changeling;{1}{B}: SN gets +1/+1 until end of turn.
 timing=main
 oracle=Changeling\n{1}{B}: Ghostly Changeling gets +1/+1 until end of turn.

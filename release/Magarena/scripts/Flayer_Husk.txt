@@ -1,6 +1,6 @@
 name=Flayer Husk
-image=http://magiccards.info/scans/en/mm2/214.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pc2/110.jpg
+value=3.500
 rarity=C
 type=Artifact
 subtype=Equipment

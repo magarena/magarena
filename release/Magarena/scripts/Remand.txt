@@ -1,6 +1,6 @@
 name=Remand
-image=http://magiccards.info/scans/en/mm2/55.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddm/26.jpg
+value=4.653
 rarity=U
 type=Instant
 cost={1}{U}

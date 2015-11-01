@@ -1,7 +1,7 @@
 name=Recurring Nightmare
-image=http://magiccards.info/scans/en/tpr/113.jpg
-value=2.500
-rarity=M
+image=http://magiccards.info/scans/en/vma/137.jpg
+value=4.500
+rarity=R
 type=Enchantment
 cost={2}{B}
 ability=Sacrifice a creature, Return SN to its owner's hand: Return target creature card from your graveyard to the battlefield. Activate this ability only any time you could cast a sorcery.

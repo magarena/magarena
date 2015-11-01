@@ -1,7 +1,7 @@
 name=Eye of Ugin
-image=http://magiccards.info/scans/en/mm2/242.jpg
+image=http://magiccards.info/scans/en/wwk/136.jpg
 value=2.500
-rarity=R
+rarity=M
 type=Legendary,Land
 ability=Colorless Eldrazi spells you cast cost {2} less to cast.;\
         {7}, {T}: Search your library for a colorless creature card, reveal it, and put it into your hand. Then shuffle your library.

@@ -1,6 +1,6 @@
 name=Rats of Rath
-image=http://magiccards.info/scans/en/tpr/111.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tp/44.jpg
+value=3.000
 rarity=C
 type=Creature
 subtype=Rat

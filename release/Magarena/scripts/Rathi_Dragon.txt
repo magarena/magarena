@@ -1,6 +1,6 @@
 name=Rathi Dragon
-image=http://magiccards.info/scans/en/tpr/150.jpg
-value=2.500
+image=http://magiccards.info/scans/en/9e/210.jpg
+value=3.796
 rarity=R
 type=Creature
 subtype=Dragon

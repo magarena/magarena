@@ -1,6 +1,6 @@
 name=Kitesail
-image=http://magiccards.info/scans/en/mm2/218.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m13/208.jpg
+value=2.329
 rarity=C
 type=Artifact
 subtype=Equipment

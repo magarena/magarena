@@ -1,7 +1,7 @@
 name=Cytoplast Root-Kin
-image=http://magiccards.info/scans/en/mm2/143.jpg
+image=http://magiccards.info/scans/en/di/81.jpg
 value=2.500
-rarity=U
+rarity=R
 type=Creature
 subtype=Elemental,Mutant
 cost={2}{G}{G}

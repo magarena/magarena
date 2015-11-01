@@ -1,12 +1,11 @@
 name=Ephemeron
-image=http://magiccards.info/scans/en/tpr/48.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vma/66.jpg
+value=3.427
 rarity=R
 type=Creature
 subtype=Illusion
 cost={4}{U}{U}
 pt=4/4
-ability=Flying;\
-        Discard a card: Return SN to its owner's hand.
+ability=flying;Discard a card:Return SN to its owner's hand.
 timing=main
 oracle=Flying\nDiscard a card: Return Ephemeron to its owner's hand.

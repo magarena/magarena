@@ -1,12 +1,11 @@
 name=Vampire Outcasts
-image=http://magiccards.info/scans/en/mm2/102.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddk/15.jpg
+value=2.962
 rarity=U
 type=Creature
 subtype=Vampire
 cost={2}{B}{B}
 pt=2/2
-ability=Bloodthirst 2;\
-        Lifelink
+ability=bloodthirst 2;lifelink
 timing=main
 oracle=Bloodthirst 2\nLifelink

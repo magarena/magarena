@@ -1,6 +1,6 @@
 name=Raise the Alarm
-image=http://magiccards.info/scans/en/mm2/31.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddo/23.jpg
+value=3.917
 rarity=C
 type=Instant
 cost={1}{W}

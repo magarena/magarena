@@ -1,6 +1,6 @@
 name=Rootwalla
-image=http://magiccards.info/scans/en/tpr/191.jpg
-value=2.500
+image=http://magiccards.info/scans/en/m14/192.jpg
+value=3.183
 rarity=C
 type=Creature
 subtype=Lizard

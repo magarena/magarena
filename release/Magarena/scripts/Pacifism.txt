@@ -1,7 +1,8 @@
 name=Pacifism
-image=http://magiccards.info/scans/en/tpr/22.jpg
-value=2.500
-rarity=U
+image=http://magiccards.info/scans/en/dtk/29.jpg
+value=4.032
+removal=3
+rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{W}

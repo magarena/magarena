@@ -1,7 +1,7 @@
 name=All Is Dust
-image=http://magiccards.info/scans/en/mm2/1.jpg
-value=2.500
-rarity=R
+image=http://magiccards.info/scans/en/roe/1.jpg
+value=4.397
+rarity=M
 type=Tribal,Sorcery
 subtype=Eldrazi
 cost={7}

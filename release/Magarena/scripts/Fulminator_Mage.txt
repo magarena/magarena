@@ -1,6 +1,6 @@
 name=Fulminator Mage
-image=http://magiccards.info/scans/en/mm2/193.jpg
-value=2.500
+image=http://magiccards.info/scans/en/shm/188.jpg
+value=4.019
 rarity=R
 type=Creature
 subtype=Elemental,Shaman

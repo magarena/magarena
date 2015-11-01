@@ -1,6 +1,6 @@
 name=Wall of Blossoms
-image=http://magiccards.info/scans/en/tpr/205.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pc2/81.jpg
+value=4.297
 rarity=U
 type=Creature
 subtype=Plant,Wall
@@ -8,5 +8,5 @@ cost={1}{G}
 pt=0/4
 ability=Defender;\
         When SN enters the battlefield, draw a card.
-timing=smain
+timing=main
 oracle=Defender\nWhen Wall of Blossoms enters the battlefield, draw a card.

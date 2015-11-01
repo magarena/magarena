@@ -1,11 +1,11 @@
 name=Boros Swiftblade
-image=http://magiccards.info/scans/en/mm2/172.jpg
-value=2.500
+image=http://magiccards.info/scans/en/pch/82.jpg
+value=4.084
+ability=double strike
 rarity=U
 type=Creature
 subtype=Human,Soldier
 cost={R}{W}
 pt=1/2
-ability=Double strike
 timing=main
 oracle=Double strike

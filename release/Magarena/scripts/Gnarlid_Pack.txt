@@ -1,6 +1,6 @@
 name=Gnarlid Pack
-image=http://magiccards.info/scans/en/mm2/144.jpg
-value=2.500
+image=http://magiccards.info/scans/en/cns/166.jpg
+value=3.333
 rarity=C
 type=Creature
 subtype=Beast

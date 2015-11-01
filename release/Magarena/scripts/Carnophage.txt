@@ -1,6 +1,6 @@
 name=Carnophage
-image=http://magiccards.info/scans/en/tpr/84.jpg
-value=2.500
+image=http://magiccards.info/scans/en/vma/107.jpg
+value=4.000
 rarity=C
 type=Creature
 subtype=Zombie

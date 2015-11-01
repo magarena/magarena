@@ -1,7 +1,7 @@
 name=Deadshot
-image=http://magiccards.info/scans/en/tpr/129.jpg
+image=http://magiccards.info/scans/en/tp/170.jpg
 value=2.500
-rarity=U
+rarity=R
 type=Sorcery
 cost={3}{R}
 effect=Tap target creature. It deals damage equal to its power to another target creature.

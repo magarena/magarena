@@ -1,6 +1,7 @@
 name=Shadowstorm
-image=http://magiccards.info/scans/en/tpr/157.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tp/202.jpg
+value=2.065
+removal=1
 rarity=U
 type=Sorcery
 cost={R}

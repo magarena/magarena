@@ -1,5 +1,5 @@
 name=Oath of Druids
-image=http://magiccards.info/scans/en/tpr/184.jpg
+image=http://magiccards.info/scans/en/vma/223.jpg
 value=2.500
 rarity=M
 type=Enchantment

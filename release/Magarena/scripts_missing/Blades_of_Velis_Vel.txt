@@ -1,5 +1,5 @@
 name=Blades of Velis Vel
-image=http://magiccards.info/scans/en/mm2/105.jpg
+image=http://magiccards.info/scans/en/lw/152.jpg
 value=2.500
 rarity=C
 type=Tribal,Instant

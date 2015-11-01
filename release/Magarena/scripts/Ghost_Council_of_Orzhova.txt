@@ -1,6 +1,6 @@
 name=Ghost Council of Orzhova
-image=http://magiccards.info/scans/en/mm2/176.jpg
-value=2.500
+image=http://magiccards.info/scans/en/gp/114.jpg
+value=3.929
 rarity=R
 type=Legendary,Creature
 subtype=Spirit

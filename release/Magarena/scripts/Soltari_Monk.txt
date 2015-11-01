@@ -1,12 +1,11 @@
 name=Soltari Monk
-image=http://magiccards.info/scans/en/tpr/31.jpg
-value=2.500
+image=http://magiccards.info/scans/en/tp/257.jpg
+value=4.267
 rarity=U
 type=Creature
 subtype=Soltari,Monk,Cleric
 cost={W}{W}
 pt=2/1
-ability=Protection from black;\
-        Shadow
+ability=shadow;protection from black
 timing=main
 oracle=Protection from black\nShadow

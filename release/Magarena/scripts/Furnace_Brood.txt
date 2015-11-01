@@ -1,6 +1,6 @@
 name=Furnace Brood
-image=http://magiccards.info/scans/en/tpr/135.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ex/84.jpg
+value=2.944
 rarity=C
 type=Creature
 subtype=Elemental

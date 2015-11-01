@@ -1,5 +1,5 @@
 name=Sunforger
-image=http://magiccards.info/scans/en/mm2/232.jpg
+image=http://magiccards.info/scans/en/rav/272.jpg
 value=2.500
 rarity=R
 type=Artifact

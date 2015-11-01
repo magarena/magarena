@@ -1,5 +1,5 @@
 name=Wrap in Flames
-image=http://magiccards.info/scans/en/mm2/136.jpg
+image=http://magiccards.info/scans/en/cns/158.jpg
 value=2.500
 rarity=C
 type=Sorcery

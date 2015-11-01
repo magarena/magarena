@@ -1,9 +1,10 @@
 name=Death Stroke
-image=http://magiccards.info/scans/en/tpr/100.jpg
-value=2.500
+image=http://magiccards.info/scans/en/bd/22.jpg
+value=4.000
+removal=3
 rarity=C
 type=Sorcery
 cost={B}{B}
-effect=Destroy target tapped creature.
 timing=main
+effect=Destroy target tapped creature.
 oracle=Destroy target tapped creature.

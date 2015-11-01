@@ -1,6 +1,6 @@
 name=Mana Leak
-image=http://magiccards.info/scans/en/mm2/50.jpg
-value=2.500
+image=http://magiccards.info/scans/en/ddn/64.jpg
+value=4.459
 rarity=C
 type=Instant
 cost={1}{U}

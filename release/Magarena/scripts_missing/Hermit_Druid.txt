@@ -1,7 +1,7 @@
 name=Hermit Druid
-image=http://magiccards.info/scans/en/tpr/175.jpg
+image=http://magiccards.info/scans/en/vma/216.jpg
 value=2.500
-rarity=U
+rarity=R
 type=Creature
 subtype=Human,Druid
 cost={1}{G}
