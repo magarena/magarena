@@ -70,11 +70,18 @@ Thank you for your support and have fun!
 
 Release 1.67 (October 31, 2015)
 ============
+lodici
+melvin
+Mike
+ShawnieBoy
 
     Format and legality changes effective as of Oct 2nd
     display usable proxy image when card image is missing
     store "cards" and "tokens" images folders in new location -> \Magarena\images.
+    Click a card image in any of the following screens to view image at original size  - tiled deck view, sample hand, mulligan, player zones.
+    display deck sidebar in deck tiled view.
 
+- fixed the following bugs:
     fix: sometimes on undo the log item was not removed because the log was not being repainted properly.
     fix missing event description for first event in repeated events, fixes #436
     fix missing event description for repeated card events
@@ -88,6 +95,40 @@ Release 1.67 (October 31, 2015)
     fix: visible stack button style not updated as toggle button is clicked
     tokenize card name in log message (fixes #464).
     tokenize card name in log messages (fixes #463).
+    create an artificial layer for ability changing that depends on condition, fixes #447
+    group can/can't until EOT should affect permanents that ETB after effect resolves, fixes #443
+    fix Avoid Fate to use MagicSpellCardEvent as it is a spell effect and not a ETB trigger, fixes #473
+    fix #474 : 1.66 crashes when there's more than one card face down.
+    fix getCardDefinition for morph spell to return morph card definition
+    always show the human player the true face of face down spells
+    tag 'enchanted/equipped *' as static filters and directly add the ability to the permanents, fixes #475
+    prevent RCHOICES from being shared across calls, to address #479
+
+- added the following cards:
+Angel of Renewal, Belligerent Whiptail, Benthic Infiltrator,
+Blighted Cataract, Blighted Fen, Blighted Gorge, Blighted Steppe,
+Blighted Woodland, Bloodbond Vampire, Broodhunter Wurm, Canopy Vista,
+Chasm Guide, Cinder Glade, Cliffside Lookout, Cloud Manta,
+Coralhelm Guide, Courier Griffin, Culling Drone, Dampening Pulse,
+Demon's Grasp, Drana, Liberator of Malakir, Dust Stalker,
+Eldrazi Devastator, Endless One, Expedition Envoy, Felidar Cub,
+Forerunner of Slaughter, Ghostly Sentinel, Gideon's Reproach,
+Grove Rumbler, Hagra Sharpshooter, Hero of Goma Fada, Jaddi Offshoot,
+Kalastria Nightwatch, Kitesail Scout, Kor Bladewhirl, Kor Entanglers,
+Lantern Scout, Lavastep Raider, Lifespring Druid, Looming Spires,
+Lumbering Falls, Makindi Patrol, Makindi Sliderunner, Malakir Familiar,
+Mist Intruder, Mortuary Mire, Murasa Ranger, Natural Connection,
+Nirkana Assassin, Ondu Champion, Ondu Greathorn, Outnumber,
+Plated Crusher, Prairie Stream, Reckless Cohort, Reclaiming Vines,
+Resolute Blademaster, Retreat to Coralhelm, Retreat to Kazandu,
+Retreat to Valakut, Rot Shambler, Ruination Guide, Salvage Drone,
+Scour from Existence, Scythe Leopard, Serene Steward, Shadow Glider,
+Shambling Vent, Silent Skimmer, Skitterskin, Skyline Cascade,
+Sludge Crawler, Smoldering Marsh, Snapping Gnarlid, Stonefury,
+Stone Haven Medic, Sunken Hollow, Sure Strike, Tajuru Beastmaster,
+Tajuru Warcaller, Tide Drifter, Tunneling Geopede, Valakut Invoker,
+Valakut Predator, Vestige of Emrakul, Vile Aggregate, Volcanic Upheaval,
+Voracious Null, Wave-Wing Elemental
 
 Release 1.66 (September 26, 2015)
 ============
