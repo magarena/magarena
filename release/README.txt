@@ -103,6 +103,7 @@ ShawnieBoy
     always show the human player the true face of face down spells
     tag 'enchanted/equipped *' as static filters and directly add the ability to the permanents, fixes #475
     prevent RCHOICES from being shared across calls, to address #479
+    Somberwald Alpha, fix ability replace wrong card script with groovy code, 'it' in card script always refers to SN
 
 - added the following cards:
 Angel of Renewal, Belligerent Whiptail, Benthic Infiltrator,
