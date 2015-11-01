@@ -6,6 +6,8 @@ type=Creature
 subtype=Elemental
 cost={4}{U}
 pt=2/2
-ability=flying;When SN enters the battlefield, draw two cards.;evoke {2}{U}
+ability=Flying;\
+        When SN enters the battlefield, draw two cards.;\
+        Evoke {2}{U}
 timing=main
 oracle=Flying\nWhen Mulldrifter enters the battlefield, draw two cards.\nEvoke {2}{U}

@@ -7,5 +7,5 @@ subtype=Avatar
 cost={1}{G}{G}
 pt=*/*
 ability=SN's power and toughness are each equal to the number of creatures you control.
-timing=smain
+timing=main
 oracle=Scion of the Wild's power and toughness are each equal to the number of creatures you control.

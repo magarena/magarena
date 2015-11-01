@@ -6,6 +6,7 @@ type=Creature
 subtype=Soltari,Monk,Cleric
 cost={W}{W}
 pt=2/1
-ability=shadow;protection from black
+ability=Protection from black;\
+        Shadow
 timing=main
 oracle=Protection from black\nShadow

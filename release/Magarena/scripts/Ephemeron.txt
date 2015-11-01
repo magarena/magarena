@@ -6,6 +6,7 @@ type=Creature
 subtype=Illusion
 cost={4}{U}{U}
 pt=4/4
-ability=flying;Discard a card:Return SN to its owner's hand.
+ability=Flying;\
+        Discard a card: Return SN to its owner's hand.
 timing=main
 oracle=Flying\nDiscard a card: Return Ephemeron to its owner's hand.

@@ -6,9 +6,9 @@ type=Legendary,Creature
 subtype=Praetor
 cost={5}{W}{W}
 pt=4/7
-ability=vigilance;\
-        other creatures you control get +2/+2;\
-        creatures your opponents control get -2/-2
+ability=Vigilance;\
+        Other creatures you control get +2/+2.;\
+        Creatures your opponents control get -2/-2.
 static=all
 timing=main
 oracle=Vigilance\nOther creatures you control get +2/+2.\nCreatures your opponents control get -2/-2.

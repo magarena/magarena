@@ -6,7 +6,7 @@ type=Creature
 subtype=Beast
 cost={6}{U}{U}
 pt=5/4
-ability=Affinity for artifacts.;\
+ability=Affinity for artifacts;\
         Flying
 timing=main
 oracle=Affinity for artifacts\nFlying

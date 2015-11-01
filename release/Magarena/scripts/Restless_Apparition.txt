@@ -6,6 +6,7 @@ type=Creature
 subtype=Spirit
 cost={W/B}{W/B}{W/B}
 pt=2/2
-ability=persist;{W/B}{W/B}{W/B}: SN gets +3/+3 until end of turn.
+ability={W/B}{W/B}{W/B}: SN gets +3/+3 until end of turn.;\
+        Persist
 timing=main
 oracle={W/B}{W/B}{W/B}: Restless Apparition gets +3/+3 until end of turn.\nPersist

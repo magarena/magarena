@@ -4,6 +4,6 @@ value=1.419
 rarity=U
 type=Instant
 cost={2}{G}
-timing=removal
 effect=Destroy target artifact.
+timing=removal
 oracle=Destroy target artifact.

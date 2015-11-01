@@ -6,7 +6,7 @@ type=Creature
 subtype=Snake
 cost={1}{G}{U}{U}
 pt=2/2
-ability=flash;\
+ability=Flash;\
         When SN enters the battlefield, counter target spell.
 timing=counterflash
 oracle=Flash\nWhen Mystic Snake enters the battlefield, counter target spell.

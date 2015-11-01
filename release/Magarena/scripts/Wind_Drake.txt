@@ -1,11 +1,11 @@
 name=Wind Drake
 image=http://magiccards.info/scans/en/dgm/20.jpg
 value=2.819
-ability=flying
 rarity=C
 type=Creature
 subtype=Drake
 cost={2}{U}
 pt=2/2
+ability=Flying
 timing=main
 oracle=Flying

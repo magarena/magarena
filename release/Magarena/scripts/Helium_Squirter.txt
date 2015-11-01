@@ -6,7 +6,7 @@ type=Creature
 subtype=Beast,Mutant
 cost={4}{U}
 pt=0/0
-ability=graft 3;\
+ability=Graft 3;\
         {1}: Target creature with a +1/+1 counter on it gains flying until end of turn.
 timing=main
 oracle=Graft 3\n{1}: Target creature with a +1/+1 counter on it gains flying until end of turn.

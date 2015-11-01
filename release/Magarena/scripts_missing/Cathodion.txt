@@ -7,5 +7,5 @@ subtype=Construct
 cost={3}
 pt=3/3
 ability=When SN dies, add {3} to your mana pool.
-timing=artifact
+timing=main
 oracle=When Cathodion dies, add {3} to your mana pool.

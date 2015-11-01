@@ -6,7 +6,7 @@ type=Creature
 subtype=Wall
 cost={1}{B}
 pt=0/4
-ability=defender
-timing=main
+ability=Defender
+timing=smain
 requires_groovy_code
 oracle=Defender\nWhenever Wall of Souls is dealt combat damage, it deals that much damage to target opponent.

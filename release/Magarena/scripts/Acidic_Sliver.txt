@@ -7,6 +7,6 @@ subtype=Sliver
 cost={B}{R}
 pt=2/2
 static=all
-ability=All Slivers have "{2}, Sacrifice this permanent: SN deals 2 damage to target creature or player."
+ability=All Slivers have "{2}, Sacrifice this permanent: This permanent deals 2 damage to target creature or player."
 timing=main
 oracle=All Slivers have "{2}, Sacrifice this permanent: This permanent deals 2 damage to target creature or player."

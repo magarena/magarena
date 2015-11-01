@@ -6,6 +6,6 @@ type=Creature
 subtype=Cat,Knight
 cost={1}{W}{W}
 pt=1/1
-ability=flying;double strike
+ability=Flying, double strike
 timing=main
 oracle=Flying, double strike

@@ -6,7 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={1}{W}
 ability=Enchanted creature gets +1/+3.;\
-        {W}:Return SN to its owner's hand.
-timing=enchantment
+        {W}: Return SN to its owner's hand.
+timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature gets +1/+3.\n{W}: Return Conviction to its owner's hand.

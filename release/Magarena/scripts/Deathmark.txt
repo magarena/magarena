@@ -5,6 +5,6 @@ removal=3
 rarity=U
 type=Sorcery
 cost={B}
-timing=removal
 effect=Destroy target green or white creature.
+timing=removal
 oracle=Destroy target green or white creature.

@@ -6,6 +6,7 @@ type=Creature
 subtype=Vampire
 cost={2}{B}{B}
 pt=2/2
-ability=bloodthirst 2;lifelink
+ability=Bloodthirst 2;\
+        Lifelink
 timing=main
 oracle=Bloodthirst 2\nLifelink

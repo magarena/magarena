@@ -4,7 +4,7 @@ value=4.265
 rarity=C
 type=Tribal,Instant
 subtype=Shapeshifter
-ability=changeling
+ability=Changeling
 cost={1}{B}
 timing=removal
 requires_groovy_code

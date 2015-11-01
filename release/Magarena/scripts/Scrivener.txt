@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Wizard
 cost={4}{U}
 pt=2/2
-ability=When SN enters the battlefield, return target instant card from your graveyard to your hand.
+ability=When SN enters the battlefield, you may return target instant card from your graveyard to your hand.
 timing=main
 oracle=When Scrivener enters the battlefield, you may return target instant card from your graveyard to your hand.

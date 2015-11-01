@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Knight
 cost={1}{W}{W}
 pt=2/2
-ability=double strike;protection from black;protection from green
+ability=Double strike, protection from black, protection from green
 timing=main
 oracle=Double strike, protection from black and from green

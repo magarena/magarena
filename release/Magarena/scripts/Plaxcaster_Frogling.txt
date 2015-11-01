@@ -6,6 +6,7 @@ type=Creature
 subtype=Frog,Mutant
 cost={1}{G}{U}
 pt=0/0
-ability=graft 3;{2}:Target creature with a +1/+1 counter on it gains shroud until end of turn.
+ability=Graft 3;\
+        {2}: Target creature with a +1/+1 counter on it gains shroud until end of turn.
 timing=main
 oracle=Graft 3\n{2}: Target creature with a +1/+1 counter on it gains shroud until end of turn.

@@ -6,7 +6,7 @@ type=Creature
 subtype=Spirit
 cost={3}{B}{B}{B}
 pt=5/5
-ability=wither;\
+ability=Wither;\
         At the beginning of your upkeep, put a -1/-1 counter on each nonblack creature.
-timing=smain
+timing=main
 oracle=Wither\nAt the beginning of your upkeep, put a -1/-1 counter on each nonblack creature.

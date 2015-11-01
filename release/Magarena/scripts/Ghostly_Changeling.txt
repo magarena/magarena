@@ -6,6 +6,7 @@ type=Creature
 subtype=Shapeshifter
 cost={2}{B}
 pt=2/2
-ability=changeling;{1}{B}: SN gets +1/+1 until end of turn.
+ability=Changeling;\
+        {1}{B}: SN gets +1/+1 until end of turn.
 timing=main
 oracle=Changeling\n{1}{B}: Ghostly Changeling gets +1/+1 until end of turn.

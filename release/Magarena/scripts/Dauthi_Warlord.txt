@@ -6,7 +6,7 @@ type=Creature
 subtype=Dauthi,Soldier
 cost={1}{B}
 pt=*/1
-ability=shadow;\
+ability=Shadow;\
         SN's power is equal to the number of creatures with shadow on the battlefield.
 timing=main
 oracle=Shadow\nDauthi Warlord's power is equal to the number of creatures with shadow on the battlefield.

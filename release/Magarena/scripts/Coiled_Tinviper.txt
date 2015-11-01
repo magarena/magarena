@@ -6,6 +6,6 @@ type=Artifact,Creature
 subtype=Snake
 cost={3}
 pt=2/1
-ability=first strike
+ability=First strike
 timing=main
 oracle=First strike

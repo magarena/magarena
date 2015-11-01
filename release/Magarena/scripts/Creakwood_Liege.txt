@@ -6,8 +6,8 @@ type=Creature
 subtype=Horror
 cost={1}{B/G}{B/G}{B/G}
 pt=2/2
-ability=other black creatures you control get +1/+1;\
-        other green creatures you control get +1/+1;\
+ability=Other black creatures you control get +1/+1.;\
+        Other green creatures you control get +1/+1.;\
         At the beginning of your upkeep, you may put a 1/1 black and green Worm creature token onto the battlefield.
 static=player
 timing=main

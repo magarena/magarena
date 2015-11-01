@@ -1,11 +1,11 @@
 name=Fighting Drake
 image=http://magiccards.info/scans/en/8e/77.jpg
 value=2.636
-ability=flying
 rarity=U
 type=Creature
 subtype=Drake
 cost={2}{U}{U}
 pt=2/4
+ability=Flying
 timing=main
 oracle=Flying

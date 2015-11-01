@@ -6,6 +6,7 @@ type=Creature
 subtype=Vedalken,Wizard,Mutant
 cost={2}{U}
 pt=0/0
-ability=graft 2;{1}{U}:Untap target creature with a +1/+1 counter on it.
+ability=Graft 2;\
+        {1}{U}: Untap target creature with a +1/+1 counter on it.
 timing=main
 oracle=Graft 2\n{1}{U}: Untap target creature with a +1/+1 counter on it.

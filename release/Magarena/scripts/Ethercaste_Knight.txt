@@ -6,6 +6,6 @@ type=Artifact,Creature
 subtype=Human,Knight
 cost={W}{U}
 pt=1/3
-ability=exalted
+ability=Exalted
 timing=fmain
 oracle=Exalted

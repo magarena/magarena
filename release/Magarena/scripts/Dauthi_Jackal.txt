@@ -6,6 +6,7 @@ type=Creature
 subtype=Dauthi,Hound
 cost={2}{B}
 pt=2/1
-ability=shadow;{B}{B},Sacrifice SN:Destroy target blocking creature.
+ability=Shadow;\
+        {B}{B}, Sacrifice SN: Destroy target blocking creature.
 timing=main
 oracle=Shadow\n{B}{B}, Sacrifice Dauthi Jackal: Destroy target blocking creature.

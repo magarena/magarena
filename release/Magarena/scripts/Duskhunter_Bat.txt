@@ -6,6 +6,7 @@ type=Creature
 subtype=Bat
 cost={1}{B}
 pt=1/1
-ability=bloodthirst 1;flying
+ability=Bloodthirst 1;\
+        Flying
 timing=main
 oracle=Bloodthirst 1\nFlying

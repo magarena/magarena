@@ -6,6 +6,6 @@ type=Creature
 subtype=Drake
 cost={4}{R}
 pt=3/2
-ability=flying;first strike
+ability=Flying, first strike
 timing=main
 oracle=Flying, first strike

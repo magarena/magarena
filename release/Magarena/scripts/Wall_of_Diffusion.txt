@@ -6,7 +6,7 @@ type=Creature
 subtype=Wall
 cost={1}{R}
 pt=0/5
-ability=defender;\
+ability=Defender;\
         SN can block creatures with shadow as though SN had shadow.
 timing=smain
 oracle=Defender\nWall of Diffusion can block creatures with shadow as though Wall of Diffusion had shadow.

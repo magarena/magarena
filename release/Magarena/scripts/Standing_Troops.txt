@@ -1,11 +1,11 @@
 name=Standing Troops
 image=http://magiccards.info/scans/en/ddo/25.jpg
 value=2.636
-ability=vigilance
 rarity=C
 type=Creature
 subtype=Human,Soldier
 cost={2}{W}
 pt=1/4
+ability=Vigilance
 timing=main
 oracle=Vigilance

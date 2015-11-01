@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Mutant
 cost={G}
 pt=0/0
-ability=graft 1
+ability=Graft 1
 timing=main
 oracle=Graft 1

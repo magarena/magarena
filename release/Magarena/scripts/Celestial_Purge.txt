@@ -5,6 +5,6 @@ removal=4
 rarity=U
 type=Instant
 cost={1}{W}
-timing=removal
 effect=Exile target black or red permanent.
+timing=removal
 oracle=Exile target black or red permanent.

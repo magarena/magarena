@@ -6,7 +6,7 @@ type=Creature
 subtype=Shapeshifter
 cost={2}{W}
 pt=1/1
-ability=changeling
+ability=Changeling
 timing=fmain
 requires_groovy_code
 oracle=Changeling\n{X}: Until end of turn, creatures you control have base power and toughness X/X and gain all creature types.

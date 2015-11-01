@@ -6,6 +6,6 @@ type=Creature
 subtype=Minotaur,Warrior
 cost={2}{R}{R}
 pt=3/3
-ability=bloodthirst 2
+ability=Bloodthirst 2
 timing=main
 oracle=Bloodthirst 2

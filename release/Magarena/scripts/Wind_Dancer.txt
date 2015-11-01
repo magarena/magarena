@@ -6,6 +6,7 @@ type=Creature
 subtype=Faerie
 cost={1}{U}
 pt=1/1
-ability=flying;{T}:Target creature gains flying until end of turn.
+ability=Flying;\
+        {T}: Target creature gains flying until end of turn.
 timing=main
 oracle=Flying\n{T}: Target creature gains flying until end of turn.

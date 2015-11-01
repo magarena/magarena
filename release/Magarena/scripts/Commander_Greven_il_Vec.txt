@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Human,Warrior
 cost={3}{B}{B}{B}
 pt=7/5
-ability=fear;\
+ability=Fear;\
         When SN enters the battlefield, sacrifice a creature.
 timing=main
 oracle=Fear\nWhen Commander Greven il-Vec enters the battlefield, sacrifice a creature.

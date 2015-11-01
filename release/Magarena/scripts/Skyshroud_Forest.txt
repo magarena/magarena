@@ -6,6 +6,6 @@ type=Land
 mana=u2g2
 ability=SN enters the battlefield tapped.;\
         {T}: Add {1} to your mana pool.;\
-        {T}: Add {U} or {G} to your mana pool. SN deals 1 damage to you.
+        {T}: Add {G} or {U} to your mana pool. SN deals 1 damage to you.
 timing=tapland
 oracle=Skyshroud Forest enters the battlefield tapped.\n{T}: Add {1} to your mana pool.\n{T}: Add {G} or {U} to your mana pool. Skyshroud Forest deals 1 damage to you.

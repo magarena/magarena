@@ -1,11 +1,11 @@
 name=Canopy Spider
 image=http://magiccards.info/scans/en/10e/254.jpg
 value=3.300
-ability=reach
 rarity=C
 type=Creature
 subtype=Spider
 cost={1}{G}
 pt=1/3
+ability=Reach
 timing=main
 oracle=Reach

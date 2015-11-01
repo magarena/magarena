@@ -4,6 +4,6 @@ value=3.911
 rarity=C
 type=Instant
 cost={2}{B}
-timing=removal
 effect=Destroy target nonblack creature. It can't be regenerated.
+timing=removal
 oracle=Destroy target nonblack creature. It can't be regenerated.

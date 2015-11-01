@@ -6,7 +6,7 @@ type=Creature
 subtype=Beast
 cost={4}{G}{G}
 pt=5/4
-ability=trample;\
+ability=Trample;\
         {1}{G}: Regenerate SN.
 timing=main
 oracle=Trample\n{1}{G}: Regenerate Carnassid.

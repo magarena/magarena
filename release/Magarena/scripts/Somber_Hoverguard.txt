@@ -6,7 +6,7 @@ type=Creature
 subtype=Drone
 cost={5}{U}
 pt=3/2
-ability=Affinity for artifacts.;\
+ability=Affinity for artifacts;\
         Flying
 timing=main
 oracle=Affinity for artifacts\nFlying

@@ -6,7 +6,7 @@ type=Creature
 subtype=Harpy,Beast
 cost={2}{B}{B}
 pt=2/2
-ability=flying;\
+ability=Flying;\
         {1}{B}: Regenerate SN.
 timing=main
 oracle=Flying\n{1}{B}: Regenerate Screeching Harpy.

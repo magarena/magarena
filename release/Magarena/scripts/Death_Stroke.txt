@@ -5,6 +5,6 @@ removal=3
 rarity=C
 type=Sorcery
 cost={B}{B}
-timing=main
 effect=Destroy target tapped creature.
+timing=main
 oracle=Destroy target tapped creature.

@@ -4,6 +4,6 @@ value=1.595
 rarity=R
 type=Artifact
 cost={4}
-ability={5},{T}:Draw two cards, then discard a card.
+ability={5}, {T}: Draw two cards, then discard a card.
 timing=artifact
 oracle={5}, {T}: Draw two cards, then discard a card.

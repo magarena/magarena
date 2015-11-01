@@ -6,6 +6,6 @@ type=Creature
 subtype=Dauthi,Minion
 cost={2}{B}
 pt=3/1
-ability=shadow
+ability=Shadow
 timing=main
 oracle=Shadow

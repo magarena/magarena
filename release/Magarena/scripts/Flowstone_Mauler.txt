@@ -6,6 +6,7 @@ type=Creature
 subtype=Beast
 cost={4}{R}{R}
 pt=4/5
-ability=trample;{R}: SN gets +1/-1 until end of turn.
+ability=Trample;\
+        {R}: SN gets +1/-1 until end of turn.
 timing=main
 oracle=Trample\n{R}: Flowstone Mauler gets +1/-1 until end of turn.

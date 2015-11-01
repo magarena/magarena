@@ -1,11 +1,11 @@
 name=Youthful Knight
 image=http://magiccards.info/scans/en/10e/62.jpg
 value=3.745
-ability=first strike
 rarity=C
 type=Creature
 subtype=Human,Knight
 cost={1}{W}
 pt=2/1
+ability=First strike
 timing=main
 oracle=First strike

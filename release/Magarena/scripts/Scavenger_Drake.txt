@@ -6,7 +6,7 @@ type=Creature
 subtype=Drake
 cost={3}{B}
 pt=1/1
-ability=flying;\
+ability=Flying;\
         Whenever another creature dies, you may put a +1/+1 counter on SN.
 timing=main
 oracle=Flying\nWhenever another creature dies, you may put a +1/+1 counter on Scavenger Drake.

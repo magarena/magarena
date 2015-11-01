@@ -6,7 +6,7 @@ type=Creature
 subtype=Viashino,Warrior
 cost={1}{R}
 pt=1/1
-ability=double strike;\
+ability=Double strike;\
         {B}{G}: SN gets +1/+1 until end of turn. Activate this ability only once each turn.
 timing=main
 oracle=Double strike\n{B}{G}: Viashino Slaughtermaster gets +1/+1 until end of turn. Activate this ability only once each turn.

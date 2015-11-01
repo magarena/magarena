@@ -6,6 +6,7 @@ type=Creature
 subtype=Imp
 cost={2}{B}
 pt=3/1
-ability=flying;SN can't block.
-timing=fmain
+ability=Flying;\
+        SN can't block.
+timing=main
 oracle=Flying\nDaggerclaw Imp can't block.
