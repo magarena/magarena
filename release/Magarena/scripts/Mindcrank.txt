@@ -1,6 +1,6 @@
 name=Mindcrank
 image=http://magiccards.info/scans/en/nph/144.jpg
-value=3.513
+value=3.521
 rarity=U
 type=Artifact
 cost={2}
