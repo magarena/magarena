@@ -5,5 +5,5 @@ rarity=C
 type=Instant
 cost={2}{U}
 timing=counter
-requires_groovy_code
+requires_groovy_code=Circular Logic
 oracle=Counter target spell unless its controller pays {1} for each card in your graveyard.
