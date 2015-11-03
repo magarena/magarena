@@ -40,7 +40,7 @@ public class MagicMorphCastActivation extends MagicHandCastActivation {
     public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
         return Arrays.asList(
             new MagicPayManaCostEvent(
-                source,
+                genMorphSpell(source),
                 MagicManaCost.create("{3}")
             )
         );
@@ -54,59 +54,59 @@ public class MagicMorphCastActivation extends MagicHandCastActivation {
             "Play a face-down card."
         );
     }
+
+    private MagicCardOnStack genMorphSpell(final MagicCard card) {
+        final MagicCardDefinition morph = CardDefinitions.getCard("Morph");
+        return new MagicCardOnStack(
+            card,
+            MagicMorphCastActivation.this,
+            card.getGame().getPayedCost()
+        ) {
+            @Override
+            public MagicCardDefinition getCardDefinition() {
+                return morph;
+            }
+            @Override
+            public boolean hasColor(final MagicColor color) {
+                return morph.hasColor(color);
+            }
+            @Override
+            public boolean hasAbility(final MagicAbility ability) {
+                return morph.hasAbility(ability);
+            }
+            @Override
+            public boolean hasSubType(final MagicSubType subType) {
+                return morph.hasSubType(subType);
+            }
+            @Override
+            public boolean hasType(final MagicType type) {
+                return morph.hasType(type);
+            }
+            @Override
+            public boolean canBeCountered() {
+                return hasAbility(MagicAbility.CannotBeCountered) == false;
+            }
+            @Override
+            public int getConvertedCost() {
+                return 0;
+            }
+            @Override
+            public String getName() {
+                return "Face-down creature spell #" + (getId() % 1000);
+            }
+            @Override
+            public boolean isFaceDown() {
+                return true;
+            }
+        };
+    }
     
     private final MagicEventAction EVENT_ACTION = new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCard card = event.getCard();
             game.doAction(new RemoveCardAction(card,MagicLocationType.OwnersHand));
-
-            final MagicCardDefinition morph = CardDefinitions.getCard("Morph");
-                
-            final MagicCardOnStack cardOnStack=new MagicCardOnStack(
-                card,
-                MagicMorphCastActivation.this,
-                game.getPayedCost()
-            ) {
-                @Override
-                public MagicCardDefinition getCardDefinition() {
-                    return morph;
-                }
-                @Override
-                public boolean hasColor(final MagicColor color) {
-                    return morph.hasColor(color);
-                }
-                @Override
-                public boolean hasAbility(final MagicAbility ability) {
-                    return morph.hasAbility(ability);
-                }
-                @Override
-                public boolean hasSubType(final MagicSubType subType) {
-                    return morph.hasSubType(subType);
-                }
-                @Override
-                public boolean hasType(final MagicType type) {
-                    return morph.hasType(type);
-                }
-                @Override
-                public boolean canBeCountered() {
-                    return hasAbility(MagicAbility.CannotBeCountered) == false;
-                }
-                @Override
-                public int getConvertedCost() {
-                    return 0;
-                }
-                @Override
-                public String getName() {
-                    return "Face-down creature spell #" + (getId() % 1000);
-                }
-                @Override
-                public boolean isFaceDown() {
-                    return true;
-                }
-            };
-
-            game.doAction(new PutItemOnStackAction(cardOnStack));
+            game.doAction(new PutItemOnStackAction(genMorphSpell(card)));
         }
     };
     
