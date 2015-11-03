@@ -68,7 +68,7 @@ public class MagicMessage {
         return sourceText
             .replaceAll("PN", player.toString())
             .replaceAll("SN", getCardToken(source))
-            .replaceAll("RN", ref.toString());
+            .replaceAll("RN", getCardToken(ref));
     }
 
     public static String replaceChoices(final String sourceText, final Object[] choices) {
