@@ -4,7 +4,7 @@ value=2.500
 rarity=U
 type=Enchantment
 cost={1}{W}{W}
-ability=Flash;\
-        When SN enters the battlefield, exile target creature an opponent controls until SN leaves the battlefield.
+ability=Flash
 timing=enchantment
+requires_groovy_code=Banisher Priest
 oracle=Flash\nWhen Stasis Snare enters the battlefield, exile target creature an opponent controls until Stasis Snare leaves the battlefield.
