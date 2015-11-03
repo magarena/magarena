@@ -5,8 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{W}
-ability=Enchant creature;\
-        When SN enters the battlefield, draw a card.;\
+ability=When SN enters the battlefield, draw a card.;\
         Enchanted creature has flying.
 timing=aura
+enchant=flying,creature
 oracle=Enchant creature\nWhen Angelic Gift enters the battlefield, draw a card.\nEnchanted creature has flying.
