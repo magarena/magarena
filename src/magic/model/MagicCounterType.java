@@ -48,6 +48,7 @@ public enum MagicCounterType {
     Elixir("elixir","{elx}",1),
     Energy("energy","{egy}",1),
     Eon("eon","{eon}",1),
+    Experience("experience","{exp}",1),
     Eyeball("eyeball","{eye}",1),
     Fade("fade","{fde}",1),
     Fate("fate","{fte}",-1),
