@@ -438,6 +438,11 @@ public enum MagicAbility {
             card.add(MagicMorphCastActivation.Morph);
         }
     },
+    Myriad("myriad", 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            //do nothing there is only one opponent
+        }
+    },
 
     // abilities that involve SN
     ShockLand("As SN enters the battlefield, you may pay 2 life\\. If you don't, SN enters the battlefield tapped\\.", -10) {
