@@ -7,5 +7,5 @@ subtype=Aura
 cost={W}
 timing=aura
 enchant=exile,mountain you control
-requires_groovy_code
+requires_groovy_code=Banisher Priest
 oracle=Enchant Mountain you control\nWhen Chained to the Rocks enters the battlefield, exile target creature an opponent controls until Chained to the Rocks leaves the battlefield.
