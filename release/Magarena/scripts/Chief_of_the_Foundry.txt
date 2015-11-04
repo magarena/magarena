@@ -7,5 +7,5 @@ subtype=Construct
 cost={3}
 pt=2/3
 ability=Other artifact creatures you control get +1/+1.
-timing=artifact
+timing=main
 oracle=Other artifact creatures you control get +1/+1.

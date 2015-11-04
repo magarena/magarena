@@ -9,5 +9,5 @@ pt=0/4
 ability=Flash;\
         Defender;\
         When SN enters the battlefield, target attacking creature gets -4/-0 until end of turn.
-timing=main
+timing=attack
 oracle=Flash\nDefender\nWhen Nivix Barrier enters the battlefield, target attacking creature gets -4/-0 until end of turn.

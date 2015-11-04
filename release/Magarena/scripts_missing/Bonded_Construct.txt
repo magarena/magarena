@@ -7,5 +7,5 @@ subtype=Construct
 cost={1}
 pt=2/1
 ability=SN can't attack alone.
-timing=artifact
+timing=main
 oracle=Bonded Construct can't attack alone.

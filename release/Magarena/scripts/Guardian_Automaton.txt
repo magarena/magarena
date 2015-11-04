@@ -7,5 +7,5 @@ subtype=Construct
 cost={4}
 pt=3/3
 ability=When SN dies, you gain 3 life.
-timing=artifact
+timing=main
 oracle=When Guardian Automaton dies, you gain 3 life.

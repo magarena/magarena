@@ -7,5 +7,5 @@ subtype=Golem
 cost={3}
 pt=0/6
 ability=Defender
-timing=artifact
+timing=smain
 oracle=Defender

@@ -9,5 +9,5 @@ pt=2/2
 ability=Haste;\
         Renown 1;\
         Whenever an opponent casts a noncreature spell, if SN is renowned, SN deals 2 damage to that player.
-timing=main
+timing=fmain
 oracle=Haste\nRenown 1\nWhenever an opponent casts a noncreature spell, if Scab-Clan Berserker is renowned, Scab-Clan Berserker deals 2 damage to that player.
