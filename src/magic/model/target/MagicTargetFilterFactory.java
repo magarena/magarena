@@ -1795,7 +1795,7 @@ public class MagicTargetFilterFactory {
             return MagicColor.isMulti(permanent);
         }
     };
-    
+
     public static final MagicPermanentFilterImpl COLORLESS_CREATURE = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return  target.isCreature() && MagicColor.isColorless(target);
@@ -1805,6 +1805,12 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl COLORLESS_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return  target.isCreature() && MagicColor.isColorless(target) && target.isController(player);
+        }
+    };
+
+    public static final MagicStackFilterImpl COLORLESS_SPELL = new MagicStackFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell() && MagicColor.isColorless(itemOnStack.getSource());
         }
     };
 
@@ -2681,6 +2687,7 @@ public class MagicTargetFilterFactory {
         single.put("creature or sorcery spell", CREATURE_OR_SORCERY_SPELL);
         single.put("Spirit or Arcane spell", SPIRIT_OR_ARCANE_SPELL);
         single.put("multicolored spell", MULTICOLORED_SPELL);
+        single.put("colorless spell", COLORLESS_SPELL);
 
         // player
         single.put("opponent", OPPONENT);
