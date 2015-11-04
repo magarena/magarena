@@ -1,5 +1,5 @@
 name=Æthersnipe
-image=http://magiccards.info/scans/en/mma/36.jpg
+image=http://magiccards.info/scans/en/mm2/39.jpg
 value=3.643
 rarity=C
 type=Creature
@@ -7,6 +7,6 @@ subtype=Elemental
 cost={5}{U}
 pt=4/4
 ability=When SN enters the battlefield, return target nonland permanent to its owner's hand.;\
-        evoke {1}{U}{U}
+        Evoke {1}{U}{U}
 timing=main
 oracle=When Æthersnipe enters the battlefield, return target nonland permanent to its owner's hand.\nEvoke {1}{U}{U}

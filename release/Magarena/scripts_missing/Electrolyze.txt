@@ -1,5 +1,5 @@
 name=Electrolyze
-image=http://magiccards.info/scans/en/mma/175.jpg
+image=http://magiccards.info/scans/en/mm2/174.jpg
 value=2.500
 rarity=U
 type=Instant

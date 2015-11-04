@@ -1,7 +1,7 @@
 name=Niv-Mizzet, the Firemind
-image=http://magiccards.info/scans/en/ddj/1.jpg
+image=http://magiccards.info/scans/en/mm2/182.jpg
 value=3.960
-rarity=M
+rarity=R
 type=Legendary,Creature
 subtype=Dragon,Wizard
 cost={2}{U}{U}{R}{R}

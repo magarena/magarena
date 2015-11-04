@@ -1,7 +1,6 @@
 name=Narcolepsy
-image=http://magiccards.info/scans/en/roe/79.jpg
+image=http://magiccards.info/scans/en/mm2/52.jpg
 value=3.917
-removal=2
 rarity=C
 type=Enchantment
 subtype=Aura

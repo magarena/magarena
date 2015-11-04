@@ -1,5 +1,5 @@
 name=Somber Hoverguard
-image=http://magiccards.info/scans/en/mi/51.jpg
+image=http://magiccards.info/scans/en/mm2/57.jpg
 value=3.694
 rarity=C
 type=Creature

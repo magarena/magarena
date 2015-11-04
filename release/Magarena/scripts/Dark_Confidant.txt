@@ -1,7 +1,7 @@
 name=Dark Confidant
-image=http://magiccards.info/scans/en/mma/75.jpg
+image=http://magiccards.info/scans/en/mm2/75.jpg
 value=4.609
-rarity=R
+rarity=M
 type=Creature
 subtype=Human,Wizard
 cost={1}{B}

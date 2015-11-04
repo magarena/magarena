@@ -1,7 +1,7 @@
 name=Novijen Sages
-image=http://magiccards.info/scans/en/di/27.jpg
+image=http://magiccards.info/scans/en/mm2/53.jpg
 value=2.500
-rarity=R
+rarity=U
 type=Creature
 subtype=Human,Advisor,Mutant
 cost={4}{U}{U}

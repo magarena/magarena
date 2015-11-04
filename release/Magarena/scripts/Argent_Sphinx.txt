@@ -1,12 +1,12 @@
 name=Argent Sphinx
-image=http://magiccards.info/scans/en/som/28.jpg
+image=http://magiccards.info/scans/en/mm2/41.jpg
 value=3.786
 rarity=R
 type=Creature
 subtype=Sphinx
 cost={2}{U}{U}
 pt=4/3
-ability=flying
+ability=Flying
 timing=main
 requires_groovy_code
 oracle=Flying\nMetalcraft — {U}: Exile Argent Sphinx. Return it to the battlefield under your control at the beginning of the next end step. Activate this ability only if you control three or more artifacts.

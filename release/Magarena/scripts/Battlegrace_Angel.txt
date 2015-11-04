@@ -1,12 +1,13 @@
 name=Battlegrace Angel
-image=http://magiccards.info/scans/en/ala/6.jpg
+image=http://magiccards.info/scans/en/mm2/10.jpg
 value=3.898
 rarity=R
 type=Creature
 subtype=Angel
 cost={3}{W}{W}
 pt=4/4
-ability=flying;exalted
+ability=Flying;\
+        Exalted
 timing=fmain
 requires_groovy_code
 oracle=Flying\nExalted\nWhenever a creature you control attacks alone, it gains lifelink until end of turn.

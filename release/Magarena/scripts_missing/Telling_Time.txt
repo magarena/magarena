@@ -1,7 +1,7 @@
 name=Telling Time
-image=http://magiccards.info/scans/en/10e/114.jpg
+image=http://magiccards.info/scans/en/mm2/61.jpg
 value=2.500
-rarity=U
+rarity=C
 type=Instant
 cost={1}{U}
 effect=Look at the top three cards of your library. Put one of those cards into your hand, one on top of your library, and one on the bottom of your library.

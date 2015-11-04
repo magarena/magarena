@@ -1,5 +1,5 @@
 name=Elesh Norn, Grand Cenobite
-image=http://magiccards.info/scans/en/nph/9.jpg
+image=http://magiccards.info/scans/en/mm2/16.jpg
 value=4.451
 rarity=M
 type=Legendary,Creature
@@ -9,6 +9,5 @@ pt=4/7
 ability=Vigilance;\
         Other creatures you control get +2/+2.;\
         Creatures your opponents control get -2/-2.
-static=all
 timing=main
 oracle=Vigilance\nOther creatures you control get +2/+2.\nCreatures your opponents control get -2/-2.

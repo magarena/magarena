@@ -1,10 +1,10 @@
 name=Vines of Vastwood
-image=http://magiccards.info/scans/en/zen/193.jpg
+image=http://magiccards.info/scans/en/mm2/168.jpg
 value=4.176
 rarity=C
 type=Instant
 cost={G}
 timing=pump
-ability=kicker {G}
+ability=Kicker {G}
 requires_groovy_code
 oracle=Kicker {G}\nTarget creature can't be the target of spells or abilities your opponents control this turn. If Vines of Vastwood was kicked, that creature gets +4/+4 until end of turn.

@@ -1,14 +1,13 @@
 name=Ulamog, the Infinite Gyre
-image=http://magiccards.info/scans/en/roe/12.jpg
+image=http://magiccards.info/scans/en/mm2/6.jpg
 value=4.093
-removal=3
 rarity=M
 type=Legendary,Creature
 subtype=Eldrazi
 cost={11}
 pt=10/10
-ability=annihilator 4;\
-        indestructible;\
+ability=Indestructible;\
+        Annihilator 4;\
         When SN is put into a graveyard from anywhere, its owner shuffles his or her graveyard into his or her library.
 timing=main
 requires_groovy_code

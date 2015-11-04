@@ -1,5 +1,5 @@
 name=Emrakul, the Aeons Torn
-image=http://magiccards.info/scans/en/roe/4.jpg
+image=http://magiccards.info/scans/en/mm2/3.jpg
 value=4.406
 rarity=M
 type=Legendary,Creature
@@ -7,9 +7,7 @@ subtype=Eldrazi
 cost={15}
 pt=15/15
 ability=SN can't be countered.;\
-        flying;\
-        protection from colored spells;\
-        annihilator 6;\
+        Flying; protection from colored spells; annihilator 6;\
         When SN is put into a graveyard from anywhere, its owner shuffles his or her graveyard into his or her library.
 timing=main
 requires_groovy_code

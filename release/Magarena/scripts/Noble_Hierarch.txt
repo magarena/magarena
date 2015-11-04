@@ -1,12 +1,12 @@
 name=Noble Hierarch
-image=http://magiccards.info/scans/en/cfx/87.jpg
+image=http://magiccards.info/scans/en/mm2/151.jpg
 value=4.600
 rarity=R
 type=Creature
 subtype=Human,Druid
 cost={G}
 pt=0/1
-ability=exalted;\
+ability=Exalted;\
         {T}: Add {G} or {W} or {U} to your mana pool.
 timing=main
 oracle=Exalted\n{T}: Add {G}, {W}, or {U} to your mana pool.

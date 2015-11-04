@@ -1,5 +1,5 @@
 name=Etched Oracle
-image=http://magiccards.info/scans/en/mma/206.jpg
+image=http://magiccards.info/scans/en/mm2/211.jpg
 value=2.500
 rarity=U
 type=Artifact,Creature

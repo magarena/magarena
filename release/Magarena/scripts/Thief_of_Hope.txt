@@ -1,7 +1,7 @@
 name=Thief of Hope
-image=http://magiccards.info/scans/en/chk/147.jpg
+image=http://magiccards.info/scans/en/mm2/100.jpg
 value=3.795
-rarity=U
+rarity=C
 type=Creature
 subtype=Spirit
 cost={2}{B}

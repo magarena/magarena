@@ -1,7 +1,7 @@
 name=Conclave Phalanx
-image=http://magiccards.info/scans/en/ddf/16.jpg
+image=http://magiccards.info/scans/en/mm2/12.jpg
 value=2.500
-rarity=U
+rarity=C
 type=Creature
 subtype=Human,Soldier
 cost={4}{W}

@@ -1,7 +1,6 @@
 name=Combust
-image=http://magiccards.info/scans/en/m12/128.jpg
+image=http://magiccards.info/scans/en/mm2/110.jpg
 value=3.188
-removal=4
 rarity=U
 type=Instant
 cost={1}{R}

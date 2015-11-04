@@ -1,5 +1,5 @@
 name=Tribal Flames
-image=http://magiccards.info/scans/en/mma/138.jpg
+image=http://magiccards.info/scans/en/mm2/132.jpg
 value=3.694
 rarity=C
 type=Sorcery

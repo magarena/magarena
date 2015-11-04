@@ -1,7 +1,7 @@
 name=Viashino Slaughtermaster
-image=http://magiccards.info/scans/en/cfx/73.jpg
+image=http://magiccards.info/scans/en/mm2/133.jpg
 value=3.140
-rarity=U
+rarity=C
 type=Creature
 subtype=Viashino,Warrior
 cost={1}{R}

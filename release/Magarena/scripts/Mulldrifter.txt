@@ -1,7 +1,7 @@
 name=Mulldrifter
-image=http://magiccards.info/scans/en/c14/118.jpg
+image=http://magiccards.info/scans/en/mm2/51.jpg
 value=4.205
-rarity=C
+rarity=U
 type=Creature
 subtype=Elemental
 cost={4}{U}

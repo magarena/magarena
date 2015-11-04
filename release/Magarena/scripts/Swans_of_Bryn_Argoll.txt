@@ -1,12 +1,12 @@
 name=Swans of Bryn Argoll
-image=http://magiccards.info/scans/en/shm/151.jpg
+image=http://magiccards.info/scans/en/mm2/199.jpg
 value=4.154
 rarity=R
 type=Creature
 subtype=Bird,Spirit
 cost={2}{W/U}{W/U}
 pt=4/3
-ability=flying
+ability=Flying
 timing=main
 requires_groovy_code
 oracle=Flying\nIf a source would deal damage to Swans of Bryn Argoll, prevent that damage. The source's controller draws cards equal to the damage prevented this way.

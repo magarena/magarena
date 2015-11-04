@@ -1,5 +1,5 @@
 name=Air Servant
-image=http://magiccards.info/scans/en/cns/90.jpg
+image=http://magiccards.info/scans/en/mm2/40.jpg
 value=3.600
 rarity=U
 type=Creature

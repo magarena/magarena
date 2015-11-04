@@ -1,5 +1,5 @@
 name=Repeal
-image=http://magiccards.info/scans/en/ddn/72.jpg
+image=http://magiccards.info/scans/en/mm2/56.jpg
 value=2.500
 rarity=C
 type=Instant

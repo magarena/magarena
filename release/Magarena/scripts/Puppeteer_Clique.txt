@@ -1,12 +1,12 @@
 name=Puppeteer Clique
-image=http://magiccards.info/scans/en/shm/75.jpg
+image=http://magiccards.info/scans/en/mm2/91.jpg
 value=3.667
 rarity=R
 type=Creature
 subtype=Faerie,Wizard
 cost={3}{B}{B}
 pt=3/2
-ability=flying;\
+ability=Flying;\
         When SN enters the battlefield, put target creature card from an opponent's graveyard onto the battlefield under your control. \
         It gains haste. At the beginning of your next end step, exile it.;\
         persist

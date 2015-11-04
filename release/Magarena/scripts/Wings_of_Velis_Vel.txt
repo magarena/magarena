@@ -1,11 +1,11 @@
 name=Wings of Velis Vel
-image=http://magiccards.info/scans/en/lw/97.jpg
+image=http://magiccards.info/scans/en/mm2/70.jpg
 value=3.188
 rarity=C
 type=Tribal,Instant
 subtype=Shapeshifter
 cost={1}{U}
-ability=changeling
+ability=Changeling
 timing=pump
 requires_groovy_code
 oracle=Changeling\nUntil end of turn, target creature has base power and toughness 4/4, gains all creature types, and gains flying.

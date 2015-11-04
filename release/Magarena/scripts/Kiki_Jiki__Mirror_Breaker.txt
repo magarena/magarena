@@ -1,12 +1,12 @@
 name=Kiki-Jiki, Mirror Breaker
-image=http://magiccards.info/scans/en/mma/120.jpg
+image=http://magiccards.info/scans/en/mm2/121.jpg
 value=4.373
-rarity=R
+rarity=M
 type=Legendary,Creature
 subtype=Goblin,Shaman
 cost={2}{R}{R}{R}
 pt=2/2
-ability=haste
+ability=Haste
 timing=fmain
 requires_groovy_code
 oracle=Haste\n{T}: Put a token that's a copy of target nonlegendary creature you control onto the battlefield. That token has haste. Sacrifice it at the beginning of the next end step.

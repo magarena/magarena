@@ -1,7 +1,7 @@
 name=Tumble Magnet
-image=http://magiccards.info/scans/en/som/218.jpg
+image=http://magiccards.info/scans/en/mm2/233.jpg
 value=3.684
-rarity=C
+rarity=U
 type=Artifact
 cost={3}
 ability=SN enters the battlefield with three charge counters on it.;\

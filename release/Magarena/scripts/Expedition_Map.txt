@@ -1,7 +1,7 @@
 name=Expedition Map
-image=http://magiccards.info/scans/en/zen/201.jpg
+image=http://magiccards.info/scans/en/mm2/213.jpg
 value=3.895
-rarity=C
+rarity=U
 type=Artifact
 cost={1}
 ability={2}, {T}, Sacrifice SN: Search your library for a land card, reveal it, and put it into your hand. Then shuffle your library.

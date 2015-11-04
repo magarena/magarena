@@ -1,5 +1,5 @@
 name=Duskhunter Bat
-image=http://magiccards.info/scans/en/ddk/6.jpg
+image=http://magiccards.info/scans/en/mm2/81.jpg
 value=3.062
 rarity=C
 type=Creature

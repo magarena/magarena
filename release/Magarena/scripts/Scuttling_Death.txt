@@ -1,5 +1,5 @@
 name=Scuttling Death
-image=http://magiccards.info/scans/en/chk/142.jpg
+image=http://magiccards.info/scans/en/mm2/94.jpg
 value=1.141
 rarity=C
 type=Creature

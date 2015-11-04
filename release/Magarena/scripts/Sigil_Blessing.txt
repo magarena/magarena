@@ -1,7 +1,7 @@
 name=Sigil Blessing
-image=http://magiccards.info/scans/en/ddg/30.jpg
+image=http://magiccards.info/scans/en/mm2/187.jpg
 value=2.894
-rarity=C
+rarity=U
 type=Instant
 cost={G}{W}
 timing=pump

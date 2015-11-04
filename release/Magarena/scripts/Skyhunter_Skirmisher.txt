@@ -1,7 +1,7 @@
 name=Skyhunter Skirmisher
-image=http://magiccards.info/scans/en/c14/89.jpg
+image=http://magiccards.info/scans/en/mm2/32.jpg
 value=3.931
-rarity=U
+rarity=C
 type=Creature
 subtype=Cat,Knight
 cost={1}{W}{W}
