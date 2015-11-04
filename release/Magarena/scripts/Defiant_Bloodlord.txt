@@ -6,7 +6,7 @@ type=Creature
 subtype=Vampire
 cost={5}{B}{B}
 pt=4/5
-ability=Flying;\
-        Whenever you gain life, target opponent loses that much life.
+ability=Flying
 timing=main
+requires_groovy_code=Sanguine Bond
 oracle=Flying\nWhenever you gain life, target opponent loses that much life.
