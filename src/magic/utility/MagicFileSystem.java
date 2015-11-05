@@ -27,6 +27,7 @@ import org.apache.commons.io.FilenameUtils;
  *
  */
 public final class MagicFileSystem {
+
     private MagicFileSystem() {}
 
     // card images
@@ -36,8 +37,9 @@ public final class MagicFileSystem {
 
     private enum ImagesPath {
 
-        CARDS("cards"),
-        TOKENS("tokens");
+        CARDS(CARD_IMAGE_FOLDER),
+        TOKENS(TOKEN_IMAGE_FOLDER),
+        CUSTOM("custom");
 
         private final String directoryName;
 
@@ -260,4 +262,8 @@ public final class MagicFileSystem {
         }
     }
 
+    public static Path getCustomImagesPath() {
+        return getImagesPath(ImagesPath.CUSTOM);
+    }
+    
 }
