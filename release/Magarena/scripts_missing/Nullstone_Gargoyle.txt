@@ -8,5 +8,5 @@ cost={9}
 pt=4/5
 ability=Flying;\
         Whenever the first noncreature spell of a turn is cast, counter that spell.
-timing=artifact
+timing=main
 oracle=Flying\nWhenever the first noncreature spell of a turn is cast, counter that spell.

@@ -8,5 +8,5 @@ cost={7}
 pt=0/0
 ability=Sunburst;\
         {T}: Double the number of +1/+1 counters on SN.
-timing=artifact
+timing=main
 oracle=Sunburst\n{T}: Double the number of +1/+1 counters on Solarion.

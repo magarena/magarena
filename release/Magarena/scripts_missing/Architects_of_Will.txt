@@ -8,5 +8,5 @@ cost={2}{U}{B}
 pt=3/3
 ability=When SN enters the battlefield, look at the top three cards of target player's library, then put them back in any order.;\
         Cycling {U/B}
-timing=artifact
+timing=main
 oracle=When Architects of Will enters the battlefield, look at the top three cards of target player's library, then put them back in any order.\nCycling {U/B}

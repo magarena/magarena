@@ -9,5 +9,5 @@ pt=1/1
 ability=Bestow {2}{R};\
         {R}: SN gets +1/+0 until end of turn. If it's an Aura, enchanted creature gets +1/+0 until end of turn instead.;\
         Enchanted creature gets +1/+1.
-timing=enchantment
+timing=main
 oracle=Bestow {2}{R}\n{R}: Everflame Eidolon gets +1/+0 until end of turn. If it's an Aura, enchanted creature gets +1/+0 until end of turn instead.\nEnchanted creature gets +1/+1.

@@ -7,5 +7,5 @@ subtype=Construct
 cost={4}
 pt=4/1
 ability=When a player other than SN's owner controls it, that player sacrifices it. If the player does, SN deals 7 damage to him or her.
-timing=artifact
+timing=main
 oracle=When a player other than Bronze Bombshell's owner controls it, that player sacrifices it. If the player does, Bronze Bombshell deals 7 damage to him or her.

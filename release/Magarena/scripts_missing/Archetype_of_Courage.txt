@@ -8,5 +8,5 @@ cost={1}{W}{W}
 pt=2/2
 ability=Creatures you control have first strike.;\
         Creatures your opponents control lose first strike and can't have or gain first strike.
-timing=enchantment
+timing=main
 oracle=Creatures you control have first strike.\nCreatures your opponents control lose first strike and can't have or gain first strike.

@@ -7,5 +7,5 @@ subtype=Vedalken,Artificer
 cost={1}{U}
 pt=1/2
 ability=Artifact spells you cast cost {1} less to cast.
-timing=artifact
+timing=main
 oracle=Artifact spells you cast cost {1} less to cast.

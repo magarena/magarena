@@ -7,5 +7,5 @@ subtype=Golem
 cost={3}
 pt=3/4
 ability=You can't cast creature spells.
-timing=artifact
+timing=main
 oracle=You can't cast creature spells.

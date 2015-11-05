@@ -7,5 +7,5 @@ subtype=Human,Cleric
 cost={1}{W}
 pt=2/2
 ability=Each player who has cast a nonartifact spell this turn can't cast additional nonartifact spells.
-timing=artifact
+timing=main
 oracle=Each player who has cast a nonartifact spell this turn can't cast additional nonartifact spells.

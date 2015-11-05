@@ -8,5 +8,5 @@ cost={6}
 pt=1/1
 ability=When SN's power is 7 or greater, sacrifice it.;\
         Exile the top card of your library: Put X +1/+1 counters on SN, where X is the exiled card's converted mana cost.
-timing=artifact
+timing=main
 oracle=When Phyrexian Devourer's power is 7 or greater, sacrifice it.\nExile the top card of your library: Put X +1/+1 counters on Phyrexian Devourer, where X is the exiled card's converted mana cost.

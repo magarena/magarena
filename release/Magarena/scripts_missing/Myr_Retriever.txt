@@ -7,5 +7,5 @@ subtype=Myr
 cost={2}
 pt=1/1
 ability=When SN dies, return another target artifact card from your graveyard to your hand.
-timing=artifact
+timing=main
 oracle=When Myr Retriever dies, return another target artifact card from your graveyard to your hand.

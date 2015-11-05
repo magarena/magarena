@@ -8,5 +8,5 @@ cost={1}{R}{R}
 pt=3/2
 ability=Creatures you control have trample.;\
         Creatures your opponents control lose trample and can't have or gain trample.
-timing=enchantment
+timing=main
 oracle=Creatures you control have trample.\nCreatures your opponents control lose trample and can't have or gain trample.

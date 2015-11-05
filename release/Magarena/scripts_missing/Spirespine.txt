@@ -9,5 +9,5 @@ pt=4/1
 ability=Bestow {4}{G};\
         SN blocks each turn if able.;\
         Enchanted creature gets +4/+1 and blocks each turn if able.
-timing=enchantment
+timing=main
 oracle=Bestow {4}{G}\nSpirespine blocks each turn if able.\nEnchanted creature gets +4/+1 and blocks each turn if able.

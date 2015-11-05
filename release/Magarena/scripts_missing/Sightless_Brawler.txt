@@ -9,5 +9,5 @@ pt=3/2
 ability=Bestow {4}{W};\
         SN can't attack alone.;\
         Enchanted creature gets +3/+2 and can't attack alone.
-timing=enchantment
+timing=main
 oracle=Bestow {4}{W}\nSightless Brawler can't attack alone.\nEnchanted creature gets +3/+2 and can't attack alone.

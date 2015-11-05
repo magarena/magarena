@@ -8,5 +8,5 @@ cost={3}
 pt=2/1
 ability=Reveal SN as you draft it. You may look at the next card drafted from this booster pack.;\
         Flying
-timing=artifact
+timing=main
 oracle=Reveal Cogwork Spy as you draft it. You may look at the next card drafted from this booster pack.\nFlying

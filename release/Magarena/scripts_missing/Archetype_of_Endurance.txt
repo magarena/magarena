@@ -8,5 +8,5 @@ cost={6}{G}{G}
 pt=6/5
 ability=Creatures you control have hexproof.;\
         Creatures your opponents control lose hexproof and can't have or gain hexproof.
-timing=enchantment
+timing=main
 oracle=Creatures you control have hexproof.\nCreatures your opponents control lose hexproof and can't have or gain hexproof.

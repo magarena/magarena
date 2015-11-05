@@ -9,5 +9,5 @@ pt=0/0
 ability=SN enters the battlefield with X +1/+1 counters on it.;\
         SN can't block.;\
         SN can't attack unless you pay {1} for each +1/+1 counter on it.
-timing=artifact
+timing=main
 oracle=Phyrexian Marauder enters the battlefield with X +1/+1 counters on it.\nPhyrexian Marauder can't block.\nPhyrexian Marauder can't attack unless you pay {1} for each +1/+1 counter on it.

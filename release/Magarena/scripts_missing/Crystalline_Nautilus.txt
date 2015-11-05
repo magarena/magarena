@@ -9,5 +9,5 @@ pt=4/4
 ability=Bestow {3}{U}{U};\
         When SN becomes the target of a spell or ability, sacrifice it.;\
         Enchanted creature gets +4/+4 and has "When this creature becomes the target of a spell or ability, sacrifice it."
-timing=enchantment
+timing=main
 oracle=Bestow {3}{U}{U}\nWhen Crystalline Nautilus becomes the target of a spell or ability, sacrifice it.\nEnchanted creature gets +4/+4 and has "When this creature becomes the target of a spell or ability, sacrifice it."

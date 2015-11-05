@@ -8,5 +8,5 @@ cost={3}
 pt=1/1
 ability=SN can't be blocked.;\
         Whenever SN deals combat damage to a player, you may remove a counter from target permanent.
-timing=artifact
+timing=main
 oracle=Ferropede can't be blocked.\nWhenever Ferropede deals combat damage to a player, you may remove a counter from target permanent.

@@ -7,5 +7,5 @@ subtype=Scarecrow
 cost={5}
 pt=6/6
 ability=Whenever SN attacks or blocks, put a -1/-1 counter on it at end of combat.
-timing=artifact
+timing=main
 oracle=Whenever Wicker Warcrawler attacks or blocks, put a -1/-1 counter on it at end of combat.

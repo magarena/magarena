@@ -9,5 +9,5 @@ pt=5/4
 ability=Indestructible;\
         As long as your devotion to white and black is less than seven, Athreos isn't a creature.;\
         Whenever another creature you own dies, return it to your hand unless target opponent pays 3 life.
-timing=enchantment
+timing=main
 oracle=Indestructible\nAs long as your devotion to white and black is less than seven, Athreos isn't a creature.\nWhenever another creature you own dies, return it to your hand unless target opponent pays 3 life.

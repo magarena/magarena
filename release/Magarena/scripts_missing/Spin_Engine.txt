@@ -7,5 +7,5 @@ subtype=Construct
 cost={3}
 pt=3/1
 ability={R}: Target creature can't block SN this turn.
-timing=artifact
+timing=main
 oracle={R}: Target creature can't block Spin Engine this turn.

@@ -7,5 +7,5 @@ subtype=Shapeshifter
 cost={6}
 pt=4/4
 ability={0}: SN gets -1/-1 and gains your choice of banding, flying, first strike, or trample until end of turn.
-timing=artifact
+timing=main
 oracle={0}: Urza's Avenger gets -1/-1 and gains your choice of banding, flying, first strike, or trample until end of turn.

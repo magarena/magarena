@@ -8,5 +8,5 @@ cost={4}
 pt=1/5
 ability=No more than one creature can attack each combat.;\
         No more than one creature can block each combat.
-timing=artifact
+timing=main
 oracle=No more than one creature can attack each combat.\nNo more than one creature can block each combat.

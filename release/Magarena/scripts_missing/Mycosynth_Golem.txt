@@ -8,5 +8,5 @@ cost={11}
 pt=4/5
 ability=Affinity for artifacts;\
         Artifact creature spells you cast have affinity for artifacts.
-timing=artifact
+timing=main
 oracle=Affinity for artifacts\nArtifact creature spells you cast have affinity for artifacts.

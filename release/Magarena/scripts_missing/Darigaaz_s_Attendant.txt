@@ -7,5 +7,5 @@ subtype=Golem
 cost={5}
 pt=3/3
 ability={1}, Sacrifice SN: Add {B}{R}{G} to your mana pool.
-timing=artifact
+timing=main
 oracle={1}, Sacrifice Darigaaz's Attendant: Add {B}{R}{G} to your mana pool.
