@@ -1,6 +1,6 @@
 name=Sphere of the Suns
 image=http://magiccards.info/scans/en/mm2/231.jpg
-value=3.725
+value=3.575
 rarity=C
 type=Artifact
 cost={2}
