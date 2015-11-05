@@ -8,5 +8,5 @@ cost={3}{W}{W}
 pt=4/4
 ability=Flash;\
         Whenever a creature deals combat damage to you, if SN entered the battlefield this turn, exile that creature until Hixus leaves the battlefield.
-timing=main
+timing=flash
 oracle=Flash\nWhenever a creature deals combat damage to you, if Hixus, Prison Warden entered the battlefield this turn, exile that creature until Hixus leaves the battlefield.

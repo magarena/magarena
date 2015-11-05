@@ -9,5 +9,5 @@ pt=2/4
 ability=Flash;\
         Flying;\
         When SN enters the battlefield, attach all Auras enchanting target permanent to another permanent with the same controller.
-timing=main
+timing=flash
 oracle=Flash\nFlying\nWhen Glamer Spinners enters the battlefield, attach all Auras enchanting target permanent to another permanent with the same controller.

@@ -8,5 +8,5 @@ cost={2}{U}
 pt=1/4
 ability=Flash;\
         When SN enters the battlefield, you may change a target of target spell or ability to SN.
-timing=main
+timing=flash
 oracle=Flash\nWhen Mizzium Meddler enters the battlefield, you may change a target of target spell or ability to Mizzium Meddler.

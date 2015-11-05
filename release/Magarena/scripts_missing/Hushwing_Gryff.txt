@@ -9,5 +9,5 @@ pt=2/1
 ability=Flash;\
         Flying;\
         Creatures entering the battlefield don't cause abilities to trigger.
-timing=main
+timing=flash
 oracle=Flash\nFlying\nCreatures entering the battlefield don't cause abilities to trigger.

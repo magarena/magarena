@@ -8,5 +8,5 @@ cost={1}{W}
 pt=2/2
 ability=Flash;\
         If a nontoken creature would enter the battlefield and it wasn't cast, exile it instead.
-timing=main
+timing=flash
 oracle=Flash\nIf a nontoken creature would enter the battlefield and it wasn't cast, exile it instead.

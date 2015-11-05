@@ -10,5 +10,5 @@ ability=Devoid;\
         Flash;\
         Flying;\
         When SN enters the battlefield, you may put two cards your opponents own from exile into their owners' graveyards. If you do, counter target spell.
-timing=main
+timing=flash
 oracle=Devoid\nFlash\nFlying\nWhen Ulamog's Nullifier enters the battlefield, you may put two cards your opponents own from exile into their owners' graveyards. If you do, counter target spell.

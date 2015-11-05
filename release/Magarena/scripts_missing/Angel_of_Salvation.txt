@@ -9,5 +9,5 @@ pt=5/5
 ability=Flash; convoke;\
         Flying;\
         When SN enters the battlefield, prevent the next 5 damage that would be dealt this turn to any number of target creatures and/or players, divided as you choose.
-timing=main
+timing=flash
 oracle=Flash, convoke\nFlying\nWhen Angel of Salvation enters the battlefield, prevent the next 5 damage that would be dealt this turn to any number of target creatures and/or players, divided as you choose.

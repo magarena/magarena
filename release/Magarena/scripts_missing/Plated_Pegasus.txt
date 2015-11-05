@@ -9,5 +9,5 @@ pt=1/2
 ability=Flash;\
         Flying;\
         If a spell would deal damage to a creature or player, prevent 1 damage that spell would deal to that creature or player.
-timing=main
+timing=flash
 oracle=Flash\nFlying\nIf a spell would deal damage to a creature or player, prevent 1 damage that spell would deal to that creature or player.

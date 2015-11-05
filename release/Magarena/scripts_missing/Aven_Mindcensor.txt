@@ -9,5 +9,5 @@ pt=2/1
 ability=Flash;\
         Flying;\
         If an opponent would search a library, that player searches the top four cards of that library instead.
-timing=main
+timing=flash
 oracle=Flash\nFlying\nIf an opponent would search a library, that player searches the top four cards of that library instead.

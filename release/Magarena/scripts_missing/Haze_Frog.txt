@@ -8,5 +8,5 @@ cost={3}{G}{G}
 pt=2/1
 ability=Flash;\
         When SN enters the battlefield, prevent all combat damage that other creatures would deal this turn.
-timing=main
+timing=flash
 oracle=Flash\nWhen Haze Frog enters the battlefield, prevent all combat damage that other creatures would deal this turn.

@@ -8,5 +8,5 @@ cost={2}{W}{W}
 pt=3/3
 ability=Flash;\
         When SN enters the battlefield, you gain protection from the color of your choice until end of turn.
-timing=main
+timing=flash
 oracle=Flash\nWhen Seht's Tiger enters the battlefield, you gain protection from the color of your choice until end of turn.

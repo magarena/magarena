@@ -8,5 +8,5 @@ cost={2}{U}
 pt=2/1
 ability=Flash;\
         When SN enters the battlefield, target permanent becomes the color or colors of your choice until end of turn.
-timing=main
+timing=flash
 oracle=Flash\nWhen Prismwake Merrow enters the battlefield, target permanent becomes the color or colors of your choice until end of turn.

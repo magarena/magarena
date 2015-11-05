@@ -8,5 +8,5 @@ cost={2}{W}
 pt=2/1
 ability=Flash;\
         Tapped creatures you control can block as though they were untapped.
-timing=main
+timing=flash
 oracle=Flash\nTapped creatures you control can block as though they were untapped.
