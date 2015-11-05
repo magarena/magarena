@@ -6,6 +6,6 @@ type=Enchantment
 subtype=Aura
 cost={R}
 ability=Enchant creature;\
-        Enchanted creature can't be blocked except by two or more creatures.
+        Enchanted creature has menace.
 timing=aura
-oracle=Enchant creature\nEnchanted creature can't be blocked except by two or more creatures.
+oracle=Enchant creature\nEnchanted creature has menace.

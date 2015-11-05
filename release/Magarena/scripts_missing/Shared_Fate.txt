@@ -4,7 +4,7 @@ value=3.787
 rarity=R
 type=Enchantment
 cost={4}{U}
-ability=If a player would draw a card, that player exiles the top card of an opponent's library face down instead.;\
+ability=If a player would draw a card, that player exiles the top card of one of his or her opponents' libraries face down instead.;\
         Each player may look at and play cards he or she exiled with SN.
 timing=enchantment
-oracle=If a player would draw a card, that player exiles the top card of an opponent's library face down instead.\nEach player may look at and play cards he or she exiled with Shared Fate.
+oracle=If a player would draw a card, that player exiles the top card of one of his or her opponents' libraries face down instead.\nEach player may look at and play cards he or she exiled with Shared Fate.
