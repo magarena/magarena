@@ -1,5 +1,6 @@
 name=Macabre Waltz
 image=http://magiccards.info/scans/en/ori/107.jpg
+image_updated=2015-11-05
 value=3.314
 rarity=C
 type=Sorcery
