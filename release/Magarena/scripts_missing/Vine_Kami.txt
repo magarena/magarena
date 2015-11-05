@@ -6,7 +6,7 @@ type=Creature
 subtype=Spirit
 cost={6}{G}
 pt=4/4
-ability=SN can't be blocked except by two or more creatures.;\
+ability=Menace;\
         Soulshift 6
 timing=main
-oracle=Vine Kami can't be blocked except by two or more creatures.\nSoulshift 6
+oracle=Menace\nSoulshift 6

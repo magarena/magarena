@@ -7,7 +7,7 @@ subtype=Ox
 cost={3}{R}
 pt=3/3
 ability=Bestow {6}{R};\
-        SN can't be blocked except by two or more creatures.;\
-        Enchanted creature gets +3/+3 and can't be blocked except by two or more creatures.
-timing=enchantment
-oracle=Bestow {6}{R}\nPurphoros's Emissary can't be blocked except by two or more creatures.\nEnchanted creature gets +3/+3 and can't be blocked except by two or more creatures.
+        Menace;\
+        Enchanted creature gets +3/+3 and has menace.
+timing=main
+oracle=Bestow {6}{R}\nMenace\nEnchanted creature gets +3/+3 and has menace.

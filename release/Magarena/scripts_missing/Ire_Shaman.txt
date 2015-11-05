@@ -6,8 +6,8 @@ type=Creature
 subtype=Orc,Shaman
 cost={1}{R}
 pt=2/1
-ability=SN can't be blocked except by two or more creatures.;\
+ability=Menace;\
         Megamorph {R};\
         When SN is turned face up, exile the top card of your library. Until end of turn, you may play that card.
 timing=main
-oracle=Ire Shaman can't be blocked except by two or more creatures.\nMegamorph {R}\nWhen Ire Shaman is turned face up, exile the top card of your library. Until end of turn, you may play that card.
+oracle=Menace\nMegamorph {R}\nWhen Ire Shaman is turned face up, exile the top card of your library. Until end of turn, you may play that card.

@@ -7,6 +7,6 @@ subtype=Elemental,Spirit
 cost={4}{U}
 pt=3/2
 ability=Flying;\
-        SN can't be blocked except by two or more creatures.
+        Menace
 timing=main
-oracle=Flying\nWind Spirit can't be blocked except by two or more creatures.
+oracle=Flying\nMenace

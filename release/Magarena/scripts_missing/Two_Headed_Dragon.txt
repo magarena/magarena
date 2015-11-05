@@ -7,8 +7,8 @@ subtype=Dragon
 cost={4}{R}{R}
 pt=4/4
 ability=Flying;\
-        {1}{R}: SN gets +2/+0 until end of turn.;\
-        SN can't be blocked except by two or more creatures.;\
-        SN can block an additional creature.
+        Menace;\
+        SN can block an additional creature.;\
+        {1}{R}: SN gets +2/+0 until end of turn.
 timing=main
-oracle=Flying\n{1}{R}: Two-Headed Dragon gets +2/+0 until end of turn.\nTwo-Headed Dragon can't be blocked except by two or more creatures.\nTwo-Headed Dragon can block an additional creature.
+oracle=Flying\nMenace\nTwo-Headed Dragon can block an additional creature.\n{1}{R}: Two-Headed Dragon gets +2/+0 until end of turn.

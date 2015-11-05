@@ -6,7 +6,7 @@ type=Creature
 subtype=Wolf
 cost={2}{R}
 pt=1/1
-ability=Whenever SN attacks, each creature you control can't be blocked this turn except by two or more creatures.;\
+ability=Whenever SN attacks, creatures you control gain menace until end of turn.;\
         Undying
 timing=main
-oracle=Whenever Pyreheart Wolf attacks, each creature you control can't be blocked this turn except by two or more creatures.\nUndying
+oracle=Whenever Pyreheart Wolf attacks, creatures you control gain menace until end of turn.\nUndying

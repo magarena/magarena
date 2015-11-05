@@ -7,6 +7,6 @@ subtype=Human,Knight
 cost={2}{R}
 pt=2/2
 ability=Flanking;\
-        {1}{R}: SN can't be blocked except by two or more creatures this turn.
+        {1}{R}: SN gains menace until end of turn.
 timing=main
-oracle=Flanking\n{1}{R}: Searing Spear Askari can't be blocked except by two or more creatures this turn.
+oracle=Flanking\n{1}{R}: Searing Spear Askari gains menace until end of turn.

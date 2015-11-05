@@ -6,7 +6,7 @@ type=Creature
 subtype=Horror
 cost={U}{B}{R}
 pt=2/3
-ability=Deathtouch;\
-        SN can't be blocked except by two or more creatures.
+ability=Menace;\
+        Deathtouch
 timing=main
-oracle=Deathtouch\nKederekt Creeper can't be blocked except by two or more creatures.
+oracle=Menace\nDeathtouch
