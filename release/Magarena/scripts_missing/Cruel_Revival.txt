@@ -1,7 +1,7 @@
 name=Cruel Revival
 image=http://magiccards.info/scans/en/ori/88.jpg
 value=3.868
-rarity=C
+rarity=U
 type=Instant
 cost={4}{B}
 effect=Destroy target non-Zombie creature. It can't be regenerated. Return up to one target Zombie card from your graveyard to your hand.

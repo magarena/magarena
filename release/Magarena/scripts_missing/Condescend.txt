@@ -5,5 +5,5 @@ rarity=C
 type=Instant
 cost={X}{U}
 effect=Counter target spell unless its controller pays {X}. Scry 2.
-timing=removal
+timing=counter
 oracle=Counter target spell unless its controller pays {X}. Scry 2.
