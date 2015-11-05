@@ -1,6 +1,7 @@
 name=Oblivion Ring
 image=http://magiccards.info/scans/en/mm2/29.jpg
 value=4.400
+removal=2
 rarity=U
 type=Enchantment
 cost={2}{W}

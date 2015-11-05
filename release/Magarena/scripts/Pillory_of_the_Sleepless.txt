@@ -1,6 +1,7 @@
 name=Pillory of the Sleepless
 image=http://magiccards.info/scans/en/mm2/183.jpg
 value=4.091
+removal=4
 rarity=U
 type=Enchantment
 subtype=Aura

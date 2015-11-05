@@ -1,6 +1,7 @@
 name=Dismember
 image=http://magiccards.info/scans/en/mm2/79.jpg
 value=4.438
+removal=5
 rarity=U
 type=Instant
 cost={1}{B/P}{B/P}

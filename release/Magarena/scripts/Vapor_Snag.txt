@@ -1,6 +1,7 @@
 name=Vapor Snag
 image=http://magiccards.info/scans/en/mm2/66.jpg
 value=3.881
+removal=2
 rarity=C
 type=Instant
 cost={U}

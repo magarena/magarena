@@ -1,6 +1,7 @@
 name=Instill Infection
 image=http://magiccards.info/scans/en/mm2/85.jpg
 value=1.572
+removal=1
 rarity=C
 type=Instant
 cost={3}{B}
