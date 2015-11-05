@@ -5,5 +5,5 @@ rarity=U
 type=Instant
 cost={3}{U}
 effect=Counter target noncreature spell.
-timing=removal
+timing=counter
 oracle=Counter target noncreature spell.

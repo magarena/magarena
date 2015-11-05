@@ -5,5 +5,5 @@ rarity=C
 type=Instant
 cost={G}
 effect=Counter target activated ability from an artifact source.
-timing=removal
+timing=counter
 oracle=Counter target activated ability from an artifact source.

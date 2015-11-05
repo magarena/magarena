@@ -5,5 +5,5 @@ rarity=R
 type=Instant
 cost={3}{U}{U}{U}
 effect=Counter target spell. If that spell is countered this way, exile it instead of putting it into its owner's graveyard. You may play it without paying its mana cost for as long as it remains exiled.
-timing=removal
+timing=counter
 oracle=Counter target spell. If that spell is countered this way, exile it instead of putting it into its owner's graveyard. You may play it without paying its mana cost for as long as it remains exiled.

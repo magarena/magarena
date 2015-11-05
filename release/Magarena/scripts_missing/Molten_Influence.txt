@@ -5,5 +5,5 @@ rarity=R
 type=Instant
 cost={1}{R}
 effect=Counter target instant or sorcery spell unless its controller has SN deal 4 damage to him or her.
-timing=removal
+timing=counter
 oracle=Counter target instant or sorcery spell unless its controller has Molten Influence deal 4 damage to him or her.

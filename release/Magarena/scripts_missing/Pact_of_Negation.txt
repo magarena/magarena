@@ -5,5 +5,5 @@ rarity=R
 type=Instant
 cost={0}
 effect=Counter target spell.~At the beginning of your next upkeep, pay {3}{U}{U}. If you don't, you lose the game.
-timing=removal
+timing=counter
 oracle=Counter target spell.\nAt the beginning of your next upkeep, pay {3}{U}{U}. If you don't, you lose the game.

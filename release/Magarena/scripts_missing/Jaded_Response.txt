@@ -5,5 +5,5 @@ rarity=C
 type=Instant
 cost={1}{U}
 effect=Counter target spell if it shares a color with a creature you control.
-timing=removal
+timing=counter
 oracle=Counter target spell if it shares a color with a creature you control.

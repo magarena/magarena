@@ -5,5 +5,5 @@ rarity=C
 type=Instant
 cost={2}{U}{U}
 effect=Counter target spell, then proliferate.
-timing=removal
+timing=counter
 oracle=Counter target spell, then proliferate.

@@ -5,5 +5,5 @@ rarity=C
 type=Instant
 cost={X}{U}
 effect=Counter target spell unless its controller pays {X}. Clash with an opponent. If you win, that spell's controller puts the top four cards of his or her library into his or her graveyard.
-timing=removal
+timing=counter
 oracle=Counter target spell unless its controller pays {X}. Clash with an opponent. If you win, that spell's controller puts the top four cards of his or her library into his or her graveyard.

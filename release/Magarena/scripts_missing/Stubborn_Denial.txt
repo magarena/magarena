@@ -5,5 +5,5 @@ rarity=U
 type=Instant
 cost={U}
 effect=Counter target noncreature spell unless its controller pays {1}.~If you control a creature with power 4 or greater, counter that spell instead.
-timing=removal
+timing=counter
 oracle=Counter target noncreature spell unless its controller pays {1}.\nFerocious — If you control a creature with power 4 or greater, counter that spell instead.

@@ -5,5 +5,5 @@ rarity=C
 type=Instant
 cost={1}{U}
 effect=Counter target spell that targets one or more creatures.~Draw a card.
-timing=removal
+timing=counter
 oracle=Counter target spell that targets one or more creatures.\nDraw a card.

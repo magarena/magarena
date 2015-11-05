@@ -5,5 +5,5 @@ rarity=U
 type=Instant
 cost={U}
 effect=Counter target spell if it was kicked.
-timing=removal
+timing=counter
 oracle=Counter target spell if it was kicked.

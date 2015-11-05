@@ -5,5 +5,5 @@ rarity=R
 type=Instant
 cost={3}{U}{U}
 effect=Counter target spell. If an artifact or creature spell is countered this way, put that card onto the battlefield under your control instead of into its owner's graveyard.
-timing=removal
+timing=counter
 oracle=Counter target spell. If an artifact or creature spell is countered this way, put that card onto the battlefield under your control instead of into its owner's graveyard.

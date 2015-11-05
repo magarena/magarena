@@ -5,5 +5,5 @@ rarity=U
 type=Instant
 cost={U}{B}
 effect=Counter target multicolored spell.
-timing=removal
+timing=counter
 oracle=Counter target multicolored spell.

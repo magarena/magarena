@@ -5,5 +5,5 @@ rarity=C
 type=Instant
 cost={3}{U}{U}
 effect=Counter target spell. Return target permanent to its owner's hand.
-timing=removal
+timing=counter
 oracle=Counter target spell. Return target permanent to its owner's hand.

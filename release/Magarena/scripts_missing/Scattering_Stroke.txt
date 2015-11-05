@@ -5,5 +5,5 @@ rarity=U
 type=Instant
 cost={2}{U}{U}
 effect=Counter target spell. Clash with an opponent. If you win, at the beginning of your next main phase, you may add {X} to your mana pool, where X is that spell's converted mana cost.
-timing=removal
+timing=counter
 oracle=Counter target spell. Clash with an opponent. If you win, at the beginning of your next main phase, you may add {X} to your mana pool, where X is that spell's converted mana cost.

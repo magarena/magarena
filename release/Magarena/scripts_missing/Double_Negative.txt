@@ -5,5 +5,5 @@ rarity=U
 type=Instant
 cost={U}{U}{R}
 effect=Counter up to two target spells.
-timing=removal
+timing=counter
 oracle=Counter up to two target spells.

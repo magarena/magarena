@@ -5,5 +5,5 @@ rarity=C
 type=Instant
 cost={U}
 effect=Counter target spell that targets a permanent you control.
-timing=removal
+timing=counter
 oracle=Counter target spell that targets a permanent you control.

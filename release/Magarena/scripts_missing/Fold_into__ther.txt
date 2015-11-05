@@ -5,5 +5,5 @@ rarity=U
 type=Instant
 cost={2}{U}{U}
 effect=Counter target spell. If that spell is countered this way, its controller may put a creature card from his or her hand onto the battlefield.
-timing=removal
+timing=counter
 oracle=Counter target spell. If that spell is countered this way, its controller may put a creature card from his or her hand onto the battlefield.

@@ -5,5 +5,5 @@ rarity=R
 type=Instant
 cost={G}{U}{R}
 effect=Counter target creature spell. Put two +1/+1 counters on up to one target creature.
-timing=removal
+timing=counter
 oracle=Counter target creature spell. Put two +1/+1 counters on up to one target creature.

@@ -5,5 +5,5 @@ rarity=R
 type=Instant
 cost={1}{U}{U}{R}
 effect=Counter target spell and SN deals 3 damage to target creature.
-timing=removal
+timing=counter
 oracle=Counter target spell and Suffocating Blast deals 3 damage to target creature.

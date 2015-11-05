@@ -5,5 +5,5 @@ rarity=R
 type=Instant
 cost={U}
 effect=Counter target spell if no mana was spent to cast it.
-timing=removal
+timing=counter
 oracle=Counter target spell if no mana was spent to cast it.
