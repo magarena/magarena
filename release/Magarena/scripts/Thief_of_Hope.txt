@@ -1,5 +1,6 @@
 name=Thief of Hope
 image=http://magiccards.info/scans/en/mm2/100.jpg
+image_updated=2015-11-05
 value=3.795
 rarity=C
 type=Creature
