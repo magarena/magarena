@@ -9,5 +9,5 @@ pt=0/4
 ability=Defender;\
         When SN enters the battlefield, an opponent gains control of it.;\
         At the beginning of your upkeep, each opponent puts a 1/1 white Soldier creature token onto the battlefield.
-timing=artifact
+timing=smain
 oracle=Defender\nWhen Akroan Horse enters the battlefield, an opponent gains control of it.\nAt the beginning of your upkeep, each opponent puts a 1/1 white Soldier creature token onto the battlefield.

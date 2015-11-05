@@ -8,5 +8,5 @@ cost={1}{W}
 pt=0/3
 ability=Defender;\
         Green spells and blue spells you cast cost {1} less to cast.
-timing=main
+timing=smain
 oracle=Defender\nGreen spells and blue spells you cast cost {1} less to cast.

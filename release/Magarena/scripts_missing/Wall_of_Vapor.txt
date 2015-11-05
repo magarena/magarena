@@ -8,5 +8,5 @@ cost={3}{U}
 pt=0/1
 ability=Defender;\
         Prevent all damage that would be dealt to SN by creatures it's blocking.
-timing=main
+timing=smain
 oracle=Defender\nPrevent all damage that would be dealt to Wall of Vapor by creatures it's blocking.

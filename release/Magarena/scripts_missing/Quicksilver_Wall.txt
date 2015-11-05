@@ -8,5 +8,5 @@ cost={2}{U}
 pt=1/6
 ability=Defender;\
         {4}: Return SN to its owner's hand. Any player may activate this ability.
-timing=main
+timing=smain
 oracle=Defender\n{4}: Return Quicksilver Wall to its owner's hand. Any player may activate this ability.

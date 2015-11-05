@@ -10,5 +10,5 @@ ability=Defender;\
         Tap an untapped Merfolk you control: SN can attack this turn as though it didn't have defender.;\
         Tap an untapped Merfolk you control: SN gets +2/+1 until end of turn.;\
         When SN dies, destroy all Merfolk tapped this turn to pay for its abilities.
-timing=main
+timing=smain
 oracle=Defender\nTap an untapped Merfolk you control: Vodalian War Machine can attack this turn as though it didn't have defender.\nTap an untapped Merfolk you control: Vodalian War Machine gets +2/+1 until end of turn.\nWhen Vodalian War Machine dies, destroy all Merfolk tapped this turn to pay for its abilities.

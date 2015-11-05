@@ -8,5 +8,5 @@ cost={2}{U}
 pt=0/3
 ability=Defender, flying;\
         {T}: Put SN and each creature it's blocking on top of their owners' libraries, then those players shuffle their libraries.
-timing=main
+timing=smain
 oracle=Defender, flying\n{T}: Put Gomazoa and each creature it's blocking on top of their owners' libraries, then those players shuffle their libraries.

@@ -8,5 +8,5 @@ cost={2}{R}
 pt=1/4
 ability=Defender;\
         Whenever SN blocks a creature, that creature can't attack during its controller's next turn.
-timing=main
+timing=smain
 oracle=Defender\nWhenever Wall of Dust blocks a creature, that creature can't attack during its controller's next turn.

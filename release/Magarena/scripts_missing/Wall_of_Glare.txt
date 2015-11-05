@@ -8,5 +8,5 @@ cost={1}{W}
 pt=0/5
 ability=Defender;\
         SN can block any number of creatures.
-timing=main
+timing=smain
 oracle=Defender\nWall of Glare can block any number of creatures.

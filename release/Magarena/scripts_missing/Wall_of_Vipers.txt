@@ -8,5 +8,5 @@ cost={2}{B}
 pt=2/4
 ability=Defender;\
         {3}: Destroy SN and target creature it's blocking. Any player may activate this ability.
-timing=main
+timing=smain
 oracle=Defender\n{3}: Destroy Wall of Vipers and target creature it's blocking. Any player may activate this ability.

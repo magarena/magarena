@@ -9,5 +9,5 @@ pt=2/4
 ability=Defender;\
         Protection from white;\
         Prevent all damage that would be dealt to SN by enchanted creatures.
-timing=main
+timing=smain
 oracle=Defender\nProtection from white\nPrevent all damage that would be dealt to Wall of Putrid Flesh by enchanted creatures.

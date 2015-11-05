@@ -8,5 +8,5 @@ cost={2}{B}
 pt=2/3
 ability=Defender;\
         {3}{B}, {T}: Target opponent loses 2 life, then reveals a card at random from his or her hand.
-timing=main
+timing=smain
 oracle=Defender\n{3}{B}, {T}: Target opponent loses 2 life, then reveals a card at random from his or her hand.

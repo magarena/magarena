@@ -8,5 +8,5 @@ cost={3}
 pt=0/4
 ability=Defender;\
         Banding
-timing=artifact
+timing=smain
 oracle=Defender\nBanding

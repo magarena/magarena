@@ -8,5 +8,5 @@ cost={1}{B}
 pt=0/2
 ability=Defender;\
         {B}, Sacrifice SN: Destroy target creature SN is blocking.
-timing=main
+timing=smain
 oracle=Defender\n{B}, Sacrifice Wall of Corpses: Destroy target creature Wall of Corpses is blocking.
