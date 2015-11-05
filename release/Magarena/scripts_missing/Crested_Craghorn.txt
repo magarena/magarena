@@ -8,5 +8,5 @@ cost={4}{R}
 pt=4/1
 ability=Haste;\
         Provoke
-timing=main
+timing=fmain
 oracle=Haste\nProvoke

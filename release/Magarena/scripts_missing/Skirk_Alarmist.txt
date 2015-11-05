@@ -8,5 +8,5 @@ cost={1}{R}
 pt=1/2
 ability=Haste;\
         {T}: Turn target face-down creature you control face up. At the beginning of the next end step, sacrifice it.
-timing=main
+timing=fmain
 oracle=Haste\n{T}: Turn target face-down creature you control face up. At the beginning of the next end step, sacrifice it.

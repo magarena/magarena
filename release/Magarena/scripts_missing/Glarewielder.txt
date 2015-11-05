@@ -9,5 +9,5 @@ pt=3/1
 ability=Haste;\
         When SN enters the battlefield, up to two target creatures can't block this turn.;\
         Evoke {1}{R}
-timing=main
+timing=fmain
 oracle=Haste\nWhen Glarewielder enters the battlefield, up to two target creatures can't block this turn.\nEvoke {1}{R}

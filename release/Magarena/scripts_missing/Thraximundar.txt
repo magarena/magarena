@@ -9,5 +9,5 @@ pt=6/6
 ability=Haste;\
         Whenever SN attacks, defending player sacrifices a creature.;\
         Whenever a player sacrifices a creature, you may put a +1/+1 counter on SN.
-timing=main
+timing=fmain
 oracle=Haste\nWhenever Thraximundar attacks, defending player sacrifices a creature.\nWhenever a player sacrifices a creature, you may put a +1/+1 counter on Thraximundar.

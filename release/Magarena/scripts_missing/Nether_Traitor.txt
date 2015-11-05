@@ -9,5 +9,5 @@ pt=1/1
 ability=Haste;\
         Shadow;\
         Whenever another creature is put into your graveyard from the battlefield, you may pay {B}. If you do, return SN from your graveyard to the battlefield.
-timing=main
+timing=fmain
 oracle=Haste\nShadow\nWhenever another creature is put into your graveyard from the battlefield, you may pay {B}. If you do, return Nether Traitor from your graveyard to the battlefield.

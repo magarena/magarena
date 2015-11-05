@@ -8,5 +8,5 @@ cost={3}{B/G}{R}
 pt=4/3
 ability=Haste;\
         When SN enters the battlefield, you may have target creature block it this turn if able.
-timing=main
+timing=fmain
 oracle=Haste\nWhen Giant Ambush Beetle enters the battlefield, you may have target creature block it this turn if able.

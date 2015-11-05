@@ -8,5 +8,5 @@ cost={1}{G}
 pt=1/1
 ability=Haste;\
         {T}: Add one mana of any color to your mana pool. Spend this mana only to cast a creature spell.
-timing=main
+timing=fmain
 oracle=Haste\n{T}: Add one mana of any color to your mana pool. Spend this mana only to cast a creature spell.
