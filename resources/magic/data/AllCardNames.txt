@@ -24,6 +24,7 @@
 Ætherling
 Æthermage's Touch
 Ætherplasm
+Æthersnatch
 Æthersnipe
 Ætherspouts
 Æthertow
@@ -448,6 +449,7 @@ Anurid Scavenger
 Anurid Swarmsnapper
 Anvil of Bogardan
 Anvilwrought Raptor
+Anya, Merciless Angel
 Apathy
 Apes of Rath
 Apex Hawks
@@ -474,6 +476,7 @@ Aqueous Form
 Aquitect's Will
 Aquus Steed
 Araba Mothrider
+Arachnogenesis
 Arachnoid
 Arachnus Spinner
 Arachnus Web
@@ -576,6 +579,7 @@ Argothian Swine
 Argothian Treefolk
 Argothian Wurm
 Arid Mesa
+Arjun, the Shifting Flame
 Ark of Blight
 Arm with Æther
 Armada Wurm
@@ -810,6 +814,7 @@ Avizoa
 Avoid Fate
 Awaken the Ancient
 Awaken the Bear
+Awaken the Sky Tyrant
 Awakener Druid
 Awakening
 Awakening Zone
@@ -918,6 +923,7 @@ Banishing Stroke
 Banishment Decree
 Banners Raised
 Banshee
+Banshee of the Dread Choir
 Banshee's Blade
 Bant Battlemage
 Bant Charm
@@ -983,6 +989,7 @@ Basilica Screecher
 Basilisk Collar
 Basking Rootwalla
 Bassara Tower Archer
+Bastion Protector
 Bathe in Dragonfire
 Bathe in Light
 Baton of Courage
@@ -1162,6 +1169,7 @@ Blackcleave Goblin
 Blackmail
 Blade Sliver
 Blade Splicer
+Blade of Selves
 Blade of the Bloodchief
 Blade of the Sixth Pride
 Blade-Tribe Berserkers
@@ -1335,6 +1343,7 @@ Bloodshed Fever
 Bloodshot Cyclops
 Bloodshot Trainee
 Bloodsoaked Champion
+Bloodspore Thrinax
 Bloodstained Mire
 Bloodstoke Howler
 Bloodstone Cameo
@@ -1608,6 +1617,7 @@ Brood Keeper
 Brood Monitor
 Brood Sliver
 Brood of Cockroaches
+Broodbirth Viper
 Broodhatch Nantuko
 Broodhunter Wurm
 Brooding Saurian
@@ -1750,6 +1760,7 @@ Call to the Netherworld
 Caller of Gales
 Caller of the Claw
 Caller of the Hunt
+Caller of the Pack
 Callous Deceiver
 Callous Giant
 Callous Oppressor
@@ -1931,6 +1942,7 @@ Centaur Omenreader
 Centaur Rootcaster
 Centaur Safeguard
 Centaur Veteran
+Centaur Vinecrasher
 Centaur's Herald
 Center Soul
 Cephalid Aristocrat
@@ -2321,6 +2333,7 @@ Combat Medic
 Combust
 Comet Storm
 Comeuppance
+Command Beacon
 Command Tower
 Command of Unsummoning
 Commandeer
@@ -2445,6 +2458,7 @@ Coralhelm Guide
 Core Prowler
 Coretapper
 Cornered Market
+Corpse Augur
 Corpse Blockade
 Corpse Connoisseur
 Corpse Cur
@@ -2883,6 +2897,7 @@ Dawn Elemental
 Dawn of the Dead
 Dawn to Dusk
 Dawn's Reflection
+Dawnbreak Reclaimer
 Dawnbringer Charioteers
 Dawnfluke
 Dawnglare Invoker
@@ -2893,6 +2908,8 @@ Dawnstrider
 Dawnstrike Paladin
 Dawntreader Elk
 Daxos of Meletis
+Daxos the Returned
+Daxos's Torment
 Day
 Day of Destiny
 Day of Judgment
@@ -2920,6 +2937,7 @@ Deadly Allure
 Deadly Grub
 Deadly Insect
 Deadly Recluse
+Deadly Tempest
 Deadly Wanderings
 Deadshot
 Deadshot Minotaur
@@ -3470,6 +3488,7 @@ Dread Slag
 Dread Slaver
 Dread Specter
 Dread Statuary
+Dread Summons
 Dread Warlock
 Dread Wight
 Dread of Night
@@ -3485,6 +3504,7 @@ Dream Fighter
 Dream Fracture
 Dream Halls
 Dream Leash
+Dream Pillager
 Dream Prowler
 Dream Salvage
 Dream Stalker
@@ -4151,6 +4171,8 @@ Eyes of the Watcher
 Eyes of the Wisent
 Ezuri's Archers
 Ezuri's Brigade
+Ezuri's Predation
+Ezuri, Claw of Progress
 Ezuri, Renegade Leader
 Fa'adiyah Seer
 Fable of Wolf and Owl
@@ -4374,6 +4396,7 @@ Fierce Empath
 Fierce Invocation
 Fiery Bombardment
 Fiery Conclusion
+Fiery Confluence
 Fiery Fall
 Fiery Gambit
 Fiery Hellhound
@@ -5054,6 +5077,7 @@ Gifts Ungiven
 Gigadrowse
 Gigantiform
 Gigantomancer
+Gigantoplasm
 Gigapede
 Gild
 Gilded Drake
@@ -5390,6 +5414,7 @@ Grapeshot Catapult
 Grappler Spider
 Grappling Hook
 Grasp of Darkness
+Grasp of Fate
 Grasp of Phantoms
 Grasp of the Hieromancer
 Grassland Crusader
@@ -5442,6 +5467,7 @@ Grazing Kelpie
 Great Defender
 Great Furnace
 Great Hart
+Great Oak Guardian
 Great Sable Stag
 Great Teacher's Decree
 Great Wall
@@ -5888,6 +5914,7 @@ Herald of Leshrac
 Herald of Serra
 Herald of Torment
 Herald of War
+Herald of the Host
 Herald of the Pantheon
 Herbal Poultice
 Herd Gnarr
@@ -6249,6 +6276,7 @@ Illusionary Wall
 Illusionist's Bracers
 Illusionist's Gambit
 Illusions of Grandeur
+Illusory Ambusher
 Illusory Angel
 Illusory Demon
 Illusory Gains
@@ -6708,6 +6736,8 @@ Kalastria Healer
 Kalastria Highborn
 Kalastria Nightwatch
 Kaleidostone
+Kalemne's Captain
+Kalemne, Disciple of Iroas
 Kalitas, Bloodchief of Ghet
 Kalonian Behemoth
 Kalonian Hydra
@@ -6741,6 +6771,7 @@ Karametra's Acolyte
 Karametra's Favor
 Karametra, God of Harvests
 Kargan Dragonlord
+Karlov of the Ghost Council
 Karma
 Karmic Guide
 Karmic Justice
@@ -6759,6 +6790,7 @@ Karplusan Wolverine
 Karplusan Yeti
 Karrthus, Tyrant of Jund
 Karstoderm
+Kaseto, Orochi Archmage
 Kashi-Tribe Elite
 Kashi-Tribe Reaver
 Kashi-Tribe Warriors
@@ -7652,6 +7684,7 @@ Magus of the Scroll
 Magus of the Tabernacle
 Magus of the Unseen
 Magus of the Vineyard
+Magus of the Wheel
 Mahamoti Djinn
 Major Teroh
 Make a Wish
@@ -7890,6 +7923,7 @@ Maze Sentinel
 Maze of Ith
 Maze of Shadows
 Maze's End
+Mazirek, Kraul Death Priest
 Meadowboon
 Meandering Towershell
 Measure of Wickedness
@@ -7960,6 +7994,7 @@ Mercurial Chemister
 Mercurial Kite
 Mercurial Pretender
 Mercy Killing
+Meren of Clan Nel Toth
 Merfolk Assassin
 Merfolk Looter
 Merfolk Mesmerist
@@ -8008,6 +8043,7 @@ Metathran Elite
 Metathran Soldier
 Metathran Transport
 Metathran Zombie
+Meteor Blast
 Meteor Crater
 Meteor Shower
 Meteor Storm
@@ -8151,6 +8187,7 @@ Mirrodin's Core
 Mirror Entity
 Mirror Gallery
 Mirror Golem
+Mirror Match
 Mirror Mockery
 Mirror Sheen
 Mirror Strike
@@ -8220,6 +8257,8 @@ Mizzium Meddler
 Mizzium Mortars
 Mizzium Skin
 Mizzium Transreliquat
+Mizzix of the Izmagnus
+Mizzix's Mastery
 Mnemonic Nexus
 Mnemonic Sliver
 Mnemonic Wall
@@ -8489,6 +8528,7 @@ Myrsmith
 Mysteries of the Deep
 Mystic Barrier
 Mystic Compass
+Mystic Confluence
 Mystic Crusader
 Mystic Decree
 Mystic Denial
@@ -9084,6 +9124,7 @@ Ordered Migration
 Ordruun Commando
 Ordruun Veteran
 Ore Gorger
+Oreskos Explorer
 Oreskos Sun Guide
 Oreskos Swiftclaw
 Organ Grinder
@@ -9262,6 +9303,7 @@ Path of Anger's Flame
 Path of Bravery
 Path of Peace
 Path to Exile
+Pathbreaker Ibex
 Pathbreaker Wurm
 Pathrazer of Ulamog
 Pathway Arrows
@@ -10496,6 +10538,7 @@ Righteous Avengers
 Righteous Blow
 Righteous Cause
 Righteous Charge
+Righteous Confluence
 Righteous Fury
 Righteous Indignation
 Righteous War
@@ -10566,6 +10609,7 @@ Rite of Passage
 Rite of Replication
 Rite of Ruin
 Rite of Undoing
+Rite of the Raging Storm
 Rite of the Serpent
 Rites of Flourishing
 Rites of Initiation
@@ -10909,6 +10953,7 @@ Sandsteppe Scavenger
 Sandstone Bridge
 Sandstone Deadfall
 Sandstone Needle
+Sandstone Oracle
 Sandstone Warrior
 Sandstorm
 Sandstorm Charger
@@ -11081,6 +11126,7 @@ Scourge Servant
 Scourge of Fleets
 Scourge of Geier Reach
 Scourge of Kher Ridges
+Scourge of Nel Toth
 Scourge of Numai
 Scourge of Skola Vale
 Scourge of Valkas
@@ -11141,6 +11187,7 @@ Scythe Leopard
 Scythe Specter
 Scythe Tiger
 Scythe of the Wretched
+Scytheclaw
 Sea Drake
 Sea Eagle
 Sea Gate Loremaster
@@ -11166,6 +11213,7 @@ Seal of Fire
 Seal of Primordium
 Seal of Removal
 Seal of Strength
+Seal of the Guildpact
 Sealed Fate
 Sealock Monster
 Search Warrant
@@ -11476,6 +11524,7 @@ Shield of the Avatar
 Shield of the Oversoul
 Shield of the Righteous
 Shielded Passage
+Shielded by Faith
 Shieldhide Dragon
 Shielding Plax
 Shieldmage Advocate
@@ -11811,6 +11860,7 @@ Skullmulcher
 Skullscorch
 Skullsnatcher
 Skulltap
+Skullwinder
 Sky Diamond
 Sky Hussar
 Sky Ruin Drake
@@ -12920,6 +12970,7 @@ Syndicate Enforcer
 Synod Artificer
 Synod Centurion
 Synod Sanctum
+Synthetic Destiny
 Syphon Flesh
 Syphon Life
 Syphon Mind
@@ -13236,6 +13287,7 @@ Thespian's Stage
 Thick-Skinned Goblin
 Thicket Basilisk
 Thicket Elemental
+Thief of Blood
 Thief of Hope
 Thieves' Auction
 Thieves' Fortune
@@ -13281,6 +13333,7 @@ Thought Nibbler
 Thought Prison
 Thought Reflection
 Thought Scour
+Thought Vessel
 Thoughtbind
 Thoughtbound Primoc
 Thoughtcast
@@ -14125,6 +14178,7 @@ Venser, the Sojourner
 Vent Sentinel
 Ventifact Bottle
 Verdant Catacombs
+Verdant Confluence
 Verdant Eidolon
 Verdant Embrace
 Verdant Field
@@ -14523,6 +14577,7 @@ War-Wing Siren
 Warbreak Trumpeter
 Warbringer
 Warchanter of Mogis
+Warchief Giant
 Warclamp Mastiff
 Ward Sliver
 Ward of Bones
@@ -14966,6 +15021,7 @@ Wren's Run Vanquisher
 Wrench Mind
 Wretched Anurid
 Wretched Banquet
+Wretched Confluence
 Wrexial, the Risen Deep
 Wring Flesh
 Writ of Passage
