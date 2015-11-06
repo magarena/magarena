@@ -28,7 +28,6 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
     private static final String _S3 = "Restart game";
     private static final String _S4 = "Image mode";
     private static final String _S5 = "Text mode";
-    private static final String _S6 = "Game Log";
     private static final String _S7 = "Sidebar Layout";
     private static final String _S8 = "Resume game";
 
@@ -149,12 +148,6 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
                     config.setTextView(!isTextMode);
                     screen.updateView();
                     setVisible(false);
-                }
-            });
-            menu.addMenuItem(UiString.get(_S6), new AbstractAction() {
-                @Override
-                public void actionPerformed(final ActionEvent e) {
-                    ScreenController.showGameLogScreen();
                 }
             });
             menu.addMenuItem(UiString.get(_S7), new AbstractAction() {
