@@ -1,18 +1,5 @@
 Ætherize
 Æthersnatch
-Swamp
-Swiftwater Cliffs
-Tainted Field
-Tainted Wood
-Temple of the False God
-Terramorphic Expanse
-Thornwood Falls
-Vivid Crag
-Vivid Creek
-Vivid Grove
-Vivid Marsh
-Wind-Scarred Crag
-Zoetic Cavern
 Acidic Slime
 Act of Aggression
 Ajani's Chosen
@@ -85,8 +72,8 @@ Darksteel Ingot
 Dawn to Dusk
 Dawnbreak Reclaimer
 Dawnglare Invoker
-Daxos's Torment
 Daxos the Returned
+Daxos's Torment
 Day of the Dragons
 Deadly Tempest
 Death Grasp
@@ -191,8 +178,8 @@ Meteor Blast
 Mind Stone
 Mirror Match
 Mizzium Mortars
-Mizzix's Mastery
 Mizzix of the Izmagnus
+Mizzix's Mastery
 Monk Idealist
 Mosswort Bridge
 Mountain
