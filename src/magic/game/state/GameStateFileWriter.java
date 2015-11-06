@@ -19,22 +19,26 @@ public final class GameStateFileWriter {
     private static final String PROP_Difficulty = "difficulty";
     private static final String PROP_StartPlayerIndex = "startPlayerIndex";
 
-    public static void createSaveGameFile(final GameState gameState, final String filename) {
+    public static void createSaveGameFile(final GameState gameState, final File aFile) {
         final Properties properties = getNewSortedProperties();
         setGameProperties(properties, gameState);
         setAllPlayerProperties(properties, gameState);
-        savePropertyFile(properties, filename);
+        savePropertyFile(properties, aFile);
     }
-    
-    private static void savePropertyFile(final Properties properties, final String filename) {
+
+    public static void createSaveGameFile(final GameState gameState, final String filename) {
         final File propertyFile = MagicFileSystem.getDataPath(MagicFileSystem.DataPath.SAVED_GAMES).resolve(filename).toFile();
-        try (final FileOutputStream fos = new FileOutputStream(propertyFile)) {
+        createSaveGameFile(gameState, propertyFile);
+    }
+
+    private static void savePropertyFile(final Properties properties, final File aFile) {
+        try (final FileOutputStream fos = new FileOutputStream(aFile)) {
             properties.store(fos, "Magarena Saved Game");
         } catch (IOException ex) {
             throw new RuntimeException(ex);
-        }        
+        }
     }
-
+    
     private static void setGameProperties(final Properties properties, final GameState gameState) {
         properties.setProperty(PROP_Version, GeneralConfig.VERSION);
         properties.setProperty(PROP_PlayerCount, Integer.toString(gameState.getPlayers().size()));

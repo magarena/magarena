@@ -137,13 +137,17 @@ final public class GraphicsUtils {
         return ret;
     }
 
+    public static File doScreenshotToFile(final Component container, final Path filePath, final String imageType) throws IOException {
+        final File imageFile = new File(filePath.toString());
+        ImageIO.write(getScreenshotImage(container), imageType, imageFile);
+        return imageFile;
+    }
+
     /**
      * Creates an image of the contents of container and saves to file.
      */
     public static File doScreenshotToFile(final Component container, final Path filePath) throws IOException {
-        final File imageFile = new File(filePath.toString());
-        ImageIO.write(getScreenshotImage(container), "png", imageFile);
-        return imageFile;
+        return doScreenshotToFile(container, filePath, "png");
     }
 
     private static BufferedImage getScreenshotImage(final Component container) {

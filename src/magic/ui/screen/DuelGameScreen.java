@@ -30,6 +30,7 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
     private static final String _S5 = "Text mode";
     private static final String _S7 = "Sidebar Layout";
     private static final String _S8 = "Resume game";
+    private static final String _S9 = "Gameplay Report";
 
     private final static GeneralConfig config = GeneralConfig.getInstance();
 
@@ -155,6 +156,14 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
                 public void actionPerformed(final ActionEvent e) {
                     hideOverlay();
                     ScreenController.showDuelSidebarDialog(gamePanel.getController());
+                }
+            });
+            menu.addBlankItem();
+            menu.addMenuItem(UiString.get(_S9), new AbstractAction() {
+                @Override
+                public void actionPerformed(final ActionEvent e) {
+                    gamePanel.getController().createGameplayReport();
+                    setVisible(false);
                 }
             });
             menu.addBlankItem();

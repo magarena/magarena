@@ -20,6 +20,7 @@ import java.util.Collections;
 import java.util.List;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
 
 /**
@@ -80,7 +81,8 @@ public final class MagicFileSystem {
         FIREMIND("firemind"),
         SAVED_GAMES("saved_games"),
         TRANSLATIONS("translations"),
-        IMAGES("images")
+        IMAGES("images"),
+        REPORTS("reports")
         ;
 
         private final Path directoryPath;
@@ -144,6 +146,9 @@ public final class MagicFileSystem {
      * Deletes all directory contents and then directory itself.
      */
     public static void deleteDirectory(final Path root) {
+        if (Files.exists(root) == false) {
+            return;
+        }
         try {
             Files.walkFileTree(root, new SimpleFileVisitor<Path>() {
                 @Override
@@ -190,7 +195,7 @@ public final class MagicFileSystem {
             try {
                 Files.createDirectory(path);
             } catch (IOException ex) {
-                throw new RuntimeException("!!! error creating " + path, ex);
+                throw new RuntimeException(String.format("Failed to create '%s'.", path), ex);
             }
         }
     }
@@ -265,5 +270,14 @@ public final class MagicFileSystem {
     public static Path getCustomImagesPath() {
         return getImagesPath(ImagesPath.CUSTOM);
     }
-    
+
+    public static Path getGameplayReportDirectory() {
+        return getDataPath(DataPath.REPORTS).resolve("gameplay");
+    }
+
+    public static void clearGameplayReportDirectory() throws IOException {
+        verifyDirectoryPath(getGameplayReportDirectory());
+        FileUtils.cleanDirectory(getGameplayReportDirectory().toFile());
+    }
+
 }

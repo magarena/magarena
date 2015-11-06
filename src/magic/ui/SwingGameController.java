@@ -22,6 +22,8 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JComponent;
 import javax.swing.SwingUtilities;
 import magic.ai.MagicAI;
@@ -841,6 +843,19 @@ public class SwingGameController implements IUIGameController {
         }
     }
 
+    public void createGameplayReport() {
+        setGamePaused(true);
+        try {
+            GameplayReport.createNewReport(game);
+            GameplayReport.openReportDirectory();
+        } catch (Exception ex) {
+            Logger.getLogger(GameplayReport.class.getName()).log(Level.WARNING, null, ex);
+            ScreenController.showWarningMessage("There was a problem creating the report :-\n\n" + ex.getMessage());
+        } finally {
+            setGamePaused(false);
+        }
+    }
+    
     private boolean isValidSaveState() {
         final boolean isHumanTurn = game.getTurnPlayer().isHuman();
         final boolean isHumanPriority = game.getPriorityPlayer().isHuman();
