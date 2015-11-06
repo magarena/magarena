@@ -15,9 +15,9 @@ Wind-Scarred Crag
 Zoetic Cavern
 Acidic Slime
 Act of Aggression
-Ajani’s Chosen
-Altar’s Reap
-Ambition’s Cost
+Ajani's Chosen
+Altar's Reap
+Ambition's Cost
 Ancient Amphitheater
 Ancient Craving
 Angel of Serenity
@@ -44,7 +44,7 @@ Blasted Landscape
 Blatant Thievery
 Blood Bairn
 Bloodspore Thrinax
-Blue Sun’s Zenith
+Blue Sun's Zenith
 Blustersquall
 Bonehoard
 Borderland Behemoth
@@ -85,7 +85,7 @@ Darksteel Ingot
 Dawn to Dusk
 Dawnbreak Reclaimer
 Dawnglare Invoker
-Daxos’s Torment
+Daxos's Torment
 Daxos the Returned
 Day of the Dragons
 Deadly Tempest
@@ -115,17 +115,17 @@ Etherium-Horn Sorcerer
 Evolving Wilds
 Experiment One
 Extractor Demon
-Ezuri’s Predation
+Ezuri's Predation
 Ezuri, Claw of Progress
 Fact or Fiction
-Faith’s Fetters
+Faith's Fetters
 Faithless Looting
 Fall of the Hammer
 Fallen Ideal
 Fate Unraveler
 Fellwar Stone
 Fiery Confluence
-Firemind’s Foresight
+Firemind's Foresight
 Forest
 Forgotten Ancient
 Forgotten Cave
@@ -158,17 +158,17 @@ Island
 Izzet Boilerworks
 Izzet Guildgate
 Izzet Signet
-Jace’s Archivist
+Jace's Archivist
 Jarad, Golgari Lich Lord
 Jareth, Leonine Titan
 Jungle Hollow
-Kalemne’s Captain
+Kalemne's Captain
 Kalemne, Disciple of Iroas
 Karlov of the Ghost Council
 Karmic Justice
 Kaseto, Orochi Archmage
 Kessig Cagebreakers
-Kodama’s Reach
+Kodama's Reach
 Kor Sanctifiers
 Korozda Guildmage
 Krosan Grip
@@ -182,7 +182,7 @@ Loxodon Warhammer
 Magma Giant
 Magmaquake
 Magus of the Wheel
-Marshal’s Anthem
+Marshal's Anthem
 Mazirek, Kraul Death Priest
 Melek, Izzet Paragon
 Meren of Clan Nel Toth
@@ -191,7 +191,7 @@ Meteor Blast
 Mind Stone
 Mirror Match
 Mizzium Mortars
-Mizzix’s Mastery
+Mizzix's Mastery
 Mizzix of the Izmagnus
 Monk Idealist
 Mosswort Bridge
@@ -202,7 +202,7 @@ Mycoloth
 Mystic Confluence
 Mystic Retrieval
 Mystic Snake
-Necromancer’s Covenant
+Necromancer's Covenant
 New Benalia
 Nighthowler
 Ninja of the Deep Hours
@@ -212,7 +212,7 @@ Ohran Viper
 Open the Vaults
 Oran-Rief, the Vastwood
 Oreskos Explorer
-Orim’s Thunder
+Orim's Thunder
 Orochi Hatchery
 Orzhov Basilica
 Orzhov Cluestone
@@ -244,7 +244,7 @@ Righteous Confluence
 Rise from the Grave
 Rite of Replication
 Rite of the Raging Storm
-Rogue’s Passage
+Rogue's Passage
 Sakura-Tribe Elder
 Sandstone Oracle
 Satyr Wayfinder
@@ -255,7 +255,7 @@ Seal of Cleansing
 Seal of Doom
 Seal of the Guildpact
 Secluded Steppe
-Seer’s Sundial
+Seer's Sundial
 Sever the Bloodline
 Shielded by Faith
 Shriekmaw
@@ -308,13 +308,13 @@ Tribute to the Wild
 Trygon Predator
 Underworld Coinsmith
 Underworld Connections
-Urza’s Incubator
-Urza’s Rage
+Urza's Incubator
+Urza's Rage
 Vandalblast
 Verdant Confluence
 Verdant Force
 Victimize
-Victory’s Herald
+Victory's Herald
 Viridian Emissary
 Viridian Shaman
 Viridian Zealot
@@ -329,7 +329,7 @@ Vulturous Zombie
 Wall of Blossoms
 Warchief Giant
 Warstorm Surge
-Wayfarer’s Bauble
+Wayfarer's Bauble
 Wind-Scarred Crag
 Windfall
 Wistful Selkie
