@@ -11,6 +11,7 @@ import magic.game.state.GameState;
 import magic.game.state.GameStateFileWriter;
 import magic.game.state.GameStateSnapshot;
 import magic.model.MagicGame;
+import magic.model.MagicGameLog;
 import magic.ui.utility.DesktopUtils;
 import magic.ui.utility.GraphicsUtils;
 import magic.utility.MagicFileSystem;
@@ -26,7 +27,7 @@ final class GameplayReport {
 
     private static final String SCREEN_FILE = "screenshot." + IMAGE_TYPE;
     private static final String GAME_FILE = "snapshot.game";
-    private static final String LOG_FILE = "game.log";
+    private static final String LOG_FILE = MagicGameLog.LOG_FILE;
     private static final String ZIP_FILE = "gameplay-report.zip";
 
     public static void createNewReport(final MagicGame aGame) throws IOException {

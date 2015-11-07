@@ -8,6 +8,7 @@ import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import magic.data.MagicIcon;
+import magic.model.MagicGameLog;
 import magic.ui.utility.DesktopUtils;
 import magic.ui.IconImages;
 import magic.ui.ScreenController;
@@ -25,7 +26,7 @@ public class GameLogScreen extends TextFileReaderScreen implements IStatusBar {
 
     // translatable strings
     private static final String _S1 = "Logs directory";
-    private static final String _S2 = "Opens the logs directory containing 'game.log' in the default file explorer.";
+    private static final String _S2 = "Opens the logs directory containing '%s' in the default file explorer.";
     private static final String _S3 = "Could not open 'logs' directory : %s";
     private static final String _S4 = "Basic View";
     private static final String _S5 = "Filters log file to remove AI diagnostics.";
@@ -33,7 +34,7 @@ public class GameLogScreen extends TextFileReaderScreen implements IStatusBar {
     private static final String _S7 = "Full log file, including AI diagnostics.";
 
     private static final Path LOGS_DIRECTORY = MagicFileSystem.getDataPath(DataPath.LOGS);
-    private static final Path TEXT_FILE = LOGS_DIRECTORY.resolve("game.log");
+    private static final Path TEXT_FILE = LOGS_DIRECTORY.resolve(MagicGameLog.LOG_FILE);
 
     public GameLogScreen() {
         reloadTextFile();
@@ -67,7 +68,7 @@ public class GameLogScreen extends TextFileReaderScreen implements IStatusBar {
             buttons.add(
                 new ActionBarButton(
                         IconImages.getIcon(MagicIcon.OPEN_ICON),
-                        UiString.get(_S1), UiString.get(_S2),
+                        UiString.get(_S1), UiString.get(_S2, MagicGameLog.LOG_FILE),
                         new AbstractAction() {
                             @Override
                             public void actionPerformed(ActionEvent e) {

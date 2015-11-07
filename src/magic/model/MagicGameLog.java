@@ -10,10 +10,12 @@ import magic.utility.MagicFileSystem.DataPath;
 
 public class MagicGameLog {
     private MagicGameLog() {}
+
+    public static final String LOG_FILE = "game.log";
     
     private static final String gameLog = (System.getProperty("game.log") != null) ?
         System.getProperty("game.log") :       
-        MagicFileSystem.getDataPath(DataPath.LOGS).resolve("game.log").toString();
+        MagicFileSystem.getDataPath(DataPath.LOGS).resolve(LOG_FILE).toString();
 
     private static PrintWriter writer;
 
