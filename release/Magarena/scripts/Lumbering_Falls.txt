@@ -1,5 +1,6 @@
 name=Lumbering Falls
 image=http://magiccards.info/scans/en/bfz/239.jpg
+image_updated=2015-11-08
 value=2.500
 rarity=R
 type=Land

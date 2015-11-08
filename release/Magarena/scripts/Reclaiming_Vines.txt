@@ -1,5 +1,6 @@
 name=Reclaiming Vines
 image=http://magiccards.info/scans/en/bfz/185.jpg
+image_updated=2015-11-08
 value=2.500
 rarity=C
 type=Sorcery

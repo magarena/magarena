@@ -1,5 +1,6 @@
 name=Goblin War Paint
 image=http://magiccards.info/scans/en/bfz/146.jpg
+image_updated=2015-11-08
 value=3.141
 rarity=C
 type=Enchantment
