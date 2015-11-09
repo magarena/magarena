@@ -3,7 +3,7 @@ image=http://magiccards.info/scans/en/chk/283.jpg
 value=4.064
 rarity=R
 type=Legendary,Land
-mana=b1
+mana=b3
 ability={T}: Add {B} to your mana pool.;\
         {T}, {B}: Target legendary creature gains fear until end of turn.
 timing=land

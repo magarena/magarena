@@ -3,7 +3,7 @@ image=http://magiccards.info/scans/en/chk/279.jpg
 value=4.317
 rarity=R
 type=Legendary,Land
-mana=u2
+mana=u3
 ability={T}: Add {U} to your mana pool.;\
         {U},{T}:Untap target legendary creature.
 timing=land

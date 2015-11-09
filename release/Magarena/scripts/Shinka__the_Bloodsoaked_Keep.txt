@@ -3,7 +3,7 @@ image=http://magiccards.info/scans/en/chk/282.jpg
 value=4.009
 rarity=R
 type=Legendary,Land
-mana=r2
+mana=r3
 ability={T}: Add {R} to your mana pool.;\
         {R},{T}:Target legendary creature gains first strike until end of turn.
 timing=land

@@ -3,7 +3,7 @@ image=http://magiccards.info/scans/en/md1/15.jpg
 value=4.562
 rarity=R
 type=Land
-mana=b1g1r1u1w1
+mana=b2g2r2u2w2
 ability=Whenever SN becomes tapped, SN deals 1 damage to you.;\
         {T}: Add one mana of any color to your mana pool.
 timing=land

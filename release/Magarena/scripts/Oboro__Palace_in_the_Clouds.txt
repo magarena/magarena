@@ -3,7 +3,7 @@ image=http://magiccards.info/scans/en/sok/164.jpg
 value=4.211
 rarity=R
 type=Legendary,Land
-mana=b1
+mana=b3
 ability={T}: Add {U} to your mana pool.;\
         {1}:Return SN to its owner's hand.
 timing=land

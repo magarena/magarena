@@ -2,7 +2,7 @@ name=Grand Coliseum
 image=http://magiccards.info/scans/en/vma/298.jpg
 value=3.689
 type=Land
-mana=b1g1r1u1w1
+mana=b2g2r2u2w2
 rarity=R
 ability=SN enters the battlefield tapped.;\
         {T}: Add {1} to your mana pool.;\
