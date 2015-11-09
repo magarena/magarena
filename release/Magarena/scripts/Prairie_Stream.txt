@@ -5,6 +5,7 @@ value=2.500
 rarity=M
 type=Land
 subtype=Plains,Island
+mana=w3u3
 ability=SN enters the battlefield tapped unless you control two or more basic lands.
 timing=land
 oracle=Prairie Stream enters the battlefield tapped unless you control two or more basic lands.

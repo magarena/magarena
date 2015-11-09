@@ -4,6 +4,7 @@ image_updated=2015-11-08
 value=2.500
 rarity=C
 type=Land
+mana=w3
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, target creature gets +1/+1 and gains vigilance until end of turn.;\
         {T}: Add {W} to your mana pool.

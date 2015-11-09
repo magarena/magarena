@@ -4,6 +4,7 @@ image_updated=2015-11-08
 value=2.500
 rarity=C
 type=Land
+mana=u3
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, target creature an opponent controls doesn't untap during its controller's next untap step.;\
         {T}: Add {U} to your mana pool.

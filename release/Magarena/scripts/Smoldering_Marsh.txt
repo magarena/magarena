@@ -5,6 +5,7 @@ value=2.500
 rarity=M
 type=Land
 subtype=Swamp,Mountain
+mana=b3r3
 ability=SN enters the battlefield tapped unless you control two or more basic lands.
 timing=land
 oracle=Smoldering Marsh enters the battlefield tapped unless you control two or more basic lands.

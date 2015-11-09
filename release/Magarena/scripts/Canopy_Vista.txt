@@ -5,6 +5,7 @@ value=2.500
 rarity=M
 type=Land
 subtype=Forest,Plains
+mana=g3w3
 ability=SN enters the battlefield tapped unless you control two or more basic lands.
 timing=land
 oracle=Canopy Vista enters the battlefield tapped unless you control two or more basic lands.
