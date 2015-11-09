@@ -27,14 +27,12 @@ import magic.ui.ScreenController;
 import magic.translate.UiString;
 import magic.ui.dialog.button.CancelButton;
 import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.downloader.HQImagesDownloadPanel;
 import magic.ui.widget.downloader.ImageDownloadPanel.DownloaderState;
 import magic.ui.widget.downloader.ImageDownloadPanel;
 import magic.ui.widget.downloader.PlayableDownloadPanel;
 import magic.ui.widget.downloader.UnimplementedDownloadPanel;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicFileSystem;
-import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -67,9 +65,6 @@ public class DownloadImagesDialog
     private void setDownloadPanels() {
         downloadPanels.add(getPlayableDownloaderPanel());
         downloadPanels.add(getUnimplementedDownloaderPanel());
-        if (MagicSystem.isDevMode()) {
-            downloadPanels.add(getHighQualityDownloaderPanel());
-        }
     }
 
     private void refreshLayout() {
@@ -90,12 +85,6 @@ public class DownloadImagesDialog
             panel.add(downloadPanel, "w 100%");
         }
         return panel;
-    }
-
-    private ImageDownloadPanel getHighQualityDownloaderPanel() {
-        final ImageDownloadPanel highQualityDownloaderPanel = new HQImagesDownloadPanel(this);
-        highQualityDownloaderPanel.addPropertyChangeListener("downloaderState", this);
-        return highQualityDownloaderPanel;
     }
 
     private ImageDownloadPanel getPlayableDownloaderPanel() {
