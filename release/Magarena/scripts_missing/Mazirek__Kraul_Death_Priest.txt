@@ -1,4 +1,4 @@
-name=Marizek, Kraul Death Priest
+name=Mazirek, Kraul Death Priest
 image=http://magiccards.info/scans/en/C15/48.jpg
 value=2.500
 rarity=M
