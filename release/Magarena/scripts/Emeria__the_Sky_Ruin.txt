@@ -3,6 +3,7 @@ image=http://magiccards.info/scans/en/c14/293.jpg
 value=4.026
 rarity=R
 type=Land
+mana=w3
 ability=SN enters the battlefield tapped.;\
         At the beginning of your upkeep, if you control seven or more Plains, you may return target creature card from your graveyard to the battlefield.;\
         {T}: Add {W} to your mana pool.

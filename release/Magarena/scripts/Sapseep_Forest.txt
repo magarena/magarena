@@ -4,6 +4,7 @@ value=2.625
 rarity=U
 type=Land
 subtype=Forest
+mana=g3
 ability=SN enters the battlefield tapped.;\
         {G}, {T}: You gain 1 life. Activate this ability only if you control two or more green permanents.
 timing=tapland
