@@ -4,7 +4,6 @@ value=1.593
 rarity=R
 type=Artifact
 cost={3}
-mana=w2u2b2g2r2
 ability={T}, Pay 1 life: Add one mana of any color to your mana pool.
 timing=artifact
 oracle={T}, Pay 1 life: Add one mana of any color to your mana pool.
