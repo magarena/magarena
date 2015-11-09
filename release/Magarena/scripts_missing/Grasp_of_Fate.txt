@@ -1,0 +1,9 @@
+name=Grasp of Fate
+image=http://magiccards.info/scans/en/C15/3.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={1}{W}{W}
+ability=When SN enters the battlefield, for each opponent, exile up to one target nonland permanent that player controls until SN leaves the battlefield.
+timing=removal
+oracle=When Grasp of Fate enters the battlefield, for each opponent, exile up to one target nonland permanent that player controls until Grasp of Fate leaves the battlefield.

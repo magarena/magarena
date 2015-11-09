@@ -1,0 +1,12 @@
+name=Marizek, Kraul Death Priest
+image=http://magiccards.info/scans/en/C15/48.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Insect,Shaman
+cost={3}{B}{G}
+pt=2/2
+ability=Flying;\
+        Whenever a player sacrifices another permanent, put a +1/+1 counter on each creature you control.
+timing=main
+oracle=Flying\nWhenever a player sacrifices another permanent, put a +1/+1 counter on each creature you control.

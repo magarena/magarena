@@ -1,0 +1,12 @@
+name=Mizzix of the Izmagnus
+image=http://magiccards.info/scans/en/C15/342.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Goblin,Wizard
+cost={2}{U}{R}
+pt=2/2
+ability=Whenever you cast an instant or sorcery spell with converted mana cost greater than the number of experience counters you have, you get an experience counter.;\
+        Instant and sorcery spells you cast cost {1} less to cast for each experience counter you have.
+timing=fmain
+oracle=Whenever you cast an instant or sorcery spell with converted mana cost greater than the number of experience counters you have, you get an experience counter.\nInstant and sorcery spells you cast cost {1} less to cast for each experience counter you have.

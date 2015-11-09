@@ -1,0 +1,12 @@
+name=Herald of the Host
+image=http://magiccards.info/scans/en/C15/4.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Angel
+cost={3}{W}{W}
+pt=4/4
+ability=Flying;vigilance;\
+        Myriad
+timing=main
+oracle=Flying, vigilance\nMyriad

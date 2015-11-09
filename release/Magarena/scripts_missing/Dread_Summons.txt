@@ -1,0 +1,9 @@
+name=Dread Summons
+image=http://magiccards.info/scans/en/C15/20.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={X}{B}{B}
+effect=Each player puts the top X cards of his or her library into his or her graveyard. For each creature card put into a graveyard this way, you put a 2/2 black Zombie creature token onto the battlefield tapped.
+timing=main
+oracle=Each player puts the top X cards of his or her library into his or her graveyard. For each creature card put into a graveyard this way, you put a 2/2 black Zombie creature token onto the battlefield tapped.

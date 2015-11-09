@@ -1,0 +1,12 @@
+name=Caller of the Pack
+image=http://magiccards.info/scans/en/C15/34.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Beast
+cost={5}{G}{G}
+pt=8/6
+ability=Trample;\
+        Myriad
+timing=main
+oracle=Trample\nMyriad

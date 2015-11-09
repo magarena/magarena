@@ -1,0 +1,9 @@
+name=Righteous Confluence
+image=http://magiccards.info/scans/en/C15/7.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={3}{W}{W}
+effect=Choose three. You may choose the same mode more than once. (1) Put a 2/2 white Knight creature token with vigilance onto the battlefield. (2) Exile target enchantment. (3) You gain 5 life.
+timing=token
+oracle=Choose three. You may choose the same mode more than once.\n• Put a 2/2 white Knight creature token with vigilance onto the battlefield.\n• Exile target enchantment.\n• You gain 5 life.

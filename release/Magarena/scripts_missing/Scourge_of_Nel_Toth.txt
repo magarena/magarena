@@ -1,0 +1,12 @@
+name=Scourge of Nel Toth
+image=http://magiccards.info/scans/en/C15/21.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Zombie,Dragon
+cost={5}{B}{B}
+pt=6/6
+ability=Flying;\
+        You may cast SN from your graveyard by paying {B}{B} and sacrificing two creatures rather than paying its mana cost.
+timing=main
+oracle=Flying\nYou may cast Scourge of Nel Toth from your graveyard by paying {B}{B} and sacrificing two creatures rather than paying its mana cost.

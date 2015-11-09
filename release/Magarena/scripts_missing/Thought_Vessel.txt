@@ -1,0 +1,10 @@
+name=Thought Vessel
+image=http://magiccards.info/scans/en/C15/55.jpg
+value=2.500
+rarity=C
+type=Artifact
+cost={2}
+ability=You have no maximum hand size.;\
+        {T}: Add {1} to your mana pool.
+timing=artifact
+oracle=You have no maximum hand size.\n{T}: Add {1} to your mana pool.

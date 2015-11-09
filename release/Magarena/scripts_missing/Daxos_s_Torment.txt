@@ -1,0 +1,9 @@
+name=Daxos's Torment
+image=http://magiccards.info/scans/en/C15/18.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={3}{B}
+ability=Whenever SN or another enchantment enters the battlefield under your control, SN becomes a 5/5 Demon creature with flying and haste in addition to its other types until end of turn.
+timing=fmain
+oracle=Constellation — Whenever Daxos's Torment or another enchantment enters the battlefield under your control, Daxos's Torment becomes a 5/5 Demon creature with flying and haste in addition to its other types until end of turn.

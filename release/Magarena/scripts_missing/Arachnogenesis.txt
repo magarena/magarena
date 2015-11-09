@@ -1,0 +1,9 @@
+name=Arachnogenesis
+image=http://magiccards.info/scans/en/C15/32.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={2}{G}
+effect=Put X 1/2 green Spider creature tokens with reach onto the battlefield, where X is the number of creatures attacking you.~Prevent all combat damage that would be dealt this turn by non-Spider creatures.
+timing=token
+oracle=Put X 1/2 green Spider creature tokens with reach onto the battlefield, where X is the number of creatures attacking you. Prevent all combat damage that would be dealt this turn by non-Spider creatures.

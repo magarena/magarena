@@ -1,0 +1,12 @@
+name=Illusory Ambusher
+image=http://magiccards.info/scans/en/C15/12.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Cat,Illusion
+cost={4}{U}
+pt=4/1
+ability=Flash;\
+        Whenever SN is dealt damage, draw that many cards.
+timing=flash
+oracle=Flash\nWhenever Illusory Ambusher is dealt damage, draw that many cards.

@@ -1,0 +1,10 @@
+name=Seal of the Guildpact
+image=http://magiccards.info/scans/en/C15/54.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={5}
+ability=As SN enters the battlefield, choose two colors.;\
+        Each spell you cast costs {1} less to cast for each of the chosen colors it is.
+timing=artifact
+oracle=As Seal of the Guildpact enters the battlefield, choose two colors.\nEach spell you cast costs {1} less to cast for each of the chosen colors it is.

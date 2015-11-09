@@ -1,0 +1,12 @@
+name=Broodbirth Viper
+image=http://magiccards.info/scans/en/C15/10.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Snake
+cost={4}{U}
+pt=3/3
+ability=Myriad;\
+        Whenever SN deals combat damage to a player, you may draw a card.
+timing=main
+oracle=Myriad\nWhenever Broodbirth Viper deals combat damage to a player, you may draw a card.

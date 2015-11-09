@@ -1,0 +1,11 @@
+name=Corpse Augur
+image=http://magiccards.info/scans/en/C15/17.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Zombie,Wizard
+cost={3}{B}
+pt=4/2
+ability=When SN dies, you draw X cards and you lose X life, where X is the number of creature cards in target player's graveyard.
+timing=main
+oracle=When Corpse Augur dies, you draw X cards and you lose X life, where X is the number of creature cards in target player's graveyard.

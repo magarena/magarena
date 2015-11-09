@@ -1,0 +1,11 @@
+name=Shielded by Faith
+image=http://magiccards.info/scans/en/C15/8.jpg
+value=2.500
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={1}{W}{W}
+ability=Enchanted creature has indestructible.;\
+        Whenever a creature enters the battlefield, you may attach SN to that creature.
+timing=aura
+oracle=Enchant creature\nEnchanted creature has indestructible.\nWhenever a creature enters the battlefield, you may attach Shielded by Faith to that creature.

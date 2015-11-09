@@ -1,0 +1,9 @@
+name=Awaken the Sky Tyrant
+image=http://magiccards.info/scans/en/C15/24.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={3}{R}
+ability=When a source an opponent controls deals damage to you, sacrifice SN. If you do, put a 5/5 red Dragon creature token with flying onto the battlefield.
+timing=enchantment
+oracle=When a source an opponent controls deals damage to you, sacrifice Awaken the Sky Tyrant. If you do, put a 5/5 red Dragon creature token with flying onto the battlefield.

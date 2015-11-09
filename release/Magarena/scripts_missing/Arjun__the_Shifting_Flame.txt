@@ -1,0 +1,12 @@
+name=Arjun, the Shifting Flame
+image=http://magiccards.info/scans/en/C15/42.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Sphinx,Wizard
+cost={4}{U}{R}
+pt=5/5
+ability=Flying;\
+        Whenever you cast a spell, put the cards in your hand on the bottom of your library in any order, then draw that many cards.
+timing=main
+oracle=Flying\nWhenever you cast a spell, put the cards in your hand on the bottom of your library in any order, then draw that many cards.

@@ -1,0 +1,9 @@
+name=Meteor Blast
+image=http://magiccards.info/scans/en/C15/28.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={X}{R}{R}{R}
+effect=SN deals 4 damage to each of X target creatures and/or players.
+timing=removal
+oracle=Meteor Blast deals 4 damage to each of X target creatures and/or players.

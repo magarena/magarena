@@ -1,0 +1,13 @@
+name=Kalemne's Captain
+image=http://magiccards.info/scans/en/C15/5.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Giant,Soldier
+cost={3}{W}{W}
+pt=5/5
+ability=Vigilance;\
+        {5}{W}{W}: Monstrosity 3.;\
+        When SN becomes monstrous, exile all artifacts and enchantments.
+timing=main
+oracle=Vigilance\n{5}{W}{W}: Monstrosity 3.\nWhen Kalemne's Captain becomes monstrous, exile all artifacts and enchantments.

@@ -1,0 +1,11 @@
+name=Magus of the Wheel
+image=http://magiccards.info/scans/en/C15/27.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Wizard
+cost={2}{R}
+pt=3/3
+ability={1}{R}, {T}, Sacrifice SN: Each player discards his or her hand, then draws seven cards.
+timing=main
+oracle={1}{R}, {T}, Sacrifice Magus of the Wheel: Each player discards his or her hand, then draws seven cards.

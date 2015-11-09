@@ -1,0 +1,9 @@
+name=Wretched Confluence
+image=http://magiccards.info/scans/en/C15/40.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={3}{B}{B}
+effect=Choose three. You may choose the same mode more than once. (1) Target player draws a card and loses 1 life. (2) Target creature gets -2/-2 until end of turn. (3) Return target creature card from your graveyard to your hand.
+timing=removal
+oracle=Choose three. You may choose the same mode more than once.\n• Target player draws a card and loses 1 life.\n• Target creature gets -2/-2 until end of turn.\n• Return target creature card from your graveyard to your hand.

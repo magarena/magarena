@@ -1,0 +1,11 @@
+name=Pathbreaker Ibex
+image=http://magiccards.info/scans/en/C15/38.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Goat
+cost={4}{G}{G}
+pt=3/3
+ability=Whenever SN attacks, creatures you control gain trample and get +X/+X until end of turn, where X is the greatest power among creatures you control.
+timing=main
+oracle=Whenever Pathbreaker Ibex attacks, creatures you control gain trample and get +X/+X until end of turn, where X is the greatest power among creatures you control.

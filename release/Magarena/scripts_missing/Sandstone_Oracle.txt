@@ -1,0 +1,12 @@
+name=Sandstone Oracle
+image=http://magiccards.info/scans/en/C15/52.jpg
+value=2.500
+rarity=U
+type=Artifact,Creature
+subtype=Sphinx
+cost={7}
+pt=4/4
+ability=Flying;\
+        When SN enters the battlefield, choose an opponent. If that player has more cards in hand than you, draw cards equal to the difference.
+timing=main
+oracle=Flying\nWhen Sandstone Oracle enters the battlefield, choose an opponent. If that player has more cards in hand than you, draw cards equal to the difference.

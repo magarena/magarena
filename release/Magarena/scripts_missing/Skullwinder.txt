@@ -1,0 +1,12 @@
+name=Skullwinder
+image=http://magiccards.info/scans/en/C15/39.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Snake
+cost={2}{G}
+pt=1/3
+ability=Deathtouch;\
+        When SN enters the battlefield, return target card from your graveyard to your hand, then choose an opponent. That player returns a cards from his or her graveyard to his or her hand.
+timing=main
+oracle=Deathtouch\nWhen Skullwinder enters the battlefield, return target card from your graveyard to your hand, then choose an opponent. That player returns a cards from his or her graveyard to his or her hand.

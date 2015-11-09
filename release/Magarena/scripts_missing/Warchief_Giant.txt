@@ -1,0 +1,12 @@
+name=Warchief Giant
+image=http://magiccards.info/scans/en/C15/31.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Giant,Warrior
+cost={3}{R}{R}
+pt=5/3
+ability=Haste;\
+        Myriad
+timing=fmain
+oracle=Haste\nMyriad

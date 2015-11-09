@@ -1,0 +1,9 @@
+name=Æthersnatch
+image=http://magiccards.info/scans/en/C15/9.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={4}{U}{U}
+effect=Gain control of target spell. You may choose new targets for it.
+timing=counter
+oracle=Gain control of target spell. You may choose new targets for it.

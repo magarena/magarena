@@ -1,0 +1,11 @@
+name=Blade of Selves
+image=http://magiccards.info/scans/en/C15/51.jpg
+value=2.500
+rarity=R
+type=Artifact
+subtype=Equipment
+cost={2}
+ability=Equipped creature has myriad.;\
+        Equip {4}
+timing=equipment
+oracle=Equipped creature has myriad.\nEquip {4}

@@ -1,0 +1,9 @@
+name=Mystic Confluence
+image=http://magiccards.info/scans/en/C15/14.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={3}{U}{U}
+effect=Choose three. You may choose the same mode more than once. (1) Counter target spell unless its controller pays {3}. (2) Return target creature to its owner's hand. (3) Draw a card.
+timing=counter
+oracle=Choose three. You may choose the same mode more than once.\n• Counter target spell unless its controller pays {3}.\n• Return target creature to its owner's hand.\n• Draw a card.

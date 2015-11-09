@@ -1,0 +1,12 @@
+name=Karlov of the Ghost Council
+image=http://magiccards.info/scans/en/C15/46.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Spirit,Advisor
+cost={W}{B}
+pt=2/2
+ability=Whenever you gain life, put two +1/+1 counters on SN.;\
+        {W}{B}, Remove six +1/+1 counters from SN: Exile target creature.
+timing=main
+oracle=Whenever you gain life, put two +1/+1 counters on Karlov of the Ghost Council.\n{W}{B}, Remove six +1/+1 counters from Karlov of the Ghost Council: Exile target creature.
