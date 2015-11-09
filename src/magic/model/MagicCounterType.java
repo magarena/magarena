@@ -6,7 +6,7 @@ public enum MagicCounterType {
 // 1=Count (counters that are only used positively (eg. Counting a spendable resource, negative impact if decreased to certain #, positive impact if increased to certain #))
 // -1=Count (counters that are only used negatively (eg. positive impact if decreased to certain #, negative impact if increased to certain #))
 // Stat adjusting counters use a value equal to the sum of the pt change
-    
+
     PlusZeroPlusOne("+0/+1","{0+}",1),
     PlusZeroPlusTwo("+0/+2","{0+2}",2),
     PlusOnePlusZero("+1/+0","{+0}",1),
@@ -34,6 +34,7 @@ public enum MagicCounterType {
     Charge("charge","{chg}",1),
     Corpse("corpse","{cor}",1),
     Credit("credit","{crd}",1),
+    Crystal("crystal","{cry}",1),
     Cube("cube","{cbe}",1),
     Currency("currency","{cur}",1),
     Death("death","{dth}",-1),
@@ -69,6 +70,7 @@ public enum MagicCounterType {
     Ice("ice","{ice}",0),
     Infection("infection","{inf}",1),
     Intervention("intervention","{int}",0), //Possibly -1
+    Isolation("isolation","{iso}",1),
     Javelin("javelin","{jav}",1),
     Ki("ki","{ki}",1),
     Level("level","{lvl}",0),
@@ -148,11 +150,11 @@ public enum MagicCounterType {
     public String getText() {
         return text;
     }
-    
+
     public int getScore() {
         return score;
     }
-    
+
     public static MagicCounterType getCounterRaw(final String name) {
         MagicCounterType match = None;
         for (final MagicCounterType counter : values()) {
