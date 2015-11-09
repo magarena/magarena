@@ -3,6 +3,7 @@ image=http://magiccards.info/scans/en/us/329.jpg
 value=4.326
 rarity=R
 type=Land
+mana=w2u2b2r2g2
 ability=At the beginning of the end step, if you control no creatures, sacrifice SN.;\
         {T}: Add one mana of any color to your mana pool.
 timing=land

@@ -3,6 +3,7 @@ image=http://magiccards.info/scans/en/in/320.jpg
 value=3.405
 rarity=U
 type=Land
+mana=w1u1b1r1g1
 ability={T}: Add {1} to your mana pool.;\
         {T}, Sacrifice SN: Add one mana of any color to your mana pool.
 timing=land
