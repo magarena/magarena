@@ -4,6 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTargetFilter;
+import magic.exception.GameException;
 
 public abstract class MagicCantBlockTrigger extends MagicTrigger<MagicPermanent> {
     public MagicCantBlockTrigger(final int priority) {
@@ -24,7 +25,7 @@ public abstract class MagicCantBlockTrigger extends MagicTrigger<MagicPermanent>
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent other) {
-                throw new RuntimeException(getClass() + " does not have an executeTrigger method");
+                throw new GameException(getClass() + " does not have an executeTrigger method", game);
             }
         };
     }

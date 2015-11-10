@@ -5,6 +5,7 @@ import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.exception.GameException;
 
 /** Creature permanent or player. Can be your own creatures. */
 public class MagicDamageTargetPicker extends MagicTargetPicker<MagicTarget> {
@@ -55,7 +56,7 @@ public class MagicDamageTargetPicker extends MagicTargetPicker<MagicTarget> {
             final int score=leftToughness<=0?permanent.getScore():20-leftToughness;
             return permanent.getController()==player?-score:score;
         } else {
-            throw new RuntimeException("target is neither MagicPlayer nor MagicPermanent");
+            throw new GameException("target is neither MagicPlayer nor MagicPermanent", game);
         }
     }
 }

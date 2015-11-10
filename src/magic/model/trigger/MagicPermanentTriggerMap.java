@@ -2,6 +2,7 @@ package magic.model.trigger;
 
 import magic.model.MagicCopyMap;
 import magic.model.MagicPermanent;
+import magic.exception.GameException;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -76,7 +77,7 @@ public class MagicPermanentTriggerMap {
                 }
             }
         }
-        throw new RuntimeException("Could not remove " + permanent + "'s trigger " + trigger);
+        throw new GameException("Could not remove " + permanent + "'s trigger " + trigger, permanent.getGame());
     }
 
     public void remove(final MagicPermanentTrigger mptrigger) {

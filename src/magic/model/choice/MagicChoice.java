@@ -6,6 +6,7 @@ import magic.model.MagicRandom;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.exception.UndoClickedException;
+import magic.exception.GameException;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -85,7 +86,7 @@ public abstract class MagicChoice {
         final Collection<?> options=getArtificialOptions(game,event);
         final int size=options.size();
         if (size == 0) {
-            throw new RuntimeException("no artificial choice result for " + event);
+            throw new GameException("no artificial choice result for " + event, game);
         } else if (size == 1) {
             return Collections.singletonList(new Object[]{options.iterator().next()});
         } else {
@@ -102,7 +103,7 @@ public abstract class MagicChoice {
         final List<Object[]> choices = getArtificialChoiceResults(game, event);
         final int size = choices.size();
         if (size == 0) {
-            throw new RuntimeException("no simulation choice result");
+            throw new GameException("no simulation choice result", game);
         }
         return choices.get(MagicRandom.nextRNGInt(choices.size()));
     }

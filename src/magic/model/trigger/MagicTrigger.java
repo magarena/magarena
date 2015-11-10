@@ -6,6 +6,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
+import magic.exception.GameException;
 
 /** Lower priority values trigger before higher priority values. */
 public abstract class MagicTrigger<T> implements MagicEventAction,MagicChangeCardDefinition {
@@ -38,7 +39,7 @@ public abstract class MagicTrigger<T> implements MagicEventAction,MagicChangeCar
 
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        throw new RuntimeException(getClass() + " did not override executeEvent");
+        throw new GameException(getClass() + " did not override executeEvent", game);
     }
 
     public abstract MagicTriggerType getType();

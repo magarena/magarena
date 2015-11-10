@@ -8,6 +8,8 @@ import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetType;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.stack.MagicCardOnStack;
+import magic.exception.GameException;
+
 import java.util.Collection;
 import java.util.EnumMap;
 import java.util.LinkedList;
@@ -138,7 +140,7 @@ public class MagicCard
             card = mappedOwner.getLibrary().getCard(id);
         }
         if (card == MagicCard.NONE) {
-            throw new RuntimeException("Mapping card failed, card " + getName() + " " + id + " not found");
+            throw new GameException("Mapping card failed, card " + getName() + " " + id + " not found", game);
         }
         return card;
     }
