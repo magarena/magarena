@@ -2,12 +2,17 @@ package magic.model;
 
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class MagicPermanentList extends ArrayList<MagicPermanent> implements MagicCopyable {
 
     private static final long serialVersionUID = 1L;
 
     public MagicPermanentList() {}
+
+    public MagicPermanentList(final MagicPermanent... permanents) {
+        addAll(Arrays.asList(permanents));
+    }
 
     public MagicPermanentList(final List<MagicPermanent> list) {
         addAll(list);
