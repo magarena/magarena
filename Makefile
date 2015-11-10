@@ -131,7 +131,6 @@ M1.%: clean $(EXE) release/Magarena/mods/felt_theme.zip
 			release/Magarena.jar \
 			release/Magarena.exe \
 			release/Magarena.sh \
-			release/Magarena.command \
 			release/README.txt \
 			release/lib \
 			Magarena-1.$*
