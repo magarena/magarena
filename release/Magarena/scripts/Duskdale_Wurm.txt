@@ -1,11 +1,11 @@
 name=Duskdale Wurm
 image=http://magiccards.info/scans/en/m13/166.jpg
 value=3.068
-ability=trample
 rarity=U
 type=Creature
 subtype=Wurm
 cost={5}{G}{G}
 pt=7/7
+ability=Trample
 timing=main
 oracle=Trample

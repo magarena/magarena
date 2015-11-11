@@ -1,9 +1,10 @@
 name=Natural Spring
-image=http://magiccards.info/scans/en/10e/281.jpg
+image=http://magiccards.info/scans/en/dpa/75.jpg
+image_updated=2015-11-11
 value=2.239
 rarity=C
 type=Sorcery
 cost={3}{G}{G}
-timing=draw
+timing=main
 requires_groovy_code
 oracle=Target player gains 8 life.

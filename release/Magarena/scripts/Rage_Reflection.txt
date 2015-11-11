@@ -1,10 +1,11 @@
 name=Rage Reflection
-image=http://magiccards.info/scans/en/shm/104.jpg
+image=http://magiccards.info/scans/en/dpa/52.jpg
+image_updated=2015-11-11
 value=3.484
 rarity=R
 type=Enchantment
 cost={4}{R}{R}
-ability=creatures you control have double strike
+ability=Creatures you control have double strike.
 static=player
 timing=enchantment
 oracle=Creatures you control have double strike.

@@ -1,10 +1,11 @@
 name=Terror
-image=http://magiccards.info/scans/en/me4/99.jpg
+image=http://magiccards.info/scans/en/dpa/34.jpg
+image_updated=2015-11-11
 value=4.139
 removal=3
 rarity=C
 type=Instant
 cost={1}{B}
-timing=removal
 effect=Destroy target nonartifact, nonblack creature. It can't be regenerated.
+timing=removal
 oracle=Destroy target nonartifact, nonblack creature. It can't be regenerated.

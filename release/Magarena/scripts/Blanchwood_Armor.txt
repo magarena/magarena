@@ -1,11 +1,12 @@
 name=Blanchwood Armor
-image=http://magiccards.info/scans/en/10e/253.jpg
+image=http://magiccards.info/scans/en/dpa/55.jpg
+image_updated=2015-11-11
 value=4.335
 rarity=U
 type=Enchantment
-enchant=pump,pos creature
 subtype=Aura
 cost={2}{G}
 ability=Enchanted creature gets +1/+1 for each Forest you control.
-timing=enchantment
+timing=aura
+enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature gets +1/+1 for each Forest you control.

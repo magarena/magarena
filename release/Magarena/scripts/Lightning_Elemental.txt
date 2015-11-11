@@ -1,11 +1,11 @@
 name=Lightning Elemental
 image=http://magiccards.info/scans/en/m12/149.jpg
 value=3.125
-ability=haste
 rarity=C
 type=Creature
 subtype=Elemental
 cost={3}{R}
 pt=4/1
+ability=Haste
 timing=fmain
 oracle=Haste

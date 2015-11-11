@@ -1,5 +1,6 @@
 name=Boomerang
-image=http://magiccards.info/scans/en/me3/30.jpg
+image=http://magiccards.info/scans/en/dpa/2.jpg
+image_updated=2015-11-11
 value=4.290
 rarity=C
 type=Instant

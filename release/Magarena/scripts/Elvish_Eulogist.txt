@@ -1,5 +1,6 @@
 name=Elvish Eulogist
-image=http://magiccards.info/scans/en/evg/3.jpg
+image=http://magiccards.info/scans/en/dpa/61.jpg
+image_updated=2015-11-11
 value=2.712
 rarity=C
 type=Creature

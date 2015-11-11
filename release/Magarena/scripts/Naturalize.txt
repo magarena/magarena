@@ -5,6 +5,6 @@ removal=1
 rarity=C
 type=Instant
 cost={1}{G}
-timing=removal
 effect=Destroy target artifact or enchantment.
+timing=removal
 oracle=Destroy target artifact or enchantment.

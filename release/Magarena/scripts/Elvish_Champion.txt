@@ -1,13 +1,13 @@
 name=Elvish Champion
-image=http://magiccards.info/scans/en/10e/261.jpg
+image=http://magiccards.info/scans/en/dpa/60.jpg
+image_updated=2015-11-11
 value=4.299
 rarity=R
 type=Creature
 subtype=Elf
 cost={1}{G}{G}
 pt=2/2
-ability=other elf creatures get +1/+1;\
-        other elf creatures have forestwalk
+ability=Other Elf creatures get +1/+1 and have forestwalk.
 static=all
 timing=main
 oracle=Other Elf creatures get +1/+1 and have forestwalk.

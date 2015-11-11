@@ -1,11 +1,12 @@
 name=Dusk Imp
-image=http://magiccards.info/scans/en/dvd/34.jpg
+image=http://magiccards.info/scans/en/dpa/23.jpg
+image_updated=2015-11-11
 value=2.484
-ability=flying
 rarity=C
 type=Creature
 subtype=Imp
 cost={2}{B}
 pt=2/1
+ability=Flying
 timing=main
 oracle=Flying

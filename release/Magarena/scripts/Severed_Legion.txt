@@ -1,11 +1,12 @@
 name=Severed Legion
-image=http://magiccards.info/scans/en/10e/177.jpg
+image=http://magiccards.info/scans/en/dpa/33.jpg
+image_updated=2015-11-11
 value=3.596
-ability=fear
 rarity=C
 type=Creature
 subtype=Zombie
 cost={1}{B}{B}
 pt=2/2
+ability=Fear
 timing=main
 oracle=Fear

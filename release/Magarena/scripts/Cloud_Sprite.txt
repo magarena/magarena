@@ -1,11 +1,13 @@
 name=Cloud Sprite
-image=http://magiccards.info/scans/en/10e/75.jpg
+image=http://magiccards.info/scans/en/dpa/4.jpg
+image_updated=2015-11-11
 value=2.381
-ability=flying;SN can block only creatures with flying.
 rarity=C
 type=Creature
 subtype=Faerie
 cost={U}
 pt=1/1
-timing=fmain
+ability=Flying;\
+        SN can block only creatures with flying.
+timing=main
 oracle=Flying\nCloud Sprite can block only creatures with flying.

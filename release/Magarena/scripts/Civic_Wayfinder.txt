@@ -1,11 +1,12 @@
 name=Civic Wayfinder
-image=http://magiccards.info/scans/en/10e/255.jpg
+image=http://magiccards.info/scans/en/dpa/56.jpg
+image_updated=2015-11-11
 value=3.531
 rarity=C
 type=Creature
 subtype=Elf,Warrior,Druid
 cost={2}{G}
 pt=2/2
-ability=When SN enters the battlefield, you may search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.
+ability=When SN enters the battlefield, you may search your library for a basic land card, reveal it, and put it into your hand. If you do, shuffle your library.
 timing=main
 oracle=When Civic Wayfinder enters the battlefield, you may search your library for a basic land card, reveal it, and put it into your hand. If you do, shuffle your library.
