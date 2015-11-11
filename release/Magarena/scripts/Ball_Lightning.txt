@@ -6,8 +6,8 @@ type=Creature
 subtype=Elemental
 cost={R}{R}{R}
 pt=6/1
-ability=trample;\
-        haste;\
+ability=Trample;\
+        Haste;\
         At the beginning of the end step, sacrifice SN.
 timing=fmain
 oracle=Trample\nHaste\nAt the beginning of the end step, sacrifice Ball Lightning.

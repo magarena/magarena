@@ -5,5 +5,5 @@ rarity=U
 type=Sorcery
 cost={B}{B}
 effect=Target player discards two cards at random.
-timing=removal
+timing=main
 oracle=Target player discards two cards at random.

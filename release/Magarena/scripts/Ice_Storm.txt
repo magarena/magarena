@@ -5,6 +5,6 @@ removal=3
 rarity=U
 type=Sorcery
 cost={2}{G}
-timing=main
 effect=Destroy target land.
+timing=main
 oracle=Destroy target land.

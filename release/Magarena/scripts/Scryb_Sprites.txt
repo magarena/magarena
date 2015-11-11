@@ -1,11 +1,11 @@
 name=Scryb Sprites
 image=http://magiccards.info/scans/en/me3/132.jpg
 value=4.253
-ability=flying
 rarity=C
 type=Creature
 subtype=Faerie
 cost={G}
 pt=1/1
+ability=Flying
 timing=main
 oracle=Flying

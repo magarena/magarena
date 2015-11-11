@@ -7,7 +7,7 @@ subtype=Kraken
 cost={8}{U}{U}{U}
 pt=11/11
 ability=Trample;\
-SN enters the battlefield tapped.
+        SN enters the battlefield tapped.
 timing=main
 requires_groovy_code
 oracle=Trample\nPolar Kraken enters the battlefield tapped.\nCumulative upkeep—Sacrifice a land.

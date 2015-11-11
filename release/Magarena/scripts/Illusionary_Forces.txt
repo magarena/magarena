@@ -1,11 +1,12 @@
 name=Illusionary Forces
 image=http://magiccards.info/scans/en/med/38.jpg
 value=2.703
-rarity=C
+rarity=U
 type=Creature
 subtype=Illusion
 cost={3}{U}
 pt=4/4
-ability=flying;cumulative upkeep {U}
+ability=Flying;\
+        Cumulative upkeep {U}
 timing=main
 oracle=Flying\nCumulative upkeep {U}

@@ -1,11 +1,12 @@
 name=Granite Gargoyle
 image=http://magiccards.info/scans/en/med/99.jpg
 value=3.627
-ability=flying;{R}: SN gets +0/+1 until end of turn.
-rarity=R
+rarity=U
 type=Creature
 subtype=Gargoyle
 cost={2}{R}
 pt=2/2
+ability=Flying;\
+        {R}: SN gets +0/+1 until end of turn.
 timing=main
 oracle=Flying\n{R}: Granite Gargoyle gets +0/+1 until end of turn.

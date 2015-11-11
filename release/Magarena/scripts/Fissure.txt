@@ -4,6 +4,6 @@ value=3.777
 rarity=C
 type=Instant
 cost={3}{R}{R}
-timing=removal
 effect=Destroy target creature or land. It can't be regenerated.
+timing=removal
 oracle=Destroy target creature or land. It can't be regenerated.

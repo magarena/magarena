@@ -6,6 +6,6 @@ type=Creature
 subtype=Faerie
 cost={1}{U}
 pt=1/1
-ability=protection from red;flying
+ability=Flying, protection from red
 timing=main
 oracle=Flying, protection from red

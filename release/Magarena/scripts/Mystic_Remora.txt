@@ -4,7 +4,7 @@ value=4.569
 rarity=U
 type=Enchantment
 cost={U}
-ability=cumulative upkeep {1}
+ability=Cumulative upkeep {1}
 timing=enchantment
 requires_groovy_code
 oracle=Cumulative upkeep {1}\nWhenever an opponent casts a noncreature spell, you may draw a card unless that player pays {4}.

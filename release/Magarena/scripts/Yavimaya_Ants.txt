@@ -6,6 +6,7 @@ type=Creature
 subtype=Insect
 cost={2}{G}{G}
 pt=5/1
-ability=trample;haste;cumulative upkeep {G}{G}
+ability=Trample, haste;\
+        Cumulative upkeep {G}{G}
 timing=fmain
 oracle=Trample, haste\nCumulative upkeep {G}{G}

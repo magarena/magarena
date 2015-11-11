@@ -1,7 +1,7 @@
 name=Brothers of Fire
 image=http://magiccards.info/scans/en/med/89.jpg
 value=2.365
-rarity=U
+rarity=C
 type=Creature
 subtype=Human,Shaman
 cost={1}{R}{R}

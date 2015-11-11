@@ -6,7 +6,7 @@ type=Creature
 subtype=Wombat
 cost={2}{G}{G}
 pt=0/1
-ability=vigilance;\
+ability=Vigilance;\
         SN gets +2/+2 for each Aura attached to it.
 timing=main
 oracle=Vigilance\nRabid Wombat gets +2/+2 for each Aura attached to it.

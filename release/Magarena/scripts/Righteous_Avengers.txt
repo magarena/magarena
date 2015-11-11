@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Soldier
 cost={4}{W}
 pt=3/1
-ability=plainswalk
+ability=Plainswalk
 timing=main
 oracle=Plainswalk

@@ -6,6 +6,7 @@ type=Creature
 subtype=Illusion,Wall
 cost={4}{U}
 pt=7/4
-ability=defender;flying;first strike;cumulative upkeep {U}
-timing=main
+ability=Defender, flying, first strike;\
+        Cumulative upkeep {U}
+timing=smain
 oracle=Defender, flying, first strike\nCumulative upkeep {U}

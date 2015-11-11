@@ -1,12 +1,12 @@
 name=Elder Land Wurm
 image=http://magiccards.info/scans/en/med/11.jpg
 value=1.959
-rarity=R
+rarity=U
 type=Creature
 subtype=Dragon,Wurm
 cost={4}{W}{W}{W}
 pt=5/5
-ability=defender;trample
-timing=main
+ability=Defender, trample
+timing=smain
 requires_groovy_code
 oracle=Defender, trample\nWhen Elder Land Wurm blocks, it loses defender.

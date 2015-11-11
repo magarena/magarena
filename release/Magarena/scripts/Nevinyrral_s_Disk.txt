@@ -1,7 +1,7 @@
 name=Nevinyrral's Disk
 image=http://magiccards.info/scans/en/c14/257.jpg
 value=4.500
-rarity=M
+rarity=R
 type=Artifact
 cost={4}
 ability=SN enters the battlefield tapped.;\

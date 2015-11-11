@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={1}{W}
 ability={W}{W}: Return target nonsnow land you control to its owner's hand.
-timing=main
+timing=enchantment
 oracle={W}{W}: Return target nonsnow land you control to its owner's hand.

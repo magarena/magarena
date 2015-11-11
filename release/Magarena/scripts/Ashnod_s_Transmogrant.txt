@@ -1,9 +1,9 @@
 name=Ashnod's Transmogrant
 image=http://magiccards.info/scans/en/med/152.jpg
 value=3.444
-rarity=U
+rarity=C
 type=Artifact
 cost={1}
-timing=main
+timing=artifact
 requires_groovy_code
 oracle={T}, Sacrifice Ashnod's Transmogrant: Put a +1/+1 counter on target nonartifact creature. That creature becomes an artifact in addition to its other types.
