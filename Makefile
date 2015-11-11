@@ -203,6 +203,7 @@ life ?= 10
 ai1 ?= MMABFast
 ai2 ?= MMABFast
 debug ?= false
+devMode ?= false
 selfMode ?= false
 flags ?= 
 
@@ -212,6 +213,7 @@ flags ?=
 	$(RUN) ${flags} \
 	-Dmagarena.dir=`pwd`/release \
 	-Ddebug=${debug} \
+	-DdevMode=${devMode} \
 	-Dgame.log=$*.log \
 	-Djava.awt.headless=true \
 	magic.DeckStrCal \
@@ -228,7 +230,7 @@ debug: $(MAG)
 	make 101.t debug=true games=0 flags=-ea || (cat 101.out && false)
 
 %.d: $(MAG)
-	$(DEBUG) -DrndSeed=$* -DselfMode=$(selfMode) -Ddebug=$(debug) -Dmagarena.dir=`pwd`/release -jar $^ |& tee $*.log
+	$(DEBUG) -DrndSeed=$* -DselfMode=$(selfMode) -Ddebug=${debug} -DdevMode=${devMode} -Dmagarena.dir=`pwd`/release -jar $^ |& tee $*.log
 
 # Z = 4.4172 (99.999%)
 # E = 0.01
