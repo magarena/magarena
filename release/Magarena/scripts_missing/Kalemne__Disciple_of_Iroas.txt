@@ -1,12 +1,12 @@
 name=Kalemne, Disciple of Iroas
-image=http://magiccards.info/scans/en/C15/45.jpg
+image=http://magiccards.info/scans/en/c15/45.jpg
 value=2.500
 rarity=M
 type=Legendary,Creature
 subtype=Giant,Soldier
 cost={2}{R}{W}
 pt=3/3
-ability=Double strike;vigilance;\
+ability=Double strike, vigilance;\
         Whenever you cast a creature spell with converted mana cost 5 or greater, you get an experience counter.;\
         SN gets +1/+1 for each experience counter you have.
 timing=main

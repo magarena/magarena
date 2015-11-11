@@ -1,5 +1,5 @@
 name=Thief of Blood
-image=http://magiccards.info/scans/en/C15/22.jpg
+image=http://magiccards.info/scans/en/c15/22.jpg
 value=2.500
 rarity=U
 type=Creature
@@ -7,6 +7,6 @@ subtype=Vampire
 cost={4}{B}{B}
 pt=1/1
 ability=Flying;\
-        As SN enters the battlefield, remove all counters from all permanents.;SN enters the battlefield with a +1/+1 counter on it for each counter removed this way.
+        As SN enters the battlefield, remove all counters from all permanents. SN enters the battlefield with a +1/+1 counter on it for each counter removed this way.
 timing=main
 oracle=Flying\nAs Thief of Blood enters the battlefield, remove all counters from all permanents. Thief of Blood enters the battlefield with a +1/+1 counter on it for each counter removed this way.

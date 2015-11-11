@@ -1,10 +1,10 @@
 name=Rite of the Raging Storm
-image=http://magiccards.info/scans/en/C15/30.jpg
+image=http://magiccards.info/scans/en/c15/30.jpg
 value=2.500
 rarity=U
 type=Enchantment
 cost={3}{R}{R}
 ability=Creatures named Lightning Rager can't attack you or planeswalkers you control.;\
-        At the beginning of each player's upkeep, that player puts a 5/1 red Elemental creature token named Lightning Rager onto the the battlefield.
+        At the beginning of each player's upkeep, that player puts a 5/1 red Elemental creature token named Lightning Rager onto the battlefield.
 timing=enchantment
-oracle=Creatures named Lightning Rager can't attack you or planeswalkers you control.\nAt the beginning of each player's upkeep, that player puts a 5/1 red Elemental creature token named Lightning Rager onto the the battlefield. It has trample, haste, and "At the beginning of the end step, sacrifice this creature."
+oracle=Creatures named Lightning Rager can't attack you or planeswalkers you control.\nAt the beginning of each player's upkeep, that player puts a 5/1 red Elemental creature token named Lightning Rager onto the battlefield. It has trample, haste, and "At the beginning of the end step, sacrifice this creature."

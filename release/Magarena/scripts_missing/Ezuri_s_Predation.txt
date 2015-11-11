@@ -1,9 +1,9 @@
 name=Ezuri's Predation
-image=http://magiccards.info/scans/en/C15/26.jpg
+image=http://magiccards.info/scans/en/c15/36.jpg
 value=2.500
 rarity=R
 type=Sorcery
 cost={5}{G}{G}{G}
 effect=For each creature your opponents control, put a 4/4 green Beast creature token onto the battlefield. Each of those Beasts fights a different one of those creatures.
-timing=removal
+timing=main
 oracle=For each creature your opponents control, put a 4/4 green Beast creature token onto the battlefield. Each of those Beasts fights a different one of those creatures.

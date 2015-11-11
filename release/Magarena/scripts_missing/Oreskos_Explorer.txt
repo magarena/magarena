@@ -1,5 +1,5 @@
 name=Oreskos Explorer
-image=http://magiccards.info/scans/en/C15/6.jpg
+image=http://magiccards.info/scans/en/c15/6.jpg
 value=2.500
 rarity=U
 type=Creature
@@ -7,5 +7,5 @@ subtype=Cat,Scout
 cost={1}{W}
 pt=2/2
 ability=When SN enters the battlefield, search your library for up to X Plains cards, where X is the number of players who control more lands than you. Reveal those cards, put them into your hand, then shuffle your library.
-timing=fmain
+timing=main
 oracle=When Oreskos Explorer enters the battlefield, search your library for up to X Plains cards, where X is the number of players who control more lands than you. Reveal those cards, put them into your hand, then shuffle your library.

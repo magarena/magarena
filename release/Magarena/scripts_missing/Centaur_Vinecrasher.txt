@@ -1,5 +1,5 @@
 name=Centaur Vinecrasher
-image=http://magiccards.info/scans/en/C15/35.jpg
+image=http://magiccards.info/scans/en/c15/35.jpg
 value=2.500
 rarity=R
 type=Creature
@@ -8,6 +8,6 @@ cost={3}{G}
 pt=1/1
 ability=Trample;\
         SN enters the battlefield with a number of +1/+1 counters on it equal to the number of land cards in all graveyards.;\
-        Whenever a land card is put into a graveyard from anywhere, you pay pay {G}{G}. If you do, return SN from your graveyard to your hand.
+        Whenever a land card is put into a graveyard from anywhere, you may pay {G}{G}. If you do, return SN from your graveyard to your hand.
 timing=main
-oracle=Trample\nCentaur Vinethrasher enters the battlefield with a number of +1/+1 counters on it equal to the number of land cards in all graveyards.\nWhenever a land card is put into a graveyard from anywhere, you pay pay {G}{G}. If you do, return Centaur Vinethrasher from your graveyard to your hand.
+oracle=Trample\nCentaur Vinecrasher enters the battlefield with a number of +1/+1 counters on it equal to the number of land cards in all graveyards.\nWhenever a land card is put into a graveyard from anywhere, you may pay {G}{G}. If you do, return Centaur Vinecrasher from your graveyard to your hand.

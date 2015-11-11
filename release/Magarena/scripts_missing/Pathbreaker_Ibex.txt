@@ -1,5 +1,5 @@
 name=Pathbreaker Ibex
-image=http://magiccards.info/scans/en/C15/38.jpg
+image=http://magiccards.info/scans/en/c15/38.jpg
 value=2.500
 rarity=R
 type=Creature

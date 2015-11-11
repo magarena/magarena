@@ -1,10 +1,10 @@
 name=Mirror Match
-image=http://magiccards.info/scans/en/C15/13.jpg
+image=http://magiccards.info/scans/en/c15/13.jpg
 value=2.500
 rarity=U
 type=Instant
 cost={4}{U}{U}
-effect=Cast SN only during the declare blockers step.;\
-        For each creature attacking you or a planeswalker you control, put a token that's a copy of that creature onto the battlefield blocking that creature. Exile those tokens at the end of combat.
+ability=Cast SN only during the declare blockers step.
+effect=For each creature attacking you or a planeswalker you control, put a token that's a copy of that creature onto the battlefield blocking that creature. Exile those tokens at end of combat.
 timing=block
-oracle=Cast Mirror Match only during the declare blockers step.\nFor each creature attacking you or a planeswalker you control, put a token that's a copy of that creature onto the battlefield blocking that creature. Exile those tokens at the end of combat.
+oracle=Cast Mirror Match only during the declare blockers step.\nFor each creature attacking you or a planeswalker you control, put a token that's a copy of that creature onto the battlefield blocking that creature. Exile those tokens at end of combat.

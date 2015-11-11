@@ -1,5 +1,5 @@
 name=Great Oak Guardian
-image=http://magiccards.info/scans/en/C15/37.jpg
+image=http://magiccards.info/scans/en/c15/37.jpg
 value=2.500
 rarity=U
 type=Creature
