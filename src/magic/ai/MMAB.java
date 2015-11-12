@@ -46,7 +46,6 @@ public class MMAB implements MagicAI {
         final MagicEvent event = choiceGame.getNextEvent();
         final List<Object[]> choices = event.getArtificialChoiceResults(choiceGame);
         final int size = choices.size();
-        choiceGame = null;
 
         assert size != 0 : "ERROR: no choices available for MMAB";
 
@@ -109,7 +108,8 @@ public class MMAB implements MagicAI {
         ArtificialScore bestScore = ArtificialScore.INVALID_SCORE;
         ArtificialChoiceResults bestAchoice = achoices.get(0);
         for (final ArtificialChoiceResults achoice : achoices) {
-            if (bestScore.isBetter(achoice.aiScore,true)) {
+            if (bestScore.isBetter(achoice.aiScore, true) &&
+                MovesBlackList.isBlackListed(choiceGame, event, achoice.choiceResults) == false) {
                 bestScore = achoice.aiScore;
                 bestAchoice = achoice;
             }
