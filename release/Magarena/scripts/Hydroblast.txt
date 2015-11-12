@@ -4,6 +4,6 @@ value=4.236
 rarity=C
 type=Instant
 cost={U}
-effect=Choose one — (1) Counter target spell if it's red. (2) Destroy target permanent if it's red.
+effect=Choose one — (1) Counter target red spell. (2) Destroy target red permanent.
 timing=counter
 oracle=Choose one —\n• Counter target spell if it's red.\n• Destroy target permanent if it's red.
