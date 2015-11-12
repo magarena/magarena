@@ -1,6 +1,7 @@
 name=0/1 green Plant creature token
 token=Plant
-image=http://magiccards.info/extras/token/worldwake/plant.jpg
+image=http://magiccards.info/extras/token/duel-decks-zendikar-vs-eldrazi/plant.jpg
+image_updated=2015-11-12
 value=1
 type=Creature
 subtype=Plant

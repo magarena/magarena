@@ -1,6 +1,7 @@
 name=2/2 black Zombie creature token
 token=Zombie
-image=http://magiccards.info/extras/token/shards-of-alara/zombie.jpg
+image=http://magiccards.info/extras/token/magic-origins/zombie.jpg
+image_updated=2015-11-12
 value=2
 type=Creature
 subtype=Zombie

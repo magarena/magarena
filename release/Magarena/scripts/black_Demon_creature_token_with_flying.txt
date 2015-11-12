@@ -1,6 +1,7 @@
 name=black Demon creature token with flying
 token=Demon
-image=http://cdn.staticneo.com/w/mtg/7/7f/Demon.jpg
+image=http://magiccards.info/extras/token/commander-2014/demon-1.jpg
+image_updated=2015-11-12
 value=2
 type=Creature
 subtype=Demon

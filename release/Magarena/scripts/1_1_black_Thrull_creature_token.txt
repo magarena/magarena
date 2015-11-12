@@ -1,6 +1,7 @@
 name=1/1 black Thrull creature token
 token=Thrull
-image=http://cdn.staticneo.com/w/mtg/e/e3/Thrull.jpg
+image=http://magiccards.info/extras/token/modern-masters-2015/thrull.jpg
+image_updated=2015-11-12
 value=1
 type=Creature
 subtype=Thrull

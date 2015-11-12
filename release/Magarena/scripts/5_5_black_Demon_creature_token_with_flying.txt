@@ -1,6 +1,7 @@
 name=5/5 black Demon creature token with flying
 token=Demon
-image=http://magiccards.info/extras/token/avacyn-restored/demon.jpg
+image=http://magiccards.info/extras/token/magic-origins/demon.jpg
+image_updated=2015-11-12
 value=4
 type=Creature
 subtype=Demon

@@ -1,6 +1,7 @@
 name=1/1 white Soldier creature token
 token=Soldier
-image=http://magiccards.info/extras/token/magic-2010/soldier.jpg
+image=http://magiccards.info/extras/token/modern-masters-2015/soldier.jpg
+image_updated=2015-11-12
 value=1
 type=Creature
 subtype=Soldier

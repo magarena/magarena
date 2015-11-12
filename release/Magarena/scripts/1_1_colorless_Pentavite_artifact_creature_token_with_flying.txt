@@ -1,6 +1,7 @@
 name=1/1 colorless Pentavite artifact creature token with flying
-image=http://cdn.staticneo.com/w/mtg/2/23/Pentavite.jpg
 token=Pentavite
+image=http://magiccards.info/extras/token/commander-2014/pentavite.jpg
+image_updated=2015-11-12
 type=Artifact,Creature
 subtype=Pentavite
 color=
