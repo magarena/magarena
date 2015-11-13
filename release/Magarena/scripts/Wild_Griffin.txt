@@ -1,11 +1,12 @@
 name=Wild Griffin
-image=http://magiccards.info/scans/en/me4/35.jpg
+image=http://magiccards.info/scans/en/m11/40.jpg
+image_updated=2015-11-13
 value=2.703
-ability=flying
 rarity=C
 type=Creature
 subtype=Griffin
 cost={2}{W}
 pt=2/2
+ability=Flying
 timing=main
 oracle=Flying

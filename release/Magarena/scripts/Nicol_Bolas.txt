@@ -1,12 +1,13 @@
 name=Nicol Bolas
-image=http://magiccards.info/scans/en/tsts/98.jpg
+image=http://magiccards.info/scans/en/me3/163.jpg
+image_updated=2015-11-13
 value=4.136
 rarity=R
 type=Legendary,Creature
 subtype=Elder,Dragon
 cost={2}{U}{U}{B}{B}{R}{R}
 pt=7/7
-ability=flying;\
+ability=Flying;\
         At the beginning of your upkeep, you may pay {U}{B}{R}. If you don't, sacrifice SN.
 timing=main
 requires_groovy_code
