@@ -2,7 +2,7 @@
 1849532704 = Grimório
 0454249737 = Cemitério
 1261234564 = Exílio
-3689109508 = Usar uma carta ou habilidade.
+3689109508 = Use uma carta ou habilidade.
 # 3864448769 eg. {f} will be replaced by an icon.
 3864448769 = Clique {f} ou Espaço para passar.
 # 2670693515 eg. | represents a new line. Position to fit text in user prompt.
@@ -198,7 +198,7 @@
 2362534816 = Estatísticas do Deck : %d cartas
 2098223452 = Monocromáticas : %d  Multicoloridas : %d  Incolores : %d
 1403074998 = Cartas : %d  Monocromáticas : %d  Terrenos : %d
-3077713445 = Registro
+3077713445 = Registro do duelo
 3172671433 = DESLIGADO
 2701219539 = Bot.Esq: Liga/Desl. Bot.Dir: Reg.Comp.
 3549662833 = Turno %d
