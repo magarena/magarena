@@ -1,7 +1,7 @@
 name=Kismet
 image=http://magiccards.info/scans/en/me4/17.jpg
 value=4.338
-rarity=U
+rarity=R
 type=Enchantment
 cost={3}{W}
 timing=main

@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={4}
 ability=Attacking creatures get -1/-0.
-timing=main
+timing=artifact
 oracle=Attacking creatures get -1/-0.

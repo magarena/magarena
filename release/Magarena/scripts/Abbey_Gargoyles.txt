@@ -6,6 +6,6 @@ type=Creature
 subtype=Gargoyle
 cost={2}{W}{W}{W}
 pt=3/4
-ability=flying;protection from red
+ability=Flying, protection from red
 timing=main
 oracle=Flying, protection from red

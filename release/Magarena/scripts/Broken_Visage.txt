@@ -1,7 +1,7 @@
 name=Broken Visage
 image=http://magiccards.info/scans/en/me2/81.jpg
 value=3.485
-rarity=R
+rarity=U
 type=Instant
 cost={4}{B}
 timing=removal

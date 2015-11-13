@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Human,Warrior
 cost={3}{W}{U}{U}
 pt=5/4
-ability=rampage 1
+ability=Rampage 1
 timing=main
 oracle=Rampage 1

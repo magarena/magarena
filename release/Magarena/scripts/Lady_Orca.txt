@@ -1,7 +1,7 @@
 name=Lady Orca
 image=http://magiccards.info/scans/en/me3/159.jpg
 value=1.574
-rarity=U
+rarity=C
 type=Legendary,Creature
 subtype=Demon
 cost={5}{B}{R}

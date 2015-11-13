@@ -1,11 +1,11 @@
 name=Narwhal
 image=http://magiccards.info/scans/en/me2/57.jpg
 value=3.820
-rarity=R
+rarity=U
 type=Creature
 subtype=Whale
 cost={2}{U}{U}
 pt=2/2
-ability=first strike;protection from red
+ability=First strike, protection from red
 timing=main
 oracle=First strike, protection from red

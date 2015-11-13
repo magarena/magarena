@@ -6,10 +6,10 @@ type=Legendary,Creature
 subtype=Elder,Dragon
 cost={2}{B}{B}{R}{R}{G}{G}
 pt=7/7
-ability=flying;\
+ability=Flying;\
+        At the beginning of your upkeep, you may pay {B}{R}{G}. If you don't, sacrifice SN.;\
         {B}: SN gets +1/+0 until end of turn.;\
         {R}: SN gets +1/+0 until end of turn.;\
-        {G}:SN gets +1/+0 until end of turn.;\
-        At the beginning of your upkeep, you may pay {B}{R}{G}. If you don't, sacrifice SN.
+        {G}: SN gets +1/+0 until end of turn.
 timing=main
 oracle=Flying\nAt the beginning of your upkeep, sacrifice Vaevictis Asmadi unless you pay {B}{R}{G}.\n{B}: Vaevictis Asmadi gets +1/+0 until end of turn.\n{R}: Vaevictis Asmadi gets +1/+0 until end of turn.\n{G}: Vaevictis Asmadi gets +1/+0 until end of turn.

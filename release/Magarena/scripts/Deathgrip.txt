@@ -4,6 +4,6 @@ value=3.534
 rarity=R
 type=Enchantment
 cost={B}{B}
-ability={B}{B}:Counter target green spell.
+ability={B}{B}: Counter target green spell.
 timing=enchantment
 oracle={B}{B}: Counter target green spell.

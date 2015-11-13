@@ -8,5 +8,5 @@ cost={1}
 pt=1/3
 ability=SN doesn't untap during your untap step.;\
         At the beginning of your upkeep, you may pay {1}. If you do, untap SN.
-timing=artifact
+timing=main
 oracle=Brass Man doesn't untap during your untap step.\nAt the beginning of your upkeep, you may pay {1}. If you do, untap Brass Man.

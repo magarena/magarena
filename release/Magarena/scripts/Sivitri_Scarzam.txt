@@ -1,7 +1,7 @@
 name=Sivitri Scarzam
 image=http://magiccards.info/scans/en/me3/175.jpg
 value=1.833
-rarity=U
+rarity=C
 type=Legendary,Creature
 subtype=Human
 cost={5}{U}{B}

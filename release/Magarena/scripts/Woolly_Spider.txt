@@ -1,12 +1,12 @@
 name=Woolly Spider
 image=http://magiccards.info/scans/en/me2/189.jpg
 value=3.667
-rarity=C
+rarity=U
 type=Creature
 subtype=Spider
 cost={1}{G}{G}
 pt=2/3
-ability=Reach.;\
+ability=Reach;\
         Whenever SN blocks a creature with flying, SN gets +0/+2 until end of turn.
 timing=main
 oracle=Reach\nWhenever Woolly Spider blocks a creature with flying, Woolly Spider gets +0/+2 until end of turn.

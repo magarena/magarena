@@ -4,6 +4,6 @@ value=2.571
 rarity=U
 type=Artifact
 cost={6}
-ability={2},Pay 2 life: Draw a card.
+ability={2}, Pay 2 life: Draw a card.
 timing=artifact
 oracle={2}, Pay 2 life: Draw a card.

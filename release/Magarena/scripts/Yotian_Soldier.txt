@@ -1,11 +1,11 @@
 name=Yotian Soldier
 image=http://magiccards.info/scans/en/me4/240.jpg
 value=3.643
-ability=vigilance
 rarity=C
 type=Artifact,Creature
 subtype=Soldier
 cost={3}
 pt=1/4
+ability=Vigilance
 timing=main
 oracle=Vigilance

@@ -6,5 +6,5 @@ type=Artifact
 cost={4}
 ability=As long as it's your turn, creatures you control get +2/+0.;\
         As long as it's not your turn, creatures you control get -0/-2.
-timing=main
+timing=artifact
 oracle=As long as it's your turn, creatures you control get +2/+0.\nAs long as it's not your turn, creatures you control get -0/-2.

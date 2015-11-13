@@ -1,8 +1,8 @@
 name=Bazaar of Baghdad
 image=http://magiccards.info/scans/en/vma/294.jpg
 value=4.000
-rarity=R
+rarity=M
 type=Land
-ability={T}:Draw two cards, then discard three cards.
+ability={T}: Draw two cards, then discard three cards.
 timing=land
 oracle={T}: Draw two cards, then discard three cards.

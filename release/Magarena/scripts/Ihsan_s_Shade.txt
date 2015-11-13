@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Shade,Knight
 cost={3}{B}{B}{B}
 pt=5/5
-ability=protection from white
+ability=Protection from white
 timing=main
 oracle=Protection from white

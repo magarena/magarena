@@ -6,6 +6,7 @@ type=Legendary,Creature
 subtype=Human,Wizard
 cost={R}{R}{G}{G}
 pt=2/2
-ability=flying;{R}{G},{T}:Target creature gets +2/+2 until end of turn.
+ability=Flying;\
+        {R}{G}, {T}: Target creature gets +2/+2 until end of turn.
 timing=main
 oracle=Flying\n{R}{G}, {T}: Target creature gets +2/+2 until end of turn.

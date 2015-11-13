@@ -6,6 +6,7 @@ type=Legendary,Creature
 subtype=Insect,Wizard
 cost={B}{R}{G}
 pt=1/2
-ability=flying;{B}{R}{G},{T}:Target player draws a card.
+ability=Flying;\
+        {B}{R}{G}, {T}: Target player draws a card.
 timing=main
 oracle=Flying\n{B}{R}{G}, {T}: Target player draws a card.

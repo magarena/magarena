@@ -1,11 +1,11 @@
 name=Roc of Kher Ridges
 image=http://magiccards.info/scans/en/me4/132.jpg
 value=3.878
-ability=flying
 rarity=U
 type=Creature
 subtype=Bird
 cost={3}{R}
 pt=3/3
+ability=Flying
 timing=main
 oracle=Flying

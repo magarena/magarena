@@ -6,7 +6,7 @@ type=Creature
 subtype=Illusion
 cost={3}{U}
 pt=4/1
-ability=flying;\
+ability=Flying;\
         At the beginning of your upkeep, you may pay {U}. If you don't, sacrifice SN.
 timing=main
 oracle=Flying\nAt the beginning of your upkeep, sacrifice Phantasmal Forces unless you pay {U}.

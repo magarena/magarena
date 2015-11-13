@@ -1,7 +1,7 @@
 name=Xiahou Dun, the One-Eyed
 image=http://magiccards.info/scans/en/me3/83.jpg
 value=4.122
-rarity=R
+rarity=U
 type=Legendary,Creature
 subtype=Human,Soldier
 cost={2}{B}{B}

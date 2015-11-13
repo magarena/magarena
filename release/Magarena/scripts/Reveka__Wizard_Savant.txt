@@ -1,7 +1,7 @@
 name=Reveka, Wizard Savant
 image=http://magiccards.info/scans/en/me3/49.jpg
 value=2.656
-rarity=R
+rarity=U
 type=Legendary,Creature
 subtype=Dwarf,Wizard
 cost={2}{U}{U}

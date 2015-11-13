@@ -1,10 +1,10 @@
 name=Black Vise
 image=http://magiccards.info/scans/en/me3/191.jpg
 value=4.583
-rarity=U
+rarity=R
 type=Artifact
 cost={1}
-timing=smain
 ability=As SN enters the battlefield, choose an opponent.
+timing=artifact
 requires_groovy_code
 oracle=As Black Vise enters the battlefield, choose an opponent.\nAt the beginning of the chosen player's upkeep, Black Vise deals X damage to that player, where X is the number of cards in his or her hand minus 4.

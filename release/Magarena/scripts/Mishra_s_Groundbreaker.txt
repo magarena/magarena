@@ -5,5 +5,5 @@ rarity=U
 type=Artifact
 cost={4}
 ability={T}, Sacrifice SN: Target land becomes a 3/3 artifact creature that's still a land.
-timing=main
+timing=artifact
 oracle={T}, Sacrifice Mishra's Groundbreaker: Target land becomes a 3/3 artifact creature that's still a land.

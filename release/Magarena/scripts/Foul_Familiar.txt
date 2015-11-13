@@ -7,6 +7,6 @@ subtype=Spirit
 cost={2}{B}
 pt=3/1
 ability=SN can't block.;\
-        {B},Pay 1 life:Return SN to its owner's hand.
+        {B}, Pay 1 life: Return SN to its owner's hand.
 timing=main
 oracle=Foul Familiar can't block.\n{B}, Pay 1 life: Return Foul Familiar to its owner's hand.

@@ -6,7 +6,7 @@ type=Creature
 subtype=Bird
 cost={2}{W}
 pt=1/1
-ability=flying;first strike;\
+ability=Flying, first strike;\
         {W}{W}: SN gets +2/+0 until end of turn. Activate this ability only once each turn.
 timing=main
 oracle=Flying, first strike\n{W}{W}: Wild Aesthir gets +2/+0 until end of turn. Activate this ability only once each turn.

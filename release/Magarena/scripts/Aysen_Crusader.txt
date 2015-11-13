@@ -1,7 +1,7 @@
 name=Aysen Crusader
 image=http://magiccards.info/scans/en/me2/7.jpg
 value=3.345
-rarity=R
+rarity=U
 type=Creature
 subtype=Human,Knight
 cost={2}{W}{W}

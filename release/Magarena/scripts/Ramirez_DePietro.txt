@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Human,Pirate
 cost={3}{U}{B}{B}
 pt=4/3
-ability=first strike
+ability=First strike
 timing=main
 oracle=First strike

@@ -6,6 +6,7 @@ type=Creature
 subtype=Illusion,Dragon
 cost={5}{U}
 pt=5/4
-ability=flying;SN can block only creatures with flying.
+ability=Flying;\
+        SN can block only creatures with flying.
 timing=main
 oracle=Flying\nCloud Dragon can block only creatures with flying.

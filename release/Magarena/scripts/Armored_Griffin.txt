@@ -6,6 +6,6 @@ type=Creature
 subtype=Griffin
 cost={3}{W}
 pt=2/3
-ability=vigilance;flying
+ability=Flying, vigilance
 timing=main
 oracle=Flying, vigilance

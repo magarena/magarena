@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Rogue
 cost={4}{R}
 pt=3/1
-ability=first strike;haste
+ability=First strike, haste
 timing=fmain
 oracle=First strike, haste

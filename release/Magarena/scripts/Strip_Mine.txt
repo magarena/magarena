@@ -4,6 +4,6 @@ value=4.500
 rarity=R
 type=Land
 ability={T}: Add {1} to your mana pool.;\
-        {T},Sacrifice SN: Destroy target land.
+        {T}, Sacrifice SN: Destroy target land.
 timing=land
 oracle={T}: Add {1} to your mana pool.\n{T}, Sacrifice Strip Mine: Destroy target land.

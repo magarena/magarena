@@ -1,7 +1,7 @@
 name=Glacial Chasm
 image=http://magiccards.info/scans/en/me2/229.jpg
 value=4.000
-rarity=U
+rarity=R
 type=Land
 ability=When SN enters the battlefield, sacrifice a land.;\
         Creatures you control can't attack.;\

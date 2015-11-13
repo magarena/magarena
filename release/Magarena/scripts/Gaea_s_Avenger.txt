@@ -1,7 +1,7 @@
 name=Gaea's Avenger
 image=http://magiccards.info/scans/en/me4/155.jpg
 value=3.278
-rarity=R
+rarity=U
 type=Creature
 subtype=Treefolk
 cost={1}{G}{G}

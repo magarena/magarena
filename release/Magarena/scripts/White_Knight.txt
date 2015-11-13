@@ -6,6 +6,7 @@ type=Creature
 subtype=Human,Knight
 cost={W}{W}
 pt=2/2
-ability=first strike;protection from black
+ability=First strike;\
+        Protection from black
 timing=main
 oracle=First strike\nProtection from black

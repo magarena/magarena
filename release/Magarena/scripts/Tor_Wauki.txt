@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Human,Archer
 cost={2}{B}{B}{R}
 pt=3/3
-ability={T}:SN deals 2 damage to target attacking or blocking creature.
+ability={T}: SN deals 2 damage to target attacking or blocking creature.
 timing=main
 oracle={T}: Tor Wauki deals 2 damage to target attacking or blocking creature.

@@ -4,6 +4,6 @@ value=4.250
 rarity=C
 type=Sorcery
 cost={1}{G}
-effect=Search your library for a Forest card and put it onto the battlefield. Then shuffle your library.
+effect=Search your library for a Forest card and put that card onto the battlefield. Then shuffle your library.
 timing=main
 oracle=Search your library for a Forest card and put that card onto the battlefield. Then shuffle your library.

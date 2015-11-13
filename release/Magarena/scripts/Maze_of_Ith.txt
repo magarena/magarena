@@ -1,7 +1,7 @@
 name=Maze of Ith
 image=http://magiccards.info/scans/en/me4/246.jpg
 value=4.564
-rarity=U
+rarity=R
 type=Land
 timing=land
 requires_groovy_code

@@ -1,12 +1,12 @@
 name=Lu Xun, Scholar General
 image=http://magiccards.info/scans/en/c13/49.jpg
 value=3.735
-rarity=U
+rarity=R
 type=Legendary,Creature
 subtype=Human,Soldier
 cost={2}{U}{U}
 pt=1/3
-ability=horsemanship;\
+ability=Horsemanship;\
         Whenever SN deals damage to an opponent, you may draw a card.
 timing=main
 oracle=Horsemanship\nWhenever Lu Xun, Scholar General deals damage to an opponent, you may draw a card.

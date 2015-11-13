@@ -4,7 +4,7 @@ value=3.444
 rarity=R
 type=Enchantment
 cost={2}{W}{W}
-ability=cumulative upkeep {W}
+ability=Cumulative upkeep {W}
 timing=enchantment
 requires_groovy_code
 oracle=Cumulative upkeep {W}\nWhenever a Swamp, Mountain, black permanent, or red permanent becomes tapped, Royal Decree deals 1 damage to that permanent's controller.

@@ -1,7 +1,7 @@
 name=Life Chisel
 image=http://magiccards.info/scans/en/me3/199.jpg
 value=3.560
-rarity=U
+rarity=R
 type=Artifact
 cost={4}
 timing=main

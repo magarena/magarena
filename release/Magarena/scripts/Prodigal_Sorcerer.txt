@@ -1,7 +1,7 @@
 name=Prodigal Sorcerer
 image=http://magiccards.info/scans/en/me4/58.jpg
 value=4.049
-rarity=C
+rarity=U
 type=Creature
 subtype=Human,Wizard
 cost={2}{U}

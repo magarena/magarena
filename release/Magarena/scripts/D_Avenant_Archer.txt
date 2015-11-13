@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Soldier,Archer
 cost={2}{W}
 pt=1/2
-ability={T}:SN deals 1 damage to target attacking or blocking creature.
+ability={T}: SN deals 1 damage to target attacking or blocking creature.
 timing=main
 oracle={T}: D'Avenant Archer deals 1 damage to target attacking or blocking creature.

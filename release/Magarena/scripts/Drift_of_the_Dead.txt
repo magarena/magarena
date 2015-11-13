@@ -6,7 +6,7 @@ type=Creature
 subtype=Wall
 cost={3}{B}
 pt=*/*
-ability=defender;\
+ability=Defender;\
         SN's power and toughness are each equal to the number of snow lands you control.
-timing=main
+timing=smain
 oracle=Defender\nDrift of the Dead's power and toughness are each equal to the number of snow lands you control.

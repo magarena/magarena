@@ -1,11 +1,11 @@
 name=Evil Presence
 image=http://magiccards.info/scans/en/nph/60.jpg
 value=2.870
-rarity=U
+rarity=C
 type=Enchantment
 subtype=Aura
 cost={B}
-timing=main
+timing=aura
 enchant=default,land
 requires_groovy_code
 oracle=Enchant land\nEnchanted land is a Swamp.

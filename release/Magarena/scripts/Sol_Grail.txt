@@ -1,9 +1,9 @@
 name=Sol Grail
 image=http://magiccards.info/scans/en/me3/201.jpg
 value=3.103
-rarity=U
+rarity=C
 type=Artifact
 cost={3}
-timing=main
+timing=artifact
 requires_groovy_code
 oracle=As Sol Grail enters the battlefield, choose a color.\n{T}: Add one mana of the chosen color to your mana pool.

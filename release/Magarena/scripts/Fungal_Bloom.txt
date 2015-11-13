@@ -5,5 +5,5 @@ rarity=R
 type=Enchantment
 cost={G}{G}
 ability={G}{G}: Put a spore counter on target Fungus.
-timing=main
+timing=enchantment
 oracle={G}{G}: Put a spore counter on target Fungus.

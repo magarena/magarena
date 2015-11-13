@@ -1,12 +1,12 @@
 name=Lim-Dûl's High Guard
 image=http://magiccards.info/scans/en/me2/103.jpg
 value=3.595
-rarity=C
+rarity=U
 type=Creature
 subtype=Skeleton
 cost={1}{B}{B}
 pt=2/1
-ability=first strike;\
+ability=First strike;\
         {1}{B}: Regenerate SN.
 timing=main
 oracle=First strike\n{1}{B}: Regenerate Lim-Dûl's High Guard.

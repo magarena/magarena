@@ -6,8 +6,8 @@ type=Creature
 subtype=Zombie
 cost={1}{B}{B}
 pt=2/3
-ability=other Zombie creatures have swampwalk;\
-        other Zombies have "{B}: Regenerate SN."
+ability=Other Zombie creatures have swampwalk;\
+        Other Zombies have "{B}: Regenerate SN."
 static=all
 timing=main
 oracle=Other Zombie creatures have swampwalk.\nOther Zombies have "{B}: Regenerate this permanent."

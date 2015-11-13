@@ -6,6 +6,7 @@ type=Creature
 subtype=Insect
 cost={1}{G}{G}
 pt=0/1
-ability=flying;{G}: SN gets +1/+1 until end of turn.
+ability=Flying;\
+        {G}: SN gets +1/+1 until end of turn.
 timing=main
 oracle=Flying\n{G}: Killer Bees gets +1/+1 until end of turn.

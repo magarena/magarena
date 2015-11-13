@@ -1,11 +1,11 @@
 name=Ogre Taskmaster
 image=http://magiccards.info/scans/en/me4/128.jpg
 value=2.250
-ability=SN can't block.
-rarity=U
+rarity=C
 type=Creature
 subtype=Ogre
 cost={3}{R}
 pt=4/3
-timing=fmain
+ability=SN can't block.
+timing=main
 oracle=Ogre Taskmaster can't block.

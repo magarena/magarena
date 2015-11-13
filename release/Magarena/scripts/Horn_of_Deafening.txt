@@ -1,7 +1,7 @@
 name=Horn of Deafening
 image=http://magiccards.info/scans/en/me4/205.jpg
 value=3.265
-rarity=R
+rarity=U
 type=Artifact
 cost={4}
 ability={2}, {T}: Prevent all combat damage that would be dealt by target creature this turn.

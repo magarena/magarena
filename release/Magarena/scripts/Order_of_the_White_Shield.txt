@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Knight
 cost={W}{W}
 pt=2/1
-ability=protection from black;\
+ability=Protection from black;\
         {W}: SN gains first strike until end of turn.;\
         {W}{W}: SN gets +1/+0 until end of turn.
 timing=main

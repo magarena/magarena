@@ -6,6 +6,6 @@ type=Creature
 subtype=Dryad
 cost={4}{G}
 pt=2/5
-ability={1}{G}:SN gets +1/+0 until end of turn.
+ability={1}{G}: SN gets +1/+0 until end of turn.
 timing=main
 oracle={1}{G}: Folk of the Pines gets +1/+0 until end of turn.

@@ -4,6 +4,6 @@ value=1.661
 rarity=C
 type=Artifact
 cost={2}
-ability={1},{T},Sacrifice SN:Target creature gets +2/+2 until end of turn.
+ability={1}, {T}, Sacrifice SN: Target creature gets +2/+2 until end of turn.
 timing=artifact
 oracle={1}, {T}, Sacrifice Elven Lyre: Target creature gets +2/+2 until end of turn.

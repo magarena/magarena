@@ -6,7 +6,7 @@ type=Creature
 subtype=Horror
 cost={3}{B}{B}{B}
 pt=6/5
-ability=flying;\
+ability=Flying;\
         When SN enters the battlefield, you lose 5 life.
 timing=main
 oracle=Flying\nWhen Dread Reaper enters the battlefield, you lose 5 life.

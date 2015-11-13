@@ -1,7 +1,7 @@
 name=Deep Spawn
 image=http://magiccards.info/scans/en/me2/45.jpg
 value=3.088
-rarity=U
+rarity=R
 type=Creature
 subtype=Homarid
 cost={5}{U}{U}{U}

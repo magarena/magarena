@@ -5,6 +5,6 @@ removal=5
 rarity=U
 type=Sorcery
 cost={4}{G}{G}
-timing=main
 effect=Destroy target permanent.
+timing=main
 oracle=Destroy target permanent.

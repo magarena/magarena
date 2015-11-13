@@ -1,7 +1,7 @@
 name=Goblin Warrens
 image=http://magiccards.info/scans/en/me4/123.jpg
 value=4.054
-rarity=R
+rarity=U
 type=Enchantment
 cost={2}{R}
 ability={2}{R}, Sacrifice two Goblins: Put three 1/1 red Goblin creature tokens onto the battlefield.

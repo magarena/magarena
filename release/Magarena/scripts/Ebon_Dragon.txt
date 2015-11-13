@@ -6,7 +6,7 @@ type=Creature
 subtype=Dragon
 cost={5}{B}{B}
 pt=5/4
-ability=flying;\
+ability=Flying;\
         When SN enters the battlefield, you may have target opponent discard a card.
 timing=main
 oracle=Flying\nWhen Ebon Dragon enters the battlefield, you may have target opponent discard a card.

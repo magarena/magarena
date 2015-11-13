@@ -1,7 +1,7 @@
 name=Argivian Blacksmith
 image=http://magiccards.info/scans/en/me4/4.jpg
 value=2.738
-rarity=C
+rarity=U
 type=Creature
 subtype=Human,Artificer
 cost={1}{W}{W}

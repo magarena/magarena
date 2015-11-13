@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Knight
 cost={1}{B}{B}
 pt=2/2
-ability={T},Pay 1 life:Counter target white spell.
+ability={T}, Pay 1 life: Counter target white spell.
 timing=main
 oracle={T}, Pay 1 life: Counter target white spell.

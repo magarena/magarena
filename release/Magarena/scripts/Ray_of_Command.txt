@@ -2,9 +2,9 @@ name=Ray of Command
 image=http://magiccards.info/scans/en/ddm/29.jpg
 value=4.133
 removal=5
-rarity=U
+rarity=C
 type=Instant
 cost={3}{U}
-timing=draw
+timing=removal
 requires_groovy_code
 oracle=Untap target creature an opponent controls and gain control of it until end of turn. That creature gains haste until end of turn. When you lose control of the creature, tap it.

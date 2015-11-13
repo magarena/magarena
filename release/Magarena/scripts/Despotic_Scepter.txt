@@ -5,5 +5,5 @@ rarity=R
 type=Artifact
 cost={1}
 ability={T}: Destroy target permanent you own. It can't be regenerated.
-timing=main
+timing=artifact
 oracle={T}: Destroy target permanent you own. It can't be regenerated.

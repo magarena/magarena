@@ -1,9 +1,9 @@
 name=Aeolipile
 image=http://magiccards.info/scans/en/me2/202.jpg
 value=3.433
-rarity=R
+rarity=C
 type=Artifact
 cost={2}
 ability={1}, {T}, Sacrifice SN: SN deals 2 damage to target creature or player.
-timing=main
+timing=artifact
 oracle={1}, {T}, Sacrifice Aeolipile: Aeolipile deals 2 damage to target creature or player.

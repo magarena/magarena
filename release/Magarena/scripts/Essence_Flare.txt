@@ -7,6 +7,6 @@ subtype=Aura
 cost={U}
 ability=Enchanted creature gets +2/+0.
 enchant=pump,creature
-timing=enchantment
+timing=aura
 requires_groovy_code
 oracle=Enchant creature\nEnchanted creature gets +2/+0.\nAt the beginning of the upkeep of enchanted creature's controller, put a -0/-1 counter on that creature.

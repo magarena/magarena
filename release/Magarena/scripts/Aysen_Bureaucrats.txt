@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Advisor
 cost={1}{W}
 pt=1/1
-ability={T}:Tap target creature with power 2 or less.
+ability={T}: Tap target creature with power 2 or less.
 timing=main
 oracle={T}: Tap target creature with power 2 or less.

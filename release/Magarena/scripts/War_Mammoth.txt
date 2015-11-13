@@ -6,6 +6,6 @@ type=Creature
 subtype=Elephant
 cost={3}{G}
 pt=3/3
-ability=trample
+ability=Trample
 timing=main
 oracle=Trample

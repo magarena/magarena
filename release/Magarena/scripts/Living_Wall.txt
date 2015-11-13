@@ -6,7 +6,7 @@ type=Artifact,Creature
 subtype=Wall
 cost={4}
 pt=0/6
-ability=defender;\
+ability=Defender;\
         {1}: Regenerate SN.
 timing=smain
 oracle=Defender\n{1}: Regenerate Living Wall.

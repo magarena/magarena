@@ -4,6 +4,6 @@ value=3.708
 rarity=R
 type=Enchantment
 cost={G}{G}
-ability={G}{G}:Counter target black spell.
+ability={G}{G}: Counter target black spell.
 timing=enchantment
 oracle={G}{G}: Counter target black spell.

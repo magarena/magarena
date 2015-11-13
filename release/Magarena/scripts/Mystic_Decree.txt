@@ -1,9 +1,9 @@
 name=Mystic Decree
 image=http://magiccards.info/scans/en/me4/53.jpg
 value=3.174
-rarity=R
+rarity=U
 type=World,Enchantment
 cost={2}{U}{U}
-timing=main
+timing=enchantment
 requires_groovy_code
 oracle=All creatures lose flying and islandwalk.

@@ -6,6 +6,8 @@ type=Creature
 subtype=Wall
 cost={1}{U}{U}
 pt=0/2
-ability=flying;defender;{U}: SN gets +1/+1 until end of turn.
-timing=main
+ability=Defender;\
+        Flying;\
+        {U}: SN gets +1/+1 until end of turn.
+timing=smain
 oracle=Defender\nFlying\n{U}: Thunder Wall gets +1/+1 until end of turn.

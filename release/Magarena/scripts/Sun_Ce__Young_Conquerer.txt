@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Human,Soldier
 cost={3}{U}{U}
 pt=3/3
-ability=horsemanship;\
+ability=Horsemanship;\
         When SN enters the battlefield, you may return target creature to its owner's hand.
 timing=main
 oracle=Horsemanship\nWhen Sun Ce, Young Conquerer enters the battlefield, you may return target creature to its owner's hand.
