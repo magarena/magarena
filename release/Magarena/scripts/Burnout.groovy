@@ -14,13 +14,10 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
                 if (it.hasColor(MagicColor.Blue)) {
-                    game.addEvent(new MagicCounterUnlessEvent(event.getSource(),it,MagicManaCost.create("{1}")));
+                    game.doAction(new CounterItemOnStackAction(it));
                 }
                 game.doAction(new AddTriggerAction(
-                    MagicAtUpkeepTrigger.YouDraw(
-                        event.getSource(), 
-                        event.getPlayer()
-                    )
+                    MagicAtUpkeepTrigger.YouDraw(event.getSource(), event.getPlayer())
                 ));
             });
         }
