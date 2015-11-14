@@ -6,16 +6,16 @@
             return (enchantedCreature.isValid() && enchantedCreature.isUntapped()) ?
                 new MagicEvent(
                     permanent,
+                    enchantedCreature,
                     this,
-                    "If "+enchantedCreature+" is untapped, tap it."
+                    "If RN is untapped, tap it."
                 ):
                 MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPermanent permanent=event.getPermanent();
-            final MagicPermanent enchantedCreature=permanent.getEnchantedPermanent();
-            if (enchantedCreature.isValid()) {
+            final MagicPermanent enchantedCreature = event.getRefPermanent();
+            if (enchantedCreature.isUntapped()) {
                 game.doAction(new TapAction(enchantedCreature));
             }
         }
