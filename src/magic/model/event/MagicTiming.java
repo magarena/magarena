@@ -28,7 +28,7 @@ public enum MagicTiming {
     Draw("draw",1),                 // Main
     Tapping("tapping",2),           // Main, declare attackers or as response
     Removal("removal",3),           // Main, declare blockers or as response
-    Pump("pump",8),                 // First main your turn, declare blockers or as response
+    Pump("pump",8),                 // First main your turn, declare attackers, declare blockers or as response
     Counter("counter",9),           // When there is a spell of opponent on stack
     Attack("attack",8),             // Declare attackers
     Block("block",8),               // Declare blockers
@@ -113,6 +113,7 @@ public enum MagicTiming {
                         game.isPhase(MagicPhaseType.FirstMain)
                        ) ||
                        game.isPhase(MagicPhaseType.DeclareBlockers) ||
+                       game.isPhase(MagicPhaseType.DeclareAttackers) ||
                        game.getStack().isResponse(controller);
             case Spell:
                 return game.getStack().containsSpells();
