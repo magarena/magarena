@@ -70,6 +70,7 @@ import magic.ui.duel.viewer.UserActionPanel;
 import magic.ui.duel.ViewerInfo;
 import magic.ui.screen.MulliganScreen;
 import magic.utility.MagicSystem;
+import magic.utility.MagicFileSystem;
 
 public class SwingGameController implements IUIGameController {
 
@@ -847,15 +848,25 @@ public class SwingGameController implements IUIGameController {
         setGamePaused(true);
         try {
             GameplayReport.createNewReport(game);
-            GameplayReport.openReportDirectory();
         } catch (Exception ex) {
             Logger.getLogger(GameplayReport.class.getName()).log(Level.WARNING, null, ex);
             ScreenController.showWarningMessage("There was a problem creating the report :-\n\n" + ex.getMessage());
-        } finally {
-            setGamePaused(false);
         }
+
+        try {
+            GameplayReport.openReportDirectory();
+        } catch (Exception ex) {
+            Logger.getLogger(GameplayReport.class.getName()).log(Level.WARNING, null, ex);
+            ScreenController.showWarningMessage(
+                "There was a problem opening the reports folder at " +
+                MagicFileSystem.getDataPath(MagicFileSystem.DataPath.REPORTS).toString() +
+                " :-\n\n" + ex.getMessage()
+           );
+        }
+
+        setGamePaused(false);
     }
-    
+
     private boolean isValidSaveState() {
         final boolean isHumanTurn = game.getTurnPlayer().isHuman();
         final boolean isHumanPriority = game.getPriorityPlayer().isHuman();
