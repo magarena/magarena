@@ -1,0 +1,32 @@
+#Magarena Saved Game
+#Fri Nov 13 10:30:55 GMT 2015
+difficulty=8
+magarenaVersion=1.68
+p0.ai=
+p0.deck.color=bgruw
+p0.face=0
+p0.library0.card=Plains
+p0.library0.quantity=5
+p0.life=1
+p0.name=Player
+p0.permanent0.card=Plains
+p0.permanent0.quantity=2
+p0.permanent1.card=Aven Skirmisher
+p0.permanent1.quantity=1
+p1.ai=MCTSC
+p1.deck.color=bgruw
+p1.face=0
+p1.hand0.card=Jump
+p1.hand0.quantity=1
+p1.library0.card=Island
+p1.library0.quantity=5
+p1.life=1
+p1.name=MCTSC
+p1.permanent0.card=Cylian Elf
+p1.permanent0.quantity=1
+p1.permanent1.card=Island
+p1.permanent1.quantity=2
+p1.permanent2.card=Forest
+p1.permanent2.quantity=2
+players=2
+startPlayerIndex=0
