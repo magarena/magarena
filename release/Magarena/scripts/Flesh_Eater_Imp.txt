@@ -6,7 +6,8 @@ type=Creature
 subtype=Imp
 cost={3}{B}
 pt=2/2
-ability=flying;infect;\
-        Sacrifice a creature: SN gets +1/+1 until end of turn.
+ability=Flying;\
+        Infect;\
+        Sacrifice a creature: SN gets +1/+1 until end of turn. Activate this ability with AI only if you control another creature.
 timing=main
 oracle=Flying\nInfect\nSacrifice a creature: Flesh-Eater Imp gets +1/+1 until end of turn.

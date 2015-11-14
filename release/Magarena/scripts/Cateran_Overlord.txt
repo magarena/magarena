@@ -6,7 +6,7 @@ type=Creature
 subtype=Horror,Mercenary
 cost={4}{B}{B}{B}
 pt=7/5
-ability=Sacrifice a creature: Regenerate SN.;\
+ability=Sacrifice a creature: Regenerate SN. Activate this ability with AI only if you control another creature.;\
         {6}, {T}: Search your library for a Mercenary permanent card with converted mana cost 6 or less and put it onto the battlefield. Then shuffle your library.
 timing=main
 oracle=Sacrifice a creature: Regenerate Cateran Overlord.\n{6}, {T}: Search your library for a Mercenary permanent card with converted mana cost 6 or less and put it onto the battlefield. Then shuffle your library.

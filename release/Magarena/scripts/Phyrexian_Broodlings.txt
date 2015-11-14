@@ -6,6 +6,6 @@ type=Creature
 subtype=Minion
 cost={1}{B}{B}
 pt=2/2
-ability={1},Sacrifice a creature:Put a +1/+1 counter on SN.
+ability={1}, Sacrifice a creature: Put a +1/+1 counter on SN. Activate this ability with AI only if you control another creature.
 timing=main
 oracle={1}, Sacrifice a creature: Put a +1/+1 counter on Phyrexian Broodlings.

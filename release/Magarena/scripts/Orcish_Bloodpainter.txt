@@ -6,6 +6,6 @@ type=Creature
 subtype=Orc,Shaman
 cost={2}{R}
 pt=2/1
-ability={T},Sacrifice a creature:SN deals 1 damage to target creature or player.
+ability={T}, Sacrifice a creature: SN deals 1 damage to target creature or player. Activate this ability with AI only if you control another creature.
 timing=main
 oracle={T}, Sacrifice a creature: Orcish Bloodpainter deals 1 damage to target creature or player.

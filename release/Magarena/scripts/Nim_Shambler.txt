@@ -7,6 +7,6 @@ subtype=Zombie
 cost={2}{B}{B}
 pt=2/1
 ability=SN gets +1/+0 for each artifact you control.;\
-        Sacrifice a creature: Regenerate SN.
+        Sacrifice a creature: Regenerate SN. Activate this ability with AI only if you control another creature.
 timing=main
 oracle=Nim Shambler gets +1/+0 for each artifact you control.\nSacrifice a creature: Regenerate Nim Shambler.

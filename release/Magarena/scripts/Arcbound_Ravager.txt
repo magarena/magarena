@@ -6,7 +6,7 @@ type=Artifact,Creature
 subtype=Beast
 cost={2}
 pt=0/0
-ability=Sacrifice an artifact: Put a +1/+1 counter on SN.;\
+ability=Sacrifice an artifact: Put a +1/+1 counter on SN. Activate this ability with AI only if you control another artifact.;\
         Modular 1
 timing=main
 oracle=Sacrifice an artifact: Put a +1/+1 counter on Arcbound Ravager.\nModular 1

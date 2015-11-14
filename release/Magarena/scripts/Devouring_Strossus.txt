@@ -6,8 +6,8 @@ type=Creature
 subtype=Horror
 cost={5}{B}{B}{B}
 pt=9/9
-ability=flying;trample;\
+ability=Flying;Trample;\
         At the beginning of your upkeep, sacrifice a creature.;\
-        Sacrifice a creature: Regenerate SN.
+        Sacrifice a creature: Regenerate SN. Activate this ability with AI only if you control another creature.
 timing=main
 oracle=Flying, trample\nAt the beginning of your upkeep, sacrifice a creature.\nSacrifice a creature: Regenerate Devouring Strossus.

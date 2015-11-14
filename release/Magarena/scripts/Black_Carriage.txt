@@ -6,8 +6,8 @@ type=Creature
 subtype=Horse
 cost={3}{B}{B}
 pt=4/4
-ability=trample;\
+ability=Trample;\
         SN doesn't untap during your untap step.;\
-        Sacrifice a creature: Untap SN. Activate this ability only during your upkeep.
+        Sacrifice a creature: Untap SN. Activate this ability only during your upkeep. Activate this ability with AI only if you control another creature.
 timing=main
 oracle=Trample\nBlack Carriage doesn't untap during your untap step.\nSacrifice a creature: Untap Black Carriage. Activate this ability only during your upkeep.

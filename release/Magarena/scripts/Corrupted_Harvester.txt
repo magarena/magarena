@@ -6,6 +6,6 @@ type=Creature
 subtype=Horror
 cost={4}{B}{B}
 pt=6/3
-ability={B}, Sacrifice a creature: Regenerate SN.
+ability={B}, Sacrifice a creature: Regenerate SN. Activate this ability with AI only if you control another creature.
 timing=main
 oracle={B}, Sacrifice a creature: Regenerate Corrupted Harvester.

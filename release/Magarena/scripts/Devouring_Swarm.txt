@@ -6,7 +6,7 @@ type=Creature
 subtype=Insect
 cost={1}{B}{B}
 pt=2/1
-ability=flying;\
-        Sacrifice a creature: SN gets +1/+1 until end of turn.
+ability=Flying;\
+        Sacrifice a creature: SN gets +1/+1 until end of turn. Activate this ability with AI only if you control another creature.
 timing=main
 oracle=Flying\nSacrifice a creature: Devouring Swarm gets +1/+1 until end of turn.

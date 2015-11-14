@@ -6,6 +6,6 @@ type=Creature
 subtype=Vampire,Rogue
 cost={2}{B}
 pt=2/2
-ability=Sacrifice a creature: SN gets +2/+2 until end of turn.
+ability=Sacrifice a creature: SN gets +2/+2 until end of turn. Activate this ability with AI only if you control another creature.
 timing=main
 oracle=Sacrifice a creature: Vampire Aristocrat gets +2/+2 until end of turn.

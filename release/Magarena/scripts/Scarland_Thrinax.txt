@@ -6,6 +6,6 @@ type=Creature
 subtype=Lizard
 cost={B}{R}{G}
 pt=2/2
-ability=Sacrifice a creature: Put a +1/+1 counter on SN.
+ability=Sacrifice a creature: Put a +1/+1 counter on SN. Activate this ability with AI only if you control another creature.
 timing=main
 oracle=Sacrifice a creature: Put a +1/+1 counter on Scarland Thrinax.

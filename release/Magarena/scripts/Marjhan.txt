@@ -7,7 +7,7 @@ subtype=Leviathan
 cost={5}{U}{U}
 pt=8/8
 ability=SN doesn't untap during your untap step.;\
-        {U}{U}, Sacrifice a creature: Untap SN. Activate this ability only during your upkeep.;\
+        {U}{U}, Sacrifice a creature: Untap SN. Activate this ability only during your upkeep. Activate this ability with AI only if you control another creature.;\
         SN can't attack unless defending player controls an Island.;\
         {U}{U}: SN deals 1 damage to target attacking creature without flying.~SN gets -1/-0 until end of turn.;\
         When you control no Islands, sacrifice SN.

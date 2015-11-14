@@ -7,6 +7,6 @@ subtype=Bird,Skeleton
 cost={4}{B}
 pt=3/2
 ability=flying;\
-        {B}, Sacrifice a creature: Regenerate SN.
+        {B}, Sacrifice a creature: Regenerate SN. Activate this ability with AI only if you control another creature.
 timing=main
 oracle=Flying\n{B}, Sacrifice a creature: Regenerate Skeletal Kathari.

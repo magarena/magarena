@@ -6,6 +6,6 @@ type=Artifact,Creature
 subtype=Horror
 cost={4}
 pt=4/1
-ability=Sacrifice an artifact: Regenerate SN.
+ability=Sacrifice an artifact: Regenerate SN. Activate this ability with AI only if you control another artifact.
 timing=main
 oracle=Sacrifice an artifact: Regenerate Rusted Slasher.
