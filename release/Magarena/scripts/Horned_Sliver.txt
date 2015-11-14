@@ -1,7 +1,8 @@
 name=Horned Sliver
-image=http://magiccards.info/scans/en/tp/128.jpg
+image=http://magiccards.info/scans/en/tpr/176.jpg
+image_updated=2015-11-14
 value=3.979
-rarity=U
+rarity=C
 type=Creature
 subtype=Sliver
 cost={2}{G}

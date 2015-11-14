@@ -1,7 +1,8 @@
 name=Starke of Rath
-image=http://magiccards.info/scans/en/tp/205.jpg
+image=http://magiccards.info/scans/en/tpr/162.jpg
+image_updated=2015-11-14
 value=3.744
-rarity=R
+rarity=M
 type=Legendary,Creature
 subtype=Human,Rogue
 cost={1}{R}{R}

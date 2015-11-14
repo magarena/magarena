@@ -1,12 +1,13 @@
 name=Shackles
-image=http://magiccards.info/scans/en/in/37.jpg
+image=http://magiccards.info/scans/en/tpr/26.jpg
+image_updated=2015-11-14
 value=3.959
 rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{W}
 ability=Enchanted creature doesn't untap during its controller's untap step.;\
-        {W}:Return SN to its owner's hand.
+        {W}: Return SN to its owner's hand.
 timing=aura
 enchant=tap,neg creature
 oracle=Enchant creature\nEnchanted creature doesn't untap during its controller's untap step.\n{W}: Return Shackles to its owner's hand.

@@ -1,5 +1,6 @@
 name=Thalakos Lowlands
-image=http://magiccards.info/scans/en/br/88.jpg
+image=http://magiccards.info/scans/en/tpr/246.jpg
+image_updated=2015-11-14
 value=2.712
 rarity=U
 type=Land

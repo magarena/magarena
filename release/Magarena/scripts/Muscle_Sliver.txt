@@ -1,5 +1,6 @@
 name=Muscle Sliver
-image=http://magiccards.info/scans/en/tp/132.jpg
+image=http://magiccards.info/scans/en/tpr/182.jpg
+image_updated=2015-11-14
 value=4.421
 rarity=C
 type=Creature

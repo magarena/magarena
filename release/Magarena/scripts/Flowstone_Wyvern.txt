@@ -1,7 +1,8 @@
 name=Flowstone Wyvern
-image=http://magiccards.info/scans/en/tp/176.jpg
+image=http://magiccards.info/scans/en/tpr/134.jpg
+image_updated=2015-11-14
 value=2.529
-rarity=R
+rarity=U
 type=Creature
 subtype=Drake
 cost={3}{R}{R}

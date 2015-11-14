@@ -1,5 +1,6 @@
 name=Acidic Sliver
-image=http://magiccards.info/scans/en/sh/138.jpg
+image=http://magiccards.info/scans/en/tpr/206.jpg
+image_updated=2015-11-14
 value=3.976
 rarity=U
 type=Creature

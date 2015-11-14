@@ -1,5 +1,6 @@
 name=Cursed Flesh
-image=http://magiccards.info/scans/en/in/98.jpg
+image=http://magiccards.info/scans/en/tpr/91.jpg
+image_updated=2015-11-14
 value=2.971
 rarity=C
 type=Enchantment

@@ -1,5 +1,6 @@
 name=Cinder Marsh
-image=http://magiccards.info/scans/en/br/13.jpg
+image=http://magiccards.info/scans/en/tpr/236.jpg
+image_updated=2015-11-14
 value=2.732
 rarity=U
 type=Land

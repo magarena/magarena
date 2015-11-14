@@ -1,7 +1,8 @@
 name=Krakilin
-image=http://magiccards.info/scans/en/tp/129.jpg
+image=http://magiccards.info/scans/en/tpr/177.jpg
+image_updated=2015-11-14
 value=4.015
-rarity=U
+rarity=R
 type=Creature
 subtype=Beast
 cost={X}{G}{G}

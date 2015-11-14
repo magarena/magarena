@@ -1,5 +1,6 @@
 name=Spike Colony
-image=http://magiccards.info/scans/en/br/77.jpg
+image=http://magiccards.info/scans/en/tpr/195.jpg
+image_updated=2015-11-14
 value=2.984
 rarity=C
 type=Creature

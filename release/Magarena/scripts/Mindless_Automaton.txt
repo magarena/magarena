@@ -1,5 +1,6 @@
 name=Mindless Automaton
-image=http://magiccards.info/scans/en/tsts/111.jpg
+image=http://magiccards.info/scans/en/tpr/227.jpg
+image_updated=2015-11-14
 value=3.691
 rarity=R
 type=Artifact,Creature

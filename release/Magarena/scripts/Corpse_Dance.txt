@@ -1,10 +1,11 @@
 name=Corpse Dance
-image=http://magiccards.info/scans/en/tp/10.jpg
+image=http://magiccards.info/scans/en/tpr/89.jpg
+image_updated=2015-11-14
 value=4.087
 rarity=R
 type=Instant
 cost={2}{B}
-ability=buyback {2}
+ability=Buyback {2}
 requires_groovy_code
 timing=animate
 oracle=Buyback {2}\nReturn the top creature card of your graveyard to the battlefield. That creature gains haste until end of turn. Exile it at the beginning of the next end step.

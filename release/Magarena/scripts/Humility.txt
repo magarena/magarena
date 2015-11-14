@@ -1,7 +1,8 @@
 name=Humility
-image=http://magiccards.info/scans/en/tp/236.jpg
+image=http://magiccards.info/scans/en/tpr/16.jpg
+image_updated=2015-11-14
 value=4.478
-rarity=R
+rarity=M
 type=Enchantment
 cost={2}{W}{W}
 timing=enchantment

@@ -1,10 +1,11 @@
 name=Lab Rats
-image=http://magiccards.info/scans/en/sh/11.jpg
+image=http://magiccards.info/scans/en/tpr/108.jpg
+image_updated=2015-11-14
 value=3.130
 rarity=C
 type=Sorcery
 cost={B}
-ability=buyback {4}
+ability=Buyback {4}
 effect=Put a 1/1 black Rat creature token onto the battlefield.
 timing=token
 oracle=Buyback {4}\nPut a 1/1 black Rat creature token onto the battlefield.

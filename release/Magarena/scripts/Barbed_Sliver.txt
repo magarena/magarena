@@ -1,7 +1,8 @@
 name=Barbed Sliver
-image=http://magiccards.info/scans/en/tp/163.jpg
+image=http://magiccards.info/scans/en/tpr/126.jpg
+image_updated=2015-11-14
 value=2.393
-rarity=U
+rarity=C
 type=Creature
 subtype=Sliver
 cost={2}{R}
