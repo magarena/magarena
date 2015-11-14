@@ -1,5 +1,6 @@
 #Magarena Saved Game
 #Fri Nov 13 10:30:55 GMT 2015
+# Test scenario: AI loses because it won't block (see #500).
 difficulty=8
 magarenaVersion=1.68
 p0.ai=
