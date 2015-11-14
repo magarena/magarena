@@ -7,11 +7,9 @@ import javax.swing.JFileChooser;
 import javax.swing.JPanel;
 import javax.swing.filechooser.FileFilter;
 import magic.data.GeneralConfig;
-import magic.data.MagicIcon;
 import magic.exception.InvalidDeckException;
 import magic.game.state.GameLoader;
 import magic.game.state.GameStateFileReader;
-import magic.ui.IconImages;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
 import magic.ui.dialog.GameStateRunner;
@@ -135,9 +133,19 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
 
         private void refreshLayout() {
             miglayout.setLayoutConstraints("insets 4 0 0 0");
-            final ActionBarButton btn = new ActionBarButton(
-                    IconImages.getIcon(MagicIcon.LOAD_ICON),
-                    "Load and run game state", "Select a previously saved game or test class and run.",
+            final ActionBarButton btn = new ActionBarButton(                    
+                    "Game file", "Select a saved public or private game file.",
+                    new AbstractAction() {
+                        @Override
+                        public void actionPerformed(final ActionEvent e) {
+                            loadSavedGame();
+                        }
+                    }
+            );
+            btn.setFont(btn.getFont().deriveFont(14f));
+            add(btn);
+            final ActionBarButton btn2 = new ActionBarButton(
+                    "Test class", "Select and run a magic.test class.",
                     new AbstractAction() {
                         @Override
                         public void actionPerformed(final ActionEvent e) {
@@ -145,7 +153,8 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
                         }
                     }
             );
-            add(btn);
+            btn2.setFont(btn.getFont().deriveFont(14f));
+            add(btn2);
         }
 
     }
@@ -163,14 +172,14 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
     }
 
     private void loadSavedGame() {
-        final String filename = getSaveGameFilename();
-        if (!filename.isEmpty()) {
-            ScreenController.showDuelGameScreen(GameLoader.loadSavedGame(filename));
+        final File file = getSaveGameFile();
+        if (file != null) {
+            ScreenController.showDuelGameScreen(GameLoader.loadSavedGame(file));
         }
     }
 
-    private static String getSaveGameFilename() {
-        final JFileChooser fileChooser = new JFileChooser(MagicFileSystem.getDataPath(MagicFileSystem.DataPath.SAVED_GAMES).toFile());
+    private static File getSaveGameFile() {
+        final JFileChooser fileChooser = new JFileChooser(MagicFileSystem.getDataPath().toFile());
         fileChooser.setDialogTitle("Load & resume saved game");
         fileChooser.setFileFilter(TEST_FILE_FILTER);
         fileChooser.setAcceptAllFileFilterUsed(false);
@@ -178,9 +187,9 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
 //        fileChooser.setAccessory(new DeckDescriptionPreview(fileChooser));
         final int action = fileChooser.showOpenDialog(ScreenController.getMainFrame());
         if (action == JFileChooser.APPROVE_OPTION) {
-            return fileChooser.getSelectedFile().getName();
+            return fileChooser.getSelectedFile();
         } else {
-            return "";
+            return null;
         }
     }
 

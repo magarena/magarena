@@ -1,7 +1,7 @@
 package magic.game.state;
 
+import java.io.File;
 import java.util.List;
-import magic.ai.MagicAI;
 import magic.ai.MagicAIImpl;
 import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
@@ -17,7 +17,7 @@ import magic.test.TestGameBuilder;
 public final class GameLoader {
     private GameLoader() {}
 
-    public static MagicGame loadSavedGame(final String gameFile) {
+    public static MagicGame loadSavedGame(final File gameFile) {
         final GameState gameState = GameStateFileReader.loadGameStateFromFile(gameFile);
         final MagicDuel duel = getDuelState(gameState);
         final MagicGame game = getGameState(gameState, duel);
