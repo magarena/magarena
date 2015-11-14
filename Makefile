@@ -203,7 +203,7 @@ life ?= 10
 ai1 ?= MMABFast
 ai2 ?= MMABFast
 debug ?= false
-devMode ?= false
+devMode ?= true
 selfMode ?= false
 flags ?= 
 
