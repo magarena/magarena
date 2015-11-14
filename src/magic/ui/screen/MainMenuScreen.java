@@ -12,6 +12,7 @@ import magic.game.state.GameLoader;
 import magic.game.state.GameStateFileReader;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
+import magic.ui.dialog.DeckDescriptionPreview;
 import magic.ui.dialog.GameStateRunner;
 import magic.ui.screen.interfaces.IWikiPage;
 import magic.ui.screen.widget.ActionBarButton;
@@ -184,7 +185,7 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
         fileChooser.setFileFilter(TEST_FILE_FILTER);
         fileChooser.setAcceptAllFileFilterUsed(false);
         // Add the description preview pane
-//        fileChooser.setAccessory(new DeckDescriptionPreview(fileChooser));
+        fileChooser.setAccessory(new DeckDescriptionPreview(fileChooser));
         final int action = fileChooser.showOpenDialog(ScreenController.getMainFrame());
         if (action == JFileChooser.APPROVE_OPTION) {
             return fileChooser.getSelectedFile();
