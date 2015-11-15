@@ -1,5 +1,6 @@
 name=Faith's Fetters
-image=http://magiccards.info/scans/en/dvd/20.jpg
+image=http://magiccards.info/scans/en/c15/69.jpg
+image_updated=2015-11-15
 value=2.500
 rarity=C
 type=Enchantment

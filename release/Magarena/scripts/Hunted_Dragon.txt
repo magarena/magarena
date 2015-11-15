@@ -1,12 +1,13 @@
 name=Hunted Dragon
-image=http://magiccards.info/scans/en/rav/131.jpg
+image=http://magiccards.info/scans/en/c15/159.jpg
+image_updated=2015-11-15
 value=3.912
 rarity=R
 type=Creature
 subtype=Dragon
 cost={3}{R}{R}
 pt=6/6
-ability=flying;haste
+ability=Flying, haste
 timing=main
 requires_groovy_code
 oracle=Flying, haste\nWhen Hunted Dragon enters the battlefield, target opponent puts three 2/2 white Knight creature tokens with first strike onto the battlefield.

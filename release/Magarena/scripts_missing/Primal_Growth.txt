@@ -1,5 +1,6 @@
 name=Primal Growth
-image=http://magiccards.info/scans/en/ps/87.jpg
+image=http://magiccards.info/scans/en/c15/198.jpg
+image_updated=2015-11-15
 value=3.819
 rarity=C
 type=Sorcery

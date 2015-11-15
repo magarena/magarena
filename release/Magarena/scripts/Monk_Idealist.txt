@@ -1,5 +1,6 @@
 name=Monk Idealist
-image=http://magiccards.info/scans/en/us/20.jpg
+image=http://magiccards.info/scans/en/c15/76.jpg
+image_updated=2015-11-15
 value=3.829
 rarity=U
 type=Creature
