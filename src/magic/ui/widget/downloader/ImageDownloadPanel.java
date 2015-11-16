@@ -9,10 +9,10 @@ import java.net.Proxy;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutionException;
+import java.util.stream.Stream;
 import javax.swing.AbstractAction;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -63,7 +63,7 @@ public abstract class ImageDownloadPanel extends JPanel {
     private final IImageDownloadListener listener;
 
     protected abstract String getProgressCaption();
-    protected abstract Collection<MagicCardDefinition> getCards();
+    protected abstract Stream<MagicCardDefinition> getCards();
     protected abstract String getLogFilename();
     protected abstract String getDownloadButtonCaption();
     protected abstract String doFileDownloadAndGetName(final DownloadableFile file, final Proxy proxy) throws IOException;

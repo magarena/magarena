@@ -32,6 +32,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 import java.util.Date;
+import magic.utility.MagicFileSystem;
 
 public class MagicCardDefinition implements MagicAbilityStore {
 
@@ -295,6 +296,10 @@ public class MagicCardDefinition implements MagicAbilityStore {
 
     public String getImageURL() {
         return imageURL;
+    }
+
+    public boolean hasImageUrl() {
+        return imageURL != null;
     }
 
     public String getCardTextName() {
@@ -1058,4 +1063,8 @@ public class MagicCardDefinition implements MagicAbilityStore {
             return TOUGHNESS_COMPARATOR_DESC.compare(cardDefinition2, cardDefinition1);
         }
     };
+
+    public boolean isImageFileMissing() {
+        return MagicFileSystem.getCardImageFile(this).exists() == false;
+    }
 }

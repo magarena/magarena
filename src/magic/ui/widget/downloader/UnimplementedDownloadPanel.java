@@ -1,7 +1,7 @@
 package magic.ui.widget.downloader;
 
-import java.util.Collection;
 import java.util.Date;
+import java.util.stream.Stream;
 import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
@@ -25,7 +25,7 @@ public class UnimplementedDownloadPanel extends MissingImagesDownloadPanel {
     }
 
     @Override
-    protected Collection<MagicCardDefinition> getCards() {
+    protected Stream<MagicCardDefinition> getCards() {
         return MissingImagesDownloadPanel.getCards(
             CardDefinitions.getMissingCards(),
             GeneralConfig.getInstance().getMissingImagesDownloadDate()
