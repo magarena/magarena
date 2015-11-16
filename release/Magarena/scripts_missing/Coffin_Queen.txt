@@ -1,5 +1,6 @@
 name=Coffin Queen
-image=http://magiccards.info/scans/en/tp/8.jpg
+image=http://magiccards.info/scans/en/tpr/87.jpg
+image_updated=2015-11-16
 value=2.500
 rarity=R
 type=Creature
