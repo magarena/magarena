@@ -65,6 +65,7 @@ public class GeneralConfig {
     private static final String UI_SOUND = "uiSound";
     private static final String PAUSE_GAME_POPUP = "pauseGamePopup";
     private static final String PLAYABLE_DOWNLOAD_DATE = "imageDownloaderRunDate";
+    private static final String MISSING_DOWNLOAD_DATE = "missingImagesDownloadDate";
     private static final String DUEL_SIDEBAR_LAYOUT ="duelSidebarLayout";
     private static final String HIDE_AI_ACTION_PROMPT ="hideAiActionPrompt";
     private static final String ROLLOVER_COLOR ="rolloverColor";
@@ -151,6 +152,7 @@ public class GeneralConfig {
     private String ignoredVersionAlert = "";
     private boolean isUiSound = true;
     private boolean isGamePausedOnPopup = DEFAULT_PAUSE_GAME_POPUP;
+    private String missingImagesDownloadDate = DEFAULT_DOWNLOAD_DATE;
     private String playableImagesDownloadDate = DEFAULT_DOWNLOAD_DATE;
     private String duelSidebarLayout = DEFAULT_DUEL_SIDEBAR_LAYOUT;
     private boolean hideAiActionPrompt = DEFAULT_HIDE_AI_ACTION_PROMPT;
@@ -541,6 +543,24 @@ public class GeneralConfig {
         playableImagesDownloadDate = df.format(runDate);
     }
 
+    /**
+     * Gets the last date missing images were downloaded.
+     * <p>
+     * If missing then date is set to "1970-01-01".
+     */
+    public Date getMissingImagesDownloadDate() {
+        try {
+            final SimpleDateFormat df = new SimpleDateFormat(CardProperty.IMAGE_UPDATED_FORMAT);
+            return df.parse(missingImagesDownloadDate);
+        } catch (ParseException ex) {
+            throw new RuntimeException(ex);
+        }
+    }
+    public void setMissingImagesDownloadDate(final Date runDate) {
+        final SimpleDateFormat df = new SimpleDateFormat(CardProperty.IMAGE_UPDATED_FORMAT);
+        missingImagesDownloadDate = df.format(runDate);
+    }
+
     public boolean getHideAiActionPrompt() {
         return hideAiActionPrompt;
     }
@@ -616,6 +636,7 @@ public class GeneralConfig {
         ignoredVersionAlert = properties.getProperty(IGNORED_VERSION_ALERT, "");
         isUiSound = Boolean.parseBoolean(properties.getProperty(UI_SOUND, "" + true));
         isGamePausedOnPopup = Boolean.parseBoolean(properties.getProperty(PAUSE_GAME_POPUP, "" + DEFAULT_PAUSE_GAME_POPUP));
+        missingImagesDownloadDate = properties.getProperty(MISSING_DOWNLOAD_DATE, DEFAULT_DOWNLOAD_DATE);
         playableImagesDownloadDate = properties.getProperty(PLAYABLE_DOWNLOAD_DATE, DEFAULT_DOWNLOAD_DATE);
         duelSidebarLayout = properties.getProperty(DUEL_SIDEBAR_LAYOUT, DEFAULT_DUEL_SIDEBAR_LAYOUT);
         hideAiActionPrompt = Boolean.parseBoolean(properties.getProperty(HIDE_AI_ACTION_PROMPT, "" + DEFAULT_HIDE_AI_ACTION_PROMPT));
@@ -667,6 +688,7 @@ public class GeneralConfig {
         properties.setProperty(IGNORED_VERSION_ALERT, ignoredVersionAlert);
         properties.setProperty(UI_SOUND, String.valueOf(isUiSound));
         properties.setProperty(PAUSE_GAME_POPUP, String.valueOf(isGamePausedOnPopup));
+        properties.setProperty(MISSING_DOWNLOAD_DATE, missingImagesDownloadDate);
         properties.setProperty(PLAYABLE_DOWNLOAD_DATE, playableImagesDownloadDate);
         properties.setProperty(DUEL_SIDEBAR_LAYOUT, duelSidebarLayout);
         properties.setProperty(HIDE_AI_ACTION_PROMPT, String.valueOf(hideAiActionPrompt));

@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.Proxy;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -39,8 +40,7 @@ public abstract class ImageDownloadPanel extends JPanel {
 
     // translatable strings
     private static final String _S1 = "Cancel";
-    private static final String _S2 = "!!! ERROR - See console for details !!!";
-
+    
     public enum DownloaderState {
         STOPPED,
         SCANNING,
@@ -54,7 +54,6 @@ public abstract class ImageDownloadPanel extends JPanel {
     protected final JButton downloadButton = new JButton();
     private final JButton cancelButton = new JButton(UiString.get(_S1));
     protected final JProgressBar progressBar = new JProgressBar();
-    protected volatile boolean isException = false;
 
     private ImagesDownloadList files;
     private boolean isCancelled = false;
@@ -69,7 +68,7 @@ public abstract class ImageDownloadPanel extends JPanel {
     protected abstract String getDownloadButtonCaption();
     protected abstract String doFileDownloadAndGetName(final DownloadableFile file, final Proxy proxy) throws IOException;
     protected abstract int getCustomCount(final int countInteger);
-    protected abstract void doCustomActionAfterDownload(final int errorCount);
+    protected abstract void doCustomActionAfterDownload();
 
     public ImageDownloadPanel(final IImageDownloadListener listener) {
         this.listener = listener;
@@ -83,18 +82,6 @@ public abstract class ImageDownloadPanel extends JPanel {
         return downloaderState;
     }
     
-    protected void saveDownloadLog(final List<String> downloadLog) {
-        final Path logPath = MagicFileSystem.getDataPath(DataPath.LOGS).resolve(getLogFilename());
-        System.out.println("saving log : " + logPath);
-        try (final PrintWriter writer = new PrintWriter(logPath.toFile())) {
-            for (String cardName : downloadLog) {
-                writer.println(cardName);
-            }
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
     private void setActions() {
         downloadButton.addActionListener(new AbstractAction() {
             @Override
@@ -210,7 +197,7 @@ public abstract class ImageDownloadPanel extends JPanel {
             } catch (InterruptedException | ExecutionException ex) {
                 throw new RuntimeException(ex);
             } catch (CancellationException ex) {
-//                System.out.println("ImagesScanner cancelled by user!");
+                System.out.println("ImagesScanner cancelled by user!");
             }
             if (!isCancelled) {
                 downloadButton.setEnabled(files.size() > 0);
@@ -226,37 +213,61 @@ public abstract class ImageDownloadPanel extends JPanel {
 
     private class ImageDownloadWorker extends SwingWorker<Void, Integer> {
 
-        private final List<String> downloadedImages = new ArrayList<>();
         private final Proxy proxy;
         private final ImagesDownloadList downloadList;
-        private volatile int errorCount = 0;
-
+        
         public ImageDownloadWorker(final ImagesDownloadList downloadList, final Proxy proxy) {
             this.downloadList = downloadList;
             this.proxy = proxy;
         }
 
         @Override
-        protected Void doInBackground() throws Exception {
+        protected Void doInBackground() {
+
+            final List<String> downloadedImages = new ArrayList<>();
+            boolean updateDownloadDate = true;
             int fileCount = 0;
-            errorCount = 0;
-            for (DownloadableFile file : downloadList) {
+            
+            for (DownloadableFile dFile : downloadList) {
+
+                // If image file exists then download was triggered by 'image_updated'.
+                // If unable to delete image file so that it becomes "missing" do not
+                // update 'imageDownloaderRunDate' so that image update remains pending.
+                try {                    
+                    Files.deleteIfExists(dFile.getLocalFile().toPath());
+                } catch (IOException ex) {
+                    updateDownloadDate = false;
+                    listener.setMessage(String.format("%s [%s]", ex.toString(), dFile.getFilename()));
+                    continue;
+                }
+
+                // Image file is missing.
                 try {
-                    final String name = doFileDownloadAndGetName(file, proxy);
+                    final String name = doFileDownloadAndGetName(dFile, proxy);
                     if (!name.isEmpty()) {
                         downloadedImages.add(name);
                     }
                 } catch (IOException ex) {
-                    final String msg = String.format("%s [%s]", ex.toString(), file.getFilename());
-                    listener.setMessage(msg);
+                    listener.setMessage(String.format("%s [%s]", ex.toString(), dFile.getFilename()));
                 }
+
                 fileCount++;
+
                 if (isCancelled()) {
                     break;
                 } else {
                     publish(new Integer(fileCount));
                 }
             }
+
+            if (updateDownloadDate) {
+                doCustomActionAfterDownload();
+            }
+
+            if (MagicSystem.isDevMode() && downloadedImages.size() > 0) {
+                saveDownloadLog(downloadedImages);
+            }
+
             return null;
         }
 
@@ -265,32 +276,15 @@ public abstract class ImageDownloadPanel extends JPanel {
             try {
                 get();
             } catch (ExecutionException | InterruptedException ex) {
-                isException = true;
-                if (ex.getCause() instanceof IOException) {
-                    listener.setMessage(ex.getCause().getMessage());
-                } else {
-                    throw new RuntimeException(ex);
-                }
+                throw new RuntimeException(ex);
             } catch (CancellationException ex) {
                 System.err.println("ImageDownloadWorker cancelled.");
             }
             setButtonState(false);
             resetProgressBar();
-            doCustomActionAfterDownload(errorCount);
-            if (isException) {
-                captionLabel.setText(UiString.get(_S2));
-                captionLabel.setHorizontalAlignment(SwingConstants.CENTER);
-                captionLabel.setIcon(null);
-                downloadButton.setEnabled(false);
-            } else {
-                magic.ui.CachedImagesProvider.getInstance().clearCache();
-                if (MagicSystem.isDevMode() && downloadedImages.size() > 0) {
-                    saveDownloadLog(downloadedImages);
-                }
-                buildDownloadImagesList();
-            }
-            
-            notifyStatusChanged(DownloaderState.STOPPED);
+                        
+            magic.ui.CachedImagesProvider.getInstance().clearCache();
+            buildDownloadImagesList();
         }
 
         @Override
@@ -309,6 +303,18 @@ public abstract class ImageDownloadPanel extends JPanel {
             assert SwingUtilities.isEventDispatchThread();
             progressBar.setValue(0);
             progressBar.setString(null);
+        }
+
+        private void saveDownloadLog(final List<String> downloadLog) {
+            final Path logPath = MagicFileSystem.getDataPath(DataPath.LOGS).resolve(getLogFilename());
+            System.out.println("saving log : " + logPath);
+            try (final PrintWriter writer = new PrintWriter(logPath.toFile())) {
+                for (String cardName : downloadLog) {
+                    writer.println(cardName);
+                }
+            } catch (FileNotFoundException e) {
+                throw new RuntimeException(e);
+            }
         }
 
     }

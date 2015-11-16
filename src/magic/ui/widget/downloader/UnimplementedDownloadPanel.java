@@ -1,14 +1,12 @@
 package magic.ui.widget.downloader;
 
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
-import javax.swing.SwingUtilities;
+import java.util.Date;
 import magic.data.CardDefinitions;
+import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.translate.UiString;
 import magic.ui.dialog.IImageDownloadListener;
-import magic.utility.MagicFileSystem;
 
 @SuppressWarnings("serial")
 public class UnimplementedDownloadPanel extends MissingImagesDownloadPanel {
@@ -28,16 +26,10 @@ public class UnimplementedDownloadPanel extends MissingImagesDownloadPanel {
 
     @Override
     protected Collection<MagicCardDefinition> getCards() {
-        assert !SwingUtilities.isEventDispatchThread();
-        final List<MagicCardDefinition> cards = new ArrayList<>();
-        for (final MagicCardDefinition card : CardDefinitions.getMissingCards()) {
-            if (card.getImageURL() != null) {
-                if (!MagicFileSystem.getCardImageFile(card).exists()) {
-                    cards.add(card);
-                }
-            }
-        }
-        return cards;
+        return MissingImagesDownloadPanel.getCards(
+            CardDefinitions.getMissingCards(),
+            GeneralConfig.getInstance().getMissingImagesDownloadDate()
+        );
     }
 
     @Override
@@ -51,8 +43,9 @@ public class UnimplementedDownloadPanel extends MissingImagesDownloadPanel {
     }
 
     @Override
-    protected void doCustomActionAfterDownload(int errorCount) {
-        // nothing to do.
+    protected void doCustomActionAfterDownload() {
+        GeneralConfig.getInstance().setMissingImagesDownloadDate(new Date());
+        GeneralConfig.getInstance().save();
     }
 
 }

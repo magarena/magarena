@@ -2,7 +2,6 @@ package magic.ui.widget.downloader;
 
 import java.util.Collection;
 import java.util.Date;
-import javax.swing.SwingUtilities;
 import magic.data.CardDefinitions;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
@@ -27,7 +26,6 @@ public class PlayableDownloadPanel extends MissingImagesDownloadPanel {
 
     @Override
     protected Collection<MagicCardDefinition> getCards() {
-        assert !SwingUtilities.isEventDispatchThread();
         return MissingImagesDownloadPanel.getCards(
             CardDefinitions.getAllPlayableCardDefs(),
             GeneralConfig.getInstance().getPlayableImagesDownloadDate()
@@ -45,11 +43,9 @@ public class PlayableDownloadPanel extends MissingImagesDownloadPanel {
     }
 
     @Override
-    protected void doCustomActionAfterDownload(int errorCount) {
-        if (errorCount == 0) {
-            GeneralConfig.getInstance().setPlayableImagesDownloadDate(new Date());
-            GeneralConfig.getInstance().save();
-        }
+    protected void doCustomActionAfterDownload() {
+        GeneralConfig.getInstance().setPlayableImagesDownloadDate(new Date());
+        GeneralConfig.getInstance().save();
     }
     
 }
