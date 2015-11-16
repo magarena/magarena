@@ -15,7 +15,7 @@ public abstract class DownloadableFile {
 
     public abstract String getFilename();
 
-    public abstract File getFile();
+    public abstract File getLocalFile();
 
     public abstract URL getDownloadUrl();
 

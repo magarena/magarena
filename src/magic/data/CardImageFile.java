@@ -28,7 +28,7 @@ public class CardImageFile extends DownloadableFile {
     }
 
     @Override
-    public File getFile() {
+    public File getLocalFile() {
         return file;
     }
 

@@ -34,7 +34,7 @@ public class DownloadableJsonFile extends DownloadableFile {
     }
 
     @Override
-    public File getFile() {
+    public File getLocalFile() {
         return file;
     }
 
