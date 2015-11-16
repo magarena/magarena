@@ -64,7 +64,7 @@ public class GeneralConfig {
     private static final String IGNORED_VERSION_ALERT = "ignoredVersionAlert";
     private static final String UI_SOUND = "uiSound";
     private static final String PAUSE_GAME_POPUP = "pauseGamePopup";
-    private static final String DOWNLOADER_RUN_DATE = "imageDownloaderRunDate";
+    private static final String PLAYABLE_DOWNLOAD_DATE = "imageDownloaderRunDate";
     private static final String DUEL_SIDEBAR_LAYOUT ="duelSidebarLayout";
     private static final String HIDE_AI_ACTION_PROMPT ="hideAiActionPrompt";
     private static final String ROLLOVER_COLOR ="rolloverColor";
@@ -103,7 +103,7 @@ public class GeneralConfig {
     private static final double DEFAULT_CARD_POPUP_SCALE = 1.0d;
     private static final int DEFAULT_OVERLAY_PERMANENT_MIN_HEIGHT = 30; // pixels
     private static final boolean DEFAULT_PAUSE_GAME_POPUP = false;
-    private static final String DEFAULT_DOWNLOADER_RUN_DATE = "1970-01-01";
+    private static final String DEFAULT_DOWNLOAD_DATE = "1970-01-01";
     private static final String DEFAULT_DUEL_SIDEBAR_LAYOUT = "LOGSTACK,PLAYER2,TURNINFO,PLAYER1";
     private static final boolean DEFAULT_HIDE_AI_ACTION_PROMPT = false;
     private static final int DEFAULT_ROLLOVER_COLOR = Color.YELLOW.getRGB();
@@ -151,7 +151,7 @@ public class GeneralConfig {
     private String ignoredVersionAlert = "";
     private boolean isUiSound = true;
     private boolean isGamePausedOnPopup = DEFAULT_PAUSE_GAME_POPUP;
-    private String imageDownloaderRunDate = DEFAULT_DOWNLOADER_RUN_DATE;
+    private String playableImagesDownloadDate = DEFAULT_DOWNLOAD_DATE;
     private String duelSidebarLayout = DEFAULT_DUEL_SIDEBAR_LAYOUT;
     private boolean hideAiActionPrompt = DEFAULT_HIDE_AI_ACTION_PROMPT;
     private Color rolloverColor = new Color(DEFAULT_ROLLOVER_COLOR);
@@ -523,17 +523,22 @@ public class GeneralConfig {
         duelSidebarLayout = layout;
     }
 
-    public Date getImageDownloaderRunDate() {
+    /**
+     * Gets the last date playable images were downloaded.
+     * <p>
+     * If missing then date is set to "1970-01-01".
+     */
+    public Date getPlayableImagesDownloadDate() {
         try {
             final SimpleDateFormat df = new SimpleDateFormat(CardProperty.IMAGE_UPDATED_FORMAT);
-            return df.parse(imageDownloaderRunDate);
+            return df.parse(playableImagesDownloadDate);
         } catch (ParseException ex) {
             throw new RuntimeException(ex);
         }
     }
-    public void setImageDownloaderRunDate(final Date runDate) {
+    public void setPlayableImagesDownloadDate(final Date runDate) {
         final SimpleDateFormat df = new SimpleDateFormat(CardProperty.IMAGE_UPDATED_FORMAT);
-        imageDownloaderRunDate = df.format(runDate);
+        playableImagesDownloadDate = df.format(runDate);
     }
 
     public boolean getHideAiActionPrompt() {
@@ -611,7 +616,7 @@ public class GeneralConfig {
         ignoredVersionAlert = properties.getProperty(IGNORED_VERSION_ALERT, "");
         isUiSound = Boolean.parseBoolean(properties.getProperty(UI_SOUND, "" + true));
         isGamePausedOnPopup = Boolean.parseBoolean(properties.getProperty(PAUSE_GAME_POPUP, "" + DEFAULT_PAUSE_GAME_POPUP));
-        imageDownloaderRunDate = properties.getProperty(DOWNLOADER_RUN_DATE, DEFAULT_DOWNLOADER_RUN_DATE);
+        playableImagesDownloadDate = properties.getProperty(PLAYABLE_DOWNLOAD_DATE, DEFAULT_DOWNLOAD_DATE);
         duelSidebarLayout = properties.getProperty(DUEL_SIDEBAR_LAYOUT, DEFAULT_DUEL_SIDEBAR_LAYOUT);
         hideAiActionPrompt = Boolean.parseBoolean(properties.getProperty(HIDE_AI_ACTION_PROMPT, "" + DEFAULT_HIDE_AI_ACTION_PROMPT));
         rolloverColor = new Color(Integer.parseInt(properties.getProperty(ROLLOVER_COLOR, "" + DEFAULT_ROLLOVER_COLOR)));
@@ -662,7 +667,7 @@ public class GeneralConfig {
         properties.setProperty(IGNORED_VERSION_ALERT, ignoredVersionAlert);
         properties.setProperty(UI_SOUND, String.valueOf(isUiSound));
         properties.setProperty(PAUSE_GAME_POPUP, String.valueOf(isGamePausedOnPopup));
-        properties.setProperty(DOWNLOADER_RUN_DATE, imageDownloaderRunDate);
+        properties.setProperty(PLAYABLE_DOWNLOAD_DATE, playableImagesDownloadDate);
         properties.setProperty(DUEL_SIDEBAR_LAYOUT, duelSidebarLayout);
         properties.setProperty(HIDE_AI_ACTION_PROMPT, String.valueOf(hideAiActionPrompt));
         properties.setProperty(ROLLOVER_COLOR, String.valueOf(rolloverColor.getRGB()));

@@ -415,7 +415,7 @@ public class CardDefinitions {
     }
 
     public static boolean isMissingImages() {
-        final Date lastDownloaderRunDate = GeneralConfig.getInstance().getImageDownloaderRunDate();
+        final Date lastDownloaderRunDate = GeneralConfig.getInstance().getPlayableImagesDownloadDate();
         for (final MagicCardDefinition card : getAllPlayableCardDefs()) {
             if (card.getImageURL() != null) {
                 if (!MagicFileSystem.getCardImageFile(card).exists() || 

@@ -31,7 +31,7 @@ public class PlayableDownloadPanel extends MissingImagesDownloadPanel {
     @Override
     protected Collection<MagicCardDefinition> getCards() {
         assert !SwingUtilities.isEventDispatchThread();
-        final Date lastDownloaderRunDate = GeneralConfig.getInstance().getImageDownloaderRunDate();
+        final Date lastDownloaderRunDate = GeneralConfig.getInstance().getPlayableImagesDownloadDate();
         final List<MagicCardDefinition> cards = new ArrayList<>();
         for (final MagicCardDefinition card : CardDefinitions.getAllPlayableCardDefs()) {
             if (card.getImageURL() != null) {
@@ -57,7 +57,7 @@ public class PlayableDownloadPanel extends MissingImagesDownloadPanel {
     @Override
     protected void doCustomActionAfterDownload(int errorCount) {
         if (errorCount == 0) {
-            GeneralConfig.getInstance().setImageDownloaderRunDate(new Date());
+            GeneralConfig.getInstance().setPlayableImagesDownloadDate(new Date());
             GeneralConfig.getInstance().save();
         }
     }
