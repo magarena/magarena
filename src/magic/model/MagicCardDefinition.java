@@ -212,6 +212,10 @@ public class MagicCardDefinition implements MagicAbilityStore {
         imageUpdated = d;
     }
 
+    /**
+     * Returns true if script file has a non-null {@code image_updated} property
+     * whose value is a date that comes after the given date.
+     */
     public boolean isImageUpdatedAfter(final Date d) {
         return imageUpdated != null && imageUpdated.after(d);
     }
