@@ -3603,10 +3603,10 @@ public enum MagicRuleEventAction {
 
     public static String personalize(final String text) {
         return text
-            .replaceAll("(S|s)earch your ", "PN searches PN's ")
+            .replaceAll("(S|s)earch your ", "PN searches his or her ")
             .replaceAll("discard ","discards ")
             .replaceAll("reveal ","reveals ")
-            .replaceAll("(S|s)huffle your ","PN shuffles PN's ")
+            .replaceAll("(S|s)huffle your ","PN shuffles his or her ")
             .replaceAll("(Y|y)ou draw","PN draws")
             .replaceAll("(D|d)raw ","PN draws ")
             .replaceAll("(S|s)acrifice ","PN sacrifices ")
