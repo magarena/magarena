@@ -3621,7 +3621,7 @@ public enum MagicRuleEventAction {
             .replaceAll("(P|p)ut ","PN puts ")
             .replaceAll("Choose one ","Choose one\\$ ")
             //replace final period with target indicator and period
-            .replaceAll("\\.$", "\\$.") 
+            .replaceAll("\\.$", "\\$.")
             ;
     }
 
@@ -3692,14 +3692,17 @@ public enum MagicRuleEventAction {
                         ),
                         picker,
                         ref,
-                        (game, event) -> {
-                            if (ifCond.accept(event.getSource()) == false) {
-                                return;
-                            }
-                            if (event.isYes()) {
-                                action.executeEvent(game, event);
-                            } else {
-                                noAction.executeEvent(game, event);
+                        new MagicEventAction() {
+                            @Override
+                            public void executeEvent(MagicGame game, MagicEvent event) {
+                                if (ifCond.accept(event.getSource()) == false) {
+                                    return;
+                                }
+                                if (event.isYes()) {
+                                    action.executeEvent(game, event);
+                                } else {
+                                    noAction.executeEvent(game, event);
+                                }
                             }
                         },
                         "PN may$ pay " + mayCost + "$. If you do, " + contextRule
@@ -3719,14 +3722,17 @@ public enum MagicRuleEventAction {
                         ),
                         picker,
                         ref,
-                        (game, event) -> {
-                            if (ifCond.accept(event.getSource()) == false) {
-                                return;
-                            }
-                            if (event.isYes()) {
-                                action.executeEvent(game, event);
-                            } else {
-                                noAction.executeEvent(game, event);
+                        new MagicEventAction() {
+                            @Override
+                            public void executeEvent(MagicGame game, MagicEvent event) {
+                                if (ifCond.accept(event.getSource()) == false) {
+                                    return;
+                                }
+                                if (event.isYes()) {
+                                    action.executeEvent(game, event);
+                                } else {
+                                    noAction.executeEvent(game, event);
+                                }
                             }
                         },
                         "PN may$ " + contextRule
@@ -3743,11 +3749,14 @@ public enum MagicRuleEventAction {
                         choice,
                         picker,
                         ref,
-                        (game, event) -> {
-                            if (ifCond.accept(event.getSource()) == false) {
-                                return;
+                        new MagicEventAction() {
+                            @Override
+                            public void executeEvent(MagicGame game, MagicEvent event) {
+                                if (ifCond.accept(event.getSource()) == false) {
+                                    return;
+                                }
+                                action.executeEvent(game, event);
                             }
-                            action.executeEvent(game, event);
                         },
                         capitalize(playerRule)
                     ) : MagicEvent.NONE;
