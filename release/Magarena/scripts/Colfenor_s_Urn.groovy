@@ -1,16 +1,14 @@
 [
-    new MagicWhenOtherPutIntoGraveyardTrigger() {
+    new MagicWhenOtherDiesTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MoveCardAction act) {
-            final MagicCard card = act.card;
-            return (act.fromLocation == MagicLocationType.Play &&
-                    card.isFriend(permanent) &&
-                    card.hasType(MagicType.Creature) &&
-                    card.getToughness() >= 4) ?
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent died) {
+            return (died.isOwner(permanent.getController()) &&
+                    died.hasType(MagicType.Creature) &&
+                    died.getToughness() >= 4) ?
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(),
-                    card,
+                    died.getCard(),
                     this,
                     "PN may\$ exile RN with SN."
                 ) :
