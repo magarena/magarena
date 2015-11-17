@@ -117,6 +117,10 @@ public class MagicMessage {
 
     }
 
+    public static String getCardToken(final String name, final MagicCard card) {
+        return String.format(CARD_TOKEN, name, card.getId());
+    }
+
     public static String getTokenizedCardNames(final Collection<MagicCard> cards) {
         return cards.stream()
             .map(card -> MagicMessage.getCardToken(card))

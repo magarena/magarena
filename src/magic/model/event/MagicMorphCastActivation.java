@@ -12,6 +12,7 @@ import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.MagicPayedCost;
+import magic.model.MagicMessage;
 import magic.model.condition.MagicCondition;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.action.MagicPlayMod;
@@ -115,7 +116,7 @@ public class MagicMorphCastActivation extends MagicHandCastActivation {
         return new MagicEvent(
             cardOnStack,
             this,
-            "Put a face-down creature onto the battlefield."
+            "Put " + MagicMessage.getCardToken("face-down creature", cardOnStack.getCard()) + " onto the battlefield."
         );
     }
     
