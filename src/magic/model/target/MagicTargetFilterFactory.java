@@ -1936,6 +1936,21 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicPermanentFilterImpl ELDRAZI_SCION = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+            return target.hasSubType(MagicSubType.Eldrazi) &&
+                   target.hasSubType(MagicSubType.Scion);
+        }
+    };
+
+    public static final MagicPermanentFilterImpl ELDRAZI_SCION_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+            return target.hasSubType(MagicSubType.Eldrazi) &&
+                target.hasSubType(MagicSubType.Scion) &&
+                target.isController(player);
+        }
+    };
+
     public static final MagicPermanentFilterImpl ARTIFACT_LAND = MagicTargetFilterFactory.permanentAnd(MagicType.Artifact, MagicType.Land, Control.Any);
 
     public static final MagicCardFilterImpl ARTIFACT_OR_CREATURE_OR_LAND_CARD_FROM_HAND = new MagicCardFilterImpl() {
@@ -2417,6 +2432,7 @@ public class MagicTargetFilterFactory {
         single.put("werewolf or wolf creature you control", WEREWOLF_OR_WOLF_CREATURE_YOU_CONTROL);
         single.put("Eldrazi Spawn creature you control", ELDRAZI_SPAWN_CREATURE_YOU_CONTROL);
         single.put("Eldrazi Spawn you control", ELDRAZI_SPAWN_YOU_CONTROL);
+        single.put("Eldrazi Scion you control", ELDRAZI_SCION_YOU_CONTROL);
         single.put("face-down creature you control", FACE_DOWN_CREATURE_YOU_CONTROL);
         single.put("creature you control with defender", CREATURE_WITH_DEFENDER_YOU_CONTROL);
         single.put("creature with defender you control", CREATURE_WITH_DEFENDER_YOU_CONTROL);
@@ -2543,6 +2559,7 @@ public class MagicTargetFilterFactory {
         single.put("equipped creature", EQUIPPED_CREATURE);
         single.put("nonlegendary creature", NON_LEGENDARY_CREATURE);
         single.put("colorless creature", COLORLESS_CREATURE);
+        single.put("Eldrazi Scion", ELDRAZI_SCION);
 
         // <color|type|subtype> you control
         single.put("basic land you control", BASIC_LAND_YOU_CONTROL);
@@ -2761,6 +2778,7 @@ public class MagicTargetFilterFactory {
             .replaceAll("\\bnightmares\\b", "nightmare")
             .replaceAll("\\bwalls\\b", "wall")
             .replaceAll("\\bshrines\\b", "shrine")
+            .replaceAll("\\bscions\\b", "scion")
             .replaceAll("\\band\\b", "or")
             .replaceAll("\\bthem\\b", "it")
             .replaceAll("\\bin your hand\\b", "from your hand")
