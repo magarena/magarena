@@ -3692,17 +3692,14 @@ public enum MagicRuleEventAction {
                         ),
                         picker,
                         ref,
-                        new MagicEventAction() {
-                            @Override
-                            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                                if (ifCond.accept(event.getSource()) == false) {
-                                    return;
-                                }
-                                if (event.isYes()) {
-                                    action.executeEvent(game, event);
-                                } else {
-                                    noAction.executeEvent(game, event);
-                                }
+                        (game, event) -> {
+                            if (ifCond.accept(event.getSource()) == false) {
+                                return;
+                            }
+                            if (event.isYes()) {
+                                action.executeEvent(game, event);
+                            } else {
+                                noAction.executeEvent(game, event);
                             }
                         },
                         "PN may$ pay " + mayCost + "$. If you do, " + contextRule
@@ -3722,17 +3719,14 @@ public enum MagicRuleEventAction {
                         ),
                         picker,
                         ref,
-                        new MagicEventAction() {
-                            @Override
-                            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                                if (ifCond.accept(event.getSource()) == false) {
-                                    return;
-                                }
-                                if (event.isYes()) {
-                                    action.executeEvent(game, event);
-                                } else {
-                                    noAction.executeEvent(game, event);
-                                }
+                        (game, event) -> {
+                            if (ifCond.accept(event.getSource()) == false) {
+                                return;
+                            }
+                            if (event.isYes()) {
+                                action.executeEvent(game, event);
+                            } else {
+                                noAction.executeEvent(game, event);
                             }
                         },
                         "PN may$ " + contextRule
@@ -3749,14 +3743,11 @@ public enum MagicRuleEventAction {
                         choice,
                         picker,
                         ref,
-                        new MagicEventAction() {
-                            @Override
-                            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                                if (ifCond.accept(event.getSource()) == false) {
-                                    return;
-                                }
-                                action.executeEvent(game, event);
+                        (game, event) -> {
+                            if (ifCond.accept(event.getSource()) == false) {
+                                return;
                             }
+                            action.executeEvent(game, event);
                         },
                         capitalize(playerRule)
                     ) : MagicEvent.NONE;
