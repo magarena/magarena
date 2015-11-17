@@ -1,0 +1,8 @@
+name=1/1 white Kor Ally creature token
+token=Kor Ally
+image=http://magiccards.info/extras/token/battle-for-zendikar/kor-ally.jpg
+value=1
+type=Creature
+subtype=Kor,Ally
+color=w
+pt=1/1
