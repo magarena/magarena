@@ -35,7 +35,7 @@ public class MillLibraryAction extends MagicAction {
         final int count = topN.size();
         if (count > 0) {
             setScore(player,ArtificialScoringSystem.getMillScore(count));
-            game.logMessage(
+            game.logAppendMessage(
                 player,
                 String.format(
                     "%s puts the top %d cards of his or her library into his or her graveyard. (%s)",
