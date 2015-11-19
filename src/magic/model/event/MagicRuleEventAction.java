@@ -3625,6 +3625,22 @@ public enum MagicRuleEventAction {
             ;
     }
 
+    public static String mayTense(String text) {
+        return text
+            .replaceAll("PN's hand ","his or her hand ")
+            .replaceAll("PN searches ","search ")
+            .replaceAll("PN shuffles ","shuffle ")
+            .replaceAll("(D|d)raws ","$1raw ")
+            .replaceAll("(S|s)acrifices ","$1acrifice ")
+            .replaceAll("(G|g)ains ","$1ain ")
+            .replaceAll("(L|l)oses ","$1lose ")
+            .replaceAll("PN puts ","put ")
+            .replaceAll("reveals ","reveal ")
+            .replaceAll("you don't","he or she doesn't")
+            .replaceFirst("^PN ","")
+            ;
+    }
+
     private static String renameThisThat(final String text) {
         final String thing = "(permanent|creature|artifact|land|player|opponent)";
         final String evenQuotes = "(?=([^\"]*'[^\"]*')*[^\"]*$)";
@@ -3665,7 +3681,7 @@ public enum MagicRuleEventAction {
         final boolean optional = ruleWithoutMay.length() < ruleWithoutIf.length();
         final String effect = ruleWithoutMay.replaceFirst("^have ", "");
 
-        final MagicRuleEventAction ruleAction = MagicRuleEventAction.build(effect);
+        final MagicRuleEventAction ruleAction = build(effect);
         final Matcher matcher = ruleAction.matched(effect);
 
         // action may be composed from rule and riders
@@ -3735,7 +3751,7 @@ public enum MagicRuleEventAction {
                                 }
                             }
                         },
-                        "PN may$ " + contextRule
+                        "PN may$ " + mayTense(contextRule)
                     ) : MagicEvent.NONE;
                 }
             };
