@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "Sacrifice a creature other than SN. If you can't, SN deals 5 damage to you. If it deals damage to you this way, tap SN."
+                "Sacrifice a creature other than SN. If PN can't, SN deals 5 damage to him or her. If it deals damage to PN this way, tap SN."
             );
         }
 

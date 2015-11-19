@@ -18,7 +18,7 @@
                 source,
                 this,
                 "PN puts a 1/1 white Soldier creature token onto the battlefield." + 
-                "Put 5 of those tokens onto the battlefield instead if you control " + 
+                "Put 5 of those tokens onto the battlefield instead if PN controls " + 
                 "artifacts named Crown of Empires and Scepter of Empires."
             );
         }

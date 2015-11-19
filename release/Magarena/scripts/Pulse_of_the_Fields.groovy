@@ -5,8 +5,8 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "PN gains 4 life. Then if your opponent " +
-                "has more life than you, return SN to its owner's hand."
+                "PN gains 4 life. Then if an opponent " +
+                "has more life than PN, return SN to its owner's hand."
             );
         }
         @Override

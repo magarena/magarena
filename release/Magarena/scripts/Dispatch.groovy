@@ -8,7 +8,7 @@
                 MagicTapTargetPicker.Tap,
                 this,
                 "Tap target creature\$. " +
-                "If you control three or more artifacts, exile it."
+                "If PN controls three or more artifacts, exile it."
             );
         }
         @Override

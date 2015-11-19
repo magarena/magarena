@@ -7,7 +7,7 @@ def choice = new MagicTargetChoice("a Human to sacrifice");
             return new MagicEvent(
                 permanent,
                 this,
-                "PN sacrifices a human. If you can't, tap SN and it deals 9 damage to you."
+                "Sacrifice a human. If PN can't, tap SN and it deals 9 damage to him or her."
             );
         }
 

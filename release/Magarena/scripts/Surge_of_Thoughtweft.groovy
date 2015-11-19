@@ -6,7 +6,7 @@
                 cardOnStack,
                 this,
                 "Creatures PN controls get +1/+1 until end of turn. " +
-                "If you control a Kithkin, draw a card."
+                "If PN controls a Kithkin, he or she draws a card."
             );
         }
         @Override

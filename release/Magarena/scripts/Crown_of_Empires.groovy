@@ -20,7 +20,7 @@
                 MagicTapTargetPicker.Tap,
                 this,
                 "Tap target creature\$. Gain control of that creature instead " + 
-                "if you control artifacts named Scepter of Empires and Throne of Empires."
+                "if PN controls artifacts named Scepter of Empires and Throne of Empires."
             );
         }
 

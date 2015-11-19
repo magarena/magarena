@@ -9,7 +9,7 @@ def choice = new MagicTargetChoice("an attacking creature to sacrifice");
                 NEG_TARGET_PLAYER,
                 this,
                 "Target player\$ sacrifices an attacking creature. " +
-                "If you control three or more artifacts, he or she sacrifices two creatures instead."
+                "If PN controls three or more artifacts, that player sacrifices two creatures instead."
             );
         }
         @Override

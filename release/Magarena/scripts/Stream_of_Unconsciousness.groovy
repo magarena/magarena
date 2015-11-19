@@ -8,7 +8,7 @@
                 new MagicWeakenTargetPicker(4,0),
                 this,
                 "Target creature\$ gets -4/-0 until end of turn. " +
-                "If you control a Wizard, draw a card."
+                "If PN controls a Wizard, he or she draws a card."
             );
         }
         @Override

@@ -7,7 +7,7 @@
                 TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
                 winner,
                 this,
-                "Tap target creature an opponent controls\$. If you won, that creature doesn't untap during its controller's next untap step."
+                "Tap target creature an opponent controls\$. If PN won, that creature doesn't untap during its controller's next untap step."
             );
         }
         

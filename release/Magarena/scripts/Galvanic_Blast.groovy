@@ -9,7 +9,7 @@
                 new MagicDamageTargetPicker(amount),
                 this,
                 "SN deals 2 damage to target creature or player\$. "+
-                "If you control three or more artifacts, it deals 4 damage to that creature or player instead."
+                "If PN controls three or more artifacts, it deals 4 damage to that creature or player instead."
             );
         }
         @Override

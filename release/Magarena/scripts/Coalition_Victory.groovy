@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "You win the game if you control a land of each basic land type and a creature of each color."
+                "PN wins the game if he or she controls a land of each basic land type and a creature of each color."
             );
         }
         @Override

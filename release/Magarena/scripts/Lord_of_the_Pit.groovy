@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "Sacrifice a creature other than SN. If you can't, SN deals 7 damage to you."
+                "Sacrifice a creature other than SN. If PN can't, SN deals 7 damage to him or her."
             );
         }
 

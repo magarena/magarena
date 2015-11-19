@@ -5,8 +5,8 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "PN gains 10 life. Then if you have more life than an opponent, " +
-                "put a 5/5 white Giant Warrior creature token onto the battlefield."
+                "PN gains 10 life. Then if PN has more life than an opponent, " +
+                "PN puts a 5/5 white Giant Warrior creature token onto the battlefield."
             );
         }
         @Override

@@ -14,8 +14,8 @@ def cantBePrevented = new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.CANT_BE_
                 cardOnStack,
                 NEG_TARGET_CREATURE_OR_PLAYER,
                 this,
-                "If you control a creature with power 4 or greater, damage can't be prevented this turn." +
-                " SN deals 2 damage to target creature or player\$."
+                "If PN controls a creature with power 4 or greater, damage can't be prevented this turn. " +
+                "SN deals 2 damage to target creature or player\$."
             );
         }
         @Override

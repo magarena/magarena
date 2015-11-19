@@ -8,7 +8,7 @@
                 new MagicDamageTargetPicker(4),
                 this,
                 "SN deals 4 damage to target player\$. " +
-                "If you control three or more artifacts, creatures that player controls can't block this turn."
+                "If PN controls three or more artifacts, creatures that player controls can't block this turn."
             );
         }
         @Override

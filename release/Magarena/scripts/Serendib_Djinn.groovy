@@ -15,7 +15,7 @@ def SAC_ACTION = {
             return new MagicEvent(
                 permanent,
                 this,
-                "Sacrifice a land. If you sacrifice an Island this way, SN deals 3 damage to you."
+                "Sacrifice a land. If PN sacrifices an Island this way, SN deals 3 damage to him or her."
             );
         }
 

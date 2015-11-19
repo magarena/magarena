@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "PN sacrifices a creature. If you can't, sacrifice SN."
+                "Sacrifice a creature. If PN can't, he or she sacrifice SN."
             );
         }
 

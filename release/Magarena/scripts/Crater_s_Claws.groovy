@@ -7,7 +7,7 @@
                 NEG_TARGET_CREATURE_OR_PLAYER,
                 this,
                 "SN deals X damage to target creature or player\$. " +
-                "SN deals X plus 2 damage to that creature or player instead if you control a creature with power 4 or greater."
+                "SN deals X plus 2 damage to that creature or player instead if PN controls a creature with power 4 or greater."
             );
         }
         @Override

@@ -21,7 +21,7 @@ def DEMON_CONDITION = MagicConditionFactory.YouControl(MagicTargetFilterFactory.
                 amount,
                 this,
                 "Target creature\$ gets -X/-X until end of turn, where X is the number of devotion counters "+
-                "on SN. Activate this ability only if you control a Demon."
+                "on SN."
             );
         }
 

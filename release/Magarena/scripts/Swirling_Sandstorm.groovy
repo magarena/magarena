@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "SN deals 5 damage to each creature without flying if you have 7 or more cards in your graveyard."
+                "SN deals 5 damage to each creature without flying if PN has 7 or more cards in his or her graveyard."
             );
         }
         @Override

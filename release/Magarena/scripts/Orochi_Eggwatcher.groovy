@@ -16,7 +16,7 @@
                 source,
                 this,
                 "PN puts a 1/1 green Snake creature token onto the battlefield. "+
-                "If you control ten or more creatures, flip SN."
+                "If PN controls ten or more creatures, flip SN."
             );
         }
         @Override

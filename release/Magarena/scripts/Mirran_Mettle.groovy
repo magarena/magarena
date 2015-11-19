@@ -8,7 +8,7 @@
                 MagicPumpTargetPicker.create(),
                 this,
                 "Target creature\$ gets +2/+2 until end of turn. " +
-                "If you control three or more artifacts, it gets +4/+4 instead."
+                "If PN controls three or more artifacts, it gets +4/+4 instead."
             );
         }
         @Override

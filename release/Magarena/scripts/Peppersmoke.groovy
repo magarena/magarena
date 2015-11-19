@@ -8,7 +8,7 @@
                 new MagicWeakenTargetPicker(1, 1),
                 this,
                 "Target creature\$ gets -1/-1 until end of turn. " +
-                "If you control a Faerie, draw a card."
+                "If PN controls a Faerie, he or she draws a card."
             );
         }
         @Override

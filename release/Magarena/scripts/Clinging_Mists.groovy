@@ -6,7 +6,7 @@
                 cardOnStack,
                 this,
                 "Prevent all combat damage that would be dealt this turn. " +
-                "If you have 5 or less life, tap all attacking creatures. Those creatures don't untap during their controller's next untap step."
+                "If PN has 5 or less life, tap all attacking creatures. Those creatures don't untap during their controller's next untap step."
             );
         }
 

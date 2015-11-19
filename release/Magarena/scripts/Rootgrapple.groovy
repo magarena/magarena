@@ -8,7 +8,7 @@
                 MagicDestroyTargetPicker.Destroy,
                 this,
                 "Destroy target noncreature permanent\$. " +
-                "If you control a Treefolk, draw a card."
+                "If PN controls a Treefolk, he or she draws a card."
             );
         }
         @Override

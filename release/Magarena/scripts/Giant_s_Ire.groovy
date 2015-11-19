@@ -8,7 +8,7 @@
                 new MagicDamageTargetPicker(4),
                 this,
                 "SN deals 4 damage to target player\$. " +
-                "If you control a Giant, draw a card."
+                "If PN controls a Giant, he or she draws a card."
             );
         }
         @Override

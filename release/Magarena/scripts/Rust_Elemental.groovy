@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "Sacrifice an artifact other than SN. If you can't, tap SN and lose 4 life."
+                "Sacrifice an artifact other than SN. If PN can't, tap SN and she or she loses 4 life."
             );
         }
 

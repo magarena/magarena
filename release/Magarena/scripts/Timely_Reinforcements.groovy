@@ -5,9 +5,9 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "If you have less life than an opponent, you gain 6 life. " +
-                "If you control fewer creatures than an opponent, " +
-                "put three 1/1 white Soldier creature tokens onto the battlefield."
+                "If PN has less life than an opponent, PN gains 6 life. " +
+                "If PN controls fewer creatures than an opponent, " +
+                "PN puts three 1/1 white Soldier creature tokens onto the battlefield."
             );
         }
         @Override
