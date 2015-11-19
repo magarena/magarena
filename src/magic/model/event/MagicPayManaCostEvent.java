@@ -1,6 +1,5 @@
 package magic.model.event;
 
-import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
@@ -10,15 +9,15 @@ import magic.model.condition.MagicCondition;
 public class MagicPayManaCostEvent extends MagicEvent {
 
     private final MagicCondition cond;
-    
+
     public MagicPayManaCostEvent(final MagicSource source, final String cost) {
         this(source, source.getController(), MagicManaCost.create(cost));
     }
-    
+
     public MagicPayManaCostEvent(final MagicSource source, final MagicManaCost cost) {
         this(source, source.getController(), cost);
     }
-    
+
     public MagicPayManaCostEvent(final MagicSource source, final MagicPlayer player, final String cost) {
         this(source, player, MagicManaCost.create(cost));
     }
