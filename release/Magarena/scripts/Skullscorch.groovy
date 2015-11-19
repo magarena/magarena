@@ -26,7 +26,7 @@ def action = {
                     it,
                     new MagicMayChoice("have SN deal 4 damage to you?"),
                     action,
-                    "PN may\$ have SN deal 4 damage to you. If you don't, discard two cards at random."
+                    "PN may\$ have SN deal 4 damage to him or her. If PN doesn't, he or she discards two cards at random."
                 ));
             });
         }

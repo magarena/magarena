@@ -8,8 +8,8 @@
                     new MagicSimpleMayChoice(),
                     cardOnStack,
                     this,
-                    "Reveal the top card of your library. " +
-                    "If you do, counter RN if it has the same converted mana cost as the revealed card."
+                    "PN may\$ reveal the top card of his or her library. " +
+                    "If PN does, counter RN if it has the same converted mana cost as the revealed card."
                 ):
                 MagicEvent.NONE;
         }

@@ -7,7 +7,7 @@
                 TARGET_CREATURE_YOU_DONT_CONTROL,
                 MagicTapTargetPicker.Tap,
                 this,
-                "Target creature\$ you don't control gets -2/-0 until end of turn and attacks this turn if able."
+                "Target creature\$ PN doesn't control gets -2/-0 until end of turn and attacks this turn if able."
             );
         }
         @Override
@@ -30,7 +30,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Each creature you don't control gets -2/-0 until end of turn and attacks this turn if able."
+                "Each creature PN doesn't control gets -2/-0 until end of turn and attacks this turn if able."
             );
         }
         @Override

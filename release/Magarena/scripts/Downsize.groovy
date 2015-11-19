@@ -11,7 +11,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Each creature you don't control gets -4/-0 until end of turn."
+                "Each creature PN doesn't control gets -4/-0 until end of turn."
             );
         }
         @Override

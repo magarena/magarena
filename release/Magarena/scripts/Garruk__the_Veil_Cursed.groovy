@@ -13,7 +13,7 @@ def AB1 = MagicRuleEventAction.create("Put a 1/1 black Wolf creature token with 
             return new MagicEvent(
                 source,
                 this,
-                "Sacrifice a creature. If you do, search your library for a creature card, reveal it, put it into your hand, then shuffle your library."
+                "Sacrifice a creature. If PN does, PN searches his or her library for a creature card, reveals it, puts it into his or her hand, then shuffles his or her library."
             );
         }
         @Override
@@ -35,7 +35,7 @@ def AB1 = MagicRuleEventAction.create("Put a 1/1 black Wolf creature token with 
             return new MagicEvent(
                 source,
                 this,
-                "Creatures you control gain trample and get +X/+X until end of turn, where X is the number of creature cards in your graveyard."
+                "Creatures PN controls gain trample and get +X/+X until end of turn, where X is the number of creature cards in his or her graveyard."
             );
         }
         @Override

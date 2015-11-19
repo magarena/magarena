@@ -22,7 +22,7 @@
                     upkeepPlayer,
                     new MagicMayChoice("Sacrifice a creature?"),
                     this,
-                    "PN may\$ sacrifice a creature. If you don't, SN deals 2 damage to you."
+                    "PN may\$ sacrifice a creature. If PN doesn't, SN deals 2 damage to him or her."
                 ):
                 MagicEvent.NONE
         }

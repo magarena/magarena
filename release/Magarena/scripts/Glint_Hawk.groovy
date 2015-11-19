@@ -9,8 +9,8 @@
                 ),
                 MagicBounceTargetPicker.create(),
                 this,
-                "You may\$ return an artifact you control to its owner's hand. " +
-                "If you don't, sacrifice SN."
+                "PN may\$ return an artifact he or she controls to its owner's hand. " +
+                "If PN doesn't, sacrifice SN."
             );
         }
         @Override

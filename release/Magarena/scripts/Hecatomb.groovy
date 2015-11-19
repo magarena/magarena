@@ -6,7 +6,7 @@
                 permanent,
                 new MagicMayChoice("Sacrifice four creatures?"),
                 this,
-                "PN may\$ sacrifice four creatures. If you don't, sacrifice SN."
+                "PN may\$ sacrifice four creatures. If PN doesn't, sacrifice SN."
             );
         }
         @Override

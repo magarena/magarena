@@ -47,7 +47,7 @@ def TARGET_SPIRIT_PERMANENT_FROM_GRAVEYARD = new MagicTargetChoice(
                 permanent,
                 new MagicMayChoice(TARGET_SPIRIT_PERMANENT_FROM_GRAVEYARD),
                 this,
-                "PN may\$ exile SN. If you do, return target Spirit permanent card\$ from your graveyard to the battlefield."
+                "PN may\$ exile SN. If PN does, return target Spirit permanent card\$ from his or her graveyard to the battlefield."
             );
         }
 

@@ -10,7 +10,7 @@
                 MagicSacrificeTargetPicker.create(),
                 this,
                 "PN may\$ sacrifice a Merfolk\$. " +
-                "If you do, take an extra turn after this one"
+                "If PN does, he or she takes an extra turn after this one"
             );
         }
 

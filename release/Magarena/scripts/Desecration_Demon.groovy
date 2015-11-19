@@ -7,7 +7,7 @@
                 permanent.getOpponent(),
                 new MagicMayChoice("Sacrifice a creature?"),
                 this,
-                "PN may\$ sacrifice a creature. If you do, tap SN and put a +1/+1 counter on it."
+                "PN may\$ sacrifice a creature. If PN does, tap SN and put a +1/+1 counter on it."
             );
         }
         @Override

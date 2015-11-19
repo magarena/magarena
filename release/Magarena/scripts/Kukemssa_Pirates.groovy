@@ -8,8 +8,8 @@
                     new MagicMayChoice(TARGET_ARTIFACT_YOUR_OPPONENT_CONTROLS),
                     MagicExileTargetPicker.create(),
                     this,
-                    "PN may\$ gain control of target artifact\$ controlled by opponent. " +
-                    "If you do, SN assigns no combat damage this turn."
+                    "PN may\$ gain control of target artifact\$ defending player controls. " +
+                    "If PN does, SN assigns no combat damage this turn."
                 ):
                 MagicEvent.NONE;
         }

@@ -9,7 +9,7 @@
                     new MagicDamageTargetPicker(3),
                     this,
                     "PN may\$ have SN deal 3 damage to target creature\$. " +
-                    "If you do, SN assigns no combat damage this turn."
+                    "If PN does, SN assigns no combat damage this turn."
                 ) :
                 MagicEvent.NONE;
         }

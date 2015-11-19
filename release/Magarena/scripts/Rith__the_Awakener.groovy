@@ -9,8 +9,8 @@
                     MagicColorChoice.MOST_INSTANCE
                 ),
                 this,
-                "You may\$ pay {2}{G}\$. If you do, choose a color\$. "+
-                "Put a 1/1 green Saproling creature token onto the battlefield for each permanent of that color."
+                "PN may\$ pay {2}{G}\$. If PN does, he or she chooses a color\$, "+
+                "then puts a 1/1 green Saproling creature token onto the battlefield for each permanent of that color."
             );
         }
         @Override

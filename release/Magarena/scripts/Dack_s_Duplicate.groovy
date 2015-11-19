@@ -7,7 +7,7 @@
                 new MagicMayChoice(A_CREATURE),
                 MagicCopyPermanentPicker.create(),
                 this,
-                "Put SN onto the battlefield. You may\$ have SN enter the battlefield as a copy of any creature\$ on the battlefield, except it gains haste and dethrone."
+                "PN may\$ have SN enter the battlefield as a copy of any creature on the battlefield\$, except it gains haste and dethrone."
             );
         }
 

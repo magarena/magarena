@@ -73,7 +73,7 @@
                                 act.card,
                                 new MagicMayChoice(),
                                 this,
-                                "PN may\$ return SN to your hand."
+                                "PN may\$ return SN to his or her hand."
                             ):
                             MagicEvent.NONE
                     }

@@ -10,7 +10,7 @@
                     new MagicMayChoice(),
                     otherPermanent.getCard(),
                     this,
-                    "You may\$ return RN to the battlefield under your control."
+                    "PN may\$ return RN to the battlefield under his or her control."
                 ):
                 MagicEvent.NONE;
         }

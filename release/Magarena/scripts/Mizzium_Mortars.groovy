@@ -11,7 +11,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "SN deals 4 damage to each creature\$ you don't control."
+                "SN deals 4 damage to each creature\$ PN doesn't control."
             );
         }
         @Override

@@ -11,7 +11,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Destroy each artifact you don't control."
+                "Destroy each artifact PN doesn't control."
             );
         }
         @Override

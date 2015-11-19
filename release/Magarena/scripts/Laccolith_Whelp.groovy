@@ -9,7 +9,7 @@
                 new MagicDamageTargetPicker(power),
                 this,
                 "PN may\$ have SN deal damage equal to its power ("+power+") to target creature\$. " +
-                "If you do, SN assigns no combat damage this turn."
+                "If PN does, SN assigns no combat damage this turn."
             );
         }
 

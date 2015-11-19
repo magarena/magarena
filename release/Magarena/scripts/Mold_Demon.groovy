@@ -8,7 +8,7 @@ def choice = new MagicTargetChoice("a Swamp to sacrifice");
                 permanent,
                 new MagicMayChoice("Sacrifice two Swamps?"),
                 this,
-                "PN may\$ sacrifice two Swamps. If you don't, sacrifice SN."
+                "PN may\$ sacrifice two Swamps. If PN doesn't, sacrifice SN."
             );
         }
         @Override

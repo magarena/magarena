@@ -6,7 +6,7 @@
                 permanent,
                 new MagicMayChoice("Sacrifice two Mountains?"),
                 this,
-                "PN may\$ sacrifice two Mountains. If you don't, sacrifice SN."
+                "PN may\$ sacrifice two Mountains. If PN doesn't, sacrifice SN."
             );
         }
         @Override

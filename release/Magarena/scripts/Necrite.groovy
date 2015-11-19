@@ -9,7 +9,7 @@
                     MagicDestroyTargetPicker.DestroyNoRegen,
                     this,
                     "PN may\$ sacrifice SN. " +
-                    "If you do, destroy target creature\$. It can't be regenerated."
+                    "If PN does, destroy target creature\$. It can't be regenerated."
                 ):
                 MagicEvent.NONE;
         }

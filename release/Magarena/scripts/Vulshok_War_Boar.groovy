@@ -6,7 +6,7 @@
                 permanent,
                 new MagicMayChoice("Sacrifice an artifact?"),
                 this,
-                "PN may\$ sacrifice an artifact. If you don't, sacrifice SN."
+                "PN may\$ sacrifice an artifact. If PN doesn't, sacrifice SN."
             );
         }
         @Override

@@ -9,7 +9,7 @@ def choice = new MagicTargetChoice("an Ally creature");
                 new MagicMayChoice(choice),
                 MagicCopyPermanentPicker.create(),
                 this,
-                "You may\$ have SN enter the battlefield as a copy of any Ally creature\$ on the battlefield."
+                "PN may\$ have SN enter the battlefield as a copy of any Ally creature on the battlefield.\$"
             );
         }
 

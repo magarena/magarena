@@ -36,7 +36,7 @@ def evt = {
                     new MagicMayChoice(),
                     otherPermanent,
                     this,
-                    "You may\$ attach SN to RN."
+                    "PN may\$ attach SN to RN."
                 ) :
                 MagicEvent.NONE;
         }

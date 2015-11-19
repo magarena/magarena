@@ -8,7 +8,7 @@
                     new MagicMayChoice(),
                     this,
                     "PN may\$ sacrifice SN. " +
-                    "If you do, defending player discards 3 cards."
+                    "If PN does, defending player discards 3 cards."
                 ):
                 MagicEvent.NONE;
         }

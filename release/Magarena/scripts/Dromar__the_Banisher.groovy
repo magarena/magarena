@@ -9,7 +9,7 @@
                     MagicColorChoice.UNSUMMON_INSTANCE
                 ),
                 this,
-                "You may\$ pay {2}{U}\$. If you do, choose a color\$. " +
+                "PN may\$ pay {2}{U}\$. If PN does, choose a color\$. " +
                 "Return all creatures of that color to their owner's hand."
             );
         }

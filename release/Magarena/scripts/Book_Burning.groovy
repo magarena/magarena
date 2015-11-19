@@ -15,7 +15,7 @@ def action = {
                 cardOnStack,
                 TARGET_PLAYER,
                 this,
-                "Unless opponent has SN deal 6 damage to him or her, " +
+                "Any player may have SN deal 6 damage to him or her. If no-one does, " +
                 "target player\$ puts the top six cards of his or her library into his or her graveyard."
             );
         }
@@ -28,7 +28,7 @@ def action = {
                     new MagicMayChoice("have SN deal 6 damage to you?"),
                     it,
                     action,
-                    "PN may\$ have SN deal 6 damage to you. If you don't, " +
+                    "PN may\$ have SN deal 6 damage to him or her. If PN doesn't, " +
                     "RN puts the top six cards of his or her library into his or her graveyard."
                 ));
             });

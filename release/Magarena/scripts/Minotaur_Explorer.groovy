@@ -11,7 +11,7 @@ def EFFECT = MagicRuleEventAction.create("Sacrifice SN.");
                     new MagicMayChoice(),
                     this,
                     "PN may\$ discard a card at random. " +
-                    "If you don't, sacrifice SN."
+                    "If PN doesn't, sacrifice SN."
                 ):
                 EFFECT.getEvent(permanent);
         }

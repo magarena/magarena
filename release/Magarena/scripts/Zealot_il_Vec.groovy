@@ -9,7 +9,7 @@
                     new MagicDamageTargetPicker(1),
                     this,
                     "PN may\$ have SN deal 1 damage to target creature\$. " +
-                    "If you do, prevent all combat damage SN would deal this turn."
+                    "If PN does, prevent all combat damage SN would deal this turn."
                 ):
                 MagicEvent.NONE;
         }

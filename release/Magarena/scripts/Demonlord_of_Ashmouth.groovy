@@ -6,7 +6,7 @@
                 permanent,
                 new MagicMayChoice("Sacrifice another creature?"),
                 this,
-                "PN may\$ sacrifice another creature. If you don't, exile SN."
+                "PN may\$ sacrifice another creature. If PN doesn't, exile SN."
             );
         }
         @Override

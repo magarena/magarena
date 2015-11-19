@@ -5,7 +5,7 @@
             return new MagicEvent(
                 source,
                 this,
-                "Reveal the top five cards of your library. Put all creature cards revealed this way into your hand and the rest on the bottom of your library in any order."
+                "PN reveals the top five cards of his or her library. PN puts all creature cards revealed this way into his or her hand and the rest on the bottom of his or her library in any order."
             );
         }
         @Override
@@ -64,7 +64,7 @@
                                 cardOnStack,
                                 new MagicMayChoice(),
                                 this,
-                                "PN may\$ search his or her library for creature card and put that card onto the battlefield. Then shuffle PN's library."
+                                "PN may\$ search his or her library for a creature card, put it onto the battlefield, then shuffle his or her library."
                             ):
                             MagicEvent.NONE;
                     }

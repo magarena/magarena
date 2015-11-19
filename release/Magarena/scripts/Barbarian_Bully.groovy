@@ -25,7 +25,7 @@ def action = {
             return new MagicEvent(
                 source,
                 this,
-                "SN gets +2/+2 until end of turn unless opponent has SN deal 4 damage to him or her."
+                "SN gets +2/+2 until end of turn unless a player has SN deal 4 damage to him or her."
             );
         }
         @Override
@@ -35,7 +35,7 @@ def action = {
                 event.getPlayer().getOpponent(),
                 new MagicMayChoice("Have SN deal 4 damage to you?"),
                 action,
-                "PN may\$ have SN deal 4 damage to you. If you don't, SN gets +2/+2 until end of turn."
+                "PN may\$ have SN deal 4 damage to him or her. If PN doesn't, SN gets +2/+2 until end of turn."
             ));
         }
     }

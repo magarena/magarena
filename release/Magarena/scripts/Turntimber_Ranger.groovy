@@ -8,9 +8,8 @@
                     permanent,
                     new MagicSimpleMayChoice(),
                     this,
-                    "PN may\$ put a 2/2 green Wolf creature " +
-                    "token onto the battlefield. If you do, put a " +
-                    "+1/+1 counter on SN."
+                    "PN may\$ put a 2/2 green Wolf creature token onto the battlefield. "+
+                    "If PN does, he or she puts a +1/+1 counter on SN."
                 ) :
                 MagicEvent.NONE;
         }

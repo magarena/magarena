@@ -8,7 +8,7 @@ def TabernacleUpkeep = new MagicAtYourUpkeepTrigger() {
                 new MagicPayManaCostChoice(MagicManaCost.create("{1}"))
             ),
             this,
-            "You may\$ pay {1}. If you don't, destroy SN."
+            "PN may\$ pay {1}. If PN doesn't, destroy SN."
         );
     }
     @Override

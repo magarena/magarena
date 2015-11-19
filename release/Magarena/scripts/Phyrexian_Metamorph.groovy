@@ -14,7 +14,7 @@ def type = new MagicStatic(MagicLayer.Type) {
                 new MagicMayChoice(AN_ARTIFACT_OR_CREATURE),
                 MagicCopyPermanentPicker.create(),
                 this,
-                "You may\$ have SN enter the battlefield as a copy of any artifact or creature\$ on the battlefield, except it's an artifact in addition to its other types."
+                "PN may\$ have SN enter the battlefield as a copy of any artifact or creature\$ on the battlefield, except it's an artifact in addition to its other types."
             );
         }
 

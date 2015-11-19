@@ -7,7 +7,7 @@
                 new MagicSimpleMayChoice(),
                 cardOnStack.getConvertedCost(),
                 this,
-                "You may gain RN life."
+                "PN may\$ gain RN life."
             );
         }
 

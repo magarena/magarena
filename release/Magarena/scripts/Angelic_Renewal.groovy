@@ -10,7 +10,7 @@
                     new MagicMayChoice(),
                     otherPermanent.getCard(),
                     this,
-                    "PN may\$ sacrifice SN. If you do, return RN to the battlefield."
+                    "PN may\$ sacrifice SN. If PN does, return RN to the battlefield."
                 ) :
                 MagicEvent.NONE;
         }

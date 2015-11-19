@@ -7,10 +7,8 @@
                     permanent,
                     new MagicMayChoice(),
                     this,
-                    "PN may\$ put the top creature card of " +
-                    "opponent's graveyard onto the " +
-                    "battlefield under his or her control. " +
-                    "If you do, SN assigns no combat damage this turn."
+                    "PN may\$ put the top creature card of defending player's graveyard onto the battlefield under PN's control. "+
+                    "If PN does, SN assigns no combat damage this turn."
                 ):
                 MagicEvent.NONE;
         }

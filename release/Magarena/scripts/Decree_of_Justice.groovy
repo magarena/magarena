@@ -28,7 +28,7 @@
                     new MagicPayManaCostChoice(MagicManaCost.create("{X}"))
                 ),
                 this,
-                "PN may\$ pay {X}\$. If you do, put X 1/1 white Soldier creature tokens onto the battlefield."
+                "PN may\$ pay {X}\$. If PN does, he or she puts X 1/1 white Soldier creature tokens onto the battlefield."
             );
         }
 

@@ -11,7 +11,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Counter each spell you don't control."
+                "Counter each spell PN doesn't control."
             );
         }
         @Override

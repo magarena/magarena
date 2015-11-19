@@ -11,7 +11,7 @@
                     ),
                     otherPermanent.getCard(),
                     this,
-                    "You may\$ pay {1}{B}\$. If you do, return RN to the battlefield under your control. " +
+                    "PN may\$ pay {1}{B}\$. If PN does, return RN to the battlefield under his or her control. " +
                     "If it's a creature, it's a Zombie in addition to its other creature types."
                 ):
                 MagicEvent.NONE;

@@ -37,7 +37,7 @@ def action = {
                     new MagicMayChoice("have SN deal 2 damage to you?"),
                     it,
                     action,
-                    "PN may\$ have SN deal 2 damage to you. If you don't, SN deals 1 damage to RN."
+                    "PN may\$ have SN deal 2 damage to him or her. If PN doesn't, SN deals 1 damage to RN."
                 ));
             });
         }

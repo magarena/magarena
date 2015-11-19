@@ -17,7 +17,7 @@ def A_NONLAIR_LAND_YOU_CONTROL = new MagicTargetChoice(
                 permanent,
                 new MagicMayChoice(),
                 this,
-                "PN may\$ return a non-Lair land you control to its owner's hand. If you don't, sacrifice SN."
+                "PN may\$ return a non-Lair land he or she controls to its owner's hand. If PN doesn't, sacrifice SN."
             );
         }
         @Override

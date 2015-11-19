@@ -16,7 +16,7 @@ def choice = new MagicTargetChoice("an artifact");
                 new MagicMayChoice(choice),
                 MagicCopyPermanentPicker.create(),
                 this,
-                "You may\$ have SN enter the battlefield as a copy of any artifact\$ on the battlefield, except it's an enchantment in addition to its other types."
+                "PN may\$ have SN enter the battlefield as a copy of any artifact on the battlefield\$, except it's an enchantment in addition to its other types."
             );
         }
 

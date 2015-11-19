@@ -11,7 +11,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Return each nonland permanent you don't control to its owner's hand."
+                "Return each nonland permanent PN doesn't control to its owner's hand."
             );
         }
         @Override

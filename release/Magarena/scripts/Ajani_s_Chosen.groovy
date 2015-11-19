@@ -35,7 +35,7 @@
                                     ));
                                 }
                             },
-                            "You may\$ attach SN to RN."
+                            "PN may\$ attach SN to RN."
                         ));
                     }
                 }

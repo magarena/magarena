@@ -7,7 +7,7 @@
                     permanent,
                     new MagicMayChoice(),
                     this,
-                    "You may\$ have each opponent loses 1 life."
+                    "PN may\$ have each opponent lose 1 life."
                 ): MagicEvent.NONE;
         }
         @Override

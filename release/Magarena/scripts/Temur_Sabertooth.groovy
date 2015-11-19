@@ -16,7 +16,8 @@
                 source,
                 new MagicMayChoice(),
                 this,
-                "PN may\$ return another creature you control to its owner's hand. If you do, SN gains indestructible until end of turn."
+                "PN may\$ return another creature he or she controls to its owner's hand. "+
+                "If PN does, SN gains indestructible until end of turn."
             );
         }
 

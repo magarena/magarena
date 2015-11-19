@@ -11,7 +11,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Tap each creature\$ you don't control."
+                "Tap each creature\$ PN doesn't control."
             );
         }
         @Override

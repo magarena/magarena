@@ -9,7 +9,7 @@
                 new MagicDamageTargetPicker(x),
                 x,
                 this,
-                "SN deals " + x + " damage to target creature\$ without flying you don't control."
+                "SN deals " + x + " damage to target creature\$ without flying PN doesn't control."
             );
         }
         @Override
@@ -33,7 +33,7 @@
                 cardOnStack,
                 x,
                 this,
-                "SN deals " + x + " damage to each creature\$ without flying you don't control."
+                "SN deals " + x + " damage to each creature\$ without flying PN doesn't control."
             );
         }
         @Override

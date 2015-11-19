@@ -7,7 +7,7 @@
                 permanent.getController(),
                 cardOnStack.getOpponent(),
                 this,
-                "PN sacrifices SN. If you do, RN draws three cards."
+                "PN sacrifices SN. If PN does, RN draws three cards."
             );
         }
         @Override

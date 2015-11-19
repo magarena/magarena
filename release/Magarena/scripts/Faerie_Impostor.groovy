@@ -9,8 +9,8 @@
                 ),
                 MagicBounceTargetPicker.create(),
                 this,
-                "You may\$ return a creature you control to its owner's hand. " +
-                "If you don't, sacrifice SN."
+                "PN may\$ return a creature he or she controls to its owner's hand. " +
+                "If PN doesn't, sacrifice SN."
             );
         }
         @Override

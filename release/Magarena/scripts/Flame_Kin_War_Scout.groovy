@@ -8,7 +8,7 @@
                     permanent,
                     otherPermanent,
                     this,
-                    "Sacrifice SN. If you do, SN deals 4 damage to RN."
+                    "Sacrifice SN. If PN does, SN deals 4 damage to RN."
                 ):
                 MagicEvent.NONE;
         }

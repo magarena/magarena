@@ -40,7 +40,7 @@ def DelayedTrigger = {
                     new MagicMayChoice(),
                     this,
                     "PN may\$ exile SN. " + 
-                    "If you do, return it to the battlefield under its owner's control at the beginning of your next upkeep. " + 
+                    "If PN does, return it to the battlefield under its owner's control at the beginning of PN's next upkeep. " + 
                     "It gains haste."
                 ):
                 MagicEvent.NONE

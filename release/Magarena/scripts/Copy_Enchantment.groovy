@@ -9,7 +9,7 @@ def choice = new MagicTargetChoice("an enchantment");
                 new MagicMayChoice(choice),
                 MagicCopyPermanentPicker.create(),
                 this,
-                "You may\$ have SN enter the battlefield as a copy of any enchantment\$ on the battlefield."
+                "PN may\$ have SN enter the battlefield as a copy of any enchantment on the battlefield.\$"
             );
         }
 

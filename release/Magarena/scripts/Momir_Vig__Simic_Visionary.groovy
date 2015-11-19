@@ -8,7 +8,8 @@
                 new MagicEvent(
                     permanent,
                     this,
-                    "Reveal the top card of PN's library. If it's a creature card, put that card into PN's hand."
+                    "PN reveals the top card of his or her library. "+
+                    "If it's a creature card, PN puts that card into his or her hand."
                 ):
                 MagicEvent.NONE;
         }
@@ -37,8 +38,8 @@
                     permanent,
                     new MagicMayChoice(),
                     this,
-                    "PN may\$ search your library for a creature card and reveal it. "+
-                    "If you do, shuffle your library and put that card on top of it."
+                    "PN may\$ search his or her library for a creature card and reveal it. "+
+                    "If PN does, he or she shuffles his or her library and puts that card on top of it."
                 ):
                 MagicEvent.NONE;
         }

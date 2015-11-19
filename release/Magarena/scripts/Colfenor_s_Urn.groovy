@@ -32,7 +32,7 @@
                 new MagicEvent(
                     permanent,
                     this,
-                    "Sacrifice SN. If you do, return the cards exiled with it to the battlefield under their owner's control."
+                    "Sacrifice SN. If PN does, return the cards exiled with it to the battlefield under their owner's control."
                 ):
                 MagicEvent.NONE;
         }
