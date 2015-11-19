@@ -6,7 +6,7 @@
                 permanent,
                 new MagicMayChoice("Sacrifice SN?"),
                 this,
-                "PN may\$ sacrifice SN. If you do, return each card exiled with SN to the battlefield under its owner's control"
+                "PN may\$ sacrifice SN. If PN does, return each card exiled with SN to the battlefield under its owner's control"
             );
         }
         @Override
