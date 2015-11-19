@@ -7,7 +7,7 @@
                 permanent.getOpponent(),
                 new MagicMayChoice(),
                 this,
-                "PN may\$ have SN deal 5 damage to him or her. If a he or she does, sacrifice SN."
+                "PN may\$ have SN deal 5 damage to him or her. If he or she does, sacrifice SN."
             );
         }
         @Override
