@@ -4,6 +4,7 @@ value=3.647
 rarity=R
 type=Sorcery
 cost={X}{R}
-effect=Choose a color. SN deals X damage to each creature of the chosen color.
-timing=main
+ability=Cast SN with AI only if an opponent controls a creature.
+timing=removal
+requires_groovy_code
 oracle=Choose a color. Sudden Demise deals X damage to each creature of the chosen color.
