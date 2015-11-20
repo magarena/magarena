@@ -279,7 +279,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
     public int getPoison() {
         return poison;
     }
-    
+
     public void setExperience(final int e) {
         experience = e;
     }
@@ -573,6 +573,16 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
         int count=0;
         for (final MagicPermanent permanent : permanents) {
             if (permanent.hasColor(color)) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public int getNrOfPermanents(final MagicType type, final MagicColor color) {
+        int count = 0;
+        for (final MagicPermanent permanent : permanents) {
+            if (permanent.hasColor(color) && permanent.hasType(type)){
                 count++;
             }
         }
