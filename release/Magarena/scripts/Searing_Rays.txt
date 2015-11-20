@@ -4,6 +4,7 @@ value=3.271
 rarity=U
 type=Sorcery
 cost={2}{R}
+ability=Cast SN with AI only if an opponent controls a creature.
 timing=main
 requires_groovy_code
 oracle=Choose a color. Searing Rays deals damage to each player equal to the number of creatures of that color that player controls.
