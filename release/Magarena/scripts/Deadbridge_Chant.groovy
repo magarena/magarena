@@ -6,8 +6,8 @@
                 permanent,
                 this,
                 "PN chooses a card at random in his or her graveyard. " +
-                "If it's a creature card, put it onto the battlefield. " +
-                "Otherwise, put it into PN's hand."
+                "If it's a creature card, PN puts it onto the battlefield. " +
+                "Otherwise, PN puts it into his or her hand."
             );
         }
         

@@ -18,7 +18,7 @@ def SAC_ACTION = {
                 this,
                 "PN may\$ sacrifice a Forest. " +
                 "If PN sacrifices a snow Forest this way, SN gains trample until end of turn. " + 
-                "If PN doesn't sacrifice a Forest, sacrifice SN and it deals 7 damage to you."
+                "If PN doesn't sacrifice a Forest, he or she sacrifices SN and it deals 7 damage to him or her."
             );
         }
 

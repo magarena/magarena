@@ -18,7 +18,7 @@ def action = {
                 TARGET_CREATURE_CARD_FROM_GRAVEYARD,
                 MagicGraveyardTargetPicker.ReturnToHand,
                 this,
-                "Return target creature card\$ from your graveyard to your hand."
+                "PN returns target creature card from his or her graveyard\$ to his or her hand."
             );
         }
         @Override

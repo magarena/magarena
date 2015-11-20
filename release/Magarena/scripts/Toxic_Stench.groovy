@@ -7,7 +7,7 @@
                 NEG_TARGET_NONBLACK_CREATURE,
                 this,
                 "Target nonblack creature\$ gets -1/-1 until end of turn. " +
-                "If seven or more cards are in your graveyard, instead destroy that creature. It can't be regenerated."
+                "If seven or more cards are in PN's graveyard, instead destroy that creature. It can't be regenerated."
             );
         }
         @Override

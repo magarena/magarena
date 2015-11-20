@@ -27,7 +27,7 @@ def event = {
         source,
         cmc,
         action,
-        "PN searches PN's library for a creature card with converted mana cost RN, put that card onto the battlefield, then shuffle your library."
+        "PN searches his or her library for a creature card with converted mana cost RN, puts that card onto the battlefield, then shuffles his or her library."
     );
 }
 

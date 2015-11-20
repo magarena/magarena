@@ -16,7 +16,7 @@
             return new MagicEvent(
                 source,
                 this,
-                "Return each creature card exiled with SN to the battlefield under your control."
+                "PN return each creature card exiled with SN to the battlefield under his or her control."
             );
         }
 

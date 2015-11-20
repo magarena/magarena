@@ -5,7 +5,8 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "Reveal the top three cards of your library. Put all artifact cards revealed this way into your hand and the rest into your graveyard."
+                "PN reveals the top three cards of his or her library. "+
+                "Puts all artifact cards revealed this way into his or her hand and the rest into his or her graveyard."
             );
         }
         @Override

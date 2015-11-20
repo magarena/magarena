@@ -6,7 +6,7 @@
                 new MagicEvent(
                     permanent,
                     this,
-                    "Exile all cards from your hand."
+                    "Exile all cards from PN's hand."
                 ):
                 MagicEvent.NONE;
         }
@@ -24,7 +24,7 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "Return all cards you own exiled with SN to PN's hand, then draw a card."
+                "Return all cards PN owns exiled with SN to his or her hand, then draw a card."
             );
         }
         @Override

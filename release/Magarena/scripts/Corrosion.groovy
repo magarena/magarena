@@ -7,7 +7,7 @@
                     TARGET_OPPONENT,
                     this,
                     "PN puts a rust counter on each artifact target opponent\$ controls. "+
-                    "Then destroy each artifact with converted mana cost less than or equal to the number of rust counters on it. "+
+                    "Then destroys each artifact with converted mana cost less than or equal to the number of rust counters on it. "+
                     "Artifacts destroyed this way can't be regenerated."
                 );
         }

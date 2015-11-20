@@ -19,7 +19,7 @@
                 source,
                 this,
                 "Exile SN. Return it to the battlefield " +
-                "under your control at the beginning of the next end step."
+                "under PN's control at the beginning of the next end step."
             );
         }
         @Override

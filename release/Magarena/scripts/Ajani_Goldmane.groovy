@@ -5,7 +5,7 @@
             return new MagicEvent(
                 source,
                 this,
-                "You gain 2 life."
+                "PN gains 2 life."
             );
         }
         @Override
@@ -19,7 +19,7 @@
             return new MagicEvent(
                 source,
                 this,
-                "Put a +1/+1 counter on each creature you control. Those creatures gain vigilance until end of turn."
+                "PN puts a +1/+1 counter on each creature he or she controls. Those creatures gain vigilance until end of turn."
             );
         }
         @Override
@@ -37,7 +37,7 @@
             return new MagicEvent(
                 source,
                 this,
-                "Put a white Avatar creature token onto the battlefield. " +
+                "PN puts a white Avatar creature token onto the battlefield. " +
                 "It has \"This creature's power and toughness are each equal to your life total.\""
             );
         }

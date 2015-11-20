@@ -1,6 +1,6 @@
-def TEXT1 = "Search your library for up to two creature cards, reveal them, put them into your hand, then shuffle your library."
+def TEXT1 = "PN searches his or her library for up to two creature cards, reveals them, puts them into his or her hand, then shuffles his or her library."
 
-def TEXT2 = "Put up to two creature cards from your hand onto the battlefield."
+def TEXT2 = "PN puts up to two creature cards from his or her hand onto the battlefield."
 
 [
     new MagicSpellCardEvent() {

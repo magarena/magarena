@@ -5,8 +5,8 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Return all Zombie creature cards from your graveyard " +
-                "to the battlefield tapped, then destroy all Humans."
+                "PN returns all Zombie creature cards from his or her graveyard " +
+                "to the battlefield tapped, then destroys all Humans."
             );
         }
 

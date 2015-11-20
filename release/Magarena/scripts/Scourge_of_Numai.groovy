@@ -6,7 +6,7 @@
                 new MagicEvent(
                     permanent,
                     this,
-                    "If PN controls no Ogres, lose 2 life."
+                    "If PN controls no Ogres, he or she loses 2 life."
                 ):
                 MagicEvent.NONE;
         }

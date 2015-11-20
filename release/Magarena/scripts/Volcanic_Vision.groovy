@@ -8,8 +8,8 @@ def choice = new MagicTargetChoice("target instant or sorcery card from your gra
                 cardOnStack,
                 choice,
                 this,
-                "Return target instant or sorcery card from your graveyard to your hand.\$ "+
-                "SN deals damage equal to that card's converted mana cost to each creature your opponents control. "+
+                "PN returns target instant or sorcery card from his or her graveyard to his or her hand.\$ "+
+                "SN deals damage equal to that card's converted mana cost to each creature PN's opponents control. "+
                 "Exile SN."
             );
         }

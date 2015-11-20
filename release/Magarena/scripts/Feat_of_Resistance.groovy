@@ -15,8 +15,8 @@ def action = {
                 cardOnStack,
                 TARGET_CREATURE_YOU_CONTROL,
                 this,
-                "Put a +1/+1 counter on target creature\$ you control. "+
-                "It gains protection from the color of your choice until end of turn."
+                "PN puts a +1/+1 counter on target creature he or she controls.\$ "+
+                "It gains protection from the color of PN's choice until end of turn."
             );
         }
         @Override

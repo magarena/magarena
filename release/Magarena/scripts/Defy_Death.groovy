@@ -7,8 +7,8 @@
                 TARGET_CREATURE_CARD_FROM_GRAVEYARD,
                 MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
-                "Return target creature card\$ from your graveyard to the " +
-                "battlefield. If it's an Angel, put two +1/+1 counters on it."
+                "PN returns target creature card\$ from his or her graveyard to the " +
+                "battlefield. If it's an Angel, PN puts two +1/+1 counters on it."
             );
         }
 

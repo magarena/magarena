@@ -10,7 +10,7 @@
                     TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
                     damage.getDealtAmount(),
                     this,
-                    "SN deals RN damage to target creature\$ your opponent controls."
+                    "SN deals RN damage to target creature an opponent controls.\$"
                 ):
                 MagicEvent.NONE;
         }

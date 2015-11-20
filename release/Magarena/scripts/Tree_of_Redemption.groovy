@@ -14,7 +14,7 @@
             return new MagicEvent(
                 source,
                 this,
-                "Exchange your life total with SN's toughness."
+                "Exchange PN's life total with SN's toughness."
             );
         }
 

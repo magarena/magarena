@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "Exile all cards from your hand."
+                "PN exiles all cards from his or her hand."
             );
         }
         @Override

@@ -6,7 +6,7 @@
                 new MagicEvent(
                     permanent,
                     this,
-                    "Return SN to the battlefield under your control and put a death counter on it."
+                    "Return SN to the battlefield under PN's control and put a death counter on it."
                 ):
                 MagicEvent.NONE;
         }

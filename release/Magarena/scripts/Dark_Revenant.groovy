@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "Put SN on the top of your library."
+                "PN puts SN on the top of his or her library."
             );
         }
 

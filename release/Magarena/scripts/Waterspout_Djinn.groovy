@@ -17,7 +17,7 @@ def AN_UNTAPPED_ISLAND_YOU_CONTROL = new MagicTargetChoice(
                 permanent,
                 new MagicMayChoice("Return an untapped Island you control to its owner's hand?"),
                 this,
-                "PN may\$ return an untapped Island PN controls to its owner's hand. If PN doesn't, sacrifice SN."
+                "PN may\$ return an untapped Island he or she controls to its owner's hand. If PN doesn't, sacrifice SN."
             );
         }
 

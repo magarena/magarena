@@ -9,7 +9,7 @@
                 ),
                 MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
-                "PN may\$ cast target instant or sorcery card\$ from your opponent's graveyard without paying its mana cost. "+
+                "PN may\$ cast target instant or sorcery card from an opponent's graveyard\$ without paying its mana cost. "+
                 "If that card would be put into a graveyard this turn, exile it instead."
             );
         }

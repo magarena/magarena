@@ -8,7 +8,7 @@
                     permanent,
                     enchanted.getCard(),
                     this,
-                    "Return RN to the battlefield under your control."
+                    "PN returns RN to the battlefield under his or her control."
                 ):
                 MagicEvent.NONE;
         }

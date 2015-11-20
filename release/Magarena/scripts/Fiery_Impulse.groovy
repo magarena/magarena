@@ -9,7 +9,7 @@
                 new MagicDamageTargetPicker(amount),
                 this,
                 "SN deals 2 damage to target creature\$. If there are two or more instant and/or sorcery cards "+
-                "in your graveyard, SN deals 3 damage to that creature instead."
+                "in PN's graveyard, SN deals 3 damage to that creature instead."
             );
         }
         @Override

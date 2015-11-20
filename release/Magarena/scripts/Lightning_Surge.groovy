@@ -7,7 +7,7 @@
                 TARGET_CREATURE_OR_PLAYER,
                 this,
                 "SN deals 4 damage to target creature or player\$. " +
-                "If seven or more cards are in your graveyard, instead SN deals 6 damage to that creature or player and the damage can't be prevented."
+                "If seven or more cards are in PN's graveyard, instead SN deals 6 damage to that creature or player and the damage can't be prevented."
             );
         }
         @Override

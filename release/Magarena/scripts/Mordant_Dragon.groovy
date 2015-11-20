@@ -9,7 +9,7 @@
                 new MagicDamageTargetPicker(amount),
                 amount,
                 this,
-                "PN may\$ have SN deal RN damage to target creature\$ your opponent controls."
+                "PN may\$ have SN deal RN damage to target creature an opponent controls.\$"
             );
         }
 

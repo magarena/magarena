@@ -13,7 +13,7 @@
                     permanent,
                     amt,
                     this,
-                    "Exile RN cards from the top of your library."
+                    "PN exiles RN cards from the top of his or her library."
                 ):
                 MagicEvent.NONE;
         }

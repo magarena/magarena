@@ -21,8 +21,8 @@ def choice = new MagicTargetChoice(
             return new MagicEvent(
                 source,
                 this,
-                "Search PN's library for a creature with the same converted mana cost as this creature " +
-                "and put that card onto the battlefield. Then shuffle your library."
+                "PN searches his or her library for a creature with the same converted mana cost as this creature " +
+                "and puts that card onto the battlefield. Then shuffles his or her library."
             );
         }
         @Override

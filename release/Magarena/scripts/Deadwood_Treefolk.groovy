@@ -21,7 +21,7 @@ def event = {
         choice,
         MagicGraveyardTargetPicker.ReturnToHand,
         action,
-        "Return another target creature card\$ from your graveyard to your hand."
+        "PN returns another target creature card from his or her graveyard\$ to his or her hand."
     );
 }
 

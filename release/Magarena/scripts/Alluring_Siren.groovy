@@ -16,7 +16,7 @@
                 TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
                 MagicMustAttackTargetPicker.create(),
                 this,
-                "Target creature\$ an opponent controls attacks you this turn if able."
+                "Target creature an opponent controls\$ attacks PN this turn if able."
             );
         }
 

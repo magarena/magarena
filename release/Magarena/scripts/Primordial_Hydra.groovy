@@ -6,7 +6,7 @@
                 permanent,
                 permanent.getCounters(MagicCounterType.PlusOne),
                 this,
-                "Put RN +1/+1 counters on SN."
+                "PN puts RN +1/+1 counters on SN."
             );
         }
         @Override

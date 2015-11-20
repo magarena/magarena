@@ -16,7 +16,7 @@
             return new MagicEvent(
                 source,
                 this,
-                "Shuffle your graveyard into your library."
+                "PN shuffles his or her graveyard into his or her library."
             );
         }
 

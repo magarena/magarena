@@ -17,7 +17,7 @@
                 TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
                 new MagicDamageTargetPicker(1),
                 this,
-                "SN deals 1 damage to target creature\$ your opponent controls."
+                "SN deals 1 damage to target creature\$ defending player controls."
             );
         }
 

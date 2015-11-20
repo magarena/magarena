@@ -7,7 +7,7 @@
                 TARGET_CREATURE,
                 MagicPumpTargetPicker.create(),
                 this,
-                "Target creature\$ can't be the target of spells or abilities your opponent controls this turn. " +
+                "Target creature\$ can't be the target of spells or abilities PN's opponents control this turn. " +
                 "If SN was kicked, that creature gets +4/+4 until end of turn."
             );
         }

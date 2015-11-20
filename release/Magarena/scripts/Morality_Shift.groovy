@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Exchange your graveyard and library. Then shuffle your library."
+                "PN exchanges his or her graveyard and library. Then shuffles his or her library."
             );
         }
         @Override

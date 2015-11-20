@@ -7,7 +7,8 @@
                 source,
                 TARGET_PERMANENT_YOU_OWN,
                 this,
-                "Exile target permanent you own. Return it to the battlefield under your control at the beginning of the next end step."
+                "PN exiles target permanent he or she owns\$. PN returns it to the battlefield "+
+                "under his or her control at the beginning of the next end step."
             );
         }
         @Override

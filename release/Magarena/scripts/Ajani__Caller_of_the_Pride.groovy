@@ -45,7 +45,7 @@
             return new MagicEvent(
                 source,
                 this,
-                "Put X 2/2 white Cat creature tokens onto the battlefield, where X is your life total."
+                "PN puts X 2/2 white Cat creature tokens onto the battlefield, where X is his or her life total."
             );
         }
         @Override

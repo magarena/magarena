@@ -16,7 +16,7 @@ def action = {
                 POS_TARGET_CREATURE,
                 this,
                 "Target creature\$ and each other creature that shares a color with it " +
-                "gain protection from the color of your choice until end of turn."
+                "gain protection from the color of PN's choice until end of turn."
             );
         }
         @Override

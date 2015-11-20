@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Your opponents can't cast spells this turn."
+                "PN's opponents can't cast spells this turn."
             );
         }
         @Override

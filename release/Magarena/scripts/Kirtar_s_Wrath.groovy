@@ -6,8 +6,8 @@
                 cardOnStack,
                 this,
                 "Destroy all creatures. They can't be regenerated. " +
-                "If seven or more cards are in your graveyard, instead destroy all creatures, " + 
-                "then put two 1/1 white Spirit creature tokens with flying onto the battlefield. " + 
+                "If seven or more cards are in PN's graveyard, instead destroy all creatures, " + 
+                "then PN puts two 1/1 white Spirit creature tokens with flying onto the battlefield. " + 
                 "Creatures destroyed this way can't be regenerated."
             );
         }

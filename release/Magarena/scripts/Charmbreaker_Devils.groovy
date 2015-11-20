@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "Return an instant or sorcery card at random from your graveyard to your hand."
+                "PN returns an instant or sorcery card at random from his or her graveyard to his or her hand."
             );
         }
         @Override

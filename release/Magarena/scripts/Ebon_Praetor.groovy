@@ -19,7 +19,7 @@
                 payedCost.getTarget(),
                 this,
                 "Remove a -2/-2 counter from SN. " +
-                "If the sacrificed creature was a Thrull, put a +1/+0 counter on SN."
+                "If the sacrificed creature was a Thrull, PN puts a +1/+0 counter on SN."
             );
         }
 

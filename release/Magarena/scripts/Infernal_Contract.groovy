@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Draw four cards. You lose half your life, rounded up."
+                "PN draws four cards. PN loses half his or her life, rounded up."
             );
         }
         @Override

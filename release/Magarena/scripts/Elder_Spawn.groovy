@@ -8,7 +8,7 @@ def choice = new MagicTargetChoice("an Island to sacrifice");
                 permanent,
                 new MagicMayChoice("Sacrifice an Island?"),
                 this,
-                "PN may\$ sacrifice an Island. If PN doesn't, sacrifice SN and it deals 6 damage to you."
+                "PN may\$ sacrifice an Island. If PN doesn't, sacrifice SN and it deals 6 damage to him or her."
             );
         }
 

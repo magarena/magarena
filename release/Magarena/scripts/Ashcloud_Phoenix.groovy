@@ -6,7 +6,7 @@
                 permanent,
                 permanent.getCard(),
                 this,
-                "Return SN to the battlefield face down under your control."
+                "Return SN to the battlefield face down under PN's control."
             );
         }
         @Override

@@ -7,7 +7,7 @@
                 NEG_TARGET_CREATURE,
                 this,
                 "SN deals 3 damage to target creature\$. " +
-                "SN deals 5 damage to that creature instead if seven or more cards are in your graveyard."
+                "SN deals 5 damage to that creature instead if seven or more cards are in PN's graveyard."
             );
         }
         @Override

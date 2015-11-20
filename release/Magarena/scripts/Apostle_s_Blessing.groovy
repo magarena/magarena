@@ -31,8 +31,8 @@ def action = {
                     TARGET_ARTIFACT_OR_CREATURE_YOU_CONTROL
                 ),
                 this,
-                "Choose one\$ — (1) target artifact or creature you control gains protection from artifacts until end of turn; " +
-                "or (2) target artifact or creature you control gains protection from the color of your choice until end of turn.\$" 
+                "PN chooses one\$ — (1) target artifact or creature PN controls gains protection from artifacts until end of turn; " +
+                "or (2) target artifact or creature PN controls gains protection from the color of his or her choice until end of turn.\$" 
             );
         }
         @Override

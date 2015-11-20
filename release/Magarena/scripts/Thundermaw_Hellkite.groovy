@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "SN deals 1 damage to each creature with flying your opponents control. Tap those creatures."
+                "SN deals 1 damage to each creature with flying PN's opponents control. Tap those creatures."
             );
         }
         @Override

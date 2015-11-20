@@ -21,7 +21,7 @@ def TARGET_INSTANT_OR_AURA_TARGETS_YOUR_PERM = new MagicTargetChoice(
                 cardOnStack,
                 TARGET_INSTANT_OR_AURA_TARGETS_YOUR_PERM,
                 this,
-                "Counter target instant or Aura spell\$ that targets a permanent you control."
+                "Counter target instant or Aura spell\$ that targets a permanent PN controls."
             );
         }
         @Override

@@ -11,9 +11,9 @@
                     MagicGraveyardTargetPicker.PutOntoBattlefield :
                     MagicGraveyardTargetPicker.ReturnToHand,
                 this,
-                "Return target creature card\$ from your graveyard to your hand. " +
-                "Return that card from your graveyard to the battlefield instead " +
-                "if seven or more cards are in your graveyard."
+                "PN returns target creature card from his or her graveyard\$ to his or her hand. " +
+                "PN returns that card from his or her graveyard to the battlefield instead " +
+                "if seven or more cards are in his or her graveyard."
             );
         }
         @Override

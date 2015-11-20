@@ -7,7 +7,7 @@
                 NEG_TARGET_LAND,
                 this,
                 "Destroy target land\$. " +
-                "If seven or more cards are in your graveyard, instead destroy that land and SN deals 1 damage to each creature and each player."
+                "If seven or more cards are in PN's graveyard, instead destroy that land and SN deals 1 damage to each creature and each player."
             );
         }
         @Override

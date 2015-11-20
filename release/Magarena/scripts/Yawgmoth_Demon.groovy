@@ -6,7 +6,7 @@
                 permanent,
                 new MagicMayChoice("Sacrifice an artifact?"),
                 this,
-                "PN may\$ sacrifice an artifact. If PN doesn't, tap SN and it deals 2 damage to you."
+                "PN may\$ sacrifice an artifact. If PN doesn't, tap SN and it deals 2 damage to him or her."
             );
         }
 

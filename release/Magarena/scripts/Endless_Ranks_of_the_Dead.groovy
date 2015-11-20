@@ -6,7 +6,7 @@
                 permanent,
                 this,
                 "PN puts X 2/2 black Zombie creature tokens onto the " +
-                "battlefield, where X is half the number of Zombies you control, rounded down"
+                "battlefield, where X is half the number of Zombies he or she controls, rounded down"
             );
         }
         @Override

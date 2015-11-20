@@ -22,7 +22,7 @@ def ProtectionFromArtifacts = MagicAbility.getAbilityList("protection from artif
                 source,
                 MagicColorChoice.ALL_INSTANCE,
                 this,
-                "SN gains protection from the color\$ of your choice until end of turn."
+                "SN gains protection from the color of PN's choice\$ until end of turn."
             );
         }
         @Override

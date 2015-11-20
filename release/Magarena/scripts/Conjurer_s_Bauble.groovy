@@ -17,7 +17,7 @@
                 TARGET_CARD_FROM_GRAVEYARD,
                 MagicGraveyardTargetPicker.ExileOpp,
                 this,
-                "Put target card\$ from your graveyard on the bottom of your library. Draw a card."
+                "PN puts target card\$ from his or her graveyard on the bottom of his or her library. PN draws a card."
             );
         }
         @Override

@@ -6,9 +6,9 @@
                 cardOnStack,
                 MagicColorChoice.ALL_INSTANCE,
                 this,
-                "Creatures you control get +0/+2 until end of turn. " + 
-                "Choose a color\$. " + 
-                "If seven or more cards are in your graveyard, creatures you control also gain protection from the chosen color until end of turn."
+                "Creatures PN controls get +0/+2 until end of turn. " + 
+                "PN chooses a color\$. " + 
+                "If seven or more cards are in PN's graveyard, creatures he or she controls also gain protection from the chosen color until end of turn."
             );
         }
         @Override

@@ -14,7 +14,7 @@
             return new MagicEvent(
                 source,
                 this,
-                "Creatures your opponent controls attacks you this turn if able."
+                "Creatures PN's opponents control attack this turn if able."
             );
         }
         @Override

@@ -7,7 +7,7 @@
                 new MagicEvent(
                     permanent,
                     this,
-                    "If there are fewer than six creature cards in PN's graveyard, PN sacrifices a creature"
+                    "If there are fewer than six creature cards in PN's graveyard, he or she sacrifices a creature"
                 ):
                 MagicEvent.NONE;
         }

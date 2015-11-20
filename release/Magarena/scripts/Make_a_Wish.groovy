@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Return two cards at random from your graveyard to your hand."
+                "PN returns two cards at random from his or her graveyard to his or her hand."
             );
         }
         @Override
