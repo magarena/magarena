@@ -6,7 +6,8 @@
                 cardOnStack,
                 NEG_TARGET_SPELL,
                 this,
-                "Counter target spell\$. If PN does, put it on top of its owner's library."
+                "Counter target spell\$. If that spell is countered this way, "+
+                "put it on top of its owner's library instead of into that player's graveyard."
             );
         }
         @Override

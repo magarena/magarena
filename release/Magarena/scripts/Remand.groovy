@@ -7,7 +7,8 @@
                 NEG_TARGET_SPELL,
                 this,
                 "Counter target spell\$. If that spell is countered this way, "+
-                "put it into its owner's hand instead of into that player's graveyard."
+                "put it into its owner's hand instead of into that player's graveyard. "+
+                "PN draws a card."
             );
         }
         @Override

@@ -7,7 +7,7 @@
                 NEG_TARGET_SPELL,
                 this,
                 "Counter target spell\$ unless its controller pays {3}. " +
-                "If PN control a Wizard, he or she draws a card."
+                "If PN controls a Wizard, he or she draws a card."
             );
         }
         @Override

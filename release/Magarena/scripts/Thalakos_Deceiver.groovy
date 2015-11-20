@@ -9,7 +9,7 @@
                     MagicExileTargetPicker.create(),
                     this,
                     "PN may\$ sacrifice SN. " +
-                    "If PN does, gain control of target creature\$."
+                    "If PN does, he or she gains control of target creature\$."
                 ):
                 MagicEvent.NONE;
         }
