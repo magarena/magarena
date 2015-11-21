@@ -184,7 +184,7 @@ public enum MagicAbility {
     CumulativeUpkeep("cumulative upkeep " + ARG.MANACOST,-30) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
-            card.add(new MagicCumulativeUpkeepTrigger(manaCost));
+            card.add(new CumulativeUpkeepTrigger(manaCost));
         }
     },
     LevelUp("level up " + ARG.MANACOST + " " + ARG.NUMBER, 10) {

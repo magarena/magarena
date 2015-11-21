@@ -11,11 +11,11 @@ import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.event.MagicEvent;
 
-public class MagicCumulativeUpkeepTrigger extends AtYourUpkeepTrigger {
+public class CumulativeUpkeepTrigger extends AtYourUpkeepTrigger {
 
     private final MagicManaCost manaCost;
 
-    public MagicCumulativeUpkeepTrigger(final MagicManaCost manaCost) {
+    public CumulativeUpkeepTrigger(final MagicManaCost manaCost) {
         this.manaCost = manaCost;
     }
 
