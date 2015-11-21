@@ -422,7 +422,7 @@ public enum MagicAbility {
     },
     Dethrone("dethrone(\\.)?",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicDethroneTrigger.create());
+            card.add(DethroneTrigger.create());
         }
     },
     Madness("madness " + ARG.MANACOST,0) {

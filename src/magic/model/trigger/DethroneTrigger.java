@@ -7,13 +7,13 @@ import magic.model.action.ChangeCountersAction;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicEvent;
 
-public class MagicDethroneTrigger extends MagicWhenSelfAttacksTrigger {
+public class DethroneTrigger extends MagicWhenSelfAttacksTrigger {
 
-    private static final MagicDethroneTrigger INSTANCE = new MagicDethroneTrigger();
+    private static final DethroneTrigger INSTANCE = new DethroneTrigger();
 
-    private MagicDethroneTrigger() {}
+    private DethroneTrigger() {}
 
-    public static MagicDethroneTrigger create() {
+    public static DethroneTrigger create() {
         return INSTANCE;
     }
 
