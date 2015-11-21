@@ -19,12 +19,12 @@ import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 import magic.model.target.MagicTargetHint;
 
-public class MagicChampionTrigger extends MagicWhenComesIntoPlayTrigger {
+public class ChampionTrigger extends MagicWhenComesIntoPlayTrigger {
 
     private final MagicSubType[] subtypes;
     private final String targets;
 
-    public MagicChampionTrigger(final String targets) {
+    public ChampionTrigger(final String targets) {
         this.targets = targets;
         if ("creature".equalsIgnoreCase(targets)) {
             subtypes = new MagicSubType[0];

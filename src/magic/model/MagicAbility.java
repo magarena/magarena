@@ -208,7 +208,7 @@ public enum MagicAbility {
     },
     Champion("champion (a |an )?" + ARG.ANY,-10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(new MagicChampionTrigger(ARG.any(arg)));
+            card.add(new ChampionTrigger(ARG.any(arg)));
             card.add(MagicLeavesReturnExileTrigger.create());
         }
     },
