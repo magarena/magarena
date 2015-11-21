@@ -312,7 +312,7 @@ public enum MagicAbility {
     },
     Unleash("unleash", 20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicUnleashTrigger.create());
+            card.add(UnleashTrigger.create());
             card.add(MagicStatic.Unleash);
         }
     },

@@ -8,15 +8,15 @@ import magic.model.action.ChangeCountersAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 
-public class MagicUnleashTrigger extends MagicWhenComesIntoPlayTrigger {
+public class UnleashTrigger extends MagicWhenComesIntoPlayTrigger {
 
-    private static final MagicUnleashTrigger INSTANCE = new MagicUnleashTrigger();
+    private static final UnleashTrigger INSTANCE = new UnleashTrigger();
 
-    private MagicUnleashTrigger() {
+    private UnleashTrigger() {
         super(MagicTrigger.REPLACEMENT);
     }
 
-    public static MagicUnleashTrigger create() {
+    public static UnleashTrigger create() {
         return INSTANCE;
     }
 
