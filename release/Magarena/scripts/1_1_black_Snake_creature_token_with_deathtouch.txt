@@ -1,0 +1,10 @@
+name=1/1 black Snake creature token with deathtouch
+token=Snake
+image=http://cdn.staticneo.com/w/mtg/9/9c/Snake6.jpg
+value=1
+type=Creature
+subtype=Snake
+color=b
+pt=1/1
+ability=Deathtouch
+oracle=Deathtouch
