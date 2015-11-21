@@ -139,7 +139,7 @@ public enum MagicAbility {
     },
     Exalted("exalted",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicExaltedTrigger.create());
+            card.add(ExaltedTrigger.create());
         }
     },
     BattleCry("battle cry",10) {

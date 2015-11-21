@@ -5,13 +5,13 @@ import magic.model.MagicPermanent;
 import magic.model.action.ChangeTurnPTAction;
 import magic.model.event.MagicEvent;
 
-public class MagicExaltedTrigger extends MagicWhenAttacksTrigger {
+public class ExaltedTrigger extends MagicWhenAttacksTrigger {
 
-    private static final MagicExaltedTrigger INSTANCE = new MagicExaltedTrigger();
+    private static final ExaltedTrigger INSTANCE = new ExaltedTrigger();
 
-    private MagicExaltedTrigger() {}
+    private ExaltedTrigger() {}
 
-    public static MagicExaltedTrigger create() {
+    public static ExaltedTrigger create() {
         return INSTANCE;
     }
 
