@@ -330,7 +330,7 @@ public enum MagicAbility {
     },
     Cascade("cascade", 50) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicCascadeTrigger.create());
+            card.add(CascadeTrigger.create());
         }
     },
     Graft("graft " + ARG.NUMBER,10) {

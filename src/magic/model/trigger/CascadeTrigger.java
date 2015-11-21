@@ -4,7 +4,6 @@ import magic.model.MagicCard;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
-import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicType;
 import magic.model.action.ShiftCardAction;
@@ -15,13 +14,13 @@ import magic.model.event.MagicEventAction;
 import magic.model.stack.MagicCardOnStack;
 
 
-public class MagicCascadeTrigger extends MagicWhenSpellIsCastTrigger {
+public class CascadeTrigger extends MagicWhenSpellIsCastTrigger {
 
-    private static final MagicCascadeTrigger INSTANCE = new MagicCascadeTrigger();
+    private static final CascadeTrigger INSTANCE = new CascadeTrigger();
 
-    private MagicCascadeTrigger() {}
+    private CascadeTrigger() {}
 
-    public static MagicCascadeTrigger create() {
+    public static CascadeTrigger create() {
         return INSTANCE;
     }
 
@@ -39,8 +38,8 @@ public class MagicCascadeTrigger extends MagicWhenSpellIsCastTrigger {
         final MagicCardList library = event.getPlayer().getLibrary();
         final MagicCardList exiled = new MagicCardList();
         MagicCard nonland = MagicCard.NONE;
-        // exile cards from the top of your library until you exile a nonland card 
-        // whose converted mana cost is less than this spell's converted mana cost. 
+        // exile cards from the top of your library until you exile a nonland card
+        // whose converted mana cost is less than this spell's converted mana cost.
         while (nonland == MagicCard.NONE && library.isEmpty() == false) {
             final MagicCard top = library.getCardAtTop();
             game.doAction(new ShiftCardAction(
@@ -62,7 +61,7 @@ public class MagicCascadeTrigger extends MagicWhenSpellIsCastTrigger {
                 new MagicMayChoice("Cast " + nonland + " without paying its mana cost?"),
                 exiled,
                 CAST_ACTION,
-                "PN may$ cast RN without paying its mana cost. " + 
+                "PN may$ cast RN without paying its mana cost. " +
                 "Then put all cards exiled this way that weren't cast on the bottom of PN's library in random order."
             ));
         } else {
@@ -98,7 +97,7 @@ public class MagicCascadeTrigger extends MagicWhenSpellIsCastTrigger {
             ));
         }
     };
-    
+
     private final MagicEventAction RESTORE_CARDS = new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
