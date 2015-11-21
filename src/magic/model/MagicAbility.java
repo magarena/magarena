@@ -492,7 +492,7 @@ public enum MagicAbility {
     },
     BattalionEffect("Whenever SN and at least two other creatures attack, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicBattalionTrigger.create(
+            card.add(BattalionTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }

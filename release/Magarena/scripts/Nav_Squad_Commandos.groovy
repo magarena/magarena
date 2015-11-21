@@ -1,5 +1,5 @@
 [
-    new MagicBattalionTrigger() {
+    new BattalionTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent attacker) {
             return new MagicEvent(
