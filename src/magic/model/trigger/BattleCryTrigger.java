@@ -8,15 +8,15 @@ import magic.model.target.MagicTargetFilterFactory;
 
 import java.util.Collection;
 
-public class MagicBattleCryTrigger extends MagicWhenAttacksTrigger {
+public class BattleCryTrigger extends MagicWhenAttacksTrigger {
 
-    private static final MagicBattleCryTrigger INSTANCE = new MagicBattleCryTrigger();
+    private static final BattleCryTrigger INSTANCE = new BattleCryTrigger();
 
-    private MagicBattleCryTrigger() {
+    private BattleCryTrigger() {
         super(8);
     }
 
-    public static MagicBattleCryTrigger create() {
+    public static BattleCryTrigger create() {
         return INSTANCE;
     }
 

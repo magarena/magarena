@@ -144,7 +144,7 @@ public enum MagicAbility {
     },
     BattleCry("battle cry",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicBattleCryTrigger.create());
+            card.add(BattleCryTrigger.create());
         }
     },
     LivingWeapon("living weapon", 10) {
