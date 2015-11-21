@@ -12,11 +12,11 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicSacrificeTargetPicker;
 
-public class MagicDevourTrigger extends MagicWhenComesIntoPlayTrigger {
+public class DevourTrigger extends MagicWhenComesIntoPlayTrigger {
 
     private final int amount;
 
-    public MagicDevourTrigger(final int aAmount) {
+    public DevourTrigger(final int aAmount) {
         super(MagicTrigger.REPLACEMENT);
         amount = aAmount;
     }

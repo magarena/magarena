@@ -197,7 +197,7 @@ public enum MagicAbility {
     Devour("devour " + ARG.NUMBER,10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
-            card.add(new MagicDevourTrigger(n));
+            card.add(new DevourTrigger(n));
         }
     },
     Rampage("rampage " + ARG.NUMBER,20) {
