@@ -288,7 +288,7 @@ public enum MagicAbility {
     },
     Extort("extort", 20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicExtortTrigger.create());
+            card.add(ExtortTrigger.create());
         }
     },
     Cycling("cycling( |—)" + ARG.COST, 20) {

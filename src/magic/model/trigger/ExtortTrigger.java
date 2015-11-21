@@ -9,13 +9,13 @@ import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.event.MagicEvent;
 import magic.model.stack.MagicCardOnStack;
 
-public class MagicExtortTrigger extends MagicWhenOtherSpellIsCastTrigger {
+public class ExtortTrigger extends MagicWhenOtherSpellIsCastTrigger {
 
-    private static final MagicExtortTrigger INSTANCE = new MagicExtortTrigger();
+    private static final ExtortTrigger INSTANCE = new ExtortTrigger();
 
-    private MagicExtortTrigger() {}
+    private ExtortTrigger() {}
 
-    public static final MagicExtortTrigger create() {
+    public static final ExtortTrigger create() {
         return INSTANCE;
     }
 
