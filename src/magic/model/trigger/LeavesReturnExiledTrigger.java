@@ -8,13 +8,13 @@ import magic.model.action.RemoveFromPlayAction;
 import magic.model.action.ReturnLinkedExileAction;
 import magic.model.event.MagicEvent;
 
-public class MagicLeavesReturnExileTrigger extends MagicWhenLeavesPlayTrigger {
+public class LeavesReturnExiledTrigger extends MagicWhenLeavesPlayTrigger {
 
-    private static final MagicLeavesReturnExileTrigger INSTANCE = new MagicLeavesReturnExileTrigger();
+    private static final LeavesReturnExiledTrigger INSTANCE = new LeavesReturnExiledTrigger();
 
-    private MagicLeavesReturnExileTrigger() {}
+    private LeavesReturnExiledTrigger() {}
 
-    public static final MagicLeavesReturnExileTrigger create() {
+    public static final LeavesReturnExiledTrigger create() {
         return INSTANCE;
     }
 

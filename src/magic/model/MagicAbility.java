@@ -209,7 +209,7 @@ public enum MagicAbility {
     Champion("champion (a |an )?" + ARG.ANY,-10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(new ChampionTrigger(ARG.any(arg)));
-            card.add(MagicLeavesReturnExileTrigger.create());
+            card.add(LeavesReturnExiledTrigger.create());
         }
     },
     Echo("echo( |—)" + ARG.COST,-20) {
@@ -499,7 +499,7 @@ public enum MagicAbility {
     },
     LeavesReturnExile("When SN leaves the battlefield, (each player returns|return) (the exiled card(s)? |all cards exiled with it )?to the battlefield (under (its|their) owner('s|s') control|all cards he or she owns exiled with SN).", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicLeavesReturnExileTrigger.create());
+            card.add(LeavesReturnExiledTrigger.create());
         }
     },
     OpponentDiscardOntoBattlefield("If a spell or ability an opponent controls causes you to discard SN, put it onto the battlefield instead of putting it into your graveyard\\.",10) {
