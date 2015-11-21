@@ -107,7 +107,7 @@ public enum MagicAbility {
     },
     Persist("persist",60) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicPersistTrigger.create());
+            card.add(PersistTrigger.create());
         }
     },
     Modular("modular " + ARG.NUMBER, 10) {

@@ -8,13 +8,13 @@ import magic.model.action.MagicPlayMod;
 import magic.model.action.ReanimateAction;
 import magic.model.event.MagicEvent;
 
-public class MagicPersistTrigger extends MagicWhenDiesTrigger {
+public class PersistTrigger extends MagicWhenDiesTrigger {
 
-    private static final MagicPersistTrigger INSTANCE = new MagicPersistTrigger();
+    private static final PersistTrigger INSTANCE = new PersistTrigger();
 
-    private MagicPersistTrigger() {}
+    private PersistTrigger() {}
 
-    public static final MagicPersistTrigger create() {
+    public static final PersistTrigger create() {
         return INSTANCE;
     }
 
