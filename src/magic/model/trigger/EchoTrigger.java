@@ -10,11 +10,11 @@ import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicMatchedCostEvent;
 
-public class MagicEchoTrigger extends AtUpkeepTrigger {
+public class EchoTrigger extends AtUpkeepTrigger {
 
     private final MagicMatchedCostEvent matchedCost;
 
-    public MagicEchoTrigger(final MagicMatchedCostEvent aMatchedCost) {
+    public EchoTrigger(final MagicMatchedCostEvent aMatchedCost) {
         matchedCost = aMatchedCost;
     }
 

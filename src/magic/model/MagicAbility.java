@@ -214,7 +214,7 @@ public enum MagicAbility {
     },
     Echo("echo( |—)" + ARG.COST,-20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(new MagicEchoTrigger(new MagicRegularCostEvent(ARG.cost(arg))));
+            card.add(new EchoTrigger(new MagicRegularCostEvent(ARG.cost(arg))));
         }
     },
     Bloodthirst("bloodthirst " + ARG.NUMBER,10) {
