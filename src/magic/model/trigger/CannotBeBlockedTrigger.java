@@ -6,19 +6,19 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicTargetFilter;
 import magic.exception.GameException;
 
-public abstract class MagicCannotBeBlockedTrigger extends MagicTrigger<MagicPermanent> {
-    public MagicCannotBeBlockedTrigger(final int priority) {
+public abstract class CannotBeBlockedTrigger extends MagicTrigger<MagicPermanent> {
+    public CannotBeBlockedTrigger(final int priority) {
         super(priority);
     }
 
-    public MagicCannotBeBlockedTrigger() {}
+    public CannotBeBlockedTrigger() {}
 
     public MagicTriggerType getType() {
         return MagicTriggerType.CannotBeBlocked;
     }
-    
-    public static MagicCannotBeBlockedTrigger create(final MagicTargetFilter<MagicPermanent> filter) {
-        return new MagicCannotBeBlockedTrigger() {
+
+    public static CannotBeBlockedTrigger create(final MagicTargetFilter<MagicPermanent> filter) {
+        return new CannotBeBlockedTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent other) {
                 return filter.accept(permanent, permanent.getController(), other);
@@ -29,9 +29,9 @@ public abstract class MagicCannotBeBlockedTrigger extends MagicTrigger<MagicPerm
             }
         };
     }
-    
-    public static MagicCannotBeBlockedTrigger createExcept(final MagicTargetFilter<MagicPermanent> filter) {
-        return new MagicCannotBeBlockedTrigger() {
+
+    public static CannotBeBlockedTrigger createExcept(final MagicTargetFilter<MagicPermanent> filter) {
+        return new CannotBeBlockedTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent other) {
                 return filter.accept(permanent, permanent.getController(), other) == false;
