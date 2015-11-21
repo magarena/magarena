@@ -12,7 +12,7 @@ import magic.model.event.MagicEventAction;
 import magic.model.event.MagicSourceEvent;
 import magic.model.stack.MagicTriggerOnStack;
 
-public abstract class MagicTributeTrigger extends MagicWhenComesIntoPlayTrigger {
+public abstract class TributeTrigger extends MagicWhenComesIntoPlayTrigger {
 
     private final int amt;
 
@@ -32,13 +32,13 @@ public abstract class MagicTributeTrigger extends MagicWhenComesIntoPlayTrigger 
         }
     };
 
-    public MagicTributeTrigger(final int aAmt) {
+    public TributeTrigger(final int aAmt) {
         super(MagicTrigger.REPLACEMENT);
         amt = aAmt;
     }
-    
-    public static MagicTributeTrigger create(final int amt, final MagicSourceEvent sourceEvent) {
-        return new MagicTributeTrigger(amt) {
+
+    public static TributeTrigger create(final int amt, final MagicSourceEvent sourceEvent) {
+        return new TributeTrigger(amt) {
             @Override
             public MagicEvent getEvent(final MagicPermanent permanent) {
                 return sourceEvent.getEvent(permanent);
@@ -57,6 +57,6 @@ public abstract class MagicTributeTrigger extends MagicWhenComesIntoPlayTrigger 
             "PN may$ put RN +1/+1 counters on SN."
         );
     }
-    
+
     public abstract MagicEvent getEvent(final MagicPermanent permanent);
 }

@@ -1,5 +1,5 @@
 [
-    new MagicTributeTrigger(3) {
+    new TributeTrigger(3) {
         @Override
         public MagicEvent getEvent(final MagicPermanent permanent) {
             return new MagicEvent(

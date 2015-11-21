@@ -411,7 +411,7 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
             final String effect  = ARG.effect(arg).replaceFirst("^effect ", "");
-            card.add(MagicTributeTrigger.create(n, MagicRuleEventAction.create(effect)));
+            card.add(TributeTrigger.create(n, MagicRuleEventAction.create(effect)));
         }
     },
     Bestow("bestow " + ARG.MANACOST, 10) {
