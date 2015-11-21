@@ -8,11 +8,11 @@ import magic.model.MagicPlayerState;
 import magic.model.action.ChangeCountersAction;
 import magic.model.event.MagicEvent;
 
-public class MagicBloodthirstTrigger extends MagicWhenComesIntoPlayTrigger {
+public class BloodthirstTrigger extends MagicWhenComesIntoPlayTrigger {
 
     private final int amount;
 
-    public MagicBloodthirstTrigger(final int aAmount) {
+    public BloodthirstTrigger(final int aAmount) {
         super(MagicTrigger.REPLACEMENT);
         amount = aAmount;
     }

@@ -220,7 +220,7 @@ public enum MagicAbility {
     Bloodthirst("bloodthirst " + ARG.NUMBER,10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
-            card.add(new MagicBloodthirstTrigger(n));
+            card.add(new BloodthirstTrigger(n));
         }
     },
     Storm("storm", 20) {
