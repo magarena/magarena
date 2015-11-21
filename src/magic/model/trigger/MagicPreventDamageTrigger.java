@@ -10,7 +10,7 @@ import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetType;
 import magic.model.action.PreventDamageAction;
 
-public abstract class MagicPreventDamageTrigger extends MagicIfDamageWouldBeDealtTrigger {
+public abstract class MagicPreventDamageTrigger extends IfDamageWouldBeDealtTrigger {
     public MagicPreventDamageTrigger() {
         super(MagicTrigger.PREVENT_DAMAGE);
     }

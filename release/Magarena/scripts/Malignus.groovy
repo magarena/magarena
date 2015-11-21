@@ -6,7 +6,7 @@
             pt.set(amount,amount);
         }
     },
-    new MagicIfDamageWouldBeDealtTrigger(MagicTrigger.CANT_BE_PREVENTED) {
+    new IfDamageWouldBeDealtTrigger(MagicTrigger.CANT_BE_PREVENTED) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicDamage damage) {
             if (permanent == damage.getSource()) {

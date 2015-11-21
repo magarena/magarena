@@ -3,8 +3,8 @@ package magic.model.trigger;
 import magic.model.MagicDamage;
 import magic.model.MagicPermanent;
 
-public abstract class MagicIfDamageWouldBeDealtTrigger extends MagicTrigger<MagicDamage> {
-    public MagicIfDamageWouldBeDealtTrigger(final int priority) {
+public abstract class IfDamageWouldBeDealtTrigger extends MagicTrigger<MagicDamage> {
+    public IfDamageWouldBeDealtTrigger(final int priority) {
         super(priority);
     }
 
