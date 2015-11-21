@@ -4,6 +4,6 @@ value=1.983
 rarity=R
 type=Enchantment
 cost={5}{W}{W}
-ability=At the beginning of your upkeep, count the number of permanents you control. Your life total becomes that number.
 timing=enchantment
+requires_groovy_code
 oracle=At the beginning of your upkeep, count the number of permanents you control. Your life total becomes that number.
