@@ -3,32 +3,31 @@ package magic.model.trigger;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
-import magic.model.action.DrawAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 
-public abstract class MagicAtDrawTrigger extends MagicTrigger<MagicPlayer> {
-    public MagicAtDrawTrigger(final int priority) {
+public abstract class AtDrawTrigger extends MagicTrigger<MagicPlayer> {
+    public AtDrawTrigger(final int priority) {
         super(priority);
     }
 
-    public MagicAtDrawTrigger() {}
+    public AtDrawTrigger() {}
 
     public MagicTriggerType getType() {
         return MagicTriggerType.AtDraw;
     }
-    
-    public static MagicAtDrawTrigger create(final MagicSourceEvent sourceEvent) {
-        return new MagicAtDrawTrigger() {
+
+    public static AtDrawTrigger create(final MagicSourceEvent sourceEvent) {
+        return new AtDrawTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer drawPlayer) {
                 return sourceEvent.getEvent(permanent, drawPlayer);
             }
         };
     }
-    
-    public static MagicAtDrawTrigger createYour(final MagicSourceEvent sourceEvent) {
-        return new MagicAtDrawTrigger() {
+
+    public static AtDrawTrigger createYour(final MagicSourceEvent sourceEvent) {
+        return new AtDrawTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPlayer drawPlayer) {
                 return permanent.isController(drawPlayer);
@@ -39,9 +38,9 @@ public abstract class MagicAtDrawTrigger extends MagicTrigger<MagicPlayer> {
             }
         };
     }
-    
-    public static MagicAtDrawTrigger createOpp(final MagicSourceEvent sourceEvent) {
-        return new MagicAtDrawTrigger() {
+
+    public static AtDrawTrigger createOpp(final MagicSourceEvent sourceEvent) {
+        return new AtDrawTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPlayer drawPlayer) {
                 return permanent.isOpponent(drawPlayer);

@@ -933,21 +933,21 @@ public enum MagicAbility {
     },
     EachDrawStepEffect("At the beginning of each player's draw step, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicAtDrawTrigger.create(
+            card.add(AtDrawTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
     },
     YourDrawStepEffect("At the beginning of your draw step, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicAtDrawTrigger.createYour(
+            card.add(AtDrawTrigger.createYour(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
     },
     OppDrawStepEffect("At the beginning of each (other player|opponent)'s draw step, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicAtDrawTrigger.createOpp(
+            card.add(AtDrawTrigger.createOpp(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }

@@ -10,7 +10,7 @@
             return MagicStatic.acceptLinked(game, source, target);
         }
     },
-    new MagicAtDrawTrigger() {
+    new AtDrawTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             return upkeepPlayer == permanent.getEnchantedPermanent().getController() ?

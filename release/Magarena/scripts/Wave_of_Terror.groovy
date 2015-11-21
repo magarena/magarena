@@ -1,5 +1,5 @@
 [
-    new MagicAtDrawTrigger() {
+    new AtDrawTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer drawPlayer) {
             return drawPlayer == permanent.getController() ?
