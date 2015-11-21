@@ -102,7 +102,7 @@ public enum MagicAbility {
     // keyword abilities
     Undying("undying",60) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicUndyingTrigger.create());
+            card.add(UndyingTrigger.create());
         }
     },
     Persist("persist",60) {

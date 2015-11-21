@@ -8,13 +8,13 @@ import magic.model.action.MagicPlayMod;
 import magic.model.action.ReanimateAction;
 import magic.model.event.MagicEvent;
 
-public class MagicUndyingTrigger extends MagicWhenDiesTrigger {
+public class UndyingTrigger extends MagicWhenDiesTrigger {
 
-    private static final MagicUndyingTrigger INSTANCE = new MagicUndyingTrigger();
+    private static final UndyingTrigger INSTANCE = new UndyingTrigger();
 
-    private MagicUndyingTrigger() {}
+    private UndyingTrigger() {}
 
-    public static final MagicUndyingTrigger create() {
+    public static final UndyingTrigger create() {
         return INSTANCE;
     }
 
