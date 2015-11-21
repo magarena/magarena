@@ -6,19 +6,19 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicTargetFilter;
 import magic.exception.GameException;
 
-public abstract class MagicCantBlockTrigger extends MagicTrigger<MagicPermanent> {
-    public MagicCantBlockTrigger(final int priority) {
+public abstract class CantBlockTrigger extends MagicTrigger<MagicPermanent> {
+    public CantBlockTrigger(final int priority) {
         super(priority);
     }
 
-    public MagicCantBlockTrigger() {}
+    public CantBlockTrigger() {}
 
     public MagicTriggerType getType() {
         return MagicTriggerType.CantBlock;
     }
-    
-    public static MagicCantBlockTrigger create(final MagicTargetFilter<MagicPermanent> filter) {
-        return new MagicCantBlockTrigger() {
+
+    public static CantBlockTrigger create(final MagicTargetFilter<MagicPermanent> filter) {
+        return new CantBlockTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent other) {
                 return filter.accept(permanent, permanent.getController(), other);

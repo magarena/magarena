@@ -1256,7 +1256,7 @@ public enum MagicAbility {
     },
     CantBlockPermanent("(SN )?can't block " + ARG.WORDRUN + "(\\.)?", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicCantBlockTrigger.create(
+            card.add(CantBlockTrigger.create(
                 MagicTargetFilterFactory.Permanent(ARG.wordrun(arg))
             ));
         }
