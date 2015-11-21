@@ -1,7 +1,7 @@
 def choice = new MagicTargetChoice("an untapped land to sacrifice");
 
 [
-    new MagicAtEndOfTurnTrigger() {
+    new AtEndOfTurnTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer turnPlayer) {
             return new MagicEvent(

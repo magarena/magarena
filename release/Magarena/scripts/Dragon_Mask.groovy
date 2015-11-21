@@ -27,7 +27,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new ChangeTurnPTAction(it,2,2));
-                game.doAction(new AddTriggerAction(it,MagicAtEndOfTurnTrigger.Return))
+                game.doAction(new AddTriggerAction(it,AtEndOfTurnTrigger.Return))
             });
         }
     }

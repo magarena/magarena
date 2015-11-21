@@ -1,6 +1,6 @@
 def DISCARD_THREE_CARDS = {
     final MagicSource staleSource, final MagicPlayer stalePlayer ->
-    new MagicAtEndOfTurnTrigger() {
+    new AtEndOfTurnTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {
             game.addDelayedAction(new RemoveTriggerAction(this));

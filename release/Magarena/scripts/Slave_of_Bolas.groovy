@@ -17,7 +17,7 @@
                 game.doAction(new GainControlAction(event.getPlayer(),it));
                 game.doAction(new UntapAction(it));
                 game.doAction(new GainAbilityAction(it,MagicAbility.Haste));
-                game.doAction(new AddTriggerAction(it, MagicAtEndOfTurnTrigger.Sacrifice));
+                game.doAction(new AddTriggerAction(it, AtEndOfTurnTrigger.Sacrifice));
             });
         }
     }

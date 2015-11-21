@@ -961,14 +961,14 @@ public enum MagicAbility {
     },
     EndStepEffect("At the beginning of (the|each) end step, " + ARG.EFFECT, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicAtEndOfTurnTrigger.create(
+            card.add(AtEndOfTurnTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
     },
     YourEndStepEffect("At the beginning of your end step, " + ARG.EFFECT, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicAtEndOfTurnTrigger.createYour(
+            card.add(AtEndOfTurnTrigger.createYour(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }

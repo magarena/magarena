@@ -20,7 +20,7 @@
                     it.getPower(),
                     0
                 ));
-                game.doAction(new AddTriggerAction(it, MagicAtEndOfTurnTrigger.Sacrifice));
+                game.doAction(new AddTriggerAction(it, AtEndOfTurnTrigger.Sacrifice));
             });
         }
     }

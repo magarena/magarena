@@ -23,7 +23,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new GainAbilityAction(it, MagicAbility.Flying));
-                game.doAction(new AddTriggerAction(it, MagicAtEndOfTurnTrigger.Sacrifice));
+                game.doAction(new AddTriggerAction(it, AtEndOfTurnTrigger.Sacrifice));
             });
         }
     }

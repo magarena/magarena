@@ -41,7 +41,7 @@ import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.target.*;
 import magic.model.trigger.AtEndOfCombatTrigger;
-import magic.model.trigger.MagicAtEndOfTurnTrigger;
+import magic.model.trigger.AtEndOfTurnTrigger;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 import magic.model.trigger.MagicPreventDamageTrigger;
 import magic.model.trigger.MagicReboundTrigger;
@@ -2412,7 +2412,7 @@ public enum MagicRuleEventAction {
         new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new AddTriggerAction(event.getPermanent(), MagicAtEndOfTurnTrigger.Sacrifice));
+                game.doAction(new AddTriggerAction(event.getPermanent(), AtEndOfTurnTrigger.Sacrifice));
             }
         }
     ),

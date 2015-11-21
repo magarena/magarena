@@ -40,7 +40,7 @@ def SNOW_MOUNTAIN_CONDITION = new MagicCondition() {
             final MagicPermanent permanent = event.getPermanent();
             game.doAction(new ChangeTurnPTAction(permanent, 2, 0));
             game.doAction(new GainAbilityAction(permanent, MagicAbility.Flying));
-            game.doAction(new AddTurnTriggerAction(permanent, MagicAtEndOfTurnTrigger.Sacrifice))
+            game.doAction(new AddTurnTriggerAction(permanent, AtEndOfTurnTrigger.Sacrifice))
         }
     }
 ]

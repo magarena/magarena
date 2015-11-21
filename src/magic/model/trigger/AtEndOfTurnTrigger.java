@@ -9,28 +9,28 @@ import magic.model.action.SacrificeAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 
-public abstract class MagicAtEndOfTurnTrigger extends MagicTrigger<MagicPlayer> {
-    public MagicAtEndOfTurnTrigger(final int priority) {
+public abstract class AtEndOfTurnTrigger extends MagicTrigger<MagicPlayer> {
+    public AtEndOfTurnTrigger(final int priority) {
         super(priority);
     }
 
-    public MagicAtEndOfTurnTrigger() {}
+    public AtEndOfTurnTrigger() {}
 
     public MagicTriggerType getType() {
         return MagicTriggerType.AtEndOfTurn;
     }
-    
-    public static final MagicAtEndOfTurnTrigger create(final MagicSourceEvent sourceEvent) {
-        return new MagicAtEndOfTurnTrigger() {
+
+    public static final AtEndOfTurnTrigger create(final MagicSourceEvent sourceEvent) {
+        return new AtEndOfTurnTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
                 return sourceEvent.getEvent(permanent);
             }
         };
     }
-    
-    public static final MagicAtEndOfTurnTrigger createYour(final MagicSourceEvent sourceEvent) {
-        return new MagicAtEndOfTurnTrigger() {
+
+    public static final AtEndOfTurnTrigger createYour(final MagicSourceEvent sourceEvent) {
+        return new AtEndOfTurnTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
                 return sourceEvent.getEvent(permanent);
@@ -42,7 +42,7 @@ public abstract class MagicAtEndOfTurnTrigger extends MagicTrigger<MagicPlayer> 
         };
     }
 
-    public static final MagicAtEndOfTurnTrigger Sacrifice = new MagicAtEndOfTurnTrigger() {
+    public static final AtEndOfTurnTrigger Sacrifice = new AtEndOfTurnTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {
             return new MagicEvent(
@@ -56,8 +56,8 @@ public abstract class MagicAtEndOfTurnTrigger extends MagicTrigger<MagicPlayer> 
             game.doAction(new SacrificeAction(event.getPermanent()));
         }
     };
-    
-    public static final MagicAtEndOfTurnTrigger ExileAtEnd = new MagicAtEndOfTurnTrigger() {
+
+    public static final AtEndOfTurnTrigger ExileAtEnd = new AtEndOfTurnTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {
             return new MagicEvent(
@@ -71,9 +71,9 @@ public abstract class MagicAtEndOfTurnTrigger extends MagicTrigger<MagicPlayer> 
             game.doAction(new RemoveFromPlayAction(event.getPermanent(), MagicLocationType.Exile));
         }
     };
-    
-    public static final MagicAtEndOfTurnTrigger ExileAtYourEnd(final MagicPlayer your) {
-        return new MagicAtEndOfTurnTrigger() {
+
+    public static final AtEndOfTurnTrigger ExileAtYourEnd(final MagicPlayer your) {
+        return new AtEndOfTurnTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {
                 return your.getId() == eotPlayer.getId() ?
@@ -90,8 +90,8 @@ public abstract class MagicAtEndOfTurnTrigger extends MagicTrigger<MagicPlayer> 
             }
         };
     };
-    
-    public static final MagicAtEndOfTurnTrigger Return = new MagicAtEndOfTurnTrigger() {
+
+    public static final AtEndOfTurnTrigger Return = new AtEndOfTurnTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer eocPlayer) {
             return new MagicEvent(

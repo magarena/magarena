@@ -46,7 +46,7 @@ def ST = new MagicStatic(MagicLayer.Type) {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
             game.doAction(new BecomesCreatureAction(permanent, PT(event.getRefInt()), ST));
-            game.doAction(new AddTriggerAction(permanent, MagicAtEndOfTurnTrigger.Sacrifice));
+            game.doAction(new AddTriggerAction(permanent, AtEndOfTurnTrigger.Sacrifice));
         }
     }
 ]

@@ -37,7 +37,7 @@ def COULD_ATTACK = new MagicCondition() {
             game.doAction(new GainAbilityAction(permanent, MagicAbility.CanAttackWithDefender));
             game.doAction(new AddTurnTriggerAction(
                 permanent,
-                MagicAtEndOfTurnTrigger.ExileAtEnd
+                AtEndOfTurnTrigger.ExileAtEnd
             ));
         }
     }

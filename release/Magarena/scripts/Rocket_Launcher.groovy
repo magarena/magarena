@@ -5,7 +5,7 @@ def Control_Since_Last_Turn = new MagicCondition() {
     }
 }
 
-def DestroyAtEoT = new MagicAtEndOfTurnTrigger() {
+def DestroyAtEoT = new AtEndOfTurnTrigger() {
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {
         return new MagicEvent(

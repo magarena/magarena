@@ -15,7 +15,7 @@
             event.processTargetPermanent(game, {
                 final int X = CREATURE_CARD_FROM_GRAVEYARD.filter(event).size();
                 game.doAction(new ChangeTurnPTAction(it, X, 0));
-                game.doAction(new AddTriggerAction(it, MagicAtEndOfTurnTrigger.Sacrifice));            
+                game.doAction(new AddTriggerAction(it, AtEndOfTurnTrigger.Sacrifice));            
             });
         }
     }

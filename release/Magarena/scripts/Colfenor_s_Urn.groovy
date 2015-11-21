@@ -25,7 +25,7 @@
             }
         }
     },
-    new MagicAtEndOfTurnTrigger() {
+    new AtEndOfTurnTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer endOfTurnPlayer) {
             return permanent.getExiledCards().size() >= 3 ?

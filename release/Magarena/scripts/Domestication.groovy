@@ -1,7 +1,7 @@
 def EFFECT = MagicRuleEventAction.create("Sacrifice SN.");
 
 [
-    new MagicAtEndOfTurnTrigger() {
+    new AtEndOfTurnTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
             final MagicPermanent enchantedCreature=permanent.getEnchantedPermanent();

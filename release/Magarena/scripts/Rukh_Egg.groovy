@@ -12,7 +12,7 @@
         @Override
         public void executeEvent(final MagicGame outerGame, final MagicEvent event) {
             //insert trigger to act at the beginning of the next end step
-            outerGame.doAction(new AddTriggerAction(new MagicAtEndOfTurnTrigger() {
+            outerGame.doAction(new AddTriggerAction(new AtEndOfTurnTrigger() {
                 @Override
                 public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer eotPlayer) {
                     game.doAction(new PlayTokenAction(

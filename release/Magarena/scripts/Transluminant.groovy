@@ -1,4 +1,4 @@
-def trigger = new MagicAtEndOfTurnTrigger() {
+def trigger = new AtEndOfTurnTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {
             return new MagicEvent(

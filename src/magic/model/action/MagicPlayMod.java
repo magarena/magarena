@@ -15,7 +15,7 @@ import magic.model.MagicManaCost;
 import magic.model.MagicSource;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.AtEndOfCombatTrigger;
-import magic.model.trigger.MagicAtEndOfTurnTrigger;
+import magic.model.trigger.AtEndOfTurnTrigger;
 import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicMorphActivation;
@@ -30,13 +30,13 @@ public enum MagicPlayMod implements MagicPermanentAction {
     },
     EXILE_AT_END_OF_TURN("Exile (it|them|that token) at the beginning of the next end step") {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
-            game.doAction(new AddTriggerAction(perm, MagicAtEndOfTurnTrigger.ExileAtEnd));
+            game.doAction(new AddTriggerAction(perm, AtEndOfTurnTrigger.ExileAtEnd));
         }
     },
     EXILE_AT_END_OF_YOUR_TURN("Exile it at the beginning of your next end step") {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             final MagicPlayer controller = perm.getController();
-            game.doAction(new AddTriggerAction(perm, MagicAtEndOfTurnTrigger.ExileAtYourEnd(controller)));
+            game.doAction(new AddTriggerAction(perm, AtEndOfTurnTrigger.ExileAtYourEnd(controller)));
         }
     },
     EXILE_AT_END_OF_YOUR_TURN2("At the beginning of your next end step, exile it") {
@@ -51,12 +51,12 @@ public enum MagicPlayMod implements MagicPermanentAction {
     },
     SACRIFICE_AT_END_OF_TURN("Sacrifice (it|those tokens) at the beginning of the next end step") {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
-            game.doAction(new AddTriggerAction(perm, MagicAtEndOfTurnTrigger.Sacrifice));
+            game.doAction(new AddTriggerAction(perm, AtEndOfTurnTrigger.Sacrifice));
         }
     },
     RETURN_AT_END_OF_TURN() {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
-            game.doAction(new AddTriggerAction(perm, MagicAtEndOfTurnTrigger.Return));
+            game.doAction(new AddTriggerAction(perm, AtEndOfTurnTrigger.Return));
         }
     },
     ATTACKING("attacking") {
