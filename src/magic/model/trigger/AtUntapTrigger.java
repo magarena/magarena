@@ -6,28 +6,28 @@ import magic.model.MagicPlayer;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 
-public abstract class MagicAtUntapTrigger extends MagicTrigger<MagicPlayer> {
-    public MagicAtUntapTrigger(final int priority) {
+public abstract class AtUntapTrigger extends MagicTrigger<MagicPlayer> {
+    public AtUntapTrigger(final int priority) {
         super(priority);
     }
 
-    public MagicAtUntapTrigger() {}
+    public AtUntapTrigger() {}
 
     public MagicTriggerType getType() {
         return MagicTriggerType.AtUntap;
     }
-    
-    public static final MagicAtUntapTrigger create(final MagicSourceEvent sourceEvent) {
-        return new MagicAtUntapTrigger() {
+
+    public static final AtUntapTrigger create(final MagicSourceEvent sourceEvent) {
+        return new AtUntapTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
                 return sourceEvent.getEvent(permanent);
             }
         };
     }
-    
-    public static final MagicAtUntapTrigger createYour(final MagicSourceEvent sourceEvent) {
-        return new MagicAtUntapTrigger() {
+
+    public static final AtUntapTrigger createYour(final MagicSourceEvent sourceEvent) {
+        return new AtUntapTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
                 return sourceEvent.getEvent(permanent);

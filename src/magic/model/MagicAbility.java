@@ -661,7 +661,7 @@ public enum MagicAbility {
     ChooseNotUntap("You may choose not to untap SN during your untap step\\.",0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.addAbility(DoesNotUntap);
-            card.add(MagicAtUntapTrigger.createYour(
+            card.add(AtUntapTrigger.createYour(
                 MagicRuleEventAction.create("If SN is tapped, you may untap SN.")
             ));
         }
