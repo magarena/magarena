@@ -6,19 +6,19 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 import magic.model.target.MagicTargetFilter;
 
-public abstract class MagicWhenOtherDiesTrigger extends MagicTrigger<MagicPermanent> {
-    public MagicWhenOtherDiesTrigger(final int priority) {
+public abstract class WhenOtherDiesTrigger extends MagicTrigger<MagicPermanent> {
+    public WhenOtherDiesTrigger(final int priority) {
         super(priority);
     }
 
-    public MagicWhenOtherDiesTrigger() {}
+    public WhenOtherDiesTrigger() {}
 
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenOtherDies;
     }
-    
-    public static final MagicWhenOtherDiesTrigger createSelfOrAnother(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
-        return new MagicWhenOtherDiesTrigger() {
+
+    public static final WhenOtherDiesTrigger createSelfOrAnother(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
+        return new WhenOtherDiesTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent died) {
                 return permanent == died || filter.accept(permanent, permanent.getController(), died);
@@ -29,9 +29,9 @@ public abstract class MagicWhenOtherDiesTrigger extends MagicTrigger<MagicPerman
             }
         };
     }
-    
-    public static final MagicWhenOtherDiesTrigger create(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
-        return new MagicWhenOtherDiesTrigger() {
+
+    public static final WhenOtherDiesTrigger create(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
+        return new WhenOtherDiesTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent died) {
                 return filter.accept(permanent, permanent.getController(), died);

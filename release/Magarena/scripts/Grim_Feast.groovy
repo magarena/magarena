@@ -1,5 +1,5 @@
 [
-    new MagicWhenOtherDiesTrigger() {
+    new WhenOtherDiesTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent died) {
             return (died.isCreature() && permanent.isOpponent(died.getOwner())) ?

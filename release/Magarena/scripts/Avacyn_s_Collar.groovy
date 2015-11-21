@@ -1,7 +1,7 @@
 def effect = MagicRuleEventAction.create("Put a 1/1 white Spirit creature token with flying onto the battlefield.")
 
 [
-    new MagicWhenOtherDiesTrigger() {
+    new WhenOtherDiesTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent died) {
             final MagicPermanent equipped = permanent.getEquippedCreature();

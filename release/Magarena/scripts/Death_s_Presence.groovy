@@ -1,7 +1,7 @@
 def choice = Positive("target creature you control");
 
 [
-    new MagicWhenOtherDiesTrigger() {
+    new WhenOtherDiesTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent died) {
             return died.hasType(MagicType.Creature) && died.isFriend(permanent) ?
