@@ -7,11 +7,11 @@ import magic.model.action.TapAction;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicEvent;
 
-public class MagicTappedIntoPlayUnlessTrigger extends MagicWhenComesIntoPlayTrigger {
+public class EntersTappedUnlessTrigger extends MagicWhenComesIntoPlayTrigger {
 
     private final MagicCondition condition;
 
-    public MagicTappedIntoPlayUnlessTrigger(final MagicCondition condition) {
+    public EntersTappedUnlessTrigger(final MagicCondition condition) {
         super(MagicTrigger.REPLACEMENT);
         this.condition = condition;
     }

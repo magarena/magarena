@@ -551,7 +551,7 @@ public enum MagicAbility {
     EntersTappedUnless("SN enters the battlefield tapped unless "+ARG.COND+"\\.", -10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicCondition condition = MagicConditionParser.build(ARG.cond(arg));
-            card.add(new MagicTappedIntoPlayUnlessTrigger(MagicConditionFactory.Unless(condition)));
+            card.add(new EntersTappedUnlessTrigger(MagicConditionFactory.Unless(condition)));
         }
     },
     WhenMonstrous("When SN becomes monstrous, " + ARG.EFFECT, 0) {
