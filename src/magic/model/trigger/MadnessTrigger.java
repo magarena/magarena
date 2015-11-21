@@ -16,28 +16,28 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
 import magic.model.stack.MagicCardOnStack;
 
-public class MagicMadnessTrigger extends MagicWhenPutIntoGraveyardTrigger {
+public class MadnessTrigger extends MagicWhenPutIntoGraveyardTrigger {
 
     private final MagicManaCost cost;
-    
-    public MagicMadnessTrigger(final MagicManaCost aCost) {
+
+    public MadnessTrigger(final MagicManaCost aCost) {
         super(MagicTrigger.REPLACEMENT);
         cost = aCost;
     }
-    
+
     @Override
     public boolean accept(final MagicPermanent permanent, final MoveCardAction act) {
         return super.accept(permanent, act) && act.from(MagicLocationType.OwnersHand);
     }
-    
+
     @Override
     public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MoveCardAction act) {
         //Activate discard triggers
         game.executeTrigger(MagicTriggerType.WhenOtherPutIntoGraveyard, act);
-        
+
         //Change discard location so that MoveCardAction does nothing
         act.setToLocation(MagicLocationType.Play);
-        
+
         return new MagicEvent(
             act.card,
             new MagicMayChoice(
@@ -67,7 +67,7 @@ public class MagicMadnessTrigger extends MagicWhenPutIntoGraveyardTrigger {
             game.doAction(new MoveCardAction(card,MagicLocationType.Play,MagicLocationType.Graveyard));
         }
     }
-    
+
     private MagicEventAction EVENT_ACTION = new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

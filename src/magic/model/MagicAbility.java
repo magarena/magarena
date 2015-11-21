@@ -427,7 +427,7 @@ public enum MagicAbility {
     },
     Madness("madness " + ARG.MANACOST,0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(new MagicMadnessTrigger(MagicManaCost.create(ARG.manacost(arg))));
+            card.add(new MadnessTrigger(MagicManaCost.create(ARG.manacost(arg))));
         }
     },
     Morph("morph( |—)" + ARG.COST, 10) {
