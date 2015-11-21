@@ -2591,6 +2591,8 @@ public class MagicTargetFilterFactory {
         single.put("red or green enchantment you control", RED_OR_GREEN_ENCHANTMENT_YOU_CONTROL);
         single.put("untapped mountain you control", UNTAPPED_MOUNTAIN_YOU_CONTROL);
         single.put("tapped artifact, creature, or land you control", TAPPED_ARTIFACT_CREATURE_AND_LAND_YOU_CONTROL);
+        single.put("untapped artifact, creature, or land you control", UNTAPPED_ARTIFACT_CREATURE_OR_LAND_YOU_CONTROL);
+
 
         // <color|type|subtype> an opponent controls
         single.put("permanent an opponent controls", PERMANENT_AN_OPPONENT_CONTROLS);
@@ -2664,7 +2666,6 @@ public class MagicTargetFilterFactory {
         single.put("creature with three or more level counters on it", CREATURE_AT_LEAST_3_LEVEL_COUNTERS);
         single.put("tapped basic land", TAPPED_BASIC_LAND);
         single.put("untapped land", UNTAPPED_LAND);
-        single.put("untapped artifact, creature, or land you control", UNTAPPED_ARTIFACT_CREATURE_OR_LAND_YOU_CONTROL);
         single.put("non-Aura enchantment", NON_AURA_ENCHANTMENT);
         single.put("attacking Human", ATTACKING_HUMAN);
 
