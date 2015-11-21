@@ -10,7 +10,8 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.getPlayer().setLife(5);
+            final MagicPlayer player = event.getPlayer();
+            game.doAction(new ChangeLifeAction(player, 5 - player.getLife()));
         }
     }
 ]
