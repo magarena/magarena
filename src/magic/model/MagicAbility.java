@@ -225,7 +225,7 @@ public enum MagicAbility {
     },
     Storm("storm", 20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicStormTrigger.create());
+            card.add(StormTrigger.create());
         }
     },
     Annihilator("annihilator " + ARG.NUMBER + "(\\.)?", 80) {
