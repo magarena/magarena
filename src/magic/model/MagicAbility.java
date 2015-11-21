@@ -162,7 +162,7 @@ public enum MagicAbility {
     Soulshift("soulshift " + ARG.NUMBER,20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
-            card.add(new MagicSoulshiftTrigger(n));
+            card.add(new SoulshiftTrigger(n));
         }
     },
     Fading("fading " + ARG.NUMBER,-20) {
