@@ -237,7 +237,7 @@ public enum MagicAbility {
     Miracle("miracle " + ARG.MANACOST, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
-            card.add(new MagicMiracleTrigger(manaCost));
+            card.add(new MiracleTrigger(manaCost));
         }
     },
     Kicker("kicker( |—)" + ARG.COST, 0) {

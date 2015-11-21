@@ -12,11 +12,11 @@ import magic.model.event.MagicEvent;
 import magic.model.action.AIRevealAction;
 import magic.model.action.CastCardAction;
 
-public class MagicMiracleTrigger extends MagicWhenDrawnTrigger {
+public class MiracleTrigger extends MagicWhenDrawnTrigger {
 
     private final MagicManaCost cost;
 
-    public MagicMiracleTrigger(final MagicManaCost cost) {
+    public MiracleTrigger(final MagicManaCost cost) {
         this.cost = cost;
     }
 
