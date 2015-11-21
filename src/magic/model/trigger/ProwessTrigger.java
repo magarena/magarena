@@ -7,13 +7,13 @@ import magic.model.action.ChangeTurnPTAction;
 import magic.model.event.MagicEvent;
 import magic.model.stack.MagicCardOnStack;
 
-public class MagicProwessTrigger extends MagicWhenOtherSpellIsCastTrigger {
+public class ProwessTrigger extends MagicWhenOtherSpellIsCastTrigger {
 
-    private static final MagicProwessTrigger INSTANCE = new MagicProwessTrigger() ;
+    private static final ProwessTrigger INSTANCE = new ProwessTrigger() ;
 
-    public MagicProwessTrigger() {}
+    public ProwessTrigger() {}
 
-    public static final MagicProwessTrigger create() {
+    public static final ProwessTrigger create() {
         return INSTANCE;
     }
 

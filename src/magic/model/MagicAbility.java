@@ -393,7 +393,7 @@ public enum MagicAbility {
     },
     Prowess("prowess",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicProwessTrigger.create());
+            card.add(ProwessTrigger.create());
         }
     },
     Exploit("exploit", 10) {
