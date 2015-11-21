@@ -155,7 +155,7 @@ public enum MagicAbility {
     Bushido("bushido " + ARG.NUMBER,20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
-            card.add(new MagicBecomesBlockedPumpTrigger(n,n));
+            card.add(new BecomesBlockedPumpTrigger(n,n));
             card.add(new MagicWhenBlocksPumpTrigger(n,n));
         }
     },

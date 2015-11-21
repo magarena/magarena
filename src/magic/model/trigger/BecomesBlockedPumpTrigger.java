@@ -5,12 +5,12 @@ import magic.model.MagicPermanent;
 import magic.model.action.ChangeTurnPTAction;
 import magic.model.event.MagicEvent;
 
-public class MagicBecomesBlockedPumpTrigger extends MagicWhenSelfBecomesBlockedTrigger {
+public class BecomesBlockedPumpTrigger extends MagicWhenSelfBecomesBlockedTrigger {
 
     private final int amountPower;
     private final int amountToughness;
 
-    public MagicBecomesBlockedPumpTrigger(final int amountPower, final int amountToughness) {
+    public BecomesBlockedPumpTrigger(final int amountPower, final int amountToughness) {
         this.amountPower = amountPower;
         this.amountToughness = amountToughness;
     }
