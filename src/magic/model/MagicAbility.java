@@ -113,7 +113,7 @@ public enum MagicAbility {
     Modular("modular " + ARG.NUMBER, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
-            card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,n));
+            card.add(new EntersWithCounterTrigger(MagicCounterType.PlusOne,n));
             card.add(ModularTrigger.create());
         }
     },
@@ -168,7 +168,7 @@ public enum MagicAbility {
     Fading("fading " + ARG.NUMBER,-20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
-            card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Fade,n));
+            card.add(new EntersWithCounterTrigger(MagicCounterType.Fade,n));
             card.add(MagicFadeVanishCounterTrigger.Fade);
         }
     },
@@ -176,7 +176,7 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
             if (n > 0) {
-                card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.Time,n));
+                card.add(new EntersWithCounterTrigger(MagicCounterType.Time,n));
             }
             card.add(MagicFadeVanishCounterTrigger.Time);
         }
@@ -336,7 +336,7 @@ public enum MagicAbility {
     Graft("graft " + ARG.NUMBER,10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
-            card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,n));
+            card.add(new EntersWithCounterTrigger(MagicCounterType.PlusOne,n));
             card.add(MagicWhenOtherComesIntoPlayTrigger.Graft);
         }
     },
@@ -538,13 +538,13 @@ public enum MagicAbility {
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(ARG.word2(arg));
             final String each = ARG.wordrun(arg);
             if ("a".equalsIgnoreCase(amount) && "time it was kicked".equalsIgnoreCase(each)) {
-                card.add(MagicComesIntoPlayWithCounterTrigger.MultiKicker(counterType));
+                card.add(EntersWithCounterTrigger.MultiKicker(counterType));
             } else if (amount.equalsIgnoreCase("X")) {
-                card.add(MagicComesIntoPlayWithCounterTrigger.XCounters(counterType));
+                card.add(EntersWithCounterTrigger.XCounters(counterType));
             } else {
                 final int n = EnglishToInt.convert(amount);
                 final MagicAmount count = MagicAmountParser.build(each);
-                card.add(new MagicComesIntoPlayWithCounterTrigger(counterType,n,count));
+                card.add(new EntersWithCounterTrigger(counterType,n,count));
             }
         }
     },

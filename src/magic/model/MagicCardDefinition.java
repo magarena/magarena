@@ -18,7 +18,7 @@ import magic.model.mstatic.MagicCDA;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
-import magic.model.trigger.MagicComesIntoPlayWithCounterTrigger;
+import magic.model.trigger.EntersWithCounterTrigger;
 import magic.model.trigger.MagicWhenDrawnTrigger;
 import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
 import magic.model.trigger.MagicWhenSpellIsCastTrigger;
@@ -149,15 +149,15 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public void setHidden() {
         hidden = true;
     }
-    
+
     public boolean isHidden() {
         return hidden;
     }
-    
+
     public void setOverlay() {
         overlay = true;
     }
-    
+
     public boolean isOverlay() {
         return overlay;
     }
@@ -165,14 +165,14 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public boolean isPlayable() {
         return overlay == false && token == false && hidden == false;
     }
-    
+
     public boolean isNonPlayable() {
         return isPlayable() == false;
     }
 
     public void loadAbilities() {
         if (startingLoyalty > 0 && comeIntoPlayTriggers.isEmpty()) {
-            add(new MagicComesIntoPlayWithCounterTrigger(
+            add(new EntersWithCounterTrigger(
                 MagicCounterType.Loyalty,
                 startingLoyalty
             ));
@@ -593,7 +593,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public int getColorFlags() {
         return colorFlags;
     }
-    
+
     public int applyCDAColor(final MagicGame game, final MagicPlayer player, final int initColor) {
         int color = initColor;
         for (final MagicCDA lv : CDAs) {
@@ -672,7 +672,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
         costEvent.addAll(getAdditionalCostEvent(source));
         return costEvent;
     }
-        
+
     public List<MagicEvent> getAdditionalCostEvent(final MagicCard source) {
         final List<MagicEvent> costEvent = new ArrayList<MagicEvent>();
         for (final MagicEventSource eventSource : costEventSources) {
@@ -706,7 +706,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     public int getManaSource(final MagicColor color) {
         return manaSource[color.ordinal()];
     }
-    
+
     public void setStartingLoyalty(final int aLoyalty) {
         startingLoyalty = aLoyalty;
     }
