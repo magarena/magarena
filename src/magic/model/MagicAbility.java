@@ -119,7 +119,7 @@ public enum MagicAbility {
     },
     Flanking("flanking(\\.)?",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicFlankingTrigger.create());
+            card.add(FlankingTrigger.create());
         }
     },
     Changeling("changeling",10) {

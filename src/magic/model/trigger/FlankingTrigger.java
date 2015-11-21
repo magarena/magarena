@@ -7,13 +7,13 @@ import magic.model.MagicPermanentList;
 import magic.model.action.ChangeTurnPTAction;
 import magic.model.event.MagicEvent;
 
-public class MagicFlankingTrigger extends MagicWhenBecomesBlockedTrigger {
+public class FlankingTrigger extends MagicWhenBecomesBlockedTrigger {
 
-    private static final MagicFlankingTrigger INSTANCE = new MagicFlankingTrigger();
+    private static final FlankingTrigger INSTANCE = new FlankingTrigger();
 
-    private MagicFlankingTrigger() {}
+    private FlankingTrigger() {}
 
-    public static MagicFlankingTrigger create() {
+    public static FlankingTrigger create() {
         return INSTANCE;
     }
 
