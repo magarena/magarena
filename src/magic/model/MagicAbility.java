@@ -605,7 +605,7 @@ public enum MagicAbility {
     },
     HeroicEffect("Whenever you cast a spell that targets SN, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicHeroicTrigger.create(
+            card.add(HeroicTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
