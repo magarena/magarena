@@ -1,6 +1,6 @@
 def choice = new MagicTargetChoice("an enchantment card from your library");
 [
-    new MagicWhenDiesTrigger() {
+    new WhenSelfDiesTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent died) {
             return permanent.getCounters(MagicCounterType.Time) == 0 ?

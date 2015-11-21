@@ -8,7 +8,7 @@ import magic.model.action.MagicPlayMod;
 import magic.model.action.ReanimateAction;
 import magic.model.event.MagicEvent;
 
-public class UndyingTrigger extends MagicWhenDiesTrigger {
+public class UndyingTrigger extends WhenSelfDiesTrigger {
 
     private static final UndyingTrigger INSTANCE = new UndyingTrigger();
 

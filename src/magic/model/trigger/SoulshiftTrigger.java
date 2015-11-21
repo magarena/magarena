@@ -16,7 +16,7 @@ import magic.model.target.MagicTargetFilterFactory;
 import magic.model.target.MagicTargetHint;
 import magic.model.target.Operator;
 
-public class SoulshiftTrigger extends MagicWhenDiesTrigger {
+public class SoulshiftTrigger extends WhenSelfDiesTrigger {
 
     private final int cmc;
 

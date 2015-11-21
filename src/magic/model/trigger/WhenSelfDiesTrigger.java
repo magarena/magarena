@@ -5,22 +5,22 @@ import magic.model.MagicPermanent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 
-public abstract class MagicWhenDiesTrigger extends MagicWhenOtherDiesTrigger {
-    public static final MagicWhenDiesTrigger create(final MagicSourceEvent sourceEvent) {
-        return new MagicWhenDiesTrigger() {
+public abstract class WhenSelfDiesTrigger extends MagicWhenOtherDiesTrigger {
+    public static final WhenSelfDiesTrigger create(final MagicSourceEvent sourceEvent) {
+        return new WhenSelfDiesTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent source, final MagicPermanent died) {
                 return sourceEvent.getEvent(source);
             }
         };
     }
-    
-    public MagicWhenDiesTrigger(final int priority) {
+
+    public WhenSelfDiesTrigger(final int priority) {
         super(priority);
     }
-    
-    public MagicWhenDiesTrigger() {}
-    
+
+    public WhenSelfDiesTrigger() {}
+
     @Override
     public boolean accept(final MagicPermanent source, final MagicPermanent died) {
         return source == died;

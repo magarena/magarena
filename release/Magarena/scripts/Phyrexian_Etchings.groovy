@@ -16,7 +16,7 @@
             game.doAction(new DrawAction(event.getPlayer(),amount));
         }
     },
-    new MagicWhenDiesTrigger() {     
+    new WhenSelfDiesTrigger() {     
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent died) {    
             new MagicEvent(
