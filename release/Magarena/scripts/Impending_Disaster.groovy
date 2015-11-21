@@ -1,5 +1,5 @@
 [
-    new MagicAtYourUpkeepTrigger() {
+    new AtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             return game.getNrOfPermanents(MagicType.Land) >= 7 ?

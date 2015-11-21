@@ -10,7 +10,7 @@ def AN_UNTAPPED_ISLAND_YOU_CONTROL = new MagicTargetChoice(
 );
 
 [
-    new MagicAtYourUpkeepTrigger() {
+    new AtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             return new MagicEvent(

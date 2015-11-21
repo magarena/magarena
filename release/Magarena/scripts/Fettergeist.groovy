@@ -1,5 +1,5 @@
 [
-    new MagicAtYourUpkeepTrigger() {
+    new AtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
             final int amount = upkeepPlayer.getNrOfPermanents(CREATURE_YOU_CONTROL.except(permanent));

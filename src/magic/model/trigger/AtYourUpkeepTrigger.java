@@ -12,20 +12,20 @@ import magic.model.action.RevealAction;
 import magic.model.action.LookAction;
 import magic.model.choice.MagicMayChoice;
 
-public abstract class MagicAtYourUpkeepTrigger extends AtUpkeepTrigger {
-    public MagicAtYourUpkeepTrigger(final int priority) {
+public abstract class AtYourUpkeepTrigger extends AtUpkeepTrigger {
+    public AtYourUpkeepTrigger(final int priority) {
         super(priority);
     }
 
-    public MagicAtYourUpkeepTrigger() {}
+    public AtYourUpkeepTrigger() {}
 
     @Override
     public boolean accept(final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
         return permanent.isController(upkeepPlayer);
     }
 
-    public static MagicAtYourUpkeepTrigger create(final MagicSourceEvent sourceEvent) {
-        return new MagicAtYourUpkeepTrigger() {
+    public static AtYourUpkeepTrigger create(final MagicSourceEvent sourceEvent) {
+        return new AtYourUpkeepTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
                 return sourceEvent.getEvent(permanent);
@@ -33,8 +33,8 @@ public abstract class MagicAtYourUpkeepTrigger extends AtUpkeepTrigger {
         };
     }
 
-    public static MagicAtYourUpkeepTrigger kinship(final String effect, final MagicEventAction action) {
-        return new MagicAtYourUpkeepTrigger() {
+    public static AtYourUpkeepTrigger kinship(final String effect, final MagicEventAction action) {
+        return new AtYourUpkeepTrigger() {
             final MagicEventAction ACTION = new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {

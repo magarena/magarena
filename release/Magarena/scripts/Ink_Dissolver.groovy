@@ -4,7 +4,7 @@ def action = {
 }
 
 [
-    MagicAtYourUpkeepTrigger.kinship(
+    AtYourUpkeepTrigger.kinship(
         "each opponent puts the top three cards of his or her library into his or her graveyard.",
         action
     )

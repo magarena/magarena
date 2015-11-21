@@ -1,7 +1,7 @@
 def choice = new MagicTargetChoice("an Island to sacrifice");
 
 [
-    new MagicAtYourUpkeepTrigger() {
+    new AtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             return new MagicEvent(

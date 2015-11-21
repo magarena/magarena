@@ -620,7 +620,7 @@ public enum MagicAbility {
     Kinship("At the beginning of your upkeep, you may look at the top card of your library. If it shares a creature type with SN, you may reveal it. If you do, " + ARG.EFFECT, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final String effect = ARG.effect(arg);
-            card.add(MagicAtYourUpkeepTrigger.kinship(effect, MagicRuleEventAction.create(effect).getAction()));
+            card.add(AtYourUpkeepTrigger.kinship(effect, MagicRuleEventAction.create(effect).getAction()));
         }
     },
     CDAPT("SN's power and toughness are each equal to( " + ARG.NUMBER + " plus)? " + ARG.ANY + "\\.", 0) {
@@ -926,7 +926,7 @@ public enum MagicAbility {
     },
     YourUpkeepEffect("At the beginning of your upkeep, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicAtYourUpkeepTrigger.create(
+            card.add(AtYourUpkeepTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }

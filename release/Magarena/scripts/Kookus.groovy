@@ -5,7 +5,7 @@ def KEEPER_OF_KOOKUS = new MagicPermanentFilterImpl() {
 };
 
 [
-    new MagicAtYourUpkeepTrigger() {
+    new AtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             return upkeepPlayer.controlsPermanent(KEEPER_OF_KOOKUS) == false ?

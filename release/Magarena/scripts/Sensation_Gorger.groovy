@@ -10,7 +10,7 @@ def action = {
 }
                             
 [
-    MagicAtYourUpkeepTrigger.kinship(
+    AtYourUpkeepTrigger.kinship(
         "each player discards his or her hand, then draws four cards.", 
         action
     )

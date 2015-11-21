@@ -9,5 +9,5 @@ def action = {
 }
 
 [
-    MagicAtYourUpkeepTrigger.kinship("play that card without paying its mana cost.", action)
+    AtYourUpkeepTrigger.kinship("play that card without paying its mana cost.", action)
 ]

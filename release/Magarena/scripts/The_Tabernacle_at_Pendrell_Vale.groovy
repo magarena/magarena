@@ -1,5 +1,5 @@
 
-def TabernacleUpkeep = new MagicAtYourUpkeepTrigger() {
+def TabernacleUpkeep = new AtYourUpkeepTrigger() {
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
         return new MagicEvent(
