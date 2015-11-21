@@ -1,4 +1,4 @@
-def cantGainLife = new MagicIfLifeWouldChangeTrigger() {
+def cantGainLife = new IfLifeWouldChangeTrigger() {
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final ChangeLifeAction act) {
         if (act.getLifeChange() > 0) {
