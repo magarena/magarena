@@ -7,7 +7,6 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 import magic.model.trigger.*;
-import magic.model.target.MagicTarget;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
 import magic.model.condition.MagicConditionParser;
@@ -232,7 +231,7 @@ public enum MagicAbility {
     Annihilator("annihilator " + ARG.NUMBER + "(\\.)?", 80) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
-            card.add(new MagicAnnihilatorTrigger(n));
+            card.add(new AnnihilatorTrigger(n));
         }
     },
     Miracle("miracle " + ARG.MANACOST, 0) {

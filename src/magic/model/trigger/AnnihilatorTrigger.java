@@ -7,10 +7,10 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSacrificePermanentEvent;
 
-public class MagicAnnihilatorTrigger extends MagicWhenAttacksTrigger {
+public class AnnihilatorTrigger extends MagicWhenAttacksTrigger {
     private final int amount;
 
-    public MagicAnnihilatorTrigger(final int amount) {
+    public AnnihilatorTrigger(final int amount) {
         this.amount = amount;
     }
 
