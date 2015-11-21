@@ -529,7 +529,7 @@ public enum MagicAbility {
     },
     EntersTapped("SN enters the battlefield tapped\\.", -10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicTappedIntoPlayTrigger.create());
+            card.add(EntersTappedTrigger.create());
         }
     },
     EntersWithCounter("SN enters the battlefield with " + ARG.WORD1 + " " + ARG.WORD2 + " counter(s)? on it( for each " + ARG.WORDRUN + ")?\\.", 0) {

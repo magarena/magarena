@@ -6,15 +6,15 @@ import magic.model.MagicPermanent;
 import magic.model.action.TapAction;
 import magic.model.event.MagicEvent;
 
-public class MagicTappedIntoPlayTrigger extends MagicWhenComesIntoPlayTrigger {
+public class EntersTappedTrigger extends MagicWhenComesIntoPlayTrigger {
 
-    private static final MagicTappedIntoPlayTrigger INSTANCE = new MagicTappedIntoPlayTrigger();
+    private static final EntersTappedTrigger INSTANCE = new EntersTappedTrigger();
 
-    private MagicTappedIntoPlayTrigger() {
+    private EntersTappedTrigger() {
         super(MagicTrigger.REPLACEMENT);
     }
 
-    public static MagicTappedIntoPlayTrigger create() {
+    public static EntersTappedTrigger create() {
         return INSTANCE;
     }
 
