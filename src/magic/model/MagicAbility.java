@@ -114,7 +114,7 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
             card.add(new MagicComesIntoPlayWithCounterTrigger(MagicCounterType.PlusOne,n));
-            card.add(MagicModularTrigger.create());
+            card.add(ModularTrigger.create());
         }
     },
     Flanking("flanking(\\.)?",10) {

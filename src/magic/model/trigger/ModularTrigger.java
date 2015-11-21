@@ -10,13 +10,13 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicPumpTargetPicker;
 
-public class MagicModularTrigger extends MagicWhenDiesTrigger {
+public class ModularTrigger extends MagicWhenDiesTrigger {
 
-    private static final MagicModularTrigger INSTANCE = new MagicModularTrigger();
+    private static final ModularTrigger INSTANCE = new ModularTrigger();
 
-    private MagicModularTrigger() {}
+    private ModularTrigger() {}
 
-    public static MagicModularTrigger create() {
+    public static ModularTrigger create() {
         return INSTANCE;
     }
 
