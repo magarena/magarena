@@ -13,7 +13,7 @@
             return source.getController().getDevotion(MagicColor.Green, MagicColor.Red) < 7;
         }
     },
-    new MagicAtBeginOfCombatTrigger() {
+    new AtBeginOfCombatTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer attackingPlayer) {
             return permanent.getController() == attackingPlayer ? 

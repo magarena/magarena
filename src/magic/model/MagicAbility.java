@@ -954,7 +954,7 @@ public enum MagicAbility {
     },
     BeginCombatEffect("At the beginning of combat on your turn, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicAtBeginOfCombatTrigger.createYour(
+            card.add(AtBeginOfCombatTrigger.createYour(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }

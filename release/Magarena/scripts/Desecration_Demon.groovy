@@ -1,5 +1,5 @@
 [
-    new MagicAtBeginOfCombatTrigger() {
+    new AtBeginOfCombatTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
             return new MagicEvent(

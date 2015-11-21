@@ -6,28 +6,28 @@ import magic.model.MagicPlayer;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 
-public abstract class MagicAtBeginOfCombatTrigger extends MagicTrigger<MagicPlayer> {
-    public MagicAtBeginOfCombatTrigger(final int priority) {
+public abstract class AtBeginOfCombatTrigger extends MagicTrigger<MagicPlayer> {
+    public AtBeginOfCombatTrigger(final int priority) {
         super(priority);
     }
 
-    public MagicAtBeginOfCombatTrigger() {}
+    public AtBeginOfCombatTrigger() {}
 
     public MagicTriggerType getType() {
         return MagicTriggerType.AtBeginOfCombat;
     }
-    
-    public static final MagicAtBeginOfCombatTrigger create(final MagicSourceEvent sourceEvent) {
-        return new MagicAtBeginOfCombatTrigger() {
+
+    public static final AtBeginOfCombatTrigger create(final MagicSourceEvent sourceEvent) {
+        return new AtBeginOfCombatTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer turnPlayer) {
                 return sourceEvent.getEvent(permanent);
             }
         };
     }
-    
-    public static final MagicAtBeginOfCombatTrigger createYour(final MagicSourceEvent sourceEvent) {
-        return new MagicAtBeginOfCombatTrigger() {
+
+    public static final AtBeginOfCombatTrigger createYour(final MagicSourceEvent sourceEvent) {
+        return new AtBeginOfCombatTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer turnPlayer) {
                 return sourceEvent.getEvent(permanent);
