@@ -203,7 +203,7 @@ public enum MagicAbility {
     Rampage("rampage " + ARG.NUMBER,20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
-            card.add(new MagicRampageTrigger(n));
+            card.add(new RampageTrigger(n));
         }
     },
     Champion("champion (a |an )?" + ARG.ANY,-10) {

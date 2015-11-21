@@ -6,10 +6,10 @@ import magic.model.MagicPermanentList;
 import magic.model.action.ChangeTurnPTAction;
 import magic.model.event.MagicEvent;
 
-public class MagicRampageTrigger extends MagicWhenBecomesBlockedTrigger {
+public class RampageTrigger extends MagicWhenBecomesBlockedTrigger {
     private final int n;
 
-    public MagicRampageTrigger(final int n) {
+    public RampageTrigger(final int n) {
         this.n = n;
     }
 
