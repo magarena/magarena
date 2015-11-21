@@ -2586,7 +2586,7 @@ public class MagicTargetFilterFactory {
         single.put("snow Island you control", SNOW_ISLAND_YOU_CONTROL);
         single.put("snow Plains you control", SNOW_PLAINS_YOU_CONTROL);
         single.put("snow Forest you control", SNOW_FOREST_YOU_CONTROL);
-        single.put("legendary snakes you control", LEGENDARY_SNAKE_YOU_CONTROL);
+        single.put("legendary snake you control", LEGENDARY_SNAKE_YOU_CONTROL);
         single.put("untapped land you control", UNTAPPED_LAND_YOU_CONTROL);
         single.put("red or green enchantment you control", RED_OR_GREEN_ENCHANTMENT_YOU_CONTROL);
         single.put("untapped mountain you control", UNTAPPED_MOUNTAIN_YOU_CONTROL);
@@ -2779,6 +2779,7 @@ public class MagicTargetFilterFactory {
             .replaceAll("\\bwalls\\b", "wall")
             .replaceAll("\\bshrines\\b", "shrine")
             .replaceAll("\\bscions\\b", "scion")
+            .replaceAll("\\bsnakes\\b", "snake")
             .replaceAll("\\band\\b", "or")
             .replaceAll("\\bthem\\b", "it")
             .replaceAll("\\bin your hand\\b", "from your hand")
