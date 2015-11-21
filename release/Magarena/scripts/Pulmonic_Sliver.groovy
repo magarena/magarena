@@ -1,4 +1,4 @@
-def PulmonicTrigger = new MagicWouldBeMovedTrigger() {
+def PulmonicTrigger = new WouldBeMovedTrigger() {
     @Override
     public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MoveCardAction act) {
         if (permanent == act.permanent && act.to(MagicLocationType.Graveyard)) {

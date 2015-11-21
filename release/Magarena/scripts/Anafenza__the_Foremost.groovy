@@ -1,5 +1,5 @@
 [
-    new MagicWouldBeMovedTrigger(MagicTrigger.REPLACEMENT) {
+    new WouldBeMovedTrigger(MagicTrigger.REPLACEMENT) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MoveCardAction act) {
             if (act.card.hasType(MagicType.Creature) &&
