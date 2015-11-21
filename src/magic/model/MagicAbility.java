@@ -265,7 +265,7 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicManaCost cost = MagicManaCost.create(ARG.manacost(arg));
             card.add(MagicMultikickerCost.Replicate(cost));
-            card.add(MagicReplicateTrigger.create());
+            card.add(ReplicateTrigger.create());
         }
     },
     Evoke("evoke " + ARG.MANACOST, 20) {

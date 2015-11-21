@@ -6,13 +6,13 @@ import magic.model.action.CopyCardOnStackAction;
 import magic.model.event.MagicEvent;
 import magic.model.stack.MagicCardOnStack;
 
-public class MagicReplicateTrigger extends MagicWhenSpellIsCastTrigger {
+public class ReplicateTrigger extends MagicWhenSpellIsCastTrigger {
 
-    private static final MagicReplicateTrigger INSTANCE = new MagicReplicateTrigger();
+    private static final ReplicateTrigger INSTANCE = new ReplicateTrigger();
 
-    private MagicReplicateTrigger() {}
+    private ReplicateTrigger() {}
 
-    public static final MagicReplicateTrigger create() {
+    public static final ReplicateTrigger create() {
         return INSTANCE;
     }
 
