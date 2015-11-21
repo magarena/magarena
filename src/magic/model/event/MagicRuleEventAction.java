@@ -44,7 +44,7 @@ import magic.model.trigger.AtEndOfCombatTrigger;
 import magic.model.trigger.AtEndOfTurnTrigger;
 import magic.model.trigger.AtUpkeepTrigger;
 import magic.model.trigger.MagicPreventDamageTrigger;
-import magic.model.trigger.MagicReboundTrigger;
+import magic.model.trigger.ReboundTrigger;
 
 public enum MagicRuleEventAction {
     DestroyIt(
@@ -2873,7 +2873,7 @@ public enum MagicRuleEventAction {
                 final MagicCardOnStack spell = event.getCardOnStack();
                 if (spell.getFromLocation() == MagicLocationType.OwnersHand) {
                     game.doAction(new ChangeCardDestinationAction(spell, MagicLocationType.Exile));
-                    game.doAction(new AddTriggerAction(new MagicReboundTrigger(spell.getCard())));
+                    game.doAction(new AddTriggerAction(new ReboundTrigger(spell.getCard())));
                 }
             }
         };

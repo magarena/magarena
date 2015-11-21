@@ -19,7 +19,7 @@
                 if (spell.getFromLocation() == MagicLocationType.OwnersHand) {
                     game.doAction(new ChangeCardDestinationAction(spell, MagicLocationType.Exile));
                     game.logAppendMessage(event.getPlayer()," Rebound.");
-                    game.doAction(new AddTriggerAction(new MagicReboundTrigger(spell.getCard())));
+                    game.doAction(new AddTriggerAction(new ReboundTrigger(spell.getCard())));
                 }
             });
         }

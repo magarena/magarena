@@ -10,11 +10,11 @@ import magic.model.event.MagicEvent;
 import magic.model.action.RemoveTriggerAction;
 import magic.model.action.CastCardAction;
 
-public class MagicReboundTrigger extends AtUpkeepTrigger {
+public class ReboundTrigger extends AtUpkeepTrigger {
 
     private final MagicCard staleCard;
 
-    public MagicReboundTrigger(final MagicCard card) {
+    public ReboundTrigger(final MagicCard card) {
         staleCard = card;
     }
 
