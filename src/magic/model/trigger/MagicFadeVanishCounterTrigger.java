@@ -9,7 +9,7 @@ import magic.model.action.SacrificeAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
 
-public class MagicFadeVanishCounterTrigger extends MagicAtUpkeepTrigger {
+public class MagicFadeVanishCounterTrigger extends AtUpkeepTrigger {
 
     private final MagicCounterType counterType;
 
@@ -76,7 +76,7 @@ public class MagicFadeVanishCounterTrigger extends MagicAtUpkeepTrigger {
             ));
         }
     };
-    
+
     private static final MagicEventAction REMOVE_AND_SAC = new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -88,7 +88,7 @@ public class MagicFadeVanishCounterTrigger extends MagicAtUpkeepTrigger {
             game.doAction(new SacrificeAction(event.getPermanent()));
         }
     };
-    
+
     private static final MagicEventAction REMOVE_FADE_COUNTER = new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

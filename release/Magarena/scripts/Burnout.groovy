@@ -17,7 +17,7 @@
                     game.doAction(new CounterItemOnStackAction(it));
                 }
                 game.doAction(new AddTriggerAction(
-                    MagicAtUpkeepTrigger.YouDraw(event.getSource(), event.getPlayer())
+                    AtUpkeepTrigger.YouDraw(event.getSource(), event.getPlayer())
                 ));
             });
         }

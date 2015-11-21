@@ -7,7 +7,7 @@ import magic.model.MagicPlayerState;
 import magic.model.event.MagicEvent;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
-import magic.model.trigger.MagicAtUpkeepTrigger;
+import magic.model.trigger.AtUpkeepTrigger;
 
 public class ChangePlayerStateAction extends MagicAction {
 
@@ -35,7 +35,7 @@ public class ChangePlayerStateAction extends MagicAction {
             };
             game.doAction(new AddStaticAction(exhausted));
 
-            MagicAtUpkeepTrigger cleanup = new MagicAtUpkeepTrigger() {
+            AtUpkeepTrigger cleanup = new AtUpkeepTrigger() {
                 @Override
                 public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
                     if (player.getId() == upkeepPlayer.getId()) {

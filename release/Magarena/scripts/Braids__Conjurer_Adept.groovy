@@ -1,7 +1,7 @@
 def choice = new MagicTargetChoice("an artifact, creature, or land card from your hand");
 
 [
-    new MagicAtUpkeepTrigger() {
+    new AtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             return new MagicEvent(

@@ -11,7 +11,7 @@ def AN_UNTAPPED_ARTIFACT_CREATURE_OR_LAND_YOU_CONTROL = new MagicTargetChoice(
 );
 
 [
-    new MagicAtUpkeepTrigger() {
+    new AtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
             return new MagicEvent(

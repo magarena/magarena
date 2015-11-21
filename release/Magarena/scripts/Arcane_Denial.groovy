@@ -7,7 +7,7 @@ def DrawOne = {
 
 def DrawUpTo = {
     final MagicSource staleSource, final MagicPlayer stalePlayer ->
-    return new MagicAtUpkeepTrigger() {
+    return new AtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
             game.addDelayedAction(new RemoveTriggerAction(this));
@@ -60,7 +60,7 @@ def DrawUpTo = {
                     DrawUpTo(event.getSource(), spell.getController())
                 ));
                 game.doAction(new AddTriggerAction(
-                    MagicAtUpkeepTrigger.YouDraw(event.getSource(), event.getPlayer())
+                    AtUpkeepTrigger.YouDraw(event.getSource(), event.getPlayer())
                 ));
             });
         }

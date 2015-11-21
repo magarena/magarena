@@ -1,7 +1,7 @@
 def choice = new MagicTargetChoice("a nonbasic land to sacrifice");
 
 [
-    new MagicAtUpkeepTrigger() {
+    new AtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
             return new MagicEvent(

@@ -1,6 +1,6 @@
 def DelayedTrigger = {
     final MagicCard staleCard, final MagicPlayer stalePlayer ->
-    return new MagicAtUpkeepTrigger() {
+    return new AtUpkeepTrigger() {
         @Override
         public boolean accept(final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
             return stalePlayer.getId() == upkeepPlayer.getId();

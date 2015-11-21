@@ -12,7 +12,7 @@ import magic.model.action.RevealAction;
 import magic.model.action.LookAction;
 import magic.model.choice.MagicMayChoice;
 
-public abstract class MagicAtYourUpkeepTrigger extends MagicAtUpkeepTrigger {
+public abstract class MagicAtYourUpkeepTrigger extends AtUpkeepTrigger {
     public MagicAtYourUpkeepTrigger(final int priority) {
         super(priority);
     }
@@ -23,7 +23,7 @@ public abstract class MagicAtYourUpkeepTrigger extends MagicAtUpkeepTrigger {
     public boolean accept(final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
         return permanent.isController(upkeepPlayer);
     }
-    
+
     public static MagicAtYourUpkeepTrigger create(final MagicSourceEvent sourceEvent) {
         return new MagicAtYourUpkeepTrigger() {
             @Override
@@ -32,7 +32,7 @@ public abstract class MagicAtYourUpkeepTrigger extends MagicAtUpkeepTrigger {
             }
         };
     }
-    
+
     public static MagicAtYourUpkeepTrigger kinship(final String effect, final MagicEventAction action) {
         return new MagicAtYourUpkeepTrigger() {
             final MagicEventAction ACTION = new MagicEventAction() {
@@ -45,13 +45,13 @@ public abstract class MagicAtYourUpkeepTrigger extends MagicAtUpkeepTrigger {
                     }
                 }
             };
-            
+
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
                 return new MagicEvent(
                     permanent,
                     this,
-                    "PN looks at the top card of his or her library. If it shares a creature type with SN, PN may reveal it. " + 
+                    "PN looks at the top card of his or her library. If it shares a creature type with SN, PN may reveal it. " +
                     "If PN does, " +  effect
                 );
             }

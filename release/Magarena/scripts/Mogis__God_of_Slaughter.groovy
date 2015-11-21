@@ -13,7 +13,7 @@
             return source.getController().getDevotion(MagicColor.Black, MagicColor.Red) < 7;
         }
     },
-    new MagicAtUpkeepTrigger() {
+    new AtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
             return permanent.isOpponent(upkeepPlayer) ? 

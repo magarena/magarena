@@ -919,7 +919,7 @@ public enum MagicAbility {
     },
     EachUpkeepEffect("At the beginning of each (player's )?upkeep, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicAtUpkeepTrigger.create(
+            card.add(AtUpkeepTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }

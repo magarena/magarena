@@ -16,7 +16,7 @@
             game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.Charge,event.getRefInt()));
         }
     },
-    new MagicAtUpkeepTrigger() {
+    new AtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             return permanent.hasCounters(MagicCounterType.Charge) ?

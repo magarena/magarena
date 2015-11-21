@@ -29,7 +29,7 @@
                 final MagicPermanent permanent ->
                 game.doAction(new RemoveAllFromPlayAction(permanent.getAuraPermanents(), MagicLocationType.OwnersHand));
                 game.doAction(new AddTriggerAction(
-                    MagicAtUpkeepTrigger.YouDraw(event.getSource(), event.getPlayer())
+                    AtUpkeepTrigger.YouDraw(event.getSource(), event.getPlayer())
                 ));
             });
         }

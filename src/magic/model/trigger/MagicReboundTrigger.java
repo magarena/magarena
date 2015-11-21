@@ -5,21 +5,19 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicPermanent;
 import magic.model.MagicLocationType;
-import magic.model.MagicPayedCost;
-import magic.model.stack.MagicCardOnStack;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 import magic.model.action.RemoveTriggerAction;
 import magic.model.action.CastCardAction;
 
-public class MagicReboundTrigger extends MagicAtUpkeepTrigger {
+public class MagicReboundTrigger extends AtUpkeepTrigger {
 
     private final MagicCard staleCard;
 
     public MagicReboundTrigger(final MagicCard card) {
         staleCard = card;
     }
-    
+
     @Override
     public boolean accept(final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
         return staleCard.getOwner().getId() == upkeepPlayer.getId();

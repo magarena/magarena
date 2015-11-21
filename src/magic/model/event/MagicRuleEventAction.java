@@ -42,7 +42,7 @@ import magic.model.stack.MagicItemOnStack;
 import magic.model.target.*;
 import magic.model.trigger.AtEndOfCombatTrigger;
 import magic.model.trigger.AtEndOfTurnTrigger;
-import magic.model.trigger.MagicAtUpkeepTrigger;
+import magic.model.trigger.AtUpkeepTrigger;
 import magic.model.trigger.MagicPreventDamageTrigger;
 import magic.model.trigger.MagicReboundTrigger;
 
@@ -683,7 +683,7 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     game.doAction(new AddTriggerAction(
-                        MagicAtUpkeepTrigger.YouDraw(
+                        AtUpkeepTrigger.YouDraw(
                             event.getSource(),
                             event.getPlayer()
                         )
@@ -703,7 +703,7 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     game.doAction(new AddTriggerAction(
-                        MagicAtUpkeepTrigger.YouDraw(
+                        AtUpkeepTrigger.YouDraw(
                             event.getSource(),
                             event.getPlayer()
                         )

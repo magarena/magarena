@@ -1,18 +1,16 @@
 package magic.model.trigger;
 
 import magic.model.MagicGame;
-import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.MagicPlayer;
 import magic.model.action.ChangeStateAction;
 import magic.model.action.SacrificeAction;
 import magic.model.choice.MagicMayChoice;
-import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicMatchedCostEvent;
 
-public class MagicEchoTrigger extends MagicAtUpkeepTrigger {
+public class MagicEchoTrigger extends AtUpkeepTrigger {
 
     private final MagicMatchedCostEvent matchedCost;
 

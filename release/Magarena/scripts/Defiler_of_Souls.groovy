@@ -1,7 +1,7 @@
 def choice = new MagicTargetChoice("a monocolored creature to sacrifice");
 
 [
-    new MagicAtUpkeepTrigger() {
+    new AtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer player) {
             return new MagicEvent(

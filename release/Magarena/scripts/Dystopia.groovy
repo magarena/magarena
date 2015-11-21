@@ -12,7 +12,7 @@ def A_GREEN_OR_WHITE_PERMANENT_YOU_CONTROL = new MagicTargetChoice(
 );
 
 [
-    new MagicAtUpkeepTrigger() {
+    new AtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
             return upkeepPlayer.controlsPermanent(MagicColor.Green) || upkeepPlayer.controlsPermanent(MagicColor.White) ?

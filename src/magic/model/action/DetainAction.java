@@ -7,7 +7,7 @@ import magic.model.MagicPlayer;
 import magic.model.event.MagicEvent;
 import magic.model.mstatic.MagicLayer;
 import magic.model.mstatic.MagicStatic;
-import magic.model.trigger.MagicAtUpkeepTrigger;
+import magic.model.trigger.AtUpkeepTrigger;
 
 import java.util.Set;
 
@@ -23,8 +23,8 @@ public class DetainAction extends MagicAction {
             flags.add(MagicAbility.CantActivateAbilities);
         }
     };
-        
-    private final MagicAtUpkeepTrigger Cleanup = new MagicAtUpkeepTrigger() {
+
+    private final AtUpkeepTrigger Cleanup = new AtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             if (upkeepPlayer.getId() == sourceController.getId()) {

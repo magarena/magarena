@@ -20,7 +20,7 @@
             event.processTargetPermanent(game, {
                 game.doAction(new ChangeTurnPTAction(it,amount,0));
                 game.doAction(new AddTriggerAction(
-                    MagicAtUpkeepTrigger.YouDraw(
+                    AtUpkeepTrigger.YouDraw(
                         event.getSource(), 
                         event.getPlayer()
                     )
