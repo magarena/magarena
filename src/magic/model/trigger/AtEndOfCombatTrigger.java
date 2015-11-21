@@ -11,18 +11,18 @@ import magic.model.action.RemoveFromPlayAction;
 import magic.model.action.SacrificeAction;
 import magic.model.event.MagicEvent;
 
-public abstract class MagicAtEndOfCombatTrigger extends MagicTrigger<MagicPlayer> {
-    public MagicAtEndOfCombatTrigger(final int priority) {
+public abstract class AtEndOfCombatTrigger extends MagicTrigger<MagicPlayer> {
+    public AtEndOfCombatTrigger(final int priority) {
         super(priority);
     }
 
-    public MagicAtEndOfCombatTrigger() {}
+    public AtEndOfCombatTrigger() {}
 
     public MagicTriggerType getType() {
         return MagicTriggerType.AtEndOfCombat;
     }
-    
-    public static final MagicAtEndOfCombatTrigger Return = new MagicAtEndOfCombatTrigger() {
+
+    public static final AtEndOfCombatTrigger Return = new AtEndOfCombatTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer eocPlayer) {
             return new MagicEvent(
@@ -39,8 +39,8 @@ public abstract class MagicAtEndOfCombatTrigger extends MagicTrigger<MagicPlayer
             ));
         }
     };
-    
-    public static final MagicAtEndOfCombatTrigger Exile = new MagicAtEndOfCombatTrigger() {
+
+    public static final AtEndOfCombatTrigger Exile = new AtEndOfCombatTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eocPlayer) {
             return new MagicEvent(
@@ -54,8 +54,8 @@ public abstract class MagicAtEndOfCombatTrigger extends MagicTrigger<MagicPlayer
             game.doAction(new RemoveFromPlayAction(event.getPermanent(), MagicLocationType.Exile));
         }
     };
-    
-    public static final MagicAtEndOfCombatTrigger Destroy = new MagicAtEndOfCombatTrigger() {
+
+    public static final AtEndOfCombatTrigger Destroy = new AtEndOfCombatTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eocPlayer) {
             return new MagicEvent(
@@ -69,8 +69,8 @@ public abstract class MagicAtEndOfCombatTrigger extends MagicTrigger<MagicPlayer
             game.doAction(new DestroyAction(event.getPermanent()));
         }
     };
-    
-    public static final MagicAtEndOfCombatTrigger Sacrifice = new MagicAtEndOfCombatTrigger() {
+
+    public static final AtEndOfCombatTrigger Sacrifice = new AtEndOfCombatTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {
             return new MagicEvent(
@@ -84,8 +84,8 @@ public abstract class MagicAtEndOfCombatTrigger extends MagicTrigger<MagicPlayer
             game.doAction(new SacrificeAction(event.getPermanent()));
         }
     };
-    
-    public static final MagicAtEndOfCombatTrigger Clockwork = new MagicAtEndOfCombatTrigger() {
+
+    public static final AtEndOfCombatTrigger Clockwork = new AtEndOfCombatTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eocPlayer) {
             return new MagicEvent(

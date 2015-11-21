@@ -2,7 +2,6 @@ package magic.model.event;
 
 import java.util.Collection;
 import java.util.List;
-import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -41,7 +40,7 @@ import magic.model.mstatic.MagicLayer;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.target.*;
-import magic.model.trigger.MagicAtEndOfCombatTrigger;
+import magic.model.trigger.AtEndOfCombatTrigger;
 import magic.model.trigger.MagicAtEndOfTurnTrigger;
 import magic.model.trigger.MagicAtUpkeepTrigger;
 import magic.model.trigger.MagicPreventDamageTrigger;
@@ -81,7 +80,7 @@ public enum MagicRuleEventAction {
                     if (it.isValid()) {
                         game.doAction(new AddTurnTriggerAction(
                             it,
-                            MagicAtEndOfCombatTrigger.Destroy
+                            AtEndOfCombatTrigger.Destroy
                         ));
                     }
                 }
@@ -1499,7 +1498,7 @@ public enum MagicRuleEventAction {
         new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game,final MagicEvent event) {
-                game.doAction(new AddTurnTriggerAction(event.getPermanent(), MagicAtEndOfCombatTrigger.Clockwork));
+                game.doAction(new AddTurnTriggerAction(event.getPermanent(), AtEndOfCombatTrigger.Clockwork));
             }
         }
     ),
@@ -1691,7 +1690,7 @@ public enum MagicRuleEventAction {
                     if (it.isValid()) {
                         game.doAction(new AddTriggerAction(
                             it,
-                            MagicAtEndOfCombatTrigger.Return
+                            AtEndOfCombatTrigger.Return
                         ));
                     }
                 }
@@ -2424,7 +2423,7 @@ public enum MagicRuleEventAction {
         new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new AddTriggerAction(event.getPermanent(), MagicAtEndOfCombatTrigger.Sacrifice));
+                game.doAction(new AddTriggerAction(event.getPermanent(), AtEndOfCombatTrigger.Sacrifice));
             }
         }
     ),

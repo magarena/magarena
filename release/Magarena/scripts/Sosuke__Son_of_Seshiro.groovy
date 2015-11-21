@@ -21,7 +21,7 @@
             event.processRefPermanent(game, {
                 game.doAction(new AddTurnTriggerAction(
                     it,
-                    MagicAtEndOfCombatTrigger.Destroy
+                    AtEndOfCombatTrigger.Destroy
                 ))
             });
         }

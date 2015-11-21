@@ -2,7 +2,6 @@ package magic.model.action;
 
 import java.util.List;
 import java.util.LinkedList;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import magic.model.MagicGame;
@@ -15,7 +14,7 @@ import magic.model.MagicCounterType;
 import magic.model.MagicManaCost;
 import magic.model.MagicSource;
 import magic.model.mstatic.MagicStatic;
-import magic.model.trigger.MagicAtEndOfCombatTrigger;
+import magic.model.trigger.AtEndOfCombatTrigger;
 import magic.model.trigger.MagicAtEndOfTurnTrigger;
 import magic.model.trigger.MagicWhenLeavesPlayTrigger;
 import magic.model.event.MagicEvent;
@@ -26,7 +25,7 @@ import magic.model.event.MagicPayManaCostEvent;
 public enum MagicPlayMod implements MagicPermanentAction {
     EXILE_AT_END_OF_COMBAT("Exile that token at end of combat") {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
-            game.doAction(new AddTriggerAction(perm, MagicAtEndOfCombatTrigger.Exile));
+            game.doAction(new AddTriggerAction(perm, AtEndOfCombatTrigger.Exile));
         }
     },
     EXILE_AT_END_OF_TURN("Exile (it|them|that token) at the beginning of the next end step") {
