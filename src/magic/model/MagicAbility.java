@@ -149,7 +149,7 @@ public enum MagicAbility {
     },
     LivingWeapon("living weapon", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicLivingWeaponTrigger.create());
+            card.add(LivingWeaponTrigger.create());
         }
     },
     Bushido("bushido " + ARG.NUMBER,20) {
