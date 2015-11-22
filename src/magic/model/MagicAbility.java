@@ -79,7 +79,7 @@ public enum MagicAbility {
     // generalize intrinsic abilities (store a filter inside a trigger)
     ProtectionFromPermanent("protection from " + ARG.WORDRUN + "(\\.)?", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicProtectionTrigger.create(
+            card.add(ProtectionTrigger.create(
                 MagicTargetFilterFactory.Permanent(ARG.wordrun(arg))
             ));
         }

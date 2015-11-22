@@ -6,19 +6,19 @@ import magic.model.event.MagicEvent;
 import magic.model.target.MagicTargetFilter;
 import magic.exception.GameException;
 
-public abstract class MagicProtectionTrigger extends MagicTrigger<MagicPermanent> {
-    public MagicProtectionTrigger(final int priority) {
+public abstract class ProtectionTrigger extends MagicTrigger<MagicPermanent> {
+    public ProtectionTrigger(final int priority) {
         super(priority);
     }
 
-    public MagicProtectionTrigger() {}
+    public ProtectionTrigger() {}
 
     public MagicTriggerType getType() {
         return MagicTriggerType.Protection;
     }
-    
-    public static MagicProtectionTrigger create(final MagicTargetFilter<MagicPermanent> filter) {
-        return new MagicProtectionTrigger() {
+
+    public static ProtectionTrigger create(final MagicTargetFilter<MagicPermanent> filter) {
+        return new ProtectionTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent other) {
                 return filter.accept(permanent, permanent.getController(), other);
