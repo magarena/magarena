@@ -8,7 +8,7 @@ import magic.model.MagicPlayerState;
 import magic.model.action.ChangeCountersAction;
 import magic.model.event.MagicEvent;
 
-public class BloodthirstTrigger extends MagicWhenComesIntoPlayTrigger {
+public class BloodthirstTrigger extends EntersBattlefieldTrigger {
 
     private final int amount;
 

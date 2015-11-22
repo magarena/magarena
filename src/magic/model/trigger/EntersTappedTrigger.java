@@ -6,7 +6,7 @@ import magic.model.MagicPermanent;
 import magic.model.action.TapAction;
 import magic.model.event.MagicEvent;
 
-public class EntersTappedTrigger extends MagicWhenComesIntoPlayTrigger {
+public class EntersTappedTrigger extends EntersBattlefieldTrigger {
 
     private static final EntersTappedTrigger INSTANCE = new EntersTappedTrigger();
 

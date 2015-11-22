@@ -15,19 +15,19 @@ import magic.model.event.MagicSacrificePermanentEvent;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
 
-public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPayedCost> {
+public abstract class EntersBattlefieldTrigger extends MagicTrigger<MagicPayedCost> {
 
-    public static MagicWhenComesIntoPlayTrigger create(final MagicSourceEvent sourceEvent) {
-        return new MagicWhenComesIntoPlayTrigger() {
+    public static EntersBattlefieldTrigger create(final MagicSourceEvent sourceEvent) {
+        return new EntersBattlefieldTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost data) {
                 return sourceEvent.getEvent(permanent);
             }
         };
     }
-    
-    public static final MagicWhenComesIntoPlayTrigger createKicked(final MagicSourceEvent sourceEvent) {
-        return new MagicWhenComesIntoPlayTrigger() {
+
+    public static final EntersBattlefieldTrigger createKicked(final MagicSourceEvent sourceEvent) {
+        return new EntersBattlefieldTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost data) {
                 return sourceEvent.getEvent(permanent);
@@ -38,12 +38,12 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPa
             }
         };
     }
-    
-    public MagicWhenComesIntoPlayTrigger(final int priority) {
+
+    public EntersBattlefieldTrigger(final int priority) {
         super(priority);
     }
-    
-    public MagicWhenComesIntoPlayTrigger() {}
+
+    public EntersBattlefieldTrigger() {}
 
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenComesIntoPlay;
@@ -53,16 +53,16 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPa
     public void change(final MagicCardDefinition cdef) {
         cdef.addTrigger(this);
     }
-    
-    public static final MagicWhenComesIntoPlayTrigger ChooseOpponent = new MagicWhenComesIntoPlayTrigger(MagicTrigger.REPLACEMENT) {
+
+    public static final EntersBattlefieldTrigger ChooseOpponent = new EntersBattlefieldTrigger(MagicTrigger.REPLACEMENT) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
             permanent.setChosenPlayer(permanent.getOpponent());
             return MagicEvent.NONE;
         }
     };
-    
-    public static final MagicWhenComesIntoPlayTrigger Evoke = new MagicWhenComesIntoPlayTrigger() {
+
+    public static final EntersBattlefieldTrigger Evoke = new EntersBattlefieldTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPayedCost payedCost) {
             return payedCost.isKicked() ?
@@ -79,8 +79,8 @@ public abstract class MagicWhenComesIntoPlayTrigger extends MagicTrigger<MagicPa
             game.doAction(new SacrificeAction(event.getPermanent()));
         }
     };
-    
-    public static final MagicWhenComesIntoPlayTrigger Exploit = new MagicWhenComesIntoPlayTrigger() {
+
+    public static final EntersBattlefieldTrigger Exploit = new EntersBattlefieldTrigger() {
         private final MagicEventAction EVENT_ACTION=new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {

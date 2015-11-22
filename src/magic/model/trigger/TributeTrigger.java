@@ -12,7 +12,7 @@ import magic.model.event.MagicEventAction;
 import magic.model.event.MagicSourceEvent;
 import magic.model.stack.MagicTriggerOnStack;
 
-public abstract class TributeTrigger extends MagicWhenComesIntoPlayTrigger {
+public abstract class TributeTrigger extends EntersBattlefieldTrigger {
 
     private final int amt;
 

@@ -1,7 +1,7 @@
 def effect = MagicRuleEventAction.create("return a basic land card from your graveyard to your hand.");
 
 [
-    new MagicWhenComesIntoPlayTrigger() {
+    new EntersBattlefieldTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(

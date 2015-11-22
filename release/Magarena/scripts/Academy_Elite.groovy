@@ -1,5 +1,5 @@
 [
-    new MagicWhenComesIntoPlayTrigger() {
+    new EntersBattlefieldTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPayedCost payedCost) {
             final int amount = INSTANT_OR_SORCERY_CARD_FROM_ALL_GRAVEYARDS.filter(permanent.getController()).size();

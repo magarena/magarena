@@ -7,7 +7,7 @@ import magic.model.action.TapAction;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicEvent;
 
-public class EntersTappedUnlessTrigger extends MagicWhenComesIntoPlayTrigger {
+public class EntersTappedUnlessTrigger extends EntersBattlefieldTrigger {
 
     private final MagicCondition condition;
 

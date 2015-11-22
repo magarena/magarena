@@ -8,7 +8,7 @@ import magic.model.action.TapAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 
-public class MagicRavnicaLandTrigger extends MagicWhenComesIntoPlayTrigger {
+public class MagicRavnicaLandTrigger extends EntersBattlefieldTrigger {
 
     private static final MagicRavnicaLandTrigger INSTANCE = new MagicRavnicaLandTrigger();
 

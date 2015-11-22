@@ -19,7 +19,7 @@ import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 import magic.model.target.MagicTargetHint;
 
-public class ChampionTrigger extends MagicWhenComesIntoPlayTrigger {
+public class ChampionTrigger extends EntersBattlefieldTrigger {
 
     private final MagicSubType[] subtypes;
     private final String targets;

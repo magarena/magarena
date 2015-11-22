@@ -12,7 +12,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicSacrificeTargetPicker;
 
-public class DevourTrigger extends MagicWhenComesIntoPlayTrigger {
+public class DevourTrigger extends EntersBattlefieldTrigger {
 
     private final int amount;
 

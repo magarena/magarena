@@ -9,7 +9,7 @@ def drawCards = {
 }
 
 [
-    new MagicWhenComesIntoPlayTrigger(MagicTrigger.REPLACEMENT) {
+    new EntersBattlefieldTrigger(MagicTrigger.REPLACEMENT) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
             final MagicTargetChoice targetChoice=new MagicTargetChoice(

@@ -17,7 +17,7 @@ import magic.model.event.MagicTiming;
 import magic.model.mstatic.MagicCDA;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicWhenComesIntoPlayTrigger;
+import magic.model.trigger.EntersBattlefieldTrigger;
 import magic.model.trigger.EntersWithCounterTrigger;
 import magic.model.trigger.MagicWhenDrawnTrigger;
 import magic.model.trigger.MagicWhenPutIntoGraveyardTrigger;
@@ -96,7 +96,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     private final Collection<MagicCDA> CDAs = new ArrayList<MagicCDA>();
     private final Collection<MagicTrigger<?>> triggers = new ArrayList<MagicTrigger<?>>();
     private final Collection<MagicStatic> statics=new ArrayList<MagicStatic>();
-    private final LinkedList<MagicWhenComesIntoPlayTrigger> comeIntoPlayTriggers = new LinkedList<MagicWhenComesIntoPlayTrigger>();
+    private final LinkedList<EntersBattlefieldTrigger> comeIntoPlayTriggers = new LinkedList<EntersBattlefieldTrigger>();
     private final Collection<MagicWhenSpellIsCastTrigger> spellIsCastTriggers = new ArrayList<MagicWhenSpellIsCastTrigger>();
     private final Collection<MagicWhenCycleTrigger> cycleTriggers = new ArrayList<MagicWhenCycleTrigger>();
     private final Collection<MagicWhenDrawnTrigger> drawnTriggers = new ArrayList<MagicWhenDrawnTrigger>();
@@ -825,7 +825,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
         cycleTriggers.add(trigger);
     }
 
-    public void addTrigger(final MagicWhenComesIntoPlayTrigger trigger) {
+    public void addTrigger(final EntersBattlefieldTrigger trigger) {
         if (trigger.usesStack()) {
             comeIntoPlayTriggers.add(trigger);
         } else {
@@ -865,7 +865,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
         return cycleTriggers;
     }
 
-    public Collection<MagicWhenComesIntoPlayTrigger> getComeIntoPlayTriggers() {
+    public Collection<EntersBattlefieldTrigger> getComeIntoPlayTriggers() {
         return comeIntoPlayTriggers;
     }
 

@@ -7,7 +7,7 @@ def filter = new MagicPermanentFilterImpl() {
 def choice = new MagicTargetChoice(filter, "target nonland permanent not named Detention Sphere");
 
 [
-    new MagicWhenComesIntoPlayTrigger() {
+    new EntersBattlefieldTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(

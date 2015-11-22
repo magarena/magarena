@@ -10,7 +10,7 @@ def A_NONLAIR_LAND_YOU_CONTROL = new MagicTargetChoice(
 );
 
 [
-    new MagicWhenComesIntoPlayTrigger() {
+    new EntersBattlefieldTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(

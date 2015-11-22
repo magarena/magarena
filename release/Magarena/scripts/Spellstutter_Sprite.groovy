@@ -16,7 +16,7 @@ def TARGET_SPELL_WITH_CONVERTED_COST_X_OR_LESS = {
 }
 
 [
-    new MagicWhenComesIntoPlayTrigger() {
+    new EntersBattlefieldTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
             final int X = permanent.getController().getNrOfPermanents(MagicSubType.Faerie);

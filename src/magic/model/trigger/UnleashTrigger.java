@@ -8,7 +8,7 @@ import magic.model.action.ChangeCountersAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 
-public class UnleashTrigger extends MagicWhenComesIntoPlayTrigger {
+public class UnleashTrigger extends EntersBattlefieldTrigger {
 
     private static final UnleashTrigger INSTANCE = new UnleashTrigger();
 

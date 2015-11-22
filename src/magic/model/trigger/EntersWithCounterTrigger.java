@@ -9,7 +9,7 @@ import magic.model.MagicAmountFactory;
 import magic.model.action.ChangeCountersAction;
 import magic.model.event.MagicEvent;
 
-public class EntersWithCounterTrigger extends MagicWhenComesIntoPlayTrigger {
+public class EntersWithCounterTrigger extends EntersBattlefieldTrigger {
 
     private final MagicCounterType counterType;
     private final int amount;

@@ -12,13 +12,13 @@ import magic.model.event.MagicEvent;
 /**
  * Trigger that occurs when a card with the living weapon mechanic comes into play
  */
-public class LivingWeaponTrigger extends MagicWhenComesIntoPlayTrigger {
+public class LivingWeaponTrigger extends EntersBattlefieldTrigger {
 
-    private static final MagicWhenComesIntoPlayTrigger INSTANCE = new LivingWeaponTrigger();
+    private static final EntersBattlefieldTrigger INSTANCE = new LivingWeaponTrigger();
 
     private LivingWeaponTrigger() {}
 
-    public static MagicWhenComesIntoPlayTrigger create() {
+    public static EntersBattlefieldTrigger create() {
         return INSTANCE;
     }
 

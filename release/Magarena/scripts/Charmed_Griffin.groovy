@@ -14,7 +14,7 @@ def AN_ARTIFACT_OR_ENCHANTMENT_FROM_HAND = new MagicTargetChoice(
 );
 
 [
-    new MagicWhenComesIntoPlayTrigger() {
+    new EntersBattlefieldTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(

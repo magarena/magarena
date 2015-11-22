@@ -15,7 +15,7 @@ def event = {
 }
 
 [
-    new MagicWhenComesIntoPlayTrigger() {
+    new EntersBattlefieldTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPayedCost payedcost) {
             return permanent.getController().controlsPermanent(MagicSubType.Demon) == false ?

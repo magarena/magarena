@@ -272,7 +272,7 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
             card.add(new MagicEvokeActivation(manaCost));
-            card.add(MagicWhenComesIntoPlayTrigger.Evoke);
+            card.add(EntersBattlefieldTrigger.Evoke);
         }
     },
     Transmute("transmute " + ARG.MANACOST, 20) {
@@ -398,7 +398,7 @@ public enum MagicAbility {
     },
     Exploit("exploit", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenComesIntoPlayTrigger.Exploit);
+            card.add(EntersBattlefieldTrigger.Exploit);
         }
     },
     Poisonous("poisonous " + ARG.NUMBER + "(\\.)?", 10) {
@@ -467,21 +467,21 @@ public enum MagicAbility {
     },
     EntersKickedEffect("When SN enters the battlefield, if it was kicked, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenComesIntoPlayTrigger.createKicked(
+            card.add(EntersBattlefieldTrigger.createKicked(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
     },
     EntersEffect("When SN enters the battlefield, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenComesIntoPlayTrigger.create(
+            card.add(EntersBattlefieldTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
     },
     EntersAttackEffect("Whenever SN enters the battlefield or attacks, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenComesIntoPlayTrigger.create(
+            card.add(EntersBattlefieldTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
             card.add(MagicWhenAttacksTrigger.create(
@@ -524,7 +524,7 @@ public enum MagicAbility {
     },
     EntersChooseOpponent("As SN enters the battlefield, choose an opponent\\.", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenComesIntoPlayTrigger.ChooseOpponent);
+            card.add(EntersBattlefieldTrigger.ChooseOpponent);
         }
     },
     EntersTapped("SN enters the battlefield tapped\\.", -10) {
