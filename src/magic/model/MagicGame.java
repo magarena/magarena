@@ -41,7 +41,7 @@ import magic.model.trigger.MagicPermanentTriggerList;
 import magic.model.trigger.MagicPermanentTriggerMap;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
-import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
+import magic.model.trigger.OtherEntersBattlefieldTrigger;
 import magic.model.trigger.PreventDamageTrigger;
 import magic.exception.GameException;
 
@@ -563,7 +563,7 @@ public class MagicGame {
 
         // add Soulbond trigger here
         triggers = new MagicPermanentTriggerMap(additionalTriggers);
-        triggers.add(new MagicPermanentTrigger(0, MagicPermanent.NONE, MagicWhenOtherComesIntoPlayTrigger.Soulbond));
+        triggers.add(new MagicPermanentTrigger(0, MagicPermanent.NONE, OtherEntersBattlefieldTrigger.Soulbond));
         triggers.add(new MagicPermanentTrigger(Long.MAX_VALUE, MagicPermanent.NONE, PreventDamageTrigger.GlobalPreventDamageToTarget));
 
         for (final MagicPlayer player : players) {

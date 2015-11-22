@@ -1,5 +1,5 @@
 [
-    new MagicWhenOtherComesIntoPlayTrigger() {
+    new OtherEntersBattlefieldTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent played) {
             return (played.isEnemy(permanent) && played.isLand()) ?

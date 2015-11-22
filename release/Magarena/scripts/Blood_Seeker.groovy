@@ -1,5 +1,5 @@
 [
-    new MagicWhenOtherComesIntoPlayTrigger() {
+    new OtherEntersBattlefieldTrigger() {
         @Override
         public boolean accept(final MagicPermanent permanent, final MagicPermanent other) {
             return other.isCreature() && other.isEnemy(permanent);

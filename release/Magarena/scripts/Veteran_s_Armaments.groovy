@@ -26,7 +26,7 @@ def evt = {
             return (permanent.getEquippedCreature() == attacker) ? evt(attacker) : MagicEvent.NONE;
         }
     },
-    new MagicWhenOtherComesIntoPlayTrigger() {
+    new OtherEntersBattlefieldTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             return (otherPermanent.isCreature() &&

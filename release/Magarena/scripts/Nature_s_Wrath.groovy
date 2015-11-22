@@ -25,7 +25,7 @@ def AN_ISLAND_OR_BLUE_PERMANENT_YOU_CONTROL = new MagicTargetChoice(
 );
 
 [
-    new MagicWhenOtherComesIntoPlayTrigger() {
+    new OtherEntersBattlefieldTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent otherPermanent) {
             return otherPermanent.hasSubType(MagicSubType.Swamp) || otherPermanent.hasColor(MagicColor.Black) ?
@@ -47,7 +47,7 @@ def AN_ISLAND_OR_BLUE_PERMANENT_YOU_CONTROL = new MagicTargetChoice(
             ));
         }
     },
-    new MagicWhenOtherComesIntoPlayTrigger() {
+    new OtherEntersBattlefieldTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent otherPermanent) {
             return otherPermanent.hasSubType(MagicSubType.Island) || otherPermanent.hasColor(MagicColor.Blue) ?

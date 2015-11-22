@@ -14,19 +14,19 @@ import magic.model.event.MagicSourceEvent;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 
-public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<MagicPermanent> {
-    public MagicWhenOtherComesIntoPlayTrigger(final int priority) {
+public abstract class OtherEntersBattlefieldTrigger extends MagicTrigger<MagicPermanent> {
+    public OtherEntersBattlefieldTrigger(final int priority) {
         super(priority);
     }
 
-    public MagicWhenOtherComesIntoPlayTrigger() {}
+    public OtherEntersBattlefieldTrigger() {}
 
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenOtherComesIntoPlay;
     }
 
-    public static final MagicWhenOtherComesIntoPlayTrigger createSelfOrAnother(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
-        return new MagicWhenOtherComesIntoPlayTrigger() {
+    public static final OtherEntersBattlefieldTrigger createSelfOrAnother(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
+        return new OtherEntersBattlefieldTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent played) {
                 return permanent == played || filter.accept(permanent, permanent.getController(), played);
@@ -37,9 +37,9 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
             }
         };
     }
-    
-    public static final MagicWhenOtherComesIntoPlayTrigger create(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
-        return new MagicWhenOtherComesIntoPlayTrigger() {
+
+    public static final OtherEntersBattlefieldTrigger create(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
+        return new OtherEntersBattlefieldTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent played) {
                 return filter.accept(permanent, permanent.getController(), played);
@@ -51,7 +51,7 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
         };
     }
 
-    public static final MagicWhenOtherComesIntoPlayTrigger Evolve = new MagicWhenOtherComesIntoPlayTrigger() {
+    public static final OtherEntersBattlefieldTrigger Evolve = new OtherEntersBattlefieldTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             return (otherPermanent.isCreature() &&
@@ -78,8 +78,8 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
             }
         }
     };
-    
-    public static final MagicWhenOtherComesIntoPlayTrigger Graft = new MagicWhenOtherComesIntoPlayTrigger() {
+
+    public static final OtherEntersBattlefieldTrigger Graft = new OtherEntersBattlefieldTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             return (otherPermanent.isCreature() &&
@@ -111,7 +111,7 @@ public abstract class MagicWhenOtherComesIntoPlayTrigger extends MagicTrigger<Ma
         }
     };
 
-    public static final MagicWhenOtherComesIntoPlayTrigger Soulbond = new MagicWhenOtherComesIntoPlayTrigger() {
+    public static final OtherEntersBattlefieldTrigger Soulbond = new OtherEntersBattlefieldTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent NONE,final MagicPermanent otherPermanent) {
             final MagicPlayer controller = otherPermanent.getController();

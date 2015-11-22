@@ -283,7 +283,7 @@ public enum MagicAbility {
     },
     Evolve("evolve", 20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenOtherComesIntoPlayTrigger.Evolve);
+            card.add(OtherEntersBattlefieldTrigger.Evolve);
         }
     },
     Extort("extort", 20) {
@@ -337,7 +337,7 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
             card.add(new EntersWithCounterTrigger(MagicCounterType.PlusOne,n));
-            card.add(MagicWhenOtherComesIntoPlayTrigger.Graft);
+            card.add(OtherEntersBattlefieldTrigger.Graft);
         }
     },
     Retrace("retrace",10) {
@@ -756,7 +756,7 @@ public enum MagicAbility {
     },
     SelfOrAnotherYouControlEntersEffect("Whenever SN or another " + ARG.WORDRUN + " enters the battlefield under your control, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenOtherComesIntoPlayTrigger.createSelfOrAnother(
+            card.add(OtherEntersBattlefieldTrigger.createSelfOrAnother(
                 MagicTargetFilterFactory.Permanent(ARG.wordrun(arg) + " you control"),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
@@ -764,7 +764,7 @@ public enum MagicAbility {
     },
     OtherYouControlEntersEffect("Whenever " + ARG.WORDRUN + " enters the battlefield under your control, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenOtherComesIntoPlayTrigger.create(
+            card.add(OtherEntersBattlefieldTrigger.create(
                 MagicTargetFilterFactory.Permanent(ARG.wordrun(arg) + " you control"),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
@@ -772,7 +772,7 @@ public enum MagicAbility {
     },
     SelfOrAnotherEntersEffect("Whenever SN or another " + ARG.WORDRUN + " enters the battlefield, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenOtherComesIntoPlayTrigger.createSelfOrAnother(
+            card.add(OtherEntersBattlefieldTrigger.createSelfOrAnother(
                 MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
@@ -780,7 +780,7 @@ public enum MagicAbility {
     },
     OtherEntersEffect("When(ever)? " + ARG.WORDRUN + " enters the battlefield, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenOtherComesIntoPlayTrigger.create(
+            card.add(OtherEntersBattlefieldTrigger.create(
                 MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));

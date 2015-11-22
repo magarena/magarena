@@ -5,7 +5,7 @@ import magic.model.MagicPermanent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 
-public abstract class LandfallTrigger extends MagicWhenOtherComesIntoPlayTrigger {
+public abstract class LandfallTrigger extends OtherEntersBattlefieldTrigger {
     public LandfallTrigger(final int priority) {
         super(priority);
     }

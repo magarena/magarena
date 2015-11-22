@@ -6,7 +6,7 @@ def CREATURE_OR_LAND_TO_SACRIFICE = new MagicTargetChoice(
 
 
 [
-    new MagicWhenOtherComesIntoPlayTrigger() {
+    new OtherEntersBattlefieldTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent otherPermanent) {
             return otherPermanent.hasType(MagicType.Creature) ?
