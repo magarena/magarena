@@ -9,7 +9,7 @@
         }
     },
     
-    new MagicWhenLifeIsLostTrigger() {
+    new LifeIsLostTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicLifeChangeTriggerData lifeChange) {
             final int amount = lifeChange.amount;

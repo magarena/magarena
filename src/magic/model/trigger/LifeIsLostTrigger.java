@@ -2,13 +2,13 @@ package magic.model.trigger;
 
 import magic.model.MagicPermanent;
 
-public abstract class MagicWhenLifeIsLostTrigger extends MagicTrigger<MagicLifeChangeTriggerData> {
-    public MagicWhenLifeIsLostTrigger(final int priority) {
+public abstract class LifeIsLostTrigger extends MagicTrigger<MagicLifeChangeTriggerData> {
+    public LifeIsLostTrigger(final int priority) {
         super(priority);
     }
 
-    public MagicWhenLifeIsLostTrigger() {}
-    
+    public LifeIsLostTrigger() {}
+
     @Override
     public boolean accept(final MagicPermanent permanent, final MagicLifeChangeTriggerData data) {
         return data.amount > 0;
