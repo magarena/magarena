@@ -11,7 +11,7 @@ import magic.model.action.MoveCardAction;
 import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
-import magic.model.trigger.MagicWhenDamageIsDealtTrigger;
+import magic.model.trigger.DamageIsDealtTrigger;
 
 public class MagicCipherEvent extends MagicEvent {
 
@@ -37,7 +37,7 @@ public class MagicCipherEvent extends MagicEvent {
                     public void doAction(final MagicPermanent creatureToEncode) {
                         game.doAction(new AddTriggerAction(
                             creatureToEncode,
-                            MagicWhenDamageIsDealtTrigger.Cipher(event.getCardOnStack().getCardDefinition())
+                            DamageIsDealtTrigger.Cipher(event.getCardOnStack().getCardDefinition())
                         ));
                     }
                 });

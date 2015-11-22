@@ -1,4 +1,4 @@
-def Draw = new MagicWhenDamageIsDealtTrigger() {
+def Draw = new DamageIsDealtTrigger() {
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
         return (damage.isSource(permanent) && permanent.isOpponent(damage.getTarget())) ?
@@ -14,7 +14,7 @@ def Draw = new MagicWhenDamageIsDealtTrigger() {
         game.doAction(new DrawAction(event.getPlayer()));
     }
 };
-def Discard = new MagicWhenDamageIsDealtTrigger() {
+def Discard = new DamageIsDealtTrigger() {
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
         return (damage.isSource(permanent) && permanent.isOpponent(damage.getTarget())) ?

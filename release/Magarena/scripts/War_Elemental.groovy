@@ -9,7 +9,7 @@ def EFFECT = MagicRuleEventAction.create("Sacrifice SN.");
                 MagicEvent.NONE;
         }
     },
-    new MagicWhenDamageIsDealtTrigger() {
+    new DamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicDamage damage) {
             return permanent.isOpponent(damage.getTarget()) ?

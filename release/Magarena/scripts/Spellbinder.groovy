@@ -8,7 +8,7 @@ def INSTANT_FROM_HAND = new MagicCardFilterImpl() {
 };
 
 [
-    new MagicWhenDamageIsDealtTrigger() {
+    new DamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicDamage damage) {
             return (permanent.getEquippedCreature() == damage.getSource() &&

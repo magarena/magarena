@@ -20,7 +20,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         return flags | MagicType.Creature.getMask();
     }
 };
-def LifeGainAbility = new MagicWhenDamageIsDealtTrigger() {
+def LifeGainAbility = new DamageIsDealtTrigger() {
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
         return (damage.getSource() == permanent) ?

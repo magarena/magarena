@@ -8,16 +8,16 @@ import magic.model.MagicLocationType;
 import magic.model.event.MagicEvent;
 import magic.model.action.ShiftCardAction;
 
-public abstract class MagicWhenSelfCombatDamagePlayerTrigger extends MagicWhenDamageIsDealtTrigger {
+public abstract class MagicWhenSelfCombatDamagePlayerTrigger extends DamageIsDealtTrigger {
     public MagicWhenSelfCombatDamagePlayerTrigger() {}
-    
+
     public boolean accept(final MagicPermanent permanent, final MagicDamage damage) {
-        return super.accept(permanent, damage) && 
-               damage.isSource(permanent) && 
-               damage.isCombat() && 
+        return super.accept(permanent, damage) &&
+               damage.isSource(permanent) &&
+               damage.isCombat() &&
                damage.isTargetPlayer();
     }
-    
+
     public static final MagicWhenSelfCombatDamagePlayerTrigger Ingest = new MagicWhenSelfCombatDamagePlayerTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicDamage damage) {

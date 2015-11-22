@@ -1,4 +1,4 @@
-def trigger = new MagicWhenDamageIsDealtTrigger() {
+def trigger = new DamageIsDealtTrigger() {
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
         final MagicPlayer player = permanent.getController();

@@ -15,7 +15,7 @@
             game.doAction(new LoseGameAction(event.getPlayer()));
         }
     },
-    new MagicWhenDamageIsDealtTrigger() {
+    new DamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicSource source = damage.getSource();
