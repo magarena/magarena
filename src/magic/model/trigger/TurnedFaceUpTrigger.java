@@ -6,20 +6,20 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 import magic.model.target.MagicTargetFilter;
 
-public abstract class MagicWhenTurnedFaceUpTrigger extends MagicTrigger<MagicPermanent> {
-    public MagicWhenTurnedFaceUpTrigger(final int priority) {
+public abstract class TurnedFaceUpTrigger extends MagicTrigger<MagicPermanent> {
+    public TurnedFaceUpTrigger(final int priority) {
         super(priority);
     }
 
-    public MagicWhenTurnedFaceUpTrigger() {}
-    
+    public TurnedFaceUpTrigger() {}
+
     @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenTurnedFaceUp;
     }
-    
-    public static MagicWhenTurnedFaceUpTrigger create(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
-        return new MagicWhenTurnedFaceUpTrigger() {
+
+    public static TurnedFaceUpTrigger create(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
+        return new TurnedFaceUpTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent faceUp) {
                 return filter.accept(permanent, permanent.getController(), faceUp);
