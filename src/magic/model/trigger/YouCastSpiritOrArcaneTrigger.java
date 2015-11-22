@@ -7,12 +7,12 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 import magic.model.stack.MagicCardOnStack;
 
-public abstract class MagicWhenYouCastSpiritOrArcaneTrigger extends MagicWhenOtherSpellIsCastTrigger {
-    public MagicWhenYouCastSpiritOrArcaneTrigger(final int priority) {
+public abstract class YouCastSpiritOrArcaneTrigger extends MagicWhenOtherSpellIsCastTrigger {
+    public YouCastSpiritOrArcaneTrigger(final int priority) {
         super(priority);
     }
 
-    public MagicWhenYouCastSpiritOrArcaneTrigger() {}
+    public YouCastSpiritOrArcaneTrigger() {}
 
     @Override
     public boolean accept(final MagicPermanent permanent, final MagicCardOnStack spell) {
@@ -20,9 +20,9 @@ public abstract class MagicWhenYouCastSpiritOrArcaneTrigger extends MagicWhenOth
                 (spell.getCardDefinition().hasSubType(MagicSubType.Spirit) ||
                  spell.getCardDefinition().hasSubType(MagicSubType.Arcane)));
     }
-    
-    public static final MagicWhenYouCastSpiritOrArcaneTrigger create(final MagicSourceEvent sourceEvent) {
-        return new MagicWhenYouCastSpiritOrArcaneTrigger() {
+
+    public static final YouCastSpiritOrArcaneTrigger create(final MagicSourceEvent sourceEvent) {
+        return new YouCastSpiritOrArcaneTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCardOnStack spell) {
                 return sourceEvent.getEvent(permanent);
