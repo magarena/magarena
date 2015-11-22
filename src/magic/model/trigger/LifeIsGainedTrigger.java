@@ -5,13 +5,13 @@ import magic.model.MagicPermanent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 
-public abstract class MagicWhenLifeIsGainedTrigger extends MagicTrigger<MagicLifeChangeTriggerData> {
-    public MagicWhenLifeIsGainedTrigger(final int priority) {
+public abstract class LifeIsGainedTrigger extends MagicTrigger<MagicLifeChangeTriggerData> {
+    public LifeIsGainedTrigger(final int priority) {
         super(priority);
     }
 
-    public MagicWhenLifeIsGainedTrigger() {}
-    
+    public LifeIsGainedTrigger() {}
+
     @Override
     public boolean accept(final MagicPermanent permanent, final MagicLifeChangeTriggerData data) {
         return data.amount > 0;
@@ -21,9 +21,9 @@ public abstract class MagicWhenLifeIsGainedTrigger extends MagicTrigger<MagicLif
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenLifeIsGained;
     }
-    
-    public static MagicWhenLifeIsGainedTrigger createYou(final MagicSourceEvent sourceEvent) {
-        return new MagicWhenLifeIsGainedTrigger() {
+
+    public static LifeIsGainedTrigger createYou(final MagicSourceEvent sourceEvent) {
+        return new LifeIsGainedTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicLifeChangeTriggerData data) {
                 return super.accept(permanent, data) && permanent.isController(data.player);

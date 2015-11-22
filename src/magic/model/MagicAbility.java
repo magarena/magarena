@@ -1013,7 +1013,7 @@ public enum MagicAbility {
     },
     WhenGainLife("Whenever you gain life, " + ARG.EFFECT, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenLifeIsGainedTrigger.createYou(
+            card.add(LifeIsGainedTrigger.createYou(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }

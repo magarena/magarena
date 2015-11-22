@@ -1,6 +1,6 @@
 def DelayedTrigger = {
     final MagicSource staleSource, final MagicPlayer stalePlayer ->
-    return new MagicWhenLifeIsGainedTrigger() {
+    return new LifeIsGainedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicLifeChangeTriggerData lifeChange) {
             return stalePlayer.getId() == lifeChange.player.getId() ?
