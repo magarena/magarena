@@ -15,7 +15,7 @@
                 final MagicDamage damage = new MagicDamage(event.getSource(), it, 3);
                 game.doAction(new DealDamageAction(damage));
                 if (damage.getDealtAmount() > 0) {
-                    game.doAction(new AddTurnTriggerAction(it, MagicWhenSelfLeavesPlayTrigger.IfDieExileInstead));
+                    game.doAction(new AddTurnTriggerAction(it, SelfLeavesBattlefieldTrigger.IfDieExileInstead));
                 }
             }
         }

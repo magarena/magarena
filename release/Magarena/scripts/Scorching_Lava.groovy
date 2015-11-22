@@ -19,7 +19,7 @@
             if (event.isKicked()) {
                 event.processTargetPermanent(game, {
                     game.doAction(ChangeStateAction.Set(it,MagicPermanentState.CannotBeRegenerated));
-                    game.doAction(new AddTurnTriggerAction(it,MagicWhenSelfLeavesPlayTrigger.IfDieExileInstead));
+                    game.doAction(new AddTurnTriggerAction(it,SelfLeavesBattlefieldTrigger.IfDieExileInstead));
                 });
             }
         }
