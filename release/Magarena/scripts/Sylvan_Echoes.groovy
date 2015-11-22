@@ -1,5 +1,5 @@
 [
-    new MagicWhenClashTrigger() {
+    new ClashTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer winner) {
             return permanent.isController(winner) ? 

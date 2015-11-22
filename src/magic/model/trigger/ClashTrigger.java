@@ -2,12 +2,12 @@ package magic.model.trigger;
 
 import magic.model.MagicPlayer;
 
-public abstract class MagicWhenClashTrigger extends MagicTrigger<MagicPlayer> {
-    public MagicWhenClashTrigger(final int priority) {
+public abstract class ClashTrigger extends MagicTrigger<MagicPlayer> {
+    public ClashTrigger(final int priority) {
         super(priority);
     }
 
-    public MagicWhenClashTrigger() {}
+    public ClashTrigger() {}
 
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenClash;
