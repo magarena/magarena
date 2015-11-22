@@ -1,5 +1,5 @@
 [
-    new MagicWhenLeavesPlayTrigger(MagicTrigger.REPLACEMENT) {
+    new LeavesBattlefieldTrigger(MagicTrigger.REPLACEMENT) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final RemoveFromPlayAction act) {
             if (act.to(MagicLocationType.Graveyard)) {

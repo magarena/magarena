@@ -8,18 +8,18 @@ import magic.model.event.MagicSourceEvent;
 import magic.model.target.MagicTargetFilter;
 import magic.model.action.RemoveFromPlayAction;
 
-public abstract class MagicWhenLeavesPlayTrigger extends MagicTrigger<RemoveFromPlayAction> {
-    public MagicWhenLeavesPlayTrigger(final int priority) {
+public abstract class LeavesBattlefieldTrigger extends MagicTrigger<RemoveFromPlayAction> {
+    public LeavesBattlefieldTrigger(final int priority) {
         super(priority);
     }
-    
-    public MagicWhenLeavesPlayTrigger() {}
+
+    public LeavesBattlefieldTrigger() {}
 
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenLeavesPlay;
     }
-    
-    public static final MagicWhenLeavesPlayTrigger Exile = new MagicWhenLeavesPlayTrigger(MagicTrigger.REPLACEMENT) {
+
+    public static final LeavesBattlefieldTrigger Exile = new LeavesBattlefieldTrigger(MagicTrigger.REPLACEMENT) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final RemoveFromPlayAction act) {
             if (permanent == act.getPermanent()) {
@@ -28,9 +28,9 @@ public abstract class MagicWhenLeavesPlayTrigger extends MagicTrigger<RemoveFrom
             return MagicEvent.NONE;
         }
     };
-    
-    public static final MagicWhenLeavesPlayTrigger create(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
-        return new MagicWhenLeavesPlayTrigger() {
+
+    public static final LeavesBattlefieldTrigger create(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
+        return new LeavesBattlefieldTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final RemoveFromPlayAction act) {
                 return filter.accept(permanent, permanent.getController(), act.getPermanent());
@@ -41,9 +41,9 @@ public abstract class MagicWhenLeavesPlayTrigger extends MagicTrigger<RemoveFrom
             }
         };
     }
-    
-    public static final MagicWhenLeavesPlayTrigger createSelfOrAnother(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
-        return new MagicWhenLeavesPlayTrigger() {
+
+    public static final LeavesBattlefieldTrigger createSelfOrAnother(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
+        return new LeavesBattlefieldTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final RemoveFromPlayAction act) {
                 return permanent == act.getPermanent() || filter.accept(permanent, permanent.getController(), act.getPermanent());
@@ -54,9 +54,9 @@ public abstract class MagicWhenLeavesPlayTrigger extends MagicTrigger<RemoveFrom
             }
         };
     }
-    
-    public static final MagicWhenLeavesPlayTrigger createAnother(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
-        return new MagicWhenLeavesPlayTrigger() {
+
+    public static final LeavesBattlefieldTrigger createAnother(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
+        return new LeavesBattlefieldTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final RemoveFromPlayAction act) {
                 return permanent != act.getPermanent() && filter.accept(permanent, permanent.getController(), act.getPermanent());

@@ -8,7 +8,7 @@ import magic.model.action.RemoveFromPlayAction;
 import magic.model.action.ReturnLinkedExileAction;
 import magic.model.event.MagicEvent;
 
-public class LeavesReturnExiledTrigger extends MagicWhenLeavesPlayTrigger {
+public class LeavesReturnExiledTrigger extends LeavesBattlefieldTrigger {
 
     private static final LeavesReturnExiledTrigger INSTANCE = new LeavesReturnExiledTrigger();
 

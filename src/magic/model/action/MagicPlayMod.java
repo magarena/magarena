@@ -16,7 +16,7 @@ import magic.model.MagicSource;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.AtEndOfCombatTrigger;
 import magic.model.trigger.AtEndOfTurnTrigger;
-import magic.model.trigger.MagicWhenLeavesPlayTrigger;
+import magic.model.trigger.LeavesBattlefieldTrigger;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicMorphActivation;
 import magic.model.event.MagicMatchedCostEvent;
@@ -46,7 +46,7 @@ public enum MagicPlayMod implements MagicPermanentAction {
     },
     EXILE_WHEN_LEAVES("If it would leave the battlefield, exile it instead of putting it anywhere else") {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
-            game.doAction(new AddTriggerAction(perm, MagicWhenLeavesPlayTrigger.Exile));
+            game.doAction(new AddTriggerAction(perm, LeavesBattlefieldTrigger.Exile));
         }
     },
     SACRIFICE_AT_END_OF_TURN("Sacrifice (it|those tokens) at the beginning of the next end step") {

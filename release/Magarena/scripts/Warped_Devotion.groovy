@@ -1,5 +1,5 @@
 [
-    new MagicWhenLeavesPlayTrigger() {
+    new LeavesBattlefieldTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final RemoveFromPlayAction act) {
             return act.to(MagicLocationType.OwnersHand) ?

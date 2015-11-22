@@ -23,7 +23,7 @@ def event = {
                 MagicEvent.NONE;
         }
     },    
-    new MagicWhenLeavesPlayTrigger() {
+    new LeavesBattlefieldTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final RemoveFromPlayAction act) {
             return permanent.getController().controlsPermanent(MagicSubType.Demon) == false ?

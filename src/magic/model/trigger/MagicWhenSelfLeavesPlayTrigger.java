@@ -8,18 +8,18 @@ import magic.model.action.ReturnLinkedExileAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 
-public abstract class MagicWhenSelfLeavesPlayTrigger extends MagicWhenLeavesPlayTrigger {
+public abstract class MagicWhenSelfLeavesPlayTrigger extends LeavesBattlefieldTrigger {
     public MagicWhenSelfLeavesPlayTrigger(final int priority) {
         super(priority);
     }
-    
+
     public MagicWhenSelfLeavesPlayTrigger() {}
-   
+
     @Override
     public boolean accept(final MagicPermanent permanent, final RemoveFromPlayAction act) {
         return act.isPermanent(permanent);
     }
-    
+
     public static final MagicWhenSelfLeavesPlayTrigger create(final MagicSourceEvent sourceEvent) {
         return new MagicWhenSelfLeavesPlayTrigger() {
             @Override
@@ -39,7 +39,7 @@ public abstract class MagicWhenSelfLeavesPlayTrigger extends MagicWhenLeavesPlay
             return MagicEvent.NONE;
         }
     };
-    
+
     public static final MagicWhenSelfLeavesPlayTrigger ExileUntilLeaves = new MagicWhenSelfLeavesPlayTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final RemoveFromPlayAction act) {

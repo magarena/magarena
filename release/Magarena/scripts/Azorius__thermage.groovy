@@ -1,5 +1,5 @@
 [
-    new MagicWhenLeavesPlayTrigger() {
+    new LeavesBattlefieldTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final RemoveFromPlayAction act) {
             if (act.getPermanent().isOwner(permanent.getController()) &&
