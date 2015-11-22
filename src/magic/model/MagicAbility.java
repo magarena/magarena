@@ -1056,7 +1056,7 @@ public enum MagicAbility {
     },
     WhenYouScry("Whenever you scry, " + ARG.EFFECT, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenYouScryTrigger.create(
+            card.add(YouScryTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }

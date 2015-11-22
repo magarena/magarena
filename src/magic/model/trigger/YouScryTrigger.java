@@ -6,24 +6,24 @@ import magic.model.MagicPlayer;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 
-public abstract class MagicWhenYouScryTrigger extends MagicTrigger<MagicPlayer> {
-    public MagicWhenYouScryTrigger(final int priority) {
+public abstract class YouScryTrigger extends MagicTrigger<MagicPlayer> {
+    public YouScryTrigger(final int priority) {
         super(priority);
     }
 
-    public MagicWhenYouScryTrigger() {}
+    public YouScryTrigger() {}
 
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenScry;
     }
-    
+
     @Override
     public boolean accept(final MagicPermanent permanent, final MagicPlayer player) {
         return permanent.isFriend(player);
     }
-    
-    public static MagicWhenYouScryTrigger create(final MagicSourceEvent sourceEvent) {
-        return new MagicWhenYouScryTrigger() {
+
+    public static YouScryTrigger create(final MagicSourceEvent sourceEvent) {
+        return new YouScryTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
                 return sourceEvent.getEvent(permanent);
