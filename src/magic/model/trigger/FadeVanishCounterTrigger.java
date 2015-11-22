@@ -9,14 +9,14 @@ import magic.model.action.SacrificeAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
 
-public class MagicFadeVanishCounterTrigger extends AtUpkeepTrigger {
+public class FadeVanishCounterTrigger extends AtUpkeepTrigger {
 
     private final MagicCounterType counterType;
 
-    public static final MagicFadeVanishCounterTrigger Fade = new MagicFadeVanishCounterTrigger(MagicCounterType.Fade);
-    public static final MagicFadeVanishCounterTrigger Time = new MagicFadeVanishCounterTrigger(MagicCounterType.Time);
+    public static final FadeVanishCounterTrigger Fade = new FadeVanishCounterTrigger(MagicCounterType.Fade);
+    public static final FadeVanishCounterTrigger Time = new FadeVanishCounterTrigger(MagicCounterType.Time);
 
-    private MagicFadeVanishCounterTrigger(final MagicCounterType counterType) {
+    private FadeVanishCounterTrigger(final MagicCounterType counterType) {
         this.counterType = counterType;
     }
 

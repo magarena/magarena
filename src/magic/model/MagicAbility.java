@@ -169,7 +169,7 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
             card.add(new EntersWithCounterTrigger(MagicCounterType.Fade,n));
-            card.add(MagicFadeVanishCounterTrigger.Fade);
+            card.add(FadeVanishCounterTrigger.Fade);
         }
     },
     Vanishing("vanishing " + ARG.NUMBER,-20) {
@@ -178,7 +178,7 @@ public enum MagicAbility {
             if (n > 0) {
                 card.add(new EntersWithCounterTrigger(MagicCounterType.Time,n));
             }
-            card.add(MagicFadeVanishCounterTrigger.Time);
+            card.add(FadeVanishCounterTrigger.Time);
         }
     },
     CumulativeUpkeep("cumulative upkeep " + ARG.MANACOST,-30) {
