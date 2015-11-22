@@ -2,12 +2,12 @@ package magic.model.trigger;
 
 import magic.model.MagicPermanent;
 
-public abstract class MagicWhenLoseControlTrigger extends MagicTrigger<MagicPermanent> {
-    public MagicWhenLoseControlTrigger(final int priority) {
+public abstract class LoseControlTrigger extends MagicTrigger<MagicPermanent> {
+    public LoseControlTrigger(final int priority) {
         super(priority);
     }
 
-    public MagicWhenLoseControlTrigger() {}
+    public LoseControlTrigger() {}
 
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenLoseControl;

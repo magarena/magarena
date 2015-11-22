@@ -1,6 +1,6 @@
 def LoseControlTap = {
     final MagicPlayer you ->
-    return new MagicWhenLoseControlTrigger() {
+    return new LoseControlTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent target) {
             if (permanent == target && target.getController().getId() != you.getId()) {
