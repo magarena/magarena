@@ -17,7 +17,7 @@
         }
     },
     
-    new MagicWhenSelfCombatDamagePlayerTrigger() {
+    new SelfCombatDamagePlayerTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             return MagicCondition.HELLBENT.accept(permanent) ?

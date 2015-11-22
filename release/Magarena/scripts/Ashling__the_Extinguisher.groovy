@@ -1,7 +1,7 @@
 def choice = new MagicTargetChoice("target creature defending player controls");
 
 [
-    new MagicWhenSelfCombatDamagePlayerTrigger() {
+    new SelfCombatDamagePlayerTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             return new MagicEvent(

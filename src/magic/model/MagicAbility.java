@@ -134,7 +134,7 @@ public enum MagicAbility {
     },
     Ingest("ingest",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenSelfCombatDamagePlayerTrigger.Ingest);
+            card.add(SelfCombatDamagePlayerTrigger.Ingest);
         }
     },
     Exalted("exalted",10) {
