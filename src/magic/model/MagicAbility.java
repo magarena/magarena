@@ -514,7 +514,7 @@ public enum MagicAbility {
     },
     GraveyardToLibrary("When SN is put into a graveyard from anywhere, shuffle it into its owner's library\\.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicFromGraveyardToLibraryTrigger.create());
+            card.add(FromGraveyardIntoLibraryTrigger.create());
         }
     },
     LibraryInteadOfGraveyard("If SN would be put into a graveyard from anywhere, reveal SN and shuffle it into its owner's library instead\\.",10) {

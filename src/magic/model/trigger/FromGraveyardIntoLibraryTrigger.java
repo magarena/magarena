@@ -8,13 +8,13 @@ import magic.model.action.MoveCardAction;
 import magic.model.action.ShiftCardAction;
 import magic.model.event.MagicEvent;
 
-public class MagicFromGraveyardToLibraryTrigger extends MagicWhenPutIntoGraveyardTrigger {
+public class FromGraveyardIntoLibraryTrigger extends MagicWhenPutIntoGraveyardTrigger {
 
-    private static final MagicFromGraveyardToLibraryTrigger INSTANCE = new MagicFromGraveyardToLibraryTrigger();
+    private static final FromGraveyardIntoLibraryTrigger INSTANCE = new FromGraveyardIntoLibraryTrigger();
 
-    private MagicFromGraveyardToLibraryTrigger() {}
+    private FromGraveyardIntoLibraryTrigger() {}
 
-    public static final MagicFromGraveyardToLibraryTrigger create() {
+    public static final FromGraveyardIntoLibraryTrigger create() {
         return INSTANCE;
     }
 
