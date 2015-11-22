@@ -18,7 +18,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
     }
 };
 
-def PreventAllDamage = new MagicPreventDamageTrigger() {
+def PreventAllDamage = new PreventDamageTrigger() {
     @Override
     public MagicEvent executeTrigger(
             final MagicGame game,

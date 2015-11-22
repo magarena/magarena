@@ -11,7 +11,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new AddTurnTriggerAction(
-                MagicPreventDamageTrigger.PreventCombatDamageDealtToYou(event.getPlayer())
+                PreventDamageTrigger.PreventCombatDamageDealtToYou(event.getPlayer())
             ));
             game.addEvent(new MagicPopulateEvent(event.getSource()));
         }

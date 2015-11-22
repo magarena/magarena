@@ -27,7 +27,7 @@
             event.processTargetPermanent(game, {
                 game.doAction(new AddTurnTriggerAction(
                     it,
-                    MagicPreventDamageTrigger.PreventCombatDamageDealtToDealtBy
+                    PreventDamageTrigger.PreventCombatDamageDealtToDealtBy
                 ));
             });
         }

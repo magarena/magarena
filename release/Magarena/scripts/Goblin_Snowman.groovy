@@ -27,7 +27,7 @@ def TARGET_CREATURE_BLOCKED_BY_SOURCE = {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new AddTurnTriggerAction(
                 event.getPermanent(),
-                MagicPreventDamageTrigger.PreventCombatDamageDealtToDealtBy
+                PreventDamageTrigger.PreventCombatDamageDealtToDealtBy
         ));
         }
     },

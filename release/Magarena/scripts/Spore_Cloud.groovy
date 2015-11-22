@@ -15,7 +15,7 @@
             BLOCKING_CREATURE.filter(event) each {
                 game.doAction(new TapAction(it));
             }
-            game.doAction(new AddTurnTriggerAction(MagicPreventDamageTrigger.PreventCombatDamage));
+            game.doAction(new AddTurnTriggerAction(PreventDamageTrigger.PreventCombatDamage));
             ATTACKING_OR_BLOCKING_CREATURE.filter(event) each {
                 game.doAction(ChangeStateAction.Set(it, MagicPermanentState.DoesNotUntapDuringNext));
             }

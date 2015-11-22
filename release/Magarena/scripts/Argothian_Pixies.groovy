@@ -1,5 +1,5 @@
 [
-    new MagicPreventDamageTrigger() {
+    new PreventDamageTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             if (damage.getTarget() == permanent && damage.getSource().hasType(MagicType.Artifact) && damage.getSource().hasType(MagicType.Creature)) {

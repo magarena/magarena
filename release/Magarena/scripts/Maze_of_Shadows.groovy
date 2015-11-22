@@ -30,7 +30,7 @@ def choice = new MagicTargetChoice("target attacking creature with shadow");
                 game.doAction(new UntapAction(it));
                 game.doAction(new AddTurnTriggerAction(
                     it,
-                    MagicPreventDamageTrigger.PreventCombatDamageDealtToDealtBy
+                    PreventDamageTrigger.PreventCombatDamageDealtToDealtBy
                 ));
             });
         }

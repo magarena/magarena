@@ -16,7 +16,7 @@
             game.logAppendValue(player,amount)
             game.doAction(new ChangeLifeAction(player, amount));
             game.doAction(new AddTurnTriggerAction(
-                MagicPreventDamageTrigger.PreventDamageDealtToYou(player)
+                PreventDamageTrigger.PreventDamageDealtToYou(player)
             ));
         }
     }

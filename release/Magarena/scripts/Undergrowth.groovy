@@ -22,11 +22,11 @@ def NONRED_CREATURES = new MagicPermanentFilterImpl() {
                 NONRED_CREATURES.filter(event) each { 
                     game.doAction(new AddTurnTriggerAction(
                         it,
-                        MagicPreventDamageTrigger.PreventCombatDamageDealtBy
+                        PreventDamageTrigger.PreventCombatDamageDealtBy
                     ));
                 }
             } else {
-                game.doAction(new AddTurnTriggerAction(MagicPreventDamageTrigger.PreventCombatDamage));
+                game.doAction(new AddTurnTriggerAction(PreventDamageTrigger.PreventCombatDamage));
             } 
         }
     }

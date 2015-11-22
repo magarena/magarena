@@ -14,7 +14,7 @@
             new MagicPTTargetFilter(CREATURE,4).filter(event) each { 
                 game.doAction(new AddTurnTriggerAction(
                     it,
-                    MagicPreventDamageTrigger.PreventCombatDamageDealtBy
+                    PreventDamageTrigger.PreventCombatDamageDealtBy
                 ));
             }
         }

@@ -42,7 +42,7 @@ import magic.model.trigger.MagicPermanentTriggerMap;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
 import magic.model.trigger.MagicWhenOtherComesIntoPlayTrigger;
-import magic.model.trigger.MagicPreventDamageTrigger;
+import magic.model.trigger.PreventDamageTrigger;
 import magic.exception.GameException;
 
 import java.util.Arrays;
@@ -222,7 +222,7 @@ public class MagicGame {
         //there should be no pending actions
         assert game.delayedActions.isEmpty() : "delayedActions: " + game.delayedActions;
         delayedActions=new MagicActionList();
-        
+
         //no logging
         disableLog = true;
         undoPoints=null;
@@ -233,7 +233,7 @@ public class MagicGame {
     public void skipTurnTill(final MagicPhaseType skip) {
         skipTurnTill = skip;
     }
-    
+
     public void clearSkipTurnTill() {
         skipTurnTill = MagicPhaseType.Mulligan;
     }
@@ -364,23 +364,23 @@ public class MagicGame {
     public boolean getFastMana() {
         return fastMana;
     }
-    
+
     public void setFastMana(final boolean v) {
         fastMana = v;
     }
-    
+
     public boolean getFastTarget() {
         return fastTarget;
     }
-    
+
     public void setFastTarget(final boolean v) {
         fastTarget = v;
     }
-    
+
     public boolean getFastBlocker() {
         return fastBlocker;
     }
-    
+
     public void setFastBlocker(final boolean v) {
         fastBlocker = v;
     }
@@ -398,7 +398,7 @@ public class MagicGame {
     public void setHintTiming(final boolean v) {
         hintTiming = v;
     }
-    
+
     public boolean getHintPriority() {
         return hintPriority;
     }
@@ -406,7 +406,7 @@ public class MagicGame {
     public void setHintPriority(final boolean v) {
         hintPriority = v;
     }
-    
+
     public boolean getHintTarget() {
         return hintTarget;
     }
@@ -564,7 +564,7 @@ public class MagicGame {
         // add Soulbond trigger here
         triggers = new MagicPermanentTriggerMap(additionalTriggers);
         triggers.add(new MagicPermanentTrigger(0, MagicPermanent.NONE, MagicWhenOtherComesIntoPlayTrigger.Soulbond));
-        triggers.add(new MagicPermanentTrigger(Long.MAX_VALUE, MagicPermanent.NONE, MagicPreventDamageTrigger.GlobalPreventDamageToTarget));
+        triggers.add(new MagicPermanentTrigger(Long.MAX_VALUE, MagicPermanent.NONE, PreventDamageTrigger.GlobalPreventDamageToTarget));
 
         for (final MagicPlayer player : players) {
         for (final MagicPermanent perm : player.getPermanents()) {
@@ -899,7 +899,7 @@ public class MagicGame {
     public boolean hasTurn(final MagicPlayer player) {
         return player == turnPlayer;
     }
-    
+
     public int getNrOfPermanents(final MagicPermanentState state) {
         return players[0].getNrOfPermanents(state) +
                players[1].getNrOfPermanents(state);
@@ -919,11 +919,11 @@ public class MagicGame {
         return players[0].getNrOfPermanents(color) +
                players[1].getNrOfPermanents(color);
     }
-    
+
     public int getNrOfPermanents(final MagicTargetFilter<MagicPermanent> filter) {
         return getNrOfPermanents(MagicSource.NONE, filter);
     }
-    
+
     public int getNrOfPermanents(final MagicSource source, final MagicTargetFilter<MagicPermanent> filter) {
         return players[0].getNrOfPermanents(source, filter) +
                players[1].getNrOfPermanents(source, filter);

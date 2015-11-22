@@ -32,7 +32,7 @@ def TARGET_ATTACKING_CREATURE = new MagicTargetChoice(
                 game.doAction(new UntapAction(it));
                 game.doAction(new AddTurnTriggerAction(
                     it,
-                    MagicPreventDamageTrigger.PreventCombatDamageDealtToDealtBy
+                    PreventDamageTrigger.PreventCombatDamageDealtToDealtBy
                 ));
             });
         }

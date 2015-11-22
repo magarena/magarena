@@ -1156,21 +1156,21 @@ public enum MagicAbility {
     // static ability
     PreventDamageDealtTo("prevent all damage that would be dealt to " + ARG.WORDRUN + "\\.", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicPreventDamageTrigger.PreventDamageDealtTo(
+            card.add(PreventDamageTrigger.PreventDamageDealtTo(
                 MagicTargetFilterFactory.Target(ARG.wordrun(arg))
             ));
         }
     },
     PreventCombatDamageDealtTo("prevent all combat damage that would be dealt to " + ARG.WORDRUN + "\\.", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicPreventDamageTrigger.PreventCombatDamageDealtTo(
+            card.add(PreventDamageTrigger.PreventCombatDamageDealtTo(
                 MagicTargetFilterFactory.Target(ARG.wordrun(arg))
             ));
         }
     },
     PreventNonCombatDamageDealtTo("prevent all noncombat damage that would be dealt to " + ARG.WORDRUN + "\\.", 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicPreventDamageTrigger.PreventNonCombatDamageDealtTo(
+            card.add(PreventDamageTrigger.PreventNonCombatDamageDealtTo(
                 MagicTargetFilterFactory.Target(ARG.wordrun(arg))
             ));
         }

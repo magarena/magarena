@@ -1,5 +1,5 @@
 [
-    new MagicPreventDamageTrigger() {
+    new PreventDamageTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             if (damage.isCombat() && damage.isSource(permanent) && permanent.getCounters(MagicCounterType.Ice) >= 1) {

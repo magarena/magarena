@@ -18,7 +18,7 @@
                 game.logAppendX(event.getPlayer(), amount);
                 game.doAction(new AddTurnTriggerAction(
                     permanent,
-                    MagicPreventDamageTrigger.PreventCombatDamageDealtBy
+                    PreventDamageTrigger.PreventCombatDamageDealtBy
                 ));
                 game.doAction(new ChangeTurnPTAction(permanent, 0, amount));
             });

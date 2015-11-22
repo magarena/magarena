@@ -19,7 +19,7 @@
                 game.doAction(new UntapAction(it));
                 game.doAction(new AddTurnTriggerAction(
                     it,
-                    MagicPreventDamageTrigger.PreventCombatDamageDealtToDealtBy
+                    PreventDamageTrigger.PreventCombatDamageDealtToDealtBy
                 ));
                 game.doAction(new AddTriggerAction(
                     AtUpkeepTrigger.YouDraw(
