@@ -1,11 +1,13 @@
 [
-    new DamageIsDealtTrigger() {
+    new IfLifeWouldChangeTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-            final MagicPlayer player = permanent.getController();
-            final MagicTarget target = damage.getTarget();
-            if (player == target && player.controlsPermanent(MagicType.Creature) && player.getLife() < 1) {
-                player.setLife(1);
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final ChangeLifeAction act) {
+            if (permanent.isController(act.getPlayer()) && 
+                act.getPlayer().controlsPermanent(MagicType.Creature) &&
+                act.isDamage() &&
+                act.getOldLife() >= 1 && 
+                act.getNewLife() < 1) {
+                act.setLifeChange(1 - act.getOldLife());
             }
             return MagicEvent.NONE;
         }

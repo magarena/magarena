@@ -1,15 +1,3 @@
-def trigger = new DamageIsDealtTrigger() {
-    @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-        final MagicPlayer player = permanent.getController();
-        final MagicTarget target = damage.getTarget();
-        if (player == target && player.getLife() < 7) {
-            player.setLife(7);
-        }
-        return MagicEvent.NONE;
-    }
-}
-
 [
     new EntersBattlefieldTrigger() {
         @Override
@@ -31,12 +19,16 @@ def trigger = new DamageIsDealtTrigger() {
             }
         }
     },
-    new MagicStatic(MagicLayer.Ability) {
+    new IfLifeWouldChangeTrigger() {
         @Override
-        public void modAbilityFlags(final MagicPermanent source,final MagicPermanent permanent,final Set<MagicAbility> flags) {
-            if (permanent.getController().getLife() >= 7) {
-                permanent.addAbility(trigger);
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final ChangeLifeAction act) {
+            if (permanent.isController(act.getPlayer()) && 
+                act.isDamage() &&
+                act.getOldLife() >= 7 && 
+                act.getNewLife() < 7) {
+                act.setLifeChange(7 - act.getOldLife());
             }
+            return MagicEvent.NONE;
         }
     }
 ]

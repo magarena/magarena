@@ -10,14 +10,20 @@ import magic.model.trigger.MagicTriggerType;
 public class ChangeLifeAction extends MagicAction {
 
     private final MagicPlayer player;
+    private final boolean isDamage;
     private int lifeChange;
     private int oldLife;
     private int oldLifeGain;
     private int oldLifeLoss;
 
-    public ChangeLifeAction(final MagicPlayer aPlayer,final int aLifeChange) {
+    public ChangeLifeAction(final MagicPlayer aPlayer,final int aLifeChange, final boolean aIsDamage) {
         player = aPlayer;
         lifeChange = aLifeChange;
+        isDamage = aIsDamage;
+    }
+
+    public ChangeLifeAction(final MagicPlayer aPlayer,final int aLifeChange) {
+        this(aPlayer, aLifeChange, false);
     }
 
     public MagicPlayer getPlayer() {
@@ -26,6 +32,18 @@ public class ChangeLifeAction extends MagicAction {
 
     public int getLifeChange() {
         return lifeChange;
+    }
+
+    public boolean isDamage() {
+        return isDamage;
+    }
+
+    public int getOldLife() {
+        return oldLife;
+    }
+
+    public int getNewLife() {
+        return oldLife + lifeChange;
     }
 
     public void setLifeChange(final int aLifeChange) {
