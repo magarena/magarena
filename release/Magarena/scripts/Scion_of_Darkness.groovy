@@ -1,5 +1,5 @@
 [
-    new SelfCombatDamagePlayerTrigger() {
+    new ThisCombatDamagePlayerTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicTarget target = damage.getTarget();

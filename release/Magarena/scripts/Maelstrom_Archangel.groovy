@@ -12,7 +12,7 @@ def A_NONLAND_CARD_FROM_HAND = new MagicTargetChoice(
     "a nonland card from your hand"
 );
 [
-    new SelfCombatDamagePlayerTrigger() {
+    new ThisCombatDamagePlayerTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             return new MagicEvent(

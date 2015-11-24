@@ -10,7 +10,7 @@ def TARGET_NONBLACK_CREATURE_YOUR_OPPONENT_CONTROLS = new MagicTargetChoice(
 );
 
 [
-    new SelfCombatDamagePlayerTrigger() {
+    new ThisCombatDamagePlayerTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             return new MagicEvent(

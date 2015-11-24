@@ -8,8 +8,8 @@ import magic.model.MagicLocationType;
 import magic.model.event.MagicEvent;
 import magic.model.action.ShiftCardAction;
 
-public abstract class SelfCombatDamagePlayerTrigger extends DamageIsDealtTrigger {
-    public SelfCombatDamagePlayerTrigger() {}
+public abstract class ThisCombatDamagePlayerTrigger extends DamageIsDealtTrigger {
+    public ThisCombatDamagePlayerTrigger() {}
 
     public boolean accept(final MagicPermanent permanent, final MagicDamage damage) {
         return super.accept(permanent, damage) &&
@@ -18,7 +18,7 @@ public abstract class SelfCombatDamagePlayerTrigger extends DamageIsDealtTrigger
                damage.isTargetPlayer();
     }
 
-    public static final SelfCombatDamagePlayerTrigger Ingest = new SelfCombatDamagePlayerTrigger() {
+    public static final ThisCombatDamagePlayerTrigger Ingest = new ThisCombatDamagePlayerTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicDamage damage) {
             return new MagicEvent(
