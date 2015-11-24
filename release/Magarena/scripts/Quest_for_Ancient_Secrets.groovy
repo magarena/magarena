@@ -1,5 +1,5 @@
 [
-    new MagicWhenOtherPutIntoGraveyardTrigger() {
+    new OtherPutIntoGraveyardTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MoveCardAction act) {
             final MagicCard card = act.card;

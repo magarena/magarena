@@ -64,7 +64,7 @@
                 }
             ));
             outerGame.doAction(new AddTriggerAction(
-                new MagicWhenOtherPutIntoGraveyardTrigger() {
+                new OtherPutIntoGraveyardTrigger() {
                     @Override
                     public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MoveCardAction act) {
                         return act.card.getOwner().getId() == you.getId() ?

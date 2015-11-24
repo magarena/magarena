@@ -8,7 +8,7 @@ import magic.model.action.MoveCardAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 
-public abstract class MagicWhenDiscardedTrigger extends MagicWhenOtherPutIntoGraveyardTrigger {
+public abstract class MagicWhenDiscardedTrigger extends OtherPutIntoGraveyardTrigger {
     public MagicWhenDiscardedTrigger(final int priority) {
         super(priority);
     }
@@ -22,7 +22,7 @@ public abstract class MagicWhenDiscardedTrigger extends MagicWhenOtherPutIntoGra
     }
 
     protected abstract MagicEvent getEvent(final MagicPermanent source, final MagicCard card);
-    
+
     public static MagicWhenDiscardedTrigger player(final MagicSourceEvent sourceEvent) {
         return new MagicWhenDiscardedTrigger() {
             @Override
@@ -38,7 +38,7 @@ public abstract class MagicWhenDiscardedTrigger extends MagicWhenOtherPutIntoGra
             public boolean accept(final MagicPermanent permanent, final MoveCardAction act) {
                 return super.accept(permanent, act) && permanent.isEnemy(act.card);
             }
-        
+
             @Override
             public MagicEvent getEvent(final MagicPermanent source, final MagicCard card) {
                 return sourceEvent.getEvent(source, card.getOwner());

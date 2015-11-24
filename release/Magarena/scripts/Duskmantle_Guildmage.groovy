@@ -1,6 +1,6 @@
 def DelayedTrigger = {
     final MagicSource staleSource, final MagicPlayer stalePlayer ->
-    return new MagicWhenOtherPutIntoGraveyardTrigger() {
+    return new OtherPutIntoGraveyardTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MoveCardAction act) {
             final MagicPlayer owner = act.card.getOwner();
