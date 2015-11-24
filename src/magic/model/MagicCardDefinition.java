@@ -21,7 +21,7 @@ import magic.model.trigger.EntersBattlefieldTrigger;
 import magic.model.trigger.EntersWithCounterTrigger;
 import magic.model.trigger.MagicWhenDrawnTrigger;
 import magic.model.trigger.SelfPutIntoGraveyardTrigger;
-import magic.model.trigger.MagicWhenSpellIsCastTrigger;
+import magic.model.trigger.SpellIsCastTrigger;
 import magic.model.trigger.MagicWhenCycleTrigger;
 
 import java.util.ArrayList;
@@ -97,7 +97,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     private final Collection<MagicTrigger<?>> triggers = new ArrayList<MagicTrigger<?>>();
     private final Collection<MagicStatic> statics=new ArrayList<MagicStatic>();
     private final LinkedList<EntersBattlefieldTrigger> comeIntoPlayTriggers = new LinkedList<EntersBattlefieldTrigger>();
-    private final Collection<MagicWhenSpellIsCastTrigger> spellIsCastTriggers = new ArrayList<MagicWhenSpellIsCastTrigger>();
+    private final Collection<SpellIsCastTrigger> spellIsCastTriggers = new ArrayList<SpellIsCastTrigger>();
     private final Collection<MagicWhenCycleTrigger> cycleTriggers = new ArrayList<MagicWhenCycleTrigger>();
     private final Collection<MagicWhenDrawnTrigger> drawnTriggers = new ArrayList<MagicWhenDrawnTrigger>();
     private final Collection<SelfPutIntoGraveyardTrigger> putIntoGraveyardTriggers = new ArrayList<SelfPutIntoGraveyardTrigger>();
@@ -817,7 +817,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
         costEventSources.add(eventSource);
     }
 
-    public void addTrigger(final MagicWhenSpellIsCastTrigger trigger) {
+    public void addTrigger(final SpellIsCastTrigger trigger) {
         spellIsCastTriggers.add(trigger);
     }
 
@@ -857,7 +857,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
         return statics;
     }
 
-    public Collection<MagicWhenSpellIsCastTrigger> getSpellIsCastTriggers() {
+    public Collection<SpellIsCastTrigger> getSpellIsCastTriggers() {
         return spellIsCastTriggers;
     }
 

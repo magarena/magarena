@@ -6,7 +6,7 @@ import magic.model.action.CopyCardOnStackAction;
 import magic.model.event.MagicEvent;
 import magic.model.stack.MagicCardOnStack;
 
-public class StormTrigger extends MagicWhenSpellIsCastTrigger {
+public class StormTrigger extends SpellIsCastTrigger {
 
     private static final StormTrigger INSTANCE = new StormTrigger();
 
