@@ -6,14 +6,14 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 import magic.model.target.MagicTargetFilter;
 
-public abstract class MagicWhenSelfBecomesBlockedByTrigger extends MagicWhenBlocksTrigger {
+public abstract class SelfBecomesBlockedByTrigger extends MagicWhenBlocksTrigger {
     @Override
     public boolean accept(final MagicPermanent permanent, final MagicPermanent blocker) {
         return permanent == blocker.getBlockedCreature();
     }
-    
-    public static final MagicWhenSelfBecomesBlockedByTrigger create(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
-        return new MagicWhenSelfBecomesBlockedByTrigger() {
+
+    public static final SelfBecomesBlockedByTrigger create(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
+        return new SelfBecomesBlockedByTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent blocker) {
                 return super.accept(permanent, blocker) &&
