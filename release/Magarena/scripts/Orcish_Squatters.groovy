@@ -11,7 +11,7 @@ def action = {
 }
 
 [
-    new MagicWhenAttacksUnblockedTrigger() {
+    new AttacksUnblockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             return (creature == permanent) ?

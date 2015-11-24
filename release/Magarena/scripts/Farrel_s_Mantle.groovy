@@ -14,7 +14,7 @@ def NEG_TARGET_CREATURE_EXCEPT = {
 };
 
 [
-    new MagicWhenAttacksUnblockedTrigger() {
+    new AttacksUnblockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             final MagicPermanent enchanted = permanent.getEnchantedPermanent();
