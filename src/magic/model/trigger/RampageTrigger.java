@@ -6,7 +6,7 @@ import magic.model.MagicPermanentList;
 import magic.model.action.ChangeTurnPTAction;
 import magic.model.event.MagicEvent;
 
-public class RampageTrigger extends MagicWhenBecomesBlockedTrigger {
+public class RampageTrigger extends BecomesBlockedTrigger {
     private final int n;
 
     public RampageTrigger(final int n) {

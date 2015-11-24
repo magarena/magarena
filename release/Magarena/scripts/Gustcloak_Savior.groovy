@@ -1,5 +1,5 @@
 [
-    new MagicWhenBecomesBlockedTrigger() {
+    new BecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             return permanent.isFriend(creature) ?

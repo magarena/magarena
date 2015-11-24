@@ -6,19 +6,19 @@ import magic.model.event.MagicSourceEvent;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTargetFilter;
 
-public abstract class MagicWhenBecomesBlockedTrigger extends MagicTrigger<MagicPermanent> {
-    public MagicWhenBecomesBlockedTrigger(final int priority) {
+public abstract class BecomesBlockedTrigger extends MagicTrigger<MagicPermanent> {
+    public BecomesBlockedTrigger(final int priority) {
         super(priority);
     }
 
-    public MagicWhenBecomesBlockedTrigger() {}
+    public BecomesBlockedTrigger() {}
 
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenBecomesBlocked;
     }
-    
-    public static final MagicWhenBecomesBlockedTrigger create(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
-        return new MagicWhenBecomesBlockedTrigger() {
+
+    public static final BecomesBlockedTrigger create(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
+        return new BecomesBlockedTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent blocked) {
                 return filter.accept(permanent, permanent.getController(), blocked);

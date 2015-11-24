@@ -7,7 +7,7 @@ import magic.model.MagicPermanentList;
 import magic.model.action.ChangeTurnPTAction;
 import magic.model.event.MagicEvent;
 
-public class FlankingTrigger extends MagicWhenBecomesBlockedTrigger {
+public class FlankingTrigger extends BecomesBlockedTrigger {
 
     private static final FlankingTrigger INSTANCE = new FlankingTrigger();
 

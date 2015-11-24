@@ -5,12 +5,12 @@ import magic.model.MagicPermanent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 
-public abstract class MagicWhenSelfBecomesBlockedTrigger extends MagicWhenBecomesBlockedTrigger {
+public abstract class MagicWhenSelfBecomesBlockedTrigger extends BecomesBlockedTrigger {
     @Override
     public boolean accept(final MagicPermanent permanent, final MagicPermanent blocked) {
         return permanent == blocked;
     }
-    
+
     public static final MagicWhenSelfBecomesBlockedTrigger create(final MagicSourceEvent sourceEvent) {
         return new MagicWhenSelfBecomesBlockedTrigger() {
             @Override
