@@ -1,5 +1,5 @@
 [
-    new SelfTurnedFaceUpTrigger() {
+    new ThisTurnedFaceUpTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent faceUp) {
             return new MagicEvent(
