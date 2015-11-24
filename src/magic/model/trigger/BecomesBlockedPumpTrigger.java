@@ -5,7 +5,7 @@ import magic.model.MagicPermanent;
 import magic.model.action.ChangeTurnPTAction;
 import magic.model.event.MagicEvent;
 
-public class BecomesBlockedPumpTrigger extends SelfBecomesBlockedTrigger {
+public class BecomesBlockedPumpTrigger extends ThisBecomesBlockedTrigger {
 
     private final int amountPower;
     private final int amountToughness;

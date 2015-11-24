@@ -1,5 +1,5 @@
 [
-    new SelfBecomesBlockedTrigger() {
+    new ThisBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             final int power = permanent.getPower(); //May change, but gives a value for log

@@ -5,14 +5,14 @@ import magic.model.MagicPermanent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 
-public abstract class SelfBecomesBlockedTrigger extends BecomesBlockedTrigger {
+public abstract class ThisBecomesBlockedTrigger extends BecomesBlockedTrigger {
     @Override
     public boolean accept(final MagicPermanent permanent, final MagicPermanent blocked) {
         return permanent == blocked;
     }
 
-    public static final SelfBecomesBlockedTrigger create(final MagicSourceEvent sourceEvent) {
-        return new SelfBecomesBlockedTrigger() {
+    public static final ThisBecomesBlockedTrigger create(final MagicSourceEvent sourceEvent) {
+        return new ThisBecomesBlockedTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent blocked) {
                 return sourceEvent.getEvent(permanent);

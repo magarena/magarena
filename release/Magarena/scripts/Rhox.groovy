@@ -1,5 +1,5 @@
 [
-    new SelfBecomesBlockedTrigger() {
+    new ThisBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent attacker) {
             return new MagicEvent(

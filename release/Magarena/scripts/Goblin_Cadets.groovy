@@ -17,7 +17,7 @@
         }
     },
     
-    new SelfBecomesBlockedTrigger() {
+    new ThisBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocked) {
             return new MagicEvent(

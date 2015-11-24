@@ -1,5 +1,5 @@
 [
-    new SelfBecomesBlockedTrigger() {
+    new ThisBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
             final MagicPermanentList plist = permanent.getBlockingCreatures();
