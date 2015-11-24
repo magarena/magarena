@@ -3,8 +3,8 @@ package magic.model.trigger;
 import magic.model.MagicDamage;
 import magic.model.MagicPermanent;
 
-public abstract class SelfDamagePlayerTrigger extends DamageIsDealtTrigger {
-    public SelfDamagePlayerTrigger() {}
+public abstract class ThisDamagePlayerTrigger extends DamageIsDealtTrigger {
+    public ThisDamagePlayerTrigger() {}
 
     public boolean accept(final MagicPermanent permanent, final MagicDamage damage) {
         return super.accept(permanent, damage) &&
