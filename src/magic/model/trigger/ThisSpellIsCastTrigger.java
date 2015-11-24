@@ -3,12 +3,12 @@ package magic.model.trigger;
 import magic.model.MagicCardDefinition;
 import magic.model.stack.MagicCardOnStack;
 
-public abstract class SpellIsCastTrigger extends MagicTrigger<MagicCardOnStack> {
-    public SpellIsCastTrigger(final int priority) {
+public abstract class ThisSpellIsCastTrigger extends MagicTrigger<MagicCardOnStack> {
+    public ThisSpellIsCastTrigger(final int priority) {
         super(priority);
     }
 
-    public SpellIsCastTrigger() {}
+    public ThisSpellIsCastTrigger() {}
 
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenSpellIsCast;

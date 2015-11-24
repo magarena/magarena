@@ -14,7 +14,7 @@ import magic.model.event.MagicEventAction;
 import magic.model.stack.MagicCardOnStack;
 
 
-public class CascadeTrigger extends SpellIsCastTrigger {
+public class CascadeTrigger extends ThisSpellIsCastTrigger {
 
     private static final CascadeTrigger INSTANCE = new CascadeTrigger();
 

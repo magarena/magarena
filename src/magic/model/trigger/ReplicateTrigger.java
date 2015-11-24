@@ -6,7 +6,7 @@ import magic.model.action.CopyCardOnStackAction;
 import magic.model.event.MagicEvent;
 import magic.model.stack.MagicCardOnStack;
 
-public class ReplicateTrigger extends SpellIsCastTrigger {
+public class ReplicateTrigger extends ThisSpellIsCastTrigger {
 
     private static final ReplicateTrigger INSTANCE = new ReplicateTrigger();
 

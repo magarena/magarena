@@ -1,5 +1,5 @@
 [
-    new SpellIsCastTrigger() {
+    new ThisSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicCardOnStack spell) {
             return new MagicEvent(
