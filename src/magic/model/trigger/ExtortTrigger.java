@@ -9,7 +9,7 @@ import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.event.MagicEvent;
 import magic.model.stack.MagicCardOnStack;
 
-public class ExtortTrigger extends MagicWhenOtherSpellIsCastTrigger {
+public class ExtortTrigger extends OtherSpellIsCastTrigger {
 
     private static final ExtortTrigger INSTANCE = new ExtortTrigger();
 

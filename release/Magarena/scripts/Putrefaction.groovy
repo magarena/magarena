@@ -1,5 +1,5 @@
 [
-    new MagicWhenOtherSpellIsCastTrigger() {
+    new OtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
             return (cardOnStack.hasColor(MagicColor.Green) || cardOnStack.hasColor(MagicColor.White)) ?

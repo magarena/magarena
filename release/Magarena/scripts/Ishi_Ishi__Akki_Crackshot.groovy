@@ -1,5 +1,5 @@
 [
-    new MagicWhenOtherSpellIsCastTrigger() {
+    new OtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
             return (cardOnStack.getCardDefinition().hasSubType(MagicSubType.Spirit) || cardOnStack.getCardDefinition().hasSubType(MagicSubType.Arcane)) &&

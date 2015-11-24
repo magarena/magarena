@@ -7,7 +7,7 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 import magic.model.stack.MagicCardOnStack;
 
-public abstract class YouCastSpiritOrArcaneTrigger extends MagicWhenOtherSpellIsCastTrigger {
+public abstract class YouCastSpiritOrArcaneTrigger extends OtherSpellIsCastTrigger {
     public YouCastSpiritOrArcaneTrigger(final int priority) {
         super(priority);
     }

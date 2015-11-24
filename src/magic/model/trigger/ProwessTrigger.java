@@ -7,7 +7,7 @@ import magic.model.action.ChangeTurnPTAction;
 import magic.model.event.MagicEvent;
 import magic.model.stack.MagicCardOnStack;
 
-public class ProwessTrigger extends MagicWhenOtherSpellIsCastTrigger {
+public class ProwessTrigger extends OtherSpellIsCastTrigger {
 
     private static final ProwessTrigger INSTANCE = new ProwessTrigger() ;
 
