@@ -1,10 +1,10 @@
 [
-    new TurnedFaceUpTrigger() {
+    new ThisTurnedFaceUpTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            if (otherPermanent == permanent) {
-                game.doAction(new ChangeCountersAction(permanent, MagicCounterType.PlusOne, 5));
-            }
+            final MagicPlayer player = permanent.getController();
+            game.doAction(new ChangeCountersAction(permanent, MagicCounterType.PlusOne, 5));
+            game.logAppendMessage(player,"${player.getName()} puts 5 +1/+1 counters on ${permanent.getName()}")
             return MagicEvent.NONE;
         }
     }
