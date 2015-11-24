@@ -26,7 +26,7 @@ def event = {
             return event(permanent);
         }
     },
-    new MagicWhenSelfBecomesBlockedTrigger() {
+    new SelfBecomesBlockedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocked) {
             return event(permanent);
