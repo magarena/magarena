@@ -504,12 +504,12 @@ public enum MagicAbility {
     },
     OpponentDiscardOntoBattlefield("If a spell or ability an opponent controls causes you to discard SN, put it onto the battlefield instead of putting it into your graveyard\\.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenPutIntoGraveyardTrigger.OpponentDiscardOntoBattlefield);
+            card.add(SelfPutIntoGraveyardTrigger.OpponentDiscardOntoBattlefield);
         }
     },
     RecoverGraveyard("When SN is put into a graveyard from anywhere, its owner shuffles his or her graveyard into his or her library\\.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenPutIntoGraveyardTrigger.RecoverGraveyard);
+            card.add(SelfPutIntoGraveyardTrigger.RecoverGraveyard);
         }
     },
     GraveyardToLibrary("When SN is put into a graveyard from anywhere, shuffle it into its owner's library\\.",10) {
@@ -519,7 +519,7 @@ public enum MagicAbility {
     },
     LibraryInteadOfGraveyard("If SN would be put into a graveyard from anywhere, reveal SN and shuffle it into its owner's library instead\\.",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenPutIntoGraveyardTrigger.LibraryInsteadOfGraveyard);
+            card.add(SelfPutIntoGraveyardTrigger.LibraryInsteadOfGraveyard);
         }
     },
     EntersChooseOpponent("As SN enters the battlefield, choose an opponent\\.", 0) {

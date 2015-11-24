@@ -4,7 +4,6 @@ import magic.model.MagicGame;
 import magic.model.MagicCard;
 import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
-import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.action.MoveCardAction;
 import magic.model.action.ShiftCardAction;
@@ -14,9 +13,8 @@ import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
-import magic.model.stack.MagicCardOnStack;
 
-public class MadnessTrigger extends MagicWhenPutIntoGraveyardTrigger {
+public class MadnessTrigger extends SelfPutIntoGraveyardTrigger {
 
     private final MagicManaCost cost;
 

@@ -1,5 +1,5 @@
 [
-    new MagicWhenPutIntoGraveyardTrigger(MagicTrigger.REPLACEMENT) {
+    new SelfPutIntoGraveyardTrigger(MagicTrigger.REPLACEMENT) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MoveCardAction act) {
             act.setToLocation(MagicLocationType.BottomOfOwnersLibrary);
