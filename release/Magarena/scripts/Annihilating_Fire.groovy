@@ -23,7 +23,7 @@
                 if (dealtDamage > 0) {
                     game.doAction(new AddTurnTriggerAction(
                         it, 
-                        SelfLeavesBattlefieldTrigger.IfDieExileInstead
+                        ThisLeavesBattlefieldTrigger.IfDieExileInstead
                     ));
                 }
             });

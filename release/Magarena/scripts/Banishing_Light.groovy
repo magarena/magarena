@@ -15,7 +15,7 @@
             event.processTargetPermanent(game, {
                 if (event.getPermanent().isValid()) {
                     game.doAction(new ExileLinkAction(event.getPermanent(), it));
-                    game.doAction(new AddTriggerAction(event.getPermanent(), SelfLeavesBattlefieldTrigger.ExileUntilLeaves));
+                    game.doAction(new AddTriggerAction(event.getPermanent(), ThisLeavesBattlefieldTrigger.ExileUntilLeaves));
                 }
             });
         }

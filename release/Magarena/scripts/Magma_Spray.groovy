@@ -15,7 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new DealDamageAction(event.getSource(),it,2));
-                game.doAction(new AddTurnTriggerAction(it,SelfLeavesBattlefieldTrigger.IfDieExileInstead));
+                game.doAction(new AddTurnTriggerAction(it,ThisLeavesBattlefieldTrigger.IfDieExileInstead));
             });
         }
     }

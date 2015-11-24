@@ -21,7 +21,7 @@
             });
             event.processTargetPermanent(game, {
                 game.doAction(ChangeStateAction.Set(it,MagicPermanentState.CannotBeRegenerated));
-                game.doAction(new AddTurnTriggerAction(it,SelfLeavesBattlefieldTrigger.IfDieExileInstead));
+                game.doAction(new AddTurnTriggerAction(it,ThisLeavesBattlefieldTrigger.IfDieExileInstead));
             });
         }
     }

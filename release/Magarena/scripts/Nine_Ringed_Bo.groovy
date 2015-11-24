@@ -27,7 +27,7 @@ def choice = Negative("target Spirit creature");
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new DealDamageAction(event.getSource(),it,1));
-                game.doAction(new AddTurnTriggerAction(it,SelfLeavesBattlefieldTrigger.IfDieExileInstead));
+                game.doAction(new AddTurnTriggerAction(it,ThisLeavesBattlefieldTrigger.IfDieExileInstead));
             });
         }
     }

@@ -48,7 +48,7 @@ def action = {
             });
         }
     },
-    new SelfLeavesBattlefieldTrigger() {
+    new ThisLeavesBattlefieldTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final RemoveFromPlayAction act) {
             return new MagicEvent(

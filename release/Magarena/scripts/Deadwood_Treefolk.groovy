@@ -32,7 +32,7 @@ def event = {
             return event(permanent);
         }
     },
-    new SelfLeavesBattlefieldTrigger() {
+    new ThisLeavesBattlefieldTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final RemoveFromPlayAction act) {
             return event(permanent);
