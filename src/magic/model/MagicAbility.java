@@ -454,12 +454,12 @@ public enum MagicAbility {
             final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(ARG.effect(arg));
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(ARG.wordrun(arg));
             card.add(MagicWhenSelfBlocksTrigger.create(filter, sourceEvent));
-            card.add(SelfBecomesBlockedByTrigger.create(filter, sourceEvent));
+            card.add(ThisBecomesBlockedByTrigger.create(filter, sourceEvent));
         }
     },
     BecomesBlockedByEffect("Whenever SN becomes blocked by " + ARG.WORDRUN + ", " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(SelfBecomesBlockedByTrigger.create(
+            card.add(ThisBecomesBlockedByTrigger.create(
                 MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
