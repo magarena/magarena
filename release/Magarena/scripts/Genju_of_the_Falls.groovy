@@ -53,7 +53,7 @@ def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
             game.doAction(new BecomesCreatureAction(event.getRefPermanent(),PT,AB,ST,LC));
         }
     },
-    new WhenOtherDiesTrigger() {
+    new OtherDiesTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent died) {
             return (permanent.getEnchantedPermanent() == died) ?
