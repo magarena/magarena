@@ -8,7 +8,7 @@ import magic.model.action.MoveCardAction;
 import magic.model.action.ShiftCardAction;
 import magic.model.event.MagicEvent;
 
-public class FromGraveyardIntoLibraryTrigger extends SelfPutIntoGraveyardTrigger {
+public class FromGraveyardIntoLibraryTrigger extends ThisPutIntoGraveyardTrigger {
 
     private static final FromGraveyardIntoLibraryTrigger INSTANCE = new FromGraveyardIntoLibraryTrigger();
 

@@ -13,12 +13,12 @@ import magic.model.action.PlayCardAction;
 import magic.model.action.RevealAction;
 import magic.model.event.MagicEvent;
 
-public abstract class SelfPutIntoGraveyardTrigger extends MagicTrigger<MoveCardAction> {
-    public SelfPutIntoGraveyardTrigger(final int priority) {
+public abstract class ThisPutIntoGraveyardTrigger extends MagicTrigger<MoveCardAction> {
+    public ThisPutIntoGraveyardTrigger(final int priority) {
         super(priority);
     }
 
-    public SelfPutIntoGraveyardTrigger() {}
+    public ThisPutIntoGraveyardTrigger() {}
 
     @Override
     public MagicTriggerType getType() {
@@ -35,7 +35,7 @@ public abstract class SelfPutIntoGraveyardTrigger extends MagicTrigger<MoveCardA
         cdef.addTrigger(this);
     }
 
-    public static final SelfPutIntoGraveyardTrigger LibraryInsteadOfGraveyard = new SelfPutIntoGraveyardTrigger(MagicTrigger.REPLACEMENT) {
+    public static final ThisPutIntoGraveyardTrigger LibraryInsteadOfGraveyard = new ThisPutIntoGraveyardTrigger(MagicTrigger.REPLACEMENT) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MoveCardAction act) {
             game.doAction(new RevealAction(act.card));
@@ -44,7 +44,7 @@ public abstract class SelfPutIntoGraveyardTrigger extends MagicTrigger<MoveCardA
         }
     };
 
-    public static final SelfPutIntoGraveyardTrigger OpponentDiscardOntoBattlefield = new SelfPutIntoGraveyardTrigger(MagicTrigger.REPLACEMENT) {
+    public static final ThisPutIntoGraveyardTrigger OpponentDiscardOntoBattlefield = new ThisPutIntoGraveyardTrigger(MagicTrigger.REPLACEMENT) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MoveCardAction act) {
             final MagicCard card = act.card;
@@ -58,7 +58,7 @@ public abstract class SelfPutIntoGraveyardTrigger extends MagicTrigger<MoveCardA
         }
     };
 
-    public static final SelfPutIntoGraveyardTrigger RecoverGraveyard = new SelfPutIntoGraveyardTrigger() {
+    public static final ThisPutIntoGraveyardTrigger RecoverGraveyard = new ThisPutIntoGraveyardTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MoveCardAction act) {
             final MagicPlayer owner = act.card.getOwner();

@@ -20,7 +20,7 @@ import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.EntersBattlefieldTrigger;
 import magic.model.trigger.EntersWithCounterTrigger;
 import magic.model.trigger.MagicWhenDrawnTrigger;
-import magic.model.trigger.SelfPutIntoGraveyardTrigger;
+import magic.model.trigger.ThisPutIntoGraveyardTrigger;
 import magic.model.trigger.ThisSpellIsCastTrigger;
 import magic.model.trigger.MagicWhenCycleTrigger;
 
@@ -100,7 +100,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     private final Collection<ThisSpellIsCastTrigger> spellIsCastTriggers = new ArrayList<ThisSpellIsCastTrigger>();
     private final Collection<MagicWhenCycleTrigger> cycleTriggers = new ArrayList<MagicWhenCycleTrigger>();
     private final Collection<MagicWhenDrawnTrigger> drawnTriggers = new ArrayList<MagicWhenDrawnTrigger>();
-    private final Collection<SelfPutIntoGraveyardTrigger> putIntoGraveyardTriggers = new ArrayList<SelfPutIntoGraveyardTrigger>();
+    private final Collection<ThisPutIntoGraveyardTrigger> putIntoGraveyardTriggers = new ArrayList<ThisPutIntoGraveyardTrigger>();
     private final Collection<MagicManaActivation> manaActivations=new ArrayList<MagicManaActivation>();
     private final Collection<MagicEventSource> costEventSources=new ArrayList<MagicEventSource>();
 
@@ -833,7 +833,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
         }
     }
 
-    public void addTrigger(final SelfPutIntoGraveyardTrigger trigger) {
+    public void addTrigger(final ThisPutIntoGraveyardTrigger trigger) {
         putIntoGraveyardTriggers.add(trigger);
     }
 
@@ -869,7 +869,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
         return comeIntoPlayTriggers;
     }
 
-    public Collection<SelfPutIntoGraveyardTrigger> getPutIntoGraveyardTriggers() {
+    public Collection<ThisPutIntoGraveyardTrigger> getPutIntoGraveyardTriggers() {
         return putIntoGraveyardTriggers;
     }
 

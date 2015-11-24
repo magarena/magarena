@@ -14,7 +14,7 @@ import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
 
-public class MadnessTrigger extends SelfPutIntoGraveyardTrigger {
+public class MadnessTrigger extends ThisPutIntoGraveyardTrigger {
 
     private final MagicManaCost cost;
 
