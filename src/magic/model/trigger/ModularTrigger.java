@@ -10,7 +10,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicPumpTargetPicker;
 
-public class ModularTrigger extends SelfDiesTrigger {
+public class ModularTrigger extends ThisDiesTrigger {
 
     private static final ModularTrigger INSTANCE = new ModularTrigger();
 

@@ -40,7 +40,7 @@ def TARGET_SPIRIT_PERMANENT_FROM_GRAVEYARD = new MagicTargetChoice(
             }
         }
     },
-    new SelfDiesTrigger() {
+    new ThisDiesTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent died) {
             return new MagicEvent(

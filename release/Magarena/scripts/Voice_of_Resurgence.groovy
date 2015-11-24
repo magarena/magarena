@@ -14,7 +14,7 @@ def Event = {
 }
 
 [
-    new SelfDiesTrigger() {
+    new ThisDiesTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent died) {
             return Event(permanent);

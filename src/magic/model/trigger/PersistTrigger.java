@@ -8,7 +8,7 @@ import magic.model.action.MagicPlayMod;
 import magic.model.action.ReanimateAction;
 import magic.model.event.MagicEvent;
 
-public class PersistTrigger extends SelfDiesTrigger {
+public class PersistTrigger extends ThisDiesTrigger {
 
     private static final PersistTrigger INSTANCE = new PersistTrigger();
 

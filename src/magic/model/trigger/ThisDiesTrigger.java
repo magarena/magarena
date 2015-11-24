@@ -5,9 +5,9 @@ import magic.model.MagicPermanent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 
-public abstract class SelfDiesTrigger extends OtherDiesTrigger {
-    public static final SelfDiesTrigger create(final MagicSourceEvent sourceEvent) {
-        return new SelfDiesTrigger() {
+public abstract class ThisDiesTrigger extends OtherDiesTrigger {
+    public static final ThisDiesTrigger create(final MagicSourceEvent sourceEvent) {
+        return new ThisDiesTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent source, final MagicPermanent died) {
                 return sourceEvent.getEvent(source);
@@ -15,11 +15,11 @@ public abstract class SelfDiesTrigger extends OtherDiesTrigger {
         };
     }
 
-    public SelfDiesTrigger(final int priority) {
+    public ThisDiesTrigger(final int priority) {
         super(priority);
     }
 
-    public SelfDiesTrigger() {}
+    public ThisDiesTrigger() {}
 
     @Override
     public boolean accept(final MagicPermanent source, final MagicPermanent died) {

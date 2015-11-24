@@ -1,7 +1,7 @@
 def choice = new MagicTargetChoice("an enchantment card from your library");
 
 [
-    new SelfDiesTrigger() {
+    new ThisDiesTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent died) {
             return new MagicEvent(

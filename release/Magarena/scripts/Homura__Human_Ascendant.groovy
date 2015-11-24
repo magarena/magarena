@@ -1,5 +1,5 @@
 [
-    new SelfDiesTrigger() {
+    new ThisDiesTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent source, final MagicPermanent died) {
             return new MagicEvent(
