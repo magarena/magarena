@@ -17,9 +17,9 @@ public abstract class MagicWhenBecomesTappedTrigger extends MagicTrigger<MagicPe
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenBecomesTapped;
     }
-    
+
     public static final MagicWhenBecomesTappedTrigger create(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
-        return new MagicWhenSelfBecomesTappedTrigger() {
+        return new ThisBecomesTappedTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent tapped) {
                 return filter.accept(permanent, permanent.getController(), tapped);
