@@ -446,7 +446,7 @@ public enum MagicAbility {
     // abilities that involve SN
     ShockLand("As SN enters the battlefield, you may pay 2 life\\. If you don't, SN enters the battlefield tapped\\.", -10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicRavnicaLandTrigger.create());
+            card.add(RavnicaLandTrigger.create());
         }
     },
     BlocksOrBlockedByEffect("Whenever SN blocks or becomes blocked by " + ARG.WORDRUN + ", " + ARG.EFFECT, 20) {

@@ -8,15 +8,15 @@ import magic.model.action.TapAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.event.MagicEvent;
 
-public class MagicRavnicaLandTrigger extends EntersBattlefieldTrigger {
+public class RavnicaLandTrigger extends EntersBattlefieldTrigger {
 
-    private static final MagicRavnicaLandTrigger INSTANCE = new MagicRavnicaLandTrigger();
+    private static final RavnicaLandTrigger INSTANCE = new RavnicaLandTrigger();
 
-    private MagicRavnicaLandTrigger() {
+    private RavnicaLandTrigger() {
         super(MagicTrigger.REPLACEMENT);
     }
 
-    public static MagicRavnicaLandTrigger create() {
+    public static RavnicaLandTrigger create() {
         return INSTANCE;
     }
 
