@@ -88,7 +88,7 @@ public enum MagicRuleEventAction {
         }
     },
     DestroyChosen(
-        "destroy " + ARG.SINGLE + "\\.(?<noregen> it can't be regenerated\\.)?",
+        "destroy " + ARG.CHOICE + "\\.(?<noregen> it can't be regenerated\\.)?",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Destroy"
@@ -330,7 +330,7 @@ public enum MagicRuleEventAction {
         }
     },
     ExilePermanent(
-        "exile " + ARG.SINGLE + "\\.",
+        "exile " + ARG.CHOICE + "\\.",
         MagicTargetHint.Negative,
         MagicExileTargetPicker.create(),
         MagicTiming.Removal,
@@ -374,7 +374,7 @@ public enum MagicRuleEventAction {
         }
     },
     DamageChosenAndController(
-        "sn deal(s)? (?<amount>[0-9]+) damage to " + ARG.SINGLE + " and (?<amount2>[0-9]+) damage to you\\.",
+        "sn deal(s)? (?<amount>[0-9]+) damage to " + ARG.CHOICE + " and (?<amount2>[0-9]+) damage to you\\.",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Damage"
@@ -402,7 +402,7 @@ public enum MagicRuleEventAction {
         }
     },
     DamageChosen(
-        ARG.IT + " deal(s)? (?<amount>[0-9]+) damage to " + ARG.SINGLE + "(\\.)?",
+        ARG.IT + " deal(s)? (?<amount>[0-9]+) damage to " + ARG.CHOICE + "(\\.)?",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Damage"
@@ -427,7 +427,7 @@ public enum MagicRuleEventAction {
         }
     },
     DamageChosenEqual(
-        ARG.IT + " deal(s)? damage equal to " + ARG.WORDRUN + " to " + ARG.SINGLE + "(\\.)?",
+        ARG.IT + " deal(s)? damage equal to " + ARG.WORDRUN + " to " + ARG.CHOICE + "(\\.)?",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Damage"
@@ -454,7 +454,7 @@ public enum MagicRuleEventAction {
         }
     },
     DamageChosenEqualAlt(
-        ARG.IT + " deal(s)? damage to " + ARG.SINGLE + " equal to " + ARG.WORDRUN + "(\\.)?",
+        ARG.IT + " deal(s)? damage to " + ARG.CHOICE + " equal to " + ARG.WORDRUN + "(\\.)?",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Damage"
@@ -1051,7 +1051,7 @@ public enum MagicRuleEventAction {
         }
     },
     PumpChosen(
-        ARG.SINGLE + " get(s)? (?<pt>[0-9+]+/[0-9+]+) until end of turn\\.",
+        ARG.CHOICE + " get(s)? (?<pt>[0-9+]+/[0-9+]+) until end of turn\\.",
         MagicTargetHint.Positive,
         MagicPumpTargetPicker.create(),
         MagicTiming.Pump,
@@ -1141,7 +1141,7 @@ public enum MagicRuleEventAction {
         }
     },
     PumpGainChosen(
-        ARG.SINGLE + " get(s)? (?<pt>[0-9+]+/[0-9+]+) and (gain(s)?|is) (?<ability>.+) until end of turn\\.",
+        ARG.CHOICE + " get(s)? (?<pt>[0-9+]+/[0-9+]+) and (gain(s)?|is) (?<ability>.+) until end of turn\\.",
         MagicTargetHint.Positive
     ) {
         @Override
@@ -1176,7 +1176,7 @@ public enum MagicRuleEventAction {
         }
     },
     PumpGainChosenCan(
-        ARG.SINGLE + " get(s)? (?<pt>[0-9+]+/[0-9+]+) (until end of turn and|and) (?<ability>can('t)? .+) this turn\\.",
+        ARG.CHOICE + " get(s)? (?<pt>[0-9+]+/[0-9+]+) (until end of turn and|and) (?<ability>can('t)? .+) this turn\\.",
         MagicTargetHint.Positive
     ) {
         @Override
@@ -1197,7 +1197,7 @@ public enum MagicRuleEventAction {
         }
     },
     PumpGainChosenAlt(
-        "until end of turn, " + ARG.SINGLE + " get(s)? (?<pt>[0-9+]+/[0-9+]+) and (gain(s)?|is) (?<ability>.+)(\\.)?",
+        "until end of turn, " + ARG.CHOICE + " get(s)? (?<pt>[0-9+]+/[0-9+]+) and (gain(s)?|is) (?<ability>.+)(\\.)?",
         MagicTargetHint.Positive
     ) {
         @Override
@@ -1252,7 +1252,7 @@ public enum MagicRuleEventAction {
         }
     },
     WeakenChosen(
-        ARG.SINGLE + " get(s)? (?<pt>[0-9-]+/[0-9-]+) until end of turn\\.",
+        ARG.CHOICE + " get(s)? (?<pt>[0-9-]+/[0-9-]+) until end of turn\\.",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Weaken"
@@ -1304,7 +1304,7 @@ public enum MagicRuleEventAction {
         }
     },
     ModPTChosen(
-        ARG.SINGLE + " get(s)? (?<pt>[0-9+-]+/[0-9+-]+) until end of turn\\.",
+        ARG.CHOICE + " get(s)? (?<pt>[0-9+-]+/[0-9+-]+) until end of turn\\.",
         MagicTiming.Removal,
         "Pump"
     ) {
@@ -1326,7 +1326,7 @@ public enum MagicRuleEventAction {
         }
     },
     ModPTGainChosen(
-        ARG.SINGLE + " get(s)? (?<pt>[0-9+-]+/[0-9+-]+) and gains (?<ability>.+) until end of turn\\.",
+        ARG.CHOICE + " get(s)? (?<pt>[0-9+-]+/[0-9+-]+) and gains (?<ability>.+) until end of turn\\.",
         MagicTiming.Removal
     ) {
         @Override
@@ -1400,7 +1400,7 @@ public enum MagicRuleEventAction {
         }
     },
     CounterOnChosen(
-        "put (?<amount>[a-z]+) (?<type>[^ ]+) counter(s)? on " + ARG.SINGLE + "\\."
+        "put (?<amount>[a-z]+) (?<type>[^ ]+) counter(s)? on " + ARG.CHOICE + "\\."
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
@@ -2121,7 +2121,7 @@ public enum MagicRuleEventAction {
         }
     },
     TapChosen(
-        "tap " + ARG.SINGLE + "\\.",
+        "tap " + ARG.CHOICE + "\\.",
         MagicTargetHint.Negative,
         MagicTapTargetPicker.Tap,
         MagicTiming.Tapping,
@@ -2216,7 +2216,7 @@ public enum MagicRuleEventAction {
         }
     },
     UntapChosen(
-        "untap " + ARG.SINGLE + "\\.",
+        "untap " + ARG.CHOICE + "\\.",
         MagicTargetHint.Positive,
         MagicTapTargetPicker.Untap,
         MagicTiming.Tapping,
@@ -2573,7 +2573,7 @@ public enum MagicRuleEventAction {
         }
     },
     RegenerateChosen(
-        "regenerate " + ARG.SINGLE + "\\.",
+        "regenerate " + ARG.CHOICE + "\\.",
         MagicTargetHint.Positive,
         MagicRegenerateTargetPicker.create(),
         MagicTiming.Pump,
@@ -3038,7 +3038,7 @@ public enum MagicRuleEventAction {
         }
     },
     GainProtectionChosen(
-        ARG.SINGLE + " gain(s)? protection from the color of your choice until end of turn\\.",
+        ARG.CHOICE + " gain(s)? protection from the color of your choice until end of turn\\.",
         MagicTargetHint.Positive,
         MagicTiming.Pump,
         "Protection",
@@ -3058,7 +3058,7 @@ public enum MagicRuleEventAction {
         }
     ),
     GainChosen(
-        ARG.SINGLE + " gain(s)? (?<ability>.+) until end of turn\\.",
+        ARG.CHOICE + " gain(s)? (?<ability>.+) until end of turn\\.",
         MagicTargetHint.Positive
     ) {
         @Override
@@ -3118,7 +3118,7 @@ public enum MagicRuleEventAction {
         }
     },
     GainChosenAlt(
-        "until end of turn, " + ARG.SINGLE + " gain(s)? (?<ability>.+)(\\.)?",
+        "until end of turn, " + ARG.CHOICE + " gain(s)? (?<ability>.+)(\\.)?",
         MagicTargetHint.Positive
     ) {
         @Override
@@ -3139,7 +3139,7 @@ public enum MagicRuleEventAction {
         }
     },
     GainChosenCan(
-        ARG.SINGLE + " (?<ability>can('t)? .+) this turn\\."
+        ARG.CHOICE + " (?<ability>can('t)? .+) this turn\\."
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
@@ -3309,7 +3309,7 @@ public enum MagicRuleEventAction {
         }
     },
     LoseChosen(
-        ARG.SINGLE + " loses (?<ability>.+) until end of turn\\.",
+        ARG.CHOICE + " loses (?<ability>.+) until end of turn\\.",
         MagicTargetHint.Negative
     ) {
         @Override
@@ -3341,7 +3341,7 @@ public enum MagicRuleEventAction {
         }
     },
     GainControl(
-        "gain control of " + ARG.SINGLE + "(?<ueot> until end of turn)?\\.",
+        "gain control of " + ARG.CHOICE + "(?<ueot> until end of turn)?\\.",
         MagicTargetHint.Negative,
         MagicExileTargetPicker.create(),
         MagicTiming.Removal,
