@@ -556,7 +556,7 @@ public enum MagicAbility {
     },
     WhenMonstrous("When SN becomes monstrous, " + ARG.EFFECT, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenBecomesStateTrigger.createSelf(
+            card.add(BecomesStateTrigger.createSelf(
                 MagicPermanentState.Monstrous,
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
@@ -564,7 +564,7 @@ public enum MagicAbility {
     },
     WhenRenowned("When SN becomes renowned, " + ARG.EFFECT, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenBecomesStateTrigger.createSelf(
+            card.add(BecomesStateTrigger.createSelf(
                 MagicPermanentState.Renowned,
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
@@ -652,7 +652,7 @@ public enum MagicAbility {
     },
     WhenExploit("When SN exploits a creature, " + ARG.EFFECT, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenBecomesStateTrigger.createSelf(
+            card.add(BecomesStateTrigger.createSelf(
                 MagicPermanentState.Exploit,
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));

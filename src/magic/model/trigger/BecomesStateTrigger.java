@@ -7,20 +7,20 @@ import magic.model.action.ChangeStateAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 
-public abstract class MagicWhenBecomesStateTrigger extends MagicTrigger<ChangeStateAction> {
-    public MagicWhenBecomesStateTrigger(final int priority) {
+public abstract class BecomesStateTrigger extends MagicTrigger<ChangeStateAction> {
+    public BecomesStateTrigger(final int priority) {
         super(priority);
     }
 
-    public MagicWhenBecomesStateTrigger() {}
+    public BecomesStateTrigger() {}
 
     @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenBecomesState;
     }
-    
-    public static MagicWhenBecomesStateTrigger create(final MagicPermanentState state, final MagicSourceEvent sourceEvent) {
-        return new MagicWhenBecomesStateTrigger() {
+
+    public static BecomesStateTrigger create(final MagicPermanentState state, final MagicSourceEvent sourceEvent) {
+        return new BecomesStateTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final ChangeStateAction data) {
                 return data.state == state;
@@ -31,9 +31,9 @@ public abstract class MagicWhenBecomesStateTrigger extends MagicTrigger<ChangeSt
             }
         };
     }
-    
-    public static MagicWhenBecomesStateTrigger createSelf(final MagicPermanentState state, final MagicSourceEvent sourceEvent) {
-        return new MagicWhenBecomesStateTrigger() {
+
+    public static BecomesStateTrigger createSelf(final MagicPermanentState state, final MagicSourceEvent sourceEvent) {
+        return new BecomesStateTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final ChangeStateAction data) {
                 return data.state == state && data.permanent == permanent;
