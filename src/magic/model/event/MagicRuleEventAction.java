@@ -3600,8 +3600,9 @@ public enum MagicRuleEventAction {
         }
     }
 
-    public static String personalize(final String text) {
-        return text
+    public static String personalize(final MagicChoice choice, final String text) {
+        final String withIndicator = addChoiceIndicator(choice, text);
+        return withIndicator
             .replaceAll("(S|s)earch your ", "PN searches his or her ")
             .replaceAll("discard ","discards ")
             .replaceAll("reveal ","reveals ")
@@ -3619,12 +3620,10 @@ public enum MagicRuleEventAction {
             .replaceAll("you.", "PN.")
             .replaceAll("(P|p)ut ","PN puts ")
             .replaceAll("Choose one ","Choose one\\$ ")
-            //replace final period with target indicator and period
-            .replaceAll("\\.$", "\\$.")
             ;
     }
 
-    public static String mayTense(String text) {
+    public static String mayTense(final String text) {
         return text
             .replaceAll("PN's hand ","his or her hand ")
             .replaceAll("PN searches ","search ")
@@ -3638,6 +3637,19 @@ public enum MagicRuleEventAction {
             .replaceAll("you don't","he or she doesn't")
             .replaceFirst("^PN ","")
             ;
+    }
+
+    public static String addChoiceIndicator(final MagicChoice choice, final String text) {
+        final MagicTargetChoice tchoice = choice.getTargetChoice();
+        if (tchoice.isValid()) {
+            final String desc = tchoice.getTargetDescription();
+            return text.replace(desc, desc + "$");
+        } else if (choice.isValid()) {
+            //replace final period with target indicator and period
+            return text.replaceAll("\\.$", "\\$.");
+        } else {
+            return text;
+        }
     }
 
     private static String renameThisThat(final String text) {
@@ -3691,8 +3703,8 @@ public enum MagicRuleEventAction {
         final MagicChoice choice = ruleAction.getChoice(matcher);
         final String pnMayChoice = capitalize(ruleWithoutMay).replaceFirst("\\.", "?");
 
-        final String contextRule = personalize(concat(ruleWithoutMay, part));
-        final String playerRule = personalize(concat(rule, part));
+        final String contextRule = personalize(choice, concat(ruleWithoutMay, part));
+        final String playerRule = personalize(choice, concat(rule, part));
 
         if (mayCost != MagicManaCost.ZERO) {
             return new MagicSourceEvent(ruleAction, matcher) {
