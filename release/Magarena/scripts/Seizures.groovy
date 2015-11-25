@@ -1,5 +1,5 @@
 [
-    new MagicWhenBecomesTappedTrigger() {
+    new BecomesTappedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent tapped) {
             final MagicPermanent enchanted = permanent.getEnchantedPermanent();

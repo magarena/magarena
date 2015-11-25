@@ -6,19 +6,19 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 import magic.model.target.MagicTargetFilter;
 
-public abstract class MagicWhenBecomesTappedTrigger extends MagicTrigger<MagicPermanent> {
-    public MagicWhenBecomesTappedTrigger(final int priority) {
+public abstract class BecomesTappedTrigger extends MagicTrigger<MagicPermanent> {
+    public BecomesTappedTrigger(final int priority) {
         super(priority);
     }
 
-    public MagicWhenBecomesTappedTrigger() {}
+    public BecomesTappedTrigger() {}
 
     @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenBecomesTapped;
     }
 
-    public static final MagicWhenBecomesTappedTrigger create(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
+    public static final BecomesTappedTrigger create(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
         return new ThisBecomesTappedTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent tapped) {

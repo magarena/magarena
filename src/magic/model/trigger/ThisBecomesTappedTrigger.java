@@ -5,7 +5,7 @@ import magic.model.MagicPermanent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 
-public abstract class ThisBecomesTappedTrigger extends MagicWhenBecomesTappedTrigger {
+public abstract class ThisBecomesTappedTrigger extends BecomesTappedTrigger {
     @Override
     public boolean accept(final MagicPermanent permanent, final MagicPermanent tapped) {
         return permanent == tapped;
