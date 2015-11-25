@@ -6,19 +6,19 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 import magic.model.target.MagicTargetFilter;
 
-public abstract class MagicWhenBecomesUntappedTrigger extends MagicTrigger<MagicPermanent> {
-    public MagicWhenBecomesUntappedTrigger(final int priority) {
+public abstract class BecomesUntappedTrigger extends MagicTrigger<MagicPermanent> {
+    public BecomesUntappedTrigger(final int priority) {
         super(priority);
     }
 
-    public MagicWhenBecomesUntappedTrigger() {}
+    public BecomesUntappedTrigger() {}
 
     @Override
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenBecomesUntapped;
     }
 
-    public static final MagicWhenBecomesUntappedTrigger create(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
+    public static final BecomesUntappedTrigger create(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
         return new ThisBecomesUntappedTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent untapped) {

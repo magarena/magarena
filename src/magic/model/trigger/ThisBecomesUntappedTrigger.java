@@ -5,7 +5,7 @@ import magic.model.MagicPermanent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 
-public abstract class ThisBecomesUntappedTrigger extends MagicWhenBecomesUntappedTrigger {
+public abstract class ThisBecomesUntappedTrigger extends BecomesUntappedTrigger {
     @Override
     public boolean accept(final MagicPermanent permanent, final MagicPermanent untapped) {
         return permanent == untapped;
