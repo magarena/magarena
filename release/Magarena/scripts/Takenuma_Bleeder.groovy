@@ -15,7 +15,7 @@ def event = {
 }
 
 [
-    new MagicWhenSelfAttacksTrigger() {
+    new ThisAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
             return permanent.getController().controlsPermanent(MagicSubType.Demon) == false ?

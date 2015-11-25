@@ -9,7 +9,7 @@
             return target.hasCounters(MagicCounterType.Level);
         }
     },
-    new MagicWhenSelfAttacksTrigger() {
+    new ThisAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
             return permanent.getCounters(MagicCounterType.Level) >= 6 ?

@@ -7,7 +7,7 @@ import magic.model.action.ChangeCountersAction;
 import magic.model.condition.MagicCondition;
 import magic.model.event.MagicEvent;
 
-public class DethroneTrigger extends MagicWhenSelfAttacksTrigger {
+public class DethroneTrigger extends ThisAttacksTrigger {
 
     private static final DethroneTrigger INSTANCE = new DethroneTrigger();
 
