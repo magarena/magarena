@@ -1,5 +1,5 @@
 [
-    new MagicWhenSelfBecomesUntappedTrigger() {
+    new ThisBecomesUntappedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent untapped) {
             return new MagicEvent(

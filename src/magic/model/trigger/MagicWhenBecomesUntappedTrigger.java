@@ -17,9 +17,9 @@ public abstract class MagicWhenBecomesUntappedTrigger extends MagicTrigger<Magic
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenBecomesUntapped;
     }
-    
+
     public static final MagicWhenBecomesUntappedTrigger create(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
-        return new MagicWhenSelfBecomesUntappedTrigger() {
+        return new ThisBecomesUntappedTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent untapped) {
                 return filter.accept(permanent, permanent.getController(), untapped);
