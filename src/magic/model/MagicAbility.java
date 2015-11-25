@@ -453,7 +453,7 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(ARG.effect(arg));
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(ARG.wordrun(arg));
-            card.add(MagicWhenSelfBlocksTrigger.create(filter, sourceEvent));
+            card.add(ThisBlocksTrigger.create(filter, sourceEvent));
             card.add(ThisBecomesBlockedByTrigger.create(filter, sourceEvent));
         }
     },
@@ -709,7 +709,7 @@ public enum MagicAbility {
     },
     BlocksCreatureEffect("When(ever)? SN blocks " + ARG.WORDRUN + ", " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenSelfBlocksTrigger.create(
+            card.add(ThisBlocksTrigger.create(
                 MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));

@@ -14,7 +14,7 @@ def TARGET_CREATURE_BLOCKED_BY_SOURCE = {
 }
 
 [
-    new MagicWhenSelfBlocksTrigger() {
+    new ThisBlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
             return new MagicEvent(

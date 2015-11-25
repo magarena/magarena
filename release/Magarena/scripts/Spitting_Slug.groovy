@@ -29,7 +29,7 @@ def EVENT = {
 }
 
 [
-    new MagicWhenSelfBlocksTrigger() {
+    new ThisBlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
             return EVENT(permanent);

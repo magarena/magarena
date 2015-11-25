@@ -24,7 +24,7 @@
             game.doAction(new ChangeTurnPTAction(event.getPermanent(),3,3));
         }
     },
-    new MagicWhenSelfBlocksTrigger() {
+    new ThisBlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
             final MagicPermanent blocked = permanent.getBlockedCreature();

@@ -20,7 +20,7 @@ def event = {
             permanent.addAbility(MagicAbility.AttacksEachTurnIfAble, flags);
         }
     },
-    new MagicWhenSelfBlocksTrigger() {
+    new ThisBlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
             return event(permanent);
