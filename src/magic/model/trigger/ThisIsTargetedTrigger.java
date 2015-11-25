@@ -8,14 +8,14 @@ import magic.model.event.MagicSourceEvent;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.target.MagicTargetFilter;
 
-public abstract class MagicWhenSelfTargetedTrigger extends MagicWhenTargetedTrigger {
+public abstract class ThisIsTargetedTrigger extends MagicWhenTargetedTrigger {
     @Override
     public boolean accept(final MagicPermanent permanent, final MagicItemOnStack item) {
         return item.isTarget(permanent);
     }
-    
-    public static MagicWhenSelfTargetedTrigger create(final MagicTargetFilter<MagicItemOnStack> filter, final MagicSourceEvent sourceEvent) {
-        return new MagicWhenSelfTargetedTrigger() {
+
+    public static ThisIsTargetedTrigger create(final MagicTargetFilter<MagicItemOnStack> filter, final MagicSourceEvent sourceEvent) {
+        return new ThisIsTargetedTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicItemOnStack itemOnStack) {
                 return super.accept(permanent, itemOnStack) && filter.accept(permanent, permanent.getController(), itemOnStack);
@@ -26,18 +26,18 @@ public abstract class MagicWhenSelfTargetedTrigger extends MagicWhenTargetedTrig
             }
         };
     }
-    
-    public static MagicWhenSelfTargetedTrigger create(final MagicSourceEvent sourceEvent) {
-        return new MagicWhenSelfTargetedTrigger() {
+
+    public static ThisIsTargetedTrigger create(final MagicSourceEvent sourceEvent) {
+        return new ThisIsTargetedTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicItemOnStack itemOnStack) {
                 return sourceEvent.getEvent(permanent);
             }
         };
     }
-    
-    public static MagicWhenSelfTargetedTrigger createSpell(final MagicSourceEvent sourceEvent) {
-        return new MagicWhenSelfTargetedTrigger() {
+
+    public static ThisIsTargetedTrigger createSpell(final MagicSourceEvent sourceEvent) {
+        return new ThisIsTargetedTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicItemOnStack item) {
                 return super.accept(permanent, item) && item.isSpell();
@@ -48,8 +48,8 @@ public abstract class MagicWhenSelfTargetedTrigger extends MagicWhenTargetedTrig
             }
         };
     }
-    
-    public static final MagicWhenSelfTargetedTrigger SacWhenTargeted = new MagicWhenSelfTargetedTrigger() {
+
+    public static final ThisIsTargetedTrigger SacWhenTargeted = new ThisIsTargetedTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicItemOnStack target) {
             return new MagicEvent(

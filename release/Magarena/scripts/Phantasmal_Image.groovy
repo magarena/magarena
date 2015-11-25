@@ -26,7 +26,7 @@ def ST = new MagicStatic(MagicLayer.Type) {
                     final MagicPermanent perm ->
                     final MagicGame G = perm.getGame();
                     G.doAction(new AddStaticAction(perm, ST));
-                    G.doAction(new AddTriggerAction(perm, MagicWhenSelfTargetedTrigger.SacWhenTargeted));
+                    G.doAction(new AddTriggerAction(perm, ThisIsTargetedTrigger.SacWhenTargeted));
                 }));
             } else {
                 game.doAction(new PlayCardFromStackAction(
