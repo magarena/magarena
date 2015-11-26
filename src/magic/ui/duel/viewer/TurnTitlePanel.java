@@ -128,13 +128,6 @@ public class TurnTitlePanel extends JPanel {
         );
     }
 
-    private void setButtonTransparent(final JButton btn) {
-        btn.setOpaque(false);
-        btn.setContentAreaFilled(false);
-        btn.setBorderPainted(false);
-        btn.setBorder(null);
-    }
-
     private void showDevPopupMenu(final MouseEvent e) {
         final JPopupMenu menu = new JPopupMenu();
         final JMenuItem item1 = new JMenuItem(new AbstractAction("Save Game") {
