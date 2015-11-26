@@ -6,16 +6,14 @@ def AB = new MagicStatic(MagicLayer.Ability) {
 }
 
 [
-    new MagicWhenBlocksTrigger() {
+    new ThisBlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent blocker) {
-            return (permanent == blocker) ?
-                new MagicEvent(
-                    permanent,
-                    this,
-                    "SN loses defender."
-                ):
-                MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                this,
+                "SN loses defender."
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

@@ -1,9 +1,9 @@
 [
-    new MagicWhenBlocksTrigger() {
+    new ThisBlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent defender) {
             final MagicPermanent blocked=permanent.getBlockedCreature();
-            return (permanent==defender && blocked.isValid()) ?
+            return (blocked.isValid()) ?
                 new MagicEvent(
                     permanent,
                     blocked.getController(),

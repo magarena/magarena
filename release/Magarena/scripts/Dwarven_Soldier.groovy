@@ -27,12 +27,11 @@
             ));
         }
     },
-    new MagicWhenBlocksTrigger() {
+    new ThisBlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
             final MagicPermanent blocked = permanent.getBlockedCreature();
-            return (permanent == blocker &&
-                    blocked.isValid() &&
+            return (blocked.isValid() &&
                     (blocked.hasSubType(MagicSubType.Orc))) ?
                 new MagicEvent(
                     permanent,
