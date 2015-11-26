@@ -10,7 +10,7 @@ class GraveyardViewer extends CardListViewer {
         super(
             controller,
             controller.getViewerInfo().getPlayerInfo(opponent).graveyard,
-            "Graveyard : " + controller.getViewerInfo().getPlayerInfo(opponent).name,
+            "Graveyard : " + controller.getViewerInfo().getPlayerInfo(opponent).getName(),
             Theme.ICON_SMALL_GRAVEYARD
         );
 

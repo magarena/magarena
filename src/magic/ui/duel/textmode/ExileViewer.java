@@ -10,7 +10,7 @@ class ExileViewer extends CardListViewer {
         super(
             controller,
             controller.getViewerInfo().getPlayerInfo(opponent).exile,
-            "Exile : " + controller.getViewerInfo().getPlayerInfo(opponent).name,
+            "Exile : " + controller.getViewerInfo().getPlayerInfo(opponent).getName(),
             Theme.ICON_SMALL_EXILE
         );
 

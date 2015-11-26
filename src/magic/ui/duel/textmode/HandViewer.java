@@ -10,7 +10,7 @@ class HandViewer extends CardListViewer {
         super(
             controller,
             controller.getViewerInfo().getPlayerInfo(false).hand,
-            "Hand : " + controller.getViewerInfo().getPlayerInfo(false).name,
+            "Hand : " + controller.getViewerInfo().getPlayerInfo(false).getName(),
             Theme.ICON_SMALL_HAND,
             /* showCost */ false
         );

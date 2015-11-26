@@ -53,7 +53,7 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
         tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_GRAVEYARD), getGraveyardZoneName(getAiPlayer()));
         tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_EXILE), getExileZoneName(getUserPlayer()));
         tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_EXILE), getExileZoneName(getAiPlayer()));
-        tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_HAND), UiString.get(_S2, getUserPlayer().name));
+        tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_HAND), UiString.get(_S2, getUserPlayer().getName()));
         tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_HAND), getHandZoneName(getAiPlayer()));
         add(tabSelector, BorderLayout.WEST);
 
@@ -93,7 +93,7 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
             case 0:
                 showCards(
                         getUserPlayer().hand,
-                        showFullScreen, getHandZoneName(getUserPlayer(), !showFullScreen && !getUserPlayer().isAi), true);
+                        showFullScreen, getHandZoneName(getUserPlayer(), !showFullScreen && !getUserPlayer().isAi()), true);
                 break;
             case 1:
                 showCards(
@@ -130,18 +130,18 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
     }
 
     private String getHandZoneName(final PlayerViewerInfo player, final boolean hideName) {
-        return hideName ? "" : UiString.get(_S3, player.name);
+        return hideName ? "" : UiString.get(_S3, player.getName());
     }
     private String getHandZoneName(final PlayerViewerInfo player) {
         return getHandZoneName(player, false);
     }
 
     private String getGraveyardZoneName(final PlayerViewerInfo player) {
-        return UiString.get(_S4, player.name);
+        return UiString.get(_S4, player.getName());
     }
 
     private String getExileZoneName(final PlayerViewerInfo player) {
-        return UiString.get(_S5, player.name);
+        return UiString.get(_S5, player.getName());
     }
 
     private void showFullScreenZone(final MagicCardList aCardList, final String zoneName) {

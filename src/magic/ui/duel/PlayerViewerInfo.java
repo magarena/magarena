@@ -2,17 +2,19 @@ package magic.ui.duel;
 
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.ImageIcon;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicType;
+import magic.ui.IconImages;
 
 public class PlayerViewerInfo {
 
     public final MagicPlayer player;
-    public final boolean turn;
-    public final String name;
+    private final boolean isPlayerTurn;
+    private final String name;
     public final int life;
     public final int poison;
     public final int preventDamage;
@@ -22,12 +24,14 @@ public class PlayerViewerInfo {
     public final MagicCardList exile;
     public final MagicCardList library;
     public final List<PermanentViewerInfo> permanents;
-    public final boolean isAi;
+    private final boolean isAi;
     public final String playerLabel;
+    private final ImageIcon avatar;
+    private int gamesWon;
 
-    public PlayerViewerInfo(final MagicGame game, final MagicPlayer player) {
+    PlayerViewerInfo(final MagicGame game, final MagicPlayer player) {
         this.player = player;
-        turn = player == game.getTurnPlayer();
+        isPlayerTurn = player == game.getTurnPlayer();
         name = player.getName();
         playerLabel = player.getPlayerDefinition().getProfile().getPlayerLabel();
         life = player.getLife();
@@ -43,5 +47,35 @@ public class PlayerViewerInfo {
         for (final MagicPermanent permanent : player.getPermanents()) {
             permanents.add(new PermanentViewerInfo(game, permanent));
         }
+        avatar = IconImages.getIconSize4(player.getPlayerDefinition());
     }
+
+    public ImageIcon getAvatar() {
+        return this.avatar;
+    }
+
+    public boolean isAi() {
+        return this.isAi;
+    }
+
+    public boolean isHuman() {
+        return !isAi();
+    }
+
+    public boolean isPlayerTurn() {
+        return this.isPlayerTurn;
+    }
+
+    public int getGamesWon() {
+        return this.gamesWon;
+    }
+
+    void setGamesWon(int gamesWon) {
+        this.gamesWon = gamesWon;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
 }

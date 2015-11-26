@@ -68,7 +68,7 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
         
         final PlayerViewerInfo playerInfo = controller.getViewerInfo().getPlayerInfo(false);
 
-        if (playerInfo.isAi || MagicSystem.isAiVersusAi()) {
+        if (playerInfo.isAi() || MagicSystem.isAiVersusAi()) {
             playerCompositePanels[0] = new PlayerCompositePanel(
                     new GamePlayerPanel(controller, playerInfo)
             );

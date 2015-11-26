@@ -11,7 +11,7 @@ class OtherViewer extends CardListViewer {
         super(
             controller,
             cards,
-            "Other : " + controller.getViewerInfo().getPlayerInfo(false).name,
+            "Other : " + controller.getViewerInfo().getPlayerInfo(false).getName(),
             Theme.ICON_SMALL_HAND,
             /* showCost */ false
         );

@@ -126,10 +126,10 @@ public class TurnTitlePanel extends JPanel {
         final MagicGame game = controller.getGame();
         final GameViewerInfo boardInfo = controller.getViewerInfo();
         return String.format("%s %d - %d %s",
-                boardInfo.getPlayerInfo(false).name,
+                boardInfo.getPlayerInfo(false).getName(),
                 game.getDuel().getGamesWon(),
                 game.getDuel().getGamesPlayed() - game.getDuel().getGamesWon(),
-                boardInfo.getPlayerInfo(true).name
+                boardInfo.getPlayerInfo(true).getName()
         );
     }
 

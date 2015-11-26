@@ -1,6 +1,7 @@
 package magic.ui.duel;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import magic.model.MagicCard;
@@ -9,27 +10,52 @@ import magic.model.MagicGame;
 import magic.model.MagicMessage;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerZone;
+import magic.model.phase.MagicPhaseType;
 import magic.model.stack.MagicItemOnStack;
 
 public class GameViewerInfo {
 
-    private final PlayerViewerInfo playerInfo;
-    private final PlayerViewerInfo opponentInfo;
-    private final List<StackViewerInfo> stack = new ArrayList<>();
-    private final List<MagicMessage> log = new ArrayList<>(MAX_LOG);
-        
     private static final int MAX_LOG = 50;
 
-    public GameViewerInfo(final MagicGame game) {
+    private final PlayerViewerInfo playerInfo;
+    private final PlayerViewerInfo opponentInfo;
+    private final PlayerViewerInfo priorityPlayer;
+    private final List<StackViewerInfo> stack = new ArrayList<>();
+    private final List<MagicMessage> log = new ArrayList<>(MAX_LOG);
+    private final int turn;
+    private final int gamesRequiredToWin;
+    private final int gameNumber;
+    private final int maxGames;
+    private final MagicPhaseType phaseType;
+    private final int undoPoints;
         
+    public GameViewerInfo(final MagicGame game) {
+
         final MagicPlayer player = game.getVisiblePlayer();
         playerInfo = new PlayerViewerInfo(game, player);
         opponentInfo = new PlayerViewerInfo(game, player.getOpponent());
+        priorityPlayer = game.getPriorityPlayer() == player ? playerInfo : opponentInfo;
+
+        // TODO: MagicPlayer should be responsible for keeping track of games won.
+        playerInfo.setGamesWon(game.getDuel().getGamesWon());
+        opponentInfo.setGamesWon(game.getDuel().getGamesPlayed() - game.getDuel().getGamesWon());
+
+        turn = game.getTurn();
+        gamesRequiredToWin = game.getDuel().getConfiguration().getGamesRequiredToWinDuel();
+        gameNumber =  game.getDuel().getGameNr();
+        maxGames = game.getDuel().getGamesTotal();
+        phaseType = game.getPhase().getType();
+        undoPoints = game.getNrOfUndoPoints();
 
         setStackViewerInfo(game);
-        setLogBookViewerInfo(game);        
+        setLogBookViewerInfo(game);
+
     }
-    
+
+    public List<PlayerViewerInfo> getPlayers() {
+        return Arrays.asList(playerInfo, opponentInfo);
+    }
+
     private void setStackViewerInfo(final MagicGame game) {
         for (final MagicItemOnStack itemOnStack : game.getStack()) {
             stack.add(new StackViewerInfo(game,itemOnStack));
@@ -48,15 +74,23 @@ public class GameViewerInfo {
     }
 
     public PlayerViewerInfo getPlayerInfo(final boolean opponent) {
-        return opponent?opponentInfo:playerInfo;
+        return opponent ? opponentInfo : playerInfo;
     }
 
     public PlayerViewerInfo getAttackingPlayerInfo() {
-        return playerInfo.turn?playerInfo:opponentInfo;
+        return playerInfo.isPlayerTurn() ? playerInfo : opponentInfo;
     }
 
     public PlayerViewerInfo getDefendingPlayerInfo() {
-        return playerInfo.turn?opponentInfo:playerInfo;
+        return playerInfo.isPlayerTurn() ? opponentInfo : playerInfo;
+    }
+
+    public PlayerViewerInfo getTurnPlayer() {
+        return playerInfo.isPlayerTurn() ? playerInfo : opponentInfo;
+    }
+
+    public PlayerViewerInfo getPriorityPlayer() {
+        return priorityPlayer;
     }
 
     public boolean isVisiblePlayer(final MagicPlayer player) {
@@ -149,6 +183,30 @@ public class GameViewerInfo {
             }
         }
         return MagicCard.NONE;
+    }
+
+    public int getTurn() {
+        return turn;
+    }
+
+    public int getGamesRequiredToWinDuel() {
+        return this.gamesRequiredToWin;
+    }
+
+    public int getGameNumber() {
+        return this.gameNumber;
+    }
+
+    public int getMaxGames() {
+        return this.maxGames;
+    }
+
+    public MagicPhaseType getPhaseType() {
+        return this.phaseType;
+    }
+
+    public int getUndoPoints() {
+        return this.undoPoints;
     }
 
 }

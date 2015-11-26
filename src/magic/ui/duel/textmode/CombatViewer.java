@@ -21,7 +21,7 @@ class CombatViewer extends PermanentsViewer {
 
     @Override
     public String getTitle() {
-        return "Combat : " + controller.getViewerInfo().getAttackingPlayerInfo().name;
+        return "Combat : " + controller.getViewerInfo().getAttackingPlayerInfo().getName();
     }
 
     @Override

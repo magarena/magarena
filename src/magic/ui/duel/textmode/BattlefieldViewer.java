@@ -33,7 +33,7 @@ class BattlefieldViewer extends PermanentsViewer {
 
     @Override
     public String getTitle() {
-        return "Battlefield : " + controller.getViewerInfo().getPlayerInfo(opponent).name;
+        return "Battlefield : " + controller.getViewerInfo().getPlayerInfo(opponent).getName();
     }
 
     @Override
