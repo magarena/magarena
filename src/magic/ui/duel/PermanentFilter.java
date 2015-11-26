@@ -13,7 +13,6 @@ import javax.swing.JToggleButton;
 import magic.data.MagicIcon;
 import magic.ui.IUpdatable;
 import magic.ui.IconImages;
-import magic.ui.SwingGameController;
 
 public class PermanentFilter implements ActionListener {
 

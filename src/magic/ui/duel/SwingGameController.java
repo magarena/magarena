@@ -1,4 +1,4 @@
-package magic.ui;
+package magic.ui.duel;
 
 import magic.translate.UiString;
 import magic.translate.StringContext;
@@ -55,6 +55,11 @@ import magic.model.event.MagicPriorityEvent;
 import magic.model.phase.MagicPhaseType;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetNone;
+import magic.ui.IChoiceViewer;
+import magic.ui.IPlayerZoneListener;
+import magic.ui.IconImages;
+import magic.ui.MagicFileChoosers;
+import magic.ui.ScreenController;
 import magic.ui.card.AnnotatedCardPanel;
 import magic.ui.duel.DuelPanel;
 import magic.ui.duel.choice.ColorChoicePanel;

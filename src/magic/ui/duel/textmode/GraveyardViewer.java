@@ -1,6 +1,6 @@
 package magic.ui.duel.textmode;
 
-import magic.ui.SwingGameController;
+import magic.ui.duel.SwingGameController;
 import magic.ui.theme.Theme;
 
 class GraveyardViewer extends CardListViewer {

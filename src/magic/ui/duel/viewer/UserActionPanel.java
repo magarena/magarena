@@ -22,7 +22,7 @@ import magic.data.MagicIcon;
 import magic.ui.IconImages;
 import magic.model.MagicGame;
 import magic.model.phase.MagicPhaseType;
-import magic.ui.SwingGameController;
+import magic.ui.duel.SwingGameController;
 import magic.ui.message.TextLabel;
 
 @SuppressWarnings("serial")

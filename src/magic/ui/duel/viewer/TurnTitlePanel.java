@@ -19,7 +19,7 @@ import magic.model.MagicGame;
 import magic.ui.IconImages;
 import magic.translate.StringContext;
 import magic.ui.utility.MagicStyle;
-import magic.ui.SwingGameController;
+import magic.ui.duel.SwingGameController;
 import magic.translate.UiString;
 import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.screen.widget.ActionBarButton;

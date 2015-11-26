@@ -13,7 +13,7 @@ import magic.model.MagicCard;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerZone;
 import magic.ui.IPlayerZoneListener;
-import magic.ui.SwingGameController;
+import magic.ui.duel.SwingGameController;
 import magic.ui.duel.player.GamePlayerPanel;
 import magic.ui.duel.player.PlayerZoneButtonsPanel;
 import magic.ui.duel.resolution.DefaultResolutionProfile;

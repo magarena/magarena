@@ -11,7 +11,7 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 import javax.swing.JPanel;
 import javax.swing.border.Border;
-import magic.ui.SwingGameController;
+import magic.ui.duel.SwingGameController;
 import magic.ui.IChoiceViewer;
 import magic.ui.duel.PermanentViewerInfo;
 import magic.ui.IUpdatable;

@@ -9,7 +9,7 @@ import javax.swing.JPanel;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.ui.IconImages;
-import magic.ui.SwingGameController;
+import magic.ui.duel.SwingGameController;
 import magic.ui.IChoiceViewer;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.utility.MagicStyle;

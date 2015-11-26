@@ -10,7 +10,7 @@ import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 import magic.data.GeneralConfig;
 import magic.model.MagicMessage;
-import magic.ui.SwingGameController;
+import magic.ui.duel.SwingGameController;
 import magic.ui.message.MessageStyle;
 import magic.ui.message.TextComponent;
 import magic.ui.widget.FontsAndBorders;

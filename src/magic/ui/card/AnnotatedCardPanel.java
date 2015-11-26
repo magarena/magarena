@@ -36,7 +36,7 @@ import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicObject;
 import magic.model.MagicPermanent;
-import magic.ui.SwingGameController;
+import magic.ui.duel.SwingGameController;
 import magic.ui.theme.AbilityIcon;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.widget.FontsAndBorders;

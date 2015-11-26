@@ -8,7 +8,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
-import magic.ui.SwingGameController;
+import magic.ui.duel.SwingGameController;
 import magic.ui.IChoiceViewer;
 import magic.ui.duel.PermanentViewerInfo;
 import magic.ui.theme.ThemeFactory;

@@ -1,7 +1,7 @@
 package magic.ui.duel.textmode;
 
 import magic.model.MagicCardList;
-import magic.ui.SwingGameController;
+import magic.ui.duel.SwingGameController;
 import magic.ui.theme.Theme;
 
 class OtherViewer extends CardListViewer {

@@ -2,7 +2,7 @@ package magic.ui.duel.viewer;
 
 import magic.ui.duel.PlayerViewerInfo;
 import magic.model.MagicCardList;
-import magic.ui.SwingGameController;
+import magic.ui.duel.SwingGameController;
 import magic.ui.theme.Theme;
 import magic.ui.widget.TabSelector;
 

@@ -5,7 +5,7 @@ import javax.swing.SwingUtilities;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import magic.model.MagicGame;
-import magic.ui.SwingGameController;
+import magic.ui.duel.SwingGameController;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 

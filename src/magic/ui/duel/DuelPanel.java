@@ -23,7 +23,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerZone;
 import magic.model.event.MagicEvent;
-import magic.ui.SwingGameController;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.ui.card.AnnotatedCardPanel;

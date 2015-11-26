@@ -1,4 +1,4 @@
-package magic.ui;
+package magic.ui.duel;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -12,6 +12,7 @@ import magic.game.state.GameStateFileWriter;
 import magic.game.state.GameStateSnapshot;
 import magic.model.MagicGame;
 import magic.model.MagicGameLog;
+import magic.ui.ScreenController;
 import magic.ui.utility.DesktopUtils;
 import magic.ui.utility.GraphicsUtils;
 import magic.utility.MagicFileSystem;

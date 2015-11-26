@@ -14,7 +14,6 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.model.MagicPlayer;
 import magic.model.event.MagicEvent;
-import magic.ui.SwingGameController;
 import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfileType;
 import magic.ui.duel.viewer.ImageBattlefieldViewer;

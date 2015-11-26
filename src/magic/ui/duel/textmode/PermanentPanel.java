@@ -10,7 +10,7 @@ import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
 import javax.swing.JPanel;
 import javax.swing.border.Border;
-import magic.ui.SwingGameController;
+import magic.ui.duel.SwingGameController;
 import magic.ui.IChoiceViewer;
 import magic.ui.duel.PermanentViewerInfo;
 import magic.ui.theme.Theme;

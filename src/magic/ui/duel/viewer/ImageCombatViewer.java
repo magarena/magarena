@@ -4,7 +4,7 @@ import magic.ui.duel.ViewerInfo;
 import magic.ui.duel.PlayerViewerInfo;
 import magic.ui.duel.PermanentViewerInfo;
 import magic.ui.IChoiceViewer;
-import magic.ui.SwingGameController;
+import magic.ui.duel.SwingGameController;
 import magic.ui.theme.Theme;
 import magic.ui.widget.FontsAndBorders;
 

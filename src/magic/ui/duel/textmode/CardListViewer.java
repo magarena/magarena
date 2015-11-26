@@ -10,7 +10,7 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import magic.model.MagicCard;
 import magic.model.MagicCardList;
-import magic.ui.SwingGameController;
+import magic.ui.duel.SwingGameController;
 import magic.ui.IChoiceViewer;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;

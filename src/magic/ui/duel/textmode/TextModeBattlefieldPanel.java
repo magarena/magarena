@@ -3,7 +3,7 @@ package magic.ui.duel.textmode;
 import magic.model.MagicCard;
 import magic.model.MagicCardList;
 import magic.model.event.MagicEvent;
-import magic.ui.SwingGameController;
+import magic.ui.duel.SwingGameController;
 import magic.ui.duel.BattlefieldPanel;
 import magic.ui.duel.DuelPanel;
 import magic.ui.duel.animation.PlayCardAnimation;

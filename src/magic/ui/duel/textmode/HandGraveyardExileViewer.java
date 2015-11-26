@@ -6,7 +6,7 @@ import javax.swing.JPanel;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import magic.model.MagicCardList;
-import magic.ui.SwingGameController;
+import magic.ui.duel.SwingGameController;
 import magic.ui.utility.MagicStyle;
 import magic.ui.widget.TabSelector;
 import magic.ui.widget.TitleBar;

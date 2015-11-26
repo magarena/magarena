@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 import magic.data.GeneralConfig;
 import magic.model.MagicCard;
 import magic.ui.utility.GraphicsUtils;
-import magic.ui.SwingGameController;
+import magic.ui.duel.SwingGameController;
 
 public class ImagePermanentsViewer extends JPanel {
 
