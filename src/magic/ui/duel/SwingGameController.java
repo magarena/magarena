@@ -72,7 +72,7 @@ import magic.ui.duel.choice.PlayChoicePanel;
 import magic.ui.duel.PlayerViewerInfo;
 import magic.ui.duel.viewer.PlayerZoneViewer;
 import magic.ui.duel.viewer.UserActionPanel;
-import magic.ui.duel.ViewerInfo;
+import magic.ui.duel.GameViewerInfo;
 import magic.ui.screen.MulliganScreen;
 import magic.utility.MagicSystem;
 import magic.utility.MagicFileSystem;
@@ -107,7 +107,7 @@ public class SwingGameController implements IUIGameController {
     private MagicCardDefinition sourceCardDefinition = MagicCardDefinition.UNKNOWN;
     private final BlockingQueue<Boolean> input = new SynchronousQueue<>();
     private int gameTurn = 0;
-    private ViewerInfo viewerInfo;
+    private GameViewerInfo viewerInfo;
     private PlayerZoneViewer playerZoneViewer;
     private final List<IPlayerZoneListener> playerZoneListeners = new ArrayList<>();
     
@@ -124,7 +124,7 @@ public class SwingGameController implements IUIGameController {
         gamePanel = aGamePanel;
         game = aGame;
         clearValidChoices();
-        viewerInfo = new ViewerInfo(game);
+        viewerInfo = new GameViewerInfo(game);
 
         setControlKeyMonitor();
     }
@@ -579,7 +579,7 @@ public class SwingGameController implements IUIGameController {
         return validChoices;
     }
 
-    public ViewerInfo getViewerInfo() {
+    public GameViewerInfo getViewerInfo() {
         return viewerInfo;
     }
 
@@ -604,7 +604,7 @@ public class SwingGameController implements IUIGameController {
         gamePanel.runAnimation();
 
         // update game view DTO to reflect new model state.
-        viewerInfo = new ViewerInfo(game);
+        viewerInfo = new GameViewerInfo(game);
 
         SwingUtilities.invokeLater(new Runnable() {
             @Override

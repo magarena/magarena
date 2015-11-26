@@ -1,6 +1,6 @@
 package magic.ui.duel.viewer;
 
-import magic.ui.duel.ViewerInfo;
+import magic.ui.duel.GameViewerInfo;
 import magic.ui.duel.PlayerViewerInfo;
 import magic.ui.duel.PermanentViewerInfo;
 import magic.ui.IChoiceViewer;
@@ -52,7 +52,7 @@ public class ImageCombatViewer extends JPanel implements IChoiceViewer {
         final SortedSet<PermanentViewerInfo> creatures =
             new TreeSet<>(PermanentViewerInfo.BLOCKED_NAME_COMPARATOR);
 
-        final ViewerInfo viewerInfo = controller.getViewerInfo();
+        final GameViewerInfo viewerInfo = controller.getViewerInfo();
 
         final PlayerViewerInfo attackingPlayerInfo=viewerInfo.getAttackingPlayerInfo();
         for (final PermanentViewerInfo permanentInfo : attackingPlayerInfo.permanents) {

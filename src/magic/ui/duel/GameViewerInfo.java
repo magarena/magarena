@@ -11,7 +11,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicPlayerZone;
 import magic.model.stack.MagicItemOnStack;
 
-public class ViewerInfo {
+public class GameViewerInfo {
 
     private final PlayerViewerInfo playerInfo;
     private final PlayerViewerInfo opponentInfo;
@@ -20,7 +20,7 @@ public class ViewerInfo {
         
     private static final int MAX_LOG = 50;
 
-    public ViewerInfo(final MagicGame game) {
+    public GameViewerInfo(final MagicGame game) {
         
         final MagicPlayer player = game.getVisiblePlayer();
         playerInfo = new PlayerViewerInfo(game, player);

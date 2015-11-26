@@ -114,7 +114,7 @@ public class PermanentFilter implements ActionListener {
         }
     }
 
-    public SortedSet<PermanentViewerInfo> getPermanents(final ViewerInfo viewerInfo,final boolean opponent) {
+    public SortedSet<PermanentViewerInfo> getPermanents(final GameViewerInfo viewerInfo,final boolean opponent) {
 
         final PlayerViewerInfo player=viewerInfo.getPlayerInfo(opponent);
         final SortedSet<PermanentViewerInfo> permanents=new TreeSet<>(PERMANENT_COMPARATOR);

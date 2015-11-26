@@ -1,6 +1,6 @@
 package magic.ui.duel.viewer;
 
-import magic.ui.duel.ViewerInfo;
+import magic.ui.duel.GameViewerInfo;
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.Dimension;
@@ -124,7 +124,7 @@ public class TurnTitlePanel extends JPanel {
     
     private String getScoreString() {
         final MagicGame game = controller.getGame();
-        final ViewerInfo boardInfo = controller.getViewerInfo();
+        final GameViewerInfo boardInfo = controller.getViewerInfo();
         return String.format("%s %d - %d %s",
                 boardInfo.getPlayerInfo(false).name,
                 game.getDuel().getGamesWon(),
