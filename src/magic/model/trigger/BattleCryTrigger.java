@@ -8,7 +8,7 @@ import magic.model.target.MagicTargetFilterFactory;
 
 import java.util.Collection;
 
-public class BattleCryTrigger extends MagicWhenAttacksTrigger {
+public class BattleCryTrigger extends ThisAttacksTrigger {
 
     private static final BattleCryTrigger INSTANCE = new BattleCryTrigger();
 
@@ -22,13 +22,11 @@ public class BattleCryTrigger extends MagicWhenAttacksTrigger {
 
     @Override
     public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent attacker) {
-        return (permanent == attacker) ?
-            new MagicEvent(
+        return new MagicEvent(
                 permanent,
                 this,
                 "Each other attacking creature gets +1/+0 until end of turn."
-            ):
-            MagicEvent.NONE;
+            );
     }
 
     @Override

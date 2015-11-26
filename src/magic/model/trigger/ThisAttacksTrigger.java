@@ -6,12 +6,18 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 
 public abstract class ThisAttacksTrigger extends MagicWhenAttacksTrigger {
+    public ThisAttacksTrigger(final int priority) {
+        super(priority);
+    }
+
+    public ThisAttacksTrigger() {}
+
     @Override
     public boolean accept(final MagicPermanent permanent, final MagicPermanent attacker) {
         return permanent == attacker;
     }
 
-    public static final ThisAttacksTrigger create(final MagicSourceEvent sourceEvent) {
+    public static ThisAttacksTrigger create(final MagicSourceEvent sourceEvent) {
         return new ThisAttacksTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent attacker) {

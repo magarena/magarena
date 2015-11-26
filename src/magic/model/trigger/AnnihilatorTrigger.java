@@ -7,7 +7,7 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSacrificePermanentEvent;
 
-public class AnnihilatorTrigger extends MagicWhenAttacksTrigger {
+public class AnnihilatorTrigger extends ThisAttacksTrigger {
     private final int amount;
 
     public AnnihilatorTrigger(final int amount) {
@@ -16,15 +16,12 @@ public class AnnihilatorTrigger extends MagicWhenAttacksTrigger {
 
     @Override
     public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent creature) {
-        final MagicPlayer opponent = permanent.getOpponent();
-        return (permanent == creature) ?
-            new MagicEvent(
+        return new MagicEvent(
                 permanent,
-                opponent,
+                permanent.getOpponent(),
                 this,
                 "PN sacrifices " + amount + (amount == 1 ? " permanent." : " permanents.")
-            ):
-            MagicEvent.NONE;
+            );
     }
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
