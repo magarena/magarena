@@ -172,7 +172,7 @@ public class ZoneToggleButton extends JToggleButton {
     }
 
     public void doAlertAnimation() {
-        doAlertAnimation(4);
+        doAlertAnimation(6);
     }
 
     public boolean isActive() {
