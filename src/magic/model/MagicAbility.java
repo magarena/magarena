@@ -156,7 +156,7 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
             card.add(new BecomesBlockedPumpTrigger(n,n));
-            card.add(new MagicWhenBlocksPumpTrigger(n,n));
+            card.add(new BlocksPumpTrigger(n,n));
         }
     },
     Soulshift("soulshift " + ARG.NUMBER,20) {

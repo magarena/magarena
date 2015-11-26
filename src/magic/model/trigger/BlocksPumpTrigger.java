@@ -5,12 +5,12 @@ import magic.model.MagicPermanent;
 import magic.model.action.ChangeTurnPTAction;
 import magic.model.event.MagicEvent;
 
-public class MagicWhenBlocksPumpTrigger extends BlocksTrigger {
+public class BlocksPumpTrigger extends BlocksTrigger {
 
     private final int amountPower;
     private final int amountToughness;
 
-    public MagicWhenBlocksPumpTrigger(final int amountPower,final int amountToughness) {
+    public BlocksPumpTrigger(final int amountPower, final int amountToughness) {
         this.amountPower = amountPower;
         this.amountToughness = amountToughness;
     }
