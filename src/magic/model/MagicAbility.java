@@ -1063,14 +1063,14 @@ public enum MagicAbility {
     },
     WheneverPlayerDiscard("Whenever a player discards a card, " + ARG.EFFECT, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenDiscardedTrigger.player(
+            card.add(CardIsDiscardedTrigger.player(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
     },
     WheneverOpponentDiscard("Whenever an opponent discards a card, " + ARG.EFFECT, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenDiscardedTrigger.opponent(
+            card.add(CardIsDiscardedTrigger.opponent(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
