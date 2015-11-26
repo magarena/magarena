@@ -22,7 +22,7 @@ import magic.model.trigger.EntersWithCounterTrigger;
 import magic.model.trigger.MagicWhenDrawnTrigger;
 import magic.model.trigger.ThisPutIntoGraveyardTrigger;
 import magic.model.trigger.ThisSpellIsCastTrigger;
-import magic.model.trigger.MagicWhenCycleTrigger;
+import magic.model.trigger.ThisCycleTrigger;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -98,7 +98,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     private final Collection<MagicStatic> statics=new ArrayList<MagicStatic>();
     private final LinkedList<EntersBattlefieldTrigger> comeIntoPlayTriggers = new LinkedList<EntersBattlefieldTrigger>();
     private final Collection<ThisSpellIsCastTrigger> spellIsCastTriggers = new ArrayList<ThisSpellIsCastTrigger>();
-    private final Collection<MagicWhenCycleTrigger> cycleTriggers = new ArrayList<MagicWhenCycleTrigger>();
+    private final Collection<ThisCycleTrigger> cycleTriggers = new ArrayList<ThisCycleTrigger>();
     private final Collection<MagicWhenDrawnTrigger> drawnTriggers = new ArrayList<MagicWhenDrawnTrigger>();
     private final Collection<ThisPutIntoGraveyardTrigger> putIntoGraveyardTriggers = new ArrayList<ThisPutIntoGraveyardTrigger>();
     private final Collection<MagicManaActivation> manaActivations=new ArrayList<MagicManaActivation>();
@@ -821,7 +821,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
         spellIsCastTriggers.add(trigger);
     }
 
-    public void addTrigger(final MagicWhenCycleTrigger trigger) {
+    public void addTrigger(final ThisCycleTrigger trigger) {
         cycleTriggers.add(trigger);
     }
 
@@ -861,7 +861,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
         return spellIsCastTriggers;
     }
 
-    public Collection<MagicWhenCycleTrigger> getCycleTriggers() {
+    public Collection<ThisCycleTrigger> getCycleTriggers() {
         return cycleTriggers;
     }
 

@@ -1,5 +1,5 @@
 [
-    new MagicWhenCycleTrigger() {
+    new ThisCycleTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCard card) {
             return new MagicEvent(

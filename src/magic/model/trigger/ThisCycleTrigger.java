@@ -7,12 +7,12 @@ import magic.model.MagicCardDefinition;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 
-public abstract class MagicWhenCycleTrigger extends MagicTrigger<MagicCard> {
-    public MagicWhenCycleTrigger(final int priority) {
+public abstract class ThisCycleTrigger extends MagicTrigger<MagicCard> {
+    public ThisCycleTrigger(final int priority) {
         super(priority);
     }
 
-    public MagicWhenCycleTrigger() {}
+    public ThisCycleTrigger() {}
 
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenCycle;
@@ -22,9 +22,9 @@ public abstract class MagicWhenCycleTrigger extends MagicTrigger<MagicCard> {
     public void change(final MagicCardDefinition cdef) {
         cdef.addTrigger(this);
     }
-    
-    public static MagicWhenCycleTrigger create(final MagicSourceEvent sourceEvent) {
-        return new MagicWhenCycleTrigger() {
+
+    public static ThisCycleTrigger create(final MagicSourceEvent sourceEvent) {
+        return new ThisCycleTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCard card) {
                 return sourceEvent.getEvent(card);

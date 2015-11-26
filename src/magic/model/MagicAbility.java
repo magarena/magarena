@@ -612,7 +612,7 @@ public enum MagicAbility {
     },
     CycleEffect("When you cycle SN, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenCycleTrigger.create(
+            card.add(ThisCycleTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
