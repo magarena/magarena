@@ -484,8 +484,7 @@ public enum MagicAbility {
             card.add(EntersBattlefieldTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
-            card.add(AttacksTrigger.create(
-                MagicTargetFilterFactory.SN,
+            card.add(ThisAttacksTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
