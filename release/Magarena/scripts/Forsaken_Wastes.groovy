@@ -23,7 +23,7 @@
             game.doAction(new ChangeLifeAction(event.getPlayer(),-1));
         }
     },
-    new ThisIsTargetedTrigger() {
+    new ThisBecomesTargetTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicItemOnStack target) {
             new MagicEvent(

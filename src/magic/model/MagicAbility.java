@@ -999,7 +999,7 @@ public enum MagicAbility {
     },
     SacWhenTargeted("When SN becomes the target of a spell or ability, sacrifice it\\.",-10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(ThisIsTargetedTrigger.SacWhenTargeted);
+            card.add(ThisBecomesTargetTrigger.SacWhenTargeted);
         }
     },
     WhenTargeted("When(ever)? " + ARG.WORDRUN2 + " becomes the target of (?<wordrun>[^\\,]*), " + ARG.EFFECT, 0) {

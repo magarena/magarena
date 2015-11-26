@@ -1,6 +1,6 @@
 [
     //counter opponent spell or ability unless its controller pay {2}
-    new ThisIsTargetedTrigger() {
+    new ThisBecomesTargetTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicItemOnStack target) {
             return permanent.isEnemy(target) ?
