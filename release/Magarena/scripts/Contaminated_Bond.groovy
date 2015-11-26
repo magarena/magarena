@@ -17,7 +17,7 @@
             game.doAction(new ChangeLifeAction(event.getPlayer(),-3));
         }
     },
-    new MagicWhenBlocksTrigger() {
+    new BlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             final MagicPermanent enchantedPermanent = permanent.getEnchantedPermanent();

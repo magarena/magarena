@@ -6,7 +6,7 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 import magic.model.target.MagicTargetFilter;
 
-public abstract class ThisBecomesBlockedByTrigger extends MagicWhenBlocksTrigger {
+public abstract class ThisBecomesBlockedByTrigger extends BlocksTrigger {
     @Override
     public boolean accept(final MagicPermanent permanent, final MagicPermanent blocker) {
         return permanent == blocker.getBlockedCreature();

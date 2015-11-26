@@ -1,6 +1,6 @@
 def DelayedTrigger = {
     final MagicSource staleSource, final MagicPlayer stalePlayer ->
-    return new MagicWhenBlocksTrigger() {
+    return new BlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent blocker) {
             return new MagicEvent(

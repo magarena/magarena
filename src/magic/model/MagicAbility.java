@@ -702,7 +702,7 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(ARG.effect(arg));
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(ARG.wordrun(arg));
-            card.add(MagicWhenBlocksTrigger.create(filter, sourceEvent));
+            card.add(BlocksTrigger.create(filter, sourceEvent));
             card.add(BecomesBlockedTrigger.create(filter, sourceEvent));
         }
     },
@@ -719,14 +719,14 @@ public enum MagicAbility {
             final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(ARG.effect(arg));
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(ARG.wordrun(arg));
             card.add(AttacksTrigger.create(filter, sourceEvent));
-            card.add(MagicWhenBlocksTrigger.create(filter, sourceEvent));
+            card.add(BlocksTrigger.create(filter, sourceEvent));
         }
     },
     CreatureBlocksEffect("When(ever)? " + ARG.WORDRUN + " blocks, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(ARG.effect(arg));
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(ARG.wordrun(arg));
-            card.add(MagicWhenBlocksTrigger.create(filter, sourceEvent));
+            card.add(BlocksTrigger.create(filter, sourceEvent));
         }
     },
     BecomesBlockedEffect("Whenever " + ARG.WORDRUN + " becomes blocked, " + ARG.EFFECT, 10) {

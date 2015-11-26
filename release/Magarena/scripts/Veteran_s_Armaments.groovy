@@ -14,7 +14,7 @@ def evt = {
 }
 
 [
-    new MagicWhenBlocksTrigger() {
+    new BlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
             return (permanent.getEquippedCreature() == blocker) ? evt(blocker) : MagicEvent.NONE;

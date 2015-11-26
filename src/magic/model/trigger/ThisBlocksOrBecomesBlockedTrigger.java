@@ -2,7 +2,7 @@ package magic.model.trigger;
 
 import magic.model.MagicPermanent;
 
-public abstract class ThisBlocksOrBecomesBlockedTrigger extends MagicWhenBlocksTrigger {
+public abstract class ThisBlocksOrBecomesBlockedTrigger extends BlocksTrigger {
     public ThisBlocksOrBecomesBlockedTrigger(final int priority) {
         super(priority);
     }

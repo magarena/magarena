@@ -1,5 +1,5 @@
 [
-    new MagicWhenBlocksTrigger() {
+    new BlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {
             final MagicPermanent equippedCreature = permanent.getEquippedCreature();

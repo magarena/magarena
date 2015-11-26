@@ -6,7 +6,7 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 import magic.model.target.MagicTargetFilter;
 
-public abstract class ThisBlocksTrigger extends MagicWhenBlocksTrigger {
+public abstract class ThisBlocksTrigger extends BlocksTrigger {
     @Override
     public boolean accept(final MagicPermanent permanent, final MagicPermanent blocker) {
         return permanent == blocker;
