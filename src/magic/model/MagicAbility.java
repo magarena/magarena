@@ -1049,7 +1049,7 @@ public enum MagicAbility {
     },
     CycleOtherEffect("Whenever a player cycles a card, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenOtherCycleTrigger.create(
+            card.add(OtherCycleTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
