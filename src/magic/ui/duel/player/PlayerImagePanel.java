@@ -9,7 +9,6 @@ import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
 import javax.swing.ImageIcon;
 import magic.data.GeneralConfig;
-import magic.model.MagicGame;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.IconImages;
 import magic.ui.utility.MagicStyle;
@@ -24,7 +23,6 @@ public class PlayerImagePanel extends AnimationPanel {
 
     private static final Font HEALTH_FONT = new Font("Dialog", Font.BOLD, 20);
 
-    private final MagicGame game;
     private final CounterOverlay poisonCounter;
     private final CounterOverlay damageCounter;    
     private final BufferedImage activeImage;
@@ -35,9 +33,8 @@ public class PlayerImagePanel extends AnimationPanel {
     private int healColorOpacity = 0;
     private boolean isValidChoiceVisible = false;
 
-    public PlayerImagePanel(final PlayerViewerInfo player, final MagicGame game) {
+    public PlayerImagePanel(final PlayerViewerInfo player) {
         this.playerInfo = player;
-        this.game = game;
         activeImage = getPlayerAvatarImage();
         inactiveImage = GraphicsUtils.getGreyScaleImage(activeImage);
         poisonCounter = new CounterOverlay(20, 20, Color.GREEN);
@@ -55,11 +52,7 @@ public class PlayerImagePanel extends AnimationPanel {
         
         final Graphics2D g2d = (Graphics2D) g;
 
-        if (playerInfo.player == game.getTurnPlayer()) {
-            g2d.drawImage(activeImage, 0, 0, this);
-        } else {
-            g2d.drawImage(inactiveImage, 0, 0, this);
-        }
+        g2d.drawImage(playerInfo.isPlayerTurn() ? activeImage : inactiveImage, 0, 0, this);
 
         // counters
         drawPoisonCountersOverlay(g2d);
