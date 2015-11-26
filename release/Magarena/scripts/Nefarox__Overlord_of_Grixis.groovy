@@ -1,8 +1,8 @@
 [
-    new MagicWhenAttacksTrigger() {
+    new ThisAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
-            return (creature == permanent && game.getAttackingPlayer().getNrOfAttackers()==1) ?
+            return game.getAttackingPlayer().getNrOfAttackers()==1 ?
                 new MagicEvent(
                     permanent,
                     game.getDefendingPlayer(),

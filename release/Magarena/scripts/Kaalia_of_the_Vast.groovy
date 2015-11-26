@@ -15,11 +15,10 @@ def AN_ANGEL_OR_DEMON_OR_DRAGON_CARD_FROM_HAND = new MagicTargetChoice(
     "an Angel, Demon or Dragon creature card from your hand"
 );
 [
-    new MagicWhenAttacksTrigger() {
+    new ThisAttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
-            return permanent == attacker ?
-                new MagicEvent(
+            return new MagicEvent(
                     permanent,
                     this,
                     "PN may put an Angel, Demon or Dragon creature card from his or her hand onto the battlefield tapped and attacking."
