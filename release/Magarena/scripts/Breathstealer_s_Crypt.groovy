@@ -1,5 +1,5 @@
 [
-    new MagicWhenOtherDrawnTrigger(MagicTrigger.REPLACEMENT) {
+    new OtherDrawnTrigger(MagicTrigger.REPLACEMENT) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard card) {
             return card.hasType(MagicType.Creature) ? 

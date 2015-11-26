@@ -6,28 +6,28 @@ import magic.model.MagicGame;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 
-public abstract class MagicWhenOtherDrawnTrigger extends MagicTrigger<MagicCard> {
-    public MagicWhenOtherDrawnTrigger(final int priority) {
+public abstract class OtherDrawnTrigger extends MagicTrigger<MagicCard> {
+    public OtherDrawnTrigger(final int priority) {
         super(priority);
     }
 
-    public MagicWhenOtherDrawnTrigger() {}
+    public OtherDrawnTrigger() {}
 
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenOtherDrawn;
     }
-    
-    public static MagicWhenOtherDrawnTrigger create(final MagicSourceEvent sourceEvent) {
-        return new MagicWhenOtherDrawnTrigger() {
+
+    public static OtherDrawnTrigger create(final MagicSourceEvent sourceEvent) {
+        return new OtherDrawnTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCard card) {
                 return sourceEvent.getEvent(permanent, card.getOwner());
             }
         };
     }
-    
-    public static MagicWhenOtherDrawnTrigger createYou(final MagicSourceEvent sourceEvent) {
-        return new MagicWhenOtherDrawnTrigger() {
+
+    public static OtherDrawnTrigger createYou(final MagicSourceEvent sourceEvent) {
+        return new OtherDrawnTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicCard card) {
                 return card.isFriend(permanent);
@@ -38,9 +38,9 @@ public abstract class MagicWhenOtherDrawnTrigger extends MagicTrigger<MagicCard>
             }
         };
     }
-    
-    public static MagicWhenOtherDrawnTrigger createOpp(final MagicSourceEvent sourceEvent) {
-        return new MagicWhenOtherDrawnTrigger() {
+
+    public static OtherDrawnTrigger createOpp(final MagicSourceEvent sourceEvent) {
+        return new OtherDrawnTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicCard card) {
                 return card.isEnemy(permanent);

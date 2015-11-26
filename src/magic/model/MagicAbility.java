@@ -1020,21 +1020,21 @@ public enum MagicAbility {
     },
     WhenDrawCard("Whenever you draw a card, " + ARG.EFFECT, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenOtherDrawnTrigger.createYou(
+            card.add(OtherDrawnTrigger.createYou(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
     },
     WhenOppDrawCard("Whenever an opponent draws a card, " + ARG.EFFECT, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenOtherDrawnTrigger.createOpp(
+            card.add(OtherDrawnTrigger.createOpp(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
     },
     WhenPlayerDrawCard("Whenever a player draws a card, " + ARG.EFFECT, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenOtherDrawnTrigger.create(
+            card.add(OtherDrawnTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
