@@ -108,4 +108,12 @@ public class GamePlayerPanel extends TexturedPanel implements IChoiceViewer {
         zoneButtonsPanel.doHighlightPlayerZone(zone, b);
     }
 
+    public Rectangle getLibraryButtonLayout(Component canvas) {
+        return zoneButtonsPanel.getZoneButtonRectangle(MagicPlayerZone.LIBRARY, canvas);
+    }
+
+    public Rectangle getHandButtonLayout(Component canvas) {
+        return zoneButtonsPanel.getZoneButtonRectangle(MagicPlayerZone.HAND, canvas);
+    }
+
 }

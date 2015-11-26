@@ -6,6 +6,7 @@ import java.awt.Component;
 import magic.ui.duel.dialog.DuelDialogPanel;
 import magic.ui.duel.animation.PlayCardAnimation;
 import java.awt.Dimension;
+import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
 import java.awt.event.InputEvent;
@@ -13,11 +14,13 @@ import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.AbstractAction;
+import javax.swing.JComponent;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.model.MagicCard;
+import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
@@ -27,10 +30,13 @@ import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.ui.card.AnnotatedCardPanel;
 import magic.ui.duel.animation.AnimationCanvas;
+import magic.ui.duel.animation.GameLayoutInfo;
 import magic.ui.duel.animation.GamePlayAnimator;
 import magic.ui.duel.resolution.DefaultResolutionProfile;
 import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfiles;
+import magic.ui.duel.viewer.ImageBattlefieldViewer;
+import magic.ui.duel.viewer.ImageCardListViewer;
 import magic.ui.widget.ZoneBackgroundLabel;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
@@ -359,4 +365,52 @@ public final class DuelPanel extends JPanel {
         return battlefieldPanel.getBounds();
     }
 
+    private Point getLocationOnDuelPanel(final JComponent component) {
+        final DuelPanel duelPanel = (DuelPanel)component.getParent().getParent();
+        return SwingUtilities.convertPoint(component.getParent(), component.getLocation(), duelPanel);
+    }
+
+    public GameLayoutInfo getLayoutInfo(final GameViewerInfo gameInfo, final MagicCardDefinition aCard) {
+
+        assert SwingUtilities.isEventDispatchThread();
+
+        final GameLayoutInfo info = new GameLayoutInfo(this.getSize());
+        final ImageModeBattlefieldPanel battlefield = (ImageModeBattlefieldPanel) battlefieldPanel;
+
+        info.setTurnPanelLayout(sidebarPanel.getTurnPanelLayout(this));
+
+        for (PlayerViewerInfo playerInfo : gameInfo.getPlayers()) {
+
+            final int playerIndex = playerInfo.player.getIndex();
+
+            info.setLibraryButtonLayout(playerIndex, sidebarPanel.getLibraryButtonLayout(playerInfo, this));
+            info.setHandButtonLayout(playerIndex, sidebarPanel.getHandButtonLayout(playerInfo, this));
+
+            final ImageBattlefieldViewer battlefieldViewer = playerIndex == 0
+                ? battlefield.imagePlayerPermanentViewer
+                : battlefield.imageOpponentPermanentViewer;
+
+            info.setPermanentsZoneLayout(
+                playerIndex,
+                new Rectangle(
+                    getLocationOnDuelPanel(battlefieldViewer),
+                    battlefieldViewer.getSize()
+                )
+            );
+
+        }
+
+        info.setStackLayout(controller.getStackViewerRectangle(this));
+
+        final ImageCardListViewer handViewer = controller.getPlayerZoneViewer().getImageCardsListViewer();
+        if (handViewer.getCardPosition(aCard) != null) {
+            info.setCardInHandLayout(
+                new Rectangle(
+                    handViewer.getCardPosition(aCard),
+                    handViewer.getCardSize())
+            );
+        }
+        
+        return info;
+    }
 }

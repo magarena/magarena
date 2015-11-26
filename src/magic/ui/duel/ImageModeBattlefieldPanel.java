@@ -30,8 +30,8 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
     private final BattlefieldTextOverlay textOverlay = new BattlefieldTextOverlay();
 
     private final PlayerZoneViewer playerZoneViewer;
-    private final ImageBattlefieldViewer imagePlayerPermanentViewer;
-    private final ImageBattlefieldViewer imageOpponentPermanentViewer;
+    public final ImageBattlefieldViewer imagePlayerPermanentViewer;
+    public final ImageBattlefieldViewer imageOpponentPermanentViewer;
     private final ImageCombatViewer imageCombatViewer;
     private final StackViewer imageStackViewer;
     private final SwingGameController controller;

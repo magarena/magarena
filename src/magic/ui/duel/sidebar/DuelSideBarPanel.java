@@ -176,6 +176,18 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
         playerPanel.doHighlightPlayerZone(zone, b);
     }
 
+    public Rectangle getLibraryButtonLayout(PlayerViewerInfo aPlayer, Component canvas) {
+        return playerCompositePanels[aPlayer.player.getIndex()].getPlayerPanel().getLibraryButtonLayout(canvas);
+    }
+
+    public Rectangle getHandButtonLayout(PlayerViewerInfo aPlayer, Component canvas) {
+        return playerCompositePanels[aPlayer.player.getIndex()].getPlayerPanel().getHandButtonLayout(canvas);
+    }
+
+    public Rectangle getTurnPanelLayout(Component container) {
+        return gameStatusPanel.getTurnPanelLayout(container);
+    }
+
     private class LayoutSlot {
 
         private JComponent component;

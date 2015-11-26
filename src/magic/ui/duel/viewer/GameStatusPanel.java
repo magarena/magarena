@@ -1,6 +1,9 @@
 package magic.ui.duel.viewer;
 
+import java.awt.Component;
 import java.awt.Dimension;
+import java.awt.Point;
+import java.awt.Rectangle;
 import javax.swing.SwingUtilities;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
@@ -72,6 +75,11 @@ public class GameStatusPanel extends TexturedPanel implements ChangeListener {
         assert SwingUtilities.isEventDispatchThread();
         isNewTurnNotification = false;
         refreshLayout();
+    }
+
+    public Rectangle getTurnPanelLayout(Component container) {
+        final Point pt = SwingUtilities.convertPoint(this, turnStatusPanel.getLocation(), container);
+        return new Rectangle(pt.x, pt.y, turnStatusPanel.getWidth(), turnStatusPanel.getHeight());
     }
 
 }
