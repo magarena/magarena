@@ -9,7 +9,7 @@ import magic.model.event.MagicSourceEvent;
 public abstract class BattalionTrigger extends ThisAttacksTrigger {
     @Override
     public boolean accept(final MagicPermanent permanent, final MagicPermanent attacker) {
-        return MagicCondition.THREE_ATTACKERS_CONDITION.accept(permanent);
+        return super.accept(permanent, attacker) && MagicCondition.THREE_ATTACKERS_CONDITION.accept(permanent);
     }
 
     public static final BattalionTrigger create(final MagicSourceEvent sourceEvent) {
