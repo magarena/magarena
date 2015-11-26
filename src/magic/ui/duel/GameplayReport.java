@@ -31,7 +31,7 @@ final class GameplayReport {
     private static final String LOG_FILE = MagicGameLog.LOG_FILE;
     private static final String ZIP_FILE = "gameplay-report.zip";
 
-    public static void createNewReport(final MagicGame aGame) throws IOException {
+    static void createNewReport(final MagicGame aGame) throws IOException {
         MagicFileSystem.clearGameplayReportDirectory();
         saveScreenshot();
         saveGameState(aGame);
@@ -55,7 +55,7 @@ final class GameplayReport {
         FileUtils.copyFileToDirectory(logFile, MagicFileSystem.getGameplayReportDirectory().toFile());
     }
 
-    public static void openReportDirectory() throws IOException {
+    static void openReportDirectory() throws IOException {
         DesktopUtils.openDirectory(MagicFileSystem.getDataPath(MagicFileSystem.DataPath.REPORTS).toString());
     }
 
