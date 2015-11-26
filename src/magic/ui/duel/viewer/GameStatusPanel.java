@@ -4,8 +4,8 @@ import java.awt.Dimension;
 import javax.swing.SwingUtilities;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import magic.model.MagicGame;
 import magic.ui.duel.SwingGameController;
+import magic.ui.duel.GameViewerInfo;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
@@ -53,7 +53,7 @@ public class GameStatusPanel extends TexturedPanel implements ChangeListener {
     }
 
     public void update() {
-        turnStatusPanel.refresh(controller.getGame(), userActionPanel.getMagicPhaseType());
+        turnStatusPanel.refresh(controller.getViewerInfo(), userActionPanel.getMagicPhaseType());
     }
 
     @Override
@@ -61,10 +61,10 @@ public class GameStatusPanel extends TexturedPanel implements ChangeListener {
         update();
     }
 
-    public void showNewTurnNotification(final MagicGame game) {
+    public void showNewTurnNotification(GameViewerInfo gameInfo) {
         assert SwingUtilities.isEventDispatchThread();
         isNewTurnNotification = true;
-        newTurnPanel.refreshData(game);
+        newTurnPanel.refreshData(gameInfo);
         refreshLayout();
     }
 

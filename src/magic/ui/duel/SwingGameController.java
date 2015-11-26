@@ -590,21 +590,21 @@ public class SwingGameController implements IUIGameController {
     public void updateGameView() {
         assert !SwingUtilities.isEventDispatchThread();
 
+        // update game view DTO to reflect new model state.
+        viewerInfo = new GameViewerInfo(game);
+
         // show New Turn notification (if appropriate & enabled).
         if (game.getTurn() != gameTurn) {
             gameTurn = game.getTurn();
             final boolean isShowingMulliganScreen = CONFIG.showMulliganScreen() && game.getTurn() == 1;
             if (!isShowingMulliganScreen && CONFIG.getNewTurnAlertDuration() > 0) {
-                gamePanel.doNewTurnNotification(game);
+                gamePanel.doNewTurnNotification(viewerInfo);
             }
         }
 
         // Run before the view state is updated to reflect transition from old to new
         // model state. Should not return until animations have been completed or cancelled.
         gamePanel.runAnimation();
-
-        // update game view DTO to reflect new model state.
-        viewerInfo = new GameViewerInfo(game);
 
         SwingUtilities.invokeLater(new Runnable() {
             @Override

@@ -3,10 +3,10 @@ package magic.ui.duel.viewer;
 import java.awt.Color;
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
-import magic.model.MagicGame;
 import magic.model.phase.MagicPhaseType;
 import magic.ui.utility.MagicStyle;
 import magic.ui.duel.SwingGameController;
+import magic.ui.duel.GameViewerInfo;
 import magic.ui.theme.Theme;
 import net.miginfocom.swing.MigLayout;
 
@@ -40,8 +40,8 @@ public class TurnStatusPanel extends JPanel {
         add(phaseStepViewer, "aligny bottom, pushy");
     }
 
-    public void refresh(final MagicGame game, final MagicPhaseType phaseStep) {
-        turnTitlePanel.refresh(game);
+    public void refresh(final GameViewerInfo gameInfo, final MagicPhaseType phaseStep) {
+        turnTitlePanel.refresh(gameInfo);
         phaseStepViewer.setPhaseStep(phaseStep);
     }
 

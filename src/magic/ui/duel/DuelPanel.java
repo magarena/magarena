@@ -285,13 +285,13 @@ public final class DuelPanel extends JPanel {
     }
 
     // TODO: move up into GameController?
-    public void doNewTurnNotification(final MagicGame game) {
+    public void doNewTurnNotification(GameViewerInfo gameInfo) {
         assert !SwingUtilities.isEventDispatchThread();
 
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                sidebarPanel.getGameStatusPanel().showNewTurnNotification(game);
+                sidebarPanel.getGameStatusPanel().showNewTurnNotification(gameInfo);
             }
         });
 

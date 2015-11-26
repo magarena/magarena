@@ -15,7 +15,6 @@ import javax.swing.JPanel;
 import javax.swing.JPopupMenu;
 import javax.swing.SwingUtilities;
 import magic.data.MagicIcon;
-import magic.model.MagicGame;
 import magic.ui.IconImages;
 import magic.translate.StringContext;
 import magic.ui.utility.MagicStyle;
@@ -110,26 +109,22 @@ public class TurnTitlePanel extends JPanel {
         }
     }
 
-    public void refresh(final MagicGame game) {
-        scoreLabel.setText(getScoreString());
-        scoreLabel.setToolTipText(UiString.get(_S3,
-                game.getDuel().getConfiguration().getGamesRequiredToWinDuel())
-        );
+    public void refresh(final GameViewerInfo gameInfo) {
+        scoreLabel.setText(getScoreString(gameInfo));
+        scoreLabel.setToolTipText(UiString.get(_S3, gameInfo.getGamesRequiredToWinDuel()));
         gameLabel.setText(String.format("%s  •  %s  •  %s",
-                UiString.get(_S4, game.getDuel().getGameNr(), game.getDuel().getGamesTotal()),
-                UiString.get(_S5, game.getTurn()),
-                game.getTurnPlayer().getName())
+                UiString.get(_S4, gameInfo.getGameNumber(), gameInfo.getMaxGames()),
+                UiString.get(_S5, gameInfo.getTurn()),
+                gameInfo.getTurnPlayer().getName())
         );
     }
     
-    private String getScoreString() {
-        final MagicGame game = controller.getGame();
-        final GameViewerInfo boardInfo = controller.getViewerInfo();
+    private String getScoreString(final GameViewerInfo gameInfo) {
         return String.format("%s %d - %d %s",
-                boardInfo.getPlayerInfo(false).getName(),
-                game.getDuel().getGamesWon(),
-                game.getDuel().getGamesPlayed() - game.getDuel().getGamesWon(),
-                boardInfo.getPlayerInfo(true).getName()
+                gameInfo.getPlayerInfo(false).getName(),
+                gameInfo.getPlayerInfo(false).getGamesWon(),
+                gameInfo.getPlayerInfo(true).getGamesWon(),
+                gameInfo.getPlayerInfo(true).getName()
         );
     }
 

@@ -4,9 +4,8 @@ import java.awt.Color;
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import magic.model.MagicGame;
-import magic.ui.IconImages;
 import magic.translate.UiString;
+import magic.ui.duel.GameViewerInfo;
 import magic.ui.utility.MagicStyle;
 import magic.ui.theme.Theme;
 import net.miginfocom.swing.MigLayout;
@@ -40,9 +39,9 @@ class NewTurnPanel extends JPanel {
         add(turnLabel, "w 100%, h 100%");
     }
 
-    public void refreshData(final MagicGame game) {
-        iconLabel.setIcon(IconImages.getIconSize4(game.getTurnPlayer().getPlayerDefinition()));
-        turnLabel.setText(UiString.get(_S1, game.getTurn()));
+    public void refreshData(final GameViewerInfo gameInfo) {
+        iconLabel.setIcon(gameInfo.getTurnPlayer().getAvatar());
+        turnLabel.setText(UiString.get(_S1, gameInfo.getTurn()));
     }
 
 }
