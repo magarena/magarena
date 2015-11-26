@@ -150,9 +150,8 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
         doSetLayout();
     }
 
-    public void doFlashPlayerHandZoneButton() {
-        final GamePlayerPanel playerPanel = playerCompositePanels[1].getPlayerPanel();
-        playerPanel.doFlashPlayerHandZoneButton();
+    public void doFlashPlayerHandZoneButton(PlayerViewerInfo playerInfo) {
+        getPlayerPanel(playerInfo.player).doFlashPlayerHandZoneButton();
     }
 
     public Rectangle getStackViewerRectangle(Component canvas) {

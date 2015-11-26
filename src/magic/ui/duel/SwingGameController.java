@@ -1041,10 +1041,6 @@ public class SwingGameController implements IUIGameController {
         return gamePanel.getStackViewerRectangle(canvas);
     }
 
-    public void doFlashPlayerHandZoneButton() {
-        gamePanel.doFlashPlayerHandZoneButton();
-    }
-
     public void highlightCard(long magicCardId, boolean b) {
         if (magicCardId > 0) {
             final MagicCard card = viewerInfo.getMagicCard(magicCardId);

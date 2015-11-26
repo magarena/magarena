@@ -32,6 +32,7 @@ import magic.ui.duel.resolution.DefaultResolutionProfile;
 import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfiles;
 import magic.ui.widget.ZoneBackgroundLabel;
+import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -259,8 +260,8 @@ public final class DuelPanel extends JPanel {
         assert !SwingUtilities.isEventDispatchThread();
         final PlayCardAnimation animationEvent = battlefieldPanel.getPlayCardFromHandAnimation();
         if (animationEvent != null && CONFIG.showGameplayAnimations()) {
-            if (animationEvent.getPlayer() != controller.getGame().getVisiblePlayer()) {
-                controller.doFlashPlayerHandZoneButton();
+            if (animationEvent.getPlayer() != controller.getGame().getVisiblePlayer() || MagicSystem.isAiVersusAi()) {
+                doFlashPlayerHandZoneButton(controller.getViewerInfo().getTurnPlayer());
             }
             animator.runAnimation(animationEvent);
         }
@@ -330,8 +331,8 @@ public final class DuelPanel extends JPanel {
         return sidebarPanel.getStackViewerRectangle(canvas);
     }
 
-    public void doFlashPlayerHandZoneButton() {
-        sidebarPanel.doFlashPlayerHandZoneButton();
+    private void doFlashPlayerHandZoneButton(PlayerViewerInfo playerInfo) {
+        sidebarPanel.doFlashPlayerHandZoneButton(playerInfo);
     }
 
     public void highlightCard(MagicCard card, boolean b) {
