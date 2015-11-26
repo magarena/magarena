@@ -20,7 +20,7 @@ def evt = {
             return (permanent.getEquippedCreature() == blocker) ? evt(blocker) : MagicEvent.NONE;
         }
     },
-    new MagicWhenAttacksTrigger() {
+    new AttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent attacker) {
             return (permanent.getEquippedCreature() == attacker) ? evt(attacker) : MagicEvent.NONE;

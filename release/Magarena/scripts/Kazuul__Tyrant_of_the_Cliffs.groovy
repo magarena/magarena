@@ -6,7 +6,7 @@ def action = {
 }
 
 [
-    new MagicWhenAttacksTrigger() {
+    new AttacksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent creature) {
             return permanent.isEnemy(creature) ?

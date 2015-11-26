@@ -5,7 +5,7 @@ import magic.model.MagicPermanent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 
-public abstract class ThisAttacksTrigger extends MagicWhenAttacksTrigger {
+public abstract class ThisAttacksTrigger extends AttacksTrigger {
     public ThisAttacksTrigger(final int priority) {
         super(priority);
     }

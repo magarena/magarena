@@ -484,7 +484,7 @@ public enum MagicAbility {
             card.add(EntersBattlefieldTrigger.create(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
-            card.add(MagicWhenAttacksTrigger.create(
+            card.add(AttacksTrigger.create(
                 MagicTargetFilterFactory.SN,
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
@@ -685,7 +685,7 @@ public enum MagicAbility {
     // triggered abilities
     AnyAttacksEffect("When(ever)? " + ARG.WORDRUN + " attacks, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenAttacksTrigger.create(
+            card.add(AttacksTrigger.create(
                 MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
@@ -693,7 +693,7 @@ public enum MagicAbility {
     },
     AnyAttacksYouEffect("When(ever)? " + ARG.WORDRUN + " attacks you( or a planeswalker you control)?, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenAttacksTrigger.createYou(
+            card.add(AttacksTrigger.createYou(
                 MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
@@ -719,7 +719,7 @@ public enum MagicAbility {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(ARG.effect(arg));
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(ARG.wordrun(arg));
-            card.add(MagicWhenAttacksTrigger.create(filter, sourceEvent));
+            card.add(AttacksTrigger.create(filter, sourceEvent));
             card.add(MagicWhenBlocksTrigger.create(filter, sourceEvent));
         }
     },

@@ -5,7 +5,7 @@ import magic.model.MagicPermanent;
 import magic.model.action.ChangeTurnPTAction;
 import magic.model.event.MagicEvent;
 
-public class ExaltedTrigger extends MagicWhenAttacksTrigger {
+public class ExaltedTrigger extends AttacksTrigger {
 
     private static final ExaltedTrigger INSTANCE = new ExaltedTrigger();
 
