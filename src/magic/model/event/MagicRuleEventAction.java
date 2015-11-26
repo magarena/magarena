@@ -3617,9 +3617,9 @@ public enum MagicRuleEventAction {
             .replaceAll("(Y|y)ou control","PN controls")
             .replaceAll("(Y|y)our ","PN's ")
             .replaceAll("(Y|y)ou ","PN ")
-            .replaceAll("you.", "PN.")
+            .replaceAll("you\\.", "PN\\.")
             .replaceAll("(P|p)ut ","PN puts ")
-            .replaceAll("Choose one ","Choose one\\$ ")
+            .replaceAll("(C|c)hoose one ","$1hoose one\\$ ")
             ;
     }
 
