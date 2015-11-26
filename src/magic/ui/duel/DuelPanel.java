@@ -259,7 +259,7 @@ public final class DuelPanel extends JPanel {
     public void runAnimation() {
         assert !SwingUtilities.isEventDispatchThread();
         final PlayCardAnimation animationEvent = battlefieldPanel.getPlayCardFromHandAnimation();
-        if (animationEvent != null && CONFIG.isAnimateGameplay()) {
+        if (animationEvent != null && CONFIG.showGameplayAnimations()) {
             if (animationEvent.getPlayer() != controller.getGame().getVisiblePlayer()) {
                 controller.doFlashPlayerHandZoneButton();
             }

@@ -77,7 +77,7 @@ public class PlayerImagePanel extends AnimationPanel {
     }
 
     private void drawValidChoiceIndicator(Graphics2D g2d) {
-        if (GeneralConfig.getInstance().isAnimateGameplay()) {
+        if (GeneralConfig.getInstance().showGameplayAnimations()) {
             drawPulsingBorder(g2d);
         } else {
             drawValidChoiceOverlay(g2d);
@@ -162,7 +162,7 @@ public class PlayerImagePanel extends AnimationPanel {
     }
 
     private void doDamageAnimation() {
-        if (GeneralConfig.getInstance().isAnimateGameplay()) {
+        if (GeneralConfig.getInstance().showGameplayAnimations()) {
             final Timeline timeline = new Timeline();
             timeline.setDuration(100);
             timeline.addPropertyToInterpolate(
@@ -181,7 +181,7 @@ public class PlayerImagePanel extends AnimationPanel {
     }
 
     private void doHealAnimation() {
-        if (GeneralConfig.getInstance().isAnimateGameplay()) {
+        if (GeneralConfig.getInstance().showGameplayAnimations()) {
             final Timeline timeline = new Timeline();
             timeline.setDuration(1000);
             timeline.setEase(new Spline(0.8f));

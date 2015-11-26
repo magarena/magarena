@@ -162,7 +162,7 @@ public class ZoneToggleButton extends JToggleButton {
     }
 
     private void doAlertAnimation(int loopCount) {
-        if (GeneralConfig.getInstance().isAnimateGameplay()) {
+        if (GeneralConfig.getInstance().showGameplayAnimations()) {
             timeline1 = new Timeline();
             timeline1.setDuration(200);
             timeline1.addPropertyToInterpolate(

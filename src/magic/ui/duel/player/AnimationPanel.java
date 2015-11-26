@@ -42,7 +42,7 @@ public class AnimationPanel extends JPanel {
     }
 
     private void startPulsingBorderAnimation() {
-        if (GeneralConfig.getInstance().isAnimateGameplay()) {
+        if (GeneralConfig.getInstance().showGameplayAnimations()) {
             stopPulsingBorderAnimation();
             pulseBorderTimeline.setDuration(500);
             pulseBorderTimeline.setEase(new Spline(0.8f));

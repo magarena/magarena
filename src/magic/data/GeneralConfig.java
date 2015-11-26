@@ -207,7 +207,7 @@ public class GeneralConfig {
         return deckFileMaxLines;
     }
 
-    public boolean isAnimateGameplay() {
+    public boolean showGameplayAnimations() {
         return animateGameplay && !getTextView();
     }
 
