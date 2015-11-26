@@ -2,12 +2,12 @@ package magic.model.trigger;
 
 import magic.model.MagicPermanent;
 
-public abstract class MagicWhenBlocksOrBecomesBlockedByTrigger extends MagicWhenBlocksTrigger {
-    public MagicWhenBlocksOrBecomesBlockedByTrigger(final int priority) {
+public abstract class ThisBlocksOrBecomesBlockedTrigger extends MagicWhenBlocksTrigger {
+    public ThisBlocksOrBecomesBlockedTrigger(final int priority) {
         super(priority);
     }
 
-    public MagicWhenBlocksOrBecomesBlockedByTrigger() {}
+    public ThisBlocksOrBecomesBlockedTrigger() {}
 
     @Override
     public boolean accept(final MagicPermanent permanent, final MagicPermanent blocker) {
