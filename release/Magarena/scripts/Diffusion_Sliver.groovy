@@ -1,7 +1,7 @@
 MagicTargetFilter<MagicPermanent> SLIVER_CREATURE_YOU_CONTROL = Permanent("Sliver creature you control");
 
 [
-    new MagicWhenTargetedTrigger() {
+    new BecomesTargetTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicItemOnStack itemOnStack) {
             final MagicTarget target = itemOnStack.getTarget();
