@@ -20,7 +20,6 @@ import javax.swing.ScrollPaneConstants;
 import javax.swing.SwingUtilities;
 import magic.data.MagicIcon;
 import magic.ui.IconImages;
-import magic.model.MagicGame;
 import magic.model.phase.MagicPhaseType;
 import magic.ui.duel.SwingGameController;
 import magic.ui.message.TextLabel;
@@ -30,7 +29,6 @@ public class UserActionPanel extends JPanel implements ActionListener {
 
     public static final int TEXT_WIDTH=230;
 
-    private final MagicGame game;
     private final SwingGameController controller;
     private final JButton actionButton;
     private final JButton undoButton;
@@ -41,7 +39,6 @@ public class UserActionPanel extends JPanel implements ActionListener {
 
     public UserActionPanel(final SwingGameController controller) {
 
-        this.game = controller.getGame();
         this.controller=controller;
 
         setLayout(new BorderLayout());
@@ -140,7 +137,7 @@ public class UserActionPanel extends JPanel implements ActionListener {
     }
 
     public void enableUndoButton(final boolean thinking) {
-        final int undoPoints=game.getNrOfUndoPoints();
+        final int undoPoints=controller.getViewerInfo().getUndoPoints();
         final boolean allowUndo=undoPoints>0&&!thinking;
         undoButton.setEnabled(allowUndo);
     }
@@ -176,7 +173,7 @@ public class UserActionPanel extends JPanel implements ActionListener {
     }
 
     public MagicPhaseType getMagicPhaseType() {
-        return game.getPhase().getType();
+        return controller.getViewerInfo().getPhaseType();
     }
 
     /**
@@ -184,7 +181,7 @@ public class UserActionPanel extends JPanel implements ActionListener {
      * for use with the GameStatusPanel component.
      */
     public ImageIcon getTurnSizedPlayerAvatar() {
-        return IconImages.getIconSize4(game.getPriorityPlayer().getPlayerDefinition());
+        return controller.getViewerInfo().getPriorityPlayer().getAvatar();
     }
 
 }
