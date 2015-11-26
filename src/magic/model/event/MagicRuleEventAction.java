@@ -3603,9 +3603,9 @@ public enum MagicRuleEventAction {
     public static String personalize(final MagicChoice choice, final String text) {
         final String withIndicator = addChoiceIndicator(choice, text);
         return withIndicator
-            .replaceAll("(S|s)earch your ", "PN searches his or her ")
             .replaceAll("discard ","discards ")
             .replaceAll("reveal ","reveals ")
+            .replaceAll("(S|s)earch your ", "PN searches his or her ")
             .replaceAll("(S|s)huffle your ","PN shuffles his or her ")
             .replaceAll("(Y|y)ou draw","PN draws")
             .replaceAll("(D|d)raw ","PN draws ")
@@ -3616,8 +3616,7 @@ public enum MagicRuleEventAction {
             .replaceAll("(Y|y)ou lose ","PN loses ")
             .replaceAll("(Y|y)ou control","PN controls")
             .replaceAll("(Y|y)our ","PN's ")
-            .replaceAll("(Y|y)ou ","PN ")
-            .replaceAll("you\\.", "PN\\.")
+            .replaceAll("(Y|y)ou\\b","PN")
             .replaceAll("(P|p)ut ","PN puts ")
             .replaceAll("(C|c)hoose one ","$1hoose one\\$ ")
             ;
