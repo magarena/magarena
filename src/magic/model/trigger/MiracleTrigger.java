@@ -7,12 +7,11 @@ import magic.model.MagicPermanent;
 import magic.model.MagicLocationType;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicPayManaCostChoice;
-import magic.model.event.MagicActivation;
 import magic.model.event.MagicEvent;
 import magic.model.action.AIRevealAction;
 import magic.model.action.CastCardAction;
 
-public class MiracleTrigger extends MagicWhenDrawnTrigger {
+public class MiracleTrigger extends ThisDrawnTrigger {
 
     private final MagicManaCost cost;
 

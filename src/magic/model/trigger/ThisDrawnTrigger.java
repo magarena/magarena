@@ -3,12 +3,12 @@ package magic.model.trigger;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 
-public abstract class MagicWhenDrawnTrigger extends MagicTrigger<MagicCard> {
-    public MagicWhenDrawnTrigger(final int priority) {
+public abstract class ThisDrawnTrigger extends MagicTrigger<MagicCard> {
+    public ThisDrawnTrigger(final int priority) {
         super(priority);
     }
 
-    public MagicWhenDrawnTrigger() {}
+    public ThisDrawnTrigger() {}
 
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenDrawn;
