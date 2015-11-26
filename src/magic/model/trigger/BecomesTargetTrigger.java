@@ -2,26 +2,25 @@ package magic.model.trigger;
 
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.action.SacrificeAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTarget;
 
-public abstract class MagicWhenTargetedTrigger extends MagicTrigger<MagicItemOnStack> {
-    public MagicWhenTargetedTrigger(final int priority) {
+public abstract class BecomesTargetTrigger extends MagicTrigger<MagicItemOnStack> {
+    public BecomesTargetTrigger(final int priority) {
         super(priority);
     }
 
-    public MagicWhenTargetedTrigger() {}
+    public BecomesTargetTrigger() {}
 
     public MagicTriggerType getType() {
         return MagicTriggerType.WhenTargeted;
     }
-    
-    public static MagicWhenTargetedTrigger create(final MagicTargetFilter<MagicPermanent> pfilter, final MagicTargetFilter<MagicItemOnStack> ifilter, final MagicSourceEvent sourceEvent) {
-        return new MagicWhenTargetedTrigger() {
+
+    public static BecomesTargetTrigger create(final MagicTargetFilter<MagicPermanent> pfilter, final MagicTargetFilter<MagicItemOnStack> ifilter, final MagicSourceEvent sourceEvent) {
+        return new BecomesTargetTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicItemOnStack itemOnStack) {
                 final MagicTarget target = itemOnStack.getTarget();

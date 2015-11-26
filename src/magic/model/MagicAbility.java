@@ -1004,7 +1004,7 @@ public enum MagicAbility {
     },
     WhenTargeted("When(ever)? " + ARG.WORDRUN2 + " becomes the target of (?<wordrun>[^\\,]*), " + ARG.EFFECT, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicWhenTargetedTrigger.create(
+            card.add(BecomesTargetTrigger.create(
                 MagicTargetFilterFactory.Permanent(ARG.wordrun2(arg)),
                 MagicTargetFilterFactory.ItemOnStack(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg))

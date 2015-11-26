@@ -8,7 +8,7 @@ import magic.model.event.MagicSourceEvent;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.target.MagicTargetFilter;
 
-public abstract class ThisIsTargetedTrigger extends MagicWhenTargetedTrigger {
+public abstract class ThisIsTargetedTrigger extends BecomesTargetTrigger {
     @Override
     public boolean accept(final MagicPermanent permanent, final MagicItemOnStack item) {
         return item.isTarget(permanent);
