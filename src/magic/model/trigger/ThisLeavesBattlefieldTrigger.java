@@ -43,7 +43,7 @@ public abstract class ThisLeavesBattlefieldTrigger extends LeavesBattlefieldTrig
     public static final ThisLeavesBattlefieldTrigger ExileUntilLeaves = new ThisLeavesBattlefieldTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final RemoveFromPlayAction act) {
-            game.doAction(new ReturnLinkedExileAction(act.getPermanent(),MagicLocationType.Play));
+            game.doAction(new ReturnLinkedExileAction(act.getPermanent(),MagicLocationType.Battlefield));
             return MagicEvent.NONE;
         }
     };

@@ -34,7 +34,7 @@ def loseAct = {
             final MagicLocationType oldLocation = spell.getMoveLocation();
             
             //prevent auto move to moveLocation after executeEvent
-            spell.setMoveLocation(MagicLocationType.Play);
+            spell.setMoveLocation(MagicLocationType.Battlefield);
 
             game.addEvent(new MagicCoinFlipEvent(
                 event,

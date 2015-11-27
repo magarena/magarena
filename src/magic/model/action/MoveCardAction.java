@@ -30,7 +30,7 @@ public class MoveCardAction extends MagicAction {
     }
 
     public MoveCardAction(final MagicPermanent permanent,final MagicLocationType toLocation) {
-        this(permanent.getCard(),permanent,MagicLocationType.Play,toLocation);
+        this(permanent.getCard(),permanent,MagicLocationType.Battlefield,toLocation);
     }
 
     public MoveCardAction(final MagicCardOnStack cardOnStack) {
@@ -40,7 +40,7 @@ public class MoveCardAction extends MagicAction {
     public boolean from(MagicLocationType loc) {
         return fromLocation == loc;
     }
-    
+
     public boolean to(MagicLocationType loc) {
         return toLocation == loc;
     }
@@ -52,9 +52,9 @@ public class MoveCardAction extends MagicAction {
     @Override
     public void doAction(final MagicGame game) {
         game.executeTrigger(MagicTriggerType.WouldBeMoved, this);
-        
+
         final MagicSource triggerSource = permanent.isValid() ? permanent : card;
-        
+
         // Execute replacement triggers
         for (final MagicTrigger<MoveCardAction> trigger : card.getCardDefinition().getPutIntoGraveyardTriggers()) {
             if (toLocation == MagicLocationType.Graveyard && trigger.getPriority() == MagicTrigger.REPLACEMENT) {

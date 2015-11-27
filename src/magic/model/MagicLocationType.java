@@ -2,7 +2,7 @@ package magic.model;
 
 public enum MagicLocationType {
     Stack,
-    Play,
+    Battlefield,
     OwnersHand,
     OwnersLibrary,
     TopOfOwnersLibrary,

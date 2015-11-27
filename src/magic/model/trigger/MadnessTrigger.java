@@ -34,7 +34,7 @@ public class MadnessTrigger extends ThisPutIntoGraveyardTrigger {
         game.executeTrigger(MagicTriggerType.WhenOtherPutIntoGraveyard, act);
 
         //Change discard location so that MoveCardAction does nothing
-        act.setToLocation(MagicLocationType.Play);
+        act.setToLocation(MagicLocationType.Battlefield);
 
         return new MagicEvent(
             act.card,
@@ -62,7 +62,7 @@ public class MadnessTrigger extends ThisPutIntoGraveyardTrigger {
             )));
         } else {
             // cannot be from OwnersHand as it will trigger itself again, so we use from Play instead
-            game.doAction(new MoveCardAction(card,MagicLocationType.Play,MagicLocationType.Graveyard));
+            game.doAction(new MoveCardAction(card,MagicLocationType.Battlefield,MagicLocationType.Graveyard));
         }
     }
 

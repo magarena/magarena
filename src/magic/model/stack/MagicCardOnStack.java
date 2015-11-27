@@ -36,7 +36,7 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
         final MagicCard card,
         final MagicObject obj,
         final MagicPlayer controller,
-        final MagicCardEvent aCardEvent, 
+        final MagicCardEvent aCardEvent,
         final MagicPayedCost aPayedCost,
         final List<? extends MagicPermanentAction> aModifications
     ) {
@@ -52,11 +52,11 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
     public MagicCardOnStack(final MagicCard card,final MagicCardEvent aCardEvent, final MagicPayedCost aPayedCost) {
         this(card, card, card.getController(), aCardEvent, aPayedCost, Collections.<MagicPermanentAction>emptyList());
     }
-    
+
     public MagicCardOnStack(final MagicCard card,final MagicPlayer controller,final MagicPayedCost aPayedCost) {
         this(card, card, controller, card.getCardDefinition().getCardEvent(), aPayedCost, Collections.<MagicPermanentAction>emptyList());
     }
-    
+
     public MagicCardOnStack(final MagicCard card,final MagicPlayer controller,final MagicPayedCost aPayedCost, final List<? extends MagicPermanentAction> aModifications) {
         this(card, card, controller, card.getCardDefinition().getCardEvent(), aPayedCost, aModifications);
     }
@@ -85,7 +85,7 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
         }
         return copyCardOnStack;
     }
-    
+
     @Override
     public long getStateId() {
         return magic.model.MurmurHash3.hash(new long[] {
@@ -96,22 +96,22 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
             cardDef.getIndex()
         });
     }
-    
+
     @Override
     public MagicCardDefinition getCardDefinition() {
         return cardDef;
     }
-    
+
     @Override
     public MagicEvent getEvent() {
         return event;
     }
-    
+
     @Override
     public void resolve(final MagicGame game) {
         super.resolve(game);
         // Move card to move location that is not play
-        if (moveLocation != MagicLocationType.Play) {
+        if (moveLocation != MagicLocationType.Battlefield) {
             game.doAction(new MoveCardAction(this));
         }
     }
@@ -137,7 +137,7 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
     public MagicLocationType getMoveLocation() {
         return moveLocation;
     }
-    
+
     public void setFromLocation(final MagicLocationType loc) {
         fromLocation = loc;
     }
@@ -185,7 +185,7 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
     public MagicGame getGame() {
         return getSource().getGame();
     }
-    
+
     @Override
     public Collection<MagicSourceActivation<? extends MagicSource>> getSourceActivations() {
         return Collections.emptyList();

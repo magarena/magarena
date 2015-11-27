@@ -211,7 +211,7 @@ public class MagicCard
     public Iterable<MagicEvent> getCostEvent() {
         return getCardDefinition().getCostEvent(this);
     }
-    
+
     public Iterable<MagicEvent> getAdditionalCostEvent() {
         return getCardDefinition().getAdditionalCostEvent(this);
     }
@@ -236,7 +236,7 @@ public class MagicCard
         switch (loc) {
             case Stack:
                 return isOnStack();
-            case Play:
+            case Battlefield:
                 return isOnBattlefield();
             case OwnersHand:
                 return isInHand();
@@ -310,7 +310,7 @@ public class MagicCard
         } else if (isInExile()) {
             return MagicLocationType.Exile;
         } else if (isOnBattlefield()) {
-            return MagicLocationType.Play;
+            return MagicLocationType.Battlefield;
         } else if (isInLibrary()) {
             return MagicLocationType.OwnersLibrary;
         } else if (isOnStack()) {
@@ -454,11 +454,11 @@ public class MagicCard
 
         return false;
     }
-    
+
     public boolean hasCounters() {
         return counters.size() > 0;
     }
-    
+
     @Override
     public int getCounters(final MagicCounterType counterType) {
         final Integer cnt = counters.get(counterType);

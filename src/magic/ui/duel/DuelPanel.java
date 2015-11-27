@@ -37,7 +37,7 @@ import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public final class DuelPanel extends JPanel {
-    
+
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
     private static final String ACTION_KEY="action";
     private static final String UNDO_KEY="undo";
@@ -47,7 +47,7 @@ public final class DuelPanel extends JPanel {
     private final MagicFrame frame;
     private final ZoneBackgroundLabel backgroundLabel;
     private final SwingGameController controller;
-  
+
     private final AnnotatedCardPanel imageCardViewer;
 
     private final DuelSideBarPanel sidebarPanel;
@@ -65,7 +65,7 @@ public final class DuelPanel extends JPanel {
 
         this.frame = frame;
         this.backgroundLabel = backgroundLabel;
-        
+
         controller = new SwingGameController(this, game);
         animator = new GamePlayAnimator(frame, this);
         animationCanvas = new AnimationCanvas();
@@ -90,7 +90,7 @@ public final class DuelPanel extends JPanel {
         controller.setUserActionPanel(sidebarPanel.getGameStatusPanel().getUserActionPanel());
 
         updateView();
-        
+
         createActionMaps();
         createShortcutKeys();
         createMouseListener();
@@ -109,7 +109,7 @@ public final class DuelPanel extends JPanel {
             @Override
             public void mouseEntered(MouseEvent e) {
                 controller.hideInfo();
-            }            
+            }
         });
     }
 
@@ -225,7 +225,7 @@ public final class DuelPanel extends JPanel {
     public void resizeComponents() {
         final Dimension size = getSize();
         result = ResolutionProfiles.calculate(size);
-        backgroundLabel.setZones(result);                
+        backgroundLabel.setZones(result);
         battlefieldPanel.resizeComponents(result);
         setGamePanelLayout();
         // defer until all pending events on the EDT have been processed.
@@ -337,7 +337,7 @@ public final class DuelPanel extends JPanel {
 
     public void highlightCard(MagicCard card, boolean b) {
         switch (card.getLocation()) {
-            case Play:
+            case Battlefield:
                 battlefieldPanel.highlightCard(card, b);
                 break;
             case Graveyard:
@@ -351,7 +351,7 @@ public final class DuelPanel extends JPanel {
                 break;
             case OwnersLibrary:
                 sidebarPanel.doHighlightPlayerZone(card, MagicPlayerZone.LIBRARY, b);
-                break;                                
+                break;
         }
     }
 

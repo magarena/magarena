@@ -41,7 +41,7 @@
             }
             game.doAction(new ReturnLinkedExileAction(
                 event.getPermanent(),
-                MagicLocationType.Play,
+                MagicLocationType.Battlefield,
                 event.getPlayer()
             ));
         }

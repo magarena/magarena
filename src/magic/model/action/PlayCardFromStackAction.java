@@ -20,13 +20,13 @@ public class PlayCardFromStackAction extends MagicAction {
 
     private final MagicCardOnStack cardOnStack;
     private final MagicCardDefinition cardDef;
-    
+
     private MagicPermanent permanent = MagicPermanent.NONE;
     private MagicPermanent enchantedPermanent = MagicPermanent.NONE;
     private MagicPayedCost payedCost = MagicPayedCost.NO_COST;
     private boolean validEnchanted = false;
     private List<? extends MagicPermanentAction> modifications = Collections.<MagicPermanentAction>emptyList();
-    
+
     public PlayCardFromStackAction(final MagicCardOnStack aCardOnStack, final MagicCardDefinition aCardDef, final List<? extends MagicPermanentAction> aModifications) {
         cardOnStack = aCardOnStack;
         cardDef = aCardDef;
@@ -37,21 +37,21 @@ public class PlayCardFromStackAction extends MagicAction {
     public PlayCardFromStackAction(final MagicCardOnStack aCardOnStack, final MagicCardDefinition aCardDef, final MagicPermanentAction... aModifications) {
         this(aCardOnStack, aCardDef, Arrays.asList(aModifications));
     }
-    
+
     public PlayCardFromStackAction(final MagicCardOnStack aCardOnStack, final MagicPermanentAction... aModifications) {
         this(aCardOnStack, aCardOnStack.getCardDefinition(), aModifications);
     }
-    
+
     public PlayCardFromStackAction(final MagicCardOnStack cardOnStack, final MagicPermanent aEnchantedPermanent, final MagicPermanentAction... aModifications) {
         this(cardOnStack, aModifications);
         enchantedPermanent = aEnchantedPermanent;
     }
 
     protected MagicPermanent createPermanent(final MagicGame game) {
-        cardOnStack.setMoveLocation(MagicLocationType.Play);
+        cardOnStack.setMoveLocation(MagicLocationType.Battlefield);
         return game.createPermanent(cardOnStack.getCard(),cardDef,cardOnStack.getController());
     }
-    
+
     @Override
     public void doAction(final MagicGame game) {
         permanent=createPermanent(game);
@@ -79,7 +79,7 @@ public class PlayCardFromStackAction extends MagicAction {
             enchantedPermanent.addAura(permanent);
             permanent.setEnchantedPermanent(enchantedPermanent);
         }
-        
+
         //execute comes into play with
         for (final MagicTrigger<MagicPayedCost> trigger : permanent.getComeIntoPlayTriggers()) {
             if (trigger.getPriority() == MagicTrigger.REPLACEMENT) {

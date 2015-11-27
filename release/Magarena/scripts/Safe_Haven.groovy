@@ -15,7 +15,7 @@
                 game.doAction(new SacrificeAction(event.getPermanent()));
                 game.doAction(new ReturnLinkedExileAction(
                     event.getPermanent(),
-                    MagicLocationType.Play,
+                    MagicLocationType.Battlefield,
                     event.getPlayer()
                 ));
             }

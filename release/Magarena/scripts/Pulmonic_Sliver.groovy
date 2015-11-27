@@ -3,7 +3,7 @@ def PulmonicTrigger = new WouldBeMovedTrigger() {
     public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MoveCardAction act) {
         if (permanent == act.permanent && act.to(MagicLocationType.Graveyard)) {
             //disable the current move action
-            act.setToLocation(MagicLocationType.Play);
+            act.setToLocation(MagicLocationType.Battlefield);
 
             game.addEvent(new MagicEvent(
                 permanent,

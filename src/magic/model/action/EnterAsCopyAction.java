@@ -23,15 +23,15 @@ public class EnterAsCopyAction extends MagicAction {
         modifications = new LinkedList<>(aModifications);
         modifications.addAll(cardOnStack.getModifications());
     }
-    
+
     public EnterAsCopyAction(final MagicCardOnStack aCardOnStack, final MagicObject aObj, final MagicPermanentAction... aModifications) {
         this(aCardOnStack, aObj, Arrays.asList(aModifications));
     }
-    
+
     @Override
     public void doAction(final MagicGame game) {
         oldLocation = cardOnStack.getMoveLocation();
-        cardOnStack.setMoveLocation(MagicLocationType.Play);
+        cardOnStack.setMoveLocation(MagicLocationType.Battlefield);
 
         final MagicCardOnStack replacement = new MagicCardOnStack(
             cardOnStack.getCard(),
@@ -42,7 +42,7 @@ public class EnterAsCopyAction extends MagicAction {
             modifications
         );
         replacement.setFromLocation(cardOnStack.getFromLocation());
-        
+
         game.doAction(new PutItemOnStackAction(replacement));
     }
 

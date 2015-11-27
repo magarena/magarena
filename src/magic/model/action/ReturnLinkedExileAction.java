@@ -17,13 +17,13 @@ public class ReturnLinkedExileAction extends MagicAction {
     private final MagicPlayer controller;
     private final List<MagicPermanentAction> modifications = new LinkedList<MagicPermanentAction>();;
     private MagicCardList exiledList;
-    
+
     public ReturnLinkedExileAction(final MagicPermanent aSource, final MagicLocationType aLocation, final MagicPlayer aController) {
         source = aSource;
         location = aLocation;
         controller = aController;
     }
-    
+
     public ReturnLinkedExileAction(final MagicPermanent source, final MagicLocationType location) {
         this(source, location, MagicPlayer.NONE);
     }
@@ -32,7 +32,7 @@ public class ReturnLinkedExileAction extends MagicAction {
         this(aSource, aLocation, aController);
         modifications.add(aModification);
     }
-    
+
     public ReturnLinkedExileAction(final MagicPermanent source, final MagicLocationType location, final MagicPermanentAction aModification) {
         this(source, location);
         modifications.add(aModification);
@@ -44,7 +44,7 @@ public class ReturnLinkedExileAction extends MagicAction {
         exiledList = new MagicCardList(source.getExiledCards());
         for (final MagicCard card : cardList) {
             if (card.isInExile()) {
-                if (location == MagicLocationType.Play) {
+                if (location == MagicLocationType.Battlefield) {
                     game.doAction(new ReturnCardAction(
                         MagicLocationType.Exile,
                         card,

@@ -51,7 +51,7 @@ public abstract class ThisPutIntoGraveyardTrigger extends MagicTrigger<MoveCardA
             if (card.isEnemy(game.getActiveSource()) &&
                 act.from(MagicLocationType.OwnersHand) &&
                 act.to(MagicLocationType.Graveyard)) {
-                act.setToLocation(MagicLocationType.Play);
+                act.setToLocation(MagicLocationType.Battlefield);
                 game.doAction(new PlayCardAction(card));
             }
             return MagicEvent.NONE;
