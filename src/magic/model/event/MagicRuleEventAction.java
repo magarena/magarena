@@ -3731,7 +3731,7 @@ public enum MagicRuleEventAction {
                                 }
                             }
                         },
-                        "PN may$ pay " + mayCost + "$. If you do, " + contextRule
+                        "PN may$ pay " + mayCost + "$. If PN does, " + contextRule
                     ) : MagicEvent.NONE;
                 }
             };
