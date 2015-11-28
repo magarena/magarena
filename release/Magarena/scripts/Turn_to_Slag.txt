@@ -4,6 +4,6 @@ value=2.350
 rarity=C
 type=Sorcery
 cost={3}{R}{R}
-effect=SN deals 5 damage to target creature. Destroy all Equipment attached to that creature.
-timing=main
+timing=removal
+requires_groovy_code
 oracle=Turn to Slag deals 5 damage to target creature. Destroy all Equipment attached to that creature.
