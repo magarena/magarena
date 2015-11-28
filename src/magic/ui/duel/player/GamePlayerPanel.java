@@ -96,10 +96,6 @@ public class GamePlayerPanel extends TexturedPanel implements IChoiceViewer {
         return playerInfo;
     }
 
-    public Rectangle getZoneButtonRectangle(MagicPlayerZone zone, Component canvas) {
-        return zoneButtonsPanel.getZoneButtonRectangle(zone, canvas);
-    }
-
     public void doFlashPlayerHandZoneButton() {
         zoneButtonsPanel.doFlashPlayerHandZoneButton();
     }

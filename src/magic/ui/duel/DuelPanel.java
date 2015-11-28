@@ -2,7 +2,6 @@ package magic.ui.duel;
 
 import magic.ui.duel.textmode.TextModeBattlefieldPanel;
 import magic.ui.duel.sidebar.DuelSideBarPanel;
-import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.Rectangle;
@@ -21,7 +20,6 @@ import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
-import magic.model.MagicPlayer;
 import magic.model.MagicPlayerZone;
 import magic.ui.ScreenController;
 import magic.ui.duel.animation.GameLayoutInfo;
@@ -235,14 +233,6 @@ public final class DuelPanel extends JPanel {
         sidebarPanel.refreshLayout();
     }
 
-    public Rectangle getPlayerZoneButtonRectangle(MagicPlayer player, MagicPlayerZone zone, Component canvas) {
-        return sidebarPanel.getPlayerZoneButtonRectangle(player, zone, canvas);
-    }
-
-    public Rectangle getStackViewerRectangle(Component canvas) {
-        return sidebarPanel.getStackViewerRectangle(canvas);
-    }
-
     public void doFlashPlayerHandZoneButton(PlayerViewerInfo aPlayer) {
         sidebarPanel.doFlashPlayerHandZoneButton(aPlayer);
     }
@@ -310,7 +300,7 @@ public final class DuelPanel extends JPanel {
 
         }
 
-        info.setStackLayout(controller.getStackViewerRectangle(this));
+        info.setStackLayout(sidebarPanel.getStackViewerRectangle(this));
 
         final ImageCardListViewer handViewer = controller.getPlayerZoneViewer().getImageCardsListViewer();
         if (handViewer.getCardPosition(aCard) != null) {
