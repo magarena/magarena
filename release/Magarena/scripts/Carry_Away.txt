@@ -5,8 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={U}{U}
-ability=Enchant Equipment;\
-        When SN enters the battlefield, unattach enchanted Equipment.;\
-        You control enchanted Equipment.
+ability=You control enchanted Equipment.
 timing=aura
+enchant=gain control,neg equipment
+requires_groovy_code
 oracle=Enchant Equipment\nWhen Carry Away enters the battlefield, unattach enchanted Equipment.\nYou control enchanted Equipment.
