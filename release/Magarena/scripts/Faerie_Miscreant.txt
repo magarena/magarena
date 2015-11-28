@@ -8,6 +8,6 @@ subtype=Faerie,Rogue
 cost={U}
 pt=1/1
 ability=Flying;\
-        When SN enters the battlefield, if you control another creature named SN, draw a card.
+        When SN enters the battlefield, if you control another creature named Faerie Miscreant, draw a card.
 timing=main
 oracle=Flying\nWhen Faerie Miscreant enters the battlefield, if you control another creature named Faerie Miscreant, draw a card.
