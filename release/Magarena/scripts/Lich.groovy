@@ -5,14 +5,16 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "PN\$'s life total becomes 0."
+                "PN\$ loses life equal to his or her life total."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final int amount = 0 - player.getLife();
-            game.doAction(new ChangeLifeAction(player,amount));
+            final int lossAmount = player.getLife();
+            final int amount = 0 - lossAmount;
+            game.doAction(new ChangeLifeAction(player, amount));
+            game.logAppendValue(player, lossAmount)
         }
     },
     
