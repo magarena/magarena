@@ -12,12 +12,13 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            if (event.isYes()) {
-                game.doAction(new SacrificeAction(event.getPermanent()));
+            final MagicPermanent it = event.getPermanent();
+            if (event.isYes() && it.isValid()) {
+                game.doAction(new SacrificeAction(it));
                 final int amount = event.getRefPlayer().getPoison();
                 game.logAppendValue(event.getPlayer(), amount);
                 if (amount > 0) {
-                    game.addEvent(new MagicDiscardEvent(event.getPermanent(), event.getRefPlayer(), amount));
+                    game.addEvent(new MagicDiscardEvent(it, event.getRefPlayer(), amount));
                 }
             }
         }
