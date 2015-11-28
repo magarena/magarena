@@ -8,6 +8,6 @@ subtype=Human,Monk
 cost={2}{R}
 pt=3/1
 ability=Renown 1;\
-        Whenever SN becomes blocked by a creature, it deals 2 damage to that creature.
+        Whenever SN becomes blocked by a creature, SN deals 2 damage to that creature.
 timing=main
 oracle=Renown 1\nWhenever Acolyte of the Inferno becomes blocked by a creature, it deals 2 damage to that creature.
