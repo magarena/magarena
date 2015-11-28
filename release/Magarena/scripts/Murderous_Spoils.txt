@@ -4,6 +4,6 @@ value=2.089
 rarity=U
 type=Instant
 cost={5}{B}
-effect=Destroy target nonblack creature. It can't be regenerated. You gain control of all Equipment that was attached to it.
 timing=removal
+requires_groovy_code
 oracle=Destroy target nonblack creature. It can't be regenerated. You gain control of all Equipment that was attached to it.
