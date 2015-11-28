@@ -188,7 +188,11 @@ public abstract class ImageDownloadPanel extends JPanel {
     private class ImagesScanner extends SwingWorker<ImagesDownloadList, Void> {
         @Override
         protected ImagesDownloadList doInBackground() throws Exception {
-            return new ImagesDownloadList(getCards());
+            // Speeds up scanning by preventing multiple scanners
+            // accessing filesystem at the same time.
+            synchronized (ImagesScanner.class) {
+                return new ImagesDownloadList(getCards());
+            }
         }
         @Override
         protected void done() {
