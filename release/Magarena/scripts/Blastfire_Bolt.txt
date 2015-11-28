@@ -4,6 +4,6 @@ value=2.071
 rarity=C
 type=Instant
 cost={5}{R}
-effect=SN deals 5 damage to target creature. Destroy all Equipment attached to that creature.
 timing=removal
+requires_groovy_code=Turn to Slag
 oracle=Blastfire Bolt deals 5 damage to target creature. Destroy all Equipment attached to that creature.
