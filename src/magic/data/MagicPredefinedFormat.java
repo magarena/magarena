@@ -46,26 +46,26 @@ public class MagicPredefinedFormat extends MagicFormat {
         MODERN,
         LEGACY,
         VINTAGE,
-        ICE_AGE_BLOCK,
-        MIRAGE_BLOCK,
-        TEMPEST_BLOCK,
-        URZA_BLOCK,
-        MASQUES_BLOCK,
-        INVASION_BLOCK,
-        ODYSSEY_BLOCK,
-        ONSLAUGHT_BLOCK,
-        MIRRODIN_BLOCK,
-        KAMIGAWA_BLOCK,
-        RAVNICA_BLOCK,
-        TIME_SPIRAL_BLOCK,
-        LORWYN_SHADOWMOOR_BLOCK,
-        SHARDS_OF_ALARA_BLOCK,
-        ZENDIKAR_RISE_OF_THE_ELDRAZI_BLOCK,
-        SCARS_OF_MIRRODIN_BLOCK,
-        INNISTRAD_AVACYN_RESTORED_BLOCK,
-        RETURN_TO_RAVNICA_BLOCK,
+        KHANS_OF_TARKIR_BLOCK,
         THEROS_BLOCK,
-        KHANS_OF_TARKIR_BLOCK
+        RETURN_TO_RAVNICA_BLOCK,
+        INNISTRAD_AVACYN_RESTORED_BLOCK,
+        SCARS_OF_MIRRODIN_BLOCK,
+        ZENDIKAR_RISE_OF_THE_ELDRAZI_BLOCK,
+        SHARDS_OF_ALARA_BLOCK,
+        LORWYN_SHADOWMOOR_BLOCK,
+        TIME_SPIRAL_BLOCK,
+        RAVNICA_BLOCK,
+        KAMIGAWA_BLOCK,
+        MIRRODIN_BLOCK,
+        ONSLAUGHT_BLOCK,
+        ODYSSEY_BLOCK,
+        INVASION_BLOCK,
+        MASQUES_BLOCK,
+        URZA_BLOCK,
+        TEMPEST_BLOCK,
+        MIRAGE_BLOCK,
+        ICE_AGE_BLOCK
     ));
 
     public static List<MagicFormat> values() {
@@ -76,7 +76,7 @@ public class MagicPredefinedFormat extends MagicFormat {
     private final String filename;
     private final int minimumDeckSize;
     private final int maximumCardCopies;
-    
+
     private final List<String> bannedCardNames = new ArrayList<>();
     private final List<String> restrictedCardNames = new ArrayList<>();
     private final List<MagicSets> magicSets = new ArrayList<>();
@@ -87,7 +87,7 @@ public class MagicPredefinedFormat extends MagicFormat {
         this.minimumDeckSize = minDeckSize;
         this.maximumCardCopies = maxCardCopies;
     }
-    
+
     private MagicPredefinedFormat(final String name, final String filename) {
         this(name, filename, 60, 4);
     }
