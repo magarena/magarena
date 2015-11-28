@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.CancellationException;
@@ -191,6 +192,13 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
         // save updated preferences and reload.
         FileIO.toFile(thisConfigFile, thisProperties, "General configuration");
         GeneralConfig.getInstance().load();
+
+        // override download dates to catch any missed "image_updated" updates.
+        final Calendar dt = Calendar.getInstance();
+        dt.add(Calendar.DAY_OF_MONTH, -60);
+        GeneralConfig.getInstance().setMissingImagesDownloadDate(dt.getTime());
+        GeneralConfig.getInstance().setPlayableImagesDownloadDate(dt.getTime());
+        GeneralConfig.getInstance().save();
         
         setProgressNote(OK_STRING);
     }
