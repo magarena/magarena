@@ -409,22 +409,16 @@ public class CardDefinitions {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                GeneralConfig.getInstance().setIsMissingFiles(isMissingImages());
+                GeneralConfig.getInstance().setIsMissingFiles(isMissingPlayableImages());
             }
         }).start();
     }
 
-    public static boolean isMissingImages() {
-        final Date lastDownloaderRunDate = GeneralConfig.getInstance().getPlayableImagesDownloadDate();
-        for (final MagicCardDefinition card : getAllPlayableCardDefs()) {
-            if (card.getImageURL() != null) {
-                if (!MagicFileSystem.getCardImageFile(card).exists() || 
-                        card.isImageUpdatedAfter(lastDownloaderRunDate)) {
-                    return true;
-                }
-            }
-        }
-        return false;
+    public static boolean isMissingPlayableImages() {
+        final Date aDate = GeneralConfig.getInstance().getPlayableImagesDownloadDate();
+        return getAllPlayableCardDefs().stream()
+            .filter(MagicCardDefinition::hasImageUrl)
+            .anyMatch(card -> card.isImageUpdatedAfter(aDate) || card.isImageFileMissing());
     }
 
     public static String getScriptFilename(final MagicCardDefinition card) {

@@ -51,7 +51,7 @@ public class MissingImagesAlertButton extends AlertButton {
         assert !SwingUtilities.isEventDispatchThread();
 
         if (!hasChecked || isVisible()) {
-            isMissingImages = CardDefinitions.isMissingImages();
+            isMissingImages = CardDefinitions.isMissingPlayableImages();
             GeneralConfig.getInstance().setIsMissingFiles(isMissingImages);
             hasChecked = true;
         }
