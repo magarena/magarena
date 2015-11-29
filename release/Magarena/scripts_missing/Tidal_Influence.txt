@@ -4,7 +4,7 @@ value=2.552
 rarity=U
 type=Enchantment
 cost={2}{U}
-ability=Cast SN only if no permanents named SN are on the battlefield.;\
+ability=Cast SN only if no permanents named Tidal Influence are on the battlefield.;\
         SN enters the battlefield with a tide counter on it.;\
         At the beginning of your upkeep, put a tide counter on SN.;\
         As long as there is exactly one tide counter on SN, all blue creatures get -2/-0.;\

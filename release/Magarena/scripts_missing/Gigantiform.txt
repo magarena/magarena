@@ -8,6 +8,6 @@ cost={3}{G}{G}
 ability=Kicker {4};\
         Enchant creature;\
         Enchanted creature has base power and toughness 8/8 and has trample.;\
-        When SN enters the battlefield, if it was kicked, you may search your library for a card named SN, put it onto the battlefield, then shuffle your library.
+        When SN enters the battlefield, if it was kicked, you may search your library for a card named Gigantiform, put it onto the battlefield, then shuffle your library.
 timing=aura
 oracle=Kicker {4}\nEnchant creature\nEnchanted creature has base power and toughness 8/8 and has trample.\nWhen Gigantiform enters the battlefield, if it was kicked, you may search your library for a card named Gigantiform, put it onto the battlefield, then shuffle your library.

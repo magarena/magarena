@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Human,Warrior
 cost={4}{R}{G}
 pt=3/4
-ability=When SN enters the battlefield, put a legendary 3/4 red and green Human Warrior creature token named SN Twin onto the battlefield. When SN leaves the battlefield, exile that token. When that token leaves the battlefield, sacrifice SN.
+ability=When SN enters the battlefield, put a legendary 3/4 red and green Human Warrior creature token named Stangg Twin onto the battlefield. When SN leaves the battlefield, exile that token. When that token leaves the battlefield, sacrifice SN.
 timing=main
 oracle=When Stangg enters the battlefield, put a legendary 3/4 red and green Human Warrior creature token named Stangg Twin onto the battlefield. When Stangg leaves the battlefield, exile that token. When that token leaves the battlefield, sacrifice Stangg.

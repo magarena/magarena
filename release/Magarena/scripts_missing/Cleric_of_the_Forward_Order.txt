@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Cleric
 cost={1}{W}
 pt=2/2
-ability=When SN enters the battlefield, you gain 2 life for each creature you control named SN.
+ability=When SN enters the battlefield, you gain 2 life for each creature you control named Cleric of the Forward Order.
 timing=main
 oracle=When Cleric of the Forward Order enters the battlefield, you gain 2 life for each creature you control named Cleric of the Forward Order.

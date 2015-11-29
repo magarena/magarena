@@ -6,6 +6,6 @@ type=Creature
 subtype=Shapeshifter
 cost={3}{U}{U}
 pt=3/4
-ability=As long as an opponent controls a creature with flying not named SN, SN has flying. The same is true for first strike, trample, and protection from any color.
+ability=As long as an opponent controls a creature with flying not named Escaped Shapeshifter, SN has flying. The same is true for first strike, trample, and protection from any color.
 timing=main
 oracle=As long as an opponent controls a creature with flying not named Escaped Shapeshifter, Escaped Shapeshifter has flying. The same is true for first strike, trample, and protection from any color.
