@@ -15,25 +15,25 @@ import magic.utility.FileIO;
 
 @SuppressWarnings("serial")
 public class DeckDescriptionPreview extends JComponent implements PropertyChangeListener {
-	
-	File file = null;
-	String description;
-	private final JTextArea textArea = new JTextArea();
-	private final JScrollPane scrollPane = new JScrollPane(textArea);
+    
+    File file = null;
+    String description;
+    private final JTextArea textArea = new JTextArea();
+    private final JScrollPane scrollPane = new JScrollPane(textArea);
 
-	public DeckDescriptionPreview(JFileChooser fc) {
-		setPreferredSize(new Dimension(200, 50));
-		setLayout(new BorderLayout());
-		textArea.setEditable(false);
-		textArea.setLineWrap(true);
-		textArea.setWrapStyleWord(true);
-	    add(scrollPane, BorderLayout.CENTER);
-		fc.addPropertyChangeListener(this);
-	}
+    public DeckDescriptionPreview(JFileChooser fc) {
+        setPreferredSize(new Dimension(200, 50));
+        setLayout(new BorderLayout());
+        textArea.setEditable(false);
+        textArea.setLineWrap(true);
+        textArea.setWrapStyleWord(true);
+        add(scrollPane, BorderLayout.CENTER);
+        fc.addPropertyChangeListener(this);
+    }
 
-	public void loadDescription() {
-		String content;
-		description = "";
+    public void loadDescription() {
+        String content;
+        description = "";
         try { //load deck description
             content = FileIO.toStr(file);
         } catch (final IOException ex) {
@@ -53,23 +53,23 @@ public class DeckDescriptionPreview extends JComponent implements PropertyChange
         }
                 
         showDescription();
-	}
+    }
 
     public void showDescription() {
-		textArea.setText(description);
-		textArea.setCaretPosition(0);
-	}
-	
+        textArea.setText(description);
+        textArea.setCaretPosition(0);
+    }
+    
     @Override
-	public void propertyChange(PropertyChangeEvent e) {
-		String prop = e.getPropertyName();
-		if (JFileChooser.SELECTED_FILE_CHANGED_PROPERTY.equals(prop)) {
+    public void propertyChange(PropertyChangeEvent e) {
+        String prop = e.getPropertyName();
+        if (JFileChooser.SELECTED_FILE_CHANGED_PROPERTY.equals(prop)) {
             description = "";
             showDescription();
-			file = (File) e.getNewValue();
-			if (isShowing() && file != null && file.isDirectory() == false) {
-				loadDescription();
-			}
-		}
-	}
+            file = (File) e.getNewValue();
+            if (isShowing() && file != null && file.isDirectory() == false) {
+                loadDescription();
+            }
+        }
+    }
 }
