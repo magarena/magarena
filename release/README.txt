@@ -75,36 +75,36 @@ melvin
 PalladiaMors
 ShawnieBoy
 
-    move choice indicator right after choice description, fixes #507
-    On import, reset image download dates in general.cfg to current date minus 60 days. This should catch any missed "image_updated" updates in most cases (see #481).
-    add support for Experience counters
-    Override default card image by adding image with the same name to '<images>/custom' folder.
-    adds a "Gameplay Report" option to the game menu (closes #137).
-    use BFZ full-art for basic lands
-    Update load saved game to cater for multiple directories (see discussion at end of issue #500).
+- provide a "Gameplay Report" option to the game menu that allows users to
+  create a zip file that should be submitted for gameplay bugs
+
+- update basic lands to use BFZ full art card images
+
+- allow overriding the default card image by adding image with the same name to '<images>/custom' folder
+
+- show choice indicator immediately after target description instead of at the end of the effect text
 
 - fixed the following bugs:
-    fix: Burnout was using 'Counter unless opponent pays {1}'
-    fix: Fyndhorn Pollen was missing 'Cumulative upkeep {1}'
-    fix: Kobold Drill Sergeant was giving Kobolds +1/+1 instead of +0/+1
-    extend pump timing to include declare attackers phase, as you may want to give evasion abilities, fixes #500
-    use RN instead of constructing the text manually so that name is interactive in log/stack, fixes #489
-    image_updated property should now work properly with missing images (fixes #501).
-    make 'face-down creature' interactive in log, fixes #477
-    replace MagicWhenOtherPutIntoGraveyardTrigger with MagicWhenOtherDiesTrigger so trigger gets reference to died permanent, fixes #462
-    fix mill message appearing before event message, addresses #487
-    add First pass of 'May tense' for log messages #503
-    replace call to getEquippedCreature in executeEvent with getRefPermanentList, fixes #494
-    change 'damage that would reduce your life total' to use IfLifeWouldChangeTrigger, fixes #512
-    Fix: Form of the Dragon should still trigger life gain/loss
-    add AI Activation restriction to sacrifice for source-buff, Prevents source-sacrifice for source-buff
-    remove command file, fix startup command in launcher to use jar instead of exe, fixes #492
-    remove obsolete image update code from download dialog (see #481 for discussion on replacement).
-    fix search effect occuring after putting from hand for Tooth and Nail, fixes #460
-    correct targeting and filter for Blessed Reversal, fixes #491
-    use the face down spell as the source instead of the card so that the card name does not show in the user panel, fixes #454
-    fix Faerie Miscreant trigger to not reference literal 'SN' fixes #508
-    allow 'a' or 'an' in single choice, fixes #490
+  * Mac startup script stopped working since 1.64 (issue #492)
+  * AI unable to grant abilities to creatures during declare attackers step (issue #500)
+  * AI will sometimes sacrifice a permanent as a cost to pump the permanent itself
+  * name of card displayed in user prompt when AI plays megamorph ability (issue #454)
+  * face down creature is not interactive in log (issue #477)
+  * mill message appears before effect message (issue #487)
+  * image_updated property did not work with images for missing cards (issue #501)
+  * incorrect tense in "may" clause of effects (issue #503)
+  * cards that reduce life loss due to damage should not change life total and then set it (issue #512)
+  * Burnout should not allow opponent to pay {1} to prevent countering the spell
+  * Fyndhorn Pollen missing 'Cumulative upkeep {1}'
+  * Kobold Drill Sergeant gave Kobolds +1/+1, should be +0/+1
+  * Form of the Dragon should trigger life gain/loss
+  * Tooth and Nail puts creatures into play before searching for them (issue #460)
+  * Colfenor's Urn doesn't check current toughness (issue #462)
+  * Narcolepsy's log message mention of enchanted permanent is not interactive (issue #489)
+  * Wormfang Turtle removes all player's lands instead of chosen one (issue #490)
+  * Blessed Reversal required a target and did not gain life (issue #491)
+  * Dead-Iron Sledge crashes if it is not equipped when its trigger resolves (issue #494)
+  * Faerie Miscreant's trigger condition incorrectly scripted (issue #508)
 
 - added the following cards:
 Acolyte of the Inferno, Akoum Hellkite, Akoum Stonewaker, Angelic Gift,
@@ -117,13 +117,14 @@ Eldrazi Skyspawner, Eyeless Watcher, Fortified Rampart, From Beyond,
 Furnace Scamp, Herald of the Host, Illusory Gains, Incubator Drone,
 Kalemne's Captain, Karlov of the Ghost Council, Kor Castigator,
 Kozilek's Sentinel, Kudzu, Lich, Mire's Malice, Molten Nursery,
-Murderous Spoils, Nettle Drone, Nissa's Renewal, Omnath, Locus of Rage,
-Ophiomancer, Oran-Rief Invoker, Prison Term, Retreat to Emeria,
-Rising Miasma, Roil Spout, Ruinous Path, Rush of Ice, Sai of the Shinobi,
-Sandstone Bridge, Scatter to the Winds, Searing Rays, Shielded by Faith,
-Spawning Bed, Spell Shrivel, Stasis Snare, Steam Vines, Stormrider Rig,
-Sudden Demise, Tightening Coils, Touch of the Eternal, Touch of the Void,
-Turn Against, Turn to Slag, Tymaret, the Murder King, Warchief Giant
+Murderous Spoils, Nefarious Lich, Nettle Drone, Nissa's Renewal,
+Omnath, Locus of Rage, Ophiomancer, Oran-Rief Invoker, Prison Term,
+Retreat to Emeria, Rising Miasma, Roil Spout, Ruinous Path, Rush of Ice,
+Sai of the Shinobi, Sandstone Bridge, Scatter to the Winds, Searing Rays,
+Shielded by Faith, Spawning Bed, Spell Shrivel, Stasis Snare, Steam Vines,
+Stormrider Rig, Sudden Demise, Tightening Coils, Touch of the Eternal,
+Touch of the Void, Turn Against, Turn to Slag, Tymaret, the Murder King,
+Warchief Giant
 
 Release 1.67 (October 31, 2015)
 ============
