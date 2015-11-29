@@ -67,6 +67,8 @@ Thanks to
 
 Thank you for your support and have fun!
 
+Release 1.69 (TBD)
+============
 
 Release 1.68 (November 29, 2015)
 ============
