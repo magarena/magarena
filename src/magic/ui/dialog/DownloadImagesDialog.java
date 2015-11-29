@@ -21,10 +21,13 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.SwingUtilities;
+import magic.data.MagicIcon;
 import magic.model.MagicCardDefinition;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
+import magic.ui.IconImages;
+import magic.ui.URLUtils;
 import magic.ui.dialog.button.CancelButton;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.downloader.ImageDownloadPanel.DownloaderState;
@@ -115,6 +118,19 @@ public class DownloadImagesDialog
         return btn;
     }
 
+    private JButton getHelpButton() {
+        final JButton btn = new JButton();
+        btn.setIcon(IconImages.getIcon(MagicIcon.MISSING_ICON));
+        btn.setFocusable(false);
+        btn.addActionListener(new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                URLUtils.openURL(URLUtils.URL_WIKI + "UIDownloadImages");
+            }
+        });
+        return btn;
+    }
+
     private JPanel getButtonPanel() {
 
         backgroundButton.setText(UiString.get(_S3));
@@ -122,6 +138,7 @@ public class DownloadImagesDialog
         backgroundButton.addActionListener(this);
 
         final JPanel panel = new JPanel(new MigLayout("insets 0, alignx right, aligny bottom"));
+        panel.add(getHelpButton());
         panel.add(backgroundButton, "w 100%");
         panel.add(getCancelButton());
         return panel;
