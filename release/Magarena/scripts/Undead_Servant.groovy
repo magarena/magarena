@@ -16,14 +16,12 @@
                 .filter(event)
                 .size();
             final MagicPlayer player = event.getPlayer();
-            event.processTarget(game, {
-                game.logAppendValue(player, amount);
-                game.doAction(new PlayTokensAction(
-                    player,
-                    CardDefinitions.getToken("2/2 black Zombie creature token"),
-                    amount
-                ));
-            });
+            game.logAppendValue(player, amount);
+            game.doAction(new PlayTokensAction(
+                player,
+                CardDefinitions.getToken("2/2 black Zombie creature token"),
+                amount
+            ));
         }
     }
 ]
