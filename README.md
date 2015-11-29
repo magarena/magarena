@@ -4,7 +4,7 @@ Homepage: http://magarena.github.io
 
 Forum   : http://www.slightlymagic.net/forum/viewforum.php?f=82
 
-Requires: Java Runtime Environment 7 (http://java.com) or above must be installed on your computer
+Requires: Java Runtime Environment 8 (http://java.com) or above must be installed on your computer
 
 Starting Magarena:
 
