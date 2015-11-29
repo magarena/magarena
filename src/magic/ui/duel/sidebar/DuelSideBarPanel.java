@@ -14,6 +14,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicPlayerZone;
 import magic.ui.IPlayerZoneListener;
 import magic.ui.duel.SwingGameController;
+import magic.ui.duel.GameViewerInfo;
 import magic.ui.duel.player.GamePlayerPanel;
 import magic.ui.duel.player.PlayerZoneButtonsPanel;
 import magic.ui.duel.resolution.DefaultResolutionProfile;
@@ -110,9 +111,9 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
 
     }
 
-    public void doUpdate() {
-        playerCompositePanels[0].getPlayerPanel().updateDisplay(controller.getViewerInfo().getPlayerInfo(false));
-        playerCompositePanels[1].getPlayerPanel().updateDisplay(controller.getViewerInfo().getPlayerInfo(true));
+    public void doUpdate(final GameViewerInfo gameInfo) {
+        playerCompositePanels[0].getPlayerPanel().updateDisplay(gameInfo.getPlayerInfo(false));
+        playerCompositePanels[1].getPlayerPanel().updateDisplay(gameInfo.getPlayerInfo(true));
         gameStatusPanel.update();
         logBookViewer.update();
     }
@@ -148,6 +149,10 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
     public void refreshLayout() {
         setLayoutSlots();
         doSetLayout();
+    }
+
+    public void doFlashLibraryZoneButton(PlayerViewerInfo playerInfo) {
+        getPlayerPanel(playerInfo.player).doFlashLibraryZoneButton();
     }
 
     public void doFlashPlayerHandZoneButton(PlayerViewerInfo playerInfo) {

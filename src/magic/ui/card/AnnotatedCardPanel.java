@@ -36,6 +36,7 @@ import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicObject;
 import magic.model.MagicPermanent;
+import magic.ui.ScreenController;
 import magic.ui.duel.SwingGameController;
 import magic.ui.theme.AbilityIcon;
 import magic.ui.utility.GraphicsUtils;
@@ -59,7 +60,7 @@ public class AnnotatedCardPanel extends JPanel {
     private MagicObject magicObject = null;
     private Timeline fadeInTimeline;
     private float opacity = 1.0f;
-    private final SwingGameController controller;
+    private SwingGameController controller;
     private BufferedImage cardImage;
     private String modifiedPT;
     private String basePT;
@@ -74,10 +75,9 @@ public class AnnotatedCardPanel extends JPanel {
     private final Rectangle containerRect;
     private boolean preferredVisibility = false;
     
-    public AnnotatedCardPanel(final Rectangle containerRect, final SwingGameController controller) {
+    public AnnotatedCardPanel() {
 
-        this.containerRect = containerRect;
-        this.controller = controller;
+        this.containerRect = getWindowRect();
 
         setOpaque(false);
 
@@ -100,6 +100,15 @@ public class AnnotatedCardPanel extends JPanel {
                 infoWindow.setVisible(false);
             }
         });
+        
+        setVisible(false);
+
+    }
+
+    private static Rectangle getWindowRect() {
+        return new Rectangle(
+                    ScreenController.getMainFrame().getLocationOnScreen(),
+                    ScreenController.getMainFrame().getSize());
     }
 
     private void setDelayedVisibilityTimer() {
@@ -348,7 +357,7 @@ public class AnnotatedCardPanel extends JPanel {
     public void setVisible(final boolean isVisible) {
         super.setVisible(isVisible);
         if (controller != null && CONFIG.isGamePausedOnPopup()) {
-            final boolean aiHasPriority = !controller.getGame().getPriorityPlayer().isHuman();
+            final boolean aiHasPriority = controller.getViewerInfo().getPriorityPlayer().isAi();
             controller.setGamePaused(isVisible && aiHasPriority);
         }
     }
@@ -458,6 +467,11 @@ public class AnnotatedCardPanel extends JPanel {
         infoWindow.setLocation(p);
         infoWindow.setAlwaysOnTop(true);
         infoWindow.setVisible(true);
+    }
+
+    public void setController(SwingGameController aController) {
+        this.controller = aController;
+        this.controller.setImageCardViewer(this);
     }
 
 }

@@ -1,5 +1,6 @@
 package magic.ui;
 
+import java.awt.RenderingHints;
 import javax.swing.ImageIcon;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -22,6 +23,14 @@ public final class IconImages {
     private static final Map<Integer, ImageIcon> manaIcons = new HashMap<>();
     private static final Map<MagicIcon, ImageIcon> icons = new HashMap<>();
     private static final Map<String, PlayerAvatar> avatarsMap = new HashMap<>();
+
+    public static final BufferedImage BACK_IMAGE = GraphicsUtils.scale(
+            ImageFileIO.toImg(MagicResources.getImageUrl("card-back.jpg"), null),
+            CardImagesProvider.PREFERRED_CARD_SIZE.width,
+            CardImagesProvider.PREFERRED_CARD_SIZE.height,
+            RenderingHints.VALUE_INTERPOLATION_BILINEAR,
+            true
+    );
 
     // BufferedImages
     public static final BufferedImage MISSING = loadImage("missing.png");

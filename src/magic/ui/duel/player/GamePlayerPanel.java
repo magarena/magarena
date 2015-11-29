@@ -104,6 +104,10 @@ public class GamePlayerPanel extends TexturedPanel implements IChoiceViewer {
         zoneButtonsPanel.doFlashPlayerHandZoneButton();
     }
 
+    public void doFlashLibraryZoneButton() {
+        zoneButtonsPanel.doFlashLibraryZoneButton();
+    }
+
     public void doHighlightPlayerZone(MagicPlayerZone zone, boolean b) {
         zoneButtonsPanel.doHighlightPlayerZone(zone, b);
     }

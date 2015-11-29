@@ -1,80 +1,81 @@
 package magic.ui.duel.animation;
 
-import java.awt.Dimension;
-import java.awt.Point;
-
 import java.awt.Rectangle;
-import magic.model.IUIGameController;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicPlayer;
-import magic.model.MagicPlayerZone;
-import magic.ui.duel.DuelPanel;
 
-public class PlayCardAnimation {
+/**
+ * Animation when playing a card from hand.
+ */
+public class PlayCardAnimation extends CardAnimation {
 
-    private Dimension startSize = new Dimension();
-    private Dimension endSize = new Dimension();
-    private Point startPoint = null;
-    private Point endPoint = null;
-    private final MagicPlayer player;
-    private final DuelPanel gamePanel;
-    private final MagicCardDefinition card;
-    private final IUIGameController controller;
-
-    public PlayCardAnimation(final MagicPlayer player, final MagicCardDefinition card, final DuelPanel gamePanel) {
-        this.player = player;
-        this.card = card;
-        this.gamePanel = gamePanel;
-        this.controller = gamePanel.getController();
+    public PlayCardAnimation(MagicPlayer aPlayer, MagicCardDefinition aCard, GameLayoutInfo layoutInfo) {
+        super(aPlayer, aCard, layoutInfo);
     }
 
-    public Dimension getStartSize() {
-        return startSize;
+    @Override
+    protected Rectangle getStart() {
+        return getLayoutInfo().getHandButtonLayout(getPlayerIndex());
     }
 
-    public Dimension getEndSize() {
-        return endSize;
+    @Override
+    protected Rectangle getEnd() {
+        return getCard().usesStack()
+            ? getLayoutInfo().getStackLayout()
+            : getLayoutInfo().getPermanentsZoneLayout(getPlayerIndex());
     }
 
-    public MagicPlayer getPlayer() {
-        return player;
-    }
+//    /**
+//     *  Draws a one pixel border of choiceColor.
+//     */
+//    private void drawBorderHighlight(Graphics g) {
+//        final Graphics2D g2d=(Graphics2D)g;
+//        g2d.setPaint(Color.RED);
+//        int strokeWidth = 4;
+//        g2d.setStroke(new BasicStroke(strokeWidth));
+//        strokeWidth = strokeWidth / 2;
+//        g2d.drawRect(
+//                startRect.x + strokeWidth,
+//                startRect.y + strokeWidth,
+//                startRect.width - strokeWidth,
+//                startRect.height - strokeWidth);
+//    }
 
-    public Point getStartPoint() {
-        if (startPoint == null) {
-            final Rectangle rect = controller.getPlayerZoneButtonRectangle(player, MagicPlayerZone.HAND, gamePanel);
-            startPoint = rect.getLocation();
-            startSize = rect.getSize();
-        }
-        return startPoint;
-    }
+//    /**
+//     *  Draws a transparent overlay of choiceColor.
+//     */
+//    private void drawTransparentOverlay(final Graphics g) {
+//        final Color choiceColor = ThemeFactory.getInstance().getCurrentTheme().getChoiceColor();
+//        final Graphics2D g2d = (Graphics2D)g;
+//        g2d.setPaint(choiceColor);
+//        g2d.fillRect(
+//                startRect.x - 1,
+//                startRect.y - 1,
+//                startRect.width + 2,
+//                startRect.height + 2);
+//    }
 
-    public Point getEndPoint() {
-        if (endPoint == null) {
-            final Rectangle rect = controller.getStackViewerRectangle(gamePanel);
-            endPoint = rect.getLocation();
-        }
-        return endPoint;
-    }
-
-    public MagicCardDefinition getCard() {
-        return card;
-    }
-
-    public void setStartSize(Dimension cardSize) {
-        startSize = cardSize;
-    }
-
-    public void setStartPoint(Point startPoint) {
-        this.startPoint = startPoint;
-    }
-
-    public void setEndPoint(Point endPoint) {
-        this.endPoint = endPoint;
-    }
-
-    public void setEndSize(Dimension size) {
-        this.endSize = size;
-    }
+//    /**
+//     * If player Hand is visible then start animation from position of the card
+//     * in the Hand otherwise start animation from the Hand icon next to player portrait.
+//     */
+//    private void setAnimationStartPoint(final PlayCardAnimationInfo animation, final MagicPlayer player, final MagicCardDefinition card) {
+//        if (isPlayerHandVisible(player)) {
+//            final ImageCardListViewer handViewer = controller.getPlayerZoneViewer().getImageCardsListViewer();
+//            final Point startPoint = handViewer.getCardPosition(card);
+//            animation.setStartSize(handViewer.getCardSize());
+//            animation.setStartPoint(startPoint);
+//        }
+//    }
+//
+//    /**
+//     * TODO: checking the player index to determine if the Hand is visible is
+//     * not really desirable but it works. The index is a bad code smell. It is
+//     * used to position the player on screen and determine whether a player
+//     * is human or AI (except for an AI v AI game). It seems very arbitrary.
+//     */
+//    private boolean isPlayerHandVisible(final MagicPlayer player) {
+//        return player.getIndex() == 0;
+//    }
 
 }

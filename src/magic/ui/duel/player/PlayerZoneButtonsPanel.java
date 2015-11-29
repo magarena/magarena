@@ -110,6 +110,10 @@ public class PlayerZoneButtonsPanel extends JPanel {
         zoneButtons.get(MagicPlayerZone.HAND).doAlertAnimation();
     }
 
+    void doFlashLibraryZoneButton() {
+        zoneButtons.get(MagicPlayerZone.LIBRARY).doAlertAnimation();
+    }
+
     void doHighlightPlayerZone(MagicPlayerZone zone, boolean b) {
         zoneButtons.get(zone).doHighlight(b);
     }

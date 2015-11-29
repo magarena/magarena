@@ -1,13 +1,12 @@
 package magic.ui.duel;
 
-import magic.translate.UiString;
-import magic.translate.StringContext;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.KeyEventDispatcher;
 import java.awt.KeyboardFocusManager;
 import java.awt.Point;
 import java.awt.Rectangle;
+import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 import java.io.File;
 import java.lang.reflect.InvocationTargetException;
@@ -24,6 +23,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.AbstractAction;
 import javax.swing.JComponent;
 import javax.swing.SwingUtilities;
 import magic.ai.MagicAI;
@@ -50,18 +50,22 @@ import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.choice.MagicPlayChoiceResult;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicEventAction;
 import magic.model.event.MagicPriorityEvent;
 import magic.model.phase.MagicPhaseType;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetNone;
+import magic.translate.StringContext;
+import magic.translate.UiString;
 import magic.ui.IChoiceViewer;
 import magic.ui.IPlayerZoneListener;
 import magic.ui.IconImages;
 import magic.ui.MagicFileChoosers;
 import magic.ui.ScreenController;
 import magic.ui.card.AnnotatedCardPanel;
-import magic.ui.duel.DuelPanel;
+import magic.ui.duel.animation.DrawCardAnimation;
+import magic.ui.duel.animation.MagicAnimation;
+import magic.ui.duel.animation.MagicAnimations;
+import magic.ui.duel.animation.PlayCardAnimation;
 import magic.ui.duel.choice.ColorChoicePanel;
 import magic.ui.duel.choice.ManaCostXChoicePanel;
 import magic.ui.duel.choice.MayChoicePanel;
@@ -69,13 +73,11 @@ import magic.ui.duel.choice.ModeChoicePanel;
 import magic.ui.duel.choice.MulliganChoicePanel;
 import magic.ui.duel.choice.MultiKickerChoicePanel;
 import magic.ui.duel.choice.PlayChoicePanel;
-import magic.ui.duel.PlayerViewerInfo;
 import magic.ui.duel.viewer.PlayerZoneViewer;
 import magic.ui.duel.viewer.UserActionPanel;
-import magic.ui.duel.GameViewerInfo;
 import magic.ui.screen.MulliganScreen;
-import magic.utility.MagicSystem;
 import magic.utility.MagicFileSystem;
+import magic.utility.MagicSystem;
 
 public class SwingGameController implements IUIGameController {
 
@@ -91,6 +93,7 @@ public class SwingGameController implements IUIGameController {
 
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
+    private final DuelLayeredPane duelPane;
     private final DuelPanel gamePanel;
     private final MagicGame game;
     private final AtomicBoolean running = new AtomicBoolean(false);
@@ -106,10 +109,10 @@ public class SwingGameController implements IUIGameController {
     private MagicTarget choiceClicked = MagicTargetNone.getInstance();
     private MagicCardDefinition sourceCardDefinition = MagicCardDefinition.UNKNOWN;
     private final BlockingQueue<Boolean> input = new SynchronousQueue<>();
-    private int gameTurn = 0;
     private GameViewerInfo viewerInfo;
     private PlayerZoneViewer playerZoneViewer;
     private final List<IPlayerZoneListener> playerZoneListeners = new ArrayList<>();
+    private MagicAnimation animation = null;
     
     private static boolean isControlKeyDown = false;
     private static final KeyEventDispatcher keyEventDispatcher = new KeyEventDispatcher() {
@@ -120,11 +123,14 @@ public class SwingGameController implements IUIGameController {
         }
     };
 
-    public SwingGameController(final DuelPanel aGamePanel,final MagicGame aGame) {
-        gamePanel = aGamePanel;
-        game = aGame;
+    public SwingGameController(final DuelLayeredPane aDuelPane, final MagicGame aGame) {
+        this.duelPane = aDuelPane;
+        this.game = aGame;
+        viewerInfo = new GameViewerInfo(game);        
+        gamePanel = duelPane.getDuelPanel();
+        duelPane.getDuelPanel().setController(this);
+        duelPane.getCardViewer().setController(this);
         clearValidChoices();
-        viewerInfo = new GameViewerInfo(game);
 
         setControlKeyMonitor();
     }
@@ -583,35 +589,60 @@ public class SwingGameController implements IUIGameController {
         return viewerInfo;
     }
 
+//    private void debugAnimation(MagicAnimation animation) {
+//        if (animation != null) {
+//            MagicAnimations.debugPrint(animation);
+////            pause(2000);
+//        }
+//    }
+
+    private void doFlashPlayerZoneButton(GameViewerInfo newGameInfo) {
+        if (animation instanceof PlayCardAnimation) {
+            gamePanel.doFlashPlayerHandZoneButton(newGameInfo.getTurnPlayer());
+        } else if (animation instanceof DrawCardAnimation) {
+            gamePanel.doFlashLibraryZoneButton(newGameInfo.getTurnPlayer());
+        }
+    }
+
+    private boolean isReadyToAnimate() {
+        return CONFIG.showGameplayAnimations() && (animation == null || animation.isRunning.get() == false);
+    }
+
+    private void doPlayAnimationAndWait(final GameViewerInfo oldGameInfo, final GameViewerInfo newGameInfo) {
+        if (isReadyToAnimate() == false) {
+            return;
+        }
+        animation = MagicAnimations.getGameplayAnimation(oldGameInfo, newGameInfo, gamePanel);
+        if (animation != null) {
+            animation.isRunning.set(true);
+            SwingUtilities.invokeLater(() -> {
+                doFlashPlayerZoneButton(newGameInfo);
+                duelPane.getAnimationPanel().playAnimation(animation);
+            });
+            while (animation.isRunning.get() == true) {
+                pause(100);
+            }
+        }
+    }
+
     /**
      * Update/render the gui based on the model state.
      */
     @Override
     public void updateGameView() {
+
         assert !SwingUtilities.isEventDispatchThread();
 
-        // update game view DTO to reflect new model state.
+        final GameViewerInfo oldGameInfo = viewerInfo;
         viewerInfo = new GameViewerInfo(game);
 
-        // show New Turn notification (if appropriate & enabled).
-        if (game.getTurn() != gameTurn) {
-            gameTurn = game.getTurn();
-            final boolean isShowingMulliganScreen = CONFIG.showMulliganScreen() && game.getTurn() == 1;
-            if (!isShowingMulliganScreen && CONFIG.getNewTurnAlertDuration() > 0) {
-                gamePanel.doNewTurnNotification(viewerInfo);
-            }
-        }
-
-        // Run before the view state is updated to reflect transition from old to new
-        // model state. Should not return until animations have been completed or cancelled.
-        gamePanel.runAnimation();
-
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                gamePanel.update();
-            }
+        doPlayAnimationAndWait(oldGameInfo, viewerInfo);
+       
+        SwingUtilities.invokeLater(() -> {
+            gamePanel.update(viewerInfo);
         });
+        
+        waitForUIUpdates();
     }
 
     public static String getMessageWithSource(final MagicSource source,final String message) {
@@ -764,25 +795,8 @@ public class SwingGameController implements IUIGameController {
         }
     }
 
-    /**
-     * Capture the event and action associated with an AI player
-     * playing a new card from their library.
-     */
-    private void setAnimationEvent(final MagicEvent event) {
-        if (event.getPlayer().isArtificial() || MagicSystem.isAiVersusAi()) {
-            final MagicEventAction action = event.getEventAction();
-            // action appears to be an instance of an anonymous inner class so "instanceof" does not work.
-            // (see http://stackoverflow.com/questions/17048900/reflection-class-forname-finds-classes-classname1-and-classname2-what-a)
-            final boolean isValidAction = action.getClass().getName().startsWith("magic.model.event.MagicHandCastActivation");
-            if (event.isValid() && isValidAction) {
-                gamePanel.setAnimationEvent(event);
-            }
-        }
-    }
-
     private void executeNextEventOrPhase() {
         if (game.hasNextEvent()) {
-            setAnimationEvent(game.getEvents().peek());
             executeNextEvent();
         } else {
             game.executePhase();
@@ -802,11 +816,12 @@ public class SwingGameController implements IUIGameController {
     }
 
     private void showEndGameMessage() {
+        assert !SwingUtilities.isEventDispatchThread();
         if (!MagicSystem.isAiVersusAi() && !MagicSystem.isDebugMode()) {
             SwingUtilities.invokeLater(new Runnable() {
                 @Override
                 public void run() {
-                    gamePanel.showEndGameMessage();
+                    duelPane.getDialogPanel().showEndGameMessage(SwingGameController.this);
                 }
             });
         }
@@ -1062,4 +1077,18 @@ public class SwingGameController implements IUIGameController {
             }
         }
     }
+
+    AbstractAction getActionKeyPressedAction() {
+        return new AbstractAction() {
+            @Override
+            public void actionPerformed(final ActionEvent event) {
+                if (duelPane.getDialogPanel().isVisible()) {
+                    duelPane.getDialogPanel().setVisible(false);
+                } else {
+                    actionKeyPressed();
+                }
+            }
+        };
+    }
+    
 }

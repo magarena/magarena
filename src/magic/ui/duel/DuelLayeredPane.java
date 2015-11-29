@@ -1,56 +1,38 @@
 package magic.ui.duel;
 
+import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import javax.swing.JLayeredPane;
-import javax.swing.JPanel;
+import magic.model.MagicGame;
 import magic.ui.card.AnnotatedCardPanel;
-import magic.ui.duel.animation.AnimationCanvas;
+import magic.ui.duel.animation.AnimationPanel;
+import magic.ui.duel.dialog.DuelDialogPanel;
 import magic.ui.widget.ZoneBackgroundLabel;
 
 @SuppressWarnings("serial")
 public class DuelLayeredPane extends JLayeredPane {
 
-    private final ZoneBackgroundLabel backgroundLabel;
     private final DuelPanel duelPanel;
-    private final AnimationCanvas animationCanvas;
-    private final JPanel dialogPanel;
-    private final AnnotatedCardPanel cardViewer;
+    private final ZoneBackgroundLabel backgroundLabel;
+    private final AnimationPanel animationPanel;
+    private final AnnotatedCardPanel imageCardViewer;
+    private final DuelDialogPanel dialogPanel;
 
-    public DuelLayeredPane(final DuelPanel duelPanel, final ZoneBackgroundLabel backgroundLabel) {
+    public DuelLayeredPane(final MagicGame aGame) {
 
-        this.backgroundLabel = backgroundLabel;
-        this.duelPanel = duelPanel;
+        this.duelPanel = new DuelPanel(aGame);
 
-        // BOTTOM LAYER : Background image
-        add(backgroundLabel);
-        setLayer(backgroundLabel, 0);
-        backgroundLabel.setLocation(0, 0);
+        backgroundLabel = new ZoneBackgroundLabel();
+        backgroundLabel.setGame(true);
+        duelPanel.setBackgroundLabel(backgroundLabel);
+        
+        animationPanel = new AnimationPanel();
+        dialogPanel = new DuelDialogPanel();       
+        imageCardViewer = new AnnotatedCardPanel();
 
-        // LAYER : duel battlefield and HUD.
-        add(duelPanel);
-        setLayer(duelPanel, 1);
-        duelPanel.setLocation(0, 0);
-
-        // LAYER : animation canvas
-        animationCanvas = duelPanel.getAnimationCanvas();
-        add(animationCanvas);
-        setLayer(animationCanvas, 2);
-        animationCanvas.setLocation(0, 0);
-        animationCanvas.setVisible(false);        
-
-        // LAYER : card popup
-        cardViewer = duelPanel.getImageCardViewer();
-        add(cardViewer);
-        setLayer(cardViewer, 3);
-
-        // TOP LAYER : dialog panel
-        dialogPanel = duelPanel.getDialogPanel();
-        add(dialogPanel);
-        setLayer(dialogPanel, 4);
-        dialogPanel.setLocation(0, 0);
-        dialogPanel.setVisible(false);
+        updateLayout();
 
         this.addComponentListener(new ComponentAdapter() {
             @Override
@@ -58,14 +40,61 @@ public class DuelLayeredPane extends JLayeredPane {
                 resizeComponents();
             }
         });
+
+        setVisible(false);
+
+    }
+
+    private void updateLayout() {
+        removeAll();
+        // game board layers from bottom to top.
+        add(backgroundLabel, new Integer(0));    // background image.
+        add(duelPanel, new Integer(1));          // sidebar and battlefield.
+        add(animationPanel, new Integer(2));     // animations.
+        add(imageCardViewer, new Integer(3));    // card popup.
+        add(dialogPanel, new Integer(4));        // dialogs.
+        revalidate();
     }
 
     private void resizeComponents() {
         final Dimension size = getSize();
-        backgroundLabel.setSize(size);
-        duelPanel.setSize(size);
-        animationCanvas.setSize(size);
-        dialogPanel.setSize(size);
-        duelPanel.resizeComponents();
+        for (Component component : getComponents()) {
+            component.setSize(size);
+        }
     }
+
+    DuelPanel getDuelPanel() {
+        return duelPanel;
+    }
+
+    public void updateView() {
+//        backgroundLabel.setImage(GeneralConfig.getInstance().getTextView() == false);
+        duelPanel.updateView();
+//        setVisible(true);
+    }
+
+    @Override
+    public void requestFocus() {
+        if (duelPanel != null) {
+            duelPanel.requestFocus();
+        }
+    }
+
+    @Override
+    public boolean requestFocusInWindow() {
+        return duelPanel.requestFocusInWindow();
+    }
+
+    public DuelDialogPanel getDialogPanel() {
+        return dialogPanel;
+    }
+
+    AnimationPanel getAnimationPanel() {
+        return animationPanel;
+    }
+
+    AnnotatedCardPanel getCardViewer() {
+        return imageCardViewer;
+    }
+
 }
