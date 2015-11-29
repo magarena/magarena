@@ -68,8 +68,62 @@ Thanks to
 Thank you for your support and have fun!
 
 
-Release 1.68 (TBD)
+Release 1.68 (November 29, 2015)
 ============
+lodici
+melvin
+PalladiaMors
+ShawnieBoy
+
+    move choice indicator right after choice description, fixes #507
+    On import, reset image download dates in general.cfg to current date minus 60 days. This should catch any missed "image_updated" updates in most cases (see #481).
+    add support for Experience counters
+    Override default card image by adding image with the same name to '<images>/custom' folder.
+    adds a "Gameplay Report" option to the game menu (closes #137).
+    use BFZ full-art for basic lands
+    Update load saved game to cater for multiple directories (see discussion at end of issue #500).
+
+- fixed the following bugs:
+    fix: Burnout was using 'Counter unless opponent pays {1}'
+    fix: Fyndhorn Pollen was missing 'Cumulative upkeep {1}'
+    fix: Kobold Drill Sergeant was giving Kobolds +1/+1 instead of +0/+1
+    extend pump timing to include declare attackers phase, as you may want to give evasion abilities, fixes #500
+    use RN instead of constructing the text manually so that name is interactive in log/stack, fixes #489
+    image_updated property should now work properly with missing images (fixes #501).
+    make 'face-down creature' interactive in log, fixes #477
+    replace MagicWhenOtherPutIntoGraveyardTrigger with MagicWhenOtherDiesTrigger so trigger gets reference to died permanent, fixes #462
+    fix mill message appearing before event message, addresses #487
+    add First pass of 'May tense' for log messages #503
+    replace call to getEquippedCreature in executeEvent with getRefPermanentList, fixes #494
+    change 'damage that would reduce your life total' to use IfLifeWouldChangeTrigger, fixes #512
+    Fix: Form of the Dragon should still trigger life gain/loss
+    add AI Activation restriction to sacrifice for source-buff, Prevents source-sacrifice for source-buff
+    remove command file, fix startup command in launcher to use jar instead of exe, fixes #492
+    remove obsolete image update code from download dialog (see #481 for discussion on replacement).
+    fix search effect occuring after putting from hand for Tooth and Nail, fixes #460
+    correct targeting and filter for Blessed Reversal, fixes #491
+    use the face down spell as the source instead of the card so that the card name does not show in the user panel, fixes #454
+    fix Faerie Miscreant trigger to not reference literal 'SN' fixes #508
+    allow 'a' or 'an' in single choice, fixes #490
+
+- added the following cards:
+Acolyte of the Inferno, Akoum Hellkite, Akoum Stonewaker, Angelic Gift,
+Banshee of the Dread Choir, Blastfire Bolt, Blisterpod, Boiling Earth,
+Broodbirth Viper, Brood Butcher, Brood Monitor, Caller of the Pack,
+Call the Scions, Carrier Thrall, Carry Away, Catacomb Sifter,
+Cloven Casting, Clutch of Currents, Coastal Discovery, Complete Disregard,
+Deathless Behemoth, Defiant Bloodlord, Drowner of Hope, Earthen Arms,
+Eldrazi Skyspawner, Eyeless Watcher, Fortified Rampart, From Beyond,
+Furnace Scamp, Herald of the Host, Illusory Gains, Incubator Drone,
+Kalemne's Captain, Karlov of the Ghost Council, Kor Castigator,
+Kozilek's Sentinel, Kudzu, Lich, Mire's Malice, Molten Nursery,
+Murderous Spoils, Nettle Drone, Nissa's Renewal, Omnath, Locus of Rage,
+Ophiomancer, Oran-Rief Invoker, Prison Term, Retreat to Emeria,
+Rising Miasma, Roil Spout, Ruinous Path, Rush of Ice, Sai of the Shinobi,
+Sandstone Bridge, Scatter to the Winds, Searing Rays, Shielded by Faith,
+Spawning Bed, Spell Shrivel, Stasis Snare, Steam Vines, Stormrider Rig,
+Sudden Demise, Tightening Coils, Touch of the Eternal, Touch of the Void,
+Turn Against, Turn to Slag, Tymaret, the Murder King, Warchief Giant
 
 Release 1.67 (October 31, 2015)
 ============
