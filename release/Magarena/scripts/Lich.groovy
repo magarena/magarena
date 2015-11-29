@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "PN\$ loses life equal to his or her life total."
+                "PN loses life equal to his or her life total."
             );
         }
         @Override
@@ -36,13 +36,14 @@
                 amount = act.getLifeChange();
                 act.setLifeChange(0);
                 return new MagicEvent(
-                        permanent,
-                        amount,
-                        this,
-                        "PN draws RN cards."
-                    );
+                    permanent,
+                    amount,
+                    this,
+                    "PN draws RN cards."
+                );
+            } else {
+                return MagicEvent.NONE;
             }
-            return MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -74,7 +75,7 @@
             if (sac.isSatisfied()) {
                 game.addEvent(sac);
             } else {
-                game.doAction(new LoseGameAction(event.getPlayer()," lost the game because of not being able to Sacrifice enough nontoken permanents."))
+                game.doAction(new LoseGameAction(event.getPlayer()," lost the game because of not being able to sacrifice enough nontoken permanents."))
             }
         }
     },
@@ -83,7 +84,7 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MoveCardAction act) {
             if (act.from(MagicLocationType.Battlefield) && act.to(MagicLocationType.Graveyard)) {
-                game.doAction(new LoseGameAction(permanent.getController()," lost the game because of Lich entering the Graveyard."))
+                game.doAction(new LoseGameAction(permanent.getController()," lost the game because of Lich entering the graveyard."))
             }
             return MagicEvent.NONE;
         }
