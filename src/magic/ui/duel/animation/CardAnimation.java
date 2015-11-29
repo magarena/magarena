@@ -100,14 +100,28 @@ abstract class CardAnimation extends MagicAnimation {
 //    }
 
     private void drawCardShadow(Graphics g) {
-        final int SHADOW = 6;
-        g.setColor(SHADOW_COLOR);
-        g.fillRect(
-            imageBounds.x + SHADOW,
-            imageBounds.y + SHADOW,
-            imageScaler.getImage().getWidth(null),
-            imageScaler.getImage().getHeight(null)
-        );
+        if (AnimationFx.isOn(AnimationFx.CARD_SHADOW)) {
+            final int SHADOW = 6;
+            g.setColor(SHADOW_COLOR);
+            g.fillRect(
+                imageBounds.x + SHADOW,
+                imageBounds.y + SHADOW,
+                imageScaler.getImage().getWidth(null),
+                imageScaler.getImage().getHeight(null)
+            );
+        }
+    }
+
+    private void drawArrow(Graphics g) {
+        if (drawArrow && AnimationFx.isOn(AnimationFx.FROM_ARROW)) {
+            ArrowBuilder.drawArrow(g, getStart(), imageBounds);
+        }
+    }
+
+    private boolean animateCardFlip() {
+        return AnimationFx.isOn(AnimationFx.FLIP_CARD)
+            && timelines[0] != null
+            && timelines[0].getState() == Timeline.TimelineState.PLAYING_FORWARD;
     }
 
     @Override
@@ -127,13 +141,11 @@ abstract class CardAnimation extends MagicAnimation {
 //        }
 
         if (isPreviewTimelineRunning()) {
-            if (drawArrow) {
-                ArrowBuilder.drawArrow(g, getStart(), imageBounds);
-            }
+            drawArrow(g);
             drawCardShadow(g);
         }
 
-        if (timelines[0] != null && timelines[0].getState() == Timeline.TimelineState.PLAYING_FORWARD) {
+        if (animateCardFlip()) {
             final int w = Math.abs((int)(Math.cos(tRot * 3.141592653589793D) * imageBounds.width));
             g.drawImage(
                 tRot > 0.5f ? imageScaler.getImage() : backImageScaler.getImage(),

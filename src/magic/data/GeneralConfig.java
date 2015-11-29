@@ -12,6 +12,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
+import magic.ui.duel.animation.AnimationFx;
 import magic.ui.message.MessageStyle;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
@@ -72,6 +73,7 @@ public class GeneralConfig {
     private static final String UI_SOUND_VOLUME = "uiSoundVolume";
     private static final String TRANSLATION = "translation";
     private static final String LOG_MESSAGE_STYLE = "logMessageStyle";
+    private static final String ANIMATION_FLAGS = "animationFlags";
 
     private static final int DEFAULT_LEFT=-1;
     private static final int DEFAULT_TOP=0;
@@ -644,6 +646,7 @@ public class GeneralConfig {
         uiSoundVolume = Integer.parseInt(properties.getProperty(UI_SOUND_VOLUME, "" + DEFAULT_SOUND_VOLUME));
         translation = properties.getProperty(TRANSLATION, DEFAULT_TRANSLATION);
         logMessageStyle = MessageStyle.valueOf(properties.getProperty(LOG_MESSAGE_STYLE, MessageStyle.PLAIN.name()));
+        AnimationFx.setFlags(Integer.parseInt(properties.getProperty(ANIMATION_FLAGS, "" + AnimationFx.getFlags())));
     }
 
     public void load() {
@@ -696,6 +699,7 @@ public class GeneralConfig {
         properties.setProperty(UI_SOUND_VOLUME, String.valueOf(uiSoundVolume));
         properties.setProperty(TRANSLATION, translation);
         properties.setProperty(LOG_MESSAGE_STYLE, logMessageStyle.name());
+        properties.setProperty(ANIMATION_FLAGS, String.valueOf(AnimationFx.getFlags()));
     }
 
     public void save() {

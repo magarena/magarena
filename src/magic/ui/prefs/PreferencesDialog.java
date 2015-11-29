@@ -13,7 +13,6 @@ import java.awt.event.WindowListener;
 import java.io.FileNotFoundException;
 import java.net.InetSocketAddress;
 import java.net.Proxy;
-import java.text.ParseException;
 import javax.swing.AbstractButton;
 import javax.swing.BorderFactory;
 import javax.swing.DefaultComboBoxModel;
@@ -41,10 +40,8 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import javax.swing.text.NumberFormatter;
 import magic.data.GeneralConfig;
-import magic.data.MagicIcon;
 import magic.translate.UiString;
 import magic.ui.CachedImagesProvider;
-import magic.ui.IconImages;
 import magic.ui.URLUtils;
 import magic.ui.CardImagesProvider;
 import magic.ui.MagicFrame;
@@ -103,7 +100,6 @@ public class PreferencesDialog
     private static final String _S35 = "Pauses the game while the popup is open.";
     private static final String _S36 = "The path for the images directory is invalid!";
     private static final String _S37 = "Proxy settings are invalid!";
-    private static final String _S38 = "One or more spinner values are invalid - %s";
     private static final String _S41 = "Highlight";
     private static final String _S42 = "none";
     private static final String _S43 = "overlay";
@@ -130,16 +126,6 @@ public class PreferencesDialog
     private static final String _S65 = "Location of the \"cards\" and \"tokens\" directories which contain downloaded card and token images respectively. Right click to open in file explorer.";
     private static final String _S66 = "Card Images Directory";
     private static final String _S68 = "Images";
-    private static final String _S69 = "Visual Cues";
-    private static final String _S70 = "Play animations";
-    private static final String _S71 = "Turn off animations to speed up gameplay but it will make it harder to follow the action. Left-click, Spacebar or Enter cancels the card preview animation.";
-    private static final String _S72 = "Display new Turn announcement for";
-    private static final String _S73 = "msecs";
-    private static final String _S74 = "Pauses the game for the specified duration at the start of each turn. Set to zero to disable (1000 millisecs = 1 second).";
-    private static final String _S75 = "Preview land card for";
-    private static final String _S76 = "When the AI plays a land card, this setting determines how long it should be displayed at full size (1000 millisecs = 1 second).";
-    private static final String _S77 = "Preview non-land card for";
-    private static final String _S78 = "When the AI plays a non-land card, this setting determines how long it should be displayed at full size (1000 millisecs = 1 second).";
     private static final String _S79 = "Preferences";
     private static final String _S80 = "There is a problem reading the translation file.";
     private static final String _S81 = "Please ensure the file is encoded as 'UTF-8 without BOM'.";
@@ -174,11 +160,7 @@ public class PreferencesDialog
     private JCheckBox mulliganScreenCheckbox;
     private JCheckBox missingCardDataCheckbox;
     private DirectoryChooser imagesFolderChooser;
-    private JCheckBox animateGameplayCheckBox;
     private JCheckBox customBackgroundCheckBox;
-    private JSpinner newTurnAlertSpinner;
-    private JSpinner landAnimationSpinner;
-    private JSpinner nonLandAnimationSpinner;
     private JCheckBox splitViewDeckEditorCheckBox;
     private JCheckBox popupScaleContextCheckbox;
     private SliderPanel popupScaleSlider;
@@ -188,6 +170,7 @@ public class PreferencesDialog
     private ColorButton rollOverColorButton;
     private JSlider uiVolumeSlider;
     private final TranslationPanel langPanel = new TranslationPanel();
+    private final AnimationsPanel animationsPanel;
 
     private final JLabel hintLabel = new JLabel();
     private boolean isProxyUpdated = false;
@@ -209,9 +192,10 @@ public class PreferencesDialog
 
         this.frame = frame;
 
+        animationsPanel = new AnimationsPanel(this);
+
         hintLabel.setVerticalAlignment(SwingConstants.TOP);
         hintLabel.setFont(new Font("SansSerif", Font.ITALIC, 12));
-        hintLabel.setIcon(IconImages.getIcon(MagicIcon.MISSING_ICON));
         hintLabel.setVerticalTextPosition(SwingConstants.TOP);
         // hint label replaces tooltips.
         ToolTipManager.sharedInstance().setEnabled(false);
@@ -441,6 +425,7 @@ public class PreferencesDialog
     }
 
     private void saveSettings() {
+        animationsPanel.saveSettings();
         config.setTheme(themeComboBox.getItemAt(themeComboBox.getSelectedIndex()));
         config.setHighlight(highlightComboBox.getItemAt(highlightComboBox.getSelectedIndex()));
         config.setSound(soundCheckBox.isSelected());
@@ -454,10 +439,6 @@ public class PreferencesDialog
         config.setMessageDelay(messageDelaySlider.getValue());
         config.setMulliganScreenActive(mulliganScreenCheckbox.isSelected());
         config.setCustomBackground(customBackgroundCheckBox.isSelected());
-        config.setAnimateGameplay(animateGameplayCheckBox.isSelected());
-        config.setNewTurnAlertDuration((int) newTurnAlertSpinner.getValue());
-        config.setLandPreviewDuration((int) landAnimationSpinner.getValue());
-        config.setNonLandPreviewDuration((int) nonLandAnimationSpinner.getValue());
         config.setIsCardPopupScaledToScreen(popupScaleContextCheckbox.isSelected());
         config.setCardPopupScale(popupScaleSlider.getValue() / 100d);
         config.setIsUiSound(uiSoundCheckBox.isSelected());
@@ -552,14 +533,6 @@ public class PreferencesDialog
                 ScreenController.showWarningMessage(UiString.get(_S37));
                 return false;
             }
-        }
-        try {
-            newTurnAlertSpinner.commitEdit();
-            landAnimationSpinner.commitEdit();
-            nonLandAnimationSpinner.commitEdit();
-        } catch (ParseException ex) {
-            ScreenController.showWarningMessage(UiString.get(_S38, ex.getMessage()));
-            return false;
         }
         return true;
     }
@@ -790,80 +763,8 @@ public class PreferencesDialog
         final JTabbedPane tabbedPane = new JTabbedPane();
         tabbedPane.addTab(UiString.get(_S3), getGameplaySettingsPanel1());
         tabbedPane.addTab(UiString.get(_S68), getGameplaySettingsPanel2());
-        tabbedPane.addTab(UiString.get(_S69), getVisualCueSettings());
+        tabbedPane.addTab(UiString.get("Animations"), animationsPanel);
         return tabbedPane;
-    }
-
-    private JPanel getVisualCueSettings() {
-
-        animateGameplayCheckBox = new JCheckBox(UiString.get(_S70), config.getAnimateGameplay());
-        animateGameplayCheckBox.setToolTipText(UiString.get(_S71));
-        animateGameplayCheckBox.setFocusable(false);
-        animateGameplayCheckBox.addMouseListener(this);
-        animateGameplayCheckBox.addChangeListener(new ChangeListener() {
-            @Override
-            public void stateChanged(ChangeEvent e) {
-                landAnimationSpinner.setEnabled(animateGameplayCheckBox.isSelected());
-                nonLandAnimationSpinner.setEnabled(animateGameplayCheckBox.isSelected());
-            }
-        });
-
-        // layout components
-        final JPanel mainPanel = new JPanel(new MigLayout("flowy, insets 16, gapy 10"));
-        mainPanel.add(animateGameplayCheckBox);
-        mainPanel.add(getLandAnimationPanel(), "w 100%");
-        mainPanel.add(getNonLandAnimationPanel(), "w 100%");
-        mainPanel.add(getnewTurnAlertPanel(), "w 100%");
-        return mainPanel;
-
-    }
-
-    private JPanel getnewTurnAlertPanel() {
-        newTurnAlertSpinner = new JSpinner(new SpinnerNumberModel(config.getNewTurnAlertDuration(), 0, 10000, 100));
-        // allow only numeric characters to be recognised.
-        newTurnAlertSpinner.setEditor(new JSpinner.NumberEditor(newTurnAlertSpinner, "#"));
-        final JFormattedTextField txt1 = ((JSpinner.NumberEditor) newTurnAlertSpinner.getEditor()).getTextField();
-        ((NumberFormatter) txt1.getFormatter()).setAllowsInvalid(false);
-        //
-        final JPanel panel = new JPanel(new MigLayout("insets 0"));
-        panel.add(new JLabel(UiString.get(_S72)));
-        panel.add(newTurnAlertSpinner, "w 70!");
-        panel.add(new JLabel(UiString.get(_S73)));
-        panel.setToolTipText(UiString.get(_S74));
-        panel.addMouseListener(this);
-        return panel;
-    }
-
-    private JPanel getLandAnimationPanel() {
-        landAnimationSpinner = new JSpinner(new SpinnerNumberModel(config.getLandPreviewDuration(), 500, 20000, 100));
-        // allow only numeric characters to be recognised.
-        landAnimationSpinner.setEditor(new JSpinner.NumberEditor(landAnimationSpinner, "#"));
-        final JFormattedTextField txt1 = ((JSpinner.NumberEditor) landAnimationSpinner.getEditor()).getTextField();
-        ((NumberFormatter) txt1.getFormatter()).setAllowsInvalid(false);
-        //
-        final JPanel panel = new JPanel(new MigLayout("insets 0"));
-        panel.add(new JLabel(UiString.get(_S75)));
-        panel.add(landAnimationSpinner, "w 70!");
-        panel.add(new JLabel(UiString.get(_S73)));
-        panel.setToolTipText(UiString.get(_S76));
-        panel.addMouseListener(this);
-        return panel;
-    }
-
-    private JPanel getNonLandAnimationPanel() {
-        nonLandAnimationSpinner = new JSpinner(new SpinnerNumberModel(config.getNonLandPreviewDuration(), 1000, 20000, 100));
-        // allow only numeric characters to be recognised.
-        nonLandAnimationSpinner.setEditor(new JSpinner.NumberEditor(nonLandAnimationSpinner, "#"));
-        final JFormattedTextField txt1 = ((JSpinner.NumberEditor) nonLandAnimationSpinner.getEditor()).getTextField();
-        ((NumberFormatter) txt1.getFormatter()).setAllowsInvalid(false);
-        //
-        final JPanel panel = new JPanel(new MigLayout("insets 0"));
-        panel.add(new JLabel(UiString.get(_S77)));
-        panel.add(nonLandAnimationSpinner, "w 70!");
-        panel.add(new JLabel(UiString.get(_S73)));
-        panel.setToolTipText(UiString.get(_S78));
-        panel.addMouseListener(this);
-        return panel;
     }
 
     public boolean isRestartRequired() {

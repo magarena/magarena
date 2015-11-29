@@ -1,0 +1,113 @@
+package magic.ui.prefs;
+
+import java.awt.Component;
+import java.awt.event.MouseListener;
+import javax.swing.JCheckBox;
+import javax.swing.JPanel;
+import javax.swing.event.ChangeEvent;
+import magic.data.GeneralConfig;
+import magic.translate.UiString;
+import magic.ui.widget.SliderPanel;
+import net.miginfocom.swing.MigLayout;
+
+@SuppressWarnings("serial")
+class AnimationsPanel extends JPanel {
+
+    // translatable strings.
+    private static final String _S70 = "Play animations";
+    private static final String _S71 = "Turning animations off will speed up gameplay but make it harder to follow the action.";
+    
+    private final static GeneralConfig CONFIG = GeneralConfig.getInstance();
+
+    private final JCheckBox animateCheckBox;
+    private final JPanel subPanel;
+    private final AnimationFlagsPanel flagsPanel;
+    private final SliderPanel landPreviewSlider;
+    private final SliderPanel nonlandPreviewSlider;
+    private final SliderPanel newTurnAlertSlider;
+
+    AnimationsPanel(final MouseListener aListener) {
+
+        flagsPanel = new AnimationFlagsPanel(aListener);
+        landPreviewSlider = getLandPreviewSlider(aListener);
+        nonlandPreviewSlider = getNonLandPreviewSlider(aListener);
+        newTurnAlertSlider = getNewTurnAlertSlider(aListener);
+        subPanel = getAnimationSubPanel();
+        animateCheckBox = getAnimateCheckbox(aListener, subPanel);
+        
+        setLayout(new MigLayout("flowy, insets 16, gapy 6"));
+        add(animateCheckBox);
+        add(subPanel, "w 100%");
+
+    }
+
+    private JPanel getAnimationSubPanel() {
+        final JPanel panel = new SubPanel();
+        panel.setEnabled(CONFIG.getAnimateGameplay());
+        return panel;
+    }
+    
+    private JCheckBox getAnimateCheckbox(MouseListener aListener, JPanel panel) {
+        final JCheckBox cb = new JCheckBox(UiString.get(_S70), CONFIG.getAnimateGameplay());
+        cb.setToolTipText(UiString.get(_S71));
+        cb.setFocusable(false);
+        cb.addMouseListener(aListener);
+        cb.addChangeListener((ChangeEvent e) -> {
+            panel.setEnabled(animateCheckBox.isSelected());
+        });
+        return cb;
+    }
+
+    private SliderPanel getNewTurnAlertSlider(MouseListener aListener) {
+        final SliderPanel sp = new SliderPanel(UiString.get("New turn message:"), 0, 10, 1, CONFIG.getNewTurnAlertDuration() / 1000);
+        sp.setToolTipText(UiString.get("Displays a message at the beginning of each turn for the specified duration (in seconds). Left-click or space key during game to cancel. Set to zero to turn off completely."));
+        sp.addMouseListener(aListener);
+        sp.setFontBold(false);
+        return sp;
+    }
+    
+    private SliderPanel getNonLandPreviewSlider(MouseListener aListener) {
+        final SliderPanel sp = new SliderPanel(UiString.get("Non-land preview:"), 1, 20, 1, CONFIG.getNonLandPreviewDuration() / 1000);
+        sp.setToolTipText(UiString.get("When playing a non-land card, this setting determines how long (in seconds) it should be displayed at full size. Left-click or space key during game to cancel preview."));
+        sp.addMouseListener(aListener);
+        sp.setFontBold(false);
+        return sp;
+    }
+
+    private SliderPanel getLandPreviewSlider(MouseListener aListener) {
+        final SliderPanel sp = new SliderPanel(UiString.get("Land preview:"), 1, 20, 1, CONFIG.getLandPreviewDuration() / 1000);
+        sp.setToolTipText(UiString.get("When playing a land card, this setting determines how long (in seconds) it should be displayed at full size. Left-click or space key during game to cancel preview."));
+        sp.addMouseListener(aListener);
+        sp.setFontBold(false);
+        return sp;
+    }
+
+    void saveSettings() {
+        CONFIG.setAnimateGameplay(animateCheckBox.isSelected());
+        CONFIG.setNewTurnAlertDuration(newTurnAlertSlider.getValue() * 1000);
+        CONFIG.setLandPreviewDuration(landPreviewSlider.getValue() * 1000);
+        CONFIG.setNonLandPreviewDuration(nonlandPreviewSlider.getValue() * 1000);
+        flagsPanel.saveSettings();
+    }
+
+    private class SubPanel extends JPanel {
+
+        SubPanel() {
+            setLayout(new MigLayout("flowy, insets 4 20 0 0, gapy 6"));
+            add(flagsPanel, "w 100%");
+            add(landPreviewSlider, "w 100%, gaptop 6");
+            add(nonlandPreviewSlider, "w 100%");
+            add(newTurnAlertSlider, "w 100%");
+        }
+
+        @Override
+        public void setEnabled(boolean b) {
+            for (Component c : getComponents()) {
+                c.setEnabled(b);
+            }
+            super.setEnabled(b);
+        }
+
+    }
+    
+}

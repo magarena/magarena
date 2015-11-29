@@ -22,15 +22,15 @@ public class MagicAnimations {
         final GameViewerInfo newGameInfo,
         final DuelPanel gamePanel) {
 
-        if (isDrawCardEvent(newGameInfo)) {
+        if (AnimationFx.isOn(AnimationFx.DRAW_CARD) && isDrawCardEvent(newGameInfo)) {
             return getDrawCardAnimation(oldGameInfo, newGameInfo, gamePanel);
         }
 
-        if (isPlayCardEvent(newGameInfo)) {
+        if (AnimationFx.isOn(AnimationFx.PLAY_CARD) && isPlayCardEvent(newGameInfo)) {
             return getPlayCardAnimationInfo(oldGameInfo, newGameInfo, gamePanel);
         }
 
-        if (isNewTurnEvent(oldGameInfo, newGameInfo)) {
+        if (AnimationFx.isOn(AnimationFx.NEW_TURN_MSG) && isNewTurnEvent(oldGameInfo, newGameInfo)) {
             return getNewTurnAnimation(newGameInfo, gamePanel);
         }
 

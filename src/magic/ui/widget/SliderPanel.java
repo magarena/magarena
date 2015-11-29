@@ -1,8 +1,11 @@
 package magic.ui.widget;
 
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JSlider;
@@ -36,12 +39,26 @@ public class SliderPanel extends JPanel implements ChangeListener {
         slider.setPaintTicks(false);
         slider.setSnapToTicks(snapToTick);
         slider.setMajorTickSpacing(spacing);
+        slider.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                dispatchEvent(e);
+            }
+            @Override
+            public void mouseExited(MouseEvent e) {
+                dispatchEvent(e);
+            }
+        });
 
         setLayout(new MigLayout("insets 0"));
         add(titleLabel);
         add(slider, "w 100%");
         add(valueLabel);
 
+    }
+
+    public void setFontBold(boolean b) {
+        titleLabel.setFont(titleLabel.getFont().deriveFont(b ? Font.BOLD : Font.PLAIN));
     }
 
     public SliderPanel(final String title ,final int min,final int max,final int spacing,final int value) {
@@ -64,6 +81,20 @@ public class SliderPanel extends JPanel implements ChangeListener {
     @Override
     public void stateChanged(final ChangeEvent e) {
         valueLabel.setText(Integer.toString(slider.getValue()));
+    }
+
+    @Override
+    public void setEnabled(boolean b) {
+        for (Component c : getComponents()) {
+            c.setEnabled(b);
+        }
+        super.setEnabled(b);
+    }
+
+    @Override
+    public void setToolTipText(String text) {
+        super.setToolTipText(text);
+        slider.setToolTipText(text);
     }
 
 }
