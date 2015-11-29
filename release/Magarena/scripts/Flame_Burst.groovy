@@ -12,11 +12,17 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int amount = cardName("Flame Burst")
+            final int flame = cardName("Flame Burst")
                 .from(MagicTargetType.Graveyard)
                 .from(MagicTargetType.OpponentsGraveyard)
                 .filter(event)
-                .size()+2;
+                .size();
+            final int pardic = cardName("Pardic Firecat")
+                .from(MagicTargetType.Graveyard)
+                .from(MagicTargetType.OpponentsGraveyard)
+                .filter(event)
+                .size();
+            final int amount = flame + pardic + 2;
             event.processTarget(game, {
                 game.logAppendX(event.getPlayer(),amount);
                 game.doAction(new DealDamageAction(event.getSource(),it,amount));
