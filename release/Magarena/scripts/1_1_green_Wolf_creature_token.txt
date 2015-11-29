@@ -1,0 +1,10 @@
+name=1/1 green Wolf creature token
+token=Wolf
+image=http://cdn.staticneo.com/w/mtg/d/d1/Wolf1.jpg
+value=1
+type=Creature
+subtype=Wolf
+color=g
+pt=1/1
+requires_groovy_code
+oracle=This creature gets +1/+1 for each card named Sound the Call in each graveyard.
