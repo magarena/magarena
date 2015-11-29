@@ -12,11 +12,17 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final int amount = cardName("Muscle Burst")
+            final int muscle = cardName("Muscle Burst")
                 .from(MagicTargetType.Graveyard)
                 .from(MagicTargetType.OpponentsGraveyard)
                 .filter(event)
-                .size()+3;
+                .size();
+            final int diligent = cardName("Diligent Farmhand")
+                .from(MagicTargetType.Graveyard)
+                .from(MagicTargetType.OpponentsGraveyard)
+                .filter(event)
+                .size();
+            final int amount = muscle + diligent + 3;
             event.processTargetPermanent(game, {
                 game.logAppendX(event.getPlayer(),amount);
                 game.doAction(new ChangeTurnPTAction(it,amount,amount));
