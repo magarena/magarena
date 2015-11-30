@@ -23,7 +23,7 @@ import org.pushingpixels.trident.ease.Spline;
 
 abstract class CardAnimation extends MagicAnimation {
 
-    protected static final int ZOOM_DURATION = 1000; //650; // milliseconds
+    protected static final int ZOOM_DURATION = 800; // milliseconds
     protected static final Color SHADOW_COLOR = new Color(0, 0, 0, 100);
 
     private static final ImageScaler backImageScaler;
