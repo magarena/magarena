@@ -74,6 +74,8 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
 
     @Override
     public void showOptionsMenuOverlay() {
+        if (duelPane == null)
+            return;
         if (duelPane.getDialogPanel().isVisible()) {
             duelPane.getDialogPanel().setVisible(false);
         } else {
