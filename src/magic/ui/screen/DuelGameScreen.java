@@ -1,5 +1,6 @@
 package magic.ui.screen;
 
+import java.awt.Graphics;
 import java.awt.event.ActionEvent;
 import java.util.concurrent.ExecutionException;
 import javax.swing.AbstractAction;
@@ -16,6 +17,7 @@ import magic.ui.duel.SwingGameController;
 import magic.ui.duel.DuelLayeredPane;
 import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.screen.widget.MenuPanel;
+import magic.ui.widget.GameLoadingMessage;
 import magic.utility.MagicSystem;
 
 @SuppressWarnings("serial")
@@ -31,34 +33,14 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
     private static final String _S8 = "Resume game";
     private static final String _S9 = "Gameplay Report";
 
-    private final static GeneralConfig config = GeneralConfig.getInstance();
+    private static final GeneralConfig config = GeneralConfig.getInstance();
 
     private DuelLayeredPane duelPane;
     private SwingGameController controller;
+    private final GameLoadingMessage loadingMessage = new GameLoadingMessage();
 
     public DuelGameScreen(final MagicDuel duel) {
-        
-        new SwingWorker<MagicGame, Void>() {
-            @Override
-            protected MagicGame doInBackground() throws Exception {
-                config.setTextView(false);
-                return duel.nextGame();
-            }
-            @Override
-            protected void done() {
-                try {
-                    setContent(getScreenContent(get()));
-                    if (!config.showMulliganScreen() || MagicSystem.isAiVersusAi()) {
-                        duelPane.setVisible(true);
-                        quickFixSpaceKeyShortcut();
-                    }
-                } catch (InterruptedException | ExecutionException e1) {
-                    throw new RuntimeException(e1);
-                }
-                startGameThread();
-            }
-        }.execute();
-
+        new StartupWorker(duel).execute();
     }
 
     // CTR - called when using -DtestGame=X argument.
@@ -204,6 +186,48 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
      */
     private void quickFixSpaceKeyShortcut() {
         duelPane.requestFocusInWindow();
+    }
+
+    @Override
+    protected void paintComponent(Graphics g) {
+        loadingMessage.render(g, getSize());
+        super.paintComponent(g);
+    }
+
+    private final class StartupWorker extends SwingWorker<MagicGame, Void> {
+
+        private final static int MINWAIT = 3000; // millisecs
+        private final MagicDuel duel;
+
+        public StartupWorker(final MagicDuel aDuel) {
+            this.duel = aDuel;
+        }
+
+        @Override
+        protected MagicGame doInBackground() throws Exception {
+            final long start_time = System.currentTimeMillis();
+            config.setTextView(false);
+            final MagicGame game = duel.nextGame();
+            final long duration = System.currentTimeMillis() - start_time;
+            Thread.sleep(duration < MINWAIT ? MINWAIT - duration : 1);
+            return game;
+        }
+
+        @Override
+        protected void done() {
+            try {
+                setContent(getScreenContent(get()));
+                if (!config.showMulliganScreen() || MagicSystem.isAiVersusAi()) {
+                    duelPane.setVisible(true);
+                    quickFixSpaceKeyShortcut();
+                }
+            } catch (InterruptedException | ExecutionException e1) {
+                throw new RuntimeException(e1);
+            }
+            startGameThread();
+            loadingMessage.setEnabled(false);
+        }
+
     }
 
 }
