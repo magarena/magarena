@@ -59,8 +59,6 @@ public class GeneralConfig {
     private static final String LAND_PREVIEW_DURATION = "landPreviewDuration";
     private static final String NONLAND_PREVIEW_DURATION = "nonLandPreviewDuration";
     private static final String SPLITVIEW_DECKEDITOR = "splitViewDeckEditor";
-    private static final String CARD_POPUP_SCALE = "cardPopupScale";
-    private static final String SCALE_CARD_POPUP_TO_SCREEN = "scaleCardPopupToScreen";
     private static final String OVERLAY_PERMANENT_MIN_HEIGHT = "overlayPermanentMinHeight";
     private static final String IGNORED_VERSION_ALERT = "ignoredVersionAlert";
     private static final String UI_SOUND = "uiSound";
@@ -104,7 +102,6 @@ public class GeneralConfig {
     private static final int DEFAULT_NEWTURN_ALERT_DURATION = 3000; // msecs
     private static final int DEFAULT_LAND_PREVIEW_DURATION = 5000; // msecs
     private static final int DEFAULT_NONLAND_PREVIEW_DURATION = 10000; // msecs
-    private static final double DEFAULT_CARD_POPUP_SCALE = 1.0d;
     private static final int DEFAULT_OVERLAY_PERMANENT_MIN_HEIGHT = 30; // pixels
     private static final boolean DEFAULT_PAUSE_GAME_POPUP = false;
     private static final String DEFAULT_DOWNLOAD_DATE = "1970-01-01";
@@ -150,8 +147,6 @@ public class GeneralConfig {
     private int landPreviewDuration = DEFAULT_LAND_PREVIEW_DURATION;
     private int nonLandPreviewDuration = DEFAULT_NONLAND_PREVIEW_DURATION;
     private boolean isSplitViewDeckEditor = false;
-    private double cardPopupScale = DEFAULT_CARD_POPUP_SCALE;
-    private boolean isCardPopupScaledToScreen = true;
     private int overlayPermanentMinHeight = DEFAULT_OVERLAY_PERMANENT_MIN_HEIGHT;
     private String ignoredVersionAlert = "";
     private boolean isUiSound = true;
@@ -192,20 +187,6 @@ public class GeneralConfig {
         } else {
             proxySettings = "";
         }       
-    }
-
-    public double getCardPopupScale() {
-        return cardPopupScale;
-    }
-    public void setCardPopupScale(final double popupScale) {
-        this.cardPopupScale = popupScale;
-    }
-
-    public boolean isCardPopupScaledToScreen() {
-        return isCardPopupScaledToScreen;
-    }
-    public void setIsCardPopupScaledToScreen(final boolean b) {
-        this.isCardPopupScaledToScreen = b;
     }
 
     public int getDeckFileMaxLines() {
@@ -635,8 +616,6 @@ public class GeneralConfig {
         landPreviewDuration = Integer.parseInt(properties.getProperty(LAND_PREVIEW_DURATION,"" + DEFAULT_LAND_PREVIEW_DURATION));
         nonLandPreviewDuration = Integer.parseInt(properties.getProperty(NONLAND_PREVIEW_DURATION,"" + DEFAULT_NONLAND_PREVIEW_DURATION));
         isSplitViewDeckEditor = Boolean.parseBoolean(properties.getProperty(SPLITVIEW_DECKEDITOR, "" + false));
-        cardPopupScale = Double.parseDouble(properties.getProperty(CARD_POPUP_SCALE, "" + DEFAULT_CARD_POPUP_SCALE));
-        isCardPopupScaledToScreen = Boolean.parseBoolean(properties.getProperty(SCALE_CARD_POPUP_TO_SCREEN, "" + true));
         overlayPermanentMinHeight = Integer.parseInt(properties.getProperty(OVERLAY_PERMANENT_MIN_HEIGHT, "" + DEFAULT_OVERLAY_PERMANENT_MIN_HEIGHT));
         ignoredVersionAlert = properties.getProperty(IGNORED_VERSION_ALERT, "");
         isUiSound = Boolean.parseBoolean(properties.getProperty(UI_SOUND, "" + true));
@@ -690,8 +669,6 @@ public class GeneralConfig {
         properties.setProperty(LAND_PREVIEW_DURATION, String.valueOf(landPreviewDuration));
         properties.setProperty(NONLAND_PREVIEW_DURATION, String.valueOf(nonLandPreviewDuration));
         properties.setProperty(SPLITVIEW_DECKEDITOR, String.valueOf(isSplitViewDeckEditor));
-        properties.setProperty(CARD_POPUP_SCALE, String.valueOf(cardPopupScale));
-        properties.setProperty(SCALE_CARD_POPUP_TO_SCREEN, String.valueOf(isCardPopupScaledToScreen));
         properties.setProperty(IGNORED_VERSION_ALERT, ignoredVersionAlert);
         properties.setProperty(UI_SOUND, String.valueOf(isUiSound));
         properties.setProperty(PAUSE_GAME_POPUP, String.valueOf(isGamePausedOnPopup));

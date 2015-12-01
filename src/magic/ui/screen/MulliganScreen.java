@@ -44,7 +44,7 @@ public class MulliganScreen
     private static final String _S7 = "first.";
     private static final String _S8 = "second.";
 
-    private final static Dimension cardSize = CardImagesProvider.PREFERRED_CARD_SIZE;
+    private final static Dimension cardSize = CardImagesProvider.HIGH_QUALITY_IMAGE_SIZE;
 
     private volatile static boolean isActive = false;
 

@@ -23,7 +23,7 @@ public class CardZoneScreen
     // translatable strings
     private static final String _S1 = "Close";
 
-    private final static Dimension cardSize = CardImagesProvider.PREFERRED_CARD_SIZE;
+    private final static Dimension cardSize = CardImagesProvider.HIGH_QUALITY_IMAGE_SIZE;
 
     private final CardsCanvas content;
     private final String screenCaption;

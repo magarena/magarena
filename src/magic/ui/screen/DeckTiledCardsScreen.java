@@ -69,7 +69,7 @@ public class DeckTiledCardsScreen
         }
     }
 
-    private final static Dimension cardSize = CardImagesProvider.PREFERRED_CARD_SIZE;
+    private final static Dimension cardSize = CardImagesProvider.HIGH_QUALITY_IMAGE_SIZE;
 
     private final ContentPanel content;
     private final MagicDeck deck;

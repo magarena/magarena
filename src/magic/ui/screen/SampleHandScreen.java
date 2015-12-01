@@ -35,7 +35,7 @@ public class SampleHandScreen
     private static final String _S3 = "Refresh";
     private static final String _S4 = "Deal a new sample hand.";
 
-    private final static Dimension cardSize = CardImagesProvider.PREFERRED_CARD_SIZE;
+    private final static Dimension cardSize = CardImagesProvider.HIGH_QUALITY_IMAGE_SIZE;
 
     private final CardsCanvas content;
     private final MagicDeck deck;
