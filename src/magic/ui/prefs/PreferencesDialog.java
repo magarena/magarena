@@ -117,6 +117,7 @@ public class PreferencesDialog
     private static final String _S79 = "Preferences";
     private static final String _S80 = "There is a problem reading the translation file.";
     private static final String _S81 = "Please ensure the file is encoded as 'UTF-8 without BOM'.";
+    private static final String _S82 = "Animations";
 
     private final static GeneralConfig config = GeneralConfig.getInstance();
 
@@ -706,7 +707,7 @@ public class PreferencesDialog
         final JTabbedPane tabbedPane = new JTabbedPane();
         tabbedPane.addTab(UiString.get(_S3), getGameplaySettingsPanel1());
         tabbedPane.addTab(UiString.get(_S68), gameImagesPanel);
-        tabbedPane.addTab(UiString.get("Animations"), animationsPanel);
+        tabbedPane.addTab(UiString.get(_S82), animationsPanel);
         return tabbedPane;
     }
 
