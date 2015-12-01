@@ -4,6 +4,8 @@ import java.io.File;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
+import javax.sound.sampled.LineListener;
+import javax.sound.sampled.LineEvent;
 import magic.model.MagicGame;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
@@ -17,6 +19,15 @@ public class SoundEffects {
     public static final String COMBAT_SOUND="combat.au";
 
     private static final File SOUNDS_PATH = MagicFileSystem.getDataPath(DataPath.SOUNDS).toFile();
+    private static final LineListener closer = new LineListener() {
+        @Override
+        public void update(final LineEvent event) {
+            if (event.getType() == LineEvent.Type.STOP) {
+                event.getLine().close();
+            }
+        }
+    };
+
     private static Clip clip;
 
     private SoundEffects() {}
@@ -34,15 +45,13 @@ public class SoundEffects {
     }
 
     private static void playSound(final String name) {
-        if (clip != null) {
-            if (clip.isRunning() || clip.isActive()) {
-                clip.stop();
-                clip.close();
-            }
+        if (clip != null && (clip.isRunning() || clip.isActive())) {
+            clip.stop();
         }
         try (final AudioInputStream ins = AudioSystem.getAudioInputStream(new File(SOUNDS_PATH, name))) {
             clip = AudioSystem.getClip();
             clip.open(ins);
+            clip.addLineListener(closer);
             clip.start();
         } catch (Exception ex) {
             System.err.println("WARNING. Unable to play clip " + name + ", " + ex.getMessage());
