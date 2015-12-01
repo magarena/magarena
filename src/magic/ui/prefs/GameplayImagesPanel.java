@@ -15,6 +15,8 @@ import net.miginfocom.swing.MigLayout;
 class GameplayImagesPanel extends JPanel {
 
     // translatable strings.
+    private static final String _S1  = "Preferred image size:";
+    private static final String _S2  = "Select 'Original' to display popup image at its native size otherwise it will be scaled up or down to the selected preset. The image will also be resized to fit if there is not enough room to display it at its preferred size.";
     private static final String _S28 = "Popup card image using mouse wheel.";
     private static final String _S29 = "Manually display the card image popup by moving the mouse wheel forwards. Overrides the Auto-Popup delay.";
     private static final String _S30 = "Popup Delay";
@@ -77,13 +79,13 @@ class GameplayImagesPanel extends JPanel {
 
         PreferredSizePanel(MouseListener aListener) {
             setLayout(new MigLayout("insets 0"));
-            add(new JLabel("Preferred image size:"));
+            add(new JLabel(UiString.get(_S1)));
             add(getSizePresetsCombo(aListener));
             addMouseListener(aListener);
         }
 
         private String getTooltip() {
-            return "Select 'Original' to display popup image at its native size otherwise it will be scaled up or down to the selected preset. The image will also be resized to fit if there is not enough room to display it at its preferred size.";
+            return UiString.get(_S2);
         }
 
         private JComboBox<String> getSizePresetsCombo(MouseListener aListener) {
