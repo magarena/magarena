@@ -1,7 +1,6 @@
 package magic.ui.prefs;
 
 import java.awt.Cursor;
-import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -43,7 +42,6 @@ import magic.data.GeneralConfig;
 import magic.translate.UiString;
 import magic.ui.CachedImagesProvider;
 import magic.ui.URLUtils;
-import magic.ui.CardImagesProvider;
 import magic.ui.MagicFrame;
 import magic.ui.MagicSound;
 import magic.ui.ScreenController;
@@ -65,8 +63,6 @@ public class PreferencesDialog
         implements ActionListener, MouseListener, WindowListener {
 
     // translatable strings.
-    private static final String _S1 = "Scale popup to screen size";
-    private static final String _S2 = "If enabled then the popup size is scaled against the current screen size otherwise it is scaled against the maximum card size. The popup size will not exceed the screen or maximum card size, whichever is smaller. The maximum card size is (W=%d, H=%d).";
     private static final String _S3 = "General";
     private static final String _S4 = "Gameplay";
     private static final String _S5 = "Look & Feel";
@@ -90,14 +86,6 @@ public class PreferencesDialog
     private static final String _S25 = "Positive effects, such as pump and untap, can only be applied to your own permanents. Negative effects, such as destroy and exile, can only be applied to opponent's permanents.";
     private static final String _S26 = "Message:";
     private static final String _S27 = "The duration in milliseconds (1000 = 1 second) that the game pauses when an item is added to the stack. This has no effect unless the 'Automatically pass priority' option is enabled.";
-    private static final String _S28 = "Popup card image using mouse wheel.";
-    private static final String _S29 = "Manually display the card image popup by moving the mouse wheel forwards. Overrides the Auto-Popup delay.";
-    private static final String _S30 = "Popup Delay";
-    private static final String _S31 = "Automatically displays the card popup image after the specified number of milliseconds that the mouse cursor hovers over a card.";
-    private static final String _S32 = "Popup Scale";
-    private static final String _S33 = "Sets the size of the card popup image as a percentage of the screen size or maximum card size based on the \"Scale popup to screen size\" setting.";
-    private static final String _S34 = "Pause game on popup.";
-    private static final String _S35 = "Pauses the game while the popup is open.";
     private static final String _S36 = "The path for the images directory is invalid!";
     private static final String _S37 = "Proxy settings are invalid!";
     private static final String _S41 = "Highlight";
@@ -151,8 +139,6 @@ public class PreferencesDialog
     private JCheckBox skipSingleCheckBox;
     private JCheckBox alwaysPassCheckBox;
     private JCheckBox smartTargetCheckBox;
-    private JCheckBox mouseWheelPopupCheckBox;
-    private SliderPanel popupDelaySlider;
     private SliderPanel messageDelaySlider;
     private JButton saveButton;
     private JButton cancelButton;
@@ -162,15 +148,13 @@ public class PreferencesDialog
     private DirectoryChooser imagesFolderChooser;
     private JCheckBox customBackgroundCheckBox;
     private JCheckBox splitViewDeckEditorCheckBox;
-    private JCheckBox popupScaleContextCheckbox;
-    private SliderPanel popupScaleSlider;
     private JCheckBox uiSoundCheckBox;
-    private JCheckBox pauseGamePopupCheckBox;
     private JCheckBox hideAIPromptCheckBox;
     private ColorButton rollOverColorButton;
     private JSlider uiVolumeSlider;
     private final TranslationPanel langPanel = new TranslationPanel();
     private final AnimationsPanel animationsPanel;
+    private final GameplayImagesPanel gameImagesPanel;
 
     private final JLabel hintLabel = new JLabel();
     private boolean isProxyUpdated = false;
@@ -193,6 +177,7 @@ public class PreferencesDialog
         this.frame = frame;
 
         animationsPanel = new AnimationsPanel(this);
+        gameImagesPanel = new GameplayImagesPanel(this);
 
         hintLabel.setVerticalAlignment(SwingConstants.TOP);
         hintLabel.setFont(new Font("SansSerif", Font.ITALIC, 12));
@@ -385,47 +370,10 @@ public class PreferencesDialog
         return scroller;
 
     }
-
-    private JPanel getGameplaySettingsPanel2() {
-
-        mouseWheelPopupCheckBox = new JCheckBox(UiString.get(_S28), config.isMouseWheelPopup());
-        mouseWheelPopupCheckBox.setFocusable(false);
-        mouseWheelPopupCheckBox.setToolTipText(UiString.get(_S29));
-        mouseWheelPopupCheckBox.addMouseListener(this);
-
-        popupDelaySlider = new SliderPanel(UiString.get(_S30), 0, 2000, 50, config.getPopupDelay());
-        popupDelaySlider.setToolTipText(UiString.get(_S31));
-        popupDelaySlider.addMouseListener(this);
-
-        final Dimension maxCardSize = CardImagesProvider.MAXIMUM_CARD_SIZE;
-
-        popupScaleContextCheckbox = new JCheckBox(UiString.get(_S1), config.isCardPopupScaledToScreen());
-        popupScaleContextCheckbox.setToolTipText(UiString.get(_S2, maxCardSize.width, maxCardSize.height));
-        popupScaleContextCheckbox.addMouseListener(this);
-
-        final int popupScale = (int) (config.getCardPopupScale() * 100);
-        popupScaleSlider = new SliderPanel(UiString.get(_S32), 60, 100, 1, popupScale);
-        popupScaleSlider.setToolTipText(UiString.get(_S33));
-        popupScaleSlider.addMouseListener(this);
-
-        pauseGamePopupCheckBox = new JCheckBox(UiString.get(_S34), config.isGamePausedOnPopup());
-        pauseGamePopupCheckBox.setFocusable(false);
-        pauseGamePopupCheckBox.setToolTipText(UiString.get(_S35));
-        pauseGamePopupCheckBox.addMouseListener(this);
-
-        // layout components
-        final JPanel panel = new JPanel(new MigLayout("flowy, insets 16, gapy 10"));
-        panel.add(mouseWheelPopupCheckBox);
-        panel.add(popupDelaySlider, "w 100%");
-        panel.add(popupScaleContextCheckbox);
-        panel.add(popupScaleSlider, "w 100%");
-        panel.add(pauseGamePopupCheckBox);
-        return panel;
-
-    }
-
+    
     private void saveSettings() {
         animationsPanel.saveSettings();
+        gameImagesPanel.saveSettings();
         config.setTheme(themeComboBox.getItemAt(themeComboBox.getSelectedIndex()));
         config.setHighlight(highlightComboBox.getItemAt(highlightComboBox.getSelectedIndex()));
         config.setSound(soundCheckBox.isSelected());
@@ -434,15 +382,10 @@ public class PreferencesDialog
         config.setSkipSingle(skipSingleCheckBox.isSelected());
         config.setAlwaysPass(alwaysPassCheckBox.isSelected());
         config.setSmartTarget(smartTargetCheckBox.isSelected());
-        config.setMouseWheelPopup(mouseWheelPopupCheckBox.isSelected());
-        config.setPopupDelay(popupDelaySlider.getValue());
         config.setMessageDelay(messageDelaySlider.getValue());
         config.setMulliganScreenActive(mulliganScreenCheckbox.isSelected());
         config.setCustomBackground(customBackgroundCheckBox.isSelected());
-        config.setIsCardPopupScaledToScreen(popupScaleContextCheckbox.isSelected());
-        config.setCardPopupScale(popupScaleSlider.getValue() / 100d);
         config.setIsUiSound(uiSoundCheckBox.isSelected());
-        config.setIsGamePausedOnPopup(pauseGamePopupCheckBox.isSelected());
         config.setHideAiActionPrompt(hideAIPromptCheckBox.isSelected());
         config.setRolloverColor(rollOverColorButton.getColor());
         config.setUiSoundVolume(uiVolumeSlider.getValue());
@@ -762,7 +705,7 @@ public class PreferencesDialog
     private JTabbedPane getGameplaySettingsTabbedPane() {
         final JTabbedPane tabbedPane = new JTabbedPane();
         tabbedPane.addTab(UiString.get(_S3), getGameplaySettingsPanel1());
-        tabbedPane.addTab(UiString.get(_S68), getGameplaySettingsPanel2());
+        tabbedPane.addTab(UiString.get(_S68), gameImagesPanel);
         tabbedPane.addTab(UiString.get("Animations"), animationsPanel);
         return tabbedPane;
     }

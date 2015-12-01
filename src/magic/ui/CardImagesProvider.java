@@ -9,7 +9,6 @@ import magic.model.MagicCardDefinition;
  */
 public interface CardImagesProvider {
 
-    public static final Dimension MAXIMUM_CARD_SIZE = new Dimension(480, 680);
     public static final Dimension HIGH_QUALITY_IMAGE_SIZE = new Dimension(480, 680);
     public static final Dimension SMALL_SCREEN_IMAGE_SIZE = new Dimension(312, 445);
 

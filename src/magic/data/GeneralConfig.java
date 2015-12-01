@@ -74,6 +74,7 @@ public class GeneralConfig {
     private static final String TRANSLATION = "translation";
     private static final String LOG_MESSAGE_STYLE = "logMessageStyle";
     private static final String ANIMATION_FLAGS = "animationFlags";
+    private static final String PREF_IMAGE_SIZE = "preferredImageSize";
 
     private static final int DEFAULT_LEFT=-1;
     private static final int DEFAULT_TOP=0;
@@ -112,6 +113,7 @@ public class GeneralConfig {
     private static final int DEFAULT_ROLLOVER_COLOR = Color.YELLOW.getRGB();
     private static final int DEFAULT_SOUND_VOLUME = 50;
     public static final String DEFAULT_TRANSLATION = "";
+    private static final String DEFAULT_PREF_IMAGE_SIZE = "Original";
 
     private int left=DEFAULT_LEFT;
     private int top=DEFAULT_TOP;
@@ -162,6 +164,7 @@ public class GeneralConfig {
     private int uiSoundVolume = DEFAULT_SOUND_VOLUME;
     private String translation = DEFAULT_TRANSLATION;
     private MessageStyle logMessageStyle = MessageStyle.PLAIN;
+    private String preferredImageSize = DEFAULT_PREF_IMAGE_SIZE;
 
     private GeneralConfig() { }
 
@@ -647,6 +650,7 @@ public class GeneralConfig {
         translation = properties.getProperty(TRANSLATION, DEFAULT_TRANSLATION);
         logMessageStyle = MessageStyle.valueOf(properties.getProperty(LOG_MESSAGE_STYLE, MessageStyle.PLAIN.name()));
         AnimationFx.setFlags(Integer.parseInt(properties.getProperty(ANIMATION_FLAGS, "" + AnimationFx.getFlags())));
+        preferredImageSize = properties.getProperty(PREF_IMAGE_SIZE, DEFAULT_PREF_IMAGE_SIZE);
     }
 
     public void load() {
@@ -700,6 +704,7 @@ public class GeneralConfig {
         properties.setProperty(TRANSLATION, translation);
         properties.setProperty(LOG_MESSAGE_STYLE, logMessageStyle.name());
         properties.setProperty(ANIMATION_FLAGS, String.valueOf(AnimationFx.getFlags()));
+        properties.setProperty(PREF_IMAGE_SIZE, preferredImageSize);
     }
 
     public void save() {
@@ -722,6 +727,14 @@ public class GeneralConfig {
 
     public boolean isCustomCardImagesPath() {
         return cardImagesPath.isEmpty() == false;
+    }
+
+    public String getPreferredImageSize() {
+        return preferredImageSize;
+    }
+
+    public void setPreferredImageSize(String s) {
+        this.preferredImageSize = s;
     }
 
 }
