@@ -249,7 +249,7 @@ public class DuelDecksPanel extends TexturedPanel {
         public PlayerPanel(final PlayerProfile profile) {
             setLayout(new MigLayout("insets 0"));
             setOpaque(false);
-            add(new JLabel(IconImages.getPlayerAvatar(profile).getIcon(4)));
+            add(new JLabel(MagicImages.getPlayerAvatar(profile).getIcon(4)));
             add(new PlayerDetailsPanel(profile, Color.BLACK), "w 100%");
             add(getScoreLabel(getScore(profile)), "w 100%");
             setPreferredSize(new Dimension(280, 54));

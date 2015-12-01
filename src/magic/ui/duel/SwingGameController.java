@@ -57,7 +57,7 @@ import magic.translate.StringContext;
 import magic.translate.UiString;
 import magic.ui.IChoiceViewer;
 import magic.ui.IPlayerZoneListener;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.ui.MagicFileChoosers;
 import magic.ui.ScreenController;
 import magic.ui.card.AnnotatedCardPanel;
@@ -150,7 +150,7 @@ public class SwingGameController implements IUIGameController {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                userActionPanel.enableButton(IconImages.getIcon(MagicIcon.FORWARD));
+                userActionPanel.enableButton(MagicImages.getIcon(MagicIcon.FORWARD));
             }
         });
     }

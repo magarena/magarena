@@ -1,6 +1,6 @@
 package magic.ui.theme;
 
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.ui.widget.FontsAndBorders;
 
 import javax.swing.ImageIcon;
@@ -25,20 +25,20 @@ public abstract class AbstractTheme implements Theme {
         this.name=name;
         themeMap=new HashMap<>();
 
-        addToTheme(ICON_LIFE,IconImages.getIcon(MagicIcon.LIFE));
-        addToTheme(ICON_PREVENT,IconImages.getIcon(MagicIcon.PREVENT2));
-        addToTheme(ICON_POISON,IconImages.getIcon(MagicIcon.POISON));
-        addToTheme(ICON_LAND,IconImages.getIcon(MagicIcon.LAND2));
-        addToTheme(ICON_HAND,IconImages.getIcon(MagicIcon.HAND2));
-        addToTheme(ICON_LIBRARY,IconImages.getIcon(MagicIcon.LIBRARY2));
-        addToTheme(ICON_GRAVEYARD,IconImages.getIcon(MagicIcon.GRAVEYARD2));
-        addToTheme(ICON_MESSAGE,IconImages.getIcon(MagicIcon.LOG));
-        addToTheme(ICON_SMALL_BATTLEFIELD,IconImages.getIcon(MagicIcon.ALL));
-        addToTheme(ICON_SMALL_COMBAT,IconImages.getIcon(MagicIcon.COMBAT));
-        addToTheme(ICON_SMALL_STACK,IconImages.getIcon(MagicIcon.SPELL));
-        addToTheme(ICON_SMALL_HAND,IconImages.getIcon(MagicIcon.HAND));
-        addToTheme(ICON_SMALL_GRAVEYARD,IconImages.getIcon(MagicIcon.GRAVEYARD));
-        addToTheme(ICON_SMALL_EXILE,IconImages.getIcon(MagicIcon.EXILE));
+        addToTheme(ICON_LIFE,MagicImages.getIcon(MagicIcon.LIFE));
+        addToTheme(ICON_PREVENT,MagicImages.getIcon(MagicIcon.PREVENT2));
+        addToTheme(ICON_POISON,MagicImages.getIcon(MagicIcon.POISON));
+        addToTheme(ICON_LAND,MagicImages.getIcon(MagicIcon.LAND2));
+        addToTheme(ICON_HAND,MagicImages.getIcon(MagicIcon.HAND2));
+        addToTheme(ICON_LIBRARY,MagicImages.getIcon(MagicIcon.LIBRARY2));
+        addToTheme(ICON_GRAVEYARD,MagicImages.getIcon(MagicIcon.GRAVEYARD2));
+        addToTheme(ICON_MESSAGE,MagicImages.getIcon(MagicIcon.LOG));
+        addToTheme(ICON_SMALL_BATTLEFIELD,MagicImages.getIcon(MagicIcon.ALL));
+        addToTheme(ICON_SMALL_COMBAT,MagicImages.getIcon(MagicIcon.COMBAT));
+        addToTheme(ICON_SMALL_STACK,MagicImages.getIcon(MagicIcon.SPELL));
+        addToTheme(ICON_SMALL_HAND,MagicImages.getIcon(MagicIcon.HAND));
+        addToTheme(ICON_SMALL_GRAVEYARD,MagicImages.getIcon(MagicIcon.GRAVEYARD));
+        addToTheme(ICON_SMALL_EXILE,MagicImages.getIcon(MagicIcon.EXILE));
 
         addToTheme(COLOR_TITLE_FOREGROUND,Color.WHITE);
         addToTheme(COLOR_TITLE_BACKGROUND,new Color(0x23,0x6B,0x8E));
@@ -86,7 +86,7 @@ public abstract class AbstractTheme implements Theme {
     @Override
     public BufferedImage getTexture(final String aName) {
         final Object value=themeMap.get(aName);
-        return value==null?IconImages.MISSING:(BufferedImage)value;
+        return value==null?MagicImages.MISSING:(BufferedImage)value;
     }
 
     @Override
@@ -98,7 +98,7 @@ public abstract class AbstractTheme implements Theme {
     @Override
     public ImageIcon getIcon(final String aName) {
         final Object value=themeMap.get(aName);
-        return value==null?IconImages.getIcon(MagicIcon.MISSING_ICON):(ImageIcon)value;
+        return value==null?MagicImages.getIcon(MagicIcon.MISSING_ICON):(ImageIcon)value;
     }
 
     @Override

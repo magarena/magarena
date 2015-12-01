@@ -26,7 +26,7 @@ import magic.model.MagicCardDefinition;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.ui.URLUtils;
 import magic.ui.dialog.button.CancelButton;
 import magic.ui.widget.FontsAndBorders;
@@ -120,7 +120,7 @@ public class DownloadImagesDialog
 
     private JButton getHelpButton() {
         final JButton btn = new JButton();
-        btn.setIcon(IconImages.getIcon(MagicIcon.MISSING_ICON));
+        btn.setIcon(MagicImages.getIcon(MagicIcon.MISSING_ICON));
         btn.setFocusable(false);
         btn.addActionListener(new AbstractAction() {
             @Override

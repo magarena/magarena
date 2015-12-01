@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 import magic.utility.MagicSystem;
 import magic.data.CardDefinitions;
 import magic.data.MagicIcon;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.data.MagicSetDefinitions;
 import magic.ui.explorer.ExplorerPanel;
 import magic.ui.MagicFrame;
@@ -66,9 +66,8 @@ public class CardExplorerScreen
     @Override
     public List<MenuButton> getMiddleActions() {
         final List<MenuButton> buttons = new ArrayList<>();
-        buttons.add(
-            new ActionBarButton(
-                IconImages.getIcon(MagicIcon.EDIT_ICON),
+        buttons.add(new ActionBarButton(
+                MagicImages.getIcon(MagicIcon.EDIT_ICON),
                 UiString.get(_S3), UiString.get(_S4),
                 new AbstractAction() {
                     @Override
@@ -79,9 +78,8 @@ public class CardExplorerScreen
             )
         );
         if (MagicSystem.isDevMode() || MagicSystem.isDebugMode()) {
-            buttons.add(
-                new ActionBarButton(
-                    IconImages.getIcon(MagicIcon.SAVE_ICON),
+            buttons.add(new ActionBarButton(
+                    MagicImages.getIcon(MagicIcon.SAVE_ICON),
                     "Save Missing Cards [DevMode Only]", "Creates CardsMissingInMagarena.txt which can be used by the Scripts Builder.",
                     new AbstractAction() {
                         @Override

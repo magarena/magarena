@@ -14,7 +14,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicType;
 import magic.ui.CachedImagesProvider;
 import magic.ui.CardImagesProvider;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.ui.utility.GraphicsUtils;
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.TimelineScenario;
@@ -28,12 +28,12 @@ abstract class CardAnimation extends MagicAnimation {
 
     private static final ImageScaler backImageScaler;
     static {
-        backImageScaler = new ImageScaler(IconImages.BACK_IMAGE);
+        backImageScaler = new ImageScaler(MagicImages.BACK_IMAGE);
     }
 
     private static final ImageScaler zoneImageScaler;
     static {
-        zoneImageScaler = new ImageScaler(GraphicsUtils.getConvertedIcon(IconImages.getIcon(MagicIcon.LIBRARY_ZONE)));
+        zoneImageScaler = new ImageScaler(GraphicsUtils.getConvertedIcon(MagicImages.getIcon(MagicIcon.LIBRARY_ZONE)));
     }
 
     private final GameLayoutInfo layoutInfo;

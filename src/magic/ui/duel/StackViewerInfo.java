@@ -8,7 +8,7 @@ import magic.model.stack.MagicAbilityOnStack;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.stack.MagicTriggerOnStack;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 
 public class StackViewerInfo {
 
@@ -32,11 +32,11 @@ public class StackViewerInfo {
 
     private ImageIcon getIcon(final MagicItemOnStack itemOnStack) {
         if (itemOnStack instanceof MagicAbilityOnStack) {
-            return IconImages.getIcon(MagicIcon.ABILITY);
+            return MagicImages.getIcon(MagicIcon.ABILITY);
         } else if (itemOnStack instanceof MagicCardOnStack) {
-            return IconImages.getIcon(itemOnStack.getCardDefinition());
+            return MagicImages.getIcon(itemOnStack.getCardDefinition());
         } else if (itemOnStack instanceof MagicTriggerOnStack) {
-            return IconImages.getIcon(MagicIcon.TRIGGER);
+            return MagicImages.getIcon(MagicIcon.TRIGGER);
         }
         return null;
     }

@@ -4,7 +4,7 @@ import java.io.File;
 import java.util.Arrays;
 import javax.swing.ImageIcon;
 import magic.data.GeneralConfig;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.ui.ImageFileIO;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
@@ -22,7 +22,7 @@ public class AvatarImages {
     }
 
     private static PlayerAvatar loadAvatar(final File file) {
-        return new PlayerAvatar(ImageFileIO.toImg(file, IconImages.MISSING));
+        return new PlayerAvatar(ImageFileIO.toImg(file, MagicImages.MISSING));
     }
 
     private synchronized void loadAvatars() {

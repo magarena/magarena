@@ -69,7 +69,7 @@ public class MagicFrame extends JFrame implements IImageDragDropListener {
 
         // Setup frame.
         this.setTitle(String.format("%s [%s]", frameTitle, UiString.get(_S1)));
-        this.setIconImage(IconImages.getIcon(MagicIcon.ARENA).getImage());
+        this.setIconImage(MagicImages.getIcon(MagicIcon.ARENA).getImage());
         setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         addWindowListeners();
         registerForMacOSXEvents();

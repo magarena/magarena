@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 import javax.swing.JToggleButton;
 import magic.data.MagicIcon;
 import magic.ui.IUpdatable;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 
 public class PermanentFilter implements ActionListener {
 
@@ -36,12 +36,12 @@ public class PermanentFilter implements ActionListener {
     };
 
     private static final ImageIcon[] FILTER_ICONS={
-        IconImages.getIcon(MagicIcon.ALL),
-        IconImages.getIcon(MagicIcon.LAND),
-        IconImages.getIcon(MagicIcon.CREATURE),
-        IconImages.getIcon(MagicIcon.ARTIFACT),
-        IconImages.getIcon(MagicIcon.ENCHANTMENT),
-        IconImages.getIcon(MagicIcon.VALID)};
+        MagicImages.getIcon(MagicIcon.ALL),
+        MagicImages.getIcon(MagicIcon.LAND),
+        MagicImages.getIcon(MagicIcon.CREATURE),
+        MagicImages.getIcon(MagicIcon.ARTIFACT),
+        MagicImages.getIcon(MagicIcon.ENCHANTMENT),
+        MagicImages.getIcon(MagicIcon.VALID)};
     
     private static final String[] FILTER_TOOLTIPS={
         "All","Mana","Creatures","Artifacts","Enchantments","Choices"

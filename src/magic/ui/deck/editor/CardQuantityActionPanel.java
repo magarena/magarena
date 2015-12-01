@@ -7,7 +7,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import magic.data.MagicIcon;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.translate.UiString;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.widget.FontsAndBorders;
@@ -43,19 +43,19 @@ class CardQuantityActionPanel extends JPanel {
         setOpaque(false);
 
         addButton = new ActionBarButton(
-                IconImages.getIcon(MagicIcon.PLUS_ICON),
+                MagicImages.getIcon(MagicIcon.PLUS_ICON),
                 UiString.get(_S1),
                 UiString.get(_S2),
                 plusButtonAction);
 
         minusButton = new ActionBarButton(
-                IconImages.getIcon(MagicIcon.MINUS_ICON),
+                MagicImages.getIcon(MagicIcon.MINUS_ICON),
                 UiString.get(_S3),
                 UiString.get(String.format("%s<br>%s", UiString.get(_S4), UiString.get(_S9))),
                 minusButtonAction);
 
         incrementButton = new ActionBarButton(
-                IconImages.getIcon(MagicIcon.ARROWUP_ICON),
+                MagicImages.getIcon(MagicIcon.ARROWUP_ICON),
                 UiString.get(_S5),
                 UiString.get(_S6),
                 new AbstractAction() {
@@ -69,7 +69,7 @@ class CardQuantityActionPanel extends JPanel {
                     }
                 });
         decrementButton = new ActionBarButton(
-                IconImages.getIcon(MagicIcon.ARROWDOWN_ICON),
+                MagicImages.getIcon(MagicIcon.ARROWDOWN_ICON),
                 UiString.get(_S7),
                 UiString.get(_S8),
                 new AbstractAction() {

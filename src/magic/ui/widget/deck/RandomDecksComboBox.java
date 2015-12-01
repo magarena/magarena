@@ -1,7 +1,7 @@
 package magic.ui.widget.deck;
 
 import magic.data.DeckGenerators;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.model.MagicColor;
 import magic.ui.widget.FontsAndBorders;
 
@@ -124,11 +124,11 @@ public class RandomDecksComboBox extends JComboBox<String> implements ListCellRe
     private ImageIcon getRandomDeckComboIcon(final char ch) {
         switch (ch) {
             case '*':
-                return IconImages.getIcon(MagicIcon.ANY);
+                return MagicImages.getIcon(MagicIcon.ANY);
             case '@':
-                return IconImages.getIcon(MagicIcon.FOLDER);
+                return MagicImages.getIcon(MagicIcon.FOLDER);
             default:
-                return IconImages.getIcon(MagicColor.getColor(ch));
+                return MagicImages.getIcon(MagicColor.getColor(ch));
         }
 
     }

@@ -1,7 +1,7 @@
 package magic.ui.theme;
 
-import magic.ui.IconImages;
 
+import magic.ui.MagicImages;
 import javax.swing.ImageIcon;
 
 import java.awt.Color;
@@ -102,7 +102,7 @@ public class CustomTheme extends AbstractTheme {
 
     private BufferedImage loadImage(final String filename) {
         final InputStream ins = getInputStream(filename);
-        return ImageFileIO.toImg(ins, IconImages.MISSING);
+        return ImageFileIO.toImg(ins, MagicImages.MISSING);
     }
 
     @Override

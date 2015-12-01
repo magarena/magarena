@@ -10,7 +10,7 @@ import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 import javax.swing.SwingConstants;
 import magic.data.MagicIcon;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.ui.URLUtils;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
@@ -136,7 +136,7 @@ public abstract class AbstractScreen extends JPanel {
 
     public void setBusy(final boolean isBusy) {
         if (isBusy) {
-          final ImageIcon ii = IconImages.getIcon(MagicIcon.BUSY);
+          final ImageIcon ii = MagicImages.getIcon(MagicIcon.BUSY);
           final JPanel pnl = new JPanel(new MigLayout("insets 0, gap 0"));
           pnl.setOpaque(false);
           final JLabel lbl = new JLabel(ii);

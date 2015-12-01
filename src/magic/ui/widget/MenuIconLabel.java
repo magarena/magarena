@@ -10,14 +10,14 @@ import javax.swing.JLabel;
 import javax.swing.JPopupMenu;
 import javax.swing.SwingUtilities;
 import magic.data.MagicIcon;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.utility.MagicStyle;
 
 @SuppressWarnings("serial")
 public class MenuIconLabel extends JLabel {
 
-    private static final ImageIcon NORMAL_ICON = IconImages.getIcon(MagicIcon.MENU_ICON);
+    private static final ImageIcon NORMAL_ICON = MagicImages.getIcon(MagicIcon.MENU_ICON);
     private static final Icon HILITE_ICON = GraphicsUtils.getRecoloredIcon(NORMAL_ICON, MagicStyle.getRolloverColor());
     private static final Icon PRESSED_ICON = GraphicsUtils.getRecoloredIcon(NORMAL_ICON, MagicStyle.getPressedColor());
 

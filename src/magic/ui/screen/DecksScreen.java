@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 import javax.swing.JSplitPane;
 import magic.data.DeckType;
 import magic.data.MagicIcon;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.model.MagicDeck;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
@@ -96,9 +96,8 @@ public class DecksScreen
     @Override
     public List<MenuButton> getMiddleActions() {
         final List<MenuButton> buttons = new ArrayList<>();
-        buttons.add(
-                new ActionBarButton(
-                        IconImages.getIcon(MagicIcon.HAND_ICON),
+        buttons.add(new ActionBarButton(
+                        MagicImages.getIcon(MagicIcon.HAND_ICON),
                         UiString.get(_S6), UiString.get(_S7),
                         new AbstractAction() {
                             @Override
@@ -113,9 +112,8 @@ public class DecksScreen
                             }
                         })
                 );
-        buttons.add(
-                new ActionBarButton(
-                        IconImages.getIcon(MagicIcon.TILED_ICON),
+        buttons.add(new ActionBarButton(
+                        MagicImages.getIcon(MagicIcon.TILED_ICON),
                         UiString.get(_S10), UiString.get(_S11),
                         new AbstractAction() {
                             @Override

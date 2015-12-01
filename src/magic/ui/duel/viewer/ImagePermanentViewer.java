@@ -4,7 +4,7 @@ import magic.ui.duel.PermanentViewerInfo;
 import magic.ui.utility.ImageDrawingUtils;
 import magic.data.GeneralConfig;
 import magic.ui.CachedImagesProvider;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.model.MagicType;
 import magic.model.MagicAbility;
 import magic.ui.theme.Theme;
@@ -294,7 +294,7 @@ public class ImagePermanentViewer extends JPanel {
                 // Common combat ability icons.
                 if (linkedInfo.creature) {
                     if (linkedInfo.canNotTap) {
-                        g.drawImage(IconImages.getIcon(MagicIcon.CANNOTTAP).getImage(), ax, ay, this);
+                        g.drawImage(MagicImages.getIcon(MagicIcon.CANNOTTAP).getImage(), ax, ay, this);
                         ax += 16;
                     }
                     final Set<MagicAbility> abilityFlags = linkedInfo.abilityFlags;

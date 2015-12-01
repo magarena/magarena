@@ -9,7 +9,7 @@ import javax.swing.JPanel;
 import magic.data.DeckType;
 import magic.data.MagicIcon;
 import magic.model.MagicCardDefinition;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.model.MagicDeck;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
@@ -65,9 +65,8 @@ public class DeckViewScreen
     @Override
     public List<MenuButton> getMiddleActions() {
         final List<MenuButton> buttons = new ArrayList<>();
-        buttons.add(
-                new ActionBarButton(
-                        IconImages.getIcon(MagicIcon.HAND_ICON),
+        buttons.add(new ActionBarButton(
+                        MagicImages.getIcon(MagicIcon.HAND_ICON),
                         UiString.get(_S2), UiString.get(_S3),
                         new AbstractAction() {
                             @Override
@@ -80,9 +79,8 @@ public class DeckViewScreen
                             }
                         })
         );
-        buttons.add(
-                new ActionBarButton(
-                        IconImages.getIcon(MagicIcon.TILED_ICON),
+        buttons.add(new ActionBarButton(
+                        MagicImages.getIcon(MagicIcon.TILED_ICON),
                         UiString.get(_S5), UiString.get(_S6),
                         new AbstractAction() {
                             @Override

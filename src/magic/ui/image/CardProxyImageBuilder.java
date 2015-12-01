@@ -24,7 +24,7 @@ import javax.swing.ImageIcon;
 import magic.data.MagicIcon;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicManaCost;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.ui.ImageFileIO;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.widget.FontsAndBorders;
@@ -50,26 +50,26 @@ public class CardProxyImageBuilder {
 
     public BufferedImage getImage(MagicCardDefinition cardDef, int index, boolean orig) {
         if (cardDef == MagicCardDefinition.UNKNOWN) {
-            return IconImages.getMissingCardImage();
+            return MagicImages.getMissingCardImage();
         }
         return getCardImage(cardDef);
     }
 
     private ImageIcon getCardTypeIcon(final MagicCardDefinition cardDef) {
         if (cardDef.isCreature()) {
-            return IconImages.getIcon(MagicIcon.FS_CREATURE);
+            return MagicImages.getIcon(MagicIcon.FS_CREATURE);
         } else if (cardDef.isLand()) {
-            return IconImages.getIcon(MagicIcon.FS_LAND);
+            return MagicImages.getIcon(MagicIcon.FS_LAND);
         } else if (cardDef.isInstant()) {
-            return IconImages.getIcon(MagicIcon.FS_INSTANT);
+            return MagicImages.getIcon(MagicIcon.FS_INSTANT);
         } else if (cardDef.isArtifact()) {
-            return IconImages.getIcon(MagicIcon.FS_ARTIFACT);
+            return MagicImages.getIcon(MagicIcon.FS_ARTIFACT);
         } else if (cardDef.isEnchantment()) {
-            return IconImages.getIcon(MagicIcon.FS_ENCHANTMENT);
+            return MagicImages.getIcon(MagicIcon.FS_ENCHANTMENT);
         } else if (cardDef.isSorcery()) {
-            return IconImages.getIcon(MagicIcon.FS_SORCERY);
+            return MagicImages.getIcon(MagicIcon.FS_SORCERY);
         } else if (cardDef.isPlaneswalker()) {
-            return IconImages.getIcon(MagicIcon.FS_PLANESWALKER);
+            return MagicImages.getIcon(MagicIcon.FS_PLANESWALKER);
         } else {
             return null;
         }
@@ -112,7 +112,7 @@ public class CardProxyImageBuilder {
         y = 34;
         if (cardDef.isLand() == false) {
             for (MagicIcon icon : cardDef.getCost().getIcons()) {
-                g2d.drawImage(IconImages.getBigManaIcon(icon).getImage(), x, 16, null);
+                g2d.drawImage(MagicImages.getBigManaIcon(icon).getImage(), x, 16, null);
                 x += 25;
             }
             x = 17;
@@ -167,15 +167,15 @@ public class CardProxyImageBuilder {
     private static ImageIcon getIcon(final String string){
         switch (string) {
             case "{T}":
-                return IconImages.getSmallManaIcon(MagicIcon.MANA_TAPPED);
+                return MagicImages.getSmallManaIcon(MagicIcon.MANA_TAPPED);
             case "{Q}":
-                return IconImages.getSmallManaIcon(MagicIcon.MANA_UNTAPPED);
+                return MagicImages.getSmallManaIcon(MagicIcon.MANA_UNTAPPED);
             case "{S}":
-                return IconImages.getSmallManaIcon(MagicIcon.MANA_SNOW);
+                return MagicImages.getSmallManaIcon(MagicIcon.MANA_SNOW);
             default:
                 final MagicManaCost mana = MagicManaCost.create(string);
                 final List<MagicIcon> icons = mana.getIcons();
-                return IconImages.getIcon(icons.get(0));
+                return MagicImages.getIcon(icons.get(0));
         }
     }
 

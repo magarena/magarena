@@ -1,7 +1,7 @@
 package magic.ui.dialog.button;
 
 import magic.data.MagicIcon;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.translate.UiString;
 
 @SuppressWarnings("serial")
@@ -12,7 +12,7 @@ public class CancelButton extends MagicDialogButton {
 
     public CancelButton() {
         super(UiString.get(_S1));
-        setIcon(IconImages.getIcon(MagicIcon.BANNED_ICON));
+        setIcon(MagicImages.getIcon(MagicIcon.BANNED_ICON));
     }
 
 }

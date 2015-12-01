@@ -14,7 +14,7 @@ import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
 import magic.ui.DuelDecksPanel;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.ui.ScreenOptionsOverlay;
@@ -122,9 +122,8 @@ public class DuelDecksScreen
     public List<MenuButton> getMiddleActions() {
         final List<MenuButton> buttons = new ArrayList<>();
         if (screenContent.getDuel().getGamesPlayed() == 0) {
-            buttons.add(
-                    new ActionBarButton(
-                            IconImages.getIcon(MagicIcon.DECK_ICON),
+            buttons.add(new ActionBarButton(
+                            MagicImages.getIcon(MagicIcon.DECK_ICON),
                             UiString.get(_S5), UiString.get(_S6),
                             new AbstractAction() {
                                 @Override
@@ -133,9 +132,8 @@ public class DuelDecksScreen
                                 }
                             })
                     );
-            buttons.add(
-                    new ActionBarButton(
-                            IconImages.getIcon(MagicIcon.SWAP_ICON),
+            buttons.add(new ActionBarButton(
+                            MagicImages.getIcon(MagicIcon.SWAP_ICON),
                             UiString.get(_S7), UiString.get(_S8),
                             new AbstractAction() {
                                 @Override
@@ -154,9 +152,8 @@ public class DuelDecksScreen
                 final MagicDuel duel = screenContent.getDuel();
                 buttons.add(new MenuButton(UiString.get(_S9, duel.getWinningPlayerProfile().getPlayerName()), null));
             } else {
-                buttons.add(
-                        new ActionBarButton(
-                                IconImages.getIcon(MagicIcon.REFRESH_ICON),
+                buttons.add(new ActionBarButton(
+                                MagicImages.getIcon(MagicIcon.REFRESH_ICON),
                                 UiString.get(_S10), UiString.get(_S11),
                                 new AbstractAction() {
                                     @Override
@@ -173,9 +170,8 @@ public class DuelDecksScreen
         }
 
         if (!screenContent.getDuel().isFinished()) {
-            buttons.add(
-                    new ActionBarButton(
-                            IconImages.getIcon(MagicIcon.TILED_ICON),
+            buttons.add(new ActionBarButton(
+                            MagicImages.getIcon(MagicIcon.TILED_ICON),
                             UiString.get(_S12), UiString.get(_S13),
                             new AbstractAction() {
                                 @Override

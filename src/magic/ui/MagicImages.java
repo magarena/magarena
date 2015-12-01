@@ -18,7 +18,7 @@ import magic.ui.theme.PlayerAvatar;
 import magic.ui.utility.GraphicsUtils;
 import magic.utility.MagicResources;
 
-public final class IconImages {
+public final class MagicImages {
 
     private static final Map<Integer, ImageIcon> manaIcons = new HashMap<>();
     private static final Map<MagicIcon, ImageIcon> icons = new HashMap<>();
@@ -181,9 +181,9 @@ public final class IconImages {
     private static BufferedImage getAvatarImage(final PlayerProfile profile) {
         final File file = new File(profile.getProfilePath().resolve("player.avatar").toString());
         if (file.exists()) {
-            return ImageFileIO.toImg(file, IconImages.MISSING);
+            return ImageFileIO.toImg(file, MagicImages.MISSING);
         } else {
-            return IconImages.MISSING;
+            return MagicImages.MISSING;
         }
     }
 

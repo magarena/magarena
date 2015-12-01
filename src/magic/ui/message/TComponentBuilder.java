@@ -6,7 +6,7 @@ import java.util.List;
 import javax.swing.JComponent;
 import magic.data.TextImages;
 import magic.model.MagicMessage;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.ui.widget.FontsAndBorders;
 import magic.utility.MagicSystem;
 
@@ -167,7 +167,7 @@ class TComponentBuilder {
         }
 
         if (text.charAt(0) == '{' && TextImages.contains(text)) {
-            return new IconComponent(IconImages.getIcon(TextImages.getIcon(text)));
+            return new IconComponent(MagicImages.getIcon(TextImages.getIcon(text)));
         }
 
         return new TextComponent(

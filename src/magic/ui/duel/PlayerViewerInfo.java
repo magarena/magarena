@@ -8,7 +8,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicType;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 
 public class PlayerViewerInfo {
 
@@ -47,7 +47,7 @@ public class PlayerViewerInfo {
         for (final MagicPermanent permanent : player.getPermanents()) {
             permanents.add(new PermanentViewerInfo(game, permanent));
         }
-        avatar = IconImages.getIconSize4(player.getPlayerDefinition());
+        avatar = MagicImages.getIconSize4(player.getPlayerDefinition());
     }
 
     public ImageIcon getAvatar() {

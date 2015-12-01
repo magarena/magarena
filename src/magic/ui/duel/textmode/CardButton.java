@@ -8,7 +8,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.ui.duel.SwingGameController;
 import magic.ui.IChoiceViewer;
 import magic.ui.theme.ThemeFactory;
@@ -48,7 +48,7 @@ class CardButton extends PanelButton implements IChoiceViewer {
         nameLabel = new JLabel(cardDefinition.getName());
         nameLabel.setForeground(MagicStyle.getRarityColor(cardDefinition));
 
-        final JLabel typeLabel = new JLabel(IconImages.getIcon(cardDefinition));
+        final JLabel typeLabel = new JLabel(MagicImages.getIcon(cardDefinition));
         typeLabel.setPreferredSize(new Dimension(24,0));
 
         mainPanel.add(costPanel,BorderLayout.WEST);

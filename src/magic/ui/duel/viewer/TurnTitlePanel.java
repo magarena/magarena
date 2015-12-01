@@ -15,7 +15,7 @@ import javax.swing.JPanel;
 import javax.swing.JPopupMenu;
 import javax.swing.SwingUtilities;
 import magic.data.MagicIcon;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.translate.StringContext;
 import magic.ui.utility.MagicStyle;
 import magic.ui.duel.SwingGameController;
@@ -69,7 +69,7 @@ public class TurnTitlePanel extends JPanel {
     private JButton getOptionsIconButton() {
 
         final JButton btn = new ActionBarButton(
-                IconImages.getIcon(MagicIcon.MENU_ICON),
+                MagicImages.getIcon(MagicIcon.MENU_ICON),
                 UiString.get(_S1),
                 UiString.get(_S2),
                 new AbstractAction() {

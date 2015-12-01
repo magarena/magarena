@@ -6,7 +6,7 @@ import java.io.FileFilter;
 import java.util.ArrayList;
 import java.util.List;
 import magic.data.GeneralConfig;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 
@@ -55,9 +55,9 @@ public class ThemeFactory {
     }
 
     private void loadBasicBuiltInThemes() {
-        themes.add(new DefaultTheme("wood", IconImages.WOOD, IconImages.MARBLE, Color.BLACK));
-        themes.add(new DefaultTheme("granite", IconImages.GRANITE, IconImages.GRANITE2, Color.BLACK));
-        themes.add(new DefaultTheme("opal", IconImages.OPAL, IconImages.OPAL2, Color.BLUE));
+        themes.add(new DefaultTheme("wood", MagicImages.WOOD, MagicImages.MARBLE, Color.BLACK));
+        themes.add(new DefaultTheme("granite", MagicImages.GRANITE, MagicImages.GRANITE2, Color.BLACK));
+        themes.add(new DefaultTheme("opal", MagicImages.OPAL, MagicImages.OPAL2, Color.BLUE));
     }
 
     public String[] getThemeNames() {

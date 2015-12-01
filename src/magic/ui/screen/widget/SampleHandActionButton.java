@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 import magic.data.MagicIcon;
 import magic.model.MagicDeck;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
 
@@ -20,7 +20,7 @@ public final class SampleHandActionButton extends ActionBarButton {
 
     public static ActionBarButton createInstance(final MagicDeck deck) {
         return new ActionBarButton(
-                IconImages.getIcon(MagicIcon.HAND_ICON),
+                MagicImages.getIcon(MagicIcon.HAND_ICON),
                 UiString.get(_S1), UiString.get(_S2),
                 new SampleHandAction(deck));
     }

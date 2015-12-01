@@ -19,7 +19,7 @@ import javax.swing.JScrollPane;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.SwingUtilities;
 import magic.data.MagicIcon;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.model.phase.MagicPhaseType;
 import magic.ui.duel.SwingGameController;
 import magic.ui.message.TextLabel;
@@ -53,7 +53,7 @@ public class UserActionPanel extends JPanel implements ActionListener {
         final JLabel emptyLabel=new JLabel("");
         actionPanel.add(emptyLabel,"0");
 
-        final JLabel busyLabel=new JLabel(IconImages.getIcon(MagicIcon.BUSY));
+        final JLabel busyLabel=new JLabel(MagicImages.getIcon(MagicIcon.BUSY));
         busyLabel.setHorizontalAlignment(JLabel.CENTER);
         actionPanel.add(busyLabel,"1");
 
@@ -70,7 +70,7 @@ public class UserActionPanel extends JPanel implements ActionListener {
         });
         actionPanel.add(actionButton,"2");
 
-        undoButton=new JButton(IconImages.getIcon(MagicIcon.UNDO));
+        undoButton=new JButton(MagicImages.getIcon(MagicIcon.UNDO));
         undoButton.setMargin(new Insets(1,1,1,1));
         undoButton.setIconTextGap(2);
         undoButton.setEnabled(false);

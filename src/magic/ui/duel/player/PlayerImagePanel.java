@@ -10,7 +10,7 @@ import java.awt.image.BufferedImage;
 import javax.swing.ImageIcon;
 import magic.data.GeneralConfig;
 import magic.ui.utility.GraphicsUtils;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.ui.utility.MagicStyle;
 import magic.ui.duel.CounterOverlay;
 import magic.ui.duel.PlayerViewerInfo;
@@ -42,7 +42,7 @@ public class PlayerImagePanel extends AnimationPanel {
     }
 
     private BufferedImage getPlayerAvatarImage() {
-        final ImageIcon icon = IconImages.getIconSize3(this.playerInfo.player.getPlayerDefinition());
+        final ImageIcon icon = MagicImages.getIconSize3(this.playerInfo.player.getPlayerDefinition());
         return GraphicsUtils.scale(GraphicsUtils.getConvertedIcon(icon), 74, 74);
     }
 

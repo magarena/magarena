@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 import javax.swing.JTable;
 import magic.data.DeckGenerator;
 import magic.data.MagicIcon;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.MagicSound;
@@ -187,7 +187,7 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
 
     private ActionBarButton getRandomDeckActionButton() {
         return new ActionBarButton(
-                IconImages.getIcon(MagicIcon.RANDOM_ICON),
+                MagicImages.getIcon(MagicIcon.RANDOM_ICON),
                 UiString.get(_S1),
                 UiString.get(_S2),
                 new AbstractAction() {

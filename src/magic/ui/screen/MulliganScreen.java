@@ -17,7 +17,7 @@ import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.ui.CardImagesProvider;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
 import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
@@ -144,9 +144,8 @@ public class MulliganScreen
     @Override
     public List<MenuButton> getMiddleActions() {
         final List<MenuButton> buttons = new ArrayList<>();
-        buttons.add(
-                new ActionBarButton(
-                        IconImages.getIcon(MagicIcon.MULLIGAN_ICON),
+        buttons.add(new ActionBarButton(
+                        MagicImages.getIcon(MagicIcon.MULLIGAN_ICON),
                         UiString.get(_S4), UiString.get(_S5),
                         takeMulliganAction)
                 );

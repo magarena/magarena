@@ -12,7 +12,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.ui.URLUtils;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
@@ -42,7 +42,7 @@ public class AboutDialog extends MagicDialog implements ActionListener {
         final JPanel aboutPanel = new JPanel();
         aboutPanel.setLayout(null);
 
-        final ImageIcon logoIcon = new ImageIcon(IconImages.WIZARD);
+        final ImageIcon logoIcon = new ImageIcon(MagicImages.WIZARD);
         final JLabel logoLabel = new JLabel(logoIcon);
         logoLabel.setSize(logoIcon.getIconWidth(), logoIcon.getIconHeight());
         aboutPanel.add(logoLabel);

@@ -1,6 +1,6 @@
 package magic.ui.screen;
 
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
@@ -189,21 +189,18 @@ public class DeckTiledCardsScreen
                 new ActionBarButton(
                         UiString.get(_S3), UiString.get(_S4),
                         new ShowCardsAction(CardTypeFilter.ALL), false));
-        buttons.add(
-                new ActionBarButton(
-                        IconImages.getIcon(MagicIcon.CREATURES_ICON),
+        buttons.add(new ActionBarButton(
+                        MagicImages.getIcon(MagicIcon.CREATURES_ICON),
                         UiString.get(_S5), UiString.get(_S6),
                         new ShowCardsAction(CardTypeFilter.CREATURES), false)
                 );
-        buttons.add(
-                new ActionBarButton(
-                        IconImages.getIcon(MagicIcon.LANDS_ICON),
+        buttons.add(new ActionBarButton(
+                        MagicImages.getIcon(MagicIcon.LANDS_ICON),
                         UiString.get(_S7), UiString.get(_S8),
                         new ShowCardsAction(CardTypeFilter.LANDS), false)
                 );
-        buttons.add(
-                new ActionBarButton(
-                        IconImages.getIcon(MagicIcon.SPELLS_ICON),
+        buttons.add(new ActionBarButton(
+                        MagicImages.getIcon(MagicIcon.SPELLS_ICON),
                         UiString.get(_S9), UiString.get(_S10),
                         new ShowCardsAction(CardTypeFilter.OTHER), true)
                 );

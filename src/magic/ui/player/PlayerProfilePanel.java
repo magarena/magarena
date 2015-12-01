@@ -4,7 +4,7 @@ import java.awt.Dimension;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.model.player.PlayerProfile;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import net.miginfocom.swing.MigLayout;
 
 /**
@@ -33,7 +33,7 @@ public class PlayerProfilePanel extends JPanel {
     }
 
     public void setPlayer(final PlayerProfile player) {
-        avatarLabel.setIcon(IconImages.getPlayerAvatar(player).getIcon(2));
+        avatarLabel.setIcon(MagicImages.getPlayerAvatar(player).getIcon(2));
         detailsPanel.setPlayer(player);
         refreshLayout();
     }

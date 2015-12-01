@@ -15,7 +15,7 @@ import javax.swing.Timer;
 import magic.ui.CachedImagesProvider;
 import magic.ui.CardImagesProvider;
 import magic.data.GeneralConfig;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.model.MagicCardDefinition;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.cardtable.ICardSelectionListener;
@@ -124,7 +124,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
         
         if (cardDefinition == null) {
             currentCardDefinition = MagicCardDefinition.UNKNOWN;
-            setCardImage(IconImages.getMissingCardImage());
+            setCardImage(MagicImages.getMissingCardImage());
 
         } else if (cardDefinition != currentCardDefinition || index != currentIndex) {
             currentCardDefinition = cardDefinition;
@@ -145,7 +145,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
                 }
             }
 
-            if (cardDefinition.isInvalid() && cardImage != IconImages.getMissingCardImage()) {
+            if (cardDefinition.isInvalid() && cardImage != MagicImages.getMissingCardImage()) {
                 setCardImage(GraphicsUtils.getGreyScaleImage(cardImage));
             } else {
                 setCardImage(cardImage);

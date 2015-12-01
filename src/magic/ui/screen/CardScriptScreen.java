@@ -18,7 +18,7 @@ import javax.swing.JSplitPane;
 import magic.utility.MagicSystem;
 import magic.data.CardDefinitions;
 import magic.data.MagicIcon;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.ui.URLUtils;
 import magic.exception.DesktopNotSupportedException;
 import magic.model.MagicCardDefinition;
@@ -86,9 +86,8 @@ public class CardScriptScreen
     public List<MenuButton> getMiddleActions() {
         final List<MenuButton> buttons = new ArrayList<>();
         if (MagicSystem.isDevMode()) {
-            buttons.add(
-                    new ActionBarButton(
-                            IconImages.getIcon(MagicIcon.REFRESH_ICON),
+            buttons.add(new ActionBarButton(
+                            MagicImages.getIcon(MagicIcon.REFRESH_ICON),
                             UiString.get(_S3), UiString.get(_S4),
                             new AbstractAction() {
                                 @Override

@@ -10,7 +10,7 @@ import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.util.List;
 import magic.data.MagicIcon;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 
 public class CostPanel extends JPanel {
 
@@ -58,7 +58,7 @@ public class CostPanel extends JPanel {
         }
         int index=0;
         for (final MagicIcon icon : icons) {
-            manaLabels[index++].setIcon(IconImages.getIcon(icon));
+            manaLabels[index++].setIcon(MagicImages.getIcon(icon));
             if (index==manaLabels.length) {
                 break;
             }

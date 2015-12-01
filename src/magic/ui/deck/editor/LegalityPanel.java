@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 import magic.data.MagicIcon;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.translate.UiString;
 import magic.ui.cardtable.CardTablePanel;
 import magic.ui.screen.widget.ActionBarButton;
@@ -143,7 +143,7 @@ class LegalityPanel extends JPanel implements IDeckEditorView {
 
         private JLabel getIconLabel(MagicIcon magicIcon, String text, String tooltip) {
             final JLabel lbl = new JLabel(text);
-            lbl.setIcon(IconImages.getIcon(magicIcon));
+            lbl.setIcon(MagicImages.getIcon(magicIcon));
             lbl.setToolTipText(tooltip);
             return lbl;
         }

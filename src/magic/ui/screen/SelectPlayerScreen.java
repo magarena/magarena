@@ -26,7 +26,7 @@ import javax.swing.SwingUtilities;
 import magic.model.player.IPlayerProfileListener;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
 import magic.ui.screen.interfaces.IActionBar;
@@ -133,7 +133,7 @@ public abstract class SelectPlayerScreen
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        IconImages.getClearAvatarsCache();
+        MagicImages.getClearAvatarsCache();
     }
 
     @Override

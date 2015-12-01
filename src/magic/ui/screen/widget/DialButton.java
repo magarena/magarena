@@ -8,13 +8,13 @@ import java.awt.image.BufferedImage;
 import javax.swing.AbstractAction;
 import javax.swing.ImageIcon;
 import magic.data.MagicIcon;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.ui.utility.GraphicsUtils;
 
 @SuppressWarnings("serial")
 public class DialButton extends ActionBarButton {
 
-    private static final ImageIcon DIAL_ICON = IconImages.getIcon(MagicIcon.MARKER_ICON);
+    private static final ImageIcon DIAL_ICON = MagicImages.getIcon(MagicIcon.MARKER_ICON);
 
     private final int increment;
     private int position;

@@ -14,7 +14,7 @@ import magic.data.DeckType;
 import magic.utility.DeckUtils;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.data.MagicSetDefinitions;
 import magic.exception.InvalidDeckException;
 import magic.model.MagicDeck;
@@ -111,9 +111,8 @@ public class DeckEditorSplitScreen
     @Override
     public List<MenuButton> getMiddleActions() {
         final List<MenuButton> buttons = new ArrayList<>();
-        buttons.add(
-                new ActionBarButton(
-                        IconImages.getIcon(MagicIcon.OPEN_ICON),
+        buttons.add(new ActionBarButton(
+                        MagicImages.getIcon(MagicIcon.OPEN_ICON),
                         "Select Deck", "Select an existing prebuilt or player deck.",
                         new AbstractAction() {
                             @Override
@@ -122,9 +121,8 @@ public class DeckEditorSplitScreen
                             }
                         })
                 );
-        buttons.add(
-                new ActionBarButton(
-                        IconImages.getIcon(MagicIcon.SAVE_ICON),
+        buttons.add(new ActionBarButton(
+                        MagicImages.getIcon(MagicIcon.SAVE_ICON),
                         "Save Deck", "Save deck to file.",
                         new AbstractAction() {
                             @Override
@@ -133,9 +131,8 @@ public class DeckEditorSplitScreen
                             }
                         })
                 );
-        buttons.add(
-                new ActionBarButton(
-                        IconImages.getIcon(MagicIcon.HAND_ICON),
+        buttons.add(new ActionBarButton(
+                        MagicImages.getIcon(MagicIcon.HAND_ICON),
                         "Sample Hand", "See what kind of Hand you might be dealt from this deck.",
                         new AbstractAction() {
                             @Override
@@ -148,9 +145,8 @@ public class DeckEditorSplitScreen
                             }
                         })
                 );
-        buttons.add(
-                new ActionBarButton(
-                        IconImages.getIcon(MagicIcon.TILED_ICON),
+        buttons.add(new ActionBarButton(
+                        MagicImages.getIcon(MagicIcon.TILED_ICON),
                         "Deck View", "Shows complete deck using tiled card images.",
                         new AbstractAction() {
                             @Override

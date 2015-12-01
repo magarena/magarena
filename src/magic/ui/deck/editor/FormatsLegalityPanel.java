@@ -20,7 +20,7 @@ import magic.data.MagicFormat;
 import magic.data.MagicPredefinedFormat;
 import magic.data.MagicIcon;
 import magic.model.MagicDeck;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.translate.UiString;
 import net.miginfocom.swing.MigLayout;
 
@@ -110,8 +110,8 @@ public class FormatsLegalityPanel extends JPanel {
 
     private class FormatsListCellRenderer extends DefaultListCellRenderer {
 
-        private final ImageIcon LEGAL_ICON = IconImages.getIcon(MagicIcon.LEGAL_ICON);
-        private final ImageIcon ILLEGAL_ICON = IconImages.getIcon(MagicIcon.ILLEGAL_ICON);
+        private final ImageIcon LEGAL_ICON = MagicImages.getIcon(MagicIcon.LEGAL_ICON);
+        private final ImageIcon ILLEGAL_ICON = MagicImages.getIcon(MagicIcon.ILLEGAL_ICON);
         private final Color ALT_BCOLOR = new Color(242, 242, 242);
 
         @Override

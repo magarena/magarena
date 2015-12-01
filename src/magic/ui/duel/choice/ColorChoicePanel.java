@@ -10,7 +10,7 @@ import javax.swing.JPanel;
 import magic.model.IGameController;
 import magic.model.MagicColor;
 import magic.model.MagicSource;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.ui.duel.SwingGameController;
 import magic.translate.UiString;
 import magic.ui.duel.viewer.UserActionPanel;
@@ -45,7 +45,7 @@ public class ColorChoicePanel extends JPanel implements ActionListener {
 
         for (final MagicColor color : MagicColor.values()) {
 
-            final JButton button=new JButton(IconImages.getIcon(color));
+            final JButton button=new JButton(MagicImages.getIcon(color));
             button.setActionCommand(Character.toString(color.getSymbol()));
             button.setPreferredSize(BUTTON_DIMENSION);
             button.addActionListener(this);

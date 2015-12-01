@@ -17,7 +17,7 @@ import magic.model.MagicPermanentState;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
 import magic.model.stack.MagicItemOnStack;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 
 public class PermanentViewerInfo {
 
@@ -76,7 +76,7 @@ public class PermanentViewerInfo {
         this.permanent=permanent;
         cardDefinition=permanent.getCardDefinition();
         name=permanent.getName();
-        icon=IconImages.getIcon(permanent);
+        icon=MagicImages.getIcon(permanent);
         index=permanent.getCard().getImageIndex();
         powerToughness=getPowerToughness(permanent);
         abilityFlags=permanent.getAbilityFlags();

@@ -11,7 +11,7 @@ import magic.data.DuelConfig;
 import magic.data.MagicIcon;
 import magic.data.MagicFormat;
 import magic.ui.utility.GraphicsUtils;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.ui.MagicFrame;
 import magic.translate.UiString;
 import magic.ui.dialog.DuelPropertiesDialog;
@@ -83,10 +83,10 @@ public class DuelSettingsPanel extends TexturedPanel implements IThemeStyle {
 
     private void refreshDisplay() {
         removeAll();
-        add(getDuelSettingsLabel(IconImages.getIcon(MagicIcon.LIFE_ICON), "" + startLife), "h 100%");
-        add(getDuelSettingsLabel(IconImages.getIcon(MagicIcon.HAND_ICON), "" + handSize), "h 100%");
-        add(getDuelSettingsLabel(IconImages.getIcon(MagicIcon.TARGET_ICON), "" + maxGames), "h 100%");
-        add(getDuelSettingsLabel(IconImages.getIcon(MagicIcon.CUBE_ICON), " " + cube.getName()), "h 100%");
+        add(getDuelSettingsLabel(MagicImages.getIcon(MagicIcon.LIFE_ICON), "" + startLife), "h 100%");
+        add(getDuelSettingsLabel(MagicImages.getIcon(MagicIcon.HAND_ICON), "" + handSize), "h 100%");
+        add(getDuelSettingsLabel(MagicImages.getIcon(MagicIcon.TARGET_ICON), "" + maxGames), "h 100%");
+        add(getDuelSettingsLabel(MagicImages.getIcon(MagicIcon.CUBE_ICON), " " + cube.getName()), "h 100%");
         revalidate();
         repaint();
     }

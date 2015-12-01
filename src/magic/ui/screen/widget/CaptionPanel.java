@@ -1,6 +1,6 @@
 package magic.ui.screen.widget;
 
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
@@ -26,7 +26,7 @@ public class CaptionPanel extends JPanel {
     @StringContext(eg = "show Magarena About dialog.")
     private static final String _S1 = "About...";
 
-    private final static ImageIcon wizardIcon = IconImages.getIcon(MagicIcon.HEADER_ICON);
+    private final static ImageIcon wizardIcon = MagicImages.getIcon(MagicIcon.HEADER_ICON);
 
     private final String screenCaption;
 

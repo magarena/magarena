@@ -8,7 +8,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.data.MagicIcon;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.translate.UiString;
 import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.interfaces.IOptionsMenu;
@@ -74,7 +74,7 @@ public class StatusBar extends TexturedPanel implements IThemeStyle {
             // wiki button
             if (magScreen.hasWikiPage()) {
                 wikiButton = new ActionBarButton(
-                        IconImages.getIcon(MagicIcon.HELP_ICON),
+                        MagicImages.getIcon(MagicIcon.HELP_ICON),
                         UiString.get(_S1),
                         UiString.get(_S2),
                         new AbstractAction() {
@@ -88,7 +88,7 @@ public class StatusBar extends TexturedPanel implements IThemeStyle {
             // options button
             if (magScreen.hasOptionsMenu()) {
                 optionsButton = new ActionBarButton(
-                        IconImages.getIcon(MagicIcon.OPTIONS_ICON),
+                        MagicImages.getIcon(MagicIcon.OPTIONS_ICON),
                         UiString.get(_S3),
                         UiString.get(_S4),
                         new AbstractAction() {

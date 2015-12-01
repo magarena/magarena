@@ -20,7 +20,7 @@ import magic.FiremindQueueWorker;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.firemind.FiremindClient;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.translate.UiString;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicFileSystem;
@@ -139,7 +139,7 @@ public class FiremindWorkerPanel extends JPanel {
 
     private void setRunningState() {
         setButtonState(true);
-        captionLabel.setIcon(IconImages.getIcon(MagicIcon.BUSY16));
+        captionLabel.setIcon(MagicImages.getIcon(MagicIcon.BUSY16));
     }
 
     private void refreshLayout() {
@@ -171,7 +171,7 @@ public class FiremindWorkerPanel extends JPanel {
     }
     
     private JLabel getCaptionLabel(final String text) {
-        final ImageIcon ii = IconImages.getIcon(MagicIcon.BUSY16);
+        final ImageIcon ii = MagicImages.getIcon(MagicIcon.BUSY16);
         final JLabel lbl = new JLabel(ii);
         lbl.setText(text);
         lbl.setHorizontalAlignment(SwingConstants.LEFT);

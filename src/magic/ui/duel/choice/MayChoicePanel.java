@@ -12,7 +12,7 @@ import javax.swing.KeyStroke;
 import magic.data.MagicIcon;
 import magic.model.IGameController;
 import magic.model.MagicSource;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.ui.duel.SwingGameController;
 import magic.translate.UiString;
 import magic.ui.duel.viewer.UserActionPanel;
@@ -47,7 +47,7 @@ public class MayChoicePanel extends JPanel implements ActionListener {
         buttonPanel.setBorder(FontsAndBorders.EMPTY_BORDER);
         add(buttonPanel,BorderLayout.SOUTH);
 
-        yesButton=new JButton(UiString.get(_S1), IconImages.getIcon(MagicIcon.OK));
+        yesButton=new JButton(UiString.get(_S1), MagicImages.getIcon(MagicIcon.OK));
         yesButton.setPreferredSize(BUTTON_DIMENSION);
         yesButton.addActionListener(this);
         yesButton.setFocusable(false);
@@ -63,7 +63,7 @@ public class MayChoicePanel extends JPanel implements ActionListener {
         });
 
 
-        final JButton noButton=new JButton(UiString.get(_S2), IconImages.getIcon(MagicIcon.CANCEL));
+        final JButton noButton=new JButton(UiString.get(_S2), MagicImages.getIcon(MagicIcon.CANCEL));
         noButton.setPreferredSize(BUTTON_DIMENSION);
         noButton.addActionListener(this);
         noButton.setFocusable(false);

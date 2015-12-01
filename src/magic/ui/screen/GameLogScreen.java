@@ -10,7 +10,7 @@ import javax.swing.JPanel;
 import magic.data.MagicIcon;
 import magic.model.MagicGameLog;
 import magic.ui.utility.DesktopUtils;
-import magic.ui.IconImages;
+import magic.ui.MagicImages;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
 import magic.ui.screen.interfaces.IStatusBar;
@@ -65,9 +65,8 @@ public class GameLogScreen extends TextFileReaderScreen implements IStatusBar {
     public List<MenuButton> getMiddleActions() {
         final List<MenuButton> buttons = new ArrayList<>();
         if (!isBasicView) {
-            buttons.add(
-                new ActionBarButton(
-                        IconImages.getIcon(MagicIcon.OPEN_ICON),
+            buttons.add(new ActionBarButton(
+                        MagicImages.getIcon(MagicIcon.OPEN_ICON),
                         UiString.get(_S1), UiString.get(_S2, MagicGameLog.LOG_FILE),
                         new AbstractAction() {
                             @Override
