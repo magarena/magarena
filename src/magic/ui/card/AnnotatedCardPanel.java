@@ -36,6 +36,7 @@ import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicObject;
 import magic.model.MagicPermanent;
+import magic.ui.MagicImages;
 import magic.ui.ScreenController;
 import magic.ui.duel.SwingGameController;
 import magic.ui.theme.AbilityIcon;
@@ -49,7 +50,6 @@ import org.pushingpixels.trident.ease.Spline;
 public class AnnotatedCardPanel extends JPanel {
 
     private static final Color BCOLOR = new Color(0, 0, 0, 0);
-    private static final Dimension MAX_CARD_SIZE = new Dimension(480, 680);
     private static final Font PT_ADJ_FONT = new Font("Serif", Font.BOLD, 28);
     private static final Font PT_ORIG_FONT = new Font("Dialog", Font.PLAIN, 14);
     private static final Color GRADIENT_FROM_COLOR = Color.WHITE;
@@ -187,12 +187,12 @@ public class AnnotatedCardPanel extends JPanel {
     }
 
     public void setCard(final MagicCardDefinition cardDef, final Dimension containerSize) {
+        this.cardImage = getCardImage(cardDef);
         // <--- order important
         cardIcons = AbilityIcon.getIcons(cardDef);
         setPanelSize(containerSize);
         // --->
         this.magicObject = null;
-        this.cardImage = getCardImage(cardDef); 
         this.modifiedPT = "";
         this.basePT = "";
         setPopupImage();
@@ -204,12 +204,12 @@ public class AnnotatedCardPanel extends JPanel {
      * additional abilities added during game-play (via enchantments, etc).
      */
     public void setCard(final MagicObject magicObject, final Dimension containerSize) {
+        this.cardImage = getCardImage(magicObject);
         // <--- order important
         cardIcons = AbilityIcon.getIcons(magicObject);
         setPanelSize(containerSize);
         // --->
         this.magicObject = magicObject;
-        this.cardImage = getCardImage(magicObject);
         this.modifiedPT = getModifiedPT(magicObject);
         this.basePT = getBasePT(magicObject);
         setPopupImage();
@@ -363,13 +363,10 @@ public class AnnotatedCardPanel extends JPanel {
     }
 
     private void setPanelSize(final Dimension containerSize) {
+        final Dimension preferredSize = MagicImages.getPreferredImageSize(cardImage);
         // keep scaled card in correct proportion.
-        final double cardAspectRatio = (double)MAX_CARD_SIZE.height / MAX_CARD_SIZE.width;
-        // Height
-        final int maxHeight = CONFIG.isCardPopupScaledToScreen() ? containerSize.height : MAX_CARD_SIZE.height;
-        final int scaledHeight = (int)(maxHeight * CONFIG.getCardPopupScale());
-        final int actualHeight = Math.min(Math.min(scaledHeight, containerSize.height), MAX_CARD_SIZE.height);
-        // Width
+        final double cardAspectRatio = (double)preferredSize.height / preferredSize.width;
+        final int actualHeight = Math.min(containerSize.height, preferredSize.height);
         final int actualWidth = (int)(actualHeight / cardAspectRatio);
         final Dimension actualCardImageSize = new Dimension(actualWidth, actualHeight);
         imageOnlyPopupSize = actualCardImageSize;
