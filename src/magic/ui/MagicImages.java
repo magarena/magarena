@@ -1,11 +1,13 @@
 package magic.ui;
 
-import java.awt.RenderingHints;
+import java.awt.Dimension;
+import java.awt.Image;
 import javax.swing.ImageIcon;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
+import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.model.MagicColor;
 import magic.model.MagicManaType;
@@ -23,14 +25,13 @@ public final class MagicImages {
     private static final Map<Integer, ImageIcon> manaIcons = new HashMap<>();
     private static final Map<MagicIcon, ImageIcon> icons = new HashMap<>();
     private static final Map<String, PlayerAvatar> avatarsMap = new HashMap<>();
-
-    public static final BufferedImage BACK_IMAGE = GraphicsUtils.scale(
-            ImageFileIO.toImg(MagicResources.getImageUrl("card-back.jpg"), null),
-            CardImagesProvider.PREFERRED_CARD_SIZE.width,
-            CardImagesProvider.PREFERRED_CARD_SIZE.height,
-            RenderingHints.VALUE_INTERPOLATION_BILINEAR,
-            true
-    );
+    
+    public static final BufferedImage BACK_IMAGE;
+    static {
+        final BufferedImage image = ImageFileIO.toImg(MagicResources.getImageUrl("card-back.jpg"), null);
+        final Dimension size = getPreferredImageSize(image);
+        BACK_IMAGE = GraphicsUtils.scale(image, size.width, size.height);
+    }
 
     // BufferedImages
     public static final BufferedImage MISSING = loadImage("missing.png");
@@ -47,6 +48,15 @@ public final class MagicImages {
     public static final BufferedImage OPAL2 = loadTextureImage("opal2.jpg");
 
     private static final BufferedImage MANA_ICON_SHEET = loadImage(MagicIcon.MANA_ICON_SHEET);
+
+    public static Dimension getPreferredImageSize(final Image image) {
+        final String s[] = GeneralConfig.getInstance().getPreferredImageSize().split("x");
+        if (s.length != 2) {
+            return new Dimension(image.getWidth(null), image.getHeight(null));
+        } else {
+            return new Dimension(Integer.parseInt(s[0].trim()), Integer.parseInt(s[1].trim()));
+        }
+    }
 
     public static ImageIcon getIcon(final MagicIcon icon) {
         if (icon.isManaIcon()) {
