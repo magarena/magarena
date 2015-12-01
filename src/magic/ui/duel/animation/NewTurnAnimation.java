@@ -43,7 +43,7 @@ class NewTurnAnimation extends MagicAnimation {
         g2d.setFont(f);
         final String s = "Turn " + gameInfo.getTurn();
         int w = g2d.getFontMetrics(f).stringWidth(s);
-        int h = (int) g2d.getFontMetrics(f).getAscent(); // .getHeight();
+        int h = g2d.getFontMetrics(f).getAscent(); // .getHeight();
         final Rectangle2D test = g2d.getFontMetrics(f).getStringBounds(s, g);
         int x = (rect.width / 2) - (w / 2);
         g2d.drawString(s, x, rect.y + h + ((rect.height - h) / 2));
