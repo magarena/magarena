@@ -13,7 +13,6 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicPlayer;
 import magic.model.MagicType;
 import magic.ui.CachedImagesProvider;
-import magic.ui.CardImagesProvider;
 import magic.ui.MagicImages;
 import magic.ui.utility.GraphicsUtils;
 import org.pushingpixels.trident.Timeline;
@@ -166,14 +165,14 @@ abstract class CardAnimation extends MagicAnimation {
         
     }
 
-    private Dimension getCardPreviewSize() {
-        final Dimension max = CardImagesProvider.PREFERRED_CARD_SIZE;
+    private Dimension getCardPreviewSize(Image image) {
+        final Dimension imageSize = MagicImages.getPreferredImageSize(image);
         final Dimension container = layoutInfo.getGamePanelSize();
-        if (container.height < max.height) {
-            final int newWidth = (int)((container.height / (double)max.height) * max.width);
+        if (container.height < imageSize.height) {
+            final int newWidth = (int)((container.height / (double)imageSize.height) * imageSize.width);
             return new Dimension(newWidth, container.height);
         } else {
-            return max;
+            return imageSize;
         }
     }
     
@@ -325,8 +324,8 @@ abstract class CardAnimation extends MagicAnimation {
 
         isRunning.set(true);
 
-        this.imageScaler = new ImageScaler(CachedImagesProvider.getInstance().getImage(card, 0, true));
-        this.previewSize = getCardPreviewSize();
+        imageScaler = new ImageScaler(CachedImagesProvider.getInstance().getImage(card, 0, true));
+        this.previewSize = getCardPreviewSize(imageScaler.getImage());
 
         setupTimelineScenario();
 
