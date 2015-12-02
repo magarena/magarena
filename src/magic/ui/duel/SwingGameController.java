@@ -1067,17 +1067,20 @@ public class SwingGameController implements IUIGameController {
         }
     }
 
-    AbstractAction getActionKeyPressedAction() {
-        return new AbstractAction() {
-            @Override
-            public void actionPerformed(final ActionEvent event) {
-                if (duelPane.getDialogPanel().isVisible()) {
-                    duelPane.getDialogPanel().setVisible(false);
-                } else {
-                    actionKeyPressed();
-                }
+    @SuppressWarnings("serial")
+    private final AbstractAction actionKeyPressed = new AbstractAction() {
+        @Override
+        public void actionPerformed(final ActionEvent event) {
+            if (duelPane.getDialogPanel().isVisible()) {
+                duelPane.getDialogPanel().setVisible(false);
+            } else {
+                actionKeyPressed();
             }
-        };
+        }
+    };
+
+    AbstractAction getActionKeyPressedAction() {
+        return actionKeyPressed;
     }
-    
+
 }
