@@ -5,6 +5,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={2}{U}
+effect=Draw two cards.~If you control no artifacts, discard a card.
 timing=draw
-requires_groovy_code
 oracle=Draw two cards. If you control no artifacts, discard a card.

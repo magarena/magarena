@@ -5,6 +5,6 @@ rarity=C
 type=Tribal,Instant
 subtype=Kithkin
 cost={1}{W}
+effect=Creatures you control get +1/+1 until end of turn.~If you control a Kithkin, draw a card.
 timing=pump
-requires_groovy_code
 oracle=Creatures you control get +1/+1 until end of turn. If you control a Kithkin, draw a card.

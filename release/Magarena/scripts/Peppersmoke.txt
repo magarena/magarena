@@ -5,7 +5,7 @@ rarity=C
 type=Tribal,Instant
 subtype=Faerie
 cost={B}
+effect=Target creature gets -1/-1 until end of turn.~If you control a Faerie, draw a card.
 timing=removal
 removal=1
-requires_groovy_code
 oracle=Target creature gets -1/-1 until end of turn. If you control a Faerie, draw a card.
