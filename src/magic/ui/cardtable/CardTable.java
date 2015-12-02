@@ -259,8 +259,8 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
         }
     }
 
+    @SuppressWarnings("serial")
     private static class ManaCostCellRenderer extends DefaultTableCellRenderer {
-        private static final long serialVersionUID = 113245L;
 
         @Override
         public Component getTableCellRendererComponent(final JTable table, final Object value, final boolean isSelected, final boolean hasFocus, final int row, final int col) {

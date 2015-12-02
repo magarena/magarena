@@ -19,9 +19,8 @@ import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.TitleBar;
 
+@SuppressWarnings("serial")
 abstract class PermanentsViewer extends JPanel implements IChoiceViewer, IUpdatable {
-
-    private static final long serialVersionUID = 1L;
 
     private static final Dimension SEPARATOR_DIMENSION=new Dimension(0,10);
 

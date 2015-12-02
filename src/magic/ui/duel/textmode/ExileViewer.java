@@ -3,9 +3,8 @@ package magic.ui.duel.textmode;
 import magic.ui.duel.SwingGameController;
 import magic.ui.theme.Theme;
 
+@SuppressWarnings("serial")
 class ExileViewer extends CardListViewer {
-    private static final long serialVersionUID = 1L;
-
     ExileViewer(final SwingGameController controller, final boolean opponent) {
         super(
             controller,

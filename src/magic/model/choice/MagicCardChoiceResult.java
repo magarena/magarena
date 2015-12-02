@@ -10,9 +10,8 @@ import java.util.List;
 import java.util.ArrayList;
 import magic.model.MagicMessage;
 
+@SuppressWarnings("serial")
 public class MagicCardChoiceResult extends ArrayList<MagicCard> implements MagicMappable<MagicCardChoiceResult>, MagicCopyable {
-
-    private static final long serialVersionUID = 1L;
 
     MagicCardChoiceResult(final MagicCard[] cards) {
         for (final MagicCard card : cards) {

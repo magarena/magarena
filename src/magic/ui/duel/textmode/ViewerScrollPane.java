@@ -9,9 +9,8 @@ import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 
+@SuppressWarnings("serial")
 class ViewerScrollPane extends JScrollPane {
-
-    private static final long serialVersionUID = 1L;
 
     private JPanel contentPanel;
 

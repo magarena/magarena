@@ -54,13 +54,15 @@ public class MayChoicePanel extends JPanel implements ActionListener {
         buttonPanel.add(yesButton);
 
         yesButton.getInputMap(2).put(KeyStroke.getKeyStroke('y'),"yes");
-        yesButton.getActionMap().put("yes",new AbstractAction() {
-            private static final long serialVersionUID = 1L;
+
+        @SuppressWarnings("serial")
+        final AbstractAction yesAction = new AbstractAction() {
             public void actionPerformed(final ActionEvent evt) {
                 yes = true;
                 controller.actionClicked();
             }
-        });
+        };
+        yesButton.getActionMap().put("yes", yesAction);
 
 
         final JButton noButton=new JButton(UiString.get(_S2), MagicImages.getIcon(MagicIcon.CANCEL));
@@ -70,13 +72,15 @@ public class MayChoicePanel extends JPanel implements ActionListener {
         buttonPanel.add(noButton);
 
         noButton.getInputMap(2).put(KeyStroke.getKeyStroke('n'),"no");
-        noButton.getActionMap().put("no",new AbstractAction() {
-            private static final long serialVersionUID = 1L;
+        
+        @SuppressWarnings("serial")
+        final AbstractAction noAction = new AbstractAction() {
             public void actionPerformed(final ActionEvent evt) {
                 yes = false;
                 controller.actionClicked();
             }
-        });
+        };
+        noButton.getActionMap().put("no", noAction);
     }
 
     public boolean isYesClicked() {

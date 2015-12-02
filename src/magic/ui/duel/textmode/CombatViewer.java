@@ -10,9 +10,8 @@ import magic.ui.duel.PermanentViewerInfo;
 import magic.ui.duel.PlayerViewerInfo;
 import magic.ui.widget.FontsAndBorders;
 
+@SuppressWarnings("serial")
 class CombatViewer extends PermanentsViewer {
-
-    private static final long serialVersionUID = 1L;
 
     CombatViewer(final SwingGameController controller) {
         super(controller);

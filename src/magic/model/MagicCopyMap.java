@@ -4,9 +4,8 @@ import java.lang.reflect.Array;
 import java.util.Collection;
 import java.util.HashMap;
 
+@SuppressWarnings("serial")
 public class MagicCopyMap extends HashMap<MagicCopyable,MagicCopyable> {
-
-    private static final long serialVersionUID = 1L;
 
     @SuppressWarnings("unchecked")
     public <E extends MagicCopyable> E copy(final E source) {

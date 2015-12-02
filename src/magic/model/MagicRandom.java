@@ -2,11 +2,11 @@ package magic.model;
 
 import java.util.Random;
 
+@SuppressWarnings("serial")
 public class MagicRandom extends Random {
 
     private long state;
     private static MagicRandom RNG = new MagicRandom();
-    private static final long serialVersionUID = 1L;
 
     static {
         final String seedStr = System.getProperty("rndSeed");

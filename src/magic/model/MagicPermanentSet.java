@@ -2,9 +2,8 @@ package magic.model;
 
 import java.util.TreeSet;
 
+@SuppressWarnings("serial")
 public class MagicPermanentSet extends TreeSet<MagicPermanent> {
-
-    private static final long serialVersionUID = 1L;
 
     MagicPermanentSet() {}
 

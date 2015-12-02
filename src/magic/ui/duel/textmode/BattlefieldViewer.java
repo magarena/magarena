@@ -10,9 +10,8 @@ import magic.ui.duel.PermanentFilter;
 import magic.ui.duel.PermanentViewerInfo;
 import magic.ui.widget.TitleBar;
 
+@SuppressWarnings("serial")
 class BattlefieldViewer extends PermanentsViewer {
-
-    private static final long serialVersionUID = 1L;
 
     private final boolean opponent;
     private final PermanentFilter permanentFilter;

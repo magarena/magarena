@@ -19,9 +19,8 @@ import java.util.TreeSet;
 import magic.model.MagicCard;
 import magic.ui.utility.MagicStyle;
 
+@SuppressWarnings("serial")
 public class ImageCombatViewer extends JPanel implements IChoiceViewer {
-
-    private static final long serialVersionUID = 1L;
 
     private final SwingGameController controller;
     private final ImagePermanentsViewer permanentsViewer;

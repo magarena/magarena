@@ -4,9 +4,8 @@ import magic.model.MagicCopyMap;
 
 import java.util.LinkedList;
 
+@SuppressWarnings("serial")
 public class MagicEventQueue extends LinkedList<MagicEvent> {
-
-    private static final long serialVersionUID = 1L;
 
     public MagicEventQueue() {}
 

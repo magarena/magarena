@@ -3,9 +3,8 @@ package magic.model.trigger;
 import java.util.ArrayList;
 import java.util.Collection;
 
+@SuppressWarnings("serial")
 public class MagicPermanentTriggerList extends ArrayList<MagicPermanentTrigger> {
-
-    private static final long serialVersionUID = 1L;
 
     public MagicPermanentTriggerList() {}
 

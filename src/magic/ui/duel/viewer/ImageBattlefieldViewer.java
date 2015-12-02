@@ -16,9 +16,8 @@ import java.util.Set;
 import magic.model.MagicCard;
 import magic.ui.utility.MagicStyle;
 
+@SuppressWarnings("serial")
 public class ImageBattlefieldViewer extends JPanel implements IChoiceViewer, IUpdatable {
-
-    private static final long serialVersionUID = 1L;
 
     private final SwingGameController controller;
     private final boolean opponent;

@@ -14,9 +14,8 @@ import magic.model.MagicCard;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.duel.SwingGameController;
 
+@SuppressWarnings("serial")
 public class ImagePermanentsViewer extends JPanel {
-
-    private static final long serialVersionUID = 1L;
 
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
     private static final int POSITION_SPACING = 60;

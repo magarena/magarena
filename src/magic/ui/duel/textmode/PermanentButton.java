@@ -15,9 +15,8 @@ import magic.ui.theme.ThemeFactory;
 import magic.ui.utility.MagicStyle;
 import magic.ui.widget.PanelButton;
 
+@SuppressWarnings("serial")
 class PermanentButton extends PanelButton implements IChoiceViewer {
-
-    private static final long serialVersionUID = 1L;
 
     private final PermanentViewerInfo permanentInfo;
     private final SwingGameController controller;

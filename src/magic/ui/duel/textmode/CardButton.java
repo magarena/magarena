@@ -16,8 +16,8 @@ import magic.ui.utility.MagicStyle;
 import magic.ui.widget.CostPanel;
 import magic.ui.widget.PanelButton;
 
+@SuppressWarnings("serial")
 class CardButton extends PanelButton implements IChoiceViewer {
-    private static final long serialVersionUID = 1L;
 
     private final SwingGameController controller;
     private final MagicCard card;

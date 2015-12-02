@@ -15,9 +15,8 @@ import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
 import magic.ui.utility.MagicStyle;
 
+@SuppressWarnings("serial")
 public class ZoneBackgroundLabel extends JLabel {
-
-    private static final long serialVersionUID = 1L;
 
     private boolean game;
     private boolean image=true;

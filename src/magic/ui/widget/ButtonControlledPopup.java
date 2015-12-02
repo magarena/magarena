@@ -17,9 +17,8 @@ import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 import magic.ui.ScreenController;
 
+@SuppressWarnings("serial")
 public class ButtonControlledPopup extends TexturedPanel implements ActionListener, WindowFocusListener {
-
-    private static final long serialVersionUID = 54232L;
 
     public static final int STARTING_WIDTH = 260;
     public static final int STARTING_HEIGHT = 300;
@@ -54,13 +53,15 @@ public class ButtonControlledPopup extends TexturedPanel implements ActionListen
     private void setEscapeKeyAction() {
         JRootPane root = dialog.getRootPane();
         root.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("ESCAPE"), "closeDialog");
-        root.getActionMap().put("closeDialog", new AbstractAction() {
-            private static final long serialVersionUID = 1L;
+        
+        @SuppressWarnings("serial")
+        final AbstractAction closeAction = new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 hidePopup();
             }
-        });
+        };
+        root.getActionMap().put("closeDialog", closeAction);
     }
 
     public void setPopupSize(final int width, final int height) {

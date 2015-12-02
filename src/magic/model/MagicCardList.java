@@ -4,9 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+@SuppressWarnings("serial")
 public class MagicCardList extends ArrayList<MagicCard> implements MagicCopyable {
-
-    private static final long serialVersionUID = 1L;
 
     public MagicCardList() {}
 

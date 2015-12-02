@@ -4,9 +4,8 @@ import magic.model.MagicCardList;
 import magic.ui.duel.SwingGameController;
 import magic.ui.theme.Theme;
 
+@SuppressWarnings("serial")
 class OtherViewer extends CardListViewer {
-    private static final long serialVersionUID = 1L;
-
     OtherViewer(final MagicCardList cards, final SwingGameController controller) {
         super(
             controller,

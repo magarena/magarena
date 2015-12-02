@@ -8,9 +8,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 
+@SuppressWarnings("serial")
 public class MagicDeclareAttackersResult extends ArrayList<MagicPermanent> implements MagicMappable<MagicDeclareAttackersResult> {
-
-    private static final long serialVersionUID = 1L;
 
     MagicDeclareAttackersResult() {}
 

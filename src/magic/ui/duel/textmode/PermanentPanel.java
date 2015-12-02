@@ -17,9 +17,8 @@ import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
 
+@SuppressWarnings("serial")
 class PermanentPanel extends JPanel implements IChoiceViewer {
-
-    private static final long serialVersionUID = 1L;
 
     private final PermanentButton button;
     private final List<PermanentButton> linkedButtons;

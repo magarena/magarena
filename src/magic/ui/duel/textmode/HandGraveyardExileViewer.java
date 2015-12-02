@@ -11,8 +11,8 @@ import magic.ui.utility.MagicStyle;
 import magic.ui.widget.TabSelector;
 import magic.ui.widget.TitleBar;
 
+@SuppressWarnings("serial")
 class HandGraveyardExileViewer extends JPanel implements ChangeListener {
-    private static final long serialVersionUID = 1L;
 
     private final CardListViewer[] viewers;
     private final JPanel cardPanel;

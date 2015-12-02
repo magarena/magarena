@@ -12,9 +12,8 @@ import java.util.List;
 import magic.data.MagicIcon;
 import magic.ui.MagicImages;
 
+@SuppressWarnings("serial")
 public class CostPanel extends JPanel {
-
-    private static final long serialVersionUID = 1L;
 
     private static final Dimension MANA_ICON_SIZE = new Dimension(17,17);
 

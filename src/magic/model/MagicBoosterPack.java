@@ -2,7 +2,7 @@ package magic.model;
 
 import java.util.ArrayList;
 
+@SuppressWarnings("serial")
 public class MagicBoosterPack extends ArrayList<MagicCardDefinition> {
 
-    private static final long serialVersionUID = 1L;
 }

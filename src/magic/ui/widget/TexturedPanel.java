@@ -10,9 +10,8 @@ import java.awt.Graphics;
 import java.awt.Point;
 import java.awt.image.BufferedImage;
 
+@SuppressWarnings("serial")
 public class TexturedPanel extends JPanel {
-
-    private static final long serialVersionUID = 1L;
 
     private boolean start;
     private int startX;

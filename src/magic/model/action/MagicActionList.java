@@ -2,6 +2,6 @@ package magic.model.action;
 
 import java.util.LinkedList;
 
+@SuppressWarnings("serial")
 public class MagicActionList extends LinkedList<MagicAction> {
-    private static final long serialVersionUID = 1L;
 }
