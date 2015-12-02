@@ -920,7 +920,9 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     final MagicPlayer player = ARG.youPlayer(event, matcher);
                     final int multiplier = count.getAmount(event);
-                    game.logAppendMessage(event.getPlayer(), "("+multiplier+")");
+                    if (multiplier>1) {
+                        game.logAppendMessage(event.getPlayer(), "(" + amount * multiplier + ")");
+                    }
                     game.doAction(new ChangeLifeAction(player, amount * multiplier));
                 }
             };
