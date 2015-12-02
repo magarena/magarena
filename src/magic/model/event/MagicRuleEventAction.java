@@ -831,7 +831,9 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     final int multiplier = count.getAmount(event);
                     final int total = amount * multiplier;
-                    game.logAppendMessage(event.getPlayer(), "("+multiplier+")");
+                    if (multiplier>1) {
+                        game.logAppendMessage(event.getPlayer(), "(" + total + ")");
+                    }
                     event.processTargetPlayer(game,new MagicPlayerAction() {
                         public void doAction(final MagicPlayer player) {
                             if (isRandom) {
