@@ -3583,9 +3583,11 @@ public enum MagicRuleEventAction {
             final MagicEventAction[] acts = new MagicEventAction[part.length];
             acts[0] = main;
             for (int i = 1; i < part.length; i++) {
-                final Matcher referenceMatcher = TARGET_REFERENCE.matcher(part[i]);
-                final boolean hasReference = referenceMatcher.find();
-                final String rider = TARGET_REFERENCE.matcher(part[i]).replaceAll("target permanent");
+                final Matcher matcher = TARGET_REFERENCE.matcher(part[i]);
+                final boolean hasReference = matcher.find();
+                final String rider = (hasReference && matcher.group().contains("player")) ?
+                        matcher.replaceAll("target player") :
+                        matcher.replaceAll("target permanent");
                 final MagicSourceEvent riderSourceEvent = MagicRuleEventAction.create(rider);
 
                 //rider cannot have choices
@@ -3594,7 +3596,7 @@ public enum MagicRuleEventAction {
                 }
 
                 acts[i] = riderSourceEvent.getEventAction();
-                part[i] = TARGET_REFERENCE.matcher(part[i]).replaceAll("$1");
+                part[i] = matcher.replaceAll("$1");
             }
             return MagicEventActionFactory.compose(acts);
         } else {
