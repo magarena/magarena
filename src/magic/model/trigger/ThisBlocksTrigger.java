@@ -16,7 +16,7 @@ public abstract class ThisBlocksTrigger extends BlocksTrigger {
         return new ThisBlocksTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent blocker) {
-                return sourceEvent.getEvent(permanent);
+                return sourceEvent.getTriggerEvent(permanent);
             }
         };
     }
@@ -30,7 +30,7 @@ public abstract class ThisBlocksTrigger extends BlocksTrigger {
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent blocker) {
-                return sourceEvent.getEvent(permanent, permanent.getBlockedCreature());
+                return sourceEvent.getTriggerEvent(permanent, permanent.getBlockedCreature());
             }
         };
     }

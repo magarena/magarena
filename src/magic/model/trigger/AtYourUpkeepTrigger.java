@@ -28,7 +28,7 @@ public abstract class AtYourUpkeepTrigger extends AtUpkeepTrigger {
         return new AtYourUpkeepTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
-                return sourceEvent.getEvent(permanent);
+                return sourceEvent.getTriggerEvent(permanent);
             }
         };
     }

@@ -21,7 +21,7 @@ public abstract class ThisBecomesBlockedByTrigger extends BlocksTrigger {
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent blocker) {
-                return sourceEvent.getEvent(permanent, blocker);
+                return sourceEvent.getTriggerEvent(permanent, blocker);
             }
         };
     }

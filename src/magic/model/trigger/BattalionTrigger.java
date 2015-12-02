@@ -16,7 +16,7 @@ public abstract class BattalionTrigger extends ThisAttacksTrigger {
         return new BattalionTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent attacker) {
-                return sourceEvent.getEvent(permanent);
+                return sourceEvent.getTriggerEvent(permanent);
             }
         };
     }

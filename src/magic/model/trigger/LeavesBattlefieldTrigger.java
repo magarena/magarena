@@ -37,7 +37,7 @@ public abstract class LeavesBattlefieldTrigger extends MagicTrigger<RemoveFromPl
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final RemoveFromPlayAction act) {
-                return sourceEvent.getEvent(permanent);
+                return sourceEvent.getTriggerEvent(permanent);
             }
         };
     }
@@ -50,7 +50,7 @@ public abstract class LeavesBattlefieldTrigger extends MagicTrigger<RemoveFromPl
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final RemoveFromPlayAction act) {
-                return sourceEvent.getEvent(permanent);
+                return sourceEvent.getTriggerEvent(permanent);
             }
         };
     }
@@ -63,7 +63,7 @@ public abstract class LeavesBattlefieldTrigger extends MagicTrigger<RemoveFromPl
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final RemoveFromPlayAction act) {
-                return sourceEvent.getEvent(permanent);
+                return sourceEvent.getTriggerEvent(permanent);
             }
         };
     }

@@ -21,7 +21,7 @@ public abstract class ThisAttacksTrigger extends AttacksTrigger {
         return new ThisAttacksTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent attacker) {
-                return sourceEvent.getEvent(permanent);
+                return sourceEvent.getTriggerEvent(permanent);
             }
         };
     }

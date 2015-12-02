@@ -27,7 +27,7 @@ public abstract class ThisCycleTrigger extends MagicTrigger<MagicCard> {
         return new ThisCycleTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCard card) {
-                return sourceEvent.getEvent(card);
+                return sourceEvent.getTriggerEvent(card);
             }
         };
     }

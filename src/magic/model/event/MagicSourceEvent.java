@@ -37,8 +37,20 @@ public class MagicSourceEvent {
         text = aText;
     }
     
+    public MagicEvent getTriggerEvent(final MagicSource source, final MagicPlayer player, final MagicCopyable ref) {
+        return ifCond.accept(source) ? getEvent(source, player, ref) : MagicEvent.NONE;
+    }
+    
+    public MagicEvent getTriggerEvent(final MagicSource source, final MagicCopyable ref) {
+        return ifCond.accept(source) ? getEvent(source, ref) : MagicEvent.NONE;
+    }
+    
+    public MagicEvent getTriggerEvent(final MagicSource source) {
+        return ifCond.accept(source) ? getEvent(source) : MagicEvent.NONE;
+    }
+    
     public MagicEvent getEvent(final MagicSource source, final MagicPlayer player, final MagicCopyable ref) {
-        return ifCond.accept(source) ? new MagicEvent(
+        return new MagicEvent(
             source,
             player,
             choiceFact.build(source, player, ref),
@@ -46,7 +58,7 @@ public class MagicSourceEvent {
             ref,
             action,
             text
-        ) : MagicEvent.NONE;
+        );
     }
     
     public MagicEvent getEvent(final MagicSource source, final MagicCopyable ref) {

@@ -46,7 +46,7 @@ public abstract class DamageIsDealtTrigger extends MagicTrigger<MagicDamage> {
 
             @Override
             public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicDamage damage) {
-                return sourceEvent.getEvent(permanent, damage.getTargetPermanent());
+                return sourceEvent.getTriggerEvent(permanent, damage.getTargetPermanent());
             }
         };
     }
@@ -64,7 +64,7 @@ public abstract class DamageIsDealtTrigger extends MagicTrigger<MagicDamage> {
 
             @Override
             public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicDamage damage) {
-                return sourceEvent.getEvent(permanent, damage.getTargetPlayer());
+                return sourceEvent.getTriggerEvent(permanent, damage.getTargetPlayer());
             }
         };
     }
@@ -82,7 +82,7 @@ public abstract class DamageIsDealtTrigger extends MagicTrigger<MagicDamage> {
 
             @Override
             public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicDamage damage) {
-                return sourceEvent.getEvent(permanent, damage.getSourcePermanent());
+                return sourceEvent.getTriggerEvent(permanent, damage.getSourcePermanent());
             }
         };
     }
@@ -100,7 +100,7 @@ public abstract class DamageIsDealtTrigger extends MagicTrigger<MagicDamage> {
 
             @Override
             public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicDamage damage) {
-                return sourceEvent.getEvent(permanent, damage.getTargetPlayer());
+                return sourceEvent.getTriggerEvent(permanent, damage.getTargetPlayer());
             }
         };
     }
@@ -117,7 +117,7 @@ public abstract class DamageIsDealtTrigger extends MagicTrigger<MagicDamage> {
 
             @Override
             public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicDamage damage) {
-                return sourceEvent.getEvent(permanent, damage.getSourcePermanent());
+                return sourceEvent.getTriggerEvent(permanent, damage.getSourcePermanent());
             }
         };
     }
@@ -134,7 +134,7 @@ public abstract class DamageIsDealtTrigger extends MagicTrigger<MagicDamage> {
 
             @Override
             public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicDamage damage) {
-                return sourceEvent.getEvent(permanent, damage.getTargetPermanent());
+                return sourceEvent.getTriggerEvent(permanent, damage.getTargetPermanent());
             }
         };
     }

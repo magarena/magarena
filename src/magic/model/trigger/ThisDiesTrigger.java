@@ -10,7 +10,7 @@ public abstract class ThisDiesTrigger extends OtherDiesTrigger {
         return new ThisDiesTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent source, final MagicPermanent died) {
-                return sourceEvent.getEvent(source);
+                return sourceEvent.getTriggerEvent(source);
             }
         };
     }

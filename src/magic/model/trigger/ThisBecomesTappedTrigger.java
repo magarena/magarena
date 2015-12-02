@@ -15,7 +15,7 @@ public abstract class ThisBecomesTappedTrigger extends BecomesTappedTrigger {
         return new ThisBecomesTappedTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent untapped) {
-                return sourceEvent.getEvent(permanent);
+                return sourceEvent.getTriggerEvent(permanent);
             }
         };
     }

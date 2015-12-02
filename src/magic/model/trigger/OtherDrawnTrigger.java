@@ -21,7 +21,7 @@ public abstract class OtherDrawnTrigger extends MagicTrigger<MagicCard> {
         return new OtherDrawnTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCard card) {
-                return sourceEvent.getEvent(permanent, card.getOwner());
+                return sourceEvent.getTriggerEvent(permanent, card.getOwner());
             }
         };
     }
@@ -34,7 +34,7 @@ public abstract class OtherDrawnTrigger extends MagicTrigger<MagicCard> {
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCard card) {
-                return sourceEvent.getEvent(permanent, card.getOwner());
+                return sourceEvent.getTriggerEvent(permanent, card.getOwner());
             }
         };
     }
@@ -47,7 +47,7 @@ public abstract class OtherDrawnTrigger extends MagicTrigger<MagicCard> {
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCard card) {
-                return sourceEvent.getEvent(permanent, card.getOwner());
+                return sourceEvent.getTriggerEvent(permanent, card.getOwner());
             }
         };
     }

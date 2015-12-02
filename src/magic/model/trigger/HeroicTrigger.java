@@ -21,7 +21,7 @@ public abstract class HeroicTrigger extends ThisBecomesTargetTrigger {
         return new HeroicTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicItemOnStack data) {
-                return sourceEvent.getEvent(permanent);
+                return sourceEvent.getTriggerEvent(permanent);
             }
         };
     }

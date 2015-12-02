@@ -27,7 +27,7 @@ public abstract class BecomesStateTrigger extends MagicTrigger<ChangeStateAction
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final ChangeStateAction data) {
-                return sourceEvent.getEvent(permanent);
+                return sourceEvent.getTriggerEvent(permanent);
             }
         };
     }
@@ -40,7 +40,7 @@ public abstract class BecomesStateTrigger extends MagicTrigger<ChangeStateAction
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final ChangeStateAction data) {
-                return sourceEvent.getEvent(permanent);
+                return sourceEvent.getTriggerEvent(permanent);
             }
         };
     }

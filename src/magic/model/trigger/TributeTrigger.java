@@ -41,7 +41,7 @@ public abstract class TributeTrigger extends EntersBattlefieldTrigger {
         return new TributeTrigger(amt) {
             @Override
             public MagicEvent getEvent(final MagicPermanent permanent) {
-                return sourceEvent.getEvent(permanent);
+                return sourceEvent.getTriggerEvent(permanent);
             }
         };
     }

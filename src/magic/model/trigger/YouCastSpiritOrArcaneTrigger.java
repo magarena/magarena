@@ -25,7 +25,7 @@ public abstract class YouCastSpiritOrArcaneTrigger extends OtherSpellIsCastTrigg
         return new YouCastSpiritOrArcaneTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCardOnStack spell) {
-                return sourceEvent.getEvent(permanent);
+                return sourceEvent.getTriggerEvent(permanent);
             }
         };
     }

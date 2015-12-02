@@ -15,7 +15,7 @@ public abstract class ThisTurnedFaceUpTrigger extends TurnedFaceUpTrigger {
         return new ThisTurnedFaceUpTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent faceUp) {
-                return sourceEvent.getEvent(permanent);
+                return sourceEvent.getTriggerEvent(permanent);
             }
         };
     }

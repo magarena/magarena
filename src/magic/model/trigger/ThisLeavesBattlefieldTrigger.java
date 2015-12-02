@@ -24,7 +24,7 @@ public abstract class ThisLeavesBattlefieldTrigger extends LeavesBattlefieldTrig
         return new ThisLeavesBattlefieldTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final RemoveFromPlayAction data) {
-                return sourceEvent.getEvent(permanent);
+                return sourceEvent.getTriggerEvent(permanent);
             }
         };
     }

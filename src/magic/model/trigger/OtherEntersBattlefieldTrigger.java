@@ -33,7 +33,7 @@ public abstract class OtherEntersBattlefieldTrigger extends MagicTrigger<MagicPe
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent played) {
-                return sourceEvent.getEvent(permanent, played);
+                return sourceEvent.getTriggerEvent(permanent, played);
             }
         };
     }
@@ -46,7 +46,7 @@ public abstract class OtherEntersBattlefieldTrigger extends MagicTrigger<MagicPe
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent played) {
-                return sourceEvent.getEvent(permanent, played);
+                return sourceEvent.getTriggerEvent(permanent, played);
             }
         };
     }

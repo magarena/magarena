@@ -21,7 +21,7 @@ public abstract class EntersBattlefieldTrigger extends MagicTrigger<MagicPayedCo
         return new EntersBattlefieldTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost data) {
-                return sourceEvent.getEvent(permanent);
+                return sourceEvent.getTriggerEvent(permanent);
             }
         };
     }
@@ -30,7 +30,7 @@ public abstract class EntersBattlefieldTrigger extends MagicTrigger<MagicPayedCo
         return new EntersBattlefieldTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost data) {
-                return sourceEvent.getEvent(permanent);
+                return sourceEvent.getTriggerEvent(permanent);
             }
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPayedCost payedCost) {

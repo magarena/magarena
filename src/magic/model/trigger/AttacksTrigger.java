@@ -24,7 +24,7 @@ public abstract class AttacksTrigger extends MagicTrigger<MagicPermanent> {
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent attacker) {
-                return sourceEvent.getEvent(permanent, attacker);
+                return sourceEvent.getTriggerEvent(permanent, attacker);
             }
         };
     }
@@ -36,7 +36,7 @@ public abstract class AttacksTrigger extends MagicTrigger<MagicPermanent> {
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent attacker) {
-                return sourceEvent.getEvent(permanent, attacker);
+                return sourceEvent.getTriggerEvent(permanent, attacker);
             }
         };
     }

@@ -27,7 +27,7 @@ public abstract class CardIsDiscardedTrigger extends OtherPutIntoGraveyardTrigge
         return new CardIsDiscardedTrigger() {
             @Override
             public MagicEvent getEvent(final MagicPermanent source, final MagicCard card) {
-                return sourceEvent.getEvent(source, card.getOwner());
+                return sourceEvent.getTriggerEvent(source, card.getOwner());
             }
         };
     }
@@ -41,7 +41,7 @@ public abstract class CardIsDiscardedTrigger extends OtherPutIntoGraveyardTrigge
 
             @Override
             public MagicEvent getEvent(final MagicPermanent source, final MagicCard card) {
-                return sourceEvent.getEvent(source, card.getOwner());
+                return sourceEvent.getTriggerEvent(source, card.getOwner());
             }
         };
     }

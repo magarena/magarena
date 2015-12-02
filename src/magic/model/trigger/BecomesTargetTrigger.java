@@ -30,7 +30,7 @@ public abstract class BecomesTargetTrigger extends MagicTrigger<MagicItemOnStack
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicItemOnStack itemOnStack) {
-                return sourceEvent.getEvent(permanent, (MagicPermanent)itemOnStack.getTarget());
+                return sourceEvent.getTriggerEvent(permanent, (MagicPermanent)itemOnStack.getTarget());
             }
         };
     }

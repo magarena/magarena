@@ -21,7 +21,7 @@ public abstract class AtDrawTrigger extends MagicTrigger<MagicPlayer> {
         return new AtDrawTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer drawPlayer) {
-                return sourceEvent.getEvent(permanent, drawPlayer);
+                return sourceEvent.getTriggerEvent(permanent, drawPlayer);
             }
         };
     }
@@ -34,7 +34,7 @@ public abstract class AtDrawTrigger extends MagicTrigger<MagicPlayer> {
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer drawPlayer) {
-                return sourceEvent.getEvent(permanent, drawPlayer);
+                return sourceEvent.getTriggerEvent(permanent, drawPlayer);
             }
         };
     }
@@ -47,7 +47,7 @@ public abstract class AtDrawTrigger extends MagicTrigger<MagicPlayer> {
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer drawPlayer) {
-                return sourceEvent.getEvent(permanent, drawPlayer);
+                return sourceEvent.getTriggerEvent(permanent, drawPlayer);
             }
         };
     }

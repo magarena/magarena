@@ -25,7 +25,7 @@ public abstract class OtherDiesTrigger extends MagicTrigger<MagicPermanent> {
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent died) {
-                return sourceEvent.getEvent(permanent, died);
+                return sourceEvent.getTriggerEvent(permanent, died);
             }
         };
     }
@@ -38,7 +38,7 @@ public abstract class OtherDiesTrigger extends MagicTrigger<MagicPermanent> {
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent died) {
-                return sourceEvent.getEvent(permanent, died);
+                return sourceEvent.getTriggerEvent(permanent, died);
             }
         };
     }

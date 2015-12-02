@@ -30,7 +30,7 @@ public abstract class LifeIsGainedTrigger extends MagicTrigger<MagicLifeChangeTr
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicLifeChangeTriggerData data) {
-                return sourceEvent.getEvent(permanent);
+                return sourceEvent.getTriggerEvent(permanent);
             }
         };
     }

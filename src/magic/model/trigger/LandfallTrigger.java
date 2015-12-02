@@ -21,7 +21,7 @@ public abstract class LandfallTrigger extends OtherEntersBattlefieldTrigger {
         return new LandfallTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent played) {
-                return sourceEvent.getEvent(permanent);
+                return sourceEvent.getTriggerEvent(permanent);
             }
         };
     }

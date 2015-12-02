@@ -26,7 +26,7 @@ public abstract class TurnedFaceUpTrigger extends MagicTrigger<MagicPermanent> {
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent faceUp) {
-                return sourceEvent.getEvent(permanent, faceUp);
+                return sourceEvent.getTriggerEvent(permanent, faceUp);
             }
         };
     }
