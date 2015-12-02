@@ -50,7 +50,7 @@ import org.pushingpixels.trident.ease.Spline;
 public class AnnotatedCardPanel extends JPanel {
 
     private static final Color BCOLOR = new Color(0, 0, 0, 0);
-    private static final Font PT_FONT = new Font("Serif", Font.BOLD, 18);
+    private static final Font PT_FONT = new Font("Serif", Font.BOLD, 16);
     private static final Color GRADIENT_FROM_COLOR = Color.WHITE;
     private static final Color GRADIENT_TO_COLOR = Color.WHITE.darker();
 
@@ -253,12 +253,7 @@ public class AnnotatedCardPanel extends JPanel {
         final Graphics2D g2d = overlay.createGraphics();
 
         // use a rectangular opaque mask to hide original P/T.
-        final Rectangle mask = new Rectangle(
-            (int)(overlay.getWidth() * 0.815d),
-            (int)(overlay.getHeight() * 0.92d),
-            (int)(overlay.getWidth() * 0.14d),
-            (int)(overlay.getHeight() * 0.038d)
-        );
+        final Rectangle mask = new Rectangle(254, 408, 38, 18);
         g2d.setColor(maskColor);
         g2d.fillRect(mask.x, mask.y, mask.width, mask.height);
 
@@ -286,8 +281,8 @@ public class AnnotatedCardPanel extends JPanel {
         // get approximate background color of P/T box on card.
         final Color maskColor = getPTOverlayBackgroundColor(
             cardImage,
-            (int)(cardImage.getWidth() * 0.816d),
-            (int)(cardImage.getHeight() * 0.922d)
+            (int)(cardImage.getWidth() * 0.929d),
+            (int)(cardImage.getHeight() * 0.919d)
         );
 
         // get transparent P/T overlay and size to card image.
