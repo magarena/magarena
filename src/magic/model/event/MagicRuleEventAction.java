@@ -3685,10 +3685,10 @@ public enum MagicRuleEventAction {
         final String ruleWithoutIf = ifMatched ? ARG.any(ifMatcher) : rule;
 
         // handle you pay
-        final Matcher mayMatcher = MAY_PAY.matcher(ruleWithoutIf);
-        final boolean mayMatched = mayMatcher.matches();
-        final MagicManaCost mayCost = mayMatched ? MagicManaCost.create(ARG.manacost(mayMatcher)) : MagicManaCost.ZERO;
-        final String prefix = mayMatched ? "^(Y|y)ou may pay [^\\.]+\\. If you do, " : "^(Y|y)ou may ";
+        final Matcher mayPayMatcher = MAY_PAY.matcher(ruleWithoutIf);
+        final boolean mayPayMatched = mayPayMatcher.matches();
+        final MagicManaCost mayCost = mayPayMatched ? MagicManaCost.create(ARG.manacost(mayPayMatcher)) : MagicManaCost.ZERO;
+        final String prefix = mayPayMatched ? "^(Y|y)ou may pay [^\\.]+\\. If you do, " : "^(Y|y)ou may ";
 
         final String ruleWithoutMay = ruleWithoutIf.replaceFirst(prefix, "");
         final boolean optional = ruleWithoutMay.length() < ruleWithoutIf.length();
@@ -3709,7 +3709,7 @@ public enum MagicRuleEventAction {
         final String playerRule = personalize(choice, concat(rule, part));
 
         final MagicChoiceFactory choiceFact = (source, player, ref) -> {
-            if (mayMatched) {
+            if (mayPayMatched) {
                 return new MagicMayChoice(
                     MagicMessage.replaceName(pnMayChoice, source, player, ref),
                     new MagicPayManaCostChoice(mayCost),
@@ -3725,7 +3725,7 @@ public enum MagicRuleEventAction {
             }
         };
 
-        final String eventDesc = mayMatched ? "PN may$ pay " + mayCost + "$. If PN does, " + contextRule
+        final String eventDesc = mayPayMatched ? "PN may$ pay " + mayCost + "$. If PN does, " + contextRule
                                : optional   ? "PN may$ " + mayTense(contextRule)
                                : capitalize(playerRule);
 
