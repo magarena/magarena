@@ -26,6 +26,7 @@ import magic.model.MagicAmount;
 import magic.model.MagicAmountParser;
 import magic.model.action.*;
 import magic.model.choice.MagicChoice;
+import magic.model.choice.MagicChoiceFactory;
 import magic.model.choice.MagicFromCardFilterChoice;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicOrChoice;
@@ -3707,89 +3708,47 @@ public enum MagicRuleEventAction {
         final String contextRule = personalize(choice, concat(ruleWithoutMay, part));
         final String playerRule = personalize(choice, concat(rule, part));
 
-        if (mayCost != MagicManaCost.ZERO) {
-            return new MagicSourceEvent(ruleAction, matcher) {
+        final MagicChoiceFactory choiceFact = (source, player, ref) -> {
+            if (mayMatched) {
+                return new MagicMayChoice(
+                    MagicMessage.replaceName(pnMayChoice, source, player, ref),
+                    new MagicPayManaCostChoice(mayCost),
+                    choice
+                );
+            } else if (optional) {
+                return new MagicMayChoice(
+                    MagicMessage.replaceName(pnMayChoice, source, player, ref),
+                    choice
+                );
+            } else {
+                return choice;
+            }
+        };
+
+        final String eventDesc = mayMatched ? "PN may$ pay " + mayCost + "$. If PN does, " + contextRule
+                               : optional   ? "PN may$ " + mayTense(contextRule)
+                               : capitalize(playerRule);
+
+        return new MagicSourceEvent(
+            ruleAction,
+            matcher,
+            ifCond,
+            choiceFact,
+            picker,
+            new MagicEventAction() {
                 @Override
-                public MagicEvent getEvent(final MagicSource source, final MagicPlayer player, final MagicCopyable ref) {
-                    return ifCond.accept(source) ? new MagicEvent(
-                        source,
-                        player,
-                        new MagicMayChoice(
-                            new MagicPayManaCostChoice(mayCost),
-                            choice
-                        ),
-                        picker,
-                        ref,
-                        new MagicEventAction() {
-                            @Override
-                            public void executeEvent(MagicGame game, MagicEvent event) {
-                                if (ifCond.accept(event.getSource()) == false) {
-                                    return;
-                                }
-                                if (event.isYes()) {
-                                    action.executeEvent(game, event);
-                                } else {
-                                    noAction.executeEvent(game, event);
-                                }
-                            }
-                        },
-                        "PN may$ pay " + mayCost + "$. If PN does, " + contextRule
-                    ) : MagicEvent.NONE;
+                public void executeEvent(MagicGame game, MagicEvent event) {
+                    if (ifCond.accept(event.getSource()) == false) {
+                        return;
+                    }
+                    if (optional == false || event.isYes()) {
+                        action.executeEvent(game, event);
+                    } else {
+                        noAction.executeEvent(game, event);
+                    }
                 }
-            };
-        } else if (optional) {
-            return new MagicSourceEvent(ruleAction, matcher) {
-                @Override
-                public MagicEvent getEvent(final MagicSource source, final MagicPlayer player, final MagicCopyable ref) {
-                    return ifCond.accept(source) ? new MagicEvent(
-                        source,
-                        player,
-                        new MagicMayChoice(
-                            MagicMessage.replaceName(pnMayChoice, source, player, ref),
-                            choice
-                        ),
-                        picker,
-                        ref,
-                        new MagicEventAction() {
-                            @Override
-                            public void executeEvent(MagicGame game, MagicEvent event) {
-                                if (ifCond.accept(event.getSource()) == false) {
-                                    return;
-                                }
-                                if (event.isYes()) {
-                                    action.executeEvent(game, event);
-                                } else {
-                                    noAction.executeEvent(game, event);
-                                }
-                            }
-                        },
-                        "PN may$ " + mayTense(contextRule)
-                    ) : MagicEvent.NONE;
-                }
-            };
-        } else {
-            return new MagicSourceEvent(ruleAction, matcher) {
-                @Override
-                public MagicEvent getEvent(final MagicSource source, final MagicPlayer player, final MagicCopyable ref) {
-                    return ifCond.accept(source) ? new MagicEvent(
-                        source,
-                        player,
-                        choice,
-                        picker,
-                        ref,
-                        new MagicEventAction() {
-                            @Override
-                            public void executeEvent(MagicGame game, MagicEvent event) {
-                                if (ifCond.accept(event.getSource()) == false) {
-                                    return;
-                                }
-                                action.executeEvent(game, event);
-                            }
-                        },
-                        capitalize(playerRule)
-                    ) : MagicEvent.NONE;
-                }
-            };
-        }
+            },
+            eventDesc
+        );
     }
 }
