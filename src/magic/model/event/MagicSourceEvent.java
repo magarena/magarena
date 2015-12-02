@@ -100,4 +100,8 @@ public class MagicSourceEvent {
     public MagicTargetPicker<?> getPicker() {
         return rule.getPicker(matcher);
     }
+
+    public MagicEventAction getEventAction() {
+        return action;
+    }
 }

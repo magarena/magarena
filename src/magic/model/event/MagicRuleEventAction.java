@@ -3586,15 +3586,14 @@ public enum MagicRuleEventAction {
                 final Matcher referenceMatcher = TARGET_REFERENCE.matcher(part[i]);
                 final boolean hasReference = referenceMatcher.find();
                 final String rider = TARGET_REFERENCE.matcher(part[i]).replaceAll("target permanent");
-                final MagicRuleEventAction riderAction = MagicRuleEventAction.build(rider);
-                final Matcher riderMatcher = riderAction.matched(rider);
+                final MagicSourceEvent riderSourceEvent = MagicRuleEventAction.create(rider);
 
                 //rider cannot have choices
-                if (hasReference == false && riderAction.getChoice(riderMatcher).isValid()) {
+                if (hasReference == false && riderSourceEvent.getChoice().isValid()) {
                     throw new RuntimeException("rider should not have choice: \"" + part[i] + "\"");
                 }
 
-                acts[i] = riderAction.getAction(riderMatcher);
+                acts[i] = riderSourceEvent.getEventAction();
                 part[i] = TARGET_REFERENCE.matcher(part[i]).replaceAll("$1");
             }
             return MagicEventActionFactory.compose(acts);
@@ -3726,7 +3725,7 @@ public enum MagicRuleEventAction {
         };
 
         final String eventDesc = mayPayMatched ? "PN may$ pay " + mayCost + "$. If PN does, " + contextRule
-                               : optional   ? "PN may$ " + mayTense(contextRule)
+                               : optional      ? "PN may$ " + mayTense(contextRule)
                                : capitalize(playerRule);
 
         return new MagicSourceEvent(
