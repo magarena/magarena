@@ -40,7 +40,6 @@ abstract class CardAnimation extends MagicAnimation {
     private final int playerIndex;
     private ImageScaler imageScaler;
     private Dimension previewSize;
-    private boolean drawArrow = true;
     private Rectangle imageRect = new Rectangle();
     private final MagicPlayer player;
     private final MagicCardDefinition card;
@@ -76,14 +75,18 @@ abstract class CardAnimation extends MagicAnimation {
         }
     }
 
-    private void drawArrow(Graphics g) {
-        if (drawArrow && AnimationFx.isOn(AnimationFx.FROM_ARROW)) {
-            ArrowBuilder.drawArrow(g, getStart(), getPreviewRectangle());
-        }
-    }
-
     private boolean isCardFlipping() {
         return AnimationFx.isOn(AnimationFx.FLIP_CARD) && flipPosition < 1f;
+    }
+
+    private boolean isViewTimelineRunning() {
+        return viewTimeline != null && viewTimeline.getState() == Timeline.TimelineState.PLAYING_FORWARD;
+    }
+
+    private void drawArrow(Graphics g) {
+        if (AnimationFx.isOn(AnimationFx.FROM_ARROW) && isViewTimelineRunning()) {
+            ArrowBuilder.drawArrow(g, getStart(), getPreviewRectangle());
+        }
     }
 
     private void drawCardImage(Graphics g) {
@@ -196,8 +199,6 @@ abstract class CardAnimation extends MagicAnimation {
             public void onTimelineStateChanged(Timeline.TimelineState oldState, Timeline.TimelineState newState, float durationFraction, float timelinePosition) {
                 if (newState == Timeline.TimelineState.DONE) {
                     scenario.cancel();
-                } else if (newState == Timeline.TimelineState.PLAYING_FORWARD) {
-                    drawArrow = false;
                 }
             }
         });
@@ -216,6 +217,15 @@ abstract class CardAnimation extends MagicAnimation {
     private Timeline getViewTimeline() {
         final Timeline timeline = new Timeline();
         timeline.setDuration(getViewDuration());
+        timeline.addCallback(new TimelineCallbackAdapter() {
+            @Override
+            public void onTimelineStateChanged(Timeline.TimelineState oldState, Timeline.TimelineState newState, float durationFraction, float timelinePosition) {
+                if (newState == Timeline.TimelineState.PLAYING_FORWARD) {
+                    // ensures arrow is painted correctly.
+                    getCanvas().repaint();
+                }
+            }
+        });
         return timeline;
     }
     
@@ -268,6 +278,7 @@ abstract class CardAnimation extends MagicAnimation {
     @Override
     protected void doCancelAction() {
         if (viewTimeline.getState() == Timeline.TimelineState.PLAYING_FORWARD) {
+            viewTimeline.cancel();
             shrinkTimeline.play();
         }
     }
