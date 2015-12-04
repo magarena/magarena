@@ -4,6 +4,6 @@ value=3.438
 rarity=C
 type=Instant
 cost={R}
-effect=SN deals 1 damage to target creature. That creature becomes black until end of turn.
+effect=SN deals 1 damage to target creature.~*That creature* becomes black until end of turn.
 timing=removal
 oracle=Singe deals 1 damage to target creature. That creature becomes black until end of turn.
