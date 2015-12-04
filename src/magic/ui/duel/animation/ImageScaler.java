@@ -6,55 +6,61 @@ import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
 import magic.ui.utility.GraphicsUtils;
 
-public class ImageScaler {
+class ImageScaler {
+
+    private static final int MIN_SCALE_HEIGHT = 20;
 
     private final BufferedImage origImage;
     private BufferedImage scaledImage;
+    private boolean isHighQuality = false;
 
-    public ImageScaler(final BufferedImage aImage) {
+    ImageScaler(final BufferedImage aImage) {
         this.origImage = aImage;
         this.scaledImage = aImage;
     }
 
-    public void setSize(final Dimension boundary) {
+    void setScaledImage(final Dimension rect) {
 
-        if (boundary.height == scaledImage.getHeight() || boundary.height < 20)
-            return;
+        // fit to rect whilst retaining aspect ratio.
+        final double widthRatio = rect.getWidth() / origImage.getWidth();
+        final double heightRatio = rect.getHeight() / origImage.getHeight();
+        final double aspectRatio = Math.min(widthRatio, heightRatio);
 
-        // retain aspect ratio.
-        final double widthRatio = boundary.getWidth() / origImage.getWidth();
-        final double heightRatio = boundary.getHeight() / origImage.getHeight();
-        final double ratio = Math.min(widthRatio, heightRatio);
-
-        // performance more important than quality during animation.
         scaledImage = GraphicsUtils.scale(
             origImage,
-            (int) (origImage.getWidth() * ratio),
-            (int) (origImage.getHeight() * ratio),
-            RenderingHints.VALUE_INTERPOLATION_NEAREST_NEIGHBOR,
-            false
+            (int) (origImage.getWidth() * aspectRatio),
+            (int) (origImage.getHeight() * aspectRatio),
+            isHighQuality
+                ? RenderingHints.VALUE_INTERPOLATION_BILINEAR
+                : RenderingHints.VALUE_INTERPOLATION_NEAREST_NEIGHBOR,
+            isHighQuality
         );
-
     }
 
-    public Image getImage() {
+    void setLQSize(Dimension rect) {
+        if (rect.height > MIN_SCALE_HEIGHT && rect.height != scaledImage.getHeight()) {
+            isHighQuality = false;
+            setScaledImage(rect);
+        }
+    }
+
+    private void setHQSize(Dimension rect) {
+        if (rect.height > MIN_SCALE_HEIGHT && (rect.height != scaledImage.getHeight() || !isHighQuality)) {
+            isHighQuality = true;
+            setScaledImage(rect);
+        }
+    }
+
+    void setSize(Dimension boundary, boolean highQualityScale) {
+        if (highQualityScale) {
+            setHQSize(boundary);
+        } else {
+            setLQSize(boundary);
+        }
+    }
+
+    Image getImage() {
         return scaledImage;
-    }
-
-    void setSize(float f) {
-        setSize(new Dimension((int)(origImage.getWidth() * f), (int)(origImage.getHeight() * f)));
-    }
-
-    Dimension getScaledSize() {
-        return new Dimension(scaledImage.getWidth(), scaledImage.getHeight());
-    }
-
-    Image getOrigImage() {
-        return origImage;
-    }
-
-    Dimension getOrigSize() {
-        return new Dimension(origImage.getWidth(), origImage.getHeight());
     }
 
 }

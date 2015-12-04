@@ -49,12 +49,29 @@ public final class MagicImages {
 
     private static final BufferedImage MANA_ICON_SHEET = loadImage(MagicIcon.MANA_ICON_SHEET);
 
+    /**
+     * Gets preferred viewing size for a card image based on preset setting in preferences.
+     * <p>
+     * Note the image's aspect ratio is king. If the preferred setting is not the same
+     * as the native image's then the image will be resized as close as possible to the
+     * preferred size whilst retaining the image's aspect ratio. This should ensure
+     * smooth transition between an animated and static image view.
+     */
     public static Dimension getPreferredImageSize(final Image image) {
         final String s[] = GeneralConfig.getInstance().getPreferredImageSize().split("x");
         if (s.length != 2) {
             return new Dimension(image.getWidth(null), image.getHeight(null));
         } else {
-            return new Dimension(Integer.parseInt(s[0].trim()), Integer.parseInt(s[1].trim()));
+            final Dimension approxPrefSize = new Dimension(
+                Integer.parseInt(s[0].trim()), 
+                Integer.parseInt(s[1].trim())
+            );
+            // ratio of image width to height.
+            final double imageRatio = image.getWidth(null) / (double) image.getHeight(null);
+            return new Dimension(
+                approxPrefSize.width,
+                (int)(approxPrefSize.width / imageRatio)
+            );
         }
     }
 
