@@ -85,12 +85,14 @@ public class CardsCanvas extends JPanel {
             }
             @Override
             public void mouseReleased(MouseEvent e) {
-                GraphicsUtils.setBusyMouseCursor(true);
-                final int cardIndex = getCardIndexAt(e.getPoint());
-                if (cardIndex >= 0) {
-                    new CardImageOverlay(cards.get(cardIndex).getMagicCard());
+                if (!isAnimateThreadRunning) {
+                    GraphicsUtils.setBusyMouseCursor(true);
+                    final int cardIndex = getCardIndexAt(e.getPoint());
+                    if (cardIndex >= 0) {
+                        new CardImageOverlay(cards.get(cardIndex).getMagicCard());
+                    }
+                    GraphicsUtils.setBusyMouseCursor(false);
                 }
-                GraphicsUtils.setBusyMouseCursor(false);
             }
         });
     }
@@ -275,7 +277,7 @@ public class CardsCanvas extends JPanel {
     }
 
     private void highlightCardUnderMousePointer(final Graphics g) {
-        if (currentCardIndex >= 0) {
+        if (currentCardIndex >= 0 && !isAnimateThreadRunning) {
             final Rectangle rect = cards.get(currentCardIndex).getBounds();
             final Graphics2D g2d = (Graphics2D) g;
             drawHighlightOverlay(g2d, rect);
