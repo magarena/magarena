@@ -634,8 +634,8 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    DrawLoseSelf(
-        "(pn |you )?draw(s)? (?<amount>[a-z]+) card(s)? and (you )?lose(s)? (?<amount2>[0-9]+) life\\.",
+    DrawLoseYou(
+        ARG.YOU + " draw(s)? (?<amount>[a-z]+) card(s)? and (you )?lose(s)? (?<amount2>[0-9]+) life\\.",
         MagicTiming.Draw,
         "Draw"
     ) {
@@ -646,13 +646,14 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new DrawAction(event.getPlayer(), amount));
-                    game.doAction(new ChangeLifeAction(event.getPlayer(), -amount2));
+                    final MagicPlayer you = ARG.youPlayer(event, matcher);
+                    game.doAction(new DrawAction(you, amount));
+                    game.doAction(new ChangeLifeAction(you, -amount2));
                 }
             };
         }
     },
-    DrawSelf(
+    DrawYou(
         ARG.YOU + "( )?draw(s)? (?<amount>[a-z]+) (additional )?card(s)?( for each " + ARG.WORDRUN +")?\\.",
         MagicTiming.Draw,
         "Draw"
