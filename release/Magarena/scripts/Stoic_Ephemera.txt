@@ -7,7 +7,7 @@ subtype=Spirit
 cost={2}{W}
 pt=5/5
 ability=Defender;\
-        Flying
+        Flying;\
+        When SN blocks, sacrifice SN at end of combat.
 timing=main
-requires_groovy_code
 oracle=Defender\nFlying\nWhen Stoic Ephemera blocks, sacrifice it at end of combat.
