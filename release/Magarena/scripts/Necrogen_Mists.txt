@@ -4,6 +4,6 @@ value=3.641
 rarity=R
 type=Enchantment
 cost={2}{B}
+ability=At the beginning of each player's upkeep, that player discards a card.
 timing=enchantment
-requires_groovy_code
 oracle=At the beginning of each player's upkeep, that player discards a card.
