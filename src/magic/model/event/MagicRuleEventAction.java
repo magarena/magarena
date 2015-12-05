@@ -2311,8 +2311,8 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    MillSelf(
-        "put the top (?<amount>[a-z]+)?( )?card(s)? of your library into your graveyard\\.",
+    MillYou(
+        ARG.YOU + "( )?put(s)? the top (?<amount>[a-z]+)?( )?card(s)? of (your|his or her) library into (your|his or her) graveyard\\.",
         MagicTiming.Draw,
         "Mill"
     ) {
@@ -2322,7 +2322,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MillLibraryAction(event.getPlayer(), amount));
+                    game.doAction(new MillLibraryAction(ARG.youPlayer(event, matcher), amount));
                 }
             };
         }
