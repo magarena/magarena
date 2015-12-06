@@ -163,10 +163,18 @@ public class MagicTargetFilterFactory {
     public static final MagicStackFilterImpl RED_OR_GREEN_SPELL = MagicTargetFilterFactory.spellOr(MagicColor.Red, MagicColor.Green);
 
     public static final MagicStackFilterImpl BLUE_OR_BLACK_SPELL = MagicTargetFilterFactory.spellOr(MagicColor.Blue, MagicColor.Black);
+    
+    public static final MagicStackFilterImpl GREEN_OR_WHITE_SPELL = MagicTargetFilterFactory.spellOr(MagicColor.Green, MagicColor.White);
 
     public static final MagicStackFilterImpl NONBLUE_SPELL=new MagicStackFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell() && !itemOnStack.hasColor(MagicColor.Blue);
+        }
+    };
+    
+    public static final MagicStackFilterImpl NONBLACK_SPELL=new MagicStackFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell() && !itemOnStack.hasColor(MagicColor.Black);
         }
     };
 
@@ -246,6 +254,13 @@ public class MagicTargetFilterFactory {
     public static final MagicStackFilterImpl CREATURE_SPELL_CMC_6_OR_MORE=new MagicStackFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell(MagicType.Creature) && itemOnStack.getConvertedCost() >= 6;
+        }
+    };
+
+    public static final MagicStackFilterImpl WHITE_OR_BLUE_INSTANT_OR_SORCERY_SPELL = new MagicStackFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack target) {
+            return (target.hasColor(MagicColor.White) || target.hasColor(MagicColor.Blue)) &&
+                   (target.isSpell(MagicType.Instant) || target.isSpell(MagicType.Sorcery));
         }
     };
 
@@ -2684,15 +2699,18 @@ public class MagicTargetFilterFactory {
         single.put("artifact or enchantment spell", ARTIFACT_OR_ENCHANTMENT_SPELL);
         single.put("red or green spell", RED_OR_GREEN_SPELL);
         single.put("blue or black spell", BLUE_OR_BLACK_SPELL);
+        single.put("green or white spell", GREEN_OR_WHITE_SPELL);
         single.put("blue, black, or red spell", BLUE_OR_BLACK_OR_RED_SPELL);
         single.put("white, blue, black, or red spell", WHITE_OR_BLUE_OR_BLACK_OR_RED_SPELL);
         single.put("nonblue spell", NONBLUE_SPELL);
+        single.put("nonblack spell", NONBLACK_SPELL);
         single.put("non-Faerie spell", NONFAERIE_SPELL);
         single.put("blue spell during your turn", BLUE_SPELL_YOUR_TURN);
         single.put("blue or black spell during your turn", BLUE_OR_BLACK_SPELL_YOUR_TURN);
         single.put("blue instant spell", BLUE_INSTANT_SPELL);
         single.put("nonred spell", NONRED_SPELL);
         single.put("instant or sorcery spell", INSTANT_OR_SORCERY_SPELL);
+        single.put("white or blue instant or sorcery spell", WHITE_OR_BLUE_INSTANT_OR_SORCERY_SPELL);
         single.put("instant or sorcery spell you control", INSTANT_OR_SORCERY_SPELL_YOU_CONTROL);
         single.put("spell with converted mana cost 1", SPELL_WITH_CMC_EQ_1);
         single.put("spell with converted mana cost 2", SPELL_WITH_CMC_EQ_2);
