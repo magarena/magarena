@@ -6,6 +6,6 @@ type=Creature
 subtype=Beast
 cost={4}{R}
 pt=4/2
+ability=Whenever a permanent is turned face up, SN deals 1 damage to target creature or player.
 timing=main
-requires_groovy_code
 oracle=Whenever a permanent is turned face up, Bonethorn Valesk deals 1 damage to target creature or player.

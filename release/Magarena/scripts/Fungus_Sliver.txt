@@ -6,7 +6,7 @@ type=Creature
 subtype=Fungus,Sliver
 cost={3}{G}
 pt=2/2
+ability=All Sliver creatures have "Whenever this creature is dealt damage, put a +1/+1 counter on SN."
 timing=main
 static=all
-requires_groovy_code
 oracle=All Sliver creatures have "Whenever this creature is dealt damage, put a +1/+1 counter on it."

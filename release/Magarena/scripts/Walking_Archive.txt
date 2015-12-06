@@ -6,9 +6,9 @@ type=Artifact,Creature
 subtype=Golem
 cost={3}
 pt=1/1
-ability=defender;\
+ability=Defender;\
         SN enters the battlefield with a +1/+1 counter on it.;\
-        {2}{W}{U}:Put a +1/+1 counter on SN.
-timing=artifact
-requires_groovy_code
+        At the beginning of each player's upkeep, that player draws a card for each +1/+1 counter on SN.;\
+        {2}{W}{U}: Put a +1/+1 counter on SN.
+timing=smain
 oracle=Defender\nWalking Archive enters the battlefield with a +1/+1 counter on it.\nAt the beginning of each player's upkeep, that player draws a card for each +1/+1 counter on Walking Archive.\n{2}{W}{U}: Put a +1/+1 counter on Walking Archive.

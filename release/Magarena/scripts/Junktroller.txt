@@ -6,7 +6,7 @@ type=Artifact,Creature
 subtype=Golem
 cost={4}
 pt=0/6
-ability=Defender
-timing=main
-requires_groovy_code
+ability=Defender;\
+        {T}: Put target card from a graveyard on the bottom of its owner's library.
+timing=smain
 oracle=Defender\n{T}: Put target card from a graveyard on the bottom of its owner's library.

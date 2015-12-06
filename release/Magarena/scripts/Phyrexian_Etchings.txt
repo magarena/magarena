@@ -4,7 +4,8 @@ value=3.095
 rarity=R
 type=Enchantment
 cost={B}{B}{B}
-ability=Cumulative upkeep {B}
+ability=Cumulative upkeep {B};\
+        At the beginning of your end step, draw a card for each age counter on SN.;\
+        When SN is put into a graveyard from the battlefield, you lose 2 life for each age counter on it.
 timing=enchantment
-requires_groovy_code
 oracle=Cumulative upkeep {B}\nAt the beginning of your end step, draw a card for each age counter on Phyrexian Etchings.\nWhen Phyrexian Etchings is put into a graveyard from the battlefield, you lose 2 life for each age counter on it.

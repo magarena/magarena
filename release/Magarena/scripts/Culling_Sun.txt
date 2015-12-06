@@ -4,6 +4,6 @@ value=3.358
 rarity=R
 type=Sorcery
 cost={2}{W}{W}{B}
+effect=Destroy each creature with converted mana cost 3 or less.
 timing=main
-requires_groovy_code
 oracle=Destroy each creature with converted mana cost 3 or less.

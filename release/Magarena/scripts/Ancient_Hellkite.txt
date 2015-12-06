@@ -6,7 +6,7 @@ type=Creature
 subtype=Dragon
 cost={4}{R}{R}{R}
 pt=6/6
-ability=flying
+ability=Flying;\
+        {R}: SN deals 1 damage to target creature defending player controls. Activate this ability only if SN is attacking.
 timing=main
-requires_groovy_code
 oracle=Flying\n{R}: Ancient Hellkite deals 1 damage to target creature defending player controls. Activate this ability only if Ancient Hellkite is attacking.

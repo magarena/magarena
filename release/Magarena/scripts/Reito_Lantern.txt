@@ -4,6 +4,6 @@ value=3.167
 rarity=U
 type=Artifact
 cost={2}
+ability={3}: Put target card from a graveyard on the bottom of its owner's library.
 timing=artifact
-requires_groovy_code
 oracle={3}: Put target card from a graveyard on the bottom of its owner's library.

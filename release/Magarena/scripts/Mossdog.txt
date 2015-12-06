@@ -6,6 +6,6 @@ type=Creature
 subtype=Plant,Hound
 cost={G}
 pt=1/1
+ability=Whenever SN becomes the target of a spell or ability an opponent controls, put a +1/+1 counter on SN.
 timing=main
-requires_groovy_code
 oracle=Whenever Mossdog becomes the target of a spell or ability an opponent controls, put a +1/+1 counter on Mossdog.

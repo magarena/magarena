@@ -4,6 +4,6 @@ value=1.383
 rarity=C
 type=Sorcery
 cost={3}{U}
+effect=Target creature can't be blocked this turn.~Draw a card.
 timing=main
-requires_groovy_code
 oracle=Target creature can't be blocked this turn.\nDraw a card.

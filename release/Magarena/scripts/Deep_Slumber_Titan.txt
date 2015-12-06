@@ -7,7 +7,7 @@ subtype=Giant,Warrior
 cost={2}{R}{R}
 pt=7/7
 ability=SN enters the battlefield tapped.;\
-        SN doesn't untap during your untap step.
+        SN doesn't untap during your untap step.;\
+        Whenever SN is dealt damage, untap SN.
 timing=main
-requires_groovy_code
 oracle=Deep-Slumber Titan enters the battlefield tapped.\nDeep-Slumber Titan doesn't untap during your untap step.\nWhenever Deep-Slumber Titan is dealt damage, untap it.

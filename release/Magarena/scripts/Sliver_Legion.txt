@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Sliver
 cost={W}{U}{B}{R}{G}
 pt=7/7
+ability=All Sliver creatures get +1/+1 for each other Sliver on the battlefield.
 static=all
 timing=main
-requires_groovy_code
 oracle=All Sliver creatures get +1/+1 for each other Sliver on the battlefield.

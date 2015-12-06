@@ -4,6 +4,6 @@ value=3.797
 rarity=U
 type=Instant
 cost={U}
+effect=Switch target creature's power and toughness until end of turn.~Draw a card.
 timing=removal
-requires_groovy_code
 oracle=Switch target creature's power and toughness until end of turn.\nDraw a card.

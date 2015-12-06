@@ -7,8 +7,8 @@ subtype=Elf,Warrior
 cost={G}
 pt=1/1
 ability=Multikicker {1}{G};\
-        SN enters the battlefield with a +1/+1 counter on it for each time it was kicked.
+        SN enters the battlefield with a +1/+1 counter on it for each time it was kicked.;\
+        Other Elf creatures you control get +1/+1 for each +1/+1 counter on SN.
 static=player
 timing=fmain
-requires_groovy_code=Joraga Warcaller
 oracle=Multikicker {1}{G}\nJoraga Warcaller enters the battlefield with a +1/+1 counter on it for each time it was kicked.\nOther Elf creatures you control get +1/+1 for each +1/+1 counter on Joraga Warcaller.

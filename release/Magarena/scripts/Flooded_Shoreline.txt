@@ -4,6 +4,6 @@ value=3.091
 rarity=R
 type=Enchantment
 cost={U}{U}
-timing=main
-requires_groovy_code
+ability={U}{U}, Return two Islands you control to their owner's hand: Return target creature to its owner's hand.
+timing=enchantment
 oracle={U}{U}, Return two Islands you control to their owner's hand: Return target creature to its owner's hand.

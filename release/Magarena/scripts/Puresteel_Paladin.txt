@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Knight
 cost={W}{W}
 pt=2/2
-ability=Whenever an Equipment enters the battlefield under your control, you may draw a card.
+ability=Whenever an Equipment enters the battlefield under your control, you may draw a card.;\
+        Equipment you control have equip {0} as long as you control three or more artifacts.
 timing=main
-requires_groovy_code
 oracle=Whenever an Equipment enters the battlefield under your control, you may draw a card.\nMetalcraft — Equipment you control have equip {0} as long as you control three or more artifacts.

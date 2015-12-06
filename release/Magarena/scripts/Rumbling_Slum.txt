@@ -6,6 +6,6 @@ type=Creature
 subtype=Elemental
 cost={1}{R}{G}{G}
 pt=5/5
+ability=At the beginning of your upkeep, SN deals 1 damage to each player.
 timing=main
-requires_groovy_code
 oracle=At the beginning of your upkeep, Rumbling Slum deals 1 damage to each player.

@@ -1,9 +1,9 @@
 name=Altar of the Brood
 image=http://magiccards.info/scans/en/ktk/216.jpg
-value=2.000
+value=2.100
 rarity=R
 type=Artifact
 cost={1}
-timing=main
-requires_groovy_code
+ability=Whenever another permanent enters the battlefield under your control, each opponent puts the top card of his or her library into his or her graveyard.
+timing=artifact
 oracle=Whenever another permanent enters the battlefield under your control, each opponent puts the top card of his or her library into his or her graveyard.

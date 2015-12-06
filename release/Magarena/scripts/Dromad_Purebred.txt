@@ -6,6 +6,6 @@ type=Creature
 subtype=Camel,Beast
 cost={4}{W}
 pt=1/5
+ability=Whenever SN is dealt damage, you gain 1 life.
 timing=main
-requires_groovy_code
 oracle=Whenever Dromad Purebred is dealt damage, you gain 1 life.

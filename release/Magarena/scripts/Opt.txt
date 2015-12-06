@@ -4,6 +4,6 @@ value=4.164
 rarity=C
 type=Instant
 cost={U}
+effect=Scry 1.~Draw a card.
 timing=draw
-requires_groovy_code
-oracle=Look at the top card of your library. You may put that card on the bottom of your library.\nDraw a card.
+oracle=Scry 1.\nDraw a card.
