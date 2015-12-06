@@ -491,7 +491,8 @@ checks: \
 	check_image \
 	check_meta \
 	check_rarity \
-	check_decks
+	check_decks \
+	check_mana_or_combat
 
 remove_extra_missing:
 	git rm `join <(ls -1 release/Magarena/scripts | sort) <(ls -1 release/Magarena/scripts_missing | sort) | sed 's/^/release\/Magarena\/scripts_missing\//'`
@@ -580,6 +581,11 @@ check_all_cards:
 	diff \
 	<(grep "name=" `grep "token=\|^overlay" -Lr release/Magarena/scripts release/Magarena/scripts_missing` -h | sed 's/name=//' | sort | uniq) \
 	<(sort resources/magic/data/AllCardNames.txt)
+
+check_mana_or_combat:
+	diff \
+	<(grep mana_or_combat -lr release/Magarena/scripts) \
+	<(grep "mana pool.*becomes a" -r release/Magarena/scripts -l)
 
 crash.txt: $(wildcard *.log)
 	for i in `grep "^Excep" -l $^`; do \
