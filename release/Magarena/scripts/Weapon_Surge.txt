@@ -4,6 +4,7 @@ value=3.780
 rarity=C
 type=Instant
 cost={R}
+ability=Cast SN with AI only if you control a creature.
 timing=pump
 requires_groovy_code
 oracle=Target creature you control gets +1/+0 and gains first strike until end of turn.\nOverload {1}{R}

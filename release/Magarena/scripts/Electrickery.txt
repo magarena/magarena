@@ -4,6 +4,7 @@ value=3.604
 rarity=C
 type=Instant
 cost={R}
+ability=Cast SN with AI only if an opponent controls a creature.
 effect=SN deals 1 damage to target creature you don't control.
 removal=1
 timing=removal

@@ -4,6 +4,7 @@ value=3.759
 rarity=U
 type=Sorcery
 cost={R}
+ability=Cast SN with AI only if an opponent controls an artifact.
 effect=Destroy target artifact you don't control.
 timing=removal
 requires_groovy_code

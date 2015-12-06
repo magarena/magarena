@@ -4,6 +4,7 @@ value=3.283
 rarity=C
 type=Instant
 cost={U}
+ability=Cast SN with AI only if you control a creature.
 effect=Target creature you control gets +0/+1 and gains hexproof until end of turn.
 timing=pump
 requires_groovy_code

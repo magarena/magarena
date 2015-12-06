@@ -4,6 +4,7 @@ value=3.250
 rarity=U
 type=Instant
 cost={X}{R}
+ability=Cast SN with AI only if an opponent controls a creature without flying.
 timing=removal
 removal=1
 requires_groovy_code

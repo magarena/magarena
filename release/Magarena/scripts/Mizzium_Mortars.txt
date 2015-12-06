@@ -4,6 +4,7 @@ value=3.980
 rarity=R
 type=Sorcery
 cost={1}{R}
+ability=Cast SN with AI only if an opponent controls a creature.
 effect=SN deals 4 damage to target creature you don't control.
 timing=removal
 removal=4

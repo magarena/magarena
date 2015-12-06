@@ -4,6 +4,7 @@ value=2.709
 rarity=C
 type=Instant
 cost={U}
+ability=Cast SN with AI only if an opponent controls a creature.
 effect=Target creature you don't control gets -4/-0 until end of turn.
 timing=removal
 requires_groovy_code

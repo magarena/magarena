@@ -4,6 +4,7 @@ value=3.303
 rarity=U
 type=Instant
 cost={U}
+ability=Cast SN with AI only if an opponent controls a creature.
 effect=Tap target creature you don't control.
 timing=tapping
 requires_groovy_code

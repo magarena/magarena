@@ -4,6 +4,7 @@ value=4.039
 rarity=R
 type=Instant
 cost={1}{U}
+ability=Cast SN with AI only if an opponent controls a nonland permanent.
 effect=Return target nonland permanent you don't control to its owner's hand.
 timing=removal
 requires_groovy_code

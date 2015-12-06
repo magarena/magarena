@@ -4,6 +4,7 @@ value=2.781
 rarity=C
 type=Instant
 cost={R}
+ability=Cast SN with AI only if you control a creature.
 effect=Target creature you control gets +2/+0 until end of turn.
 timing=pump
 requires_groovy_code

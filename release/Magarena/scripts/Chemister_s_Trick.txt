@@ -4,6 +4,7 @@ value=2.627
 rarity=C
 type=Instant
 cost={U}{R}
+ability=Cast SN with AI only if an opponent controls a creature.
 timing=mustattack
 requires_groovy_code
 oracle=Target creature you don't control gets -2/-0 until end of turn and attacks this turn if able.\nOverload {3}{U}{R}
