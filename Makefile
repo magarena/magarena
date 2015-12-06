@@ -766,6 +766,17 @@ parse_new.txt:
 	join -v2 -t'_' cards/existing_master.txt parse_ok.txt > $@
 	diff parse_new.ignore $@
 
+parse_groovy.txt:
+	patch -p1 < parse_missing.patch
+	cp scripts-builder/OUTPUT/scripts_missing/* release/Magarena/scripts
+	-rm 101.out
+	make debug
+	grep "ERROR " 101.out | sed 's/java.lang.RuntimeException: //' | sed 's/\(ERROR.*\) \(cause: .*\)/\2 \1/' | sort > parse_missing.txt
+	grep OK 101.out | sed 's/OK card: //' | sort > parse_ok.txt
+	git checkout -- release/Magarena/scripts
+	patch -p1 -R < parse_missing.patch
+	join -t'_' <(sort with_groovy.txt) <(sort parse_ok.txt) > $@
+
 # extract name<tab>image url from gallery page
 %.tsv: %.html
 	grep "alt.*src.*media" $^ | sed 's/.*alt="\([^"]*\)".*src="\([^"]*\)".*/\1\t\2/' > $@
