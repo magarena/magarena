@@ -777,7 +777,7 @@ parse_groovy.txt:
 	grep OK 101.out | sed 's/OK card: //' | sort > parse_ok.txt
 	git checkout -- release/Magarena/scripts
 	patch -p1 -R < parse_missing.patch
-	join -t'_' <(sort with_groovy.txt) <(sort parse_ok.txt) > $@
+	join -t'_' <(sort cards/groovy.txt) <(sort parse_ok.txt) > $@
 
 # extract name<tab>image url from gallery page
 %.tsv: %.html
