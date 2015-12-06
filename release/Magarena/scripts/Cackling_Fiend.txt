@@ -6,6 +6,6 @@ type=Creature
 subtype=Zombie
 cost={2}{B}{B}
 pt=2/1
+ability=When SN enters the battlefield, each opponent discards a card.
 timing=main
-requires_groovy_code=Liliana's Specter
 oracle=When Cackling Fiend enters the battlefield, each opponent discards a card.

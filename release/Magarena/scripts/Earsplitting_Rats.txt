@@ -6,7 +6,7 @@ type=Creature
 subtype=Rat
 cost={3}{B}
 pt=2/1
-ability=Discard a card: Regenerate SN.
+ability=When SN enters the battlefield, each player discards a card.;\
+        Discard a card: Regenerate SN.
 timing=main
-requires_groovy_code=Marsh Crocodile
 oracle=When Earsplitting Rats enters the battlefield, each player discards a card.\nDiscard a card: Regenerate Earsplitting Rats.
