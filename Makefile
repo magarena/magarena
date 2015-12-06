@@ -797,6 +797,9 @@ update_card_property:
 sims_count:
 	grep "sims=[0-9]*" -r 14* -o -h | sed 's/sims=//' | sort -n | histogram.py -x 800 > $@
 
+with_groovy.txt:
+	grep -h name= `ls -1 release/Magarena/scripts/*.groovy | sed 's/groovy/txt/'` | sed 's/name=//' > $@
+
 # export GITHUB_TOKEN=`cat token`
 create-draft-release:
 	github-release release \
