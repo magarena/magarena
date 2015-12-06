@@ -341,17 +341,39 @@ public enum MagicRuleEventAction {
             public void executeEvent(final MagicGame game, final MagicEvent event) {
                 event.processTargetPermanent(game,new MagicPermanentAction() {
                     public void doAction(final MagicPermanent perm) {
-                        if (event.getSource().isPermanent()) {
-                            game.doAction(new ExileLinkAction(event.getPermanent(), perm));
-                        } else {
-                            game.doAction(new RemoveFromPlayAction(perm,MagicLocationType.Exile));
-                        }
+                        game.doAction(new ExileLinkAction(
+                            event.getSource().isPermanent() ? event.getPermanent() : MagicPermanent.NONE,
+                            perm
+                        ));
                     }
                 });
             }
         }
     ),
-    ExileGroup(
+    ExileGroupCard(
+        "exile (?<group>[^\\.]* cards [^\\.]*)\\.",
+        MagicTiming.Removal,
+        "Exile"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicCard> filter = MagicTargetFilterFactory.Card(matcher.group("group"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final Collection<MagicCard> targets = filter.filter(event);
+                    for (final MagicCard card : targets) {
+                        game.doAction(new ExileLinkAction(
+                            event.getSource().isPermanent() ? event.getPermanent() : MagicPermanent.NONE,
+                            card,
+                            card.getLocation()
+                        ));
+                    }
+                }
+            };
+        }
+    },
+    ExileGroupPerm(
         "exile (?<group>[^\\.]*)\\.",
         MagicTiming.Removal,
         "Exile"
@@ -364,11 +386,10 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     final Collection<MagicPermanent> targets = filter.filter(event);
                     for (final MagicPermanent perm : targets) {
-                        if (event.getSource().isPermanent()) {
-                            game.doAction(new ExileLinkAction(event.getPermanent(), perm));
-                        } else {
-                            game.doAction(new RemoveFromPlayAction(perm,MagicLocationType.Exile));
-                        }
+                        game.doAction(new ExileLinkAction(
+                            event.getSource().isPermanent() ? event.getPermanent() : MagicPermanent.NONE,
+                            perm
+                        ));
                     }
                 }
             };
