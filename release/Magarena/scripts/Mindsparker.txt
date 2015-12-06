@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental
 cost={1}{R}{R}
 pt=3/2
-ability=first strike
+ability=First strike;\
+        Whenever an opponent casts a white or blue instant or sorcery spell, SN deals 2 damage to that player.
 timing=main
-requires_groovy_code
 oracle=First strike\nWhenever an opponent casts a white or blue instant or sorcery spell, Mindsparker deals 2 damage to that player.

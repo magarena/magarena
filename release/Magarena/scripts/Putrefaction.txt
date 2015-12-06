@@ -4,6 +4,6 @@ value=2.391
 rarity=U
 type=Enchantment
 cost={4}{B}
+ability=Whenever a player casts a green or white spell, that player discards a card.
 timing=enchantment
-requires_groovy_code
 oracle=Whenever a player casts a green or white spell, that player discards a card.

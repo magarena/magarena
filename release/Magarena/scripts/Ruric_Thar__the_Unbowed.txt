@@ -6,7 +6,8 @@ type=Legendary,Creature
 subtype=Ogre,Warrior
 cost={4}{R}{G}
 pt=6/6
-ability=vigilance;reach;SN attacks each turn if able.
+ability=Vigilance, reach;\
+        SN attacks each turn if able.;\
+        Whenever a player casts a noncreature spell, SN deals 6 damage to that player.
 timing=main
-requires_groovy_code
 oracle=Vigilance, reach\nRuric Thar, the Unbowed attacks each turn if able.\nWhenever a player casts a noncreature spell, Ruric Thar deals 6 damage to that player.

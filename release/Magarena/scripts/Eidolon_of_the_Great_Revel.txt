@@ -6,6 +6,6 @@ type=Enchantment,Creature
 subtype=Spirit
 cost={R}{R}
 pt=2/2
+ability=Whenever a player casts a spell with converted mana cost 3 or less, SN deals 2 damage to that player.
 timing=main
-requires_groovy_code=Pyrostatic Pillar
 oracle=Whenever a player casts a spell with converted mana cost 3 or less, Eidolon of the Great Revel deals 2 damage to that player.

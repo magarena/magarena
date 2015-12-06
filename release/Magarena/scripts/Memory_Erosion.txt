@@ -4,6 +4,6 @@ value=2.806
 rarity=R
 type=Enchantment
 cost={1}{U}{U}
+ability=Whenever an opponent casts a spell, that player puts the top two cards of his or her library into his or her graveyard.
 timing=enchantment
-requires_groovy_code
 oracle=Whenever an opponent casts a spell, that player puts the top two cards of his or her library into his or her graveyard.

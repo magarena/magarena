@@ -6,8 +6,8 @@ type=Creature
 subtype=Werewolf
 color=r
 pt=5/5
-ability=At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
-requires_groovy_code
+ability=Whenever an opponent casts a spell, SN deals 2 damage to that player.;\
+        At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
 transform=Mondronen Shaman
 timing=main
 hidden

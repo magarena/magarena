@@ -4,6 +4,6 @@ value=3.744
 rarity=U
 type=Enchantment
 cost={1}{R}
+ability=Whenever a player casts a spell with converted mana cost 3 or less, SN deals 2 damage to that player.
 timing=enchantment
-requires_groovy_code
 oracle=Whenever a player casts a spell with converted mana cost 3 or less, Pyrostatic Pillar deals 2 damage to that player.
