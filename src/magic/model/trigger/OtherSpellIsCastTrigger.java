@@ -27,7 +27,7 @@ public abstract class OtherSpellIsCastTrigger extends MagicTrigger<MagicCardOnSt
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCardOnStack spell) {
-                return sourceEvent.getTriggerEvent(permanent);
+                return sourceEvent.getTriggerEvent(permanent, spell.getController());
             }
         };
     }
@@ -40,7 +40,7 @@ public abstract class OtherSpellIsCastTrigger extends MagicTrigger<MagicCardOnSt
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCardOnStack spell) {
-                return sourceEvent.getTriggerEvent(permanent);
+                return sourceEvent.getTriggerEvent(permanent, spell.getController());
             }
         };
     }
@@ -53,7 +53,7 @@ public abstract class OtherSpellIsCastTrigger extends MagicTrigger<MagicCardOnSt
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicCardOnStack spell) {
-                return sourceEvent.getTriggerEvent(permanent);
+                return sourceEvent.getTriggerEvent(permanent, spell.getController());
             }
         };
     }
