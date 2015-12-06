@@ -514,10 +514,12 @@ check_image:
 
 # every card that requires groovy code has a corresponding groovy script file
 # every groovy script file has a corresponding card script that requires groovy code
+# every groovy script file has a txt file with the same name that requires groovy code
 check_requires_groovy_code:
 	diff \
 	<(ls -1 release/Magarena/scripts/*.groovy | cut -d'/' -f 4 | sed 's/.groovy//' | sort) \
 	<(grep requires_groovy_code -r release/Magarena/scripts/ | sed 's/.*=//' | sed 's/;/\n/g' | sed 's/.*scripts\///;s/.txt.*//' | sed -f scripts/normalize_name.sed | sort | uniq)
+	grep -L requires_groovy `ls -1 release/Magarena/scripts/*.groovy | sed 's/groovy/txt/'` | ${NO_OUTPUT}
 
 # $ must be escaped as \$ in groovy script
 check_groovy_escape:
