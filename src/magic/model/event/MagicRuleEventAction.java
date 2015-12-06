@@ -2891,7 +2891,7 @@ public enum MagicRuleEventAction {
         }
     },
     SelfBecomes(
-        "sn become(s)? a(n)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<duration> until end of turn)?(?<additionTo>(\\. It's| that's) still.*)?\\.",
+        "sn become(s)? a(n)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<duration> until end of turn)?(?<additionTo>(\\. It's| that's) still [^\\.]*)?\\.",
         MagicTiming.Animate,
         "Becomes"
     ) {
@@ -2923,7 +2923,7 @@ public enum MagicRuleEventAction {
         }
     },
     SelfBecomesAlt(
-        "(?<duration>until end of turn, )sn becomes a(n)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<additionTo>((\\.)? It's| that's) still.*)?\\.",
+        "(?<duration>until end of turn, )sn becomes a(n)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<additionTo>((\\.)? It's| that's) still [^\\.]*)?\\.",
         MagicTiming.Animate,
         "Becomes"
     ) {
@@ -2947,7 +2947,7 @@ public enum MagicRuleEventAction {
         }
     },
     ChosenBecomesAlt(
-        "(?<duration>until end of turn, )" + ARG.CHOICE + " becomes( a| an)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<additionTo>((\\.)? It's| that's) still.*)?\\.",
+        "(?<duration>until end of turn, )" + ARG.CHOICE + " becomes( a| an)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<additionTo>((\\.)? It's| that's) still [^\\.]*)?\\.",
         MagicTiming.Animate,
         "Becomes"
     ) {
@@ -2957,7 +2957,7 @@ public enum MagicRuleEventAction {
         }
     },
     ChosenBecomes(
-        ARG.CHOICE + " become(s)?( a| an)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<duration> until end of turn)?(?<additionTo>(\\. It's| that's) still.*)?\\.",
+        ARG.CHOICE + " become(s)?( a| an)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<duration> until end of turn)?(?<additionTo>(\\. It's| that's) still [^\\.]*)?\\.",
         MagicTiming.Animate,
         "Becomes"
     ) {
