@@ -4,6 +4,7 @@ value=4.368
 rarity=U
 type=Instant
 cost={G/P}
+ability=alt cost Pay 2 life named Pay 2 life
 effect=Put target card from a graveyard on top of its owner's library.
 timing=removal
 oracle=Put target card from a graveyard on top of its owner's library.
