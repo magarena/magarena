@@ -4,7 +4,7 @@ value=4.007
 rarity=U
 type=Instant
 cost={1}{R}
+effect=Draw two cards, then discard a card at random.
 ability=Flashback {2}{U}
 timing=Draw
-requires_groovy_code
 oracle=Draw two cards, then discard a card at random.\nFlashback {2}{U}

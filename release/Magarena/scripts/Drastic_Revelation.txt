@@ -4,6 +4,6 @@ value=2.951
 rarity=U
 type=Sorcery
 cost={2}{U}{B}{R}
+effect=Discard your hand.~Draw seven cards, then discard three cards at random.
 timing=main
-requires_groovy_code
 oracle=Discard your hand. Draw seven cards, then discard three cards at random.
