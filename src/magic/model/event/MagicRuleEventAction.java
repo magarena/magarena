@@ -3462,6 +3462,24 @@ public enum MagicRuleEventAction {
             return e.getName();
         }
     },
+    PoisonYou(
+        ARG.YOU + " get(s)? " + ARG.AMOUNT + " poison counter(s)?\\.",
+        MagicTargetHint.Negative,
+        MagicTiming.Removal,
+        "Poison"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final int amount = ARG.amount(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final MagicPlayer you = ARG.youPlayer(event, matcher);
+                    game.doAction(new ChangePoisonAction(you, amount));
+                }
+            };
+        }
+    },
     ;
 
     private final Pattern pattern;
