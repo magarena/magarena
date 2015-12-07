@@ -6,6 +6,6 @@ type=Creature
 subtype=Snake
 cost={3}{G}
 pt=1/2
+ability=Whenever SN deals damage to a player, that player gets two poison counters.
 timing=main
-requires_groovy_code
 oracle=Whenever Marsh Viper deals damage to a player, that player gets two poison counters.

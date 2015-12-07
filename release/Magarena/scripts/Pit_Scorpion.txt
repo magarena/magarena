@@ -6,6 +6,6 @@ type=Creature
 subtype=Scorpion
 cost={2}{B}
 pt=1/1
+ability=Whenever SN deals damage to a player, that player gets a poison counter.
 timing=main
-requires_groovy_code
 oracle=Whenever Pit Scorpion deals damage to a player, that player gets a poison counter.

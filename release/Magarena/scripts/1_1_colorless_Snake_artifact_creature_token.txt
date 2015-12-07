@@ -6,5 +6,5 @@ type=Artifact,Creature
 subtype=Snake
 color=
 pt=1/1
-requires_groovy_code=Pit Scorpion
+ability=Whenever this creature deals damage to a player, that player gets a poison counter.
 oracle=Whenever this creature deals damage to a player, that player gets a poison counter.

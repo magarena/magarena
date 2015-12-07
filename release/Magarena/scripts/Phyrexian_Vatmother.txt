@@ -6,7 +6,7 @@ type=Creature
 subtype=Horror
 cost={2}{B}{B}
 pt=4/5
-ability=infect
+ability=Infect;\
+        At the beginning of your upkeep, you get a poison counter.
 timing=main
-requires_groovy_code
 oracle=Infect\nAt the beginning of your upkeep, you get a poison counter.
