@@ -775,8 +775,8 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    DrawDiscardPlayer(
-        ARG.YOU + "( )?draw(s)? (?<amount1>[a-z]+) card(s)?(, then|\\. if you do,) discard(s)? (?<amount2>[a-z]+) card(s)?\\.",
+    DrawDiscardYou(
+        ARG.YOU + "( )?draw(s)? (?<amount1>[a-z]+) card(s)?(, then|\\. if you do,) discard(s)? (?<amount2>[a-z]+) card(s)?(?<random> at random)?\\.",
         MagicTiming.Draw,
         "Draw"
     ) {
@@ -784,11 +784,17 @@ public enum MagicRuleEventAction {
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount1 = EnglishToInt.convert(matcher.group("amount1"));
             final int amount2 = EnglishToInt.convert(matcher.group("amount2"));
+            final boolean isRandom = matcher.group("random") != null;
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new DrawAction(ARG.youPlayer(event, matcher), amount1));
-                    game.addEvent(new MagicDiscardEvent(event.getSource(), ARG.youPlayer(event, matcher), amount2));
+                    final MagicPlayer you = ARG.youPlayer(event, matcher);
+                    game.doAction(new DrawAction(you, amount1));
+                    if (isRandom) {
+                        game.addEvent(MagicDiscardEvent.Random(event.getSource(), you, amount2));
+                    } else {
+                        game.addEvent(new MagicDiscardEvent(event.getSource(), you, amount2));
+                    }
                 }
             };
         }
