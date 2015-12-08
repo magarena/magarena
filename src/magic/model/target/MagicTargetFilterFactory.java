@@ -343,6 +343,8 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl WHITE_OR_BLUE_PERMANENT_AN_OPPONENT_CONTROLS = MagicTargetFilterFactory.permanentOr(MagicColor.White, MagicColor.Blue, Control.Opp);
 
     public static final MagicPermanentFilterImpl WHITE_OR_BLUE_PERMANENT_YOU_CONTROL = MagicTargetFilterFactory.permanentOr(MagicColor.White, MagicColor.Blue, Control.You);
+    
+    public static final MagicPermanentFilterImpl GREEN_OR_WHITE_PERMANENT_YOU_CONTROL = MagicTargetFilterFactory.permanentOr(MagicColor.Green, MagicColor.White, Control.You);
 
     public static final MagicPermanentFilterImpl WHITE_OR_BLUE_PERMANENT = MagicTargetFilterFactory.permanentOr(MagicColor.White, MagicColor.Blue, Control.Any);
 
@@ -2591,6 +2593,7 @@ public class MagicTargetFilterFactory {
         single.put("permanent you control", PERMANENT_YOU_CONTROL);
         single.put("permanent with fading you control", PERMANENT_FADING_YOU_CONTROL);
         single.put("multicolored permanent you control", MULTICOLORED_PERMANENT_YOU_CONTROL);
+        single.put("green or white permanent you control", GREEN_OR_WHITE_PERMANENT_YOU_CONTROL);
         single.put("nonland permanent you control", NONLAND_PERMANENT_YOU_CONTROL);
         single.put("nontoken permanent you control", NONTOKEN_PERMANENT_YOU_CONTROL);
         single.put("nontoken artifact you control", NONTOKEN_ARTIFACT_YOU_CONTROL);
