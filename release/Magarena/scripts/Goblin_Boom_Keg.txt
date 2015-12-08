@@ -4,7 +4,7 @@ value=2.500
 rarity=U
 type=Artifact
 cost={4}
-ability=At the beginning of your upkeep, sacrifice SN.
+ability=At the beginning of your upkeep, sacrifice SN.;\
+        When SN is put into a graveyard from the battlefield, SN deals 3 damage to target creature or player.
 timing=artifact
-requires_groovy_code
 oracle=At the beginning of your upkeep, sacrifice Goblin Boom Keg.\nWhen Goblin Boom Keg is put into a graveyard from the battlefield, it deals 3 damage to target creature or player.
