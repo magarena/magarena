@@ -1768,17 +1768,24 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    BounceLibTopSelf(
-        "put sn on top of its owner's library\\.",
+    BounceLibTopIt(
+        "put " + ARG.IT + " on top of its owner's library\\.",
         MagicTiming.Removal,
-        "Bounce",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new RemoveFromPlayAction(event.getPermanent(),MagicLocationType.TopOfOwnersLibrary));
-            }
+        "Bounce"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(new RemoveFromPlayAction(
+                        ARG.itPermanent(event, matcher),
+                        MagicLocationType.TopOfOwnersLibrary
+                    ));
+                }
+            };
         }
-    ),
+    },
     BounceLibTopChosen(
         "put " + ARG.CHOICE + " on top of its owner's library\\.",
         MagicTargetHint.None,
