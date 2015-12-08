@@ -2470,7 +2470,7 @@ public enum MagicRuleEventAction {
         }
     ),
     SacrificeChosen(
-        "sacrifice (?<permanent>[^\\.]*)\\.",
+        ARG.YOU + "( )?sacrifice(s)? (?<permanent>[^\\.]*)\\.",
         MagicTiming.Removal,
         "Sacrifice"
     ) {
@@ -2480,7 +2480,11 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.addEvent(new MagicSacrificePermanentEvent(event.getSource(), event.getPlayer(), choice));
+                    game.addEvent(new MagicSacrificePermanentEvent(
+                        event.getSource(),
+                        ARG.youPlayer(event, matcher),
+                        choice
+                    ));
                 }
             };
         }
