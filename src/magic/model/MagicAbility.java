@@ -930,6 +930,13 @@ public enum MagicAbility {
             ));
         }
     },
+    OppUpkeepEffect("At the beginning of each opponent's upkeep, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(AtUpkeepTrigger.createOpp(
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     EachDrawStepEffect("At the beginning of each player's draw step, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(AtDrawTrigger.create(

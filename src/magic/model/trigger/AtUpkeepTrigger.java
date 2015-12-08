@@ -28,6 +28,19 @@ public abstract class AtUpkeepTrigger extends MagicTrigger<MagicPlayer> {
             }
         };
     }
+    
+    public static AtUpkeepTrigger createOpp(final MagicSourceEvent sourceEvent) {
+        return new AtUpkeepTrigger() {
+            @Override
+            public boolean accept(final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
+                return permanent.isOpponent(upkeepPlayer);
+            }
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
+                return sourceEvent.getTriggerEvent(permanent, upkeepPlayer);
+            }
+        };
+    }
 
     public static final AtUpkeepTrigger YouDraw(final MagicSource staleSource, final MagicPlayer stalePlayer) {
         return new AtUpkeepTrigger() {
