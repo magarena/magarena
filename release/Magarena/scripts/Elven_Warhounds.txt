@@ -6,6 +6,6 @@ type=Creature
 subtype=Hound
 cost={3}{G}
 pt=2/2
+ability=Whenever SN becomes blocked by a creature, put that creature on top of its owner's library.
 timing=main
-requires_groovy_code
 oracle=Whenever Elven Warhounds becomes blocked by a creature, put that creature on top of its owner's library.
