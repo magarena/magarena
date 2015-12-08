@@ -690,6 +690,14 @@ public enum MagicAbility {
             ));
         }
     },
+    AnyAttacksAloneEffect("When(ever)? " + ARG.WORDRUN + " attacks alone, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(AttacksTrigger.createAlone(
+                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     AnyAttacksYouEffect("When(ever)? " + ARG.WORDRUN + " attacks you( or a planeswalker you control)?, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(AttacksTrigger.createYou(

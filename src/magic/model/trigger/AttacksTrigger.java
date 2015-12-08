@@ -19,8 +19,23 @@ public abstract class AttacksTrigger extends MagicTrigger<MagicPermanent> {
 
     public static AttacksTrigger create(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
         return new AttacksTrigger() {
+            @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent attacker) {
                 return filter.accept(permanent, permanent.getController(), attacker);
+            }
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent attacker) {
+                return sourceEvent.getTriggerEvent(permanent, attacker);
+            }
+        };
+    }
+    
+    public static AttacksTrigger createAlone(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
+        return new AttacksTrigger() {
+            @Override
+            public boolean accept(final MagicPermanent permanent, final MagicPermanent attacker) {
+                return filter.accept(permanent, permanent.getController(), attacker) && 
+                       attacker.getController().getNrOfAttackers() == 1;
             }
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent attacker) {
@@ -31,6 +46,7 @@ public abstract class AttacksTrigger extends MagicTrigger<MagicPermanent> {
 
     public static AttacksTrigger createYou(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
         return new AttacksTrigger() {
+            @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent attacker) {
                 return filter.accept(permanent, permanent.getController(), attacker) && permanent.isEnemy(attacker);
             }
