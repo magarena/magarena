@@ -4,6 +4,6 @@ value=3.282
 rarity=R
 type=Enchantment
 cost={B}{R}{G}
+ability=At the beginning of each player's upkeep, that player sacrifices a nonbasic land.
 timing=enchantment
-requires_groovy_code
 oracle=At the beginning of each player's upkeep, that player sacrifices a nonbasic land.

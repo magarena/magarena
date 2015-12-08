@@ -6,8 +6,8 @@ type=Legendary,Creature
 subtype=Praetor
 cost={5}{B}{B}
 pt=6/6
-ability=swampwalk;\
-        At the beginning of your upkeep, return target creature card from your graveyard to the battlefield.
+ability=Swampwalk;\
+        At the beginning of your upkeep, return target creature card from your graveyard to the battlefield.;\
+        At the beginning of each opponent's upkeep, that player sacrifices a creature.
 timing=main
-requires_groovy_code
 oracle=Swampwalk\nAt the beginning of your upkeep, return target creature card from your graveyard to the battlefield.\nAt the beginning of each opponent's upkeep, that player sacrifices a creature.

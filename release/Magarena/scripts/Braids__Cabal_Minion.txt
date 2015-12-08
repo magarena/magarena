@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Human,Minion
 cost={2}{B}{B}
 pt=2/2
+ability=At the beginning of each player's upkeep, that player sacrifices an artifact, creature, or land.
 timing=main
-requires_groovy_code
 oracle=At the beginning of each player's upkeep, that player sacrifices an artifact, creature, or land.

@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Shaman
 cost={2}{R}
 pt=1/1
+ability=At the beginning of each player's end step, that player sacrifices an untapped land.
 timing=main
-requires_groovy_code
 oracle=At the beginning of each player's end step, that player sacrifices an untapped land.

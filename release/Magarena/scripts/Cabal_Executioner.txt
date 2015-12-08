@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Cleric
 cost={2}{B}{B}
 pt=2/2
-ability=Morph {3}{B}{B}
+ability=Whenever SN deals combat damage to a player, that player sacrifices a creature.;\
+        Morph {3}{B}{B}
 timing=main
-requires_groovy_code
 oracle=Whenever Cabal Executioner deals combat damage to a player, that player sacrifices a creature.\nMorph {3}{B}{B}

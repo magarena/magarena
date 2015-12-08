@@ -6,6 +6,6 @@ type=Creature
 subtype=Slug,Beast
 cost={3}{G}{G}
 pt=4/6
+ability=At the beginning of each player's upkeep, that player sacrifices an artifact.
 timing=main
-requires_groovy_code
 oracle=At the beginning of each player's upkeep, that player sacrifices an artifact.
