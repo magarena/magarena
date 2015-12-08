@@ -698,6 +698,14 @@ public enum MagicAbility {
             ));
         }
     },
+    AnyAttacksNotBlockedEffect("When(ever)? " + ARG.WORDRUN + " attacks and isn't blocked, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(AttacksUnblockedTrigger.create(
+                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     BlocksOrBlockedEffect("Whenever " + ARG.WORDRUN + " blocks or becomes blocked, " + ARG.EFFECT, 20) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(ARG.effect(arg));
