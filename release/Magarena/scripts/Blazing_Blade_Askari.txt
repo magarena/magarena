@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Knight
 cost={2}{R}
 pt=2/2
-ability=Flanking;\
-        {2}: SN becomes colorless until end of turn.
+ability=Flanking
 timing=main
+requires_groovy_code=Raging Spirit
 oracle=Flanking\n{2}: Blazing Blade Askari becomes colorless until end of turn.
