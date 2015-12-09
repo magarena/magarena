@@ -6,6 +6,6 @@ type=Creature
 subtype=Kavu
 cost={3}{R}
 pt=3/3
-ability={2}: SN becomes colorless until end of turn.
 timing=main
+requires_groovy_code=Raging Spirit
 oracle={2}: Ancient Kavu becomes colorless until end of turn.
