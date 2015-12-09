@@ -49,25 +49,6 @@ import magic.model.trigger.PreventDamageTrigger;
 import magic.model.trigger.ReboundTrigger;
 
 public enum MagicRuleEventAction {
-    DestroyIt(
-        "destroy " + ARG.IT + "\\.(?<noregen> it can't be regenerated\\.)?",
-        MagicTiming.Removal,
-        "Destroy"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final MagicPermanent it = ARG.itPermanent(event, matcher);
-                    if (matcher.group("noregen") != null) {
-                        game.doAction(ChangeStateAction.Set(it, MagicPermanentState.CannotBeRegenerated));
-                    }
-                    game.doAction(new DestroyAction(it));
-                }
-            };
-        }
-    },
     DestroyItEndOfCombat(
         "destroy " + ARG.IT + " at end of combat\\.",
         MagicTiming.Removal,
@@ -120,18 +101,18 @@ public enum MagicRuleEventAction {
             }
         }
     },
-    DestroyGroup(
-        "destroy (?<group>[^\\.]*)\\.(?<noregen> (They|It) can't be regenerated\\.)?",
+    DestroyPermanents(
+        "destroy " + ARG.PERMANENTS + "\\.(?<noregen> (They|It) can't be regenerated\\.)?",
         MagicTiming.Removal,
         "Destroy"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(matcher.group("group"));
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final Collection<MagicPermanent> targets = filter.filter(event);
+                    final Collection<MagicPermanent> targets = ARG.permanents(event, matcher, filter);
                     if (matcher.group("noregen") != null) {
                         for (final MagicPermanent it : targets) {
                             game.doAction(ChangeStateAction.Set(it, MagicPermanentState.CannotBeRegenerated));
