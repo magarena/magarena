@@ -778,6 +778,7 @@ parse_groovy.txt:
 	git checkout -- release/Magarena/scripts
 	patch -p1 -R < parse_missing.patch
 	join -t'_' <(sort cards/groovy.txt) <(sort parse_ok.txt) > $@
+	diff parse_groovy.ignore $@
 
 # extract name<tab>image url from gallery page
 %.tsv: %.html
