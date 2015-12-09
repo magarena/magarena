@@ -889,28 +889,6 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    GainLifeYou(
-        ARG.YOU + "( )?gain (?<amount>[0-9]+) life( for each " + ARG.WORDRUN + ")?\\.",
-        MagicTiming.Removal,
-        "+Life"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = Integer.parseInt(matcher.group("amount"));
-            final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final MagicPlayer player = ARG.youPlayer(event, matcher);
-                    final int multiplier = count.getAmount(event);
-                    if (multiplier>1) {
-                        game.logAppendMessage(event.getPlayer(), "(" + amount * multiplier + ")");
-                    }
-                    game.doAction(new ChangeLifeAction(player, amount * multiplier));
-                }
-            };
-        }
-    },
     GainLifeChosen(
         ARG.CHOICE + " gains (?<amount>[0-9]+) life\\.",
         MagicTargetHint.Positive,
@@ -928,6 +906,31 @@ public enum MagicRuleEventAction {
                             game.doAction(new ChangeLifeAction(player, amount));
                         }
                     });
+                }
+            };
+        }
+    },
+    GainLifePlayers(
+        ARG.PLAYERS + "( )?gain (?<amount>[0-9]+) life( for each " + ARG.WORDRUN + ")?\\.",
+        MagicTiming.Removal,
+        "+Life"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final int amount = Integer.parseInt(matcher.group("amount"));
+            final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
+            final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final int multiplier = count.getAmount(event);
+                    final int total = amount * multiplier;
+                    if (multiplier>1) {
+                        game.logAppendMessage(event.getPlayer(), "(" + total + ")");
+                    }
+                    for (final MagicPlayer player : ARG.players(event, matcher, filter)) {
+                        game.doAction(new ChangeLifeAction(player, total));
+                    }
                 }
             };
         }
