@@ -923,28 +923,6 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    LoseLifeYou(
-        ARG.YOU + "( )?lose(s)? (?<amount>[0-9]+) life( for each " + ARG.WORDRUN + ")?\\.",
-        MagicTiming.Removal,
-        "-Life"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = Integer.parseInt(matcher.group("amount"));
-            final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final MagicPlayer player = ARG.youPlayer(event, matcher);
-                    final int multiplier = count.getAmount(event);
-                    if (multiplier>1) {
-                        game.logAppendMessage(event.getPlayer(), "(" + amount*multiplier + ")");
-                    }
-                    game.doAction(new ChangeLifeAction(player, -amount * multiplier));
-                }
-            };
-        }
-    },
     LoseLifeChosen(
         ARG.CHOICE + " lose(s)? (?<amount>[0-9]+) life\\.",
         MagicTargetHint.Negative,
@@ -966,20 +944,25 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    EachLoseLife(
-        "(?<group>[^\\.]*) loses (?<amount>[0-9]+) life\\.",
+    LoseLifePlayers(
+        ARG.PLAYERS + "( )?lose(s)? (?<amount>[0-9]+) life( for each " + ARG.WORDRUN + ")?\\.",
         MagicTiming.Removal,
         "-Life"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = Integer.parseInt(matcher.group("amount"));
-            final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.Player(matcher.group("group"));
+            final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
+            final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    for (final MagicPlayer player : filter.filter(event)) {
-                        game.doAction(new ChangeLifeAction(player, -amount));
+                    final int multiplier = count.getAmount(event);
+                    if (multiplier>1) {
+                        game.logAppendMessage(event.getPlayer(), "(" + amount*multiplier + ")");
+                    }
+                    for (final MagicPlayer player : ARG.players(event, matcher, filter)) {
+                        game.doAction(new ChangeLifeAction(player, -amount * multiplier));
                     }
                 }
             };
