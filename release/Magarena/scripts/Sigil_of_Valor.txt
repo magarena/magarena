@@ -6,7 +6,7 @@ rarity=U
 type=Artifact
 subtype=Equipment
 cost={2}
-ability=Whenever equipped creature attacks alone, it gets +1/+1 until end of turn for each other creature you control.;\
+ability=Whenever equipped creature attacks alone, RN gets +1/+1 until end of turn for each other creature you control.;\
         Equip {1}
 timing=equipment
 oracle=Whenever equipped creature attacks alone, it gets +1/+1 until end of turn for each other creature you control.\nEquip {1}
