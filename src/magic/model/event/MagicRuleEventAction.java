@@ -2469,26 +2469,6 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    SacrificeChosen(
-        ARG.YOU + "( )?sacrifice(s)? (?<permanent>[^\\.]*)\\.",
-        MagicTiming.Removal,
-        "Sacrifice"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("permanent")+" you control");
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.addEvent(new MagicSacrificePermanentEvent(
-                        event.getSource(),
-                        ARG.youPlayer(event, matcher),
-                        choice
-                    ));
-                }
-            };
-        }
-    },
     TargetSacrificeChosen(
         ARG.CHOICE + " sacrifices (?<permanent>[^\\.]*)\\.",
         MagicTargetHint.Negative,
@@ -2510,19 +2490,19 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    EachSacrificeChosen(
-        "(?<group>[^\\.]*) sacrifices (?<permanent>[^\\.]*)\\.",
+    PlayersSacrificeChosen(
+        ARG.PLAYERS + "( )?sacrifice(s)? (?<permanent>[^\\.]*)\\.",
         MagicTiming.Removal,
         "Sacrifice"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("permanent")+" you control");
-            final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.Player(matcher.group("group"));
+            final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    for (final MagicPlayer player : filter.filter(event)) {
+                    for (final MagicPlayer player : ARG.players(event, matcher, filter)) {
                         game.addEvent(new MagicSacrificePermanentEvent(event.getSource(), player, choice));
                     }
                 }
