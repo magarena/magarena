@@ -1973,27 +1973,6 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    UntapSelf(
-        "untap " + ARG.IT + "\\.",
-        MagicTiming.Tapping,
-        "Untap"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new UntapAction(ARG.itPermanent(event, matcher)));
-                }
-            };
-        }
-        @Override
-        public MagicCondition[] getConditions(final Matcher matcher) {
-            return new MagicCondition[] {
-                new MagicArtificialCondition(MagicCondition.TAPPED_CONDITION)
-            };
-        }
-    },
     UntapChosen(
         "untap " + ARG.CHOICE + "\\.",
         MagicTargetHint.Positive,
@@ -2011,22 +1990,27 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    UntapGroup(
-        "untap (?<group>[^\\.]*)\\.",
+    UntapPermanents(
+        "untap " + ARG.PERMANENTS + "\\.",
         MagicTiming.Tapping,
         "Untap"
     ) {
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(matcher.group("group"));
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final Collection<MagicPermanent> targets = filter.filter(event);
-                    for (final MagicPermanent perm : targets) {
+                    for (final MagicPermanent perm : ARG.permanents(event, matcher, filter)) {
                         game.doAction(new UntapAction(perm));
                     }
                 }
             };
+        }
+        @Override
+        public MagicCondition[] getConditions(final Matcher matcher) {
+            return matcher.group("sn") != null ? 
+                new MagicCondition[] { new MagicArtificialCondition(MagicCondition.TAPPED_CONDITION) } :
+                MagicActivation.NO_COND;
         }
     },
     PutTokenForEach(
