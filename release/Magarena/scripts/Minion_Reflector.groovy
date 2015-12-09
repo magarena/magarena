@@ -3,7 +3,8 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent otherPermanent) {
             return (otherPermanent.isNonToken() &&
-                    otherPermanent.hasType(MagicType.Creature)) ?
+                    otherPermanent.hasType(MagicType.Creature) &&
+                    otherPermanent.isFriend(permanent)) ?
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(
