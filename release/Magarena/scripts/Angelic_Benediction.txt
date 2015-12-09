@@ -4,7 +4,7 @@ value=2.991
 rarity=U
 type=Enchantment
 cost={3}{W}
+ability=Exalted;\
+        Whenever a creature you control attacks alone, you may tap target creature.
 timing=enchantment
-ability=exalted
-requires_groovy_code
 oracle=Exalted\nWhenever a creature you control attacks alone, you may tap target creature.

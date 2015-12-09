@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Human,Knight
 cost={1}{G}{W}{U}
 pt=3/3
-ability=exalted
+ability=Exalted;\
+        Whenever a creature you control attacks alone, RN gains double strike until end of turn.
 timing=fmain
-requires_groovy_code
 oracle=Exalted\nWhenever a creature you control attacks alone, it gains double strike until end of turn.

@@ -6,6 +6,6 @@ type=Creature
 subtype=Giant,Warrior
 cost={5}{R}
 pt=4/4
+ability=Whenever SN attacks alone, SN gets +1/+1 and gains trample until end of turn.
 timing=main
-requires_groovy_code
 oracle=Whenever Lunk Errant attacks alone, it gets +1/+1 and gains trample until end of turn.

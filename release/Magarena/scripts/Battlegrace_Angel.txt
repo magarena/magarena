@@ -7,7 +7,7 @@ subtype=Angel
 cost={3}{W}{W}
 pt=4/4
 ability=Flying;\
-        Exalted
+        Exalted;\
+        Whenever a creature you control attacks alone, RN gains lifelink until end of turn.
 timing=fmain
-requires_groovy_code
 oracle=Flying\nExalted\nWhenever a creature you control attacks alone, it gains lifelink until end of turn.

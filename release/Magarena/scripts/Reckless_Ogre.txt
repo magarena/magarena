@@ -6,6 +6,6 @@ type=Creature
 subtype=Ogre
 cost={3}{R}
 pt=3/2
+ability=Whenever SN attacks alone, SN gets +3/+0 until end of turn.
 timing=main
-requires_groovy_code
 oracle=Whenever Reckless Ogre attacks alone, it gets +3/+0 until end of turn.
