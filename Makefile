@@ -658,6 +658,9 @@ ai/benchmark.rnd:
 exp/zermelo.tsv: $(wildcard exp/136*.log)
 	awk -f exp/extract_games.awk $^ | ./exp/whr.rb | tac > $@
 
+bytes_per_card.txt:
+	for i in `seq 39 68`; do echo -n "1.$$i "; make bytes_per_card.1.$$i -s ; done > bytes_per_card.txt
+
 bytes_per_card.%:
 	echo `git show $*:release/Magarena/scripts | tail -n+3 | sed 's/^/$*:release\/Magarena\/scripts\//' | git cat-file --batch | grep -v " blob " | sed 's/^[[:space:]]*//;/^$$/d' | wc -c` \
 	/ \
