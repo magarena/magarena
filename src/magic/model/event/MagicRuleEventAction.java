@@ -2282,27 +2282,6 @@ public enum MagicRuleEventAction {
         }
     },
     */
-    RegenerateSelf(
-        "regenerate " +  ARG.IT + "\\.",
-        MagicTiming.Pump,
-        "Regen"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new RegenerateAction(ARG.itPermanent(event, matcher)));
-                }
-            };
-        }
-        @Override
-        public MagicCondition[] getConditions(final Matcher matcher) {
-            return new MagicCondition[] {
-                MagicCondition.CAN_REGENERATE_CONDITION,
-            };
-        }
-    },
     RegenerateChosen(
         "regenerate " + ARG.CHOICE + "\\.",
         MagicTargetHint.Positive,
@@ -2316,31 +2295,36 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     event.processTargetPermanent(game,new MagicPermanentAction() {
-                        public void doAction(final MagicPermanent creature) {
-                            game.doAction(new RegenerateAction(creature));
+                        public void doAction(final MagicPermanent it) {
+                            game.doAction(new RegenerateAction(it));
                         }
                     });
                 }
             };
         }
     },
-    RegenerateGroup(
-        "regenerate (?<group>[^\\.]*)\\.",
+    RegeneratePermanents(
+        "regenerate " + ARG.PERMANENTS + "\\.",
         MagicTiming.Pump,
         "Regen"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(matcher.group("group"));
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final Collection<MagicPermanent> targets = filter.filter(event);
-                    for (final MagicPermanent perm : targets) {
-                        game.doAction(new RegenerateAction(perm));
+                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                        game.doAction(new RegenerateAction(it));
                     }
                 }
             };
+        }
+        @Override
+        public MagicCondition[] getConditions(final Matcher matcher) {
+            return matcher.group("sn") != null ? 
+                new MagicCondition[] { MagicCondition.CAN_REGENERATE_CONDITION } :
+                MagicActivation.NO_COND;
         }
     },
     SwitchPTSelf(
