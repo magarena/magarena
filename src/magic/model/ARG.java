@@ -137,7 +137,7 @@ public class ARG {
         }
     }
 
-    public static final String PERMANENTS = "((?<rn>rn)|(?<sn>sn)|(?<group>[^\\.]*) )";
+    public static final String PERMANENTS = "((?<rn>rn)|(?<sn>sn)|(?<group>[^\\.]*))";
     public static List<MagicPermanent> permanents(final MagicEvent event, final Matcher m, final MagicTargetFilter<MagicPermanent> filter) {
         if (m.group("rn") != null) {
             return Collections.singletonList(event.getRefPermanent());
