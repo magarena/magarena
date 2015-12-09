@@ -2289,22 +2289,6 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    MillYou(
-        ARG.YOU + "( )?put(s)? the top (?<amount>[a-z]+)?( )?card(s)? of (your|his or her) library into (your|his or her) graveyard\\.",
-        MagicTiming.Draw,
-        "Mill"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = EnglishToInt.convert(matcher.group("amount"));
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new MillLibraryAction(ARG.youPlayer(event, matcher), amount));
-                }
-            };
-        }
-    },
     MillChosen(
         ARG.CHOICE + " put(s)? the top (?<amount>[a-z]+)?( )?card(s)? of his or her library into his or her graveyard\\.",
         MagicTiming.Draw,
@@ -2325,19 +2309,19 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    MillEach(
-        "(?<group>[^\\.]*) put(s)? the top (?<amount>[a-z]+)?( )?card(s)? of his or her library into his or her graveyard\\.",
+    MillPlayers(
+        ARG.PLAYERS + "( )?put(s)? the top (?<amount>[a-z]+)?( )?card(s)? of (your|his or her) library into (your|his or her) graveyard\\.",
         MagicTiming.Draw,
         "Mill"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = EnglishToInt.convert(matcher.group("amount"));
-            final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.Player(matcher.group("group"));
+            final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    for (final MagicPlayer player : filter.filter(event)) {
+                    for (final MagicPlayer player : ARG.players(event, matcher, filter)) {
                         game.doAction(new MillLibraryAction(player, amount));
                     }
                 }
