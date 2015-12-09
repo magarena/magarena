@@ -674,27 +674,6 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    DrawYou(
-        ARG.YOU + "( )?draw(s)? (?<amount>[a-z]+) (additional )?card(s)?( for each " + ARG.WORDRUN +")?\\.",
-        MagicTiming.Draw,
-        "Draw"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
-            final int amount = EnglishToInt.convert(matcher.group("amount"));
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final int multiplier = count.getAmount(event);
-                    if (multiplier>1) {
-                        game.logAppendMessage(event.getPlayer(), "(" + multiplier + ")");
-                    }
-                    game.doAction(new DrawAction(ARG.youPlayer(event, matcher), amount * multiplier));
-                }
-            };
-        }
-    },
     DrawSelfNextUpkeep(
         "(pn |you )?draw(s)? a card at the beginning of the next turn's upkeep\\.",
         MagicTiming.Draw,
@@ -736,20 +715,26 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    EachDraw(
-        "(?<group>[^\\.]*) draw(s)? (?<amount>[a-z]+) card(s)?\\.",
+    DrawPlayers(
+        ARG.PLAYERS + "( )?draw(s)? (?<amount>[a-z]+) (additional )?card(s)?( for each " + ARG.WORDRUN +")?\\.",
         MagicTiming.Draw,
         "Draw"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
+            final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
             final int amount = EnglishToInt.convert(matcher.group("amount"));
-            final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.Player(matcher.group("group"));
+            final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    for (final MagicPlayer player : filter.filter(event)) {
-                        game.doAction(new DrawAction(player, amount));
+                    final int multiplier = count.getAmount(event);
+                    final int total = amount * multiplier;
+                    if (multiplier>1) {
+                        game.logAppendMessage(event.getPlayer(), "(" + total + ")");
+                    }
+                    for (final MagicPlayer player : ARG.players(event, matcher, filter)) {
+                        game.doAction(new DrawAction(player, total));
                     }
                 }
             };
