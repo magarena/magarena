@@ -100,6 +100,11 @@ public enum MagicPlayMod implements MagicPermanentAction {
             perm.changeCounters(MagicCounterType.Death,1);
         }
     },
+    ARTIFACT() {
+        protected void doAction(final MagicGame game, final MagicPermanent perm) {
+            game.doAction(new AddStaticAction(perm, MagicStatic.Artifact));
+        }
+    },
     ZOMBIE() {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             game.doAction(new AddStaticAction(perm, MagicStatic.Zombie));
