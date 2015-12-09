@@ -1298,31 +1298,6 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    CounterOnSelf(
-        "put (?<amount>[a-z]+) (?<type>[^ ]+) counter(s)? on " + ARG.IT + "\\.",
-        MagicTiming.Pump
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = EnglishToInt.convert(matcher.group("amount"));
-            final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new ChangeCountersAction(
-                        ARG.itPermanent(event, matcher),
-                        counterType,
-                        amount
-                    ));
-                }
-            };
-        }
-        @Override
-        public String getName(final Matcher matcher) {
-            final int amount = EnglishToInt.convert(matcher.group("amount"));
-            return (amount>1) ? "+Counters" : "+Counter";
-        }
-    },
     CounterOnChosen(
         "put (?<amount>[a-z]+) (?<type>[^ ]+) counter(s)? on " + ARG.CHOICE + "\\."
     ) {
@@ -1378,31 +1353,24 @@ public enum MagicRuleEventAction {
         @Override
         public String getName(final Matcher matcher) {
             final int amount = EnglishToInt.convert(matcher.group("amount"));
-            if (amount>1) {
-                final String name = "+Counters";
-                return name;
-            } else {
-                final String name = "+Counter";
-                return name;
-            }
+            return (amount>1) ? "+Counters" : "+Counter";
         }
     },
-    CounterOnGroup(
-        "put (?<amount>[a-z]+) (?<type>[^ ]+) counter(s)? on (?<group>[^\\.]*)\\.",
+    CounterOnPermanents(
+        "put (?<amount>[a-z]+) (?<type>[^ ]+) counter(s)? on " +  ARG.PERMANENTS + "\\.",
         MagicTiming.Pump
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = EnglishToInt.convert(matcher.group("amount"));
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(matcher.group("group"));
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final Collection<MagicPermanent> targets = filter.filter(event);
-                    for (final MagicPermanent target : targets) {
+                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
                         game.doAction(new ChangeCountersAction(
-                            target,
+                            it,
                             counterType,
                             amount
                         ));
@@ -1412,7 +1380,7 @@ public enum MagicRuleEventAction {
         }
         @Override
         public String getName(final Matcher matcher) {
-            return CounterOnSelf.getName(matcher);
+            return CounterOnChosen.getName(matcher);
         }
     },
     CounterFromSelfClockwork(
