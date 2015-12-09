@@ -4,6 +4,6 @@ value=3.943
 rarity=C
 type=Sorcery
 cost={R}
-timing=draw
-requires_groovy_code
+effect=Each player draws three cards, then discards three cards at random.
+timing=main
 oracle=Each player draws three cards, then discards three cards at random.

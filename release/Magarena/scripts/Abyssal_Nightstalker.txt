@@ -6,6 +6,6 @@ type=Creature
 subtype=Nightstalker
 cost={3}{B}
 pt=2/2
+ability=Whenever SN attacks and isn't blocked, defending player discards a card.
 timing=main
-requires_groovy_code
 oracle=Whenever Abyssal Nightstalker attacks and isn't blocked, defending player discards a card.

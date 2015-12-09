@@ -4,7 +4,7 @@ value=2.975
 rarity=R
 type=Artifact
 cost={4}
+ability={T}: Put a charge counter on SN.;\
+        {T}: Each player draws a card for each charge counter on SN.
 timing=artifact
-ability={T}:Put a charge counter on SN.
-requires_groovy_code
 oracle={T}: Put a charge counter on Otherworld Atlas.\n{T}: Each player draws a card for each charge counter on Otherworld Atlas.

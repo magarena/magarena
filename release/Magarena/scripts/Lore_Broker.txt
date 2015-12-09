@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Rogue
 cost={1}{U}
 pt=1/2
+ability={T}: Each player draws a card, then discards a card.
 timing=main
-requires_groovy_code
 oracle={T}: Each player draws a card, then discards a card.

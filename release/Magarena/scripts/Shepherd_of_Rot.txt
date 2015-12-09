@@ -6,6 +6,6 @@ type=Creature
 subtype=Zombie,Cleric
 cost={1}{B}
 pt=1/1
+ability={T}: Each player loses 1 life for each Zombie on the battlefield.
 timing=main
-requires_groovy_code
 oracle={T}: Each player loses 1 life for each Zombie on the battlefield.
