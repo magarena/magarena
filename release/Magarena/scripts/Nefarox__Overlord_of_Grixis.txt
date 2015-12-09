@@ -6,7 +6,8 @@ type=Legendary,Creature
 subtype=Demon
 cost={4}{B}{B}
 pt=5/5
-ability=flying;exalted
+ability=Flying;\
+        Exalted;\
+        Whenever SN attacks alone, defending player sacrifices a creature.
 timing=main
-requires_groovy_code
 oracle=Flying\nExalted\nWhenever Nefarox, Overlord of Grixis attacks alone, defending player sacrifices a creature.
