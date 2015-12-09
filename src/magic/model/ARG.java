@@ -3,10 +3,14 @@ package magic.model;
 import magic.model.MagicSource;
 import magic.model.MagicPlayer;
 import magic.model.target.MagicTarget;
+import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicTargetFilterFactory;
 import magic.model.event.MagicEvent;
 import magic.data.EnglishToInt;
 
 import java.util.regex.Matcher;
+import java.util.List;
+import java.util.Collections;
 
 public class ARG {
     public static final String NUMBER = "(?<number>[0-9]+)";
@@ -111,6 +115,25 @@ public class ARG {
             return event.getRefPlayer();
         } else {
             return event.getPlayer();
+        }
+    }
+    
+    public static final String PLAYERS = "((?<rn>(rn))|(?<pn>(pn||you))|(?<group>[^\\.]*) )";
+    public static List<MagicPlayer> players(final MagicEvent event, final Matcher m, final MagicTargetFilter<MagicPlayer> filter) {
+        if (m.group("rn") != null) {
+            return Collections.singletonList(event.getRefPlayer());
+        } else if (m.group("pn") != null) {
+            return Collections.singletonList(event.getPlayer());
+        } else {
+            return filter.filter(event);
+        }
+    }
+
+    public static MagicTargetFilter<MagicPlayer> playersParse(final Matcher m) {
+        if (m.group("group") != null) {
+            return MagicTargetFilterFactory.Player(m.group("group"));
+        } else {
+            return MagicTargetFilterFactory.PLAYER;
         }
     }
 
