@@ -86,20 +86,11 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice NEG_TARGET_PERMANENT = 
         MagicTargetChoice.Negative("target permanent");
     
-    public static final MagicTargetChoice TARGET_NONBASIC_LAND = 
-        new MagicTargetChoice("target nonbasic land");
-    
-    public static final MagicTargetChoice NEG_TARGET_NONBASIC_LAND = 
-        MagicTargetChoice.Negative("target nonbasic land");
-
     public static final MagicTargetChoice TARGET_LAND = 
         new MagicTargetChoice("target land");
     
     public static final MagicTargetChoice NEG_TARGET_LAND = 
         MagicTargetChoice.Negative("target land");
-    
-    public static final MagicTargetChoice POS_TARGET_LAND = 
-        MagicTargetChoice.Positive("target land");
     
     public static final MagicTargetChoice A_LAND_YOU_CONTROL =
         new MagicTargetChoice("a land you control");
@@ -271,9 +262,6 @@ public class MagicTargetChoice extends MagicChoice {
     
     public static final MagicTargetChoice SACRIFICE_GOBLIN = 
         new MagicTargetChoice("a Goblin to sacrifice");
-    
-    public static final MagicTargetChoice SACRIFICE_NON_ZOMBIE = 
-        new MagicTargetChoice("a non-Zombie creature to sacrifice");
     
     public static final MagicTargetChoice SACRIFICE_MERFOLK = 
         new MagicTargetChoice("a Merfolk to sacrifice");
