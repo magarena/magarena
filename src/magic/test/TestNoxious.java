@@ -17,17 +17,18 @@ class TestNoxious extends TestGameBuilder {
 
         MagicPlayer P = player;
 
-        P.setLife(20);
+        P.setLife(10);
         addToLibrary(P, "Forest", 20);
         createPermanent(P,"Plains");
         createPermanent(P,"Forest");
-        createPermanent(P, "Voice of Resurgence",true,1);
+        createPermanent(P, "Grizzly Bears");
 
 
         P = opponent;
 
-        P.setLife(18);
+        P.setLife(10);
         addToLibrary(P, "Forest", 18);
+        addToGraveyard(P,"Grizzly Bears",1);
         addToGraveyard(P,"Noxious Revival",1);
         addToGraveyard(P,"Brave the Elements",1);
         addToHand(P,"Noxious Revival",1);
