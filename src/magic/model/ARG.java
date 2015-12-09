@@ -141,7 +141,7 @@ public class ARG {
     public static List<MagicPermanent> permanents(final MagicEvent event, final Matcher m, final MagicTargetFilter<MagicPermanent> filter) {
         if (m.group("rn") != null) {
             return Collections.singletonList(event.getRefPermanent());
-        } else if (m.group("pn") != null) {
+        } else if (m.group("sn") != null) {
             return Collections.singletonList(event.getPermanent());
         } else {
             return filter.filter(event);
