@@ -24,7 +24,7 @@ public abstract class AtEndOfTurnTrigger extends MagicTrigger<MagicPlayer> {
         return new AtEndOfTurnTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-                return sourceEvent.getTriggerEvent(permanent);
+                return sourceEvent.getTriggerEvent(permanent, player);
             }
         };
     }
@@ -32,12 +32,12 @@ public abstract class AtEndOfTurnTrigger extends MagicTrigger<MagicPlayer> {
     public static final AtEndOfTurnTrigger createYour(final MagicSourceEvent sourceEvent) {
         return new AtEndOfTurnTrigger() {
             @Override
-            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
-                return sourceEvent.getTriggerEvent(permanent);
-            }
-            @Override
             public boolean accept(final MagicPermanent permanent, final MagicPlayer eotPlayer) {
                 return permanent.isController(eotPlayer);
+            }
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer player) {
+                return sourceEvent.getTriggerEvent(permanent);
             }
         };
     }
