@@ -137,6 +137,25 @@ public class ARG {
         }
     }
 
+    public static final String PERMANENTS = "((?<rn>rn)|(?<sn>sn)|(?<group>[^\\.]*) )";
+    public static List<MagicPermanent> permanents(final MagicEvent event, final Matcher m, final MagicTargetFilter<MagicPermanent> filter) {
+        if (m.group("rn") != null) {
+            return Collections.singletonList(event.getRefPermanent());
+        } else if (m.group("pn") != null) {
+            return Collections.singletonList(event.getPermanent());
+        } else {
+            return filter.filter(event);
+        }
+    }
+    
+    public static MagicTargetFilter<MagicPermanent> permanentsParse(final Matcher m) {
+        if (m.group("group") != null) {
+            return MagicTargetFilterFactory.Permanent(m.group("group"));
+        } else {
+            return MagicTargetFilterFactory.ANY;
+        }
+    }
+
     public static final String COLON = "\\s*:\\s*";
 
     public static final String CHOICE = "(?<choice>(a|an|another|target) [^\\.]+?)";
