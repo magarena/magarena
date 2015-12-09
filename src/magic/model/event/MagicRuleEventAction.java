@@ -1465,24 +1465,6 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    BounceIt(
-        "return " + ARG.IT + " to its owner's hand\\.",
-        MagicTiming.Removal,
-        "Bounce"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final MagicPermanent it = ARG.itPermanent(event, matcher);
-                    if (it.isValid()) {
-                        game.doAction(new RemoveFromPlayAction(it,MagicLocationType.OwnersHand));
-                    }
-                }
-            };
-        }
-    },
     BounceItEndOfCombat(
         "return " + ARG.IT + " to its owner's hand at end of combat\\.",
         MagicTiming.Removal,
@@ -1521,19 +1503,18 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    BounceGroup(
-        "return (?<group>[^\\.]*) to (its|their) (owner's hand|owners' hands)\\.",
+    BouncePermanents(
+        "return " + ARG.PERMANENTS + " to (its|their) (owner's hand|owners' hands)\\.",
         MagicTiming.Removal,
         "Bounce"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(matcher.group("group"));
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final Collection<MagicPermanent> targets = filter.filter(event);
-                    for (final MagicPermanent it : targets) {
+                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
                         game.doAction(new RemoveFromPlayAction(it, MagicLocationType.OwnersHand));
                     }
                 }
