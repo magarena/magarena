@@ -715,26 +715,6 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    DrawUpkeep(
-        "(pn )?draw(s)? a card at the beginning of the next turn's upkeep\\.",
-        MagicTiming.Draw,
-        "Draw"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new AddTriggerAction(
-                        AtUpkeepTrigger.YouDraw(
-                            event.getSource(),
-                            event.getPlayer()
-                        )
-                    ));
-                }
-            };
-        }
-    },
     DrawChosen(
         ARG.CHOICE + " draw(s)? (?<amount>[a-z]+) card(s)?\\.",
         MagicTargetHint.Positive,
