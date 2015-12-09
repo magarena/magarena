@@ -1919,21 +1919,6 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    TapIt(
-        "tap " + ARG.IT + "\\.",
-        MagicTiming.Tapping,
-        "Tap"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new TapAction(ARG.itPermanent(event, matcher)));
-                }
-            };
-        }
-    },
     TapChosen(
         "tap " + ARG.CHOICE + "\\.",
         MagicTargetHint.Negative,
@@ -1951,20 +1936,19 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    TapGroup(
-        "tap (?<group>[^\\.]*)\\.",
+    TapPermanents(
+        "tap " + ARG.PERMANENTS + "\\.",
         MagicTiming.Tapping,
         "Tap"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(matcher.group("group"));
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final Collection<MagicPermanent> targets = filter.filter(event);
-                    for (final MagicPermanent perm : targets) {
-                        game.doAction(new TapAction(perm));
+                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                        game.doAction(new TapAction(it));
                     }
                 }
             };
