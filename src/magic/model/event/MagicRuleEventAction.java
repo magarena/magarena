@@ -655,8 +655,8 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    DrawLoseYou(
-        ARG.YOU + " draw(s)? (?<amount>[a-z]+) card(s)? and (you )?lose(s)? (?<amount2>[0-9]+) life\\.",
+    DrawLosePlayers(
+        ARG.PLAYERS + " draw(s)? (?<amount>[a-z]+) card(s)? and (you )?lose(s)? (?<amount2>[0-9]+) life\\.",
         MagicTiming.Draw,
         "Draw"
     ) {
@@ -664,12 +664,14 @@ public enum MagicRuleEventAction {
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = EnglishToInt.convert(matcher.group("amount"));
             final int amount2 = Integer.parseInt(matcher.group("amount2"));
+            final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final MagicPlayer you = ARG.youPlayer(event, matcher);
-                    game.doAction(new DrawAction(you, amount));
-                    game.doAction(new ChangeLifeAction(you, -amount2));
+                    for (final MagicPlayer player : ARG.players(event, matcher, filter)) {
+                        game.doAction(new DrawAction(player, amount));
+                        game.doAction(new ChangeLifeAction(player, -amount2));
+                    }
                 }
             };
         }
