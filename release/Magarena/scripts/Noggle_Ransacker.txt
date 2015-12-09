@@ -6,6 +6,6 @@ type=Creature
 subtype=Noggle,Rogue
 cost={2}{U/R}
 pt=2/1
+ability=When SN enters the battlefield, each player draws two cards, then discards a card at random.
 timing=main
-requires_groovy_code
 oracle=When Noggle Ransacker enters the battlefield, each player draws two cards, then discards a card at random.

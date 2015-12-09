@@ -4,6 +4,6 @@ value=3.929
 rarity=U
 type=Instant
 cost={G}
+effect=Target creature gets +1/+1 until end of turn for each Forest you control.
 timing=pump
-requires_groovy_code
 oracle=Target creature gets +1/+1 until end of turn for each Forest you control.

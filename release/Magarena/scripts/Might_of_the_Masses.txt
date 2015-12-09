@@ -5,6 +5,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={G}
+effect=Target creature gets +1/+1 until end of turn for each creature you control.
 timing=pump
-requires_groovy_code
 oracle=Target creature gets +1/+1 until end of turn for each creature you control.
