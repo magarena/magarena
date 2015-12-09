@@ -15,7 +15,7 @@
             return new MagicEvent(
                 source,
                 this,
-                "SN becomes the colorless until end of turn."
+                "SN becomes colorless until end of turn."
             );
         }
         @Override
