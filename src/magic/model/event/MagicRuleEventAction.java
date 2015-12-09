@@ -786,28 +786,6 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    DiscardYou(
-        ARG.YOU + "( )?discard(s)? (?<amount>[a-z]+) card(s)?(?<random> at random)?\\.",
-        MagicTiming.Draw,
-        "Discard"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = EnglishToInt.convert(matcher.group("amount"));
-            final boolean isRandom = matcher.group("random") != null;
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final MagicPlayer player = ARG.youPlayer(event, matcher);
-                    if (isRandom) {
-                        game.addEvent(MagicDiscardEvent.Random(event.getSource(), player, amount));
-                    } else {
-                        game.addEvent(new MagicDiscardEvent(event.getSource(), player, amount));
-                    }
-                }
-            };
-        }
-    },
     DiscardChosen(
         ARG.CHOICE + " discard(s)? (?<amount>[a-z]+) card(s)?(?<random> at random)?( for each " + ARG.WORDRUN +")?\\.",
         MagicTargetHint.Negative,
@@ -840,8 +818,8 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    EachDiscard(
-        "(?<group>[^\\.]*) discard(s)? (?<amount>[a-z]+) card(s)?(?<random> at random)?\\.",
+    DiscardPlayers(
+        ARG.PLAYERS + "( )?discard(s)? (?<amount>[a-z]+) card(s)?(?<random> at random)?\\.",
         MagicTiming.Draw,
         "Discard"
     ) {
@@ -849,11 +827,11 @@ public enum MagicRuleEventAction {
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = EnglishToInt.convert(matcher.group("amount"));
             final boolean isRandom = matcher.group("random") != null;
-            final MagicTargetFilter<MagicPlayer> filter = MagicTargetFilterFactory.Player(matcher.group("group"));
+            final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    for (final MagicPlayer player : filter.filter(event)) {
+                    for (final MagicPlayer player : ARG.players(event, matcher, filter)) {
                         if (isRandom) {
                             game.addEvent(MagicDiscardEvent.Random(event.getSource(), player, amount));
                         } else {
