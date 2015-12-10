@@ -4,7 +4,7 @@ value=2.942
 rarity=U
 type=Enchantment
 cost={2}{G}{G}
-ability=Whenever a creature attacks you, it loses flanking until end of turn.;\
-        Whenever a creature without flying attacks you, SN deals 1 damage to it.
+ability=Whenever a creature attacks you, RN loses flanking until end of turn.;\
+        Whenever a creature without flying attacks you, SN deals 1 damage to RN.
 timing=enchantment
 oracle=Whenever a creature attacks you, it loses flanking until end of turn.\nWhenever a creature without flying attacks you, Barbed Foliage deals 1 damage to it.
