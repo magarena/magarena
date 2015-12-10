@@ -402,10 +402,11 @@ public class MagicEvent implements MagicCopyable {
         final long start = System.currentTimeMillis();
         final List<Object[]> choices = choice.getArtificialChoiceResults(game,this);
         final long time = System.currentTimeMillis() - start;
-        if (time > 10000) {
-            throw new GameException("getArtificialChoiceResults took more than 10s", game);
-        } else if (time > 1000) {
+        if (time > 1000) {
             System.err.println("WARNING. ACR:  " + choice.getDescription() + description + " time: " + time);
+            if (getClass().desiredAssertionStatus()) {
+                throw new GameException("getArtificialChoiceResults took more than 10s", game);
+            }
         }
         return choices;
     }
@@ -414,10 +415,11 @@ public class MagicEvent implements MagicCopyable {
         final long start = System.currentTimeMillis();
         final Object[] res = choice.getSimulationChoiceResult(game,this);
         final long time = System.currentTimeMillis() - start;
-        if (time > 10000) {
-            throw new GameException("getSimulationChoiceResult took more than 10s", game);
-        } else if (time > 1000) {
+        if (time > 1000) {
             System.err.println("WARNING. RCR:  " + choice.getDescription() + description + " time: " + time);
+            if (getClass().desiredAssertionStatus()) {
+                throw new GameException("getSimulationChoiceResult took more than 10s", game);
+            }
         }
         return res;
     }
