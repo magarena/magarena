@@ -2704,64 +2704,6 @@ public enum MagicRuleEventAction {
 
         }
     },
-    GainSelf(
-        ARG.IT + " gain(s)? (?<ability>.+) until end of turn\\."
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new GainAbilityAction(ARG.itPermanent(event, matcher),abilityList));
-                }
-            };
-        }
-        @Override
-        public MagicTiming getTiming(final Matcher matcher) {
-            return GainChosen.getTiming(matcher);
-        }
-        @Override
-        public String getName(final Matcher matcher) {
-            return GainChosen.getName(matcher);
-        }
-        @Override
-        public MagicCondition[] getConditions(final Matcher matcher) {
-            final MagicAbility ability = MagicAbility.getAbilityList(matcher.group("ability")).getFirst();
-            return new MagicCondition[]{
-                MagicConditionFactory.NoAbility(ability)
-            };
-        }
-    },
-    GainSelfCan(
-        "sn (?<ability>can('t)? .+) this turn\\."
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new GainAbilityAction(event.getPermanent(),abilityList));
-                }
-            };
-        }
-        @Override
-        public MagicTiming getTiming(final Matcher matcher) {
-            return GainChosen.getTiming(matcher);
-        }
-        @Override
-        public String getName(final Matcher matcher) {
-            return GainChosen.getName(matcher);
-        }
-        @Override
-        public MagicCondition[] getConditions(final Matcher matcher) {
-            final MagicAbility ability = MagicAbility.getAbilityList(matcher.group("ability")).getFirst();
-            return new MagicCondition[]{
-                MagicConditionFactory.NoAbility(ability)
-            };
-        }
-    },
     GainProtectionChosen(
         ARG.CHOICE + " gain(s)? protection from the color of your choice until end of turn\\.",
         MagicTargetHint.Positive,
@@ -2923,19 +2865,18 @@ public enum MagicRuleEventAction {
             return capitalize(matcher.group("ability"));
         }
     },
-    GainGroup(
-        "(?<group>[^\\.]*) gain(s)? (?<ability>[^•]+) until end of turn\\."
+    GainPermanents(
+        ARG.PERMANENTS +  " gain(s)? (?<ability>[^•]+) until end of turn\\."
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(matcher.group("group"));
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final Collection<MagicPermanent> targets = filter.filter(event);
-                    for (final MagicPermanent creature : targets) {
-                        game.doAction(new GainAbilityAction(creature,abilityList));
+                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                        game.doAction(new GainAbilityAction(it, abilityList));
                     }
                 }
             };
@@ -2948,13 +2889,24 @@ public enum MagicRuleEventAction {
         public String getName(final Matcher matcher) {
             return GainChosen.getName(matcher);
         }
+        @Override
+        public MagicCondition[] getConditions(final Matcher matcher) {
+            if (matcher.group("sn") != null) {
+                final MagicAbility ability = MagicAbility.getAbilityList(matcher.group("ability")).getFirst();
+                return new MagicCondition[]{
+                    MagicConditionFactory.NoAbility(ability)
+                };
+            } else {
+                return MagicActivation.NO_COND;
+            }
+        }
     },
-    GainGroupAlt(
-        "until end of turn, (?<group>[^\\.]*) gain (?<ability>.+)(\\.)?"
+    GainPermanentsAlt(
+        "until end of turn, " + ARG.PERMANENTS + " gain (?<ability>.+)(\\.)?"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            return GainGroup.getAction(matcher);
+            return GainPermanents.getAction(matcher);
         }
         @Override
         public MagicTiming getTiming(final Matcher matcher) {
@@ -2964,7 +2916,35 @@ public enum MagicRuleEventAction {
         public String getName(final Matcher matcher) {
             return GainChosen.getName(matcher);
         }
-
+    },
+    GainSelfCan(
+        "sn (?<ability>can('t)? .+) this turn\\."
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    game.doAction(new GainAbilityAction(event.getPermanent(),abilityList));
+                }
+            };
+        }
+        @Override
+        public MagicTiming getTiming(final Matcher matcher) {
+            return GainChosen.getTiming(matcher);
+        }
+        @Override
+        public String getName(final Matcher matcher) {
+            return GainChosen.getName(matcher);
+        }
+        @Override
+        public MagicCondition[] getConditions(final Matcher matcher) {
+            final MagicAbility ability = MagicAbility.getAbilityList(matcher.group("ability")).getFirst();
+            return new MagicCondition[]{
+                MagicConditionFactory.NoAbility(ability)
+            };
+        }
     },
     GainGroupCan(
         "(?<group>[^\\.]*) (?<ability>can('t)? .+) this turn\\."
