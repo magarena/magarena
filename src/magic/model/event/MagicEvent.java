@@ -37,6 +37,7 @@ import magic.model.target.MagicDefaultTargetPicker;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetNone;
 import magic.model.target.MagicTargetPicker;
+import magic.exception.GameException;
 
 public class MagicEvent implements MagicCopyable {
 
@@ -401,7 +402,9 @@ public class MagicEvent implements MagicCopyable {
         final long start = System.currentTimeMillis();
         final List<Object[]> choices = choice.getArtificialChoiceResults(game,this);
         final long time = System.currentTimeMillis() - start;
-        if (time > 1000) {
+        if (time > 10000) {
+            throw new GameException("getArtificialChoiceResults took more than 10s", game);
+        } else if (time > 1000) {
             System.err.println("WARNING. ACR:  " + choice.getDescription() + description + " time: " + time);
         }
         return choices;
@@ -411,7 +414,9 @@ public class MagicEvent implements MagicCopyable {
         final long start = System.currentTimeMillis();
         final Object[] res = choice.getSimulationChoiceResult(game,this);
         final long time = System.currentTimeMillis() - start;
-        if (time > 1000) {
+        if (time > 10000) {
+            throw new GameException("getSimulationChoiceResult took more than 10s", game);
+        } else if (time > 1000) {
             System.err.println("WARNING. RCR:  " + choice.getDescription() + description + " time: " + time);
         }
         return res;
