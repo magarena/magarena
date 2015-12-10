@@ -29,6 +29,7 @@ class TestClone extends TestGameBuilder {
         addToHand(P, "Body Double", 1);
         addToHand(P, "Evil Twin", 1);
         addToHand(P, "Progenitor Mimic", 1);
+        addToHand(P, "Jwari Shapeshifter", 1);
         addToHand(P, "Lightning Bolt", 3);
 
         P = opponent;
