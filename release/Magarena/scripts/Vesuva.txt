@@ -3,6 +3,6 @@ image=http://magiccards.info/scans/en/ts/281.jpg
 value=4.274
 rarity=R
 type=Land
-ability=You may have SN enter the battlefield tapped as a copy of any land on the battlefield.
 timing=land
+requires_groovy_code
 oracle=You may have Vesuva enter the battlefield tapped as a copy of any land on the battlefield.
