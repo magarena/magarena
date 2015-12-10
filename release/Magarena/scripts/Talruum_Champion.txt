@@ -6,7 +6,7 @@ type=Creature
 subtype=Minotaur
 cost={4}{R}
 pt=3/3
-ability=first strike
+ability=First strike;\
+        Whenever SN blocks or becomes blocked by a creature, that creature loses first strike until end of turn.
 timing=main
-requires_groovy_code
 oracle=First strike\nWhenever Talruum Champion blocks or becomes blocked by a creature, that creature loses first strike until end of turn.
