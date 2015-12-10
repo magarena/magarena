@@ -2984,35 +2984,6 @@ public enum MagicRuleEventAction {
             return GainChosenCan.getName(matcher);
         }
     },
-    LoseSelf(
-        "sn loses (?<ability>.+) until end of turn\\."
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new LoseAbilityAction(event.getPermanent(),abilityList));
-                }
-            };
-        }
-        @Override
-        public MagicTiming getTiming(final Matcher matcher) {
-            return GainChosen.getTiming(matcher);
-        }
-        @Override
-        public String getName(final Matcher matcher) {
-            return "-" + capitalize(matcher.group("ability"));
-        }
-        @Override
-        public MagicCondition[] getConditions(final Matcher matcher) {
-            final MagicAbility ability = MagicAbility.getAbilityList(matcher.group("ability")).getFirst();
-            return new MagicCondition[]{
-                MagicConditionFactory.HasAbility(ability)
-            };
-        }
-    },
     LoseChosen(
         ARG.CHOICE + " loses (?<ability>.+) until end of turn\\.",
         MagicTargetHint.Negative
@@ -3042,7 +3013,43 @@ public enum MagicRuleEventAction {
         }
         @Override
         public String getName(final Matcher matcher) {
-            return LoseSelf.getName(matcher);
+            return LosePermanents.getName(matcher);
+        }
+    },
+    LosePermanents(
+        ARG.PERMANENTS + " loses (?<ability>.+) until end of turn\\."
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                        game.doAction(new LoseAbilityAction(it, abilityList));
+                    }
+                }
+            };
+        }
+        @Override
+        public MagicTiming getTiming(final Matcher matcher) {
+            return GainChosen.getTiming(matcher);
+        }
+        @Override
+        public String getName(final Matcher matcher) {
+            return "-" + capitalize(matcher.group("ability"));
+        }
+        @Override
+        public MagicCondition[] getConditions(final Matcher matcher) {
+            if (matcher.group("sn") != null) {
+                final MagicAbility ability = MagicAbility.getAbilityList(matcher.group("ability")).getFirst();
+                return new MagicCondition[]{
+                    MagicConditionFactory.HasAbility(ability)
+                };
+            } else {
+                return MagicActivation.NO_COND;
+            }
         }
     },
     GainControl(
