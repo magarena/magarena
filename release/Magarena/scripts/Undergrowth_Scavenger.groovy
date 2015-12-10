@@ -1,5 +1,5 @@
 [
-    new EntersBattlefieldTrigger(MagicTrigger.REPLACEMENT) {
+    new EntersWithCounterTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPayedCost payedCost) {
             final int amount = CREATURE_CARD_FROM_ALL_GRAVEYARDS.filter(permanent).size();

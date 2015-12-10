@@ -1,5 +1,5 @@
 [
-    new EntersBattlefieldTrigger() {
+    new EntersWithCounterTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
             int amount = 0;
@@ -8,6 +8,13 @@
             }
             game.doAction(new ChangeCountersAction(permanent,MagicCounterType.PlusOne,amount));
             game.logAppendMessage(permanent.getController(),permanent.getName()+" enters the battlefield with ("+amount+") +1/+1 counters on it.");
+            return MagicEvent.NONE;
+        }
+    },
+    
+    new EntersBattlefieldTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
                 this,

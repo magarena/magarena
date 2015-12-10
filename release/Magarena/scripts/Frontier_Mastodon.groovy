@@ -1,5 +1,5 @@
 [
-    new EntersBattlefieldTrigger(MagicTrigger.REPLACEMENT) {
+    new EntersWithCounterTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
             if (permanent.getController().controlsPermanent(CREATURE_POWER_4_OR_MORE)) {
