@@ -5,7 +5,6 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
-import magic.model.action.PlayCardAction;
 import magic.model.action.MagicPlayMod;
 import magic.model.action.ReturnCardAction;
 import magic.model.choice.MagicTargetChoice;

@@ -355,6 +355,10 @@ public class MagicCard
     public boolean isPermanent() {
         return false;
     }
+    
+    public boolean isPermanentCard() {
+        return getCardDefinition().isPermanent();
+    }
 
     @Override
     public boolean isPlayer() {

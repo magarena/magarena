@@ -1547,7 +1547,7 @@ public class MagicTargetFilterFactory {
 
     public static final MagicCardFilterImpl PERMANENT_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
-            return target.getCardDefinition().isPermanent();
+            return target.isPermanentCard();
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Graveyard;
@@ -1984,7 +1984,7 @@ public class MagicTargetFilterFactory {
     public static final MagicCardFilterImpl permanentCardMaxCMC(final MagicSubType subtype, final MagicTargetType from, final int cmc) {
         return new MagicCardFilterImpl() {
             public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
-                return target.getCardDefinition().isPermanent() &&
+                return target.isPermanentCard() &&
                        target.hasSubType(subtype) &&
                        target.getConvertedCost() <= cmc;
             }
@@ -2009,7 +2009,7 @@ public class MagicTargetFilterFactory {
     public static final MagicCardFilterImpl permanentCardMaxCMC(final MagicType type, final MagicTargetType from, final int cmc) {
         return new MagicCardFilterImpl() {
             public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
-                return target.getCardDefinition().isPermanent() &&
+                return target.isPermanentCard() &&
                        target.hasType(type) &&
                        target.getConvertedCost() <= cmc;
             }
@@ -2022,7 +2022,7 @@ public class MagicTargetFilterFactory {
     public static final MagicCardFilterImpl permanentCardMinCMC(final MagicType type, final MagicTargetType from, final int cmc) {
         return new MagicCardFilterImpl() {
             public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
-                return target.getCardDefinition().isPermanent() &&
+                return target.isPermanentCard() &&
                        target.hasType(type) &&
                        target.getConvertedCost() >= cmc;
             }

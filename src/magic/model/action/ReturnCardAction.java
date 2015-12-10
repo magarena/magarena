@@ -29,7 +29,7 @@ public class ReturnCardAction extends MagicAction {
     
     @Override
     public void doAction(final MagicGame game) {
-        if (card.isIn(from)) {
+        if (card.isIn(from) && card.isPermanentCard()) {
             game.doAction(new RemoveCardAction(card,from));
             game.doAction(new PlayCardAction(card,controller,modifications));
         }

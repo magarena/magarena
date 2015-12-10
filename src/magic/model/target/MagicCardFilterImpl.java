@@ -160,7 +160,7 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
         final MagicCardFilterImpl curr = this;
         return new MagicCardFilterImpl() {
             public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
-                return curr.accept(source, player, target) && target.getCardDefinition().isPermanent();
+                return curr.accept(source, player, target) && target.isPermanentCard();
             }
             public boolean acceptType(final MagicTargetType targetType) {
                 return false;

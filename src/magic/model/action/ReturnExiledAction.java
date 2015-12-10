@@ -8,31 +8,28 @@ import magic.model.MagicPlayer;
 
 public class ReturnExiledAction extends MagicAction {
 
-    private MagicCardList exiledUntilEndOfTurn;
+    private MagicCardList oldExiledUEOT;
 
     @Override
     public void doAction(final MagicGame game) {
-        final MagicCardList gameExiledUntilEndOfTurn=game.getExiledUntilEndOfTurn();
-        if (!gameExiledUntilEndOfTurn.isEmpty()) {
-            exiledUntilEndOfTurn=new MagicCardList(gameExiledUntilEndOfTurn);
-            for (final MagicCard card : gameExiledUntilEndOfTurn) {
-                final MagicPlayer owner=card.getOwner();
-                if (card.isInExile()) {
-                    game.doAction(new RemoveCardAction(card,MagicLocationType.Exile));
-                    game.doAction(new PlayCardAction(card,owner));
-                    game.logMessage(
-                            owner,
-                            "Return "+card.getName()+" to the battlefield under its owner's control (end of turn).");
-                }
+        final MagicCardList exiledUEOT = game.getExiledUntilEndOfTurn();
+        oldExiledUEOT = new MagicCardList(exiledUEOT);
+        for (final MagicCard card : exiledUEOT) {
+            if (card.isInExile() && card.isPermanentCard()) {
+                final MagicPlayer owner = card.getOwner();
+                game.doAction(new RemoveCardAction(card,MagicLocationType.Exile));
+                game.doAction(new PlayCardAction(card,owner));
+                game.logMessage(
+                    owner,
+                    "Return "+card.getName()+" to the battlefield under its owner's control (end of turn)."
+                );
             }
-            gameExiledUntilEndOfTurn.clear();
         }
+        exiledUEOT.clear();
     }
 
     @Override
     public void undoAction(final MagicGame game) {
-        if (exiledUntilEndOfTurn!=null) {
-            game.getExiledUntilEndOfTurn().addAll(exiledUntilEndOfTurn);
-        }
+        game.getExiledUntilEndOfTurn().addAll(oldExiledUEOT);
     }
 }
