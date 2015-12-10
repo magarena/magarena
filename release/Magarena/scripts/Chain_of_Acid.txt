@@ -4,6 +4,6 @@ value=3.397
 rarity=U
 type=Sorcery
 cost={3}{G}
-effect=Destroy target noncreature permanent. Then that permanent's controller may copy this spell and may choose a new target for that copy.
 timing=main
+requires_groovy_code
 oracle=Destroy target noncreature permanent. Then that permanent's controller may copy this spell and may choose a new target for that copy.
