@@ -1,6 +1,7 @@
 package magic.model.event;
 
 import java.util.List;
+import java.util.Collections;
 
 import magic.ai.ArtificialScoringSystem;
 import magic.model.MagicCard;
@@ -592,6 +593,11 @@ public class MagicEvent implements MagicCopyable {
         } else {
             return false;
         }
+    }
+
+    public final List<MagicPermanent> listTargetPermanent() {
+        final MagicTarget target = getLegalTarget(player.getGame());
+        return target.isPermanent() ? Collections.singletonList((MagicPermanent)target) : Collections.emptyList();
     }
 
     public final boolean processTargetCardOnStack(final MagicGame game, final MagicCardOnStackAction effect) {

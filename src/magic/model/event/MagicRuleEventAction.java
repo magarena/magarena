@@ -70,39 +70,9 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    DestroyChosen(
-        "destroy " + ARG.CHOICE + "\\.(?<noregen> it can't be regenerated\\.)?",
-        MagicTargetHint.Negative,
-        MagicTiming.Removal,
-        "Destroy"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    event.processTargetPermanent(game,new MagicPermanentAction() {
-                        public void doAction(final MagicPermanent it) {
-                            if (matcher.group("noregen") != null) {
-                                game.doAction(ChangeStateAction.Set(it, MagicPermanentState.CannotBeRegenerated));
-                            }
-                            game.doAction(new DestroyAction(it));
-                        }
-                    });
-                }
-            };
-        }
-        @Override
-        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
-            if (matcher.group("noregen") != null) {
-                return MagicDestroyTargetPicker.DestroyNoRegen;
-            } else {
-                return MagicDestroyTargetPicker.Destroy;
-            }
-        }
-    },
     DestroyPermanents(
         "destroy " + ARG.PERMANENTS + "\\.(?<noregen> (They|It) can't be regenerated\\.)?",
+        MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Destroy"
     ) {
@@ -121,6 +91,14 @@ public enum MagicRuleEventAction {
                     game.doAction(new DestroyAction(targets));
                 }
             };
+        }
+        @Override
+        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+            if (matcher.group("noregen") != null) {
+                return MagicDestroyTargetPicker.DestroyNoRegen;
+            } else {
+                return MagicDestroyTargetPicker.Destroy;
+            }
         }
     },
     CounterUnless(
@@ -3273,7 +3251,9 @@ public enum MagicRuleEventAction {
 
     public MagicChoice getChoice(final Matcher matcher) {
         try {
-            return new MagicTargetChoice(getHint(matcher), matcher.group("choice"));
+            return matcher.group("choice") != null ? 
+                new MagicTargetChoice(getHint(matcher), matcher.group("choice")) :
+                MagicChoice.NONE;
         } catch (IllegalArgumentException e) {
             return MagicChoice.NONE;
         }

@@ -13,6 +13,12 @@ import java.util.List;
 import java.util.Collections;
 
 public class ARG {
+    public static final String COLON = "\\s*:\\s*";
+
+    public static final String CHOICE = "(?<choice>(a|an|another|target) [^\\.]+?)";
+    public static final String CARD   = "(?<choice>[^\\.]* card [^\\.]+?)";
+    public static final String GRAVEYARD = "(?<choice>[^\\.]* card [^\\.]+? graveyard)";
+    
     public static final String NUMBER = "(?<number>[0-9]+)";
     public static int number(final Matcher m) {
         return Integer.parseInt(m.group("number"));
@@ -137,12 +143,14 @@ public class ARG {
         }
     }
 
-    public static final String PERMANENTS = "((?<rn>rn)|(?<sn>sn)|(?<group>[^\\.]*))";
+    public static final String PERMANENTS = "((?<rn>rn)|(?<sn>sn)|" + CHOICE + "|(?<group>[^\\.]*))";
     public static List<MagicPermanent> permanents(final MagicEvent event, final Matcher m, final MagicTargetFilter<MagicPermanent> filter) {
         if (m.group("rn") != null) {
             return Collections.singletonList(event.getRefPermanent());
         } else if (m.group("sn") != null) {
             return Collections.singletonList(event.getPermanent());
+        } else if (m.group("choice") != null) {
+            return event.listTargetPermanent();
         } else {
             return filter.filter(event);
         }
@@ -155,10 +163,4 @@ public class ARG {
             return MagicTargetFilterFactory.ANY;
         }
     }
-
-    public static final String COLON = "\\s*:\\s*";
-
-    public static final String CHOICE = "(?<choice>(a|an|another|target) [^\\.]+?)";
-    public static final String CARD   = "(?<choice>[^\\.]* card [^\\.]+?)";
-    public static final String GRAVEYARD = "(?<choice>[^\\.]* card [^\\.]+? graveyard)";
 }
