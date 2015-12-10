@@ -724,6 +724,16 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    DrawPlayersAlt(
+        ARG.PLAYERS + "( )?draw(s)? (?<amount>[a-z]+)?cards equal to " + ARG.WORDRUN +"\\.",
+        MagicTiming.Draw,
+        "Draw"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return DrawPlayers.getAction(matcher);
+        }
+    },
     DrawDiscardChosen(
         ARG.CHOICE + " draw(s)? (?<amount1>[a-z]+) card(s)?, then discard(s)? (?<amount2>[a-z]+) card(s)?(?<random> at random)?\\.",
         MagicTiming.Draw,
