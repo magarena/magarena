@@ -2319,26 +2319,29 @@ public enum MagicRuleEventAction {
                 MagicActivation.NO_COND;
         }
     },
-    GainProtectionChosen(
-        ARG.CHOICE + " gain(s)? protection from the color of your choice until end of turn\\.",
+    GainProtection(
+        ARG.PERMANENTS + " gain(s)? protection from the color of your choice until end of turn\\.",
         MagicTargetHint.Positive,
         MagicTiming.Pump,
-        "Protection",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game,final MagicEvent event) {
-                event.processTargetPermanent(game, new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent it) {
+        "Protection"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
                         game.addEvent(new MagicGainProtectionFromEvent(
                             event.getSource(),
                             event.getPlayer(),
                             it
                         ));
                     }
-                });
-            }
+                }
+            };
         }
-    ),
+    },
     GainChosen(
         ARG.CHOICE + " gain(s)? (?<ability>.+) until end of turn\\.",
         MagicTargetHint.Positive
