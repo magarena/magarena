@@ -958,100 +958,9 @@ public enum MagicRuleEventAction {
             return Pump.getAction(matcher);
         }
     },
-    PumpGainChosen(
-        ARG.CHOICE + " get(s)? (?<pt>[0-9+]+/[0-9+]+) and (gain(s)?|is) (?<ability>.+) until end of turn\\.",
+    PumpGain(
+        ARG.PERMANENTS + " get(s)? (?<pt>[0-9+]+/[0-9+]+) and (gain(s)?|is) (?<ability>.+) until end of turn(\\.)?",
         MagicTargetHint.Positive
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
-            final String[] pt = matcher.group("pt").replace("+","").split("/");
-            final int power = Integer.parseInt(pt[0]);
-            final int toughness = Integer.parseInt(pt[1]);
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    event.processTargetPermanent(game,new MagicPermanentAction() {
-                        public void doAction(final MagicPermanent creature) {
-                            game.doAction(new ChangeTurnPTAction(creature,power,toughness));
-                            game.doAction(new GainAbilityAction(creature,abilityList));
-                        }
-                    });
-                }
-            };
-        }
-        @Override
-        public MagicTiming getTiming(final Matcher matcher) {
-            return GainChosen.getTiming(matcher);
-        }
-        @Override
-        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
-            return GainChosen.getPicker(matcher);
-        }
-        @Override
-        public String getName(final Matcher matcher) {
-            return GainChosen.getName(matcher);
-        }
-    },
-    PumpGainChosenCan(
-        ARG.CHOICE + " get(s)? (?<pt>[0-9+]+/[0-9+]+) (until end of turn and|and) (?<ability>can('t)? .+) this turn\\.",
-        MagicTargetHint.Positive
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            return PumpGainChosen.getAction(matcher);
-        }
-        @Override
-        public MagicTiming getTiming(final Matcher matcher) {
-            return GainChosen.getTiming(matcher);
-        }
-        @Override
-        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
-            return GainChosen.getPicker(matcher);
-        }
-        @Override
-        public String getName(final Matcher matcher) {
-            return GainChosen.getName(matcher);
-        }
-    },
-    PumpGainChosenAlt(
-        "until end of turn, " + ARG.CHOICE + " get(s)? (?<pt>[0-9+]+/[0-9+]+) and (gain(s)?|is) (?<ability>.+)(\\.)?",
-        MagicTargetHint.Positive
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            return PumpGainChosen.getAction(matcher);
-        }
-        @Override
-        public MagicTiming getTiming(final Matcher matcher) {
-            return GainChosen.getTiming(matcher);
-        }
-        @Override
-        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
-            return GainChosen.getPicker(matcher);
-        }
-        @Override
-        public String getName(final Matcher matcher) {
-            return GainChosen.getName(matcher);
-        }
-    },
-    ModPTGainChosen(
-        ARG.CHOICE + " get(s)? (?<pt>[0-9+-]+/[0-9+-]+) and gains (?<ability>.+) until end of turn\\.",
-        MagicTiming.Removal
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            return PumpGainChosen.getAction(matcher);
-        }
-        @Override
-        public String getName(final Matcher matcher) {
-            return GainChosen.getName(matcher);
-        }
-    },
-    PumpGainPermanents(
-        ARG.PERMANENTS + " get(s)? (?<pt>[+-][0-9]+/[+-][0-9]+) and gain(s)? (?<ability>.+) until end of turn(\\.)?",
-        MagicTiming.Pump,
-        "Pump"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
@@ -1071,31 +980,80 @@ public enum MagicRuleEventAction {
             };
         }
         @Override
-        public String getName(final Matcher matcher) {
-            return GainChosen.getName(matcher);
+        public MagicTiming getTiming(final Matcher matcher) {
+            return GainChosen.getTiming(matcher);
         }
-    },
-    PumpGainPermanentsAlt(
-        "until end of turn, " + ARG.PERMANENTS + " get (?<pt>[0-9+]+/[0-9+]+) and gain (?<ability>.+)(\\.)?",
-        MagicTiming.Pump,
-        "Pump"
-    ) {
         @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            return PumpGainPermanents.getAction(matcher);
+        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+            return GainChosen.getPicker(matcher);
         }
         @Override
         public String getName(final Matcher matcher) {
             return GainChosen.getName(matcher);
         }
     },
-    PumpGainCanPermanents(
-        ARG.PERMANENTS + " get(s)? (?<pt>[+-][0-9]+/[+-][0-9]+) (until end of turn and|and) (?<ability>can('t)? .+) this turn\\.",
-        MagicTiming.Pump
+    PumpGainAlt(
+        "until end of turn, " + ARG.PERMANENTS + " get(s)? (?<pt>[0-9+]+/[0-9+]+) and (gain(s)?|is) (?<ability>.+)(\\.)?",
+        MagicTargetHint.Positive
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            return PumpGainPermanents.getAction(matcher);
+            return PumpGain.getAction(matcher);
+        }
+        @Override
+        public MagicTiming getTiming(final Matcher matcher) {
+            return GainChosen.getTiming(matcher);
+        }
+        @Override
+        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+            return GainChosen.getPicker(matcher);
+        }
+        @Override
+        public String getName(final Matcher matcher) {
+            return GainChosen.getName(matcher);
+        }
+    },
+    PumpGainCan(
+        ARG.PERMANENTS + " get(s)? (?<pt>[0-9+]+/[0-9+]+) (until end of turn and|and) (?<ability>can('t)? .+) this turn\\.",
+        MagicTargetHint.Positive
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return PumpGain.getAction(matcher);
+        }
+        @Override
+        public MagicTiming getTiming(final Matcher matcher) {
+            return GainChosen.getTiming(matcher);
+        }
+        @Override
+        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+            return GainChosen.getPicker(matcher);
+        }
+        @Override
+        public String getName(final Matcher matcher) {
+            return GainChosen.getName(matcher);
+        }
+    },
+    ModPTGain(
+        ARG.PERMANENTS + " get(s)? (?<pt>[0-9+-]+/[0-9+-]+) and gains (?<ability>.+) until end of turn\\.",
+        MagicTiming.Removal
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return PumpGain.getAction(matcher);
+        }
+        @Override
+        public String getName(final Matcher matcher) {
+            return GainChosen.getName(matcher);
+        }
+    },
+    ModPTGainCan(
+        ARG.PERMANENTS + " get(s)? (?<pt>[0-9+-]+/[0-9+-]+) and (?<ability>can('t)? .+) this turn\\.",
+        MagicTiming.Removal
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return PumpGain.getAction(matcher);
         }
         @Override
         public String getName(final Matcher matcher) {
