@@ -1287,46 +1287,10 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    BounceItEndOfCombat(
-        "return " + ARG.IT + " to its owner's hand at end of combat\\.",
-        MagicTiming.Removal,
-        "Bounce"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final MagicPermanent it = ARG.itPermanent(event, matcher);
-                    if (it.isValid()) {
-                        game.doAction(new AddTriggerAction(
-                            it,
-                            AtEndOfCombatTrigger.Return
-                        ));
-                    }
-                }
-            };
-        }
-    },
-    BounceChosen(
-        "return " + ARG.CHOICE + " to (its owner's|your) hand\\.",
+    Bounce(
+        "return " + ARG.PERMANENTS + " to (your hand|its owner's hand|their owner's hand|their owners' hands)\\.",
         MagicTargetHint.None,
         MagicBounceTargetPicker.create(),
-        MagicTiming.Removal,
-        "Bounce",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent permanent) {
-                        game.doAction(new RemoveFromPlayAction(permanent,MagicLocationType.OwnersHand));
-                    }
-                });
-            }
-        }
-    ),
-    BouncePermanents(
-        "return " + ARG.PERMANENTS + " to (its|their) (owner's hand|owners' hands)\\.",
         MagicTiming.Removal,
         "Bounce"
     ) {
@@ -1338,6 +1302,31 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
                         game.doAction(new RemoveFromPlayAction(it, MagicLocationType.OwnersHand));
+                    }
+                }
+            };
+        }
+    },
+    BounceEndOfCombat(
+        "return " + ARG.PERMANENTS + " to (your hand|its owner's hand|their owner's hand|their owners' hands) at end of combat\\.",
+        MagicTargetHint.None,
+        MagicBounceTargetPicker.create(),
+        MagicTiming.Removal,
+        "Bounce"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                        if (it.isValid()) {
+                            game.doAction(new AddTriggerAction(
+                                it,
+                                AtEndOfCombatTrigger.Return
+                            ));
+                        }
                     }
                 }
             };
