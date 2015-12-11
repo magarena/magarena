@@ -2602,40 +2602,9 @@ public enum MagicRuleEventAction {
             return GainChosenCan.getName(matcher);
         }
     },
-    LoseChosen(
-        ARG.CHOICE + " loses (?<ability>.+) until end of turn\\.",
+    LoseAbility(
+        ARG.PERMANENTS + " loses (?<ability>.+) until end of turn\\.",
         MagicTargetHint.Negative
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    event.processTargetPermanent(game,new MagicPermanentAction() {
-                        public void doAction(final MagicPermanent creature) {
-                            game.doAction(new LoseAbilityAction(creature,abilityList));
-                        }
-                    });
-                }
-            };
-        }
-        @Override
-        public MagicTiming getTiming(final Matcher matcher) {
-            return GainChosen.getTiming(matcher);
-        }
-        @Override
-        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
-            final MagicAbility ability = MagicAbility.getAbilityList(matcher.group("ability")).getFirst();
-            return new MagicLoseAbilityTargetPicker(ability);
-        }
-        @Override
-        public String getName(final Matcher matcher) {
-            return LosePermanents.getName(matcher);
-        }
-    },
-    LosePermanents(
-        ARG.PERMANENTS + " loses (?<ability>.+) until end of turn\\."
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
@@ -2653,6 +2622,11 @@ public enum MagicRuleEventAction {
         @Override
         public MagicTiming getTiming(final Matcher matcher) {
             return GainChosen.getTiming(matcher);
+        }
+        @Override
+        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+            final MagicAbility ability = MagicAbility.getAbilityList(matcher.group("ability")).getFirst();
+            return new MagicLoseAbilityTargetPicker(ability);
         }
         @Override
         public String getName(final Matcher matcher) {
