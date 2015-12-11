@@ -1332,58 +1332,46 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    BounceLibTopIt(
-        "put " + ARG.IT + " on top of its owner's library\\.",
+    BounceLibTop(
+        "put " + ARG.PERMANENTS + " on top of (its owner's library|his or her library|their owners' libraries)\\.",
+        MagicTargetHint.None,
+        MagicBounceTargetPicker.create(),
         MagicTiming.Removal,
         "Bounce"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new RemoveFromPlayAction(
-                        ARG.itPermanent(event, matcher),
-                        MagicLocationType.TopOfOwnersLibrary
-                    ));
+                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                        game.doAction(new RemoveFromPlayAction(it,MagicLocationType.TopOfOwnersLibrary));
+                    }
                 }
             };
         }
     },
-    BounceLibTopChosen(
-        "put " + ARG.CHOICE + " on top of its owner's library\\.",
+    BounceLibBottom(
+        "put " + ARG.PERMANENTS + " on the bottom of (its owner's library|his or her library|their owners' libraries)\\.",
         MagicTargetHint.None,
         MagicBounceTargetPicker.create(),
         MagicTiming.Removal,
-        "Bounce",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent permanent) {
-                        game.doAction(new RemoveFromPlayAction(permanent,MagicLocationType.TopOfOwnersLibrary));
+        "Bounce"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                        game.doAction(new RemoveFromPlayAction(it,MagicLocationType.BottomOfOwnersLibrary));
                     }
-                });
-            }
+                }
+            };
         }
-    ),
-    BounceLibBottomChosen(
-        "put " + ARG.CHOICE + " on the bottom of its owner's library\\.",
-        MagicTargetHint.None,
-        MagicBounceTargetPicker.create(),
-        MagicTiming.Removal,
-        "Bounce",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent permanent) {
-                        game.doAction(new RemoveFromPlayAction(permanent,MagicLocationType.BottomOfOwnersLibrary));
-                    }
-                });
-            }
-        }
-    ),
+    },
     FlickerSelf(
         "exile sn\\. (if you do, )?return (it|sn) to the battlefield under its owner's control at the beginning of the next end step\\.",
         MagicTiming.Removal,
