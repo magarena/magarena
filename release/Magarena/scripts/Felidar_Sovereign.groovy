@@ -13,7 +13,9 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new LoseGameAction(event.getPlayer().getOpponent()));
+            if (event.getPlayer().getLife() >= 40) {
+                game.doAction(new LoseGameAction(event.getPlayer().getOpponent()));
+            }
         };
     }
 ]

@@ -2,7 +2,7 @@
     new AtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return upkeepPlayer.getLibrary().size() >=200 ?
+            return upkeepPlayer.getLibrary().size() >= 200 ?
                 new MagicEvent(
                     permanent,
                     this,
@@ -13,7 +13,9 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new LoseGameAction(event.getPlayer().getOpponent()));
+            if (event.getPlayer().getLibrary().size() >= 200) {
+                game.doAction(new LoseGameAction(event.getPlayer().getOpponent()));
+            }
         };
     }
 ]
