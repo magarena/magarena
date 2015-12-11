@@ -495,7 +495,7 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             }
             @Override
             public void modGame(final MagicPermanent source, final MagicGame game) {
-                final MagicEvent event = effect.getEvent(source);
+                final MagicEvent event = effect.getTriggerEvent(source);
                 if (event.isValid()) {
                     game.doAction(new PutStateTriggerOnStackAction(event));
                 }
