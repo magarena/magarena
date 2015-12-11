@@ -163,37 +163,20 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    BlinkSelf(
-        "exile sn, then return it to the battlefield under your control\\.",
-        MagicTiming.Removal,
-        "Flicker",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                final MagicPermanent it = event.getPermanent();
-                game.doAction(new RemoveFromPlayAction(
-                    it,
-                    MagicLocationType.Exile
-                ));
-                game.doAction(new ReturnCardAction(
-                    MagicLocationType.Exile,
-                    it.getCard(),
-                    event.getPlayer()
-                ));
-            }
-        }
-    ),
-    BlinkChosen(
-        "exile " + ARG.CHOICE + ", then return (it|that card) to the battlefield under your control\\.",
+    FlickerYour(
+        "exile " + ARG.PERMANENTS + ", then return (it|that card) to the battlefield under your control\\.",
         MagicTargetHint.Positive,
         MagicBounceTargetPicker.create(),
         MagicTiming.Removal,
-        "Flicker",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetPermanent(game, new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent it) {
+        "Flicker"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
                         game.doAction(new RemoveFromPlayAction(
                             it,
                             MagicLocationType.Exile
@@ -204,41 +187,24 @@ public enum MagicRuleEventAction {
                             event.getPlayer()
                         ));
                     }
-                });
-            }
+                }
+            };
         }
-    ),
-    BlinkFlickerSelf(
-        "exile sn, then return it to the battlefield under its owner's control\\.",
-        MagicTiming.Removal,
-        "Flicker",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                final MagicPermanent it = event.getPermanent();
-                game.doAction(new RemoveFromPlayAction(
-                    it,
-                    MagicLocationType.Exile
-                ));
-                game.doAction(new ReturnCardAction(
-                    MagicLocationType.Exile,
-                    it.getCard(),
-                    it.getOwner()
-                ));
-            }
-        }
-    ),
-    BlinkFlickerChosen(
-        "exile " + ARG.CHOICE + ", then return (it|that card) to the battlefield under its owner's control\\.",
+    },
+    FlickerOwner(
+        "exile " + ARG.PERMANENTS + ", then return (it|that card) to the battlefield under its owner's control\\.",
         MagicTargetHint.Positive,
         MagicBounceTargetPicker.create(),
         MagicTiming.Removal,
-        "Flicker",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetPermanent(game, new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent it) {
+        "Flicker"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
                         game.doAction(new RemoveFromPlayAction(
                             it,
                             MagicLocationType.Exile
@@ -249,10 +215,10 @@ public enum MagicRuleEventAction {
                             it.getOwner()
                         ));
                     }
-                });
-            }
+                }
+            };
         }
-    ),
+    },
     ExileSelf(
         "exile sn\\.",
         MagicTiming.Removal,
