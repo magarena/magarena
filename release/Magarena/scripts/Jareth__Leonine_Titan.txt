@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Cat,Giant
 cost={3}{W}{W}{W}
 pt=4/7
-ability=Whenever SN blocks, SN gets +7/+7 until end of turn.
+ability=Whenever SN blocks, SN gets +7/+7 until end of turn.;\
+        {W}: SN gains protection from the color of your choice until end of turn.
 timing=main
-requires_groovy_code
 oracle=Whenever Jareth, Leonine Titan blocks, it gets +7/+7 until end of turn.\n{W}: Jareth gains protection from the color of your choice until end of turn.

@@ -6,7 +6,8 @@ type=Creature
 subtype=Spirit
 cost={3}{W}{W}
 pt=3/3
-ability=Flying
+ability=Flying;\
+        Sacrifice two lands: SN gains protection from artifacts until end of turn.;\
+        Sacrifice two lands: SN gains protection from the color of your choice until end of turn.
 timing=main
-requires_groovy_code
 oracle=Flying\nSacrifice two lands: Jeweled Spirit gains protection from artifacts or from the color of your choice until end of turn.
