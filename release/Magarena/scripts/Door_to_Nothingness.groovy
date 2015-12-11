@@ -10,7 +10,7 @@
                 new MagicTapEvent(source),
                 new MagicPayManaCostEvent(source, "{W}{W}{U}{U}{B}{B}{R}{R}{G}{G}"),
                 new MagicSacrificeEvent(source)
-                ];
+            ];
         }
 
         @Override
