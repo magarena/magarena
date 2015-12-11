@@ -49,28 +49,31 @@ import magic.model.trigger.PreventDamageTrigger;
 import magic.model.trigger.ReboundTrigger;
 
 public enum MagicRuleEventAction {
-    DestroyItEndOfCombat(
-        "destroy " + ARG.IT + " at end of combat\\.",
+    DestroyAtEndOfCombat(
+        "destroy " + ARG.PERMANENTS + " at end of combat\\.",
+        MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Destroy"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final MagicPermanent it = ARG.itPermanent(event, matcher);
-                    if (it.isValid()) {
-                        game.doAction(new AddTurnTriggerAction(
-                            it,
-                            AtEndOfCombatTrigger.Destroy
-                        ));
+                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                        if (it.isValid()) {
+                            game.doAction(new AddTurnTriggerAction(
+                                it,
+                                AtEndOfCombatTrigger.Destroy
+                            ));
+                        }
                     }
                 }
             };
         }
     },
-    DestroyPermanents(
+    Destroy(
         "destroy " + ARG.PERMANENTS + "\\.(?<noregen> (They|It) can't be regenerated\\.)?",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
