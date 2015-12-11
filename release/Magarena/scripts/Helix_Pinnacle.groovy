@@ -2,12 +2,19 @@
     new AtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            if (permanent.getCounters(MagicCounterType.Tower) >= 100) {
-                final MagicPlayer player = upkeepPlayer;
-                game.logMessage(player, "${player.getName()} wins the game");
-                game.doAction(new LoseGameAction(player.getOpponent()));
+            return permanent.getCounters(MagicCounterType.Tower) >= 100 ?
+                new MagicEvent(
+                    permanent,
+                    this,
+                    "PN wins the game."
+                ):
+                MagicEvent.NONE;
+        }
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            if (event.getPermanent().getCounters(MagicCounterType.Tower) >= 100) {
+                game.doAction(new LoseGameAction(event.getPlayer().getOpponent()));
             }
-            return MagicEvent.NONE;
         }
     },
     
