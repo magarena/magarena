@@ -4,6 +4,6 @@ value=3.121
 rarity=U
 type=Instant
 cost={R}{G}
+effect=Choose one — (1) Creatures without flying can't block this turn. (2) Gain control of all permanents you own. (3) SN deals 3 damage to each creature with flying.
 timing=removal
-requires_groovy_code
 oracle=Choose one —\n• Creatures without flying can't block this turn.\n• Gain control of all permanents you own.\n• Gruul Charm deals 3 damage to each creature with flying.

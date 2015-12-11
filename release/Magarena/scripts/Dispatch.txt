@@ -4,6 +4,6 @@ value=3.812
 rarity=U
 type=Instant
 cost={W}
+effect=Tap target creature.~If you control three or more artifacts, exile *that creature*.
 timing=tapping
-requires_groovy_code
 oracle=Tap target creature.\nMetalcraft — If you control three or more artifacts, exile that creature.

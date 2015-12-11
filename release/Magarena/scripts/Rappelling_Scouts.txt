@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Rebel,Scout
 cost={2}{W}{W}
 pt=1/4
-ability=Flying
+ability=Flying;\
+        {2}{W}: SN gains protection from the color of your choice until end of turn.
 timing=main
-requires_groovy_code
 oracle=Flying\n{2}{W}: Rappelling Scouts gains protection from the color of your choice until end of turn.

@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Nomad
 cost={2}{W}{W}
 pt=2/3
-ability=First strike
+ability=First strike;\
+        Discard a card: SN gains protection from the color of your choice until end of turn.
 timing=main
-requires_groovy_code
 oracle=First strike\nDiscard a card: Resilient Wanderer gains protection from the color of your choice until end of turn.

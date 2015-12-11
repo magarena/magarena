@@ -6,6 +6,6 @@ type=Creature
 subtype=Faerie
 cost={G}
 pt=1/1
+ability=Whenever SN blocks or becomes blocked by a creature, that creature becomes green.
 timing=main
-requires_groovy_code
 oracle=Whenever Aisling Leprechaun blocks or becomes blocked by a creature, that creature becomes green.

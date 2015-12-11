@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Spirit
 cost={2}{R}
 pt=1/2
+ability={1}{R}: Switch each creature's power and toughness until end of turn.
 timing=main
-requires_groovy_code
 oracle={1}{R}: Switch each creature's power and toughness until end of turn.
