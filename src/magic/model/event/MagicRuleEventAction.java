@@ -1620,47 +1620,30 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    TapParalyzeIt(
-        "tap " + ARG.IT + "( and it|. RN) doesn't untap during its controller's next untap step\\.",
+    TapParalyze(
+        "tap " + ARG.PERMANENTS + "( and it|\\. RN|\\. it) doesn't untap during its controller's next untap step\\.",
+        MagicTargetHint.Negative,
+        MagicTapTargetPicker.Tap,
         MagicTiming.Tapping,
         "Tap"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final MagicPermanent it = ARG.itPermanent(event, matcher);
-                    game.doAction(new TapAction(it));
-                    game.doAction(ChangeStateAction.Set(
-                        it,
-                        MagicPermanentState.DoesNotUntapDuringNext
-                    ));
+                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                        game.doAction(new TapAction(it));
+                        game.doAction(ChangeStateAction.Set(
+                            it,
+                            MagicPermanentState.DoesNotUntapDuringNext
+                        ));
+                    }
                 }
             };
         }
     },
-    TapParalyzeChosen(
-        "tap " + ARG.CHOICE + "\\. it doesn't untap during its controller's next untap step\\.",
-        MagicTargetHint.Negative,
-        MagicTapTargetPicker.Tap,
-        MagicTiming.Tapping,
-        "Tap",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent creature) {
-                        game.doAction(new TapAction(creature));
-                        game.doAction(ChangeStateAction.Set(
-                            creature,
-                            MagicPermanentState.DoesNotUntapDuringNext
-                        ));
-                    }
-                });
-            }
-        }
-    ),
     TapChosen(
         "tap " + ARG.CHOICE + "\\.",
         MagicTargetHint.Negative,
