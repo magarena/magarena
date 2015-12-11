@@ -2256,101 +2256,67 @@ public enum MagicRuleEventAction {
             return EVENT_ACTION;
         }
     },
-    SelfBecomes(
-        "sn become(s)? a(n)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<duration> until end of turn)?(?<additionTo>(\\. It's| that's) still [^\\.]*)?\\.",
+    BecomesAlt(
+        "(?<duration>until end of turn, )" + ARG.PERMANENTS + " becomes( a| an)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<additionTo>((\\.)? It's| that's) still [^\\.]*)?\\.",
+        MagicTiming.Animate,
+        "Becomes"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return Becomes.getAction(matcher);
+        }
+        @Override
+        public MagicCondition[] getConditions(final Matcher matcher) {
+            return Becomes.getConditions(matcher);
+        }
+    },
+    BecomesAddition(
+        ARG.PERMANENTS + " become(s)?( a| an)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<additionTo> in addition to its other [a-z]*)(?<duration> until end of turn)?\\.",
+        MagicTiming.Animate,
+        "Becomes"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return Becomes.getAction(matcher);
+        }
+        @Override
+        public MagicCondition[] getConditions(final Matcher matcher) {
+            return Becomes.getConditions(matcher);
+        }
+    },
+    Becomes(
+        ARG.PERMANENTS + " become(s)?( a| an)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<duration> until end of turn)?(?<additionTo>(\\. It's| that's) still [^\\.]*)?\\.",
         MagicTiming.Animate,
         "Becomes"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final PermanentSpecParser spec = new PermanentSpecParser(matcher);
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
 
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new BecomesAction(
-                        event.getPermanent(),
-                        spec.pt,
-                        spec.colors,
-                        spec.subTypes,
-                        spec.types,
-                        spec.abilities,
-                        spec.duration,
-                        spec.additionTo
-                    ));
+                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                        game.doAction(new BecomesAction(
+                            it,
+                            spec.pt,
+                            spec.colors,
+                            spec.subTypes,
+                            spec.types,
+                            spec.abilities,
+                            spec.duration,
+                            spec.additionTo
+                        ));
+                    }
                 }
             };
         }
         @Override
         public MagicCondition[] getConditions(final Matcher matcher) {
-            return new MagicCondition[]{
-                MagicCondition.NOT_EXCLUDE_COMBAT_CONDITION
-            };
-        }
-    },
-    SelfBecomesAlt(
-        "(?<duration>until end of turn, )sn becomes a(n)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<additionTo>((\\.)? It's| that's) still [^\\.]*)?\\.",
-        MagicTiming.Animate,
-        "Becomes"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            return SelfBecomes.getAction(matcher);
-        }
-        @Override
-        public MagicCondition[] getConditions(final Matcher matcher) {
-            return SelfBecomes.getConditions(matcher);
-        }
-    },
-    ChosenBecomesAddition(
-        ARG.CHOICE + " become(s)?( a| an)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<additionTo> in addition to its other [a-z]*)(?<duration> until end of turn)?\\.",
-        MagicTiming.Animate,
-        "Becomes"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            return ChosenBecomes.getAction(matcher);
-        }
-    },
-    ChosenBecomesAlt(
-        "(?<duration>until end of turn, )" + ARG.CHOICE + " becomes( a| an)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<additionTo>((\\.)? It's| that's) still [^\\.]*)?\\.",
-        MagicTiming.Animate,
-        "Becomes"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            return ChosenBecomes.getAction(matcher);
-        }
-    },
-    ChosenBecomes(
-        ARG.CHOICE + " become(s)?( a| an)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<duration> until end of turn)?(?<additionTo>(\\. It's| that's) still [^\\.]*)?\\.",
-        MagicTiming.Animate,
-        "Becomes"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final PermanentSpecParser spec = new PermanentSpecParser(matcher);
-
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    event.processTargetPermanent(game,new MagicPermanentAction() {
-                        public void doAction(final MagicPermanent it) {
-                            game.doAction(new BecomesAction(
-                                it,
-                                spec.pt,
-                                spec.colors,
-                                spec.subTypes,
-                                spec.types,
-                                spec.abilities,
-                                spec.duration,
-                                spec.additionTo
-                            ));
-                        }
-                    });
-                }
-            };
-
+            return matcher.group("sn") != null ? 
+                new MagicCondition[]{ MagicCondition.NOT_EXCLUDE_COMBAT_CONDITION } :
+                MagicActivation.NO_COND;
         }
     },
     GainProtectionChosen(
@@ -2937,6 +2903,7 @@ public enum MagicRuleEventAction {
     public static MagicRuleEventAction build(final String rule) {
         for (final MagicRuleEventAction ruleAction : MagicRuleEventAction.values()) {
             if (ruleAction.matches(rule)) {
+                System.out.println(rule + "--" + ruleAction);
                 return ruleAction;
             }
         }
