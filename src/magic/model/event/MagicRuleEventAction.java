@@ -239,17 +239,6 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    ExileSelf(
-        "exile sn\\.",
-        MagicTiming.Removal,
-        "Exile",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new RemoveFromPlayAction(event.getPermanent(),MagicLocationType.Exile));
-            }
-        }
-    ),
     ExileCard(
         "exile " + ARG.CARD + "\\.",
         MagicTargetHint.Negative,
