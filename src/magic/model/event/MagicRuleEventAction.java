@@ -477,22 +477,6 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    PreventSelf(
-        "prevent the next (?<amount>[0-9]+) damage that would be dealt to sn this turn\\.",
-        MagicTiming.Pump,
-        "Prevent"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = Integer.parseInt(matcher.group("amount"));
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new PreventDamageAction(event.getPermanent(),amount));
-                }
-            };
-        }
-    },
     PreventOwner(
         "prevent the next (?<amount>[0-9]+) damage that would be dealt to you this turn\\.",
         MagicTiming.Pump,
@@ -509,8 +493,8 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    PreventChosen(
-        "prevent the next (?<amount>[0-9]+) damage that would be dealt to " + ARG.CHOICE + " this turn\\.",
+    PreventPermanents(
+        "prevent the next (?<amount>[0-9]+) damage that would be dealt to " + ARG.PERMANENTS + " this turn\\.",
         MagicTargetHint.Positive,
         MagicPreventTargetPicker.create(),
         MagicTiming.Pump,
@@ -519,14 +503,13 @@ public enum MagicRuleEventAction {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = Integer.parseInt(matcher.group("amount"));
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    event.processTarget(game,new MagicTargetAction() {
-                        public void doAction(final MagicTarget target) {
-                            game.doAction(new PreventDamageAction(target,amount));
-                        }
-                    });
+                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                        game.doAction(new PreventDamageAction(it, amount));
+                    }
                 }
             };
         }
