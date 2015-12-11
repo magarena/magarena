@@ -58,8 +58,15 @@
     new ThisLeavesBattlefieldTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final RemoveFromPlayAction act) {
-            game.doAction(new LoseGameAction(permanent.getController()," lost the game because of Nefarious Lich leaving the battlefield."));
-            return MagicEvent.NONE;
+            return new MagicEvent(
+                permanent,
+                this,
+                "PN loses the game."
+            );
+        }
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.doAction(new LoseGameAction(event.getPlayer()));
         }
     }
     

@@ -82,11 +82,18 @@
     
     new ThisPutIntoGraveyardTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MoveCardAction act) {
-            if (act.from(MagicLocationType.Battlefield) && act.to(MagicLocationType.Graveyard)) {
-                game.doAction(new LoseGameAction(permanent.getController()," lost the game because of Lich entering the graveyard."))
-            }
-            return MagicEvent.NONE;
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MoveCardAction act) {
+            return act.from(MagicLocationType.Battlefield) && act.to(MagicLocationType.Graveyard) ?
+                new MagicEvent(
+                    permanent,
+                    this,
+                    "PN loses the game."
+                ):
+                MagicEvent.NONE;
+        }
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.doAction(new LoseGameAction(event.getPlayer()));
         }
     }
     
