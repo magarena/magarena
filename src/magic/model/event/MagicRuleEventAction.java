@@ -1644,25 +1644,10 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    TapChosen(
-        "tap " + ARG.CHOICE + "\\.",
+    Tap(
+        "tap " + ARG.PERMANENTS + "\\.",
         MagicTargetHint.Negative,
         MagicTapTargetPicker.Tap,
-        MagicTiming.Tapping,
-        "Tap",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent creature) {
-                        game.doAction(new TapAction(creature));
-                    }
-                });
-            }
-        }
-    ),
-    TapPermanents(
-        "tap " + ARG.PERMANENTS + "\\.",
         MagicTiming.Tapping,
         "Tap"
     ) {
@@ -1679,63 +1664,33 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    ParalyzeIt(
-        ARG.IT + " doesn't untap during (your|its controller's) next untap step\\.",
+    Paralyze(
+        ARG.PERMANENTS + " doesn't untap during (your|its controller's) next untap step\\.",
+        MagicTargetHint.Negative,
+        new MagicNoCombatTargetPicker(true,true,false),
         MagicTiming.Tapping,
         "Paralyze"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(ChangeStateAction.Set(
-                        ARG.itPermanent(event, matcher),
-                        MagicPermanentState.DoesNotUntapDuringNext
-                    ));
+                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                        game.doAction(ChangeStateAction.Set(
+                            it,
+                            MagicPermanentState.DoesNotUntapDuringNext
+                        ));
+                    }
                 }
             };
         }
     },
-    ParalyzeChosen(
-        ARG.CHOICE + " doesn't untap during (your|its controller's) next untap step\\.",
-        MagicTargetHint.Negative,
-        new MagicNoCombatTargetPicker(true,true,false),
-        MagicTiming.Tapping,
-        "Paralyze",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent perm) {
-                        game.doAction(ChangeStateAction.Set(
-                            perm,
-                            MagicPermanentState.DoesNotUntapDuringNext
-                        ));
-                    }
-                });
-            }
-        }
-    ),
-    UntapChosen(
-        "untap " + ARG.CHOICE + "\\.",
+    Untap(
+        "untap " + ARG.PERMANENTS + "\\.",
         MagicTargetHint.Positive,
         MagicTapTargetPicker.Untap,
-        MagicTiming.Tapping,
-        "Untap",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent perm) {
-                        game.doAction(new UntapAction(perm));
-                    }
-                });
-            }
-        }
-    ),
-    UntapPermanents(
-        "untap " + ARG.PERMANENTS + "\\.",
         MagicTiming.Tapping,
         "Untap"
     ) {
@@ -1744,8 +1699,8 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    for (final MagicPermanent perm : ARG.permanents(event, matcher, filter)) {
-                        game.doAction(new UntapAction(perm));
+                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                        game.doAction(new UntapAction(it));
                     }
                 }
             };
