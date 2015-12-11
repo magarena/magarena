@@ -2007,23 +2007,8 @@ public enum MagicRuleEventAction {
                 MagicActivation.NO_COND;
         }
     },
-    SwitchPTSelf(
-        "switch sn's power and toughness until end of turn\\.",
-        MagicTiming.Pump,
-        "Switch"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new AddStaticAction(event.getPermanent(), MagicStatic.SwitchPT));
-                }
-            };
-        }
-    },
-    SwitchPTChosen(
-        "switch " + ARG.CHOICE + "'s power and toughness until end of turn\\.",
+    SwitchPT(
+        "switch " + ARG.PERMANENTS + "'s power and toughness until end of turn\\.",
         MagicTargetHint.None,
         MagicDefaultPermanentTargetPicker.create(),
         MagicTiming.Pump,
@@ -2031,14 +2016,13 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    event.processTargetPermanent(game,new MagicPermanentAction() {
-                        public void doAction(final MagicPermanent creature) {
-                            game.doAction(new AddStaticAction(creature, MagicStatic.SwitchPT));
-                        }
-                    });
+                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                        game.doAction(new AddStaticAction(it, MagicStatic.SwitchPT));
+                    }
                 }
             };
         }
