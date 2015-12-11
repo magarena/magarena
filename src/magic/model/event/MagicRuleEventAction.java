@@ -919,8 +919,8 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    PumpChosen(
-        ARG.CHOICE + " get(s)? (?<pt>[0-9+]+/[0-9+]+) until end of turn( for each " + ARG.WORDRUN + ")?\\.",
+    Pump(
+        ARG.PERMANENTS + " get(s)? (?<pt>[0-9+]+/[0-9+]+) until end of turn( for each " + ARG.WORDRUN + ")?\\.",
         MagicTargetHint.Positive,
         MagicPumpTargetPicker.create(),
         MagicTiming.Pump,
@@ -932,31 +932,30 @@ public enum MagicRuleEventAction {
             final int power = Integer.parseInt(pt[0]);
             final int toughness = Integer.parseInt(pt[1]);
             final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    event.processTargetPermanent(game,new MagicPermanentAction() {
-                        public void doAction(final MagicPermanent it) {
-                            final int amount = count.getAmount(event);
-                            if (count != MagicAmountFactory.One) {
-                                game.logAppendMessage(event.getPlayer(), "("+amount+")");
-                            }
-                            game.doAction(new ChangeTurnPTAction(it,power,toughness));
-                        }
-                    });
+                    final int amount = count.getAmount(event);
+                    if (count != MagicAmountFactory.One) {
+                        game.logAppendMessage(event.getPlayer(), "("+amount+")");
+                    }
+                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                        game.doAction(new ChangeTurnPTAction(it, power * amount, toughness * amount));
+                    }
                 }
             };
         }
     },
-    WeakenChosen(
-        ARG.CHOICE + " get(s)? (?<pt>[0-9-]+/[0-9-]+) until end of turn( for each " + ARG.WORDRUN + ")?\\.",
+    Weaken(
+        ARG.PERMANENTS + " get(s)? (?<pt>[0-9-]+/[0-9-]+) until end of turn( for each " + ARG.WORDRUN + ")?\\.",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Weaken"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            return PumpChosen.getAction(matcher);
+            return Pump.getAction(matcher);
         }
         @Override
         public MagicTargetPicker<?> getPicker(final Matcher matcher) {
@@ -966,14 +965,14 @@ public enum MagicRuleEventAction {
             return new MagicWeakenTargetPicker(p, t);
         }
     },
-    ModPTChosen(
-        ARG.CHOICE + " get(s)? (?<pt>[0-9+-]+/[0-9+-]+) until end of turn( for each " + ARG.WORDRUN + ")?\\.",
+    ModPT(
+        ARG.PERMANENTS + " get(s)? (?<pt>[0-9+-]+/[0-9+-]+) until end of turn( for each " + ARG.WORDRUN + ")?\\.",
         MagicTiming.Removal,
         "Pump"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            return PumpChosen.getAction(matcher);
+            return Pump.getAction(matcher);
         }
     },
     PumpGainChosen(
@@ -1064,56 +1063,6 @@ public enum MagicRuleEventAction {
         @Override
         public String getName(final Matcher matcher) {
             return GainChosen.getName(matcher);
-        }
-    },
-    PumpPermanents(
-        ARG.PERMANENTS + " get(s)? (?<pt>[0-9+]+/[0-9+]+) until end of turn( for each " + ARG.WORDRUN + ")?\\.",
-        MagicTiming.Pump,
-        "Pump"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final String[] pt = matcher.group("pt").replace("+","").split("/");
-            final int power = Integer.parseInt(pt[0]);
-            final int toughness = Integer.parseInt(pt[1]);
-            final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
-            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final int amount = count.getAmount(event);
-                    if (count != MagicAmountFactory.One) {
-                        game.logAppendMessage(event.getPlayer(), "("+amount+")");
-                    }
-                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
-                        game.doAction(new ChangeTurnPTAction(
-                            it,
-                            power * amount,
-                            toughness * amount
-                        ));
-                    }
-                }
-            };
-        }
-    },
-    WeakenPermanents(
-        ARG.PERMANENTS + " get(s)? (?<pt>[0-9-]+/[0-9-]+) until end of turn( for each " + ARG.WORDRUN + ")?\\.",
-        MagicTiming.Removal,
-        "Weaken"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            return PumpPermanents.getAction(matcher);
-        }
-    },
-    ModPTPermanents(
-        ARG.PERMANENTS + " get(s)? (?<pt>[0-9+-]+/[0-9+-]+) until end of turn( for each " + ARG.WORDRUN + ")?\\.",
-        MagicTiming.Removal,
-        "Pump"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            return PumpPermanents.getAction(matcher);
         }
     },
     PumpGainPermanents(
