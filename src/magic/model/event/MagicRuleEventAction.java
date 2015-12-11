@@ -279,26 +279,6 @@ public enum MagicRuleEventAction {
             }
         }
     },
-    ExilePermanent(
-        "exile " + ARG.CHOICE + "\\.",
-        MagicTargetHint.Negative,
-        MagicExileTargetPicker.create(),
-        MagicTiming.Removal,
-        "Exile",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent perm) {
-                        game.doAction(new ExileLinkAction(
-                            event.getSource().isPermanent() ? event.getPermanent() : MagicPermanent.NONE,
-                            perm
-                        ));
-                    }
-                });
-            }
-        }
-    ),
     ExileGroupCard(
         "exile (?<group>[^\\.]* cards [^\\.]*)\\.",
         MagicTiming.Removal,
@@ -322,19 +302,20 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    ExileGroupPerm(
-        "exile (?<group>[^\\.]*)\\.",
+    ExilePermanents(
+        "exile " + ARG.PERMANENTS + "\\.",
+        MagicTargetHint.Negative,
+        MagicExileTargetPicker.create(),
         MagicTiming.Removal,
         "Exile"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(matcher.group("group"));
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final Collection<MagicPermanent> targets = filter.filter(event);
-                    for (final MagicPermanent perm : targets) {
+                    for (final MagicPermanent perm : ARG.permanents(event, matcher, filter)) {
                         game.doAction(new ExileLinkAction(
                             event.getSource().isPermanent() ? event.getPermanent() : MagicPermanent.NONE,
                             perm
