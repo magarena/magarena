@@ -1981,29 +1981,10 @@ public enum MagicRuleEventAction {
         }
     },
     */
-    RegenerateChosen(
-        "regenerate " + ARG.CHOICE + "\\.",
+    Regenerate(
+        "regenerate " + ARG.PERMANENTS + "\\.",
         MagicTargetHint.Positive,
         MagicRegenerateTargetPicker.create(),
-        MagicTiming.Pump,
-        "Regen"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    event.processTargetPermanent(game,new MagicPermanentAction() {
-                        public void doAction(final MagicPermanent it) {
-                            game.doAction(new RegenerateAction(it));
-                        }
-                    });
-                }
-            };
-        }
-    },
-    RegeneratePermanents(
-        "regenerate " + ARG.PERMANENTS + "\\.",
         MagicTiming.Pump,
         "Regen"
     ) {
