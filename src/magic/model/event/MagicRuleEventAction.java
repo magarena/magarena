@@ -219,6 +219,26 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    FlickerEndStep(
+        "exile " + ARG.PERMANENTS + "\\. (if you do, )?return (the exiled card|that card|it|sn) to the battlefield under its owner's control at the beginning of the next end step\\.",
+        MagicTargetHint.None,
+        MagicBounceTargetPicker.create(),
+        MagicTiming.Removal,
+        "Flicker"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                        game.doAction(new ExileUntilEndOfTurnAction(it));
+                    }
+                }
+            };
+        }
+    },
     ExileSelf(
         "exile sn\\.",
         MagicTiming.Removal,
@@ -1372,34 +1392,6 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    FlickerSelf(
-        "exile sn\\. (if you do, )?return (it|sn) to the battlefield under its owner's control at the beginning of the next end step\\.",
-        MagicTiming.Removal,
-        "Flicker",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new ExileUntilEndOfTurnAction(event.getPermanent()));
-            }
-        }
-    ),
-    FlickerChosen(
-        "exile " + ARG.CHOICE + "\\. (if you do, )?return (the exiled card|that card|it) to the battlefield under its owner's control at the beginning of the next end step\\.",
-        MagicTargetHint.None,
-        MagicBounceTargetPicker.create(),
-        MagicTiming.Removal,
-        "Flicker",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetPermanent(game, new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent it) {
-                        game.doAction(new ExileUntilEndOfTurnAction(it));
-                    }
-                });
-            }
-        }
-    ),
     RevealToHand(
         "reveal the top " + ARG.AMOUNT + " cards of your library\\. Put all " +  ARG.WORDRUN + " revealed this way into your hand and the rest on the bottom of your library in any order\\.",
         MagicTiming.Draw,
