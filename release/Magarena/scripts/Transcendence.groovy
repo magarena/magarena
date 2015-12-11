@@ -1,3 +1,17 @@
+def YouLoseAction = {
+    final MagicGame game, final MagicEvent event ->
+    game.doAction(new LoseGameAction(event.getPlayer(), " lost the game because of having 20 or more life."));
+}
+
+def YouLoseEvent = {
+    final MagicSource source ->
+    return new MagicEvent(
+        source,
+        YouLoseAction,
+        "PN loses the game."
+    );
+}
+
 [
     new IfPlayerWouldLoseTrigger() {
         @Override
@@ -16,7 +30,9 @@
         }
         @Override
         public void modGame(final MagicPermanent source, final MagicGame game) {
-            game.doAction(new LoseGameAction(source.getController(), " lost the game because of having 20 or more life."));
+            game.doAction(new PutStateTriggerOnStackAction(
+                YouLoseEvent(source)
+            ));
         }
     },
     
