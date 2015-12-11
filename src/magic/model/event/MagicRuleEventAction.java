@@ -2055,47 +2055,42 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    TurnSelfFaceDown(
-        "turn sn face down\\.",
+    TurnFaceDown(
+        "turn " + ARG.PERMANENTS + " face down\\.",
         MagicTiming.Tapping,
-        "Face Down",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new TurnFaceDownAction(event.getPermanent()));
-            }
-        }
-    ),
-    TurnChosenFaceDown(
-        "turn " + ARG.CHOICE + " face down\\.",
-        MagicTiming.Tapping,
-        "Face Down",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent creature) {
-                        game.doAction(new TurnFaceDownAction(creature));
+        "Face Down"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                        game.doAction(new TurnFaceDownAction(it));
                     }
-                });
-            }
+                }
+            };
         }
-    ),
-    TurnChosenFaceUp(
-        "turn " + ARG.CHOICE + " face up\\.",
+    },
+    TurnFaceUp(
+        "turn " + ARG.PERMANENTS + " face up\\.",
         MagicTiming.Tapping,
-        "Face Up",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent creature) {
-                        game.doAction(new TurnFaceUpAction(creature));
+        "Face Up"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                        game.doAction(new TurnFaceUpAction(it));
                     }
-                });
-            }
+                }
+            };
         }
-    ),
+    },
     FlipSelf(
         "flip sn\\.",
         MagicTiming.Pump,
