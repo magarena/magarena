@@ -166,7 +166,7 @@ public class ARG {
         }
     }
     
-    public static final String TARGETS = "((?<rn>(rn))|(?<sn>sn)|(?<pn>(pn||you))|" + CHOICE + "|(?<group>[^\\.]*) )";
+    public static final String TARGETS = "((?<rn>(rn))|(?<sn>sn)|(?<pn>(pn||you))|" + CHOICE + "|(?<group>[^\\.]*))";
     public static List<MagicTarget> targets(final MagicEvent event, final Matcher m, final MagicTargetFilter<MagicTarget> filter) {
         if (m.group("rn") != null) {
             return Collections.singletonList(event.getRefTarget());
