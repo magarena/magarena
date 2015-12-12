@@ -79,7 +79,8 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
         setLayout(new MigLayout("flowy, gap 0, insets 2 6 6 6"));
         add(optionsPanel, "w 100%, gapbottom 6");
         add(getDownloadPanel(), "w 100%");
-        add(hintPanel, "w 100%, h 100%, gaptop 10");
+        add(errorPanel, "w 100%, h 100%, hidemode 3");
+        add(hintPanel, "w 100%, h 100%, gaptop 10, hidemode 3");
         add(buttonsPanel, "w 100%, h 30!, pushy, aligny bottom");
     }
 
@@ -188,7 +189,9 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
         SwingUtilities.invokeLater(() -> {
             errorPanel.setErrorText(message + "\n");
             if (!errorPanel.isVisible()) {
+                hintPanel.setVisible(false);
                 errorPanel.setVisible(true);
+                refreshLayout();
             }
         });
     }
