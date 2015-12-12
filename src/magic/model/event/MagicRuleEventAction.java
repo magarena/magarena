@@ -523,7 +523,7 @@ public enum MagicRuleEventAction {
         }
     },
     PreventAllDamageTo(
-        "prevent all damage that would be dealt to " + ARG.PERMANENTS + " this turn\\.",
+        "prevent all damage that would be dealt to " + ARG.TARGETS + " this turn\\.",
         MagicTargetHint.Positive,
         MagicPreventTargetPicker.create(),
         MagicTiming.Pump,
@@ -531,16 +531,13 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            final MagicTargetFilter<MagicTarget> filter = ARG.targetsParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
-                        game.doValidAction(it, new AddTurnTriggerAction(
-                            it,
-                            PreventDamageTrigger.PreventDamageDealtTo
-                        ));
-                    }
+                    game.doAction(new AddTurnTriggerAction(
+                        PreventDamageTrigger.PreventDamageDealtTo(filter)
+                    ));
                 }
             };
         }
