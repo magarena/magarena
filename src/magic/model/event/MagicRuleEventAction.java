@@ -684,11 +684,11 @@ public enum MagicRuleEventAction {
                     if (count != MagicAmountFactory.One) {
                         game.logAppendMessage(event.getPlayer(), "(" + total + ")");
                     }
-                    for (final MagicPlayer player : ARG.players(event, matcher, filter)) {
+                    for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
                         if (isRandom) {
-                            game.addEvent(MagicDiscardEvent.Random(event.getSource(), player, total));
+                            game.addEvent(MagicDiscardEvent.Random(event.getSource(), it, total));
                         } else {
-                            game.addEvent(new MagicDiscardEvent(event.getSource(), player, total));
+                            game.addEvent(new MagicDiscardEvent(event.getSource(), it, total));
                         }
                     }
                 }
@@ -710,8 +710,8 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    LoseGainLifeChosen(
-        ARG.CHOICE + " lose(s)? (?<amount1>[0-9]+) life and you gain (?<amount2>[0-9]+) life\\.",
+    DrainLife(
+        ARG.PLAYERS + " lose(s)? (?<amount1>[0-9]+) life and you gain (?<amount2>[0-9]+) life\\.",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "-Life"
@@ -720,15 +720,18 @@ public enum MagicRuleEventAction {
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount1 = Integer.parseInt(matcher.group("amount1"));
             final int amount2 = Integer.parseInt(matcher.group("amount2"));
+            final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    event.processTargetPlayer(game,new MagicPlayerAction() {
-                        public void doAction(final MagicPlayer player) {
-                            game.doAction(new ChangeLifeAction(player,-amount1));
-                            game.doAction(new ChangeLifeAction(event.getPlayer(),amount2));
-                        }
-                    });
+                    final List<MagicPlayer> players = ARG.players(event, matcher, filter);
+                    for (final MagicPlayer it : players) {
+                        game.doAction(new ChangeLifeAction(it, -amount1));
+                    }
+                    //players is empty only if target is illegal
+                    if (players.isEmpty() == false) {
+                        game.doAction(new ChangeLifeAction(event.getPlayer(), amount2));
+                    }
                 }
             };
         }
