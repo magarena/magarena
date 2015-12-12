@@ -256,6 +256,12 @@ public class MagicTargetFilterFactory {
             return itemOnStack.isSpell(MagicType.Creature) && itemOnStack.getConvertedCost() >= 6;
         }
     };
+    
+    public static final MagicStackFilterImpl CREATURE_SPELL_WITH_INFECT=new MagicStackFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell(MagicType.Creature) && itemOnStack.hasAbility(MagicAbility.Infect);
+        }
+    };
 
     public static final MagicStackFilterImpl WHITE_OR_BLUE_INSTANT_OR_SORCERY_SPELL = new MagicStackFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack target) {
@@ -2718,6 +2724,7 @@ public class MagicTargetFilterFactory {
         single.put("instant spell you control with converted mana cost 2 or less", INSTANT_SPELL_YOU_CONTROL_WITH_CMC_LEQ_2);
         single.put("sorcery spell you control with converted mana cost 2 or less", SORCERY_SPELL_YOU_CONTROL_WITH_CMC_LEQ_2);
         single.put("creature spell with converted mana cost 6 or greater", CREATURE_SPELL_CMC_6_OR_MORE);
+        single.put("creature spell with infect", CREATURE_SPELL_WITH_INFECT);
         single.put("creature or Aura spell", CREATURE_OR_AURA_SPELL);
         single.put("creature or sorcery spell", CREATURE_OR_SORCERY_SPELL);
         single.put("Spirit or Arcane spell", SPIRIT_OR_ARCANE_SPELL);
