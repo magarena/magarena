@@ -165,4 +165,28 @@ public class ARG {
             return MagicTargetFilterFactory.ANY;
         }
     }
+    
+    public static final String TARGETS = "((?<rn>(rn))|(?<sn>sn)|(?<pn>(pn||you))|" + CHOICE + "|(?<group>[^\\.]*) )";
+    public static List<MagicTarget> targets(final MagicEvent event, final Matcher m, final MagicTargetFilter<MagicTarget> filter) {
+        if (m.group("rn") != null) {
+            return Collections.singletonList(event.getRefTarget());
+        } else if (m.group("pn") != null) {
+            return Collections.singletonList(event.getPlayer());
+        } else if (m.group("sn") != null) {
+            return Collections.singletonList(event.getPermanent());
+        } else if (m.group("choice") != null) {
+            return event.listTarget();
+        } else {
+            return filter.filter(event);
+        }
+    }
+
+    public static MagicTargetFilter<MagicTarget> targetsParse(final Matcher m) {
+        if (m.group("group") != null) {
+            return MagicTargetFilterFactory.Target(m.group("group"));
+        } else {
+            return MagicTargetFilterFactory.ONE;
+        }
+    }
+    
 }
