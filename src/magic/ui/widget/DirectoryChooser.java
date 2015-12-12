@@ -7,7 +7,6 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.InvalidPathException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import javax.swing.AbstractAction;
@@ -156,14 +155,6 @@ public class DirectoryChooser extends JPanel implements MouseListener {
     public void mouseExited(MouseEvent e) {
         setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
         dispatchEvent(e);
-    }
-
-    public boolean isValidDirectory() {
-        try {
-            return getPath().toFile().isDirectory();
-        } catch (InvalidPathException e) {
-            return false;
-        }
     }
 
     @Override

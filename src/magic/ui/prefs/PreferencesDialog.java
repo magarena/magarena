@@ -47,7 +47,6 @@ import magic.ui.MagicSound;
 import magic.ui.ScreenController;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
-import magic.ui.widget.DirectoryChooser;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.LinkLabel;
 import magic.ui.widget.SliderPanel;
@@ -86,7 +85,6 @@ public class PreferencesDialog
     private static final String _S25 = "Positive effects, such as pump and untap, can only be applied to your own permanents. Negative effects, such as destroy and exile, can only be applied to opponent's permanents.";
     private static final String _S26 = "Message:";
     private static final String _S27 = "The duration in milliseconds (1000 = 1 second) that the game pauses when an item is added to the stack. This has no effect unless the 'Automatically pass priority' option is enabled.";
-    private static final String _S36 = "The path for the images directory is invalid!";
     private static final String _S37 = "Proxy settings are invalid!";
     private static final String _S41 = "Highlight";
     private static final String _S42 = "none";
@@ -111,8 +109,6 @@ public class PreferencesDialog
     private static final String _S62 = "If set then the Card Explorer will display extra data for each missing card otherwise it will only show the card name. This setting can affect the time it takes the Card Explorer screen to open the first time it is accessed.";
     private static final String _S63 = "User Interface";
     private static final String _S64 = "Card Explorer & Deck Editor";
-    private static final String _S65 = "Location of the \"cards\" and \"tokens\" directories which contain downloaded card and token images respectively. Right click to open in file explorer.";
-    private static final String _S66 = "Card Images Directory";
     private static final String _S68 = "Images";
     private static final String _S79 = "Preferences";
     private static final String _S80 = "There is a problem reading the translation file.";
@@ -146,7 +142,6 @@ public class PreferencesDialog
     private JCheckBox previewCardOnSelectCheckBox;
     private JCheckBox mulliganScreenCheckbox;
     private JCheckBox missingCardDataCheckbox;
-    private DirectoryChooser imagesFolderChooser;
     private JCheckBox customBackgroundCheckBox;
     private JCheckBox splitViewDeckEditorCheckBox;
     private JCheckBox uiSoundCheckBox;
@@ -393,7 +388,6 @@ public class PreferencesDialog
 
         if (isGamePlayMode == false) {
             // General
-            config.setCardImagesPath(imagesFolderChooser.getPath());
             config.setPreviewCardOnSelect(previewCardOnSelectCheckBox.isSelected());
             config.setShowMissingCardData(missingCardDataCheckbox.isSelected());
             config.setIsSplitViewDeckEditor(splitViewDeckEditorCheckBox.isSelected());
@@ -469,10 +463,6 @@ public class PreferencesDialog
 
     private boolean validateSettings() {
         if (isGamePlayMode == false) {
-            if (!imagesFolderChooser.isValidDirectory()) {
-                ScreenController.showWarningMessage(UiString.get(_S36));
-                return false;
-            }
             if (isProxyUpdated && !isProxyValid()) {
                 ScreenController.showWarningMessage(UiString.get(_S37));
                 return false;
@@ -645,7 +635,6 @@ public class PreferencesDialog
     private JPanel getGeneralTabPanel() {
         final JPanel panel = new JPanel(new MigLayout("flowy, gapy 14, insets 16"));
         panel.add(getCardExplorerEditorSettingsPanel(), "w 100%");
-        panel.add(getDirectorySettingsPanel(), "w 100%");
         return panel;
     }
 
@@ -678,20 +667,6 @@ public class PreferencesDialog
         panel.add(splitViewDeckEditorCheckBox);
         panel.add(previewCardOnSelectCheckBox);
         panel.add(missingCardDataCheckbox);
-
-        return panel;
-
-    }
-
-    private JPanel getDirectorySettingsPanel() {
-
-        imagesFolderChooser = new DirectoryChooser(config.getCardImagesPath());
-        imagesFolderChooser.setToolTipText(UiString.get(_S65));
-        imagesFolderChooser.addMouseListener(this);
-
-        final JPanel panel = new JPanel(new MigLayout("flowy, insets 0"));
-        panel.add(getCaptionLabel(UiString.get(_S66)));
-        panel.add(imagesFolderChooser, "w 100%");
 
         return panel;
 
