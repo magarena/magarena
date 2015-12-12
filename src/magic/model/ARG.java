@@ -124,12 +124,14 @@ public class ARG {
         }
     }
     
-    public static final String PLAYERS = "((?<rn>(rn))|(?<pn>(pn||you))|(?<group>[^\\.]*) )";
+    public static final String PLAYERS = "((?<rn>(rn))|(?<pn>(pn||you))|" + CHOICE + "|(?<group>[^\\.]*) )";
     public static List<MagicPlayer> players(final MagicEvent event, final Matcher m, final MagicTargetFilter<MagicPlayer> filter) {
         if (m.group("rn") != null) {
             return Collections.singletonList(event.getRefPlayer());
         } else if (m.group("pn") != null) {
             return Collections.singletonList(event.getPlayer());
+        } else if (m.group("choice") != null) {
+            return event.listTargetPlayer();
         } else {
             return filter.filter(event);
         }

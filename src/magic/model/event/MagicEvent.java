@@ -645,6 +645,11 @@ public class MagicEvent implements MagicCopyable {
             return false;
         }
     }
+    
+    public final List<MagicPlayer> listTargetPlayer() {
+        final MagicTarget target = getLegalTarget(player.getGame());
+        return target.isPlayer() ? Collections.singletonList((MagicPlayer)target) : Collections.emptyList();
+    }
 
     private static final void payManaCost(final MagicGame game, final MagicPlayer player, final MagicPayManaCostResult result) {
         result.doAction(game,player);
