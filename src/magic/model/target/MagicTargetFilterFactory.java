@@ -2511,6 +2511,7 @@ public class MagicTargetFilterFactory {
         single.put("attacking creature with power 3 or less", ATTACKING_CREATURE_POWER_3_OR_LESS);
         single.put("nonattacking creature", NONATTACKING_CREATURE);
         single.put("attacking or blocking creature", ATTACKING_OR_BLOCKING_CREATURE);
+        single.put("attacking creature or blocking creature", ATTACKING_OR_BLOCKING_CREATURE);
         single.put("attacking or blocking creature with flying", ATTACKING_OR_BLOCKING_CREATURE_WITH_FLYING);
         single.put("attacking or blocking creature with power 3 or less", ATTACKING_OR_BLOCKING_CREATURE_POWER_3_OR_LESS);
         single.put("blocked creature", BLOCKED_CREATURE);
@@ -2819,7 +2820,8 @@ public class MagicTargetFilterFactory {
             .replaceAll("QUOTE", "")
             .replaceAll(" on the battlefield\\b", "")
             .replaceAll("^all ", "")
-            .replaceAll("^each ", "");
+            .replaceAll("^each ", "")
+            .replaceAll(" each ", " ");
     }
 
     private static final Pattern OTHER = Pattern.compile("^(an)?other ", Pattern.CASE_INSENSITIVE);
