@@ -545,6 +545,12 @@ public class MagicGame {
     public void addDelayedAction(final MagicAction action) {
         delayedActions.add(action);
     }
+    
+    public void doValidAction(final MagicPermanent perm, final MagicAction action) {
+        if (perm.isValid()) {
+            doAction(action);
+        }
+    }
 
     public void doAction(final MagicAction action) {
         actions.add(action);
