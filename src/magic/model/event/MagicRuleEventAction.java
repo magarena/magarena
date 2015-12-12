@@ -1769,29 +1769,9 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    TargetSacrificeChosen(
-        ARG.CHOICE + " sacrifices (?<permanent>[^\\.]*)\\.",
-        MagicTargetHint.Negative,
-        MagicTiming.Removal,
-        "Sacrifice"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("permanent")+" you control");
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    event.processTargetPlayer(game,new MagicPlayerAction() {
-                        public void doAction(final MagicPlayer player) {
-                            game.addEvent(new MagicSacrificePermanentEvent(event.getSource(), player, choice));
-                        }
-                    });
-                }
-            };
-        }
-    },
-    PlayersSacrificeChosen(
+    SacrificeChosen(
         ARG.PLAYERS + "( )?sacrifice(s)? (?<permanent>[^\\.]*)\\.",
+        MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Sacrifice"
     ) {
@@ -1802,8 +1782,8 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    for (final MagicPlayer player : ARG.players(event, matcher, filter)) {
-                        game.addEvent(new MagicSacrificePermanentEvent(event.getSource(), player, choice));
+                    for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
+                        game.addEvent(new MagicSacrificePermanentEvent(event.getSource(), it, choice));
                     }
                 }
             };
