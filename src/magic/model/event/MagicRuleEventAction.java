@@ -764,29 +764,9 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    LoseLifeChosen(
-        ARG.CHOICE + " lose(s)? (?<amount>[0-9]+) life\\.",
-        MagicTargetHint.Negative,
-        MagicTiming.Removal,
-        "-Life"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = Integer.parseInt(matcher.group("amount"));
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    event.processTargetPlayer(game,new MagicPlayerAction() {
-                        public void doAction(final MagicPlayer player) {
-                            game.doAction(new ChangeLifeAction(player,-amount));
-                        }
-                    });
-                }
-            };
-        }
-    },
-    LoseLifePlayers(
+    LoseLife(
         ARG.PLAYERS + "( )?lose(s)? (?<amount>[0-9]+) life( for each " + ARG.WORDRUN + ")?\\.",
+        MagicTargetHint.Negative,
         MagicTiming.Removal,
         "-Life"
     ) {
@@ -799,11 +779,12 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     final int multiplier = count.getAmount(event);
-                    if (multiplier>1) {
-                        game.logAppendMessage(event.getPlayer(), "(" + amount*multiplier + ")");
+                    final int total = amount * multiplier;
+                    if (count != MagicAmountFactory.One) {
+                        game.logAppendMessage(event.getPlayer(), "(" + total + ")");
                     }
-                    for (final MagicPlayer player : ARG.players(event, matcher, filter)) {
-                        game.doAction(new ChangeLifeAction(player, -amount * multiplier));
+                    for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
+                        game.doAction(new ChangeLifeAction(it, -total));
                     }
                 }
             };
