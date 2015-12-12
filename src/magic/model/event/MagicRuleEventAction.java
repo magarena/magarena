@@ -237,48 +237,19 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    ExileCard(
-        "exile " + ARG.CARD + "\\.",
+    ExileCards(
+        "exile " + ARG.CARDS + "\\.",
         MagicTargetHint.Negative,
-        MagicTiming.Removal,
-        "Exile",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetCard(game,new MagicCardAction() {
-                    public void doAction(final MagicCard card) {
-                        game.doAction(new ExileLinkAction(
-                            event.getSource().isPermanent() ? event.getPermanent() : MagicPermanent.NONE,
-                            card,
-                            card.getLocation()
-                        ));
-                    }
-                });
-            }
-        }
-    ) {
-        @Override
-        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
-            if (matcher.group("choice").contains("your")) {
-                return MagicGraveyardTargetPicker.ExileOwn;
-            } else {
-                return MagicGraveyardTargetPicker.ExileOpp;
-            }
-        }
-    },
-    ExileGroupCard(
-        "exile (?<group>[^\\.]* cards [^\\.]*)\\.",
         MagicTiming.Removal,
         "Exile"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetFilter<MagicCard> filter = MagicTargetFilterFactory.Card(matcher.group("group"));
+            final MagicTargetFilter<MagicCard> filter = ARG.cardsParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final Collection<MagicCard> targets = filter.filter(event);
-                    for (final MagicCard card : targets) {
+                    for (final MagicCard card : ARG.cards(event, matcher, filter)) {
                         game.doAction(new ExileLinkAction(
                             event.getSource().isPermanent() ? event.getPermanent() : MagicPermanent.NONE,
                             card,
@@ -287,6 +258,18 @@ public enum MagicRuleEventAction {
                     }
                 }
             };
+        }
+        @Override
+        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+            if (matcher.group("choice") != null) {
+                if (matcher.group("choice").contains("your")) {
+                    return MagicGraveyardTargetPicker.ExileOwn;
+                } else {
+                    return MagicGraveyardTargetPicker.ExileOpp;
+                }
+            } else {
+                return MagicDefaultTargetPicker.create();
+            }
         }
     },
     ExilePermanents(
