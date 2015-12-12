@@ -2605,6 +2605,26 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    ExtraTurn(
+        ARG.PLAYERS + "( )?take(s)? (?<amount>[a-z]+) extra turn(s)? after this one\\.",
+        MagicTargetHint.Positive,
+        MagicTiming.SecondMain,
+        "+Turn"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final int amount = ARG.amount(matcher);
+            final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
+                        game.doAction(new ChangeExtraTurnsAction(it, amount));
+                    }
+                }
+            };
+        }
+    },
     ;
 
     private final Pattern pattern;
