@@ -22,7 +22,7 @@ public final class NewVersionJsonParser {
     private static boolean downloadJsonToFile(final File jsonFile) {
         try {
             final DownloadableJsonFile downloadFile = new DownloadableJsonFile("https://magarena.github.io/current.json", jsonFile);
-            downloadFile.download(GeneralConfig.getInstance().getProxy());
+            downloadFile.doDownload(GeneralConfig.getInstance().getProxy());
             if (jsonFile.length() == 0) {
                 System.err.println("new version json file is empty!");
                 return false;

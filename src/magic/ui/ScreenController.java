@@ -29,6 +29,7 @@ import magic.ui.screen.DeckEditorScreen;
 import magic.ui.screen.DeckTiledCardsScreen;
 import magic.ui.screen.DeckViewScreen;
 import magic.ui.screen.DecksScreen;
+import magic.ui.screen.DownloadImagesScreen;
 import magic.ui.screen.DuelDecksScreen;
 import magic.ui.screen.DuelGameScreen;
 import magic.ui.screen.GameLogScreen;
@@ -55,6 +56,7 @@ public final class ScreenController {
 
     private static MagicFrame mainFrame = null;
     private static final Stack<AbstractScreen> screens = new Stack<>();
+    private static AbstractScreen hiddenScreen;
 
     public static MagicFrame getMainFrame() {
         if (mainFrame == null && java.awt.GraphicsEnvironment.isHeadless() == false) {
@@ -190,6 +192,10 @@ public final class ScreenController {
         new AboutDialog(getMainFrame());
     }
 
+    public static void showDownloadImagesScreen() {
+        showScreen(new DownloadImagesScreen());
+    }
+
     public static void showPreferencesDialog() {
         final PreferencesDialog dialog = new PreferencesDialog(getMainFrame(), isDuelActive());
         if (dialog.isRestartRequired()) {
@@ -225,9 +231,14 @@ public final class ScreenController {
         }
     }
 
-    private static void showScreen(final AbstractScreen screen) {
+    private static void showScreen(AbstractScreen screen) {
+        if (hiddenScreen != null && hiddenScreen.getClass().getName().equals(screen.getClass().getName())) {
+            screen = hiddenScreen;
+            hiddenScreen = null;
+        }
         setMainFrameScreen(screen);
         screens.push(screen);
+        screen.setVisible(true);
         screen.requestFocus();
     }
 
@@ -272,6 +283,16 @@ public final class ScreenController {
             }
         }
         return false;
+    }
+
+    public static void hideActiveScreen() {
+        if (hiddenScreen == null) {
+            hiddenScreen = screens.pop();
+            hiddenScreen.setVisible(false);
+            showScreen(screens.pop());
+        } else {
+            throw new RuntimeException("A screen is already hidden - only one allowed at a time!");
+        }
     }
 
 }

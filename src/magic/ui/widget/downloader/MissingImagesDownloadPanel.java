@@ -19,7 +19,7 @@ public abstract class MissingImagesDownloadPanel extends ImageDownloadPanel {
 
     @Override
     protected String doFileDownloadAndGetName(final DownloadableFile file, final Proxy proxy) throws IOException {
-        file.download(proxy);
+        file.doDownload(proxy);
         if (file instanceof CardImageFile) {
             return ((CardImageFile) file).getCardName();
         } else {

@@ -12,6 +12,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
+import magic.ui.CardTextLanguage;
 import magic.ui.duel.animation.AnimationFx;
 import magic.ui.message.MessageStyle;
 import magic.utility.MagicFileSystem;
@@ -73,6 +74,7 @@ public class GeneralConfig {
     private static final String LOG_MESSAGE_STYLE = "logMessageStyle";
     private static final String ANIMATION_FLAGS = "animationFlags";
     private static final String PREF_IMAGE_SIZE = "preferredImageSize";
+    private static final String CARD_TEXT_LANG = "cardTextLanguage";
 
     private static final int DEFAULT_LEFT=-1;
     private static final int DEFAULT_TOP=0;
@@ -160,6 +162,7 @@ public class GeneralConfig {
     private String translation = DEFAULT_TRANSLATION;
     private MessageStyle logMessageStyle = MessageStyle.PLAIN;
     private String preferredImageSize = DEFAULT_PREF_IMAGE_SIZE;
+    private CardTextLanguage cardTextLanguage = CardTextLanguage.ENGLISH;
 
     private GeneralConfig() { }
 
@@ -630,6 +633,7 @@ public class GeneralConfig {
         logMessageStyle = MessageStyle.valueOf(properties.getProperty(LOG_MESSAGE_STYLE, MessageStyle.PLAIN.name()));
         AnimationFx.setFlags(Integer.parseInt(properties.getProperty(ANIMATION_FLAGS, "" + AnimationFx.getFlags())));
         preferredImageSize = properties.getProperty(PREF_IMAGE_SIZE, DEFAULT_PREF_IMAGE_SIZE);
+        cardTextLanguage = CardTextLanguage.valueOf(properties.getProperty(CARD_TEXT_LANG, CardTextLanguage.ENGLISH.name()));
     }
 
     public void load() {
@@ -682,6 +686,7 @@ public class GeneralConfig {
         properties.setProperty(LOG_MESSAGE_STYLE, logMessageStyle.name());
         properties.setProperty(ANIMATION_FLAGS, String.valueOf(AnimationFx.getFlags()));
         properties.setProperty(PREF_IMAGE_SIZE, preferredImageSize);
+        properties.setProperty(CARD_TEXT_LANG, cardTextLanguage.name());
     }
 
     public void save() {
@@ -712,6 +717,14 @@ public class GeneralConfig {
 
     public void setPreferredImageSize(String s) {
         this.preferredImageSize = s;
+    }
+
+    public CardTextLanguage getCardTextLanguage() {
+        return cardTextLanguage;
+    }
+
+    public void setCardTextLanguage(CardTextLanguage aLang) {
+        this.cardTextLanguage = aLang;
     }
 
 }

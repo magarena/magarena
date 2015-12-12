@@ -30,7 +30,7 @@ public final class FiremindJsonReader {
         try {
             final DownloadableJsonFile downloadFile =
                     new DownloadableJsonFile("https://www.firemind.ch/decks/top.json", jsonFile);
-            downloadFile.download(GeneralConfig.getInstance().getProxy());
+            downloadFile.doDownload(GeneralConfig.getInstance().getProxy());
         } catch (IOException ex) {
             System.err.println("Download of json file failed : " + ex.getMessage());
         }
