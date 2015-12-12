@@ -78,23 +78,5 @@
                 game.doAction(new LoseGameAction(event.getPlayer()," lost the game because of not being able to sacrifice enough nontoken permanents."))
             }
         }
-    },
-    
-    new ThisPutIntoGraveyardTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MoveCardAction act) {
-            return act.from(MagicLocationType.Battlefield) && act.to(MagicLocationType.Graveyard) ?
-                new MagicEvent(
-                    permanent,
-                    this,
-                    "PN loses the game."
-                ):
-                MagicEvent.NONE;
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new LoseGameAction(event.getPlayer()));
-        }
     }
-    
 ]

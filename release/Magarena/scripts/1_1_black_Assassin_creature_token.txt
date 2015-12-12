@@ -6,5 +6,5 @@ type=Creature
 subtype=Assassin
 color=b
 pt=1/1
-requires_groovy_code
+ability=Whenever this creature deals combat damage to a player, that player loses the game.
 oracle=Whenever this creature deals combat damage to a player, that player loses the game.

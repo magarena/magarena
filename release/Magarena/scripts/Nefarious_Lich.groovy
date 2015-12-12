@@ -53,21 +53,5 @@
                 game.doAction(new LoseGameAction(event.getPlayer()," lost the game because of not being able to exile enough cards from his or her graveyard."))
             }
         }
-    },
-    
-    new ThisLeavesBattlefieldTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final RemoveFromPlayAction act) {
-            return new MagicEvent(
-                permanent,
-                this,
-                "PN loses the game."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new LoseGameAction(event.getPlayer()));
-        }
     }
-    
 ]

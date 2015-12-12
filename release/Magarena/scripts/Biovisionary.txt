@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Wizard
 cost={1}{G}{U}
 pt=2/3
+ability=At the beginning of the end step, if you control four or more creatures named Biovisionary, you win the game.
 timing=main
-requires_groovy_code
 oracle=At the beginning of the end step, if you control four or more creatures named Biovisionary, you win the game.

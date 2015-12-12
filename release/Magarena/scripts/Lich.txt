@@ -4,6 +4,7 @@ value=4.276
 rarity=R
 type=Enchantment
 cost={B}{B}{B}{B}
+ability=When SN is put into a graveyard from the battlefield, you lose the game.
 timing=enchantment
 requires_groovy_code
 oracle=As Lich enters the battlefield, you lose life equal to your life total.\nYou don't lose the game for having 0 or less life.\nIf you would gain life, draw that many cards instead.\nWhenever you're dealt damage, sacrifice that many nontoken permanents. If you can't, you lose the game.\nWhen Lich is put into a graveyard from the battlefield, you lose the game.
