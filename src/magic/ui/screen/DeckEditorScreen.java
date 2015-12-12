@@ -24,7 +24,7 @@ import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.ui.ScreenOptionsOverlay;
 import magic.translate.UiString;
-import magic.ui.dialog.DownloadImagesDialog;
+import magic.ui.MagicLogs;
 import magic.ui.deck.editor.DeckEditorScreenPanel;
 import magic.ui.deck.editor.IDeckEditorListener;
 import magic.ui.screen.interfaces.IActionBar;
@@ -274,7 +274,7 @@ public class DeckEditorScreen
             ((DuelDecksScreen)nextScreen).updateDecksAfterEdit();
         }
         MagicSetDefinitions.clearLoadedSets();
-        DownloadImagesDialog.clearLoadedLogs();
+        MagicLogs.clearLoadedLogs();
         return true;
     }
 

@@ -20,9 +20,9 @@ import magic.exception.InvalidDeckException;
 import magic.model.MagicDeck;
 import magic.ui.MagicFileChoosers;
 import magic.ui.MagicFrame;
+import magic.ui.MagicLogs;
 import magic.ui.ScreenController;
 import magic.ui.ScreenOptionsOverlay;
-import magic.ui.dialog.DownloadImagesDialog;
 import magic.ui.deck.editor.DeckEditorSplitPanel;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IDeckConsumer;
@@ -263,7 +263,7 @@ public class DeckEditorSplitScreen
             ((DuelDecksScreen)nextScreen).updateDecksAfterEdit();
         }
         MagicSetDefinitions.clearLoadedSets();
-        DownloadImagesDialog.clearLoadedLogs();
+        MagicLogs.clearLoadedLogs();
         return true;
     }
 

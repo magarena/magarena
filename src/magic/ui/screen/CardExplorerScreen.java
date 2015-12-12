@@ -19,7 +19,7 @@ import magic.ui.explorer.ExplorerPanel;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenOptionsOverlay;
 import magic.translate.UiString;
-import magic.ui.dialog.DownloadImagesDialog;
+import magic.ui.MagicLogs;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.screen.interfaces.IStatusBar;
@@ -112,7 +112,7 @@ public class CardExplorerScreen
     @Override
     public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
         MagicSetDefinitions.clearLoadedSets();
-        DownloadImagesDialog.clearLoadedLogs();
+        MagicLogs.clearLoadedLogs();
         return true;
     }
 
