@@ -543,6 +543,29 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    PreventAllCombatToBy(
+        "prevent all combat damage that would be dealt to and dealt by " + ARG.PERMANENTS + " this turn\\.",
+        MagicTargetHint.Negative,
+        new MagicNoCombatTargetPicker(true, true, false),
+        MagicTiming.Block,
+        "Prevent"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                        game.doAction(new AddTurnTriggerAction(
+                            it,
+                            PreventDamageTrigger.PreventCombatDamageDealtToDealtBy
+                        ));
+                    }
+                }
+            };
+        }
+    },
     PreventAllDamageBy(
         "prevent all damage that would be dealt by " + ARG.PERMANENTS + " this turn\\.",
         MagicTargetHint.Negative,
