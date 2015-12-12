@@ -664,8 +664,8 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    DiscardChosen(
-        ARG.CHOICE + " discard(s)? (?<amount>[a-z]+) card(s)?(?<random> at random)?( for each " + ARG.WORDRUN +")?\\.",
+    Discard(
+        ARG.PLAYERS + "( )?discard(s)? (?<amount>[a-z]+) card(s)?(?<random> at random)?( for each " + ARG.WORDRUN +")?\\.",
         MagicTargetHint.Negative,
         MagicTiming.Draw,
         "Discard"
@@ -675,45 +675,20 @@ public enum MagicRuleEventAction {
             final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
             final int amount = EnglishToInt.convert(matcher.group("amount"));
             final boolean isRandom = matcher.group("random") != null;
+            final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     final int multiplier = count.getAmount(event);
                     final int total = amount * multiplier;
-                    if (multiplier>1) {
+                    if (count != MagicAmountFactory.One) {
                         game.logAppendMessage(event.getPlayer(), "(" + total + ")");
                     }
-                    event.processTargetPlayer(game,new MagicPlayerAction() {
-                        public void doAction(final MagicPlayer player) {
-                            if (isRandom) {
-                                game.addEvent(MagicDiscardEvent.Random(event.getSource(), player, total));
-                            } else {
-                                game.addEvent(new MagicDiscardEvent(event.getSource(), player, total));
-                            }
-                        }
-                    });
-                }
-            };
-        }
-    },
-    DiscardPlayers(
-        ARG.PLAYERS + "( )?discard(s)? (?<amount>[a-z]+) card(s)?(?<random> at random)?\\.",
-        MagicTiming.Draw,
-        "Discard"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = EnglishToInt.convert(matcher.group("amount"));
-            final boolean isRandom = matcher.group("random") != null;
-            final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
                     for (final MagicPlayer player : ARG.players(event, matcher, filter)) {
                         if (isRandom) {
-                            game.addEvent(MagicDiscardEvent.Random(event.getSource(), player, amount));
+                            game.addEvent(MagicDiscardEvent.Random(event.getSource(), player, total));
                         } else {
-                            game.addEvent(new MagicDiscardEvent(event.getSource(), player, amount));
+                            game.addEvent(new MagicDiscardEvent(event.getSource(), player, total));
                         }
                     }
                 }
