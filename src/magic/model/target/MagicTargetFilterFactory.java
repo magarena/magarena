@@ -39,6 +39,10 @@ public class MagicTargetFilterFactory {
         public boolean acceptType(final MagicTargetType targetType) {
             return true;
         }
+        @Override
+        public boolean isStatic() {
+            return true;
+        }
     };
 
     public static final MagicPermanentFilterImpl SN = new MagicPermanentFilterImpl() {

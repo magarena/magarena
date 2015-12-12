@@ -2252,20 +2252,31 @@ public enum MagicRuleEventAction {
             return GainAbility.getConditions(matcher);
         }
     },
-    GainChosenCan(
-        ARG.CHOICE + " (?<ability>can('t)? .+) this turn\\."
+    GainAbilityCan(
+        ARG.PERMANENTS + " (?<ability>can('t)? .+) this turn\\."
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    event.processTargetPermanent(game,new MagicPermanentAction() {
-                        public void doAction(final MagicPermanent creature) {
-                            game.doAction(new GainAbilityAction(creature,abilityList));
+                    if (filter.isStatic()) {
+                        for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                            game.doAction(new GainAbilityAction(it, abilityList));
                         }
-                    });
+                    } else {
+                        final int pIdx = event.getPlayer().getIndex();
+                        game.doAction(new AddStaticAction(new MagicStatic(MagicLayer.Game, MagicStatic.UntilEOT) {
+                            @Override
+                            public void modGame(final MagicPermanent source, final MagicGame game) {
+                                for (final MagicPermanent it : filter.filter(game.getPlayer(pIdx))) {
+                                    it.addAbility(abilityList);
+                                }
+                            }
+                        }));
+                    }
                 }
             };
         }
@@ -2311,72 +2322,9 @@ public enum MagicRuleEventAction {
         public String getName(final Matcher matcher) {
             return capitalize(matcher.group("ability"));
         }
-    },
-    GainSelfCan(
-        "sn (?<ability>can('t)? .+) this turn\\."
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new GainAbilityAction(event.getPermanent(),abilityList));
-                }
-            };
-        }
-        @Override
-        public MagicTiming getTiming(final Matcher matcher) {
-            return GainAbility.getTiming(matcher);
-        }
-        @Override
-        public String getName(final Matcher matcher) {
-            return GainAbility.getName(matcher);
-        }
         @Override
         public MagicCondition[] getConditions(final Matcher matcher) {
-            final MagicAbility ability = MagicAbility.getAbilityList(matcher.group("ability")).getFirst();
-            return new MagicCondition[]{
-                MagicConditionFactory.NoAbility(ability)
-            };
-        }
-    },
-    GainGroupCan(
-        "(?<group>[^\\.]*) (?<ability>can('t)? .+) this turn\\."
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(matcher.group("group"));
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    if (filter.isStatic()) {
-                        final Collection<MagicPermanent> targets = filter.filter(event);
-                        for (final MagicPermanent creature : targets) {
-                            game.doAction(new GainAbilityAction(creature,abilityList));
-                        }
-                    } else {
-                        final int pIdx = event.getPlayer().getIndex();
-                        game.doAction(new AddStaticAction(new MagicStatic(MagicLayer.Game, MagicStatic.UntilEOT) {
-                            @Override
-                            public void modGame(final MagicPermanent source, final MagicGame game) {
-                                for (MagicPermanent perm : filter.filter(game.getPlayer(pIdx))) {
-                                    perm.addAbility(abilityList);
-                                }
-                            }
-                        }));
-                    }
-                }
-            };
-        }
-        @Override
-        public MagicTiming getTiming(final Matcher matcher) {
-            return GainChosenCan.getTiming(matcher);
-        }
-        @Override
-        public String getName(final Matcher matcher) {
-            return GainChosenCan.getName(matcher);
+            return GainAbility.getConditions(matcher);
         }
     },
     LoseAbility(

@@ -10,7 +10,7 @@ import java.util.List;
 public interface MagicTargetFilter<T extends MagicTarget> {
 
     default boolean isStatic() {
-        return true;
+        return false;
     }
 
     boolean acceptType(final MagicTargetType targetType);
