@@ -851,15 +851,15 @@ public enum MagicRuleEventAction {
         }
         @Override
         public MagicTiming getTiming(final Matcher matcher) {
-            return GainChosen.getTiming(matcher);
+            return GainAbility.getTiming(matcher);
         }
         @Override
         public MagicTargetPicker<?> getPicker(final Matcher matcher) {
-            return GainChosen.getPicker(matcher);
+            return GainAbility.getPicker(matcher);
         }
         @Override
         public String getName(final Matcher matcher) {
-            return GainChosen.getName(matcher);
+            return GainAbility.getName(matcher);
         }
     },
     PumpGainAlt(
@@ -872,15 +872,15 @@ public enum MagicRuleEventAction {
         }
         @Override
         public MagicTiming getTiming(final Matcher matcher) {
-            return GainChosen.getTiming(matcher);
+            return GainAbility.getTiming(matcher);
         }
         @Override
         public MagicTargetPicker<?> getPicker(final Matcher matcher) {
-            return GainChosen.getPicker(matcher);
+            return GainAbility.getPicker(matcher);
         }
         @Override
         public String getName(final Matcher matcher) {
-            return GainChosen.getName(matcher);
+            return GainAbility.getName(matcher);
         }
     },
     PumpGainCan(
@@ -893,15 +893,15 @@ public enum MagicRuleEventAction {
         }
         @Override
         public MagicTiming getTiming(final Matcher matcher) {
-            return GainChosen.getTiming(matcher);
+            return GainAbility.getTiming(matcher);
         }
         @Override
         public MagicTargetPicker<?> getPicker(final Matcher matcher) {
-            return GainChosen.getPicker(matcher);
+            return GainAbility.getPicker(matcher);
         }
         @Override
         public String getName(final Matcher matcher) {
-            return GainChosen.getName(matcher);
+            return GainAbility.getName(matcher);
         }
     },
     ModPTGain(
@@ -914,7 +914,7 @@ public enum MagicRuleEventAction {
         }
         @Override
         public String getName(final Matcher matcher) {
-            return GainChosen.getName(matcher);
+            return GainAbility.getName(matcher);
         }
     },
     ModPTGainCan(
@@ -927,7 +927,7 @@ public enum MagicRuleEventAction {
         }
         @Override
         public String getName(final Matcher matcher) {
-            return GainChosen.getName(matcher);
+            return GainAbility.getName(matcher);
         }
     },
     PutCounter(
@@ -2157,21 +2157,20 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    GainChosen(
-        ARG.CHOICE + " gain(s)? (?<ability>.+) until end of turn\\.",
+    GainAbility(
+        ARG.PERMANENTS + " gain(s)? (?<ability>.+) until end of turn\\.",
         MagicTargetHint.Positive
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    event.processTargetPermanent(game,new MagicPermanentAction() {
-                        public void doAction(final MagicPermanent creature) {
-                            game.doAction(new GainAbilityAction(creature,abilityList));
-                        }
-                    });
+                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                        game.doAction(new GainAbilityAction(it, abilityList));
+                    }
                 }
             };
         }
@@ -2216,26 +2215,41 @@ public enum MagicRuleEventAction {
         public String getName(final Matcher matcher) {
             return "+" + capitalize(matcher.group("ability"));
         }
+        @Override
+        public MagicCondition[] getConditions(final Matcher matcher) {
+            if (matcher.group("sn") != null) {
+                final MagicAbility ability = MagicAbility.getAbilityList(matcher.group("ability")).getFirst();
+                return new MagicCondition[]{
+                    MagicConditionFactory.NoAbility(ability)
+                };
+            } else {
+                return MagicActivation.NO_COND;
+            }
+        }
     },
-    GainChosenAlt(
-        "until end of turn, " + ARG.CHOICE + " gain(s)? (?<ability>.+)(\\.)?",
+    GainAbilityAlt(
+        "until end of turn, " + ARG.PERMANENTS + " gain(s)? (?<ability>.+)(\\.)?",
         MagicTargetHint.Positive
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            return GainChosen.getAction(matcher);
+            return GainAbility.getAction(matcher);
         }
         @Override
         public MagicTiming getTiming(final Matcher matcher) {
-            return GainChosen.getTiming(matcher);
+            return GainAbility.getTiming(matcher);
         }
         @Override
         public MagicTargetPicker<?> getPicker(final Matcher matcher) {
-            return GainChosen.getPicker(matcher);
+            return GainAbility.getPicker(matcher);
         }
         @Override
         public String getName(final Matcher matcher) {
-            return GainChosen.getName(matcher);
+            return GainAbility.getName(matcher);
+        }
+        @Override
+        public MagicCondition[] getConditions(final Matcher matcher) {
+            return GainAbility.getConditions(matcher);
         }
     },
     GainChosenCan(
@@ -2298,58 +2312,6 @@ public enum MagicRuleEventAction {
             return capitalize(matcher.group("ability"));
         }
     },
-    GainPermanents(
-        ARG.PERMANENTS +  " gain(s)? (?<ability>[^•]+) until end of turn\\."
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
-            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
-                        game.doAction(new GainAbilityAction(it, abilityList));
-                    }
-                }
-            };
-        }
-        @Override
-        public MagicTiming getTiming(final Matcher matcher) {
-            return GainChosen.getTiming(matcher);
-        }
-        @Override
-        public String getName(final Matcher matcher) {
-            return GainChosen.getName(matcher);
-        }
-        @Override
-        public MagicCondition[] getConditions(final Matcher matcher) {
-            if (matcher.group("sn") != null) {
-                final MagicAbility ability = MagicAbility.getAbilityList(matcher.group("ability")).getFirst();
-                return new MagicCondition[]{
-                    MagicConditionFactory.NoAbility(ability)
-                };
-            } else {
-                return MagicActivation.NO_COND;
-            }
-        }
-    },
-    GainPermanentsAlt(
-        "until end of turn, " + ARG.PERMANENTS + " gain (?<ability>.+)(\\.)?"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            return GainPermanents.getAction(matcher);
-        }
-        @Override
-        public MagicTiming getTiming(final Matcher matcher) {
-            return GainChosen.getTiming(matcher);
-        }
-        @Override
-        public String getName(final Matcher matcher) {
-            return GainChosen.getName(matcher);
-        }
-    },
     GainSelfCan(
         "sn (?<ability>can('t)? .+) this turn\\."
     ) {
@@ -2365,11 +2327,11 @@ public enum MagicRuleEventAction {
         }
         @Override
         public MagicTiming getTiming(final Matcher matcher) {
-            return GainChosen.getTiming(matcher);
+            return GainAbility.getTiming(matcher);
         }
         @Override
         public String getName(final Matcher matcher) {
-            return GainChosen.getName(matcher);
+            return GainAbility.getName(matcher);
         }
         @Override
         public MagicCondition[] getConditions(final Matcher matcher) {
@@ -2436,7 +2398,7 @@ public enum MagicRuleEventAction {
         }
         @Override
         public MagicTiming getTiming(final Matcher matcher) {
-            return GainChosen.getTiming(matcher);
+            return GainAbility.getTiming(matcher);
         }
         @Override
         public MagicTargetPicker<?> getPicker(final Matcher matcher) {
