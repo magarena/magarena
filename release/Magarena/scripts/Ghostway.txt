@@ -4,6 +4,6 @@ value=4.097
 rarity=R
 type=Instant
 cost={2}{W}
+effect=Exile each creature you control. Return those cards to the battlefield under their owner's control at the beginning of the next end step.
 timing=removal
-requires_groovy_code
 oracle=Exile each creature you control. Return those cards to the battlefield under their owner's control at the beginning of the next end step.
