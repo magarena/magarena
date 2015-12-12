@@ -4,6 +4,6 @@ value=4.500
 rarity=M
 type=Sorcery
 cost={2}{R}
+effect=Each player discards his or her hand.~Each player draws seven cards.
 timing=draw
-requires_groovy_code
 oracle=Each player discards his or her hand, then draws seven cards.

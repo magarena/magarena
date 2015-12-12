@@ -7,7 +7,7 @@ type=Creature
 subtype=Dragon,Wizard
 cost={5}{R}{R}
 pt=5/5
-ability=Flying
+ability=Flying;\
+        Whenever SN deals combat damage to a player, each player discards his or her hand.~Each player draws seven cards.
 timing=main
-requires_groovy_code
 oracle=Flying\nWhenever Dragon Mage deals combat damage to a player, each player discards his or her hand, then draws seven cards.

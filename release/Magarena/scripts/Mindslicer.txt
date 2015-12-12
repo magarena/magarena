@@ -6,6 +6,6 @@ type=Creature
 subtype=Horror
 cost={2}{B}{B}
 pt=4/3
+ability=When SN dies, each player discards his or her hand.
 timing=main
-requires_groovy_code
 oracle=When Mindslicer dies, each player discards his or her hand.

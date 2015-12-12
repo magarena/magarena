@@ -6,6 +6,6 @@ type=Creature
 subtype=Goblin,Shaman
 cost={1}{R}{R}
 pt=2/2
+ability=At the beginning of your upkeep, you may look at the top card of your library. If it shares a creature type with SN, you may reveal it. If you do, each player discards his or her hand.~Each player draws four cards.
 timing=main
-requires_groovy_code
 oracle=Kinship — At the beginning of your upkeep, you may look at the top card of your library. If it shares a creature type with Sensation Gorger, you may reveal it. If you do, each player discards his or her hand, then draws four cards.

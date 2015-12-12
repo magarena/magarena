@@ -4,6 +4,7 @@ value=3.767
 rarity=R
 type=Enchantment
 cost={2}{U}{U}
+ability=At the beginning of your end step, sacrifice a land.~Discard your hand.
 timing=enchantment
 requires_groovy_code
 oracle=Cumulative upkeep—Draw a card.\nAt the beginning of your end step, sacrifice a land and discard your hand.

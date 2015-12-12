@@ -6,6 +6,6 @@ type=Creature
 subtype=Demon
 cost={4}{B}{R}
 pt=6/4
+ability=At the beginning of each end step, each player discards his or her hand.
 timing=main
-requires_groovy_code
 oracle=At the beginning of each end step, each player discards his or her hand.

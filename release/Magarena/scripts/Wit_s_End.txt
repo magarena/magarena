@@ -4,6 +4,6 @@ value=1.906
 rarity=R
 type=Sorcery
 cost={5}{B}{B}
+effect=Target player discards his or her hand.
 timing=main
-requires_groovy_code
 oracle=Target player discards his or her hand.
