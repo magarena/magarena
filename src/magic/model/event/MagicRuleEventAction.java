@@ -482,10 +482,8 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    PreventAllCombatBy(
-        "prevent all combat damage that would be dealt by " + ARG.PERMANENTS + " this turn\\.",
-        MagicTargetHint.Negative,
-        new MagicNoCombatTargetPicker(true, true, false),
+    PreventAllCombatToBy(
+        "prevent all combat damage that would be dealt to and dealt by " + ARG.PERMANENTS + " this turn\\.",
         MagicTiming.Block,
         "Prevent"
     ) {
@@ -495,14 +493,11 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    if (matcher.group("group") != null) {
+                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
                         game.doAction(new AddTurnTriggerAction(
-                            PreventDamageTrigger.PreventCombatDamageDealtBy(filter)
+                            it,
+                            PreventDamageTrigger.PreventCombatDamageDealtToDealtBy
                         ));
-                    } else {
-                        for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
-                            game.doAction(new AddTurnTriggerAction(it, PreventDamageTrigger.PreventCombatDamageDealtBy));
-                        }
                     }
                 }
             };
@@ -543,8 +538,8 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    PreventAllCombatToBy(
-        "prevent all combat damage that would be dealt to and dealt by " + ARG.PERMANENTS + " this turn\\.",
+    PreventAllCombatBy(
+        "prevent all combat damage that would be dealt by " + ARG.PERMANENTS + " this turn\\.",
         MagicTargetHint.Negative,
         new MagicNoCombatTargetPicker(true, true, false),
         MagicTiming.Block,
@@ -556,36 +551,13 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
-                        game.doAction(new AddTurnTriggerAction(
-                            it,
-                            PreventDamageTrigger.PreventCombatDamageDealtToDealtBy
-                        ));
-                    }
-                }
-            };
-        }
-    },
-    PreventAllDamageBy(
-        "prevent all damage that would be dealt by " + ARG.PERMANENTS + " this turn\\.",
-        MagicTargetHint.Negative,
-        new MagicNoCombatTargetPicker(true, true, false),
-        MagicTiming.Pump,
-        "Prevent"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
                     if (matcher.group("group") != null) {
                         game.doAction(new AddTurnTriggerAction(
-                            PreventDamageTrigger.PreventDamageDealtBy(filter)
+                            PreventDamageTrigger.PreventCombatDamageDealtBy(filter)
                         ));
                     } else {
                         for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
-                            game.doAction(new AddTurnTriggerAction(it, PreventDamageTrigger.PreventDamageDealtBy));
+                            game.doAction(new AddTurnTriggerAction(it, PreventDamageTrigger.PreventCombatDamageDealtBy));
                         }
                     }
                 }
@@ -621,6 +593,32 @@ public enum MagicRuleEventAction {
                                     PreventDamageTrigger.PreventDamageDealtToYou((MagicPlayer)it)
                                 ));
                             }
+                        }
+                    }
+                }
+            };
+        }
+    },
+    PreventAllDamageBy(
+        "prevent all damage that would be dealt by " + ARG.PERMANENTS + " this turn\\.",
+        MagicTargetHint.Negative,
+        new MagicNoCombatTargetPicker(true, true, false),
+        MagicTiming.Pump,
+        "Prevent"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    if (matcher.group("group") != null) {
+                        game.doAction(new AddTurnTriggerAction(
+                            PreventDamageTrigger.PreventDamageDealtBy(filter)
+                        ));
+                    } else {
+                        for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                            game.doAction(new AddTurnTriggerAction(it, PreventDamageTrigger.PreventDamageDealtBy));
                         }
                     }
                 }
