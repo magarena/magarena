@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Soldier
 cost={2}{W}
 pt=3/1
-ability=Whenever SN becomes blocked, prevent all combat damage that would be dealt by it this turn.
+ability=Whenever SN becomes blocked, prevent all combat damage that would be dealt by SN this turn.
 timing=main
 oracle=Whenever Ignoble Soldier becomes blocked, prevent all combat damage that would be dealt by it this turn.
