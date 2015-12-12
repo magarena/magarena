@@ -6,7 +6,7 @@ type=Creature
 subtype=Djinn
 cost={3}{B}{B}
 pt=5/6
-ability=Trample
+ability=Trample;\
+        At the beginning of your upkeep, put a +1/+1 counter on each creature an opponent controls.
 timing=main
-requires_groovy_code
 oracle=Trample\nAt the beginning of your upkeep, put a +1/+1 counter on each creature each opponent controls.
