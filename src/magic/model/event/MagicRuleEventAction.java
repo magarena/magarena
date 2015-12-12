@@ -1617,27 +1617,7 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    MillChosen(
-        ARG.CHOICE + " put(s)? the top (?<amount>[a-z]+)?( )?card(s)? of his or her library into his or her graveyard\\.",
-        MagicTiming.Draw,
-        "Mill"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = EnglishToInt.convert(matcher.group("amount"));
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    event.processTargetPlayer(game,new MagicPlayerAction() {
-                        public void doAction(final MagicPlayer player) {
-                            game.doAction(new MillLibraryAction(player,amount));
-                        }
-                    });
-                }
-            };
-        }
-    },
-    MillPlayers(
+    Mill(
         ARG.PLAYERS + "( )?put(s)? the top (?<amount>[a-z]+)?( )?card(s)? of (your|his or her) library into (your|his or her) graveyard\\.",
         MagicTiming.Draw,
         "Mill"
@@ -1649,8 +1629,8 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    for (final MagicPlayer player : ARG.players(event, matcher, filter)) {
-                        game.doAction(new MillLibraryAction(player, amount));
+                    for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
+                        game.doAction(new MillLibraryAction(it, amount));
                     }
                 }
             };
