@@ -640,6 +640,11 @@ public class MagicEvent implements MagicCopyable {
             return false;
         }
     }
+    
+    public final List<MagicCard> listTargetCard() {
+        final MagicTarget target = getLegalTarget(player.getGame());
+        return target.isSpell() ? Collections.singletonList((MagicCard)target) : Collections.emptyList();
+    }
 
     public final boolean processTargetPlayer(final MagicGame game, final MagicPlayerAction effect) {
         final MagicTarget target = getLegalTarget(game);

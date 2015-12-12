@@ -189,4 +189,21 @@ public class ARG {
         }
     }
     
+    public static final String CARDS = "((?<choice>[^\\.]* card [^\\.]+?)|(?<group>[^\\.]* cards [^\\.]*))";
+    public static List<MagicCard> cards(final MagicEvent event, final Matcher m, final MagicTargetFilter<MagicCard> filter) {
+        if (m.group("choice") != null) {
+            return event.listTargetCard();
+        } else {
+            return filter.filter(event);
+        }
+    }
+    
+    public static MagicTargetFilter<MagicCard> cardsParse(final Matcher m) {
+        if (m.group("group") != null) {
+            return MagicTargetFilterFactory.Card(m.group("group"));
+        } else {
+            return MagicTargetFilterFactory.CARD_FROM_HAND;
+        }
+    }
+    
 }
