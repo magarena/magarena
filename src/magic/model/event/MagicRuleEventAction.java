@@ -602,29 +602,9 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    DrawChosen(
-        ARG.CHOICE + " draw(s)? (?<amount>[a-z]+) card(s)?\\.",
-        MagicTargetHint.Positive,
-        MagicTiming.Draw,
-        "Draw"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = EnglishToInt.convert(matcher.group("amount"));
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    event.processTargetPlayer(game,new MagicPlayerAction() {
-                        public void doAction(final MagicPlayer player) {
-                            game.doAction(new DrawAction(player,amount));
-                        }
-                    });
-                }
-            };
-        }
-    },
-    DrawPlayers(
+    Draw(
         ARG.PLAYERS + "( )?draw(s)? (?<amount>[a-z]+) (additional )?card(s)?( for each " + ARG.WORDRUN +")?\\.",
+        MagicTargetHint.Positive,
         MagicTiming.Draw,
         "Draw"
     ) {
@@ -638,7 +618,7 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     final int multiplier = count.getAmount(event);
                     final int total = amount * multiplier;
-                    if (multiplier>1) {
+                    if (count != MagicAmountFactory.One) {
                         game.logAppendMessage(event.getPlayer(), "(" + total + ")");
                     }
                     for (final MagicPlayer player : ARG.players(event, matcher, filter)) {
@@ -648,14 +628,14 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    DrawPlayersAlt(
+    DrawAlt(
         ARG.PLAYERS + "( )?draw(s)? (?<amount>[a-z]+)?cards equal to " + ARG.WORDRUN +"\\.",
         MagicTiming.Draw,
         "Draw"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            return DrawPlayers.getAction(matcher);
+            return Draw.getAction(matcher);
         }
     },
     DrawDiscardChosen(
