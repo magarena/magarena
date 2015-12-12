@@ -2547,7 +2547,7 @@ public enum MagicRuleEventAction {
             return e.getName();
         }
     },
-    PoisonPlayers(
+    Poison(
         ARG.PLAYERS + " get(s)? " + ARG.AMOUNT + " poison counter(s)?\\.",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
@@ -2560,8 +2560,8 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    for (final MagicPlayer player : ARG.players(event, matcher, filter)) {
-                        game.doAction(new ChangePoisonAction(player, amount));
+                    for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
+                        game.doAction(new ChangePoisonAction(it, amount));
                     }
                 }
             };
