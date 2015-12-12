@@ -34,6 +34,7 @@ public final class MagicImages {
     }
 
     // BufferedImages
+    public static final BufferedImage LOGO = loadImage("logo.png");
     public static final BufferedImage MISSING = loadImage("missing.png");
     public static final BufferedImage MISSING2 = loadImage("missing2.png");
     private static final BufferedImage MISSING_CARD = loadImage("missing_card.png");
