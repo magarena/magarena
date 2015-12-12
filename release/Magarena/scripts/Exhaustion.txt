@@ -5,6 +5,6 @@ removal=1
 rarity=U
 type=Sorcery
 cost={2}{U}
-timing=nextturn
+timing=main
 requires_groovy_code
 oracle=Creatures and lands target opponent controls don't untap during his or her next untap step.

@@ -4,6 +4,6 @@ value=4.090
 rarity=R
 type=Artifact
 cost={U}{B}
+ability={T}, Sacrifice five artifacts: Take an extra turn after this one.
 timing=artifact
-requires_groovy_code
 oracle={T}, Sacrifice five artifacts: Take an extra turn after this one.

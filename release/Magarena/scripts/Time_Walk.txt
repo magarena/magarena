@@ -4,6 +4,6 @@ value=5.000
 rarity=R
 type=Sorcery
 cost={1}{U}
-timing=nextturn
-requires_groovy_code
+effect=Take an extra turn after this one.
+timing=smain
 oracle=Take an extra turn after this one.

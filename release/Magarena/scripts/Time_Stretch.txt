@@ -4,6 +4,6 @@ value=4.257
 rarity=R
 type=Sorcery
 cost={8}{U}{U}
-timing=main
-requires_groovy_code
+effect=Target player takes two extra turns after this one.
+timing=smain
 oracle=Target player takes two extra turns after this one.

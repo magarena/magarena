@@ -4,6 +4,6 @@ value=4.278
 rarity=R
 type=Enchantment
 cost={2}{U}
+ability=At the beginning of your upkeep, if you have 5 or less life, sacrifice SN.~Take an extra turn after this one.
 timing=main
-requires_groovy_code
 oracle=At the beginning of your upkeep, if you have 5 or less life, sacrifice Second Chance and take an extra turn after this one.
