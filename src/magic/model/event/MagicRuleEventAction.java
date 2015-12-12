@@ -728,8 +728,10 @@ public enum MagicRuleEventAction {
                     for (final MagicPlayer it : players) {
                         game.doAction(new ChangeLifeAction(it, -amount1));
                     }
-                    //players is empty only if target is illegal
-                    if (players.isEmpty() == false) {
+                    //continue to the second part if 
+                    //  there is no target OR
+                    //  there is a target and it is legal
+                    if (matcher.group("choice") == null || players.isEmpty() == false) {
                         game.doAction(new ChangeLifeAction(event.getPlayer(), amount2));
                     }
                 }
