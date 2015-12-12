@@ -7,9 +7,10 @@ import magic.model.trigger.MagicTriggerType;
 
 public class LoseGameAction extends MagicAction {
 
-    public static final String LIFE_REASON = " lost the game.";
+    public static final String LIFE_REASON   = " lost the game.";
     public static final String POISON_REASON = " lost the game because of poisoning.";
-    public static final String DRAW_REASON = " lost the game because of an attempt to draw from an empty library.";
+    public static final String DRAW_REASON   = " lost the game because of an attempt to draw from an empty library.";
+    public static final String EFFECT_REASON = " lost the game because of an effect from a spell or ability.";
 
     private final String reason;
     private MagicPlayer player;

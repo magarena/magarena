@@ -2567,6 +2567,44 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    LoseGame(
+        ARG.PLAYERS + " lose(s)? the game\\.",
+        MagicTargetHint.Negative,
+        MagicTiming.Removal,
+        "Lose"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
+                        game.doAction(new LoseGameAction(it, LoseGameAction.EFFECT_REASON));
+                    }
+                }
+            };
+        }
+    },
+    WinGame(
+        ARG.PLAYERS + " win(s)? the game\\.",
+        MagicTargetHint.Positive,
+        MagicTiming.Removal,
+        "Win"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
+                        game.doAction(new LoseGameAction(it.getOpponent(), LoseGameAction.EFFECT_REASON));
+                    }
+                }
+            };
+        }
+    },
     ;
 
     private final Pattern pattern;
