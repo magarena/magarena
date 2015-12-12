@@ -465,24 +465,8 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    PreventOwner(
-        "prevent the next (?<amount>[0-9]+) damage that would be dealt to you this turn\\.",
-        MagicTiming.Pump,
-        "Prevent"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = Integer.parseInt(matcher.group("amount"));
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new PreventDamageAction(event.getPlayer(),amount));
-                }
-            };
-        }
-    },
-    PreventPermanents(
-        "prevent the next (?<amount>[0-9]+) damage that would be dealt to " + ARG.PERMANENTS + " this turn\\.",
+    PreventNextDamage(
+        "prevent the next (?<amount>[0-9]+) damage that would be dealt to " + ARG.TARGETS + " this turn\\.",
         MagicTargetHint.Positive,
         MagicPreventTargetPicker.create(),
         MagicTiming.Pump,
@@ -491,11 +475,11 @@ public enum MagicRuleEventAction {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = Integer.parseInt(matcher.group("amount"));
-            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            final MagicTargetFilter<MagicTarget> filter = ARG.targetsParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                    for (final MagicTarget it : ARG.targets(event, matcher, filter)) {
                         game.doAction(new PreventDamageAction(it, amount));
                     }
                 }
