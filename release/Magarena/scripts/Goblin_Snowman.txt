@@ -6,6 +6,7 @@ type=Creature
 subtype=Goblin
 cost={3}{R}
 pt=1/1
+ability=Whenever SN blocks, prevent all combat damage that would be dealt to and dealt by SN this turn.
 timing=main
 requires_groovy_code
 oracle=Whenever Goblin Snowman blocks, prevent all combat damage that would be dealt to and dealt by it this turn.\n{T}: Goblin Snowman deals 1 damage to target creature it's blocking.

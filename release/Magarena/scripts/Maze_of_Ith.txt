@@ -3,6 +3,6 @@ image=http://magiccards.info/scans/en/me4/246.jpg
 value=4.564
 rarity=R
 type=Land
+ability={T}: Untap target attacking creature.~Prevent all combat damage that would be dealt to and dealt by *that creature* this turn.
 timing=land
-requires_groovy_code
 oracle={T}: Untap target attacking creature. Prevent all combat damage that would be dealt to and dealt by that creature this turn.
