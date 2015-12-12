@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={2}{G}
+effect=Prevent all combat damage that would be dealt this turn.~If you have 5 or less life, tap all attacking creatures. Those creatures don't untap during their controller's next untap step.
 timing=block
-requires_groovy_code
 oracle=Prevent all combat damage that would be dealt this turn.\nFateful hour — If you have 5 or less life, tap all attacking creatures. Those creatures don't untap during their controller's next untap step.

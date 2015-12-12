@@ -4,6 +4,6 @@ value=3.716
 rarity=C
 type=Instant
 cost={1}{G}
+effect=Prevent all combat damage that would be dealt to you this turn.~Populate.
 timing=block
-requires_groovy_code
 oracle=Prevent all combat damage that would be dealt to you this turn. Populate.
