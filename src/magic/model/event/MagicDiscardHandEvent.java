@@ -9,12 +9,17 @@ import magic.model.action.DiscardCardAction;
 
 public class MagicDiscardHandEvent extends MagicEvent {
     
-    public MagicDiscardHandEvent(final MagicSource source) {
+    public MagicDiscardHandEvent(final MagicSource source, final MagicPlayer player) {
         super(
             source,
+            player,
             EVENT_ACTION,
             "PN discards his or her hand."
         );
+    }
+    
+    public MagicDiscardHandEvent(final MagicSource source) {
+        this(source, source.getController());
     }
     
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {

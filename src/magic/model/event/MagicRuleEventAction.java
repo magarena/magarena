@@ -674,16 +674,20 @@ public enum MagicRuleEventAction {
         }
     },
     DiscardHand(
-        "((Y|y)ou)?( )?discard your hand\\.",
+        ARG.PLAYERS + "( )?discard(s)? (your|his or her) hand\\.",
+        MagicTargetHint.Negative,
         MagicTiming.Draw,
         "Discard"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.addEvent(new MagicDiscardHandEvent(event.getSource()));
+                    for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
+                        game.addEvent(new MagicDiscardHandEvent(event.getSource(), it));
+                    }
                 }
             };
         }
