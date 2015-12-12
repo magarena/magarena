@@ -249,11 +249,11 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    for (final MagicCard card : ARG.cards(event, matcher, filter)) {
+                    for (final MagicCard it : ARG.cards(event, matcher, filter)) {
                         game.doAction(new ExileLinkAction(
                             event.getSource().isPermanent() ? event.getPermanent() : MagicPermanent.NONE,
-                            card,
-                            card.getLocation()
+                            it,
+                            it.getLocation()
                         ));
                     }
                 }
@@ -1086,60 +1086,69 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    RecoverChosen(
-        "return " + ARG.CARD + " to (your|its owner's) hand\\.",
+    RecoverCards(
+        "return " + ARG.CARDS + " to (your|its owner's) hand\\.",
         MagicTargetHint.Positive,
         MagicGraveyardTargetPicker.ReturnToHand,
         MagicTiming.Draw,
-        "Return",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetCard(game,new MagicCardAction() {
-                    public void doAction(final MagicCard it) {
+        "Return"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicCard> filter = ARG.cardsParse(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicCard it : ARG.cards(event, matcher, filter)) {
                         final MagicLocationType from = it.getLocation();
                         game.doAction(new ShiftCardAction(it, from, MagicLocationType.OwnersHand));
                     }
-                });
-            }
+                }
+            };
         }
-    ),
-    ReclaimChosen(
-        "put " + ARG.CARD + " on top of (your|its owner's) library\\.",
+    },
+    ReclaimCards(
+        "put " + ARG.CARDS + " on top of (your|its owner's) library\\.",
         MagicTargetHint.Positive,
         MagicGraveyardTargetPicker.ReturnToHand,
         MagicTiming.Draw,
-        "Reclaim",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetCard(game, new MagicCardAction() {
-                    public void doAction(final MagicCard it) {
+        "Reclaim"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicCard> filter = ARG.cardsParse(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicCard it : ARG.cards(event, matcher, filter)) {
                         final MagicLocationType from = it.getLocation();
                         game.doAction(new ShiftCardAction(it, from, MagicLocationType.TopOfOwnersLibrary));
                     }
-                });
-            }
+                }
+            };
         }
-    ),
-    TuckChosen(
-        "put " + ARG.CARD + " on the bottom of (your|its owner's) library\\.",
+    },
+    TuckCards(
+        "put " + ARG.CARDS + " on the bottom of (your|its owner's) library\\.",
         MagicTargetHint.Negative,
         MagicGraveyardTargetPicker.ExileOpp,
         MagicTiming.Draw,
-        "Tuck",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetCard(game, new MagicCardAction() {
-                    public void doAction(final MagicCard it) {
+        "Tuck"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicCard> filter = ARG.cardsParse(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicCard it : ARG.cards(event, matcher, filter)) {
                         final MagicLocationType from = it.getLocation();
                         game.doAction(new ShiftCardAction(it, from, MagicLocationType.BottomOfOwnersLibrary));
                     }
-                });
-            }
+                }
+            };
         }
-    ),
+    },
     Bounce(
         "return " + ARG.PERMANENTS + " to (your hand|its owner's hand|their owner's hand|their owners' hands)\\.",
         MagicTargetHint.None,
