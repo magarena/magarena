@@ -10,7 +10,6 @@ import javax.swing.JPanel;
 import magic.data.GeneralConfig;
 import magic.translate.UiString;
 import magic.ui.CardTextLanguage;
-import magic.ui.widget.DirectoryChooser;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -27,15 +26,18 @@ class OptionsPanel extends JPanel {
     OptionsPanel() {
 
         imagesFolderChooser = getImagesFolderChooser();
+        setCardTextCombo();
         setDownloadModeCombo();
 
         setLayout(new MigLayout("wrap 2, insets 0", "[right][]"));
         add(new JLabel(UiString.get("Images folder:")));
         add(imagesFolderChooser, "w 100%");
         add(new JLabel(UiString.get("Card text:")));
-        add(getCardTextCombo());
+        add(cboCardText);
         add(getBoldLabel(UiString.get("Download mode:")));
         add(cboDownloadMode);
+
+        
     }
 
     private JLabel getBoldLabel(String text) {
@@ -66,14 +68,10 @@ class OptionsPanel extends JPanel {
     }
 
     private void doTextLanguageChanged() {
-        cboCardText.setToolTipText(getCardTextLanguage().isEnglish()
-            ? ""
-            : "<html><b>Preferred Language</b><br>Downloads selected translation of card if available.</html>"
-        );
         saveSettings();
     }
 
-    private JComboBox<CardTextLanguage> getCardTextCombo() {
+    private void setCardTextCombo() {
         cboCardText.setModel(new DefaultComboBoxModel<>(CardTextLanguage.values()));
         cboCardText.setSelectedItem(CONFIG.getCardTextLanguage());
         cboCardText.addItemListener((ItemEvent ev) -> {
@@ -81,7 +79,6 @@ class OptionsPanel extends JPanel {
                 doTextLanguageChanged();
             }
         });
-        return cboCardText;
     }
 
     private void doDownloadModeChanged() {
@@ -118,6 +115,11 @@ class OptionsPanel extends JPanel {
 
     CardTextLanguage getCardTextLanguage() {
         return (CardTextLanguage) cboCardText.getSelectedItem();
+    }
+
+    void addHintSources(HintPanel hintPanel) {
+        imagesFolderChooser.addHintSources(hintPanel);
+        hintPanel.addHintSource(cboCardText, "<b>Preferred card text language</b><br>If a language other than English is selected then Magarena will try to find and download a card image for the given language. If no image is found then it will download the default English edition instead.");
     }
 
 }

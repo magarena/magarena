@@ -32,10 +32,12 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
     private final List<DownloadPanel> downloadPanels = new ArrayList<>();
     private final ErrorPanel errorPanel = new ErrorPanel();
     private final ButtonsPanel buttonsPanel;
+    private final HintPanel hintPanel = new HintPanel();
 
     DialogMainPanel() {
 
         optionsPanel = new OptionsPanel();
+        optionsPanel.addHintSources(hintPanel);
         optionsPanel.setEnabled(false);
         optionsPanel.addPropertyChangeListener(OptionsPanel.CP_OPTIONS_CHANGED, 
             (e) -> { refreshDownloadList(); }
@@ -44,12 +46,17 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
         backgroundButton = new JButton(UiString.get(_S3));
         backgroundButton.setFocusable(false);
         backgroundButton.addActionListener((a) -> { doRunInBackground(); });
+        hintPanel.addHintSource(backgroundButton, String.format("<b>%s</b><br>%s",
+            UiString.get(_S3),
+            "Closes screen but continues to download images in the background.")
+        );
 
         buttonsPanel = new ButtonsPanel();
 
         setDownloadPanels();
         setLookAndFeel();
         refreshLayout();
+        
     }
     
     private void doRunInBackground() {
@@ -72,7 +79,7 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
         setLayout(new MigLayout("flowy, gap 0, insets 2 6 6 6"));
         add(optionsPanel, "w 100%, gapbottom 6");
         add(getDownloadPanel(), "w 100%");
-        add(errorPanel, "w 100%, h 100%");
+        add(hintPanel, "w 100%, h 100%, gaptop 10");
         add(buttonsPanel, "w 100%, h 30!, pushy, aligny bottom");
     }
 
@@ -149,6 +156,7 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
                     URLUtils.openURL(URLUtils.URL_WIKI + "UIDownloadImages");
                 }
             });
+            hintPanel.addHintSource(helpButton, "<b>Wiki help page</b><br>Opens a page containing more information on this screen in your internet browser.");
 
             setLayout(new MigLayout("insets 0, alignx right, aligny bottom"));
             add(helpButton);
@@ -195,4 +203,5 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
             }
         };
     }
+
 }

@@ -1,6 +1,7 @@
 package magic.ui.screen;
 
 import javax.swing.JPanel;
+import javax.swing.ToolTipManager;
 import magic.ui.image.download.DownloadDialogPanel;
 import net.miginfocom.swing.MigLayout;
 
@@ -10,6 +11,8 @@ public class DownloadImagesScreen extends AbstractScreen {
     private final DownloadDialogPanel dialogPanel;
 
     public DownloadImagesScreen() {
+        // hint label replaces tooltips.
+        ToolTipManager.sharedInstance().setEnabled(false);
         dialogPanel = new DownloadDialogPanel();
         setContent(getContentPanel());
     }
@@ -23,7 +26,15 @@ public class DownloadImagesScreen extends AbstractScreen {
 
     @Override
     public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
-        return dialogPanel.isBusy() == false;
+        final boolean isBusy = dialogPanel.isBusy();
+        ToolTipManager.sharedInstance().setEnabled(isBusy == false);
+        return isBusy == false;
+    }
+
+    @Override
+    public void setVisible(boolean b) {
+        super.setVisible(b);
+        ToolTipManager.sharedInstance().setEnabled(b == false);
     }
 
 }
