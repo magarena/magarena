@@ -512,7 +512,7 @@ public enum MagicRuleEventAction {
         "prevent all combat damage that would be dealt to " + ARG.TARGETS + " this turn\\.",
         MagicTargetHint.Positive,
         MagicPreventTargetPicker.create(),
-        MagicTiming.Pump,
+        MagicTiming.Block,
         "Prevent"
     ) {
         @Override
@@ -547,7 +547,7 @@ public enum MagicRuleEventAction {
         "prevent all damage that would be dealt by " + ARG.PERMANENTS + " this turn\\.",
         MagicTargetHint.Negative,
         new MagicNoCombatTargetPicker(true, true, false),
-        MagicTiming.Block,
+        MagicTiming.Pump,
         "Prevent"
     ) {
         @Override
