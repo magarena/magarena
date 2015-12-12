@@ -512,12 +512,9 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
-                        game.doValidAction(it, new AddTurnTriggerAction(
-                            it,
-                            PreventDamageTrigger.PreventCombatDamageDealtBy
-                        ));
-                    }
+                    game.doAction(new AddTurnTriggerAction(
+                        PreventDamageTrigger.PreventCombatDamageDealtBy(filter)
+                    ));
                 }
             };
         }

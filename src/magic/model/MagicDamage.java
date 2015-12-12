@@ -37,6 +37,10 @@ public class MagicDamage {
     public boolean isSource(final MagicSource other) {
         return source == other;
     }
+    
+    public boolean isSourcePermanent() {
+        return source.isPermanent();
+    }
 
     public void setTarget(final MagicTarget target) {
         this.target=target;
