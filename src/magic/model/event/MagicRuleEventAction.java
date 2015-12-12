@@ -62,12 +62,10 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
-                        if (it.isValid()) {
-                            game.doAction(new AddTurnTriggerAction(
-                                it,
-                                AtEndOfCombatTrigger.Destroy
-                            ));
-                        }
+                        game.doValidAction(it, new AddTurnTriggerAction(
+                            it,
+                            AtEndOfCombatTrigger.Destroy
+                        ));
                     }
                 }
             };
@@ -517,46 +515,52 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    PreventAllCombatByChosen(
-        "prevent all combat damage that would be dealt by " + ARG.CHOICE + " this turn\\.",
+    PreventAllCombatBy(
+        "prevent all combat damage that would be dealt by " + ARG.PERMANENTS + " this turn\\.",
         MagicTargetHint.Negative,
         new MagicNoCombatTargetPicker(true, true, false),
         MagicTiming.Block,
-        "Prevent",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent creature) {
-                        game.doAction(new AddTurnTriggerAction(
-                            creature,
+        "Prevent"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                        game.doValidAction(it, new AddTurnTriggerAction(
+                            it,
                             PreventDamageTrigger.PreventCombatDamageDealtBy
                         ));
                     }
-                });
-            }
+                }
+            };
         }
-    ),
-    PreventAllDamageToChosen(
-        "prevent all damage that would be dealt to " + ARG.CHOICE + " this turn\\.",
+    },
+    PreventAllDamageTo(
+        "prevent all damage that would be dealt to " + ARG.PERMANENTS + " this turn\\.",
         MagicTargetHint.Positive,
         MagicPreventTargetPicker.create(),
         MagicTiming.Pump,
-        "Prevent",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent creature) {
-                        game.doAction(new AddTurnTriggerAction(
-                            creature,
+        "Prevent"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                        game.doValidAction(it, new AddTurnTriggerAction(
+                            it,
                             PreventDamageTrigger.PreventDamageDealtTo
                         ));
                     }
-                });
-            }
+                }
+            };
         }
-    ),
+    },
     DrawLosePlayers(
         ARG.PLAYERS + " draw(s)? (?<amount>[a-z]+) card(s)? and (you )?lose(s)? (?<amount2>[0-9]+) life\\.",
         MagicTiming.Draw,
@@ -1311,12 +1315,10 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
-                        if (it.isValid()) {
-                            game.doAction(new AddTriggerAction(
-                                it,
-                                AtEndOfCombatTrigger.Return
-                            ));
-                        }
+                        game.doValidAction(it, new AddTriggerAction(
+                            it,
+                            AtEndOfCombatTrigger.Return
+                        ));
                     }
                 }
             };
