@@ -6,7 +6,7 @@ type=Creature
 subtype=Demon
 cost={3}{B}{B}
 pt=5/4
-ability=flying
+ability=Flying;\
+        At the beginning of your upkeep, target player draws a card and loses 1 life.
 timing=main
-requires_groovy_code
 oracle=Flying\nAt the beginning of your upkeep, target player draws a card and loses 1 life.

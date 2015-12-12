@@ -6,6 +6,6 @@ type=Creature
 subtype=Antelope
 cost={1}{W}
 pt=1/1
+ability=Discard a card: Prevent all damage that would be dealt to SN this turn.
 timing=main
-requires_groovy_code
 oracle=Discard a card: Prevent all damage that would be dealt to Trained Pronghorn this turn.

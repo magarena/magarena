@@ -6,6 +6,8 @@ type=Creature
 subtype=Zombie,Soldier,Warrior
 cost={W}{B}
 pt=2/2
+ability=Whenever SN deals damage, choose one — \
+        (1) Each player loses 1 life. \
+        (2) Each player gains 1 life.
 timing=main
-requires_groovy_code
 oracle=Whenever Putrid Warrior deals damage, choose one —\n• Each player loses 1 life.\n• Each player gains 1 life.

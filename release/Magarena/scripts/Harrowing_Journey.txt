@@ -4,6 +4,6 @@ value=2.554
 rarity=U
 type=Sorcery
 cost={4}{B}
+effect=Target player draws three cards and loses 3 life.
 timing=draw
-requires_groovy_code
 oracle=Target player draws three cards and loses 3 life.
