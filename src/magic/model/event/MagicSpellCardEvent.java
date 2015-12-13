@@ -38,7 +38,7 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
         return new MagicSpellCardEvent() {
             @Override
             public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-                return sourceEvent.getEvent(cardOnStack);
+                return sourceEvent.getEvent(cardOnStack, payedCost);
             }
         };
     }
