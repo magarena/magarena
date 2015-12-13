@@ -296,21 +296,21 @@ public enum MagicRuleEventAction {
         }
     },
     DamageChosenAndController(
-        "sn deal(s)? (?<amount>[0-9]+) damage to " + ARG.CHOICE + " and (?<amount2>[0-9]+) damage to you\\.",
+        "sn deal(s)? " + ARG.AMOUNT + " damage to " + ARG.CHOICE + " and " + ARG.AMOUNT2 + " damage to you\\.",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Damage"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = Integer.parseInt(matcher.group("amount"));
-            final int amount2 = Integer.parseInt(matcher.group("amount2"));
+            final int amount1 = ARG.amount(matcher);
+            final int amount2 = ARG.amount2(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     event.processTarget(game,new MagicTargetAction() {
                         public void doAction(final MagicTarget target) {
-                            game.doAction(new DealDamageAction(event.getSource(),target,amount));
+                            game.doAction(new DealDamageAction(event.getSource(),target,amount1));
                             game.doAction(new DealDamageAction(event.getSource(),event.getPlayer(),amount2));
                         }
                     });
@@ -319,19 +319,19 @@ public enum MagicRuleEventAction {
         }
         @Override
         public MagicTargetPicker<?> getPicker(final Matcher matcher) {
-            final int amount = Integer.parseInt(matcher.group("amount"));
+            final int amount = ARG.amount(matcher);
             return new MagicDamageTargetPicker(amount);
         }
     },
     DamageChosen(
-        ARG.IT + " deal(s)? (?<amount>[0-9]+) damage to " + ARG.CHOICE + "(\\.)?",
+        ARG.IT + " deal(s)? " + ARG.AMOUNT + " damage to " + ARG.CHOICE + "(\\.)?",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Damage"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = Integer.parseInt(matcher.group("amount"));
+            final int amount = ARG.amount(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -387,13 +387,13 @@ public enum MagicRuleEventAction {
         }
     },
     DamageTarget(
-        "sn deal(s)? (?<amount>[0-9]+) damage to " + ARG.YOU + "\\.",
+        "sn deal(s)? " + ARG.AMOUNT + " damage to " + ARG.YOU + "\\.",
         MagicTiming.Removal,
         "Damage"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = Integer.parseInt(matcher.group("amount"));
+            final int amount = ARG.amount(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -403,13 +403,13 @@ public enum MagicRuleEventAction {
         }
     },
     DamageTwoGroup(
-        ARG.IT + " deal(s)? (?<amount>[0-9]+) damage to (?<group1>[^\\.]*) and (?<group2>[^\\.]*)\\.",
+        ARG.IT + " deal(s)? " + ARG.AMOUNT + " damage to (?<group1>[^\\.]*) and (?<group2>[^\\.]*)\\.",
         MagicTiming.Removal,
         "Damage"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = Integer.parseInt(matcher.group("amount"));
+            final int amount = ARG.amount(matcher);
             final MagicTargetFilter<MagicTarget> filter1 = MagicTargetFilterFactory.Target(matcher.group("group1"));
             final MagicTargetFilter<MagicTarget> filter2 = MagicTargetFilterFactory.Target(matcher.group("group2"));
             return new MagicEventAction() {
@@ -429,13 +429,13 @@ public enum MagicRuleEventAction {
         }
     },
     DamageGroup(
-        ARG.IT + " deal(s)? (?<amount>[0-9]+) damage to (?<group>[^\\.]*)\\.",
+        ARG.IT + " deal(s)? " + ARG.AMOUNT + " damage to (?<group>[^\\.]*)\\.",
         MagicTiming.Removal,
         "Damage"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = Integer.parseInt(matcher.group("amount"));
+            final int amount = ARG.amount(matcher);
             final MagicTargetFilter<MagicTarget> filter = MagicTargetFilterFactory.Target(matcher.group("group"));
             return new MagicEventAction() {
                 @Override
@@ -449,7 +449,7 @@ public enum MagicRuleEventAction {
         }
     },
     PreventNextDamage(
-        "prevent the next (?<amount>[0-9]+) damage that would be dealt to " + ARG.TARGETS + " this turn\\.",
+        "prevent the next " + ARG.AMOUNT + " damage that would be dealt to " + ARG.TARGETS + " this turn\\.",
         MagicTargetHint.Positive,
         MagicPreventTargetPicker.create(),
         MagicTiming.Pump,
@@ -457,7 +457,7 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = Integer.parseInt(matcher.group("amount"));
+            final int amount = ARG.amount(matcher);
             final MagicTargetFilter<MagicTarget> filter = ARG.targetsParse(matcher);
             return new MagicEventAction() {
                 @Override
@@ -626,20 +626,20 @@ public enum MagicRuleEventAction {
         }
     },
     DrawLosePlayers(
-        ARG.PLAYERS + " draw(s)? (?<amount>[a-z]+) card(s)? and (you )?lose(s)? (?<amount2>[0-9]+) life\\.",
+        ARG.PLAYERS + " draw(s)? " + ARG.AMOUNT + " card(s)? and (you )?lose(s)? " + ARG.AMOUNT2 + " life\\.",
         MagicTiming.Draw,
         "Draw"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = EnglishToInt.convert(matcher.group("amount"));
-            final int amount2 = Integer.parseInt(matcher.group("amount2"));
+            final int amount1 = ARG.amount(matcher);
+            final int amount2 = ARG.amount2(matcher);
             final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
-                        game.doAction(new DrawAction(it, amount));
+                        game.doAction(new DrawAction(it, amount1));
                         game.doAction(new ChangeLifeAction(it, -amount2));
                     }
                 }
@@ -667,7 +667,7 @@ public enum MagicRuleEventAction {
         }
     },
     Draw(
-        ARG.PLAYERS + "( )?draw(s)? (?<amount>[a-z]+) (additional )?card(s)?( for each " + ARG.WORDRUN +")?\\.",
+        ARG.PLAYERS + "( )?draw(s)? " + ARG.AMOUNT + " (additional )?card(s)?( for each " + ARG.WORDRUN +")?\\.",
         MagicTargetHint.Positive,
         MagicTiming.Draw,
         "Draw"
@@ -675,7 +675,7 @@ public enum MagicRuleEventAction {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
-            final int amount = EnglishToInt.convert(matcher.group("amount"));
+            final int amount = ARG.amount(matcher);
             final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return new MagicEventAction() {
                 @Override
@@ -693,7 +693,7 @@ public enum MagicRuleEventAction {
         }
     },
     DrawAlt(
-        ARG.PLAYERS + "( )?draw(s)? (?<amount>[a-z]+)?cards equal to " + ARG.WORDRUN +"\\.",
+        ARG.PLAYERS + "( )?draw(s)? " + ARG.AMOUNT + "?cards equal to " + ARG.WORDRUN +"\\.",
         MagicTiming.Draw,
         "Draw"
     ) {
@@ -703,14 +703,14 @@ public enum MagicRuleEventAction {
         }
     },
     DrawDiscard(
-        ARG.PLAYERS + "( )?draw(s)? (?<amount1>[a-z]+) card(s)?(, then|\\. if you do,) discard(s)? (?<amount2>[a-z]+) card(s)?(?<random> at random)?\\.",
+        ARG.PLAYERS + "( )?draw(s)? " +  ARG.AMOUNT + " card(s)?(, then|\\. if you do,) discard(s)? " + ARG.AMOUNT2 + " card(s)?(?<random> at random)?\\.",
         MagicTiming.Draw,
         "Draw"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount1 = EnglishToInt.convert(matcher.group("amount1"));
-            final int amount2 = EnglishToInt.convert(matcher.group("amount2"));
+            final int amount1 = ARG.amount(matcher);
+            final int amount2 = ARG.amount2(matcher);
             final boolean isRandom = matcher.group("random") != null;
             final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return new MagicEventAction() {
@@ -729,7 +729,7 @@ public enum MagicRuleEventAction {
         }
     },
     Discard(
-        ARG.PLAYERS + "( )?discard(s)? (?<amount>[a-z]+) card(s)?(?<random> at random)?( for each " + ARG.WORDRUN +")?\\.",
+        ARG.PLAYERS + "( )?discard(s)? " + ARG.AMOUNT + " card(s)?(?<random> at random)?( for each " + ARG.WORDRUN +")?\\.",
         MagicTargetHint.Negative,
         MagicTiming.Draw,
         "Discard"
@@ -737,7 +737,7 @@ public enum MagicRuleEventAction {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
-            final int amount = EnglishToInt.convert(matcher.group("amount"));
+            final int amount = ARG.amount(matcher);
             final boolean isRandom = matcher.group("random") != null;
             final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return new MagicEventAction() {
@@ -779,15 +779,15 @@ public enum MagicRuleEventAction {
         }
     },
     DrainLife(
-        ARG.PLAYERS + " lose(s)? (?<amount1>[0-9]+) life and you gain (?<amount2>[0-9]+) life\\.",
+        ARG.PLAYERS + " lose(s)? " + ARG.AMOUNT + " life and you gain " + ARG.AMOUNT2 + " life\\.",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "-Life"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount1 = Integer.parseInt(matcher.group("amount1"));
-            final int amount2 = Integer.parseInt(matcher.group("amount2"));
+            final int amount1 = ARG.amount(matcher);
+            final int amount2 = ARG.amount2(matcher);
             final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return new MagicEventAction() {
                 @Override
@@ -807,14 +807,14 @@ public enum MagicRuleEventAction {
         }
     },
     GainLife(
-        ARG.PLAYERS + "( )?gain(s)? (?<amount>[0-9]+) life( for each " + ARG.WORDRUN + ")?\\.",
+        ARG.PLAYERS + "( )?gain(s)? " + ARG.AMOUNT + " life( for each " + ARG.WORDRUN + ")?\\.",
         MagicTargetHint.Positive,
         MagicTiming.Removal,
         "+Life"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = Integer.parseInt(matcher.group("amount"));
+            final int amount = ARG.amount(matcher);
             final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
             final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return new MagicEventAction() {
@@ -833,14 +833,14 @@ public enum MagicRuleEventAction {
         }
     },
     LoseLife(
-        ARG.PLAYERS + "( )?lose(s)? (?<amount>[0-9]+) life( for each " + ARG.WORDRUN + ")?\\.",
+        ARG.PLAYERS + "( )?lose(s)? " + ARG.AMOUNT + " life( for each " + ARG.WORDRUN + ")?\\.",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "-Life"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = Integer.parseInt(matcher.group("amount"));
+            final int amount = ARG.amount(matcher);
             final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
             final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return new MagicEventAction() {
@@ -1017,11 +1017,11 @@ public enum MagicRuleEventAction {
         }
     },
     PutCounter(
-        "put (?<amount>[a-z]+) (?<type>[^ ]+) counter(s)? on " + ARG.PERMANENTS + "\\."
+        "put " + ARG.AMOUNT + " (?<type>[^ ]+) counter(s)? on " + ARG.PERMANENTS + "\\."
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = EnglishToInt.convert(matcher.group("amount"));
+            final int amount = ARG.amount(matcher);
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
             final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
             return new MagicEventAction() {
@@ -1069,7 +1069,7 @@ public enum MagicRuleEventAction {
         }
         @Override
         public String getName(final Matcher matcher) {
-            final int amount = EnglishToInt.convert(matcher.group("amount"));
+            final int amount = ARG.amount(matcher);
             return (amount>1) ? "+Counters" : "+Counter";
         }
     },
@@ -1085,12 +1085,12 @@ public enum MagicRuleEventAction {
         }
     ),
     RemoveCounter(
-        "remove (?<amount>[a-z]+) (?<type>[^ ]+) counter(s)? from " +  ARG.PERMANENTS + "\\.",
+        "remove " + ARG.AMOUNT + " (?<type>[^ ]+) counter(s)? from " +  ARG.PERMANENTS + "\\.",
         MagicTiming.Pump
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = EnglishToInt.convert(matcher.group("amount"));
+            final int amount = ARG.amount(matcher);
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
             final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
             return new MagicEventAction() {
@@ -1108,7 +1108,7 @@ public enum MagicRuleEventAction {
         }
         @Override
         public String getName(final Matcher matcher) {
-            final int amount = EnglishToInt.convert(matcher.group("amount"));
+            final int amount = ARG.amount(matcher);
             if (amount>1) {
                 final String name = "-Counters";
                 return name;
@@ -1404,14 +1404,14 @@ public enum MagicRuleEventAction {
         }
     },
     SearchMultiLibraryToHand(
-        "search your library for up to (?<amount>[a-z]+) (?<card>[^\\.]*), reveal (them|those cards), (and )?put them into your hand(.|,) (If you do, |(t|T)hen )shuffle your library\\.",
+        "search your library for up to " + ARG.AMOUNT + " (?<card>[^\\.]*), reveal (them|those cards), (and )?put them into your hand(.|,) (If you do, |(t|T)hen )shuffle your library\\.",
         MagicTiming.Draw,
         "Search"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final MagicTargetFilter<MagicCard> filter = MagicTargetFilterFactory.Card(matcher.group("card") + " from your library");
-            final int amount = EnglishToInt.convert(matcher.group("amount"));
+            final int amount = ARG.amount(matcher);
             return new MagicEventAction () {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -1491,13 +1491,13 @@ public enum MagicRuleEventAction {
         }
     },
     SearchMultiLibraryToBattlefield(
-        "search your library for up to (?<amount>[a-z]+) (?<card>[^\\.]*)(,| and) put (them|those cards) onto the battlefield( )?(?<mods>.+)?(.|,) ((T|t)hen|If you do,) shuffle your library\\.",
+        "search your library for up to " + ARG.AMOUNT + " (?<card>[^\\.]*)(,| and) put (them|those cards) onto the battlefield( )?(?<mods>.+)?(.|,) ((T|t)hen|If you do,) shuffle your library\\.",
         MagicTiming.Token,
         "Search"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = EnglishToInt.convert(matcher.group("amount"));
+            final int amount = ARG.amount(matcher);
             final MagicTargetFilter<MagicCard> filter = MagicTargetFilterFactory.Card(matcher.group("card") + " from your library");
             final List<MagicPlayMod> mods = MagicPlayMod.build(matcher.group("mods"));
             return new MagicEventAction () {
@@ -1686,14 +1686,14 @@ public enum MagicRuleEventAction {
         }
     },
     PutTokens(
-        "put(s)? (?<amount>[a-z]+) (?<name>[^\\.]*token[^\\.]*) onto the battlefield(\\. | )?(?<mods>.+?)??( )?(for each " + ARG.WORDRUN + ")?\\.",
+        "put(s)? " +  ARG.AMOUNT + " (?<name>[^\\.]*token[^\\.]*) onto the battlefield(\\. | )?(?<mods>.+?)??( )?(for each " + ARG.WORDRUN + ")?\\.",
         MagicTiming.Token,
         "Token"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
-            final int amount = EnglishToInt.convert(matcher.group("amount"));
+            final int amount = ARG.amount(matcher);
             final String tokenName = matcher.group("name").replace("tokens", "token");
             final MagicCardDefinition tokenDef = CardDefinitions.getToken(tokenName);
             final List<MagicPlayMod> mods = MagicPlayMod.build(matcher.group("mods"));
@@ -1717,13 +1717,13 @@ public enum MagicRuleEventAction {
         }
     },
     Mill(
-        ARG.PLAYERS + "( )?put(s)? the top (?<amount>[a-z]+)?( )?card(s)? of (your|his or her) library into (your|his or her) graveyard\\.",
+        ARG.PLAYERS + "( )?put(s)? the top " + ARG.AMOUNT + "?( )?card(s)? of (your|his or her) library into (your|his or her) graveyard\\.",
         MagicTiming.Draw,
         "Mill"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = EnglishToInt.convert(matcher.group("amount"));
+            final int amount = ARG.amount(matcher);
             final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return new MagicEventAction() {
                 @Override
@@ -1736,13 +1736,13 @@ public enum MagicRuleEventAction {
         }
     },
     Manifest(
-        "manifest the top (?<amount>[a-z]+)?( )?card(s)? of your library\\.",
+        "manifest the top " + ARG.AMOUNT + "?( )?card(s)? of your library\\.",
         MagicTiming.Token,
         "Manifest"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = EnglishToInt.convert(matcher.group("amount"));
+            final int amount = ARG.amount(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -2615,7 +2615,7 @@ public enum MagicRuleEventAction {
         }
     },
     ExtraTurn(
-        ARG.PLAYERS + "( )?take(s)? (?<amount>[a-z]+) extra turn(s)? after this one\\.",
+        ARG.PLAYERS + "( )?take(s)? " + ARG.AMOUNT + " extra turn(s)? after this one\\.",
         MagicTargetHint.Positive,
         MagicTiming.SecondMain,
         "+Turn"

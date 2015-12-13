@@ -28,6 +28,11 @@ public class ARG {
     public static int amount(final Matcher m) {
         return EnglishToInt.convert(m.group("amount"));
     }
+    
+    public static final String AMOUNT2 = "(?<amount2>[^ ]+)";
+    public static int amount2(final Matcher m) {
+        return EnglishToInt.convert(m.group("amount2"));
+    }
 
     public static final String COST = "(?<cost>.+)";
     public static String cost(final Matcher m) {
