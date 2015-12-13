@@ -4,7 +4,7 @@ value=2.646
 rarity=U
 type=Enchantment
 cost={2}{R}
-ability=At the beginning of your upkeep, you may put a verse counter on SN.
+ability=At the beginning of your upkeep, you may put a verse counter on SN.;\
+        {2}{R}, Sacrifice SN: SN deals X damage to target creature or player, where X is the number of verse counters on SN.
 timing=enchantment
-requires_groovy_code
 oracle=At the beginning of your upkeep, you may put a verse counter on Torch Song.\n{2}{R}, Sacrifice Torch Song: Torch Song deals X damage to target creature or player, where X is the number of verse counters on Torch Song.

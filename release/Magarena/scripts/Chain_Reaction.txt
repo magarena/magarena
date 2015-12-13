@@ -6,6 +6,6 @@ rarity=R
 type=Sorcery
 cost={2}{R}{R}
 ability=Cast SN with AI only if an opponent controls a creature.
+effect=SN deals X damage to each creature, where X is the number of creatures on the battlefield.
 timing=removal
-requires_groovy_code
 oracle=Chain Reaction deals X damage to each creature, where X is the number of creatures on the battlefield.

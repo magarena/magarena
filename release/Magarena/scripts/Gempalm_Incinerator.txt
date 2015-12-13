@@ -6,7 +6,7 @@ type=Creature
 subtype=Goblin
 cost={2}{R}
 pt=2/1
-ability=Cycling {1}{R}
+ability=Cycling {1}{R};\
+        When you cycle SN, you may have SN deal X damage to target creature, where X is the number of Goblins on the battlefield.
 timing=main
-requires_groovy_code
 oracle=Cycling {1}{R}\nWhen you cycle Gempalm Incinerator, you may have it deal X damage to target creature, where X is the number of Goblins on the battlefield.

@@ -6,6 +6,6 @@ type=Creature
 subtype=Merfolk,Archer
 cost={2}{W}
 pt=2/2
+ability={W}, {T}: SN deals X damage to target attacking or blocking creature, where X is the number of Merfolk you control.
 timing=main
-requires_groovy_code
 oracle={W}, {T}: Harpoon Sniper deals X damage to target attacking or blocking creature, where X is the number of Merfolk you control.
