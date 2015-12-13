@@ -4,6 +4,8 @@ value=3.014
 rarity=U
 type=Sorcery
 cost={X}{G/P}
+ability=alt cost {X}, Pay 2 life named Pay 2 life.;\
+        Cast SN with AI only if an opponent controls a creature with flying.
 effect=SN deals X damage to each creature with flying.
 timing=main
 oracle=Corrosive Gale deals X damage to each creature with flying.
