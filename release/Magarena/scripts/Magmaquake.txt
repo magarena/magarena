@@ -4,6 +4,7 @@ value=2.500
 rarity=R
 type=Instant
 cost={X}{R}{R}
+ability=Cast SN with AI only if an opponent controls a creature without flying or a planeswalker.
 effect=SN deals X damage to each creature without flying and each planeswalker.
 timing=removal
 oracle=Magmaquake deals X damage to each creature without flying and each planeswalker.
