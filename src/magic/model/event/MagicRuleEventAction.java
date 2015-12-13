@@ -1921,14 +1921,19 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    ShuffleSelfPerm(
+    ShuffleSelf(
         "shuffle sn into its owner's library\\.",
         MagicTiming.Removal,
         "Shuffle",
         new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new RemoveFromPlayAction(event.getPermanent(),MagicLocationType.OwnersLibrary));
+                final MagicSource source = event.getSource();
+                if (source.isPermanent()) {
+                    game.doAction(new RemoveFromPlayAction(event.getPermanent(),MagicLocationType.OwnersLibrary));
+                } else {
+                    game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(),MagicLocationType.OwnersLibrary));
+                }
             }
         }
     ),
