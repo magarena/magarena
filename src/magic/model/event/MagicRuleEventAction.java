@@ -370,12 +370,13 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = ARG.amount(matcher);
+            final MagicAmount count = ARG.amountObj(matcher);
             final MagicTargetFilter<MagicTarget> filter1 = ARG.targetsParse(matcher);
             final MagicTargetFilter<MagicTarget> filter2 = ARG.targets2Parse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final int amount = count.getAmount(event);
                     final MagicSource source = ARG.itSource(event, matcher);
                     for (final MagicTarget target : ARG.targets(event, matcher, filter1)) {
                         game.doAction(new DealDamageAction(source,target,amount));
@@ -398,11 +399,12 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = ARG.amount(matcher);
+            final MagicAmount count = ARG.amountObj(matcher);
             final MagicTargetFilter<MagicTarget> filter = ARG.targetsParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final int amount = count.getAmount(event);
                     for (final MagicTarget target : ARG.targets(event, matcher, filter)) {
                         game.doAction(new DealDamageAction(ARG.itSource(event, matcher),target,amount));
                     }
@@ -411,8 +413,12 @@ public enum MagicRuleEventAction {
         }
         @Override
         public MagicTargetPicker<?> getPicker(final Matcher matcher) {
-            final int amount = ARG.amount(matcher);
-            return new MagicDamageTargetPicker(amount);
+            if (getChoice(matcher).isValid()) {
+                final int amount = ARG.amount(matcher);
+                return new MagicDamageTargetPicker(amount);
+            } else {
+                return MagicDefaultTargetPicker.create();
+            }
         }
     },
     PreventNextDamage(

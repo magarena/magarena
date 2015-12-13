@@ -2,6 +2,7 @@ package magic.model;
 
 import magic.model.MagicSource;
 import magic.model.MagicPlayer;
+import magic.model.MagicAmountParser;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
@@ -27,6 +28,9 @@ public class ARG {
     public static final String AMOUNT = "(?<amount>[^ ]+)";
     public static int amount(final Matcher m) {
         return EnglishToInt.convert(m.group("amount"));
+    }
+    public static MagicAmount amountObj(final Matcher m) {
+        return MagicAmountParser.build(m.group("amount"));
     }
     
     public static final String AMOUNT2 = "(?<amount2>[^ ]+)";
