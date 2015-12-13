@@ -151,7 +151,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
        
             @Override
             public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
-                return sourceEvent.getEvent(source);
+                return sourceEvent.getEvent(source, payedCost);
             }
         };
     }

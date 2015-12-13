@@ -99,7 +99,7 @@ public abstract class MagicCardAbilityActivation extends MagicHandCastActivation
        
             @Override
             public MagicEvent getCardEvent(final MagicCard source, final MagicPayedCost payedCost) {
-                return sourceEvent.getEvent(source);
+                return sourceEvent.getEvent(source, payedCost);
             }
             
             @Override
