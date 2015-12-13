@@ -332,6 +332,17 @@ public enum MagicRuleEventAction {
             return DamageEqual.getAction(matcher);
         }
     },
+    DamageEqualX(
+        ARG.IT + " deal(s)? X damage to " + ARG.TARGETS + ", where X is " + ARG.WORDRUN + "\\.",
+        MagicTargetHint.Negative,
+        MagicTiming.Removal,
+        "Damage"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return DamageEqual.getAction(matcher);
+        }
+    },
     DamageTwoGroupAlt(
         ARG.IT + " deal(s)? " + ARG.AMOUNT + " damage to " + ARG.TARGETS + " and " + ARG.AMOUNT2 + " damage to " + ARG.TARGETS2 + "\\.",
         MagicTargetHint.Negative,
