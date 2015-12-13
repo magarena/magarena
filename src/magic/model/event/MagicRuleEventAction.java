@@ -658,15 +658,15 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
-            final int amount = ARG.amount(matcher);
+            final MagicAmount eachCount = MagicAmountParser.build(ARG.wordrun(matcher));
+            final MagicAmount cardCount = ARG.amountObj(matcher);
             final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final int multiplier = count.getAmount(event);
-                    final int total = amount * multiplier;
-                    if (count != MagicAmountFactory.One) {
+                    final int multiplier = eachCount.getAmount(event);
+                    final int total = cardCount.getAmount(event) * multiplier;
+                    if (eachCount != MagicAmountFactory.One) {
                         game.logAppendMessage(event.getPlayer(), "(" + total + ")");
                     }
                     for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
@@ -720,16 +720,16 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
-            final int amount = ARG.amount(matcher);
+            final MagicAmount eachCount = MagicAmountParser.build(ARG.wordrun(matcher));
+            final MagicAmount cardCount = ARG.amountObj(matcher);
             final boolean isRandom = matcher.group("random") != null;
             final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final int multiplier = count.getAmount(event);
-                    final int total = amount * multiplier;
-                    if (count != MagicAmountFactory.One) {
+                    final int multiplier = eachCount.getAmount(event);
+                    final int total = cardCount.getAmount(event) * multiplier;
+                    if (eachCount != MagicAmountFactory.One) {
                         game.logAppendMessage(event.getPlayer(), "(" + total + ")");
                     }
                     for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
@@ -798,15 +798,15 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = ARG.amount(matcher);
-            final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
+            final MagicAmount lifeCount = ARG.amountObj(matcher);
+            final MagicAmount eachCount = MagicAmountParser.build(ARG.wordrun(matcher));
             final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final int multiplier = count.getAmount(event);
-                    final int total = amount * multiplier;
-                    if (count != MagicAmountFactory.One) {
+                    final int multiplier = eachCount.getAmount(event);
+                    final int total = lifeCount.getAmount(event) * multiplier;
+                    if (eachCount != MagicAmountFactory.One) {
                         game.logAppendMessage(event.getPlayer(), "(" + total + ")");
                     }
                     for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
@@ -1676,17 +1676,17 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
-            final int amount = ARG.amount(matcher);
+            final MagicAmount eachCount = MagicAmountParser.build(ARG.wordrun(matcher));
+            final MagicAmount tokenCount = ARG.amountObj(matcher);
             final String tokenName = matcher.group("name").replace("tokens", "token");
             final MagicCardDefinition tokenDef = CardDefinitions.getToken(tokenName);
             final List<MagicPlayMod> mods = MagicPlayMod.build(matcher.group("mods"));
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final int multiplier = count.getAmount(event);
-                    final int total = amount * multiplier;
-                    if (count != MagicAmountFactory.One) {
+                    final int multiplier = eachCount.getAmount(event);
+                    final int total = tokenCount.getAmount(event) * multiplier;
+                    if (eachCount != MagicAmountFactory.One) {
                         game.logAppendMessage(event.getPlayer(), "(" + total + ")");
                     }
                     for (int i = 0; i < total; i++) {
@@ -1707,11 +1707,12 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = ARG.amount(matcher);
+            final MagicAmount count = ARG.amountObj(matcher);
             final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final int amount = count.getAmount(event);
                     for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
                         game.doAction(new MillLibraryAction(it, amount));
                     }
