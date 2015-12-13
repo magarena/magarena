@@ -4,6 +4,6 @@ value=2.457
 rarity=U
 type=Sorcery
 cost={X}{G}
+effect=Target player gains X life.
 timing=main
-requires_groovy_code
 oracle=Target player gains X life.

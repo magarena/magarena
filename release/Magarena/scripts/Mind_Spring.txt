@@ -5,6 +5,6 @@ value=3.719
 rarity=R
 type=Sorcery
 cost={X}{U}{U}
+effect=Draw X cards.
 timing=draw
-requires_groovy_code
 oracle=Draw X cards.

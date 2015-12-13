@@ -5,8 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={X}{B}
-ability=Enchanted creature gets +1/+0 for each scream counter on SN.
+ability=SN enters the battlefield with X scream counters on it.;\
+        Enchanted creature gets +1/+0 for each scream counter on SN.
 timing=aura
 enchant=pump,pos creature
-requires_groovy_code
 oracle=Enchant creature\nEndless Scream enters the battlefield with X scream counters on it.\nEnchanted creature gets +1/+0 for each scream counter on Endless Scream.

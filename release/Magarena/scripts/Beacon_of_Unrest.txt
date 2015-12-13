@@ -4,6 +4,6 @@ value=4.325
 rarity=R
 type=Sorcery
 cost={3}{B}{B}
+effect=Put target artifact or creature card from a graveyard onto the battlefield under your control.~Shuffle SN into its owner's library.
 timing=main
-requires_groovy_code
 oracle=Put target artifact or creature card from a graveyard onto the battlefield under your control. Shuffle Beacon of Unrest into its owner's library.

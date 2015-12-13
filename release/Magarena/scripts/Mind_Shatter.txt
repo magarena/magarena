@@ -5,6 +5,6 @@ value=3.731
 rarity=R
 type=Sorcery
 cost={X}{B}{B}
+effect=Target player discards X cards at random.
 timing=main
-requires_groovy_code
 oracle=Target player discards X cards at random.

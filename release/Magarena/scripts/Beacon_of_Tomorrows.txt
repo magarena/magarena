@@ -4,6 +4,6 @@ value=4.134
 rarity=R
 type=Sorcery
 cost={6}{U}{U}
+effect=Target player takes an extra turn after this one.~Shuffle SN into its owner's library.
 timing=main
-requires_groovy_code
 oracle=Target player takes an extra turn after this one. Shuffle Beacon of Tomorrows into its owner's library.

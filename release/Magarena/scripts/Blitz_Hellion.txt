@@ -6,7 +6,7 @@ type=Creature
 subtype=Hellion
 cost={3}{R}{G}
 pt=7/7
-ability=trample;haste
+ability=Trample, haste;\
+        At the beginning of the end step, shuffle SN into its owner's library.
 timing=fmain
-requires_groovy_code
 oracle=Trample, haste\nAt the beginning of the end step, Blitz Hellion's owner shuffles it into his or her library.

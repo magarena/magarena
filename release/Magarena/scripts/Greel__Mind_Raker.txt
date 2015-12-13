@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Horror,Spellshaper
 cost={3}{B}{B}
 pt=3/3
+ability={X}{B}, {T}, Discard two cards: Target player discards X cards at random.
 timing=main
-requires_groovy_code
 oracle={X}{B}, {T}, Discard two cards: Target player discards X cards at random.

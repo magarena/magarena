@@ -4,6 +4,6 @@ value=4.615
 rarity=R
 type=Sorcery
 cost={X}{B}
+effect=Target player discards X cards at random.
 timing=main
-requires_groovy_code=Mind Shatter
 oracle=Target player discards X cards at random.

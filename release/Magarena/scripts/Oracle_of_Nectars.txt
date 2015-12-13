@@ -6,6 +6,6 @@ type=Creature
 subtype=Elf,Cleric
 cost={2}{G/W}
 pt=2/2
-timing=smain
-requires_groovy_code
+ability={X}, {T}: You gain X life.
+timing=main
 oracle={X}, {T}: You gain X life.

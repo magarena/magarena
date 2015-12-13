@@ -4,6 +4,6 @@ value=3.831
 rarity=R
 type=Artifact
 cost={3}
+ability={X}, {T}: Target player puts the top X cards of his or her library into his or her graveyard.
 timing=artifact
-requires_groovy_code
 oracle={X}, {T}: Target player puts the top X cards of his or her library into his or her graveyard.

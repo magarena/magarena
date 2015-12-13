@@ -4,7 +4,7 @@ value=3.950
 rarity=M
 type=Sorcery
 cost={X}{X}{W}{W}{W}
-timing=main
+effect=Put X 4/4 white Angel creature tokens with flying onto the battlefield.
 ability=miracle {X}{W}{W}
-requires_groovy_code
+timing=main
 oracle=Put X 4/4 white Angel creature tokens with flying onto the battlefield.\nMiracle {X}{W}{W}
