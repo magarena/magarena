@@ -1086,13 +1086,13 @@ public enum MagicRuleEventAction {
         }
     },
     Bolster(
-        "bolster (?<n>[0-9]+)\\.",
+        "bolster " + ARG.AMOUNT + "\\.",
         MagicTiming.Pump,
         "Bolster"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = Integer.parseInt(matcher.group("n"));
+            final int amount = ARG.amount(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -2045,13 +2045,13 @@ public enum MagicRuleEventAction {
         }
     ),
     Monstrosity(
-        "monstrosity (?<n>[0-9+]+)\\.",
+        "monstrosity " + ARG.AMOUNT + "\\.",
         MagicTiming.Pump,
         "Monstrous"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = Integer.parseInt( matcher.group("n"));
+            final int amount = ARG.amount(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
