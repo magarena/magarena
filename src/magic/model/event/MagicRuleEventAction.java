@@ -2730,7 +2730,6 @@ public enum MagicRuleEventAction {
     public static MagicRuleEventAction build(final String rule) {
         for (final MagicRuleEventAction ruleAction : MagicRuleEventAction.values()) {
             if (ruleAction.matches(rule)) {
-                System.out.println(rule + "--" + ruleAction);
                 return ruleAction;
             }
         }
