@@ -295,8 +295,8 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    DamageChosenEqual(
-        ARG.IT + " deal(s)? damage equal to " + ARG.WORDRUN + " to " + ARG.CHOICE + "(\\.)?",
+    DamageEqual(
+        ARG.IT + " deal(s)? damage equal to " + ARG.WORDRUN + " to " + ARG.TARGETS + "(\\.)?",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Damage"
@@ -304,33 +304,32 @@ public enum MagicRuleEventAction {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
+            final MagicTargetFilter<MagicTarget> filter = ARG.targetsParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    event.processTarget(game,new MagicTargetAction() {
-                        public void doAction(final MagicTarget target) {
-                            final int amount = count.getAmount(event);
-                            game.logAppendMessage(event.getPlayer(),"("+amount+")");
-                            game.doAction(new DealDamageAction(
-                                ARG.itSource(event, matcher),
-                                target,
-                                amount
-                            ));
-                        }
-                    });
+                    final int amount = count.getAmount(event);
+                    game.logAppendMessage(event.getPlayer(),"("+amount+")");
+                    for (final MagicTarget target : ARG.targets(event, matcher, filter)) {
+                        game.doAction(new DealDamageAction(
+                            ARG.itSource(event, matcher),
+                            target,
+                            amount
+                        ));
+                    }
                 }
             };
         }
     },
-    DamageChosenEqualAlt(
-        ARG.IT + " deal(s)? damage to " + ARG.CHOICE + " equal to " + ARG.WORDRUN + "(\\.)?",
+    DamageEqualAlt(
+        ARG.IT + " deal(s)? damage to " + ARG.TARGETS + " equal to " + ARG.WORDRUN + "(\\.)?",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Damage"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            return DamageChosenEqual.getAction(matcher);
+            return DamageEqual.getAction(matcher);
         }
     },
     DamageTwoGroupAlt(
