@@ -4,6 +4,6 @@ value=3.250
 rarity=U
 type=Instant
 cost={X}{G}
+effect=SN deals X damage to each creature with flying.
 timing=removal
-requires_groovy_code
 oracle=Windstorm deals X damage to each creature with flying.

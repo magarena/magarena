@@ -4,6 +4,6 @@ value=3.924
 rarity=R
 type=Instant
 cost={X}{G}{G}
+effect=SN deals X damage to each creature with flying and each player.
 timing=removal
-requires_groovy_code=Hurricane
 oracle=Squall Line deals X damage to each creature with flying and each player.

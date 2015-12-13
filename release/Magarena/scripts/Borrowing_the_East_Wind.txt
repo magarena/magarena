@@ -4,6 +4,6 @@ value=1.463
 rarity=R
 type=Sorcery
 cost={X}{G}{G}
+effect=SN deals X damage to each creature with horsemanship and each player.
 timing=main
-requires_groovy_code
 oracle=Borrowing the East Wind deals X damage to each creature with horsemanship and each player.
