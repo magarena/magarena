@@ -4,6 +4,7 @@ import magic.model.ARG;
 import magic.model.MagicCounterType;
 import magic.model.MagicAbility;
 import magic.model.target.MagicTargetFilterFactory;
+import magic.data.EnglishToInt;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -57,9 +58,9 @@ public enum MagicAmountParser {
             return MagicAmountFactory.XCost;
         }
     },
-    Number("[0-9]+") {
+    Number("[^ ]+") {
         public MagicAmount toAmount(final Matcher arg) {
-            return MagicAmountFactory.Constant(Integer.parseInt(arg.group()));
+            return MagicAmountFactory.Constant(EnglishToInt.convert(arg.group()));
         }
     },
     FromFilter(ARG.ANY) {
