@@ -167,7 +167,7 @@ public class MagicTargetFilterFactory {
     public static final MagicStackFilterImpl RED_OR_GREEN_SPELL = MagicTargetFilterFactory.spellOr(MagicColor.Red, MagicColor.Green);
 
     public static final MagicStackFilterImpl BLUE_OR_BLACK_SPELL = MagicTargetFilterFactory.spellOr(MagicColor.Blue, MagicColor.Black);
-    
+
     public static final MagicStackFilterImpl GREEN_OR_WHITE_SPELL = MagicTargetFilterFactory.spellOr(MagicColor.Green, MagicColor.White);
 
     public static final MagicStackFilterImpl NONBLUE_SPELL=new MagicStackFilterImpl() {
@@ -175,7 +175,7 @@ public class MagicTargetFilterFactory {
             return itemOnStack.isSpell() && !itemOnStack.hasColor(MagicColor.Blue);
         }
     };
-    
+
     public static final MagicStackFilterImpl NONBLACK_SPELL=new MagicStackFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell() && !itemOnStack.hasColor(MagicColor.Black);
@@ -260,7 +260,7 @@ public class MagicTargetFilterFactory {
             return itemOnStack.isSpell(MagicType.Creature) && itemOnStack.getConvertedCost() >= 6;
         }
     };
-    
+
     public static final MagicStackFilterImpl CREATURE_SPELL_WITH_INFECT=new MagicStackFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell(MagicType.Creature) && itemOnStack.hasAbility(MagicAbility.Infect);
@@ -353,7 +353,7 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl WHITE_OR_BLUE_PERMANENT_AN_OPPONENT_CONTROLS = MagicTargetFilterFactory.permanentOr(MagicColor.White, MagicColor.Blue, Control.Opp);
 
     public static final MagicPermanentFilterImpl WHITE_OR_BLUE_PERMANENT_YOU_CONTROL = MagicTargetFilterFactory.permanentOr(MagicColor.White, MagicColor.Blue, Control.You);
-    
+
     public static final MagicPermanentFilterImpl GREEN_OR_WHITE_PERMANENT_YOU_CONTROL = MagicTargetFilterFactory.permanentOr(MagicColor.Green, MagicColor.White, Control.You);
 
     public static final MagicPermanentFilterImpl WHITE_OR_BLUE_PERMANENT = MagicTargetFilterFactory.permanentOr(MagicColor.White, MagicColor.Blue, Control.Any);
@@ -1276,6 +1276,12 @@ public class MagicTargetFilterFactory {
             return target.isCreature() &&
                    target.hasAbility(MagicAbility.Flying) == false &&
                    target.hasAbility(MagicAbility.Islandwalk) == false;
+        }
+    };
+
+    public static final MagicPermanentFilterImpl CREATURE_WITHOUT_FLYING_OR_PLANESWALKER = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            return (target.isCreature() &&  target.hasAbility(MagicAbility.Flying) == false) | target.isPlaneswalker();
         }
     };
 
@@ -2565,6 +2571,7 @@ public class MagicTargetFilterFactory {
         single.put("creature defending player controls", CREATURE_DEFENDING_PLAYER_CONTROLS);
         single.put("creature without flying defending player controls", CREATURE_WITHOUT_FLYING_DEFENDING_PLAYER_CONTROLS);
         single.put("creature without flying or islandwalk", CREATURE_WITHOUT_FLYING_OR_ISLANDWALK);
+        single.put("creature without flying or a planeswalker", CREATURE_WITHOUT_FLYING_OR_PLANESWALKER);
         single.put("creature token", CREATURE_TOKEN);
         single.put("serf token", SERF_TOKEN);
         single.put("nonsnow creature", NONSNOW_CREATURE);
