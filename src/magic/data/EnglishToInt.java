@@ -6,6 +6,11 @@ public class EnglishToInt {
         if (num == null) {
             return 1;
         }
+        try {
+            return Integer.parseInt(num);
+        } catch (final NumberFormatException nfe) {
+            //do nothing
+        }
         switch (num) {
             case "no": return 0;
             case "a": return 1;
@@ -27,7 +32,6 @@ public class EnglishToInt {
             case "fifteen" : return 15;
             case "twenty" : return 20;
             case "ninety-nine": return 99;
-            case "100": return 100;
             default: throw new RuntimeException("unknown count \"" + num + "\"");
         }
     }
