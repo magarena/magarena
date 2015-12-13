@@ -62,6 +62,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
     private int preventDamage;
     private int extraTurns;
     private int drawnCards;
+    private int startingHandSize;
     private int maxHandSize;
     private int spellsCast;
     private int spellsCastLastTurn;
@@ -300,6 +301,10 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
         return hand.size();
     }
 
+    public int getStartingHandSize() {
+        return startingHandSize;
+    }
+
     public int getNumExcessCards() {
         return Math.max(0, getHandSize() - maxHandSize);
     }
@@ -408,6 +413,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
     }
 
     void createHandAndLibrary(final int handSize) {
+        startingHandSize = handSize;
         for (final MagicCardDefinition cardDefinition : playerDefinition.getDeck()) {
             final long id = currGame.getUniqueId();
             library.add(new MagicCard(cardDefinition,this,id));
