@@ -295,59 +295,6 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    DamageChosenAndController(
-        "sn deal(s)? " + ARG.AMOUNT + " damage to " + ARG.CHOICE + " and " + ARG.AMOUNT2 + " damage to you\\.",
-        MagicTargetHint.Negative,
-        MagicTiming.Removal,
-        "Damage"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final int amount1 = ARG.amount(matcher);
-            final int amount2 = ARG.amount2(matcher);
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    event.processTarget(game,new MagicTargetAction() {
-                        public void doAction(final MagicTarget target) {
-                            game.doAction(new DealDamageAction(event.getSource(),target,amount1));
-                            game.doAction(new DealDamageAction(event.getSource(),event.getPlayer(),amount2));
-                        }
-                    });
-                }
-            };
-        }
-        @Override
-        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
-            final int amount = ARG.amount(matcher);
-            return new MagicDamageTargetPicker(amount);
-        }
-    },
-    DamageChosen(
-        ARG.IT + " deal(s)? " + ARG.AMOUNT + " damage to " + ARG.CHOICE + "(\\.)?",
-        MagicTargetHint.Negative,
-        MagicTiming.Removal,
-        "Damage"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = ARG.amount(matcher);
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    event.processTarget(game,new MagicTargetAction() {
-                        public void doAction(final MagicTarget target) {
-                            game.doAction(new DealDamageAction(ARG.itSource(event, matcher),target,amount));
-                        }
-                    });
-                }
-            };
-        }
-        @Override
-        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
-            return DamageChosenAndController.getPicker(matcher);
-        }
-    },
     DamageChosenEqual(
         ARG.IT + " deal(s)? damage equal to " + ARG.WORDRUN + " to " + ARG.CHOICE + "(\\.)?",
         MagicTargetHint.Negative,
@@ -386,66 +333,87 @@ public enum MagicRuleEventAction {
             return DamageChosenEqual.getAction(matcher);
         }
     },
-    DamageTarget(
-        "sn deal(s)? " + ARG.AMOUNT + " damage to " + ARG.YOU + "\\.",
+    DamageTwoGroupAlt(
+        ARG.IT + " deal(s)? " + ARG.AMOUNT + " damage to " + ARG.TARGETS + " and " + ARG.AMOUNT2 + " damage to " + ARG.TARGETS2 + "\\.",
+        MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Damage"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = ARG.amount(matcher);
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new DealDamageAction(event.getSource(),ARG.youTarget(event, matcher),amount));
-                }
-            };
-        }
-    },
-    DamageTwoGroup(
-        ARG.IT + " deal(s)? " + ARG.AMOUNT + " damage to (?<group1>[^\\.]*) and (?<group2>[^\\.]*)\\.",
-        MagicTiming.Removal,
-        "Damage"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = ARG.amount(matcher);
-            final MagicTargetFilter<MagicTarget> filter1 = MagicTargetFilterFactory.Target(matcher.group("group1"));
-            final MagicTargetFilter<MagicTarget> filter2 = MagicTargetFilterFactory.Target(matcher.group("group2"));
+            final int amount1 = ARG.amount(matcher);
+            final int amount2 = ARG.amount2(matcher);
+            final MagicTargetFilter<MagicTarget> filter1 = ARG.targetsParse(matcher);
+            final MagicTargetFilter<MagicTarget> filter2 = ARG.targets2Parse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     final MagicSource source = ARG.itSource(event, matcher);
-                    final Collection<MagicTarget> targets1 = filter1.filter(event);
-                    for (final MagicTarget target : targets1) {
-                        game.doAction(new DealDamageAction(source,target,amount));
+                    for (final MagicTarget target : ARG.targets(event, matcher, filter1)) {
+                        game.doAction(new DealDamageAction(source,target,amount1));
                     }
-                    final Collection<MagicTarget> targets2 = filter2.filter(event);
-                    for (final MagicTarget target : targets2) {
-                        game.doAction(new DealDamageAction(source,target,amount));
+                    for (final MagicTarget target : ARG.targets2(event, matcher, filter2)) {
+                        game.doAction(new DealDamageAction(source,target,amount2));
                     }
                 }
             };
         }
+        @Override
+        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+            return DamageGroup.getPicker(matcher);
+        }
     },
-    DamageGroup(
-        ARG.IT + " deal(s)? " + ARG.AMOUNT + " damage to (?<group>[^\\.]*)\\.",
+    DamageTwoGroup(
+        ARG.IT + " deal(s)? " + ARG.AMOUNT + " damage to " + ARG.TARGETS + " and " + ARG.TARGETS2 + "(\\.)?",
+        MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Damage"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = ARG.amount(matcher);
-            final MagicTargetFilter<MagicTarget> filter = MagicTargetFilterFactory.Target(matcher.group("group"));
+            final MagicTargetFilter<MagicTarget> filter1 = ARG.targetsParse(matcher);
+            final MagicTargetFilter<MagicTarget> filter2 = ARG.targets2Parse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final Collection<MagicTarget> targets = filter.filter(event);
-                    for (final MagicTarget target : targets) {
+                    final MagicSource source = ARG.itSource(event, matcher);
+                    for (final MagicTarget target : ARG.targets(event, matcher, filter1)) {
+                        game.doAction(new DealDamageAction(source,target,amount));
+                    }
+                    for (final MagicTarget target : ARG.targets2(event, matcher, filter2)) {
+                        game.doAction(new DealDamageAction(source,target,amount));
+                    }
+                }
+            };
+        }
+        @Override
+        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+            return DamageGroup.getPicker(matcher);
+        }
+    },
+    DamageGroup(
+        ARG.IT + " deal(s)? " + ARG.AMOUNT + " damage to " + ARG.TARGETS + "(\\.)?",
+        MagicTiming.Removal,
+        "Damage"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final int amount = ARG.amount(matcher);
+            final MagicTargetFilter<MagicTarget> filter = ARG.targetsParse(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicTarget target : ARG.targets(event, matcher, filter)) {
                         game.doAction(new DealDamageAction(ARG.itSource(event, matcher),target,amount));
                     }
                 }
             };
+        }
+        @Override
+        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+            final int amount = ARG.amount(matcher);
+            return new MagicDamageTargetPicker(amount);
         }
     },
     PreventNextDamage(
@@ -516,7 +484,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    if (matcher.group("group") != null) {
+                    if (matcher.group("group1") != null) {
                         game.doAction(new AddTurnTriggerAction(
                             PreventDamageTrigger.PreventCombatDamageDealtTo(filter)
                         ));
@@ -577,7 +545,7 @@ public enum MagicRuleEventAction {
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    if (matcher.group("group") != null) {
+                    if (matcher.group("group1") != null) {
                         game.doAction(new AddTurnTriggerAction(
                             PreventDamageTrigger.PreventDamageDealtTo(filter)
                         ));
@@ -2757,6 +2725,7 @@ public enum MagicRuleEventAction {
     public static MagicRuleEventAction build(final String rule) {
         for (final MagicRuleEventAction ruleAction : MagicRuleEventAction.values()) {
             if (ruleAction.matches(rule)) {
+                System.out.println(rule + "--" + ruleAction);
                 return ruleAction;
             }
         }
