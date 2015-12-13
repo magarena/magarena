@@ -52,6 +52,16 @@ public enum MagicAmountParser {
             return MagicAmountFactory.ColorsOnPerms;
         }
     },
+    XCost("x") {
+        public MagicAmount toAmount(final Matcher arg) {
+            return MagicAmountFactory.XCost;
+        }
+    },
+    Number("[0-9]+") {
+        public MagicAmount toAmount(final Matcher arg) {
+            return MagicAmountFactory.Constant(Integer.parseInt(arg.group()));
+        }
+    },
     FromFilter(ARG.ANY) {
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.FromFilter(
