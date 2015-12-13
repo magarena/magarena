@@ -4,6 +4,7 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={X}{X}{2}{W}{W}
+effect=Put X 4/4 white Angel creature tokens with flying onto the battlefield.
 ability=Cycling {2}{W}
 timing=main
 requires_groovy_code
