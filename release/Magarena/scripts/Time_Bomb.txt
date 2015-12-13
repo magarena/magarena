@@ -4,7 +4,7 @@ value=3.540
 rarity=R
 type=Artifact
 cost={4}
-ability=At the beginning of your upkeep, put a time counter on SN.
+ability=At the beginning of your upkeep, put a time counter on SN.;\
+        {1}, {T}, Sacrifice SN: SN deals damage equal to the number of time counters on it to each creature and each player.
 timing=artifact
-requires_groovy_code
 oracle=At the beginning of your upkeep, put a time counter on Time Bomb.\n{1}, {T}, Sacrifice Time Bomb: Time Bomb deals damage equal to the number of time counters on it to each creature and each player.
