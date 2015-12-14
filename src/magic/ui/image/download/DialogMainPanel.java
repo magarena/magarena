@@ -26,7 +26,11 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
     static final String CP_RUN_BACKGROUND = "a88997e6";
 
     // translatable strings
+    private static final String _S1 = "Closes screen but continues to download images in the background.";
+    private static final String _S2 = "Wiki help page";
     private static final String _S3 = "Run in background...";
+    private static final String _S4 = "Opens a page containing more information on this screen in your internet browser.";
+
 
     private final JButton backgroundButton;
     private final OptionsPanel optionsPanel;
@@ -49,7 +53,7 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
         backgroundButton.addActionListener((a) -> { doRunInBackground(); });
         hintPanel.addHintSource(backgroundButton, String.format("<b>%s</b><br>%s",
             UiString.get(_S3),
-            "Closes screen but continues to download images in the background.")
+            UiString.get(_S1))
         );
 
         buttonsPanel = new ButtonsPanel();
@@ -161,7 +165,9 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
                     URLUtils.openURL(URLUtils.URL_WIKI + "UIDownloadImages");
                 }
             });
-            hintPanel.addHintSource(helpButton, "<b>Wiki help page</b><br>Opens a page containing more information on this screen in your internet browser.");
+            hintPanel.addHintSource(helpButton, String.format("<b>%s</b><br>%s",
+                UiString.get(_S2), UiString.get(_S4)
+            ));
 
             setLayout(new MigLayout("insets 0, alignx right, aligny bottom"));
             add(helpButton);
