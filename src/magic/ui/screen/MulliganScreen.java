@@ -25,6 +25,7 @@ import magic.ui.canvas.cards.CardsCanvas;
 import magic.ui.duel.choice.MulliganChoicePanel;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
+import magic.ui.screen.interfaces.IWikiPage;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import net.miginfocom.swing.MigLayout;
@@ -32,7 +33,7 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 public class MulliganScreen
     extends AbstractScreen
-    implements IStatusBar, IActionBar {
+    implements IStatusBar, IActionBar, IWikiPage {
 
     // translatable string
     private static final String _S1 = "Vancouver Mulligan";
@@ -154,6 +155,11 @@ public class MulliganScreen
     @Override
     public boolean isScreenReadyToClose(final AbstractScreen nextScreen) {
         return true;
+    }
+
+    @Override
+    public String getWikiPageName() {
+        return "Mulligan-Screen";
     }
 
     private final class TakeMulliganAction extends AbstractAction {
