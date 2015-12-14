@@ -45,6 +45,10 @@ public class MagicAmountFactory {
             public int getAmount(final MagicSource source, final MagicPlayer player) {
                 return 1;
             }
+            @Override
+            public boolean isConstant() {
+                return true;
+            }
         };
     
     public static MagicAmount Constant(final int n) { 
@@ -52,6 +56,10 @@ public class MagicAmountFactory {
             @Override
             public int getAmount(final MagicSource source, final MagicPlayer player) {
                 return n;
+            }
+            @Override
+            public boolean isConstant() {
+                return true;
             }
         };
     }

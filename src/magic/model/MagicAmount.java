@@ -9,4 +9,8 @@ public abstract class MagicAmount {
     public int getAmount(final MagicEvent event) {
         return getAmount(event.getSource(), event.getPlayer());
     }
+
+    public boolean isConstant() {
+        return false;
+    }
 }
