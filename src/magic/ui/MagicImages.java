@@ -16,6 +16,7 @@ import magic.model.MagicPermanent;
 import magic.model.DuelPlayerConfig;
 import magic.model.player.PlayerProfile;
 import magic.ui.image.CardProxyImageBuilder;
+import magic.ui.prefs.ImageSizePresets;
 import magic.ui.theme.PlayerAvatar;
 import magic.ui.utility.GraphicsUtils;
 import magic.utility.MagicResources;
@@ -59,14 +60,11 @@ public final class MagicImages {
      * smooth transition between an animated and static image view.
      */
     public static Dimension getPreferredImageSize(final Image image) {
-        final String s[] = GeneralConfig.getInstance().getPreferredImageSize().split("x");
-        if (s.length != 2) {
+        final ImageSizePresets preset = GeneralConfig.getInstance().getPreferredImageSize();
+        if (preset == ImageSizePresets.SIZE_ORIGINAL) {
             return new Dimension(image.getWidth(null), image.getHeight(null));
         } else {
-            final Dimension approxPrefSize = new Dimension(
-                Integer.parseInt(s[0].trim()), 
-                Integer.parseInt(s[1].trim())
-            );
+            final Dimension approxPrefSize = preset.getSize();
             // ratio of image width to height.
             final double imageRatio = image.getWidth(null) / (double) image.getHeight(null);
             return new Dimension(

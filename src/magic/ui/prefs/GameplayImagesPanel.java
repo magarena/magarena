@@ -15,8 +15,9 @@ import net.miginfocom.swing.MigLayout;
 class GameplayImagesPanel extends JPanel {
 
     // translatable strings.
-    private static final String _S1  = "Preferred image size:";
-    private static final String _S2  = "Select 'Original' to display popup image at its native size otherwise it will be scaled up or down to the selected preset. The image will also be resized to fit if there is not enough room to display it at its preferred size.";
+    private static final String _S1 = "Preferred image size:";
+    private static final String _S2 = "Select 'Original' to display popup image at its native size otherwise it will be scaled up or down to the selected preset. The image will also be resized to fit if there is not enough room to display it at its preferred size.";
+    private static final String _S3 = "Original";
     private static final String _S28 = "Popup card image using mouse wheel.";
     private static final String _S29 = "Manually display the card image popup by moving the mouse wheel forwards. Overrides the Auto-Popup delay.";
     private static final String _S30 = "Popup Delay";
@@ -65,17 +66,7 @@ class GameplayImagesPanel extends JPanel {
 
     private class PreferredSizePanel extends JPanel {
 
-        private final String[] PRESETS = new String[] {
-                "Original",
-                "223 x 310",
-                "265 x 370",
-                "312 x 445",    // magiccards.info
-                "480 x 680",    // mtgimage.com
-                "680 x 960",
-                "745 x 1040"
-        };
-
-        private final JComboBox<String> cboPresets = new JComboBox<>();
+        private final JComboBox<ImageSizePresets> cboPresets = new JComboBox<>();
 
         PreferredSizePanel(MouseListener aListener) {
             setLayout(new MigLayout("insets 0"));
@@ -88,8 +79,8 @@ class GameplayImagesPanel extends JPanel {
             return UiString.get(_S2);
         }
 
-        private JComboBox<String> getSizePresetsCombo(MouseListener aListener) {
-            cboPresets.setModel(new DefaultComboBoxModel<>(PRESETS));
+        private JComboBox<ImageSizePresets> getSizePresetsCombo(MouseListener aListener) {
+            cboPresets.setModel(new DefaultComboBoxModel<>(ImageSizePresets.values()));
             cboPresets.getModel().setSelectedItem(CONFIG.getPreferredImageSize());
             cboPresets.setToolTipText(getTooltip());
             cboPresets.addMouseListener(aListener);
@@ -97,7 +88,7 @@ class GameplayImagesPanel extends JPanel {
         }
 
         void saveSettings() {
-            CONFIG.setPreferredImageSize((String)cboPresets.getSelectedItem());
+            CONFIG.setPreferredImageSize((ImageSizePresets)cboPresets.getSelectedItem());
         }
 
         @Override
