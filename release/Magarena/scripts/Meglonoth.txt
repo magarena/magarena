@@ -6,7 +6,7 @@ type=Creature
 subtype=Beast
 cost={3}{R}{G}{W}
 pt=6/6
-ability=vigilance;trample
+ability=Vigilance, trample;\
+        Whenever SN blocks a creature, SN deals damage to that creature's controller equal to SN's power.
 timing=main
-requires_groovy_code
 oracle=Vigilance, trample\nWhenever Meglonoth blocks a creature, Meglonoth deals damage to that creature's controller equal to Meglonoth's power.
