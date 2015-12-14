@@ -13,6 +13,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import magic.data.MagicIcon;
 import magic.translate.UiString;
+import magic.ui.CardTextLanguage;
 import magic.ui.MagicImages;
 import magic.ui.URLUtils;
 import magic.ui.dialog.button.CloseButton;
@@ -65,8 +66,9 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
 
     private void refreshDownloadList() {
         final DownloadMode mode = optionsPanel.getDownloadMode();
+        final CardTextLanguage lang = optionsPanel.getCardTextLanguage();
         for (DownloadPanel panel : downloadPanels) {
-            panel.refreshDownloadList(mode);
+            panel.refreshDownloadList(mode, lang);
         }
     }
 

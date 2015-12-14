@@ -69,6 +69,7 @@ class OptionsPanel extends JPanel {
 
     private void doTextLanguageChanged() {
         saveSettings();
+        firePropertyChange(CP_OPTIONS_CHANGED, true, false);
     }
 
     private void setCardTextCombo() {

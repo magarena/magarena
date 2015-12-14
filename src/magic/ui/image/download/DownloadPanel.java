@@ -182,8 +182,9 @@ abstract class DownloadPanel extends JPanel implements IScanListener, IDownloadL
         );
     }
 
-    void refreshDownloadList(DownloadMode aType) {
-        this.downloadMode = aType;
+    void refreshDownloadList(DownloadMode aMode, CardTextLanguage aLang) {
+        this.downloadMode = aMode;
+        this.textLanguage = aLang;
         buildDownloadImagesList();
     }
 
