@@ -36,6 +36,7 @@ import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.MenuPanel;
 import magic.ui.widget.deck.DeckStatusPanel;
+import magic.utility.MagicFileSystem;
 
 @SuppressWarnings("serial")
 public class DeckEditorScreen
@@ -224,7 +225,7 @@ public class DeckEditorScreen
                 }
                 final Path prebuiltDecksFolder = DeckUtils.getPrebuiltDecksFolder();
                 final Path saveFolder = getSelectedFile().toPath().getParent();
-                if (saveFolder.equals(prebuiltDecksFolder)) {
+                if (MagicFileSystem.isSamePath(saveFolder, prebuiltDecksFolder)) {
                     ScreenController.showWarningMessage(UiString.get(_S16));
                 } else if (Files.exists(getSelectedFile().toPath())) {
                     int response = JOptionPane.showConfirmDialog(
