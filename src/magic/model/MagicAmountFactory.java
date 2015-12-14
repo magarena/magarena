@@ -125,7 +125,7 @@ public class MagicAmountFactory {
         new MagicAmount() {
             @Override
             public int getAmount(final MagicEvent event) {
-                return event.getRefPayedCost().getX();
+                return event.getX();
             }
             @Override
             public int getAmount(final MagicSource source, final MagicPlayer player) {
