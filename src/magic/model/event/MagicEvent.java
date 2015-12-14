@@ -618,6 +618,11 @@ public class MagicEvent implements MagicCopyable {
         final MagicTarget target = getLegalTarget(player.getGame());
         return target.isPermanent() ? Collections.singletonList((MagicPermanent)target) : Collections.emptyList();
     }
+    
+    public final List<MagicPlayer> listTargetController() {
+        final MagicTarget target = getLegalTarget(player.getGame());
+        return target != MagicTargetNone.getInstance() ? Collections.singletonList(target.getController()) : Collections.emptyList();
+    }
 
     public final boolean processTargetCardOnStack(final MagicGame game, final MagicCardOnStackAction effect) {
         final MagicTarget target = getLegalTarget(game);
