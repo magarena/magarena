@@ -5,7 +5,7 @@ rarity=R
 type=Enchantment
 cost={G}
 ability=Shroud;\
+        {X}: Put X tower counters on SN.;\
         At the beginning of your upkeep, if there are 100 or more tower counters on SN, you win the game.
 timing=enchantment
-requires_groovy_code
 oracle=Shroud\n{X}: Put X tower counters on Helix Pinnacle.\nAt the beginning of your upkeep, if there are 100 or more tower counters on Helix Pinnacle, you win the game.

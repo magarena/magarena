@@ -5,6 +5,6 @@ removal=3
 rarity=R
 type=Sorcery
 cost={X}{B}{B}
+effect=Put X -1/-1 counters on each creature.~Shuffle SN into its owner's library.
 timing=removal
-requires_groovy_code
 oracle=Put X -1/-1 counters on each creature. Shuffle Black Sun's Zenith into its owner's library.
