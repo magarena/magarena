@@ -424,12 +424,8 @@ public enum MagicRuleEventAction {
         }
         @Override
         public MagicTargetPicker<?> getPicker(final Matcher matcher) {
-            if (getChoice(matcher).isValid()) {
-                final int amount = ARG.amount(matcher);
-                return new MagicDamageTargetPicker(amount);
-            } else {
-                return MagicDefaultTargetPicker.create();
-            }
+            final MagicAmount count = ARG.amountObj(matcher);
+            return new MagicDamageTargetPicker(count);
         }
     },
     PreventNextDamage(
