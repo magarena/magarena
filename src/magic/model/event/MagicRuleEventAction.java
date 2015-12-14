@@ -320,6 +320,11 @@ public enum MagicRuleEventAction {
                 }
             };
         }
+        @Override
+        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+            final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
+            return new MagicDamageTargetPicker(count);
+        }
     },
     DamageEqualAlt(
         ARG.IT + " deal(s)? damage to " + ARG.TARGETS + " equal to " + ARG.WORDRUN + "(\\.)?",
@@ -331,6 +336,10 @@ public enum MagicRuleEventAction {
         public MagicEventAction getAction(final Matcher matcher) {
             return DamageEqual.getAction(matcher);
         }
+        @Override
+        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+            return DamageEqual.getPicker(matcher);
+        }
     },
     DamageEqualX(
         ARG.IT + " deal(s)? X damage to " + ARG.TARGETS + ", where X is " + ARG.WORDRUN + "\\.",
@@ -341,6 +350,10 @@ public enum MagicRuleEventAction {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             return DamageEqual.getAction(matcher);
+        }
+        @Override
+        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+            return DamageEqual.getPicker(matcher);
         }
     },
     DamageTwoGroupAlt(
