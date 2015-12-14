@@ -3,6 +3,7 @@ package magic.model.target;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.event.MagicEvent;
 
 import java.util.Collection;
 
@@ -22,7 +23,7 @@ public class MagicDefaultPermanentPicker extends MagicTargetPicker<MagicPermanen
     }
 
     @Override
-    public Collection<MagicPermanent> pickTargets(final MagicGame game, final MagicPlayer player, final Collection<MagicPermanent> options) {
+    public Collection<MagicPermanent> pickTargets(final MagicGame game, final MagicEvent event, final Collection<MagicPermanent> options) {
         return options;
     }
 }

@@ -501,7 +501,7 @@ public class MagicTargetChoice extends MagicChoice {
         if (game.getFastTarget()) {
             @SuppressWarnings("unchecked")
             final MagicTargetPicker<MagicTarget> targetPicker = (MagicTargetPicker<MagicTarget>)event.getTargetPicker();
-            targets = targetPicker.pickTargets(game,player,targets);
+            targets = targetPicker.pickTargets(game,event,targets);
         }
         return targets;
     }
