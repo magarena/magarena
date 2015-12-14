@@ -8,6 +8,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
+import magic.ui.CachedImagesProvider;
 import magic.ui.ScreenController;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
@@ -53,10 +54,12 @@ public class DownloadDialogPanel extends JPanel implements PropertyChangeListene
     }
 
     private void doCloseScreen() {
+        CachedImagesProvider.getInstance().clearCache();
         ScreenController.closeActiveScreen(false);
     }
 
     private void doHideScreen() {
+        CachedImagesProvider.getInstance().clearCache();
         ScreenController.hideActiveScreen();
     }
 
