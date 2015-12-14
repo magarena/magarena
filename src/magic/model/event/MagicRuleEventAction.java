@@ -2748,7 +2748,7 @@ public enum MagicRuleEventAction {
         return MagicActivation.NO_COND;
     }
 
-    public static MagicRuleEventAction build(final String rule) {
+    public static MagicRuleEventAction match(final String rule) {
         for (final MagicRuleEventAction ruleAction : MagicRuleEventAction.values()) {
             if (ruleAction.matches(rule)) {
                 return ruleAction;
@@ -2782,7 +2782,7 @@ public enum MagicRuleEventAction {
                 final String rider = (hasReference && matcher.group().contains("player")) ?
                         matcher.replaceAll("target player") :
                         matcher.replaceAll("target permanent");
-                final MagicSourceEvent riderSourceEvent = MagicRuleEventAction.create(rider);
+                final MagicSourceEvent riderSourceEvent = MagicRuleEventAction.build(rider);
 
                 //rider cannot have choices
                 if (hasReference == false && riderSourceEvent.getChoice().isValid()) {
@@ -2853,9 +2853,14 @@ public enum MagicRuleEventAction {
     private static String renameThisThat(final String text) {
         final String thing = "(permanent|creature|artifact|land|player|opponent)";
         final String evenQuotes = "(?=([^\"]*'[^\"]*')*[^\"]*$)";
-        return text
-            .replaceAll("\\b(T|t)his " + thing + "( |\\.|'s)" + evenQuotes, "SN$3")
-            .replaceAll("\\b(T|t)hat " + thing + "( |\\.|'s)" + evenQuotes, "RN$3");
+
+        final String replaceThis = text.replaceAll("\\b(T|t)his " + thing + "( |\\.|'s)" + evenQuotes, "SN$3");
+
+        // only perform 'that' replacement for part of text before before first occurrence of 'target'
+        final String[] parts = replaceThis.replaceAll("\\b(T|t)arget\\b", "|$1arget|").split("\\|");
+        parts[0] = parts[0].replaceAll("\\b(T|t)hat " + thing + "( |\\.|'s)" + evenQuotes, "RN$3");
+        final String result = String.join("", parts);
+        return result;
     }
 
     private static String concat(final String part0, final String[] parts) {
@@ -2868,9 +2873,12 @@ public enum MagicRuleEventAction {
 
     static final Pattern INTERVENING_IF = Pattern.compile("if " + ARG.COND + ", " + ARG.ANY, Pattern.CASE_INSENSITIVE);
     static final Pattern MAY_PAY = Pattern.compile("you may pay " + ARG.MANACOST + "\\. if you do, .+", Pattern.CASE_INSENSITIVE);
+    
+    public static MagicSourceEvent create(final String text) {
+        return build(renameThisThat(text));
+    }
 
-    public static MagicSourceEvent create(final String raw) {
-        final String text = renameThisThat(raw);
+    private static MagicSourceEvent build(final String text) {
         final String[] part = text.split("~");
         final String rule = part[0];
 
@@ -2890,7 +2898,7 @@ public enum MagicRuleEventAction {
         final boolean optional = ruleWithoutMay.length() < ruleWithoutIf.length();
         final String effect = ruleWithoutMay.replaceFirst("^have ", "");
 
-        final MagicRuleEventAction ruleAction = build(effect);
+        final MagicRuleEventAction ruleAction = match(effect);
         final Matcher matcher = ruleAction.matched(effect);
 
         // action may be composed from rule and riders
