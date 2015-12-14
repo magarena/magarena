@@ -1,9 +1,11 @@
 package magic.ui.image.download;
 
+import magic.translate.UiString;
+
 enum DownloadMode {
 
-    MISSING("Missing images"),
-    ALL("All images");
+    MISSING(UiString.get(EnumStrings._S1)),
+    ALL(UiString.get(EnumStrings._S2));
 
     private final String desc;
 
