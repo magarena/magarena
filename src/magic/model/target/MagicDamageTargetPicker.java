@@ -30,13 +30,14 @@ public class MagicDamageTargetPicker extends MagicTargetPicker<MagicTarget> {
         this(amount, false);
     }
 
+    // use by card script effect
     public MagicDamageTargetPicker(final MagicAmount count) {
         this(-1, false, count);
     }
     
     @Override
     protected void setEvent(final MagicEvent event) {
-        if (count.isConstant() == false) {
+        if (amount < 0 || count.isConstant() == false) {
             amount = count.getAmount(event);
         }
     }
