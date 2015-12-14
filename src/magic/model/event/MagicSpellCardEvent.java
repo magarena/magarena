@@ -52,6 +52,7 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
                 return new MagicEvent(
                     event.getSource(),
                     event.getChoice(),
+                    payedCost,
                     this,
                     event.getDescription()
                 );
@@ -103,6 +104,7 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
                             choice1, 
                             choice2
                         ),
+                    payedCost,
                     this,
                     payedCost.isKicked() ?
                         desc1 + " " + desc2 :
