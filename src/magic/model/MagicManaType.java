@@ -2,12 +2,11 @@ package magic.model;
 
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.EnumSet;
 import java.util.List;
 
 public enum MagicManaType {
 
-    Colorless("colorless","{1}"),
+    Colorless("colorless","{C}"),
     White("white","{W}"),
     Blue("blue","{U}"),
     Black("black","{B}"),
@@ -16,15 +15,15 @@ public enum MagicManaType {
     Snow("snow","{S}"),
     NONE("none","{N}")
     ;
-    
+
     private static final List<MagicManaType> ALL_COLORS = Collections.unmodifiableList(
         Arrays.asList(White,Blue,Black,Red,Green)
     );
-    
+
     // Colorless must be in front.
     public static final List<MagicManaType> ALL_TYPES = Collections.unmodifiableList(
         Arrays.asList(Colorless,White,Blue,Black,Red,Green,Snow)
-    ); 
+    );
 
     public static final int NR_OF_TYPES = ALL_TYPES.size();
 
@@ -58,6 +57,9 @@ public enum MagicManaType {
     }
 
     public static List<MagicManaType> getList(final String name) {
+        if ("{C}".equals(name)) {
+            return Arrays.asList(Colorless);
+        }
         if ("{1}".equals(name)) {
             return Arrays.asList(Colorless);
         }

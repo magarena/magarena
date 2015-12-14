@@ -8,7 +8,7 @@ public enum MagicCostManaType {
 
     // Ordered from least restrictive to most restrictive.
     // Same order as in mana cost
-    Colorless("colorless","{1}",Arrays.asList(MagicManaType.Colorless,MagicManaType.White,MagicManaType.Blue,MagicManaType.Black,MagicManaType.Red,MagicManaType.Green)),
+    Generic("generic","{1}",Arrays.asList(MagicManaType.Colorless,MagicManaType.White,MagicManaType.Blue,MagicManaType.Black,MagicManaType.Red,MagicManaType.Green)),
     WhiteBlue("white/blue","{W/U}",Arrays.asList(MagicManaType.White,MagicManaType.Blue)),
     WhiteBlack("white/black","{W/B}",Arrays.asList(MagicManaType.White,MagicManaType.Black)),
     BlueBlack("blue/black","{U/B}",Arrays.asList(MagicManaType.Blue,MagicManaType.Black)),
@@ -35,6 +35,7 @@ public enum MagicCostManaType {
     Red("red","{R}",Arrays.asList(MagicManaType.Red)),
     Green("green","{G}",Arrays.asList(MagicManaType.Green)),
     Snow("snow","{S}",Arrays.asList(MagicManaType.Snow)),
+    Colorless("colorless","{C}",Arrays.asList(MagicManaType.Colorless))
     ;
 
     public static final int NR_OF_TYPES=values().length;
