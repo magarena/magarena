@@ -108,7 +108,7 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
     }
 
     private DownloadPanel getUnimplementedDownloaderPanel() {
-        final DownloadPanel  unimplementedDownloaderPanel = new UnimplementedPanel(
+        final DownloadPanel unimplementedDownloaderPanel = new UnimplementedPanel(
             optionsPanel.getDownloadMode(),
             optionsPanel.getCardTextLanguage(),
             this
