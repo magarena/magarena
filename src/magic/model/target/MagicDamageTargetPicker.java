@@ -5,21 +5,41 @@ import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.MagicAmount;
+import magic.model.MagicAmountFactory;
+import magic.model.event.MagicEvent;
 import magic.exception.GameException;
 
 /** Creature permanent or player. Can be your own creatures. */
 public class MagicDamageTargetPicker extends MagicTargetPicker<MagicTarget> {
 
-    private final int amount;
+    private int amount;
     private final boolean noRegeration;
+    private final MagicAmount count;
 
-    public MagicDamageTargetPicker(final int amount,final boolean noRegeneration) {
-        this.amount=amount;
-        this.noRegeration=noRegeneration;
+    public MagicDamageTargetPicker(final int aAmount, final boolean aNoRegeneration, final MagicAmount aCount) {
+        amount = aAmount;
+        noRegeration = aNoRegeneration;
+        count = aCount;
+    }
+    public MagicDamageTargetPicker(final int amount, final boolean noRegeneration) {
+        this(amount, noRegeneration, MagicAmountFactory.One);
     }
 
     public MagicDamageTargetPicker(final int amount) {
-        this(amount,false);
+        this(amount, false);
+    }
+
+    public MagicDamageTargetPicker(final MagicAmount count) {
+        this(-1, false, count);
+    }
+    
+    @Override
+    protected int getTargetScore(final MagicGame game,final MagicEvent event,final MagicTarget target) {
+        if (amount < 0) {
+            amount = count.getAmount(event);
+        }
+        return getTargetScore(game, event.getPlayer(), target);
     }
 
     @Override
