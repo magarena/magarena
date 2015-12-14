@@ -68,7 +68,9 @@ public class MagicMessage {
         return sourceText
             .replaceAll("PN", player.toString())
             .replaceAll("SN", getCardToken(source))
-            .replaceAll("RN", getCardToken(ref));
+            .replaceAll("RN", getCardToken(ref))
+            .replaceAll("\\bX\\b", getXCost(ref))
+            ;
     }
 
     public static String replaceChoices(final String sourceText, final Object[] choices) {
@@ -88,6 +90,14 @@ public class MagicMessage {
     }
 
     private static final String CARD_TOKEN = "<%s" + CARD_ID_DELIMITER + "%d>";
+    
+    public static String getXCost(final Object obj) {
+        if (obj != null && obj instanceof MagicPayedCost) {
+            return "X (" + ((MagicPayedCost)obj).getX() + ")";
+        } else {
+            return "X";
+        }
+    }
 
     public static String getCardToken(final Object obj) {
 
