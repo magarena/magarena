@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Goblin,Warrior
 cost={1}{R}{R}
 pt=2/2
+ability=Whenever a land enters the battlefield, SN deals 2 damage to that land's controller.
 timing=main
-requires_groovy_code=Ankh of Mishra
 oracle=Whenever a land enters the battlefield, Zo-Zu the Punisher deals 2 damage to that land's controller.

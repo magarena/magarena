@@ -4,6 +4,6 @@ value=3.473
 rarity=U
 type=Artifact
 cost={4}
+ability=Whenever a creature dies, SN deals 2 damage to that creature's controller.
 timing=artifact
-requires_groovy_code
 oracle=Whenever a creature dies, Dingus Staff deals 2 damage to that creature's controller.

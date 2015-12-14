@@ -5,7 +5,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{R}
+ability=Whenever enchanted creature becomes tapped, SN deals 2 damage to that creature's controller.
 enchant=default,neg creature
 timing=enchantment
-requires_groovy_code
 oracle=Enchant creature\nWhenever enchanted creature becomes tapped, Insolence deals 2 damage to that creature's controller.

@@ -4,6 +4,6 @@ value=3.210
 rarity=U
 type=Enchantment
 cost={1}{R}
+ability=Whenever a creature blocks, SN deals 1 damage to that creature's controller.
 timing=main
-requires_groovy_code
 oracle=Whenever a creature blocks, Heat of Battle deals 1 damage to that creature's controller.
