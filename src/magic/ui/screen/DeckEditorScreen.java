@@ -208,6 +208,11 @@ public class DeckEditorScreen
         ScreenController.showDeckChooserScreen(this);
     }
 
+    private boolean isReservedDeckFolder(final Path saveFolder) {
+        return MagicFileSystem.isSamePath(saveFolder, DeckUtils.getPrebuiltDecksFolder())
+            || MagicFileSystem.isSamePath(saveFolder, DeckUtils.getFiremindDecksFolder());
+    }
+
     public void saveDeck() {
 
         if (screenContent.getDeck().size() == 0) {
@@ -223,9 +228,7 @@ public class DeckEditorScreen
                 if (!filename.endsWith(DeckUtils.DECK_EXTENSION)) {
                     setSelectedFile(new File(filename + DeckUtils.DECK_EXTENSION));
                 }
-                final Path prebuiltDecksFolder = DeckUtils.getPrebuiltDecksFolder();
-                final Path saveFolder = getSelectedFile().toPath().getParent();
-                if (MagicFileSystem.isSamePath(saveFolder, prebuiltDecksFolder)) {
+                if (isReservedDeckFolder(getSelectedFile().toPath().getParent())) {
                     ScreenController.showWarningMessage(UiString.get(_S16));
                 } else if (Files.exists(getSelectedFile().toPath())) {
                     int response = JOptionPane.showConfirmDialog(
