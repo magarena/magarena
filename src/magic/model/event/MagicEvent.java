@@ -11,6 +11,7 @@ import magic.model.MagicCopyMap;
 import magic.model.MagicCopyable;
 import magic.model.MagicGame;
 import magic.model.MagicMessage;
+import magic.model.MagicObject;
 import magic.model.MagicObjectImpl;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
@@ -329,6 +330,10 @@ public class MagicEvent implements MagicCopyable {
 
     public final MagicCopyable getRef() {
         return ref;
+    }
+    
+    public final MagicObject getRefObject() {
+        return (MagicObject)ref;
     }
 
     public final MagicPermanent getRefPermanent() {

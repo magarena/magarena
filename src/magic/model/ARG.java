@@ -133,9 +133,11 @@ public class ARG {
         }
     }
     
-    public static final String PLAYERS = "((?<rn>(rn))|(?<pn>(pn||you))|" + CHOICE + "|(?<group>[^\\.]+?) )";
+    public static final String PLAYERS = "((?<rnc>rn's controller)|(?<rn>rn)|(?<pn>(pn||you))|" + CHOICE + "|(?<group>[^\\.]+?) )";
     public static List<MagicPlayer> players(final MagicEvent event, final Matcher m, final MagicTargetFilter<MagicPlayer> filter) {
-        if (m.group("rn") != null) {
+        if (m.group("rnc") != null) {
+            return Collections.singletonList(event.getRefObject().getController());
+        } else if (m.group("rn") != null) {
             return Collections.singletonList(event.getRefPlayer());
         } else if (m.group("pn") != null) {
             return Collections.singletonList(event.getPlayer());
