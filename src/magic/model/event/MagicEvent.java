@@ -393,10 +393,11 @@ public class MagicEvent implements MagicCopyable {
     }
 
     public final int getX() {
-        if (ref instanceof MagicCardOnStack) {
-            return getRefCardOnStack().getX();
-        } else {
+        if (ref instanceof MagicPayedCost) {
             return getRefPayedCost().getX();
+        } else {
+            // occurs when event is MagicStackGetChoicesEvent
+            return getRefItemOnStack().getEvent().getX();
         }
     }
 
