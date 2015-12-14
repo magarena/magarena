@@ -14,6 +14,12 @@ import net.miginfocom.swing.MigLayout;
 class AnimationsPanel extends JPanel {
 
     // translatable strings.
+    private static final String _S1 = "New turn message:";
+    private static final String _S2 = "Displays a message at the beginning of each turn for the specified duration (in seconds). Left-click or space key during game to cancel. Set to zero to turn off completely.";
+    private static final String _S3 = "Non-land preview:";
+    private static final String _S4 = "When playing a non-land card, this setting determines how long (in seconds) it should be displayed at full size. Left-click or space key during game to cancel preview.";
+    private static final String _S5 = "Land preview:";
+    private static final String _S6 = "When playing a land card, this setting determines how long (in seconds) it should be displayed at full size. Left-click or space key during game to cancel preview.";
     private static final String _S70 = "Play animations";
     private static final String _S71 = "Turning animations off will speed up gameplay but make it harder to follow the action.";
     
@@ -59,24 +65,24 @@ class AnimationsPanel extends JPanel {
     }
 
     private SliderPanel getNewTurnAlertSlider(MouseListener aListener) {
-        final SliderPanel sp = new SliderPanel(UiString.get("New turn message:"), 0, 10, 1, CONFIG.getNewTurnAlertDuration() / 1000);
-        sp.setToolTipText(UiString.get("Displays a message at the beginning of each turn for the specified duration (in seconds). Left-click or space key during game to cancel. Set to zero to turn off completely."));
+        final SliderPanel sp = new SliderPanel(UiString.get(_S1), 0, 10, 1, CONFIG.getNewTurnAlertDuration() / 1000);
+        sp.setToolTipText(UiString.get(_S2));
         sp.addMouseListener(aListener);
         sp.setFontBold(false);
         return sp;
     }
     
     private SliderPanel getNonLandPreviewSlider(MouseListener aListener) {
-        final SliderPanel sp = new SliderPanel(UiString.get("Non-land preview:"), 1, 20, 1, CONFIG.getNonLandPreviewDuration() / 1000);
-        sp.setToolTipText(UiString.get("When playing a non-land card, this setting determines how long (in seconds) it should be displayed at full size. Left-click or space key during game to cancel preview."));
+        final SliderPanel sp = new SliderPanel(UiString.get(_S3), 1, 20, 1, CONFIG.getNonLandPreviewDuration() / 1000);
+        sp.setToolTipText(UiString.get(_S4));
         sp.addMouseListener(aListener);
         sp.setFontBold(false);
         return sp;
     }
 
     private SliderPanel getLandPreviewSlider(MouseListener aListener) {
-        final SliderPanel sp = new SliderPanel(UiString.get("Land preview:"), 1, 20, 1, CONFIG.getLandPreviewDuration() / 1000);
-        sp.setToolTipText(UiString.get("When playing a land card, this setting determines how long (in seconds) it should be displayed at full size. Left-click or space key during game to cancel preview."));
+        final SliderPanel sp = new SliderPanel(UiString.get(_S5), 1, 20, 1, CONFIG.getLandPreviewDuration() / 1000);
+        sp.setToolTipText(UiString.get(_S6));
         sp.addMouseListener(aListener);
         sp.setFontBold(false);
         return sp;
@@ -107,7 +113,6 @@ class AnimationsPanel extends JPanel {
             }
             super.setEnabled(b);
         }
-
     }
     
 }
