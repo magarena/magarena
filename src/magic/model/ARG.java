@@ -177,10 +177,12 @@ public class ARG {
         }
     }
     
-    public static final String TARGETS = "((?<rnc1>rn's controller)|(?<rn1>rn)|(?<sn1>sn)|(?<pn1>(pn||you))|" + CHOICE + "|(?<group1>[^\\.]+?))";
-    public static List<MagicTarget> targets(final MagicEvent event, final Matcher m, final MagicTargetFilter<MagicTarget> filter) {
+    public static final String TARGETS = "((?<rnc1>rn's controller)|(?<tnc1>that [^ ]+'s controller)|(?<rn1>rn)|(?<sn1>sn)|(?<pn1>(pn||you))|" + CHOICE + "|(?<group1>[^\\.]+?))";
+    public static List<? extends MagicTarget> targets(final MagicEvent event, final Matcher m, final MagicTargetFilter<MagicTarget> filter) {
         if (m.group("rnc1") != null) {
             return Collections.singletonList(event.getRefObject().getController());
+        } else if (m.group("tnc1") != null) {
+            return event.listTargetController();
         } else if (m.group("rn1") != null) {
             return Collections.singletonList(event.getRefTarget());
         } else if (m.group("pn1") != null) {
