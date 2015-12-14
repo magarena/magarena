@@ -6,6 +6,6 @@ type=Creature
 subtype=Homunculus
 cost={2}{U}
 pt=1/4
+ability=Whenever a creature attacks you or a planeswalker you control, that creature's controller puts the top two cards of his or her library into his or her graveyard.
 timing=main
-requires_groovy_code
 oracle=Whenever a creature attacks you or a planeswalker you control, that creature's controller puts the top two cards of his or her library into his or her graveyard.

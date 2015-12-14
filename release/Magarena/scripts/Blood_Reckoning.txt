@@ -4,6 +4,6 @@ value=2.692
 rarity=U
 type=Enchantment
 cost={3}{B}
+ability=Whenever a creature attacks you or a planeswalker you control, that creature's controller loses 1 life.
 timing=enchantment
-requires_groovy_code=Hissing Miasma
 oracle=Whenever a creature attacks you or a planeswalker you control, that creature's controller loses 1 life.

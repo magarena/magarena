@@ -4,6 +4,6 @@ value=3.986
 rarity=R
 type=Enchantment
 cost={3}{R}{R}
+ability=Whenever a creature dies, that creature's controller sacrifices a land.
 timing=main
-requires_groovy_code
 oracle=Whenever a creature dies, that creature's controller sacrifices a land.
