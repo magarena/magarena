@@ -8,11 +8,11 @@ import magic.model.trigger.MagicTriggerType;
 public class MagicStackGetChoicesEvent extends MagicEvent {
     public MagicStackGetChoicesEvent(final MagicItemOnStack itemOnStack) {
         super(
-            itemOnStack.getEvent().getSource(),
+            itemOnStack,
             itemOnStack.getEvent().getPlayer(),
             itemOnStack.getEvent().getChoice(),
             itemOnStack.getEvent().getTargetPicker(),
-            itemOnStack,
+            itemOnStack.getEvent().getRef(),
             EVENT_ACTION,
             ""
         );
@@ -21,7 +21,7 @@ public class MagicStackGetChoicesEvent extends MagicEvent {
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicItemOnStack itemOnStack = event.getRefItemOnStack();
+            final MagicItemOnStack itemOnStack = event.getItemOnStack();
             itemOnStack.setChoiceResults(event.getChosen());
 
             // trigger WhenTargeted
