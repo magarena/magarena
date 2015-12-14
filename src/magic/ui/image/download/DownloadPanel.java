@@ -69,7 +69,7 @@ abstract class DownloadPanel extends JPanel implements IScanListener, IDownloadL
 
     private void doRunImageDownloadWorker() {
         setDownloadingState();
-        imagesDownloader = new DownloadWorker(this, files, textLanguage, downloadMode);
+        imagesDownloader = new DownloadWorker(this, textLanguage, downloadMode);
         imagesDownloader.execute();
         notifyStatusChanged(DownloadState.DOWNLOADING);
     }

@@ -25,7 +25,7 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
     private static final MagicLogFile missingLog = new MagicLogFile("downloaded-images");
     
     private final Proxy proxy;
-    private final ImagesDownloadList downloadList;
+    private ImagesDownloadList downloadList;
     private final IDownloadListener listener;
     private final CardTextLanguage textLanguage;
     private final DownloadMode downloadMode;
@@ -34,12 +34,10 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
    
     DownloadWorker(
         IDownloadListener aListener,
-        ImagesDownloadList downloadList,
         CardTextLanguage aLanguage,
         DownloadMode aDownloadMode) {
         
         this.listener = aListener;
-        this.downloadList = downloadList;
         this.textLanguage = aLanguage;
         this.downloadMode = aDownloadMode;
         this.proxy = GeneralConfig.getInstance().getProxy();
@@ -47,6 +45,7 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
 
     @Override
     protected Void doInBackground() {
+        this.downloadList = ScanWorker.getImagesDownloadList((IScanListener)listener, downloadMode);
         doDownloadImages(textLanguage);
         return null;
     }

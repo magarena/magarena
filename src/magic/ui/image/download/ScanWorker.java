@@ -16,13 +16,17 @@ class ScanWorker extends SwingWorker<ImagesDownloadList, Void> {
         this.downloadType = aType;
     }
 
+    public static ImagesDownloadList getImagesDownloadList(IScanListener aListener, DownloadMode aMode) {
+        // synchronized to speed up scanning by preventing
+        // multiple scanners accessing filesystem at the same time.
+        synchronized (ScanWorker.class) {
+            return new ImagesDownloadList(aListener.getCards(aMode));
+        }
+    }
+
     @Override
     protected ImagesDownloadList doInBackground() throws Exception {
-        // Speeds up scanning by preventing multiple scanners
-        // accessing filesystem at the same time.
-        synchronized (ScanWorker.class) {
-            return new ImagesDownloadList(listener.getCards(downloadType));
-        }
+        return getImagesDownloadList(listener, downloadType);
     }
 
     @Override
