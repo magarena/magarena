@@ -1005,12 +1005,13 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = ARG.amount(matcher);
+            final MagicAmount count = ARG.amountObj(matcher);
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
             final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final int amount = count.getAmount(event);
                     for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
                         game.doAction(new ChangeCountersAction(
                             it,
@@ -1053,8 +1054,7 @@ public enum MagicRuleEventAction {
         }
         @Override
         public String getName(final Matcher matcher) {
-            final int amount = ARG.amount(matcher);
-            return (amount>1) ? "+Counters" : "+Counter";
+            return "+Counters"; 
         }
     },
     CounterFromSelfClockwork(
@@ -1074,12 +1074,13 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = ARG.amount(matcher);
+            final MagicAmount count = ARG.amountObj(matcher);
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
             final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final int amount = count.getAmount(event);
                     for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
                         game.doAction(new ChangeCountersAction(
                             it,
@@ -1092,14 +1093,7 @@ public enum MagicRuleEventAction {
         }
         @Override
         public String getName(final Matcher matcher) {
-            final int amount = ARG.amount(matcher);
-            if (amount>1) {
-                final String name = "-Counters";
-                return name;
-            } else {
-                final String name = "-Counter";
-                return name;
-            }
+            return "-Counters";
         }
     },
     Bolster(
