@@ -32,7 +32,10 @@ class DirectoryChooser extends JPanel {
     private static final String _S3 = "Not enough free space!";
     private static final String _S2 = "Select images directory";
     private static final String _S4 = "A complete set of images requires at least 1.5 GB of free space.";
-
+    private static final String _S5 = "Card images folder";
+    private static final String _S6 = "Card images will be downloaded here into the \"cards\" and \"tokens\" sub-folders. Double-click to to open this location in file manager.";
+    private static final String _S7 = "Select or create a new folder in which card images will be stored.";
+    
     private static final long MIN_FREE_SPACE = 1610612736; // bytes = 1.5 GB
 
     private final MigLayout layout = new MigLayout();
@@ -116,8 +119,12 @@ class DirectoryChooser extends JPanel {
     }
 
     void addHintSources(HintPanel hintPanel) {
-        hintPanel.addHintSource(textField, "<b>Card images folder</b><br>Card images will be downloaded here into the \"cards\" and \"tokens\" sub-folders. Double-click to to open this location in file manager.");
-        hintPanel.addHintSource(selectButton, String.format("<b>%s</b><br>%s", UiString.get(_S1), "Select or create a new folder in which card images will be stored."));
+        hintPanel.addHintSource(textField, String.format("<b>%s</b><br>%s",
+            UiString.get(_S5), UiString.get(_S6)
+        ));
+        hintPanel.addHintSource(selectButton, String.format("<b>%s</b><br>%s",
+            UiString.get(_S1), UiString.get(_S7)
+        ));
     }
 
     private static class ImagesDirectoryChooser extends JFileChooser {
