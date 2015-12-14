@@ -4,6 +4,6 @@ value=4.045
 rarity=U
 type=Instant
 cost={X}{R}{R}
+effect=SN deals X damage to target creature or player.
 timing=removal
-requires_groovy_code=Blaze
 oracle=Volcanic Geyser deals X damage to target creature or player.

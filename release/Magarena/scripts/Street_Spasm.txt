@@ -4,6 +4,7 @@ value=3.250
 rarity=U
 type=Instant
 cost={X}{R}
+effect=SN deals X damage to target creature without flying you don't control.
 ability=Cast SN with AI only if an opponent controls a creature without flying.
 timing=removal
 removal=1

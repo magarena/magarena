@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Human,Spellshaper
 cost={3}{R}{R}
 pt=3/3
+ability={X}{R}, {T}, Discard two cards: SN deals X damage to target creature or player.
 timing=main
-requires_groovy_code
 oracle={X}{R}, {T}, Discard two cards: Latulla, Keldon Overseer deals X damage to target creature or player.

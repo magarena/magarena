@@ -4,6 +4,6 @@ value=3.200
 rarity=C
 type=Instant
 cost={X}{R}
+effect=SN deals X damage to target creature.
 timing=removal
-requires_groovy_code
 oracle=Heat Ray deals X damage to target creature.

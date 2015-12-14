@@ -6,6 +6,6 @@ type=Creature
 subtype=Elemental
 cost={3}{R}
 pt=2/2
+ability={X}{R}, {T}, Sacrifice SN: SN deals X damage to target creature or player.
 timing=main
-requires_groovy_code
 oracle={X}{R}, {T}, Sacrifice Cinder Elemental: Cinder Elemental deals X damage to target creature or player.

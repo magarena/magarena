@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Spirit
 cost={3}{G}{G}
 pt=5/5
-ability={X}{G}{G}, Discard SN: SN deals X damage to each creature with flying.
+ability={X}{G}, {T}: SN deals X damage to target creature with flying.;\
+        {X}{G}{G}, Discard SN: SN deals X damage to each creature with flying.
 timing=main
-requires_groovy_code
 oracle={X}{G}, {T}: Arashi, the Sky Asunder deals X damage to target creature with flying.\nChannel — {X}{G}{G}, Discard Arashi: Arashi deals X damage to each creature with flying.

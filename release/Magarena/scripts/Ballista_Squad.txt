@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Rebel
 cost={3}{W}
 pt=2/2
+ability={X}{W}, {T}: SN deals X damage to target attacking or blocking creature.
 timing=main
-requires_groovy_code
 oracle={X}{W}, {T}: Ballista Squad deals X damage to target attacking or blocking creature.

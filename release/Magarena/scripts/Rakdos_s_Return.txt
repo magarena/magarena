@@ -4,6 +4,6 @@ value=4.009
 rarity=M
 type=Sorcery
 cost={X}{B}{R}
+effect=SN deals X damage to target opponent.~*That player* discards X cards.
 timing=main
-requires_groovy_code
 oracle=Rakdos's Return deals X damage to target opponent. That player discards X cards.

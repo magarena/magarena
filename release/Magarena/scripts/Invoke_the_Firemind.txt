@@ -4,6 +4,6 @@ value=3.886
 rarity=R
 type=Sorcery
 cost={X}{U}{U}{R}
+effect=Choose one — (1) Draw X cards. (2) SN deals X damage to target creature or player.
 timing=main
-requires_groovy_code
 oracle=Choose one —\n• Draw X cards.\n• Invoke the Firemind deals X damage to target creature or player.
