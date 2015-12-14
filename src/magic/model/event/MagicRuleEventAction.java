@@ -450,11 +450,12 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = ARG.amount(matcher);
+            final MagicAmount count = ARG.amountObj(matcher);
             final MagicTargetFilter<MagicTarget> filter = ARG.targetsParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final int amount = count.getAmount(event);
                     for (final MagicTarget it : ARG.targets(event, matcher, filter)) {
                         game.doAction(new PreventDamageAction(it, amount));
                     }
