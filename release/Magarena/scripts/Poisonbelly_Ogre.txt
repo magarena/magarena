@@ -6,6 +6,6 @@ type=Creature
 subtype=Ogre,Warrior
 cost={4}{B}
 pt=3/3
-ability=Whenever another creature enters the battlefield, its controller loses 1 life.
+ability=Whenever another creature enters the battlefield, RN's controller loses 1 life.
 timing=main
 oracle=Whenever another creature enters the battlefield, its controller loses 1 life.
