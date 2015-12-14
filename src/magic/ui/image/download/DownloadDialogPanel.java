@@ -8,6 +8,7 @@ import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
+import magic.translate.UiString;
 import magic.ui.CachedImagesProvider;
 import magic.ui.ScreenController;
 import magic.ui.theme.Theme;
@@ -18,6 +19,8 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 public class DownloadDialogPanel extends JPanel implements PropertyChangeListener {
 
+    private static final String _S1 = "Download card images";
+    
     private final DialogMainPanel mainPanel;
 
     public DownloadDialogPanel() {
@@ -44,7 +47,7 @@ public class DownloadDialogPanel extends JPanel implements PropertyChangeListene
     }
 
     private JLabel getDialogCaptionLabel() {
-        final JLabel lbl = new JLabel("Download card images");
+        final JLabel lbl = new JLabel(UiString.get(_S1));
         lbl.setOpaque(true);
         lbl.setBackground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND));
         lbl.setForeground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_FOREGROUND));
