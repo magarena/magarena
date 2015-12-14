@@ -387,6 +387,10 @@ public class MagicEvent implements MagicCopyable {
         return (MagicCardOnStack)source;
     }
 
+    public final MagicItemOnStack getItemOnStack() {
+        return (MagicItemOnStack)source;
+    }
+
     public final boolean hasChoice() {
         return choice.isValid();
     }
