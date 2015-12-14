@@ -12,8 +12,8 @@ import java.util.Map;
 
 public abstract class MagicTargetPicker<T> {
 
-    protected int getTargetScore(final MagicGame game,final MagicEvent event,final T target) {
-        return getTargetScore(game, event.getPlayer(), target);
+    protected void setEvent(final MagicEvent event) {
+        //do nothing
     }
     
     protected abstract int getTargetScore(final MagicGame game,final MagicPlayer event,final T target);
@@ -25,8 +25,9 @@ public abstract class MagicTargetPicker<T> {
 
         T bestTarget=options.iterator().next();
         int bestScore=Integer.MIN_VALUE;
+        setEvent(event);
         for (final T target : options) {
-            final int score=getTargetScore(game,event,target);
+            final int score=getTargetScore(game,event.getPlayer(),target);
             if (score>bestScore) {
                 bestTarget=target;
                 bestScore=score;

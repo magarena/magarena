@@ -35,11 +35,8 @@ public class MagicDamageTargetPicker extends MagicTargetPicker<MagicTarget> {
     }
     
     @Override
-    protected int getTargetScore(final MagicGame game,final MagicEvent event,final MagicTarget target) {
-        if (amount < 0) {
-            amount = count.getAmount(event);
-        }
-        return getTargetScore(game, event.getPlayer(), target);
+    protected void setEvent(final MagicEvent event) {
+        amount = count.getAmount(event);
     }
 
     @Override
