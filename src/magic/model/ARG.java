@@ -133,10 +133,12 @@ public class ARG {
         }
     }
     
-    public static final String PLAYERS = "((?<rnc>rn's controller)|(?<rn>rn)|(?<pn>(pn||you))|" + CHOICE + "|(?<group>[^\\.]+?) )";
+    public static final String PLAYERS = "((?<rnc>rn's controller)|(?<tnc>that [^ ]+'s controller)|(?<rn>rn)|(?<pn>(pn||you))|" + CHOICE + "|(?<group>[^\\.]+?) )";
     public static List<MagicPlayer> players(final MagicEvent event, final Matcher m, final MagicTargetFilter<MagicPlayer> filter) {
         if (m.group("rnc") != null) {
             return Collections.singletonList(event.getRefObject().getController());
+        } else if (m.group("tnc") != null) {
+            return event.listTargetController();
         } else if (m.group("rn") != null) {
             return Collections.singletonList(event.getRefPlayer());
         } else if (m.group("pn") != null) {
@@ -204,9 +206,11 @@ public class ARG {
         }
     }
     
-    public static final String TARGETS2 = "((?<rn2>rn)|(?<sn2>sn)|(?<pn2>(pn||you))|(?<group2>[^\\.]+?))";
-    public static List<MagicTarget> targets2(final MagicEvent event, final Matcher m, final MagicTargetFilter<MagicTarget> filter) {
-        if (m.group("rn2") != null) {
+    public static final String TARGETS2 = "((?<tnc2>that [^ ]+'s controller)|(?<rn2>rn)|(?<sn2>sn)|(?<pn2>(pn||you))|(?<group2>[^\\.]+?))";
+    public static List<? extends MagicTarget> targets2(final MagicEvent event, final Matcher m, final MagicTargetFilter<MagicTarget> filter) {
+        if (m.group("tnc2") != null) {
+            return event.listTargetController();
+        } else if (m.group("rn2") != null) {
             return Collections.singletonList(event.getRefTarget());
         } else if (m.group("pn2") != null) {
             return Collections.singletonList(event.getPlayer());
