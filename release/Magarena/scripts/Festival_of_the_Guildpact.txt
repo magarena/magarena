@@ -4,6 +4,6 @@ value=3.317
 rarity=U
 type=Instant
 cost={X}{W}
+effect=Prevent the next X damage that would be dealt to you this turn.~Draw a card.
 timing=pump
-requires_groovy_code
 oracle=Prevent the next X damage that would be dealt to you this turn.\nDraw a card.
