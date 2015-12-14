@@ -15,6 +15,12 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 class OptionsPanel extends JPanel {
 
+    private static final String _S1 = "Images folder:";
+    private static final String _S2 = "Card text:";
+    private static final String _S3 = "Download mode:";
+    private static final String _S4 = "Preferred card text language";
+    private static final String _S5 = "If a language other than English is selected then Magarena will try to find and download a card image for the given language. If no image is found then it will download the default English edition instead.";
+
     static final String CP_OPTIONS_CHANGED = "1b7206a7";
 
     private final GeneralConfig CONFIG = GeneralConfig.getInstance();
@@ -30,11 +36,11 @@ class OptionsPanel extends JPanel {
         setDownloadModeCombo();
 
         setLayout(new MigLayout("wrap 2, insets 0", "[right][]"));
-        add(new JLabel(UiString.get("Images folder:")));
+        add(new JLabel(UiString.get(_S1)));
         add(imagesFolderChooser, "w 100%");
-        add(new JLabel(UiString.get("Card text:")));
+        add(new JLabel(UiString.get(_S2)));
         add(cboCardText);
-        add(getBoldLabel(UiString.get("Download mode:")));
+        add(getBoldLabel(UiString.get(_S3)));
         add(cboDownloadMode);
 
         
@@ -120,7 +126,9 @@ class OptionsPanel extends JPanel {
 
     void addHintSources(HintPanel hintPanel) {
         imagesFolderChooser.addHintSources(hintPanel);
-        hintPanel.addHintSource(cboCardText, "<b>Preferred card text language</b><br>If a language other than English is selected then Magarena will try to find and download a card image for the given language. If no image is found then it will download the default English edition instead.");
+        hintPanel.addHintSource(cboCardText, String.format("<b>%s</b><br>%s",
+            UiString.get(_S4), UiString.get(_S5)
+        ));
     }
 
 }
