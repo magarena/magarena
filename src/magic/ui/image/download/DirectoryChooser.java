@@ -92,7 +92,7 @@ class DirectoryChooser extends JPanel {
             @Override
             public void mouseReleased(MouseEvent e) {
                 final boolean isDoubleClick = (e.getButton() == MouseEvent.BUTTON1) && (e.getClickCount() == 2);
-                if (isDoubleClick) {
+                if (isDoubleClick && isEnabled()) {
                     openFolderInFileManager();
                 }
             }
