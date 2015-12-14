@@ -78,7 +78,7 @@ public class MagicPayManaCostResultBuilder {
             return false;
         }
 
-        final boolean hasX=costManaType==MagicCostManaType.Colorless&&cost.hasX();
+        final boolean hasX=costManaType==MagicCostManaType.Generic&&cost.hasX();
 
         // Fast implementation when minimum amount is 1 without X.
         if (minAmount==1&&!hasX) {
@@ -215,13 +215,13 @@ public class MagicPayManaCostResultBuilder {
 
     /** Works only for all the remaining colorless mana. */
     boolean useAllManaSources(final MagicCostManaType type) {
-        if (activationsSize>cost.getMinimumAmount()||type!=MagicCostManaType.Colorless) {
+        if (activationsSize>cost.getMinimumAmount()||type!=MagicCostManaType.Generic) {
             return false;
         }
         for (final MagicSourceManaActivation activation : activations) {
             final MagicSourceManaActivation sourceActivation=new MagicSourceManaActivation(game,activation.permanent);
             if (sourceActivation.available) {
-                sourceActivation.produce(game,MagicCostManaType.Colorless);
+                sourceActivation.produce(game,MagicCostManaType.Generic);
             }
         }
         return true;

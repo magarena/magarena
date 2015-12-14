@@ -69,7 +69,7 @@ public class MagicBuilderManaCost {
     }
 
     public void setXCount(final int amount) {
-        addType(MagicCostManaType.Colorless,amount);
+        addType(MagicCostManaType.Generic,amount);
         XCount = amount;
     }
 

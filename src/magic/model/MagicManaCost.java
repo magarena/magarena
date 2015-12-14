@@ -92,7 +92,7 @@ public class MagicManaCost {
         if ("X".equals(symbol)) {
             XCountArr[0]++;
         } else if (isNumeric(symbol)) {
-            addType(MagicCostManaType.Colorless,Integer.parseInt(symbol),convertedArr);
+            addType(MagicCostManaType.Generic,Integer.parseInt(symbol),convertedArr);
         } else {
             for (final MagicCostManaType type : MagicCostManaType.values()) {
                 if (type.getText().equals(typeText)) {
@@ -136,7 +136,7 @@ public class MagicManaCost {
 
         for (final MagicCostManaType type : order) {
             int amount=amounts[type.ordinal()];
-            if (type == MagicCostManaType.Colorless) {
+            if (type == MagicCostManaType.Generic) {
                 colorless+=amount;
             } else {
                 for (;amount>0;amount--) {
@@ -146,7 +146,7 @@ public class MagicManaCost {
         }
 
         for (;colorless>0;colorless--) {
-            types.add(MagicCostManaType.Colorless);
+            types.add(MagicCostManaType.Generic);
         }
 
         return types;
@@ -155,7 +155,7 @@ public class MagicManaCost {
     public int getColorFlags() {
         int colorFlags = 0;
         for (final MagicCostManaType costType : order) {
-            if (costType != MagicCostManaType.Colorless) {
+            if (costType != MagicCostManaType.Generic) {
                 for (final MagicManaType manaType : costType.getTypes()) {
                     colorFlags |= manaType.getColor().getMask();
                 }
@@ -173,7 +173,7 @@ public class MagicManaCost {
         //add others
         for (final MagicCostManaType type : getCanonicalOrder(amounts)) {
             final int amt = amounts[type.ordinal()];
-            if (type == MagicCostManaType.Colorless && amt > 0) {
+            if (type == MagicCostManaType.Generic && amt > 0) {
                 sb.append('{').append(amt).append('}');
                 continue;
             }
@@ -242,7 +242,7 @@ public class MagicManaCost {
         }
         for (final MagicCostManaType type : order) {
             int amount = amounts[type.ordinal()];
-            if (type == MagicCostManaType.Colorless) {
+            if (type == MagicCostManaType.Generic) {
                 while (amount > 16) {
                     icons.add(COLORLESS_ICONS[16]);
                     amount-=16;
@@ -273,7 +273,7 @@ public class MagicManaCost {
         int maxSingleCount=0;
         for (final MagicCostManaType type : order) {
             final int amount = amounts[type.ordinal()];
-            if (type == MagicCostManaType.Colorless || amount == 0) {
+            if (type == MagicCostManaType.Generic || amount == 0) {
                 continue;
             }
             final MagicManaType[] profileTypes = type.getTypes(profile);
@@ -319,7 +319,7 @@ public class MagicManaCost {
         for (final MagicCostManaType type : order) {
             aBuilderCost.addType(type,amounts[type.ordinal()]);
         }
-        aBuilderCost.addType(MagicCostManaType.Colorless,x);
+        aBuilderCost.addType(MagicCostManaType.Generic,x);
         aBuilderCost.compress();
     }
 

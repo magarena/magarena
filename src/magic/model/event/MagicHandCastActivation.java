@@ -140,7 +140,7 @@ public class MagicHandCastActivation extends MagicActivation<MagicCard> implemen
                     new MagicPayManaCostEvent(
                         source, 
                         source.getCost().reduce(
-                            MagicCostManaType.Colorless, 
+                            MagicCostManaType.Generic, 
                             source.getController().getNrOfPermanents(filter)
                         )
                     )
