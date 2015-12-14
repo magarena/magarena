@@ -5,6 +5,6 @@ removal=1
 rarity=C
 type=Instant
 cost={G}
+effect=Destroy target artifact or enchantment.~Its controller gains 4 life.
 timing=removal
-requires_groovy_code
 oracle=Destroy target artifact or enchantment. Its controller gains 4 life.

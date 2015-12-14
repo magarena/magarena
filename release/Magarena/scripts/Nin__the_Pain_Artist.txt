@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Vedalken,Wizard
 cost={U}{R}
 pt=1/1
+ability={X}{U}{R}, {T}: SN deals X damage to target creature.~That creature's controller draws X cards.
 timing=main
-requires_groovy_code
 oracle={X}{U}{R}, {T}: Nin, the Pain Artist deals X damage to target creature. That creature's controller draws X cards.

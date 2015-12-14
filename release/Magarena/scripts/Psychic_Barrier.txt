@@ -4,6 +4,6 @@ value=3.476
 rarity=C
 type=Instant
 cost={U}{U}
+effect=Counter target creature spell.~Its controller loses 1 life.
 timing=counter
-requires_groovy_code
 oracle=Counter target creature spell. Its controller loses 1 life.

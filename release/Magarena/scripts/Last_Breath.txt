@@ -4,6 +4,6 @@ value=2.682
 rarity=C
 type=Instant
 cost={1}{W}
+effect=Exile target creature with power 2 or less.~Its controller gains 4 life.
 timing=removal
-requires_groovy_code
 oracle=Exile target creature with power 2 or less. Its controller gains 4 life.

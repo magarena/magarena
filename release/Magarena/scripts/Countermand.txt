@@ -4,6 +4,6 @@ value=2.143
 rarity=C
 type=Instant
 cost={2}{U}{U}
+effect=Counter target spell.~Its controller puts the top four cards of his or her library into his or her graveyard.
 timing=counter
-requires_groovy_code
 oracle=Counter target spell. Its controller puts the top four cards of his or her library into his or her graveyard.

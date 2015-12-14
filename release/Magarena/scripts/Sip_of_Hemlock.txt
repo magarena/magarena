@@ -4,6 +4,6 @@ value=2.011
 rarity=C
 type=Sorcery
 cost={4}{B}{B}
+effect=Destroy target creature.~Its controller loses 2 life.
 timing=main
-requires_groovy_code=Launch Party
 oracle=Destroy target creature. Its controller loses 2 life.

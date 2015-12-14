@@ -6,6 +6,7 @@ type=Legendary,Creature
 subtype=Human,Rogue
 cost={1}{W}{U}
 pt=2/2
+ability={W}{U}, {T}: Put a bribery counter on target creature you don't control.~Its controller draws a card.
 timing=main
 requires_groovy_code
 oracle={W}{U}, {T}: Put a bribery counter on target creature you don't control. Its controller draws a card.\nCreatures with bribery counters on them can't attack or block.

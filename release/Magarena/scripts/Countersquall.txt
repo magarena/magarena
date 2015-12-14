@@ -4,6 +4,6 @@ value=3.975
 rarity=U
 type=Instant
 cost={U}{B}
+effect=Counter target noncreature spell.~Its controller loses 2 life.
 timing=counter
-requires_groovy_code
 oracle=Counter target noncreature spell. Its controller loses 2 life.

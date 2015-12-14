@@ -4,6 +4,6 @@ value=1.882
 rarity=C
 type=Sorcery
 cost={4}{R}
+effect=Destroy target artifact or land.~Its controller loses 1 life.
 timing=main
-requires_groovy_code
 oracle=Destroy target artifact or land. Its controller loses 1 life.

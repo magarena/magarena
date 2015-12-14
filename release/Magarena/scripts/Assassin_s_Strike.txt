@@ -4,6 +4,6 @@ value=1.622
 rarity=U
 type=Sorcery
 cost={4}{B}{B}
+effect=Destroy target creature.~Its controller discards a card.
 timing=main
-requires_groovy_code
 oracle=Destroy target creature. Its controller discards a card.

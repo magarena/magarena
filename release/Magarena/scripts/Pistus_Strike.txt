@@ -4,6 +4,6 @@ value=2.660
 rarity=C
 type=Instant
 cost={2}{G}
+effect=Destroy target creature with flying.~Its controller gets a poison counter.
 timing=removal
-requires_groovy_code
 oracle=Destroy target creature with flying. Its controller gets a poison counter.

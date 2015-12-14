@@ -4,6 +4,6 @@ value=3.688
 rarity=U
 type=Instant
 cost={2}{U}{U}
+effect=Counter target spell.~Its controller discards a card.
 timing=counter
-requires_groovy_code
 oracle=Counter target spell. Its controller discards a card.

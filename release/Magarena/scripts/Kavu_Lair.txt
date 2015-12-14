@@ -4,6 +4,6 @@ value=3.757
 rarity=R
 type=Enchantment
 cost={2}{G}
+ability=Whenever a creature with power 4 or greater enters the battlefield, RN's controller draws a card.
 timing=enchantment
-requires_groovy_code
 oracle=Whenever a creature with power 4 or greater enters the battlefield, its controller draws a card.

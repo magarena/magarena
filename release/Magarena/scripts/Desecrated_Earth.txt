@@ -4,6 +4,6 @@ value=3.076
 rarity=C
 type=Sorcery
 cost={4}{B}
+effect=Destroy target land.~Its controller discards a card.
 timing=main
-requires_groovy_code
 oracle=Destroy target land. Its controller discards a card.
