@@ -162,7 +162,7 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
             helpButton.addActionListener(new AbstractAction() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-                    URLUtils.openURL(URLUtils.URL_WIKI + "UIDownloadImages");
+                    URLUtils.openURL(URLUtils.URL_WIKI + "Download-images");
                 }
             });
             hintPanel.addHintSource(helpButton, String.format("<b>%s</b><br>%s",
