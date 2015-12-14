@@ -54,12 +54,16 @@ public final class JsonOrgParser {
         }
     }
 
+    private static String getJsonString(JSONObject jsonDeck, String key) {
+        return !jsonDeck.isNull(key) ? jsonDeck.getString(key) : "";
+    }
+
     private static String getDeckDescription(final JSONObject jsonDeck) {
         final StringBuffer sb = new StringBuffer();
-        sb.append("Author: ").append(jsonDeck.getString("author"));
+        sb.append("Author: ").append(getJsonString(jsonDeck, "author"));
         sb.append("\nRating: ").append(jsonDeck.getString("rating"));
-        sb.append("\nReleased: ").append(getFormattedReleaseDate(jsonDeck.getString("releaseDate")));
-        if (!jsonDeck.getString("description").trim().isEmpty()) {
+        sb.append("\nReleased: ").append(getFormattedReleaseDate(getJsonString(jsonDeck, "releaseDate")));
+        if (!getJsonString(jsonDeck, "description").trim().isEmpty()) {
             sb.append("\n\n").append(jsonDeck.getString("description"));
         }
         return sb.toString();
