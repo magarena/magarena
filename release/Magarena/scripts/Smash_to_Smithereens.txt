@@ -5,6 +5,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={1}{R}
+effect=Destroy target artifact.~SN deals 3 damage to that artifact's controller.
 timing=removal
-requires_groovy_code
 oracle=Destroy target artifact. Smash to Smithereens deals 3 damage to that artifact's controller.

@@ -6,6 +6,6 @@ type=Creature
 subtype=Goblin,Rogue
 cost={1}{R}
 pt=2/1
+ability={R}, Sacrifice SN: Destroy target creature with defender.~SN deals 2 damage to that creature's controller.
 timing=removal
-requires_groovy_code
 oracle={R}, Sacrifice Grotag Siege-Runner: Destroy target creature with defender. Grotag Siege-Runner deals 2 damage to that creature's controller.

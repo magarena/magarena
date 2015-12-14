@@ -4,6 +4,6 @@ value=3.242
 rarity=U
 type=Sorcery
 cost={2}{R}
+effect=Destroy target Plains or Island.~SN deals 3 damage to that land's controller.
 timing=main
-requires_groovy_code
 oracle=Destroy target Plains or Island. Cryoclasm deals 3 damage to that land's controller.

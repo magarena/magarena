@@ -4,6 +4,6 @@ value=3.250
 rarity=U
 type=Sorcery
 cost={2}{R}
+effect=Destroy target Mountain.~SN deals 3 damage to that land's controller.
 timing=main
-requires_groovy_code
 oracle=Destroy target Mountain. Peak Eruption deals 3 damage to that land's controller.

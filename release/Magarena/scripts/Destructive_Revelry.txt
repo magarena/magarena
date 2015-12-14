@@ -4,6 +4,6 @@ value=3.531
 rarity=U
 type=Instant
 cost={R}{G}
+effect=Destroy target artifact or enchantment.~SN deals 2 damage to that permanent's controller.
 timing=removal
-requires_groovy_code
 oracle=Destroy target artifact or enchantment. Destructive Revelry deals 2 damage to that permanent's controller.
