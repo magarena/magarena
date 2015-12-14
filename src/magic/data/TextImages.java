@@ -33,6 +33,7 @@ public class TextImages {
         TEXT_ICONS.put("{X}", MagicIcon.MANA_X);
         TEXT_ICONS.put("{S}", MagicIcon.MANA_SNOW);
 
+        TEXT_ICONS.put("{C}", MagicIcon.MANA_COLORLESS);
         TEXT_ICONS.put("{W}", MagicIcon.MANA_WHITE);
         TEXT_ICONS.put("{U}", MagicIcon.MANA_BLUE);
         TEXT_ICONS.put("{B}", MagicIcon.MANA_BLACK);

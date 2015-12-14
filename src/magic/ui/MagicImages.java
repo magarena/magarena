@@ -169,7 +169,7 @@ public final class MagicImages {
     public static ImageIcon getIcon(final MagicManaType mtype) {
         switch (mtype) {
             case Colorless:
-                return getSmallManaIcon(MagicIcon.MANA_1);
+                return getSmallManaIcon(MagicIcon.MANA_COLORLESS);
             case Snow:
                 return getSmallManaIcon(MagicIcon.MANA_SNOW);
             case Black:
