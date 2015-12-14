@@ -15,16 +15,12 @@ import magic.model.MagicType;
 import magic.model.MagicCounterType;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicEvent;
-import magic.model.event.MagicSourceActivation;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetNone;
 
-import java.util.Collection;
-import java.util.Collections;
-
-public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicSource, MagicTarget, MagicMappable<MagicItemOnStack> {
+public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicTarget, MagicMappable<MagicItemOnStack> {
 
     private final MagicSource source;
     private final MagicPlayer controller;
@@ -223,17 +219,6 @@ public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicS
             getStateId(choiceResults)
         });
     }
-    
-    @Override
-    public MagicGame getGame() {
-        return getSource().getGame();
-    }
-
-    @Override
-    public Collection<MagicSourceActivation<? extends MagicSource>> getSourceActivations() {
-        return Collections.emptyList();
-    }
-
    
     public abstract boolean isSpell();
 

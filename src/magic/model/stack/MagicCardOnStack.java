@@ -22,7 +22,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 
-public class MagicCardOnStack extends MagicItemOnStack {
+public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
 
     private MagicLocationType moveLocation=MagicLocationType.Graveyard;
     private MagicLocationType fromLocation=MagicLocationType.OwnersHand;
@@ -179,6 +179,16 @@ public class MagicCardOnStack extends MagicItemOnStack {
     @Override
     public boolean canBeCountered() {
         return !getCardDefinition().hasAbility(MagicAbility.CannotBeCountered);
+    }
+
+    @Override
+    public MagicGame getGame() {
+        return getSource().getGame();
+    }
+
+    @Override
+    public Collection<MagicSourceActivation<? extends MagicSource>> getSourceActivations() {
+        return Collections.emptyList();
     }
 
     public int getKicker() {
