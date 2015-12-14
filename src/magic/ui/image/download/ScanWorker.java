@@ -16,7 +16,7 @@ class ScanWorker extends SwingWorker<ImagesDownloadList, Void> {
         this.downloadType = aType;
     }
 
-    public static ImagesDownloadList getImagesDownloadList(IScanListener aListener, DownloadMode aMode) {
+    static ImagesDownloadList getImagesDownloadList(IScanListener aListener, DownloadMode aMode) {
         // synchronized to speed up scanning by preventing
         // multiple scanners accessing filesystem at the same time.
         synchronized (ScanWorker.class) {
