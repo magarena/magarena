@@ -35,11 +35,10 @@ public class MulliganScreen
     implements IStatusBar, IActionBar {
 
     // translatable string
-    private static final String _S1 = "Mulligan?";
+    private static final String _S1 = "Vancouver Mulligan";
     private static final String _S2 = "Close";
     private static final String _S3 = "Play this hand";
-    private static final String _S4 = "Mulligan";
-    private static final String _S5 = "Draw a new hand with one less card.";
+    private static final String _S5 = "Returns this hand to your library then draws a new hand with one less card.<br>You may scry 1 if your opening hand has fewer cards than your starting hand size.";
     private static final String _S6 = "You play %s";
     private static final String _S7 = "first.";
     private static final String _S8 = "second.";
@@ -146,7 +145,7 @@ public class MulliganScreen
         final List<MenuButton> buttons = new ArrayList<>();
         buttons.add(new ActionBarButton(
                         MagicImages.getIcon(MagicIcon.MULLIGAN_ICON),
-                        UiString.get(_S4), UiString.get(_S5),
+                        UiString.get(_S1), UiString.get(_S5),
                         takeMulliganAction)
                 );
         return buttons;
