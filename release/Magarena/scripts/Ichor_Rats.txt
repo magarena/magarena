@@ -6,7 +6,7 @@ type=Creature
 subtype=Rat
 cost={1}{B}{B}
 pt=2/1
-ability=infect
+ability=Infect;\
+        When SN enters the battlefield, each player gets a poison counter.
 timing=main
-requires_groovy_code
 oracle=Infect\nWhen Ichor Rats enters the battlefield, each player gets a poison counter.

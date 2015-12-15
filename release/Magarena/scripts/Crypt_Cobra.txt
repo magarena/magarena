@@ -6,6 +6,6 @@ type=Creature
 subtype=Snake
 cost={3}{B}
 pt=3/3
+ability=Whenever SN attacks and isn't blocked, defending player gets a poison counter.
 timing=main
-requires_groovy_code
 oracle=Whenever Crypt Cobra attacks and isn't blocked, defending player gets a poison counter.
