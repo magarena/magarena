@@ -4,6 +4,6 @@ value=2.763
 rarity=R
 type=Sorcery
 cost={7}{W}{W}
+effect=Target player's life total becomes 20.
 timing=main
-requires_groovy_code
 oracle=Target player's life total becomes 20.

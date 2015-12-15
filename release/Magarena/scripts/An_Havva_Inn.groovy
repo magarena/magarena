@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "PN gains X + 1 life, where X is the number of green creatures on the battlefield."
+                "PN gains X plus 1 life, where X is the number of green creatures on the battlefield."
             );
         }
         @Override
