@@ -85,19 +85,21 @@ public class DuelDecksScreen
         new ScreenOptions(getFrame());
     }
 
+    private void startNextGame() {
+        final DuelPlayerConfig[] players = screenContent.getDuel().getPlayers();
+        if (isLegalDeckAndShowErrors(players[0]) && isLegalDeckAndShowErrors(players[1])) {
+            saveDuel();
+            ScreenController.showDuelGameScreen(screenContent.getDuel());
+        }
+    }
+
     @Override
     public MenuButton getRightAction() {
         if (!screenContent.getDuel().isFinished()) {
             return new MenuButton(getStartDuelCaption(), new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
-                    final DuelPlayerConfig[] players = screenContent.getDuel().getPlayers();
-
-                    if (isLegalDeckAndShowErrors(players[0].getDeck(), players[0].getName()) &&
-                       isLegalDeckAndShowErrors(players[1].getDeck(), players[1].getName())) {
-                        saveDuel();
-                        getFrame().nextGame();
-                    }
+                    startNextGame();
                 }
             });
         } else {
@@ -240,12 +242,12 @@ public class DuelDecksScreen
 
     }
 
-    private boolean isLegalDeckAndShowErrors(final MagicDeck deck, final String playerName) {
+    private boolean isLegalDeckAndShowErrors(DuelPlayerConfig aPlayer) {
         final String brokenRulesText =
-                MagicDeckConstructionRule.getRulesText(MagicDeckConstructionRule.checkDeck(deck));
+                MagicDeckConstructionRule.getRulesText(MagicDeckConstructionRule.checkDeck(aPlayer.getDeck()));
 
         if (brokenRulesText.length() > 0) {
-            ScreenController.showWarningMessage(UiString.get(_S14, playerName, brokenRulesText));
+            ScreenController.showWarningMessage(UiString.get(_S14, aPlayer.getName(), brokenRulesText));
             return false;
         }
 
