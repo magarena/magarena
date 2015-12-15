@@ -49,6 +49,54 @@ import magic.model.trigger.PreventDamageTrigger;
 import magic.model.trigger.ReboundTrigger;
 
 public enum MagicRuleEventAction {
+    ChooseOneOfThree(
+        "choose one — \\(1\\) (?<effect1>.*) \\(2\\) (?<effect2>.*) \\(3\\) (?<effect3>.*)",
+        MagicTiming.Pump,
+        "Modal"
+    ) {
+        @Override
+        public MagicChoice getChoice(final Matcher matcher) {
+            final MagicSourceEvent e1 = MagicRuleEventAction.create(matcher.group("effect1"));
+            final MagicSourceEvent e2 = MagicRuleEventAction.create(matcher.group("effect2"));
+            final MagicSourceEvent e3 = MagicRuleEventAction.create(matcher.group("effect3"));
+            return new MagicOrChoice(e1.getChoice(), e2.getChoice(), e3.getChoice());
+        }
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicSourceEvent e1 = MagicRuleEventAction.create(matcher.group("effect1"));
+            final MagicSourceEvent e2 = MagicRuleEventAction.create(matcher.group("effect2"));
+            final MagicSourceEvent e3 = MagicRuleEventAction.create(matcher.group("effect3"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.executeModalEvent(game, e1, e2, e3);
+                }
+            };
+        }
+    },
+    ChooseOneOfTwo(
+        "choose one — \\(1\\) (?<effect1>.*) \\(2\\) (?<effect2>.*)",
+        MagicTiming.Pump,
+        "Modal"
+    ) {
+        @Override
+        public MagicChoice getChoice(final Matcher matcher) {
+            final MagicSourceEvent e1 = MagicRuleEventAction.create(matcher.group("effect1"));
+            final MagicSourceEvent e2 = MagicRuleEventAction.create(matcher.group("effect2"));
+            return new MagicOrChoice(e1.getChoice(), e2.getChoice());
+        }
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicSourceEvent e1 = MagicRuleEventAction.create(matcher.group("effect1"));
+            final MagicSourceEvent e2 = MagicRuleEventAction.create(matcher.group("effect2"));
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    event.executeModalEvent(game, e1, e2);
+                }
+            };
+        }
+    },
     DestroyAtEndOfCombat(
         "destroy " + ARG.PERMANENTS + " at end of combat\\.",
         MagicTargetHint.Negative,
@@ -1674,7 +1722,7 @@ public enum MagicRuleEventAction {
         }
     },
     PutTokens(
-        "put(s)? " +  ARG.AMOUNT + " (?<name>[^\\.]*token[^\\.]*) onto the battlefield(\\. | )?(?<mods>.+?)??( )?(for each " + ARG.WORDRUN + ")?\\.",
+        ARG.PLAYERS + "( )?put(s)? " +  ARG.AMOUNT + " (?<name>[^\\.]*token[^\\.]*) onto the battlefield(\\. | )?(?<mods>.+?)??( )?(for each " + ARG.WORDRUN + ")?\\.",
         MagicTiming.Token,
         "Token"
     ) {
@@ -1685,6 +1733,7 @@ public enum MagicRuleEventAction {
             final String tokenName = matcher.group("name").replace("tokens", "token");
             final MagicCardDefinition tokenDef = CardDefinitions.getToken(tokenName);
             final List<MagicPlayMod> mods = MagicPlayMod.build(matcher.group("mods"));
+            final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -1693,12 +1742,14 @@ public enum MagicRuleEventAction {
                     if (eachCount != MagicAmountFactory.One) {
                         game.logAppendMessage(event.getPlayer(), "(" + total + ")");
                     }
-                    for (int i = 0; i < total; i++) {
-                        game.doAction(new PlayTokenAction(
-                            event.getPlayer(),
-                            tokenDef,
-                            mods
-                        ));
+                    for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
+                        for (int i = 0; i < total; i++) {
+                            game.doAction(new PlayTokenAction(
+                                it,
+                                tokenDef,
+                                mods
+                            ));
+                        }
                     }
                 }
             };
@@ -2091,54 +2142,6 @@ public enum MagicRuleEventAction {
         public MagicCondition[] getConditions(final Matcher matcher) {
             return new MagicCondition[] {
                 MagicCondition.NOT_MONSTROUS_CONDITION,
-            };
-        }
-    },
-    ChooseOneOfThree(
-        "choose one — \\(1\\) (?<effect1>.*) \\(2\\) (?<effect2>.*) \\(3\\) (?<effect3>.*)",
-        MagicTiming.Pump,
-        "Modal"
-    ) {
-        @Override
-        public MagicChoice getChoice(final Matcher matcher) {
-            final MagicSourceEvent e1 = MagicRuleEventAction.create(matcher.group("effect1"));
-            final MagicSourceEvent e2 = MagicRuleEventAction.create(matcher.group("effect2"));
-            final MagicSourceEvent e3 = MagicRuleEventAction.create(matcher.group("effect3"));
-            return new MagicOrChoice(e1.getChoice(), e2.getChoice(), e3.getChoice());
-        }
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final MagicSourceEvent e1 = MagicRuleEventAction.create(matcher.group("effect1"));
-            final MagicSourceEvent e2 = MagicRuleEventAction.create(matcher.group("effect2"));
-            final MagicSourceEvent e3 = MagicRuleEventAction.create(matcher.group("effect3"));
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    event.executeModalEvent(game, e1, e2, e3);
-                }
-            };
-        }
-    },
-    ChooseOneOfTwo(
-        "choose one — \\(1\\) (?<effect1>.*) \\(2\\) (?<effect2>.*)",
-        MagicTiming.Pump,
-        "Modal"
-    ) {
-        @Override
-        public MagicChoice getChoice(final Matcher matcher) {
-            final MagicSourceEvent e1 = MagicRuleEventAction.create(matcher.group("effect1"));
-            final MagicSourceEvent e2 = MagicRuleEventAction.create(matcher.group("effect2"));
-            return new MagicOrChoice(e1.getChoice(), e2.getChoice());
-        }
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final MagicSourceEvent e1 = MagicRuleEventAction.create(matcher.group("effect1"));
-            final MagicSourceEvent e2 = MagicRuleEventAction.create(matcher.group("effect2"));
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    event.executeModalEvent(game, e1, e2);
-                }
             };
         }
     },
