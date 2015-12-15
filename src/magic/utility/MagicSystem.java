@@ -52,8 +52,12 @@ final public class MagicSystem {
         }
     };
 
+    public static void setIsTestGame(boolean b) {
+        System.setProperty("testGame", b ? "Y" : "");
+    }
+
     public static boolean isTestGame() {
-        return (System.getProperty("testGame") != null);
+        return (System.getProperty("testGame") != null && !System.getProperty("testGame").isEmpty());
     }
 
     public static boolean isDevMode() {

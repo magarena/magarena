@@ -40,14 +40,27 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
     private final GameLoadingMessage loadingMessage = new GameLoadingMessage();
 
     public DuelGameScreen(final MagicDuel duel) {
-        new StartupWorker(duel).execute();
+        config.setTextView(false);
+        if (config.showGameLoadingScreen()) {
+            new StartupWorker(duel).execute();
+        } else {            
+            showScreen(duel.nextGame());
+        }
     }
 
     // CTR - called when using -DtestGame=X argument.
     public DuelGameScreen(final MagicGame game) {
-        setContent(getScreenContent(game));
-        duelPane.setVisible(true);
+        showScreen(game);
+    }
+
+    private void showScreen(MagicGame aGame) {
+        setContent(getScreenContent(aGame));
+        if (!config.showMulliganScreen() || MagicSystem.isAiVersusAi() || MagicSystem.isTestGame()) {
+            duelPane.setVisible(true);
+            quickFixSpaceKeyShortcut();
+        }
         startGameThread();
+        loadingMessage.setEnabled(false);
     }
 
     private DuelLayeredPane getScreenContent(final MagicGame aGame) {
@@ -208,7 +221,6 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
         @Override
         protected MagicGame doInBackground() throws Exception {
             final long start_time = System.currentTimeMillis();
-            config.setTextView(false);
             final MagicGame game = duel.nextGame();
             final long duration = System.currentTimeMillis() - start_time;
             Thread.sleep(duration < MINWAIT ? MINWAIT - duration : 1);
@@ -217,17 +229,15 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
 
         @Override
         protected void done() {
+            showScreen(getNextGame());
+        }
+
+        private MagicGame getNextGame() {
             try {
-                setContent(getScreenContent(get()));
-                if (!config.showMulliganScreen() || MagicSystem.isAiVersusAi()) {
-                    duelPane.setVisible(true);
-                    quickFixSpaceKeyShortcut();
-                }
-            } catch (InterruptedException | ExecutionException e1) {
-                throw new RuntimeException(e1);
+                return get();
+            } catch (InterruptedException | ExecutionException ex) {
+                throw new RuntimeException(ex);
             }
-            startGameThread();
-            loadingMessage.setEnabled(false);
         }
 
     }

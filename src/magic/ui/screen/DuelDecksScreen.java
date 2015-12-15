@@ -1,5 +1,6 @@
 package magic.ui.screen;
 
+import java.awt.Cursor;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.List;
@@ -99,7 +100,9 @@ public class DuelDecksScreen
             return new MenuButton(getStartDuelCaption(), new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {
+                    setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
                     startNextGame();
+                    setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
                 }
             });
         } else {

@@ -39,6 +39,7 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
     private static final AlertPanel alertPanel = new AlertPanel();
 
     public MainMenuScreen() {
+        MagicSystem.setIsTestGame(false);
         setContent(getScreenContent());
         alertPanel.refreshAlerts();
     }
@@ -139,6 +140,7 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
                     new AbstractAction() {
                         @Override
                         public void actionPerformed(final ActionEvent e) {
+                            MagicSystem.setIsTestGame(true);
                             loadSavedGame();
                         }
                     }
@@ -150,6 +152,7 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
                     new AbstractAction() {
                         @Override
                         public void actionPerformed(final ActionEvent e) {
+                            MagicSystem.setIsTestGame(true);
                             new GameStateRunner(getFrame());
                         }
                     }
