@@ -4,6 +4,6 @@ value=4.561
 rarity=U
 type=Instant
 cost={2}{G}
+effect=Destroy target permanent.~Its controller puts a 3/3 green Beast creature token onto the battlefield.
 timing=removal
-requires_groovy_code
 oracle=Destroy target permanent. Its controller puts a 3/3 green Beast creature token onto the battlefield.

@@ -8,6 +8,6 @@ type=Tribal,Instant
 subtype=Shapeshifter
 cost={2}{W}
 ability=Changeling
+effect=Exile target creature.~Its controller puts a 1/1 colorless Shapeshifter creature token with changeling onto the battlefield.
 timing=removal
-requires_groovy_code
 oracle=Changeling\nExile target creature. Its controller puts a 1/1 colorless Shapeshifter creature token with changeling onto the battlefield.

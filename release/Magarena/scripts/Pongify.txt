@@ -5,6 +5,6 @@ removal=3
 rarity=U
 type=Instant
 cost={U}
+effect=Destroy target creature. It can't be regenerated.~That creature's controller puts a 3/3 green Ape creature token onto the battlefield.
 timing=removal
-requires_groovy_code
 oracle=Destroy target creature. It can't be regenerated. That creature's controller puts a 3/3 green Ape creature token onto the battlefield.

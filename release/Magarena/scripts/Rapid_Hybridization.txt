@@ -4,6 +4,6 @@ value=3.911
 rarity=U
 type=Instant
 cost={U}
+effect=Destroy target creature. It can't be regenerated.~That creature's controller puts a 3/3 green Frog Lizard creature token onto the battlefield.
 timing=removal
-requires_groovy_code
 oracle=Destroy target creature. It can't be regenerated. That creature's controller puts a 3/3 green Frog Lizard creature token onto the battlefield.
