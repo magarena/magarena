@@ -900,6 +900,25 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    SetLife(
+        ARG.PLAYERS + "('s|r) life total becomes " + ARG.AMOUNT + "\\.",
+        MagicTiming.Removal,
+        "=Life"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final int amount = ARG.amount(matcher);
+            final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
+                        game.doAction(new ChangeLifeAction(it, amount - it.getLife()));
+                    }
+                }
+            };
+        }
+    },
     Pump(
         ARG.PERMANENTS + " get(s)? (?<pt>[0-9+]+/[0-9+]+) until end of turn( for each " + ARG.WORDRUN + ")?\\.",
         MagicTargetHint.Positive,
