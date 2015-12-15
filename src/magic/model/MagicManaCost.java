@@ -155,7 +155,8 @@ public class MagicManaCost {
     public int getColorFlags() {
         int colorFlags = 0;
         for (final MagicCostManaType costType : order) {
-            if (costType != MagicCostManaType.Generic) {
+            if (costType != MagicCostManaType.Generic &&
+                costType != MagicCostManaType.Colorless) {
                 for (final MagicManaType manaType : costType.getTypes()) {
                     colorFlags |= manaType.getColor().getMask();
                 }
