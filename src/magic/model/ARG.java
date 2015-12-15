@@ -133,7 +133,7 @@ public class ARG {
         }
     }
     
-    public static final String PLAYERS = "((?<rnc>rn's controller)|(?<tnc>(that [^ ]+'s|its) controller)|(?<rn>rn)|(?<pn>(pn||you))|" + CHOICE + "|(?<group>[^\\.]+?) )";
+    public static final String PLAYERS = "((?<rnc>rn's controller)|(?<tnc>(that [^ ]+'s|its) controller)|(?<rn>rn)|(?<pn>(pn||you))|" + CHOICE + "|(?<group>[^\\.]+?))";
     public static List<MagicPlayer> players(final MagicEvent event, final Matcher m, final MagicTargetFilter<MagicPlayer> filter) {
         if (m.group("rnc") != null) {
             return Collections.singletonList(event.getRefObject().getController());
