@@ -198,7 +198,7 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
 
     private final class StartupWorker extends SwingWorker<MagicGame, Void> {
 
-        private final static int MINWAIT = 3000; // millisecs
+        private final static int MINWAIT = 1000; // millisecs
         private final MagicDuel duel;
 
         public StartupWorker(final MagicDuel aDuel) {
