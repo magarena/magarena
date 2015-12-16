@@ -128,29 +128,29 @@ public class DuelDecksScreen
         final List<MenuButton> buttons = new ArrayList<>();
         if (screenContent.getDuel().getGamesPlayed() == 0) {
             buttons.add(new ActionBarButton(
-                            MagicImages.getIcon(MagicIcon.DECK_ICON),
-                            UiString.get(_S5), UiString.get(_S6),
-                            new AbstractAction() {
-                                @Override
-                                public void actionPerformed(final ActionEvent e) {
-                                    ScreenController.showDeckEditor(getActiveDeck());
-                                }
-                            })
-                    );
+                MagicImages.getIcon(MagicIcon.DECK_ICON),
+                UiString.get(_S5), UiString.get(_S6),
+                new AbstractAction() {
+                    @Override
+                    public void actionPerformed(final ActionEvent e) {
+                        ScreenController.showDeckEditor(getActiveDeck());
+                    }
+                })
+            );
             buttons.add(new ActionBarButton(
-                            MagicImages.getIcon(MagicIcon.SWAP_ICON),
-                            UiString.get(_S7), UiString.get(_S8),
-                            new AbstractAction() {
-                                @Override
-                                public void actionPerformed(final ActionEvent e) {
-                                    try {
-                                        swapDecks();
-                                    } catch (InvalidDeckException ex) {
-                                        ScreenController.showWarningMessage(ex.getMessage());
-                                    }
-                                }
-                            })
-                    );
+                MagicImages.getIcon(MagicIcon.SWAP_ICON),
+                UiString.get(_S7), UiString.get(_S8),
+                new AbstractAction() {
+                    @Override
+                    public void actionPerformed(final ActionEvent e) {
+                        try {
+                            swapDecks();
+                        } catch (InvalidDeckException ex) {
+                            ScreenController.showWarningMessage(ex.getMessage());
+                        }
+                    }
+                })
+            );
             buttons.add(SampleHandActionButton.createInstance(getActiveDeck()));
         } else {
             if (screenContent.getDuel().isFinished()) {
@@ -158,33 +158,33 @@ public class DuelDecksScreen
                 buttons.add(new MenuButton(UiString.get(_S9, duel.getWinningPlayerProfile().getPlayerName()), null));
             } else {
                 buttons.add(new ActionBarButton(
-                                MagicImages.getIcon(MagicIcon.REFRESH_ICON),
-                                UiString.get(_S10), UiString.get(_S11),
-                                new AbstractAction() {
-                                    @Override
-                                    public void actionPerformed(final ActionEvent e) {
-                                        try {
-                                            getFrame().restartDuel();
-                                        } catch (InvalidDeckException ex) {
-                                            ScreenController.showWarningMessage(ex.getMessage());
-                                        }
-                                    }
-                                })
-                        );
+                    MagicImages.getIcon(MagicIcon.REFRESH_ICON),
+                    UiString.get(_S10), UiString.get(_S11),
+                    new AbstractAction() {
+                        @Override
+                        public void actionPerformed(final ActionEvent e) {
+                            try {
+                                getFrame().restartDuel();
+                            } catch (InvalidDeckException ex) {
+                                ScreenController.showWarningMessage(ex.getMessage());
+                            }
+                        }
+                    })
+                );
             }
         }
 
         if (!screenContent.getDuel().isFinished()) {
             buttons.add(new ActionBarButton(
-                            MagicImages.getIcon(MagicIcon.TILED_ICON),
-                            UiString.get(_S12), UiString.get(_S13),
-                            new AbstractAction() {
-                                @Override
-                                public void actionPerformed(final ActionEvent e) {
-                                    ScreenController.showDeckView(getActiveDeck());
-                                }
-                            })
-                    );
+                MagicImages.getIcon(MagicIcon.TILED_ICON),
+                UiString.get(_S12), UiString.get(_S13),
+                new AbstractAction() {
+                    @Override
+                    public void actionPerformed(final ActionEvent e) {
+                        ScreenController.showDeckView(getActiveDeck());
+                    }
+                })
+            );
         }
 
         return buttons;
