@@ -164,7 +164,7 @@ public class GeneralConfig {
     private MessageStyle logMessageStyle = MessageStyle.PLAIN;
     private ImageSizePresets preferredImageSize = ImageSizePresets.SIZE_ORIGINAL;
     private CardTextLanguage cardTextLanguage = CardTextLanguage.ENGLISH;
-    private boolean showGameLoadingScreen = true;
+    private boolean showGameLoadingScreen = false;
 
     private GeneralConfig() { }
 
@@ -636,7 +636,7 @@ public class GeneralConfig {
         AnimationFx.setFlags(Integer.parseInt(properties.getProperty(ANIMATION_FLAGS, "" + AnimationFx.getFlags())));
         preferredImageSize = ImageSizePresets.valueOf(properties.getProperty(PREF_IMAGE_SIZE, ImageSizePresets.SIZE_ORIGINAL.name()));
         cardTextLanguage = CardTextLanguage.valueOf(properties.getProperty(CARD_TEXT_LANG, CardTextLanguage.ENGLISH.name()));
-        showGameLoadingScreen = Boolean.parseBoolean(properties.getProperty(GAME_LOADING_SCREEN, "" + true));
+        showGameLoadingScreen = Boolean.parseBoolean(properties.getProperty(GAME_LOADING_SCREEN, "" + showGameLoadingScreen));
     }
 
     public void load() {
