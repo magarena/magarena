@@ -230,7 +230,13 @@ debug: $(MAG)
 	make 101.t debug=true games=0 flags=-ea || (cat 101.out && false)
 
 %.d: $(MAG)
-	$(DEBUG) -DrndSeed=$* -DselfMode=$(selfMode) -Ddebug=${debug} -DdevMode=${devMode} -Dmagarena.dir=`pwd`/release -jar $^ |& tee $*.log
+	$(DEBUG) \
+	-DrndSeed=$* \
+	-DselfMode=$(selfMode) \
+	-Ddebug=${debug} \
+	-DdevMode=${devMode} \
+	-Dmagarena.dir=`pwd`/release \
+	-jar $^ |& tee $*.log
 
 # Z = 4.4172 (99.999%)
 # E = 0.01
