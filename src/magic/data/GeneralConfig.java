@@ -28,142 +28,157 @@ public class GeneralConfig {
     private static final GeneralConfig INSTANCE = new GeneralConfig();
 
     public static final String CONFIG_FILENAME="general.cfg";
-    private static final String LEFT="left";
-    private static final String TOP="top";
-    private static final String WIDTH="width";
-    private static final String HEIGHT="height";
-    private static final String MAXIMIZED="maximized";
-    private static final String THEME="theme";
-    private static final String AVATAR="avatar";
-    private static final String HIGHLIGHT = "highlight";
-    private static final String SKIP_SINGLE="single";
-    private static final String ALWAYS_PASS="pass";
-    private static final String SMART_TARGET="target";
-    private static final String POPUP_DELAY="popup";
-    private static final String MESSAGE_DELAY = "message";
-    private static final String HIGH_QUALITY="hq";
-    private static final String SOUND="sound";
-    private static final String TOUCHSCREEN = "touchscreen";
-    private static final String MOUSEWHEEL_POPUP = "mousewheel";
-    private static final String FULLSCREEN = "fullScreen";
-    private static final String PREVIEW_CARD_ON_SELECT = "previewCardOnSelect";
-    private static final String SHOW_LOG_MESSAGES = "showLogMessages";
-    private static final String MULLIGAN_SCREEN = "mulliganScreen";
-    private static final String RECENT_DECK = "MostRecentDeckFilename";
-    private static final String CUSTOM_BACKGROUND = "customBackground";
-    private static final String SHOW_MISSING_CARD_DATA = "showMissingCardData";
-    private static final String CARD_IMAGES_PATH = "cardImagesPath";
-    private static final String ANIMATE_GAMEPLAY = "animateGameplay";
-    private static final String DECK_FILE_MAX_LINES = "deckFileMaxLines";
-    private static final String PROXY_SETTINGS = "proxySettings";
-    private static final String FIREMIND_ACCESS_TOKEN = "firemindAccessToken";
-    private static final String NEWTURN_ALERT_DURATION = "newTurnAlertDuration";
-    private static final String LAND_PREVIEW_DURATION = "landPreviewDuration";
-    private static final String NONLAND_PREVIEW_DURATION = "nonLandPreviewDuration";
-    private static final String SPLITVIEW_DECKEDITOR = "splitViewDeckEditor";
-    private static final String OVERLAY_PERMANENT_MIN_HEIGHT = "overlayPermanentMinHeight";
-    private static final String IGNORED_VERSION_ALERT = "ignoredVersionAlert";
-    private static final String UI_SOUND = "uiSound";
-    private static final String PAUSE_GAME_POPUP = "pauseGamePopup";
-    private static final String PLAYABLE_DOWNLOAD_DATE = "imageDownloaderRunDate";
-    private static final String MISSING_DOWNLOAD_DATE = "missingImagesDownloadDate";
-    private static final String DUEL_SIDEBAR_LAYOUT ="duelSidebarLayout";
-    private static final String HIDE_AI_ACTION_PROMPT ="hideAiActionPrompt";
-    private static final String ROLLOVER_COLOR ="rolloverColor";
-    private static final String UI_SOUND_VOLUME = "uiSoundVolume";
-    private static final String TRANSLATION = "translation";
-    private static final String LOG_MESSAGE_STYLE = "logMessageStyle";
-    private static final String ANIMATION_FLAGS = "animationFlags";
-    private static final String PREF_IMAGE_SIZE = "prefImageSize";
-    private static final String CARD_TEXT_LANG = "cardTextLanguage";
-    private static final String GAME_LOADING_SCREEN = "gameLoadingScreen";
 
-    private static final int DEFAULT_LEFT=-1;
-    private static final int DEFAULT_TOP=0;
-    public static final int DEFAULT_WIDTH=1024;
-    public static final int DEFAULT_HEIGHT=600;
-    private static final boolean DEFAULT_MAXIMIZED=false;
-    private static final String DEFAULT_THEME="felt";
-    private static final String DEFAULT_AVATAR="legend";
-    private static final String DEFAULT_HIGHLIGHT = "theme";
-    private static final boolean DEFAULT_TEXT_VIEW = false;
-    private static final boolean DEFAULT_SINGLE=true;
-    private static final boolean DEFAULT_PASS=true;
-    private static final boolean DEFAULT_TARGET=false;
-    private static final int DEFAULT_POPUP_DELAY=300;
-    private static final int DEFAULT_MESSAGE_DELAY = 2000;
-    private static final boolean DEFAULT_HIGH_QUALITY=false;
-    private static final boolean DEFAULT_SOUND=true;
-    private static final boolean DEFAULT_TOUCHSCREEN = false;
-    private static final boolean DEFAULT_MOUSEWHEEL_POPUP = false;
-    private static final boolean DEFAULT_FULLSCREEN = false;
-    private static final boolean DEFAULT_PREVIEW_CARD_ON_SELECT = true;
-    private static final boolean DEFAULT_SHOW_LOG_MESSAGES = true;
-    private static final boolean DEFAULT_MULLIGAN_SCREEN = true;
-    private static final boolean DEFAULT_CUSTOM_BACKGROUND = false;
-    private static final int DEFAULT_DECK_FILE_MAX_LINES = 500;
-    private static final String DEFAULT_PROXY_SETTINGS = "";
-    private static final int DEFAULT_NEWTURN_ALERT_DURATION = 3000; // msecs
-    private static final int DEFAULT_LAND_PREVIEW_DURATION = 5000; // msecs
-    private static final int DEFAULT_NONLAND_PREVIEW_DURATION = 10000; // msecs
-    private static final int DEFAULT_OVERLAY_PERMANENT_MIN_HEIGHT = 30; // pixels
-    private static final boolean DEFAULT_PAUSE_GAME_POPUP = false;
-    private static final String DEFAULT_DOWNLOAD_DATE = "1970-01-01";
-    private static final String DEFAULT_DUEL_SIDEBAR_LAYOUT = "LOGSTACK,PLAYER2,TURNINFO,PLAYER1";
-    private static final boolean DEFAULT_HIDE_AI_ACTION_PROMPT = false;
-    private static final int DEFAULT_ROLLOVER_COLOR = Color.YELLOW.getRGB();
-    private static final int DEFAULT_SOUND_VOLUME = 50;
-    public static final String DEFAULT_TRANSLATION = "";
-
-    private int left=DEFAULT_LEFT;
-    private int top=DEFAULT_TOP;
-    private int width=DEFAULT_WIDTH;
-    private int height=DEFAULT_HEIGHT;
-    private boolean maximized=DEFAULT_MAXIMIZED;
-    private String theme=DEFAULT_THEME;
-    private String avatar=DEFAULT_AVATAR;
-    private String highlight = DEFAULT_HIGHLIGHT;
-    private boolean textView = DEFAULT_TEXT_VIEW;
-    private boolean skipSingle=DEFAULT_SINGLE;
-    private boolean alwaysPass=DEFAULT_PASS;
-    private boolean smartTarget=DEFAULT_TARGET;
-    private int popupDelay=DEFAULT_POPUP_DELAY;
-    private int messageDelay = DEFAULT_MESSAGE_DELAY;
-    private boolean highQuality=DEFAULT_HIGH_QUALITY;
-    private boolean sound=DEFAULT_SOUND;
-    private boolean touchscreen = DEFAULT_TOUCHSCREEN;
-    private boolean mouseWheelPopup = DEFAULT_MOUSEWHEEL_POPUP;
-    private boolean fullScreen = DEFAULT_FULLSCREEN;
-    private boolean previewCardOnSelect = DEFAULT_PREVIEW_CARD_ON_SELECT;
-    private boolean showLogMessages = DEFAULT_SHOW_LOG_MESSAGES;
-    private boolean isMulliganScreenActive = DEFAULT_MULLIGAN_SCREEN;
-    private String mostRecentDeckFilename = "";
+    private boolean textView = false;
     private boolean isMissingFiles = false;
-    private boolean isCustomBackground = DEFAULT_CUSTOM_BACKGROUND;
+
+    private static final String LEFT="left";
+    private int left   = -1;
+    
+    private static final String TOP="top";
+    private int top    = 0;
+    
+    private static final String WIDTH="width";
+    public static final int DEFAULT_WIDTH=1024;
+    private int width  = DEFAULT_WIDTH;
+    
+    private static final String HEIGHT="height";
+    public static final int DEFAULT_HEIGHT=600;
+    private int height = DEFAULT_HEIGHT;
+    
+    private static final String MAXIMIZED="maximized";
+    private boolean maximized=false;
+    
+    private static final String THEME="theme";
+    private String theme="felt";
+    
+    private static final String AVATAR="avatar";
+    private String avatar="legend";
+
+    private static final String HIGHLIGHT = "highlight";
+    private String highlight = "theme";
+
+    private static final String SKIP_SINGLE="single";
+    private boolean skipSingle = true;
+
+    private static final String ALWAYS_PASS="pass";
+    private boolean alwaysPass = true;
+    
+    private static final String SMART_TARGET="target";
+    private boolean smartTarget = false;
+    
+    private static final String POPUP_DELAY="popup";
+    private int popupDelay = 300;
+    
+    private static final String MESSAGE_DELAY = "message";
+    private int messageDelay = 2000;
+    
+    private static final String HIGH_QUALITY="hq";
+    private boolean highQuality = false;
+    
+    private static final String SOUND="sound";
+    private boolean sound = true;
+    
+    private static final String TOUCHSCREEN = "touchscreen";
+    private boolean touchscreen = false;
+    
+    private static final String MOUSEWHEEL_POPUP = "mousewheel";
+    private boolean mouseWheelPopup = false;
+    
+    private static final String FULLSCREEN = "fullScreen";
+    private boolean fullScreen = false;
+    
+    private static final String PREVIEW_CARD_ON_SELECT = "previewCardOnSelect";
+    private boolean previewCardOnSelect = true;
+    
+    private static final String SHOW_LOG_MESSAGES = "showLogMessages";
+    private boolean showLogMessages = true;
+    
+    private static final String MULLIGAN_SCREEN = "mulliganScreen";
+    private boolean isMulliganScreenActive = true;
+    
+    private static final String RECENT_DECK = "MostRecentDeckFilename";
+    private String mostRecentDeckFilename = "";
+    
+    private static final String CUSTOM_BACKGROUND = "customBackground";
+    private boolean isCustomBackground = false;
+    
+    private static final String SHOW_MISSING_CARD_DATA = "showMissingCardData";
     private boolean showMissingCardData = true;
+    
+    private static final String CARD_IMAGES_PATH = "cardImagesPath";
     private String cardImagesPath = "";
+    
+    private static final String ANIMATE_GAMEPLAY = "animateGameplay";
     private boolean animateGameplay = true;
-    private int deckFileMaxLines = DEFAULT_DECK_FILE_MAX_LINES;
-    private String proxySettings = DEFAULT_PROXY_SETTINGS;
-    private String firemindAccessToken;
-    private int newTurnAlertDuration = DEFAULT_NEWTURN_ALERT_DURATION;
-    private int landPreviewDuration = DEFAULT_LAND_PREVIEW_DURATION;
-    private int nonLandPreviewDuration = DEFAULT_NONLAND_PREVIEW_DURATION;
+    
+    private static final String ANIMATION_FLAGS = "animationFlags";
+    
+    private static final String DECK_FILE_MAX_LINES = "deckFileMaxLines";
+    private int deckFileMaxLines = 500;
+    
+    private static final String PROXY_SETTINGS = "proxySettings";
+    private String proxySettings = "";
+    
+    private static final String FIREMIND_ACCESS_TOKEN = "firemindAccessToken";
+    private String firemindAccessToken = "";
+    
+    private static final String NEWTURN_ALERT_DURATION = "newTurnAlertDuration";
+    private int newTurnAlertDuration = 3000; // msecs
+    
+    private static final String LAND_PREVIEW_DURATION = "landPreviewDuration";
+    private int landPreviewDuration = 5000; // msecs
+    
+    private static final String NONLAND_PREVIEW_DURATION = "nonLandPreviewDuration";
+    private int nonLandPreviewDuration = 10000; // msecs
+    
+    private static final String SPLITVIEW_DECKEDITOR = "splitViewDeckEditor";
     private boolean isSplitViewDeckEditor = false;
-    private int overlayPermanentMinHeight = DEFAULT_OVERLAY_PERMANENT_MIN_HEIGHT;
+    
+    private static final String OVERLAY_PERMANENT_MIN_HEIGHT = "overlayPermanentMinHeight";
+    private int overlayPermanentMinHeight = 30; // pixels
+    
+    private static final String IGNORED_VERSION_ALERT = "ignoredVersionAlert";
     private String ignoredVersionAlert = "";
+    
+    private static final String UI_SOUND = "uiSound";
     private boolean isUiSound = true;
-    private boolean isGamePausedOnPopup = DEFAULT_PAUSE_GAME_POPUP;
-    private String missingImagesDownloadDate = DEFAULT_DOWNLOAD_DATE;
-    private String playableImagesDownloadDate = DEFAULT_DOWNLOAD_DATE;
-    private String duelSidebarLayout = DEFAULT_DUEL_SIDEBAR_LAYOUT;
-    private boolean hideAiActionPrompt = DEFAULT_HIDE_AI_ACTION_PROMPT;
-    private Color rolloverColor = new Color(DEFAULT_ROLLOVER_COLOR);
-    private int uiSoundVolume = DEFAULT_SOUND_VOLUME;
+    
+    private static final String PAUSE_GAME_POPUP = "pauseGamePopup";
+    private boolean isGamePausedOnPopup = false;
+    
+    private static final String MISSING_DOWNLOAD_DATE = "missingImagesDownloadDate";
+    private String missingImagesDownloadDate = "1970-01-01";
+    
+    private static final String PLAYABLE_DOWNLOAD_DATE = "imageDownloaderRunDate";
+    private String playableImagesDownloadDate = "1970-01-01";
+    
+    private static final String DUEL_SIDEBAR_LAYOUT ="duelSidebarLayout";
+    private String duelSidebarLayout = "LOGSTACK,PLAYER2,TURNINFO,PLAYER1";
+    
+    private static final String HIDE_AI_ACTION_PROMPT ="hideAiActionPrompt";
+    private boolean hideAiActionPrompt = false;
+    
+    private static final String ROLLOVER_COLOR ="rolloverColor";
+    private Color rolloverColor = Color.YELLOW;
+    
+    private static final String UI_SOUND_VOLUME = "uiSoundVolume";
+    private int uiSoundVolume = 50;
+    
+    private static final String TRANSLATION = "translation";
+    public static final String DEFAULT_TRANSLATION = "";
     private String translation = DEFAULT_TRANSLATION;
+    
+    private static final String LOG_MESSAGE_STYLE = "logMessageStyle";
     private MessageStyle logMessageStyle = MessageStyle.PLAIN;
+    
+    private static final String PREF_IMAGE_SIZE = "prefImageSize";
     private ImageSizePresets preferredImageSize = ImageSizePresets.SIZE_ORIGINAL;
+    
+    private static final String CARD_TEXT_LANG = "cardTextLanguage";
     private CardTextLanguage cardTextLanguage = CardTextLanguage.ENGLISH;
+    
+    private static final String GAME_LOADING_SCREEN = "gameLoadingScreen";
     private boolean showGameLoadingScreen = false;
 
     private GeneralConfig() { }
@@ -588,54 +603,54 @@ public class GeneralConfig {
     }
 
     private void load(final Properties properties) {
-        left=Integer.parseInt(properties.getProperty(LEFT,""+DEFAULT_LEFT));
-        top=Integer.parseInt(properties.getProperty(TOP,""+DEFAULT_TOP));
-        width=Integer.parseInt(properties.getProperty(WIDTH,""+DEFAULT_WIDTH));
-        height=Integer.parseInt(properties.getProperty(HEIGHT,""+DEFAULT_HEIGHT));
-        maximized=Boolean.parseBoolean(properties.getProperty(MAXIMIZED,""+DEFAULT_MAXIMIZED));
-        theme=properties.getProperty(THEME,DEFAULT_THEME);
-        avatar=properties.getProperty(AVATAR,DEFAULT_AVATAR);
-        highlight = properties.getProperty(HIGHLIGHT,DEFAULT_HIGHLIGHT);
-        skipSingle=Boolean.parseBoolean(properties.getProperty(SKIP_SINGLE,""+DEFAULT_SINGLE));
-        alwaysPass=Boolean.parseBoolean(properties.getProperty(ALWAYS_PASS,""+DEFAULT_PASS));
-        smartTarget=Boolean.parseBoolean(properties.getProperty(SMART_TARGET,""+DEFAULT_TARGET));
-        popupDelay=Integer.parseInt(properties.getProperty(POPUP_DELAY,""+DEFAULT_POPUP_DELAY));
-        messageDelay = Integer.parseInt(properties.getProperty(MESSAGE_DELAY,"" + DEFAULT_MESSAGE_DELAY));
-        highQuality=Boolean.parseBoolean(properties.getProperty(HIGH_QUALITY,""+DEFAULT_HIGH_QUALITY));
-        sound=Boolean.parseBoolean(properties.getProperty(SOUND,""+DEFAULT_SOUND));
-        touchscreen = Boolean.parseBoolean(properties.getProperty(TOUCHSCREEN,""+DEFAULT_TOUCHSCREEN));
-        mouseWheelPopup = Boolean.parseBoolean(properties.getProperty(MOUSEWHEEL_POPUP, "" + DEFAULT_MOUSEWHEEL_POPUP));
-        fullScreen = Boolean.parseBoolean(properties.getProperty(FULLSCREEN, "" + DEFAULT_FULLSCREEN));
-        previewCardOnSelect = Boolean.parseBoolean(properties.getProperty(PREVIEW_CARD_ON_SELECT, "" + DEFAULT_PREVIEW_CARD_ON_SELECT));
-        showLogMessages = Boolean.parseBoolean(properties.getProperty(SHOW_LOG_MESSAGES, "" + DEFAULT_SHOW_LOG_MESSAGES));
-        isMulliganScreenActive = Boolean.parseBoolean(properties.getProperty(MULLIGAN_SCREEN, "" + DEFAULT_MULLIGAN_SCREEN));
-        mostRecentDeckFilename = properties.getProperty(RECENT_DECK, "").trim();
-        isCustomBackground = Boolean.parseBoolean(properties.getProperty(CUSTOM_BACKGROUND, "" + DEFAULT_CUSTOM_BACKGROUND));
+        left=Integer.parseInt(properties.getProperty(LEFT,""+left));
+        top=Integer.parseInt(properties.getProperty(TOP,""+top));
+        width=Integer.parseInt(properties.getProperty(WIDTH,""+width));
+        height=Integer.parseInt(properties.getProperty(HEIGHT,""+height));
+        maximized=Boolean.parseBoolean(properties.getProperty(MAXIMIZED,""+maximized));
+        theme=properties.getProperty(THEME,theme);
+        avatar=properties.getProperty(AVATAR,avatar);
+        highlight = properties.getProperty(HIGHLIGHT, highlight);
+        skipSingle=Boolean.parseBoolean(properties.getProperty(SKIP_SINGLE,""+skipSingle));
+        alwaysPass=Boolean.parseBoolean(properties.getProperty(ALWAYS_PASS,""+alwaysPass));
+        smartTarget=Boolean.parseBoolean(properties.getProperty(SMART_TARGET,""+smartTarget));
+        popupDelay=Integer.parseInt(properties.getProperty(POPUP_DELAY,""+popupDelay));
+        messageDelay = Integer.parseInt(properties.getProperty(MESSAGE_DELAY,"" + messageDelay));
+        highQuality=Boolean.parseBoolean(properties.getProperty(HIGH_QUALITY,""+highQuality));
+        sound=Boolean.parseBoolean(properties.getProperty(SOUND,""+sound));
+        touchscreen = Boolean.parseBoolean(properties.getProperty(TOUCHSCREEN,""+touchscreen));
+        mouseWheelPopup = Boolean.parseBoolean(properties.getProperty(MOUSEWHEEL_POPUP, "" + mouseWheelPopup));
+        fullScreen = Boolean.parseBoolean(properties.getProperty(FULLSCREEN, "" + fullScreen));
+        previewCardOnSelect = Boolean.parseBoolean(properties.getProperty(PREVIEW_CARD_ON_SELECT, "" + previewCardOnSelect));
+        showLogMessages = Boolean.parseBoolean(properties.getProperty(SHOW_LOG_MESSAGES, "" + showLogMessages));
+        isMulliganScreenActive = Boolean.parseBoolean(properties.getProperty(MULLIGAN_SCREEN, "" + isMulliganScreenActive));
+        mostRecentDeckFilename = properties.getProperty(RECENT_DECK, mostRecentDeckFilename).trim();
+        isCustomBackground = Boolean.parseBoolean(properties.getProperty(CUSTOM_BACKGROUND, "" + isCustomBackground));
         showMissingCardData = Boolean.parseBoolean(properties.getProperty(SHOW_MISSING_CARD_DATA, "" + showMissingCardData));
-        cardImagesPath = properties.getProperty(CARD_IMAGES_PATH, "");
+        cardImagesPath = properties.getProperty(CARD_IMAGES_PATH, cardImagesPath);
         animateGameplay = Boolean.parseBoolean(properties.getProperty(ANIMATE_GAMEPLAY, "" + animateGameplay));
-        deckFileMaxLines = Integer.parseInt(properties.getProperty(DECK_FILE_MAX_LINES, ""+DEFAULT_DECK_FILE_MAX_LINES));
-        proxySettings = properties.getProperty(PROXY_SETTINGS, "");
-        firemindAccessToken = properties.getProperty(FIREMIND_ACCESS_TOKEN, "");
-        newTurnAlertDuration = Integer.parseInt(properties.getProperty(NEWTURN_ALERT_DURATION,"" + DEFAULT_NEWTURN_ALERT_DURATION));
-        landPreviewDuration = Integer.parseInt(properties.getProperty(LAND_PREVIEW_DURATION,"" + DEFAULT_LAND_PREVIEW_DURATION));
-        nonLandPreviewDuration = Integer.parseInt(properties.getProperty(NONLAND_PREVIEW_DURATION,"" + DEFAULT_NONLAND_PREVIEW_DURATION));
+        deckFileMaxLines = Integer.parseInt(properties.getProperty(DECK_FILE_MAX_LINES, ""+ deckFileMaxLines));
+        proxySettings = properties.getProperty(PROXY_SETTINGS, proxySettings);
+        firemindAccessToken = properties.getProperty(FIREMIND_ACCESS_TOKEN, firemindAccessToken);
+        newTurnAlertDuration = Integer.parseInt(properties.getProperty(NEWTURN_ALERT_DURATION,"" + newTurnAlertDuration));
+        landPreviewDuration = Integer.parseInt(properties.getProperty(LAND_PREVIEW_DURATION,"" + landPreviewDuration));
+        nonLandPreviewDuration = Integer.parseInt(properties.getProperty(NONLAND_PREVIEW_DURATION,"" + nonLandPreviewDuration));
         isSplitViewDeckEditor = Boolean.parseBoolean(properties.getProperty(SPLITVIEW_DECKEDITOR, "" + isSplitViewDeckEditor));
-        overlayPermanentMinHeight = Integer.parseInt(properties.getProperty(OVERLAY_PERMANENT_MIN_HEIGHT, "" + DEFAULT_OVERLAY_PERMANENT_MIN_HEIGHT));
-        ignoredVersionAlert = properties.getProperty(IGNORED_VERSION_ALERT, "");
+        overlayPermanentMinHeight = Integer.parseInt(properties.getProperty(OVERLAY_PERMANENT_MIN_HEIGHT, "" + overlayPermanentMinHeight));
+        ignoredVersionAlert = properties.getProperty(IGNORED_VERSION_ALERT, ignoredVersionAlert);
         isUiSound = Boolean.parseBoolean(properties.getProperty(UI_SOUND, "" + isUiSound));
-        isGamePausedOnPopup = Boolean.parseBoolean(properties.getProperty(PAUSE_GAME_POPUP, "" + DEFAULT_PAUSE_GAME_POPUP));
-        missingImagesDownloadDate = properties.getProperty(MISSING_DOWNLOAD_DATE, DEFAULT_DOWNLOAD_DATE);
-        playableImagesDownloadDate = properties.getProperty(PLAYABLE_DOWNLOAD_DATE, DEFAULT_DOWNLOAD_DATE);
-        duelSidebarLayout = properties.getProperty(DUEL_SIDEBAR_LAYOUT, DEFAULT_DUEL_SIDEBAR_LAYOUT);
-        hideAiActionPrompt = Boolean.parseBoolean(properties.getProperty(HIDE_AI_ACTION_PROMPT, "" + DEFAULT_HIDE_AI_ACTION_PROMPT));
-        rolloverColor = new Color(Integer.parseInt(properties.getProperty(ROLLOVER_COLOR, "" + DEFAULT_ROLLOVER_COLOR)));
-        uiSoundVolume = Integer.parseInt(properties.getProperty(UI_SOUND_VOLUME, "" + DEFAULT_SOUND_VOLUME));
-        translation = properties.getProperty(TRANSLATION, DEFAULT_TRANSLATION);
-        logMessageStyle = MessageStyle.valueOf(properties.getProperty(LOG_MESSAGE_STYLE, MessageStyle.PLAIN.name()));
+        isGamePausedOnPopup = Boolean.parseBoolean(properties.getProperty(PAUSE_GAME_POPUP, "" + isGamePausedOnPopup));
+        missingImagesDownloadDate = properties.getProperty(MISSING_DOWNLOAD_DATE, missingImagesDownloadDate);
+        playableImagesDownloadDate = properties.getProperty(PLAYABLE_DOWNLOAD_DATE, playableImagesDownloadDate);
+        duelSidebarLayout = properties.getProperty(DUEL_SIDEBAR_LAYOUT, duelSidebarLayout);
+        hideAiActionPrompt = Boolean.parseBoolean(properties.getProperty(HIDE_AI_ACTION_PROMPT, "" + hideAiActionPrompt));
+        rolloverColor = new Color(Integer.parseInt(properties.getProperty(ROLLOVER_COLOR, "" + rolloverColor.getRGB())));
+        uiSoundVolume = Integer.parseInt(properties.getProperty(UI_SOUND_VOLUME, "" + uiSoundVolume));
+        translation = properties.getProperty(TRANSLATION, translation);
+        logMessageStyle = MessageStyle.valueOf(properties.getProperty(LOG_MESSAGE_STYLE, logMessageStyle.name()));
         AnimationFx.setFlags(Integer.parseInt(properties.getProperty(ANIMATION_FLAGS, "" + AnimationFx.getFlags())));
-        preferredImageSize = ImageSizePresets.valueOf(properties.getProperty(PREF_IMAGE_SIZE, ImageSizePresets.SIZE_ORIGINAL.name()));
-        cardTextLanguage = CardTextLanguage.valueOf(properties.getProperty(CARD_TEXT_LANG, CardTextLanguage.ENGLISH.name()));
+        preferredImageSize = ImageSizePresets.valueOf(properties.getProperty(PREF_IMAGE_SIZE, preferredImageSize.name()));
+        cardTextLanguage = CardTextLanguage.valueOf(properties.getProperty(CARD_TEXT_LANG, cardTextLanguage.name()));
         showGameLoadingScreen = Boolean.parseBoolean(properties.getProperty(GAME_LOADING_SCREEN, "" + showGameLoadingScreen));
     }
 
