@@ -179,7 +179,7 @@ public class GeneralConfig {
     private CardTextLanguage cardTextLanguage = CardTextLanguage.ENGLISH;
     
     private static final String GAME_LOADING_SCREEN = "gameLoadingScreen";
-    private boolean showGameLoadingScreen = false;
+    private boolean showGameLoadingScreen = true;
 
     private GeneralConfig() { }
 
