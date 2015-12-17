@@ -69,15 +69,19 @@ public class MenuButton extends JButton {
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent e) {
-                setForeground(MagicStyle.getRolloverColor());
+                if (isEnabled()) {
+                    setForeground(MagicStyle.getRolloverColor());
+                }
             }
             @Override
             public void mouseExited(MouseEvent e) {
-                setForeground(Color.WHITE);
+                if (isEnabled()) {
+                    setForeground(Color.WHITE);
+                }
             }
             @Override
             public void mousePressed(MouseEvent e) {
-                if (SwingUtilities.isLeftMouseButton(e)) {
+                if (isEnabled() && SwingUtilities.isLeftMouseButton(e)) {
                     setForeground(MagicStyle.getPressedColor());
                     setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
                 }
@@ -85,8 +89,10 @@ public class MenuButton extends JButton {
             }
             @Override
             public void mouseReleased(MouseEvent e) {
-                setForeground(Color.WHITE);
-                setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+                if (isEnabled()) {
+                    setForeground(Color.WHITE);
+                    setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+                }
             }
         });
     }
