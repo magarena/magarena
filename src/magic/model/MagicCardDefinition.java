@@ -170,7 +170,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
         return isPlayable() == false;
     }
 
-    public void loadAbilities() {
+    public synchronized void loadAbilities() {
         if (startingLoyalty > 0 && comeIntoPlayTriggers.isEmpty()) {
             add(new EntersWithCounterTrigger(
                 MagicCounterType.Loyalty,
