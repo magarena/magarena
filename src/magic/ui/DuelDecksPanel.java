@@ -3,6 +3,7 @@ package magic.ui;
 import magic.translate.UiString;
 import java.awt.Color;
 import java.awt.Component;
+import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -42,6 +43,9 @@ public class DuelDecksPanel extends TexturedPanel {
     // translatable strings
     private static final String _S1 = "Generate Deck";
     private static final String _S2 = "Deck (%s) - %d cards";
+
+    // change properties
+    public static final String CP_DECK_CHANGED = "c832e918-5b52";
 
     private static final int SPACING = 10;
     private static final String GENERATE_BUTTON_TEXT = UiString.get(_S1);
@@ -121,7 +125,9 @@ public class DuelDecksPanel extends TexturedPanel {
                 @Override
                 public void actionPerformed(final ActionEvent event) {
                     try {
+                        setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
                         duel.buildDeck(player);
+                        setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
                     } catch (InvalidDeckException ex) {
                         ScreenController.showWarningMessage(ex.getMessage());
                     }
@@ -241,6 +247,7 @@ public class DuelDecksPanel extends TexturedPanel {
             statsViewers[i].setDeck(deck);
             deckDescriptionViewers[i].setPlayer(player);
         }
+        firePropertyChange(CP_DECK_CHANGED, true, false);
     }
 
     @SuppressWarnings("serial")

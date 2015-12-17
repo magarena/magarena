@@ -2,10 +2,8 @@ package magic.ui.screen;
 
 import java.awt.Graphics;
 import java.awt.event.ActionEvent;
-import java.util.concurrent.ExecutionException;
 import javax.swing.AbstractAction;
 import javax.swing.SwingUtilities;
-import javax.swing.SwingWorker;
 import magic.data.GeneralConfig;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
@@ -41,11 +39,7 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
 
     public DuelGameScreen(final MagicDuel duel) {
         config.setTextView(false);
-        if (config.showGameLoadingScreen()) {
-            new StartupWorker(duel).execute();
-        } else {            
-            showScreen(duel.nextGame());
-        }
+        showScreen(duel.nextGame());
     }
 
     // CTR - called when using -DtestGame=X argument.
@@ -53,7 +47,7 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
         showScreen(game);
     }
 
-    private void showScreen(MagicGame aGame) {
+    public void showScreen(MagicGame aGame) {
         setContent(getScreenContent(aGame));
         if (!config.showMulliganScreen() || MagicSystem.isAiVersusAi() || MagicSystem.isTestGame()) {
             duelPane.setVisible(true);
@@ -207,39 +201,6 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
     protected void paintComponent(Graphics g) {
         loadingMessage.render(g, getSize());
         super.paintComponent(g);
-    }
-
-    private final class StartupWorker extends SwingWorker<MagicGame, Void> {
-
-        private final static int MINWAIT = 1000; // millisecs
-        private final MagicDuel duel;
-
-        public StartupWorker(final MagicDuel aDuel) {
-            this.duel = aDuel;
-        }
-
-        @Override
-        protected MagicGame doInBackground() throws Exception {
-            final long start_time = System.currentTimeMillis();
-            final MagicGame game = duel.nextGame();
-            final long duration = System.currentTimeMillis() - start_time;
-            Thread.sleep(duration < MINWAIT ? MINWAIT - duration : 1);
-            return game;
-        }
-
-        @Override
-        protected void done() {
-            showScreen(getNextGame());
-        }
-
-        private MagicGame getNextGame() {
-            try {
-                return get();
-            } catch (InterruptedException | ExecutionException ex) {
-                throw new RuntimeException(ex);
-            }
-        }
-
     }
 
 }

@@ -4,8 +4,11 @@ import java.awt.Cursor;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.CancellationException;
+import java.util.concurrent.ExecutionException;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
+import javax.swing.SwingWorker;
 import magic.data.DuelConfig;
 import magic.data.MagicIcon;
 import magic.exception.InvalidDeckException;
@@ -14,6 +17,7 @@ import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
+import magic.model.MagicGame;
 import magic.ui.DuelDecksPanel;
 import magic.ui.MagicImages;
 import magic.ui.MagicFrame;
@@ -29,6 +33,7 @@ import magic.ui.screen.widget.DuelSettingsPanel;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.MenuPanel;
 import magic.ui.screen.widget.SampleHandActionButton;
+import magic.ui.widget.StartGameButton;
 import magic.utility.MagicSystem;
 
 @SuppressWarnings("serial")
@@ -53,13 +58,29 @@ public class DuelDecksScreen
     private static final String _S14 = "%s's deck is illegal.\n\n%s";
 
     private final DuelDecksPanel screenContent;
+    private MagicGame nextGame = null;
+    private final StartGameButton nextGameButton;
+    private StartupWorker worker;
 
     public DuelDecksScreen(final MagicDuel duel) {
-        this.screenContent = new DuelDecksPanel(duel);
-        setContent(this.screenContent);
+
+        screenContent = new DuelDecksPanel(duel);
+        nextGameButton = new StartGameButton(getStartDuelCaption(), getPlayGameAction());
+
         if (duel.getGamesPlayed() > 0 && MagicSystem.isAiVersusAi() == false) {
             saveDuel();
         }
+        
+        setContent(screenContent);
+        
+        if (MagicSystem.isAiVersusAi() == false) {
+            doGameSetupInBackground(duel);
+            screenContent.addPropertyChangeListener(
+                DuelDecksPanel.CP_DECK_CHANGED,
+                (e) -> { doGameSetupInBackground(duel); }
+            );
+        }
+
     }
 
     @Override
@@ -90,21 +111,25 @@ public class DuelDecksScreen
         final DuelPlayerConfig[] players = screenContent.getDuel().getPlayers();
         if (isLegalDeckAndShowErrors(players[0]) && isLegalDeckAndShowErrors(players[1])) {
             saveDuel();
-            ScreenController.showDuelGameScreen(screenContent.getDuel());
+            ScreenController.showDuelGameScreen(nextGame);
         }
+    }
+
+    private AbstractAction getPlayGameAction() {
+        return new AbstractAction() {
+            @Override
+            public void actionPerformed(final ActionEvent e) {
+                setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                startNextGame();
+                setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+            }
+        };
     }
 
     @Override
     public MenuButton getRightAction() {
         if (!screenContent.getDuel().isFinished()) {
-            return new MenuButton(getStartDuelCaption(), new AbstractAction() {
-                @Override
-                public void actionPerformed(final ActionEvent e) {
-                    setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-                    startNextGame();
-                    setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-                }
-            });
+            return nextGameButton;
         } else {
             return new MenuButton(UiString.get(_S3), new AbstractAction() {
                 @Override
@@ -259,7 +284,7 @@ public class DuelDecksScreen
 
     @Override
     public JPanel getStatusPanel() {
-        final DuelConfig config =  screenContent.getDuel().getConfiguration();
+        final DuelConfig config = screenContent.getDuel().getConfiguration();
         final DuelSettingsPanel panel = new DuelSettingsPanel(getFrame(), config);
         panel.setEnabled(false);
         return panel;
@@ -267,6 +292,50 @@ public class DuelDecksScreen
 
     private MagicDeck getActiveDeck() {
         return screenContent.getSelectedPlayer().getDeck();
+    }
+
+    private void doGameSetupInBackground(final MagicDuel duel) {
+        nextGameButton.setBusy(true);
+        if (worker != null && worker.isDone() == false) {
+            worker.cancel(true);
+        }
+        worker = new StartupWorker(duel);
+        worker.execute();
+    }
+
+    private final class StartupWorker extends SwingWorker<MagicGame, Void> {
+
+        private final MagicDuel duel;
+
+        public StartupWorker(final MagicDuel aDuel) {
+            this.duel = aDuel;
+        }
+
+        @Override
+        protected MagicGame doInBackground() throws Exception {
+            return duel.nextGame();
+        }
+
+        @Override
+        protected void done() {
+            nextGame = getNextGame();
+            nextGameButton.setBusy(nextGame == null);
+        }
+
+        private MagicGame getNextGame() {
+            try {
+                return get();
+            } catch (ExecutionException ex) {
+                throw new RuntimeException(ex);
+            } catch (InterruptedException ex) {
+                System.err.println(ex);
+                return null;
+            } catch (CancellationException ex) {
+                System.err.println("Worker cancelled : " + MagicSystem.getHeapUtilizationStats().replace("\n", ", "));
+                return null;
+            }
+        }
+
     }
 
 }
