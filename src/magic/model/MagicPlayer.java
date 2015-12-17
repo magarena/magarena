@@ -414,7 +414,9 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
 
     void createHandAndLibrary(final int handSize) {
         startingHandSize = handSize;
-        for (final MagicCardDefinition cardDefinition : playerDefinition.getDeck()) {
+        final MagicDeck deck = playerDefinition.getDeck();
+        for (int i = 0; i < deck.size(); i++) {
+            final MagicCardDefinition cardDefinition = deck.get(i);
             final long id = currGame.getUniqueId();
             library.add(new MagicCard(cardDefinition,this,id));
         }
