@@ -1,6 +1,7 @@
 name=1/1 green Insect creature token with flying and deathtouch
 token=Insect
-image=http://i167.photobucket.com/albums/u148/Ruja/Magic%20Tokens/Insect.jpg
+image=http://mtg.onl/token-list/tokens/Insect_G_1_1_flying.jpg
+image_updated=2015-12-18
 value=3
 type=Creature
 subtype=Insect

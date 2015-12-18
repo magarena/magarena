@@ -1,6 +1,7 @@
 name=3/3 green Boar creature token
 token=Boar
-image=http://media-dominaria.cursecdn.com/attachments/102/31/635032498723573408.jpg
+image=http://mtg.onl/token-list/tokens/Boar_G_3_3.jpg
+image_updated=2015-12-18
 value=3
 type=Creature
 subtype=Boar
