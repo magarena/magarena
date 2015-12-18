@@ -213,7 +213,7 @@ public class MagicPayManaCostResultBuilder {
         activationsSize=activations.size();
     }
 
-    /** Works only for all the remaining colorless mana. */
+    /** Works only for all the remaining generic mana. */
     boolean useAllManaSources(final MagicCostManaType type) {
         if (activationsSize>cost.getMinimumAmount()||type!=MagicCostManaType.Generic) {
             return false;
