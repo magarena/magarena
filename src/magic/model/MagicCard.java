@@ -1,7 +1,9 @@
 package magic.model;
 
+import magic.data.MagicIcon;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicEvent;
+import magic.model.event.MagicManaActivation;
 import magic.model.event.MagicSourceActivation;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
@@ -9,9 +11,13 @@ import magic.model.target.MagicTargetType;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.stack.MagicCardOnStack;
 import magic.exception.GameException;
+import magic.ui.cardBuilder.IRenderableCard;
 
 import java.util.Collection;
+import java.util.Collections;
 import java.util.EnumMap;
+import java.util.EnumSet;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -19,7 +25,7 @@ import java.util.Set;
 
 public class MagicCard
     extends MagicObjectImpl
-    implements MagicSource,MagicTarget,Comparable<MagicCard>,MagicMappable<MagicCard> {
+    implements MagicSource,MagicTarget,Comparable<MagicCard>,MagicMappable<MagicCard>,IRenderableCard {
 
     public static final MagicCard NONE = new MagicCard(MagicCardDefinition.UNKNOWN, MagicPlayer.NONE, 0) {
         @Override
@@ -482,5 +488,91 @@ public class MagicCard
 
     public Collection<MagicCounterType> getCounterTypes() {
         return counters.keySet();
+    }
+
+    @Override
+    public String getText() {
+        //Returns oracle text, no in-game changes
+        return getCardDefinition().getText();
+    }
+
+    @Override
+    public Collection<MagicManaActivation> getManaActivations() {
+        // Returning from CardDefinition - Cards technically don't, also no in-game changes
+        return getCardDefinition().getManaActivations();
+    }
+
+    @Override
+    public EnumSet<MagicSubType> getSubTypes() {
+        return EnumSet.copyOf(getSubTypeFlags());
+    }
+
+    @Override
+    public int getNumColors() {
+        int numColors = 0;
+        for (final MagicColor color : MagicColor.values()) {
+            if (hasColor(color)) {
+                numColors++;
+            }
+        }
+        return numColors;
+    }
+
+    @Override
+    public String getImageName() {
+        return getCardDefinition().getImageName();
+    }
+
+    @Override
+    public String getPowerToughnessText() {
+        if (isCreature()) {
+            return getPower()+"/"+getToughness();
+        } else {
+            return "";
+        }
+    }
+
+    @Override
+    public String getSubTypeText() {
+        // Returning from CardDefinition, no in-game changes
+        return getCardDefinition().getSubTypeText();
+    }
+
+    @Override
+    public Set<MagicType> getTypes() {
+        Set<MagicType> types = new HashSet<MagicType>();
+        for (MagicType type : MagicType.values()) {
+            if (hasType(type)) {
+                types.add(type);
+            }
+        }
+        return types;
+    }
+
+    @Override
+    public boolean isHybrid() {
+        final List<MagicIcon> list = getCost().getIcons();
+        //If doesn't contain single color mana, and does contain hybrid mana. Checks for absence
+        if (Collections.disjoint(list, MagicIcon.COLOR_MANA)==true && Collections.disjoint(list, MagicIcon.HYBRID_COLOR_MANA)==false) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+
+    @Override
+    public boolean isMulti() {
+        return getNumColors() > 1;
+    }
+
+    @Override
+    public boolean hasText() {
+        return cardDefinition.hasText();
+    }
+
+    @Override
+    public int getStartingLoyalty() {
+        return getCardDefinition().getStartingLoyalty();
     }
 }

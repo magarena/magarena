@@ -3,6 +3,7 @@ package magic.model;
 import magic.ai.ArtificialScoringSystem;
 import magic.data.CardDefinitions;
 import magic.data.CardProperty;
+import magic.data.MagicIcon;
 import magic.model.event.MagicActivation;
 import magic.model.event.MagicActivationHints;
 import magic.model.event.MagicHandCastActivation;
@@ -24,17 +25,12 @@ import magic.model.trigger.ThisPutIntoGraveyardTrigger;
 import magic.model.trigger.ThisSpellIsCastTrigger;
 import magic.model.trigger.ThisCycleTrigger;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.EnumSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Set;
-import java.util.Date;
+import java.util.*;
+
+import magic.ui.cardBuilder.IRenderableCard;
 import magic.utility.MagicFileSystem;
 
-public class MagicCardDefinition implements MagicAbilityStore {
+public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
 
     public static final MagicCardDefinition UNKNOWN = new MagicCardDefinition() {
         //definition for unknown cards
@@ -77,6 +73,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     private int typeFlags;
     private EnumSet<MagicType> cardType = EnumSet.noneOf(MagicType.class);
     private EnumSet<MagicSubType> subTypeFlags = EnumSet.noneOf(MagicSubType.class);
+    private String subTypeText ="";
     private EnumSet<MagicAbility> abilityFlags = EnumSet.noneOf(MagicAbility.class);
     private int colorFlags = -1;
     private MagicManaCost cost=MagicManaCost.ZERO;
@@ -84,6 +81,7 @@ public class MagicCardDefinition implements MagicAbilityStore {
     private final int[] manaSource=new int[MagicColor.NR_COLORS];
     private int power;
     private int toughness;
+    private String powerToughnessText = "";
     private int startingLoyalty;
     private String text = "";
     private MagicStaticType staticType=MagicStaticType.None;
@@ -1066,5 +1064,89 @@ public class MagicCardDefinition implements MagicAbilityStore {
 
     public boolean isImageFileMissing() {
         return MagicFileSystem.getCardImageFile(this).exists() == false;
+    }
+
+    public boolean isHybrid() {
+        final List<MagicIcon> list = getCost().getIcons();
+        //If doesn't contain single color mana, and does contain hybrid mana. Checks for absence
+        if (Collections.disjoint(list, MagicIcon.COLOR_MANA)==true && Collections.disjoint(list, MagicIcon.HYBRID_COLOR_MANA)==false) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public void setPowerToughnessText(String string) {
+        powerToughnessText = string;
+    }
+
+    public String getPowerToughnessText() {
+        return powerToughnessText;
+    }
+
+    public void setSubtypeText(String string) {
+        final String subTypeList = string.replaceAll("(\\w),(\\w)", "$1, $2");// Not automatically adding space unless space is there
+        subTypeText = subTypeList;
+    }
+
+    public String getSubTypeText() {
+        return subTypeText;
+    }
+
+    public String getPowerLabel() {
+        if (isCreature() && "".equals(powerToughnessText) == false) {
+            return powerToughnessText.split("/")[0];
+        } else {
+            return "";
+        }
+    }
+
+    public String getToughnessLabel() {
+        if (isCreature() && "".equals(powerToughnessText) == false) {
+            return powerToughnessText.split("/")[1];
+        } else {
+            return "";
+        }
+    }
+
+    @Override
+    public int getNumColors() {
+        int numColors = 0;
+        for (final MagicColor color : MagicColor.values()) {
+            if (hasColor(color)) {
+                numColors++;
+            }
+        }
+        return numColors;
+    }
+
+    @Override
+    public Set<MagicType> getTypes() {
+        Set<MagicType> types = new HashSet<MagicType>();
+        for (MagicType type : MagicType.values()) {
+            if (hasType(type)) {
+                types.add(type);
+            }
+        }
+        return types;
+    }
+
+    @Override
+    public boolean isMulti() {
+        return getNumColors() > 1;
+    }
+
+    @Override
+    public EnumSet<MagicSubType> getSubTypes() {
+        return getSubTypeFlags();
+    }
+
+    @Override
+    public boolean hasText() {
+        if (getText().contains("NONE") || getText().length() <=1) {
+            return false;
+        } else {
+            return true;
+        }
     }
 }
