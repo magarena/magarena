@@ -1,5 +1,8 @@
 package magic.data;
 
+import java.util.EnumSet;
+import java.util.Set;
+
 public enum MagicIcon {
 
     // Future Sight symbols
@@ -243,6 +246,9 @@ public enum MagicIcon {
     MANA_X(21);
 
     public static final String MANA_ICON_SHEET = "Mana.png";
+
+    public static final Set<MagicIcon> COLOR_MANA = EnumSet.range(MANA_WHITE, MANA_GREEN);
+    public static final Set<MagicIcon> HYBRID_COLOR_MANA = EnumSet.range(MANA_WHITE_BLUE, MANA_GREEN_BLUE);
 
     private final String iconFilename;
     private final int iconIndex;
