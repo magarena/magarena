@@ -24,7 +24,7 @@ public class MagicManaCost {
     private static final int[] SINGLE_PENALTY={0,1,1,3,6,9,12,15,18};
     private static final int[] DOUBLE_PENALTY={0,0,1,2,4,6, 8,10,12};
 
-    private static final MagicIcon[] COLORLESS_ICONS={
+    private static final MagicIcon[] GENERIC_ICONS={
         MagicIcon.MANA_0,
         MagicIcon.MANA_1,
         MagicIcon.MANA_2,
@@ -132,12 +132,12 @@ public class MagicManaCost {
 
     public List<MagicCostManaType> getCostManaTypes(final int x) {
         final List<MagicCostManaType> types = new ArrayList<>();
-        int colorless=x;
+        int generic=x;
 
         for (final MagicCostManaType type : order) {
             int amount=amounts[type.ordinal()];
             if (type == MagicCostManaType.Generic) {
-                colorless+=amount;
+                generic+=amount;
             } else {
                 for (;amount>0;amount--) {
                     types.add(type);
@@ -145,7 +145,7 @@ public class MagicManaCost {
             }
         }
 
-        for (;colorless>0;colorless--) {
+        for (;generic>0;generic--) {
             types.add(MagicCostManaType.Generic);
         }
 
@@ -245,11 +245,11 @@ public class MagicManaCost {
             int amount = amounts[type.ordinal()];
             if (type == MagicCostManaType.Generic) {
                 while (amount > 16) {
-                    icons.add(COLORLESS_ICONS[16]);
+                    icons.add(GENERIC_ICONS[16]);
                     amount-=16;
                 }
                 if (amount >= 0) {
-                    icons.add(COLORLESS_ICONS[amount]);
+                    icons.add(GENERIC_ICONS[amount]);
                 }
             } else {
                 final MagicIcon icon = TextImages.getIcon(type.getText());
