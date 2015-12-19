@@ -18,8 +18,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
+import magic.ui.cardBuilder.IRenderableCard;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
 
@@ -40,7 +42,8 @@ public final class MagicFileSystem {
 
         CARDS(CARD_IMAGE_FOLDER),
         TOKENS(TOKEN_IMAGE_FOLDER),
-        CUSTOM("custom");
+        CUSTOM("custom"),
+        CROPS("crops");
 
         private final String directoryName;
 
@@ -95,13 +98,13 @@ public final class MagicFileSystem {
         public Path getPath() {
             return directoryPath;
         }
-        
+
     }
-    
+
     /**
      * Returns the main data directory.
      * <p>
-     * Generally, this will contain sub-directories for the 
+     * Generally, this will contain sub-directories for the
      * different categories of data that can be generated.
      */
     public static Path getDataPath() {
@@ -124,12 +127,12 @@ public final class MagicFileSystem {
         final String indexPostfix = imageIndex > 0 ? String.valueOf(imageIndex + 1) : "";
         return card.getImageName() + indexPostfix + CARD_IMAGE_EXT;
     }
-    
+
     /**
      * Returns a File object representing the given card's image file.
      */
     public static File getCardImageFile(final MagicCardDefinition card, final int index) {
-        final Path imageDirectory = card.isToken() ? 
+        final Path imageDirectory = card.isToken() ?
                 getImagesPath(ImagesPath.TOKENS) :
                 getImagesPath(ImagesPath.CARDS);
         return new File(imageDirectory.toFile(), getImageFilename(card, index));
@@ -140,6 +143,14 @@ public final class MagicFileSystem {
      */
     public static File getCardImageFile(final MagicCardDefinition card) {
         return getCardImageFile(card, 0);
+    }
+
+    /**
+     * Returns a File object representing the given card's cropped image file.
+     */
+    public static File getCroppedCardImageFile(final IRenderableCard cardDef) {
+        final Path imageDirectory = getImagesPath(ImagesPath.CROPS);
+        return new File(imageDirectory.toFile(), cardDef.getImageName() + ".crop.jpg");
     }
 
     /**
