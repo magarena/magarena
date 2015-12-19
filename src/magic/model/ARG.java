@@ -3,6 +3,7 @@ package magic.model;
 import magic.model.MagicSource;
 import magic.model.MagicPlayer;
 import magic.model.MagicAmountParser;
+import magic.model.stack.MagicItemOnStack;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
@@ -246,5 +247,25 @@ public class ARG {
             return MagicTargetFilterFactory.CARD_FROM_HAND;
         }
     }
+
+    public static final String ITEMS = "((?<rn>rn)|(?<sn>sn)|" + CHOICE + "|(?<group>[^\\.]+?))";
+    public static List<MagicItemOnStack> items(final MagicEvent event, final Matcher m, final MagicTargetFilter<MagicItemOnStack> filter) {
+        if (m.group("rn") != null) {
+            return Collections.singletonList(event.getRefItemOnStack());
+        } else if (m.group("sn") != null) {
+            return Collections.singletonList(event.getItemOnStack());
+        } else if (m.group("choice") != null) {
+            return event.listTargetItem();
+        } else {
+            return filter.filter(event);
+        }
+    }
     
+    public static MagicTargetFilter<MagicItemOnStack> itemsParse(final Matcher m) {
+        if (m.group("group") != null) {
+            return MagicTargetFilterFactory.ItemOnStack(m.group("group"));
+        } else {
+            return MagicTargetFilterFactory.SPELL_OR_ABILITY;
+        }
+    }
 }

@@ -151,7 +151,7 @@ public enum MagicRuleEventAction {
         }
     },
     CounterUnless(
-        "counter " + ARG.CHOICE + " unless its controller pays (?<cost>[^\\.]*)\\.",
+        "counter " + ARG.ITEMS + " unless its controller pays (?<cost>[^\\.]*)\\.",
         MagicTargetHint.Negative,
         MagicTiming.Counter,
         "Counter"
@@ -159,56 +159,59 @@ public enum MagicRuleEventAction {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final MagicManaCost cost = MagicManaCost.create(matcher.group("cost"));
+            final MagicTargetFilter<MagicItemOnStack> filter = ARG.itemsParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    event.processTargetItemOnStack(game,new MagicItemOnStackAction() {
-                        public void doAction(final MagicItemOnStack item) {
-                            game.addEvent(new MagicCounterUnlessEvent(
-                                event.getSource(),
-                                item,
-                                cost
-                            ));
-                        }
-                    });
+                    for (final MagicItemOnStack item : ARG.items(event, matcher, filter)) {
+                        game.addEvent(new MagicCounterUnlessEvent(
+                            event.getSource(),
+                            item,
+                            cost
+                        ));
+                    }
                 }
             };
         }
     },
     CounterSpellToExile(
-        "counter " + ARG.CHOICE + "\\. if that spell is countered this way, exile it instead of putting it into its owner's graveyard\\.",
+        "counter " + ARG.ITEMS + "\\. if that spell is countered this way, exile it instead of putting it into its owner's graveyard\\.",
         MagicTargetHint.Negative,
-        MagicDefaultTargetPicker.create(),
         MagicTiming.Counter,
-        "Counter",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetItemOnStack(game,new MagicItemOnStackAction() {
-                    public void doAction(final MagicItemOnStack item) {
+        "Counter"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicItemOnStack> filter = ARG.itemsParse(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicItemOnStack item : ARG.items(event, matcher, filter)) {
                         game.doAction(new CounterItemOnStackAction(item, MagicLocationType.Exile));
                     }
-                });
-            }
+                }
+            };
         }
-    ),
+    },
     CounterSpell(
-        "counter " + ARG.CHOICE + "\\.",
+        "counter " + ARG.ITEMS + "\\.",
         MagicTargetHint.Negative,
-        MagicDefaultTargetPicker.create(),
         MagicTiming.Counter,
-        "Counter",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetItemOnStack(game,new MagicItemOnStackAction() {
-                    public void doAction(final MagicItemOnStack item) {
+        "Counter"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicItemOnStack> filter = ARG.itemsParse(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicItemOnStack item : ARG.items(event, matcher, filter)) {
                         game.doAction(new CounterItemOnStackAction(item));
                     }
-                });
-            }
+                }
+            };
         }
-    ),
+    },
     FlickerYour(
         "exile " + ARG.PERMANENTS + ", then return (it|that card) to the battlefield under your control\\.",
         MagicTargetHint.Positive,

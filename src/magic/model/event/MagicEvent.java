@@ -393,6 +393,10 @@ public class MagicEvent implements MagicCopyable {
     public final MagicCardOnStack getCardOnStack() {
         return (MagicCardOnStack)source;
     }
+    
+    public final MagicItemOnStack getItemOnStack() {
+        return (MagicItemOnStack)source;
+    }
 
     public final int getX() {
         if (ref instanceof MagicPayedCost) {
@@ -652,6 +656,11 @@ public class MagicEvent implements MagicCopyable {
         } else {
             return false;
         }
+    }
+    
+    public final List<MagicItemOnStack> listTargetItem() {
+        final MagicTarget target = chosenTarget;
+        return target instanceof MagicItemOnStack ? Collections.singletonList((MagicItemOnStack)target) : Collections.emptyList();
     }
     
     public final void processChosenCards(final MagicGame game, final MagicCardAction effect) {
