@@ -28,6 +28,7 @@ import magic.model.MagicManaCost;
 import magic.ui.ImageFileIO;
 import magic.ui.MagicImages;
 import magic.ui.cardBuilder.IRenderableCard;
+import magic.ui.cardBuilder.renderers.CardBuilder;
 import magic.ui.cardBuilder.renderers.TypeLine;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.widget.FontsAndBorders;
@@ -55,7 +56,7 @@ public class CardProxyImageBuilder {
         if (cardDef == MagicCardDefinition.UNKNOWN) {
             return MagicImages.getMissingCardImage();
         }
-        return getCardImage(cardDef);
+        return CardBuilder.getCardBuilderImage(cardDef);
     }
 
     private ImageIcon getCardTypeIcon(final IRenderableCard cardDef) {
