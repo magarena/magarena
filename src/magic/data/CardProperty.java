@@ -1,5 +1,9 @@
 package magic.data;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+
+import magic.exception.ScriptParseException;
 import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
@@ -11,10 +15,6 @@ import magic.model.event.MagicPlayAuraEvent;
 import magic.model.event.MagicSpellCardEvent;
 import magic.model.event.MagicTiming;
 import magic.model.mstatic.MagicStatic;
-import magic.exception.ScriptParseException;
-
-import java.text.SimpleDateFormat;
-import java.text.ParseException;
 
 public enum CardProperty {
 
@@ -49,6 +49,7 @@ public enum CardProperty {
     SUBTYPE() {
         public void setProperty(final MagicCardDefinition card, final String value) {
             card.setSubTypes(value.split(COMMA));
+            card.setSubtypeText(value);
         }
     },
     COLOR() {
@@ -72,6 +73,7 @@ public enum CardProperty {
             final int p = pt[0].contains("*") ? 0 : Integer.parseInt(pt[0]);
             final int t = pt[1].contains("*") ? 0 : Integer.parseInt(pt[1]);
             card.setPowerToughness(p, t);
+            card.setPowerToughnessText(value);
         }
     },
     ABILITY() {
