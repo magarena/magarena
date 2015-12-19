@@ -18,7 +18,7 @@ class TestRecurringNightmare extends TestGameBuilder {
         P.setLife(1);
         addToLibrary(P, "Plains", 10);
         addToGraveyard(P, "Pale Bears", 1);
-        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Swamp",false,8);
         createPermanent(P,"Recurring Nightmare",false,1);
         createPermanent(P,"Grizzly Bears",false,1);
 
@@ -26,7 +26,7 @@ class TestRecurringNightmare extends TestGameBuilder {
 
         P.setLife(1);
         addToLibrary(P, "Plains", 10);
-        createPermanent(P,"Rupture Spire",false,8);
+        createPermanent(P,"Swamp",false,8);
 
         return game;
     }
