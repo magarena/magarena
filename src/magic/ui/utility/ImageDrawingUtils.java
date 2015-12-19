@@ -107,10 +107,11 @@ public class ImageDrawingUtils {
     ) {
         for (final MagicCounterType counterType : MagicCounterType.values()) {
             int amount = permanent.getCounters(counterType);
-            if (amount > 0) {
+            if (amount > 0 && TextImages.contains(counterType.getText())) {
                 final String str = Integer.toString(amount);
                 final int inc = 16 + 8 * (str.length() - 1);
-                g.drawImage(MagicImages.getIcon(TextImages.getIcon(counterType.getText())).getImage(),ax,ay,observer);
+                final MagicIcon icon = TextImages.getIcon(counterType.getText());
+                g.drawImage(MagicImages.getIcon(icon).getImage(),ax,ay,observer);
                 if (amount > 1) {
                     drawStringWithOutline(g, str, ax+6, ay+14, observer);
                 }
