@@ -2876,7 +2876,7 @@ public enum MagicRuleEventAction {
     }
 
     private static String renameThisThat(final String text) {
-        final String thing = "(permanent|creature|artifact|land|player|opponent|spell or ability)";
+        final String thing = "(permanent|creature|artifact|land|player|opponent|spell or ability|spell|ability)";
         final String evenQuotes = "(?=([^\"]*'[^\"]*')*[^\"]*$)";
 
         final String replaceThis = text.replaceAll("\\b(T|t)his " + thing + "( |\\.|'s)" + evenQuotes, "SN$3");
