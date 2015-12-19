@@ -60,7 +60,7 @@ public class TypeLine {
         return cardTypeFont;
     }
 
-    private static String getTypeLine(IRenderableCard cardDef) {
+    public static String getTypeLine(IRenderableCard cardDef) {
         StringBuilder typeLine = new StringBuilder();
         String subtype = cardDef.getSubTypeText();
         MagicType.SUPERTYPES.stream().filter(cardDef::hasType).forEach(aSuperType -> {
