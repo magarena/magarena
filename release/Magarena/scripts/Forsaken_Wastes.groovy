@@ -7,21 +7,5 @@
             }
             return MagicEvent.NONE;
         }
-    },
-    new ThisBecomesTargetTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicItemOnStack target) {
-            new MagicEvent(
-                permanent,
-                target.getController(),
-                this,
-                "PN loses 5 life."
-            );
-        }
-
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new ChangeLifeAction(event.getPlayer(),-5));
-        }
     }
 ]

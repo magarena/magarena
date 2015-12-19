@@ -6,7 +6,7 @@ type=Creature
 subtype=Giant
 cost={4}{U}{U}
 pt=6/6
-ability=Whenever SN enters the battlefield or attacks, tap target permanent. It doesn't untap during its controller's next untap step.
+ability=Whenever SN becomes the target of a spell or ability an opponent controls, counter that spell or ability unless its controller pays {2}.;\
+        Whenever SN enters the battlefield or attacks, tap target permanent. It doesn't untap during its controller's next untap step.
 timing=fmain
-requires_groovy_code
 oracle=Whenever Frost Titan becomes the target of a spell or ability an opponent controls, counter that spell or ability unless its controller pays {2}.\nWhenever Frost Titan enters the battlefield or attacks, tap target permanent. It doesn't untap during its controller's next untap step.
