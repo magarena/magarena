@@ -62,7 +62,7 @@ public class TextImages {
 
         TEXT_ICONS.put("{f}", MagicIcon.FORWARD2);
         TEXT_ICONS.put("{O}", MagicIcon.TARGET);
-        TEXT_ICONS.put("{T}", MagicIcon.MANA_TAPPED);
+        TEXT_ICONS.put("{T}", MagicIcon.MANA_TAP);
         TEXT_ICONS.put("{SS}", MagicIcon.CANNOTTAP);
         TEXT_ICONS.put("{r}", MagicIcon.REGENERATED);
         TEXT_ICONS.put("{s}", MagicIcon.SLEEP);
@@ -140,7 +140,7 @@ public class TextImages {
         }
         return TEXT_ICONS.get(text);
     }
-    
+
     public static boolean contains(final String text) {
         return TEXT_ICONS.containsKey(text);
     }

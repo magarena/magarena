@@ -43,7 +43,7 @@ public class CardProxyImageBuilder {
 
     private CardProxyImageBuilder() {
     }
-    
+
     public static CardProxyImageBuilder getInstance() {
         return INSTANCE;
     }
@@ -117,7 +117,7 @@ public class CardProxyImageBuilder {
             }
             x = 17;
         }
-        
+
         // card name
         y = 64;
         g2d.drawString(cardDef.getName(), x, y);
@@ -167,9 +167,9 @@ public class CardProxyImageBuilder {
     private static ImageIcon getIcon(final String string){
         switch (string) {
             case "{T}":
-                return MagicImages.getSmallManaIcon(MagicIcon.MANA_TAPPED);
+                return MagicImages.getSmallManaIcon(MagicIcon.MANA_TAP);
             case "{Q}":
-                return MagicImages.getSmallManaIcon(MagicIcon.MANA_UNTAPPED);
+                return MagicImages.getSmallManaIcon(MagicIcon.MANA_UNTAP);
             case "{S}":
                 return MagicImages.getSmallManaIcon(MagicIcon.MANA_SNOW);
             default:
@@ -196,10 +196,10 @@ public class CardProxyImageBuilder {
             tokens.add(m.group());
         }
         final String newText = m.replaceAll(ICON_PLACEHOLDER);
-        
+
         final AttributedString ats = new AttributedString(newText);
         ats.addAttribute(TextAttribute.FONT, aFont);
-        
+
         if (tokens.size() > 0) {
             // second pass - replace single character placeholder with
             // appropriate icon image associated with token.

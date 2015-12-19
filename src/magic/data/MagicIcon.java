@@ -190,8 +190,8 @@ public enum MagicIcon {
     MANA_ANY("anymana.gif"),
 
     // mana icons are stored in a sprite/icon sheet.
-    MANA_UNTAPPED(51),
-    MANA_TAPPED(50),
+    MANA_UNTAP(51),
+    MANA_TAP(50),
     MANA_WHITE(24),
     MANA_BLUE(25),
     MANA_BLACK(26),

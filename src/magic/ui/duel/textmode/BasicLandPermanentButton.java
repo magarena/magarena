@@ -37,7 +37,7 @@ class BasicLandPermanentButton extends PanelButton implements IChoiceViewer {
         manaLabel.setIcon(MagicImages.getIcon(permanentInfo.manaColor));
         landPanel.add(manaLabel,BorderLayout.CENTER);
 
-        final JLabel tappedLabel = new JLabel(permanentInfo.tapped ? MagicImages.getIcon(MagicIcon.MANA_TAPPED) : null);
+        final JLabel tappedLabel = new JLabel(permanentInfo.tapped ? MagicImages.getIcon(MagicIcon.MANA_TAP) : null);
         tappedLabel.setPreferredSize(new Dimension(0,16));
         landPanel.add(tappedLabel,BorderLayout.SOUTH);
 
