@@ -1,5 +1,15 @@
 package magic.model;
 
+import java.util.Collection;
+import java.util.Collections;
+import java.util.EnumMap;
+import java.util.EnumSet;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
 import magic.ai.ArtificialScoringSystem;
 import magic.data.CardDefinitions;
 import magic.data.MagicIcon;
@@ -22,20 +32,10 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
+import magic.model.trigger.EntersBattlefieldTrigger;
 import magic.model.trigger.MagicTrigger;
 import magic.model.trigger.MagicTriggerType;
-import magic.model.trigger.EntersBattlefieldTrigger;
 import magic.ui.cardBuilder.IRenderableCard;
-
-import java.util.Collection;
-import java.util.Collections;
-import java.util.EnumMap;
-import java.util.EnumSet;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
 
 public class MagicPermanent extends MagicObjectImpl implements MagicSource,MagicTarget,Comparable<MagicPermanent>,MagicMappable<MagicPermanent>,IRenderableCard {
 
@@ -1422,5 +1422,11 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     public int getStartingLoyalty() {
         return getCardDefinition().getStartingLoyalty();
     }
+
+    @Override
+    public boolean isSorcery() {return hasType(MagicType.Sorcery);}
+
+    @Override
+    public boolean isInstant() {return hasType(MagicType.Instant);}
 
 }

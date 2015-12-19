@@ -36,5 +36,10 @@ public interface IRenderableCard {
     boolean hasText();
     int getStartingLoyalty();
     boolean isPlaneswalker();
-
+    boolean isCreature();
+    boolean isLand();
+    boolean isArtifact();
+    boolean isSorcery();
+    boolean isInstant();
+    boolean isEnchantment();
 }

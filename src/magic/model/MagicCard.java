@@ -1,18 +1,5 @@
 package magic.model;
 
-import magic.data.MagicIcon;
-import magic.model.event.MagicActivation;
-import magic.model.event.MagicEvent;
-import magic.model.event.MagicManaActivation;
-import magic.model.event.MagicSourceActivation;
-import magic.model.target.MagicTarget;
-import magic.model.target.MagicTargetFilter;
-import magic.model.target.MagicTargetType;
-import magic.model.stack.MagicItemOnStack;
-import magic.model.stack.MagicCardOnStack;
-import magic.exception.GameException;
-import magic.ui.cardBuilder.IRenderableCard;
-
 import java.util.Collection;
 import java.util.Collections;
 import java.util.EnumMap;
@@ -22,6 +9,19 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+
+import magic.data.MagicIcon;
+import magic.exception.GameException;
+import magic.model.event.MagicActivation;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicManaActivation;
+import magic.model.event.MagicSourceActivation;
+import magic.model.stack.MagicCardOnStack;
+import magic.model.stack.MagicItemOnStack;
+import magic.model.target.MagicTarget;
+import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicTargetType;
+import magic.ui.cardBuilder.IRenderableCard;
 
 public class MagicCard
     extends MagicObjectImpl
@@ -575,4 +575,23 @@ public class MagicCard
     public int getStartingLoyalty() {
         return getCardDefinition().getStartingLoyalty();
     }
+
+    @Override
+    public boolean isCreature() {return hasType(MagicType.Creature);}
+
+    @Override
+    public boolean isArtifact() {return hasType(MagicType.Artifact);}
+
+    @Override
+    public boolean isLand() {return hasType(MagicType.Land);}
+
+    @Override
+    public boolean isEnchantment() {return hasType(MagicType.Enchantment);}
+
+    @Override
+    public boolean isInstant() {return hasType(MagicType.Instant);}
+
+    @Override
+    public boolean isSorcery() {return hasType(MagicType.Sorcery);}
+
 }
