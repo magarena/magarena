@@ -2,18 +2,19 @@ package magic.ui;
 
 import java.awt.Dimension;
 import java.awt.Image;
-import javax.swing.ImageIcon;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
+import javax.swing.ImageIcon;
+
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
+import magic.model.DuelPlayerConfig;
+import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicManaType;
-import magic.model.MagicCardDefinition;
 import magic.model.MagicPermanent;
-import magic.model.DuelPlayerConfig;
 import magic.model.player.PlayerProfile;
 import magic.ui.image.CardProxyImageBuilder;
 import magic.ui.prefs.ImageSizePresets;
@@ -26,7 +27,7 @@ public final class MagicImages {
     private static final Map<Integer, ImageIcon> manaIcons = new HashMap<>();
     private static final Map<MagicIcon, ImageIcon> icons = new HashMap<>();
     private static final Map<String, PlayerAvatar> avatarsMap = new HashMap<>();
-    
+
     public static final BufferedImage BACK_IMAGE;
     static {
         final BufferedImage image = ImageFileIO.toImg(MagicResources.getImageUrl("card-back.jpg"), null);
@@ -38,7 +39,7 @@ public final class MagicImages {
     public static final BufferedImage LOGO = loadImage("logo.png");
     public static final BufferedImage MISSING = loadImage("missing.png");
     public static final BufferedImage MISSING2 = loadImage("missing2.png");
-    private static final BufferedImage MISSING_CARD = loadImage("missing_card.png");
+    public static final BufferedImage MISSING_CARD = loadImage("missing_card.png");
     public static final BufferedImage WIZARD = loadImage("wizard.png");
 
     // default texture images
@@ -97,7 +98,7 @@ public final class MagicImages {
         final int row = pos / 10;
         final int col = pos % 10;
         final BufferedImage subimage = MANA_ICON_SHEET.getSubimage(col * imgW, row * imgH, imgW, imgH);
-        return big 
+        return big
                 ? new ImageIcon(GraphicsUtils.scale(subimage, 25, 25))
                 : new ImageIcon(GraphicsUtils.scale(subimage, 15, 15));
     }
