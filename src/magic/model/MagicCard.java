@@ -355,7 +355,7 @@ public class MagicCard
     public boolean isPermanent() {
         return false;
     }
-    
+
     public boolean isPermanentCard() {
         return getCardDefinition().isPermanent();
     }
@@ -370,7 +370,7 @@ public class MagicCard
         return true;
     }
 
-    private int getColorFlags() {
+    public int getColorFlags() {
         final int init = getCardDefinition().getColorFlags();
         return getCardDefinition().applyCDAColor(getGame(), getOwner(), init);
     }
