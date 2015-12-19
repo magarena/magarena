@@ -1024,6 +1024,14 @@ public enum MagicAbility {
             card.add(ThisBecomesTargetTrigger.SacWhenTargeted);
         }
     },
+    WhenSNTargeted("When(ever)? SN becomes the target of (?<wordrun>[^\\,]*), " + ARG.EFFECT, 0) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(BecomesTargetTrigger.createThis(
+                MagicTargetFilterFactory.ItemOnStack(ARG.wordrun(arg)),
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
     WhenTargeted("When(ever)? " + ARG.WORDRUN2 + " becomes the target of (?<wordrun>[^\\,]*), " + ARG.EFFECT, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(BecomesTargetTrigger.create(
