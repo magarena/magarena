@@ -291,15 +291,12 @@ public class ImagePermanentViewer extends JPanel {
                     ax = ImageDrawingUtils.drawCountersInfo(g, this, linkedInfo.permanent, ax, ay);
                 }
 
-                // Common combat ability icons.
-                if (linkedInfo.creature) {
-                    if (linkedInfo.canNotTap) {
-                        g.drawImage(MagicImages.getIcon(MagicIcon.CANNOTTAP).getImage(), ax, ay, this);
-                        ax += 16;
-                    }
-                    final Set<MagicAbility> abilityFlags = linkedInfo.abilityFlags;
-                    ax = ImageDrawingUtils.drawAbilityInfo(g, this, abilityFlags, ax, ay);
+                // Ability icons.
+                if (linkedInfo.canNotTap) {
+                    g.drawImage(MagicImages.getIcon(MagicIcon.CANNOTTAP).getImage(), ax, ay, this);
+                    ax += 16;
                 }
+                ax = ImageDrawingUtils.drawAbilityInfo(g, this, linkedInfo.abilityFlags, ax, ay);
 
                 // Mana symbols
                 if (linkedInfo.permanent.getManaActivations().size() > 0) {
