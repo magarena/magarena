@@ -66,7 +66,7 @@ public class OracleText {
             g2d.dispose();
 
         } else if (cardDef.hasType(MagicType.Land)) {
-            Set<MagicColor> landColors = CardFrame.getLandColors(cardDef);
+            Set<MagicColor> landColors = Frame.getLandColors(cardDef);
             BufferedImage landImage = null;
             if (landColors.size() == 1) {
                 for (MagicColor color : landColors) {

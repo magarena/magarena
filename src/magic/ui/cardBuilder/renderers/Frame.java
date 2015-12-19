@@ -19,7 +19,7 @@ import magic.model.event.MagicManaActivation;
 import magic.ui.cardBuilder.IRenderableCard;
 import magic.ui.cardBuilder.ResourceManager;
 
-public class CardFrame {
+public class Frame {
 
     private static BufferedImage baseFrame;
 
@@ -62,15 +62,15 @@ public class CardFrame {
                 List<BufferedImage> colorFrames = new ArrayList<>();
                 if (land) {
                     if (enchantmentPermanent) {
-                        colorFrames.addAll(getColorOrder(landColor).stream().map(CardFrame::getLandGodFrame).collect(Collectors.toList()));
+                        colorFrames.addAll(getColorOrder(landColor).stream().map(Frame::getLandGodFrame).collect(Collectors.toList()));
                     } else {
-                        colorFrames.addAll(getColorOrder(landColor).stream().map(CardFrame::getLandFrame).collect(Collectors.toList()));
+                        colorFrames.addAll(getColorOrder(landColor).stream().map(Frame::getLandFrame).collect(Collectors.toList()));
                     }
                 } else {
                     if (enchantmentPermanent) {
-                        colorFrames.addAll(getColorOrder(cardDef).stream().map(CardFrame::getGodFrame).collect(Collectors.toList()));
+                        colorFrames.addAll(getColorOrder(cardDef).stream().map(Frame::getGodFrame).collect(Collectors.toList()));
                     } else {
-                        colorFrames.addAll(getColorOrder(cardDef).stream().map(CardFrame::getFrame).collect(Collectors.toList()));
+                        colorFrames.addAll(getColorOrder(cardDef).stream().map(Frame::getFrame).collect(Collectors.toList()));
                     }
                 }
                 //A colorless Banner with color piping
@@ -186,9 +186,9 @@ public class CardFrame {
                 //Hybrid
                 List<BufferedImage> colorFrames = new ArrayList<>();
                 if (hasText) {
-                    colorFrames.addAll(getColorOrder(cardDef).stream().map(CardFrame::getTokenFrameText).collect(Collectors.toList()));
+                    colorFrames.addAll(getColorOrder(cardDef).stream().map(Frame::getTokenFrameText).collect(Collectors.toList()));
                 } else {
-                    colorFrames.addAll(getColorOrder(cardDef).stream().map(CardFrame::getTokenFrame).collect(Collectors.toList()));
+                    colorFrames.addAll(getColorOrder(cardDef).stream().map(Frame::getTokenFrame).collect(Collectors.toList()));
                 }
                 //A colorless Banner with color piping
                 BufferedImage colorlessTokenBanner;
@@ -653,9 +653,9 @@ public class CardFrame {
                 //Hybrid
                 List<BufferedImage> colorFrames = new ArrayList<>();
                 if (land) {
-                    colorFrames.addAll(getColorOrder(landColor).stream().map(CardFrame::getLandLevellerFrame).collect(Collectors.toList()));
+                    colorFrames.addAll(getColorOrder(landColor).stream().map(Frame::getLandLevellerFrame).collect(Collectors.toList()));
                 } else {
-                    colorFrames.addAll(getColorOrder(cardDef).stream().map(CardFrame::getLevellerFrame).collect(Collectors.toList()));
+                    colorFrames.addAll(getColorOrder(cardDef).stream().map(Frame::getLevellerFrame).collect(Collectors.toList()));
                 }
                 //A colorless Banner with color piping
                 BufferedImage colorlessBanner = getBannerFrame(
@@ -744,9 +744,9 @@ public class CardFrame {
                 //Hybrid
                 List<BufferedImage> colorFrames = new ArrayList<>();
                 if (land) {
-                    colorFrames.addAll(getColorOrder(landColor).stream().map(CardFrame::getDevoidFrame).collect(Collectors.toList()));
+                    colorFrames.addAll(getColorOrder(landColor).stream().map(Frame::getDevoidFrame).collect(Collectors.toList()));
                 } else {
-                    colorFrames.addAll(getColorOrder(cardDef).stream().map(CardFrame::getDevoidFrame).collect(Collectors.toList()));
+                    colorFrames.addAll(getColorOrder(cardDef).stream().map(Frame::getDevoidFrame).collect(Collectors.toList()));
                 }
                 //A colorless Banner with color piping
                 BufferedImage colorlessBanner = getBannerFrame(
@@ -834,9 +834,9 @@ public class CardFrame {
                     //Hybrid
                     List<BufferedImage> colorFrames = new ArrayList<>();
                     if (land) {
-                        colorFrames.addAll(getColorOrder(landColor).stream().map(CardFrame::getLandLevellerFrame).collect(Collectors.toList()));
+                        colorFrames.addAll(getColorOrder(landColor).stream().map(Frame::getLandLevellerFrame).collect(Collectors.toList()));
                     } else {
-                        colorFrames.addAll(getColorOrder(cardDef).stream().map(CardFrame::getPlaneswalkerFrame).collect(Collectors.toList()));
+                        colorFrames.addAll(getColorOrder(cardDef).stream().map(Frame::getPlaneswalkerFrame).collect(Collectors.toList()));
                     }
                     //A colorless Banner with color piping
                     BufferedImage colorlessBanner = getPlaneswalkerBannerFrame(

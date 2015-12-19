@@ -18,7 +18,7 @@ import magic.ui.cardBuilder.ResourceManager;
 import magic.ui.utility.GraphicsUtils;
 import magic.utility.MagicFileSystem;
 
-public class CardImage {
+public class ImageFrame {
 
     private static BufferedImage defaultImage(MagicColor color) {
         switch (color) {
@@ -52,8 +52,8 @@ public class CardImage {
         }
         if (cardDef.isMulti()) {
             if (cardDef.isHybrid()) {
-                List<BufferedImage> colorDefaults = CardFrame.getColorOrder(cardDef).stream().filter(color -> cardDef.hasColor(color)).map(CardImage::defaultImage).collect(Collectors.toList());
-                return CardFrame.getBlendedFrame(
+                List<BufferedImage> colorDefaults = Frame.getColorOrder(cardDef).stream().filter(color -> cardDef.hasColor(color)).map(ImageFrame::defaultImage).collect(Collectors.toList());
+                return Frame.getBlendedFrame(
                     ResourceManager.newFrame(colorDefaults.get(0)),
                     ResourceManager.newFrame(ResourceManager.defaultHybridBlend),
                     ResourceManager.newFrame(colorDefaults.get(1))

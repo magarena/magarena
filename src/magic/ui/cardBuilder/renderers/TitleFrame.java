@@ -19,7 +19,7 @@ import magic.ui.MagicImages;
 import magic.ui.cardBuilder.IRenderableCard;
 import magic.ui.cardBuilder.ResourceManager;
 
-public class CardTitleFrame {
+public class TitleFrame {
 
     private static final Font cardNameFont = ResourceManager.getFont("Beleren-Bold.ttf").deriveFont(Font.PLAIN, 20);
     private static final Font cardNameTokenFont = ResourceManager.getFont("Beleren Small Caps.ttf").deriveFont(Font.PLAIN, 20);
