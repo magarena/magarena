@@ -235,6 +235,6 @@ public final class MagicImages {
     }
 
     public static BufferedImage getMissingCardImage(MagicCardDefinition cardDef) {
-        return CardProxyImageBuilder.getInstance().getImage(cardDef, 0, true);
+        return CardProxyImageBuilder.getInstance().getImage(cardDef);
     }
 }

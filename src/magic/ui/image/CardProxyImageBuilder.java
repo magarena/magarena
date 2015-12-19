@@ -21,11 +21,14 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javax.swing.ImageIcon;
+
 import magic.data.MagicIcon;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicManaCost;
-import magic.ui.MagicImages;
 import magic.ui.ImageFileIO;
+import magic.ui.MagicImages;
+import magic.ui.cardBuilder.IRenderableCard;
+import magic.ui.cardBuilder.renderers.TypeLine;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.widget.FontsAndBorders;
 import magic.utility.MagicResources;
@@ -48,14 +51,14 @@ public class CardProxyImageBuilder {
         return INSTANCE;
     }
 
-    public BufferedImage getImage(MagicCardDefinition cardDef, int index, boolean orig) {
+    public BufferedImage getImage(IRenderableCard cardDef) {
         if (cardDef == MagicCardDefinition.UNKNOWN) {
             return MagicImages.getMissingCardImage();
         }
         return getCardImage(cardDef);
     }
 
-    private ImageIcon getCardTypeIcon(final MagicCardDefinition cardDef) {
+    private ImageIcon getCardTypeIcon(final IRenderableCard cardDef) {
         if (cardDef.isCreature()) {
             return MagicImages.getIcon(MagicIcon.FS_CREATURE);
         } else if (cardDef.isLand()) {
@@ -75,7 +78,7 @@ public class CardProxyImageBuilder {
         }
     }
 
-    private void drawCardTypeWatermark(Graphics2D g2d, MagicCardDefinition cardDef) {
+    private void drawCardTypeWatermark(Graphics2D g2d, IRenderableCard cardDef) {
         final ImageIcon ico = getCardTypeIcon(cardDef);
         if (ico != null && ico.getIconWidth() > 0 && ico.getIconHeight() > 0) {
             final BufferedImage image = GraphicsUtils.getTranslucentImage(
@@ -86,7 +89,7 @@ public class CardProxyImageBuilder {
         }
     }
 
-    private BufferedImage getCardImage(final MagicCardDefinition cardDef) {
+    private BufferedImage getCardImage(final IRenderableCard cardDef) {
 
         final int W = PROXY_CANVAS.getWidth();
         final int H = PROXY_CANVAS.getHeight();
@@ -125,13 +128,13 @@ public class CardProxyImageBuilder {
         // type
         y = 84;
         g2d.setFont(FontsAndBorders.FONT2);
-        g2d.drawString(cardDef.getLongTypeString() + " " + cardDef.getSubTypeString(), x, y);
+        g2d.drawString(TypeLine.getTypeLine(cardDef), x, y);
 
         // p/t
         if (cardDef.isCreature()) {
             y = 114;
             g2d.setFont(FontsAndBorders.FONT4);
-            g2d.drawString(cardDef.getCardPower() + " / " + cardDef.getCardToughness(), x, y);
+            g2d.drawString(cardDef.getPowerToughnessText(), x, y);
         }
 
         // oracle
