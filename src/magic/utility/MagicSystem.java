@@ -13,12 +13,14 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.FutureTask;
+
 import magic.data.CardDefinitions;
 import magic.data.DeckGenerators;
 import magic.data.GeneralConfig;
 import magic.data.MagicCustomFormat;
 import magic.data.UnimplementedParser;
 import magic.model.MagicGameLog;
+import magic.ui.cardBuilder.ResourceManager;
 import magic.utility.MagicFileSystem.DataPath;
 
 final public class MagicSystem {
@@ -67,7 +69,7 @@ final public class MagicSystem {
     public static boolean isDebugMode() {
         return Boolean.getBoolean("debug");
     }
-    
+
     /**
      * add "-DparseMissing=true" VM argument for parsing scripts_missing folder.
      */
@@ -126,7 +128,7 @@ final public class MagicSystem {
             }
         }
     }
-    
+
     private static void initializeEngine(final ProgressReporter reporter) {
         if (isParseMissing()) {
             UnimplementedParser.parseScriptsMissing(reporter);
@@ -143,7 +145,7 @@ final public class MagicSystem {
         // icons are not loaded before the AbilityIcon class is initialized
         // and you end up with the default icons instead.
         GeneralConfig.getInstance().load();
-        
+
         final File gamePathFile = MagicFileSystem.getDataPath().toFile();
         if (!gamePathFile.exists() && !gamePathFile.mkdir()) {
             System.err.println("Unable to create directory " + gamePathFile.toString());
@@ -159,7 +161,7 @@ final public class MagicSystem {
         // setup the game log
         reporter.setMessage("Initializing log...");
         MagicGameLog.initialize();
-       
+
         // start a separate thread to load cards
         final ExecutorService background = Executors.newSingleThreadExecutor();
         background.execute(loadCards);
@@ -175,12 +177,14 @@ final public class MagicSystem {
         if (isParseMissing() || isDebugMode()) {
             waitForAllCards();
         }
-        
+
         if (isDebugMode()) {
             reporter.setMessage("Loading card abilities...");
             CardDefinitions.loadCardAbilities();
         }
 
+        reporter.setMessage("Loading card image components...");
+        ResourceManager.initialize();
         reporter.setMessage("Loading cube definitions...");
         MagicCustomFormat.loadCustomFormats();
         reporter.setMessage("Loading deck generators...");
@@ -189,7 +193,7 @@ final public class MagicSystem {
     }
 
     public static File getJarFile() throws URISyntaxException {
-        
+
         CodeSource codeSource = MagicSystem.class.getProtectionDomain().getCodeSource();
         File jarFile = new File(codeSource.getLocation().toURI());
 
@@ -214,7 +218,7 @@ final public class MagicSystem {
 
         final String javaBin = System.getProperty("java.home") + File.separator + "bin" + File.separator + "java";
         command.add(javaBin);
-        
+
         // vm arguments
         final List<String> vmArguments = ManagementFactory.getRuntimeMXBean().getInputArguments();
         for (final String arg : vmArguments) {
@@ -253,7 +257,7 @@ final public class MagicSystem {
         });
 
         System.exit(0);
-        
+
     }
 
     public static boolean isNewInstall() {
