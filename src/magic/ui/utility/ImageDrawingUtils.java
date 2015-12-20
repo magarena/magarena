@@ -21,6 +21,7 @@ import magic.model.event.MagicManaActivation;
 import magic.ui.MagicImages;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.theme.AbilityIcon;
+import magic.ui.card.CardIcon;
 import magic.utility.MagicSystem;
 import magic.data.TextImages;
 
@@ -89,11 +90,9 @@ public class ImageDrawingUtils {
         int ax,
         final int ay
     ) {
-        for (final AbilityIcon abi : AbilityIcon.values()) {
-            if (abilityFlags.contains(abi.getAbility())) {
-                g.drawImage(abi.getIcon().getImage(),ax,ay,observer);
-                ax+=16;
-            }
+        for (final CardIcon cardIcon : AbilityIcon.getIcons(abilityFlags)) {
+            g.drawImage(cardIcon.getIcon().getImage(),ax,ay,observer);
+            ax+=16;
         }
         return ax;
     }
