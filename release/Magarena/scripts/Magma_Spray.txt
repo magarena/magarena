@@ -4,6 +4,6 @@ value=3.400
 rarity=C
 type=Instant
 cost={R}
+effect=SN deals 2 damage to target creature. If that creature would die this turn, exile it instead.
 timing=removal
-requires_groovy_code
 oracle=Magma Spray deals 2 damage to target creature. If that creature would die this turn, exile it instead.
