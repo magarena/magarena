@@ -15,6 +15,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicCopyable;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
+import magic.model.MagicDamage;
 import magic.model.MagicLocationType;
 import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
@@ -47,6 +48,7 @@ import magic.model.trigger.AtEndOfTurnTrigger;
 import magic.model.trigger.AtUpkeepTrigger;
 import magic.model.trigger.PreventDamageTrigger;
 import magic.model.trigger.ReboundTrigger;
+import magic.model.trigger.ThisLeavesBattlefieldTrigger;
 
 public enum MagicRuleEventAction {
     ChooseOneOfThree(
@@ -458,6 +460,38 @@ public enum MagicRuleEventAction {
                     }
                     for (final MagicTarget target : ARG.targets2(event, matcher, filter2)) {
                         game.doAction(new DealDamageAction(source,target,amount));
+                    }
+                }
+            };
+        }
+        @Override
+        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+            return DamageGroup.getPicker(matcher);
+        }
+    },
+    DamageGroupExile(
+        ARG.IT + " deal(s)? " + ARG.AMOUNT + " damage to " + ARG.TARGETS + "\\. If a creature dealt damage this way would die this turn, exile it instead.",
+        MagicTiming.Removal,
+        "Damage"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicAmount count = ARG.amountObj(matcher);
+            final MagicTargetFilter<MagicTarget> filter = ARG.targetsParse(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final int amount = count.getAmount(event);
+                    for (final MagicTarget it : ARG.targets(event, matcher, filter)) {
+                        final MagicDamage damage=new MagicDamage(ARG.itSource(event, matcher), it, amount);
+                        game.doAction(new DealDamageAction(damage));
+                        if (damage.getDealtAmount() > 0 && it.isPermanent()) {
+                            final MagicPermanent perm = (MagicPermanent)it;
+                            game.doValidAction(perm, new AddTurnTriggerAction(
+                                perm, 
+                                ThisLeavesBattlefieldTrigger.IfDieExileInstead
+                            ));
+                        }
                     }
                 }
             };
