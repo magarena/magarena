@@ -6,6 +6,6 @@ rarity=R
 type=Sorcery
 cost={1}{R}{R}
 ability=Cast SN with AI only if an opponent controls a creature.
+effect=SN deals 3 damage to each creature. If a creature dealt damage this way would die this turn, exile it instead.
 timing=removal
-requires_groovy_code
 oracle=Anger of the Gods deals 3 damage to each creature. If a creature dealt damage this way would die this turn, exile it instead.

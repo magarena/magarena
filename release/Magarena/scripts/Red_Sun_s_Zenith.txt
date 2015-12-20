@@ -4,6 +4,6 @@ value=3.717
 rarity=R
 type=Sorcery
 cost={X}{R}
+effect=SN deals X damage to target creature or player. If a creature dealt damage this way would die this turn, exile it instead.~Shuffle SN into its owner's library.
 timing=main
-requires_groovy_code
 oracle=Red Sun's Zenith deals X damage to target creature or player. If a creature dealt damage this way would die this turn, exile it instead. Shuffle Red Sun's Zenith into its owner's library.
