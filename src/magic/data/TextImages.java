@@ -153,11 +153,8 @@ public class TextImages {
     }
 
     private static void add(final String text, final MagicIcon icon) {
-        if (TEXT_ICONS.containsKey(text)) {
-            throw new RuntimeException("Duplicate text for " + text);
-        } else {
-            TEXT_ICONS.put(text, icon);
-        }
+        assert TEXT_ICONS.containsKey(text) == false : "Duplicate key in TextImages: " + text;
+        TEXT_ICONS.put(text, icon);
     }
 
     public static MagicIcon getIcon(final String text) {
