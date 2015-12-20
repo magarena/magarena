@@ -36,7 +36,7 @@ public class CachedImagesProvider implements CardImagesProvider {
     private BufferedImage getOriginalImage(final File imageFile, final MagicCardDefinition cardDef) {
         final String cacheKey = imageFile.getName();
         if (!origImages.containsKey(cacheKey)) {
-            final BufferedImage image = ImageFileIO.toImg(imageFile, MagicImages.getMissingCardImage(cardDef));
+            final BufferedImage image = ImageFileIO.toImg(imageFile, () -> MagicImages.getMissingCardImage(cardDef));
             origImages.put(cacheKey, image);
             return image;
         } else {

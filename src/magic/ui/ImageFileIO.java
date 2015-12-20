@@ -7,7 +7,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
-
+import java.util.function.Supplier;
 
 public final class ImageFileIO {
     private ImageFileIO() { }
@@ -23,13 +23,17 @@ public final class ImageFileIO {
             return null;
         }
     }
-
+    
     public static BufferedImage toImg(final File input, final BufferedImage def) {
+        return toImg(input, () -> def);
+    }
+
+    public static BufferedImage toImg(final File input, final Supplier<BufferedImage> def) {
         final BufferedImage img = loadImage(input);
         if (img == null) {
             // no registered ImageReader able to read the file, likely file is corrupted
             input.delete();
-            return def;
+            return def.get();
         } else {
             final BufferedImage optimizedImage =
                     GraphicsUtils.getCompatibleBufferedImage(img.getWidth(), img.getHeight(), img.getTransparency());
