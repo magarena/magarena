@@ -470,7 +470,7 @@ public enum MagicRuleEventAction {
         }
     },
     DamageGroupExile(
-        ARG.IT + " deal(s)? " + ARG.AMOUNT + " damage to " + ARG.TARGETS + "\\. If a creature dealt damage this way would die this turn, exile it instead.",
+        ARG.IT + " deal(s)? " + ARG.AMOUNT + " damage to " + ARG.TARGETS + "\\. If (a|that) creature (?<dealt>dealt damage this way )?would die this turn, exile it instead.",
         MagicTiming.Removal,
         "Damage"
     ) {
@@ -485,7 +485,7 @@ public enum MagicRuleEventAction {
                     for (final MagicTarget it : ARG.targets(event, matcher, filter)) {
                         final MagicDamage damage=new MagicDamage(ARG.itSource(event, matcher), it, amount);
                         game.doAction(new DealDamageAction(damage));
-                        if (damage.getDealtAmount() > 0 && it.isPermanent()) {
+                        if (it.isPermanent() && (matcher.group("dealt") == null || damage.getDealtAmount() > 0)) {
                             final MagicPermanent perm = (MagicPermanent)it;
                             game.doValidAction(perm, new AddTurnTriggerAction(
                                 perm, 
