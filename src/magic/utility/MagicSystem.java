@@ -20,7 +20,6 @@ import magic.data.GeneralConfig;
 import magic.data.MagicCustomFormat;
 import magic.data.UnimplementedParser;
 import magic.model.MagicGameLog;
-import magic.ui.cardBuilder.ResourceManager;
 import magic.utility.MagicFileSystem.DataPath;
 
 final public class MagicSystem {
@@ -183,8 +182,6 @@ final public class MagicSystem {
             CardDefinitions.loadCardAbilities();
         }
 
-        reporter.setMessage("Loading card image components...");
-        ResourceManager.initialize();
         reporter.setMessage("Loading cube definitions...");
         MagicCustomFormat.loadCustomFormats();
         reporter.setMessage("Loading deck generators...");
