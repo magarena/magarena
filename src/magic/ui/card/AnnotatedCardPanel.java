@@ -63,7 +63,6 @@ public class AnnotatedCardPanel extends JPanel {
     private SwingGameController controller;
     private BufferedImage cardImage;
     private String modifiedPT;
-    private String basePT;
     private Dimension imageOnlyPopupSize;
     private Dimension popupSize;
     private List<CardIcon> cardIcons = new ArrayList<>();
@@ -194,7 +193,6 @@ public class AnnotatedCardPanel extends JPanel {
         // --->
         this.magicObject = null;
         this.modifiedPT = "";
-        this.basePT = "";
         setPopupImage();
     }
 
@@ -205,7 +203,6 @@ public class AnnotatedCardPanel extends JPanel {
         setPanelSize(containerSize);
         // --->
         this.modifiedPT = getModifiedPT(cardInfo.getMagicObject());
-        this.basePT = getBasePT(cardInfo.getMagicObject());
         this.magicObject = cardInfo.getMagicObject();
         setPopupImage();
     }
@@ -223,7 +220,6 @@ public class AnnotatedCardPanel extends JPanel {
         // --->
         this.magicObject = magicObject;
         this.modifiedPT = getModifiedPT(magicObject);
-        this.basePT = getBasePT(magicObject);
         setPopupImage();
     }
 
