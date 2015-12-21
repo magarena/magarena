@@ -100,9 +100,9 @@ public class ResourceManager {
     public static final BufferedImage blackTokenFrameText = getFrame("token/bcard2.jpg");
     public static final BufferedImage redTokenFrame = getFrame("token/rcard.jpg");
     public static final BufferedImage redTokenFrameText = getFrame("token/rcard2.jpg");
-    public static final BufferedImage greenTokenFrame = getFrame("token/gcard.png");
+    public static final BufferedImage greenTokenFrame = getFrame("token/gcard.jpg");
     public static final BufferedImage greenTokenFrameText = getFrame("token/gcard2.jpg");
-    public static final BufferedImage multiTokenFrame = getFrame("token/mcard.png");
+    public static final BufferedImage multiTokenFrame = getFrame("token/mcard.jpg");
     public static final BufferedImage multiTokenFrameText = getFrame("token/mcard2.jpg");
     public static final BufferedImage gainColorTokenBlend = getFrame("token/color_blend.png");
     public static final BufferedImage gainColorTokenBlendText = getFrame("token/color_blend2.png");
