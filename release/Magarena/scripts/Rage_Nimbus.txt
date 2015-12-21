@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental
 cost={2}{R}
 pt=5/3
-ability=defender;flying
+ability=Defender, flying;\
+        {1}{R}: Target creature attacks this turn if able.
 timing=smain
-requires_groovy_code
 oracle=Defender, flying\n{1}{R}: Target creature attacks this turn if able.

@@ -6,7 +6,8 @@ type=Legendary,Creature
 subtype=Angel
 cost={3}{R}{W}
 pt=4/4
-ability=flying
+ability=Flying;\
+        {R}: Target creature attacks this turn if able.
 timing=main
 requires_groovy_code
 oracle=Flying\nPlayers can't cast spells during combat.\n{R}: Target creature attacks this turn if able.

@@ -4,6 +4,6 @@ value=3.323
 rarity=U
 type=Artifact
 cost={4}
+ability={2}, {T}: SN deals 1 damage to target creature.~*That creature* attacks this turn if able.
 timing=artifact
-requires_groovy_code
 oracle={2}, {T}: Bullwhip deals 1 damage to target creature. That creature attacks this turn if able.

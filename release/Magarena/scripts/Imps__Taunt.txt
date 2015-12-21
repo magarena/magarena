@@ -5,7 +5,7 @@ removal=1
 rarity=U
 type=Instant
 cost={1}{B}
+ability=Buyback {3}
+effect=Target creature attacks this turn if able.
 timing=mustattack
-ability=buyback {3}
-requires_groovy_code
 oracle=Buyback {3}\nTarget creature attacks this turn if able.

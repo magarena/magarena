@@ -6,6 +6,6 @@ type=Creature
 subtype=Devil
 cost={2}{R}
 pt=2/2
+ability={2}{R}: Target creature attacks this turn if able.
 timing=main
-requires_groovy_code
 oracle={2}{R}: Target creature attacks this turn if able.
