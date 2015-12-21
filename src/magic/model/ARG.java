@@ -8,6 +8,7 @@ import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 import magic.model.event.MagicEvent;
+import magic.model.action.MagicPlayMod;
 import magic.data.EnglishToInt;
 
 import java.util.regex.Matcher;
@@ -26,7 +27,7 @@ public class ARG {
         return Integer.parseInt(m.group("number"));
     }
 
-    public static final String AMOUNT = "(?<amount>[^ ]+)";
+    public static final String AMOUNT = "(?<amount>[^ ]+?)";
     public static int amount(final Matcher m) {
         return EnglishToInt.convert(m.group("amount"));
     }
@@ -34,7 +35,7 @@ public class ARG {
         return MagicAmountParser.build(m.group("amount"));
     }
     
-    public static final String AMOUNT2 = "(?<amount2>[^ ]+)";
+    public static final String AMOUNT2 = "(?<amount2>[^ ]+?)";
     public static int amount2(final Matcher m) {
         return EnglishToInt.convert(m.group("amount2"));
     }
@@ -100,6 +101,11 @@ public class ARG {
     public static MagicPowerToughness mpt(final Matcher m) {
         final String[] pt = m.group("pt").replace("+","").split("/");
         return new MagicPowerToughness(Integer.parseInt(pt[0]), Integer.parseInt(pt[1]));
+    }
+
+    public static final String MODS = "(\\.|,)?( )?(?<mods>.+?)?";
+    public static List<MagicPlayMod> mods(final Matcher m) {
+        return MagicPlayMod.build(m.group("mods"));
     }
 
     public static final String IT = "((?<rn>rn)|(?<sn>sn))";

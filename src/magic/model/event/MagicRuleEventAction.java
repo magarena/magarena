@@ -100,7 +100,7 @@ public enum MagicRuleEventAction {
         }
     },
     DestroyAtEndOfCombat(
-        "destroy " + ARG.PERMANENTS + " at end of combat\\.",
+        "destroy " + ARG.PERMANENTS + " at end of combat(\\.|,)?",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Destroy"
@@ -153,7 +153,7 @@ public enum MagicRuleEventAction {
         }
     },
     CounterUnless(
-        "counter " + ARG.ITEMS + " unless its controller pays (?<cost>[^\\.]*)\\.",
+        "counter " + ARG.ITEMS + " unless its controller pays (?<cost>[^\\.]*)(\\.|,)?",
         MagicTargetHint.Negative,
         MagicTiming.Counter,
         "Counter"
@@ -177,7 +177,7 @@ public enum MagicRuleEventAction {
         }
     },
     CounterSpellToExile(
-        "counter " + ARG.ITEMS + "\\. if that spell is countered this way, exile it instead of putting it into its owner's graveyard\\.",
+        "counter " + ARG.ITEMS + "\\. if that spell is countered this way, exile it instead of putting it into its owner's graveyard(\\.|,)?",
         MagicTargetHint.Negative,
         MagicTiming.Counter,
         "Counter"
@@ -196,7 +196,7 @@ public enum MagicRuleEventAction {
         }
     },
     CounterSpell(
-        "counter " + ARG.ITEMS + "\\.",
+        "counter " + ARG.ITEMS + "(\\.|,)?",
         MagicTargetHint.Negative,
         MagicTiming.Counter,
         "Counter"
@@ -215,7 +215,7 @@ public enum MagicRuleEventAction {
         }
     },
     FlickerYour(
-        "exile " + ARG.PERMANENTS + ", then return (it|that card) to the battlefield under your control\\.",
+        "exile " + ARG.PERMANENTS + ", then return (it|that card) to the battlefield under your control(\\.|,)?",
         MagicTargetHint.Positive,
         MagicBounceTargetPicker.create(),
         MagicTiming.Removal,
@@ -243,7 +243,7 @@ public enum MagicRuleEventAction {
         }
     },
     FlickerOwner(
-        "exile " + ARG.PERMANENTS + ", then return (it|that card) to the battlefield under its owner's control\\.",
+        "exile " + ARG.PERMANENTS + ", then return (it|that card) to the battlefield under its owner's control(\\.|,)?",
         MagicTargetHint.Positive,
         MagicBounceTargetPicker.create(),
         MagicTiming.Removal,
@@ -271,7 +271,7 @@ public enum MagicRuleEventAction {
         }
     },
     FlickerEndStep(
-        "exile " + ARG.PERMANENTS + "\\. (if you do, )?return (those cards|the exiled card|that card|it|sn) to the battlefield under (their|its) owner's control at the beginning of the next end step\\.",
+        "exile " + ARG.PERMANENTS + "\\. (if you do, )?return (those cards|the exiled card|that card|it|sn) to the battlefield under (their|its) owner's control at the beginning of the next end step(\\.|,)?",
         MagicTargetHint.None,
         MagicBounceTargetPicker.create(),
         MagicTiming.Removal,
@@ -291,7 +291,7 @@ public enum MagicRuleEventAction {
         }
     },
     ExileCards(
-        "exile " + ARG.CARDS + "\\.",
+        "exile " + ARG.CARDS + "(\\.|,)?",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Exile"
@@ -326,7 +326,7 @@ public enum MagicRuleEventAction {
         }
     },
     ExilePermanents(
-        "exile " + ARG.PERMANENTS + "\\.",
+        "exile " + ARG.PERMANENTS + "(\\.|,)?",
         MagicTargetHint.Negative,
         MagicExileTargetPicker.create(),
         MagicTiming.Removal,
@@ -395,7 +395,7 @@ public enum MagicRuleEventAction {
         }
     },
     DamageEqualX(
-        ARG.IT + " deal(s)? X damage to " + ARG.TARGETS + ", where X is " + ARG.WORDRUN + "\\.",
+        ARG.IT + " deal(s)? X damage to " + ARG.TARGETS + ", where X is " + ARG.WORDRUN + "(\\.|,)?",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Damage"
@@ -410,7 +410,7 @@ public enum MagicRuleEventAction {
         }
     },
     DamageTwoGroupAlt(
-        ARG.IT + " deal(s)? " + ARG.AMOUNT + " damage to " + ARG.TARGETS + " and " + ARG.AMOUNT2 + " damage to " + ARG.TARGETS2 + "\\.",
+        ARG.IT + " deal(s)? " + ARG.AMOUNT + " damage to " + ARG.TARGETS + " and " + ARG.AMOUNT2 + " damage to " + ARG.TARGETS2 + "(\\.|,)?",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Damage"
@@ -537,7 +537,7 @@ public enum MagicRuleEventAction {
         }
     },
     PreventNextDamage(
-        "prevent the next " + ARG.AMOUNT + " damage that would be dealt to " + ARG.TARGETS + " this turn\\.",
+        "prevent the next " + ARG.AMOUNT + " damage that would be dealt to " + ARG.TARGETS + " this turn(\\.|,)?",
         MagicTargetHint.Positive,
         MagicPreventTargetPicker.create(),
         MagicTiming.Pump,
@@ -559,7 +559,7 @@ public enum MagicRuleEventAction {
         }
     },
     PreventAllCombat(
-        "prevent all combat damage that would be dealt this turn\\.",
+        "prevent all combat damage that would be dealt this turn(\\.|,)?",
         MagicTiming.Block,
         "Prevent",
         new MagicEventAction() {
@@ -572,7 +572,7 @@ public enum MagicRuleEventAction {
         }
     ),
     PreventAllCombatToBy(
-        "prevent all combat damage that would be dealt to and dealt by " + ARG.PERMANENTS + " this turn\\.",
+        "prevent all combat damage that would be dealt to and dealt by " + ARG.PERMANENTS + " this turn(\\.|,)?",
         MagicTiming.Block,
         "Prevent"
     ) {
@@ -593,7 +593,7 @@ public enum MagicRuleEventAction {
         }
     },
     PreventAllCombatTo(
-        "prevent all combat damage that would be dealt to " + ARG.TARGETS + " this turn\\.",
+        "prevent all combat damage that would be dealt to " + ARG.TARGETS + " this turn(\\.|,)?",
         MagicTargetHint.Positive,
         MagicPreventTargetPicker.create(),
         MagicTiming.Block,
@@ -628,7 +628,7 @@ public enum MagicRuleEventAction {
         }
     },
     PreventAllCombatBy(
-        "prevent all combat damage that would be dealt by " + ARG.PERMANENTS + " this turn\\.",
+        "prevent all combat damage that would be dealt by " + ARG.PERMANENTS + " this turn(\\.|,)?",
         MagicTargetHint.Negative,
         new MagicNoCombatTargetPicker(true, true, false),
         MagicTiming.Block,
@@ -654,7 +654,7 @@ public enum MagicRuleEventAction {
         }
     },
     PreventAllDamageTo(
-        "prevent all damage that would be dealt to " + ARG.TARGETS + " this turn\\.",
+        "prevent all damage that would be dealt to " + ARG.TARGETS + " this turn(\\.|,)?",
         MagicTargetHint.Positive,
         MagicPreventTargetPicker.create(),
         MagicTiming.Pump,
@@ -689,7 +689,7 @@ public enum MagicRuleEventAction {
         }
     },
     PreventAllDamageBy(
-        "prevent all damage that would be dealt by " + ARG.PERMANENTS + " this turn\\.",
+        "prevent all damage that would be dealt by " + ARG.PERMANENTS + " this turn(\\.|,)?",
         MagicTargetHint.Negative,
         new MagicNoCombatTargetPicker(true, true, false),
         MagicTiming.Pump,
@@ -715,7 +715,7 @@ public enum MagicRuleEventAction {
         }
     },
     DrawLosePlayers(
-        ARG.PLAYERS + " draw(s)? " + ARG.AMOUNT + " card(s)? and (you )?lose(s)? " + ARG.AMOUNT2 + " life\\.",
+        ARG.PLAYERS + " draw(s)? " + ARG.AMOUNT + " card(s)? and (you )?lose(s)? " + ARG.AMOUNT2 + " life(\\.|,)?",
         MagicTiming.Draw,
         "Draw"
     ) {
@@ -736,7 +736,7 @@ public enum MagicRuleEventAction {
         }
     },
     DrawSelfNextUpkeep(
-        "(pn |you )?draw(s)? a card at the beginning of the next turn's upkeep\\.",
+        "(pn |you )?draw(s)? a card at the beginning of the next turn's upkeep(\\.|,)?",
         MagicTiming.Draw,
         "Draw"
     ) {
@@ -756,7 +756,7 @@ public enum MagicRuleEventAction {
         }
     },
     Draw(
-        ARG.PLAYERS + "( )?draw(s)? " + ARG.AMOUNT + " (additional )?card(s)?( for each " + ARG.WORDRUN +")?\\.",
+        ARG.PLAYERS + "( )?draw(s)? " + ARG.AMOUNT + " (additional )?card(s)?( for each " + ARG.WORDRUN +")?(\\.|,)?",
         MagicTargetHint.Positive,
         MagicTiming.Draw,
         "Draw"
@@ -782,7 +782,7 @@ public enum MagicRuleEventAction {
         }
     },
     DrawAlt(
-        ARG.PLAYERS + "( )?draw(s)? " + ARG.AMOUNT + "?cards equal to " + ARG.WORDRUN +"\\.",
+        ARG.PLAYERS + "( )?draw(s)? " + ARG.AMOUNT + "?cards equal to " + ARG.WORDRUN +"(\\.|,)?",
         MagicTiming.Draw,
         "Draw"
     ) {
@@ -792,7 +792,7 @@ public enum MagicRuleEventAction {
         }
     },
     DrawDiscard(
-        ARG.PLAYERS + "( )?draw(s)? " +  ARG.AMOUNT + " card(s)?(, then|\\. if you do,) discard(s)? " + ARG.AMOUNT2 + " card(s)?(?<random> at random)?\\.",
+        ARG.PLAYERS + "( )?draw(s)? " +  ARG.AMOUNT + " card(s)?(, then|\\. if you do,) discard(s)? " + ARG.AMOUNT2 + " card(s)?(?<random> at random)?(\\.|,)?",
         MagicTiming.Draw,
         "Draw"
     ) {
@@ -818,7 +818,7 @@ public enum MagicRuleEventAction {
         }
     },
     Discard(
-        ARG.PLAYERS + "( )?discard(s)? " + ARG.AMOUNT + " card(s)?(?<random> at random)?( for each " + ARG.WORDRUN +")?\\.",
+        ARG.PLAYERS + "( )?discard(s)? " + ARG.AMOUNT + " card(s)?(?<random> at random)?( for each " + ARG.WORDRUN +")?(\\.|,)?",
         MagicTargetHint.Negative,
         MagicTiming.Draw,
         "Discard"
@@ -849,7 +849,7 @@ public enum MagicRuleEventAction {
         }
     },
     DiscardHand(
-        ARG.PLAYERS + "( )?discard(s)? (your|his or her) hand\\.",
+        ARG.PLAYERS + "( )?discard(s)? (your|his or her) hand(\\.|,)?",
         MagicTargetHint.Negative,
         MagicTiming.Draw,
         "Discard"
@@ -868,7 +868,7 @@ public enum MagicRuleEventAction {
         }
     },
     DrainLife(
-        ARG.PLAYERS + " lose(s)? " + ARG.AMOUNT + " life and you gain " + ARG.AMOUNT2 + " life\\.",
+        ARG.PLAYERS + " lose(s)? " + ARG.AMOUNT + " life and you gain " + ARG.AMOUNT2 + " life(\\.|,)?",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "-Life"
@@ -896,7 +896,7 @@ public enum MagicRuleEventAction {
         }
     },
     GainLife(
-        ARG.PLAYERS + "( )?gain(s)? " + ARG.AMOUNT + " life( for each " + ARG.WORDRUN + ")?\\.",
+        ARG.PLAYERS + "( )?gain(s)? " + ARG.AMOUNT + " life( for each " + ARG.WORDRUN + ")?(\\.|,)?",
         MagicTargetHint.Positive,
         MagicTiming.Removal,
         "+Life"
@@ -922,7 +922,7 @@ public enum MagicRuleEventAction {
         }
     },
     LoseLife(
-        ARG.PLAYERS + "( )?lose(s)? " + ARG.AMOUNT + " life( for each " + ARG.WORDRUN + ")?\\.",
+        ARG.PLAYERS + "( )?lose(s)? " + ARG.AMOUNT + " life( for each " + ARG.WORDRUN + ")?(\\.|,)?",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "-Life"
@@ -948,7 +948,7 @@ public enum MagicRuleEventAction {
         }
     },
     SetLife(
-        ARG.PLAYERS + "('s|r) life total becomes " + ARG.AMOUNT + "\\.",
+        ARG.PLAYERS + "('s|r) life total becomes " + ARG.AMOUNT + "(\\.|,)?",
         MagicTiming.Removal,
         "=Life"
     ) {
@@ -967,7 +967,7 @@ public enum MagicRuleEventAction {
         }
     },
     Pump(
-        ARG.PERMANENTS + " get(s)? (?<pt>[0-9+]+/[0-9+]+) until end of turn( for each " + ARG.WORDRUN + ")?\\.",
+        ARG.PERMANENTS + " get(s)? (?<pt>[0-9+]+/[0-9+]+) until end of turn( for each " + ARG.WORDRUN + ")?(\\.|,)?",
         MagicTargetHint.Positive,
         MagicPumpTargetPicker.create(),
         MagicTiming.Pump,
@@ -995,7 +995,7 @@ public enum MagicRuleEventAction {
         }
     },
     Weaken(
-        ARG.PERMANENTS + " get(s)? (?<pt>[0-9-]+/[0-9-]+) until end of turn( for each " + ARG.WORDRUN + ")?\\.",
+        ARG.PERMANENTS + " get(s)? (?<pt>[0-9-]+/[0-9-]+) until end of turn( for each " + ARG.WORDRUN + ")?(\\.|,)?",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Weaken"
@@ -1013,7 +1013,7 @@ public enum MagicRuleEventAction {
         }
     },
     ModPT(
-        ARG.PERMANENTS + " get(s)? (?<pt>[0-9+-]+/[0-9+-]+) until end of turn( for each " + ARG.WORDRUN + ")?\\.",
+        ARG.PERMANENTS + " get(s)? (?<pt>[0-9+-]+/[0-9+-]+) until end of turn( for each " + ARG.WORDRUN + ")?(\\.|,)?",
         MagicTiming.Removal,
         "Pump"
     ) {
@@ -1078,7 +1078,7 @@ public enum MagicRuleEventAction {
         }
     },
     PumpGainCan(
-        ARG.PERMANENTS + " get(s)? (?<pt>[0-9+]+/[0-9+]+) (until end of turn and|and) (?<ability>can('t)? .+) this turn\\.",
+        ARG.PERMANENTS + " get(s)? (?<pt>[0-9+]+/[0-9+]+) (until end of turn and|and) (?<ability>can('t)? .+) this turn(\\.|,)?",
         MagicTargetHint.Positive
     ) {
         @Override
@@ -1099,7 +1099,7 @@ public enum MagicRuleEventAction {
         }
     },
     ModPTGain(
-        ARG.PERMANENTS + " get(s)? (?<pt>[0-9+-]+/[0-9+-]+) and gains (?<ability>.+) until end of turn\\.",
+        ARG.PERMANENTS + " get(s)? (?<pt>[0-9+-]+/[0-9+-]+) and gains (?<ability>.+) until end of turn(\\.|,)?",
         MagicTiming.Removal
     ) {
         @Override
@@ -1112,7 +1112,7 @@ public enum MagicRuleEventAction {
         }
     },
     ModPTGainCan(
-        ARG.PERMANENTS + " get(s)? (?<pt>[0-9+-]+/[0-9+-]+) and (?<ability>can('t)? .+) this turn\\.",
+        ARG.PERMANENTS + " get(s)? (?<pt>[0-9+-]+/[0-9+-]+) and (?<ability>can('t)? .+) this turn(\\.|,)?",
         MagicTiming.Removal
     ) {
         @Override
@@ -1182,7 +1182,7 @@ public enum MagicRuleEventAction {
         }
     },
     CounterFromSelfClockwork(
-        "remove a \\+1\\/\\+1 counter from (sn|it) at end of combat\\.",
+        "remove a \\+1\\/\\+1 counter from (sn|it) at end of combat(\\.|,)?",
         MagicTiming.Pump,
         "Remove",
         new MagicEventAction() {
@@ -1193,7 +1193,7 @@ public enum MagicRuleEventAction {
         }
     ),
     RemoveCounter(
-        "remove " + ARG.AMOUNT + " (?<type>[^ ]+) counter(s)? from " +  ARG.PERMANENTS + "\\.",
+        "remove " + ARG.AMOUNT + " (?<type>[^ ]+) counter(s)? from " +  ARG.PERMANENTS + "(\\.|,)?",
         MagicTiming.Pump
     ) {
         @Override
@@ -1221,7 +1221,7 @@ public enum MagicRuleEventAction {
         }
     },
     Bolster(
-        "bolster " + ARG.AMOUNT + "\\.",
+        "bolster " + ARG.AMOUNT + "(\\.|,)?",
         MagicTiming.Pump,
         "Bolster"
     ) {
@@ -1242,7 +1242,7 @@ public enum MagicRuleEventAction {
         }
     },
     RecoverCardSelf(
-        "return sn from your graveyard to your hand\\.",
+        "return sn from your graveyard to your hand(\\.|,)?",
         MagicTiming.Draw,
         "Return",
         new MagicEventAction() {
@@ -1257,13 +1257,13 @@ public enum MagicRuleEventAction {
         }
     ),
     ReanimateCardSelf(
-        "return sn from your graveyard to the battlefield(\\. | )?(?<mods>.+)?\\.",
+        "return sn from your graveyard to the battlefield" + ARG.MODS + "(\\.|,)?",
         MagicTiming.Token,
         "Reanimate"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final List<MagicPlayMod> mods = MagicPlayMod.build(matcher.group("mods"));
+            final List<MagicPlayMod> mods = ARG.mods(matcher);
             return new MagicEventAction () {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -1277,7 +1277,7 @@ public enum MagicRuleEventAction {
         }
     },
     RecoverSelf(
-        "return sn from the graveyard to its owner's hand\\.",
+        "return sn from the graveyard to its owner's hand(\\.|,)?",
         MagicTiming.Draw,
         "Return",
         new MagicEventAction() {
@@ -1292,7 +1292,7 @@ public enum MagicRuleEventAction {
         }
     ),
     RecoverCards(
-        "return " + ARG.CARDS + " to (your|its owner's) hand\\.",
+        "return " + ARG.CARDS + " to (your|its owner's) hand(\\.|,)?",
         MagicTargetHint.Positive,
         MagicGraveyardTargetPicker.ReturnToHand,
         MagicTiming.Draw,
@@ -1313,7 +1313,7 @@ public enum MagicRuleEventAction {
         }
     },
     ReclaimCards(
-        "put " + ARG.CARDS + " on top of (your|its owner's) library\\.",
+        "put " + ARG.CARDS + " on top of (your|its owner's) library(\\.|,)?",
         MagicTargetHint.Positive,
         MagicGraveyardTargetPicker.ReturnToHand,
         MagicTiming.Draw,
@@ -1334,7 +1334,7 @@ public enum MagicRuleEventAction {
         }
     },
     TuckCards(
-        "put " + ARG.CARDS + " on the bottom of (your|its owner's) library\\.",
+        "put " + ARG.CARDS + " on the bottom of (your|its owner's) library(\\.|,)?",
         MagicTargetHint.Negative,
         MagicGraveyardTargetPicker.ExileOpp,
         MagicTiming.Draw,
@@ -1355,7 +1355,7 @@ public enum MagicRuleEventAction {
         }
     },
     Bounce(
-        "return " + ARG.PERMANENTS + " to (your hand|its owner's hand|their owner's hand|their owners' hands)\\.",
+        "return " + ARG.PERMANENTS + " to (your hand|its owner's hand|their owner's hand|their owners' hands)(\\.|,)?",
         MagicTargetHint.None,
         MagicBounceTargetPicker.create(),
         MagicTiming.Removal,
@@ -1375,7 +1375,7 @@ public enum MagicRuleEventAction {
         }
     },
     BounceEndOfCombat(
-        "return " + ARG.PERMANENTS + " to (your hand|its owner's hand|their owner's hand|their owners' hands) at end of combat\\.",
+        "return " + ARG.PERMANENTS + " to (your hand|its owner's hand|their owner's hand|their owners' hands) at end of combat(\\.|,)?",
         MagicTargetHint.None,
         MagicBounceTargetPicker.create(),
         MagicTiming.Removal,
@@ -1398,7 +1398,7 @@ public enum MagicRuleEventAction {
         }
     },
     BounceLibTop(
-        "put " + ARG.PERMANENTS + " on top of (its owner's library|his or her library|their owners' libraries)\\.",
+        "put " + ARG.PERMANENTS + " on top of (its owner's library|his or her library|their owners' libraries)(\\.|,)?",
         MagicTargetHint.None,
         MagicBounceTargetPicker.create(),
         MagicTiming.Removal,
@@ -1418,7 +1418,7 @@ public enum MagicRuleEventAction {
         }
     },
     BounceLibBottom(
-        "put " + ARG.PERMANENTS + " on the bottom of (its owner's library|his or her library|their owners' libraries)\\.",
+        "put " + ARG.PERMANENTS + " on the bottom of (its owner's library|his or her library|their owners' libraries)(\\.|,)?",
         MagicTargetHint.None,
         MagicBounceTargetPicker.create(),
         MagicTiming.Removal,
@@ -1438,7 +1438,7 @@ public enum MagicRuleEventAction {
         }
     },
     RevealToHand(
-        "reveal the top " + ARG.AMOUNT + " cards of your library\\. Put all " +  ARG.WORDRUN + " revealed this way into your hand and the rest on the bottom of your library in any order\\.",
+        "reveal the top " + ARG.AMOUNT + " cards of your library\\. Put all " +  ARG.WORDRUN + " revealed this way into your hand and the rest on the bottom of your library in any order(\\.|,)?",
         MagicTiming.Draw,
         "Reveal"
     ) {
@@ -1465,7 +1465,7 @@ public enum MagicRuleEventAction {
         }
     },
     SearchLibraryToHand(
-        "search your library for (?<card>[^\\.]*), reveal (it|that card), (and )?put it into your hand(.|,) (If you do, |(t|T)hen )shuffle your library\\.",
+        "search your library for (?<card>[^\\.]*), reveal (it|that card), (and )?put it into your hand(.|,) (If you do, |(t|T)hen )shuffle your library(\\.|,)?",
         MagicTiming.Draw,
         "Search"
     ) {
@@ -1485,7 +1485,7 @@ public enum MagicRuleEventAction {
         }
     },
     SearchLibraryToHandHidden(
-        "search your library for (?<card>[^\\.]*)( and|,) put (it|that card) into your hand(.|,) (If you do, |(t|T)hen )shuffle your library\\.",
+        "search your library for (?<card>[^\\.]*)( and|,) put (it|that card) into your hand(.|,) (If you do, |(t|T)hen )shuffle your library(\\.|,)?",
         MagicTiming.Draw,
         "Search"
     ) {
@@ -1506,7 +1506,7 @@ public enum MagicRuleEventAction {
         }
     },
     SearchMultiLibraryToHand(
-        "search your library for up to " + ARG.AMOUNT + " (?<card>[^\\.]*), reveal (them|those cards), (and )?put them into your hand(.|,) (If you do, |(t|T)hen )shuffle your library\\.",
+        "search your library for up to " + ARG.AMOUNT + " (?<card>[^\\.]*), reveal (them|those cards), (and )?put them into your hand(.|,) (If you do, |(t|T)hen )shuffle your library(\\.|,)?",
         MagicTiming.Draw,
         "Search"
     ) {
@@ -1532,7 +1532,7 @@ public enum MagicRuleEventAction {
         }
     },
     SearchLibraryToTopLibrary(
-        "search your library for (?<card>[^\\.]*)(,| and) reveal (it(,|\\.)|that card\\.)( then)? (S|s)huffle your library(, then| and) put (that|the) card on top of it\\.",
+        "search your library for (?<card>[^\\.]*)(,| and) reveal (it(,|\\.)|that card\\.)( then)? (S|s)huffle your library(, then| and) put (that|the) card on top of it(\\.|,)?",
         MagicTiming.Draw,
         "Search"
     ) {
@@ -1552,7 +1552,7 @@ public enum MagicRuleEventAction {
         }
     },
     SearchLibraryToGraveyard(
-        "search your library for (?<card>[^\\.]*) and put (that card|it) into your graveyard\\. (If you do,|Then) shuffle your library\\.",
+        "search your library for (?<card>[^\\.]*) and put (that card|it) into your graveyard\\. (If you do,|Then) shuffle your library(\\.|,)?",
         MagicTiming.Draw,
         "Search"
     ) {
@@ -1572,7 +1572,7 @@ public enum MagicRuleEventAction {
         }
     },
     SearchLibraryToBattlefield(
-        "search your library for (?<card>[^\\.]*)(,| and) put (it|that card) onto the battlefield( )?(?<mods>.+)?(.|,) ((T|t)hen|If you do,) shuffle your library\\.",
+        "search your library for (?<card>[^\\.]*)(,| and) put (it|that card) onto the battlefield( )?(?<mods>.+)?(.|,) ((T|t)hen|If you do,) shuffle your library(\\.|,)?",
         MagicTiming.Token,
         "Search"
     ) {
@@ -1593,7 +1593,7 @@ public enum MagicRuleEventAction {
         }
     },
     SearchMultiLibraryToBattlefield(
-        "search your library for up to " + ARG.AMOUNT + " (?<card>[^\\.]*)(,| and) put (them|those cards) onto the battlefield( )?(?<mods>.+)?(.|,) ((T|t)hen|If you do,) shuffle your library\\.",
+        "search your library for up to " + ARG.AMOUNT + " (?<card>[^\\.]*)(,| and) put (them|those cards) onto the battlefield( )?(?<mods>.+)?(.|,) ((T|t)hen|If you do,) shuffle your library(\\.|,)?",
         MagicTiming.Token,
         "Search"
     ) {
@@ -1620,14 +1620,14 @@ public enum MagicRuleEventAction {
         }
     },
     FromHandToBattlefield(
-        "put (?<card>[^\\.]*hand) onto the battlefield(\\. | )?(?<mods>.+)?\\.",
+        "put (?<card>[^\\.]*hand) onto the battlefield" + ARG.MODS + "(\\.|,)?",
         MagicTiming.Token,
         "Put"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("card"));
-            final List<MagicPlayMod> mods = MagicPlayMod.build(matcher.group("mods"));
+            final List<MagicPlayMod> mods = ARG.mods(matcher);
             return new MagicEventAction () {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -1641,7 +1641,7 @@ public enum MagicRuleEventAction {
         }
     },
     Reanimate(
-        "return " + ARG.GRAVEYARD + " to the battlefield(\\. | )?(?<mods>.+)?\\.",
+        "return " + ARG.GRAVEYARD + " to the battlefield" + ARG.MODS + "(\\.|,)?",
         MagicTargetHint.None,
         MagicGraveyardTargetPicker.PutOntoBattlefield,
         MagicTiming.Token,
@@ -1649,7 +1649,7 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final List<MagicPlayMod> mods = MagicPlayMod.build(matcher.group("mods"));
+            final List<MagicPlayMod> mods = ARG.mods(matcher);
             return new MagicEventAction () {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -1667,7 +1667,7 @@ public enum MagicRuleEventAction {
         }
     },
     Reanimate2(
-        "put " + ARG.GRAVEYARD + " onto the battlefield under your control(\\. | )?(?<mods>.+)?\\.",
+        "put " + ARG.GRAVEYARD + " onto the battlefield under your control" + ARG.MODS + "(\\.|,)?",
         MagicTargetHint.None,
         MagicGraveyardTargetPicker.PutOntoBattlefield,
         MagicTiming.Token,
@@ -1679,7 +1679,7 @@ public enum MagicRuleEventAction {
         }
     },
     TapOrUntapChosen(
-        "tap or untap " + ARG.CHOICE + "\\.",
+        "tap or untap " + ARG.CHOICE + "(\\.|,)?",
         MagicTargetHint.None,
         MagicTapTargetPicker.TapOrUntap,
         MagicTiming.Tapping,
@@ -1696,7 +1696,7 @@ public enum MagicRuleEventAction {
         }
     ),
     TapParalyze(
-        "tap " + ARG.PERMANENTS + "( and it|\\. RN|\\. it|\\. Those creatures) (doesn't|don't) untap during (its|their) controller's next untap step\\.",
+        "tap " + ARG.PERMANENTS + "( and it|\\. RN|\\. it|\\. Those creatures) (doesn't|don't) untap during (its|their) controller's next untap step(\\.|,)?",
         MagicTargetHint.Negative,
         MagicTapTargetPicker.Tap,
         MagicTiming.Tapping,
@@ -1720,7 +1720,7 @@ public enum MagicRuleEventAction {
         }
     },
     Tap(
-        "tap " + ARG.PERMANENTS + "\\.",
+        "tap " + ARG.PERMANENTS + "(\\.|,)?",
         MagicTargetHint.Negative,
         MagicTapTargetPicker.Tap,
         MagicTiming.Tapping,
@@ -1740,7 +1740,7 @@ public enum MagicRuleEventAction {
         }
     },
     Paralyze(
-        ARG.PERMANENTS + " doesn't untap during (your|its controller's) next untap step\\.",
+        ARG.PERMANENTS + " doesn't untap during (your|its controller's) next untap step(\\.|,)?",
         MagicTargetHint.Negative,
         new MagicNoCombatTargetPicker(true,true,false),
         MagicTiming.Tapping,
@@ -1763,7 +1763,7 @@ public enum MagicRuleEventAction {
         }
     },
     Untap(
-        "untap " + ARG.PERMANENTS + "\\.",
+        "untap " + ARG.PERMANENTS + "(\\.|,)?",
         MagicTargetHint.Positive,
         MagicTapTargetPicker.Untap,
         MagicTiming.Tapping,
@@ -1788,7 +1788,7 @@ public enum MagicRuleEventAction {
         }
     },
     PutTokens(
-        ARG.PLAYERS + "( )?put(s)? " +  ARG.AMOUNT + " (?<name>[^\\.]*token[^\\.]*) onto the battlefield(\\. | )?(?<mods>.+?)??( )?(for each " + ARG.WORDRUN + ")?\\.",
+        ARG.PLAYERS + "( )?put(s)? " +  ARG.AMOUNT + " (?<name>[^\\.]*token[^\\.]*) onto the battlefield(\\. | )?(?<mods>.+?)??( )?(for each " + ARG.WORDRUN + ")?(\\.|,)?",
         MagicTiming.Token,
         "Token"
     ) {
@@ -1822,7 +1822,7 @@ public enum MagicRuleEventAction {
         }
     },
     Mill(
-        ARG.PLAYERS + "( )?put(s)? the top " + ARG.AMOUNT + "?( )?card(s)? of (your|his or her) library into (your|his or her) graveyard\\.",
+        ARG.PLAYERS + "( )?put(s)? the top " + ARG.AMOUNT + "?( )?card(s)? of (your|his or her) library into (your|his or her) graveyard(\\.|,)?",
         MagicTiming.Draw,
         "Mill"
     ) {
@@ -1842,7 +1842,7 @@ public enum MagicRuleEventAction {
         }
     },
     Manifest(
-        "manifest the top " + ARG.AMOUNT + "?( )?card(s)? of your library\\.",
+        "manifest the top " + ARG.AMOUNT + "?( )?card(s)? of your library(\\.|,)?",
         MagicTiming.Token,
         "Manifest"
     ) {
@@ -1858,7 +1858,7 @@ public enum MagicRuleEventAction {
         }
     },
     SacrificeUnless(
-        "pay (?<cost>[^\\.]*)\\. If you don't, sacrifice sn\\.",
+        "pay (?<cost>[^\\.]*)\\. If you don't, sacrifice sn(\\.|,)?",
         MagicTiming.None,
         "Sacrifice"
     ) {
@@ -1877,7 +1877,7 @@ public enum MagicRuleEventAction {
         }
     },
     SacrificeSelf(
-        "sacrifice sn\\.",
+        "sacrifice sn(\\.|,)?",
         MagicTiming.Removal,
         "Sacrifice",
         new MagicEventAction() {
@@ -1888,7 +1888,7 @@ public enum MagicRuleEventAction {
         }
     ),
     SacrificeSelfEndStep(
-        "sacrifice sn at the beginning of the next end step\\.",
+        "sacrifice sn at the beginning of the next end step(\\.|,)?",
         MagicTiming.Removal,
         "Sacrifice",
         new MagicEventAction() {
@@ -1899,7 +1899,7 @@ public enum MagicRuleEventAction {
         }
     ),
     SacrificeSelfEndCombat(
-        "sacrifice sn at end of combat\\.",
+        "sacrifice sn at end of combat(\\.|,)?",
         MagicTiming.Removal,
         "Sacrifice",
         new MagicEventAction() {
@@ -1910,7 +1910,7 @@ public enum MagicRuleEventAction {
         }
     ),
     SacrificeChosen(
-        ARG.PLAYERS + "( )?sacrifice(s)? (?<permanent>[^\\.]*)\\.",
+        ARG.PLAYERS + "( )?sacrifice(s)? (?<permanent>[^\\.]*)(\\.|,)?",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Sacrifice"
@@ -1930,7 +1930,7 @@ public enum MagicRuleEventAction {
         }
     },
     Scry1(
-        "(pn )?scry 1\\.",
+        "(pn )?scry 1(\\.|,)?",
         MagicTiming.Draw,
         "Scry"
     ) {
@@ -1945,7 +1945,7 @@ public enum MagicRuleEventAction {
         }
     },
     PseudoScry(
-       "Look at the top card of your library\\. You may put that card on the bottom of your library\\.",
+       "Look at the top card of your library\\. You may put that card on the bottom of your library(\\.|,)?",
        MagicTiming.Draw,
        "Scry"
     ) {
@@ -1961,7 +1961,7 @@ public enum MagicRuleEventAction {
     },
     /*
     Scry(
-        "(pn )?scry (?<amount>[0-9]+)\\.",
+        "(pn )?scry (?<amount>[0-9]+)(\\.|,)?",
         MagicTiming.Draw,
         "Scry"
     ) {
@@ -1977,7 +1977,7 @@ public enum MagicRuleEventAction {
         }
     },
     LookHand(
-        "look at " + ARG.CHOICE + "'s hand\\.",
+        "look at " + ARG.CHOICE + "'s hand(\\.|,)?",
         MagicTargetHint.Negative,
         MagicTiming.Flash,
         "Look"
@@ -1998,7 +1998,7 @@ public enum MagicRuleEventAction {
     },
     */
     Regenerate(
-        "regenerate " + ARG.PERMANENTS + "\\.",
+        "regenerate " + ARG.PERMANENTS + "(\\.|,)?",
         MagicTargetHint.Positive,
         MagicRegenerateTargetPicker.create(),
         MagicTiming.Pump,
@@ -2024,7 +2024,7 @@ public enum MagicRuleEventAction {
         }
     },
     SwitchPT(
-        "switch " + ARG.PERMANENTS + "'s power and toughness until end of turn\\.",
+        "switch " + ARG.PERMANENTS + "'s power and toughness until end of turn(\\.|,)?",
         MagicTargetHint.None,
         MagicDefaultPermanentTargetPicker.create(),
         MagicTiming.Pump,
@@ -2044,7 +2044,7 @@ public enum MagicRuleEventAction {
         }
     },
     ShuffleSelf(
-        "shuffle sn into its owner's library\\.",
+        "shuffle sn into its owner's library(\\.|,)?",
         MagicTiming.Removal,
         "Shuffle",
         new MagicEventAction() {
@@ -2060,7 +2060,7 @@ public enum MagicRuleEventAction {
         }
     ),
     AttachSelf(
-        "attach sn to " + ARG.CHOICE + "\\.",
+        "attach sn to " + ARG.CHOICE + "(\\.|,)?",
         MagicTargetHint.Positive,
         MagicPumpTargetPicker.create(),
         MagicTiming.Pump,
@@ -2077,7 +2077,7 @@ public enum MagicRuleEventAction {
         }
     ),
     TurnFaceDown(
-        "turn " + ARG.PERMANENTS + " face down\\.",
+        "turn " + ARG.PERMANENTS + " face down(\\.|,)?",
         MagicTiming.Tapping,
         "Face Down"
     ) {
@@ -2095,7 +2095,7 @@ public enum MagicRuleEventAction {
         }
     },
     TurnFaceUp(
-        "turn " + ARG.PERMANENTS + " face up\\.",
+        "turn " + ARG.PERMANENTS + " face up(\\.|,)?",
         MagicTiming.Tapping,
         "Face Up"
     ) {
@@ -2113,7 +2113,7 @@ public enum MagicRuleEventAction {
         }
     },
     FlipSelf(
-        "flip sn\\.",
+        "flip sn(\\.|,)?",
         MagicTiming.Pump,
         "Flip",
         new MagicEventAction() {
@@ -2124,7 +2124,7 @@ public enum MagicRuleEventAction {
         }
     ),
     TransformSelf(
-        "transform sn\\.",
+        "transform sn(\\.|,)?",
         MagicTiming.Pump,
         "Transform",
         new MagicEventAction() {
@@ -2135,7 +2135,7 @@ public enum MagicRuleEventAction {
         }
     ),
     Populate(
-        "populate\\.",
+        "populate(\\.|,)?",
         MagicTiming.Token,
         "Populate",
         new MagicEventAction() {
@@ -2146,7 +2146,7 @@ public enum MagicRuleEventAction {
         }
     ),
     Cipher(
-        "cipher\\.",
+        "cipher(\\.|,)?",
         MagicTiming.Main,
         "Cipher",
         new MagicEventAction() {
@@ -2157,7 +2157,7 @@ public enum MagicRuleEventAction {
         }
     ),
     DetainChosen(
-        "detain " + ARG.CHOICE + "\\.",
+        "detain " + ARG.CHOICE + "(\\.|,)?",
         MagicTargetHint.Negative,
         new MagicNoCombatTargetPicker(true,true,false),
         MagicTiming.FirstMain,
@@ -2174,7 +2174,7 @@ public enum MagicRuleEventAction {
         }
     ),
     CopySpell(
-        "copy " + ARG.CHOICE + "\\. You may choose new targets for (the|that) copy\\.",
+        "copy " + ARG.CHOICE + "\\. You may choose new targets for (the|that) copy(\\.|,)?",
         MagicTiming.Spell,
         "Copy",
         new MagicEventAction() {
@@ -2189,7 +2189,7 @@ public enum MagicRuleEventAction {
         }
     ),
     Monstrosity(
-        "monstrosity " + ARG.AMOUNT + "\\.",
+        "monstrosity " + ARG.AMOUNT + "(\\.|,)?",
         MagicTiming.Pump,
         "Monstrous"
     ) {
@@ -2230,7 +2230,7 @@ public enum MagicRuleEventAction {
         }
     },
     BecomesAlt(
-        "(?<duration>until end of turn, )" + ARG.PERMANENTS + " becomes( a| an)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<additionTo>((\\.)? It's| that's) still [^\\.]*)?\\.",
+        "(?<duration>until end of turn, )" + ARG.PERMANENTS + " becomes( a| an)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<additionTo>((\\.)? It's| that's) still [^\\.]*)?(\\.|,)?",
         MagicTiming.Animate,
         "Becomes"
     ) {
@@ -2244,7 +2244,7 @@ public enum MagicRuleEventAction {
         }
     },
     BecomesAddition(
-        ARG.PERMANENTS + " become(s)?( a| an)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<additionTo> in addition to its other [a-z]*)(?<duration> until end of turn)?\\.",
+        ARG.PERMANENTS + " become(s)?( a| an)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<additionTo> in addition to its other [a-z]*)(?<duration> until end of turn)?(\\.|,)?",
         MagicTiming.Animate,
         "Becomes"
     ) {
@@ -2258,7 +2258,7 @@ public enum MagicRuleEventAction {
         }
     },
     Becomes(
-        ARG.PERMANENTS + " become(s)?( a| an)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<duration> until end of turn)?(?<additionTo>(\\. It's| that's) still [^\\.]*)?\\.",
+        ARG.PERMANENTS + " become(s)?( a| an)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<duration> until end of turn)?(?<additionTo>(\\. It's| that's) still [^\\.]*)?(\\.|,)?",
         MagicTiming.Animate,
         "Becomes"
     ) {
@@ -2293,7 +2293,7 @@ public enum MagicRuleEventAction {
         }
     },
     GainProtection(
-        ARG.PERMANENTS + " gain(s)? protection from the color of your choice until end of turn\\.",
+        ARG.PERMANENTS + " gain(s)? protection from the color of your choice until end of turn(\\.|,)?",
         MagicTargetHint.Positive,
         MagicTiming.Pump,
         "Protection"
@@ -2316,7 +2316,7 @@ public enum MagicRuleEventAction {
         }
     },
     GainAbility(
-        ARG.PERMANENTS + " gain(s)? (?<ability>.+) until end of turn\\.",
+        ARG.PERMANENTS + " gain(s)? (?<ability>.+) until end of turn(\\.|,)?",
         MagicTargetHint.Positive
     ) {
         @Override
@@ -2486,7 +2486,7 @@ public enum MagicRuleEventAction {
         }
     },
     LoseAbility(
-        ARG.PERMANENTS + " loses (?<ability>.+) until end of turn\\.",
+        ARG.PERMANENTS + " loses (?<ability>.+) until end of turn(\\.|,)?",
         MagicTargetHint.Negative
     ) {
         @Override
@@ -2528,7 +2528,7 @@ public enum MagicRuleEventAction {
         }
     },
     GainControl(
-        "gain control of " + ARG.PERMANENTS + "(?<ueot> until end of turn)?\\.",
+        "gain control of " + ARG.PERMANENTS + "(?<ueot> until end of turn)?(\\.|,)?",
         MagicTargetHint.Negative,
         MagicExileTargetPicker.create(),
         MagicTiming.Removal,
@@ -2620,7 +2620,7 @@ public enum MagicRuleEventAction {
         }
     },
     Poison(
-        ARG.PLAYERS + " get(s)? " + ARG.AMOUNT + " poison counter(s)?\\.",
+        ARG.PLAYERS + " get(s)? " + ARG.AMOUNT + " poison counter(s)?(\\.|,)?",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Poison"
@@ -2640,7 +2640,7 @@ public enum MagicRuleEventAction {
         }
     },
     LoseGame(
-        ARG.PLAYERS + " lose(s)? the game\\.",
+        ARG.PLAYERS + " lose(s)? the game(\\.|,)?",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Lose"
@@ -2659,7 +2659,7 @@ public enum MagicRuleEventAction {
         }
     },
     WinGame(
-        ARG.PLAYERS + " win(s)? the game\\.",
+        ARG.PLAYERS + " win(s)? the game(\\.|,)?",
         MagicTargetHint.Positive,
         MagicTiming.Removal,
         "Win"
@@ -2678,7 +2678,7 @@ public enum MagicRuleEventAction {
         }
     },
     ExtraTurn(
-        ARG.PLAYERS + "( )?take(s)? " + ARG.AMOUNT + " extra turn(s)? after this one\\.",
+        ARG.PLAYERS + "( )?take(s)? " + ARG.AMOUNT + " extra turn(s)? after this one(\\.|,)?",
         MagicTargetHint.Positive,
         MagicTiming.SecondMain,
         "+Turn"
@@ -2851,7 +2851,8 @@ public enum MagicRuleEventAction {
                 final String rider = (hasReference && matcher.group().contains("player")) ?
                         matcher.replaceAll("target player") :
                         matcher.replaceAll("target permanent");
-                final MagicSourceEvent riderSourceEvent = MagicRuleEventAction.build(rider);
+                final String riderWithoutPrefix = rider.replaceAll("^then ", "");
+                final MagicSourceEvent riderSourceEvent = MagicRuleEventAction.build(riderWithoutPrefix);
 
                 //rider cannot have choices
                 if (hasReference == false && riderSourceEvent.getChoice().isValid()) {
