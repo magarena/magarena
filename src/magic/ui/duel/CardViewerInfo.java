@@ -28,7 +28,7 @@ public class CardViewerInfo {
             : aPerm.getCardDefinition();
     }    
 
-    MagicCard getCard() {
+    MagicCard getMagicCard() {
         return card;
     }
 

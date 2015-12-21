@@ -1062,8 +1062,8 @@ public class SwingGameController implements IUIGameController {
     public void highlightCard(long magicCardId, boolean b) {
         if (magicCardId > 0) {
             final CardViewerInfo cardInfo = gameViewerInfo.getCardInfo(magicCardId);
-            if (cardInfo.getCard() != MagicCard.NONE) {
-                gamePanel.highlightCard(cardInfo.getCard(), b);
+            if (cardInfo.getMagicCard() != MagicCard.NONE) {
+                gamePanel.highlightCard(cardInfo.getMagicCard(), b);
             } else {
                 System.err.printf("Highlight failed! MagicCard #%d not found!\n", magicCardId);
             }
@@ -1073,7 +1073,7 @@ public class SwingGameController implements IUIGameController {
     public void showMagicCardImage(long magicCardId) {
         if (magicCardId > 0) {
             final CardViewerInfo cardInfo = gameViewerInfo.getCardInfo(magicCardId);
-            if (cardInfo.getCard() != MagicCard.NONE) {
+            if (cardInfo.getMagicCard() != MagicCard.NONE) {
                 viewCardPopupCentered(cardInfo, 0);
             } else {
                 System.err.printf("Highlight failed! MagicCard #%d not found!\n", magicCardId);
