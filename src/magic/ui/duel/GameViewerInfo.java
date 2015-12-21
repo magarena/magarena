@@ -105,20 +105,20 @@ public class GameViewerInfo {
         return log;
     }
 
-    public MagicCard getMagicCard(long magicCardId) {
+    public CardViewerInfo getMagicCard(long magicCardId) {
 
         final PlayerViewerInfo[] players = new PlayerViewerInfo[] {playerInfo, opponentInfo};
 
         // first check permanents...
         MagicCard card = searchForCardInPermanents(magicCardId, players);
         if (card != MagicCard.NONE) {
-            return card;
+            return new CardViewerInfo(card);
         }
 
         // ... then check stack...
         card = searchForCardOnStack(magicCardId);
         if (card != MagicCard.NONE) {
-            return card;
+            return new CardViewerInfo(card);
         }
 
         // ... otherwise search through player zones in following order
@@ -137,7 +137,7 @@ public class GameViewerInfo {
             }
         }
 
-        return card;
+        return new CardViewerInfo(card);
     }
 
     private MagicCard searchForCardOnStack(long magicCardId) {
