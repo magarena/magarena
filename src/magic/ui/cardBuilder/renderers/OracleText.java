@@ -75,8 +75,8 @@ public class OracleText {
             } else {
                 landImage = getHybridLandImage(landColors);
             }
-            Graphics2D g2d = cardImage.createGraphics();
-            if (landImage != null) {
+            if (landImage != null) { //Currently ignoring colorless basic lands with no type - no watermark for colorless yet
+                Graphics2D g2d = cardImage.createGraphics();
                 int heightPadding = (int) ((textBoxBounds.getHeight() - landImage.getHeight()) / 2);
                 int widthPadding = (int) ((textBoxBounds.getWidth() - landImage.getWidth()) / 2);
                 g2d.drawImage(landImage, 30 + widthPadding, 327 + heightPadding, null);
