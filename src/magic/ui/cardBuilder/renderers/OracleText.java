@@ -76,11 +76,12 @@ public class OracleText {
                 landImage = getHybridLandImage(landColors);
             }
             Graphics2D g2d = cardImage.createGraphics();
-            assert landImage != null;
-            int heightPadding = (int) ((textBoxBounds.getHeight() - landImage.getHeight()) / 2);
-            int widthPadding = (int) ((textBoxBounds.getWidth() - landImage.getWidth()) / 2);
-            g2d.drawImage(landImage, 30 + widthPadding, 327 + heightPadding, null);
-            g2d.dispose();
+            if (landImage != null) {
+                int heightPadding = (int) ((textBoxBounds.getHeight() - landImage.getHeight()) / 2);
+                int widthPadding = (int) ((textBoxBounds.getWidth() - landImage.getWidth()) / 2);
+                g2d.drawImage(landImage, 30 + widthPadding, 327 + heightPadding, null);
+                g2d.dispose();
+            }
         }
     }
 
