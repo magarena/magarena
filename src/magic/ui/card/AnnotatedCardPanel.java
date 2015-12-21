@@ -39,6 +39,7 @@ import magic.ui.MagicImages;
 import magic.ui.ScreenController;
 import magic.ui.duel.CardViewerInfo;
 import magic.ui.duel.SwingGameController;
+import magic.ui.duel.animation.AnimationFx;
 import magic.ui.theme.AbilityIcon;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.widget.FontsAndBorders;
@@ -66,7 +67,6 @@ public class AnnotatedCardPanel extends JPanel {
     private Dimension popupSize;
     private List<CardIcon> cardIcons = new ArrayList<>();
     private final List<Shape> iconShapes = new ArrayList<>();
-    private final boolean isFadeInActive = true;
     private Timer visibilityTimer;
     private BufferedImage popupImage;
     private final MagicInfoWindow infoWindow = new MagicInfoWindow();
@@ -162,9 +162,8 @@ public class AnnotatedCardPanel extends JPanel {
     }
     
     private void showPopup() {
-        if (isFadeInActive) {
+        if (AnimationFx.isOn(AnimationFx.CARD_FADEIN)) {
             if (opacity == 0f) {
-                setVisible(true);
                 fadeInTimeline = new Timeline();
                 fadeInTimeline.setDuration(200);
                 fadeInTimeline.setEase(new Spline(0.8f));
@@ -176,12 +175,11 @@ public class AnnotatedCardPanel extends JPanel {
                 fadeInTimeline.play();
             } else {
                 opacity = 1.0f;
-                setVisible(true);
             }
         } else {
             opacity = 1.0f;
-            setVisible(true);
         }
+        setVisible(true);
     }
 
     public void setCard(final MagicCardDefinition cardDef, final Dimension containerSize) {
@@ -358,7 +356,7 @@ public class AnnotatedCardPanel extends JPanel {
 
     @Override
     public void paintComponent(Graphics g) {
-        if (opacity < 1.0f && isFadeInActive) {
+        if (opacity < 1.0f) {
             final Graphics2D g2d = (Graphics2D)g;
             g2d.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, opacity));
             g2d.setColor(BCOLOR);

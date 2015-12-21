@@ -29,6 +29,8 @@ class AnimationFlagsPanel extends JPanel {
     private static final String _S11 = "Flash player zone.";
     private static final String _S12 = "Avatar strobe.";
     private static final String _S13 = "New turn message.";
+    private static final String _S14 = "Card popup fade-in.";
+    private static final String _S15 = "Uses a fade-in effect when displaying the full-size card image during a game.";
 
     AnimationFlagsPanel(final MouseListener aListener) {
 
@@ -42,6 +44,7 @@ class AnimationFlagsPanel extends JPanel {
         createCheckBox(AnimationFx.FLASH_ZONE, UiString.get(_S11), "");
         createCheckBox(AnimationFx.AVATAR_STROBE, UiString.get(_S12), "");
         createCheckBox(AnimationFx.NEW_TURN_MSG, UiString.get(_S13), "");
+        createCheckBox(AnimationFx.CARD_FADEIN, UiString.get(_S14), UiString.get(_S15));
 
         setLayout(new MigLayout("flowx, wrap 2, insets 0, gapy 6, gapx 10"));
         for (JCheckBox cb : cbMap.values()) {
