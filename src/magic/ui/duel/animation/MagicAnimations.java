@@ -8,6 +8,7 @@ import magic.data.GeneralConfig;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.phase.MagicPhaseType;
+import magic.ui.duel.CardViewerInfo;
 import magic.ui.duel.DuelPanel;
 import magic.ui.duel.GameViewerInfo;
 import magic.utility.MagicSystem;
@@ -118,13 +119,14 @@ public class MagicAnimations {
         }
 
         assert cards.size() == 1;
-        final MagicCardDefinition aCard = cards.get(0).getCardDefinition();
 
-        setLayoutInfo(gamePanel, newGameInfo, aCard);
+        final CardViewerInfo playedCard = newGameInfo.getCardInfo(cards.get(0).getId());
+
+        setLayoutInfo(gamePanel, newGameInfo, playedCard.getFaceupCardDef());
 
         return new PlayCardAnimation(
             newGameInfo.getTurnPlayer().player,
-            aCard,
+            playedCard.getFaceupCardDef(),
             layoutInfo
         );
 

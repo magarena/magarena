@@ -33,6 +33,10 @@ public class CardViewerInfo {
         this.magicObject = aCard;
     }
 
+    public MagicCardDefinition getFaceupCardDef() {
+        return faceupCardDef;
+    }
+
     MagicCard getMagicCard() {
         return card;
     }
