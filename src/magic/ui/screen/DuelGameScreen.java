@@ -144,15 +144,17 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
                     setVisible(false);
                 }
             });
-            final boolean isTextMode = config.getTextView();
-            menu.addMenuItem(isTextMode ? UiString.get(_S4) : UiString.get(_S5), new AbstractAction() {
-                @Override
-                public void actionPerformed(final ActionEvent e) {
-                    config.setTextView(!isTextMode);
-                    screen.updateView();
-                    setVisible(false);
-                }
-            });
+            if (config.showTextModeOption()) {
+                final boolean isTextMode = config.getTextView();
+                menu.addMenuItem(isTextMode ? UiString.get(_S4) : UiString.get(_S5), new AbstractAction() {
+                    @Override
+                    public void actionPerformed(final ActionEvent e) {
+                        config.setTextView(!isTextMode);
+                        screen.updateView();
+                        setVisible(false);
+                    }
+                });
+            }
             menu.addMenuItem(UiString.get(_S7), new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {

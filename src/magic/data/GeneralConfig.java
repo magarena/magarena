@@ -37,6 +37,9 @@ public class GeneralConfig {
     
     private static final String TOP="top";
     private int top    = 0;
+
+    private static final String TEXT_MODE_OPTION = "TextViewOption";
+    private boolean showTextModeOption = false;
     
     private static final String WIDTH="width";
     public static final int DEFAULT_WIDTH=1024;
@@ -648,6 +651,7 @@ public class GeneralConfig {
         AnimationFx.setFlags(Integer.parseInt(properties.getProperty(ANIMATION_FLAGS, "" + AnimationFx.getFlags())));
         preferredImageSize = ImageSizePresets.valueOf(properties.getProperty(PREF_IMAGE_SIZE, preferredImageSize.name()));
         cardTextLanguage = CardTextLanguage.valueOf(properties.getProperty(CARD_TEXT_LANG, cardTextLanguage.name()));
+        showTextModeOption = Boolean.parseBoolean(properties.getProperty(TEXT_MODE_OPTION, "" + showTextModeOption));
     }
 
     public void load() {
@@ -701,6 +705,7 @@ public class GeneralConfig {
         properties.setProperty(ANIMATION_FLAGS, String.valueOf(AnimationFx.getFlags()));
         properties.setProperty(PREF_IMAGE_SIZE, preferredImageSize.name());
         properties.setProperty(CARD_TEXT_LANG, cardTextLanguage.name());
+        properties.setProperty(TEXT_MODE_OPTION, String.valueOf(showTextModeOption));
     }
 
     public void save() {
@@ -739,6 +744,14 @@ public class GeneralConfig {
 
     public void setCardTextLanguage(CardTextLanguage aLang) {
         this.cardTextLanguage = aLang;
+    }
+
+    public boolean showTextModeOption() {
+        return this.showTextModeOption;
+    }
+
+    public void setTextModeOption(boolean b) {
+        this.showTextModeOption = b;
     }
 
 }

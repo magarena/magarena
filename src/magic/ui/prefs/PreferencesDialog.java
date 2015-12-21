@@ -114,6 +114,8 @@ public class PreferencesDialog
     private static final String _S80 = "There is a problem reading the translation file.";
     private static final String _S81 = "Please ensure the file is encoded as 'UTF-8 without BOM'.";
     private static final String _S82 = "Animations";
+    private static final String _S83 = "Text mode option";
+    private static final String _S84 = "Misc";
 
     private final static GeneralConfig config = GeneralConfig.getInstance();
 
@@ -151,6 +153,7 @@ public class PreferencesDialog
     private final TranslationPanel langPanel = new TranslationPanel();
     private final AnimationsPanel animationsPanel;
     private final GameplayImagesPanel gameImagesPanel;
+    private JCheckBox textModeCheckbox;
 
     private final JLabel hintLabel = new JLabel();
     private boolean isProxyUpdated = false;
@@ -392,6 +395,7 @@ public class PreferencesDialog
             config.setShowMissingCardData(missingCardDataCheckbox.isSelected());
             config.setIsSplitViewDeckEditor(splitViewDeckEditorCheckBox.isSelected());
             config.setTranslation(langPanel.getSelectedLanguage());
+            config.setTextModeOption(textModeCheckbox.isSelected());
             // Network
             config.setProxy(getNewProxy());
         }
@@ -659,6 +663,10 @@ public class PreferencesDialog
         missingCardDataCheckbox.addMouseListener(this);
         missingCardDataCheckbox.setFocusable(false);
 
+        textModeCheckbox = new JCheckBox(UiString.get(_S83), config.showTextModeOption());
+        textModeCheckbox.addMouseListener(this);
+        textModeCheckbox.setFocusable(false);
+
         // Layout UI components.
         final JPanel panel = new JPanel(new MigLayout("flowy, insets 0"));
         panel.add(getCaptionLabel(UiString.get(_S63)));
@@ -667,6 +675,8 @@ public class PreferencesDialog
         panel.add(splitViewDeckEditorCheckBox);
         panel.add(previewCardOnSelectCheckBox);
         panel.add(missingCardDataCheckbox);
+        panel.add(getCaptionLabel(UiString.get(_S84)), "gaptop 6");
+        panel.add(textModeCheckbox);
 
         return panel;
 
