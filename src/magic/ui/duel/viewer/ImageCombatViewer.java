@@ -16,7 +16,6 @@ import java.awt.Dimension;
 import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
-import magic.model.MagicCard;
 import magic.ui.utility.MagicStyle;
 
 @SuppressWarnings("serial")
@@ -76,9 +75,9 @@ public class ImageCombatViewer extends JPanel implements IChoiceViewer {
         permanentsViewer.showValidChoices(validChoices);
     }
 
-    public boolean highlightCard(MagicCard card, boolean b) {
-        final ImagePermanentViewer viewer = permanentsViewer.getViewer(card);
-        permanentsViewer.highlightCard(viewer, b ? card.getId() : 0);
+    public boolean highlightCard(long cardId, boolean b) {
+        final ImagePermanentViewer viewer = permanentsViewer.getViewer(cardId);
+        permanentsViewer.highlightCard(viewer, b ? cardId : 0);
         return viewer != null;
     }
 }

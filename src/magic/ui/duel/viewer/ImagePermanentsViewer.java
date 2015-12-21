@@ -10,7 +10,6 @@ import java.util.List;
 import java.util.Set;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
-import magic.model.MagicCard;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.duel.SwingGameController;
 
@@ -220,18 +219,18 @@ public class ImagePermanentsViewer extends JPanel {
         return validChoices.contains(permanentInfo.permanent);
     }
 
-    ImagePermanentViewer getViewer(MagicCard card) {
+    ImagePermanentViewer getViewer(long cardId) {
         for (final ImagePermanentViewer viewer : viewers) {
-            if (viewer.permanentInfo.magicCardId == card.getId()) {
+            if (viewer.permanentInfo.magicCardId == cardId) {
                 return viewer;
             }
             for (final PermanentViewerInfo info : viewer.permanentInfo.linked) {
-                if (info.permanent.getCard().getId() == card.getId()) {
+                if (info.permanent.getCard().getId() == cardId) {
                     return viewer;
                 }
             }
             for (final PermanentViewerInfo info : viewer.permanentInfo.blockers) {
-                if (info.permanent.getCard().getId() == card.getId()) {
+                if (info.permanent.getCard().getId() == cardId) {
                     return viewer;
                 }
             }

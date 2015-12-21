@@ -244,7 +244,7 @@ public final class DuelPanel extends JPanel {
     public void highlightCard(MagicCard card, boolean b) {
         switch (card.getLocation()) {
             case Battlefield:
-                battlefieldPanel.highlightCard(card, b);
+                battlefieldPanel.highlightCard(card.getId(), b);
                 break;
             case Graveyard:
                 sidebarPanel.doHighlightPlayerZone(card, MagicPlayerZone.GRAVEYARD, b);

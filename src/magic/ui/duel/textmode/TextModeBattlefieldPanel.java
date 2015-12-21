@@ -1,6 +1,5 @@
 package magic.ui.duel.textmode;
 
-import magic.model.MagicCard;
 import magic.model.MagicCardList;
 import magic.ui.duel.SwingGameController;
 import magic.ui.duel.BattlefieldPanel;
@@ -64,7 +63,7 @@ public class TextModeBattlefieldPanel extends BattlefieldPanel {
     }
 
     @Override
-    public void highlightCard(MagicCard card, boolean b) {
+    public void highlightCard(long cardId, boolean b) {
         // not supported
     }
 

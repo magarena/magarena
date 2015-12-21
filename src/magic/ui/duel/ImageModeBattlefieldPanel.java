@@ -4,7 +4,6 @@ import java.awt.Graphics;
 import java.awt.Image;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
-import magic.model.MagicCard;
 import magic.model.MagicCardList;
 import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfileType;
@@ -92,10 +91,10 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
     }
 
     @Override
-    public void highlightCard(MagicCard card, boolean b) {
-        if (!imagePlayerPermanentViewer.highlightCard(card, b))
-            if (!imageOpponentPermanentViewer.highlightCard(card, b))
-                imageCombatViewer.highlightCard(card, b);
+    public void highlightCard(long cardId, boolean b) {
+        if (!imagePlayerPermanentViewer.highlightCard(cardId, b))
+            if (!imageOpponentPermanentViewer.highlightCard(cardId, b))
+                imageCombatViewer.highlightCard(cardId, b);
     }
 
 }

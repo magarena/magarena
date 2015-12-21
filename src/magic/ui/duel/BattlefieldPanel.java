@@ -1,7 +1,6 @@
 package magic.ui.duel;
 
 import javax.swing.JPanel;
-import magic.model.MagicCard;
 import magic.model.MagicCardList;
 import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.sidebar.StackViewer;
@@ -19,6 +18,6 @@ public abstract class BattlefieldPanel extends JPanel {
 
     public abstract StackViewer getStackViewer();
 
-    public abstract void highlightCard(MagicCard card, boolean b);
+    public abstract void highlightCard(long cardId, boolean b);
 
 }
