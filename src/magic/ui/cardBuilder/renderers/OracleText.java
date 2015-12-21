@@ -17,6 +17,7 @@ import java.awt.image.BufferedImage;
 import java.text.AttributedCharacterIterator;
 import java.text.AttributedString;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import javax.swing.ImageIcon;
@@ -184,18 +185,18 @@ public class OracleText {
         return null;
     }
 
-    public static String[] getPlaneswalkerAbilities(IRenderableCard cardDef) {
+    public static String[] getOracleAsLines(IRenderableCard cardDef) {
         String text = cardDef.getText();
         return text.split("\n");
     }
 
     static int getPlaneswalkerAbilityCount(IRenderableCard cardDef) {
-        String[] abilities = getPlaneswalkerAbilities(cardDef);
+        String[] abilities = getOracleAsLines(cardDef);
         return abilities.length;
     }
 
     static String[] getPlaneswalkerActivationText(IRenderableCard cardDef) {
-        String[] abilities = getPlaneswalkerAbilities(cardDef);
+        String[] abilities = getOracleAsLines(cardDef);
         String[] text = new String[abilities.length];
         for (int i = 0; i < abilities.length; i++) {
             String[] fulltext;

@@ -191,7 +191,7 @@ public class PTFrame {
     }
 
     static String[] getPlaneswalkerActivationCosts(IRenderableCard cardDef) {
-        String[] abilities = OracleText.getPlaneswalkerAbilities(cardDef);
+        String[] abilities = OracleText.getOracleAsLines(cardDef);
         String[] costs = new String[abilities.length];
         for (int i = 0; i < abilities.length; i++) {
             String ability = abilities[i].substring(0, 3);
