@@ -2443,6 +2443,7 @@ public enum MagicRuleEventAction {
             final MagicAbility ability = MagicAbility.getAbilityList(matcher.group("ability")).getFirst();
             switch (ability) {
                 case CannotAttack:
+                case AttacksEachTurnIfAble:
                     return MagicTiming.MustAttack;
                 case CannotBlock:
                 case Unblockable:
@@ -2461,6 +2462,8 @@ public enum MagicRuleEventAction {
                     return new MagicNoCombatTargetPicker(false,true,false);
                 case CannotAttackOrBlock:
                     return new MagicNoCombatTargetPicker(true,true,false);
+                case AttacksEachTurnIfAble:
+                    return MagicMustAttackTargetPicker.create();
                 case Unblockable:
                     return MagicUnblockableTargetPicker.create();
                 default:
