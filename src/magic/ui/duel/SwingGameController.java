@@ -358,10 +358,6 @@ public class SwingGameController implements IUIGameController {
         cardPopup.showDelayed(popupDelay);
     }
 
-    public void viewCardPopupCentered(final MagicObject cardObject) {
-        viewCardPopupCentered(cardObject, getPopupDelay());
-    }
-
     /**
      *
      * @param cardObject
