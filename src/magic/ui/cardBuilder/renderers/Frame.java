@@ -35,7 +35,7 @@ public class Frame {
             landColor = getLandColors(cardDef);
         } else if (artifact) {
             if (enchantmentPermanent) {
-                baseFrame = ResourceManager.newFrame(ResourceManager.artifactGod);
+                baseFrame = ResourceManager.newFrame(ResourceManager.artifactNyx);
             } else {
                 baseFrame = ResourceManager.newFrame(ResourceManager.artifactFrame);
             }
@@ -49,10 +49,10 @@ public class Frame {
                         ResourceManager.newFrame(ResourceManager.gainColorBlend),
                         ResourceManager.newFrame(ResourceManager.multiFrame));
                 } else if (land) {
-                    return ResourceManager.newFrame(ResourceManager.multiLandGod);
+                    return ResourceManager.newFrame(ResourceManager.multiLandNyx);
                 } else {
                     if (enchantmentPermanent) {
-                        return ResourceManager.newFrame(ResourceManager.multiGod);
+                        return ResourceManager.newFrame(ResourceManager.multiNyx);
                     } else {
                         return ResourceManager.newFrame(ResourceManager.multiFrame);
                     }
@@ -62,13 +62,13 @@ public class Frame {
                 List<BufferedImage> colorFrames = new ArrayList<>();
                 if (land) {
                     if (enchantmentPermanent) {
-                        colorFrames.addAll(getColorOrder(landColor).stream().map(Frame::getLandGodFrame).collect(Collectors.toList()));
+                        colorFrames.addAll(getColorOrder(landColor).stream().map(Frame::getLandNyxFrame).collect(Collectors.toList()));
                     } else {
                         colorFrames.addAll(getColorOrder(landColor).stream().map(Frame::getLandFrame).collect(Collectors.toList()));
                     }
                 } else {
                     if (enchantmentPermanent) {
-                        colorFrames.addAll(getColorOrder(cardDef).stream().map(Frame::getGodFrame).collect(Collectors.toList()));
+                        colorFrames.addAll(getColorOrder(cardDef).stream().map(Frame::getNyxFrame).collect(Collectors.toList()));
                     } else {
                         colorFrames.addAll(getColorOrder(cardDef).stream().map(Frame::getFrame).collect(Collectors.toList()));
                     }
@@ -110,7 +110,7 @@ public class Frame {
                 } else {
                     if (enchantmentPermanent) {
                         return getBlendedFrame(
-                            ResourceManager.newFrame(ResourceManager.multiGod),
+                            ResourceManager.newFrame(ResourceManager.multiNyx),
                             ResourceManager.newFrame(ResourceManager.gainColorBlend),
                             ResourceManager.newFrame(goldBanner));
                     } else {
@@ -129,13 +129,13 @@ public class Frame {
                     return getBlendFrame(baseFrame, color);
                 } else if (land) {
                     if (enchantmentPermanent) {
-                        return getLandGodFrame(color);
+                        return getLandNyxFrame(color);
                     } else {
                         return getLandFrame(color);
                     }
                 } else {
                     if (enchantmentPermanent) {
-                        return getGodFrame(color);
+                        return getNyxFrame(color);
                     } else {
                         return getFrame(color);
                     }
@@ -415,18 +415,18 @@ public class Frame {
         }
     }
 
-    private static BufferedImage getGodFrame(MagicColor color) {
+    private static BufferedImage getNyxFrame(MagicColor color) {
         switch (color) {
             case White:
-                return ResourceManager.newFrame(ResourceManager.whiteGod);
+                return ResourceManager.newFrame(ResourceManager.whiteNyx);
             case Blue:
-                return ResourceManager.newFrame(ResourceManager.blueGod);
+                return ResourceManager.newFrame(ResourceManager.blueNyx);
             case Black:
-                return ResourceManager.newFrame(ResourceManager.blackGod);
+                return ResourceManager.newFrame(ResourceManager.blackNyx);
             case Red:
-                return ResourceManager.newFrame(ResourceManager.redGod);
+                return ResourceManager.newFrame(ResourceManager.redNyx);
             case Green:
-                return ResourceManager.newFrame(ResourceManager.greenGod);
+                return ResourceManager.newFrame(ResourceManager.greenNyx);
             default:
                 return null;
         }
@@ -484,18 +484,18 @@ public class Frame {
         }
     }
 
-    private static BufferedImage getLandGodFrame(MagicColor color) {
+    private static BufferedImage getLandNyxFrame(MagicColor color) {
         switch (color) {
             case White:
-                return ResourceManager.newFrame(ResourceManager.whiteLandGod);
+                return ResourceManager.newFrame(ResourceManager.whiteLandNyx);
             case Blue:
-                return ResourceManager.newFrame(ResourceManager.blueLandGod);
+                return ResourceManager.newFrame(ResourceManager.blueLandNyx);
             case Black:
-                return ResourceManager.newFrame(ResourceManager.blackLandGod);
+                return ResourceManager.newFrame(ResourceManager.blackLandNyx);
             case Red:
-                return ResourceManager.newFrame(ResourceManager.redLandGod);
+                return ResourceManager.newFrame(ResourceManager.redLandNyx);
             case Green:
-                return ResourceManager.newFrame(ResourceManager.greenLandGod);
+                return ResourceManager.newFrame(ResourceManager.greenLandNyx);
             default:
                 return null;
         }
