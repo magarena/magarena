@@ -38,6 +38,7 @@ import magic.model.MagicObject;
 import magic.model.MagicPermanent;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
+import magic.ui.duel.CardViewerInfo;
 import magic.ui.duel.SwingGameController;
 import magic.ui.theme.AbilityIcon;
 import magic.ui.utility.GraphicsUtils;
@@ -194,6 +195,18 @@ public class AnnotatedCardPanel extends JPanel {
         this.magicObject = null;
         this.modifiedPT = "";
         this.basePT = "";
+        setPopupImage();
+    }
+
+    public void setCard(CardViewerInfo cardInfo, final Dimension containerSize) {
+        this.cardImage = cardInfo.getImage();
+        // <--- order important
+        cardIcons = AbilityIcon.getIcons(cardInfo.getMagicObject());
+        setPanelSize(containerSize);
+        // --->
+        this.modifiedPT = getModifiedPT(cardInfo.getMagicObject());
+        this.basePT = getBasePT(cardInfo.getMagicObject());
+        this.magicObject = cardInfo.getMagicObject();
         setPopupImage();
     }
 

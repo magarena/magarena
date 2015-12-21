@@ -8,6 +8,7 @@ import magic.model.MagicCard;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.MagicMessage;
+import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerZone;
 import magic.model.phase.MagicPhaseType;
@@ -110,13 +111,13 @@ public class GameViewerInfo {
         final PlayerViewerInfo[] players = new PlayerViewerInfo[] {playerInfo, opponentInfo};
 
         // first check permanents...
-        MagicCard card = searchForCardInPermanents(magicCardId, players);
-        if (card != MagicCard.NONE) {
-            return new CardViewerInfo(card);
+        final MagicPermanent perm = searchForCardInPermanents(magicCardId, players);
+        if (perm != null) {
+            return new CardViewerInfo(perm);
         }
 
         // ... then check stack...
-        card = searchForCardOnStack(magicCardId);
+        MagicCard card = searchForCardOnStack(magicCardId);
         if (card != MagicCard.NONE) {
             return new CardViewerInfo(card);
         }
@@ -174,15 +175,15 @@ public class GameViewerInfo {
         return MagicCard.NONE;
     }
 
-    private MagicCard searchForCardInPermanents(long magicCardId, PlayerViewerInfo[] players) {
+    private MagicPermanent searchForCardInPermanents(long magicCardId, PlayerViewerInfo[] players) {
         for (final PlayerViewerInfo player : players) {
             for (final PermanentViewerInfo info : player.permanents) {
                 if (info.magicCardId == magicCardId) {
-                    return info.permanent.getCard();
+                    return info.permanent;
                 }
             }
         }
-        return MagicCard.NONE;
+        return null;
     }
 
     public int getTurn() {

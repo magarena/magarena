@@ -318,6 +318,20 @@ public class SwingGameController implements IUIGameController {
         this.userActionPanel = userActionPanel;
     }
 
+    private void viewCardPopupCentered(CardViewerInfo cardInfo, final int popupDelay) {
+
+        final Rectangle containerZone = gamePanel.getBattlefieldPanelBounds();
+
+        // set popup image and size.
+        cardPopup.setCard(cardInfo, containerZone.getSize());
+
+        final int x = containerZone.x + (int)((containerZone.getWidth() / 2) - (cardPopup.getWidth() / 2));
+        final int y = containerZone.y + (int)((containerZone.getHeight() / 2) - (cardPopup.getHeight() / 2));
+        cardPopup.setLocation(x,y);
+
+        cardPopup.showDelayed(popupDelay);
+    }
+
     public void viewCardPopupCentered(final MagicObject cardObject, final int popupDelay) {
 
         // mouse wheel rotation event can fire more than once
@@ -1060,7 +1074,7 @@ public class SwingGameController implements IUIGameController {
         if (magicCardId > 0) {
             final CardViewerInfo cardInfo = gameViewerInfo.getCardInfo(magicCardId);
             if (cardInfo.getCard() != MagicCard.NONE) {
-                viewCardPopupCentered(cardInfo.getCard(), 0);
+                viewCardPopupCentered(cardInfo, 0);
             } else {
                 System.err.printf("Highlight failed! MagicCard #%d not found!\n", magicCardId);
             }
