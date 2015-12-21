@@ -23,10 +23,11 @@ class AnimationFlagsPanel extends JPanel {
     private static final String _S5 = "Flip card on draw/play.";
     private static final String _S6 = "The card is played or drawn face down and flips to the front face for previewing.";
     private static final String _S7 = "Card shadow.";
-    private static final String _S8 = "Displays card shadow when previewed.";
+    private static final String _S8 = "Displays a card shadow to give a sense of depth when previewed.";
     private static final String _S9 = "Play-from arrows.";
     private static final String _S10 = "Indicates which player zone a card was played from.";
-    private static final String _S11 = "Flash player zone.";
+    private static final String _S11 = "Zone button alert.";
+    private static final String _S16 = "The icon in a player's zone buttons is animated when an event of note takes place in that zone.";
     private static final String _S12 = "Avatar strobe.";
     private static final String _S13 = "New turn message.";
     private static final String _S14 = "Card popup fade-in.";
@@ -41,7 +42,7 @@ class AnimationFlagsPanel extends JPanel {
         createCheckBox(AnimationFx.FLIP_CARD, UiString.get(_S5), UiString.get(_S6));
         createCheckBox(AnimationFx.CARD_SHADOW, UiString.get(_S7), UiString.get(_S8));
         createCheckBox(AnimationFx.FROM_ARROW, UiString.get(_S9), UiString.get(_S10));
-        createCheckBox(AnimationFx.FLASH_ZONE, UiString.get(_S11), "");
+        createCheckBox(AnimationFx.ZONE_BUTTON_ALERT, UiString.get(_S11), UiString.get(_S16));
         createCheckBox(AnimationFx.AVATAR_STROBE, UiString.get(_S12), "");
         createCheckBox(AnimationFx.NEW_TURN_MSG, UiString.get(_S13), "");
         createCheckBox(AnimationFx.CARD_FADEIN, UiString.get(_S14), UiString.get(_S15));

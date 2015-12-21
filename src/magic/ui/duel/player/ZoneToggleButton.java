@@ -13,11 +13,11 @@ import java.awt.Stroke;
 import java.awt.Transparency;
 import java.awt.image.BufferedImage;
 import javax.swing.JToggleButton;
-import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.model.MagicPlayerZone;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.MagicImages;
+import magic.ui.duel.animation.AnimationFx;
 import magic.ui.utility.MagicStyle;
 import org.pushingpixels.trident.Timeline;
 
@@ -162,7 +162,7 @@ public class ZoneToggleButton extends JToggleButton {
     }
 
     private void doAlertAnimation(int loopCount) {
-        if (GeneralConfig.getInstance().showGameplayAnimations()) {
+        if (AnimationFx.isOn(AnimationFx.ZONE_BUTTON_ALERT)) {
             timeline1 = new Timeline();
             timeline1.setDuration(200);
             timeline1.addPropertyToInterpolate(
