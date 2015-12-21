@@ -15,7 +15,7 @@ public class AnimationFx {
     public static final long NEW_TURN_MSG      = 1 << 8;
 
     private static long flags =
-        DRAW_CARD | PLAY_CARD | CARD_SHADOW | FROM_ARROW |
+        DRAW_CARD | PLAY_CARD | FROM_ARROW |
         FLIP_CARD | FLASH_ZONE | AVATAR_STROBE | INFLATE_ZONE |
         NEW_TURN_MSG;
 
