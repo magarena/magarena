@@ -144,6 +144,16 @@ public class GameViewerInfo {
         return new CardViewerInfo(card);
     }
 
+    public CardViewerInfo getCardViewerInfo(MagicCard aCard) {
+        CardViewerInfo info = getCardViewerInfo(aCard.getId());
+        if (info.isEmpty()) {
+            // A land card that has been played but not yet placed cannot be found
+            // by its Id so so need to set specifically.
+            info = new CardViewerInfo(aCard);
+        }
+        return info;
+    }
+
     private MagicCardOnStack searchForCardOnStack(long magicCardId) {
         for (StackViewerInfo item : stack) {
             if (item.isMagicCard(magicCardId)) {

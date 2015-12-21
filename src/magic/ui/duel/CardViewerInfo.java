@@ -15,7 +15,7 @@ public class CardViewerInfo {
     private final MagicCardDefinition faceupCardDef;
     private final MagicObject magicObject;
 
-    CardViewerInfo(final MagicCard aCard) {
+    public CardViewerInfo(final MagicCard aCard) {
         this.card = aCard;
         this.magicObject = aCard;
         this.faceupCardDef = card.getCardDefinition();
@@ -59,5 +59,9 @@ public class CardViewerInfo {
         return aCard.getController().isHuman() || MagicSystem.isAiVersusAi()
             ? aCard.getRealCardDefinition()
             : aCard.getCardDefinition();
+    }
+
+    public boolean isEmpty() {
+        return card == MagicCard.NONE;
     }
 }

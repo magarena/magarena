@@ -111,22 +111,22 @@ public class MagicAnimations {
         final GameViewerInfo newGameInfo,
         final DuelPanel gamePanel) {
 
+        // if a card has been played then the current game state's hand will have one
+        // less card than the previous game state's hand.
         final List<MagicCard> cards = new ArrayList<>(oldGameInfo.getTurnPlayer().hand);
         cards.removeAll(newGameInfo.getTurnPlayer().hand);
-
         if (cards.isEmpty()) {
             return null;
         }
-
         assert cards.size() == 1;
 
-        final CardViewerInfo playedCard = newGameInfo.getCardViewerInfo(cards.get(0).getId());
+        final CardViewerInfo cardInfo = newGameInfo.getCardViewerInfo(cards.get(0));
 
-        setLayoutInfo(gamePanel, newGameInfo, playedCard.getFaceupCardDef());
+        setLayoutInfo(gamePanel, newGameInfo, cardInfo.getFaceupCardDef());
 
         return new PlayCardAnimation(
             newGameInfo.getTurnPlayer().player,
-            playedCard.getFaceupCardDef(),
+            cardInfo.getFaceupCardDef(),
             layoutInfo
         );
 
