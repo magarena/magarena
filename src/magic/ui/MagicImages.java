@@ -16,7 +16,7 @@ import magic.model.MagicColor;
 import magic.model.MagicManaType;
 import magic.model.MagicPermanent;
 import magic.model.player.PlayerProfile;
-import magic.ui.image.CardProxyImageBuilder;
+import magic.ui.cardBuilder.renderers.CardBuilder;
 import magic.ui.prefs.ImageSizePresets;
 import magic.ui.theme.PlayerAvatar;
 import magic.ui.utility.GraphicsUtils;
@@ -235,6 +235,9 @@ public final class MagicImages {
     }
 
     public static BufferedImage getMissingCardImage(MagicCardDefinition cardDef) {
-        return CardProxyImageBuilder.getInstance().getImage(cardDef);
+        return cardDef == MagicCardDefinition.UNKNOWN
+            ? MISSING_CARD
+            : CardBuilder.getCardBuilderImage(cardDef);
     }
+
 }
