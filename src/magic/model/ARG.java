@@ -103,7 +103,7 @@ public class ARG {
         return new MagicPowerToughness(Integer.parseInt(pt[0]), Integer.parseInt(pt[1]));
     }
 
-    public static final String MODS = "(\\.|,)?( )?(?<mods>.+?)?";
+    public static final String MODS = "(\\.|,)?( )?(?<mods>.+?)??";
     public static List<MagicPlayMod> mods(final Matcher m) {
         return MagicPlayMod.build(m.group("mods"));
     }

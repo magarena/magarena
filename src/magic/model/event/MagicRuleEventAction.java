@@ -1572,14 +1572,14 @@ public enum MagicRuleEventAction {
         }
     },
     SearchLibraryToBattlefield(
-        "search your library for (?<card>[^\\.]*)(,| and) put (it|that card) onto the battlefield( )?(?<mods>.+)?(.|,) ((T|t)hen|If you do,) shuffle your library(\\.|,)?",
+        "search your library for (?<card>[^\\.]*)(,| and) put (it|that card) onto the battlefield" + ARG.MODS + "(.|,) ((T|t)hen|If you do,) shuffle your library(\\.|,)?",
         MagicTiming.Token,
         "Search"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final MagicTargetChoice choice = new MagicTargetChoice(getHint(matcher), matcher.group("card")+" from your library");
-            final List<MagicPlayMod> mods = MagicPlayMod.build(matcher.group("mods"));
+            final List<MagicPlayMod> mods = ARG.mods(matcher);
             return new MagicEventAction () {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -1593,7 +1593,7 @@ public enum MagicRuleEventAction {
         }
     },
     SearchMultiLibraryToBattlefield(
-        "search your library for up to " + ARG.AMOUNT + " (?<card>[^\\.]*)(,| and) put (them|those cards) onto the battlefield( )?(?<mods>.+)?(.|,) ((T|t)hen|If you do,) shuffle your library(\\.|,)?",
+        "search your library for up to " + ARG.AMOUNT + " (?<card>[^\\.]*)(,| and) put (them|those cards) onto the battlefield" + ARG.MODS + "(.|,) ((T|t)hen|If you do,) shuffle your library(\\.|,)?",
         MagicTiming.Token,
         "Search"
     ) {
@@ -1601,7 +1601,7 @@ public enum MagicRuleEventAction {
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = ARG.amount(matcher);
             final MagicTargetFilter<MagicCard> filter = MagicTargetFilterFactory.Card(matcher.group("card") + " from your library");
-            final List<MagicPlayMod> mods = MagicPlayMod.build(matcher.group("mods"));
+            final List<MagicPlayMod> mods = ARG.mods(matcher);
             return new MagicEventAction () {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -1788,7 +1788,7 @@ public enum MagicRuleEventAction {
         }
     },
     PutTokens(
-        ARG.PLAYERS + "( )?put(s)? " +  ARG.AMOUNT + " (?<name>[^\\.]*token[^\\.]*) onto the battlefield(\\. | )?(?<mods>.+?)??( )?(for each " + ARG.WORDRUN + ")?(\\.|,)?",
+        ARG.PLAYERS + "( )?put(s)? " +  ARG.AMOUNT + " (?<name>[^\\.]*token[^\\.]*) onto the battlefield" + ARG.MODS + "( )?(for each " + ARG.WORDRUN + ")?(\\.|,)?",
         MagicTiming.Token,
         "Token"
     ) {
@@ -1798,7 +1798,7 @@ public enum MagicRuleEventAction {
             final MagicAmount tokenCount = ARG.amountObj(matcher);
             final String tokenName = matcher.group("name").replace("tokens", "token");
             final MagicCardDefinition tokenDef = CardDefinitions.getToken(tokenName);
-            final List<MagicPlayMod> mods = MagicPlayMod.build(matcher.group("mods"));
+            final List<MagicPlayMod> mods = ARG.mods(matcher);
             final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
             return new MagicEventAction() {
                 @Override
