@@ -56,7 +56,11 @@ public class TitleFrame {
     private static List<MagicIcon> getManaCost(IRenderableCard cardDef) {
         if (cardDef.hasType(MagicType.Land)) {
             return null;
-        } else {
+        }
+        if (cardDef.isDoubleFaced() && cardDef.isHidden()) {
+            return null;
+        }
+        else {
             return cardDef.getCost().getIcons();
         }
     }
