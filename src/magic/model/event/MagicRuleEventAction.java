@@ -2411,7 +2411,7 @@ public enum MagicRuleEventAction {
         }
     },
     GainAbilityCan(
-        ARG.PERMANENTS + " (?<ability>can('t)? .+) this turn\\."
+        ARG.PERMANENTS + " (?<ability>(can('t)?|attacks) .+?)( this turn)?\\."
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {

@@ -21,7 +21,7 @@ import java.util.regex.Pattern;
 public enum MagicAbility {
 
     // intrinsic abilities (implemented directly in the game engine)
-    AttacksEachTurnIfAble("(SN )?attack(s)? each (turn|combat) if able(\\.)?",-10),
+    AttacksEachTurnIfAble("(SN )?attack(s)? (each|this) (turn|combat) if able(\\.)?",-10),
     CannotBlock("(SN )?can't block(\\.)?",-50),
     CannotAttack("(SN )?can't attack(\\.)?",-50),
     CannotAttackOrBlock("(SN )?can't attack or block(\\.)?",-200),
