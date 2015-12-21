@@ -7,6 +7,6 @@ subtype=Zombie
 cost={3}{B}{B}
 pt=4/1
 ability=SN gets +1/+0 for each artifact you control.;\
-        {B}{B}: Return SN from your graveyard to the battlefield.~Sacrifice a creature. Activate this ability only during your upkeep.
+        {B}{B}: Return SN from your graveyard to the battlefield,~then sacrifice a creature. Activate this ability only during your upkeep.
 timing=main
 oracle=Nim Devourer gets +1/+0 for each artifact you control.\n{B}{B}: Return Nim Devourer from your graveyard to the battlefield, then sacrifice a creature. Activate this ability only during your upkeep.
