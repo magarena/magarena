@@ -5,5 +5,5 @@ rarity=U
 type=Instant
 cost={1}{B}
 effect=Until end of turn, each creature you control becomes a black Shade and gains "{B}: This creature gets +1/+1 until end of turn."
-timing=removal
+timing=pump
 oracle=Until end of turn, each creature you control becomes a black Shade and gains "{B}: This creature gets +1/+1 until end of turn."
