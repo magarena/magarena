@@ -32,7 +32,6 @@ import javax.swing.SwingUtilities;
 import javax.swing.Timer;
 import magic.ui.CachedImagesProvider;
 import magic.data.GeneralConfig;
-import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicObject;
 import magic.model.MagicPermanent;
@@ -348,18 +347,6 @@ public class AnnotatedCardPanel extends JPanel {
             } else {
                 return "";
             }
-        } else {
-            return "";
-        }
-    }
-
-    private String getBasePT(final MagicObject magicObject) {
-        if (magicObject instanceof MagicPermanent) {
-            final MagicPermanent permanent = (MagicPermanent)magicObject;
-            return permanent.getCardDefinition().getCardPower() + "/" + permanent.getCardDefinition().getCardToughness();
-        } else if (magicObject instanceof MagicCard) {
-            final MagicCard card = (MagicCard)magicObject;
-            return card.getCardDefinition().getCardPower() + "/" + card.getCardDefinition().getCardToughness();
         } else {
             return "";
         }
