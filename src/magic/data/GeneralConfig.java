@@ -178,9 +178,6 @@ public class GeneralConfig {
     private static final String CARD_TEXT_LANG = "cardTextLanguage";
     private CardTextLanguage cardTextLanguage = CardTextLanguage.ENGLISH;
     
-    private static final String GAME_LOADING_SCREEN = "gameLoadingScreen";
-    private boolean showGameLoadingScreen = true;
-
     private GeneralConfig() { }
 
     public Proxy getProxy() {
@@ -651,7 +648,6 @@ public class GeneralConfig {
         AnimationFx.setFlags(Integer.parseInt(properties.getProperty(ANIMATION_FLAGS, "" + AnimationFx.getFlags())));
         preferredImageSize = ImageSizePresets.valueOf(properties.getProperty(PREF_IMAGE_SIZE, preferredImageSize.name()));
         cardTextLanguage = CardTextLanguage.valueOf(properties.getProperty(CARD_TEXT_LANG, cardTextLanguage.name()));
-        showGameLoadingScreen = Boolean.parseBoolean(properties.getProperty(GAME_LOADING_SCREEN, "" + showGameLoadingScreen));
     }
 
     public void load() {
@@ -705,7 +701,6 @@ public class GeneralConfig {
         properties.setProperty(ANIMATION_FLAGS, String.valueOf(AnimationFx.getFlags()));
         properties.setProperty(PREF_IMAGE_SIZE, preferredImageSize.name());
         properties.setProperty(CARD_TEXT_LANG, cardTextLanguage.name());
-        properties.setProperty(GAME_LOADING_SCREEN, String.valueOf(showGameLoadingScreen));
     }
 
     public void save() {
@@ -744,14 +739,6 @@ public class GeneralConfig {
 
     public void setCardTextLanguage(CardTextLanguage aLang) {
         this.cardTextLanguage = aLang;
-    }
-
-    public boolean showGameLoadingScreen() {
-        return showGameLoadingScreen;
-    }
-
-    public void setShowGameLoadingScreen(boolean b) {
-        showGameLoadingScreen = b;
     }
 
 }
