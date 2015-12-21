@@ -1061,7 +1061,7 @@ public class SwingGameController implements IUIGameController {
 
     public void highlightCard(long magicCardId, boolean b) {
         if (magicCardId > 0) {
-            final CardViewerInfo cardInfo = gameViewerInfo.getCardInfo(magicCardId);
+            final CardViewerInfo cardInfo = gameViewerInfo.getCardViewerInfo(magicCardId);
             if (cardInfo.getMagicCard() != MagicCard.NONE) {
                 gamePanel.highlightCard(cardInfo.getMagicCard(), b);
             } else {
@@ -1072,7 +1072,7 @@ public class SwingGameController implements IUIGameController {
 
     public void showMagicCardImage(long magicCardId) {
         if (magicCardId > 0) {
-            final CardViewerInfo cardInfo = gameViewerInfo.getCardInfo(magicCardId);
+            final CardViewerInfo cardInfo = gameViewerInfo.getCardViewerInfo(magicCardId);
             if (cardInfo.getMagicCard() != MagicCard.NONE) {
                 viewCardPopupCentered(cardInfo, 0);
             } else {

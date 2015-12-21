@@ -120,7 +120,7 @@ public class MagicAnimations {
 
         assert cards.size() == 1;
 
-        final CardViewerInfo playedCard = newGameInfo.getCardInfo(cards.get(0).getId());
+        final CardViewerInfo playedCard = newGameInfo.getCardViewerInfo(cards.get(0).getId());
 
         setLayoutInfo(gamePanel, newGameInfo, playedCard.getFaceupCardDef());
 
