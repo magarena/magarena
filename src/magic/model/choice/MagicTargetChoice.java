@@ -44,9 +44,6 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice NEG_TARGET_CREATURE_SPELL = 
         MagicTargetChoice.Negative("target creature spell");
 
-    public static final MagicTargetChoice NEG_TARGET_NONCREATURE_SPELL = 
-        MagicTargetChoice.Negative("target noncreature spell");
-
     public static final MagicTargetChoice TARGET_INSTANT_OR_SORCERY_SPELL = 
         new MagicTargetChoice("target instant or sorcery spell");
 
@@ -209,9 +206,6 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice POS_TARGET_ATTACKING_CREATURE = 
         MagicTargetChoice.Positive("target attacking creature");
     
-    public static final MagicTargetChoice NEG_TARGET_ATTACKING_OR_BLOCKING_CREATURE = 
-        MagicTargetChoice.Negative("target attacking or blocking creature");
-    
     public static final MagicTargetChoice TARGET_ATTACKING_OR_BLOCKING_CREATURE = 
         new MagicTargetChoice("target attacking or blocking creature");
     
@@ -293,9 +287,6 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice TARGET_CREATURE_CARD_FROM_ALL_GRAVEYARDS = 
         new MagicTargetChoice("target creature card from a graveyard");
 
-    public static final MagicTargetChoice TARGET_ARTIFACT_OR_CREATURE_CARD_FROM_ALL_GRAVEYARDS = 
-        new MagicTargetChoice("target artifact or creature card from a graveyard");
-    
     public static final MagicTargetChoice A_CARD_FROM_HAND = 
         new MagicTargetChoice("a card from your hand");
     
@@ -334,12 +325,6 @@ public class MagicTargetChoice extends MagicChoice {
 
     public static final MagicTargetChoice TARGET_CREATURE_YOUR_OPPONENT_CONTROLS = 
         new MagicTargetChoice("target creature an opponent controls");
-
-    public static final MagicTargetChoice TARGET_CREATURE_YOU_DONT_CONTROL = 
-        new MagicTargetChoice("target creature you don't control");
-
-    public static final MagicTargetChoice TARGET_CREATURE_WITHOUT_FLYING_YOU_DONT_CONTROL = 
-        new MagicTargetChoice("target creature without flying you don't control");
 
     public static final MagicTargetChoice TARGET_ARTIFACT_YOUR_OPPONENT_CONTROLS = 
         new MagicTargetChoice("target artifact an opponent controls");
