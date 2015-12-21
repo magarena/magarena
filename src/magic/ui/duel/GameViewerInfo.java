@@ -105,7 +105,7 @@ public class GameViewerInfo {
         return log;
     }
 
-    public CardViewerInfo getMagicCard(long magicCardId) {
+    public CardViewerInfo getCardInfo(long magicCardId) {
 
         final PlayerViewerInfo[] players = new PlayerViewerInfo[] {playerInfo, opponentInfo};
 
