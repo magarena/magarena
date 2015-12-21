@@ -2,6 +2,7 @@ package magic.ui.duel;
 
 import javax.swing.ImageIcon;
 import magic.data.MagicIcon;
+import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicGame;
 import magic.model.stack.MagicAbilityOnStack;
@@ -40,4 +41,12 @@ public class StackViewerInfo {
         }
         return null;
     }
+
+    boolean isMagicCard(long magicCardId) {
+        if (itemOnStack.getSource() instanceof MagicCard) {
+            return magicCardId == ((MagicCard) itemOnStack.getSource()).getId();
+        }
+        return false;
+    }
+
 }

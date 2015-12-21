@@ -12,6 +12,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPlayerZone;
 import magic.model.phase.MagicPhaseType;
+import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicItemOnStack;
 
 public class GameViewerInfo {
@@ -117,9 +118,9 @@ public class GameViewerInfo {
         }
 
         // ... then check stack...
-        MagicCard card = searchForCardOnStack(magicCardId);
-        if (card != MagicCard.NONE) {
-            return new CardViewerInfo(card);
+        final MagicCardOnStack item = searchForCardOnStack(magicCardId);
+        if (item != null) {
+            return new CardViewerInfo(item);
         }
 
         // ... otherwise search through player zones in following order
@@ -129,6 +130,8 @@ public class GameViewerInfo {
             MagicPlayerZone.HAND,
             MagicPlayerZone.LIBRARY
         };
+
+        MagicCard card = MagicCard.NONE;
 
         for (MagicPlayerZone aZone : zones) {
             if (card == MagicCard.NONE) {
@@ -141,16 +144,13 @@ public class GameViewerInfo {
         return new CardViewerInfo(card);
     }
 
-    private MagicCard searchForCardOnStack(long magicCardId) {
+    private MagicCardOnStack searchForCardOnStack(long magicCardId) {
         for (StackViewerInfo item : stack) {
-            if (item.itemOnStack.getSource() instanceof MagicCard) {
-                final MagicCard card = (MagicCard) item.itemOnStack.getSource();
-                if (card.getId() == magicCardId) {
-                    return card;
-                }
+            if (item.isMagicCard(magicCardId)) {
+                return (MagicCardOnStack) item.itemOnStack;
             }
         }
-        return MagicCard.NONE;
+        return null;
     }
 
     private MagicCardList getMagicCardList(MagicPlayerZone aZone, PlayerViewerInfo aPlayer) {

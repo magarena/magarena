@@ -5,6 +5,7 @@ import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicObject;
 import magic.model.MagicPermanent;
+import magic.model.stack.MagicCardOnStack;
 import magic.ui.CachedImagesProvider;
 import magic.utility.MagicSystem;
 
@@ -23,10 +24,14 @@ public class CardViewerInfo {
     CardViewerInfo(MagicPermanent aPerm) {
         this.card = aPerm.getCard();
         this.magicObject = aPerm;
-        this.faceupCardDef = aPerm.getController().isHuman() || MagicSystem.isAiVersusAi()
-            ? aPerm.getRealCardDefinition()
-            : aPerm.getCardDefinition();
-    }    
+        this.faceupCardDef = getFaceupCardDef(aPerm);
+    }
+
+    public CardViewerInfo(MagicCardOnStack aCard) {
+        this.card = aCard.getCard();
+        this.faceupCardDef = getFaceupCardDef(aCard);
+        this.magicObject = aCard;
+    }
 
     MagicCard getMagicCard() {
         return card;
@@ -38,5 +43,17 @@ public class CardViewerInfo {
 
     public BufferedImage getImage() {
         return CachedImagesProvider.getInstance().getImage(faceupCardDef, 0, true);
+    }
+
+    private MagicCardDefinition getFaceupCardDef(MagicCardOnStack aCard) {
+        return aCard.getController().isHuman() || MagicSystem.isAiVersusAi()
+            ? aCard.getRealCardDefinition()
+            : aCard.getCardDefinition();
+    }
+
+    private MagicCardDefinition getFaceupCardDef(MagicPermanent aCard) {
+        return aCard.getController().isHuman() || MagicSystem.isAiVersusAi()
+            ? aCard.getRealCardDefinition()
+            : aCard.getCardDefinition();
     }
 }
