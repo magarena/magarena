@@ -1,5 +1,6 @@
 package magic.ui.cardBuilder.renderers;
 
+import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 
 import magic.model.MagicAbility;
@@ -39,7 +40,7 @@ public class CardBuilder {
         TitleFrame.drawCardName(cardImage, cardDef);
         TitleFrame.drawManaCost(cardImage, cardDef);
         TypeLine.drawCardTypeLine(cardImage, cardDef);
-        return cardImage;
+        return trimImage(cardImage);
     }
 
     private static BufferedImage makeDoubleFacedCard(IRenderableCard cardDef) {
@@ -56,7 +57,7 @@ public class CardBuilder {
         OracleText.drawOracleText(cardImage, cardDef);
         TitleFrame.drawCardName(cardImage, cardDef);
         TypeLine.drawCardTypeLine(cardImage, cardDef);
-        return cardImage;
+        return trimImage(cardImage);
     }
 
     private static BufferedImage makePlaneswalker(IRenderableCard cardDef) {
@@ -66,7 +67,7 @@ public class CardBuilder {
         TitleFrame.drawCardName(cardImage, cardDef);
         TitleFrame.drawManaCost(cardImage, cardDef);
         TypeLine.drawCardTypeLine(cardImage, cardDef);
-        return cardImage;
+        return trimImage(cardImage);
     }
 
     private static BufferedImage makeBasicCard(IRenderableCard cardDef) {
@@ -77,7 +78,7 @@ public class CardBuilder {
         TitleFrame.drawCardName(cardImage, cardDef);
         TitleFrame.drawManaCost(cardImage, cardDef);
         TypeLine.drawCardTypeLine(cardImage, cardDef);
-        return cardImage;
+        return trimImage(cardImage);
     }
 
     private static BufferedImage makeDevoidCard(IRenderableCard cardDef) {
@@ -88,7 +89,17 @@ public class CardBuilder {
         TitleFrame.drawCardName(cardImage, cardDef);
         TitleFrame.drawManaCost(cardImage, cardDef);
         TypeLine.drawCardTypeLine(cardImage, cardDef);
-        return cardImage;
+        return trimImage(cardImage);
+    }
+
+    // Remove rounded corners from original image
+    private static BufferedImage trimImage(BufferedImage image) {
+        int cropSize = 5;
+        BufferedImage img = image.getSubimage(cropSize, cropSize, image.getWidth()- 2*cropSize, image.getHeight()- 2*cropSize);
+        BufferedImage copyOfImage = new BufferedImage(img.getWidth(), img.getHeight(), BufferedImage.TYPE_INT_RGB);
+        Graphics g = copyOfImage.createGraphics();
+        g.drawImage(img, 0, 0, null);
+        return copyOfImage;
     }
 
 }
