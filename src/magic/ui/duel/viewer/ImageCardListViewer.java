@@ -234,14 +234,17 @@ public class ImageCardListViewer extends JPanel implements IChoiceViewer {
             final MagicCard card=cardList.get(index);
             final MagicCardDefinition cardDefinition=card.getCardDefinition();
             final Point point=cardPoints.get(index);
-            final BufferedImage image = imageCache.getImage(cardDefinition, card.getImageIndex(), false);
             final int x1=point.x;
             final int y1=point.y;
             final int x2=point.x+CARD_WIDTH;
             final int y2=point.y+CARD_HEIGHT;
-
-            //draw the card image
-            g.drawImage(image, x1, y1, x2, y2, 0, 0, imageSize.width, imageSize.height, this);
+                        
+            final BufferedImage image = GraphicsUtils.scale(
+                imageCache.getImage(cardDefinition, card.getImageIndex(), true),
+                CARD_WIDTH,
+                CARD_HEIGHT
+            );
+            g2d.drawImage(image, x1, y1, this);
 
             ImageDrawingUtils.drawCardId(g, card.getId(), x1, 0);
 
