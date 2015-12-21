@@ -1429,4 +1429,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     @Override
     public boolean isInstant() {return hasType(MagicType.Instant);}
 
+    @Override
+    public boolean isHidden() {return cardDefinition.isHidden();}
+
 }

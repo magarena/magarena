@@ -42,4 +42,5 @@ public interface IRenderableCard {
     boolean isSorcery();
     boolean isInstant();
     boolean isEnchantment();
+    boolean isHidden();
 }

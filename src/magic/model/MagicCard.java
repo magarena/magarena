@@ -594,4 +594,7 @@ public class MagicCard
     @Override
     public boolean isSorcery() {return hasType(MagicType.Sorcery);}
 
+    @Override
+    public boolean isHidden() {return cardDefinition.isHidden();}
+
 }
