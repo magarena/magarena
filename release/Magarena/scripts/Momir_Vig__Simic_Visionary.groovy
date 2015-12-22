@@ -17,17 +17,16 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicCard card : event.getPlayer().getLibrary().getCardsFromTop(1)) {
                 game.doAction(new RevealAction(card));
-                game.doAction(new ShiftCardAction(
-                    card,
-                    MagicLocationType.OwnersLibrary,
-                    card.hasType(MagicType.Creature) ?
-                        MagicLocationType.OwnersHand :
-                        MagicLocationType.OwnersLibrary
-                ));
+                if (card.hasType(MagicType.Creature)) {
+                    game.doAction(new ShiftCardAction(
+                        card,
+                        MagicLocationType.OwnersLibrary,
+                        MagicLocationType.OwnersHand
+                    ));
+                }
             }
         }
     },
-    
     new OtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
