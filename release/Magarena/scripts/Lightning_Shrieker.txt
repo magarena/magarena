@@ -8,5 +8,5 @@ cost={4}{R}
 pt=5/5
 ability=Flying, trample, haste;\
         At the beginning of the end step, SN's owner shuffles it into his or her library.
-timing=main
+timing=fmain
 oracle=Flying, trample, haste\nAt the beginning of the end step, Lightning Shrieker's owner shuffles it into his or her library.
