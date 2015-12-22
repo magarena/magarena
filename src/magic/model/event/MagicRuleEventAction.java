@@ -2044,7 +2044,7 @@ public enum MagicRuleEventAction {
         }
     },
     ShuffleSelf(
-        "shuffle sn into its owner's library(\\.|,)?",
+        "(shuffle sn|sn's owner shuffles it) into (its owner's|his or her) library(\\.|,)?",
         MagicTiming.Removal,
         "Shuffle",
         new MagicEventAction() {
