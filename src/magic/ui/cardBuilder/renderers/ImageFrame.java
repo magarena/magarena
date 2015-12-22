@@ -3,11 +3,8 @@ package magic.ui.cardBuilder.renderers;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.List;
 import java.util.stream.Collectors;
-import javax.imageio.ImageIO;
 
 import magic.model.MagicColor;
 import magic.model.MagicType;
@@ -20,7 +17,7 @@ import magic.utility.MagicFileSystem;
 
 public class ImageFrame {
 
-    private static BufferedImage defaultImage(MagicColor color) {
+    private static BufferedImage defaultBackground(MagicColor color) {
         switch (color) {
             case White:
                 return ResourceManager.newFrame(ResourceManager.defaultWhite);
@@ -32,8 +29,28 @@ public class ImageFrame {
                 return ResourceManager.newFrame(ResourceManager.defaultRed);
             case Green:
                 return ResourceManager.newFrame(ResourceManager.defaultGreen);
+        }
+        return null;
+    }
+
+    private static BufferedImage defaultSymbol(MagicType type) {
+        switch (type) {
+            case Artifact:
+                return ResourceManager.newFrame(ResourceManager.artifactSymbol);
+            case Creature:
+                return ResourceManager.newFrame(ResourceManager.creatureSymbol);
+            case Enchantment:
+                return ResourceManager.newFrame(ResourceManager.enchantmentSymbol);
+            case Instant:
+                return ResourceManager.newFrame(ResourceManager.instantSymbol);
+            case Land:
+                return ResourceManager.newFrame(ResourceManager.landSymbol);
+            case Planeswalker:
+                return ResourceManager.newFrame(ResourceManager.planeswalkerSymbol);
+            case Sorcery:
+                return ResourceManager.newFrame(ResourceManager.sorcerySymbol);
             default:
-                return ResourceManager.newFrame(ResourceManager.defaultColorless);
+                return null;
         }
     }
 
@@ -43,16 +60,10 @@ public class ImageFrame {
         g2d.dispose();
     }
 
-    public static BufferedImage getDefaultImage(IRenderableCard cardDef) {
-        if (cardDef.hasType(MagicType.Land)) {
-            return ResourceManager.newFrame(ResourceManager.defaultLand);
-        }
-        if (cardDef.hasType(MagicType.Artifact)) {
-            return ResourceManager.newFrame(ResourceManager.defaultArtifact);
-        }
+    public static BufferedImage getDefaultBackground(IRenderableCard cardDef) {
         if (cardDef.isMulti()) {
             if (cardDef.isHybrid()) {
-                List<BufferedImage> colorDefaults = Frame.getColorOrder(cardDef).stream().filter(color -> cardDef.hasColor(color)).map(ImageFrame::defaultImage).collect(Collectors.toList());
+                List<BufferedImage> colorDefaults = Frame.getColorOrder(cardDef).stream().filter(cardDef::hasColor).map(ImageFrame::defaultBackground).collect(Collectors.toList());
                 return Frame.getBlendedFrame(
                     ResourceManager.newFrame(colorDefaults.get(0)),
                     ResourceManager.newFrame(ResourceManager.defaultHybridBlend),
@@ -64,10 +75,28 @@ public class ImageFrame {
         }
         for (MagicColor color : MagicColor.values()) {
             if (cardDef.hasColor(color)) {
-                return defaultImage(color);
+                return defaultBackground(color);
             }
         }
+        if (cardDef.hasType(MagicType.Land)) {
+            return ResourceManager.newFrame(ResourceManager.defaultLand);
+        }
+        if (cardDef.hasType(MagicType.Artifact)) {
+            return ResourceManager.newFrame(ResourceManager.defaultArtifact);
+        }
         return ResourceManager.newFrame(ResourceManager.defaultColorless);
+    }
+
+    public static BufferedImage getDefaultSymbol(IRenderableCard cardDef) {
+        if (cardDef.getTypes().size() > 1) {
+            return ResourceManager.newFrame(ResourceManager.multiSymbol);
+        }
+        for (MagicType type : MagicType.values()) {
+            if (cardDef.hasType(type)) {
+                return defaultSymbol(type);
+            }
+        }
+        return null;
     }
 
     public static BufferedImage getCardImage(IRenderableCard cardDef) {
@@ -75,18 +104,25 @@ public class ImageFrame {
         if (cropFile.exists()) {
             BufferedImage image = ImageFileIO.toImg(cropFile, MagicImages.MISSING_CARD);
             return GraphicsUtils.scale(image, 316, 231);
-        } else {
-            String fName = "/cardbuilder/images/" + cardDef.getImageName() + ".jpg";
-            try (final InputStream is = ResourceManager.getJarResourceStream(fName)) {
-                if (is != null) {
-                    BufferedImage cardImage = GraphicsUtils.getOptimizedImage(ImageIO.read(is));
-                    return GraphicsUtils.scale(cardImage, 316, 231);
-                } else {
-                    return getDefaultImage(cardDef);
-                }
-            } catch (IOException ex) {
-                throw new RuntimeException(ex);
-            }
         }
+        return buildDefaultImage(cardDef);
+    }
+
+
+    private static BufferedImage buildDefaultImage(IRenderableCard cardDef) {
+        return getCompositeImage(getDefaultBackground(cardDef), getDefaultSymbol(cardDef));
+    }
+
+    static BufferedImage getCompositeImage(BufferedImage baseFrame, BufferedImage topFrame) {
+        //create top Image
+        Graphics2D graphics2D = topFrame.createGraphics();
+        graphics2D.drawImage(topFrame, null, 0, 0);
+        graphics2D.dispose();
+
+        //draw top on top of baseFrame
+        Graphics2D graphics2D1 = baseFrame.createGraphics();
+        graphics2D1.drawImage(topFrame, null, 0, 0);
+        graphics2D1.dispose();
+        return ResourceManager.newFrame(baseFrame);
     }
 }

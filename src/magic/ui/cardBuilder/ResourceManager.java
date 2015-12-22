@@ -48,15 +48,15 @@ public class ResourceManager {
     public static final BufferedImage gainHybridBlend = getFrame("blendingMask.png");
     public static final BufferedImage gainHybridBanner = getFrame("hybrid_blend.png");
     public static final BufferedImage gainMultiBlend = getFrame("multicolor_blend.png");
-    public static final BufferedImage defaultWhite = getImage("default_white.png");
-    public static final BufferedImage defaultBlue = getImage("default_blue.png");
-    public static final BufferedImage defaultBlack = getImage("default_black.png");
-    public static final BufferedImage defaultRed = getImage("default_red.png");
-    public static final BufferedImage defaultGreen = getImage("default_green.png");
-    public static final BufferedImage defaultArtifact = getImage("default_artifact.png");
-    public static final BufferedImage defaultLand = getImage("default_land.png");
-    public static final BufferedImage defaultColorless = getImage("default_colorless.png");
-    public static final BufferedImage defaultMulti = getImage("default_multi.png");
+    public static final BufferedImage defaultWhite = getImage("default_white.jpg");
+    public static final BufferedImage defaultBlue = getImage("default_blue.jpg");
+    public static final BufferedImage defaultBlack = getImage("default_black.jpg");
+    public static final BufferedImage defaultRed = getImage("default_red.jpg");
+    public static final BufferedImage defaultGreen = getImage("default_green.jpg");
+    public static final BufferedImage defaultArtifact = getImage("default_artifact.jpg");
+    public static final BufferedImage defaultLand = getImage("default_land.jpg");
+    public static final BufferedImage defaultColorless = getImage("default_colorless.jpg");
+    public static final BufferedImage defaultMulti = getImage("default_multi.jpg");
     public static final BufferedImage defaultHybridBlend = getImage("imageHybridBlend.png");
     public static final BufferedImage whiteLandImage = getWatermark("watermark_w.png");
     public static final BufferedImage blueLandImage = getWatermark("watermark_u.png");
@@ -148,6 +148,14 @@ public class ResourceManager {
     public static final BufferedImage colorlessDevoidFrame = getFrame("devoid/ccard.jpg");
     public static final BufferedImage artifactDevoidFrame = getFrame("devoid/acard.jpg");
     public static final BufferedImage multiDevoidFrame = getFrame("devoid/mcard.jpg");
+    public static final BufferedImage artifactSymbol = getImage("artifactSymbol.png");
+    public static final BufferedImage creatureSymbol = getImage("creatureSymbol.png");
+    public static final BufferedImage enchantmentSymbol = getImage("enchantmentSymbol.png");
+    public static final BufferedImage instantSymbol = getImage("instantSymbol.png");
+    public static final BufferedImage landSymbol = getImage("landSymbol.png");
+    public static final BufferedImage multiSymbol = getImage("multiSymbol.png");
+    public static final BufferedImage planeswalkerSymbol = getImage("planeswalkerSymbol.png");
+    public static final BufferedImage sorcerySymbol = getImage("sorcerySymbol.png");
 
     //Font Map
     private static final String[] names = { };
