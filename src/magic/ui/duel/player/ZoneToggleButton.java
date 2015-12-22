@@ -18,6 +18,7 @@ import magic.model.MagicPlayerZone;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.MagicImages;
 import magic.ui.duel.animation.AnimationFx;
+import magic.ui.duel.animation.MagicAnimations;
 import magic.ui.utility.MagicStyle;
 import org.pushingpixels.trident.Timeline;
 
@@ -162,7 +163,7 @@ public class ZoneToggleButton extends JToggleButton {
     }
 
     private void doAlertAnimation(int loopCount) {
-        if (AnimationFx.isOn(AnimationFx.ZONE_BUTTON_ALERT)) {
+        if (MagicAnimations.isOn(AnimationFx.ZONE_BUTTON_ALERT)) {
             timeline1 = new Timeline();
             timeline1.setDuration(200);
             timeline1.addPropertyToInterpolate(

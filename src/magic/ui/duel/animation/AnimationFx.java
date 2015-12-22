@@ -1,7 +1,5 @@
 package magic.ui.duel.animation;
 
-import magic.data.GeneralConfig;
-
 public class AnimationFx {
 
     private AnimationFx() {}
@@ -23,7 +21,7 @@ public class AnimationFx {
         NEW_TURN_MSG;
 
     public static boolean isOn(long flag) {
-        return (flags & flag) == flag && GeneralConfig.getInstance().showGameplayAnimations();
+        return (flags & flag) == flag;
     }
 
     private static void setOn(long flag) {

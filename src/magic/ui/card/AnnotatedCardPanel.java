@@ -40,6 +40,7 @@ import magic.ui.ScreenController;
 import magic.ui.duel.CardViewerInfo;
 import magic.ui.duel.SwingGameController;
 import magic.ui.duel.animation.AnimationFx;
+import magic.ui.duel.animation.MagicAnimations;
 import magic.ui.theme.AbilityIcon;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.widget.FontsAndBorders;
@@ -162,7 +163,7 @@ public class AnnotatedCardPanel extends JPanel {
     }
     
     private void showPopup() {
-        if (AnimationFx.isOn(AnimationFx.CARD_FADEIN)) {
+        if (MagicAnimations.isOn(AnimationFx.CARD_FADEIN)) {
             if (opacity == 0f) {
                 fadeInTimeline = new Timeline();
                 fadeInTimeline.setDuration(200);

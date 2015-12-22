@@ -23,15 +23,15 @@ public class MagicAnimations {
         final GameViewerInfo newGameInfo,
         final DuelPanel gamePanel) {
 
-        if (AnimationFx.isOn(AnimationFx.DRAW_CARD) && isDrawCardEvent(newGameInfo)) {
+        if (isOn(AnimationFx.DRAW_CARD) && isDrawCardEvent(newGameInfo)) {
             return getDrawCardAnimation(oldGameInfo, newGameInfo, gamePanel);
         }
 
-        if (AnimationFx.isOn(AnimationFx.PLAY_CARD) && isPlayCardEvent(newGameInfo)) {
+        if (isOn(AnimationFx.PLAY_CARD) && isPlayCardEvent(newGameInfo)) {
             return getPlayCardAnimationInfo(oldGameInfo, newGameInfo, gamePanel);
         }
 
-        if (AnimationFx.isOn(AnimationFx.NEW_TURN_MSG) && isNewTurnEvent(oldGameInfo, newGameInfo)) {
+        if (isOn(AnimationFx.NEW_TURN_MSG) && isNewTurnEvent(oldGameInfo, newGameInfo)) {
             return getNewTurnAnimation(newGameInfo, gamePanel);
         }
 
@@ -143,6 +143,10 @@ public class MagicAnimations {
                 );
             }
         }
+    }
+
+    public static boolean isOn(long aFlag) {
+        return GeneralConfig.getInstance().showGameplayAnimations() && AnimationFx.isOn(aFlag);
     }
   
 }

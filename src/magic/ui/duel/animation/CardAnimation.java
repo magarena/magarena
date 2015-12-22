@@ -64,7 +64,7 @@ abstract class CardAnimation extends MagicAnimation {
     }
 
     private void drawCardShadow(Graphics g) {
-        if (AnimationFx.isOn(AnimationFx.CARD_SHADOW)) {
+        if (MagicAnimations.isOn(AnimationFx.CARD_SHADOW)) {
             final int SHADOW = 6;
             g.setColor(SHADOW_COLOR);
             g.fillRect(imageRect.x + SHADOW,
@@ -76,7 +76,7 @@ abstract class CardAnimation extends MagicAnimation {
     }
 
     private boolean isCardFlipping() {
-        return AnimationFx.isOn(AnimationFx.FLIP_CARD) && flipPosition < 1f;
+        return MagicAnimations.isOn(AnimationFx.FLIP_CARD) && flipPosition < 1f;
     }
 
     private boolean isViewTimelineRunning() {
@@ -84,7 +84,7 @@ abstract class CardAnimation extends MagicAnimation {
     }
 
     private void drawArrow(Graphics g) {
-        if (AnimationFx.isOn(AnimationFx.FROM_ARROW) && isViewTimelineRunning()) {
+        if (MagicAnimations.isOn(AnimationFx.FROM_ARROW) && isViewTimelineRunning()) {
             ArrowBuilder.drawArrow(g, getStart(), getPreviewRectangle());
         }
     }
