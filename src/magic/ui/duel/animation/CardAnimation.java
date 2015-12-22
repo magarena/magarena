@@ -13,6 +13,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicType;
 import magic.ui.CachedImagesProvider;
 import magic.ui.MagicImages;
+import magic.ui.duel.CardViewerInfo;
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.TimelineScenario;
 import org.pushingpixels.trident.callback.TimelineCallbackAdapter;
@@ -48,9 +49,9 @@ abstract class CardAnimation extends MagicAnimation {
     protected abstract Rectangle getStart();
     protected abstract Rectangle getEnd();
 
-    CardAnimation(MagicPlayer aPlayer, MagicCardDefinition aCard, GameLayoutInfo layoutInfo) {
+    CardAnimation(MagicPlayer aPlayer, CardViewerInfo cardInfo, GameLayoutInfo layoutInfo) {
         this.player = aPlayer;
-        this.card = aCard;
+        this.card = cardInfo.getFaceupCardDef();
         this.playerIndex = aPlayer.getIndex();
         this.layoutInfo = layoutInfo;
     }

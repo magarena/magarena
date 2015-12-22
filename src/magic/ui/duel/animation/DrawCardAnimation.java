@@ -1,16 +1,16 @@
 package magic.ui.duel.animation;
 
 import java.awt.Rectangle;
-import magic.model.MagicCardDefinition;
 import magic.model.MagicPlayer;
+import magic.ui.duel.CardViewerInfo;
 
 /**
  * Animation when drawing a card from library to hand.
  */
 public class DrawCardAnimation extends CardAnimation {
 
-    public DrawCardAnimation(MagicPlayer aPlayer, MagicCardDefinition aCard, GameLayoutInfo layoutInfo) {
-        super(aPlayer, aCard, layoutInfo);
+    public DrawCardAnimation(MagicPlayer aPlayer, CardViewerInfo cardInfo, GameLayoutInfo layoutInfo) {
+        super(aPlayer, cardInfo, layoutInfo);
     }
 
     @Override

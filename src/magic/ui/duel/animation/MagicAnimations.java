@@ -92,13 +92,13 @@ public class MagicAnimations {
         }
 
         assert cards.size() == 1;
-        final MagicCardDefinition aCard = cards.get(0).getCardDefinition();
+        final CardViewerInfo cardInfo = newGameInfo.getCardViewerInfo(cards.get(0));
 
-        setLayoutInfo(gamePanel, newGameInfo, aCard);
+        setLayoutInfo(gamePanel, newGameInfo, cardInfo.getFaceupCardDef());
 
         return new DrawCardAnimation(
             newGameInfo.getTurnPlayer().player,
-            aCard,
+            cardInfo,
             layoutInfo
         );
     }
@@ -126,7 +126,7 @@ public class MagicAnimations {
 
         return new PlayCardAnimation(
             newGameInfo.getTurnPlayer().player,
-            cardInfo.getFaceupCardDef(),
+            cardInfo,
             layoutInfo
         );
 
