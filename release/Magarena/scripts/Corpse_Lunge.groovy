@@ -7,7 +7,7 @@
                 TARGET_CREATURE,
                 payedCost.getTarget(),
                 this,
-                "SN deals damage equal to (RN)'s power to target creature.\$"
+                "SN deals damage equal to RN's power to target creature\$."
             );
         }
         @Override
