@@ -17,9 +17,10 @@
                     game.doAction(new ShiftCardAction(
                         card,
                         MagicLocationType.Graveyard,
-                        MagicLocationType.OwnersLibrary
+                        MagicLocationType.TopOfOwnersLibrary
                     ));
                 }
+                game.doAction(new ShuffleLibraryAction(it));
             });
         }
     }

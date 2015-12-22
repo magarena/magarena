@@ -13,16 +13,25 @@
             for (final MagicPlayer player : game.getAPNAP()) {
                 final MagicCardList hand = new MagicCardList(player.getHand());
                 for (final MagicCard it : hand) {
-                    game.doAction(new ShiftCardAction(it,MagicLocationType.OwnersHand,MagicLocationType.OwnersLibrary));
+                    game.doAction(new ShiftCardAction(
+                        it,
+                        MagicLocationType.OwnersHand,
+                        MagicLocationType.TopOfOwnersLibrary
+                    ));
                 }
                 final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
                 for (final MagicCard it : graveyard) {
-                    game.doAction(new ShiftCardAction(it,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
+                    game.doAction(new ShiftCardAction(
+                        it,
+                        MagicLocationType.Graveyard,
+                        MagicLocationType.TopOfOwnersLibrary
+                    ));
                 }
                 game.doAction(new RemoveAllFromPlayAction(
                     PERMANENT_YOU_OWN.filter(player),
-                    MagicLocationType.OwnersLibrary
+                    MagicLocationType.TopOfOwnersLibrary
                 ));
+                game.doAction(new ShuffleLibraryAction(player));
                 game.doAction(new DrawAction(player,7));
             }
             for (final MagicPlayer player : game.getAPNAP()) {

@@ -24,7 +24,7 @@
                 game.doAction(new ShiftCardAction(
                     card,
                     MagicLocationType.OwnersHand,
-                    MagicLocationType.OwnersLibrary
+                    MagicLocationType.TopOfOwnersLibrary
                 ));
             };
             
@@ -33,15 +33,16 @@
                 game.doAction(new ShiftCardAction(
                     card,
                     MagicLocationType.Graveyard,
-                    MagicLocationType.OwnersLibrary
+                    MagicLocationType.TopOfOwnersLibrary
                 ));
             };
             
             game.doAction(new RemoveAllFromPlayAction(
                 PERMANENT_YOU_OWN.filter(event),
-                MagicLocationType.OwnersLibrary
+                MagicLocationType.TopOfOwnersLibrary
             ));
             
+            game.doAction(new ShuffleLibraryAction(player));
             game.doAction(new DrawAction(player,7));
             
             final int lifeChange = 20 - player.getLife();

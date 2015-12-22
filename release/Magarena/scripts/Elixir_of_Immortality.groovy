@@ -24,17 +24,20 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
+            final MagicPermanent permanent = event.getPermanent();
             game.doAction(new ChangeLifeAction(player, 5));
-            game.doAction(new RemoveFromPlayAction(event.getPermanent(), MagicLocationType.OwnersLibrary));
+            game.doAction(new RemoveFromPlayAction(permanent, MagicLocationType.TopOfOwnersLibrary));
+            game.doAction(new ShuffleLibraryAction(permanent.getOwner()));
             
             final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
             for (final MagicCard card : graveyard) {
                 game.doAction(new ShiftCardAction(
                     card,
                     MagicLocationType.Graveyard,
-                    MagicLocationType.OwnersLibrary
+                    MagicLocationType.TopOfOwnersLibrary
                 ));
             }
+            game.doAction(new ShuffleLibraryAction(player));
         }
     }
 ]

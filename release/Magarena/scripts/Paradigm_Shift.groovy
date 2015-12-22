@@ -10,14 +10,24 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicCardList graveyard = new MagicCardList(event.getPlayer().getGraveyard());
-            final MagicCardList library = new MagicCardList(event.getPlayer().getLibrary());
+            final MagicPlayer player = event.getPlayer();
+            final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
+            final MagicCardList library = new MagicCardList(player.getLibrary());
             for (final MagicCard cardLibrary : library) {
-                game.doAction(new ShiftCardAction(cardLibrary,MagicLocationType.OwnersLibrary,MagicLocationType.Exile));
+                game.doAction(new ShiftCardAction(
+                    cardLibrary,
+                    MagicLocationType.OwnersLibrary,
+                    MagicLocationType.Exile
+                ));
             }
             for (final MagicCard cardGraveyard : graveyard) {
-                game.doAction(new ShiftCardAction(cardGraveyard,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
+                game.doAction(new ShiftCardAction(
+                    cardGraveyard,
+                    MagicLocationType.Graveyard,
+                    MagicLocationType.TopOfOwnersLibrary
+                ));
             }
+            game.doAction(new ShuffleLibraryAction(player));
         }
     }
 ]

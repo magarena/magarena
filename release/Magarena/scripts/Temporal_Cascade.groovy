@@ -26,12 +26,21 @@ def TEXT2 = "Each player draws seven cards."
                 for (final MagicPlayer player : game.getAPNAP()) {
                     final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
                     for (final MagicCard card : graveyard) {
-                        game.doAction(new ShiftCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
+                        game.doAction(new ShiftCardAction(
+                            card,
+                            MagicLocationType.Graveyard,
+                            MagicLocationType.TopOfOwnersLibrary
+                        ));
                     }
                     final MagicCardList hand = new MagicCardList(player.getHand());
                     for (final MagicCard card : hand) {
-                        game.doAction(new ShiftCardAction(card,MagicLocationType.OwnersHand,MagicLocationType.OwnersLibrary));
+                        game.doAction(new ShiftCardAction(
+                            card,
+                            MagicLocationType.OwnersHand,
+                            MagicLocationType.TopOfOwnersLibrary
+                        ));
                     }
+                    game.doAction(new ShuffleLibraryAction(player));
                 }
             }
             if (event.isKicked() || event.isMode(2)) {

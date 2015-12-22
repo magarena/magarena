@@ -47,8 +47,13 @@
             event.processTargetPlayer(game, {
                 final MagicCardList graveyard = new MagicCardList(it.getGraveyard());
                 for (final MagicCard card : graveyard) {
-                    game.doAction(new ShiftCardAction(card,MagicLocationType.Graveyard,MagicLocationType.OwnersLibrary));
+                    game.doAction(new ShiftCardAction(
+                        card,
+                        MagicLocationType.Graveyard,
+                        MagicLocationType.TopOfOwnersLibrary
+                    ));
                 }
+                game.doAction(new ShuffleLibraryAction(it));
             });
         }
     }
