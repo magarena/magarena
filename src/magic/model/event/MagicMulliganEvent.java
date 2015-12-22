@@ -7,7 +7,7 @@ import magic.model.MagicSource;
 import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
 import magic.model.action.DrawAction;
-import magic.model.action.ShiftCardAction;
+import magic.model.action.ShuffleCardsIntoLibraryAction;
 import magic.model.choice.MagicMulliganChoice;
 
 public class MagicMulliganEvent extends MagicEvent {
@@ -27,17 +27,8 @@ public class MagicMulliganEvent extends MagicEvent {
             final MagicPlayer player = event.getPlayer();
             if (event.isYes()) {
                 final MagicCardList hand = new MagicCardList(player.getHand());
-                final int size = hand.size();
-                for (final MagicCard card : hand) {
-                    game.doAction(new ShiftCardAction(
-                        card,
-                        MagicLocationType.OwnersHand,
-                        MagicLocationType.OwnersLibrary
-                    ));
-                }
-                final MagicCardList library = player.getLibrary();
-                library.shuffle();
-                game.doAction(new DrawAction(player,size - 1));
+                game.doAction(new ShuffleCardsIntoLibraryAction(hand, MagicLocationType.OwnersHand));
+                game.doAction(new DrawAction(player, hand.size() - 1));
                 game.addEvent(new MagicMulliganEvent(player));
             }
         }

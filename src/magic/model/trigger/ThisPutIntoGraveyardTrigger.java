@@ -8,7 +8,7 @@ import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.MoveCardAction;
-import magic.model.action.ShiftCardAction;
+import magic.model.action.ShuffleCardsIntoLibraryAction;
 import magic.model.action.PlayCardAction;
 import magic.model.action.RevealAction;
 import magic.model.event.MagicEvent;
@@ -75,13 +75,7 @@ public abstract class ThisPutIntoGraveyardTrigger extends MagicTrigger<MoveCardA
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
             final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
-            for (final MagicCard card : graveyard) {
-                game.doAction(new ShiftCardAction(
-                    card,
-                    MagicLocationType.Graveyard,
-                    MagicLocationType.OwnersLibrary
-                ));
-            }
+            game.doAction(new ShuffleCardsIntoLibraryAction(graveyard, MagicLocationType.Graveyard));
         }
     };
 }
