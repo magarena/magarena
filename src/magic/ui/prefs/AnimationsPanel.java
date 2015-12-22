@@ -14,12 +14,12 @@ import net.miginfocom.swing.MigLayout;
 class AnimationsPanel extends JPanel {
 
     // translatable strings.
-    private static final String _S1 = "New turn message:";
-    private static final String _S2 = "Displays a message at the beginning of each turn for the specified duration (in seconds). Left-click or space key during game to cancel. Set to zero to turn off completely.";
+    private static final String _S1 = "New turn delay:";
+    private static final String _S2 = "If the 'New turn message' option is switched on then this setting determines how long (in seconds) it should be displayed. Left-click or space key cancels the delay.";
     private static final String _S3 = "Non-land preview:";
-    private static final String _S4 = "When playing a non-land card, this setting determines how long (in seconds) it should be displayed at full size. Left-click or space key during game to cancel preview.";
+    private static final String _S4 = "When playing a non-land card, this setting determines how long (in seconds) it should be displayed at full size. Left-click or space key cancels preview.";
     private static final String _S5 = "Land preview:";
-    private static final String _S6 = "When playing a land card, this setting determines how long (in seconds) it should be displayed at full size. Left-click or space key during game to cancel preview.";
+    private static final String _S6 = "When playing a land card, this setting determines how long (in seconds) it should be displayed at full size. Left-click or space key cancels preview.";
     private static final String _S70 = "Play animations / effects";
     private static final String _S71 = "Turning animations off will speed up gameplay but make it harder to follow the action.";
     
@@ -65,7 +65,7 @@ class AnimationsPanel extends JPanel {
     }
 
     private SliderPanel getNewTurnAlertSlider(MouseListener aListener) {
-        final SliderPanel sp = new SliderPanel(UiString.get(_S1), 0, 10, 1, CONFIG.getNewTurnAlertDuration() / 1000);
+        final SliderPanel sp = new SliderPanel(UiString.get(_S1), 1, 10, 1, CONFIG.getNewTurnAlertDuration() / 1000);
         sp.setToolTipText(UiString.get(_S2));
         sp.addMouseListener(aListener);
         sp.setFontBold(false);

@@ -31,6 +31,7 @@ class AnimationFlagsPanel extends JPanel {
     private static final String _S12 = "Avatar selection pulse";
     private static final String _S17 = "When a player is a valid choice then player avatar's border pulses on and off.";
     private static final String _S13 = "New turn message";
+    private static final String _S18 = "Displays a message at the beginning of each new turn and pauses game for a number of seconds (see new turn delay slider).";
     private static final String _S14 = "Card popup fade-in";
     private static final String _S15 = "Uses a fade-in effect when displaying the full-size card image during a game.";
 
@@ -45,7 +46,7 @@ class AnimationFlagsPanel extends JPanel {
         createCheckBox(AnimationFx.FROM_ARROW, UiString.get(_S9), UiString.get(_S10));
         createCheckBox(AnimationFx.ZONE_BUTTON_ALERT, UiString.get(_S11), UiString.get(_S16));
         createCheckBox(AnimationFx.AVATAR_PULSE, UiString.get(_S12), UiString.get(_S17));
-        createCheckBox(AnimationFx.NEW_TURN_MSG, UiString.get(_S13), "");
+        createCheckBox(AnimationFx.NEW_TURN_MSG, UiString.get(_S13), UiString.get(_S18));
         createCheckBox(AnimationFx.CARD_FADEIN, UiString.get(_S14), UiString.get(_S15));
 
         setLayout(new MigLayout("flowx, wrap 2, insets 0, gapy 6, gapx 10"));
