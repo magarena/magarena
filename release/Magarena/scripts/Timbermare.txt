@@ -6,7 +6,8 @@ type=Creature
 subtype=Elemental,Horse
 cost={3}{G}
 pt=5/5
-ability=haste;echo {5}{G};\
+ability=Haste;\
+        Echo {5}{G};\
         When SN enters the battlefield, tap all other creatures.
 timing=fmain
 oracle=Haste\nEcho {5}{G}\nWhen Timbermare enters the battlefield, tap all other creatures.
