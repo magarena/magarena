@@ -17,14 +17,9 @@ import java.awt.image.BufferedImage;
 import java.text.AttributedCharacterIterator;
 import java.text.AttributedString;
 import java.util.Collection;
-import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
-import javax.swing.ImageIcon;
 
-import magic.data.MagicIcon;
 import magic.model.MagicColor;
-import magic.model.MagicManaCost;
 import magic.model.MagicType;
 import magic.ui.MagicImages;
 import magic.ui.cardBuilder.IRenderableCard;
@@ -341,7 +336,7 @@ public class OracleText {
                         endMana+=2;
                     }
                     String iconString = originalString.substring(i, endMana + 1); //get mana-string //substring returns at -1 value
-                    Image iconImage = getIcon(iconString).getImage(); //get related Icon as Image
+                    Image iconImage = MagicImages.getIcon(iconString).getImage(); //get related Icon as Image
                     ImageGraphicAttribute icon = new ImageGraphicAttribute(iconImage, GraphicAttribute.BOTTOM_ALIGNMENT); //define replacement icon
                     BufferedImage nullImage = new BufferedImage(1, 1, BufferedImage.TYPE_INT_ARGB); //create null image
                     ImageGraphicAttribute nulled = new ImageGraphicAttribute(nullImage,GraphicAttribute.BOTTOM_ALIGNMENT); //define null image
@@ -359,23 +354,6 @@ public class OracleText {
             }
         }
         return string;
-    }
-
-    private static ImageIcon getIcon(String string){
-        switch (string) {
-            case "{T}":
-                return MagicImages.getIcon(MagicIcon.MANA_TAP);
-            case "{Q}":
-                return MagicImages.getIcon(MagicIcon.MANA_UNTAP);
-            case "{S}":
-                return MagicImages.getIcon(MagicIcon.MANA_SNOW);
-            case "{C}":
-                return MagicImages.getIcon(MagicIcon.MANA_COLORLESS);
-            default:
-                MagicManaCost mana = MagicManaCost.create(string);
-                List<MagicIcon> icons = mana.getIcons();
-                return MagicImages.getIcon(icons.get(0));
-        }
     }
 
     public static boolean isWithinTolerance(int baseColor, int sourceColor, double tol) {
