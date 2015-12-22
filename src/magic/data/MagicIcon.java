@@ -192,75 +192,66 @@ public enum MagicIcon {
 
     MANA_ANY("anymana.gif"),
 
-    // mana icons are stored in a sprite/icon sheet.
-    MANA_UNTAP(51),
-    MANA_TAP(50),
-    MANA_WHITE(24),
-    MANA_BLUE(25),
-    MANA_BLACK(26),
-    MANA_RED(27),
-    MANA_GREEN(28),
-    MANA_SNOW(29),
-    MANA_COLORLESS(54),
-    MANA_HYBRID_WHITE(40),
-    MANA_HYBRID_BLUE(41),
-    MANA_HYBRID_BLACK(42),
-    MANA_HYBRID_RED(43),
-    MANA_HYBRID_GREEN(44),
-    MANA_PHYREXIAN_WHITE(45),
-    MANA_PHYREXIAN_BLUE(46),
-    MANA_PHYREXIAN_BLACK(47),
-    MANA_PHYREXIAN_RED(48),
-    MANA_PHYREXIAN_GREEN(49),
-    MANA_WHITE_BLUE(30),
-    MANA_WHITE_BLACK(31),
-    MANA_BLUE_BLACK(32),
-    MANA_BLUE_RED(33),
-    MANA_BLACK_RED(34),
-    MANA_BLACK_GREEN(35),
-    MANA_RED_WHITE(36),
-    MANA_RED_GREEN(37),
-    MANA_GREEN_WHITE(38),
-    MANA_GREEN_BLUE(39),
-    MANA_0(0),
-    MANA_1(1),
-    MANA_2(2),
-    MANA_3(3),
-    MANA_4(4),
-    MANA_5(5),
-    MANA_6(6),
-    MANA_7(7),
-    MANA_8(8),
-    MANA_9(9),
-    MANA_10(10),
-    MANA_11(11),
-    MANA_12(12),
-    MANA_13(13),
-    MANA_14(14),
-    MANA_15(15),
-    MANA_16(16),
-    MANA_17(17),
-    MANA_18(18),
-    MANA_19(19),
-    MANA_20(20),
-    MANA_X(21);
-
-    public static final String MANA_ICON_SHEET = "Mana.png";
+    MANA_UNTAP("mana/Q.png"),
+    MANA_TAP("mana/T.png"),
+    MANA_WHITE("mana/W.png"),
+    MANA_BLUE("mana/U.png"),
+    MANA_BLACK("mana/B.png"),
+    MANA_RED("mana/R.png"),
+    MANA_GREEN("mana/G.png"),
+    MANA_SNOW("mana/S.png"),
+    MANA_COLORLESS("mana/C.png"),
+    MANA_HYBRID_WHITE("mana/2W.png"),
+    MANA_HYBRID_BLUE("mana/2U.png"),
+    MANA_HYBRID_BLACK("mana/2B.png"),
+    MANA_HYBRID_RED("mana/2R.png"),
+    MANA_HYBRID_GREEN("mana/2G.png"),
+    MANA_PHYREXIAN_WHITE("mana/WP.png"),
+    MANA_PHYREXIAN_BLUE("mana/UP.png"),
+    MANA_PHYREXIAN_BLACK("mana/BP.png"),
+    MANA_PHYREXIAN_RED("mana/RP.png"),
+    MANA_PHYREXIAN_GREEN("mana/GP.png"),
+    MANA_WHITE_BLUE("mana/WU.png"),
+    MANA_WHITE_BLACK("mana/WB.png"),
+    MANA_BLUE_BLACK("mana/UB.png"),
+    MANA_BLUE_RED("mana/UR.png"),
+    MANA_BLACK_RED("mana/BR.png"),
+    MANA_BLACK_GREEN("mana/BG.png"),
+    MANA_RED_WHITE("mana/RW.png"),
+    MANA_RED_GREEN("mana/RG.png"),
+    MANA_GREEN_WHITE("mana/GW.png"),
+    MANA_GREEN_BLUE("mana/GU.png"),
+    MANA_0("mana/0.png"),
+    MANA_1("mana/1.png"),
+    MANA_2("mana/2.png"),
+    MANA_3("mana/3.png"),
+    MANA_4("mana/4.png"),
+    MANA_5("mana/5.png"),
+    MANA_6("mana/6.png"),
+    MANA_7("mana/7.png"),
+    MANA_8("mana/8.png"),
+    MANA_9("mana/9.png"),
+    MANA_10("mana/10.png"),
+    MANA_11("mana/11.png"),
+    MANA_12("mana/12.png"),
+    MANA_13("mana/13.png"),
+    MANA_14("mana/14.png"),
+    MANA_15("mana/15.png"),
+    MANA_16("mana/16.png"),
+    MANA_17("mana/17.png"),
+    MANA_18("mana/18.png"),
+    MANA_19("mana/19.png"),
+    MANA_20("mana/20.png"),
+    MANA_X("mana/X.png");
 
     public static final Set<MagicIcon> COLOR_MANA = EnumSet.range(MANA_WHITE, MANA_GREEN);
     public static final Set<MagicIcon> HYBRID_COLOR_MANA = EnumSet.range(MANA_WHITE_BLUE, MANA_GREEN_BLUE);
+    public static final Set<MagicIcon> COST_ICON = EnumSet.range(MANA_UNTAP,MANA_X);
 
     private final String iconFilename;
-    private final int iconIndex;
 
-    private MagicIcon(final String iconFilename) {
+    MagicIcon(String iconFilename) {
         this.iconFilename = iconFilename;
-        this.iconIndex = -1;
-    }
-
-    private MagicIcon(final int iconIndex) {
-        this.iconFilename = null;
-        this.iconIndex = iconIndex;
     }
 
     public String getFilename() {
@@ -271,16 +262,8 @@ public enum MagicIcon {
         }
     }
 
-    public int getIconIndex() {
-        if (iconIndex >= 0) {
-            return iconIndex;
-        } else {
-            throw new UnsupportedOperationException("Only mana icons have a (icon sheet) index.");
-        }
-    }
-
     public boolean isManaIcon() {
-        return iconFilename == null && iconIndex >= 0;
+        return COST_ICON.contains(this);
     }
 
 }

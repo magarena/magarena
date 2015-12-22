@@ -1,6 +1,7 @@
 package magic.ui;
 
 import java.awt.Dimension;
+import java.awt.GraphicsEnvironment;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -24,14 +25,14 @@ import magic.utility.MagicResources;
 
 public final class MagicImages {
 
-    private static final Map<Integer, ImageIcon> manaIcons = new HashMap<>();
+    private static final Map<MagicIcon, ImageIcon> manaIcons = new HashMap<>();
     private static final Map<MagicIcon, ImageIcon> icons = new HashMap<>();
     private static final Map<String, PlayerAvatar> avatarsMap = new HashMap<>();
 
     public static final BufferedImage BACK_IMAGE;
     static {
-        final BufferedImage image = ImageFileIO.toImg(MagicResources.getImageUrl("card-back.jpg"), null);
-        final Dimension size = getPreferredImageSize(image);
+        BufferedImage image = ImageFileIO.toImg(MagicResources.getImageUrl("card-back.jpg"), null);
+        Dimension size = getPreferredImageSize(image);
         BACK_IMAGE = GraphicsUtils.scale(image, size.width, size.height);
     }
 
@@ -50,7 +51,6 @@ public final class MagicImages {
     public static final BufferedImage OPAL = loadTextureImage("opal.jpg");
     public static final BufferedImage OPAL2 = loadTextureImage("opal2.jpg");
 
-    private static final BufferedImage MANA_ICON_SHEET = loadImage(MagicIcon.MANA_ICON_SHEET);
 
     /**
      * Gets preferred viewing size for a card image based on preset setting in preferences.
@@ -60,14 +60,14 @@ public final class MagicImages {
      * preferred size whilst retaining the image's aspect ratio. This should ensure
      * smooth transition between an animated and static image view.
      */
-    public static Dimension getPreferredImageSize(final Image image) {
-        final ImageSizePresets preset = GeneralConfig.getInstance().getPreferredImageSize();
+    public static Dimension getPreferredImageSize(Image image) {
+        ImageSizePresets preset = GeneralConfig.getInstance().getPreferredImageSize();
         if (preset == ImageSizePresets.SIZE_ORIGINAL) {
             return new Dimension(image.getWidth(null), image.getHeight(null));
         } else {
-            final Dimension approxPrefSize = preset.getSize();
+            Dimension approxPrefSize = preset.getSize();
             // ratio of image width to height.
-            final double imageRatio = image.getWidth(null) / (double) image.getHeight(null);
+            double imageRatio = image.getWidth(null) / (double) image.getHeight(null);
             return new Dimension(
                 approxPrefSize.width,
                 (int)(approxPrefSize.width / imageRatio)
@@ -75,51 +75,46 @@ public final class MagicImages {
         }
     }
 
-    public static ImageIcon getIcon(final MagicIcon icon) {
+    public static ImageIcon getIcon(MagicIcon icon) {
         if (icon.isManaIcon()) {
             return getSmallManaIcon(icon);
-        } else if (!icons.containsKey(icon)) {
+        }
+        if (!icons.containsKey(icon)) {
             icons.put(icon, new ImageIcon(MagicResources.getImageUrl(icon.getFilename())));
         }
         return icons.get(icon);
     }
 
-    private static BufferedImage loadImage(final String name) {
+    private static BufferedImage loadImage(String name) {
         return ImageFileIO.toImg(MagicResources.getImageUrl(name), MISSING2);
     }
 
-    private static BufferedImage loadTextureImage(final String name) {
+    private static BufferedImage loadTextureImage(String name) {
         return ImageFileIO.toImg(MagicResources.getTextureImageUrl(name), MISSING2);
     }
 
-    private static ImageIcon getSizedManaIcon(final int pos, final boolean big) {
-        final int imgW = MANA_ICON_SHEET.getWidth() / 10;
-        final int imgH = MANA_ICON_SHEET.getHeight() / 7;
-        final int row = pos / 10;
-        final int col = pos % 10;
-        final BufferedImage subimage = MANA_ICON_SHEET.getSubimage(col * imgW, row * imgH, imgW, imgH);
+    private static ImageIcon getSizedManaIcon(MagicIcon manaIcon, boolean big) {
         return big
-                ? new ImageIcon(GraphicsUtils.scale(subimage, 25, 25))
-                : new ImageIcon(GraphicsUtils.scale(subimage, 15, 15));
+                ? new ImageIcon(GraphicsUtils.scale(loadImage(manaIcon.getFilename()), 25, 25))
+                : new ImageIcon(GraphicsUtils.scale(loadImage(manaIcon.getFilename()), 15, 15));
     }
 
-    private static ImageIcon getManaIcon(final MagicIcon manaIcon, final boolean isBigIcon) {
-        final int key = manaIcon.hashCode() + (isBigIcon ? 1 : 0);
-        if (!manaIcons.containsKey(key)) {
-            manaIcons.put(key, getSizedManaIcon(manaIcon.getIconIndex(), isBigIcon));
+    private static ImageIcon getManaIcon(MagicIcon manaIcon, boolean isBigIcon) {
+        if (!manaIcons.containsKey(manaIcon)) {
+            manaIcons.put(manaIcon, getSizedManaIcon(manaIcon, isBigIcon));
         }
-        return manaIcons.get(key);
+        return getSizedManaIcon(manaIcon, isBigIcon);
     }
 
-    public static ImageIcon getSmallManaIcon(final MagicIcon manaIcon) {
+    public static ImageIcon getSmallManaIcon(MagicIcon manaIcon) {
         return getManaIcon(manaIcon, false);
     }
 
-    public static ImageIcon getBigManaIcon(final MagicIcon manaIcon) {
+    public static ImageIcon getBigManaIcon(MagicIcon manaIcon) {
         return getManaIcon(manaIcon, true);
     }
 
-    public static ImageIcon getIcon(final MagicColor c) {
+    public static ImageIcon getIcon(MagicColor c) {
         switch (c) {
             case White:
                 return getBigManaIcon(MagicIcon.MANA_WHITE);
@@ -135,7 +130,7 @@ public final class MagicImages {
         throw new RuntimeException("No icon for MagicColor " + c);
     }
 
-    public static ImageIcon getIcon(final MagicPermanent perm) {
+    public static ImageIcon getIcon(MagicPermanent perm) {
         if (perm.isAttacking()) {
             return getIcon(MagicIcon.ATTACK);
         } else if (perm.isBlocking()) {
@@ -147,7 +142,7 @@ public final class MagicImages {
         }
     }
 
-    public static ImageIcon getIcon(final MagicCardDefinition cdef) {
+    public static ImageIcon getIcon(MagicCardDefinition cdef) {
         if (cdef.isLand()) {
             return getIcon(MagicIcon.LAND);
         } else if (cdef.isCreature()) {
@@ -165,7 +160,7 @@ public final class MagicImages {
         }
     }
 
-    public static ImageIcon getIcon(final MagicManaType mtype) {
+    public static ImageIcon getIcon(MagicManaType mtype) {
         switch (mtype) {
             case Colorless:
                 return getSmallManaIcon(MagicIcon.MANA_COLORLESS);
@@ -185,38 +180,34 @@ public final class MagicImages {
         throw new RuntimeException("No icon available for MagicManaType " + mtype);
     }
 
-    public static ImageIcon getIconSize1(final DuelPlayerConfig playerDef) {
+    public static ImageIcon getIconSize1(DuelPlayerConfig playerDef) {
         return getSizedAvatarImageIcon(playerDef, 1);
     }
 
-    public static ImageIcon getIconSize2(final DuelPlayerConfig playerDef) {
+    public static ImageIcon getIconSize2(DuelPlayerConfig playerDef) {
         return getSizedAvatarImageIcon(playerDef, 2);
     }
 
-    public static ImageIcon getIconSize3(final DuelPlayerConfig playerDef) {
+    public static ImageIcon getIconSize3(DuelPlayerConfig playerDef) {
         return getSizedAvatarImageIcon(playerDef, 3);
     }
 
-    public static ImageIcon getIconSize4(final DuelPlayerConfig playerDef) {
+    public static ImageIcon getIconSize4(DuelPlayerConfig playerDef) {
         return getSizedAvatarImageIcon(playerDef, 4);
     }
 
-    private static ImageIcon getSizedAvatarImageIcon(final DuelPlayerConfig playerDef, final int size) {
+    private static ImageIcon getSizedAvatarImageIcon(DuelPlayerConfig playerDef, int size) {
         return getPlayerAvatar(playerDef.getProfile()).getIcon(size);
     }
 
-    private static BufferedImage getAvatarImage(final PlayerProfile profile) {
-        final File file = new File(profile.getProfilePath().resolve("player.avatar").toString());
-        if (file.exists()) {
-            return ImageFileIO.toImg(file, MagicImages.MISSING);
-        } else {
-            return MagicImages.MISSING;
-        }
+    private static BufferedImage getAvatarImage(PlayerProfile profile) {
+        File file = new File(profile.getProfilePath().resolve("player.avatar").toString());
+        return file.exists() ? ImageFileIO.toImg(file, MISSING) : MISSING;
     }
 
-    public static PlayerAvatar getPlayerAvatar(final PlayerProfile profile) {
-        if (java.awt.GraphicsEnvironment.isHeadless() == false) {
-            final String key = profile.getId();
+    public static PlayerAvatar getPlayerAvatar(PlayerProfile profile) {
+        if (GraphicsEnvironment.isHeadless() == false) {
+            String key = profile.getId();
             if (!avatarsMap.containsKey(key)) {
                 avatarsMap.put(key, new PlayerAvatar(getAvatarImage(profile)));
             }
