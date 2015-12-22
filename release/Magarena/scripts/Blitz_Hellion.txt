@@ -7,6 +7,6 @@ subtype=Hellion
 cost={3}{R}{G}
 pt=7/7
 ability=Trample, haste;\
-        At the beginning of the end step, shuffle SN into its owner's library.
+        At the beginning of the end step, SN's owner shuffles it into his or her library.
 timing=fmain
 oracle=Trample, haste\nAt the beginning of the end step, Blitz Hellion's owner shuffles it into his or her library.
