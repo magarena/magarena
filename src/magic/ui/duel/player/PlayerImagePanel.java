@@ -14,6 +14,8 @@ import magic.ui.MagicImages;
 import magic.ui.utility.MagicStyle;
 import magic.ui.duel.CounterOverlay;
 import magic.ui.duel.PlayerViewerInfo;
+import magic.ui.duel.animation.AnimationFx;
+import magic.ui.duel.animation.MagicAnimations;
 import magic.ui.theme.ThemeFactory;
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.ease.Spline;
@@ -70,7 +72,7 @@ public class PlayerImagePanel extends AnimationPanel {
     }
 
     private void drawValidChoiceIndicator(Graphics2D g2d) {
-        if (GeneralConfig.getInstance().showGameplayAnimations()) {
+        if (MagicAnimations.isOn(AnimationFx.AVATAR_PULSE)) {
             drawPulsingBorder(g2d);
         } else {
             drawValidChoiceOverlay(g2d);

@@ -16,21 +16,22 @@ class AnimationFlagsPanel extends JPanel {
     private final Map<Long, JCheckBox> cbMap = new LinkedHashMap<>();
     private final MouseListener listener;
 
-    private static final String _S1 = "Draw card from library.";
-    private static final String _S2 = "Shows you the card drawn from your library before being added to your hand.";
-    private static final String _S3 = "Play card from hand.";
-    private static final String _S4 = "Shows you the card played by the AI before it is added to the stack or battlefield.";
-    private static final String _S5 = "Flip card on draw/play.";
-    private static final String _S6 = "The card is played or drawn face down and flips to the front face for previewing.";
-    private static final String _S7 = "Card shadow.";
-    private static final String _S8 = "Displays a card shadow to give a sense of depth when previewed.";
-    private static final String _S9 = "Play-from arrows.";
-    private static final String _S10 = "Indicates which player zone a card was played from.";
-    private static final String _S11 = "Zone button alert.";
-    private static final String _S16 = "The icon in a player's zone buttons is animated when an event of note takes place in that zone.";
-    private static final String _S12 = "Avatar strobe.";
-    private static final String _S13 = "New turn message.";
-    private static final String _S14 = "Card popup fade-in.";
+    private static final String _S1 = "You draw card from library";
+    private static final String _S2 = "The card image grows from your library button to full size preview where it waits for a number of seconds (see preview sliders) before shrinking back down to the hand button.";
+    private static final String _S3 = "AI plays card from hand";
+    private static final String _S4 = "The card image grows from the AI's hand button to full size preview where it waits for a number of seconds (see preview sliders) before shrinking back down to the stack or battlefield.";
+    private static final String _S5 = "Flip card on draw/play";
+    private static final String _S6 = "The card is played or drawn face down and flips over for previewing.";
+    private static final String _S7 = "Card shadow";
+    private static final String _S8 = "Displays a very simple card shadow effect when card image is previewed during the play/draw animations.";
+    private static final String _S9 = "Play-from arrows";
+    private static final String _S10 = "Indicates which player zone a card originates from during the preview stage of the draw/play animations.";
+    private static final String _S11 = "Zone button alert";
+    private static final String _S16 = "The icon in a player's zone button is animated when an event of note takes place in that zone.";
+    private static final String _S12 = "Avatar selection pulse";
+    private static final String _S17 = "When a player is a valid choice then player avatar's border pulses on and off.";
+    private static final String _S13 = "New turn message";
+    private static final String _S14 = "Card popup fade-in";
     private static final String _S15 = "Uses a fade-in effect when displaying the full-size card image during a game.";
 
     AnimationFlagsPanel(final MouseListener aListener) {
@@ -43,7 +44,7 @@ class AnimationFlagsPanel extends JPanel {
         createCheckBox(AnimationFx.CARD_SHADOW, UiString.get(_S7), UiString.get(_S8));
         createCheckBox(AnimationFx.FROM_ARROW, UiString.get(_S9), UiString.get(_S10));
         createCheckBox(AnimationFx.ZONE_BUTTON_ALERT, UiString.get(_S11), UiString.get(_S16));
-        createCheckBox(AnimationFx.AVATAR_STROBE, UiString.get(_S12), "");
+        createCheckBox(AnimationFx.AVATAR_PULSE, UiString.get(_S12), UiString.get(_S17));
         createCheckBox(AnimationFx.NEW_TURN_MSG, UiString.get(_S13), "");
         createCheckBox(AnimationFx.CARD_FADEIN, UiString.get(_S14), UiString.get(_S15));
 

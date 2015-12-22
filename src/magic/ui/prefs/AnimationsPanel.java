@@ -20,7 +20,7 @@ class AnimationsPanel extends JPanel {
     private static final String _S4 = "When playing a non-land card, this setting determines how long (in seconds) it should be displayed at full size. Left-click or space key during game to cancel preview.";
     private static final String _S5 = "Land preview:";
     private static final String _S6 = "When playing a land card, this setting determines how long (in seconds) it should be displayed at full size. Left-click or space key during game to cancel preview.";
-    private static final String _S70 = "Play animations";
+    private static final String _S70 = "Play animations / effects";
     private static final String _S71 = "Turning animations off will speed up gameplay but make it harder to follow the action.";
     
     private final static GeneralConfig CONFIG = GeneralConfig.getInstance();
