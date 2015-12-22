@@ -6,6 +6,6 @@ type=Artifact,Creature
 subtype=Beast
 cost={3}
 pt=3/4
+ability=When SN leaves the battlefield, sacrifice a land~and SN deals 1 damage to you.
 timing=main
-requires_groovy_code
 oracle=When Phyrexian War Beast leaves the battlefield, sacrifice a land and Phyrexian War Beast deals 1 damage to you.

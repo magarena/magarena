@@ -4,6 +4,6 @@ value=3.214
 rarity=U
 type=Enchantment
 cost={1}{R}
+ability=Whenever an opponent casts a white spell, RN loses 2 life.
 timing=enchantment
-requires_groovy_code
 oracle=Whenever an opponent casts a white spell, he or she loses 2 life.
