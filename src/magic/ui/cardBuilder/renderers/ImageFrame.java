@@ -4,6 +4,7 @@ import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 import magic.model.MagicColor;
@@ -88,11 +89,20 @@ public class ImageFrame {
     }
 
     public static BufferedImage getDefaultSymbol(IRenderableCard cardDef) {
-        if (cardDef.getTypes().size() > 1) {
+        Set<MagicType> cardTypes = cardDef.getTypes();
+        cardTypes.remove(MagicType.Legendary);
+        cardTypes.remove(MagicType.Tribal);
+        cardTypes.remove(MagicType.World);
+        cardTypes.remove(MagicType.Basic);
+        cardTypes.remove(MagicType.Snow);
+        if (cardTypes.size() > 1) {
+            if (cardDef.isCreature()) {
+                return ResourceManager.newFrame(ResourceManager.creatureSymbol);
+            }
             return ResourceManager.newFrame(ResourceManager.multiSymbol);
         }
         for (MagicType type : MagicType.values()) {
-            if (cardDef.hasType(type)) {
+            if (cardTypes.contains(type)) {
                 return defaultSymbol(type);
             }
         }
