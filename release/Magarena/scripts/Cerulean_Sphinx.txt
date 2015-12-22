@@ -6,7 +6,7 @@ type=Creature
 subtype=Sphinx
 cost={4}{U}{U}
 pt=5/5
-ability=Flying
+ability=Flying;\
+        {U}: SN's owner shuffles it into his or her library.
 timing=main
-requires_groovy_code
 oracle=Flying\n{U}: Cerulean Sphinx's owner shuffles it into his or her library.
