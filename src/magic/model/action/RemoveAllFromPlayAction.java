@@ -20,7 +20,8 @@ public class RemoveAllFromPlayAction extends MagicAction {
     
     @Override
     public void doAction(final MagicGame game) {
-        final MagicLocationType tempLocation = toLocation == MagicLocationType.OwnersLibrary ? MagicLocationType.TopOfOwnersLibrary : toLocation;
+        final boolean isLibrary = toLocation == MagicLocationType.OwnersLibrary;
+        final MagicLocationType tempLocation = isLibrary ? MagicLocationType.TopOfOwnersLibrary : toLocation;
         final boolean[] shouldShuffle = {false, false};
         for (final MagicPermanent perm : perms) {
             if (perms.size() > 1) {
@@ -28,10 +29,12 @@ public class RemoveAllFromPlayAction extends MagicAction {
             } else {
                 game.doAction(new RemoveFromPlayAction(perm, tempLocation));
             }
-            shouldShuffle[perm.getOwner().getIndex()] = true;
+            if (isLibrary) {
+                shouldShuffle[perm.getOwner().getIndex()] = true;
+            }
         }
         for (final MagicPlayer player : game.getAPNAP()) {
-            if (toLocation == MagicLocationType.OwnersLibrary && shouldShuffle[player.getIndex()]) {
+            if (shouldShuffle[player.getIndex()]) {
                 game.doAction(new ShuffleLibraryAction(player));
             }
         }
