@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Samurai
 cost={3}{R}{R}
 pt=2/2
-ability=bushido 1
+ability=Bushido 1;\
+        Whenever SN attacks, you may have SN deal 1 damage to each creature defending player controls.
 timing=main
-requires_groovy_code
 oracle=Bushido 1\nWhenever Ronin Cliffrider attacks, you may have it deal 1 damage to each creature defending player controls.
