@@ -43,7 +43,7 @@ class AnimationFlagsPanel extends JPanel {
         createCheckBox(AnimationFx.PLAY_CARD, UiString.get(_S3), UiString.get(_S4));
         createCheckBox(AnimationFx.FLIP_CARD, UiString.get(_S5), UiString.get(_S6));
         createCheckBox(AnimationFx.CARD_SHADOW, UiString.get(_S7), UiString.get(_S8));
-        createCheckBox(AnimationFx.FROM_ARROW, UiString.get(_S9), UiString.get(_S10));
+        createCheckBox(AnimationFx.STATIC_ARROW, UiString.get(_S9), UiString.get(_S10));
         createCheckBox(AnimationFx.ZBUTTON_PULSE, UiString.get(_S11), UiString.get(_S16));
         createCheckBox(AnimationFx.AVATAR_PULSE, UiString.get(_S12), UiString.get(_S17));
         createCheckBox(AnimationFx.NEW_TURN_MSG, UiString.get(_S13), UiString.get(_S18));

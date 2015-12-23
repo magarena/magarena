@@ -7,7 +7,7 @@ public class AnimationFx {
     public static final long DRAW_CARD         = 1;
     public static final long PLAY_CARD         = 1 << 1;
     public static final long CARD_SHADOW       = 1 << 2;
-    public static final long FROM_ARROW        = 1 << 3;
+    public static final long STATIC_ARROW      = 1 << 3;
     public static final long FLIP_CARD         = 1 << 4;
     public static final long ZBUTTON_PULSE     = 1 << 5;
     public static final long AVATAR_PULSE      = 1 << 6;
@@ -15,8 +15,9 @@ public class AnimationFx {
     public static final long NEW_TURN_MSG      = 1 << 8;
     public static final long CARD_FADEIN       = 1 << 9;
 
+    // all these effects and animations are on by default.
     private static long flags =
-        DRAW_CARD | PLAY_CARD | FROM_ARROW | CARD_FADEIN |
+        DRAW_CARD | PLAY_CARD | STATIC_ARROW | CARD_FADEIN |
         FLIP_CARD | ZBUTTON_PULSE | AVATAR_PULSE | INFLATE_ZONE |
         NEW_TURN_MSG;
 

@@ -82,7 +82,7 @@ abstract class CardAnimation extends MagicAnimation {
     }
 
     private void drawArrow(Graphics g) {
-        if (MagicAnimations.isOn(AnimationFx.FROM_ARROW) && isViewTimelineRunning()) {
+        if (MagicAnimations.isOn(AnimationFx.STATIC_ARROW) && isViewTimelineRunning()) {
             ArrowBuilder.drawArrow(g, getStart(), getPreviewRectangle());
         }
     }
