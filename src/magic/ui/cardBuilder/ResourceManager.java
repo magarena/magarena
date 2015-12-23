@@ -211,7 +211,7 @@ public class ResourceManager {
     }
 
     public static BufferedImage getWatermark(String name) {
-        String fName = "/cardbuilder/frames/" + name;
+        String fName = "/cardbuilder/frames/watermark/" + name;
         try (final InputStream is = getJarResourceStream(fName)) {
             BufferedImage image = GraphicsUtils.getOptimizedImage(ImageIO.read(is));
             return GraphicsUtils.scale(image, 145, 145);
