@@ -3,7 +3,7 @@ image=http://magiccards.info/scans/en/isd/243.jpg
 value=3.362
 rarity=R
 type=Land
-ability={T}: Add {1} to your mana pool.
+ability={T}: Add {1} to your mana pool.;\
+        {X}{R}{G}, {T}: Target creature gets +X/+0 and gains trample until end of turn.
 timing=land
-requires_groovy_code
 oracle={T}: Add {1} to your mana pool.\n{X}{R}{G}, {T}: Target creature gets +X/+0 and gains trample until end of turn.
