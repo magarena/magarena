@@ -6,6 +6,6 @@ type=Creature
 subtype=Leviathan
 cost={7}{U}{U}
 pt=9/9
+ability=When SN enters the battlefield, if you cast it from your hand, tap all nonblue creatures. Those creatures don't untap during their controllers' next untap steps.
 timing=main
-requires_groovy_code
 oracle=When Breaching Leviathan enters the battlefield, if you cast it from your hand, tap all nonblue creatures. Those creatures don't untap during their controllers' next untap steps.

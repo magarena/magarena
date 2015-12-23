@@ -4,6 +4,6 @@ value=1.483
 rarity=R
 type=Enchantment
 cost={2}{W}
+ability={3}{W}{W}: Target opponent gains 3 life~and you draw a card.
 timing=enchantment
-requires_groovy_code
 oracle={3}{W}{W}: You draw a card and target opponent gains 3 life.

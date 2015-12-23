@@ -4,6 +4,6 @@ value=2.368
 rarity=C
 type=Enchantment
 cost={3}{B}{R}
+ability=Sacrifice SN: Creatures your opponents control get -1/-1 until end of turn.~Creatures your opponents control attack this turn if able.
 timing=main
-requires_groovy_code
 oracle=Sacrifice Suicidal Charge: Creatures your opponents control get -1/-1 until end of turn. Those creatures attack this turn if able.

@@ -4,7 +4,7 @@ value=2.942
 rarity=C
 type=Instant
 cost={U}{R}
-ability=replicate {U}{R}
+ability=Replicate {U}{R}
+effect=Target creature gets +1/+0 and gains flying and first strike until end of turn.
 timing=pump
-requires_groovy_code
 oracle=Replicate {U}{R}\nTarget creature gets +1/+0 and gains flying and first strike until end of turn.
