@@ -6,15 +6,10 @@
 
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
-            final MagicTargetChoice targetChoice=new MagicTargetChoice(
-                CREATURE_YOU_CONTROL.except(source),
-                MagicTargetHint.None,
-                "a creature other than " + source + " to sacrifice"
-            );
             return [
                 new MagicTapEvent(source), 
                 new MagicPayManaCostEvent(source, "{R}"),
-                new MagicSacrificePermanentEvent(source,targetChoice)
+                new MagicSacrificePermanentEvent(source, MagicTargetChoice.ANOTHER_CREATURE_YOU_CONTROL)
             ];
         }
 
@@ -25,7 +20,7 @@
                 NEG_TARGET_PLAYER,
                 payedCost.getTarget(),
                 this,
-                "SN deals damage equal to the power of RN to target player\$."
+                "SN deals damage equal to RN's power to target player\$."
             );
         }
 
