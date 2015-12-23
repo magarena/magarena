@@ -5,7 +5,7 @@ removal=2
 rarity=C
 type=Instant
 cost={1}{U}
+ability=Kicker {1}{U}
+effect=Return target nonland permanent to its owner's hand.~If SN was kicked, draw a card.
 timing=removal
-ability=kicker {1}{U}
-requires_groovy_code
 oracle=Kicker {1}{U}\nReturn target nonland permanent to its owner's hand. If Into the Roil was kicked, draw a card.

@@ -5,6 +5,6 @@ rarity=C
 type=Instant
 cost={2}{W}
 ability=Kicker {2}{U}
+effect=Destroy target artifact or enchantment.~If SN was kicked, draw two cards.
 timing=removal
-requires_groovy_code
 oracle=Kicker {2}{U}\nDestroy target artifact or enchantment.\nIf Dismantling Blow was kicked, draw two cards.

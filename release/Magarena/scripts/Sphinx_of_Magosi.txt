@@ -6,7 +6,7 @@ type=Creature
 subtype=Sphinx
 cost={3}{U}{U}{U}
 pt=6/6
-ability=flying
+ability=Flying;\
+        {2}{U}: Draw a card,~then put a +1/+1 counter on SN.
 timing=main
-requires_groovy_code
 oracle=Flying\n{2}{U}: Draw a card, then put a +1/+1 counter on Sphinx of Magosi.
