@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Wizard
 cost={B}{B}
 pt=1/1
-ability={2}{R}: Target creature gets +1/+0 until end of turn.
+ability={2}{R}: Target creature gets +1/+0 until end of turn.;\
+        {U}{U}: Target creature you control gains flying until end of turn.~Sacrifice *it* at the beginning of the next end step.
 timing=main
-requires_groovy_code
 oracle={2}{R}: Target creature gets +1/+0 until end of turn.\n{U}{U}: Target creature you control gains flying until end of turn. Sacrifice it at the beginning of the next end step.
