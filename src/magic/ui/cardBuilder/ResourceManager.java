@@ -200,6 +200,7 @@ public class ResourceManager {
     public static final BufferedImage greenPlaneswalkerHidden = getFrame("transform/planeswalker/gcard2.jpg");
     public static final BufferedImage multiPlaneswalkerTransform = getFrame("transform/planeswalker/mcard.jpg");
     public static final BufferedImage multiPlaneswalkerHidden = getFrame("transform/planeswalker/mcard2.jpg");
+    public static final BufferedImage getPlaneswalkerImageBlend = getFrame("planeswalker/imageMask.png");
 
 
 

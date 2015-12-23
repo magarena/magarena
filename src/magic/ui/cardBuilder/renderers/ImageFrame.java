@@ -57,7 +57,11 @@ public class ImageFrame {
 
     static void drawImage(BufferedImage card, IRenderableCard cardDef) {
         Graphics2D g2d = card.createGraphics();
-        g2d.drawImage(getCardImage(cardDef), null, 29, 60);
+        if (cardDef.isPlaneswalker()){
+            g2d.drawImage(getCardImage(cardDef), null, 27, 54);
+        } else {
+            g2d.drawImage(getCardImage(cardDef), null, 29, 60);
+        }
         g2d.dispose();
     }
 
@@ -112,8 +116,18 @@ public class ImageFrame {
     public static BufferedImage getCardImage(IRenderableCard cardDef) {
         File cropFile = MagicFileSystem.getCroppedCardImageFile(cardDef);
         if (cropFile.exists()) {
-            BufferedImage image = ImageFileIO.toImg(cropFile, MagicImages.MISSING_CARD);
-            return GraphicsUtils.scale(image, 316, 231);
+            if (cardDef.isPlaneswalker()) {
+                BufferedImage crop = GraphicsUtils.scale(ImageFileIO.toImg(cropFile, MagicImages.MISSING_CARD),320,234);
+                BufferedImage blend = ResourceManager.newFrame(ResourceManager.getPlaneswalkerImageBlend);
+                BufferedImage image = Frame.getBlendedFrame(new BufferedImage(320,234,BufferedImage.TYPE_INT_ARGB),blend,crop);
+                return image;
+            } else {
+                BufferedImage image = ImageFileIO.toImg(cropFile, MagicImages.MISSING_CARD);
+                return GraphicsUtils.scale(image, 316, 231);
+            }
+        }
+        if (cardDef.isPlaneswalker()){
+            return buildPlaneswalkerImage(cardDef);
         }
         return buildDefaultImage(cardDef);
     }
@@ -121,6 +135,14 @@ public class ImageFrame {
 
     private static BufferedImage buildDefaultImage(IRenderableCard cardDef) {
         return getCompositeImage(getDefaultBackground(cardDef), getDefaultSymbol(cardDef));
+    }
+
+    private static BufferedImage buildPlaneswalkerImage(IRenderableCard cardDef) {
+        BufferedImage background = GraphicsUtils.scale(getDefaultBackground(cardDef),320,234);
+        BufferedImage blend = ResourceManager.newFrame(ResourceManager.getPlaneswalkerImageBlend);
+        BufferedImage symbol = GraphicsUtils.scale(getDefaultSymbol(cardDef),320,234);
+        BufferedImage image = Frame.getBlendedFrame(new BufferedImage(320,234,BufferedImage.TYPE_INT_ARGB),blend,background);
+        return getCompositeImage(image,symbol);
     }
 
     static BufferedImage getCompositeImage(BufferedImage baseFrame, BufferedImage topFrame) {

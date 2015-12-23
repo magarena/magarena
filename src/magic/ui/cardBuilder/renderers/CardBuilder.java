@@ -62,6 +62,7 @@ public class CardBuilder {
 
     private static BufferedImage makePlaneswalker(IRenderableCard cardDef) {
         BufferedImage cardImage = Frame.getPlaneswalkerFrameType(cardDef);
+        ImageFrame.drawImage(cardImage, cardDef);
         OracleText.drawPlaneswalkerOracleText(cardImage, cardDef);
         PTFrame.drawLoyaltyPanels(cardImage, cardDef);
         TitleFrame.drawCardName(cardImage, cardDef);
