@@ -968,7 +968,7 @@ public enum MagicRuleEventAction {
         }
     },
     Pump(
-        ARG.PERMANENTS + " get(s)? (an additional )?(?<pt>[0-9+]+/[0-9+]+) until end of turn( for each " + ARG.WORDRUN + ")?(\\.|,)?",
+        ARG.PERMANENTS + " get(s)? (an additional )?(?<pt>[X0-9+]+/[X0-9+]+) until end of turn( for each " + ARG.WORDRUN + ")?(\\.|,)?",
         MagicTargetHint.Positive,
         MagicPumpTargetPicker.create(),
         MagicTiming.Pump,
@@ -977,14 +977,16 @@ public enum MagicRuleEventAction {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final String[] pt = matcher.group("pt").replace("+","").split("/");
-            final int power = Integer.parseInt(pt[0]);
-            final int toughness = Integer.parseInt(pt[1]);
+            final MagicAmount powerCounter = MagicAmountParser.build(pt[0]);
+            final MagicAmount toughnessCounter = MagicAmountParser.build(pt[1]);
             final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
             final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     final int amount = count.getAmount(event);
+                    final int power = powerCounter.getAmount(event);
+                    final int toughness = toughnessCounter.getAmount(event);
                     if (count != MagicAmountFactory.One) {
                         game.logAppendMessage(event.getPlayer(), "("+amount+")");
                     }
@@ -996,7 +998,7 @@ public enum MagicRuleEventAction {
         }
     },
     Weaken(
-        ARG.PERMANENTS + " get(s)? (?<pt>[0-9-]+/[0-9-]+) until end of turn( for each " + ARG.WORDRUN + ")?(\\.|,)?",
+        ARG.PERMANENTS + " get(s)? (?<pt>[X0-9-]+/[X0-9-]+) until end of turn( for each " + ARG.WORDRUN + ")?(\\.|,)?",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Weaken"
@@ -1014,7 +1016,7 @@ public enum MagicRuleEventAction {
         }
     },
     ModPT(
-        ARG.PERMANENTS + " get(s)? (?<pt>[0-9+-]+/[0-9+-]+) until end of turn( for each " + ARG.WORDRUN + ")?(\\.|,)?",
+        ARG.PERMANENTS + " get(s)? (?<pt>[X0-9+-]+/[X0-9+-]+) until end of turn( for each " + ARG.WORDRUN + ")?(\\.|,)?",
         MagicTiming.Removal,
         "Pump"
     ) {
@@ -1024,19 +1026,21 @@ public enum MagicRuleEventAction {
         }
     },
     PumpGain(
-        ARG.PERMANENTS + " get(s)? (?<pt>[0-9+]+/[0-9+]+) and (gain(s)?|is) (?<ability>.+) until end of turn(\\.)?",
+        ARG.PERMANENTS + " get(s)? (?<pt>[X0-9+]+/[X0-9+]+) and (gain(s)?|is) (?<ability>.+) until end of turn(\\.)?",
         MagicTargetHint.Positive
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final String[] pt = matcher.group("pt").replace("+","").split("/");
-            final int power = Integer.parseInt(pt[0]);
-            final int toughness = Integer.parseInt(pt[1]);
+            final MagicAmount powerCounter = MagicAmountParser.build(pt[0]);
+            final MagicAmount toughnessCounter = MagicAmountParser.build(pt[1]);
             final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
             final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    final int power = powerCounter.getAmount(event);
+                    final int toughness = toughnessCounter.getAmount(event);
                     for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
                         game.doAction(new ChangeTurnPTAction(it,power,toughness));
                         game.doAction(new GainAbilityAction(it,abilityList));
@@ -1058,7 +1062,7 @@ public enum MagicRuleEventAction {
         }
     },
     PumpGainAlt(
-        "until end of turn, " + ARG.PERMANENTS + " get(s)? (?<pt>[0-9+]+/[0-9+]+) and (gain(s)?|is) (?<ability>.+)(\\.)?",
+        "until end of turn, " + ARG.PERMANENTS + " get(s)? (?<pt>[X0-9+]+/[X0-9+]+) and (gain(s)?|is) (?<ability>.+)(\\.)?",
         MagicTargetHint.Positive
     ) {
         @Override
@@ -1079,7 +1083,7 @@ public enum MagicRuleEventAction {
         }
     },
     PumpGainCan(
-        ARG.PERMANENTS + " get(s)? (?<pt>[0-9+]+/[0-9+]+) (until end of turn and|and) (?<ability>can('t)? .+) this turn(\\.|,)?",
+        ARG.PERMANENTS + " get(s)? (?<pt>[X0-9+]+/[X0-9+]+) (until end of turn and|and) (?<ability>can('t)? .+) this turn(\\.|,)?",
         MagicTargetHint.Positive
     ) {
         @Override
@@ -1100,7 +1104,7 @@ public enum MagicRuleEventAction {
         }
     },
     ModPTGain(
-        ARG.PERMANENTS + " get(s)? (?<pt>[0-9+-]+/[0-9+-]+) and gains (?<ability>.+) until end of turn(\\.|,)?",
+        ARG.PERMANENTS + " get(s)? (?<pt>[X0-9+-]+/[X0-9+-]+) and gains (?<ability>.+) until end of turn(\\.|,)?",
         MagicTiming.Removal
     ) {
         @Override
@@ -1113,7 +1117,7 @@ public enum MagicRuleEventAction {
         }
     },
     ModPTGainCan(
-        ARG.PERMANENTS + " get(s)? (?<pt>[0-9+-]+/[0-9+-]+) and (?<ability>can('t)? .+) this turn(\\.|,)?",
+        ARG.PERMANENTS + " get(s)? (?<pt>[X0-9+-]+/[X0-9+-]+) and (?<ability>can('t)? .+) this turn(\\.|,)?",
         MagicTiming.Removal
     ) {
         @Override
