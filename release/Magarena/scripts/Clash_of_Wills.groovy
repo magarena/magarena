@@ -2,13 +2,12 @@
     new MagicSpellCardEvent() {
         @Override
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
-            final int amount = payedCost.getX();
             return new MagicEvent(
                 cardOnStack,
                 NEG_TARGET_SPELL,
-                amount,
+                payedCost.getX(),
                 this,
-                "Counter target spell\$ unless its controller pays {X}. (X=${amount})"
+                "Counter target spell\$ unless its controller pays {X}. (X=RN)"
             );
         }
         @Override
