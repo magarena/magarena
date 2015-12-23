@@ -373,20 +373,24 @@ public class MagicTargetChoice extends MagicChoice {
     public MagicTargetChoice(final String aTargetDescription) {
         this(MagicTargetHint.None, aTargetDescription);
     }
+        
+    private static String decapitalize(final String text) {
+        return Character.toLowerCase(text.charAt(0)) + text.substring(1);
+    }
     
     public MagicTargetChoice(final MagicTargetHint aTargetHint, final String aTargetDescription) {
-        super("Choose " + aTargetDescription + '.');
+        super("Choose " + decapitalize(aTargetDescription) + '.');
         targetHint        = aTargetHint;
-        targetDescription = aTargetDescription;
+        targetDescription = decapitalize(aTargetDescription);
 
-        if (targetDescription.matches("(T|t)arget .*")) {
-            targetFilter = MagicTargetFilterFactory.single(targetDescription.replaceFirst("(T|t)arget ", ""));
+        if (targetDescription.matches("target .*")) {
+            targetFilter = MagicTargetFilterFactory.single(targetDescription.replaceFirst("target ", ""));
             targeted     = true;
-        } else if (targetDescription.matches("(A|a)nother target .*")) {
-            targetFilter = new MagicOtherPermanentTargetFilter(MagicTargetFilterFactory.Permanent(targetDescription.replaceFirst("(A|a)nother target ", "")));
+        } else if (targetDescription.matches("another target .*")) {
+            targetFilter = new MagicOtherPermanentTargetFilter(MagicTargetFilterFactory.Permanent(targetDescription.replaceFirst("another target ", "")));
             targeted     = true;
-        } else if (targetDescription.matches("(A|a)nother .*")) {
-            targetFilter = new MagicOtherPermanentTargetFilter(MagicTargetFilterFactory.Permanent(targetDescription.replaceFirst("(A|a)nother ", "")));
+        } else if (targetDescription.matches("another .*")) {
+            targetFilter = new MagicOtherPermanentTargetFilter(MagicTargetFilterFactory.Permanent(targetDescription.replaceFirst("another ", "")));
             targeted     = false;
         } else if (targetDescription.matches("a(n)? .*")) {
             targetFilter = MagicTargetFilterFactory.single(targetDescription.replaceFirst("a(n)? ", ""));
