@@ -356,13 +356,14 @@ public class MagicTargetChoice extends MagicChoice {
     
     private static MagicTargetChoice Other(final String aTargetDescription, final MagicPermanent permanent, final MagicTargetHint hint) {
         final MagicTargetChoice withoutOther = new MagicTargetChoice(aTargetDescription);
+        final String compactDescription = aTargetDescription.replaceFirst("a ","");
         return new MagicTargetChoice(
             new MagicOtherPermanentTargetFilter(
                 withoutOther.getPermanentFilter(),
                 permanent
             ),
             hint,
-            "another " + aTargetDescription
+            "another " + compactDescription
         );
     }
     
