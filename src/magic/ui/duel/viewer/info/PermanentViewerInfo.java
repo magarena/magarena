@@ -287,4 +287,8 @@ public class PermanentViewerInfo {
         }
         return linked;
     }
+
+    public boolean isEqualTo(CardViewerInfo cardInfo) {
+         return magicCardId == cardInfo.getId();
+    }
 }

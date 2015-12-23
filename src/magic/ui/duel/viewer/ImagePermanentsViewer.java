@@ -222,16 +222,16 @@ public class ImagePermanentsViewer extends JPanel {
 
     ImagePermanentViewer getViewer(CardViewerInfo cardInfo) {
         for (final ImagePermanentViewer viewer : viewers) {
-            if (viewer.permanentInfo.magicCardId == cardInfo.getId()) {
+            if (viewer.permanentInfo.isEqualTo(cardInfo)) {
                 return viewer;
             }
             for (final PermanentViewerInfo info : viewer.permanentInfo.linked) {
-                if (info.permanent.getCard().getId() == cardInfo.getId()) {
+                if (info.isEqualTo(cardInfo)) {
                     return viewer;
                 }
             }
             for (final PermanentViewerInfo info : viewer.permanentInfo.blockers) {
-                if (info.permanent.getCard().getId() == cardInfo.getId()) {
+                if (info.isEqualTo(cardInfo)) {
                     return viewer;
                 }
             }
