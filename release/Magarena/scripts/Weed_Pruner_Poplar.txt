@@ -6,6 +6,6 @@ type=Creature
 subtype=Treefolk,Assassin
 cost={4}{B}
 pt=3/3
+ability=At the beginning of your upkeep, another target creature gets -1/-1 until end of turn.
 timing=main
-requires_groovy_code
 oracle=At the beginning of your upkeep, target creature other than Weed-Pruner Poplar gets -1/-1 until end of turn.
