@@ -201,6 +201,18 @@ public class ResourceManager {
     public static final BufferedImage multiPlaneswalkerTransform = getFrame("transform/planeswalker/mcard.jpg");
     public static final BufferedImage multiPlaneswalkerHidden = getFrame("transform/planeswalker/mcard2.jpg");
     public static final BufferedImage getPlaneswalkerImageBlend = getFrame("planeswalker/imageMask.png");
+    public static final BufferedImage artifactHiddenPTPanel = getPTBuffered("transform/apt2.png");
+    public static final BufferedImage colorlessHiddenPTPanel = getPTBuffered("transform/cpt2.png");
+    public static final BufferedImage whiteHiddenPTPanel = getPTBuffered("transform/wpt2.png");
+    public static final BufferedImage blueHiddenPTPanel = getPTBuffered("transform/upt2.png");
+    public static final BufferedImage blackHiddenPTPanel = getPTBuffered("transform/bpt2.png");
+    public static final BufferedImage redHiddenPTPanel = getPTBuffered("transform/rpt2.png");
+    public static final BufferedImage greenHiddenPTPanel = getPTBuffered("transform/gpt2.png");
+    public static final BufferedImage multiHiddenPTPanel = getPTBuffered("transform/mpt2.png");
+    public static final BufferedImage sunSymbol = getSymbolBuffered("transform/sun_circle.png");
+    public static final BufferedImage moonSymbol = getSymbolBuffered("transform/night_circle.png");
+    public static final BufferedImage planeswalkerTypeSymbol = getSymbolBuffered("transform/planeswalker.png");
+    public static final BufferedImage sparkSymbol = getSymbolBuffered("transform/ccorner.png");
 
 
 
@@ -276,6 +288,17 @@ public class ResourceManager {
             throw new RuntimeException(ex);
         }
     }
+
+    public static BufferedImage getSymbolBuffered(String imageName) {
+        String fName = "/cardbuilder/frames/" + imageName;
+        try (final InputStream is = getJarResourceStream(fName)) {
+            BufferedImage image = GraphicsUtils.getOptimizedImage(ImageIO.read(is));
+            return GraphicsUtils.scale(image, 31, 31);
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        }
+    }
+
 
     public static BufferedImage getLoyaltyBuffered(String imageName) {
         String fName = "/cardbuilder/frames/" + imageName;

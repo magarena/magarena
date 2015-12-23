@@ -85,4 +85,23 @@ public class TypeLine {
     }
 
 
+    public static void drawHiddenCardTypeLine(BufferedImage cardImage, IRenderableCard cardDef) {
+        String cardType = getTypeLine(cardDef);
+        if (!cardType.isEmpty()) {
+            Graphics2D g2d = cardImage.createGraphics();
+            g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+            g2d.setRenderingHint(RenderingHints.KEY_FRACTIONALMETRICS, RenderingHints.VALUE_FRACTIONALMETRICS_ON);
+            g2d.setColor(Color.WHITE);
+            g2d.setFont(getFontSize(cardType));
+            FontMetrics metrics = g2d.getFontMetrics();
+            int yPos;
+            if (cardDef.isToken()) {
+                yPos = cardDef.hasText() ? 356 : 431;
+            } else {
+                yPos = 298;
+            }
+            g2d.drawString(cardType, 32, yPos + metrics.getAscent() + padding);// 298+Plus height of text
+            g2d.dispose();
+        }
+    }
 }

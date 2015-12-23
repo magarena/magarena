@@ -54,15 +54,7 @@ public class TitleFrame {
     }
 
     private static List<MagicIcon> getManaCost(IRenderableCard cardDef) {
-        if (cardDef.hasType(MagicType.Land)) {
-            return null;
-        }
-        if (cardDef.isDoubleFaced() && cardDef.isHidden()) {
-            return null;
-        }
-        else {
-            return cardDef.getCost().getIcons();
-        }
+        return cardDef.isDoubleFaced() && cardDef.isHidden() || cardDef.hasType(MagicType.Land) ? null : cardDef.getCost().getIcons();
     }
 
     static void drawCardName(BufferedImage cardImage, IRenderableCard cardDef) {
@@ -91,4 +83,27 @@ public class TitleFrame {
         }
     }
 
+    static void drawTransformCardName(BufferedImage cardImage, IRenderableCard cardDef) {
+        String cardName = cardDef.getName();
+        if (!cardName.isEmpty()) {
+            Graphics2D g2d = cardImage.createGraphics();
+            g2d.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
+            g2d.setRenderingHint(RenderingHints.KEY_FRACTIONALMETRICS, RenderingHints.VALUE_FRACTIONALMETRICS_ON);
+            if (cardDef.isHidden()) {
+                g2d.setColor(Color.WHITE);
+                g2d.setFont(cardNameFont);
+            } else {
+                g2d.setColor(Color.BLACK);
+                g2d.setFont(cardNameFont);
+            }
+            FontMetrics metrics = g2d.getFontMetrics(); //to allow calculation of Ascent + length
+            int xPos = 56;
+            int yPos = 28;
+            if (cardDef.isPlaneswalker()) {
+                yPos = 20;
+            }
+            g2d.drawString(cardName, xPos, yPos + metrics.getAscent());
+            g2d.dispose();
+        }
+    }
 }

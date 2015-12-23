@@ -11,6 +11,9 @@ public class CardBuilder {
 
     public static BufferedImage getCardBuilderImage(IRenderableCard cardDef) {
         //Frame type hierarchy may need adjusting
+        if (cardDef.isDoubleFaced() && !cardDef.isPlaneswalker()) {
+            return makeTransform(cardDef);
+        }
         if (cardDef.hasType(MagicType.Planeswalker)) {
             return makePlaneswalker(cardDef);
         }
@@ -23,13 +26,27 @@ public class CardBuilder {
         if (cardDef.isFlipCard()) {
             return makeFlipCard(cardDef);
         }
-        if (cardDef.isDoubleFaced()) {
-            return makeDoubleFacedCard(cardDef);
-        }
         if (cardDef.hasAbility(MagicAbility.Devoid)) {
             return makeDevoidCard(cardDef);
         }
         return makeBasicCard(cardDef);
+    }
+
+    private static BufferedImage makeTransform(IRenderableCard cardDef) {
+        BufferedImage cardImage = Frame.getTransformFrameType(cardDef);
+        if (cardDef.isHidden()){
+            PTFrame.drawHiddenPTPanel(cardImage, cardDef);
+            TypeLine.drawHiddenCardTypeLine(cardImage, cardDef);
+        } else {
+            PTFrame.drawPTPanel(cardImage, cardDef);
+            TypeLine.drawCardTypeLine(cardImage, cardDef);
+        }
+        TitleFrame.drawTransformCardName(cardImage, cardDef);
+        ImageFrame.drawImage(cardImage, cardDef);
+        TitleFrame.drawManaCost(cardImage, cardDef);
+        PTFrame.drawTransformSymbol(cardImage, cardDef);
+        OracleText.drawOracleText(cardImage, cardDef);
+        return trimImage(cardImage);
     }
 
     private static BufferedImage makeLeveller(IRenderableCard cardDef) {
@@ -41,10 +58,6 @@ public class CardBuilder {
         TitleFrame.drawManaCost(cardImage, cardDef);
         TypeLine.drawCardTypeLine(cardImage, cardDef);
         return trimImage(cardImage);
-    }
-
-    private static BufferedImage makeDoubleFacedCard(IRenderableCard cardDef) {
-        return makeBasicCard(cardDef);
     }
 
     private static BufferedImage makeFlipCard(IRenderableCard cardDef) {

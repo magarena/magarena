@@ -258,7 +258,7 @@ public class OracleText {
             //get+draw measured length
             TextLayout layout = lineMeasurer.nextLayout(boxWidth, limit, false);
             posY += layout.getAscent();
-            layout.draw(g2d, (float) leftPadding, posY);
+            layout.draw(g2d, leftPadding, posY);
 
             //add extra space between paragraphs
             if (newParagraph) {

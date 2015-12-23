@@ -140,6 +140,23 @@ public class PTFrame {
         }
     }
 
+    private static BufferedImage getHiddenPTPanel(MagicColor color) {
+        switch (color) {
+            case White:
+                return ResourceManager.whiteHiddenPTPanel;
+            case Blue:
+                return ResourceManager.blueHiddenPTPanel;
+            case Black:
+                return ResourceManager.blackHiddenPTPanel;
+            case Red:
+                return ResourceManager.redHiddenPTPanel;
+            case Green:
+                return ResourceManager.greenHiddenPTPanel;
+            default:
+                return ResourceManager.colorlessHiddenPTPanel;
+        }
+    }
+
     private static BufferedImage getPTPanelImage(IRenderableCard cardDef) {
         if (cardDef.hasAbility(MagicAbility.Devoid)) {
             return ResourceManager.colorlessPTPanel;
@@ -160,6 +177,28 @@ public class PTFrame {
             return ResourceManager.artifactPTPanel;
         }
         return ResourceManager.colorlessPTPanel;
+    }
+
+    private static BufferedImage getHiddenPTPanelImage(IRenderableCard cardDef) {
+        if (cardDef.hasAbility(MagicAbility.Devoid)) {
+            return ResourceManager.colorlessHiddenPTPanel;
+        }
+        if (cardDef.isMulti()) {
+            if (cardDef.isHybrid() || cardDef.isToken() && cardDef.getNumColors() == 2) {
+                return ResourceManager.colorlessHiddenPTPanel; //Hybrid cards use colorless PT panel and banners
+            } else {
+                return ResourceManager.multiHiddenPTPanel;
+            }
+        }
+        for (MagicColor color : MagicColor.values()) {
+            if (cardDef.hasColor(color)) {
+                return getHiddenPTPanel(color);
+            }
+        }
+        if (cardDef.hasType(MagicType.Artifact)) {
+            return ResourceManager.artifactHiddenPTPanel;
+        }
+        return ResourceManager.colorlessHiddenPTPanel;
     }
 
     private static String getPTText(IRenderableCard cardDef) {
@@ -202,5 +241,50 @@ public class PTFrame {
             }
         }
         return costs;
+    }
+
+    static void drawHiddenPTPanel(BufferedImage cardImage, IRenderableCard cardDef) {
+        String ptText = getPTText(cardDef);
+
+        if (!ptText.isEmpty()) {
+            BufferedImage ptImage = getHiddenPTPanelImage(cardDef);
+            Graphics2D g2d = cardImage.createGraphics();
+            g2d.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
+            g2d.setRenderingHint(RenderingHints.KEY_FRACTIONALMETRICS, RenderingHints.VALUE_FRACTIONALMETRICS_ON);
+            g2d.setColor(Color.WHITE);
+            FontRenderContext frc2 = g2d.getFontRenderContext();
+
+            g2d.drawImage(ptImage, 273, 466, null);
+
+            //draw ptText
+            Rectangle2D box = new Rectangle(286, 469, 60, 28); //ptText dimensions (Can't use ptPanel due to shadow distorting size)
+            Point centre = new Point((int) box.getCenterX(), (int) box.getCenterY()); //Centre of box
+
+
+            TextLayout layout;
+            if (ptText.length() >= 6) { //power or toughness of 100+
+                layout = new TextLayout(ptText, cardPTFontSmall, frc2);
+            } else {
+                layout = new TextLayout(ptText, cardPTFont, frc2);
+            }
+            Point textCentre = new Point((int) layout.getBounds().getWidth() / 2, (int) layout.getBounds().getHeight() / 2); //Centre of text
+
+            layout.draw(g2d, (float) centre.getX() - (float) textCentre.getX(), (float) centre.getY() + (float) textCentre.getY());
+
+            g2d.dispose();
+        }
+    }
+
+    static void drawTransformSymbol(BufferedImage cardImage, IRenderableCard cardDef){
+        Graphics2D g2d = cardImage.createGraphics();
+        if (cardDef.isHidden()) {
+            BufferedImage typeSymbol = ResourceManager.moonSymbol;
+            g2d.drawImage(typeSymbol, 19, 25, null);
+        } else {
+            BufferedImage typeSymbol = ResourceManager.sunSymbol;
+            g2d.drawImage(typeSymbol, 19, 25, null);
+        }
+
+        g2d.dispose();
     }
 }
