@@ -18,7 +18,6 @@ import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
-import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
@@ -30,6 +29,7 @@ import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfiles;
 import magic.ui.duel.viewer.ImageBattlefieldViewer;
 import magic.ui.duel.viewer.ImageCardListViewer;
+import magic.ui.duel.viewer.info.CardViewerInfo;
 import magic.ui.widget.ZoneBackgroundLabel;
 import net.miginfocom.swing.MigLayout;
 
@@ -243,22 +243,22 @@ public final class DuelPanel extends JPanel {
         sidebarPanel.doFlashLibraryZoneButton(aPlayer);
     }
 
-    public void highlightCard(MagicCard card, boolean b) {
-        switch (card.getLocation()) {
+    public void highlightCard(CardViewerInfo cardInfo, boolean b) {
+        switch (cardInfo.getMagicCard().getLocation()) {
             case Battlefield:
-                battlefieldPanel.highlightCard(card.getId(), b);
+                battlefieldPanel.highlightCard(cardInfo.getMagicCard().getId(), b);
                 break;
             case Graveyard:
-                sidebarPanel.doHighlightPlayerZone(card, MagicPlayerZone.GRAVEYARD, b);
+                sidebarPanel.doHighlightPlayerZone(cardInfo.getMagicCard(), MagicPlayerZone.GRAVEYARD, b);
                 break;
             case Exile:
-                sidebarPanel.doHighlightPlayerZone(card, MagicPlayerZone.EXILE, b);
+                sidebarPanel.doHighlightPlayerZone(cardInfo.getMagicCard(), MagicPlayerZone.EXILE, b);
                 break;
             case OwnersHand:
-                sidebarPanel.doHighlightPlayerZone(card, MagicPlayerZone.HAND, b);
+                sidebarPanel.doHighlightPlayerZone(cardInfo.getMagicCard(), MagicPlayerZone.HAND, b);
                 break;
             case OwnersLibrary:
-                sidebarPanel.doHighlightPlayerZone(card, MagicPlayerZone.LIBRARY, b);
+                sidebarPanel.doHighlightPlayerZone(cardInfo.getMagicCard(), MagicPlayerZone.LIBRARY, b);
                 break;
         }
     }

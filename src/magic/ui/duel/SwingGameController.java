@@ -1061,7 +1061,7 @@ public class SwingGameController implements IUIGameController {
         if (magicCardId > 0) {
             final CardViewerInfo cardInfo = gameViewerInfo.getCardViewerInfo(magicCardId);
             if (cardInfo.isNotEmpty()) {
-                gamePanel.highlightCard(cardInfo.getMagicCard(), b);
+                gamePanel.highlightCard(cardInfo, b);
             } else {
                 System.err.printf("Highlight failed! MagicCard #%d not found!\n", magicCardId);
             }
