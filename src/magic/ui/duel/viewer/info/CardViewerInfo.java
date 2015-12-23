@@ -11,30 +11,30 @@ import magic.utility.MagicSystem;
 
 public class CardViewerInfo {
 
-    private final MagicCard card;
+    private final MagicCard magicCard;
     private final MagicCardDefinition faceupCardDef;
     private final MagicObject magicObject;
 
     CardViewerInfo(final MagicCard aCard) {
-        this.card = aCard;
+        this.magicCard = aCard;
         this.magicObject = aCard;
-        this.faceupCardDef = card.getCardDefinition();
+        this.faceupCardDef = magicCard.getCardDefinition();
     }
 
     CardViewerInfo(MagicPermanent aPerm) {
-        this.card = aPerm.getCard();
+        this.magicCard = aPerm.getCard();
         this.magicObject = aPerm;
         this.faceupCardDef = getFaceupCardDef(aPerm);
     }
 
     CardViewerInfo(MagicCardOnStack aCard) {
-        this.card = aCard.getCard();
+        this.magicCard = aCard.getCard();
         this.faceupCardDef = getFaceupCardDef(aCard);
         this.magicObject = aCard;
     }
 
     public boolean isEmpty() {
-        return card == MagicCard.NONE;
+        return magicCard == MagicCard.NONE;
     }
        
     public MagicCardDefinition getFaceupCardDef() {
@@ -42,7 +42,7 @@ public class CardViewerInfo {
     }
 
     public MagicCard getMagicCard() {
-        return card;
+        return magicCard;
     }
 
     public MagicObject getMagicObject() {
