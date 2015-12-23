@@ -163,7 +163,7 @@ public class ZoneToggleButton extends JToggleButton {
     }
 
     private void doAlertAnimation(int loopCount) {
-        if (MagicAnimations.isOn(AnimationFx.ZONE_BUTTON_ALERT)) {
+        if (MagicAnimations.isOn(AnimationFx.ZBUTTON_PULSE)) {
             timeline1 = new Timeline();
             timeline1.setDuration(200);
             timeline1.addPropertyToInterpolate(
