@@ -10,7 +10,6 @@ import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicPlayer;
-import magic.ui.CachedImagesProvider;
 import magic.ui.MagicImages;
 import magic.ui.duel.viewer.info.CardViewerInfo;
 import org.pushingpixels.trident.Timeline;
@@ -26,8 +25,6 @@ abstract class CardAnimation extends MagicAnimation {
 
     protected static final Color SHADOW_COLOR = new Color(0, 0, 0, 100);
 
-    private static final ImageScaler backImageScaler = new ImageScaler(MagicImages.BACK_IMAGE);
-
     private Timeline growTimeline;
     private Timeline flipTimeline;
     private Timeline shrinkTimeline;
@@ -38,7 +35,8 @@ abstract class CardAnimation extends MagicAnimation {
 
     private final GameLayoutInfo layoutInfo;
     private final int playerIndex;
-    private ImageScaler imageScaler;
+    private ImageScaler frontImageScaler;
+    private ImageScaler backImageScaler;
     private Dimension previewSize;
     private Rectangle imageRect = new Rectangle();
     private final MagicPlayer player;
@@ -69,8 +67,8 @@ abstract class CardAnimation extends MagicAnimation {
             g.setColor(SHADOW_COLOR);
             g.fillRect(imageRect.x + SHADOW,
                 imageRect.y + SHADOW,
-                imageScaler.getImage().getWidth(null),
-                imageScaler.getImage().getHeight(null)
+                frontImageScaler.getImage().getWidth(null),
+                frontImageScaler.getImage().getHeight(null)
             );
         }
     }
@@ -93,7 +91,7 @@ abstract class CardAnimation extends MagicAnimation {
         if (isCardFlipping()) {
             final int w = Math.abs((int)(Math.cos(flipPosition * Math.PI) * imageRect.width));
             g.drawImage(
-                flipPosition > 0.5f ? imageScaler.getImage() : backImageScaler.getImage(),
+                flipPosition > 0.5f ? frontImageScaler.getImage() : backImageScaler.getImage(),
                 imageRect.x + ((imageRect.width - w) / 2),
                 imageRect.y,
                 w,
@@ -102,7 +100,7 @@ abstract class CardAnimation extends MagicAnimation {
             );
         } else {
             g.drawImage(
-                imageScaler.getImage(),
+                frontImageScaler.getImage(),
                 imageRect.x,
                 imageRect.y,
                 getCanvas()
@@ -151,7 +149,7 @@ abstract class CardAnimation extends MagicAnimation {
     public void setGrowRectangle(final Rectangle rect) {
         assert !SwingUtilities.isEventDispatchThread();
         imageRect = rect;
-        imageScaler.setSize(rect.getSize(), growTimeline.getTimelinePosition() > 0.96f);
+        frontImageScaler.setSize(rect.getSize(), growTimeline.getTimelinePosition() > 0.96f);
         getCanvas().repaint();
     }
 
@@ -185,7 +183,7 @@ abstract class CardAnimation extends MagicAnimation {
     public void setShrinkRectangle(final Rectangle rect) {
         assert !SwingUtilities.isEventDispatchThread();
         imageRect = rect;
-        imageScaler.setLQSize(rect.getSize());
+        frontImageScaler.setLQSize(rect.getSize());
         getCanvas().repaint();
     }
 
@@ -262,8 +260,9 @@ abstract class CardAnimation extends MagicAnimation {
         isRunning.set(true);
 
         flipPosition = 0f;
-        imageScaler = new ImageScaler(CachedImagesProvider.getInstance().getImage(cardInfo.getCardDefinition(), 0, true));
-        this.previewSize = getCardPreviewSize(imageScaler.getImage());
+        frontImageScaler = new ImageScaler(cardInfo.getImage());
+        backImageScaler = new ImageScaler(cardInfo.getBackFaceImage());
+        this.previewSize = getCardPreviewSize(frontImageScaler.getImage());
 
         playTimelineScenario();
     }
