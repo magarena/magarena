@@ -13,6 +13,7 @@ import magic.model.MagicPlayerState;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
+import magic.model.stack.MagicCardOnStack;
 import magic.model.phase.MagicPhaseType;
 import magic.model.target.MagicOtherPermanentTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
@@ -827,6 +828,13 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
             final MagicPermanent permanent=(MagicPermanent)source;
             return permanent.getCardDefinition().hasType(MagicType.Artifact) &&
                     permanent.getCardDefinition().hasType(MagicType.Creature)==false;
+        }
+    };
+    
+    public static MagicCondition WAS_KICKED = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicCardOnStack spell=(MagicCardOnStack)source;
+            return spell.isKicked();
         }
     };
 

@@ -510,6 +510,11 @@ public enum MagicConditionParser {
             return MagicCondition.CAST_FROM_HAND;
         }
     },
+    WasKicked("SN was kicked") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.WAS_KICKED;
+        }
+    },
     ;
 
     private final Pattern pattern;
