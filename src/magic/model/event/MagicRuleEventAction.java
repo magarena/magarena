@@ -976,7 +976,7 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final String[] pt = matcher.group("pt").replace("+","").split("/");
+            final String[] pt = ARG.ptStr(matcher);
             final MagicAmount powerCounter = MagicAmountParser.build(pt[0]);
             final MagicAmount toughnessCounter = MagicAmountParser.build(pt[1]);
             final MagicAmount count = MagicAmountParser.build(ARG.wordrun(matcher));
@@ -1009,10 +1009,9 @@ public enum MagicRuleEventAction {
         }
         @Override
         public MagicTargetPicker<?> getPicker(final Matcher matcher) {
-            final String[] args = matcher.group("pt").replace('+','0').split("/");
-            final int p = -Integer.parseInt(args[0]);
-            final int t = -Integer.parseInt(args[1]);
-            return new MagicWeakenTargetPicker(p, t);
+            final String[] pt = ARG.ptStr(matcher);
+            final MagicAmount toughnessCounter = MagicAmountParser.build(pt[1]);
+            return new MagicWeakenTargetPicker(toughnessCounter);
         }
     },
     ModPT(
@@ -1031,7 +1030,7 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final String[] pt = matcher.group("pt").replace("+","").split("/");
+            final String[] pt = ARG.ptStr(matcher);
             final MagicAmount powerCounter = MagicAmountParser.build(pt[0]);
             final MagicAmount toughnessCounter = MagicAmountParser.build(pt[1]);
             final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
@@ -1165,7 +1164,7 @@ public enum MagicRuleEventAction {
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(matcher.group("type"));
             if (counterType.getName().contains("-")) {
                 final String[] pt = counterType.getName().split("/");
-                return new MagicWeakenTargetPicker(Integer.parseInt(pt[0]),Integer.parseInt(pt[1]));
+                return new MagicWeakenTargetPicker(-Integer.parseInt(pt[0]),-Integer.parseInt(pt[1]));
             } else if (counterType.getName().contains("+")) {
                 return MagicPumpTargetPicker.create();
             } else {

@@ -98,6 +98,9 @@ public class ARG {
         final String[] pt = m.group("pt").replace("+","").split("/");
         return new int[]{Integer.parseInt(pt[0]), Integer.parseInt(pt[1])};
     }
+    public static String[] ptStr(final Matcher m) {
+        return m.group("pt").replace("+","").split("/");
+    }
     public static MagicPowerToughness mpt(final Matcher m) {
         final String[] pt = m.group("pt").replace("+","").split("/");
         return new MagicPowerToughness(Integer.parseInt(pt[0]), Integer.parseInt(pt[1]));
