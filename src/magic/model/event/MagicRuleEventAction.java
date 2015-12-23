@@ -967,7 +967,7 @@ public enum MagicRuleEventAction {
         }
     },
     Pump(
-        ARG.PERMANENTS + " get(s)? (?<pt>[0-9+]+/[0-9+]+) until end of turn( for each " + ARG.WORDRUN + ")?(\\.|,)?",
+        ARG.PERMANENTS + " get(s)? (an additional )?(?<pt>[0-9+]+/[0-9+]+) until end of turn( for each " + ARG.WORDRUN + ")?(\\.|,)?",
         MagicTargetHint.Positive,
         MagicPumpTargetPicker.create(),
         MagicTiming.Pump,
