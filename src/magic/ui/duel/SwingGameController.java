@@ -1,5 +1,8 @@
 package magic.ui.duel;
 
+import magic.ui.duel.viewer.info.PlayerViewerInfo;
+import magic.ui.duel.viewer.info.CardViewerInfo;
+import magic.ui.duel.viewer.info.GameViewerInfo;
 import java.awt.Dimension;
 import java.awt.KeyEventDispatcher;
 import java.awt.KeyboardFocusManager;

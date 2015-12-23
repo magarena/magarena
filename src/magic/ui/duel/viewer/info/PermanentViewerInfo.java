@@ -1,4 +1,4 @@
-package magic.ui.duel;
+package magic.ui.duel.viewer.info;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -72,7 +72,7 @@ public class PermanentViewerInfo {
     public final List<PermanentViewerInfo> blockers;
     public final SortedSet<PermanentViewerInfo> linked;
 
-    public PermanentViewerInfo(final MagicGame game,final MagicPermanent permanent) {
+    PermanentViewerInfo(final MagicGame game,final MagicPermanent permanent) {
         this.permanent=permanent;
         cardDefinition=permanent.getCardDefinition();
         name=permanent.getName();

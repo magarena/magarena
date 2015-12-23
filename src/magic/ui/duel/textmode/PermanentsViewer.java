@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 import javax.swing.border.Border;
 import magic.ui.duel.SwingGameController;
 import magic.ui.IChoiceViewer;
-import magic.ui.duel.PermanentViewerInfo;
+import magic.ui.duel.viewer.info.PermanentViewerInfo;
 import magic.ui.IUpdatable;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;

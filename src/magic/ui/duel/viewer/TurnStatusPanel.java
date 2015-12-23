@@ -6,7 +6,7 @@ import javax.swing.JPanel;
 import magic.model.phase.MagicPhaseType;
 import magic.ui.utility.MagicStyle;
 import magic.ui.duel.SwingGameController;
-import magic.ui.duel.GameViewerInfo;
+import magic.ui.duel.viewer.info.GameViewerInfo;
 import magic.ui.theme.Theme;
 import net.miginfocom.swing.MigLayout;
 

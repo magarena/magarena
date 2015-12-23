@@ -1,4 +1,4 @@
-package magic.ui.duel;
+package magic.ui.duel.viewer.info;
 
 import javax.swing.ImageIcon;
 import magic.data.MagicIcon;
@@ -20,7 +20,7 @@ public class StackViewerInfo {
     public final String description;
     public final boolean visible;
 
-    public StackViewerInfo(final MagicGame game,final MagicItemOnStack itemOnStack) {
+    StackViewerInfo(final MagicGame game,final MagicItemOnStack itemOnStack) {
         this.itemOnStack=itemOnStack;
         cardDefinition=itemOnStack.getController().isHuman() ?
             itemOnStack.getRealCardDefinition() :

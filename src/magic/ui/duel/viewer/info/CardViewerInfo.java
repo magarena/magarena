@@ -1,4 +1,4 @@
-package magic.ui.duel;
+package magic.ui.duel.viewer.info;
 
 import java.awt.image.BufferedImage;
 import magic.model.MagicCard;
@@ -15,7 +15,7 @@ public class CardViewerInfo {
     private final MagicCardDefinition faceupCardDef;
     private final MagicObject magicObject;
 
-    public CardViewerInfo(final MagicCard aCard) {
+    CardViewerInfo(final MagicCard aCard) {
         this.card = aCard;
         this.magicObject = aCard;
         this.faceupCardDef = card.getCardDefinition();
@@ -27,17 +27,21 @@ public class CardViewerInfo {
         this.faceupCardDef = getFaceupCardDef(aPerm);
     }
 
-    public CardViewerInfo(MagicCardOnStack aCard) {
+    CardViewerInfo(MagicCardOnStack aCard) {
         this.card = aCard.getCard();
         this.faceupCardDef = getFaceupCardDef(aCard);
         this.magicObject = aCard;
     }
 
+    public boolean isEmpty() {
+        return card == MagicCard.NONE;
+    }
+       
     public MagicCardDefinition getFaceupCardDef() {
         return faceupCardDef;
     }
 
-    MagicCard getMagicCard() {
+    public MagicCard getMagicCard() {
         return card;
     }
 
@@ -61,7 +65,4 @@ public class CardViewerInfo {
             : aCard.getCardDefinition();
     }
 
-    public boolean isEmpty() {
-        return card == MagicCard.NONE;
-    }
 }

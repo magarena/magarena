@@ -7,7 +7,7 @@ import javax.swing.JPanel;
 import javax.swing.border.Border;
 import magic.ui.duel.SwingGameController;
 import magic.ui.duel.PermanentFilter;
-import magic.ui.duel.PermanentViewerInfo;
+import magic.ui.duel.viewer.info.PermanentViewerInfo;
 import magic.ui.widget.TitleBar;
 
 @SuppressWarnings("serial")

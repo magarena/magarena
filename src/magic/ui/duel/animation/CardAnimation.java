@@ -13,7 +13,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicType;
 import magic.ui.CachedImagesProvider;
 import magic.ui.MagicImages;
-import magic.ui.duel.CardViewerInfo;
+import magic.ui.duel.viewer.info.CardViewerInfo;
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.TimelineScenario;
 import org.pushingpixels.trident.callback.TimelineCallbackAdapter;

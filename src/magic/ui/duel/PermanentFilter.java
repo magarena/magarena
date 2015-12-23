@@ -1,5 +1,8 @@
 package magic.ui.duel;
 
+import magic.ui.duel.viewer.info.PlayerViewerInfo;
+import magic.ui.duel.viewer.info.PermanentViewerInfo;
+import magic.ui.duel.viewer.info.GameViewerInfo;
 import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;

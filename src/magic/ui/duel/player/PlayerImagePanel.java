@@ -13,7 +13,7 @@ import magic.ui.utility.GraphicsUtils;
 import magic.ui.MagicImages;
 import magic.ui.utility.MagicStyle;
 import magic.ui.duel.CounterOverlay;
-import magic.ui.duel.PlayerViewerInfo;
+import magic.ui.duel.viewer.info.PlayerViewerInfo;
 import magic.ui.duel.animation.AnimationFx;
 import magic.ui.duel.animation.MagicAnimations;
 import magic.ui.theme.ThemeFactory;

@@ -8,9 +8,9 @@ import magic.data.GeneralConfig;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.phase.MagicPhaseType;
-import magic.ui.duel.CardViewerInfo;
+import magic.ui.duel.viewer.info.CardViewerInfo;
 import magic.ui.duel.DuelPanel;
-import magic.ui.duel.GameViewerInfo;
+import magic.ui.duel.viewer.info.GameViewerInfo;
 import magic.utility.MagicSystem;
 
 public class MagicAnimations {

@@ -37,7 +37,7 @@ import magic.model.MagicObject;
 import magic.model.MagicPermanent;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
-import magic.ui.duel.CardViewerInfo;
+import magic.ui.duel.viewer.info.CardViewerInfo;
 import magic.ui.duel.SwingGameController;
 import magic.ui.duel.animation.AnimationFx;
 import magic.ui.duel.animation.MagicAnimations;

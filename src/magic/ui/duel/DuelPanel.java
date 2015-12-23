@@ -1,5 +1,7 @@
 package magic.ui.duel;
 
+import magic.ui.duel.viewer.info.PlayerViewerInfo;
+import magic.ui.duel.viewer.info.GameViewerInfo;
 import magic.ui.duel.textmode.TextModeBattlefieldPanel;
 import magic.ui.duel.sidebar.DuelSideBarPanel;
 import java.awt.Dimension;
