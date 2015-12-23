@@ -1,15 +1,15 @@
+def choice = new MagicTargetChoice("another creature you control");
+
 [
     new EntersBattlefieldTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
-                new MagicMayChoice(
-                    MagicTargetChoice.Other("a creature you control",permanent)
-                ),
+                new MagicMayChoice(choice),
                 MagicBounceTargetPicker.create(),
                 this,
-                "PN may\$ return another creature he or she controls to its owner's hand. " +
+                "PN may\$ return another creature he or she controls\$ to its owner's hand. " +
                 "If PN doesn't, sacrifice SN."
             );
         }
