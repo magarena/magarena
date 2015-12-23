@@ -154,6 +154,54 @@ public class ResourceManager {
     public static final BufferedImage multiSymbol = getImage("multiSymbol.png");
     public static final BufferedImage planeswalkerSymbol = getImage("planeswalkerSymbol.png");
     public static final BufferedImage sorcerySymbol = getImage("sorcerySymbol.png");
+    public static final BufferedImage artifactTransform = getFrame("transform/acard.jpg");
+    public static final BufferedImage artifactHidden = getFrame("transform/acard2.jpg");
+    public static final BufferedImage colorlessTransform = getFrame("transform/ccard.jpg");
+    public static final BufferedImage colorlessHidden = getFrame("transform/ccard2.jpg");
+    public static final BufferedImage colorlessLandTransform = getFrame("transform/clcard.jpg");
+    public static final BufferedImage colorlessLandHidden = getFrame("transform/clcard2.jpg");
+    public static final BufferedImage whiteTransform = getFrame("transform/wcard.jpg");
+    public static final BufferedImage whiteHidden = getFrame("transform/wcard2.jpg");
+    public static final BufferedImage whiteLandTransform = getFrame("transform/wlcard.jpg");
+    public static final BufferedImage whiteLandHidden = getFrame("transform/wlcard2.jpg");
+    public static final BufferedImage blueTransform = getFrame("transform/ucard.jpg");
+    public static final BufferedImage blueHidden = getFrame("transform/ucard2.jpg");
+    public static final BufferedImage blueLandTransform = getFrame("transform/ulcard.jpg");
+    public static final BufferedImage blueLandHidden = getFrame("transform/ulcard2.jpg");
+    public static final BufferedImage blackTransform = getFrame("transform/bcard.jpg");
+    public static final BufferedImage blackHidden = getFrame("transform/bcard2.jpg");
+    public static final BufferedImage blackLandTransform = getFrame("transform/blcard.jpg");
+    public static final BufferedImage blackLandHidden = getFrame("transform/blcard2.jpg");
+    public static final BufferedImage redTransform = getFrame("transform/rcard.jpg");
+    public static final BufferedImage redHidden = getFrame("transform/rcard2.jpg");
+    public static final BufferedImage redLandTransform = getFrame("transform/rlcard.jpg");
+    public static final BufferedImage redLandHidden = getFrame("transform/rlcard2.jpg");
+    public static final BufferedImage greenTransform = getFrame("transform/gcard.jpg");
+    public static final BufferedImage greenHidden = getFrame("transform/gcard2.jpg");
+    public static final BufferedImage greenLandTransform = getFrame("transform/glcard.jpg");
+    public static final BufferedImage greenLandHidden = getFrame("transform/glcard2.jpg");
+    public static final BufferedImage multiTransform = getFrame("transform/mcard.jpg");
+    public static final BufferedImage multiHidden = getFrame("transform/mcard2.jpg");
+    public static final BufferedImage multiLandTransform = getFrame("transform/mlcard.jpg");
+    public static final BufferedImage multiLandHidden = getFrame("transform/mlcard2.jpg");
+    public static final BufferedImage gainTransformColorBlend = getFrame("transform/color_blend.png");
+    public static final BufferedImage gainTransformHybridBanner = getFrame("transform/hybrid_blend.png");
+    public static final BufferedImage artifactPlaneswalkerTransform = getFrame("transform/planeswalker/acard.jpg");
+    public static final BufferedImage artifactPlaneswalkerHidden = getFrame("transform/planeswalker/acard2.jpg");
+    public static final BufferedImage whitePlaneswalkerTransform = getFrame("transform/planeswalker/wcard.jpg");
+    public static final BufferedImage whitePlaneswalkerHidden = getFrame("transform/planeswalker/wcard2.jpg");
+    public static final BufferedImage bluePlaneswalkerTransform = getFrame("transform/planeswalker/ucard.jpg");
+    public static final BufferedImage bluePlaneswalkerHidden = getFrame("transform/planeswalker/ucard2.jpg");
+    public static final BufferedImage blackPlaneswalkerTransform = getFrame("transform/planeswalker/bcard.jpg");
+    public static final BufferedImage blackPlaneswalkerHidden = getFrame("transform/planeswalker/bcard2.jpg");
+    public static final BufferedImage redPlaneswalkerTransform = getFrame("transform/planeswalker/rcard.jpg");
+    public static final BufferedImage redPlaneswalkerHidden = getFrame("transform/planeswalker/rcard2.jpg");
+    public static final BufferedImage greenPlaneswalkerTransform = getFrame("transform/planeswalker/gcard.jpg");
+    public static final BufferedImage greenPlaneswalkerHidden = getFrame("transform/planeswalker/gcard2.jpg");
+    public static final BufferedImage multiPlaneswalkerTransform = getFrame("transform/planeswalker/mcard.jpg");
+    public static final BufferedImage multiPlaneswalkerHidden = getFrame("transform/planeswalker/mcard2.jpg");
+
+
 
     //Font Map
     private static final String[] names = { };
