@@ -11,6 +11,7 @@ import magic.ui.duel.viewer.ImageBattlefieldViewer;
 import magic.ui.duel.viewer.ImageCombatViewer;
 import magic.ui.duel.viewer.PlayerZoneViewer;
 import magic.ui.duel.sidebar.StackViewer;
+import magic.ui.duel.viewer.info.CardViewerInfo;
 
 @SuppressWarnings("serial")
 public class ImageModeBattlefieldPanel extends BattlefieldPanel {
@@ -91,10 +92,10 @@ public class ImageModeBattlefieldPanel extends BattlefieldPanel {
     }
 
     @Override
-    public void highlightCard(long cardId, boolean b) {
-        if (!imagePlayerPermanentViewer.highlightCard(cardId, b))
-            if (!imageOpponentPermanentViewer.highlightCard(cardId, b))
-                imageCombatViewer.highlightCard(cardId, b);
+    public void highlightCard(CardViewerInfo cardInfo, boolean b) {
+        if (!imagePlayerPermanentViewer.highlightCard(cardInfo, b))
+            if (!imageOpponentPermanentViewer.highlightCard(cardInfo, b))
+                imageCombatViewer.highlightCard(cardInfo, b);
     }
 
 }

@@ -6,6 +6,7 @@ import magic.ui.duel.BattlefieldPanel;
 import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfileType;
 import magic.ui.duel.sidebar.StackViewer;
+import magic.ui.duel.viewer.info.CardViewerInfo;
 
 @SuppressWarnings("serial")
 public class TextModeBattlefieldPanel extends BattlefieldPanel {
@@ -63,7 +64,7 @@ public class TextModeBattlefieldPanel extends BattlefieldPanel {
     }
 
     @Override
-    public void highlightCard(long cardId, boolean b) {
+    public void highlightCard(CardViewerInfo cardInfo, boolean b) {
         // not supported
     }
 

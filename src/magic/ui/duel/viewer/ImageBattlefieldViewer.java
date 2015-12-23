@@ -13,6 +13,7 @@ import javax.swing.JPanel;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.util.Set;
+import magic.ui.duel.viewer.info.CardViewerInfo;
 import magic.ui.utility.MagicStyle;
 
 @SuppressWarnings("serial")
@@ -60,9 +61,9 @@ public class ImageBattlefieldViewer extends JPanel implements IChoiceViewer, IUp
         permanentsViewer.showValidChoices(validChoices);
     }
 
-    public boolean highlightCard(long cardId, boolean b) {
-        final ImagePermanentViewer viewer = permanentsViewer.getViewer(cardId);
-        permanentsViewer.highlightCard(viewer, b ? cardId : 0);
+    public boolean highlightCard(CardViewerInfo cardInfo, boolean b) {
+        final ImagePermanentViewer viewer = permanentsViewer.getViewer(cardInfo.getId());
+        permanentsViewer.highlightCard(viewer, b ? cardInfo.getId() : 0);
         return viewer != null;
     }
 }
