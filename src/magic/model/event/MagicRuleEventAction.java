@@ -1697,7 +1697,7 @@ public enum MagicRuleEventAction {
         }
     ),
     TapParalyze(
-        "tap " + ARG.PERMANENTS + "( and it|\\. RN|\\. it|\\. Those creatures) (doesn't|don't) untap during (its|their) controller's next untap step(\\.|,)?",
+        "tap " + ARG.PERMANENTS + "( and it|\\. RN|\\. it|\\. Those creatures) (doesn't|don't) untap during (its|their) controller('s|s') next untap step(s)?(\\.|,)?",
         MagicTargetHint.Negative,
         MagicTapTargetPicker.Tap,
         MagicTiming.Tapping,
