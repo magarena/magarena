@@ -56,10 +56,6 @@ public class CardViewerInfo {
         return frontFace;
     }
 
-    public MagicCard getMagicCard() {
-        return magicCard;
-    }
-
     public MagicObject getMagicObject() {
         return magicObject;
     }
