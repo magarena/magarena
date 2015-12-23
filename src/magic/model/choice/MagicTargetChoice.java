@@ -359,7 +359,7 @@ public class MagicTargetChoice extends MagicChoice {
     
     private static MagicTargetChoice Other(final String aTargetDescription, final MagicPermanent permanent, final MagicTargetHint hint) {
         final MagicTargetChoice withoutOther = new MagicTargetChoice(aTargetDescription);
-        final String compactDescription = aTargetDescription.replaceFirst("a ","");
+        final String compactDescription = aTargetDescription.replaceFirst("^a(n)? ", "");
         return new MagicTargetChoice(
             new MagicOtherPermanentTargetFilter(
                 withoutOther.getPermanentFilter(),
