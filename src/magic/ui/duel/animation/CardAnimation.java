@@ -63,15 +63,13 @@ abstract class CardAnimation extends MagicAnimation {
     }
 
     private void drawCardShadow(Graphics g) {
-        if (MagicAnimations.isOn(AnimationFx.CARD_SHADOW)) {
-            final int SHADOW = 6;
-            g.setColor(SHADOW_COLOR);
-            g.fillRect(imageRect.x + SHADOW,
-                imageRect.y + SHADOW,
-                frontImageScaler.getImage().getWidth(null),
-                frontImageScaler.getImage().getHeight(null)
-            );
-        }
+        final int SHADOW = 6;
+        g.setColor(SHADOW_COLOR);
+        g.fillRect(imageRect.x + SHADOW,
+            imageRect.y + SHADOW,
+            frontImageScaler.getImage().getWidth(null),
+            frontImageScaler.getImage().getHeight(null)
+        );
     }
 
     private boolean isCardFlipping() {
