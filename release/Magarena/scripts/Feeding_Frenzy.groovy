@@ -6,7 +6,7 @@
             return new MagicEvent(
                 cardOnStack,
                 NEG_TARGET_CREATURE,
-                new MagicWeakenTargetPicker(-X, -X),
+                new MagicWeakenTargetPicker(X, X),
                 this,
                 "Target creature\$ gets -X/-X until end of turn, where X is the number of Zombies on the battlefield."
             );

@@ -31,7 +31,7 @@
             return new MagicEvent(
                 source,
                 NEG_TARGET_CREATURE,
-                new MagicWeakenTargetPicker(amount,amount),
+                new MagicWeakenTargetPicker(-amount,-amount),
                 amount,
                 this,
                 "Target creature\$ gets RN/RN until end of turn."
