@@ -4,7 +4,7 @@ value=3.551
 rarity=R
 type=Legendary,Enchantment,Artifact
 cost={2}{U}{U}
-ability=Whenever a creature you control deals combat damage to a player, you may draw a card.
+ability=Whenever a creature you control deals combat damage to a player, you may draw a card.;\
+        {1}{U}, {T}: Creatures your opponents control attack this turn if able.
 timing=artifact
-requires_groovy_code
 oracle=Whenever a creature you control deals combat damage to a player, you may draw a card.\n{1}{U}, {T}: Creatures your opponents control attack this turn if able.

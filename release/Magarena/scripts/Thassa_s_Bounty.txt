@@ -4,6 +4,6 @@ value=2.292
 rarity=C
 type=Sorcery
 cost={5}{U}
+effect=Target player puts the top three cards of his or her library into his or her graveyard.~Draw three cards.
 timing=main
-requires_groovy_code
 oracle=Draw three cards. Target player puts the top three cards of his or her library into his or her graveyard.
