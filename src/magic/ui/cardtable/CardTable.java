@@ -31,10 +31,10 @@ import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class CardTable extends TexturedPanel implements ListSelectionListener {
-    
+
     // renderer that centers the contents of a column.
     static final DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
-    static { centerRenderer.setHorizontalAlignment(SwingConstants.CENTER); }    
+    static { centerRenderer.setHorizontalAlignment(SwingConstants.CENTER); }
 
     private static final Color GRID_COLOR = new Color(194, 197, 203);
     private static final int ROW_HEIGHT = 20; //pixels
@@ -266,7 +266,7 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
         public Component getTableCellRendererComponent(final JTable table, final Object value, final boolean isSelected, final boolean hasFocus, final int row, final int col) {
 
             final MagicCardDefinition card = ((CardTableModel)table.getModel()).getCardDef(row);
-            final CostPanel myRender = new CostPanel(card.isLand() || !card.isValid() ? null : (MagicManaCost)value);
+            final CostPanel myRender = new CostPanel(card.isLand() || !card.isValid() || card.isHidden() && card.isDoubleFaced() ? null : (MagicManaCost)value);
 
             // match border and background formatting with default
             final JComponent defaultRender = (JComponent) super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, col);
