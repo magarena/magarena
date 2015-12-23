@@ -1,3 +1,5 @@
+def choice = MagicTargetChoice.Positive("another target permanent")
+
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Pump),
@@ -16,7 +18,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                MagicTargetChoice.PosOther("target permanent", source),
+                choice,
                 MagicIndestructibleTargetPicker.create(),
                 this,
                 "PN puts a divinity counter on target permanent other than SN.\$"

@@ -8,6 +8,8 @@ def SAC_ACTION = {
     })
 }
 
+def choice = MagicTargetChoice.Negative("another target creature");
+
 [
     new AtYourUpkeepTrigger() {
         @Override
@@ -58,7 +60,7 @@ def SAC_ACTION = {
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                NegOther("target creature", source),
+                choice,
                 new MagicDamageTargetPicker(source.getPower()),
                 this,
                 "SN deals damage equal to its power to another target creature. " +

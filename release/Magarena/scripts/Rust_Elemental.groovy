@@ -1,3 +1,5 @@
+def choice = new MagicTargetChoice("another artifact you control");
+
 [
     new AtYourUpkeepTrigger() {
         @Override
@@ -13,8 +15,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent permanent = event.getPermanent();
             final MagicPlayer player = event.getPlayer();
-            final MagicTargetChoice targetChoice = Other("an artifact to sacrifice", permanent);
-            final MagicEvent sac = new MagicSacrificePermanentEvent(permanent,player,targetChoice)
+            final MagicEvent sac = new MagicSacrificePermanentEvent(permanent,player,choice)
             if (sac.isSatisfied()) {
                 game.addEvent(sac);
             } else {

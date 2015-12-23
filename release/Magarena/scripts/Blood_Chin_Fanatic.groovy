@@ -1,3 +1,5 @@
+def choice = new MagicTargetChoice("another Warrior creature you control");
+
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Removal),
@@ -7,7 +9,7 @@
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source,"{1}{B}"),
-                new MagicSacrificePermanentEvent(source, MagicTargetChoice.Other("a Warrior creature to sacrifice",source))
+                new MagicSacrificePermanentEvent(source, choice)
             ];
         }
 

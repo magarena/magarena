@@ -8,7 +8,7 @@
             return [
                 new MagicTapEvent(source),
                 new MagicPayManaCostEvent(source,"{B}"),
-                new MagicSacrificePermanentEvent(source, MagicTargetChoice.Other("a creature to sacrifice",source))
+                new MagicSacrificePermanentEvent(source, MagicTargetChoice.ANOTHER_CREATURE_YOU_CONTROL)
             ];
         }
 

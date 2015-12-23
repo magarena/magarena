@@ -26,7 +26,7 @@
             final MagicEvent bounce = new MagicBounceChosenPermanentEvent(
                 event.getSource(), 
                 event.getPlayer(),
-                Other("a creature you control", event.getPermanent())
+                MagicTargetChoice.ANOTHER_CREATURE_YOU_CONTROL
             );
             if (event.isYes() && bounce.isSatisfied()) {
                 game.addEvent(bounce);

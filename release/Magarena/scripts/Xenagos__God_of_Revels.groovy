@@ -1,3 +1,5 @@
+def choice = MagicTargetChoice.Positive("another target creature you control")
+
 [
     new MagicStatic(MagicLayer.Type) {
         @Override
@@ -19,7 +21,7 @@
             return permanent.getController() == attackingPlayer ? 
                 new MagicEvent(
                     permanent,
-                    Other("target creature you control", permanent),
+                    choice,
                     MagicPumpTargetPicker.create(),
                     this,
                     "Another target creature\$ you control gains haste and gets +X/+X until end of turn, where X is that creature's power."

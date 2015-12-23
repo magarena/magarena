@@ -7,7 +7,7 @@
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source,"{1}{B}{G}"),
-                new MagicSacrificePermanentEvent(source, MagicTargetChoice.Other("a creature to sacrifice",source))
+                new MagicSacrificePermanentEvent(source, MagicTargetChoice.ANOTHER_CREATURE_YOU_CONTROL)
             ];
         }
 

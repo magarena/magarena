@@ -1,3 +1,5 @@
+def choice = MagicTargetChoice.Negative("another target creature")
+
 def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
     @Override
     public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {
@@ -20,7 +22,7 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                NegOther("target creature", source),
+                choice,
                 new MagicBecomeTargetPicker(0,2,false),
                 this,
                 "Target creature\$ other than SN becomes 0/2 until end of turn."
