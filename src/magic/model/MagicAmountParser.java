@@ -58,6 +58,11 @@ public enum MagicAmountParser {
             return MagicAmountFactory.XCost;
         }
     },
+    NegXCost("-x") {
+        public MagicAmount toAmount(final Matcher arg) {
+            return MagicAmountFactory.NegXCost;
+        }
+    },
     Number("[^ ]+") {
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.Constant(EnglishToInt.convert(arg.group()));

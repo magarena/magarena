@@ -132,4 +132,16 @@ public class MagicAmountFactory {
                 throw new RuntimeException("getAmount(source, player) called on XCost");
             }
         };
+    
+    public static MagicAmount NegXCost = 
+        new MagicAmount() {
+            @Override
+            public int getAmount(final MagicEvent event) {
+                return -event.getX();
+            }
+            @Override
+            public int getAmount(final MagicSource source, final MagicPlayer player) {
+                throw new RuntimeException("getAmount(source, player) called on NegXCost");
+            }
+        };
 }
