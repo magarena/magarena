@@ -4,6 +4,9 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
+import magic.model.MagicAmount;
+import magic.model.MagicAmountFactory;
+import magic.model.event.MagicEvent;
 
 public class MagicWeakenTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
@@ -12,10 +15,17 @@ public class MagicWeakenTargetPicker extends MagicTargetPicker<MagicPermanent> {
     private static final int BLOCKING=2<<8;
     private static final int CAN_TAP=1<<8;
 
-    private final int amountToughness;
-
-    public MagicWeakenTargetPicker(final int amountPower,final int amountToughness) {
-        this.amountToughness=amountToughness;
+    private int amountToughness;
+    private final MagicAmount count;
+    
+    public MagicWeakenTargetPicker(final MagicAmount aCount) {
+        amountToughness = -1;
+        count = aCount;
+    }
+           
+    public MagicWeakenTargetPicker(final int amountPower,final int aAmountToughness) {
+        amountToughness = aAmountToughness;
+        count = MagicAmountFactory.One;
     }
     
     public MagicWeakenTargetPicker create(final String arg) {
@@ -23,6 +33,13 @@ public class MagicWeakenTargetPicker extends MagicTargetPicker<MagicPermanent> {
         final int p = -Integer.parseInt(args[0]);
         final int t = -Integer.parseInt(args[1]);
         return new MagicWeakenTargetPicker(p, t);
+    }
+    
+    @Override
+    protected void setEvent(final MagicEvent event) {
+        if (amountToughness < 0 || count.isConstant() == false) {
+            amountToughness = -count.getAmount(event);
+        }
     }
 
     @Override
