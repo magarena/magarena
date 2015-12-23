@@ -62,7 +62,7 @@ public class ImageBattlefieldViewer extends JPanel implements IChoiceViewer, IUp
     }
 
     public boolean highlightCard(CardViewerInfo cardInfo, boolean b) {
-        final ImagePermanentViewer viewer = permanentsViewer.getViewer(cardInfo.getId());
+        final ImagePermanentViewer viewer = permanentsViewer.getViewer(cardInfo);
         permanentsViewer.highlightCard(viewer, b ? cardInfo.getId() : 0);
         return viewer != null;
     }
