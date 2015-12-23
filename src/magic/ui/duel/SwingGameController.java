@@ -39,7 +39,6 @@ import magic.game.state.GameState;
 import magic.game.state.GameStateFileWriter;
 import magic.game.state.GameStateSnapshot;
 import magic.model.IUIGameController;
-import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.model.MagicColor;
@@ -1061,7 +1060,7 @@ public class SwingGameController implements IUIGameController {
     public void highlightCard(long magicCardId, boolean b) {
         if (magicCardId > 0) {
             final CardViewerInfo cardInfo = gameViewerInfo.getCardViewerInfo(magicCardId);
-            if (cardInfo.getMagicCard() != MagicCard.NONE) {
+            if (cardInfo.isNotEmpty()) {
                 gamePanel.highlightCard(cardInfo.getMagicCard(), b);
             } else {
                 System.err.printf("Highlight failed! MagicCard #%d not found!\n", magicCardId);
@@ -1072,7 +1071,7 @@ public class SwingGameController implements IUIGameController {
     public void showMagicCardImage(long magicCardId) {
         if (magicCardId > 0) {
             final CardViewerInfo cardInfo = gameViewerInfo.getCardViewerInfo(magicCardId);
-            if (cardInfo.getMagicCard() != MagicCard.NONE) {
+            if (cardInfo.isNotEmpty()) {
                 viewCardPopupCentered(cardInfo, 0);
             } else {
                 System.err.printf("Highlight failed! MagicCard #%d not found!\n", magicCardId);

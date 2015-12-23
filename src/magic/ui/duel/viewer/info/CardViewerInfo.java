@@ -39,8 +39,12 @@ public class CardViewerInfo {
         this.backFace = getBackFace(frontFace);
     }
 
-    public boolean isEmpty() {
+    boolean isEmpty() {
         return magicCard == MagicCard.NONE;
+    }
+
+    public boolean isNotEmpty() {
+        return isEmpty() == false;
     }
 
     public boolean isLand() {
