@@ -410,14 +410,14 @@ public enum MagicRuleEventAction {
         }
     },
     DamageTwoGroupAlt(
-        ARG.IT + " deal(s)? " + ARG.AMOUNT + " damage to " + ARG.TARGETS + " and " + ARG.AMOUNT2 + " damage to " + ARG.TARGETS2 + "(\\.|,)?",
+        ARG.IT + " deal(s)? " + ARG.AMOUNT + " damage to " + ARG.TARGETS + " and " + ARG.AMOUNT2 + " (additional )?damage to " + ARG.TARGETS2 + "(\\.|,)?",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Damage"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount1 = ARG.amount(matcher);
+            final MagicAmount count = ARG.amountObj(matcher);
             final int amount2 = ARG.amount2(matcher);
             final MagicTargetFilter<MagicTarget> filter1 = ARG.targetsParse(matcher);
             final MagicTargetFilter<MagicTarget> filter2 = ARG.targets2Parse(matcher);
@@ -425,6 +425,7 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     final MagicSource source = ARG.itSource(event, matcher);
+                    final int amount1 = count.getAmount(event);
                     for (final MagicTarget target : ARG.targets(event, matcher, filter1)) {
                         game.doAction(new DealDamageAction(source,target,amount1));
                     }
