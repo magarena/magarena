@@ -10,7 +10,6 @@ import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicPlayer;
-import magic.model.MagicType;
 import magic.ui.CachedImagesProvider;
 import magic.ui.MagicImages;
 import magic.ui.duel.viewer.info.CardViewerInfo;
@@ -43,7 +42,7 @@ abstract class CardAnimation extends MagicAnimation {
     private Dimension previewSize;
     private Rectangle imageRect = new Rectangle();
     private final MagicPlayer player;
-    private final MagicCardDefinition card;
+    private final CardViewerInfo cardInfo;
 
     // abstract methods
     protected abstract Rectangle getStart();
@@ -51,7 +50,7 @@ abstract class CardAnimation extends MagicAnimation {
 
     CardAnimation(MagicPlayer aPlayer, CardViewerInfo cardInfo, GameLayoutInfo layoutInfo) {
         this.player = aPlayer;
-        this.card = cardInfo.getCardDefinition();
+        this.cardInfo = cardInfo;
         this.playerIndex = aPlayer.getIndex();
         this.layoutInfo = layoutInfo;
     }
@@ -61,7 +60,7 @@ abstract class CardAnimation extends MagicAnimation {
     }
 
     protected MagicCardDefinition getCard() {
-        return card;
+        return cardInfo.getCardDefinition();
     }
 
     private void drawCardShadow(Graphics g) {
@@ -210,7 +209,7 @@ abstract class CardAnimation extends MagicAnimation {
      * Amount of time in millisecs that full-size card preview is displayed.
      */
     private int getViewDuration() {
-        return card.hasType(MagicType.Land)
+        return cardInfo.isLand()
             ? GeneralConfig.getInstance().getLandPreviewDuration()
             : GeneralConfig.getInstance().getNonLandPreviewDuration();
     }
@@ -263,7 +262,7 @@ abstract class CardAnimation extends MagicAnimation {
         isRunning.set(true);
 
         flipPosition = 0f;
-        imageScaler = new ImageScaler(CachedImagesProvider.getInstance().getImage(card, 0, true));
+        imageScaler = new ImageScaler(CachedImagesProvider.getInstance().getImage(cardInfo.getCardDefinition(), 0, true));
         this.previewSize = getCardPreviewSize(imageScaler.getImage());
 
         playTimelineScenario();

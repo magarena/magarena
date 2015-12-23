@@ -5,6 +5,7 @@ import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicObject;
 import magic.model.MagicPermanent;
+import magic.model.MagicType;
 import magic.model.stack.MagicCardOnStack;
 import magic.ui.CachedImagesProvider;
 import magic.utility.MagicSystem;
@@ -35,6 +36,10 @@ public class CardViewerInfo {
 
     public boolean isEmpty() {
         return magicCard == MagicCard.NONE;
+    }
+
+    public boolean isLand() {
+        return magicCard.hasType(MagicType.Land);
     }
        
     public MagicCardDefinition getCardDefinition() {
