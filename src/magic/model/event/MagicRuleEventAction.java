@@ -1126,7 +1126,7 @@ public enum MagicRuleEventAction {
         }
     },
     PutCounter(
-        "put " + ARG.AMOUNT + " (?<type>[^ ]+) counter(s)? on " + ARG.PERMANENTS + "\\."
+        "put " + ARG.AMOUNT + " (?<type>[^ ]+) counter(s)? on " + ARG.PERMANENTS + "(\\.|,)?"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
