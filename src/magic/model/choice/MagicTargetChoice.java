@@ -329,6 +329,9 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice TARGET_ARTIFACT_YOUR_OPPONENT_CONTROLS = 
         new MagicTargetChoice("target artifact an opponent controls");
 
+    public static final MagicTargetChoice ANOTHER_CREATURE_YOU_CONTROL =
+        new MagicTargetChoice("another creature you control");
+
     private final String targetDescription;
     private final MagicTargetFilter<? extends MagicTarget> targetFilter;
     private final boolean targeted;

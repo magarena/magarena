@@ -1,5 +1,3 @@
-def choice = new MagicTargetChoice("another creature you control");
-
 [
     new EntersBattlefieldTrigger() {
         @Override
@@ -17,7 +15,7 @@ def choice = new MagicTargetChoice("another creature you control");
             final MagicEvent bounce = new MagicBounceChosenPermanentEvent(
                 event.getSource(),
                 event.getPlayer(),
-                choice
+                MagicTargetChoice.ANOTHER_CREATURE_YOU_CONTROL
             );
             if (event.isYes() && bounce.isSatisfied()) {
                 game.addEvent(bounce);

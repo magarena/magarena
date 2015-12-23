@@ -23,12 +23,11 @@ public class DevourTrigger extends EntersBattlefieldTrigger {
 
     @Override
     public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent perm, final MagicPayedCost payedCost) {
-        final MagicTargetChoice targetChoice = MagicTargetChoice.Other("a creature to sacrifice", perm);
         return new MagicEvent(
             perm,
             new MagicMayChoice(
                 "Sacrifice a creature to " + perm + "?",
-                targetChoice
+                MagicTargetChoice.ANOTHER_CREATURE_YOU_CONTROL
             ),
             MagicSacrificeTargetPicker.create(),
             this,
