@@ -14,6 +14,7 @@ public class AnimationFx {
     public static final long INFLATE_ZONE      = 1 << 7;
     public static final long NEW_TURN_MSG      = 1 << 8;
     public static final long CARD_FADEIN       = 1 << 9;
+    public static final long ELASTIC_ARROW     = 1 << 10;
 
     // all these effects and animations are on by default.
     private static long flags =

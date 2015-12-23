@@ -13,6 +13,7 @@ import magic.model.MagicPlayer;
 import magic.ui.MagicImages;
 import magic.ui.duel.viewer.info.CardViewerInfo;
 import org.pushingpixels.trident.Timeline;
+import org.pushingpixels.trident.Timeline.TimelineState;
 import org.pushingpixels.trident.TimelineScenario;
 import org.pushingpixels.trident.callback.TimelineCallbackAdapter;
 import org.pushingpixels.trident.ease.Spline;
@@ -77,14 +78,24 @@ abstract class CardAnimation extends MagicAnimation {
         return MagicAnimations.isOn(AnimationFx.FLIP_CARD) && flipPosition < 1f;
     }
 
-    private boolean isViewTimelineRunning() {
-        return viewTimeline != null && viewTimeline.getState() == Timeline.TimelineState.PLAYING_FORWARD;
+    private boolean isRunning(Timeline t) {
+        return t != null && (t.getState() == TimelineState.READY || t.getState() == TimelineState.PLAYING_FORWARD);
     }
 
-    private void drawArrow(Graphics g) {
-        if (MagicAnimations.isOn(AnimationFx.STATIC_ARROW) && isViewTimelineRunning()) {
-            ArrowBuilder.drawArrow(g, getStart(), getPreviewRectangle());
-        }
+    private boolean isStaticArrowOn() {
+        return MagicAnimations.isOn(AnimationFx.STATIC_ARROW)
+            && MagicAnimations.isOff(AnimationFx.ELASTIC_ARROW)
+            && isRunning(viewTimeline);
+    }
+
+    private boolean isElasticArrowOn() {
+        return (MagicAnimations.isOn(AnimationFx.ELASTIC_ARROW) && isRunning(growTimeline))
+            || (MagicAnimations.isOn(AnimationFx.STATIC_ARROW) && isRunning(viewTimeline));
+    }
+
+    private boolean isCardShadowOn() {
+        return MagicAnimations.isOn(AnimationFx.CARD_SHADOW)
+            && isRunning(viewTimeline);
     }
 
     private void drawCardImage(Graphics g) {
@@ -114,8 +125,13 @@ abstract class CardAnimation extends MagicAnimation {
         if (imageRect.isEmpty())
             return;
 
-        if (growTimeline.isDone()) {
-            drawArrow(g);
+        if (isElasticArrowOn()) {
+            ArrowBuilder.drawArrow(g, getStart(), imageRect);
+        } else if (isStaticArrowOn()) {
+            ArrowBuilder.drawArrow(g, getStart(), getPreviewRectangle());
+        }
+        
+        if (isCardShadowOn()) {
             drawCardShadow(g);
         }
 

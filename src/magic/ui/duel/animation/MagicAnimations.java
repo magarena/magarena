@@ -148,5 +148,9 @@ public class MagicAnimations {
     public static boolean isOn(long aFlag) {
         return GeneralConfig.getInstance().showGameplayAnimations() && AnimationFx.isOn(aFlag);
     }
-  
+
+    public static boolean isOff(long aFlag) {
+        return !GeneralConfig.getInstance().showGameplayAnimations() || !AnimationFx.isOn(aFlag);
+    }
+
 }

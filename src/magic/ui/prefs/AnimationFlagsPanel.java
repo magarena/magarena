@@ -34,6 +34,8 @@ class AnimationFlagsPanel extends JPanel {
     private static final String _S18 = "Displays a message at the beginning of each new turn and pauses game for a number of seconds (see new turn delay slider).";
     private static final String _S14 = "Card popup fade-in";
     private static final String _S15 = "Uses a fade-in effect when displaying the full-size card image during a game.";
+    private static final String _S20 = "Elastic play-from arrow";
+    private static final String _S21 = "Indicates which player zone a card originates from using an arrow that grows and follows the card animation to the preview stage.";
 
     AnimationFlagsPanel(final MouseListener aListener) {
 
@@ -44,6 +46,7 @@ class AnimationFlagsPanel extends JPanel {
         createCheckBox(AnimationFx.FLIP_CARD, UiString.get(_S5), UiString.get(_S6));
         createCheckBox(AnimationFx.CARD_SHADOW, UiString.get(_S7), UiString.get(_S8));
         createCheckBox(AnimationFx.STATIC_ARROW, UiString.get(_S9), UiString.get(_S10));
+        createCheckBox(AnimationFx.ELASTIC_ARROW, UiString.get(_S20), UiString.get(_S21));
         createCheckBox(AnimationFx.ZBUTTON_PULSE, UiString.get(_S11), UiString.get(_S16));
         createCheckBox(AnimationFx.AVATAR_PULSE, UiString.get(_S12), UiString.get(_S17));
         createCheckBox(AnimationFx.NEW_TURN_MSG, UiString.get(_S13), UiString.get(_S18));
