@@ -18,7 +18,6 @@ import magic.ui.utility.GraphicsUtils;
 
 public class ResourceManager {
 
-
     // Used as reference class for accessing JAR resources.
     private static final ResourceManager instance = new ResourceManager();
 
@@ -47,7 +46,6 @@ public class ResourceManager {
     public static final BufferedImage gainColorBlend = getFrame("color_blend.png");
     public static final BufferedImage gainHybridBlend = getFrame("blendingMask.png");
     public static final BufferedImage gainHybridBanner = getFrame("hybrid_blend.png");
-    public static final BufferedImage gainMultiBlend = getFrame("multicolor_blend.png");
     public static final BufferedImage defaultWhite = getImage("default_white.jpg");
     public static final BufferedImage defaultBlue = getImage("default_blue.jpg");
     public static final BufferedImage defaultBlack = getImage("default_black.jpg");
@@ -133,7 +131,6 @@ public class ResourceManager {
     public static final BufferedImage greenPlaneswalkerFrame = getFrame("planeswalker/gcard.jpg");
     public static final BufferedImage multiPlaneswalkerFrame = getFrame("planeswalker/mcard.jpg");
     public static final BufferedImage colorlessPlaneswalkerFrame = getFrame("planeswalker/clear.jpg");
-    public static final BufferedImage gainPlaneswalkerHybridBlend = getFrame("planeswalker/multicolor_blend.png");
     public static final BufferedImage gainPlaneswalkerHybridBanner = getFrame("planeswalker/hybrid_blend.png");
     public static final BufferedImage gainPlaneswalkerColorBlend = getFrame("planeswalker/color_blend.png");
     public static final BufferedImage loyaltyPanel = getLoyaltyPanelBuffered("planeswalker/loyalty.png");
