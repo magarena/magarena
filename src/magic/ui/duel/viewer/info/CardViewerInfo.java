@@ -12,33 +12,33 @@ import magic.utility.MagicSystem;
 public class CardViewerInfo {
 
     private final MagicCard magicCard;
-    private final MagicCardDefinition faceupCardDef;
+    private final MagicCardDefinition frontFace;
     private final MagicObject magicObject;
 
     CardViewerInfo(final MagicCard aCard) {
         this.magicCard = aCard;
         this.magicObject = aCard;
-        this.faceupCardDef = magicCard.getCardDefinition();
+        this.frontFace = aCard.getCardDefinition();
     }
 
     CardViewerInfo(MagicPermanent aPerm) {
         this.magicCard = aPerm.getCard();
         this.magicObject = aPerm;
-        this.faceupCardDef = getFaceupCardDef(aPerm);
+        this.frontFace = getFrontFace(aPerm);
     }
 
     CardViewerInfo(MagicCardOnStack aCard) {
         this.magicCard = aCard.getCard();
-        this.faceupCardDef = getFaceupCardDef(aCard);
         this.magicObject = aCard;
+        this.frontFace = getFrontFace(aCard);
     }
 
     public boolean isEmpty() {
         return magicCard == MagicCard.NONE;
     }
        
-    public MagicCardDefinition getFaceupCardDef() {
-        return faceupCardDef;
+    public MagicCardDefinition getCardDefinition() {
+        return frontFace;
     }
 
     public MagicCard getMagicCard() {
@@ -50,16 +50,16 @@ public class CardViewerInfo {
     }
 
     public BufferedImage getImage() {
-        return CachedImagesProvider.getInstance().getImage(faceupCardDef, 0, true);
+        return CachedImagesProvider.getInstance().getImage(frontFace, 0, true);
     }
 
-    private MagicCardDefinition getFaceupCardDef(MagicCardOnStack aCard) {
+    private MagicCardDefinition getFrontFace(MagicCardOnStack aCard) {
         return aCard.getController().isHuman() || MagicSystem.isAiVersusAi()
             ? aCard.getRealCardDefinition()
             : aCard.getCardDefinition();
     }
 
-    private MagicCardDefinition getFaceupCardDef(MagicPermanent aCard) {
+    private MagicCardDefinition getFrontFace(MagicPermanent aCard) {
         return aCard.getController().isHuman() || MagicSystem.isAiVersusAi()
             ? aCard.getRealCardDefinition()
             : aCard.getCardDefinition();

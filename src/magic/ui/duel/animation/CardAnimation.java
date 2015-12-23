@@ -51,7 +51,7 @@ abstract class CardAnimation extends MagicAnimation {
 
     CardAnimation(MagicPlayer aPlayer, CardViewerInfo cardInfo, GameLayoutInfo layoutInfo) {
         this.player = aPlayer;
-        this.card = cardInfo.getFaceupCardDef();
+        this.card = cardInfo.getCardDefinition();
         this.playerIndex = aPlayer.getIndex();
         this.layoutInfo = layoutInfo;
     }
