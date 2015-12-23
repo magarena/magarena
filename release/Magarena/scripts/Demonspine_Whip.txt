@@ -5,7 +5,7 @@ rarity=U
 type=Artifact
 subtype=Equipment
 cost={B}{R}
-ability=Equip {1}
+ability={X}: Equipped creature gets +X/+0 until end of turn.;\
+        Equip {1}
 timing=main
-requires_groovy_code
 oracle={X}: Equipped creature gets +X/+0 until end of turn.\nEquip {1}

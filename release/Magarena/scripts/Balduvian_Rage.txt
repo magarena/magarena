@@ -4,6 +4,6 @@ value=3.398
 rarity=U
 type=Instant
 cost={X}{R}
+effect=Target attacking creature gets +X/+0 until end of turn.~Draw a card at the beginning of the next turn's upkeep.
 timing=pump
-requires_groovy_code
 oracle=Target attacking creature gets +X/+0 until end of turn.\nDraw a card at the beginning of the next turn's upkeep.

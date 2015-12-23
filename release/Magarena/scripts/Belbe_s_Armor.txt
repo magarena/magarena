@@ -4,6 +4,6 @@ value=3.750
 rarity=U
 type=Artifact
 cost={3}
+ability={X}, {T}: Target creature gets -X/+X until end of turn.
 timing=main
-requires_groovy_code
 oracle={X}, {T}: Target creature gets -X/+X until end of turn.

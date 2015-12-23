@@ -4,6 +4,6 @@ value=3.071
 rarity=C
 type=Instant
 cost={X}{G}
+effect=Target creature gets +X/+X until end of turn.
 timing=pump
-requires_groovy_code
 oracle=Target creature gets +X/+X until end of turn.

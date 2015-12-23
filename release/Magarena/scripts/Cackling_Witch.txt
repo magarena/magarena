@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Spellshaper
 cost={1}{B}
 pt=1/1
+ability={X}{B}, {T}, Discard a card: Target creature gets +X/+0 until end of turn.
 timing=main
-requires_groovy_code
 oracle={X}{B}, {T}, Discard a card: Target creature gets +X/+0 until end of turn.

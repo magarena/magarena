@@ -4,6 +4,6 @@ value=2.847
 rarity=R
 type=Sorcery
 cost={X}{2}{R}{R}
+effect=All creatures get +X/-X until end of turn.
 timing=main
-requires_groovy_code
 oracle=All creatures get +X/-X until end of turn.

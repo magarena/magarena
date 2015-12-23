@@ -4,6 +4,6 @@ value=3.079
 rarity=U
 type=Sorcery
 cost={X}{B}
+effect=Target creature gets +X/+0 until end of turn.
 timing=main
-requires_groovy_code
 oracle=Target creature gets +X/+0 until end of turn.
