@@ -34,28 +34,21 @@ public class Frame {
             //Land Colors
             landColor = getLandColors(cardDef);
         } else if (artifact) {
-            if (enchantmentPermanent) {
-                baseFrame = ResourceManager.newFrame(ResourceManager.artifactNyx);
-            } else {
-                baseFrame = ResourceManager.newFrame(ResourceManager.artifactFrame);
-            }
+            baseFrame = enchantmentPermanent ? ResourceManager.newFrame(ResourceManager.artifactNyx) : ResourceManager.newFrame(ResourceManager.artifactFrame);
         }
         //Multi
         if (cardDef.isMulti() || landColor.size() > 1) {
             if (cardDef.getNumColors() > 2 || land && landColor.size() > 2) {
-                if (artifact || land && !enchantmentPermanent) {
+                if (artifact && !enchantmentPermanent) {
                     return getBlendedFrame(
                         baseFrame,
                         ResourceManager.newFrame(ResourceManager.gainColorBlend),
                         ResourceManager.newFrame(ResourceManager.multiFrame));
+
                 } else if (land) {
-                    return ResourceManager.newFrame(ResourceManager.multiLandNyx);
+                    return enchantmentPermanent ? ResourceManager.newFrame(ResourceManager.multiLandNyx) : ResourceManager.newFrame(ResourceManager.multiLandFrame);
                 } else {
-                    if (enchantmentPermanent) {
-                        return ResourceManager.newFrame(ResourceManager.multiNyx);
-                    } else {
-                        return ResourceManager.newFrame(ResourceManager.multiFrame);
-                    }
+                    return enchantmentPermanent ? ResourceManager.newFrame(ResourceManager.multiNyx) : ResourceManager.newFrame(ResourceManager.multiFrame);
                 }
             } else {
                 //Hybrid
@@ -108,37 +101,25 @@ public class Frame {
                         ResourceManager.newFrame(ResourceManager.gainColorBlend),
                         ResourceManager.newFrame(goldBanner));
                 } else {
-                    if (enchantmentPermanent) {
-                        return getBlendedFrame(
-                            ResourceManager.newFrame(ResourceManager.multiNyx),
-                            ResourceManager.newFrame(ResourceManager.gainColorBlend),
-                            ResourceManager.newFrame(goldBanner));
-                    } else {
-                        return getBlendedFrame(
-                            ResourceManager.newFrame(ResourceManager.multiFrame),
-                            ResourceManager.newFrame(ResourceManager.gainColorBlend),
-                            ResourceManager.newFrame(goldBanner));
-                    }
+                    return enchantmentPermanent ? getBlendedFrame(
+                        ResourceManager.newFrame(ResourceManager.multiNyx),
+                        ResourceManager.newFrame(ResourceManager.gainColorBlend),
+                        ResourceManager.newFrame(goldBanner)) : getBlendedFrame(
+                        ResourceManager.newFrame(ResourceManager.multiFrame),
+                        ResourceManager.newFrame(ResourceManager.gainColorBlend),
+                        ResourceManager.newFrame(goldBanner));
                 }
             }
         }
         //Mono
         for (MagicColor color : MagicColor.values()) {
             if (cardDef.hasColor(color) || landColor.contains(color)) {
-                if (artifact) {
+                if (land) {
+                    return enchantmentPermanent ? getLandNyxFrame(color) : getLandFrame(color);
+                } else if (artifact) {
                     return getBlendFrame(baseFrame, color);
-                } else if (land) {
-                    if (enchantmentPermanent) {
-                        return getLandNyxFrame(color);
-                    } else {
-                        return getLandFrame(color);
-                    }
                 } else {
-                    if (enchantmentPermanent) {
-                        return getNyxFrame(color);
-                    } else {
-                        return getFrame(color);
-                    }
+                    return enchantmentPermanent ? getNyxFrame(color) : getFrame(color);
                 }
             }
         }

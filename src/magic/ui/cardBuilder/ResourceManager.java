@@ -35,6 +35,7 @@ public class ResourceManager {
     public static final BufferedImage blackLandFrame = getFrame("blcard.jpg");
     public static final BufferedImage redLandFrame = getFrame("rlcard.jpg");
     public static final BufferedImage greenLandFrame = getFrame("glcard.jpg");
+    public static final BufferedImage multiLandFrame = getFrame("mlcard.jpg");
     public static final BufferedImage redPTPanel = getPTBuffered("rpt.png");
     public static final BufferedImage blackPTPanel = getPTBuffered("bpt.png");
     public static final BufferedImage bluePTPanel = getPTBuffered("upt.png");
