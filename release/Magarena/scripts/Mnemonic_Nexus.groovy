@@ -12,14 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicPlayer player : game.getAPNAP()) {
                 final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
-                for (final MagicCard cardGraveyard : graveyard) {
-                    game.doAction(new ShiftCardAction(
-                        cardGraveyard,
-                        MagicLocationType.Graveyard,
-                        MagicLocationType.TopOfOwnersLibrary
-                    ));
-                }
-                game.doAction(new ShuffleLibraryAction(player));
+                game.doAction(new ShuffleCardsIntoLibraryAction(graveyard, MagicLocationType.Graveyard))
             }
         }
     }
