@@ -249,16 +249,16 @@ public final class DuelPanel extends JPanel {
                 battlefieldPanel.highlightCard(cardInfo.getId(), b);
                 break;
             case Graveyard:
-                sidebarPanel.doHighlightPlayerZone(cardInfo.getMagicCard(), MagicPlayerZone.GRAVEYARD, b);
+                sidebarPanel.doHighlightPlayerZone(cardInfo, MagicPlayerZone.GRAVEYARD, b);
                 break;
             case Exile:
-                sidebarPanel.doHighlightPlayerZone(cardInfo.getMagicCard(), MagicPlayerZone.EXILE, b);
+                sidebarPanel.doHighlightPlayerZone(cardInfo, MagicPlayerZone.EXILE, b);
                 break;
             case OwnersHand:
-                sidebarPanel.doHighlightPlayerZone(cardInfo.getMagicCard(), MagicPlayerZone.HAND, b);
+                sidebarPanel.doHighlightPlayerZone(cardInfo, MagicPlayerZone.HAND, b);
                 break;
             case OwnersLibrary:
-                sidebarPanel.doHighlightPlayerZone(cardInfo.getMagicCard(), MagicPlayerZone.LIBRARY, b);
+                sidebarPanel.doHighlightPlayerZone(cardInfo, MagicPlayerZone.LIBRARY, b);
                 break;
         }
     }

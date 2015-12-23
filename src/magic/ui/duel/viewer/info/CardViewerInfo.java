@@ -81,6 +81,10 @@ public class CardViewerInfo {
     public long getId() {
         return magicCard.getId();
     }
+
+    public int getControllerIndex() {
+        return magicCard.getController().getIndex();
+    }
     
     private MagicCardDefinition getFrontFace(MagicCardOnStack aCard) {
         return aCard.getController().isHuman() || MagicSystem.isAiVersusAi()
