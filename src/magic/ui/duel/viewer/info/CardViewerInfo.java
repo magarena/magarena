@@ -3,6 +3,7 @@ package magic.ui.duel.viewer.info;
 import java.awt.image.BufferedImage;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
+import magic.model.MagicLocationType;
 import magic.model.MagicObject;
 import magic.model.MagicPermanent;
 import magic.model.MagicType;
@@ -73,6 +74,14 @@ public class CardViewerInfo {
             : CachedImagesProvider.getInstance().getImage(backFace, 0, true);
     }
 
+    public MagicLocationType getLocation() {
+        return magicCard.getLocation();
+    }
+
+    public long getId() {
+        return magicCard.getId();
+    }
+    
     private MagicCardDefinition getFrontFace(MagicCardOnStack aCard) {
         return aCard.getController().isHuman() || MagicSystem.isAiVersusAi()
             ? aCard.getRealCardDefinition()
