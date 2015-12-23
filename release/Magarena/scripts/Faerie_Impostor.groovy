@@ -5,11 +5,11 @@
             return new MagicEvent(
                 permanent,
                 new MagicMayChoice(
-                    A_CREATURE_YOU_CONTROL
+                    MagicTargetChoice.Other("a creature you control",permanent)
                 ),
                 MagicBounceTargetPicker.create(),
                 this,
-                "PN may\$ return a creature he or she controls to its owner's hand. " +
+                "PN may\$ return another creature he or she controls to its owner's hand. " +
                 "If PN doesn't, sacrifice SN."
             );
         }
