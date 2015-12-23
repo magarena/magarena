@@ -59,8 +59,9 @@ Thanks to
   Mike, Guest, and ShawnieBoy for implementing new cards
   PalladiaMors for the Portuguese UI translation
   kannikkiy for the Russian UI translation
+  Pichoro, Acorntail and all at http://magicseteditor.sourceforge.net for cardBuilder components.
   http://mtgjson.com for card script data
-  http://mtgimage.com for card images
+  http://magiccards.info for card images
   http://game-icons.net for UI icons
   http://soundbible.com for sound effects.
   everyone on the CCGHQ forum, http://slightlymagic.net/forum/
