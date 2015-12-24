@@ -5,15 +5,6 @@ import java.util.Set;
 
 public enum MagicIcon {
 
-    // Future Sight symbols
-    FS_CREATURE("creature_black.png"),
-    FS_LAND("land_black.png"),
-    FS_INSTANT("instant_black.png"),
-    FS_ARTIFACT("artifact_black.png"),
-    FS_ENCHANTMENT("enchantment_black.png"),
-    FS_SORCERY("sorcery_black.png"),
-    FS_PLANESWALKER("planeswalker_black.png"),
-
     ILLEGAL_ICON("card_illegal.png"),
     LEGAL_ICON("card_legal.png"),
     BANNED_ICON("card_banned.png"),
