@@ -22,7 +22,6 @@ public enum MagicIcon {
     UPARROW_ICON("w_up.png"),
     DOWNARROW_ICON("w_down.png"),
     MENU_ICON("w_menu5@18.png"),
-    HEADER_ICON("headerIcon.png"),
     OPTIONS_ICON("w_book.png"),
     OPTIONBAR_ICON("w_book24.png"),
     REFRESH_ICON("w_refresh.png"),
@@ -54,7 +53,6 @@ public enum MagicIcon {
     MARKER_ICON("w_marker.png"),
 
     MISSING_ICON("missing2.png"),
-    ARENA("arena.png"),
     ANY("any.png"),
     FOLDER("folder.png"),
     LOG("log.png"),

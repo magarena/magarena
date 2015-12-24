@@ -39,11 +39,14 @@ public final class MagicImages {
     }
 
     // BufferedImages
-    public static final BufferedImage LOGO = loadImage("logo.png");
     public static final BufferedImage MISSING = loadImage("missing.png");
     public static final BufferedImage MISSING2 = loadImage("missing2.png");
     public static final BufferedImage MISSING_CARD = loadImage("missing_card.png");
-    public static final BufferedImage WIZARD = loadImage("wizard.png");
+    
+    // "M" logo variations.
+    public static final BufferedImage LOGO = loadImage("logo.png");
+    public static final BufferedImage MENU_LOGO = GraphicsUtils.scale(LOGO, 40, 40);
+    public static final BufferedImage APP_LOGO = GraphicsUtils.scale(LOGO, 32, 32);
 
     // default texture images
     public static final BufferedImage WOOD = loadTextureImage("wood.jpg");

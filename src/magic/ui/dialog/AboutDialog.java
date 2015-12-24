@@ -42,7 +42,7 @@ public class AboutDialog extends MagicDialog implements ActionListener {
         final JPanel aboutPanel = new JPanel();
         aboutPanel.setLayout(null);
 
-        final ImageIcon logoIcon = new ImageIcon(MagicImages.WIZARD);
+        final ImageIcon logoIcon = new ImageIcon(MagicImages.LOGO);
         final JLabel logoLabel = new JLabel(logoIcon);
         logoLabel.setSize(logoIcon.getIconWidth(), logoIcon.getIconHeight());
         aboutPanel.add(logoLabel);

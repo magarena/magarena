@@ -21,7 +21,6 @@ import javax.swing.ToolTipManager;
 import magic.data.CardDefinitions;
 import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
-import magic.data.MagicIcon;
 import magic.data.OSXAdapter;
 import magic.exception.DesktopNotSupportedException;
 import magic.model.MagicDeck;
@@ -69,7 +68,7 @@ public class MagicFrame extends JFrame implements IImageDragDropListener {
 
         // Setup frame.
         this.setTitle(String.format("%s [%s]", frameTitle, UiString.get(_S1)));
-        this.setIconImage(MagicImages.getIcon(MagicIcon.ARENA).getImage());
+        this.setIconImage(MagicImages.APP_LOGO);
         setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         addWindowListeners();
         registerForMacOSXEvents();
