@@ -102,8 +102,9 @@ public class PTFrame {
             return ResourceManager.loyaltyUp;
         } else if (activation.startsWith("0")) {
             return ResourceManager.loyaltyEven;
-        } else
+        } else {
             return ResourceManager.loyaltyDown;
+        }
     }
 
     private static String getLoyaltyPanelText(String string) {
