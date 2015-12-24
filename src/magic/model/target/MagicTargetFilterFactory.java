@@ -2745,6 +2745,7 @@ public class MagicTargetFilterFactory {
 
         // player
         single.put("opponent", OPPONENT);
+        single.put("your opponents", OPPONENT);
         single.put("other player", OPPONENT);
         single.put("player", PLAYER);
         single.put("player who lost life this turn", PLAYER_LOST_LIFE);
