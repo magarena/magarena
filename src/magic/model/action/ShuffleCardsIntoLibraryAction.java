@@ -6,15 +6,16 @@ import magic.model.MagicCardList;
 import magic.model.MagicPlayer;
 import magic.model.MagicLocationType;
 
+import java.util.List;
 import java.util.Set;
 import java.util.HashSet;
 
 public class ShuffleCardsIntoLibraryAction extends MagicAction {
 
-    private MagicCardList cards;
+    private List<MagicCard> cards;
     private MagicLocationType from;
 
-    public ShuffleCardsIntoLibraryAction(final MagicCardList aCards, final MagicLocationType aFrom) {
+    public ShuffleCardsIntoLibraryAction(final List<MagicCard> aCards, final MagicLocationType aFrom) {
         cards = aCards;
         from = aFrom;
     }
