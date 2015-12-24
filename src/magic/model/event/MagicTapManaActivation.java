@@ -1,10 +1,10 @@
 package magic.model.event;
 
-import magic.model.MagicManaType;
-import magic.model.MagicPermanent;
-
 import java.util.Arrays;
 import java.util.List;
+
+import magic.model.MagicManaType;
+import magic.model.MagicPermanent;
 
 public class MagicTapManaActivation extends MagicManaActivation {
 
@@ -22,4 +22,5 @@ public class MagicTapManaActivation extends MagicManaActivation {
     public static final MagicManaActivation Black = new MagicTapManaActivation(MagicManaType.getList("{B}"));
     public static final MagicManaActivation Red   = new MagicTapManaActivation(MagicManaType.getList("{R}"));
     public static final MagicManaActivation Green = new MagicTapManaActivation(MagicManaType.getList("{G}"));
+    public static final MagicManaActivation Colorless = new MagicTapManaActivation(MagicManaType.getList("{C}"));
 }
