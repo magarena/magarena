@@ -1,17 +1,15 @@
 package magic.model.mstatic;
 
+import java.util.Set;
+
+import magic.model.MagicAbility;
 import magic.model.MagicCopyMap;
 import magic.model.MagicCounterType;
-import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPowerToughness;
-import magic.model.MagicType;
-import magic.model.target.MagicTargetFilterFactory;
 import magic.model.MagicSubType;
-import magic.model.MagicAbility;
-import magic.model.event.*;
-
-import java.util.Set;
+import magic.model.event.MagicTapManaActivation;
+import magic.model.target.MagicTargetFilterFactory;
 
 public class MagicPermanentStatic implements Comparable<MagicPermanentStatic> {
     public static final MagicPermanentStatic CountersEffect = new MagicPermanentStatic(
@@ -65,6 +63,12 @@ public class MagicPermanentStatic implements Comparable<MagicPermanentStatic> {
                 if (permanent.hasSubType(MagicSubType.Forest)) {
                     permanent.addAbility(MagicTapManaActivation.Green);
                 }
+                Set<MagicSubType> basicTypes = MagicSubType.ALL_BASIC_LANDS;
+                basicTypes.removeAll(permanent.getSubTypes());
+                if (permanent.isBasic() && basicTypes.containsAll(MagicSubType.ALL_BASIC_LANDS)) {//A basic land with no basic subtypes
+                    permanent.addAbility(MagicTapManaActivation.Colorless);
+                }
+
             }
         }
     );
