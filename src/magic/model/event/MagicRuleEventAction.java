@@ -2957,14 +2957,11 @@ public enum MagicRuleEventAction {
     }
 
     private static String renameThisThat(final String text) {
-        final String thing = "(permanent|creature|artifact|land|player|opponent|spell or ability|spell|ability)";
-        final String evenQuotes = "(?=([^\"]*'[^\"]*')*[^\"]*$)";
-
-        final String replaceThis = text.replaceAll("\\b(T|t)his " + thing + "( |\\.|'s|\\b)" + evenQuotes, "SN$3");
+        final String replaceThis = text.replaceAll("\\b(T|t)his " + ARG.THING + "( |\\.|'s|\\b)" + ARG.EVENQUOTES, "SN$3");
 
         // only perform 'that' replacement for part of text before before first occurrence of 'target'
         final String[] parts = replaceThis.replaceAll("\\b(T|t)arget\\b", "|$1arget|").split("\\|");
-        parts[0] = parts[0].replaceAll("\\b(T|t)hat " + thing + "( |\\.|'s|\\b)" + evenQuotes, "RN$3");
+        parts[0] = parts[0].replaceAll("\\b(T|t)hat " + ARG.THING + "( |\\.|'s|\\b)" + ARG.EVENQUOTES, "RN$3");
         final String result = String.join("", parts);
         return result;
     }

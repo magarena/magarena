@@ -21,6 +21,8 @@ public class ARG {
     public static final String CHOICE = "(?<choice>(a|an|another|target) [^\\.]+?)";
     public static final String CARD   = "(?<choice>[^\\.]* card [^\\.]+?)";
     public static final String GRAVEYARD = "(?<choice>[^\\.]* card [^\\.]+? graveyard)";
+    public static final String THING = "(permanent|creature|artifact|land|player|opponent|spell or ability|spell|ability)";
+    public static final String EVENQUOTES = "(?=([^\"]*'[^\"]*')*[^\"]*$)";
     
     public static final String NUMBER = "(?<number>[0-9]+)";
     public static int number(final Matcher m) {

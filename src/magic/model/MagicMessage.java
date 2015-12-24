@@ -5,6 +5,7 @@ import java.util.Iterator;
 import java.util.stream.Collectors;
 import magic.model.phase.MagicPhaseType;
 import magic.model.stack.MagicCardOnStack;
+import magic.model.ARG;
 
 public class MagicMessage {
 
@@ -69,7 +70,7 @@ public class MagicMessage {
             .replaceAll("PN", player.toString())
             .replaceAll("SN", getCardToken(source))
             .replaceAll("RN", getCardToken(ref))
-            .replaceAll("\\bX\\b", getXCost(ref))
+            .replaceAll("\\bX\\b" + ARG.EVENQUOTES, getXCost(ref))
             ;
     }
 
