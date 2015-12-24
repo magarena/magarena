@@ -9,7 +9,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import javax.swing.ImageIcon;
-
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.model.DuelPlayerConfig;
@@ -26,10 +25,6 @@ import magic.ui.utility.GraphicsUtils;
 import magic.utility.MagicResources;
 
 public final class MagicImages {
-
-    private static final Map<MagicIcon, ImageIcon> manaIcons = new HashMap<>();
-    private static final Map<MagicIcon, ImageIcon> icons = new HashMap<>();
-    private static final Map<String, PlayerAvatar> avatarsMap = new HashMap<>();
 
     public static final BufferedImage BACK_IMAGE;
     static {
@@ -55,6 +50,10 @@ public final class MagicImages {
     public static final BufferedImage GRANITE2 = loadTextureImage("granite2.jpg");
     public static final BufferedImage OPAL = loadTextureImage("opal.jpg");
     public static final BufferedImage OPAL2 = loadTextureImage("opal2.jpg");
+
+    private static final Map<MagicIcon, ImageIcon> manaIcons = new HashMap<>();
+    private static final Map<MagicIcon, ImageIcon> icons = new HashMap<>();
+    private static final Map<String, PlayerAvatar> avatarsMap = new HashMap<>();
 
 
     /**
