@@ -4,6 +4,6 @@ value=2.674
 rarity=U
 type=Artifact
 cost={5}
-ability={X}, {T}: Target creature you control gets +X/+X until end of turn. Destroy it at the beginning of the next end step.
+ability={X}, {T}: Target creature you control gets +X/+X until end of turn.~Destroy *it* at the beginning of the next end step.
 timing=artifact
 oracle={X}, {T}: Target creature you control gets +X/+X until end of turn. Destroy it at the beginning of the next end step.
