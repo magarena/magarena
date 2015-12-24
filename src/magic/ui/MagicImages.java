@@ -51,7 +51,8 @@ public final class MagicImages {
     public static final BufferedImage OPAL = loadTextureImage("opal.jpg");
     public static final BufferedImage OPAL2 = loadTextureImage("opal2.jpg");
 
-    private static final Map<MagicIcon, ImageIcon> manaIcons = new HashMap<>();
+    private static final Map<MagicIcon, ImageIcon> smallManaIcons = new HashMap<>();
+    private static final Map<MagicIcon, ImageIcon> bigManaIcons = new HashMap<>();
     private static final Map<MagicIcon, ImageIcon> icons = new HashMap<>();
     private static final Map<String, PlayerAvatar> avatarsMap = new HashMap<>();
 
@@ -101,25 +102,20 @@ public final class MagicImages {
         return ImageFileIO.toImg(MagicResources.getTextureImageUrl(name), MISSING_SMALL);
     }
 
-    private static ImageIcon getSizedManaIcon(MagicIcon manaIcon, boolean big) {
-        return big
-                ? new ImageIcon(GraphicsUtils.scale(loadManaImage(manaIcon), 25, 25))
-                : new ImageIcon(GraphicsUtils.scale(loadManaImage(manaIcon), 15, 15));
-    }
-
-    private static ImageIcon getManaIcon(MagicIcon manaIcon, boolean isBigIcon) {
-        if (!manaIcons.containsKey(manaIcon)) {
-            manaIcons.put(manaIcon, getSizedManaIcon(manaIcon, isBigIcon));
-        }
-        return getSizedManaIcon(manaIcon, isBigIcon);
-    }
-
     public static ImageIcon getSmallManaIcon(MagicIcon manaIcon) {
-        return getManaIcon(manaIcon, false);
+        if (!smallManaIcons.containsKey(manaIcon)) {
+            Image image = GraphicsUtils.scale(loadManaImage(manaIcon), 15, 15);
+            smallManaIcons.put(manaIcon, new ImageIcon(image));
+        }
+        return smallManaIcons.get(manaIcon);
     }
 
     public static ImageIcon getBigManaIcon(MagicIcon manaIcon) {
-        return getManaIcon(manaIcon, true);
+        if (!bigManaIcons.containsKey(manaIcon)) {
+            Image image = GraphicsUtils.scale(loadManaImage(manaIcon), 25, 25);
+            bigManaIcons.put(manaIcon, new ImageIcon(image));
+        }
+        return bigManaIcons.get(manaIcon);
     }
 
     public static ImageIcon getIcon(MagicColor c) {
