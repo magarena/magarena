@@ -5,21 +5,6 @@ def Control_Since_Last_Turn = new MagicCondition() {
     }
 }
 
-def DestroyAtEoT = new AtEndOfTurnTrigger() {
-    @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {
-        return new MagicEvent(
-            permanent,
-            this,
-            "Destroy SN."
-        );
-    }
-    @Override
-    public void executeEvent(final MagicGame game, final MagicEvent event) {
-        game.doAction(new DestroyAction(event.getPermanent()));
-    }
-}
-
 [
     new MagicPermanentActivation(
         [Control_Since_Last_Turn],
@@ -47,7 +32,7 @@ def DestroyAtEoT = new AtEndOfTurnTrigger() {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTarget(game, {
                 game.doAction(new DealDamageAction(event.getSource(), it, 1));
-                game.doAction(new AddTriggerAction(event.getPermanent(), DestroyAtEoT))
+                game.doAction(new AddTriggerAction(event.getPermanent(), AtEndOfTurnTrigger.Destroy))
             });
         }
     }
