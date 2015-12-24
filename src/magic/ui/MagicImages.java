@@ -43,8 +43,8 @@ public final class MagicImages {
     public static final BufferedImage MISSING2 = loadImage("missing2.png");
     public static final BufferedImage MISSING_CARD = loadImage("missing_card.png");
     
-    // "M" logo variations. Based on assumption that logo.png is 512 x 512.
-    public static final BufferedImage LOGO = GraphicsUtils.scale(loadImage("logo.png"), 160, 160);
+    // "M" logo variations.
+    public static final BufferedImage LOGO = loadImage("logo.png");
     public static final BufferedImage MENU_LOGO = GraphicsUtils.scale(LOGO, 40, 40);
     public static final BufferedImage APP_LOGO = GraphicsUtils.scale(LOGO, 32, 32);
 
