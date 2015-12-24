@@ -35,7 +35,7 @@ public final class MagicImages {
 
     // when the preferred image or icon is missing.
     public static final BufferedImage MISSING_BIG = loadImage("missing.png");
-    public static final BufferedImage MISSING_SMALL = loadImage("missing2.png");
+    private static final BufferedImage MISSING_SMALL = loadImage("missing2.png");
     public static final BufferedImage MISSING_CARD = loadImage("missing_card.png");
     
     // "M" logo variations.
