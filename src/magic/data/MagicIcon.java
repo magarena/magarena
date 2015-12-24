@@ -244,7 +244,7 @@ public enum MagicIcon {
 
     public static final Set<MagicIcon> COLOR_MANA = EnumSet.range(MANA_WHITE, MANA_GREEN);
     public static final Set<MagicIcon> HYBRID_COLOR_MANA = EnumSet.range(MANA_WHITE_BLUE, MANA_GREEN_BLUE);
-    public static final Set<MagicIcon> COST_ICON = EnumSet.range(MANA_UNTAP,MANA_X);
+    private static final Set<MagicIcon> MANA_ICONS = EnumSet.range(MANA_UNTAP, MANA_X);
 
     private final String iconFilename;
 
@@ -261,7 +261,7 @@ public enum MagicIcon {
     }
 
     public boolean isManaIcon() {
-        return COST_ICON.contains(this);
+        return MANA_ICONS.contains(this);
     }
 
 }
