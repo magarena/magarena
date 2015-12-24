@@ -121,6 +121,28 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    DestroyAtEndOfTurn(
+        "destroy " + ARG.PERMANENTS + " at the beginning of the next end step(\\.|,)?",
+        MagicTargetHint.Negative,
+        MagicTiming.Removal,
+        "Destroy"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                        game.doValidAction(it, new AddTurnTriggerAction(
+                            it,
+                            AtEndOfTurnTrigger.Destroy
+                        ));
+                    }
+                }
+            };
+        }
+    },
     Destroy(
         "destroy " + ARG.PERMANENTS + "\\.(?<noregen> (They|It) can't be regenerated\\.)?",
         MagicTargetHint.Negative,

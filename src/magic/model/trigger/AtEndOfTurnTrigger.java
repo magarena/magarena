@@ -6,6 +6,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.action.RemoveFromPlayAction;
 import magic.model.action.SacrificeAction;
+import magic.model.action.DestroyAction;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 
@@ -54,6 +55,21 @@ public abstract class AtEndOfTurnTrigger extends MagicTrigger<MagicPlayer> {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new SacrificeAction(event.getPermanent()));
+        }
+    };
+    
+    public static final AtEndOfTurnTrigger Destroy = new AtEndOfTurnTrigger() {
+        @Override
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {
+            return new MagicEvent(
+                permanent,
+                this,
+                "Destroy SN."
+            );
+        }
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.doAction(new DestroyAction(event.getPermanent()));
         }
     };
 
