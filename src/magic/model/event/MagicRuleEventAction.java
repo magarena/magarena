@@ -7,25 +7,7 @@ import java.util.regex.Pattern;
 
 import magic.data.EnglishToInt;
 import magic.data.CardDefinitions;
-import magic.model.ARG;
-import magic.model.MagicAbility;
-import magic.model.MagicAbilityList;
-import magic.model.MagicCard;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicCopyable;
-import magic.model.MagicCounterType;
-import magic.model.MagicGame;
-import magic.model.MagicDamage;
-import magic.model.MagicLocationType;
-import magic.model.MagicManaCost;
-import magic.model.MagicPermanent;
-import magic.model.MagicPermanentState;
-import magic.model.MagicPlayer;
-import magic.model.MagicSource;
-import magic.model.MagicMessage;
-import magic.model.MagicAmount;
-import magic.model.MagicAmountParser;
-import magic.model.MagicAmountFactory;
+import magic.model.*;
 import magic.model.action.*;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicChoiceFactory;
@@ -1862,6 +1844,28 @@ public enum MagicRuleEventAction {
                     final int amount = count.getAmount(event);
                     for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
                         game.doAction(new MillLibraryAction(it, amount));
+                    }
+                }
+            };
+        }
+    },
+    CantCastSpells(
+        ARG.PLAYERS + " can't cast spells this turn(\\.|,)?",
+        MagicTargetHint.Negative,
+        MagicTiming.FirstMain,
+        "Silence"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
+                        game.doAction(new ChangePlayerStateAction(
+                            it,
+                            MagicPlayerState.CantCastSpells
+                        ));
                     }
                 }
             };
