@@ -6,11 +6,6 @@ import magic.model.MagicPlayer;
 import magic.model.phase.MagicMainPhase;
 
 class TestNaturesClaim extends TestGameBuilder {
-    /**
-     * Raging Ravine changed into 3/3 RG creature cannot block Guardian of the
-     * Guildpack which has protection from monocolored
-     * Fixed by making the protection check use getColorFlags in addition to getColoredTypeg
-     */
     public MagicGame getGame() {
         final MagicDuel duel=createDuel();
         final MagicGame game=duel.nextGame();
