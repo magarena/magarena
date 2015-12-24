@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import magic.data.GeneralConfig;
+import magic.data.MagicIcon;
 import magic.data.MagicPredefinedFormat;
 import magic.data.MagicSets;
 
@@ -42,6 +43,10 @@ public final class MagicResources {
             System.err.println(filename + " : " + ex.getMessage());
             return "";
         }
+    }
+
+    public static URL getManaImageUrl(MagicIcon manaIcon) {
+        return instance.getClass().getResource("/magic/data/icons/mana/" + manaIcon.getFilename());
     }
 
     public static URL getImageUrl(final String imageFilename) {

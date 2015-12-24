@@ -89,6 +89,10 @@ public final class MagicImages {
         return icons.get(icon);
     }
 
+    private static BufferedImage loadManaImage(MagicIcon manaIcon) {
+        return ImageFileIO.toImg(MagicResources.getManaImageUrl(manaIcon), MISSING_SMALL);
+    }
+
     private static BufferedImage loadImage(String name) {
         return ImageFileIO.toImg(MagicResources.getImageUrl(name), MISSING_SMALL);
     }
@@ -99,8 +103,8 @@ public final class MagicImages {
 
     private static ImageIcon getSizedManaIcon(MagicIcon manaIcon, boolean big) {
         return big
-                ? new ImageIcon(GraphicsUtils.scale(loadImage(manaIcon.getFilename()), 25, 25))
-                : new ImageIcon(GraphicsUtils.scale(loadImage(manaIcon.getFilename()), 15, 15));
+                ? new ImageIcon(GraphicsUtils.scale(loadManaImage(manaIcon), 25, 25))
+                : new ImageIcon(GraphicsUtils.scale(loadManaImage(manaIcon), 15, 15));
     }
 
     private static ImageIcon getManaIcon(MagicIcon manaIcon, boolean isBigIcon) {
