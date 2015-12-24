@@ -262,11 +262,17 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
     @SuppressWarnings("serial")
     private static class ManaCostCellRenderer extends DefaultTableCellRenderer {
 
+        private MagicManaCost getManaCost(MagicCardDefinition card, Object value) {
+            return card.isLand() || !card.isValid() || (card.isHidden() && card.isDoubleFaced())
+                ? null
+                : (MagicManaCost) value;
+        }
+
         @Override
         public Component getTableCellRendererComponent(final JTable table, final Object value, final boolean isSelected, final boolean hasFocus, final int row, final int col) {
 
             final MagicCardDefinition card = ((CardTableModel)table.getModel()).getCardDef(row);
-            final CostPanel myRender = new CostPanel(card.isLand() || !card.isValid() || card.isHidden() && card.isDoubleFaced() ? null : (MagicManaCost)value);
+            final CostPanel myRender = new CostPanel(getManaCost(card, value));
 
             // match border and background formatting with default
             final JComponent defaultRender = (JComponent) super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, col);
