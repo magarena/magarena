@@ -110,7 +110,7 @@ public abstract class AbstractScreen extends JPanel {
     }
 
     public boolean hasOptionsMenu() {
-       return this instanceof IOptionsMenu;
+        return this instanceof IOptionsMenu;
     };
 
     private boolean hasActionBar() {
@@ -136,19 +136,18 @@ public abstract class AbstractScreen extends JPanel {
 
     public void setBusy(final boolean isBusy) {
         if (isBusy) {
-          final ImageIcon ii = MagicImages.getIcon(MagicIcon.BUSY);
-          final JPanel pnl = new JPanel(new MigLayout("insets 0, gap 0"));
-          pnl.setOpaque(false);
-          final JLabel lbl = new JLabel(ii);
-          lbl.setHorizontalAlignment(SwingConstants.CENTER);
-          lbl.setOpaque(false);
-          pnl.add(lbl, "w 100%, h 100%");
-          frame.setGlassPane(pnl);
-          pnl.setVisible(true);
-      } else {
-          frame.getGlassPane().setVisible(false);
-      }
-
+            final ImageIcon ii = MagicImages.getIcon(MagicIcon.BUSY);
+            final JPanel pnl = new JPanel(new MigLayout("insets 0, gap 0"));
+            pnl.setOpaque(false);
+            final JLabel lbl = new JLabel(ii);
+            lbl.setHorizontalAlignment(SwingConstants.CENTER);
+            lbl.setOpaque(false);
+            pnl.add(lbl, "w 100%, h 100%");
+            frame.setGlassPane(pnl);
+            pnl.setVisible(true);
+        } else {
+            frame.getGlassPane().setVisible(false);
+        }
     }
 
 }

@@ -1982,9 +1982,9 @@ public enum MagicRuleEventAction {
         }
     },
     PseudoScry(
-       "Look at the top card of your library\\. You may put that card on the bottom of your library(\\.|,)?",
-       MagicTiming.Draw,
-       "Scry"
+        "Look at the top card of your library\\. You may put that card on the bottom of your library(\\.|,)?",
+        MagicTiming.Draw,
+        "Scry"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {

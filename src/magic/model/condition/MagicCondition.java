@@ -389,25 +389,25 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
 
     public static MagicCondition TWO_OR_MORE_BLUE_PERMANENTS = new MagicCondition() {
         public boolean accept(final MagicSource source) {
-           return source.getController().getNrOfPermanents(MagicColor.Blue)>=2;
+            return source.getController().getNrOfPermanents(MagicColor.Blue)>=2;
         }
     };
 
     public static MagicCondition TWO_OR_MORE_BLACK_PERMANENTS = new MagicCondition() {
         public boolean accept(final MagicSource source) {
-           return source.getController().getNrOfPermanents(MagicColor.Black)>=2;
+            return source.getController().getNrOfPermanents(MagicColor.Black)>=2;
         }
     };
 
     public static MagicCondition TWO_OR_MORE_RED_PERMANENTS = new MagicCondition() {
         public boolean accept(final MagicSource source) {
-           return source.getController().getNrOfPermanents(MagicColor.Red)>=2;
+            return source.getController().getNrOfPermanents(MagicColor.Red)>=2;
         }
     };
 
     public static MagicCondition TWO_OR_MORE_GREEN_PERMANENTS = new MagicCondition() {
         public boolean accept(final MagicSource source) {
-           return source.getController().getNrOfPermanents(MagicColor.Green)>=2;
+            return source.getController().getNrOfPermanents(MagicColor.Green)>=2;
         }
     };
 

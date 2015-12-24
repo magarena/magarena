@@ -211,14 +211,14 @@ public enum CardProperty {
         }
     },
     FLIP() {
-      public void setProperty(final MagicCardDefinition card, final String value) {
-          card.setFlipCardName(value);
-      }
+        public void setProperty(final MagicCardDefinition card, final String value) {
+            card.setFlipCardName(value);
+        }
     },
     TRANSFORM() {
-      public void setProperty(final MagicCardDefinition card, final String value) {
-          card.setTransformCardName(value);
-      }
+        public void setProperty(final MagicCardDefinition card, final String value) {
+            card.setTransformCardName(value);
+        }
     },
     ORACLE() {
         public void setProperty(final MagicCardDefinition card, final String value) {

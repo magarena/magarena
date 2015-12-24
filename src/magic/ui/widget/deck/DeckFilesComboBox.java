@@ -22,13 +22,13 @@ public abstract class DeckFilesComboBox extends JComboBox<String> {
     private String[] getDeckNamesArray(final Path decksDirectory) {
         final List<String> deckNamesList = new ArrayList<>();
         try (DirectoryStream<Path> ds = Files.newDirectoryStream(decksDirectory, ALL_DECKS)) {
-          for (Path p : ds) {
-              deckNamesList.add(DeckUtils.getDeckNameFromFile(p));
-          }
-      } catch (IOException ex) {
+            for (Path p : ds) {
+                deckNamesList.add(DeckUtils.getDeckNameFromFile(p));
+            }
+        } catch (IOException ex) {
             System.err.println(ex);
-      }
-      return deckNamesList.toArray(new String[0]);
+        }
+        return deckNamesList.toArray(new String[0]);
     }
 
 }

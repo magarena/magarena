@@ -839,7 +839,7 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
             final MagicPermanent source = mpstatic.getPermanent();
             for (final MagicPlayer player : game.getPlayers()) {
                 if (mstatic.accept(game, source, source)) {
-                   player.apply(source, mstatic);
+                    player.apply(source, mstatic);
                 }
             }
         }

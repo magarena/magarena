@@ -177,11 +177,11 @@ public class CardDefinitions {
     }
     
     public static void loadCardDefinition(final String cardName) {
-         final File cardFile = new File(SCRIPTS_DIRECTORY, getCanonicalName(cardName) + ".txt");
-         if (cardFile.isFile() == false) {
-             throw new RuntimeException("card script file not found: " + cardFile);
-         }
-         loadCardDefinition(cardFile);
+        final File cardFile = new File(SCRIPTS_DIRECTORY, getCanonicalName(cardName) + ".txt");
+        if (cardFile.isFile() == false) {
+            throw new RuntimeException("card script file not found: " + cardFile);
+        }
+        loadCardDefinition(cardFile);
     }
 
     /**

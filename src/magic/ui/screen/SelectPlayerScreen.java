@@ -288,13 +288,13 @@ public abstract class SelectPlayerScreen
     @Override
     public MenuButton getRightAction() {
         return new MenuButton(UiString.get(_S9), new AbstractAction() {
-          @Override
-          public void actionPerformed(final ActionEvent e) {
-              setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-              doNextAction();
-              setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-          }
-      });
+            @Override
+            public void actionPerformed(final ActionEvent e) {
+                setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+                doNextAction();
+                setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+            }
+        });
     }
 
     @Override

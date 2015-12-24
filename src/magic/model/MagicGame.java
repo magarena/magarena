@@ -610,7 +610,7 @@ public class MagicGame {
             final MagicStatic mstatic = mpstatic.getStatic();
             final MagicPermanent source = mpstatic.getPermanent();
             if (mstatic.accept(game, source, source)) {
-               game.apply(source, mstatic);
+                game.apply(source, mstatic);
             }
         }
     }
@@ -1006,7 +1006,7 @@ public class MagicGame {
     }
 
     public boolean hasItem(final MagicSource source, final String desc) {
-       return stack.hasItem(source, desc) || pendingStack.hasItem(source, desc);
+        return stack.hasItem(source, desc) || pendingStack.hasItem(source, desc);
     }
 
     public void setPriorityPassed(final boolean passed) {

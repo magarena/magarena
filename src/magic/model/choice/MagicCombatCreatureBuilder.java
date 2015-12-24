@@ -24,7 +24,7 @@ public class MagicCombatCreatureBuilder {
                 return sdif;
             }
             return attacker1.permanent.compareTo(attacker2.permanent);
-         }
+        }
     };
 
     private final MagicGame game;

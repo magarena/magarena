@@ -90,7 +90,7 @@ class FilteredCardPoolPanel extends JPanel implements ICardFilterPanelListener {
         revalidate();
     }
 
-   void refreshContent() {
+    void refreshContent() {
         cardPool = filterPanel.getFilteredCards();
         cardPoolTable.setCards(cardPool);
         cardPoolTable.setTitle(getCardPoolTitle());

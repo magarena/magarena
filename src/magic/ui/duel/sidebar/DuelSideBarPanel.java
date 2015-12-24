@@ -196,7 +196,7 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
 
         public LayoutSlot(final JComponent component, final String constraints) {
             this.component = component;
-             this.constraints = constraints;
+            this.constraints = constraints;
         }
 
         public LayoutSlot(final JComponent component) {

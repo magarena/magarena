@@ -454,7 +454,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
                 for (final MagicPlayer player : game.getPlayers()) {
                 for (final MagicPermanent perm : player.getPermanents()) {
                     if (mstatic.accept(game, source, perm)) {
-                       perm.apply(source, mstatic);
+                        perm.apply(source, mstatic);
                     }
                 }}
             }

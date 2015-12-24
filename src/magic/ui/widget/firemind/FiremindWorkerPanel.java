@@ -193,8 +193,8 @@ public class FiremindWorkerPanel extends JPanel {
         protected String doInBackground() throws Exception {
             // restarts after 25 games
             while(true){
-              String[] arguments = new String[]{""};
-              FiremindQueueWorker.main(arguments);
+                String[] arguments = new String[]{""};
+                FiremindQueueWorker.main(arguments);
             }
         }
         @Override

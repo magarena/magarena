@@ -892,7 +892,7 @@ public class SwingGameController implements IUIGameController {
                 "There was a problem opening the reports folder at " +
                 MagicFileSystem.getDataPath(MagicFileSystem.DataPath.REPORTS).toString() +
                 " :-\n\n" + ex.getMessage()
-           );
+            );
         }
 
         setGamePaused(false);

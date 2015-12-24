@@ -214,12 +214,12 @@ public class MagicDuel {
 
     @SuppressWarnings("serial")
     private Properties getNewSortedProperties() {
-       return new Properties() {
-           @Override
-           public synchronized Enumeration<Object> keys() {
-               return Collections.enumeration(new TreeSet<>(super.keySet()));
-           }
-       };
+        return new Properties() {
+            @Override
+            public synchronized Enumeration<Object> keys() {
+                return Collections.enumeration(new TreeSet<>(super.keySet()));
+            }
+        };
     }
 
     private void load(final Properties properties) {

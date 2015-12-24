@@ -185,8 +185,8 @@ public class DeckPicker extends JPanel {
             sortDecksByFilename(decks);
             return decks.toArray(new MagicDeck[0]);
         } catch (IOException e) {
-           throw new RuntimeException(e);
-        }        
+            throw new RuntimeException(e);
+        }
     }
 
     /**
@@ -205,7 +205,7 @@ public class DeckPicker extends JPanel {
     private List<MagicDeck> loadDecks(final DirectoryStream<Path> ds) {
         final List<MagicDeck> decks = new ArrayList<>();
         for (final Path filePath : ds) {
-           final MagicDeck deck = loadDeck(filePath);
+            final MagicDeck deck = loadDeck(filePath);
             if (isValidFilteredDeck(deck)) {
                 decks.add(deck);
             }

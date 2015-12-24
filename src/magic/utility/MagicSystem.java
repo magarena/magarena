@@ -231,8 +231,8 @@ final public class MagicSystem {
             command.add("-jar");
             command.add(jarFile.getPath());
         } else {
-             // Sun property pointing to the main class and its arguments.
-             // Might not be defined on non Hotspot VM implementations.
+            // Sun property pointing to the main class and its arguments.
+            // Might not be defined on non Hotspot VM implementations.
             command.add("-cp \"");
             command.add(System.getProperty("java.class.path"));
             command.add("\" ");

@@ -207,12 +207,12 @@ public class MagicCardList extends ArrayList<MagicCard> implements MagicCopyable
                     if (!high||lowLeft==0||highCount==0||blocks==1) {
                         add(card);
                         spells.remove(index);
-                         spellCount++;
-                         if (high) {
-                             highCount++;
-                         } else {
-                             lowLeft--;
-                         }
+                        spellCount++;
+                        if (high) {
+                            highCount++;
+                        } else {
+                            lowLeft--;
+                        }
                     }
                 }
             }

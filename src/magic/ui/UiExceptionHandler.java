@@ -67,7 +67,7 @@ public class UiExceptionHandler extends FileExceptionHandler {
                     try {
                         final Path filePath = MagicFileSystem.getDataPath(MagicFileSystem.DataPath.LOGS).resolve("crash.png");
                         GraphicsUtils.doScreenshotToFile(container, filePath);
-                     } catch (Exception e) {
+                    } catch (Exception e) {
                         System.err.println("ScreenShot failed : " + e.toString());
                     }
                 }

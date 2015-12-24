@@ -97,7 +97,7 @@ public class FiremindClient {
         String filename = CardDefinitions.getCanonicalName(name)+"."+extension;
         File f = new File(scriptsDirectory.getAbsolutePath()+"/"+filename);
         if (f.exists()){
-          f.renameTo(new File(scriptOrigsDirectory.getAbsolutePath()+"/"+filename+".orig"));
+            f.renameTo(new File(scriptOrigsDirectory.getAbsolutePath()+"/"+filename+".orig"));
         }else{
             addedScripts.add(f.getAbsolutePath());
         }

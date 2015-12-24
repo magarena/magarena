@@ -115,6 +115,6 @@ public class MagicCombatCreature {
                 return sdif;
             }
             return blocker1.permanent.compareTo(blocker2.permanent);
-         }
+        }
     };
 }

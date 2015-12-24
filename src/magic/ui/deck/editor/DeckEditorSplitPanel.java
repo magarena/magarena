@@ -100,10 +100,10 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
         // set initial card image
         if (cardPoolDefs.isEmpty()) {
             sideBarPanel.setCard(MagicCardDefinition.UNKNOWN);
-         } else {
-             final int index = MagicRandom.nextRNGInt(cardPoolDefs.size());
-             sideBarPanel.setCard(cardPoolDefs.get(index));
-         }
+        } else {
+            final int index = MagicRandom.nextRNGInt(cardPoolDefs.size());
+            sideBarPanel.setCard(cardPoolDefs.get(index));
+        }
 
     }
 

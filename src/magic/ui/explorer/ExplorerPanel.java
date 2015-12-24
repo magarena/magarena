@@ -75,17 +75,17 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
             migLayout.setColumnConstraints("[" + imageSize.width + "!][100%]");
             setLayout(migLayout);
             add(sideBarPanel, "h 100%, w " + imageSize.width + "!");
-            add(rhs, "w 100%, h 100%");                    
+            add(rhs, "w 100%, h 100%");
         }
         
         // set initial card image
         if (cardPoolDefs.isEmpty()) {
             sideBarPanel.setCard(MagicCardDefinition.UNKNOWN);
-         } else {
-             final int index = MagicRandom.nextRNGInt(cardPoolDefs.size());
-             sideBarPanel.setCard(cardPoolDefs.get(index));
-//             sideBarPanel.setCard(CardDefinitions.getCard("Damnation"));
-         }
+        } else {
+            final int index = MagicRandom.nextRNGInt(cardPoolDefs.size());
+            sideBarPanel.setCard(cardPoolDefs.get(index));
+            //sideBarPanel.setCard(CardDefinitions.getCard("Damnation"));
+        }
 
     }
 
