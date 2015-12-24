@@ -154,6 +154,7 @@ public class ResourceManager {
     public static final BufferedImage multiSymbol = getImage("multiSymbol.png");
     public static final BufferedImage planeswalkerSymbol = getImage("planeswalkerSymbol.png");
     public static final BufferedImage sorcerySymbol = getImage("sorcerySymbol.png");
+    public static final BufferedImage magarenaSymbol = getImage("magarenaSymbol.png");
     public static final BufferedImage artifactTransform = getFrame("transform/acard.jpg");
     public static final BufferedImage artifactHidden = getFrame("transform/acard2.jpg");
     public static final BufferedImage colorlessTransform = getFrame("transform/ccard.jpg");
