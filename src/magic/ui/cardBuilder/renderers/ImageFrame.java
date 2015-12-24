@@ -110,7 +110,7 @@ public class ImageFrame {
                 return defaultSymbol(type);
             }
         }
-        return null;
+        return ResourceManager.newFrame(ResourceManager.magarenaSymbol);
     }
 
     public static BufferedImage getCardImage(IRenderableCard cardDef) {
