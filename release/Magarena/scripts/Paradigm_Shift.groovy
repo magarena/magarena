@@ -20,14 +20,7 @@
                     MagicLocationType.Exile
                 ));
             }
-            for (final MagicCard cardGraveyard : graveyard) {
-                game.doAction(new ShiftCardAction(
-                    cardGraveyard,
-                    MagicLocationType.Graveyard,
-                    MagicLocationType.TopOfOwnersLibrary
-                ));
-            }
-            game.doAction(new ShuffleLibraryAction(player));
+            game.doAction(new ShuffleCardsIntoLibraryAction(graveyard, MagicLocationType.Graveyard))
         }
     }
 ]

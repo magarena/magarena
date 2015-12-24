@@ -12,14 +12,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicPlayer player : game.getAPNAP()) {
                 final MagicCardList hand = new MagicCardList(player.getHand());
-                for (final MagicCard card : hand) {
-                    game.doAction(new ShiftCardAction(
-                        card,
-                        MagicLocationType.OwnersHand,
-                        MagicLocationType.TopOfOwnersLibrary
-                    ));
-                }
-                game.doAction(new ShuffleLibraryAction(player));
+                game.doAction(new ShuffleCardsIntoLibraryAction(hand, MagicLocationType.OwnersHand));
                 game.doAction(new DrawAction(player,hand.size()));
             }
         }

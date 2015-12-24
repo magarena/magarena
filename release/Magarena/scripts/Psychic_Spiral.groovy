@@ -15,14 +15,7 @@
             event.processTargetPlayer(game, {
                 final MagicPlayer player = event.getPlayer();
                 final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
-                for (final MagicCard card : graveyard) {
-                    game.doAction(new ShiftCardAction(
-                        card,
-                        MagicLocationType.Graveyard,
-                        MagicLocationType.TopOfOwnersLibrary
-                    ));
-                }
-                game.doAction(new ShuffleLibraryAction(player));
+                game.doAction(new ShuffleCardsIntoLibraryAction(graveyard, MagicLocationType.Graveyard))
                 game.doAction(new MillLibraryAction(it,graveyard.size()));
             });
         }

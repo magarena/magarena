@@ -91,14 +91,10 @@ def FATESEAL = {
                         MagicLocationType.Exile
                     ));
                 }
-                for (final MagicCard hand : new MagicCardList(it.getHand())) {
-                    game.doAction(new ShiftCardAction(
-                        hand, 
-                        MagicLocationType.OwnersHand,
-                        MagicLocationType.TopOfOwnersLibrary
-                    ));
-                }
-                game.doAction(new ShuffleLibraryAction(it));
+                game.doAction(new ShuffleCardsIntoLibraryAction(
+                    new MagicCardList(it.getHand()),
+                    MagicLocationType.OwnersHand,
+                ));
             });
         }
     }

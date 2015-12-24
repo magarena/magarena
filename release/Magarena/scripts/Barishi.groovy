@@ -15,14 +15,10 @@
                 MagicLocationType.Graveyard,
                 MagicLocationType.Exile
             ));
-            CREATURE_CARD_FROM_GRAVEYARD.filter(event) each {
-                game.doAction(new ShiftCardAction(
-                    it, 
-                    MagicLocationType.Graveyard,
-                    MagicLocationType.TopOfOwnersLibrary
-                ));
-            }
-            game.doAction(new ShuffleLibraryAction(event.getPlayer()));
+            game.doAction(new ShuffleCardsIntoLibraryAction(
+                CREATURE_CARD_FROM_GRAVEYARD.filter(event),
+                MagicLocationType.Graveyard
+            ));
         }
     }
 ]
