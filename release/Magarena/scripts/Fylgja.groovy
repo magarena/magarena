@@ -22,7 +22,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-           game.doAction(new PreventDamageAction(event.getRefPermanent(), 1));
+            game.doAction(new PreventDamageAction(event.getRefPermanent(), 1));
         }
     }
 ]

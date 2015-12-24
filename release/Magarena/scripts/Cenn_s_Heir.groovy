@@ -21,7 +21,6 @@ def ATTACKING_KITHKIN = new MagicPermanentFilterImpl() {
             final MagicPermanent permanent = event.getPermanent();
             final int amount = ATTACKING_KITHKIN.except(event.getPermanent()).filter(player).size()
             game.doAction(new ChangeTurnPTAction(event.getPermanent(), amount, amount));
-            
         }
     }
 ]

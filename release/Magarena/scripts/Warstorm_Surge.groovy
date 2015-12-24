@@ -19,7 +19,7 @@
             final MagicPermanent permanent = event.getRefPermanent();
             event.processTarget(game, {
                 game.doAction(new DealDamageAction(permanent,it,permanent.getPower()));
-           });
+            });
         }
     }
 ]

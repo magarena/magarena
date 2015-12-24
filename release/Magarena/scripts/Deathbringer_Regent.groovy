@@ -3,7 +3,7 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return (permanent.hasState(MagicPermanentState.CastFromHand) &&
-                   game.getNrOfPermanents(CREATURE.except(permanent)) >=5) ? 
+                   game.getNrOfPermanents(CREATURE.except(permanent)) >=5) ?
                 new MagicEvent(
                     permanent,
                     this,

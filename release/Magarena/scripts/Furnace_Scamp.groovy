@@ -12,7 +12,7 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-             final MagicPermanent it = event.getPermanent();
+            final MagicPermanent it = event.getPermanent();
             if (event.isYes() && it.isValid()) {
                 game.doAction(new SacrificeAction(it));
                 game.doAction(new DealDamageAction(it, event.getRefPlayer(), 3));

@@ -18,8 +18,8 @@
                     top,
                     MagicLocationType.OwnersLibrary,
                     top.hasType(MagicType.Land) ?
-                      MagicLocationType.OwnersHand :
-                      MagicLocationType.Graveyard
+                        MagicLocationType.OwnersHand :
+                        MagicLocationType.Graveyard
                 ));
             }
         }

@@ -23,7 +23,7 @@
                     game.doAction(new ReanimateAction(
                         card,
                         event.getPlayer()
-                     ));
+                    ));
                 }
                 game.doAction(ChangeStateAction.Set(
                     event.getPermanent(),
