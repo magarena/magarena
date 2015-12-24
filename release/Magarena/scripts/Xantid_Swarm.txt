@@ -6,7 +6,7 @@ type=Creature
 subtype=Insect
 cost={G}
 pt=0/1
-ability=flying
+ability=Flying;\
+        Whenever SN attacks, defending player can't cast spells this turn.
 timing=main
-requires_groovy_code
 oracle=Flying\nWhenever Xantid Swarm attacks, defending player can't cast spells this turn.

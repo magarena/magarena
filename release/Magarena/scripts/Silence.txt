@@ -4,6 +4,6 @@ value=4.250
 rarity=R
 type=Instant
 cost={W}
+effect=Your opponents can't cast spells this turn.
 timing=fmain
-requires_groovy_code
 oracle=Your opponents can't cast spells this turn.

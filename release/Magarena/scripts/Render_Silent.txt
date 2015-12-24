@@ -4,6 +4,6 @@ value=3.863
 rarity=R
 type=Instant
 cost={W}{U}{U}
+effect=Counter target spell.~Its controller can't cast spells this turn.
 timing=counter
-requires_groovy_code
 oracle=Counter target spell. Its controller can't cast spells this turn.

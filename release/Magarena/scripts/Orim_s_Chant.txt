@@ -5,6 +5,6 @@ rarity=R
 type=Instant
 cost={W}
 ability=Kicker {W}
+effect=Target player can't cast spells this turn.~If SN was kicked, creatures can't attack this turn.
 timing=tapping
-requires_groovy_code
 oracle=Kicker {W}\nTarget player can't cast spells this turn.\nIf Orim's Chant was kicked, creatures can't attack this turn.
