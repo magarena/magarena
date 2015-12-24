@@ -38,9 +38,9 @@ public final class MagicImages {
         BACK_IMAGE = GraphicsUtils.scale(image, size.width, size.height);
     }
 
-    // BufferedImages
-    public static final BufferedImage MISSING = loadImage("missing.png");
-    public static final BufferedImage MISSING2 = loadImage("missing2.png");
+    // when the preferred image or icon is missing.
+    public static final BufferedImage MISSING_BIG = loadImage("missing.png");
+    public static final BufferedImage MISSING_SMALL = loadImage("missing2.png");
     public static final BufferedImage MISSING_CARD = loadImage("missing_card.png");
     
     // "M" logo variations.
@@ -91,11 +91,11 @@ public final class MagicImages {
     }
 
     private static BufferedImage loadImage(String name) {
-        return ImageFileIO.toImg(MagicResources.getImageUrl(name), MISSING2);
+        return ImageFileIO.toImg(MagicResources.getImageUrl(name), MISSING_SMALL);
     }
 
     private static BufferedImage loadTextureImage(String name) {
-        return ImageFileIO.toImg(MagicResources.getTextureImageUrl(name), MISSING2);
+        return ImageFileIO.toImg(MagicResources.getTextureImageUrl(name), MISSING_SMALL);
     }
 
     private static ImageIcon getSizedManaIcon(MagicIcon manaIcon, boolean big) {
@@ -225,7 +225,7 @@ public final class MagicImages {
 
     private static BufferedImage getAvatarImage(PlayerProfile profile) {
         File file = new File(profile.getProfilePath().resolve("player.avatar").toString());
-        return file.exists() ? ImageFileIO.toImg(file, MISSING) : MISSING;
+        return file.exists() ? ImageFileIO.toImg(file, MISSING_BIG) : MISSING_BIG;
     }
 
     public static PlayerAvatar getPlayerAvatar(PlayerProfile profile) {

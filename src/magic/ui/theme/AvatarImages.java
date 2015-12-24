@@ -22,7 +22,7 @@ public class AvatarImages {
     }
 
     private static PlayerAvatar loadAvatar(final File file) {
-        return new PlayerAvatar(ImageFileIO.toImg(file, MagicImages.MISSING));
+        return new PlayerAvatar(ImageFileIO.toImg(file, MagicImages.MISSING_BIG));
     }
 
     private synchronized void loadAvatars() {

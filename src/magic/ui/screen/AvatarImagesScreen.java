@@ -114,7 +114,7 @@ public class AvatarImagesScreen extends AbstractScreen implements IStatusBar, IA
         for (Path imagePath : imageSet.getImagePaths()) {
             final String filePath = imagePath.toAbsolutePath().toString();
             try (final InputStream ins = new FileInputStream(new File(filePath))) {
-                final BufferedImage image = ImageFileIO.toImg(ins, MagicImages.MISSING);
+                final BufferedImage image = ImageFileIO.toImg(ins, MagicImages.MISSING_BIG);
                 final ImageIcon icon = new ImageIcon(GraphicsUtils.scale(image, PlayerAvatar.LARGE_SIZE, PlayerAvatar.LARGE_SIZE));
                 final JLabel iconLabel = new JLabel(icon);
                 imagePathMap.put(iconLabel, imagePath);

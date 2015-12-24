@@ -102,7 +102,7 @@ public class CustomTheme extends AbstractTheme {
 
     private BufferedImage loadImage(final String filename) {
         final InputStream ins = getInputStream(filename);
-        return ImageFileIO.toImg(ins, MagicImages.MISSING);
+        return ImageFileIO.toImg(ins, MagicImages.MISSING_BIG);
     }
 
     @Override

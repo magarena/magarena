@@ -86,7 +86,7 @@ public abstract class AbstractTheme implements Theme {
     @Override
     public BufferedImage getTexture(final String aName) {
         final Object value=themeMap.get(aName);
-        return value==null?MagicImages.MISSING:(BufferedImage)value;
+        return value==null?MagicImages.MISSING_BIG:(BufferedImage)value;
     }
 
     @Override
