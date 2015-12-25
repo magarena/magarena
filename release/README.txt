@@ -59,13 +59,13 @@ Thanks to
   Mike, Guest, and ShawnieBoy for implementing new cards  
   PalladiaMors for the Portuguese UI translation
   kannikkiy for the Russian UI translation
-  Pichoro, Acorntail and all at http://magicseteditor.sourceforge.net for cardBuilder components.
+  Pichoro, Acorntail and all at http://magicseteditor.sourceforge.net for CardBuilder components.
+  XMage for the ArrowBuilder code
   http://mtgjson.com for card script data
   http://magiccards.info for card images
   http://game-icons.net for UI icons
   http://soundbible.com for sound effects.
   everyone on the CCGHQ forum, http://slightlymagic.net/forum/
-  XMage for the ArrowBuilder code
 
 Thank you for your support and have fun!
 
