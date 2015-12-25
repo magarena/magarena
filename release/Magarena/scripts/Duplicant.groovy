@@ -14,7 +14,7 @@
         @Override
         public void modSubTypeFlags(final MagicPermanent source, final Set<MagicSubType> flags) {
             final MagicCard card = source.getExiledCard();
-            flags.addAll(card.getSubTypeFlags());
+            flags.addAll(card.getSubTypes());
         }
         @Override
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
