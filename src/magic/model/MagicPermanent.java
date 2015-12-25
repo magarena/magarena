@@ -99,7 +99,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
 
         cachedController = firstController;
         cachedTypeFlags = getCardDefinition().getTypeFlags();
-        cachedSubTypeFlags = getCardDefinition().genSubTypeFlags();
+        cachedSubTypeFlags = getCardDefinition().genSubTypes();
         cachedColorFlags = getCardDefinition().getColorFlags();
         cachedAbilityFlags = getCardDefinition().genAbilityFlags();
         cachedPowerToughness = getCardDefinition().genPowerToughness();
@@ -466,7 +466,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
             case Card:
                 cachedController = firstController;
                 cachedTypeFlags = getCardDefinition().getTypeFlags();
-                cachedSubTypeFlags = getCardDefinition().genSubTypeFlags();
+                cachedSubTypeFlags = getCardDefinition().genSubTypes();
                 cachedColorFlags = getCardDefinition().getColorFlags();
                 cachedAbilityFlags = getCardDefinition().genAbilityFlags();
                 cachedPowerToughness = getCardDefinition().genPowerToughness();

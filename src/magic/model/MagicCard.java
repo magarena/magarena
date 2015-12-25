@@ -405,8 +405,9 @@ public class MagicCard
         return getCardDefinition().hasSubType(subType);
     }
 
-    public Set<MagicSubType> getSubTypeFlags() {
-        return getCardDefinition().getSubTypeFlags();
+    @Override
+    public Set<MagicSubType> getSubTypes() {
+        return getCardDefinition().getSubTypes();
     }
 
     @Override
@@ -500,11 +501,6 @@ public class MagicCard
     public Collection<MagicManaActivation> getManaActivations() {
         // Returning from CardDefinition - Cards technically don't, also no in-game changes
         return getCardDefinition().getManaActivations();
-    }
-
-    @Override
-    public EnumSet<MagicSubType> getSubTypes() {
-        return EnumSet.copyOf(getSubTypeFlags());
     }
 
     @Override

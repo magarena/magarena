@@ -547,12 +547,12 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         subTypeFlags.add(subType);
     }
 
-    EnumSet<MagicSubType> genSubTypeFlags() {
+    EnumSet<MagicSubType> genSubTypes() {
         return subTypeFlags.clone();
     }
 
-    public EnumSet<MagicSubType> getSubTypeFlags() {
-        final EnumSet<MagicSubType> subTypes = genSubTypeFlags();
+    public EnumSet<MagicSubType> getSubTypes() {
+        final EnumSet<MagicSubType> subTypes = genSubTypes();
         applyCDASubType(null, null, subTypes);
         return subTypes;
     }
@@ -564,7 +564,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     }
 
     public String getSubTypeString() {
-        final String brackets = getSubTypeFlags().toString(); // [...,...]
+        final String brackets = getSubTypes().toString(); // [...,...]
         if (brackets.length() <= 2) {
             return "";
         }
@@ -572,7 +572,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     }
 
     public boolean hasSubType(final MagicSubType subType) {
-        return getSubTypeFlags().contains(subType);
+        return getSubTypes().contains(subType);
     }
 
     public void setColors(final String colors) {
@@ -1134,11 +1134,6 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     @Override
     public boolean isMulti() {
         return getNumColors() > 1;
-    }
-
-    @Override
-    public EnumSet<MagicSubType> getSubTypes() {
-        return getSubTypeFlags();
     }
 
     @Override
