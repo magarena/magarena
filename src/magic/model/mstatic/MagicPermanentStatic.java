@@ -63,12 +63,6 @@ public class MagicPermanentStatic implements Comparable<MagicPermanentStatic> {
                 if (permanent.hasSubType(MagicSubType.Forest)) {
                     permanent.addAbility(MagicTapManaActivation.Green);
                 }
-                Set<MagicSubType> basicTypes = MagicSubType.ALL_BASIC_LANDS;
-                basicTypes.removeAll(permanent.getSubTypes());
-                if (permanent.isBasic() && basicTypes.containsAll(MagicSubType.ALL_BASIC_LANDS)) {//A basic land with no basic subtypes
-                    permanent.addAbility(MagicTapManaActivation.Colorless);
-                }
-
             }
         }
     );
