@@ -16,7 +16,7 @@ public interface IRenderableCard {
     MagicManaCost getCost();
     String getText();
     Collection<MagicManaActivation> getManaActivations();
-    EnumSet<MagicSubType> getSubTypes();
+    Set<MagicSubType> getSubTypes();
     int getColorFlags();
     int getNumColors();
     String getImageName();
