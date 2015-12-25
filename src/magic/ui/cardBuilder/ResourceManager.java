@@ -134,6 +134,16 @@ public class ResourceManager {
     public static final BufferedImage colorlessPlaneswalkerFrame = getFrame("planeswalker/clear.jpg");
     public static final BufferedImage gainPlaneswalkerHybridBanner = getFrame("planeswalker/hybrid_blend.png");
     public static final BufferedImage gainPlaneswalkerColorBlend = getFrame("planeswalker/color_blend.png");
+    public static final BufferedImage artifactPlaneswalker4 = getFrame("planeswalker/acard2.jpg");
+    public static final BufferedImage whitePlaneswalker4 = getFrame("planeswalker/wcard2.jpg");
+    public static final BufferedImage bluePlaneswalker4 = getFrame("planeswalker/ucard2.jpg");
+    public static final BufferedImage blackPlaneswalker4 = getFrame("planeswalker/bcard2.jpg");
+    public static final BufferedImage redPlaneswalker4 = getFrame("planeswalker/rcard2.jpg");
+    public static final BufferedImage greenPlaneswalker4 = getFrame("planeswalker/gcard2.jpg");
+    public static final BufferedImage multiPlaneswalker4 = getFrame("planeswalker/mcard2.jpg");
+    public static final BufferedImage colorlessPlaneswalker4 = getFrame("planeswalker/clear2.jpg");
+    public static final BufferedImage gainPlaneswalker4HybridBanner = getFrame("planeswalker/hybrid_blend2.png");
+    public static final BufferedImage gainPlaneswalker4ColorBlend = getFrame("planeswalker/color_blend2.png");
     public static final BufferedImage loyaltyPanel = getLoyaltyPanelBuffered("planeswalker/loyalty.png");
     public static final BufferedImage loyaltyUp = getLoyaltyBuffered("planeswalker/loyaltyup.png");
     public static final BufferedImage loyaltyDown = getLoyaltyBuffered("planeswalker/loyaltydown.png");
