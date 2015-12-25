@@ -68,7 +68,7 @@ Thanks to
 
 Thank you for your support and have fun!
 
-Release 1.69 (TBD)
+Release 1.69 (December 27, 2015)
 ============
 lodici
 melvin
@@ -95,11 +95,13 @@ ShawnieBoy
     add effect '<player> lose the game.' and '<player> win the game.'
     add effect '<player> takens <amount> extra turns.'
     add effect 'Destroy <permanent> at the beginning of the next end step.'
+    add effect '<permanent> attacks this turn if able.'
     add condition 'SN was kicked'
     support ability 'Whenever SN becomes target of RN, <effect>'
     support effect '<player>'s life total becomes <number>.'
     support effect '<source> deals <amount> damage to <permanents>. If a creature dealt damage this way would die this turn, exilt it instead.'
     support effect '<players> can't cast spells this turn.'
+    allow amount in card script effect to be X for {X} spells
     Add new DownloadImagesScreen with related components and updates
     Remove images directory setting from PreferencesDialog - now set via download dialog.
     add effect 'prevent all combat damage that would be dealt to and dealt by <permanent> this turn.'
@@ -111,6 +113,7 @@ ShawnieBoy
     Hide text mode option from game menu by default, add setting to turn it back on. (see #572).
     
 - fixed the following bugs:
+    fix Gemstone Mine generating Colorless mana, it adds one mana of any color, not one mana of any type
     use correct target choice for Faerie Impostor
     add groovy to Clash of Wills - fixes functionality
     fix: land card was displayed as missing in ai-plays-from-hand animation.
