@@ -8,7 +8,6 @@ import java.awt.Point;
 import java.awt.Rectangle;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
-import magic.model.MagicCardDefinition;
 import magic.model.MagicPlayer;
 import magic.ui.MagicImages;
 import magic.ui.duel.viewer.info.CardViewerInfo;
@@ -58,8 +57,8 @@ abstract class CardAnimation extends MagicAnimation {
         return player;
     }
 
-    protected MagicCardDefinition getCard() {
-        return cardInfo.getCardDefinition();
+    protected CardViewerInfo getCardInfo() {
+        return cardInfo;
     }
 
     private void drawCardShadow(Graphics g) {

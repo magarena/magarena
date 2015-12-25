@@ -20,7 +20,7 @@ public class PlayCardAnimation extends CardAnimation {
 
     @Override
     protected Rectangle getEnd() {
-        return getCard().usesStack()
+        return getCardInfo().usesStack()
             ? getLayoutInfo().getStackLayout()
             : getLayoutInfo().getPermanentsZoneLayout(getPlayerIndex());
     }

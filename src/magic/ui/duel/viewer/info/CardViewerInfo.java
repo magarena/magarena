@@ -14,6 +14,8 @@ import magic.utility.MagicSystem;
 
 public class CardViewerInfo {
 
+    public static final CardViewerInfo NO_CARD = new CardViewerInfo(MagicCard.NONE);
+
     private final MagicCard magicCard;
     private final MagicCardDefinition frontFace;
     private final MagicCardDefinition backFace;
@@ -40,7 +42,7 @@ public class CardViewerInfo {
         this.backFace = getBackFace(frontFace);
     }
 
-    boolean isEmpty() {
+    public boolean isEmpty() {
         return magicCard == MagicCard.NONE;
     }
 
@@ -50,10 +52,6 @@ public class CardViewerInfo {
 
     public boolean isLand() {
         return magicCard.hasType(MagicType.Land);
-    }
-       
-    public MagicCardDefinition getCardDefinition() {
-        return frontFace;
     }
 
     public MagicObject getMagicObject() {
@@ -80,6 +78,10 @@ public class CardViewerInfo {
 
     public int getControllerIndex() {
         return magicCard.getController().getIndex();
+    }
+
+    public boolean usesStack() {
+        return frontFace.usesStack();
     }
     
     private MagicCardDefinition getFrontFace(MagicCardOnStack aCard) {

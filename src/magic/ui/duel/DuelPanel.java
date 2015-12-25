@@ -18,7 +18,6 @@ import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
-import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.MagicPlayerZone;
@@ -272,7 +271,7 @@ public final class DuelPanel extends JPanel {
         return SwingUtilities.convertPoint(component.getParent(), component.getLocation(), duelPanel);
     }
 
-    public GameLayoutInfo getLayoutInfo(final GameViewerInfo gameInfo, final MagicCardDefinition aCard) {
+    public GameLayoutInfo getLayoutInfo(final GameViewerInfo gameInfo, final CardViewerInfo cardInfo) {
 
         assert SwingUtilities.isEventDispatchThread();
 
@@ -304,16 +303,22 @@ public final class DuelPanel extends JPanel {
 
         info.setStackLayout(sidebarPanel.getStackViewerRectangle(this));
 
-        final ImageCardListViewer handViewer = controller.getPlayerZoneViewer().getImageCardsListViewer();
-        if (handViewer.getCardPosition(aCard) != null) {
-            info.setCardInHandLayout(
-                new Rectangle(
-                    handViewer.getCardPosition(aCard),
-                    handViewer.getCardSize())
-            );
-        }
-        
+        setCardLayoutInfo(cardInfo, info);
         return info;
+
+    }
+
+    private void setCardLayoutInfo(CardViewerInfo cardInfo, GameLayoutInfo info) {
+        if (cardInfo.isNotEmpty()) {
+            final ImageCardListViewer handViewer = controller.getPlayerZoneViewer().getImageCardsListViewer();
+            if (handViewer.getCardPosition(cardInfo) != null) {
+                info.setCardInHandLayout(
+                    new Rectangle(
+                        handViewer.getCardPosition(cardInfo),
+                        handViewer.getCardSize())
+                );
+            }
+        }
     }
 
     void setBackgroundLabel(ZoneBackgroundLabel backgroundLabel) {

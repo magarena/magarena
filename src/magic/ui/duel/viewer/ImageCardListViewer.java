@@ -34,6 +34,7 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.duel.SwingGameController;
+import magic.ui.duel.viewer.info.CardViewerInfo;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
@@ -313,13 +314,12 @@ public class ImageCardListViewer extends JPanel implements IChoiceViewer {
         repaint();
     }
 
-    public Point getCardPosition(final MagicCardDefinition cardDef) {
+    public Point getCardPosition(final CardViewerInfo cardInfo) {
         Point cardPosition = null;
         for (int index=0; index < cardList.size(); index++) {
             final MagicCard card = cardList.get(index);
-            if (card.getName().equals(cardDef.getName())) {
+            if (card.getId() == cardInfo.getId()) {
                 cardPosition = cardPoints.get(index);
-//                System.out.println("cardPosition = " + cardPosition);
                 break;
             }
         }

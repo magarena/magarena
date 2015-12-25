@@ -6,7 +6,6 @@ import java.util.List;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.model.MagicCard;
-import magic.model.MagicCardDefinition;
 import magic.model.phase.MagicPhaseType;
 import magic.ui.duel.viewer.info.CardViewerInfo;
 import magic.ui.duel.DuelPanel;
@@ -59,15 +58,15 @@ public class MagicAnimations {
     }
 
     private static MagicAnimation getNewTurnAnimation(GameViewerInfo newGameInfo, DuelPanel gamePanel) {
-        setLayoutInfo(gamePanel, newGameInfo, MagicCardDefinition.UNKNOWN);
+        setLayoutInfo(gamePanel, newGameInfo, CardViewerInfo.NO_CARD);
         return new NewTurnAnimation(newGameInfo, layoutInfo);
     }
 
-    private static void setLayoutInfo(DuelPanel gamePanel, GameViewerInfo newGameInfo, MagicCardDefinition aCard) {
+    private static void setLayoutInfo(DuelPanel gamePanel, GameViewerInfo newGameInfo, CardViewerInfo cardInfo) {
         assert !SwingUtilities.isEventDispatchThread();
         try {
             SwingUtilities.invokeAndWait(() -> {
-                layoutInfo = gamePanel.getLayoutInfo(newGameInfo, aCard);
+                layoutInfo = gamePanel.getLayoutInfo(newGameInfo, cardInfo);
             });
         } catch (InterruptedException | InvocationTargetException ex) {
             throw new RuntimeException(ex);
@@ -94,7 +93,7 @@ public class MagicAnimations {
         assert cards.size() == 1;
         final CardViewerInfo cardInfo = newGameInfo.getCardViewerInfo(cards.get(0));
 
-        setLayoutInfo(gamePanel, newGameInfo, cardInfo.getCardDefinition());
+        setLayoutInfo(gamePanel, newGameInfo, cardInfo);
 
         return new DrawCardAnimation(
             newGameInfo.getTurnPlayer().player,
@@ -115,6 +114,7 @@ public class MagicAnimations {
         // less card than the previous game state's hand.
         final List<MagicCard> cards = new ArrayList<>(oldGameInfo.getTurnPlayer().hand);
         cards.removeAll(newGameInfo.getTurnPlayer().hand);
+
         if (cards.isEmpty()) {
             return null;
         } else if (cards.size() > 1) {  // eg. due to Tolarian Winds.
@@ -123,7 +123,7 @@ public class MagicAnimations {
 
         final CardViewerInfo cardInfo = newGameInfo.getCardViewerInfo(cards.get(0));
 
-        setLayoutInfo(gamePanel, newGameInfo, cardInfo.getCardDefinition());
+        setLayoutInfo(gamePanel, newGameInfo, cardInfo);
 
         return new PlayCardAnimation(
             newGameInfo.getTurnPlayer().player,
@@ -140,7 +140,7 @@ public class MagicAnimations {
                 System.out.printf("\n%s %s %s\n",
                     ca.getPlayer().getName(),
                     ca instanceof DrawCardAnimation ? "draws" : "plays",
-                    ca.getCard()
+                    ca.getCardInfo()
                 );
             }
         }
