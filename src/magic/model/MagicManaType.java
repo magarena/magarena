@@ -21,7 +21,7 @@ public enum MagicManaType {
     );
 
     // Colorless must be in front.
-    public static final List<MagicManaType> ALL_TYPES = Collections.unmodifiableList(
+    private static final List<MagicManaType> ALL_TYPES = Collections.unmodifiableList(
         Arrays.asList(Colorless,White,Blue,Black,Red,Green,Snow)
     );
 
