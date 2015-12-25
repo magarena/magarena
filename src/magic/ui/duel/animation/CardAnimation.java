@@ -71,10 +71,6 @@ abstract class CardAnimation extends MagicAnimation {
         );
     }
 
-    private boolean isCardFlipping() {
-        return MagicAnimations.isOn(AnimationFx.FLIP_CARD) && flipPosition < 1f;
-    }
-
     private boolean isRunning(Timeline t) {
         return t != null && (t.getState() == TimelineState.READY || t.getState() == TimelineState.PLAYING_FORWARD);
     }
@@ -96,7 +92,7 @@ abstract class CardAnimation extends MagicAnimation {
     }
 
     private void drawCardImage(Graphics g) {
-        if (isCardFlipping()) {
+        if (flipPosition < 1f) {
             final int w = Math.abs((int)(Math.cos(flipPosition * Math.PI) * imageRect.width));
             g.drawImage(
                 flipPosition > 0.5f ? frontImageScaler.getImage() : backImageScaler.getImage(),
@@ -183,10 +179,14 @@ abstract class CardAnimation extends MagicAnimation {
     }
 
     private Timeline getFlipTimeline() {
+        if (MagicAnimations.isOff(AnimationFx.FLIP_CARD)) {
+            return null;
+        }
         final Timeline timeline = new Timeline(this);
         timeline.addPropertyToInterpolate("FlipPosition", 0.0f, 1.0f);
         timeline.setDuration(FLIP_DURATION);
         timeline.setInitialDelay(GROW_DURATION - FLIP_DURATION);
+        flipPosition = 0f;
         return timeline;
     }
 
@@ -249,7 +249,7 @@ abstract class CardAnimation extends MagicAnimation {
 
         scenario = new TimelineScenario.RendezvousSequence();        
         scenario.addScenarioActor(growTimeline);
-        scenario.addScenarioActor(flipTimeline);
+        if (flipTimeline != null) { scenario.addScenarioActor(flipTimeline); }
         scenario.rendezvous();
         scenario.addScenarioActor(viewTimeline);
         scenario.rendezvous();
@@ -272,7 +272,6 @@ abstract class CardAnimation extends MagicAnimation {
         assert SwingUtilities.isEventDispatchThread();
         isRunning.set(true);
 
-        flipPosition = 0f;
         frontImageScaler = new ImageScaler(cardInfo.getImage());
         backImageScaler = new ImageScaler(cardInfo.getBackFaceImage());
         this.previewSize = getCardPreviewSize(frontImageScaler.getImage());
