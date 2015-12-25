@@ -1345,14 +1345,8 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
     }
 
     @Override
-    public EnumSet<MagicSubType> getSubTypes() {
-        Set<MagicSubType> subTypes = new HashSet<MagicSubType>();
-        for (MagicSubType subType : MagicSubType.values()) {
-            if (hasSubType(subType)) {
-                subTypes.add(subType);
-            }
-        }
-        return (EnumSet<MagicSubType>) subTypes;
+    public Set<MagicSubType> getSubTypes() {
+        return EnumSet.copyOf(cachedSubTypeFlags);
     }
 
     @Override
