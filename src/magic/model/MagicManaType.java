@@ -57,10 +57,8 @@ public enum MagicManaType {
     }
 
     public static List<MagicManaType> getList(final String name) {
-        if ("{C}".equals(name) || "{1}".equals(name)) {
+        if ("{1}".equals(name)) {
             return Arrays.asList(Colorless);
-        } else if ("{S}".equals(name)) {
-            return Arrays.asList(Snow);
         } else if ("one mana of any color".equals(name)) {
             return ALL_COLORS;
         } else {
