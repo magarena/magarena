@@ -57,24 +57,20 @@ public enum MagicManaType {
     }
 
     public static List<MagicManaType> getList(final String name) {
-        if ("{C}".equals(name)) {
+        if ("{C}".equals(name) || "{1}".equals(name)) {
             return Arrays.asList(Colorless);
-        }
-        if ("{1}".equals(name)) {
-            return Arrays.asList(Colorless);
-        }
-        if ("{S}".equals(name)) {
+        } else if ("{S}".equals(name)) {
             return Arrays.asList(Snow);
-        }
-        if ("one mana of any color".equals(name)) {
+        } else if ("one mana of any color".equals(name)) {
             return ALL_COLORS;
+        } else {
+            final String[] tokens = name.split(" or ");
+            final MagicManaType[] types = new MagicManaType[tokens.length];
+            for (int i = 0; i < tokens.length; i++) {
+                types[i] = get(tokens[i]);
+            }
+            return Arrays.asList(types);
         }
-        final String[] tokens = name.split(" or ");
-        final MagicManaType[] types = new MagicManaType[tokens.length];
-        for (int i = 0; i < tokens.length; i++) {
-            types[i] = get(tokens[i]);
-        }
-        return Arrays.asList(types);
     }
 
     @Override
