@@ -104,21 +104,22 @@ public class MagicAnimations {
     }
 
     /**
-     * AI plays card from hand during M1 or M2.
+     * AI plays a single card from hand during M1 or M2.
      */
     private static MagicAnimation getPlayCardAnimationInfo(
         final GameViewerInfo oldGameInfo,
         final GameViewerInfo newGameInfo,
         final DuelPanel gamePanel) {
 
-        // if a card has been played then the current game state's hand will have one
+        // if a card has been played then the current game state's hand should have one
         // less card than the previous game state's hand.
         final List<MagicCard> cards = new ArrayList<>(oldGameInfo.getTurnPlayer().hand);
         cards.removeAll(newGameInfo.getTurnPlayer().hand);
         if (cards.isEmpty()) {
             return null;
+        } else if (cards.size() > 1) {  // eg. due to Tolarian Winds.
+            return null;
         }
-        assert cards.size() == 1;
 
         final CardViewerInfo cardInfo = newGameInfo.getCardViewerInfo(cards.get(0));
 
