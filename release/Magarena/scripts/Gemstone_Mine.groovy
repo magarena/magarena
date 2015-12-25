@@ -1,6 +1,6 @@
 [
     new MagicManaActivation(
-        MagicManaType.ALL_TYPES,
+        MagicManaType.getList("one mana of any color"),
         2
     ) {
         @Override
