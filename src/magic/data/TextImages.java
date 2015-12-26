@@ -19,7 +19,6 @@ public class TextImages {
         add("{t}", MagicIcon.TOKEN);
         add("{L}", MagicIcon.LOSE);
         add("{c}", MagicIcon.COMBAT);
-        add(MagicPermanentState.Tapped, MagicIcon.MANA_TAP);
         add(MagicPermanentState.Regenerated, MagicIcon.REGENERATED);
         add(MagicPermanentState.DoesNotUntapDuringNext, MagicIcon.SLEEP);
         add(MagicPermanentState.Blocked, MagicIcon.BLOCKED);
@@ -47,6 +46,9 @@ public class TextImages {
         add("{20}", MagicIcon.MANA_20);
         add("{X}", MagicIcon.MANA_X);
         add("{S}", MagicIcon.MANA_SNOW);
+        
+        add("{T}", MagicIcon.MANA_TAP);
+        add("{Q}", MagicIcon.MANA_UNTAP);
         
         add(MagicCostManaType.Colorless, MagicIcon.MANA_COLORLESS);
         add(MagicCostManaType.White, MagicIcon.MANA_WHITE);

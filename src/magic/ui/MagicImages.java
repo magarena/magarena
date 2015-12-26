@@ -11,6 +11,7 @@ import java.util.Map;
 import javax.swing.ImageIcon;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
+import magic.data.TextImages;
 import magic.model.DuelPlayerConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
@@ -184,21 +185,8 @@ public final class MagicImages {
         throw new RuntimeException("No icon available for MagicManaType " + mtype);
     }
 
-    public static ImageIcon getIcon(String manaSymbol){
-        switch (manaSymbol) {
-            case "{T}":
-                return getIcon(MagicIcon.MANA_TAP);
-            case "{Q}":
-                return getIcon(MagicIcon.MANA_UNTAP);
-            case "{S}":
-                return getIcon(MagicIcon.MANA_SNOW);
-            case "{C}":
-                return getIcon(MagicIcon.MANA_COLORLESS);
-            default:
-                MagicManaCost mana = MagicManaCost.create(manaSymbol);
-                List<MagicIcon> icons = mana.getIcons();
-                return getIcon(icons.get(0));
-        }
+    public static ImageIcon getIcon(String manaSymbol) {
+        return getIcon(TextImages.getIcon(manaSymbol));
     }
 
 
