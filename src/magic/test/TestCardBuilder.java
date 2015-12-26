@@ -15,10 +15,6 @@ class TestCardBuilder extends TestGameBuilder {
     public MagicGame getGame() {
         for (final MagicCardDefinition cdef : CardDefinitions.getAllCards()) {
             System.out.println(cdef);
-            if (cdef.getName().equals("Rage Extractor")) {
-                System.out.println("skipping");
-                continue;
-            }
             MagicImages.getMissingCardImage(cdef);
         }
         final MagicDuel duel=createDuel(MagicAIImpl.MCTS, 6);

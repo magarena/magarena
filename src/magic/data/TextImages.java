@@ -47,6 +47,7 @@ public class TextImages {
         add("{X}", MagicIcon.MANA_X);
         add("{T}", MagicIcon.MANA_TAP);
         add("{Q}", MagicIcon.MANA_UNTAP);
+        add("{P}", MagicIcon.MANA_PHYREXIAN_BLACK);
         
         add(MagicCostManaType.Colorless, MagicIcon.MANA_COLORLESS);
         add(MagicCostManaType.Snow, MagicIcon.MANA_SNOW);
