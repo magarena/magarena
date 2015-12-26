@@ -78,7 +78,7 @@ ShawnieBoy
 
 - Replace Merlin with M icon (see #30).
 - Face down card image displayed correctly from log/stack and when running animation (see #567). 
-- Initial integration of CardBuilder to display proxy card images when image is missing.
+- Initial integration of CardBuilder to display proxy card images when image is missing. (see known issues #577 #587 #588 #593)
 - Hide text mode option from game menu (see #572).
 - Prevent saving user deck to Firemind folder as well as prebuilt.
 - Prevent exception if Firemind json feed has a null string (fixes #563).
