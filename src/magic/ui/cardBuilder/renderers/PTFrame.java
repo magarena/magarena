@@ -76,7 +76,7 @@ public class PTFrame {
         // Draw activation panels
         if (OracleText.getPlaneswalkerAbilityCount(cardDef) == 3) {
             String[] activations = getPlaneswalkerActivationCosts(cardDef);
-            panelText = getLoyaltyPanelText(activations[0]);
+            panelText = activations[0];
             if (panelText != "") {
                 //Panel 1
                 g2d.drawImage(getLoyaltyPanel(activations[0]), 18, 333, null);
@@ -84,13 +84,13 @@ public class PTFrame {
             }
             //Panel 2
             g2d.drawImage(getLoyaltyPanel(activations[1]), 18, 383, null);
-            drawLoyaltyPanelText(g2d, new Rectangle(xPos, 386, width, height), getLoyaltyPanelText(activations[1]));
+            drawLoyaltyPanelText(g2d, new Rectangle(xPos, 386, width, height), activations[1]);
             //Panel 3
             g2d.drawImage(getLoyaltyPanel(activations[2]), 18, 432, null);
-            drawLoyaltyPanelText(g2d, new Rectangle(xPos, 435, width, height), getLoyaltyPanelText(activations[2]));
+            drawLoyaltyPanelText(g2d, new Rectangle(xPos, 435, width, height), activations[2]);
         } else {
             String[] activations = getPlaneswalkerActivationCosts(cardDef);
-            panelText = getLoyaltyPanelText(activations[0]);
+            panelText = activations[0];
             if (panelText != "") {
                 //Panel 1
                 g2d.drawImage(getLoyaltyPanel(activations[0]), 18, 294, null);
@@ -98,14 +98,14 @@ public class PTFrame {
             }
             //Panel 2
             g2d.drawImage(getLoyaltyPanel(activations[1]), 18, 341, null);
-            drawLoyaltyPanelText(g2d, new Rectangle(xPos, 344, width, height), getLoyaltyPanelText(activations[1]));
+            drawLoyaltyPanelText(g2d, new Rectangle(xPos, 344, width, height), activations[1]);
             //Panel 3
             g2d.drawImage(getLoyaltyPanel(activations[2]), 18, 388, null);
-            drawLoyaltyPanelText(g2d, new Rectangle(xPos, 391, width, height), getLoyaltyPanelText(activations[2]));
+            drawLoyaltyPanelText(g2d, new Rectangle(xPos, 391, width, height), activations[2]);
             //Panel 4
             if (!activations[3].isEmpty()) {
                 g2d.drawImage(getLoyaltyPanel(activations[3]), 18, 435, null);
-                drawLoyaltyPanelText(g2d, new Rectangle(xPos, 438, width, height), getLoyaltyPanelText(activations[3]));
+                drawLoyaltyPanelText(g2d, new Rectangle(xPos, 438, width, height), activations[3]);
             }
         }
         g2d.dispose();
@@ -124,23 +124,6 @@ public class PTFrame {
         } else {
             return ResourceManager.loyaltyDown;
         }
-    }
-
-    private static String getLoyaltyPanelText(String string) {
-        String text = string;
-        if (text != "") {
-            if (text.endsWith(":")) {
-                text = string.substring(0, text.length() - 1);
-            }
-            if (text.startsWith("+")) {
-                return text;
-            }
-            if (text.startsWith("0")) {
-                return text.substring(0, 1);
-            }
-            return '-' + text.substring(1);
-        }
-        return text;
     }
 
     private static BufferedImage getPTPanel(MagicColor color) {
@@ -227,12 +210,8 @@ public class PTFrame {
         String[] abilities = OracleText.getOracleAsLines(cardDef);
         String[] costs = new String[abilities.length];
         for (int i = 0; i < abilities.length; i++) {
-            String ability = abilities[i].substring(0, 3);
-            if (ability.matches(".*\\d+.*") || ability.contains("X")) {
-                costs[i] = ability.trim();
-            } else {
-                costs[i] = "";
-            }
+            String[] parts = abilities[i].split(": ", 2);
+            costs[i] = parts.length == 2 ? parts[0].replace("\u2212", "-") : "";
         }
         return costs;
     }
