@@ -88,6 +88,25 @@ public class PTFrame {
             //Panel 3
             g2d.drawImage(getLoyaltyPanel(activations[2]), 18, 432, null);
             drawLoyaltyPanelText(g2d, new Rectangle(xPos, 435, width, height), getLoyaltyPanelText(activations[2]));
+        } else {
+            String[] activations = getPlaneswalkerActivationCosts(cardDef);
+            panelText = getLoyaltyPanelText(activations[0]);
+            if (panelText != "") {
+                //Panel 1
+                g2d.drawImage(getLoyaltyPanel(activations[0]), 18, 294, null);
+                drawLoyaltyPanelText(g2d, new Rectangle(xPos, 297, width, height), panelText);
+            }
+            //Panel 2
+            g2d.drawImage(getLoyaltyPanel(activations[1]), 18, 341, null);
+            drawLoyaltyPanelText(g2d, new Rectangle(xPos, 344, width, height), getLoyaltyPanelText(activations[1]));
+            //Panel 3
+            g2d.drawImage(getLoyaltyPanel(activations[2]), 18, 388, null);
+            drawLoyaltyPanelText(g2d, new Rectangle(xPos, 391, width, height), getLoyaltyPanelText(activations[2]));
+            //Panel 4
+            if (!activations[3].isEmpty()) {
+                g2d.drawImage(getLoyaltyPanel(activations[3]), 18, 435, null);
+                drawLoyaltyPanelText(g2d, new Rectangle(xPos, 438, width, height), getLoyaltyPanelText(activations[3]));
+            }
         }
         g2d.dispose();
     }
@@ -162,12 +181,9 @@ public class PTFrame {
         if (cardDef.hasAbility(MagicAbility.Devoid)) {
             return ResourceManager.colorlessPTPanel;
         }
+        //Hybrid cards use colorless PT panel and banners
         if (cardDef.isMulti()) {
-            if (cardDef.isHybrid() || cardDef.isToken() && cardDef.getNumColors() == 2) {
-                return ResourceManager.colorlessPTPanel; //Hybrid cards use colorless PT panel and banners
-            } else {
-                return ResourceManager.multiPTPanel;
-            }
+            return cardDef.isHybrid() || cardDef.isToken() && cardDef.getNumColors() == 2 ? ResourceManager.colorlessPTPanel : ResourceManager.multiPTPanel;
         }
         for (MagicColor color : MagicColor.values()) {
             if (cardDef.hasColor(color)) {
@@ -184,12 +200,9 @@ public class PTFrame {
         if (cardDef.hasAbility(MagicAbility.Devoid)) {
             return ResourceManager.colorlessHiddenPTPanel;
         }
+        //Hybrid cards use colorless PT panel and banners
         if (cardDef.isMulti()) {
-            if (cardDef.isHybrid() || cardDef.isToken() && cardDef.getNumColors() == 2) {
-                return ResourceManager.colorlessHiddenPTPanel; //Hybrid cards use colorless PT panel and banners
-            } else {
-                return ResourceManager.multiHiddenPTPanel;
-            }
+            return cardDef.isHybrid() || cardDef.isToken() && cardDef.getNumColors() == 2 ? ResourceManager.colorlessHiddenPTPanel : ResourceManager.multiHiddenPTPanel;
         }
         for (MagicColor color : MagicColor.values()) {
             if (cardDef.hasColor(color)) {
@@ -276,7 +289,7 @@ public class PTFrame {
         }
     }
 
-    static void drawTransformSymbol(BufferedImage cardImage, IRenderableCard cardDef){
+    static void drawTransformSymbol(BufferedImage cardImage, IRenderableCard cardDef) {
         Graphics2D g2d = cardImage.createGraphics();
         if (cardDef.isHidden()) {
             BufferedImage typeSymbol = ResourceManager.moonSymbol;

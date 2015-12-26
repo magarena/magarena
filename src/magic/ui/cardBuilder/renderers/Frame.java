@@ -298,6 +298,12 @@ public class Frame {
             banner);
     }
 
+    private static BufferedImage getPlaneswalker4BannerFrame(BufferedImage frame, BufferedImage banner) {
+        return getBlendedFrame(frame,
+            ResourceManager.newFrame(ResourceManager.gainPlaneswalker4HybridBanner),
+            banner);
+    }
+
     private static BufferedImage getBaseTokenFrame(Collection<MagicType> types, boolean hasText) {
         if (types.contains(MagicType.Land)) {
             if (hasText) {
@@ -340,6 +346,12 @@ public class Frame {
     private static BufferedImage getPlaneswalkerBlendFrame(BufferedImage frame, MagicColor color) {
         return getBlendedFrame(frame,
             ResourceManager.newFrame(ResourceManager.gainPlaneswalkerColorBlend),
+            getPlaneswalkerFrame(color));
+    }
+
+    private static BufferedImage getPlaneswalker4BlendFrame(BufferedImage frame, MagicColor color) {
+        return getBlendedFrame(frame,
+            ResourceManager.newFrame(ResourceManager.gainPlaneswalker4ColorBlend),
             getPlaneswalkerFrame(color));
     }
 
@@ -668,6 +680,23 @@ public class Frame {
         }
     }
 
+    private static BufferedImage getPlaneswalker4Frame(MagicColor color) {
+        switch (color) {
+            case White:
+                return ResourceManager.newFrame(ResourceManager.whitePlaneswalker4);
+            case Blue:
+                return ResourceManager.newFrame(ResourceManager.bluePlaneswalker4);
+            case Black:
+                return ResourceManager.newFrame(ResourceManager.blackPlaneswalker4);
+            case Red:
+                return ResourceManager.newFrame(ResourceManager.redPlaneswalker4);
+            case Green:
+                return ResourceManager.newFrame(ResourceManager.greenPlaneswalker4);
+            default:
+                return ResourceManager.newFrame(ResourceManager.colorlessPlaneswalker4);
+        }
+    }
+
     private static BufferedImage getTokenFrameText(MagicColor color) {
         switch (color) {
             case White:
@@ -951,8 +980,92 @@ public class Frame {
                 }
             }
             return ResourceManager.newFrame(ResourceManager.artifactPlaneswalkerFrame);
+        } else {
+            boolean land = cardDef.hasType(MagicType.Land);
+            boolean artifact = cardDef.hasType(MagicType.Artifact);
+            Set<MagicColor> landColor = new HashSet<>();
+            if (land) {
+                baseFrame = ResourceManager.newFrame(ResourceManager.colorlessLandLevellerFrame); // No frame for land planeswalkers
+                //Land Colors
+                landColor = getLandColors(cardDef);
+            } else if (artifact) {
+                baseFrame = ResourceManager.newFrame(ResourceManager.artifactPlaneswalker4);
+            }
+            //Multi
+            if (cardDef.isMulti() || landColor.size() > 1) {
+                if (cardDef.getNumColors() > 2 || land && landColor.size() > 2) {
+                    if (artifact || land) {
+                        return getBlendedFrame(
+                            baseFrame,
+                            ResourceManager.newFrame(ResourceManager.gainPlaneswalker4ColorBlend),
+                            ResourceManager.newFrame(ResourceManager.multiPlaneswalker4));
+                    } else {
+                        return ResourceManager.newFrame(ResourceManager.multiPlaneswalker4);
+                    }
+                } else {
+                    //Hybrid
+                    List<BufferedImage> colorFrames = new ArrayList<>();
+                    if (land) {
+                        colorFrames.addAll(getColorOrder(landColor).stream().map(Frame::getLandLevellerFrame).collect(Collectors.toList()));
+                    } else {
+                        colorFrames.addAll(getColorOrder(cardDef).stream().map(Frame::getPlaneswalker4Frame).collect(Collectors.toList()));
+                    }
+                    //A colorless Banner with color piping
+                    BufferedImage colorlessBanner = getPlaneswalker4BannerFrame(
+                        ResourceManager.newFrame(ResourceManager.colorlessPlaneswalker4),
+                        getBlendedFrame(
+                            ResourceManager.newFrame(colorFrames.get(0)),
+                            ResourceManager.newFrame(ResourceManager.gainHybridBlend),
+                            ResourceManager.newFrame(colorFrames.get(1)))
+                    );
+                    //Check for Hybrid + Return colorless banner blend
+                    if (cardDef.isHybrid()) {
+                        return colorlessBanner;
+                    }
+                    //Check dual color land + Return colorless banner blend
+                    if (land && landColor.size() == 2) {
+                        return getBlendedFrame(
+                            baseFrame,
+                            ResourceManager.newFrame(ResourceManager.gainPlaneswalker4ColorBlend),
+                            ResourceManager.newFrame(colorlessBanner)
+                        );
+                    }
+                    //Create Gold Banner blend
+                    BufferedImage goldBanner = getPlaneswalker4BannerFrame(
+                        ResourceManager.newFrame(ResourceManager.multiPlaneswalker4),
+                        getBlendedFrame(
+                            ResourceManager.newFrame(colorFrames.get(0)),
+                            ResourceManager.newFrame(ResourceManager.gainHybridBlend),
+                            ResourceManager.newFrame(colorFrames.get(1))
+                        ));
+                    //Color piping for Dual-Color
+                    if (artifact || land) {
+                        return getBlendedFrame(
+                            baseFrame,
+                            ResourceManager.newFrame(ResourceManager.gainPlaneswalker4ColorBlend),
+                            ResourceManager.newFrame(goldBanner));
+                    } else {
+                        return getBlendedFrame(
+                            ResourceManager.newFrame(ResourceManager.multiPlaneswalker4),
+                            ResourceManager.newFrame(ResourceManager.gainPlaneswalker4ColorBlend),
+                            ResourceManager.newFrame(goldBanner));
+                    }
+                }
+            }
+            //Mono
+            for (MagicColor color : MagicColor.values()) {
+                if (cardDef.hasColor(color) || landColor.contains(color)) {
+                    if (artifact) {
+                        return getPlaneswalker4BlendFrame(baseFrame, color);
+                    } else if (land) {
+                        return getLandLevellerFrame(color);
+                    } else {
+                        return getPlaneswalker4Frame(color);
+                    }
+                }
+            }
+            return ResourceManager.newFrame(ResourceManager.artifactPlaneswalkerFrame);
         }
-        return getLevellerFrameType(cardDef); //Catch 4 ability planeswalkers
     }
 
     public static BufferedImage getTransformFrameType(IRenderableCard cardDef) {

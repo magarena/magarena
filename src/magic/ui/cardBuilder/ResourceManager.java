@@ -226,10 +226,10 @@ public class ResourceManager {
     public static final BufferedImage sparkSymbol = getSymbolBuffered("transform/ccorner.png");
 
 
-
     //Font Map
-    private static final String[] names = { };
+    private static final String[] names = {};
     private static final Map<String, Font> fontCache = new ConcurrentHashMap<>(names.length);
+    private static final String FRAMES_FOLDER = "/cardbuilder/frames/";
 
     static {
         for (String name : names) {
@@ -237,7 +237,8 @@ public class ResourceManager {
         }
     }
 
-    public static void initialize(){}
+    public static void initialize() {
+    }
 
     public static InputStream getJarResourceStream(String filename) {
         return instance.getClass().getResourceAsStream(filename);
@@ -262,7 +263,7 @@ public class ResourceManager {
     }
 
     public static BufferedImage getFrame(String imageName) {
-        String fName = "/cardbuilder/frames/" + imageName;
+        String fName = FRAMES_FOLDER + imageName;
         try (final InputStream is = getJarResourceStream(fName)) {
             return GraphicsUtils.getOptimizedImage(ImageIO.read(is));
         } catch (IOException ex) {
@@ -291,7 +292,7 @@ public class ResourceManager {
     }
 
     public static BufferedImage getPTBuffered(String imageName) {
-        String fName = "/cardbuilder/frames/" + imageName;
+        String fName = FRAMES_FOLDER + imageName;
         try (final InputStream is = getJarResourceStream(fName)) {
             BufferedImage image = GraphicsUtils.getOptimizedImage(ImageIO.read(is));
             return GraphicsUtils.scale(image, 81, 42);
@@ -301,7 +302,7 @@ public class ResourceManager {
     }
 
     public static BufferedImage getSymbolBuffered(String imageName) {
-        String fName = "/cardbuilder/frames/" + imageName;
+        String fName = FRAMES_FOLDER + imageName;
         try (final InputStream is = getJarResourceStream(fName)) {
             BufferedImage image = GraphicsUtils.getOptimizedImage(ImageIO.read(is));
             return GraphicsUtils.scale(image, 31, 31);
@@ -312,7 +313,7 @@ public class ResourceManager {
 
 
     public static BufferedImage getLoyaltyBuffered(String imageName) {
-        String fName = "/cardbuilder/frames/" + imageName;
+        String fName = FRAMES_FOLDER + imageName;
         try (final InputStream is = getJarResourceStream(fName)) {
             BufferedImage image = GraphicsUtils.getOptimizedImage(ImageIO.read(is));
             return GraphicsUtils.scale(image, 42, 40);
@@ -322,7 +323,7 @@ public class ResourceManager {
     }
 
     public static BufferedImage getLoyaltyPanelBuffered(String imageName) {
-        String fName = "/cardbuilder/frames/" + imageName;
+        String fName = FRAMES_FOLDER + imageName;
         try (final InputStream is = getJarResourceStream(fName)) {
             BufferedImage image = GraphicsUtils.getOptimizedImage(ImageIO.read(is));
             return GraphicsUtils.scale(image, 60, 38);
@@ -332,10 +333,10 @@ public class ResourceManager {
     }
 
     public static Image resizeMana(ImageIcon mana) {
-        BufferedImage newImage = new BufferedImage(19,19,BufferedImage.TYPE_INT_ARGB);
+        BufferedImage newImage = new BufferedImage(19, 19, BufferedImage.TYPE_INT_ARGB);
         Graphics2D graphics2D = newImage.createGraphics();
         graphics2D.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BICUBIC);
-        graphics2D.drawImage(mana.getImage(),0,0,18,18,null);
+        graphics2D.drawImage(mana.getImage(), 0, 0, 18, 18, null);
         graphics2D.dispose();
         return newImage;
     }

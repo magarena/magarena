@@ -57,7 +57,7 @@ public class ImageFrame {
 
     static void drawImage(BufferedImage card, IRenderableCard cardDef) {
         Graphics2D g2d = card.createGraphics();
-        if (cardDef.isPlaneswalker()){
+        if (cardDef.isPlaneswalker()) {
             g2d.drawImage(getCardImage(cardDef), null, 27, 54);
         } else {
             g2d.drawImage(getCardImage(cardDef), null, 29, 60);
@@ -117,16 +117,21 @@ public class ImageFrame {
         File cropFile = MagicFileSystem.getCroppedCardImageFile(cardDef);
         if (cropFile.exists()) {
             if (cardDef.isPlaneswalker()) {
-                BufferedImage crop = GraphicsUtils.scale(ImageFileIO.toImg(cropFile, MagicImages.MISSING_CARD),320,234);
-                BufferedImage blend = ResourceManager.newFrame(ResourceManager.getPlaneswalkerImageBlend);
-                BufferedImage image = Frame.getBlendedFrame(new BufferedImage(320,234,BufferedImage.TYPE_INT_ARGB),blend,crop);
-                return image;
+                BufferedImage crop = GraphicsUtils.scale(ImageFileIO.toImg(cropFile, MagicImages.MISSING_CARD), 320, 234);
+                if (OracleText.getPlaneswalkerAbilityCount(cardDef) == 3) {
+                    BufferedImage blend = ResourceManager.newFrame(ResourceManager.getPlaneswalkerImageBlend);
+                    return Frame.getBlendedFrame(new BufferedImage(320, 234, BufferedImage.TYPE_INT_ARGB), blend, crop);
+                } else {
+                    BufferedImage cropSmall = crop.getSubimage(0, 0, 320, 201);
+                    BufferedImage blend = GraphicsUtils.scale(ResourceManager.newFrame(ResourceManager.getPlaneswalkerImageBlend), 320, 201);
+                    return Frame.getBlendedFrame(new BufferedImage(320, 210, BufferedImage.TYPE_INT_ARGB), blend, cropSmall);
+                }
             } else {
                 BufferedImage image = ImageFileIO.toImg(cropFile, MagicImages.MISSING_CARD);
                 return GraphicsUtils.scale(image, 316, 231);
             }
         }
-        if (cardDef.isPlaneswalker()){
+        if (cardDef.isPlaneswalker()) {
             return buildPlaneswalkerImage(cardDef);
         }
         return buildDefaultImage(cardDef);
@@ -138,11 +143,20 @@ public class ImageFrame {
     }
 
     private static BufferedImage buildPlaneswalkerImage(IRenderableCard cardDef) {
-        BufferedImage background = GraphicsUtils.scale(getDefaultBackground(cardDef),320,234);
-        BufferedImage blend = ResourceManager.newFrame(ResourceManager.getPlaneswalkerImageBlend);
-        BufferedImage symbol = GraphicsUtils.scale(getDefaultSymbol(cardDef),320,234);
-        BufferedImage image = Frame.getBlendedFrame(new BufferedImage(320,234,BufferedImage.TYPE_INT_ARGB),blend,background);
-        return getCompositeImage(image,symbol);
+        int WIDTH = 320;
+        int HEIGHT;
+        BufferedImage blend;
+        if (OracleText.getPlaneswalkerAbilityCount(cardDef) == 3) {
+            HEIGHT = 234;
+            blend = ResourceManager.newFrame(ResourceManager.getPlaneswalkerImageBlend);
+        } else {
+            HEIGHT = 201;
+            blend = GraphicsUtils.scale(ResourceManager.newFrame(ResourceManager.getPlaneswalkerImageBlend), WIDTH, HEIGHT);
+        }
+        BufferedImage background = GraphicsUtils.scale(getDefaultBackground(cardDef), WIDTH, HEIGHT);
+        BufferedImage symbol = GraphicsUtils.scale(getDefaultSymbol(cardDef), WIDTH, HEIGHT);
+        BufferedImage image = Frame.getBlendedFrame(new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_INT_ARGB), blend, background);
+        return getCompositeImage(image, symbol);
     }
 
     static BufferedImage getCompositeImage(BufferedImage baseFrame, BufferedImage topFrame) {

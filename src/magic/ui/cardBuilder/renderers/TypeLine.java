@@ -34,6 +34,8 @@ public class TypeLine {
             int yPos;
             if (cardDef.isToken()) {
                 yPos = cardDef.hasText() ? 356 : 431;
+            } else if (cardDef.isPlaneswalker() && OracleText.getPlaneswalkerAbilityCount(cardDef) == 4){
+                yPos = 263;
             } else {
                 yPos = 298;
             }

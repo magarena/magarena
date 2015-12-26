@@ -107,6 +107,33 @@ public class OracleText {
                 g2d.dispose();
             }
 
+        } else {
+            {
+                String[] abilityActivation = getPlaneswalkerActivationText(cardDef);
+                textBoxBounds = new Rectangle(0, 0, 282, 49);
+                for (int i = 0; i < 4; i++) {
+                    String oracleText = abilityActivation[i];
+                    AttributedString realOracle = textIconReplace(new AttributedString(oracleText), oracleText);
+
+                    BufferedImage textBoxText = drawTextToBox(
+                        realOracle,
+                        oracleText,
+                        cardTextFont,
+                        textBoxBounds,
+                        leftPadding,
+                        topPadding
+                    );
+
+                    Graphics2D g2d = cardImage.createGraphics();
+                    BufferedImage trimmedTextBox = trimTransparency(textBoxText);
+                    int heightPadding = (int) ((textBoxBounds.getHeight() - trimmedTextBox.getHeight()) / 2);
+                    int widthPadding = (int) Math.min((textBoxBounds.getWidth() - trimmedTextBox.getWidth()) / 2, 3);
+                    int yPos = (int) (289 + i * textBoxBounds.getHeight());
+                    g2d.drawImage(trimmedTextBox, 63 + widthPadding, yPos + heightPadding, null);
+                    g2d.dispose();
+                }
+
+            }
         }
     }
 
