@@ -45,12 +45,11 @@ public class TextImages {
         add("{19}", MagicIcon.MANA_19);
         add("{20}", MagicIcon.MANA_20);
         add("{X}", MagicIcon.MANA_X);
-        add("{S}", MagicIcon.MANA_SNOW);
-        
         add("{T}", MagicIcon.MANA_TAP);
         add("{Q}", MagicIcon.MANA_UNTAP);
         
         add(MagicCostManaType.Colorless, MagicIcon.MANA_COLORLESS);
+        add(MagicCostManaType.Snow, MagicIcon.MANA_SNOW);
         add(MagicCostManaType.White, MagicIcon.MANA_WHITE);
         add(MagicCostManaType.Blue, MagicIcon.MANA_BLUE);
         add(MagicCostManaType.Black, MagicIcon.MANA_BLACK);
