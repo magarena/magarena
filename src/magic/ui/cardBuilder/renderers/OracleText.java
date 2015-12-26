@@ -222,12 +222,8 @@ public class OracleText {
         String[] text = new String[abilities.length];
         for (int i = 0; i < abilities.length; i++) {
             String[] fulltext;
-            fulltext = abilities[i].split(":",2);
-            try {
-                text[i] = fulltext[1].trim();
-            } catch (IndexOutOfBoundsException e) {
-                text[i] = fulltext[0].trim();
-            }
+            fulltext = abilities[i].split(": ",2);
+            text[i] = fulltext[fulltext.length - 1];
         }
         return text;
     }
