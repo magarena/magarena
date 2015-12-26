@@ -184,7 +184,7 @@ public class PermanentViewerInfo {
             }
             // Prevent damage.
             if (permanent.getPreventDamage()>0) {
-                textBuffer.append("{P}").append(permanent.getPreventDamage()).append(' ');
+                textBuffer.append("{PD}").append(permanent.getPreventDamage()).append(' ');
             }
         }
 

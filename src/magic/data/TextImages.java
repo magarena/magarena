@@ -15,7 +15,7 @@ public class TextImages {
         add("{O}", MagicIcon.TARGET);
         add("{SS}", MagicIcon.CANNOTTAP);
         add("{D}", MagicIcon.DAMAGE);
-        add("{P}", MagicIcon.PREVENT);
+        add("{PD}", MagicIcon.PREVENT);
         add("{t}", MagicIcon.TOKEN);
         add("{L}", MagicIcon.LOSE);
         add("{c}", MagicIcon.COMBAT);
