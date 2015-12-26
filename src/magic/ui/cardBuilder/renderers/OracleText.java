@@ -354,10 +354,7 @@ public class OracleText {
             if (i < originalString.length()){
                 char c = originalString.charAt(i);
                 if (c == '{') {
-                    int endMana = i+2;
-                    if (originalString.charAt(endMana) == '/') {
-                        endMana+=2;
-                    }
+                    final int endMana = originalString.indexOf('}', i);
                     String iconString = originalString.substring(i, endMana + 1); //get mana-string //substring returns at -1 value
                     Image iconImage = MagicImages.getIcon(iconString).getImage(); //get related Icon as Image
                     ImageGraphicAttribute icon = new ImageGraphicAttribute(iconImage, GraphicAttribute.BOTTOM_ALIGNMENT); //define replacement icon
