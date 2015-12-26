@@ -31,7 +31,8 @@ public class MagicAnimations {
         }
 
         if (isOn(AnimationFx.NEW_TURN_MSG) && isNewTurnEvent(oldGameInfo, newGameInfo)) {
-            return getNewTurnAnimation(newGameInfo, gamePanel);
+            gamePanel.doNewTurnNotification(newGameInfo);
+//            return getNewTurnAnimation(newGameInfo, gamePanel);
         }
 
         return null;
