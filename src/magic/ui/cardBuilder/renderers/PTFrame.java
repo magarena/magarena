@@ -216,31 +216,11 @@ public class PTFrame {
     }
 
     private static String getPTText(IRenderableCard cardDef) {
-        if (cardDef.hasType(MagicType.Creature)) {
-            try {
-                //For game in progress - when available
-                return cardDef.getPowerToughnessText();
-            } catch (NullPointerException e) {
-                //Get default attributes if not in-game
-                return cardDef.getPowerToughnessText();
-            }
-        } else {
-            return "";
-        }
+        return cardDef.hasType(MagicType.Creature) ? cardDef.getPowerToughnessText() : ""
     }
 
     private static String getLoyaltyText(IRenderableCard cardDef) {
-        if (cardDef.hasType(MagicType.Planeswalker)) {
-            try {
-                //For game in progress - when available
-                return Integer.toString(cardDef.getStartingLoyalty());
-            } catch (NullPointerException e) {
-                //Get default attributes if not in-game
-                return Integer.toString(cardDef.getStartingLoyalty());
-            }
-        } else {
-            return "";
-        }
+        return cardDef.hasType(MagicType.Planeswalker) ? Integer.toString(cardDef.getStartingLoyalty()) : ""
     }
 
     static String[] getPlaneswalkerActivationCosts(IRenderableCard cardDef) {
