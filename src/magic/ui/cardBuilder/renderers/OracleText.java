@@ -28,13 +28,13 @@ import magic.ui.utility.GraphicsUtils;
 
 public class OracleText {
 
+    public static final char NEWLINE = '\n';
     private static final int maxDistance = 260100;
     private static final double transparencyTolerance = 0.001;
     private static final int padding = 1;
     private static final Font cardTextFont = ResourceManager.getFont("MPlantin.ttf").deriveFont(Font.PLAIN, 18);//scale down when long string
     private static final int topPadding = 7;
     private static final int leftPadding = 3;
-    public static final char NEWLINE = '\n';
     private static Rectangle textBoxBounds;
 
     static void drawOracleText(BufferedImage cardImage, IRenderableCard cardDef) {
@@ -222,7 +222,7 @@ public class OracleText {
         String[] text = new String[abilities.length];
         for (int i = 0; i < abilities.length; i++) {
             String[] fulltext;
-            fulltext = abilities[i].split(":");
+            fulltext = abilities[i].split(":",2);
             try {
                 text[i] = fulltext[1].trim();
             } catch (IndexOutOfBoundsException e) {
