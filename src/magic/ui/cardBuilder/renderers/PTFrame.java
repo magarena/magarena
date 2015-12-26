@@ -216,11 +216,11 @@ public class PTFrame {
     }
 
     private static String getPTText(IRenderableCard cardDef) {
-        return cardDef.hasType(MagicType.Creature) ? cardDef.getPowerToughnessText() : ""
+        return cardDef.hasType(MagicType.Creature) ? cardDef.getPowerToughnessText() : "";
     }
 
     private static String getLoyaltyText(IRenderableCard cardDef) {
-        return cardDef.hasType(MagicType.Planeswalker) ? Integer.toString(cardDef.getStartingLoyalty()) : ""
+        return cardDef.hasType(MagicType.Planeswalker) ? Integer.toString(cardDef.getStartingLoyalty()) : "";
     }
 
     static String[] getPlaneswalkerActivationCosts(IRenderableCard cardDef) {
