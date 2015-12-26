@@ -180,6 +180,7 @@ public enum MagicIcon {
     TOWERCOUNTER("tower-counter.png"),
 
     MANA_ANY("anymana.gif"),
+    MANA_PHYREXIAN_NULL("P.png"),
 
     MANA_UNTAP("Q.png"),
     MANA_TAP("T.png"),

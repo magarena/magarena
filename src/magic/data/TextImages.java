@@ -1,10 +1,11 @@
 package magic.data;
 
-import magic.model.MagicCounterType;
-import magic.model.MagicCostManaType;
-import magic.model.MagicPermanentState;
 import java.util.HashMap;
 import java.util.Map;
+
+import magic.model.MagicCostManaType;
+import magic.model.MagicCounterType;
+import magic.model.MagicPermanentState;
 
 public class TextImages {
 
@@ -47,8 +48,8 @@ public class TextImages {
         add("{X}", MagicIcon.MANA_X);
         add("{T}", MagicIcon.MANA_TAP);
         add("{Q}", MagicIcon.MANA_UNTAP);
-        add("{P}", MagicIcon.MANA_PHYREXIAN_BLACK);
-        
+        add("{P}", MagicIcon.MANA_PHYREXIAN_NULL);
+
         add(MagicCostManaType.Colorless, MagicIcon.MANA_COLORLESS);
         add(MagicCostManaType.Snow, MagicIcon.MANA_SNOW);
         add(MagicCostManaType.White, MagicIcon.MANA_WHITE);
@@ -141,7 +142,7 @@ public class TextImages {
         add(MagicCounterType.Wind, MagicIcon.WINDCOUNTER);
         add(MagicCounterType.Tower, MagicIcon.TOWERCOUNTER);
     }
-    
+
     private static void add(final MagicCounterType key, final MagicIcon icon) {
         add(key.getText(), icon);
     }
@@ -149,7 +150,7 @@ public class TextImages {
     private static void add(final MagicCostManaType key, final MagicIcon icon) {
         add(key.getText(), icon);
     }
-    
+
     private static void add(final MagicPermanentState key, final MagicIcon icon) {
         add(key.getText(), icon);
     }
