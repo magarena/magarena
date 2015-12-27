@@ -76,20 +76,19 @@ melvin
 PalladiaMors
 ShawnieBoy
 
-- use CardBuiler to generate proxy image when image is missing,
-  known issues #577 #587 #588 #593
+- improved generation of rendered card images using actual card frames
+  (known issues #577 #587 #588 #593)
 
-- deprecate text mode, hide text mode option from game menu by default,
-  add setting to turn it back on
+- deprecate text mode by disabling it by default, it can be enabled manually
+  from Settings -> Preferences -> General tab
 
-- replace Merlin with M icon
+- replace the Wizard icon by IcoJoy with M icon by ShawnieBoy
 
-- prepare game in background of duel decks screen and only enable play button
-  when ready
+- reduce waiting time by setting up game in the background of duel decks screen
 
-- implement the Vancourver mulligan
+- implement the Vancouver mulligan rule
 
-- download dialog lets you choose preferred language for card text
+- allow users to select preferred language for card text in download dialog
 
 - support for generating colorless mana and colorless mana cost, use the new
   colorless mana icon on permanents that generate colorless mana
@@ -101,22 +100,22 @@ ShawnieBoy
 
 - added the following to the card script:
   * allow amount in card script effect to be X for {X} spells
-  * ability: at each player's end step
-  * ability: at the beginning of each opponent's upkeep
-  * ability: when <creature> attacks and isn't blocked
-  * ability: when <creature> attacks alone
-  * ability: Whenever SN becomes target of RN, <effect>'
-  * effect: <player> get <amount> poison counters.
-  * effect: add ExileGroupCard
-  * effect: <source> deals X damage to <targets>, where X is <amount>
+  * ability: At the beginning of each player's end step, <effect>
+  * ability: At the beginning of each opponent's upkeep, <effect>
+  * ability: When <creature> attacks and isn't blocked, <effect>
+  * ability: When <creature> attacks alone, <effect>
+  * ability: Whenever SN becomes target of RN, <effect>
+  * effect: Exile <card>.
+  * effect: Destroy <permanent> at the beginning of the next end step.
+  * effect: Prevent all combat damage that would be dealt to and dealt by <permanent> this turn.
+  * effect: <permanent> attacks this turn if able.
   * effect: <player> lose the game.
   * effect: <player> win the game.
   * effect: <player> takes <amount> extra turns.
-  * effect: Destroy <permanent> at the beginning of the next end step.
-  * effect: <permanent> attacks this turn if able.
+  * effect: <player> get <amount> poison counters.
   * effect: <player>'s life total becomes <number>.
   * effect: <player> can't cast spells this turn.
-  * effect: prevent all combat damage that would be dealt to and dealt by <permanent> this turn.
+  * effect: <source> deals X damage to <targets>, where X is <amount>.
   * effect: <source> deals <amount> damage to <permanents>. If a creature
             dealt damage this way would die this turn, exilt it instead.
 
