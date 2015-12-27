@@ -35,7 +35,7 @@ Selecting the AI to play against:
 
 Thanks to
   ubeefx for creating such a great game
-  epiko for creating the Magarena logo and the amazing color themes
+  epiko for creating the first Magarena splash screen and the amazing color themes
   Salasnet, pedro1973, and elias for creating beautiful themes, http://www.slightlymagic.net/forum/viewforum.php?f=89
   IcoJoy, http://www.icojoy.com/blogs/, for the nice free mage logo and icon
   singularita for creating the scripts to add over 300 additional creature cards
@@ -56,7 +56,8 @@ Thanks to
   PalladiaMors, PhazedOut, Aunukia, nado18, Erkcan Özcan, kdesmond, a.
   benedict balbuena, spartan vi, Braullynn, mecheng, pcastellazzi, rasdel,
   Tyrael, hong yie, ember hauler, Hector Marin, drooone, jericho.pumpkin,
-  Mike, Guest, and ShawnieBoy for implementing new cards  
+  Mike, Guest for implementing new cards  
+  ShawnieBoy for implementing new cards, the M logo & general image enhancements
   PalladiaMors for the Portuguese UI translation
   kannikkiy for the Russian UI translation
   Pichoro, Acorntail and all at http://magicseteditor.sourceforge.net for CardBuilder components.
