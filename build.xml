@@ -70,7 +70,6 @@
     </javac>
     <copy includeemptydirs="false" todir="build">
       <fileset dir="resources">
-        <exclude name="**/.svn"/>
         <exclude name="**/_excluded/**"/>
       </fileset>
     </copy>
