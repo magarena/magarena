@@ -2950,8 +2950,9 @@ public enum MagicRuleEventAction {
     public static String addChoiceIndicator(final MagicChoice choice, final String text) {
         final MagicTargetChoice tchoice = choice.getTargetChoice();
         if (tchoice.isValid()) {
-            final String desc = tchoice.getTargetDescription();
-            return text.replace(desc, desc + "$");
+            final Pattern p = Pattern.compile(Pattern.quote(tchoice.getTargetDescription()), Pattern.CASE_INSENSITIVE);
+            final Matcher m = p.matcher(text);
+            return m.replaceFirst("$0\\$");
         } else if (choice.isValid()) {
             //replace final period with target indicator and period
             return text.replaceAll("\\.$", "\\$.");
