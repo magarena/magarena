@@ -77,8 +77,8 @@ melvin
 PalladiaMors
 ShawnieBoy
 
-- improved generation of rendered card images using actual card frames
-  (known issues #577 #587 #588 #593)
+- improved generation of rendered card images using actual card frames and
+  optional cropped images (known issues #577 #587 #588 #593)
 
 - deprecate text mode by disabling it by default, it can be enabled manually
   from Settings -> Preferences -> General tab
