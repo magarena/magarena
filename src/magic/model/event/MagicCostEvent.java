@@ -51,7 +51,7 @@ public enum MagicCostEvent {
             return false;
         }
     },
-    BounceMultiple("Return (?<another>another )?(" + ARG.AMOUNT + " )?" + ARG.ANY + " to (their|its) owner's hand") {
+    BounceMultiple("Return ((?<another>another )|" + ARG.AMOUNT + " )?" + ARG.ANY + " to (their|its) owner's hand") {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             final int amt = ARG.amount(arg);
             final String chosen = MagicTargetFilterFactory.toSingular(ARG.any(arg));
