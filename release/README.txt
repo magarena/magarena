@@ -126,16 +126,13 @@ ShawnieBoy
   * fix Gemstone Mine generating Colorless mana, it adds one mana of any color, not one mana of any type
   * use correct target choice for Faerie Impostor
   * add groovy to Clash of Wills - fixes functionality
-  * land card was displayed as missing in ai-plays-from-hand animation
-  * was not picking up change in card text language setting during same session
   * Plague Rats to use the correct quoting character of backtick instead of double quote
   * Lich and Nefarious Lich game loss triggers to use the stack
   * Transcendence state trigger should go onto the stack like any other state trigger
   * add MagicCard.isPermanentCard, check that card is a permanent card before putting it on the battlefield (issue #554)
   * add May tense for 'PN may PN draws' fix
   * player limited to moving equipment twice (issue #551)
-  * missing mana_or_combat for Lumbering Falls and Shambling Vent, Izzet Keyrune
-  * poor quality scaling of card image during preview stage of animation (issue #535)
+  * missing mana_or_combat for Lumbering Falls and Shambling Vent, Izzet Keyrune  
   * ArrayIndexOutOfBoundsException: CardsCanvas.highlightCardUnderMousePointer (issue #540)
   * only triggers get MagicEvent.NONE when condition check fails (issue #519)
   * NPE if escape key pressed on game loading screen (issue #529)
