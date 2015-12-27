@@ -377,6 +377,12 @@ public class MagicTargetFilterFactory {
             return target.isLand() && !target.hasType(MagicType.Basic) && target.isController(player);
         }
     };
+    
+    public static final MagicPermanentFilterImpl NON_LAIR_LAND_YOU_CONTROL=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            return target.isLand() && !target.hasSubType(MagicSubType.Lair) && target.isController(player);
+        }
+    };
 
     public static final MagicPermanentFilterImpl NONBASIC_LAND_AN_OPPONENT_CONTROLS=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
@@ -1080,6 +1086,14 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl UNTAPPED_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() &&
+                   target.isUntapped() &&
+                   target.isController(player);
+        }
+    };
+    
+    public static final MagicPermanentFilterImpl UNTAPPED_ISLAND_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            return target.hasSubType(MagicSubType.Island) &&
                    target.isUntapped() &&
                    target.isController(player);
         }
@@ -1896,6 +1910,15 @@ public class MagicTargetFilterFactory {
             return targetType == MagicTargetType.Hand;
         }
     };
+    
+    public static final MagicCardFilterImpl NONCREATURE_CARD_FROM_HAND = new MagicCardFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+            return target.hasType(MagicType.Creature) == false;
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType == MagicTargetType.Hand;
+        }
+    };
 
     public static final MagicPermanentFilterImpl UNTAPPED_LAND_YOU_CONTROL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
@@ -2367,6 +2390,7 @@ public class MagicTargetFilterFactory {
         // <color|type|subtype> creature card from your hand
         single.put("blue or red creature card from your hand", BLUE_OR_RED_CREATURE_CARD_FROM_HAND);
         single.put("multicolored creature card from your hand", MULTICOLORED_CREATURE_CARD_FROM_HAND);
+        single.put("noncreature card from your hand", NONCREATURE_CARD_FROM_HAND);
 
         // <color|type|subtype> card from your library
         single.put("card from your library", CARD_FROM_LIBRARY);
@@ -2429,6 +2453,7 @@ public class MagicTargetFilterFactory {
         single.put("white or black creature you control", WHITE_OR_BLACK_CREATURE_YOU_CONTROL);
         single.put("white or blue creature you control", WHITE_OR_BLUE_CREATURE_YOU_CONTROL);
         single.put("untapped creature you control", UNTAPPED_CREATURE_YOU_CONTROL);
+        single.put("untapped island you control", UNTAPPED_ISLAND_YOU_CONTROL);
         single.put("tapped creature you control", TAPPED_CREATURE_YOU_CONTROL);
         single.put("artifact or creature you control", ARTIFACT_OR_CREATURE_YOU_CONTROL);
         single.put("attacking or blocking creature you control", ATTACKING_OR_BLOCKING_CREATURE_YOU_CONTROL);
@@ -2595,6 +2620,7 @@ public class MagicTargetFilterFactory {
         // <color|type|subtype> you control
         single.put("basic land you control", BASIC_LAND_YOU_CONTROL);
         single.put("snow land you control", SNOW_LAND_YOU_CONTROL);
+        single.put("non-lair land you control", NON_LAIR_LAND_YOU_CONTROL);
         single.put("nonsnow land you control", NONSNOW_LAND_YOU_CONTROL);
         single.put("nonbasic land you control", NONBASIC_LAND_YOU_CONTROL);
         single.put("land with a trap counter on it you control", TRAPPED_LAND_YOU_CONTROL);
