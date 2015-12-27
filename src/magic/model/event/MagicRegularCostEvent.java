@@ -41,4 +41,6 @@ public class MagicRegularCostEvent implements MagicMatchedCostEvent {
     private static String capitalize(final String text) {
         return Character.toUpperCase(text.charAt(0)) + text.substring(1);
     }
+
+    public static final MagicRegularCostEvent NONE = new MagicRegularCostEvent("{0}");
 }
