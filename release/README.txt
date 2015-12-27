@@ -56,8 +56,8 @@ Thanks to
   PalladiaMors, PhazedOut, Aunukia, nado18, Erkcan Özcan, kdesmond, a.
   benedict balbuena, spartan vi, Braullynn, mecheng, pcastellazzi, rasdel,
   Tyrael, hong yie, ember hauler, Hector Marin, drooone, jericho.pumpkin,
-  Mike, Guest for implementing new cards  
-  ShawnieBoy for implementing new cards, the M logo & general image enhancements
+  Mike, and Guest for implementing new cards
+  ShawnieBoy for implementing new cards, the M logo, and general image enhancements
   PalladiaMors for the Portuguese UI translation
   kannikkiy for the Russian UI translation
   Pichoro, Acorntail and all at http://magicseteditor.sourceforge.net for CardBuilder components.
