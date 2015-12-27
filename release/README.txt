@@ -76,7 +76,8 @@ melvin
 PalladiaMors
 ShawnieBoy
 
-- use CardBuiler to generate proxy image when image is missing
+- use CardBuiler to generate proxy image when image is missing,
+  known issues #577 #587 #588 #593
 
 - deprecate text mode, hide text mode option from game menu by default,
   add setting to turn it back on
