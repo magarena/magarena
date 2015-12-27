@@ -132,7 +132,7 @@ ShawnieBoy
   * add MagicCard.isPermanentCard, check that card is a permanent card before putting it on the battlefield (issue #554)
   * add May tense for 'PN may PN draws' fix
   * player limited to moving equipment twice (issue #551)
-  * missing mana_or_combat for Lumbering Falls and Shambling Vent, Izzet Keyrune  
+  * missing mana_or_combat for Lumbering Falls and Shambling Vent, Izzet Keyrune
   * ArrayIndexOutOfBoundsException: CardsCanvas.highlightCardUnderMousePointer (issue #540)
   * only triggers get MagicEvent.NONE when condition check fails (issue #519)
   * NPE if escape key pressed on game loading screen (issue #529)
@@ -325,7 +325,7 @@ ShawnieBoy
   * ability: devoid
   * ability: ingest
   * ability: awaken <n> <cost>
- 
+
 - fixed the following bugs:
   * log widget causes UI to slow down when there are many log entries (issue #419)
   * translation setting is overwritten when importing
@@ -363,7 +363,7 @@ PalladiaMors
 ShawnieBoy
 
 - refactor and update the UI to allow UI text to be translated to other languages
-  
+
 - add Portuguese UI translation, it can be selected at startup or via the preferences dialog
 
 - to help translate the UI, please read https://github.com/magarena/magarena/wiki/Translating-Magarena
@@ -371,7 +371,7 @@ ShawnieBoy
 - include the "Magic Origins" set in formats
 
 - improve AI timing hints for sorcery speed pump spells
-    
+
 - added the following to the card script:
   * condition: there are two or more instant and/or sorcery cards in your graveyard
   * ability: renown <n>
@@ -418,7 +418,7 @@ lodici
 melvin
 PalladiaMors
 ShawnieBoy
-    
+
 - support costs with the snow mana symbol {S}
 
 - layout and style updates to Deck Editor including persistent abbreviated deck view
@@ -428,12 +428,12 @@ ShawnieBoy
 - add an Audio tab in Preferences dialog for all audio settings, volume of UI sounds can now be adjusted
 
 - new feedback sounds when adding or removing a card from deck, bong sound for alerts, and clunk sound for invalid action
-    
-- rename preference "Allow only sensible choices" to "Limit options for human player to those available to the AI", 
+
+- rename preference "Allow only sensible choices" to "Limit options for human player to those available to the AI",
   change to off by default
-    
+
 - improve AI's use of specific cards by adding AI specific casting restrictions
-    
+
 - fixed the following bugs:
   * crash when mana cost exceeds {16}
   * crash when double clicking on card in hand (issue #374)
@@ -1091,7 +1091,7 @@ ShawnieBoy
   (requires an Internet connection)
 
 - when both players would lose due to life or poison counters, the active
-  player loses. 
+  player loses.
 
 - fixed the following bugs:
  * Mac launcher only allowed Java SE 7 to work, Java SE 8 did not work
@@ -1142,7 +1142,7 @@ ShawnieBoy
 - Project Firemind integration
   You can support http://firemind.ch/, a deck evaluation with AI service, by
   running duels on your machine. You'll first need to obtain your access key
-  from your Project Firemind profile page, then enter it in 
+  from your Project Firemind profile page, then enter it in
   Settings -> Run Firemind Worker.
 
 - tabbed view for the deck editor for simpler, less cluttered UI which scales down to smaller screens
@@ -1174,7 +1174,7 @@ ShawnieBoy
   * cost: Discard your hand
   * effect: <player> sacrifices <permanent>.
   * effect: Search your library for a card and put it into your hand. Then shuffle your library.
-  * effect: Search your library for up to <amount> <chosen> 
+  * effect: Search your library for up to <amount> <chosen>
   * effect: Exile SN, then return it to the battlefield under (your|its owner's) control.
   * effect: Exile <chosen>, then return it to the battlefield under (your|its owner's) control.
   * effect: Exile SN. Return it to the battlefield under its owner's control at the beginning of the next end step.
@@ -1343,7 +1343,7 @@ ShawnieBoy
   optional to enable updating of low quality images to high quality images
 
 - click on double-sided or flip card in the card explorer to view other side
-  
+
 - add option to download images for unimplemented cards
 
 - add preferences setting to view card image at full size (480x680)
@@ -1353,7 +1353,7 @@ ShawnieBoy
 - add icons for fear, intimidate, shroud, hexproof, and indestructible
 
 - added the following to the card script:
- * cost: sacrifice <amount> <permanents> 
+ * cost: sacrifice <amount> <permanents>
  * cost: tap <amount> untapped <permanents>
  * cost: untap <amount> tapped <permanents>
  * cost: put <amount> <counter type> counters on SN
@@ -1384,7 +1384,7 @@ ShawnieBoy
  * ability: protection from <permanents>
  * ability: cannot be blocked by <permanents>
  * ability: cannot be blocked except by <permanents>
- * ability: morph <costs> 
+ * ability: morph <costs>
  * ability: Cast SN only <conditions>
  * ability: Cast SN with AI only <conditions>
  * ability: <activated ability> Activate this ability only <conditions>.
@@ -1400,7 +1400,7 @@ ShawnieBoy
 
 - fixed the following bugs:
  * image files are corrupted due to partial download (issue 483)
- * tokens with variable power/toughness do not have their power/toughness copied (issue 523) 
+ * tokens with variable power/toughness do not have their power/toughness copied (issue 523)
  * permanents that enters the battlefield modified may trigger based on pre-modified state (issue 624)
  * not refreshing background after import (issue 628)
  * missing cards notification message not updated after download (issue 638)
@@ -1611,10 +1611,10 @@ PalladiaMors
 ShawnieBoy
 
 - added Deck Chooser screen which replaces the file open dialog
-  
-- display invalid decks with the name scored out and in red  
 
-- show Status filter on Deck Editor screen 
+- display invalid decks with the name scored out and in red
+
+- show Status filter on Deck Editor screen
 
 - rename Oracle filter to Search and add tooltip explaining what it searches
 
@@ -1622,7 +1622,7 @@ ShawnieBoy
 
 - added the following to the card script:
  * effect: Each <player> discard <amount> cards [at random].
- * ability: legendary landwalk 
+ * ability: legendary landwalk
  * ability: Channel - <costs>: <effect>
  * ability: Bloodrush - <costs>: <effect>
  * ability: madness <mana cost>
@@ -1733,7 +1733,7 @@ melvin
 - added the following to the card script:
   * ability: dethrone
   * effect: You discard <amount> card [at random].
-  * effect: Each <player> draws <amount> cards. 
+  * effect: Each <player> draws <amount> cards.
 
 - fixed the following bugs:
   * Refresh's description showed 'permanent' instead of 'creature'
@@ -1880,8 +1880,8 @@ ShawnieBoy
   * ability: Whenever you gain life, <effect>
 
 - changed the following card script syntax (old -> new):
-  * lord <permanents> have/has <abilities> 
-    -> <permanents> have/has <abilities> 
+  * lord <permanents> have/has <abilities>
+    -> <permanents> have/has <abilities>
   * lord <permanents> get <power/toughness>
     -> <permanents> get <power/toughness>
 
@@ -1999,7 +1999,7 @@ ShawnieBoy
   * effect: Sacrifice SN.
   * effect: Sacrifice SN at the beginning of the next end step.
   * effect: Search your library for <chosen>, reveal it, then shuffle your library. Then put that card on top of it.
-  * effect: <permanents> get <pt change> and gain <abilities> until end of turn. 
+  * effect: <permanents> get <pt change> and gain <abilities> until end of turn.
   * ability: Whenever a/an <permanent> enters the battlefield, <effect>
   * ability: Whenever another <permanent> enters the battlefield, <effect>
   * ability: Whenever another <permanent> enters the battlefield under your control, <effect>
@@ -2051,7 +2051,7 @@ ShawnieBoy
   * Jagged-Scar Archers did not show chosen target (issue 574)
   * Trigger from Garruk, Caller of Beasts' emblem is not optional (issue 517)
   * Brainstorm shows name of cards from hidden zone (issue 441)
-  * Flowstone Embrace gave enchanted creature +2/+2, should be +2/-2 
+  * Flowstone Embrace gave enchanted creature +2/+2, should be +2/-2
   * Unable to choose when Eldrazi Spawn to pay mana cost (issue 427)
 
 - added the following cards:
@@ -2187,7 +2187,7 @@ Grundomu
 Guest
 hong yie
 Lodici
-melvin 
+melvin
 mlkrime
 ShawnieBoy
 tiagoruback
@@ -2234,25 +2234,25 @@ woggle
 - changed the following card script syntax (old -> new):
   * pay <comma separate costs>: <effect>
     -> cost <comma separate costs>: <effect>
-  * combat damage player grow 
+  * combat damage player grow
     -> Whenever SN deals combat damage to a player, put a +1/+1 counter on SN.
-  * damage opponent draw card 
+  * damage opponent draw card
     -> Whenever SN deals damage to an opponent, draw a card.
-  * damage opponent may draw card 
+  * damage opponent may draw card
     -> Whenever SN deals damage to an opponent, you may draw a card.
-  * combat damage draw card 
-    -> Whenever SN deals combat damage to a player, draw a card. 
-  * combat damage may draw card 
+  * combat damage draw card
+    -> Whenever SN deals combat damage to a player, draw a card.
+  * combat damage may draw card
     -> Whenever SN deals combat damage to a player, you may draw a card.
-  * enters effect <effect> 
+  * enters effect <effect>
     -> When SN enters the battlefield, <effect>
   * leaves effect
     -> When SN leaves the battlefield, <effect>
-  * your upkeep effect <effect> 
+  * your upkeep effect <effect>
     -> At the beginning of your upkeep, <effect>
   * landfall effect <effect>
     -> Whenever a land enters the battlefield under your control, <effect>
-  * attacks effect <effect> 
+  * attacks effect <effect>
     -> Whenever SN attacks, <effect>
   * battalion effect <effect>
     -> Whenever SN and at least two other creatures attack, <effect>
@@ -2452,7 +2452,7 @@ tiagoruback
 - full screen card view will stack duplicate cards and display the count as an overlay
 
 - F10 takes a screen shot and displays it in the default application associated with "png" files if available
-  
+
 - added the following to the card script:
   * ability: tribute <n> effect <effect>
   * ability: enters with counter <counter type> <amount/X>
@@ -2744,7 +2744,7 @@ ShawnieBoy
   * effect: <chosen> discards <amount> cards.
   * effect: <chosen> discards <amount> cards at random.
   * effect: <chosen> draws <amount> cards, then discards <amount> cards.
-  * effect: <chosen> gains <amount> life. 
+  * effect: <chosen> gains <amount> life.
   * effect: prevent the next <amount> damage that would be dealt to SN this turn.
   * cost: Sacrifice an Elemental
   * cost: Sacrifice a Wall
@@ -3262,7 +3262,7 @@ Griffins.dec, Holy_Wood.dec, Insect_Doom.dec, Pain_and_Gain.dec,
 Random_Usefulness.dec, Sorcerer.dec, Spirit_Recycler.dec, Unlikely_Allies.dec,
 Vensers_Artifacts.dec, White_Infect.dec, White_Infect_40.dec,
 Zombie_Overlord.dec, Glorfindel_GWR_Zoo.dec, Glorfindel_G_Garruk.dec,
-Glorfindel_W_Auras-40.dec, Glorfindel_W_Elspeth.dec, 
+Glorfindel_W_Auras-40.dec, Glorfindel_W_Elspeth.dec,
 
 - added the following cards:
 Acidic Sliver, Ambassador Oak, Ancestor's Chosen, Anger of the Gods,
@@ -3380,7 +3380,7 @@ melvin
 - fixed: incorrect URL for image of Searing Spear
 - fixed: incorrect URL for image of Sliver token
 - fixed: incorrect URL for card text of Zhur-Taa Swine
-- fixed: Hedge Troll's ability cost {G} instead of {W} (issue 359) 
+- fixed: Hedge Troll's ability cost {G} instead of {W} (issue 359)
 - fixed: miracle trigger always treat X as 0 mana cost (issue 360)
 - fixed: Soulbond still applied if target is invalid upon resolution (issue 361)
 - fixed: Deadwood Treefolk can return itself from graveyard (issue 236)
@@ -3442,7 +3442,7 @@ includes contributions from melvin, a. benedict balbuena, manve.herumedre, and n
 - fixed: Wei Ambush Force should be 1/1, not 2/2
 - fixed: Howling Mine should trigger in the draw phase instead of upkeep phase
 - fixed: cards that enters tapped was triggering Gideon's Avenger
-- fixed: Outwit should not be able to target spells that did not target a player 
+- fixed: Outwit should not be able to target spells that did not target a player
 - fixed: double clicking in choice menu could cause the game to hang
 
 - added the following premade deck:
@@ -3551,7 +3551,7 @@ Garruk's Packleader
 
 Release 1.36 (March 29, 2013)
 ============
-includes contributions from melvin, Jak, and sponeta 
+includes contributions from melvin, Jak, and sponeta
 
 - added support for Planeswalker card type. Note that creatures do not
   directly attack Planeswalkers, rather the damage redirect rule applies to
@@ -3594,7 +3594,7 @@ includes contributions from melvin
   * unleash
 - added support for "creature you control" and "creature opponent control" to enchant property in card script
 - converted 99 cards with card code to use groovy code
-- added support for multiple card names to be specified in required_card_code and requires_groovy_code. 
+- added support for multiple card names to be specified in required_card_code and requires_groovy_code.
   Card names should be separated by a single comma without any space
 - removed white border around card pic pop up
 
@@ -3692,13 +3692,13 @@ includes contributions from melvin, Aunukia, and PhazedOut
 - rules parser integrated into main program at src/magic/grammar
 
 - fixed: changes to a creature's power and toughness may not be reflected immediately
-- fixed: change of control of a creature in combat was not removing creature from combat 
+- fixed: change of control of a creature in combat was not removing creature from combat
 - fixed: game crashes when sorting by power or toughness in deck editor
 - fixed: message shown when activating a pump ability shows "+1/+-1" instead of "+1/-1"
 - fixed: Sokenzan Spellblade's timing hint is set of flash, should be main
 - fixed: Glimmerdust Nap was able to enchant untapped creatures
 - fixed: Angelic Armaments doesn't make equipped creature white
-- fixed: Curiosity able to draw card when dealing damage to any player, 
+- fixed: Curiosity able to draw card when dealing damage to any player,
          should be only for opponent of controller of Curiosity
 
 - added the following cards:
@@ -3822,7 +3822,7 @@ Release 1.30 (September 30, 2012)
 includes contributions from melvin, a. benedict balbuena, and kdesmond
 
 - mulligan option is always available
-- added "effect" property to card script to allow spells to be scripted, 
+- added "effect" property to card script to allow spells to be scripted,
   currently supports destroy, exile and counter
 - added "kicker", "multikicker", and "enters with x" to "ability" property in card script,
   specific effect needs to be implemented as triggers in card code
@@ -3858,7 +3858,7 @@ Release 1.29 (August 25, 2012)
 ============
 includes contributions from melvin, a. benedict balbuena, spartan vi, Braullynn
 
-- allow "replicate" keyword in ability property of card script 
+- allow "replicate" keyword in ability property of card script
 - "value" property in card script should be determined from Gatherer's
   community rating
 - improved checking of abilities in card script
@@ -3939,7 +3939,7 @@ Zodiac Snake, Zodiac Tiger
 
 Release 1.28 (July 29, 2012)
 ============
-includes contributions from mecheng, melvin, pcastellazzi, and sponeta 
+includes contributions from mecheng, melvin, pcastellazzi, and sponeta
 
 - fixed: Jungle Troll not considered red
 - fixed: Ulvenwald Bear's was using Festerhide Boar's ability
@@ -4042,7 +4042,7 @@ Release 1.26 (May 26, 2012)
 - changed card script so that card name is described using "name=" instead of ">"
 - improved exception handling so that crash.log captures the relevant game state
 
-- fixed: generate deck does not use user's settings (issue 213) 
+- fixed: generate deck does not use user's settings (issue 213)
 - fixed: Scorch the Fields not dealing damage to all humans (issue 214)
 - fixed: program crash when loading Fallen_Knights_60.dec due to missing comment symbol
 - fixed: card image was not downloaded even though current image should be ignored
@@ -4366,7 +4366,7 @@ Wurm, Wretched Banquet, Zealot il-Vec
 Release 1.19 (October 28, 2011)
 ============
 brought to you by beholder, melvin, and wait321
- 
+
 - improved AI performance when there are a lot of blocking options
 - downloaded images are updated automatically. No need to restart Magarena
 - improved AI handling of equipment
@@ -4522,7 +4522,7 @@ Corpse, Wall of Diffusion, Wall of Tears, Wanderbrine Rootcutters, Wanderwine
 Prophets, Waning Wurm, Whispers of the Muse, Wing Splicer, Wirewood Lodge,
 Witherscale Wurm, Wolverine Pack, Wooden Stake, Woodland Cemetery, Woodland
 Sleuth, Woodripper, Wreath of Geists, Wren's Run Packmaster, Yavimaya Ants,
-Yavimaya Hollow, Zhalfirin Commander, Zhalfirin Knight, 
+Yavimaya Hollow, Zhalfirin Commander, Zhalfirin Knight,
 
 Release 1.18 (September 23, 2011)
 ============
@@ -4879,11 +4879,11 @@ This is a bug fix release.
   (978 cards in total)
 
 - added a crash log to the game, it is stored in the Magarena data folder
-  along with the game.cfg and tournament.cfg files. 
+  along with the game.cfg and tournament.cfg files.
 
 - fixed an issue where the game would crash when trying to play sound effects
 - fixed bug with Sun Titan's ability to return, previously could return
-  spell cards 
+  spell cards
 
 Release 1.17 (August 26, 2011)
 ============
@@ -4969,16 +4969,16 @@ Release 1.16 (July 25, 2011)
 - fixed issue 28: AI getting stuck when there are many creatures on the battlefield,
   needs more testing
 
-- added variant of minimax that cheats 
+- added variant of minimax that cheats
 - popup card info no longer disappears when the phase changes
 - do not auto pass priority when AI blocks your attackers
 - increased delay when auto passing priority with item on stack to 2s
 - selectable cards are now highlighted with a colored border instead of an overlay
 - removed GUI deck strength viewer as it could take a long time to run
-- added four more premade decks 
+- added four more premade decks
     decks/DL_Burn.dec
-    decks/Grundomu_Death_and_Rebirth.dec 
-    decks/Grundomu_Knights_Everywhere.dec 
+    decks/Grundomu_Death_and_Rebirth.dec
+    decks/Grundomu_Knights_Everywhere.dec
     decks/Kuno_RUw_Aggro_Control.dec
 
 Release 1.15 (June 20, 2011)
@@ -5065,7 +5065,7 @@ Release LE 1.12 (April 17, 2011)
 
 - modified game to work with a premade Magarena data folder
 - added selectable avatar sets in preferences, separate from theme
-- added unlimited undo support 
+- added unlimited undo support
 - added "Reset game" in menu, undoing all moves
 - added M key as an additional shortcut for messages
 
@@ -5168,7 +5168,7 @@ Release 1.4 (December 26, 2010)
 
 Release 1.3 (December 24, 2010)
 ===========
- 
+
 - 15 new cards (490 total)
 - replaced Elite Vanguard with Steppe Lynx
 - replaced Curse of Chains with Narcolepsy
@@ -5190,7 +5190,7 @@ Release 1.2 (December 18, 2010)
 ===========
 
 - 25 new cards (475 total)
-- replaced Disperse with Into the Roil 
+- replaced Disperse with Into the Roil
 - replaced Gruul War Plow with Chimeric Mass
 
 - support for loading and saving decks to an editable text format in decks folder
