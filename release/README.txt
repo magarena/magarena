@@ -121,22 +121,22 @@ ShawnieBoy
             dealt damage this way would die this turn, exilt it instead.
 
 - fixed the following bugs:
-  * prevent exception if Firemind json feed has a null string (issue #563)
-  * face down card image displayed correctly from log/stack and when running animation (issue #567)
-  * fix Gemstone Mine generating Colorless mana, it adds one mana of any color, not one mana of any type
-  * use correct target choice for Faerie Impostor
-  * add groovy to Clash of Wills - fixes functionality
-  * Plague Rats to use the correct quoting character of backtick instead of double quote
-  * Lich and Nefarious Lich game loss triggers to use the stack
-  * Transcendence state trigger should go onto the stack like any other state trigger
-  * add MagicCard.isPermanentCard, check that card is a permanent card before putting it on the battlefield (issue #554)
-  * add May tense for 'PN may PN draws' fix
-  * player limited to moving equipment twice (issue #551)
-  * missing mana_or_combat for Lumbering Falls and Shambling Vent, Izzet Keyrune
-  * ArrayIndexOutOfBoundsException: CardsCanvas.highlightCardUnderMousePointer (issue #540)
-  * only triggers get MagicEvent.NONE when condition check fails (issue #519)
-  * NPE if escape key pressed on game loading screen (issue #529)
-  * add line listener that closes clip on stop to release resources (issue #526)
+  * crash when escape key pressed on game loading screen (issue #529)
+  * crash when moving mouse around the screen when deal animation is running (issue #540)
+  * crash when Firemind json feed has a null string (issue #563)
+  * crash when copying spell whose effect begins with an "if" clause (issue #519)
+  * potential resource leak when playing sound clip (issue #526)
+  * player limited to activating equip at most twice (issue #551)
+  * flickering manifest cards casts them if they are spells (issue #554)
+  * link in log/stack and card animation shows actual card and not morph card (issue #567)
+  * weird phrasing in log/stack for optional effects, eg "PN may PN draws"
+  * Lumbering Falls, Shambling Vent, and Izzet Keyrune missing mana_or_combat property in card script
+  * Clash of Wills allows player to pay any amount of mana to prevent the spell from being countered
+  * Faerie Impostor able to return itself when it should return another creature
+  * Gemstone Mine able to generate snow and colorless mana
+  * Lich and Nefarious Lich game loss trigger did not use the stack
+  * Transcendence's state trigger did not use the stack
+  * Plague Rats always has a power and toughness of 0/0
 
 - added the following cards:
 Ancient Kavu, Aura Flux, Barbed Foliage, Barrage of Boulders,
