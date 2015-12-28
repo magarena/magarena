@@ -70,6 +70,9 @@ Thanks to
 
 Thank you for your support and have fun!
 
+Release 1.70 (January ??, 2016)
+============
+
 Release 1.69 (December 27, 2015)
 ============
 lodici
