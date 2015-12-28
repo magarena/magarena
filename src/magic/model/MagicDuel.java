@@ -98,7 +98,7 @@ public class MagicDuel {
         gameNr++;
         if (gameNr>duelConfig.getNrOfGames()) {
             gameNr=1;
-            opponentIndex++;
+            opponentIndex=1;
             determineStartPlayer();
         }
 
