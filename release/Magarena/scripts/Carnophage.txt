@@ -6,6 +6,6 @@ type=Creature
 subtype=Zombie
 cost={B}
 pt=2/2
+ability=At the beginning of your upkeep, you may pay 1 life. If you don't, tap SN.
 timing=main
-requires_groovy_code
 oracle=At the beginning of your upkeep, tap Carnophage unless you pay 1 life.

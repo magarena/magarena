@@ -6,7 +6,7 @@ type=Creature
 subtype=Spawn
 cost={4}{U}{U}{U}
 pt=6/6
-ability=SN can't be blocked by red creatures.
+ability=At the beginning of your upkeep, you may sacrifice an Island. If you don't, sacrifice SN~and SN deals 6 damage to you.;\
+        SN can't be blocked by red creatures.
 timing=main
-requires_groovy_code
 oracle=At the beginning of your upkeep, unless you sacrifice an Island, sacrifice Elder Spawn and it deals 6 damage to you.\nElder Spawn can't be blocked by red creatures.

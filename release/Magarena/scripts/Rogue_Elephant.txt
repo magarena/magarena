@@ -6,6 +6,6 @@ type=Creature
 subtype=Elephant
 cost={G}
 pt=3/3
+ability=When SN enters the battlefield, you may sacrifice a Forest. If you don't, sacrifice SN.
 timing=main
-requires_groovy_code=Plant Elemental
 oracle=When Rogue Elephant enters the battlefield, sacrifice it unless you sacrifice a Forest.

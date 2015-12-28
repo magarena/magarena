@@ -5,7 +5,7 @@ rarity=U
 type=Land
 subtype=Lair
 mana=r3g3w3
-ability={T}: Add {R} or {G} or {W} to your mana pool.
+ability=When SN enters the battlefield, you may return a non-Lair land you control to its owner's hand. If you don't, sacrifice SN.;\
+        {T}: Add {R} or {G} or {W} to your mana pool.
 timing=land
-requires_groovy_code=Dromar's Cavern
 oracle=When Rith's Grove enters the battlefield, sacrifice it unless you return a non-Lair land you control to its owner's hand.\n{T}: Add {R}, {G}, or {W} to your mana pool.

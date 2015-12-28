@@ -5,7 +5,7 @@ rarity=U
 type=Land
 subtype=Lair
 mana=b3r3g3
-ability={T}: Add {B} or {R} or {G} to your mana pool.
+ability=When SN enters the battlefield, you may return a non-Lair land you control to its owner's hand. If you don't, sacrifice SN.;\
+        {T}: Add {B} or {R} or {G} to your mana pool.
 timing=land
-requires_groovy_code=Dromar's Cavern
 oracle=When Darigaaz's Caldera enters the battlefield, sacrifice it unless you return a non-Lair land you control to its owner's hand.\n{T}: Add {B}, {R}, or {G} to your mana pool.

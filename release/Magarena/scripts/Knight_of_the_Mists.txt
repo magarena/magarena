@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Knight
 cost={2}{U}
 pt=2/2
-ability=Flanking
+ability=Flanking;\
+        When SN enters the battlefield, you may pay {U}. If you don't, destroy target Knight and it can't be regenerated.
 timing=main
-requires_groovy_code
 oracle=Flanking\nWhen Knight of the Mists enters the battlefield, you may pay {U}. If you don't, destroy target Knight and it can't be regenerated.

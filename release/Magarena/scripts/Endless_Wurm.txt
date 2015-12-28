@@ -6,7 +6,7 @@ type=Creature
 subtype=Wurm
 cost={3}{G}{G}
 pt=9/9
-ability=trample
+ability=Trample;\
+        At the beginning of your upkeep, you may sacrifice an enchantment. If you don't, sacrifice SN.
 timing=main
-requires_groovy_code
 oracle=Trample\nAt the beginning of your upkeep, sacrifice Endless Wurm unless you sacrifice an enchantment.

@@ -6,7 +6,7 @@ type=Creature
 subtype=Avatar
 cost={B/R}{B/R}{B/R}
 pt=5/3
-ability=flying
+ability=Flying;\
+        When SN enters the battlefield, you may discard two cards. If you don't, sacrifice SN.
 timing=main
-requires_groovy_code
 oracle=Flying\nWhen Avatar of Discord enters the battlefield, sacrifice it unless you discard two cards.

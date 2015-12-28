@@ -6,7 +6,7 @@ type=Creature
 subtype=Cat
 cost={G}
 pt=3/2
-ability=shroud
+ability=Shroud;\
+        When SN enters the battlefield, you may sacrifice a land. If you don't, sacrifice SN.
 timing=main
-requires_groovy_code
 oracle=Shroud\nWhen Scythe Tiger enters the battlefield, sacrifice it unless you sacrifice a land.

@@ -7,7 +7,7 @@ subtype=Demon
 cost={4}{B}{B}
 pt=6/6
 ability=Flying;\
-        First strike
+        First strike;\
+        At the beginning of your upkeep, you may sacrifice an artifact. If you don't, tap SN~and SN deals 2 damage to you.
 timing=main
-requires_groovy_code
 oracle=Flying\nFirst strike\nAt the beginning of your upkeep, you may sacrifice an artifact. If you don't, tap Yawgmoth Demon and it deals 2 damage to you.

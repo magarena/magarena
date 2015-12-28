@@ -7,6 +7,7 @@ subtype=Human,Knight
 cost={2}{B}{R}
 pt=0/3
 ability=Trample;\
+        At the beginning of your upkeep, you may discard a card. If you don't, sacrifice SN~and draw a card.;\
         Whenever SN becomes blocked, SN gets +6/+3 until end of turn.
 timing=main
 requires_groovy_code

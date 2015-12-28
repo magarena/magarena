@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental
 cost={2}{U}{U}
 pt=4/4
-ability=Flying
+ability=Flying;\
+        At the beginning of your upkeep, you may return a land you control to its owner's hand. If you don't, sacrifice SN.
 timing=main
-requires_groovy_code
 oracle=Flying\nAt the beginning of your upkeep, sacrifice Living Tsunami unless you return a land you control to its owner's hand.

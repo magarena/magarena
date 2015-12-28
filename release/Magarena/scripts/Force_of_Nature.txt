@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental
 cost={2}{G}{G}{G}{G}
 pt=8/8
-ability=Trample
+ability=Trample;\
+        At the beginning of your upkeep, you may pay {G}{G}{G}{G}. If you don't, SN deals 8 damage to you.
 timing=main
-requires_groovy_code
 oracle=Trample\nAt the beginning of your upkeep, Force of Nature deals 8 damage to you unless you pay {G}{G}{G}{G}.

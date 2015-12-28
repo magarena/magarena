@@ -7,7 +7,7 @@ subtype=Masticore
 cost={5}
 pt=5/5
 ability=First strike;\
+        At the beginning of your upkeep, you may discard a card. If you don't, sacrifice SN.;\
         At the beginning of your draw step, you may have SN deal 3 damage to target creature.
 timing=artifact
-requires_groovy_code
 oracle=First strike\nAt the beginning of your upkeep, sacrifice Razormane Masticore unless you discard a card.\nAt the beginning of your draw step, you may have Razormane Masticore deal 3 damage to target creature.
