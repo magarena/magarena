@@ -126,7 +126,7 @@ public enum MagicRuleEventAction {
         }
     },
     Destroy(
-        "destroy " + ARG.PERMANENTS + "\\.(?<noregen> (They|It) can't be regenerated\\.)?",
+        "destroy " + ARG.PERMANENTS + "(\\.| and)(?<noregen> (They|It) can't be regenerated\\.)?",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Destroy"
