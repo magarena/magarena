@@ -1887,25 +1887,6 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    SacrificeUnless(
-        "pay (?<cost>[^\\.]*)\\. If you don't, sacrifice sn(\\.|,)?",
-        MagicTiming.None,
-        "Sacrifice"
-    ) {
-        @Override
-        public MagicChoice getChoice(final Matcher matcher) {
-            return new MagicPayManaCostChoice(MagicManaCost.create(matcher.group("cost")));
-        }
-        @Override
-        public MagicEventAction getNoAction(final Matcher matcher) {
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new SacrificeAction(event.getPermanent()));
-                }
-            };
-        }
-    },
     SacrificeSelf(
         "sacrifice sn(\\.|,)?",
         MagicTiming.Removal,
@@ -2822,10 +2803,6 @@ public enum MagicRuleEventAction {
         return action;
     }
 
-    public MagicEventAction getNoAction(final Matcher matcher) {
-        return MagicEventAction.NONE;
-    }
-
     public MagicTiming getTiming(final Matcher matcher) {
         return timing;
     }
@@ -2981,6 +2958,7 @@ public enum MagicRuleEventAction {
 
     static final Pattern INTERVENING_IF = Pattern.compile("if " + ARG.COND + ", " + ARG.ANY, Pattern.CASE_INSENSITIVE);
     static final Pattern MAY_PAY = Pattern.compile("you may pay " + ARG.MANACOST + "\\. if you do, .+", Pattern.CASE_INSENSITIVE);
+    static final Pattern MAY_COST = Pattern.compile("you may " + ARG.COST + "\\. if you don't, .+", Pattern.CASE_INSENSITIVE);
     
     public static MagicSourceEvent create(final String text) {
         return build(renameThisThat(text));
@@ -2999,8 +2977,16 @@ public enum MagicRuleEventAction {
         // handle you pay
         final Matcher mayPayMatcher = MAY_PAY.matcher(ruleWithoutIf);
         final boolean mayPayMatched = mayPayMatcher.matches();
-        final MagicManaCost mayCost = mayPayMatched ? MagicManaCost.create(ARG.manacost(mayPayMatcher)) : MagicManaCost.ZERO;
-        final String prefix = mayPayMatched ? "^(Y|y)ou may pay [^\\.]+\\. If you do, " : "^(Y|y)ou may ";
+        final MagicManaCost manaCost = mayPayMatched ? MagicManaCost.create(ARG.manacost(mayPayMatcher)) : MagicManaCost.ZERO;
+        String prefix = mayPayMatched ? "^(Y|y)ou may pay [^\\.]+\\. If you do, " : "^(Y|y)ou may ";
+        
+        // handle you <cost>. if you don't, <effect>
+        final Matcher mayCostMatcher = MAY_COST.matcher(ruleWithoutIf);
+        final boolean mayCostMatched = mayCostMatcher.matches();
+        final MagicMatchedCostEvent mayCost = mayCostMatched ?
+            new MagicRegularCostEvent(ARG.cost(mayCostMatcher)) : 
+            MagicRegularCostEvent.NONE;
+        prefix = mayCostMatched ? "^(Y|y)ou may [^\\.]+\\. If you don't, " : prefix;
 
         final String ruleWithoutMay = ruleWithoutIf.replaceFirst(prefix, "");
         final boolean optional = ruleWithoutMay.length() < ruleWithoutIf.length();
@@ -3012,7 +2998,6 @@ public enum MagicRuleEventAction {
         // action may be composed from rule and riders
         final MagicEventAction action  = computeEventAction(ruleAction.getAction(matcher), part);
 
-        final MagicEventAction noAction  = ruleAction.getNoAction(matcher);
         final MagicTargetPicker<?> picker = ruleAction.getPicker(matcher);
         final MagicChoice choice = ruleAction.getChoice(matcher);
         final String pnMayChoice = capitalize(ruleWithoutMay).replaceFirst("\\.", "?");
@@ -3024,7 +3009,12 @@ public enum MagicRuleEventAction {
             if (mayPayMatched) {
                 return new MagicMayChoice(
                     MagicMessage.replaceName(pnMayChoice, source, player, ref),
-                    new MagicPayManaCostChoice(mayCost),
+                    new MagicPayManaCostChoice(manaCost),
+                    choice
+                );
+            } else if (mayCostMatched) {
+                return new MagicMayChoice(
+                    MagicMessage.replaceName(capitalize(ARG.cost(mayCostMatcher)) + "? If you don't, " + effect, source, player, ref),
                     choice
                 );
             } else if (optional) {
@@ -3037,8 +3027,9 @@ public enum MagicRuleEventAction {
             }
         };
 
-        final String eventDesc = mayPayMatched ? "PN may$ pay " + mayCost + "$. If PN does, " + contextRule
-                               : optional      ? "PN may$ " + mayTense(contextRule)
+        final String eventDesc = mayPayMatched  ? "PN may$ pay " + manaCost + "$. If PN does, " + contextRule
+                               : mayCostMatched ? "PN may$ " + ARG.cost(mayCostMatcher) + ". If PN doesn't, " + contextRule
+                               : optional       ? "PN may$ " + mayTense(contextRule)
                                : capitalize(playerRule);
 
         return new MagicSourceEvent(
@@ -3053,10 +3044,18 @@ public enum MagicRuleEventAction {
                     if (ifCond.accept(event.getSource()) == false) {
                         return;
                     }
-                    if (optional == false || event.isYes()) {
-                        action.executeEvent(game, event);
+                    final MagicEvent costEvent = mayCost.getEvent(event.getSource());
+                    if (optional == false || (event.isYes() && costEvent.isSatisfied())) {
+                        if (mayCost != MagicRegularCostEvent.NONE) {
+                            game.addEvent(costEvent);
+                        }
+                        if (mayCostMatched == false) {
+                            action.executeEvent(game, event);
+                        }
                     } else {
-                        noAction.executeEvent(game, event);
+                        if (mayCostMatched) {
+                            action.executeEvent(game, event);
+                        }
                     }
                 }
             },
