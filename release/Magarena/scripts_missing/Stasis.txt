@@ -4,7 +4,7 @@ value=4.546
 rarity=R
 type=Enchantment
 cost={1}{U}
-ability=Permanents have "SN doesn't untap during your untap step.";\
-        At the beginning of your upkeep, you may pay {U}. If you don't, sacrifice SN.
+ability=Players skip their untap steps.;\
+        At the beginning of your upkeep, sacrifice SN unless you pay {U}.
 timing=enchantment
 oracle=Players skip their untap steps.\nAt the beginning of your upkeep, sacrifice Stasis unless you pay {U}.
