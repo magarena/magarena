@@ -107,9 +107,6 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice NEG_TARGET_NONLAND_PERMANENT = 
         MagicTargetChoice.Negative("target nonland permanent");
     
-    public static final MagicTargetChoice AN_ARTIFACT_YOU_CONTROL = 
-        new MagicTargetChoice("an artifact you control");
-
     public static final MagicTargetChoice TARGET_ARTIFACT =
         new MagicTargetChoice("target artifact");
 
@@ -247,9 +244,6 @@ public class MagicTargetChoice extends MagicChoice {
     
     public static final MagicTargetChoice SACRIFICE_ENCHANTMENT = 
         new MagicTargetChoice("an enchantment to sacrifice");
-    
-    public static final MagicTargetChoice SACRIFICE_MOUNTAIN = 
-        new MagicTargetChoice("a Mountain to sacrifice");
     
     public static final MagicTargetChoice SACRIFICE_FOREST = 
         new MagicTargetChoice("a Forest to sacrifice");
