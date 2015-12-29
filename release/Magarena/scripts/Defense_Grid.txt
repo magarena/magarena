@@ -4,6 +4,6 @@ value=4.255
 rarity=R
 type=Artifact
 cost={2}
-ability=Each spell costs {3} more to cast except during its controller's turn.
+requires_groovy_code
 timing=artifact
 oracle=Each spell costs {3} more to cast except during its controller's turn.
