@@ -94,9 +94,9 @@ public class MagicDuel {
         
         if (won) {
             gamesWon++;
-            startPlayer=1;
+            startPlayer = opponentIndex;
         } else {
-            startPlayer=0;
+            startPlayer = playerIndex;
         }
 
         if (game.isReal() && !MagicSystem.isTestGame() && !MagicSystem.isAiVersusAi()) {
@@ -107,20 +107,21 @@ public class MagicDuel {
 
     public MagicGame nextGame() {
         //create players
-        final MagicPlayer player   = new MagicPlayer(duelConfig.getStartLife(), duelConfig.getPlayerConfig(playerIndex), playerIndex);
+        final MagicPlayer player   = new MagicPlayer(duelConfig.getStartLife(), duelConfig.getPlayerConfig(playerIndex),   playerIndex);
         final MagicPlayer opponent = new MagicPlayer(duelConfig.getStartLife(), duelConfig.getPlayerConfig(opponentIndex), opponentIndex);
 
         //give the AI player extra life
         opponent.setLife(opponent.getLife() + opponent.getAiProfile().getExtraLife());
 
         //determine who starts first
-        final MagicPlayer start    = startPlayer == playerIndex ? player : opponent;
+        final MagicPlayer[] players = new MagicPlayer[]{player,opponent};
+        final MagicPlayer start = players[startPlayer];
 
         //create game
         final MagicGame game = MagicGame.create(
             this,
             MagicDefaultGameplay.getInstance(),
-            new MagicPlayer[]{player,opponent},
+            players,
             start
         );
 
