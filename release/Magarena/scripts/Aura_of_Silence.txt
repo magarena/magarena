@@ -5,7 +5,7 @@ value=4.465
 rarity=U
 type=Enchantment
 cost={1}{W}{W}
-ability=Artifact and enchantment spells your opponents cast cost {2} more to cast.;\
-        Sacrifice SN: Destroy target artifact or enchantment.
+ability=Sacrifice SN: Destroy target artifact or enchantment.
+requires_groovy_code
 timing=enchantment
 oracle=Artifact and enchantment spells your opponents cast cost {2} more to cast.\nSacrifice Aura of Silence: Destroy target artifact or enchantment.
