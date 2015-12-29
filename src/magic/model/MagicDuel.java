@@ -89,17 +89,14 @@ public class MagicDuel {
     }
 
     void advance(final boolean won, final MagicGame game) {
+        gameNr++;
         gamesPlayed++;
+        
         if (won) {
             gamesWon++;
             startPlayer=1;
         } else {
             startPlayer=0;
-        }
-        gameNr++;
-        if (gameNr>duelConfig.getNrOfGames()) {
-            gameNr=1;
-            determineStartPlayer();
         }
 
         if (game.isReal() && !MagicSystem.isTestGame() && !MagicSystem.isAiVersusAi()) {
