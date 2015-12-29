@@ -4,8 +4,10 @@ import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.MagicCard;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
+import magic.model.MagicManaCost;
 
 import java.util.Set;
 
@@ -27,4 +29,8 @@ public interface MagicModifier {
     void modPlayer(final MagicPermanent source, final MagicPlayer player);
 
     void modGame(final MagicPermanent source, final MagicGame game);
+    
+    MagicManaCost reduceCost(final MagicPermanent source, final MagicCard card, final MagicManaCost cost);
+    
+    MagicManaCost increaseCost(final MagicPermanent source, final MagicCard card, final MagicManaCost cost);
 }

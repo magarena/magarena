@@ -4,6 +4,8 @@ import magic.model.MagicAbility;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
+import magic.model.MagicCard;
+import magic.model.MagicManaCost;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
 
@@ -49,5 +51,15 @@ public class MagicDummyModifier implements MagicModifier {
     @Override
     public void modGame(final MagicPermanent source, final MagicGame game) {
         //leave game unchanged
+    }
+    
+    @Override
+    public MagicManaCost reduceCost(final MagicPermanent source, final MagicCard card, final MagicManaCost cost) {
+        return cost;
+    }
+    
+    @Override
+    public MagicManaCost increaseCost(final MagicPermanent source, final MagicCard card, final MagicManaCost cost) {
+        return cost;
     }
 }

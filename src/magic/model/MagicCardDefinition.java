@@ -18,6 +18,7 @@ import magic.model.event.MagicTiming;
 import magic.model.mstatic.MagicCDA;
 import magic.model.mstatic.MagicStatic;
 import magic.model.trigger.MagicTrigger;
+import magic.model.trigger.MagicTriggerType;
 import magic.model.trigger.EntersBattlefieldTrigger;
 import magic.model.trigger.EntersWithCounterTrigger;
 import magic.model.trigger.ThisDrawnTrigger;
@@ -661,10 +662,12 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
 
     public List<MagicEvent> getCostEvent(final MagicCard source) {
         final List<MagicEvent> costEvent = new ArrayList<MagicEvent>();
-        if (cost != MagicManaCost.ZERO) {
+        final MagicManaCost modCost = source.getGame().modCost(source, cost);
+        
+        if (modCost != MagicManaCost.ZERO) {
             costEvent.add(new MagicPayManaCostEvent(
                 source,
-                cost
+                modCost
             ));
         }
         costEvent.addAll(getAdditionalCostEvent(source));

@@ -18,5 +18,7 @@ public enum MagicLayer {
     SwitchPT,    //7e. switch p/t
     Player,      //8.  affect player, e.g. you have hexproof
     Game,        //9.  affect game rules, e.g. modify maximum hand size, creature is Indestructible
+    CostIncrease,
+    CostReduction,
     ;
 }

@@ -583,6 +583,17 @@ public class MagicGame {
         doDelayedActions();
     }
 
+    public MagicManaCost modCost(final MagicCard card, final MagicManaCost cost) {
+        MagicManaCost currCost = cost;
+        for (final MagicPermanentStatic mps : getStatics(MagicLayer.CostIncrease)) {
+            currCost = mps.getStatic().increaseCost(mps.getPermanent(), card, cost);
+        }
+        for (final MagicPermanentStatic mps : getStatics(MagicLayer.CostReduction)) {
+            currCost = mps.getStatic().reduceCost(mps.getPermanent(), card, cost);
+        }
+        return currCost;
+    }
+
     public void apply(final MagicLayer layer) {
         switch (layer) {
             case Game:

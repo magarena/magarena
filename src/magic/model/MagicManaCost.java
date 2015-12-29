@@ -346,6 +346,13 @@ public class MagicManaCost {
         final int[] reducedAmounts = Arrays.copyOf(amounts, amounts.length);
         final int idx = type.ordinal();
         reducedAmounts[idx] -= Math.min(amounts[idx], amt);
-        return MagicManaCost.create(getCanonicalText(reducedAmounts, 0));
+        return MagicManaCost.create(getCanonicalText(reducedAmounts, XCount));
+    }
+    
+    public MagicManaCost increase(final MagicCostManaType type, final int amt) {
+        final int[] reducedAmounts = Arrays.copyOf(amounts, amounts.length);
+        final int idx = type.ordinal();
+        reducedAmounts[idx] += amt;
+        return MagicManaCost.create(getCanonicalText(reducedAmounts, XCount));
     }
 }
