@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Vampire,Dwarf
 cost={2}{B}{B}
 pt=2/2
-ability=Green enchantment spells and white enchantment spells cost {2} more to cast.
+requires_groovy_code
 timing=main
 oracle=Green enchantment spells and white enchantment spells cost {2} more to cast.
