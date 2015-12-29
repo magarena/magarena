@@ -799,9 +799,11 @@ parse_groovy.txt:
   | pandoc --from html --to markdown --no-wrap \
   > $@
 
-%.add: %
+%.add: release/Magarena/scripts_missing/%.txt
 	git mv $^ release/Magarena/scripts
+	vim release/Magarena/scripts/$*.txt
 	$(eval NAME := $(shell grep "name=" $^ | sed 's/name=//'))
+	git add release/Magarena/scripts/$*.*
 	git commit -m "add ${NAME}"
 
 images.url: missing_images
