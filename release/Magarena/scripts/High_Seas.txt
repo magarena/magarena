@@ -4,6 +4,6 @@ value=3.020
 rarity=U
 type=Enchantment
 cost={2}{U}
-ability=Red creature spells and green creature spells cost {1} more to cast.
+requires_groovy_code
 timing=enchantment
 oracle=Red creature spells and green creature spells cost {1} more to cast.
