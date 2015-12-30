@@ -127,7 +127,7 @@ public class MagicPayManaCostResultBuilder {
                     }
                     if (count < minAmount || (hasX && i + 1 != typeActivationSize)) {
                         i++;
-                        optionIndices[i]=-1;
+                        optionIndices[i] = -1;
                     }
                     break;
                 case 1:
@@ -135,7 +135,7 @@ public class MagicPayManaCostResultBuilder {
                     count--;
                     if (typeActivationSize - i + count > minAmount && i + 1 != typeActivationSize) {
                         i++;
-                        optionIndices[i]=-1;
+                        optionIndices[i] = -1;
                     }
                     break;
                 case 2:
