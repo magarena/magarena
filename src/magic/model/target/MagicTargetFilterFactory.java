@@ -1063,6 +1063,8 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl TAPPED_CREATURE = MagicTargetFilterFactory.creature(MagicPermanentState.Tapped, Control.Any);
 
     public static final MagicPermanentFilterImpl TAPPED_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicPermanentState.Tapped, Control.You);
+    
+    public static final MagicPermanentFilterImpl TAPPED_CREATURE_AN_OPPONENT_CONTROLS = MagicTargetFilterFactory.creature(MagicPermanentState.Tapped, Control.Opp);
 
     public static final MagicPermanentFilterImpl TAPPED_ARTIFACT_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicPermanentState.Tapped, MagicType.Artifact, Control.You);
 
@@ -2506,6 +2508,7 @@ public class MagicTargetFilterFactory {
         single.put("creature your opponents control", CREATURE_YOUR_OPPONENT_CONTROLS);
         single.put("nonlegendary creature an opponent controls", NON_LEGENDARY_CREATURE_AN_OPPONENT_CONTROLS);
         single.put("face-down creature an opponent controls", FACE_DOWN_CREATURE_AN_OPPONENT_CONTROLS);
+        single.put("tapped creature an opponent controls", TAPPED_CREATURE_AN_OPPONENT_CONTROLS);
 
         // <color|type|subtype> creature
         single.put("1/1 creature", new MagicPTTargetFilter(CREATURE, Operator.EQUAL, 1, Operator.EQUAL, 1));
