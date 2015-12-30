@@ -78,6 +78,20 @@ public class MagicManaCost {
 
         //assert getCanonicalText().equals(costText) : "canonical: " + getCanonicalText() + " != cost: " + costText;
     }
+    
+    private MagicManaCost(final int[] aAmounts, final int aXCount) {
+        costText = "";
+        int total = 0;
+        for (int i = 0; i < aAmounts.length; i++) {
+            amounts[i] = aAmounts[i];
+            total += amounts[i];
+            if (amounts[i] != 0) {
+                order.add(MagicCostManaType.values()[i]);
+            }
+        }
+        XCount = aXCount;
+        converted = total;
+    }
 
     private void addType(final MagicCostManaType type,final int amount,final int[] convertedArr) {
         convertedArr[0] += amount;
@@ -318,9 +332,14 @@ public class MagicManaCost {
 
     public void addTo(final MagicBuilderManaCost aBuilderCost,final int x) {
         for (final MagicCostManaType type : order) {
-            aBuilderCost.addType(type,amounts[type.ordinal()]);
+            if (type == MagicCostManaType.Generic) {
+                //skip
+            } else {
+                aBuilderCost.addType(type,amounts[type.ordinal()]);
+            }
         }
-        aBuilderCost.addType(MagicCostManaType.Generic,x);
+        final int generic = Math.max(0, amounts[MagicCostManaType.Generic.ordinal()] + x * XCount);
+        aBuilderCost.addType(MagicCostManaType.Generic, generic);
         aBuilderCost.compress();
     }
 
@@ -343,16 +362,17 @@ public class MagicManaCost {
     }
 
     public MagicManaCost reduce(final MagicCostManaType type, final int amt) {
-        final int[] reducedAmounts = Arrays.copyOf(amounts, amounts.length);
-        final int idx = type.ordinal();
-        reducedAmounts[idx] -= Math.min(amounts[idx], amt);
-        return MagicManaCost.create(getCanonicalText(reducedAmounts, XCount));
+        return increase(type, -amt);
     }
     
     public MagicManaCost increase(final MagicCostManaType type, final int amt) {
         final int[] reducedAmounts = Arrays.copyOf(amounts, amounts.length);
         final int idx = type.ordinal();
         reducedAmounts[idx] += amt;
-        return MagicManaCost.create(getCanonicalText(reducedAmounts, XCount));
+        if (XCount > 0 && type == MagicCostManaType.Generic && reducedAmounts[idx] < 0) {
+            return new MagicManaCost(reducedAmounts, XCount);
+        } else {
+            return MagicManaCost.create(getCanonicalText(reducedAmounts, 0));
+        }
     }
 }
