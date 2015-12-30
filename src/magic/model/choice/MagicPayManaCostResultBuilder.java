@@ -112,12 +112,12 @@ public class MagicPayManaCostResultBuilder {
         }
 
         // Generate all possible combinations with at least the minimum number of sources.
-        final int[] optionIndices = new int[typeActivationSize];
+        final int[] option = new int[typeActivationSize];
         int i = 0;
         int count = 0;
-        optionIndices[0] = -1;
+        option[0] = -1;
         while (i >= 0) {
-            switch (++optionIndices[i]) {
+            switch (++option[i]) {
                 case 0:
                     typeActivations[i].available = false;
                     typeActivations[i].manaType = producedTypes[i];
@@ -127,7 +127,7 @@ public class MagicPayManaCostResultBuilder {
                     }
                     if (count < minAmount || (hasX && i + 1 != typeActivationSize)) {
                         i++;
-                        optionIndices[i] = -1;
+                        option[i] = -1;
                     }
                     break;
                 case 1:
@@ -135,7 +135,7 @@ public class MagicPayManaCostResultBuilder {
                     count--;
                     if (typeActivationSize - i + count > minAmount && i + 1 != typeActivationSize) {
                         i++;
-                        optionIndices[i] = -1;
+                        option[i] = -1;
                     }
                     break;
                 case 2:
