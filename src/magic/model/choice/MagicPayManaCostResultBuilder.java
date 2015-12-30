@@ -26,13 +26,13 @@ public class MagicPayManaCostResultBuilder {
     private int activationsSize;
     private Map<MagicBuilderPayManaCostResult,MagicBuilderPayManaCostResult> results;
 
-    public MagicPayManaCostResultBuilder(final MagicGame game,final MagicPlayer player,final MagicBuilderManaCost cost) {
-        this.game=game;
-        this.cost=cost;
-        activations=player.getManaActivations(game);
-        activationsSize=activations.size();
-        types=cost.getTypes();
-        amounts=cost.getAmounts();
+    public MagicPayManaCostResultBuilder(final MagicGame aGame,final MagicPlayer aPlayer,final MagicBuilderManaCost aCost) {
+        game = aGame;
+        cost = aCost;
+        activations = aPlayer.getManaActivations(game);
+        activationsSize = activations.size();
+        types = cost.getTypes();
+        amounts = cost.getAmounts();
     }
 
     private boolean build(final int index,final boolean single) {
