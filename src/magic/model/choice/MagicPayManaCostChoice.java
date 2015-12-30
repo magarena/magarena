@@ -103,7 +103,7 @@ public class MagicPayManaCostChoice extends MagicChoice {
             x = 0;
         }
 
-        final List<MagicCostManaType> costManaTypes=cost.getCostManaTypes(x * cost.getXCount());
+        final List<MagicCostManaType> costManaTypes=cost.getCostManaTypes(x);
         final MagicBuilderManaCost builderCost=new MagicBuilderManaCost();
         builderCost.addTypes(costManaTypes);
         final MagicPayManaCostResultBuilder builder=new MagicPayManaCostResultBuilder(game,player,builderCost);

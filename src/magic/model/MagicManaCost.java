@@ -132,7 +132,7 @@ public class MagicManaCost {
 
     public List<MagicCostManaType> getCostManaTypes(final int x) {
         final List<MagicCostManaType> types = new ArrayList<>();
-        int generic=x;
+        int generic=x * XCount;
 
         for (final MagicCostManaType type : order) {
             int amount=amounts[type.ordinal()];
