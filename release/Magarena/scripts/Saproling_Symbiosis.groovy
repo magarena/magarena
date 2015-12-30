@@ -1,7 +1,7 @@
 [
     new MagicHandCastActivation(
         new MagicActivationHints(MagicTiming.Token,true),
-        "Instant"
+        "Flash"
     ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
