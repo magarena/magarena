@@ -4,6 +4,6 @@ value=3.900
 rarity=R
 type=Sorcery
 cost={2}{U}{U}
-effect=You may cast SN as though it had flash if you pay {2} more to cast it.~Simultaneously untap all tapped creatures and tap all untapped creatures.
+requires_groovy_code
 timing=main
 oracle=You may cast Breaking Wave as though it had flash if you pay {2} more to cast it.\nSimultaneously untap all tapped creatures and tap all untapped creatures.
