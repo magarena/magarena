@@ -4,6 +4,7 @@ value=3.682
 rarity=R
 type=Sorcery
 cost={X}{R}
-effect=You may cast SN as though it had flash if you pay {2} more to cast it.~SN deals X damage to target creature or player.
+effect=SN deals X damage to target creature or player.
+requires_groovy_code
 timing=main
 oracle=You may cast Ghitu Fire as though it had flash if you pay {2} more to cast it.\nGhitu Fire deals X damage to target creature or player.
