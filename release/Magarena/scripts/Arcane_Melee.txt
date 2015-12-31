@@ -4,6 +4,6 @@ value=3.733
 rarity=R
 type=Enchantment
 cost={4}{U}
-ability=Instant and sorcery spells cost {2} less to cast.
+requires_groovy_code
 timing=enchantment
 oracle=Instant and sorcery spells cost {2} less to cast.
