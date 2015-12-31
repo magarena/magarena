@@ -2332,19 +2332,45 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    GainAbilityAlt(
+        "(?<ueot>until end of turn), " + ARG.PERMANENTS + " gain(s)? (?<ability>.+)(\\.)?",
+        MagicTargetHint.Positive
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return GainAbility.getAction(matcher);
+        }
+        @Override
+        public MagicTiming getTiming(final Matcher matcher) {
+            return GainAbility.getTiming(matcher);
+        }
+        @Override
+        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
+            return GainAbility.getPicker(matcher);
+        }
+        @Override
+        public String getName(final Matcher matcher) {
+            return GainAbility.getName(matcher);
+        }
+        @Override
+        public MagicCondition[] getConditions(final Matcher matcher) {
+            return GainAbility.getConditions(matcher);
+        }
+    },
     GainAbility(
-        ARG.PERMANENTS + " gain(s)? (?<ability>.+) until end of turn(\\.|,)?",
+        ARG.PERMANENTS + " gain(s)? (?<ability>.+?)(?<ueot> until end of turn)?(\\.|,)?",
         MagicTargetHint.Positive
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
             final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            final boolean duration = matcher.group("ueot") != null ? MagicStatic.UntilEOT : MagicStatic.Forever;
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
-                        game.doAction(new GainAbilityAction(it, abilityList));
+                        game.doAction(new GainAbilityAction(it, abilityList, duration));
                     }
                 }
             };
@@ -2400,31 +2426,6 @@ public enum MagicRuleEventAction {
             } else {
                 return MagicActivation.NO_COND;
             }
-        }
-    },
-    GainAbilityAlt(
-        "until end of turn, " + ARG.PERMANENTS + " gain(s)? (?<ability>.+)(\\.)?",
-        MagicTargetHint.Positive
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            return GainAbility.getAction(matcher);
-        }
-        @Override
-        public MagicTiming getTiming(final Matcher matcher) {
-            return GainAbility.getTiming(matcher);
-        }
-        @Override
-        public MagicTargetPicker<?> getPicker(final Matcher matcher) {
-            return GainAbility.getPicker(matcher);
-        }
-        @Override
-        public String getName(final Matcher matcher) {
-            return GainAbility.getName(matcher);
-        }
-        @Override
-        public MagicCondition[] getConditions(final Matcher matcher) {
-            return GainAbility.getConditions(matcher);
         }
     },
     GainAbilityCan(
