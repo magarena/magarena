@@ -815,6 +815,9 @@ model_usage:
 fix_indentation:
 	grep "^[ ]*" -r release/Magarena/scripts/*.groovy -o | awk -F':' 'length($$2) < 15 {print $$1 "\t" length($$2) % 4}' | grep -v 0 | cut -f1 | uniq | vim -
 
+fix_trailing_space:
+	find release/Magarena/scripts -type f -exec sed --in-place 's/[[:space:]]\+$$//' {} +
+
 update_card_property:
 	ls -1 replace/* | parallel -q sed -i 's/\([^=]*\)=\(.*\)/s|\1=.*|\1=\2|/;s/\\/\\\\/g'
 	ls -1 release/Magarena/scripts/*.txt | parallel -q sed -i -f replace/{/} {}
