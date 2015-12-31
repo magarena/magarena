@@ -817,6 +817,7 @@ fix_indentation:
 
 fix_trailing_space:
 	find release/Magarena/scripts -type f -exec sed --in-place 's/[[:space:]]\+$$//' {} +
+	find src -type f -exec sed --in-place 's/[[:space:]]\+$$//' {} +
 
 update_card_property:
 	ls -1 replace/* | parallel -q sed -i 's/\([^=]*\)=\(.*\)/s|\1=.*|\1=\2|/;s/\\/\\\\/g'
