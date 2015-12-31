@@ -14,8 +14,8 @@
             for (final MagicCard card : event.getPlayer().getLibrary().getCardsFromTop(1)) {
                 final MagicPlayer player = event.getPlayer();
                 final int amount = card.getConvertedCost();
-                game.doAction(new RevealAction(card));
                 game.logAppendValue(player,amount);
+                game.doAction(new RevealAction(card));
                 game.doAction(new ShiftCardAction(
                     card,
                     MagicLocationType.OwnersLibrary,
