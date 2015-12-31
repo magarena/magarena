@@ -6,7 +6,7 @@ type=Creature
 subtype=Merfolk,Wizard
 cost={1}{U}
 pt=1/1
-ability=Islandwalk;\
-        Merfolk spells and Wizard spells you cast cost {1} less to cast.
+ability=Islandwalk
+requires_groovy_code
 timing=main
 oracle=Islandwalk\nMerfolk spells and Wizard spells you cast cost {1} less to cast.
