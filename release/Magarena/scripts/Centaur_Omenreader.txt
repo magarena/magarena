@@ -6,6 +6,6 @@ type=Snow,Creature
 subtype=Centaur,Shaman
 cost={3}{G}
 pt=3/3
-ability=As long as SN is tapped, creature spells you cast cost {2} less to cast.
+requires_groovy_code
 timing=main
 oracle=As long as Centaur Omenreader is tapped, creature spells you cast cost {2} less to cast.
