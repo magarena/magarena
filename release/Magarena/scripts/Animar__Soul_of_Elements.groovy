@@ -4,7 +4,7 @@
         public MagicManaCost reduceCost(final MagicPermanent source, final MagicCard card, final MagicManaCost cost) {
             if (card.hasType(MagicType.Creature) && source.isFriend(card)) {
                 final int amt = source.getCounters(MagicCounterType.PlusOne);
-                return cost.reduce(MagicCostManaType.Generic, amt);
+                return cost.reduce(amt);
             } else {
                 return cost;
             }

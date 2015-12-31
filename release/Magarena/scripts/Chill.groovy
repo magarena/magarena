@@ -3,7 +3,7 @@
         @Override
         public MagicManaCost increaseCost(final MagicPermanent source, final MagicCard card, final MagicManaCost cost) {
             if (card.hasColor(MagicColor.Red)) {
-                return cost.increase(MagicCostManaType.Generic, 2);
+                return cost.increase(2);
             } else {
                 return cost;
             }

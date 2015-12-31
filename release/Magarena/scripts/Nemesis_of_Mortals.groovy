@@ -15,7 +15,7 @@
             return [
                 new MagicPayManaCostEvent(
                     source,
-                    source.getCost().reduce(MagicCostManaType.Generic, n)
+                    source.getCost().reduce(n)
                 )
             ];
         }
@@ -31,7 +31,7 @@
             return [
                 new MagicPayManaCostEvent(
                     source,
-                    MagicManaCost.create("{7}{G}{G}").reduce(MagicCostManaType.Generic, n)
+                    MagicManaCost.create("{7}{G}{G}").reduce(n)
                 )
             ];
         }
