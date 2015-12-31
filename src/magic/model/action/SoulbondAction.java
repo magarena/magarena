@@ -37,7 +37,7 @@ public class SoulbondAction extends MagicAction {
         if (!valid) {
             return;
         }
-        
+
         if (set) {
             permanent.setPairedCreature(MagicPermanent.NONE);
             pairedCreature.setPairedCreature(MagicPermanent.NONE);

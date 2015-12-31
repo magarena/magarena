@@ -198,7 +198,7 @@ public class PlayerStatistics {
 
         save();
     }
-    
+
     public int getDuelsWinPercentage() {
         return getPercentage(duelsWon, duelsPlayed);
     }

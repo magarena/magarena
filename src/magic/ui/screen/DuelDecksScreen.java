@@ -70,9 +70,9 @@ public class DuelDecksScreen
         if (duel.getGamesPlayed() > 0 && MagicSystem.isAiVersusAi() == false) {
             saveDuel();
         }
-        
+
         setContent(screenContent);
-        
+
         if (MagicSystem.isAiVersusAi() == false) {
             doGameSetupInBackground(duel);
             screenContent.addPropertyChangeListener(

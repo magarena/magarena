@@ -41,7 +41,7 @@ public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicT
     MagicItemOnStack(final MagicSource aSource, final MagicPlayer aController, final MagicEvent aEvent) {
         this(aSource, aController, aEvent, null);
     }
-    
+
     MagicItemOnStack(final MagicSource aSource, final MagicPlayer aController) {
         this(aSource, aController, null, null);
     }
@@ -49,7 +49,7 @@ public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicT
     MagicItemOnStack(final MagicCopyMap copyMap, final MagicItemOnStack sourceItem) {
         id = sourceItem.id;
         activation = sourceItem.activation;
-        
+
         copyMap.put(sourceItem, this);
 
         source = copyMap.copy(sourceItem.source);
@@ -71,17 +71,17 @@ public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicT
     public MagicPlayer getController() {
         return controller;
     }
-    
+
     @Override
     public MagicCardDefinition getCardDefinition() {
         return getSource().getCardDefinition();
     }
-    
+
     // only for rendering the card image popup
     final public MagicCardDefinition getRealCardDefinition() {
         return getSource().getCardDefinition();
     }
-    
+
     public int getConvertedCost() {
         return 0;
     }
@@ -185,7 +185,7 @@ public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicT
     public boolean hasSubType(final MagicSubType subType) {
         return source.hasSubType(subType);
     }
-    
+
     @Override
     public int getCounters(final MagicCounterType counterType) {
         return 0;
@@ -200,7 +200,7 @@ public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicT
     public boolean isLegalTarget(final MagicPlayer player, final MagicTargetFilter<? extends MagicTarget> targetFilter) {
         return source.getGame().getStack().contains(this);
     }
-    
+
     private long getStateId(final Object[] arr) {
         final long[] keys = new long[arr.length];
         for (int i = 0; i < arr.length; i++) {
@@ -219,7 +219,7 @@ public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicT
             getStateId(choiceResults)
         });
     }
-   
+
     public abstract boolean isSpell();
 
     public abstract boolean canBeCountered();

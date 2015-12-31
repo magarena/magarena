@@ -27,7 +27,7 @@ public class MagicEndOfCombatPhase extends MagicPhase {
     public void executeEndOfPhase(final MagicGame game) {
         // End of combat triggers
         game.executeTrigger(MagicTriggerType.AtEndOfCombat,game.getTurnPlayer());
-        
+
         // Remove permanents from combat
         for (final MagicPlayer player : game.getPlayers()) {
             for (final MagicPermanent permanent : player.getPermanents()) {

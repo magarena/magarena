@@ -369,7 +369,7 @@ public class PreferencesDialog
         return scroller;
 
     }
-    
+
     private void saveSettings() {
         animationsPanel.saveSettings();
         gameImagesPanel.saveSettings();

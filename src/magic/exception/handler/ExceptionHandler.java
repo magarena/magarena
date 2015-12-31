@@ -7,7 +7,7 @@ public abstract class ExceptionHandler implements Thread.UncaughtExceptionHandle
     // first case is actually handled. This is mainly to prevent multiple
     // error notification dialogs being created in UiExceptionReporter.
     private volatile boolean isRunning = false;
-    
+
     @Override
     public void uncaughtException(final Thread th, final Throwable ex) {
         if (!isRunning) {

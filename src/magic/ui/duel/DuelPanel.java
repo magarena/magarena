@@ -42,8 +42,8 @@ public final class DuelPanel extends JPanel {
     private static final String PASS_KEY="pass";
 
     private ZoneBackgroundLabel backgroundLabel;
-    private SwingGameController controller;  
-  
+    private SwingGameController controller;
+
     private DuelSideBarPanel sidebarPanel;
     private BattlefieldPanel battlefieldPanel;
     private BattlefieldPanel textView;
@@ -51,7 +51,7 @@ public final class DuelPanel extends JPanel {
     private ResolutionProfileResult result;
 
     public DuelPanel(final MagicGame game) {
-        
+
         setOpaque(false);
         setFocusable(true);
     }
@@ -63,7 +63,7 @@ public final class DuelPanel extends JPanel {
         textView = new TextModeBattlefieldPanel(controller);
         imageView = new ImageModeBattlefieldPanel(controller);
         battlefieldPanel = isTextView() ? textView : imageView;
-        
+
         sidebarPanel = new DuelSideBarPanel(controller, battlefieldPanel.getStackViewer());
 
         updateView();
@@ -84,7 +84,7 @@ public final class DuelPanel extends JPanel {
             @Override
             public void mouseEntered(MouseEvent e) {
                 controller.hideInfo();
-            }            
+            }
         });
     }
 

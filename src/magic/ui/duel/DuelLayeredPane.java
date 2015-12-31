@@ -27,9 +27,9 @@ public class DuelLayeredPane extends JLayeredPane {
         backgroundLabel = new ZoneBackgroundLabel();
         backgroundLabel.setGame(true);
         duelPanel.setBackgroundLabel(backgroundLabel);
-        
+
         animationPanel = new AnimationPanel();
-        dialogPanel = new DuelDialogPanel();       
+        dialogPanel = new DuelDialogPanel();
         imageCardViewer = new AnnotatedCardPanel();
 
         updateLayout();

@@ -21,7 +21,7 @@ public class MagicPlayAuraEvent extends MagicSpellCardEvent {
         targetChoiceOther = aTargetChoiceOther;
         targetPicker = aTargetPicker;
     }
-    
+
     public MagicTargetChoice getTargetChoice() {
         return targetChoiceOther;
     }

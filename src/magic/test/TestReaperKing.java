@@ -28,7 +28,7 @@ class TestReaperKing extends TestGameBuilder {
         createPermanent(P,"Volcanic Island",false,2);
         createPermanent(P,"Badlands",false,2);
         addToHand(P,"Reaper King",4);
-        
+
         P = opponent;
 
         P.setLife(20);

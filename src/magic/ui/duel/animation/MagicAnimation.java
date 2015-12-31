@@ -14,7 +14,7 @@ public abstract class MagicAnimation {
     protected abstract void play();
     protected abstract void cancel();
     protected abstract void doCancelAction();
-    
+
     protected void setCanvas(JComponent aCanvas) {
         this.canvas = aCanvas;
     }

@@ -27,7 +27,7 @@ public abstract class MagicCardAbilityActivation extends MagicHandCastActivation
         );
         name = aName;
     }
-    
+
     public MagicCardAbilityActivation(final MagicActivationHints hints, final String aName) {
         this(MagicActivation.NO_COND, hints, aName);
     }
@@ -56,22 +56,22 @@ public abstract class MagicCardAbilityActivation extends MagicHandCastActivation
     final MagicChoice getChoice(final MagicCard source) {
         return getCardEvent(source, MagicPayedCost.NO_COST).getChoice();
     }
-    
+
     public static final MagicCardAbilityActivation create(final String act, final MagicLocationType loc) {
         final String[] token = act.split(ARG.COLON, 2);
-        
+
         // build the actual costs
         final String costs = token[0];
         final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(costs);
         assert matchedCostEvents.size() > 0;
-        
+
         // add restriction as a MagicMatchedCostEvent
         final String[] part = token[1].split(ActivationRestriction);
         if (part.length > 1) {
             matchedCostEvents.addAll(MagicCondition.build(part[1]));
         }
-        
-        // parse the effect        
+
+        // parse the effect
         final String rule = part[0];
         final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(rule);
 
@@ -96,12 +96,12 @@ public abstract class MagicCardAbilityActivation extends MagicHandCastActivation
                 }
                 return costEvents;
             }
-       
+
             @Override
             public MagicEvent getCardEvent(final MagicCard source, final MagicPayedCost payedCost) {
                 return sourceEvent.getEvent(source, payedCost);
             }
-            
+
             @Override
             public void change(final MagicCardDefinition cdef) {
                 if (loc == MagicLocationType.OwnersHand) {

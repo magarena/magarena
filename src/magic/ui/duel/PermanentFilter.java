@@ -45,7 +45,7 @@ public class PermanentFilter implements ActionListener {
         MagicImages.getIcon(MagicIcon.ARTIFACT),
         MagicImages.getIcon(MagicIcon.ENCHANTMENT),
         MagicImages.getIcon(MagicIcon.VALID)};
-    
+
     private static final String[] FILTER_TOOLTIPS={
         "All","Mana","Creatures","Artifacts","Enchantments","Choices"
     };

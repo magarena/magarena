@@ -15,7 +15,7 @@ public abstract class MagicTargetPicker<T> {
     protected void setEvent(final MagicEvent event) {
         //do nothing
     }
-    
+
     protected abstract int getTargetScore(final MagicGame game,final MagicPlayer event,final T target);
 
     public Collection<T> pickTargets(final MagicGame game,final MagicEvent event,final Collection<T> options) {

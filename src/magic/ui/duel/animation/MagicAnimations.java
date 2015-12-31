@@ -43,9 +43,9 @@ public class MagicAnimations {
         final boolean isValid = newGameInfo.getTurnPlayer().isHuman() || MagicSystem.isAiVersusAi();
         return isDrawPhase && isValid;
     }
-    
+
     private static boolean isPlayCardEvent(GameViewerInfo newGameInfo) {
-        return newGameInfo.getPhaseType().isMain() && newGameInfo.getTurnPlayer().isAi();        
+        return newGameInfo.getPhaseType().isMain() && newGameInfo.getTurnPlayer().isAi();
     }
 
     private static boolean isNewTurnEvent(GameViewerInfo oldGameInfo, GameViewerInfo newGameInfo) {

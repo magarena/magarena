@@ -9,15 +9,15 @@ import java.util.Collection;
 import java.util.ArrayList;
 
 public class RemoveAllFromPlayAction extends MagicAction {
-    
+
     private final Collection<MagicPermanent> perms = new ArrayList<MagicPermanent>();
     private final MagicLocationType toLocation;
-    
+
     public RemoveAllFromPlayAction(final Collection<MagicPermanent> aPerms, final MagicLocationType aToLocation) {
         perms.addAll(aPerms);
         toLocation = aToLocation;
     }
-    
+
     @Override
     public void doAction(final MagicGame game) {
         final boolean isLibrary = toLocation == MagicLocationType.OwnersLibrary;
@@ -42,7 +42,7 @@ public class RemoveAllFromPlayAction extends MagicAction {
             game.update();
         }
     }
-    
+
     @Override
     public void undoAction(final MagicGame game) {}
 }

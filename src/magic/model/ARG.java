@@ -23,7 +23,7 @@ public class ARG {
     public static final String GRAVEYARD = "(?<choice>[^\\.]* card [^\\.]+? graveyard)";
     public static final String THING = "(permanent|creature|artifact|land|player|opponent|spell or ability|spell|ability)";
     public static final String EVENQUOTES = "(?=([^\"]*'[^\"]*')*[^\"]*$)";
-    
+
     public static final String NUMBER = "(?<number>[0-9]+)";
     public static int number(final Matcher m) {
         return Integer.parseInt(m.group("number"));
@@ -36,7 +36,7 @@ public class ARG {
     public static MagicAmount amountObj(final Matcher m) {
         return MagicAmountParser.build(m.group("amount"));
     }
-    
+
     public static final String AMOUNT2 = "(?<amount2>[^ ]+?)";
     public static int amount2(final Matcher m) {
         return EnglishToInt.convert(m.group("amount2"));
@@ -144,7 +144,7 @@ public class ARG {
             return event.getPlayer();
         }
     }
-    
+
     private static final String TNC = "(that [^ ]+'s|its) controller( or that player)?";
     public static final String PLAYERS = "((?<rnc>rn's controller)|(?<tnc>" + TNC + ")|(?<rn>rn)|(?<pn>(pn||you))|" + CHOICE + "|(?<group>[^\\.]+?))";
     public static List<MagicPlayer> players(final MagicEvent event, final Matcher m, final MagicTargetFilter<MagicPlayer> filter) {
@@ -183,7 +183,7 @@ public class ARG {
             return filter.filter(event);
         }
     }
-    
+
     public static MagicTargetFilter<MagicPermanent> permanentsParse(final Matcher m) {
         if (m.group("group") != null) {
             return MagicTargetFilterFactory.Permanent(m.group("group"));
@@ -191,7 +191,7 @@ public class ARG {
             return MagicTargetFilterFactory.ANY;
         }
     }
-    
+
     public static final String TARGETS = "((?<rnc1>rn's controller)|(?<tnc1>" + TNC + ")|(?<rn1>rn)|(?<sn1>sn)|(?<pn1>(pn||you))|" + CHOICE + "|(?<group1>[^\\.]+?))";
     public static List<? extends MagicTarget> targets(final MagicEvent event, final Matcher m, final MagicTargetFilter<MagicTarget> filter) {
         if (m.group("rnc1") != null) {
@@ -218,7 +218,7 @@ public class ARG {
             return MagicTargetFilterFactory.ONE;
         }
     }
-    
+
     public static final String TARGETS2 = "((?<tnc2>" + TNC + ")|(?<rn2>rn)|(?<sn2>sn)|(?<pn2>(pn||you))|(?<group2>[^\\.]+?))";
     public static List<? extends MagicTarget> targets2(final MagicEvent event, final Matcher m, final MagicTargetFilter<MagicTarget> filter) {
         if (m.group("tnc2") != null) {
@@ -241,7 +241,7 @@ public class ARG {
             return MagicTargetFilterFactory.ONE;
         }
     }
-    
+
     public static final String CARDS = "((?<choice>[^\\.]* card [^\\.]+?)|(?<group>[^\\.]* cards [^\\.]+?))";
     public static List<MagicCard> cards(final MagicEvent event, final Matcher m, final MagicTargetFilter<MagicCard> filter) {
         if (m.group("choice") != null) {
@@ -250,7 +250,7 @@ public class ARG {
             return filter.filter(event);
         }
     }
-    
+
     public static MagicTargetFilter<MagicCard> cardsParse(final Matcher m) {
         if (m.group("group") != null) {
             return MagicTargetFilterFactory.Card(m.group("group"));
@@ -271,7 +271,7 @@ public class ARG {
             return filter.filter(event);
         }
     }
-    
+
     public static MagicTargetFilter<MagicItemOnStack> itemsParse(final Matcher m) {
         if (m.group("group") != null) {
             return MagicTargetFilterFactory.ItemOnStack(m.group("group"));

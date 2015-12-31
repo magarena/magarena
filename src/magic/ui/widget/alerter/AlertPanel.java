@@ -7,7 +7,7 @@ import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class AlertPanel extends JPanel {
-    
+
     private final MigLayout miglayout = new MigLayout();
     private final List<AlertButton> alertButtons = new ArrayList<>();
 

@@ -16,11 +16,11 @@ import magic.utility.MagicFileSystem.DataPath;
 import magic.model.MagicCardDefinition;
 
 public class MagicCustomFormat extends MagicFormat {
-    
+
     private final Set<String> legal = new HashSet<>();
     private final String name;
     private final File file;
-    
+
     public MagicCustomFormat(final String aName) {
         this(aName, null);
     }
@@ -46,7 +46,7 @@ public class MagicCustomFormat extends MagicFormat {
     public String getName() {
         return name;
     }
-    
+
     @Override
     public int getMinimumDeckSize() {
         return 40;
@@ -56,7 +56,7 @@ public class MagicCustomFormat extends MagicFormat {
     public String getLabel() {
         return name;
     }
-    
+
     private void load() {
         List<String> content = Collections.emptyList();
         try { //load cube
@@ -78,7 +78,7 @@ public class MagicCustomFormat extends MagicFormat {
     //
     // static members
     //
-    
+
     private static final String CUBE_FILE_EXTENSION = "_cube.txt";
     private static final FileFilter CUBE_FILE_FILTER = new FileFilter() {
         @Override
@@ -88,7 +88,7 @@ public class MagicCustomFormat extends MagicFormat {
     };
 
     private static List<MagicFormat> customFormats;
-    
+
     public static void loadCustomFormats() {
         final List<MagicFormat> fmts = new ArrayList<>();
         final File[] cubeFiles = MagicFileSystem.getDataPath(DataPath.MODS).toFile().listFiles(CUBE_FILE_FILTER);
@@ -105,7 +105,7 @@ public class MagicCustomFormat extends MagicFormat {
     static List<MagicFormat> values() {
         return customFormats;
     }
-    
+
     private static String getNameWithoutSize(final String cube) {
         final int toIndex = cube.indexOf("(");
         if (toIndex == -1) {
@@ -114,20 +114,20 @@ public class MagicCustomFormat extends MagicFormat {
             return cube.substring(0, toIndex).trim();
         }
     }
-    
+
     public static MagicFormat get(final String cubeLabel) {
 
         // prior to 1.62 the cube label including card count was saved to the duel
         // config file so for backwards compatibility during import need to check
         // for and remove card count if it exists to isolate just the cube name.
         final String cubeName = getNameWithoutSize(cubeLabel);
-        
+
         for (final MagicFormat cube : MagicFormat.getDuelFormats()) {
             if (cube.getName().equals(cubeName)) {
                 return cube;
             }
         }
-        
+
         return MagicFormat.ALL;
     }
 

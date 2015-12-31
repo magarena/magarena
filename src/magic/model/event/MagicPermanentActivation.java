@@ -46,11 +46,11 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
             "Play activated ability of SN."
         );
     }
-    
+
     @Override
     public final boolean canPlay(final MagicGame game, final MagicPlayer player, final MagicPermanent source, final boolean useHints) {
         boolean canPlay = super.canPlay(game, player, source, useHints);
-       
+
         // More complex check that first executes events without choice, then check conditions of the others
         if (canPlay && source.producesMana()) {
             game.snapshot();
@@ -108,10 +108,10 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
     public void change(final MagicCardDefinition cdef) {
         cdef.addAct(this);
     }
-    
+
     public static final MagicPermanentActivation create(final String act) {
         final String[] token = act.split(ARG.COLON, 2);
-       
+
         // build the actual costs
         final String costs = token[0];
         final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(costs);
@@ -123,7 +123,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
             matchedCostEvents.addAll(MagicCondition.build(part[i]));
         }
 
-        // parse the effect        
+        // parse the effect
         final String rule = part[0];
         final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(rule);
 
@@ -148,7 +148,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
                 }
                 return costEvents;
             }
-       
+
             @Override
             public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
                 return sourceEvent.getEvent(source, payedCost);

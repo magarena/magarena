@@ -18,12 +18,12 @@ public class WhiteColorSwapImageFilter extends MagicRGBImageFilter {
         int b = (int)(getBlue(argb) * filter[2]);
         return (argb & ALPHA_MASK) | (r << 16) | (g << 8) | b;
     }
-    
+
     private float[] getImageFilterValues(final Color color) {
         return new float[]{
             color.getRed() / 255f,
             color.getGreen() / 255f,
             color.getBlue() / 255f};
     }
-    
+
 }

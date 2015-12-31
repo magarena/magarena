@@ -55,17 +55,17 @@ public final class NewVersionJsonParser {
 
     //source: https://stackoverflow.com/questions/6701948/efficient-way-to-compare-version-strings-in-java
     /**
-     * Compares two version strings. 
-     * 
-     * Use this instead of String.compareTo() for a non-lexicographical 
+     * Compares two version strings.
+     *
+     * Use this instead of String.compareTo() for a non-lexicographical
      * comparison that works for version strings. e.g. "1.10".compareTo("1.6").
-     * 
+     *
      * @note It does not work if "1.10" is supposed to be equal to "1.10.0".
-     * 
-     * @param str1 a string of ordinal numbers separated by decimal points. 
+     *
+     * @param str1 a string of ordinal numbers separated by decimal points.
      * @param str2 a string of ordinal numbers separated by decimal points.
-     * @return The result is a negative integer if str1 is _numerically_ less than str2. 
-     *         The result is a positive integer if str1 is _numerically_ greater than str2. 
+     * @return The result is a negative integer if str1 is _numerically_ less than str2.
+     *         The result is a positive integer if str1 is _numerically_ greater than str2.
      *         The result is zero if the strings are _numerically_ equal.
      */
     public static int versionCompare(String str1, String str2) {

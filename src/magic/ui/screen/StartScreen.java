@@ -39,7 +39,7 @@ public class StartScreen extends AbstractScreen {
 
             setOpaque(false);
             setLayout(migLayout);
-            
+
             translations = MagicFileSystem.getTranslationFilenames();
             if (translations.isEmpty()) {
                 SwingUtilities.invokeLater(new Runnable() {

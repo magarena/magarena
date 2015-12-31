@@ -98,7 +98,7 @@ public class MagicTargetNone extends MagicObjectImpl implements MagicTarget, Mag
     public MagicPlayer getController() {
         throw new RuntimeException("MagicTargetNone has no controller");
     }
-    
+
     @Override
     public MagicCardDefinition getCardDefinition() {
         throw new RuntimeException("MagicTargetNone has no card definition");
@@ -115,7 +115,7 @@ public class MagicTargetNone extends MagicObjectImpl implements MagicTarget, Mag
     public long getStateId() {
         return hashCode();
     }
-    
+
     @Override
     public int getCounters(final MagicCounterType counterType) {
         return 0;

@@ -51,7 +51,7 @@ public class MagicMulliganChoice extends MagicChoice {
             costSum += card.getConvertedCost();
             //System.err.println("MULLIGAN: card=" + card);
         }
-        
+
         // There is more fine tuning to be done here
         int minLands = 2;
         int maxLands = 3;
@@ -64,7 +64,7 @@ public class MagicMulliganChoice extends MagicChoice {
         }
 
         final int hand = player.getHandSize();
-        
+
         if (hand <= 4) {
             return NO_CHOICE_LIST;
         }
@@ -83,16 +83,16 @@ public class MagicMulliganChoice extends MagicChoice {
 
         int playable = 0;
         for (final MagicCard card : assumedPlayer.getHand()) {
-            if (card.hasType(MagicType.Land) == false && 
+            if (card.hasType(MagicType.Land) == false &&
                 card.getCost().getCondition().accept(card)) {
                 playable++;
             }
         }
-          
+
         //System.err.println("MULLIGAN: hand=" + hand + " lands=" + numLands + " playable=" + playable);
 
         if ((hand >  6 && playable > 1) ||
-            (hand <= 6 && playable > 0)) { 
+            (hand <= 6 && playable > 0)) {
             return NO_CHOICE_LIST;
         } else if (numLands < minLands || numLands > maxLands) {
             return YES_CHOICE_LIST;

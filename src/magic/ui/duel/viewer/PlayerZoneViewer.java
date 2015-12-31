@@ -42,7 +42,7 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
 
         this.controller = controller;
         this.imageCardsListViewer = new ImageCardListViewer(controller);
- 
+
         setOpaque(false);
         setLayout(new BorderLayout(6, 0));
 

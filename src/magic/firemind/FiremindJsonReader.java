@@ -37,7 +37,7 @@ public final class FiremindJsonReader {
         if (jsonFile.exists()) {
             if (!isJsonFileUpToDate(jsonFile)) {
                 // only attempt download once per day even if download fails.
-                final Calendar cal = Calendar.getInstance();                
+                final Calendar cal = Calendar.getInstance();
                 jsonFile.setLastModified(cal.getTimeInMillis());
             }
         } else {

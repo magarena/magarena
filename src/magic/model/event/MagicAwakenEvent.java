@@ -45,7 +45,7 @@ public class MagicAwakenEvent extends MagicEvent {
             tchoice,
             n,
             EVENT_ACTION,
-            "PN puts RN +1/+1 counters on target land$ you control and " + 
+            "PN puts RN +1/+1 counters on target land$ you control and " +
             "it becomes a 0/0 Elemental creature with haste. It's still a land."
         );
     }

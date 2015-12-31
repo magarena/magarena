@@ -39,7 +39,7 @@ public final class GameLoader {
         for (int i = 0; i < playerDefs.length; i++) {
             final PlayerProfile pp = gameState.getPlayer(i).isAi() ?
                 AiProfile.create(
-                    gameState.getPlayer(i).getName(), 
+                    gameState.getPlayer(i).getName(),
                     MagicAIImpl.valueOf(gameState.getPlayer(i).getAiType()),
                     gameState.getDifficulty()
                 ) :
@@ -49,7 +49,7 @@ public final class GameLoader {
             final MagicDeckProfile deckProfile = new MagicDeckProfile(gameState.getPlayer(i).getDeckProfileColors());
             playerDefs[i] = new DuelPlayerConfig(pp, deckProfile);
         }
-        
+
         duel.setPlayers(playerDefs);
         duel.setStartPlayer(gameState.getStartPlayerIndex());
         return duel;
@@ -88,7 +88,7 @@ public final class GameLoader {
         for (GameCardState card : exiled) {
             TestGameBuilder.addToExile(player, card.getCardName(), card.getQuantity());
         }
-        
+
     }
 
 }

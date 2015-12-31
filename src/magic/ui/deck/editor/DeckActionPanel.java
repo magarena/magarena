@@ -28,7 +28,7 @@ class DeckActionPanel extends TexturedPanel {
     }
 
     DeckActionPanel(final AbstractAction plusButtonAction, final AbstractAction minusButtonAction) {
-        
+
         setBackground(BACKGROUND_COLOR);
 
         viewActionPanel = new JPanel(new MigLayout("insets 4 0 0 0, flowy"));

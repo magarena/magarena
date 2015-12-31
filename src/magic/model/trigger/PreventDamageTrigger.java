@@ -220,14 +220,14 @@ public abstract class PreventDamageTrigger extends IfDamageWouldBeDealtTrigger {
             }
         };
     }
-    
+
     // prevent all combat damage dealt by
     public static final PreventDamageTrigger PreventCombatDamageDealtBy(final MagicTargetFilter<MagicPermanent> filter) {
         return new PreventDamageTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-                if (damage.isCombat() && 
-                    damage.isSourcePermanent() && 
+                if (damage.isCombat() &&
+                    damage.isSourcePermanent() &&
                     filter.accept(permanent, permanent.getController(), damage.getSourcePermanent())) {
                     damage.prevent();
                 }
@@ -235,13 +235,13 @@ public abstract class PreventDamageTrigger extends IfDamageWouldBeDealtTrigger {
             }
         };
     }
-    
+
     // prevent all damage dealt by
     public static final PreventDamageTrigger PreventDamageDealtBy(final MagicTargetFilter<MagicPermanent> filter) {
         return new PreventDamageTrigger() {
             @Override
             public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-                if (damage.isSourcePermanent() && 
+                if (damage.isSourcePermanent() &&
                     filter.accept(permanent, permanent.getController(), damage.getSourcePermanent())) {
                     damage.prevent();
                 }

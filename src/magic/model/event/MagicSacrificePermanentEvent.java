@@ -16,7 +16,7 @@ public class MagicSacrificePermanentEvent extends MagicEvent {
     public MagicSacrificePermanentEvent(final MagicSource source, final MagicTargetChoice targetChoice) {
         this(source, source.getController(), targetChoice);
     }
-    
+
     public MagicSacrificePermanentEvent(final MagicSource source, final MagicPlayer player, final MagicTargetChoice targetChoice) {
         this(source, player, targetChoice, EVENT_ACTION);
     }

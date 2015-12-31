@@ -11,8 +11,8 @@ import magic.model.target.MagicTargetFilterFactory;
 import magic.model.target.MagicTargetHint;
 
 public class MagicSoulbondEvent extends MagicEvent {
-    
-    private static final MagicTargetChoice AN_UNPAIRED_SOULBOND_CREATURE = 
+
+    private static final MagicTargetChoice AN_UNPAIRED_SOULBOND_CREATURE =
         new MagicTargetChoice("an unpaired Soulbond creature");
 
     public MagicSoulbondEvent(final MagicPermanent permanent,final boolean hasSoulbond) {

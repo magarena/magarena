@@ -31,7 +31,7 @@ public class AnimationFx {
     }
 
     private static void setOff(long flag) {
-        flags &= ~flag;      
+        flags &= ~flag;
     }
 
     public static long getFlags() {

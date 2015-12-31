@@ -99,5 +99,5 @@ public class CounterOverlay {
         g2d.setColor(new Color(255, 0, 0, 200));
         g2d.fillRect(0, 0, image.getWidth()-1, image.getHeight()-1);
     }
-    
+
 }

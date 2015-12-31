@@ -26,7 +26,7 @@ public final class JsonOrgParser {
             final String[] deckNamesArray = JSONObject.getNames(jsonFormat);
             if (deckNamesArray == null)
                 continue;   // no decks specified for given format.
-            
+
             final List<String> deckNames = new ArrayList<>(Arrays.asList(deckNamesArray));
 
             for (String deckName : deckNames) {
@@ -41,7 +41,7 @@ public final class JsonOrgParser {
 
         return decks;
     }
-    
+
     private static void addCardsToDeck(final MagicDeck deck, final JSONArray jsonCards) {
         for (int i = 0; i < jsonCards.length(); i++) {
             final JSONObject jsonCard = jsonCards.getJSONObject(i);

@@ -29,12 +29,12 @@ public abstract class AttacksTrigger extends MagicTrigger<MagicPermanent> {
             }
         };
     }
-    
+
     public static AttacksTrigger createAlone(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
         return new AttacksTrigger() {
             @Override
             public boolean accept(final MagicPermanent permanent, final MagicPermanent attacker) {
-                return filter.accept(permanent, permanent.getController(), attacker) && 
+                return filter.accept(permanent, permanent.getController(), attacker) &&
                        attacker.getController().getNrOfAttackers() == 1;
             }
             @Override

@@ -22,7 +22,7 @@ public class FlipAction extends MagicAction {
     public void doAction(final MagicGame game) {
         if (permanent.isFlipCard() && permanent.isFlipped() == false) {
             oldStatics = permanent.getStatics();
-            
+
             game.doAction(ChangeStateAction.Set(permanent, MagicPermanentState.Flipped));
 
             newStatics = permanent.getStatics();

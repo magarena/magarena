@@ -16,15 +16,15 @@ import java.util.List;
 import magic.model.MagicMessage;
 
 public class MagicPutOntoBattlefieldEvent extends MagicEvent {
-    
+
     public MagicPutOntoBattlefieldEvent(final MagicEvent event, final MagicChoice choice, final List<? extends MagicPermanentAction> mods) {
         this(event.getSource(), event.getPlayer(), choice, mods);
     }
-    
+
     public MagicPutOntoBattlefieldEvent(final MagicEvent event, final MagicChoice choice, final MagicPermanentAction... mods) {
         this(event.getSource(), event.getPlayer(), choice, Arrays.asList(mods));
     }
-    
+
     public MagicPutOntoBattlefieldEvent(final MagicSource source, final MagicPlayer player, final MagicChoice choice, final List<? extends MagicPermanentAction> mods) {
         super(
             source,

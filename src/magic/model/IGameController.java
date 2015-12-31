@@ -1,6 +1,6 @@
 package magic.model;
 
 public interface IGameController {
-    void haltGame(); 
+    void haltGame();
     void runGame();
 }

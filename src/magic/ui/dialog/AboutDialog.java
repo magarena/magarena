@@ -38,7 +38,7 @@ public class AboutDialog extends MagicDialog implements ActionListener {
     public AboutDialog(final MagicFrame frame) {
 
         super(ScreenController.getMainFrame(), UiString.get("About..."), new Dimension(600, 320));
-      
+
         final JPanel aboutPanel = new JPanel();
         aboutPanel.setLayout(null);
 

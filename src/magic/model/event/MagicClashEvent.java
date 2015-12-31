@@ -9,7 +9,7 @@ import magic.model.event.MagicEvent;
 import magic.model.trigger.MagicTriggerType;
 
 public class MagicClashEvent extends MagicEvent {
-    
+
     public MagicClashEvent(final MagicEvent event, final MagicEventAction aClashAction) {
         this(event.getSource(), event.getPlayer(), aClashAction);
     }
@@ -22,7 +22,7 @@ public class MagicClashEvent extends MagicEvent {
             "Clash with an opponent."
         );
     }
-    
+
     public static final MagicEventAction EventAction(final MagicEventAction clashAction) {
         return  new MagicEventAction() {
             @Override
@@ -35,7 +35,7 @@ public class MagicClashEvent extends MagicEvent {
             }
         };
     }
-    
+
     public static MagicPlayer executeClash(final MagicGame game, final MagicEvent event) {
         final MagicPlayer player = event.getPlayer();
         final MagicPlayer opponent = player.getOpponent();
@@ -54,7 +54,7 @@ public class MagicClashEvent extends MagicEvent {
                 winner = MagicPlayer.NONE;
             }
         }
-        
+
         if (winner == MagicPlayer.NONE) {
             game.logAppendMessage(player, "It is a tie.");
         } else if (winner == player) {
@@ -62,10 +62,10 @@ public class MagicClashEvent extends MagicEvent {
         } else {
             game.logAppendMessage(player, player + " lost the clash.");
         }
-            
+
         game.addFirstEvent(MagicScryEvent.Pseudo(event.getSource(), opponent));
         game.addFirstEvent(MagicScryEvent.Pseudo(event.getSource(), player));
-                
+
         return winner;
     }
 }

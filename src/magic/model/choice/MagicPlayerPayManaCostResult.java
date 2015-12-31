@@ -33,7 +33,7 @@ public class MagicPlayerPayManaCostResult implements MagicPayManaCostResult {
     public String toString() {
         return x>0?"X="+x:"";
     }
-    
+
     @Override
     public MagicPlayerPayManaCostResult copy(final MagicCopyMap copyMap) {
         return this;
@@ -43,7 +43,7 @@ public class MagicPlayerPayManaCostResult implements MagicPayManaCostResult {
     public MagicPlayerPayManaCostResult map(final MagicGame game) {
         return this;
     }
-    
+
     @Override
     public long getId() {
         return hashCode();

@@ -39,9 +39,9 @@ public abstract class MagicDialog extends JDialog {
 
         setLookAndFeel();
         refreshLayout();
-        
+
     }
-    
+
     protected JPanel getDialogContentPanel() {
         return contentPanel;
     }
@@ -64,7 +64,7 @@ public abstract class MagicDialog extends JDialog {
                         BorderFactory.createMatteBorder(0, 8, 8, 8, MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND)))
         );
     }
-    
+
     private JLabel getDialogCaptionLabel() {
         final JLabel lbl = new JLabel(getTitle());
         lbl.setOpaque(true);
@@ -84,5 +84,5 @@ public abstract class MagicDialog extends JDialog {
     private JComponent getContentComponent() {
         return (JComponent)getContentPane();
     }
-    
+
 }

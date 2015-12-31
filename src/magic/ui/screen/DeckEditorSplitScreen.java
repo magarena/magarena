@@ -65,7 +65,7 @@ public class DeckEditorSplitScreen
             }
         }
     }
-    
+
     private MagicDeck loadDeck(final Path deckFilePath) {
         try {
             return DeckUtils.loadDeckFromFile(deckFilePath);

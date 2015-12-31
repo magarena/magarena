@@ -22,7 +22,7 @@ class AnimationsPanel extends JPanel {
     private static final String _S6 = "When playing a land card, this setting determines how long (in seconds) it should be displayed at full size. Left-click or space key cancels preview.";
     private static final String _S70 = "Play animations / effects";
     private static final String _S71 = "Turning animations off will speed up gameplay but make it harder to follow the action.";
-    
+
     private final static GeneralConfig CONFIG = GeneralConfig.getInstance();
 
     private final JCheckBox animateCheckBox;
@@ -40,7 +40,7 @@ class AnimationsPanel extends JPanel {
         newTurnAlertSlider = getNewTurnAlertSlider(aListener);
         subPanel = getAnimationSubPanel();
         animateCheckBox = getAnimateCheckbox(aListener, subPanel);
-        
+
         setLayout(new MigLayout("flowy, insets 16, gapy 6"));
         add(animateCheckBox);
         add(subPanel, "w 100%");
@@ -52,7 +52,7 @@ class AnimationsPanel extends JPanel {
         panel.setEnabled(CONFIG.getAnimateGameplay());
         return panel;
     }
-    
+
     private JCheckBox getAnimateCheckbox(MouseListener aListener, JPanel panel) {
         final JCheckBox cb = new JCheckBox(UiString.get(_S70), CONFIG.getAnimateGameplay());
         cb.setToolTipText(UiString.get(_S71));
@@ -71,7 +71,7 @@ class AnimationsPanel extends JPanel {
         sp.setFontBold(false);
         return sp;
     }
-    
+
     private SliderPanel getNonLandPreviewSlider(MouseListener aListener) {
         final SliderPanel sp = new SliderPanel(UiString.get(_S3), 1, 20, 1, CONFIG.getNonLandPreviewDuration() / 1000);
         sp.setToolTipText(UiString.get(_S4));
@@ -114,5 +114,5 @@ class AnimationsPanel extends JPanel {
             super.setEnabled(b);
         }
     }
-    
+
 }

@@ -31,7 +31,7 @@ public abstract class ScreenOptionsOverlay extends TexturedPanel implements IThe
     private static final String _S6 = "Quit to main menu";
     private static final String _S7 = "Quit to desktop";
     private static final String _S8 = "Close Menu";
-    
+
     private final MenuPanel screenMenu;
     private MenuPanel menu = null;
 

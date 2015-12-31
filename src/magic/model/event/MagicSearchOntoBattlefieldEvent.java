@@ -22,11 +22,11 @@ public class MagicSearchOntoBattlefieldEvent extends MagicEvent {
     public MagicSearchOntoBattlefieldEvent(final MagicEvent event, final MagicChoice choice, final MagicPermanentAction... mods) {
         this(event.getSource(), event.getPlayer(), choice, Arrays.asList(mods));
     }
-    
+
     public MagicSearchOntoBattlefieldEvent(final MagicEvent event, final MagicChoice choice, final List<? extends MagicPermanentAction> mods) {
         this(event.getSource(), event.getPlayer(), choice, mods);
     }
-    
+
     public MagicSearchOntoBattlefieldEvent(final MagicSource source, final MagicPlayer player, final MagicChoice choice, final MagicPermanentAction... mods) {
         this(source, player, choice, Arrays.asList(mods));
     }

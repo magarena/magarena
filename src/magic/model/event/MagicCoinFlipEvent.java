@@ -6,11 +6,11 @@ import magic.model.MagicPlayer;
 import magic.model.choice.MagicCoinFlipChoice;
 
 public class MagicCoinFlipEvent extends MagicEvent {
-    
+
     public MagicCoinFlipEvent(final MagicEvent event, final MagicEventAction winAction, final MagicEventAction loseAction) {
         this(event, event.getRef(), winAction, loseAction);
     }
-    
+
     public MagicCoinFlipEvent(final MagicEvent event, final int ref, final MagicEventAction winAction, final MagicEventAction loseAction) {
         super(
             event.getSource(),
@@ -21,7 +21,7 @@ public class MagicCoinFlipEvent extends MagicEvent {
             "Choose one$ — (1) Heads; (2) Tails. PN flips a coin."
         );
     }
-    
+
     public MagicCoinFlipEvent(final MagicEvent event, final MagicCopyable ref, final MagicEventAction winAction, final MagicEventAction loseAction) {
         super(
             event.getSource(),

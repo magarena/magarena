@@ -20,7 +20,7 @@ public class BasicDeckTablePanel extends TexturedPanel {
     public static final String CP_CARD_LCLICKED = "cardLeftClicked";
     public static final String CP_CARD_RCLICKED = "cardRightClicked";
     public static final String CP_CARD_DCLICKED = "cardDoubleClicked";
-    
+
     private final MigLayout migLayout = new MigLayout();
     private final JScrollPane scrollpane = new JScrollPane();
     private JTable table;
@@ -35,9 +35,9 @@ public class BasicDeckTablePanel extends TexturedPanel {
         scrollpane.setBorder(FontsAndBorders.NO_BORDER);
         scrollpane.setOpaque(false);
         scrollpane.getViewport().setOpaque(false);
-        
+
         setLayout(migLayout);
-        
+
     }
 
     private ListSelectionListener getTableListSelectionListener() {
@@ -72,7 +72,7 @@ public class BasicDeckTablePanel extends TexturedPanel {
 
         this.table = aDeckTable;
         table.setAutoResizeMode(JTable.AUTO_RESIZE_LAST_COLUMN);
-        table.getTableHeader().setReorderingAllowed(false);        
+        table.getTableHeader().setReorderingAllowed(false);
         table.getSelectionModel().addListSelectionListener(getTableListSelectionListener());
         firePropertyChange(CP_CARD_SELECTED, false, true);
 

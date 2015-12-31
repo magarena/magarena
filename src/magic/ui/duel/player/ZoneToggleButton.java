@@ -55,7 +55,7 @@ public class ZoneToggleButton extends JToggleButton {
         this.imageOffset = value * 2;
         repaint();
     }
-    
+
     // CTR
     private ZoneToggleButton(final MagicPlayerZone zone, final int cardCount, final ValueStyle valueStyle, final boolean isActive) {
 
@@ -72,7 +72,7 @@ public class ZoneToggleButton extends JToggleButton {
         setNumberOfCardsInZone(cardCount);
         setMinimumSize(new Dimension(40, 60));
     }
-    
+
     // CTR
     ZoneToggleButton(final MagicPlayerZone playerZone, final int cardCount, final boolean isActive) {
         this(playerZone, cardCount, ValueStyle.NORMAL, isActive);
@@ -92,7 +92,7 @@ public class ZoneToggleButton extends JToggleButton {
         if (isHighlighted) {
             drawSelectedFill(g);
         }
-        
+
         if (animateOnChange) {
             g.drawImage(image, x, 4, x+32, 4+32, 0+imageOffset, 0+imageOffset, 32-imageOffset, 32-imageOffset, null);
         } else {

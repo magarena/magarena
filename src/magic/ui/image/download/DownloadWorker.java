@@ -23,7 +23,7 @@ import magic.utility.MagicSystem;
 class DownloadWorker extends SwingWorker<Void, Integer> {
 
     private static final MagicLogFile missingLog = new MagicLogFile("downloaded-images");
-    
+
     private final Proxy proxy;
     private ImagesDownloadList downloadList;
     private final IDownloadListener listener;
@@ -31,12 +31,12 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
     private final DownloadMode downloadMode;
     private boolean updateDownloadDate = true;
     private boolean isLogging = true;
-   
+
     DownloadWorker(
         IDownloadListener aListener,
         CardTextLanguage aLanguage,
         DownloadMode aDownloadMode) {
-        
+
         this.listener = aListener;
         this.textLanguage = aLanguage;
         this.downloadMode = aDownloadMode;
@@ -223,5 +223,5 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
         assert SwingUtilities.isEventDispatchThread();
         listener.resetProgress();
     }
-    
+
 }

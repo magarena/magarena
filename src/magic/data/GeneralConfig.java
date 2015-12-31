@@ -34,27 +34,27 @@ public class GeneralConfig {
 
     private static final String LEFT="left";
     private int left   = -1;
-    
+
     private static final String TOP="top";
     private int top    = 0;
 
     private static final String TEXT_MODE_OPTION = "TextViewOption";
     private boolean showTextModeOption = false;
-    
+
     private static final String WIDTH="width";
     public static final int DEFAULT_WIDTH=1024;
     private int width  = DEFAULT_WIDTH;
-    
+
     private static final String HEIGHT="height";
     public static final int DEFAULT_HEIGHT=600;
     private int height = DEFAULT_HEIGHT;
-    
+
     private static final String MAXIMIZED="maximized";
     private boolean maximized=false;
-    
+
     private static final String THEME="theme";
     private String theme="felt";
-    
+
     private static final String AVATAR="avatar";
     private String avatar="legend";
 
@@ -66,121 +66,121 @@ public class GeneralConfig {
 
     private static final String ALWAYS_PASS="pass";
     private boolean alwaysPass = true;
-    
+
     private static final String SMART_TARGET="target";
     private boolean smartTarget = false;
-    
+
     private static final String POPUP_DELAY="popup";
     private int popupDelay = 300;
-    
+
     private static final String MESSAGE_DELAY = "message";
     private int messageDelay = 2000;
-    
+
     private static final String HIGH_QUALITY="hq";
     private boolean highQuality = false;
-    
+
     private static final String SOUND="sound";
     private boolean sound = true;
-    
+
     private static final String TOUCHSCREEN = "touchscreen";
     private boolean touchscreen = false;
-    
+
     private static final String MOUSEWHEEL_POPUP = "mousewheel";
     private boolean mouseWheelPopup = false;
-    
+
     private static final String FULLSCREEN = "fullScreen";
     private boolean fullScreen = false;
-    
+
     private static final String PREVIEW_CARD_ON_SELECT = "previewCardOnSelect";
     private boolean previewCardOnSelect = true;
-    
+
     private static final String SHOW_LOG_MESSAGES = "showLogMessages";
     private boolean showLogMessages = true;
-    
+
     private static final String MULLIGAN_SCREEN = "mulliganScreen";
     private boolean isMulliganScreenActive = true;
-    
+
     private static final String RECENT_DECK = "MostRecentDeckFilename";
     private String mostRecentDeckFilename = "";
-    
+
     private static final String CUSTOM_BACKGROUND = "customBackground";
     private boolean isCustomBackground = false;
-    
+
     private static final String SHOW_MISSING_CARD_DATA = "showMissingCardData";
     private boolean showMissingCardData = true;
-    
+
     private static final String CARD_IMAGES_PATH = "cardImagesPath";
     private String cardImagesPath = "";
-    
+
     private static final String ANIMATE_GAMEPLAY = "animateGameplay";
     private boolean animateGameplay = true;
-    
+
     private static final String ANIMATION_FLAGS = "animationFlags";
-    
+
     private static final String DECK_FILE_MAX_LINES = "deckFileMaxLines";
     private int deckFileMaxLines = 500;
-    
+
     private static final String PROXY_SETTINGS = "proxySettings";
     private String proxySettings = "";
-    
+
     private static final String FIREMIND_ACCESS_TOKEN = "firemindAccessToken";
     private String firemindAccessToken = "";
-    
+
     private static final String NEWTURN_ALERT_DURATION = "newTurnAlertDuration";
     private int newTurnAlertDuration = 3000; // msecs
-    
+
     private static final String LAND_PREVIEW_DURATION = "landPreviewDuration";
     private int landPreviewDuration = 5000; // msecs
-    
+
     private static final String NONLAND_PREVIEW_DURATION = "nonLandPreviewDuration";
     private int nonLandPreviewDuration = 10000; // msecs
-    
+
     private static final String SPLITVIEW_DECKEDITOR = "splitViewDeckEditor";
     private boolean isSplitViewDeckEditor = false;
-    
+
     private static final String OVERLAY_PERMANENT_MIN_HEIGHT = "overlayPermanentMinHeight";
     private int overlayPermanentMinHeight = 30; // pixels
-    
+
     private static final String IGNORED_VERSION_ALERT = "ignoredVersionAlert";
     private String ignoredVersionAlert = "";
-    
+
     private static final String UI_SOUND = "uiSound";
     private boolean isUiSound = true;
-    
+
     private static final String PAUSE_GAME_POPUP = "pauseGamePopup";
     private boolean isGamePausedOnPopup = false;
-    
+
     private static final String MISSING_DOWNLOAD_DATE = "missingImagesDownloadDate";
     private String missingImagesDownloadDate = "1970-01-01";
-    
+
     private static final String PLAYABLE_DOWNLOAD_DATE = "imageDownloaderRunDate";
     private String playableImagesDownloadDate = "1970-01-01";
-    
+
     private static final String DUEL_SIDEBAR_LAYOUT ="duelSidebarLayout";
     private String duelSidebarLayout = "LOGSTACK,PLAYER2,TURNINFO,PLAYER1";
-    
+
     private static final String HIDE_AI_ACTION_PROMPT ="hideAiActionPrompt";
     private boolean hideAiActionPrompt = false;
-    
+
     private static final String ROLLOVER_COLOR ="rolloverColor";
     private Color rolloverColor = Color.YELLOW;
-    
+
     private static final String UI_SOUND_VOLUME = "uiSoundVolume";
     private int uiSoundVolume = 50;
-    
+
     private static final String TRANSLATION = "translation";
     public static final String DEFAULT_TRANSLATION = "";
     private String translation = DEFAULT_TRANSLATION;
-    
+
     private static final String LOG_MESSAGE_STYLE = "logMessageStyle";
     private MessageStyle logMessageStyle = MessageStyle.PLAIN;
-    
+
     private static final String PREF_IMAGE_SIZE = "prefImageSize";
     private ImageSizePresets preferredImageSize = ImageSizePresets.SIZE_ORIGINAL;
-    
+
     private static final String CARD_TEXT_LANG = "cardTextLanguage";
     private CardTextLanguage cardTextLanguage = CardTextLanguage.ENGLISH;
-    
+
     private GeneralConfig() { }
 
     public Proxy getProxy() {
@@ -206,7 +206,7 @@ public class GeneralConfig {
             proxySettings = sb.toString();
         } else {
             proxySettings = "";
-        }       
+        }
     }
 
     public int getDeckFileMaxLines() {
@@ -336,7 +336,7 @@ public class GeneralConfig {
     public void setHighlight(final String highlight) {
         this.highlight = highlight;
     }
-    
+
     public String getFiremindAccessToken() {
         return firemindAccessToken;
     }

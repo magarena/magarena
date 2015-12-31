@@ -91,7 +91,7 @@ public class MagicDuel {
     void advance(final boolean won, final MagicGame game) {
         gameNr++;
         gamesPlayed++;
-        
+
         if (won) {
             gamesWon++;
             startPlayer = opponentIndex;
@@ -167,7 +167,7 @@ public class MagicDuel {
                 break;
             case Firemind:
                 setDeckFromFile(player, DeckUtils.getFiremindDecksFolder());
-                break;            
+                break;
             default:
                 break;
             }

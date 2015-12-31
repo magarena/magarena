@@ -25,10 +25,10 @@ public class CounterItemOnStackAction extends MagicAction {
             game.doAction(new RemoveItemFromStackAction(itemOnStack));
             if (itemOnStack.isSpell()) {
                 final MagicCardOnStack cardOnStack = (MagicCardOnStack)itemOnStack;
-                final MagicLocationType destination = (toLocation == MagicLocationType.Stack) ? 
+                final MagicLocationType destination = (toLocation == MagicLocationType.Stack) ?
                     cardOnStack.getMoveLocation() :
                     toLocation;
-                
+
                 game.doAction(new MoveCardAction(
                     cardOnStack.getCard(),
                     MagicLocationType.Stack,

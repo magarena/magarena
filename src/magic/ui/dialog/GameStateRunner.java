@@ -33,7 +33,7 @@ public class GameStateRunner
     private JList<String> testClasses = new JList<>();
 
     public GameStateRunner(final MagicFrame frame) {
-        
+
         super(ScreenController.getMainFrame(), UiString.get("Test Classes (double-click to select)"), new Dimension(500, 460));
 
         setLookAndFeel();
@@ -76,7 +76,7 @@ public class GameStateRunner
     }
 
     private JPanel getMainPanel() {
-        
+
         try {
             testClasses = new JList<>(getListOfTestClasses());
         } catch (IOException | URISyntaxException ex) {
@@ -95,7 +95,7 @@ public class GameStateRunner
 
         final JScrollPane listScroller = new JScrollPane(testClasses);
         listScroller.setPreferredSize(new Dimension(getWidth(), getHeight()));
-        
+
         final JPanel panel = new JPanel(new MigLayout("insets 0, gap 0"));
         panel.add(listScroller, "w 100%, h 100%");
         return panel;

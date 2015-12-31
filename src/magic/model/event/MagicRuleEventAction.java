@@ -618,7 +618,7 @@ public enum MagicRuleEventAction {
                         for (final MagicTarget it : ARG.targets(event, matcher, filter)) {
                             if (it.isPermanent()) {
                                 game.doAction(new AddTurnTriggerAction(
-                                    (MagicPermanent)it, 
+                                    (MagicPermanent)it,
                                     PreventDamageTrigger.PreventCombatDamageDealtTo
                                 ));
                             } else {
@@ -890,7 +890,7 @@ public enum MagicRuleEventAction {
                     for (final MagicPlayer it : players) {
                         game.doAction(new ChangeLifeAction(it, -amount1));
                     }
-                    //continue to the second part if 
+                    //continue to the second part if
                     //  there is no target OR
                     //  there is a target and it is legal
                     if (matcher.group("choice") == null || players.isEmpty() == false) {
@@ -1186,7 +1186,7 @@ public enum MagicRuleEventAction {
         }
         @Override
         public String getName(final Matcher matcher) {
-            return "+Counters"; 
+            return "+Counters";
         }
     },
     CounterFromSelfClockwork(
@@ -1790,7 +1790,7 @@ public enum MagicRuleEventAction {
         }
         @Override
         public MagicCondition[] getConditions(final Matcher matcher) {
-            return matcher.group("sn") != null ? 
+            return matcher.group("sn") != null ?
                 new MagicCondition[] { new MagicArtificialCondition(MagicCondition.TAPPED_CONDITION) } :
                 MagicActivation.NO_COND;
         }
@@ -2036,7 +2036,7 @@ public enum MagicRuleEventAction {
         }
         @Override
         public MagicCondition[] getConditions(final Matcher matcher) {
-            return matcher.group("sn") != null ? 
+            return matcher.group("sn") != null ?
                 new MagicCondition[] { MagicCondition.CAN_REGENERATE_CONDITION } :
                 MagicActivation.NO_COND;
         }
@@ -2304,7 +2304,7 @@ public enum MagicRuleEventAction {
         }
         @Override
         public MagicCondition[] getConditions(final Matcher matcher) {
-            return matcher.group("sn") != null ? 
+            return matcher.group("sn") != null ?
                 new MagicCondition[]{ MagicCondition.NOT_EXCLUDE_COMBAT_CONDITION } :
                 MagicActivation.NO_COND;
         }
@@ -2821,7 +2821,7 @@ public enum MagicRuleEventAction {
 
     public MagicChoice getChoice(final Matcher matcher) {
         try {
-            return matcher.group("choice") != null ? 
+            return matcher.group("choice") != null ?
                 new MagicTargetChoice(getHint(matcher), matcher.group("choice")) :
                 MagicChoice.NONE;
         } catch (IllegalArgumentException e) {
@@ -2959,7 +2959,7 @@ public enum MagicRuleEventAction {
     static final Pattern INTERVENING_IF = Pattern.compile("if " + ARG.COND + ", " + ARG.ANY, Pattern.CASE_INSENSITIVE);
     static final Pattern MAY_PAY = Pattern.compile("you may pay " + ARG.MANACOST + "\\. if you do, .+", Pattern.CASE_INSENSITIVE);
     static final Pattern MAY_COST = Pattern.compile("you may " + ARG.COST + "\\. if you don't, .+", Pattern.CASE_INSENSITIVE);
-    
+
     public static MagicSourceEvent create(final String text) {
         return build(renameThisThat(text));
     }
@@ -2979,12 +2979,12 @@ public enum MagicRuleEventAction {
         final boolean mayPayMatched = mayPayMatcher.matches();
         final MagicManaCost manaCost = mayPayMatched ? MagicManaCost.create(ARG.manacost(mayPayMatcher)) : MagicManaCost.ZERO;
         String prefix = mayPayMatched ? "^(Y|y)ou may pay [^\\.]+\\. If you do, " : "^(Y|y)ou may ";
-        
+
         // handle you <cost>. if you don't, <effect>
         final Matcher mayCostMatcher = MAY_COST.matcher(ruleWithoutIf);
         final boolean mayCostMatched = mayCostMatcher.matches();
         final MagicMatchedCostEvent mayCost = mayCostMatched ?
-            new MagicRegularCostEvent(ARG.cost(mayCostMatcher)) : 
+            new MagicRegularCostEvent(ARG.cost(mayCostMatcher)) :
             MagicRegularCostEvent.NONE;
         prefix = mayCostMatched ? "^(Y|y)ou may [^\\.]+\\. If you don't, " : prefix;
 

@@ -138,11 +138,11 @@ public abstract class PlayerProfile {
     public int hashCode() {
         return this.getId().hashCode();
     }
-    
+
     public String getPlayerTypeLabel() {
         return "";
     }
-    
+
     public String getPlayerAttributeLabel() {
         return "";
     }

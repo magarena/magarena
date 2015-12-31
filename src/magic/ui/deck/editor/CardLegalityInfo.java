@@ -27,7 +27,7 @@ public class CardLegalityInfo {
     public MagicCardDefinition getCard() {
         return card;
     }
-    
+
     public CardLegality getLegality() {
         return legality;
     }

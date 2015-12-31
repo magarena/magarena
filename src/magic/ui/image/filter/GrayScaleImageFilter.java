@@ -15,5 +15,5 @@ public class GrayScaleImageFilter extends MagicRGBImageFilter {
         );
         return (argb & ALPHA_MASK) | (gray << 16) | (gray << 8) | gray;
     }
-    
+
 }

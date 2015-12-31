@@ -23,7 +23,7 @@ public class MagicOrChoice extends MagicChoice {
     public MagicOrChoice(final MagicChoice... choices) {
         this("Choose the mode.", choices);
     }
-    
+
     @Override
     public MagicTargetChoice getTargetChoice(final Object[] chosen) {
         final int idx = (Integer)chosen[0] - 1;
@@ -66,7 +66,7 @@ public class MagicOrChoice extends MagicChoice {
                 }
             }
         }
-       
+
         if (choiceResultsList.isEmpty()) {
             choiceResultsList.add(new Object[]{0});
         }
@@ -78,7 +78,7 @@ public class MagicOrChoice extends MagicChoice {
     public Object[] getPlayerChoiceResults(final IUIGameController controller, final MagicGame game, final MagicEvent event) throws UndoClickedException {
         final MagicPlayer player = event.getPlayer();
         final MagicSource source = event.getSource();
-        
+
         final boolean hints = GeneralConfig.getInstance().getSmartTarget();
         final List<Integer> availableModes = new ArrayList<>();
         for (int i = 0; i < choices.length; i++) {

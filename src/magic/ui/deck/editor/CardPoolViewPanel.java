@@ -31,7 +31,7 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
     // translatable strings
     private static final String _S1 = "Random Deck";
     private static final String _S2 = "Generate a random deck using current set of cards in card pool.";
-    
+
     // fired when card selection changes
     public static final String CP_CARD_SELECTED = FilteredCardPoolPanel.CP_CARD_SELECTED;
 
@@ -124,7 +124,7 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
     }
 
     private void addSelectedCardToDeck() {
-        
+
         final MagicCardDefinition card = getSelectedCard();
 
         if (card == null || card == MagicCardDefinition.UNKNOWN) {
@@ -208,7 +208,7 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
 
     private boolean generateRandomDeck() {
         final RandomDeckGeneratorDialog dialog = new RandomDeckGeneratorDialog(
-                ScreenController.getMainFrame(), 
+                ScreenController.getMainFrame(),
                 getCardPoolSize(),
                 getDefaultDeckSize()
         );

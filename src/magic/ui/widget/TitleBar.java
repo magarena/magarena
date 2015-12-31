@@ -24,7 +24,7 @@ public class TitleBar extends JPanel {
         add(label, "pushx");
 
         setBackground(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND));
-        
+
     }
 
     public void setText(final String text) {

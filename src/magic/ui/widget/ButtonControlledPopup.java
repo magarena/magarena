@@ -53,7 +53,7 @@ public class ButtonControlledPopup extends TexturedPanel implements ActionListen
     private void setEscapeKeyAction() {
         JRootPane root = dialog.getRootPane();
         root.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("ESCAPE"), "closeDialog");
-        
+
         @SuppressWarnings("serial")
         final AbstractAction closeAction = new AbstractAction() {
             @Override

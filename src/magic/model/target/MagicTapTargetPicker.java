@@ -5,7 +5,7 @@ import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 
 public abstract class MagicTapTargetPicker extends MagicTargetPicker<MagicPermanent> {
-                
+
     private static final int score(final MagicPermanent permanent) {
         return 1 + permanent.getPower() + permanent.getActivations().size();
     }
@@ -20,7 +20,7 @@ public abstract class MagicTapTargetPicker extends MagicTargetPicker<MagicPerman
             }
         }
     };
-    
+
     public static MagicTapTargetPicker Untap = new MagicTapTargetPicker() {
         @Override
         protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicPermanent permanent) {

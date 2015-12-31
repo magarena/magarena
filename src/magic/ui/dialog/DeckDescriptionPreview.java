@@ -15,7 +15,7 @@ import magic.utility.FileIO;
 
 @SuppressWarnings("serial")
 public class DeckDescriptionPreview extends JComponent implements PropertyChangeListener {
-    
+
     File file = null;
     String description;
     private final JTextArea textArea = new JTextArea();
@@ -51,7 +51,7 @@ public class DeckDescriptionPreview extends JComponent implements PropertyChange
                 }
             }
         }
-                
+
         showDescription();
     }
 
@@ -59,7 +59,7 @@ public class DeckDescriptionPreview extends JComponent implements PropertyChange
         textArea.setText(description);
         textArea.setCaretPosition(0);
     }
-    
+
     @Override
     public void propertyChange(PropertyChangeEvent e) {
         String prop = e.getPropertyName();

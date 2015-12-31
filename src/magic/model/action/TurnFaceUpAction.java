@@ -23,14 +23,14 @@ public class TurnFaceUpAction extends MagicAction {
     public void doAction(final MagicGame game) {
         if (permanent.isFaceDown() && permanent.getRealCardDefinition().isPermanent()) {
             oldStatics = permanent.getStatics();
-            
+
             game.doAction(ChangeStateAction.Clear(permanent, MagicPermanentState.FaceDown));
             game.doAction(ChangeStateAction.Clear(permanent, MagicPermanentState.Manifest));
 
             newStatics = permanent.getStatics();
             game.removeStatics(permanent, oldStatics);
             game.addStatics(permanent, newStatics);
-            
+
             // force an update so that triggers are registered
             game.update();
 

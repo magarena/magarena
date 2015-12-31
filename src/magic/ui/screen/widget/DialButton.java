@@ -25,7 +25,7 @@ public class DialButton extends ActionBarButton {
 
         increment = 360 / count;
         position = increment * start;
-        
+
         rotateIconImage();
 
         addMouseListener(new MouseAdapter() {

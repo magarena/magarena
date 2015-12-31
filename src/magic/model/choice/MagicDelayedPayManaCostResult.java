@@ -43,7 +43,7 @@ public class MagicDelayedPayManaCostResult implements MagicPayManaCostResult {
     public void doAction(final MagicGame game,final MagicPlayer player) {
         game.doAction(new PayDelayedCostAction(player,this));
     }
-    
+
     @Override
     public MagicDelayedPayManaCostResult copy(final MagicCopyMap copyMap) {
         return this;
@@ -53,7 +53,7 @@ public class MagicDelayedPayManaCostResult implements MagicPayManaCostResult {
     public MagicDelayedPayManaCostResult map(final MagicGame game) {
         return this;
     }
-    
+
     @Override
     public long getId() {
         return hashCode();

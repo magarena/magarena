@@ -161,7 +161,7 @@ public class FiremindGameReport implements Thread.UncaughtExceptionHandler {
         ex.printStackTrace(printWriter);
         sb.append(result.toString());
         sb.append('\n');
-        
+
         FiremindClient.postFailure(currentDuelId, sb.toString());
 
         // print a copy to stderr

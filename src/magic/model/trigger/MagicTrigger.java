@@ -24,7 +24,7 @@ public abstract class MagicTrigger<T> implements MagicEventAction,MagicChangeCar
     protected MagicTrigger(final int aPriority) {
         priority = aPriority;
     }
-    
+
     protected MagicTrigger() {
         this(DEFAULT_PRIORITY);
     }
@@ -43,7 +43,7 @@ public abstract class MagicTrigger<T> implements MagicEventAction,MagicChangeCar
     }
 
     public abstract MagicTriggerType getType();
-            
+
     public abstract MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final T data);
 
     public boolean accept(final MagicPermanent permanent, final T data) {

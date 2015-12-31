@@ -20,11 +20,11 @@ import net.miginfocom.swing.MigLayout;
 public class DownloadDialogPanel extends JPanel implements PropertyChangeListener {
 
     private static final String _S1 = "Download card images";
-    
+
     private final DialogMainPanel mainPanel;
 
     public DownloadDialogPanel() {
-       
+
         setPreferredSize(new Dimension(440, 460));
         setBorder(
             BorderFactory.createCompoundBorder(

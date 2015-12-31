@@ -187,7 +187,7 @@ public class AvatarImagesScreen extends AbstractScreen implements IStatusBar, IA
     }
 
     private class AvatarImageSetsPanel extends TexturedPanel implements IThemeStyle {
-        
+
         public AvatarImageSetsPanel() {
 
             // List of avatar image sets.
@@ -285,10 +285,10 @@ public class AvatarImagesScreen extends AbstractScreen implements IStatusBar, IA
 
         @Override
         public Component getListCellRendererComponent(
-            JList<? extends AvatarImageSet> list, 
-            AvatarImageSet value, 
+            JList<? extends AvatarImageSet> list,
+            AvatarImageSet value,
             int index,
-            boolean isSelected, 
+            boolean isSelected,
             boolean cellHasFocus
         ) {
 

@@ -10,7 +10,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public enum MagicAmountParser {
-            
+
     YourLife("your life total") {
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.LifeTotal;
@@ -75,19 +75,19 @@ public enum MagicAmountParser {
             );
         }
     };
-    
+
     private final Pattern pattern;
-    
+
     private MagicAmountParser(final String regex) {
         pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
     }
-    
+
     public Matcher matcher(final String rule) {
         return pattern.matcher(rule);
     }
 
     public abstract MagicAmount toAmount(final Matcher arg);
-    
+
     public static final MagicAmount build(final String text) {
         if (text == null || text.isEmpty()) {
             return MagicAmountFactory.One;
@@ -101,4 +101,4 @@ public enum MagicAmountParser {
         }
         throw new RuntimeException("unknown amount \"" + text + "\"");
     }
-} 
+}

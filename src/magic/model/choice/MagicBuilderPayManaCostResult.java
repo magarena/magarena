@@ -48,7 +48,7 @@ public class MagicBuilderPayManaCostResult implements MagicPayManaCostResult, Co
         x          = source.x;
         hashCode   = source.hashCode;
     }
-   
+
     @Override
     public MagicBuilderPayManaCostResult copy(final MagicCopyMap copyMap) {
         return new MagicBuilderPayManaCostResult(copyMap, this);

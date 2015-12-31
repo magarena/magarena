@@ -11,15 +11,15 @@ public class MagicPTTargetFilter extends MagicPermanentFilterImpl {
     private final int power;
     private final Operator tOp;
     private final int toughness;
-    
+
     public MagicPTTargetFilter(final MagicPermanentFilterImpl aTargetFilter, final int power) {
         this(aTargetFilter, Operator.LESS_THAN_OR_EQUAL, power, Operator.ANY, 0);
     }
-    
+
     public MagicPTTargetFilter(final MagicPermanentFilterImpl aTargetFilter, final Operator powerOp, final int power) {
         this(aTargetFilter, powerOp, power, Operator.ANY, 0);
     }
-    
+
     public static MagicPTTargetFilter Toughness(final MagicPermanentFilterImpl aTargetFilter, final Operator toughnessOp, final int toughness) {
         return new MagicPTTargetFilter(aTargetFilter, Operator.ANY, 0, toughnessOp, toughness);
     }

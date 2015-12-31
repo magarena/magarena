@@ -41,7 +41,7 @@ class FilteredCardPoolPanel extends JPanel implements ICardFilterPanelListener {
 
         setLookAndFeel();
         refreshLayout();
-        
+
         setPropertyChangeListeners();
 
     }

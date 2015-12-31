@@ -38,7 +38,7 @@ public final class MagicImages {
     public static final BufferedImage MISSING_BIG = loadImage("missing.png");
     private static final BufferedImage MISSING_SMALL = loadImage("missing2.png");
     public static final BufferedImage MISSING_CARD = loadImage("missing_card.png");
-    
+
     // "M" logo variations.
     public static final BufferedImage LOGO = loadImage("logo.png");
     public static final BufferedImage MENU_LOGO = GraphicsUtils.scale(LOGO, 40, 40);

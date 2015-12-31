@@ -39,7 +39,7 @@ public enum MagicSound {
                 GeneralConfig.getInstance().save();
                 throw new RuntimeException(ex);
             }
-        }        
+        }
     }
 
     public void play() {

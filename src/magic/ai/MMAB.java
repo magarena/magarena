@@ -62,11 +62,11 @@ public class MMAB implements MagicAI {
         final int artificialLevel = scorePlayer.getAiProfile().getAiLevel();
         final int rounds = (size + THREADS - 1) / THREADS;
         final long slice = artificialLevel * SEC_TO_NANO / rounds;
-        
+
         for (final Object[] choice : choices) {
             final ArtificialChoiceResults achoice=new ArtificialChoiceResults(choice);
             achoices.add(achoice);
-                    
+
             final MagicGame workerGame=new MagicGame(sourceGame,scorePlayer);
             if (!CHEAT) {
                 workerGame.hideHiddenCards();
@@ -77,7 +77,7 @@ public class MMAB implements MagicAI {
             workerGame.setFastMana(true);
             workerGame.setFastTarget(true);
             workerGame.setFastBlocker(true);
-            
+
             executor.execute(new Runnable() {
                 @Override
                 public void run() {
@@ -148,7 +148,7 @@ class MMABWorker {
         this.scoreBoard=scoreBoard;
         this.CHEAT=CHEAT;
     }
-    
+
     /** Determines if game score should be cached for this game state. */
     public boolean shouldCache() {
         switch (game.getPhase().getType()) {

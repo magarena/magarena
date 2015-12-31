@@ -9,15 +9,15 @@ public class MagicGraveyardTargetPicker extends MagicTargetPicker<MagicCard> {
 
     private final boolean free;
     private int order;
-    
+
     public static MagicGraveyardTargetPicker ExileOwn = new MagicGraveyardTargetPicker(true, -1);
-    
+
     public static MagicGraveyardTargetPicker ExileOpp = new MagicGraveyardTargetPicker(true, 1);
-    
+
     public static MagicGraveyardTargetPicker ReturnToHand = new MagicGraveyardTargetPicker(false, 1);
-    
+
     public static MagicGraveyardTargetPicker PutOntoBattlefield = new MagicGraveyardTargetPicker(true, 1);
-    
+
     private MagicGraveyardTargetPicker(final boolean aFree, final int aOrder) {
         free = aFree;
         order = aOrder;
@@ -25,7 +25,7 @@ public class MagicGraveyardTargetPicker extends MagicTargetPicker<MagicCard> {
 
     @Override
     protected int getTargetScore(final MagicGame game,final MagicPlayer player,final MagicCard target) {
-        return order * 
+        return order *
             (free ? ArtificialScoringSystem.getFreeCardScore(target):
                     ArtificialScoringSystem.getCardScore(target));
     }

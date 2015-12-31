@@ -22,7 +22,7 @@ class ErrorPanel extends JPanel {
 
     private static final String _S4 = "Copy to clipboard";
     private static final String _S5 = "Error details have been copied to the clipboard.";
-    
+
     private final JTextArea textArea;
 
     ErrorPanel() {

@@ -19,15 +19,15 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
     public List<MagicCard> filter(final MagicSource source) {
         return filter(source, source.getController(), MagicTargetHint.None);
     }
-    
+
     public List<MagicCard> filter(final MagicPlayer player) {
         return filter(MagicSource.NONE, player, MagicTargetHint.None);
     }
-    
+
     public List<MagicCard> filter(final MagicEvent event) {
         return filter(event.getSource(), event.getPlayer(), MagicTargetHint.None);
     }
-    
+
     public List<MagicCard> filter(final MagicSource source, final MagicPlayer player, final MagicTargetHint targetHint) {
         final List<MagicCard> targets = new ArrayList<MagicCard>();
 
@@ -45,7 +45,7 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
         if (acceptType(MagicTargetType.Hand)) {
             add(source, player, player.getHand(), targets, false);
         }
-        
+
         // Cards in library
         if (acceptType(MagicTargetType.Library)) {
             // only consider unique cards, possible as cards in library will not be counted
@@ -67,7 +67,7 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
             card.setGameKnown(old);
         }
     }
-        
+
     public MagicCardFilterImpl or(final MagicType type) {
         final MagicCardFilterImpl curr = this;
         return new MagicCardFilterImpl() {
@@ -200,7 +200,7 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
             }
         };
     }
-    
+
     public MagicCardFilterImpl except(final MagicCard invalid) {
         return new MagicOtherCardTargetFilter(this, invalid);
     }

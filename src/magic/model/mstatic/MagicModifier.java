@@ -29,8 +29,8 @@ public interface MagicModifier {
     void modPlayer(final MagicPermanent source, final MagicPlayer player);
 
     void modGame(final MagicPermanent source, final MagicGame game);
-    
+
     MagicManaCost reduceCost(final MagicPermanent source, final MagicCard card, final MagicManaCost cost);
-    
+
     MagicManaCost increaseCost(final MagicPermanent source, final MagicCard card, final MagicManaCost cost);
 }

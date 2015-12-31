@@ -24,16 +24,16 @@ public class CleanupPlayerAction extends MagicAction {
 
         oldDrawnCards=player.getDrawnCards();
         player.setDrawnCards(0);
-        
+
         oldLifeLost=player.getLifeLossThisTurn();
         player.setLifeLossThisTurn(0);
-        
+
         oldLifeGained=player.getLifeGainThisTurn();
         player.setLifeGainThisTurn(0);
-        
+
         oldCreaturesAttacked=player.getCreaturesAttackedThisTurn();
         player.setCreaturesAttackedThisTurn(0);
-        
+
 
         for (final MagicPermanent permanent : player.getPermanents()) {
             game.doAction(new CleanupPermanentAction(permanent));

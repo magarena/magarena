@@ -77,7 +77,7 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
             add(sideBarPanel, "h 100%, w " + imageSize.width + "!");
             add(rhs, "w 100%, h 100%");
         }
-        
+
         // set initial card image
         if (cardPoolDefs.isEmpty()) {
             sideBarPanel.setCard(MagicCardDefinition.UNKNOWN);
@@ -97,7 +97,7 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
         cardPoolTable.addMouseListener(new CardPoolMouseListener());
         cardPoolTable.addCardSelectionListener(this);
         return cardPoolTable;
-        
+
     }
 
     private String generatePoolTitle() {

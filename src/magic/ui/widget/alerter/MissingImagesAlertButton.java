@@ -40,7 +40,7 @@ public class MissingImagesAlertButton extends AlertButton {
 
     @Override
     protected String getAlertCaption() {
-        
+
         assert !SwingUtilities.isEventDispatchThread();
 
         if (!hasChecked || isVisible()) {

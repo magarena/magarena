@@ -23,11 +23,11 @@ import java.util.List;
 import java.util.Collections;
 
 public class MagicHandCastActivation extends MagicActivation<MagicCard> implements MagicChangeCardDefinition, MagicCardEvent {
-    
+
     public static final MagicCondition[] CARD_CONDITION = new MagicCondition[]{
-        MagicCondition.CARD_CONDITION,  
+        MagicCondition.CARD_CONDITION,
     };
-    
+
     final boolean usesStack;
 
     public MagicHandCastActivation(final MagicCardDefinition cdef) {
@@ -67,8 +67,8 @@ public class MagicHandCastActivation extends MagicActivation<MagicCard> implemen
         );
     }
 
-    private final MagicEventAction EVENT_ACTION = genPlayEventAction(MagicLocationType.OwnersHand);   
-        
+    private final MagicEventAction EVENT_ACTION = genPlayEventAction(MagicLocationType.OwnersHand);
+
     protected MagicEventAction genPlayEventAction(final MagicLocationType fromLocation) {
         return new MagicEventAction() {
             @Override
@@ -77,9 +77,9 @@ public class MagicHandCastActivation extends MagicActivation<MagicCard> implemen
                 if (card.getCardDefinition().isLand()) {
                     game.incLandsPlayed();
                 }
-                
-                game.doAction(new RemoveCardAction(card, fromLocation)); 
-                
+
+                game.doAction(new RemoveCardAction(card, fromLocation));
+
                 if (usesStack) {
                     final MagicCardOnStack cardOnStack=new MagicCardOnStack(
                         card,
@@ -115,7 +115,7 @@ public class MagicHandCastActivation extends MagicActivation<MagicCard> implemen
     public void change(final MagicCardDefinition cdef) {
         cdef.addHandAct(this);
     }
-    
+
     public static final MagicHandCastActivation create(final MagicCardDefinition cardDef, final String costs, final String name) {
         final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(costs);
         assert matchedCostEvents.size() > 0;
@@ -138,9 +138,9 @@ public class MagicHandCastActivation extends MagicActivation<MagicCard> implemen
             public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
                 return Collections.<MagicEvent>singletonList(
                     new MagicPayManaCostEvent(
-                        source, 
+                        source,
                         source.getCost().reduce(
-                            MagicCostManaType.Generic, 
+                            MagicCostManaType.Generic,
                             source.getController().getNrOfPermanents(filter)
                         )
                     )
@@ -152,7 +152,7 @@ public class MagicHandCastActivation extends MagicActivation<MagicCard> implemen
             }
         };
     }
-    
+
     public static final MagicHandCastActivation awaken(final MagicCardDefinition cardDef, final int n, final String costs) {
         final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(costs);
         assert matchedCostEvents.size() > 0;

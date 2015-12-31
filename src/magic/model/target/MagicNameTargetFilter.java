@@ -8,7 +8,7 @@ public class MagicNameTargetFilter extends MagicPermanentFilterImpl {
 
     private final String name;
     private final MagicTargetFilter<MagicPermanent> targetFilter;
-    
+
     public MagicNameTargetFilter(final String aName) {
         this(MagicTargetFilterFactory.ANY, aName);
     }

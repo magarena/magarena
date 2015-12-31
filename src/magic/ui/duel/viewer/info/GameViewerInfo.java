@@ -30,7 +30,7 @@ public class GameViewerInfo {
     private final int maxGames;
     private final MagicPhaseType phaseType;
     private final int undoPoints;
-        
+
     public GameViewerInfo(final MagicGame game) {
 
         final MagicPlayer player = game.getVisiblePlayer();
@@ -61,7 +61,7 @@ public class GameViewerInfo {
     private void setStackViewerInfo(final MagicGame game) {
         for (final MagicItemOnStack itemOnStack : game.getStack()) {
             stack.add(new StackViewerInfo(game,itemOnStack));
-        }        
+        }
     }
 
     /**
@@ -102,7 +102,7 @@ public class GameViewerInfo {
     public List<StackViewerInfo> getStack() {
         return stack;
     }
-    
+
     public List<MagicMessage> getLog() {
         return log;
     }
@@ -172,15 +172,15 @@ public class GameViewerInfo {
         }
         throw new RuntimeException("Invalid MagicPlayerZone : " + aZone);
     }
-    
+
     private MagicCard searchForCardInZone(long magicCardId, MagicPlayerZone zone, PlayerViewerInfo[] players) {
         for (final PlayerViewerInfo player : players) {
-            final MagicCardList cards = getMagicCardList(zone, player);            
+            final MagicCardList cards = getMagicCardList(zone, player);
             for (final MagicCard card : cards) {
                 if (card.getId() == magicCardId) {
                     return card;
                 }
-            }            
+            }
         }
         return MagicCard.NONE;
     }

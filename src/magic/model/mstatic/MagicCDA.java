@@ -50,7 +50,7 @@ public abstract class MagicCDA implements MagicChangeCardDefinition {
             }
         };
     }
-    
+
     public static MagicCDA setPower(final int base, final MagicAmount count) {
         return new MagicCDA() {
             @Override
@@ -60,7 +60,7 @@ public abstract class MagicCDA implements MagicChangeCardDefinition {
             }
         };
     }
-    
+
     public static MagicCDA setToughness(final int base, final MagicAmount count) {
         return new MagicCDA() {
             @Override

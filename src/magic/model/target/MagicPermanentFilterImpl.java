@@ -13,7 +13,7 @@ public abstract class MagicPermanentFilterImpl implements MagicTargetFilter<Magi
     public List<MagicPermanent> filter(final MagicSource source) {
         return filter(source, source.getController(), MagicTargetHint.None);
     }
-    
+
     public List<MagicPermanent> filter(final MagicPlayer player) {
         return filter(MagicSource.NONE, player, MagicTargetHint.None);
     }
@@ -21,7 +21,7 @@ public abstract class MagicPermanentFilterImpl implements MagicTargetFilter<Magi
     public List<MagicPermanent> filter(final MagicEvent event) {
         return filter(event.getSource(), event.getPlayer(), MagicTargetHint.None);
     }
-    
+
     public List<MagicPermanent> filter(final MagicSource source, final MagicPlayer player, final MagicTargetHint targetHint) {
         final MagicGame game = player.getGame();
         final List<MagicPermanent> targets=new ArrayList<MagicPermanent>();
@@ -37,7 +37,7 @@ public abstract class MagicPermanentFilterImpl implements MagicTargetFilter<Magi
         }
         return targets;
     }
-    
+
     public boolean acceptType(final MagicTargetType targetType) {
         return targetType==MagicTargetType.Permanent;
     }

@@ -26,7 +26,7 @@ import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class FiremindWorkerDialog extends JDialog implements ActionListener, PropertyChangeListener {
-    
+
     // translatable strings
     private static final String _S1 = "Run Firemind Worker";
     private static final String _S3 = "Run in background...";

@@ -15,7 +15,7 @@ public class ScryComplAction extends MagicAction {
     public ScryComplAction(final MagicPlayer aPlayer, final MagicCard aCard, final boolean aDown) {
         player = aPlayer;
         card = aCard;
-        down = aDown; 
+        down = aDown;
     }
 
     @Override

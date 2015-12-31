@@ -35,7 +35,7 @@ public class MagicScavengeActivation extends MagicCardAbilityActivation {
         cost = aCost;
         power = aCdef.getCardPower();
     }
-            
+
     @Override
     public void change(final MagicCardDefinition cdef) {
         cdef.addGraveyardAct(this);
@@ -60,7 +60,7 @@ public class MagicScavengeActivation extends MagicCardAbilityActivation {
             "Put RN +1/+1 counters on target creature$."
         );
     }
-    
+
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         event.processTargetPermanent(game, new MagicPermanentAction() {

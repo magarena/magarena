@@ -21,7 +21,7 @@ public class PlayerStatsPanel extends JPanel {
     private static final String _S9 = "Most used color:";
 
     private static final IPlayerStatsViewerInfo NO_STATS = new NullPlayerStatsViewerInfo();
-    
+
     public PlayerStatsPanel(PlayerStatistics stats) {
 
         final MigLayout miglayout = new MigLayout("wrap 2, insets 2");
@@ -29,7 +29,7 @@ public class PlayerStatsPanel extends JPanel {
         setLayout(miglayout);
 
         setOpaque(false);
-        
+
         refreshStats(getPlayerStatsViewerInfo(stats));
     }
 
@@ -39,7 +39,7 @@ public class PlayerStatsPanel extends JPanel {
 
         add(getStatsLabel(UiString.get(_S1)));
         add(getStatsLabel(stats.getLastPlayedDate()));
-        
+
         add(getStatsLabel(UiString.get(_S2)));
         add(getStatsLabel(stats.getDuelsPlayed()));
 

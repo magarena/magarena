@@ -12,11 +12,11 @@ import java.util.LinkedList;
 import magic.model.MagicMessage;
 
 public class MagicMorphActivation extends MagicPermanentActivation {
-    
+
     private static final MagicActivationHints HINT = new MagicActivationHints(MagicTiming.Pump);
     private static final MagicCondition COND[] = new MagicCondition[]{ MagicCondition.FACE_DOWN_PERMANENT_CONDITION };
     private final List<MagicMatchedCostEvent> matchedCostEvents;
-    
+
     public MagicMorphActivation(final List<MagicMatchedCostEvent> aMatchedCostEvents) {
         this(aMatchedCostEvents, "Morph");
     }
@@ -25,7 +25,7 @@ public class MagicMorphActivation extends MagicPermanentActivation {
         super(COND, HINT, name);
         matchedCostEvents = aMatchedCostEvents;
     }
-    
+
     @Override
     public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
         final List<MagicEvent> costEvents = new LinkedList<MagicEvent>();
@@ -34,7 +34,7 @@ public class MagicMorphActivation extends MagicPermanentActivation {
         }
         return costEvents;
     }
-    
+
     @Override
     public final MagicEvent getEvent(final MagicSource source) {
         return new MagicEvent(
@@ -55,17 +55,17 @@ public class MagicMorphActivation extends MagicPermanentActivation {
             )
         );
     }
-    
+
     @Override
     public boolean usesStack() {
         return false;
     }
-    
+
     @Override
     public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
         return MagicEvent.NONE;
     }
-    
+
     @Override
     public void change(final MagicCardDefinition cdef) {
         cdef.addMorphAct(this);

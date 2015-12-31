@@ -24,8 +24,8 @@ public class MagicBestowActivation extends MagicHandCastActivation {
 
     final MagicManaCost cost;
     final public static MagicPlayAuraEvent BestowEvent = new MagicPlayAuraEvent(
-        MagicTargetChoice.POS_TARGET_CREATURE, 
-        MagicTargetChoice.POS_CREATURE, 
+        MagicTargetChoice.POS_TARGET_CREATURE,
+        MagicTargetChoice.POS_CREATURE,
         MagicPumpTargetPicker.create()
     ) {
         @Override
@@ -53,12 +53,12 @@ public class MagicBestowActivation extends MagicHandCastActivation {
         );
         cost = aCost;
     }
-    
+
     @Override
     public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
         return Arrays.asList(new MagicPayManaCostEvent(source, cost));
     }
-    
+
     @Override
     public MagicEvent getEvent(final MagicSource source) {
         return new MagicEvent(
@@ -67,13 +67,13 @@ public class MagicBestowActivation extends MagicHandCastActivation {
             "Play SN."
         );
     }
-    
+
     private final MagicEventAction EVENT_ACTION = new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCard card = event.getCard();
             game.doAction(new RemoveCardAction(card,MagicLocationType.OwnersHand));
-                
+
             final MagicCardOnStack cardOnStack=new MagicCardOnStack(
                 card,
                 BestowEvent,

@@ -5,10 +5,10 @@ import javax.swing.JPopupMenu;
 
 @SuppressWarnings("serial")
 public class MenuedTitleBar extends TitleBar {
-    
+
     private final MenuIconLabel iconLabel = new MenuIconLabel();
 
-    public MenuedTitleBar(String text, final JPopupMenu aMenu) {        
+    public MenuedTitleBar(String text, final JPopupMenu aMenu) {
         super(text);
         setPreferredSize(new Dimension(getPreferredSize().width, 26));
         setPreferredSize(getPreferredSize());

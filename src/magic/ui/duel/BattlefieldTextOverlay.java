@@ -10,7 +10,7 @@ import magic.ui.utility.GraphicsUtils;
 
 
 public class BattlefieldTextOverlay {
-    
+
     private static final Font ZONE_FONT = new Font("Dialog", Font.BOLD, 12);
 
     private BufferedImage textOverlayImage = null;

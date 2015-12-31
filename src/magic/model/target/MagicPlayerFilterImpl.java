@@ -12,15 +12,15 @@ public abstract class MagicPlayerFilterImpl implements MagicTargetFilter<MagicPl
     public List<MagicPlayer> filter(final MagicSource source) {
         return filter(source, source.getController(), MagicTargetHint.None);
     }
-    
+
     public List<MagicPlayer> filter(final MagicPlayer player) {
         return filter(MagicSource.NONE, player, MagicTargetHint.None);
     }
-    
+
     public List<MagicPlayer> filter(final MagicEvent event) {
         return filter(event.getSource(), event.getPlayer(), MagicTargetHint.None);
     }
-    
+
     public List<MagicPlayer> filter(final MagicSource source, final MagicPlayer player, final MagicTargetHint targetHint) {
         final MagicGame game = player.getGame();
         final List<MagicPlayer> targets=new ArrayList<MagicPlayer>();

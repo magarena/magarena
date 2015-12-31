@@ -30,6 +30,6 @@ public class ManifestAction extends MagicAction {
 
     @Override
     public void undoAction(final MagicGame game) {
-    
+
     }
 }

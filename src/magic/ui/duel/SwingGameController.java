@@ -114,7 +114,7 @@ public class SwingGameController implements IUIGameController {
     private PlayerZoneViewer playerZoneViewer;
     private final List<IPlayerZoneListener> playerZoneListeners = new ArrayList<>();
     private MagicAnimation animation = null;
-    
+
     private static boolean isControlKeyDown = false;
     private static final KeyEventDispatcher keyEventDispatcher = new KeyEventDispatcher() {
         @Override
@@ -127,7 +127,7 @@ public class SwingGameController implements IUIGameController {
     public SwingGameController(final DuelLayeredPane aDuelPane, final MagicGame aGame) {
         this.duelPane = aDuelPane;
         this.game = aGame;
-        gameViewerInfo = new GameViewerInfo(game);        
+        gameViewerInfo = new GameViewerInfo(game);
         gamePanel = duelPane.getDuelPanel();
         duelPane.getDuelPanel().setController(this);
         duelPane.getCardViewer().setController(this);
@@ -222,7 +222,7 @@ public class SwingGameController implements IUIGameController {
             throw new UndoClickedException();
         }
     }
-    
+
     private <E extends JComponent> E waitForInput(final Callable<E> func) throws UndoClickedException {
         final AtomicReference<E> ref = new AtomicReference<>();
         final AtomicReference<Exception> except = new AtomicReference<>();
@@ -249,7 +249,7 @@ public class SwingGameController implements IUIGameController {
     private void resume(final boolean undoClicked) {
         input.offer(undoClicked);
     }
-    
+
     public void switchKeyPressed() {
         playerZoneViewer.switchPlayerZone();
     }
@@ -356,7 +356,7 @@ public class SwingGameController implements IUIGameController {
         final int x = containerZone.x + (int)((containerZone.getWidth() / 2) - (cardPopup.getWidth() / 2));
         final int y = containerZone.y + (int)((containerZone.getHeight() / 2) - (cardPopup.getHeight() / 2));
         cardPopup.setLocation(x,y);
-        
+
         cardPopup.showDelayed(popupDelay);
     }
 
@@ -385,7 +385,7 @@ public class SwingGameController implements IUIGameController {
         if (isControlKeyDown && cardPopup.isVisible()) {
             return;
         }
-        
+
         final boolean isAutoPopup = !CONFIG.isMouseWheelPopup();
         final int VERTICAL_INSET = 4; // pixels
         final int PAD2 = 0;
@@ -568,7 +568,7 @@ public class SwingGameController implements IUIGameController {
         });
         showMessage(MagicSource.NONE, "");
     }
-    
+
     private void clearDisplayedValidChoices() {
         assert SwingUtilities.isEventDispatchThread();
         if (!validChoices.isEmpty()) {
@@ -648,11 +648,11 @@ public class SwingGameController implements IUIGameController {
         gameViewerInfo = new GameViewerInfo(game);
 
         doPlayAnimationAndWait(oldGameInfo, gameViewerInfo);
-       
+
         SwingUtilities.invokeLater(() -> {
             gamePanel.update(gameViewerInfo);
         });
-        
+
         waitForUIUpdates();
     }
 
@@ -837,7 +837,7 @@ public class SwingGameController implements IUIGameController {
             });
         }
         showMessage(MagicSource.NONE,
-                String.format("{L} %s", 
+                String.format("{L} %s",
                         UiString.get(_S3,
                                 game.getLosingPlayer(),
                                 gameConceded.get() ? UiString.get(_S1) : UiString.get(_S2))));
@@ -902,7 +902,7 @@ public class SwingGameController implements IUIGameController {
         final boolean isHumanTurn = game.getTurnPlayer().isHuman();
         final boolean isHumanPriority = game.getPriorityPlayer().isHuman();
         final boolean isStackEmpty = game.getStack().isEmpty();
-        final boolean isFirstMain = game.isPhase(MagicPhaseType.FirstMain); 
+        final boolean isFirstMain = game.isPhase(MagicPhaseType.FirstMain);
         return isHumanTurn && isHumanPriority && isFirstMain && isStackEmpty;
     }
 

@@ -38,10 +38,10 @@ public class CardTablePanel extends TexturedPanel {
     public static final String CP_CARD_LCLICKED = "cardLeftClicked";
     public static final String CP_CARD_RCLICKED = "cardRightClicked";
     public static final String CP_CARD_DCLICKED = "cardDoubleClicked";
-    
+
     // renderer that centers the contents of a column.
     static final DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
-    static { centerRenderer.setHorizontalAlignment(SwingConstants.CENTER); }    
+    static { centerRenderer.setHorizontalAlignment(SwingConstants.CENTER); }
 
     private static final Color GRID_COLOR = new Color(194, 197, 203);
     private static final int ROW_HEIGHT = 20; //pixels
@@ -90,7 +90,7 @@ public class CardTablePanel extends TexturedPanel {
         table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF); // otherwise horizontal scrollbar won't work
         table.setRowHeight(ROW_HEIGHT);
         table.setGridColor(GRID_COLOR);
-        
+
         final TableColumnModel model = table.getColumnModel();
         setColumnWidths(model);
 
@@ -125,10 +125,10 @@ public class CardTablePanel extends TexturedPanel {
         if (!GeneralConfig.getInstance().isPreviewCardOnSelect()) {
             table.addMouseMotionListener(new RowMouseOverListener());
         }
-        
+
         setLayout(migLayout);
         refreshLayout();
-        
+
     }
 
     private ListSelectionListener getTableListSelectionListener() {
@@ -350,11 +350,11 @@ public class CardTablePanel extends TexturedPanel {
             table.getSelectionModel().addSelectionInterval(0, 0);
         }
     }
-    
+
     public TitleBar getTitleBar() {
         return titleBar;
     }
-    
+
     public void showCardCount(final boolean b) {
         tableModel.showCardCount(b);
     }

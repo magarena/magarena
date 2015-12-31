@@ -113,5 +113,5 @@ public class MagicBasicLandChoice extends MagicChoice {
         controller.disableActionButton(false);
         return new Object[]{controller.getLandSubTypeChoice(source)};
     }
-    
+
 }

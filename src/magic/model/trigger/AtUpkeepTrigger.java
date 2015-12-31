@@ -28,7 +28,7 @@ public abstract class AtUpkeepTrigger extends MagicTrigger<MagicPlayer> {
             }
         };
     }
-    
+
     public static AtUpkeepTrigger createOpp(final MagicSourceEvent sourceEvent) {
         return new AtUpkeepTrigger() {
             @Override

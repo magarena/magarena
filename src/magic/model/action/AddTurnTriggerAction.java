@@ -15,7 +15,7 @@ public class AddTurnTriggerAction extends MagicAction {
         this.permanent=permanent;
         this.trigger=trigger;
     }
-    
+
     public AddTurnTriggerAction(final MagicTrigger<?> trigger) {
         this(MagicPermanent.NONE, trigger);
     }

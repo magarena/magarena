@@ -18,7 +18,7 @@ public class MagicCardList extends ArrayList<MagicCard> implements MagicCopyable
             add(copyMap.copy(card));
         }
     }
-    
+
     @Override
     public MagicCardList copy(final MagicCopyMap copyMap) {
         return new MagicCardList(copyMap, this);
@@ -61,7 +61,7 @@ public class MagicCardList extends ArrayList<MagicCard> implements MagicCopyable
         final int size = size();
         return size > 0 ? get(size-1) : MagicCard.NONE;
     }
-    
+
     public MagicCardList getRandomCards(final int amount) {
         final MagicRandom rng = new MagicRandom(getStateId());
         final MagicCardList copy = new MagicCardList(this);
@@ -73,7 +73,7 @@ public class MagicCardList extends ArrayList<MagicCard> implements MagicCopyable
         }
         return choiceList;
     }
-    
+
     public MagicCardList getCardsFromTop(final int amount) {
         final int size = size();
         final MagicCardList choiceList = new MagicCardList();
@@ -90,7 +90,7 @@ public class MagicCardList extends ArrayList<MagicCard> implements MagicCopyable
         remove(index);
         return card;
     }
-    
+
     public MagicCard removeCardAtBottom() {
         final MagicCard card=get(0);
         remove(0);

@@ -17,7 +17,7 @@ public enum MagicTargetHint {
                 return true;
         }
     }
-    
+
     public static MagicTargetHint getHint(final String target) {
         if (target.startsWith("pos")) {
             return Positive;

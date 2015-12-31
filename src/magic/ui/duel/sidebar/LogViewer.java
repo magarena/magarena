@@ -25,7 +25,7 @@ class LogViewer extends TexturedPanel {
     private final JScrollPane scrollPane;
 
     LogViewer(final SwingGameController aController) {
-        
+
         this.controller = aController;
 
         messagePanels = new JPanel();

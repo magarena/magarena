@@ -12,9 +12,9 @@ public class MagicGameLog {
     private MagicGameLog() {}
 
     public static final String LOG_FILE = "game.log";
-    
+
     private static final String gameLog = (System.getProperty("game.log") != null) ?
-        System.getProperty("game.log") :       
+        System.getProperty("game.log") :
         MagicFileSystem.getDataPath(DataPath.LOGS).resolve(LOG_FILE).toString();
 
     private static PrintWriter writer;
@@ -22,7 +22,7 @@ public class MagicGameLog {
     public static String getLogFileName(){
         return gameLog;
     }
-    
+
     public static void initialize() {
         try {
             writer = new PrintWriter(gameLog);

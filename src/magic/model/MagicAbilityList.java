@@ -10,10 +10,10 @@ import java.util.List;
 import java.util.Set;
 
 public class MagicAbilityList implements MagicAbilityStore {
-    private List<MagicAbility> abilities = 
+    private List<MagicAbility> abilities =
         new LinkedList<MagicAbility>();
 
-    private List<MagicTrigger<?>> triggers = 
+    private List<MagicTrigger<?>> triggers =
         new LinkedList<MagicTrigger<?>>();
 
     private List<MagicActivation<MagicPermanent>> permActivations =
@@ -37,7 +37,7 @@ public class MagicAbilityList implements MagicAbilityStore {
     public MagicAbility getFirst() {
         return abilities.get(0);
     }
-    
+
     public void addAbility(final MagicAbility ability) {
         abilities.add(ability);
     }
@@ -55,7 +55,7 @@ public class MagicAbilityList implements MagicAbilityStore {
             permanent.addAbility(trigger);
         }
     }
-    
+
     public void loseAbility(final MagicPermanent permanent, final Set<MagicAbility> flags) {
         flags.removeAll(abilities);
     }

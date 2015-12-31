@@ -47,7 +47,7 @@ public class CardsLegalityPanel extends JPanel {
     public static final String CP_CARD_SELECTED = "cardTableSelection";
     // fired on mouse event.
     public static final String CP_CARD_DCLICKED = "cardDoubleClicked";
-    
+
     private static final Color GRID_COLOR = new Color(194, 197, 203);
     private static final int ROW_HEIGHT = 23; //pixels
 
@@ -92,7 +92,7 @@ public class CardsLegalityPanel extends JPanel {
         table.getSelectionModel().addListSelectionListener(getTableListSelectionListener());
         table.addMouseListener(getTableMouseAdapter());
         table.setShowVerticalLines(false);
-        
+
         final TableColumnModel model = table.getColumnModel();
         setColumnWidths(model);
         // special renderer for legality indicator icon.
@@ -200,9 +200,9 @@ public class CardsLegalityPanel extends JPanel {
     private boolean hasDoubleClickListeners() {
         return getPropertyChangeListeners(CP_CARD_DCLICKED).length > 0;
     }
-    
+
     private static class LegalityCellRenderer extends DefaultTableCellRenderer {
-        
+
         private static final JLabel BANNED_ICON = new JLabel(MagicImages.getIcon(MagicIcon.BANNED_ICON));
         private static final JLabel RESTRICTED_ICON = new JLabel(MagicImages.getIcon(MagicIcon.RESTRICTED_ICON));
         private static final JLabel LEGAL_ICON = new JLabel(MagicImages.getIcon(MagicIcon.LEGAL_ICON));
@@ -224,7 +224,7 @@ public class CardsLegalityPanel extends JPanel {
 
             final CardsLegalityTableModel tableModel = (CardsLegalityTableModel) table.getModel();
             final CardLegalityInfo cardLegality = tableModel.getCardLegality(row);
-            
+
             final JLabel lbl = getLegalityIcon(cardLegality);
 
             lbl.setToolTipText(String.format("<html>%s</html>",

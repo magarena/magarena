@@ -42,5 +42,5 @@ public class MagarenaDirectoryChooser extends JFileChooser {
                 && importPath.resolve("Magarena").toFile().exists()
                 && !importPath.resolve("Magarena").equals(MagicFileSystem.getDataPath());
     }
-    
+
 }

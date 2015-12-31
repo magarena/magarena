@@ -27,7 +27,7 @@ public class DeckEditorScreenPanel extends JPanel implements IDeckEditorListener
     private boolean isStandalone = true;
 
     public DeckEditorScreenPanel(final MagicDeck deck, final IDeckEditorListener aListener) {
-        
+
         MagicSystem.waitForAllCards();
 
         this.listener = aListener;

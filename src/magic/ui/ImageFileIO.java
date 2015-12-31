@@ -23,7 +23,7 @@ public final class ImageFileIO {
             return null;
         }
     }
-    
+
     public static BufferedImage toImg(final File input, final BufferedImage def) {
         return toImg(input, () -> def);
     }

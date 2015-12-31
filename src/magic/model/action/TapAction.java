@@ -12,7 +12,7 @@ public class TapAction extends MagicAction {
     private final MagicPermanent permanent;
     private boolean isUntapped;
     private final boolean hasScore;
-    
+
     public TapAction(final MagicPermanent permanent) {
         this(permanent, true);
     }

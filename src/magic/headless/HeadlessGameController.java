@@ -11,7 +11,7 @@ public class HeadlessGameController implements IGameController {
     private final long maxDuration;
     private final MagicGame game;
     private boolean running;
-    
+
     /** Fully artificial test game. */
     public HeadlessGameController(final MagicGame aGame, final long duration) {
         game = aGame;
@@ -22,18 +22,18 @@ public class HeadlessGameController implements IGameController {
     public void haltGame() {
         running = false;
     }
-    
+
     @Override
     public void runGame() {
         final long startTime = System.currentTimeMillis();
-        
+
         running = true;
         while (running && game.advanceToNextEventWithChoice() && System.currentTimeMillis() - startTime <= maxDuration) {
             final MagicEvent event = game.getNextEvent();
             final Object[] result = getAIChoiceResults(event);
             game.executeNextEvent(result);
         }
-        
+
         if (game.isFinished()) {
             game.advanceDuel();
         }

@@ -8,7 +8,7 @@ import java.util.List;
 import magic.model.MagicMessage;
 
 public class MagicMegamorphActivation extends MagicMorphActivation {
-    
+
     public MagicMegamorphActivation(final List<MagicMatchedCostEvent> aMatchedCostEvents) {
         super(aMatchedCostEvents, "Megamorph");
     }

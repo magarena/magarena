@@ -24,7 +24,7 @@ public class MagicPermanentTriggerMap {
     }
 
     public MagicPermanentTriggerMap() {}
-    
+
     public MagicPermanentTriggerMap(final MagicPermanentTriggerMap other) {
         for (final Map.Entry<MagicTriggerType, PriorityQueue<MagicPermanentTrigger>> type : other.effects.entrySet()) {
             for (final MagicPermanentTrigger mptrigger : type.getValue()) {

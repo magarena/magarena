@@ -40,7 +40,7 @@ public class GamePlayerState {
     }
 
     public List<GameCardState> getPermanents() {
-        return permanents;                
+        return permanents;
     }
 
     public void addToHand(String cardName, int quantity) {
@@ -65,7 +65,7 @@ public class GamePlayerState {
 
     public List<GameCardState> getExiled() {
         return exiled;
-    }    
+    }
 
     public void setLife(int i) {
         this.life = i;

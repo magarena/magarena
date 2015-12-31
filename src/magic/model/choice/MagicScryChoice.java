@@ -14,7 +14,7 @@ public class MagicScryChoice extends MagicMayChoice {
     public MagicScryChoice() {
         super("Move this card from the top of the library to the bottom?");
     }
-    
+
     @Override
     public List<Object[]> getArtificialChoiceResults(final MagicGame game, final MagicEvent event) {
         final MagicPlayer player = event.getPlayer();
@@ -32,14 +32,14 @@ public class MagicScryChoice extends MagicMayChoice {
     public Object[] getPlayerChoiceResults(final IUIGameController controller, final MagicGame game, final MagicEvent event) throws UndoClickedException {
         final MagicPlayer player = event.getPlayer();
         final MagicSource source = event.getSource();
-        
+
         final Object[] choiceResults=new Object[1];
         choiceResults[0]=NO_CHOICE;
-        
+
         if (player.getLibrary().isEmpty()) {
             return choiceResults;
         }
-        
+
         final MagicCardList cards = new MagicCardList();
         cards.add(player.getLibrary().getCardAtTop());
         controller.showCards(cards);
@@ -49,7 +49,7 @@ public class MagicScryChoice extends MagicMayChoice {
         if (controller.getMayChoice(source, getDescription())) {
             choiceResults[0]=YES_CHOICE;
         }
-        
+
         controller.clearCards();
 
         return choiceResults;

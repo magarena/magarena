@@ -13,15 +13,15 @@ public abstract class MagicStackFilterImpl implements MagicTargetFilter<MagicIte
     public List<MagicItemOnStack> filter(final MagicSource source) {
         return filter(source, source.getController(), MagicTargetHint.None);
     }
-    
+
     public List<MagicItemOnStack> filter(final MagicPlayer player) {
         return filter(MagicSource.NONE, player, MagicTargetHint.None);
     }
-    
+
     public List<MagicItemOnStack> filter(final MagicEvent event) {
         return filter(event.getSource(), event.getPlayer(), MagicTargetHint.None);
     }
-    
+
     public List<MagicItemOnStack> filter(final MagicSource source, final MagicPlayer player, final MagicTargetHint targetHint) {
         final MagicGame game = player.getGame();
         final List<MagicItemOnStack> targets=new ArrayList<MagicItemOnStack>();

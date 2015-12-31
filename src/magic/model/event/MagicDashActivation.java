@@ -35,7 +35,7 @@ public class MagicDashActivation extends MagicHandCastActivation {
             )
         );
     }
-    
+
     @Override
     public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
         return new MagicEvent(

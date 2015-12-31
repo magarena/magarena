@@ -78,5 +78,5 @@ public final class GameStateFileReader {
             prop.remove(usedKey);
         }
     }
-    
+
 }

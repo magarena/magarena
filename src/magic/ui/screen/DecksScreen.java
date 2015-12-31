@@ -32,7 +32,7 @@ import magic.ui.widget.deck.DeckStatusPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class DecksScreen 
+public class DecksScreen
     extends AbstractScreen
     implements IStatusBar, IActionBar {
 
@@ -171,7 +171,7 @@ public class DecksScreen
             setLayout(new MigLayout("insets 0, gap 0"));
             add(getDeckNamesPanel(), "w 300!, h 100%");
             add(getDeckDetailsPane(), "w 100%, h 100%");
-            
+
         }
 
         public MagicDeck getDeck() {
@@ -185,12 +185,12 @@ public class DecksScreen
         private JSplitPane getDeckDetailsPane() {
             splitter.setOneTouchExpandable(false);
             splitter.setLeftComponent(deckTable);
-            splitter.setRightComponent(getCardDetailsPanel());            
+            splitter.setRightComponent(getCardDetailsPanel());
             splitter.setDividerSize(14);
             splitter.setBorder(null);
             splitter.setOpaque(false);
             splitter.getRightComponent().setMinimumSize(new Dimension());
-            splitter.setResizeWeight(1.0);                    
+            splitter.setResizeWeight(1.0);
             return splitter;
         }
 
@@ -210,7 +210,7 @@ public class DecksScreen
             deckPicker.addListener(this);
 
             descViewer.setBorder(BorderFactory.createMatteBorder(0, 0, 0, 1, Color.BLACK));
-            
+
             // main container panel
             final JPanel container = new TexturedPanel();
             container.setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);

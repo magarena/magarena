@@ -103,7 +103,7 @@ public class DeckTiledCardsScreen
             setLayout(new MigLayout("insets 0, gap 0"));
             refreshLayout();
 
-            sidebar.setCard(deck.isEmpty() 
+            sidebar.setCard(deck.isEmpty()
                 ? MagicCardDefinition.UNKNOWN
                 : deck.get(0)
             );
@@ -118,7 +118,7 @@ public class DeckTiledCardsScreen
         }
 
         public void refresh(List<MagicCard> cards, Dimension cardSize) {
-            sidebar.setCard(cards.isEmpty() 
+            sidebar.setCard(cards.isEmpty()
                 ? MagicCardDefinition.UNKNOWN
                 : cards.get(0).getCardDefinition()
             );
@@ -166,7 +166,7 @@ public class DeckTiledCardsScreen
         Collections.sort(cards);
         return cards;
     }
-    
+
     @Override
     public String getScreenCaption() {
         return UiString.get(_S1);

@@ -8,15 +8,15 @@ import java.util.List;
 import java.util.Arrays;
 
 public class AIRevealAction extends MagicAction {
-    
+
     private final List<MagicCard> cards = new ArrayList<MagicCard>();
     private final List<Boolean> known = new ArrayList<Boolean>();
     private boolean newValue;
-    
+
     public AIRevealAction(final MagicCard... aCards) {
         this(Arrays.asList(aCards), true);
     }
-    
+
     public AIRevealAction(final Collection<MagicCard> aCards) {
         this(aCards, true);
     }

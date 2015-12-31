@@ -34,7 +34,7 @@ public class MagicDamageTargetPicker extends MagicTargetPicker<MagicTarget> {
     public MagicDamageTargetPicker(final MagicAmount count) {
         this(-1, false, count);
     }
-    
+
     @Override
     protected void setEvent(final MagicEvent event) {
         if (amount < 0 || count.isConstant() == false) {

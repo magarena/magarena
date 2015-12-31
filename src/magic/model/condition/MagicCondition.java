@@ -830,7 +830,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
                     permanent.getCardDefinition().hasType(MagicType.Creature)==false;
         }
     };
-    
+
     public static MagicCondition WAS_KICKED = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicCardOnStack spell=(MagicCardOnStack)source;

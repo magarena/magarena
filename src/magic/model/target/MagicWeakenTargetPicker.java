@@ -17,24 +17,24 @@ public class MagicWeakenTargetPicker extends MagicTargetPicker<MagicPermanent> {
 
     private int amountToughness;
     private final MagicAmount count;
-    
+
     public MagicWeakenTargetPicker(final MagicAmount aCount) {
         amountToughness = -1;
         count = aCount;
     }
-           
+
     public MagicWeakenTargetPicker(final int amountPower,final int aAmountToughness) {
         amountToughness = aAmountToughness;
         count = MagicAmountFactory.One;
     }
-    
+
     public MagicWeakenTargetPicker create(final String arg) {
         final String[] args = arg.replace('+','0').split("/");
         final int p = -Integer.parseInt(args[0]);
         final int t = -Integer.parseInt(args[1]);
         return new MagicWeakenTargetPicker(p, t);
     }
-    
+
     @Override
     protected void setEvent(final MagicEvent event) {
         if (amountToughness < 0 || count.isConstant() == false) {

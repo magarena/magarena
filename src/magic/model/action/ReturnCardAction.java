@@ -22,11 +22,11 @@ public class ReturnCardAction extends MagicAction {
         from = aFrom;
         modifications = aModifications;
     }
-    
+
     public ReturnCardAction(final MagicLocationType aFrom, final MagicCard aCard, final MagicPlayer aController, final MagicPermanentAction... aModifications) {
         this(aFrom, aCard, aController, Arrays.asList(aModifications));
     }
-    
+
     @Override
     public void doAction(final MagicGame game) {
         if (card.isIn(from) && card.isPermanentCard()) {
@@ -34,7 +34,7 @@ public class ReturnCardAction extends MagicAction {
             game.doAction(new PlayCardAction(card,controller,modifications));
         }
     }
-    
+
     @Override
     public void undoAction(final MagicGame game) {}
 }

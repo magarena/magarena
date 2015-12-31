@@ -43,5 +43,5 @@ public enum MagicPhaseType {
     public String getAbbreviation() {
         return abbreviation;
     }
-    
+
 }

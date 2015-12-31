@@ -95,7 +95,7 @@ public final class GameStateSnapshot {
         }
         return cardDefs;
     }
- 
+
     private static void updateCardCount(final MagicCardDefinition cardDef, final Map<MagicCardDefinition, Integer> cardDefs) {
         if (cardDefs.containsKey(cardDef)) {
             int count = cardDefs.get(cardDef);

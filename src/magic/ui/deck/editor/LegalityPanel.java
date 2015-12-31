@@ -32,7 +32,7 @@ class LegalityPanel extends JPanel implements IDeckEditorView {
     private static final String _S7 = "Too many copies of a card in deck.";
     private static final String _S8 = "Does not apply to basic lands,";
     private static final String _S9 = "or";
-    
+
     // fired when card selection changes
     public static final String CP_CARD_SELECTED = CardTablePanel.CP_CARD_SELECTED;
 
@@ -40,14 +40,14 @@ class LegalityPanel extends JPanel implements IDeckEditorView {
 
     private final CardsLegalityPanel cardsLegalityPanel;
     private final FormatsLegalityPanel formatsLegalityPanel;
-    private final MigLayout miglayout = new MigLayout();    
+    private final MigLayout miglayout = new MigLayout();
     private MagicDeck deck = new MagicDeck();
 
     LegalityPanel() {
 
         formatsLegalityPanel = new FormatsLegalityPanel();
         cardsLegalityPanel = new CardsLegalityPanel();
-        
+
         setPropertyChangeListeners();
 
         setLookAndFeel();
@@ -91,7 +91,7 @@ class LegalityPanel extends JPanel implements IDeckEditorView {
         miglayout.setLayoutConstraints("insets 0, gap 0, wrap 2");
         add(HELP_PANEL, "w 100%, spanx 2");
         add(formatsLegalityPanel, "w 280!, h 100%");
-        add(cardsLegalityPanel, "w 100%, h 100%");       
+        add(cardsLegalityPanel, "w 100%, h 100%");
         revalidate();
     }
 
@@ -133,7 +133,7 @@ class LegalityPanel extends JPanel implements IDeckEditorView {
             add(getIconLabel(MagicIcon.ILLEGAL_ICON, UiString.get(_S2)));
             add(getIconLabel(MagicIcon.BANNED_ICON, UiString.get(_S3)));
             add(getIconLabel(MagicIcon.RESTRICTED_ICON, UiString.get(_S4), UiString.get(_S5)));
-            add(getIconLabel(MagicIcon.RESTRICTED_ICON, UiString.get(_S6), 
+            add(getIconLabel(MagicIcon.RESTRICTED_ICON, UiString.get(_S6),
                     String.format("<html><b>%s</b><br>%s<br><i>Relentless Rats</i> %s <i>Shadowborn Apostle</i>.</html>",
                             UiString.get(_S7),
                             UiString.get(_S8),

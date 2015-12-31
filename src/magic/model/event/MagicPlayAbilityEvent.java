@@ -8,7 +8,7 @@ import magic.model.condition.MagicCondition;
 public class MagicPlayAbilityEvent extends MagicEvent {
 
     private final MagicCondition cond;
-    
+
     public MagicPlayAbilityEvent(final MagicPermanent source) {
         this(source, MagicCondition.ABILITY_ONCE_CONDITION);
     }

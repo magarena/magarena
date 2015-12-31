@@ -65,7 +65,7 @@ public class UserActionPanel extends JPanel implements ActionListener {
             public void mouseReleased(MouseEvent e) {
                 if (SwingUtilities.isRightMouseButton(e)) {
                     controller.passKeyPressed();
-                }               
+                }
             }
         });
         actionPanel.add(actionButton,"2");

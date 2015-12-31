@@ -15,15 +15,15 @@ public abstract class MagicTargetFilterImpl implements MagicTargetFilter<MagicTa
     public List<MagicTarget> filter(final MagicSource source) {
         return filter(source, source.getController(), MagicTargetHint.None);
     }
-    
+
     public List<MagicTarget> filter(final MagicPlayer player) {
         return filter(MagicSource.NONE, player, MagicTargetHint.None);
     }
-    
+
     public List<MagicTarget> filter(final MagicEvent event) {
         return filter(event.getSource(), event.getPlayer(), MagicTargetHint.None);
     }
-    
+
     public List<MagicTarget> filter(final MagicSource source, final MagicPlayer player, final MagicTargetHint targetHint) {
         final MagicGame game = player.getGame();
         final List<MagicTarget> targets=new ArrayList<MagicTarget>();
@@ -86,7 +86,7 @@ public abstract class MagicTargetFilterImpl implements MagicTargetFilter<MagicTa
                 }
             }
         }
-        
+
         // Cards in library
         if (acceptType(MagicTargetType.Library)) {
             for (final MagicCard targetCard : player.getLibrary()) {

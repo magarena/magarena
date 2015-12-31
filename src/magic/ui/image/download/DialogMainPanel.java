@@ -44,7 +44,7 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
         optionsPanel = new OptionsPanel();
         optionsPanel.addHintSources(hintPanel);
         optionsPanel.setEnabled(false);
-        optionsPanel.addPropertyChangeListener(OptionsPanel.CP_OPTIONS_CHANGED, 
+        optionsPanel.addPropertyChangeListener(OptionsPanel.CP_OPTIONS_CHANGED,
             (e) -> { refreshDownloadList(); }
         );
 
@@ -61,9 +61,9 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
         setDownloadPanels();
         setLookAndFeel();
         refreshLayout();
-        
+
     }
-    
+
     private void doRunInBackground() {
         firePropertyChange(CP_RUN_BACKGROUND, true, false);
     }

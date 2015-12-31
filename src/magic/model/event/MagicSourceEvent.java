@@ -36,19 +36,19 @@ public class MagicSourceEvent {
         action = aAction;
         text = aText;
     }
-    
+
     public MagicEvent getTriggerEvent(final MagicSource source, final MagicPlayer player, final MagicCopyable ref) {
         return ifCond.accept(source) ? getEvent(source, player, ref) : MagicEvent.NONE;
     }
-    
+
     public MagicEvent getTriggerEvent(final MagicSource source, final MagicCopyable ref) {
         return ifCond.accept(source) ? getEvent(source, ref) : MagicEvent.NONE;
     }
-    
+
     public MagicEvent getTriggerEvent(final MagicSource source) {
         return ifCond.accept(source) ? getEvent(source) : MagicEvent.NONE;
     }
-    
+
     public MagicEvent getEvent(final MagicSource source, final MagicPlayer player, final MagicCopyable ref) {
         return new MagicEvent(
             source,
@@ -60,19 +60,19 @@ public class MagicSourceEvent {
             text
         );
     }
-    
+
     public MagicEvent getEvent(final MagicSource source, final MagicCopyable ref) {
         return getEvent(source, source.getController(), ref);
     }
-    
+
     public MagicEvent getEvent(final MagicSource source) {
         return getEvent(source, source.getController(), MagicEvent.NO_REF);
     }
-    
+
     public MagicEvent getEvent(final MagicEvent event) {
         return getEvent(event.getSource(), event.getPlayer(), MagicEvent.NO_REF);
     }
-    
+
     public MagicCondition[] getConditions() {
         return rule.getConditions(matcher);
     }
@@ -80,11 +80,11 @@ public class MagicSourceEvent {
     public MagicTiming getTiming() {
         return rule.getTiming(matcher);
     }
-    
+
     public String getName() {
         return rule.getName(matcher);
     }
-    
+
     public boolean isIndependent() {
         return rule.isIndependent();
     }
@@ -96,7 +96,7 @@ public class MagicSourceEvent {
     public MagicChoice getChoice() {
         return rule.getChoice(matcher);
     }
-    
+
     public MagicTargetPicker<?> getPicker() {
         return rule.getPicker(matcher);
     }

@@ -175,10 +175,10 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
 
         // not interested in importing these settings.
         thisSettings.removeAll(Arrays.asList(
-                "left", 
-                "fullScreen", 
-                "top", 
-                "height", 
+                "left",
+                "fullScreen",
+                "top",
+                "height",
                 "width",
                 "translation"));
 
@@ -199,7 +199,7 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
         GeneralConfig.getInstance().setMissingImagesDownloadDate(dt.getTime());
         GeneralConfig.getInstance().setPlayableImagesDownloadDate(dt.getTime());
         GeneralConfig.getInstance().save();
-        
+
         setProgressNote(OK_STRING);
     }
 
@@ -341,5 +341,5 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
             logger.log(progressNote);
         }
     }
-    
+
 }

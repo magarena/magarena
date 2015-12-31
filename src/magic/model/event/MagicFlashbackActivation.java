@@ -12,9 +12,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class MagicFlashbackActivation extends MagicGraveyardCastActivation {
-    
+
     private final List<MagicMatchedCostEvent> matchedCostEvents;
-    
+
     public MagicFlashbackActivation(final MagicCardDefinition cdef, final List<MagicMatchedCostEvent> aMatchedCostEvents) {
         super(
             MagicHandCastActivation.CARD_CONDITION,
@@ -23,7 +23,7 @@ public class MagicFlashbackActivation extends MagicGraveyardCastActivation {
         );
         matchedCostEvents = aMatchedCostEvents;
     }
-   
+
     @Override
     public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
         final List<MagicEvent> costEvents = new LinkedList<MagicEvent>();
@@ -32,7 +32,7 @@ public class MagicFlashbackActivation extends MagicGraveyardCastActivation {
         }
         return costEvents;
     }
-    
+
     @Override
     public MagicEvent getEvent(final MagicSource source) {
         return new MagicEvent(
@@ -41,7 +41,7 @@ public class MagicFlashbackActivation extends MagicGraveyardCastActivation {
             "Flashback SN."
         );
     }
-    
+
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         game.doAction(CastCardAction.WithoutManaCost(

@@ -22,7 +22,7 @@ import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class RandomDeckGeneratorDialog extends MagicDialog implements ChangeListener {
-    
+
     // translatable strings
     private static final String _S1 = "Create Deck";
     private static final String _S2 = "Percentage of deck size allocated to non-land cards.";
@@ -98,7 +98,7 @@ public class RandomDeckGeneratorDialog extends MagicDialog implements ChangeList
         creaturesLabel.setText(Integer.toString(deckGenerator.getMaxCreaturesCount()));
         landsLabel.setText(Integer.toString(deckGenerator.getLandsCount()));
     }
-    
+
     private void setListeners() {
         // save button
         saveButton.addActionListener(new AbstractAction() {

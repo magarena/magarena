@@ -663,7 +663,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     public List<MagicEvent> getCostEvent(final MagicCard source) {
         final List<MagicEvent> costEvent = new ArrayList<MagicEvent>();
         final MagicManaCost modCost = source.getGame().modCost(source, cost);
-        
+
         if (modCost != MagicManaCost.ZERO) {
             costEvent.add(new MagicPayManaCostEvent(
                 source,

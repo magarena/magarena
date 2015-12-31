@@ -76,7 +76,7 @@ public class CardsCanvas extends JPanel {
     public void setListener(ICardsCanvasListener aListener) {
         this.listener = aListener;
     }
-    
+
     private void setMouseListener() {
         addMouseListener(new MouseAdapter() {
             @Override
@@ -284,7 +284,7 @@ public class CardsCanvas extends JPanel {
 //            drawHighlightBorder(g2d, rect);
         }
     }
-    
+
     private void drawHighlightBorder(Graphics2D g2d, Rectangle rect) {
         final int w = 4;
         g2d.setStroke(new BasicStroke(w));

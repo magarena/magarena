@@ -56,7 +56,7 @@ public class CombatDamageAction extends MagicAction {
                             combatDamage.add(MagicDamage.Combat(blocker,attacker,power));
                         }
                         if (first) {
-                            game.doAction(ChangeStateAction.Set(blocker, MagicPermanentState.DealtFirstStrike)); 
+                            game.doAction(ChangeStateAction.Set(blocker, MagicPermanentState.DealtFirstStrike));
                         }
                     }
                 }
@@ -102,7 +102,7 @@ public class CombatDamageAction extends MagicAction {
                         }
                     }
                     if (first) {
-                        game.doAction(ChangeStateAction.Set(attacker, MagicPermanentState.DealtFirstStrike)); 
+                        game.doAction(ChangeStateAction.Set(attacker, MagicPermanentState.DealtFirstStrike));
                     }
                 }
             }

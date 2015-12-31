@@ -27,7 +27,7 @@ class TestManaCrash extends TestGameBuilder {
         addToHand(P, "Yavimaya Scion", 1);
         addToHand(P, "Temple of Plenty", 1);
         addToHand(P, "Reaping the Rewards", 1);
-        
+
         P = opponent;
 
         P.setLife(20);
@@ -39,7 +39,7 @@ class TestManaCrash extends TestGameBuilder {
         addToHand(P, "Savage Lands", 1);
         addToHand(P, "Forest", 1);
         addToHand(P, "Rupture Spire", 1);
-        
+
         return game;
     }
 }

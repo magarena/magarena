@@ -15,7 +15,7 @@ public class MagicGainLifeEvent extends MagicEvent {
             "PN gains RN life."
         );
     }
-    
+
     public MagicGainLifeEvent(final MagicPermanent permanent, final int amt) {
         this(permanent, permanent.getController(), amt);
     }

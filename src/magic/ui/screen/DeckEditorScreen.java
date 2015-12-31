@@ -97,7 +97,7 @@ public class DeckEditorScreen
         }
         return null;
     }
-    
+
     private static MagicDeck loadDeck(final Path deckFilePath) {
         try {
             return DeckUtils.loadDeckFromFile(deckFilePath);

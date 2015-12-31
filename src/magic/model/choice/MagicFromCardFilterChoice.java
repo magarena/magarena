@@ -23,7 +23,7 @@ public class MagicFromCardFilterChoice extends MagicChoice {
     private final String displayMessage;
     private final int amount;
     private final boolean upTo;
-    
+
     public MagicFromCardFilterChoice(final MagicTargetFilter<MagicCard> aFilter, final int aAmount, final boolean aUpTo, final String description) {
         super(genDescription(aAmount, description, aUpTo));
         filter = aFilter;
@@ -54,7 +54,7 @@ public class MagicFromCardFilterChoice extends MagicChoice {
         final int limit,
         final int index
     ) {
-        
+
         if (count == limit) {
             options.add(new MagicCardChoiceResult(cards));
             return;
@@ -69,7 +69,7 @@ public class MagicFromCardFilterChoice extends MagicChoice {
         createOptions(options,cList,cards,count+1,limit,index+1);
         createOptions(options,cList,cards,count,limit,index+1);
     }
-    
+
     private void createOptionsUpTo(
         final Collection<Object> options,
         final List<MagicCard> cList,
@@ -78,7 +78,7 @@ public class MagicFromCardFilterChoice extends MagicChoice {
         final int limit,
         final int index
     ) {
-       
+
         if (index >= cList.size() || count >= limit) {
             final MagicCardChoiceResult result = new MagicCardChoiceResult(cards);
             //System.out.println("add " + result);
@@ -95,12 +95,12 @@ public class MagicFromCardFilterChoice extends MagicChoice {
                 cards[count + i] = cList.get(index + i);
                 createOptionsUpTo(options,cList,cards,count + i + 1,limit,index + cnt);
             }
-           
+
             // use 0 copies of first
             for (int i = 0; i < cnt && count + i + 1 <= limit; i++) {
                 cards[count + i] = null;
             }
-            
+
             createOptionsUpTo(options,cList,cards,count,limit,index + cnt);
         }
     }
@@ -132,12 +132,12 @@ public class MagicFromCardFilterChoice extends MagicChoice {
         } else {
             createOptions(options,cList,new MagicCard[actualAmount],0,actualAmount,0);
         }
-        
+
         //hide the cards
         for (int i = 0; i < oList.size(); i++) {
             oList.get(i).setGameKnown(known.get(i));
         }
-        
+
         return options;
     }
 

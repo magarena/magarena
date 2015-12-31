@@ -19,7 +19,7 @@ public class MagicBeginOfCombatPhase extends MagicPhase {
     public void executeBeginStep(final MagicGame game) {
         // Begin of combat triggers
         game.executeTrigger(MagicTriggerType.AtBeginOfCombat,game.getTurnPlayer());
-        
+
         game.setStep(MagicStep.ActivePlayer);
     }
 }

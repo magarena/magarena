@@ -138,7 +138,7 @@ public class DeckPicker extends JPanel {
         // deck names list : need to be able to add/remove to prevent multiple events.
         listSelectionListener = getListSelectionListener();
     }
-    
+
 
 
     final public void refreshContent() {
@@ -161,7 +161,7 @@ public class DeckPicker extends JPanel {
             filterPanel.setDecksCount(0);
             for (IDeckConsumer listener : listeners) {
                 listener.setDeck(new MagicDeck(), null);
-            }                        
+            }
         }
     }
 

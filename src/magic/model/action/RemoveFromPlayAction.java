@@ -18,7 +18,7 @@ public class RemoveFromPlayAction extends MagicAction {
         toLocation = aToLocation;
         update = aUpdate;
     }
-    
+
     // default to update after remove
     public RemoveFromPlayAction(final MagicPermanent aPermanent, final MagicLocationType aToLocation) {
         this(aPermanent, aToLocation, true);
@@ -32,11 +32,11 @@ public class RemoveFromPlayAction extends MagicAction {
     public boolean isValid() {
         return valid;
     }
-    
+
     public boolean isPermanent(final MagicPermanent aPermanent) {
         return permanent == aPermanent;
     }
-    
+
     public MagicPermanent getPermanent() {
         return permanent;
     }

@@ -12,7 +12,7 @@ public class DiscardCardAction extends MagicAction {
     private final MagicCard card;
     private final MagicLocationType toLocation;
     private int index;
-    
+
     public DiscardCardAction(final MagicPlayer aPlayer,final MagicCard aCard) {
         this(aPlayer, aCard, MagicLocationType.Graveyard);
     }

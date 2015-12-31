@@ -29,7 +29,7 @@ public final class UiString {
     private UiString() { }
 
     private static final String UTF_CHAR_SET = "UTF-8";
-    
+
     private static final CRC32 crc = new CRC32();
     private static final Map<Long, String> translationsMap = new HashMap<>();
     private static final Map<Long, String> annotations = new HashMap<>();
@@ -155,7 +155,7 @@ public final class UiString {
 
         final Map<Long, String> stringsMap = new LinkedHashMap<>();
         annotations.clear();
-        
+
         for (final String c : getClassNamesInPackage(MagicSystem.getJarFile(), "magic")) {
             final String className = c.substring(0, c.length() - ".class".length());
             try {

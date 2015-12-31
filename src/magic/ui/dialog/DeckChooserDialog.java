@@ -41,7 +41,7 @@ public class DeckChooserDialog extends MagicDialog {
     public DeckChooserDialog(final DeckType aDeckType, final String aDeckName) {
 
         super(ScreenController.getMainFrame(), UiString.get(_S2), new Dimension(300, 180));
-        
+
         deckTypeCombo = getDeckTypeComboBox();
         deckTypeCombo.setSelectedItem(aDeckType);
         addDeckTypeComboBoxListener();

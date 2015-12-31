@@ -9,7 +9,7 @@ public class MagicOtherPermanentTargetFilter extends MagicPermanentFilterImpl {
 
     private final MagicTargetFilter<MagicPermanent> targetFilter;
     private final long id;
-    
+
     public MagicOtherPermanentTargetFilter(final MagicTargetFilter<MagicPermanent> aTargetFilter) {
         targetFilter = aTargetFilter;
         id = 0;

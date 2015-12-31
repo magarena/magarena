@@ -79,11 +79,11 @@ public abstract class TestGameBuilder {
         }
         return lastPermanent;
     }
-    
+
     public static MagicPermanent createPermanent(final MagicPlayer player,final String name,final int amount){
         return createPermanent(player,name,false,amount);
     }
-    
+
     public static MagicPermanent createPermanent(final MagicPlayer player,final String name){
         return createPermanent(player,name,false,1);
     }

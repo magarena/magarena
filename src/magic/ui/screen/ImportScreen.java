@@ -150,7 +150,7 @@ public class ImportScreen extends AbstractScreen {
                                 }
                             }
                         });
-                
+
                 cancelButton.setVisible(true);
 
                 panel.setOpaque(false);

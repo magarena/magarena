@@ -78,7 +78,7 @@ public class MagicStack extends LinkedList<MagicItemOnStack> {
         }
         throw new RuntimeException("No corresponding MagicItemOnStack with id " + id);
     }
-    
+
     public boolean hasItem() {
         return isEmpty() == false;
     }

@@ -22,7 +22,7 @@ public class PermanentSpecParser {
     public final boolean additionTo;
 
     public PermanentSpecParser(final Matcher matcher) {
-        final String[] ptStr = matcher.group("pt") == null ? null : 
+        final String[] ptStr = matcher.group("pt") == null ? null :
             matcher.group("pt").split("/");
         pt = ptStr == null ? null :
             new int[]{Integer.parseInt(ptStr[0]), Integer.parseInt(ptStr[1])};

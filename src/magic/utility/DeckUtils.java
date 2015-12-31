@@ -148,7 +148,7 @@ public class DeckUtils {
             deck.setInvalidDeck(UiString.get(_S1));
             return deck;
         }
-        
+
         if (content.size() > DECK_FILE_MAX_LINES) {
             deck.setInvalidDeck(UiString.get(_S2, DECK_FILE_MAX_LINES));
             return deck;
@@ -158,7 +158,7 @@ public class DeckUtils {
         final int MAX_LINE_LENGTH = 50; // characters.
         int lineNumber = 0;
         final List<String> lineErrors = new ArrayList<>();
-        
+
         for (final String nextLine: content) {
 
             if (lineErrors.size() > MAX_LINE_ERRORS) {
@@ -240,7 +240,7 @@ public class DeckUtils {
     public static void loadAndSetPlayerDeck(final String filename, final DuelPlayerConfig player) {
 
         final MagicDeck deck = loadDeckFromFile(Paths.get(filename));
-        
+
         if (deck.isValid()) {
             player.setDeck(deck);
             player.setDeckProfile(getDeckProfile(deck));

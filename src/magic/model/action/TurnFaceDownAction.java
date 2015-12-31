@@ -22,9 +22,9 @@ public class TurnFaceDownAction extends MagicAction {
     public void doAction(final MagicGame game) {
         if (permanent.isFaceDown() == false && permanent.isDoubleFaced() == false) {
             oldStatics = permanent.getStatics();
-            
+
             game.doAction(ChangeStateAction.Set(permanent, MagicPermanentState.FaceDown));
-            
+
             newStatics = permanent.getStatics();
             game.removeStatics(permanent, oldStatics);
             game.addStatics(permanent, newStatics);

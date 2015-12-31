@@ -11,13 +11,13 @@ import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
 
 public class MagicExileTopLibraryEvent extends MagicEvent{
-    
+
     private final MagicCondition cond;
 
     public MagicExileTopLibraryEvent(final MagicSource source, final int amount) {
         this(source, source.getController(), amount);
     }
-    
+
     public MagicExileTopLibraryEvent(final MagicSource source, final MagicPlayer player, final int amount) {
         super(
             source,
@@ -38,7 +38,7 @@ public class MagicExileTopLibraryEvent extends MagicEvent{
             }
         }
     };
-    
+
     @Override
     public boolean isSatisfied() {
         return cond.accept(getSource()) && super.isSatisfied();

@@ -6,7 +6,7 @@ import javax.swing.*;
 /**
  * https://tips4java.wordpress.com/2009/12/20/scrollable-panel/
  *
- * A panel that implements the Scrollable interface. 
+ * A panel that implements the Scrollable interface.
  * This class allows you to customize the scrollable features by using newly provided
  * setter methods so you don't have to extend this class every time.
  *

@@ -72,7 +72,7 @@ public class MayChoicePanel extends JPanel implements ActionListener {
         buttonPanel.add(noButton);
 
         noButton.getInputMap(2).put(KeyStroke.getKeyStroke('n'),"no");
-        
+
         @SuppressWarnings("serial")
         final AbstractAction noAction = new AbstractAction() {
             public void actionPerformed(final ActionEvent evt) {

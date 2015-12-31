@@ -15,7 +15,7 @@ public class PlayTokensAction extends MagicAction {
         card  = MagicCard.createTokenCard(cardDefinition,player);
         count = aCount;
     }
-    
+
     public PlayTokensAction(final MagicPlayer player, final MagicObject obj, final int aCount) {
         this(player, obj.getCardDefinition(), aCount);
     }

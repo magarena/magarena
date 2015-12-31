@@ -56,7 +56,7 @@ public class CardImageOverlay extends TexturedPanel {
         setFocusTraversalKeysEnabled(false);
 
         setBackground(MagicStyle.getTranslucentColor(Color.DARK_GRAY, 200));
-      
+
         ScreenController.getMainFrame().setGlassPane(this);
         setVisible(true);
 

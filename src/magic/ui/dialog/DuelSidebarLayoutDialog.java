@@ -30,7 +30,7 @@ public class DuelSidebarLayoutDialog extends MagicDialog {
 
     private static final Color HIGHLIGHT_BACK = MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND);
     private static final Color HIGHLIGHT_FORE = MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_FOREGROUND);
-    
+
     private boolean isCancelled = false;
     private final JList<String> jlist = new JList<>();
     private DefaultListModel<String> listModel;
@@ -57,7 +57,7 @@ public class DuelSidebarLayoutDialog extends MagicDialog {
         jlist.setFocusable(true);
         jlist.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
     }
-    
+
     private String getLayoutString() {
         final StringBuffer sb = new StringBuffer();
         final Enumeration<String> en = listModel.elements();
@@ -74,7 +74,7 @@ public class DuelSidebarLayoutDialog extends MagicDialog {
         panel.add(jlist, "w 100%, h 100%, aligny top, gapbottom 6");
         panel.add(getDialogButtonPanel(), "w 100%, h 30!, pushy, aligny bottom");
     }
-    
+
     private JPanel getListButtonPanel() {
         final JPanel buttonPanel = new JPanel(new MigLayout("insets 0, gap 0"));
         buttonPanel.add(getMoveDownButton(), "w 50%");

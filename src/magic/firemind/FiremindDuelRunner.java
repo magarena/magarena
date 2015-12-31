@@ -104,17 +104,17 @@ public class FiremindDuelRunner {
         final MagicDuel testDuel = new MagicDuel(config);
 
         final MagicDeckProfile profile = new MagicDeckProfile("bgruw");
-        
+
         final DuelPlayerConfig player1 = new DuelPlayerConfig(
-            AiProfile.create("Player1", ai1, str1), 
+            AiProfile.create("Player1", ai1, str1),
             profile
         );
-        
+
         final DuelPlayerConfig player2 = new DuelPlayerConfig(
             AiProfile.create("Player2", ai2, str2),
             profile
         );
-        
+
         testDuel.setPlayers(new DuelPlayerConfig[] { player1, player2 });
 
         // Set the deck.

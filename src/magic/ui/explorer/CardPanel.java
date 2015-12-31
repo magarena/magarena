@@ -103,12 +103,12 @@ public class CardPanel extends JPanel {
 
         decksButton.setForeground(Color.GRAY);
         decksButton.setText(UiString.get(_S4));
-        
+
         cardViewer.setCard(aCardDef);
         decksPanel.setCard(aCardDef);
 
         refreshLayout();
-        
+
     }
 
 }

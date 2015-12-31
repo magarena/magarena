@@ -22,7 +22,7 @@ public class MagicKickerCost extends MagicAdditionalCost implements MagicEventAc
     public static MagicKickerCost Buyback(final MagicMatchedCostEvent aCost) {
         return new MagicKickerCost(aCost, "buyback");
     }
-    
+
     public static MagicKickerCost Entwine(final MagicMatchedCostEvent aCost) {
         return new MagicKickerCost(aCost, "entwine");
     }

@@ -41,7 +41,7 @@ public class DeckFilter {
             return spinnersRequired;
         }
     }
-    
+
     private NumericFilter deckSizeFilter = NumericFilter.Any;
     private int deckSizeFilterValue1 = 40;
     private int deckSizeFilterValue2 = 60;
@@ -140,7 +140,7 @@ public class DeckFilter {
         this.deckSizeFilterValue1 = filterValue1;
         this.deckSizeFilterValue2 = filterValue2;
     }
-    
+
     public NumericFilter getDeckSizeFilterType() {
         return deckSizeFilter;
     }

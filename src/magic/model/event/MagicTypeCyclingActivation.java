@@ -36,7 +36,7 @@ public class MagicTypeCyclingActivation extends MagicCyclingActivation {
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         game.addEvent(new MagicSearchToLocationEvent(
-            event, 
+            event,
             new MagicTargetChoice("a "+type+" card from your library"),
             MagicLocationType.OwnersHand
         ));

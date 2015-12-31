@@ -94,9 +94,9 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
             migLayout.setColumnConstraints("[" + imageSize.width + "!][100%]");
             setLayout(migLayout);
             add(sideBarPanel, "h 100%, w " + imageSize.width + "!");
-            add(rhs, "w 100%, h 100%");                    
+            add(rhs, "w 100%, h 100%");
         }
-        
+
         // set initial card image
         if (cardPoolDefs.isEmpty()) {
             sideBarPanel.setCard(MagicCardDefinition.UNKNOWN);
@@ -196,7 +196,7 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
                 this.deck.remove(card);
             }
             updateDeck();
-            
+
         } else {
             ScreenController.showWarningMessage("Please select a valid card in the deck to remove it.");
         }

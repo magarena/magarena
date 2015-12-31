@@ -52,12 +52,12 @@ public class MagicDummyModifier implements MagicModifier {
     public void modGame(final MagicPermanent source, final MagicGame game) {
         //leave game unchanged
     }
-    
+
     @Override
     public MagicManaCost reduceCost(final MagicPermanent source, final MagicCard card, final MagicManaCost cost) {
         return cost;
     }
-    
+
     @Override
     public MagicManaCost increaseCost(final MagicPermanent source, final MagicCard card, final MagicManaCost cost) {
         return cost;

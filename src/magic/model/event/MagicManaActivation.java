@@ -13,13 +13,13 @@ import java.util.List;
 import java.util.LinkedList;
 
 public abstract class MagicManaActivation implements MagicChangeCardDefinition {
-    
+
     protected static final String ActivationRestriction = ", Activate this ability ";
-    
+
     private final List<MagicManaType> manaTypes;
     private final MagicCondition[] conditions;
     private final int weight;
-    
+
     public MagicManaActivation(final List<MagicManaType> manaTypes) {
         this(manaTypes, MagicActivation.NO_COND, manaTypes.size() - 1);
     }
@@ -48,7 +48,7 @@ public abstract class MagicManaActivation implements MagicChangeCardDefinition {
             source.getController().hasState(MagicPlayerState.CantActivateAbilities)) {
             return false;
         }
-        
+
         // Check conditions for activation
         for (final MagicCondition condition : conditions) {
             if (!condition.accept(source)) {
@@ -72,13 +72,13 @@ public abstract class MagicManaActivation implements MagicChangeCardDefinition {
     public void change(final MagicCardDefinition cdef) {
         cdef.addManaAct(this);
     }
-    
+
     public static final MagicManaActivation create(final String costs, final List<MagicManaType> manaTypes) {
         final String[] part = costs.split(ActivationRestriction);
-        
+
         final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(part[0]);
         assert matchedCostEvents.size() > 0;
-        
+
         if (part.length > 1) {
             matchedCostEvents.addAll(MagicCondition.build(part[1]));
         }

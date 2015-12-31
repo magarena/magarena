@@ -55,7 +55,7 @@ public class SettingsMenuScreen extends AbstractScreen {
                 ScreenController.showDownloadImagesScreen();
             }
         });
-        
+
         menuPanel.addMenuItem(UiString.get(_S6), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
@@ -66,7 +66,7 @@ public class SettingsMenuScreen extends AbstractScreen {
                 }
             }
         });
-        
+
         menuPanel.addMenuItem(UiString.get(_S7), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
@@ -90,7 +90,7 @@ public class SettingsMenuScreen extends AbstractScreen {
         });
 
         menuPanel.refreshLayout();
-        
+
         final MigLayout layout = new MigLayout();
         layout.setLayoutConstraints("insets 0, gap 0, flowy");
         layout.setRowConstraints("[30!][100%, center][30!, bottom]");
@@ -103,7 +103,7 @@ public class SettingsMenuScreen extends AbstractScreen {
         content.add(new KeysStripPanel(), "w 100%, cell 0 2");
 
         return content;
-        
+
     }
 
     private void doReset() {

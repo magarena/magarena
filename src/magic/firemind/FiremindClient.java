@@ -64,13 +64,13 @@ public class FiremindClient {
                 for (int i = 0; i < scripts.length(); i++) {
                     JSONObject script = scripts.getJSONObject(i);
                     String name = script.getString("name");
-                    
+
                     saveScriptFile(name, "txt", script.getString("config"));
                     String groovyScript = script.getString("script");
                     if(groovyScript != null && !groovyScript.equals("")){
                         saveScriptFile(name, "groovy", groovyScript);
                     }
-                    
+
                     System.out.println(name);
                 }
             }
@@ -102,7 +102,7 @@ public class FiremindClient {
             addedScripts.add(f.getAbsolutePath());
         }
         try {
-            f.createNewFile(); 
+            f.createNewFile();
         }catch (IOException e){
             System.err.println("Couldn't save script file");
         }
@@ -117,7 +117,7 @@ public class FiremindClient {
             System.err.println("Couldn't save script file");
         }
     }
-    
+
     public static void resetChangedScripts(){
         File scriptsDirectory = MagicFileSystem.getDataPath(DataPath.SCRIPTS_ORIG).toFile();
         MagicFileSystem.getDataPath(DataPath.SCRIPTS_ORIG).toFile().mkdirs();
@@ -130,14 +130,14 @@ public class FiremindClient {
             (new File(path)).delete();
         }
     }
-    
+
     public static boolean postGame(
-        Integer duel_id, 
+        Integer duel_id,
         Integer game_number,
-        Date play_time, 
-        boolean win_deck1, 
+        Date play_time,
+        boolean win_deck1,
         Integer magarena_version_major,
-        Integer magarena_version_minor, 
+        Integer magarena_version_minor,
         String logFile
     ) {
         CONFIG.load();
@@ -252,8 +252,8 @@ public class FiremindClient {
             e.printStackTrace();
         }
         return true;
-    }    
-    
+    }
+
     public static JSONObject readJsonFromUrl(String url) throws IOException,
             JSONException {
         HttpURLConnection con = (HttpURLConnection) (new URL(url))
@@ -283,9 +283,9 @@ public class FiremindClient {
     }
 
     public static void setFiremindHost(String host) {
-        firemindHost = host; 
+        firemindHost = host;
     }
-    
+
 
     public static boolean checkMagarenaVersion(String magarenaVersion) {
         String url = firemindHost + "/api/v1/status/client_info";
@@ -308,7 +308,7 @@ public class FiremindClient {
             JSONObject json = new JSONObject(jsonText);
             String[] remoteVersion = json.getString("current_magarena_version").split("\\.");
             String[] localVersion = magarenaVersion.split("\\.");
-            return Integer.valueOf(localVersion[0]) >= Integer.valueOf(remoteVersion[0]) && Integer.valueOf(localVersion[1]) >= Integer.valueOf(remoteVersion[1]); 
+            return Integer.valueOf(localVersion[0]) >= Integer.valueOf(remoteVersion[0]) && Integer.valueOf(localVersion[1]) >= Integer.valueOf(remoteVersion[1]);
         } catch (IOException e) {
             e.printStackTrace();
             return false;

@@ -61,7 +61,7 @@ public class CardViewerInfo {
     public BufferedImage getImage() {
         return CachedImagesProvider.getInstance().getImage(frontFace, 0, true);
     }
- 
+
     public BufferedImage getBackFaceImage() {
         return backFace == MagicCardDefinition.UNKNOWN
             ? MagicImages.BACK_IMAGE
@@ -83,7 +83,7 @@ public class CardViewerInfo {
     public boolean usesStack() {
         return frontFace.usesStack();
     }
-    
+
     private MagicCardDefinition getFrontFace(MagicCardOnStack aCard) {
         return aCard.getController().isHuman() || MagicSystem.isAiVersusAi()
             ? aCard.getRealCardDefinition()

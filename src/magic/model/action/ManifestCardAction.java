@@ -13,7 +13,7 @@ public class ManifestCardAction extends PlayCardAction {
     public ManifestCardAction(final MagicCard card, final MagicPlayer player) {
         super(card, player, MagicPlayMod.MANIFEST);
     }
-    
+
     @Override
     public void doAction(final MagicGame game) {
         final MagicCardOnStack cardOnStack = new MagicCardOnStack(

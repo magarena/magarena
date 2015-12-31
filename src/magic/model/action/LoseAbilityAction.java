@@ -17,7 +17,7 @@ public class LoseAbilityAction extends MagicAction {
     private final MagicPermanent permanent;
     private final MagicAbilityList abilityList;
     private final boolean duration;
-    
+
     public LoseAbilityAction(final MagicPermanent permanent,final MagicAbilityList abilityList, final boolean duration) {
         this.permanent=permanent;
         this.abilityList=abilityList;
@@ -27,7 +27,7 @@ public class LoseAbilityAction extends MagicAction {
     public LoseAbilityAction(final MagicPermanent permanent,final Set<MagicAbility> abilities, final boolean duration) {
         this(permanent,MagicAbility.getAbilityList(abilities), duration);
     }
-    
+
     public LoseAbilityAction(final MagicPermanent permanent,final MagicAbilityList abilityList) {
         this(permanent,abilityList,MagicStatic.UntilEOT);
     }

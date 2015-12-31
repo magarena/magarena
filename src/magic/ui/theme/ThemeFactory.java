@@ -39,7 +39,7 @@ public class ThemeFactory {
         loadCustomExternalThemes();
         setCurrentTheme(GeneralConfig.getInstance().getTheme());
     }
-    
+
     private void loadCustomExternalThemes() {
         final File[] files = MagicFileSystem.getDataPath(DataPath.MODS).toFile().listFiles(THEME_FILE_FILTER);
         if (files != null) {

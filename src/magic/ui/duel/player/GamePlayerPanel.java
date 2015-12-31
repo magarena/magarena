@@ -19,7 +19,7 @@ import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class GamePlayerPanel extends TexturedPanel implements IChoiceViewer {
-    
+
     private PlayerViewerInfo playerInfo;
     private PlayerZoneButtonsPanel zoneButtonsPanel;
     private PlayerImagePanel avatarPanel;

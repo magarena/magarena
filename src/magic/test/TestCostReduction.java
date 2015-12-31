@@ -29,7 +29,7 @@ class TestCostReduction extends TestGameBuilder {
         addToHand(P, "Ruby Medallion", 1);
         addToHand(P, "Enrage", 1);
         addToHand(P, "Bonfire of the Damned", 1);
-        
+
         P = opponent;
 
         P.setLife(4);
@@ -38,7 +38,7 @@ class TestCostReduction extends TestGameBuilder {
         createPermanent(P, "Mountain", false, 6);
         addToHand(P, "Bonfire of the Damned", 1);
         addToHand(P, "Ruby Medallion", 1);
-        
+
         return game;
     }
 }

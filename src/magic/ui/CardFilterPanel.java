@@ -135,9 +135,9 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     private int totalFilteredCards = 0;
     private int playableCards = 0;
     private int missingCards = 0;
-    
+
     private static List<MagicCardDefinition> cardPool;
-    
+
     private boolean disableUpdate; // so when we change several filters, it doesn't update until the end
 
     public CardFilterPanel(final ICardFilterPanelListener aListener) {
@@ -147,7 +147,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
         cardPool = listener.isDeckEditor()
             ? CardDefinitions.getDefaultPlayableCardDefs()
             : CardDefinitions.getAllCards();
-        
+
         disableUpdate = false;
 
         layout.setLayoutConstraints("flowy, wrap 2, gap 4");

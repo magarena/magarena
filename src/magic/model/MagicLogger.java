@@ -34,7 +34,7 @@ public class MagicLogger {
     public void log(final String message) {
         sb.append(message).append("\n");
     }
-    
+
     public void writeLog() {
         sb.append("WRITTEN ON ").append(new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date()));
         sb.append('\n');

@@ -55,7 +55,7 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
         final MagicActivationPriority actpri = player.getActivationPriority();
         actpri.setPriority(priority);
         actpri.setActivationId(id);
-        
+
         // reset activation/priority of opponent
         player.getOpponent().getActivationPriority().clear();
     }
@@ -97,7 +97,7 @@ public abstract class MagicActivation<T extends MagicSource> implements MagicEve
         }
 
         // Check able to pay costs
-        // 
+        //
         // Current method of using MagicCondition could lead to unpayable costs in certain cases:
         // * self needed to tap to pay mana cost, but self must tap as part of cost
         // Ideally execute each event with the first choice, if all events have choices then cost can be paid

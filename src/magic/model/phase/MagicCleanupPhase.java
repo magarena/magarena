@@ -74,7 +74,7 @@ public class MagicCleanupPhase extends MagicPhase {
             game.setStep(MagicStep.ActivePlayer);
         }
     }
-    
+
     @Override
     public void executeEndOfPhase(final MagicGame game) {
         nextTurn(game);

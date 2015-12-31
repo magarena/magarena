@@ -210,7 +210,7 @@ final public class GraphicsUtils {
         } catch (IOException e) {
             e.printStackTrace();
         }
-                
+
         return (image != null) ?
             GraphicsUtils.getOptimizedImage(image) :
             MagicStyle.getTheme().getTexture(Theme.TEXTURE_BACKGROUND);
@@ -243,7 +243,7 @@ final public class GraphicsUtils {
     }
 
     public static BufferedImage getConvertedIcon(final ImageIcon icon) {
-        final BufferedImage bi = 
+        final BufferedImage bi =
                 GraphicsUtils.getCompatibleBufferedImage(
                         icon.getIconWidth(), icon.getIconHeight(), Transparency.TRANSLUCENT);
         final Graphics g = bi.createGraphics();

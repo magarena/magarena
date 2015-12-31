@@ -24,7 +24,7 @@ class TestColfenorsUrn extends TestGameBuilder {
         createPermanent(P, "Megatog", false, 3);
         createPermanent(P, "Colfenor's Urn", false, 1);
         addToHand(P, "Wrath of God", 1);
-        
+
         P = opponent;
 
         P.setLife(2);

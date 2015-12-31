@@ -27,7 +27,7 @@ class TestSlowLog extends TestGameBuilder {
         createPermanent(P, "Chromatic Lantern", false, 1);
         createPermanent(P, "Grizzly Bears", false, 1);
         addToHand(P, "Lightning Bolt", 15);
-        
+
         P = opponent;
 
         P.setLife(2);
@@ -35,11 +35,11 @@ class TestSlowLog extends TestGameBuilder {
         createPermanent(P, "Island", false, 7);
         createPermanent(P, "Chromatic Lantern", false, 1);
         createPermanent(P, "Grizzly Bears", false, 1);
-        
+
         for (int i = 0; i < 1000; i++) {
             game.logMessage(P, "msg " + i);
         }
-        
+
         return game;
     }
 }

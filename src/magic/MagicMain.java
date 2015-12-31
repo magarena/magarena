@@ -29,7 +29,7 @@ public class MagicMain {
         Thread.setDefaultUncaughtExceptionHandler(new UiExceptionHandler());
 
         setSplashScreen();
-       
+
         System.out.println(MagicSystem.getRuntimeParameters());
         parseCommandline(args);
 
@@ -44,7 +44,7 @@ public class MagicMain {
             final double duration = (double)(System.currentTimeMillis() - start_time) / 1000;
             System.err.println("Initalization of engine took " + duration + "s");
         }
-        
+
         // try to set the look and feel
         setLookAndFeel("Nimbus");
         reporter.setMessage("Starting UI...");
@@ -54,7 +54,7 @@ public class MagicMain {
             }
         });
     }
-        
+
     private static void setLookAndFeel(final String laf) {
         try {
             for (final LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
@@ -112,7 +112,7 @@ public class MagicMain {
         if (MagicSystem.isAiVersusAi()) {
             final DuelConfig config = DuelConfig.getInstance();
             config.load();
-            
+
             // set both player profile to AI for AI vs AI mode
             config.setPlayerProfile(0, config.getPlayerProfile(1));
 
@@ -122,7 +122,7 @@ public class MagicMain {
 
         // normal UI startup.
         ScreenController.showStartScreen();
-        
+
     }
 
     private static void parseCommandline(final String[] args) {

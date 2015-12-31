@@ -39,7 +39,7 @@ class DeckPanel extends JPanel implements IDeckEditorView {
     public static final String CP_ADD_TO_DECK = "addCardToDeck";
     // fired on remove card from deck action.
     public static final String CP_REMOVE_FROM_DECK = "removeCardFromDeck";
-   
+
     // UI components
     private final CardQuantityActionPanel quantityPanel;
     private final DeckTablePanel deckTablePanel;
@@ -50,7 +50,7 @@ class DeckPanel extends JPanel implements IDeckEditorView {
     private final List<ActionBarButton> actionButtons = new ArrayList<>();
 
     DeckPanel(final MagicDeck originalDeck, final IDeckEditorListener aListener, final CardQuantityActionPanel aPanel) {
-        
+
         this.quantityPanel = aPanel;
         this.listener = aListener;
         this.originalDeck = originalDeck;
@@ -82,7 +82,7 @@ class DeckPanel extends JPanel implements IDeckEditorView {
         }
         return deckCopy;
     }
-   
+
     private ActionBarButton getClearDeckActionButton() {
         return new ActionBarButton(
                 MagicImages.getIcon(MagicIcon.CLEAR_ICON),
@@ -224,7 +224,7 @@ class DeckPanel extends JPanel implements IDeckEditorView {
     }
 
     void updateOriginalDeck() {
-        originalDeck.setContent(deck);        
+        originalDeck.setContent(deck);
     }
 
     boolean isUpdatingExistingDeck() {
@@ -250,7 +250,7 @@ class DeckPanel extends JPanel implements IDeckEditorView {
 
     @Override
     public void doMinusButtonAction() {
-        removeSelectedCardFromDeck(false);        
+        removeSelectedCardFromDeck(false);
     }
 
     @Override

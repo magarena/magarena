@@ -28,7 +28,7 @@ public class MagicTrampleTargetPicker extends MagicTargetPicker<MagicPermanent> 
                 for (final MagicPermanent blocker : blockers) {
                     blockersToughness += blocker.getToughness();
                 }
-                if (blockersToughness < power || 
+                if (blockersToughness < power ||
                    (permanent.hasAbility(MagicAbility.Deathtouch) && power > blockers.size())) {
                     return 10+power;
                 }

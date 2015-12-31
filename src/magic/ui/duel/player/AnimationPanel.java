@@ -20,7 +20,7 @@ public class AnimationPanel extends JPanel {
     private static final int PULSE_BORDER_OFFSET = PULSE_BORDER_WIDTH / 2;
     private static final Stroke PULSE_BORDER_STROKE = new BasicStroke(PULSE_BORDER_WIDTH);
     private static final Color PULSE_BORDER_COLOR = ThemeFactory.getInstance().getCurrentTheme().getColor(Theme.COLOR_CHOICE_BORDER);
-    
+
     private int pulsingBorderOpacity = 0;
     private final Timeline pulseBorderTimeline = new Timeline();
 

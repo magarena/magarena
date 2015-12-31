@@ -38,7 +38,7 @@ public final class GameStateFileWriter {
             throw new RuntimeException(ex);
         }
     }
-    
+
     private static void setGameProperties(final Properties properties, final GameState gameState) {
         properties.setProperty(PROP_Version, GeneralConfig.VERSION);
         properties.setProperty(PROP_PlayerCount, Integer.toString(gameState.getPlayers().size()));

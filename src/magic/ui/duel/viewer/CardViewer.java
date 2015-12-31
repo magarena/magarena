@@ -66,7 +66,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
         }
 
     }
-    
+
     private void setDelayedVisibilityTimer() {
         timer = new Timer(0, new ActionListener() {
             @Override
@@ -74,7 +74,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
                 setVisible(true);
             }
         });
-        timer.setRepeats(false);        
+        timer.setRepeats(false);
     }
 
     private void setTransformCardListener() {
@@ -121,7 +121,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
     }
 
     public void setCard(final MagicCardDefinition cardDefinition, final int index) {
-        
+
         if (cardDefinition == null) {
             currentCardDefinition = MagicCardDefinition.UNKNOWN;
             setCardImage(MagicImages.getMissingCardImage());

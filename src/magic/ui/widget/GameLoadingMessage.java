@@ -18,7 +18,7 @@ public class GameLoadingMessage {
         "assembling Urzatron",
         "seasoning flavor text"
     };
-    
+
     private static final Color COLOR1 = new Color(255, 255, 255, 0);
     private static final Color COLOR2 = new Color(255, 255, 255, 180);
     private static final Font MSGFONT = new Font("Dialog", Font.BOLD, 24);
@@ -29,8 +29,8 @@ public class GameLoadingMessage {
 
     public GameLoadingMessage() {
         message = getRandomWaitMessage();
-    }        
-    
+    }
+
     private String getRandomWaitMessage() {
         final Random rand = new Random();
         return "..." + MSG[rand.nextInt(MSG.length)] + "..." ;

@@ -26,13 +26,13 @@ public class BecomesAction extends MagicAction {
     private final boolean additionTo;
 
     public BecomesAction(
-        final MagicPermanent aPermanent, 
-        final int[] aPt, 
-        final Set<MagicColor> aColor, 
-        final Set<MagicSubType> aSubType, 
-        final Set<MagicType> aType, 
-        final MagicAbilityList aAbility, 
-        final boolean aDuration, 
+        final MagicPermanent aPermanent,
+        final int[] aPt,
+        final Set<MagicColor> aColor,
+        final Set<MagicSubType> aSubType,
+        final Set<MagicType> aType,
+        final MagicAbilityList aAbility,
+        final boolean aDuration,
         final boolean aAdditionTo
     ) {
         permanent = aPermanent;
@@ -44,7 +44,7 @@ public class BecomesAction extends MagicAction {
         duration=aDuration;
         additionTo=aAdditionTo;
     }
-    
+
     public BecomesAction(final MagicPermanent aPermanent, final Set<MagicColor> aColor, final boolean aDuration, final boolean aAdditionTo) {
         this(aPermanent, null, aColor, Collections.<MagicSubType>emptySet(), Collections.<MagicType>emptySet(), null, aDuration, aAdditionTo);
     }
@@ -86,7 +86,7 @@ public class BecomesAction extends MagicAction {
                         return flags | mask;
                     // if color change replaces original color, return changes
                     } else {
-                        return mask; 
+                        return mask;
                     }
                 }
             };
@@ -102,7 +102,7 @@ public class BecomesAction extends MagicAction {
                 @Override
                 public int getTypeFlags(final MagicPermanent permanent,final int flags) {
                     // turning into an artifact creature retains previous types
-                    if (additionTo || (type.contains(MagicType.Creature) && type.contains(MagicType.Artifact))) { 
+                    if (additionTo || (type.contains(MagicType.Creature) && type.contains(MagicType.Artifact))) {
                         return flags | mask;
                     } else {
                         return mask;
@@ -116,7 +116,7 @@ public class BecomesAction extends MagicAction {
                 @Override
                 public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
                     // turning into an artifact creature retains previous subtypes
-                    if (additionTo || (type.contains(MagicType.Creature) && type.contains(MagicType.Artifact))) { 
+                    if (additionTo || (type.contains(MagicType.Creature) && type.contains(MagicType.Artifact))) {
                         flags.addAll(subType);
                     } else {
                         flags.clear();

@@ -80,7 +80,7 @@ public class MagicMessage {
 
         for (int idx = 0; result.indexOf('$') >= 0; idx++) {
 
-            final String choice = (idx < choices.length && choices[idx] != null) 
+            final String choice = (idx < choices.length && choices[idx] != null)
                 ? getCardToken(choices[idx])
                 : "";
 
@@ -91,7 +91,7 @@ public class MagicMessage {
     }
 
     private static final String CARD_TOKEN = "<%s" + CARD_ID_DELIMITER + "%d>";
-    
+
     public static String getXCost(final Object obj) {
         if (obj != null && obj instanceof MagicPayedCost) {
             return "X (" + ((MagicPayedCost)obj).getX() + ")";

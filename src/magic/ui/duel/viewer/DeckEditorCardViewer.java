@@ -10,7 +10,7 @@ import magic.model.MagicCardDefinition;
 
 @SuppressWarnings("serial")
 public class DeckEditorCardViewer extends CardViewer {
-    
+
     private final static Dimension COUNTER_SIZE = new Dimension(100, 461);
     private int cardCount = 0;
 
@@ -25,7 +25,7 @@ public class DeckEditorCardViewer extends CardViewer {
         final int x = (getWidth() - COUNTER_SIZE.width) / 2;
         drawCardCount(g, x, 30, COUNTER_SIZE.width, COUNTER_SIZE.height);
     }
-    
+
     private void drawCardCount(Graphics g, int X, int Y, int W, int H) {
         if (cardCount > 0) {
             Graphics2D g2d = (Graphics2D)g;

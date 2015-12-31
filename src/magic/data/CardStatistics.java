@@ -58,7 +58,7 @@ public class CardStatistics {
             MagicIcon.ARTIFACT
         )
     );
-    
+
     private final Collection<MagicCardDefinition> cards;
 
     public int totalCards;

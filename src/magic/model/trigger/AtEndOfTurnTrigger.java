@@ -57,7 +57,7 @@ public abstract class AtEndOfTurnTrigger extends MagicTrigger<MagicPlayer> {
             game.doAction(new SacrificeAction(event.getPermanent()));
         }
     };
-    
+
     public static final AtEndOfTurnTrigger Destroy = new AtEndOfTurnTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer eotPlayer) {

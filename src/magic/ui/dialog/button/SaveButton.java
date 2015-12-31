@@ -9,7 +9,7 @@ public class SaveButton extends MagicDialogButton {
 
     // translatable strings
     private static final String _S1 = "Save";
-    
+
     public SaveButton(String text) {
         super(text);
         setIcon(MagicImages.getIcon(MagicIcon.LEGAL_ICON));

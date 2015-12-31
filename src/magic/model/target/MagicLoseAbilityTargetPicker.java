@@ -19,21 +19,21 @@ public class MagicLoseAbilityTargetPicker extends MagicTargetPicker<MagicPermane
         }
         final int power = permanent.getPower();
         if ((permanent.hasAbility(ability) && permanent.isBlocking()) &&
-           (ability != MagicAbility.Flying || 
-            ability != MagicAbility.Defender || 
-            ability != MagicAbility.Trample || 
+           (ability != MagicAbility.Flying ||
+            ability != MagicAbility.Defender ||
+            ability != MagicAbility.Trample ||
             ability != MagicAbility.Haste)
            ) {
             return 120 + power;
         }
         if ((permanent.hasAbility(ability) && permanent.isBlocked()) &&
-           (ability != MagicAbility.Flying || 
-            ability != MagicAbility.Defender || 
+           (ability != MagicAbility.Flying ||
+            ability != MagicAbility.Defender ||
             ability != MagicAbility.Haste)
            ) {
             return 120 + power;
         }
-        if (permanent.hasAbility(ability) && permanent.isAttacking() && 
+        if (permanent.hasAbility(ability) && permanent.isAttacking() &&
            (ability != MagicAbility.Defender ||
             ability != MagicAbility.Haste)) {
             return 120 + power;

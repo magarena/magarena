@@ -20,7 +20,7 @@ public class MagicTuckCardEvent extends MagicEvent {
             "PN puts a card from his or her hand on the bottom of his or her library."
         );
     }
-    
+
     public MagicTuckCardEvent(final MagicSource source, final MagicPlayer player, final boolean log) {
         super(
             source,
@@ -30,7 +30,7 @@ public class MagicTuckCardEvent extends MagicEvent {
             ""
         );
     }
-    
+
     private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

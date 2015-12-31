@@ -46,7 +46,7 @@ class LogStackViewer extends JPanel {
     private MessageStyle messageStyle = GeneralConfig.getInstance().getLogMessageStyle();
 
     LogStackViewer(LogViewer aLogBookViewer, StackViewer aStackViewer) {
-        
+
         this.logViewer = aLogBookViewer;
         this.stackViewer = aStackViewer;
 
@@ -164,7 +164,7 @@ class LogStackViewer extends JPanel {
         final boolean isLogVisible = !isLogVisible();
         GeneralConfig.getInstance().setLogMessagesVisible(isLogVisible);
         setLogVisible(isLogVisible);
-        GeneralConfig.getInstance().save();        
+        GeneralConfig.getInstance().save();
     }
 
 }

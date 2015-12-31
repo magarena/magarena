@@ -28,7 +28,7 @@ public class MagicPlayChoice extends MagicChoice {
     private static final String _S_CONTINUE_MESSAGE = "Click {f} or Space to pass.";
     @StringContext(eg = "| represents a new line. Position to fit text in user prompt.")
     private static final String _S_SKIP_MESSAGE = "Right click {f} or Shift+Space to|skip till end of turn.";
-    
+
     private static final String MESSAGE = String.format("%s|%s|[%s]",
             UiString.get(_S_PLAY_MESSAGE),
             UiString.get(_S_CONTINUE_MESSAGE),
@@ -91,11 +91,11 @@ public class MagicPlayChoice extends MagicChoice {
     public Object[] getPlayerChoiceResults(final IUIGameController controller, final MagicGame game, final MagicEvent event) throws UndoClickedException {
         final MagicPlayer player = event.getPlayer();
         final MagicSource source = event.getSource();
-        
+
         controller.focusViewers(0);
 
         //always pass draw and begin combat if
-        //  option is true and 
+        //  option is true and
         //  stack is empty
         if (game.canAlwaysPass() && game.getStack().isEmpty()) {
             return PASS_CHOICE_RESULTS;
@@ -147,7 +147,7 @@ public class MagicPlayChoice extends MagicChoice {
         if (game.shouldSkip()) {
             if (game.getStack().isEmpty() == false) {
                 game.clearSkipTurnTill();
-            } else if (game.isPhase(MagicPhaseType.DeclareAttackers) && game.getNrOfPermanents(MagicPermanentState.Attacking) > 0) { 
+            } else if (game.isPhase(MagicPhaseType.DeclareAttackers) && game.getNrOfPermanents(MagicPermanentState.Attacking) > 0) {
                 game.clearSkipTurnTill();
             } else {
                 return PASS_CHOICE_RESULTS;
@@ -173,7 +173,7 @@ public class MagicPlayChoice extends MagicChoice {
             return PASS_CHOICE_RESULTS;
         }
 
-        final MagicSource activationSource = controller.getChoiceClicked(); 
+        final MagicSource activationSource = controller.getChoiceClicked();
         final List<MagicPlayChoiceResult> results=new ArrayList<>();
         for (final MagicSourceActivation<? extends MagicSource> sourceActivation : activationSource.getSourceActivations()) {
             if (sourceActivation.canPlay(game,player,false)) {

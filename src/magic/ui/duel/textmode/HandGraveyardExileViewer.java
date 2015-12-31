@@ -58,7 +58,7 @@ class HandGraveyardExileViewer extends JPanel implements ChangeListener {
             viewer.update();
         }
     }
-    
+
     void showCards(final MagicCardList cards) {
         other.clear();
         other.addAll(cards);

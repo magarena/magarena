@@ -24,7 +24,7 @@ public class MagicCyclingActivation extends MagicCardAbilityActivation {
         );
         matchedCost = aMatchedCost;
     }
-    
+
     public MagicCyclingActivation(final MagicMatchedCostEvent aMatchedCost) {
         this(aMatchedCost, "Cycle");
     }
@@ -41,7 +41,7 @@ public class MagicCyclingActivation extends MagicCardAbilityActivation {
     public MagicEvent getCardEvent(final MagicCard card, final MagicPayedCost payedCost) {
         return new MagicDrawEvent(card, card.getController(), 1);
     }
-    
+
     @Override
     public MagicEvent getEvent(final MagicSource source) {
         return new MagicEvent(

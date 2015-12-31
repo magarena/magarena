@@ -32,7 +32,7 @@ public class DuelConfig {
 
     // CTR
     public DuelConfig() {
-        
+
         // Ensure DuelConfig has valid PlayerProfile references.
         // If missing then creates default profiles.
         PlayerProfiles.refreshMap();

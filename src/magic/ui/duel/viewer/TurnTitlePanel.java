@@ -35,7 +35,7 @@ public class TurnTitlePanel extends JPanel {
     private static final String _S3 = "First player to %d wins the duel.";
     @StringContext(eg = "as in 'Game 2 of 3'")
     private static final String _S4 = "Game %d / %d";
-    private static final String _S5 = "Turn %d"; 
+    private static final String _S5 = "Turn %d";
 
     private final MigLayout miglayout = new MigLayout();
     private final JLabel scoreLabel = new JLabel();
@@ -118,7 +118,7 @@ public class TurnTitlePanel extends JPanel {
                 gameInfo.getTurnPlayer().getName())
         );
     }
-    
+
     private String getScoreString(final GameViewerInfo gameInfo) {
         return String.format("%s %d - %d %s",
                 gameInfo.getPlayerInfo(false).getName(),

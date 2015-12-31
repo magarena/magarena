@@ -52,13 +52,13 @@ public class SplitterButton extends JButton {
                 repaint();
             }
         });
-        
+
     }
 
     public SplitterButton() {
         this(null);
     }
-    
+
     public void setIsArrowUp(final boolean b) {
         this.isArrowUp = b;
         isMouseOver = false;
@@ -105,5 +105,5 @@ public class SplitterButton extends JButton {
         p.addPoint(x + TRIANGLE_WIDTH, y + 1);
         return p;
     };
-    
+
 }

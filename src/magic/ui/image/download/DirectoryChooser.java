@@ -35,7 +35,7 @@ class DirectoryChooser extends JPanel {
     private static final String _S5 = "Card images folder";
     private static final String _S6 = "Card images will be downloaded here into the \"cards\" and \"tokens\" sub-folders. Double-click to to open this location in file manager.";
     private static final String _S7 = "Select or create a new folder in which card images will be stored.";
-    
+
     private static final long MIN_FREE_SPACE = 1610612736; // bytes = 1.5 GB
 
     private final MigLayout layout = new MigLayout();
@@ -50,7 +50,7 @@ class DirectoryChooser extends JPanel {
         setLayout(layout);
         refreshLayout();
     }
-    
+
     private void openFolderInFileManager() {
         setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
         try {

@@ -63,7 +63,7 @@ public class MagicFrame extends JFrame implements IImageDragDropListener {
     public MagicFrame(final String frameTitle) {
 
         ToolTipManager.sharedInstance().setInitialDelay(400);
-        
+
         config = GeneralConfig.getInstance();
 
         // Setup frame.

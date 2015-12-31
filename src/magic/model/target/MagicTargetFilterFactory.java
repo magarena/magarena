@@ -377,7 +377,7 @@ public class MagicTargetFilterFactory {
             return target.isLand() && !target.hasType(MagicType.Basic) && target.isController(player);
         }
     };
-    
+
     public static final MagicPermanentFilterImpl NON_LAIR_LAND_YOU_CONTROL=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
             return target.isLand() && !target.hasSubType(MagicSubType.Lair) && target.isController(player);
@@ -1063,7 +1063,7 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl TAPPED_CREATURE = MagicTargetFilterFactory.creature(MagicPermanentState.Tapped, Control.Any);
 
     public static final MagicPermanentFilterImpl TAPPED_CREATURE_YOU_CONTROL = MagicTargetFilterFactory.creature(MagicPermanentState.Tapped, Control.You);
-    
+
     public static final MagicPermanentFilterImpl TAPPED_CREATURE_AN_OPPONENT_CONTROLS = MagicTargetFilterFactory.creature(MagicPermanentState.Tapped, Control.Opp);
 
     public static final MagicPermanentFilterImpl TAPPED_ARTIFACT_YOU_CONTROL = MagicTargetFilterFactory.permanent(MagicPermanentState.Tapped, MagicType.Artifact, Control.You);
@@ -1092,7 +1092,7 @@ public class MagicTargetFilterFactory {
                    target.isController(player);
         }
     };
-    
+
     public static final MagicPermanentFilterImpl UNTAPPED_ISLAND_YOU_CONTROL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
             return target.hasSubType(MagicSubType.Island) &&
@@ -1530,7 +1530,7 @@ public class MagicTargetFilterFactory {
             return targetType == MagicTargetType.Graveyard;
         }
     };
-    
+
     public static final MagicCardFilterImpl COLORLESS_CREATURE_CARD_FROM_LIBRARY=new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
             return MagicColor.isColorless(target) && target.isCreature();
@@ -1921,7 +1921,7 @@ public class MagicTargetFilterFactory {
             return targetType == MagicTargetType.Hand;
         }
     };
-    
+
     public static final MagicCardFilterImpl NONCREATURE_CARD_FROM_HAND = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
             return target.hasType(MagicType.Creature) == false;

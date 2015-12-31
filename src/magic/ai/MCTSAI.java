@@ -69,7 +69,7 @@ public class MCTSAI implements MagicAI {
     static double UCB1_C = 0.4;
     static double RATIO_K = 1.0;
     private int sims = 0;
-    
+
     private static final int THREADS = Runtime.getRuntime().availableProcessors();
 
     static {
@@ -126,14 +126,14 @@ public class MCTSAI implements MagicAI {
         if (size == 1) {
             return startGame.map(RCHOICES.get(0));
         }
-        
+
         //root represents the start state
         final MCTSGameTree root = MCTSGameTree.getNode(CACHE, aiGame, RCHOICES);
 
         log("MCTS cached=" + root.getNumSim());
-        
+
         sims = 0;
-        final ExecutorService executor = Executors.newFixedThreadPool(THREADS); 
+        final ExecutorService executor = Executors.newFixedThreadPool(THREADS);
         final BlockingQueue<Runnable> queue = new LinkedBlockingQueue<>();
 
         // ensure tree update runs at least once
@@ -146,9 +146,9 @@ public class MCTSAI implements MagicAI {
                 TreeUpdate(this, root, aiGame, executor, queue, END_TIME, RCHOICES);
             }
         };
-        
+
         updateTask.run();
-        
+
         try {
             // wait for artificialLevel + 1 seconds for jobs to finish
             executor.awaitTermination(aiLevel + 1, TimeUnit.SECONDS);
@@ -210,10 +210,10 @@ public class MCTSAI implements MagicAI {
 
     public void TreeUpdate(
         final Runnable updateTask,
-        final MCTSGameTree root, 
-        final MagicGame aiGame, 
-        final ExecutorService executor, 
-        final BlockingQueue<Runnable> queue, 
+        final MCTSGameTree root,
+        final MagicGame aiGame,
+        final ExecutorService executor,
+        final BlockingQueue<Runnable> queue,
         final long END_TIME,
         final List<Object[]> RCHOICES
     ) {
@@ -232,14 +232,14 @@ public class MCTSAI implements MagicAI {
 
         //clone the MagicGame object for simulation
         final MagicGame rootGame = new MagicGame(aiGame, aiGame.getScorePlayer());
-        
+
         //pass in a clone of the state,
         //genNewTreeNode grows the tree by one node
         //and returns the path from the root to the new node
         final LinkedList<MCTSGameTree> path = growTree(root, rootGame, RCHOICES);
 
         assert path.size() >= 2 : "ERROR! length of MCTS path is " + path.size();
-        
+
         // play a simulated game to get score
         // update all nodes along the path from root to new node
 
@@ -254,7 +254,7 @@ public class MCTSAI implements MagicAI {
                 return;
             }
         }
-        
+
         // virtual loss + game theoretic value propagation
         final Iterator<MCTSGameTree> iter = path.descendingIterator();
         MCTSGameTree child = null;
@@ -278,7 +278,7 @@ public class MCTSAI implements MagicAI {
                 }
             }
         }
-       
+
         // end simulations once root is AI win or time is up
         if (running && root.isAIWin() == false) {
             try {
@@ -450,7 +450,7 @@ public class MCTSAI implements MagicAI {
             return 1.0 - counts[0] / (2.0 * MAX_CHOICES);
         }
     }
-    
+
     private int[] runSimulation(final MagicGame game) {
 
         int aiChoices = 0;
@@ -465,7 +465,7 @@ public class MCTSAI implements MagicAI {
                !Thread.currentThread().isInterrupted() &&
                game.advanceToNextEventWithChoice()) {
             final MagicEvent event = game.getNextEvent();
-            
+
             if (event.getPlayer() == game.getScorePlayer()) {
                 aiChoices++;
             } else {
@@ -713,11 +713,11 @@ class MCTSGameTree implements Iterable<MCTSGameTree> {
     boolean isSolved() {
         return evalScore == Integer.MAX_VALUE || evalScore == Integer.MIN_VALUE;
     }
-    
+
     void recordVirtualLoss() {
         numSim++;
     }
-    
+
     void removeVirtualLoss() {
         numSim--;
     }

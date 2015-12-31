@@ -59,13 +59,13 @@ public class URLUtils {
         if (url == null)
             return false;
 
-        try {            
+        try {
             final HttpURLConnection huc = (HttpURLConnection) url.openConnection();
             huc.setRequestMethod("HEAD");
             huc.setConnectTimeout(2000);
             final int responseCode = huc.getResponseCode();
             return responseCode == HttpURLConnection.HTTP_OK;
-        
+
         } catch (IOException ex) {
             return false;
         }

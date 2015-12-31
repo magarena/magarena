@@ -61,7 +61,7 @@ public class ImageCardListViewer extends JPanel implements IChoiceViewer {
     private int cardStep = 0;
 
     public ImageCardListViewer(final SwingGameController controller) {
-        
+
         setOpaque(false);
 
         this.controller=controller;
@@ -230,7 +230,7 @@ public class ImageCardListViewer extends JPanel implements IChoiceViewer {
         SwingUtilities.convertPointFromScreen(mousePoint, this);
         Rectangle mouseOverRect = new Rectangle();
         final CardImagesProvider imageCache = CachedImagesProvider.getInstance();
-        
+
         for (int index=0; index < cardList.size(); index++) {
             final MagicCard card=cardList.get(index);
             final MagicCardDefinition cardDefinition=card.getCardDefinition();
@@ -239,7 +239,7 @@ public class ImageCardListViewer extends JPanel implements IChoiceViewer {
             final int y1=point.y;
             final int x2=point.x+CARD_WIDTH;
             final int y2=point.y+CARD_HEIGHT;
-                        
+
             final BufferedImage image = GraphicsUtils.scale(
                 imageCache.getImage(cardDefinition, card.getImageIndex(), true),
                 CARD_WIDTH,

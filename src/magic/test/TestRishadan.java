@@ -27,7 +27,7 @@ class TestRishadan extends TestGameBuilder {
         createPermanent(P,"Soldevi Digger",false,1);
         addToHand(P,"Howling Wolf",3);
         addToHand(P,"Skyshroud Sentinel",2);
-        
+
         addToGraveyard(P,"Skyshroud Sentinel",1);
         addToGraveyard(P,"Howling Wolf",1);
         addToGraveyard(P,"Golgari Cluestone",1);

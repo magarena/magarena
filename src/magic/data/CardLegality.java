@@ -8,7 +8,7 @@ public enum CardLegality {
     Banned(CardLegalityStrings._S3),
     Restricted(CardLegalityStrings._S4),
     TooManyCopies(CardLegalityStrings._S5);
-    
+
     private final String description;
 
     private CardLegality(String aString) {

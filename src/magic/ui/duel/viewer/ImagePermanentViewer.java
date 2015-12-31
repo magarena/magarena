@@ -251,19 +251,19 @@ public class ImagePermanentViewer extends JPanel {
 
         g.setFont(FontsAndBorders.FONT1);
         final FontMetrics metrics = g.getFontMetrics();
-        
+
         final Graphics2D g2d = (Graphics2D)g;
         g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BILINEAR);
 
         final Stroke defaultStroke = g2d.getStroke();
 
         final CardImagesProvider imageCache = CachedImagesProvider.getInstance();
-        
+
         for (int index = 0; index < linkedScreenRectangles.size(); index++) {
-            
+
             final PermanentViewerInfo linkedInfo = linkedInfos.get(index);
             final BufferedImage image = imageCache.getImage(linkedInfo.cardDefinition, linkedInfo.index, false);
-            
+
             final Rectangle linkedRect = linkedScreenRectangles.get(index);
             final int x1 = linkedRect.x;
             final int y1 = linkedRect.y;
@@ -301,11 +301,11 @@ public class ImagePermanentViewer extends JPanel {
                 // Mana symbols
                 if (linkedInfo.permanent.getManaActivations().size() > 0) {
                     ax = ImageDrawingUtils.drawManaInfo(
-                        g, 
-                        this, 
-                        linkedInfo.permanent.getManaActivations(), 
+                        g,
+                        this,
+                        linkedInfo.permanent.getManaActivations(),
                         linkedInfo.permanent.hasType(MagicType.Snow),
-                        ax, 
+                        ax,
                         ay
                     );
                 }

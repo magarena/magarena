@@ -22,13 +22,13 @@ public class TransformAction extends MagicAction {
     public void doAction(final MagicGame game) {
         if (permanent.isValid() && permanent.isDoubleFaced()) {
             oldStatics = permanent.getStatics();
-            
+
             if (permanent.isTransformed()) {
                 game.doAction(ChangeStateAction.Clear(permanent, MagicPermanentState.Transformed));
             } else {
                 game.doAction(ChangeStateAction.Set(permanent, MagicPermanentState.Transformed));
             }
-            
+
             newStatics = permanent.getStatics();
             game.removeStatics(permanent, oldStatics);
             game.addStatics(permanent, newStatics);

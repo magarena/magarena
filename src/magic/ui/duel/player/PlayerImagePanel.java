@@ -26,7 +26,7 @@ public class PlayerImagePanel extends AnimationPanel {
     private static final Font HEALTH_FONT = new Font("Dialog", Font.BOLD, 20);
 
     private final CounterOverlay poisonCounter;
-    private final CounterOverlay damageCounter;    
+    private final CounterOverlay damageCounter;
     private final BufferedImage activeImage;
     private final Image inactiveImage;
     private PlayerViewerInfo playerInfo;
@@ -51,7 +51,7 @@ public class PlayerImagePanel extends AnimationPanel {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        
+
         final Graphics2D g2d = (Graphics2D) g;
 
         g2d.drawImage(playerInfo.isPlayerTurn() ? activeImage : inactiveImage, 0, 0, this);
@@ -76,7 +76,7 @@ public class PlayerImagePanel extends AnimationPanel {
             drawPulsingBorder(g2d);
         } else {
             drawValidChoiceOverlay(g2d);
-        }        
+        }
     }
 
     private void drawValidChoiceOverlay(Graphics2D g2d) {
@@ -106,7 +106,7 @@ public class PlayerImagePanel extends AnimationPanel {
         final int textX = x + 4;
         final int textY = y + image.getHeight(null) - 6;
         GraphicsUtils.drawStringWithOutline(g2d, text, textX, textY);
-    }    
+    }
 
     public void updateDisplay(final PlayerViewerInfo playerInfo) {
         this.playerInfo = playerInfo;

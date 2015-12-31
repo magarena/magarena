@@ -27,7 +27,7 @@ public class MagicUnearthActivation extends MagicCardAbilityActivation {
         );
         cost = aCost;
     }
-    
+
     @Override
     public void change(final MagicCardDefinition cdef) {
         cdef.addGraveyardAct(this);
@@ -48,7 +48,7 @@ public class MagicUnearthActivation extends MagicCardAbilityActivation {
             "Return SN from PN's graveyard to the battlefield. It gains haste. Exile it at the beginning of the next end step or if it would leave the battlefield."
         );
     }
-    
+
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         game.doAction(new ReanimateAction(

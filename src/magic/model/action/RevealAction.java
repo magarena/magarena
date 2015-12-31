@@ -13,7 +13,7 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
 
 public class RevealAction extends MagicAction {
-    
+
     private final List<MagicCard> cards = new ArrayList<>();
 
     public RevealAction(final MagicCard aCard) {

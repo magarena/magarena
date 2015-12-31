@@ -21,7 +21,7 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
     public void change(final MagicCardDefinition cdef) {
         cdef.setEvent(this);
     }
-    
+
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         throw new RuntimeException(getClass() + " did not override executeEvent");
@@ -42,7 +42,7 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
             }
         };
     }
-   
+
     private static MagicSpellCardEvent Buyback(final String rule) {
         final MagicSourceEvent effect = MagicRuleEventAction.create(rule);
         return new MagicSpellCardEvent() {
@@ -74,7 +74,7 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
             }
         };
     }
-    
+
     private static MagicSpellCardEvent Entwine(final String rule) {
         final Pattern pattern = Pattern.compile("choose one — \\(1\\) (?<effect1>.*) \\(2\\) (?<effect2>.*)", Pattern.CASE_INSENSITIVE);
         final Matcher matcher = pattern.matcher(rule);
@@ -98,10 +98,10 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
             public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
                 return new MagicEvent(
                     cardOnStack,
-                    payedCost.isKicked() ? 
+                    payedCost.isKicked() ?
                         (choice1.isValid() ? choice1 : choice2):
                         new MagicOrChoice(
-                            choice1, 
+                            choice1,
                             choice2
                         ),
                     payedCost,

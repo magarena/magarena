@@ -111,5 +111,5 @@ public class DeckDescriptionViewer extends JPanel implements FocusListener {
             setDeckDescription("");
         }
     }
-        
+
 }

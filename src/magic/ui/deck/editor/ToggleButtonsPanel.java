@@ -17,7 +17,7 @@ class ToggleButtonsPanel extends TexturedPanel {
     ToggleButtonsPanel() {
         setBackground(DeckActionPanel.BACKGROUND_COLOR);
     }
-    
+
     void refreshLayout() {
         removeAll();
         setLayout(new MigLayout("insets 2 0 0 6, aligny top"));

@@ -27,7 +27,7 @@ public class MagicReinforceActivation extends MagicCardAbilityActivation {
             new MagicDiscardSelfEvent(source)
         );
     }
-    
+
     @Override
     public MagicEvent getCardEvent(final MagicCard card, final MagicPayedCost payedCost) {
         return new MagicPutCounterEvent(card, amount);

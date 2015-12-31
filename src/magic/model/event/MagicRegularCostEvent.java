@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class MagicRegularCostEvent implements MagicMatchedCostEvent {
-    
+
     private static final String COMMA = "\\s*,\\s*";
 
     private final Matcher arg;
@@ -37,7 +37,7 @@ public class MagicRegularCostEvent implements MagicMatchedCostEvent {
         }
         return matched;
     }
-    
+
     private static String capitalize(final String text) {
         return Character.toUpperCase(text.charAt(0)) + text.substring(1);
     }

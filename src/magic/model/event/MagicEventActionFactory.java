@@ -7,7 +7,7 @@ public class MagicEventActionFactory {
         return new MagicEventAction() {
             @Override
             public void executeEvent(final MagicGame game, final MagicEvent event) {
-                if (event.getTargetChoice().isValid() && 
+                if (event.getTargetChoice().isValid() &&
                     event.getTargetChoice().isTargeted() &&
                     event.hasLegalTarget(game) == false) {
                     //countered on resolution due to illegal target

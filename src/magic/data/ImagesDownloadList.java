@@ -25,7 +25,7 @@ public class ImagesDownloadList extends ArrayList<DownloadableFile> {
     }
 
     private void sortListByFilename() {
-        Collections.sort(this, (o1, o2) -> 
+        Collections.sort(this, (o1, o2) ->
             o1.getFilename().compareTo(o2.getFilename())
         );
     }

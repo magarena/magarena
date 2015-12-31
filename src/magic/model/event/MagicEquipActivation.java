@@ -22,7 +22,7 @@ public class MagicEquipActivation extends MagicPermanentActivation {
 
     private final List<MagicMatchedCostEvent> costs;
     private static final MagicMatchedCostEvent AI_MAX_TWICE = new MagicArtificialCondition(MagicCondition.ABILITY_TWICE_CONDITION);
-    
+
     public MagicEquipActivation(final List<MagicMatchedCostEvent> aCosts) {
         this(aCosts, "Equip");
     }

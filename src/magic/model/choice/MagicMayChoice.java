@@ -23,7 +23,7 @@ public class MagicMayChoice extends MagicChoice {
         new Object[]{YES_CHOICE},
         new Object[]{NO_CHOICE}
     );
-    
+
     private final MagicChoice[] choices;
     private final MagicTargetChoice targetChoice;
     private final int manaChoiceResultIndex;
@@ -45,7 +45,7 @@ public class MagicMayChoice extends MagicChoice {
             }
         };
     }
-    
+
     public MagicMayChoice(final String description,final MagicMatchedCostEvent cost) {
         this(description, satisfied(cost));
     }

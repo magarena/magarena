@@ -11,7 +11,7 @@ import magic.model.action.ChangeCountersAction;
 import magic.model.condition.MagicCondition;
 
 public class MagicOutlastActivation extends MagicPermanentActivation{
-    
+
     private static final MagicActivationHints HINT = new MagicActivationHints(MagicTiming.Pump);
     private static final MagicCondition COND[] = new MagicCondition[] {MagicCondition.SORCERY_CONDITION};
     private final List<MagicMatchedCostEvent> matchedCostEvents;
@@ -30,7 +30,7 @@ public class MagicOutlastActivation extends MagicPermanentActivation{
         }
         return costEvents;
     }
-    
+
     @Override
     public MagicEvent getPermanentEvent(MagicPermanent source, MagicPayedCost payedCost) {
         return new MagicEvent(

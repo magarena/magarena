@@ -25,7 +25,7 @@ class GameplayImagesPanel extends JPanel {
     private final JCheckBox mouseWheelPopupCheckBox;
     private final SliderPanel popupDelaySlider;
     private final JCheckBox pauseGamePopupCheckBox;
-    
+
     GameplayImagesPanel(final MouseListener aListener) {
 
         preferredSizePanel = new PreferredSizePanel(aListener);
@@ -50,7 +50,7 @@ class GameplayImagesPanel extends JPanel {
         add(mouseWheelPopupCheckBox);
         add(popupDelaySlider, "w 100%");
     }
-    
+
     void saveSettings() {
         preferredSizePanel.saveSettings();
         CONFIG.setMouseWheelPopup(mouseWheelPopupCheckBox.isSelected());

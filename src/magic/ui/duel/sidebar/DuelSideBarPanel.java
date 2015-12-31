@@ -35,7 +35,7 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
         LOGSTACK,
         TURNINFO;
     }
-    
+
     private static final int TOTAL_PLAYERS = 2;
 
     private final PlayerCompositePanel[] playerCompositePanels = new PlayerCompositePanel[TOTAL_PLAYERS];
@@ -66,7 +66,7 @@ public class DuelSideBarPanel extends JPanel implements IPlayerZoneListener {
     private void createPlayerPanels() {
 
         PlayerZoneButtonsPanel.clearButtonGroup();
-        
+
         final PlayerViewerInfo playerInfo = controller.getViewerInfo().getPlayerInfo(false);
 
         if (playerInfo.isAi() || MagicSystem.isAiVersusAi()) {

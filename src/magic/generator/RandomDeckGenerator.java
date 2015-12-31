@@ -92,7 +92,7 @@ public class RandomDeckGenerator {
     }
 
     public void generateDeck(final DeckGenerator deckGenerator) {
-        
+
         final MagicDeckProfile profile = deckGenerator.getDeckProfile();
         final MagicDeck deck = deckGenerator.getDeck();
         final int spells = deckGenerator.getSpellsCount();
@@ -104,9 +104,9 @@ public class RandomDeckGenerator {
 
         genSpells();
         genLands();
-        
+
         final int lands = profile.getNrOfNonBasicLands(deckGenerator.getLandsCount());
-       
+
         final int maxNonlandNoncreature = spells - maxCreatures;
         final int maxColorless = spells/6;
         final int maxHigh = spells/6;
@@ -138,7 +138,7 @@ public class RandomDeckGenerator {
         // Add spells to deck.
         boolean isGenSpellsCalled = false;
         while (condensedDeck.getNumCards() < spells && !spellCards.isEmpty()) {
-            
+
             final int index = MagicRandom.nextRNGInt(spellCards.size());
 
             final MagicCardDefinition cardDefinition=spellCards.get(index);
@@ -188,7 +188,7 @@ public class RandomDeckGenerator {
             }
 
         }
-        
+
         // Add nonbasic lands to deck.
         addRequiredLands(condensedDeck);
 

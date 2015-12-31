@@ -187,7 +187,7 @@ public final class ScreenController {
         screens.clear();
         showScreen(new ImportScreen());
     }
-    
+
     public static void showAboutDialog() {
         new AboutDialog(getMainFrame());
     }

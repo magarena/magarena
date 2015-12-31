@@ -22,7 +22,7 @@ class TestNoChoice extends TestGameBuilder {
         addToLibrary(P, "Forest", 20);
         createPermanent(P, "Vesper Ghoul", false, 1);
         createPermanent(P, "Foul Familiar", false, 1);
-        
+
         P = opponent;
 
         P.setLife(1);

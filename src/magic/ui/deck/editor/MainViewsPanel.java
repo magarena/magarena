@@ -42,7 +42,7 @@ class MainViewsPanel extends JPanel implements IDeckEditorListener {
         this.listener = aListener;
 
         deckActionPanel = new DeckActionPanel(getPlusButtonAction(), getMinusButtonAction());
-        
+
         deckPanel = new DeckPanel(deck, this, deckActionPanel.getQuantityPanel());
         cardPoolPanel = new CardPoolViewPanel(this, deckActionPanel.getQuantityPanel());
         recallPanel = new CardRecallPanel(this, deckActionPanel.getQuantityPanel());
@@ -138,7 +138,7 @@ class MainViewsPanel extends JPanel implements IDeckEditorListener {
             CardRecallPanel.CP_CARD_SELECTED,
             evt -> listener.cardSelected(getSelectedCard())
         );
-        
+
         // LegalityPanel
         legalityPanel.addPropertyChangeListener(
             LegalityPanel.CP_CARD_SELECTED,
@@ -167,7 +167,7 @@ class MainViewsPanel extends JPanel implements IDeckEditorListener {
             MagicSound.REMOVE_CARD.play();
         }
     }
-    
+
     private void refreshLayout() {
         removeAll();
         miglayout.setLayoutConstraints("insets 0, gap 0, flowx, wrap 2");

@@ -9,7 +9,7 @@ public class GameCardState {
     GameCardState(String cardName, int quantity, boolean tapped) {
         this.cardName = cardName;
         this.quantity = quantity;
-        this.isTapped = tapped;                
+        this.isTapped = tapped;
     }
     GameCardState(String cardName, int quantity) {
         this(cardName, quantity, false);

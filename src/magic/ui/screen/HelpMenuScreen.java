@@ -12,7 +12,7 @@ import magic.ui.widget.KeysStripPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class HelpMenuScreen extends AbstractScreen {   
+public class HelpMenuScreen extends AbstractScreen {
 
     // translatable strings
     private static final String _S1 = "Help Menu";

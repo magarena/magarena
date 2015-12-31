@@ -46,7 +46,7 @@ public class MagicMorphCastActivation extends MagicHandCastActivation {
             )
         );
     }
-    
+
     @Override
     public MagicEvent getEvent(final MagicSource source) {
         return new MagicEvent(
@@ -101,7 +101,7 @@ public class MagicMorphCastActivation extends MagicHandCastActivation {
             }
         };
     }
-    
+
     private final MagicEventAction EVENT_ACTION = new MagicEventAction() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
@@ -110,7 +110,7 @@ public class MagicMorphCastActivation extends MagicHandCastActivation {
             game.doAction(new PutItemOnStackAction(genMorphSpell(card)));
         }
     };
-    
+
     @Override
     public MagicEvent getEvent(final MagicCardOnStack cardOnStack,final MagicPayedCost payedCost) {
         return new MagicEvent(
@@ -119,7 +119,7 @@ public class MagicMorphCastActivation extends MagicHandCastActivation {
             "Put " + MagicMessage.getCardToken("face-down creature", cardOnStack.getCard()) + " onto the battlefield."
         );
     }
-    
+
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         final MagicCardOnStack spell = event.getCardOnStack();

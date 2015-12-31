@@ -15,7 +15,7 @@ public class MagicSourceManaActivationResult implements MagicMappable<MagicSourc
         this.permanent=permanent;
         this.activation=activation;
     }
-    
+
     @Override
     public MagicSourceManaActivationResult copy(final MagicCopyMap copyMap) {
         return new MagicSourceManaActivationResult(copyMap.copy(permanent), activation);

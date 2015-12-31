@@ -98,11 +98,11 @@ public class CardDefinitions {
         assert cardDef.getIndex() == -1 : "cardDefinition has been assigned index";
 
         cardDef.setIndex(cdefIndex.getAndIncrement());
-        
+
         if (cardDef.isPlayable()) {
             cardDef.add(new MagicHandCastActivation(cardDef));
         }
-       
+
         allPlayableCardDefs.put(cardDef.getAsciiName(), cardDef);
     }
 
@@ -125,7 +125,7 @@ public class CardDefinitions {
                 }
             }
         }
-            
+
         try {
             cardDefinition.validate();
         } catch (Exception e) {
@@ -175,7 +175,7 @@ public class CardDefinitions {
             throw new RuntimeException("Error loading " + file, cause);
         }
     }
-    
+
     public static void loadCardDefinition(final String cardName) {
         final File cardFile = new File(SCRIPTS_DIRECTORY, getCanonicalName(cardName) + ".txt");
         if (cardFile.isFile() == false) {
@@ -215,7 +215,7 @@ public class CardDefinitions {
         printStatistics();
         updateNewCardsLog(CardDefinitions.loadCardsSnapshotFile());
     }
-    
+
     private static boolean isZero(double value, double delta){
         return value >= -delta && value <= delta;
     }
@@ -242,7 +242,7 @@ public class CardDefinitions {
             throw new RuntimeException(ex);
         }
     }
-    
+
     public static MagicCardDefinition getToken(final String original) {
         final MagicCardDefinition token = getCard(original);
         if (token.isToken()) {

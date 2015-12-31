@@ -231,7 +231,7 @@ class CardRecallPanel extends JPanel implements IDeckEditorView, FocusListener {
     public List<ActionBarButton> getActionButtons() {
         return new ArrayList<>();
     }
-    
+
     private void doFocusLostAction(FocusEvent e) {
         if (e.getOppositeComponent() == deckPanel.getTable()) {
             clearRecallSelection();

@@ -21,7 +21,7 @@ public class DealDamageAction extends MagicAction {
     private final MagicDamage damage;
     private MagicTarget target;
     private int oldDamage = UNINIT;
-    
+
     public DealDamageAction(final MagicSource source, MagicTarget target, final int amt) {
         this(new MagicDamage(source, target, amt), null);
     }
@@ -42,7 +42,7 @@ public class DealDamageAction extends MagicAction {
     @Override
     public void doAction(final MagicGame game) {
         game.executeTrigger(MagicTriggerType.IfDamageWouldBeDealt,damage);
-        
+
         /*
         306.7. If damage would be dealt to a player by a source
         controlled by an opponent, that opponent may have that source deal that

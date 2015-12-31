@@ -7,7 +7,7 @@ import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
 
 public class MagicRepeatedCardsEvent extends MagicEvent {
-    
+
     private final MagicCondition cond;
 
     public MagicRepeatedCardsEvent(final MagicSource source, final MagicTargetChoice targetChoice, final int amt, final MagicChainEventFactory factory) {

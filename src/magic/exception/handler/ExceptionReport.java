@@ -20,7 +20,7 @@ import magic.exception.GameException;
 public class ExceptionReport {
 
     private final StringBuilder sb = new StringBuilder();
-    
+
     public ExceptionReport(final Thread th, final Throwable ex) {
 
         sb.append("CRASH REPORT FOR MAGARENA THREAD ").append(th);
@@ -160,5 +160,5 @@ public class ExceptionReport {
         }
         report.append("\n");
     }
-    
+
 }

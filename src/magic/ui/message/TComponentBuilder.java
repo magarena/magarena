@@ -12,7 +12,7 @@ import magic.utility.MagicSystem;
 
 class TComponentBuilder {
     private TComponentBuilder() {}
-    
+
     static final TComponent SPACE_COMPONENT = new EmptyComponent();
     static final TComponent BREAK_COMPONENT = new EmptyComponent();
 

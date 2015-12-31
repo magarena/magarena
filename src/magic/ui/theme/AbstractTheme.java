@@ -132,7 +132,7 @@ public abstract class AbstractTheme implements Theme {
     public ImageIcon getAvatarIcon(final int index,final int size) {
         return AvatarImages.getInstance().getAvatarIcon(index,size);
     }
-    
+
     @Override
     public ImageIcon getAbilityIcon(AbilityIcon ability) {
         final String key = "icon_" + ability.name().toLowerCase();

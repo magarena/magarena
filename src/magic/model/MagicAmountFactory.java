@@ -15,7 +15,7 @@ public class MagicAmountFactory {
             }
         };
     }
-    
+
     public static MagicAmount CounterOnSource(final MagicCounterType type) {
         return new MagicAmount() {
             @Override
@@ -25,7 +25,7 @@ public class MagicAmountFactory {
             }
         };
     }
-    
+
     public static MagicAmount AllCountersOnSource =
         new MagicAmount() {
             @Override
@@ -39,7 +39,7 @@ public class MagicAmountFactory {
             }
         };
 
-    public static MagicAmount One = 
+    public static MagicAmount One =
         new MagicAmount() {
             @Override
             public int getAmount(final MagicSource source, final MagicPlayer player) {
@@ -50,8 +50,8 @@ public class MagicAmountFactory {
                 return true;
             }
         };
-    
-    public static MagicAmount Constant(final int n) { 
+
+    public static MagicAmount Constant(final int n) {
         return new MagicAmount() {
             @Override
             public int getAmount(final MagicSource source, final MagicPlayer player) {
@@ -63,8 +63,8 @@ public class MagicAmountFactory {
             }
         };
     }
-    
-    public static MagicAmount Equipment = 
+
+    public static MagicAmount Equipment =
         new MagicAmount() {
             @Override
             public int getAmount(final MagicSource source, final MagicPlayer player) {
@@ -72,8 +72,8 @@ public class MagicAmountFactory {
                 return perm.getEquipmentPermanents().size();
             }
         };
-    
-    public static MagicAmount Aura = 
+
+    public static MagicAmount Aura =
         new MagicAmount() {
             @Override
             public int getAmount(final MagicSource source, final MagicPlayer player) {
@@ -81,16 +81,16 @@ public class MagicAmountFactory {
                 return perm.getAuraPermanents().size();
             }
         };
-    
-    public static MagicAmount Domain = 
+
+    public static MagicAmount Domain =
         new MagicAmount() {
             @Override
             public int getAmount(final MagicSource source, final MagicPlayer player) {
                 return player.getDomain();
             }
         };
-    
-    public static MagicAmount SN_Power = 
+
+    public static MagicAmount SN_Power =
         new MagicAmount() {
             @Override
             public int getAmount(final MagicSource source, final MagicPlayer player) {
@@ -99,15 +99,15 @@ public class MagicAmountFactory {
             }
         };
 
-    public static MagicAmount LifeTotal = 
+    public static MagicAmount LifeTotal =
         new MagicAmount() {
             @Override
             public int getAmount(final MagicSource source, final MagicPlayer player) {
                 return player.getLife();
             }
         };
-    
-    public static MagicAmount ColorsOnPerms = 
+
+    public static MagicAmount ColorsOnPerms =
         new MagicAmount() {
             @Override
             public int getAmount(final MagicSource source, final MagicPlayer player) {
@@ -120,8 +120,8 @@ public class MagicAmountFactory {
                 return amount;
             }
         };
-    
-    public static MagicAmount XCost = 
+
+    public static MagicAmount XCost =
         new MagicAmount() {
             @Override
             public int getAmount(final MagicEvent event) {
@@ -132,8 +132,8 @@ public class MagicAmountFactory {
                 throw new RuntimeException("getAmount(source, player) called on XCost");
             }
         };
-    
-    public static MagicAmount NegXCost = 
+
+    public static MagicAmount NegXCost =
         new MagicAmount() {
             @Override
             public int getAmount(final MagicEvent event) {

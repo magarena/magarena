@@ -8,7 +8,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public enum MagicTargetFilterParser {
-    
+
     CardNamedFromYourLibrary("card named " + ARG.ANY + " from your library") {
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
             return MagicTargetFilterFactory.cardName(ARG.any(arg)).from(MagicTargetType.Library);
@@ -180,9 +180,9 @@ public enum MagicTargetFilterParser {
         }
     },
     ;
-    
+
     private final Pattern pattern;
-    
+
     private MagicTargetFilterParser(final String regex) {
         pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
     }
@@ -191,7 +191,7 @@ public enum MagicTargetFilterParser {
     }
 
     public abstract MagicTargetFilter<?> toTargetFilter(final Matcher arg);
-    
+
     public static final MagicTargetFilter<?> build(final String text) {
         for (final MagicTargetFilterParser rule : values()) {
             final Matcher matcher = rule.matcher(text);

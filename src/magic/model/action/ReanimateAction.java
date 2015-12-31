@@ -19,11 +19,11 @@ public class ReanimateAction extends MagicAction {
         controller = aController;
         modifications = aModifications;
     }
-    
+
     public ReanimateAction(final MagicCard aCard, final MagicPlayer aController, final MagicPermanentAction... aModifications) {
         this(aCard, aController, Arrays.asList(aModifications));
     }
-    
+
     @Override
     public void doAction(final MagicGame game) {
         if (card.isInGraveyard() && card.isPermanentCard()) {
@@ -31,7 +31,7 @@ public class ReanimateAction extends MagicAction {
             game.doAction(new PlayCardAction(card,controller,modifications));
         }
     }
-    
+
     @Override
     public void undoAction(final MagicGame game) {}
 }

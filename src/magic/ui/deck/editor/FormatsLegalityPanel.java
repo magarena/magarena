@@ -32,7 +32,7 @@ public class FormatsLegalityPanel extends JPanel {
 
     // fired when selection changes.
     public static final String CP_FORMAT_SELECTED = "FormatSelected";
-         
+
     private final MigLayout migLayout = new MigLayout();
     private final JScrollPane scrollpane = new JScrollPane();
     private final JList<DeckLegalityInfo> formatsJList = new JList<>();
@@ -135,9 +135,9 @@ public class FormatsLegalityPanel extends JPanel {
                             ? list.getBackground()
                             : ALT_BCOLOR
             );
-          
+
             setBorder(BorderFactory.createCompoundBorder(
-                    BorderFactory.createMatteBorder(0, 0, 1, 0, Color.LIGHT_GRAY), 
+                    BorderFactory.createMatteBorder(0, 0, 1, 0, Color.LIGHT_GRAY),
                     BorderFactory.createEmptyBorder(0, 6, 0, 4))
             );
 

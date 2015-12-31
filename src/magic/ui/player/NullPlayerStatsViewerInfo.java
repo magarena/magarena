@@ -1,7 +1,7 @@
 package magic.ui.player;
 
 public class NullPlayerStatsViewerInfo implements IPlayerStatsViewerInfo {
-    
+
     @Override
     public String getLastPlayedDate() {
         return NO_VALUE;

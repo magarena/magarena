@@ -40,7 +40,7 @@ public class ColorButton extends JButton {
             public void mouseExited(MouseEvent e) {
                 super.mouseExited(e);
                 setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
-            }            
+            }
         });
 
         setPreferredSize(new Dimension(48, 24));
@@ -49,5 +49,5 @@ public class ColorButton extends JButton {
     public Color getColor() {
         return getBackground();
     }
-    
+
 }

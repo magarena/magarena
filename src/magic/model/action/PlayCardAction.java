@@ -22,19 +22,19 @@ public class PlayCardAction extends MagicAction {
         controller = aController;
         modifications = aModifications;
     }
-    
+
     public PlayCardAction(final MagicCard aCard, final MagicPlayer aController,final MagicPermanentAction... aModifications) {
         this(aCard, aController, Arrays.asList(aModifications));
     }
-    
+
     public PlayCardAction(final MagicCard card, final MagicPlayer player) {
         this(card, player, Collections.<MagicPermanentAction>emptyList());
     }
-    
+
     public PlayCardAction(final MagicCard card, final List<? extends MagicPermanentAction> modifications) {
         this(card, card.getController(), modifications);
     }
-    
+
     public PlayCardAction(final MagicCard card) {
         this(card, card.getController(), Collections.<MagicPermanentAction>emptyList());
     }

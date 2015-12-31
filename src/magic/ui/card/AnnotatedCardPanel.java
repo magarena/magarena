@@ -73,7 +73,7 @@ public class AnnotatedCardPanel extends JPanel {
     private final MagicInfoWindow infoWindow = new MagicInfoWindow();
     private final Rectangle containerRect;
     private boolean preferredVisibility = false;
-    
+
     public AnnotatedCardPanel() {
 
         this.containerRect = getWindowRect();
@@ -99,7 +99,7 @@ public class AnnotatedCardPanel extends JPanel {
                 infoWindow.setVisible(false);
             }
         });
-        
+
         setVisible(false);
 
     }
@@ -161,7 +161,7 @@ public class AnnotatedCardPanel extends JPanel {
     public void hideNoDelay() {
         hideCardPanel(0);
     }
-    
+
     private void showPopup() {
         if (MagicAnimations.isOn(AnimationFx.CARD_FADEIN)) {
             if (opacity == 0f) {
@@ -243,7 +243,7 @@ public class AnnotatedCardPanel extends JPanel {
             g.setFont(FontsAndBorders.FONT1);
             GraphicsUtils.drawStringWithOutline(g, Long.toString(card.getCard().getId()), 2, 14);
         }
-        
+
     }
 
     private BufferedImage getImageCopy(final BufferedImage image) {
@@ -281,7 +281,7 @@ public class AnnotatedCardPanel extends JPanel {
      * and drawn on top of the original card image.
      */
     private void drawPowerToughnessOverlay(final BufferedImage cardImage) {
-        
+
         if (modifiedPT.isEmpty())
             return;
 
@@ -298,7 +298,7 @@ public class AnnotatedCardPanel extends JPanel {
             cardImage.getWidth(),
             cardImage.getHeight()
         );
-        
+
         // draw tranparent P/T overlay on top of original card.
         final Graphics2D g2d = cardImage.createGraphics();
         g2d.drawImage(overlay, 0, 0, null);
@@ -322,12 +322,12 @@ public class AnnotatedCardPanel extends JPanel {
             final MagicPermanent perm = (MagicPermanent)magicObject;
             return canRevealTrueFace(perm) ?
                 getCardImage(perm.getRealCardDefinition()) :
-                getCardImage(perm.getCardDefinition()); 
+                getCardImage(perm.getCardDefinition());
         } else {
             return getCardImage(magicObject.getCardDefinition());
         }
     }
-    
+
     /**
      * primarily used to determine whether a face-down card will
      * show its hidden face when displaying mouse-over popup.

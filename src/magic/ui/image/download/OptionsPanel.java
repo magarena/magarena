@@ -43,7 +43,7 @@ class OptionsPanel extends JPanel {
         add(getBoldLabel(UiString.get(_S3)));
         add(cboDownloadMode);
 
-        
+
     }
 
     private JLabel getBoldLabel(String text) {

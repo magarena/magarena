@@ -23,7 +23,7 @@ class TestAwaken extends TestGameBuilder {
         createPermanent(P, "Chromatic Lantern", false, 1);
         addToHand(P, "Sheer Drop", 1);
         addToHand(P, "Pressure Point", 1);
-        
+
         P = opponent;
 
         P.setLife(1);
@@ -31,7 +31,7 @@ class TestAwaken extends TestGameBuilder {
         createPermanent(P, "Swamp", false, 7);
         createPermanent(P, "Chromatic Lantern", false, 1);
         createPermanent(P, "Grizzly Bears", false, 1);
-        
+
         return game;
     }
 }

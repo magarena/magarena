@@ -51,7 +51,7 @@ class CardDecksPanel extends JPanel {
     private Timer cooldownTimer;
 
     public CardDecksPanel() {
-        
+
         decksJList.setOpaque(false);
         decksJList.setBackground(new Color(0, 0, 0, 1));
         decksJList.setForeground(Color.BLACK);
@@ -110,7 +110,7 @@ class CardDecksPanel extends JPanel {
         if (worker != null && worker.isDone() == false && worker.isCancelled() == false) {
             worker.cancel(true);
         }
-        
+
         this.card = aCard;
 
         decksJList.setListData(new File[]{});
@@ -212,5 +212,5 @@ class CardDecksPanel extends JPanel {
     int getDecksCount() {
         return decksJList.getModel().getSize();
     }
-    
+
 }

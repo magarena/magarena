@@ -29,16 +29,16 @@ public class MTDF implements MagicAI {
     public Object[] findNextEventChoiceResults(final MagicGame sourceGame, final MagicPlayer scorePlayer) {
         final int artificialLevel = scorePlayer.getAiProfile().getAiLevel();
         final long startTime = System.currentTimeMillis();
-        
+
         END = startTime + artificialLevel * 1000;
 
         final MagicGame root = new MagicGame(sourceGame, scorePlayer);
         //root.setMainPhases(artificialLevel);
-        
+
         if (!CHEAT) {
             root.hideHiddenCards();
         }
-        
+
         final MagicEvent event = root.getNextEvent();
         final List<Object[]> choices = event.getArtificialChoiceResults(root);
         if (choices.size() == 1) {
@@ -47,7 +47,7 @@ public class MTDF implements MagicAI {
 
         root.setFastChoices(true);
         final TTEntry result = iterative_deepening(root, choices);
-        
+
         // Logging.
         final long timeTaken = System.currentTimeMillis() - startTime;
         log("MTDF" +
@@ -70,7 +70,7 @@ public class MTDF implements MagicAI {
     }
 
     private boolean hasTime() {
-        return System.currentTimeMillis() < END; 
+        return System.currentTimeMillis() < END;
     }
 
     private TTEntry iterative_deepening(final MagicGame root, final List<Object[]> choices) {
@@ -129,18 +129,18 @@ public class MTDF implements MagicAI {
 
         final boolean isMax = game.getScorePlayer() == game.getNextEvent().getPlayer();
         final boolean isMin = !isMax;
-            
+
         int g = isMax ? Integer.MIN_VALUE : Integer.MAX_VALUE;
         int a = alpha; /* save original alpha value */
         int b = beta;  /* save original beta value */
         int idx = -1;
-        
+
         for (final Object[] choice : choices) {
             if ((isMax && g >= beta) ||
                 (isMin && g <= alpha)) {
                 break;
             }
-            
+
             game.snapshot();
             game.executeNextEvent(choice);
             final List<Object[]> choices_child = d == 1 ?
@@ -148,7 +148,7 @@ public class MTDF implements MagicAI {
                 game.advanceToNextEventWithChoices();
             final int g_child = AlphaBetaWithMemory(game, choices_child, a, b, d - 1);
             game.restore();
-            
+
             idx++;
             if ((isMax && g_child > g) ||
                 (isMin && g_child < g)) {
@@ -168,11 +168,11 @@ public class MTDF implements MagicAI {
             table.put(id_check, entry);
             table.remove(id);
         }
-        
+
         entry.update(g, alpha, beta);
         return g;
     }
-    
+
     private void log(final String message) {
         MagicGameLog.log(message);
     }
@@ -182,21 +182,21 @@ class TTEntry {
     int lowerbound = Integer.MIN_VALUE;
     int upperbound = Integer.MAX_VALUE;
     int chosen = -1;
-        
+
     void update(int g, int alpha, int beta) {
-        /* Traditional transposition table storing of bounds */ 
-        /* Fail low result implies an upper bound */ 
+        /* Traditional transposition table storing of bounds */
+        /* Fail low result implies an upper bound */
         if (g <= alpha) {
-            upperbound = g; 
-        }
-        /* Found an accurate minimax value - will not occur if called with zero window */ 
-        if (g > alpha && g < beta) {
-            lowerbound = g; 
             upperbound = g;
         }
-        /* Fail high result implies a lower bound */ 
+        /* Found an accurate minimax value - will not occur if called with zero window */
+        if (g > alpha && g < beta) {
+            lowerbound = g;
+            upperbound = g;
+        }
+        /* Fail high result implies a lower bound */
         if (g >= beta) {
-            lowerbound = g; 
+            lowerbound = g;
         }
     }
 }

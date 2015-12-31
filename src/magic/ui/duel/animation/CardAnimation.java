@@ -123,13 +123,13 @@ abstract class CardAnimation extends MagicAnimation {
         } else if (isStaticArrowOn()) {
             ArrowBuilder.drawArrow(g, getStart(), getPreviewRectangle());
         }
-        
+
         if (isCardShadowOn()) {
             drawCardShadow(g);
         }
 
         drawCardImage(g);
-        
+
     }
 
     private Dimension getCardPreviewSize(Image image) {
@@ -142,7 +142,7 @@ abstract class CardAnimation extends MagicAnimation {
             return prefSize;
         }
     }
-    
+
     /**
      * Returns the dimensions and position of the full size card image.
      */
@@ -192,7 +192,7 @@ abstract class CardAnimation extends MagicAnimation {
 
     /**
     * This is called by a timeline (do not delete!).
-    */    
+    */
     public void setShrinkRectangle(final Rectangle rect) {
         assert !SwingUtilities.isEventDispatchThread();
         imageRect = rect;
@@ -239,7 +239,7 @@ abstract class CardAnimation extends MagicAnimation {
         });
         return timeline;
     }
-    
+
     private void playTimelineScenario() {
 
         growTimeline = getGrowTimeline();
@@ -247,14 +247,14 @@ abstract class CardAnimation extends MagicAnimation {
         viewTimeline = getViewTimeline();
         shrinkTimeline = getShrinkTimeline();
 
-        scenario = new TimelineScenario.RendezvousSequence();        
+        scenario = new TimelineScenario.RendezvousSequence();
         scenario.addScenarioActor(growTimeline);
         if (flipTimeline != null) { scenario.addScenarioActor(flipTimeline); }
         scenario.rendezvous();
         scenario.addScenarioActor(viewTimeline);
         scenario.rendezvous();
         scenario.addScenarioActor(shrinkTimeline);
-        
+
         scenario.addCallback(() -> {
             SwingUtilities.invokeLater(() -> {
                 imageRect = new Rectangle();

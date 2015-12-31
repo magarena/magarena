@@ -135,7 +135,7 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
 
         private void refreshLayout() {
             miglayout.setLayoutConstraints("insets 4 0 0 0");
-            final ActionBarButton btn = new ActionBarButton(                    
+            final ActionBarButton btn = new ActionBarButton(
                     "Game file", "Select a saved public or private game file.",
                     new AbstractAction() {
                         @Override

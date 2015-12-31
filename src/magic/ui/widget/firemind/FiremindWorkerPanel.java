@@ -46,9 +46,9 @@ public class FiremindWorkerPanel extends JPanel {
     protected final JLabel captionLabel = getCaptionLabel(getProgressCaption());
     private final JButton runButton = new JButton();
     private final JButton cancelButton = new JButton(UiString.get(_S1));
-   
+
     private SwingWorker<String, Void> firemindWorker;
-    private boolean isRunning = false;    
+    private boolean isRunning = false;
 
     protected SwingWorker<String, Void> getFiremindWorker(final Proxy proxy) {
         return new FiremindWorkerRunner(); //TODO (downloadList, CONFIG.getProxy());
@@ -59,13 +59,13 @@ public class FiremindWorkerPanel extends JPanel {
         }else{
             return UiString.get(_S3);
         }
-        
+
     }
-    
+
     protected String getLogFilename() {
         return "fireindWorker.log";
     }
-    
+
     protected String getStartButtonCaption() {
         return UiString.get(_S4);
     }
@@ -80,7 +80,7 @@ public class FiremindWorkerPanel extends JPanel {
     public boolean isRunning() {
         return this.isRunning;
     }
-    
+
     protected void saveDownloadLog(final List<String> downloadLog) {
         final Path logPath = MagicFileSystem.getDataPath(DataPath.LOGS).resolve(getLogFilename());
         System.out.println("saving log : " + logPath);
@@ -118,7 +118,7 @@ public class FiremindWorkerPanel extends JPanel {
             }
         });
     }
-    
+
     public void doCancel() {
         doCancelFiremindWorker();
         isRunning = false;
@@ -129,7 +129,7 @@ public class FiremindWorkerPanel extends JPanel {
             firemindWorker.cancel(true);
             setButtonState(false);
         }
-    } 
+    }
 
     protected void setButtonState(final boolean isRunning) {
         runButton.setVisible(!isRunning);
@@ -159,7 +159,7 @@ public class FiremindWorkerPanel extends JPanel {
         runButton.setEnabled(true);
         runButton.setText(getStartButtonCaption());
     }
-    
+
     private JLabel getAccessKeyLabel() {
         final JLabel lbl = new JLabel();
         lbl.setText(UiString.get(_S6));
@@ -169,7 +169,7 @@ public class FiremindWorkerPanel extends JPanel {
         lbl.setFont(lbl.getFont().deriveFont(Font.BOLD));
         return lbl;
     }
-    
+
     private JLabel getCaptionLabel(final String text) {
         final ImageIcon ii = MagicImages.getIcon(MagicIcon.BUSY16);
         final JLabel lbl = new JLabel(ii);

@@ -21,7 +21,7 @@ public class SliderPanel extends JPanel implements ChangeListener {
     private final JLabel valueLabel;
 
     public SliderPanel(final String title, final int min,final int max,final int spacing,final int value,final boolean snapToTick) {
-        
+
         titleLabel=new JLabel(title);
         titleLabel.setPreferredSize(new Dimension(title.isEmpty() ? 0 : 90, 0));
         titleLabel.setFont(titleLabel.getFont().deriveFont(Font.BOLD));

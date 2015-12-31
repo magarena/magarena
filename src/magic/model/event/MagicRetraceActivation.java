@@ -7,7 +7,7 @@ import magic.model.choice.MagicTargetChoice;
 import java.util.Arrays;
 
 public class MagicRetraceActivation extends MagicGraveyardCastActivation {
-    
+
     public MagicRetraceActivation(final MagicCardDefinition cdef) {
         super(
             MagicHandCastActivation.CARD_CONDITION,
@@ -15,7 +15,7 @@ public class MagicRetraceActivation extends MagicGraveyardCastActivation {
             "Retrace"
         );
     }
-   
+
     @Override
     public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
         return Arrays.asList(

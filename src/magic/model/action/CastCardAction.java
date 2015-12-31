@@ -34,7 +34,7 @@ public class CastCardAction extends MagicAction {
         from = aFrom;
         to = aTo;
     }
-    
+
     @Override
     public void doAction(final MagicGame game) {
         for (final MagicEvent event : card.getAdditionalCostEvent()) {

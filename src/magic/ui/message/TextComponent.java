@@ -37,11 +37,11 @@ public class TextComponent extends TComponent {
         this.fontColor = getTextColor(isChoice, choiceColor, interactiveColor);
         this.font = getTextFont(aFont);
         this.metrics = component.getFontMetrics(this.font);
-        
+
         this.newLine = !(".".equals(text) || ",".equals(text));
 
     }
-    
+
     private Color getTextColor(boolean isChoice, Color choiceColor, Color interactiveColor) {
         if (isCardId() && isChoice == false) {
             return Color.DARK_GRAY;

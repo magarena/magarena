@@ -10,45 +10,45 @@ public abstract class MagicObjectImpl implements MagicObject {
     public boolean isEnemy(final MagicObject other) {
         return getOpponent() == other.getController();
     }
-    
+
     @Override
     public MagicPlayer getOpponent() {
         return getController().getOpponent();
     }
-    
+
     @Override
     public boolean isCreature() {
         return isPermanent() && hasType(MagicType.Creature);
     }
-    
+
     @Override
     public boolean isPlaneswalker() {
         return isPermanent() && hasType(MagicType.Planeswalker);
     }
-    
+
     @Override
     public boolean isInstantOrSorcerySpell() {
         return isSpell(MagicType.Instant) || isSpell(MagicType.Sorcery);
     }
-    
+
     @Override
     public boolean isSpell(MagicType type) {
         return isSpell() && hasType(type);
     }
-    
+
     @Override
     public boolean isSpell(MagicSubType subType) {
         return isSpell() && hasSubType(subType);
     }
-    
+
     @Override
     public boolean isToken() {
         return isPermanent() && ((MagicPermanent)this).isToken();
     }
-    
+
     @Override
     public boolean hasCounters(final MagicCounterType counterType) {
-        return getCounters(counterType) > 0; 
+        return getCounters(counterType) > 0;
     }
 
     public static long getStateId(final Object obj) {

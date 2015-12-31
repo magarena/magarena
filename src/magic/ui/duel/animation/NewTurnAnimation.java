@@ -30,14 +30,14 @@ class NewTurnAnimation extends MagicAnimation {
 
     @Override
     protected void render(Graphics g) {
-        
+
         final Graphics2D g2d = (Graphics2D) g.create();
 
         g2d.setColor(MagicStyle.getTheme().getColor(Theme.COLOR_TITLE_BACKGROUND));
         final Rectangle rect = layoutInfo.getTurnPanelLayout();
         g2d.fillRect(rect.x, rect.y, rect.width, rect.height);
-        
-        g2d.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);        
+
+        g2d.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
         g2d.setColor(Color.WHITE);
         final Font f = g2d.getFont().deriveFont(28f);
         g2d.setFont(f);

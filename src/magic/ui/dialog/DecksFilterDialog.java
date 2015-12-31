@@ -62,12 +62,12 @@ public class DecksFilterDialog extends MagicDialog {
         if (filterHistory.size() > 0) {
             deckFilter = filterHistory.get(historyIndex-1);
         }
-        
+
         deckSizeFilterPanel = new DeckSizeFilterPanel(deckFilter);
         deckNameFilterText.setText(deckFilter != null ? deckFilter.getDeckNameFilterText() : "");
         deckDescFilterText.setText(deckFilter != null ? deckFilter.getDeckDescFilterText() : "");
         cardNameFilterText.setText(deckFilter != null ? deckFilter.getCardNameFilterText() : "");
-               
+
         refreshLayout();
         setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
 

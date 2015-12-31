@@ -71,7 +71,7 @@ public class DuelPlayerConfig {
                 final String cardName = properties.getProperty(deckPrefix);
                 deck.add(getCard(cardName));
             }
-        }        
+        }
     }
 
     public void save(final Properties properties, final String prefix) {

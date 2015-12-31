@@ -50,7 +50,7 @@ class MessagePanel extends JPanel {
 
         JPanel playerPanel = getPlayerPanel();
         JPanel turnPanel = getTurnPanel();
-        
+
         final Insets insets1 = container.getInsets();
         final Insets insets2 = SEPARATOR_BORDER.getBorderInsets(this);
         final int totalInsets = insets1.left + insets1.right + insets2.left + insets2.right;
@@ -62,7 +62,7 @@ class MessagePanel extends JPanel {
                     turnPanel.getPreferredSize().width -
                     totalInsets -
                     (GAP * 2);
-        }        
+        }
 
         final TextLabel textLabel = new TextLabel(
             message.getText(),

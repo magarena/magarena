@@ -11,11 +11,11 @@ import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.stack.MagicItemOnStack;
 
 public class MagicCounterUnlessEvent extends MagicEvent {
-    
+
     public MagicCounterUnlessEvent(final MagicSource source,final MagicItemOnStack itemOnStack,final MagicManaCost cost) {
         this(source, itemOnStack, cost, MagicLocationType.Graveyard);
     }
-    
+
     public MagicCounterUnlessEvent(final MagicSource source,final MagicItemOnStack itemOnStack,final MagicManaCost cost, final MagicLocationType toLocation) {
         super(
             source,

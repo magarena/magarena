@@ -1,6 +1,6 @@
 package magic.firemind;
 public class Duel  {
-    
+
     public Integer games_to_play;
     public Integer id;
     public Integer seed;
@@ -11,5 +11,5 @@ public class Duel  {
     public Integer strAi1;
     public Integer strAi2;
     public Integer life;
-    
+
 }

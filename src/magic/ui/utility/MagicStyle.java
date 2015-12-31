@@ -88,7 +88,7 @@ public final class MagicStyle {
     public static Color getRolloverColor() {
         return GeneralConfig.getInstance().getRolloverColor();
     }
-    
+
     public static Color getPressedColor() {
         return getRolloverColor().darker();
     }

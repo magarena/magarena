@@ -14,7 +14,7 @@ public class HumanProfile extends PlayerProfile {
     public HumanProfile() {
         loadProperties();
     }
-    
+
     public static HumanProfile create(final String name) {
         final HumanProfile hp = new HumanProfile();
         hp.setPlayerName(name);
@@ -38,5 +38,5 @@ public class HumanProfile extends PlayerProfile {
     protected String getPlayerType() {
         return PLAYER_TYPE;
     }
-        
+
 }

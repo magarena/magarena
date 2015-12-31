@@ -113,7 +113,7 @@ public enum AbilityIcon {
         }
         return icons;
     }
-    
+
     public static List<CardIcon> getIcons(final Set<MagicAbility> abilities) {
         final List<CardIcon> icons = new ArrayList<>();
         for (AbilityIcon abilityIcon : AbilityIcon.values()) {

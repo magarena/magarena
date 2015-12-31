@@ -19,6 +19,6 @@ public class InvalidDeckException extends RuntimeException {
 
     public InvalidDeckException(final String message) {
         super(message);
-    }     
+    }
 
 }
