@@ -1,6 +1,6 @@
 def FEWER_CREATURES_CONDITION = new MagicCondition() {
     public boolean accept(final MagicSource source) {
-        return source.getController().getNrOfPermanents(MagicType.Creature) < 
+        return source.getController().getNrOfPermanents(MagicType.Creature) <
                source.getOpponent().getNrOfPermanents(MagicType.Creature);
     }
 };

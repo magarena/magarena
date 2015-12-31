@@ -2,7 +2,7 @@
     new AtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return new MagicEvent(            
+            return new MagicEvent(
                 permanent,
                 new MagicMayChoice("Sacrifice SN?"),
                 this,

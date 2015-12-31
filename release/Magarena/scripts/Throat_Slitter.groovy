@@ -1,7 +1,7 @@
 def NONBLACK_CREATURE_YOUR_OPPONENT_CONTROLS=new MagicPermanentFilterImpl() {
     public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
         return target.isCreature() && !target.hasColor(MagicColor.Black) && target.isOpponent(player);
-    } 
+    }
 };
 
 def TARGET_NONBLACK_CREATURE_YOUR_OPPONENT_CONTROLS = new MagicTargetChoice(

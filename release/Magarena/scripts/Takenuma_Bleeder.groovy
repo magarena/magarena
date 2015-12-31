@@ -22,7 +22,7 @@ def event = {
                 event(permanent):
                 MagicEvent.NONE;
         }
-    },    
+    },
     new ThisBlocksTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent blocker) {

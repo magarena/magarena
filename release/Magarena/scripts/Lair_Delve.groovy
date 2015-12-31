@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "PN reveal the top two cards of his or her library. " + 
+                "PN reveal the top two cards of his or her library. " +
                 "Put all creature and land cards revealed this way into PN's hand and the rest on the bottom of PN's library."
             );
         }

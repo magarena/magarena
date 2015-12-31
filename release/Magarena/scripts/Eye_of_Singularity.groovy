@@ -15,7 +15,7 @@ def exceptBasicLands = new MagicPermanentFilterImpl() {
                 "They can't be regenerated."
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicPermanent permanent : exceptBasicLands.filter(event)) {
@@ -28,7 +28,7 @@ def exceptBasicLands = new MagicPermanentFilterImpl() {
             }
         }
     },
-    
+
     new OtherEntersBattlefieldTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent otherPermanent) {

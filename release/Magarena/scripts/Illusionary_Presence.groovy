@@ -7,7 +7,7 @@
                 MagicBasicLandChoice.ALL_INSTANCE,
                 this,
                 "SN gains landwalk of the chosen type\$ until end of turn."
-            ); 
+            );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {

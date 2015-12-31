@@ -28,7 +28,7 @@ def LifeGainAbility = new DamageIsDealtTrigger() {
                 permanent,
                 damage.getDealtAmount(),
                 this,
-                "PN gains RN life." 
+                "PN gains RN life."
             ) :
             MagicEvent.NONE;
     }

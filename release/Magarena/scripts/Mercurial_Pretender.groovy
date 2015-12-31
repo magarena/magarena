@@ -22,7 +22,7 @@ def Bounce = new MagicPermanentActivation(
         game.doAction(new RemoveFromPlayAction(event.getPermanent(),MagicLocationType.OwnersHand));
     }
 };
-    
+
 def GainAct = new MagicStatic(MagicLayer.Ability) {
     @Override
     public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
@@ -39,7 +39,7 @@ def GainAct = new MagicStatic(MagicLayer.Ability) {
                 new MagicMayChoice(A_CREATURE_YOU_CONTROL),
                 MagicCopyPermanentPicker.create(),
                 this,
-                "PN may\$ have SN enter the battlefield as a copy of any creature you control\$, " + 
+                "PN may\$ have SN enter the battlefield as a copy of any creature you control\$, " +
                 "except it gains \"{2}{U}{U}: Return this creature to its owner's hand.\""
             );
         }

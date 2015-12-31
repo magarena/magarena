@@ -31,7 +31,7 @@ def DestroyTwin = new MagicPermanentActivation(
         });
     }
 };
-    
+
 def GainAct = new MagicStatic(MagicLayer.Ability) {
     @Override
     public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
@@ -48,7 +48,7 @@ def GainAct = new MagicStatic(MagicLayer.Ability) {
                 new MagicMayChoice(A_CREATURE),
                 MagicCopyPermanentPicker.create(),
                 this,
-                "PN may\$ have SN enter the battlefield as a copy of any creature on the battlefield\$, " + 
+                "PN may\$ have SN enter the battlefield as a copy of any creature on the battlefield\$, " +
                 "except it gains \"{U}{B}, {T}: Destroy target creature with the same name as this creature.\""
             );
         }

@@ -1,8 +1,8 @@
 def TARGET_CREATURE_WITH_ISLAND = new MagicPermanentFilterImpl() {
     public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
-        return target.hasType(MagicType.Creature) && 
+        return target.hasType(MagicType.Creature) &&
             target.getController().getNrOfPermanents(MagicSubType.Island) >= 1
-    } 
+    }
 };
 
 def NEG_TARGET_CREATURE_WITH_ISLAND = new MagicTargetChoice(
@@ -36,7 +36,7 @@ def NEG_TARGET_CREATURE_WITH_ISLAND = new MagicTargetChoice(
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new AddStaticAction(
-                    event.getPermanent(), 
+                    event.getPermanent(),
                     MagicStatic.ControlAsLongAsYouControlSourceAndSourceIsTapped(
                         event.getPlayer(),
                         it

@@ -2,7 +2,7 @@
     new OtherDiesTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            return (otherPermanent.hasSubType(MagicSubType.Bird) && 
+            return (otherPermanent.hasSubType(MagicSubType.Bird) &&
                     otherPermanent.getCard().isFriend(permanent)) ?
                 new MagicEvent(
                     permanent,

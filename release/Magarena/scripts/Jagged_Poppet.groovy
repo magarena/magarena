@@ -16,7 +16,7 @@
             game.addEvent(new MagicDiscardEvent(event.getPermanent(), event.getPlayer(), event.getRefInt()));
         }
     },
-    
+
     new ThisCombatDamagePlayerTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {

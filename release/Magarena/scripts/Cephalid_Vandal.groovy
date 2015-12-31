@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "PN puts a shred counter on SN. " + 
+                "PN puts a shred counter on SN. " +
                 "Then puts the top card of PN's library into his or her graveyard for each shred counter on SN."
             );
         }

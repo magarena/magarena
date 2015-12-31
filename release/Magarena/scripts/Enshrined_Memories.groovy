@@ -6,7 +6,7 @@
                 cardOnStack,
                 payedCost.getX(),
                 this,
-                "PN reveals the top RN cards of his or her library. " + 
+                "PN reveals the top RN cards of his or her library. " +
                 "Put all creature cards revealed this way into PN's hand and the rest on the bottom of PN's library."
             );
         }

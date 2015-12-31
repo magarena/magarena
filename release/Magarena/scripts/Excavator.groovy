@@ -9,7 +9,7 @@ def choice = new MagicTargetChoice("a basic land to sacrifice");
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicTapEvent(source), 
+                new MagicTapEvent(source),
                 new MagicSacrificePermanentEvent(source, choice)
             ];
         }

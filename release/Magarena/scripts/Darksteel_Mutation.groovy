@@ -6,7 +6,7 @@
             permanent.addAbility(MagicAbility.Indestructible);
         }
         @Override
-        public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) { 
+        public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
             return MagicStatic.acceptLinked(game, source, target);
         }
     },
@@ -21,7 +21,7 @@
             return MagicType.Creature.getMask()|MagicType.Artifact.getMask()
         }
         @Override
-        public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) { 
+        public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
             return MagicStatic.acceptLinked(game, source, target);
         }
     },
@@ -31,7 +31,7 @@
             pt.set(0,1);
         }
         @Override
-        public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) { 
+        public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
             return MagicStatic.acceptLinked(game, source, target);
         }
     }

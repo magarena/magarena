@@ -7,7 +7,7 @@
                 NEG_TARGET_ARTIFACT_OR_ENCHANTMENT,
                 MagicExileTargetPicker.create(),
                 this,
-                "PN chooses target artifact or enchantment\$. " + 
+                "PN chooses target artifact or enchantment\$. " +
                 "Its owner shuffles it into his or her library."
             );
         }

@@ -3,7 +3,7 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
             final MagicPermanent enchantedPermanent = permanent.getEnchantedPermanent();
-            return enchantedPermanent.getController() == upkeepPlayer ? 
+            return enchantedPermanent.getController() == upkeepPlayer ?
                 new MagicEvent(
                     permanent,
                     upkeepPlayer,

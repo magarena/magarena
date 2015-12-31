@@ -1,7 +1,7 @@
 [
-    new ThisDamagePlayerTrigger() {     
+    new ThisDamagePlayerTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {    
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
             final MagicPlayer player = damage.getTargetPlayer();
             return new MagicEvent(
                 permanent,

@@ -8,7 +8,7 @@ def TEXT2 = "PN puts up to two creature cards from his or her hand onto the batt
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                payedCost.isKicked() ? 
+                payedCost.isKicked() ?
                     MagicChoice.NONE :
                     new MagicOrChoice(
                         MagicChoice.NONE,
@@ -33,8 +33,8 @@ def TEXT2 = "PN puts up to two creature cards from his or her hand onto the batt
                     ),
                     MagicLocationType.OwnersHand
                 ));
-            } 
-            
+            }
+
             if (event.isKicked() || event.isMode(2)) {
                 game.addEvent(new MagicPutOntoBattlefieldEvent(
                     event,

@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "Exile the top card of PN's library. If it's a creature card, SN gets +X/+Y until end of turn, " + 
+                "Exile the top card of PN's library. If it's a creature card, SN gets +X/+Y until end of turn, " +
                 "where X is the exiled creature card's power and Y is its toughness."
             );
         }

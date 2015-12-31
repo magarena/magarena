@@ -13,8 +13,8 @@
             CREATURE.filter(event) each {
                 if (it.isEnchanted()) {
                     game.doAction(new DealDamageAction(
-                        event.getSource(), 
-                        it, 
+                        event.getSource(),
+                        it,
                         it.getAuraPermanents().size()*2
                     ));
                 }

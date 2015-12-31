@@ -19,8 +19,8 @@ def choice = MagicTargetChoice.Positive("another target permanent")
                 game.doAction(new AddStaticAction(
                     event.getPermanent(),
                     MagicStatic.AsLongAsCond(
-                        it, 
-                        MagicAbility.Indestructible, 
+                        it,
+                        MagicAbility.Indestructible,
                         MagicConditionFactory.PlayerControlsSource(event.getPlayer())
                     )
                 ));

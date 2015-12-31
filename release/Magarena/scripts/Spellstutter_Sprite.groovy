@@ -3,7 +3,7 @@ def SPELL_WITH_CONVERTED_COST_X_OR_LESS = {
     return new MagicStackFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack target) {
             return target.isSpell() && target.getConvertedCost() <= X;
-        } 
+        }
     };
 }
 
@@ -24,7 +24,7 @@ def TARGET_SPELL_WITH_CONVERTED_COST_X_OR_LESS = {
                 permanent,
                 TARGET_SPELL_WITH_CONVERTED_COST_X_OR_LESS(X),
                 this,
-                "Counter target spell\$ with converted mana cost X or less, " + 
+                "Counter target spell\$ with converted mana cost X or less, " +
                 "where X is the number of Faeries you control."
             );
         }

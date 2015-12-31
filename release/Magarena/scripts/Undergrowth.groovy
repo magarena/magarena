@@ -1,7 +1,7 @@
 def NONRED_CREATURES = new MagicPermanentFilterImpl() {
     public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
         return !target.hasColor(MagicColor.Red) && target.isCreature();
-    } 
+    }
 };
 
 [
@@ -19,7 +19,7 @@ def NONRED_CREATURES = new MagicPermanentFilterImpl() {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isKicked()) {
-                NONRED_CREATURES.filter(event) each { 
+                NONRED_CREATURES.filter(event) each {
                     game.doAction(new AddTurnTriggerAction(
                         it,
                         PreventDamageTrigger.PreventCombatDamageDealtBy
@@ -27,7 +27,7 @@ def NONRED_CREATURES = new MagicPermanentFilterImpl() {
                 }
             } else {
                 game.doAction(new AddTurnTriggerAction(PreventDamageTrigger.PreventCombatDamage));
-            } 
+            }
         }
     }
 ]

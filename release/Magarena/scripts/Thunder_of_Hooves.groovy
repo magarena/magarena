@@ -17,7 +17,7 @@
                 game.doAction(new DealDamageAction(source,it,amount));
             }
             game.getAPNAP() each {
-                game.doAction(new DealDamageAction(source,it,amount)); 
+                game.doAction(new DealDamageAction(source,it,amount));
             }
         }
     }

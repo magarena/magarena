@@ -10,7 +10,7 @@ def SPIRIT_PERMANENT_FROM_GRAVEYARD = new MagicCardFilterImpl() {
 };
 
 def TARGET_SPIRIT_PERMANENT_FROM_GRAVEYARD = new MagicTargetChoice(
-    SPIRIT_PERMANENT_FROM_GRAVEYARD,  
+    SPIRIT_PERMANENT_FROM_GRAVEYARD,
     MagicTargetHint.None,
     "target Spirit permanent card from your graveyard"
 );
@@ -19,7 +19,7 @@ def TARGET_SPIRIT_PERMANENT_FROM_GRAVEYARD = new MagicTargetChoice(
     new EntersBattlefieldTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
-            return permanent.hasState(MagicPermanentState.CastFromHand) ? 
+            return permanent.hasState(MagicPermanentState.CastFromHand) ?
                 new MagicEvent(
                     permanent,
                     new MagicMayChoice(),

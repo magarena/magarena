@@ -6,7 +6,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "PN returns each creature card with converted mana cost " + amount + 
+                "PN returns each creature card with converted mana cost " + amount +
                 " from his or her graveyard to the battlefield."
             );
         }
@@ -18,7 +18,7 @@
             CREATURE_CARD_FROM_GRAVEYARD.filter(event) each {
                 if (it.getConvertedCost() == amount) {
                     game.doAction(new ReanimateAction(
-                        it, 
+                        it,
                         player
                     ));
                 }

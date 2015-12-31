@@ -1,7 +1,7 @@
 def NONLAND_PERMANENT_WITHOUT_FATE_COUNTER = new MagicPermanentFilterImpl() {
     public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
         return !target.isLand() && target.getCounters(MagicCounterType.Fade) == 0;
-    } 
+    }
 };
 
 [

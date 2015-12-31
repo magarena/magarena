@@ -10,7 +10,7 @@
                 new MagicTapEvent(source)
             ];
         }
-        
+
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(

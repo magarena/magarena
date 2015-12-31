@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 POS_TARGET_CREATURE,
-                MagicPumpTargetPicker.create(),    
+                MagicPumpTargetPicker.create(),
                 this,
                 "Until end of turn, target creature\$ gets +1/+1 for each creature PN controls and gains trample."
             );

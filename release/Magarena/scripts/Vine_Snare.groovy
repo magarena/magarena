@@ -11,7 +11,7 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            new MagicPTTargetFilter(CREATURE,4).filter(event) each { 
+            new MagicPTTargetFilter(CREATURE,4).filter(event) each {
                 game.doAction(new AddTurnTriggerAction(
                     it,
                     PreventDamageTrigger.PreventCombatDamageDealtBy

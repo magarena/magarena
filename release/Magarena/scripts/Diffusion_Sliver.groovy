@@ -5,7 +5,7 @@ MagicTargetFilter<MagicPermanent> SLIVER_CREATURE_YOU_CONTROL = Permanent("Slive
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicItemOnStack itemOnStack) {
             final MagicTarget target = itemOnStack.getTarget();
-            return target.isPermanent() && 
+            return target.isPermanent() &&
                    SLIVER_CREATURE_YOU_CONTROL.accept(permanent, permanent.getController(), (MagicPermanent)target) &&
                    itemOnStack.isEnemy(permanent) ?
                 new MagicEvent(

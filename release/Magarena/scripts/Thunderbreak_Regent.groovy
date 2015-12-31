@@ -6,7 +6,7 @@ def SPELL = ItemOnStack("spell or ability an opponent controls");
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicItemOnStack itemOnStack) {
             final MagicTarget target = itemOnStack.getTarget();
-            return target.isPermanent() && 
+            return target.isPermanent() &&
                    TARGET.accept(permanent, permanent.getController(), (MagicPermanent)target) &&
                    SPELL.accept(permanent, permanent.getController(), itemOnStack) ?
                 new MagicEvent(

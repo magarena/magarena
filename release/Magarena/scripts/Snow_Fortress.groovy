@@ -1,7 +1,7 @@
 def ATTACKING_CREATURE_WITHOUT_FLYING = new MagicPermanentFilterImpl() {
     public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-        return target.isCreature() && 
-            target.isAttacking() && 
+        return target.isCreature() &&
+            target.isAttacking() &&
             target.hasAbility(MagicAbility.Flying) == false
             target.isController(player.getOpponent());
     }

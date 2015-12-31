@@ -19,7 +19,7 @@
                 TARGET_PLAYER,
                 payedCost.getTarget(),
                 this,
-                "Target player\$ puts a number of cards equal to the sacrificed creature's power " + 
+                "Target player\$ puts a number of cards equal to the sacrificed creature's power " +
                 "from the top of his or her library into his or her graveyard."
             );
         }

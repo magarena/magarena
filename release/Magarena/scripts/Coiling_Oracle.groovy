@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "PN reveals the top card of his or her library. If it's a land card, PN puts it onto the battlefield. " + 
+                "PN reveals the top card of his or her library. If it's a land card, PN puts it onto the battlefield. " +
                 "Otherwise, PN puts that card into his or her hand."
             );
         }

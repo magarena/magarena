@@ -19,7 +19,7 @@
             }
         }
     },
-    
+
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Removal),
         "Shuffle"

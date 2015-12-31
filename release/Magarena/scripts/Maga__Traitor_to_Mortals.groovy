@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
-                NEG_TARGET_PLAYER, 
+                NEG_TARGET_PLAYER,
                 this,
                 "Target player\$ loses life equal to the number of +1/+1 counters on SN."
             );

@@ -25,7 +25,7 @@
                 }
             }
             game.doAction(new RemoveAllFromPlayAction(bounce, MagicLocationType.OwnersHand));
-            
+
             final MagicPermanentList destroy = new MagicPermanentList();
             destroy.addAll(ENCHANTMENT_YOU_CONTROL.filter(event));
             AURA.filter(event) each {

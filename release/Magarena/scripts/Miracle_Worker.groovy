@@ -1,7 +1,7 @@
 def AURA_ATTACHED_TO_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
     public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
         final MagicPermanent enchanted = target.getEnchantedPermanent();
-        return target.hasSubType(MagicSubType.Aura) && 
+        return target.hasSubType(MagicSubType.Aura) &&
             enchanted.isCreature() &&
             enchanted.isController(player);
     }

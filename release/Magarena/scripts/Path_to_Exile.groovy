@@ -7,7 +7,7 @@
                 NEG_TARGET_CREATURE,
                 MagicExileTargetPicker.create(),
                 this,
-                "Exile target creature\$. " + 
+                "Exile target creature\$. " +
                 "Its controller may search his or her library for a basic land card, put that card onto the battlefield tapped, then shuffle his or her library."
             );
         }

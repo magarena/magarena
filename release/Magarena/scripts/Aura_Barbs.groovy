@@ -3,7 +3,7 @@ def AURA_YOU_CONTROL_ATTACHED_TO_CREATURE = new MagicPermanentFilterImpl() {
             return target.getEnchantedPermanent().hasType(MagicType.Creature) && target.isController(player);
         }
     };
-    
+
 [
     new MagicSpellCardEvent() {
         @Override

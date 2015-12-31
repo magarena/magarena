@@ -26,7 +26,7 @@
             event.processTargetPermanent(game, {
                 final MagicPermanent source = event.getPermanent();
                 game.doAction(new AddStaticAction(
-                    source, 
+                    source,
                     MagicStatic.AsLongAsCond(it, 0, 3, MagicCondition.TAPPED_CONDITION)
                 ));
             });

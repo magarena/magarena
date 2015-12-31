@@ -28,7 +28,7 @@
             game.doAction(new ChangeLifeAction(player, 5));
             game.doAction(new RemoveFromPlayAction(permanent, MagicLocationType.TopOfOwnersLibrary));
             game.doAction(new ShuffleLibraryAction(permanent.getOwner()));
-            
+
             final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
             for (final MagicCard card : graveyard) {
                 game.doAction(new ShiftCardAction(

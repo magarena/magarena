@@ -3,7 +3,7 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
             return (otherPermanent.isNonToken() &&
-                    otherPermanent.isCreature() && 
+                    otherPermanent.isCreature() &&
                     otherPermanent.getCard().isFriend(permanent)) ?
                 new MagicEvent(
                     permanent,
@@ -15,7 +15,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new PlayTokenAction(
-                event.getPlayer(), 
+                event.getPlayer(),
                 CardDefinitions.getToken("1/1 white Spirit creature token with flying")
             ));
         }

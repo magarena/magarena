@@ -22,7 +22,7 @@
                 "Destroy target nonblack creature.\$ It can't be regenerated."
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {

@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "SN deals 3 damage to each creature without flying and each player. " + 
+                "SN deals 3 damage to each creature without flying and each player. " +
                 "Creatures dealt damage this way can't be regenerated this turn."
             );
         }

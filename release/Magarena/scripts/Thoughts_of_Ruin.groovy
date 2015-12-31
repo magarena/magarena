@@ -19,7 +19,7 @@
                         player,
                         SACRIFICE_LAND
                     ));
-                }  
+                }
             }
         }
     }

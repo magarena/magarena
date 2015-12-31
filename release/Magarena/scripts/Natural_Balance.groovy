@@ -14,13 +14,13 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicPlayer player : game.getAPNAP()) {
-                final int lands = player.getNrOfPermanents(MagicType.Land); 
-                if (lands >= 6) {    
+                final int lands = player.getNrOfPermanents(MagicType.Land);
+                if (lands >= 6) {
                     final int amount = player.getNrOfPermanents(MagicType.Land) - 5;
                     game.addEvent(new MagicRepeatedPermanentsEvent(
-                        event.getSource(), 
+                        event.getSource(),
                         SACRIFICE_LAND,
-                        amount, 
+                        amount,
                         MagicChainEventFactory.Sac
                     ));
                 } else if (lands <= 4) {

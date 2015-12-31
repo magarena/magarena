@@ -1,7 +1,7 @@
 def OPPONENT_WITH_TWO_MORE_CARDS = new MagicPlayerFilterImpl() {
     public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPlayer target) {
         return target.isEnemy(player) && target.getHandSize() >= player.getHandSize() + 2;
-    } 
+    }
 };
 
 def TARGET_OPPONENT_WITH_TWO_MORE_CARDS = new MagicTargetChoice(

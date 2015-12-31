@@ -8,7 +8,7 @@ def TEXT2 = "Each player draws seven cards."
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                payedCost.isKicked() ? 
+                payedCost.isKicked() ?
                     MagicChoice.NONE :
                     new MagicOrChoice(
                         MagicChoice.NONE,
@@ -44,9 +44,9 @@ def TEXT2 = "Each player draws seven cards."
                 }
             }
             if (event.isKicked() || event.isMode(2)) {
-                for (final MagicPlayer player : game.getAPNAP()) { 
+                for (final MagicPlayer player : game.getAPNAP()) {
                     game.doAction(new DrawAction(player,7));
-                } 
+                }
             }
         }
     }

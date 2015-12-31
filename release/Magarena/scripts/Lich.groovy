@@ -1,7 +1,7 @@
 [
     new EntersBattlefieldTrigger(MagicTrigger.REPLACEMENT) {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPayedCost payedCost) {     
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
                 this,
@@ -17,7 +17,7 @@
             game.logAppendValue(player, lossAmount)
         }
     },
-    
+
     new IfPlayerWouldLoseTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final LoseGameAction loseAct) {
@@ -27,7 +27,7 @@
             return MagicEvent.NONE;
         }
     },
-    
+
     new IfLifeWouldChangeTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final ChangeLifeAction act) {
@@ -50,7 +50,7 @@
             game.doAction(new DrawAction(event.getPlayer(), event.getRefInt()));
         }
     },
-    
+
     new IfLifeWouldChangeTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final ChangeLifeAction act) {

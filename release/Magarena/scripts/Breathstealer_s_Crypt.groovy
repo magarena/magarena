@@ -2,13 +2,13 @@
     new OtherDrawnTrigger(MagicTrigger.REPLACEMENT) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCard card) {
-            return card.hasType(MagicType.Creature) ? 
+            return card.hasType(MagicType.Creature) ?
                 new MagicEvent(
                     card,
                     new MagicMayChoice("Pay 3 life? If not, discard " + card),
                     this,
                     "PN may\$ pay 3 life. If PN doesn't, discard this card."
-                ) : 
+                ) :
                 MagicEvent.NONE;
         }
 

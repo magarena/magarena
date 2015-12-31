@@ -4,7 +4,7 @@ def type = new MagicStatic(MagicLayer.Type) {
         return flags | MagicType.Artifact.getMask();
     }
 };
-                
+
 def choice = Positive("target nonartifact creature");
 
 [

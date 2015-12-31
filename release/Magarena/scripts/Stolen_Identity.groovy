@@ -20,7 +20,7 @@
                     player
                 ));
                 game.doAction(new CipherAction(
-                    event.getCardOnStack(), 
+                    event.getCardOnStack(),
                     event.getPlayer()
                 ));
             });

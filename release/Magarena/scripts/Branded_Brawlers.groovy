@@ -9,7 +9,7 @@
             return game.getDefendingPlayer().controlsPermanent(UNTAPPED_LAND);
         }
     },
-    
+
     new MagicStatic(MagicLayer.Ability) {
         @Override
         public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {

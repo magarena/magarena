@@ -26,7 +26,7 @@
             });
         }
     },
-    
+
     new ThisLeavesBattlefieldTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final RemoveFromPlayAction act) {

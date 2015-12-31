@@ -3,7 +3,7 @@ def winAct = {
     game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand))
     game.doAction(new MoveCardAction(event.getCardOnStack()));
 }
-    
+
 def loseAct = {
     final MagicGame game, final MagicEvent event ->
     final MagicLocationType oldLocation = MagicLocationType.values()[event.getRefInt()];
@@ -26,13 +26,13 @@ def loseAct = {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new PlayTokensAction(
-                event.getPlayer(), 
+                event.getPlayer(),
                 CardDefinitions.getToken("1/1 red Elemental creature token"),
                 2
             ));
             final MagicCardOnStack spell = event.getCardOnStack();
             final MagicLocationType oldLocation = spell.getMoveLocation();
-            
+
             //prevent auto move to moveLocation after executeEvent
             spell.setMoveLocation(MagicLocationType.Battlefield);
 

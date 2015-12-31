@@ -3,14 +3,14 @@
         new MagicActivationHints(MagicTiming.Pump),
         "Pump"
     ) {
-    
+
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicPayManaCostEvent(source,"{3}")
             ];
         }
-        
+
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(

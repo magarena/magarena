@@ -1,7 +1,7 @@
 [
     new AtEndOfTurnTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer eotPlayer) {  
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer eotPlayer) {
             return permanent.isOpponent(eotPlayer) && !permanent.getController().hasState(MagicPlayerState.HasLostLife) ?
                 new MagicEvent(
                     permanent,

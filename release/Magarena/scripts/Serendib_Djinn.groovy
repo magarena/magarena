@@ -2,7 +2,7 @@ def SAC_ACTION = {
     final MagicGame game, final MagicEvent event ->
     event.processTargetPermanent(game, {
         game.doAction(new SacrificeAction(it));
-        if (it.hasSubType(MagicSubType.Island)) { 
+        if (it.hasSubType(MagicSubType.Island)) {
             game.doAction(new DealDamageAction(event.getSource(),event.getPlayer(),3));
         }
     })

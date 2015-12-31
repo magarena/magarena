@@ -8,7 +8,7 @@ def CARD_NAMED_ORISS = new MagicCardFilterImpl() {
 };
 
 def A_CARD_NAMED_ORISS = new MagicTargetChoice(
-    CARD_NAMED_ORISS,  
+    CARD_NAMED_ORISS,
     MagicTargetHint.None,
     "a card named Oriss, Samite Guardian from your hand"
 );

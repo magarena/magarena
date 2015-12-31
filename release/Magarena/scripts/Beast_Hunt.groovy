@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "PN reveals the top three cards of his or her library. " + 
+                "PN reveals the top three cards of his or her library. " +
                 "Put all creature cards revealed this way into PN's hand and the rest into PN's graveyard."
             );
         }
@@ -15,7 +15,7 @@
             game.doAction(new RevealAction(top3));
             for (final MagicCard top : top3) {
                 game.doAction(new ShiftCardAction(
-                    top, 
+                    top,
                     MagicLocationType.OwnersLibrary,
                     top.hasType(MagicType.Creature) ?
                         MagicLocationType.OwnersHand :

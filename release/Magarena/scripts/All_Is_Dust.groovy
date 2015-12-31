@@ -19,7 +19,7 @@ def COLORED_PERMANENT = new MagicPermanentFilterImpl() {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             COLORED_PERMANENT.filter(event) each {
                 game.doAction(new SacrificeAction(it));
-            }    
+            }
         }
     }
 ]

@@ -2,7 +2,7 @@ def OPPONENT_WHO_CONTROLS_MORE_CREATURES = new MagicPlayerFilterImpl() {
     public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPlayer target) {
         return target.isEnemy(player) &&
                target.getNrOfPermanents(MagicType.Creature) > player.getNrOfPermanents(MagicType.Creature);
-    } 
+    }
 };
 
 def TARGET_OPPONENT_WHO_CONTROLS_MORE_CREATURES = new MagicTargetChoice(

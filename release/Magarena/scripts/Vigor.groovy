@@ -5,12 +5,12 @@
             final MagicTarget target = damage.getTarget();
             int amount = 0;
 
-            if (target != permanent && 
+            if (target != permanent &&
                 target.isCreature() &&
                 permanent.isFriend(target)) {
                 amount = damage.prevent();
             }
-                
+
             return amount > 0 ?
                 new MagicEvent(
                     permanent,

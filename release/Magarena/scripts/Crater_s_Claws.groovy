@@ -13,7 +13,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int X = event.getCardOnStack().getX();
-            final boolean ferocious = event.getPlayer().controlsPermanent(CREATURE_POWER_4_OR_MORE); 
+            final boolean ferocious = event.getPlayer().controlsPermanent(CREATURE_POWER_4_OR_MORE);
             event.processTarget(game, {
                 game.doAction(new DealDamageAction(
                     event.getSource(),

@@ -19,7 +19,7 @@
                         MagicLocationType.OwnersLibrary,
                         MagicLocationType.OwnersHand
                     ));
-                } 
+                }
             }
         }
     }

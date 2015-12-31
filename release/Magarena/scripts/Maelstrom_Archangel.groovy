@@ -5,9 +5,9 @@ def NONLAND_CARD_FROM_HAND = new MagicCardFilterImpl() {
     public boolean acceptType(final MagicTargetType targetType) {
         return targetType == MagicTargetType.Hand;
     }
-}; 
+};
 def A_NONLAND_CARD_FROM_HAND = new MagicTargetChoice(
-    NONLAND_CARD_FROM_HAND,  
+    NONLAND_CARD_FROM_HAND,
     MagicTargetHint.None,
     "a nonland card from your hand"
 );

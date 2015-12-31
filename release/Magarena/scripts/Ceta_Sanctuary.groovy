@@ -2,8 +2,8 @@
     new AtYourUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPlayer upkeepPlayer) {
-            return upkeepPlayer.controlsPermanent(MagicColor.Red) || 
-                upkeepPlayer.controlsPermanent(MagicColor.Green) ? 
+            return upkeepPlayer.controlsPermanent(MagicColor.Red) ||
+                upkeepPlayer.controlsPermanent(MagicColor.Green) ?
                 new MagicEvent(
                     permanent,
                     this,

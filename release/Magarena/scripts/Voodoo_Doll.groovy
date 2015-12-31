@@ -24,7 +24,7 @@
             }
         }
     },
-    
+
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Removal),
         "Damage"

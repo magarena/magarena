@@ -1,7 +1,7 @@
 def AURA_YOU_CONTROL_ATTACHED_TO_CREATURE = new MagicPermanentFilterImpl() {
     public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-        return target.hasSubType(MagicSubType.Aura) && 
-            target.getEnchantedPermanent().hasType(MagicType.Creature) && 
+        return target.hasSubType(MagicSubType.Aura) &&
+            target.getEnchantedPermanent().hasType(MagicType.Creature) &&
             target.isController(player);
     }
 }
@@ -18,7 +18,7 @@ def AURA_YOU_CONTROL_ATTACHED_TO_CREATURE = new MagicPermanentFilterImpl() {
             return MagicStatic.acceptLinked(game, source, target);
         }
     },
-    
+
     new EntersBattlefieldTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent,  final MagicPayedCost payedCost) {

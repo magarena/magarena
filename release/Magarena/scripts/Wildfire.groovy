@@ -12,9 +12,9 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicPlayer player : game.getAPNAP()) {
                 game.addEvent(new MagicRepeatedPermanentsEvent(
-                    event.getSource(), 
-                    SACRIFICE_LAND, 
-                    4, 
+                    event.getSource(),
+                    SACRIFICE_LAND,
+                    4,
                     MagicChainEventFactory.Sac
                 ));
             }

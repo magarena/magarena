@@ -5,7 +5,7 @@
             permanent.loseAllAbilities();
         }
         @Override
-        public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) { 
+        public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
             return MagicStatic.acceptLinked(game, source, target);
         }
     },
@@ -16,7 +16,7 @@
             flags.add(MagicSubType.Treefolk);
         }
         @Override
-        public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) { 
+        public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
             return MagicStatic.acceptLinked(game, source, target);
         }
     },
@@ -26,7 +26,7 @@
             pt.set(0,4);
         }
         @Override
-        public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) { 
+        public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
             return MagicStatic.acceptLinked(game, source, target);
         }
     }

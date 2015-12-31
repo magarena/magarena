@@ -3,7 +3,7 @@ def SWAMP_OR_BLACK_PERMANENT_YOU_CONTROL = new MagicPermanentFilterImpl() {
         return target.isController(player) &&
                (target.hasSubType(MagicSubType.Swamp) ||
                 target.hasColor(MagicColor.Black));
-    } 
+    }
 };
 
 def A_SWAMP_OR_BLACK_PERMANENT_YOU_CONTROL = new MagicTargetChoice(
@@ -16,7 +16,7 @@ def ISLAND_OR_BLUE_PERMANENT_YOU_CONTROL = new MagicPermanentFilterImpl() {
         return target.isController(player) &&
                (target.hasSubType(MagicSubType.Island) ||
                 target.hasColor(MagicColor.Blue));
-    } 
+    }
 };
 
 def AN_ISLAND_OR_BLUE_PERMANENT_YOU_CONTROL = new MagicTargetChoice(

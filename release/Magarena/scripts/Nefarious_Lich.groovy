@@ -22,7 +22,7 @@
             game.doAction(new DrawAction(event.getPlayer(), event.getRefInt()));
         }
     },
-    
+
     new IfLifeWouldChangeTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final ChangeLifeAction act) {

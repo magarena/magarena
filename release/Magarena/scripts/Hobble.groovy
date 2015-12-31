@@ -5,7 +5,7 @@
             permanent.addAbility(MagicAbility.CannotBlock, flags);
         }
         @Override
-        public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) { 
+        public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
             return MagicStatic.acceptLinked(game, source, target) && target.hasColor(MagicColor.Black);
         }
     }

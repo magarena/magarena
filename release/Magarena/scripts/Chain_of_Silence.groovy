@@ -1,6 +1,6 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
-    final MagicEvent sac = new MagicSacrificePermanentEvent(event.getSource(),event.getPlayer(),SACRIFICE_LAND); 
+    final MagicEvent sac = new MagicSacrificePermanentEvent(event.getSource(),event.getPlayer(),SACRIFICE_LAND);
     if (event.isYes() && sac.isSatisfied()) {
         game.addEvent(sac);
         game.doAction(new CopyCardOnStackAction(event.getPlayer(),event.getCardOnStack()));

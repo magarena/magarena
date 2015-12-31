@@ -5,9 +5,9 @@ def ISLAND_CARD_FROM_HAND = new MagicCardFilterImpl() {
     public boolean acceptType(final MagicTargetType targetType) {
         return targetType == MagicTargetType.Hand;
     }
-}; 
+};
 def AN_ISLAND_CARD_FROM_HAND = new MagicTargetChoice(
-    ISLAND_CARD_FROM_HAND,  
+    ISLAND_CARD_FROM_HAND,
     MagicTargetHint.None,
     "an Island card from your hand"
 );
@@ -24,7 +24,7 @@ def AN_ISLAND_CARD_FROM_HAND = new MagicTargetChoice(
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
             final MagicTargetChoice ANOTHER_CARD_FROM_HAND = new MagicTargetChoice(
-                CARD_FROM_HAND.except(source), 
+                CARD_FROM_HAND.except(source),
                 MagicTargetHint.None,
                 "another card from your hand"
             );

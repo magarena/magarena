@@ -13,7 +13,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicColor color = event.getChosenColor();
             game.doAction(new AddStaticAction(
-                event.getPermanent(), 
+                event.getPermanent(),
                 new MagicStatic(MagicLayer.ModPT, MagicTargetFilterFactory.creature(color, Control.You)) {
                     @Override
                     public void modPowerToughness(final MagicPermanent source,final MagicPermanent permanent,final MagicPowerToughness pt) {

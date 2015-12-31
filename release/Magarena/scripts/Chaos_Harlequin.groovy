@@ -15,7 +15,7 @@
             return new MagicEvent(
                 source,
                 this,
-                "Exile the top card of PN's library. If that card is a land card, SN gets -4/-0 until end of turn. " + 
+                "Exile the top card of PN's library. If that card is a land card, SN gets -4/-0 until end of turn. " +
                 "Otherwise, SN gets +2/+0 until end of turn."
             );
         }

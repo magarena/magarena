@@ -19,8 +19,8 @@
                 game.doAction(new AddStaticAction(
                     event.getPermanent(),
                     MagicStatic.AsLongAsCond(
-                        it, 
-                        MagicAbility.DoesNotUntap, 
+                        it,
+                        MagicAbility.DoesNotUntap,
                         MagicConditionFactory.PlayerControlsSource(event.getPlayer())
                     )
                 ));

@@ -11,7 +11,7 @@
                 ),
                 cardOnStack.getController(),
                 this,
-                "Creatures RN controls get +0/+1 until end of turn. " + 
+                "Creatures RN controls get +0/+1 until end of turn. " +
                 "PN may\$ pay {2}\$. If PN doesn't, creatures RN controls get an additional +0/+2 until end of turn."
             );
         }

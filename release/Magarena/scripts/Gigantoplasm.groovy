@@ -31,7 +31,7 @@ def PowerToughness = new MagicPermanentActivation(
         game.doAction(new BecomesCreatureAction(event.getPermanent(),PT));
     }
 };
-    
+
 def GainAct = new MagicStatic(MagicLayer.Ability) {
     @Override
     public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
@@ -48,7 +48,7 @@ def GainAct = new MagicStatic(MagicLayer.Ability) {
                 new MagicMayChoice(A_CREATURE),
                 MagicCopyPermanentPicker.create(),
                 this,
-                "PN may\$ have SN enter the battlefield as a copy of any creature on the battlefield\$, " + 
+                "PN may\$ have SN enter the battlefield as a copy of any creature on the battlefield\$, " +
                 "except it gains \"{X}: This creature has base power and toughness X/X.\""
             );
         }

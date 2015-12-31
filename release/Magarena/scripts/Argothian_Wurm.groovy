@@ -19,7 +19,7 @@
                     perm,
                     MagicLocationType.TopOfOwnersLibrary
                 ));
-            } 
+            }
         }
     }
 ]

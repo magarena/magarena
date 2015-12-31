@@ -9,7 +9,7 @@ def action = {
         game.addEvent(discard);
     } else {
         game.addEvent(new MagicSacrificePermanentEvent(
-            source, 
+            source,
             player,
             choice
         ))

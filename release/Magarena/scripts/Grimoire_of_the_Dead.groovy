@@ -25,7 +25,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             CREATURE_CARD_FROM_ALL_GRAVEYARDS.filter(event) each {
                 game.doAction(new ReanimateAction(
-                    it, 
+                    it,
                     event.getPlayer(),
                     [MagicPlayMod.BLACK_ZOMBIE]
                 ));

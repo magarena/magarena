@@ -14,7 +14,7 @@ def ST = new MagicStatic(MagicLayer.Type) {
                 new MagicMayChoice(A_CREATURE),
                 MagicCopyPermanentPicker.create(),
                 this,
-                "PN may\$ have SN enter the battlefield as a copy of any creature on the battlefield\$, " + 
+                "PN may\$ have SN enter the battlefield as a copy of any creature on the battlefield\$, " +
                 "except it's a Ninja in addition to its other types.\""
             );
         }

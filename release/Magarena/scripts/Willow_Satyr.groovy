@@ -26,7 +26,7 @@ def NEG_TARGET_LEGENDARY_CREATURE = MagicTargetChoice.Negative("target legendary
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new AddStaticAction(
-                    event.getPermanent(), 
+                    event.getPermanent(),
                     MagicStatic.ControlAsLongAsYouControlSourceAndSourceIsTapped(
                         event.getPlayer(),
                         it

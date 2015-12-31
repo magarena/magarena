@@ -2,7 +2,7 @@
     new EntersBattlefieldTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPayedCost payedCost) {
-            return permanent.hasState(MagicPermanentState.CastFromHand) ? 
+            return permanent.hasState(MagicPermanentState.CastFromHand) ?
                 new MagicEvent(
                     permanent,
                     MagicTargetChoice.TARGET_OPPONENT,

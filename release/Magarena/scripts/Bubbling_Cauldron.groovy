@@ -33,5 +33,5 @@ def choice = new MagicTargetChoice("a creature named Festering Newt to sacrifice
             game.doAction(new ChangeLifeAction(player,-act.getLifeChange()));
         }
     }
-    
+
 ]

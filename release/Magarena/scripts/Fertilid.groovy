@@ -6,7 +6,7 @@
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicPayManaCostEvent(source,"{1}{G}"), 
+                new MagicPayManaCostEvent(source,"{1}{G}"),
                 new MagicRemoveCounterEvent(source,MagicCounterType.PlusOne,1)
             ];
         }
@@ -27,8 +27,8 @@
                     event,
                     new MagicFromCardFilterChoice(
                         BASIC_LAND_CARD_FROM_LIBRARY,
-                        1, 
-                        true, 
+                        1,
+                        true,
                         "to put onto the battlefield tapped"
                     ),
                     MagicPlayMod.TAPPED

@@ -19,7 +19,7 @@
                     MagicLocationType.OwnersHand
                 ));
                 game.doAction(new ChangeLifeAction(
-                    event.getPlayer(), 
+                    event.getPlayer(),
                     -card.getConvertedCost()
                 ));
             }

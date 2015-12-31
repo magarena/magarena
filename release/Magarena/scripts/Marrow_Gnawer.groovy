@@ -1,4 +1,4 @@
-def choice = new MagicTargetChoice("a Rat to sacrifice"); 
+def choice = new MagicTargetChoice("a Rat to sacrifice");
 
 [
     new MagicPermanentActivation(

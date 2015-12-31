@@ -1,7 +1,7 @@
 def COULD_ATTACK = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
-            return permanent.isTapped() == false && 
+            return permanent.isTapped() == false &&
                    ((permanent.hasState(MagicPermanentState.Summoned) == false) ||
                    (permanent.hasState(MagicPermanentState.Summoned) && permanent.hasAbility(MagicAbility.Haste)));
         }

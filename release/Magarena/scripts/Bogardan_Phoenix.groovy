@@ -16,7 +16,7 @@
             final MagicCard card = event.getPermanent().getCard();
             if (card.isInGraveyard()) {
                 game.doAction(new ReanimateAction(card,event.getPlayer(),[MagicPlayMod.DEATH_COUNTER]));
-            }    
+            }
         }
     },
     new ThisDiesTrigger() {

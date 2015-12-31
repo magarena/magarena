@@ -17,9 +17,9 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPermanent enchantedPermanent = event.getRefPermanent();
             game.doAction(new ChangeLifeAction(
-                enchantedPermanent.getController(), 
+                enchantedPermanent.getController(),
                 -enchantedPermanent.getPower()
-            )); 
+            ));
             game.doAction(new ChangeLifeAction(
                 event.getPlayer(),
                 enchantedPermanent.getToughness()

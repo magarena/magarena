@@ -1,9 +1,9 @@
 [
     new OtherSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {  
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
             return (permanent.isFriend(cardOnStack) &&
-                    (cardOnStack.hasType(MagicType.Instant) || 
+                    (cardOnStack.hasType(MagicType.Instant) ||
                     cardOnStack.hasType(MagicType.Sorcery))) ?
                 new MagicEvent(
                     permanent,

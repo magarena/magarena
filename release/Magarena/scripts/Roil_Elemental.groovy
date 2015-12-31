@@ -19,7 +19,7 @@
                     game.doAction(new AddStaticAction(
                         event.getPermanent(),
                         MagicStatic.ControlAsLongAsYouControlSource(
-                            event.getPlayer(),  
+                            event.getPlayer(),
                             it
                         )
                     ));

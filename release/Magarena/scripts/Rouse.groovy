@@ -7,7 +7,7 @@
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
             return [
-                new MagicPayLifeEvent(source, 2)             
+                new MagicPayLifeEvent(source, 2)
             ];
         }
     }

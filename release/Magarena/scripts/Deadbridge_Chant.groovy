@@ -10,7 +10,7 @@
                 "Otherwise, PN puts it into his or her hand."
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();

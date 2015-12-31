@@ -24,7 +24,7 @@ def choice = new MagicTargetChoice("an Island to sacrifice");
     new AtBeginOfCombatTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer attackingPlayer) {
-            return permanent.isController(attackingPlayer) ? 
+            return permanent.isController(attackingPlayer) ?
                 new MagicEvent(
                 permanent,
                 new MagicMayChoice("Sacrifice two Islands?"),

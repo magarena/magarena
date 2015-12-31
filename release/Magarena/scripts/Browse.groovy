@@ -5,7 +5,7 @@ def TakeCard = {
         final MagicCardList top = new MagicCardList(event.getPlayer().getLibrary().getCardsFromTop(5));
         for (final MagicCard card : top) {
             game.doAction(new ShiftCardAction(
-                card, 
+                card,
                 MagicLocationType.OwnersLibrary,
                 card == chosen ?
                     MagicLocationType.OwnersHand :

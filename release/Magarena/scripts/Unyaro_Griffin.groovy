@@ -1,7 +1,7 @@
 def RED_INSTANT_OR_SORCERY = new MagicStackFilterImpl() {
     public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack target) {
         return target.hasColor(MagicColor.Red) && target.isInstantOrSorcerySpell();
-    } 
+    }
 };
 
 def TARGET_RED_INSTANT_OR_SORCERY = new MagicTargetChoice(

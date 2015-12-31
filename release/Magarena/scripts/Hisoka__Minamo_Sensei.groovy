@@ -29,7 +29,7 @@
                 game.logAppendValue(event.getPlayer(),amount);
                 if (it.getConvertedCost() == amount) {
                     game.doAction(new CounterItemOnStackAction(it));
-                    game.logAppendMessage(event.getPlayer(), "\n ("+it.getName()+") is countered."); 
+                    game.logAppendMessage(event.getPlayer(), "\n ("+it.getName()+") is countered.");
                 }
             });
         }

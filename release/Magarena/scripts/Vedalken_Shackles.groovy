@@ -40,7 +40,7 @@ def TARGET_POWER_LESS_THAN_ISLANDS = new MagicTargetChoice(
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 game.doAction(new AddStaticAction(
-                    event.getPermanent(), 
+                    event.getPermanent(),
                     MagicStatic.ControlAsLongAsSourceIsTapped(
                         event.getPlayer(),
                         it

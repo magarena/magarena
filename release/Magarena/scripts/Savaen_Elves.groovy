@@ -1,8 +1,8 @@
 def AURA_ATTACHED_TO_A_LAND = new MagicPermanentFilterImpl() {
     public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
-        return target.hasSubType(MagicSubType.Aura) && 
+        return target.hasSubType(MagicSubType.Aura) &&
             target.getEnchantedPermanent().hasType(MagicType.Land)
-    } 
+    }
 };
 
 def NEG_AURA_ATTACHED_TO_A_LAND = new MagicTargetChoice(

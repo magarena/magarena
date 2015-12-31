@@ -5,9 +5,9 @@ def CARD_NAMED_TAROX_BLADEWING = new MagicCardFilterImpl() {
     public boolean acceptType(final MagicTargetType targetType) {
         return targetType == MagicTargetType.Hand;
     }
-}; 
+};
 def A_CARD_NAMED_TAROX_BLADEWING = new MagicTargetChoice(
-    CARD_NAMED_TAROX_BLADEWING,  
+    CARD_NAMED_TAROX_BLADEWING,
     MagicTargetHint.None,
     "a card named Tarox Bladwing from your hand"
 );

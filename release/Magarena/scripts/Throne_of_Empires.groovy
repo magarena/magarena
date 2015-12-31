@@ -17,8 +17,8 @@
             return new MagicEvent(
                 source,
                 this,
-                "PN puts a 1/1 white Soldier creature token onto the battlefield." + 
-                "Put 5 of those tokens onto the battlefield instead if PN controls " + 
+                "PN puts a 1/1 white Soldier creature token onto the battlefield." +
+                "Put 5 of those tokens onto the battlefield instead if PN controls " +
                 "artifacts named Crown of Empires and Scepter of Empires."
             );
         }
@@ -31,7 +31,7 @@
             final MagicPlayer player = source.getController();
             final int amount = (player.controlsPermanent(crown) && player.controlsPermanent(scepter))? 5 : 1;
             game.doAction(new PlayTokensAction(event.getPlayer(), CardDefinitions.getToken("1/1 white Soldier creature token"),amount));
-            
+
         }
     }
 ]

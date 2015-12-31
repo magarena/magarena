@@ -14,7 +14,7 @@
             final MagicPermanentList permanents = new MagicPermanentList(NONLAND_PERMANENT.filter(event));
             final MagicRandom rng = new MagicRandom(permanents.getStateId());
             for(final MagicPermanent permanent : permanents) {
-                final int newCtrlNr = rng.nextInt(2); 
+                final int newCtrlNr = rng.nextInt(2);
                 game.doAction(new GainControlAction(game.getPlayer(newCtrlNr), permanent));
                 game.doAction(new UntapAction(permanent));
             }

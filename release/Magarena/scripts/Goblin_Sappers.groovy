@@ -38,7 +38,7 @@
             });
         }
     },
-    
+
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Attack),
         "{R}{R}{R}{R}"

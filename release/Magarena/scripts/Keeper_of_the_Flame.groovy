@@ -1,7 +1,7 @@
 def OPPONENT_WHO_HAS_MORE_LIFE = new MagicPlayerFilterImpl() {
     public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPlayer target) {
         return target.isEnemy(player) && target.getLife() > player.getLife();
-    } 
+    }
 };
 
 def TARGET_OPPONENT_WHO_HAS_MORE_LIFE = new MagicTargetChoice(

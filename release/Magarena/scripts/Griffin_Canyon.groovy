@@ -26,7 +26,7 @@ def choice = new MagicTargetChoice("target Griffin");
             event.processTargetPermanent(game, {
                 game.doAction(new UntapAction(it));
                 if (it.isCreature()) {
-                    game.doAction(new ChangeTurnPTAction(it, 1, 1)); 
+                    game.doAction(new ChangeTurnPTAction(it, 1, 1));
                 }
             });
         }

@@ -5,7 +5,7 @@
             permanent.addAbility(MagicAbility.Hexproof, flags);
         }
         @Override
-        public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) { 
+        public boolean accept(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
             return source.getEquippedCreature().hasType(MagicType.Legendary) &&
                    target == source.getEquippedCreature();
         }

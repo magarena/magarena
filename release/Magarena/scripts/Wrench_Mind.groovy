@@ -8,7 +8,7 @@ def ARTIFACT_CARD_FROM_HAND = new MagicCardFilterImpl() {
 };
 
 def AN_ARTIFACT_CARD_FROM_HAND = new MagicTargetChoice(
-    ARTIFACT_CARD_FROM_HAND,  
+    ARTIFACT_CARD_FROM_HAND,
     MagicTargetHint.None,
     "an artifact card from your hand"
 );

@@ -22,7 +22,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             for (final MagicPlayer player : game.getAPNAP()) {
                 game.doAction(new ChangeLifeAction(
-                    player, 
+                    player,
                     -1 * player.getNrOfPermanents(MagicSubType.Swamp)
                 ));
             }

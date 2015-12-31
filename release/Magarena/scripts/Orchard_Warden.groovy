@@ -11,7 +11,7 @@
                     new MagicMayChoice("gain life?"),
                     otherPermanent,
                     this,
-                    "PN may\$ gain life equal to RN's toughness." 
+                    "PN may\$ gain life equal to RN's toughness."
                 ):
                 MagicEvent.NONE;
         }

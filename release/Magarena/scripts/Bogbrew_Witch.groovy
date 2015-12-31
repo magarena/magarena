@@ -5,9 +5,9 @@ def CARD_NAMED_NEWT_OR_CAULDRON = new MagicCardFilterImpl() {
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Library;
         }
-    }; 
+    };
 def A_CARD_NAMED_NEWT_OR_CAULDRON = new MagicTargetChoice(
-        CARD_NAMED_NEWT_OR_CAULDRON,  
+        CARD_NAMED_NEWT_OR_CAULDRON,
         MagicTargetHint.None,
         "a card named Festering Newt or Bubbling Cauldron"
     );

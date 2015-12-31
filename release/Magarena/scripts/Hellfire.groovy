@@ -5,7 +5,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "Destroy all nonblack creatures. " + 
+                "Destroy all nonblack creatures. " +
                 "SN deals X plus 3 damage to PN, where X is the number of creatures that died this way."
             );
         }

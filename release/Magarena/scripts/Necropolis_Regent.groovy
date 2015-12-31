@@ -8,14 +8,14 @@
                 new MagicEvent(
                     source,
                     damage.getAmount(),
-                    this,                            
+                    this,
                     "Put RN +1/+1 counters on SN."
                 ) :
                 MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,event.getRefInt()));        
+            game.doAction(new ChangeCountersAction(event.getPermanent(),MagicCounterType.PlusOne,event.getRefInt()));
         }
     }
 ]

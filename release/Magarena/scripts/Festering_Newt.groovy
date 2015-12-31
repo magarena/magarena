@@ -3,7 +3,7 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent died) {
             final MagicTargetFilter<MagicPermanent> witch = new MagicNameTargetFilter("Bogbrew Witch");
-            final int amount = (permanent.getController().controlsPermanent(witch))? 4: 1; 
+            final int amount = (permanent.getController().controlsPermanent(witch))? 4: 1;
             return new MagicEvent(
                 permanent,
                 new MagicTargetChoice("target creature an opponent controls"),

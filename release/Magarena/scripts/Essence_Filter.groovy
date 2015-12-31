@@ -1,7 +1,7 @@
 def NONWHITE_ENCHANTMENT=new MagicPermanentFilterImpl() {
     public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
         return !target.hasColor(MagicColor.White) && target.isEnchantment();
-    } 
+    }
 };
 
 def EFFECT1 = MagicRuleEventAction.create("Destroy all enchantments.");
@@ -18,7 +18,7 @@ def EFFECT1 = MagicRuleEventAction.create("Destroy all enchantments.");
                 ),
                 this,
                 "Choose one\$ — (1) destroy all enchantments; " +
-                "or (2) destroy all nonwhite enchantments." 
+                "or (2) destroy all nonwhite enchantments."
             );
         }
         @Override

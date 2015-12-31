@@ -4,7 +4,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 permanent,
-                TARGET_CREATURE_YOUR_OPPONENT_CONTROLS, 
+                TARGET_CREATURE_YOUR_OPPONENT_CONTROLS,
                 MagicExileTargetPicker.create(),
                 this,
                 "Exile target creature an opponent controls\$ until SN leaves the battlefield."

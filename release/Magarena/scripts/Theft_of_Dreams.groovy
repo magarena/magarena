@@ -16,5 +16,5 @@
                 game.doAction(new DrawAction(event.getPlayer(),amt));
             });
         }
-    } 
+    }
 ]

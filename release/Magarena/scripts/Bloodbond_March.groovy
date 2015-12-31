@@ -1,7 +1,7 @@
 [
     new OtherSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {  
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
             return cardOnStack.hasType(MagicType.Creature) ?
                 new MagicEvent(
                     permanent,

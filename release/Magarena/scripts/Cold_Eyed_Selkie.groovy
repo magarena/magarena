@@ -10,7 +10,7 @@
                         MagicSimpleMayChoice.DEFAULT_NONE
                     ),
                     damage.getAmount(),
-                    this,                            
+                    this,
                     "PN may\$ draw RN cards."
                 );
         }
@@ -18,7 +18,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
                 game.doAction(new DrawAction(event.getPlayer(),event.getRefInt()));
-            }       
+            }
         }
     }
 ]

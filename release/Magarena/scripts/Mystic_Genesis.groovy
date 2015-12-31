@@ -14,7 +14,7 @@
             event.processTargetCardOnStack(game, {
                 final MagicCardOnStack card ->
                 game.doAction(new CounterItemOnStackAction(card));
-                    
+
                 final int x = card.getConvertedCost();
                 game.doAction(new PlayTokenAction(event.getPlayer(), MagicCardDefinition.create({
                     it.setName("Ooze");

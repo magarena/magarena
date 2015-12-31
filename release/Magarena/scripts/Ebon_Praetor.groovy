@@ -30,7 +30,7 @@
                 MagicCounterType.MinusTwo,
                 -1
             ));
-            if (event.getRefPermanent().hasSubType(MagicSubType.Thrull)) { 
+            if (event.getRefPermanent().hasSubType(MagicSubType.Thrull)) {
                 game.doAction(new ChangeCountersAction(
                     event.getPermanent(),
                     MagicCounterType.PlusOnePlusZero,

@@ -20,7 +20,7 @@
                 ));
                 game.doAction(new AddTriggerAction(
                     AtUpkeepTrigger.YouDraw(
-                        event.getSource(), 
+                        event.getSource(),
                         event.getPlayer()
                     )
                 ));

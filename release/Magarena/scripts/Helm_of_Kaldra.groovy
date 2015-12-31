@@ -10,12 +10,12 @@ def HAS_ALL_KALDRA_EQUIPMENT = new MagicCondition() {
     }
 };
 
-[    
+[
     new MagicPermanentActivation(
         [HAS_ALL_KALDRA_EQUIPMENT],
         new MagicActivationHints(MagicTiming.Token),
         "Token"
-    ) { 
+    ) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [new MagicPayManaCostEvent(source,"{1}")];
@@ -32,7 +32,7 @@ def HAS_ALL_KALDRA_EQUIPMENT = new MagicCondition() {
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int pIdx = event.getPlayer().getIndex();
             game.doAction(new PlayTokenAction(
-                event.getPlayer(), 
+                event.getPlayer(),
                 CardDefinitions.getToken("legendary 4/4 colorless Avatar creature token named Kaldra"),
                 {
                     final MagicPermanent perm ->

@@ -1,7 +1,7 @@
 def UNTAPPED_HUMAN_YOU_CONTROL=new MagicPermanentFilterImpl(){
     public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
-        return target.hasSubType(MagicSubType.Human) && 
-               target.isUntapped() && 
+        return target.hasSubType(MagicSubType.Human) &&
+               target.isUntapped() &&
                target.isController(player);
     }
 };

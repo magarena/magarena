@@ -24,7 +24,7 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicEvent bounce = new MagicBounceChosenPermanentEvent(
-                event.getSource(), 
+                event.getSource(),
                 event.getPlayer(),
                 MagicTargetChoice.ANOTHER_CREATURE_YOU_CONTROL
             );

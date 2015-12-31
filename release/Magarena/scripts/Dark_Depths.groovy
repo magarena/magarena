@@ -4,7 +4,7 @@ def action = {
     game.doAction(sac);
     if (sac.isValid()) {
         game.doAction(new PlayTokenAction(
-            event.getPlayer(), 
+            event.getPlayer(),
             CardDefinitions.getToken("legendary 20/20 black Avatar creature token with flying and indestructible named Marit Lage")
         ));
     }

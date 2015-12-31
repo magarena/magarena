@@ -14,7 +14,7 @@ def A_PAYABLE_INSTANT_OR_SORCERY_CARD_FROM_YOUR_GRAVEYARD = new MagicTargetChoic
                 ),
                 MagicGraveyardTargetPicker.PutOntoBattlefield,
                 this,
-                "PN may\$ flashback target instant or sorcery card\$ from his or her graveyard. " + 
+                "PN may\$ flashback target instant or sorcery card\$ from his or her graveyard. " +
                 "The flashback cost is equal to its mana cost."
             );
         }

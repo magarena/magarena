@@ -41,7 +41,7 @@ def PutHydra = new MagicTrigger<Integer>() {
                 new MagicPayManaCostEvent(source,"{X}{X}{G}")
             ];
         }
-        
+
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
             return new MagicEvent(

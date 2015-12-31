@@ -1,7 +1,7 @@
 def NONARTIFACT_CREATURE_YOU_CONTROL=new MagicPermanentFilterImpl() {
     public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
         return !target.hasType(MagicType.Artifact) && target.isCreature() && target.isController(player);
-    } 
+    }
 };
 
 def TARGET_NONARTIFACT_CREATURE_YOU_CONTROL = new MagicTargetChoice(

@@ -28,7 +28,7 @@ def choice = Negative("target artifact");
             event.processTargetPermanent(game, {
                 game.doAction(new TapAction(it));
                 game.doAction(new AddStaticAction(
-                    event.getPermanent(), 
+                    event.getPermanent(),
                     MagicStatic.AsLongAsCond(it, MagicAbility.DoesNotUntap, MagicCondition.TAPPED_CONDITION)
                 ));
             });

@@ -1,9 +1,9 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
     game.doAction(CastCardAction.WithoutManaCost(
-        event.getPlayer(), 
-        event.getRefCard(), 
-        MagicLocationType.OwnersLibrary, 
+        event.getPlayer(),
+        event.getRefCard(),
+        MagicLocationType.OwnersLibrary,
         MagicLocationType.Graveyard
     ));
 }

@@ -17,7 +17,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isNo()) {
                 game.addEvent(new MagicSacrificePermanentEvent(
-                    event.getSource(), 
+                    event.getSource(),
                     event.getPlayer(),
                     SACRIFICE_PERMANENT
                 ));

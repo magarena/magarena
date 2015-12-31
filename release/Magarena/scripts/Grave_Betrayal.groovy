@@ -4,9 +4,9 @@ def DelayedTrigger = {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer eotPlayer) {
             game.addDelayedAction(new RemoveTriggerAction(this));
-            
+
             final MagicCard mappedCard = staleCard.getOwner().map(game).getGraveyard().getCard(staleCard.getId());
-            
+
             return mappedCard.isInGraveyard() ?
                 new MagicEvent(
                     game.createDelayedSource(staleSource, stalePlayer),
@@ -37,7 +37,7 @@ def DelayedTrigger = {
                     permanent,
                     otherPermanent.getCard(),
                     this,
-                    "Return RN to the battlefield under PN's control with an additional +1/+1 counter on it at the beginning of the next end step. " + 
+                    "Return RN to the battlefield under PN's control with an additional +1/+1 counter on it at the beginning of the next end step. " +
                     "That creature is a black Zombie in addition to its other colors and types."
                 ) :
                 MagicEvent.NONE;

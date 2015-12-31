@@ -17,11 +17,11 @@ def MUTANT = new MagicStatic(MagicLayer.Type) {
                 game.doAction(new AddStaticAction(otherPermanent,MUTANT));
                 game.logAppendMessage(
                     permanent.getController(),
-                    "${otherPermanent.getName()} enters the battlefield with an additional ${amount} +1/+1 counters on it, " + 
+                    "${otherPermanent.getName()} enters the battlefield with an additional ${amount} +1/+1 counters on it, " +
                     "and as a Mutant in addition to its other types."
                 );
             }
             return MagicEvent.NONE;
         }
-    }    
+    }
 ]

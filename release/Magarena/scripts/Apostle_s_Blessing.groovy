@@ -1,7 +1,7 @@
 def ARTIFACT_OR_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
     public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
         return target.isController(player) && (target.isCreature() || target.isArtifact());
-    } 
+    }
 };
 
 def TARGET_ARTIFACT_OR_CREATURE_YOU_CONTROL = new MagicTargetChoice(
@@ -32,7 +32,7 @@ def action = {
                 ),
                 this,
                 "PN chooses one\$ — (1) target artifact or creature PN controls gains protection from artifacts until end of turn; " +
-                "or (2) target artifact or creature PN controls gains protection from the color of his or her choice until end of turn.\$" 
+                "or (2) target artifact or creature PN controls gains protection from the color of his or her choice until end of turn.\$"
             );
         }
         @Override

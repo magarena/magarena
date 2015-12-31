@@ -2,7 +2,7 @@ def action = {
     final MagicGame game, final MagicEvent event ->
     if (event.isNo()) {
         game.doAction(new AddStaticAction(
-            event.getPermanent(), 
+            event.getPermanent(),
             MagicStatic.ControlAsLongAsYouControlSource(
                 event.getPermanent().getController(),
                 event.getRefPermanent()

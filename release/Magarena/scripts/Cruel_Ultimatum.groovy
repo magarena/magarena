@@ -18,7 +18,7 @@ def effect = MagicRuleEventAction.create("return a creature card from your grave
                 game.addEvent(new MagicSacrificePermanentEvent(event.getSource(), it, SACRIFICE_CREATURE));
                 game.addEvent(new MagicDiscardEvent(event.getSource(), it, 3));
                 game.doAction(new ChangeLifeAction(it,-5));
-                
+
                 game.addEvent(effect.getEvent(event));
                 game.doAction(new DrawAction(event.getPlayer(), 3));
                 game.doAction(new ChangeLifeAction(event.getPlayer(), 5));

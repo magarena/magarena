@@ -24,7 +24,7 @@
                     game.doAction(new DestroyAction(it));
                     final MagicCard card = it.getCard();
                     // only deal damage when the target is destroyed
-                    if (card.isInGraveyard() 
+                    if (card.isInGraveyard()
                         ||
                         (card.isToken() && !card.getOwner().getPermanents().contains(it))) {
                         final int amount = event.getPlayer().getNrOfPermanents(MagicSubType.Ally);

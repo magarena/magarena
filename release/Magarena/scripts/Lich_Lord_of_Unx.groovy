@@ -15,7 +15,7 @@
                 source,
                 NEG_TARGET_PLAYER,
                 this,
-                "Target player\$ loses X life and puts the top X cards of his or her library into his or her graveyard, " + 
+                "Target player\$ loses X life and puts the top X cards of his or her library into his or her graveyard, " +
                 "where X is the number of Zombies you control."
             );
         }

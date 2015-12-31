@@ -32,7 +32,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         return flags|MagicType.Creature.getMask()|MagicType.Artifact.getMask();
     }
 };
-    
+
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Animate),

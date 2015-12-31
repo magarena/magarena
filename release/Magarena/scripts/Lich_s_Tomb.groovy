@@ -8,7 +8,7 @@
             return MagicEvent.NONE;
         }
     },
-    
+
     new LifeIsLostTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicLifeChangeTriggerData lifeChange) {

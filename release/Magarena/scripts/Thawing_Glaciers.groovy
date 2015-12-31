@@ -28,8 +28,8 @@
                 event,
                 new MagicFromCardFilterChoice(
                     BASIC_LAND_CARD_FROM_LIBRARY,
-                    1, 
-                    true, 
+                    1,
+                    true,
                     "to put onto the battlefield tapped"
                 ),
                 MagicPlayMod.TAPPED

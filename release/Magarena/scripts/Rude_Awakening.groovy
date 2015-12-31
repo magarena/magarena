@@ -22,7 +22,7 @@ def TEXT2 = "Until end of turn, lands you control become 2/2 creatures that are 
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                payedCost.isKicked() ? 
+                payedCost.isKicked() ?
                     MagicChoice.NONE :
                     new MagicOrChoice(
                         MagicChoice.NONE,
@@ -39,12 +39,12 @@ def TEXT2 = "Until end of turn, lands you control become 2/2 creatures that are 
             if (event.isKicked() || event.isMode(1)) {
                 LAND_YOU_CONTROL.filter(event.getPlayer()) each {
                     game.doAction(new UntapAction(it));
-                }         
-            } 
+                }
+            }
             if (event.isKicked() || event.isMode(2)) {
                 LAND_YOU_CONTROL.filter(event.getPlayer()) each {
                     game.doAction(new BecomesCreatureAction(it,PT,ST));
-                }         
+                }
             }
         }
     }

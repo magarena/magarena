@@ -16,12 +16,12 @@
                 n1.times {
                     game.addEvent(new MagicSacrificePermanentEvent(event.getSource(),player,SACRIFICE_LAND));
                 }
-                
+
                 final int n2 = player.getHandSize() - player.getOpponent().getHandSize();
                 if (n2 > 0) {
                     game.addEvent(new MagicDiscardEvent(event.getSource(),player,n2));
                 }
-                
+
                 final int n3 = player.getNrOfPermanents(MagicType.Creature) - player.getOpponent().getNrOfPermanents(MagicType.Creature);
                 n3.times {
                     game.addEvent(new MagicSacrificePermanentEvent(event.getSource(),player,SACRIFICE_CREATURE));

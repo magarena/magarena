@@ -8,9 +8,9 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
 [
     new OtherSpellIsCastTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {  
+        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
             return (permanent.isFriend(cardOnStack) &&
-                    cardOnStack.hasColor(MagicColor.Black) && 
+                    cardOnStack.hasColor(MagicColor.Black) &&
                     cardOnStack.hasColor(MagicColor.White)) ?
                 new MagicEvent(
                     permanent,
@@ -25,7 +25,7 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
                 event.getPermanent(), PT
             ));
             game.doAction(new GainAbilityAction(
-                event.getPermanent(), 
+                event.getPermanent(),
                 MagicAbility.Flying
             ));
         }

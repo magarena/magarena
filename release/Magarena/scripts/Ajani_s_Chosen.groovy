@@ -7,7 +7,7 @@
                     permanent,
                     otherPermanent,
                     this,
-                    "PN puts a 2/2 white Cat creature token onto the battlefield." 
+                    "PN puts a 2/2 white Cat creature token onto the battlefield."
                 ):
                 MagicEvent.NONE;
         }
@@ -30,7 +30,7 @@
                                 final MagicGame G2, final MagicEvent E ->
                                 if (E.isYes()) {
                                     G2.doAction(new AttachAction(
-                                        E.getPermanent(), 
+                                        E.getPermanent(),
                                         E.getRefPermanent()
                                     ));
                                 }

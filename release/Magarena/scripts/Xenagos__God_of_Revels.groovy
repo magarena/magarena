@@ -18,7 +18,7 @@ def choice = MagicTargetChoice.Positive("another target creature you control")
     new AtBeginOfCombatTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPlayer attackingPlayer) {
-            return permanent.getController() == attackingPlayer ? 
+            return permanent.getController() == attackingPlayer ?
                 new MagicEvent(
                     permanent,
                     choice,

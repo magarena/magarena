@@ -8,9 +8,9 @@ def DelayedTrigger = {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
             game.addDelayedAction(new RemoveTriggerAction(this));
-            
+
             final MagicCard mappedCard = staleCard.getOwner().map(game).getExile().getCard(staleCard.getId());
-            
+
             return mappedCard.isInExile() ?
                 new MagicEvent(
                     mappedCard,
@@ -39,8 +39,8 @@ def DelayedTrigger = {
                     permanent,
                     new MagicMayChoice(),
                     this,
-                    "PN may\$ exile SN. " + 
-                    "If PN does, return it to the battlefield under its owner's control at the beginning of PN's next upkeep. " + 
+                    "PN may\$ exile SN. " +
+                    "If PN does, return it to the battlefield under its owner's control at the beginning of PN's next upkeep. " +
                     "It gains haste."
                 ):
                 MagicEvent.NONE

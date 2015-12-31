@@ -10,7 +10,7 @@
                 "Tap target creature an opponent controls\$. If PN won, that creature doesn't untap during its controller's next untap step."
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {

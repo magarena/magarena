@@ -20,7 +20,7 @@ def choice = new MagicTargetChoice("another artifact you control");
                 game.addEvent(sac);
             } else {
                 game.doAction(new TapAction(permanent));
-                game.doAction(new ChangeLifeAction(player,-4));        
+                game.doAction(new ChangeLifeAction(player,-4));
             }
         }
     }

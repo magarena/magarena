@@ -15,7 +15,7 @@
             all.addAll(CREATURE.filter(event));
             all.addAll(LAND.filter(event));
             game.doAction(new RemoveAllFromPlayAction(all, MagicLocationType.Exile));
-            
+
             for (final MagicPlayer player : game.getAPNAP()) {
                 final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
                 for (final MagicCard it : graveyard) {

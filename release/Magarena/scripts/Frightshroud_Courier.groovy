@@ -28,11 +28,11 @@ def choice = Positive("target zombie creature");
             event.processTargetPermanent(game, {
                 final MagicPermanent source = event.getPermanent();
                 game.doAction(new AddStaticAction(
-                    source, 
+                    source,
                     MagicStatic.AsLongAsCond(it, 2, 2, MagicCondition.TAPPED_CONDITION)
                 ));
                 game.doAction(new AddStaticAction(
-                    source, 
+                    source,
                     MagicStatic.AsLongAsCond(it, MagicAbility.Fear, MagicCondition.TAPPED_CONDITION)
                 ));
             });

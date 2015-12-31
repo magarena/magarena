@@ -8,14 +8,14 @@
                 new MagicEvent(
                     permanent,
                     source,
-                    this,                     
+                    this,
                     "Put a +1/+1 counter on RN."
                 ) :
                 MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new ChangeCountersAction(event.getRefPermanent(),MagicCounterType.PlusOne,1));        
+            game.doAction(new ChangeCountersAction(event.getRefPermanent(),MagicCounterType.PlusOne,1));
         }
     }
 ]

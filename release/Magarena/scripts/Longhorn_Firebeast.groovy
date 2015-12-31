@@ -15,7 +15,7 @@
             if (event.isYes()) {
                 game.doAction(new DealDamageAction(event.getSource(),event.getPlayer(),5));
                 game.doAction(new SacrificeAction(event.getPermanent()));
-            } 
+            }
         }
     }
 ]

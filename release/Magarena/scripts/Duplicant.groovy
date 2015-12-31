@@ -9,7 +9,7 @@
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
             return MagicCondition.HAS_EXILED_CREATURE_CARD.accept(source);
         }
-    }, 
+    },
     new MagicStatic(MagicLayer.Type) {
         @Override
         public void modSubTypeFlags(final MagicPermanent source, final Set<MagicSubType> flags) {

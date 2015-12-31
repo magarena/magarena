@@ -5,9 +5,9 @@ def CARD_NAMED_BARU = new MagicCardFilterImpl() {
     public boolean acceptType(final MagicTargetType targetType) {
         return targetType == MagicTargetType.Hand;
     }
-}; 
+};
 def A_CARD_NAMED_BARU = new MagicTargetChoice(
-    CARD_NAMED_BARU,  
+    CARD_NAMED_BARU,
     MagicTargetHint.None,
     "a card named Baru, Fist of Krosa from your hand"
 );

@@ -1,7 +1,7 @@
 def action = {
     final MagicGame game, final MagicEvent event ->
     game.doAction(new ChangeCountersAction(
-        event.getPermanent(), 
+        event.getPermanent(),
         MagicCounterType.Tide,
         -event.getPermanent().getCounters(MagicCounterType.Tide)
     ));

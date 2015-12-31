@@ -22,7 +22,7 @@ def YouLoseEvent = {
             return MagicEvent.NONE;
         }
     },
-    
+
     new MagicStatic(MagicLayer.Game) {
         @Override
         public boolean condition(final MagicGame game, final MagicPermanent source, final MagicPermanent target) {
@@ -35,7 +35,7 @@ def YouLoseEvent = {
             ));
         }
     },
-    
+
     new LifeIsLostTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicLifeChangeTriggerData lifeChange) {

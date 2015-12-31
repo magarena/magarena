@@ -6,7 +6,7 @@
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicTapEvent(source), 
+                new MagicTapEvent(source),
                 new MagicPayManaCostEvent(source,"{1}{G}")
             ];
         }
@@ -23,7 +23,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processChosenCards(game, {
                 game.doAction(new ShiftCardAction(it, MagicLocationType.Graveyard, MagicLocationType.BottomOfOwnersLibrary));
-            }); 
+            });
         }
     }
 ]

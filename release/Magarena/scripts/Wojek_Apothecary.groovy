@@ -23,7 +23,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final MagicPermanent target ->
-                
+
                 final Set<MagicColor> targetColors = new HashSet<MagicColor>();
                 for (final MagicColor color : MagicColor.values()) {
                     if(target.hasColor(color)) {
@@ -40,7 +40,7 @@
                         }
                     }
                 }
-                
+
                 for (final MagicPermanent creature : targetList) {
                     game.doAction(new PreventDamageAction(creature, 1));
                 }

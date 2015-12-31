@@ -15,8 +15,8 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetCardOnStack(game, {
                 game.addEvent(new MagicCounterUnlessEvent(
-                    event.getSource(), 
-                    it, 
+                    event.getSource(),
+                    it,
                     MagicManaCost.create("{" + event.getRefInt() + "}"),
                     MagicLocationType.Exile
                 ));

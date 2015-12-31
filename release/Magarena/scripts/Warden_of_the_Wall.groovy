@@ -8,7 +8,7 @@
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
             return MagicCondition.NOT_YOUR_TURN_CONDITION.accept(source);
         }
-    }, 
+    },
     new MagicStatic(MagicLayer.Type) {
         @Override
         public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
@@ -35,5 +35,5 @@
             return MagicCondition.NOT_YOUR_TURN_CONDITION.accept(source);
         }
     }
-    
+
 ]

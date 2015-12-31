@@ -56,8 +56,8 @@
                 game.addEvent(new MagicDiscardEvent(event.getSource(), it, 7));
                 for (int i=7;i>0;i--) {
                     game.addEvent(new MagicSacrificePermanentEvent(
-                        event.getSource(), 
-                        it, 
+                        event.getSource(),
+                        it,
                         SACRIFICE_PERMANENT
                     ));
                 }

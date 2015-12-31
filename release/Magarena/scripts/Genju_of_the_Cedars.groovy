@@ -6,7 +6,7 @@ def PT = new MagicStatic(MagicLayer.SetPT, MagicStatic.UntilEOT) {
 };
 def LC = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
     @Override
-    public int getColorFlags(final MagicPermanent permanent, final int flags) {    
+    public int getColorFlags(final MagicPermanent permanent, final int flags) {
         return MagicColor.Green.getMask();
     }
 };

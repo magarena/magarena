@@ -11,7 +11,7 @@ def choice = new MagicTargetChoice("an artifact, creature, or land card from you
                 "PN may put an artifact, creature, or land card from his or her hand onto the battlefield."
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
                 game.addEvent(new MagicPutOntoBattlefieldEvent(

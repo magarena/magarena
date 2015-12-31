@@ -16,8 +16,8 @@
             game.logAppendX(player,amount);
             event.processTargetCardOnStack(game, {
                 game.addEvent(new MagicCounterUnlessEvent(
-                    event.getSource(), 
-                    it, 
+                    event.getSource(),
+                    it,
                     MagicManaCost.create("{" + amount + "}")
                 ));
             });

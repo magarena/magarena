@@ -5,7 +5,7 @@
             flags.add(MagicSubType.Zombie);
         }
     },
-    
+
     new MagicStatic(MagicLayer.Color,GOBLIN_CREATURE) {
         @Override
         public int getColorFlags(final MagicPermanent permanent, final int flags) {

@@ -2,7 +2,7 @@
     new OtherEntersBattlefieldTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            return (otherPermanent != permanent && 
+            return (otherPermanent != permanent &&
                     otherPermanent.isCreature()) ?
                 new MagicEvent(
                     permanent,

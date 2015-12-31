@@ -2,7 +2,7 @@
     new OtherEntersBattlefieldTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent otherPermanent) {
-            return (otherPermanent.hasColor(MagicColor.Black) == false && 
+            return (otherPermanent.hasColor(MagicColor.Black) == false &&
                     otherPermanent.isCreature()) ?
                 new MagicEvent(
                     permanent,

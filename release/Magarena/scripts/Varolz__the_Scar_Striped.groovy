@@ -10,7 +10,7 @@
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
                 new MagicExileCardPayManaCostEvent(
-                    source, 
+                    source,
                     A_PAYABLE_CREATURE_CARD_FROM_YOUR_GRAVEYARD
                 )
             ];

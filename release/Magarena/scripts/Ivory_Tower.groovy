@@ -6,7 +6,7 @@
                 permanent,
                 this,
                 "PN gains X life, where X is the number of cards in his or her hand minus 4."
-            ); 
+            );
         }
 
         @Override

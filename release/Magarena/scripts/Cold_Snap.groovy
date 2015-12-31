@@ -9,7 +9,7 @@
                 "SN deals damage to PN equal to the number of snow lands he or she controls."
             );
         }
-        
+
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();

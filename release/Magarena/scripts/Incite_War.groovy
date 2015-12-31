@@ -4,7 +4,7 @@
         public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 cardOnStack,
-                payedCost.isKicked() ? 
+                payedCost.isKicked() ?
                     NEG_TARGET_PLAYER :
                     new MagicOrChoice(
                         NEG_TARGET_PLAYER,
@@ -12,7 +12,7 @@
                     ),
                 this,
                 payedCost.isKicked() ?
-                    "Creatures target player\$ controls attack this turn if able. "+ 
+                    "Creatures target player\$ controls attack this turn if able. "+
                     "Creatures you control gain first strike until end of turn." :
                     "Choose one\$ — (1) Creatures target player\$ controls attack this turn if able; "+
                     "(2) Creatures you control gain first strike until end of turn."

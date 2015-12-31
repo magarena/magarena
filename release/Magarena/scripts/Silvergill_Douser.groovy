@@ -26,7 +26,7 @@
                 final int amount = event.getPlayer().getNrOfPermanents(
                     permanentOr(
                         MagicSubType.Merfolk,
-                        MagicSubType.Faerie, 
+                        MagicSubType.Faerie,
                         Control.You
                     )
                 );

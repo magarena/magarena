@@ -10,10 +10,10 @@ def event = {
     return new MagicEvent(
         source,
         new MagicTargetChoice(
-            SPELL_OR_ABILITY_THAT_TARGETS_PERMANENTS, 
-            MagicTargetHint.Negative, 
+            SPELL_OR_ABILITY_THAT_TARGETS_PERMANENTS,
+            MagicTargetHint.Negative,
             "target spell or ability"
-        ), 
+        ),
         action,
         "Change the target of target spell or ability\$ to SN."
     );

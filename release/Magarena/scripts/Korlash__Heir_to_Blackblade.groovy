@@ -5,9 +5,9 @@ def CARD_NAMED_KORLASH = new MagicCardFilterImpl() {
     public boolean acceptType(final MagicTargetType targetType) {
         return targetType == MagicTargetType.Hand;
     }
-}; 
+};
 def A_CARD_NAMED_KORLASH = new MagicTargetChoice(
-    CARD_NAMED_KORLASH,  
+    CARD_NAMED_KORLASH,
     MagicTargetHint.None,
     "a card named Korlash, Heir to Blackblade from your hand"
 );
@@ -45,8 +45,8 @@ def SWAMP_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
                 event,
                 new MagicFromCardFilterChoice(
                     SWAMP_CARD_FROM_LIBRARY,
-                    2, 
-                    true, 
+                    2,
+                    true,
                     "to put onto the battlefield tapped"
                 ),
                 MagicPlayMod.TAPPED

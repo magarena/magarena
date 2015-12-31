@@ -2,7 +2,7 @@
     new MonstrousTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final ChangeStateAction action) {
-            return action.permanent == permanent ? 
+            return action.permanent == permanent ?
                 new MagicEvent(
                     permanent,
                     this,

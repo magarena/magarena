@@ -2,7 +2,7 @@ def SAC_ACTION = {
     final MagicGame game, final MagicEvent event ->
     event.processTargetPermanent(game, {
         game.doAction(new SacrificeAction(it));
-        if (it.hasType(MagicType.Snow)) { 
+        if (it.hasType(MagicType.Snow)) {
             game.doAction(new GainAbilityAction(event.getPermanent(),MagicAbility.Trample));
         }
     })
@@ -19,7 +19,7 @@ def choice = MagicTargetChoice.Negative("another target creature");
                 new MagicMayChoice("Sacrifice a Forest?"),
                 this,
                 "PN may\$ sacrifice a Forest. " +
-                "If PN sacrifices a snow Forest this way, SN gains trample until end of turn. " + 
+                "If PN sacrifices a snow Forest this way, SN gains trample until end of turn. " +
                 "If PN doesn't sacrifice a Forest, he or she sacrifices SN and it deals 7 damage to him or her."
             );
         }
