@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Barbarian,Shaman
 cost={1}{R}{R}
 pt=2/2
-ability=Dragon spells you cast cost {2} less to cast.
+requires_groovy_code
 timing=main
 oracle=Dragon spells you cast cost {2} less to cast.
