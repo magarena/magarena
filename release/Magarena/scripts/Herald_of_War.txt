@@ -7,7 +7,7 @@ subtype=Angel
 cost={3}{W}{W}
 pt=3/3
 ability=Flying;\
-        Whenever SN attacks, put a +1/+1 counter on it.;\
-        Angel spells and Human spells you cast cost {1} less to cast for each +1/+1 counter on SN.
+        Whenever SN attacks, put a +1/+1 counter on SN.
+requires_groovy_code
 timing=main
 oracle=Flying\nWhenever Herald of War attacks, put a +1/+1 counter on it.\nAngel spells and Human spells you cast cost {1} less to cast for each +1/+1 counter on Herald of War.
