@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Demon,Spirit
 cost={3}{B}{B}
 pt=6/5
+ability=At the beginning of each player's upkeep, that player loses 2 life~and RN draws two cards.
 timing=main
-requires_groovy_code
 oracle=At the beginning of each player's upkeep, that player loses 2 life and draws two cards.
