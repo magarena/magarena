@@ -6,6 +6,6 @@ type=Creature
 subtype=Goblin,Wizard
 cost={U}{R}
 pt=2/2
-ability=Instant and sorcery spells you cast cost {1} less to cast.
+requires_groovy_code
 timing=main
 oracle=Instant and sorcery spells you cast cost {1} less to cast.
