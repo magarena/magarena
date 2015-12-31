@@ -6,6 +6,6 @@ type=Creature
 subtype=Elf
 cost={3}{G}
 pt=2/2
-ability=Creature spells you cast with converted mana cost 6 or greater cost {2} less to cast.
+requires_groovy_code
 timing=main
 oracle=Creature spells you cast with converted mana cost 6 or greater cost {2} less to cast.
