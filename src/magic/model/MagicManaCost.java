@@ -374,6 +374,8 @@ public class MagicManaCost {
         reducedAmounts[idx] += amt;
         if (XCount > 0 && type == MagicCostManaType.Generic && reducedAmounts[idx] < 0) {
             return new MagicManaCost(reducedAmounts, XCount);
+        } else if (amounts[idx] == 0 && reducedAmounts[idx] < 0) {
+            return this;
         } else {
             return MagicManaCost.create(getCanonicalText(reducedAmounts, 0));
         }
