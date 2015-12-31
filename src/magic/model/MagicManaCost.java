@@ -366,6 +366,9 @@ public class MagicManaCost {
     }
     
     public MagicManaCost increase(final MagicCostManaType type, final int amt) {
+        if (amt == 0) {
+            return this;
+        }
         final int[] reducedAmounts = Arrays.copyOf(amounts, amounts.length);
         final int idx = type.ordinal();
         reducedAmounts[idx] += amt;
