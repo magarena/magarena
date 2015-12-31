@@ -1530,6 +1530,15 @@ public class MagicTargetFilterFactory {
             return targetType == MagicTargetType.Graveyard;
         }
     };
+    
+    public static final MagicCardFilterImpl COLORLESS_CREATURE_CARD_FROM_LIBRARY=new MagicCardFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+            return MagicColor.isColorless(target) && target.isCreature();
+        }
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType == MagicTargetType.Library;
+        }
+    };
 
     public static final MagicCardFilterImpl CARD_FROM_LIBRARY=new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
@@ -2444,6 +2453,7 @@ public class MagicTargetFilterFactory {
         single.put("creature card with converted mana cost 1 or less from your library", permanentCardMaxCMC(MagicType.Creature, MagicTargetType.Library, 1));
         single.put("creature card with converted mana cost 6 or greater from your library", permanentCardMinCMC(MagicType.Creature, MagicTargetType.Library, 6));
         single.put("creature card with power 2 or less from your library", CREATURE_CARD_POWER_LEQ_2_FROM_LIBRARY);
+        single.put("colorless creature card from your library", COLORLESS_CREATURE_CARD_FROM_LIBRARY);
         single.put("creature card with deathtouch, hexproof, reach, or trample from your library", CREATURE_WITH_DEATHTOUCH_HEXPROOF_REACH_OR_TRAMPLE_FROM_LIBRARY);
         single.put("nonlegendary green creature card with converted mana cost 3 or less from your library", NON_LEGENDARY_GREEN_CREATURE_CARD_WITH_CMC_LEQ_3_FROM_LIBRARY);
 

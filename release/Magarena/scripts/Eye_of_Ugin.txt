@@ -4,7 +4,7 @@ image_updated=2015-11-05
 value=2.500
 rarity=R
 type=Legendary,Land
-ability=Colorless Eldrazi spells you cast cost {2} less to cast.;\
-        {7}, {T}: Search your library for a colorless creature card, reveal it, and put it into your hand. Then shuffle your library.
+ability={7}, {T}: Search your library for a colorless creature card, reveal it, and put it into your hand. Then shuffle your library.
+requires_groovy_code
 timing=land
 oracle=Colorless Eldrazi spells you cast cost {2} less to cast.\n{7}, {T}: Search your library for a colorless creature card, reveal it, and put it into your hand. Then shuffle your library.
