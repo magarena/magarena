@@ -6,6 +6,6 @@ type=Creature
 subtype=Insect
 cost={1}{G}
 pt=2/1
-ability=Red spells and white spells you cast cost {1} less to cast.
+requires_groovy_code
 timing=main
 oracle=Red spells and white spells you cast cost {1} less to cast.
