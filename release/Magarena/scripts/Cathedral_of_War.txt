@@ -3,8 +3,8 @@ image=http://magiccards.info/scans/en/m13/221.jpg
 value=3.839
 rarity=R
 type=Land
-ability={T}: Add {1} to your mana pool.;\
+ability={T}: Add {C} to your mana pool.;\
         SN enters the battlefield tapped.;\
         exalted
 timing=land
-oracle=Cathedral of War enters the battlefield tapped.\nExalted\n{T}: Add {1} to your mana pool.
+oracle=Cathedral of War enters the battlefield tapped.\nExalted\n{T}: Add {C} to your mana pool.

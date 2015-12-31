@@ -4,7 +4,7 @@ value=4.346
 rarity=R
 type=Land
 mana=r2g2
-ability={T}: Add {1} to your mana pool.;\
+ability={T}: Add {C} to your mana pool.;\
         {T}: Add {R} or {G} to your mana pool. SN deals 1 damage to you.
 timing=land
-oracle={T}: Add {1} to your mana pool.\n{T}: Add {R} or {G} to your mana pool. Karplusan Forest deals 1 damage to you.
+oracle={T}: Add {C} to your mana pool.\n{T}: Add {R} or {G} to your mana pool. Karplusan Forest deals 1 damage to you.

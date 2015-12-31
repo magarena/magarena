@@ -4,7 +4,7 @@ value=4.305
 rarity=R
 type=Land
 ability=As SN enters the battlefield, choose a creature type.;\
-        {T}: Add {1} to your mana pool.;\
+        {T}: Add {C} to your mana pool.;\
         {T}: Add one mana of any color to your mana pool. Spend this mana only to cast a creature spell of the chosen type, and that spell can't be countered.
 timing=land
-oracle=As Cavern of Souls enters the battlefield, choose a creature type.\n{T}: Add {1} to your mana pool.\n{T}: Add one mana of any color to your mana pool. Spend this mana only to cast a creature spell of the chosen type, and that spell can't be countered.
+oracle=As Cavern of Souls enters the battlefield, choose a creature type.\n{T}: Add {C} to your mana pool.\n{T}: Add one mana of any color to your mana pool. Spend this mana only to cast a creature spell of the chosen type, and that spell can't be countered.

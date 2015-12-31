@@ -3,7 +3,7 @@ image=http://magiccards.info/scans/en/ddf/32.jpg
 value=3.347
 rarity=U
 type=Land
-ability={T}: Add {1} to your mana pool.;\
+ability={T}: Add {C} to your mana pool.;\
         {W},{T}:Target Soldier creature gets +1/+1 until end of turn.
 timing=land
-oracle={T}: Add {1} to your mana pool.\n{W}, {T}: Target Soldier creature gets +1/+1 until end of turn.
+oracle={T}: Add {C} to your mana pool.\n{W}, {T}: Target Soldier creature gets +1/+1 until end of turn.

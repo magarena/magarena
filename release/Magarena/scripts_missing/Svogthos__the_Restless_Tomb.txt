@@ -3,7 +3,7 @@ image=http://magiccards.info/scans/en/ddj/81.jpg
 value=3.886
 rarity=U
 type=Land
-ability={T}: Add {1} to your mana pool.;\
+ability={T}: Add {C} to your mana pool.;\
         {3}{B}{G}: Until end of turn, SN becomes a black and green Plant Zombie creature with "This creature's power and toughness are each equal to the number of creature cards in your graveyard." It's still a land.
 timing=land
-oracle={T}: Add {1} to your mana pool.\n{3}{B}{G}: Until end of turn, Svogthos, the Restless Tomb becomes a black and green Plant Zombie creature with "This creature's power and toughness are each equal to the number of creature cards in your graveyard." It's still a land.
+oracle={T}: Add {C} to your mana pool.\n{3}{B}{G}: Until end of turn, Svogthos, the Restless Tomb becomes a black and green Plant Zombie creature with "This creature's power and toughness are each equal to the number of creature cards in your graveyard." It's still a land.

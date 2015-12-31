@@ -7,6 +7,6 @@ subtype=Myr
 cost={2}
 pt=1/1
 ability=infect;\
-        {T}: Add {1} to your mana pool.
+        {T}: Add {C} to your mana pool.
 timing=main
-oracle=Infect\n{T}: Add {1} to your mana pool.
+oracle=Infect\n{T}: Add {C} to your mana pool.

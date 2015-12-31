@@ -3,7 +3,7 @@ image=http://magiccards.info/scans/en/jvc/29.jpg
 value=4.306
 rarity=U
 type=Land
-ability={T}: Add {1} to your mana pool.;\
+ability={T}: Add {C} to your mana pool.;\
         {2}, {T}: You may put a basic land card from your hand onto the battlefield tapped.
 timing=land
-oracle={T}: Add {1} to your mana pool.\n{2}, {T}: You may put a basic land card from your hand onto the battlefield tapped.
+oracle={T}: Add {C} to your mana pool.\n{2}, {T}: You may put a basic land card from your hand onto the battlefield tapped.

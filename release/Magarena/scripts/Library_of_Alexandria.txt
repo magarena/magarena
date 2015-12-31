@@ -3,7 +3,7 @@ image=http://magiccards.info/scans/en/vma/303.jpg
 value=4.500
 rarity=M
 type=Land
-ability={T}: Add {1} to your mana pool.;\
+ability={T}: Add {C} to your mana pool.;\
         {T}: Draw a card. Activate this ability only if you have exactly seven cards in hand.
 timing=land
-oracle={T}: Add {1} to your mana pool.\n{T}: Draw a card. Activate this ability only if you have exactly seven cards in hand.
+oracle={T}: Add {C} to your mana pool.\n{T}: Draw a card. Activate this ability only if you have exactly seven cards in hand.

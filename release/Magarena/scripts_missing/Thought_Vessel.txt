@@ -5,6 +5,6 @@ rarity=C
 type=Artifact
 cost={2}
 ability=You have no maximum hand size.;\
-        {T}: Add {1} to your mana pool.
+        {T}: Add {C} to your mana pool.
 timing=artifact
-oracle=You have no maximum hand size.\n{T}: Add {1} to your mana pool.
+oracle=You have no maximum hand size.\n{T}: Add {C} to your mana pool.

@@ -3,7 +3,7 @@ image=http://magiccards.info/scans/en/ddj/36.jpg
 value=1.478
 rarity=U
 type=Land
-ability={T}: Add {1} to your mana pool.;\
+ability={T}: Add {C} to your mana pool.;\
         {2}{U}{R}, {T}: Exile the top card of your library. Until your next turn, you may cast that card if it's an instant or sorcery.
 timing=land
-oracle={T}: Add {1} to your mana pool.\n{2}{U}{R}, {T}: Exile the top card of your library. Until your next turn, you may cast that card if it's an instant or sorcery.
+oracle={T}: Add {C} to your mana pool.\n{2}{U}{R}, {T}: Exile the top card of your library. Until your next turn, you may cast that card if it's an instant or sorcery.

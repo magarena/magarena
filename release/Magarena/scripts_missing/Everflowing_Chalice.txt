@@ -6,6 +6,6 @@ type=Artifact
 cost={0}
 ability=Multikicker {2};\
         SN enters the battlefield with a charge counter on it for each time it was kicked.;\
-        {T}: Add {1} to your mana pool for each charge counter on SN.
+        {T}: Add {C} to your mana pool for each charge counter on SN.
 timing=artifact
-oracle=Multikicker {2}\nEverflowing Chalice enters the battlefield with a charge counter on it for each time it was kicked.\n{T}: Add {1} to your mana pool for each charge counter on Everflowing Chalice.
+oracle=Multikicker {2}\nEverflowing Chalice enters the battlefield with a charge counter on it for each time it was kicked.\n{T}: Add {C} to your mana pool for each charge counter on Everflowing Chalice.

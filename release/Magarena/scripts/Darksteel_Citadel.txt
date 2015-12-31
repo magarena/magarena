@@ -4,6 +4,6 @@ value=4.056
 rarity=C
 type=Artifact,Land
 ability=Indestructible;\
-        {T}: Add {1} to your mana pool.
+        {T}: Add {C} to your mana pool.
 timing=land
-oracle=Indestructible\n{T}: Add {1} to your mana pool.
+oracle=Indestructible\n{T}: Add {C} to your mana pool.

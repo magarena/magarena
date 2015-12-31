@@ -3,8 +3,8 @@ image=http://magiccards.info/scans/en/mbs/144.jpg
 value=3.654
 rarity=R
 type=Land
-ability={T}: Add {1} to your mana pool.;\
+ability={T}: Add {C} to your mana pool.;\
         {1}, {T}: Attacking creatures get +1/+0 until end of turn.
 timing=main
 requires_groovy_code
-oracle=Whenever a creature deals combat damage to you, that creature's controller gains control of Contested War Zone.\n{T}: Add {1} to your mana pool.\n{1}, {T}: Attacking creatures get +1/+0 until end of turn.
+oracle=Whenever a creature deals combat damage to you, that creature's controller gains control of Contested War Zone.\n{T}: Add {C} to your mana pool.\n{1}, {T}: Attacking creatures get +1/+0 until end of turn.

@@ -4,7 +4,7 @@ image_updated=2015-11-14
 value=3.162
 rarity=U
 type=Land
-ability={T}: Add {1} to your mana pool.;\
+ability={T}: Add {C} to your mana pool.;\
         {T}: Untap target attacking creature with shadow.~Prevent all combat damage that would be dealt to and dealt by *that creature* this turn.
 timing=land
-oracle={T}: Add {1} to your mana pool.\n{T}: Untap target attacking creature with shadow. Prevent all combat damage that would be dealt to and dealt by that creature this turn.
+oracle={T}: Add {C} to your mana pool.\n{T}: Untap target attacking creature with shadow. Prevent all combat damage that would be dealt to and dealt by that creature this turn.
