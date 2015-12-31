@@ -36,7 +36,7 @@ public class MagicDelayedPayManaCostResult implements MagicPayManaCostResult {
 
     @Override
     public int getConverted() {
-        return x+cost.getConvertedCost();
+        return cost.getConvertedCost(x);
     }
 
     @Override
