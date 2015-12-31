@@ -69,8 +69,8 @@ public class MagicPayManaCostResultBuilder {
 
         final int minAmount = amounts[index];
 
-        // Skip when the amount is 0.
-        if (minAmount == 0) {
+        // Skip when the amount is 0 or no activations to pay
+        if (minAmount == 0 || (typeActivationSize == 0 && minAmount < 0)) {
             return build(index+1, single);
         }
 
@@ -110,6 +110,8 @@ public class MagicPayManaCostResultBuilder {
             }
             return false;
         }
+
+        assert typeActivationSize > 0 : "no activations for " + costManaType + " with min " + minAmount + " and hasX " + hasX;
 
         // Generate all possible combinations with at least the minimum number of sources.
         final int[] option = new int[typeActivationSize];
