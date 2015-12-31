@@ -328,6 +328,13 @@ public enum MagicAbility {
             card.add(new MagicDashActivation(manaCost));
         }
     },
+    Surge("surge " + ARG.MANACOST, 20) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicCardDefinition cardDef = (MagicCardDefinition)card;
+            final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
+            card.add(new MagicSurgeActivation(cardDef, manaCost));
+        }
+    },
     Cascade("cascade", 50) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(CascadeTrigger.create());
