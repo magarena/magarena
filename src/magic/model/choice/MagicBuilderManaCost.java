@@ -74,11 +74,11 @@ public class MagicBuilderManaCost {
     }
 
     int getX(final int amount) {
-        return hasX() ? (amount-minimumAmount)/XCount + 1 : 0;
+        return hasX() ? (amount - minimumAmount) / XCount + 1 : 0;
     }
 
     public boolean isEmpty() {
-        return typeCount==0;
+        return typeCount == 0;
     }
 
     public void addType(final MagicCostManaType type,final int amount) {
@@ -111,11 +111,17 @@ public class MagicBuilderManaCost {
 
     @Override
     public String toString() {
-        final StringBuilder builder=new StringBuilder();
-        for (int index=0;index<compressedTypes.length;index++) {
-            builder.append(compressedTypes[index]).append('=').append(compressedAmounts[index]).append(' ');
+        final StringBuilder builder = new StringBuilder();
+        for (int i = 0; i < compressedTypes.length; i++) {
+            builder
+                .append(compressedTypes[i])
+                .append('=')
+                .append(compressedAmounts[i])
+                .append(' ');
         }
-        builder.append("Total=").append(minimumAmount);
+        builder
+            .append("Total=")
+            .append(minimumAmount);
         return builder.toString();
     }
 }
