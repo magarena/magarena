@@ -312,6 +312,10 @@ public class MagicManaCost {
         return converted;
     }
 
+    public int getConvertedCost(final int x) {
+        return converted + x * XCount;
+    }
+
     public MagicBuilderManaCost getBuilderCost() {
         if (builderCost == null) {
             builderCost=new MagicBuilderManaCost();

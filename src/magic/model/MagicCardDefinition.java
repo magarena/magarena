@@ -605,6 +605,10 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         return cost.getConvertedCost();
     }
 
+    public int getConvertedCost(final int x) {
+        return cost.getConvertedCost(x);
+    }
+
     public boolean hasConvertedCost(final int c) {
         return getConvertedCost() == c;
     }

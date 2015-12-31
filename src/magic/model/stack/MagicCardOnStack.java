@@ -152,7 +152,7 @@ public class MagicCardOnStack extends MagicItemOnStack implements MagicSource {
 
     @Override
     public int getConvertedCost() {
-        return getCardDefinition().getConvertedCost() + payedCost.getX();
+        return getCardDefinition().getConvertedCost(payedCost.getX());
     }
 
     public int getX() {
