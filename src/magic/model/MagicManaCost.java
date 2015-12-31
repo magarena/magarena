@@ -78,7 +78,7 @@ public class MagicManaCost {
 
         //assert getCanonicalText().equals(costText) : "canonical: " + getCanonicalText() + " != cost: " + costText;
     }
-    
+
     private MagicManaCost(final int[] aAmounts, final int aXCount) {
         costText = "";
         int total = 0;
@@ -360,19 +360,19 @@ public class MagicManaCost {
         }
         return cost;
     }
-    
+
     public MagicManaCost reduce(final MagicCostManaType type, final int amt) {
         return increase(type, -amt);
     }
-    
+
     public MagicManaCost reduce(final int amt) {
         return increase(MagicCostManaType.Generic, -amt);
     }
-    
+
     public MagicManaCost increase(final int amt) {
         return increase(MagicCostManaType.Generic, amt);
     }
-    
+
     public MagicManaCost increase(final MagicCostManaType type, final int amt) {
         if (amt == 0) {
             return this;
