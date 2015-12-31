@@ -124,7 +124,7 @@ public class MagicPayManaCostResultBuilder {
                     typeActivations[i].available = false;
                     typeActivations[i].manaType = producedTypes[i];
                     count++;
-                    if (count >= minAmount && build(index + 1, single) && single) {
+                    if (count >= minAmount && (hasX == false || cost.validX(count)) && build(index + 1, single) && single) {
                         return true;
                     }
                     if (count < minAmount || (hasX && i + 1 != typeActivationSize)) {
