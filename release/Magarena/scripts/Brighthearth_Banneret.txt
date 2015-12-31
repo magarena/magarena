@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental,Warrior
 cost={1}{R}
 pt=1/1
-ability=Elemental spells and Warrior spells you cast cost {1} less to cast.;\
-        Reinforce 1—{1}{R}
+ability=Reinforce 1—{1}{R}
+requires_groovy_code
 timing=main
 oracle=Elemental spells and Warrior spells you cast cost {1} less to cast.\nReinforce 1—{1}{R}
