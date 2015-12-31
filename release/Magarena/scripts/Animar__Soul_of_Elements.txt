@@ -6,8 +6,9 @@ type=Legendary,Creature
 subtype=Elemental
 cost={U}{R}{G}
 pt=1/1
-ability=Protection from white and from black;\
-        Whenever you cast a creature spell, put a +1/+1 counter on SN.;\
-        Creature spells you cast cost {1} less to cast for each +1/+1 counter on Animar.
+ability=Protection from white;\
+        Protection from black;\
+        Whenever you cast a creature spell, put a +1/+1 counter on SN.
+requires_groovy_code
 timing=main
 oracle=Protection from white and from black\nWhenever you cast a creature spell, put a +1/+1 counter on Animar, Soul of Elements.\nCreature spells you cast cost {1} less to cast for each +1/+1 counter on Animar.
