@@ -6,7 +6,7 @@ type=Artifact,Creature
 subtype=Chimera
 cost={4}
 pt=2/2
-ability=Flying
+ability=Flying;\
+        Sacrifice SN: Put a +2/+2 counter on target Chimera creature.~*It* gains flying.
 timing=main
-requires_groovy_code
 oracle=Flying\nSacrifice Tin-Wing Chimera: Put a +2/+2 counter on target Chimera creature. It gains flying.

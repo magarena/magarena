@@ -6,7 +6,7 @@ type=Artifact,Creature
 subtype=Chimera
 cost={4}
 pt=2/2
-ability=First strike
+ability=First strike;\
+        Sacrifice SN: Put a +2/+2 counter on target Chimera creature.~*It* gains first strike.
 timing=main
-requires_groovy_code
 oracle=First strike\nSacrifice Brass-Talon Chimera: Put a +2/+2 counter on target Chimera creature. It gains first strike.

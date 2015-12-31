@@ -6,7 +6,7 @@ type=Artifact,Creature
 subtype=Chimera
 cost={4}
 pt=2/2
-ability=Trample
+ability=Trample;\
+        Sacrifice SN: Put a +2/+2 counter on target Chimera creature.~*It* gains trample.
 timing=main
-requires_groovy_code
 oracle=Trample\nSacrifice Lead-Belly Chimera: Put a +2/+2 counter on target Chimera creature. It gains trample.
