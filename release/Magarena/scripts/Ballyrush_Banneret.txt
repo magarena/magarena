@@ -6,6 +6,6 @@ type=Creature
 subtype=Kithkin,Soldier
 cost={1}{W}
 pt=2/1
-ability=Kithkin spells and Soldier spells you cast cost {1} less to cast.
+requires_groovy_code
 timing=main
 oracle=Kithkin spells and Soldier spells you cast cost {1} less to cast.
