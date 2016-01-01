@@ -16,6 +16,7 @@ import java.awt.font.TextLayout;
 import java.awt.image.BufferedImage;
 import java.text.AttributedCharacterIterator;
 import java.text.AttributedString;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Set;
 
@@ -106,30 +107,27 @@ public class OracleText {
             }
 
         } else {
-            {
-                String[] abilityActivation = getPlaneswalkerActivationText(cardDef);
-                textBoxBounds = new Rectangle(0, 0, 282, 49);
-                for (int i = 0; i < 4; i++) {
-                    String oracleText = abilityActivation[i];
-                    AttributedString realOracle = textIconReplace(oracleText);
+            String[] abilityActivation = getPlaneswalkerActivationText(cardDef);
+            textBoxBounds = new Rectangle(0, 0, 282, 49);
+            for (int i = 0; i < 4; i++) {
+                String oracleText = abilityActivation[i];
+                AttributedString realOracle = textIconReplace(oracleText);
 
-                    BufferedImage textBoxText = drawTextToBox(
-                        realOracle,
-                        cardTextFont,
-                        textBoxBounds,
-                        leftPadding,
-                        topPadding
-                    );
+                BufferedImage textBoxText = drawTextToBox(
+                    realOracle,
+                    cardTextFont,
+                    textBoxBounds,
+                    leftPadding,
+                    topPadding
+                );
 
-                    Graphics2D g2d = cardImage.createGraphics();
-                    BufferedImage trimmedTextBox = trimTransparency(textBoxText);
-                    int heightPadding = (int) ((textBoxBounds.getHeight() - trimmedTextBox.getHeight()) / 2);
-                    int widthPadding = (int) Math.min((textBoxBounds.getWidth() - trimmedTextBox.getWidth()) / 2, 3);
-                    int yPos = (int) (289 + i * textBoxBounds.getHeight());
-                    g2d.drawImage(trimmedTextBox, 63 + widthPadding, yPos + heightPadding, null);
-                    g2d.dispose();
-                }
-
+                Graphics2D g2d = cardImage.createGraphics();
+                BufferedImage trimmedTextBox = trimTransparency(textBoxText);
+                int heightPadding = (int) ((textBoxBounds.getHeight() - trimmedTextBox.getHeight()) / 2);
+                int widthPadding = (int) Math.min((textBoxBounds.getWidth() - trimmedTextBox.getWidth()) / 2, 3);
+                int yPos = (int) (289 + i * textBoxBounds.getHeight());
+                g2d.drawImage(trimmedTextBox, 63 + widthPadding, yPos + heightPadding, null);
+                g2d.dispose();
             }
         }
     }
@@ -219,10 +217,35 @@ public class OracleText {
         String[] text = new String[abilities.length];
         for (int i = 0; i < abilities.length; i++) {
             String[] fulltext;
-            fulltext = abilities[i].split(": ",2);
+            fulltext = abilities[i].split(": ", 2);
             text[i] = fulltext[fulltext.length - 1];
         }
         return text;
+    }
+
+    static String[] getLevellerText(IRenderableCard cardDef) {
+        //Some levels contain /n as well
+        String[] abilities = getOracleAsLines(cardDef);
+        ArrayList<String> text = new ArrayList<>(3);
+        for (int i = 0; i < abilities.length; i++) {
+            if (i == 0) {
+                text.add(abilities[0]);
+            } else {
+                if (abilities[i].contains("LEVEL") && abilities[i + 2].contains("LEVEL")) { //Catch empty level text
+                    text.add("");
+                } else {
+                    if (!abilities[i].contains("LEVEL") && !abilities[i].matches("\\d+/\\d+")) {
+                        if (i + 1 <= abilities.length - 1 && !abilities[i + 1].contains("LEVEL") && !abilities[i + 1].matches("\\d+/\\d+")) { //Catch multi-line level text
+                            text.add(abilities[i] + NEWLINE + abilities[i + 1]);
+
+                        } else {
+                            text.add(abilities[i]);
+                        }
+                    }
+                }
+            }
+        }
+        return text.toArray(new String[3]);
     }
 
     private static BufferedImage drawTextToBox(
@@ -383,5 +406,33 @@ public class OracleText {
             distance += StrictMath.pow((baseColor >> i & 0xff) - (sourceColor >> i & 0xff), 2);
         }
         return distance;
+    }
+
+    static void drawLevellerOracleText(BufferedImage cardImage, IRenderableCard cardDef) {
+        String[] abilities = getLevellerText(cardDef);
+        textBoxBounds = new Rectangle(0, 0, 210, 49);
+        for (int i = 0; i < 3; i++) {
+            String oracleText = abilities[i];
+            if (!oracleText.isEmpty()) { //Not all levels have text
+                AttributedString realOracle = textIconReplace(oracleText);
+
+                BufferedImage textBoxText = drawTextToBox(
+                    realOracle,
+                    cardTextFont,
+                    textBoxBounds,
+                    leftPadding,
+                    topPadding
+                );
+
+                Graphics2D g2d = cardImage.createGraphics();
+                BufferedImage trimmedTextBox = trimTransparency(textBoxText);
+                int heightPadding = (int) ((textBoxBounds.getHeight() - trimmedTextBox.getHeight()) / 2);
+                int widthPadding = (int) Math.min((textBoxBounds.getWidth() - trimmedTextBox.getWidth()) / 2, 3);
+                int yPos = (int) (330 + i * textBoxBounds.getHeight());
+                int xPos = i == 0 ? 30 : 104; // xpos 104 for level arrows, normal for first line
+                g2d.drawImage(trimmedTextBox, xPos + widthPadding, yPos + heightPadding, null);
+                g2d.dispose();
+            }
+        }
     }
 }
