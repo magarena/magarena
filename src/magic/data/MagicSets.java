@@ -2,6 +2,7 @@ package magic.data;
 
 public enum MagicSets {
 
+    OGW("Oath of the Gatewatch"), //2016-1-22
     C15("Commander 2015"), //2015-11-13
     BFZ("Battle for Zendikar"), // 2015-10-2
     ORI("Magic Origins"), // 2015-7-17
