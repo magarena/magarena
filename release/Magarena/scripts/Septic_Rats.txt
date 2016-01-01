@@ -6,7 +6,7 @@ type=Creature
 subtype=Rat
 cost={1}{B}{B}
 pt=2/2
-ability=infect
+ability=Infect;\
+        Whenever SN attacks, if defending player is poisoned, SN gets +1/+1 until end of turn.
 timing=main
-requires_groovy_code
 oracle=Infect\nWhenever Septic Rats attacks, if defending player is poisoned, it gets +1/+1 until end of turn.
