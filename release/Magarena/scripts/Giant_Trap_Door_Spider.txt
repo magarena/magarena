@@ -6,6 +6,6 @@ type=Creature
 subtype=Spider
 cost={1}{R}{G}
 pt=2/3
+ability={1}{R}{G}, {T}: Exile target attacking creature without flying an opponent controls~and exile SN.
 timing=main
-requires_groovy_code
 oracle={1}{R}{G}, {T}: Exile Giant Trap Door Spider and target creature without flying that's attacking you.
