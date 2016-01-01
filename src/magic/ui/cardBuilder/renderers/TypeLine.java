@@ -8,14 +8,11 @@ import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
 
-import magic.ui.cardBuilder.IRenderableCard;
 import magic.model.MagicType;
+import magic.ui.cardBuilder.IRenderableCard;
 import magic.ui.cardBuilder.ResourceManager;
 
 public class TypeLine {
-    private TypeLine() {
-    }
-
     private static final Font cardTypeFont = ResourceManager.getFont("Beleren-Bold.ttf").deriveFont(Font.PLAIN, 16);
     private static final Font cardTypeFontSmall = ResourceManager.getFont("Beleren-Bold.ttf").deriveFont(Font.PLAIN, 15);
     private static final Font cardTypeFontVerySmall = ResourceManager.getFont("Beleren-Bold.ttf").deriveFont(Font.PLAIN, 14);
