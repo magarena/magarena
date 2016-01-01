@@ -520,6 +520,11 @@ public enum MagicConditionParser {
             return MagicCondition.WAS_KICKED;
         }
     },
+    SurgePaid("SN's surge cost was paid") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.WAS_KICKED;
+        }
+    },
     ;
 
     private final Pattern pattern;
