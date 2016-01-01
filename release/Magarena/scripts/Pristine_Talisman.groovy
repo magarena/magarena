@@ -1,5 +1,5 @@
 [
-    new MagicManaActivation(MagicManaType.getList("{1}")) {
+    new MagicManaActivation(MagicManaType.getList("{C}")) {
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent perm) {
             return [
