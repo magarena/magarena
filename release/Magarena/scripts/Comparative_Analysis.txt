@@ -1,0 +1,10 @@
+name=Comparative Analysis
+image=http://mythicspoiler.com/ogw/cards/comparativeanalysis.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={3}{U}
+ability=Surge {2}{U}
+effect=Target player draws two cards.
+timing=draw
+oracle=Surge {2}{U}\nTarget player draws two cards.
