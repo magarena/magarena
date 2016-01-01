@@ -1888,7 +1888,7 @@ public enum MagicRuleEventAction {
         }
     },
     SacrificeSelf(
-        "sacrifice sn(\\.|,)?",
+        "(its controller )?sacrifice(s)? sn(\\.|,)?",
         MagicTiming.Removal,
         "Sacrifice",
         new MagicEventAction() {
@@ -1898,8 +1898,8 @@ public enum MagicRuleEventAction {
             }
         }
     ),
-    SacrificeSelfEndStep(
-        "sacrifice " + ARG.PERMANENTS + " at the beginning of the next end step(\\.|,)?",
+    SacrificeEndStep(
+        "(its controller )?sacrifice(s)? " + ARG.PERMANENTS + " at the beginning of the next end step(\\.|,)?",
         MagicTiming.Removal,
         "Sacrifice"
     ) {
@@ -1916,17 +1916,24 @@ public enum MagicRuleEventAction {
             };
         }
     },
-    SacrificeSelfEndCombat(
-        "sacrifice sn at end of combat(\\.|,)?",
+    SacrificeEndCombat(
+        "(its controller )?sacrifice(s)? " + ARG.PERMANENTS + " at end of combat(\\.|,)?",
         MagicTiming.Removal,
-        "Sacrifice",
-        new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new AddTriggerAction(event.getPermanent(), AtEndOfCombatTrigger.Sacrifice));
-            }
+        "Sacrifice"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                        game.doValidAction(it, new AddTriggerAction(it, AtEndOfCombatTrigger.Sacrifice));
+                    }
+                }
+            };
         }
-    ),
+    },
     SacrificeChosen(
         ARG.PLAYERS + "( )?sacrifice(s)? (?<permanent>[^\\.]*)(\\.|,)?",
         MagicTargetHint.Negative,
