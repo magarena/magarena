@@ -1,0 +1,13 @@
+name=Tyrant of Valakut
+image=http://mythicspoiler.com/ogw/cards/tyrantofvalakut.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Dragon
+cost={5}{R}{R}
+pt=5/4
+ability=Surge {3}{R}{R};\
+        Flying;\
+        When SN enters the battlefield, if its surge cost was paid, SN deals 3 damage to target creature or player.
+timing=main
+oracle=Surge {3}{R}{R}\nFlying\nWhen Tyrant of Valakut enters the battlefield, if its surge cost was paid, it deals 3 damage to target creature or player.
