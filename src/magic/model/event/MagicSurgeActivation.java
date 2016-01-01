@@ -34,7 +34,8 @@ public class MagicSurgeActivation extends MagicHandCastActivation {
             new MagicPayManaCostEvent(
                 source,
                 cost
-            )
+            ),
+            new MagicEvokeEvent(source)
         );
     }
 }
