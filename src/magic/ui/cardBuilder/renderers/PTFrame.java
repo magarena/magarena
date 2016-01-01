@@ -71,7 +71,7 @@ public class PTFrame {
         if (!loyaltyText.isEmpty()) {
             BufferedImage loyaltyImage = ResourceManager.loyaltyPanel;
             g2d.drawImage(loyaltyImage, 302, 460, null);
-            drawLoyaltyPanelText(g2d, new Rectangle(326, 462, width, height), loyaltyText);
+            drawPanelText(g2d, new Rectangle(326, 462, width, height), loyaltyText, cardLoyaltyFont);
         }
         // Draw activation panels
         if (OracleText.getPlaneswalkerAbilityCount(cardDef) == 3) {
@@ -80,39 +80,39 @@ public class PTFrame {
             if (panelText != "") {
                 //Panel 1
                 g2d.drawImage(getLoyaltyPanel(activations[0]), 18, 333, null);
-                drawLoyaltyPanelText(g2d, new Rectangle(xPos, 335, width, height), panelText);
+                drawPanelText(g2d, new Rectangle(xPos, 335, width, height), panelText, cardLoyaltyFont);
             }
             //Panel 2
             g2d.drawImage(getLoyaltyPanel(activations[1]), 18, 383, null);
-            drawLoyaltyPanelText(g2d, new Rectangle(xPos, 386, width, height), activations[1]);
+            drawPanelText(g2d, new Rectangle(xPos, 386, width, height), activations[1], cardLoyaltyFont);
             //Panel 3
             g2d.drawImage(getLoyaltyPanel(activations[2]), 18, 432, null);
-            drawLoyaltyPanelText(g2d, new Rectangle(xPos, 435, width, height), activations[2]);
+            drawPanelText(g2d, new Rectangle(xPos, 435, width, height), activations[2], cardLoyaltyFont);
         } else {
             String[] activations = getPlaneswalkerActivationCosts(cardDef);
             panelText = activations[0];
             if (panelText != "") {
                 //Panel 1
                 g2d.drawImage(getLoyaltyPanel(activations[0]), 18, 294, null);
-                drawLoyaltyPanelText(g2d, new Rectangle(xPos, 297, width, height), panelText);
+                drawPanelText(g2d, new Rectangle(xPos, 297, width, height), panelText, cardLoyaltyFont);
             }
             //Panel 2
             g2d.drawImage(getLoyaltyPanel(activations[1]), 18, 341, null);
-            drawLoyaltyPanelText(g2d, new Rectangle(xPos, 344, width, height), activations[1]);
+            drawPanelText(g2d, new Rectangle(xPos, 344, width, height), activations[1], cardLoyaltyFont);
             //Panel 3
             g2d.drawImage(getLoyaltyPanel(activations[2]), 18, 388, null);
-            drawLoyaltyPanelText(g2d, new Rectangle(xPos, 391, width, height), activations[2]);
+            drawPanelText(g2d, new Rectangle(xPos, 391, width, height), activations[2], cardLoyaltyFont);
             //Panel 4
             if (!activations[3].isEmpty()) {
                 g2d.drawImage(getLoyaltyPanel(activations[3]), 18, 435, null);
-                drawLoyaltyPanelText(g2d, new Rectangle(xPos, 438, width, height), activations[3]);
+                drawPanelText(g2d, new Rectangle(xPos, 438, width, height), activations[3], cardLoyaltyFont);
             }
         }
         g2d.dispose();
     }
 
-    private static void drawLoyaltyPanelText(Graphics2D g2d, Rectangle box, String text) {
-        TextLayout layout = new TextLayout(text, cardLoyaltyFont, g2d.getFontRenderContext());
+    private static void drawPanelText(Graphics2D g2d, Rectangle box, String text, Font font) {
+        TextLayout layout = new TextLayout(text, font, g2d.getFontRenderContext());
         layout.draw(g2d, (float) box.getCenterX() - (float) layout.getBounds().getCenterX(), (float) box.getCenterY() - (float) layout.getBounds().getCenterY());
     }
 
