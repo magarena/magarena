@@ -1,0 +1,13 @@
+name=Reckless Bushwhacker
+image=http://mythicspoiler.com/ogw/cards/recklessbushwhacker.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Goblin,Warrior,Ally
+cost={2}{R}
+pt=2/1
+ability=Surge {1}{R};\
+        Haste;\
+        When SN enters the battlefield, if its surge cost was paid, other creatures you control get +1/+0 and gain haste until end of turn.
+timing=fmain
+oracle=Surge {1}{R}\nHaste\nWhen Reckless Bushwhacker enters the battlefield, if its surge cost was paid, other creatures you control get +1/+0 and gain haste until end of turn.
