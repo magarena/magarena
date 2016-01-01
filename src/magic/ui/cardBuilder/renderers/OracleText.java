@@ -42,11 +42,10 @@ public class OracleText {
             String oracleText = cardDef.getText();
             textBoxBounds = getTextBoxSize(cardDef);
 
-            AttributedString realOracle = textIconReplace(new AttributedString(oracleText), oracleText);
+            AttributedString realOracle = textIconReplace(oracleText);
 
             BufferedImage textBoxText = drawTextToBox(
                 realOracle,
-                oracleText,
                 cardTextFont,
                 textBoxBounds,
                 leftPadding,
@@ -87,11 +86,10 @@ public class OracleText {
             textBoxBounds = new Rectangle(0, 0, 282, 49);
             for (int i = 0; i < 3; i++) {
                 String oracleText = abilityActivation[i];
-                AttributedString realOracle = textIconReplace(new AttributedString(oracleText), oracleText);
+                AttributedString realOracle = textIconReplace(oracleText);
 
                 BufferedImage textBoxText = drawTextToBox(
                     realOracle,
-                    oracleText,
                     cardTextFont,
                     textBoxBounds,
                     leftPadding,
@@ -113,11 +111,10 @@ public class OracleText {
                 textBoxBounds = new Rectangle(0, 0, 282, 49);
                 for (int i = 0; i < 4; i++) {
                     String oracleText = abilityActivation[i];
-                    AttributedString realOracle = textIconReplace(new AttributedString(oracleText), oracleText);
+                    AttributedString realOracle = textIconReplace(oracleText);
 
                     BufferedImage textBoxText = drawTextToBox(
                         realOracle,
-                        oracleText,
                         cardTextFont,
                         textBoxBounds,
                         leftPadding,
@@ -230,7 +227,6 @@ public class OracleText {
 
     private static BufferedImage drawTextToBox(
         AttributedString attrString,
-        String string,
         Font font,
         Rectangle box,
         int leftPadding,
@@ -263,6 +259,7 @@ public class OracleText {
 
         //Measure length of string to fit in box
         boolean retry = false;
+        final AttributedCharacterIterator iter = attrString.getIterator();
         while (lineMeasurer.getPosition() < paragraphEnd) {
             //Check for ptPanel overlap
             int next;
@@ -270,7 +267,7 @@ public class OracleText {
             int limit = next;
             //Check for newlines
             for (int i = lineMeasurer.getPosition(); i < next; ++i) {
-                char c = string.charAt(i);
+                char c = iter.setIndex(i);
                 if (c == NEWLINE && i > lineMeasurer.getPosition()) {
                     limit = i;
                     newParagraph = true;
@@ -307,7 +304,7 @@ public class OracleText {
         if (retry) {
             //font size 12.5 should be minimum
             Font resize = font.deriveFont((float) (font.getSize2D() - 0.5));
-            return drawTextToBox(attrString, string, resize, box, leftPadding, topPadding);
+            return drawTextToBox(attrString, resize, box, leftPadding, topPadding);
         }
 
         return baseImage;
@@ -348,31 +345,31 @@ public class OracleText {
         return tmp;
     }
 
-    public static AttributedString textIconReplace(AttributedString string, String originalString) {
-        AttributedCharacterIterator text = string.getIterator();
-        for (int i = 0; i < text.getEndIndex(); ++i) {
-            if (i < originalString.length()){
-                char c = originalString.charAt(i);
-                if (c == '{') {
-                    final int endSymbol = originalString.indexOf('}', i);
-                    String iconString = originalString.substring(i, endSymbol + 1); //get mana-string //substring returns at -1 value
-                    Image iconImage = MagicImages.getIcon(iconString).getImage(); //get related Icon as Image
-                    ImageGraphicAttribute icon = new ImageGraphicAttribute(iconImage, GraphicAttribute.BOTTOM_ALIGNMENT); //define replacement icon
-                    BufferedImage nullImage = new BufferedImage(1, 1, BufferedImage.TYPE_INT_ARGB); //create null image
-                    ImageGraphicAttribute nulled = new ImageGraphicAttribute(nullImage,GraphicAttribute.BOTTOM_ALIGNMENT); //define null image
-                    final int middle = (endSymbol + i) / 2;
-                    for (int j = i; j <= endSymbol; j++) {
-                        string.addAttribute(
-                            TextAttribute.CHAR_REPLACEMENT,
-                            j != middle ? nulled : icon,
-                            j,
-                            j + 1
-                        );
-                    }
-                }
+    public static AttributedString textIconReplace(final String text) {
+        final String compacted = text.replaceAll("\\{[^\\}]+\\}", "M");
+        final AttributedString attrString = new AttributedString(compacted);
+        for (int i = 0, j = 0; i < text.length(); i++, j++) {
+            char c = text.charAt(i);
+            if (c == '{') {
+                final int endSymbol = text.indexOf('}', i);
+                // get mana-string, substring returns at -1 value
+                String iconString = text.substring(i, endSymbol + 1);
+                // get related Icon as Image
+                Image iconImage = MagicImages.getIcon(iconString).getImage();
+                // define replacement icon
+                ImageGraphicAttribute icon = new ImageGraphicAttribute(iconImage, GraphicAttribute.BOTTOM_ALIGNMENT);
+                // replace M with icon
+                attrString.addAttribute(
+                    TextAttribute.CHAR_REPLACEMENT,
+                    icon,
+                    j,
+                    j + 1
+                );
+                // advance i to the end of symbol
+                i = endSymbol;
             }
         }
-        return string;
+        return attrString;
     }
 
     public static boolean isWithinTolerance(int baseColor, int sourceColor, double tol) {
