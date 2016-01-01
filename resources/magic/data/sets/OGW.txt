@@ -4,16 +4,20 @@ Chandra, Flamecaller
 Comparative Analysis
 Crumbling Vestige
 Crush of Tentacles
+Deceiver of Form
 Deepfathom Skulker
 Dread Defiler
 Eldrazi Mimic
 Eldrazi Obligator
+Embodiment of Fury
 Endbringer
 Flayer Drone
+Flaying Tendrils
 General Tazri
 Gladehart Cavalry
 Goblin Dark-Dwellers
 Holdout Settlement
+Hissing Quagmire
 Immolating Glare
 Joraga Auxiliary
 Jori En, Ruin Diver
@@ -28,6 +32,7 @@ Munda's Vanguard
 Needle Spires
 Nissa, Voice of Zendikar
 Oath of Jace
+Prophet of Distortion
 Reckless Bushwhacker
 Reflector Mage
 Relentless Hunter
@@ -39,6 +44,7 @@ Shoulder to Shoulder
 Spatial Contortion
 Sphinx of the Final Word
 Stone Haven Outfitter
+Stoneforge Masterwork
 Tyrant of Valakut
 Unknown Shores
 Vile Redeemer
