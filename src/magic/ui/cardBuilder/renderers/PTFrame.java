@@ -10,6 +10,7 @@ import java.awt.font.FontRenderContext;
 import java.awt.font.TextLayout;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
+import java.util.ArrayList;
 
 import magic.model.MagicAbility;
 import magic.model.MagicColor;
@@ -124,6 +125,43 @@ public class PTFrame {
         } else {
             return ResourceManager.loyaltyDown;
         }
+    }
+
+    static void drawLevellerPTPanels(BufferedImage cardImage, IRenderableCard cardDef) {
+        int xPosImage = 284;
+        int xPosText = xPosImage+13;
+        int width = 60;
+        int height = 28;
+        String[] ptText = getLevellerPTText(cardDef);
+        BufferedImage ptImage = getPTPanelImage(cardDef);
+        Graphics2D g2d = cardImage.createGraphics();
+        g2d.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
+        g2d.setRenderingHint(RenderingHints.KEY_FRACTIONALMETRICS, RenderingHints.VALUE_FRACTIONALMETRICS_ON);
+        g2d.setColor(Color.BLACK);
+
+        //Panel 1
+        g2d.drawImage(ptImage, xPosImage, 339, null);
+        drawPanelText(g2d, new Rectangle(xPosText, 342, width, height), ptText[0], cardPTFont);
+        //Panel 2
+        g2d.drawImage(ptImage, xPosImage, 390, null);
+        drawPanelText(g2d, new Rectangle(xPosText, 393, width, height), ptText[1], cardPTFont);
+        //Panel 3
+        g2d.drawImage(ptImage, xPosImage, 441, null);
+        drawPanelText(g2d, new Rectangle(xPosText, 444, width, height), ptText[2], cardPTFont);
+
+        g2d.dispose();
+    }
+
+    private static String[] getLevellerPTText(IRenderableCard cardDef) {
+        String[] abilities = OracleText.getOracleAsLines(cardDef);
+        ArrayList<String> text = new ArrayList<>(3);
+        text.add(getPTText(cardDef));
+        for (int i = 0; i < abilities.length; i++) {
+            if (abilities[i].matches("\\d+/\\d+")) {
+                text.add(abilities[i]);
+            }
+        }
+        return text.toArray(new String[3]);
     }
 
     private static BufferedImage getPTPanel(MagicColor color) {
