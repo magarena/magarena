@@ -44,6 +44,11 @@ public enum MagicConditionParser {
             );
         }
     },
+    DefenderPoisoned("defending player is poisoned") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.DEFENDING_POISONED;
+        }
+    },
     YouControlAnother("you control another " + ARG.WORDRUN) {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicConditionFactory.YouControlAnother(

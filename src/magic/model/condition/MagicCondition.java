@@ -837,11 +837,16 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
             return spell.isKicked();
         }
     };
-    
+
     public static MagicCondition CAST_ANOTHER_SPELL_THIS_TURN = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             return source.getController().getSpellsCast() > 0;
         }
     };
 
+    public static MagicCondition DEFENDING_POISONED = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            return source.getGame().getDefendingPlayer().getPoison() > 0;
+        }
+    };
 }
