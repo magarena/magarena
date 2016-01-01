@@ -354,22 +354,21 @@ public class OracleText {
             if (i < originalString.length()){
                 char c = originalString.charAt(i);
                 if (c == '{') {
-                    final int endMana = originalString.indexOf('}', i);
-                    String iconString = originalString.substring(i, endMana + 1); //get mana-string //substring returns at -1 value
+                    final int endSymbol = originalString.indexOf('}', i);
+                    String iconString = originalString.substring(i, endSymbol + 1); //get mana-string //substring returns at -1 value
                     Image iconImage = MagicImages.getIcon(iconString).getImage(); //get related Icon as Image
                     ImageGraphicAttribute icon = new ImageGraphicAttribute(iconImage, GraphicAttribute.BOTTOM_ALIGNMENT); //define replacement icon
                     BufferedImage nullImage = new BufferedImage(1, 1, BufferedImage.TYPE_INT_ARGB); //create null image
                     ImageGraphicAttribute nulled = new ImageGraphicAttribute(nullImage,GraphicAttribute.BOTTOM_ALIGNMENT); //define null image
-                    string.addAttribute(TextAttribute.CHAR_REPLACEMENT,nulled, i, i +1); //replace first bracket
-                    if (endMana- i >3){
-                        //for hybrid + phyrexian
-                        string.addAttribute(TextAttribute.CHAR_REPLACEMENT,nulled, i +1, i +2); //replace first Mana Character
-                        string.addAttribute(TextAttribute.CHAR_REPLACEMENT,icon, i +2, i +3); //replace divider with icon
-                        string.addAttribute(TextAttribute.CHAR_REPLACEMENT,nulled,endMana-1,endMana); //replace second Mana Character
-                    } else {
-                        string.addAttribute(TextAttribute.CHAR_REPLACEMENT,icon, i +1, i +2); //replace Mana Character
+                    final int middle = (endSymbol + i) / 2;
+                    for (int j = i; j <= endSymbol; j++) {
+                        string.addAttribute(
+                            TextAttribute.CHAR_REPLACEMENT,
+                            j != middle ? nulled : icon,
+                            j,
+                            j + 1
+                        );
                     }
-                    string.addAttribute(TextAttribute.CHAR_REPLACEMENT,nulled,endMana,endMana+1); //replace end bracket
                 }
             }
         }
