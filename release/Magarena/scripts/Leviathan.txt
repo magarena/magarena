@@ -8,7 +8,8 @@ cost={5}{U}{U}{U}{U}
 pt=10/10
 ability=Trample;\
         SN enters the battlefield tapped.;\
-        SN doesn't untap during your untap step.
+        SN doesn't untap during your untap step.;\
+        At the beginning of combat on your turn, you may sacrifice two Islands. If you don't, SN can't attack.
 timing=main
 requires_groovy_code
 oracle=Trample\nLeviathan enters the battlefield tapped and doesn't untap during your untap step.\nAt the beginning of your upkeep, you may sacrifice two Islands. If you do, untap Leviathan.\nLeviathan can't attack unless you sacrifice two Islands.
