@@ -6,6 +6,6 @@ type=Creature
 subtype=Salamander
 cost={1}{R}
 pt=1/1
-ability={R}: SN gets +1/+0 until end of turn. Sacrifice SN at the beginning of the next end step.
+ability={R}: SN gets +1/+0 until end of turn.~Sacrifice SN at the beginning of the next end step.
 timing=main
 oracle={R}: Pyric Salamander gets +1/+0 until end of turn. Sacrifice Pyric Salamander at the beginning of the next end step.
