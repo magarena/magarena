@@ -22,11 +22,6 @@ import magic.utility.MagicFileSystem.DataPath;
 
 public class SoundEffects {
 
-    public static final String WIN_SOUND="win.au";
-    public static final String LOSE_SOUND="lose.au";
-    public static final String RESOLVE_SOUND="resolve.au";
-    public static final String COMBAT_SOUND="combat.au";
-
     private static final File SOUNDS_PATH = MagicFileSystem.getDataPath(DataPath.SOUNDS).toFile();
 
     private static volatile Clip clip;
@@ -38,12 +33,6 @@ public class SoundEffects {
     };
 
     private SoundEffects() {}
-
-    public static void playGameSound(final MagicGame game, final String name) {
-        if (game.isReal() && GeneralConfig.getInstance().isSound()) {
-            playSound(name);
-        }
-    }
 
     public static void playGameSound(final MagicGame game, MagicSound aSound) {
         if (game.isReal() && GeneralConfig.getInstance().isSound()) {

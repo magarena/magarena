@@ -61,6 +61,7 @@ import magic.ui.IChoiceViewer;
 import magic.ui.IPlayerZoneListener;
 import magic.ui.MagicImages;
 import magic.ui.MagicFileChoosers;
+import magic.ui.MagicSound;
 import magic.ui.ScreenController;
 import magic.ui.card.AnnotatedCardPanel;
 import magic.ui.duel.animation.DrawCardAnimation;
@@ -845,9 +846,9 @@ public class SwingGameController implements IUIGameController {
 
     private void playEndGameSoundEffect() {
         if (game.getLosingPlayer().getIndex() == 0) {
-            SoundEffects.playGameSound(game, SoundEffects.LOSE_SOUND);
+            SoundEffects.playGameSound(game, MagicSound.LOSE_GAME);
         } else {
-            SoundEffects.playGameSound(game, SoundEffects.WIN_SOUND);
+            SoundEffects.playGameSound(game, MagicSound.WIN_GAME);
         }
     }
 

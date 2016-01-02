@@ -4,6 +4,7 @@ import magic.data.SoundEffects;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.action.CombatDamageAction;
+import magic.ui.MagicSound;
 
 public class MagicCombatDamagePhase extends MagicPhase {
 
@@ -51,7 +52,7 @@ public class MagicCombatDamagePhase extends MagicPhase {
         if (game.getStep() == MagicStep.Begin) {
             game.setStep(MagicStep.ActivePlayer);
         } else {
-            SoundEffects.playGameSound(game,SoundEffects.COMBAT_SOUND);
+            SoundEffects.playGameSound(game, MagicSound.COMBAT_DAMAGE);
         }
     }
 
