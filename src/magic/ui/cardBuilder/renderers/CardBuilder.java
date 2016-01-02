@@ -51,9 +51,10 @@ public class CardBuilder {
 
     private static BufferedImage makeLeveller(IRenderableCard cardDef) {
         BufferedImage cardImage = Frame.getLevellerFrameType(cardDef);
-        PTFrame.drawPTPanel(cardImage, cardDef);
+        PTFrame.drawLevellerPTPanels(cardImage,cardDef);
+        PTFrame.drawLevellerArrowText(cardImage,cardDef);
         ImageFrame.drawImage(cardImage, cardDef);
-        OracleText.drawOracleText(cardImage, cardDef);
+        OracleText.drawLevellerOracleText(cardImage, cardDef);
         TitleFrame.drawCardName(cardImage, cardDef);
         TitleFrame.drawManaCost(cardImage, cardDef);
         TypeLine.drawCardTypeLine(cardImage, cardDef);
