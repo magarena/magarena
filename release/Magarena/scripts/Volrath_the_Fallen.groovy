@@ -23,12 +23,9 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicCopyable ref = event.getRef();
-            if (ref instanceof MagicCard) {
-                final int amount = ref.getConvertedCost();
-                game.logAppendValue(event.getPlayer(),amount);
-                game.doAction(new ChangeTurnPTAction(event.getPermanent(), +amount, +amount));
-            }
+            final int amount = event.getRefCard().getConvertedCost();
+            game.logAppendValue(event.getPlayer(),amount);
+            game.doAction(new ChangeTurnPTAction(event.getPermanent(), +amount, +amount));
         }
     }
 ]

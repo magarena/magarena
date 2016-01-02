@@ -58,12 +58,9 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicCopyable ref = event.getRef();
-            if (ref instanceof MagicCard) {
-                final int amount = ref.getConvertedCost();
-                game.logAppendX(event.getPlayer(), amount)
-                game.doAction(new BecomesCreatureAction(event.getPermanent(), PT(amount), ST));
-            }
+            final int amount = event.getRefCard().getConvertedCost();
+            game.logAppendX(event.getPlayer(), amount)
+            game.doAction(new BecomesCreatureAction(event.getPermanent(), PT(amount), ST));
         }
     }
 ]
