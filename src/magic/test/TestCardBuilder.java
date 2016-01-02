@@ -12,7 +12,10 @@ import magic.data.CardDefinitions;
 
 import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferInt;
+import javax.imageio.ImageIO;
 import java.util.Arrays;
+import java.io.File;
+import java.io.IOException;
 
 class TestCardBuilder extends TestGameBuilder {
     public MagicGame getGame() {
@@ -22,6 +25,15 @@ class TestCardBuilder extends TestGameBuilder {
 
             int hash = Arrays.hashCode(data);
             System.out.println(cdef.getDistinctName() + "\t" + hash);
+
+            if (cdef.getDistinctName().contains("QQQ")) {
+                try {
+                    File outputfile = new File(cdef.getImageName() + ".png");
+                    ImageIO.write(buffImg, "png", outputfile);
+                } catch (IOException e) {
+                    System.out.println("saving " + cdef.getDistinctName() + " failed");
+                }
+            }
         }
         final MagicDuel duel=createDuel(MagicAIImpl.MCTS, 6);
         final MagicGame game=duel.nextGame();
