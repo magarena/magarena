@@ -70,7 +70,9 @@ public enum MagicSound {
      */
     public void play(MagicGame game) {
         if (game.isReal() && config.isSound()) {
-            play();
+            executor.submit(() -> {
+                playSound(soundUrl, 100);
+            });
         }
     }
 
