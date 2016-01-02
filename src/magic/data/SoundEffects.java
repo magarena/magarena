@@ -1,6 +1,5 @@
 package magic.data;
 
-import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import javax.sound.sampled.AudioFormat;
@@ -17,12 +16,8 @@ import javax.sound.sampled.SourceDataLine;
 import javax.swing.SwingUtilities;
 import magic.model.MagicGame;
 import magic.ui.MagicSound;
-import magic.utility.MagicFileSystem;
-import magic.utility.MagicFileSystem.DataPath;
 
 public class SoundEffects {
-
-    private static final File SOUNDS_PATH = MagicFileSystem.getDataPath(DataPath.SOUNDS).toFile();
 
     private static volatile Clip clip;
 
@@ -37,12 +32,6 @@ public class SoundEffects {
     public static void playGameSound(final MagicGame game, MagicSound aSound) {
         if (game.isReal() && GeneralConfig.getInstance().isSound()) {
             aSound.play();
-        }
-    }
-
-    public static void playUISound(final String name) {
-        if (GeneralConfig.getInstance().isUiSound()) {
-            playSound(name);
         }
     }
 
@@ -80,17 +69,6 @@ public class SoundEffects {
         clip.open(ins);
         setVolume(clip, volPercent);
         clip.start();
-    }
-
-    private static void playSound(final String name) {
-        try (final AudioInputStream ins = AudioSystem.getAudioInputStream(new File(SOUNDS_PATH, name))) {
-            playClip(ins, 100);
-        } catch (Exception ex) {
-            System.err.println("WARNING. Unable to play clip " + name + ", " + ex.getMessage());
-            // switch off sound for current session but restore on restart.
-            GeneralConfig.getInstance().setIsUiSound(false);
-            GeneralConfig.getInstance().setSound(false);
-        }
     }
 
     /**
