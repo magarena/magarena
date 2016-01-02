@@ -334,7 +334,7 @@ public class OracleText {
 
         if (retry) {
             //font size 12.5 should be minimum
-            Font resize = font.deriveFont((float) (font.getSize2D() - 0.5));
+            Font resize = font.deriveFont(font.getSize2D() - 0.5f);
             return drawTextToBox(attrString, resize, box, leftPadding, topPadding);
         }
 
