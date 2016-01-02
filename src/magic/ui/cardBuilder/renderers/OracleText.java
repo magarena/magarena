@@ -278,7 +278,6 @@ public class OracleText {
         float boxHeight = baseImage.getHeight();
         float posY = topPadding;
         lineMeasurer.setPosition(paragraphStart);
-        Boolean newParagraph = false;
 
         //Measure length of string to fit in box
         boolean retry = false;
@@ -293,7 +292,6 @@ public class OracleText {
                 char c = iter.setIndex(i);
                 if (c == NEWLINE && i > lineMeasurer.getPosition()) {
                     limit = i;
-                    newParagraph = true;
                     break;
                 }
             }
@@ -304,9 +302,8 @@ public class OracleText {
             layout.draw(g2d, leftPadding, posY);
 
             //add extra space between paragraphs
-            if (newParagraph) {
+            if (limit < next) {
                 posY += layout.getLeading() + layout.getDescent();
-                newParagraph = false;
             }
 
             //check if out of room
