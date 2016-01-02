@@ -19,12 +19,9 @@ public class SoundEffects {
     public static final String COMBAT_SOUND="combat.au";
 
     private static final File SOUNDS_PATH = MagicFileSystem.getDataPath(DataPath.SOUNDS).toFile();
-    private static final LineListener closer = new LineListener() {
-        @Override
-        public void update(final LineEvent event) {
-            if (event.getType() == LineEvent.Type.STOP) {
-                event.getLine().close();
-            }
+    private static final LineListener closer = (event) -> {
+        if (event.getType() == LineEvent.Type.STOP) {
+            event.getLine().close();
         }
     };
 
