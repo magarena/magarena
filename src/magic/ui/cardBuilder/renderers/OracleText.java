@@ -82,53 +82,37 @@ public class OracleText {
     }
 
     static void drawPlaneswalkerOracleText(BufferedImage cardImage, IRenderableCard cardDef) {
+        int lines = 0;
+        int yPosOffset = 0;
         if (cardDef.hasText() && getPlaneswalkerAbilityCount(cardDef) == 3) {
-            String[] abilityActivation = getPlaneswalkerActivationText(cardDef);
-            textBoxBounds = new Rectangle(0, 0, 282, 49);
-            for (int i = 0; i < 3; i++) {
-                String oracleText = abilityActivation[i];
-                AttributedString realOracle = textIconReplace(oracleText);
-
-                BufferedImage textBoxText = drawTextToBox(
-                    realOracle,
-                    cardTextFont,
-                    textBoxBounds,
-                    leftPadding,
-                    topPadding
-                );
-
-                Graphics2D g2d = cardImage.createGraphics();
-                BufferedImage trimmedTextBox = trimTransparency(textBoxText);
-                int heightPadding = (int) ((textBoxBounds.getHeight() - trimmedTextBox.getHeight()) / 2);
-                int widthPadding = (int) Math.min((textBoxBounds.getWidth() - trimmedTextBox.getWidth()) / 2, 3);
-                int yPos = (int) (330 + i * textBoxBounds.getHeight());
-                g2d.drawImage(trimmedTextBox, 63 + widthPadding, yPos + heightPadding, null);
-                g2d.dispose();
-            }
-
+            lines = 3;
+            yPosOffset = 330;
         } else {
-            String[] abilityActivation = getPlaneswalkerActivationText(cardDef);
-            textBoxBounds = new Rectangle(0, 0, 282, 49);
-            for (int i = 0; i < 4; i++) {
-                String oracleText = abilityActivation[i];
-                AttributedString realOracle = textIconReplace(oracleText);
+            lines = 4;
+            yPosOffset = 289;
+        }
 
-                BufferedImage textBoxText = drawTextToBox(
-                    realOracle,
-                    cardTextFont,
-                    textBoxBounds,
-                    leftPadding,
-                    topPadding
-                );
+        String[] abilityActivation = getPlaneswalkerActivationText(cardDef);
+        textBoxBounds = new Rectangle(0, 0, 282, 49);
+        for (int i = 0; i < lines; i++) {
+            String oracleText = abilityActivation[i];
+            AttributedString realOracle = textIconReplace(oracleText);
 
-                Graphics2D g2d = cardImage.createGraphics();
-                BufferedImage trimmedTextBox = trimTransparency(textBoxText);
-                int heightPadding = (int) ((textBoxBounds.getHeight() - trimmedTextBox.getHeight()) / 2);
-                int widthPadding = (int) Math.min((textBoxBounds.getWidth() - trimmedTextBox.getWidth()) / 2, 3);
-                int yPos = (int) (289 + i * textBoxBounds.getHeight());
-                g2d.drawImage(trimmedTextBox, 63 + widthPadding, yPos + heightPadding, null);
-                g2d.dispose();
-            }
+            BufferedImage textBoxText = drawTextToBox(
+                realOracle,
+                cardTextFont,
+                textBoxBounds,
+                leftPadding,
+                topPadding
+            );
+
+            Graphics2D g2d = cardImage.createGraphics();
+            BufferedImage trimmedTextBox = trimTransparency(textBoxText);
+            int heightPadding = (int) ((textBoxBounds.getHeight() - trimmedTextBox.getHeight()) / 2);
+            int widthPadding = (int) Math.min((textBoxBounds.getWidth() - trimmedTextBox.getWidth()) / 2, 3);
+            int yPos = (int) (yPosOffset + i * textBoxBounds.getHeight());
+            g2d.drawImage(trimmedTextBox, 63 + widthPadding, yPos + heightPadding, null);
+            g2d.dispose();
         }
     }
 
