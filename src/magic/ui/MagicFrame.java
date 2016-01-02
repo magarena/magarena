@@ -218,6 +218,7 @@ public class MagicFrame extends JFrame implements IImageDragDropListener {
         }
 
         MagicGameLog.close();
+        MagicSound.shutdown();
 
         /*
         if (gamePanel != null) {

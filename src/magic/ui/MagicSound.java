@@ -1,8 +1,10 @@
 package magic.ui;
 
-import kuusisto.tinysound.Sound;
-import kuusisto.tinysound.TinySound;
+import java.net.URL;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import magic.data.GeneralConfig;
+import magic.data.SoundEffects;
 import magic.utility.MagicResources;
 
 public enum MagicSound {
@@ -14,16 +16,12 @@ public enum MagicSound {
     ;
 
     private static final GeneralConfig config = GeneralConfig.getInstance();
+    private static final ExecutorService executor = Executors.newSingleThreadExecutor();
 
-    static {
-        TinySound.init();
-    }
-
-    private final String filename;
-    private Sound sound;
+    private final URL soundUrl;
 
     private MagicSound(final String aFilename) {
-        this.filename = aFilename;
+        this.soundUrl = MagicResources.getSoundUrl(aFilename);
     }
 
     /**
@@ -31,21 +29,18 @@ public enum MagicSound {
      */
     public void play(int volume) {
         if (config.isUiSound()) {
-            if (sound == null) {
-                sound = TinySound.loadSound(MagicResources.getSoundUrl(filename));
-            }
-            try {
-                sound.play(volume / 100.0d);
-            } catch (Exception ex) {
-                config.setIsUiSound(false);
-                config.save();
-                throw new RuntimeException(ex);
-            }
+            executor.submit(() -> {
+                SoundEffects.playSound(soundUrl);
+            });
         }
     }
 
     public void play() {
         play(config.getUiSoundVolume());
+    }
+
+    public static void shutdown() {
+        executor.shutdown();
     }
 
 }

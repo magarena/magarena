@@ -1,11 +1,13 @@
 package magic.data;
 
 import java.io.File;
+import java.net.URL;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import javax.sound.sampled.LineListener;
 import javax.sound.sampled.LineEvent;
+import javax.swing.SwingUtilities;
 import magic.model.MagicGame;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
@@ -19,13 +21,15 @@ public class SoundEffects {
     public static final String COMBAT_SOUND="combat.au";
 
     private static final File SOUNDS_PATH = MagicFileSystem.getDataPath(DataPath.SOUNDS).toFile();
+
+    private static volatile Clip clip;
+
     private static final LineListener closer = (event) -> {
         if (event.getType() == LineEvent.Type.STOP) {
+            System.out.println(SwingUtilities.isEventDispatchThread() + " : close clip on T" + Thread.currentThread().getId());
             event.getLine().close();
         }
     };
-
-    private static Clip clip;
 
     private SoundEffects() {}
 
@@ -52,6 +56,25 @@ public class SoundEffects {
             clip.start();
         } catch (Exception ex) {
             System.err.println("WARNING. Unable to play clip " + name + ", " + ex.getMessage());
+            // switch off sound for current session but restore on restart.
+            GeneralConfig.getInstance().setIsUiSound(false);
+            GeneralConfig.getInstance().setSound(false);
+        }
+    }
+
+    public static void playSound(URL sound) {
+        System.out.println("playSound on T" + Thread.currentThread().getId());
+        if (clip != null && (clip.isRunning() || clip.isActive())) {
+            System.out.println("loop 0");
+            clip.setFramePosition(0); // .loop(0);
+        }
+        try (final AudioInputStream ins = AudioSystem.getAudioInputStream(sound)) {
+            clip = AudioSystem.getClip();
+            clip.open(ins);
+            clip.addLineListener(closer);
+            clip.start();
+        } catch (Exception ex) {
+            System.err.println("WARNING. Unable to play clip " + sound.toExternalForm() + ", " + ex.getMessage());
             // switch off sound for current session but restore on restart.
             GeneralConfig.getInstance().setIsUiSound(false);
             GeneralConfig.getInstance().setSound(false);
