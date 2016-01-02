@@ -12,7 +12,13 @@ public enum MagicSound {
     ADD_CARD("cardSlide3.wav"),
     ALERT("bong.wav"),
     BEEP("noAction.wav"),
-    REMOVE_CARD("cardTakeOutPackage1.wav")
+    REMOVE_CARD("cardTakeOutPackage1.wav"),
+
+    WIN_GAME("win.au"),
+    LOSE_GAME("lose.au"),
+    NEW_TURN("turn.au"),
+    RESOLVE_ACTION("resolve.au"),
+    COMBAT_DAMAGE("combat.au")
     ;
 
     private static final GeneralConfig config = GeneralConfig.getInstance();
