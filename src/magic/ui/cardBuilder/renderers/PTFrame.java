@@ -58,27 +58,27 @@ public class PTFrame {
     }
 
     static void drawLoyaltyPanels(BufferedImage cardImage, IRenderableCard cardDef) {
-        int xPos = 32;
-        int width = 12;
-        int height = 34;
         String loyaltyText = getLoyaltyText(cardDef);
         Graphics2D g2d = cardImage.createGraphics();
         g2d.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
         g2d.setRenderingHint(RenderingHints.KEY_FRACTIONALMETRICS, RenderingHints.VALUE_FRACTIONALMETRICS_ON);
         g2d.setColor(Color.WHITE);
-        String panelText;
 
         // Draw main Loyalty Panel
+        int width = 12;
+        int height = 34;
         if (!loyaltyText.isEmpty()) {
             BufferedImage loyaltyImage = ResourceManager.loyaltyPanel;
             g2d.drawImage(loyaltyImage, 302, 460, null);
             drawPanelText(g2d, new Rectangle(326, 462, width, height), loyaltyText, cardLoyaltyFont);
         }
         // Draw activation panels
+        String panelText;
+        int xPos = 32;
         if (OracleText.getPlaneswalkerAbilityCount(cardDef) == 3) {
             String[] activations = getPlaneswalkerActivationCosts(cardDef);
             panelText = activations[0];
-            if (panelText != "") {
+            if (!panelText.isEmpty()) {
                 //Panel 1
                 g2d.drawImage(getLoyaltyPanel(activations[0]), 18, 333, null);
                 drawPanelText(g2d, new Rectangle(xPos, 335, width, height), panelText, cardLoyaltyFont);
@@ -92,7 +92,7 @@ public class PTFrame {
         } else {
             String[] activations = getPlaneswalkerActivationCosts(cardDef);
             panelText = activations[0];
-            if (panelText != "") {
+            if (!panelText.isEmpty()) {
                 //Panel 1
                 g2d.drawImage(getLoyaltyPanel(activations[0]), 18, 294, null);
                 drawPanelText(g2d, new Rectangle(xPos, 297, width, height), panelText, cardLoyaltyFont);
@@ -156,9 +156,9 @@ public class PTFrame {
         String[] abilities = OracleText.getOracleAsLines(cardDef);
         ArrayList<String> text = new ArrayList<>(3);
         text.add(getPTText(cardDef));
-        for (int i = 0; i < abilities.length; i++) {
-            if (abilities[i].matches("\\d+/\\d+")) {
-                text.add(abilities[i]);
+        for (String ability : abilities) {
+            if (ability.matches("\\d+/\\d+")) {
+                text.add(ability);
             }
         }
         return text.toArray(new String[3]);
@@ -273,11 +273,7 @@ public class PTFrame {
 
 
             TextLayout layout;
-            if (ptText.length() >= 6) { //power or toughness of 100+
-                layout = new TextLayout(ptText, cardPTFontSmall, frc2);
-            } else {
-                layout = new TextLayout(ptText, cardPTFont, frc2);
-            }
+            layout = ptText.length() >= 6 ? new TextLayout(ptText, cardPTFontSmall, frc2) : new TextLayout(ptText, cardPTFont, frc2); //Power or Toughness over 99
             Point textCentre = new Point((int) layout.getBounds().getWidth() / 2, (int) layout.getBounds().getHeight() / 2); //Centre of text
 
             layout.draw(g2d, (float) centre.getX() - (float) textCentre.getX(), (float) centre.getY() + (float) textCentre.getY());
