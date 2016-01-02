@@ -30,7 +30,7 @@ public enum MagicSound {
     public void play(int volume) {
         if (config.isUiSound()) {
             executor.submit(() -> {
-                SoundEffects.playSound(soundUrl);
+                SoundEffects.playSound(soundUrl, volume);
             });
         }
     }
