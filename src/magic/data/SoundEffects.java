@@ -7,7 +7,6 @@ import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import javax.sound.sampled.LineListener;
 import javax.sound.sampled.LineEvent;
-import javax.swing.SwingUtilities;
 import magic.model.MagicGame;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
@@ -26,7 +25,6 @@ public class SoundEffects {
 
     private static final LineListener closer = (event) -> {
         if (event.getType() == LineEvent.Type.STOP) {
-            System.out.println(SwingUtilities.isEventDispatchThread() + " : close clip on T" + Thread.currentThread().getId());
             event.getLine().close();
         }
     };
@@ -63,10 +61,8 @@ public class SoundEffects {
     }
 
     public static void playSound(URL sound) {
-        System.out.println("playSound on T" + Thread.currentThread().getId());
         if (clip != null && (clip.isRunning() || clip.isActive())) {
-            System.out.println("loop 0");
-            clip.setFramePosition(0); // .loop(0);
+            clip.loop(0);
         }
         try (final AudioInputStream ins = AudioSystem.getAudioInputStream(sound)) {
             clip = AudioSystem.getClip();
