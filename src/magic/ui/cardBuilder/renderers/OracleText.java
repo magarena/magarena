@@ -233,7 +233,7 @@ public class OracleText {
         return text.toArray(new String[3]);
     }
 
-    private static void drawTextToCard(
+    public static void drawTextToCard(
         BufferedImage cardImage,
         int xPos,
         int yPos,

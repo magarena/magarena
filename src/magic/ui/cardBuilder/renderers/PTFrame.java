@@ -152,6 +152,24 @@ public class PTFrame {
         g2d.dispose();
     }
 
+    static void drawLevellerArrowText(BufferedImage cardImage, IRenderableCard cardDef) {
+        int xPosText = 35;
+        int width = 39;
+        int height = 39;
+        String[] levelText = getLevellerArrowText(cardDef);
+        Graphics2D g2d = cardImage.createGraphics();
+        g2d.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
+        g2d.setRenderingHint(RenderingHints.KEY_FRACTIONALMETRICS, RenderingHints.VALUE_FRACTIONALMETRICS_ON);
+        g2d.setColor(Color.BLACK);
+
+        //Arrow 1
+        OracleText.drawTextToCard(cardImage, xPosText, 386, levelText[0], new Rectangle(0, 0, width, height));
+        //Arrow 2
+        OracleText.drawTextToCard(cardImage, xPosText, 437, levelText[1], new Rectangle(0, 0, width, height));
+
+        g2d.dispose();
+    }
+
     private static String[] getLevellerPTText(IRenderableCard cardDef) {
         String[] abilities = OracleText.getOracleAsLines(cardDef);
         ArrayList<String> text = new ArrayList<>(3);
@@ -162,6 +180,17 @@ public class PTFrame {
             }
         }
         return text.toArray(new String[3]);
+    }
+
+    private static String[] getLevellerArrowText(IRenderableCard cardDef) {
+        String[] abilities = OracleText.getOracleAsLines(cardDef);
+        ArrayList<String> text = new ArrayList<>(2);
+        for (String ability : abilities) {
+            if (ability.contains("LEVEL")) {
+                text.add(ability.replace("LEVEL ","LEVEL\n"));
+            }
+        }
+        return text.toArray(new String[2]);
     }
 
     private static BufferedImage getPTPanel(MagicColor color) {
