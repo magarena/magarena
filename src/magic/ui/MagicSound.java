@@ -13,6 +13,8 @@ public enum MagicSound {
     REMOVE_CARD("cardTakeOutPackage1.wav")
     ;
 
+    private static final GeneralConfig config = GeneralConfig.getInstance();
+
     static {
         TinySound.init();
     }
@@ -28,22 +30,22 @@ public enum MagicSound {
      * plays sound at a volume of between 0 and 100%.
      */
     public void play(int volume) {
-        if (GeneralConfig.getInstance().isUiSound()) {
+        if (config.isUiSound()) {
             if (sound == null) {
                 sound = TinySound.loadSound(MagicResources.getSoundUrl(filename));
             }
             try {
                 sound.play(volume / 100.0d);
             } catch (Exception ex) {
-                GeneralConfig.getInstance().setIsUiSound(false);
-                GeneralConfig.getInstance().save();
+                config.setIsUiSound(false);
+                config.save();
                 throw new RuntimeException(ex);
             }
         }
     }
 
     public void play() {
-        play(GeneralConfig.getInstance().getUiSoundVolume());
+        play(config.getUiSoundVolume());
     }
 
 }
