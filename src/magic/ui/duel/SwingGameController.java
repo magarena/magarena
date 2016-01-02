@@ -32,7 +32,6 @@ import magic.ai.MagicAI;
 import magic.data.DuelConfig;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
-import magic.data.SoundEffects;
 import magic.exception.InvalidDeckException;
 import magic.exception.UndoClickedException;
 import magic.game.state.GameState;
@@ -846,9 +845,9 @@ public class SwingGameController implements IUIGameController {
 
     private void playEndGameSoundEffect() {
         if (game.getLosingPlayer().getIndex() == 0) {
-            SoundEffects.playGameSound(game, MagicSound.LOSE_GAME);
+            MagicSound.LOSE_GAME.play(game);
         } else {
-            SoundEffects.playGameSound(game, MagicSound.WIN_GAME);
+            MagicSound.WIN_GAME.play(game);
         }
     }
 

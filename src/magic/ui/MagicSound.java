@@ -5,6 +5,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import magic.data.GeneralConfig;
 import magic.data.SoundEffects;
+import magic.model.MagicGame;
 import magic.utility.MagicResources;
 
 public enum MagicSound {
@@ -47,6 +48,12 @@ public enum MagicSound {
 
     public static void shutdown() {
         executor.shutdown();
+    }
+
+    public void play(final MagicGame game) {
+        if (game.isReal() && config.isSound()) {
+            MagicSound.this.play();
+        }
     }
 
 }

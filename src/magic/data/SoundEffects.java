@@ -14,8 +14,6 @@ import javax.sound.sampled.LineEvent;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.SourceDataLine;
 import javax.swing.SwingUtilities;
-import magic.model.MagicGame;
-import magic.ui.MagicSound;
 
 public class SoundEffects {
 
@@ -28,12 +26,6 @@ public class SoundEffects {
     };
 
     private SoundEffects() {}
-
-    public static void playGameSound(final MagicGame game, MagicSound aSound) {
-        if (game.isReal() && GeneralConfig.getInstance().isSound()) {
-            aSound.play();
-        }
-    }
 
     private static void setVolume(final Clip aClip, int volPercent) {
 
