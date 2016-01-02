@@ -91,11 +91,10 @@ public class TitleFrame {
             g2d.setRenderingHint(RenderingHints.KEY_FRACTIONALMETRICS, RenderingHints.VALUE_FRACTIONALMETRICS_ON);
             if (cardDef.isHidden()) {
                 g2d.setColor(Color.WHITE);
-                g2d.setFont(cardNameFont);
             } else {
                 g2d.setColor(Color.BLACK);
-                g2d.setFont(cardNameFont);
             }
+            g2d.setFont(cardNameFont);
             FontMetrics metrics = g2d.getFontMetrics(); //to allow calculation of Ascent + length
             int xPos = 56;
             int yPos = 28;
