@@ -3,16 +3,20 @@ package magic.data;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.BooleanControl;
 import javax.sound.sampled.Clip;
+import javax.sound.sampled.DataLine;
 import javax.sound.sampled.FloatControl;
 import javax.sound.sampled.LineListener;
 import javax.sound.sampled.LineEvent;
 import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.SourceDataLine;
 import javax.swing.SwingUtilities;
 import magic.model.MagicGame;
+import magic.ui.MagicSound;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 
@@ -20,7 +24,6 @@ public class SoundEffects {
 
     public static final String WIN_SOUND="win.au";
     public static final String LOSE_SOUND="lose.au";
-    public static final String TURN_SOUND="turn.au";
     public static final String RESOLVE_SOUND="resolve.au";
     public static final String COMBAT_SOUND="combat.au";
 
@@ -39,6 +42,12 @@ public class SoundEffects {
     public static void playGameSound(final MagicGame game, final String name) {
         if (game.isReal() && GeneralConfig.getInstance().isSound()) {
             playSound(name);
+        }
+    }
+
+    public static void playGameSound(final MagicGame game, MagicSound aSound) {
+        if (game.isReal() && GeneralConfig.getInstance().isSound()) {
+            aSound.play();
         }
     }
 
@@ -65,8 +74,14 @@ public class SoundEffects {
         }
     }
 
-    private static void playClip(AudioInputStream ins, int volPercent) throws IOException, LineUnavailableException {
+    private static void debugClip(final Clip aClip) {
+        AudioFormat audioFormat = aClip.getFormat();
+        DataLine.Info info = new DataLine.Info(SourceDataLine.class, audioFormat);
+        System.out.println(info);
+    }
 
+    private static void playClip(AudioInputStream ins, int volPercent) throws IOException, LineUnavailableException {
+        
         if (clip != null && (clip.isRunning() || clip.isActive())) {
             clip.loop(0);
         }
