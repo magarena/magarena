@@ -78,6 +78,15 @@ public final class UiString {
         return aString;
     }
 
+    /**
+     * Returns translated string enclosed in {@literal <html>...</html>} tags.
+     *
+     * This is useful for automatically wrapping long strings.
+     */
+    public static final String asHtml(final String aString) {
+        return "<html>" + get(aString) + "</html>";
+    }
+
     private static Map<Long, String> getStringsMapFromFile(final File txtFile, final boolean unescape) throws FileNotFoundException {
         final Map<Long, String> stringsMap = new LinkedHashMap<>();
         try (final Scanner sc = new Scanner(txtFile, UTF_CHAR_SET)) {
