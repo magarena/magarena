@@ -317,16 +317,15 @@ public class OracleText {
                 posY += layout.getLeading() + layout.getDescent();
             }
 
+            //move to next line
+            posY += layout.getDescent();
+
             //check if out of room
-            if (posY + layout.getDescent() > boxHeight) {
+            if (posY > boxHeight) {
                 //try again with smaller font
                 retry = true;
                 break;
             }
-
-            //move to next line
-            posY += layout.getDescent();
-
         }
 
         //cleanup + return
