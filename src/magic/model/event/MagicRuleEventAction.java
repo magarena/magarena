@@ -1984,6 +1984,44 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    LoseGame(
+        ARG.PLAYERS + " lose(s)? the game(\\.|,)?",
+        MagicTargetHint.Negative,
+        MagicTiming.Removal,
+        "Lose"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
+                        game.doAction(new LoseGameAction(it, LoseGameAction.EFFECT_REASON));
+                    }
+                }
+            };
+        }
+    },
+    WinGame(
+        ARG.PLAYERS + " win(s)? the game(\\.|,)?",
+        MagicTargetHint.Positive,
+        MagicTiming.Removal,
+        "Win"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
+                        game.doAction(new LoseGameAction(it.getOpponent(), LoseGameAction.EFFECT_REASON));
+                    }
+                }
+            };
+        }
+    },
     /*
     Scry(
         "(pn )?scry (?<amount>[0-9]+)(\\.|,)?",
@@ -2514,18 +2552,19 @@ public enum MagicRuleEventAction {
         }
     },
     LoseAbility(
-        ARG.PERMANENTS + " loses (?<ability>.+) until end of turn(\\.|,)?",
+        ARG.PERMANENTS + " lose(s)? (?<ability>.+?)(?<ueot> until end of turn)?(\\.|,)?",
         MagicTargetHint.Negative
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final MagicAbilityList abilityList = MagicAbility.getAbilityList(matcher.group("ability"));
             final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            final boolean duration = matcher.group("ueot") != null ? MagicStatic.UntilEOT : MagicStatic.Forever;
             return new MagicEventAction() {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
-                        game.doAction(new LoseAbilityAction(it, abilityList));
+                        game.doAction(new LoseAbilityAction(it, abilityList, duration));
                     }
                 }
             };
@@ -2662,44 +2701,6 @@ public enum MagicRuleEventAction {
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
                         game.doAction(new ChangePoisonAction(it, amount));
-                    }
-                }
-            };
-        }
-    },
-    LoseGame(
-        ARG.PLAYERS + " lose(s)? the game(\\.|,)?",
-        MagicTargetHint.Negative,
-        MagicTiming.Removal,
-        "Lose"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
-                        game.doAction(new LoseGameAction(it, LoseGameAction.EFFECT_REASON));
-                    }
-                }
-            };
-        }
-    },
-    WinGame(
-        ARG.PLAYERS + " win(s)? the game(\\.|,)?",
-        MagicTargetHint.Positive,
-        MagicTiming.Removal,
-        "Win"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            final MagicTargetFilter<MagicPlayer> filter = ARG.playersParse(matcher);
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
-                        game.doAction(new LoseGameAction(it.getOpponent(), LoseGameAction.EFFECT_REASON));
                     }
                 }
             };
