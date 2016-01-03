@@ -20,22 +20,21 @@ import magic.utility.MagicResources;
 
 public enum MagicSound {
 
-    // UI
+    // uiSounds - keep sorted and update enumset if changed.
     ADD_CARD("cardSlide3.wav"),
     ALERT("bong.wav"),
     BEEP("noAction.wav"),
     REMOVE_CARD("cardTakeOutPackage1.wav"),
 
-    // Game
-    WIN("win.au"),
+    // gameSounds - keep sorted and update enumset if changed.
+    COMBAT("combat.au"),
     LOSE("lose.au"),
     NEW_TURN("turn.au"),
     RESOLVE("resolve.au"),
-    COMBAT("combat.au")
-    ;
+    WIN("win.au");
 
     private static final Set<MagicSound> uiSounds = EnumSet.range(ADD_CARD, REMOVE_CARD);
-    private static final Set<MagicSound> gameSounds = EnumSet.range(WIN, COMBAT);
+    private static final Set<MagicSound> gameSounds = EnumSet.range(COMBAT, WIN);
 
     private static final GeneralConfig config = GeneralConfig.getInstance();
     private static final ExecutorService executor = Executors.newSingleThreadExecutor();
