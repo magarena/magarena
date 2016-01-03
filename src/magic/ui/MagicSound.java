@@ -60,11 +60,11 @@ public enum MagicSound {
     }
 
     private boolean canPlay() {
-        return (isUISound() && config.isUiSound()) || (isGameSound() && config.isSound());
+        return getVolume() > 0;
     }
 
     private int getVolume() {
-        return isUISound() ? config.getUiSoundVolume() : 100;
+        return isUISound() ? config.getUiVolume() : config.getGameVolume();
     }
 
     /**
@@ -88,7 +88,7 @@ public enum MagicSound {
     }
 
     /**
-     * Convenience method that only plays sound  if
+     * Convenience method that only plays sound if
      * game is not running as an AI simulation.
      */
     public void play(MagicGame game) {
@@ -138,8 +138,8 @@ public enum MagicSound {
         } catch (Exception ex) {
             System.err.println("WARNING. Unable to play clip " + url.toExternalForm() + ", " + ex.getMessage());
             // turn off all sound.
-            config.setIsUiSound(false);
-            config.setSound(false);
+            config.setGameVolume(0);
+            config.setUiVolume(0);
             config.save();
         }
 

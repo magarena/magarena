@@ -79,9 +79,6 @@ public class GeneralConfig {
     private static final String HIGH_QUALITY="hq";
     private boolean highQuality = false;
 
-    private static final String SOUND="sound";
-    private boolean sound = true;
-
     private static final String TOUCHSCREEN = "touchscreen";
     private boolean touchscreen = false;
 
@@ -144,9 +141,6 @@ public class GeneralConfig {
     private static final String IGNORED_VERSION_ALERT = "ignoredVersionAlert";
     private String ignoredVersionAlert = "";
 
-    private static final String UI_SOUND = "uiSound";
-    private boolean isUiSound = true;
-
     private static final String PAUSE_GAME_POPUP = "pauseGamePopup";
     private boolean isGamePausedOnPopup = false;
 
@@ -165,8 +159,11 @@ public class GeneralConfig {
     private static final String ROLLOVER_COLOR ="rolloverColor";
     private Color rolloverColor = Color.YELLOW;
 
-    private static final String UI_SOUND_VOLUME = "uiSoundVolume";
-    private int uiSoundVolume = 50;
+    private static final String UI_VOLUME = "uiSoundVolume";
+    private int uiVolume = 80;
+
+    private static final String GAME_VOLUME = "gameVolume";
+    private int gameVolume = 80;
 
     private static final String TRANSLATION = "translation";
     public static final String DEFAULT_TRANSLATION = "";
@@ -401,14 +398,6 @@ public class GeneralConfig {
         this.highQuality=highQuality;
     }
 
-    public boolean isSound() {
-        return sound;
-    }
-
-    public void setSound(final boolean sound) {
-        this.sound=sound;
-    }
-
     public boolean isTouchscreen() {
         return touchscreen;
     }
@@ -510,13 +499,6 @@ public class GeneralConfig {
         return overlayPermanentMinHeight;
     }
 
-    public boolean isUiSound() {
-        return isUiSound;
-    }
-    public void setIsUiSound(final boolean b) {
-        isUiSound = b;
-    }
-
     public boolean isGamePausedOnPopup() {
         return isGamePausedOnPopup;
     }
@@ -581,11 +563,11 @@ public class GeneralConfig {
         rolloverColor = aColor;
     }
 
-    public int getUiSoundVolume() {
-        return uiSoundVolume;
+    public int getUiVolume() {
+        return uiVolume;
     }
-    public void setUiSoundVolume(final int aInt) {
-        uiSoundVolume = aInt;
+    public void setUiVolume(final int aInt) {
+        uiVolume = aInt;
     }
 
     public String getTranslation() {
@@ -617,7 +599,6 @@ public class GeneralConfig {
         popupDelay=Integer.parseInt(properties.getProperty(POPUP_DELAY,""+popupDelay));
         messageDelay = Integer.parseInt(properties.getProperty(MESSAGE_DELAY,"" + messageDelay));
         highQuality=Boolean.parseBoolean(properties.getProperty(HIGH_QUALITY,""+highQuality));
-        sound=Boolean.parseBoolean(properties.getProperty(SOUND,""+sound));
         touchscreen = Boolean.parseBoolean(properties.getProperty(TOUCHSCREEN,""+touchscreen));
         mouseWheelPopup = Boolean.parseBoolean(properties.getProperty(MOUSEWHEEL_POPUP, "" + mouseWheelPopup));
         fullScreen = Boolean.parseBoolean(properties.getProperty(FULLSCREEN, "" + fullScreen));
@@ -638,20 +619,20 @@ public class GeneralConfig {
         isSplitViewDeckEditor = Boolean.parseBoolean(properties.getProperty(SPLITVIEW_DECKEDITOR, "" + isSplitViewDeckEditor));
         overlayPermanentMinHeight = Integer.parseInt(properties.getProperty(OVERLAY_PERMANENT_MIN_HEIGHT, "" + overlayPermanentMinHeight));
         ignoredVersionAlert = properties.getProperty(IGNORED_VERSION_ALERT, ignoredVersionAlert);
-        isUiSound = Boolean.parseBoolean(properties.getProperty(UI_SOUND, "" + isUiSound));
         isGamePausedOnPopup = Boolean.parseBoolean(properties.getProperty(PAUSE_GAME_POPUP, "" + isGamePausedOnPopup));
         missingImagesDownloadDate = properties.getProperty(MISSING_DOWNLOAD_DATE, missingImagesDownloadDate);
         playableImagesDownloadDate = properties.getProperty(PLAYABLE_DOWNLOAD_DATE, playableImagesDownloadDate);
         duelSidebarLayout = properties.getProperty(DUEL_SIDEBAR_LAYOUT, duelSidebarLayout);
         hideAiActionPrompt = Boolean.parseBoolean(properties.getProperty(HIDE_AI_ACTION_PROMPT, "" + hideAiActionPrompt));
         rolloverColor = new Color(Integer.parseInt(properties.getProperty(ROLLOVER_COLOR, "" + rolloverColor.getRGB())));
-        uiSoundVolume = Integer.parseInt(properties.getProperty(UI_SOUND_VOLUME, "" + uiSoundVolume));
+        uiVolume = Integer.parseInt(properties.getProperty(UI_VOLUME, "" + uiVolume));
         translation = properties.getProperty(TRANSLATION, translation);
         logMessageStyle = MessageStyle.valueOf(properties.getProperty(LOG_MESSAGE_STYLE, logMessageStyle.name()));
         AnimationFx.setFlags(Integer.parseInt(properties.getProperty(ANIMATION_FLAGS, "" + AnimationFx.getFlags())));
         preferredImageSize = ImageSizePresets.valueOf(properties.getProperty(PREF_IMAGE_SIZE, preferredImageSize.name()));
         cardTextLanguage = CardTextLanguage.valueOf(properties.getProperty(CARD_TEXT_LANG, cardTextLanguage.name()));
         showTextModeOption = Boolean.parseBoolean(properties.getProperty(TEXT_MODE_OPTION, "" + showTextModeOption));
+        gameVolume = Integer.parseInt(properties.getProperty(GAME_VOLUME, "" + gameVolume));
     }
 
     public void load() {
@@ -673,7 +654,6 @@ public class GeneralConfig {
         properties.setProperty(POPUP_DELAY,String.valueOf(popupDelay));
         properties.setProperty(MESSAGE_DELAY,String.valueOf(messageDelay));
         properties.setProperty(HIGH_QUALITY,String.valueOf(highQuality));
-        properties.setProperty(SOUND,String.valueOf(sound));
         properties.setProperty(TOUCHSCREEN,String.valueOf(touchscreen));
         properties.setProperty(MOUSEWHEEL_POPUP, String.valueOf(mouseWheelPopup));
         properties.setProperty(FULLSCREEN, String.valueOf(fullScreen));
@@ -692,20 +672,20 @@ public class GeneralConfig {
         properties.setProperty(NONLAND_PREVIEW_DURATION, String.valueOf(nonLandPreviewDuration));
         properties.setProperty(SPLITVIEW_DECKEDITOR, String.valueOf(isSplitViewDeckEditor));
         properties.setProperty(IGNORED_VERSION_ALERT, ignoredVersionAlert);
-        properties.setProperty(UI_SOUND, String.valueOf(isUiSound));
         properties.setProperty(PAUSE_GAME_POPUP, String.valueOf(isGamePausedOnPopup));
         properties.setProperty(MISSING_DOWNLOAD_DATE, missingImagesDownloadDate);
         properties.setProperty(PLAYABLE_DOWNLOAD_DATE, playableImagesDownloadDate);
         properties.setProperty(DUEL_SIDEBAR_LAYOUT, duelSidebarLayout);
         properties.setProperty(HIDE_AI_ACTION_PROMPT, String.valueOf(hideAiActionPrompt));
         properties.setProperty(ROLLOVER_COLOR, String.valueOf(rolloverColor.getRGB()));
-        properties.setProperty(UI_SOUND_VOLUME, String.valueOf(uiSoundVolume));
+        properties.setProperty(UI_VOLUME, String.valueOf(uiVolume));
         properties.setProperty(TRANSLATION, translation);
         properties.setProperty(LOG_MESSAGE_STYLE, logMessageStyle.name());
         properties.setProperty(ANIMATION_FLAGS, String.valueOf(AnimationFx.getFlags()));
         properties.setProperty(PREF_IMAGE_SIZE, preferredImageSize.name());
         properties.setProperty(CARD_TEXT_LANG, cardTextLanguage.name());
         properties.setProperty(TEXT_MODE_OPTION, String.valueOf(showTextModeOption));
+        properties.setProperty(GAME_VOLUME, String.valueOf(gameVolume));
     }
 
     public void save() {
@@ -752,6 +732,14 @@ public class GeneralConfig {
 
     public void setTextModeOption(boolean b) {
         this.showTextModeOption = b;
+    }
+
+    public int getGameVolume() {
+        return gameVolume;
+    }
+
+    public void setGameVolume(int value) {
+        gameVolume = value;
     }
 
 }

@@ -25,7 +25,6 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import javax.swing.JSlider;
 import javax.swing.JSpinner;
 import javax.swing.JTabbedPane;
 import javax.swing.JTextField;
@@ -35,15 +34,12 @@ import javax.swing.SpinnerNumberModel;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.ToolTipManager;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
 import javax.swing.text.NumberFormatter;
 import magic.data.GeneralConfig;
 import magic.translate.UiString;
 import magic.ui.CachedImagesProvider;
 import magic.ui.URLUtils;
 import magic.ui.MagicFrame;
-import magic.ui.MagicSound;
 import magic.ui.ScreenController;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
@@ -67,10 +63,6 @@ public class PreferencesDialog
     private static final String _S5 = "Look & Feel";
     private static final String _S6 = "Audio";
     private static final String _S7 = "Network";
-    private static final String _S8 = "Enable UI sound";
-    private static final String _S9 = "Enables or disables sound effects used by the user interface in general. For example, this affects whether a sound is played when the missing images alert is displayed.";
-    private static final String _S10 = "Enable game-play sound";
-    private static final String _S11 = "Enables or disables sound effects during a game, such as end of turn, stack resolution, combat damage and win/lose sounds.";
     private static final String _S12 = "Proxy:";
     private static final String _S13 = "URL:";
     private static final String _S14 = "Port:";
@@ -132,7 +124,6 @@ public class PreferencesDialog
     private final JSpinner proxyPortSpinner = new JSpinner(new SpinnerNumberModel());
     private JComboBox<String> themeComboBox;
     private JComboBox<String> highlightComboBox;
-    private JCheckBox soundCheckBox;
     private JCheckBox touchscreenCheckBox;
     private JCheckBox highQualityCheckBox;
     private JCheckBox skipSingleCheckBox;
@@ -146,13 +137,12 @@ public class PreferencesDialog
     private JCheckBox missingCardDataCheckbox;
     private JCheckBox customBackgroundCheckBox;
     private JCheckBox splitViewDeckEditorCheckBox;
-    private JCheckBox uiSoundCheckBox;
     private JCheckBox hideAIPromptCheckBox;
     private ColorButton rollOverColorButton;
-    private JSlider uiVolumeSlider;
-    private final TranslationPanel langPanel = new TranslationPanel();
+    private final TranslationPanel langPanel;
     private final AnimationsPanel animationsPanel;
     private final GameplayImagesPanel gameImagesPanel;
+    private final AudioPanel audioPanel;
     private JCheckBox textModeCheckbox;
 
     private final JLabel hintLabel = new JLabel();
@@ -175,8 +165,10 @@ public class PreferencesDialog
 
         this.frame = frame;
 
+        langPanel = new TranslationPanel();
         animationsPanel = new AnimationsPanel(this);
         gameImagesPanel = new GameplayImagesPanel(this);
+        audioPanel = new AudioPanel(this);
 
         hintLabel.setVerticalAlignment(SwingConstants.TOP);
         hintLabel.setFont(new Font("SansSerif", Font.ITALIC, 12));
@@ -216,51 +208,15 @@ public class PreferencesDialog
         if (isGamePlayMode) {
             tabbedPane.addTab(UiString.get(_S4), getGameplaySettingsTabbedPane());
             tabbedPane.addTab(UiString.get(_S5), getLookAndFeelSettingsPanel());
-            tabbedPane.addTab(UiString.get(_S6), getAudioSettingsPanel());
+            tabbedPane.addTab(UiString.get(_S6), audioPanel);
         } else {
             tabbedPane.addTab(UiString.get(_S3), getGeneralTabPanel());
             tabbedPane.addTab(UiString.get(_S4), getGameplaySettingsTabbedPane());
             tabbedPane.addTab(UiString.get(_S5), getLookAndFeelSettingsPanel());
-            tabbedPane.addTab(UiString.get(_S6), getAudioSettingsPanel());
+            tabbedPane.addTab(UiString.get(_S6), audioPanel);
             tabbedPane.addTab(UiString.get(_S7), getNetworkSettingsPanel());
         }
         return tabbedPane;
-    }
-
-    private JPanel getAudioSettingsPanel() {
-
-        uiVolumeSlider = new JSlider(0, 100, config.getUiSoundVolume());
-        uiVolumeSlider.setEnabled(config.isUiSound());
-        uiVolumeSlider.addChangeListener(new ChangeListener() {
-            @Override
-            public void stateChanged(ChangeEvent e) {
-                if (uiVolumeSlider.getValueIsAdjusting() == false) {
-                    MagicSound.ALERT.play(uiVolumeSlider.getValue());
-                }
-            }
-        });
-
-        uiSoundCheckBox = new JCheckBox(UiString.get(_S8), config.isUiSound());
-        uiSoundCheckBox.setToolTipText(UiString.get(_S9));
-        uiSoundCheckBox.setFocusable(false);
-        uiSoundCheckBox.addMouseListener(this);
-        uiSoundCheckBox.addChangeListener(new ChangeListener() {
-            @Override
-            public void stateChanged(ChangeEvent e) {
-                uiVolumeSlider.setEnabled(uiSoundCheckBox.isSelected());
-            }
-        });
-
-        soundCheckBox = new JCheckBox(UiString.get(_S10), config.isSound());
-        soundCheckBox.setToolTipText(UiString.get(_S11));
-        soundCheckBox.setFocusable(false);
-        soundCheckBox.addMouseListener(this);
-
-        final JPanel panel = new JPanel(new MigLayout("flowy, gapy 14, insets 16"));
-        panel.add(uiSoundCheckBox, "w 100%");
-        panel.add(uiVolumeSlider, " w 100%");
-        panel.add(soundCheckBox);
-        return panel;
     }
 
     private JPanel getNetworkSettingsPanel() {
@@ -373,9 +329,9 @@ public class PreferencesDialog
     private void saveSettings() {
         animationsPanel.saveSettings();
         gameImagesPanel.saveSettings();
+        audioPanel.saveSettings();
         config.setTheme(themeComboBox.getItemAt(themeComboBox.getSelectedIndex()));
         config.setHighlight(highlightComboBox.getItemAt(highlightComboBox.getSelectedIndex()));
-        config.setSound(soundCheckBox.isSelected());
         config.setTouchscreen(touchscreenCheckBox.isSelected());
         config.setHighQuality(highQualityCheckBox.isSelected());
         config.setSkipSingle(skipSingleCheckBox.isSelected());
@@ -384,10 +340,8 @@ public class PreferencesDialog
         config.setMessageDelay(messageDelaySlider.getValue());
         config.setMulliganScreenActive(mulliganScreenCheckbox.isSelected());
         config.setCustomBackground(customBackgroundCheckBox.isSelected());
-        config.setIsUiSound(uiSoundCheckBox.isSelected());
         config.setHideAiActionPrompt(hideAIPromptCheckBox.isSelected());
         config.setRolloverColor(rollOverColorButton.getColor());
-        config.setUiSoundVolume(uiVolumeSlider.getValue());
 
         if (isGamePlayMode == false) {
             // General
