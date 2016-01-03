@@ -27,15 +27,15 @@ public enum MagicSound {
     REMOVE_CARD("cardTakeOutPackage1.wav"),
 
     // Game
-    WIN_GAME("win.au"),
-    LOSE_GAME("lose.au"),
+    WIN("win.au"),
+    LOSE("lose.au"),
     NEW_TURN("turn.au"),
-    RESOLVE_ACTION("resolve.au"),
-    COMBAT_DAMAGE("combat.au")
+    RESOLVE("resolve.au"),
+    COMBAT("combat.au")
     ;
 
     private static final Set<MagicSound> uiSounds = EnumSet.range(ADD_CARD, REMOVE_CARD);
-    private static final Set<MagicSound> gameSounds = EnumSet.range(WIN_GAME, COMBAT_DAMAGE);
+    private static final Set<MagicSound> gameSounds = EnumSet.range(WIN, COMBAT);
 
     private static final GeneralConfig config = GeneralConfig.getInstance();
     private static final ExecutorService executor = Executors.newSingleThreadExecutor();
@@ -69,7 +69,7 @@ public enum MagicSound {
     }
 
     /**
-     * Plays sound effect at given volume.
+     * Plays sound at given volume.
      *
      * @param volPercent : volume of sound clip between 0 and 100 percent.
      */
@@ -80,7 +80,7 @@ public enum MagicSound {
     }
     
     /**
-     * Plays sound effect at volume specified in settings.
+     * Plays sound at volume specified in settings.
      */
     public void play() {
         if (canPlay()) {
@@ -89,7 +89,7 @@ public enum MagicSound {
     }
 
     /**
-     * Convenience method that only plays sound effect if
+     * Convenience method that only plays sound  if
      * game is not running as an AI simulation.
      */
     public void play(MagicGame game) {

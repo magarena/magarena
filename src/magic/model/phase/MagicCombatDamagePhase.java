@@ -51,7 +51,7 @@ public class MagicCombatDamagePhase extends MagicPhase {
         if (game.getStep() == MagicStep.Begin) {
             game.setStep(MagicStep.ActivePlayer);
         } else {
-            MagicSound.COMBAT_DAMAGE.play(game);
+            MagicSound.COMBAT.play(game);
         }
     }
 

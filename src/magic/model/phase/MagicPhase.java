@@ -41,7 +41,7 @@ public abstract class MagicPhase {
                 // Stack can be empty at this point, for instance by a counter unless event.
                 if (!game.getStack().isEmpty()) {
                     game.doAction(new StackResolveAction());
-                    MagicSound.RESOLVE_ACTION.play(game);
+                    MagicSound.RESOLVE.play(game);
                 }
                 game.setStep(MagicStep.ActivePlayer);
                 break;

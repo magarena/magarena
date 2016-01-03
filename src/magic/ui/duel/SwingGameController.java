@@ -845,9 +845,9 @@ public class SwingGameController implements IUIGameController {
 
     private void playEndGameSoundEffect() {
         if (game.getLosingPlayer().getIndex() == 0) {
-            MagicSound.LOSE_GAME.play(game);
+            MagicSound.LOSE.play(game);
         } else {
-            MagicSound.WIN_GAME.play(game);
+            MagicSound.WIN.play(game);
         }
     }
 
