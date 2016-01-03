@@ -34,7 +34,7 @@ class AudioPanel extends JPanel {
         gameVolumeSlider.setFocusable(false);
         gameVolumeSlider.addMouseListener(aListener);
 
-        setLayout(new MigLayout("flowy, insets 16"));
+        setLayout(new MigLayout("flowy, gapy 0, insets 16"));
         add(getCaptionLabel(UiString.get(_S1)));
         add(uiVolumeSlider, "w 100%");
         add(getCaptionLabel(UiString.get(_S2)), "gaptop 16");
