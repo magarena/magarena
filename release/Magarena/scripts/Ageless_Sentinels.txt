@@ -7,7 +7,7 @@ subtype=Wall
 cost={3}{W}
 pt=4/4
 ability=Defender;\
-        Flying
+        Flying;\
+        When SN blocks, SN becomes a Bird Giant,~and SN loses defender.
 timing=main
-requires_groovy_code
 oracle=Defender\nFlying\nWhen Ageless Sentinels blocks, it becomes a Bird Giant, and it loses defender.

@@ -6,7 +6,7 @@ type=Creature
 subtype=Dragon,Wurm
 cost={4}{W}{W}{W}
 pt=5/5
-ability=Defender, trample
+ability=Defender, trample;\
+        When SN blocks, SN loses defender.
 timing=smain
-requires_groovy_code
 oracle=Defender, trample\nWhen Elder Land Wurm blocks, it loses defender.
