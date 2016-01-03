@@ -20,13 +20,13 @@ import magic.utility.MagicResources;
 
 public enum MagicSound {
 
-    // uiSounds - keep sorted and update enumset if changed.
+    // uiSounds - keep sorted and verify enumset range if changed.
     ADD_CARD("cardSlide3.wav"),
     ALERT("bong.wav"),
     BEEP("noAction.wav"),
     REMOVE_CARD("cardTakeOutPackage1.wav"),
 
-    // gameSounds - keep sorted and update enumset if changed.
+    // gameSounds - keep sorted and verify enumset range if changed.
     COMBAT("combat.au"),
     LOSE("lose.au"),
     NEW_TURN("turn.au"),
