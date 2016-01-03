@@ -2,6 +2,8 @@ package magic.ui;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.EnumSet;
+import java.util.Set;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import javax.sound.sampled.AudioInputStream;
@@ -18,17 +20,22 @@ import magic.utility.MagicResources;
 
 public enum MagicSound {
 
+    // UI
     ADD_CARD("cardSlide3.wav"),
     ALERT("bong.wav"),
     BEEP("noAction.wav"),
     REMOVE_CARD("cardTakeOutPackage1.wav"),
 
+    // Game
     WIN_GAME("win.au"),
     LOSE_GAME("lose.au"),
     NEW_TURN("turn.au"),
     RESOLVE_ACTION("resolve.au"),
     COMBAT_DAMAGE("combat.au")
     ;
+
+    private static final Set<MagicSound> uiSounds = EnumSet.range(ADD_CARD, REMOVE_CARD);
+    private static final Set<MagicSound> gameSounds = EnumSet.range(WIN_GAME, COMBAT_DAMAGE);
 
     private static final GeneralConfig config = GeneralConfig.getInstance();
     private static final ExecutorService executor = Executors.newSingleThreadExecutor();
@@ -45,34 +52,49 @@ public enum MagicSound {
         this.soundUrl = MagicResources.getSoundUrl(aFilename);
     }
 
+    private boolean isUISound() {
+        return uiSounds.contains(this);
+    }
+
+    private boolean isGameSound() {
+        return gameSounds.contains(this);
+    }
+
+    private boolean canPlay() {
+        return (isUISound() && config.isUiSound()) || (isGameSound() && config.isSound());
+    }
+
+    private int getVolume() {
+        return isUISound() ? config.getUiSoundVolume() : 100;
+    }
+
     /**
-     * Plays UI sound effect at given volume.
+     * Plays sound effect at given volume.
      *
      * @param volPercent : volume of sound clip between 0 and 100 percent.
      */
     public void play(int volume) {
-        if (config.isUiSound()) {
-            executor.submit(() -> {
-                playSound(soundUrl, volume);
-            });
+        executor.submit(() -> {
+            playSound(soundUrl, volume);
+        });
+    }
+    
+    /**
+     * Plays sound effect at volume specified in settings.
+     */
+    public void play() {
+        if (canPlay()) {
+            play(getVolume());
         }
     }
 
     /**
-     * Plays UI sound effect at volume specified in settings.
-     */
-    public void play() {
-        play(config.getUiSoundVolume());
-    }
-
-    /**
-     * Plays gameplay sound effect at volume specified in settings.
+     * Convenience method that only plays sound effect if
+     * game is not running as an AI simulation.
      */
     public void play(MagicGame game) {
-        if (game.isReal() && config.isSound()) {
-            executor.submit(() -> {
-                playSound(soundUrl, 100);
-            });
+        if (game.isReal()) {
+            play();
         }
     }
 
@@ -116,9 +138,10 @@ public enum MagicSound {
             playClip(ins, volPercent);
         } catch (Exception ex) {
             System.err.println("WARNING. Unable to play clip " + url.toExternalForm() + ", " + ex.getMessage());
-            // switch off sound for current session but restore on restart.
-            GeneralConfig.getInstance().setIsUiSound(false);
-            GeneralConfig.getInstance().setSound(false);
+            // turn off all sound.
+            config.setIsUiSound(false);
+            config.setSound(false);
+            config.save();
         }
 
     }
