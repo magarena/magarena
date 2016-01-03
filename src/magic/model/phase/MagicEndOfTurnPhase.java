@@ -29,6 +29,6 @@ public class MagicEndOfTurnPhase extends MagicPhase {
 
     @Override
     protected void executeEndOfPhase(final MagicGame game) {
-        MagicSound.NEW_TURN.play(game);
+        game.playSound(MagicSound.NEW_TURN);
     }
 }

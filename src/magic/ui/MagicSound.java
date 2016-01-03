@@ -14,7 +14,6 @@ import javax.sound.sampled.LineEvent;
 import javax.sound.sampled.LineListener;
 import javax.sound.sampled.LineUnavailableException;
 import magic.data.GeneralConfig;
-import magic.model.MagicGame;
 import magic.utility.MagicResources;
 
 public enum MagicSound {
@@ -93,17 +92,6 @@ public enum MagicSound {
             play(getVolume());
         }
     }
-
-    /**
-     * Convenience method that only plays sound if
-     * game is not running as an AI simulation.
-     */
-    public void play(MagicGame game) {
-        if (game.isReal()) {
-            play();
-        }
-    }
-
 
     public static void shutdown() {
         executor.shutdown();

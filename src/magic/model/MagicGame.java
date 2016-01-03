@@ -52,6 +52,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.SortedSet;
 import java.util.TreeSet;
+import magic.ui.MagicSound;
 
 public class MagicGame {
 
@@ -1390,5 +1391,11 @@ public class MagicGame {
     }
     public boolean isConceded() {
         return isConceded;
+    }
+
+    public void playSound(MagicSound aSound) {
+        if (isReal()) {
+            aSound.play();
+        } 
     }
 }
