@@ -11,9 +11,9 @@ public class AddTriggerAction extends MagicAction {
     private final MagicTrigger<?> trigger;
     private MagicPermanentTrigger permanentTrigger;
 
-    public AddTriggerAction(final MagicPermanent permanent,final MagicTrigger<?> trigger) {
-        this.permanent=permanent;
-        this.trigger=trigger;
+    public AddTriggerAction(final MagicPermanent aPermanent,final MagicTrigger<?> aTrigger) {
+        permanent = aPermanent;
+        trigger = aTrigger;
     }
 
     public AddTriggerAction(final MagicTrigger<?> trigger) {
@@ -22,12 +22,16 @@ public class AddTriggerAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
-        permanentTrigger=game.addTrigger(permanent,trigger);
+        if (permanent == MagicPermanent.NONE || permanent.isValid()) {
+            permanentTrigger=game.addTrigger(permanent,trigger);
+        }
     }
 
     @Override
     public void undoAction(final MagicGame game) {
-        game.removeTrigger(permanentTrigger);
+        if (permanentTrigger != null) {
+            game.removeTrigger(permanentTrigger);
+        }
     }
 
     @Override

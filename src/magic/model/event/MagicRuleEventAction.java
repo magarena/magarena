@@ -94,7 +94,7 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
-                        game.doValidAction(it, new AddTurnTriggerAction(
+                        game.doAction(new AddTurnTriggerAction(
                             it,
                             AtEndOfCombatTrigger.Destroy
                         ));
@@ -116,7 +116,7 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
-                        game.doValidAction(it, new AddTurnTriggerAction(
+                        game.doAction(new AddTurnTriggerAction(
                             it,
                             AtEndOfTurnTrigger.Destroy
                         ));
@@ -501,7 +501,7 @@ public enum MagicRuleEventAction {
                                 ));
                             }
                             if (matcher.group("dealt") == null || damage.getDealtAmount() > 0) {
-                                game.doValidAction(perm, new AddTurnTriggerAction(
+                                game.doAction(new AddTurnTriggerAction(
                                     perm,
                                     ThisLeavesBattlefieldTrigger.IfDieExileInstead
                                 ));
@@ -1396,7 +1396,7 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
-                        game.doValidAction(it, new AddTriggerAction(
+                        game.doAction(new AddTriggerAction(
                             it,
                             AtEndOfCombatTrigger.Return
                         ));
@@ -1910,7 +1910,7 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
-                        game.doValidAction(it, new AddTriggerAction(it, AtEndOfTurnTrigger.Sacrifice));
+                        game.doAction(new AddTriggerAction(it, AtEndOfTurnTrigger.Sacrifice));
                     }
                 }
             };
@@ -1928,7 +1928,7 @@ public enum MagicRuleEventAction {
                 @Override
                 public void executeEvent(final MagicGame game, final MagicEvent event) {
                     for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
-                        game.doValidAction(it, new AddTriggerAction(it, AtEndOfCombatTrigger.Sacrifice));
+                        game.doAction(new AddTriggerAction(it, AtEndOfCombatTrigger.Sacrifice));
                     }
                 }
             };
