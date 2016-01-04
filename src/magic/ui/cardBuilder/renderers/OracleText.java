@@ -73,8 +73,8 @@ public class OracleText {
     }
 
     static void drawPlaneswalkerOracleText(BufferedImage cardImage, IRenderableCard cardDef) {
-        int lines = 0;
-        int yPosOffset = 0;
+        int lines;
+        int yPosOffset;
         if (cardDef.hasText() && getPlaneswalkerAbilityCount(cardDef) == 3) {
             lines = 3;
             yPosOffset = 330;
@@ -130,7 +130,8 @@ public class OracleText {
     private static Rectangle getTextBoxSize(IRenderableCard cardDef) {
         if (cardDef.isToken()) {
             return new Rectangle(0, 0, 314, 94);
-        } else if (cardDef.isPlaneswalker()) {
+        }
+        if (cardDef.isPlaneswalker()) {
             return new Rectangle(0, 0, 282, 148);
         }
         return new Rectangle(0, 0, 314, 154);
