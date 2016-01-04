@@ -1,0 +1,8 @@
+name=10/10 colorless Eldrazi creature token
+token=Eldrazi
+image=http://magiccards.info/extras/token/battle-for-zendikar/eldrazi.jpg
+value=5
+type=Creature
+subtype=Eldrazi
+color=
+pt=10/10
