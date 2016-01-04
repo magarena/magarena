@@ -1405,6 +1405,29 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    BounceEndOfTurn(
+        "return " + ARG.PERMANENTS + " to (your hand|its owner's hand|their owner's hand|their owners' hands) at the beginning of the next end step(\\.|,)?",
+        MagicTargetHint.None,
+        MagicBounceTargetPicker.create(),
+        MagicTiming.Removal,
+        "Bounce"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return new MagicEventAction() {
+                @Override
+                public void executeEvent(final MagicGame game, final MagicEvent event) {
+                    for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                        game.doAction(new AddTriggerAction(
+                            it,
+                            AtEndOfTurnTrigger.Return
+                        ));
+                    }
+                }
+            };
+        }
+    },
     BounceLibTop(
         "put " + ARG.PERMANENTS + " on top of (its owner's library|his or her library|their owners' libraries)(\\.|,)?",
         MagicTargetHint.None,
