@@ -100,7 +100,7 @@ public class OracleText {
 
     static void drawLevellerOracleText(BufferedImage cardImage, IRenderableCard cardDef) {
         String[] abilities = getLevellerText(cardDef);
-        Rectangle textBoxBounds = new Rectangle(0, 0, 210, 49);
+        Rectangle textBoxBounds = new Rectangle(0, 0, 185, 49);
         for (int i = 0; i < 3; i++) {
             String oracleText = abilities[i];
             if (!oracleText.isEmpty()) { //Not all levels have text
