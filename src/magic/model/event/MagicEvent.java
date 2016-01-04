@@ -426,7 +426,7 @@ public class MagicEvent implements MagicCopyable {
         if (time > 1000) {
             System.err.println("WARNING. ACR:  " + choice.getDescription() + description + " time: " + time);
             if (getClass().desiredAssertionStatus()) {
-                throw new GameException("getArtificialChoiceResults took more than 1s", game);
+                throw new GameException("ACR:  " + choice.getDescription() + description + " time: " + time, game);
             }
         }
         return choices;
@@ -439,7 +439,7 @@ public class MagicEvent implements MagicCopyable {
         if (time > 1000) {
             System.err.println("WARNING. RCR:  " + choice.getDescription() + description + " time: " + time);
             if (getClass().desiredAssertionStatus()) {
-                throw new GameException("getSimulationChoiceResult took more than 1s", game);
+                throw new GameException("RCR:  " + choice.getDescription() + description + " time: " + time, game);
             }
         }
         return res;
