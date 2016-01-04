@@ -4,8 +4,8 @@ value=3.542
 rarity=R
 type=Enchantment
 cost={1}{U}{U}
-ability=At the beginning of each player's upkeep, that player sacrifices a land.;\
+ability=When you cast SN, you may sacrifice a land. If you don't, counter SN.;\
+        At the beginning of each player's upkeep, that player sacrifices a land.;\
         When there are no lands on the battlefield, sacrifice SN.
 timing=enchantment
-requires_groovy_code
 oracle=When you cast Mana Vortex, counter it unless you sacrifice a land.\nAt the beginning of each player's upkeep, that player sacrifices a land.\nWhen there are no lands on the battlefield, sacrifice Mana Vortex.

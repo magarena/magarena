@@ -6,8 +6,8 @@ type=Legendary,Creature
 subtype=Eldrazi
 cost={10}
 pt=12/12
-ability=Annihilator 4;\
+ability=When you cast SN, draw four cards.;\
+        Annihilator 4;\
         When SN is put into a graveyard from anywhere, its owner shuffles his or her graveyard into his or her library.
 timing=main
-requires_groovy_code
 oracle=When you cast Kozilek, Butcher of Truth, draw four cards.\nAnnihilator 4\nWhen Kozilek is put into a graveyard from anywhere, its owner shuffles his or her graveyard into his or her library.

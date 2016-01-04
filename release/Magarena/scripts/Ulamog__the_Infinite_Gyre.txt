@@ -7,9 +7,9 @@ type=Legendary,Creature
 subtype=Eldrazi
 cost={11}
 pt=10/10
-ability=Indestructible;\
+ability=When you cast SN, destroy target permanent.;\
+        Indestructible;\
         Annihilator 4;\
         When SN is put into a graveyard from anywhere, its owner shuffles his or her graveyard into his or her library.
 timing=main
-requires_groovy_code
 oracle=When you cast Ulamog, the Infinite Gyre, destroy target permanent.\nIndestructible\nAnnihilator 4\nWhen Ulamog is put into a graveyard from anywhere, its owner shuffles his or her graveyard into his or her library.
