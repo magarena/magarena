@@ -7,7 +7,7 @@ def DelayedTrigger = {
             return new MagicEvent(
                 game.createDelayedSource(staleSource, stalePlayer),
                 this,
-                "PN puts 1/1 white Spirit creature token with flying onto the battlefield."
+                "PN puts a 1/1 white Spirit creature token with flying onto the battlefield."
             );
         }
         @Override
