@@ -525,6 +525,11 @@ public enum MagicConditionParser {
             return MagicCondition.WAS_KICKED;
         }
     },
+    ControlledSinceLastTurn("you've controlled SN continuously since the beginning of your most recent turn") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.CONTROL_SINCE_LAST_TURN;
+        }
+    },
     ;
 
     private final Pattern pattern;

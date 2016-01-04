@@ -849,4 +849,11 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
             return source.getGame().getDefendingPlayer().getPoison() > 0;
         }
     };
+
+    public static MagicCondition CONTROL_SINCE_LAST_TURN = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicPermanent permanent = (MagicPermanent)source;
+            return permanent.hasState(MagicPermanentState.Summoned) == false;
+        }
+    };
 }
