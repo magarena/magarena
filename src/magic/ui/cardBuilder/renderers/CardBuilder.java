@@ -97,7 +97,8 @@ public class CardBuilder {
     }
 
     private static BufferedImage makeDevoidCard(IRenderableCard cardDef) {
-        BufferedImage cardImage = Frame.getDevoidFrameType(cardDef);
+        BufferedImage cardImage = Frame.getColorlessFrameType(cardDef);
+        Frame.drawOverlay(cardImage,Frame.getDevoidFrameType(cardDef));
         PTFrame.drawPTPanel(cardImage, cardDef);
         ImageFrame.drawImage(cardImage, cardDef);
         OracleText.drawOracleText(cardImage, cardDef);

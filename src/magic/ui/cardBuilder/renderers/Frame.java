@@ -806,27 +806,23 @@ public class Frame {
     }
 
     static BufferedImage getDevoidFrameType(IRenderableCard cardDef) {
-        boolean land = cardDef.hasType(MagicType.Land);
-        boolean artifact = cardDef.hasType(MagicType.Artifact);
+        boolean land = cardDef.isLand();
+        boolean artifact = cardDef.isArtifact();
         Set<MagicColor> landColor = new HashSet<>();
         if (land) {
             baseFrame = ResourceManager.newFrame(ResourceManager.colorlessDevoidFrame);
             //Land Colors
             landColor = getLandColors(cardDef);
         } else if (artifact) {
-            baseFrame = ResourceManager.newFrame(ResourceManager.artifactDevoidFrame);
+            baseFrame = ResourceManager.newFrame(ResourceManager.colorlessDevoidFrame);
         }
         //Multi
         if (cardDef.isMulti() || landColor.size() > 1) {
             if (cardDef.getNumColors() > 2 || land && landColor.size() > 2) {
-                if (artifact || land) {
-                    return getBlendedFrame(
-                        baseFrame,
-                        ResourceManager.newFrame(ResourceManager.gainColorBlend),
-                        ResourceManager.newFrame(ResourceManager.multiDevoidFrame));
-                } else {
-                    return ResourceManager.newFrame(ResourceManager.multiDevoidFrame);
-                }
+                return artifact || land ? getBlendedFrame(
+                    baseFrame,
+                    ResourceManager.newFrame(ResourceManager.gainColorBlend),
+                    ResourceManager.newFrame(ResourceManager.multiDevoidFrame)) : ResourceManager.newFrame(ResourceManager.multiDevoidFrame);
             } else {
                 //Hybrid
                 List<BufferedImage> colorFrames = new ArrayList<>();
@@ -864,27 +860,19 @@ public class Frame {
                         ResourceManager.newFrame(colorFrames.get(1))
                     ));
                 //Color piping for Dual-Color
-                if (artifact || land) {
-                    return getBlendedFrame(
-                        baseFrame,
-                        ResourceManager.newFrame(ResourceManager.gainColorBlend),
-                        ResourceManager.newFrame(goldBanner));
-                } else {
-                    return getBlendedFrame(
-                        ResourceManager.newFrame(ResourceManager.multiDevoidFrame),
-                        ResourceManager.newFrame(ResourceManager.gainColorBlend),
-                        ResourceManager.newFrame(goldBanner));
-                }
+                return artifact || land ? getBlendedFrame(
+                    baseFrame,
+                    ResourceManager.newFrame(ResourceManager.gainColorBlend),
+                    ResourceManager.newFrame(goldBanner)) : getBlendedFrame(
+                    ResourceManager.newFrame(ResourceManager.multiDevoidFrame),
+                    ResourceManager.newFrame(ResourceManager.gainColorBlend),
+                    ResourceManager.newFrame(goldBanner));
             }
         }
         //Mono
         for (MagicColor color : MagicColor.values()) {
             if (cardDef.hasColor(color) || landColor.contains(color)) {
-                if (artifact) {
-                    return getBlendFrame(baseFrame, color);
-                } else {
-                    return getDevoidFrame(color);
-                }
+                return artifact ? getBlendFrame(baseFrame, color) : getDevoidFrame(color);
             }
         }
         //Colorless
@@ -1193,5 +1181,21 @@ public class Frame {
             return baseFrame;
         }
         return transform ? ResourceManager.newFrame(ResourceManager.colorlessTransform) : ResourceManager.newFrame(ResourceManager.colorlessHidden);
+    }
+
+    public static BufferedImage getColorlessFrameType(IRenderableCard cardDef) {
+        if (cardDef.isLand()) {
+            return ResourceManager.newFrame(ResourceManager.landFrame);
+        } else if (cardDef.isArtifact()) {
+            return ResourceManager.newFrame(ResourceManager.artifactFrame);
+        } else {
+            return ResourceManager.newFrame(ResourceManager.colorlessFrame);
+        }
+    }
+
+    public static void drawOverlay(BufferedImage cardImage, BufferedImage overlay) {
+        Graphics2D g2d = cardImage.createGraphics();
+        g2d.drawImage(overlay, 0, 0, null);
+        g2d.dispose();
     }
 }
