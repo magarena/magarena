@@ -1,4 +1,3 @@
-
 [
     new MagicPlaneswalkerActivation(2) {
         @Override
@@ -50,12 +49,12 @@
         }
         @Override
         public void executeEvent(final MagicGame outerGame, final MagicEvent outerEvent) {
-            final MagicPlayer you = outerEvent.getPlayer();
+            final long pId = outerEvent.getPlayer().getId();
             outerGame.doAction(new AddTriggerAction(
                 new OtherSpellIsCastTrigger() {
                     @Override
                     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
-                        return cardOnStack.getController().getId() == you.getId() ?
+                        return cardOnStack.getController().getId() == pId ?
                             new MagicEvent(
                                 cardOnStack,
                                 NEG_TARGET_PERMANENT,

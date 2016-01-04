@@ -1,3 +1,19 @@
+def AddLand3 = {
+    final int pIdx ->
+    return new MagicStatic(MagicLayer.Game, MagicStatic.UntilEOT) {
+        @Override
+        public void modGame(final MagicPermanent source, final MagicGame game) {
+            game.incMaxLands();
+            game.incMaxLands();
+            game.incMaxLands();
+        }
+        @Override
+        public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
+            return game.getTurnPlayer().getIndex() == pIdx;
+        }
+    };
+}
+
 [
     new MagicSpellCardEvent() {
         @Override
@@ -10,21 +26,8 @@
         }
 
         @Override
-        public void executeEvent(final MagicGame outerGame, final MagicEvent outerEvent) {
-            outerGame.doAction(new AddStaticAction(
-                new MagicStatic(MagicLayer.Game, MagicStatic.UntilEOT) {
-                    @Override
-                    public void modGame(final MagicPermanent source, final MagicGame game) {
-                        game.incMaxLands();
-                        game.incMaxLands();
-                        game.incMaxLands();
-                    }
-                    @Override
-                    public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-                        return game.getTurnPlayer().getId() == outerEvent.getPlayer().getId();
-                    }
-                }
-            ));
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.doAction(new AddStaticAction(AddLand3(event.getPlayer().getIndex())));
         }
     }
 ]

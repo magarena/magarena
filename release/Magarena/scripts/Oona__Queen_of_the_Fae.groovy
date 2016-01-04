@@ -23,6 +23,7 @@
 
         @Override
         public void executeEvent(final MagicGame outerGame, final MagicEvent outerEvent) {
+            final int X = outerEvent.getRefInt();
             outerEvent.processTargetPlayer(outerGame, {
                 outerGame.addEvent(new MagicEvent(
                     outerEvent.getSource(),
@@ -32,8 +33,7 @@
                         final MagicGame game, final MagicEvent event ->
                         final MagicColor color = event.getChosenColor();
                         final MagicPlayer player = event.getRefPlayer();
-                        final int x = outerEvent.getRefInt();
-                        for (final MagicCard card : player.getLibrary().getCardsFromTop(x)) {
+                        for (final MagicCard card : player.getLibrary().getCardsFromTop(X)) {
                             game.doAction(new ShiftCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Exile));
                             if (card.hasColor(color)) {
                                 game.doAction(new PlayTokenAction(

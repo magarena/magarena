@@ -45,7 +45,8 @@
             );
         }
         @Override
-        public void executeEvent(final MagicGame outerGame, final MagicEvent event) {
+        public void executeEvent(final MagicGame outerGame, final MagicEvent outerEvent) {
+            final long pId = outerEvent.getPlayer().getId();
             outerGame.doAction(new AddStaticAction(
                 new MagicStatic(MagicLayer.Ability, ANY) {
                     @Override
@@ -54,7 +55,7 @@
                     }
                     @Override
                     public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-                        return target.getController().getId() == event.getPlayer().getId() && (
+                        return target.getController().getId() == pId && (
                             target.isArtifact() ||
                             target.isCreature() ||
                             target.isEnchantment() ||

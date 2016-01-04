@@ -54,12 +54,12 @@
         }
         @Override
         public void executeEvent(final MagicGame outerGame, final MagicEvent outerEvent) {
-            final MagicPlayer you = outerEvent.getPlayer();
+            final long pId = outerEvent.getPlayer().getId();
             outerGame.doAction(new AddTriggerAction(
                 new OtherSpellIsCastTrigger() {
                     @Override
                     public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicCardOnStack cardOnStack) {
-                        return (cardOnStack.getController().getId() == you.getId() && cardOnStack.hasType(MagicType.Creature)) ?
+                        return (cardOnStack.getController().getId() == pId && cardOnStack.hasType(MagicType.Creature)) ?
                             new MagicEvent(
                                 cardOnStack,
                                 new MagicMayChoice(),
