@@ -1,6 +1,7 @@
 Ayli, Eternal Pilgrim
 Call the Gatewatch
 Chandra, Flamecaller
+Cinder Barrens
 Comparative Analysis
 Crumbling Vestige
 Crush of Tentacles
@@ -16,8 +17,8 @@ Flaying Tendrils
 General Tazri
 Gladehart Cavalry
 Goblin Dark-Dwellers
-Holdout Settlement
 Hissing Quagmire
+Holdout Settlement
 Immolating Glare
 Joraga Auxiliary
 Jori En, Ruin Diver
@@ -25,13 +26,15 @@ Kalitas, Traitor of Ghet
 Kozilek's Return
 Kozilek, the Great Distortion
 Linvala, the Preserver
+Meandering River
 Mindmelter
 Mirrorpool
 Munda's Vanguard
-Munda's Vanguard
 Needle Spires
 Nissa, Voice of Zendikar
+Oath of Gideon
 Oath of Jace
+Oath of Nissa
 Prophet of Distortion
 Reckless Bushwhacker
 Reflector Mage
@@ -45,9 +48,13 @@ Spatial Contortion
 Sphinx of the Final Word
 Stone Haven Outfitter
 Stoneforge Masterwork
+Submerged Boneyard
+Timber Gorge
+Tranquil Expanse
 Tyrant of Valakut
 Unknown Shores
 Vile Redeemer
 Walker of the Wastes
+Wandering Fumarole
 Wastes
 World Breaker
