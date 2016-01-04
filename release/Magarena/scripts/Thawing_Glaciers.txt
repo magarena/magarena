@@ -3,7 +3,8 @@ image=http://magiccards.info/scans/en/vma/318.jpg
 value=4.000
 rarity=R
 type=Land
-ability=SN enters the battlefield tapped.
+ability=SN enters the battlefield tapped.;\
+        {1}, {T}: Search your library for a basic land card, put that card onto the battlefield tapped, then shuffle your library.~\
+        Return SN to its owner's hand at the beginning of the next end step.
 timing=land
-requires_groovy_code
 oracle=Thawing Glaciers enters the battlefield tapped.\n{1}, {T}: Search your library for a basic land card, put that card onto the battlefield tapped, then shuffle your library. Return Thawing Glaciers to its owner's hand at the beginning of the next cleanup step.
