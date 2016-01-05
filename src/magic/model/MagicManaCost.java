@@ -389,7 +389,7 @@ public class MagicManaCost {
         } else if (amounts[idx] == 0 && reducedAmounts[idx] < 0) {
             return this;
         } else {
-            return MagicManaCost.create(getCanonicalText(reducedAmounts, 0));
+            return MagicManaCost.create(getCanonicalText(reducedAmounts, XCount));
         }
     }
 }
