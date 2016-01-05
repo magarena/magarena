@@ -263,9 +263,7 @@ public class CardTable extends TexturedPanel implements ListSelectionListener {
     private static class ManaCostCellRenderer extends DefaultTableCellRenderer {
 
         private MagicManaCost getManaCost(MagicCardDefinition card, Object value) {
-            return card.isLand() || !card.isValid() || card.isHidden() && card.isDoubleFaced() || card.isToken()
-                ? null
-                : (MagicManaCost) value;
+            return card.showCostInExplorer() ? (MagicManaCost) value : null;
         }
 
         @Override

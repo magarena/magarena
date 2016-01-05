@@ -1130,4 +1130,8 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
             return true;
         }
     }
+
+    public boolean showCostInExplorer() {
+        return !(isLand() || !isValid() || isToken() || (isHidden() && isDoubleFaced()));
+    }
 }
