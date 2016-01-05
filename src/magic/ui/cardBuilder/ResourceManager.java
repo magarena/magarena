@@ -154,6 +154,7 @@ public class ResourceManager {
     public static final BufferedImage redDevoidFrame = getFrame("devoid/rcard.png");
     public static final BufferedImage greenDevoidFrame = getFrame("devoid/gcard.png");
     public static final BufferedImage colorlessDevoidFrame = getFrame("devoid/ccard.png");
+    public static final BufferedImage artifactDevoidFrame = getFrame("devoid/acard.png");
     public static final BufferedImage multiDevoidFrame = getFrame("devoid/mcard.png");
     public static final BufferedImage artifactSymbol = getImage("artifactSymbol.png");
     public static final BufferedImage creatureSymbol = getImage("creatureSymbol.png");

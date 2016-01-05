@@ -21,9 +21,8 @@ import magic.ui.cardBuilder.ResourceManager;
 
 public class Frame {
 
-    private static BufferedImage baseFrame;
-
     static BufferedImage getBasicFrameType(IRenderableCard cardDef) {
+        BufferedImage baseFrame = ResourceManager.newFrame(ResourceManager.colorlessFrame);
         boolean land = cardDef.hasType(MagicType.Land);
         boolean artifact = cardDef.hasType(MagicType.Artifact);
         boolean enchantmentPermanent = cardDef.hasType(MagicType.Enchantment) &&
@@ -124,10 +123,7 @@ public class Frame {
             }
         }
         //Colorless
-        if (land || artifact) {
-            return baseFrame;
-        }
-        return ResourceManager.newFrame(ResourceManager.colorlessFrame);
+        return baseFrame;
     }
 
     static BufferedImage getTokenFrameType(IRenderableCard cardDef) {
@@ -139,7 +135,7 @@ public class Frame {
         if (land) {
             landColor = getLandColors(cardDef);
         }
-        baseFrame = getBaseTokenFrame(cardDef.getTypes(), hasText);
+        BufferedImage baseFrame = getBaseTokenFrame(cardDef.getTypes(), hasText);
         boolean hybrid = cardDef.isHybrid() || cardDef.getNumColors() == 2;
         //Multi
         if (cardDef.isMulti() || landColor.size() > 1) {
@@ -261,29 +257,14 @@ public class Frame {
         for (MagicColor color : MagicColor.values()) {
             if (cardDef.hasColor(color) || landColor.contains(color)) {
                 if (artifact || land) {
-                    if (hasText) {
-                        return getTokenBlendFrameText(baseFrame, color);
-                    } else {
-                        return getTokenBlendFrame(baseFrame, color);
-                    }
+                    return hasText ? getTokenBlendFrameText(baseFrame, color) : getTokenBlendFrame(baseFrame, color);
                 } else {
-                    if (hasText) {
-                        return getTokenFrameText(color);
-                    } else {
-                        return getTokenFrame(color);
-                    }
+                    return hasText ? getTokenFrameText(color) : getTokenFrame(color);
                 }
             }
         }
         //Colorless
-        if (land || artifact) {
-            return baseFrame;
-        }
-        if (hasText) {
-            return ResourceManager.newFrame(ResourceManager.colorlessTokenFrameText);
-        } else {
-            return ResourceManager.newFrame(ResourceManager.colorlessTokenFrame);
-        }
+        return baseFrame;
     }
 
     private static BufferedImage getBannerFrame(BufferedImage frame, BufferedImage banner) {
@@ -305,24 +286,13 @@ public class Frame {
     }
 
     private static BufferedImage getBaseTokenFrame(Collection<MagicType> types, boolean hasText) {
-        if (types.contains(MagicType.Land)) {
-            if (hasText) {
-                return ResourceManager.newFrame(ResourceManager.colorlessTokenFrameText);
-            } else {
-                return ResourceManager.newFrame(ResourceManager.colorlessTokenFrame);
-            }
-        }
         if (types.contains(MagicType.Artifact)) {
-            if (hasText) {
-                return ResourceManager.newFrame(ResourceManager.artifactTokenFrameText);
-            } else {
-                return ResourceManager.newFrame(ResourceManager.artifactTokenFrame);
-            }
+            return hasText ? ResourceManager.newFrame(ResourceManager.artifactTokenFrameText) : ResourceManager.newFrame(ResourceManager.artifactTokenFrame);
         }
-        return baseFrame;
+        return hasText ? ResourceManager.newFrame(ResourceManager.colorlessTokenFrameText) : ResourceManager.newFrame(ResourceManager.colorlessTokenFrame);
     }
 
-    static BufferedImage getBlendedFrame(BufferedImage baseFrame, BufferedImage blend, BufferedImage colorFrame) {
+    static BufferedImage getBlendedFrame(BufferedImage bottomFrame, BufferedImage blend, BufferedImage colorFrame) {
         //create overlay
         AlphaComposite ac = AlphaComposite.getInstance(AlphaComposite.SRC_OUT);
         Graphics2D graphics2D = blend.createGraphics();
@@ -330,11 +300,11 @@ public class Frame {
         graphics2D.drawImage(colorFrame, null, 0, 0);
         graphics2D.dispose();
 
-        //draw overlay on top of baseFrame
-        Graphics2D graphics2D1 = baseFrame.createGraphics();
+        //draw overlay on top of bottomFrame
+        Graphics2D graphics2D1 = bottomFrame.createGraphics();
         graphics2D1.drawImage(blend, null, 0, 0);
         graphics2D1.dispose();
-        return ResourceManager.newFrame(baseFrame);
+        return ResourceManager.newFrame(bottomFrame);
     }
 
     private static BufferedImage getBlendFrame(BufferedImage frame, MagicColor color) {
@@ -430,7 +400,7 @@ public class Frame {
             case Green:
                 return ResourceManager.newFrame(ResourceManager.greenNyx);
             default:
-                return null;
+                return ResourceManager.newFrame(ResourceManager.colorlessNyx);
         }
     }
 
@@ -453,7 +423,7 @@ public class Frame {
         });
         //Check oracle for up to two basic land types
         String oracle = cardDef.getText();
-        Set<MagicColor> basicLandCount = new HashSet<>();
+        Collection<MagicColor> basicLandCount = new HashSet<>();
         if (oracle.toLowerCase().contains("search")) {
             MagicSubType.ALL_BASIC_LANDS.stream().filter(aSubType -> oracle.toLowerCase().contains(aSubType.toString().toLowerCase())).forEach(aSubType -> {
                 for (MagicColor color : MagicColor.values()) {
@@ -499,7 +469,7 @@ public class Frame {
             case Green:
                 return ResourceManager.newFrame(ResourceManager.greenLandNyx);
             default:
-                return null;
+                return ResourceManager.newFrame(ResourceManager.landNyx);
         }
     }
 
@@ -718,6 +688,7 @@ public class Frame {
         boolean land = cardDef.hasType(MagicType.Land);
         boolean artifact = cardDef.hasType(MagicType.Artifact);
         Set<MagicColor> landColor = new HashSet<>();
+        BufferedImage baseFrame = ResourceManager.newFrame(ResourceManager.colorlessLevellerFrame);
         if (land) {
             baseFrame = ResourceManager.newFrame(ResourceManager.colorlessLandLevellerFrame);
             //Land Colors
@@ -799,22 +770,19 @@ public class Frame {
             }
         }
         //Colorless
-        if (land || artifact) {
-            return baseFrame;
-        }
-        return ResourceManager.newFrame(ResourceManager.colorlessLevellerFrame);
+        return baseFrame;
     }
 
     static BufferedImage getDevoidFrameType(IRenderableCard cardDef) {
         boolean land = cardDef.isLand();
         boolean artifact = cardDef.isArtifact();
         Set<MagicColor> landColor = new HashSet<>();
+        BufferedImage baseFrame = ResourceManager.newFrame(ResourceManager.colorlessDevoidFrame);
         if (land) {
-            baseFrame = ResourceManager.newFrame(ResourceManager.colorlessDevoidFrame);
             //Land Colors
             landColor = getLandColors(cardDef);
         } else if (artifact) {
-            baseFrame = ResourceManager.newFrame(ResourceManager.colorlessDevoidFrame);
+            baseFrame = ResourceManager.newFrame(ResourceManager.artifactDevoidFrame);
         }
         //Multi
         if (cardDef.isMulti() || landColor.size() > 1) {
@@ -876,17 +844,15 @@ public class Frame {
             }
         }
         //Colorless
-        if (land || artifact) {
-            return baseFrame;
-        }
-        return ResourceManager.newFrame(ResourceManager.colorlessDevoidFrame);
+        return baseFrame;
     }
 
     static BufferedImage getPlaneswalkerFrameType(IRenderableCard cardDef) {
+        boolean land = cardDef.hasType(MagicType.Land);
+        boolean artifact = cardDef.hasType(MagicType.Artifact);
+        Set<MagicColor> landColor = new HashSet<>();
         if (OracleText.getPlaneswalkerAbilityCount(cardDef) == 3) {
-            boolean land = cardDef.hasType(MagicType.Land);
-            boolean artifact = cardDef.hasType(MagicType.Artifact);
-            Set<MagicColor> landColor = new HashSet<>();
+            BufferedImage baseFrame = ResourceManager.newFrame(ResourceManager.colorlessPlaneswalkerFrame);
             if (land) {
                 baseFrame = ResourceManager.newFrame(ResourceManager.colorlessLandLevellerFrame); // No frame for land planeswalkers
                 //Land Colors
@@ -967,11 +933,9 @@ public class Frame {
                     }
                 }
             }
-            return ResourceManager.newFrame(ResourceManager.artifactPlaneswalkerFrame);
+            return baseFrame;
         } else {
-            boolean land = cardDef.hasType(MagicType.Land);
-            boolean artifact = cardDef.hasType(MagicType.Artifact);
-            Set<MagicColor> landColor = new HashSet<>();
+            BufferedImage baseFrame = ResourceManager.newFrame(ResourceManager.colorlessPlaneswalker4);
             if (land) {
                 baseFrame = ResourceManager.newFrame(ResourceManager.colorlessLandLevellerFrame); // No frame for land planeswalkers
                 //Land Colors
@@ -1052,7 +1016,7 @@ public class Frame {
                     }
                 }
             }
-            return ResourceManager.newFrame(ResourceManager.artifactPlaneswalkerFrame);
+            return baseFrame;
         }
     }
 
@@ -1061,6 +1025,7 @@ public class Frame {
         boolean artifact = cardDef.hasType(MagicType.Artifact);
         boolean transform = !cardDef.isHidden();
         Set<MagicColor> landColor = new HashSet<>();
+        BufferedImage baseFrame = transform ? ResourceManager.newFrame(ResourceManager.colorlessTransform) : ResourceManager.newFrame(ResourceManager.colorlessHidden);
         if (land) {
             baseFrame = transform ? ResourceManager.newFrame(ResourceManager.colorlessLandTransform) : ResourceManager.newFrame(ResourceManager.colorlessLandHidden);
             //Land Colors
@@ -1177,20 +1142,17 @@ public class Frame {
             }
         }
         //Colorless
-        if (land || artifact) {
-            return baseFrame;
-        }
-        return transform ? ResourceManager.newFrame(ResourceManager.colorlessTransform) : ResourceManager.newFrame(ResourceManager.colorlessHidden);
+        return baseFrame;
     }
 
     public static BufferedImage getColorlessFrameType(IRenderableCard cardDef) {
         if (cardDef.isLand()) {
             return ResourceManager.newFrame(ResourceManager.landFrame);
-        } else if (cardDef.isArtifact()) {
-            return ResourceManager.newFrame(ResourceManager.artifactFrame);
-        } else {
-            return ResourceManager.newFrame(ResourceManager.colorlessFrame);
         }
+        if (cardDef.isArtifact()) {
+            return ResourceManager.newFrame(ResourceManager.artifactFrame);
+        }
+        return ResourceManager.newFrame(ResourceManager.colorlessFrame);
     }
 
     public static void drawOverlay(BufferedImage cardImage, BufferedImage overlay) {
