@@ -780,19 +780,17 @@ public class Frame {
             baseFrame = ResourceManager.newFrame(ResourceManager.artifactDevoidFrame);
         }
         if (cardDef.isMulti()) {
-            if (cardDef.getNumColors() > 2) {
-                return ResourceManager.newFrame(ResourceManager.multiDevoidFrame);
+            if (cardDef.isHybrid()) {
+                List<BufferedImage> colorFrames = new ArrayList<>();
+                colorFrames.addAll(getColorOrder(cardDef).stream().map(Frame::getDevoidFrame).collect(Collectors.toList()));
+                BufferedImage hybridFrame = getBlendedFrame(
+                    ResourceManager.newFrame(colorFrames.get(0)),
+                    ResourceManager.newFrame(ResourceManager.gainHybridBlend),
+                    ResourceManager.newFrame(colorFrames.get(1))
+                );
+                return hybridFrame;
             } else {
-                if (cardDef.isHybrid()) {
-                    List<BufferedImage> colorFrames = new ArrayList<>();
-                    colorFrames.addAll(getColorOrder(cardDef).stream().map(Frame::getDevoidFrame).collect(Collectors.toList()));
-                    BufferedImage hybridFrame = getBlendedFrame(
-                        ResourceManager.newFrame(colorFrames.get(0)),
-                        ResourceManager.newFrame(ResourceManager.gainHybridBlend),
-                        ResourceManager.newFrame(colorFrames.get(1))
-                    );
-                    return hybridFrame;
-                }
+                return ResourceManager.newFrame(ResourceManager.multiDevoidFrame);
             }
         }
         //Mono
