@@ -1,10 +1,9 @@
 package magic.model;
 
+import java.util.EnumSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
-import java.util.ArrayList;
-import java.util.EnumSet;
 
 public enum MagicSubType {
     //basic land subtypes
@@ -45,7 +44,7 @@ public enum MagicSubType {
 
     //planeswalker subtypes
     Ajani, Ashiok, Bolas, Chandra, Dack, Daretti, Domri, Elspeth, Freyalise, Garruk, Gideon, Jace, Karn, Kiora, Koth, Liliana,
-    Nahiri, Nissa, Nixilis, Ral, Sarkhan, Sorin, Teferi, Tezzeret, Venser, Tamiyo, Tibalt, Vraska, Xenagos,
+    Nahiri, Narset, Nissa, Nixilis, Ral, Sarkhan, Sorin, Teferi, Tezzeret, Venser, Tamiyo, Tibalt, Ugin, Vraska, Xenagos,
 
     //special handling for Assembly_Worker
     Assembly_Worker() {
