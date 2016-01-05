@@ -774,73 +774,31 @@ public class Frame {
     }
 
     static BufferedImage getDevoidFrameType(IRenderableCard cardDef) {
-        boolean land = cardDef.isLand();
         boolean artifact = cardDef.isArtifact();
-        Set<MagicColor> landColor = new HashSet<>();
         BufferedImage baseFrame = ResourceManager.newFrame(ResourceManager.colorlessDevoidFrame);
-        if (land) {
-            //Land Colors
-            landColor = getLandColors(cardDef);
-        } else if (artifact) {
+        if (artifact) {
             baseFrame = ResourceManager.newFrame(ResourceManager.artifactDevoidFrame);
         }
-        //Multi
-        if (cardDef.isMulti() || landColor.size() > 1) {
-            if (cardDef.getNumColors() > 2 || land && landColor.size() > 2) {
-                return artifact || land ? getBlendedFrame(
-                    baseFrame,
-                    ResourceManager.newFrame(ResourceManager.gainColorBlend),
-                    ResourceManager.newFrame(ResourceManager.multiDevoidFrame)) : ResourceManager.newFrame(ResourceManager.multiDevoidFrame);
+        if (cardDef.isMulti()) {
+            if (cardDef.getNumColors() > 2) {
+                return ResourceManager.newFrame(ResourceManager.multiDevoidFrame);
             } else {
-                //Hybrid
-                List<BufferedImage> colorFrames = new ArrayList<>();
-                if (land) {
-                    colorFrames.addAll(getColorOrder(landColor).stream().map(Frame::getDevoidFrame).collect(Collectors.toList()));
-                } else {
-                    colorFrames.addAll(getColorOrder(cardDef).stream().map(Frame::getDevoidFrame).collect(Collectors.toList()));
-                }
-                //A colorless Banner with color piping
-                BufferedImage colorlessBanner = getBannerFrame(
-                    ResourceManager.newFrame(ResourceManager.colorlessDevoidFrame),
-                    getBlendedFrame(
-                        ResourceManager.newFrame(colorFrames.get(0)),
-                        ResourceManager.newFrame(ResourceManager.gainHybridBlend),
-                        ResourceManager.newFrame(colorFrames.get(1)))
-                );
-                //Check for Hybrid + Return colorless banner blend
                 if (cardDef.isHybrid()) {
-                    return colorlessBanner;
-                }
-                //Check dual color land + Return colorless banner blend
-                if (land && landColor.size() == 2) {
-                    return getBlendedFrame(
-                        baseFrame,
-                        ResourceManager.newFrame(ResourceManager.gainColorBlend),
-                        ResourceManager.newFrame(colorlessBanner)
-                    );
-                }
-                //Create Gold Banner blend
-                BufferedImage goldBanner = getBannerFrame(
-                    ResourceManager.newFrame(ResourceManager.multiDevoidFrame),
-                    getBlendedFrame(
+                    List<BufferedImage> colorFrames = new ArrayList<>();
+                    colorFrames.addAll(getColorOrder(cardDef).stream().map(Frame::getDevoidFrame).collect(Collectors.toList()));
+                    BufferedImage hybridFrame = getBlendedFrame(
                         ResourceManager.newFrame(colorFrames.get(0)),
                         ResourceManager.newFrame(ResourceManager.gainHybridBlend),
                         ResourceManager.newFrame(colorFrames.get(1))
-                    ));
-                //Color piping for Dual-Color
-                return artifact || land ? getBlendedFrame(
-                    baseFrame,
-                    ResourceManager.newFrame(ResourceManager.gainColorBlend),
-                    ResourceManager.newFrame(goldBanner)) : getBlendedFrame(
-                    ResourceManager.newFrame(ResourceManager.multiDevoidFrame),
-                    ResourceManager.newFrame(ResourceManager.gainColorBlend),
-                    ResourceManager.newFrame(goldBanner));
+                    );
+                    return hybridFrame;
+                }
             }
         }
         //Mono
         for (MagicColor color : MagicColor.values()) {
-            if (cardDef.hasColor(color) || landColor.contains(color)) {
-                return artifact ? getBlendFrame(baseFrame, color) : getDevoidFrame(color);
+            if (cardDef.hasColor(color)) {
+                return getDevoidFrame(color);
             }
         }
         //Colorless
@@ -1147,7 +1105,7 @@ public class Frame {
 
     public static BufferedImage getColorlessFrameType(IRenderableCard cardDef) {
         if (cardDef.isLand()) {
-            return ResourceManager.newFrame(ResourceManager.landFrame);
+            return getBasicFrameType(cardDef);
         }
         if (cardDef.isArtifact()) {
             return ResourceManager.newFrame(ResourceManager.artifactFrame);
