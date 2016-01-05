@@ -3,7 +3,7 @@
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
             return [
-                new MagicPayManaCostEvent(source,"{1}{U}{U}{R}")
+                MagicPayManaCostEvent.Cast(source,"{1}{U}{U}{R}")
             ];
         }
         @Override
