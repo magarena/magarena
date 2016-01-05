@@ -221,12 +221,12 @@ public enum MagicCostEvent {
     },
     DamageYou("SN deals " + ARG.NUMBER + " damage to you") {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
-            return MagicRuleEventAction.create(arg.group() + ".").getEvent(source);
+            return MagicRuleEventAction.create(arg.group()).getEvent(source);
         }
     },
     DoesntUntap("SN doesn't untap during your next untap step") {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
-            return MagicRuleEventAction.create(arg.group() + ".").getEvent(source);
+            return MagicRuleEventAction.create(arg.group()).getEvent(source);
         }
         @Override
         public boolean isIndependent() {
