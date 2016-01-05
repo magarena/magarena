@@ -31,7 +31,7 @@ public class MagicSurgeActivation extends MagicHandCastActivation {
 
     public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
         return Arrays.asList(
-            new MagicPayManaCostEvent(
+            MagicPayManaCostEvent.Cast(
                 source,
                 cost
             ),
