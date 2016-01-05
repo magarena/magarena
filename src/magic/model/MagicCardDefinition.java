@@ -491,47 +491,28 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
 
     public String getTypeString() {
         final StringBuilder sb = new StringBuilder();
-        if (isLand()) {
-            sb.append(MagicType.Land);
+        if (isEnchantment()) {
+            sb.append(MagicType.Enchantment).append(" ");
         }
         if (isArtifact()) {
-            if (sb.length() > 0) {
-                sb.append(" ");
-            }
-            sb.append(MagicType.Artifact);
+            sb.append(MagicType.Artifact).append(" ");
+        }
+        if (isLand()) {
+            sb.append(MagicType.Land).append(" ");
         }
         if (isCreature()) {
-            if (sb.length() > 0) {
-                sb.append(" ");
-            }
-            sb.append(MagicType.Creature);
-        }
-        if (isEnchantment()) {
-            if (sb.length() > 0) {
-                sb.append(" ");
-            }
-            sb.append(MagicType.Enchantment);
+            sb.append(MagicType.Creature).append(" ");
         }
         if (isInstant()) {
-            if (sb.length() > 0) {
-                sb.append(" ");
-            }
-            sb.append(MagicType.Instant);
+            sb.append(MagicType.Instant).append(" ");
         }
         if (isSorcery()) {
-            if (sb.length() > 0) {
-                sb.append(" ");
-            }
-            sb.append(MagicType.Sorcery);
+            sb.append(MagicType.Sorcery).append(" ");
         }
         if (isPlaneswalker()) {
-            if (sb.length() > 0) {
-                sb.append(" ");
-            }
-            sb.append(MagicType.Planeswalker);
+            sb.append(MagicType.Planeswalker).append(" ");
         }
-
-        return sb.toString();
+        return sb.toString().trim();
     }
 
     public boolean usesStack() {
