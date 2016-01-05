@@ -8,9 +8,14 @@ import java.awt.Image;
 import java.awt.Point;
 import java.awt.RenderingHints;
 import java.awt.Shape;
+import java.awt.font.TextAttribute;
+import java.awt.font.TextLayout;
 import java.awt.geom.Ellipse2D;
 import java.awt.image.BufferedImage;
+import java.text.AttributedString;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import javax.swing.ImageIcon;
 
 import magic.data.MagicIcon;
@@ -58,27 +63,34 @@ public class TitleFrame {
     }
 
     static void drawCardName(BufferedImage cardImage, IRenderableCard cardDef) {
-        String cardName = cardDef.getName();
-        if (!cardName.isEmpty()) {
+        String plainName = cardDef.getName();
+        if (!plainName.isEmpty()) {
+            AttributedString cardName = new AttributedString(plainName);
             Graphics2D g2d = cardImage.createGraphics();
             g2d.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
             g2d.setRenderingHint(RenderingHints.KEY_FRACTIONALMETRICS, RenderingHints.VALUE_FRACTIONALMETRICS_ON);
             if (cardDef.isToken()) {
                 g2d.setColor(Color.getHSBColor(54, 45, 100));
-                g2d.setFont(cardNameTokenFont);
+                cardName.addAttribute(TextAttribute.FONT,cardNameTokenFont);
             } else {
                 g2d.setColor(Color.BLACK);
-                g2d.setFont(cardNameFont);
+                cardName.addAttribute(TextAttribute.FONT,cardNameFont);
+                Pattern pattern = Pattern.compile("([KQR])[yjgpq]");
+                Matcher matcher = pattern.matcher(plainName);
+                if (matcher.find()){
+                    int replace = plainName.indexOf(matcher.group());
+                    cardName.addAttribute(TextAttribute.FONT,cardNameTokenFont,replace, replace+1);
+                }
             }
-            FontMetrics metrics = g2d.getFontMetrics(); //to allow calculation of Ascent + length
+            TextLayout metrics = new TextLayout(cardName.getIterator(), g2d.getFontRenderContext()); //to allow calculation of Ascent + length
             int xPos = 30;
             int yPos = 28;
             if (cardDef.isToken()) {
-                xPos = cardImage.getWidth() / 2 - metrics.stringWidth(cardName) / 2;
+                xPos = (int) (cardImage.getWidth() / 2 - metrics.getBounds().getWidth() / 2);
             } else if (cardDef.isPlaneswalker()) {
                 yPos = 20;
             }
-            g2d.drawString(cardName, xPos, yPos + metrics.getAscent());
+            g2d.drawString(cardName.getIterator(), xPos, yPos + metrics.getAscent());
             g2d.dispose();
         }
     }
