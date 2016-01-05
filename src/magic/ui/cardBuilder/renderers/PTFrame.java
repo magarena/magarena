@@ -129,7 +129,7 @@ public class PTFrame {
 
     static void drawLevellerPTPanels(BufferedImage cardImage, IRenderableCard cardDef) {
         int xPosImage = 284;
-        int xPosText = xPosImage+13;
+        int xPosText = xPosImage + 13;
         int width = 60;
         int height = 28;
         String[] ptText = getLevellerPTText(cardDef);
@@ -187,7 +187,7 @@ public class PTFrame {
         ArrayList<String> text = new ArrayList<>(2);
         for (String ability : abilities) {
             if (ability.contains("LEVEL")) {
-                text.add(ability.replace("LEVEL ","LEVEL\n"));
+                text.add(ability.replace("LEVEL ", "LEVEL\n"));
             }
         }
         return text.toArray(new String[2]);
@@ -313,14 +313,13 @@ public class PTFrame {
 
     static void drawTransformSymbol(BufferedImage cardImage, IRenderableCard cardDef) {
         Graphics2D g2d = cardImage.createGraphics();
+        BufferedImage typeSymbol = ResourceManager.sunSymbol;
         if (cardDef.isHidden()) {
-            BufferedImage typeSymbol = ResourceManager.moonSymbol;
-            g2d.drawImage(typeSymbol, 19, 25, null);
-        } else {
-            BufferedImage typeSymbol = ResourceManager.sunSymbol;
-            g2d.drawImage(typeSymbol, 19, 25, null);
+            typeSymbol = cardDef.isPlaneswalker() ? ResourceManager.planeswalkerTypeSymbol : ResourceManager.moonSymbol;
+        } else if (cardDef.isCreature() && cardDef.hasType(MagicType.Legendary)) {
+            typeSymbol = ResourceManager.sparkSymbol;
         }
-
+        g2d.drawImage(typeSymbol, 19, 25, null);
         g2d.dispose();
     }
 }
