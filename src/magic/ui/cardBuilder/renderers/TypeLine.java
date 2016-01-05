@@ -116,7 +116,15 @@ public class TypeLine {
             rarity=ResourceManager.mythic;
         }
         Graphics2D g2d = cardImage.createGraphics();
-        g2d.drawImage(rarity,322,297,null);
+        int ypos = 297;
+        if (cardDef.isPlaneswalker() && OracleText.getPlaneswalkerAbilityCount(cardDef)>3){
+            ypos = 263;
+        }
+        if (cardDef.isToken()){
+            ypos = cardDef.hasText() ? 356 : 431;
+        }
+        int xpos = 322;
+        g2d.drawImage(rarity,xpos,ypos,null);
     }
 
 }
