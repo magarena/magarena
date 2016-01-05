@@ -71,15 +71,15 @@ public class TitleFrame {
             g2d.setRenderingHint(RenderingHints.KEY_FRACTIONALMETRICS, RenderingHints.VALUE_FRACTIONALMETRICS_ON);
             if (cardDef.isToken()) {
                 g2d.setColor(Color.getHSBColor(54, 45, 100));
-                cardName.addAttribute(TextAttribute.FONT,cardNameTokenFont);
+                cardName.addAttribute(TextAttribute.FONT, cardNameTokenFont);
             } else {
                 g2d.setColor(Color.BLACK);
-                cardName.addAttribute(TextAttribute.FONT,cardNameFont);
+                cardName.addAttribute(TextAttribute.FONT, cardNameFont);
                 Pattern pattern = Pattern.compile("([KQR])[yjgpq]");
                 Matcher matcher = pattern.matcher(plainName);
-                if (matcher.find()){
+                if (matcher.find()) {
                     int replace = plainName.indexOf(matcher.group());
-                    cardName.addAttribute(TextAttribute.FONT,cardNameTokenFont,replace, replace+1);
+                    cardName.addAttribute(TextAttribute.FONT, cardNameTokenFont, replace, replace + 1);
                 }
             }
             TextLayout metrics = new TextLayout(cardName.getIterator(), g2d.getFontRenderContext()); //to allow calculation of Ascent + length

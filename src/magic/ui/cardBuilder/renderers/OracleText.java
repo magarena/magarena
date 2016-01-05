@@ -295,7 +295,7 @@ public class OracleText {
         final AttributedCharacterIterator iter = attrString.getIterator();
         while (lineMeasurer.getPosition() < paragraphEnd) {
             //Check for ptPanel overlap
-            int next  = posY >= 123 ?
+            int next = posY >= 123 ?
                 lineMeasurer.nextOffset(boxWidth - (leftPadding << 1) - 100) :
                 lineMeasurer.nextOffset(boxWidth - (leftPadding << 1));
             int limit = next;

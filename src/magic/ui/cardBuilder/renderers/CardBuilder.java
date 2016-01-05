@@ -34,7 +34,7 @@ public class CardBuilder {
 
     private static BufferedImage makeTransform(IRenderableCard cardDef) {
         BufferedImage cardImage = Frame.getTransformFrameType(cardDef);
-        if (cardDef.isHidden()){
+        if (cardDef.isHidden()) {
             PTFrame.drawHiddenPTPanel(cardImage, cardDef);
             TypeLine.drawHiddenCardTypeLine(cardImage, cardDef);
         } else {
@@ -51,8 +51,8 @@ public class CardBuilder {
 
     private static BufferedImage makeLeveller(IRenderableCard cardDef) {
         BufferedImage cardImage = Frame.getLevellerFrameType(cardDef);
-        PTFrame.drawLevellerPTPanels(cardImage,cardDef);
-        PTFrame.drawLevellerArrowText(cardImage,cardDef);
+        PTFrame.drawLevellerPTPanels(cardImage, cardDef);
+        PTFrame.drawLevellerArrowText(cardImage, cardDef);
         ImageFrame.drawImage(cardImage, cardDef);
         OracleText.drawLevellerOracleText(cardImage, cardDef);
         TitleFrame.drawCardName(cardImage, cardDef);
@@ -98,7 +98,7 @@ public class CardBuilder {
 
     private static BufferedImage makeDevoidCard(IRenderableCard cardDef) {
         BufferedImage cardImage = Frame.getColorlessFrameType(cardDef);
-        Frame.drawOverlay(cardImage,Frame.getDevoidFrameType(cardDef));
+        Frame.drawOverlay(cardImage, Frame.getDevoidFrameType(cardDef));
         PTFrame.drawPTPanel(cardImage, cardDef);
         ImageFrame.drawImage(cardImage, cardDef);
         OracleText.drawOracleText(cardImage, cardDef);
@@ -111,7 +111,7 @@ public class CardBuilder {
     // Remove rounded corners from original image
     private static BufferedImage trimImage(BufferedImage image) {
         int cropSize = 5;
-        BufferedImage img = image.getSubimage(cropSize, cropSize, image.getWidth()- 2*cropSize, image.getHeight()- 2*cropSize);
+        BufferedImage img = image.getSubimage(cropSize, cropSize, image.getWidth() - 2 * cropSize, image.getHeight() - 2 * cropSize);
         BufferedImage copyOfImage = new BufferedImage(img.getWidth(), img.getHeight(), BufferedImage.TYPE_INT_RGB);
         Graphics g = copyOfImage.createGraphics();
         g.drawImage(img, 0, 0, null);
