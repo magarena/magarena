@@ -103,4 +103,20 @@ public class TypeLine {
             g2d.dispose();
         }
     }
+
+    public static void drawRarity(BufferedImage cardImage, IRenderableCard cardDef) {
+        BufferedImage rarity=ResourceManager.common;
+        if (cardDef.getRarityChar()=='U'){
+            rarity=ResourceManager.uncommon;
+        }
+        if (cardDef.getRarityChar()=='R'){
+            rarity=ResourceManager.rare;
+        }
+        if (cardDef.getRarityChar()=='M'){
+            rarity=ResourceManager.mythic;
+        }
+        Graphics2D g2d = cardImage.createGraphics();
+        g2d.drawImage(rarity,322,297,null);
+    }
+
 }

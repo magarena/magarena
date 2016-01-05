@@ -223,6 +223,10 @@ public class ResourceManager {
     public static final BufferedImage moonSymbol = getSymbolBuffered("transform/night_circle.png");
     public static final BufferedImage planeswalkerTypeSymbol = getSymbolBuffered("transform/planeswalker.png");
     public static final BufferedImage sparkSymbol = getSymbolBuffered("transform/ccorner.png");
+    public static final BufferedImage common = getFrame("rarity/Common.png");
+    public static final BufferedImage uncommon = getFrame("rarity/Uncommon.png");
+    public static final BufferedImage rare = getFrame("rarity/Rare.png");
+    public static final BufferedImage mythic = getFrame("rarity/Mythic.png");
 
 
     //Font Map

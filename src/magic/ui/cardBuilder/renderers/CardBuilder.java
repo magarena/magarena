@@ -40,6 +40,7 @@ public class CardBuilder {
         } else {
             PTFrame.drawPTPanel(cardImage, cardDef);
             TypeLine.drawCardTypeLine(cardImage, cardDef);
+            TypeLine.drawRarity(cardImage, cardDef);
         }
         TitleFrame.drawTransformCardName(cardImage, cardDef);
         ImageFrame.drawImage(cardImage, cardDef);
@@ -58,6 +59,7 @@ public class CardBuilder {
         TitleFrame.drawCardName(cardImage, cardDef);
         TitleFrame.drawManaCost(cardImage, cardDef);
         TypeLine.drawCardTypeLine(cardImage, cardDef);
+        TypeLine.drawRarity(cardImage, cardDef);
         return trimImage(cardImage);
     }
 
@@ -93,6 +95,7 @@ public class CardBuilder {
         TitleFrame.drawCardName(cardImage, cardDef);
         TitleFrame.drawManaCost(cardImage, cardDef);
         TypeLine.drawCardTypeLine(cardImage, cardDef);
+        TypeLine.drawRarity(cardImage, cardDef);
         return trimImage(cardImage);
     }
 
@@ -105,6 +108,7 @@ public class CardBuilder {
         TitleFrame.drawCardName(cardImage, cardDef);
         TitleFrame.drawManaCost(cardImage, cardDef);
         TypeLine.drawCardTypeLine(cardImage, cardDef);
+        TypeLine.drawRarity(cardImage, cardDef);
         return trimImage(cardImage);
     }
 
