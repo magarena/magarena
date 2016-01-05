@@ -3,12 +3,18 @@ package magic.model.event;
 import magic.model.MagicManaCost;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
+import magic.model.MagicCard;
 import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.condition.MagicCondition;
 
 public class MagicPayManaCostEvent extends MagicEvent {
 
     private final MagicCondition cond;
+
+    public static final MagicPayManaCostEvent Cast(final MagicCard card, final String cost) {
+        final MagicManaCost modCost = card.getGame().modCost(card, MagicManaCost.create(cost));
+        return new MagicPayManaCostEvent(card, modCost);
+    }
 
     public MagicPayManaCostEvent(final MagicSource source, final String cost) {
         this(source, source.getController(), MagicManaCost.create(cost));
