@@ -80,7 +80,6 @@ public class MagicManaCost {
     }
 
     private MagicManaCost(final int[] aAmounts, final int aXCount) {
-        costText = "";
         int total = 0;
         for (int i = 0; i < aAmounts.length; i++) {
             amounts[i] = aAmounts[i];
@@ -91,6 +90,7 @@ public class MagicManaCost {
         }
         XCount = aXCount;
         converted = total;
+        costText = getCanonicalText(amounts, XCount);
     }
 
     private void addType(final MagicCostManaType type,final int amount,final int[] convertedArr) {

@@ -261,7 +261,7 @@ public class ImageCardListViewer extends JPanel implements IChoiceViewer {
                         y2-17
                     );
                 } else {
-                    ImageDrawingUtils.drawCostInfo(g,this,card.getCost(),x1,x2-1,y1+2);
+                    ImageDrawingUtils.drawCostInfo(g,this,card.getGameCost(),x1,x2-1,y1+2);
                 }
                 if (cardDefinition.isCreature()) {
                     ImageDrawingUtils.drawAbilityInfo(g,this,cardDefinition.genAbilityFlags(),x1+2,y2-18);

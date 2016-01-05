@@ -25,8 +25,10 @@ class TestCostReduction extends TestGameBuilder {
         P.setLife(4);
         addToLibrary(P, "Mountain", 20);
         createPermanent(P, "Mountain", false, 6);
-        addToHand(P, "Lightning Bolt", 2);
-        addToHand(P, "Ruby Medallion", 1);
+        addToHand(P, "Circle of Flame", 1);
+        addToHand(P, "Jund Battlemage", 1);
+        addToHand(P, "Ruby Medallion", 2);
+        addToHand(P, "Ruby Leech", 2);
         addToHand(P, "Enrage", 1);
         addToHand(P, "Bonfire of the Damned", 1);
 
