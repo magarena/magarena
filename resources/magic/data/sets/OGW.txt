@@ -1,16 +1,21 @@
 Ayli, Eternal Pilgrim
+Bone Saw
+Boulder Salvo
 Call the Gatewatch
 Chandra, Flamecaller
 Cinder Barrens
 Comparative Analysis
+Corrupted Crossroads
 Crumbling Vestige
 Crush of Tentacles
 Deceiver of Form
 Deepfathom Skulker
 Dread Defiler
+Eldrazi Displacer
 Eldrazi Mimic
 Eldrazi Obligator
 Embodiment of Fury
+Embodiment of Insight
 Endbringer
 Flayer Drone
 Flaying Tendrils
@@ -35,7 +40,9 @@ Nissa, Voice of Zendikar
 Oath of Gideon
 Oath of Jace
 Oath of Nissa
+Overwhelming Denial
 Prophet of Distortion
+Pyromancer's Assault
 Reckless Bushwhacker
 Reflector Mage
 Relentless Hunter
@@ -44,6 +51,7 @@ Ruins of Oran-Rief
 Scion Summoner
 Sea Gate Wreckage
 Shoulder to Shoulder
+Sifter of Skulls
 Spatial Contortion
 Sphinx of the Final Word
 Stone Haven Outfitter
