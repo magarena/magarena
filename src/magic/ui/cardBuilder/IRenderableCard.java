@@ -1,7 +1,6 @@
 package magic.ui.cardBuilder;
 
 import java.util.Collection;
-import java.util.EnumSet;
 import java.util.Set;
 
 import magic.model.MagicAbility;
@@ -43,4 +42,5 @@ public interface IRenderableCard {
     boolean isInstant();
     boolean isEnchantment();
     boolean isHidden();
+    Character getRarityChar();
 }

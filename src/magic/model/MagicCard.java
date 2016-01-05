@@ -597,4 +597,8 @@ public class MagicCard
     @Override
     public boolean isHidden() {return cardDefinition.isHidden();}
 
+    @Override
+    public Character getRarityChar() {
+        return cardDefinition.getRarityChar();
+    }
 }

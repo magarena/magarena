@@ -1,33 +1,21 @@
 package magic.model;
 
+import java.util.*;
+
 import magic.ai.ArtificialScoringSystem;
 import magic.data.CardDefinitions;
 import magic.data.CardProperty;
 import magic.data.MagicIcon;
-import magic.model.event.MagicActivation;
-import magic.model.event.MagicActivationHints;
-import magic.model.event.MagicHandCastActivation;
-import magic.model.event.MagicCardEvent;
-import magic.model.event.MagicEvent;
-import magic.model.event.MagicEventSource;
-import magic.model.event.MagicManaActivation;
-import magic.model.event.MagicPayManaCostEvent;
-import magic.model.event.MagicPermanentActivation;
-import magic.model.event.MagicPlayCardEvent;
-import magic.model.event.MagicTiming;
+import magic.model.event.*;
 import magic.model.mstatic.MagicCDA;
 import magic.model.mstatic.MagicStatic;
-import magic.model.trigger.MagicTrigger;
-import magic.model.trigger.MagicTriggerType;
 import magic.model.trigger.EntersBattlefieldTrigger;
 import magic.model.trigger.EntersWithCounterTrigger;
+import magic.model.trigger.MagicTrigger;
+import magic.model.trigger.ThisCycleTrigger;
 import magic.model.trigger.ThisDrawnTrigger;
 import magic.model.trigger.ThisPutIntoGraveyardTrigger;
 import magic.model.trigger.ThisSpellIsCastTrigger;
-import magic.model.trigger.ThisCycleTrigger;
-
-import java.util.*;
-
 import magic.ui.cardBuilder.IRenderableCard;
 import magic.utility.MagicFileSystem;
 
@@ -349,6 +337,10 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
 
     public String getRarityString() {
         return (rarity == null ? "" : rarity.getName());
+    }
+
+    public Character getRarityChar() {
+        return rarity.getChar();
     }
 
     public void setToken() {
