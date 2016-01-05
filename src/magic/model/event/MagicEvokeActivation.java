@@ -24,7 +24,7 @@ public class MagicEvokeActivation extends MagicHandCastActivation {
     @Override
     public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
         return Arrays.asList(
-            new MagicPayManaCostEvent(
+            MagicPayManaCostEvent.Cast(
                 source,
                 cost
             ),

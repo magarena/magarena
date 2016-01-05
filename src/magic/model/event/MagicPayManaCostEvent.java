@@ -12,8 +12,11 @@ public class MagicPayManaCostEvent extends MagicEvent {
     private final MagicCondition cond;
 
     public static final MagicPayManaCostEvent Cast(final MagicCard card, final String cost) {
-        final MagicManaCost modCost = card.getGame().modCost(card, MagicManaCost.create(cost));
-        return new MagicPayManaCostEvent(card, modCost);
+        return Cast(card, MagicManaCost.create(cost));
+    }
+
+    public static final MagicPayManaCostEvent Cast(final MagicCard card, final MagicManaCost cost) {
+        return new MagicPayManaCostEvent(card, card.getGame().modCost(card, cost));
     }
 
     public MagicPayManaCostEvent(final MagicSource source, final String cost) {
