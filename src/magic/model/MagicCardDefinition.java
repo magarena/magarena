@@ -492,37 +492,43 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     public String getTypeString() {
         final StringBuilder sb = new StringBuilder();
         if (isLand()) {
-            sb.append(MagicType.Land.toString());
+            sb.append(MagicType.Land);
         }
         if (isArtifact()) {
             if (sb.length() > 0) {
                 sb.append(" ");
             }
-            sb.append(MagicType.Artifact.toString());
+            sb.append(MagicType.Artifact);
         }
         if (isCreature()) {
             if (sb.length() > 0) {
                 sb.append(" ");
             }
-            sb.append(MagicType.Creature.toString());
+            sb.append(MagicType.Creature);
         }
         if (isEnchantment()) {
             if (sb.length() > 0) {
                 sb.append(" ");
             }
-            sb.append(MagicType.Enchantment.toString());
+            sb.append(MagicType.Enchantment);
         }
         if (isInstant()) {
             if (sb.length() > 0) {
                 sb.append(" ");
             }
-            sb.append(MagicType.Instant.toString());
+            sb.append(MagicType.Instant);
         }
         if (isSorcery()) {
             if (sb.length() > 0) {
                 sb.append(" ");
             }
-            sb.append(MagicType.Sorcery.toString());
+            sb.append(MagicType.Sorcery);
+        }
+        if (isPlaneswalker()) {
+            if (sb.length() > 0) {
+                sb.append(" ");
+            }
+            sb.append(MagicType.Planeswalker);
         }
 
         return sb.toString();
