@@ -340,7 +340,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     }
 
     public Character getRarityChar() {
-        return rarity.getChar();
+        return rarity == null ? 'C' : rarity.getChar();//Return common for null rarity
     }
 
     public void setToken() {
