@@ -12,8 +12,8 @@
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
             return source.getOpponent().getHandSize() == 0 ?
-                [new MagicPayManaCostEvent(source,"{U}{U}")] :
-                [new MagicPayManaCostEvent(source,"{6}{U}{U}")];
+                [MagicPayManaCostEvent.Cast(source,"{U}{U}")] :
+                [MagicPayManaCostEvent.Cast(source,"{6}{U}{U}")];
         }
     }
 ]

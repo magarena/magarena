@@ -15,7 +15,7 @@
             return [
                 new MagicPayManaCostEvent(
                     source,
-                    source.getCost().reduce(MagicCostManaType.Green, n)
+                    source.getGameCost().reduce(MagicCostManaType.Green, n)
                 )
             ];
         }

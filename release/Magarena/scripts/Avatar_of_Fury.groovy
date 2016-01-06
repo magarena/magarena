@@ -12,8 +12,8 @@
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
             return source.getOpponent().getNrOfPermanents(MagicType.Land) >= 7 ?
-                [new MagicPayManaCostEvent(source,"{R}{R}")] :
-                [new MagicPayManaCostEvent(source,"{6}{R}{R}")];
+                [MagicPayManaCostEvent.Cast(source,"{R}{R}")] :
+                [MagicPayManaCostEvent.Cast(source,"{6}{R}{R}")];
         }
     }
 ]

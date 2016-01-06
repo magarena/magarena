@@ -6,7 +6,7 @@
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
             return [
-                new MagicPayManaCostEvent(source, "{5}{W}{W}")
+                MagicPayManaCostEvent.Cast(source, "{5}{W}{W}")
             ];
         }
     }
