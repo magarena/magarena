@@ -48,19 +48,17 @@ public enum MagicType {
         Tribal
     );
     public static final List<MagicType> TYPE_ORDER = Arrays.asList(
+        // Tribal first
         Tribal,
+        // Priority order for combinations of Type
         Enchantment,
         Artifact,
         Land,
         Creature,
-        Conspiracy,
+        // All others in use
         Instant,
-        Phenomenon,
-        Plane,
         Planeswalker,
-        Scheme,
-        Sorcery,
-        Vanguard
+        Sorcery
     );
 
     private final int mask;
