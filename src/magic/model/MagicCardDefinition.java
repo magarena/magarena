@@ -402,18 +402,6 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         return hasType(MagicType.Basic);
     }
 
-    public boolean isLand() {
-        return hasType(MagicType.Land);
-    }
-
-    public boolean isCreature() {
-        return hasType(MagicType.Creature);
-    }
-
-    public boolean isArtifact() {
-        return hasType(MagicType.Artifact);
-    }
-
     public boolean isEquipment() {
         return hasSubType(MagicSubType.Equipment);
     }
@@ -422,28 +410,24 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         return hasType(MagicType.Planeswalker);
     }
 
-    public boolean isEnchantment() {
-        return hasType(MagicType.Enchantment);
-    }
-
     public boolean isLegendary() {
         return hasType(MagicType.Legendary);
     }
 
-    public boolean isTribal() { return hasType(MagicType.Tribal); }
-
-    public boolean isSnow() { return hasType(MagicType.Snow); }
-
-    public boolean isWorld() { return hasType(MagicType.World); }
-
-    public boolean isAura() { return isEnchantment() && hasSubType(MagicSubType.Aura); }
-
-    public boolean isInstant() {
-        return hasType(MagicType.Instant);
+    public boolean isTribal() {
+        return hasType(MagicType.Tribal);
     }
 
-    public boolean isSorcery() {
-        return hasType(MagicType.Sorcery);
+    public boolean isSnow() {
+        return hasType(MagicType.Snow);
+    }
+
+    public boolean isWorld() {
+        return hasType(MagicType.World);
+    }
+
+    public boolean isAura() {
+        return isEnchantment() && hasSubType(MagicSubType.Aura);
     }
 
     public boolean isSpell() {
