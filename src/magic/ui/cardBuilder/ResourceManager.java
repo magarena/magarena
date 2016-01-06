@@ -21,32 +21,32 @@ public class ResourceManager {
     // Used as reference class for accessing JAR resources.
     private static final ResourceManager instance = new ResourceManager();
 
-    public static final BufferedImage multiFrame = getFrame("mcard.jpg");
-    public static final BufferedImage artifactFrame = getFrame("acard.jpg");
-    public static final BufferedImage colorlessFrame = getFrame("ccard.jpg");
-    public static final BufferedImage redFrame = getFrame("rcard.jpg");
-    public static final BufferedImage blackFrame = getFrame("bcard.jpg");
-    public static final BufferedImage blueFrame = getFrame("ucard.jpg");
-    public static final BufferedImage greenFrame = getFrame("gcard.jpg");
-    public static final BufferedImage whiteFrame = getFrame("wcard.jpg");
-    public static final BufferedImage landFrame = getFrame("lcard.jpg");
-    public static final BufferedImage whiteLandFrame = getFrame("wlcard.jpg");
-    public static final BufferedImage blueLandFrame = getFrame("ulcard.jpg");
-    public static final BufferedImage blackLandFrame = getFrame("blcard.jpg");
-    public static final BufferedImage redLandFrame = getFrame("rlcard.jpg");
-    public static final BufferedImage greenLandFrame = getFrame("glcard.jpg");
-    public static final BufferedImage multiLandFrame = getFrame("mlcard.jpg");
-    public static final BufferedImage redPTPanel = getPTBuffered("rpt.png");
-    public static final BufferedImage blackPTPanel = getPTBuffered("bpt.png");
-    public static final BufferedImage bluePTPanel = getPTBuffered("upt.png");
-    public static final BufferedImage greenPTPanel = getPTBuffered("gpt.png");
-    public static final BufferedImage whitePTPanel = getPTBuffered("wpt.png");
-    public static final BufferedImage colorlessPTPanel = getPTBuffered("cpt.png");
-    public static final BufferedImage artifactPTPanel = getPTBuffered("apt.png");
-    public static final BufferedImage multiPTPanel = getPTBuffered("mpt.png");
-    public static final BufferedImage gainColorBlend = getFrame("color_blend.png");
-    public static final BufferedImage gainHybridBlend = getFrame("blendingMask.png");
-    public static final BufferedImage gainHybridBanner = getFrame("hybrid_blend.png");
+    public static final BufferedImage multiFrame = getComponent("mcard.jpg");
+    public static final BufferedImage artifactFrame = getComponent("acard.jpg");
+    public static final BufferedImage colorlessFrame = getComponent("ccard.jpg");
+    public static final BufferedImage redFrame = getComponent("rcard.jpg");
+    public static final BufferedImage blackFrame = getComponent("bcard.jpg");
+    public static final BufferedImage blueFrame = getComponent("ucard.jpg");
+    public static final BufferedImage greenFrame = getComponent("gcard.jpg");
+    public static final BufferedImage whiteFrame = getComponent("wcard.jpg");
+    public static final BufferedImage landFrame = getComponent("lcard.jpg");
+    public static final BufferedImage whiteLandFrame = getComponent("wlcard.jpg");
+    public static final BufferedImage blueLandFrame = getComponent("ulcard.jpg");
+    public static final BufferedImage blackLandFrame = getComponent("blcard.jpg");
+    public static final BufferedImage redLandFrame = getComponent("rlcard.jpg");
+    public static final BufferedImage greenLandFrame = getComponent("glcard.jpg");
+    public static final BufferedImage multiLandFrame = getComponent("mlcard.jpg");
+    public static final BufferedImage redPTPanel = getComponent("rpt.png");
+    public static final BufferedImage blackPTPanel = getComponent("bpt.png");
+    public static final BufferedImage bluePTPanel = getComponent("upt.png");
+    public static final BufferedImage greenPTPanel = getComponent("gpt.png");
+    public static final BufferedImage whitePTPanel = getComponent("wpt.png");
+    public static final BufferedImage colorlessPTPanel = getComponent("cpt.png");
+    public static final BufferedImage artifactPTPanel = getComponent("apt.png");
+    public static final BufferedImage multiPTPanel = getComponent("mpt.png");
+    public static final BufferedImage gainColorBlend = getComponent("color_blend.png");
+    public static final BufferedImage gainHybridBlend = getComponent("blendingMask.png");
+    public static final BufferedImage gainHybridBanner = getComponent("hybrid_blend.png");
     public static final BufferedImage defaultWhite = getImage("default_white.jpg");
     public static final BufferedImage defaultBlue = getImage("default_blue.jpg");
     public static final BufferedImage defaultBlack = getImage("default_black.jpg");
@@ -57,105 +57,105 @@ public class ResourceManager {
     public static final BufferedImage defaultColorless = getImage("default_colorless.jpg");
     public static final BufferedImage defaultMulti = getImage("default_multi.jpg");
     public static final BufferedImage defaultHybridBlend = getImage("imageHybridBlend.png");
-    public static final BufferedImage whiteLandImage = getWatermark("watermark_w.png");
-    public static final BufferedImage blueLandImage = getWatermark("watermark_u.png");
-    public static final BufferedImage blackLandImage = getWatermark("watermark_b.png");
-    public static final BufferedImage redLandImage = getWatermark("watermark_r.png");
-    public static final BufferedImage greenLandImage = getWatermark("watermark_g.png");
-    public static final BufferedImage bgLandImage = getWatermark("watermark_bg.png");
-    public static final BufferedImage brLandImage = getWatermark("watermark_br.png");
-    public static final BufferedImage guLandImage = getWatermark("watermark_gu.png");
-    public static final BufferedImage gwLandImage = getWatermark("watermark_gw.png");
-    public static final BufferedImage rgLandImage = getWatermark("watermark_rg.png");
-    public static final BufferedImage rwLandImage = getWatermark("watermark_rw.png");
-    public static final BufferedImage ubLandImage = getWatermark("watermark_ub.png");
-    public static final BufferedImage urLandImage = getWatermark("watermark_ur.png");
-    public static final BufferedImage wbLandImage = getWatermark("watermark_wb.png");
-    public static final BufferedImage wuLandImage = getWatermark("watermark_wu.png");
-    public static final BufferedImage artifactNyx = getFrame("nyx/acard.jpg");
-    public static final BufferedImage colorlessNyx = getFrame("nyx/ccard.jpg");
-    public static final BufferedImage landNyx = getFrame("nyx/clcard.jpg");
-    public static final BufferedImage whiteNyx = getFrame("nyx/wcard.jpg");
-    public static final BufferedImage whiteLandNyx = getFrame("nyx/wlcard.jpg");
-    public static final BufferedImage blueNyx = getFrame("nyx/ucard.jpg");
-    public static final BufferedImage blueLandNyx = getFrame("nyx/ulcard.jpg");
-    public static final BufferedImage blackNyx = getFrame("nyx/bcard.jpg");
-    public static final BufferedImage blackLandNyx = getFrame("nyx/blcard.jpg");
-    public static final BufferedImage redNyx = getFrame("nyx/rcard.jpg");
-    public static final BufferedImage redLandNyx = getFrame("nyx/rlcard.jpg");
-    public static final BufferedImage greenNyx = getFrame("nyx/gcard.jpg");
-    public static final BufferedImage greenLandNyx = getFrame("nyx/glcard.jpg");
-    public static final BufferedImage multiNyx = getFrame("nyx/mcard.jpg");
-    public static final BufferedImage multiLandNyx = getFrame("nyx/mlcard.jpg");
-    public static final BufferedImage colorlessTokenFrame = getFrame("token/ccard.jpg");
-    public static final BufferedImage colorlessTokenFrameText = getFrame("token/ccard2.jpg");
-    public static final BufferedImage artifactTokenFrame = getFrame("token/acard.jpg");
-    public static final BufferedImage artifactTokenFrameText = getFrame("token/acard2.jpg");
-    public static final BufferedImage whiteTokenFrame = getFrame("token/wcard.jpg");
-    public static final BufferedImage whiteTokenFrameText = getFrame("token/wcard2.jpg");
-    public static final BufferedImage blueTokenFrame = getFrame("token/ucard.jpg");
-    public static final BufferedImage blueTokenFrameText = getFrame("token/ucard2.jpg");
-    public static final BufferedImage blackTokenFrame = getFrame("token/bcard.jpg");
-    public static final BufferedImage blackTokenFrameText = getFrame("token/bcard2.jpg");
-    public static final BufferedImage redTokenFrame = getFrame("token/rcard.jpg");
-    public static final BufferedImage redTokenFrameText = getFrame("token/rcard2.jpg");
-    public static final BufferedImage greenTokenFrame = getFrame("token/gcard.jpg");
-    public static final BufferedImage greenTokenFrameText = getFrame("token/gcard2.jpg");
-    public static final BufferedImage multiTokenFrame = getFrame("token/mcard.jpg");
-    public static final BufferedImage multiTokenFrameText = getFrame("token/mcard2.jpg");
-    public static final BufferedImage gainColorTokenBlend = getFrame("token/color_blend.png");
-    public static final BufferedImage gainColorTokenBlendText = getFrame("token/color_blend2.png");
-    public static final BufferedImage gainTokenBanner = getFrame("token/hybrid_blend.png");
-    public static final BufferedImage gainTokenBannerText = getFrame("token/hybrid_blend2.png");
-    public static final BufferedImage tokenImageBlend = getFrame("token/imagemask.png");
-    public static final BufferedImage tokenImageBlendText = getFrame("token/imagemask2.png");
-    public static final BufferedImage artifactLevellerFrame = getFrame("leveller/acard.jpg");
-    public static final BufferedImage whiteLevellerFrame = getFrame("leveller/wcard.jpg");
-    public static final BufferedImage whiteLandLevellerFrame = getFrame("leveller/wlcard.jpg");
-    public static final BufferedImage blueLevellerFrame = getFrame("leveller/ucard.jpg");
-    public static final BufferedImage blueLandLevellerFrame = getFrame("leveller/ulcard.jpg");
-    public static final BufferedImage blackLevellerFrame = getFrame("leveller/bcard.jpg");
-    public static final BufferedImage blackLandLevellerFrame = getFrame("leveller/blcard.jpg");
-    public static final BufferedImage redLevellerFrame = getFrame("leveller/rcard.jpg");
-    public static final BufferedImage redLandLevellerFrame = getFrame("leveller/rlcard.jpg");
-    public static final BufferedImage greenLevellerFrame = getFrame("leveller/gcard.jpg");
-    public static final BufferedImage greenLandLevellerFrame = getFrame("leveller/glcard.jpg");
-    public static final BufferedImage multiLevellerFrame = getFrame("leveller/mcard.jpg");
-    public static final BufferedImage multiLandLevellerFrame = getFrame("leveller/mlcard.jpg");
-    public static final BufferedImage colorlessLevellerFrame = getFrame("leveller/ccard.jpg");
-    public static final BufferedImage colorlessLandLevellerFrame = getFrame("leveller/clcard.jpg");
-    public static final BufferedImage artifactPlaneswalkerFrame = getFrame("planeswalker/acard.jpg");
-    public static final BufferedImage whitePlaneswalkerFrame = getFrame("planeswalker/wcard.jpg");
-    public static final BufferedImage bluePlaneswalkerFrame = getFrame("planeswalker/ucard.jpg");
-    public static final BufferedImage blackPlaneswalkerFrame = getFrame("planeswalker/bcard.jpg");
-    public static final BufferedImage redPlaneswalkerFrame = getFrame("planeswalker/rcard.jpg");
-    public static final BufferedImage greenPlaneswalkerFrame = getFrame("planeswalker/gcard.jpg");
-    public static final BufferedImage multiPlaneswalkerFrame = getFrame("planeswalker/mcard.jpg");
-    public static final BufferedImage colorlessPlaneswalkerFrame = getFrame("planeswalker/clear.jpg");
-    public static final BufferedImage gainPlaneswalkerHybridBanner = getFrame("planeswalker/hybrid_blend.png");
-    public static final BufferedImage gainPlaneswalkerColorBlend = getFrame("planeswalker/color_blend.png");
-    public static final BufferedImage artifactPlaneswalker4 = getFrame("planeswalker/acard2.jpg");
-    public static final BufferedImage whitePlaneswalker4 = getFrame("planeswalker/wcard2.jpg");
-    public static final BufferedImage bluePlaneswalker4 = getFrame("planeswalker/ucard2.jpg");
-    public static final BufferedImage blackPlaneswalker4 = getFrame("planeswalker/bcard2.jpg");
-    public static final BufferedImage redPlaneswalker4 = getFrame("planeswalker/rcard2.jpg");
-    public static final BufferedImage greenPlaneswalker4 = getFrame("planeswalker/gcard2.jpg");
-    public static final BufferedImage multiPlaneswalker4 = getFrame("planeswalker/mcard2.jpg");
-    public static final BufferedImage colorlessPlaneswalker4 = getFrame("planeswalker/clear2.jpg");
-    public static final BufferedImage gainPlaneswalker4HybridBanner = getFrame("planeswalker/hybrid_blend2.png");
-    public static final BufferedImage gainPlaneswalker4ColorBlend = getFrame("planeswalker/color_blend2.png");
-    public static final BufferedImage loyaltyPanel = getLoyaltyPanelBuffered("planeswalker/loyalty.png");
-    public static final BufferedImage loyaltyUp = getLoyaltyBuffered("planeswalker/loyaltyup.png");
-    public static final BufferedImage loyaltyDown = getLoyaltyBuffered("planeswalker/loyaltydown.png");
-    public static final BufferedImage loyaltyEven = getLoyaltyBuffered("planeswalker/loyaltynaught.png");
-    public static final BufferedImage whiteDevoidFrame = getFrame("devoid/wcard.png");
-    public static final BufferedImage blueDevoidFrame = getFrame("devoid/ucard.png");
-    public static final BufferedImage blackDevoidFrame = getFrame("devoid/bcard.png");
-    public static final BufferedImage redDevoidFrame = getFrame("devoid/rcard.png");
-    public static final BufferedImage greenDevoidFrame = getFrame("devoid/gcard.png");
-    public static final BufferedImage colorlessDevoidFrame = getFrame("devoid/ccard.png");
-    public static final BufferedImage artifactDevoidFrame = getFrame("devoid/acard.png");
-    public static final BufferedImage multiDevoidFrame = getFrame("devoid/mcard.png");
+    public static final BufferedImage whiteLandImage = getComponent("watermark/watermark_w.png");
+    public static final BufferedImage blueLandImage = getComponent("watermark/watermark_u.png");
+    public static final BufferedImage blackLandImage = getComponent("watermark/watermark_b.png");
+    public static final BufferedImage redLandImage = getComponent("watermark/watermark_r.png");
+    public static final BufferedImage greenLandImage = getComponent("watermark/watermark_g.png");
+    public static final BufferedImage bgLandImage = getComponent("watermark/watermark_bg.png");
+    public static final BufferedImage brLandImage = getComponent("watermark/watermark_br.png");
+    public static final BufferedImage guLandImage = getComponent("watermark/watermark_gu.png");
+    public static final BufferedImage gwLandImage = getComponent("watermark/watermark_gw.png");
+    public static final BufferedImage rgLandImage = getComponent("watermark/watermark_rg.png");
+    public static final BufferedImage rwLandImage = getComponent("watermark/watermark_rw.png");
+    public static final BufferedImage ubLandImage = getComponent("watermark/watermark_ub.png");
+    public static final BufferedImage urLandImage = getComponent("watermark/watermark_ur.png");
+    public static final BufferedImage wbLandImage = getComponent("watermark/watermark_wb.png");
+    public static final BufferedImage wuLandImage = getComponent("watermark/watermark_wu.png");
+    public static final BufferedImage artifactNyx = getComponent("nyx/acard.jpg");
+    public static final BufferedImage colorlessNyx = getComponent("nyx/ccard.jpg");
+    public static final BufferedImage landNyx = getComponent("nyx/clcard.jpg");
+    public static final BufferedImage whiteNyx = getComponent("nyx/wcard.jpg");
+    public static final BufferedImage whiteLandNyx = getComponent("nyx/wlcard.jpg");
+    public static final BufferedImage blueNyx = getComponent("nyx/ucard.jpg");
+    public static final BufferedImage blueLandNyx = getComponent("nyx/ulcard.jpg");
+    public static final BufferedImage blackNyx = getComponent("nyx/bcard.jpg");
+    public static final BufferedImage blackLandNyx = getComponent("nyx/blcard.jpg");
+    public static final BufferedImage redNyx = getComponent("nyx/rcard.jpg");
+    public static final BufferedImage redLandNyx = getComponent("nyx/rlcard.jpg");
+    public static final BufferedImage greenNyx = getComponent("nyx/gcard.jpg");
+    public static final BufferedImage greenLandNyx = getComponent("nyx/glcard.jpg");
+    public static final BufferedImage multiNyx = getComponent("nyx/mcard.jpg");
+    public static final BufferedImage multiLandNyx = getComponent("nyx/mlcard.jpg");
+    public static final BufferedImage colorlessTokenFrame = getComponent("token/ccard.jpg");
+    public static final BufferedImage colorlessTokenFrameText = getComponent("token/ccard2.jpg");
+    public static final BufferedImage artifactTokenFrame = getComponent("token/acard.jpg");
+    public static final BufferedImage artifactTokenFrameText = getComponent("token/acard2.jpg");
+    public static final BufferedImage whiteTokenFrame = getComponent("token/wcard.jpg");
+    public static final BufferedImage whiteTokenFrameText = getComponent("token/wcard2.jpg");
+    public static final BufferedImage blueTokenFrame = getComponent("token/ucard.jpg");
+    public static final BufferedImage blueTokenFrameText = getComponent("token/ucard2.jpg");
+    public static final BufferedImage blackTokenFrame = getComponent("token/bcard.jpg");
+    public static final BufferedImage blackTokenFrameText = getComponent("token/bcard2.jpg");
+    public static final BufferedImage redTokenFrame = getComponent("token/rcard.jpg");
+    public static final BufferedImage redTokenFrameText = getComponent("token/rcard2.jpg");
+    public static final BufferedImage greenTokenFrame = getComponent("token/gcard.jpg");
+    public static final BufferedImage greenTokenFrameText = getComponent("token/gcard2.jpg");
+    public static final BufferedImage multiTokenFrame = getComponent("token/mcard.jpg");
+    public static final BufferedImage multiTokenFrameText = getComponent("token/mcard2.jpg");
+    public static final BufferedImage gainColorTokenBlend = getComponent("token/color_blend.png");
+    public static final BufferedImage gainColorTokenBlendText = getComponent("token/color_blend2.png");
+    public static final BufferedImage gainTokenBanner = getComponent("token/hybrid_blend.png");
+    public static final BufferedImage gainTokenBannerText = getComponent("token/hybrid_blend2.png");
+    public static final BufferedImage tokenImageBlend = getComponent("token/imagemask.png");
+    public static final BufferedImage tokenImageBlendText = getComponent("token/imagemask2.png");
+    public static final BufferedImage artifactLevellerFrame = getComponent("leveller/acard.jpg");
+    public static final BufferedImage whiteLevellerFrame = getComponent("leveller/wcard.jpg");
+    public static final BufferedImage whiteLandLevellerFrame = getComponent("leveller/wlcard.jpg");
+    public static final BufferedImage blueLevellerFrame = getComponent("leveller/ucard.jpg");
+    public static final BufferedImage blueLandLevellerFrame = getComponent("leveller/ulcard.jpg");
+    public static final BufferedImage blackLevellerFrame = getComponent("leveller/bcard.jpg");
+    public static final BufferedImage blackLandLevellerFrame = getComponent("leveller/blcard.jpg");
+    public static final BufferedImage redLevellerFrame = getComponent("leveller/rcard.jpg");
+    public static final BufferedImage redLandLevellerFrame = getComponent("leveller/rlcard.jpg");
+    public static final BufferedImage greenLevellerFrame = getComponent("leveller/gcard.jpg");
+    public static final BufferedImage greenLandLevellerFrame = getComponent("leveller/glcard.jpg");
+    public static final BufferedImage multiLevellerFrame = getComponent("leveller/mcard.jpg");
+    public static final BufferedImage multiLandLevellerFrame = getComponent("leveller/mlcard.jpg");
+    public static final BufferedImage colorlessLevellerFrame = getComponent("leveller/ccard.jpg");
+    public static final BufferedImage colorlessLandLevellerFrame = getComponent("leveller/clcard.jpg");
+    public static final BufferedImage artifactPlaneswalkerFrame = getComponent("planeswalker/acard.jpg");
+    public static final BufferedImage whitePlaneswalkerFrame = getComponent("planeswalker/wcard.jpg");
+    public static final BufferedImage bluePlaneswalkerFrame = getComponent("planeswalker/ucard.jpg");
+    public static final BufferedImage blackPlaneswalkerFrame = getComponent("planeswalker/bcard.jpg");
+    public static final BufferedImage redPlaneswalkerFrame = getComponent("planeswalker/rcard.jpg");
+    public static final BufferedImage greenPlaneswalkerFrame = getComponent("planeswalker/gcard.jpg");
+    public static final BufferedImage multiPlaneswalkerFrame = getComponent("planeswalker/mcard.jpg");
+    public static final BufferedImage colorlessPlaneswalkerFrame = getComponent("planeswalker/clear.jpg");
+    public static final BufferedImage gainPlaneswalkerHybridBanner = getComponent("planeswalker/hybrid_blend.png");
+    public static final BufferedImage gainPlaneswalkerColorBlend = getComponent("planeswalker/color_blend.png");
+    public static final BufferedImage artifactPlaneswalker4 = getComponent("planeswalker/acard2.jpg");
+    public static final BufferedImage whitePlaneswalker4 = getComponent("planeswalker/wcard2.jpg");
+    public static final BufferedImage bluePlaneswalker4 = getComponent("planeswalker/ucard2.jpg");
+    public static final BufferedImage blackPlaneswalker4 = getComponent("planeswalker/bcard2.jpg");
+    public static final BufferedImage redPlaneswalker4 = getComponent("planeswalker/rcard2.jpg");
+    public static final BufferedImage greenPlaneswalker4 = getComponent("planeswalker/gcard2.jpg");
+    public static final BufferedImage multiPlaneswalker4 = getComponent("planeswalker/mcard2.jpg");
+    public static final BufferedImage colorlessPlaneswalker4 = getComponent("planeswalker/clear2.jpg");
+    public static final BufferedImage gainPlaneswalker4HybridBanner = getComponent("planeswalker/hybrid_blend2.png");
+    public static final BufferedImage gainPlaneswalker4ColorBlend = getComponent("planeswalker/color_blend2.png");
+    public static final BufferedImage loyaltyPanel = getComponent("planeswalker/loyalty.png");
+    public static final BufferedImage loyaltyUp = getComponent("planeswalker/loyaltyup.png");
+    public static final BufferedImage loyaltyDown = getComponent("planeswalker/loyaltydown.png");
+    public static final BufferedImage loyaltyEven = getComponent("planeswalker/loyaltynaught.png");
+    public static final BufferedImage whiteDevoidFrame = getComponent("devoid/wcard.png");
+    public static final BufferedImage blueDevoidFrame = getComponent("devoid/ucard.png");
+    public static final BufferedImage blackDevoidFrame = getComponent("devoid/bcard.png");
+    public static final BufferedImage redDevoidFrame = getComponent("devoid/rcard.png");
+    public static final BufferedImage greenDevoidFrame = getComponent("devoid/gcard.png");
+    public static final BufferedImage colorlessDevoidFrame = getComponent("devoid/ccard.png");
+    public static final BufferedImage artifactDevoidFrame = getComponent("devoid/acard.png");
+    public static final BufferedImage multiDevoidFrame = getComponent("devoid/mcard.png");
     public static final BufferedImage artifactSymbol = getImage("artifactSymbol.png");
     public static final BufferedImage creatureSymbol = getImage("creatureSymbol.png");
     public static final BufferedImage enchantmentSymbol = getImage("enchantmentSymbol.png");
@@ -165,69 +165,69 @@ public class ResourceManager {
     public static final BufferedImage planeswalkerSymbol = getImage("planeswalkerSymbol.png");
     public static final BufferedImage sorcerySymbol = getImage("sorcerySymbol.png");
     public static final BufferedImage magarenaSymbol = getImage("magarenaSymbol.png");
-    public static final BufferedImage artifactTransform = getFrame("transform/acard.jpg");
-    public static final BufferedImage artifactHidden = getFrame("transform/acard2.jpg");
-    public static final BufferedImage colorlessTransform = getFrame("transform/ccard.jpg");
-    public static final BufferedImage colorlessHidden = getFrame("transform/ccard2.jpg");
-    public static final BufferedImage colorlessLandTransform = getFrame("transform/clcard.jpg");
-    public static final BufferedImage colorlessLandHidden = getFrame("transform/clcard2.jpg");
-    public static final BufferedImage whiteTransform = getFrame("transform/wcard.jpg");
-    public static final BufferedImage whiteHidden = getFrame("transform/wcard2.jpg");
-    public static final BufferedImage whiteLandTransform = getFrame("transform/wlcard.jpg");
-    public static final BufferedImage whiteLandHidden = getFrame("transform/wlcard2.jpg");
-    public static final BufferedImage blueTransform = getFrame("transform/ucard.jpg");
-    public static final BufferedImage blueHidden = getFrame("transform/ucard2.jpg");
-    public static final BufferedImage blueLandTransform = getFrame("transform/ulcard.jpg");
-    public static final BufferedImage blueLandHidden = getFrame("transform/ulcard2.jpg");
-    public static final BufferedImage blackTransform = getFrame("transform/bcard.jpg");
-    public static final BufferedImage blackHidden = getFrame("transform/bcard2.jpg");
-    public static final BufferedImage blackLandTransform = getFrame("transform/blcard.jpg");
-    public static final BufferedImage blackLandHidden = getFrame("transform/blcard2.jpg");
-    public static final BufferedImage redTransform = getFrame("transform/rcard.jpg");
-    public static final BufferedImage redHidden = getFrame("transform/rcard2.jpg");
-    public static final BufferedImage redLandTransform = getFrame("transform/rlcard.jpg");
-    public static final BufferedImage redLandHidden = getFrame("transform/rlcard2.jpg");
-    public static final BufferedImage greenTransform = getFrame("transform/gcard.jpg");
-    public static final BufferedImage greenHidden = getFrame("transform/gcard2.jpg");
-    public static final BufferedImage greenLandTransform = getFrame("transform/glcard.jpg");
-    public static final BufferedImage greenLandHidden = getFrame("transform/glcard2.jpg");
-    public static final BufferedImage multiTransform = getFrame("transform/mcard.jpg");
-    public static final BufferedImage multiHidden = getFrame("transform/mcard2.jpg");
-    public static final BufferedImage multiLandTransform = getFrame("transform/mlcard.jpg");
-    public static final BufferedImage multiLandHidden = getFrame("transform/mlcard2.jpg");
-    public static final BufferedImage gainTransformColorBlend = getFrame("transform/color_blend.png");
-    public static final BufferedImage gainTransformHybridBanner = getFrame("transform/hybrid_blend.png");
-    public static final BufferedImage artifactPlaneswalkerTransform = getFrame("transform/planeswalker/acard.jpg");
-    public static final BufferedImage artifactPlaneswalkerHidden = getFrame("transform/planeswalker/acard2.jpg");
-    public static final BufferedImage whitePlaneswalkerTransform = getFrame("transform/planeswalker/wcard.jpg");
-    public static final BufferedImage whitePlaneswalkerHidden = getFrame("transform/planeswalker/wcard2.jpg");
-    public static final BufferedImage bluePlaneswalkerTransform = getFrame("transform/planeswalker/ucard.jpg");
-    public static final BufferedImage bluePlaneswalkerHidden = getFrame("transform/planeswalker/ucard2.jpg");
-    public static final BufferedImage blackPlaneswalkerTransform = getFrame("transform/planeswalker/bcard.jpg");
-    public static final BufferedImage blackPlaneswalkerHidden = getFrame("transform/planeswalker/bcard2.jpg");
-    public static final BufferedImage redPlaneswalkerTransform = getFrame("transform/planeswalker/rcard.jpg");
-    public static final BufferedImage redPlaneswalkerHidden = getFrame("transform/planeswalker/rcard2.jpg");
-    public static final BufferedImage greenPlaneswalkerTransform = getFrame("transform/planeswalker/gcard.jpg");
-    public static final BufferedImage greenPlaneswalkerHidden = getFrame("transform/planeswalker/gcard2.jpg");
-    public static final BufferedImage multiPlaneswalkerTransform = getFrame("transform/planeswalker/mcard.jpg");
-    public static final BufferedImage multiPlaneswalkerHidden = getFrame("transform/planeswalker/mcard2.jpg");
-    public static final BufferedImage getPlaneswalkerImageBlend = getFrame("planeswalker/imageMask.png");
-    public static final BufferedImage artifactHiddenPTPanel = getPTBuffered("transform/apt2.png");
-    public static final BufferedImage colorlessHiddenPTPanel = getPTBuffered("transform/cpt2.png");
-    public static final BufferedImage whiteHiddenPTPanel = getPTBuffered("transform/wpt2.png");
-    public static final BufferedImage blueHiddenPTPanel = getPTBuffered("transform/upt2.png");
-    public static final BufferedImage blackHiddenPTPanel = getPTBuffered("transform/bpt2.png");
-    public static final BufferedImage redHiddenPTPanel = getPTBuffered("transform/rpt2.png");
-    public static final BufferedImage greenHiddenPTPanel = getPTBuffered("transform/gpt2.png");
-    public static final BufferedImage multiHiddenPTPanel = getPTBuffered("transform/mpt2.png");
-    public static final BufferedImage sunSymbol = getSymbolBuffered("transform/sun_circle.png");
-    public static final BufferedImage moonSymbol = getSymbolBuffered("transform/night_circle.png");
-    public static final BufferedImage planeswalkerTypeSymbol = getSymbolBuffered("transform/planeswalker.png");
-    public static final BufferedImage sparkSymbol = getSymbolBuffered("transform/ccorner.png");
-    public static final BufferedImage common = getFrame("rarity/Common.png");
-    public static final BufferedImage uncommon = getFrame("rarity/Uncommon.png");
-    public static final BufferedImage rare = getFrame("rarity/Rare.png");
-    public static final BufferedImage mythic = getFrame("rarity/Mythic.png");
+    public static final BufferedImage artifactTransform = getComponent("transform/acard.jpg");
+    public static final BufferedImage artifactHidden = getComponent("transform/acard2.jpg");
+    public static final BufferedImage colorlessTransform = getComponent("transform/ccard.jpg");
+    public static final BufferedImage colorlessHidden = getComponent("transform/ccard2.jpg");
+    public static final BufferedImage colorlessLandTransform = getComponent("transform/clcard.jpg");
+    public static final BufferedImage colorlessLandHidden = getComponent("transform/clcard2.jpg");
+    public static final BufferedImage whiteTransform = getComponent("transform/wcard.jpg");
+    public static final BufferedImage whiteHidden = getComponent("transform/wcard2.jpg");
+    public static final BufferedImage whiteLandTransform = getComponent("transform/wlcard.jpg");
+    public static final BufferedImage whiteLandHidden = getComponent("transform/wlcard2.jpg");
+    public static final BufferedImage blueTransform = getComponent("transform/ucard.jpg");
+    public static final BufferedImage blueHidden = getComponent("transform/ucard2.jpg");
+    public static final BufferedImage blueLandTransform = getComponent("transform/ulcard.jpg");
+    public static final BufferedImage blueLandHidden = getComponent("transform/ulcard2.jpg");
+    public static final BufferedImage blackTransform = getComponent("transform/bcard.jpg");
+    public static final BufferedImage blackHidden = getComponent("transform/bcard2.jpg");
+    public static final BufferedImage blackLandTransform = getComponent("transform/blcard.jpg");
+    public static final BufferedImage blackLandHidden = getComponent("transform/blcard2.jpg");
+    public static final BufferedImage redTransform = getComponent("transform/rcard.jpg");
+    public static final BufferedImage redHidden = getComponent("transform/rcard2.jpg");
+    public static final BufferedImage redLandTransform = getComponent("transform/rlcard.jpg");
+    public static final BufferedImage redLandHidden = getComponent("transform/rlcard2.jpg");
+    public static final BufferedImage greenTransform = getComponent("transform/gcard.jpg");
+    public static final BufferedImage greenHidden = getComponent("transform/gcard2.jpg");
+    public static final BufferedImage greenLandTransform = getComponent("transform/glcard.jpg");
+    public static final BufferedImage greenLandHidden = getComponent("transform/glcard2.jpg");
+    public static final BufferedImage multiTransform = getComponent("transform/mcard.jpg");
+    public static final BufferedImage multiHidden = getComponent("transform/mcard2.jpg");
+    public static final BufferedImage multiLandTransform = getComponent("transform/mlcard.jpg");
+    public static final BufferedImage multiLandHidden = getComponent("transform/mlcard2.jpg");
+    public static final BufferedImage gainTransformColorBlend = getComponent("transform/color_blend.png");
+    public static final BufferedImage gainTransformHybridBanner = getComponent("transform/hybrid_blend.png");
+    public static final BufferedImage artifactPlaneswalkerTransform = getComponent("transform/planeswalker/acard.jpg");
+    public static final BufferedImage artifactPlaneswalkerHidden = getComponent("transform/planeswalker/acard2.jpg");
+    public static final BufferedImage whitePlaneswalkerTransform = getComponent("transform/planeswalker/wcard.jpg");
+    public static final BufferedImage whitePlaneswalkerHidden = getComponent("transform/planeswalker/wcard2.jpg");
+    public static final BufferedImage bluePlaneswalkerTransform = getComponent("transform/planeswalker/ucard.jpg");
+    public static final BufferedImage bluePlaneswalkerHidden = getComponent("transform/planeswalker/ucard2.jpg");
+    public static final BufferedImage blackPlaneswalkerTransform = getComponent("transform/planeswalker/bcard.jpg");
+    public static final BufferedImage blackPlaneswalkerHidden = getComponent("transform/planeswalker/bcard2.jpg");
+    public static final BufferedImage redPlaneswalkerTransform = getComponent("transform/planeswalker/rcard.jpg");
+    public static final BufferedImage redPlaneswalkerHidden = getComponent("transform/planeswalker/rcard2.jpg");
+    public static final BufferedImage greenPlaneswalkerTransform = getComponent("transform/planeswalker/gcard.jpg");
+    public static final BufferedImage greenPlaneswalkerHidden = getComponent("transform/planeswalker/gcard2.jpg");
+    public static final BufferedImage multiPlaneswalkerTransform = getComponent("transform/planeswalker/mcard.jpg");
+    public static final BufferedImage multiPlaneswalkerHidden = getComponent("transform/planeswalker/mcard2.jpg");
+    public static final BufferedImage getPlaneswalkerImageBlend = getComponent("planeswalker/imageMask.png");
+    public static final BufferedImage artifactHiddenPTPanel = getComponent("transform/apt2.png");
+    public static final BufferedImage colorlessHiddenPTPanel = getComponent("transform/cpt2.png");
+    public static final BufferedImage whiteHiddenPTPanel = getComponent("transform/wpt2.png");
+    public static final BufferedImage blueHiddenPTPanel = getComponent("transform/upt2.png");
+    public static final BufferedImage blackHiddenPTPanel = getComponent("transform/bpt2.png");
+    public static final BufferedImage redHiddenPTPanel = getComponent("transform/rpt2.png");
+    public static final BufferedImage greenHiddenPTPanel = getComponent("transform/gpt2.png");
+    public static final BufferedImage multiHiddenPTPanel = getComponent("transform/mpt2.png");
+    public static final BufferedImage sunSymbol = getComponent("transform/sun_circle.png");
+    public static final BufferedImage moonSymbol = getComponent("transform/night_circle.png");
+    public static final BufferedImage planeswalkerTypeSymbol = getComponent("transform/planeswalker.png");
+    public static final BufferedImage sparkSymbol = getComponent("transform/ccorner.png");
+    public static final BufferedImage common = getComponent("rarity/Common.png");
+    public static final BufferedImage uncommon = getComponent("rarity/Uncommon.png");
+    public static final BufferedImage rare = getComponent("rarity/Rare.png");
+    public static final BufferedImage mythic = getComponent("rarity/Mythic.png");
 
 
     //Font Map
@@ -266,7 +266,7 @@ public class ResourceManager {
         return font;
     }
 
-    public static BufferedImage getFrame(String imageName) {
+    public static BufferedImage getComponent(String imageName) {
         String fName = FRAMES_FOLDER + imageName;
         try (final InputStream is = getJarResourceStream(fName)) {
             return GraphicsUtils.getOptimizedImage(ImageIO.read(is));
@@ -278,59 +278,7 @@ public class ResourceManager {
     public static BufferedImage getImage(String name) {
         String fName = "/cardbuilder/images/" + name;
         try (final InputStream is = getJarResourceStream(fName)) {
-            BufferedImage image = GraphicsUtils.getOptimizedImage(ImageIO.read(is));
-            return GraphicsUtils.scale(image, 316, 231);
-        } catch (IOException ex) {
-            throw new RuntimeException(ex);
-        }
-    }
-
-    public static BufferedImage getWatermark(String name) {
-        String fName = "/cardbuilder/frames/watermark/" + name;
-        try (final InputStream is = getJarResourceStream(fName)) {
-            BufferedImage image = GraphicsUtils.getOptimizedImage(ImageIO.read(is));
-            return GraphicsUtils.scale(image, 145, 145);
-        } catch (IOException ex) {
-            throw new RuntimeException(ex);
-        }
-    }
-
-    public static BufferedImage getPTBuffered(String imageName) {
-        String fName = FRAMES_FOLDER + imageName;
-        try (final InputStream is = getJarResourceStream(fName)) {
-            BufferedImage image = GraphicsUtils.getOptimizedImage(ImageIO.read(is));
-            return GraphicsUtils.scale(image, 81, 42);
-        } catch (IOException ex) {
-            throw new RuntimeException(ex);
-        }
-    }
-
-    public static BufferedImage getSymbolBuffered(String imageName) {
-        String fName = FRAMES_FOLDER + imageName;
-        try (final InputStream is = getJarResourceStream(fName)) {
-            BufferedImage image = GraphicsUtils.getOptimizedImage(ImageIO.read(is));
-            return GraphicsUtils.scale(image, 31, 31);
-        } catch (IOException ex) {
-            throw new RuntimeException(ex);
-        }
-    }
-
-
-    public static BufferedImage getLoyaltyBuffered(String imageName) {
-        String fName = FRAMES_FOLDER + imageName;
-        try (final InputStream is = getJarResourceStream(fName)) {
-            BufferedImage image = GraphicsUtils.getOptimizedImage(ImageIO.read(is));
-            return GraphicsUtils.scale(image, 42, 40);
-        } catch (IOException ex) {
-            throw new RuntimeException(ex);
-        }
-    }
-
-    public static BufferedImage getLoyaltyPanelBuffered(String imageName) {
-        String fName = FRAMES_FOLDER + imageName;
-        try (final InputStream is = getJarResourceStream(fName)) {
-            BufferedImage image = GraphicsUtils.getOptimizedImage(ImageIO.read(is));
-            return GraphicsUtils.scale(image, 60, 38);
+            return GraphicsUtils.getOptimizedImage(ImageIO.read(is));
         } catch (IOException ex) {
             throw new RuntimeException(ex);
         }
