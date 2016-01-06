@@ -497,7 +497,8 @@ checks: \
 	check_meta \
 	check_rarity \
 	check_decks \
-	check_mana_or_combat
+	check_mana_or_combat \
+	check_color_or_cost
 
 remove_extra_missing:
 	git rm `join <(ls -1 release/Magarena/scripts | sort) <(ls -1 release/Magarena/scripts_missing | sort) | sed 's/^/release\/Magarena\/scripts_missing\//'`
@@ -593,6 +594,12 @@ check_mana_or_combat:
 	diff \
 	<(grep mana_or_combat -lr release/Magarena/scripts) \
 	<(grep "mana pool.*becomes a" -r release/Magarena/scripts -l)
+
+# all cards except lands should have either color, or cost, or both
+check_color_or_cost:
+	diff \
+	<(grep "cost=\|color=\|type.*Land" -r release/Magarena/scripts/*.txt -l) \
+	<(ls release/Magarena/scripts/*.txt | sort)
 
 crash.txt: $(wildcard *.log)
 	for i in `grep "^Excep" -l $^`; do \
