@@ -598,7 +598,7 @@ check_mana_or_combat:
 # all cards except lands should have either color, or cost, or both
 check_color_or_cost:
 	diff \
-	<(grep "cost=\|color=\|type.*Land" -r release/Magarena/scripts/*.txt -l) \
+	<(grep "^\(cost=\|color=\|type.*Land\)" -r release/Magarena/scripts/*.txt -l) \
 	<(ls release/Magarena/scripts/*.txt | sort)
 
 crash.txt: $(wildcard *.log)
