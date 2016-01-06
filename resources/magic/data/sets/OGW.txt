@@ -1,15 +1,19 @@
 Ayli, Eternal Pilgrim
+Baloth Null
+Bonds on Mortality
 Bone Saw
 Boulder Salvo
 Call the Gatewatch
 Chandra, Flamecaller
 Cinder Barrens
+Cliffhaven Vampire
 Comparative Analysis
 Corrupted Crossroads
 Crumbling Vestige
 Crush of Tentacles
 Deceiver of Form
 Deepfathom Skulker
+Drana's Chosen
 Dread Defiler
 Eldrazi Displacer
 Eldrazi Mimic
@@ -17,11 +21,13 @@ Eldrazi Obligator
 Embodiment of Fury
 Embodiment of Insight
 Endbringer
+Fall of the Titans
 Flayer Drone
 Flaying Tendrils
 General Tazri
 Gladehart Cavalry
 Goblin Dark-Dwellers
+Hedron Alignment
 Hissing Quagmire
 Holdout Settlement
 Immolating Glare
@@ -37,12 +43,14 @@ Mirrorpool
 Munda's Vanguard
 Needle Spires
 Nissa, Voice of Zendikar
+Oatch of Chandra
 Oath of Gideon
 Oath of Jace
 Oath of Nissa
 Overwhelming Denial
 Prophet of Distortion
 Pyromancer's Assault
+Reality Smasher
 Reckless Bushwhacker
 Reflector Mage
 Relentless Hunter
@@ -56,13 +64,18 @@ Spatial Contortion
 Sphinx of the Final Word
 Stone Haven Outfitter
 Stoneforge Masterwork
+Stormchaser Mage
 Submerged Boneyard
+Sylvan Advocate
+Thought-Knot Seer
 Timber Gorge
 Tranquil Expanse
 Tyrant of Valakut
 Unknown Shores
 Vile Redeemer
+Void Grafter
 Walker of the Wastes
 Wandering Fumarole
 Wastes
+Weapons Trainer
 World Breaker
