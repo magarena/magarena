@@ -113,7 +113,7 @@ public class Overlay {
     }
 
     private static BufferedImage getOverlay(IRenderableCard cardDef) {
-        return cardDef.hasAbility(MagicAbility.Devoid) ? getDevoidOverlay(cardDef) : getMiracleOverlay(cardDef);
+        return cardDef.hasAbility(MagicAbility.Miracle) ? getMiracleOverlay(cardDef) : getDevoidOverlay(cardDef);
     }
 
 }
