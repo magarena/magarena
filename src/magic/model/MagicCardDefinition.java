@@ -379,7 +379,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     public MagicCardDefinition getFlippedDefinition() {
         if (flipCardDefinition == null) {
             flipCardDefinition = isFlipCard() ?
-                CardDefinitions.getCard(flipCardName) :
+                CardDefinitions.getMissingOrCard(flipCardName) :
                 MagicCardDefinition.UNKNOWN;
         }
         return flipCardDefinition;
@@ -388,7 +388,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     public MagicCardDefinition getTransformedDefinition() {
         if (transformCardDefinition == null) {
             transformCardDefinition = isDoubleFaced() ?
-                CardDefinitions.getCard(transformCardName) :
+                CardDefinitions.getMissingOrCard(transformCardName) :
                 MagicCardDefinition.UNKNOWN;
         }
         return transformCardDefinition;

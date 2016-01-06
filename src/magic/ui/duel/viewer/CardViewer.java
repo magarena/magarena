@@ -108,7 +108,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
     }
 
     private void switchCardAspect() {
-        if (currentCardDefinition.hasMultipleAspects() && currentCardDefinition.isValid()) {
+        if (currentCardDefinition.hasMultipleAspects()) {
             setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
             if (currentCardDefinition.isDoubleFaced()) {
                 setCard(currentCardDefinition.getTransformedDefinition());

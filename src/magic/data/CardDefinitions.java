@@ -252,6 +252,15 @@ public class CardDefinitions {
         }
     }
 
+    public static MagicCardDefinition getMissingOrCard(final String original) {
+        final String key = getASCII(original);
+        if (missingCards != null && missingCards.containsKey(key)) {
+            return missingCards.get(key);
+        } else {
+            return getCard(original);
+        }
+    }
+
     public static MagicCardDefinition getCard(final String original) {
         final String key = getASCII(original);
         // lazy loading of card scripts
