@@ -7,6 +7,6 @@ subtype=Fox,Wizard
 cost={3}{W}
 pt=2/3
 ability=At the beginning of the end step, if SN is enchanted by two or more Auras, flip it.
-flip=Autumn-Tail, Kisune Sage
+flip=Autumn-Tail, Kitsune Sage
 timing=main
 oracle=At the beginning of the end step, if Kitsune Mystic is enchanted by two or more Auras, flip it.
