@@ -47,6 +47,21 @@ public enum MagicType {
         Sorcery,
         Tribal
     );
+    public static final List<MagicType> TYPE_ORDER = Arrays.asList(
+        Tribal,
+        Enchantment,
+        Artifact,
+        Land,
+        Creature,
+        Conspiracy,
+        Instant,
+        Phenomenon,
+        Plane,
+        Planeswalker,
+        Scheme,
+        Sorcery,
+        Vanguard
+    );
 
     private final int mask;
 
@@ -96,21 +111,4 @@ public enum MagicType {
     public boolean hasType(final int flags) {
         return (flags & getMask()) != 0;
     }
-
-    public static final List<MagicType> TYPE_ORDER = Arrays.asList(
-        Tribal,
-        Enchantment,
-        Artifact,
-        Land,
-        Creature,
-        Conspiracy,
-        Instant,
-        Phenomenon,
-        Plane,
-        Planeswalker,
-        Scheme,
-        Sorcery,
-        Vanguard);
-
-
 }
