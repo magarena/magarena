@@ -1036,11 +1036,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     public boolean isHybrid() {
         final List<MagicIcon> list = getCost().getIcons();
         //If doesn't contain single color mana, and does contain hybrid mana. Checks for absence
-        if (Collections.disjoint(list, MagicIcon.COLOR_MANA)==true && Collections.disjoint(list, MagicIcon.HYBRID_COLOR_MANA)==false) {
-            return true;
-        } else {
-            return false;
-        }
+        return Collections.disjoint(list, MagicIcon.COLOR_MANA) && !Collections.disjoint(list, MagicIcon.HYBRID_COLOR_MANA);
     }
 
     public void setPowerToughnessText(String string) {
