@@ -39,10 +39,15 @@ public class MagicMorphCastActivation extends MagicHandCastActivation {
 
     @Override
     public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
+        final MagicCardOnStack morphSpell = genMorphSpell(source);
+        final MagicManaCost modCost = source.getGame().modCost(
+            MagicCard.createTokenCard(morphSpell, morphSpell.getController()),
+            MagicManaCost.create("{3}")
+        );
         return Arrays.asList(
             new MagicPayManaCostEvent(
-                genMorphSpell(source),
-                MagicManaCost.create("{3}")
+                morphSpell,
+                modCost
             )
         );
     }
