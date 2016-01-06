@@ -1,6 +1,5 @@
 package magic.ui.cardBuilder.renderers;
 
-import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 
 import magic.model.MagicAbility;
@@ -102,12 +101,11 @@ public class CardBuilder {
     // Remove rounded corners from original image
     private static BufferedImage trimImage(BufferedImage image) {
         int cropSize = 5;
-        BufferedImage img = image.getSubimage(cropSize, cropSize, image.getWidth() - 2 * cropSize, image.getHeight() - 2 * cropSize);
-        BufferedImage copyOfImage = new BufferedImage(img.getWidth(), img.getHeight(), BufferedImage.TYPE_INT_RGB);
-        Graphics g = copyOfImage.createGraphics();
-        g.drawImage(img, 0, 0, null);
-        g.dispose();
-        return copyOfImage;
+        return image.getSubimage(
+            cropSize, cropSize,
+            image.getWidth() - 2 * cropSize,
+            image.getHeight() - 2 * cropSize
+        );
     }
 
 }
