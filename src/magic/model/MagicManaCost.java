@@ -44,7 +44,8 @@ public class MagicManaCost {
         MagicIcon.MANA_16
     };
 
-    public static final MagicManaCost ZERO=MagicManaCost.create("{0}");
+    public static final MagicManaCost ZERO = MagicManaCost.create("{0}");
+    public static final MagicManaCost NONE = new MagicManaCost(new int[MagicCostManaType.NR_OF_TYPES], 0);
     public static final int MAXIMUM_MANA_COST = 16;
 
     private final String costText;

@@ -65,7 +65,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     private String subTypeText ="";
     private EnumSet<MagicAbility> abilityFlags = EnumSet.noneOf(MagicAbility.class);
     private int colorFlags = -1;
-    private MagicManaCost cost=MagicManaCost.ZERO;
+    private MagicManaCost cost = MagicManaCost.NONE;
     private String manaSourceText="";
     private final int[] manaSource=new int[MagicColor.NR_COLORS];
     private int power;
@@ -557,7 +557,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
 
     public void setColors(final String colors) {
         colorFlags = MagicColor.getFlags(colors);
-        assert cost == MagicManaCost.ZERO || colorFlags != cost.getColorFlags() : "redundant color declaration: " + colorFlags;
+        assert cost == MagicManaCost.NONE || colorFlags != cost.getColorFlags() : "redundant color declaration: " + colorFlags;
     }
 
     public boolean hasColor(final MagicColor color) {
@@ -643,16 +643,16 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         return cost;
     }
 
+    public boolean hasCost() {
+        return cost != MagicManaCost.NONE;
+    }
+
     public List<MagicEvent> getCostEvent(final MagicCard source) {
         final List<MagicEvent> costEvent = new ArrayList<MagicEvent>();
-        final MagicManaCost modCost = source.getGame().modCost(source, cost);
-
-        if (modCost != MagicManaCost.ZERO) {
-            costEvent.add(new MagicPayManaCostEvent(
-                source,
-                modCost
-            ));
-        }
+        costEvent.add(MagicPayManaCostEvent.Cast(
+            source,
+            cost
+        ));
         costEvent.addAll(getAdditionalCostEvent(source));
         return costEvent;
     }
@@ -1129,9 +1129,5 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         } else {
             return true;
         }
-    }
-
-    public boolean showCostInExplorer() {
-        return !(isLand() || !isValid() || isToken() || (isHidden() && isDoubleFaced()));
     }
 }
