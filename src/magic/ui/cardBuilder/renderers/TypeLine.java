@@ -65,17 +65,10 @@ public class TypeLine {
         MagicType.SUPERTYPES.stream().filter(cardDef::hasType).forEach(aSuperType -> {
             typeLine.append(aSuperType).append(" ");
         });
-        if (cardDef.hasType(MagicType.Tribal)){
-            typeLine.append("Tribal ");
-        }
         if (cardDef.isToken()) {
             typeLine.append("Token ");
         }
-        MagicType.ALL_CARD_TYPES.stream().filter(cardDef::hasType).forEach(aType -> {
-            if (aType != MagicType.Tribal) {
-                typeLine.append(aType).append(" ");
-            }
-        });
+        MagicType.TYPE_ORDER.stream().filter(cardDef::hasType).forEach(aType -> typeLine.append(aType).append(' '));
         if (!subtype.isEmpty()) {
             typeLine.append("— ");
             typeLine.append(subtype.replaceAll(",", ""));

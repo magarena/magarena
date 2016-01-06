@@ -1,5 +1,6 @@
 package magic.model;
 
+import java.util.Arrays;
 import java.util.EnumSet;
 import java.util.Iterator;
 import java.util.List;
@@ -95,4 +96,21 @@ public enum MagicType {
     public boolean hasType(final int flags) {
         return (flags & getMask()) != 0;
     }
+
+    public static final List<MagicType> TYPE_ORDER = Arrays.asList(
+        Tribal,
+        Enchantment,
+        Artifact,
+        Land,
+        Creature,
+        Conspiracy,
+        Instant,
+        Phenomenon,
+        Plane,
+        Planeswalker,
+        Scheme,
+        Sorcery,
+        Vanguard);
+
+
 }
