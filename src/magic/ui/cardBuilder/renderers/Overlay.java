@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import magic.model.MagicAbility;
 import magic.model.MagicColor;
 import magic.ui.cardBuilder.IRenderableCard;
 import magic.ui.cardBuilder.ResourceManager;
@@ -102,9 +103,17 @@ public class Overlay {
         return baseFrame;
     }
 
-    public static void drawOverlay(BufferedImage cardImage, BufferedImage overlay) {
-        Graphics2D g2d = cardImage.createGraphics();
-        g2d.drawImage(overlay, 0, 0, null);
-        g2d.dispose();
+    public static void drawOverlay(BufferedImage cardImage, IRenderableCard cardDef) {
+        if (cardDef.hasOverlay()) {
+            BufferedImage overlay = getOverlay(cardDef);
+            Graphics2D g2d = cardImage.createGraphics();
+            g2d.drawImage(overlay, 0, 0, null);
+            g2d.dispose();
+        }
     }
+
+    private static BufferedImage getOverlay(IRenderableCard cardDef) {
+        return cardDef.hasAbility(MagicAbility.Devoid) ? getDevoidOverlay(cardDef) : getMiracleOverlay(cardDef);
+    }
+
 }

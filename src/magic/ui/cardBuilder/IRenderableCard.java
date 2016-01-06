@@ -124,4 +124,8 @@ public interface IRenderableCard {
         // returning from CardDefinition, no in-game changes
         return getCardDefinition().getCost();
     }
+
+    default boolean hasOverlay() {
+        return hasAbility(MagicAbility.Devoid) || hasAbility(MagicAbility.Miracle);
+    }
 }

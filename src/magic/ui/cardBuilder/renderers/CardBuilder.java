@@ -26,9 +26,6 @@ public class CardBuilder {
         if (cardDef.isFlipCard()) {
             return makeFlipCard(cardDef);
         }
-        if (cardDef.hasAbility(MagicAbility.Devoid)) {
-            return makeDevoidCard(cardDef);
-        }
         return makeBasicCard(cardDef);
     }
 
@@ -41,7 +38,7 @@ public class CardBuilder {
             PTFrame.drawPTPanel(cardImage, cardDef);
             TypeLine.drawCardTypeLine(cardImage, cardDef);
         }
-        TypeLine.drawRarity(cardImage,cardDef);
+        TypeLine.drawRarity(cardImage, cardDef);
         TitleFrame.drawTransformCardName(cardImage, cardDef);
         ImageFrame.drawImage(cardImage, cardDef);
         TitleFrame.drawManaCost(cardImage, cardDef);
@@ -73,7 +70,7 @@ public class CardBuilder {
         OracleText.drawOracleText(cardImage, cardDef);
         TitleFrame.drawCardName(cardImage, cardDef);
         TypeLine.drawCardTypeLine(cardImage, cardDef);
-        TypeLine.drawRarity(cardImage,cardDef);
+        TypeLine.drawRarity(cardImage, cardDef);
         return trimImage(cardImage);
     }
 
@@ -85,28 +82,13 @@ public class CardBuilder {
         TitleFrame.drawCardName(cardImage, cardDef);
         TitleFrame.drawManaCost(cardImage, cardDef);
         TypeLine.drawCardTypeLine(cardImage, cardDef);
-        TypeLine.drawRarity(cardImage,cardDef);
-        return trimImage(cardImage);
-    }
-
-    private static BufferedImage makeBasicCard(IRenderableCard cardDef) {
-        BufferedImage cardImage = Frame.getBasicFrameType(cardDef);
-        if (cardDef.hasAbility(MagicAbility.Miracle)) {
-            Overlay.drawOverlay(cardImage, Overlay.getMiracleOverlay(cardDef));
-        }
-        PTFrame.drawPTPanel(cardImage, cardDef);
-        ImageFrame.drawImage(cardImage, cardDef);
-        OracleText.drawOracleText(cardImage, cardDef);
-        TitleFrame.drawCardName(cardImage, cardDef);
-        TitleFrame.drawManaCost(cardImage, cardDef);
-        TypeLine.drawCardTypeLine(cardImage, cardDef);
         TypeLine.drawRarity(cardImage, cardDef);
         return trimImage(cardImage);
     }
 
-    private static BufferedImage makeDevoidCard(IRenderableCard cardDef) {
-        BufferedImage cardImage = Frame.getColorlessFrameType(cardDef);
-        Overlay.drawOverlay(cardImage, Overlay.getDevoidOverlay(cardDef));
+    private static BufferedImage makeBasicCard(IRenderableCard cardDef) {
+        BufferedImage cardImage = cardDef.hasAbility(MagicAbility.Devoid) ? Frame.getColorlessFrameType(cardDef) : Frame.getBasicFrameType(cardDef);
+        Overlay.drawOverlay(cardImage, cardDef);
         PTFrame.drawPTPanel(cardImage, cardDef);
         ImageFrame.drawImage(cardImage, cardDef);
         OracleText.drawOracleText(cardImage, cardDef);
