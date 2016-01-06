@@ -300,7 +300,6 @@ public class PTFrame {
             Rectangle2D box = new Rectangle(286, 469, 60, 28); //ptText dimensions (Can't use ptPanel due to shadow distorting size)
             Point centre = new Point((int) box.getCenterX(), (int) box.getCenterY()); //Centre of box
 
-
             TextLayout layout;
             layout = ptText.length() >= 6 ? new TextLayout(ptText, cardPTFontSmall, frc2) : new TextLayout(ptText, cardPTFont, frc2); //Power or Toughness over 99
             Point textCentre = new Point((int) layout.getBounds().getWidth() / 2, (int) layout.getBounds().getHeight() / 2); //Centre of text
@@ -315,8 +314,8 @@ public class PTFrame {
         Graphics2D g2d = cardImage.createGraphics();
         BufferedImage typeSymbol = ResourceManager.sunSymbol;
         if (cardDef.isHidden()) {
-            typeSymbol = cardDef.isPlaneswalker() ? ResourceManager.planeswalkerTypeSymbol : ResourceManager.moonSymbol;
-        } else if (cardDef.isCreature() && cardDef.hasType(MagicType.Legendary)) {
+            typeSymbol = cardDef.isPlaneswalker() && cardDef.getTransformedDefinition().isPlaneswalker() ? ResourceManager.planeswalkerTypeSymbol : ResourceManager.moonSymbol;
+        } else if (cardDef.isCreature() && cardDef.getTransformedDefinition().isPlaneswalker()) {
             typeSymbol = ResourceManager.sparkSymbol;
         }
         g2d.drawImage(typeSymbol, 19, 25, null);
