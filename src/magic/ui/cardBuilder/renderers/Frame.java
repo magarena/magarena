@@ -481,7 +481,7 @@ public class Frame {
         return ResourceManager.newFrame(ResourceManager.colorlessLandLevellerFrame);
     }
 
-    private static BufferedImage getDevoidFrame(MagicColor color) {
+    private static BufferedImage getDevoidMask(MagicColor color) {
         switch (color) {
             case White:
                 return ResourceManager.newFrame(ResourceManager.whiteDevoidFrame);
@@ -779,7 +779,7 @@ public class Frame {
         if (cardDef.isMulti()) {
             if (cardDef.isHybrid()) {
                 List<BufferedImage> colorFrames = new ArrayList<>();
-                colorFrames.addAll(getColorOrder(cardDef).stream().map(Frame::getDevoidFrame).collect(Collectors.toList()));
+                colorFrames.addAll(getColorOrder(cardDef).stream().map(Frame::getDevoidMask).collect(Collectors.toList()));
                 BufferedImage hybridFrame = getBlendedFrame(
                     ResourceManager.newFrame(colorFrames.get(0)),
                     ResourceManager.newFrame(ResourceManager.gainHybridBlend),
@@ -793,7 +793,7 @@ public class Frame {
         //Mono
         for (MagicColor color : MagicColor.values()) {
             if (cardDef.hasColor(color)) {
-                return getDevoidFrame(color);
+                return getDevoidMask(color);
             }
         }
         //Colorless
