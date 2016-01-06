@@ -153,11 +153,7 @@ public class Frame {
                             ResourceManager.newFrame(ResourceManager.multiTokenFrame));
                     }
                 } else {
-                    if (hasText) {
-                        return ResourceManager.newFrame(ResourceManager.multiTokenFrameText);
-                    } else {
-                        return ResourceManager.newFrame(ResourceManager.multiTokenFrame);
-                    }
+                    return hasText ? ResourceManager.newFrame(ResourceManager.multiTokenFrameText) : ResourceManager.newFrame(ResourceManager.multiTokenFrame);
                 }
             } else {
                 //Hybrid
@@ -382,9 +378,8 @@ public class Frame {
                 return ResourceManager.newFrame(ResourceManager.redFrame);
             case Green:
                 return ResourceManager.newFrame(ResourceManager.greenFrame);
-            default:
-                return ResourceManager.newFrame(ResourceManager.colorlessFrame);
         }
+        return ResourceManager.newFrame(ResourceManager.colorlessFrame);
     }
 
     private static BufferedImage getNyxFrame(MagicColor color) {
@@ -399,9 +394,8 @@ public class Frame {
                 return ResourceManager.newFrame(ResourceManager.redNyx);
             case Green:
                 return ResourceManager.newFrame(ResourceManager.greenNyx);
-            default:
-                return ResourceManager.newFrame(ResourceManager.colorlessNyx);
         }
+        return ResourceManager.newFrame(ResourceManager.colorlessNyx);
     }
 
     public static Set<MagicColor> getLandColors(IRenderableCard cardDef) {
@@ -451,9 +445,8 @@ public class Frame {
                 return ResourceManager.newFrame(ResourceManager.redLandFrame);
             case Green:
                 return ResourceManager.newFrame(ResourceManager.greenLandFrame);
-            default:
-                return ResourceManager.newFrame(ResourceManager.landFrame);
         }
+        return ResourceManager.newFrame(ResourceManager.landFrame);
     }
 
     private static BufferedImage getLandNyxFrame(MagicColor color) {
@@ -468,9 +461,8 @@ public class Frame {
                 return ResourceManager.newFrame(ResourceManager.redLandNyx);
             case Green:
                 return ResourceManager.newFrame(ResourceManager.greenLandNyx);
-            default:
-                return ResourceManager.newFrame(ResourceManager.landNyx);
         }
+        return ResourceManager.newFrame(ResourceManager.landNyx);
     }
 
     private static BufferedImage getLandLevellerFrame(MagicColor color) {
@@ -485,9 +477,8 @@ public class Frame {
                 return ResourceManager.newFrame(ResourceManager.redLandLevellerFrame);
             case Green:
                 return ResourceManager.newFrame(ResourceManager.greenLandLevellerFrame);
-            default:
-                return ResourceManager.newFrame(ResourceManager.colorlessLandLevellerFrame);
         }
+        return ResourceManager.newFrame(ResourceManager.colorlessLandLevellerFrame);
     }
 
     private static BufferedImage getDevoidFrame(MagicColor color) {
@@ -502,9 +493,9 @@ public class Frame {
                 return ResourceManager.newFrame(ResourceManager.greenDevoidFrame);
             case Red:
                 return ResourceManager.newFrame(ResourceManager.redDevoidFrame);
-            default:
-                return ResourceManager.newFrame(ResourceManager.colorlessDevoidFrame);
         }
+        return ResourceManager.newFrame(ResourceManager.colorlessDevoidFrame);
+    }
 
     private static BufferedImage getMiracleMask(MagicColor color) {
         switch (color) {
@@ -534,9 +525,8 @@ public class Frame {
                 return ResourceManager.newFrame(ResourceManager.greenHidden);
             case Red:
                 return ResourceManager.newFrame(ResourceManager.redHidden);
-            default:
-                return ResourceManager.newFrame(ResourceManager.colorlessHidden);
         }
+        return ResourceManager.newFrame(ResourceManager.colorlessHidden);
     }
 
     private static BufferedImage getTransformFrame(MagicColor color) {
@@ -551,9 +541,8 @@ public class Frame {
                 return ResourceManager.newFrame(ResourceManager.greenTransform);
             case Red:
                 return ResourceManager.newFrame(ResourceManager.redTransform);
-            default:
-                return ResourceManager.newFrame(ResourceManager.colorlessTransform);
         }
+        return ResourceManager.newFrame(ResourceManager.colorlessTransform);
     }
 
     private static BufferedImage getLandHiddenFrame(MagicColor color) {
@@ -568,9 +557,8 @@ public class Frame {
                 return ResourceManager.newFrame(ResourceManager.redLandHidden);
             case Green:
                 return ResourceManager.newFrame(ResourceManager.greenLandHidden);
-            default:
-                return ResourceManager.newFrame(ResourceManager.colorlessLandHidden);
         }
+        return ResourceManager.newFrame(ResourceManager.colorlessLandHidden);
     }
 
     private static BufferedImage getLandTransformFrame(MagicColor color) {
@@ -585,9 +573,8 @@ public class Frame {
                 return ResourceManager.newFrame(ResourceManager.redLandTransform);
             case Green:
                 return ResourceManager.newFrame(ResourceManager.greenLandTransform);
-            default:
-                return ResourceManager.newFrame(ResourceManager.colorlessLandTransform);
         }
+        return ResourceManager.newFrame(ResourceManager.colorlessLandTransform);
     }
 
     private static BufferedImage getTokenBannerFrame(BufferedImage frame, BufferedImage banner) {
@@ -626,9 +613,8 @@ public class Frame {
                 return ResourceManager.newFrame(ResourceManager.redTokenFrame);
             case Green:
                 return ResourceManager.newFrame(ResourceManager.greenTokenFrame);
-            default:
-                return ResourceManager.newFrame(ResourceManager.colorlessTokenFrame);
         }
+        return ResourceManager.newFrame(ResourceManager.colorlessTokenFrame);
     }
 
     private static BufferedImage getLevellerFrame(MagicColor color) {
@@ -643,9 +629,8 @@ public class Frame {
                 return ResourceManager.newFrame(ResourceManager.redLevellerFrame);
             case Green:
                 return ResourceManager.newFrame(ResourceManager.greenLevellerFrame);
-            default:
-                return ResourceManager.newFrame(ResourceManager.colorlessLevellerFrame);
         }
+        return ResourceManager.newFrame(ResourceManager.colorlessLevellerFrame);
     }
 
     private static BufferedImage getPlaneswalkerFrame(MagicColor color) {
@@ -660,9 +645,8 @@ public class Frame {
                 return ResourceManager.newFrame(ResourceManager.redPlaneswalkerFrame);
             case Green:
                 return ResourceManager.newFrame(ResourceManager.greenPlaneswalkerFrame);
-            default:
-                return ResourceManager.newFrame(ResourceManager.colorlessPlaneswalkerFrame);
         }
+        return ResourceManager.newFrame(ResourceManager.colorlessPlaneswalkerFrame);
     }
 
     private static BufferedImage getPlaneswalker4Frame(MagicColor color) {
@@ -677,9 +661,8 @@ public class Frame {
                 return ResourceManager.newFrame(ResourceManager.redPlaneswalker4);
             case Green:
                 return ResourceManager.newFrame(ResourceManager.greenPlaneswalker4);
-            default:
-                return ResourceManager.newFrame(ResourceManager.colorlessPlaneswalker4);
         }
+        return ResourceManager.newFrame(ResourceManager.colorlessPlaneswalker4);
     }
 
     private static BufferedImage getTokenFrameText(MagicColor color) {
@@ -694,9 +677,8 @@ public class Frame {
                 return ResourceManager.newFrame(ResourceManager.redTokenFrameText);
             case Green:
                 return ResourceManager.newFrame(ResourceManager.greenTokenFrameText);
-            default:
-                return ResourceManager.newFrame(ResourceManager.colorlessTokenFrameText);
         }
+        return ResourceManager.newFrame(ResourceManager.colorlessTokenFrameText);
     }
 
     static BufferedImage getLevellerFrameType(IRenderableCard cardDef) {

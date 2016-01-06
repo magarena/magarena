@@ -149,9 +149,8 @@ public class OracleText {
                 return ResourceManager.redLandImage;
             case White:
                 return ResourceManager.whiteLandImage;
-            default:
-                return null;
         }
+        return null;
     }
 
     private static BufferedImage getHybridLandImage(Collection<MagicColor> colors) {
