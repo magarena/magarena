@@ -481,38 +481,6 @@ public class Frame {
         return ResourceManager.newFrame(ResourceManager.colorlessLandLevellerFrame);
     }
 
-    private static BufferedImage getDevoidMask(MagicColor color) {
-        switch (color) {
-            case White:
-                return ResourceManager.newFrame(ResourceManager.whiteDevoidFrame);
-            case Blue:
-                return ResourceManager.newFrame(ResourceManager.blueDevoidFrame);
-            case Black:
-                return ResourceManager.newFrame(ResourceManager.blackDevoidFrame);
-            case Green:
-                return ResourceManager.newFrame(ResourceManager.greenDevoidFrame);
-            case Red:
-                return ResourceManager.newFrame(ResourceManager.redDevoidFrame);
-        }
-        return ResourceManager.newFrame(ResourceManager.colorlessDevoidFrame);
-    }
-
-    private static BufferedImage getMiracleMask(MagicColor color) {
-        switch (color) {
-            case White:
-                return ResourceManager.newFrame(ResourceManager.whiteMiracle);
-            case Blue:
-                return ResourceManager.newFrame(ResourceManager.blueMiracle);
-            case Black:
-                return ResourceManager.newFrame(ResourceManager.blackMiracle);
-            case Green:
-                return ResourceManager.newFrame(ResourceManager.greenMiracle);
-            case Red:
-                return ResourceManager.newFrame(ResourceManager.redMiracle);
-        }
-        return ResourceManager.newFrame(ResourceManager.colorlessMiracle);
-    }
-
     private static BufferedImage getHiddenFrame(MagicColor color) {
         switch (color) {
             case White:
@@ -764,66 +732,6 @@ public class Frame {
                 } else {
                     return getLevellerFrame(color);
                 }
-            }
-        }
-        //Colorless
-        return baseFrame;
-    }
-
-    static BufferedImage getDevoidOverlay(IRenderableCard cardDef) {
-        boolean artifact = cardDef.isArtifact();
-        BufferedImage baseFrame = ResourceManager.newFrame(ResourceManager.colorlessDevoidFrame);
-        if (artifact) {
-            baseFrame = ResourceManager.newFrame(ResourceManager.artifactDevoidFrame);
-        }
-        if (cardDef.isMulti()) {
-            if (cardDef.isHybrid()) {
-                List<BufferedImage> colorFrames = new ArrayList<>();
-                colorFrames.addAll(getColorOrder(cardDef).stream().map(Frame::getDevoidMask).collect(Collectors.toList()));
-                BufferedImage hybridFrame = getBlendedFrame(
-                    ResourceManager.newFrame(colorFrames.get(0)),
-                    ResourceManager.newFrame(ResourceManager.gainHybridBlend),
-                    ResourceManager.newFrame(colorFrames.get(1))
-                );
-                return hybridFrame;
-            } else {
-                return ResourceManager.newFrame(ResourceManager.multiDevoidFrame);
-            }
-        }
-        //Mono
-        for (MagicColor color : MagicColor.values()) {
-            if (cardDef.hasColor(color)) {
-                return getDevoidMask(color);
-            }
-        }
-        //Colorless
-        return baseFrame;
-    }
-
-    static BufferedImage getMiracleOverlay(IRenderableCard cardDef) {
-        boolean artifact = cardDef.isArtifact();
-        BufferedImage baseFrame = ResourceManager.newFrame(ResourceManager.colorlessMiracle);
-        if (artifact) {
-            baseFrame = ResourceManager.newFrame(ResourceManager.artifactMiracle);
-        }
-        if (cardDef.isMulti()) {
-            if (cardDef.isHybrid()) {
-                List<BufferedImage> colorFrames = new ArrayList<>();
-                colorFrames.addAll(getColorOrder(cardDef).stream().map(Frame::getMiracleMask).collect(Collectors.toList()));
-                BufferedImage hybridFrame = getBlendedFrame(
-                    ResourceManager.newFrame(colorFrames.get(0)),
-                    ResourceManager.newFrame(ResourceManager.gainHybridBlend),
-                    ResourceManager.newFrame(colorFrames.get(1))
-                );
-                return hybridFrame;
-            } else {
-                return ResourceManager.newFrame(ResourceManager.multiMiracle);
-            }
-        }
-        //Mono
-        for (MagicColor color : MagicColor.values()) {
-            if (cardDef.hasColor(color)) {
-                return getMiracleMask(color);
             }
         }
         //Colorless
@@ -1138,9 +1046,4 @@ public class Frame {
         return ResourceManager.newFrame(ResourceManager.colorlessFrame);
     }
 
-    public static void drawOverlay(BufferedImage cardImage, BufferedImage overlay) {
-        Graphics2D g2d = cardImage.createGraphics();
-        g2d.drawImage(overlay, 0, 0, null);
-        g2d.dispose();
-    }
 }
