@@ -228,7 +228,14 @@ public class ResourceManager {
     public static final BufferedImage uncommon = getComponent("rarity/Uncommon.png");
     public static final BufferedImage rare = getComponent("rarity/Rare.png");
     public static final BufferedImage mythic = getComponent("rarity/Mythic.png");
-
+    public static final BufferedImage artifactMiracle = getComponent("miracle/aMiracleOverlay.png");
+    public static final BufferedImage blackMiracle = getComponent("miracle/bMiracleOverlay.png");
+    public static final BufferedImage colorlessMiracle = getComponent("miracle/cMiracleOverlay.png");
+    public static final BufferedImage multiMiracle = getComponent("miracle/mMiracleOverlay.png");
+    public static final BufferedImage redMiracle = getComponent("miracle/rMiracleOverlay.png");
+    public static final BufferedImage blueMiracle = getComponent("miracle/uMiracleOverlay.png");
+    public static final BufferedImage whiteMiracle = getComponent("miracle/wMiracleOverlay.png");
+    public static final BufferedImage greenMiracle = getComponent("miracle/gMiracleOverlay.png");
 
     //Font Map
     private static final String[] names = {};

@@ -505,6 +505,21 @@ public class Frame {
             default:
                 return ResourceManager.newFrame(ResourceManager.colorlessDevoidFrame);
         }
+
+    private static BufferedImage getMiracleMask(MagicColor color) {
+        switch (color) {
+            case White:
+                return ResourceManager.newFrame(ResourceManager.whiteMiracle);
+            case Blue:
+                return ResourceManager.newFrame(ResourceManager.blueMiracle);
+            case Black:
+                return ResourceManager.newFrame(ResourceManager.blackMiracle);
+            case Green:
+                return ResourceManager.newFrame(ResourceManager.greenMiracle);
+            case Red:
+                return ResourceManager.newFrame(ResourceManager.redMiracle);
+        }
+        return ResourceManager.newFrame(ResourceManager.colorlessMiracle);
     }
 
     private static BufferedImage getHiddenFrame(MagicColor color) {
@@ -773,7 +788,7 @@ public class Frame {
         return baseFrame;
     }
 
-    static BufferedImage getDevoidFrameType(IRenderableCard cardDef) {
+    static BufferedImage getDevoidOverlay(IRenderableCard cardDef) {
         boolean artifact = cardDef.isArtifact();
         BufferedImage baseFrame = ResourceManager.newFrame(ResourceManager.colorlessDevoidFrame);
         if (artifact) {
@@ -797,6 +812,36 @@ public class Frame {
         for (MagicColor color : MagicColor.values()) {
             if (cardDef.hasColor(color)) {
                 return getDevoidFrame(color);
+            }
+        }
+        //Colorless
+        return baseFrame;
+    }
+
+    static BufferedImage getMiracleOverlay(IRenderableCard cardDef) {
+        boolean artifact = cardDef.isArtifact();
+        BufferedImage baseFrame = ResourceManager.newFrame(ResourceManager.colorlessMiracle);
+        if (artifact) {
+            baseFrame = ResourceManager.newFrame(ResourceManager.artifactMiracle);
+        }
+        if (cardDef.isMulti()) {
+            if (cardDef.isHybrid()) {
+                List<BufferedImage> colorFrames = new ArrayList<>();
+                colorFrames.addAll(getColorOrder(cardDef).stream().map(Frame::getMiracleMask).collect(Collectors.toList()));
+                BufferedImage hybridFrame = getBlendedFrame(
+                    ResourceManager.newFrame(colorFrames.get(0)),
+                    ResourceManager.newFrame(ResourceManager.gainHybridBlend),
+                    ResourceManager.newFrame(colorFrames.get(1))
+                );
+                return hybridFrame;
+            } else {
+                return ResourceManager.newFrame(ResourceManager.multiMiracle);
+            }
+        }
+        //Mono
+        for (MagicColor color : MagicColor.values()) {
+            if (cardDef.hasColor(color)) {
+                return getMiracleMask(color);
             }
         }
         //Colorless

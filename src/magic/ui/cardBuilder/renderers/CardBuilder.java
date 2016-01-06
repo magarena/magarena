@@ -91,6 +91,9 @@ public class CardBuilder {
 
     private static BufferedImage makeBasicCard(IRenderableCard cardDef) {
         BufferedImage cardImage = Frame.getBasicFrameType(cardDef);
+        if (cardDef.hasAbility(MagicAbility.Miracle)) {
+            Frame.drawOverlay(cardImage, Frame.getMiracleOverlay(cardDef));
+        }
         PTFrame.drawPTPanel(cardImage, cardDef);
         ImageFrame.drawImage(cardImage, cardDef);
         OracleText.drawOracleText(cardImage, cardDef);
@@ -103,7 +106,7 @@ public class CardBuilder {
 
     private static BufferedImage makeDevoidCard(IRenderableCard cardDef) {
         BufferedImage cardImage = Frame.getColorlessFrameType(cardDef);
-        Frame.drawOverlay(cardImage, Frame.getDevoidFrameType(cardDef));
+        Frame.drawOverlay(cardImage, Frame.getDevoidOverlay(cardDef));
         PTFrame.drawPTPanel(cardImage, cardDef);
         ImageFrame.drawImage(cardImage, cardDef);
         OracleText.drawOracleText(cardImage, cardDef);
