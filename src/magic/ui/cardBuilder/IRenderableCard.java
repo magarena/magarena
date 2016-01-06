@@ -36,8 +36,12 @@ public interface IRenderableCard {
         return getCardDefinition().getTransformedDefinition();
     }
 
-    default boolean isLand() {
-        return hasType(MagicType.Land);
+    default int getStartingLoyalty() {
+        return getCardDefinition().getStartingLoyalty();
+    }
+
+    default boolean isMulti() {
+        return getNumColors() > 1;
     }
 
     default boolean isHybrid() {
@@ -45,12 +49,9 @@ public interface IRenderableCard {
         //If doesn't contain single color mana, and does contain hybrid mana. Checks for absence
         return Collections.disjoint(list, MagicIcon.COLOR_MANA) && !Collections.disjoint(list, MagicIcon.HYBRID_COLOR_MANA);
     }
-    default boolean isMulti() {
-        return getNumColors() > 1;
-    }
 
-    default int getStartingLoyalty() {
-        return getCardDefinition().getStartingLoyalty();
+    default boolean isLand() {
+        return hasType(MagicType.Land);
     }
 
     default boolean isCreature() {
