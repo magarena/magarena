@@ -139,8 +139,7 @@ public class MagicHandCastActivation extends MagicActivation<MagicCard> implemen
                 return Collections.<MagicEvent>singletonList(
                     new MagicPayManaCostEvent(
                         source,
-                        source.getCost().reduce(
-                            MagicCostManaType.Generic,
+                        source.getGameCost().reduce(
                             source.getController().getNrOfPermanents(filter)
                         )
                     )
