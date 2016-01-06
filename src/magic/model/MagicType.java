@@ -9,7 +9,6 @@ public enum MagicType {
 
     // these are supertypes
     Basic,
-    Elite,
     Legendary,
     Ongoing,
     Snow,
@@ -17,10 +16,12 @@ public enum MagicType {
 
     // these are card types
     Artifact,
+    Conspiracy,
     Creature,
     Enchantment,
     Instant,
     Land,
+    Phenomenon,
     Plane,
     Planeswalker,
     Scheme,
