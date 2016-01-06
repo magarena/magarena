@@ -16,9 +16,6 @@ public class CardBuilder {
         if (cardDef.hasType(MagicType.Planeswalker)) {
             return makePlaneswalker(cardDef);
         }
-        if (cardDef.hasAbility(MagicAbility.LevelUp)) {
-            return makeLeveller(cardDef);
-        }
         if (cardDef.isToken()) {
             return makeToken(cardDef);
         }
@@ -43,19 +40,6 @@ public class CardBuilder {
         TitleFrame.drawManaCost(cardImage, cardDef);
         PTFrame.drawTransformSymbol(cardImage, cardDef);
         OracleText.drawOracleText(cardImage, cardDef);
-        return trimImage(cardImage);
-    }
-
-    private static BufferedImage makeLeveller(IRenderableCard cardDef) {
-        BufferedImage cardImage = Frame.getLevellerFrameType(cardDef);
-        PTFrame.drawLevellerPTPanels(cardImage, cardDef);
-        PTFrame.drawLevellerArrowText(cardImage, cardDef);
-        ImageFrame.drawImage(cardImage, cardDef);
-        OracleText.drawLevellerOracleText(cardImage, cardDef);
-        TitleFrame.drawCardName(cardImage, cardDef);
-        TitleFrame.drawManaCost(cardImage, cardDef);
-        TypeLine.drawCardTypeLine(cardImage, cardDef);
-        TypeLine.drawRarity(cardImage, cardDef);
         return trimImage(cardImage);
     }
 
@@ -88,9 +72,16 @@ public class CardBuilder {
     private static BufferedImage makeBasicCard(IRenderableCard cardDef) {
         BufferedImage cardImage = cardDef.hasAbility(MagicAbility.Devoid) ? Frame.getColorlessFrameType(cardDef) : Frame.getBasicFrameType(cardDef);
         Overlay.drawOverlay(cardImage, cardDef);
-        PTFrame.drawPTPanel(cardImage, cardDef);
+        Overlay.drawTextOverlay(cardImage,cardDef);
+        if (cardDef.hasAbility(MagicAbility.LevelUp)){
+            PTFrame.drawLevellerPTPanels(cardImage,cardDef);
+            PTFrame.drawLevellerArrowText(cardImage,cardDef);
+            OracleText.drawLevellerOracleText(cardImage,cardDef);
+        } else {
+            PTFrame.drawPTPanel(cardImage, cardDef);
+            OracleText.drawOracleText(cardImage, cardDef);
+        }
         ImageFrame.drawImage(cardImage, cardDef);
-        OracleText.drawOracleText(cardImage, cardDef);
         TitleFrame.drawCardName(cardImage, cardDef);
         TitleFrame.drawManaCost(cardImage, cardDef);
         TypeLine.drawCardTypeLine(cardImage, cardDef);

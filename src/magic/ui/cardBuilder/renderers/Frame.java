@@ -465,22 +465,6 @@ public class Frame {
         return ResourceManager.newFrame(ResourceManager.landNyx);
     }
 
-    private static BufferedImage getLandLevellerFrame(MagicColor color) {
-        switch (color) {
-            case White:
-                return ResourceManager.newFrame(ResourceManager.whiteLandLevellerFrame);
-            case Blue:
-                return ResourceManager.newFrame(ResourceManager.blueLandLevellerFrame);
-            case Black:
-                return ResourceManager.newFrame(ResourceManager.blackLandLevellerFrame);
-            case Red:
-                return ResourceManager.newFrame(ResourceManager.redLandLevellerFrame);
-            case Green:
-                return ResourceManager.newFrame(ResourceManager.greenLandLevellerFrame);
-        }
-        return ResourceManager.newFrame(ResourceManager.colorlessLandLevellerFrame);
-    }
-
     private static BufferedImage getHiddenFrame(MagicColor color) {
         switch (color) {
             case White:
@@ -585,22 +569,6 @@ public class Frame {
         return ResourceManager.newFrame(ResourceManager.colorlessTokenFrame);
     }
 
-    private static BufferedImage getLevellerFrame(MagicColor color) {
-        switch (color) {
-            case White:
-                return ResourceManager.newFrame(ResourceManager.whiteLevellerFrame);
-            case Blue:
-                return ResourceManager.newFrame(ResourceManager.blueLevellerFrame);
-            case Black:
-                return ResourceManager.newFrame(ResourceManager.blackLevellerFrame);
-            case Red:
-                return ResourceManager.newFrame(ResourceManager.redLevellerFrame);
-            case Green:
-                return ResourceManager.newFrame(ResourceManager.greenLevellerFrame);
-        }
-        return ResourceManager.newFrame(ResourceManager.colorlessLevellerFrame);
-    }
-
     private static BufferedImage getPlaneswalkerFrame(MagicColor color) {
         switch (color) {
             case White:
@@ -649,95 +617,6 @@ public class Frame {
         return ResourceManager.newFrame(ResourceManager.colorlessTokenFrameText);
     }
 
-    static BufferedImage getLevellerFrameType(IRenderableCard cardDef) {
-        boolean land = cardDef.hasType(MagicType.Land);
-        boolean artifact = cardDef.hasType(MagicType.Artifact);
-        Set<MagicColor> landColor = new HashSet<>();
-        BufferedImage baseFrame = ResourceManager.newFrame(ResourceManager.colorlessLevellerFrame);
-        if (land) {
-            baseFrame = ResourceManager.newFrame(ResourceManager.colorlessLandLevellerFrame);
-            //Land Colors
-            landColor = getLandColors(cardDef);
-        } else if (artifact) {
-            baseFrame = ResourceManager.newFrame(ResourceManager.artifactLevellerFrame);
-        }
-        //Multi
-        if (cardDef.isMulti() || landColor.size() > 1) {
-            if (cardDef.getNumColors() > 2 || land && landColor.size() > 2) {
-                if (artifact || land) {
-                    return getBlendedFrame(
-                        baseFrame,
-                        ResourceManager.newFrame(ResourceManager.gainColorBlend),
-                        ResourceManager.newFrame(ResourceManager.multiLevellerFrame));
-                } else {
-                    return ResourceManager.newFrame(ResourceManager.multiLevellerFrame);
-                }
-            } else {
-                //Hybrid
-                List<BufferedImage> colorFrames = new ArrayList<>();
-                if (land) {
-                    colorFrames.addAll(getColorOrder(landColor).stream().map(Frame::getLandLevellerFrame).collect(Collectors.toList()));
-                } else {
-                    colorFrames.addAll(getColorOrder(cardDef).stream().map(Frame::getLevellerFrame).collect(Collectors.toList()));
-                }
-                //A colorless Banner with color piping
-                BufferedImage colorlessBanner = getBannerFrame(
-                    ResourceManager.newFrame(ResourceManager.colorlessFrame),
-                    getBlendedFrame(
-                        ResourceManager.newFrame(colorFrames.get(0)),
-                        ResourceManager.newFrame(ResourceManager.gainHybridBlend),
-                        ResourceManager.newFrame(colorFrames.get(1)))
-                );
-                //Check for Hybrid + Return colorless banner blend
-                if (cardDef.isHybrid()) {
-                    return colorlessBanner;
-                }
-                //Check dual color land + Return colorless banner blend
-                if (land && landColor.size() == 2) {
-                    return getBlendedFrame(
-                        baseFrame,
-                        ResourceManager.newFrame(ResourceManager.gainColorBlend),
-                        ResourceManager.newFrame(colorlessBanner)
-                    );
-                }
-                //Create Gold Banner blend
-                BufferedImage goldBanner = getBannerFrame(
-                    ResourceManager.newFrame(ResourceManager.multiLevellerFrame),
-                    getBlendedFrame(
-                        ResourceManager.newFrame(colorFrames.get(0)),
-                        ResourceManager.newFrame(ResourceManager.gainHybridBlend),
-                        ResourceManager.newFrame(colorFrames.get(1))
-                    ));
-                //Color piping for Dual-Color
-                if (artifact || land) {
-                    return getBlendedFrame(
-                        baseFrame,
-                        ResourceManager.newFrame(ResourceManager.gainColorBlend),
-                        ResourceManager.newFrame(goldBanner));
-                } else {
-                    return getBlendedFrame(
-                        ResourceManager.newFrame(ResourceManager.multiLevellerFrame),
-                        ResourceManager.newFrame(ResourceManager.gainColorBlend),
-                        ResourceManager.newFrame(goldBanner));
-                }
-            }
-        }
-        //Mono
-        for (MagicColor color : MagicColor.values()) {
-            if (cardDef.hasColor(color) || landColor.contains(color)) {
-                if (artifact) {
-                    return getBlendFrame(baseFrame, color);
-                } else if (land) {
-                    return getLandLevellerFrame(color);
-                } else {
-                    return getLevellerFrame(color);
-                }
-            }
-        }
-        //Colorless
-        return baseFrame;
-    }
-
     static BufferedImage getPlaneswalkerFrameType(IRenderableCard cardDef) {
         boolean land = cardDef.hasType(MagicType.Land);
         boolean artifact = cardDef.hasType(MagicType.Artifact);
@@ -745,7 +624,7 @@ public class Frame {
         if (OracleText.getPlaneswalkerAbilityCount(cardDef) == 3) {
             BufferedImage baseFrame = ResourceManager.newFrame(ResourceManager.colorlessPlaneswalkerFrame);
             if (land) {
-                baseFrame = ResourceManager.newFrame(ResourceManager.colorlessLandLevellerFrame); // No frame for land planeswalkers
+                // No frame for land planeswalkers
                 //Land Colors
                 landColor = getLandColors(cardDef);
             } else if (artifact) {
@@ -765,11 +644,7 @@ public class Frame {
                 } else {
                     //Hybrid
                     List<BufferedImage> colorFrames = new ArrayList<>();
-                    if (land) {
-                        colorFrames.addAll(getColorOrder(landColor).stream().map(Frame::getLandLevellerFrame).collect(Collectors.toList()));
-                    } else {
-                        colorFrames.addAll(getColorOrder(cardDef).stream().map(Frame::getPlaneswalkerFrame).collect(Collectors.toList()));
-                    }
+                    colorFrames.addAll(getColorOrder(cardDef).stream().map(Frame::getPlaneswalkerFrame).collect(Collectors.toList()));
                     //A colorless Banner with color piping
                     BufferedImage colorlessBanner = getPlaneswalkerBannerFrame(
                         ResourceManager.newFrame(ResourceManager.colorlessPlaneswalkerFrame),
@@ -815,20 +690,14 @@ public class Frame {
             //Mono
             for (MagicColor color : MagicColor.values()) {
                 if (cardDef.hasColor(color) || landColor.contains(color)) {
-                    if (artifact) {
-                        return getPlaneswalkerBlendFrame(baseFrame, color);
-                    } else if (land) {
-                        return getLandLevellerFrame(color);
-                    } else {
-                        return getPlaneswalkerFrame(color);
-                    }
+                    return artifact ? getPlaneswalkerBlendFrame(baseFrame, color) : getPlaneswalkerFrame(color);
                 }
             }
             return baseFrame;
         } else {
             BufferedImage baseFrame = ResourceManager.newFrame(ResourceManager.colorlessPlaneswalker4);
             if (land) {
-                baseFrame = ResourceManager.newFrame(ResourceManager.colorlessLandLevellerFrame); // No frame for land planeswalkers
+                // No frame for land planeswalkers
                 //Land Colors
                 landColor = getLandColors(cardDef);
             } else if (artifact) {
@@ -848,11 +717,7 @@ public class Frame {
                 } else {
                     //Hybrid
                     List<BufferedImage> colorFrames = new ArrayList<>();
-                    if (land) {
-                        colorFrames.addAll(getColorOrder(landColor).stream().map(Frame::getLandLevellerFrame).collect(Collectors.toList()));
-                    } else {
-                        colorFrames.addAll(getColorOrder(cardDef).stream().map(Frame::getPlaneswalker4Frame).collect(Collectors.toList()));
-                    }
+                    colorFrames.addAll(getColorOrder(cardDef).stream().map(Frame::getPlaneswalker4Frame).collect(Collectors.toList()));
                     //A colorless Banner with color piping
                     BufferedImage colorlessBanner = getPlaneswalker4BannerFrame(
                         ResourceManager.newFrame(ResourceManager.colorlessPlaneswalker4),
@@ -898,13 +763,7 @@ public class Frame {
             //Mono
             for (MagicColor color : MagicColor.values()) {
                 if (cardDef.hasColor(color) || landColor.contains(color)) {
-                    if (artifact) {
-                        return getPlaneswalker4BlendFrame(baseFrame, color);
-                    } else if (land) {
-                        return getLandLevellerFrame(color);
-                    } else {
-                        return getPlaneswalker4Frame(color);
-                    }
+                    return artifact ? getPlaneswalker4BlendFrame(baseFrame, color) : getPlaneswalker4Frame(color);
                 }
             }
             return baseFrame;

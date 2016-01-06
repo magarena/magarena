@@ -128,4 +128,8 @@ public interface IRenderableCard {
     default boolean hasOverlay() {
         return hasAbility(MagicAbility.Devoid) || hasAbility(MagicAbility.Miracle);
     }
+
+    default boolean hasTextOverlay() {
+        return hasAbility(MagicAbility.LevelUp);
+    }
 }
