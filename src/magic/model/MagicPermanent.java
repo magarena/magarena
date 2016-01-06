@@ -1421,9 +1421,15 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource,Magic
 
     @Override
     public boolean isHidden() {return cardDefinition.isHidden();}
+
     @Override
     public Character getRarityChar(){
         return cardDefinition.getRarityChar();
+    }
+
+    @Override
+    public MagicCardDefinition getTransformedDefinition() {
+        return cardDefinition.getTransformedDefinition();
     }
 
 }

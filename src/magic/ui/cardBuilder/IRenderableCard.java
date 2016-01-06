@@ -4,6 +4,7 @@ import java.util.Collection;
 import java.util.Set;
 
 import magic.model.MagicAbility;
+import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicManaCost;
 import magic.model.MagicSubType;
@@ -43,4 +44,5 @@ public interface IRenderableCard {
     boolean isEnchantment();
     boolean isHidden();
     Character getRarityChar();
+    MagicCardDefinition getTransformedDefinition();
 }

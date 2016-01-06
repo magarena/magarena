@@ -3,7 +3,6 @@ package magic.model;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.EnumMap;
-import java.util.EnumSet;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
@@ -596,5 +595,10 @@ public class MagicCard
     @Override
     public Character getRarityChar() {
         return cardDefinition.getRarityChar();
+    }
+
+    @Override
+    public MagicCardDefinition getTransformedDefinition() {
+        return cardDefinition.getTransformedDefinition();
     }
 }
