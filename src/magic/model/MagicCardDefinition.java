@@ -394,6 +394,10 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         return transformCardDefinition;
     }
 
+    public MagicCardDefinition getCardDefinition() {
+        return this;
+    }
+
     public boolean isBasic() {
         return hasType(MagicType.Basic);
     }
@@ -1033,12 +1037,6 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         return MagicFileSystem.getCardImageFile(this).exists() == false;
     }
 
-    public boolean isHybrid() {
-        final List<MagicIcon> list = getCost().getIcons();
-        //If doesn't contain single color mana, and does contain hybrid mana. Checks for absence
-        return Collections.disjoint(list, MagicIcon.COLOR_MANA) && !Collections.disjoint(list, MagicIcon.HYBRID_COLOR_MANA);
-    }
-
     public void setPowerToughnessText(String string) {
         powerToughnessText = string;
     }
@@ -1070,33 +1068,6 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         } else {
             return "";
         }
-    }
-
-    @Override
-    public int getNumColors() {
-        int numColors = 0;
-        for (final MagicColor color : MagicColor.values()) {
-            if (hasColor(color)) {
-                numColors++;
-            }
-        }
-        return numColors;
-    }
-
-    @Override
-    public Set<MagicType> getTypes() {
-        Set<MagicType> types = new HashSet<MagicType>();
-        for (MagicType type : MagicType.values()) {
-            if (hasType(type)) {
-                types.add(type);
-            }
-        }
-        return types;
-    }
-
-    @Override
-    public boolean isMulti() {
-        return getNumColors() > 1;
     }
 
     @Override
