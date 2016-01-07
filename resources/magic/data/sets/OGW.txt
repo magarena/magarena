@@ -1,5 +1,6 @@
 Ayli, Eternal Pilgrim
 Baloth Null
+Bearer of Silence
 Bonds on Mortality
 Bone Saw
 Boulder Salvo
@@ -13,6 +14,7 @@ Crumbling Vestige
 Crush of Tentacles
 Deceiver of Form
 Deepfathom Skulker
+Dimensional Infiltrator
 Drana's Chosen
 Dread Defiler
 Eldrazi Displacer
@@ -25,19 +27,25 @@ Fall of the Titans
 Flayer Drone
 Flaying Tendrils
 General Tazri
+Gift of Tusks
 Gladehart Cavalry
 Goblin Dark-Dwellers
+Goblin Freerunner
 Hedron Alignment
+Hedron Crawler
 Hissing Quagmire
 Holdout Settlement
 Immolating Glare
+Inverter of Truth
 Joraga Auxiliary
 Jori En, Ruin Diver
+Jwar Isle Avenger
 Kalitas, Traitor of Ghet
 Kozilek's Return
 Kozilek, the Great Distortion
 Linvala, the Preserver
 Meandering River
+Mina and Denn, Wildborn
 Mindmelter
 Mirrorpool
 Munda's Vanguard
@@ -54,10 +62,12 @@ Reality Smasher
 Reckless Bushwhacker
 Reflector Mage
 Relentless Hunter
+Relief Captain
 Remorseless Punishment
 Ruins of Oran-Rief
 Scion Summoner
 Sea Gate Wreckage
+Seer's Lantern
 Shoulder to Shoulder
 Sifter of Skulls
 Spatial Contortion
@@ -76,6 +86,7 @@ Vile Redeemer
 Void Grafter
 Walker of the Wastes
 Wandering Fumarole
+Warping Wail
 Wastes
 Weapons Trainer
 World Breaker
