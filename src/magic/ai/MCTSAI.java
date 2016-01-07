@@ -416,6 +416,8 @@ public class MCTSAI implements MagicAI {
                 try {
                     game.executeNextEvent(choices.get(curr.getChoice()));
                 } catch (final IndexOutOfBoundsException ex) {
+                    printPath(path);
+                    MCTSGameTree.printNode(curr, choices);
                     throw new GameException(ex, game);
                 }
                 path.add(curr);
