@@ -30,11 +30,8 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
             setToken();
             setValue(1);
             addType(MagicType.Creature);
-            setCost(MagicManaCost.create("{15}"));
+            setColors("");
             setPowerToughness(1,1);
-            addAbility(MagicAbility.Defender);
-            addAbility(MagicAbility.CannotBeCountered);
-            addAbility(MagicAbility.Shroud);
             setTiming(MagicTiming.Main);
             setIndex(1000000);
         }
