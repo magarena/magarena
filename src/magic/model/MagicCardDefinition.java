@@ -618,10 +618,12 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
 
     public List<MagicEvent> getCostEvent(final MagicCard source) {
         final List<MagicEvent> costEvent = new ArrayList<MagicEvent>();
-        costEvent.add(MagicPayManaCostEvent.Cast(
-            source,
-            cost
-        ));
+        if (hasCost()) {
+            costEvent.add(MagicPayManaCostEvent.Cast(
+                source,
+                cost
+            ));
+        }
         costEvent.addAll(getAdditionalCostEvent(source));
         return costEvent;
     }
