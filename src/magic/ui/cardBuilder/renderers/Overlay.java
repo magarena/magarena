@@ -148,7 +148,7 @@ public class Overlay {
         if (land) {
             landColors = Frame.getLandColors(cardDef);
         }
-        if (cardDef.isMulti() || landColors.size() > 2) {
+        if (cardDef.isMulti() || landColors.size() > 1) {
             if (cardDef.isHybrid() || landColors.size() == 2) {
                 List<BufferedImage> colorFrames = new ArrayList<>(2);
                 if (land) {
