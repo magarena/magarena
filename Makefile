@@ -186,7 +186,7 @@ inf: $(MAG)
 
 circleci:
 	$(eval MAG_ID := $(shell date +%s))
-	make clean games=100 ai1=MMABC ai2=MCTS ${MAG_ID}.t || (cat ${MAG_ID}.out && false)
+	make clean games=100 ai1=MMABC ai2=MCTS ${MAG_ID}.t || (cat ${MAG_ID}.out && tail -20 ${MAG_ID}.log && false)
 	touch cards/standard_all.out cards/modern_all.out
 	touch cards/standard_all.txt cards/modern_all.txt
 	make zips
