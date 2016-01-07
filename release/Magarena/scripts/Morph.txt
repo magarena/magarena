@@ -3,7 +3,7 @@ image=http://magiccards.info/extras/token/khans-of-tarkir/morph.jpg
 value=1
 type=Creature
 rarity=C
-cost={0}
+color=
 pt=2/2
 overlay
 timing=main

@@ -3,7 +3,7 @@ image=http://magiccards.info/extras/token/fate-reforged/manifest.jpg
 value=1
 type=Creature
 rarity=C
-cost={0}
+color=
 pt=2/2
 overlay
 timing=main
