@@ -7,6 +7,7 @@ import magic.model.MagicGameLog;
 import magic.model.MagicPlayer;
 import magic.model.choice.MagicBuilderPayManaCostResult;
 import magic.model.event.MagicEvent;
+import magic.exception.GameException;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -412,7 +413,11 @@ public class MCTSAI implements MagicAI {
                 curr = next;
 
                 //update the game state and path
-                game.executeNextEvent(choices.get(curr.getChoice()));
+                try {
+                    game.executeNextEvent(choices.get(curr.getChoice()));
+                } catch (final IndexOutOfBoundsException ex) {
+                    throw new GameException(ex, game);
+                }
                 path.add(curr);
             }
         }
