@@ -31,7 +31,8 @@ public class MagicRegularCostEvent implements MagicMatchedCostEvent {
     }
 
     public static List<MagicMatchedCostEvent> buildCast(final String costs) {
-        return build(costs.replaceFirst(ARG.MANACOST, "alt mana cost $1"));
+        final String costsWithMana = costs.matches(".*" + ARG.MANACOST + ".*") ? costs : costs + ", {0}";
+        return build(costsWithMana.replaceFirst(ARG.MANACOST, "alt mana cost $1"));
     }
 
     public static List<MagicMatchedCostEvent> build(final String costs) {
