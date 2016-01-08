@@ -56,7 +56,7 @@ public class MagicBestowActivation extends MagicHandCastActivation {
 
     @Override
     public Iterable<? extends MagicEvent> getCostEvent(final MagicCard source) {
-        return Arrays.asList(new MagicPayManaCostEvent(source, cost));
+        return Arrays.asList(MagicPayManaCostEvent.Cast(source, cost));
     }
 
     @Override
