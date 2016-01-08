@@ -117,7 +117,7 @@ public class MagicHandCastActivation extends MagicActivation<MagicCard> implemen
     }
 
     public static final MagicHandCastActivation create(final MagicCardDefinition cardDef, final String costs, final String name) {
-        final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(costs);
+        final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.buildCast(costs);
         assert matchedCostEvents.size() > 0;
 
         return new MagicHandCastActivation(CARD_CONDITION, cardDef.getActivationHints(), name) {
@@ -153,7 +153,7 @@ public class MagicHandCastActivation extends MagicActivation<MagicCard> implemen
     }
 
     public static final MagicHandCastActivation awaken(final MagicCardDefinition cardDef, final int n, final String costs) {
-        final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(costs);
+        final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.buildCast(costs);
         assert matchedCostEvents.size() > 0;
 
         return new MagicHandCastActivation(CARD_CONDITION, cardDef.getActivationHints(), "Awaken") {

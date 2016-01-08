@@ -1,6 +1,7 @@
 package magic.model.event;
 
 import magic.model.MagicSource;
+import magic.model.ARG;
 
 import java.util.regex.Matcher;
 import java.util.LinkedList;
@@ -27,6 +28,10 @@ public class MagicRegularCostEvent implements MagicMatchedCostEvent {
     @Override
     public boolean isIndependent() {
         return costEvent.isIndependent();
+    }
+
+    public static List<MagicMatchedCostEvent> buildCast(final String costs) {
+        return build(costs.replaceFirst(ARG.MANACOST, "alt mana cost $1"));
     }
 
     public static List<MagicMatchedCostEvent> build(final String costs) {

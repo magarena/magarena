@@ -356,7 +356,7 @@ public enum MagicAbility {
     Flashback("flashback( |—)" + ARG.COST,10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicCardDefinition cardDef = (MagicCardDefinition)card;
-            final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(ARG.cost(arg));
+            final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.buildCast(ARG.cost(arg));
             card.add(new MagicFlashbackActivation(cardDef, matchedCostEvents));
         }
     },
