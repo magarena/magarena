@@ -26,7 +26,7 @@ public class MiracleTrigger extends ThisDrawnTrigger {
                 card,
                 card.getOwner(),
                 new MagicMayChoice(
-                    new MagicPayManaCostChoice(cost)
+                    new MagicPayManaCostChoice(game.modCost(card, cost))
                 ),
                 this,
                 "You may$ reveal this card and cast it for its miracle cost."
