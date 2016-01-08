@@ -1,28 +1,53 @@
+Abstruse Interference
+Affa Protector
+Akoum Flameseeker
+Allied Reinforcements
+Ancient Crab
 Ayli, Eternal Pilgrim
 Baloth Null
+Baloth Pup
 Bearer of Silence
-Bonds on Mortality
+Birthing Hulk
+Blinding Drone
+Bonds of Mortality
 Bone Saw
 Boulder Salvo
+Brute Strength
 Call the Gatewatch
+Canopy Gorger
+Captain's Claws
 Chandra, Flamecaller
+Chitinous Cloak
 Cinder Barrens
+Cinder Hellion
 Cliffhaven Vampire
 Comparative Analysis
+Consuming Sinkhole
+Containment Membrane
+Corpse Churn
 Corrupted Crossroads
 Crumbling Vestige
 Crush of Tentacles
+Cultivator Drone
+Cyclone Sire
+Dazzling Reflection
 Deceiver of Form
 Deepfathom Skulker
+Devour in Flames
 Dimensional Infiltrator
 Drana's Chosen
 Dread Defiler
+Eldrazi Aggressor
 Eldrazi Displacer
 Eldrazi Mimic
 Eldrazi Obligator
+Elemental Uprising
 Embodiment of Fury
 Embodiment of Insight
 Endbringer
+Essence Depleter
+Expedite
+Expedition Raptor
 Fall of the Titans
 Flayer Drone
 Flaying Tendrils
@@ -31,62 +56,128 @@ Gift of Tusks
 Gladehart Cavalry
 Goblin Dark-Dwellers
 Goblin Freerunner
+Grasp of Darkness
+Gravity Negator
+Grip of the Roil
+Harvester Troll
+Havoc Sower
 Hedron Alignment
 Hedron Crawler
 Hissing Quagmire
 Holdout Settlement
+Immobilizer Eldrazi
 Immolating Glare
 Inverter of Truth
+Iona's Blessing
+Isolation Zone
 Joraga Auxiliary
 Jori En, Ruin Diver
 Jwar Isle Avenger
 Kalitas, Traitor of Ghet
+Kazuul's Toll Collector
+Kor Scythemaster
+Kor Sky Climber
+Kozilek's Pathfinder
 Kozilek's Return
+Kozilek's Shrieker
+Kozilek's Translator
 Kozilek, the Great Distortion
+Lead by Example
 Linvala, the Preserver
+Loam Larva
+Make a Stand
+Makindi Aeronaut
+Malakir Soothsayer
+Matter Reshaper
+Maw of Kozilek
 Meandering River
+Mighty Leap
 Mina and Denn, Wildborn
 Mindmelter
 Mirrorpool
 Munda's Vanguard
+Natural State
 Needle Spires
+Negate
+Netcaster Spider
+Nissa's Judgment
 Nissa, Voice of Zendikar
-Oatch of Chandra
+Null Caller
+Oath of Chandra
 Oath of Gideon
 Oath of Jace
 Oath of Nissa
+Oblivion Strike
+Ondu War Cleric
 Overwhelming Denial
+Press into Service
 Prophet of Distortion
+Pulse of Murasa
 Pyromancer's Assault
+Reality Hemorrhage
 Reality Smasher
+Reaver Drone
 Reckless Bushwhacker
 Reflector Mage
 Relentless Hunter
 Relief Captain
 Remorseless Punishment
+Roiling Waters
+Ruin in Their Wake
 Ruins of Oran-Rief
+Saddleback Lagac
 Scion Summoner
 Sea Gate Wreckage
+Searing Light
+Seed Guardian
 Seer's Lantern
 Shoulder to Shoulder
 Sifter of Skulls
+Sky Scourer
+Slaughter Drone
+Slip Through Space
+Sparkmage's Gambit
 Spatial Contortion
+Spawnbinder Mage
 Sphinx of the Final Word
+Stalking Drone
+Steppe Glider
 Stone Haven Outfitter
+Stoneforge Acolyte
 Stoneforge Masterwork
 Stormchaser Mage
+Strider Harness
 Submerged Boneyard
+Sweep Away
 Sylvan Advocate
+Tajuru Pathwarden
+Tar Snare
+Tears of Valakut
+Thought Harvester
 Thought-Knot Seer
 Timber Gorge
 Tranquil Expanse
 Tyrant of Valakut
+Umara Entangler
+Unity of Purpose
 Unknown Shores
+Unnatural Endurance
+Untamed Hunger
+Vampire Envoy
 Vile Redeemer
+Vines of the Recluse
+Visions of Brutality
 Void Grafter
+Void Shatter
 Walker of the Wastes
+Wall of Resurgence
 Wandering Fumarole
+Warden of Geometries
 Warping Wail
 Wastes
 Weapons Trainer
+Witness the End
 World Breaker
+Zada's Commando
+Zendikar Resurgent
+Zulaport Chainmage
