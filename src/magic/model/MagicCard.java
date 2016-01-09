@@ -182,6 +182,10 @@ public class MagicCard
         return getCardDefinition().isFlipCard();
     }
 
+    public boolean isFaceDown() {
+        return getName().isEmpty();
+    }
+
     public int getPower() {
         return genPowerToughness().power();
     }
