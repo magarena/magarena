@@ -3,9 +3,7 @@ package magic.ui.cardBuilder.renderers;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 import java.util.stream.Collectors;
 
 import magic.model.MagicAbility;
@@ -156,7 +154,7 @@ public class Overlay {
     static BufferedImage getLevellerOverlay(IRenderableCard cardDef) {
         boolean artifact = cardDef.isArtifact();
         boolean land = cardDef.isLand();
-        Set<MagicColor> landColors = new HashSet<>();
+        List<MagicColor> landColors = new ArrayList<>();
         BufferedImage baseFrame = ResourceManager.newFrame(ResourceManager.colorlessLevellerBox);
         if (artifact) {
             return ResourceManager.newFrame(ResourceManager.artifactLevellerBox);
@@ -192,7 +190,7 @@ public class Overlay {
     }
 
     static BufferedImage getLandOverlay(IRenderableCard cardDef) {
-        Set<MagicColor> landColors = Frame.getLandColors(cardDef);
+        List<MagicColor> landColors = Frame.getLandColors(cardDef);
         if (landColors.size() > 1) {
             if (landColors.size() == 2) {
                 List<BufferedImage> colorFrames = new ArrayList<>(2);

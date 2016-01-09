@@ -18,7 +18,7 @@ import java.text.AttributedCharacterIterator;
 import java.text.AttributedString;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Set;
+import java.util.List;
 
 import magic.model.MagicColor;
 import magic.model.MagicType;
@@ -53,7 +53,7 @@ public class OracleText {
             );
 
         } else if (cardDef.hasType(MagicType.Land)) {
-            Set<MagicColor> landColors = Frame.getLandColors(cardDef);
+            List<MagicColor> landColors = Frame.getLandColors(cardDef);
             BufferedImage landImage = null;
             if (landColors.size() == 1) {
                 for (MagicColor color : landColors) {
