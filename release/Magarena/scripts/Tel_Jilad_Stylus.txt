@@ -4,6 +4,6 @@ value=3.518
 rarity=U
 type=Artifact
 cost={1}
+ability={T}: Put target permanent you own on the bottom of your library.
 timing=main
-requires_groovy_code
 oracle={T}: Put target permanent you own on the bottom of your library.

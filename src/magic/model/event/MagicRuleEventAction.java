@@ -1449,7 +1449,7 @@ public enum MagicRuleEventAction {
         }
     },
     BounceLibBottom(
-        "put " + ARG.PERMANENTS + " on the bottom of (its owner's library|his or her library|their owners' libraries)(\\.|,)?",
+        "put " + ARG.PERMANENTS + " on the bottom of (your library|its owner's library|his or her library|their owners' libraries)(\\.|,)?",
         MagicTargetHint.None,
         MagicBounceTargetPicker.create(),
         MagicTiming.Removal,
