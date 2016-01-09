@@ -4,7 +4,7 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={G}
-ability=Face-down creature spells you cast cost {1} less to cast.;\
-        {1}{G}: Turn SN face down.
+ability={1}{G}: Turn SN face down.
+requires_groovy_code
 timing=enchantment
 oracle=Face-down creature spells you cast cost {1} less to cast.\n{1}{G}: Turn Obscuring Æther face down.
