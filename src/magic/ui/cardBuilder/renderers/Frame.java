@@ -424,7 +424,11 @@ public class Frame {
         if (!basicLandCount.isEmpty() && basicLandCount.size() <= 2) {
             landColor.addAll(basicLandCount);
         }
-        return landColor;
+        //Check for duplicate entries and only return those duplicates
+        List<MagicColor> toReturn = new ArrayList<>();
+        Set<MagicColor> set1 = new HashSet<>();
+        toReturn.addAll(landColor.stream().filter(color -> !set1.add(color)).collect(Collectors.toList()));
+        return toReturn.isEmpty() ? landColor : toReturn;
     }
 
     private static BufferedImage getLandFrame(MagicColor color) {
