@@ -75,7 +75,6 @@ public class ResourceManager {
     public static final BufferedImage redNyx = getComponent("nyx/rcard.jpg");
     public static final BufferedImage greenNyx = getComponent("nyx/gcard.jpg");
     public static final BufferedImage multiNyx = getComponent("nyx/mcard.jpg");
-    public static final BufferedImage multiLandNyx = getComponent("nyx/mlcard.jpg");
     public static final BufferedImage colorlessTokenFrame = getComponent("token/ccard.jpg");
     public static final BufferedImage colorlessTokenFrameText = getComponent("token/ccard2.jpg");
     public static final BufferedImage artifactTokenFrame = getComponent("token/acard.jpg");
