@@ -7,8 +7,7 @@
                 POS_TARGET_CREATURE,
                 MagicPumpTargetPicker.create(),
                 this,
-                "Target creature\$ gets +X/+0 until " +
-                "end of turn, where X is its power."
+                "Target creature\$ gets +X/+0 until end of turn, where X is its power."
             );
         }
         @Override
