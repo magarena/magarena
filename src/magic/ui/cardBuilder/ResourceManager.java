@@ -70,15 +70,10 @@ public class ResourceManager {
     public static final BufferedImage colorlessNyx = getComponent("nyx/ccard.jpg");
     public static final BufferedImage landNyx = getComponent("nyx/clcard.jpg");
     public static final BufferedImage whiteNyx = getComponent("nyx/wcard.jpg");
-    public static final BufferedImage whiteLandNyx = getComponent("nyx/wlcard.jpg");
     public static final BufferedImage blueNyx = getComponent("nyx/ucard.jpg");
-    public static final BufferedImage blueLandNyx = getComponent("nyx/ulcard.jpg");
     public static final BufferedImage blackNyx = getComponent("nyx/bcard.jpg");
-    public static final BufferedImage blackLandNyx = getComponent("nyx/blcard.jpg");
     public static final BufferedImage redNyx = getComponent("nyx/rcard.jpg");
-    public static final BufferedImage redLandNyx = getComponent("nyx/rlcard.jpg");
     public static final BufferedImage greenNyx = getComponent("nyx/gcard.jpg");
-    public static final BufferedImage greenLandNyx = getComponent("nyx/glcard.jpg");
     public static final BufferedImage multiNyx = getComponent("nyx/mcard.jpg");
     public static final BufferedImage multiLandNyx = getComponent("nyx/mlcard.jpg");
     public static final BufferedImage colorlessTokenFrame = getComponent("token/ccard.jpg");

@@ -450,19 +450,21 @@ public class Frame {
     }
 
     private static BufferedImage getLandNyxFrame(MagicColor color) {
+        BufferedImage baseFrame = ResourceManager.newFrame(ResourceManager.landNyx);
+        BufferedImage blend = ResourceManager.newFrame(ResourceManager.gainColorBlend);
         switch (color) {
             case White:
-                return ResourceManager.newFrame(ResourceManager.whiteLandNyx);
+                return getBlendedFrame(baseFrame, blend, ResourceManager.newFrame(ResourceManager.whiteFrame));
             case Blue:
-                return ResourceManager.newFrame(ResourceManager.blueLandNyx);
+                return getBlendedFrame(baseFrame, blend, ResourceManager.newFrame(ResourceManager.blueFrame));
             case Black:
-                return ResourceManager.newFrame(ResourceManager.blackLandNyx);
+                return getBlendedFrame(baseFrame, blend, ResourceManager.newFrame(ResourceManager.blackFrame));
             case Red:
-                return ResourceManager.newFrame(ResourceManager.redLandNyx);
+                return getBlendedFrame(baseFrame, blend, ResourceManager.newFrame(ResourceManager.redFrame));
             case Green:
-                return ResourceManager.newFrame(ResourceManager.greenLandNyx);
+                return getBlendedFrame(baseFrame, blend, ResourceManager.newFrame(ResourceManager.greenFrame));
         }
-        return ResourceManager.newFrame(ResourceManager.landNyx);
+        return baseFrame;
     }
 
     private static BufferedImage getHiddenFrame(MagicColor color) {
