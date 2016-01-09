@@ -30,12 +30,6 @@ public class ResourceManager {
     public static final BufferedImage greenFrame = getComponent("gcard.jpg");
     public static final BufferedImage whiteFrame = getComponent("wcard.jpg");
     public static final BufferedImage landFrame = getComponent("lcard.jpg");
-    public static final BufferedImage whiteLandFrame = getComponent("wlcard.jpg");
-    public static final BufferedImage blueLandFrame = getComponent("ulcard.jpg");
-    public static final BufferedImage blackLandFrame = getComponent("blcard.jpg");
-    public static final BufferedImage redLandFrame = getComponent("rlcard.jpg");
-    public static final BufferedImage greenLandFrame = getComponent("glcard.jpg");
-    public static final BufferedImage multiLandFrame = getComponent("mlcard.jpg");
     public static final BufferedImage redPTPanel = getComponent("rpt.png");
     public static final BufferedImage blackPTPanel = getComponent("bpt.png");
     public static final BufferedImage bluePTPanel = getComponent("upt.png");
