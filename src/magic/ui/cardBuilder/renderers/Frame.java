@@ -38,14 +38,14 @@ public class Frame {
         //Multi
         if (cardDef.isMulti() || landColor.size() > 1) {
             if (cardDef.getNumColors() > 2 || land && landColor.size() > 2) {
-                if (artifact && !enchantmentPermanent) {
+                if ((artifact || land) && !enchantmentPermanent) {
                     return getBlendedFrame(
                         baseFrame,
                         ResourceManager.newFrame(ResourceManager.gainColorBlend),
                         ResourceManager.newFrame(ResourceManager.multiFrame));
 
                 } else if (land) {
-                    return enchantmentPermanent ? ResourceManager.newFrame(ResourceManager.multiLandNyx) : ResourceManager.newFrame(ResourceManager.multiLandFrame);
+                    return ResourceManager.newFrame(ResourceManager.multiLandNyx);
                 } else {
                     return enchantmentPermanent ? ResourceManager.newFrame(ResourceManager.multiNyx) : ResourceManager.newFrame(ResourceManager.multiFrame);
                 }
@@ -428,19 +428,21 @@ public class Frame {
     }
 
     private static BufferedImage getLandFrame(MagicColor color) {
+        BufferedImage baseFrame = ResourceManager.newFrame(ResourceManager.landFrame);
+        BufferedImage blend = ResourceManager.newFrame(ResourceManager.gainColorBlend);
         switch (color) {
             case White:
-                return ResourceManager.newFrame(ResourceManager.whiteLandFrame);
+                return getBlendedFrame(baseFrame, blend, ResourceManager.newFrame(ResourceManager.whiteFrame));
             case Blue:
-                return ResourceManager.newFrame(ResourceManager.blueLandFrame);
+                return getBlendedFrame(baseFrame, blend, ResourceManager.newFrame(ResourceManager.blueFrame));
             case Black:
-                return ResourceManager.newFrame(ResourceManager.blackLandFrame);
+                return getBlendedFrame(baseFrame, blend, ResourceManager.newFrame(ResourceManager.blackFrame));
             case Red:
-                return ResourceManager.newFrame(ResourceManager.redLandFrame);
+                return getBlendedFrame(baseFrame, blend, ResourceManager.newFrame(ResourceManager.redFrame));
             case Green:
-                return ResourceManager.newFrame(ResourceManager.greenLandFrame);
+                return getBlendedFrame(baseFrame, blend, ResourceManager.newFrame(ResourceManager.greenFrame));
         }
-        return ResourceManager.newFrame(ResourceManager.landFrame);
+        return baseFrame;
     }
 
     private static BufferedImage getLandNyxFrame(MagicColor color) {
