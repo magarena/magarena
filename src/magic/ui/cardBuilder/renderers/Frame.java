@@ -51,7 +51,7 @@ public class Frame {
                 }
             } else {
                 //Hybrid
-                List<BufferedImage> colorFrames = new ArrayList<>();
+                List<BufferedImage> colorFrames = new ArrayList<>(2);
                 if (land) {
                     if (enchantmentPermanent) {
                         colorFrames.addAll(getColorOrder(landColor).stream().map(Frame::getLandNyxFrame).collect(Collectors.toList()));
@@ -141,111 +141,105 @@ public class Frame {
         if (cardDef.isMulti() || landColor.size() > 1) {
             if (cardDef.getNumColors() > 2 || land && landColor.size() > 2) {
                 if (artifact || land) {
-                    if (hasText) {
-                        return getBlendedFrame(
+                    return hasText ?
+                        getBlendedFrame(
                             baseFrame,
                             ResourceManager.newFrame(ResourceManager.gainColorTokenBlendText),
-                            ResourceManager.newFrame(ResourceManager.multiTokenFrameText));
-                    } else {
-                        return getBlendedFrame(
+                            ResourceManager.newFrame(ResourceManager.multiTokenFrameText)
+                        ) :
+                        getBlendedFrame(
                             baseFrame,
                             ResourceManager.newFrame(ResourceManager.gainColorTokenBlend),
-                            ResourceManager.newFrame(ResourceManager.multiTokenFrame));
-                    }
+                            ResourceManager.newFrame(ResourceManager.multiTokenFrame)
+                        );
                 } else {
                     return hasText ? ResourceManager.newFrame(ResourceManager.multiTokenFrameText) : ResourceManager.newFrame(ResourceManager.multiTokenFrame);
                 }
             } else {
                 //Hybrid
-                List<BufferedImage> colorFrames = new ArrayList<>();
+                List<BufferedImage> colorFrames = new ArrayList<>(2);
                 if (hasText) {
                     colorFrames.addAll(getColorOrder(cardDef).stream().map(Frame::getTokenFrameText).collect(Collectors.toList()));
                 } else {
                     colorFrames.addAll(getColorOrder(cardDef).stream().map(Frame::getTokenFrame).collect(Collectors.toList()));
                 }
                 //A colorless Banner with color piping
-                BufferedImage colorlessTokenBanner;
-                if (hasText) {
-                    colorlessTokenBanner = getTokenBannerFrameText(
+                BufferedImage colorlessTokenBanner = hasText ?
+                    getTokenBannerFrameText(
                         ResourceManager.newFrame(ResourceManager.colorlessTokenFrameText),
                         getBlendedFrame(
                             ResourceManager.newFrame(colorFrames.get(0)),
                             ResourceManager.newFrame(ResourceManager.gainHybridBlend),
                             ResourceManager.newFrame(colorFrames.get(1)))
-                    );
-                } else {
-                    colorlessTokenBanner = getTokenBannerFrame(
+                    ) :
+                    getTokenBannerFrame(
                         ResourceManager.newFrame(ResourceManager.colorlessTokenFrame),
                         getBlendedFrame(
                             ResourceManager.newFrame(colorFrames.get(0)),
                             ResourceManager.newFrame(ResourceManager.gainHybridBlend),
                             ResourceManager.newFrame(colorFrames.get(1)))
                     );
-                }
                 //Check for Hybrid + Return colorless banner blend
                 if (hybrid) {
                     return colorlessTokenBanner;
                 }
                 //Check dual color land + Return colorless banner blend
                 if (land && landColor.size() == 2) {
-                    if (hasText) {
-                        return getBlendedFrame(
+                    return hasText ?
+                        getBlendedFrame(
                             baseFrame,
                             ResourceManager.newFrame(ResourceManager.gainColorTokenBlendText),
                             ResourceManager.newFrame(colorlessTokenBanner)
-                        );
-                    } else {
-                        return getBlendedFrame(
+                        ) :
+                        getBlendedFrame(
                             baseFrame,
                             ResourceManager.newFrame(ResourceManager.gainColorTokenBlend),
                             ResourceManager.newFrame(colorlessTokenBanner)
-                        );
-                    }
+                         );
                 }
                 //Create Gold Banner blend
-                BufferedImage goldTokenBanner;
-                if (hasText) {
-                    goldTokenBanner = getTokenBannerFrameText(
+                BufferedImage goldTokenBanner = hasText ?
+                    getTokenBannerFrameText(
                         ResourceManager.newFrame(ResourceManager.multiTokenFrameText),
                         getBlendedFrame(
                             ResourceManager.newFrame(colorFrames.get(0)),
                             ResourceManager.newFrame(ResourceManager.gainHybridBlend),
                             ResourceManager.newFrame(colorFrames.get(1))
-                        ));
-                } else {
-                    goldTokenBanner = getTokenBannerFrame(
+                        )
+                    ) :
+                    getTokenBannerFrame(
                         ResourceManager.newFrame(ResourceManager.multiTokenFrame),
                         getBlendedFrame(
                             ResourceManager.newFrame(colorFrames.get(0)),
                             ResourceManager.newFrame(ResourceManager.gainHybridBlend),
                             ResourceManager.newFrame(colorFrames.get(1))
-                        ));
-                }
+                        )
+                    );
                 //Color piping for Dual-Color
                 if (artifact || land) {
-                    if (hasText) {
-                        return getBlendedFrame(
+                    return hasText ?
+                        getBlendedFrame(
                             baseFrame,
                             ResourceManager.newFrame(ResourceManager.gainColorTokenBlendText),
-                            ResourceManager.newFrame(goldTokenBanner));
-                    } else {
-                        return getBlendedFrame(
+                            ResourceManager.newFrame(goldTokenBanner)
+                        ) :
+                        getBlendedFrame(
                             baseFrame,
                             ResourceManager.newFrame(ResourceManager.gainColorTokenBlend),
-                            ResourceManager.newFrame(goldTokenBanner));
-                    }
+                            ResourceManager.newFrame(goldTokenBanner)
+                        );
                 } else {
-                    if (hasText) {
-                        return getBlendedFrame(
+                    return hasText ?
+                        getBlendedFrame(
                             ResourceManager.newFrame(ResourceManager.multiTokenFrameText),
                             ResourceManager.newFrame(ResourceManager.gainColorTokenBlendText),
-                            ResourceManager.newFrame(goldTokenBanner));
-                    } else {
-                        return getBlendedFrame(
+                            ResourceManager.newFrame(goldTokenBanner)
+                        ) :
+                        getBlendedFrame(
                             ResourceManager.newFrame(ResourceManager.multiTokenFrame),
                             ResourceManager.newFrame(ResourceManager.gainColorTokenBlend),
-                            ResourceManager.newFrame(goldTokenBanner));
-                    }
+                            ResourceManager.newFrame(goldTokenBanner)
+                        );
                 }
             }
         }
@@ -633,17 +627,16 @@ public class Frame {
             //Multi
             if (cardDef.isMulti() || landColor.size() > 1) {
                 if (cardDef.getNumColors() > 2 || land && landColor.size() > 2) {
-                    if (artifact || land) {
-                        return getBlendedFrame(
+                    return artifact || land ?
+                        getBlendedFrame(
                             baseFrame,
                             ResourceManager.newFrame(ResourceManager.gainPlaneswalkerColorBlend),
-                            ResourceManager.newFrame(ResourceManager.multiPlaneswalkerFrame));
-                    } else {
-                        return ResourceManager.newFrame(ResourceManager.multiPlaneswalkerFrame);
-                    }
+                            ResourceManager.newFrame(ResourceManager.multiPlaneswalkerFrame)
+                        ) :
+                        ResourceManager.newFrame(ResourceManager.multiPlaneswalkerFrame);
                 } else {
                     //Hybrid
-                    List<BufferedImage> colorFrames = new ArrayList<>();
+                    List<BufferedImage> colorFrames = new ArrayList<>(2);
                     colorFrames.addAll(getColorOrder(cardDef).stream().map(Frame::getPlaneswalkerFrame).collect(Collectors.toList()));
                     //A colorless Banner with color piping
                     BufferedImage colorlessBanner = getPlaneswalkerBannerFrame(
@@ -674,17 +667,17 @@ public class Frame {
                             ResourceManager.newFrame(colorFrames.get(1))
                         ));
                     //Color piping for Dual-Color
-                    if (artifact || land) {
-                        return getBlendedFrame(
+                    return artifact || land ?
+                        getBlendedFrame(
                             baseFrame,
                             ResourceManager.newFrame(ResourceManager.gainPlaneswalkerColorBlend),
-                            ResourceManager.newFrame(goldBanner));
-                    } else {
-                        return getBlendedFrame(
+                            ResourceManager.newFrame(goldBanner)
+                        ) :
+                        getBlendedFrame(
                             ResourceManager.newFrame(ResourceManager.multiPlaneswalkerFrame),
                             ResourceManager.newFrame(ResourceManager.gainPlaneswalkerColorBlend),
-                            ResourceManager.newFrame(goldBanner));
-                    }
+                            ResourceManager.newFrame(goldBanner)
+                        );
                 }
             }
             //Mono
@@ -706,17 +699,16 @@ public class Frame {
             //Multi
             if (cardDef.isMulti() || landColor.size() > 1) {
                 if (cardDef.getNumColors() > 2 || land && landColor.size() > 2) {
-                    if (artifact || land) {
-                        return getBlendedFrame(
+                    return artifact || land ?
+                        getBlendedFrame(
                             baseFrame,
                             ResourceManager.newFrame(ResourceManager.gainPlaneswalker4ColorBlend),
-                            ResourceManager.newFrame(ResourceManager.multiPlaneswalker4));
-                    } else {
-                        return ResourceManager.newFrame(ResourceManager.multiPlaneswalker4);
-                    }
+                            ResourceManager.newFrame(ResourceManager.multiPlaneswalker4)
+                        ) :
+                        ResourceManager.newFrame(ResourceManager.multiPlaneswalker4);
                 } else {
                     //Hybrid
-                    List<BufferedImage> colorFrames = new ArrayList<>();
+                    List<BufferedImage> colorFrames = new ArrayList<>(2);
                     colorFrames.addAll(getColorOrder(cardDef).stream().map(Frame::getPlaneswalker4Frame).collect(Collectors.toList()));
                     //A colorless Banner with color piping
                     BufferedImage colorlessBanner = getPlaneswalker4BannerFrame(
@@ -747,17 +739,17 @@ public class Frame {
                             ResourceManager.newFrame(colorFrames.get(1))
                         ));
                     //Color piping for Dual-Color
-                    if (artifact || land) {
-                        return getBlendedFrame(
+                    return artifact || land ?
+                        getBlendedFrame(
                             baseFrame,
                             ResourceManager.newFrame(ResourceManager.gainPlaneswalker4ColorBlend),
-                            ResourceManager.newFrame(goldBanner));
-                    } else {
-                        return getBlendedFrame(
+                            ResourceManager.newFrame(goldBanner)
+                        ) :
+                        getBlendedFrame(
                             ResourceManager.newFrame(ResourceManager.multiPlaneswalker4),
                             ResourceManager.newFrame(ResourceManager.gainPlaneswalker4ColorBlend),
-                            ResourceManager.newFrame(goldBanner));
-                    }
+                            ResourceManager.newFrame(goldBanner)
+                        );
                 }
             }
             //Mono
@@ -787,13 +779,17 @@ public class Frame {
         if (cardDef.isMulti() || landColor.size() > 1) {
             if (cardDef.getNumColors() > 2 || land && landColor.size() > 2) {
                 if (artifact || land) {
-                    return transform ? getBlendedFrame(
-                        baseFrame,
-                        ResourceManager.newFrame(ResourceManager.gainTransformColorBlend),
-                        ResourceManager.newFrame(ResourceManager.multiTransform)) : getBlendedFrame(
-                        baseFrame,
-                        ResourceManager.newFrame(ResourceManager.gainColorBlend),
-                        ResourceManager.newFrame(ResourceManager.multiHidden));
+                    return transform ?
+                        getBlendedFrame(
+                            baseFrame,
+                            ResourceManager.newFrame(ResourceManager.gainTransformColorBlend),
+                            ResourceManager.newFrame(ResourceManager.multiTransform)
+                        ) :
+                        getBlendedFrame(
+                            baseFrame,
+                            ResourceManager.newFrame(ResourceManager.gainColorBlend),
+                            ResourceManager.newFrame(ResourceManager.multiHidden)
+                        );
                 } else {
                     return transform ? ResourceManager.newFrame(ResourceManager.multiTransform) : ResourceManager.newFrame(ResourceManager.multiHidden);
                 }
@@ -861,21 +857,29 @@ public class Frame {
                     ));
                 //Color piping for Dual-Color
                 if (artifact || land) {
-                    return transform ? getBlendedFrame(
-                        baseFrame,
-                        ResourceManager.newFrame(ResourceManager.gainTransformColorBlend),
-                        ResourceManager.newFrame(goldTransformBanner)) : getBlendedFrame(
-                        baseFrame,
-                        ResourceManager.newFrame(ResourceManager.gainColorBlend),
-                        ResourceManager.newFrame(goldHiddenBanner));
+                    return transform ?
+                        getBlendedFrame(
+                            baseFrame,
+                            ResourceManager.newFrame(ResourceManager.gainTransformColorBlend),
+                            ResourceManager.newFrame(goldTransformBanner)
+                        ) :
+                        getBlendedFrame(
+                            baseFrame,
+                            ResourceManager.newFrame(ResourceManager.gainColorBlend),
+                            ResourceManager.newFrame(goldHiddenBanner)
+                        );
                 } else {
-                    return transform ? getBlendedFrame(
-                        ResourceManager.newFrame(ResourceManager.multiTransform),
-                        ResourceManager.newFrame(ResourceManager.gainTransformColorBlend),
-                        ResourceManager.newFrame(goldTransformBanner)) : getBlendedFrame(
-                        ResourceManager.newFrame(ResourceManager.multiHidden),
-                        ResourceManager.newFrame(ResourceManager.gainColorBlend),
-                        ResourceManager.newFrame(goldHiddenBanner));
+                    return transform ?
+                        getBlendedFrame(
+                            ResourceManager.newFrame(ResourceManager.multiTransform),
+                            ResourceManager.newFrame(ResourceManager.gainTransformColorBlend),
+                            ResourceManager.newFrame(goldTransformBanner)
+                        ) :
+                        getBlendedFrame(
+                            ResourceManager.newFrame(ResourceManager.multiHidden),
+                            ResourceManager.newFrame(ResourceManager.gainColorBlend),
+                            ResourceManager.newFrame(goldHiddenBanner)
+                        );
                 }
             }
         }
