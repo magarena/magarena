@@ -4,6 +4,6 @@ value=2.808
 rarity=R
 type=Artifact
 cost={6}
-ability=Instant and enchantment spells you cast cost up to {2} less to cast.
 timing=artifact
+requires_groovy_code
 oracle=Instant and enchantment spells you cast cost up to {2} less to cast.
