@@ -29,7 +29,7 @@ public class Frame {
             (cardDef.hasType(MagicType.Creature) || cardDef.hasType(MagicType.Artifact));
         List<MagicColor> landColor = new ArrayList<>();
         if (land) {
-            baseFrame = ResourceManager.newFrame(ResourceManager.landFrame);
+            baseFrame = enchantmentPermanent ? ResourceManager.newFrame(ResourceManager.landNyx) : ResourceManager.newFrame(ResourceManager.landFrame);
             //Land Colors
             landColor = getLandColors(cardDef);
         } else if (artifact) {
@@ -38,14 +38,12 @@ public class Frame {
         //Multi
         if (cardDef.isMulti() || landColor.size() > 1) {
             if (cardDef.getNumColors() > 2 || land && landColor.size() > 2) {
-                if ((artifact || land) && !enchantmentPermanent) {
+                if (artifact || land) {
                     return getBlendedFrame(
                         baseFrame,
                         ResourceManager.newFrame(ResourceManager.gainColorBlend),
                         ResourceManager.newFrame(ResourceManager.multiFrame));
 
-                } else if (land) {
-                    return ResourceManager.newFrame(ResourceManager.multiLandNyx);
                 } else {
                     return enchantmentPermanent ? ResourceManager.newFrame(ResourceManager.multiNyx) : ResourceManager.newFrame(ResourceManager.multiFrame);
                 }
@@ -100,13 +98,17 @@ public class Frame {
                         ResourceManager.newFrame(ResourceManager.gainColorBlend),
                         ResourceManager.newFrame(goldBanner));
                 } else {
-                    return enchantmentPermanent ? getBlendedFrame(
-                        ResourceManager.newFrame(ResourceManager.multiNyx),
-                        ResourceManager.newFrame(ResourceManager.gainColorBlend),
-                        ResourceManager.newFrame(goldBanner)) : getBlendedFrame(
-                        ResourceManager.newFrame(ResourceManager.multiFrame),
-                        ResourceManager.newFrame(ResourceManager.gainColorBlend),
-                        ResourceManager.newFrame(goldBanner));
+                    return enchantmentPermanent ?
+                        getBlendedFrame(
+                            ResourceManager.newFrame(ResourceManager.multiNyx),
+                            ResourceManager.newFrame(ResourceManager.gainColorBlend),
+                            ResourceManager.newFrame(goldBanner)
+                        ) :
+                        getBlendedFrame(
+                            ResourceManager.newFrame(ResourceManager.multiFrame),
+                            ResourceManager.newFrame(ResourceManager.gainColorBlend),
+                            ResourceManager.newFrame(goldBanner)
+                        );
                 }
             }
         }
@@ -116,7 +118,7 @@ public class Frame {
                 if (land) {
                     return enchantmentPermanent ? getLandNyxFrame(color) : getLandFrame(color);
                 } else if (artifact) {
-                    return getBlendFrame(baseFrame, color);
+                    return getColorBlendFrame(baseFrame, color);
                 } else {
                     return enchantmentPermanent ? getNyxFrame(color) : getFrame(color);
                 }
@@ -195,7 +197,7 @@ public class Frame {
                             baseFrame,
                             ResourceManager.newFrame(ResourceManager.gainColorTokenBlend),
                             ResourceManager.newFrame(colorlessTokenBanner)
-                         );
+                        );
                 }
                 //Create Gold Banner blend
                 BufferedImage goldTokenBanner = hasText ?
@@ -297,34 +299,24 @@ public class Frame {
         return ResourceManager.newFrame(bottomFrame);
     }
 
-    private static BufferedImage getBlendFrame(BufferedImage frame, MagicColor color) {
-        return getBlendedFrame(frame,
-            ResourceManager.newFrame(ResourceManager.gainColorBlend),
-            getFrame(color));
+    private static BufferedImage getColorBlendFrame(BufferedImage frame, MagicColor color) {
+        return getBlendedFrame(frame, ResourceManager.newFrame(ResourceManager.gainColorBlend), getFrame(color));
     }
 
     private static BufferedImage getPlaneswalkerBlendFrame(BufferedImage frame, MagicColor color) {
-        return getBlendedFrame(frame,
-            ResourceManager.newFrame(ResourceManager.gainPlaneswalkerColorBlend),
-            getPlaneswalkerFrame(color));
+        return getBlendedFrame(frame, ResourceManager.newFrame(ResourceManager.gainPlaneswalkerColorBlend), getPlaneswalkerFrame(color));
     }
 
     private static BufferedImage getPlaneswalker4BlendFrame(BufferedImage frame, MagicColor color) {
-        return getBlendedFrame(frame,
-            ResourceManager.newFrame(ResourceManager.gainPlaneswalker4ColorBlend),
-            getPlaneswalkerFrame(color));
+        return getBlendedFrame(frame, ResourceManager.newFrame(ResourceManager.gainPlaneswalker4ColorBlend), getPlaneswalkerFrame(color));
     }
 
     private static BufferedImage getTransformBlendFrame(BufferedImage frame, MagicColor color) {
-        return getBlendedFrame(frame,
-            ResourceManager.newFrame(ResourceManager.gainTransformColorBlend),
-            getTransformFrame(color));
+        return getBlendedFrame(frame, ResourceManager.newFrame(ResourceManager.gainTransformColorBlend), getTransformFrame(color));
     }
 
     private static BufferedImage getHiddenBlendFrame(BufferedImage frame, MagicColor color) {
-        return getBlendedFrame(frame,
-            ResourceManager.newFrame(ResourceManager.gainColorBlend),
-            getHiddenFrame(color));
+        return getBlendedFrame(frame, ResourceManager.newFrame(ResourceManager.gainColorBlend), getHiddenFrame(color));
     }
 
     static List<MagicColor> getColorOrder(IRenderableCard cardDef) {
@@ -433,38 +425,12 @@ public class Frame {
 
     private static BufferedImage getLandFrame(MagicColor color) {
         BufferedImage baseFrame = ResourceManager.newFrame(ResourceManager.landFrame);
-        BufferedImage blend = ResourceManager.newFrame(ResourceManager.gainColorBlend);
-        switch (color) {
-            case White:
-                return getBlendedFrame(baseFrame, blend, ResourceManager.newFrame(ResourceManager.whiteFrame));
-            case Blue:
-                return getBlendedFrame(baseFrame, blend, ResourceManager.newFrame(ResourceManager.blueFrame));
-            case Black:
-                return getBlendedFrame(baseFrame, blend, ResourceManager.newFrame(ResourceManager.blackFrame));
-            case Red:
-                return getBlendedFrame(baseFrame, blend, ResourceManager.newFrame(ResourceManager.redFrame));
-            case Green:
-                return getBlendedFrame(baseFrame, blend, ResourceManager.newFrame(ResourceManager.greenFrame));
-        }
-        return baseFrame;
+        return getColorBlendFrame(baseFrame, color);
     }
 
     private static BufferedImage getLandNyxFrame(MagicColor color) {
         BufferedImage baseFrame = ResourceManager.newFrame(ResourceManager.landNyx);
-        BufferedImage blend = ResourceManager.newFrame(ResourceManager.gainColorBlend);
-        switch (color) {
-            case White:
-                return getBlendedFrame(baseFrame, blend, ResourceManager.newFrame(ResourceManager.whiteFrame));
-            case Blue:
-                return getBlendedFrame(baseFrame, blend, ResourceManager.newFrame(ResourceManager.blueFrame));
-            case Black:
-                return getBlendedFrame(baseFrame, blend, ResourceManager.newFrame(ResourceManager.blackFrame));
-            case Red:
-                return getBlendedFrame(baseFrame, blend, ResourceManager.newFrame(ResourceManager.redFrame));
-            case Green:
-                return getBlendedFrame(baseFrame, blend, ResourceManager.newFrame(ResourceManager.greenFrame));
-        }
-        return baseFrame;
+        return getColorBlendFrame(baseFrame, color);
     }
 
     private static BufferedImage getHiddenFrame(MagicColor color) {
