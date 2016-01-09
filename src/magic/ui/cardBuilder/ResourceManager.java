@@ -237,6 +237,12 @@ public class ResourceManager {
     public static final BufferedImage blueMiracle = getComponent("miracle/uMiracleOverlay.png");
     public static final BufferedImage whiteMiracle = getComponent("miracle/wMiracleOverlay.png");
     public static final BufferedImage greenMiracle = getComponent("miracle/gMiracleOverlay.png");
+    public static final BufferedImage blackLandBox = getComponent("land/bLandBox.jpg");
+    public static final BufferedImage blueLandBox = getComponent("land/uLandBox.jpg");
+    public static final BufferedImage redLandBox = getComponent("land/rLandBox.jpg");
+    public static final BufferedImage greenLandBox = getComponent("land/gLandBox.jpg");
+    public static final BufferedImage whiteLandBox = getComponent("land/wLandBox.jpg");
+    public static final BufferedImage multiLandBox = getComponent("land/mLandBox.jpg");
 
     //Font Map
     private static final String[] names = {};

@@ -130,6 +130,6 @@ public interface IRenderableCard {
     }
 
     default boolean hasTextOverlay() {
-        return hasAbility(MagicAbility.LevelUp);
+        return hasAbility(MagicAbility.LevelUp) || isLand();
     }
 }

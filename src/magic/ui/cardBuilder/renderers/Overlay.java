@@ -63,6 +63,22 @@ public class Overlay {
         return ResourceManager.newFrame(ResourceManager.colorlessLevellerBox);
     }
 
+    static BufferedImage getLandMask(MagicColor color) {
+        switch (color) {
+            case White:
+                return ResourceManager.newFrame(ResourceManager.whiteLandBox);
+            case Blue:
+                return ResourceManager.newFrame(ResourceManager.blueLandBox);
+            case Black:
+                return ResourceManager.newFrame(ResourceManager.blackLandBox);
+            case Green:
+                return ResourceManager.newFrame(ResourceManager.greenLandBox);
+            case Red:
+                return ResourceManager.newFrame(ResourceManager.redLandBox);
+        }
+        return ResourceManager.newFrame(ResourceManager.multiLandBox);
+    }
+
     static BufferedImage getLevellerLandMask(MagicColor color) {
         switch (color) {
             case White:
@@ -175,6 +191,30 @@ public class Overlay {
         return land ? ResourceManager.newFrame(ResourceManager.colorlessLandLevellerBox) : baseFrame;
     }
 
+    static BufferedImage getLandOverlay(IRenderableCard cardDef) {
+        Set<MagicColor> landColors = Frame.getLandColors(cardDef);
+        if (landColors.size() > 1) {
+            if (landColors.size() == 2) {
+                List<BufferedImage> colorFrames = new ArrayList<>(2);
+                colorFrames.addAll(Frame.getColorOrder(landColors).stream().map(Overlay::getLandMask).collect(Collectors.toList()));
+                return Frame.getBlendedFrame(
+                    ResourceManager.newFrame(colorFrames.get(0)),
+                    ResourceManager.newFrame(ResourceManager.gainTextBoxHybridBlend),
+                    ResourceManager.newFrame(colorFrames.get(1))
+                );
+            } else {
+                return ResourceManager.newFrame(ResourceManager.multiLandBox);
+            }
+        }
+        //Mono
+        for (MagicColor color : MagicColor.values()) {
+            if (cardDef.hasColor(color) || landColors.contains(color)) {
+                return getLandMask(color);
+            }
+        }
+        return ResourceManager.newFrame(ResourceManager.multiLandBox);
+    }
+
     public static void drawOverlay(BufferedImage cardImage, IRenderableCard cardDef) {
         if (cardDef.hasOverlay()) {
             BufferedImage overlay = getOverlay(cardDef);
@@ -198,9 +238,6 @@ public class Overlay {
     }
 
     private static BufferedImage getTextOverlay(IRenderableCard cardDef) {
-        if (cardDef.hasAbility(MagicAbility.LevelUp)) {
-            return getLevellerOverlay(cardDef);
-        }
-        return null;
+        return cardDef.hasAbility(MagicAbility.LevelUp) ? getLevellerOverlay(cardDef) : getLandOverlay(cardDef);
     }
 }
