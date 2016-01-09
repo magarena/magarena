@@ -170,7 +170,7 @@ public enum MagicConditionParser {
             return MagicConditionFactory.CounterEqual(counterType, amount);
         }
     },
-    CountersNone("SN has no " + ARG.WORD1 + " counters on it") {
+    CountersNone("(SN|it) (has|had) no " + ARG.WORD1 + " counters on it") {
         public MagicCondition toCondition(final Matcher arg) {
             final MagicCounterType counterType = MagicCounterType.getCounterRaw(ARG.word1(arg));
             return MagicConditionFactory.CounterEqual(counterType, 0);

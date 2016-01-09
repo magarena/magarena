@@ -6,7 +6,7 @@ type=Creature
 subtype=Insect
 cost={2}{B}
 pt=3/1
-ability=vanishing 3
+ability=Vanishing 3;\
+        When SN dies, if it had no time counters on it, put a 6/1 green Insect creature token with shroud onto the battlefield.
 timing=main
-requires_groovy_code
 oracle=Vanishing 3\nWhen Deadly Grub dies, if it had no time counters on it, put a 6/1 green Insect creature token with shroud onto the battlefield.
