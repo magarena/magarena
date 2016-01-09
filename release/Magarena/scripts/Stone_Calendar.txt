@@ -4,6 +4,6 @@ value=3.057
 rarity=U
 type=Artifact
 cost={5}
-ability=Spells you cast cost up to {1} less to cast.
+requires_groovy_code
 timing=artifact
 oracle=Spells you cast cost up to {1} less to cast.
