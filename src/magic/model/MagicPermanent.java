@@ -476,7 +476,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
                 cachedActivations = new LinkedList<MagicActivation<MagicPermanent>>(getCardDefinition().getActivations());
                 cachedManaActivations = new LinkedList<MagicManaActivation>(getCardDefinition().getManaActivations());
                 cachedTriggers = new LinkedList<MagicTrigger<?>>(getCardDefinition().getTriggers());
-                etbTriggers = new LinkedList<EntersBattlefieldTrigger>(getCardDefinition().getComeIntoPlayTriggers());
+                etbTriggers = new LinkedList<EntersBattlefieldTrigger>(getCardDefinition().getETBTriggers());
                 break;
             case CDASubtype:
                 getCardDefinition().applyCDASubType(getGame(), getController(), cachedSubTypeFlags);

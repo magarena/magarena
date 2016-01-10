@@ -5,7 +5,6 @@ import java.util.*;
 import magic.ai.ArtificialScoringSystem;
 import magic.data.CardDefinitions;
 import magic.data.CardProperty;
-import magic.data.MagicIcon;
 import magic.model.event.*;
 import magic.model.mstatic.MagicCDA;
 import magic.model.mstatic.MagicStatic;
@@ -80,7 +79,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     private final Collection<MagicCDA> CDAs = new ArrayList<MagicCDA>();
     private final Collection<MagicTrigger<?>> triggers = new ArrayList<MagicTrigger<?>>();
     private final Collection<MagicStatic> statics=new ArrayList<MagicStatic>();
-    private final LinkedList<EntersBattlefieldTrigger> comeIntoPlayTriggers = new LinkedList<EntersBattlefieldTrigger>();
+    private final LinkedList<EntersBattlefieldTrigger> etbTriggers = new LinkedList<EntersBattlefieldTrigger>();
     private final Collection<ThisSpellIsCastTrigger> spellIsCastTriggers = new ArrayList<ThisSpellIsCastTrigger>();
     private final Collection<ThisCycleTrigger> cycleTriggers = new ArrayList<ThisCycleTrigger>();
     private final Collection<ThisDrawnTrigger> drawnTriggers = new ArrayList<ThisDrawnTrigger>();
@@ -155,7 +154,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     }
 
     public synchronized void loadAbilities() {
-        if (startingLoyalty > 0 && comeIntoPlayTriggers.isEmpty()) {
+        if (startingLoyalty > 0 && etbTriggers.isEmpty()) {
             add(new EntersWithCounterTrigger(
                 MagicCounterType.Loyalty,
                 startingLoyalty
@@ -779,9 +778,9 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
 
     public void addTrigger(final EntersBattlefieldTrigger trigger) {
         if (trigger.usesStack()) {
-            comeIntoPlayTriggers.add(trigger);
+            etbTriggers.add(trigger);
         } else {
-            comeIntoPlayTriggers.addFirst(trigger);
+            etbTriggers.addFirst(trigger);
         }
     }
 
@@ -817,8 +816,8 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         return cycleTriggers;
     }
 
-    public Collection<EntersBattlefieldTrigger> getComeIntoPlayTriggers() {
-        return comeIntoPlayTriggers;
+    public Collection<EntersBattlefieldTrigger> getETBTriggers() {
+        return etbTriggers;
     }
 
     public Collection<ThisPutIntoGraveyardTrigger> getPutIntoGraveyardTriggers() {
