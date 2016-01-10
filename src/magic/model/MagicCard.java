@@ -182,7 +182,7 @@ public class MagicCard
         return getCardDefinition().isFlipCard();
     }
 
-    public boolean isFaceDown() {
+    public boolean isNameless() {
         return getName().isEmpty();
     }
 
