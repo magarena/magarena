@@ -7,6 +7,7 @@ import java.util.EnumSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 
 import magic.ai.ArtificialScoringSystem;
@@ -174,7 +175,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
     }
 
     public long getStateId() {
-        stateId = stateId != 0 ? stateId : magic.model.MurmurHash3.hash(new long[]{
+        stateId = stateId != 0 ? stateId : MurmurHash3.hash(new long[]{
             cardDefinition.getIndex(),
             card.getStateId(),
             stateFlags,
@@ -206,12 +207,12 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
     private long getCountersHash() {
         final long[] keys = new long[counters.size() * 2];
         int idx = 0;
-        for (final Map.Entry<MagicCounterType, Integer> entry : counters.entrySet()) {
+        for (final Entry<MagicCounterType, Integer> entry : counters.entrySet()) {
             keys[idx + 0] = entry.getKey().ordinal();
             keys[idx + 1] = entry.getValue();
             idx += 2;
         }
-        return magic.model.MurmurHash3.hash(keys);
+        return MurmurHash3.hash(keys);
     }
 
     /**
@@ -426,8 +427,8 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
     }
 
     public static void update(final MagicGame game) {
-        MagicPermanent.updateProperties(game);
-        MagicPermanent.updateScoreFixController(game);
+        updateProperties(game);
+        updateScoreFixController(game);
     }
 
     private static void updateScoreFixController(final MagicGame game) {
@@ -641,7 +642,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
 
     public int getCountersScore() {
         int amount = 0;
-        for (final Map.Entry<MagicCounterType, Integer> entry : counters.entrySet()) {
+        for (final Entry<MagicCounterType, Integer> entry : counters.entrySet()) {
             amount += entry.getKey().getScore() * entry.getValue();
         }
         return amount;
