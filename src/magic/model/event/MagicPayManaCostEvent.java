@@ -10,7 +10,6 @@ import magic.model.condition.MagicCondition;
 public class MagicPayManaCostEvent extends MagicEvent {
 
     private final MagicCondition cond;
-    private final MagicManaCost cost;
 
     public static final MagicPayManaCostEvent Cast(final MagicCard card, final String cost) {
         return Cast(card, MagicManaCost.create(cost));
@@ -32,24 +31,19 @@ public class MagicPayManaCostEvent extends MagicEvent {
         this(source, player, MagicManaCost.create(cost));
     }
 
-    private MagicPayManaCostEvent(final MagicSource source,final MagicPlayer player,final MagicManaCost aCost) {
+    private MagicPayManaCostEvent(final MagicSource source,final MagicPlayer player,final MagicManaCost cost) {
         super(
             source,
             player,
-            new MagicPayManaCostChoice(aCost),
+            new MagicPayManaCostChoice(cost),
             MagicEventAction.NONE,
-            aCost.getText().equals("{0}") ? "" : "Pay " + aCost.getText() + "$."
+            cost == MagicManaCost.NONE ? "" : "Pay " + cost.getText() + "$."
         );
-        cond = aCost.getCondition();
-        cost = aCost;
+        cond = cost.getCondition();
     }
 
     @Override
     public boolean isSatisfied() {
         return cond.accept(getSource()) && super.isSatisfied();
-    }
-
-    public MagicManaCost getCost() {
-        return cost;
     }
 }
