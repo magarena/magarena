@@ -56,7 +56,7 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
     private Map<MagicCounterType, Integer> counters;
     private int stateFlags =
         MagicPermanentState.Summoned.getMask() |
-            MagicPermanentState.MustPayEchoCost.getMask();
+        MagicPermanentState.MustPayEchoCost.getMask();
     private int abilityPlayedThisTurn;
     private int damage;
     private int preventDamage;
