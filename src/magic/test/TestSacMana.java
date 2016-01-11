@@ -3,13 +3,13 @@ package magic.test;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.model.phase.MagicMainPhase;
+import magic.model.phase.MagicUntapPhase;
 
 class TestSacMana extends TestGameBuilder {
     public MagicGame getGame() {
         final MagicDuel duel=createDuel();
         final MagicGame game=duel.nextGame();
-        game.setPhase(MagicMainPhase.getFirstInstance());
+        game.setPhase(MagicUntapPhase.getInstance());
         final MagicPlayer player=game.getPlayer(0);
         final MagicPlayer opponent=game.getPlayer(1);
 // Casting Algae Gharial should prompt for which land to sacrifice for green
@@ -18,8 +18,8 @@ class TestSacMana extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Plains", 10);
-        createPermanent(P,"Abandoned Outpost",false,1);
-        createPermanent(P,"Bog Wreckage",false,1);
+        createPermanent(P,"Abandoned Outpost",1);
+        createPermanent(P,"Bog Wreckage",1);
         createPermanent(P,"1/1 colorless Eldrazi Scion creature token");
         createPermanent(P,"0/1 colorless Eldrazi Spawn creature token");
         addToHand(P,"Steel Wall",1);
