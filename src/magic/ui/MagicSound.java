@@ -83,7 +83,7 @@ public enum MagicSound {
             });
         }
     }
-    
+
     /**
      * Plays sound at volume specified in settings.
      */

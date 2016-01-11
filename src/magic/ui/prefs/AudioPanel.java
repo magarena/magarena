@@ -39,7 +39,7 @@ class AudioPanel extends JPanel {
         add(uiVolumeSlider, "w 100%");
         add(getCaptionLabel(UiString.get(_S2)), "gaptop 16");
         add(gameVolumeSlider, " w 100%");
-        addMouseListener(aListener); 
+        addMouseListener(aListener);
     }
 
     void saveSettings() {
@@ -52,5 +52,5 @@ class AudioPanel extends JPanel {
         lbl.setFont(FontsAndBorders.FONT1);
         return lbl;
     }
-    
+
 }

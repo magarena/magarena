@@ -1390,6 +1390,6 @@ public class MagicGame {
     public void playSound(MagicSound aSound) {
         if (isReal()) {
             aSound.play();
-        } 
+        }
     }
 }
