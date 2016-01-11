@@ -221,9 +221,11 @@ public enum MagicCostEvent {
     },
     AltManaCost("(pay )?alt mana cost " + ARG.MANACOST) {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
-            return source instanceof MagicCard ?
-                MagicPayManaCostEvent.Cast((MagicCard)source, MagicManaCost.create(ARG.manacost(arg))):
-                new MagicPayManaCostEvent(source, MagicManaCost.create(ARG.manacost(arg)));
+            final MagicManaCost origCost = MagicManaCost.create(ARG.manacost(arg));
+            final MagicManaCost cost = origCost == MagicManaCost.ZERO ? MagicManaCost.NONE : origCost;
+            return (source instanceof MagicCard) ?
+                MagicPayManaCostEvent.Cast((MagicCard)source, cost) :
+                new MagicPayManaCostEvent(source, cost);
         }
     },
     DamageYou("SN deals " + ARG.NUMBER + " damage to you") {

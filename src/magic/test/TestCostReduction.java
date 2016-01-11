@@ -32,6 +32,7 @@ class TestCostReduction extends TestGameBuilder {
         addToHand(P, "Enrage", 1);
         addToHand(P, "Bonfire of the Damned", 1);
         addToHand(P, "Gut Shot", 1);
+        addToHand(P, "Kobolds of Kher Keep", 1);
 
         P = opponent;
 
