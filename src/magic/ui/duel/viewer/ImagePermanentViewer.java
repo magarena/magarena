@@ -314,12 +314,33 @@ public class ImagePermanentViewer extends JPanel {
                 final String pt = linkedInfo.powerToughness;
                 if (!pt.isEmpty()) {
                     final String damage = linkedInfo.damage > 0 ? String.valueOf(linkedInfo.damage) : "";
-                    final boolean isDamage = damage.length() > 0;
+                    final String shield = linkedInfo.shield > 0 ? String.valueOf(linkedInfo.shield) : "";
+                    final boolean isShieldDamage = damage.length() + shield.length() > 0;
                     final int ptWidth = metrics.stringWidth(pt);
                     if (linkedInfo.blocking) {
-                        ImageDrawingUtils.drawCreatureInfo(g, metrics, pt, ptWidth, damage, x1, y1, false);
+                        ImageDrawingUtils.drawCreatureInfo(
+                            g,
+                            metrics,
+                            pt,
+                            ptWidth,
+                            shield,
+                            damage,
+                            x1,
+                            y1,
+                            false
+                        );
                     } else {
-                        ImageDrawingUtils.drawCreatureInfo(g, metrics, pt, ptWidth, damage, x2 - ptWidth - 4, y2 - (isDamage ? 32 : 18), true);
+                        ImageDrawingUtils.drawCreatureInfo(
+                            g,
+                            metrics,
+                            pt,
+                            ptWidth,
+                            shield,
+                            damage,
+                            x2 - ptWidth - 4,
+                            y2 - (isShieldDamage ? 32 : 18),
+                            true
+                        );
                     }
                 }
             }

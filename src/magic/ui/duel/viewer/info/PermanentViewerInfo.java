@@ -54,6 +54,7 @@ public class PermanentViewerInfo {
     public final String text;
     public final Set<MagicAbility> abilityFlags;
     public final int damage;
+    public final int shield;
     public final int position;
     public final boolean visible;
     public final boolean basic;
@@ -82,6 +83,7 @@ public class PermanentViewerInfo {
         abilityFlags=permanent.getAbilityFlags();
         text=getText(game,permanent,abilityFlags);
         damage=permanent.getDamage();
+        shield=permanent.getPreventDamage();
         position=getPosition(permanent);
         visible=permanent.getController()==game.getVisiblePlayer();
         basic=permanent.hasType(MagicType.Basic);

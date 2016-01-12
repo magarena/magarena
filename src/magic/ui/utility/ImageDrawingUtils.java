@@ -10,6 +10,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import javax.swing.ImageIcon;
+import java.text.AttributedString;
+import java.awt.font.TextAttribute;
 import magic.data.MagicIcon;
 import magic.model.MagicAbility;
 import magic.model.MagicColor;
@@ -135,22 +137,32 @@ public class ImageDrawingUtils {
         final FontMetrics metrics,
         final String pt,
         final int ptWidth,
+        final String shield,
         final String damage,
         final int x,
         final int y,
         final boolean flip
     ) {
-        final boolean isDamage = damage.length() > 0;
+        final boolean isShieldDamage = damage.length() + shield.length() > 0;
         g.setColor(FontsAndBorders.GRAY2);
-        g.fillRect(x,y,ptWidth+4,isDamage?32:18);
+        g.fillRect(x,y,ptWidth+4,isShieldDamage?32:18);
         g.setColor(Color.DARK_GRAY);
-        g.drawRect(x,y,ptWidth+4,isDamage?32:18);
-        g.drawString(pt,x+3,isDamage&&flip?y+28:y+14);
-        if (isDamage) {
-            final int damageWidth=metrics.stringWidth(damage);
-            final int dx=x+3+(ptWidth-damageWidth)/2;
-            g.setColor(Color.RED);
-            g.drawString(damage,dx,flip?y+14:y+28);
+        g.drawRect(x,y,ptWidth+4,isShieldDamage?32:18);
+        g.drawString(pt,x+3,isShieldDamage&&flip?y+28:y+14);
+        if (isShieldDamage) {
+            final String separator = shield.length() > 0 && damage.length() > 0 ? " " : "";
+            final String shieldDamage = shield + separator + damage;
+            final int shieldDamageWidth=metrics.stringWidth(shieldDamage);
+            final int dx=x+3+(ptWidth-shieldDamageWidth)/2;
+            final AttributedString aString = new AttributedString(shieldDamage);
+            aString.addAttribute(TextAttribute.FONT, FontsAndBorders.FONT1);
+            if (shield.length() > 0) {
+                aString.addAttribute(TextAttribute.FOREGROUND, Color.BLUE, 0, shield.length());
+            }
+            if (damage.length() > 0) {
+                aString.addAttribute(TextAttribute.FOREGROUND, Color.RED, shieldDamage.length() - damage.length(), shieldDamage.length());
+            }
+            g.drawString(aString.getIterator(),dx,flip?y+14:y+28);
         }
     }
 
