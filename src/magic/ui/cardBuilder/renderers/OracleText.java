@@ -19,6 +19,9 @@ import java.text.AttributedString;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Map;
+import java.util.SortedMap;
+import java.util.TreeMap;
 
 import magic.model.MagicColor;
 import magic.model.MagicType;
@@ -279,63 +282,74 @@ public class OracleText {
         FontRenderContext frc = g2d.getFontRenderContext();
 
         //get String and Font
-        attrString.addAttribute(TextAttribute.FONT, font);
-        AttributedCharacterIterator text = attrString.getIterator();
-        int paragraphStart = text.getBeginIndex();
-        int paragraphEnd = text.getEndIndex();
-        LineBreakMeasurer lineMeasurer = new LineBreakMeasurer(text, frc);
-        float boxWidth = baseImage.getWidth();
-        float boxHeight = baseImage.getHeight();
-        float posY = topPadding;
-        lineMeasurer.setPosition(paragraphStart);
-
-        //Measure length of string to fit in box
         boolean retry = false;
-        final AttributedCharacterIterator iter = attrString.getIterator();
-        while (lineMeasurer.getPosition() < paragraphEnd) {
-            //Check for ptPanel overlap
-            int next = posY >= 123 ?
-                lineMeasurer.nextOffset(boxWidth - (leftPadding << 1) - 100) :
-                lineMeasurer.nextOffset(boxWidth - (leftPadding << 1));
-            int limit = next;
-            //Check for newlines
-            for (int i = lineMeasurer.getPosition(); i < next; ++i) {
-                char c = iter.setIndex(i);
-                if (c == NEWLINE && i > lineMeasurer.getPosition()) {
-                    limit = i;
+        SortedMap<Float, TextLayout> lines = new TreeMap<>();
+        do {
+            retry = false;
+            lines.clear();
+            attrString.addAttribute(TextAttribute.FONT, font);
+
+            AttributedCharacterIterator text = attrString.getIterator();
+            int paragraphStart = text.getBeginIndex();
+            int paragraphEnd = text.getEndIndex();
+            LineBreakMeasurer lineMeasurer = new LineBreakMeasurer(text, frc);
+            float boxWidth = baseImage.getWidth();
+            float boxHeight = baseImage.getHeight();
+            float posY = topPadding;
+            lineMeasurer.setPosition(paragraphStart);
+
+            //Measure length of string to fit in box
+            final AttributedCharacterIterator iter = attrString.getIterator();
+            while (lineMeasurer.getPosition() < paragraphEnd) {
+                //Check for ptPanel overlap
+                int next = posY >= 123 ?
+                    lineMeasurer.nextOffset(boxWidth - (leftPadding << 1) - 100) :
+                    lineMeasurer.nextOffset(boxWidth - (leftPadding << 1));
+                int limit = next;
+                //Check for newlines
+                for (int i = lineMeasurer.getPosition(); i < next; ++i) {
+                    char c = iter.setIndex(i);
+                    if (c == NEWLINE && i > lineMeasurer.getPosition()) {
+                        limit = i;
+                        break;
+                    }
+                }
+
+                //get+draw measured length
+                TextLayout layout = lineMeasurer.nextLayout(boxWidth, limit, false);
+                posY += layout.getAscent();
+                //layout.draw(g2d, leftPadding, posY);
+                lines.put(posY, layout);
+
+                //add extra space between paragraphs
+                if (limit < next) {
+                    posY += layout.getLeading() + layout.getDescent();
+                }
+
+                //move to next line
+                posY += layout.getDescent();
+
+                //check if out of room
+                if (posY > boxHeight) {
+                    //try again with smaller font
+                    retry = true;
                     break;
                 }
             }
+            if (retry) {
+                font = font.deriveFont(font.getSize2D() - 0.5f);
+            }
+        } while (retry);
 
-            //get+draw measured length
-            TextLayout layout = lineMeasurer.nextLayout(boxWidth, limit, false);
-            posY += layout.getAscent();
+        // draw the text
+        for (final Map.Entry<Float, TextLayout> entry : lines.entrySet()) {
+            final TextLayout layout = entry.getValue();
+            final float posY = entry.getKey();
             layout.draw(g2d, leftPadding, posY);
-
-            //add extra space between paragraphs
-            if (limit < next) {
-                posY += layout.getLeading() + layout.getDescent();
-            }
-
-            //move to next line
-            posY += layout.getDescent();
-
-            //check if out of room
-            if (posY > boxHeight) {
-                //try again with smaller font
-                retry = true;
-                break;
-            }
         }
 
-        //cleanup + return
+        // cleanup + return
         g2d.dispose();
-
-        if (retry) {
-            //font size 12.5 should be minimum
-            Font resize = font.deriveFont(font.getSize2D() - 0.5f);
-            return drawTextToBox(attrString, resize, box, leftPadding, topPadding);
-        }
 
         return baseImage;
     }
