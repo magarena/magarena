@@ -43,7 +43,6 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     private String distinctName;
 
     private String imageURL;
-    private int imageCount = 1;
     private Date imageUpdated;
     private int index=-1;
     private double value;
@@ -263,14 +262,6 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         return token ?
             CardDefinitions.getCanonicalName(distinctName):
             distinctName.replaceAll("[<>:\"/\\\\|?*\\x00-\\x1F]", "_");
-    }
-
-    public void setImageCount(final int count) {
-        this.imageCount = count;
-    }
-
-    public int getImageCount() {
-        return imageCount;
     }
 
     public void setImageURL(final String imageURL) {
