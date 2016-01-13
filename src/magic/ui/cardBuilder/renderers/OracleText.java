@@ -261,12 +261,87 @@ public class OracleText {
         g2d.dispose();
     }
 
+
+    private static SortedMap<Float, TextLayout> tryTextLayout(
+        AttributedString attrString,
+        FontRenderContext frc,
+        Rectangle box,
+        int leftPadding,
+        int topPadding
+    ) {
+        final SortedMap<Float, TextLayout> lines = new TreeMap<>();
+        AttributedCharacterIterator text = attrString.getIterator();
+        int paragraphStart = text.getBeginIndex();
+        int paragraphEnd = text.getEndIndex();
+        LineBreakMeasurer lineMeasurer = new LineBreakMeasurer(text, frc);
+        float boxWidth = (float)box.getWidth();
+        float boxHeight = (float)box.getHeight();
+        float posY = topPadding;
+        lineMeasurer.setPosition(paragraphStart);
+
+        //Measure length of string to fit in box
+        final AttributedCharacterIterator iter = attrString.getIterator();
+        while (lineMeasurer.getPosition() < paragraphEnd) {
+            //Check for ptPanel overlap
+            int next = posY >= 123 ?
+                lineMeasurer.nextOffset(boxWidth - (leftPadding << 1) - 100) :
+                lineMeasurer.nextOffset(boxWidth - (leftPadding << 1));
+            int limit = next;
+            //Check for newlines
+            for (int i = lineMeasurer.getPosition(); i < next; ++i) {
+                char c = iter.setIndex(i);
+                if (c == NEWLINE && i > lineMeasurer.getPosition()) {
+                    limit = i;
+                    break;
+                }
+            }
+
+            //get+draw measured length
+            TextLayout layout = lineMeasurer.nextLayout(boxWidth, limit, false);
+            posY += layout.getAscent();
+            lines.put(posY, layout);
+
+            //add extra space between paragraphs
+            if (limit < next) {
+                posY += layout.getLeading() + layout.getDescent();
+            }
+
+            //move to next line
+            posY += layout.getDescent();
+
+            //check if out of room
+            if (posY > boxHeight) {
+                lines.clear();
+                break;
+            }
+        }
+        return lines;
+    }
+
+    private static SortedMap<Float, TextLayout> fitTextLayout(
+        AttributedString attrString,
+        Font font,
+        FontRenderContext frc,
+        Rectangle box,
+        int leftPadding,
+        int topPadding
+    ) {
+        // decrease font by 0.5 points each time until lines can fit
+        SortedMap<Float, TextLayout> lines = new TreeMap<>();
+        for (Font f = font; lines.isEmpty(); f = f.deriveFont(f.getSize2D() - 0.5f)) {
+            attrString.addAttribute(TextAttribute.FONT, f);
+            lines = tryTextLayout(attrString, frc, box, leftPadding, topPadding);
+        }
+        return lines;
+    }
+
     private static BufferedImage drawTextToBox(
         AttributedString attrString,
         Font font,
         Rectangle box,
         int leftPadding,
-        int topPadding) {
+        int topPadding
+    ) {
 
         //setUp baseImage and Graphics2D
         BufferedImage baseImage = GraphicsUtils.getCompatibleBufferedImage(
@@ -281,65 +356,8 @@ public class OracleText {
 
         FontRenderContext frc = g2d.getFontRenderContext();
 
-        //get String and Font
-        boolean retry = false;
-        SortedMap<Float, TextLayout> lines = new TreeMap<>();
-        do {
-            retry = false;
-            lines.clear();
-            attrString.addAttribute(TextAttribute.FONT, font);
-
-            AttributedCharacterIterator text = attrString.getIterator();
-            int paragraphStart = text.getBeginIndex();
-            int paragraphEnd = text.getEndIndex();
-            LineBreakMeasurer lineMeasurer = new LineBreakMeasurer(text, frc);
-            float boxWidth = baseImage.getWidth();
-            float boxHeight = baseImage.getHeight();
-            float posY = topPadding;
-            lineMeasurer.setPosition(paragraphStart);
-
-            //Measure length of string to fit in box
-            final AttributedCharacterIterator iter = attrString.getIterator();
-            while (lineMeasurer.getPosition() < paragraphEnd) {
-                //Check for ptPanel overlap
-                int next = posY >= 123 ?
-                    lineMeasurer.nextOffset(boxWidth - (leftPadding << 1) - 100) :
-                    lineMeasurer.nextOffset(boxWidth - (leftPadding << 1));
-                int limit = next;
-                //Check for newlines
-                for (int i = lineMeasurer.getPosition(); i < next; ++i) {
-                    char c = iter.setIndex(i);
-                    if (c == NEWLINE && i > lineMeasurer.getPosition()) {
-                        limit = i;
-                        break;
-                    }
-                }
-
-                //get+draw measured length
-                TextLayout layout = lineMeasurer.nextLayout(boxWidth, limit, false);
-                posY += layout.getAscent();
-                //layout.draw(g2d, leftPadding, posY);
-                lines.put(posY, layout);
-
-                //add extra space between paragraphs
-                if (limit < next) {
-                    posY += layout.getLeading() + layout.getDescent();
-                }
-
-                //move to next line
-                posY += layout.getDescent();
-
-                //check if out of room
-                if (posY > boxHeight) {
-                    //try again with smaller font
-                    retry = true;
-                    break;
-                }
-            }
-            if (retry) {
-                font = font.deriveFont(font.getSize2D() - 0.5f);
-            }
-        } while (retry);
+        // find largest font that can fit text to box
+        final SortedMap<Float, TextLayout> lines = fitTextLayout(attrString, font, frc, box, leftPadding, topPadding);
 
         // draw the text
         for (final Map.Entry<Float, TextLayout> entry : lines.entrySet()) {
