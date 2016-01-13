@@ -122,9 +122,7 @@ public final class MagicFileSystem {
     }
 
     private static String getImageFilename(final MagicCardDefinition card, final int index) {
-        final int imageIndex = index % 1;
-        final String indexPostfix = imageIndex > 0 ? String.valueOf(imageIndex + 1) : "";
-        return card.getImageName() + indexPostfix + CARD_IMAGE_EXT;
+        return card.getImageName() + CARD_IMAGE_EXT;
     }
 
     /**
