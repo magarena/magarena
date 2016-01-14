@@ -334,20 +334,30 @@ public class Frame {
         //Color order
         List<MagicColor> orderedColors = new ArrayList<>(colors);
         //Non-color order pairings
-        if (orderedColors.get(0) == MagicColor.White && orderedColors.get(1) != MagicColor.Blue && orderedColors.get(1) != MagicColor.Black) {
-            Collections.swap(orderedColors, 0, 1);
+        if (orderedColors.get(0) == MagicColor.White) {
+            if (orderedColors.get(1) != MagicColor.Blue && orderedColors.get(1) != MagicColor.Black) {
+                Collections.swap(orderedColors, 0, 1);
+            }
         }
-        if (orderedColors.get(0) == MagicColor.Blue && orderedColors.get(1) != MagicColor.Black) {
-            Collections.swap(orderedColors, 0, 1);
+        if (orderedColors.get(0) == MagicColor.Blue) {
+            if (orderedColors.get(1) != MagicColor.Black) {
+                Collections.swap(orderedColors, 0, 1);
+            }
         }
-        if (orderedColors.get(0) == MagicColor.Black && orderedColors.get(1) != MagicColor.Red && orderedColors.get(1) != MagicColor.Green) {
-            Collections.swap(orderedColors, 0, 1);
+        if (orderedColors.get(0) == MagicColor.Black) {
+            if (orderedColors.get(1) != MagicColor.Red && orderedColors.get(1) != MagicColor.Green) {
+                Collections.swap(orderedColors, 0, 1);
+            }
         }
-        if (orderedColors.get(0) == MagicColor.Red && orderedColors.get(1) != MagicColor.White && orderedColors.get(1) != MagicColor.Blue && orderedColors.get(1) != MagicColor.Green) {
-            Collections.swap(orderedColors, 0, 1);
+        if (orderedColors.get(0) == MagicColor.Red) {
+            if (orderedColors.get(1) != MagicColor.White && orderedColors.get(1) != MagicColor.Blue && orderedColors.get(1) != MagicColor.Green) {
+                Collections.swap(orderedColors, 0, 1);
+            }
         }
-        if (orderedColors.get(0) == MagicColor.Green && orderedColors.get(1) != MagicColor.White && orderedColors.get(1) != MagicColor.Blue) {
-            Collections.swap(orderedColors, 0, 1);
+        if (orderedColors.get(0) == MagicColor.Green) {
+            if (orderedColors.get(1) != MagicColor.White && orderedColors.get(1) != MagicColor.Blue) {
+                Collections.swap(orderedColors, 0, 1);
+            }
         }
         return orderedColors;
     }
