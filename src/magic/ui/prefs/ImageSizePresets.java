@@ -9,6 +9,7 @@ public enum ImageSizePresets {
     SIZE_223x310(223, 310),
     SIZE_265x370(265, 370),
     SIZE_312x445(312, 445),     // magiccards.info
+    SIZE_365x513(365, 513),     // cardbuilder with crop
     SIZE_480x680(480, 680),     // mtgimage.com
     SIZE_680x960(680, 960),
     SIZE_745x1040(745, 1040);
