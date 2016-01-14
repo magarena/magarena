@@ -8,4 +8,4 @@ cost={4}{U}{U}
 ability=Surge {3}{U}{U}
 effect=Return all nonland permanents to their owners' hands.~If SN's surge cost was paid, put an 8/8 blue Octopus creature token onto the battlefield.
 timing=removal
-oracle=Surge {3}{U}{U}\nReturn all nonland permanents to their owners' hands. If Crush of Tentacle's surge cost was paid, put an 8/8 blue Octopus creature token onto the battlefield.
+oracle=Surge {3}{U}{U}\nReturn all nonland permanents to their owners' hands. If Crush of Tentacles's surge cost was paid, put an 8/8 blue Octopus creature token onto the battlefield.

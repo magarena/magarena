@@ -1,7 +1,7 @@
 name=Strider Harness
 image=http://magiccards.info/scans/en/som/207.jpg
 value=3.010
-rarity=C
+rarity=U
 type=Artifact
 subtype=Equipment
 cost={3}
