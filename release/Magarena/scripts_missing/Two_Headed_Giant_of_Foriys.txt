@@ -7,6 +7,6 @@ subtype=Giant
 cost={4}{R}
 pt=4/4
 ability=Trample;\
-        SN can block an additional creature.
+        SN can block an additional creature each combat.
 timing=main
-oracle=Trample\nTwo-Headed Giant of Foriys can block an additional creature.
+oracle=Trample\nTwo-Headed Giant of Foriys can block an additional creature each combat.

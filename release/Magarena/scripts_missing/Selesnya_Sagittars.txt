@@ -7,6 +7,6 @@ subtype=Elf,Archer
 cost={3}{G}{W}
 pt=2/5
 ability=Reach;\
-        SN can block an additional creature.
+        SN can block an additional creature each combat.
 timing=main
-oracle=Reach\nSelesnya Sagittars can block an additional creature.
+oracle=Reach\nSelesnya Sagittars can block an additional creature each combat.
