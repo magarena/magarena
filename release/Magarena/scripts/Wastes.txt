@@ -4,4 +4,5 @@ value=2.500
 rarity=B
 type=Basic,Land
 timing=land
-oracle=NONE
+ability={T}: Add {C} to your mana pool.
+oracle={T}: Add {C} to your mana pool.

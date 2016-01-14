@@ -1,0 +1,10 @@
+name=Abstruse Interference
+image=http://magiccards.info/scans/en/ogw/40.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{U}
+ability=Devoid
+effect=Counter target spell unless its controller pays {1}.~PN puts a 1/1 colorless Eldrazi Scion creature token onto the battlefield.
+timing=counter
+oracle=Devoid\nCounter target spell unless its controller pays {1}. You put a 1/1 colorless Eldrazi Scion creature token onto the battlefield. It has "Sacrifice this creature: Add {C} to your mana pool."
