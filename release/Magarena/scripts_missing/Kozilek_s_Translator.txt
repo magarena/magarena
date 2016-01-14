@@ -1,0 +1,12 @@
+name=Kozilek's Translator
+image=http://magiccards.info/scans/en/ogw/74.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Eldrazi,Drone
+cost={4}{B}
+pt=3/5
+ability=Devoid;\
+        Pay 1 life: Add {C} to your mana pool. Activate this ability only once each turn.
+timing=main
+oracle=Devoid\nPay 1 life: Add {C} to your mana pool. Activate this ability only once each turn.

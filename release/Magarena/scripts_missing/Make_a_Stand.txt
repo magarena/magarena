@@ -1,0 +1,9 @@
+name=Make a Stand
+image=http://magiccards.info/scans/en/ogw/26.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={2}{W}
+effect=Creatures you control get +1/+0 and gain indestructible until end of turn.
+timing=removal
+oracle=Creatures you control get +1/+0 and gain indestructible until end of turn.

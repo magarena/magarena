@@ -1,0 +1,11 @@
+name=Affa Protector
+image=http://magiccards.info/scans/en/ogw/14.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Soldier,Ally
+cost={2}{W}
+pt=1/4
+ability=Vigilance
+timing=main
+oracle=Vigilance

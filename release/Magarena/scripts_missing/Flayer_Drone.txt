@@ -1,0 +1,13 @@
+name=Flayer Drone
+image=http://magiccards.info/scans/en/ogw/148.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Eldrazi,Drone
+cost={1}{B}{R}
+pt=3/1
+ability=Devoid;\
+        First strike;\
+        Whenever another colorless creature enters the battlefield under your control, target opponent loses 1 life.
+timing=main
+oracle=Devoid\nFirst strike\nWhenever another colorless creature enters the battlefield under your control, target opponent loses 1 life.

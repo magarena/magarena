@@ -1,0 +1,14 @@
+name=Bearer of Silence
+image=http://magiccards.info/scans/en/ogw/67.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Eldrazi
+cost={1}{B}
+pt=2/1
+ability=Devoid;\
+        When you cast SN, you may pay {1}{C}. If you do, target opponent sacrifices a creature.;\
+        Flying;\
+        SN can't block.
+timing=main
+oracle=Devoid\nWhen you cast Bearer of Silence, you may pay {1}{C}. If you do, target opponent sacrifices a creature.\nFlying\nBearer of Silence can't block.

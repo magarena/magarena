@@ -1,0 +1,9 @@
+name=Pulse of Murasa
+image=http://magiccards.info/scans/en/ogw/141.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{G}
+effect=Return target creature or land card from a graveyard to its owner's hand. You gain 6 life.
+timing=removal
+oracle=Return target creature or land card from a graveyard to its owner's hand. You gain 6 life.

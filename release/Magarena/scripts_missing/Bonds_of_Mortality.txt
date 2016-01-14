@@ -1,0 +1,10 @@
+name=Bonds of Mortality
+image=http://magiccards.info/scans/en/ogw/128.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={1}{G}
+ability=When SN enters the battlefield, draw a card.;\
+        {G}: Creatures your opponents control lose hexproof and indestructible until end of turn.
+timing=enchantment
+oracle=When Bonds of Mortality enters the battlefield, draw a card.\n{G}: Creatures your opponents control lose hexproof and indestructible until end of turn.

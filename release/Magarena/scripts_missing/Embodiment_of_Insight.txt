@@ -1,0 +1,13 @@
+name=Embodiment of Insight
+image=http://magiccards.info/scans/en/ogw/131.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elemental
+cost={4}{G}
+pt=4/4
+ability=Vigilance;\
+        Land creatures you control have vigilance.;\
+        Whenever a land enters the battlefield under your control, you may have target land you control become a 3/3 Elemental creature with haste until end of turn. It's still a land.
+timing=main
+oracle=Vigilance\nLand creatures you control have vigilance.\nLandfall — Whenever a land enters the battlefield under your control, you may have target land you control become a 3/3 Elemental creature with haste until end of turn. It's still a land.

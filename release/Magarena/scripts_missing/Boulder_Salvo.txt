@@ -1,0 +1,9 @@
+name=Boulder Salvo
+image=http://magiccards.info/scans/en/ogw/102.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={4}{R}
+effect=Surge {1}{R}~SN deals 4 damage to target creature.
+timing=main
+oracle=Surge {1}{R}\nBoulder Salvo deals 4 damage to target creature.

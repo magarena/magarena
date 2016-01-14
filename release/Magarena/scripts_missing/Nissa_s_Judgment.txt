@@ -1,0 +1,9 @@
+name=Nissa's Judgment
+image=http://magiccards.info/scans/en/ogw/139.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={4}{G}
+effect=Support 2.~Choose up to one target creature an opponent controls. Each creature you control with a +1/+1 counter on it deals damage equal to its power to that creature.
+timing=main
+oracle=Support 2.\nChoose up to one target creature an opponent controls. Each creature you control with a +1/+1 counter on it deals damage equal to its power to that creature.

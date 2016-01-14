@@ -1,0 +1,12 @@
+name=Steppe Glider
+image=http://magiccards.info/scans/en/ogw/36.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elemental
+cost={4}{W}
+pt=2/4
+ability=Flying, vigilance;\
+        {1}{W}: Target creature with a +1/+1 counter on it gains flying and vigilance until end of turn.
+timing=main
+oracle=Flying, vigilance\n{1}{W}: Target creature with a +1/+1 counter on it gains flying and vigilance until end of turn.

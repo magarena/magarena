@@ -1,0 +1,9 @@
+name=Tranquil Expanse
+image=http://magiccards.info/scans/en/ogw/180.jpg
+value=2.500
+rarity=U
+type=Land
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {G} or {W} to your mana pool.
+timing=land
+oracle=Tranquil Expanse enters the battlefield tapped.\n{T}: Add {G} or {W} to your mana pool.

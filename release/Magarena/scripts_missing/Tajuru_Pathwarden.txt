@@ -1,0 +1,11 @@
+name=Tajuru Pathwarden
+image=http://magiccards.info/scans/en/ogw/145.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elf,Warrior,Ally
+cost={4}{G}
+pt=5/4
+ability=Vigilance, trample
+timing=main
+oracle=Vigilance, trample

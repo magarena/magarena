@@ -1,0 +1,12 @@
+name=Jwar Isle Avenger
+image=http://magiccards.info/scans/en/ogw/58.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Sphinx
+cost={4}{U}
+pt=3/3
+ability=Surge {2}{U};\
+        Flying
+timing=main
+oracle=Surge {2}{U}\nFlying

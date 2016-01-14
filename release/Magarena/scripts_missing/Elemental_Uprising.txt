@@ -1,0 +1,9 @@
+name=Elemental Uprising
+image=http://magiccards.info/scans/en/ogw/130.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{G}
+effect=Target land you control becomes a 4/4 Elemental creature with haste until end of turn. It's still a land. It must be blocked this turn if able.
+timing=removal
+oracle=Target land you control becomes a 4/4 Elemental creature with haste until end of turn. It's still a land. It must be blocked this turn if able.

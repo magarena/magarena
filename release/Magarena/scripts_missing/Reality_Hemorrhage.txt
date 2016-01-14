@@ -1,0 +1,9 @@
+name=Reality Hemorrhage
+image=http://magiccards.info/scans/en/ogw/100.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{R}
+effect=Devoid~SN deals 2 damage to target creature or player.
+timing=removal
+oracle=Devoid\nReality Hemorrhage deals 2 damage to target creature or player.

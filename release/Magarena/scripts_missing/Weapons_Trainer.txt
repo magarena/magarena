@@ -1,0 +1,11 @@
+name=Weapons Trainer
+image=http://magiccards.info/scans/en/ogw/160.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Soldier,Ally
+cost={R}{W}
+pt=3/2
+ability=Other creatures you control get +1/+0 as long as you control an Equipment.
+timing=main
+oracle=Other creatures you control get +1/+0 as long as you control an Equipment.

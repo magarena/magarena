@@ -1,0 +1,12 @@
+name=Stone Haven Outfitter
+image=http://magiccards.info/scans/en/ogw/37.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Kor,Artificer,Ally
+cost={1}{W}
+pt=2/2
+ability=Equipped creatures you control get +1/+1.;\
+        Whenever an equipped creature you control dies, draw a card.
+timing=main
+oracle=Equipped creatures you control get +1/+1.\nWhenever an equipped creature you control dies, draw a card.

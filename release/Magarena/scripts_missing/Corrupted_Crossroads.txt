@@ -1,0 +1,9 @@
+name=Corrupted Crossroads
+image=http://magiccards.info/scans/en/ogw/169.jpg
+value=2.500
+rarity=R
+type=Land
+ability={T}: Add {C} to your mana pool.;\
+        {T}, Pay 1 life: Add one mana of any color to your mana pool. Spend this mana only to cast a spell with devoid.
+timing=land
+oracle={T}: Add {C} to your mana pool.\n{T}, Pay 1 life: Add one mana of any color to your mana pool. Spend this mana only to cast a spell with devoid.

@@ -1,0 +1,7 @@
+name=Wastes
+image=http://magiccards.info/scans/en/ogw/183.jpg
+value=2.500
+rarity=B
+type=Basic,Land
+timing=land
+oracle=NONE

@@ -1,0 +1,12 @@
+name=Blinding Drone
+image=http://magiccards.info/scans/en/ogw/41.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Eldrazi,Drone
+cost={1}{U}
+pt=1/3
+ability=Devoid;\
+        {C}, {T}: Tap target creature.
+timing=main
+oracle=Devoid\n{C}, {T}: Tap target creature.

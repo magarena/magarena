@@ -1,0 +1,9 @@
+name=Slip Through Space
+image=http://magiccards.info/scans/en/ogw/47.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={U}
+effect=Devoid~Target creature can't be blocked this turn.~Draw a card.
+timing=main
+oracle=Devoid\nTarget creature can't be blocked this turn.\nDraw a card.

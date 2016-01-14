@@ -1,0 +1,9 @@
+name=Natural State
+image=http://magiccards.info/scans/en/ogw/136.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={G}
+effect=Destroy target artifact or enchantment with converted mana cost 3 or less.
+timing=removal
+oracle=Destroy target artifact or enchantment with converted mana cost 3 or less.

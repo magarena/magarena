@@ -1,0 +1,9 @@
+name=Witness the End
+image=http://magiccards.info/scans/en/ogw/82.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={3}{B}
+effect=Devoid~Target opponent exiles two cards from his or her hand and loses 2 life.
+timing=main
+oracle=Devoid\nTarget opponent exiles two cards from his or her hand and loses 2 life.

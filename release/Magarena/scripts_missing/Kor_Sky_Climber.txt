@@ -1,0 +1,11 @@
+name=Kor Sky Climber
+image=http://magiccards.info/scans/en/ogw/24.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Kor,Soldier,Ally
+cost={2}{W}
+pt=3/2
+ability={1}{W}: SN gains flying until end of turn.
+timing=main
+oracle={1}{W}: Kor Sky Climber gains flying until end of turn.

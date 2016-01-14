@@ -1,0 +1,13 @@
+name=Embodiment of Fury
+image=http://magiccards.info/scans/en/ogw/107.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elemental
+cost={3}{R}
+pt=4/3
+ability=Trample;\
+        Land creatures you control have trample.;\
+        Whenever a land enters the battlefield under your control, you may have target land you control become a 3/3 Elemental creature with haste until end of turn. It's still a land.
+timing=main
+oracle=Trample\nLand creatures you control have trample.\nLandfall — Whenever a land enters the battlefield under your control, you may have target land you control become a 3/3 Elemental creature with haste until end of turn. It's still a land.

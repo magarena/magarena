@@ -1,0 +1,12 @@
+name=Slaughter Drone
+image=http://magiccards.info/scans/en/ogw/79.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Eldrazi,Drone
+cost={1}{B}
+pt=2/2
+ability=Devoid;\
+        {C}: SN gains deathtouch until end of turn.
+timing=main
+oracle=Devoid\n{C}: Slaughter Drone gains deathtouch until end of turn.

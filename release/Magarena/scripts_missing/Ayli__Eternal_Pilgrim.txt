@@ -1,0 +1,13 @@
+name=Ayli, Eternal Pilgrim
+image=http://magiccards.info/scans/en/ogw/151.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Kor,Cleric
+cost={W}{B}
+pt=2/3
+ability=Deathtouch;\
+        {1}, Sacrifice another creature: You gain life equal to the sacrificed creature's toughness.;\
+        {1}{W}{B}, Sacrifice another creature: Exile target nonland permanent. Activate this ability only if you have at least 10 life more than your starting life total.
+timing=main
+oracle=Deathtouch\n{1}, Sacrifice another creature: You gain life equal to the sacrificed creature's toughness.\n{1}{W}{B}, Sacrifice another creature: Exile target nonland permanent. Activate this ability only if you have at least 10 life more than your starting life total.

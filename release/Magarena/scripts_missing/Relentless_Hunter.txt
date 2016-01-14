@@ -1,0 +1,11 @@
+name=Relentless Hunter
+image=http://magiccards.info/scans/en/ogw/158.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Warrior
+cost={1}{R}{G}
+pt=3/3
+ability={1}{R}{G}: SN gets +1/+1 and gains trample until end of turn.
+timing=main
+oracle={1}{R}{G}: Relentless Hunter gets +1/+1 and gains trample until end of turn.

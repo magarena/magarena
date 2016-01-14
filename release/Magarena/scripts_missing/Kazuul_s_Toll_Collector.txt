@@ -1,0 +1,11 @@
+name=Kazuul's Toll Collector
+image=http://magiccards.info/scans/en/ogw/112.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Ogre,Warrior
+cost={2}{R}
+pt=3/2
+ability={0}: Attach target Equipment you control to SN. Activate this ability only any time you could cast a sorcery.
+timing=main
+oracle={0}: Attach target Equipment you control to Kazuul's Toll Collector. Activate this ability only any time you could cast a sorcery.

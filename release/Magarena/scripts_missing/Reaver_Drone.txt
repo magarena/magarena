@@ -1,0 +1,12 @@
+name=Reaver Drone
+image=http://magiccards.info/scans/en/ogw/76.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Eldrazi,Drone
+cost={B}
+pt=2/1
+ability=Devoid;\
+        At the beginning of your upkeep, you lose 1 life unless you control another colorless creature.
+timing=main
+oracle=Devoid\nAt the beginning of your upkeep, you lose 1 life unless you control another colorless creature.

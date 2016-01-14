@@ -1,0 +1,12 @@
+name=Cinder Hellion
+image=http://magiccards.info/scans/en/ogw/105.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Hellion
+cost={4}{R}
+pt=4/4
+ability=Trample;\
+        When SN enters the battlefield, it deals 2 damage to target opponent.
+timing=main
+oracle=Trample\nWhen Cinder Hellion enters the battlefield, it deals 2 damage to target opponent.

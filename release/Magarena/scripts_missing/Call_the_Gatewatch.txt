@@ -1,0 +1,9 @@
+name=Call the Gatewatch
+image=http://magiccards.info/scans/en/ogw/16.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={2}{W}
+effect=Search your library for a planeswalker card, reveal it, and put it into your hand. Then shuffle your library.
+timing=main
+oracle=Search your library for a planeswalker card, reveal it, and put it into your hand. Then shuffle your library.

@@ -1,0 +1,11 @@
+name=Relief Captain
+image=http://magiccards.info/scans/en/ogw/32.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Kor,Knight,Ally
+cost={2}{W}{W}
+pt=3/2
+ability=When SN enters the battlefield, support 3.
+timing=main
+oracle=When Relief Captain enters the battlefield, support 3.

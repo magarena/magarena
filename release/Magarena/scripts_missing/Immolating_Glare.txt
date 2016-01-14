@@ -1,0 +1,9 @@
+name=Immolating Glare
+image=http://magiccards.info/scans/en/ogw/20.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={1}{W}
+effect=Destroy target attacking creature.
+timing=removal
+oracle=Destroy target attacking creature.

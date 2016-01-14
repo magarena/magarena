@@ -1,0 +1,12 @@
+name=Scion Summoner
+image=http://magiccards.info/scans/en/ogw/123.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Eldrazi,Drone
+cost={2}{G}
+pt=2/2
+ability=Devoid;\
+        When SN enters the battlefield, put a 1/1 colorless Eldrazi Scion creature token onto the battlefield. It has "Sacrifice this creature: Add {C} to your mana pool."
+timing=main
+oracle=Devoid\nWhen Scion Summoner enters the battlefield, put a 1/1 colorless Eldrazi Scion creature token onto the battlefield. It has "Sacrifice this creature: Add {C} to your mana pool."

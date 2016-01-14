@@ -1,0 +1,10 @@
+name=Oath of Jace
+image=http://magiccards.info/scans/en/ogw/60.jpg
+value=2.500
+rarity=R
+type=Legendary,Enchantment
+cost={2}{U}
+ability=When SN enters the battlefield, draw three cards, then discard two cards.;\
+        At the beginning of your upkeep, scry X, where X is the number of planeswalkers you control.
+timing=enchantment
+oracle=When Oath of Jace enters the battlefield, draw three cards, then discard two cards.\nAt the beginning of your upkeep, scry X, where X is the number of planeswalkers you control.

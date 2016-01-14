@@ -1,0 +1,9 @@
+name=Pyromancer's Assault
+image=http://magiccards.info/scans/en/ogw/115.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={3}{R}
+ability=Whenever you cast your second spell each turn, SN deals 2 damage to target creature or player.
+timing=enchantment
+oracle=Whenever you cast your second spell each turn, Pyromancer's Assault deals 2 damage to target creature or player.

@@ -1,0 +1,9 @@
+name=Gift of Tusks
+image=http://magiccards.info/scans/en/ogw/55.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={U}
+effect=Until end of turn, target creature loses all abilities and becomes a green Elephant with base power and toughness 3/3.
+timing=removal
+oracle=Until end of turn, target creature loses all abilities and becomes a green Elephant with base power and toughness 3/3.

@@ -1,0 +1,11 @@
+name=Kozilek's Pathfinder
+image=http://magiccards.info/scans/en/ogw/5.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Eldrazi
+cost={6}
+pt=5/5
+ability={C}: Target creature can't block SN this turn.
+timing=main
+oracle={C}: Target creature can't block Kozilek's Pathfinder this turn.

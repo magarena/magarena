@@ -1,0 +1,12 @@
+name=Goblin Dark-Dwellers
+image=http://magiccards.info/scans/en/ogw/110.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Goblin
+cost={3}{R}{R}
+pt=4/4
+ability=Menace;\
+        When SN enters the battlefield, you may cast target instant or sorcery card with converted mana cost 3 or less from your graveyard without paying its mana cost. If that card would be put into your graveyard this turn, exile it instead.
+timing=main
+oracle=Menace\nWhen Goblin Dark-Dwellers enters the battlefield, you may cast target instant or sorcery card with converted mana cost 3 or less from your graveyard without paying its mana cost. If that card would be put into your graveyard this turn, exile it instead.

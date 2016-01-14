@@ -1,0 +1,14 @@
+name=World Breaker
+image=http://magiccards.info/scans/en/ogw/126.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Eldrazi
+cost={6}{G}
+pt=5/7
+ability=Devoid;\
+        When you cast SN, exile target artifact, enchantment, or land.;\
+        Reach;\
+        {2}{C}, Sacrifice a land: Return SN from your graveyard to your hand.
+timing=main
+oracle=Devoid\nWhen you cast World Breaker, exile target artifact, enchantment, or land.\nReach\n{2}{C}, Sacrifice a land: Return World Breaker from your graveyard to your hand.

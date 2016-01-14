@@ -1,0 +1,13 @@
+name=Sky Scourer
+image=http://magiccards.info/scans/en/ogw/78.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Eldrazi,Drone
+cost={1}{B}
+pt=1/2
+ability=Devoid;\
+        Flying;\
+        Whenever you cast a colorless spell, SN gets +1/+0 until end of turn.
+timing=main
+oracle=Devoid\nFlying\nWhenever you cast a colorless spell, Sky Scourer gets +1/+0 until end of turn.

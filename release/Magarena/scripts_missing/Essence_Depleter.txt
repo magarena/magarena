@@ -1,0 +1,12 @@
+name=Essence Depleter
+image=http://magiccards.info/scans/en/ogw/69.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Eldrazi,Drone
+cost={2}{B}
+pt=2/3
+ability=Devoid;\
+        {1}{C}: Target opponent loses 1 life and you gain 1 life.
+timing=main
+oracle=Devoid\n{1}{C}: Target opponent loses 1 life and you gain 1 life.

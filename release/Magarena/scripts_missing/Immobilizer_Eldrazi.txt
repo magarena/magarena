@@ -1,0 +1,12 @@
+name=Immobilizer Eldrazi
+image=http://magiccards.info/scans/en/ogw/97.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Eldrazi,Drone
+cost={1}{R}
+pt=2/1
+ability=Devoid;\
+        {2}{C}: Each creature with toughness greater than its power can't block this turn.
+timing=main
+oracle=Devoid\n{2}{C}: Each creature with toughness greater than its power can't block this turn.

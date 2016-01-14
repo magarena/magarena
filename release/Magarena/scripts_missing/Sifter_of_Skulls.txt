@@ -1,0 +1,12 @@
+name=Sifter of Skulls
+image=http://magiccards.info/scans/en/ogw/77.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Eldrazi
+cost={3}{B}
+pt=4/3
+ability=Devoid;\
+        Whenever another nontoken creature you control dies, put a 1/1 colorless Eldrazi Scion creature token onto the battlefield. It has "Sacrifice this creature: Add {C} to your mana pool."
+timing=main
+oracle=Devoid\nWhenever another nontoken creature you control dies, put a 1/1 colorless Eldrazi Scion creature token onto the battlefield. It has "Sacrifice this creature: Add {C} to your mana pool."

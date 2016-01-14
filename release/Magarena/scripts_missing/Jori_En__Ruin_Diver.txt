@@ -1,0 +1,11 @@
+name=Jori En, Ruin Diver
+image=http://magiccards.info/scans/en/ogw/155.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Merfolk,Wizard
+cost={1}{U}{R}
+pt=2/3
+ability=Whenever you cast your second spell each turn, draw a card.
+timing=main
+oracle=Whenever you cast your second spell each turn, draw a card.

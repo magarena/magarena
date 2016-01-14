@@ -1,0 +1,10 @@
+name=Ancient Crab
+image=http://magiccards.info/scans/en/ogw/50.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Crab
+cost={1}{U}{U}
+pt=1/5
+timing=main
+oracle=NONE

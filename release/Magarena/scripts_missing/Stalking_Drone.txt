@@ -1,0 +1,12 @@
+name=Stalking Drone
+image=http://magiccards.info/scans/en/ogw/124.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Eldrazi,Drone
+cost={1}{G}
+pt=2/2
+ability=Devoid;\
+        {C}: SN gets +1/+2 until end of turn. Activate this ability only once each turn.
+timing=main
+oracle=Devoid\n{C}: Stalking Drone gets +1/+2 until end of turn. Activate this ability only once each turn.

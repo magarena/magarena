@@ -1,0 +1,13 @@
+name=Sphinx of the Final Word
+image=http://magiccards.info/scans/en/ogw/63.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Sphinx
+cost={5}{U}{U}
+pt=5/5
+ability=SN can't be countered.;\
+        Flying, hexproof;\
+        Instant and sorcery spells you control can't be countered by spells or abilities.
+timing=main
+oracle=Sphinx of the Final Word can't be countered.\nFlying, hexproof\nInstant and sorcery spells you control can't be countered by spells or abilities.

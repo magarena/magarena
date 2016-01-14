@@ -1,0 +1,12 @@
+name=Kozilek's Shrieker
+image=http://magiccards.info/scans/en/ogw/73.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Eldrazi,Drone
+cost={2}{B}
+pt=3/2
+ability=Devoid;\
+        {C}: SN gets +1/+0 and gains menace until end of turn.
+timing=main
+oracle=Devoid\n{C}: Kozilek's Shrieker gets +1/+0 and gains menace until end of turn.

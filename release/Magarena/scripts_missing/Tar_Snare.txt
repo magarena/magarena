@@ -1,0 +1,9 @@
+name=Tar Snare
+image=http://magiccards.info/scans/en/ogw/90.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{B}
+effect=Target creature gets -3/-2 until end of turn.
+timing=removal
+oracle=Target creature gets -3/-2 until end of turn.

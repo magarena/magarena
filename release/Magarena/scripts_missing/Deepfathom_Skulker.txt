@@ -1,0 +1,13 @@
+name=Deepfathom Skulker
+image=http://magiccards.info/scans/en/ogw/43.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Eldrazi
+cost={5}{U}
+pt=4/4
+ability=Devoid;\
+        Whenever a creature you control deals combat damage to a player, you may draw a card.;\
+        {3}{C}: Target creature can't be blocked this turn.
+timing=main
+oracle=Devoid\nWhenever a creature you control deals combat damage to a player, you may draw a card.\n{3}{C}: Target creature can't be blocked this turn.

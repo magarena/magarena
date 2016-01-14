@@ -1,0 +1,9 @@
+name=Meandering River
+image=http://magiccards.info/scans/en/ogw/173.jpg
+value=2.500
+rarity=U
+type=Land
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {W} or {U} to your mana pool.
+timing=land
+oracle=Meandering River enters the battlefield tapped.\n{T}: Add {W} or {U} to your mana pool.

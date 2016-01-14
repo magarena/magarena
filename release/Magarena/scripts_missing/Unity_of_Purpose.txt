@@ -1,0 +1,9 @@
+name=Unity of Purpose
+image=http://magiccards.info/scans/en/ogw/66.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={3}{U}
+effect=Support 2.~Untap each creature you control with a +1/+1 counter on it.
+timing=removal
+oracle=Support 2.\nUntap each creature you control with a +1/+1 counter on it.

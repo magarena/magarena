@@ -1,0 +1,12 @@
+name=Walker of the Wastes
+image=http://magiccards.info/scans/en/ogw/10.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Eldrazi
+cost={4}{C}
+pt=4/4
+ability=Trample;\
+        SN gets +1/+1 for each land you control named Wastes.
+timing=main
+oracle=Trample\nWalker of the Wastes gets +1/+1 for each land you control named Wastes.

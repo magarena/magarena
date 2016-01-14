@@ -1,0 +1,9 @@
+name=Sweep Away
+image=http://magiccards.info/scans/en/ogw/64.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{U}
+effect=Return target creature to its owner's hand. If that creature is attacking, you may put it on top of its owner's library instead.
+timing=removal
+oracle=Return target creature to its owner's hand. If that creature is attacking, you may put it on top of its owner's library instead.

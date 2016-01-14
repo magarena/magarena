@@ -1,0 +1,9 @@
+name=Vines of the Recluse
+image=http://magiccards.info/scans/en/ogw/146.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={G}
+effect=Target creature gets +1/+2 and gains reach until end of turn. Untap it.
+timing=removal
+oracle=Target creature gets +1/+2 and gains reach until end of turn. Untap it.

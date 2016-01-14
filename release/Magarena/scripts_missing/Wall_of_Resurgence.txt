@@ -1,0 +1,12 @@
+name=Wall of Resurgence
+image=http://magiccards.info/scans/en/ogw/39.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Wall
+cost={2}{W}
+pt=0/6
+ability=Defender;\
+        When SN enters the battlefield, you may put three +1/+1 counters on target land you control. If you do, that land becomes a 0/0 Elemental creature with haste that's still a land.
+timing=smain
+oracle=Defender\nWhen Wall of Resurgence enters the battlefield, you may put three +1/+1 counters on target land you control. If you do, that land becomes a 0/0 Elemental creature with haste that's still a land.

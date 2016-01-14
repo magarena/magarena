@@ -1,0 +1,9 @@
+name=Oblivion Strike
+image=http://magiccards.info/scans/en/ogw/75.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={3}{B}
+effect=Devoid~Exile target creature.
+timing=main
+oracle=Devoid\nExile target creature.

@@ -1,0 +1,9 @@
+name=Unnatural Endurance
+image=http://magiccards.info/scans/en/ogw/80.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={B}
+effect=Devoid~Target creature gets +2/+0 until end of turn. Regenerate it.
+timing=removal
+oracle=Devoid\nTarget creature gets +2/+0 until end of turn. Regenerate it.

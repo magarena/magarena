@@ -1,0 +1,12 @@
+name=Prophet of Distortion
+image=http://magiccards.info/scans/en/ogw/46.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Eldrazi,Drone
+cost={U}
+pt=1/2
+ability=Devoid;\
+        {3}{C}: Draw a card.
+timing=main
+oracle=Devoid\n{3}{C}: Draw a card.

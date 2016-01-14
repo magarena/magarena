@@ -1,0 +1,12 @@
+name=Stormchaser Mage
+image=http://magiccards.info/scans/en/ogw/159.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={U}{R}
+pt=1/3
+ability=Flying, haste;\
+        Prowess
+timing=main
+oracle=Flying, haste\nProwess

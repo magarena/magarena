@@ -1,0 +1,9 @@
+name=Grip of the Roil
+image=http://magiccards.info/scans/en/ogw/56.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={2}{U}
+effect=Surge {1}{U}~Tap target creature. It doesn't untap during its controller's next untap step.~Draw a card.
+timing=removal
+oracle=Surge {1}{U}\nTap target creature. It doesn't untap during its controller's next untap step.\nDraw a card.

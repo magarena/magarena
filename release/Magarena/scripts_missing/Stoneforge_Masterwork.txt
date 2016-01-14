@@ -1,0 +1,11 @@
+name=Stoneforge Masterwork
+image=http://magiccards.info/scans/en/ogw/166.jpg
+value=2.500
+rarity=R
+type=Artifact
+subtype=Equipment
+cost={1}
+ability=Equipped creature gets +1/+1 for each other creature you control that shares a creature type with it.;\
+        Equip {2}
+timing=equipment
+oracle=Equipped creature gets +1/+1 for each other creature you control that shares a creature type with it.\nEquip {2}

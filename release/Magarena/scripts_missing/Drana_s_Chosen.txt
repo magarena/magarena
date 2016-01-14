@@ -1,0 +1,11 @@
+name=Drana's Chosen
+image=http://magiccards.info/scans/en/ogw/84.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Vampire,Shaman,Ally
+cost={3}{B}
+pt=2/2
+ability={T}, Tap an untapped Ally you control: Put a 2/2 black Zombie creature token onto the battlefield tapped.
+timing=main
+oracle=Cohort — {T}, Tap an untapped Ally you control: Put a 2/2 black Zombie creature token onto the battlefield tapped.

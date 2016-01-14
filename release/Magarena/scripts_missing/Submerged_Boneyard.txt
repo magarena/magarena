@@ -1,0 +1,9 @@
+name=Submerged Boneyard
+image=http://magiccards.info/scans/en/ogw/178.jpg
+value=2.500
+rarity=U
+type=Land
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {U} or {B} to your mana pool.
+timing=land
+oracle=Submerged Boneyard enters the battlefield tapped.\n{T}: Add {U} or {B} to your mana pool.

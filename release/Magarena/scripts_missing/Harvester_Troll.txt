@@ -1,0 +1,11 @@
+name=Harvester Troll
+image=http://magiccards.info/scans/en/ogw/133.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Troll
+cost={3}{G}
+pt=2/3
+ability=When SN enters the battlefield, you may sacrifice a creature or land. If you do, put two +1/+1 counters on SN.
+timing=main
+oracle=When Harvester Troll enters the battlefield, you may sacrifice a creature or land. If you do, put two +1/+1 counters on Harvester Troll.

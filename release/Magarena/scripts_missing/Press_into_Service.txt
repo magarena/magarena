@@ -1,0 +1,9 @@
+name=Press into Service
+image=http://magiccards.info/scans/en/ogw/114.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={4}{R}
+effect=Support 2.~Gain control of target creature until end of turn. Untap that creature. It gains haste until end of turn.
+timing=main
+oracle=Support 2.\nGain control of target creature until end of turn. Untap that creature. It gains haste until end of turn.

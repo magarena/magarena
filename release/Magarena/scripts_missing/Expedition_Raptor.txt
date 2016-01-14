@@ -1,0 +1,12 @@
+name=Expedition Raptor
+image=http://magiccards.info/scans/en/ogw/18.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Bird
+cost={3}{W}{W}
+pt=2/2
+ability=Flying;\
+        When SN enters the battlefield, support 2.
+timing=main
+oracle=Flying\nWhen Expedition Raptor enters the battlefield, support 2.

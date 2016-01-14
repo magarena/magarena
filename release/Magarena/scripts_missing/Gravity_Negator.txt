@@ -1,0 +1,13 @@
+name=Gravity Negator
+image=http://magiccards.info/scans/en/ogw/45.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Eldrazi,Drone
+cost={3}{U}
+pt=2/3
+ability=Devoid;\
+        Flying;\
+        Whenever SN attacks, you may pay {C}. If you do, another target creature gains flying until end of turn.
+timing=main
+oracle=Devoid\nFlying\nWhenever Gravity Negator attacks, you may pay {C}. If you do, another target creature gains flying until end of turn.

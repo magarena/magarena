@@ -1,0 +1,14 @@
+name=Endbringer
+image=http://magiccards.info/scans/en/ogw/3.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Eldrazi
+cost={5}{C}
+pt=5/5
+ability=Untap SN during each other player's untap step.;\
+        {T}: SN deals 1 damage to target creature or player.;\
+        {C}, {T}: Target creature can't attack or block this turn.;\
+        {C}{C}, {T}: Draw a card.
+timing=main
+oracle=Untap Endbringer during each other player's untap step.\n{T}: Endbringer deals 1 damage to target creature or player.\n{C}, {T}: Target creature can't attack or block this turn.\n{C}{C}, {T}: Draw a card.

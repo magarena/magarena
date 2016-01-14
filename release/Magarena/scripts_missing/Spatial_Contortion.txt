@@ -1,0 +1,9 @@
+name=Spatial Contortion
+image=http://magiccards.info/scans/en/ogw/8.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={1}{C}
+effect=Target creature gets +3/-3 until end of turn.
+timing=removal
+oracle=Target creature gets +3/-3 until end of turn.

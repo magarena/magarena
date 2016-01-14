@@ -1,0 +1,9 @@
+name=Sea Gate Wreckage
+image=http://magiccards.info/scans/en/ogw/177.jpg
+value=2.500
+rarity=R
+type=Land
+ability={T}: Add {C} to your mana pool.;\
+        {2}{C}, {T}: Draw a card. Activate this ability only if you have no cards in hand.
+timing=land
+oracle={T}: Add {C} to your mana pool.\n{2}{C}, {T}: Draw a card. Activate this ability only if you have no cards in hand.

@@ -1,0 +1,13 @@
+name=Eldrazi Obligator
+image=http://magiccards.info/scans/en/ogw/96.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Eldrazi
+cost={2}{R}
+pt=3/1
+ability=Devoid;\
+        When you cast SN, you may pay {1}{C}. If you do, gain control of target creature until end of turn, untap that creature, and it gains haste until end of turn.;\
+        Haste
+timing=fmain
+oracle=Devoid\nWhen you cast Eldrazi Obligator, you may pay {1}{C}. If you do, gain control of target creature until end of turn, untap that creature, and it gains haste until end of turn.\nHaste

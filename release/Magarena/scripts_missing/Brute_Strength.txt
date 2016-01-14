@@ -1,0 +1,9 @@
+name=Brute Strength
+image=http://magiccards.info/scans/en/ogw/103.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{R}
+effect=Target creature gets +3/+1 and gains trample until end of turn.
+timing=removal
+oracle=Target creature gets +3/+1 and gains trample until end of turn.

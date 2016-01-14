@@ -1,0 +1,11 @@
+name=Hedron Alignment
+image=http://magiccards.info/scans/en/ogw/57.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={2}{U}
+ability=Hexproof;\
+        At the beginning of your upkeep, you may reveal your hand. If you do, you win the game if you own a card named Hedron Alignment in exile, in your hand, in your graveyard, and on the battlefield.;\
+        {1}{U}: Scry 1.
+timing=enchantment
+oracle=Hexproof\nAt the beginning of your upkeep, you may reveal your hand. If you do, you win the game if you own a card named Hedron Alignment in exile, in your hand, in your graveyard, and on the battlefield.\n{1}{U}: Scry 1.

@@ -1,0 +1,12 @@
+name=Vampire Envoy
+image=http://magiccards.info/scans/en/ogw/92.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vampire,Cleric,Ally
+cost={2}{B}
+pt=1/4
+ability=Flying;\
+        Whenever SN becomes tapped, you gain 1 life.
+timing=main
+oracle=Flying\nWhenever Vampire Envoy becomes tapped, you gain 1 life.

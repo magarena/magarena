@@ -1,0 +1,12 @@
+name=Goblin Freerunner
+image=http://magiccards.info/scans/en/ogw/111.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Goblin,Warrior,Ally
+cost={3}{R}
+pt=3/2
+ability=Surge {1}{R};\
+        Menace
+timing=main
+oracle=Surge {1}{R}\nMenace

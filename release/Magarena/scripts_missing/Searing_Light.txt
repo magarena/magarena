@@ -1,0 +1,9 @@
+name=Searing Light
+image=http://magiccards.info/scans/en/ogw/33.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={W}
+effect=Destroy target attacking or blocking creature with power 2 or less.
+timing=removal
+oracle=Destroy target attacking or blocking creature with power 2 or less.

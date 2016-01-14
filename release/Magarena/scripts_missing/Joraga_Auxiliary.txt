@@ -1,0 +1,11 @@
+name=Joraga Auxiliary
+image=http://magiccards.info/scans/en/ogw/154.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Elf,Soldier,Ally
+cost={1}{G}{W}
+pt=2/3
+ability={4}{G}{W}: Support 2.
+timing=main
+oracle={4}{G}{W}: Support 2.

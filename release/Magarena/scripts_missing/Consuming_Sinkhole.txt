@@ -1,0 +1,9 @@
+name=Consuming Sinkhole
+image=http://magiccards.info/scans/en/ogw/94.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={3}{R}
+effect=Devoid~Choose one — (1) Exile target land creature. (2) SN deals 4 damage to target player.
+timing=removal
+oracle=Devoid\nChoose one —\n• Exile target land creature.\n• Consuming Sinkhole deals 4 damage to target player.

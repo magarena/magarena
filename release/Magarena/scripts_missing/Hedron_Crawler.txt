@@ -1,0 +1,11 @@
+name=Hedron Crawler
+image=http://magiccards.info/scans/en/ogw/164.jpg
+value=2.500
+rarity=C
+type=Artifact,Creature
+subtype=Construct
+cost={2}
+pt=0/1
+ability={T}: Add {C} to your mana pool.
+timing=main
+oracle={T}: Add {C} to your mana pool.

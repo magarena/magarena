@@ -1,0 +1,12 @@
+name=Cliffhaven Vampire
+image=http://magiccards.info/scans/en/ogw/153.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Vampire,Warrior,Ally
+cost={2}{W}{B}
+pt=2/4
+ability=Flying;\
+        Whenever you gain life, each opponent loses 1 life.
+timing=main
+oracle=Flying\nWhenever you gain life, each opponent loses 1 life.

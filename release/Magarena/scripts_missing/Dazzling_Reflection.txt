@@ -1,0 +1,9 @@
+name=Dazzling Reflection
+image=http://magiccards.info/scans/en/ogw/17.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{W}
+effect=You gain life equal to target creature's power. The next time that creature would deal damage this turn, prevent that damage.
+timing=removal
+oracle=You gain life equal to target creature's power. The next time that creature would deal damage this turn, prevent that damage.

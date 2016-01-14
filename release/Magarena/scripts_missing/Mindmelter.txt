@@ -1,0 +1,13 @@
+name=Mindmelter
+image=http://magiccards.info/scans/en/ogw/149.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Eldrazi,Drone
+cost={1}{U}{B}
+pt=2/2
+ability=Devoid;\
+        SN can't be blocked.;\
+        {3}{C}: Target opponent exiles a card from his or her hand. Activate this ability only any time you could cast a sorcery.
+timing=main
+oracle=Devoid\nMindmelter can't be blocked.\n{3}{C}: Target opponent exiles a card from his or her hand. Activate this ability only any time you could cast a sorcery.

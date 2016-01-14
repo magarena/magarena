@@ -1,0 +1,9 @@
+name=Fall of the Titans
+image=http://magiccards.info/scans/en/ogw/109.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={X}{X}{R}
+effect=Surge {X}{R}~SN deals X damage to each of up to two target creatures and/or players.
+timing=removal
+oracle=Surge {X}{R}\nFall of the Titans deals X damage to each of up to two target creatures and/or players.

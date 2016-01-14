@@ -1,0 +1,9 @@
+name=Timber Gorge
+image=http://magiccards.info/scans/en/ogw/179.jpg
+value=2.500
+rarity=U
+type=Land
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {R} or {G} to your mana pool.
+timing=land
+oracle=Timber Gorge enters the battlefield tapped.\n{T}: Add {R} or {G} to your mana pool.

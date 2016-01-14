@@ -1,0 +1,10 @@
+name=Needle Spires
+image=http://magiccards.info/scans/en/ogw/175.jpg
+value=2.500
+rarity=R
+type=Land
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {R} or {W} to your mana pool.;\
+        {2}{R}{W}: SN becomes a 2/1 red and white Elemental creature with double strike until end of turn. It's still a land.
+timing=land
+oracle=Needle Spires enters the battlefield tapped.\n{T}: Add {R} or {W} to your mana pool.\n{2}{R}{W}: Needle Spires becomes a 2/1 red and white Elemental creature with double strike until end of turn. It's still a land.

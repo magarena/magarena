@@ -1,0 +1,11 @@
+name=Baloth Null
+image=http://magiccards.info/scans/en/ogw/152.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Zombie,Beast
+cost={4}{B}{G}
+pt=4/5
+ability=When SN enters the battlefield, return up to two target creature cards from your graveyard to your hand.
+timing=main
+oracle=When Baloth Null enters the battlefield, return up to two target creature cards from your graveyard to your hand.

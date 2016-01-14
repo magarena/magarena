@@ -1,0 +1,11 @@
+name=Baloth Pup
+image=http://magiccards.info/scans/en/ogw/127.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Beast
+cost={1}{G}
+pt=3/1
+ability=SN has trample as long as it has a +1/+1 counter on it.
+timing=main
+oracle=Baloth Pup has trample as long as it has a +1/+1 counter on it.

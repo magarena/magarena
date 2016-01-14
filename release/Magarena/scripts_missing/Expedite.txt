@@ -1,0 +1,9 @@
+name=Expedite
+image=http://magiccards.info/scans/en/ogw/108.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={R}
+effect=Target creature gains haste until end of turn.~Draw a card.
+timing=removal
+oracle=Target creature gains haste until end of turn.\nDraw a card.
