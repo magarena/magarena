@@ -5,7 +5,8 @@ value=2.500
 rarity=U
 type=Sorcery
 cost={1}{R}
-ability=As an additional cost to cast SN, put a card an opponent owns from exile into that player's graveyard.
-effect=Devoid~SN deals 5 damage to target creature.
+ability=Devoid;\
+        As an additional cost to cast SN, put a card an opponent owns from exile into that player's graveyard.
+effect=SN deals 5 damage to target creature.
 timing=main
 oracle=Devoid\nAs an additional cost to cast Processor Assault, put a card an opponent owns from exile into that player's graveyard.\nProcessor Assault deals 5 damage to target creature.
