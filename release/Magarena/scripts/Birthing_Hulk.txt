@@ -7,7 +7,7 @@ subtype=Eldrazi,Drone
 cost={6}{G}
 pt=5/4
 ability=Devoid;\
-        When SN enters the battlefield, put two 1/1 colorless Eldrazi Scion creature tokens onto the battlefield. They have "Sacrifice this creature: Add {C} to your mana pool.";\
+        When SN enters the battlefield, put two 1/1 colorless Eldrazi Scion creature tokens onto the battlefield.;\
         {1}{C}: Regenerate SN.
 timing=main
 oracle=Devoid\nWhen Birthing Hulk enters the battlefield, put two 1/1 colorless Eldrazi Scion creature tokens onto the battlefield. They have "Sacrifice this creature: Add {C} to your mana pool."\n{1}{C}: Regenerate Birthing Hulk.
