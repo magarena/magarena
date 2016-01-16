@@ -53,8 +53,8 @@ public enum MagicColor {
             case White: return MagicAbility.ProtectionFromWhite;
             case Blue: return MagicAbility.ProtectionFromBlue;
             case Black: return MagicAbility.ProtectionFromBlack;
-            case Green: return MagicAbility.ProtectionFromGreen;
             case Red: return MagicAbility.ProtectionFromRed;
+            case Green: return MagicAbility.ProtectionFromGreen;
         }
         throw new RuntimeException("No protection ability for MagicColor " + this);
     }
@@ -64,8 +64,8 @@ public enum MagicColor {
             case White: return MagicSubType.Plains;
             case Blue: return MagicSubType.Island;
             case Black: return MagicSubType.Swamp;
-            case Green: return MagicSubType.Forest;
             case Red: return MagicSubType.Mountain;
+            case Green: return MagicSubType.Forest;
         }
         throw new RuntimeException("No land subtype for MagicColor " + this);
     }
@@ -75,8 +75,8 @@ public enum MagicColor {
             case White: return MagicManaType.White;
             case Blue: return MagicManaType.Blue;
             case Black: return MagicManaType.Black;
-            case Green: return MagicManaType.Green;
             case Red: return MagicManaType.Red;
+            case Green: return MagicManaType.Green;
         }
         return MagicManaType.Colorless;
     }
