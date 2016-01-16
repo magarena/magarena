@@ -68,7 +68,7 @@ public class ImageFrame {
     public static BufferedImage getDefaultBackground(IRenderableCard cardDef) {
         if (cardDef.isMulti()) {
             if (cardDef.isHybrid()) {
-                List<BufferedImage> colorDefaults = Frame.getColorOrder(cardDef).stream().filter(cardDef::hasColor).map(ImageFrame::defaultBackground).collect(Collectors.toList());
+                List<BufferedImage> colorDefaults = Frame.getColorPairOrder(cardDef).stream().filter(cardDef::hasColor).map(ImageFrame::defaultBackground).collect(Collectors.toList());
                 return Frame.getBlendedFrame(
                     ResourceManager.newFrame(colorDefaults.get(0)),
                     ResourceManager.newFrame(ResourceManager.defaultHybridBlend),

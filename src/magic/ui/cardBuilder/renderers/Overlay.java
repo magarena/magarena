@@ -102,7 +102,7 @@ public class Overlay {
         if (cardDef.isMulti()) {
             if (cardDef.isHybrid()) {
                 List<BufferedImage> colorFrames = new ArrayList<>();
-                colorFrames.addAll(Frame.getColorOrder(cardDef).stream().map(Overlay::getDevoidMask).collect(Collectors.toList()));
+                colorFrames.addAll(Frame.getColorPairOrder(cardDef).stream().map(Overlay::getDevoidMask).collect(Collectors.toList()));
                 return Frame.getBlendedFrame(
                     ResourceManager.newFrame(colorFrames.get(0)),
                     ResourceManager.newFrame(ResourceManager.gainHybridBlend),
@@ -131,7 +131,7 @@ public class Overlay {
         if (cardDef.isMulti()) {
             if (cardDef.isHybrid()) {
                 List<BufferedImage> colorFrames = new ArrayList<>();
-                colorFrames.addAll(Frame.getColorOrder(cardDef).stream().map(Overlay::getMiracleMask).collect(Collectors.toList()));
+                colorFrames.addAll(Frame.getColorPairOrder(cardDef).stream().map(Overlay::getMiracleMask).collect(Collectors.toList()));
                 return Frame.getBlendedFrame(
                     ResourceManager.newFrame(colorFrames.get(0)),
                     ResourceManager.newFrame(ResourceManager.gainHybridBlend),
@@ -166,9 +166,9 @@ public class Overlay {
             if (cardDef.isHybrid() || landColors.size() == 2) {
                 List<BufferedImage> colorFrames = new ArrayList<>(2);
                 if (land) {
-                    colorFrames.addAll(Frame.getColorOrder(landColors).stream().map(Overlay::getLevellerLandMask).collect(Collectors.toList()));
+                    colorFrames.addAll(Frame.getColorPairOrder(landColors).stream().map(Overlay::getLevellerLandMask).collect(Collectors.toList()));
                 } else {
-                    colorFrames.addAll(Frame.getColorOrder(cardDef).stream().map(Overlay::getLevellerMask).collect(Collectors.toList()));
+                    colorFrames.addAll(Frame.getColorPairOrder(cardDef).stream().map(Overlay::getLevellerMask).collect(Collectors.toList()));
                 }
                 return Frame.getBlendedFrame(
                     ResourceManager.newFrame(colorFrames.get(0)),
@@ -194,7 +194,7 @@ public class Overlay {
         if (landColors.size() > 1) {
             if (landColors.size() == 2) {
                 List<BufferedImage> colorFrames = new ArrayList<>(2);
-                colorFrames.addAll(Frame.getColorOrder(landColors).stream().map(Overlay::getLandMask).collect(Collectors.toList()));
+                colorFrames.addAll(Frame.getColorPairOrder(landColors).stream().map(Overlay::getLandMask).collect(Collectors.toList()));
                 return Frame.getBlendedFrame(
                     ResourceManager.newFrame(colorFrames.get(0)),
                     ResourceManager.newFrame(ResourceManager.gainTextBoxHybridBlend),
