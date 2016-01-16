@@ -443,10 +443,10 @@ public class Frame {
                 return ResourceManager.newFrame(ResourceManager.blueHidden);
             case Black:
                 return ResourceManager.newFrame(ResourceManager.blackHidden);
-            case Green:
-                return ResourceManager.newFrame(ResourceManager.greenHidden);
             case Red:
                 return ResourceManager.newFrame(ResourceManager.redHidden);
+            case Green:
+                return ResourceManager.newFrame(ResourceManager.greenHidden);
         }
         return ResourceManager.newFrame(ResourceManager.colorlessHidden);
     }
@@ -459,10 +459,10 @@ public class Frame {
                 return ResourceManager.newFrame(ResourceManager.blueTransform);
             case Black:
                 return ResourceManager.newFrame(ResourceManager.blackTransform);
-            case Green:
-                return ResourceManager.newFrame(ResourceManager.greenTransform);
             case Red:
                 return ResourceManager.newFrame(ResourceManager.redTransform);
+            case Green:
+                return ResourceManager.newFrame(ResourceManager.greenTransform);
         }
         return ResourceManager.newFrame(ResourceManager.colorlessTransform);
     }
