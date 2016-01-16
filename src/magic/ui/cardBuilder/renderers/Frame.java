@@ -339,7 +339,7 @@ public class Frame {
         // distance from first color to second color in WUBRG order should be less than 2
         // if it is greater than 2, swapping the pair reduces the distance to less than 2
 
-        if ((orderedColors.get(1).ordinal() - orderedColors.get(0).ordinal() + 5) % 5 > 2) {
+        if (MagicColor.distance(orderedColors.get(0), orderedColors.get(1)) > 2) {
             Collections.swap(orderedColors, 0, 1);
         }
         return orderedColors;

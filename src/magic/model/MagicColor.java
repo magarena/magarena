@@ -159,4 +159,10 @@ public enum MagicColor {
     public static boolean isMulti(final MagicSource source) {
         return numColors(source) > 1;
     }
+
+    // returns clockwise distance from c1 to c2
+    // eg. distance(Black, White) = 3
+    public static int distance(final MagicColor c1, final MagicColor c2) {
+        return (c2.ordinal() - c1.ordinal() + NR_COLORS) % NR_COLORS;
+    }
 }
