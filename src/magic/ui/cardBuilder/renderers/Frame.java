@@ -333,19 +333,15 @@ public class Frame {
     }
 
     static List<MagicColor> getColorPairOrder(List<MagicColor> colors) {
-        //Color order
         List<MagicColor> orderedColors = new ArrayList<>(colors);
-        //Ensure White is only first when with black and blue - prevents WR WG orders
-        if (orderedColors.get(0) == MagicColor.White) {
-            if (orderedColors.get(1) != MagicColor.Blue && orderedColors.get(1) != MagicColor.Black) {
-                Collections.swap(orderedColors, 0, 1);
-            }
-        }
-        //Ensure Blue is only first when with black and red - prevents UG order
-        if (orderedColors.get(0) == MagicColor.Blue) {
-            if (orderedColors.get(1) != MagicColor.Black && orderedColors.get(1) != MagicColor.Red) {
-                Collections.swap(orderedColors, 0, 1);
-            }
+        // distance from first color to second color in proper order should be less than 2
+        // incorrect pairs that needs to be swapped are:
+        // WR -> RG
+        // WG -> GW
+        // UG -> GU
+        assert orderedColors.get(1).ordinal() - orderedColors.get(0).ordinal() > 0 : "Colors in wrong order";
+        if (orderedColors.get(1).ordinal() - orderedColors.get(0).ordinal() > 2) {
+            Collections.swap(orderedColors, 0, 1);
         }
         return orderedColors;
     }
