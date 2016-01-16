@@ -345,12 +345,6 @@ public class Frame {
                 Collections.swap(orderedColors, 0, 1);
             }
         }
-        //Ensure Green is only first with white and blue - prevents GR order
-        if (orderedColors.get(0) == MagicColor.Green) {
-            if (orderedColors.get(1) != MagicColor.White && orderedColors.get(1) != MagicColor.Blue) {
-                Collections.swap(orderedColors, 0 ,1);
-            }
-        }
         return orderedColors;
     }
 
