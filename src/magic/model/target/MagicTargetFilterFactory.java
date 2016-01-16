@@ -1002,6 +1002,19 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicPermanentFilterImpl EQUIPPED_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+            final MagicPermanent perm = (MagicPermanent)source;
+            return perm.getEquippedCreature() == target &&
+                target.isCreature() &&
+                target.isController(player);
+        }
+        @Override
+        public boolean isStatic() {
+            return true;
+        }
+    };
+
     public static final MagicPermanentFilterImpl CREATURE_WITH_ANOTHER_AURA = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
             final int amount = source.isPermanent() && source.hasSubType(MagicSubType.Aura) ? 1 : 0;
@@ -2678,6 +2691,7 @@ public class MagicTargetFilterFactory {
         single.put("untapped mountain you control", UNTAPPED_MOUNTAIN_YOU_CONTROL);
         single.put("tapped artifact, creature, or land you control", TAPPED_ARTIFACT_CREATURE_AND_LAND_YOU_CONTROL);
         single.put("untapped artifact, creature, or land you control", UNTAPPED_ARTIFACT_CREATURE_OR_LAND_YOU_CONTROL);
+        single.put("equipped creature you control", EQUIPPED_CREATURE_YOU_CONTROL);
 
 
         // <color|type|subtype> an opponent controls
