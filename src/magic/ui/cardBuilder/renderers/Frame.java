@@ -6,7 +6,7 @@ import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
-import java.util.HashSet;
+import java.util.EnumSet;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -401,7 +401,7 @@ public class Frame {
         });
         //Check oracle for up to two basic land types
         String oracle = cardDef.getText();
-        Collection<MagicColor> basicLandCount = new HashSet<>();
+        Collection<MagicColor> basicLandCount = EnumSet.noneOf(MagicColor.class);
         if (oracle.toLowerCase().contains("search")) {
             MagicSubType.ALL_BASIC_LANDS.stream().filter(aSubType -> oracle.toLowerCase().contains(aSubType.toString().toLowerCase())).forEach(aSubType -> {
                 for (MagicColor color : MagicColor.values()) {
@@ -416,7 +416,7 @@ public class Frame {
         }
         //Check for duplicate entries and only return those duplicates
         List<MagicColor> toReturn = new ArrayList<>();
-        Set<MagicColor> set1 = new HashSet<>();
+        Set<MagicColor> set1 = EnumSet.noneOf(MagicColor.class);
         toReturn.addAll(landColor.stream().filter(color -> !set1.add(color)).collect(Collectors.toList()));
         return toReturn.isEmpty() ? landColor : toReturn;
     }
