@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={3}{W}
-effect=Bolster 1, then put a +1/+1 counter on each creature you control with a +1/+1 counter on it.
+effect=Bolster 1,~then put a +1/+1 counter on each creature you control with a +1/+1 counter on it.
 timing=removal
 oracle=Bolster 1, then put a +1/+1 counter on each creature you control with a +1/+1 counter on it.
