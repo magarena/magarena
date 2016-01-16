@@ -7,11 +7,11 @@ import java.util.Set;
 
 public enum MagicSubType {
     //basic land subtypes
-    Forest,
-    Island,
-    Mountain,
     Plains,
+    Island,
     Swamp,
+    Mountain,
+    Forest,
 
     //other land subtypes
     Desert,
@@ -89,9 +89,9 @@ public enum MagicSubType {
 
     ;
 
-    public static final Set<MagicSubType> ALL_BASIC_LANDS = EnumSet.range(Forest, Swamp);
+    public static final Set<MagicSubType> ALL_BASIC_LANDS = EnumSet.range(Plains, Forest);
 
-    public static final Set<MagicSubType> ALL_LANDS = EnumSet.range(Forest, Gate);
+    public static final Set<MagicSubType> ALL_LANDS = EnumSet.range(Plains, Gate);
 
     public static final Set<MagicSubType> ALL_ARTIFACTS = EnumSet.range(Contraption, Fortification);
 
