@@ -11,8 +11,8 @@ public enum MagicColor {
     White("white",'w'),
     Blue("blue",'u'),
     Black("black",'b'),
-    Green("green",'g'),
-    Red("red",'r')
+    Red("red",'r'),
+    Green("green",'g')
     ;
 
     public static final int NR_COLORS=values().length;
