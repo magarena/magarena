@@ -553,6 +553,12 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl ARTIFACT_OR_ENCHANTMENT = permanentOr(MagicType.Artifact, MagicType.Enchantment, Control.Any);
 
+    public static final MagicPermanentFilterImpl ARTIFACT_OR_ENCHANTMENT_CMC_3_OR_LESS = new MagicCMCPermanentFilter(
+        ARTIFACT_OR_ENCHANTMENT,
+        Operator.LESS_THAN_OR_EQUAL,
+        3
+    );
+
     public static final MagicPermanentFilterImpl ARTIFACT_OR_LAND = permanentOr(MagicType.Artifact, MagicType.Land, Control.Any);
 
     public static final MagicPermanentFilterImpl ARTIFACT_OR_ENCHANTMENT_OR_LAND=new MagicPermanentFilterImpl() {
@@ -2303,6 +2309,12 @@ public class MagicTargetFilterFactory {
         3
     );
 
+    public static final MagicPermanentFilterImpl ATTACKING_OR_BLOCKING_CREATURE_POWER_2_OR_LESS = new MagicPTTargetFilter(
+        ATTACKING_OR_BLOCKING_CREATURE,
+        Operator.LESS_THAN_OR_EQUAL,
+        2
+    );
+
     public static final MagicPermanentFilterImpl CREATURE_POWER_4_OR_MORE = new MagicPTTargetFilter(
         CREATURE,
         Operator.GREATER_THAN_OR_EQUAL,
@@ -2560,6 +2572,7 @@ public class MagicTargetFilterFactory {
         single.put("attacking creature or blocking creature", ATTACKING_OR_BLOCKING_CREATURE);
         single.put("attacking or blocking creature with flying", ATTACKING_OR_BLOCKING_CREATURE_WITH_FLYING);
         single.put("attacking or blocking creature with power 3 or less", ATTACKING_OR_BLOCKING_CREATURE_POWER_3_OR_LESS);
+        single.put("attacking or blocking creature with power 2 or less", ATTACKING_OR_BLOCKING_CREATURE_POWER_2_OR_LESS);
         single.put("blocked creature", BLOCKED_CREATURE);
         single.put("blocking creature", BLOCKING_CREATURE);
         single.put("blue or red creature", BLUE_OR_RED_CREATURE);
@@ -2722,6 +2735,7 @@ public class MagicTargetFilterFactory {
         single.put("artifact or land", ARTIFACT_OR_LAND);
         single.put("artifact land", ARTIFACT_LAND);
         single.put("artifact or enchantment", ARTIFACT_OR_ENCHANTMENT);
+        single.put("artifact or enchantment with converted mana cost 3 or less", ARTIFACT_OR_ENCHANTMENT_CMC_3_OR_LESS);
         single.put("artifact, enchantment, or land", ARTIFACT_OR_ENCHANTMENT_OR_LAND);
         single.put("artifact, creature, or land", ARTIFACT_OR_CREATURE_OR_LAND);
         single.put("artifact, creature, or enchantment",ARTIFACT_OR_CREATURE_OR_ENCHANTMENT);
