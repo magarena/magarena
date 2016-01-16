@@ -333,14 +333,11 @@ public class Frame {
     }
 
     static List<MagicColor> getColorPairOrder(List<MagicColor> colors) {
+        assert colors.size() == 2 : "Size of colors should be 2 but it is " + colors.size();
         List<MagicColor> orderedColors = new ArrayList<>(colors);
-        // distance from first color to second color in proper order should be less than 2
-        // incorrect pairs that needs to be swapped are:
-        // WR -> RG
-        // WG -> GW
-        // UG -> GU
-        assert orderedColors.get(1).ordinal() - orderedColors.get(0).ordinal() > 0 : "Colors in wrong order";
-        if (orderedColors.get(1).ordinal() - orderedColors.get(0).ordinal() > 2) {
+
+        // distance from first color to second color in WUBRG order should be less than 2
+        if ((orderedColors.get(1).ordinal() - orderedColors.get(0).ordinal() + 5) % 5 > 2) {
             Collections.swap(orderedColors, 0, 1);
         }
         return orderedColors;
