@@ -32,8 +32,8 @@ def C = new MagicStatic(MagicLayer.Color, MagicStatic.UntilEOT) {
                 TARGET_CREATURE,
                 new MagicBecomeTargetPicker(1,1,false),
                 this,
-                "Target creature\$ loses all abilities " +
-                "and becomes a 1/1 green Snake until end of turn. PN draws a card"
+                "Until end of turn, target creature\$ loses all abilities and becomes a " +
+                "green Snake with base power and toughness 1/1. PN draws a card"
             );
         }
         @Override
