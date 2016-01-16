@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import magic.data.EnglishToInt;
 import magic.data.CardDefinitions;
 import magic.model.*;
 import magic.model.action.*;
@@ -20,8 +19,8 @@ import magic.model.condition.MagicArtificialCondition;
 import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicConditionFactory;
 import magic.model.condition.MagicConditionParser;
-import magic.model.mstatic.MagicStatic;
 import magic.model.mstatic.MagicLayer;
+import magic.model.mstatic.MagicStatic;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.target.*;
@@ -2144,6 +2143,12 @@ public enum MagicRuleEventAction {
                 }
             }
         }
+    ),
+    ShuffleYourLibrary(
+        "shuffle your library(\\.)?",
+        MagicTiming.None,
+        "Shuffle",
+        (game, event) -> game.doAction(new ShuffleLibraryAction(event.getPlayer()))
     ),
     AttachSelf(
         "attach sn to " + ARG.CHOICE + "(\\.|,)?",
