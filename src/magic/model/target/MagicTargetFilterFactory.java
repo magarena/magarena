@@ -2286,6 +2286,14 @@ public class MagicTargetFilterFactory {
         1
     );
 
+    public static final MagicPermanentFilterImpl CREATURE_POWER_OR_TOUGHNESS_1_OR_LESS = new MagicPermanentFilterImpl() {
+        @Override
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+            return target.isCreature() &&
+                (target.getPower() <= 1 || target.getToughness() <= 1);
+        }
+    };
+
     public static final MagicPermanentFilterImpl CREATURE_POWER_2_OR_LESS = new MagicPTTargetFilter(
         CREATURE,
         Operator.LESS_THAN_OR_EQUAL,
@@ -2608,6 +2616,7 @@ public class MagicTargetFilterFactory {
         single.put("creature with horsemanship", CREATURE_WITH_HORSEMANSHIP);
         single.put("creature with islandwalk", CREATURE_WITH_ISLANDWALK);
         single.put("creature with power 1 or less", CREATURE_POWER_1_OR_LESS);
+        single.put("creature with power or toughness 1 or less", CREATURE_POWER_OR_TOUGHNESS_1_OR_LESS);
         single.put("creature with power 2 or less", CREATURE_POWER_2_OR_LESS);
         single.put("creature with power 3 or less", CREATURE_POWER_3_OR_LESS);
         single.put("creature with power 2 or greater", CREATURE_POWER_2_OR_MORE);
