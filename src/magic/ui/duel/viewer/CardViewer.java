@@ -15,7 +15,6 @@ import javax.swing.SwingUtilities;
 import javax.swing.Timer;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
-import magic.ui.CachedImagesProvider;
 import magic.ui.MagicImages;
 import magic.ui.cardtable.ICardSelectionListener;
 import magic.ui.prefs.ImageSizePresets;
@@ -113,6 +112,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
     }
 
     public final void setCard(final MagicCardDefinition aCard) {
+
         if (aCard == thisCard) {
             return;
         }
@@ -187,9 +187,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
             aCard = MagicCardDefinition.UNKNOWN;
         }
 
-        BufferedImage image = aCard == MagicCardDefinition.UNKNOWN
-            ? MagicImages.getMissingCardImage()
-            : CachedImagesProvider.getInstance().getImage(aCard, true);
+        BufferedImage image = MagicImages.getOrigSizeCardImage(aCard);
 
         if (image.getWidth() != prefSize.width || image.getHeight() != prefSize.height) {
             image = GraphicsUtils.scale(image, prefSize.width, prefSize.height);

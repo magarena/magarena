@@ -21,6 +21,7 @@ import magic.ui.cardBuilder.renderers.CardBuilder;
 import magic.ui.prefs.ImageSizePresets;
 import magic.ui.theme.PlayerAvatar;
 import magic.ui.utility.GraphicsUtils;
+import magic.utility.MagicFileSystem;
 import magic.utility.MagicResources;
 
 public final class MagicImages {
@@ -239,4 +240,27 @@ public final class MagicImages {
             : CardBuilder.getCardBuilderImage(cardDef);
     }
 
+
+    public static BufferedImage getOrigSizeCardImage(MagicCardDefinition aCard) {
+
+        if (aCard == null || aCard == MagicCardDefinition.UNKNOWN) {
+            return getMissingCardImage();
+        }
+
+        if (MagicFileSystem.getCustomCardImageFile(aCard).exists()) {
+            return ImageFileIO.getOptimizedImage(MagicFileSystem.getCustomCardImageFile(aCard));
+        }
+
+        if (MagicFileSystem.getCroppedCardImageFile(aCard).exists()) {
+            return CardBuilder.getCardBuilderImage(aCard);
+        }
+
+        if (MagicFileSystem.getCardImageFile(aCard).exists()) {
+            return ImageFileIO.getOptimizedImage(MagicFileSystem.getCardImageFile(aCard));
+        }
+
+        // else get missing image proxy...
+        return getMissingCardImage(aCard);
+
+    }
 }

@@ -140,8 +140,14 @@ public final class MagicFileSystem {
      */
     public static File getCroppedCardImageFile(final IRenderableCard cardDef) {
         final Path imageDirectory = getImagesPath(ImagesPath.CROPS);
-        return new File(imageDirectory.toFile(), cardDef.getImageName() + ".crop.jpg");
+        return new File(imageDirectory.toFile(), cardDef.getImageName() + ".jpg");
     }
+
+    public static File getCustomCardImageFile(final IRenderableCard cardDef) {
+        final Path imageDirectory = getImagesPath(ImagesPath.CUSTOM);
+        return new File(imageDirectory.toFile(), cardDef.getImageName() + ".jpg");
+    }
+
 
     /**
      * Deletes all directory contents and then directory itself.
