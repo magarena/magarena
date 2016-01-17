@@ -196,7 +196,7 @@ public class DuelDecksPanel extends TexturedPanel {
         // layout screen components.
         migLayout.setLayoutConstraints("insets 0, gap 0");
         setLayout(migLayout);
-        add(leftScrollPane, "h 100%");
+        add(leftScrollPane, "aligny top");
         add(tabbedPane, "h 100%, w 100%");
     }
 
