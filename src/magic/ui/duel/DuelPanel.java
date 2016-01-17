@@ -2,7 +2,6 @@ package magic.ui.duel;
 
 import magic.ui.duel.viewer.info.PlayerViewerInfo;
 import magic.ui.duel.viewer.info.GameViewerInfo;
-import magic.ui.duel.textmode.TextModeBattlefieldPanel;
 import magic.ui.duel.sidebar.DuelSideBarPanel;
 import java.awt.Dimension;
 import java.awt.Point;
@@ -46,8 +45,6 @@ public final class DuelPanel extends JPanel {
 
     private DuelSideBarPanel sidebarPanel;
     private BattlefieldPanel battlefieldPanel;
-    private BattlefieldPanel textView;
-    private BattlefieldPanel imageView;
     private ResolutionProfileResult result;
 
     public DuelPanel(final MagicGame game) {
@@ -60,9 +57,7 @@ public final class DuelPanel extends JPanel {
 
         this.controller = aController;
 
-        textView = new TextModeBattlefieldPanel(controller);
-        imageView = new ImageModeBattlefieldPanel(controller);
-        battlefieldPanel = isTextView() ? textView : imageView;
+        battlefieldPanel = new ImageModeBattlefieldPanel(controller);
 
         sidebarPanel = new DuelSideBarPanel(controller, battlefieldPanel.getStackViewer());
 
@@ -130,10 +125,6 @@ public final class DuelPanel extends JPanel {
         return sidebarPanel.getGameStatusPanel().getUserActionPanel().isUndoEnabled();
     }
 
-    private static boolean isTextView() {
-        return CONFIG.getTextView();
-    }
-
     public SwingGameController getController() {
         return controller;
     }
@@ -153,8 +144,7 @@ public final class DuelPanel extends JPanel {
     }
 
     void updateView() {
-        backgroundLabel.setImage(!isTextView());
-        battlefieldPanel = isTextView() ? textView : imageView;
+        backgroundLabel.setImage(true);
         resizeComponents();
         revalidate();
         repaint();

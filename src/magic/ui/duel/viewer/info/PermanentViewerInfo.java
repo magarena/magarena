@@ -51,7 +51,6 @@ public class PermanentViewerInfo {
     public final ImageIcon icon;
     public final int index;
     public final String powerToughness;
-    public final String text;
     public final Set<MagicAbility> abilityFlags;
     public final int damage;
     public final int shield;
@@ -81,7 +80,6 @@ public class PermanentViewerInfo {
         index=permanent.getCard().getImageIndex();
         powerToughness=getPowerToughness(permanent);
         abilityFlags=permanent.getAbilityFlags();
-        text=getText(game,permanent,abilityFlags);
         damage=permanent.getDamage();
         shield=permanent.getPreventDamage();
         position=getPosition(permanent);
@@ -133,110 +131,6 @@ public class PermanentViewerInfo {
         } else {
             return "";
         }
-    }
-
-    private static String getText(final MagicGame game,final MagicPermanent permanent,final Set<MagicAbility> abilityFlags) {
-        final StringBuilder textBuffer=new StringBuilder();
-
-        // States
-        if (isTargeted(game,permanent)) {
-            textBuffer.append("{O}");
-        }
-        if (permanent.isTapped()) {
-            textBuffer.append(MagicPermanentState.Tapped.getText());
-        } else if (!permanent.canTap()) {
-            textBuffer.append("{SS}");
-        }
-        if (permanent.hasState(MagicPermanentState.DoesNotUntapDuringNext)) {
-            textBuffer.append(MagicPermanentState.DoesNotUntapDuringNext.getText());
-        }
-        if (permanent.isRegenerated()) {
-            textBuffer.append(MagicPermanentState.Regenerated.getText());
-        }
-        if (permanent.isBlocked()) {
-            textBuffer.append(MagicPermanentState.Blocked.getText());
-        }
-        if (permanent.isToken()) {
-            textBuffer.append("{t}");
-        }
-
-        // Colors
-        for (final MagicColor color : MagicColor.values()) {
-            if (permanent.hasColor(color)) {
-                textBuffer.append(color.getManaType().getText());
-            }
-        }
-        if (textBuffer.length()>0) {
-            textBuffer.append(' ');
-        }
-
-        // Counters
-        for (final MagicCounterType counterType : MagicCounterType.values()) {
-
-            final int amount=permanent.getCounters(counterType);
-            if (amount>0) {
-                textBuffer.append(counterType.getText()).append(amount).append(' ');
-            }
-        }
-
-        if (permanent.isCreature()) {
-            // Damage
-            if (permanent.getDamage()>0) {
-                textBuffer.append("{D}").append(permanent.getDamage()).append(' ');
-            }
-            // Prevent damage.
-            if (permanent.getPreventDamage()>0) {
-                textBuffer.append("{PD}").append(permanent.getPreventDamage()).append(' ');
-            }
-        }
-
-        boolean first=true;
-
-        // Sub types.
-        if (permanent.hasAllCreatureTypes()) {
-            if (first) {
-                first = false;
-                if (textBuffer.length() > 0) {
-                    textBuffer.append('|');
-                }
-            } else {
-                textBuffer.append(", ");
-            }
-            textBuffer.append("All creature types");
-        } else {
-            for (final MagicSubType subType : MagicSubType.values()) {
-                if (permanent.hasSubType(subType)) {
-                    if (first) {
-                        first=false;
-                        if (textBuffer.length()>0) {
-                            textBuffer.append('|');
-                        }
-                    } else {
-                        textBuffer.append(", ");
-                    }
-                    textBuffer.append(subType.toString());
-                }
-            }
-        }
-
-        /* Disable inclusion of ability text in text info as original ability
-         * text is not retrievable from MagicAbility
-        for (final MagicAbility ability : MagicAbility.values()) {
-            if (abilityFlags.contains(ability)) {
-                if (first) {
-                    first=false;
-                    if (textBuffer.length()>0) {
-                        textBuffer.append('|');
-                    }
-                } else {
-                    textBuffer.append(", ");
-                }
-                textBuffer.append(ability);
-            }
-        }
-        */
-
-        return textBuffer.toString();
     }
 
     private static int getPosition(final MagicPermanent permanent) {
