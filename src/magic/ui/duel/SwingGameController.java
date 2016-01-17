@@ -369,7 +369,6 @@ public class SwingGameController implements IUIGameController {
      */
     public void viewCardPopup(
         final MagicObject cardObject,
-        final int index,
         final Rectangle cardRect,
         final boolean popupAboveBelowOnly,
         final int popupDelay) {
@@ -455,8 +454,8 @@ public class SwingGameController implements IUIGameController {
         cardPopup.showDelayed(popupDelay);
     }
 
-    public void viewCardPopup(final MagicObject cardObject, final int index, final Rectangle cardRect, final boolean popupAboveBelowOnly) {
-        viewCardPopup(cardObject, index, cardRect, popupAboveBelowOnly, getPopupDelay());
+    public void viewCardPopup(final MagicObject cardObject, final Rectangle cardRect, final boolean popupAboveBelowOnly) {
+        viewCardPopup(cardObject, cardRect, popupAboveBelowOnly, getPopupDelay());
     }
 
     public boolean isPopupVisible() {
@@ -466,11 +465,10 @@ public class SwingGameController implements IUIGameController {
     /**
      *
      * @param cardObject
-     * @param index
      * @param cardRect : screen position & size of selected card on battlefield.
      */
-    public void viewCardPopup(final MagicObject cardObject, final int index, final Rectangle cardRect) {
-        viewCardPopup(cardObject, index, cardRect, false);
+    public void viewCardPopup(final MagicObject cardObject, final Rectangle cardRect) {
+        viewCardPopup(cardObject, cardRect, false);
     }
 
     public void viewInfoRight(final MagicCardDefinition cardDefinition,final int index,final Rectangle rect) {
