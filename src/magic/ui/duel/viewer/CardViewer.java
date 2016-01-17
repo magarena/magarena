@@ -32,7 +32,6 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
 
     private final TransparentImagePanel cardPanel = new TransparentImagePanel();
     private MagicCardDefinition currentCardDefinition;
-    private int currentIndex;
     private final boolean isGameScreenPopup;
     private Timer timer;
     private boolean isSwitchedAspect = false;
@@ -120,15 +119,14 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
         }
     }
 
-    public void setCard(final MagicCardDefinition cardDefinition, final int index) {
+    public void setCard(final MagicCardDefinition cardDefinition) {
 
         if (cardDefinition == null) {
             currentCardDefinition = MagicCardDefinition.UNKNOWN;
             setCardImage(MagicImages.getMissingCardImage());
 
-        } else if (cardDefinition != currentCardDefinition || index != currentIndex) {
+        } else if (cardDefinition != currentCardDefinition) {
             currentCardDefinition = cardDefinition;
-            currentIndex = index;
             final BufferedImage cardImage;
             if (isGameScreenPopup && CONFIG.isHighQuality()) {
                 final BufferedImage sourceImage = IMAGE_HELPER.getImage(cardDefinition, true);
@@ -151,10 +149,6 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
                 setCardImage(cardImage);
             }
         }
-    }
-
-    public final void setCard(final MagicCardDefinition cardDefinition) {
-        setCard(cardDefinition, 0);
     }
 
     private void setCardImage(final Image newImage) {

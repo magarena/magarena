@@ -6,7 +6,6 @@ import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
-import magic.model.MagicCardDefinition;
 
 @SuppressWarnings("serial")
 public class DeckEditorCardViewer extends CardViewer {
@@ -55,12 +54,6 @@ public class DeckEditorCardViewer extends CardViewer {
         }
         g2d.setColor(FOREGROUND_COLOR);
         g2d.drawString(str,x,y);
-    }
-
-    @Override
-    public void setCard(final MagicCardDefinition cardDefinition, int index) {
-        cardCount = 0;
-        super.setCard(cardDefinition, index);
     }
 
 }
