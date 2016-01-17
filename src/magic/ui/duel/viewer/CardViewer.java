@@ -1,5 +1,6 @@
 package magic.ui.duel.viewer;
 
+import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -9,6 +10,7 @@ import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
+import javax.swing.Timer;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.ui.CachedImagesProvider;
@@ -16,6 +18,7 @@ import magic.ui.MagicImages;
 import magic.ui.cardtable.ICardSelectionListener;
 import magic.ui.prefs.ImageSizePresets;
 import magic.ui.utility.GraphicsUtils;
+import magic.ui.utility.MagicStyle;
 
 @SuppressWarnings("serial")
 public class CardViewer extends JPanel implements ICardSelectionListener {
@@ -25,12 +28,19 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
     private Image thisImage;
     private MagicCardDefinition thisCard;
     private boolean isSwitchedAspect = false;
-
+    private CardImageWorker worker;
+    private MagicCardDefinition cardPending = MagicCardDefinition.UNKNOWN;
+    private final Timer aTimer = getCooldownTimer();
+    private long lastTime = System.currentTimeMillis();
+    private boolean isImagePending;
+    
     public CardViewer() {
 
         setPreferredSize(IMAGE_SIZE);
         setMinimumSize(IMAGE_SIZE);
         setMaximumSize(IMAGE_SIZE);
+
+        setBackground(MagicStyle.getTranslucentColor(Color.DARK_GRAY, 140));
         
         setCard(MagicCardDefinition.UNKNOWN);
         setTransformCardListener();
@@ -80,8 +90,25 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
         if (aCard == thisCard) {
             return;
         }
+
+        boolean isCooldownRequired = System.currentTimeMillis() - lastTime < 120;
+        lastTime = System.currentTimeMillis();
+        if (isCooldownRequired && worker != null) {
+            cardPending = aCard;
+            aTimer.restart();
+            setImage(null);
+            return;
+        }
+
+        if (worker != null && !worker.isDone()) {
+            worker.cancel(true);
+            setImage(null);
+        }
+
         thisCard = aCard;
-        setImage(getCardImage(aCard, IMAGE_SIZE));
+
+        worker = new CardImageWorker(this, aCard);
+        worker.execute();
     }
 
     @Override
@@ -91,8 +118,13 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
         });
     }
     
-    private void setImage(final Image image) {
-        this.thisImage = image;
+    void setImage(final Image aImage) {
+        if (aImage == null) {
+            isImagePending = true;
+        } else {
+            this.thisImage = aImage;
+            isImagePending = false;
+        }
         repaint();
     }
 
@@ -100,12 +132,13 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
     public void paintComponent(final Graphics g) {
         if (thisImage != null) {
             g.drawImage(thisImage, 0, 0, null);
-        } else {
+        }
+        if (isImagePending) {
             super.paintComponent(g);
         }
     }
 
-    private static Dimension getImageSize() {
+    static Dimension getImageSize() {
         ImageSizePresets sizePreset = GeneralConfig.getInstance().getPreferredImageSize();
         if (sizePreset == ImageSizePresets.SIZE_ORIGINAL) {
             return ImageSizePresets.SIZE_312x445.getSize();
@@ -116,7 +149,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
         }
     }
 
-    private static Image getCardImage(MagicCardDefinition aCard, Dimension prefSize) {
+    static Image getCardImage(MagicCardDefinition aCard, Dimension prefSize) {
 
         if (aCard == null) {
             aCard = MagicCardDefinition.UNKNOWN;
@@ -135,5 +168,13 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
         } else {
             return image;
         }
+    }
+
+    private Timer getCooldownTimer() {
+        Timer t = new Timer(150, (e) -> {
+            setCard(cardPending);
+        });
+        t.setRepeats(false);
+        return t;
     }
 }
