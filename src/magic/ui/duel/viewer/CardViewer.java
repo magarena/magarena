@@ -19,16 +19,12 @@ import magic.ui.widget.TransparentImagePanel;
 public class CardViewer extends JPanel implements ICardSelectionListener {
 
     private final TransparentImagePanel cardPanel = new TransparentImagePanel();
-    private MagicCardDefinition currentCardDefinition;
+    private MagicCardDefinition thisCard;
     private boolean isSwitchedAspect = false;
 
-    // ctr
     public CardViewer() {
-
         setCard(MagicCardDefinition.UNKNOWN);
-
         setTransformCardListener();
-
         setOpaque(false);
         this.setLayout(new BorderLayout());
         add(cardPanel,BorderLayout.CENTER);
@@ -38,18 +34,15 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                if (currentCardDefinition != null) {
-                    SwingUtilities.invokeLater(new Runnable() {
-                        @Override
-                        public void run() {
-                            switchCardAspect();
-                        }
+                if (thisCard != null) {
+                    SwingUtilities.invokeLater(() -> {
+                        switchCardAspect();
                     });
                 }
             }
             @Override
             public void mouseEntered(MouseEvent e) {
-                if (currentCardDefinition.hasMultipleAspects() && currentCardDefinition.isValid()) {
+                if (thisCard.hasMultipleAspects() && thisCard.isValid()) {
                     setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
                 } else {
                     setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
@@ -65,29 +58,29 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
     }
 
     private void switchCardAspect() {
-        if (currentCardDefinition.hasMultipleAspects()) {
+        if (thisCard.hasMultipleAspects()) {
             setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-            if (currentCardDefinition.isDoubleFaced()) {
-                setCard(currentCardDefinition.getTransformedDefinition());
-            } else if (currentCardDefinition.isFlipCard()) {
-                setCard(currentCardDefinition.getFlippedDefinition());
+            if (thisCard.isDoubleFaced()) {
+                setCard(thisCard.getTransformedDefinition());
+            } else if (thisCard.isFlipCard()) {
+                setCard(thisCard.getFlippedDefinition());
             }
             isSwitchedAspect = !isSwitchedAspect;
             setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         }
     }
 
-    public void setCard(final MagicCardDefinition cardDefinition) {
+    public final void setCard(final MagicCardDefinition aCard) {
 
-        if (cardDefinition == null) {
-            currentCardDefinition = MagicCardDefinition.UNKNOWN;
+        if (aCard == null) {
+            thisCard = MagicCardDefinition.UNKNOWN;
             setCardImage(MagicImages.getMissingCardImage());
 
-        } else if (cardDefinition != currentCardDefinition) {
-            currentCardDefinition = cardDefinition;
+        } else if (aCard != thisCard) {
+            thisCard = aCard;
             final BufferedImage cardImage;
-            cardImage =  CachedImagesProvider.getInstance().getImage(cardDefinition, false);
-            if (cardDefinition.isInvalid() && cardImage != MagicImages.getMissingCardImage()) {
+            cardImage =  CachedImagesProvider.getInstance().getImage(aCard, false);
+            if (aCard.isInvalid() && cardImage != MagicImages.getMissingCardImage()) {
                 setCardImage(GraphicsUtils.getGreyScaleImage(cardImage));
             } else {
                 setCardImage(cardImage);
@@ -103,11 +96,8 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
 
     @Override
     public void newCardSelected(final MagicCardDefinition card) {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                setCard(card);
-            }
+        SwingUtilities.invokeLater(() -> {
+            setCard(card);
         });
     }
 }
