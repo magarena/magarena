@@ -93,7 +93,7 @@ public final class MagicImages {
         return ImageFileIO.toImg(MagicResources.getManaImageUrl(manaIcon), MISSING_SMALL);
     }
 
-    private static BufferedImage loadImage(String name) {
+    public static BufferedImage loadImage(String name) {
         return ImageFileIO.toImg(MagicResources.getImageUrl(name), MISSING_SMALL);
     }
 

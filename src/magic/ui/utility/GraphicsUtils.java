@@ -286,6 +286,17 @@ final public class GraphicsUtils {
         return new ImageIcon(Toolkit.getDefaultToolkit().createImage(fis));
     }
 
+    /**
+     * Given a WHITE image, converts to given color.
+     */
+    public static Image getColoredImage(final Image aImage, final Color newColor) {
+        final FilteredImageSource fis = new FilteredImageSource(
+                aImage.getSource(),
+                new WhiteColorSwapImageFilter(newColor)
+        );
+        return Toolkit.getDefaultToolkit().createImage(fis);
+    }
+
     public static Image getGreyScaleImage(final Image colorImage) {
         final FilteredImageSource fis = new FilteredImageSource(
                 colorImage.getSource(),

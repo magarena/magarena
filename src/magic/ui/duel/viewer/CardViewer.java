@@ -8,7 +8,9 @@ import java.awt.Image;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.Timer;
 import magic.data.GeneralConfig;
@@ -19,6 +21,10 @@ import magic.ui.cardtable.ICardSelectionListener;
 import magic.ui.prefs.ImageSizePresets;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.utility.MagicStyle;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.throbber.AbstractThrobber;
+import magic.ui.widget.throbber.ImageThrobber;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class CardViewer extends JPanel implements ICardSelectionListener {
@@ -33,7 +39,9 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
     private final Timer aTimer = getCooldownTimer();
     private long lastTime = System.currentTimeMillis();
     private boolean isImagePending;
-    
+    private final AbstractThrobber throbber;
+    private final JLabel cardLabel;
+
     public CardViewer() {
 
         setPreferredSize(IMAGE_SIZE);
@@ -41,9 +49,27 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
         setMaximumSize(IMAGE_SIZE);
 
         setBackground(MagicStyle.getTranslucentColor(Color.DARK_GRAY, 140));
+
+        throbber = new ImageThrobber.Builder(MagicImages.loadImage("round-shield.png")).build();
+        throbber.setVisible(false);
+
+        cardLabel = getLabel("");
+
+        setLayout(new MigLayout("flowy, aligny center"));
+        add(new JLabel());
+        add(throbber, "alignx center");
+        add(cardLabel, "w 100%");
         
         setCard(MagicCardDefinition.UNKNOWN);
         setTransformCardListener();
+    }
+
+    private JLabel getLabel(String text) {
+        JLabel lbl = new JLabel(text);
+        lbl.setForeground(Color.WHITE);
+        lbl.setFont(FontsAndBorders.FONT2);
+        lbl.setHorizontalAlignment(SwingConstants.CENTER);
+        return lbl;
     }
 
     private void setTransformCardListener() {
@@ -91,6 +117,8 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
             return;
         }
 
+        cardLabel.setText("..." + aCard.getName() + "...");
+
         boolean isCooldownRequired = System.currentTimeMillis() - lastTime < 120;
         lastTime = System.currentTimeMillis();
         if (isCooldownRequired && worker != null) {
@@ -121,9 +149,13 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
     void setImage(final Image aImage) {
         if (aImage == null) {
             isImagePending = true;
+            throbber.setVisible(true);
+            cardLabel.setVisible(true);
         } else {
             this.thisImage = aImage;
             isImagePending = false;
+            throbber.setVisible(false);
+            cardLabel.setVisible(false);
         }
         repaint();
     }
