@@ -443,7 +443,7 @@ public enum MagicRuleEventAction {
                     final MagicDamage damage = new MagicDamage(ARG.itSource(event, matcher), it, amount);
                     game.doAction(new DealDamageAction(damage));
                     if (it.isPermanent()) {
-                        final MagicPermanent perm = (MagicPermanent) it;
+                        final MagicPermanent perm = (MagicPermanent)it;
                         if (matcher.group("noregen") != null) {
                             game.doAction(ChangeStateAction.Set(
                                 perm,
@@ -553,12 +553,12 @@ public enum MagicRuleEventAction {
                     for (final MagicTarget it : ARG.targets(event, matcher, filter)) {
                         if (it.isPermanent()) {
                             game.doAction(new AddTurnTriggerAction(
-                                (MagicPermanent) it,
+                                (MagicPermanent)it,
                                 PreventDamageTrigger.PreventCombatDamageDealtTo
                             ));
                         } else {
                             game.doAction(new AddTurnTriggerAction(
-                                PreventDamageTrigger.PreventCombatDamageDealtToYou((MagicPlayer) it)
+                                PreventDamageTrigger.PreventCombatDamageDealtToYou((MagicPlayer)it)
                             ));
                         }
                     }
@@ -608,12 +608,12 @@ public enum MagicRuleEventAction {
                     for (final MagicTarget it : ARG.targets(event, matcher, filter)) {
                         if (it.isPermanent()) {
                             game.doAction(new AddTurnTriggerAction(
-                                (MagicPermanent) it,
+                                (MagicPermanent)it,
                                 PreventDamageTrigger.PreventDamageDealtTo
                             ));
                         } else {
                             game.doAction(new AddTurnTriggerAction(
-                                PreventDamageTrigger.PreventDamageDealtToYou((MagicPlayer) it)
+                                PreventDamageTrigger.PreventDamageDealtToYou((MagicPlayer)it)
                             ));
                         }
                     }
