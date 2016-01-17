@@ -3,14 +3,11 @@ package magic.ui.duel.viewer;
 import java.awt.BorderLayout;
 import java.awt.Cursor;
 import java.awt.Image;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
-import javax.swing.Timer;
 import magic.model.MagicCardDefinition;
 import magic.ui.CachedImagesProvider;
 import magic.ui.MagicImages;
@@ -23,7 +20,6 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
 
     private final TransparentImagePanel cardPanel = new TransparentImagePanel();
     private MagicCardDefinition currentCardDefinition;
-    private Timer timer;
     private boolean isSwitchedAspect = false;
 
     // ctr
@@ -31,22 +27,11 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
 
         setCard(MagicCardDefinition.UNKNOWN);
 
-        setDelayedVisibilityTimer();
         setTransformCardListener();
 
         setOpaque(false);
         this.setLayout(new BorderLayout());
         add(cardPanel,BorderLayout.CENTER);
-    }
-
-    private void setDelayedVisibilityTimer() {
-        timer = new Timer(0, new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent evt) {
-                setVisible(true);
-            }
-        });
-        timer.setRepeats(false);
     }
 
     private void setTransformCardListener() {
@@ -115,21 +100,6 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
         repaint();
     }
 
-
-    public void showDelayed(final int delay) {
-        timer.setInitialDelay(delay);
-        timer.restart();
-    }
-
-    public void hideDelayed() {
-        timer.stop();
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                setVisible(false);
-            }
-        });
-    }
 
     @Override
     public void newCardSelected(final MagicCardDefinition card) {
