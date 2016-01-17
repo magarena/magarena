@@ -335,7 +335,6 @@ public class DeckTablePanel extends TexturedPanel {
     public void selectFirstRow() {
         if (table.getRowCount() > 0) {
             table.setRowSelectionInterval(0, 0);
-            firePropertyChange(CP_CARD_SELECTED, false, true);
         }
     }
 

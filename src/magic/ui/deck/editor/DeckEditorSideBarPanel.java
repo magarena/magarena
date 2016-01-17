@@ -22,7 +22,6 @@ public class DeckEditorSideBarPanel extends TexturedPanel {
     public DeckEditorSideBarPanel() {
         setLookAndFeel();
         refreshLayout();
-        setCard(MagicCardDefinition.UNKNOWN);
     }
 
     private void setLookAndFeel() {

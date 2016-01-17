@@ -34,7 +34,6 @@ public class DeckEditorScreenPanel extends JPanel implements IDeckEditorListener
         sideBarPanel = new DeckEditorSideBarPanel();
         // rhs
         viewsPanel = new MainViewsPanel(deck, this);
-        setSelectedCard();
         //
         setLookAndFeel();
         refreshLayout();
@@ -58,11 +57,7 @@ public class DeckEditorScreenPanel extends JPanel implements IDeckEditorListener
         sideBarPanel.setCardCount(cardCount);
     }
 
-    private void setSelectedCard() {
-        setCard(viewsPanel.getSelectedCard());
-        sideBarPanel.getStatsViewer().setDeck(viewsPanel.getDeck());
-    }
-
+    @Override
     public void setDeck(final MagicDeck deck) {
         viewsPanel.setDeck(deck);
     }
