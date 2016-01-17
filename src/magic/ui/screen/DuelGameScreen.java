@@ -26,7 +26,6 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
     private static final String _S2 = "Concede game";
     private static final String _S3 = "Restart game";
     private static final String _S4 = "Image mode";
-    private static final String _S5 = "Text mode";
     private static final String _S7 = "Sidebar Layout";
     private static final String _S8 = "Resume game";
     private static final String _S9 = "Gameplay Report";
@@ -38,7 +37,6 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
     private final GameLoadingMessage loadingMessage = new GameLoadingMessage();
 
     public DuelGameScreen(final MagicDuel duel) {
-        config.setTextView(false);
         showScreen(duel.nextGame());
     }
 
@@ -144,17 +142,6 @@ public class DuelGameScreen extends AbstractScreen implements IOptionsMenu {
                     setVisible(false);
                 }
             });
-            if (config.showTextModeOption()) {
-                final boolean isTextMode = config.getTextView();
-                menu.addMenuItem(isTextMode ? UiString.get(_S4) : UiString.get(_S5), new AbstractAction() {
-                    @Override
-                    public void actionPerformed(final ActionEvent e) {
-                        config.setTextView(!isTextMode);
-                        screen.updateView();
-                        setVisible(false);
-                    }
-                });
-            }
             menu.addMenuItem(UiString.get(_S7), new AbstractAction() {
                 @Override
                 public void actionPerformed(final ActionEvent e) {

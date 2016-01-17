@@ -853,7 +853,7 @@ public class SwingGameController implements IUIGameController {
 
     public void showChoiceCardPopup() {
         final MagicCardDefinition cardDefinition = getSourceCardDefinition();
-        if (cardDefinition != MagicCardDefinition.UNKNOWN && !GeneralConfig.getInstance().getTextView()) {
+        if (cardDefinition != MagicCardDefinition.UNKNOWN) {
             final Point point = userActionPanel.getLocationOnScreen();
             viewInfoRight(cardDefinition, 0, new Rectangle(point.x, point.y-20, userActionPanel.getWidth(), userActionPanel.getHeight()));
         }

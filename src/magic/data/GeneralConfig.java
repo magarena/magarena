@@ -29,7 +29,6 @@ public class GeneralConfig {
 
     public static final String CONFIG_FILENAME="general.cfg";
 
-    private boolean textView = false;
     private boolean isMissingFiles = false;
 
     private static final String LEFT="left";
@@ -37,9 +36,6 @@ public class GeneralConfig {
 
     private static final String TOP="top";
     private int top    = 0;
-
-    private static final String TEXT_MODE_OPTION = "TextViewOption";
-    private boolean showTextModeOption = false;
 
     private static final String WIDTH="width";
     public static final int DEFAULT_WIDTH=1024;
@@ -211,7 +207,7 @@ public class GeneralConfig {
     }
 
     public boolean showGameplayAnimations() {
-        return animateGameplay && !getTextView();
+        return animateGameplay;
     }
 
     public boolean getAnimateGameplay() {
@@ -342,14 +338,6 @@ public class GeneralConfig {
         this.firemindAccessToken = firemindAccessToken;
     }
 
-    public boolean getTextView() {
-        return textView;
-    }
-
-    public void setTextView(final boolean textView) {
-        this.textView = textView;
-    }
-
     public boolean getSkipSingle() {
         return skipSingle;
     }
@@ -436,7 +424,7 @@ public class GeneralConfig {
     }
 
     public boolean showMulliganScreen() {
-        return isMulliganScreenActive && !getTextView();
+        return isMulliganScreenActive;
     }
 
     public boolean getMulliganScreenActive() {
@@ -631,7 +619,6 @@ public class GeneralConfig {
         AnimationFx.setFlags(Integer.parseInt(properties.getProperty(ANIMATION_FLAGS, "" + AnimationFx.getFlags())));
         preferredImageSize = ImageSizePresets.valueOf(properties.getProperty(PREF_IMAGE_SIZE, preferredImageSize.name()));
         cardTextLanguage = CardTextLanguage.valueOf(properties.getProperty(CARD_TEXT_LANG, cardTextLanguage.name()));
-        showTextModeOption = Boolean.parseBoolean(properties.getProperty(TEXT_MODE_OPTION, "" + showTextModeOption));
         gameVolume = Integer.parseInt(properties.getProperty(GAME_VOLUME, "" + gameVolume));
     }
 
@@ -684,7 +671,6 @@ public class GeneralConfig {
         properties.setProperty(ANIMATION_FLAGS, String.valueOf(AnimationFx.getFlags()));
         properties.setProperty(PREF_IMAGE_SIZE, preferredImageSize.name());
         properties.setProperty(CARD_TEXT_LANG, cardTextLanguage.name());
-        properties.setProperty(TEXT_MODE_OPTION, String.valueOf(showTextModeOption));
         properties.setProperty(GAME_VOLUME, String.valueOf(gameVolume));
     }
 
@@ -726,14 +712,6 @@ public class GeneralConfig {
         this.cardTextLanguage = aLang;
     }
 
-    public boolean showTextModeOption() {
-        return this.showTextModeOption;
-    }
-
-    public void setTextModeOption(boolean b) {
-        this.showTextModeOption = b;
-    }
-
     public int getGameVolume() {
         return gameVolume;
     }
@@ -741,5 +719,4 @@ public class GeneralConfig {
     public void setGameVolume(int value) {
         gameVolume = value;
     }
-
 }
