@@ -4,7 +4,7 @@ value=4.056
 rarity=U
 type=Land
 subtype=Lair
-mana=b3r3g3
+mana=b2r2g2
 ability=When SN enters the battlefield, you may return a non-Lair land you control to its owner's hand. If you don't, sacrifice SN.;\
         {T}: Add {B} or {R} or {G} to your mana pool.
 timing=land
