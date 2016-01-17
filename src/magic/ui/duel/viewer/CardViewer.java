@@ -118,7 +118,11 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
 
     private static Image getCardImage(MagicCardDefinition aCard, Dimension prefSize) {
 
-        BufferedImage image = (aCard == null || aCard == MagicCardDefinition.UNKNOWN)
+        if (aCard == null) {
+            aCard = MagicCardDefinition.UNKNOWN;
+        }
+
+        BufferedImage image = aCard == MagicCardDefinition.UNKNOWN
             ? MagicImages.getMissingCardImage()
             : CachedImagesProvider.getInstance().getImage(aCard, true);
 
