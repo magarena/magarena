@@ -15,7 +15,6 @@ public class MagicExileEvent extends MagicEvent {
         );
     }
 
-    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
+    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) ->
         game.doAction(new RemoveFromPlayAction(event.getPermanent(),MagicLocationType.Exile));
-    };
 }

@@ -1489,13 +1489,12 @@ public enum MagicRuleEventAction {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final List<MagicPlayMod> mods = ARG.mods(matcher);
-            return (game, event) -> event.processTargetCard(game, (final MagicCard card) -> {
+            return (game, event) -> event.processTargetCard(game, (final MagicCard card) ->
                 game.doAction(new ReanimateAction(
                     card,
                     event.getPlayer(),
                     mods
-                ));
-            });
+                )));
         }
     },
     Reanimate2(
@@ -1940,17 +1939,15 @@ public enum MagicRuleEventAction {
         new MagicNoCombatTargetPicker(true, true, false),
         MagicTiming.FirstMain,
         "Detain",
-        (game, event) -> event.processTargetPermanent(game, (final MagicPermanent creature) -> {
-            game.doAction(new DetainAction(event.getPlayer(), creature));
-        })
+        (game, event) -> event.processTargetPermanent(game, (final MagicPermanent creature) ->
+            game.doAction(new DetainAction(event.getPlayer(), creature)))
     ),
     CopySpell(
         "copy " + ARG.CHOICE + "\\. You may choose new targets for (the|that) copy(\\.|,)?",
         MagicTiming.Spell,
         "Copy",
-        (game, event) -> event.processTargetCardOnStack(game, (final MagicCardOnStack item) -> {
-            game.doAction(new CopyCardOnStackAction(event.getPlayer(), item));
-        })
+        (game, event) -> event.processTargetCardOnStack(game, (final MagicCardOnStack item) ->
+            game.doAction(new CopyCardOnStackAction(event.getPlayer(), item)))
     ),
     Monstrosity(
         "monstrosity " + ARG.AMOUNT + "(\\.|,)?",

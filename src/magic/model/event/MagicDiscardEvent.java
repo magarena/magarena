@@ -4,7 +4,6 @@ import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.action.MagicCardAction;
 import magic.model.action.DiscardCardAction;
 import magic.model.choice.MagicCardChoice;
 import magic.model.choice.MagicRandomCardChoice;
@@ -60,11 +59,9 @@ public class MagicDiscardEvent extends MagicEvent {
         cond = MagicConditionFactory.HandAtLeast(minHandSize);
     }
 
-    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
-        event.processChosenCards(game, (final MagicCard card) -> {
-            game.doAction(new DiscardCardAction(event.getPlayer(), card));
-        });
-    };
+    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) ->
+        event.processChosenCards(game, (final MagicCard card) ->
+            game.doAction(new DiscardCardAction(event.getPlayer(), card)));
 
     @Override
     public boolean isSatisfied() {

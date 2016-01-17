@@ -8,7 +8,6 @@ import magic.model.MagicSource;
 import magic.model.action.AddTriggerAction;
 import magic.model.action.ChangeCardDestinationAction;
 import magic.model.action.MoveCardAction;
-import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.trigger.DamageIsDealtTrigger;
@@ -31,12 +30,11 @@ public class MagicCipherEvent extends MagicEvent {
     private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
         if (event.isYes()) {
             game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.Exile));
-            event.processTargetPermanent(game, (final MagicPermanent creatureToEncode) -> {
+            event.processTargetPermanent(game, (final MagicPermanent creatureToEncode) ->
                 game.doAction(new AddTriggerAction(
                     creatureToEncode,
                     DamageIsDealtTrigger.Cipher(event.getCardOnStack().getCardDefinition())
-                ));
-            });
+                )));
         } else {
             game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.Graveyard));
         }

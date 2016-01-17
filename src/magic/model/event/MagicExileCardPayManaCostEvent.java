@@ -5,11 +5,8 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.action.MagicCardAction;
 import magic.model.action.ShiftCardAction;
 import magic.model.choice.MagicTargetChoice;
-import magic.model.condition.MagicCondition;
-import magic.model.condition.MagicConditionFactory;
 
 public class MagicExileCardPayManaCostEvent extends MagicEvent {
 
@@ -27,14 +24,13 @@ public class MagicExileCardPayManaCostEvent extends MagicEvent {
         );
     }
 
-    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
+    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) ->
         event.processTargetCard(game, (final MagicCard card) -> {
             game.doAction(new ShiftCardAction(
                 card,
                 MagicLocationType.Graveyard,
                 MagicLocationType.Exile
             ));
-            game.addFirstEvent(new MagicPayManaCostEvent(event.getSource(), card.getCost()));
-        });
-    };
+        game.addFirstEvent(new MagicPayManaCostEvent(event.getSource(), card.getCost()));
+    });
 }

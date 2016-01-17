@@ -5,15 +5,14 @@ import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
-import magic.model.action.SacrificeAction;
 import magic.model.action.ChangeStateAction;
-import magic.model.action.MagicPermanentAction;
-import magic.model.event.MagicEventAction;
-import magic.model.event.MagicEvent;
-import magic.model.event.MagicSourceEvent;
-import magic.model.event.MagicSacrificePermanentEvent;
+import magic.model.action.SacrificeAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicEventAction;
+import magic.model.event.MagicSacrificePermanentEvent;
+import magic.model.event.MagicSourceEvent;
 
 public abstract class EntersBattlefieldTrigger extends MagicTrigger<MagicPayedCost> {
 
@@ -81,12 +80,11 @@ public abstract class EntersBattlefieldTrigger extends MagicTrigger<MagicPayedCo
     };
 
     public static final EntersBattlefieldTrigger Exploit = new EntersBattlefieldTrigger() {
-        private final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
+        private final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) ->
             event.processTargetPermanent(game, (final MagicPermanent permanent) -> {
                 game.doAction(ChangeStateAction.Set(event.getPermanent(), MagicPermanentState.Exploit));
                 game.doAction(new SacrificeAction(permanent));
             });
-        };
 
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPayedCost payedCost) {

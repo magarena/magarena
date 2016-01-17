@@ -5,7 +5,6 @@ import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.action.MagicCardAction;
 import magic.model.action.DiscardCardAction;
 import magic.model.choice.MagicTargetChoice;
 
@@ -31,13 +30,11 @@ public class MagicTuckCardEvent extends MagicEvent {
         );
     }
 
-    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
-        event.processTargetCard(game, (final MagicCard card) -> {
+    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) ->
+        event.processTargetCard(game, (final MagicCard card) ->
             game.doAction(new DiscardCardAction(
                 event.getPlayer(),
                 card,
                 MagicLocationType.BottomOfOwnersLibrary
-            ));
-        });
-    };
+            )));
 }

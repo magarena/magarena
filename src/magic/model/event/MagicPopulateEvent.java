@@ -3,7 +3,6 @@ package magic.model.event;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicSource;
-import magic.model.action.MagicPermanentAction;
 import magic.model.action.PlayTokenAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicCopyPermanentPicker;
@@ -20,9 +19,7 @@ public class MagicPopulateEvent extends MagicEvent {
         );
     }
 
-    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
-        event.processTargetPermanent(game, (final MagicPermanent creature) -> {
-            game.doAction(new PlayTokenAction(event.getPlayer(), creature.getCardDefinition()));
-        });
-    };
+    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) ->
+        event.processTargetPermanent(game, (final MagicPermanent creature) ->
+            game.doAction(new PlayTokenAction(event.getPlayer(), creature.getCardDefinition())));
 }

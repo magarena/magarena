@@ -1,22 +1,19 @@
 package magic.model.event;
 
+import java.util.LinkedList;
+import java.util.List;
+
 import magic.model.MagicGame;
-import magic.model.MagicManaCost;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.action.AttachAction;
-import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
-import magic.model.condition.MagicCondition;
 import magic.model.condition.MagicArtificialCondition;
+import magic.model.condition.MagicCondition;
 import magic.model.target.MagicEquipTargetPicker;
 import magic.model.target.MagicOtherPermanentTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 import magic.model.target.MagicTargetHint;
-
-import java.util.List;
-import java.util.LinkedList;
-import java.util.Arrays;
 
 public class MagicEquipActivation extends MagicPermanentActivation {
 
@@ -70,8 +67,7 @@ public class MagicEquipActivation extends MagicPermanentActivation {
 
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        event.processTargetPermanent(game, (final MagicPermanent creature) -> {
-            game.doAction(new AttachAction(event.getPermanent(),creature));
-        });
+        event.processTargetPermanent(game, (final MagicPermanent creature) ->
+            game.doAction(new AttachAction(event.getPermanent(),creature)));
     }
 }

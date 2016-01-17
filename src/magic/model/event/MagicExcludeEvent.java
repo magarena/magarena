@@ -17,7 +17,6 @@ public class MagicExcludeEvent extends MagicEvent {
         );
     }
 
-    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
+    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) ->
         event.getExclude().exclude(game);
-    };
 }

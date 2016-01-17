@@ -10,13 +10,12 @@ public class MagicAddCounterEvent extends MagicEvent {
     public MagicAddCounterEvent(final MagicPermanent permanent,final MagicCounterType counterType,final int amount) {
         super(
             permanent,
-            (final MagicGame game, final MagicEvent event) -> {
+            (final MagicGame game, final MagicEvent event) ->
                 game.doAction(new ChangeCountersAction(
                     event.getPermanent(),
                     counterType,
                     amount
-                ));
-            },
+                )),
             genDescription(permanent,counterType,amount)
         );
     }

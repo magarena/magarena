@@ -1,5 +1,7 @@
 package magic.model.event;
 
+import java.util.Arrays;
+
 import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
@@ -8,17 +10,14 @@ import magic.model.MagicPermanent;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
-import magic.model.action.MagicPermanentAction;
+import magic.model.action.MagicPlayMod;
 import magic.model.action.PlayCardFromStackAction;
 import magic.model.action.PutItemOnStackAction;
 import magic.model.action.RemoveCardAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicCondition;
-import magic.model.action.MagicPlayMod;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.target.MagicPumpTargetPicker;
-
-import java.util.Arrays;
 
 public class MagicBestowActivation extends MagicHandCastActivation {
 
@@ -30,13 +29,12 @@ public class MagicBestowActivation extends MagicHandCastActivation {
     ) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final boolean valid = event.processTargetPermanent(game, (final MagicPermanent creature) -> {
+            final boolean valid = event.processTargetPermanent(game, (final MagicPermanent creature) ->
                 game.doAction(new PlayCardFromStackAction(
                     event.getCardOnStack(),
                     creature,
                     MagicPlayMod.BESTOWED
-                ));
-            });
+                )));
             if (!valid) {
                 game.doAction(new PlayCardFromStackAction(event.getCardOnStack()));
             }

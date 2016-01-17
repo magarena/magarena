@@ -3,10 +3,9 @@ package magic.model.event;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicSource;
 import magic.model.MagicPlayer;
+import magic.model.MagicSource;
 import magic.model.action.ChangeCountersAction;
-import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicPTTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
@@ -14,15 +13,13 @@ import magic.model.target.Operator;
 
 public class MagicBolsterEvent extends MagicEvent {
 
-    public static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
-        event.processTargetPermanent(game, (final MagicPermanent creature) -> {
+    public static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) ->
+        event.processTargetPermanent(game, (final MagicPermanent creature) ->
             game.doAction(new ChangeCountersAction(
                 creature,
                 MagicCounterType.PlusOne,
                 event.getRefInt()
-            ));
-        });
-    };
+            )));
 
     public MagicBolsterEvent(final MagicSource source, final MagicPlayer player, final int amount, final int minToughness) {
         super(

@@ -6,7 +6,6 @@ import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.action.MagicCardAction;
 import magic.model.action.ScryComplAction;
 import magic.model.choice.MagicFromCardListChoice;
 
@@ -22,12 +21,11 @@ public class MagicScryXEvent extends MagicEvent {
         );
     }
 
-    private static final MagicEventAction TopAction = (final MagicGame game, final MagicEvent event) -> {
+    private static final MagicEventAction TopAction = (final MagicGame game, final MagicEvent event) ->
         event.processChosenCards(game, (final MagicCard card) -> {
             game.doAction(new ScryComplAction(event.getPlayer(), card, false));
             game.logAppendMessage(event.getPlayer(), event.getPlayer() + " puts back a card to the top of his or her library.");
-        });
-    };
+    });
 
     private static final MagicEventAction BottomAction = (final MagicGame game, final MagicEvent event) -> {
         final MagicCardList processedCards = new MagicCardList();

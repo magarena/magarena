@@ -3,7 +3,6 @@ package magic.model.event;
 import magic.model.MagicGame;
 import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicPermanentAction;
 import magic.model.action.PlayCardFromStackAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.stack.MagicCardOnStack;
@@ -44,9 +43,8 @@ public class MagicPlayAuraEvent extends MagicSpellCardEvent {
 
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        event.processTargetPermanent(game, (final MagicPermanent creature) -> {
-            game.doAction(new PlayCardFromStackAction(event.getCardOnStack(),creature));
-        });
+        event.processTargetPermanent(game, (final MagicPermanent creature) ->
+            game.doAction(new PlayCardFromStackAction(event.getCardOnStack(),creature)));
     }
 
     public static MagicPlayAuraEvent create(final String script) {

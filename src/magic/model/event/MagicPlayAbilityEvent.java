@@ -22,9 +22,8 @@ public class MagicPlayAbilityEvent extends MagicEvent {
         cond = condition;
     }
 
-    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
+    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) ->
         game.doAction(new PlayAbilityAction(event.getPermanent()));
-    };
 
     @Override
     public boolean isSatisfied() {

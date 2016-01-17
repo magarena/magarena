@@ -4,7 +4,6 @@ import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
-import magic.model.action.MagicCardAction;
 import magic.model.action.ShiftCardAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
@@ -51,13 +50,12 @@ public class SoulshiftTrigger extends ThisDiesTrigger {
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         if (event.isYes()) {
-            event.processTargetCard(game, (final MagicCard card) -> {
+            event.processTargetCard(game, (final MagicCard card) ->
                 game.doAction(new ShiftCardAction(
                     card,
                     MagicLocationType.Graveyard,
                     MagicLocationType.OwnersHand
-                ));
-            });
+                )));
         }
     }
 }

@@ -4,7 +4,6 @@ import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.action.ChangeCountersAction;
-import magic.model.action.MagicPermanentAction;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
@@ -38,13 +37,12 @@ public class ModularTrigger extends ThisDiesTrigger {
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         if (event.isYes()) {
-            event.processTargetPermanent(game, (final MagicPermanent creature) -> {
+            event.processTargetPermanent(game, (final MagicPermanent creature) ->
                 game.doAction(new ChangeCountersAction(
                     creature,
                     MagicCounterType.PlusOne,
                     event.getRefInt()
-                ));
-            });
+                )));
         }
     }
 }

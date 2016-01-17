@@ -4,7 +4,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPlayer;
 import magic.model.MagicSource;
-import magic.model.action.MagicPermanentAction;
 import magic.model.action.TapAction;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.target.MagicTapTargetPicker;
@@ -26,9 +25,7 @@ public class MagicTapPermanentEvent extends MagicEvent {
         );
     }
 
-    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
-        event.processTargetPermanent(game, (final MagicPermanent permanent) -> {
-            game.doAction(new TapAction(permanent));
-        });
-    };
+    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) ->
+        event.processTargetPermanent(game, (final MagicPermanent permanent) ->
+            game.doAction(new TapAction(permanent)));
 }
