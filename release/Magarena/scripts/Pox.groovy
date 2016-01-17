@@ -12,12 +12,12 @@
             );
         }
 
-        private int oneThird(int value) {
+        public int oneThird(int value) {
             if (value <= 0) {
                 // Don't lose negative life.
                 return 0;
             } else {
-                return (value + 2).intdiv(3).abs();
+                return (int)(value + 2).intdiv(3);
             }
         }
 
