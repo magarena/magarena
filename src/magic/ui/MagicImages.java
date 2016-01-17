@@ -6,7 +6,6 @@ import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import javax.swing.ImageIcon;
 import magic.data.GeneralConfig;
@@ -15,7 +14,6 @@ import magic.data.TextImages;
 import magic.model.DuelPlayerConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
-import magic.model.MagicManaCost;
 import magic.model.MagicManaType;
 import magic.model.MagicPermanent;
 import magic.model.player.PlayerProfile;
@@ -37,7 +35,7 @@ public final class MagicImages {
     // when the preferred image or icon is missing.
     public static final BufferedImage MISSING_BIG = loadImage("missing.png");
     private static final BufferedImage MISSING_SMALL = loadImage("missing2.png");
-    public static final BufferedImage MISSING_CARD = loadImage("missing_card.png");
+    public static final BufferedImage MISSING_CARD = BACK_IMAGE;
 
     // "M" logo variations.
     public static final BufferedImage LOGO = loadImage("logo.png");
