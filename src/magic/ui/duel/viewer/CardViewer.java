@@ -7,43 +7,28 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.event.MouseMotionListener;
 import java.awt.image.BufferedImage;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import javax.swing.Timer;
-import magic.ui.CachedImagesProvider;
-import magic.ui.CardImagesProvider;
-import magic.data.GeneralConfig;
-import magic.ui.MagicImages;
 import magic.model.MagicCardDefinition;
-import magic.ui.utility.GraphicsUtils;
+import magic.ui.CachedImagesProvider;
+import magic.ui.MagicImages;
 import magic.ui.cardtable.ICardSelectionListener;
+import magic.ui.utility.GraphicsUtils;
 import magic.ui.widget.TransparentImagePanel;
 
-/**
- * Class responsible for showing the card pic popup
- */
 @SuppressWarnings("serial")
 public class CardViewer extends JPanel implements ICardSelectionListener {
 
-    private static CardImagesProvider IMAGE_HELPER = CachedImagesProvider.getInstance();
-    private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
-
     private final TransparentImagePanel cardPanel = new TransparentImagePanel();
     private MagicCardDefinition currentCardDefinition;
-    private final boolean isGameScreenPopup;
     private Timer timer;
     private boolean isSwitchedAspect = false;
 
     // ctr
     public CardViewer() {
-        this(false);
-    }
-    // ctr
-    public CardViewer(final boolean isGameScreenPopup) {
 
-        this.isGameScreenPopup = isGameScreenPopup;
         setCard(MagicCardDefinition.UNKNOWN);
 
         setDelayedVisibilityTimer();
@@ -52,18 +37,6 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
         setOpaque(false);
         this.setLayout(new BorderLayout());
         add(cardPanel,BorderLayout.CENTER);
-
-        if (isGameScreenPopup) {
-            addMouseMotionListener(new MouseMotionListener() {
-                @Override
-                public void mouseDragged(MouseEvent e) {}
-                @Override
-                public void mouseMoved(MouseEvent e) {
-                    hideDelayed();
-                }
-            });
-        }
-
     }
 
     private void setDelayedVisibilityTimer() {
@@ -80,7 +53,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                if (currentCardDefinition != null && !isGameScreenPopup) {
+                if (currentCardDefinition != null) {
                     SwingUtilities.invokeLater(new Runnable() {
                         @Override
                         public void run() {
@@ -91,7 +64,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
             }
             @Override
             public void mouseEntered(MouseEvent e) {
-                if (!isGameScreenPopup && currentCardDefinition.hasMultipleAspects() && currentCardDefinition.isValid()) {
+                if (currentCardDefinition.hasMultipleAspects() && currentCardDefinition.isValid()) {
                     setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
                 } else {
                     setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
@@ -128,21 +101,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
         } else if (cardDefinition != currentCardDefinition) {
             currentCardDefinition = cardDefinition;
             final BufferedImage cardImage;
-            if (isGameScreenPopup && CONFIG.isHighQuality()) {
-                final BufferedImage sourceImage = IMAGE_HELPER.getImage(cardDefinition, true);
-                final int imageWidth=sourceImage.getWidth(this);
-                final int imageHeight=sourceImage.getHeight(this);
-                cardImage = sourceImage;
-                setSize(imageWidth,imageHeight);
-                revalidate();
-            } else {
-                cardImage = IMAGE_HELPER.getImage(cardDefinition, false);
-                if (isGameScreenPopup) {
-                    setSize(GraphicsUtils.getMaxCardImageSize());
-                    revalidate();
-                }
-            }
-
+            cardImage =  CachedImagesProvider.getInstance().getImage(cardDefinition, false);
             if (cardDefinition.isInvalid() && cardImage != MagicImages.getMissingCardImage()) {
                 setCardImage(GraphicsUtils.getGreyScaleImage(cardImage));
             } else {
