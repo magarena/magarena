@@ -31,7 +31,6 @@ import magic.translate.UiString;
 import magic.translate.StringContext;
 import magic.ui.canvas.cards.ICardsCanvasListener;
 import magic.ui.deck.editor.DeckEditorSideBarPanel;
-import magic.ui.utility.GraphicsUtils;
 
 @SuppressWarnings("serial")
 public class DeckTiledCardsScreen
@@ -112,7 +111,7 @@ public class DeckTiledCardsScreen
 
         public void refreshLayout() {
             removeAll();
-            add(sidebar, "h 100%, w " + GraphicsUtils.getMaxCardImageSize().width + "!, hidemode 3");
+            add(sidebar, "h 100%");
             add(canvas, "w 100%, h 100%");
             revalidate();
         }

@@ -3,7 +3,6 @@ package magic.ui.explorer;
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.Cursor;
-import java.awt.Dimension;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.text.DecimalFormat;
@@ -12,11 +11,9 @@ import java.util.List;
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
-import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicRandom;
 import magic.ui.CardFilterPanel;
-import magic.ui.utility.GraphicsUtils;
 import magic.ui.ICardFilterPanelListener;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
@@ -34,7 +31,6 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
     private static final String _S3 = "Unimplemented:";
 
     private static final int FILTERS_PANEL_HEIGHT = 88; // pixels
-    private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
     private CardTable cardPoolTable;
     private CardFilterPanel filterPanel;
@@ -64,19 +60,10 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
         rhs.setOpaque(false);
         rhs.setBorder(BorderFactory.createMatteBorder(0, 1, 0, 0, Color.BLACK));
 
-        final Dimension imageSize = GraphicsUtils.getMaxCardImageSize();
         migLayout.setLayoutConstraints("insets 0, gap 0");
-        if (CONFIG.isHighQuality()) {
-            migLayout.setColumnConstraints("[][grow]");
-            setLayout(migLayout);
-            add(sideBarPanel, "h 100%, w 0:" + imageSize.width +":" + imageSize.width);
-            add(rhs, "h 100%, growx");
-        } else {
-            migLayout.setColumnConstraints("[" + imageSize.width + "!][100%]");
-            setLayout(migLayout);
-            add(sideBarPanel, "h 100%, w " + imageSize.width + "!");
-            add(rhs, "w 100%, h 100%");
-        }
+        setLayout(migLayout);
+        add(sideBarPanel, "h 100%");
+        add(rhs, "w 100%, h 100%");
 
         // set initial card image
         if (cardPoolDefs.isEmpty()) {

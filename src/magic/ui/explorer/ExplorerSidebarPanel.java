@@ -27,7 +27,7 @@ public class ExplorerSidebarPanel extends TexturedPanel {
     private void refreshLayout() {
         removeAll();
         migLayout.setLayoutConstraints("flowy, insets 0");
-        add(cardPanel, "w 100%, h 100%");
+        add(cardPanel, "h 100%");
         if (statsViewer != null) {
             add(statsViewer, "w 100%, gap 6 6 6 6, aligny bottom, pushy");
         }

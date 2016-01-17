@@ -1,6 +1,5 @@
 package magic.ui.deck.editor;
 
-import java.awt.Dimension;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
@@ -8,7 +7,6 @@ import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
-import magic.ui.utility.GraphicsUtils;
 import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
@@ -48,18 +46,10 @@ public class DeckEditorScreenPanel extends JPanel implements IDeckEditorListener
     }
 
     private void refreshLayout() {
-        final Dimension imageSize = GraphicsUtils.getMaxCardImageSize();
         removeAll();
         migLayout.setLayoutConstraints("insets 0, gap 0");
-        if (CONFIG.isHighQuality()) {
-            migLayout.setColumnConstraints("[][grow]");
-            add(sideBarPanel, "h 100%, w 0:" + imageSize.width + ":" + imageSize.width);
-            add(viewsPanel, "h 100%, growx");
-        } else {
-            migLayout.setColumnConstraints("[" + imageSize.width + "!][100%]");
-            add(sideBarPanel, "h 100%");
-            add(viewsPanel, "w 100%, h 100%");
-        }
+        add(sideBarPanel, "h 100%");
+        add(viewsPanel, "w 100%, h 100%");
     }
 
     public void setCard(final MagicCardDefinition card) {

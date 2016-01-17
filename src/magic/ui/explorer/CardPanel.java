@@ -1,6 +1,7 @@
 package magic.ui.explorer;
 
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
@@ -8,13 +9,10 @@ import javax.swing.AbstractAction;
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
-import javax.swing.ScrollPaneConstants;
-import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
-import magic.ui.CardImagesProvider;
 import magic.translate.UiString;
 import magic.ui.duel.viewer.CardViewer;
-import magic.ui.utility.GraphicsUtils;
+import magic.ui.prefs.ImageSizePresets;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -27,8 +25,8 @@ public class CardPanel extends JPanel {
     private static final String _S4 = "searching...";
 
     private final MigLayout layout = new MigLayout();
-    private final CardViewer cardViewer = new CardViewer();
-    private final JScrollPane cardScrollPane = new JScrollPane();
+    private final CardViewer cardViewer;
+    private final JScrollPane cardScrollPane;
     private final CardDecksPanel decksPanel = new CardDecksPanel();
     private final SplitterButton decksButton = new SplitterButton(UiString.get(_S1, 0));
     private boolean isImageVisible = true;
@@ -38,19 +36,15 @@ public class CardPanel extends JPanel {
         setOpaque(false);
 
         // card image viewer
-        cardViewer.setPreferredSize(GraphicsUtils.getMaxCardImageSize());
-        cardViewer.setMaximumSize(GraphicsUtils.getMaxCardImageSize());
+        cardViewer = new CardViewer();
 
         // card image scroll pane
+        cardScrollPane = new JScrollPane();
         cardScrollPane.setViewportView(cardViewer);
         cardScrollPane.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.BLACK));
         cardScrollPane.setOpaque(false);
         cardScrollPane.getViewport().setOpaque(false);
         cardScrollPane.getVerticalScrollBar().setUnitIncrement(10);
-        cardScrollPane.setHorizontalScrollBarPolicy(
-                GeneralConfig.getInstance().isHighQuality()
-                        ? ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED
-                        : ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
         decksPanel.setOpaque(false);
         decksPanel.addPropertyChangeListener(
@@ -80,6 +74,8 @@ public class CardPanel extends JPanel {
             }
         });
 
+        setMinimumSize(new Dimension(cardViewer.getMinimumSize().width, 0));
+        
         setLayout(layout);
         layout.setLayoutConstraints("flowy, insets 0, gap 0");
         refreshLayout();
@@ -88,7 +84,7 @@ public class CardPanel extends JPanel {
 
     private void refreshLayout() {
         removeAll();
-        final int minImageHeight = CardImagesProvider.SMALL_SCREEN_IMAGE_SIZE.height + 1;
+        final int minImageHeight = ImageSizePresets.SIZE_312x445.getSize().height + 1;
         add(cardScrollPane, "hmin " + minImageHeight + ", hidemode 3");
         add(decksButton, "w 100%, h 16:24");
         add(decksPanel, "w 100%, growy, pushy, hmin 0");

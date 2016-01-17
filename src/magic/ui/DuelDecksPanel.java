@@ -20,7 +20,6 @@ import javax.swing.SpringLayout;
 import javax.swing.SwingConstants;
 import magic.data.DeckType;
 import magic.data.DuelConfig;
-import magic.data.GeneralConfig;
 import magic.exception.InvalidDeckException;
 import magic.model.DuelPlayerConfig;
 import magic.model.MagicCardDefinition;
@@ -32,7 +31,6 @@ import magic.ui.duel.viewer.CardViewer;
 import magic.ui.duel.viewer.DeckDescriptionViewer;
 import magic.ui.duel.viewer.DeckStatisticsViewer;
 import magic.ui.player.PlayerDetailsPanel;
-import magic.ui.utility.GraphicsUtils;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
@@ -49,7 +47,6 @@ public class DuelDecksPanel extends TexturedPanel {
 
     private static final int SPACING = 10;
     private static final String GENERATE_BUTTON_TEXT = UiString.get(_S1);
-    private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
     private final MigLayout migLayout = new MigLayout();
     private final MagicDuel duel;
@@ -71,15 +68,8 @@ public class DuelDecksPanel extends TexturedPanel {
         buttonsPanel.setLayout(new BoxLayout(buttonsPanel, BoxLayout.X_AXIS));
         buttonsPanel.setOpaque(false);
 
-        // left top
-        final JPanel leftPanel = new JPanel();
-        leftPanel.setLayout(new BoxLayout(leftPanel, BoxLayout.Y_AXIS));
-        leftPanel.setOpaque(false);
-
         // card image
         cardViewer=new CardViewer();
-        cardViewer.setPreferredSize(GraphicsUtils.getMaxCardImageSize());
-        cardViewer.setMaximumSize(GraphicsUtils.getMaxCardImageSize());
         cardViewer.setCard(MagicCardDefinition.UNKNOWN);
         cardViewer.setAlignmentX(Component.LEFT_ALIGNMENT);
 
@@ -88,11 +78,9 @@ public class DuelDecksPanel extends TexturedPanel {
         leftScrollPane.setBorder(FontsAndBorders.NO_BORDER);
         leftScrollPane.setOpaque(false);
         leftScrollPane.getViewport().setOpaque(false);
-        leftScrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
-        leftScrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
         leftScrollPane.getVerticalScrollBar().setUnitIncrement(10);
-        leftPanel.add(leftScrollPane);
-
+        leftScrollPane.setMinimumSize(new Dimension(cardViewer.getMinimumSize().width, 0));
+        
         // create tabs for each player
         tabbedPane = new JTabbedPane(JTabbedPane.TOP);
 
@@ -206,20 +194,10 @@ public class DuelDecksPanel extends TexturedPanel {
         tabbedPane.setPreferredSize(new Dimension(800, 0));
 
         // layout screen components.
-        final Dimension imageSize = GraphicsUtils.getMaxCardImageSize();
         migLayout.setLayoutConstraints("insets 0, gap 0");
-        if (CONFIG.isHighQuality()) {
-            migLayout.setColumnConstraints("[][grow]");
-            setLayout(migLayout);
-            add(leftScrollPane, "h 100%, w 0:" + imageSize.width +":" + imageSize.width);
-            add(tabbedPane, "h 100%, growx");
-        } else {
-            migLayout.setColumnConstraints("[" + imageSize.width + "!][100%]");
-            setLayout(migLayout);
-            add(leftScrollPane, "h 100%");
-            add(tabbedPane, "h 100%, w 100%");
-        }
-
+        setLayout(migLayout);
+        add(leftScrollPane, "h 100%");
+        add(tabbedPane, "h 100%, w 100%");
     }
 
     String generateTitle(final MagicDeck deck) {

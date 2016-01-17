@@ -1,6 +1,7 @@
 package magic.ui.duel.viewer;
 
 import java.awt.Cursor;
+import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.event.MouseAdapter;
@@ -8,20 +9,29 @@ import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
+import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.ui.CachedImagesProvider;
 import magic.ui.MagicImages;
 import magic.ui.cardtable.ICardSelectionListener;
+import magic.ui.prefs.ImageSizePresets;
 import magic.ui.utility.GraphicsUtils;
 
 @SuppressWarnings("serial")
 public class CardViewer extends JPanel implements ICardSelectionListener {
+
+    private final Dimension IMAGE_SIZE = getImageSize();
 
     private Image thisImage;
     private MagicCardDefinition thisCard;
     private boolean isSwitchedAspect = false;
 
     public CardViewer() {
+
+        setPreferredSize(IMAGE_SIZE);
+        setMinimumSize(IMAGE_SIZE);
+        setMaximumSize(IMAGE_SIZE);
+        
         setCard(MagicCardDefinition.UNKNOWN);
         setTransformCardListener();
     }
@@ -103,4 +113,15 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
             super.paintComponent(g);
         }
     }
+
+    private static Dimension getImageSize() {
+        ImageSizePresets sizePreset = GeneralConfig.getInstance().getPreferredImageSize();
+        if (sizePreset == ImageSizePresets.SIZE_ORIGINAL) {
+            return ImageSizePresets.SIZE_312x445.getSize();
+        } else if (sizePreset.getSize().width < ImageSizePresets.SIZE_312x445.getSize().width) {
+            return ImageSizePresets.SIZE_312x445.getSize();
+        } else {
+            return sizePreset.getSize();
+        }
+    } 
 }
