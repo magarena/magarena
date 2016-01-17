@@ -19,13 +19,10 @@ public class MagicDeclareBlockersEvent extends MagicEvent {
         );
     }
 
-    private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayer player = event.getPlayer();
-            final MagicDeclareBlockersResult result = event.getBlockers();
-            game.doAction(new DeclareBlockersAction(player,result));
-            game.logBlockers(player,result);
-        }
+    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
+        final MagicPlayer player = event.getPlayer();
+        final MagicDeclareBlockersResult result = event.getBlockers();
+        game.doAction(new DeclareBlockersAction(player,result));
+        game.logBlockers(player,result);
     };
 }

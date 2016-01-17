@@ -38,14 +38,12 @@ public class ModularTrigger extends ThisDiesTrigger {
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         if (event.isYes()) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent creature) {
-                    game.doAction(new ChangeCountersAction(
-                        creature,
-                        MagicCounterType.PlusOne,
-                        event.getRefInt()
-                    ));
-                }
+            event.processTargetPermanent(game, (final MagicPermanent creature) -> {
+                game.doAction(new ChangeCountersAction(
+                    creature,
+                    MagicCounterType.PlusOne,
+                    event.getRefInt()
+                ));
             });
         }
     }

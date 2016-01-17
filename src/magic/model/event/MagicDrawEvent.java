@@ -16,12 +16,8 @@ public class MagicDrawEvent extends MagicEvent {
         );
     }
 
-    private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new DrawAction(event.getPlayer(), event.getRefInt()));
-        }
-    };
+    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) ->
+        game.doAction(new DrawAction(event.getPlayer(), event.getRefInt()));
 
     private static final String genDescription(final int amount) {
         if (amount != 1) {

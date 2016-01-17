@@ -22,14 +22,11 @@ public class MagicDiscardHandEvent extends MagicEvent {
         this(source, source.getController());
     }
 
-    private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayer player = event.getPlayer();
-            final MagicCardList hand = new MagicCardList(player.getHand());
-            for (final MagicCard card : hand) {
-                game.doAction(new DiscardCardAction(player,card));
-            }
+    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
+        final MagicPlayer player = event.getPlayer();
+        final MagicCardList hand = new MagicCardList(player.getHand());
+        for (final MagicCard card : hand) {
+            game.doAction(new DiscardCardAction(player,card));
         }
     };
 }

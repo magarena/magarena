@@ -21,16 +21,13 @@ public class MagicMulliganEvent extends MagicEvent {
             "PN may$ take a mulligan."
         );
     }
-    private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayer player = event.getPlayer();
-            if (event.isYes()) {
-                final MagicCardList hand = new MagicCardList(player.getHand());
-                game.doAction(new ShuffleCardsIntoLibraryAction(hand, MagicLocationType.OwnersHand));
-                game.doAction(new DrawAction(player, hand.size() - 1));
-                game.addEvent(new MagicMulliganEvent(player));
-            }
+    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
+        final MagicPlayer player = event.getPlayer();
+        if (event.isYes()) {
+            final MagicCardList hand = new MagicCardList(player.getHand());
+            game.doAction(new ShuffleCardsIntoLibraryAction(hand, MagicLocationType.OwnersHand));
+            game.doAction(new DrawAction(player, hand.size() - 1));
+            game.addEvent(new MagicMulliganEvent(player));
         }
     };
 }

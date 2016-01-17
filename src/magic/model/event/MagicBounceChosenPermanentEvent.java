@@ -29,17 +29,12 @@ public class MagicBounceChosenPermanentEvent extends MagicEvent {
         );
     }
 
-    private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent permanent) {
-                    game.doAction(new RemoveFromPlayAction(
-                        permanent,
-                        MagicLocationType.OwnersHand
-                    ));
-                }
-            });
-        }
+    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
+        event.processTargetPermanent(game, (final MagicPermanent permanent) -> {
+            game.doAction(new RemoveFromPlayAction(
+                permanent,
+                MagicLocationType.OwnersHand
+            ));
+        });
     };
 }

@@ -50,21 +50,16 @@ public class MagicAwakenEvent extends MagicEvent {
         );
     }
 
-    private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent it) {
-                    game.doAction(new ChangeCountersAction(
-                        it,
-                        MagicCounterType.PlusOne,
-                        event.getRefInt()
-                    ));
-                    game.doAction(new AddStaticAction(it, PT));
-                    game.doAction(new AddStaticAction(it, Type));
-                    game.doAction(new GainAbilityAction(it, MagicAbility.Haste, MagicStatic.Forever));
-                }
-            });
-        }
+    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
+        event.processTargetPermanent(game, (final MagicPermanent it) -> {
+            game.doAction(new ChangeCountersAction(
+                it,
+                MagicCounterType.PlusOne,
+                event.getRefInt()
+            ));
+            game.doAction(new AddStaticAction(it, PT));
+            game.doAction(new AddStaticAction(it, Type));
+            game.doAction(new GainAbilityAction(it, MagicAbility.Haste, MagicStatic.Forever));
+        });
     };
 }

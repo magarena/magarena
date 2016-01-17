@@ -25,24 +25,19 @@ public class MagicRedirectDamageEvent extends MagicEvent {
     }
 
     private static final MagicEventAction EventAction(final int amount, final boolean isCombat) {
-        return new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                if (event.isYes()) {
-                    event.processTargetPermanent(game,new MagicPermanentAction() {
-                        public void doAction(final MagicPermanent planeswalker) {
-                            final MagicDamage damage = isCombat ?
-                                MagicDamage.Combat(event.getSource(), planeswalker, amount) :
-                                new MagicDamage(event.getSource(), planeswalker, amount);
-                            game.doAction(new DealDamageAction(damage));
-                        }
-                    });
-                } else {
+        return (final MagicGame game, final MagicEvent event) -> {
+            if (event.isYes()) {
+                event.processTargetPermanent(game, (final MagicPermanent planeswalker) -> {
                     final MagicDamage damage = isCombat ?
-                        MagicDamage.Combat(event.getSource(), event.getRefPlayer(), amount) :
-                        new MagicDamage(event.getSource(), event.getRefPlayer(), amount);
-                    game.doAction(DealDamageAction.NoRedirect(damage));
-                }
+                        MagicDamage.Combat(event.getSource(), planeswalker, amount) :
+                        new MagicDamage(event.getSource(), planeswalker, amount);
+                    game.doAction(new DealDamageAction(damage));
+                });
+            } else {
+                final MagicDamage damage = isCombat ?
+                    MagicDamage.Combat(event.getSource(), event.getRefPlayer(), amount) :
+                    new MagicDamage(event.getSource(), event.getRefPlayer(), amount);
+                game.doAction(DealDamageAction.NoRedirect(damage));
             }
         };
     }

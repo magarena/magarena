@@ -36,20 +36,17 @@ public class MagicScryEvent extends MagicEvent {
     }
 
     private static final MagicEventAction EventAction(final boolean trigger) {
-        return new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                final MagicPlayer p = event.getPlayer();
-                if (event.isYes()) {
-                    game.logAppendMessage(p, p + " looks at the top card of his or her library and moves it to the bottom.");
-                    game.doAction(new ScryAction(p));
-                } else {
-                    game.logAppendMessage(p, p + " looks at the top card of his or her library and puts it back on top.");
-                }
-                //Scry triggers even if the card is not moved. Only once regardless of amount of cards scryed
-                if (trigger) {
-                    game.executeTrigger(MagicTriggerType.WhenScry,p);
-                }
+        return (final MagicGame game, final MagicEvent event) -> {
+            final MagicPlayer p = event.getPlayer();
+            if (event.isYes()) {
+                game.logAppendMessage(p, p + " looks at the top card of his or her library and moves it to the bottom.");
+                game.doAction(new ScryAction(p));
+            } else {
+                game.logAppendMessage(p, p + " looks at the top card of his or her library and puts it back on top.");
+            }
+            //Scry triggers even if the card is not moved. Only once regardless of amount of cards scryed
+            if (trigger) {
+                game.executeTrigger(MagicTriggerType.WhenScry,p);
             }
         };
     };

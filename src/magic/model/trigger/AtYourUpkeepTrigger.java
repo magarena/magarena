@@ -35,14 +35,11 @@ public abstract class AtYourUpkeepTrigger extends AtUpkeepTrigger {
 
     public static AtYourUpkeepTrigger kinship(final String effect, final MagicEventAction action) {
         return new AtYourUpkeepTrigger() {
-            final MagicEventAction ACTION = new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    if (event.isYes()) {
-                        final MagicCard card = event.getRefCard();
-                        game.doAction(new RevealAction(event.getRefCard()));
-                        action.executeEvent(game, event);
-                    }
+            final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
+                if (event.isYes()) {
+                    final MagicCard card = event.getRefCard();
+                    game.doAction(new RevealAction(event.getRefCard()));
+                    action.executeEvent(game, event);
                 }
             };
 
@@ -65,7 +62,7 @@ public abstract class AtYourUpkeepTrigger extends AtUpkeepTrigger {
                                 event.getSource(),
                                 new MagicMayChoice("Reveal the top card of your library?"),
                                 card,
-                                ACTION,
+                                EVENT_ACTION,
                                 ""
                             ));
                             break;

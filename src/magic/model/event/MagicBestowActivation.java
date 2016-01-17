@@ -30,14 +30,12 @@ public class MagicBestowActivation extends MagicHandCastActivation {
     ) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final boolean valid = event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent creature) {
-                    game.doAction(new PlayCardFromStackAction(
-                        event.getCardOnStack(),
-                        creature,
-                        MagicPlayMod.BESTOWED
-                    ));
-                }
+            final boolean valid = event.processTargetPermanent(game, (final MagicPermanent creature) -> {
+                game.doAction(new PlayCardFromStackAction(
+                    event.getCardOnStack(),
+                    creature,
+                    MagicPlayMod.BESTOWED
+                ));
             });
             if (!valid) {
                 game.doAction(new PlayCardFromStackAction(event.getCardOnStack()));
@@ -68,39 +66,36 @@ public class MagicBestowActivation extends MagicHandCastActivation {
         );
     }
 
-    private final MagicEventAction EVENT_ACTION = new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicCard card = event.getCard();
-            game.doAction(new RemoveCardAction(card,MagicLocationType.OwnersHand));
+    private final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
+        final MagicCard card = event.getCard();
+        game.doAction(new RemoveCardAction(card,MagicLocationType.OwnersHand));
 
-            final MagicCardOnStack cardOnStack=new MagicCardOnStack(
-                card,
-                BestowEvent,
-                game.getPayedCost()
-            ) {
-                @Override
-                public boolean hasType(final MagicType type) {
-                    if (type == MagicType.Creature) {
-                        return false;
-                    } else {
-                        return super.hasType(type);
-                    }
+        final MagicCardOnStack cardOnStack=new MagicCardOnStack(
+            card,
+            BestowEvent,
+            game.getPayedCost()
+        ) {
+            @Override
+            public boolean hasType(final MagicType type) {
+                if (type == MagicType.Creature) {
+                    return false;
+                } else {
+                    return super.hasType(type);
                 }
+            }
 
-                @Override
-                public boolean hasSubType(final MagicSubType subType) {
-                    if (subType == MagicSubType.Aura) {
-                        return true;
-                    } else if (MagicSubType.ALL_CREATURES.contains(subType)) {
-                        return false;
-                    } else {
-                        return super.hasSubType(subType);
-                    }
+            @Override
+            public boolean hasSubType(final MagicSubType subType) {
+                if (subType == MagicSubType.Aura) {
+                    return true;
+                } else if (MagicSubType.ALL_CREATURES.contains(subType)) {
+                    return false;
+                } else {
+                    return super.hasSubType(subType);
                 }
-            };
+            }
+        };
 
-            game.doAction(new PutItemOnStackAction(cardOnStack));
-        }
+        game.doAction(new PutItemOnStackAction(cardOnStack));
     };
 }

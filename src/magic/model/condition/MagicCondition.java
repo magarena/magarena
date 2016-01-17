@@ -29,12 +29,8 @@ import java.util.LinkedList;
 
 public abstract class MagicCondition implements MagicMatchedCostEvent {
 
-    private static final MagicEventAction PLAY_ABILITY_ACTION = new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new PlayAbilityAction(event.getPermanent()));
-        }
-    };
+    private static final MagicEventAction PLAY_ABILITY_ACTION = (final MagicGame game, final MagicEvent event) ->
+        game.doAction(new PlayAbilityAction(event.getPermanent()));
 
     public static List<MagicMatchedCostEvent> build(final String costs) {
         final List<MagicMatchedCostEvent> matched = new LinkedList<MagicMatchedCostEvent>();

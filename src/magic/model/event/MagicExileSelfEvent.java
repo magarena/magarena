@@ -16,16 +16,13 @@ public class MagicExileSelfEvent extends MagicEvent {
         );
     }
 
-    private static final MagicEventAction EVENT_ACTION = new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicCard card = event.getCard();
-            final MagicLocationType fromLocation = MagicLocationType.values()[event.getRefInt()];
-            game.doAction(new ShiftCardAction(
-                card,
-                fromLocation,
-                MagicLocationType.Exile
-            ));
-        }
+    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
+        final MagicCard card = event.getCard();
+        final MagicLocationType fromLocation = MagicLocationType.values()[event.getRefInt()];
+        game.doAction(new ShiftCardAction(
+            card,
+            fromLocation,
+            MagicLocationType.Exile
+        ));
     };
 }

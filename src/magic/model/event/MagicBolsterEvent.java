@@ -14,19 +14,14 @@ import magic.model.target.Operator;
 
 public class MagicBolsterEvent extends MagicEvent {
 
-    public static final MagicEventAction ACTION = new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game, new MagicPermanentAction() {
-                public void doAction(final MagicPermanent creature) {
-                    game.doAction(new ChangeCountersAction(
-                        creature,
-                        MagicCounterType.PlusOne,
-                        event.getRefInt()
-                    ));
-                }
-            });
-        }
+    public static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
+        event.processTargetPermanent(game, (final MagicPermanent creature) -> {
+            game.doAction(new ChangeCountersAction(
+                creature,
+                MagicCounterType.PlusOne,
+                event.getRefInt()
+            ));
+        });
     };
 
     public MagicBolsterEvent(final MagicSource source, final MagicPlayer player, final int amount, final int minToughness) {
@@ -44,7 +39,7 @@ public class MagicBolsterEvent extends MagicEvent {
                 "a creature with least toughness among creatures you control"
             ),
             amount,
-            ACTION,
+            EVENT_ACTION,
             "PN puts RN +1/+1 counters on creature$ with least toughness among creatures he or she control."
         );
     }

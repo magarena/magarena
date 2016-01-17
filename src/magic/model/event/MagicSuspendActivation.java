@@ -59,13 +59,10 @@ public class MagicSuspendActivation extends MagicCardAbilityActivation {
     public MagicEvent getEvent(final MagicSource source) {
         return new MagicEvent(
             source,
-            new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final MagicCard card = event.getCard();
-                    game.doAction(new ShiftCardAction(card, MagicLocationType.OwnersHand, MagicLocationType.Exile));
-                    game.doAction(new ChangeCountersAction(card, MagicCounterType.Time, amount));
-                }
+            (final MagicGame game, final MagicEvent event) -> {
+                final MagicCard card = event.getCard();
+                game.doAction(new ShiftCardAction(card, MagicLocationType.OwnersHand, MagicLocationType.Exile));
+                game.doAction(new ChangeCountersAction(card, MagicCounterType.Time, amount));
             },
             "PN suspends SN. PN exiles SN, with "+amount+" time counters on it."
         );

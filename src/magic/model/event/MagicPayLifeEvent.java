@@ -11,6 +11,9 @@ public class MagicPayLifeEvent extends MagicEvent {
 
     private final MagicCondition cond;
 
+    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) ->
+        game.doAction(new ChangeLifeAction(event.getPlayer(), -event.getRefInt()));
+
     public MagicPayLifeEvent(final MagicSource source,final int amount) {
         this(source, source.getController(), amount);
     }
@@ -19,13 +22,9 @@ public class MagicPayLifeEvent extends MagicEvent {
         super(
             source,
             player,
-            new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new ChangeLifeAction(event.getPlayer(),-amount));
-                }
-            },
-            "Pay "+amount+" life."
+            amount,
+            EVENT_ACTION,
+            "Pay RN life."
         );
         cond = MagicConditionFactory.YouLifeAtLeast(amount);
     }

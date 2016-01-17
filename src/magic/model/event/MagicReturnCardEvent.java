@@ -21,18 +21,13 @@ public class MagicReturnCardEvent extends MagicEvent {
         );
     }
 
-    private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetCard(game,new MagicCardAction() {
-                public void doAction(final MagicCard card) {
-                    game.doAction(new DiscardCardAction(
-                        event.getPlayer(),
-                        card,
-                        MagicLocationType.TopOfOwnersLibrary
-                    ));
-                }
-            });
-        }
+    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
+        event.processTargetCard(game, (final MagicCard card) -> {
+            game.doAction(new DiscardCardAction(
+                event.getPlayer(),
+                card,
+                MagicLocationType.TopOfOwnersLibrary
+            ));
+        });
     };
 }

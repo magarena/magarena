@@ -38,21 +38,19 @@ public class DevourTrigger extends EntersBattlefieldTrigger {
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         if (event.isYes()) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent creature) {
-                    final MagicPermanent permanent = event.getPermanent();
-                    game.doAction(new SacrificeAction(creature));
-                    game.doAction(new ChangeCountersAction(
-                        permanent,
-                        MagicCounterType.PlusOne,
-                        amount
-                    ));
-                    game.addEvent(executeTrigger(
-                        game,
-                        permanent,
-                        MagicPayedCost.NO_COST
-                    ));
-                }
+            event.processTargetPermanent(game, (final MagicPermanent creature) -> {
+                final MagicPermanent permanent = event.getPermanent();
+                game.doAction(new SacrificeAction(creature));
+                game.doAction(new ChangeCountersAction(
+                    permanent,
+                    MagicCounterType.PlusOne,
+                    amount
+                ));
+                game.addEvent(executeTrigger(
+                    game,
+                    permanent,
+                    MagicPayedCost.NO_COST
+                ));
             });
         }
     }

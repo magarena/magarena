@@ -67,21 +67,18 @@ public class MadnessTrigger extends ThisPutIntoGraveyardTrigger {
         }
     }
 
-    private MagicEventAction EVENT_ACTION = new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicCard card = event.getCard();
-            if (card.isInExile()) {
-                if (event.isYes()) {
-                    game.doAction(CastCardAction.WithoutManaCost(
-                        event.getPlayer(),
-                        card,
-                        MagicLocationType.Exile,
-                        MagicLocationType.Graveyard
-                    ));
-                } else {
-                    game.doAction(new ShiftCardAction(event.getCard(),MagicLocationType.Exile,MagicLocationType.Graveyard));
-                }
+    private MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
+        final MagicCard card = event.getCard();
+        if (card.isInExile()) {
+            if (event.isYes()) {
+                game.doAction(CastCardAction.WithoutManaCost(
+                    event.getPlayer(),
+                    card,
+                    MagicLocationType.Exile,
+                    MagicLocationType.Graveyard
+                ));
+            } else {
+                game.doAction(new ShiftCardAction(event.getCard(),MagicLocationType.Exile,MagicLocationType.Graveyard));
             }
         }
     };

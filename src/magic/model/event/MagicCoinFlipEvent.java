@@ -34,29 +34,26 @@ public class MagicCoinFlipEvent extends MagicEvent {
     }
 
     public static final MagicEventAction EventAction(final MagicEventAction winAction, final MagicEventAction loseAction) {
-        return new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                //True = Heads
-                final MagicPlayer player = event.getPlayer();
-                boolean coinFace = (player.getStateId() & 1) == 0;
-                boolean playerFace = event.isMode(1);
-                if (coinFace) {
-                    game.logAppendMessage(player, "Coin landed heads.");
-                    //Heads trigger
-                } else {
-                    game.logAppendMessage(player, "Coin landed tails.");
-                    //Tails trigger
-                }
-                if (playerFace == coinFace) {
-                    game.logAppendMessage(player, player.getName() + " wins.");
-                    winAction.executeEvent(game, event);
-                    //Win trigger
-                } else {
-                    game.logAppendMessage(player, player.getName() + " loses.");
-                    loseAction.executeEvent(game, event);
-                    //Lose trigger
-                }
+        return (final MagicGame game, final MagicEvent event) -> {
+            //True = Heads
+            final MagicPlayer player = event.getPlayer();
+            boolean coinFace = (player.getStateId() & 1) == 0;
+            boolean playerFace = event.isMode(1);
+            if (coinFace) {
+                game.logAppendMessage(player, "Coin landed heads.");
+                //Heads trigger
+            } else {
+                game.logAppendMessage(player, "Coin landed tails.");
+                //Tails trigger
+            }
+            if (playerFace == coinFace) {
+                game.logAppendMessage(player, player.getName() + " wins.");
+                winAction.executeEvent(game, event);
+                //Win trigger
+            } else {
+                game.logAppendMessage(player, player.getName() + " loses.");
+                loseAction.executeEvent(game, event);
+                //Lose trigger
             }
         };
     }

@@ -19,24 +19,21 @@ public class MagicPutCardOnStackEvent extends MagicEvent {
         );
     }
 
-    private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicCardOnStack cardOnStack = new MagicCardOnStack(
-                event.getCard(),
-                event.getPlayer(),
-                game.getPayedCost()
-            );
-            final int locations = event.getRefInt();
-            final MagicLocationType from = MagicLocationType.values()[locations / 10];
-            final MagicLocationType to = MagicLocationType.values()[locations % 10];
-            cardOnStack.setFromLocation(from);
-            cardOnStack.setMoveLocation(to);
-            final MagicCard card = event.getCard();
-            if (card.isToken() == false) {
-                game.doAction(new RemoveCardAction(card, from));
-            }
-            game.doAction(new PutItemOnStackAction(cardOnStack));
+    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
+        final MagicCardOnStack cardOnStack = new MagicCardOnStack(
+            event.getCard(),
+            event.getPlayer(),
+            game.getPayedCost()
+        );
+        final int locations = event.getRefInt();
+        final MagicLocationType from = MagicLocationType.values()[locations / 10];
+        final MagicLocationType to = MagicLocationType.values()[locations % 10];
+        cardOnStack.setFromLocation(from);
+        cardOnStack.setMoveLocation(to);
+        final MagicCard card = event.getCard();
+        if (card.isToken() == false) {
+            game.doAction(new RemoveCardAction(card, from));
         }
+        game.doAction(new PutItemOnStackAction(cardOnStack));
     };
 }

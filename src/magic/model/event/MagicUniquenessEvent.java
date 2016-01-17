@@ -28,25 +28,20 @@ public class MagicUniquenessEvent extends MagicEvent {
         );
     }
 
-    private static final MagicEventAction EVENT_ACTION = new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent permanent) {
-                    final Collection<MagicPermanent> targets = event.getTargetChoice().getPermanentFilter().filter(event);
-                    for (final MagicPermanent target : targets) {
-                        if (target != permanent) {
-                            game.logAppendMessage(
-                                event.getPlayer(),
-                                String.format("Put %s into its owner's graveyard (Uniqueness rule).",
-                                    MagicMessage.getCardToken(target)
-                                )
-                            );
-                            game.doAction(new RemoveFromPlayAction(target,MagicLocationType.Graveyard));
-                        }
-                    }
+    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
+        event.processTargetPermanent(game, (final MagicPermanent permanent) -> {
+            final Collection<MagicPermanent> targets = event.getTargetChoice().getPermanentFilter().filter(event);
+            for (final MagicPermanent target : targets) {
+                if (target != permanent) {
+                    game.logAppendMessage(
+                        event.getPlayer(),
+                        String.format("Put %s into its owner's graveyard (Uniqueness rule).",
+                            MagicMessage.getCardToken(target)
+                        )
+                    );
+                    game.doAction(new RemoveFromPlayAction(target,MagicLocationType.Graveyard));
                 }
-            });
-        }
+            }
+        });
     };
 }

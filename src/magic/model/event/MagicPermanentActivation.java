@@ -76,18 +76,15 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
         return this;
     }
 
-    private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
-        @Override
-        public final void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPermanentActivation permanentActivation = event.getRefPermanentActivation();
-            final MagicPermanent permanent = event.getPermanent();
-            final MagicAbilityOnStack abilityOnStack = new MagicAbilityOnStack(
-                permanentActivation,
-                permanent,
-                game.getPayedCost()
-            );
-            game.doAction(new PutItemOnStackAction(abilityOnStack));
-        }
+    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
+        final MagicPermanentActivation permanentActivation = event.getRefPermanentActivation();
+        final MagicPermanent permanent = event.getPermanent();
+        final MagicAbilityOnStack abilityOnStack = new MagicAbilityOnStack(
+            permanentActivation,
+            permanent,
+            game.getPayedCost()
+        );
+        game.doAction(new PutItemOnStackAction(abilityOnStack));
     };
 
     @Override

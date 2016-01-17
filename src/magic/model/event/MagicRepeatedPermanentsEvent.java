@@ -15,14 +15,11 @@ public class MagicRepeatedPermanentsEvent extends MagicEvent {
             source,
             targetChoice,
             amt - 1,
-            new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    final MagicEvent ev = factory.getEvent(event);
-                    ev.executeEvent(game, event.getChosen());
-                    for (int i = 0; i < event.getRefInt(); i++) {
-                        game.addFirstEvent(ev);
-                    }
+            (final MagicGame game, final MagicEvent event) -> {
+                final MagicEvent ev = factory.getEvent(event);
+                ev.executeEvent(game, event.getChosen());
+                for (int i = 0; i < event.getRefInt(); i++) {
+                    game.addFirstEvent(ev);
                 }
             },
             factory.getEvent(source, targetChoice).getDescription()

@@ -75,41 +75,35 @@ public class CascadeTrigger extends ThisSpellIsCastTrigger {
         }
     }
 
-    private final MagicEventAction CAST_ACTION = new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicCardList exiled = new MagicCardList(event.getRefCardList());
-            if (event.isYes()) {
-                final MagicCard card = exiled.removeCardAtTop();
-                game.doAction(CastCardAction.WithoutManaCost(
-                    event.getPlayer(),
-                    card,
-                    MagicLocationType.Exile,
-                    MagicLocationType.Graveyard
-                ));
-            }
-            game.addEvent(new MagicEvent(
-                event.getSource(),
-                event.getPlayer(),
-                exiled,
-                RESTORE_CARDS,
-                ""
+    private final MagicEventAction RESTORE_CARDS = (final MagicGame game, final MagicEvent event) -> {
+        final MagicCardList cards = event.getRefCardList();
+        cards.shuffle();
+        for (final MagicCard card : cards) {
+            game.doAction(new ShiftCardAction(
+                card,
+                MagicLocationType.Exile,
+                MagicLocationType.BottomOfOwnersLibrary
             ));
         }
     };
 
-    private final MagicEventAction RESTORE_CARDS = new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicCardList cards = event.getRefCardList();
-            cards.shuffle();
-            for (final MagicCard card : cards) {
-                game.doAction(new ShiftCardAction(
-                    card,
-                    MagicLocationType.Exile,
-                    MagicLocationType.BottomOfOwnersLibrary
-                ));
-            }
+    private final MagicEventAction CAST_ACTION = (final MagicGame game, final MagicEvent event) -> {
+        final MagicCardList exiled = new MagicCardList(event.getRefCardList());
+        if (event.isYes()) {
+            final MagicCard card = exiled.removeCardAtTop();
+            game.doAction(CastCardAction.WithoutManaCost(
+                event.getPlayer(),
+                card,
+                MagicLocationType.Exile,
+                MagicLocationType.Graveyard
+            ));
         }
+        game.addEvent(new MagicEvent(
+            event.getSource(),
+            event.getPlayer(),
+            exiled,
+            RESTORE_CARDS,
+            ""
+        ));
     };
 }

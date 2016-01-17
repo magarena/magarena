@@ -14,15 +14,12 @@ public class MagicRemoveCounterEvent extends MagicEvent {
     public MagicRemoveCounterEvent(final MagicPermanent permanent,final MagicCounterType counterType,final int amount) {
         super(
             permanent,
-            new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.doAction(new ChangeCountersAction(
-                        event.getPermanent(),
-                        counterType,
-                        -amount
-                    ));
-                }
+            (final MagicGame game, final MagicEvent event) -> {
+                game.doAction(new ChangeCountersAction(
+                    event.getPermanent(),
+                    counterType,
+                    -amount
+                ));
             },
             genDescription(permanent,counterType,amount)
         );

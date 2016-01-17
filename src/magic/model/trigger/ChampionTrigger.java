@@ -72,12 +72,10 @@ public class ChampionTrigger extends EntersBattlefieldTrigger {
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         final MagicPermanent permanent = event.getPermanent();
         if (event.isYes()) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent creature) {
-                    final ExileLinkAction act = new ExileLinkAction(permanent,creature);
-                    game.doAction(act);
-                    game.executeTrigger(MagicTriggerType.WhenChampioned, act);
-                }
+            event.processTargetPermanent(game, (final MagicPermanent creature) -> {
+                final ExileLinkAction act = new ExileLinkAction(permanent,creature);
+                game.doAction(act);
+                game.executeTrigger(MagicTriggerType.WhenChampioned, act);
             });
         } else {
             game.doAction(new SacrificeAction(permanent));

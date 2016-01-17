@@ -1489,14 +1489,12 @@ public enum MagicRuleEventAction {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final List<MagicPlayMod> mods = ARG.mods(matcher);
-            return (game, event) -> event.processTargetCard(game, new MagicCardAction() {
-                public void doAction(final MagicCard card) {
-                    game.doAction(new ReanimateAction(
-                        card,
-                        event.getPlayer(),
-                        mods
-                    ));
-                }
+            return (game, event) -> event.processTargetCard(game, (final MagicCard card) -> {
+                game.doAction(new ReanimateAction(
+                    card,
+                    event.getPlayer(),
+                    mods
+                ));
             });
         }
     },
@@ -1793,11 +1791,8 @@ public enum MagicRuleEventAction {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = Integer.parseInt(matcher.group("amount"));
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    game.addEvent(new MagicScryXEvent(event.getSource(),event.getPlayer(),amount));
-                }
+            return (final MagicGame game, final MagicEvent event) -> {
+                game.addEvent(new MagicScryXEvent(event.getSource(),event.getPlayer(),amount));
             };
         }
     },
@@ -1809,15 +1804,10 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            return new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    event.processTargetPlayer(game,new MagicPlayerAction() {
-                        public void doAction(final MagicPlayer player) {
-                            game.doAction(new MagicRevealAction(player.getHand()));
-                        }
-                    });
-                }
+            return (final MagicGame game, final MagicEvent event) -> {
+                event.processTargetPlayer(game, (final MagicPlayer player) -> {
+                    game.doAction(new MagicRevealAction(player.getHand()));
+                });
             };
         }
     },
@@ -1950,20 +1940,16 @@ public enum MagicRuleEventAction {
         new MagicNoCombatTargetPicker(true, true, false),
         MagicTiming.FirstMain,
         "Detain",
-        (game, event) -> event.processTargetPermanent(game, new MagicPermanentAction() {
-            public void doAction(final MagicPermanent creature) {
-                game.doAction(new DetainAction(event.getPlayer(), creature));
-            }
+        (game, event) -> event.processTargetPermanent(game, (final MagicPermanent creature) -> {
+            game.doAction(new DetainAction(event.getPlayer(), creature));
         })
     ),
     CopySpell(
         "copy " + ARG.CHOICE + "\\. You may choose new targets for (the|that) copy(\\.|,)?",
         MagicTiming.Spell,
         "Copy",
-        (game, event) -> event.processTargetCardOnStack(game, new MagicCardOnStackAction() {
-            public void doAction(final MagicCardOnStack item) {
-                game.doAction(new CopyCardOnStackAction(event.getPlayer(), item));
-            }
+        (game, event) -> event.processTargetCardOnStack(game, (final MagicCardOnStack item) -> {
+            game.doAction(new CopyCardOnStackAction(event.getPlayer(), item));
         })
     ),
     Monstrosity(

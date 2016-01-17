@@ -24,15 +24,12 @@ public class MagicClashEvent extends MagicEvent {
     }
 
     public static final MagicEventAction EventAction(final MagicEventAction clashAction) {
-        return  new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                final MagicPlayer winner = executeClash(game, event);
-                if (winner == event.getPlayer()) {
-                    clashAction.executeEvent(game, event);
-                };
-                game.executeTrigger(MagicTriggerType.WhenClash, winner);
-            }
+        return (final MagicGame game, final MagicEvent event) -> {
+            final MagicPlayer winner = executeClash(game, event);
+            if (winner == event.getPlayer()) {
+                clashAction.executeEvent(game, event);
+            };
+            game.executeTrigger(MagicTriggerType.WhenClash, winner);
         };
     }
 

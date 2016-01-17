@@ -29,13 +29,10 @@ public class MagicMillEvent extends MagicEvent{
         cond = MagicConditionFactory.LibraryAtLeast(amount);
     }
 
-    private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicCardList exile = new MagicCardList(event.getPlayer().getLibrary().getCardsFromTop(event.getRefInt()));
-            for (final MagicCard card : exile) {
-                game.doAction(new ShiftCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Graveyard));
-            }
+    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
+        final MagicCardList exile = new MagicCardList(event.getPlayer().getLibrary().getCardsFromTop(event.getRefInt()));
+        for (final MagicCard card : exile) {
+            game.doAction(new ShiftCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Graveyard));
         }
     };
 

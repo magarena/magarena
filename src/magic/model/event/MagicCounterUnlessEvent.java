@@ -25,15 +25,12 @@ public class MagicCounterUnlessEvent extends MagicEvent {
                 new MagicPayManaCostChoice(cost)
             ),
             itemOnStack,
-            new MagicEventAction() {
-                @Override
-                public void executeEvent(final MagicGame game, final MagicEvent event) {
-                    if (event.isNo()) {
-                        game.doAction(new CounterItemOnStackAction(
-                            event.getRefItemOnStack(),
-                            toLocation
-                        ));
-                    }
+            (final MagicGame game, final MagicEvent event) -> {
+                if (event.isNo()) {
+                    game.doAction(new CounterItemOnStackAction(
+                        event.getRefItemOnStack(),
+                        toLocation
+                    ));
                 }
             },
             String.format("You may$ pay %s$. If you don't, counter %s.",

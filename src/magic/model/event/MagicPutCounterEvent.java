@@ -27,19 +27,14 @@ public class MagicPutCounterEvent extends MagicEvent {
     }
 
     private static final MagicEventAction EventActionTarget(final MagicCounterType type) {
-        return new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent creature) {
-                        game.doAction(new ChangeCountersAction(
-                            creature,
-                            type,
-                            event.getRefInt()
-                        ));
-                    }
-                });
-            }
+        return (final MagicGame game, final MagicEvent event) -> {
+            event.processTargetPermanent(game, (final MagicPermanent creature) -> {
+                game.doAction(new ChangeCountersAction(
+                    creature,
+                    type,
+                    event.getRefInt()
+                ));
+            });
         };
     }
 
@@ -53,15 +48,12 @@ public class MagicPutCounterEvent extends MagicEvent {
     }
 
     private static final MagicEventAction EventAction(final MagicCounterType type) {
-        return new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                game.doAction(new ChangeCountersAction(
-                    event.getPermanent(),
-                    type,
-                    event.getRefInt()
-                ));
-            }
+        return (final MagicGame game, final MagicEvent event) -> {
+            game.doAction(new ChangeCountersAction(
+                event.getPermanent(),
+                type,
+                event.getRefInt()
+            ));
         };
     }
 }

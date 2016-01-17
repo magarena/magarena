@@ -27,18 +27,14 @@ public class MagicExileCardEvent extends MagicEvent {
         );
     }
 
-    private static final MagicEventAction EVENT_ACTION = new MagicEventAction() {
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetCard(game,new MagicCardAction() {
-                public void doAction(final MagicCard card) {
-                    final MagicLocationType fromLocation=card.getLocation();
-                    game.doAction(new ShiftCardAction(
-                        card,
-                        fromLocation,
-                        MagicLocationType.Exile
-                    ));
-                }
-            });
-        }
+    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
+        event.processTargetCard(game, (final MagicCard card) -> {
+            final MagicLocationType fromLocation=card.getLocation();
+            game.doAction(new ShiftCardAction(
+                card,
+                fromLocation,
+                MagicLocationType.Exile
+            ));
+        });
     };
 }

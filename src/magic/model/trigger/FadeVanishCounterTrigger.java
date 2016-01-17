@@ -33,70 +33,55 @@ public class FadeVanishCounterTrigger extends AtUpkeepTrigger {
             sacrifice = amount == 0;
             return sacrifice ?
                 new MagicEvent(
-                        permanent,
-                        SAC_PERM,
-                        "PN sacrifices SN."
-                    ):
+                    permanent,
+                    SAC_PERM,
+                    "PN sacrifices SN."
+                ):
                 new MagicEvent(
-                        permanent,
-                        REMOVE_FADE_COUNTER,
-                        "PN removes a fade counter from SN."
-                    );
+                    permanent,
+                    REMOVE_FADE_COUNTER,
+                    "PN removes a fade counter from SN."
+                );
         } else if (counterType == MagicCounterType.Time){
             sacrifice = amount == 1;
             return sacrifice ?
                 new MagicEvent(
-                        permanent,
-                        REMOVE_AND_SAC,
-                        "PN removes a time counter from SN. PN sacrifices SN."
-                    ):
+                    permanent,
+                    REMOVE_AND_SAC,
+                    "PN removes a time counter from SN. PN sacrifices SN."
+                ):
                 new MagicEvent(
-                        permanent,
-                        REMOVE_TIME_COUNTER,
-                        "PN removes a time counter from SN."
-                    );
+                    permanent,
+                    REMOVE_TIME_COUNTER,
+                    "PN removes a time counter from SN."
+                );
         }
         return MagicEvent.NONE;
     }
 
-    private static final MagicEventAction SAC_PERM = new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new SacrificeAction(event.getPermanent()));
-        }
+    private static final MagicEventAction SAC_PERM = (final MagicGame game, final MagicEvent event) ->
+        game.doAction(new SacrificeAction(event.getPermanent()));
+
+    private static final MagicEventAction REMOVE_TIME_COUNTER = (final MagicGame game, final MagicEvent event) ->
+        game.doAction(new ChangeCountersAction(
+            event.getPermanent(),
+            MagicCounterType.Time,
+            -1
+        ));
+
+    private static final MagicEventAction REMOVE_AND_SAC = (final MagicGame game, final MagicEvent event) -> {
+        game.doAction(new ChangeCountersAction(
+            event.getPermanent(),
+            MagicCounterType.Time,
+            -1
+        ));
+        game.doAction(new SacrificeAction(event.getPermanent()));
     };
 
-    private static final MagicEventAction REMOVE_TIME_COUNTER = new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new ChangeCountersAction(
-                event.getPermanent(),
-                MagicCounterType.Time,
-                -1
-            ));
-        }
-    };
-
-    private static final MagicEventAction REMOVE_AND_SAC = new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new ChangeCountersAction(
-                event.getPermanent(),
-                MagicCounterType.Time,
-                -1
-            ));
-            game.doAction(new SacrificeAction(event.getPermanent()));
-        }
-    };
-
-    private static final MagicEventAction REMOVE_FADE_COUNTER = new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new ChangeCountersAction(
-                event.getPermanent(),
-                MagicCounterType.Fade,
-                -1
-            ));
-        }
-    };
+    private static final MagicEventAction REMOVE_FADE_COUNTER = (final MagicGame game, final MagicEvent event) ->
+        game.doAction(new ChangeCountersAction(
+            event.getPermanent(),
+            MagicCounterType.Fade,
+            -1
+        ));
 }

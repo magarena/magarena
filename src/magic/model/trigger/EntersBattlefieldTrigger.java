@@ -81,16 +81,11 @@ public abstract class EntersBattlefieldTrigger extends MagicTrigger<MagicPayedCo
     };
 
     public static final EntersBattlefieldTrigger Exploit = new EntersBattlefieldTrigger() {
-        private final MagicEventAction EVENT_ACTION=new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                event.processTargetPermanent(game,new MagicPermanentAction() {
-                    public void doAction(final MagicPermanent permanent) {
-                        game.doAction(ChangeStateAction.Set(event.getPermanent(), MagicPermanentState.Exploit));
-                        game.doAction(new SacrificeAction(permanent));
-                    }
-                });
-            }
+        private final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
+            event.processTargetPermanent(game, (final MagicPermanent permanent) -> {
+                game.doAction(ChangeStateAction.Set(event.getPermanent(), MagicPermanentState.Exploit));
+                game.doAction(new SacrificeAction(permanent));
+            });
         };
 
         @Override

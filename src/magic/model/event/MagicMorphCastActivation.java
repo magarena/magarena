@@ -107,13 +107,10 @@ public class MagicMorphCastActivation extends MagicHandCastActivation {
         };
     }
 
-    private final MagicEventAction EVENT_ACTION = new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicCard card = event.getCard();
-            game.doAction(new RemoveCardAction(card,MagicLocationType.OwnersHand));
-            game.doAction(new PutItemOnStackAction(genMorphSpell(card)));
-        }
+    private final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
+        final MagicCard card = event.getCard();
+        game.doAction(new RemoveCardAction(card,MagicLocationType.OwnersHand));
+        game.doAction(new PutItemOnStackAction(genMorphSpell(card)));
     };
 
     @Override

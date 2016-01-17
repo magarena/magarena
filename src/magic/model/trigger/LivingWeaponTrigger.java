@@ -37,15 +37,12 @@ public class LivingWeaponTrigger extends EntersBattlefieldTrigger {
         game.doAction(new PlayTokenAction(
             event.getPlayer(),
             CardDefinitions.getToken("0/0 black Germ creature token"),
-            new MagicPermanentAction() {
-                @Override
-                public void doAction(final MagicPermanent perm) {
-                    final MagicGame G = perm.getGame();
-                    G.doAction(new AttachAction(
-                        sn.map(G),
-                        perm
-                    ));
-                }
+            (final MagicPermanent perm) -> {
+                final MagicGame G = perm.getGame();
+                G.doAction(new AttachAction(
+                    sn.map(G),
+                    perm
+                ));
             }
         ));
     }

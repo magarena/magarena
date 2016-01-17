@@ -70,27 +70,24 @@ public class MagicHandCastActivation extends MagicActivation<MagicCard> implemen
     private final MagicEventAction EVENT_ACTION = genPlayEventAction(MagicLocationType.OwnersHand);
 
     protected MagicEventAction genPlayEventAction(final MagicLocationType fromLocation) {
-        return new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                final MagicCard card = event.getCard();
-                if (card.getCardDefinition().isLand()) {
-                    game.incLandsPlayed();
-                }
+        return (final MagicGame game, final MagicEvent event) -> {
+            final MagicCard card = event.getCard();
+            if (card.getCardDefinition().isLand()) {
+                game.incLandsPlayed();
+            }
 
-                game.doAction(new RemoveCardAction(card, fromLocation));
+            game.doAction(new RemoveCardAction(card, fromLocation));
 
-                if (usesStack) {
-                    final MagicCardOnStack cardOnStack=new MagicCardOnStack(
-                        card,
-                        MagicHandCastActivation.this,
-                        game.getPayedCost()
-                    );
-                    cardOnStack.setFromLocation(fromLocation);
-                    game.doAction(new PutItemOnStackAction(cardOnStack));
-                } else {
-                    game.doAction(new PlayCardAction(card,card.getController()));
-                }
+            if (usesStack) {
+                final MagicCardOnStack cardOnStack=new MagicCardOnStack(
+                    card,
+                    MagicHandCastActivation.this,
+                    game.getPayedCost()
+                );
+                cardOnStack.setFromLocation(fromLocation);
+                game.doAction(new PutItemOnStackAction(cardOnStack));
+            } else {
+                game.doAction(new PlayCardAction(card,card.getController()));
             }
         };
     }
@@ -170,12 +167,9 @@ public class MagicHandCastActivation extends MagicActivation<MagicCard> implemen
                 final MagicEvent ev = cardDef.getCardEvent().getEvent(cardOnStack, payedCost);
                 final MagicEventAction effect = ev.getEventAction();
 
-                final MagicEventAction awaken = new MagicEventAction() {
-                    @Override
-                    public void executeEvent(final MagicGame game, final MagicEvent event) {
-                        ev.getEventAction().executeEvent(game, event);
-                        game.addEvent(new MagicAwakenEvent(event.getSource(), event.getPlayer(), n));
-                    }
+                final MagicEventAction awaken = (final MagicGame game, final MagicEvent event) -> {
+                    ev.getEventAction().executeEvent(game, event);
+                    game.addEvent(new MagicAwakenEvent(event.getSource(), event.getPlayer(), n));
                 };
                 return new MagicEvent(
                     ev.getSource(),

@@ -19,13 +19,10 @@ public class MagicDeclareAttackersEvent extends MagicEvent {
         );
     }
 
-    private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPlayer player = event.getPlayer();
-            final MagicDeclareAttackersResult result = event.getAttackers();
-            game.doAction(new DeclareAttackersAction(player,result));
-            game.logAttackers(player,result);
-        }
+    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
+        final MagicPlayer player = event.getPlayer();
+        final MagicDeclareAttackersResult result = event.getAttackers();
+        game.doAction(new DeclareAttackersAction(player,result));
+        game.logAttackers(player,result);
     };
 }

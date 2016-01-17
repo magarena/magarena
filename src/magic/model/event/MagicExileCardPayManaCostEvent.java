@@ -27,19 +27,14 @@ public class MagicExileCardPayManaCostEvent extends MagicEvent {
         );
     }
 
-    private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetCard(game,new MagicCardAction() {
-                public void doAction(final MagicCard card) {
-                    game.doAction(new ShiftCardAction(
-                        card,
-                        MagicLocationType.Graveyard,
-                        MagicLocationType.Exile
-                    ));
-                    game.addFirstEvent(new MagicPayManaCostEvent(event.getSource(), card.getCost()));
-                }
-            });
-        }
+    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
+        event.processTargetCard(game, (final MagicCard card) -> {
+            game.doAction(new ShiftCardAction(
+                card,
+                MagicLocationType.Graveyard,
+                MagicLocationType.Exile
+            ));
+            game.addFirstEvent(new MagicPayManaCostEvent(event.getSource(), card.getCost()));
+        });
     };
 }

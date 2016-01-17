@@ -19,16 +19,13 @@ public class MagicTapOrUntapEvent extends MagicEvent {
         );
     }
 
-    private static final MagicEventAction EVENT_ACTION=new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicPermanent permanent = event.getRefPermanent();
-            if (event.isYes()) {
-                if (permanent.isTapped()) {
-                    game.doAction(new UntapAction(permanent));
-                } else {
-                    game.doAction(new TapAction(permanent));
-                }
+    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
+        final MagicPermanent permanent = event.getRefPermanent();
+        if (event.isYes()) {
+            if (permanent.isTapped()) {
+                game.doAction(new UntapAction(permanent));
+            } else {
+                game.doAction(new TapAction(permanent));
             }
         }
     };

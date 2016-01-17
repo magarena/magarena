@@ -15,19 +15,14 @@ public class MagicPopulateEvent extends MagicEvent {
             source,
             MagicTargetChoice.CREATURE_TOKEN_YOU_CONTROL,
             MagicCopyPermanentPicker.create(),
-            EA,
+            EVENT_ACTION,
             "Put a token onto the battlefield that's a copy of a creature token$ you control."
         );
     }
 
-    private static final MagicEventAction EA = new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game,new MagicPermanentAction() {
-                public void doAction(final MagicPermanent creature) {
-                    game.doAction(new PlayTokenAction(event.getPlayer(), creature.getCardDefinition()));
-                }
-            });
-        }
+    private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
+        event.processTargetPermanent(game, (final MagicPermanent creature) -> {
+            game.doAction(new PlayTokenAction(event.getPlayer(), creature.getCardDefinition()));
+        });
     };
 }

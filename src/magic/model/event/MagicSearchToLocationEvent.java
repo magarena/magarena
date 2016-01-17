@@ -44,43 +44,36 @@ public class MagicSearchToLocationEvent extends MagicEvent {
     private static final MagicEventAction ACTION_WITHOUT_REVEAL = genEventAction(false);
 
     private static final MagicEventAction genEventAction(final boolean revealed) {
-        return new MagicEventAction() {
-            @Override
-            public void executeEvent(final MagicGame game, final MagicEvent event) {
-                final MagicLocationType toLocation = MagicLocationType.values()[event.getRefInt()];
+        return (final MagicGame game, final MagicEvent event) -> {
+            final MagicLocationType toLocation = MagicLocationType.values()[event.getRefInt()];
 
-                // choice could be MagicMayChoice or MagicTargetChoice or MagicFromCardListChoice
-                if (event.isNo()) {
-                    // do nothing
-                } else if (event.getChosen()[0] instanceof MagicCardChoiceResult) {
-                    game.doAction(new ShuffleLibraryAction(event.getPlayer()));
-                    event.processChosenCards(game, new MagicCardAction() {
-                        public void doAction(final MagicCard card) {
-                            if (revealed) {
-                                game.logAppendMessage(
-                                    event.getPlayer(),
-                                    String.format("Found (%s).", MagicMessage.getCardToken(card))
-                                );
-                                game.doAction(new AIRevealAction(card));
-                            }
-                            game.doAction(new ShiftCardAction(card,MagicLocationType.OwnersLibrary, toLocation));
-                        }
-                    });
-                } else {
-                    game.doAction(new ShuffleLibraryAction(event.getPlayer()));
-                    event.processTargetCard(game, new MagicCardAction() {
-                        public void doAction(final MagicCard card) {
-                            if (revealed) {
-                                game.logAppendMessage(
-                                    event.getPlayer(),
-                                    String.format("Found (%s).", MagicMessage.getCardToken(card))
-                                );
-                                game.doAction(new AIRevealAction(card));
-                            }
-                            game.doAction(new ShiftCardAction(card, MagicLocationType.OwnersLibrary, toLocation));
-                        }
-                    });
-                }
+            // choice could be MagicMayChoice or MagicTargetChoice or MagicFromCardListChoice
+            if (event.isNo()) {
+                // do nothing
+            } else if (event.getChosen()[0] instanceof MagicCardChoiceResult) {
+                game.doAction(new ShuffleLibraryAction(event.getPlayer()));
+                event.processChosenCards(game, (final MagicCard card) -> {
+                    if (revealed) {
+                        game.logAppendMessage(
+                            event.getPlayer(),
+                            String.format("Found (%s).", MagicMessage.getCardToken(card))
+                        );
+                        game.doAction(new AIRevealAction(card));
+                    }
+                    game.doAction(new ShiftCardAction(card,MagicLocationType.OwnersLibrary, toLocation));
+                });
+            } else {
+                game.doAction(new ShuffleLibraryAction(event.getPlayer()));
+                event.processTargetCard(game, (final MagicCard card) -> {
+                    if (revealed) {
+                        game.logAppendMessage(
+                            event.getPlayer(),
+                            String.format("Found (%s).", MagicMessage.getCardToken(card))
+                        );
+                        game.doAction(new AIRevealAction(card));
+                    }
+                    game.doAction(new ShiftCardAction(card, MagicLocationType.OwnersLibrary, toLocation));
+                });
             }
         };
     }
