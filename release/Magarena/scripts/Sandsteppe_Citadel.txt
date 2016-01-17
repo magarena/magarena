@@ -3,7 +3,7 @@ image=http://magiccards.info/scans/en/ktk/241.jpg
 value=3.750
 rarity=U
 type=Land
-mana=w3b3g3
+mana=w2b2g2
 ability=SN enters the battlefield tapped.;\
         {T}: Add {W} or {B} or {G} to your mana pool.
 timing=tapland

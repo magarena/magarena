@@ -3,7 +3,7 @@ image=http://magiccards.info/scans/en/c13/299.jpg
 value=3.958
 rarity=U
 type=Land
-mana=r3g3w3
+mana=r2g2w2
 ability={T}: Add {R} or {G} or {W} to your mana pool.;\
         SN enters the battlefield tapped.
 timing=tapland
