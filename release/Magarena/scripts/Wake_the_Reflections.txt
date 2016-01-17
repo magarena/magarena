@@ -4,6 +4,7 @@ value=3.510
 rarity=C
 type=Sorcery
 cost={W}
+ability=Cast SN with AI only if you control a creature token.
 effect=Populate.
 timing=main
 oracle=Populate.
