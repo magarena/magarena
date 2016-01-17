@@ -131,14 +131,14 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
             currentIndex = index;
             final BufferedImage cardImage;
             if (isGameScreenPopup && CONFIG.isHighQuality()) {
-                final BufferedImage sourceImage = IMAGE_HELPER.getImage(cardDefinition,index,true);
+                final BufferedImage sourceImage = IMAGE_HELPER.getImage(cardDefinition, true);
                 final int imageWidth=sourceImage.getWidth(this);
                 final int imageHeight=sourceImage.getHeight(this);
                 cardImage = sourceImage;
                 setSize(imageWidth,imageHeight);
                 revalidate();
             } else {
-                cardImage = IMAGE_HELPER.getImage(cardDefinition,index,false);
+                cardImage = IMAGE_HELPER.getImage(cardDefinition, false);
                 if (isGameScreenPopup) {
                     setSize(GraphicsUtils.getMaxCardImageSize());
                     revalidate();

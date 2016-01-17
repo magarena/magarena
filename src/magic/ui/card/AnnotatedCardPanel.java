@@ -315,7 +315,7 @@ public class AnnotatedCardPanel extends JPanel {
     }
 
     private BufferedImage getCardImage(final MagicCardDefinition cardDef) {
-        return CachedImagesProvider.getInstance().getImage(cardDef, 0, true);
+        return CachedImagesProvider.getInstance().getImage(cardDef, true);
     }
     private BufferedImage getCardImage(final MagicObject magicObject) {
         if (magicObject instanceof MagicPermanent) {

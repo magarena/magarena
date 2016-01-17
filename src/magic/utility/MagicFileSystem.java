@@ -121,25 +121,18 @@ public final class MagicFileSystem {
         return imageType.getPath();
     }
 
-    private static String getImageFilename(final MagicCardDefinition card, final int index) {
+    private static String getImageFilename(final MagicCardDefinition card) {
         return card.getImageName() + CARD_IMAGE_EXT;
     }
 
     /**
      * Returns a File object representing the given card's image file.
      */
-    public static File getCardImageFile(final MagicCardDefinition card, final int index) {
+    public static File getCardImageFile(final MagicCardDefinition card) {
         final Path imageDirectory = card.isToken() ?
                 getImagesPath(ImagesPath.TOKENS) :
                 getImagesPath(ImagesPath.CARDS);
-        return new File(imageDirectory.toFile(), getImageFilename(card, index));
-    }
-
-    /**
-     * Returns a File object representing the given card's image file.
-     */
-    public static File getCardImageFile(final MagicCardDefinition card) {
-        return getCardImageFile(card, 0);
+        return new File(imageDirectory.toFile(), getImageFilename(card));
     }
 
     /**

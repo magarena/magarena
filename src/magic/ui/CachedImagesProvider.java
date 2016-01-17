@@ -19,16 +19,16 @@ public class CachedImagesProvider implements CardImagesProvider {
     private CachedImagesProvider() {}
 
     @Override
-    public BufferedImage getImage(final MagicCardDefinition cardDef, final int index, final boolean orig) {
+    public BufferedImage getImage(final MagicCardDefinition cardDef, final boolean orig) {
         if (cardDef == MagicCardDefinition.UNKNOWN) {
             return MagicImages.getMissingCardImage();
         }
-        final File imageFile = getImageFile(cardDef, index);
+        final File imageFile = getImageFile(cardDef);
         return orig ? getOriginalImage(imageFile, cardDef) : getScaledImage(imageFile, cardDef);
     }
 
-    private File getImageFile(final MagicCardDefinition cardDef, final int index) {
-        final File defaultImage = MagicFileSystem.getCardImageFile(cardDef, index);
+    private File getImageFile(final MagicCardDefinition cardDef) {
+        final File defaultImage = MagicFileSystem.getCardImageFile(cardDef);
         final File customImage = MagicFileSystem.getCustomImagesPath().resolve(defaultImage.getName()).toFile();
         return customImage.exists() ? customImage : defaultImage;
     }

@@ -44,8 +44,7 @@ final class CardCanvas {
     }
 
     public BufferedImage getFrontImage() {
-        return CachedImagesProvider.getInstance().getImage(
-                card.getCardDefinition(), card.getImageIndex(), true);
+        return CachedImagesProvider.getInstance().getImage(card.getCardDefinition(), true);
     }
 
     public BufferedImage getBackImage() {

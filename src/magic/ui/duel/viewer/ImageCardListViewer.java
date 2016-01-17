@@ -241,7 +241,7 @@ public class ImageCardListViewer extends JPanel implements IChoiceViewer {
             final int y2=point.y+CARD_HEIGHT;
 
             final BufferedImage image = GraphicsUtils.scale(
-                imageCache.getImage(cardDefinition, card.getImageIndex(), true),
+                imageCache.getImage(cardDefinition, true),
                 CARD_WIDTH,
                 CARD_HEIGHT
             );

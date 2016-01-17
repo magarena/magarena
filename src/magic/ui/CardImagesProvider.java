@@ -14,7 +14,6 @@ public interface CardImagesProvider {
 
     BufferedImage getImage(
             final MagicCardDefinition cardDefinition,
-            final int index,
             final boolean high);
 
     void clearCache();

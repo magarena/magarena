@@ -6,7 +6,6 @@ import magic.data.GeneralConfig;
 import magic.ui.CachedImagesProvider;
 import magic.ui.MagicImages;
 import magic.model.MagicType;
-import magic.model.MagicAbility;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
@@ -34,7 +33,6 @@ import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Set;
 import javax.swing.SwingUtilities;
 import magic.ui.CardImagesProvider;
 import magic.data.MagicIcon;
@@ -262,7 +260,7 @@ public class ImagePermanentViewer extends JPanel {
         for (int index = 0; index < linkedScreenRectangles.size(); index++) {
 
             final PermanentViewerInfo linkedInfo = linkedInfos.get(index);
-            final BufferedImage image = imageCache.getImage(linkedInfo.cardDefinition, linkedInfo.index, false);
+            final BufferedImage image = imageCache.getImage(linkedInfo.cardDefinition, false);
 
             final Rectangle linkedRect = linkedScreenRectangles.get(index);
             final int x1 = linkedRect.x;
