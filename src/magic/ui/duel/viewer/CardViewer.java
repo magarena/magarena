@@ -77,20 +77,11 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
     }
 
     public final void setCard(final MagicCardDefinition aCard) {
-
-        if (aCard == null) {
-            thisCard = MagicCardDefinition.UNKNOWN;
-            setImage(MagicImages.getMissingCardImage());
-
-        } else if (aCard != thisCard) {
-            thisCard = aCard;
-            final BufferedImage cardImage = CachedImagesProvider.getInstance().getImage(aCard, false);
-            if (aCard.isInvalid() && cardImage != MagicImages.getMissingCardImage()) {
-                setImage(GraphicsUtils.getGreyScaleImage(cardImage));
-            } else {
-                setImage(cardImage);
-            }
+        if (aCard == thisCard) {
+            return;
         }
+        thisCard = aCard;
+        setImage(getCardImage(aCard, IMAGE_SIZE));
     }
 
     @Override
@@ -123,5 +114,22 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
         } else {
             return sizePreset.getSize();
         }
-    } 
+    }
+
+    private static Image getCardImage(MagicCardDefinition aCard, Dimension prefSize) {
+
+        BufferedImage image = (aCard == null || aCard == MagicCardDefinition.UNKNOWN)
+            ? MagicImages.getMissingCardImage()
+            : CachedImagesProvider.getInstance().getImage(aCard, true);
+
+        if (image.getWidth() != prefSize.width || image.getHeight() != prefSize.height) {
+            image = GraphicsUtils.scale(image, prefSize.width, prefSize.height);
+        }
+
+        if (aCard.isInvalid() && image != MagicImages.getMissingCardImage()) {
+            return GraphicsUtils.getGreyScaleImage(image);
+        } else {
+            return image;
+        }
+    }
 }
