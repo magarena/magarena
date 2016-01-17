@@ -3,7 +3,6 @@ package magic.ui.deck.editor;
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.Cursor;
-import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
@@ -23,7 +22,6 @@ import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicRandom;
 import magic.ui.CardFilterPanel;
-import magic.ui.utility.GraphicsUtils;
 import magic.ui.ICardFilterPanelListener;
 import magic.ui.ScreenController;
 import magic.ui.cardtable.CardTable;
@@ -83,19 +81,10 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
         rhs.setOpaque(false);
         rhs.setBorder(BorderFactory.createMatteBorder(0, 1, 0, 0, Color.BLACK));
 
-        final Dimension imageSize = GraphicsUtils.getMaxCardImageSize();
         migLayout.setLayoutConstraints("insets 0, gap 0");
-        if (CONFIG.isHighQuality()) {
-            migLayout.setColumnConstraints("[][grow]");
-            setLayout(migLayout);
-            add(sideBarPanel, "h 100%, w 0:" + imageSize.width +":" + imageSize.width);
-            add(rhs, "h 100%, growx");
-        } else {
-            migLayout.setColumnConstraints("[" + imageSize.width + "!][100%]");
-            setLayout(migLayout);
-            add(sideBarPanel, "h 100%, w " + imageSize.width + "!");
-            add(rhs, "w 100%, h 100%");
-        }
+        setLayout(migLayout);
+        add(sideBarPanel, "h 100%");
+        add(rhs, "w 100%, h 100%");
 
         // set initial card image
         if (cardPoolDefs.isEmpty()) {
