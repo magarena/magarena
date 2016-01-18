@@ -42,7 +42,8 @@ public class ModularTrigger extends ThisDiesTrigger {
                     creature,
                     MagicCounterType.PlusOne,
                     event.getRefInt()
-                )));
+                ))
+            );
         }
     }
 }

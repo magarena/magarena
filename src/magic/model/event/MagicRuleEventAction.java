@@ -1494,7 +1494,8 @@ public enum MagicRuleEventAction {
                     card,
                     event.getPlayer(),
                     mods
-                )));
+                ))
+            );
         }
     },
     Reanimate2(

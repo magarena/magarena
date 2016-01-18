@@ -34,7 +34,8 @@ public class MagicBestowActivation extends MagicHandCastActivation {
                     event.getCardOnStack(),
                     creature,
                     MagicPlayMod.BESTOWED
-                )));
+                ))
+            );
             if (!valid) {
                 game.doAction(new PlayCardFromStackAction(event.getCardOnStack()));
             }

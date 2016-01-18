@@ -55,7 +55,8 @@ public class SoulshiftTrigger extends ThisDiesTrigger {
                     card,
                     MagicLocationType.Graveyard,
                     MagicLocationType.OwnersHand
-                )));
+                ))
+            );
         }
     }
 }

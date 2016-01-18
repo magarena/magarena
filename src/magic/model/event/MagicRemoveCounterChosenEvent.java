@@ -24,7 +24,8 @@ public class MagicRemoveCounterChosenEvent extends MagicEvent {
                         perm,
                         counterType,
                         -1
-                    )));
+                    ))
+                );
             },
             "Remove a " + counterType.getName() + " counter from a creature$ you control."
         );

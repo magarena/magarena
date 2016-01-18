@@ -61,7 +61,8 @@ public class MagicDiscardEvent extends MagicEvent {
 
     private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) ->
         event.processChosenCards(game, (final MagicCard card) ->
-            game.doAction(new DiscardCardAction(event.getPlayer(), card)));
+            game.doAction(new DiscardCardAction(event.getPlayer(), card))
+        );
 
     @Override
     public boolean isSatisfied() {

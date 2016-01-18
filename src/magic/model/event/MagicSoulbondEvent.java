@@ -43,7 +43,8 @@ public class MagicSoulbondEvent extends MagicEvent {
                     event.getPermanent(),
                     creature,
                     true
-                )));
+                ))
+            );
         }
     };
 }

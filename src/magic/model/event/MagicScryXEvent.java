@@ -25,7 +25,7 @@ public class MagicScryXEvent extends MagicEvent {
         event.processChosenCards(game, (final MagicCard card) -> {
             game.doAction(new ScryComplAction(event.getPlayer(), card, false));
             game.logAppendMessage(event.getPlayer(), event.getPlayer() + " puts back a card to the top of his or her library.");
-    });
+        });
 
     private static final MagicEventAction BottomAction = (final MagicGame game, final MagicEvent event) -> {
         final MagicCardList processedCards = new MagicCardList();

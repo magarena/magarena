@@ -68,6 +68,7 @@ public class MagicEquipActivation extends MagicPermanentActivation {
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         event.processTargetPermanent(game, (final MagicPermanent creature) ->
-            game.doAction(new AttachAction(event.getPermanent(),creature)));
+            game.doAction(new AttachAction(event.getPermanent(),creature))
+        );
     }
 }

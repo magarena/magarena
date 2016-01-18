@@ -19,7 +19,8 @@ public class MagicAddCounterChosenEvent extends MagicEvent {
                         perm,
                         counterType,
                         1
-                    )));
+                    ))
+                );
             },
             "Put a " + counterType.getName() + " counter on a creature$ you control."
         );

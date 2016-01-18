@@ -19,7 +19,8 @@ public class MagicBolsterEvent extends MagicEvent {
                 creature,
                 MagicCounterType.PlusOne,
                 event.getRefInt()
-            )));
+            ))
+        );
 
     public MagicBolsterEvent(final MagicSource source, final MagicPlayer player, final int amount, final int minToughness) {
         super(

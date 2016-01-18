@@ -26,6 +26,7 @@ public class MagicReturnCardEvent extends MagicEvent {
                 event.getPlayer(),
                 card,
                 MagicLocationType.TopOfOwnersLibrary
-            )));
+            ))
+        );
     };
 }

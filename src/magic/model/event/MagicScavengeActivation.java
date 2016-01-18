@@ -64,6 +64,7 @@ public class MagicScavengeActivation extends MagicCardAbilityActivation {
                 perm,
                 MagicCounterType.PlusOne,
                 event.getRefInt()
-            )));
+            ))
+        );
     }
 }

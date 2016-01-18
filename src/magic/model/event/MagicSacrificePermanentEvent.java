@@ -31,5 +31,6 @@ public class MagicSacrificePermanentEvent extends MagicEvent {
 
     private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) ->
         event.processTargetPermanent(game, (final MagicPermanent permanent) ->
-            game.doAction(new SacrificeAction(permanent)));
+            game.doAction(new SacrificeAction(permanent))
+        );
 }

@@ -31,5 +31,6 @@ public class MagicBounceChosenPermanentEvent extends MagicEvent {
             game.doAction(new RemoveFromPlayAction(
                 permanent,
                 MagicLocationType.OwnersHand
-            )));
+            ))
+        );
 }

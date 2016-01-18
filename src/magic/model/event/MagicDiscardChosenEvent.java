@@ -28,5 +28,6 @@ public class MagicDiscardChosenEvent extends MagicEvent {
             game.doAction(new DiscardCardAction(
                 event.getPlayer(),
                 card
-            )));
+            ))
+        );
 }

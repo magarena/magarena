@@ -44,7 +44,8 @@ public class MagicPlayAuraEvent extends MagicSpellCardEvent {
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         event.processTargetPermanent(game, (final MagicPermanent creature) ->
-            game.doAction(new PlayCardFromStackAction(event.getCardOnStack(),creature)));
+            game.doAction(new PlayCardFromStackAction(event.getCardOnStack(),creature))
+        );
     }
 
     public static MagicPlayAuraEvent create(final String script) {

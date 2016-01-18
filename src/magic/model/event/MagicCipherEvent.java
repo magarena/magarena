@@ -34,7 +34,8 @@ public class MagicCipherEvent extends MagicEvent {
                 game.doAction(new AddTriggerAction(
                     creatureToEncode,
                     DamageIsDealtTrigger.Cipher(event.getCardOnStack().getCardDefinition())
-                )));
+                ))
+            );
         } else {
             game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.Graveyard));
         }

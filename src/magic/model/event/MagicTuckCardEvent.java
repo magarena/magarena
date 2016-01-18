@@ -36,5 +36,6 @@ public class MagicTuckCardEvent extends MagicEvent {
                 event.getPlayer(),
                 card,
                 MagicLocationType.BottomOfOwnersLibrary
-            )));
+            ))
+        );
 }
