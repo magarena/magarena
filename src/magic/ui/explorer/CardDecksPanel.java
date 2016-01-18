@@ -40,7 +40,7 @@ class CardDecksPanel extends JPanel {
     // translatable strings
     private static final String _S1 =  "Invalid Deck!";
 
-    public static final String CP_DECKS_UPDATED = "DecksUpdated";
+    public static final String CP_DECKS_UPDATED = "6f0c65a7-6485-4468-9d62-31a505d307a9";
     private static final int TIMER_DELAY_MSECS = 500;
 
     private static SwingWorker<File[], Void> worker;

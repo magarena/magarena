@@ -145,7 +145,7 @@ class MainViewsPanel extends JPanel implements IDeckEditorListener {
             evt -> deckPanel.setSelectedCard(legalityPanel.getSelectedCard())
         );
         legalityPanel.addPropertyChangeListener(
-            CardsLegalityPanel.CP_CARD_DCLICKED,
+            LegalityPanel.CP_CARD_DCLICKED,
             evt -> deckPanel.setSelectedCard(legalityPanel.getSelectedCard())
         );
     }

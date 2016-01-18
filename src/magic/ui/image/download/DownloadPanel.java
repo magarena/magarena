@@ -28,7 +28,7 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 abstract class DownloadPanel extends JPanel implements IScanListener, IDownloadListener {
 
-    static final String CP_STATE_CHANGED = "7b40b0dd";
+    static final String CP_STATE_CHANGED = "5234acd4-e05d-4fc4-a599-95ecd34aa893";
 
     // translatable strings
     private static final String _S1 = "Cancel";

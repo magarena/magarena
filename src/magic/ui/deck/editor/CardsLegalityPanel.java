@@ -44,9 +44,9 @@ public class CardsLegalityPanel extends JPanel {
     private static final String _S4 = "A minimum of %d cards is required.";
 
     // fired when selection changes.
-    public static final String CP_CARD_SELECTED = "cardTableSelection";
+    public static final String CP_CARD_SELECTED = "019f0246-bd63-4efd-a7cf-fefabea053e3";
     // fired on mouse event.
-    public static final String CP_CARD_DCLICKED = "cardDoubleClicked";
+    public static final String CP_CARD_DCLICKED = "02bd98e4-fccf-4152-bcef-c5ea85c5313b";
 
     private static final Color GRID_COLOR = new Color(194, 197, 203);
     private static final int ROW_HEIGHT = 23; //pixels

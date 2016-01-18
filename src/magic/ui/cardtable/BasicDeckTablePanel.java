@@ -15,11 +15,7 @@ import net.miginfocom.swing.MigLayout;
 public class BasicDeckTablePanel extends TexturedPanel {
 
     // fired when selection changes.
-    public static final String CP_CARD_SELECTED = "cardTableSelection";
-    // fired on mouse event.
-    public static final String CP_CARD_LCLICKED = "cardLeftClicked";
-    public static final String CP_CARD_RCLICKED = "cardRightClicked";
-    public static final String CP_CARD_DCLICKED = "cardDoubleClicked";
+    public static final String CP_CARD_SELECTED = "745278ab-0ea0-42fd-abf1-2cb1ec677909";
 
     private final MigLayout migLayout = new MigLayout();
     private final JScrollPane scrollpane = new JScrollPane();

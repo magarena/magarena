@@ -20,7 +20,6 @@ import magic.ui.MagicSound;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
 import magic.ui.cardtable.BasicDeckTablePanel;
-import magic.ui.cardtable.CardTablePanel;
 import magic.ui.dialog.RandomDeckGeneratorDialog;
 import magic.ui.screen.widget.ActionBarButton;
 import net.miginfocom.swing.MigLayout;
@@ -31,9 +30,6 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
     // translatable strings
     private static final String _S1 = "Random Deck";
     private static final String _S2 = "Generate a random deck using current set of cards in card pool.";
-
-    // fired when card selection changes
-    public static final String CP_CARD_SELECTED = FilteredCardPoolPanel.CP_CARD_SELECTED;
 
     private final FilteredCardPoolPanel cardPoolPanel;
     private final CardQuantityActionPanel quantityPanel;
@@ -66,7 +62,7 @@ class CardPoolViewPanel extends JPanel implements IDeckEditorView, FocusListener
     private void setListeners() {
 
         deckPanel.addPropertyChangeListener(
-                CardTablePanel.CP_CARD_SELECTED,
+                BasicDeckTablePanel.CP_CARD_SELECTED,
                 new PropertyChangeListener() {
                     @Override
                     public void propertyChange(PropertyChangeEvent evt) {

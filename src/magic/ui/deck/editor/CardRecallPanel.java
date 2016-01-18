@@ -20,7 +20,7 @@ import net.miginfocom.swing.MigLayout;
 class CardRecallPanel extends JPanel implements IDeckEditorView, FocusListener {
 
     // fired when card selection changes
-    public static final String CP_CARD_SELECTED = CardTablePanel.CP_CARD_SELECTED;
+    public static final String CP_CARD_SELECTED = "5d3dc52f-b1b3-419e-a4ab-375c3c85d29c";
 
     private final CardQuantityActionPanel quantityPanel;
     private final BasicDeckTablePanel deckPanel;
@@ -85,7 +85,7 @@ class CardRecallPanel extends JPanel implements IDeckEditorView, FocusListener {
 
     private void setPropertyChangeListeners() {
         deckPanel.addPropertyChangeListener(
-                CardTablePanel.CP_CARD_SELECTED,
+                BasicDeckTablePanel.CP_CARD_SELECTED,
                 new PropertyChangeListener() {
                     @Override
                     public void propertyChange(PropertyChangeEvent evt) {

@@ -22,8 +22,8 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 class DialogMainPanel extends JPanel implements PropertyChangeListener {
 
-    static final String CP_CLOSE = "b0fbb0a7";
-    static final String CP_RUN_BACKGROUND = "a88997e6";
+    static final String CP_CLOSE = "9dbf20f7-f239-4cdf-95e6-85cfe1969ea7";
+    static final String CP_RUN_BACKGROUND = "56a6f389-6238-48ba-a3d3-bc9538d1d4c7";
 
     // translatable strings
     private static final String _S1 = "Closes screen but continues to download images in the background.";

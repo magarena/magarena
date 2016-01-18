@@ -30,7 +30,7 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
     private static final String _S5 = "%s Exile";
 
     // fired when contents of player zone is changed
-    public static final String CP_PLAYER_ZONE = "activeZoneName";
+    public static final String CP_PLAYER_ZONE = "ece91afb-3290-463e-ad03-8a24731f2aa0";
 
     private final SwingGameController controller;
     private final TabSelector tabSelector;

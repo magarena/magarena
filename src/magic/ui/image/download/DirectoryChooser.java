@@ -25,7 +25,7 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 class DirectoryChooser extends JPanel {
 
-    static final String CP_FOLDER_CHANGED = "imageFolderUChanged";
+    static final String CP_FOLDER_CHANGED = "b896016d-7b11-4295-8b6c-312bec5e04ad";
 
     // translatable strings
     private static final String _S1 = "Choose a folder...";

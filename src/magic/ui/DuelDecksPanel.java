@@ -43,7 +43,7 @@ public class DuelDecksPanel extends TexturedPanel {
     private static final String _S2 = "Deck (%s) - %d cards";
 
     // change properties
-    public static final String CP_DECK_CHANGED = "c832e918-5b52";
+    public static final String CP_DECK_CHANGED = "1fe41854-83e4-4a98-9c4b-46ca9f4c9550";
 
     private static final int SPACING = 10;
     private static final String GENERATE_BUTTON_TEXT = UiString.get(_S1);

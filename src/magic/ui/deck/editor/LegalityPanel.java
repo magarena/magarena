@@ -14,7 +14,6 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.MagicImages;
 import magic.translate.UiString;
-import magic.ui.cardtable.CardTablePanel;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
@@ -34,7 +33,8 @@ class LegalityPanel extends JPanel implements IDeckEditorView {
     private static final String _S9 = "or";
 
     // fired when card selection changes
-    public static final String CP_CARD_SELECTED = CardTablePanel.CP_CARD_SELECTED;
+    public static final String CP_CARD_SELECTED = "c5f420c3-dc1c-4d1b-a07b-0d055716207d";
+    public static final String CP_CARD_DCLICKED = "0dda4041-f44d-4980-8c87-c11cf7b1dc06";
 
     private static final JPanel HELP_PANEL = new LegalityLegendPanel();
 
@@ -56,28 +56,30 @@ class LegalityPanel extends JPanel implements IDeckEditorView {
     }
 
     private void setPropertyChangeListeners() {
-        cardsLegalityPanel.addPropertyChangeListener(CardsLegalityPanel.CP_CARD_SELECTED,
-                new PropertyChangeListener() {
-                    @Override
-                    public void propertyChange(PropertyChangeEvent evt) {
-                        firePropertyChange(CP_CARD_SELECTED, false, true);
-                    }
-                });
         cardsLegalityPanel.addPropertyChangeListener(
-                CardsLegalityPanel.CP_CARD_DCLICKED,
-                new PropertyChangeListener() {
-                    @Override
-                    public void propertyChange(PropertyChangeEvent evt) {
-                        firePropertyChange(CardsLegalityPanel.CP_CARD_DCLICKED, false, true);
-                    }
-                });
-        formatsLegalityPanel.addPropertyChangeListener(FormatsLegalityPanel.CP_FORMAT_SELECTED,
-                new PropertyChangeListener() {
-                    @Override
-                    public void propertyChange(PropertyChangeEvent evt) {
-                        cardsLegalityPanel.setDeck(deck, formatsLegalityPanel.getSelectedFormat());
-                    }
-                });
+            CardsLegalityPanel.CP_CARD_SELECTED,
+            new PropertyChangeListener() {
+                @Override
+                public void propertyChange(PropertyChangeEvent evt) {
+                    firePropertyChange(CP_CARD_SELECTED, false, true);
+                }
+            });
+        cardsLegalityPanel.addPropertyChangeListener(
+            CardsLegalityPanel.CP_CARD_DCLICKED,
+            new PropertyChangeListener() {
+                @Override
+                public void propertyChange(PropertyChangeEvent evt) {
+                    firePropertyChange(CP_CARD_DCLICKED, false, true);
+                }
+            });
+        formatsLegalityPanel.addPropertyChangeListener(
+            FormatsLegalityPanel.CP_FORMAT_SELECTED,
+            new PropertyChangeListener() {
+                @Override
+                public void propertyChange(PropertyChangeEvent evt) {
+                    cardsLegalityPanel.setDeck(deck, formatsLegalityPanel.getSelectedFormat());
+                }
+            });
     }
 
     private void setLookAndFeel() {

@@ -33,11 +33,11 @@ import net.miginfocom.swing.MigLayout;
 public class DeckTablePanel extends TexturedPanel {
 
     // fired when selection changes.
-    public static final String CP_CARD_SELECTED = "cardTableSelection";
+    public static final String CP_CARD_SELECTED = "21b18a13-afbb-4d6a-9edc-3119653f4560";
     // fired on mouse event.
-    public static final String CP_CARD_LCLICKED = "cardLeftClicked";
-    public static final String CP_CARD_RCLICKED = "cardRightClicked";
-    public static final String CP_CARD_DCLICKED = "cardDoubleClicked";
+    public static final String CP_CARD_LCLICKED = "d1b4df60-feb9-4bfe-88e2-49cd823efeb0";
+    public static final String CP_CARD_RCLICKED = "0c0fc5c6-3be3-40f4-9b79-ded9e304a96d";
+    public static final String CP_CARD_DCLICKED = "01eb437c-f450-4cc7-8d37-ebd3c1133927";
 
     // renderer that centers the contents of a column.
     static final DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();

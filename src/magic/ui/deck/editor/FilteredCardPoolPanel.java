@@ -22,9 +22,9 @@ class FilteredCardPoolPanel extends JPanel implements ICardFilterPanelListener {
     private static final String _S1 = "Cards: %s";
 
     // fired when card selection changes
-    public static final String CP_CARD_SELECTED = CardTablePanel.CP_CARD_SELECTED;
-    public static final String CP_CARD_LCLICKED = CardTablePanel.CP_CARD_LCLICKED;
-    public static final String CP_CARD_RCLICKED = CardTablePanel.CP_CARD_RCLICKED;
+    public static final String CP_CARD_SELECTED = "87308824-9b54-42ba-ba52-6e9eee04bf92";
+    public static final String CP_CARD_LCLICKED = "0d75bebc-f6ed-43af-81f1-370e4c779e76";
+    public static final String CP_CARD_RCLICKED = "dfa8dd32-0f53-4001-ba0b-c23c76de9984";
 
     private static final int FILTERS_PANEL_HEIGHT = 88; // pixels
 
@@ -48,31 +48,32 @@ class FilteredCardPoolPanel extends JPanel implements ICardFilterPanelListener {
 
     private void setPropertyChangeListeners() {
 
-        cardPoolTable.addPropertyChangeListener(CardTablePanel.CP_CARD_SELECTED,
-                new PropertyChangeListener() {
-                    @Override
-                    public void propertyChange(PropertyChangeEvent evt) {
-                        firePropertyChange(CP_CARD_SELECTED, false, true);
-                    }
-                });
+        cardPoolTable.addPropertyChangeListener(
+            CardTablePanel.CP_CARD_SELECTED,
+            new PropertyChangeListener() {
+                @Override
+                public void propertyChange(PropertyChangeEvent evt) {
+                    firePropertyChange(CP_CARD_SELECTED, false, true);
+                }
+            });
 
         cardPoolTable.addPropertyChangeListener(
-                CardTablePanel.CP_CARD_LCLICKED,
-                new PropertyChangeListener() {
-                    @Override
-                    public void propertyChange(PropertyChangeEvent evt) {
-                        firePropertyChange(CP_CARD_LCLICKED, false, true);
-                    }
-                });
+            CardTablePanel.CP_CARD_LCLICKED,
+            new PropertyChangeListener() {
+                @Override
+                public void propertyChange(PropertyChangeEvent evt) {
+                    firePropertyChange(CP_CARD_LCLICKED, false, true);
+                }
+            });
 
         cardPoolTable.addPropertyChangeListener(
-                CardTablePanel.CP_CARD_RCLICKED,
-                new PropertyChangeListener() {
-                    @Override
-                    public void propertyChange(PropertyChangeEvent evt) {
-                        firePropertyChange(CP_CARD_RCLICKED, false, true);
-                    }
-                });
+            CardTablePanel.CP_CARD_RCLICKED,
+            new PropertyChangeListener() {
+                @Override
+                public void propertyChange(PropertyChangeEvent evt) {
+                    firePropertyChange(CP_CARD_RCLICKED, false, true);
+                }
+            });
 
     }
 

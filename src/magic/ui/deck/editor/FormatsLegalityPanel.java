@@ -31,7 +31,7 @@ public class FormatsLegalityPanel extends JPanel {
     private static final String _S1 = "Formats";
 
     // fired when selection changes.
-    public static final String CP_FORMAT_SELECTED = "FormatSelected";
+    public static final String CP_FORMAT_SELECTED = "c8d61cfc-568a-488d-a0fb-f37ef1a39192";
 
     private final MigLayout migLayout = new MigLayout();
     private final JScrollPane scrollpane = new JScrollPane();
