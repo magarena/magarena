@@ -2,22 +2,15 @@
     new MagicStatic(MagicLayer.ModPT) {
         @Override
         public void modPowerToughness(final MagicPermanent source, final MagicPermanent permanent, final MagicPowerToughness pt) {
-            Set<MagicSubType> enchantedSubTypes = new HashSet<MagicSubType>();
-            for (final MagicSubType subType: MagicSubType.values()) {
-                if (permanent.hasSubType(subType)) {
-                    enchantedSubTypes.add(subType);
-                }
-            }
             int amount = 0;
-            CREATURE.except(permanent).filter(source.getController()) each {
-                boolean hasSubType=false;
-                for (final MagicSubType subType: enchantedSubTypes) {
+            final Set<MagicSubType> self = permanent.getSubTypes();
+            self.retainAll(MagicSubType.ALL_CREATURES);
+            CREATURE.except(permanent).filter(source) each {
+                for (final MagicSubType subType : self) {
                     if (it.hasSubType(subType)) {
-                        hasSubType=true;
+                        amount += 1;
+                        break;
                     }
-                }
-                if (hasSubType) {
-                    amount += 1;
                 }
             }
             pt.add(amount*2,amount*2);
