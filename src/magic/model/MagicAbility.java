@@ -472,11 +472,16 @@ public enum MagicAbility {
             ));
         }
     },
-    EntersKickedEffect("When SN enters the battlefield, if (it was kicked|its surge cost was paid), " + ARG.EFFECT, 10) {
+    EntersKickedEffect("When SN enters the battlefield, if it was kicked, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(EntersBattlefieldTrigger.createKicked(
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
+        }
+    },
+    EntersSurgeEffect("When SN enters the battlefield, if its surge cost was paid, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            EntersKickedEffect.addAbilityImpl(card, arg);
         }
     },
     EntersEffect("When SN enters the battlefield, " + ARG.EFFECT, 10) {
