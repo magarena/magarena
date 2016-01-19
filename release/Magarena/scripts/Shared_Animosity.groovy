@@ -14,18 +14,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicPlayer player = event.getPlayer();
-            final MagicPermanent creature=event.getRefPermanent();
+            final MagicPermanent creature = event.getRefPermanent();
 
-            final Set<MagicSubType> self = new HashSet<MagicSubType>();
-            for (final MagicSubType st: MagicSubType.ALL_CREATURES) {
-                if (creature.hasSubType(st)) {
-                    self.add(st);
-                }
-            }
-
-            final List<MagicPermanent> attacking = ATTACKING_CREATURE_YOU_CONTROL.except(creature).filter(player);
             int amount = 0;
-            for (final MagicPermanent attacker : attacking) {
+            final Set<MagicSubType> self = creature.getSubTypes();
+            for (final MagicPermanent attacker : ATTACKING_CREATURE.except(creature).filter(event)) {
                 for (final MagicSubType st : self) {
                     if (attacker.hasSubType(st)) {
                         amount++;

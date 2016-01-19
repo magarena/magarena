@@ -12,27 +12,10 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPermanent target ->
-
-                final Set<MagicColor> targetColors = new HashSet<MagicColor>();
-                for (final MagicColor color : MagicColor.values()) {
-                    if(target.hasColor(color)) {
-                        targetColors.add(color);
-                    }
-                }
-
-                final Set<MagicPermanent> targetList = new HashSet<MagicPermanent>();
                 for (final MagicPermanent creature : CREATURE.filter(event)) {
-                    for (final MagicColor color : targetColors) {
-                        if (creature.hasColor(color)) {
-                            targetList.add(creature);
-                            break;
-                        }
+                    if (creature == it || (it.getColorFlags() & creature.getColorFlags()) != 0) {
+                        game.doAction(new GainAbilityAction(creature, MagicAbility.CannotBlock));
                     }
-                }
-
-                for (final MagicPermanent creature : targetList) {
-                    game.doAction(new GainAbilityAction(creature, MagicAbility.CannotBlock));
                 }
             });
         }
