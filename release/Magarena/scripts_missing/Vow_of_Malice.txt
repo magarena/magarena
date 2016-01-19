@@ -1,6 +1,7 @@
 name=Vow of Malice
-image=http://magiccards.info/scans/en/cmd/107.jpg
-value=3.647
+image=http://magiccards.info/scans/en/c15/140.jpg
+image_updated=2016-01-19
+value=3.467
 rarity=U
 type=Enchantment
 subtype=Aura

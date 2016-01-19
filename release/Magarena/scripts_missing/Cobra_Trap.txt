@@ -1,5 +1,6 @@
 name=Cobra Trap
-image=http://magiccards.info/scans/en/cmd/146.jpg
+image=http://magiccards.info/scans/en/c15/180.jpg
+image_updated=2016-01-19
 value=2.850
 rarity=U
 type=Instant

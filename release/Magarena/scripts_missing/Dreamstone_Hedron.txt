@@ -1,5 +1,6 @@
 name=Dreamstone Hedron
-image=http://magiccards.info/scans/en/c14/236.jpg
+image=http://magiccards.info/scans/en/c15/252.jpg
+image_updated=2016-01-19
 value=2.500
 rarity=U
 type=Artifact

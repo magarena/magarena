@@ -1,8 +1,8 @@
 name=Boros Garrison
-image=http://magiccards.info/scans/en/mm2/237.jpg
-image_updated=2015-11-05
+image=http://magiccards.info/scans/en/c15/279.jpg
+image_updated=2016-01-19
 value=2.500
-rarity=U
+rarity=C
 type=Land
 ability=SN enters the battlefield tapped.;\
         When SN enters the battlefield, return a land you control to its owner's hand.;\

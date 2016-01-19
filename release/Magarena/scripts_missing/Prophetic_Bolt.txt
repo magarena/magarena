@@ -1,7 +1,8 @@
 name=Prophetic Bolt
-image=http://magiccards.info/scans/en/vma/257.jpg
+image=http://magiccards.info/scans/en/c15/231.jpg
+image_updated=2016-01-19
 value=4.500
-rarity=U
+rarity=R
 type=Instant
 cost={3}{U}{R}
 effect=SN deals 4 damage to target creature or player. Look at the top four cards of your library. Put one of those cards into your hand and the rest on the bottom of your library in any order.

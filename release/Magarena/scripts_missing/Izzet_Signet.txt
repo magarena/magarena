@@ -1,5 +1,6 @@
 name=Izzet Signet
-image=http://magiccards.info/scans/en/ddj/17.jpg
+image=http://magiccards.info/scans/en/c15/256.jpg
+image_updated=2016-01-19
 value=4.071
 rarity=C
 type=Artifact
