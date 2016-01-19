@@ -1,5 +1,6 @@
 name=Rite of Replication
-image=http://magiccards.info/scans/en/c14/122.jpg
+image=http://magiccards.info/scans/en/c15/105.jpg
+image_updated=2016-01-19
 value=4.115
 rarity=R
 type=Sorcery

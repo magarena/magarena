@@ -1,5 +1,6 @@
 name=Celestial Archon
-image=http://magiccards.info/scans/en/ths/3.jpg
+image=http://magiccards.info/scans/en/c15/64.jpg
+image_updated=2016-01-19
 value=3.541
 rarity=R
 type=Enchantment,Creature
@@ -7,7 +8,7 @@ subtype=Archon
 cost={3}{W}{W}
 pt=4/4
 ability=Bestow {5}{W}{W};\
-        Flying;first strike;\
+        Flying, first strike;\
         Enchanted creature gets +4/+4 and has flying and first strike.
 timing=main
 oracle=Bestow {5}{W}{W}\nFlying, first strike\nEnchanted creature gets +4/+4 and has flying and first strike.

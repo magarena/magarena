@@ -1,5 +1,6 @@
 name=Seal of Cleansing
-image=http://magiccards.info/scans/en/vma/43.jpg
+image=http://magiccards.info/scans/en/c15/79.jpg
+image_updated=2016-01-19
 value=4.000
 rarity=C
 type=Enchantment

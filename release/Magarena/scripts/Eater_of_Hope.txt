@@ -1,13 +1,14 @@
 name=Eater of Hope
-image=http://magiccards.info/scans/en/bng/66.jpg
+image=http://magiccards.info/scans/en/c15/123.jpg
+image_updated=2016-01-19
 value=2.973
 rarity=R
 type=Creature
 subtype=Demon
 cost={5}{B}{B}
 pt=6/4
-ability=flying;\
-        Sacrifice another creature: Regenerate SN.;\
+ability=Flying;\
+        {B}, Sacrifice another creature: Regenerate SN.;\
         {2}{B}, Sacrifice another two creatures: Destroy target creature.
 timing=main
 oracle=Flying\n{B}, Sacrifice another creature: Regenerate Eater of Hope.\n{2}{B}, Sacrifice two other creatures: Destroy target creature.

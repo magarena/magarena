@@ -1,5 +1,6 @@
 name=Trygon Predator
-image=http://magiccards.info/scans/en/mma/185.jpg
+image=http://magiccards.info/scans/en/c15/236.jpg
+image_updated=2016-01-19
 value=4.577
 rarity=U
 type=Creature

@@ -1,11 +1,12 @@
 name=Viridian Zealot
-image=http://magiccards.info/scans/en/ds/90.jpg
+image=http://magiccards.info/scans/en/c15/210.jpg
+image_updated=2016-01-19
 value=3.940
 rarity=R
 type=Creature
 subtype=Elf,Warrior
 cost={G}{G}
 pt=2/1
-ability={1}{G},Sacrifice SN:Destroy target artifact or enchantment.
+ability={1}{G}, Sacrifice SN: Destroy target artifact or enchantment.
 timing=main
 oracle={1}{G}, Sacrifice Viridian Zealot: Destroy target artifact or enchantment.

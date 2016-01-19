@@ -1,5 +1,6 @@
 name=Ancient Craving
-image=http://magiccards.info/scans/en/ddk/28.jpg
+image=http://magiccards.info/scans/en/c15/114.jpg
+image_updated=2016-01-19
 value=3.875
 rarity=R
 type=Sorcery

@@ -1,12 +1,13 @@
 name=Taurean Mauler
-image=http://magiccards.info/scans/en/arc/49.jpg
+image=http://magiccards.info/scans/en/c15/167.jpg
+image_updated=2016-01-19
 value=4.264
 rarity=R
 type=Creature
 subtype=Shapeshifter
 cost={2}{R}
 pt=2/2
-ability=changeling;\
+ability=Changeling;\
         Whenever an opponent casts a spell, you may put a +1/+1 counter on SN.
 timing=fmain
 oracle=Changeling\nWhenever an opponent casts a spell, you may put a +1/+1 counter on Taurean Mauler.

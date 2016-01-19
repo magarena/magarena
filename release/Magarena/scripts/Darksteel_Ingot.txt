@@ -1,10 +1,11 @@
 name=Darksteel Ingot
-image=http://magiccards.info/scans/en/c13/241.jpg
+image=http://magiccards.info/scans/en/c15/251.jpg
+image_updated=2016-01-19
 value=4.457
-rarity=C
+rarity=U
 type=Artifact
 cost={3}
-ability=indestructible;\
+ability=Indestructible;\
         {T}: Add one mana of any color to your mana pool.
 timing=artifact
 oracle=Indestructible\n{T}: Add one mana of any color to your mana pool.

@@ -1,10 +1,11 @@
 name=Dictate of Heliod
-image=http://magiccards.info/scans/en/ddo/8.jpg
+image=http://magiccards.info/scans/en/c15/68.jpg
+image_updated=2016-01-19
 value=3.800
 rarity=R
 type=Enchantment
 cost={3}{W}{W}
 ability=Flash;\
-        Creatures you control get +2/+2
+        Creatures you control get +2/+2.
 timing=flash
 oracle=Flash\nCreatures you control get +2/+2.

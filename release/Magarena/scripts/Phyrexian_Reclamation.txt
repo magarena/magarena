@@ -1,9 +1,10 @@
 name=Phyrexian Reclamation
-image=http://magiccards.info/scans/en/c13/88.jpg
+image=http://magiccards.info/scans/en/c15/133.jpg
+image_updated=2016-01-19
 value=4.286
 rarity=U
 type=Enchantment
 cost={B}
-ability={1}{B},Pay 2 life:Return target creature card from your graveyard to your hand.
+ability={1}{B}, Pay 2 life: Return target creature card from your graveyard to your hand.
 timing=enchantment
 oracle={1}{B}, Pay 2 life: Return target creature card from your graveyard to your hand.

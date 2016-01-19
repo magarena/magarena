@@ -1,5 +1,6 @@
 name=Bonehoard
-image=http://magiccards.info/scans/en/c14/229.jpg
+image=http://magiccards.info/scans/en/c15/245.jpg
+image_updated=2016-01-19
 value=3.812
 rarity=R
 type=Artifact

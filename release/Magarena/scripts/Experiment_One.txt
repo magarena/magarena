@@ -1,12 +1,13 @@
 name=Experiment One
-image=http://magiccards.info/scans/en/gtc/119.jpg
+image=http://magiccards.info/scans/en/c15/184.jpg
+image_updated=2016-01-19
 value=3.875
 rarity=U
 type=Creature
 subtype=Human,Ooze
 cost={G}
 pt=1/1
-ability=evolve;\
+ability=Evolve;\
         Remove two +1/+1 counters from SN: Regenerate SN.
 timing=main
 oracle=Evolve\nRemove two +1/+1 counters from Experiment One: Regenerate Experiment One.

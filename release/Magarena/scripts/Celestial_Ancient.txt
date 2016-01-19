@@ -1,12 +1,13 @@
 name=Celestial Ancient
-image=http://magiccards.info/scans/en/pc2/5.jpg
+image=http://magiccards.info/scans/en/c15/63.jpg
+image_updated=2016-01-19
 value=3.643
 rarity=R
 type=Creature
 subtype=Elemental
 cost={3}{W}{W}
 pt=3/3
-ability=flying;\
+ability=Flying;\
         Whenever you cast an enchantment spell, put a +1/+1 counter on each creature you control.
 timing=main
 oracle=Flying\nWhenever you cast an enchantment spell, put a +1/+1 counter on each creature you control.

@@ -1,5 +1,6 @@
 name=Ohran Viper
-image=http://magiccards.info/scans/en/ddm/57.jpg
+image=http://magiccards.info/scans/en/c15/194.jpg
+image_updated=2016-01-19
 value=4.429
 rarity=R
 type=Snow,Creature

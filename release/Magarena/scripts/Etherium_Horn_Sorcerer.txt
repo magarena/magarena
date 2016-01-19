@@ -1,11 +1,13 @@
 name=Etherium-Horn Sorcerer
-image=http://magiccards.info/scans/en/pc2/91.jpg
+image=http://magiccards.info/scans/en/c15/217.jpg
+image_updated=2016-01-19
 value=4.036
 rarity=R
 type=Artifact,Creature
 subtype=Minotaur,Wizard
 cost={4}{U}{R}
 pt=3/6
-ability=cascade;{1}{U}{R}: Return SN to its owner's hand.
+ability={1}{U}{R}: Return SN to its owner's hand.;\
+        Cascade
 timing=main
 oracle={1}{U}{R}: Return Etherium-Horn Sorcerer to its owner's hand.\nCascade

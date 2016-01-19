@@ -1,12 +1,13 @@
 name=Butcher of Malakir
-image=http://magiccards.info/scans/en/c14/138.jpg
+image=http://magiccards.info/scans/en/c15/118.jpg
+image_updated=2016-01-19
 value=3.414
 rarity=R
 type=Creature
 subtype=Vampire,Warrior
 cost={5}{B}{B}
 pt=5/4
-ability=flying;\
+ability=Flying;\
         Whenever SN or another creature you control dies, each opponent sacrifices a creature.
 timing=main
 oracle=Flying\nWhenever Butcher of Malakir or another creature you control dies, each opponent sacrifices a creature.

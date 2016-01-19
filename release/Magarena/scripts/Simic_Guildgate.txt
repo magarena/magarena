@@ -1,11 +1,12 @@
 name=Simic Guildgate
-image=http://magiccards.info/scans/en/c13/323.jpg
+image=http://magiccards.info/scans/en/c15/306.jpg
+image_updated=2016-01-19
 value=3.150
 rarity=C
 type=Land
 subtype=Gate
 mana=g3u3
-ability={T}: Add {G} or {U} to your mana pool.;\
-        SN enters the battlefield tapped.
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {G} or {U} to your mana pool.
 timing=tapland
 oracle=Simic Guildgate enters the battlefield tapped.\n{T}: Add {G} or {U} to your mana pool.

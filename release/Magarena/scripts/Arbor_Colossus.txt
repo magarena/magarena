@@ -1,5 +1,6 @@
 name=Arbor Colossus
-image=http://magiccards.info/scans/en/ths/150.jpg
+image=http://magiccards.info/scans/en/c15/174.jpg
+image_updated=2016-01-19
 value=3.623
 rarity=R
 type=Creature

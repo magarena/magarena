@@ -1,11 +1,13 @@
 name=Phyrexian Plaguelord
-image=http://magiccards.info/scans/en/pvc/13.jpg
+image=http://magiccards.info/scans/en/c15/131.jpg
+image_updated=2016-01-19
 value=4.143
 rarity=R
 type=Creature
 subtype=Carrier
 cost={3}{B}{B}
 pt=4/4
-ability={T},Sacrifice SN:Target creature gets -4/-4 until end of turn.;Sacrifice a creature:Target creature gets -1/-1 until end of turn.
+ability={T}, Sacrifice SN: Target creature gets -4/-4 until end of turn.;\
+        Sacrifice a creature: Target creature gets -1/-1 until end of turn.
 timing=main
 oracle={T}, Sacrifice Phyrexian Plaguelord: Target creature gets -4/-4 until end of turn.\nSacrifice a creature: Target creature gets -1/-1 until end of turn.

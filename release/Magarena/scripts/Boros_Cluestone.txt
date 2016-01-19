@@ -1,10 +1,11 @@
 name=Boros Cluestone
-image=http://magiccards.info/scans/en/dgm/137.jpg
+image=http://magiccards.info/scans/en/c15/246.jpg
+image_updated=2016-01-19
 value=2.843
 rarity=C
 type=Artifact
 cost={3}
 ability={T}: Add {R} or {W} to your mana pool.;\
-        {R}{W},{T},Sacrifice SN: Draw a card.
+        {R}{W}, {T}, Sacrifice SN: Draw a card.
 timing=artifact
 oracle={T}: Add {R} or {W} to your mana pool.\n{R}{W}, {T}, Sacrifice Boros Cluestone: Draw a card.

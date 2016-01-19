@@ -1,11 +1,12 @@
 name=Smoldering Crater
-image=http://magiccards.info/scans/en/c14/312.jpg
+image=http://magiccards.info/scans/en/c15/308.jpg
+image_updated=2016-01-19
 value=3.167
 rarity=C
 type=Land
 mana=r3
 ability=SN enters the battlefield tapped.;\
         {T}: Add {R} to your mana pool.;\
-        cycling {2}
+        Cycling {2}
 timing=tapland
 oracle=Smoldering Crater enters the battlefield tapped.\n{T}: Add {R} to your mana pool.\nCycling {2}

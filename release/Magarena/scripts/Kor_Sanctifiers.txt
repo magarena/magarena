@@ -1,12 +1,13 @@
 name=Kor Sanctifiers
-image=http://magiccards.info/scans/en/c14/76.jpg
+image=http://magiccards.info/scans/en/c15/73.jpg
+image_updated=2016-01-19
 value=3.788
 rarity=C
 type=Creature
 subtype=Kor,Cleric
 cost={2}{W}
 pt=2/3
-ability=kicker {W};\
+ability=Kicker {W};\
         When SN enters the battlefield, if it was kicked, destroy target artifact or enchantment.
 timing=main
 oracle=Kicker {W}\nWhen Kor Sanctifiers enters the battlefield, if it was kicked, destroy target artifact or enchantment.

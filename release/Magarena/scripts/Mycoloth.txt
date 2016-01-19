@@ -1,12 +1,13 @@
 name=Mycoloth
-image=http://magiccards.info/scans/en/pc2/68.jpg
+image=http://magiccards.info/scans/en/c15/192.jpg
+image_updated=2016-01-19
 value=3.619
 rarity=R
 type=Creature
 subtype=Fungus
 cost={3}{G}{G}
 pt=4/4
-ability=devour 2;\
+ability=Devour 2;\
         At the beginning of your upkeep, put a 1/1 green Saproling creature token onto the battlefield for each +1/+1 counter on SN.
 timing=main
 oracle=Devour 2\nAt the beginning of your upkeep, put a 1/1 green Saproling creature token onto the battlefield for each +1/+1 counter on Mycoloth.

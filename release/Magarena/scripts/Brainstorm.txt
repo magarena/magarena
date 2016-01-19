@@ -1,5 +1,6 @@
 name=Brainstorm
-image=http://magiccards.info/scans/en/vma/58.jpg
+image=http://magiccards.info/scans/en/c15/90.jpg
+image_updated=2016-01-19
 value=4.750
 rarity=C
 type=Instant
