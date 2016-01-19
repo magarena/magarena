@@ -2,17 +2,18 @@
     new OtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
-            final List<MagicPermanent> creatures = CREATURE.filter(permanent.getController());
-            final Set<MagicColor> creatureColors = new HashSet<MagicColor>();
-            for (final MagicPermanent creature : creatures) {
-                for (final MagicColor color : MagicColor.values()) {
+            final List<MagicPermanent> creatures = CREATURE.filter(permanent);
+            final Set<MagicColor> colors = EnumSet.noneOf(MagicColor.class);
+            for (final MagicColor color : MagicColor.values()) {
+                for (final MagicPermanent creature : creatures) {
                     if (creature.hasColor(color)) {
-                        creatureColors.add(color);
+                        colors.add(color);
+                        break;
                     }
                 }
             }
             boolean hasColor = false;
-            for (final MagicColor color : creatureColors) {
+            for (final MagicColor color : colors) {
                 if (cardOnStack.hasColor(color)) {
                     hasColor = true;
                     break;
