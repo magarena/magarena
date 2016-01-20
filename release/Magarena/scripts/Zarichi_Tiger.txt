@@ -6,6 +6,6 @@ type=Creature
 subtype=Cat
 cost={3}{W}
 pt=2/3
-ability={1}{W},{T}: You gain 2 life.
+ability={1}{W}, {T}: You gain 2 life.
 timing=main
 oracle={1}{W}, {T}: You gain 2 life.

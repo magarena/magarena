@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Human,Wizard
 cost={1}{W}{U}{B}
 pt=1/4
-ability=flying;\
+ability=Flying;\
         Whenever SN attacks, you may search your library for an enchantment card with converted mana cost 3 or less and put it onto the battlefield. If you do, shuffle your library.
 timing=main
 oracle=Flying\nWhenever Zur the Enchanter attacks, you may search your library for an enchantment card with converted mana cost 3 or less and put it onto the battlefield. If you do, shuffle your library.

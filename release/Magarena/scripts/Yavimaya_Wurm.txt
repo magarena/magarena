@@ -1,11 +1,11 @@
 name=Yavimaya Wurm
 image=http://magiccards.info/scans/en/m11/200.jpg
 value=3.363
-ability=trample
 rarity=C
 type=Creature
 subtype=Wurm
 cost={4}{G}{G}
 pt=6/4
+ability=Trample
 timing=main
 oracle=Trample

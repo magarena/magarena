@@ -6,6 +6,6 @@ type=Creature
 subtype=Bird
 cost={1}{U}
 pt=1/1
-ability=vigilance;flying
+ability=Flying, vigilance
 timing=main
 oracle=Flying, vigilance

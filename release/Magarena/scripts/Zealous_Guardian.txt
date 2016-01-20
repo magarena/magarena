@@ -1,11 +1,11 @@
 name=Zealous Guardian
 image=http://magiccards.info/scans/en/shm/157.jpg
 value=3.270
-ability=flash
 rarity=C
 type=Creature
 subtype=Kithkin,Soldier
 cost={W/U}
 pt=1/1
+ability=Flash
 timing=flash
 oracle=Flash

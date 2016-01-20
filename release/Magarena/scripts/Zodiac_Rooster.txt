@@ -6,6 +6,6 @@ type=Creature
 subtype=Bird
 cost={1}{G}
 pt=2/1
-ability=plainswalk
+ability=Plainswalk
 timing=main
 oracle=Plainswalk

@@ -6,6 +6,7 @@ type=Creature
 subtype=Human,Soldier
 cost={1}{R}
 pt=1/1
-ability=horsemanship;SN can't block.
+ability=Horsemanship;\
+        SN can't block.
 timing=main
 oracle=Horsemanship\nYellow Scarves Cavalry can't block.

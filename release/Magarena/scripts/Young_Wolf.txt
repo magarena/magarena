@@ -6,6 +6,6 @@ type=Creature
 subtype=Wolf
 cost={G}
 pt=1/1
-ability=undying
+ability=Undying
 timing=main
 oracle=Undying

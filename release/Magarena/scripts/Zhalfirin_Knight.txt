@@ -6,6 +6,7 @@ type=Creature
 subtype=Human,Knight
 cost={2}{W}
 pt=2/2
-ability=flanking;{W}{W}: SN gains first strike until end of turn.
+ability=Flanking;\
+        {W}{W}: SN gains first strike until end of turn.
 timing=main
 oracle=Flanking\n{W}{W}: Zhalfirin Knight gains first strike until end of turn.

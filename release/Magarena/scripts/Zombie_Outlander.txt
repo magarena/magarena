@@ -1,11 +1,11 @@
 name=Zombie Outlander
 image=http://magiccards.info/scans/en/cfx/133.jpg
 value=2.952
-ability=protection from green
 rarity=C
 type=Creature
 subtype=Zombie,Scout
 cost={U}{B}
 pt=2/2
+ability=Protection from green
 timing=main
 oracle=Protection from green

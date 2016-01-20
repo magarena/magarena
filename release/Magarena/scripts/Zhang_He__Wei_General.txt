@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Human,Soldier
 cost={3}{B}{B}
 pt=4/2
-ability=horsemanship;\
+ability=Horsemanship;\
         Whenever SN attacks, each other creature you control gets +1/+0 until end of turn.
 timing=main
 oracle=Horsemanship\nWhenever Zhang He, Wei General attacks, each other creature you control gets +1/+0 until end of turn.

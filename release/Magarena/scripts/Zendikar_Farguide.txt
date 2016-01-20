@@ -1,11 +1,11 @@
 name=Zendikar Farguide
 image=http://magiccards.info/scans/en/zen/194.jpg
 value=1.321
-ability=forestwalk
 rarity=C
 type=Creature
 subtype=Elemental
 cost={4}{G}
 pt=3/3
+ability=Forestwalk
 timing=main
 oracle=Forestwalk
