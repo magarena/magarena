@@ -100,6 +100,9 @@ cards/existing_%.txt: cards/existing_scripts_%.txt cards/existing_tokens_%.txt
 cards/groovy.txt: $(wildcard release/Magarena/scripts/*.txt)
 	grep -ho "name=.*" `grep requires_groovy_code -lr release/Magarena/scripts` | sed 's/name=//' | sort > $@
 
+cards/non-groovy.txt: $(wildcard release/Magarena/scripts/*.txt)
+	grep -ho "name=.*" `grep requires_groovy_code -L release/Magarena/scripts/*.txt` | sed 's/name=//' | sort > $@
+
 %_full.txt: scripts/extract_candidates.awk %.txt cards/groovy.txt cards/mtg-data.txt
 	awk -f $^ | sed 's/\t/\n/g'  > $@
 
