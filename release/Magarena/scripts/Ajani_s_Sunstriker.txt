@@ -6,6 +6,6 @@ type=Creature
 subtype=Cat,Cleric
 cost={W}{W}
 pt=2/2
-ability=lifelink
+ability=Lifelink
 timing=main
 oracle=Lifelink

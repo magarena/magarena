@@ -5,7 +5,7 @@ rarity=C
 type=Creature
 subtype=Human,Knight
 cost={2}{W}
-ability=first strike;\
+ability=First strike;\
         When SN enters the battlefield, put a 1/1 white Soldier creature token onto the battlefield.
 pt=2/2
 timing=main

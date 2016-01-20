@@ -6,6 +6,6 @@ type=Creature
 subtype=Goblin,Rogue
 cost={2}{R}
 pt=1/1
-ability={1}{R},Sacrifice a Goblin:SN deals 4 damage to target creature.
+ability={1}{R}, Sacrifice a Goblin: SN deals 4 damage to target creature.
 timing=main
 oracle={1}{R}, Sacrifice a Goblin: Arms Dealer deals 4 damage to target creature.

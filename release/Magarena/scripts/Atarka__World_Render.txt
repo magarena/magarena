@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Dragon
 cost={5}{R}{G}
 pt=6/4
-ability=Flying; trample;\
+ability=Flying, trample;\
         Whenever a Dragon you control attacks, RN gains double strike until end of turn.
 timing=main
 oracle=Flying, trample\nWhenever a Dragon you control attacks, it gains double strike until end of turn.

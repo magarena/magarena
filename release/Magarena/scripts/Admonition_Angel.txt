@@ -6,7 +6,7 @@ type=Creature
 subtype=Angel
 cost={3}{W}{W}{W}
 pt=6/6
-ability=Flying.;\
+ability=Flying;\
         Whenever a land enters the battlefield under your control, you may exile another target nonland permanent.;\
         When SN leaves the battlefield, return all cards exiled with it to the battlefield under their owners' control.
 timing=main

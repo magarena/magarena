@@ -6,6 +6,6 @@ type=Artifact,Creature
 subtype=Bird
 cost={4}
 pt=2/1
-ability=flying;first strike
+ability=Flying, first strike
 timing=artifact
 oracle=Flying, first strike

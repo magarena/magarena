@@ -5,5 +5,5 @@ rarity=U
 type=Enchantment
 cost={1}{W}
 ability=All creatures have protection from black.
-timing=main
+timing=enchantment
 oracle=All creatures have protection from black.

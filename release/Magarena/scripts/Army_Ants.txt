@@ -6,6 +6,6 @@ type=Creature
 subtype=Insect
 cost={1}{B}{R}
 pt=1/1
-ability={T},Sacrifice a land: Destroy target land.
+ability={T}, Sacrifice a land: Destroy target land.
 timing=main
 oracle={T}, Sacrifice a land: Destroy target land.

@@ -6,8 +6,8 @@ type=Creature
 subtype=Elemental,Knight
 cost={1}{B/R}{B/R}{B/R}
 pt=4/1
-ability=Other black creatures you control get +1/+1;\
-        Other red creatures you control get +1/+1;\
+ability=Other black creatures you control get +1/+1.;\
+        Other red creatures you control get +1/+1.;\
         Whenever SN becomes the target of a spell or ability an opponent controls, that spell or ability's controller loses 4 life.
 static=player
 timing=main

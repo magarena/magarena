@@ -6,7 +6,7 @@ type=Creature
 subtype=Skeleton,Wizard
 cost={1}{B}
 pt=1/1
-ability={1}{B}:Regenerate SN.;\
+ability={1}{B}: Regenerate SN.;\
         Sacrifice SN: Target player discards two cards. Activate this ability only during your upkeep.
 timing=main
 oracle={1}{B}: Regenerate Augur of Skulls.\nSacrifice Augur of Skulls: Target player discards two cards. Activate this ability only during your upkeep.

@@ -6,7 +6,7 @@ type=Creature
 subtype=Dragon
 cost={2}{R}{R}
 pt=4/4
-ability=Flying; haste;\
+ability=Flying, haste;\
         At the beginning of the end step, return SN to its owner's hand.
 timing=fmain
 oracle=Flying, haste\nAt the beginning of the end step, return Archwing Dragon to its owner's hand.

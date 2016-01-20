@@ -6,6 +6,6 @@ type=Creature
 subtype=Kirin
 cost={3}{W}
 pt=2/3
-ability=Flying; vigilance
+ability=Flying, vigilance
 timing=main
 oracle=Flying, vigilance

@@ -6,9 +6,9 @@ type=Creature
 subtype=Bird,Soldier
 cost={3}{W}{W}{W}
 pt=3/5
-ability=flying;\
-        other bird creatures get +1/+1;\
-        other soldier creatures get +1/+1
+ability=Flying;\
+        Other Bird creatures get +1/+1.;\
+        Other Soldier creatures get +1/+1.
 static=all
 timing=main
 oracle=Flying\nOther Bird creatures get +1/+1.\nOther Soldier creatures get +1/+1.

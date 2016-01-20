@@ -6,6 +6,6 @@ type=Creature
 subtype=Vedalken,Wizard
 cost={2}{W}{U}
 pt=3/2
-ability=flying;hexproof
+ability=Flying, hexproof
 timing=main
 oracle=Flying, hexproof

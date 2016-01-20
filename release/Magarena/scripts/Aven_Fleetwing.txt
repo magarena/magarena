@@ -6,6 +6,7 @@ type=Creature
 subtype=Bird,Soldier
 cost={3}{U}
 pt=2/2
-ability=flying;hexproof
+ability=Flying;\
+        Hexproof
 timing=fmain
 oracle=Flying\nHexproof

@@ -7,8 +7,8 @@ type=Creature
 subtype=Human,Nomad
 cost={3}{R}
 pt=2/2
-ability=haste;\
-        echo {3}{R};\
+ability=Haste;\
+        Echo {3}{R};\
         When SN enters the battlefield, destroy target land.
 timing=main
 oracle=Haste\nEcho {3}{R}\nWhen Avalanche Riders enters the battlefield, destroy target land.

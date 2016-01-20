@@ -5,7 +5,7 @@ rarity=R
 type=Artifact
 subtype=Equipment
 cost={6}
-ability=Equipped creature gets +6/+6;\
+ability=Equipped creature gets +6/+6.;\
         Whenever equipped creature attacks, destroy target permanent.;\
         Equip {6}
 timing=equipment

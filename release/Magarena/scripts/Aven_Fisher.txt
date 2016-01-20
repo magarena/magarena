@@ -6,6 +6,7 @@ type=Creature
 subtype=Bird,Soldier
 cost={3}{U}
 pt=2/2
-ability=flying;When SN dies, you may draw a card.
+ability=Flying;\
+        When SN dies, you may draw a card.
 timing=main
 oracle=Flying\nWhen Aven Fisher dies, you may draw a card.

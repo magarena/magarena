@@ -6,7 +6,8 @@ type=Legendary,Creature
 subtype=Angel
 cost={5}{W}{W}{W}
 pt=8/8
-ability=flying;vigilance;indestructible;other permanents you control have indestructible
+ability=Flying, vigilance, indestructible;\
+        Other permanents you control have indestructible.
 static=player
 timing=main
 oracle=Flying, vigilance, indestructible\nOther permanents you control have indestructible.

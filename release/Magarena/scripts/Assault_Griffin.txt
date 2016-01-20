@@ -1,11 +1,11 @@
 name=Assault Griffin
 image=http://magiccards.info/scans/en/gtc/4.jpg
 value=2.491
-ability=flying
 rarity=C
 type=Creature
 subtype=Griffin
 cost={3}{W}
+ability=Flying
 pt=3/2
 timing=main
 oracle=Flying

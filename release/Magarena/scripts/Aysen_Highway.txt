@@ -4,6 +4,6 @@ value=1.197
 rarity=R
 type=Enchantment
 cost={3}{W}{W}{W}
-ability=white creatures have plainswalk
+ability=White creatures have plainswalk.
 timing=enchantment
 oracle=White creatures have plainswalk.
