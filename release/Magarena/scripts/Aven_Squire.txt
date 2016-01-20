@@ -1,11 +1,12 @@
 name=Aven Squire
 image=http://magiccards.info/scans/en/m13/6.jpg
 value=3.120
-ability=flying;exalted
 rarity=C
 type=Creature
 subtype=Bird,Soldier
 cost={1}{W}
 pt=1/1
+ability=Flying;\
+        Exalted
 timing=main
 oracle=Flying\nExalted

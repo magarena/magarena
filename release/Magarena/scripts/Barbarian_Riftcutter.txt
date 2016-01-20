@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Barbarian
 cost={4}{R}
 pt=3/3
-ability={R},Sacrifice SN: Destroy target land.
+ability={R}, Sacrifice SN: Destroy target land.
 timing=main
 oracle={R}, Sacrifice Barbarian Riftcutter: Destroy target land.

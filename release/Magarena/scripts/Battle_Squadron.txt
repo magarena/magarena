@@ -6,7 +6,7 @@ type=Creature
 subtype=Goblin
 cost={3}{R}{R}
 pt=*/*
-ability=flying;\
+ability=Flying;\
         SN's power and toughness are each equal to the number of creatures you control.
 timing=main
 oracle=Flying\nBattle Squadron's power and toughness are each equal to the number of creatures you control.

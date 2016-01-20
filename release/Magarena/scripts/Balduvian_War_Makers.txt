@@ -6,6 +6,7 @@ type=Creature
 subtype=Human,Barbarian
 cost={4}{R}
 pt=3/3
-ability=haste;rampage 1
+ability=Haste;\
+        Rampage 1
 timing=fmain
 oracle=Haste\nRampage 1

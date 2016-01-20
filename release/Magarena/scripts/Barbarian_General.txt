@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Barbarian,Soldier
 cost={4}{R}
 pt=3/2
-ability=horsemanship
+ability=Horsemanship
 timing=main
 oracle=Horsemanship

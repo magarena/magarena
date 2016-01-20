@@ -6,6 +6,7 @@ type=Creature
 subtype=Human,Soldier
 cost={2}{W}
 pt=1/4
-ability=defender;extort
+ability=Defender;\
+        Extort
 timing=main
 oracle=Defender\nExtort

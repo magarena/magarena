@@ -6,6 +6,6 @@ type=Creature
 subtype=Griffin
 cost={W}{U}
 pt=2/2
-ability=Flying; protection from enchantments
+ability=Flying, protection from enchantments
 timing=main
 oracle=Flying, protection from enchantments

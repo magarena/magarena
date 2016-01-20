@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Zombie,Dragon
 cost={3}{B}{B}{R}{R}
 pt=4/4
-ability=Flying.;\
+ability=Flying;\
         When SN enters the battlefield, you may return target Dragon permanent card from your graveyard to the battlefield.;\
         {B}{R}: Dragon creatures get +1/+1 until end of turn.
 timing=main

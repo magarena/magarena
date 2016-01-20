@@ -5,7 +5,7 @@ rarity=R
 type=Artifact
 subtype=Equipment
 cost={1}
-ability=Equipped creature has deathtouch and lifelink;\
+ability=Equipped creature has deathtouch and lifelink.;\
         Equip {2}
 timing=equipment
 oracle=Equipped creature has deathtouch and lifelink.\nEquip {2}

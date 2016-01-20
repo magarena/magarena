@@ -7,6 +7,6 @@ type=Land
 mana=b3
 ability=SN enters the battlefield tapped.;\
         {T}: Add {B} to your mana pool.;\
-        cycling {B}
+        Cycling {B}
 timing=tapland
 oracle=Barren Moor enters the battlefield tapped.\n{T}: Add {B} to your mana pool.\nCycling {B}

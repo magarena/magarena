@@ -4,7 +4,7 @@ value=3.756
 rarity=U
 type=Artifact
 cost={3}
-ability={T},Sacrifice a creature:SN deals 1 damage to target creature or player.;\
+ability={T}, Sacrifice a creature: SN deals 1 damage to target creature or player.;\
         Whenever a creature enters the battlefield, you may untap SN.
 timing=artifact
 oracle={T}, Sacrifice a creature: Blasting Station deals 1 damage to target creature or player.\nWhenever a creature enters the battlefield, you may untap Blasting Station.

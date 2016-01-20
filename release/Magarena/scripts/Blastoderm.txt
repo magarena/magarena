@@ -6,6 +6,7 @@ type=Creature
 subtype=Beast
 cost={2}{G}{G}
 pt=5/5
-ability=shroud;fading 3
+ability=Shroud;\
+        Fading 3
 timing=main
 oracle=Shroud\nFading 3

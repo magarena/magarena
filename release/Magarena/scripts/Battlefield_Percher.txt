@@ -6,6 +6,8 @@ type=Creature
 subtype=Bird
 cost={3}{B}{B}
 pt=2/2
-ability=flying;{1}{B}: SN gets +1/+1 until end of turn.;SN can block only creatures with flying.
+ability=Flying;\
+        SN can block only creatures with flying.;\
+        {1}{B}: SN gets +1/+1 until end of turn.
 timing=main
 oracle=Flying\nBattlefield Percher can block only creatures with flying.\n{1}{B}: Battlefield Percher gets +1/+1 until end of turn.

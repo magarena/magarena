@@ -6,7 +6,7 @@ type=Creature
 subtype=Bird
 cost={G}
 pt=0/1
-ability=flying;\
+ability=Flying;\
         {T}: Add one mana of any color to your mana pool.
 timing=main
 oracle=Flying\n{T}: Add one mana of any color to your mana pool.

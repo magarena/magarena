@@ -5,8 +5,8 @@ rarity=U
 type=Creature
 subtype=Spirit
 cost={5}{R}{R}
+pt=7/4
 ability=Haste;\
         SN attacks each turn if able.
-pt=7/4
 timing=fmain
 oracle=Haste\nAshen Monstrosity attacks each turn if able.

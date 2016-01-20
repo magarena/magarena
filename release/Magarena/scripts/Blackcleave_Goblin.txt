@@ -1,11 +1,12 @@
 name=Blackcleave Goblin
 image=http://magiccards.info/scans/en/som/54.jpg
 value=2.483
-ability=haste;infect
 rarity=C
 type=Creature
 subtype=Goblin,Zombie
 cost={3}{B}
 pt=2/1
+ability=Haste;\
+        Infect
 timing=fmain
 oracle=Haste\nInfect

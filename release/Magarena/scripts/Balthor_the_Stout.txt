@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Dwarf,Barbarian
 cost={1}{R}{R}
 pt=2/2
-ability=Other barbarian creatures get +1/+1.;\
+ability=Other Barbarian creatures get +1/+1.;\
         {R}: Another target Barbarian creature gets +1/+0 until end of turn.
 static=all
 timing=main

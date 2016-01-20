@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Spellshaper
 cost={2}{U}
 pt=2/2
-ability={U},{T},Discard a card:Target creature gains flying until end of turn.
+ability={U}, {T}, Discard a card: Target creature gains flying until end of turn.
 timing=main
 oracle={U}, {T}, Discard a card: Target creature gains flying until end of turn.

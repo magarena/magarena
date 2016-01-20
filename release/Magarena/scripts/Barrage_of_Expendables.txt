@@ -4,6 +4,6 @@ value=3.450
 rarity=U
 type=Enchantment
 cost={R}
-ability={R},Sacrifice a creature:SN deals 1 damage to target creature or player.
+ability={R}, Sacrifice a creature: SN deals 1 damage to target creature or player.
 timing=enchantment
 oracle={R}, Sacrifice a creature: Barrage of Expendables deals 1 damage to target creature or player.

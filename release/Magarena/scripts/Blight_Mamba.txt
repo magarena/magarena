@@ -6,7 +6,7 @@ type=Creature
 subtype=Snake
 cost={1}{G}
 pt=1/1
-ability=infect;\
+ability=Infect;\
         {1}{G}: Regenerate SN.
 timing=main
 oracle=Infect\n{1}{G}: Regenerate Blight Mamba.

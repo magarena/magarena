@@ -6,6 +6,7 @@ type=Creature
 subtype=Human,Samurai
 cost={1}{R}
 pt=1/1
-ability=SN attacks each turn if able.;bushido 2
+ability=Bushido 2;\
+        SN attacks each turn if able.
 timing=main
 oracle=Bushido 2\nBattle-Mad Ronin attacks each turn if able.

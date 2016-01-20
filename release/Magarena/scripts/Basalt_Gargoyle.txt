@@ -6,6 +6,8 @@ type=Creature
 subtype=Gargoyle
 cost={2}{R}
 pt=3/2
-ability=flying;echo {2}{R};{R}: SN gets +0/+1 until end of turn.
+ability=Flying;\
+        Echo {2}{R};\
+        {R}: SN gets +0/+1 until end of turn.
 timing=main
 oracle=Flying\nEcho {2}{R}\n{R}: Basalt Gargoyle gets +0/+1 until end of turn.

@@ -5,7 +5,7 @@ rarity=C
 type=Land
 subtype=Gate
 mana=w3u3
-ability={T}: Add {W} or {U} to your mana pool.;\
-        SN enters the battlefield tapped.
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {W} or {U} to your mana pool.
 timing=tapland
 oracle=Azorius Guildgate enters the battlefield tapped.\n{T}: Add {W} or {U} to your mana pool.

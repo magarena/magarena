@@ -6,6 +6,6 @@ type=Creature
 subtype=Ogre,Warrior
 cost={3}{R}{R}
 pt=3/3
-ability={T},Sacrifice an artifact: SN deals 2 damage to target creature or player.
+ability={T}, Sacrifice an artifact: SN deals 2 damage to target creature or player.
 timing=main
 oracle={T}, Sacrifice an artifact: Barrage Ogre deals 2 damage to target creature or player.

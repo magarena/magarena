@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Archer
 cost={G}{G}
 pt=2/1
-ability=Hexproof;reach
+ability=Hexproof, reach
 timing=main
 oracle=Hexproof, reach

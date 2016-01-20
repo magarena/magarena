@@ -6,7 +6,7 @@ type=Creature
 subtype=Bird
 cost={4}{W}
 pt=2/2
-ability=flying;\
+ability=Flying;\
         When SN enters the battlefield, target creature gets +2/+2 and gains flying until end of turn.
 timing=main
 oracle=Flying\nWhen Battleflight Eagle enters the battlefield, target creature gets +2/+2 and gains flying until end of turn.

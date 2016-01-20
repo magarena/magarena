@@ -6,6 +6,7 @@ type=Creature
 subtype=Bird,Soldier
 cost={3}{W}
 pt=1/1
-ability=flying;{2}{W},Discard a card:SN gets +1/+2 until end of turn.
+ability=Flying;\
+        {2}{W}, Discard a card: SN gets +1/+2 until end of turn.
 timing=main
 oracle=Flying\n{2}{W}, Discard a card: Aven Trooper gets +1/+2 until end of turn.

@@ -6,8 +6,7 @@ type=Artifact,Creature
 subtype=Bird
 cost={U}{B}
 pt=1/1
-ability=flying;\
-        deathtouch;\
+ability=Flying, deathtouch;\
         When SN enters the battlefield, draw a card.
 timing=main
 oracle=Flying, deathtouch\nWhen Baleful Strix enters the battlefield, draw a card.

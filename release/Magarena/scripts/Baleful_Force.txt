@@ -6,6 +6,6 @@ type=Creature
 subtype=Elemental
 cost={5}{B}{B}{B}
 pt=7/7
-ability=At the beginning of each upkeep, you draw a card and lose 1 life.
+ability=At the beginning of each upkeep, you draw a card~and you lose 1 life.
 timing=main
 oracle=At the beginning of each upkeep, you draw a card and you lose 1 life.

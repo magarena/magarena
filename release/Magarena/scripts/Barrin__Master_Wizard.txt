@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Human,Wizard
 cost={1}{U}{U}
 pt=1/1
-ability={2},Sacrifice a permanent:Return target creature to its owner's hand.
+ability={2}, Sacrifice a permanent: Return target creature to its owner's hand.
 timing=main
 oracle={2}, Sacrifice a permanent: Return target creature to its owner's hand.
