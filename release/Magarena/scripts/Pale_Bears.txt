@@ -6,6 +6,6 @@ type=Creature
 subtype=Bear
 cost={2}{G}
 pt=2/2
-ability=islandwalk
+ability=Islandwalk
 timing=main
 oracle=Islandwalk

@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental,Cat
 cost={1}{R}{R}{R}
 pt=7/1
-ability=Trample; haste;\
+ability=Trample, haste;\
         At the beginning of the end step, sacrifice SN.;\
         Morph {R}{R}
 timing=main

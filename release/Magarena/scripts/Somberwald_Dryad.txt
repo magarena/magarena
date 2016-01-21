@@ -6,6 +6,6 @@ type=Creature
 subtype=Dryad
 cost={1}{G}
 pt=2/2
-ability=forestwalk
+ability=Forestwalk
 timing=main
 oracle=Forestwalk

@@ -6,7 +6,7 @@ type=Creature
 subtype=Insect
 cost={3}{B}
 pt=1/1
-ability=intimidate;\
+ability=Intimidate;\
         Sacrifice SN: Target player discards two cards. Activate this ability only any time you could cast a sorcery.
 timing=main
 oracle=Intimidate\nSacrifice Brain Weevil: Target player discards two cards. Activate this ability only any time you could cast a sorcery.

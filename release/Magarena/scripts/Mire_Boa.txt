@@ -6,7 +6,7 @@ type=Creature
 subtype=Snake
 cost={1}{G}
 pt=2/1
-ability=swampwalk;\
+ability=Swampwalk;\
         {G}: Regenerate SN.
 timing=main
 oracle=Swampwalk\n{G}: Regenerate Mire Boa.

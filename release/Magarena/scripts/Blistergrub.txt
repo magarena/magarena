@@ -6,7 +6,7 @@ type=Creature
 subtype=Horror
 cost={2}{B}
 pt=2/2
-ability=swampwalk;\
+ability=Swampwalk;\
         When SN dies, each opponent loses 2 life.
 timing=main
 oracle=Swampwalk\nWhen Blistergrub dies, each opponent loses 2 life.

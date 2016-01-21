@@ -6,6 +6,6 @@ type=Creature
 subtype=Horror
 cost={1}{G}{G}
 pt=2/3
-ability=mountainwalk
+ability=Mountainwalk
 timing=main
 oracle=Mountainwalk

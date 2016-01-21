@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Scout
 cost={2}{W}
 pt=2/3
-ability=swampwalk
+ability=Swampwalk
 timing=main
 oracle=Swampwalk

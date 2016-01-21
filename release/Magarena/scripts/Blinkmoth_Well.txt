@@ -4,6 +4,6 @@ value=3.625
 rarity=U
 type=Land
 ability={T}: Add {C} to your mana pool.;\
-        {2},{T}:tap target noncreature artifact.
+        {2}, {T}: Tap target noncreature artifact.
 timing=land
 oracle={T}: Add {C} to your mana pool.\n{2}, {T}: Tap target noncreature artifact.

@@ -6,6 +6,6 @@ type=Creature
 subtype=Badger,Beast
 cost={4}{R}
 pt=3/3
-ability=mountainwalk
+ability=Mountainwalk
 timing=main
 oracle=Mountainwalk

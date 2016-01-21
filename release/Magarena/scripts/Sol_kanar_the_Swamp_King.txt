@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Demon
 cost={2}{U}{B}{R}
 pt=5/5
-ability=swampwalk;\
+ability=Swampwalk;\
         Whenever a player casts a black spell, you gain 1 life.
 timing=main
 oracle=Swampwalk\nWhenever a player casts a black spell, you gain 1 life.

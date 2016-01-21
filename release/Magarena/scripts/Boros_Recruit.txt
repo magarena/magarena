@@ -1,11 +1,11 @@
 name=Boros Recruit
 image=http://magiccards.info/scans/en/rav/243.jpg
 value=3.915
-ability=first strike
 rarity=C
 type=Creature
 subtype=Goblin,Soldier
 cost={R/W}
 pt=1/1
+ability=First strike
 timing=main
 oracle=First strike

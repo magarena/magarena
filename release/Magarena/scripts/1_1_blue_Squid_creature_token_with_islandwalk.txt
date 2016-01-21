@@ -6,5 +6,5 @@ type=Creature
 subtype=Squid
 color=u
 pt=1/1
-ability=islandwalk
+ability=Islandwalk
 oracle=Islandwalk

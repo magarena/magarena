@@ -1,11 +1,11 @@
 name=Border Patrol
 image=http://magiccards.info/scans/en/ju/6.jpg
 value=2.156
-ability=vigilance
 rarity=C
 type=Creature
 subtype=Human,Nomad
 cost={4}{W}
 pt=1/6
+ability=Vigilance
 timing=main
 oracle=Vigilance

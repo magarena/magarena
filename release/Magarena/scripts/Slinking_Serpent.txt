@@ -1,7 +1,7 @@
 name=Slinking Serpent
 image=http://magiccards.info/scans/en/in/274.jpg
 value=1.791
-ability=forestwalk
+ability=Forestwalk
 rarity=U
 type=Creature
 subtype=Serpent

@@ -1,11 +1,11 @@
 name=Bog Imp
 image=http://magiccards.info/scans/en/9e/116.jpg
 value=2.060
-ability=flying
 rarity=C
 type=Creature
 subtype=Imp
 cost={1}{B}
 pt=1/1
+ability=Flying
 timing=main
 oracle=Flying

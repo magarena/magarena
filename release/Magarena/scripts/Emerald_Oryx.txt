@@ -1,7 +1,7 @@
 name=Emerald Oryx
 image=http://magiccards.info/scans/en/m10/179.jpg
 value=1.550
-ability=forestwalk
+ability=Forestwalk
 rarity=C
 type=Creature
 subtype=Antelope

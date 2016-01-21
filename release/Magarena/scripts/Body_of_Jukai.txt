@@ -6,6 +6,7 @@ type=Creature
 subtype=Spirit
 cost={7}{G}{G}
 pt=8/5
-ability=trample;soulshift 8
+ability=Trample;\
+        Soulshift 8
 timing=main
 oracle=Trample\nSoulshift 8

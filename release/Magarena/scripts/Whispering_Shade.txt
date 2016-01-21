@@ -6,6 +6,6 @@ type=Creature
 subtype=Shade
 cost={3}{B}
 pt=1/1
-ability=swampwalk;{B}: SN gets +1/+1 until end of turn.
+ability=Swampwalk;{B}: SN gets +1/+1 until end of turn.
 timing=main
 oracle=Swampwalk\n{B}: Whispering Shade gets +1/+1 until end of turn.

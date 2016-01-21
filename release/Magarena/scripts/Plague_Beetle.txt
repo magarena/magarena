@@ -1,7 +1,7 @@
 name=Plague Beetle
 image=http://magiccards.info/scans/en/10e/168.jpg
 value=2.681
-ability=swampwalk
+ability=Swampwalk
 rarity=C
 type=Creature
 subtype=Insect

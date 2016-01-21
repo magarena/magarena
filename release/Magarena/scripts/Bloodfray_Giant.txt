@@ -6,6 +6,7 @@ type=Creature
 subtype=Giant
 cost={2}{R}{R}
 pt=4/3
-ability=trample;unleash
+ability=Trample;\
+        Unleash
 timing=main
 oracle=Trample\nUnleash

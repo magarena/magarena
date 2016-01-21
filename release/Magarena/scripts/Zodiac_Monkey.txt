@@ -1,7 +1,7 @@
 name=Zodiac Monkey
 image=http://magiccards.info/scans/en/9e/285.jpg
 value=2.516
-ability=forestwalk
+ability=Forestwalk
 rarity=C
 type=Creature
 subtype=Ape

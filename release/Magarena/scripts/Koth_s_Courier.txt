@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Rogue
 cost={1}{R}{R}
 pt=2/3
-ability=forestwalk
+ability=Forestwalk
 timing=main
 oracle=Forestwalk

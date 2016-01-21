@@ -1,7 +1,7 @@
 name=Inkwell Leviathan
 image=http://magiccards.info/scans/en/ddo/37.jpg
 value=4.579
-ability=islandwalk;trample;shroud
+ability=Islandwalk;trample;shroud
 rarity=R
 type=Artifact,Creature
 subtype=Leviathan

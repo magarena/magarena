@@ -6,7 +6,7 @@ type=Creature
 subtype=Horror,Mercenary
 cost={4}{B}{B}
 pt=5/5
-ability=swampwalk;\
+ability=Swampwalk;\
         {5}, {T}: Search your library for a Mercenary permanent card with converted mana cost 5 or less and put it onto the battlefield. Then shuffle your library.
 timing=main
 oracle=Swampwalk\n{5}, {T}: Search your library for a Mercenary permanent card with converted mana cost 5 or less and put it onto the battlefield. Then shuffle your library.

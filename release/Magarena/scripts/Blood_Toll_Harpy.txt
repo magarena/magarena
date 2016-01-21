@@ -6,7 +6,7 @@ type=Creature
 subtype=Harpy
 cost={2}{B}
 pt=2/1
-ability=flying;\
+ability=Flying;\
         When SN enters the battlefield, each player loses 1 life.
 timing=main
 oracle=Flying\nWhen Blood-Toll Harpy enters the battlefield, each player loses 1 life.

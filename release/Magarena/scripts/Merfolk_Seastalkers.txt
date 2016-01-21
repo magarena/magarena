@@ -6,7 +6,7 @@ type=Creature
 subtype=Merfolk,Scout
 cost={3}{U}
 pt=2/3
-ability=islandwalk;\
+ability=Islandwalk;\
         {2}{U}: Tap target creature without flying.
 timing=main
 oracle=Islandwalk\n{2}{U}: Tap target creature without flying.

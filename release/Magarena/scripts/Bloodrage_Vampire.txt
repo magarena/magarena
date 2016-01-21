@@ -6,6 +6,6 @@ type=Creature
 subtype=Vampire
 cost={2}{B}
 pt=3/1
-ability=bloodthirst 1
+ability=Bloodthirst 1
 timing=main
 oracle=Bloodthirst 1

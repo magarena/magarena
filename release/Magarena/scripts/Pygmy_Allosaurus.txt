@@ -6,6 +6,6 @@ type=Creature
 subtype=Lizard
 cost={2}{G}
 pt=2/2
-ability=swampwalk
+ability=Swampwalk
 timing=main
 oracle=Swampwalk

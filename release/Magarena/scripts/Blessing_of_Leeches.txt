@@ -5,7 +5,7 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{B}
-ability=flash;\
+ability=Flash;\
         At the beginning of your upkeep, you lose 1 life.;\
         {0}: Regenerate enchanted creature. Activate this ability with AI no more than three times each turn.
 enchant=pump,pos creature

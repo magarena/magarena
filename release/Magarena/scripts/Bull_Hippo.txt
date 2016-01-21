@@ -1,7 +1,7 @@
 name=Bull Hippo
 image=http://magiccards.info/scans/en/7e/233.jpg
 value=3.347
-ability=islandwalk
+ability=Islandwalk
 rarity=U
 type=Creature
 subtype=Hippo

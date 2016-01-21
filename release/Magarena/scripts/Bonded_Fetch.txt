@@ -6,7 +6,7 @@ type=Creature
 subtype=Homunculus
 cost={2}{U}
 pt=0/2
-ability=defender;haste;\
+ability=Defender, haste;\
         {T}: Draw a card, then discard a card.
 timing=fmain
 oracle=Defender, haste\n{T}: Draw a card, then discard a card.

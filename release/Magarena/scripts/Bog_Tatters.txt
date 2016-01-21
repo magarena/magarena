@@ -1,11 +1,11 @@
 name=Bog Tatters
 image=http://magiccards.info/scans/en/zen/84.jpg
 value=2.120
-ability=swampwalk
 rarity=C
 type=Creature
 subtype=Wraith
 cost={4}{B}
 pt=4/2
+ability=Swampwalk
 timing=main
 oracle=Swampwalk

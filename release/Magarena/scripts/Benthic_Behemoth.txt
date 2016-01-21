@@ -1,11 +1,11 @@
 name=Benthic Behemoth
 image=http://magiccards.info/scans/en/7e/63.jpg
 value=2.875
-ability=islandwalk
 rarity=R
 type=Creature
 subtype=Serpent
 cost={5}{U}{U}{U}
 pt=7/6
+ability=Islandwalk
 timing=main
 oracle=Islandwalk

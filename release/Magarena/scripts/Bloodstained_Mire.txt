@@ -3,6 +3,6 @@ image=http://magiccards.info/scans/en/ktk/230.jpg
 value=4.333
 rarity=R
 type=Land
-ability={T},Pay 1 life,Sacrifice SN:Search your library for a Swamp or Mountain card and put it onto the battlefield. Then shuffle your library.
+ability={T}, Pay 1 life, Sacrifice SN: Search your library for a Swamp or Mountain card and put it onto the battlefield. Then shuffle your library.
 timing=land
 oracle={T}, Pay 1 life, Sacrifice Bloodstained Mire: Search your library for a Swamp or Mountain card and put it onto the battlefield. Then shuffle your library.

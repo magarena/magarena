@@ -6,6 +6,6 @@ type=Creature
 subtype=Giant
 cost={5}{U}
 pt=4/5
-ability=hexproof
+ability=Hexproof
 timing=main
 oracle=Hexproof

@@ -6,6 +6,6 @@ type=Creature
 subtype=Horror
 cost={3}{B}
 pt=3/3
-ability=swampwalk
+ability=Swampwalk
 timing=main
 oracle=Swampwalk

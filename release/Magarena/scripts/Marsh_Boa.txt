@@ -6,6 +6,6 @@ type=Creature
 subtype=Snake
 cost={G}
 pt=1/1
-ability=swampwalk
+ability=Swampwalk
 timing=main
 oracle=Swampwalk

@@ -6,6 +6,6 @@ type=Creature
 subtype=Cat,Warrior
 cost={1}{G}{G}
 pt=2/2
-ability=forestwalk
+ability=Forestwalk
 timing=main
 oracle=Forestwalk

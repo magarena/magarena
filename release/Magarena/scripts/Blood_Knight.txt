@@ -1,11 +1,11 @@
 name=Blood Knight
 image=http://magiccards.info/scans/en/pc/115.jpg
 value=4.274
-ability=first strike;protection from white
 rarity=U
 type=Creature
 subtype=Human,Knight
 cost={R}{R}
 pt=2/2
+ability=First strike, protection from white
 timing=main
 oracle=First strike, protection from white

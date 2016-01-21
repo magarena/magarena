@@ -6,6 +6,6 @@ type=Creature
 subtype=Insect
 cost={U}{B}
 pt=2/1
-ability=forestwalk;protection from green
+ability=Forestwalk;protection from green
 timing=main
 oracle=Forestwalk, protection from green

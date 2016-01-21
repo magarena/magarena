@@ -6,6 +6,6 @@ type=Creature
 subtype=Wall
 cost={2}{R}
 pt=5/2
-ability=defender
+ability=Defender
 timing=main
 oracle=Defender

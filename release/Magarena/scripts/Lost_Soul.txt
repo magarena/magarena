@@ -6,6 +6,6 @@ type=Creature
 subtype=Spirit,Minion
 cost={1}{B}{B}
 pt=2/1
-ability=swampwalk
+ability=Swampwalk
 timing=main
 oracle=Swampwalk

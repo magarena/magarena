@@ -1,7 +1,7 @@
 name=Marsh Threader
 image=http://magiccards.info/scans/en/wwk/14.jpg
 value=2.616
-ability=swampwalk
+ability=Swampwalk
 rarity=C
 type=Creature
 subtype=Kor,Scout

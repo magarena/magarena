@@ -6,7 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={2}{G}
 ability=Enchanted creature gets +3/+3.;\
-        totem armor
+        Totem armor
 timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature gets +3/+3.\nTotem armor

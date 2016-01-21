@@ -1,7 +1,7 @@
 name=Leaf Dancer
 image=http://magiccards.info/scans/en/od/249.jpg
 value=2.400
-ability=forestwalk
+ability=Forestwalk
 rarity=C
 type=Creature
 subtype=Centaur

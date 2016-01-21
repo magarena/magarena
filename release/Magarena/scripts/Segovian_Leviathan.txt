@@ -6,6 +6,6 @@ type=Creature
 subtype=Leviathan
 cost={4}{U}
 pt=3/3
-ability=islandwalk
+ability=Islandwalk
 timing=main
 oracle=Islandwalk

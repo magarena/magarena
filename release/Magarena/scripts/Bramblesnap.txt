@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental
 cost={1}{G}
 pt=1/1
-ability=trample;\
+ability=Trample;\
         Tap an untapped creature you control: SN gets +1/+1 until end of turn.
 timing=main
 oracle=Trample\nTap an untapped creature you control: Bramblesnap gets +1/+1 until end of turn.

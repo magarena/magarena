@@ -6,7 +6,7 @@ type=Creature
 subtype=Bat
 cost={3}{B}
 pt=2/2
-ability=flying;\
-        When SN enters the battlefield, target opponent loses 2 life and you gain 2 life.
+ability=Flying;\
+        When SN enters the battlefield, target player loses 2 life and you gain 2 life.
 timing=main
 oracle=Flying\nWhen Bloodhunter Bat enters the battlefield, target player loses 2 life and you gain 2 life.

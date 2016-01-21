@@ -6,6 +6,6 @@ type=Creature
 subtype=Horse
 cost={3}{G}
 pt=3/3
-ability=islandwalk
+ability=Islandwalk
 timing=main
 oracle=Islandwalk

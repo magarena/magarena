@@ -7,8 +7,8 @@ type=Creature
 subtype=Minion
 cost={2}{B}
 pt=1/1
-ability=flying;\
-        echo {2}{B};\
+ability=Flying;\
+        Echo {2}{B};\
         When SN enters the battlefield, destroy target nonartifact, nonblack creature.
 timing=main
 oracle=Flying\nEcho {2}{B}\nWhen Bone Shredder enters the battlefield, destroy target nonartifact, nonblack creature.

@@ -6,6 +6,6 @@ type=Creature
 subtype=Snake
 cost={3}{G}
 pt=2/2
-ability=swampwalk;{T}:Target black creature gets -2/-0 until end of turn.
+ability=Swampwalk;{T}:Target black creature gets -2/-0 until end of turn.
 timing=main
 oracle=Swampwalk\n{T}: Target black creature gets -2/-0 until end of turn.

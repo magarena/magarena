@@ -4,6 +4,6 @@ value=2.667
 rarity=U
 type=Artifact
 cost={1}
-ability={2},{T},Sacrifice SN:Search your library for a basic land card, reveal it, and put it into your hand. Then shuffle your library.
+ability={2}, {T}, Sacrifice SN: Search your library for a basic land card, reveal that card, and put it into your hand. Then shuffle your library.
 timing=artifact
 oracle={2}, {T}, Sacrifice Braidwood Sextant: Search your library for a basic land card, reveal that card, and put it into your hand. Then shuffle your library.
