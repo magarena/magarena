@@ -6,7 +6,8 @@ type=Creature
 subtype=Spirit
 cost={4}{U}
 pt=3/3
-ability=flying;other spirit creatures you control get +1/+0
+ability=Flying;\
+        Other Spirit creatures you control get +1/+0.
 static=player
 timing=main
 oracle=Flying\nOther Spirit creatures you control get +1/+0.

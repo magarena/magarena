@@ -4,6 +4,6 @@ value=3.083
 rarity=U
 type=Artifact
 cost={2}
-ability={3},Sacrifice a creature: Draw a card.
+ability={3}, Sacrifice a creature: Draw a card.
 timing=artifact
 oracle={3}, Sacrifice a creature: Draw a card.

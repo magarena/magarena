@@ -6,7 +6,7 @@ type=Creature
 subtype=Kithkin,Soldier
 cost={2}{W}
 pt=2/2
-ability=flying;\
+ability=Flying;\
         Reinforce 2—{2}{W}
 timing=main
 oracle=Flying\nReinforce 2—{2}{W}

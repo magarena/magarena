@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Wizard
 cost={U}
 pt=1/1
-ability={T}:Target player puts the top card of his or her library into his or her graveyard.
+ability={T}: Target player puts the top card of his or her library into his or her graveyard.
 timing=main
 oracle={T}: Target player puts the top card of his or her library into his or her graveyard.

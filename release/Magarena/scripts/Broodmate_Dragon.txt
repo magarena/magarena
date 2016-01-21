@@ -6,7 +6,7 @@ type=Creature
 subtype=Dragon
 cost={3}{B}{R}{G}
 pt=4/4
-ability=flying;\
+ability=Flying;\
         When SN enters the battlefield, put a 4/4 red Dragon creature token with flying onto the battlefield.
 timing=main
 oracle=Flying\nWhen Broodmate Dragon enters the battlefield, put a 4/4 red Dragon creature token with flying onto the battlefield.

@@ -6,7 +6,7 @@ type=Creature
 subtype=Pegasus
 cost={1}{W}
 pt=1/1
-ability=flying;\
-        Whenever SN attacks, attacking Humans gain flying until end of turn.
+ability=Flying;\
+        Whenever SN attacks, each attacking Human gains flying until end of turn.
 timing=main
 oracle=Flying\nWhenever Cavalry Pegasus attacks, each attacking Human gains flying until end of turn.

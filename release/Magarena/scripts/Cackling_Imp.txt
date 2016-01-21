@@ -6,7 +6,7 @@ type=Creature
 subtype=Imp
 cost={2}{B}{B}
 pt=2/2
-ability=flying;\
+ability=Flying;\
         {T}: Target player loses 1 life.
 timing=main
 oracle=Flying\n{T}: Target player loses 1 life.

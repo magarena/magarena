@@ -6,7 +6,8 @@ type=Creature
 subtype=Wurm
 cost={3}{G}{G}
 pt=4/4
-ability=intimidate;other green creatures you control have intimidate
+ability=Intimidate;\
+        Other green creatures you control have intimidate.
 static=player
 timing=main
 oracle=Intimidate\nOther green creatures you control have intimidate.

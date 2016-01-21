@@ -1,11 +1,11 @@
 name=Bull Hippo
 image=http://magiccards.info/scans/en/7e/233.jpg
 value=3.347
-ability=Islandwalk
 rarity=U
 type=Creature
 subtype=Hippo
 cost={3}{G}
 pt=3/3
+ability=Islandwalk
 timing=main
 oracle=Islandwalk

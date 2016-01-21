@@ -6,7 +6,7 @@ type=Creature
 subtype=Harpy,Beast
 cost={U}{B}
 pt=2/1
-ability=flying;\
+ability=Flying;\
         When SN enters the battlefield, return a blue or black creature you control to its owner's hand.;\
         Pay 1 life: Return SN to its owner's hand.
 timing=main

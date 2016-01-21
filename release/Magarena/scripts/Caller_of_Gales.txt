@@ -6,6 +6,6 @@ type=Creature
 subtype=Merfolk,Wizard
 cost={U}
 pt=1/1
-ability={1}{U},{T}:Target creature gains flying until end of turn.
+ability={1}{U}, {T}: Target creature gains flying until end of turn.
 timing=main
 oracle={1}{U}, {T}: Target creature gains flying until end of turn.

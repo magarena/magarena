@@ -6,6 +6,6 @@ type=Creature
 subtype=Zombie,Wolf
 cost={3}{B}
 pt=2/2
-ability=Pay 1 life:SN gets +2/-1 until end of turn.
+ability=Pay 1 life: SN gets +2/-1 until end of turn.
 timing=main
 oracle=Pay 1 life: Carrion Howler gets +2/-1 until end of turn.

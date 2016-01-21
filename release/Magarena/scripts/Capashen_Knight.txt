@@ -6,6 +6,7 @@ type=Creature
 subtype=Human,Knight
 cost={1}{W}
 pt=1/1
-ability=first strike;{1}{W}: SN gets +1/+0 until end of turn.
+ability=First strike;\
+        {1}{W}: SN gets +1/+0 until end of turn.
 timing=main
 oracle=First strike\n{1}{W}: Capashen Knight gets +1/+0 until end of turn.

@@ -6,6 +6,7 @@ type=Creature
 subtype=Wall
 cost={2}{B}
 pt=0/5
-ability=defender;protection from black
+ability=Defender;\
+        Protection from black
 timing=main
 oracle=Defender\nProtection from black

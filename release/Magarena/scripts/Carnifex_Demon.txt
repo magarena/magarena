@@ -6,7 +6,8 @@ type=Creature
 subtype=Demon
 cost={4}{B}{B}
 pt=6/6
-ability=flying;SN enters the battlefield with two -1/-1 counters on it.;\
+ability=Flying;\
+        SN enters the battlefield with two -1/-1 counters on it.;\
         {B}, Remove a -1/-1 counter from SN: Put a -1/-1 counter on each other creature.
 timing=fmain
 oracle=Flying\nCarnifex Demon enters the battlefield with two -1/-1 counters on it.\n{B}, Remove a -1/-1 counter from Carnifex Demon: Put a -1/-1 counter on each other creature.

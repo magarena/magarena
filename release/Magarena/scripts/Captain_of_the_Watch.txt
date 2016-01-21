@@ -6,9 +6,8 @@ type=Creature
 subtype=Human,Soldier
 cost={4}{W}{W}
 pt=3/3
-ability=vigilance;\
-        other soldier creatures you control get +1/+1;\
-        other soldier creatures you control have vigilance;\
+ability=Vigilance;\
+        Other Soldier creatures you control get +1/+1 and have vigilance.;\
         When SN enters the battlefield, put three 1/1 white Soldier creature tokens onto the battlefield.
 static=player
 timing=main

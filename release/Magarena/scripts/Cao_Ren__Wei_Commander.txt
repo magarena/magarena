@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Human,Soldier,Warrior
 cost={2}{B}{B}
 pt=3/3
-ability=horsemanship;\
+ability=Horsemanship;\
         When SN enters the battlefield, you lose 3 life.
 timing=main
 oracle=Horsemanship\nWhen Cao Ren, Wei Commander enters the battlefield, you lose 3 life.

@@ -6,6 +6,7 @@ type=Creature
 subtype=Wurm
 cost={6}{G}
 pt=6/6
-ability=bloodthirst 3;trample
+ability=Bloodthirst 3;\
+        Trample
 timing=main
 oracle=Bloodthirst 3\nTrample

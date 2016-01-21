@@ -6,7 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={W}
 ability=Enchanted creature gets +1/+1.;\
-        {2},Sacrifice SN: Draw a card.
+        {2}, Sacrifice SN: Draw a card.
 timing=enchantment
 enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature gets +1/+1.\n{2}, Sacrifice Capashen Standard: Draw a card.

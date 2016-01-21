@@ -6,6 +6,7 @@ type=Creature
 subtype=Insect
 cost={2}{R}
 pt=0/3
-ability=Mountainwalk;{R}: SN gets +1/-1 until end of turn.
+ability=Mountainwalk;\
+        {R}: SN gets +1/-1 until end of turn.
 timing=main
 oracle=Mountainwalk\n{R}: Cavern Crawler gets +1/-1 until end of turn.

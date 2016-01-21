@@ -6,6 +6,7 @@ type=Creature
 subtype=Bird,Soldier
 cost={4}{W}
 pt=2/3
-ability=flying;{W}: SN gets +0/+1 until end of turn.
+ability=Flying;\
+        {W}: SN gets +0/+1 until end of turn.
 timing=main
 oracle=Flying\n{W}: Aven Flock gets +0/+1 until end of turn.

@@ -6,6 +6,7 @@ type=Creature
 subtype=Nightmare,Horse
 cost={4}{B}{R}
 pt=5/4
-ability=first strike;haste;unleash
+ability=First strike, haste;\
+        Unleash
 timing=main
 oracle=First strike, haste\nUnleash

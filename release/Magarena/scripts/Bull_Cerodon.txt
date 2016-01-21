@@ -6,6 +6,6 @@ type=Creature
 subtype=Beast
 cost={4}{R}{W}
 pt=5/5
-ability=vigilance;haste
+ability=Vigilance, haste
 timing=fmain
 oracle=Vigilance, haste

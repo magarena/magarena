@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Knight
 cost={1}{W}
 pt=2/2
-ability=flanking
+ability=Flanking
 timing=main
 oracle=Flanking

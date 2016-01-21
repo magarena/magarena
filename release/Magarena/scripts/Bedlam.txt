@@ -4,6 +4,6 @@ value=4.137
 rarity=R
 type=Enchantment
 cost={2}{R}{R}
-ability=all creatures can't block.
+ability=Creatures can't block.
 timing=enchantment
 oracle=Creatures can't block.

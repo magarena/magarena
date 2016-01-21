@@ -4,6 +4,7 @@ value=1.803
 rarity=C
 type=Enchantment
 cost={1}{U}{U}
-ability=cumulative upkeep {U};{1}:Target creature gains flying until end of turn.
+ability=Cumulative upkeep {U};\
+        {1}: Target creature gains flying until end of turn.
 timing=enchantment
 oracle=Cumulative upkeep {U}\n{1}: Target creature gains flying until end of turn.

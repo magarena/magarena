@@ -4,6 +4,7 @@ value=2.700
 rarity=U
 type=Enchantment
 cost={2}{U}{U}
-ability=cumulative upkeep {U};green creatures have cumulative upkeep {1}
+ability=Cumulative upkeep {U};\
+        Green creatures have "Cumulative upkeep {1}."
 timing=enchantment
 oracle=Cumulative upkeep {U}\nGreen creatures have "Cumulative upkeep {1}."

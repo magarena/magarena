@@ -181,7 +181,7 @@ public enum MagicAbility {
             card.add(FadeVanishCounterTrigger.Time);
         }
     },
-    CumulativeUpkeep("cumulative upkeep " + ARG.MANACOST,-30) {
+    CumulativeUpkeep("cumulative upkeep " + ARG.MANACOST + "(\\.)?",-30) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
             card.add(new CumulativeUpkeepTrigger(manaCost));
@@ -1310,7 +1310,7 @@ public enum MagicAbility {
             ));
         }
     },
-    LordPumpGain(ARG.WORDRUN + " get(s)? " + ARG.PT + "(,)? (and|has) " + ARG.ANY + "(\\.)?", 0) {
+    LordPumpGain(ARG.WORDRUN + " get(s)? " + ARG.PT + "(,)? (and|has|and have) " + ARG.ANY + "(\\.)?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int[] pt = ARG.pt(arg);
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(ARG.wordrun(arg));

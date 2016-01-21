@@ -6,7 +6,7 @@ rarity=C
 type=Land
 subtype=Gate
 mana=r3w3
-ability={T}: Add {R} or {W} to your mana pool.;\
-        SN enters the battlefield tapped.
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {R} or {W} to your mana pool.
 timing=tapland
 oracle=Boros Guildgate enters the battlefield tapped.\n{T}: Add {R} or {W} to your mana pool.

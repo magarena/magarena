@@ -6,6 +6,6 @@ type=Creature
 subtype=Merfolk,Rogue
 cost={3}{U}{U}
 pt=4/4
-ability=At the beginning of your upkeep, return target permanent you control to its owner's hand.
+ability=At the beginning of your upkeep, return a permanent you control to its owner's hand.
 timing=main
 oracle=At the beginning of your upkeep, return a permanent you control to its owner's hand.

@@ -6,7 +6,8 @@ type=Creature
 subtype=Cat,Warrior
 cost={5}{G}
 pt=6/6
-ability=trample;cumulative upkeep {G/W};\
+ability=Trample;\
+        Cumulative upkeep {G/W};\
         When SN dies, you gain 2 life for each age counter on SN.
 timing=main
 oracle=Trample\nCumulative upkeep {G} or {W}\nWhen Arctic Nishoba dies, you gain 2 life for each age counter on it.

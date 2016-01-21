@@ -1,11 +1,11 @@
 name=Caravan Hurda
 image=http://magiccards.info/scans/en/zen/5.jpg
 value=1.191
-ability=lifelink
 rarity=C
 type=Creature
 subtype=Giant
 cost={4}{W}
 pt=1/5
+ability=Lifelink
 timing=main
 oracle=Lifelink

@@ -7,7 +7,7 @@ subtype=Bringer
 cost={7}{U}{U}
 pt=5/5
 ability=You may pay {W}{U}{B}{R}{G} rather than pay SN's mana cost.;\
-        trample;\
+        Trample;\
         At the beginning of your upkeep, you may draw two cards.
 timing=main
 oracle=You may pay {W}{U}{B}{R}{G} rather than pay Bringer of the Blue Dawn's mana cost.\nTrample\nAt the beginning of your upkeep, you may draw two cards.
