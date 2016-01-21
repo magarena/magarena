@@ -6,6 +6,7 @@ type=Creature
 subtype=Horror,Mercenary
 cost={3}{B}{B}
 pt=4/3
-ability={4}, {T}: Search your library for a Mercenary permanent card with converted mana cost 4 or less and put it onto the battlefield. Then shuffle your library.
+ability=Fear;\
+        {4}, {T}: Search your library for a Mercenary permanent card with converted mana cost 4 or less and put it onto the battlefield. Then shuffle your library.
 timing=main
 oracle=Fear\n{4}, {T}: Search your library for a Mercenary permanent card with converted mana cost 4 or less and put it onto the battlefield. Then shuffle your library.
