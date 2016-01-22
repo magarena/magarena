@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Pirate,Scout
 cost={1}{U}
 pt=1/2
-ability=flying
+ability=Flying
 timing=main
 oracle=Flying

@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental,Soldier
 cost={1}{R}{R}{W}
 pt=6/1
-ability=trample;\
+ability=Trample;\
         haste;\
         lifelink;\
         At the beginning of the end step, sacrifice SN.

@@ -6,6 +6,7 @@ type=Artifact,Creature
 subtype=Drake
 cost={4}{U}
 pt=3/3
-ability=flying;{1}{W}: SN gains vigilance until end of turn.
+ability=Flying;\
+        {1}{W}: SN gains vigilance until end of turn.
 timing=main
 oracle=Flying\n{1}{W}: Cloudheath Drake gains vigilance until end of turn.

@@ -5,6 +5,6 @@ value=2
 pt=2/2
 color=GB
 type=Creature
-ability=flying
+ability=Flying
 subtype=Drake
 oracle=Flying

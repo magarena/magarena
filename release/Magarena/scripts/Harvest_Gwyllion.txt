@@ -1,7 +1,7 @@
 name=Harvest Gwyllion
 image=http://magiccards.info/scans/en/eve/90.jpg
 value=2.564
-ability=wither
+ability=Wither
 rarity=C
 type=Creature
 subtype=Hag

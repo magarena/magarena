@@ -6,7 +6,7 @@ type=Creature
 subtype=Insect
 cost={3}{G}
 pt=1/1
-ability=flying;\
+ability=Flying;\
         {G}: Regenerate SN.;\
         {G}: Untap SN. Activate this ability only once each turn.
 timing=main

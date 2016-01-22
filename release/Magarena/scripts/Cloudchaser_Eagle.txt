@@ -6,7 +6,7 @@ type=Creature
 subtype=Bird
 cost={3}{W}
 pt=2/2
-ability=flying;\
+ability=Flying;\
         When SN enters the battlefield, destroy target enchantment.
 timing=main
 oracle=Flying\nWhen Cloudchaser Eagle enters the battlefield, destroy target enchantment.

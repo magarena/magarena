@@ -6,6 +6,6 @@ type=Creature
 subtype=Faerie
 cost={1}{G}
 pt=1/1
-ability=flying
+ability=Flying
 timing=main
 oracle=Flying

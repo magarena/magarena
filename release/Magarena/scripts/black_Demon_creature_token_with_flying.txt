@@ -7,5 +7,5 @@ type=Creature
 subtype=Demon
 color=b
 pt=*/*
-ability=flying
+ability=Flying
 oracle=Flying

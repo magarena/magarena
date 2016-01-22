@@ -1,11 +1,11 @@
 name=Cloudcrown Oak
 image=http://magiccards.info/scans/en/lw/201.jpg
 value=3.075
-ability=reach
 rarity=C
 type=Creature
 subtype=Treefolk,Warrior
 cost={2}{G}{G}
 pt=3/4
+ability=Reach
 timing=main
 oracle=Reach

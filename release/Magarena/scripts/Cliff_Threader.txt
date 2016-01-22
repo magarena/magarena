@@ -1,11 +1,11 @@
 name=Cliff Threader
 image=http://magiccards.info/scans/en/zen/7.jpg
 value=2.500
-ability=Mountainwalk
 rarity=C
 type=Creature
 subtype=Kor,Scout
 cost={1}{W}
 pt=2/1
+ability=Mountainwalk
 timing=main
 oracle=Mountainwalk

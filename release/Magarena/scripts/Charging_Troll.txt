@@ -6,7 +6,7 @@ type=Creature
 subtype=Troll
 cost={2}{G}{W}
 pt=3/3
-ability=vigilance;\
+ability=Vigilance;\
         {G}: Regenerate SN.
 timing=main
 oracle=Vigilance\n{G}: Regenerate Charging Troll.

@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Knight
 cost={4}{U}
 pt=3/2
-ability=flying;\
+ability=Flying;\
         When SN enters the battlefield, draw a card.
 timing=main
 oracle=Flying\nWhen Gryff Vanguard enters the battlefield, draw a card.

@@ -1,7 +1,7 @@
 name=Welkin Tern
 image=http://magiccards.info/scans/en/m15/84.jpg
 value=3.083
-ability=flying;SN can block only creatures with flying.
+ability=Flying;SN can block only creatures with flying.
 rarity=C
 type=Creature
 subtype=Bird

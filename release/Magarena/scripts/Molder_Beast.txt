@@ -6,7 +6,7 @@ type=Creature
 subtype=Beast
 cost={4}{G}
 pt=5/3
-ability=trample;\
+ability=Trample;\
         Whenever an artifact is put into a graveyard from the battlefield, SN gets +2/+0 until end of turn.
 timing=main
 oracle=Trample\nWhenever an artifact is put into a graveyard from the battlefield, Molder Beast gets +2/+0 until end of turn.

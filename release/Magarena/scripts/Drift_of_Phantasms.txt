@@ -6,6 +6,6 @@ type=Creature
 subtype=Spirit
 cost={2}{U}
 pt=0/5
-ability=flying;defender;Transmute {1}{U}{U}
+ability=Flying;defender;Transmute {1}{U}{U}
 timing=main
 oracle=Defender\nFlying\nTransmute {1}{U}{U}

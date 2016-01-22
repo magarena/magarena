@@ -6,6 +6,6 @@ type=Creature
 subtype=Vampire
 cost={4}{B}{B}
 pt=3/2
-ability=flying;undying
+ability=Flying;undying
 timing=main
 oracle=Flying\nUndying

@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Kirin,Spirit
 cost={2}{W}{W}
 pt=3/3
-ability=flying
+ability=Flying
 timing=main
 requires_groovy_code
 oracle=Flying\nWhenever you cast a Spirit or Arcane spell, destroy all permanents with that spell's converted mana cost.

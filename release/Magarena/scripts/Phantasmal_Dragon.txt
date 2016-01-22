@@ -6,7 +6,7 @@ type=Creature
 subtype=Dragon,Illusion
 cost={2}{U}{U}
 pt=5/5
-ability=flying;\
+ability=Flying;\
         When SN becomes the target of a spell or ability, sacrifice it.
 timing=main
 oracle=Flying\nWhen Phantasmal Dragon becomes the target of a spell or ability, sacrifice it.

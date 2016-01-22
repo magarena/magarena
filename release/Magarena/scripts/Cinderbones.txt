@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental,Skeleton
 cost={2}{B}
 pt=1/1
-ability=wither;\
+ability=Wither;\
         {1}{B}: Regenerate SN.
 timing=main
 oracle=Wither\n{1}{B}: Regenerate Cinderbones.

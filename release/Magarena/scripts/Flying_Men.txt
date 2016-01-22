@@ -6,6 +6,6 @@ type=Creature
 subtype=Human
 cost={U}
 pt=1/1
-ability=flying
+ability=Flying
 timing=main
 oracle=Flying

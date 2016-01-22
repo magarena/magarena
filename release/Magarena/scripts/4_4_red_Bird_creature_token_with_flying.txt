@@ -5,6 +5,6 @@ value=3
 type=Creature
 subtype=Bird
 color=r
-ability=flying
+ability=Flying
 pt=4/4
 oracle=Flying

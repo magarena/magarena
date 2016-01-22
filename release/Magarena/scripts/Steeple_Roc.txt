@@ -6,6 +6,6 @@ type=Creature
 subtype=Bird
 cost={4}{W}
 pt=3/1
-ability=flying;first strike
+ability=Flying;first strike
 timing=main
 oracle=Flying, first strike

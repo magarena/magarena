@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Spirit
 cost={4}{U}{U}
 pt=*/*
-ability=flying;\
+ability=Flying;\
         SN's power and toughness are each equal to the number of cards in your hand.;\
         {4},Return a land you control to its owner's hand: Draw a card.
 timing=main

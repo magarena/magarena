@@ -1,7 +1,7 @@
 name=Trained Caracal
 image=http://magiccards.info/scans/en/rtr/27.jpg
 value=2.711
-ability=lifelink
+ability=Lifelink
 rarity=C
 type=Creature
 subtype=Cat

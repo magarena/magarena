@@ -6,7 +6,7 @@ type=Creature
 subtype=Treefolk
 cost={2}{G}{G}{G}
 pt=5/3
-ability=trample;\
+ability=Trample;\
         When SN dies, return SN from the graveyard to its owner's hand.
 timing=main
 oracle=Trample\nWhen Weatherseed Treefolk dies, return it to its owner's hand.

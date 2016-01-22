@@ -6,6 +6,6 @@ type=Creature
 subtype=Vampire,Scout
 cost={1}{B}
 pt=2/1
-ability=flying;SN can't block.
+ability=Flying;SN can't block.
 timing=main
 oracle=Flying\nVampire Interloper can't block.

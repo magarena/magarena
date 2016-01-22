@@ -6,7 +6,7 @@ type=Creature
 subtype=Cat,Knight
 cost={1}{W}{W}
 pt=2/2
-ability=flying;\
+ability=Flying;\
         When SN enters the battlefield, you gain 2 life.
 timing=main
 oracle=Flying\nWhen Kemba's Skyguard enters the battlefield, you gain 2 life.

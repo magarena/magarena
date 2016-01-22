@@ -6,7 +6,7 @@ type=Creature
 subtype=Wurm
 cost={8}{G}{G}{G}
 pt=15/15
-ability=trample;\
+ability=Trample;\
         When SN is put into a graveyard from anywhere, shuffle it into its owner's library.;\
         When SN dies, put three 5/5 green Wurm creature tokens with trample onto the battlefield.
 timing=main

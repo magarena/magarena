@@ -6,6 +6,6 @@ type=Creature
 subtype=Drake
 cost={2}{U}{U}
 pt=2/4
-ability=flying;When SN dies, draw a card.
+ability=Flying;When SN dies, draw a card.
 timing=main
 oracle=Flying\nWhen Darkslick Drake dies, draw a card.

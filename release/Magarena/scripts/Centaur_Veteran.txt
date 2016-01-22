@@ -6,7 +6,7 @@ type=Creature
 subtype=Centaur
 cost={5}{G}
 pt=3/3
-ability=trample;\
+ability=Trample;\
         {G}, Discard a card: Regenerate SN.
 timing=main
 oracle=Trample\n{G}, Discard a card: Regenerate Centaur Veteran.

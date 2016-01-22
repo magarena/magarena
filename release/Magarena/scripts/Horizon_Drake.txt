@@ -6,6 +6,6 @@ type=Creature
 subtype=Drake
 cost={1}{U}{U}
 pt=3/1
-ability=flying;protection from lands
+ability=Flying;protection from lands
 timing=main
 oracle=Flying, protection from lands

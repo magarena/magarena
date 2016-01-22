@@ -6,6 +6,6 @@ type=Creature
 subtype=Imp
 cost={3}{B}
 pt=2/2
-ability=flying;{1}{R}: SN gains first strike until end of turn.
+ability=Flying;{1}{R}: SN gains first strike until end of turn.
 timing=main
 oracle=Flying\n{1}{R}: Volcano Imp gains first strike until end of turn.

@@ -1,11 +1,11 @@
 name=Child of Night
 image=http://magiccards.info/scans/en/m15/90.jpg
 value=2.400
-ability=lifelink
 rarity=C
 type=Creature
 subtype=Vampire
 cost={1}{B}
 pt=2/1
+ability=Lifelink
 timing=main
 oracle=Lifelink

@@ -6,6 +6,6 @@ type=Creature
 subtype=Elemental
 cost={4}{U}
 pt=0/5
-ability=flying;{U/R}: SN gets +1/-1 until end of turn.
+ability=Flying;{U/R}: SN gets +1/-1 until end of turn.
 timing=main
 oracle=Flying\n{U/R}: Talonrend gets +1/-1 until end of turn.

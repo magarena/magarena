@@ -6,7 +6,7 @@ type=Artifact,Creature
 subtype=Vedalken,Knight
 cost={4}{U}
 pt=4/4
-ability=flying;\
+ability=Flying;\
         {1}{W}{B},{T}: Destroy target creature or enchantment.;\
         {2}{U}: Untap SN.
 timing=main

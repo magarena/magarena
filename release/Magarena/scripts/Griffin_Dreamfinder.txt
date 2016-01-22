@@ -6,7 +6,7 @@ type=Creature
 subtype=Griffin
 cost={3}{W}{W}
 pt=1/4
-ability=flying;\
+ability=Flying;\
         When SN enters the battlefield, return target enchantment card from your graveyard to your hand.
 timing=main
 oracle=Flying\nWhen Griffin Dreamfinder enters the battlefield, return target enchantment card from your graveyard to your hand.

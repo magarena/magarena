@@ -6,7 +6,7 @@ type=Creature
 subtype=Bird
 cost={3}{U}
 pt=2/2
-ability=flying;\
+ability=Flying;\
         When SN dies, draw a card.
 timing=main
 oracle=Flying\nWhen Kingfisher dies, draw a card.

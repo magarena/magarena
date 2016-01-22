@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Knight
 cost={R}{W}
 pt=2/2
-ability=vigilance;{R}{W}: SN gains first strike until end of turn.;{R}{W}: SN gets +2/+0 until end of turn.
+ability=Vigilance;{R}{W}: SN gains first strike until end of turn.;{R}{W}: SN gets +2/+0 until end of turn.
 timing=main
 oracle=Vigilance\n{R}{W}: Truefire Paladin gets +2/+0 until end of turn.\n{R}{W}: Truefire Paladin gains first strike until end of turn.

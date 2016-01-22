@@ -6,7 +6,7 @@ type=Artifact,Creature
 subtype=Human,Wizard
 cost={W}{U}{B}
 pt=2/2
-ability=lifelink;\
+ability=Lifelink;\
         SN has flying as long as an artifact card is in your graveyard.
 timing=artifact
 oracle=Lifelink\nWindwright Mage has flying as long as an artifact card is in your graveyard.

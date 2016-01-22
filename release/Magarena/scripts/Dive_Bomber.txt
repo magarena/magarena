@@ -6,6 +6,6 @@ type=Creature
 subtype=Bird,Soldier
 cost={3}{W}
 pt=2/2
-ability=flying;{T},Sacrifice SN:SN deals 2 damage to target attacking or blocking creature.
+ability=Flying;{T},Sacrifice SN:SN deals 2 damage to target attacking or blocking creature.
 timing=main
 oracle=Flying\n{T}, Sacrifice Dive Bomber: Dive Bomber deals 2 damage to target attacking or blocking creature.

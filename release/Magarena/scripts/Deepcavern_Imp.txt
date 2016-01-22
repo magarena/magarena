@@ -6,7 +6,7 @@ type=Creature
 subtype=Imp,Rebel
 cost={2}{B}
 pt=2/2
-ability=flying;haste;\
+ability=Flying;haste;\
         Echo—Discard a card.
 timing=fmain
 oracle=Flying, haste\nEcho—Discard a card.

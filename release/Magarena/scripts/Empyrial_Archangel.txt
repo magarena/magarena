@@ -6,7 +6,7 @@ type=Creature
 subtype=Angel
 cost={4}{G}{W}{W}{U}
 pt=5/8
-ability=flying;shroud
+ability=Flying;shroud
 timing=fmain
 requires_groovy_code
 oracle=Flying\nShroud\nAll damage that would be dealt to you is dealt to Empyrial Archangel instead.

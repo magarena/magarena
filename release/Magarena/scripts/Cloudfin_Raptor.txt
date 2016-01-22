@@ -6,6 +6,7 @@ type=Creature
 subtype=Bird,Mutant
 cost={U}
 pt=0/1
-ability=flying;evolve
+ability=Flying;\
+        Evolve
 timing=main
 oracle=Flying\nEvolve

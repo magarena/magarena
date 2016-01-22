@@ -1,7 +1,7 @@
 name=Lantern Kami
 image=http://magiccards.info/scans/en/chk/32.jpg
 value=3.404
-ability=flying
+ability=Flying
 rarity=C
 type=Creature
 subtype=Spirit

@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental
 cost={2}{W}
 pt=1/3
-ability=flying;\
+ability=Flying;\
         When SN enters the battlefield, destroy target enchantment.;\
         evoke {W}
 timing=main

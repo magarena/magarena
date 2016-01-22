@@ -6,6 +6,6 @@ type=Creature
 subtype=Bird
 cost={3}{W}{W}
 pt=2/3
-ability=flying;infect
+ability=Flying;infect
 timing=main
 oracle=Flying\nInfect

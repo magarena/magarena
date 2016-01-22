@@ -7,5 +7,5 @@ type=Creature
 subtype=Faerie,Rogue
 color=b
 pt=1/1
-ability=flying
+ability=Flying
 oracle=Flying

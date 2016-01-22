@@ -6,6 +6,7 @@ type=Creature
 subtype=Insect
 cost={1}{R}{R}{R}
 pt=3/3
-ability=haste;Sacrifice a Goblin:SN gets +2/+2 and gains trample until end of turn.
+ability=Haste;\
+        Sacrifice a Goblin: SN gets +2/+2 and gains trample until end of turn.
 timing=main
 oracle=Haste\nSacrifice a Goblin: Clickslither gets +2/+2 and gains trample until end of turn.

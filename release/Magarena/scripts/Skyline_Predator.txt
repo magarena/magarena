@@ -1,7 +1,7 @@
 name=Skyline Predator
 image=http://magiccards.info/scans/en/rtr/50.jpg
 value=2.049
-ability=flying;flash
+ability=Flying;flash
 rarity=U
 type=Creature
 subtype=Drake

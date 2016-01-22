@@ -6,6 +6,6 @@ type=Creature
 subtype=Bird
 cost={4}{U}
 pt=3/3
-ability=Sacrifice a land:SN gains flying until end of turn.
+ability=Sacrifice a land: SN gains flying until end of turn.
 timing=main
 oracle=Sacrifice a land: Coastal Hornclaw gains flying until end of turn.

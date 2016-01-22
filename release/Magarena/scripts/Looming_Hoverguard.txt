@@ -6,7 +6,7 @@ type=Creature
 subtype=Drone
 cost={4}{U}{U}
 pt=3/3
-ability=flying;\
+ability=Flying;\
         When SN enters the battlefield, put target artifact on top of its owner's library.
 timing=main
 oracle=Flying\nWhen Looming Hoverguard enters the battlefield, put target artifact on top of its owner's library.

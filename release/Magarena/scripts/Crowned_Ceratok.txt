@@ -6,7 +6,7 @@ type=Creature
 subtype=Rhino
 cost={3}{G}
 pt=4/3
-ability=trample;\
+ability=Trample;\
         Each creature you control with a +1/+1 counter on it has trample.
 timing=main
 oracle=Trample\nEach creature you control with a +1/+1 counter on it has trample.

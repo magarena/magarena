@@ -6,6 +6,7 @@ type=Creature
 subtype=Illusion
 cost={1}{U}
 pt=2/2
-ability=flying;fading 3
+ability=Flying;\
+        Fading 3
 timing=main
 oracle=Flying\nFading 3

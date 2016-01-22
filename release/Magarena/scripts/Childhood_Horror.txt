@@ -6,7 +6,7 @@ type=Creature
 subtype=Horror
 cost={3}{B}
 pt=2/2
-ability=flying;\
+ability=Flying;\
         As long as seven or more cards are in your graveyard, SN gets +2/+2 and can't block.
 timing=main
 oracle=Flying\nThreshold — As long as seven or more cards are in your graveyard, Childhood Horror gets +2/+2 and can't block.

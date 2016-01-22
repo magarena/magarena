@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Dragon
 cost={3}{W}{B}{R}
 pt=6/6
-ability=flying;\
+ability=Flying;\
         Whenever SN deals combat damage to a player, you may pay {2}{W}. If you do, SN deals 3 damage to each nonwhite creature.
 timing=main
 oracle=Flying\nWhenever Oros, the Avenger deals combat damage to a player, you may pay {2}{W}. If you do, Oros deals 3 damage to each nonwhite creature.

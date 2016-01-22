@@ -1,7 +1,7 @@
 name=Griffin Sentinel
 image=http://magiccards.info/scans/en/m14/20.jpg
 value=3.400
-ability=flying;vigilance
+ability=Flying;vigilance
 rarity=C
 type=Creature
 subtype=Griffin

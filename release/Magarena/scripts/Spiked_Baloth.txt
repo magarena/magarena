@@ -6,6 +6,6 @@ type=Creature
 subtype=Beast
 cost={3}{G}
 pt=4/2
-ability=trample
+ability=Trample
 timing=main
 oracle=Trample

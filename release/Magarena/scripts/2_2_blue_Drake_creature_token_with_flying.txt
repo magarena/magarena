@@ -6,5 +6,5 @@ type=Creature
 subtype=Drake
 color=u
 pt=2/2
-ability=flying
+ability=Flying
 oracle=Flying

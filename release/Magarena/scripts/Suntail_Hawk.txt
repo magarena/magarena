@@ -1,7 +1,7 @@
 name=Suntail Hawk
 image=http://magiccards.info/scans/en/m14/40.jpg
 value=3.408
-ability=flying
+ability=Flying
 rarity=C
 type=Creature
 subtype=Bird

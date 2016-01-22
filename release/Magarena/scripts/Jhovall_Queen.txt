@@ -6,6 +6,6 @@ type=Creature
 subtype=Cat,Rebel
 cost={4}{W}{W}
 pt=4/7
-ability=vigilance
+ability=Vigilance
 timing=main
 oracle=Vigilance

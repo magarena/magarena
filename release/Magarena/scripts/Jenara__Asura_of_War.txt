@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Angel
 cost={G}{W}{U}
 pt=3/3
-ability=flying;\
+ability=Flying;\
         {1}{W}: Put a +1/+1 counter on SN.
 timing=main
 oracle=Flying\n{1}{W}: Put a +1/+1 counter on Jenara, Asura of War.

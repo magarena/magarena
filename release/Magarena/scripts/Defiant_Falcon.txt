@@ -6,7 +6,7 @@ type=Creature
 subtype=Rebel,Bird
 cost={1}{W}
 pt=1/1
-ability=flying;\
+ability=Flying;\
         {T}: Search your library for a Rebel permanent card with converted mana cost 3 or less and put it onto the battlefield. Then shuffle your library.
 timing=main
 oracle=Flying\n{4}, {T}: Search your library for a Rebel permanent card with converted mana cost 3 or less and put it onto the battlefield. Then shuffle your library.

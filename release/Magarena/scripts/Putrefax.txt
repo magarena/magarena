@@ -6,7 +6,7 @@ type=Creature
 subtype=Horror
 cost={3}{G}{G}
 pt=5/3
-ability=trample;\
+ability=Trample;\
         haste;\
         infect;\
         At the beginning of the end step, sacrifice SN.

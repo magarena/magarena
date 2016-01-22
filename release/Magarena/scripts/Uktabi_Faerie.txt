@@ -6,6 +6,6 @@ type=Creature
 subtype=Faerie
 cost={1}{G}
 pt=1/1
-ability=flying;{3}{G},Sacrifice SN:Destroy target artifact.
+ability=Flying;{3}{G},Sacrifice SN:Destroy target artifact.
 timing=main
 oracle=Flying\n{3}{G}, Sacrifice Uktabi Faerie: Destroy target artifact.

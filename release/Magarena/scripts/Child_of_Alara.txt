@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Avatar
 cost={W}{U}{B}{R}{G}
 pt=6/6
-ability=trample;\
+ability=Trample;\
         When SN dies, destroy all nonland permanents. They can't be regenerated.
 timing=main
 oracle=Trample\nWhen Child of Alara dies, destroy all nonland permanents. They can't be regenerated.

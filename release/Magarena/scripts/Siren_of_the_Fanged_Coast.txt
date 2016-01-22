@@ -5,7 +5,7 @@ rarity=U
 type=Creature
 subtype=Siren
 cost={3}{U}{U}
-ability=flying
+ability=Flying
 pt=1/1
 timing=main
 requires_groovy_code

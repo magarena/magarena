@@ -6,7 +6,7 @@ type=Creature
 subtype=Angel
 cost={4}{W}{W}
 pt=5/7
-ability=flying;\
+ability=Flying;\
         {W}{W}: Target creature gains indestructible until end of turn.
 timing=main
 oracle=Flying\n{W}{W}: Target creature gains indestructible until end of turn.

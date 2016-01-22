@@ -6,7 +6,7 @@ type=Artifact,Creature
 subtype=Angel
 cost={7}
 pt=4/4
-ability=flying
+ability=Flying
 timing=fmain
 requires_groovy_code
 oracle=Flying\nYou can't lose the game and your opponents can't win the game.

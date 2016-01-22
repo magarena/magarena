@@ -6,7 +6,7 @@ type=Creature
 subtype=Spirit
 cost={B}
 pt=0/1
-ability=flying;\
+ability=Flying;\
         {B}: Regenerate SN.
 timing=main
 oracle=Flying\n{B}: Regenerate Will-o'-the-Wisp.

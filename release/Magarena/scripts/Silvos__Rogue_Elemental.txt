@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Elemental
 cost={3}{G}{G}{G}
 pt=8/5
-ability=trample;\
+ability=Trample;\
         {G}: Regenerate SN.
 timing=main
 oracle=Trample\n{G}: Regenerate Silvos, Rogue Elemental.

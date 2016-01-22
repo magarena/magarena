@@ -6,7 +6,7 @@ type=Creature
 subtype=Insect
 cost={4}{G}{G}{G}
 pt=8/8
-ability=trample
+ability=Trample
 timing=main
 requires_groovy_code
 oracle=Trample\nWhen Moldgraf Monstrosity dies, exile it, then return two creature cards at random from your graveyard to the battlefield.

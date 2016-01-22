@@ -6,7 +6,7 @@ type=Creature
 subtype=Specter
 cost={2}{B}{B}
 pt=2/2
-ability=flying;\
+ability=Flying;\
         SN gets +3/+3 as long as an opponent has no cards in hand.;\
         Whenever SN deals combat damage to a player, that player discards a card.
 timing=main

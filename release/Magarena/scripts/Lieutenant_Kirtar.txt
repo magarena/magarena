@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Bird,Soldier
 cost={1}{W}{W}
 pt=2/2
-ability=flying;{1}{W}, Sacrifice SN: Exile target attacking creature.
+ability=Flying;{1}{W}, Sacrifice SN: Exile target attacking creature.
 timing=main
 oracle=Flying\n{1}{W}, Sacrifice Lieutenant Kirtar: Exile target attacking creature.

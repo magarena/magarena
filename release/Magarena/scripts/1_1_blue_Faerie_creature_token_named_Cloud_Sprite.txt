@@ -5,6 +5,6 @@ value=1
 type=Creature
 subtype=Faerie
 color=u
-ability=flying;SN can block only creatures with flying.
+ability=Flying;SN can block only creatures with flying.
 pt=1/1
 oracle=Flying\nCloud Sprite can block only creatures with flying.

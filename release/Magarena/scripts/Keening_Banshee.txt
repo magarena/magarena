@@ -7,6 +7,6 @@ type=Creature
 subtype=Spirit
 cost={2}{B}{B}
 pt=2/2
-ability=flying;When SN enters the battlefield, target creature gets -2/-2 until end of turn.
+ability=Flying;When SN enters the battlefield, target creature gets -2/-2 until end of turn.
 timing=main
 oracle=Flying\nWhen Keening Banshee enters the battlefield, target creature gets -2/-2 until end of turn.

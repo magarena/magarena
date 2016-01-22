@@ -6,6 +6,6 @@ type=Artifact,Creature
 subtype=Gargoyle
 cost={4}
 pt=2/2
-ability=flying
+ability=Flying
 timing=main
 oracle=Flying

@@ -4,7 +4,7 @@ value=3.205
 rarity=U
 type=Artifact
 cost={1}
-ability={T}:Target player puts the top card of his or her library into his or her graveyard.;\
-        {5},{T},Sacrifice SN:Return target card from your graveyard to your hand.
+ability={T}: Target player puts the top card of his or her library into his or her graveyard.;\
+        {5}, {T}, Sacrifice SN: Return target card from your graveyard to your hand.
 timing=artifact
 oracle={T}: Target player puts the top card of his or her library into his or her graveyard.\n{5}, {T}, Sacrifice Codex Shredder: Return target card from your graveyard to your hand.

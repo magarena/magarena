@@ -1,7 +1,7 @@
 name=Skyshroud Falcon
 image=http://magiccards.info/scans/en/7e/45.jpg
 value=2.893
-ability=flying;vigilance
+ability=Flying;vigilance
 rarity=C
 type=Creature
 subtype=Bird

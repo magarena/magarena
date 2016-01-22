@@ -6,7 +6,7 @@ type=Creature
 subtype=Dragon
 cost={4}{R}{R}
 pt=5/5
-ability=flying
+ability=Flying
 timing=main
 requires_groovy_code
 oracle=Flying\nWhenever Flameblast Dragon attacks, you may pay {X}{R}. If you do, Flameblast Dragon deals X damage to target creature or player.

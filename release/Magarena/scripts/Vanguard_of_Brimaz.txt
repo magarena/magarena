@@ -5,7 +5,7 @@ rarity=U
 type=Creature
 subtype=Cat,Soldier
 cost={W}{W}
-ability=vigilance;\
+ability=Vigilance;\
         Whenever you cast a spell that targets SN, put a 1/1 white Cat Soldier creature token with vigilance onto the battlefield.
 pt=2/2
 timing=main

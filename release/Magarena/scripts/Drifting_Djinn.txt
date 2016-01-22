@@ -6,7 +6,7 @@ type=Creature
 subtype=Djinn
 cost={4}{U}{U}
 pt=5/5
-ability=flying;\
+ability=Flying;\
         cycling {2};At the beginning of your upkeep, you may pay {1}{U}. If you don't, sacrifice SN.
 timing=main
 oracle=Flying\nAt the beginning of your upkeep, sacrifice Drifting Djinn unless you pay {1}{U}.\nCycling {2}

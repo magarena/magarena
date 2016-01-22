@@ -1,7 +1,7 @@
 name=Goblin Glider
 image=http://magiccards.info/scans/en/8e/189.jpg
 value=1.912
-ability=flying;SN can't block.
+ability=Flying;SN can't block.
 rarity=U
 type=Creature
 subtype=Goblin

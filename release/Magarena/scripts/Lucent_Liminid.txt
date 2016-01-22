@@ -6,6 +6,6 @@ type=Enchantment,Creature
 subtype=Elemental
 cost={3}{W}{W}
 pt=3/3
-ability=flying
+ability=Flying
 timing=main
 oracle=Flying

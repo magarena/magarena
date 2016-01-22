@@ -6,7 +6,7 @@ type=Creature
 subtype=Spirit
 cost={2}{U}{U}
 pt=2/4
-ability=flying;\
+ability=Flying;\
         {U}{U}{U}: Regenerate SN.
 timing=main
 oracle=Flying\n{U}{U}{U}: Regenerate Ghost Ship.

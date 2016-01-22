@@ -6,7 +6,7 @@ type=Creature
 subtype=Drake
 cost={2}{B}
 pt=3/3
-ability=flying;\
+ability=Flying;\
         Whenever a player casts a spell, you lose 1 life.
 timing=main
 oracle=Flying\nWhenever a player casts a spell, you lose 1 life.

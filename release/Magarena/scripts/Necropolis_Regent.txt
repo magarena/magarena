@@ -6,7 +6,7 @@ type=Creature
 subtype=Vampire
 cost={3}{B}{B}{B}
 pt=6/5
-ability=flying
+ability=Flying
 timing=main
 oracle=Flying\nWhenever a creature you control deals combat damage to a player, put that many +1/+1 counters on it.
 requires_groovy_code

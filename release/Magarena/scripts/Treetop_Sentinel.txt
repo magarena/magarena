@@ -1,7 +1,7 @@
 name=Treetop Sentinel
 image=http://magiccards.info/scans/en/od/111.jpg
 value=3.053
-ability=flying;protection from green
+ability=Flying;protection from green
 rarity=U
 type=Creature
 subtype=Bird,Soldier

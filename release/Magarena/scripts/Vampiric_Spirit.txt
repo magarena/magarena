@@ -6,7 +6,7 @@ type=Creature
 subtype=Spirit
 cost={2}{B}{B}
 pt=4/3
-ability=flying;\
+ability=Flying;\
         When SN enters the battlefield, you lose 4 life.
 timing=main
 oracle=Flying\nWhen Vampiric Spirit enters the battlefield, you lose 4 life.

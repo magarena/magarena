@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental
 cost={6}{R}
 pt=4/4
-ability=trample;\
+ability=Trample;\
         When SN enters the battlefield, destroy target land.;\
         evoke {4}{R}
 timing=main

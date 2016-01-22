@@ -6,7 +6,7 @@ type=Creature
 subtype=Spirit,Avatar
 cost={R/G}{R/G}{R/G}{R/G}{R/G}
 pt=6/6
-ability=trample
+ability=Trample
 timing=main
 requires_groovy_code
 oracle=Trample\nWhenever Deus of Calamity deals 6 or more damage to an opponent, destroy target land that player controls.

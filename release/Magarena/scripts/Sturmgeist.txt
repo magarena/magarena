@@ -6,7 +6,7 @@ type=Creature
 subtype=Spirit
 cost={3}{U}{U}
 pt=*/*
-ability=flying;\
+ability=Flying;\
         SN's power and toughness are each equal to the number of cards in your hand.;\
         Whenever SN deals combat damage to a player, draw a card.
 timing=main

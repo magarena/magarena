@@ -6,5 +6,5 @@ type=Artifact,Creature
 subtype=Thopter
 color=u
 pt=1/1
-ability=flying
+ability=Flying
 oracle=Flying

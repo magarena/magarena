@@ -6,5 +6,5 @@ pt=6/12
 color=
 subtype=Construct
 type=Artifact,Creature
-ability=trample
+ability=Trample
 oracle=Trample

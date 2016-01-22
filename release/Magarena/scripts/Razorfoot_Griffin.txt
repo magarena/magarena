@@ -1,7 +1,7 @@
 name=Razorfoot Griffin
 image=http://magiccards.info/scans/en/m15/27.jpg
 value=2.250
-ability=flying;first strike
+ability=Flying;first strike
 rarity=C
 type=Creature
 subtype=Griffin

@@ -1,11 +1,12 @@
 name=Changeling Sentinel
 image=http://magiccards.info/scans/en/mt/6.jpg
 value=2.324
-ability=changeling;vigilance
 rarity=C
 type=Creature
 subtype=Shapeshifter
 cost={3}{W}
 pt=3/2
+ability=Changeling;\
+        Vigilance
 timing=main
 oracle=Changeling\nVigilance

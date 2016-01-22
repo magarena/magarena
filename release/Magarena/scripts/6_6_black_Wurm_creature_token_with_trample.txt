@@ -6,5 +6,5 @@ type=Creature
 subtype=Wurm
 color=b
 pt=6/6
-ability=trample
+ability=Trample
 oracle=Trample

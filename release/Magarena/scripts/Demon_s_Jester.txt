@@ -6,7 +6,7 @@ type=Creature
 subtype=Imp
 cost={3}{B}
 pt=2/2
-ability=flying;\
+ability=Flying;\
         SN gets +2/+1 as long as you have no cards in hand.
 timing=main
 oracle=Flying\nHellbent — Demon's Jester gets +2/+1 as long as you have no cards in hand.

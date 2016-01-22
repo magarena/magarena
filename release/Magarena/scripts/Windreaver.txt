@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental
 cost={3}{W}{U}
 pt=1/3
-ability=flying;\
+ability=Flying;\
         {W}: SN gains vigilance until end of turn.;\
         {W}: SN gets +0/+1 until end of turn.;\
         {U}: Return SN to its owner's hand.;\

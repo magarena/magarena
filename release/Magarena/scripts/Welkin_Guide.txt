@@ -6,6 +6,6 @@ type=Creature
 subtype=Bird,Cleric
 cost={4}{W}
 pt=2/2
-ability=flying;When SN enters the battlefield, target creature gets +2/+2 and gains flying until end of turn.
+ability=Flying;When SN enters the battlefield, target creature gets +2/+2 and gains flying until end of turn.
 timing=main
 oracle=Flying\nWhen Welkin Guide enters the battlefield, target creature gets +2/+2 and gains flying until end of turn.

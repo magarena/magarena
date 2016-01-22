@@ -6,7 +6,7 @@ type=Creature
 subtype=Bird
 cost={4}{R}
 pt=2/2
-ability=flying
+ability=Flying
 timing=main
 requires_groovy_code
 oracle=Flying\n{1}{R}, Sacrifice a Goblin creature: Airdrop Condor deals damage equal to the sacrificed creature's power to target creature or player.

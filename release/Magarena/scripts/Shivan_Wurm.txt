@@ -6,7 +6,7 @@ type=Creature
 subtype=Wurm
 cost={3}{R}{G}
 pt=7/7
-ability=trample;\
+ability=Trample;\
         When SN enters the battlefield, return a red or green creature you control to its owner's hand.
 timing=main
 oracle=Trample\nWhen Shivan Wurm enters the battlefield, return a red or green creature you control to its owner's hand.

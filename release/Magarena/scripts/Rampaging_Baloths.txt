@@ -6,7 +6,7 @@ type=Creature
 subtype=Beast
 cost={4}{G}{G}
 pt=6/6
-ability=trample;\
+ability=Trample;\
         Whenever a land enters the battlefield under your control, you may put a 4/4 green Beast creature token onto the battlefield.
 timing=main
 oracle=Trample\nLandfall — Whenever a land enters the battlefield under your control, you may put a 4/4 green Beast creature token onto the battlefield.

@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Human,Cleric
 cost={1}{W}{B}{R}
 pt=2/2
-ability=flying
+ability=Flying
 timing=main
 requires_groovy_code
 oracle=Flying\nWhenever Kaalia of the Vast attacks an opponent, you may put an Angel, Demon, or Dragon creature card from your hand onto the battlefield tapped and attacking that opponent.

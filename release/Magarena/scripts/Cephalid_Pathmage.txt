@@ -6,7 +6,7 @@ type=Creature
 subtype=Cephalid,Wizard
 cost={2}{U}
 pt=1/2
-ability=SN can't be blocked;\
-        {T},Sacrifice SN:Target creature can't be blocked this turn.
+ability=SN can't be blocked.;\
+        {T}, Sacrifice SN: Target creature can't be blocked this turn.
 timing=main
 oracle=Cephalid Pathmage can't be blocked.\n{T}, Sacrifice Cephalid Pathmage: Target creature can't be blocked this turn.

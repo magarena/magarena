@@ -6,6 +6,6 @@ type=Creature
 subtype=Giant
 cost={3}{G}{G}{G}{G}
 pt=6/4
-ability=trample;rampage 2
+ability=Trample;rampage 2
 timing=main
 oracle=Trample\nRampage 2

@@ -6,7 +6,7 @@ type=Creature
 subtype=Minotaur,Shaman
 cost={1}{R}{R}
 pt=2/3
-ability=trample;\
+ability=Trample;\
         other minotaur creatures you control get +1/+1;\
         other minotaur creatures you control have trample
 static=player

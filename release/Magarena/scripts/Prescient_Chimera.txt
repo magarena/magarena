@@ -6,7 +6,7 @@ type=Creature
 subtype=Chimera
 cost={3}{U}{U}
 pt=3/4
-ability=flying;\
+ability=Flying;\
         Whenever you cast an instant or sorcery spell, scry 1.
 timing=main
 oracle=Flying\nWhenever you cast an instant or sorcery spell, scry 1.

@@ -6,7 +6,7 @@ type=Creature
 subtype=Bird,Soldier,Spirit
 cost={3}{W}{W}
 pt=0/0
-ability=flying;\
+ability=Flying;\
         SN enters the battlefield with three +1/+1 counters on it.
 timing=main
 requires_groovy_code=Phantom Nomad

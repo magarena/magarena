@@ -6,6 +6,6 @@ type=Creature
 subtype=Bird
 cost={3}{U}
 pt=2/1
-ability=flying;Sacrifice a land:Return SN to its owner's hand.
+ability=Flying;Sacrifice a land:Return SN to its owner's hand.
 timing=main
 oracle=Flying\nSacrifice a land: Return Stormwatch Eagle to its owner's hand.

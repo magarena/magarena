@@ -6,7 +6,7 @@ type=Creature
 subtype=Ooze
 cost={2}{R}
 pt=2/2
-ability=trample;cumulative upkeep {R/G};\
+ability=Trample;cumulative upkeep {R/G};\
         SN gets +1/+1 for each age counter on it.
 timing=main
 oracle=Trample\nCumulative upkeep {R} or {G}\nEarthen Goo gets +1/+1 for each age counter on it.

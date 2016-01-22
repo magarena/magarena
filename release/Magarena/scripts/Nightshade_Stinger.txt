@@ -1,7 +1,7 @@
 name=Nightshade Stinger
 image=http://magiccards.info/scans/en/lw/132.jpg
 value=2.896
-ability=flying;SN can't block.
+ability=Flying;SN can't block.
 rarity=C
 type=Creature
 subtype=Faerie,Rogue

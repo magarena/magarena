@@ -7,7 +7,7 @@ type=Creature
 subtype=Angel
 cost={4}{W}{W}
 pt=4/5
-ability=flying;\
+ability=Flying;\
         When SN enters the battlefield, destroy all tapped creatures.
 timing=fmain
 oracle=Flying\nWhen Sunblast Angel enters the battlefield, destroy all tapped creatures.

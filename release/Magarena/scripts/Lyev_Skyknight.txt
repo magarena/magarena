@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Knight
 cost={1}{W}{U}
 pt=3/1
-ability=flying;\
+ability=Flying;\
         When SN enters the battlefield, detain target nonland permanent an opponent controls.
 timing=main
 oracle=Flying\nWhen Lyev Skyknight enters the battlefield, detain target nonland permanent an opponent controls.

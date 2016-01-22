@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Angel
 cost={5}{W}{W}{W}
 pt=6/6
-ability=flying;first strike;vigilance;trample;haste;protection from black;protection from red
+ability=Flying;first strike;vigilance;trample;haste;protection from black;protection from red
 timing=fmain
 oracle=Flying, first strike, vigilance, trample, haste, protection from black and from red

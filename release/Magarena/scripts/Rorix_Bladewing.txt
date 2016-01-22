@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Dragon
 cost={3}{R}{R}{R}
 pt=6/5
-ability=flying;haste
+ability=Flying;haste
 timing=fmain
 oracle=Flying, haste

@@ -6,6 +6,6 @@ type=Creature
 subtype=Dragon
 cost={1}{R}
 pt=0/1
-ability=flying;{R}: SN gets +1/+0 until end of turn.
+ability=Flying;{R}: SN gets +1/+0 until end of turn.
 timing=main
 oracle=Flying\n{R}: Dragon Hatchling gets +1/+0 until end of turn.

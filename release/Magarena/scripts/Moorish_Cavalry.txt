@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Knight
 cost={2}{W}{W}
 pt=3/3
-ability=trample
+ability=Trample
 timing=main
 oracle=Trample

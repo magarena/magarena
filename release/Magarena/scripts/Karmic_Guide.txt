@@ -6,7 +6,7 @@ type=Creature
 subtype=Angel,Spirit
 cost={3}{W}{W}
 pt=2/2
-ability=flying;\
+ability=Flying;\
         protection from black;\
         echo {3}{W}{W};\
         When SN enters the battlefield, return target creature card from your graveyard to the battlefield.

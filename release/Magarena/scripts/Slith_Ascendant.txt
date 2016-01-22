@@ -6,7 +6,7 @@ type=Creature
 subtype=Slith
 cost={1}{W}{W}
 pt=1/1
-ability=flying;\
+ability=Flying;\
         Whenever SN deals combat damage to a player, put a +1/+1 counter on SN.
 timing=main
 oracle=Flying\nWhenever Slith Ascendant deals combat damage to a player, put a +1/+1 counter on it.

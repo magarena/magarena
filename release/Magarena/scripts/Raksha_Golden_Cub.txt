@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Cat,Soldier
 cost={5}{W}{W}
 pt=3/4
-ability=vigilance;\
+ability=Vigilance;\
         As long as SN is equipped, Cat creatures you control get +2/+2 and have double strike.
 timing=fmain
 oracle=Vigilance\nAs long as Raksha Golden Cub is equipped, Cat creatures you control get +2/+2 and have double strike.

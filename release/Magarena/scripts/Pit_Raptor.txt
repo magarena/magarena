@@ -6,7 +6,7 @@ type=Creature
 subtype=Bird,Mercenary
 cost={2}{B}{B}
 pt=4/3
-ability=flying;\
+ability=Flying;\
         first strike;\
         At the beginning of your upkeep, you may pay {2}{B}{B}. If you don't, sacrifice SN.
 timing=main

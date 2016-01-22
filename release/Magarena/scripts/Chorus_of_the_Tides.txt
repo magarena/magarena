@@ -6,6 +6,7 @@ type=Creature
 subtype=Siren
 cost={3}{U}
 pt=3/2
-ability=flying;Whenever you cast a spell that targets SN, scry 1.
+ability=Flying;\
+        Whenever you cast a spell that targets SN, scry 1.
 timing=main
 oracle=Flying\nHeroic — Whenever you cast a spell that targets Chorus of the Tides, scry 1.

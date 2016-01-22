@@ -6,6 +6,6 @@ type=Creature
 subtype=Cephalid
 cost={2}{U}{U}
 pt=2/3
-ability={U}{U}:Tap target creature without flying.
+ability={U}{U}: Tap target creature without flying.
 timing=main
 oracle={U}{U}: Tap target creature without flying.

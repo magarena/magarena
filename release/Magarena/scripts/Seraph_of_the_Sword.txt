@@ -6,7 +6,7 @@ type=Creature
 subtype=Angel
 cost={3}{W}
 pt=3/3
-ability=flying;\
+ability=Flying;\
         Prevent all combat damage that would be dealt to SN.
 timing=main
 oracle=Flying\nPrevent all combat damage that would be dealt to Seraph of the Sword.

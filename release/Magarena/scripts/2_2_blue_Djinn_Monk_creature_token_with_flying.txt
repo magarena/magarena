@@ -6,5 +6,5 @@ pt=2/2
 color=u
 subtype=Djinn,Monk
 type=Creature
-ability=flying
+ability=Flying
 oracle=Flying

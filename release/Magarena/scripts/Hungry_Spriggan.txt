@@ -6,7 +6,7 @@ type=Creature
 subtype=Goblin,Warrior
 cost={2}{G}
 pt=1/1
-ability=trample;\
+ability=Trample;\
         Whenever SN attacks, SN gets +3/+3 until end of turn.
 timing=main
 oracle=Trample\nWhenever Hungry Spriggan attacks, it gets +3/+3 until end of turn.

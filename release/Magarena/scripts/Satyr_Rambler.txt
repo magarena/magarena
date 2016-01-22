@@ -6,6 +6,6 @@ type=Creature
 subtype=Satyr
 cost={1}{R}
 pt=2/1
-ability=trample
+ability=Trample
 timing=main
 oracle=Trample

@@ -6,6 +6,6 @@ type=Creature
 subtype=Illusion
 cost={1}{B}{B}
 pt=3/3
-ability=flying;fear;cumulative upkeep {B}
+ability=Flying;fear;cumulative upkeep {B}
 timing=main
 oracle=Flying, fear\nCumulative upkeep {B}

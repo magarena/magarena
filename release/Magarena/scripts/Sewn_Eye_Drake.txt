@@ -1,7 +1,7 @@
 name=Sewn-Eye Drake
 image=http://magiccards.info/scans/en/arb/135.jpg
 value=2.929
-ability=flying;haste
+ability=Flying;haste
 rarity=C
 type=Creature
 subtype=Zombie,Drake

@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Druid
 cost={2}{G}
 pt=3/1
-ability=trample;\
+ability=Trample;\
         {1}{G}: Regenerate SN. Activate this ability only if seven or more cards are in your graveyard.
 timing=main
 oracle=Trample\nThreshold — {1}{G}: Regenerate Krosan Avenger. Activate this ability only if seven or more cards are in your graveyard.

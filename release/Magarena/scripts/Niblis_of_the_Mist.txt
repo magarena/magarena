@@ -6,7 +6,7 @@ type=Creature
 subtype=Spirit
 cost={2}{W}
 pt=2/1
-ability=flying;\
+ability=Flying;\
         When SN enters the battlefield, you may tap target creature.
 timing=main
 oracle=Flying\nWhen Niblis of the Mist enters the battlefield, you may tap target creature.

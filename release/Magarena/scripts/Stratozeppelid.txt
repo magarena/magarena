@@ -1,7 +1,7 @@
 name=Stratozeppelid
 image=http://magiccards.info/scans/en/gp/36.jpg
 value=2.015
-ability=flying;SN can block only creatures with flying.
+ability=Flying;SN can block only creatures with flying.
 rarity=U
 type=Creature
 subtype=Beast

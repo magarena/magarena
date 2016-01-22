@@ -6,5 +6,5 @@ type=Creature
 subtype=Vampire
 color=b
 pt=2/2
-ability=flying
+ability=Flying
 oracle=Flying

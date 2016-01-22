@@ -5,6 +5,6 @@ value=1
 type=Creature
 subtype=Faerie
 color=u
-ability=flying
+ability=Flying
 pt=1/1
 oracle=Flying

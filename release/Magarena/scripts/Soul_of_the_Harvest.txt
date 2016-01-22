@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental
 cost={4}{G}{G}
 pt=6/6
-ability=trample;\
+ability=Trample;\
         Whenever another nontoken creature enters the battlefield under your control, you may draw a card.
 timing=main
 oracle=Trample\nWhenever another nontoken creature enters the battlefield under your control, you may draw a card.

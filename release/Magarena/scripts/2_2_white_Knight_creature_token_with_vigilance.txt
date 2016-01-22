@@ -7,5 +7,5 @@ type=Creature
 subtype=Knight
 color=w
 pt=2/2
-ability=vigilance
+ability=Vigilance
 oracle=Vigilance

@@ -6,6 +6,6 @@ type=Creature
 subtype=Drake
 cost={4}{U}
 pt=3/3
-ability=flying;{2}{U}:Untap SN.
+ability=Flying;{2}{U}:Untap SN.
 timing=main
 oracle=Flying\n{2}{U}: Untap Vigilant Drake.

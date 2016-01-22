@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Human,Rogue
 cost={4}{R}
 pt=3/3
-ability={R}{R}{R},{T}:Destroy target artifact creature.
+ability={R}{R}{R}, {T}: Destroy target artifact creature.
 timing=main
 oracle={R}{R}{R}, {T}: Destroy target artifact creature.

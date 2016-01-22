@@ -6,7 +6,7 @@ type=Artifact,Creature
 subtype=Construct
 cost={6}
 pt=4/4
-ability=flying;\
+ability=Flying;\
         SN doesn't untap during your untap step.;\
         At the beginning of your upkeep, you may pay {4}. If you do, untap SN.
 timing=artifact

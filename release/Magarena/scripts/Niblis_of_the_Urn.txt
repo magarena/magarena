@@ -6,7 +6,7 @@ type=Creature
 subtype=Spirit
 cost={1}{W}
 pt=1/1
-ability=flying;\
+ability=Flying;\
         Whenever SN attacks, you may tap target creature.
 timing=main
 oracle=Flying\nWhenever Niblis of the Urn attacks, you may tap target creature.

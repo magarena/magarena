@@ -6,7 +6,7 @@ type=Creature
 subtype=Dragon
 cost={8}{R}{R}
 pt=6/6
-ability=flying;\
+ability=Flying;\
         trample;\
         double strike;\
         At the beginning of your upkeep, you may pay {R}{R}{R}{R}. If you don't, sacrifice SN.;\

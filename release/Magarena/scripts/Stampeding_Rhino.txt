@@ -1,7 +1,7 @@
 name=Stampeding Rhino
 image=http://magiccards.info/scans/en/m12/196.jpg
 value=2.865
-ability=trample
+ability=Trample
 rarity=C
 type=Creature
 subtype=Rhino

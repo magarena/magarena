@@ -1,7 +1,7 @@
 name=Steadfast Guard
 image=http://magiccards.info/scans/en/10e/48.jpg
 value=3.858
-ability=vigilance
+ability=Vigilance
 rarity=C
 type=Creature
 subtype=Human,Rebel

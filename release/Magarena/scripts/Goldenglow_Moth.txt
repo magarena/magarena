@@ -6,7 +6,7 @@ type=Creature
 subtype=Insect
 cost={W}
 pt=0/1
-ability=flying;\
+ability=Flying;\
         Whenever SN blocks, you may gain 4 life.
 timing=main
 oracle=Flying\nWhenever Goldenglow Moth blocks, you may gain 4 life.

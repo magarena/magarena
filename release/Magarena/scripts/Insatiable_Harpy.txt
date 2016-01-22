@@ -6,6 +6,6 @@ type=Creature
 subtype=Harpy
 cost={2}{B}{B}
 pt=2/2
-ability=flying;lifelink
+ability=Flying;lifelink
 timing=main
 oracle=Flying, lifelink

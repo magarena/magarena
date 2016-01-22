@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental
 cost={2}{G}
 pt=*/*
-ability=trample;\
+ability=Trample;\
         SN's power and toughness are each equal to the number of creature cards in your graveyard.;\
         At the beginning of your upkeep, put the top two cards of your library into your graveyard.
 timing=main

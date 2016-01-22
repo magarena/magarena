@@ -6,6 +6,6 @@ type=Creature
 subtype=Centaur
 cost={1}{R}{R}
 pt=2/2
-ability=vigilance
+ability=Vigilance
 timing=main
 oracle=Vigilance

@@ -6,7 +6,7 @@ type=Creature
 subtype=Angel
 cost={2}{R}{W}
 pt=3/3
-ability=flying;\
+ability=Flying;\
         Whenever SN and at least two other creatures attack, SN deals 3 damage to target creature or player.~You gain 3 life.
 timing=main
 oracle=Flying\nBattalion — Whenever Firemane Avenger and at least two other creatures attack, Firemane Avenger deals 3 damage to target creature or player and you gain 3 life.

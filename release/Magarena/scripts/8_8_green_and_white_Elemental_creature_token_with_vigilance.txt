@@ -6,5 +6,5 @@ type=Creature
 subtype=Elemental
 color=gw
 pt=8/8
-ability=vigilance
+ability=Vigilance
 oracle=Vigilance

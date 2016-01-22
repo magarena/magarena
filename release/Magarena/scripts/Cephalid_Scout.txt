@@ -6,6 +6,7 @@ type=Creature
 subtype=Cephalid,Wizard,Scout
 cost={1}{U}
 pt=1/1
-ability=flying;{2}{U},Sacrifice a land: Draw a card.
+ability=Flying;\
+        {2}{U}, Sacrifice a land: Draw a card.
 timing=main
 oracle=Flying\n{2}{U}, Sacrifice a land: Draw a card.

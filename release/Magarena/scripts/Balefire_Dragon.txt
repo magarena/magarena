@@ -6,7 +6,7 @@ type=Creature
 subtype=Dragon
 cost={5}{R}{R}
 pt=6/6
-ability=flying
+ability=Flying
 timing=main
 requires_groovy_code
 oracle=Flying\nWhenever Balefire Dragon deals combat damage to a player, it deals that much damage to each creature that player controls.

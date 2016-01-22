@@ -1,7 +1,7 @@
 name=Tower Gargoyle
 image=http://magiccards.info/scans/en/c13/223.jpg
 value=3.808
-ability=flying
+ability=Flying
 rarity=U
 type=Artifact,Creature
 subtype=Gargoyle

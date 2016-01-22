@@ -7,5 +7,5 @@ subtype=Demon
 cost={4}{B}{B}{B}{B}
 pt=7/7
 timing=main
-ability=flying;lifelink;Pay 7 life: Draw seven cards.
+ability=Flying;lifelink;Pay 7 life: Draw seven cards.
 oracle=Flying, lifelink\nPay 7 life: Draw seven cards.

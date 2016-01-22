@@ -6,7 +6,7 @@ type=Creature
 subtype=Bat,Skeleton
 cost={4}{B}
 pt=4/1
-ability=flying;\
+ability=Flying;\
         Pay 4 life: Regenerate SN.
 timing=main
 oracle=Flying\nPay 4 life: Regenerate Marrow Bats.

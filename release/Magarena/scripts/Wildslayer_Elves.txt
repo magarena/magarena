@@ -1,7 +1,7 @@
 name=Wildslayer Elves
 image=http://magiccards.info/scans/en/shm/133.jpg
 value=2.971
-ability=wither
+ability=Wither
 rarity=C
 type=Creature
 subtype=Elf,Warrior

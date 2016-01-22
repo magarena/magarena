@@ -6,7 +6,7 @@ type=Creature
 subtype=Cat,Beast,Spirit
 cost={5}{G}{W}
 pt=0/0
-ability=trample;\
+ability=Trample;\
         SN enters the battlefield with seven +1/+1 counters on it.
 timing=main
 requires_groovy_code=Phantom Nomad;Mourning Thrull

@@ -6,6 +6,6 @@ type=Creature
 subtype=Nightstalker
 cost={2}{B}
 pt=2/1
-ability=flying
+ability=Flying
 timing=main
 oracle=Flying

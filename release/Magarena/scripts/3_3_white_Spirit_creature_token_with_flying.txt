@@ -6,5 +6,5 @@ type=Creature
 subtype=Spirit
 color=W
 pt=3/3
-ability=flying
+ability=Flying
 oracle=Flying

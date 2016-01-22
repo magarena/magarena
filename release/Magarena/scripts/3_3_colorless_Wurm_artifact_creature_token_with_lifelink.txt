@@ -7,5 +7,5 @@ type=Artifact,Creature
 subtype=Wurm
 color=
 pt=3/3
-ability=lifelink
+ability=Lifelink
 oracle=Lifelink

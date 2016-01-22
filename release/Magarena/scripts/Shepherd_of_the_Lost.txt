@@ -1,7 +1,7 @@
 name=Shepherd of the Lost
 image=http://magiccards.info/scans/en/zen/34.jpg
 value=3.861
-ability=flying;first strike;vigilance
+ability=Flying;first strike;vigilance
 rarity=U
 type=Creature
 subtype=Angel

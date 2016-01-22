@@ -6,7 +6,7 @@ type=Creature
 subtype=Horror
 cost={2}{B}
 pt=3/3
-ability=flying;\
+ability=Flying;\
         When SN enters the battlefield, you lose 3 life.
 timing=main
 oracle=Flying\nWhen Necrogen Scudder enters the battlefield, you lose 3 life.

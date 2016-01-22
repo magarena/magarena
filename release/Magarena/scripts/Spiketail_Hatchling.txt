@@ -6,7 +6,7 @@ type=Creature
 subtype=Drake
 cost={1}{U}
 pt=1/1
-ability=flying;\
+ability=Flying;\
         Sacrifice SN: Counter target spell unless its controller pays {1}.
 timing=main
 oracle=Flying\nSacrifice Spiketail Hatchling: Counter target spell unless its controller pays {1}.

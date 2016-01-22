@@ -6,6 +6,6 @@ type=Creature
 subtype=Boar
 cost={1}{G}
 pt=2/1
-ability=trample
+ability=Trample
 timing=main
 oracle=Trample

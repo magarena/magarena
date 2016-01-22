@@ -1,7 +1,7 @@
 name=Nip Gwyllion
 image=http://magiccards.info/scans/en/eve/92.jpg
 value=3.922
-ability=lifelink
+ability=Lifelink
 rarity=C
 type=Creature
 subtype=Hag

@@ -6,6 +6,6 @@ type=Creature
 subtype=Angel
 cost={3}{W}
 pt=1/5
-ability=flying
+ability=Flying
 timing=main
 oracle=Flying

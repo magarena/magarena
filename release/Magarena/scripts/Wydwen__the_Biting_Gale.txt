@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Faerie,Wizard
 cost={2}{U}{B}
 pt=3/3
-ability=flying;flash;{U}{B},Pay 1 life:Return SN to its owner's hand.
+ability=Flying;flash;{U}{B},Pay 1 life:Return SN to its owner's hand.
 timing=flash
 oracle=Flash\nFlying\n{U}{B}, Pay 1 life: Return Wydwen, the Biting Gale to its owner's hand.

@@ -6,7 +6,7 @@ type=Creature
 subtype=Demon
 cost={5}{B}{B}{B}
 pt=7/6
-ability=flying;\
+ability=Flying;\
         {B}: SN deals 1 damage to each creature and each player.
 timing=main
 oracle=Flying\n{B}: Pestilence Demon deals 1 damage to each creature and each player.

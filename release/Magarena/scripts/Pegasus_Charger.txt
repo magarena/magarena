@@ -1,7 +1,7 @@
 name=Pegasus Charger
 image=http://magiccards.info/scans/en/9e/34.jpg
 value=3.314
-ability=flying;first strike
+ability=Flying;first strike
 rarity=C
 type=Creature
 subtype=Pegasus

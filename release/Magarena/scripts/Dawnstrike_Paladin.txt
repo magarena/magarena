@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Knight
 cost={3}{W}{W}
 pt=2/4
-ability=vigilance;lifelink
+ability=Vigilance;lifelink
 timing=main
 oracle=Vigilance\nLifelink

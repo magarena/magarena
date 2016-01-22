@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Knight
 cost={1}{W}{W}
 pt=2/2
-ability=flying;\
+ability=Flying;\
         Whenever you cast a spell that targets SN, put a +1/+1 counter on SN.
 timing=main
 oracle=Flying\nHeroic — Whenever you cast a spell that targets Wingsteed Rider, put a +1/+1 counter on Wingsteed Rider.

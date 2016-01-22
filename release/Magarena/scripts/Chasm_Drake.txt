@@ -6,7 +6,7 @@ type=Creature
 subtype=Drake
 cost={4}{U}
 pt=3/3
-ability=flying;\
+ability=Flying;\
         Whenever SN attacks, target creature you control gains flying until end of turn.
 timing=main
 oracle=Flying\nWhenever Chasm Drake attacks, target creature you control gains flying until end of turn.

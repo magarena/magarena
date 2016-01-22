@@ -6,7 +6,7 @@ type=Creature
 subtype=Horror
 cost={B}{B}{B}{B}
 pt=5/5
-ability=trample
+ability=Trample
 timing=main
 requires_groovy_code
 oracle=Trample\nWhenever a source deals damage to Phyrexian Obliterator, that source's controller sacrifices that many permanents.

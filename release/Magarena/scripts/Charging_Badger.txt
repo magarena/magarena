@@ -6,6 +6,6 @@ type=Creature
 subtype=Badger
 cost={G}
 pt=1/1
-ability=trample
+ability=Trample
 timing=main
 oracle=Trample

@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Gorgon
 cost={3}{B}{B}{B}
 pt=5/5
-ability=flying;\
+ability=Flying;\
         {T}: Destroy target creature. It can't be regenerated.
 timing=main
 oracle=Flying\n{T}: Destroy target creature. It can't be regenerated.

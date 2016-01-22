@@ -6,7 +6,7 @@ type=Creature
 subtype=Demon
 cost={3}{B}{B}{B}
 pt=6/6
-ability=flying;\
+ability=Flying;\
         At the beginning of each end step, if a creature died this turn, destroy target non-Demon creature.
 timing=main
 oracle=Flying\nMorbid — At the beginning of each end step, if a creature died this turn, destroy target non-Demon creature.

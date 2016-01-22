@@ -4,6 +4,6 @@ value=3.930
 rarity=U
 type=Artifact
 cost={0}
-ability={1},Sacrifice a permanent: You gain 1 life.
+ability={1}, Sacrifice a permanent: You gain 1 life.
 timing=artifact
 oracle={1}, Sacrifice a permanent: You gain 1 life.

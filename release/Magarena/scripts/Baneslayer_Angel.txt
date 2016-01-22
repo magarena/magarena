@@ -6,6 +6,6 @@ type=Creature
 subtype=Angel
 cost={3}{W}{W}
 pt=5/5
-ability=flying;first strike;lifelink;protection from Demons;protection from Dragons
+ability=Flying;first strike;lifelink;protection from Demons;protection from Dragons
 timing=main
 oracle=Flying, first strike, lifelink, protection from Demons and from Dragons

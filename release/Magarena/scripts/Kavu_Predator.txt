@@ -6,7 +6,7 @@ type=Creature
 subtype=Kavu
 cost={1}{G}
 pt=2/2
-ability=trample
+ability=Trample
 timing=main
 requires_groovy_code
 oracle=Trample\nWhenever an opponent gains life, put that many +1/+1 counters on Kavu Predator.

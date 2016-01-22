@@ -4,7 +4,7 @@ value=3.638
 rarity=U
 type=Land
 mana=w3u3
-ability={T}: Add {W} or {U} to your mana pool.;\
-        SN enters the battlefield tapped.
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {W} or {U} to your mana pool.
 timing=tapland
 oracle=Coastal Tower enters the battlefield tapped.\n{T}: Add {W} or {U} to your mana pool.

@@ -6,5 +6,5 @@ type=Legendary,Creature
 subtype=Avatar
 color=b
 pt=20/20
-ability=flying;indestructible
+ability=Flying;indestructible
 oracle=Flying, indestructible

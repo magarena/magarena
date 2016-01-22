@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Nomad,Mystic
 cost={W}
 pt=1/1
-ability=vigilance;\
+ability=Vigilance;\
         As long as seven or more cards are in your graveyard, SN gets +1/+1 and has flying.
 timing=main
 oracle=Vigilance\nThreshold — As long as seven or more cards are in your graveyard, Mystic Penitent gets +1/+1 and has flying.

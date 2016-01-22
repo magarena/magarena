@@ -6,5 +6,5 @@ type=Creature
 subtype=Griffin
 color=w
 pt=2/2
-ability=flying
+ability=Flying
 oracle=Flying

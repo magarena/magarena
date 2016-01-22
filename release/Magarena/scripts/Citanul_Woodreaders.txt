@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Druid
 cost={2}{G}
 pt=1/4
-ability=kicker {2}{G};\
+ability=Kicker {2}{G};\
         When SN enters the battlefield, if it was kicked, draw two cards.
 timing=main
 oracle=Kicker {2}{G}\nWhen Citanul Woodreaders enters the battlefield, if it was kicked, draw two cards.

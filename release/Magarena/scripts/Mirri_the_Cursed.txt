@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Vampire,Cat
 cost={2}{B}{B}
 pt=3/2
-ability=flying;\
+ability=Flying;\
         first strike;\
         haste;\
         Whenever SN deals combat damage to a creature, put a +1/+1 counter on SN.

@@ -6,7 +6,7 @@ type=Creature
 subtype=Cockatrice
 cost={3}{G}{G}
 pt=2/4
-ability=Flying.;\
+ability=Flying;\
         Whenever SN blocks or becomes blocked by a non-Wall creature, destroy that creature at end of combat.
 timing=main
 oracle=Flying\nWhenever Cockatrice blocks or becomes blocked by a non-Wall creature, destroy that creature at end of combat.

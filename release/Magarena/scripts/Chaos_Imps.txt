@@ -6,6 +6,8 @@ type=Creature
 subtype=Imp
 cost={4}{R}{R}
 pt=6/5
-ability=flying;unleash;SN has trample as long as it has a +1/+1 counter on it.
+ability=Flying;\
+        Unleash;\
+        SN has trample as long as it has a +1/+1 counter on it.
 timing=main
 oracle=Flying\nUnleash\nChaos Imps has trample as long as it has a +1/+1 counter on it.

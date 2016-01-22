@@ -1,7 +1,7 @@
 name=Concordia Pegasus
 image=http://magiccards.info/scans/en/rtr/8.jpg
 value=2.705
-ability=flying
+ability=Flying
 rarity=C
 type=Creature
 subtype=Pegasus

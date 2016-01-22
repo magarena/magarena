@@ -6,6 +6,6 @@ type=Creature
 subtype=Griffin
 cost={4}{W}
 pt=3/2
-ability=flying;{2}{G}{G}: SN gets +2/+2 until end of turn. Activate this ability only once each turn.
+ability=Flying;{2}{G}{G}: SN gets +2/+2 until end of turn. Activate this ability only once each turn.
 timing=main
 oracle=Flying\n{2}{G}{G}: Setessan Griffin gets +2/+2 until end of turn. Activate this ability only once each turn.

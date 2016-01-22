@@ -1,11 +1,12 @@
 name=Cloud Crusader
 image=http://magiccards.info/scans/en/m11/10.jpg
 value=2.895
-ability=flying;first strike
 rarity=C
 type=Creature
 subtype=Human,Knight
 cost={2}{W}{W}
 pt=2/3
+ability=Flying;\
+        First strike
 timing=main
 oracle=Flying\nFirst strike

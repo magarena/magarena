@@ -6,6 +6,6 @@ type=Creature
 subtype=Kithkin,Wizard
 cost={4}{W}
 pt=2/3
-ability=flying;{1}{W},Sacrifice SN:Destroy target enchantment.;persist
+ability=Flying;{1}{W},Sacrifice SN:Destroy target enchantment.;persist
 timing=main
 oracle=Flying\n{1}{W}, Sacrifice Kithkin Spellduster: Destroy target enchantment.\nPersist

@@ -6,6 +6,6 @@ type=Creature
 subtype=Faerie,Rogue
 cost={1}{U}
 pt=1/2
-ability=flying;{U}:SN gets +1/-1 until end of turn.
+ability=Flying;{U}:SN gets +1/-1 until end of turn.
 timing=main
 oracle=Flying\n{U}: Metropolis Sprite gets +1/-1 until end of turn.

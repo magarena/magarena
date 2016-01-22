@@ -6,7 +6,7 @@ type=Creature
 subtype=Antelope,Beast
 cost={2}{G}{G}
 pt=5/4
-ability=trample;\
+ability=Trample;\
         At the beginning of your upkeep, return a green creature you control to its owner's hand.
 timing=main
 oracle=Trample\nAt the beginning of your upkeep, return a green creature you control to its owner's hand.

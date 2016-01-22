@@ -6,6 +6,6 @@ type=Creature
 subtype=Fox
 cost={4}{G}{G}
 pt=6/5
-ability=trample
+ability=Trample
 timing=main
 oracle=Trample

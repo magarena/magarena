@@ -6,6 +6,6 @@ type=Creature
 subtype=Drake
 cost={1}{W}{U}
 pt=2/2
-ability=vigilance;flying
+ability=Vigilance;flying
 timing=main
 oracle=Flying, vigilance

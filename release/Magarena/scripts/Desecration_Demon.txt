@@ -7,6 +7,6 @@ subtype=Demon
 cost={2}{B}{B}
 pt=6/6
 timing=main
-ability=flying
+ability=Flying
 requires_groovy_code
 oracle=Flying\nAt the beginning of each combat, any opponent may sacrifice a creature. If a player does, tap Desecration Demon and put a +1/+1 counter on it.

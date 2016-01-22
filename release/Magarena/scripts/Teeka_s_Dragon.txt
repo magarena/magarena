@@ -6,6 +6,6 @@ type=Artifact,Creature
 subtype=Dragon
 cost={9}
 pt=5/5
-ability=flying;trample;rampage 4
+ability=Flying;trample;rampage 4
 timing=main
 oracle=Flying; trample; rampage 4

@@ -6,5 +6,5 @@ type=Enchantment,Creature
 subtype=Bird
 color=u
 pt=2/2
-ability=flying
+ability=Flying
 oracle=Flying

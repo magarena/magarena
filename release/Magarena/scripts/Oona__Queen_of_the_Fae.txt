@@ -1,7 +1,7 @@
 name=Oona, Queen of the Fae
 image=http://magiccards.info/scans/en/mma/193.jpg
 value=4.487
-ability=flying
+ability=Flying
 rarity=R
 type=Legendary,Creature
 subtype=Faerie,Wizard

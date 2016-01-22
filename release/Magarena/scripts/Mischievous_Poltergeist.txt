@@ -6,7 +6,7 @@ type=Creature
 subtype=Spirit
 cost={2}{B}
 pt=1/1
-ability=flying;\
+ability=Flying;\
         Pay 1 life: Regenerate SN.
 timing=main
 oracle=Flying\nPay 1 life: Regenerate Mischievous Poltergeist.

@@ -6,6 +6,6 @@ type=Creature
 subtype=Dragon
 cost={2}{R}{R}
 pt=2/2
-ability=flying;{R}: SN gets +1/+0 until end of turn.
+ability=Flying;{R}: SN gets +1/+0 until end of turn.
 timing=main
 oracle=Flying\n{R}: Furnace Whelp gets +1/+0 until end of turn.

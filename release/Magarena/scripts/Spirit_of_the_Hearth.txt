@@ -6,7 +6,7 @@ type=Creature
 subtype=Cat,Spirit
 cost={4}{W}{W}
 pt=4/5
-ability=flying
+ability=Flying
 timing=fmain
 requires_groovy_code
 oracle=Flying\nYou have hexproof.

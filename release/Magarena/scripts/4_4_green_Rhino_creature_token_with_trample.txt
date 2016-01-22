@@ -6,5 +6,5 @@ type=Creature
 subtype=Rhino
 color=g
 pt=4/4
-ability=trample
+ability=Trample
 oracle=Trample

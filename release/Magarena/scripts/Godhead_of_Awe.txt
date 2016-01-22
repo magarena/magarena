@@ -7,7 +7,7 @@ type=Creature
 subtype=Spirit,Avatar
 cost={W/U}{W/U}{W/U}{W/U}{W/U}
 pt=4/4
-ability=flying
+ability=Flying
 static=all
 timing=smain
 requires_groovy_code

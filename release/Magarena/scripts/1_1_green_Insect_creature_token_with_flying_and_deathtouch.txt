@@ -6,6 +6,6 @@ value=3
 type=Creature
 subtype=Insect
 color=g
-ability=flying;deathtouch
+ability=Flying;deathtouch
 pt=1/1
 oracle=Flying, deathtouch

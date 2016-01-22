@@ -6,6 +6,6 @@ type=Creature
 subtype=Spirit
 cost={5}{W}
 pt=3/2
-ability=flying;first strike;soulshift 5
+ability=Flying;first strike;soulshift 5
 timing=main
 oracle=Flying, first strike\nSoulshift 5

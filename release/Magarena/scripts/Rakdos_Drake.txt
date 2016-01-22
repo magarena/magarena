@@ -1,7 +1,7 @@
 name=Rakdos Drake
 image=http://magiccards.info/scans/en/dgm/28.jpg
 value=3.051
-ability=flying;unleash
+ability=Flying;unleash
 rarity=C
 type=Creature
 subtype=Drake

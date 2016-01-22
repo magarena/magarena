@@ -6,7 +6,7 @@ type=Creature
 subtype=Crab
 cost={1}{W}{U}
 pt=1/3
-ability=vigilance;\
+ability=Vigilance;\
         When SN dies, draw a card.
 timing=main
 oracle=Vigilance\nWhen Riptide Crab dies, draw a card.

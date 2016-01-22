@@ -6,7 +6,7 @@ type=Creature
 subtype=Drake
 cost={3}{R}
 pt=2/2
-ability=flying;\
+ability=Flying;\
         {R}: SN gets +1/+0 until end of turn. Activate this ability only once each turn.
 timing=main
 oracle=Flying\n{R}: Spitting Drake gets +1/+0 until end of turn. Activate this ability only once each turn.

@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Kirin,Spirit
 cost={5}{G}{G}
 pt=4/4
-ability=flying
+ability=Flying
 timing=main
 requires_groovy_code
 oracle=Flying\nWhenever you cast a Spirit or Arcane spell, you may gain life equal to that spell's converted mana cost.

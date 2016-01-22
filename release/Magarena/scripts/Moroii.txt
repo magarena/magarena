@@ -6,7 +6,7 @@ type=Creature
 subtype=Vampire
 cost={2}{U}{B}
 pt=4/4
-ability=flying;\
+ability=Flying;\
         At the beginning of your upkeep, you lose 1 life.
 timing=main
 oracle=Flying\nAt the beginning of your upkeep, you lose 1 life.

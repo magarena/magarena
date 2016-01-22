@@ -6,6 +6,6 @@ type=Creature
 subtype=Moonfolk,Wizard
 cost={2}{U}{U}
 pt=2/2
-ability=flying;{3},Return a land you control to its owner's hand:Counter target spell unless its controller pays {3}.
+ability=Flying;{3},Return a land you control to its owner's hand:Counter target spell unless its controller pays {3}.
 timing=main
 oracle=Flying\n{3}, Return a land you control to its owner's hand: Counter target spell unless its controller pays {3}.

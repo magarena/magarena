@@ -6,6 +6,6 @@ value=3
 type=Artifact,Creature
 subtype=Gargoyle
 color=
-ability=flying
+ability=Flying
 pt=3/4
 oracle=Flying

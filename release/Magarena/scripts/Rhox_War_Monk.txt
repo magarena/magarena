@@ -6,6 +6,6 @@ type=Creature
 subtype=Rhino,Monk
 cost={G}{W}{U}
 pt=3/4
-ability=lifelink
+ability=Lifelink
 timing=smain
 oracle=Lifelink

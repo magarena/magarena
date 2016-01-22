@@ -6,7 +6,7 @@ type=Creature
 subtype=Elf,Warrior
 cost={G}
 pt=1/1
-ability=wither;\
+ability=Wither;\
         {1}{G}: SN gets +2/+2 until end of turn. Activate this ability only once each turn.
 timing=main
 oracle=Wither\n{1}{G}: Twinblade Slasher gets +2/+2 until end of turn. Activate this ability only once each turn.

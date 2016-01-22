@@ -1,11 +1,11 @@
 name=Coast Watcher
 image=http://magiccards.info/scans/en/sc/30.jpg
 value=2.808
-ability=flying;protection from green
 rarity=C
 type=Creature
 subtype=Bird,Soldier
 cost={1}{U}
 pt=1/1
+ability=Flying, protection from green
 timing=main
 oracle=Flying, protection from green

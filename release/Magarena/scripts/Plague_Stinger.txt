@@ -6,6 +6,6 @@ type=Creature
 subtype=Insect,Horror
 cost={1}{B}
 pt=1/1
-ability=flying;infect
+ability=Flying;infect
 timing=main
 oracle=Flying\nInfect

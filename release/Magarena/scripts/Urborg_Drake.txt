@@ -1,7 +1,7 @@
 name=Urborg Drake
 image=http://magiccards.info/scans/en/in/283.jpg
 value=3.484
-ability=flying;SN attacks each turn if able.
+ability=Flying;SN attacks each turn if able.
 rarity=U
 type=Creature
 subtype=Drake

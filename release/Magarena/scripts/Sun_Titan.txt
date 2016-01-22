@@ -7,7 +7,7 @@ type=Creature
 subtype=Giant
 cost={4}{W}{W}
 pt=6/6
-ability=vigilance;\
+ability=Vigilance;\
         When SN enters the battlefield, you may return target permanent card with converted mana cost 3 or less from your graveyard to the battlefield.;\
        Whenever SN attacks, you may return target permanent card with converted mana cost 3 or less from your graveyard to the battlefield.
 timing=main

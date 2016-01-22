@@ -6,5 +6,5 @@ type=Creature
 subtype=Elemental
 color=R
 pt=7/1
-ability=trample;haste
+ability=Trample;haste
 oracle=Trample, haste

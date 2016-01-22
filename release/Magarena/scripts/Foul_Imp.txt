@@ -6,7 +6,7 @@ type=Creature
 subtype=Imp
 cost={B}{B}
 pt=2/2
-ability=flying;\
+ability=Flying;\
         When SN enters the battlefield, you lose 2 life.
 timing=smain
 oracle=Flying\nWhen Foul Imp enters the battlefield, you lose 2 life.

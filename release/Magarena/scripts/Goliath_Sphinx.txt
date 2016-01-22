@@ -6,6 +6,6 @@ type=Creature
 subtype=Sphinx
 cost={5}{U}{U}
 pt=8/7
-ability=flying
+ability=Flying
 timing=main
 oracle=Flying

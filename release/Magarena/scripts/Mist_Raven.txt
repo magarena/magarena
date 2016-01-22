@@ -7,7 +7,7 @@ type=Creature
 subtype=Bird
 cost={2}{U}{U}
 pt=2/2
-ability=flying;\
+ability=Flying;\
         When SN enters the battlefield, return target creature to its owner's hand.
 timing=fmain
 oracle=Flying\nWhen Mist Raven enters the battlefield, return target creature to its owner's hand.

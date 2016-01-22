@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Kirin,Spirit
 cost={3}{U}{U}
 pt=4/4
-ability=flying
+ability=Flying
 timing=main
 requires_groovy_code
 oracle=Flying\nWhenever you cast a Spirit or Arcane spell, you may have target player put the top X cards of his or her library into his or her graveyard, where X is that spell's converted mana cost.

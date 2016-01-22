@@ -6,6 +6,6 @@ type=Creature
 subtype=Goblin,Warrior
 cost={B}{R}
 pt=3/1
-ability=trample
+ability=Trample
 timing=main
 oracle=Trample
