@@ -6,7 +6,7 @@ type=Creature
 subtype=Bird
 cost={4}{R}
 pt=2/2
-ability=Flying.;\
+ability=Flying;\
         Whenever SN blocks a creature without flying, SN gets +1/+0 and gains first strike until end of turn.
 timing=main
 oracle=Flying\nWhenever Crimson Roc blocks a creature without flying, Crimson Roc gets +1/+0 and gains first strike until end of turn.

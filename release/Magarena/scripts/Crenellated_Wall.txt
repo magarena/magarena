@@ -6,6 +6,7 @@ type=Artifact,Creature
 subtype=Wall
 cost={4}
 pt=0/4
-ability=defender;{T}:Target creature gets +0/+4 until end of turn.
+ability=Defender;\
+        {T}: Target creature gets +0/+4 until end of turn.
 timing=artifact
 oracle=Defender\n{T}: Target creature gets +0/+4 until end of turn.

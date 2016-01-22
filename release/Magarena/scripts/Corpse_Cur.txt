@@ -6,7 +6,7 @@ type=Artifact,Creature
 subtype=Hound
 cost={4}
 pt=2/2
-ability=infect;\
+ability=Infect;\
         When SN enters the battlefield, you may return target creature card with infect from your graveyard to your hand.
 timing=main
 oracle=Infect\nWhen Corpse Cur enters the battlefield, you may return target creature card with infect from your graveyard to your hand.

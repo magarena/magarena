@@ -4,6 +4,6 @@ value=3.940
 rarity=C
 type=Artifact
 cost={1}{U}
-ability={1}{U},{T},Sacrifice SN: Draw two cards.
+ability={1}{U}, {T}, Sacrifice SN: Draw two cards.
 timing=artifact
 oracle={1}{U}, {T}, Sacrifice Courier's Capsule: Draw two cards.

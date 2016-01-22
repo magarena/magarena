@@ -4,6 +4,6 @@ value=3.643
 rarity=R
 type=Enchantment
 cost={3}{G}{G}{W}
-ability=creatures you control get +3/+3
+ability=Creatures you control get +3/+3.
 timing=enchantment
 oracle=Creatures you control get +3/+3.

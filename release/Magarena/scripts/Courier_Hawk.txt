@@ -1,11 +1,11 @@
 name=Courier Hawk
 image=http://magiccards.info/scans/en/cns/68.jpg
 value=3.571
-ability=Flying;vigilance
 rarity=C
 type=Creature
 subtype=Bird
 cost={1}{W}
 pt=1/2
+ability=Flying, vigilance
 timing=main
 oracle=Flying, vigilance

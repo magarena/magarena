@@ -1,11 +1,11 @@
 name=Dancing Scimitar
 image=http://magiccards.info/scans/en/9e/292.jpg
 value=3.089
-ability=Flying
 rarity=R
 type=Artifact,Creature
 subtype=Spirit
 cost={4}
 pt=1/5
+ability=Flying
 timing=main
 oracle=Flying

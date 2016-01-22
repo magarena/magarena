@@ -6,6 +6,7 @@ type=Creature
 subtype=Shade
 cost={2}{B}{B}
 pt=2/2
-ability=haste;{B}: SN gets +1/+1 until end of turn.
+ability=Haste;\
+        {B}: SN gets +1/+1 until end of turn.
 timing=fmain
 oracle=Haste\n{B}: Crypt Ripper gets +1/+1 until end of turn.

@@ -1,11 +1,12 @@
 name=Court Archers
 image=http://magiccards.info/scans/en/ala/126.jpg
 value=2.512
-ability=reach;exalted
 rarity=C
 type=Creature
 subtype=Human,Archer
 cost={2}{G}
 pt=1/3
+ability=Reach;\
+        Exalted
 timing=main
 oracle=Reach\nExalted

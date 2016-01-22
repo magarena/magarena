@@ -1,11 +1,11 @@
 name=Daggerback Basilisk
 image=http://magiccards.info/scans/en/roe/182.jpg
 value=3.083
-ability=deathtouch
 rarity=C
 type=Creature
 subtype=Basilisk
 cost={2}{G}
 pt=2/2
+ability=Deathtouch
 timing=main
 oracle=Deathtouch

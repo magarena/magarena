@@ -1,11 +1,11 @@
 name=Commander Eesha
 image=http://magiccards.info/scans/en/ju/9.jpg
 value=4.122
-ability=Flying;protection from creatures
 rarity=R
 type=Legendary,Creature
 subtype=Bird,Soldier
 cost={2}{W}{W}
 pt=2/4
+ability=Flying, protection from creatures
 timing=main
 oracle=Flying, protection from creatures

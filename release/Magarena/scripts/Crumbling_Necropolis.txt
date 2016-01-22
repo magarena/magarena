@@ -4,7 +4,7 @@ value=3.893
 rarity=U
 type=Land
 mana=u2b2r2
-ability={T}: Add {U} or {B} or {R} to your mana pool.;\
-        SN enters the battlefield tapped.
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {U}, {B}, or {R} to your mana pool.
 timing=tapland
 oracle=Crumbling Necropolis enters the battlefield tapped.\n{T}: Add {U}, {B}, or {R} to your mana pool.

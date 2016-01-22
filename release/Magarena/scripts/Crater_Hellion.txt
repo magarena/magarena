@@ -6,7 +6,7 @@ type=Creature
 subtype=Hellion,Beast
 cost={4}{R}{R}
 pt=6/6
-ability=echo {4}{R}{R};\
+ability=Echo {4}{R}{R};\
         When SN enters the battlefield, SN deals 4 damage to each other creature.
 timing=main
 oracle=Echo {4}{R}{R}\nWhen Crater Hellion enters the battlefield, it deals 4 damage to each other creature.

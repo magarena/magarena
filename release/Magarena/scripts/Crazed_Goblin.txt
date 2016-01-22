@@ -1,11 +1,11 @@
 name=Crazed Goblin
 image=http://magiccards.info/scans/en/ds/56.jpg
 value=0.860
-ability=SN attacks each turn if able.
 rarity=C
 type=Creature
 subtype=Goblin,Warrior
 cost={R}
 pt=1/1
+ability=SN attacks each turn if able.
 timing=main
 oracle=Crazed Goblin attacks each turn if able.

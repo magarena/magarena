@@ -6,6 +6,7 @@ type=Creature
 subtype=Treefolk
 cost={1}{G}{G}
 pt=4/4
-ability=Trample;echo {1}{G}{G}
+ability=Trample;\
+        Echo {1}{G}{G}
 timing=main
 oracle=Trample\nEcho {1}{G}{G}

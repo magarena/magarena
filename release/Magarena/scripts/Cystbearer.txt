@@ -1,11 +1,11 @@
 name=Cystbearer
 image=http://magiccards.info/scans/en/som/117.jpg
 value=3.606
-ability=infect
 rarity=C
 type=Creature
 subtype=Beast
 cost={2}{G}
 pt=2/3
+ability=Infect
 timing=main
 oracle=Infect

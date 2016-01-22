@@ -6,6 +6,7 @@ type=Creature
 subtype=Elemental,Mutant
 cost={6}{G}
 pt=0/0
-ability=graft 6;{G}:Target creature with a +1/+1 counter on it gains trample until end of turn.
+ability=Graft 6;\
+        {G}: Target creature with a +1/+1 counter on it gains trample until end of turn.
 timing=main
 oracle=Graft 6\n{G}: Target creature with a +1/+1 counter on it gains trample until end of turn.

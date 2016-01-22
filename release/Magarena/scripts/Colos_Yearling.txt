@@ -6,6 +6,7 @@ type=Creature
 subtype=Goat,Beast
 cost={2}{R}
 pt=1/1
-ability=Mountainwalk;{R}: SN gets +1/+0 until end of turn.
+ability=Mountainwalk;\
+        {R}: SN gets +1/+0 until end of turn.
 timing=main
 oracle=Mountainwalk\n{R}: Colos Yearling gets +1/+0 until end of turn.

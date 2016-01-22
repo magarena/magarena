@@ -6,6 +6,6 @@ type=Creature
 subtype=Imp
 cost={3}{B}
 pt=2/2
-ability=Flying;haste
+ability=Flying, haste
 timing=fmain
 oracle=Flying, haste

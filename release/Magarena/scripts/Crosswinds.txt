@@ -4,6 +4,6 @@ value=3.340
 rarity=U
 type=Enchantment
 cost={1}{G}
-ability=creatures with flying get -2/-0
+ability=Creatures with flying get -2/-0.
 timing=enchantment
 oracle=Creatures with flying get -2/-0.
