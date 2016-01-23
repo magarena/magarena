@@ -6,6 +6,7 @@ type=Creature
 subtype=Griffin
 cost={5}{W}
 pt=3/3
-ability=At the beginning of your upkeep, tap target creature.
+ability=Flying;\
+        At the beginning of your upkeep, tap target creature.
 timing=main
 oracle=Flying\nAt the beginning of your upkeep, tap target creature.
