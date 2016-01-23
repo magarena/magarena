@@ -4,6 +4,8 @@ value=2.500
 rarity=C
 type=Instant
 cost={3}{U}
-effect=Tap up to four target creatures.~Cycling {1}{U}~When you cycle SN, you may tap target creature.
+ability=Cycling {1}{U};\
+        When you cycle SN, you may tap target creature.
+effect=Tap up to four target creatures.
 timing=removal
 oracle=Tap up to four target creatures.\nCycling {1}{U}\nWhen you cycle Choking Tethers, you may tap target creature.
