@@ -1,23 +1,11 @@
 package magic.ui.duel.viewer;
 
-import magic.ui.duel.viewer.info.PermanentViewerInfo;
-import magic.ui.utility.ImageDrawingUtils;
-import magic.data.GeneralConfig;
-import magic.ui.CachedImagesProvider;
-import magic.ui.MagicImages;
-import magic.model.MagicType;
-import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
-import magic.ui.widget.FontsAndBorders;
-
-import javax.swing.JPanel;
-
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FontMetrics;
-import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.Graphics;
 import java.awt.MouseInfo;
 import java.awt.Point;
 import java.awt.Rectangle;
@@ -28,16 +16,23 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
-import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
-import magic.ui.CardImagesProvider;
+import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
+import magic.model.MagicType;
+import magic.ui.MagicImages;
+import magic.ui.duel.viewer.info.PermanentViewerInfo;
+import magic.ui.theme.Theme;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.utility.GraphicsUtils;
+import magic.ui.utility.ImageDrawingUtils;
 import magic.ui.utility.MagicStyle;
+import magic.ui.widget.FontsAndBorders;
 
 @SuppressWarnings("serial")
 public class ImagePermanentViewer extends JPanel {
@@ -242,10 +237,16 @@ public class ImagePermanentViewer extends JPanel {
         return logicalRow;
     }
 
+    private void drawTappedImage(Graphics2D g2d, BufferedImage image, int x1, int y1) {
+        g2d.translate(x1, y1);
+        g2d.rotate(Math.PI / 2);
+        g2d.drawImage(image, 0, -image.getHeight(), null);
+        g2d.rotate(-Math.PI / 2);
+        g2d.translate(-x1, -y1);
+    }
+
     @Override
     public void paintComponent(final Graphics g) {
-
-        final Dimension imageSize = GraphicsUtils.getMaxCardImageSize();
 
         g.setFont(FontsAndBorders.FONT1);
         final FontMetrics metrics = g.getFontMetrics();
@@ -255,12 +256,9 @@ public class ImagePermanentViewer extends JPanel {
 
         final Stroke defaultStroke = g2d.getStroke();
 
-        final CardImagesProvider imageCache = CachedImagesProvider.getInstance();
-
         for (int index = 0; index < linkedScreenRectangles.size(); index++) {
 
             final PermanentViewerInfo linkedInfo = linkedInfos.get(index);
-            final BufferedImage image = imageCache.getImage(linkedInfo.cardDefinition, false);
 
             final Rectangle linkedRect = linkedScreenRectangles.get(index);
             final int x1 = linkedRect.x;
@@ -268,13 +266,16 @@ public class ImagePermanentViewer extends JPanel {
             final int x2 = x1 + linkedRect.width - 1;
             final int y2 = y1 + linkedRect.height - 1;
 
-            //
-            // Draw card image.
+            final BufferedImage image = GraphicsUtils.scale(
+                MagicImages.geCardImageUseCache(linkedInfo.cardDefinition),
+                linkedInfo.tapped ? linkedRect.height : linkedRect.width,
+                linkedInfo.tapped ? linkedRect.width : linkedRect.height
+            );
+
             if (linkedInfo.tapped) {
-                final AffineTransform transform = getTappedTransform(linkedRect, imageSize, new Point(x1, y1));
-                g2d.drawImage(image, transform, this);
+                drawTappedImage(g2d, image, x1, y1);
             } else {
-                g.drawImage(image, x1, y1, x2, y2, 0, 0, imageSize.width, imageSize.height, this);
+                g2d.drawImage(image, x1, y1, this);
             }
 
             ImageDrawingUtils.drawCardId(g, linkedInfo.permanent.getCard().getId(), 0, 0);
@@ -404,17 +405,6 @@ public class ImagePermanentViewer extends JPanel {
             }
         }
         return linkedScreenRectangles.get(0);
-    }
-
-    private AffineTransform getTappedTransform(final Rectangle linkedRect, final Dimension imageSize, final Point translation) {
-        final AffineTransform transform = new AffineTransform();
-        final double scale = linkedRect.width * 1.0 / imageSize.height;
-        transform.translate(translation.x, translation.y);
-        transform.scale(scale, scale);
-        transform.translate(imageSize.height/2, imageSize.width/2);
-        transform.rotate(Math.PI/2);
-        transform.translate(-imageSize.width/2, -imageSize.height/2);
-        return transform;
     }
 
     void doShowHighlight(long id) {
