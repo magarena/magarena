@@ -7,6 +7,6 @@ type=Creature
 subtype=Insect
 cost={3}{G}
 pt=2/4
-ability=reach
+ability=Reach
 timing=main
 oracle=Reach

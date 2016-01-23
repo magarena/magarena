@@ -6,6 +6,6 @@ type=Creature
 subtype=Bird
 cost={1}{W}
 pt=1/1
-ability=protection from red;flying
+ability=Flying, protection from red
 timing=main
 oracle=Flying, protection from red

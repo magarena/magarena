@@ -4,6 +4,6 @@ value=3.724
 rarity=U
 type=Enchantment
 cost={2}{R}
-ability={R}:Target creature gets +1/+0 until end of turn.
+ability={R}: Target creature gets +1/+0 until end of turn.
 timing=enchantment
 oracle={R}: Target creature gets +1/+0 until end of turn.

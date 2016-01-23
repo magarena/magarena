@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{G}
-ability=When SN enters the battlefield, put two 1/1 green Saproling creature tokens onto the battlefield.;\
+ability=Enchant creature;\
+        When SN enters the battlefield, put two 1/1 green Saproling creature tokens onto the battlefield.;\
         Enchanted creature has trample.
 timing=aura
 enchant=trample,pos creature

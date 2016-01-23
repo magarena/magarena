@@ -4,6 +4,6 @@ value=3.000
 rarity=U
 type=Land
 ability=SN enters the battlefield tapped.;\
-        {T},Sacrifice SN: Search your library for a Plains or Island card and put it onto the battlefield. Then shuffle your library.
+        {T}, Sacrifice SN: Search your library for a Plains or Island card and put it onto the battlefield. Then shuffle your library.
 timing=land
 oracle=Flood Plain enters the battlefield tapped.\n{T}, Sacrifice Flood Plain: Search your library for a Plains or Island card and put it onto the battlefield. Then shuffle your library.

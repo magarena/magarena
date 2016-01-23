@@ -1,11 +1,12 @@
 name=Flensermite
 image=http://magiccards.info/scans/en/mbs/41.jpg
 value=3.023
-ability=infect;lifelink
 rarity=C
 type=Creature
 subtype=Gremlin
 cost={1}{B}
 pt=1/1
+ability=Infect;\
+        Lifelink
 timing=main
 oracle=Infect\nLifelink

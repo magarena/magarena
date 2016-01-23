@@ -1,11 +1,11 @@
 name=Glacial Wall
 image=http://magiccards.info/scans/en/7e/78.jpg
 value=3.011
-ability=defender
 rarity=U
 type=Creature
 subtype=Wall
 cost={2}{U}
 pt=0/7
+ability=Defender
 timing=smain
 oracle=Defender

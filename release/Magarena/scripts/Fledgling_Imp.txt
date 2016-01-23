@@ -6,6 +6,6 @@ type=Creature
 subtype=Imp
 cost={2}{B}
 pt=2/2
-ability={B},Discard a card:SN gains flying until end of turn.
+ability={B}, Discard a card: SN gains flying until end of turn.
 timing=main
 oracle={B}, Discard a card: Fledgling Imp gains flying until end of turn.

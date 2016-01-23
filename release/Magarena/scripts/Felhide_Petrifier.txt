@@ -7,6 +7,6 @@ subtype=Minotaur,Warrior
 cost={2}{B}
 pt=2/3
 ability=Deathtouch;\
-        other Minotaur creatures you control have deathtouch.
+        Other Minotaur creatures you control have deathtouch.
 timing=main
 oracle=Deathtouch\nOther Minotaur creatures you control have deathtouch.

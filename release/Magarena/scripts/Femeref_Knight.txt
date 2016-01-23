@@ -6,6 +6,7 @@ type=Creature
 subtype=Human,Knight
 cost={2}{W}
 pt=2/2
-ability=flanking;{W}: SN gains vigilance until end of turn.
+ability=Flanking;\
+        {W}: SN gains vigilance until end of turn.
 timing=main
 oracle=Flanking\n{W}: Femeref Knight gains vigilance until end of turn.

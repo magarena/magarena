@@ -6,6 +6,6 @@ type=Creature
 subtype=Ouphe
 cost={2}{G}
 pt=1/1
-ability={2}{G},{T}:Untap target creature.
+ability={2}{G}, {T}: Untap target creature.
 timing=main
 oracle={2}{G}, {T}: Untap target creature.

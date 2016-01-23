@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Zombie,Elf
 cost={B}{G}{G}
 pt=3/3
-ability=first strike;deathtouch;\
+ability=First strike, deathtouch;\
         Whenever a creature an opponent controls dies, you may return target artifact card from your graveyard to your hand.
-timing=fmain
+timing=main
 oracle=First strike, deathtouch\nWhenever a creature an opponent controls dies, you may return target artifact card from your graveyard to your hand.

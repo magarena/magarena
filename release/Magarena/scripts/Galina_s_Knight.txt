@@ -1,11 +1,11 @@
 name=Galina's Knight
 image=http://magiccards.info/scans/en/in/248.jpg
 value=3.862
-ability=protection from red
 rarity=C
 type=Creature
 subtype=Merfolk,Knight
 cost={W}{U}
 pt=2/2
+ability=Protection from red
 timing=main
 oracle=Protection from red

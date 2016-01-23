@@ -4,6 +4,7 @@ value=2.600
 rarity=U
 type=Artifact
 cost={2}{U}
-ability=Flash;{B},{T},Sacrifice an artifact: Draw a card.
-timing=artifact
+ability=Flash;\
+        {B}, {T}, Sacrifice an artifact: Draw a card.
+timing=flash
 oracle=Flash\n{B}, {T}, Sacrifice an artifact: Draw a card.

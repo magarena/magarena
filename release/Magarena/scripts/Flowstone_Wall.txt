@@ -6,6 +6,7 @@ type=Creature
 subtype=Wall
 cost={2}{R}
 pt=0/6
-ability=defender;{R}: SN gets +1/-1 until end of turn.
-timing=main
+ability=Defender;\
+        {R}: SN gets +1/-1 until end of turn.
+timing=smain
 oracle=Defender\n{R}: Flowstone Wall gets +1/-1 until end of turn.

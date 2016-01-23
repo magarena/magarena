@@ -7,6 +7,6 @@ subtype=Human,Warrior
 cost={3}{R}{R}
 pt=3/3
 ability=SN gets +2/+2 as long as you have no cards in hand.;\
-        Morph—Discard a card
+        Morph—Discard a card.
 timing=main
 oracle=Hellbent — Gathan Raiders gets +2/+2 as long as you have no cards in hand.\nMorph—Discard a card.

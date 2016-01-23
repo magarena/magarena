@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Spellshaper
 cost={2}{R}
 pt=2/2
-ability={1}{R},{T},Discard a card:Target creature gets +1/-1 and gains haste until end of turn.
+ability={1}{R}, {T}, Discard a card: Target creature gets +1/-1 and gains haste until end of turn.
 timing=main
 oracle={1}{R}, {T}, Discard a card: Target creature gets +1/-1 and gains haste until end of turn.

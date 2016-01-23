@@ -6,6 +6,6 @@ type=Creature
 subtype=Elf,Scout
 cost={1}{G}
 pt=1/1
-ability={3}{G},{T}:Search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.
+ability={3}{G}, {T}: Search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.
 timing=main
 oracle={3}{G}, {T}: Search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.

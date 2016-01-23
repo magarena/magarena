@@ -6,7 +6,7 @@ type=Creature
 subtype=Elf,Archer
 cost={G}
 pt=1/2
-ability=Reach.;\
+ability=Reach;\
         Whenever SN blocks a creature with flying, SN gets +3/+0 until end of turn.
 timing=main
 oracle=Reach\nWhenever Ezuri's Archers blocks a creature with flying, Ezuri's Archers gets +3/+0 until end of turn.

@@ -4,6 +4,6 @@ value=4.273
 rarity=U
 type=Artifact
 cost={B}
-ability={1}{B},{T},Sacrifice SN:Destroy target nonblack creature.
+ability={1}{B}, {T}, Sacrifice SN: Destroy target nonblack creature.
 timing=artifact
 oracle={1}{B}, {T}, Sacrifice Executioner's Capsule: Destroy target nonblack creature.

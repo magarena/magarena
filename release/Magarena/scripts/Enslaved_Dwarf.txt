@@ -6,6 +6,6 @@ type=Creature
 subtype=Dwarf
 cost={R}
 pt=1/1
-ability={R},Sacrifice SN:Target black creature gets +1/+0 and gains first strike until end of turn.
+ability={R}, Sacrifice SN: Target black creature gets +1/+0 and gains first strike until end of turn.
 timing=main
 oracle={R}, Sacrifice Enslaved Dwarf: Target black creature gets +1/+0 and gains first strike until end of turn.

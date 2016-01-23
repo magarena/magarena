@@ -1,11 +1,11 @@
 name=Glistener Elf
 image=http://magiccards.info/scans/en/nph/111.jpg
 value=3.784
-ability=infect
 rarity=C
 type=Creature
 subtype=Elf,Warrior
 cost={G}
 pt=1/1
+ability=Infect
 timing=main
 oracle=Infect

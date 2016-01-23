@@ -6,6 +6,7 @@ type=Creature
 subtype=Faerie,Rogue
 cost={4}{U}
 pt=3/3
-ability=flash;flying
+ability=Flash;\
+        Flying
 timing=flash
 oracle=Flash\nFlying

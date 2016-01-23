@@ -1,11 +1,11 @@
 name=Garruk's Companion
 image=http://magiccards.info/scans/en/m12/175.jpg
 value=4.064
-ability=Trample
 rarity=C
 type=Creature
 subtype=Beast
 cost={G}{G}
 pt=3/2
+ability=Trample
 timing=main
 oracle=Trample

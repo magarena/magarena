@@ -6,6 +6,6 @@ type=Creature
 subtype=Wurm
 cost={4}{G}{W}
 pt=5/5
-ability=cascade
+ability=Cascade
 timing=main
 oracle=Cascade

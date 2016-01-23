@@ -4,6 +4,6 @@ value=3.472
 rarity=U
 type=Enchantment
 cost={1}{R}
-ability=Creatures you control get +1/-1
+ability=Creatures you control get +1/-1.
 timing=enchantment
 oracle=Creatures you control get +1/-1.

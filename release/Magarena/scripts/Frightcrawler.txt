@@ -6,7 +6,7 @@ type=Creature
 subtype=Horror
 cost={1}{B}
 pt=1/1
-ability=fear;\
+ability=Fear;\
         As long as seven or more cards are in your graveyard, SN gets +2/+2 and can't block.
 timing=main
 oracle=Fear\nThreshold — As long as seven or more cards are in your graveyard, Frightcrawler gets +2/+2 and can't block.

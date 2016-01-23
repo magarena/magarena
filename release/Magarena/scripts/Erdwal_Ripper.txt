@@ -6,7 +6,7 @@ type=Creature
 subtype=Vampire
 cost={1}{R}{R}
 pt=2/1
-ability=haste;\
+ability=Haste;\
         Whenever SN deals combat damage to a player, put a +1/+1 counter on SN.
 timing=fmain
 oracle=Haste\nWhenever Erdwal Ripper deals combat damage to a player, put a +1/+1 counter on it.

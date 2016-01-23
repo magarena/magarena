@@ -1,11 +1,11 @@
 name=Giant Scorpion
 image=http://magiccards.info/scans/en/m13/94.jpg
 value=3.049
-ability=deathtouch
 rarity=C
 type=Creature
 subtype=Scorpion
 cost={2}{B}
 pt=1/3
+ability=Deathtouch
 timing=main
 oracle=Deathtouch

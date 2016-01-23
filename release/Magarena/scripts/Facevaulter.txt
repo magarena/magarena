@@ -6,6 +6,6 @@ type=Creature
 subtype=Goblin,Warrior
 cost={B}
 pt=1/1
-ability={B},Sacrifice a Goblin:SN gets +2/+2 until end of turn.
+ability={B}, Sacrifice a Goblin: SN gets +2/+2 until end of turn.
 timing=main
 oracle={B}, Sacrifice a Goblin: Facevaulter gets +2/+2 until end of turn.

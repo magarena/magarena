@@ -6,6 +6,6 @@ type=Creature
 subtype=Horror
 cost={5}{B}
 pt=3/4
-ability={2}{B},Discard a card:SN gains fear until end of turn.
+ability={2}{B}, Discard a card: SN gains fear until end of turn.
 timing=main
 oracle={2}{B}, Discard a card: Face of Fear gains fear until end of turn.

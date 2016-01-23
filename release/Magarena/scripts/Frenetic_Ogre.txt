@@ -6,6 +6,6 @@ type=Creature
 subtype=Ogre
 cost={4}{R}
 pt=2/3
-ability={R},Discard a card at random:SN gets +3/+0 until end of turn.
+ability={R}, Discard a card at random: SN gets +3/+0 until end of turn.
 timing=main
 oracle={R}, Discard a card at random: Frenetic Ogre gets +3/+0 until end of turn.

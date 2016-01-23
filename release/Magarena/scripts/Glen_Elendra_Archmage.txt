@@ -7,7 +7,7 @@ subtype=Faerie,Wizard
 cost={3}{U}
 pt=2/2
 ability=Flying;\
-        {U},Sacrifice SN: Counter target noncreature spell.;\
-        persist
+        {U}, Sacrifice SN: Counter target noncreature spell.;\
+        Persist
 timing=main
 oracle=Flying\n{U}, Sacrifice Glen Elendra Archmage: Counter target noncreature spell.\nPersist

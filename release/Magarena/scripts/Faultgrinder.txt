@@ -8,6 +8,6 @@ cost={6}{R}
 pt=4/4
 ability=Trample;\
         When SN enters the battlefield, destroy target land.;\
-        evoke {4}{R}
+        Evoke {4}{R}
 timing=main
 oracle=Trample\nWhen Faultgrinder enters the battlefield, destroy target land.\nEvoke {4}{R}

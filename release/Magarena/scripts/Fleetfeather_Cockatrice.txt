@@ -7,7 +7,7 @@ subtype=Cockatrice
 cost={3}{G}{U}
 pt=3/3
 ability=Flash;\
-        Flying;deathtouch;\
+        Flying, deathtouch;\
         {5}{G}{U}: Monstrosity 3.
 timing=flash
 oracle=Flash\nFlying, deathtouch\n{5}{G}{U}: Monstrosity 3.

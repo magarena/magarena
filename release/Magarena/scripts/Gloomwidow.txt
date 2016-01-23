@@ -6,6 +6,7 @@ type=Creature
 subtype=Spider
 cost={2}{G}
 pt=3/3
-ability=reach;SN can block only creatures with flying.
+ability=Reach;\
+        SN can block only creatures with flying.
 timing=main
 oracle=Reach\nGloomwidow can block only creatures with flying.

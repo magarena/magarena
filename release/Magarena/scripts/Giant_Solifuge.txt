@@ -1,11 +1,11 @@
 name=Giant Solifuge
 image=http://magiccards.info/scans/en/gp/143.jpg
 value=4.051
-ability=Trample;haste;shroud
 rarity=R
 type=Creature
 subtype=Insect
 cost={2}{R/G}{R/G}
 pt=4/1
+ability=Trample; haste; shroud
 timing=fmain
 oracle=Trample; haste; shroud

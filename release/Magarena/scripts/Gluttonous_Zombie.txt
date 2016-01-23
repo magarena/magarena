@@ -1,11 +1,11 @@
 name=Gluttonous Zombie
 image=http://magiccards.info/scans/en/9e/134.jpg
 value=2.527
-ability=fear
 rarity=U
 type=Creature
 subtype=Zombie
 cost={4}{B}
 pt=3/3
+ability=Fear
 timing=main
 oracle=Fear

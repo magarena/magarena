@@ -6,6 +6,7 @@ type=Creature
 subtype=Spirit
 cost={2}{R}
 pt=1/1
-ability=haste;{R}: SN gets +1/+0 until end of turn.
+ability=Haste;\
+        {R}: SN gets +1/+0 until end of turn.
 timing=fmain
 oracle=Haste\n{R}: Furnace Spirit gets +1/+0 until end of turn.

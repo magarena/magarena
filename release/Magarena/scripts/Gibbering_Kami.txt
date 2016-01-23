@@ -6,6 +6,7 @@ type=Creature
 subtype=Spirit
 cost={3}{B}
 pt=2/2
-ability=Flying;soulshift 3
+ability=Flying;\
+        Soulshift 3
 timing=main
 oracle=Flying\nSoulshift 3

@@ -1,11 +1,11 @@
 name=Esper Cormorants
 image=http://magiccards.info/scans/en/cfx/105.jpg
 value=2.444
-ability=Flying
 rarity=C
 type=Artifact,Creature
 subtype=Bird
 cost={2}{W}{U}
 pt=3/3
+ability=Flying
 timing=main
 oracle=Flying

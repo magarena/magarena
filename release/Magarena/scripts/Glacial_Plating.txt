@@ -5,7 +5,8 @@ rarity=U
 type=Snow,Enchantment
 subtype=Aura
 cost={2}{W}{W}
-ability=Cumulative upkeep {S};\
+ability=Enchant creature;\
+        Cumulative upkeep {S};\
         Enchanted creature gets +3/+3 for each age counter on SN.
 timing=aura
 enchant=pump,pos creature

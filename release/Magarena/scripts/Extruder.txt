@@ -6,7 +6,7 @@ type=Artifact,Creature
 subtype=Juggernaut
 cost={4}
 pt=4/3
-ability=echo {4};\
+ability=Echo {4};\
         Sacrifice an artifact: Put a +1/+1 counter on target creature.
 timing=main
 oracle=Echo {4}\nSacrifice an artifact: Put a +1/+1 counter on target creature.

@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Soldier
 cost={1}{W}
 pt=2/1
-ability={T},Sacrifice SN:SN deals 2 damage to target attacking or blocking creature.
+ability={T}, Sacrifice SN: SN deals 2 damage to target attacking or blocking creature.
 timing=main
 oracle={T}, Sacrifice Expendable Troops: Expendable Troops deals 2 damage to target attacking or blocking creature.

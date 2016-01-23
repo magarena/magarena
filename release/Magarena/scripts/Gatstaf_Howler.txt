@@ -1,10 +1,10 @@
 name=Gatstaf Howler
 image=http://magiccards.info/scans/en/isd/182b.jpg
 value=3.545
-color=g
 rarity=U
 type=Creature
 subtype=Werewolf
+color=g
 pt=3/3
 ability=Intimidate;\
         At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.

@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Human,Rogue
 cost={3}{R}{R}
 pt=5/2
-ability=haste;\
+ability=Haste;\
         {R}{R}{R}: Regenerate SN.
 timing=fmain
 oracle=Haste\n{R}{R}{R}: Regenerate Eron the Relentless.

@@ -7,7 +7,7 @@ type=Creature
 subtype=Kavu
 cost={5}{R}
 pt=4/2
-ability=echo {5}{R};\
+ability=Echo {5}{R};\
         When SN enters the battlefield, SN deals 2 damage to target creature.;\
         When SN leaves the battlefield, SN deals 4 damage to target creature.
 timing=main

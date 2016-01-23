@@ -6,6 +6,6 @@ type=Creature
 subtype=Spirit,Spellshaper
 cost={4}{W}
 pt=2/5
-ability={W},Discard a card: Creatures you control get +1/+0 until end of turn.
+ability={W}, {T}, Discard a card: Creatures you control get +1/+0 until end of turn.
 timing=main
 oracle={W}, {T}, Discard a card: Creatures you control get +1/+0 until end of turn.

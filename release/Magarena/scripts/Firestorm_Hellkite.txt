@@ -6,6 +6,7 @@ type=Creature
 subtype=Dragon
 cost={4}{U}{R}
 pt=6/6
-ability=Flying;trample;cumulative upkeep {U}{R}
+ability=Flying, trample;\
+        Cumulative upkeep {U}{R}
 timing=main
 oracle=Flying, trample\nCumulative upkeep {U}{R}

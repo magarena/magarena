@@ -1,11 +1,11 @@
 name=Giant Warthog
 image=http://magiccards.info/scans/en/ju/118.jpg
 value=3.203
-ability=Trample
 rarity=C
 type=Creature
 subtype=Boar,Beast
 cost={5}{G}
 pt=5/5
+ability=Trample
 timing=main
 oracle=Trample

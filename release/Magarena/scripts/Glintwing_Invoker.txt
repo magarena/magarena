@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Wizard,Mutant
 cost={4}{U}
 pt=3/3
-ability={7}{U}:SN gets +3/+3 and gains flying until end of turn.
+ability={7}{U}: SN gets +3/+3 and gains flying until end of turn.
 timing=main
 oracle={7}{U}: Glintwing Invoker gets +3/+3 and gains flying until end of turn.

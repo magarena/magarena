@@ -6,6 +6,6 @@ type=Creature
 subtype=Lizard
 cost={4}{R}{R}
 pt=5/4
-ability=Sacrifice an artifact:SN gains trample until end of turn.
+ability=Sacrifice an artifact: SN gains trample until end of turn.
 timing=main
 oracle=Sacrifice an artifact: Gnathosaur gains trample until end of turn.

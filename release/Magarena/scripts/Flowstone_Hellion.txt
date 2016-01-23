@@ -6,6 +6,7 @@ type=Creature
 subtype=Hellion,Beast
 cost={4}{R}
 pt=3/3
-ability=haste;{0}: SN gets +1/-1 until end of turn.
-timing=main
+ability=Haste;\
+        {0}: SN gets +1/-1 until end of turn.
+timing=fmain
 oracle=Haste\n{0}: Flowstone Hellion gets +1/-1 until end of turn.

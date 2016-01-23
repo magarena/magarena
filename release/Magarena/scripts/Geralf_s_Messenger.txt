@@ -7,7 +7,7 @@ subtype=Zombie
 cost={B}{B}{B}
 pt=3/2
 ability=SN enters the battlefield tapped.;\
-        undying;\
-        When SN enters the battlefield, target opponent loses 2 life.
+        When SN enters the battlefield, target opponent loses 2 life.;\
+        Undying
 timing=main
 oracle=Geralf's Messenger enters the battlefield tapped.\nWhen Geralf's Messenger enters the battlefield, target opponent loses 2 life.\nUndying

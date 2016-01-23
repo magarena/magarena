@@ -1,11 +1,12 @@
 name=Flameborn Hellion
 image=http://magiccards.info/scans/en/som/89.jpg
 value=2.925
-ability=haste;SN attacks each turn if able.
 rarity=C
 type=Creature
 subtype=Hellion
 cost={5}{R}
 pt=5/4
+ability=Haste;\
+        SN attacks each turn if able.
 timing=fmain
 oracle=Haste\nFlameborn Hellion attacks each turn if able.

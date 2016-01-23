@@ -6,6 +6,7 @@ type=Creature
 subtype=Spirit
 cost={5}{U}
 pt=2/3
-ability={U},{T}:Target creature can't be blocked this turn.;Transmute {1}{U}{U}
+ability={U}, {T}: Target creature can't be blocked this turn.;\
+        Transmute {1}{U}{U}
 timing=main
 oracle={U}, {T}: Target creature can't be blocked this turn.\nTransmute {1}{U}{U}

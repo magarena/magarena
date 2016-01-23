@@ -7,8 +7,8 @@ subtype=Faerie,Knight
 cost={1}{U/B}{U/B}{U/B}
 pt=2/3
 ability=Flying;\
-        other blue creatures you control get +1/+1;\
-        other black creatures you control get +1/+1
+        Other blue creatures you control get +1/+1.;\
+        Other black creatures you control get +1/+1.
 static=player
 timing=main
 oracle=Flying\nOther blue creatures you control get +1/+1.\nOther black creatures you control get +1/+1.

@@ -4,6 +4,7 @@ value=2.568
 rarity=C
 type=Artifact
 cost={2}
-ability=flash;{3},{T}:Untap target artifact.
+ability=Flash;\
+        {3}, {T}: Untap target artifact.
 timing=flash
 oracle=Flash\n{3}, {T}: Untap target artifact.

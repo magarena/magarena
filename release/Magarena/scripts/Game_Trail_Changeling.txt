@@ -1,11 +1,12 @@
 name=Game-Trail Changeling
 image=http://magiccards.info/scans/en/mt/123.jpg
 value=3.033
-ability=changeling;trample
 rarity=C
 type=Creature
 subtype=Shapeshifter
 cost={3}{G}{G}
 pt=4/4
+ability=Changeling;\
+        Trample
 timing=main
 oracle=Changeling\nTrample

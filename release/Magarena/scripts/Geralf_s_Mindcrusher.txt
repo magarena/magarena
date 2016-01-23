@@ -6,7 +6,7 @@ type=Creature
 subtype=Zombie,Horror
 cost={4}{U}{U}
 pt=5/5
-ability=undying;\
-        When SN enters the battlefield, target player puts the top five cards of his or her library into his or her graveyard.
+ability=When SN enters the battlefield, target player puts the top five cards of his or her library into his or her graveyard.;\
+        Undying
 timing=main
 oracle=When Geralf's Mindcrusher enters the battlefield, target player puts the top five cards of his or her library into his or her graveyard.\nUndying

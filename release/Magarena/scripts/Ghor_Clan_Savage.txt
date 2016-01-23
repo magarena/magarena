@@ -6,6 +6,6 @@ type=Creature
 subtype=Centaur,Berserker
 cost={3}{G}{G}
 pt=2/3
-ability=bloodthirst 3
+ability=Bloodthirst 3
 timing=main
 oracle=Bloodthirst 3

@@ -6,7 +6,8 @@ type=Creature
 subtype=Human,Knight
 cost={1}{W}{W}
 pt=2/2
-ability=first strike;lifelink;\
+ability=First strike;\
+        Lifelink;\
         SN can't be the target of black or red spells your opponents control.
 timing=main
 oracle=First strike\nLifelink\nFiendslayer Paladin can't be the target of black or red spells your opponents control.

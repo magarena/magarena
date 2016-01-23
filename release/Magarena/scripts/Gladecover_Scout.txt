@@ -6,6 +6,6 @@ type=Creature
 subtype=Elf,Scout
 cost={G}
 pt=1/1
-ability=hexproof
+ability=Hexproof
 timing=main
 oracle=Hexproof

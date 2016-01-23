@@ -6,6 +6,6 @@ type=Creature
 subtype=Spirit
 cost={1}{W}
 pt=1/1
-ability={T}:Target creature gets +1/+1 until end of turn.
+ability={T}: Target creature gets +1/+1 until end of turn.
 timing=main
 oracle={T}: Target creature gets +1/+1 until end of turn.

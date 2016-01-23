@@ -1,11 +1,11 @@
 name=Fangren Hunter
 image=http://magiccards.info/scans/en/mi/119.jpg
 value=2.900
-ability=Trample
 rarity=C
 type=Creature
 subtype=Beast
 cost={3}{G}{G}
 pt=4/4
+ability=Trample
 timing=main
 oracle=Trample

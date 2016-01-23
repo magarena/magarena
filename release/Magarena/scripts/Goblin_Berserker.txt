@@ -6,6 +6,6 @@ type=Creature
 subtype=Goblin,Berserker
 cost={3}{R}
 pt=2/2
-ability=first strike;haste
+ability=First strike, haste
 timing=fmain
 oracle=First strike, haste
