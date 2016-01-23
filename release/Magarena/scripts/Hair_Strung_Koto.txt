@@ -4,6 +4,6 @@ value=2.726
 rarity=R
 type=Artifact
 cost={6}
-ability=Tap an untapped creature you control:Target player puts the top card of his or her library into his or her graveyard.
+ability=Tap an untapped creature you control: Target player puts the top card of his or her library into his or her graveyard.
 timing=artifact
 oracle=Tap an untapped creature you control: Target player puts the top card of his or her library into his or her graveyard.

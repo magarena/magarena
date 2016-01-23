@@ -1,11 +1,11 @@
 name=Goblin Spelunkers
 image=http://magiccards.info/scans/en/rav/128.jpg
 value=2.790
-ability=Mountainwalk
 rarity=C
 type=Creature
 subtype=Goblin,Warrior
 cost={2}{R}
 pt=2/2
+ability=Mountainwalk
 timing=main
 oracle=Mountainwalk

@@ -4,7 +4,7 @@ value=3.375
 rarity=U
 type=Artifact
 cost={2}
-ability={T},Sacrifice an artifact:Target player puts the top three cards of his or her library into his or her graveyard.;\
+ability={T}, Sacrifice an artifact: Target player puts the top three cards of his or her library into his or her graveyard.;\
         Whenever an artifact enters the battlefield, you may untap SN.
 timing=artifact
 oracle={T}, Sacrifice an artifact: Target player puts the top three cards of his or her library into his or her graveyard.\nWhenever an artifact enters the battlefield, you may untap Grinding Station.

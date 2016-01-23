@@ -1,11 +1,11 @@
 name=Halberdier
 image=http://magiccards.info/scans/en/od/196.jpg
 value=2.686
-ability=first strike
 rarity=C
 type=Creature
 subtype=Human,Barbarian
 cost={3}{R}
 pt=3/1
+ability=First strike
 timing=main
 oracle=First strike

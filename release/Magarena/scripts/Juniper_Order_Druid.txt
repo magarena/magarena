@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Cleric,Druid
 cost={2}{G}
 pt=1/1
-ability={T}:Untap target land.
+ability={T}: Untap target land.
 timing=main
 oracle={T}: Untap target land.

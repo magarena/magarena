@@ -6,7 +6,7 @@ type=Creature
 subtype=Demon
 cost={2}{B}{B}{B}
 pt=6/3
-ability=intimidate;\
+ability=Intimidate;\
         When SN enters the battlefield, destroy target Angel.
 timing=main
 oracle=Intimidate\nWhen Halo Hunter enters the battlefield, destroy target Angel.

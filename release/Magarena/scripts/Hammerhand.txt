@@ -5,8 +5,9 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={R}
-ability=When SN enters the battlefield, target creature can't block this turn.;\
+ability=Enchant creature;\
+        When SN enters the battlefield, target creature can't block this turn.;\
         Enchanted creature gets +1/+1 and has haste.
-timing=main
+timing=aura
 enchant=haste,pos creature
 oracle=Enchant creature\nWhen Hammerhand enters the battlefield, target creature can't block this turn.\nEnchanted creature gets +1/+1 and has haste.

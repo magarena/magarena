@@ -6,7 +6,7 @@ type=Creature
 subtype=Spirit
 cost={3}{W}{W}
 pt=2/3
-ability={W},{T}:Tap target creature.;\
+ability={W}, {T}: Tap target creature.;\
         Whenever you cast a Spirit or Arcane spell, untap SN.
 timing=main
 oracle={W}, {T}: Tap target creature.\nWhenever you cast a Spirit or Arcane spell, untap Innocence Kami.

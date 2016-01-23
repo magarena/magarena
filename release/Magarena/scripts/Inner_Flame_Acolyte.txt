@@ -6,6 +6,7 @@ type=Creature
 subtype=Elemental,Shaman
 cost={1}{R}{R}
 pt=2/2
-ability=When SN enters the battlefield, target creature gets +2/+0 and gains haste until end of turn.;evoke {R}
+ability=When SN enters the battlefield, target creature gets +2/+0 and gains haste until end of turn.;\
+        Evoke {R}
 timing=main
 oracle=When Inner-Flame Acolyte enters the battlefield, target creature gets +2/+0 and gains haste until end of turn.\nEvoke {R}

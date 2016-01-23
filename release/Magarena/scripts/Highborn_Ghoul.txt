@@ -6,6 +6,6 @@ type=Creature
 subtype=Zombie
 cost={B}{B}
 pt=2/1
-ability=intimidate
+ability=Intimidate
 timing=main
 oracle=Intimidate

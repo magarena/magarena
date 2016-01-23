@@ -4,6 +4,6 @@ value=4.357
 rarity=R
 type=Enchantment
 cost={3}{B}
-ability={B},Pay 2 life: Draw a card.
+ability={B}, Pay 2 life: Draw a card.
 timing=enchantment
 oracle={B}, Pay 2 life: Draw a card.

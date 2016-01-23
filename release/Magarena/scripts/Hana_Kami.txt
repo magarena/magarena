@@ -6,6 +6,6 @@ type=Creature
 subtype=Spirit
 cost={G}
 pt=1/1
-ability={1}{G},Sacrifice SN:Return target Arcane card from your graveyard to your hand.
+ability={1}{G}, Sacrifice SN: Return target Arcane card from your graveyard to your hand.
 timing=main
 oracle={1}{G}, Sacrifice Hana Kami: Return target Arcane card from your graveyard to your hand.

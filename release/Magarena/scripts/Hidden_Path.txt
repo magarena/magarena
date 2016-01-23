@@ -4,6 +4,6 @@ value=1.297
 rarity=R
 type=Enchantment
 cost={2}{G}{G}{G}{G}
-ability=green creatures have forestwalk
+ability=Green creatures have forestwalk.
 timing=enchantment
 oracle=Green creatures have forestwalk.

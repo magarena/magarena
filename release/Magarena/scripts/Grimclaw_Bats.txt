@@ -6,6 +6,7 @@ type=Creature
 subtype=Bat
 cost={1}{B}
 pt=1/1
-ability=Flying;{B},Pay 1 life:SN gets +1/+1 until end of turn.
+ability=Flying;\
+        {B}, Pay 1 life: SN gets +1/+1 until end of turn.
 timing=main
 oracle=Flying\n{B}, Pay 1 life: Grimclaw Bats gets +1/+1 until end of turn.

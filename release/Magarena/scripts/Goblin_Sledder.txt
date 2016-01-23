@@ -6,6 +6,6 @@ type=Creature
 subtype=Goblin
 cost={R}
 pt=1/1
-ability=Sacrifice a Goblin:Target creature gets +1/+1 until end of turn.
+ability=Sacrifice a Goblin: Target creature gets +1/+1 until end of turn.
 timing=main
 oracle=Sacrifice a Goblin: Target creature gets +1/+1 until end of turn.

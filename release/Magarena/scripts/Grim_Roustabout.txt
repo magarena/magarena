@@ -6,7 +6,7 @@ type=Creature
 subtype=Skeleton,Warrior
 cost={1}{B}
 pt=1/1
-ability=unleash;\
+ability=Unleash;\
         {1}{B}: Regenerate SN.
 timing=main
 oracle=Unleash\n{1}{B}: Regenerate Grim Roustabout.

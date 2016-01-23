@@ -1,11 +1,11 @@
 name=Grayscaled Gharial
 image=http://magiccards.info/scans/en/rav/52.jpg
 value=2.594
-ability=Islandwalk
 rarity=C
 type=Creature
 subtype=Crocodile
 cost={U}
 pt=1/1
+ability=Islandwalk
 timing=main
 oracle=Islandwalk

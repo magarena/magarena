@@ -9,5 +9,5 @@ pt=4/4
 ability=Flying;\
         SN doesn't untap during your untap step.;\
         At the beginning of your upkeep, you may pay {4}. If you do, untap SN.
-timing=artifact
+timing=main
 oracle=Flying\nGoblin Dirigible doesn't untap during your untap step.\nAt the beginning of your upkeep, you may pay {4}. If you do, untap Goblin Dirigible.

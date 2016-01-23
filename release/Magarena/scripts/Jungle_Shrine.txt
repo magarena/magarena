@@ -4,7 +4,7 @@ value=3.958
 rarity=U
 type=Land
 mana=r2g2w2
-ability={T}: Add {R} or {G} or {W} to your mana pool.;\
-        SN enters the battlefield tapped.
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {R}, {G}, or {W} to your mana pool.
 timing=tapland
 oracle=Jungle Shrine enters the battlefield tapped.\n{T}: Add {R}, {G}, or {W} to your mana pool.

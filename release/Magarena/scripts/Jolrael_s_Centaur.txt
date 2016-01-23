@@ -6,6 +6,7 @@ type=Creature
 subtype=Centaur,Archer
 cost={1}{G}{G}
 pt=2/2
-ability=flanking;shroud
+ability=Shroud;\
+        Flanking
 timing=main
 oracle=Shroud\nFlanking

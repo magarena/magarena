@@ -1,11 +1,11 @@
 name=Hulking Cyclops
 image=http://magiccards.info/scans/en/8e/195.jpg
 value=2.469
-ability=SN can't block.
 rarity=U
 type=Creature
 subtype=Cyclops
 cost={3}{R}{R}
 pt=5/5
-timing=fmain
+ability=SN can't block.
+timing=main
 oracle=Hulking Cyclops can't block.

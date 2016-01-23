@@ -6,7 +6,7 @@ type=Creature
 subtype=Devil
 cost={2}{R}{R}
 pt=3/3
-ability=haste;\
+ability=Haste;\
         Whenever a creature you control attacks, SN deals 1 damage to defending player.
 timing=fmain
 oracle=Haste\nWhenever a creature you control attacks, Hellrider deals 1 damage to defending player.

@@ -6,7 +6,8 @@ type=Creature
 subtype=Chimera
 cost={2}{G}{U}
 pt=3/2
-ability=flash;flying;trample;\
+ability=Flash;\
+        Flying, trample;\
         Whenever you draw a card, you gain 1 life.
 timing=flash
 oracle=Flash\nFlying, trample\nWhenever you draw a card, you gain 1 life.

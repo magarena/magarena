@@ -6,6 +6,6 @@ type=Creature
 subtype=Beast
 cost={6}{G}
 pt=4/7
-ability=cycling {3}
+ability=Cycling {3}
 timing=main
 oracle=Cycling {3}

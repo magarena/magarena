@@ -6,6 +6,6 @@ type=Creature
 subtype=Goblin,Warrior
 cost={R}{R}
 pt=2/2
-ability=battle cry
+ability=Battle cry
 timing=main
 oracle=Battle cry

@@ -7,6 +7,6 @@ subtype=Elemental
 cost={4}{R}
 pt=3/3
 ability=When SN enters the battlefield, destroy target artifact.;\
-        evoke {R}
+        Evoke {R}
 timing=main
 oracle=When Ingot Chewer enters the battlefield, destroy target artifact.\nEvoke {R}

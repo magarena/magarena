@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Soldier
 cost={3}{W}
 pt=2/3
-ability={T}:SN deals 2 damage to target attacking or blocking creature.
+ability={T}: SN deals 2 damage to target attacking or blocking creature.
 timing=main
 oracle={T}: Heavy Ballista deals 2 damage to target attacking or blocking creature.

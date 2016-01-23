@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Rogue
 cost={1}{U}
 pt=1/1
-ability=hexproof;\
+ability=Hexproof;\
         SN can't be blocked.
 timing=main
 oracle=Hexproof\nInvisible Stalker can't be blocked.

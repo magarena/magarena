@@ -1,11 +1,12 @@
 name=Iron-Barb Hellion
 image=http://magiccards.info/scans/en/5dn/69.jpg
 value=1.871
-ability=haste;SN can't block.
 rarity=U
 type=Creature
 subtype=Hellion,Beast
 cost={5}{R}
 pt=5/4
+ability=Haste;\
+        SN can't block.
 timing=fmain
 oracle=Haste\nIron-Barb Hellion can't block.

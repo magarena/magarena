@@ -1,11 +1,12 @@
 name=Hoverguard Observer
 image=http://magiccards.info/scans/en/ds/22.jpg
 value=1.924
-ability=Flying;SN can block only creatures with flying.
 rarity=U
 type=Creature
 subtype=Drone
 cost={2}{U}{U}
 pt=3/3
-timing=fmain
+ability=Flying;\
+        SN can block only creatures with flying.
+timing=main
 oracle=Flying\nHoverguard Observer can block only creatures with flying.

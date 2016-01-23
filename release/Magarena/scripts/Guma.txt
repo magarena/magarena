@@ -6,6 +6,6 @@ type=Creature
 subtype=Cat
 cost={2}{R}
 pt=2/2
-ability=protection from blue
+ability=Protection from blue
 timing=main
 oracle=Protection from blue

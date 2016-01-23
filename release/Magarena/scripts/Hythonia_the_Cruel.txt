@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Gorgon
 cost={4}{B}{B}
 pt=4/6
-ability=deathtouch;\
+ability=Deathtouch;\
         {6}{B}{B}: Monstrosity 3.;\
         When SN becomes monstrous, destroy all non-Gorgon creatures.
 timing=main

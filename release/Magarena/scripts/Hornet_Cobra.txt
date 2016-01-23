@@ -6,6 +6,6 @@ type=Creature
 subtype=Snake
 cost={1}{G}{G}
 pt=2/1
-ability=first strike
+ability=First strike
 timing=main
 oracle=First strike

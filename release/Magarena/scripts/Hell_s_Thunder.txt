@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental
 cost={1}{R}{R}
 pt=4/4
-ability=Flying;haste;\
+ability=Flying, haste;\
         At the beginning of the end step, sacrifice SN.;\
         Unearth {4}{R}
 timing=fmain

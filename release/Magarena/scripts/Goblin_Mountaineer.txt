@@ -1,11 +1,11 @@
 name=Goblin Mountaineer
 image=http://magiccards.info/scans/en/ala/102.jpg
 value=2.524
-ability=Mountainwalk
 rarity=C
 type=Creature
 subtype=Goblin,Scout
 cost={R}
 pt=1/1
+ability=Mountainwalk
 timing=main
 oracle=Mountainwalk

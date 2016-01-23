@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{G}
-ability=flash;\
+ability=Flash;\
+        Enchant creature;\
         {1}{G}: Regenerate enchanted creature.
 enchant=pump,pos creature
 timing=pumpFlash

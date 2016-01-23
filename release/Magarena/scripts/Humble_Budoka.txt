@@ -1,11 +1,11 @@
 name=Humble Budoka
 image=http://magiccards.info/scans/en/chk/214.jpg
 value=3.480
-ability=shroud
 rarity=C
 type=Creature
 subtype=Human,Monk
 cost={1}{G}
 pt=2/2
-timing=fmain
+ability=Shroud
+timing=main
 oracle=Shroud

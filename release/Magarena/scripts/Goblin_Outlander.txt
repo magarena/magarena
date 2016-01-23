@@ -1,11 +1,11 @@
 name=Goblin Outlander
 image=http://magiccards.info/scans/en/cfx/109.jpg
 value=2.970
-ability=protection from white
 rarity=C
 type=Creature
 subtype=Goblin,Scout
 cost={B}{R}
 pt=2/2
+ability=Protection from white
 timing=main
 oracle=Protection from white

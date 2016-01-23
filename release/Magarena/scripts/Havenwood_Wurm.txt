@@ -1,11 +1,12 @@
 name=Havenwood Wurm
 image=http://magiccards.info/scans/en/ts/199.jpg
 value=3.138
-ability=flash;trample
 rarity=C
 type=Creature
 subtype=Wurm
 cost={6}{G}
 pt=5/6
+ability=Flash;\
+        Trample
 timing=flash
 oracle=Flash\nTrample

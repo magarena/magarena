@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Warrior
 cost={1}{R}
 pt=2/1
-ability=unleash
+ability=Unleash
 timing=main
 oracle=Unleash

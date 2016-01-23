@@ -1,9 +1,9 @@
 name=Grand Coliseum
 image=http://magiccards.info/scans/en/vma/298.jpg
 value=3.689
+rarity=R
 type=Land
 mana=b2g2r2u2w2
-rarity=R
 ability=SN enters the battlefield tapped.;\
         {T}: Add {C} to your mana pool.;\
         {T}: Add one mana of any color to your mana pool. SN deals 1 damage to you.

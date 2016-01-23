@@ -4,6 +4,6 @@ value=3.028
 rarity=U
 type=Artifact
 cost={2}
-ability={1},{T}:Target creature gains flanking until end of turn.
+ability={1}, {T}: Target creature gains flanking until end of turn.
 timing=artifact
 oracle={1}, {T}: Target creature gains flanking until end of turn.

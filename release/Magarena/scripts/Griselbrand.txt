@@ -6,6 +6,7 @@ type=Legendary,Creature
 subtype=Demon
 cost={4}{B}{B}{B}{B}
 pt=7/7
+ability=Flying, lifelink;\
+        Pay 7 life: Draw seven cards.
 timing=main
-ability=Flying;lifelink;Pay 7 life: Draw seven cards.
 oracle=Flying, lifelink\nPay 7 life: Draw seven cards.

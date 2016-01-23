@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Human,Ninja
 cost={3}{U}{U}
 pt=3/4
-ability=ninjutsu {2}{U}{U};\
+ability=Ninjutsu {2}{U}{U};\
         Whenever SN deals combat damage to a player, you may search your library for a Ninja card, reveal it, and put it into your hand. If you do, shuffle your library.;\
         {2}: Target Ninja creature can't be blocked this turn.
 timing=main

@@ -1,11 +1,11 @@
 name=Jukai Messenger
 image=http://magiccards.info/scans/en/chk/218.jpg
 value=1.875
-ability=Forestwalk
 rarity=C
 type=Creature
 subtype=Human,Monk
 cost={G}
 pt=1/1
+ability=Forestwalk
 timing=main
 oracle=Forestwalk

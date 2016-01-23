@@ -6,7 +6,7 @@ type=Creature
 subtype=Vampire
 cost={2}{R}{R}
 pt=2/2
-ability=intimidate;\
+ability=Intimidate;\
         Whenever SN deals combat damage to a player, put a +1/+1 counter on SN.
 timing=main
 oracle=Intimidate\nWhenever Heirs of Stromkirk deals combat damage to a player, put a +1/+1 counter on it.

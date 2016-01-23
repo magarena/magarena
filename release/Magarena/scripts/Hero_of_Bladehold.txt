@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Knight
 cost={2}{W}{W}
 pt=3/4
-ability=battle cry;\
+ability=Battle cry;\
         Whenever SN attacks, put two 1/1 white Soldier creature tokens onto the battlefield tapped and attacking.
 timing=fmain
 oracle=Battle cry\nWhenever Hero of Bladehold attacks, put two 1/1 white Soldier creature tokens onto the battlefield tapped and attacking.

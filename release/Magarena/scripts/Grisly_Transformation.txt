@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{B}
-ability=When SN enters the battlefield, draw a card.;\
+ability=Enchant creature;\
+        When SN enters the battlefield, draw a card.;\
         Enchanted creature has intimidate.
 timing=aura
 enchant=unblockable,pos creature

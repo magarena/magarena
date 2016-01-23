@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Spellshaper
 cost={2}{W}
 pt=1/1
-ability={1}{W},{T},Discard a card: Put two 1/1 white Citizen creature tokens onto the battlefield.
+ability={1}{W}, {T}, Discard a card: Put two 1/1 white Citizen creature tokens onto the battlefield.
 timing=main
 oracle={1}{W}, {T}, Discard a card: Put two 1/1 white Citizen creature tokens onto the battlefield.

@@ -6,7 +6,7 @@ type=Creature
 subtype=Merfolk
 cost={2}{U}{U}
 pt=2/2
-ability=fading 4;\
+ability=Fading 4;\
         Remove a fade counter from SN: Tap target creature.
 timing=main
 oracle=Fading 4\nRemove a fade counter from Jolting Merfolk: Tap target creature.

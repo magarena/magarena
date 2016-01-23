@@ -6,6 +6,6 @@ type=Snow,Creature
 subtype=Zombie
 cost={2}{B}
 pt=2/2
-ability={1},Sacrifice a creature: You gain 2 life.
+ability={1}, Sacrifice a creature: You gain 2 life.
 timing=main
 oracle={1}, Sacrifice a creature: You gain 2 life.

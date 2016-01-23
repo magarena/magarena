@@ -6,6 +6,6 @@ type=Creature
 subtype=Homarid,Shaman
 cost={2}{U}{U}
 pt=2/1
-ability={U}:Tap target green creature.
+ability={U}: Tap target green creature.
 timing=main
 oracle={U}: Tap target green creature.

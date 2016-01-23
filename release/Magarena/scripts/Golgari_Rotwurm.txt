@@ -6,6 +6,6 @@ type=Creature
 subtype=Zombie,Wurm
 cost={3}{B}{G}
 pt=5/4
-ability={B},Sacrifice a creature: Target player loses 1 life.
+ability={B}, Sacrifice a creature: Target player loses 1 life.
 timing=main
 oracle={B}, Sacrifice a creature: Target player loses 1 life.

@@ -6,6 +6,7 @@ type=Creature
 subtype=Human,Samurai
 cost={W}{W}
 pt=2/2
-ability=protection from black;bushido 1
+ability=Protection from black;\
+        Bushido 1
 timing=main
 oracle=Protection from black\nBushido 1

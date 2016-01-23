@@ -1,11 +1,11 @@
 name=Greater Basilisk
 image=http://magiccards.info/scans/en/m12/179.jpg
 value=3.216
-ability=deathtouch
 rarity=C
 type=Creature
 subtype=Basilisk
 cost={3}{G}{G}
 pt=3/5
+ability=Deathtouch
 timing=main
 oracle=Deathtouch

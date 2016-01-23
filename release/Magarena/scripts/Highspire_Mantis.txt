@@ -6,6 +6,6 @@ type=Creature
 subtype=Insect
 cost={2}{R}{W}
 pt=3/3
-ability=Flying;trample
+ability=Flying, trample
 timing=main
 oracle=Flying, trample

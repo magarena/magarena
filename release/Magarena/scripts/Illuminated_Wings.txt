@@ -5,8 +5,9 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-ability=Enchanted creature has flying.;\
-        {2},Sacrifice SN: Draw a card.
+ability=Enchant creature;\
+        Enchanted creature has flying.;\
+        {2}, Sacrifice SN: Draw a card.
 timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature has flying.\n{2}, Sacrifice Illuminated Wings: Draw a card.

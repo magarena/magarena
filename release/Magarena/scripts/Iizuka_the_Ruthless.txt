@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Human,Samurai
 cost={3}{R}{R}
 pt=3/3
-ability=bushido 2;\
+ability=Bushido 2;\
         {2}{R}, Sacrifice a Samurai: Samurai creatures you control gain double strike until end of turn.
 timing=main
 oracle=Bushido 2\n{2}{R}, Sacrifice a Samurai: Samurai creatures you control gain double strike until end of turn.

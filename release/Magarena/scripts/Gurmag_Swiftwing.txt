@@ -6,6 +6,6 @@ type=Creature
 subtype=Bat
 cost={1}{B}
 pt=1/2
-ability=Flying;first strike;haste
+ability=Flying, first strike, haste
 timing=main
 oracle=Flying, first strike, haste

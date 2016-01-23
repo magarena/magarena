@@ -6,7 +6,7 @@ type=Creature
 subtype=Plant,Wall
 cost={2}{G}{U}
 pt=2/6
-ability=When SN enters the battlefield, draw a card.;\
-        defender
-timing=main
+ability=Defender;\
+        When SN enters the battlefield, draw a card.
+timing=smain
 oracle=Defender\nWhen Jungle Barrier enters the battlefield, draw a card.

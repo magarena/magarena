@@ -7,7 +7,7 @@ type=Creature
 subtype=Giant,Warrior
 cost={3}{R}
 pt=3/3
-ability=echo {5}{R};\
+ability=Echo {5}{R};\
         When SN enters the battlefield, destroy target creature with flying.
 timing=main
 oracle=Echo {5}{R}\nWhen Hammerheim Deadeye enters the battlefield, destroy target creature with flying.

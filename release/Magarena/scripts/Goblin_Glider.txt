@@ -1,11 +1,12 @@
 name=Goblin Glider
 image=http://magiccards.info/scans/en/8e/189.jpg
 value=1.912
-ability=Flying;SN can't block.
 rarity=U
 type=Creature
 subtype=Goblin
 cost={1}{R}
 pt=1/1
-timing=fmain
+ability=Flying;\
+        SN can't block.
+timing=main
 oracle=Flying\nGoblin Glider can't block.

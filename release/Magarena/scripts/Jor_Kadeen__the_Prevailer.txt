@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Human,Warrior
 cost={3}{R}{W}
 pt=5/4
-ability=first strike;\
+ability=First strike;\
         Creatures you control get +3/+0 as long as you control three or more artifacts.
 timing=main
 oracle=First strike\nMetalcraft — Creatures you control get +3/+0 as long as you control three or more artifacts.

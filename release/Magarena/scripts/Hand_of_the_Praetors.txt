@@ -6,8 +6,8 @@ type=Creature
 subtype=Zombie
 cost={3}{B}
 pt=3/2
-ability=infect;\
-        Other creatures you control with infect get +1/+1;\
+ability=Infect;\
+        Other creatures you control with infect get +1/+1.;\
         Whenever you cast a creature spell with infect, target player gets a poison counter.
 static=player
 timing=main

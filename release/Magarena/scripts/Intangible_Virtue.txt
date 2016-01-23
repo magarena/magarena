@@ -4,7 +4,6 @@ value=4.214
 rarity=U
 type=Enchantment
 cost={1}{W}
-ability=creature tokens you control get +1/+1;\
-        creature tokens you control have vigilance
+ability=Creature tokens you control get +1/+1 and have vigilance.
 timing=enchantment
 oracle=Creature tokens you control get +1/+1 and have vigilance.

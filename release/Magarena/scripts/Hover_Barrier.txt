@@ -1,11 +1,11 @@
 name=Hover Barrier
 image=http://magiccards.info/scans/en/rtr/40.jpg
 value=3.028
-ability=Flying;defender
 rarity=U
 type=Creature
 subtype=Illusion,Wall
 cost={2}{U}
 pt=0/6
-timing=main
+ability=Defender, flying
+timing=smain
 oracle=Defender, flying

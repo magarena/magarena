@@ -1,11 +1,11 @@
 name=Harvest Gwyllion
 image=http://magiccards.info/scans/en/eve/90.jpg
 value=2.564
-ability=Wither
 rarity=C
 type=Creature
 subtype=Hag
 cost={2}{W/B}{W/B}
 pt=2/4
+ability=Wither
 timing=main
 oracle=Wither

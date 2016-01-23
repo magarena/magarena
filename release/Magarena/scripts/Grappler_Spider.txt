@@ -1,11 +1,11 @@
 name=Grappler Spider
 image=http://magiccards.info/scans/en/wwk/102.jpg
 value=1.652
-ability=reach
 rarity=C
 type=Creature
 subtype=Spider
 cost={1}{G}
 pt=2/1
+ability=Reach
 timing=main
 oracle=Reach

@@ -6,7 +6,7 @@ type=Creature
 subtype=Demon
 cost={4}{B}{B}
 pt=5/5
-ability=deathtouch;\
+ability=Deathtouch;\
         Whenever another nontoken creature dies, you may draw a card.
 timing=main
 oracle=Deathtouch\nWhenever another nontoken creature dies, you may draw a card.

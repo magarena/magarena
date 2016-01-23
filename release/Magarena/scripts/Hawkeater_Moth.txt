@@ -6,6 +6,7 @@ type=Creature
 subtype=Insect
 cost={3}{G}
 pt=1/2
-ability=Flying;shroud
+ability=Flying;\
+        Shroud
 timing=main
 oracle=Flying\nShroud

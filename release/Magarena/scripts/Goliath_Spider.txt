@@ -1,11 +1,11 @@
 name=Goliath Spider
 image=http://magiccards.info/scans/en/rav/168.jpg
 value=3.164
-ability=reach
 rarity=U
 type=Creature
 subtype=Spider
 cost={6}{G}{G}
 pt=7/6
+ability=Reach
 timing=main
 oracle=Reach

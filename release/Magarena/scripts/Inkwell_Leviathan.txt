@@ -1,11 +1,13 @@
 name=Inkwell Leviathan
 image=http://magiccards.info/scans/en/ddo/37.jpg
 value=4.579
-ability=Islandwalk;trample;shroud
 rarity=R
 type=Artifact,Creature
 subtype=Leviathan
 cost={7}{U}{U}
 pt=7/11
-timing=fmain
-oracle=Islandwalk, trample\nShroud
+ability=Islandwalk;\
+        Trample;\
+        Shroud
+timing=main
+oracle=Islandwalk\nTrample\nShroud

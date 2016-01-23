@@ -4,6 +4,6 @@ value=3.381
 rarity=U
 type=Enchantment
 cost={B}
-ability=Creature tokens get -1/-1
+ability=Creature tokens get -1/-1.
 timing=enchantment
 oracle=Creature tokens get -1/-1.

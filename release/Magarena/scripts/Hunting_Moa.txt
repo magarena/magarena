@@ -6,7 +6,7 @@ type=Creature
 subtype=Bird,Beast
 cost={2}{G}
 pt=3/2
-ability=echo {2}{G};\
+ability=Echo {2}{G};\
         When SN enters the battlefield, put a +1/+1 counter on target creature.;\
         When SN dies, put a +1/+1 counter on target creature.
 timing=main
