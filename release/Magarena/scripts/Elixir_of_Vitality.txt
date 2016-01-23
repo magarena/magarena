@@ -4,7 +4,8 @@ value=1.581
 rarity=U
 type=Artifact
 cost={4}
-ability={T},Sacrifice SN: You gain 4 life.;\
-        {8},{T},Sacrifice SN: You gain 8 life.
+ability=SN enters the battlefield tapped.;\
+        {T}, Sacrifice SN: You gain 4 life.;\
+        {8}, {T}, Sacrifice SN: You gain 8 life.
 timing=artifact
 oracle=Elixir of Vitality enters the battlefield tapped.\n{T}, Sacrifice Elixir of Vitality: You gain 4 life.\n{8}, {T}, Sacrifice Elixir of Vitality: You gain 8 life.
