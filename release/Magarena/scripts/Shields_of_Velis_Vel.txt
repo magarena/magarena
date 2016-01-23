@@ -5,7 +5,7 @@ rarity=C
 type=Tribal,Instant
 subtype=Shapeshifter
 cost={W}
-ability=changeling
+ability=Changeling
 timing=pump
 requires_groovy_code
 oracle=Changeling\nCreatures target player controls get +0/+1 and gain all creature types until end of turn.

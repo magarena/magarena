@@ -4,8 +4,8 @@ value=2.762
 rarity=U
 type=Tribal,Instant
 subtype=Shapeshifter
-ability=changeling
 cost={2}{U}
+ability=Changeling
 timing=removal
 requires_groovy_code
 oracle=Changeling\nCreatures target player controls get -2/-0 and lose all creature types until end of turn.
