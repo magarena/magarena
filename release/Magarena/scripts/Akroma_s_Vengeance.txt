@@ -1,10 +1,10 @@
 name=Akroma's Vengeance
 image=http://magiccards.info/scans/en/cmd/3.jpg
 value=4.000
-rarity=M
+rarity=R
 type=Sorcery
 cost={4}{W}{W}
+ability=Cycling {3}
 effect=Destroy all artifacts, creatures, and enchantments.
-ability=cycling {3}
 timing=removal
 oracle=Destroy all artifacts, creatures, and enchantments.\nCycling {3}

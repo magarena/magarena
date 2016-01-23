@@ -4,7 +4,7 @@ value=3.973
 rarity=U
 type=Instant
 cost={2}{U}
-ability=cycling {2};\
+ability=Cycling {2};\
         Cast SN with AI only if there is an artifact on the battlefield.
 effect=Return all artifacts to their owners' hands.
 timing=removal

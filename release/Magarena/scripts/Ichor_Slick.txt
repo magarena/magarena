@@ -4,8 +4,8 @@ value=3.014
 rarity=C
 type=Sorcery
 cost={2}{B}
-effect=Target creature gets -3/-3 until end of turn.
 ability=Cycling {2};\
         Madness {3}{B}
+effect=Target creature gets -3/-3 until end of turn.
 timing=main
 oracle=Target creature gets -3/-3 until end of turn.\nCycling {2}\nMadness {3}{B}
