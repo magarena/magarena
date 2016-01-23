@@ -261,6 +261,29 @@ public final class MagicImages {
 
         // else get missing image proxy...
         return getMissingCardImage(aCard);
-
     }
+
+
+    public static boolean isProxyImage(MagicCardDefinition aCard) {
+
+        if (aCard == null || aCard == MagicCardDefinition.UNKNOWN) {
+            return false;
+        }
+
+        if (MagicFileSystem.getCustomCardImageFile(aCard).exists()) {
+            return false;
+        }
+
+        if (MagicFileSystem.getCroppedCardImageFile(aCard).exists()) {
+            return true;
+        }
+
+        if (MagicFileSystem.getCardImageFile(aCard).exists()) {
+            return false;
+        }
+
+        // else missing image proxy...
+        return true;
+    }
+
 }

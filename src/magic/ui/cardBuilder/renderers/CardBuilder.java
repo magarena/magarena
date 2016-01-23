@@ -8,6 +8,8 @@ import magic.ui.cardBuilder.IRenderableCard;
 
 public class CardBuilder {
 
+    public static boolean IS_LOADED;
+
     public static BufferedImage getCardBuilderImage(IRenderableCard cardDef) {
         //Frame type hierarchy may need adjusting
         if (cardDef.isDoubleFaced() && !cardDef.isPlaneswalker()) {
@@ -22,6 +24,9 @@ public class CardBuilder {
         if (cardDef.isFlipCard()) {
             return makeFlipCard(cardDef);
         }
+
+        IS_LOADED = true;
+        
         return makeBasicCard(cardDef);
     }
 

@@ -4,6 +4,7 @@ import java.awt.Cursor;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.concurrent.CancellationException;
 import java.util.concurrent.ExecutionException;
 import javax.swing.AbstractAction;
@@ -13,6 +14,7 @@ import magic.data.DuelConfig;
 import magic.data.MagicIcon;
 import magic.exception.InvalidDeckException;
 import magic.model.DuelPlayerConfig;
+import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
 import magic.model.MagicDeckProfile;
@@ -24,6 +26,7 @@ import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
 import magic.ui.ScreenOptionsOverlay;
 import magic.translate.UiString;
+import magic.ui.cardBuilder.renderers.CardBuilder;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.screen.interfaces.IStatusBar;
@@ -311,8 +314,29 @@ public class DuelDecksScreen
             this.duel = aDuel;
         }
 
+        private Optional<MagicCardDefinition> findFirstProxyCard(MagicDeck aDeck) {
+            return aDeck.stream()
+                .filter(card -> MagicImages.isProxyImage(card.getCardDefinition()))
+                .findFirst();
+        }
+
+        private Optional<MagicCardDefinition> findFirstProxyCardInDecks() {
+            Optional<MagicCardDefinition> proxy = findFirstProxyCard(duel.getPlayer(0).getDeck());
+            return proxy.isPresent() ? proxy : findFirstProxyCard(duel.getPlayer(1).getDeck());
+        }
+
+        private void loadCardBuilderIfRequired() {
+            if (!CardBuilder.IS_LOADED) {
+                Optional<MagicCardDefinition> proxy = findFirstProxyCardInDecks();
+                if (proxy.isPresent()) {
+                    CardBuilder.getCardBuilderImage(proxy.get());
+                }
+            }
+        }
+
         @Override
         protected MagicGame doInBackground() throws Exception {
+            loadCardBuilderIfRequired();
             return duel.nextGame();
         }
 
