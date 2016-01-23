@@ -1,13 +1,10 @@
 package magic.model;
 
-import magic.model.ARG;
-import magic.model.MagicCounterType;
-import magic.model.MagicAbility;
-import magic.model.target.MagicTargetFilterFactory;
-import magic.data.EnglishToInt;
-
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import magic.data.EnglishToInt;
+import magic.model.target.MagicTargetFilterFactory;
 
 public enum MagicAmountParser {
 
