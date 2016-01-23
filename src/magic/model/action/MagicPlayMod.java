@@ -75,7 +75,7 @@ public enum MagicPlayMod implements MagicPermanentAction {
             ATTACKING.doAction(game, perm);
         }
     },
-    HASTE_UEOT("it gains haste until end of turn") {
+    HASTE_UEOT("(it|that creature) gains haste until end of turn") {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             game.doAction(new GainAbilityAction(perm, MagicAbility.Haste));
         }
