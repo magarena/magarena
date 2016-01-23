@@ -6,6 +6,6 @@ type=Creature
 subtype=Lizard,Drake
 cost={1}{G}{U}
 pt=3/1
-ability=Flying;trample
+ability=Flying, trample
 timing=main
 oracle=Flying, trample

@@ -6,6 +6,7 @@ type=Creature
 subtype=Human,Knight
 cost={2}{R}
 pt=2/1
-ability=flash;protection from white
+ability=Flash;\
+        Protection from white
 timing=flash
 oracle=Flash\nProtection from white

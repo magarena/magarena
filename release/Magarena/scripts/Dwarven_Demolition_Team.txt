@@ -6,6 +6,6 @@ type=Creature
 subtype=Dwarf
 cost={2}{R}
 pt=1/1
-ability={T}:Destroy target Wall.
+ability={T}: Destroy target Wall.
 timing=main
 oracle={T}: Destroy target Wall.

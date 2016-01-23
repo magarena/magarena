@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Wizard
 cost={1}{U}{U}
 pt=1/1
-ability={T},Sacrifice SN:Counter target spell.
+ability={T}, Sacrifice SN: Counter target spell.
 timing=main
 oracle={T}, Sacrifice Daring Apprentice: Counter target spell.

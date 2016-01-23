@@ -4,7 +4,7 @@ value=4.256
 rarity=R
 type=Land
 mana=u3b3
-ability={T}: Add {U} or {B} to your mana pool.;\
-        SN enters the battlefield tapped unless you control two or fewer other lands.
+ability=SN enters the battlefield tapped unless you control two or fewer other lands.;\
+        {T}: Add {U} or {B} to your mana pool.
 timing=land
 oracle=Darkslick Shores enters the battlefield tapped unless you control two or fewer other lands.\n{T}: Add {U} or {B} to your mana pool.

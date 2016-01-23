@@ -6,8 +6,7 @@ type=Artifact,Creature
 subtype=Golem
 cost={11}
 pt=11/11
-ability=Trample;\
-        indestructible;\
+ability=Trample, indestructible;\
         If SN would be put into a graveyard from anywhere, reveal SN and shuffle it into its owner's library instead.
 timing=main
 oracle=Trample, indestructible\nIf Darksteel Colossus would be put into a graveyard from anywhere, reveal Darksteel Colossus and shuffle it into its owner's library instead.

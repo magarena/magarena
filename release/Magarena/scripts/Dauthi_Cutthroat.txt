@@ -6,6 +6,7 @@ type=Creature
 subtype=Dauthi,Minion
 cost={1}{B}
 pt=1/1
-ability=shadow;{1}{B},{T}: Destroy target creature with shadow.
+ability=Shadow;\
+        {1}{B}, {T}: Destroy target creature with shadow.
 timing=main
 oracle=Shadow\n{1}{B}, {T}: Destroy target creature with shadow.

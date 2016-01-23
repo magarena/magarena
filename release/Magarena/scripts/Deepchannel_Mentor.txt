@@ -6,6 +6,6 @@ type=Creature
 subtype=Merfolk,Rogue
 cost={5}{U}
 pt=2/2
-ability=blue creatures you control can't be blocked.
+ability=Blue creatures you control can't be blocked.
 timing=main
 oracle=Blue creatures you control can't be blocked.

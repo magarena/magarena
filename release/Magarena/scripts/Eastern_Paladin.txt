@@ -6,6 +6,6 @@ type=Creature
 subtype=Zombie,Knight
 cost={2}{B}{B}
 pt=3/3
-ability={B}{B},{T}:Destroy target green creature.
+ability={B}{B}, {T}: Destroy target green creature.
 timing=main
 oracle={B}{B}, {T}: Destroy target green creature.

@@ -1,11 +1,12 @@
 name=Darksteel Gargoyle
 image=http://magiccards.info/scans/en/ds/111.jpg
 value=3.025
-ability=Flying;indestructible
 rarity=U
 type=Artifact,Creature
 subtype=Gargoyle
 cost={7}
 pt=3/3
+ability=Flying;\
+        Indestructible
 timing=main
 oracle=Flying\nIndestructible

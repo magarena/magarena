@@ -1,11 +1,11 @@
 name=Defiant Elf
 image=http://magiccards.info/scans/en/le/123.jpg
 value=3.276
-ability=Trample
 rarity=C
 type=Creature
 subtype=Elf
 cost={G}
 pt=1/1
+ability=Trample
 timing=main
 oracle=Trample

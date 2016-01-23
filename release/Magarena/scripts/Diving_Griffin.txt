@@ -1,11 +1,11 @@
 name=Diving Griffin
 image=http://magiccards.info/scans/en/8e/17.jpg
 value=3.761
-ability=Flying;vigilance
 rarity=C
 type=Creature
 subtype=Griffin
 cost={1}{W}{W}
 pt=2/2
+ability=Flying, vigilance
 timing=main
 oracle=Flying, vigilance

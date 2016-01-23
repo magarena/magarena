@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental,Incarnation
 cost={3}{B}{B}{B}
 pt=6/6
-ability=fear;\
+ability=Fear;\
         Whenever a creature deals damage to you, destroy RN.;\
         When SN is put into a graveyard from anywhere, shuffle it into its owner's library.
 timing=fmain

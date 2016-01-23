@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Soldier
 cost={2}{W}{W}
 pt=2/4
-ability=Flying;lifelink;\
+ability=Flying, lifelink;\
         Whenever you cast a spell that targets SN, put a +1/+1 counter on SN.
 timing=main
 oracle=Flying, lifelink\nHeroic — Whenever you cast a spell that targets Dawnbringer Charioteers, put a +1/+1 counter on Dawnbringer Charioteers.

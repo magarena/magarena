@@ -6,7 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={4}{U}
 ability=Enchanted creature gets +3/+3 and has flying.;\
-        totem armor
+        Totem armor
 timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature gets +3/+3 and has flying.\nTotem armor

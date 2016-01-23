@@ -6,7 +6,7 @@ type=Creature
 subtype=Spider
 cost={2}{G}
 pt=2/3
-ability=reach;\
+ability=Reach;\
         As long as you control a red permanent, SN gets +1/+0 and has first strike.
 timing=main
 oracle=Reach\nAs long as you control a red permanent, Ember Weaver gets +1/+0 and has first strike.

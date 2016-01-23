@@ -1,11 +1,11 @@
 name=Dragonstalker
 image=http://magiccards.info/scans/en/sc/11.jpg
 value=2.154
-ability=Flying;protection from Dragons
 rarity=U
 type=Creature
 subtype=Bird,Soldier
 cost={4}{W}
 pt=3/3
+ability=Flying, protection from Dragons
 timing=main
 oracle=Flying, protection from Dragons

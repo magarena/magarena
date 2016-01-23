@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Spellshaper
 cost={1}{G}
 pt=1/1
-ability={G},{T},Discard a card:Target creature gets +2/+2 until end of turn.
+ability={G}, {T}, Discard a card: Target creature gets +2/+2 until end of turn.
 timing=main
 oracle={G}, {T}, Discard a card: Target creature gets +2/+2 until end of turn.

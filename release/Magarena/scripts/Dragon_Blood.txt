@@ -4,6 +4,6 @@ value=2.750
 rarity=U
 type=Artifact
 cost={3}
-ability={3},{T}:Put a +1/+1 counter on target creature.
+ability={3}, {T}: Put a +1/+1 counter on target creature.
 timing=artifact
 oracle={3}, {T}: Put a +1/+1 counter on target creature.

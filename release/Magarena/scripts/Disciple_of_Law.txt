@@ -5,7 +5,8 @@ rarity=C
 type=Creature
 subtype=Human,Cleric
 cost={1}{W}
-timing=main
 pt=1/2
-ability=cycling {2};protection from red
+ability=Protection from red;\
+        Cycling {2}
+timing=main
 oracle=Protection from red\nCycling {2}

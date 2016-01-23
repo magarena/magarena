@@ -6,7 +6,7 @@ type=Creature
 subtype=Skeleton
 cost={B}
 pt=0/2
-ability=exalted;\
+ability=Exalted;\
         {3}{B}: Regenerate SN.
 timing=main
 oracle=Exalted\n{3}{B}: Regenerate Duty-Bound Dead.

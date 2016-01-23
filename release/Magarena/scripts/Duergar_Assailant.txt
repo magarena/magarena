@@ -6,6 +6,6 @@ type=Creature
 subtype=Dwarf,Soldier
 cost={R/W}
 pt=1/1
-ability=Sacrifice SN:SN deals 1 damage to target attacking or blocking creature.
+ability=Sacrifice SN: SN deals 1 damage to target attacking or blocking creature.
 timing=main
 oracle=Sacrifice Duergar Assailant: Duergar Assailant deals 1 damage to target attacking or blocking creature.

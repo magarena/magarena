@@ -6,7 +6,8 @@ type=Creature
 subtype=Zombie,Soldier
 cost={1}{U}{B}
 pt=2/2
-ability=deathtouch;other zombie creatures you control get +1/+1;\
+ability=Deathtouch;\
+        Other Zombie creatures you control get +1/+1.;\
         Whenever another Zombie you control dies, target opponent loses 1 life.
 static=player
 timing=main

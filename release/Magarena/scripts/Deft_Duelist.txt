@@ -1,11 +1,12 @@
 name=Deft Duelist
 image=http://magiccards.info/scans/en/ala/165.jpg
 value=3.856
-ability=first strike;shroud
 rarity=C
 type=Creature
 subtype=Human,Rogue
 cost={W}{U}
 pt=2/1
-timing=fmain
+ability=First strike;\
+        Shroud
+timing=main
 oracle=First strike\nShroud

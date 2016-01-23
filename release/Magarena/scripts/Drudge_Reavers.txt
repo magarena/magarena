@@ -6,7 +6,7 @@ type=Creature
 subtype=Skeleton
 cost={3}{B}
 pt=2/1
-ability=flash;\
+ability=Flash;\
         {B}: Regenerate SN.
 timing=flash
 oracle=Flash\n{B}: Regenerate Drudge Reavers.

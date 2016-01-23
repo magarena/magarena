@@ -4,6 +4,6 @@ value=3.302
 rarity=U
 type=Artifact
 cost={0}
-ability=indestructible
+ability=Indestructible
 timing=artifact
 oracle=Indestructible

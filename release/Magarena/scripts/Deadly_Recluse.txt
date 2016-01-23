@@ -6,6 +6,7 @@ type=Creature
 subtype=Spider
 cost={1}{G}
 pt=1/2
-ability=reach;deathtouch
-timing=smain
+ability=Reach;\
+        Deathtouch
+timing=main
 oracle=Reach\nDeathtouch

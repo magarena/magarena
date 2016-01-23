@@ -6,6 +6,7 @@ type=Creature
 subtype=Vampire,Rogue
 cost={3}{B}
 pt=2/2
-ability=exalted;haste
+ability=Haste;\
+        Exalted
 timing=fmain
 oracle=Haste\nExalted

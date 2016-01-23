@@ -6,6 +6,6 @@ type=Creature
 subtype=Dwarf,Soldier
 cost={2}{R/W}
 pt=2/1
-ability={1}{R/W},{Q}:Attacking creatures get +1/+0 until end of turn.
+ability={1}{R/W}, {Q}: Attacking creatures get +1/+0 until end of turn.
 timing=main
 oracle={1}{R/W}, {Q}: Attacking creatures get +1/+0 until end of turn.

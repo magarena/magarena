@@ -6,6 +6,6 @@ type=Creature
 subtype=Horse
 cost={R}
 pt=1/1
-ability={1}{R},{T}:Target Dwarf creature gains mountainwalk until end of turn.
+ability={1}{R}, {T}: Target Dwarf creature gains mountainwalk until end of turn.
 timing=main
 oracle={1}{R}, {T}: Target Dwarf creature gains mountainwalk until end of turn.

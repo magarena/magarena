@@ -6,6 +6,7 @@ type=Creature
 subtype=Snake
 cost={1}{G}
 pt=2/2
-ability={1}{G}: SN gains deathtouch until end of turn.;{1}{G}: SN gains reach until end of turn.
+ability={1}{G}: SN gains reach until end of turn.;\
+        {1}{G}: SN gains deathtouch until end of turn.
 timing=main
 oracle={1}{G}: Death-Hood Cobra gains reach until end of turn.\n{1}{G}: Death-Hood Cobra gains deathtouch until end of turn.

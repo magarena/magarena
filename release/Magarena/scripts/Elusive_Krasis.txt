@@ -7,6 +7,6 @@ subtype=Fish,Mutant
 cost={1}{G}{U}
 pt=0/4
 ability=SN can't be blocked.;\
-        evolve
+        Evolve
 timing=main
 oracle=Elusive Krasis can't be blocked.\nEvolve

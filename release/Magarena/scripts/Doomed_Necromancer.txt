@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Cleric,Mercenary
 cost={2}{B}
 pt=2/2
-ability={B},{T},Sacrifice SN:Return target creature card from your graveyard to the battlefield.
+ability={B}, {T}, Sacrifice SN: Return target creature card from your graveyard to the battlefield.
 timing=main
 oracle={B}, {T}, Sacrifice Doomed Necromancer: Return target creature card from your graveyard to the battlefield.

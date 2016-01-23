@@ -6,6 +6,7 @@ type=Artifact,Creature
 subtype=Gargoyle
 cost={1}{W}
 pt=1/2
-ability=Flying;{B}: SN gets +2/-1 until end of turn.
+ability=Flying;\
+        {B}: SN gets +2/-1 until end of turn.
 timing=main
 oracle=Flying\n{B}: Darklit Gargoyle gets +2/-1 until end of turn.

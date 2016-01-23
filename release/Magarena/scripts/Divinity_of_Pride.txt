@@ -6,7 +6,7 @@ type=Creature
 subtype=Spirit,Avatar
 cost={W/B}{W/B}{W/B}{W/B}{W/B}
 pt=4/4
-ability=Lifelink;flying;\
+ability=Flying, lifelink;\
         SN gets +4/+4 as long as you have 25 or more life.
 timing=main
 oracle=Flying, lifelink\nDivinity of Pride gets +4/+4 as long as you have 25 or more life.

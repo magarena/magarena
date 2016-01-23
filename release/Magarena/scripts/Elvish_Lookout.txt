@@ -6,6 +6,6 @@ type=Creature
 subtype=Elf
 cost={G}
 pt=1/1
-ability=shroud
+ability=Shroud
 timing=main
 oracle=Shroud

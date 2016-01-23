@@ -6,6 +6,7 @@ type=Creature
 subtype=Griffin
 cost={3}{W}
 pt=2/2
-ability=Flying;Sacrifice SN:Destroy target black creature.
+ability=Flying;\
+        Sacrifice SN: Destroy target black creature.
 timing=main
 oracle=Flying\nSacrifice Daraja Griffin: Destroy target black creature.

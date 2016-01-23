@@ -6,6 +6,7 @@ type=Creature
 subtype=Dwarf,Warrior
 cost={3}{R}
 pt=1/3
-ability=Wither;{R/W}: SN gets +1/+0 until end of turn.
+ability=Wither;\
+        {R/W}: SN gets +1/+0 until end of turn.
 timing=main
 oracle=Wither\n{R/W}: Duergar Cave-Guard gets +1/+0 until end of turn.

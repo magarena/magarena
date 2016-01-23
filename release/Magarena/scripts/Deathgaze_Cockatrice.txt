@@ -6,6 +6,7 @@ type=Creature
 subtype=Cockatrice
 cost={2}{B}{B}
 pt=2/2
-ability=Flying;deathtouch
+ability=Flying;\
+        Deathtouch
 timing=main
 oracle=Flying\nDeathtouch

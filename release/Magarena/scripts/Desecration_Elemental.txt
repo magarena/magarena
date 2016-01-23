@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental
 cost={3}{B}
 pt=8/8
-ability=fear;\
+ability=Fear;\
         Whenever a player casts a spell, sacrifice a creature.
 timing=main
 oracle=Fear\nWhenever a player casts a spell, sacrifice a creature.

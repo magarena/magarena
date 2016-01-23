@@ -6,8 +6,8 @@ type=Legendary,Creature
 subtype=Elf,Warrior
 cost={G}{G}
 pt=2/2
-ability=other elf creatures have forestwalk;\
-        other elf creatures have shroud
+ability=Other Elf creatures have forestwalk.;\
+        Other Elves have shroud.
 static=all
 timing=main
 oracle=Other Elf creatures have forestwalk.\nOther Elves have shroud.

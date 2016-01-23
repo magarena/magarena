@@ -7,8 +7,7 @@ subtype=Spirit,Soldier
 cost={1}{W}{U}
 pt=2/2
 ability=Flying;\
-        other spirit creatures you control get +1/+1;\
-        other spirit creatures you control have hexproof
+        Other Spirit creatures you control get +1/+1 and have hexproof.
 static=player
 timing=main
 oracle=Flying\nOther Spirit creatures you control get +1/+1 and have hexproof.

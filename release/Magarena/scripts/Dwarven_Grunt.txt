@@ -1,11 +1,11 @@
 name=Dwarven Grunt
 image=http://magiccards.info/scans/en/od/185.jpg
 value=2.518
-ability=Mountainwalk
 rarity=C
 type=Creature
 subtype=Dwarf
 cost={R}
 pt=1/1
+ability=Mountainwalk
 timing=main
 oracle=Mountainwalk

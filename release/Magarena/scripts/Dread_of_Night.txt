@@ -4,6 +4,6 @@ value=4.058
 rarity=U
 type=Enchantment
 cost={B}
-ability=white creatures get -1/-1
+ability=White creatures get -1/-1.
 timing=enchantment
 oracle=White creatures get -1/-1.

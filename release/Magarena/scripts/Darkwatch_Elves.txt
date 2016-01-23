@@ -5,7 +5,8 @@ rarity=U
 type=Creature
 subtype=Elf
 cost={2}{G}
-timing=main
 pt=2/2
-ability=cycling {2};protection from black
+ability=Protection from black;\
+        Cycling {2}
+timing=main
 oracle=Protection from black\nCycling {2}

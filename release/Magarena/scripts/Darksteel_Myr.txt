@@ -1,11 +1,11 @@
 name=Darksteel Myr
 image=http://magiccards.info/scans/en/som/151.jpg
 value=3.005
-ability=indestructible
 rarity=U
 type=Artifact,Creature
 subtype=Myr
 cost={3}
 pt=0/1
+ability=Indestructible
 timing=main
 oracle=Indestructible

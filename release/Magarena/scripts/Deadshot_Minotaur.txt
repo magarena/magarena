@@ -5,7 +5,8 @@ rarity=C
 type=Creature
 subtype=Minotaur
 cost={3}{R}{G}
-ability=When SN enters the battlefield, SN deals 3 damage to target creature with flying.;cycling {R/G}
 pt=3/4
+ability=When SN enters the battlefield, SN deals 3 damage to target creature with flying.;\
+        Cycling {R/G}
 timing=main
 oracle=When Deadshot Minotaur enters the battlefield, it deals 3 damage to target creature with flying.\nCycling {R/G}

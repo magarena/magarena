@@ -6,7 +6,7 @@ type=Creature
 subtype=Spirit
 cost={5}{W}{U}
 pt=3/5
-ability=Flying;double strike;lifelink;\
+ability=Flying, double strike, lifelink;\
         Whenever you gain life, draw a card.
-timing=fmain
+timing=main
 oracle=Flying, double strike, lifelink\nWhenever you gain life, draw a card.

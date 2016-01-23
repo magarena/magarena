@@ -1,11 +1,13 @@
 name=Darksteel Sentinel
 image=http://magiccards.info/scans/en/som/152.jpg
 value=3.192
-ability=flash;vigilance;indestructible
 rarity=U
 type=Artifact,Creature
 subtype=Golem
 cost={6}
 pt=3/3
-timing=main
+ability=Flash;\
+        Vigilance;\
+        Indestructible
+timing=flash
 oracle=Flash\nVigilance\nIndestructible

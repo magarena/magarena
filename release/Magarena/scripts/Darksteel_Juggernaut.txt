@@ -5,9 +5,9 @@ rarity=R
 type=Artifact,Creature
 subtype=Juggernaut
 cost={5}
-ability=indestructible;\
+pt=*/*
+ability=Indestructible;\
         SN's power and toughness are each equal to the number of artifacts you control.;\
         SN attacks each turn if able.
-pt=*/*
 timing=main
 oracle=Indestructible\nDarksteel Juggernaut's power and toughness are each equal to the number of artifacts you control.\nDarksteel Juggernaut attacks each turn if able.
