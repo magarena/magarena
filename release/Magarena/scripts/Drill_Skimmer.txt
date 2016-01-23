@@ -6,6 +6,7 @@ type=Artifact,Creature
 subtype=Thopter
 cost={4}
 pt=2/1
-ability=SN has shroud as long as you control another artifact creature.
-timing=artifact
+ability=Flying;\
+        SN has shroud as long as you control another artifact creature.
+timing=main
 oracle=Flying\nDrill-Skimmer has shroud as long as you control another artifact creature.
