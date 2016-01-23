@@ -1,12 +1,15 @@
 package magic.ui.screen;
 
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import javax.swing.AbstractAction;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.SwingWorker;
 import magic.data.MagicIcon;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
@@ -18,11 +21,16 @@ import magic.ui.MagicImages;
 import magic.translate.UiString;
 import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
 import magic.ui.canvas.cards.CardsCanvas;
+import magic.ui.cardBuilder.renderers.CardBuilder;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
+import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.deck.DeckStatusPanel;
+import magic.ui.widget.throbber.AbstractThrobber;
+import magic.ui.widget.throbber.ImageThrobber;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class SampleHandScreen
@@ -37,17 +45,65 @@ public class SampleHandScreen
 
     private final static Dimension cardSize = CardImagesProvider.HIGH_QUALITY_IMAGE_SIZE;
 
-    private final CardsCanvas content;
+    private CardsCanvas content;
     private final MagicDeck deck;
     private final DeckStatusPanel deckStatusPanel = new DeckStatusPanel();
+    private AbstractThrobber throbber;
 
-    public SampleHandScreen(final MagicDeck deck) {
-        this.deck = deck;
+    public SampleHandScreen(final MagicDeck aDeck) {
+        this.deck = aDeck;
+        if (CardBuilder.IS_LOADED == false && MagicImages.hasProxyImage(aDeck)) {
+            setThrobberLayout();
+            new ContentWorker(aDeck).execute();
+        } else {
+            this.setContent(aDeck);
+        }
+    }
+
+    private void setContent(MagicDeck aDeck) {
         this.content = new CardsCanvas(cardSize);
         content.setAnimationDelay(50, 20);
         this.content.setLayoutMode(LayoutMode.SCALE_TO_FIT);
-        this.content.refresh(getRandomHand(deck), cardSize);
-        setContent(this.content);
+        this.content.refresh(getRandomHand(aDeck), cardSize);
+        super.setContent(this.content);
+    }
+    
+    private class ContentWorker extends SwingWorker<Void, String> {
+
+        private final MagicDeck deck;
+
+        public ContentWorker(MagicDeck aDeck) {
+            this.deck = aDeck;
+        }
+
+        @Override
+        protected Void doInBackground() throws Exception {
+            for (MagicCardDefinition aCard : deck) {
+                if (MagicImages.isProxyImage(aCard)) {
+                    CardBuilder.getCardBuilderImage(aCard);
+                    break;
+                }
+            }
+            return null;
+        }
+
+        @Override
+        protected void done() {
+            setContent(deck);
+            throbber.setVisible(false);
+        }
+
+    }
+
+    private void setThrobberLayout() {
+        throbber = new ImageThrobber.Builder(MagicImages.loadImage("round-shield.png")).build();
+        JLabel progressLabel = new JLabel();
+        progressLabel.setFont(FontsAndBorders.FONT2);
+        progressLabel.setForeground(Color.WHITE);
+        progressLabel.setText("<html><center>This deck contains one or more proxy images.<br>Please wait while the proxy image generator is initialized.</center></html>");
+        setLayout(new MigLayout("flowy, aligny center, alignx center"));
+        add(throbber, "alignx center");
+        add(progressLabel);
     }
 
     private List<MagicCard> getRandomHand(final MagicDeck deck) {
