@@ -3,14 +3,9 @@ package magic.ui.screen;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 import javax.swing.AbstractAction;
-import javax.swing.ImageIcon;
 import javax.swing.JComponent;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
-import javax.swing.SwingConstants;
-import magic.data.MagicIcon;
-import magic.ui.MagicImages;
 import magic.ui.URLUtils;
 import magic.ui.MagicFrame;
 import magic.ui.ScreenController;
@@ -36,7 +31,6 @@ public abstract class AbstractScreen extends JPanel {
     // CTR
     public AbstractScreen() {
         this.frame = ScreenController.getMainFrame();
-        setBusy(true);
         setOpaque(false);
         setEscapeKeyInputMap();
         setF1KeyInputMap();
@@ -51,7 +45,6 @@ public abstract class AbstractScreen extends JPanel {
         doMigLayout();
         revalidate();
         repaint();
-        setBusy(false);
     }
 
     private void doMigLayout() {
@@ -132,22 +125,6 @@ public abstract class AbstractScreen extends JPanel {
 
     protected MagicFrame getFrame() {
         return frame;
-    }
-
-    public void setBusy(final boolean isBusy) {
-        if (isBusy) {
-            final ImageIcon ii = MagicImages.getIcon(MagicIcon.BUSY);
-            final JPanel pnl = new JPanel(new MigLayout("insets 0, gap 0"));
-            pnl.setOpaque(false);
-            final JLabel lbl = new JLabel(ii);
-            lbl.setHorizontalAlignment(SwingConstants.CENTER);
-            lbl.setOpaque(false);
-            pnl.add(lbl, "w 100%, h 100%");
-            frame.setGlassPane(pnl);
-            pnl.setVisible(true);
-        } else {
-            frame.getGlassPane().setVisible(false);
-        }
     }
 
 }
