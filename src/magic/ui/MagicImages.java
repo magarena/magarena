@@ -304,4 +304,8 @@ public final class MagicImages {
         return aDeck.stream().anyMatch(card -> MagicImages.isProxyImage(card));
     }
 
+    public static void clearCache() {
+        cache.clear();
+    }
+
 }

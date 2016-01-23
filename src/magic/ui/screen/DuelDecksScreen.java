@@ -74,6 +74,8 @@ public class DuelDecksScreen
             saveDuel();
         }
 
+        MagicImages.clearCache();
+
         setContent(screenContent);
 
         if (MagicSystem.isAiVersusAi() == false) {
