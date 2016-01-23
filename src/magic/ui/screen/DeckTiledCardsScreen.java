@@ -25,12 +25,17 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
+import javax.swing.SwingWorker;
 import magic.data.MagicIcon;
 import magic.ui.CardImagesProvider;
 import magic.translate.UiString;
 import magic.translate.StringContext;
 import magic.ui.canvas.cards.ICardsCanvasListener;
+import magic.ui.cardBuilder.renderers.CardBuilder;
 import magic.ui.deck.editor.DeckEditorSideBarPanel;
+import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.throbber.AbstractThrobber;
+import magic.ui.widget.throbber.ImageThrobber;
 
 @SuppressWarnings("serial")
 public class DeckTiledCardsScreen
@@ -70,15 +75,60 @@ public class DeckTiledCardsScreen
 
     private final static Dimension cardSize = CardImagesProvider.HIGH_QUALITY_IMAGE_SIZE;
 
-    private final ContentPanel content;
+    private ContentPanel content;
     private final MagicDeck deck;
     private final StatusPanel statusPanel;
+    private AbstractThrobber throbber;
 
-    public DeckTiledCardsScreen(final MagicDeck deck) {
-        this.deck = deck;
-        this.statusPanel = new StatusPanel(deck.getName(), getCardTypeCaption(CardTypeFilter.ALL, deck.size()));
-        content = new ContentPanel();
-        setContent(content);
+    public DeckTiledCardsScreen(final MagicDeck aDeck) {
+        this.deck = aDeck;
+        this.statusPanel = new StatusPanel(aDeck.getName(), getCardTypeCaption(CardTypeFilter.ALL, aDeck.size()));
+        if (CardBuilder.IS_LOADED == false && MagicImages.hasProxyImage(aDeck)) {
+            setThrobberLayout();
+            new ContentWorker(aDeck).execute();
+        } else {
+            content = new ContentPanel();
+            setContent(content);
+        }        
+    }
+
+    private void setThrobberLayout() {
+        throbber = new ImageThrobber.Builder(MagicImages.loadImage("round-shield.png")).build();
+        JLabel progressLabel = new JLabel();
+        progressLabel.setFont(FontsAndBorders.FONT2);
+        progressLabel.setForeground(Color.WHITE);
+        progressLabel.setText("<html><center>This deck contains one or more proxy images.<br>Please wait while the proxy image generator is initialized.</center></html>");
+        setLayout(new MigLayout("flowy, aligny center, alignx center"));
+        add(throbber, "alignx center");
+        add(progressLabel);
+    }
+
+    private class ContentWorker extends SwingWorker<Void, String> {
+
+        private final MagicDeck deck;
+
+        public ContentWorker(MagicDeck aDeck) {
+            this.deck = aDeck;
+        }
+
+        @Override
+        protected Void doInBackground() throws Exception {
+            for (MagicCardDefinition aCard : deck) {
+                if (MagicImages.isProxyImage(aCard)) {
+                    CardBuilder.getCardBuilderImage(aCard);
+                    break;
+                }
+            }
+            return null;
+        }
+
+        @Override
+        protected void done() {
+            content = new ContentPanel();
+            setContent(content);
+            throbber.setVisible(false);
+        }
+
     }
 
     private class ContentPanel extends JPanel implements ICardsCanvasListener {

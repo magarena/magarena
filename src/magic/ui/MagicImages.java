@@ -14,6 +14,7 @@ import magic.data.TextImages;
 import magic.model.DuelPlayerConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
+import magic.model.MagicDeck;
 import magic.model.MagicManaType;
 import magic.model.MagicPermanent;
 import magic.model.player.PlayerProfile;
@@ -297,6 +298,10 @@ public final class MagicImages {
             cache.put(key, image);
         }
         return image;
+    }
+
+    public static boolean hasProxyImage(MagicDeck aDeck) {
+        return aDeck.stream().anyMatch(card -> MagicImages.isProxyImage(card));
     }
 
 }
