@@ -5,7 +5,7 @@ import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
 import magic.model.MagicCard;
-import magic.ui.CachedImagesProvider;
+import magic.ui.MagicImages;
 
 final class CardCanvas {
 
@@ -44,7 +44,7 @@ final class CardCanvas {
     }
 
     public BufferedImage getFrontImage() {
-        return CachedImagesProvider.getInstance().getImage(card.getCardDefinition(), true);
+        return MagicImages.geCardImageUseCache(card.getCardDefinition());
     }
 
     public BufferedImage getBackImage() {
