@@ -11,23 +11,29 @@ public class CardBuilder {
     public static boolean IS_LOADED;
 
     public static BufferedImage getCardBuilderImage(IRenderableCard cardDef) {
+
+        BufferedImage image;
+
         //Frame type hierarchy may need adjusting
         if (cardDef.isDoubleFaced() && !cardDef.isPlaneswalker()) {
-            return makeTransform(cardDef);
-        }
-        if (cardDef.hasType(MagicType.Planeswalker)) {
-            return makePlaneswalker(cardDef);
-        }
-        if (cardDef.isToken()) {
-            return makeToken(cardDef);
-        }
-        if (cardDef.isFlipCard()) {
-            return makeFlipCard(cardDef);
+            image = makeTransform(cardDef);
+
+        } else if (cardDef.hasType(MagicType.Planeswalker)) {
+            image = makePlaneswalker(cardDef);
+
+        } else if (cardDef.isToken()) {
+            image = makeToken(cardDef);
+
+        } else if (cardDef.isFlipCard()) {
+            image = makeFlipCard(cardDef);
+
+        } else {
+            image = makeBasicCard(cardDef);
         }
 
         IS_LOADED = true;
-        
-        return makeBasicCard(cardDef);
+
+        return image;
     }
 
     private static BufferedImage makeTransform(IRenderableCard cardDef) {
