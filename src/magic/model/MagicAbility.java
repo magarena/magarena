@@ -1137,20 +1137,12 @@ public enum MagicAbility {
             card.add(MagicStatic.ControlEnchanted);
         }
     },
-
-/*
-    EnchantDual("Enchant " + ARG.WORD1 + " or "+ ARG.WORD2, 0) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicPlayAuraEvent.create("default," + ARG.word1(arg) + " or " + ARG.word2(arg)));
-        }
-    },
     Enchant("Enchant " + ARG.WORDRUN, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(MagicPlayAuraEvent.create("default," + ARG.wordrun(arg)));
+            //Cannot implement target pickers
+            //Does nothing but it allows text to be part of ability property
         }
     },
-    //Cannot implement target pickers
-*/
 
     // activated card abilities
     CardAbility(".*Discard SN:.*", 10) {
