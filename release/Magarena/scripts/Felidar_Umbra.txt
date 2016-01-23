@@ -5,8 +5,10 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{W}
-ability=Enchanted creature has lifelink.;\
-        {1}{W}: Attach SN to target creature you control.
+ability=Enchant creature;\
+        Enchanted creature has lifelink.;\
+        {1}{W}: Attach SN to target creature you control.;\
+        Totem armor
 enchant=lifelink,pos creature
 timing=aura
 oracle=Enchant creature\nEnchanted creature has lifelink.\n{1}{W}: Attach Felidar Umbra to target creature you control.\nTotem armor
