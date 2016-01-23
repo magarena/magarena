@@ -30,7 +30,6 @@ import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 import javax.swing.Timer;
-import magic.ui.CachedImagesProvider;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicObject;
@@ -315,8 +314,9 @@ public class AnnotatedCardPanel extends JPanel {
     }
 
     private BufferedImage getCardImage(final MagicCardDefinition cardDef) {
-        return CachedImagesProvider.getInstance().getImage(cardDef, true);
+        return MagicImages.geCardImageUseCache(cardDef);
     }
+
     private BufferedImage getCardImage(final MagicObject magicObject) {
         if (magicObject instanceof MagicPermanent) {
             final MagicPermanent perm = (MagicPermanent)magicObject;

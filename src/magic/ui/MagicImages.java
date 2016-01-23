@@ -56,6 +56,8 @@ public final class MagicImages {
     private static final Map<MagicIcon, ImageIcon> icons = new HashMap<>();
     private static final Map<String, PlayerAvatar> avatarsMap = new HashMap<>();
 
+    private static final int MAX_IMAGES = 100;
+    private static final Map<Integer, BufferedImage> cache = new magic.data.LRUCache<>(MAX_IMAGES);
 
     /**
      * Gets preferred viewing size for a card image based on preset setting in preferences.
@@ -263,7 +265,6 @@ public final class MagicImages {
         return getMissingCardImage(aCard);
     }
 
-
     public static boolean isProxyImage(MagicCardDefinition aCard) {
 
         if (aCard == null || aCard == MagicCardDefinition.UNKNOWN) {
@@ -284,6 +285,18 @@ public final class MagicImages {
 
         // else missing image proxy...
         return true;
+    }
+
+    public static BufferedImage geCardImageUseCache(MagicCardDefinition aCard) {
+        int key = aCard.getIndex();
+        if (cache.containsKey(key)) {
+            return cache.get(key);
+        }
+        BufferedImage image = getOrigSizeCardImage(aCard);
+        if (image != MISSING_CARD) {
+            cache.put(key, image);
+        }
+        return image;
     }
 
 }

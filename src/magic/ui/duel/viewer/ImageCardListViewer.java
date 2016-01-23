@@ -25,13 +25,12 @@ import java.util.List;
 import java.util.Set;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
-import magic.ui.CachedImagesProvider;
-import magic.ui.CardImagesProvider;
 import magic.data.GeneralConfig;
 import magic.model.MagicType;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
+import magic.ui.MagicImages;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.duel.SwingGameController;
 import magic.ui.duel.viewer.info.CardViewerInfo;
@@ -229,7 +228,6 @@ public class ImageCardListViewer extends JPanel implements IChoiceViewer {
         final Point mousePoint = MouseInfo.getPointerInfo().getLocation();
         SwingUtilities.convertPointFromScreen(mousePoint, this);
         Rectangle mouseOverRect = new Rectangle();
-        final CardImagesProvider imageCache = CachedImagesProvider.getInstance();
 
         for (int index=0; index < cardList.size(); index++) {
             final MagicCard card=cardList.get(index);
@@ -241,7 +239,7 @@ public class ImageCardListViewer extends JPanel implements IChoiceViewer {
             final int y2=point.y+CARD_HEIGHT;
 
             final BufferedImage image = GraphicsUtils.scale(
-                imageCache.getImage(cardDefinition, true),
+                MagicImages.geCardImageUseCache(cardDefinition),
                 CARD_WIDTH,
                 CARD_HEIGHT
             );
