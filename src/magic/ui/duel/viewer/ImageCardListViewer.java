@@ -224,7 +224,6 @@ public class ImageCardListViewer extends JPanel implements IChoiceViewer {
         g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION,RenderingHints.VALUE_INTERPOLATION_BILINEAR);
         final Stroke defaultStroke = g2d.getStroke();
 
-        final Dimension imageSize = GraphicsUtils.getMaxCardImageSize();
         final Point mousePoint = MouseInfo.getPointerInfo().getLocation();
         SwingUtilities.convertPointFromScreen(mousePoint, this);
         Rectangle mouseOverRect = new Rectangle();
