@@ -6,8 +6,8 @@ type=Creature
 subtype=Elemental
 cost={2}{B}
 pt=2/2
-ability=flash;\
+ability=Flash;\
         When SN leaves the battlefield, exile target card from a graveyard.;\
-        evoke {B}
-timing=main
+        Evoke {B}
+timing=flash
 oracle=Flash\nWhen Offalsnout leaves the battlefield, exile target card from a graveyard.\nEvoke {B}

@@ -5,7 +5,8 @@ rarity=R
 type=Enchantment
 subtype=Aura
 cost={U}
-ability=cumulative upkeep {1}{U};\
+ability=Enchant land you control;\
+        Cumulative upkeep {1}{U};\
         Enchanted land has "{T}: Target creature gets +2/+2 until end of turn."
 enchant=pump,land you control
 timing=aura

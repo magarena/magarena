@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Soldier,Rogue
 cost={R}
 pt=1/1
-ability=haste
+ability=Haste
 timing=fmain
 oracle=Haste

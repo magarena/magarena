@@ -6,6 +6,6 @@ type=Creature
 subtype=Rat,Samurai
 cost={2}{B}
 pt=3/1
-ability=bushido 1
+ability=Bushido 1
 timing=main
 oracle=Bushido 1

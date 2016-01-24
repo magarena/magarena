@@ -6,7 +6,7 @@ type=Creature
 subtype=Kithkin,Soldier
 cost={W}
 pt=1/1
-ability=first strike;\
+ability=First strike;\
         Reinforce 1—{1}{W}
 timing=main
 oracle=First strike\nReinforce 1—{1}{W}

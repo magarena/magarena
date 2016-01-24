@@ -1,11 +1,11 @@
 name=Oakgnarl Warrior
 image=http://magiccards.info/scans/en/lw/232.jpg
 value=3.069
-ability=Vigilance;trample
 rarity=C
 type=Creature
 subtype=Treefolk,Warrior
 cost={5}{G}{G}
 pt=5/7
+ability=Vigilance, trample
 timing=main
 oracle=Vigilance, trample

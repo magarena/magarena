@@ -6,6 +6,6 @@ type=Creature
 subtype=Vampire,Rogue
 cost={4}{R}
 pt=4/1
-ability=undying
+ability=Undying
 timing=main
 oracle=Undying

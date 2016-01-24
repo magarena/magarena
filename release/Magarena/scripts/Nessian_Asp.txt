@@ -5,8 +5,8 @@ rarity=C
 type=Creature
 subtype=Snake
 cost={4}{G}
+pt=4/5
 ability=Reach;\
         {6}{G}: Monstrosity 4.
-pt=4/5
 timing=main
 oracle=Reach\n{6}{G}: Monstrosity 4.

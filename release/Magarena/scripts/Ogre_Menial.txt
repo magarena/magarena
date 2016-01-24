@@ -6,6 +6,7 @@ type=Creature
 subtype=Ogre
 cost={3}{R}
 pt=0/4
-ability=infect;{R}: SN gets +1/+0 until end of turn.
+ability=Infect;\
+        {R}: SN gets +1/+0 until end of turn.
 timing=main
 oracle=Infect\n{R}: Ogre Menial gets +1/+0 until end of turn.

@@ -4,6 +4,7 @@ value=3.212
 rarity=U
 type=Enchantment
 cost={2}{G}
-ability={G},Discard a card: Target creature gets +2/+2 until end of turn.;{G},Sacrifice SN:Target creature gets +2/+2 until end of turn.
+ability={G}, Discard a card: Target creature gets +2/+2 until end of turn.;\
+        {G}, Sacrifice SN: Target creature gets +2/+2 until end of turn.
 timing=enchantment
 oracle={G}, Discard a card: Target creature gets +2/+2 until end of turn.\n{G}, Sacrifice Narcissism: Target creature gets +2/+2 until end of turn.

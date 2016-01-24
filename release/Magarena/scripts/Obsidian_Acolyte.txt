@@ -6,6 +6,7 @@ type=Creature
 subtype=Human,Cleric
 cost={1}{W}
 pt=1/1
-ability=protection from black;{W}:Target creature gains protection from black until end of turn.
+ability=Protection from black;\
+        {W}: Target creature gains protection from black until end of turn.
 timing=main
 oracle=Protection from black\n{W}: Target creature gains protection from black until end of turn.

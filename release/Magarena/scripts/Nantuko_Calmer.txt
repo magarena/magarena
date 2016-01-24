@@ -6,7 +6,7 @@ type=Creature
 subtype=Insect,Druid
 cost={2}{G}{G}
 pt=2/3
-ability={G},{T},Sacrifice SN:Destroy target enchantment.;\
+ability={G}, {T}, Sacrifice SN: Destroy target enchantment.;\
         SN gets +1/+1 as long as seven or more cards are in your graveyard.
 timing=main
 oracle={G}, {T}, Sacrifice Nantuko Calmer: Destroy target enchantment.\nThreshold — Nantuko Calmer gets +1/+1 as long as seven or more cards are in your graveyard.

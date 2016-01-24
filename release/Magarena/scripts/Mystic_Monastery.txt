@@ -5,6 +5,6 @@ rarity=U
 type=Land
 mana=u2r2w2
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {U} or {R} or {W} to your mana pool.
+        {T}: Add {U}, {R}, or {W} to your mana pool.
 timing=tapland
 oracle=Mystic Monastery enters the battlefield tapped.\n{T}: Add {U}, {R}, or {W} to your mana pool.

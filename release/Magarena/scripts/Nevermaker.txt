@@ -7,7 +7,7 @@ subtype=Elemental
 cost={3}{U}
 pt=2/3
 ability=Flying;\
-        evoke {3}{U};\
-        When SN leaves the battlefield, put target nonland permanent on top of its owner's library.
+        When SN leaves the battlefield, put target nonland permanent on top of its owner's library.;\
+        Evoke {3}{U}
 timing=main
 oracle=Flying\nWhen Nevermaker leaves the battlefield, put target nonland permanent on top of its owner's library.\nEvoke {3}{U}

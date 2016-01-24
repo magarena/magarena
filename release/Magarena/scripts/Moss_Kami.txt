@@ -1,11 +1,11 @@
 name=Moss Kami
 image=http://magiccards.info/scans/en/chk/228.jpg
 value=2.859
-ability=Trample
 rarity=C
 type=Creature
 subtype=Spirit
 cost={5}{G}
 pt=5/5
+ability=Trample
 timing=main
 oracle=Trample

@@ -6,7 +6,7 @@ type=Creature
 subtype=Shapeshifter
 cost={U}
 pt=1/1
-ability=changeling;\
-        Tap an untapped creature you control:SN gains flying until end of turn.
+ability=Changeling;\
+        Tap an untapped creature you control: SN gains flying until end of turn.
 timing=main
 oracle=Changeling\nTap an untapped creature you control: Mothdust Changeling gains flying until end of turn.

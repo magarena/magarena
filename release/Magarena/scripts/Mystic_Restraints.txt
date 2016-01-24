@@ -6,6 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={2}{U}{U}
 ability=Flash;\
+        Enchant creature;\
         When SN enters the battlefield, tap enchanted creature.;\
         Enchanted creature doesn't untap during its controller's untap step.
 timing=flash

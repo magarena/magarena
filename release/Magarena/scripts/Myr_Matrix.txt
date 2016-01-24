@@ -4,9 +4,9 @@ value=4.201
 rarity=R
 type=Artifact
 cost={5}
-ability=indestructible;\
-        myr creatures get +1/+1;\
+ability=Indestructible;\
+        Myr creatures get +1/+1.;\
         {5}: Put a 1/1 colorless Myr artifact creature token onto the battlefield.
 static=all
-timing=main
+timing=artifact
 oracle=Indestructible\nMyr creatures get +1/+1.\n{5}: Put a 1/1 colorless Myr artifact creature token onto the battlefield.

@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Samurai
 cost={3}{B}
 pt=1/1
-ability=bushido 2;\
+ability=Bushido 2;\
         {B}, Pay 5 life: Regenerate SN.
 timing=main
 oracle=Bushido 2\n{B}, Pay 5 life: Regenerate Numai Outcast.

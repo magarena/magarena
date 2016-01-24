@@ -6,6 +6,6 @@ type=Creature
 subtype=Insect,Druid
 cost={3}{G}
 pt=2/2
-ability={G},{T}:Target creature gets +2/+2 until end of turn.
+ability={G}, {T}: Target creature gets +2/+2 until end of turn.
 timing=main
 oracle={G}, {T}: Target creature gets +2/+2 until end of turn.

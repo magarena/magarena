@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Nomad,Mystic
 cost={2}{G}{W}
 pt=3/3
-ability=protection from black;\
+ability=Protection from black;\
         As long as seven or more cards are in your graveyard, SN gets +3/+3 and has flying.
 timing=main
 oracle=Protection from black\nThreshold — As long as seven or more cards are in your graveyard, Mystic Enforcer gets +3/+3 and has flying.

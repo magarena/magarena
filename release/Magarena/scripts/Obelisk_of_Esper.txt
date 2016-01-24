@@ -4,6 +4,6 @@ value=2.389
 rarity=C
 type=Artifact
 cost={3}
-ability={T}: Add {W} or {U} or {B} to your mana pool.
+ability={T}: Add {W}, {U}, or {B} to your mana pool.
 timing=artifact
 oracle={T}: Add {W}, {U}, or {B} to your mana pool.

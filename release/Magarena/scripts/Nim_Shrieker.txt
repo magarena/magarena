@@ -6,7 +6,7 @@ type=Creature
 subtype=Zombie
 cost={3}{B}
 pt=0/1
-ability=Flying.;\
+ability=Flying;\
         SN gets +1/+0 for each artifact you control.
 timing=main
 oracle=Flying\nNim Shrieker gets +1/+0 for each artifact you control.

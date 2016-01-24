@@ -1,11 +1,12 @@
 name=Nightshade Stinger
 image=http://magiccards.info/scans/en/lw/132.jpg
 value=2.896
-ability=Flying;SN can't block.
 rarity=C
 type=Creature
 subtype=Faerie,Rogue
 cost={B}
 pt=1/1
-timing=fmain
+ability=Flying;\
+        SN can't block.
+timing=main
 oracle=Flying\nNightshade Stinger can't block.

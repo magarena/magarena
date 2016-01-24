@@ -4,7 +4,7 @@ value=1.912
 rarity=R
 type=Enchantment
 cost={2}{B}{B}
-ability={2}{B},Discard a card: Target opponent loses 1 life and you gain 1 life.;\
+ability={2}{B}, Discard a card: Target opponent loses 1 life and you gain 1 life.;\
         {1}, Pay 2 life: Draw a card. Activate this ability only if you have no cards in hand.
 timing=enchantment
 oracle={2}{B}, Discard a card: Target opponent loses 1 life and you gain 1 life.\nHellbent — {1}, Pay 2 life: Draw a card. Activate this ability only if you have no cards in hand.

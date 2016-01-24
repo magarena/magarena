@@ -5,8 +5,9 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{B}
-ability=Enchanted creature gets -2/-0.;\
-        {B}:Return SN to its owner's hand.
+ability=Enchant creature;\
+        Enchanted creature gets -2/-0.;\
+        {B}: Return SN to its owner's hand.
 timing=aura
 enchant=weaken,neg creature
 oracle=Enchant creature\nEnchanted creature gets -2/-0.\n{B}: Return Mourning to its owner's hand.

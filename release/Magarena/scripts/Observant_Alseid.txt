@@ -7,7 +7,7 @@ subtype=Nymph
 cost={2}{W}
 pt=2/2
 ability=Bestow {4}{W};\
-        vigilance;\
+        Vigilance;\
         Enchanted creature gets +2/+2 and has vigilance.
 timing=main
 oracle=Bestow {4}{W}\nVigilance\nEnchanted creature gets +2/+2 and has vigilance.

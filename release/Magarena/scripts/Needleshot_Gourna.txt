@@ -1,11 +1,11 @@
 name=Needleshot Gourna
 image=http://magiccards.info/scans/en/le/133.jpg
 value=1.680
-ability=reach
 rarity=C
 type=Creature
 subtype=Beast
 cost={4}{G}{G}
 pt=3/6
+ability=Reach
 timing=main
 oracle=Reach

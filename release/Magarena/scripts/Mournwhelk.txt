@@ -6,6 +6,7 @@ type=Creature
 subtype=Elemental
 cost={6}{B}
 pt=3/3
-ability=When SN enters the battlefield, target player discards two cards.;evoke {3}{B}
+ability=When SN enters the battlefield, target player discards two cards.;\
+        Evoke {3}{B}
 timing=main
 oracle=When Mournwhelk enters the battlefield, target player discards two cards.\nEvoke {3}{B}

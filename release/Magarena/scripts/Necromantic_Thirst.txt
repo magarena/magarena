@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{B}{B}
-ability=Whenever enchanted creature deals combat damage to a player, you may return target creature card from your graveyard to your hand.
-timing=main
+ability=Enchant creature;\
+        Whenever enchanted creature deals combat damage to a player, you may return target creature card from your graveyard to your hand.
+timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nWhenever enchanted creature deals combat damage to a player, you may return target creature card from your graveyard to your hand.

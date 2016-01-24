@@ -6,6 +6,6 @@ type=Creature
 subtype=Goblin,Rogue
 cost={1}{B}
 pt=1/1
-ability=protection from Elves
+ability=Protection from Elves
 timing=main
 oracle=Protection from Elves

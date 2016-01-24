@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Assassin
 cost={2}{B}{B}
 pt=2/1
-ability=first strike;\
+ability=First strike;\
         When SN enters the battlefield, destroy target nonartifact, nonblack creature. It can't be regenerated.
 timing=fmain
 oracle=First strike\nWhen Nekrataal enters the battlefield, destroy target nonartifact, nonblack creature. That creature can't be regenerated.

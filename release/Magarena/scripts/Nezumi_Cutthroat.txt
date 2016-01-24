@@ -1,11 +1,12 @@
 name=Nezumi Cutthroat
 image=http://magiccards.info/scans/en/chk/128.jpg
 value=3.344
-ability=fear;SN can't block.
 rarity=C
 type=Creature
 subtype=Rat,Warrior
 cost={1}{B}
 pt=2/1
-timing=fmain
+ability=Fear;\
+        SN can't block.
+timing=main
 oracle=Fear\nNezumi Cutthroat can't block.

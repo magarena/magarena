@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={3}{U}
-ability=Enchanted creature has "{T}: Draw a card.";\
+ability=Enchant creature;\
+        Enchanted creature has "{T}: Draw a card.";\
         {W}: Enchanted creature gains vigilance until end of turn.
 enchant=pump,pos creature
 timing=aura

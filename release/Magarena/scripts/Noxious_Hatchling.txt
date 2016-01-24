@@ -6,8 +6,8 @@ type=Creature
 subtype=Elemental
 cost={3}{B/G}
 pt=6/6
-ability=Wither;\
-        SN enters the battlefield with four -1/-1 counters on it.;\
+ability=SN enters the battlefield with four -1/-1 counters on it.;\
+        Wither;\
         Whenever you cast a black spell, remove a -1/-1 counter from SN.;\
         Whenever you cast a green spell, remove a -1/-1 counter from SN.
 timing=main

@@ -6,7 +6,7 @@ type=Creature
 subtype=Mongoose
 cost={G}
 pt=1/1
-ability=shroud;\
+ability=Shroud;\
         SN gets +2/+2 as long as seven or more cards are in your graveyard.
 timing=main
 oracle=Shroud\nThreshold — Nimble Mongoose gets +2/+2 as long as seven or more cards are in your graveyard.

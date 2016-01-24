@@ -8,6 +8,6 @@ subtype=Goblin,Assassin
 cost={2}{B/R}{B/R}
 pt=2/2
 ability=When SN enters the battlefield, SN deals damage equal to its power to target creature or player.;\
-        persist
+        Persist
 timing=fmain
 oracle=When Murderous Redcap enters the battlefield, it deals damage equal to its power to target creature or player.\nPersist

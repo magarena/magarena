@@ -1,11 +1,11 @@
 name=Needlepeak Spider
 image=http://magiccards.info/scans/en/pc/105.jpg
 value=2.703
-ability=reach
 rarity=C
 type=Creature
 subtype=Spider
 cost={3}{R}
 pt=4/2
+ability=Reach
 timing=main
 oracle=Reach

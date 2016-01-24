@@ -1,11 +1,11 @@
 name=Ogre Sentry
 image=http://magiccards.info/scans/en/roe/159.jpg
 value=2.640
-ability=defender
 rarity=C
 type=Creature
 subtype=Ogre,Warrior
 cost={1}{R}
 pt=3/3
+ability=Defender
 timing=smain
 oracle=Defender

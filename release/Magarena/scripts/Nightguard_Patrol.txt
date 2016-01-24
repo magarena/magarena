@@ -1,11 +1,11 @@
 name=Nightguard Patrol
 image=http://magiccards.info/scans/en/rav/26.jpg
 value=2.854
-ability=first strike;vigilance
 rarity=C
 type=Creature
 subtype=Human,Soldier
 cost={2}{W}
 pt=2/1
+ability=First strike, vigilance
 timing=main
 oracle=First strike, vigilance
