@@ -11,10 +11,9 @@ import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 
-public abstract class HauntTrigger extends OtherDiesTrigger {
+public abstract class HauntTrigger extends ThisDiesTrigger {
 
-    private HauntTrigger() {
-    }
+    private HauntTrigger() {}
 
     public static final HauntTrigger create(final MagicSourceEvent sourceEvent) {
         return new HauntTrigger() {
@@ -33,22 +32,16 @@ public abstract class HauntTrigger extends OtherDiesTrigger {
                 final MagicCard card = event.getPermanent().getCard();
                 if (card.isInGraveyard()) {
                     event.processTargetPermanent(game, creatureToHaunt -> {
-                            game.doAction(new MoveCardAction(card, MagicLocationType.Graveyard, MagicLocationType.Exile)); //Only exiled if valid targt
-                            game.doAction(new RemoveCardAction(card, MagicLocationType.Graveyard));
-                            game.doAction(new AddTriggerAction(
-                                creatureToHaunt,
-                                ThisDiesTrigger.create(sourceEvent)
-                            ));
-                        }
-                    );
+                        // only exile if valid target
+                        game.doAction(new RemoveCardAction(card, MagicLocationType.Graveyard));
+                        game.doAction(new MoveCardAction(card, MagicLocationType.Graveyard, MagicLocationType.Exile));
+                        game.doAction(new AddTriggerAction(
+                            creatureToHaunt,
+                            ThisDiesTrigger.createDelayed(event.getSource(), event.getPlayer(), sourceEvent)
+                        ));
+                    });
                 }
             }
         };
     }
-
-    @Override
-    public boolean accept(final MagicPermanent source, final MagicPermanent died) {
-        return source.equals(died);
-    }
-
 }
