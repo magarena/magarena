@@ -6,8 +6,8 @@ type=Creature
 subtype=Kor,Soldier
 cost={W}{W}
 pt=2/2
-ability=kicker {1}{W};\
-        flying;\
+ability=Kicker {1}{W};\
+        Flying;\
         When SN enters the battlefield, if it was kicked, target creature gains flying until end of turn.
 timing=main
 oracle=Kicker {1}{W}\nFlying\nWhen Kor Aeronaut enters the battlefield, if it was kicked, target creature gains flying until end of turn.

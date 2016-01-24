@@ -6,6 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={2}{U}
 ability=Flash;\
+        Enchant creature;\
         Enchanted creature gets +3/+3 and doesn't untap during its controller's untap step.
 timing=pumpFlash
 enchant=can't attack or block,creature

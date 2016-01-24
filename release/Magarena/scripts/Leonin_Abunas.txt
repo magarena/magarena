@@ -6,6 +6,6 @@ type=Creature
 subtype=Cat,Cleric
 cost={3}{W}
 pt=2/5
-ability=artifacts you control have hexproof
+ability=Artifacts you control have hexproof.
 timing=main
 oracle=Artifacts you control have hexproof.

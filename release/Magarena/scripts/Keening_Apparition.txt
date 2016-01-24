@@ -6,6 +6,6 @@ type=Creature
 subtype=Spirit
 cost={1}{W}
 pt=2/2
-ability=Sacrifice SN:Destroy target enchantment.
+ability=Sacrifice SN: Destroy target enchantment.
 timing=main
 oracle=Sacrifice Keening Apparition: Destroy target enchantment.

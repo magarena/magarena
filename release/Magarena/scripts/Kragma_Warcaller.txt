@@ -6,7 +6,7 @@ type=Creature
 subtype=Minotaur,Warrior
 cost={3}{B}{R}
 pt=2/3
-ability=Minotaur creatures you control have haste;\
+ability=Minotaur creatures you control have haste.;\
         Whenever a Minotaur you control attacks, RN gets +2/+0 until end of turn.
 static=player
 timing=main

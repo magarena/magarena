@@ -6,7 +6,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={4}{W}
-ability=When SN enters the battlefield, put a 2/2 white Knight creature token with vigilance onto the battlefield.;\
+ability=Enchant creature;\
+        When SN enters the battlefield, put a 2/2 white Knight creature token with vigilance onto the battlefield.;\
         Enchanted creature gets +2/+2 and has vigilance.
 timing=aura
 enchant=pump,pos creature

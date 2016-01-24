@@ -6,8 +6,8 @@ type=Creature
 subtype=Human,Barbarian
 cost={2}{R}{R}
 pt=3/2
-ability=haste;\
-        echo {2}{R}{R};\
+ability=Haste;\
+        Echo {2}{R}{R};\
         When SN enters the battlefield, SN deals 3 damage to target player.
 timing=fmain
 oracle=Haste\nEcho {2}{R}{R}\nWhen Keldon Champion enters the battlefield, it deals 3 damage to target player.

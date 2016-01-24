@@ -6,6 +6,7 @@ type=Creature
 subtype=Spirit
 cost={2}{W}
 pt=1/2
-ability=Flying;{T}: Target creature gets +1/+2 until end of turn.
+ability=Flying;\
+        {T}: Target creature gets +1/+2 until end of turn.
 timing=main
 oracle=Flying\n{T}: Target creature gets +1/+2 until end of turn.

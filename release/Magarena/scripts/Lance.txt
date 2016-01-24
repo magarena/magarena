@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={W}
-ability=Enchanted creature has first strike.
+ability=Enchant creature;\
+        Enchanted creature has first strike.
 timing=aura
 enchant=first strike,pos creature
 oracle=Enchant creature\nEnchanted creature has first strike.

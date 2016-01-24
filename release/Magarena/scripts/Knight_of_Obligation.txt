@@ -6,6 +6,7 @@ type=Creature
 subtype=Human,Knight
 cost={3}{W}
 pt=2/4
-ability=Vigilance;extort
+ability=Vigilance;\
+        Extort
 timing=main
 oracle=Vigilance\nExtort

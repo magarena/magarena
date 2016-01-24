@@ -6,6 +6,7 @@ type=Creature
 subtype=Centaur,Archer
 cost={3}{G}
 pt=2/3
-ability=reach;{G},Discard a card:SN gets +0/+2 until end of turn.
+ability=Reach;\
+        {G}, Discard a card: SN gets +0/+2 until end of turn.
 timing=main
 oracle=Reach\n{G}, Discard a card: Krosan Archer gets +0/+2 until end of turn.

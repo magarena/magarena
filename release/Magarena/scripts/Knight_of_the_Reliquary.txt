@@ -7,6 +7,6 @@ subtype=Human,Knight
 cost={1}{G}{W}
 pt=2/2
 ability=SN gets +1/+1 for each land card in your graveyard.;\
-        {T}, Sacrifice a Forest or Plains: Search your library for a land card and put it onto the battlefield. Then shuffle your library.
+        {T}, Sacrifice a Forest or Plains: Search your library for a land card, put it onto the battlefield, then shuffle your library.
 timing=main
 oracle=Knight of the Reliquary gets +1/+1 for each land card in your graveyard.\n{T}, Sacrifice a Forest or Plains: Search your library for a land card, put it onto the battlefield, then shuffle your library.

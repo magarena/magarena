@@ -6,6 +6,7 @@ type=Creature
 subtype=Human,Knight
 cost={1}{W}
 pt=2/1
-ability=exalted;protection from black
+ability=Protection from black;\
+        Exalted
 timing=main
 oracle=Protection from black\nExalted

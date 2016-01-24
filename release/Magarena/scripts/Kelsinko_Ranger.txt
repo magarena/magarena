@@ -6,6 +6,6 @@ type=Creature
 subtype=Human
 cost={W}
 pt=1/1
-ability={1}{W}:Target green creature gains first strike until end of turn.
+ability={1}{W}: Target green creature gains first strike until end of turn.
 timing=main
 oracle={1}{W}: Target green creature gains first strike until end of turn.

@@ -6,9 +6,8 @@ type=Creature
 subtype=Human,Knight
 cost={1}{W}{W}
 pt=2/2
-ability=first strike;\
-        other knight creatures you control get +1/+1;\
-        other knight creatures you control have indestructible
+ability=First strike;\
+        Other Knight creatures you control get +1/+1 and have indestructible.
 static=player
 timing=main
 oracle=First strike\nOther Knight creatures you control get +1/+1 and have indestructible.

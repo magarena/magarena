@@ -6,6 +6,6 @@ type=Creature
 subtype=Beast
 cost={4}{G}{G}{G}
 pt=6/6
-ability={G}:Target Beast creature gains trample until end of turn.
+ability={G}: Target Beast creature gains trample until end of turn.
 timing=main
 oracle={G}: Target Beast creature gains trample until end of turn.

@@ -1,11 +1,12 @@
 name=Kuldotha Ringleader
 image=http://magiccards.info/scans/en/mbs/70.jpg
 value=2.844
-ability=battle cry;SN attacks each turn if able.
 rarity=C
 type=Creature
 subtype=Giant,Berserker
 cost={4}{R}
 pt=4/4
+ability=Battle cry;\
+        SN attacks each turn if able.
 timing=fmain
 oracle=Battle cry\nKuldotha Ringleader attacks each turn if able.

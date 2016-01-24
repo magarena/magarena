@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Human,Soldier,Warrior
 cost={4}{G}
 pt=4/3
-ability=horsemanship
+ability=Horsemanship
 timing=main
 oracle=Horsemanship

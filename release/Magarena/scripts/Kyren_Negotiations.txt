@@ -4,6 +4,6 @@ value=3.917
 rarity=U
 type=Enchantment
 cost={2}{R}{R}
-ability=Tap an untapped creature you control:SN deals 1 damage to target player.
+ability=Tap an untapped creature you control: SN deals 1 damage to target player.
 timing=enchantment
 oracle=Tap an untapped creature you control: Kyren Negotiations deals 1 damage to target player.

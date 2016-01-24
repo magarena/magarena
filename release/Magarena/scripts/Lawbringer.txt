@@ -6,6 +6,6 @@ type=Creature
 subtype=Kor,Rebel
 cost={2}{W}
 pt=2/2
-ability={T},Sacrifice SN:Exile target red creature.
+ability={T}, Sacrifice SN: Exile target red creature.
 timing=main
 oracle={T}, Sacrifice Lawbringer: Exile target red creature.

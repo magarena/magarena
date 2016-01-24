@@ -6,6 +6,7 @@ type=Creature
 subtype=Fox,Samurai
 cost={2}{W}
 pt=2/2
-ability=first strike;bushido 1
+ability=First strike;\
+        Bushido 1
 timing=main
 oracle=First strike\nBushido 1

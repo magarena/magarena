@@ -4,7 +4,7 @@ value=3.579
 rarity=U
 type=Artifact
 cost={3}
-ability=flash;\
+ability=Flash;\
         {2}, Sacrifice SN: SN deals 2 damage to each attacking creature without flying.
 timing=flash
 oracle=Flash\n{2}, Sacrifice Leonin Bladetrap: Leonin Bladetrap deals 2 damage to each attacking creature without flying.

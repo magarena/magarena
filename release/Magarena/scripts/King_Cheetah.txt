@@ -1,11 +1,11 @@
 name=King Cheetah
 image=http://magiccards.info/scans/en/9e/250.jpg
 value=3.308
-ability=flash
 rarity=U
 type=Creature
 subtype=Cat
 cost={3}{G}
 pt=3/2
+ability=Flash
 timing=flash
 oracle=Flash

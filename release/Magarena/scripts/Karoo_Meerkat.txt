@@ -6,6 +6,6 @@ type=Creature
 subtype=Mongoose
 cost={1}{G}
 pt=2/1
-ability=protection from blue
+ability=Protection from blue
 timing=main
 oracle=Protection from blue

@@ -1,11 +1,11 @@
 name=Lantern Kami
 image=http://magiccards.info/scans/en/chk/32.jpg
 value=3.404
-ability=Flying
 rarity=C
 type=Creature
 subtype=Spirit
 cost={W}
 pt=1/1
+ability=Flying
 timing=main
 oracle=Flying

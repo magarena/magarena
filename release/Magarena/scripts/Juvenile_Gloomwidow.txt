@@ -1,11 +1,12 @@
 name=Juvenile Gloomwidow
 image=http://magiccards.info/scans/en/shm/121.jpg
 value=3.265
-ability=reach;wither
 rarity=C
 type=Creature
 subtype=Spider
 cost={G}{G}
 pt=1/3
+ability=Reach;\
+        Wither
 timing=main
 oracle=Reach\nWither

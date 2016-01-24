@@ -1,11 +1,11 @@
 name=Leaf Dancer
 image=http://magiccards.info/scans/en/od/249.jpg
 value=2.400
-ability=Forestwalk
 rarity=C
 type=Creature
 subtype=Centaur
 cost={1}{G}{G}
 pt=2/2
+ability=Forestwalk
 timing=main
 oracle=Forestwalk

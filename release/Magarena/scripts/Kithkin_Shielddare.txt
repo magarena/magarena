@@ -6,6 +6,6 @@ type=Creature
 subtype=Kithkin,Soldier
 cost={1}{W}
 pt=1/1
-ability={W},{T}:Target blocking creature gets +2/+2 until end of turn.
+ability={W}, {T}: Target blocking creature gets +2/+2 until end of turn.
 timing=main
 oracle={W}, {T}: Target blocking creature gets +2/+2 until end of turn.

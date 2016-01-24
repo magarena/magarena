@@ -6,6 +6,8 @@ type=Legendary,Creature
 subtype=Human,Samurai
 cost={5}{W}{W}
 pt=3/3
-ability=Vigilance;indestructible;bushido 5
+ability=Indestructible;\
+        Vigilance;\
+        Bushido 5
 timing=main
 oracle=Indestructible\nVigilance\nBushido 5

@@ -6,6 +6,6 @@ type=Creature
 subtype=Elf,Archer
 cost={2}{W}
 pt=2/2
-ability=reach
+ability=Reach
 timing=main
 oracle=Reach

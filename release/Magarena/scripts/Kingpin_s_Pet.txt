@@ -6,6 +6,7 @@ type=Creature
 subtype=Thrull
 cost={1}{W}{B}
 pt=2/2
-ability=Flying;extort
+ability=Flying;\
+        Extort
 timing=main
 oracle=Flying\nExtort

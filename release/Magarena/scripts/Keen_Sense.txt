@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={G}
-ability=Whenever enchanted creature deals damage to an opponent, you may draw a card.
+ability=Enchant creature;\
+        Whenever enchanted creature deals damage to an opponent, you may draw a card.
 timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nWhenever enchanted creature deals damage to an opponent, you may draw a card.

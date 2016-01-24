@@ -6,6 +6,6 @@ type=Creature
 subtype=Spirit
 cost={1}{U}{U}
 pt=2/2
-ability=Sacrifice SN:Return target creature you control to its owner's hand.
+ability=Sacrifice SN: Return target creature you control to its owner's hand.
 timing=main
 oracle=Sacrifice Kami of Twisted Reflection: Return target creature you control to its owner's hand.

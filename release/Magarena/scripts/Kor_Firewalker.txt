@@ -6,7 +6,7 @@ type=Creature
 subtype=Kor,Soldier
 cost={W}{W}
 pt=2/2
-ability=protection from red;\
+ability=Protection from red;\
         Whenever a player casts a red spell, you may gain 1 life.
 timing=fmain
 oracle=Protection from red\nWhenever a player casts a red spell, you may gain 1 life.
