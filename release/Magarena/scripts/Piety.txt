@@ -4,6 +4,6 @@ value=1.452
 rarity=C
 type=Instant
 cost={2}{W}
-effect=Blocking creatures get +0/+2 until end of turn.
+effect=Blocking creatures get +0/+3 until end of turn.
 timing=block
 oracle=Blocking creatures get +0/+3 until end of turn.
