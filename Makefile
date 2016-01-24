@@ -497,7 +497,6 @@ checks: \
 	check_groovy_escape \
 	check_empty_return \
 	check_image \
-	check_meta \
 	check_decks \
 	check_mana_or_combat \
 	check_color_or_cost
