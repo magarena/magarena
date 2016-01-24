@@ -781,6 +781,20 @@ public enum MagicAbility {
             ));
         }
     },
+    Haunt("haunt", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            //Does nothing but allows text to be part of ability property
+            //HauntAbility contains actual effects
+            //Not currently compatable with Instants or Sorceries
+        }
+    },
+    HauntAbility("When SN enters the battlefield or the creature it haunts dies, " + ARG.EFFECT, 0) {
+        protected void addAbilityImpl(MagicAbilityStore card, Matcher arg) {
+            MagicSourceEvent hauntEffect = MagicRuleEventAction.create(ARG.effect(arg));
+            card.add(EntersBattlefieldTrigger.create(hauntEffect));
+            card.add(HauntTrigger.create(hauntEffect));
+        }
+    },
     SelfOrAnotherYouControlEntersEffect("Whenever SN or another " + ARG.WORDRUN + " enters the battlefield under your control, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(OtherEntersBattlefieldTrigger.createSelfOrAnother(
