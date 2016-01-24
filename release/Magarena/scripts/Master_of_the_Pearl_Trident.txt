@@ -6,8 +6,7 @@ type=Creature
 subtype=Merfolk
 cost={U}{U}
 pt=2/2
-ability=other merfolk creatures you control get +1/+1;\
-        other merfolk creatures you control have islandwalk
+ability=Other Merfolk creatures you control get +1/+1 and have islandwalk.
 static=player
 timing=main
 oracle=Other Merfolk creatures you control get +1/+1 and have islandwalk.

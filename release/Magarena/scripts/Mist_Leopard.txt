@@ -1,11 +1,11 @@
 name=Mist Leopard
 image=http://magiccards.info/scans/en/m10/193.jpg
 value=2.534
-ability=shroud
 rarity=C
 type=Creature
 subtype=Cat
 cost={3}{G}
 pt=3/2
-timing=fmain
+ability=Shroud
+timing=main
 oracle=Shroud

@@ -4,6 +4,6 @@ value=2.933
 rarity=C
 type=Enchantment
 cost={1}{U}{U}
-ability={1}{U},Discard a card: Draw a card.
+ability={1}{U}, Discard a card: Draw a card.
 timing=enchantment
 oracle={1}{U}, Discard a card: Draw a card.

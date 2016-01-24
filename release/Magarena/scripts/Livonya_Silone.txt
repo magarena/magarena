@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Human,Warrior
 cost={2}{R}{R}{G}{G}
 pt=4/4
-ability=First strike;legendary landwalk
+ability=First strike, legendary landwalk
 timing=main
 oracle=First strike, legendary landwalk

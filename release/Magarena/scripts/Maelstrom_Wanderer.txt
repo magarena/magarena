@@ -6,6 +6,7 @@ type=Legendary,Creature
 subtype=Elemental
 cost={5}{U}{R}{G}
 pt=7/5
-ability=creatures you control have haste;cascade;cascade
+ability=Creatures you control have haste.;\
+        Cascade, cascade
 timing=main
 oracle=Creatures you control have haste.\nCascade, cascade

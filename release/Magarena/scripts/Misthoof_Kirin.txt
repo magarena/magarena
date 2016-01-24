@@ -6,7 +6,7 @@ type=Creature
 subtype=Kirin
 cost={2}{W}
 pt=2/1
-ability=Flying; vigilance;\
+ability=Flying, vigilance;\
         Megamorph {1}{W}
 timing=main
 oracle=Flying, vigilance\nMegamorph {1}{W}

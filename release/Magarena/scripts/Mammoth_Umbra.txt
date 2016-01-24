@@ -5,8 +5,9 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={4}{W}
-ability=Enchanted creature gets +3/+3 and has vigilance.;\
-        totem armor
+ability=Enchant creature;\
+        Enchanted creature gets +3/+3 and has vigilance.;\
+        Totem armor
 timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature gets +3/+3 and has vigilance.\nTotem armor

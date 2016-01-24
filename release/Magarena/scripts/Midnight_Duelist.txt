@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Soldier
 cost={W}
 pt=1/2
-ability=protection from Vampires
+ability=Protection from Vampires
 timing=main
 oracle=Protection from Vampires

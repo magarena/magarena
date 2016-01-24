@@ -9,4 +9,4 @@ pt=2/3
 ability=Morph {2}{U};\
         When SN is turned face up, you may turn target creature with a morph ability face down.
 timing=main
-oracle=Morph {2}{U}\nWhen Master of the Veil is turned face up, you may turn target creature with morph face down.
+oracle=Morph {2}{U}\nWhen Master of the Veil is turned face up, you may turn target creature with a morph ability face down.

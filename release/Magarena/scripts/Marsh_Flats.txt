@@ -3,6 +3,6 @@ image=http://magiccards.info/scans/en/zen/219.jpg
 value=4.477
 rarity=R
 type=Land
-ability={T},Pay 1 life,Sacrifice SN:Search your library for a Plains or Swamp card and put it onto the battlefield. Then shuffle your library.
+ability={T}, Pay 1 life, Sacrifice SN: Search your library for a Plains or Swamp card and put it onto the battlefield. Then shuffle your library.
 timing=land
 oracle={T}, Pay 1 life, Sacrifice Marsh Flats: Search your library for a Plains or Swamp card and put it onto the battlefield. Then shuffle your library.

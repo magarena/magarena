@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={3}{B}
-ability=Enchanted creature gets +2/+2 and has lifelink.
+ability=Enchant creature;\
+        Enchanted creature gets +2/+2 and has lifelink.
 timing=aura
 enchant=lifelink,pos creature
 oracle=Enchant creature\nEnchanted creature gets +2/+2 and has lifelink.

@@ -1,11 +1,11 @@
 name=Lumengrid Gargoyle
 image=http://magiccards.info/scans/en/mbs/112.jpg
 value=2.016
-ability=Flying
 rarity=U
 type=Artifact,Creature
 subtype=Gargoyle
 cost={6}
 pt=4/4
+ability=Flying
 timing=main
 oracle=Flying

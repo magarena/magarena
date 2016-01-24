@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Monk
 cost={U}{R}{W}
 pt=3/3
-ability=Flying;vigilance;haste
+ability=Flying, vigilance, haste
 timing=main
 oracle=Flying, vigilance, haste

@@ -5,7 +5,7 @@ rarity=U
 type=Artifact
 subtype=Equipment
 cost={2}
-ability=Equipped creature gets +1/+2 and has "{T}: Destroy target equipment.";\
+ability=Equipped creature gets +1/+2 and has "{T}: Destroy target Equipment.";\
         Equip {1}
 timing=equipment
 oracle=Equipped creature gets +1/+2 and has "{T}: Destroy target Equipment."\nEquip {1}

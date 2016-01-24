@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{R}
-ability=Enchanted creature has "{T}: Target creature can't block this turn."
+ability=Enchant creature;\
+        Enchanted creature has "{T}: Target creature can't block this turn."
 timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature has "{T}: Target creature can't block this turn."

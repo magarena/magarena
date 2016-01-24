@@ -6,6 +6,6 @@ type=Creature
 subtype=Elephant,Soldier
 cost={4}{W}
 pt=3/4
-ability=battle cry
+ability=Battle cry
 timing=main
 oracle=Battle cry

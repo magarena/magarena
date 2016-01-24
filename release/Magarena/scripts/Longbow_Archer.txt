@@ -1,11 +1,11 @@
 name=Longbow Archer
 image=http://magiccards.info/scans/en/7e/26.jpg
 value=4.380
-ability=first strike;reach
 rarity=U
 type=Creature
 subtype=Human,Soldier,Archer
 cost={W}{W}
 pt=2/2
+ability=First strike, reach
 timing=main
-oracle=First strike; reach
+oracle=First strike, reach

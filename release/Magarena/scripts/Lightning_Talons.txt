@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{R}
-ability=Enchanted creature gets +3/+0 and has first strike.
+ability=Enchant creature;\
+        Enchanted creature gets +3/+0 and has first strike.
 timing=aura
 enchant=first strike,pos creature
 oracle=Enchant creature\nEnchanted creature gets +3/+0 and has first strike.

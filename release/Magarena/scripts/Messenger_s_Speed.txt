@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={R}
-ability=Enchanted creature has trample and haste.
+ability=Enchant creature;\
+        Enchanted creature has trample and haste.
 enchant=trample,pos creature
 timing=fmain
 oracle=Enchant creature\nEnchanted creature has trample and haste.

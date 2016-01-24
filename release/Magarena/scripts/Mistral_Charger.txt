@@ -1,11 +1,11 @@
 name=Mistral Charger
 image=http://magiccards.info/scans/en/di/13.jpg
 value=3.134
-ability=Flying
 rarity=U
 type=Creature
 subtype=Pegasus
 cost={1}{W}
 pt=2/1
+ability=Flying
 timing=main
 oracle=Flying

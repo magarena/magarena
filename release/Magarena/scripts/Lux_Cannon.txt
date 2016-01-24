@@ -4,6 +4,7 @@ value=3.858
 rarity=M
 type=Artifact
 cost={4}
-ability={T}:Put a charge counter on SN.;{T},Remove three charge counters from SN:Destroy target permanent.
+ability={T}: Put a charge counter on SN.;\
+        {T}, Remove three charge counters from SN: Destroy target permanent.
 timing=artifact
 oracle={T}: Put a charge counter on Lux Cannon.\n{T}, Remove three charge counters from Lux Cannon: Destroy target permanent.

@@ -6,7 +6,7 @@ type=Creature
 subtype=Wall
 cost={4}{U}
 pt=0/4
-ability=defender;\
+ability=Defender;\
         When SN enters the battlefield, you may return target instant or sorcery card from your graveyard to your hand.
 timing=main
 oracle=Defender\nWhen Mnemonic Wall enters the battlefield, you may return target instant or sorcery card from your graveyard to your hand.

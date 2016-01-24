@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Soldier
 cost={2}{W}
 pt=1/1
-ability={T},Sacrifice SN:Destroy target attacking creature.
+ability={T}, Sacrifice SN: Destroy target attacking creature.
 timing=main
 oracle={T}, Sacrifice Mine Bearer: Destroy target attacking creature.

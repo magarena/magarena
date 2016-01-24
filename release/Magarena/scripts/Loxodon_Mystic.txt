@@ -6,6 +6,6 @@ type=Creature
 subtype=Elephant,Cleric
 cost={3}{W}{W}
 pt=3/3
-ability={W},{T}: Tap target creature.
+ability={W}, {T}: Tap target creature.
 timing=main
 oracle={W}, {T}: Tap target creature.

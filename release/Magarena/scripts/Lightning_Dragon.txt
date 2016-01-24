@@ -6,6 +6,8 @@ type=Creature
 subtype=Dragon
 cost={2}{R}{R}
 pt=4/4
-ability=Flying;echo {2}{R}{R};{R}: SN gets +1/+0 until end of turn.
+ability=Flying;\
+        Echo {2}{R}{R};\
+        {R}: SN gets +1/+0 until end of turn.
 timing=main
 oracle=Flying\nEcho {2}{R}{R}\n{R}: Lightning Dragon gets +1/+0 until end of turn.

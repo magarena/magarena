@@ -6,6 +6,7 @@ type=Creature
 subtype=Bird
 cost={1}{W}
 pt=1/1
-ability=Flying;{1}{W}: SN gets +0/+1 until end of turn.
+ability=Flying;\
+        {1}{W}: SN gets +0/+1 until end of turn.
 timing=main
 oracle=Flying\n{1}{W}: Mesa Falcon gets +0/+1 until end of turn.

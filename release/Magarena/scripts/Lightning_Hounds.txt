@@ -6,6 +6,6 @@ type=Creature
 subtype=Hound
 cost={2}{R}{R}
 pt=3/2
-ability=first strike
+ability=First strike
 timing=main
 oracle=First strike

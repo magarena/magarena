@@ -6,7 +6,7 @@ type=Creature
 subtype=Bird
 cost={3}{U}
 pt=2/2
-ability=Flying.;\
+ability=Flying;\
         Whenever SN deals combat damage to a creature, tap that creature. That creature doesn't untap during its controller's next untap step.
 timing=main
 oracle=Flying\nWhenever Mercurial Kite deals combat damage to a creature, tap that creature. That creature doesn't untap during its controller's next untap step.

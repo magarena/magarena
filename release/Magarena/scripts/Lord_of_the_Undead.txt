@@ -6,7 +6,7 @@ type=Creature
 subtype=Zombie
 cost={1}{B}{B}
 pt=2/2
-ability=other zombie creatures get +1/+1;\
+ability=Other Zombie creatures get +1/+1.;\
         {1}{B}, {T}: Return target Zombie card from your graveyard to your hand.
 static=all
 timing=main

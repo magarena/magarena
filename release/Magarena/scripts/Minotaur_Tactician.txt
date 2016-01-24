@@ -6,7 +6,7 @@ type=Creature
 subtype=Minotaur
 cost={3}{R}
 pt=1/1
-ability=haste;\
+ability=Haste;\
         SN gets +1/+1 as long as you control a white creature.;\
         SN gets +1/+1 as long as you control a blue creature.
 timing=main

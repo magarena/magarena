@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={U}
-ability=cumulative upkeep {1};\
+ability=Enchant red or green creature;\
+        Cumulative upkeep {1};\
         You control enchanted creature.
 enchant=gain control,neg red or green creature
 timing=aura

@@ -4,7 +4,7 @@ value=4.579
 rarity=U
 type=Land
 ability={T}: Add {C} to your mana pool.;\
-        {1}: SN becomes a 2/2 Assembly-Worker artifact creature until end of turn.;\
+        {1}: SN becomes a 2/2 Assembly-Worker artifact creature until end of turn. It's still a land.;\
         {T}: Target Assembly-Worker creature gets +1/+1 until end of turn.
 timing=land
 mana_or_combat

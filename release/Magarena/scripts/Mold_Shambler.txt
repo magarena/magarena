@@ -6,7 +6,7 @@ type=Creature
 subtype=Fungus,Beast
 cost={3}{G}
 pt=3/3
-ability=kicker {1}{G};\
+ability=Kicker {1}{G};\
         When SN enters the battlefield, if it was kicked, destroy target noncreature permanent.
 timing=main
 oracle=Kicker {1}{G}\nWhen Mold Shambler enters the battlefield, if it was kicked, destroy target noncreature permanent.

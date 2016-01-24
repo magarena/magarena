@@ -6,6 +6,6 @@ type=Creature
 subtype=Beast
 cost={3}{B}
 pt=3/2
-ability=Sacrifice a Swamp:SN gains fear until end of turn.
+ability=Sacrifice a Swamp: SN gains fear until end of turn.
 timing=main
 oracle=Sacrifice a Swamp: Marsh Lurker gains fear until end of turn.

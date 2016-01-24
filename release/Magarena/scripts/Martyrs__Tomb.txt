@@ -4,6 +4,6 @@ value=1.378
 rarity=U
 type=Enchantment
 cost={2}{W}{B}
-ability=Pay 2 life:Prevent the next 1 damage that would be dealt to target creature this turn.
+ability=Pay 2 life: Prevent the next 1 damage that would be dealt to target creature this turn.
 timing=enchantment
 oracle=Pay 2 life: Prevent the next 1 damage that would be dealt to target creature this turn.

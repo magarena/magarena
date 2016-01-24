@@ -6,6 +6,7 @@ type=Creature
 subtype=Bird
 cost={2}{G/U}{W}
 pt=2/2
-ability=Flying;When SN enters the battlefield, draw a card.
-timing=fmain
+ability=Flying;\
+        When SN enters the battlefield, draw a card.
+timing=main
 oracle=Flying\nWhen Messenger Falcons enters the battlefield, draw a card.

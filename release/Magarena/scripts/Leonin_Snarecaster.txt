@@ -6,6 +6,6 @@ type=Creature
 subtype=Cat,Soldier
 cost={1}{W}
 pt=2/1
-ability=When SN enters the battlefield, tap target creature.
+ability=When SN enters the battlefield, you may tap target creature.
 timing=main
 oracle=When Leonin Snarecaster enters the battlefield, you may tap target creature.

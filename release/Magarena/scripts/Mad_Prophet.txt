@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Shaman
 cost={3}{R}
 pt=2/2
-ability=haste;\
+ability=Haste;\
         {T}, Discard a card: Draw a card.
 timing=fmain
 oracle=Haste\n{T}, Discard a card: Draw a card.

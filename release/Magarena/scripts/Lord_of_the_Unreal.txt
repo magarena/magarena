@@ -6,8 +6,7 @@ type=Creature
 subtype=Human,Wizard
 cost={U}{U}
 pt=2/2
-ability=illusion creatures you control get +1/+1;\
-        illusion creatures you control have hexproof
+ability=Illusion creatures you control get +1/+1 and have hexproof.
 static=player
 timing=main
 oracle=Illusion creatures you control get +1/+1 and have hexproof.

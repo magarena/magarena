@@ -6,7 +6,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{G}
-ability=Enchanted creature gets +1/+3 and has reach.
+ability=Enchant creature;\
+        Enchanted creature gets +1/+3 and has reach.
 timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature gets +1/+3 and has reach.

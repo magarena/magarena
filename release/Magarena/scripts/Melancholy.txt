@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{B}
-ability=When SN enters the battlefield, tap enchanted creature.;\
+ability=Enchant creature;\
+        When SN enters the battlefield, tap enchanted creature.;\
         Enchanted creature doesn't untap during its controller's untap step.;\
         At the beginning of your upkeep, you may pay {B}. If you don't, sacrifice SN.
 enchant=can't attack or block,neg creature

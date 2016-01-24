@@ -6,7 +6,7 @@ type=Creature
 subtype=Kor,Rogue
 cost={1}{U}
 pt=1/1
-ability=shadow;\
+ability=Shadow;\
         Whenever SN deals damage to an opponent, draw a card, then discard a card.
 timing=main
 oracle=Shadow\nWhenever Looter il-Kor deals damage to an opponent, draw a card, then discard a card.

@@ -1,11 +1,11 @@
 name=Makindi Griffin
 image=http://magiccards.info/scans/en/roe/36.jpg
 value=2.790
-ability=Flying
 rarity=C
 type=Creature
 subtype=Griffin
 cost={3}{W}
 pt=2/4
+ability=Flying
 timing=main
 oracle=Flying

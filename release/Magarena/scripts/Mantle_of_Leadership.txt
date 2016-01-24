@@ -6,6 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={1}{W}
 ability=Flash;\
+        Enchant creature;\
         Whenever a creature enters the battlefield, enchanted creature gets +2/+2 until end of turn.
 timing=pumpFlash
 enchant=pump,pos creature

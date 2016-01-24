@@ -6,6 +6,7 @@ type=Creature
 subtype=Shapeshifter
 cost={2}{B}
 pt=2/2
-ability=changeling;{B}: SN gains deathtouch until end of turn.
+ability=Changeling;\
+        {B}: SN gains deathtouch until end of turn.
 timing=main
 oracle=Changeling\n{B}: Moonglove Changeling gains deathtouch until end of turn.

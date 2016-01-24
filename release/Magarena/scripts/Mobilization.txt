@@ -4,7 +4,7 @@ value=4.254
 rarity=R
 type=Enchantment
 cost={2}{W}
-ability=soldier creatures have vigilance;\
+ability=Soldier creatures have vigilance.;\
         {2}{W}: Put a 1/1 white Soldier creature token onto the battlefield.
 static=all
 timing=enchantment

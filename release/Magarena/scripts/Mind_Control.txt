@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={3}{U}{U}
+ability=Enchant creature;\
+        You control enchanted creature.
 timing=aura
-ability=You control enchanted creature.
 enchant=gain control,neg creature
 oracle=Enchant creature\nYou control enchanted creature.

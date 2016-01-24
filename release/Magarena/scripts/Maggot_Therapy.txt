@@ -6,6 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={2}{B}
 ability=Flash;\
+        Enchant creature;\
         Enchanted creature gets +2/-2.
 timing=flash
 enchant=weaken +2/-2,creature

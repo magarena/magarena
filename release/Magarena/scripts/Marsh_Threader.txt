@@ -1,11 +1,11 @@
 name=Marsh Threader
 image=http://magiccards.info/scans/en/wwk/14.jpg
 value=2.616
-ability=Swampwalk
 rarity=C
 type=Creature
 subtype=Kor,Scout
 cost={1}{W}
 pt=2/1
+ability=Swampwalk
 timing=main
 oracle=Swampwalk

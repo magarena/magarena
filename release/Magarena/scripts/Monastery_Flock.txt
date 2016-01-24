@@ -6,7 +6,7 @@ type=Creature
 subtype=Bird
 cost={2}{U}
 pt=0/5
-ability=Defender;flying;\
+ability=Defender, flying;\
         Morph {U}
 timing=main
 oracle=Defender, flying\nMorph {U}

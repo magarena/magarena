@@ -1,11 +1,11 @@
 name=Lost Leonin
 image=http://magiccards.info/scans/en/nph/13.jpg
 value=3.140
-ability=infect
 rarity=C
 type=Creature
 subtype=Cat,Soldier
 cost={1}{W}
 pt=2/1
+ability=Infect
 timing=main
 oracle=Infect

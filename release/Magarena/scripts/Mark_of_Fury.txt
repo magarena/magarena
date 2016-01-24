@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={R}
-ability=Enchanted creature has haste.;\
+ability=Enchant creature;\
+        Enchanted creature has haste.;\
         At the beginning of the end step, return SN to its owner's hand.
 timing=fmain
 enchant=haste,pos creature

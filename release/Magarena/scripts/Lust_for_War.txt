@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{R}
-ability=Whenever enchanted creature becomes tapped, SN deals 3 damage to that creature's controller.;\
+ability=Enchant creature;\
+        Whenever enchanted creature becomes tapped, SN deals 3 damage to that creature's controller.;\
         Enchanted creature attacks each turn if able.
 timing=aura
 enchant=must attack,neg creature

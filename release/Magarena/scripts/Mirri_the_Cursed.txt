@@ -6,9 +6,7 @@ type=Legendary,Creature
 subtype=Vampire,Cat
 cost={2}{B}{B}
 pt=3/2
-ability=Flying;\
-        first strike;\
-        haste;\
+ability=Flying, first strike, haste;\
         Whenever SN deals combat damage to a creature, put a +1/+1 counter on SN.
 timing=fmain
 oracle=Flying, first strike, haste\nWhenever Mirri the Cursed deals combat damage to a creature, put a +1/+1 counter on Mirri the Cursed.

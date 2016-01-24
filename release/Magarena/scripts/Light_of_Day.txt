@@ -4,6 +4,6 @@ value=4.106
 rarity=U
 type=Enchantment
 cost={3}{W}
-ability=black creatures can't attack or block.
+ability=Black creatures can't attack or block.
 timing=enchantment
 oracle=Black creatures can't attack or block.
