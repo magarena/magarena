@@ -1,22 +1,22 @@
 package magic.model;
 
+import java.util.EnumSet;
+import java.util.List;
+import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import magic.data.EnglishToInt;
+import magic.exception.ScriptParseException;
+import magic.model.condition.MagicCondition;
+import magic.model.condition.MagicConditionFactory;
+import magic.model.condition.MagicConditionParser;
 import magic.model.event.*;
 import magic.model.mstatic.MagicCDA;
 import magic.model.mstatic.MagicStatic;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 import magic.model.trigger.*;
-import magic.model.condition.MagicCondition;
-import magic.model.condition.MagicConditionFactory;
-import magic.model.condition.MagicConditionParser;
-import magic.exception.ScriptParseException;
-
-import java.util.EnumSet;
-import java.util.List;
-import java.util.Set;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public enum MagicAbility {
 
