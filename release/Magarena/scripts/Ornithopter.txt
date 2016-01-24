@@ -1,11 +1,11 @@
 name=Ornithopter
 image=http://magiccards.info/scans/en/m15/223.jpg
 value=3.438
-ability=Flying
 rarity=C
 type=Artifact,Creature
 subtype=Thopter
 cost={0}
 pt=0/2
+ability=Flying
 timing=main
 oracle=Flying

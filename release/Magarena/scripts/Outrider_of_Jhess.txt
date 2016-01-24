@@ -1,11 +1,11 @@
 name=Outrider of Jhess
 image=http://magiccards.info/scans/en/ala/52.jpg
 value=1.855
-ability=exalted
 rarity=C
 type=Creature
 subtype=Human,Knight
 cost={3}{U}
 pt=2/2
+ability=Exalted
 timing=main
 oracle=Exalted

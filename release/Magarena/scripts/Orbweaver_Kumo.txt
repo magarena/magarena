@@ -6,7 +6,7 @@ type=Creature
 subtype=Spirit
 cost={4}{G}{G}
 pt=3/4
-ability=reach;\
+ability=Reach;\
         Whenever you cast a Spirit or Arcane spell, SN gains forestwalk until end of turn.
 timing=main
 oracle=Reach\nWhenever you cast a Spirit or Arcane spell, Orbweaver Kumo gains forestwalk until end of turn.

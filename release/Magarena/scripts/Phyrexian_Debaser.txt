@@ -6,6 +6,7 @@ type=Creature
 subtype=Carrier
 cost={3}{B}
 pt=2/2
-ability=Flying;{T},Sacrifice SN:Target creature gets -2/-2 until end of turn.
+ability=Flying;\
+        {T}, Sacrifice SN: Target creature gets -2/-2 until end of turn.
 timing=main
 oracle=Flying\n{T}, Sacrifice Phyrexian Debaser: Target creature gets -2/-2 until end of turn.

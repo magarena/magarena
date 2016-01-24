@@ -1,11 +1,11 @@
 name=Pincher Beetles
 image=http://magiccards.info/scans/en/10e/285.jpg
 value=3.132
-ability=shroud
 rarity=C
 type=Creature
 subtype=Insect
 cost={2}{G}
 pt=3/1
-timing=fmain
+ability=Shroud
+timing=main
 oracle=Shroud

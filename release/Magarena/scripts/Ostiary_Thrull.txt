@@ -6,6 +6,6 @@ type=Creature
 subtype=Thrull
 cost={3}{B}
 pt=2/2
-ability={W},{T}:Tap target creature.
+ability={W}, {T}: Tap target creature.
 timing=main
 oracle={W}, {T}: Tap target creature.

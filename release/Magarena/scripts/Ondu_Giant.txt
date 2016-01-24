@@ -6,6 +6,6 @@ type=Creature
 subtype=Giant,Druid
 cost={3}{G}
 pt=2/4
-ability=When SN enters the battlefield, you may search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.
+ability=When SN enters the battlefield, you may search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library.
 timing=main
 oracle=When Ondu Giant enters the battlefield, you may search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library.

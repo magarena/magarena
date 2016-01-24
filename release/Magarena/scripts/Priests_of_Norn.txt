@@ -1,11 +1,12 @@
 name=Priests of Norn
 image=http://magiccards.info/scans/en/mbs/16.jpg
 value=3.572
-ability=Vigilance;infect
 rarity=C
 type=Creature
 subtype=Cleric
 cost={2}{W}
 pt=1/4
+ability=Vigilance;\
+        Infect
 timing=main
 oracle=Vigilance\nInfect

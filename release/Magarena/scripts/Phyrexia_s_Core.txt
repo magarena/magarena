@@ -4,6 +4,6 @@ value=2.982
 rarity=U
 type=Land
 ability={T}: Add {C} to your mana pool.;\
-        {1},{T},Sacrifice an artifact: You gain 1 life.
+        {1}, {T}, Sacrifice an artifact: You gain 1 life.
 timing=land
 oracle={T}: Add {C} to your mana pool.\n{1}, {T}, Sacrifice an artifact: You gain 1 life.

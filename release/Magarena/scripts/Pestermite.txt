@@ -6,7 +6,8 @@ type=Creature
 subtype=Faerie,Rogue
 cost={2}{U}
 pt=2/1
-ability=flash;flying;\
+ability=Flash;\
+        Flying;\
         When SN enters the battlefield, you may tap or untap target permanent.
-timing=main
+timing=flash
 oracle=Flash\nFlying\nWhen Pestermite enters the battlefield, you may tap or untap target permanent.

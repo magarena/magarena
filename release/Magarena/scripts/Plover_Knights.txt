@@ -1,11 +1,11 @@
 name=Plover Knights
 image=http://magiccards.info/scans/en/ddg/20.jpg
 value=2.781
-ability=Flying;first strike
 rarity=C
 type=Creature
 subtype=Kithkin,Knight
 cost={3}{W}{W}
 pt=3/3
+ability=Flying, first strike
 timing=main
 oracle=Flying, first strike

@@ -6,6 +6,6 @@ type=Creature
 subtype=Goblin,Artificer
 cost={1}{R}
 pt=2/1
-ability=Sacrifice an artifact:SN gains haste until end of turn.
+ability=Sacrifice an artifact: SN gains haste until end of turn.
 timing=main
 oracle=Sacrifice an artifact: Oxidda Daredevil gains haste until end of turn.

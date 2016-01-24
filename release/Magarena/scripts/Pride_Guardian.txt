@@ -6,7 +6,7 @@ type=Creature
 subtype=Cat,Monk
 cost={W}
 pt=0/3
-ability=defender;\
+ability=Defender;\
         Whenever SN blocks, you gain 3 life.
 timing=main
 oracle=Defender\nWhenever Pride Guardian blocks, you gain 3 life.

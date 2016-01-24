@@ -6,6 +6,7 @@ type=Creature
 subtype=Dragon
 cost={3}{R}{R}{R}
 pt=4/4
-ability=Flying;haste;devour 2
+ability=Flying, haste;\
+        Devour 2
 timing=fmain
 oracle=Flying, haste\nDevour 2

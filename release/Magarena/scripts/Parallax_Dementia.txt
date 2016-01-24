@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{B}
-ability=Fading 1;\
+ability=Enchant creature;\
+        Fading 1;\
         Enchanted creature gets +3/+2.;\
         When SN leaves the battlefield, destroy enchanted creature. It can't be regenerated.
 timing=aura

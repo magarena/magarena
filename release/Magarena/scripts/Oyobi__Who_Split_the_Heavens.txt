@@ -6,6 +6,7 @@ type=Legendary,Creature
 subtype=Spirit
 cost={6}{W}
 pt=3/6
-ability=Flying;Whenever you cast a Spirit or Arcane spell, put a 3/3 white Spirit creature token with flying onto the battlefield.
+ability=Flying;\
+        Whenever you cast a Spirit or Arcane spell, put a 3/3 white Spirit creature token with flying onto the battlefield.
 timing=main
 oracle=Flying\nWhenever you cast a Spirit or Arcane spell, put a 3/3 white Spirit creature token with flying onto the battlefield.

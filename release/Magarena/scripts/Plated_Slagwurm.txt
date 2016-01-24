@@ -6,6 +6,6 @@ type=Creature
 subtype=Wurm
 cost={4}{G}{G}{G}
 pt=8/8
-ability=hexproof
+ability=Hexproof
 timing=main
 oracle=Hexproof

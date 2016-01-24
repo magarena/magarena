@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{G}
-ability=Enchanted creature has "{T}: Put a 1/1 green Elf Warrior creature token onto the battlefield."
+ability=Enchant creature;\
+        Enchanted creature has "{T}: Put a 1/1 green Elf Warrior creature token onto the battlefield."
 enchant=pump,pos creature
 timing=aura
 oracle=Enchant creature\nEnchanted creature has "{T}: Put a 1/1 green Elf Warrior creature token onto the battlefield."

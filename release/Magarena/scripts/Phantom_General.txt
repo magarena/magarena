@@ -6,6 +6,6 @@ type=Creature
 subtype=Spirit,Soldier
 cost={3}{W}
 pt=2/3
-ability=creature tokens you control get +1/+1
+ability=Creature tokens you control get +1/+1.
 timing=main
 oracle=Creature tokens you control get +1/+1.

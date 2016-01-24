@@ -4,6 +4,6 @@ value=3.672
 rarity=U
 type=Artifact
 cost={2}
-ability={2},{T},Sacrifice SN:Destroy target attacking creature without flying. It can't be regenerated.
+ability={2}, {T}, Sacrifice SN: Destroy target attacking creature without flying. It can't be regenerated.
 timing=artifact
 oracle={2}, {T}, Sacrifice Pit Trap: Destroy target attacking creature without flying. It can't be regenerated.

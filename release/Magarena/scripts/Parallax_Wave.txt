@@ -4,7 +4,7 @@ value=4.000
 rarity=R
 type=Enchantment
 cost={2}{W}{W}
-ability=fading 5;\
+ability=Fading 5;\
         Remove a fade counter from SN: Exile target creature.;\
         When SN leaves the battlefield, each player returns to the battlefield all cards he or she owns exiled with SN.
 timing=enchantment

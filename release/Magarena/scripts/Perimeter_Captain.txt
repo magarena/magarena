@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Soldier
 cost={W}
 pt=0/4
-ability=Defender.;\
+ability=Defender;\
         Whenever a creature you control with defender blocks, you may gain 2 life.
 timing=smain
 oracle=Defender\nWhenever a creature you control with defender blocks, you may gain 2 life.

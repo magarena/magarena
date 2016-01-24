@@ -6,6 +6,7 @@ type=Creature
 subtype=Human,Barbarian
 cost={3}{R}
 pt=2/2
-ability=first strike;{B}: SN gets +1/+1 until end of turn.
+ability=First strike;\
+        {B}: SN gets +1/+1 until end of turn.
 timing=main
 oracle=First strike\n{B}: Pardic Collaborator gets +1/+1 until end of turn.

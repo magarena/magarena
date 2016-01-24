@@ -6,6 +6,6 @@ type=Creature
 subtype=Carrier
 cost={1}{B}
 pt=1/1
-ability={T},Sacrifice SN:Target creature gets -1/-1 until end of turn.
+ability={T}, Sacrifice SN: Target creature gets -1/-1 until end of turn.
 timing=main
 oracle={T}, Sacrifice Phyrexian Denouncer: Target creature gets -1/-1 until end of turn.

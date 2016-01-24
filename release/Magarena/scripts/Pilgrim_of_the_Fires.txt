@@ -6,6 +6,6 @@ type=Artifact,Creature
 subtype=Golem
 cost={7}
 pt=6/4
-ability=First strike; trample
+ability=First strike, trample
 timing=main
 oracle=First strike, trample

@@ -6,6 +6,6 @@ type=Creature
 subtype=Goblin,Rogue
 cost={B}
 pt=1/1
-ability=fear
+ability=Fear
 timing=main
 oracle=Fear

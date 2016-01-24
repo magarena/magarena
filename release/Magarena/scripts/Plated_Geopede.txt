@@ -6,6 +6,7 @@ type=Creature
 subtype=Insect
 cost={1}{R}
 pt=1/1
-ability=first strike;Whenever a land enters the battlefield under your control, SN gets +2/+2 until end of turn.
+ability=First strike;\
+        Whenever a land enters the battlefield under your control, SN gets +2/+2 until end of turn.
 timing=main
 oracle=First strike\nLandfall — Whenever a land enters the battlefield under your control, Plated Geopede gets +2/+2 until end of turn.

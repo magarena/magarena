@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Nomad
 cost={2}{G}
 pt=1/1
-ability={1}{G},{T}:Target creature gets -2/-0 until end of turn.
+ability={1}{G}, {T}: Target creature gets -2/-0 until end of turn.
 timing=main
 oracle={1}{G}, {T}: Target creature gets -2/-0 until end of turn.

@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{U}
-ability=flash;\
+ability=Flash;\
+        Enchant creature;\
         Whenever enchanted creature deals damage to an opponent, you may draw a card.
 timing=flash
 enchant=unblockable,pos creature

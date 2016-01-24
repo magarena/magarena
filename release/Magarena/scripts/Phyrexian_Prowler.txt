@@ -6,7 +6,7 @@ type=Creature
 subtype=Zombie,Mercenary
 cost={3}{B}
 pt=3/3
-ability=fading 3;\
+ability=Fading 3;\
         Remove a fade counter from SN: SN gets +1/+1 until end of turn.
 timing=main
 oracle=Fading 3\nRemove a fade counter from Phyrexian Prowler: Phyrexian Prowler gets +1/+1 until end of turn.

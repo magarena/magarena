@@ -1,11 +1,11 @@
 name=Phyrexian Digester
 image=http://magiccards.info/scans/en/mbs/120.jpg
 value=2.115
-ability=infect
 rarity=C
 type=Artifact,Creature
 subtype=Construct
 cost={3}
 pt=2/1
+ability=Infect
 timing=main
 oracle=Infect

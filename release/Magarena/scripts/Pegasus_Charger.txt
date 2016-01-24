@@ -1,11 +1,12 @@
 name=Pegasus Charger
 image=http://magiccards.info/scans/en/9e/34.jpg
 value=3.314
-ability=Flying;first strike
 rarity=C
 type=Creature
 subtype=Pegasus
 cost={2}{W}
 pt=2/1
+ability=Flying;\
+        First strike
 timing=main
 oracle=Flying\nFirst strike

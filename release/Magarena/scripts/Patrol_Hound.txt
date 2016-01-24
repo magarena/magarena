@@ -6,6 +6,6 @@ type=Creature
 subtype=Hound
 cost={1}{W}
 pt=2/2
-ability=Discard a card:SN gains first strike until end of turn.
+ability=Discard a card: SN gains first strike until end of turn.
 timing=main
 oracle=Discard a card: Patrol Hound gains first strike until end of turn.

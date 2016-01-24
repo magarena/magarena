@@ -6,6 +6,6 @@ type=Creature
 subtype=Cat
 cost={G}
 pt=2/2
-ability=echo {G}
+ability=Echo {G}
 timing=main
 oracle=Echo {G}

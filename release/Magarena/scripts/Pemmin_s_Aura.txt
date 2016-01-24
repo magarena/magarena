@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{U}{U}
-ability={U}: Untap enchanted creature.;\
+ability=Enchant creature;\
+        {U}: Untap enchanted creature.;\
         {U}: Enchanted creature gains flying until end of turn.;\
         {U}: Enchanted creature gains shroud until end of turn.;\
         {1}: Enchanted creature gets +1/-1 until end of turn.;\

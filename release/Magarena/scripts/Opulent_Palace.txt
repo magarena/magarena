@@ -5,6 +5,6 @@ rarity=U
 type=Land
 mana=b2g2u2
 ability=SN enters the battlefield tapped.;\
-        {T}: Add {B} or {G} or {U} to your mana pool.
+        {T}: Add {B}, {G}, or {U} to your mana pool.
 timing=tapland
 oracle=Opulent Palace enters the battlefield tapped.\n{T}: Add {B}, {G}, or {U} to your mana pool.

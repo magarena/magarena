@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Barbarian
 cost={4}{R}
 pt=3/2
-ability=Discard a card at random:SN gets +1/+0 and gains first strike until end of turn.
+ability=Discard a card at random: SN gets +1/+0 and gains first strike until end of turn.
 timing=main
 oracle=Discard a card at random: Pardic Lancer gets +1/+0 and gains first strike until end of turn.

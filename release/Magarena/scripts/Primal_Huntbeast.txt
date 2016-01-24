@@ -6,6 +6,6 @@ type=Creature
 subtype=Beast
 cost={3}{G}
 pt=3/3
-ability=hexproof
+ability=Hexproof
 timing=main
 oracle=Hexproof

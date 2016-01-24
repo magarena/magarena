@@ -4,6 +4,6 @@ value=4.462
 rarity=R
 type=Enchantment
 cost={2}{U}{U}
-ability=Tap an untapped creature you control:Tap target artifact, creature, or land.
+ability=Tap an untapped creature you control: Tap target artifact, creature, or land.
 timing=enchantment
 oracle=Tap an untapped creature you control: Tap target artifact, creature, or land.
