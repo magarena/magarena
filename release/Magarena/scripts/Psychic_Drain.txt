@@ -4,6 +4,6 @@ value=3.470
 rarity=U
 type=Sorcery
 cost={X}{U}{B}
-effect=Target player puts the top X cards of his or her library into his or her graveyard.~You gain X life.
+effect=Target player puts the top X cards of his or her library into his or her graveyard~and you gain X life.
 timing=main
 oracle=Target player puts the top X cards of his or her library into his or her graveyard and you gain X life.

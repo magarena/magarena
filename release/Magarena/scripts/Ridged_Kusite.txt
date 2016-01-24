@@ -6,6 +6,6 @@ type=Creature
 subtype=Horror,Spellshaper
 cost={B}
 pt=1/1
-ability={1}{B},{T},Discard a card:Target creature gets +1/+0 and gains first strike until end of turn.
+ability={1}{B}, {T}, Discard a card: Target creature gets +1/+0 and gains first strike until end of turn.
 timing=main
 oracle={1}{B}, {T}, Discard a card: Target creature gets +1/+0 and gains first strike until end of turn.

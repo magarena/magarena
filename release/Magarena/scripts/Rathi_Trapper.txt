@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Rebel,Rogue
 cost={1}{B}
 pt=1/2
-ability={B},{T}:Tap target creature.
+ability={B}, {T}: Tap target creature.
 timing=main
 oracle={B}, {T}: Tap target creature.

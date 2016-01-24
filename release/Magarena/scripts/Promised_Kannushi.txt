@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Druid
 cost={G}
 pt=1/1
-ability=soulshift 7
+ability=Soulshift 7
 timing=main
 oracle=Soulshift 7

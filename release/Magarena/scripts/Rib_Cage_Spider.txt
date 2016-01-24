@@ -6,6 +6,6 @@ type=Creature
 subtype=Spider
 cost={2}{G}
 pt=1/4
-ability=reach
+ability=Reach
 timing=main
 oracle=Reach

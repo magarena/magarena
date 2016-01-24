@@ -5,8 +5,9 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{W}
-ability=Enchanted creature gets +0/+2.;\
-        When SN enters the battlefield, draw a card at the beginning of the next turn's upkeep.
-timing=enchantment
+ability=Enchant creature;\
+        When SN enters the battlefield, draw a card at the beginning of the next turn's upkeep.;\
+        Enchanted creature gets +0/+2.
+timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nWhen Ritual of Steel enters the battlefield, draw a card at the beginning of the next turn's upkeep.\nEnchanted creature gets +0/+2.

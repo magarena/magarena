@@ -6,7 +6,8 @@ type=Creature
 subtype=Rhino,Soldier
 cost={2}{W}{W}
 pt=3/3
-ability=first strike;other soldier creatures you control have first strike
+ability=First strike;\
+        Other Soldier creatures you control have first strike.
 static=player
 timing=main
 oracle=First strike\nOther Soldier creatures you control have first strike.

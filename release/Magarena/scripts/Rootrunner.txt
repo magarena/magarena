@@ -6,7 +6,7 @@ type=Creature
 subtype=Spirit
 cost={2}{G}{G}
 pt=3/3
-ability=soulshift 3;\
-        {G}{G}, Sacrifice SN: Put target land on top of its owner's library.
+ability={G}{G}, Sacrifice SN: Put target land on top of its owner's library.;\
+        Soulshift 3
 timing=main
 oracle={G}{G}, Sacrifice Rootrunner: Put target land on top of its owner's library.\nSoulshift 3

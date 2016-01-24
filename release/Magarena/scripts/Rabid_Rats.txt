@@ -6,6 +6,6 @@ type=Creature
 subtype=Rat
 cost={1}{B}
 pt=1/1
-ability={T}:Target blocking creature gets -1/-1 until end of turn.
+ability={T}: Target blocking creature gets -1/-1 until end of turn.
 timing=main
 oracle={T}: Target blocking creature gets -1/-1 until end of turn.

@@ -6,6 +6,6 @@ type=Creature
 subtype=Devil
 cost={B/R}
 pt=1/1
-ability=unleash
+ability=Unleash
 timing=main
 oracle=Unleash

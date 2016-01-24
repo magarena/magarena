@@ -1,11 +1,12 @@
 name=Riot Piker
 image=http://magiccards.info/scans/en/dgm/37.jpg
 value=2.882
-ability=SN attacks each turn if able.;first strike
 rarity=C
 type=Creature
 subtype=Goblin,Berserker
 cost={1}{R}
 pt=2/1
+ability=First strike;\
+        SN attacks each turn if able.
 timing=main
 oracle=First strike\nRiot Piker attacks each turn if able.

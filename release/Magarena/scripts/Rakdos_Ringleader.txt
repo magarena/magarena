@@ -4,10 +4,10 @@ value=1.351
 rarity=U
 type=Creature
 subtype=Skeleton,Warrior
-ability=first strike;\
-        Whenever SN deals combat damage to a player, that player discards a card at random.;\
-        {B}: Regenerate SN.
 cost={4}{B}{R}
 pt=3/1
+ability=First strike;\
+        Whenever SN deals combat damage to a player, that player discards a card at random.;\
+        {B}: Regenerate SN.
 timing=main
 oracle=First strike\nWhenever Rakdos Ringleader deals combat damage to a player, that player discards a card at random.\n{B}: Regenerate Rakdos Ringleader.

@@ -6,6 +6,6 @@ type=Creature
 subtype=Zombie,Lizard,Beast
 cost={4}{B}{B}
 pt=4/4
-ability=Morph—Discard a Zombie card
+ability=Morph—Discard a Zombie card.
 timing=main
 oracle=Morph—Discard a Zombie card.

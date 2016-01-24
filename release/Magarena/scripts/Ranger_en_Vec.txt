@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Soldier,Archer
 cost={1}{G}{W}
 pt=2/2
-ability=first strike;\
+ability=First strike;\
         {G}: Regenerate SN.
 timing=main
 oracle=First strike\n{G}: Regenerate Ranger en-Vec.

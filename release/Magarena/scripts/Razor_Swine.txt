@@ -1,11 +1,12 @@
 name=Razor Swine
 image=http://magiccards.info/scans/en/nph/92.jpg
 value=3.539
-ability=first strike;infect
 rarity=C
 type=Creature
 subtype=Boar
 cost={2}{R}
 pt=2/1
+ability=First strike;\
+        Infect
 timing=main
 oracle=First strike\nInfect

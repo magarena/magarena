@@ -4,6 +4,6 @@ value=3.625
 rarity=C
 type=Land
 ability={T}: Add {C} to your mana pool.;\
-        {T},Sacrifice SN:Target attacking creature without flying gets -1/-2 until end of turn.
+        {T}, Sacrifice SN: Target attacking creature without flying gets -1/-2 until end of turn.
 timing=land
 oracle={T}: Add {C} to your mana pool.\n{T}, Sacrifice Quicksand: Target attacking creature without flying gets -1/-2 until end of turn.

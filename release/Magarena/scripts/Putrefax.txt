@@ -6,9 +6,8 @@ type=Creature
 subtype=Horror
 cost={3}{G}{G}
 pt=5/3
-ability=Trample;\
-        haste;\
-        infect;\
+ability=Trample, haste;\
+        Infect;\
         At the beginning of the end step, sacrifice SN.
 timing=fmain
 oracle=Trample, haste\nInfect\nAt the beginning of the end step, sacrifice Putrefax.

@@ -1,11 +1,12 @@
 name=Raging Kavu
 image=http://magiccards.info/scans/en/in/262.jpg
 value=3.692
-ability=flash;haste
 rarity=R
 type=Creature
 subtype=Kavu
 cost={1}{R}{G}
 pt=3/1
-timing=fmain
+ability=Flash;\
+        Haste
+timing=flash
 oracle=Flash\nHaste

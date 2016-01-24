@@ -6,7 +6,7 @@ type=Artifact,Creature
 subtype=Golem
 cost={6}
 pt=3/4
-ability=Affinity for Plains.;\
+ability=Affinity for Plains;\
         Vigilance
 timing=main
 oracle=Affinity for Plains\nVigilance

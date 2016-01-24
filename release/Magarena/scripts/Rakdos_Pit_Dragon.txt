@@ -6,8 +6,8 @@ type=Creature
 subtype=Dragon
 cost={2}{R}{R}
 pt=3/3
-ability={R}{R}:SN gains flying until end of turn.;\
-        {R}:SN gets +1/+0 until end of turn.;\
+ability={R}{R}: SN gains flying until end of turn.;\
+        {R}: SN gets +1/+0 until end of turn.;\
         SN has double strike as long as you have no cards in hand.
 timing=main
 oracle={R}{R}: Rakdos Pit Dragon gains flying until end of turn.\n{R}: Rakdos Pit Dragon gets +1/+0 until end of turn.\nHellbent — Rakdos Pit Dragon has double strike as long as you have no cards in hand.

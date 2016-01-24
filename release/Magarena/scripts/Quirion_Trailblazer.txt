@@ -6,6 +6,6 @@ type=Creature
 subtype=Elf,Scout
 cost={3}{G}
 pt=1/2
-ability=When SN enters the battlefield, you may search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.
+ability=When SN enters the battlefield, you may search your library for a basic land card and put that card onto the battlefield tapped. If you do, shuffle your library.
 timing=main
 oracle=When Quirion Trailblazer enters the battlefield, you may search your library for a basic land card and put that card onto the battlefield tapped. If you do, shuffle your library.

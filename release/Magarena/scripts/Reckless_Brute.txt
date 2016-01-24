@@ -6,6 +6,7 @@ type=Creature
 subtype=Ogre,Warrior
 cost={2}{R}
 pt=3/1
-ability=haste;SN attacks each turn if able.
+ability=Haste;\
+        SN attacks each turn if able.
 timing=fmain
 oracle=Haste\nReckless Brute attacks each turn if able.

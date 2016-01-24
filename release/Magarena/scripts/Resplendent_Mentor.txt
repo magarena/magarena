@@ -6,6 +6,6 @@ type=Creature
 subtype=Kithkin,Cleric
 cost={4}{W}
 pt=2/2
-ability=white creatures you control have "{T}: You gain 1 life."
+ability=White creatures you control have "{T}: You gain 1 life."
 timing=main
 oracle=White creatures you control have "{T}: You gain 1 life."

@@ -1,11 +1,11 @@
 name=Ridgetop Raptor
 image=http://magiccards.info/scans/en/le/108.jpg
 value=2.516
-ability=double strike
 rarity=U
 type=Creature
 subtype=Lizard,Beast
 cost={3}{R}
 pt=2/1
+ability=Double strike
 timing=main
 oracle=Double strike

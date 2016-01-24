@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-ability=Whenever enchanted land becomes tapped, SN deals 2 damage to that land's controller.
+ability=Enchant land;\
+        Whenever enchanted land becomes tapped, SN deals 2 damage to that land's controller.
 timing=aura
 enchant=default,neg land
 oracle=Enchant land\nWhenever enchanted land becomes tapped, Psychic Venom deals 2 damage to that land's controller.

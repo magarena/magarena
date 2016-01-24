@@ -4,7 +4,7 @@ value=1.672
 rarity=U
 type=Artifact
 cost={3}
-ability=fading 2;\
+ability=Fading 2;\
         {T}: You gain 2 life.
-timing=main
+timing=artifact
 oracle=Fading 2\n{T}: You gain 2 life.

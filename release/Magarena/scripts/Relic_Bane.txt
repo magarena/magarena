@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{B}{B}
-ability=Enchanted artifact has "At the beginning of your upkeep, you lose 2 life."
+ability=Enchant artifact;\
+        Enchanted artifact has "At the beginning of your upkeep, you lose 2 life."
 timing=aura
 enchant=destroy,neg artifact
 oracle=Enchant artifact\nEnchanted artifact has "At the beginning of your upkeep, you lose 2 life."

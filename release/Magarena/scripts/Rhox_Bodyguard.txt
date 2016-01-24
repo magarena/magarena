@@ -6,7 +6,7 @@ type=Creature
 subtype=Rhino,Monk,Soldier
 cost={3}{G}{W}
 pt=2/3
-ability=exalted;\
+ability=Exalted;\
         When SN enters the battlefield, you gain 3 life.
 timing=main
 oracle=Exalted\nWhen Rhox Bodyguard enters the battlefield, you gain 3 life.

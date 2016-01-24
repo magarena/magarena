@@ -6,6 +6,7 @@ type=Creature
 subtype=Troll
 cost={2}{B/G}
 pt=2/2
-ability=Wither;persist
-timing=smain
+ability=Wither;\
+        Persist
+timing=main
 oracle=Wither\nPersist

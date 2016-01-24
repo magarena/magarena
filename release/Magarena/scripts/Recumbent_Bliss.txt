@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{W}
-ability=Enchanted creature can't attack or block.;\
+ability=Enchant creature;\
+        Enchanted creature can't attack or block.;\
         At the beginning of your upkeep, you may gain 1 life.
 timing=aura
 enchant=can't attack or block,neg creature

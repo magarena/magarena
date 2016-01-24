@@ -4,6 +4,6 @@ value=4.134
 rarity=R
 type=Land
 ability={T}: Add {C} to your mana pool.;\
-        {T},{1}{U}:Return target Wizard you control to its owner's hand.
+        {1}{U}, {T}: Return target Wizard you control to its owner's hand.
 timing=land
 oracle={T}: Add {C} to your mana pool.\n{1}{U}, {T}: Return target Wizard you control to its owner's hand.

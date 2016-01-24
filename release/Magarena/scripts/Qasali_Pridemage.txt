@@ -6,7 +6,7 @@ type=Creature
 subtype=Cat,Wizard
 cost={G}{W}
 pt=2/2
-ability=exalted;\
-        {1},Sacrifice SN: Destroy target artifact or enchantment.
+ability=Exalted;\
+        {1}, Sacrifice SN: Destroy target artifact or enchantment.
 timing=main
 oracle=Exalted\n{1}, Sacrifice Qasali Pridemage: Destroy target artifact or enchantment.

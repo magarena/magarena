@@ -6,6 +6,7 @@ type=Creature
 subtype=Elemental,Warrior
 cost={R}{R}
 pt=1/1
-ability=haste;{R}: SN gets +1/+0 until end of turn.
+ability=Haste;\
+        {R}: SN gets +1/+0 until end of turn.
 timing=fmain
 oracle=Haste\n{R}: Pyre Charger gets +1/+0 until end of turn.

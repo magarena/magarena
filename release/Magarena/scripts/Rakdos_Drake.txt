@@ -1,11 +1,12 @@
 name=Rakdos Drake
 image=http://magiccards.info/scans/en/dgm/28.jpg
 value=3.051
-ability=Flying;unleash
 rarity=C
 type=Creature
 subtype=Drake
 cost={2}{B}
 pt=1/2
+ability=Flying;\
+        Unleash
 timing=main
 oracle=Flying\nUnleash

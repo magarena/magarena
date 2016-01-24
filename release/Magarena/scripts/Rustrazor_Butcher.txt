@@ -6,6 +6,7 @@ type=Creature
 subtype=Goblin,Warrior
 cost={1}{R}
 pt=1/2
-ability=first strike;wither
+ability=First strike;\
+        Wither
 timing=main
 oracle=First strike\nWither

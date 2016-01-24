@@ -1,11 +1,11 @@
 name=Razortooth Rats
 image=http://magiccards.info/scans/en/9e/158.jpg
 value=2.862
-ability=fear
 rarity=C
 type=Creature
 subtype=Rat
 cost={2}{B}
 pt=2/1
+ability=Fear
 timing=main
 oracle=Fear

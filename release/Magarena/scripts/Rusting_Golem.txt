@@ -6,7 +6,7 @@ type=Artifact,Creature
 subtype=Golem
 cost={4}
 pt=*/*
-ability=fading 5;\
+ability=Fading 5;\
         SN's power and toughness are each equal to the number of fade counters on it.
 timing=main
 oracle=Fading 5\nRusting Golem's power and toughness are each equal to the number of fade counters on it.

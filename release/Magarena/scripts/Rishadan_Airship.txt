@@ -6,6 +6,7 @@ type=Creature
 subtype=Human,Pirate
 cost={2}{U}
 pt=3/1
-ability=Flying;SN can block only creatures with flying.
+ability=Flying;\
+        SN can block only creatures with flying.
 timing=main
 oracle=Flying\nRishadan Airship can block only creatures with flying.

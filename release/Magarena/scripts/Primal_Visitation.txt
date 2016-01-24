@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={3}{R}{G}
-ability=Enchanted creature gets +3/+3 and has haste.
+ability=Enchant creature;\
+        Enchanted creature gets +3/+3 and has haste.
+timing=aura
 enchant=pump,pos creature
-timing=enchantment
 oracle=Enchant creature\nEnchanted creature gets +3/+3 and has haste.

@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Cleric
 cost={2}{W}
 pt=1/2
-ability={1}:Prevent the next 1 damage that would be dealt to SN this turn.
+ability={1}: Prevent the next 1 damage that would be dealt to SN this turn.
 timing=main
 oracle={1}: Prevent the next 1 damage that would be dealt to Revered Elder this turn.

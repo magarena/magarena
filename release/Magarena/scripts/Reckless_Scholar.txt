@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Wizard
 cost={2}{U}
 pt=2/1
-ability={T}:Target player draws a card, then discards a card.
+ability={T}: Target player draws a card, then discards a card.
 timing=main
 oracle={T}: Target player draws a card, then discards a card.

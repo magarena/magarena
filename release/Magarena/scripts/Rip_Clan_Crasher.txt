@@ -1,11 +1,11 @@
 name=Rip-Clan Crasher
 image=http://magiccards.info/scans/en/ala/189.jpg
 value=2.981
-ability=haste
 rarity=C
 type=Creature
 subtype=Human,Warrior
 cost={R}{G}
 pt=2/2
+ability=Haste
 timing=fmain
 oracle=Haste

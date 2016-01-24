@@ -6,6 +6,6 @@ type=Creature
 subtype=Unicorn
 cost={1}{W}
 pt=2/2
-ability=Sacrifice SN:Destroy target enchantment.
+ability=Sacrifice SN: Destroy target enchantment.
 timing=main
 oracle=Sacrifice Ronom Unicorn: Destroy target enchantment.

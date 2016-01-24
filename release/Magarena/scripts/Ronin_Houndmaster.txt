@@ -6,6 +6,7 @@ type=Creature
 subtype=Human,Samurai
 cost={2}{R}
 pt=2/2
-ability=haste;bushido 1
+ability=Haste;\
+        Bushido 1
 timing=fmain
 oracle=Haste\nBushido 1

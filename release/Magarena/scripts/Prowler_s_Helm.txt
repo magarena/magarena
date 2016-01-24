@@ -5,7 +5,7 @@ rarity=U
 type=Artifact
 subtype=Equipment
 cost={2}
-ability=Equipped creature can't be blocked except by walls.;\
+ability=Equipped creature can't be blocked except by Walls.;\
         Equip {2}
-timing=artifact
+timing=equipment
 oracle=Equipped creature can't be blocked except by Walls.\nEquip {2}

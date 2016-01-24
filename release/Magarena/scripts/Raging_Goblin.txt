@@ -1,11 +1,11 @@
 name=Raging Goblin
 image=http://magiccards.info/scans/en/m10/153.jpg
 value=3.971
-ability=haste
 rarity=C
 type=Creature
 subtype=Goblin,Berserker
 cost={R}
 pt=1/1
+ability=Haste
 timing=fmain
 oracle=Haste

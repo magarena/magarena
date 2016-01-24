@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Hydra,Avatar
 cost={W}{W}{U}{U}{B}{B}{R}{R}{G}{G}
 pt=10/10
-ability=protection from everything;\
+ability=Protection from everything;\
         If SN would be put into a graveyard from anywhere, reveal SN and shuffle it into its owner's library instead.
 timing=main
 oracle=Protection from everything\nIf Progenitus would be put into a graveyard from anywhere, reveal Progenitus and shuffle it into its owner's library instead.

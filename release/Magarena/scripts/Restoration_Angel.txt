@@ -6,7 +6,8 @@ type=Creature
 subtype=Angel
 cost={3}{W}
 pt=3/4
-ability=flash;flying;\
+ability=Flash;\
+        Flying;\
         When SN enters the battlefield, you may exile target non-Angel creature you control, then return that card to the battlefield under your control.
 timing=flash
 oracle=Flash\nFlying\nWhen Restoration Angel enters the battlefield, you may exile target non-Angel creature you control, then return that card to the battlefield under your control.

@@ -1,10 +1,10 @@
 name=Rampaging Werewolf
 image=http://magiccards.info/scans/en/isd/165b.jpg
 value=2.581
-color=r
 rarity=C
 type=Creature
 subtype=Werewolf
+color=r
 pt=6/4
 ability=At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
 transform=Tormented Pariah
