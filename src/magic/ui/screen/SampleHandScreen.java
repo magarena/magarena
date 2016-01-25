@@ -16,12 +16,12 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
 import magic.model.MagicDeck;
 import magic.model.MagicRandom;
-import magic.ui.CardImagesProvider;
 import magic.ui.MagicImages;
 import magic.translate.UiString;
 import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
 import magic.ui.canvas.cards.CardsCanvas;
 import magic.ui.cardBuilder.renderers.CardBuilder;
+import magic.ui.prefs.ImageSizePresets;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBarButton;
@@ -43,7 +43,7 @@ public class SampleHandScreen
     private static final String _S3 = "Refresh";
     private static final String _S4 = "Deal a new sample hand.";
 
-    private final static Dimension cardSize = CardImagesProvider.HIGH_QUALITY_IMAGE_SIZE;
+    private final static Dimension cardSize = ImageSizePresets.getDefaultSize();
 
     private CardsCanvas content;
     private final MagicDeck deck;

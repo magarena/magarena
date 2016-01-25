@@ -12,8 +12,8 @@ import javax.swing.JPanel;
 import java.awt.Dimension;
 import java.util.Collections;
 import java.util.List;
-import magic.ui.CardImagesProvider;
 import magic.translate.UiString;
+import magic.ui.prefs.ImageSizePresets;
 
 @SuppressWarnings("serial")
 public class CardZoneScreen
@@ -23,7 +23,7 @@ public class CardZoneScreen
     // translatable strings
     private static final String _S1 = "Close";
 
-    private final static Dimension cardSize = CardImagesProvider.HIGH_QUALITY_IMAGE_SIZE;
+    private final static Dimension cardSize = ImageSizePresets.getDefaultSize();
 
     private final CardsCanvas content;
     private final String screenCaption;

@@ -16,13 +16,13 @@ import magic.data.MagicIcon;
 import magic.model.MagicCardList;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
-import magic.ui.CardImagesProvider;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
 import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
 import magic.ui.canvas.cards.CardsCanvas;
 import magic.ui.duel.choice.MulliganChoicePanel;
+import magic.ui.prefs.ImageSizePresets;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.interfaces.IWikiPage;
@@ -44,7 +44,7 @@ public class MulliganScreen
     private static final String _S7 = "first.";
     private static final String _S8 = "second.";
 
-    private final static Dimension cardSize = CardImagesProvider.HIGH_QUALITY_IMAGE_SIZE;
+    private final static Dimension cardSize = ImageSizePresets.getDefaultSize();
 
     private volatile static boolean isActive = false;
 

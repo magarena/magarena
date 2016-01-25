@@ -27,12 +27,12 @@ import java.util.List;
 import java.util.Set;
 import javax.swing.SwingWorker;
 import magic.data.MagicIcon;
-import magic.ui.CardImagesProvider;
 import magic.translate.UiString;
 import magic.translate.StringContext;
 import magic.ui.canvas.cards.ICardsCanvasListener;
 import magic.ui.cardBuilder.renderers.CardBuilder;
 import magic.ui.deck.editor.DeckEditorSideBarPanel;
+import magic.ui.prefs.ImageSizePresets;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.throbber.AbstractThrobber;
 import magic.ui.widget.throbber.ImageThrobber;
@@ -73,7 +73,7 @@ public class DeckTiledCardsScreen
         }
     }
 
-    private final static Dimension cardSize = CardImagesProvider.HIGH_QUALITY_IMAGE_SIZE;
+    private final static Dimension cardSize = ImageSizePresets.getDefaultSize();
 
     private ContentPanel content;
     private final MagicDeck deck;
