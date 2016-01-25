@@ -27,6 +27,7 @@ import magic.data.MagicIcon;
 import magic.model.MagicType;
 import magic.ui.MagicImages;
 import magic.ui.duel.viewer.info.PermanentViewerInfo;
+import magic.ui.prefs.ImageSizePresets;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.utility.GraphicsUtils;
@@ -38,10 +39,13 @@ import magic.ui.widget.FontsAndBorders;
 public class ImagePermanentViewer extends JPanel {
 
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
-    private static final int LOGICAL_X_MARGIN=50;
-    private static final int LOGICAL_Y_MARGIN=70;
+
     private static final Color MOUSE_OVER_COLOR = MagicStyle.getRolloverColor();
     private static final Color MOUSE_OVER_TCOLOR = MagicStyle.getTranslucentColor(MOUSE_OVER_COLOR, 30);
+
+    private static final Dimension LOGICAL_IMAGE_SIZE = ImageSizePresets.SIZE_312x445.getSize();
+    private static final int LOGICAL_X_MARGIN = 50;
+    private static final int LOGICAL_Y_MARGIN = 70;
 
     private final ImagePermanentsViewer viewer;
     public final PermanentViewerInfo permanentInfo;
@@ -179,19 +183,18 @@ public class ImagePermanentViewer extends JPanel {
         int width=0;
         int height=0;
         int x=-LOGICAL_X_MARGIN;
-        final Dimension imageSize = GraphicsUtils.getMaxCardImageSize();
         for (final PermanentViewerInfo linkedInfo : linkedInfos) {
             x+=LOGICAL_X_MARGIN;
             final int y=linkedInfo.lowered?LOGICAL_Y_MARGIN:0;
             final Rectangle rect;
             if (linkedInfo.tapped) {
-                width = Math.max(width, x + imageSize.height);
-                height = Math.max(height, y + imageSize.width);
-                rect = new Rectangle(x, y, imageSize.height, imageSize.width);
+                width = Math.max(width, x + LOGICAL_IMAGE_SIZE.height);
+                height = Math.max(height, y + LOGICAL_IMAGE_SIZE.width);
+                rect = new Rectangle(x, y, LOGICAL_IMAGE_SIZE.height, LOGICAL_IMAGE_SIZE.width);
             } else {
-                width = Math.max(width, x + imageSize.width);
-                height = Math.max(height, y + imageSize.height);
-                rect = new Rectangle(x, y, imageSize.width, imageSize.height);
+                width = Math.max(width, x + LOGICAL_IMAGE_SIZE.width);
+                height = Math.max(height, y + LOGICAL_IMAGE_SIZE.height);
+                rect = new Rectangle(x, y, LOGICAL_IMAGE_SIZE.width, LOGICAL_IMAGE_SIZE.height);
             }
             aLinkedLogicalRectangles.add(rect);
         }
