@@ -43,7 +43,7 @@ public class ImagePermanentViewer extends JPanel {
     private static final Color MOUSE_OVER_COLOR = MagicStyle.getRolloverColor();
     private static final Color MOUSE_OVER_TCOLOR = MagicStyle.getTranslucentColor(MOUSE_OVER_COLOR, 30);
 
-    private static final Dimension LOGICAL_IMAGE_SIZE = ImageSizePresets.SIZE_312x445.getSize();
+    private static final Dimension LOGICAL_IMAGE_SIZE = ImageSizePresets.getDefaultSize();
     private static final int LOGICAL_X_MARGIN = 50;
     private static final int LOGICAL_Y_MARGIN = 70;
 
