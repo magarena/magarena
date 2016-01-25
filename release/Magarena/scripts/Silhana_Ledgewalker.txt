@@ -6,7 +6,7 @@ type=Creature
 subtype=Elf,Rogue
 cost={1}{G}
 pt=1/1
-ability=hexproof;\
+ability=Hexproof;\
         SN can't be blocked except by creatures with flying.
-timing=fmain
+timing=main
 oracle=Hexproof\nSilhana Ledgewalker can't be blocked except by creatures with flying.

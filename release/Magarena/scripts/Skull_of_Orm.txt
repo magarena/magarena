@@ -4,6 +4,6 @@ value=2.513
 rarity=R
 type=Artifact
 cost={3}
-ability={5},{T}:Return target enchantment card from your graveyard to your hand.
+ability={5}, {T}: Return target enchantment card from your graveyard to your hand.
 timing=artifact
 oracle={5}, {T}: Return target enchantment card from your graveyard to your hand.

@@ -6,6 +6,6 @@ type=Creature
 subtype=Scorpion
 cost={G}
 pt=1/1
-ability=deathtouch
+ability=Deathtouch
 timing=main
 oracle=Deathtouch

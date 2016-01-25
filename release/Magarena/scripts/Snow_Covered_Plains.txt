@@ -6,4 +6,4 @@ type=Basic,Snow,Land
 subtype=Plains
 mana=w4
 timing=land
-oracle=W
+oracle=NONE

@@ -6,7 +6,7 @@ type=Creature
 subtype=Centaur,Druid,Scout,Archer
 cost={1}{G}
 pt=2/1
-ability=reach;\
+ability=Reach;\
         SN gets +2/+2 as long as seven or more cards are in your graveyard.
 timing=main
 oracle=Reach\nThreshold — Seton's Scout gets +2/+2 as long as seven or more cards are in your graveyard.

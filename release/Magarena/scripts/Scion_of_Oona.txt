@@ -6,9 +6,10 @@ type=Creature
 subtype=Faerie,Soldier
 cost={2}{U}
 pt=1/1
-ability=flash;flying;\
-        other faerie creatures you control get +1/+1;\
-        other faeries you control have shroud
+ability=Flash;\
+        Flying;\
+        Other Faerie creatures you control get +1/+1.;\
+        Other Faeries you control have shroud.
 static=player
 timing=flash
 oracle=Flash\nFlying\nOther Faerie creatures you control get +1/+1.\nOther Faeries you control have shroud.

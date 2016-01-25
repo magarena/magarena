@@ -7,6 +7,6 @@ subtype=Spirit
 cost={2}{R}
 pt=2/1
 ability=Haste;\
-        Discard SN: Target creature gains haste until end of turn.
-timing=main
+        {R}, Discard SN: Target creature gains haste until end of turn.
+timing=fmain
 oracle=Haste\nChannel — {R}, Discard Shinen of Fury's Fire: Target creature gains haste until end of turn.

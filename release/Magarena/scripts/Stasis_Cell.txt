@@ -5,8 +5,9 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={4}{U}
-ability=Enchanted creature doesn't untap during its controller's untap step.;\
+ability=Enchant creature;\
+        Enchanted creature doesn't untap during its controller's untap step.;\
         {3}{U}: Attach SN to target creature.
-timing=enchantment
+timing=aura
 enchant=can't attack or block,neg creature
 oracle=Enchant creature\nEnchanted creature doesn't untap during its controller's untap step.\n{3}{U}: Attach Stasis Cell to target creature.

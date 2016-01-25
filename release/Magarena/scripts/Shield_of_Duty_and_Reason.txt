@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={W}
-ability=Enchanted creature has protection from green and from blue.
+ability=Enchant creature;\
+        Enchanted creature has protection from green and from blue.
 timing=aura
 enchant=unblockable,pos creature
 oracle=Enchant creature\nEnchanted creature has protection from green and from blue.

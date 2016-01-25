@@ -5,8 +5,8 @@ rarity=C
 type=Artifact,Creature
 subtype=Cat
 cost={4}{R/P}
+pt=4/2
 ability=Haste;\
         alt cost {4}, Pay 2 life named Pay 2 life
-pt=4/2
 timing=fmain
 oracle=Haste

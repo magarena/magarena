@@ -6,7 +6,7 @@ type=Creature
 subtype=Phoenix
 cost={4}{R}{R}
 pt=3/4
-ability=When SN dies, return SN from the graveyard to its owner's hand.;\
-        flying
+ability=Flying;\
+        When SN dies, return SN from the graveyard to its owner's hand.
 timing=main
 oracle=Flying\nWhen Shivan Phoenix dies, return Shivan Phoenix to its owner's hand.

@@ -7,6 +7,6 @@ subtype=Beast
 cost={4}{G}
 pt=3/4
 ability=SN can't be countered.;\
-        protection from blue
+        Protection from blue
 timing=main
 oracle=Scragnoth can't be countered.\nProtection from blue

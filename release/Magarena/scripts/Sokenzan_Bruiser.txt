@@ -1,11 +1,11 @@
 name=Sokenzan Bruiser
 image=http://magiccards.info/scans/en/chk/188.jpg
 value=1.618
-ability=Mountainwalk
 rarity=C
 type=Creature
 subtype=Ogre,Warrior
 cost={4}{R}
 pt=3/3
+ability=Mountainwalk
 timing=main
 oracle=Mountainwalk

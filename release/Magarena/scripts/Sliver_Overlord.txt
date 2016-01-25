@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Sliver,Mutant
 cost={W}{U}{B}{R}{G}
 pt=7/7
-ability={3}: Search your library for a Sliver card, reveal it, and put it into your hand. Then shuffle your library.;\
+ability={3}: Search your library for a Sliver card, reveal that card, and put it into your hand. Then shuffle your library.;\
         {3}: Gain control of target Sliver.
 timing=main
 oracle={3}: Search your library for a Sliver card, reveal that card, and put it into your hand. Then shuffle your library.\n{3}: Gain control of target Sliver.

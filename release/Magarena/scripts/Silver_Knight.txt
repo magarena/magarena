@@ -1,11 +1,11 @@
 name=Silver Knight
 image=http://magiccards.info/scans/en/ddg/8.jpg
 value=4.288
-ability=first strike;protection from red
 rarity=U
 type=Creature
 subtype=Human,Knight
 cost={W}{W}
 pt=2/2
+ability=First strike, protection from red
 timing=main
 oracle=First strike, protection from red

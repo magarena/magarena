@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{U}{U}
-ability=You control enchanted artifact.
-enchant=gain control,neg artifact
+ability=Enchant artifact;\
+        You control enchanted artifact.
 timing=aura
+enchant=gain control,neg artifact
 oracle=Enchant artifact\nYou control enchanted artifact.

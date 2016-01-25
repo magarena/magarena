@@ -6,6 +6,6 @@ type=Creature
 subtype=Spirit,Knight
 cost={W}{W}
 pt=2/2
-ability=intimidate
+ability=Intimidate
 timing=main
 oracle=Intimidate

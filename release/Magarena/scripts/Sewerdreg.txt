@@ -7,6 +7,6 @@ subtype=Spirit
 cost={3}{B}{B}
 pt=3/3
 ability=Swampwalk;\
-        Sacrifice SN:Exile target card from a graveyard.
+        Sacrifice SN: Exile target card from a graveyard.
 timing=main
 oracle=Swampwalk\nSacrifice Sewerdreg: Exile target card from a graveyard.

@@ -6,6 +6,6 @@ type=Creature
 subtype=Horror
 cost={1}{B}
 pt=1/1
-ability=fear
+ability=Fear
 timing=main
 oracle=Fear

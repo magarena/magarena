@@ -1,11 +1,11 @@
 name=Scourge Servant
 image=http://magiccards.info/scans/en/mbs/54.jpg
 value=2.263
-ability=infect
 rarity=C
 type=Creature
 subtype=Zombie
 cost={4}{B}
 pt=3/3
+ability=Infect
 timing=main
 oracle=Infect

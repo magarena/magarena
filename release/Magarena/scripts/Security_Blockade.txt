@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{W}
-ability=When SN enters the battlefield, put a 2/2 white Knight creature token with vigilance onto the battlefield.;\
+ability=Enchant land;\
+        When SN enters the battlefield, put a 2/2 white Knight creature token with vigilance onto the battlefield.;\
         Enchanted land has "{T}: Prevent the next 1 damage that would be dealt to you this turn."
 enchant=pump,pos land
 timing=aura

@@ -4,6 +4,6 @@ value=4.408
 rarity=C
 type=Enchantment
 cost={1}{G}
-ability=Sacrifice SN:Destroy target artifact or enchantment.
+ability=Sacrifice SN: Destroy target artifact or enchantment.
 timing=enchantment
 oracle=Sacrifice Seal of Primordium: Destroy target artifact or enchantment.

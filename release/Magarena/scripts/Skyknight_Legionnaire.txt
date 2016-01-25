@@ -1,11 +1,11 @@
 name=Skyknight Legionnaire
 image=http://magiccards.info/scans/en/gtc/197.jpg
 value=3.821
-ability=Flying;haste
 rarity=C
 type=Creature
 subtype=Human,Knight
 cost={1}{R}{W}
 pt=2/2
+ability=Flying, haste
 timing=fmain
 oracle=Flying, haste

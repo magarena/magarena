@@ -6,6 +6,7 @@ type=Creature
 subtype=Elemental
 cost={4}{B}{B}
 pt=3/3
-ability=Flying;creatures with flying your opponents control get -1/-1
+ability=Flying;\
+        Creatures with flying your opponents control get -1/-1.
 timing=main
 oracle=Flying\nCreatures with flying your opponents control get -1/-1.

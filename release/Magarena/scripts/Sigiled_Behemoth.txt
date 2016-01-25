@@ -1,11 +1,11 @@
 name=Sigiled Behemoth
 image=http://magiccards.info/scans/en/arb/79.jpg
 value=2.225
-ability=exalted
 rarity=C
 type=Creature
 subtype=Beast
 cost={4}{G}{W}
 pt=5/4
+ability=Exalted
 timing=main
 oracle=Exalted

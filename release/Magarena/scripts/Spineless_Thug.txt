@@ -1,11 +1,11 @@
 name=Spineless Thug
 image=http://magiccards.info/scans/en/10e/180.jpg
 value=1.964
-ability=SN can't block.
 rarity=C
 type=Creature
 subtype=Zombie,Mercenary
 cost={1}{B}
 pt=2/2
+ability=SN can't block.
 timing=fmain
 oracle=Spineless Thug can't block.

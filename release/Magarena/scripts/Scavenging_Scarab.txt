@@ -1,11 +1,11 @@
 name=Scavenging Scarab
 image=http://magiccards.info/scans/en/ds/51.jpg
 value=1.035
-ability=SN can't block.
 rarity=C
 type=Creature
 subtype=Insect
 cost={3}{B}
 pt=3/3
+ability=SN can't block.
 timing=fmain
 oracle=Scavenging Scarab can't block.

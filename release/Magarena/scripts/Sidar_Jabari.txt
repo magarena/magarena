@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Human,Knight
 cost={3}{W}
 pt=2/2
-ability=flanking;\
+ability=Flanking;\
         Whenever SN attacks, tap target creature defending player controls.
 timing=main
 oracle=Flanking\nWhenever Sidar Jabari attacks, tap target creature defending player controls.

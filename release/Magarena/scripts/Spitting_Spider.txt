@@ -6,7 +6,7 @@ type=Creature
 subtype=Spider
 cost={3}{G}{G}
 pt=3/5
-ability=reach;\
+ability=Reach;\
         Sacrifice a land: SN deals 1 damage to each creature with flying.
 timing=main
 oracle=Reach\nSacrifice a land: Spitting Spider deals 1 damage to each creature with flying.

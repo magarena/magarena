@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Minion
 cost={1}{B}{R}
 pt=2/2
-ability={B}{R},{T}:SN deals 2 damage to target white creature.
+ability={B}{R}, {T}: SN deals 2 damage to target white creature.
 timing=main
 oracle={B}{R}, {T}: Shauku's Minion deals 2 damage to target white creature.

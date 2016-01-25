@@ -6,6 +6,6 @@ type=Creature
 subtype=Elemental
 cost={4}{G}
 pt=4/4
-ability=When SN enters the battlefield, you may search your library for a Forest card and put it onto the battlefield. Then shuffle your library.
+ability=When SN enters the battlefield, you may search your library for a Forest card and put that card onto the battlefield. If you do, shuffle your library.
 timing=main
 oracle=When Silverglade Elemental enters the battlefield, you may search your library for a Forest card and put that card onto the battlefield. If you do, shuffle your library.

@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-ability=Enchanted creature gets +2/+2 and has flying.
+ability=Enchant creature;\
+        Enchanted creature gets +2/+2 and has flying.
 timing=aura
 enchant=flying,pos creature
 oracle=Enchant creature\nEnchanted creature gets +2/+2 and has flying.

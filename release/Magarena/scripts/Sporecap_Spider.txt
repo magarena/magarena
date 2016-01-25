@@ -1,11 +1,11 @@
 name=Sporecap Spider
 image=http://magiccards.info/scans/en/cns/179.jpg
 value=3.667
-ability=reach
 rarity=C
 type=Creature
 subtype=Spider
 cost={2}{G}
 pt=1/5
+ability=Reach
 timing=main
 oracle=Reach

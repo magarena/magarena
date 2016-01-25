@@ -4,7 +4,7 @@ value=3.733
 rarity=U
 type=Land
 mana=b2r2g2
-ability={T}: Add {B} or {R} or {G} to your mana pool.;\
-        SN enters the battlefield tapped.
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {B}, {R}, or {G} to your mana pool.
 timing=tapland
 oracle=Savage Lands enters the battlefield tapped.\n{T}: Add {B}, {R}, or {G} to your mana pool.

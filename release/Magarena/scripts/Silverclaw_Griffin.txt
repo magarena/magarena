@@ -6,6 +6,6 @@ type=Creature
 subtype=Griffin
 cost={3}{W}{W}
 pt=3/2
-ability=Flying;first strike
+ability=Flying, first strike
 timing=main
 oracle=Flying, first strike

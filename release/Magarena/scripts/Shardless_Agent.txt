@@ -6,6 +6,6 @@ type=Artifact,Creature
 subtype=Human,Rogue
 cost={1}{G}{U}
 pt=2/2
-ability=cascade
+ability=Cascade
 timing=main
 oracle=Cascade

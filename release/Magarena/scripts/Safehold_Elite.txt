@@ -6,6 +6,6 @@ type=Creature
 subtype=Elf,Scout
 cost={1}{G/W}
 pt=2/2
-ability=persist
+ability=Persist
 timing=main
 oracle=Persist

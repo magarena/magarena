@@ -5,7 +5,7 @@ rarity=C
 type=Artifact
 cost={3}
 ability=Flash;\
-        Affinity for artifacts.;\
+        Affinity for artifacts;\
         {T}: Target creature gets +0/+1 until end of turn.
 timing=artifact
 oracle=Flash\nAffinity for artifacts\n{T}: Target creature gets +0/+1 until end of turn.

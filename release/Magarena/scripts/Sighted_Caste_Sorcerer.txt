@@ -6,6 +6,7 @@ type=Creature
 subtype=Human,Wizard
 cost={1}{W}
 pt=1/1
-ability=exalted;{U}: SN gains shroud until end of turn.
+ability=Exalted;\
+        {U}: SN gains shroud until end of turn.
 timing=main
 oracle=Exalted\n{U}: Sighted-Caste Sorcerer gains shroud until end of turn.

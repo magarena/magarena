@@ -7,6 +7,6 @@ subtype=Fish
 cost={3}{U}{U}
 pt=3/3
 ability=Flying;\
-        When SN enters the battlefield, draw a card, then discards a card.
+        When SN enters the battlefield, draw a card, then discard a card.
 timing=main
 oracle=Flying\nWhen Sky-Eel School enters the battlefield, draw a card, then discard a card.

@@ -6,6 +6,6 @@ type=Creature
 subtype=Horror
 cost={3}{B}{R}
 pt=5/3
-ability=unleash
+ability=Unleash
 timing=main
 oracle=Unleash

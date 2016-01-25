@@ -6,6 +6,6 @@ type=Creature
 subtype=Soltari,Soldier
 cost={W}
 pt=1/1
-ability=shadow
+ability=Shadow
 timing=main
 oracle=Shadow

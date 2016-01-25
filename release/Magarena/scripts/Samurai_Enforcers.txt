@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Samurai
 cost={4}{W}{W}
 pt=4/4
-ability=bushido 2
+ability=Bushido 2
 timing=main
 oracle=Bushido 2

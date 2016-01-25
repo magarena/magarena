@@ -6,6 +6,7 @@ type=Creature
 subtype=Fish,Crab
 cost={G}{U}
 pt=2/1
-ability=flash;evolve
+ability=Flash;\
+        Evolve
 timing=flash
 oracle=Flash\nEvolve

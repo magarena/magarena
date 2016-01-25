@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={B}
-ability=Whenever a creature dies, put a +1/+1 counter on enchanted creature.
+ability=Enchant creature;\
+        Whenever a creature dies, put a +1/+1 counter on enchanted creature.
+timing=aura
 enchant=pump,pos creature
-timing=enchantment
 oracle=Enchant creature\nWhenever a creature dies, put a +1/+1 counter on enchanted creature.

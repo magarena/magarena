@@ -5,8 +5,8 @@ rarity=C
 type=Artifact,Creature
 subtype=Thopter
 cost={2}{U/P}
+pt=2/1
 ability=Flying;\
         alt cost {2}, Pay 2 life named Pay 2 life
-pt=2/1
 timing=main
 oracle=Flying

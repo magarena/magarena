@@ -6,6 +6,7 @@ type=Creature
 subtype=Spider
 cost={3}{G}{G}
 pt=4/4
-ability=Vigilance;reach
+ability=Vigilance;\
+        Reach
 timing=main
 oracle=Vigilance\nReach

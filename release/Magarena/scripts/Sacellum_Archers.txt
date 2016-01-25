@@ -6,6 +6,6 @@ type=Creature
 subtype=Elf,Archer
 cost={2}{G}
 pt=2/3
-ability={R}{W},{T}:SN deals 2 damage to target attacking or blocking creature.
+ability={R}{W}, {T}: SN deals 2 damage to target attacking or blocking creature.
 timing=main
 oracle={R}{W}, {T}: Sacellum Archers deals 2 damage to target attacking or blocking creature.

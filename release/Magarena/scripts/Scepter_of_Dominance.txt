@@ -4,6 +4,6 @@ value=3.394
 rarity=R
 type=Artifact
 cost={1}{W}{W}
-ability={W},{T}: Tap target permanent.
+ability={W}, {T}: Tap target permanent.
 timing=artifact
 oracle={W}, {T}: Tap target permanent.

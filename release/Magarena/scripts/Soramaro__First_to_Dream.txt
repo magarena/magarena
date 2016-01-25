@@ -8,6 +8,6 @@ cost={4}{U}{U}
 pt=*/*
 ability=Flying;\
         SN's power and toughness are each equal to the number of cards in your hand.;\
-        {4},Return a land you control to its owner's hand: Draw a card.
+        {4}, Return a land you control to its owner's hand: Draw a card.
 timing=main
 oracle=Flying\nSoramaro, First to Dream's power and toughness are each equal to the number of cards in your hand.\n{4}, Return a land you control to its owner's hand: Draw a card.

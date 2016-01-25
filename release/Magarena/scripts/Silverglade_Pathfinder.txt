@@ -6,6 +6,6 @@ type=Creature
 subtype=Dryad,Spellshaper
 cost={1}{G}
 pt=1/1
-ability={1}{G}, {T}, Discard a card: Search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.
+ability={1}{G}, {T}, Discard a card: Search your library for a basic land card and put that card onto the battlefield tapped. Then shuffle your library.
 timing=main
 oracle={1}{G}, {T}, Discard a card: Search your library for a basic land card and put that card onto the battlefield tapped. Then shuffle your library.

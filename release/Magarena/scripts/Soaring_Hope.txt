@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={4}{W}
-ability=When SN enters the battlefield, you gain 3 life.;\
+ability=Enchant creature;\
+        When SN enters the battlefield, you gain 3 life.;\
         Enchanted creature has flying.;\
         {W}: Put SN on top of its owner's library.
 enchant=pump,pos creature

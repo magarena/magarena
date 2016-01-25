@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{G}{G}
-ability=Enchanted land has "{T}: Put a 1/1 green Squirrel creature token onto the battlefield."
-enchant=pump,pos land
+ability=Enchant land;\
+        Enchanted land has "{T}: Put a 1/1 green Squirrel creature token onto the battlefield."
 timing=aura
+enchant=pump,pos land
 oracle=Enchant land\nEnchanted land has "{T}: Put a 1/1 green Squirrel creature token onto the battlefield."

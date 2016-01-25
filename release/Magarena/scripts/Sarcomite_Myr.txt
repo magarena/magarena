@@ -7,6 +7,6 @@ subtype=Myr
 cost={2}{U}
 pt=2/1
 ability={2}: SN gains flying until end of turn.;\
-        {2},Sacrifice SN: Draw a card.
-timing=artifact
+        {2}, Sacrifice SN: Draw a card.
+timing=main
 oracle={2}: Sarcomite Myr gains flying until end of turn.\n{2}, Sacrifice Sarcomite Myr: Draw a card.

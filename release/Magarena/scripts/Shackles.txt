@@ -6,7 +6,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{W}
-ability=Enchanted creature doesn't untap during its controller's untap step.;\
+ability=Enchant creature;\
+        Enchanted creature doesn't untap during its controller's untap step.;\
         {W}: Return SN to its owner's hand.
 timing=aura
 enchant=tap,neg creature

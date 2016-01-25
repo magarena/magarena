@@ -6,7 +6,8 @@ type=Legendary,Creature
 subtype=Dragon,Skeleton
 cost={3}{B}{B}
 pt=4/4
-ability=Flying;infect;\
+ability=Flying;\
+        Infect;\
         {B}: SN gains haste until end of turn.;\
         {B}{B}: Regenerate SN.
 timing=fmain

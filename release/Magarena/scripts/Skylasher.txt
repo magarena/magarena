@@ -6,8 +6,8 @@ type=Creature
 subtype=Insect
 cost={1}{G}
 pt=2/2
-ability=flash;\
+ability=Flash;\
         SN can't be countered.;\
-        reach;protection from blue
+        Reach, protection from blue
 timing=flash
 oracle=Flash\nSkylasher can't be countered.\nReach, protection from blue

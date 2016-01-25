@@ -6,6 +6,7 @@ type=Creature
 subtype=Zombie,Soldier
 cost={3}{B}
 pt=2/2
-ability=SN can't block.;undying
+ability=SN can't block.;\
+        Undying
 timing=main
 oracle=Sightless Ghoul can't block.\nUndying

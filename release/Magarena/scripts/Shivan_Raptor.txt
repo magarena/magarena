@@ -6,6 +6,7 @@ type=Creature
 subtype=Lizard
 cost={2}{R}
 pt=3/1
-ability=first strike;haste;echo {2}{R}
+ability=First strike, haste;\
+        Echo {2}{R}
 timing=fmain
 oracle=First strike, haste\nEcho {2}{R}

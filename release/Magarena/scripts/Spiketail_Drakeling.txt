@@ -6,6 +6,7 @@ type=Creature
 subtype=Drake
 cost={1}{U}{U}
 pt=2/2
-ability=Flying;Sacrifice SN:Counter target spell unless its controller pays {2}.
+ability=Flying;\
+        Sacrifice SN: Counter target spell unless its controller pays {2}.
 timing=main
 oracle=Flying\nSacrifice Spiketail Drakeling: Counter target spell unless its controller pays {2}.

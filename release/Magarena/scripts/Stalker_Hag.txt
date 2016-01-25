@@ -6,6 +6,6 @@ type=Creature
 subtype=Hag
 cost={B/G}{B/G}{B/G}
 pt=3/2
-ability=Swampwalk;forestwalk
+ability=Swampwalk, forestwalk
 timing=main
 oracle=Swampwalk, forestwalk

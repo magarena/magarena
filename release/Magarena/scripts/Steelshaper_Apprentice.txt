@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Soldier
 cost={2}{W}{W}
 pt=1/3
-ability={W},{T},Return SN to its owner's hand:Search your library for an Equipment card, reveal it, and put it into your hand. Then shuffle your library.
+ability={W}, {T}, Return SN to its owner's hand: Search your library for an Equipment card, reveal that card, and put it into your hand. Then shuffle your library.
 timing=main
 oracle={W}, {T}, Return Steelshaper Apprentice to its owner's hand: Search your library for an Equipment card, reveal that card, and put it into your hand. Then shuffle your library.

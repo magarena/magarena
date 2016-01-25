@@ -1,11 +1,12 @@
 name=Spire Monitor
 image=http://magiccards.info/scans/en/nph/46.jpg
 value=2.885
-ability=flash;flying
 rarity=C
 type=Creature
 subtype=Drake
 cost={4}{U}
 pt=3/3
+ability=Flash;\
+        Flying
 timing=flash
 oracle=Flash\nFlying

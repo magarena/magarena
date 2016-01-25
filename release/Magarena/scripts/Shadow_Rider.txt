@@ -6,6 +6,6 @@ type=Creature
 subtype=Zombie,Knight
 cost={2}{B}{B}
 pt=3/3
-ability=flanking
+ability=Flanking
 timing=main
 oracle=Flanking

@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{U}
-ability={T}: Tap enchanted creature.;\
+ability=Enchant creature;\
+        {T}: Tap enchanted creature.;\
         {T}: Untap enchanted creature.
 timing=aura
 enchant=pump,pos creature

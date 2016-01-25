@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Scout
 cost={W}
 pt=1/1
-ability={W},Sacrifice SN:Return target artifact card from your graveyard to your hand.
+ability={W}, Sacrifice SN: Return target artifact card from your graveyard to your hand.
 timing=main
 oracle={W}, Sacrifice Salvage Scout: Return target artifact card from your graveyard to your hand.

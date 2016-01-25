@@ -1,11 +1,11 @@
 name=Shivan Zombie
 image=http://magiccards.info/scans/en/in/271.jpg
 value=3.900
-ability=protection from white
 rarity=C
 type=Creature
 subtype=Barbarian,Zombie
 cost={B}{R}
 pt=2/2
+ability=Protection from white
 timing=main
 oracle=Protection from white

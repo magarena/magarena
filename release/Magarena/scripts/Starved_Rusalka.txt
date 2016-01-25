@@ -6,6 +6,6 @@ type=Creature
 subtype=Spirit
 cost={G}
 pt=1/1
-ability={G},Sacrifice a creature: You gain 1 life.
+ability={G}, Sacrifice a creature: You gain 1 life.
 timing=main
 oracle={G}, Sacrifice a creature: You gain 1 life.

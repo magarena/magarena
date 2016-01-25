@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Rebel,Cleric
 cost={2}{W}
 pt=1/2
-ability={T}:Target creature gets -2/-0 until end of turn.
+ability={T}: Target creature gets -2/-0 until end of turn.
 timing=main
 oracle={T}: Target creature gets -2/-0 until end of turn.

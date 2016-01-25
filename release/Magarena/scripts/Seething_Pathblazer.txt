@@ -6,6 +6,6 @@ type=Creature
 subtype=Elemental,Warrior
 cost={2}{R}
 pt=2/2
-ability=Sacrifice an Elemental:SN gets +2/+0 and gains first strike until end of turn.
+ability=Sacrifice an Elemental: SN gets +2/+0 and gains first strike until end of turn.
 timing=main
 oracle=Sacrifice an Elemental: Seething Pathblazer gets +2/+0 and gains first strike until end of turn.

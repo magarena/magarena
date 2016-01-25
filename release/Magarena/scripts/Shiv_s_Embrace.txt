@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{R}{R}
-ability=Enchanted creature gets +2/+2 and has flying.;\
+ability=Enchant creature;\
+        Enchanted creature gets +2/+2 and has flying.;\
         {R}: Enchanted creature gets +1/+0 until end of turn.
 enchant=pump,pos creature
 timing=aura

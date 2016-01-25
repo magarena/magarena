@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Warrior
 cost={3}{G}
 pt=2/2
-ability=Whenever you cast a spell that targets SN, put two +1/+1 counter on SN.
+ability=Whenever you cast a spell that targets SN, put two +1/+1 counters on SN.
 timing=main
 oracle=Heroic — Whenever you cast a spell that targets Staunch-Hearted Warrior, put two +1/+1 counters on Staunch-Hearted Warrior.

@@ -6,6 +6,7 @@ type=Creature
 subtype=Angel
 cost={3}{W}
 pt=2/2
-ability=Flying;{T}:Target attacking or blocking creature gets +2/+2 until end of turn.
+ability=Flying;\
+        {T}: Target attacking or blocking creature gets +2/+2 until end of turn.
 timing=main
 oracle=Flying\n{T}: Target attacking or blocking creature gets +2/+2 until end of turn.

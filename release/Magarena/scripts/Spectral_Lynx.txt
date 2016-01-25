@@ -6,7 +6,7 @@ type=Creature
 subtype=Cat,Spirit
 cost={1}{W}
 pt=2/1
-ability=protection from green;\
+ability=Protection from green;\
         {B}: Regenerate SN.
 timing=main
 oracle=Protection from green\n{B}: Regenerate Spectral Lynx.

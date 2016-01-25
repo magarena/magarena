@@ -1,11 +1,12 @@
 name=Sentinels of Glen Elendra
 image=http://magiccards.info/scans/en/lw/84.jpg
 value=2.817
-ability=flash;flying
 rarity=C
 type=Creature
 subtype=Faerie,Soldier
 cost={3}{U}
 pt=2/3
-timing=main
+ability=Flash;\
+        Flying
+timing=flash
 oracle=Flash\nFlying

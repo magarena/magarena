@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Artificer
 cost={1}{U}
 pt=1/2
-ability={T},Sacrifice an artifact: Draw a card.
+ability={T}, Sacrifice an artifact: Draw a card.
 timing=main
 oracle={T}, Sacrifice an artifact: Draw a card.

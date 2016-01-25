@@ -1,11 +1,11 @@
 name=Smoldering Butcher
 image=http://magiccards.info/scans/en/eve/42.jpg
 value=3.167
-ability=Wither
 rarity=C
 type=Creature
 subtype=Elemental,Warrior
 cost={3}{B}
 pt=4/2
+ability=Wither
 timing=main
 oracle=Wither

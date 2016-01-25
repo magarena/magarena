@@ -6,7 +6,7 @@ type=Creature
 subtype=Hydra
 cost={X}{R}{G}
 pt=0/0
-ability=double strike;\
+ability=Double strike;\
         SN enters the battlefield with X +1/+1 counters on it.;\
         {1}{R/G}: Put a +1/+1 counter on SN. Activate this ability only any time you could cast a sorcery.
 timing=main

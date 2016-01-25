@@ -4,8 +4,7 @@ value=4.156
 rarity=C
 type=Enchantment
 cost={2}{G}
-ability=creatures you control get +0/+1;\
-        creatures you control have reach
+ability=Creatures you control get +0/+1 and have reach.
 static=player
 timing=enchantment
 oracle=Creatures you control get +0/+1 and have reach.

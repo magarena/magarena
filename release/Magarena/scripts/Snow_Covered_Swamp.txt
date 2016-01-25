@@ -6,4 +6,4 @@ type=Basic,Snow,Land
 subtype=Swamp
 mana=b4
 timing=land
-oracle=B
+oracle=NONE

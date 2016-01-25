@@ -6,6 +6,6 @@ type=Creature
 subtype=Merfolk
 cost={U}
 pt=1/1
-ability=cycling {2}
+ability=Cycling {2}
 timing=main
 oracle=Cycling {2}

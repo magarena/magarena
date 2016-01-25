@@ -6,6 +6,6 @@ type=Creature
 subtype=Elf,Warrior
 cost={1}{W}
 pt=2/2
-ability={2}{W},{Q}:SN gets +0/+2 until end of turn.
+ability={2}{W}, {Q}: SN gets +0/+2 until end of turn.
 timing=main
 oracle={2}{W}, {Q}: Safehold Sentry gets +0/+2 until end of turn.

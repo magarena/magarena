@@ -6,6 +6,7 @@ type=Creature
 subtype=Human,Warrior
 cost={2}{R}
 pt=2/2
-ability=first strike;unleash
+ability=First strike;\
+        Unleash
 timing=main
 oracle=First strike\nUnleash

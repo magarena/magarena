@@ -1,11 +1,11 @@
 name=Soulbound Guardians
 image=http://magiccards.info/scans/en/roe/45.jpg
 value=2.276
-ability=defender;flying
 rarity=U
 type=Creature
 subtype=Kor,Spirit
 cost={4}{W}
 pt=4/5
+ability=Defender, flying
 timing=smain
 oracle=Defender, flying

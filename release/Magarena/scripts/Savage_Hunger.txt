@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{G}
-ability=Enchanted creature gets +1/+0 and has trample.;\
+ability=Enchant creature;\
+        Enchanted creature gets +1/+0 and has trample.;\
         Cycling {2}
 timing=aura
 enchant=trample,pos creature

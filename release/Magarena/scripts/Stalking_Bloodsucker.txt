@@ -6,6 +6,7 @@ type=Creature
 subtype=Vampire
 cost={4}{B}{B}
 pt=4/4
-ability=Flying;{1}{B},Discard a card:SN gets +2/+2 until end of turn.
+ability=Flying;\
+        {1}{B}, Discard a card: SN gets +2/+2 until end of turn.
 timing=main
 oracle=Flying\n{1}{B}, Discard a card: Stalking Bloodsucker gets +2/+2 until end of turn.

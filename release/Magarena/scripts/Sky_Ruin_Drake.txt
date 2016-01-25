@@ -1,11 +1,11 @@
 name=Sky Ruin Drake
 image=http://magiccards.info/scans/en/zen/66.jpg
 value=2.131
-ability=Flying
 rarity=C
 type=Creature
 subtype=Drake
 cost={4}{U}
 pt=2/5
+ability=Flying
 timing=main
 oracle=Flying

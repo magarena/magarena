@@ -6,6 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={2}{G}
 ability=Flash;\
+        Enchant creature;\
         Enchanted creature gets +1/+1.;\
         {G}: Regenerate enchanted creature.
 enchant=pump,pos creature

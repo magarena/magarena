@@ -6,6 +6,7 @@ type=Creature
 subtype=Human,Knight
 cost={W}{W}
 pt=2/2
-ability=first strike;exalted
-timing=fmain
+ability=First strike;\
+        Exalted
+timing=main
 oracle=First strike\nExalted

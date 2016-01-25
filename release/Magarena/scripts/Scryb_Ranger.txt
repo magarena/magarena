@@ -7,7 +7,7 @@ subtype=Faerie
 cost={1}{G}
 pt=1/1
 ability=Flash;\
-        Flying; protection from blue;\
+        Flying, protection from blue;\
         Return a Forest you control to its owner's hand: Untap target creature. Activate this ability only once each turn.
-timing=main
+timing=flash
 oracle=Flash\nFlying, protection from blue\nReturn a Forest you control to its owner's hand: Untap target creature. Activate this ability only once each turn.

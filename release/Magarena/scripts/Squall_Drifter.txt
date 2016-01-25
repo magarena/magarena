@@ -6,6 +6,7 @@ type=Snow,Creature
 subtype=Elemental
 cost={1}{W}
 pt=1/1
-ability=Flying;{W},{T}:Tap target creature.
+ability=Flying;\
+        {W}, {T}: Tap target creature.
 timing=main
 oracle=Flying\n{W}, {T}: Tap target creature.

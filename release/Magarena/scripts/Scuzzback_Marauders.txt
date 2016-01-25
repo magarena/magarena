@@ -6,6 +6,7 @@ type=Creature
 subtype=Goblin,Warrior
 cost={4}{R/G}
 pt=5/2
-ability=Trample;persist
+ability=Trample;\
+        Persist
 timing=main
 oracle=Trample\nPersist

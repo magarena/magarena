@@ -6,4 +6,4 @@ type=Basic,Snow,Land
 subtype=Mountain
 mana=r4
 timing=land
-oracle=R
+oracle=NONE

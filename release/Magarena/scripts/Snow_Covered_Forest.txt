@@ -6,4 +6,4 @@ type=Basic,Snow,Land
 subtype=Forest
 mana=g4
 timing=land
-oracle=G
+oracle=NONE

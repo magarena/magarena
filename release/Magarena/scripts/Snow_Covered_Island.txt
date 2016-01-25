@@ -6,4 +6,4 @@ type=Basic,Snow,Land
 subtype=Island
 mana=u4
 timing=land
-oracle=U
+oracle=NONE

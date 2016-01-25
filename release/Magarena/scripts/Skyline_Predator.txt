@@ -1,11 +1,12 @@
 name=Skyline Predator
 image=http://magiccards.info/scans/en/rtr/50.jpg
 value=2.049
-ability=Flying;flash
 rarity=U
 type=Creature
 subtype=Drake
 cost={4}{U}{U}
 pt=3/4
-timing=main
+ability=Flash;\
+        Flying
+timing=flash
 oracle=Flash\nFlying

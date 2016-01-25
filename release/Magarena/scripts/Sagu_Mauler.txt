@@ -6,7 +6,7 @@ type=Creature
 subtype=Beast
 cost={4}{G}{U}
 pt=6/6
-ability=Trample;hexproof;\
+ability=Trample, hexproof;\
         Morph {3}{G}{U}
 timing=main
 oracle=Trample, hexproof\nMorph {3}{G}{U}

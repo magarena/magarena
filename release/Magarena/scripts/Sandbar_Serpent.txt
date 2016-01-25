@@ -6,6 +6,6 @@ type=Creature
 subtype=Serpent
 cost={4}{U}
 pt=3/4
-ability=cycling {2}
+ability=Cycling {2}
 timing=main
 oracle=Cycling {2}

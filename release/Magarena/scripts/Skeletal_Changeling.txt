@@ -6,7 +6,7 @@ type=Creature
 subtype=Shapeshifter
 cost={1}{B}
 pt=1/1
-ability=changeling;\
+ability=Changeling;\
         {1}{B}: Regenerate SN.
 timing=main
 oracle=Changeling\n{1}{B}: Regenerate Skeletal Changeling.

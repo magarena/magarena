@@ -6,6 +6,6 @@ type=Creature
 subtype=Spirit
 cost={R}
 pt=1/1
-ability={R},Sacrifice a creature:SN deals 1 damage to target player.
+ability={R}, Sacrifice a creature: SN deals 1 damage to target player.
 timing=main
 oracle={R}, Sacrifice a creature: Scorched Rusalka deals 1 damage to target player.

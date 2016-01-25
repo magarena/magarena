@@ -1,11 +1,11 @@
 name=Slinking Serpent
 image=http://magiccards.info/scans/en/in/274.jpg
 value=1.791
-ability=Forestwalk
 rarity=U
 type=Creature
 subtype=Serpent
 cost={2}{U}{B}
 pt=2/3
+ability=Forestwalk
 timing=main
 oracle=Forestwalk

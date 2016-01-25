@@ -6,6 +6,7 @@ type=Creature
 subtype=Beast
 cost={5}{G}{G}
 pt=10/10
-ability=SN enters the battlefield tapped.;fading 2
+ability=Fading 2;\
+        SN enters the battlefield tapped.
 timing=main
 oracle=Fading 2\nSkyshroud Behemoth enters the battlefield tapped.

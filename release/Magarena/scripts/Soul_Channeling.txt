@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{B}
-ability=Pay 2 life: Regenerate enchanted creature.
-enchant=pump,pos creature
+ability=Enchant creature;\
+        Pay 2 life: Regenerate enchanted creature.
 timing=aura
+enchant=pump,pos creature
 oracle=Enchant creature\nPay 2 life: Regenerate enchanted creature.

@@ -6,6 +6,6 @@ type=Creature
 subtype=Beast
 cost={G}
 pt=2/3
-ability=fading 2
+ability=Fading 2
 timing=main
 oracle=Fading 2

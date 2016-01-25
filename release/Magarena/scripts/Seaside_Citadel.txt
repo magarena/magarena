@@ -4,7 +4,7 @@ value=3.731
 rarity=U
 type=Land
 mana=g2w2u2
-ability={T}: Add {G} or {W} or {U} to your mana pool.;\
-        SN enters the battlefield tapped.
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {G}, {W}, or {U} to your mana pool.
 timing=tapland
 oracle=Seaside Citadel enters the battlefield tapped.\n{T}: Add {G}, {W}, or {U} to your mana pool.
