@@ -36,7 +36,7 @@ public enum ImageSizePresets {
     }
 
     public static Dimension getDefaultSize() {
-        return SIZE_312x445.getSize();
+        return SIZE_365x513.getSize();
     }
 
 }
