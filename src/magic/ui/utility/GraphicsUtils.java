@@ -5,7 +5,6 @@ import java.awt.Color;
 import java.awt.Component;
 import java.awt.Composite;
 import java.awt.Cursor;
-import java.awt.Dimension;
 import java.awt.GradientPaint;
 import java.awt.Graphics2D;
 import java.awt.Graphics;
@@ -29,8 +28,6 @@ import javax.swing.BorderFactory;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JComponent;
-import magic.data.GeneralConfig;
-import magic.ui.CardImagesProvider;
 import magic.ui.ScreenController;
 import magic.ui.image.filter.GrayScaleImageFilter;
 import magic.ui.image.filter.WhiteColorSwapImageFilter;
@@ -232,14 +229,6 @@ final public class GraphicsUtils {
 
     public static void setDebugBorder(final JComponent component) {
         component.setBorder(BorderFactory.createDashedBorder(debugBorderPaint));
-    }
-
-    public static Dimension getMaxCardImageSize() {
-        if (GeneralConfig.getInstance().isHighQuality()) {
-            return CardImagesProvider.HIGH_QUALITY_IMAGE_SIZE;
-        } else {
-            return CardImagesProvider.SMALL_SCREEN_IMAGE_SIZE;
-        }
     }
 
     public static BufferedImage getConvertedIcon(final ImageIcon icon) {
