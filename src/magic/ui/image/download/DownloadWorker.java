@@ -16,6 +16,7 @@ import magic.data.CardImageFile;
 import magic.data.DownloadableFile;
 import magic.data.GeneralConfig;
 import magic.data.ImagesDownloadList;
+import magic.ui.MagicImages;
 import magic.ui.URLUtils;
 import magic.ui.MagicLogFile;
 import magic.utility.MagicSystem;
@@ -62,7 +63,7 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
         listener.setButtonState(false);
         resetProgressBar();
 
-        magic.ui.CachedImagesProvider.getInstance().clearCache();
+        MagicImages.clearCache();
         listener.buildDownloadImagesList();
     }
 

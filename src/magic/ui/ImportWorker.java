@@ -66,7 +66,7 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
         if (!isCancelled()) { importMods(); }
         if (!isCancelled()) { importCardImages(); }
         if (!isCancelled()) { updateNewCardsLog(); }
-        CachedImagesProvider.getInstance().clearCache();
+        MagicImages.clearCache();
         return !isFailed;
     }
 

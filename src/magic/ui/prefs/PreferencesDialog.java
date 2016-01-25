@@ -37,9 +37,9 @@ import javax.swing.ToolTipManager;
 import javax.swing.text.NumberFormatter;
 import magic.data.GeneralConfig;
 import magic.translate.UiString;
-import magic.ui.CachedImagesProvider;
 import magic.ui.URLUtils;
 import magic.ui.MagicFrame;
+import magic.ui.MagicImages;
 import magic.ui.ScreenController;
 import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
@@ -366,7 +366,7 @@ public class PreferencesDialog
             }
         }
 
-        CachedImagesProvider.getInstance().clearCache();
+        MagicImages.clearCache();
         frame.refreshUI();
 
         dispose();
