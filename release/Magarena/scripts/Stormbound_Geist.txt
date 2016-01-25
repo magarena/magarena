@@ -6,6 +6,8 @@ type=Creature
 subtype=Spirit
 cost={1}{U}{U}
 pt=2/2
-ability=Flying;SN can block only creatures with flying.;undying
+ability=Flying;\
+        SN can block only creatures with flying.;\
+        Undying
 timing=main
 oracle=Flying\nStormbound Geist can block only creatures with flying.\nUndying

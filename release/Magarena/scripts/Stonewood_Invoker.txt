@@ -6,6 +6,6 @@ type=Creature
 subtype=Elf,Mutant
 cost={1}{G}
 pt=2/2
-ability={7}{G}:SN gets +5/+5 until end of turn.
+ability={7}{G}: SN gets +5/+5 until end of turn.
 timing=main
 oracle={7}{G}: Stonewood Invoker gets +5/+5 until end of turn.

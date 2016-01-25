@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-ability=Enchanted land has "{T}: Counter target spell unless its controller pays {1}."
-enchant=pump,pos land
+ability=Enchant land;\
+        Enchanted land has "{T}: Counter target spell unless its controller pays {1}."
 timing=aura
+enchant=pump,pos land
 oracle=Enchant land\nEnchanted land has "{T}: Counter target spell unless its controller pays {1}."

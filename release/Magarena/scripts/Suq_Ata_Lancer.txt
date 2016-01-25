@@ -6,6 +6,7 @@ type=Creature
 subtype=Human,Knight
 cost={2}{R}
 pt=2/2
-ability=flanking;haste
+ability=Haste;\
+        Flanking
 timing=fmain
 oracle=Haste\nFlanking

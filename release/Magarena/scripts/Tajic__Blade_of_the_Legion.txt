@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Human,Soldier
 cost={2}{R}{W}
 pt=2/2
-ability=indestructible;\
+ability=Indestructible;\
         Whenever SN and at least two other creatures attack, SN gets +5/+5 until end of turn.
 timing=main
 oracle=Indestructible\nBattalion — Whenever Tajic, Blade of the Legion and at least two other creatures attack, Tajic gets +5/+5 until end of turn.

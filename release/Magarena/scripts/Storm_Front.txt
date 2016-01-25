@@ -4,6 +4,6 @@ value=3.103
 rarity=U
 type=Enchantment
 cost={G}
-ability={G}{G}:Tap target creature with flying.
+ability={G}{G}: Tap target creature with flying.
 timing=enchantment
 oracle={G}{G}: Tap target creature with flying.

@@ -6,6 +6,6 @@ type=Creature
 subtype=Rhino,Cleric
 cost={5}{W}
 pt=4/4
-ability={5}{W}:SN gains vigilance, lifelink until end of turn.
+ability={5}{W}: SN gains vigilance and lifelink until end of turn.
 timing=main
 oracle={5}{W}: Stonehorn Chanter gains vigilance and lifelink until end of turn.

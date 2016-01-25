@@ -6,6 +6,7 @@ type=Creature
 subtype=Wall
 cost={2}{U}{U}
 pt=0/4
-ability=defender;{U},{T}:SN deals 1 damage to target creature or player.
-timing=main
+ability=Defender;\
+        {U}, {T}: SN deals 1 damage to target creature or player.
+timing=smain
 oracle=Defender\n{U}, {T}: Stinging Barrier deals 1 damage to target creature or player.

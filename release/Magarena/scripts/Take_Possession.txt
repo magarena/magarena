@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={5}{U}{U}
-ability=Split second.;\
+ability=Split second;\
+        Enchant permanent;\
         You control enchanted permanent.
 timing=aura
 enchant=gain control,neg permanent

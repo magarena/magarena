@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Rogue
 cost={3}{B}
 pt=3/2
-ability=extort
+ability=Extort
 timing=main
 oracle=Extort

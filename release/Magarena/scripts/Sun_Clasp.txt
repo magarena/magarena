@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{W}
-ability=Enchanted creature gets +1/+3.;\
+ability=Enchant creature;\
+        Enchanted creature gets +1/+3.;\
         {W}: Return enchanted creature to its owner's hand.
 enchant=pump,creature
 timing=aura

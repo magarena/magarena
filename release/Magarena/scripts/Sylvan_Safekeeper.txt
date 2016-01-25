@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Wizard
 cost={G}
 pt=1/1
-ability=Sacrifice a land:Target creature gains shroud until end of turn.
+ability=Sacrifice a land: Target creature you control gains shroud until end of turn.
 timing=main
 oracle=Sacrifice a land: Target creature you control gains shroud until end of turn.

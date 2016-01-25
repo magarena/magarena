@@ -6,9 +6,9 @@ type=Creature
 subtype=Gargoyle
 cost={2}{W}
 pt=3/2
-ability=flash;\
-        flying;\
+ability=Flash;\
+        Flying;\
         When SN enters the battlefield, return a creature you control to its owner's hand.;\
         When SN enters the battlefield, exile target card from a graveyard.
-timing=main
+timing=flash
 oracle=Flash\nFlying\nWhen Stonecloaker enters the battlefield, return a creature you control to its owner's hand.\nWhen Stonecloaker enters the battlefield, exile target card from a graveyard.

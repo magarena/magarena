@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Mercenary
 cost={2}{B}
 pt=1/1
-ability=When SN enters the battlefield, return target Mercenary card from your graveyard to your hand.
+ability=When SN enters the battlefield, you may return target Mercenary card from your graveyard to your hand.
 timing=main
 oracle=When Strongarm Thug enters the battlefield, you may return target Mercenary card from your graveyard to your hand.

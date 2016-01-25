@@ -7,6 +7,6 @@ subtype=Elemental
 cost={3}{R}
 pt=0/0
 ability=SN enters the battlefield with two +1/+1 counters on it.;\
-        {3}{R},Remove a +1/+1 counter from SN:Destroy target artifact or land.
+        {3}{R}, Remove a +1/+1 counter from SN: Destroy target artifact or land.
 timing=main
 oracle=Stingmoggie enters the battlefield with two +1/+1 counters on it.\n{3}{R}, Remove a +1/+1 counter from Stingmoggie: Destroy target artifact or land.

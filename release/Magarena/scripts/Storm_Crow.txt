@@ -1,11 +1,11 @@
 name=Storm Crow
 image=http://magiccards.info/scans/en/9e/100.jpg
 value=4.294
-ability=Flying
 rarity=C
 type=Creature
 subtype=Bird
 cost={1}{U}
 pt=1/2
+ability=Flying
 timing=main
 oracle=Flying

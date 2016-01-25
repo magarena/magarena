@@ -6,9 +6,8 @@ type=Creature
 subtype=Vampire,Soldier
 cost={1}{B}{R}
 pt=2/2
-ability=first strike;\
-        other vampire creatures you control get +1/+1;\
-        other vampire creatures you control have first strike
+ability=First strike;\
+        Other Vampire creatures you control get +1/+1 and have first strike.
 static=player
 timing=main
 oracle=First strike\nOther Vampire creatures you control get +1/+1 and have first strike.

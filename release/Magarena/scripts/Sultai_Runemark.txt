@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{B}
-ability=Enchanted creature gets +2/+2.;\
+ability=Enchant creature;\
+        Enchanted creature gets +2/+2.;\
         Enchanted creature has deathtouch as long as you control a green or blue permanent.
 timing=aura
 enchant=pump,pos creature

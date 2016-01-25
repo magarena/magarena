@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Wizard
 cost={U}
 pt=1/1
-ability={W},{T}: Tap target creature.;\
-        {B},{T}: Target player loses 1 life.
+ability={W}, {T}: Tap target creature.;\
+        {B}, {T}: Target player loses 1 life.
 timing=main
 oracle={W}, {T}: Tap target creature.\n{B}, {T}: Target player loses 1 life.

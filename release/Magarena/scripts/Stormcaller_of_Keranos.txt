@@ -6,6 +6,7 @@ type=Creature
 subtype=Human,Shaman
 cost={2}{R}
 pt=2/2
-ability=haste;{1}{U}: Scry 1.
-timing=main
+ability=Haste;\
+        {1}{U}: Scry 1.
+timing=fmain
 oracle=Haste\n{1}{U}: Scry 1.

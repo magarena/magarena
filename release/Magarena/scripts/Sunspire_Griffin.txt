@@ -1,11 +1,11 @@
 name=Sunspire Griffin
 image=http://magiccards.info/scans/en/rtr/25.jpg
 value=2.848
-ability=Flying
 rarity=C
 type=Creature
 subtype=Griffin
 cost={1}{W}{W}
 pt=2/3
+ability=Flying
 timing=main
 oracle=Flying

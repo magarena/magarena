@@ -5,8 +5,9 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{W}
-ability=Enchanted creature gets +1/+2 and has protection from black.;\
+ability=Enchant creature;\
+        Enchanted creature gets +1/+2 and has protection from black.;\
         Madness {W}
-timing=main
+timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature gets +1/+2 and has protection from black.\nMadness {W}

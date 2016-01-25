@@ -7,7 +7,7 @@ type=Creature
 subtype=Goblin,Warrior
 cost={1}{R}
 pt=2/2
-ability=echo {3}{R};\
+ability=Echo {3}{R};\
         When SN enters the battlefield, return target creature an opponent controls to its owner's hand.
 timing=main
 oracle=Echo {3}{R}\nWhen Stingscourger enters the battlefield, return target creature an opponent controls to its owner's hand.

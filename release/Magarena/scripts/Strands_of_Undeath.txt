@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={3}{B}
-ability=When SN enters the battlefield, target player discards two cards.;\
+ability=Enchant creature;\
+        When SN enters the battlefield, target player discards two cards.;\
         {B}: Regenerate enchanted creature.
 timing=aura
 enchant=pump,pos creature

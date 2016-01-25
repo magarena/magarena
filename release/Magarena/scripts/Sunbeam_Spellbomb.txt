@@ -4,7 +4,7 @@ value=3.403
 rarity=C
 type=Artifact
 cost={1}
-ability={W},Sacrifice SN: You gain 5 life.;\
-        {1},Sacrifice SN: Draw a card.
+ability={W}, Sacrifice SN: You gain 5 life.;\
+        {1}, Sacrifice SN: Draw a card.
 timing=artifact
 oracle={W}, Sacrifice Sunbeam Spellbomb: You gain 5 life.\n{1}, Sacrifice Sunbeam Spellbomb: Draw a card.

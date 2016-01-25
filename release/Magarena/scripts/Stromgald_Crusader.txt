@@ -6,6 +6,8 @@ type=Creature
 subtype=Zombie,Knight
 cost={B}{B}
 pt=2/1
-ability=protection from white;{B}: SN gains flying until end of turn.;{B}{B}: SN gets +1/+0 until end of turn.
+ability=Protection from white;\
+        {B}: SN gains flying until end of turn.;\
+        {B}{B}: SN gets +1/+0 until end of turn.
 timing=main
 oracle=Protection from white\n{B}: Stromgald Crusader gains flying until end of turn.\n{B}{B}: Stromgald Crusader gets +1/+0 until end of turn.

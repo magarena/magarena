@@ -6,7 +6,7 @@ type=Creature
 subtype=Plant
 cost={1}{G}
 pt=0/3
-ability=defender;hexproof;\
+ability=Defender, hexproof;\
         {T}: Add one mana of any color to your mana pool.
 timing=main
 oracle=Defender, hexproof\n{T}: Add one mana of any color to your mana pool.
