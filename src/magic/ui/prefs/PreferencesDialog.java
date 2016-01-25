@@ -85,9 +85,7 @@ public class PreferencesDialog
     private static final String _S45 = "theme";
     private static final String _S46 = "Determines the style in which cards are highlighted during a game.";
     private static final String _S47 = "Overrides the default theme background with a custom image which is set by dragging an image file onto the Magarena window.";
-    private static final String _S48 = "Enable this option if you want to view card images at the optimum size for larger screens.";
     private static final String _S49 = "Custom background";
-    private static final String _S50 = "Large card images";
     private static final String _S51 = "Roll-over color";
     private static final String _S52 = "Theme";
     private static final String _S53 = "Additional themes can be downloaded from the Magarena forum using the link below.";
@@ -106,7 +104,6 @@ public class PreferencesDialog
     private static final String _S80 = "There is a problem reading the translation file.";
     private static final String _S81 = "Please ensure the file is encoded as 'UTF-8 without BOM'.";
     private static final String _S82 = "Animations";
-    private static final String _S84 = "Misc";
 
     private final static GeneralConfig config = GeneralConfig.getInstance();
 
@@ -124,7 +121,6 @@ public class PreferencesDialog
     private JComboBox<String> themeComboBox;
     private JComboBox<String> highlightComboBox;
     private JCheckBox touchscreenCheckBox;
-    private JCheckBox highQualityCheckBox;
     private JCheckBox skipSingleCheckBox;
     private JCheckBox alwaysPassCheckBox;
     private JCheckBox smartTargetCheckBox;
@@ -331,7 +327,6 @@ public class PreferencesDialog
         config.setTheme(themeComboBox.getItemAt(themeComboBox.getSelectedIndex()));
         config.setHighlight(highlightComboBox.getItemAt(highlightComboBox.getSelectedIndex()));
         config.setTouchscreen(touchscreenCheckBox.isSelected());
-        config.setHighQuality(highQualityCheckBox.isSelected());
         config.setSkipSingle(skipSingleCheckBox.isSelected());
         config.setAlwaysPass(alwaysPassCheckBox.isSelected());
         config.setSmartTarget(smartTargetCheckBox.isSelected());
@@ -545,11 +540,6 @@ public class PreferencesDialog
         customBackgroundCheckBox.setFocusable(false);
         customBackgroundCheckBox.addMouseListener(this);
 
-        highQualityCheckBox = new JCheckBox("", config.isHighQuality());
-        highQualityCheckBox.setToolTipText(UiString.get(_S48));
-        highQualityCheckBox.setFocusable(false);
-        highQualityCheckBox.addMouseListener(this);
-
         rollOverColorButton = new ColorButton(MagicStyle.getRolloverColor());
         rollOverColorButton.setFocusable(false);
 
@@ -560,8 +550,6 @@ public class PreferencesDialog
         panel.add(highlightComboBox, "alignx left");
         panel.add(new JLabel(UiString.get(_S49)), "alignx right");
         panel.add(customBackgroundCheckBox);
-        panel.add(new JLabel(UiString.get(_S50)), "alignx right");
-        panel.add(highQualityCheckBox);
         panel.add(new JLabel(UiString.get(_S51)), "alignx right");
         panel.add(rollOverColorButton);
 

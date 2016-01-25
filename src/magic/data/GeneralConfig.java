@@ -72,9 +72,6 @@ public class GeneralConfig {
     private static final String MESSAGE_DELAY = "message";
     private int messageDelay = 2000;
 
-    private static final String HIGH_QUALITY="hq";
-    private boolean highQuality = false;
-
     private static final String TOUCHSCREEN = "touchscreen";
     private boolean touchscreen = false;
 
@@ -378,14 +375,6 @@ public class GeneralConfig {
         this.messageDelay = messageDelay;
     }
 
-    public boolean isHighQuality() {
-        return highQuality;
-    }
-
-    public void setHighQuality(final boolean highQuality) {
-        this.highQuality=highQuality;
-    }
-
     public boolean isTouchscreen() {
         return touchscreen;
     }
@@ -586,7 +575,6 @@ public class GeneralConfig {
         smartTarget=Boolean.parseBoolean(properties.getProperty(SMART_TARGET,""+smartTarget));
         popupDelay=Integer.parseInt(properties.getProperty(POPUP_DELAY,""+popupDelay));
         messageDelay = Integer.parseInt(properties.getProperty(MESSAGE_DELAY,"" + messageDelay));
-        highQuality=Boolean.parseBoolean(properties.getProperty(HIGH_QUALITY,""+highQuality));
         touchscreen = Boolean.parseBoolean(properties.getProperty(TOUCHSCREEN,""+touchscreen));
         mouseWheelPopup = Boolean.parseBoolean(properties.getProperty(MOUSEWHEEL_POPUP, "" + mouseWheelPopup));
         fullScreen = Boolean.parseBoolean(properties.getProperty(FULLSCREEN, "" + fullScreen));
@@ -640,7 +628,6 @@ public class GeneralConfig {
         properties.setProperty(SMART_TARGET,String.valueOf(smartTarget));
         properties.setProperty(POPUP_DELAY,String.valueOf(popupDelay));
         properties.setProperty(MESSAGE_DELAY,String.valueOf(messageDelay));
-        properties.setProperty(HIGH_QUALITY,String.valueOf(highQuality));
         properties.setProperty(TOUCHSCREEN,String.valueOf(touchscreen));
         properties.setProperty(MOUSEWHEEL_POPUP, String.valueOf(mouseWheelPopup));
         properties.setProperty(FULLSCREEN, String.valueOf(fullScreen));
