@@ -6,7 +6,8 @@ type=Creature
 subtype=Elemental
 cost={4}{U}{U}
 pt=5/6
-ability=Morph {5}{U}{U};\
+ability=Flying;\
+        Morph {5}{U}{U};\
         When SN is turned face up, return all other tapped creatures to their owners' hands.
 timing=main
 oracle=Flying\nMorph {5}{U}{U}\nWhen Thousand Winds is turned face up, return all other tapped creatures to their owners' hands.
