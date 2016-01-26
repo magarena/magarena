@@ -1,11 +1,11 @@
 name=Yavimaya Barbarian
 image=http://magiccards.info/scans/en/in/290.jpg
 value=3.570
-ability=protection from blue
 rarity=C
 type=Creature
 subtype=Elf,Barbarian
 cost={R}{G}
 pt=2/2
+ability=Protection from blue
 timing=main
 oracle=Protection from blue

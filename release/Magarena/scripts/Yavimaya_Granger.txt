@@ -6,7 +6,7 @@ type=Creature
 subtype=Elf
 cost={2}{G}
 pt=2/2
-ability=echo {2}{G};\
-       When SN enters the battlefield, you may search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.
+ability=Echo {2}{G};\
+        When SN enters the battlefield, you may search your library for a basic land card, put that card onto the battlefield tapped, then shuffle your library.
 timing=main
 oracle=Echo {2}{G}\nWhen Yavimaya Granger enters the battlefield, you may search your library for a basic land card, put that card onto the battlefield tapped, then shuffle your library.

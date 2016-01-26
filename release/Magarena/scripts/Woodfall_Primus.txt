@@ -7,7 +7,7 @@ subtype=Treefolk,Shaman
 cost={5}{G}{G}{G}
 pt=6/6
 ability=Trample;\
-        persist;\
-        When SN enters the battlefield, destroy target noncreature permanent.
+        When SN enters the battlefield, destroy target noncreature permanent.;\
+        Persist
 timing=main
 oracle=Trample\nWhen Woodfall Primus enters the battlefield, destroy target noncreature permanent.\nPersist

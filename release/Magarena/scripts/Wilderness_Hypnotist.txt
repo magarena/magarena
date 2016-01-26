@@ -6,6 +6,6 @@ type=Creature
 subtype=Merfolk,Wizard
 cost={2}{U}{U}
 pt=1/3
-ability={T}:Target red or green creature gets -2/-0 until end of turn.
+ability={T}: Target red or green creature gets -2/-0 until end of turn.
 timing=main
 oracle={T}: Target red or green creature gets -2/-0 until end of turn.

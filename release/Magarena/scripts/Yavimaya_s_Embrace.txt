@@ -5,8 +5,9 @@ rarity=R
 type=Enchantment
 subtype=Aura
 cost={5}{G}{U}{U}
-timing=aura
-ability=You control enchanted creature.;\
+ability=Enchant creature;\
+        You control enchanted creature.;\
         Enchanted creature gets +2/+2 and has trample.
+timing=aura
 enchant=gain control,neg creature
 oracle=Enchant creature\nYou control enchanted creature.\nEnchanted creature gets +2/+2 and has trample.

@@ -5,8 +5,9 @@ rarity=R
 type=Enchantment
 subtype=Aura
 cost={4}{G}{G}
-ability=Enchanted creature gets +6/+6.;\
-        {G}{G}{G},Sacrifice SN: Put a 6/6 green Wurm creature token onto the battlefield.
-timing=enchantment
+ability=Enchant green creature;\
+        Enchanted creature gets +6/+6.;\
+        {G}{G}{G}, Sacrifice SN: Put a 6/6 green Wurm creature token onto the battlefield.
+timing=aura
 enchant=pump,pos creature
 oracle=Enchant green creature\nEnchanted creature gets +6/+6.\n{G}{G}{G}, Sacrifice Wurmweaver Coil: Put a 6/6 green Wurm creature token onto the battlefield.

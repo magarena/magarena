@@ -6,6 +6,7 @@ type=Creature
 subtype=Wall
 cost={1}{R}
 pt=4/1
-ability=defender;first strike
-timing=main
+ability=Defender;\
+        First strike
+timing=smain
 oracle=Defender\nFirst strike

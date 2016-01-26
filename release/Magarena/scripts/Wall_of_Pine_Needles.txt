@@ -6,7 +6,7 @@ type=Creature
 subtype=Plant,Wall
 cost={3}{G}
 pt=3/3
-ability=defender;\
+ability=Defender;\
         {G}: Regenerate SN.
 timing=smain
 oracle=Defender\n{G}: Regenerate Wall of Pine Needles.

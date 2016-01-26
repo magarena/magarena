@@ -6,7 +6,7 @@ type=Creature
 subtype=Skeleton,Wall
 cost={2}{B}
 pt=1/4
-ability=defender;\
+ability=Defender;\
         {B}: Regenerate SN.
 timing=smain
 oracle=Defender\n{B}: Regenerate Wall of Bone.

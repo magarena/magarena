@@ -5,7 +5,7 @@ rarity=U
 type=Artifact
 subtype=Equipment
 cost={1}
-ability=Equipped creature has "{1},{T}: Scry 1.";\
+ability=Equipped creature has "{1}, {T}: Scry 1.";\
         Equip {1}
-timing=artifact
+timing=equipment
 oracle=Equipped creature has "{1}, {T}: Scry 1."\nEquip {1}

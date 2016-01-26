@@ -6,6 +6,7 @@ type=Artifact,Creature
 subtype=Wall
 cost={2}
 pt=0/6
-ability=defender;{G}: SN gains reach until end of turn.
-timing=main
+ability=Defender;\
+        {G}: SN gains reach until end of turn.
+timing=smain
 oracle=Defender\n{G}: Wall of Tanglecord gains reach until end of turn.

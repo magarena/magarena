@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Goblin,Shaman
 cost={2}{B}{R}
 pt=3/3
-ability=fear;\
+ability=Fear;\
         At the beginning of your upkeep, you may return target Goblin card from your graveyard to your hand.
 timing=main
 oracle=Fear\nAt the beginning of your upkeep, you may return target Goblin card from your graveyard to your hand.

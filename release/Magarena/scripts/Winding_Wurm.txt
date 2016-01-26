@@ -6,6 +6,6 @@ type=Creature
 subtype=Wurm
 cost={4}{G}
 pt=6/6
-ability=echo {4}{G}
+ability=Echo {4}{G}
 timing=main
 oracle=Echo {4}{G}

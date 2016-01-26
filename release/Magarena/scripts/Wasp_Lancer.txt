@@ -1,11 +1,11 @@
 name=Wasp Lancer
 image=http://magiccards.info/scans/en/shm/179.jpg
 value=3.395
-ability=Flying
 rarity=U
 type=Creature
 subtype=Faerie,Soldier
 cost={U/B}{U/B}{U/B}
 pt=3/2
+ability=Flying
 timing=main
 oracle=Flying

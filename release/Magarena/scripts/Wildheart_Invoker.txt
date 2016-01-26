@@ -6,6 +6,6 @@ type=Creature
 subtype=Elf,Shaman
 cost={2}{G}{G}
 pt=4/3
-ability={8}:Target creature gets +5/+5 and gains trample until end of turn.
+ability={8}: Target creature gets +5/+5 and gains trample until end of turn.
 timing=main
 oracle={8}: Target creature gets +5/+5 and gains trample until end of turn.

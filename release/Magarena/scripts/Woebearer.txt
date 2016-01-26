@@ -6,7 +6,7 @@ type=Creature
 subtype=Zombie
 cost={4}{B}
 pt=2/3
-ability=fear;\
+ability=Fear;\
         Whenever SN deals combat damage to a player, you may return target creature card from your graveyard to your hand.
 timing=main
 oracle=Fear\nWhenever Woebearer deals combat damage to a player, you may return target creature card from your graveyard to your hand.

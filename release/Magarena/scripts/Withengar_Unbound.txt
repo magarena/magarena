@@ -6,9 +6,7 @@ type=Legendary,Creature
 subtype=Demon
 color=b
 pt=13/13
-ability=Flying;\
-        intimidate;\
-        trample
+ability=Flying, intimidate, trample
 transform=Elbrus, the Binding Blade
 timing=main
 hidden

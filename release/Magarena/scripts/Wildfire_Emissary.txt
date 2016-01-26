@@ -6,6 +6,7 @@ type=Creature
 subtype=Efreet
 cost={3}{R}
 pt=2/4
-ability=protection from white;{1}{R}: SN gets +1/+0 until end of turn.
+ability=Protection from white;\
+        {1}{R}: SN gets +1/+0 until end of turn.
 timing=main
 oracle=Protection from white\n{1}{R}: Wildfire Emissary gets +1/+0 until end of turn.

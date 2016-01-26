@@ -6,7 +6,7 @@ type=Creature
 subtype=Sphinx
 cost={5}{U}{U}
 pt=3/7
-ability=Flying.;\
+ability=Flying;\
         Whenever a creature with flying attacks, you may draw a card.
 timing=main
 oracle=Flying\nWhenever a creature with flying attacks, you may draw a card.

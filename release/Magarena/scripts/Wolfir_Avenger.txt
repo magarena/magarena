@@ -6,7 +6,7 @@ type=Creature
 subtype=Wolf,Warrior
 cost={1}{G}{G}
 pt=3/3
-ability=flash;\
+ability=Flash;\
         {1}{G}: Regenerate SN.
 timing=flash
 oracle=Flash\n{1}{G}: Regenerate Wolfir Avenger.

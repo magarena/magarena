@@ -6,6 +6,7 @@ type=Creature
 subtype=Fish
 cost={3}{U}
 pt=2/2
-ability=Flying;Whenever a land enters the battlefield under your control, SN gets +2/+2 until end of turn.
+ability=Flying;\
+        Whenever a land enters the battlefield under your control, SN gets +2/+2 until end of turn.
 timing=main
 oracle=Flying\nLandfall — Whenever a land enters the battlefield under your control, Windrider Eel gets +2/+2 until end of turn.

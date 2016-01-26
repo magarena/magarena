@@ -6,6 +6,7 @@ type=Creature
 subtype=Wall
 cost={1}{U}{U}
 pt=0/5
-ability=defender;{U}:SN gets +1/+0 until end of turn.
-timing=main
+ability=Defender;\
+        {U}: SN gets +1/+0 until end of turn.
+timing=smain
 oracle=Defender\n{U}: Wall of Water gets +1/+0 until end of turn.

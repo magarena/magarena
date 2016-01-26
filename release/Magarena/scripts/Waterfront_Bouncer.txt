@@ -6,6 +6,6 @@ type=Creature
 subtype=Merfolk,Spellshaper
 cost={1}{U}
 pt=1/1
-ability={U},{T},Discard a card:Return target creature to its owner's hand.
+ability={U}, {T}, Discard a card: Return target creature to its owner's hand.
 timing=main
 oracle={U}, {T}, Discard a card: Return target creature to its owner's hand.

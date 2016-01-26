@@ -6,6 +6,6 @@ type=Creature
 subtype=Zombie,Cleric
 cost={B}{B}
 pt=2/2
-ability={1}:Exile target card from a graveyard.
+ability={1}: Exile target card from a graveyard.
 timing=main
 oracle={1}: Exile target card from a graveyard.

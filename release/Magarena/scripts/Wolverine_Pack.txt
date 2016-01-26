@@ -6,6 +6,6 @@ type=Creature
 subtype=Wolverine
 cost={2}{G}{G}
 pt=2/4
-ability=rampage 2
+ability=Rampage 2
 timing=main
 oracle=Rampage 2

@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={W}{U}
-ability=Enchanted creature gets +1/+0 and has flying and first strike.
+ability=Enchant creature;\
+        Enchanted creature gets +1/+0 and has flying and first strike.
 timing=aura
 enchant=flying,pos creature
 oracle=Enchant creature\nEnchanted creature gets +1/+0 and has flying and first strike.

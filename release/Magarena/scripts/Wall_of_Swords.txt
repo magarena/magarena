@@ -1,11 +1,12 @@
 name=Wall of Swords
 image=http://magiccards.info/scans/en/m14/41.jpg
 value=3.500
-ability=defender;flying
 rarity=U
 type=Creature
 subtype=Wall
 cost={3}{W}
 pt=3/5
+ability=Defender;\
+        Flying
 timing=smain
 oracle=Defender\nFlying

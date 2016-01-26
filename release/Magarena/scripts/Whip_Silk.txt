@@ -5,8 +5,9 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={G}
-ability=Enchanted creature has reach.;\
-        {G}:Return SN to its owner's hand.
+ability=Enchant creature;\
+        Enchanted creature has reach.;\
+        {G}: Return SN to its owner's hand.
 timing=aura
 enchant=flying,pos creature
 oracle=Enchant creature\nEnchanted creature has reach.\n{G}: Return Whip Silk to its owner's hand.

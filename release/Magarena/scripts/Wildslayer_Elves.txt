@@ -1,11 +1,11 @@
 name=Wildslayer Elves
 image=http://magiccards.info/scans/en/shm/133.jpg
 value=2.971
-ability=Wither
 rarity=C
 type=Creature
 subtype=Elf,Warrior
 cost={3}{G}
 pt=3/3
+ability=Wither
 timing=main
 oracle=Wither

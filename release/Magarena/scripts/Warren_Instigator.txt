@@ -6,7 +6,7 @@ type=Creature
 subtype=Goblin,Berserker
 cost={R}{R}
 pt=1/1
-ability=double strike;\
+ability=Double strike;\
         Whenever SN deals damage to an opponent, you may put a Goblin creature card from your hand onto the battlefield.
 timing=main
 oracle=Double strike\nWhenever Warren Instigator deals damage to an opponent, you may put a Goblin creature card from your hand onto the battlefield.

@@ -6,6 +6,6 @@ type=Creature
 subtype=Zombie,Wurm
 cost={3}{B}
 pt=7/6
-ability=vanishing 2
+ability=Vanishing 2
 timing=main
 oracle=Vanishing 2

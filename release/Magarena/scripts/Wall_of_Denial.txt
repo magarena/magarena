@@ -6,6 +6,7 @@ type=Creature
 subtype=Wall
 cost={1}{W}{U}
 pt=0/8
-ability=defender;flying;shroud
+ability=Defender, flying;\
+        Shroud
 timing=smain
 oracle=Defender, flying\nShroud

@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Soldier
 cost={2}{R}
 pt=2/1
-ability={R}:Target creature gains haste until end of turn.
+ability={R}: Target creature gains haste until end of turn.
 timing=main
 oracle={R}: Target creature gains haste until end of turn.

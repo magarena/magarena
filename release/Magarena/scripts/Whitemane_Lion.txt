@@ -6,7 +6,7 @@ type=Creature
 subtype=Cat
 cost={1}{W}
 pt=2/2
-ability=flash;\
+ability=Flash;\
         When SN enters the battlefield, return a creature you control to its owner's hand.
 timing=pumpFlash
 oracle=Flash\nWhen Whitemane Lion enters the battlefield, return a creature you control to its owner's hand.

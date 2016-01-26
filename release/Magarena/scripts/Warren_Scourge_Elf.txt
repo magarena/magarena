@@ -6,6 +6,6 @@ type=Creature
 subtype=Elf,Warrior
 cost={1}{G}
 pt=1/1
-ability=protection from Goblins
+ability=Protection from Goblins
 timing=main
 oracle=Protection from Goblins
