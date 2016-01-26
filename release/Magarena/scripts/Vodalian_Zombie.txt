@@ -1,11 +1,11 @@
 name=Vodalian Zombie
 image=http://magiccards.info/scans/en/in/286.jpg
 value=3.588
-ability=protection from green
 rarity=C
 type=Creature
 subtype=Merfolk,Zombie
 cost={U}{B}
 pt=2/2
+ability=Protection from green
 timing=main
 oracle=Protection from green

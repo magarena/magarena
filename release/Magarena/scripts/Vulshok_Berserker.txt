@@ -1,11 +1,11 @@
 name=Vulshok Berserker
 image=http://magiccards.info/scans/en/ddi/53.jpg
 value=2.233
-ability=haste
 rarity=C
 type=Creature
 subtype=Human,Berserker
 cost={3}{R}
 pt=3/2
+ability=Haste
 timing=fmain
 oracle=Haste

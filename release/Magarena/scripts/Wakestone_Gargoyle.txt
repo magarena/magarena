@@ -6,7 +6,7 @@ type=Creature
 subtype=Gargoyle
 cost={3}{W}
 pt=3/4
-ability=Defender, flying.;\
+ability=Defender, flying;\
         {1}{W}: Creatures you control with defender can attack as though they didn't have defender this turn.
 timing=main
 oracle=Defender, flying\n{1}{W}: Creatures you control with defender can attack this turn as though they didn't have defender.

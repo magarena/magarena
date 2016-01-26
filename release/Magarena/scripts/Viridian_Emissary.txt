@@ -7,6 +7,6 @@ type=Creature
 subtype=Elf,Scout
 cost={1}{G}
 pt=2/1
-ability=When SN dies, you may search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.
+ability=When SN dies, you may search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library.
 timing=main
 oracle=When Viridian Emissary dies, you may search your library for a basic land card, put it onto the battlefield tapped, then shuffle your library.

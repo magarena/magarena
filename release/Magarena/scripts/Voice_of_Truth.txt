@@ -6,6 +6,6 @@ type=Creature
 subtype=Angel
 cost={3}{W}
 pt=2/2
-ability=protection from white;flying
+ability=Flying, protection from white
 timing=main
 oracle=Flying, protection from white

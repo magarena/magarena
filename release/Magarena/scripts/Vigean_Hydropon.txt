@@ -6,6 +6,7 @@ type=Creature
 subtype=Plant,Mutant
 cost={1}{G}{U}
 pt=0/0
-ability=graft 5;SN can't attack or block.
+ability=Graft 5;\
+        SN can't attack or block.
 timing=main
 oracle=Graft 5\nVigean Hydropon can't attack or block.

@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-ability=Enchanted creature gets +1/+1.;\
+ability=Enchant creature;\
+        Enchanted creature gets +1/+1.;\
         {1}{U}: Return SN to its owner's hand.
 enchant=pump,pos creature
 timing=aura

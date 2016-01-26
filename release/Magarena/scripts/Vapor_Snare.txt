@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={4}{U}
-ability=You control enchanted creature.;\
+ability=Enchant creature;\
+        You control enchanted creature.;\
         At the beginning of your upkeep, you may return a land you control to its owner's hand. If you don't, sacrifice SN.
 enchant=gain control,neg creature
 timing=aura

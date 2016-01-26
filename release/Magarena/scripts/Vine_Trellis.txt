@@ -6,6 +6,7 @@ type=Creature
 subtype=Plant,Wall
 cost={1}{G}
 pt=0/4
-ability=defender;{T}: Add {G} to your mana pool.
-timing=main
+ability=Defender;\
+        {T}: Add {G} to your mana pool.
+timing=smain
 oracle=Defender\n{T}: Add {G} to your mana pool.

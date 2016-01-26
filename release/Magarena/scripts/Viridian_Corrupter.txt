@@ -7,7 +7,7 @@ type=Creature
 subtype=Elf,Shaman
 cost={1}{G}{G}
 pt=2/2
-ability=infect;\
+ability=Infect;\
         When SN enters the battlefield, destroy target artifact.
 timing=main
 oracle=Infect\nWhen Viridian Corrupter enters the battlefield, destroy target artifact.

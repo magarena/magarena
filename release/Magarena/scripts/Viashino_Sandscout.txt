@@ -6,7 +6,7 @@ type=Creature
 subtype=Viashino,Scout
 cost={1}{R}
 pt=2/1
-ability=haste;\
+ability=Haste;\
         At the beginning of the end step, return SN to its owner's hand.
 timing=fmain
 oracle=Haste\nAt the beginning of the end step, return Viashino Sandscout to its owner's hand.

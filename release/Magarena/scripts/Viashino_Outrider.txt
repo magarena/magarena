@@ -6,6 +6,6 @@ type=Creature
 subtype=Viashino
 cost={2}{R}
 pt=4/3
-ability=echo {2}{R}
+ability=Echo {2}{R}
 timing=main
 oracle=Echo {2}{R}

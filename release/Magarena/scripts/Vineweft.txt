@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={G}
-ability=Enchanted creature gets +1/+1.;\
+ability=Enchant creature;\
+        Enchanted creature gets +1/+1.;\
         {4}{G}: Return SN from your graveyard to your hand.
 timing=aura
 enchant=pump,pos creature

@@ -6,6 +6,6 @@ type=Creature
 subtype=Vedalken,Wizard
 cost={3}{U}
 pt=1/4
-ability={U},{T}:Target player puts the top two cards of his or her library into his or her graveyard.
+ability={U}, {T}: Target player puts the top two cards of his or her library into his or her graveyard.
 timing=main
 oracle={U}, {T}: Target player puts the top two cards of his or her library into his or her graveyard.

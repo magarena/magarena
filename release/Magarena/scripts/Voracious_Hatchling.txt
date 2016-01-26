@@ -5,10 +5,10 @@ rarity=U
 type=Creature
 subtype=Elemental
 cost={3}{W/B}
+pt=6/6
 ability=Lifelink;\
         SN enters the battlefield with four -1/-1 counters on it.;\
         Whenever you cast a white spell, remove a -1/-1 counter from SN.;\
         Whenever you cast a black spell, remove a -1/-1 counter from SN.
-pt=6/6
 timing=main
 oracle=Lifelink\nVoracious Hatchling enters the battlefield with four -1/-1 counters on it.\nWhenever you cast a white spell, remove a -1/-1 counter from Voracious Hatchling.\nWhenever you cast a black spell, remove a -1/-1 counter from Voracious Hatchling.

@@ -4,6 +4,6 @@ value=2.985
 rarity=U
 type=Artifact
 cost={1}
-ability={1},Sacrifice SN:Target creature gains deathtouch until end of turn.
+ability={1}, Sacrifice SN: Target creature gains deathtouch until end of turn.
 timing=artifact
 oracle={1}, Sacrifice Vial of Poison: Target creature gains deathtouch until end of turn.

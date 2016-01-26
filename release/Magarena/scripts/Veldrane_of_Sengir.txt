@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Human,Rogue
 cost={5}{B}{B}
 pt=5/5
-ability={1}{B}{B}:SN gets -3/-0 and gains forestwalk until end of turn.
+ability={1}{B}{B}: SN gets -3/-0 and gains forestwalk until end of turn.
 timing=main
 oracle={1}{B}{B}: Veldrane of Sengir gets -3/-0 and gains forestwalk until end of turn.

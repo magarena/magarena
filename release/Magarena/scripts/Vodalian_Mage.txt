@@ -6,6 +6,6 @@ type=Creature
 subtype=Merfolk,Wizard
 cost={2}{U}
 pt=1/1
-ability={U},{T}:Counter target spell unless its controller pays {1}.
+ability={U}, {T}: Counter target spell unless its controller pays {1}.
 timing=main
 oracle={U}, {T}: Counter target spell unless its controller pays {1}.

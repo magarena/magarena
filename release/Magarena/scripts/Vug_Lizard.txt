@@ -6,6 +6,7 @@ type=Creature
 subtype=Lizard
 cost={1}{R}{R}
 pt=3/4
-ability=Mountainwalk;echo {1}{R}{R}
+ability=Mountainwalk;\
+        Echo {1}{R}{R}
 timing=main
 oracle=Mountainwalk\nEcho {1}{R}{R}

@@ -4,6 +4,6 @@ value=4.592
 rarity=U
 type=Artifact
 cost={1}
-ability={1},{T}:Untap target artifact.
+ability={1}, {T}: Untap target artifact.
 timing=artifact
 oracle={1}, {T}: Untap target artifact.

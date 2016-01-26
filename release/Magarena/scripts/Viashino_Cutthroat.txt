@@ -6,7 +6,7 @@ type=Creature
 subtype=Viashino
 cost={2}{R}{R}
 pt=5/3
-ability=haste;\
+ability=Haste;\
         At the beginning of the end step, return SN to its owner's hand.
 timing=fmain
 oracle=Haste\nAt the beginning of the end step, return Viashino Cutthroat to its owner's hand.

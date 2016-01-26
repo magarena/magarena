@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Scout
 cost={2}{W}
 pt=1/4
-ability=flash;\
+ability=Flash;\
         When SN enters the battlefield, untap all creatures you control.
-timing=main
+timing=flash
 oracle=Flash\nWhen Village Bell-Ringer enters the battlefield, untap all creatures you control.

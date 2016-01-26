@@ -6,6 +6,8 @@ type=Creature
 subtype=Vampire,Shaman
 cost={1}{B}{B}
 pt=2/3
-ability=Flying;deathtouch;lifelink
+ability=Flying;\
+        Deathtouch;\
+        Lifelink
 timing=main
 oracle=Flying\nDeathtouch\nLifelink

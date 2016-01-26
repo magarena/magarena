@@ -1,11 +1,11 @@
 name=Veteran Cavalier
 image=http://magiccards.info/scans/en/9e/52.jpg
 value=3.500
-ability=Vigilance
 rarity=C
 type=Creature
 subtype=Human,Knight
 cost={W}{W}
 pt=2/2
+ability=Vigilance
 timing=main
 oracle=Vigilance

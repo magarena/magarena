@@ -7,7 +7,7 @@ subtype=Human,Wizard
 cost={4}{U}{B}
 pt=4/4
 ability=Intimidate;\
-        other creatures you control have intimidate.;\
+        Other creatures you control have intimidate.;\
         Whenever SN or another creature you control leaves the battlefield, each opponent loses 1 life.
 timing=main
 oracle=Intimidate\nOther creatures you control have intimidate.\nWhenever Vela the Night-Clad or another creature you control leaves the battlefield, each opponent loses 1 life.
