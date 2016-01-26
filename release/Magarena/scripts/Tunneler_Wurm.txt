@@ -6,7 +6,6 @@ type=Creature
 subtype=Wurm
 cost={6}{G}{G}
 pt=6/6
-ability=Trample;\
-        Discard a card: Regenerate SN.
+ability=Discard a card: Regenerate SN.
 timing=main
 oracle=Discard a card: Regenerate Tunneler Wurm.
