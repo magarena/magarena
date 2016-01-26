@@ -6,6 +6,7 @@ type=Creature
 subtype=Elemental
 cost={4}{R}{R}
 pt=7/7
-ability=SN attacks each turn if able.;echo {4}{R}{R}
+ability=Echo {4}{R}{R};\
+        SN attacks each turn if able.
 timing=main
 oracle=Echo {4}{R}{R}\nTectonic Fiend attacks each turn if able.

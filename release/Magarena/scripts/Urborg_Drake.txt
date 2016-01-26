@@ -1,11 +1,12 @@
 name=Urborg Drake
 image=http://magiccards.info/scans/en/in/283.jpg
 value=3.484
-ability=Flying;SN attacks each turn if able.
 rarity=U
 type=Creature
 subtype=Drake
 cost={1}{U}{B}
 pt=2/3
+ability=Flying;\
+        SN attacks each turn if able.
 timing=main
 oracle=Flying\nUrborg Drake attacks each turn if able.

@@ -1,11 +1,11 @@
 name=Trained Caracal
 image=http://magiccards.info/scans/en/rtr/27.jpg
 value=2.711
-ability=Lifelink
 rarity=C
 type=Creature
 subtype=Cat
 cost={W}
 pt=1/1
+ability=Lifelink
 timing=main
 oracle=Lifelink

@@ -6,7 +6,8 @@ type=Creature
 subtype=Troll
 cost={1}{B}{G}
 pt=1/4
-ability=defender;reach;\
+ability=Defender;\
+        Reach;\
         {1}{B}{G}: Regenerate SN.
 timing=main
 oracle=Defender\nReach\n{1}{B}{G}: Regenerate Trestle Troll.

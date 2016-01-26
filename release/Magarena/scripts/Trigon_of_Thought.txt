@@ -5,7 +5,7 @@ rarity=U
 type=Artifact
 cost={5}
 ability=SN enters the battlefield with three charge counters on it.;\
-        {U}{U},{T}: Put a charge counter on SN.;\
-        {2},{T},Remove a charge counter from SN: Draw a card.
+        {U}{U}, {T}: Put a charge counter on SN.;\
+        {2}, {T}, Remove a charge counter from SN: Draw a card.
 timing=artifact
 oracle=Trigon of Thought enters the battlefield with three charge counters on it.\n{U}{U}, {T}: Put a charge counter on Trigon of Thought.\n{2}, {T}, Remove a charge counter from Trigon of Thought: Draw a card.

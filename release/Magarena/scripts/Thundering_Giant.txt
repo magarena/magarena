@@ -1,11 +1,11 @@
 name=Thundering Giant
 image=http://magiccards.info/scans/en/m15/165.jpg
 value=2.333
-ability=haste
 rarity=U
 type=Creature
 subtype=Giant
 cost={3}{R}{R}
 pt=4/3
+ability=Haste
 timing=fmain
 oracle=Haste

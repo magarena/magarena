@@ -4,6 +4,6 @@ value=1.970
 rarity=U
 type=Artifact
 cost={1}
-ability={1},{T}: You gain 1 life.
+ability={1}, {T}: You gain 1 life.
 timing=artifact
 oracle={1}, {T}: You gain 1 life.

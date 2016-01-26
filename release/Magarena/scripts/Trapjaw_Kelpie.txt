@@ -1,11 +1,12 @@
 name=Trapjaw Kelpie
 image=http://magiccards.info/scans/en/eve/164.jpg
 value=2.056
-ability=flash;persist
 rarity=C
 type=Creature
 subtype=Beast
 cost={4}{G/U}{G/U}
 pt=3/3
+ability=Flash;\
+        Persist
 timing=flash
 oracle=Flash\nPersist

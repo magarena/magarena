@@ -6,9 +6,9 @@ type=Creature
 subtype=Kithkin,Knight
 cost={1}{W/U}{W/U}{W/U}
 pt=1/3
-ability=flash;\
-        other white creatures you control get +1/+1;\
-        other blue creatures you control get +1/+1
+ability=Flash;\
+        Other white creatures you control get +1/+1.;\
+        Other blue creatures you control get +1/+1.
 static=player
 timing=flash
 oracle=Flash\nOther white creatures you control get +1/+1.\nOther blue creatures you control get +1/+1.

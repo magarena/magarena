@@ -6,6 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={1}{R}
 ability=Flash;\
+        Enchant creature;\
         Enchanted creature has "{1}{R}: SN gets +2/+0 until end of turn."
 timing=pumpFlash
 enchant=pump,pos creature

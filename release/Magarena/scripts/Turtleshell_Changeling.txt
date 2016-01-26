@@ -6,7 +6,7 @@ type=Creature
 subtype=Shapeshifter
 cost={3}{U}
 pt=1/4
-ability=changeling;\
+ability=Changeling;\
         {1}{U}: Switch SN's power and toughness until end of turn.
 timing=main
 oracle=Changeling\n{1}{U}: Switch Turtleshell Changeling's power and toughness until end of turn.

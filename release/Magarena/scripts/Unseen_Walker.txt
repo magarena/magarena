@@ -6,6 +6,7 @@ type=Creature
 subtype=Dryad
 cost={1}{G}
 pt=1/1
-ability=Forestwalk;{1}{G}{G}:Target creature gains forestwalk until end of turn.
+ability=Forestwalk;\
+        {1}{G}{G}: Target creature gains forestwalk until end of turn.
 timing=main
 oracle=Forestwalk\n{1}{G}{G}: Target creature gains forestwalk until end of turn.

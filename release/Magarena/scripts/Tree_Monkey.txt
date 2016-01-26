@@ -1,11 +1,11 @@
 name=Tree Monkey
 image=http://magiccards.info/scans/en/9e/275.jpg
 value=2.868
-ability=reach
 rarity=C
 type=Creature
 subtype=Ape
 cost={G}
 pt=1/1
+ability=Reach
 timing=main
 oracle=Reach

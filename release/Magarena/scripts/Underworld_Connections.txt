@@ -6,7 +6,8 @@ rarity=R
 type=Enchantment
 subtype=Aura
 cost={1}{B}{B}
-ability=Enchanted land has "{T}, Pay 1 life: Draw a card."
+ability=Enchant land;\
+        Enchanted land has "{T}, Pay 1 life: Draw a card."
 enchant=sacrifice,pos land
 timing=aura
 oracle=Enchant land\nEnchanted land has "{T}, Pay 1 life: Draw a card."

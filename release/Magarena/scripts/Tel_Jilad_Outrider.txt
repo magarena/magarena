@@ -6,6 +6,6 @@ type=Creature
 subtype=Elf,Warrior
 cost={3}{G}
 pt=3/1
-ability=protection from artifacts
+ability=Protection from artifacts
 timing=main
 oracle=Protection from artifacts

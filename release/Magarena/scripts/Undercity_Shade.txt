@@ -6,6 +6,7 @@ type=Creature
 subtype=Shade
 cost={4}{B}
 pt=1/1
-ability=fear;{B}: SN gets +1/+1 until end of turn.
+ability=Fear;\
+        {B}: SN gets +1/+1 until end of turn.
 timing=main
 oracle=Fear\n{B}: Undercity Shade gets +1/+1 until end of turn.

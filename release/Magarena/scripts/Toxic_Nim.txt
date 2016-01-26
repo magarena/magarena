@@ -6,6 +6,7 @@ type=Creature
 subtype=Zombie
 cost={4}{B}{B}
 pt=4/1
-ability=infect;{B}: Regenerate SN.
+ability=Infect;\
+        {B}: Regenerate SN.
 timing=main
 oracle=Infect\n{B}: Regenerate Toxic Nim.

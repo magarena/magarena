@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Monk
 cost={2}{G}
 pt=2/2
-ability=Tap an untapped creature you control:SN gets +1/+1 until end of turn.
+ability=Tap an untapped creature you control: SN gets +1/+1 until end of turn.
 timing=main
 oracle=Tap an untapped creature you control: Topan Ascetic gets +1/+1 until end of turn.

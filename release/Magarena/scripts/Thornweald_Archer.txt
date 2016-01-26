@@ -1,11 +1,12 @@
 name=Thornweald Archer
 image=http://magiccards.info/scans/en/c14/219.jpg
 value=4.197
-ability=reach;deathtouch
 rarity=C
 type=Creature
 subtype=Elf,Archer
 cost={1}{G}
 pt=2/1
+ability=Reach;\
+        Deathtouch
 timing=main
 oracle=Reach\nDeathtouch

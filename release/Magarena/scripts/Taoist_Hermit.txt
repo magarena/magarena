@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Mystic
 cost={2}{G}
 pt=2/2
-ability=hexproof
+ability=Hexproof
 timing=main
 oracle=Hexproof

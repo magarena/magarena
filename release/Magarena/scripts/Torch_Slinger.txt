@@ -6,7 +6,7 @@ type=Creature
 subtype=Goblin,Shaman
 cost={2}{R}
 pt=2/2
-ability=kicker {1}{R};\
+ability=Kicker {1}{R};\
         When SN enters the battlefield, if it was kicked, SN deals 2 damage to target creature.
 timing=main
 oracle=Kicker {1}{R}\nWhen Torch Slinger enters the battlefield, if it was kicked, it deals 2 damage to target creature.

@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Insect,Druid
 cost={5}{G}{G}
 pt=5/5
-ability={G},{T}:Target creature gets +5/+5 until end of turn.
+ability={G}, {T}: Target creature gets +5/+5 until end of turn.
 timing=main
 oracle={G}, {T}: Target creature gets +5/+5 until end of turn.

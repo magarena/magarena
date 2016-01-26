@@ -7,7 +7,7 @@ type=Artifact,Creature
 subtype=Gnome
 cost={3}
 pt=3/3
-ability=echo {3};\
+ability=Echo {3};\
         Sacrifice SN: SN deals 1 damage to target creature or player.
 timing=main
 oracle=Echo {3}\nSacrifice Ticking Gnomes: Ticking Gnomes deals 1 damage to target creature or player.

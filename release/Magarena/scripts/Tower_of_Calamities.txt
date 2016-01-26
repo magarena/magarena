@@ -4,6 +4,6 @@ value=2.730
 rarity=R
 type=Artifact
 cost={4}
-ability={8},{T}:SN deals 12 damage to target creature.
+ability={8}, {T}: SN deals 12 damage to target creature.
 timing=artifact
 oracle={8}, {T}: Tower of Calamities deals 12 damage to target creature.

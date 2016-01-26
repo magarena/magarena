@@ -6,6 +6,6 @@ type=Creature
 subtype=Horse,Rebel
 cost={3}{W}
 pt=2/3
-ability=Sacrifice a land:SN gets +0/+3 until end of turn.
+ability=Sacrifice a land: SN gets +0/+3 until end of turn.
 timing=main
 oracle=Sacrifice a land: Trenching Steed gets +0/+3 until end of turn.

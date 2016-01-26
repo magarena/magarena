@@ -6,6 +6,7 @@ type=Creature
 subtype=Elf,Warrior
 cost={2}{G}{G}
 pt=3/1
-ability=protection from artifacts;infect
+ability=Protection from artifacts;\
+        Infect
 timing=main
 oracle=Protection from artifacts\nInfect

@@ -6,7 +6,7 @@ type=Creature
 subtype=Thalakos,Illusion
 cost={2}{U}
 pt=2/1
-ability=shadow;\
+ability=Shadow;\
         {U}: Put SN on top of its owner's library.
 timing=main
 oracle=Shadow\n{U}: Put Thalakos Mistfolk on top of its owner's library.

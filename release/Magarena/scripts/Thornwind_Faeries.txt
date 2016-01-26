@@ -6,6 +6,7 @@ type=Creature
 subtype=Faerie
 cost={1}{U}{U}
 pt=1/1
-ability=Flying;{T}: SN deals 1 damage to target creature or player.
+ability=Flying;\
+        {T}: SN deals 1 damage to target creature or player.
 timing=main
 oracle=Flying\n{T}: Thornwind Faeries deals 1 damage to target creature or player.

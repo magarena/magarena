@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental,Horse
 cost={5}{R}
 pt=5/5
-ability=haste;\
+ability=Haste;\
         When SN enters the battlefield, tap all other creatures.
 timing=fmain
 oracle=Haste\nWhen Thundermare enters the battlefield, tap all other creatures.

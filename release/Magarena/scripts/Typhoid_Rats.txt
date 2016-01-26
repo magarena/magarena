@@ -6,6 +6,6 @@ type=Creature
 subtype=Rat
 cost={B}
 pt=1/1
-ability=deathtouch
+ability=Deathtouch
 timing=main
 oracle=Deathtouch

@@ -1,11 +1,11 @@
 name=Tangle Mantis
 image=http://magiccards.info/scans/en/mbs/91.jpg
 value=3.008
-ability=Trample
 rarity=C
 type=Creature
 subtype=Insect
 cost={2}{G}{G}
 pt=3/4
+ability=Trample
 timing=main
 oracle=Trample

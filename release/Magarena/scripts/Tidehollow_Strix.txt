@@ -6,6 +6,7 @@ type=Artifact,Creature
 subtype=Bird
 cost={U}{B}
 pt=2/1
-ability=Flying;deathtouch
-timing=smain
+ability=Flying;\
+        Deathtouch
+timing=main
 oracle=Flying\nDeathtouch

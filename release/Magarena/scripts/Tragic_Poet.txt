@@ -6,6 +6,6 @@ type=Creature
 subtype=Human
 cost={W}
 pt=1/1
-ability={T},Sacrifice SN:Return target enchantment card from your graveyard to your hand.
+ability={T}, Sacrifice SN: Return target enchantment card from your graveyard to your hand.
 timing=main
 oracle={T}, Sacrifice Tragic Poet: Return target enchantment card from your graveyard to your hand.

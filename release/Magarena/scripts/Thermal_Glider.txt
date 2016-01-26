@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Rebel
 cost={2}{W}
 pt=2/1
-ability=protection from red;flying
+ability=Flying, protection from red
 timing=main
 oracle=Flying, protection from red

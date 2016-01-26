@@ -6,6 +6,7 @@ type=Legendary,Creature
 subtype=Horror
 cost={5}{B}{R}
 pt=7/4
-ability=first strike;protection from legendary creatures;{B}{B},{T}:Destroy target legendary creature. It can't be regenerated.
+ability=First strike, protection from legendary creatures;\
+        {B}{B}, {T}: Destroy target legendary creature. It can't be regenerated.
 timing=main
 oracle=First strike, protection from legendary creatures\n{B}{B}, {T}: Destroy target legendary creature. It can't be regenerated.

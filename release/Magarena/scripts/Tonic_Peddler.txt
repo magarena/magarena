@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Spellshaper
 cost={1}{W}
 pt=1/1
-ability={W},{T},Discard a card: Target player gains 3 life.
+ability={W}, {T}, Discard a card: Target player gains 3 life.
 timing=main
 oracle={W}, {T}, Discard a card: Target player gains 3 life.

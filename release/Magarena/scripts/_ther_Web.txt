@@ -6,6 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={1}{G}
 ability=Flash;\
+        Enchant creature;\
         Enchanted creature gets +1/+1, has reach, and can block creatures with shadow as though they didn't have shadow.
 timing=pumpFlash
 enchant=pump,pos creature

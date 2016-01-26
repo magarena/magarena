@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{R}
-ability=Enchanted creature gets +1/+0.;\
+ability=Enchant creature;\
+        Enchanted creature gets +1/+0.;\
         {R}{R}{R}: Regenerate enchanted creature.
 enchant=pump,pos creature
 timing=aura

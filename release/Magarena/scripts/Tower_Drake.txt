@@ -6,6 +6,7 @@ type=Creature
 subtype=Drake
 cost={2}{U}
 pt=2/1
-ability=Flying;{W}: SN gets +0/+1 until end of turn.
+ability=Flying;\
+        {W}: SN gets +0/+1 until end of turn.
 timing=main
 oracle=Flying\n{W}: Tower Drake gets +0/+1 until end of turn.

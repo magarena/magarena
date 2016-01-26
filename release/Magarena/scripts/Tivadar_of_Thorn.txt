@@ -6,8 +6,7 @@ type=Legendary,Creature
 subtype=Human,Knight
 cost={1}{W}{W}
 pt=2/2
-ability=first strike;\
-        protection from red;\
+ability=First strike, protection from red;\
         When SN enters the battlefield, destroy target Goblin.
 timing=main
 oracle=First strike, protection from red\nWhen Tivadar of Thorn enters the battlefield, destroy target Goblin.

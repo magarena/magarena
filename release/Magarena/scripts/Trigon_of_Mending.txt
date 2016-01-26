@@ -5,7 +5,7 @@ rarity=U
 type=Artifact
 cost={2}
 ability=SN enters the battlefield with three charge counters on it.;\
-        {W}{W},{T}: Put a charge counter on SN.;\
-        {2},{T},Remove a charge counter from SN: Target player gains 3 life.
+        {W}{W}, {T}: Put a charge counter on SN.;\
+        {2}, {T}, Remove a charge counter from SN: Target player gains 3 life.
 timing=artifact
 oracle=Trigon of Mending enters the battlefield with three charge counters on it.\n{W}{W}, {T}: Put a charge counter on Trigon of Mending.\n{2}, {T}, Remove a charge counter from Trigon of Mending: Target player gains 3 life.

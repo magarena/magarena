@@ -4,6 +4,6 @@ value=3.347
 rarity=U
 type=Land
 ability={T}: Add {C} to your mana pool.;\
-        {2},{T},Sacrifice SN:Search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.
+        {2}, {T}, Sacrifice SN: Search your library for a basic land card and put that card onto the battlefield tapped. Then shuffle your library.
 timing=land
 oracle={T}: Add {C} to your mana pool.\n{2}, {T}, Sacrifice Terminal Moraine: Search your library for a basic land card and put that card onto the battlefield tapped. Then shuffle your library.

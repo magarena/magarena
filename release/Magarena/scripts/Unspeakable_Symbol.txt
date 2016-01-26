@@ -4,6 +4,6 @@ value=3.203
 rarity=U
 type=Enchantment
 cost={1}{B}{B}
-ability=Pay 3 life:Put a +1/+1 counter on target creature.
+ability=Pay 3 life: Put a +1/+1 counter on target creature.
 timing=enchantment
 oracle=Pay 3 life: Put a +1/+1 counter on target creature.

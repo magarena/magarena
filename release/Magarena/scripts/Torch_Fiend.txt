@@ -6,6 +6,6 @@ type=Creature
 subtype=Devil
 cost={1}{R}
 pt=2/1
-ability={R},Sacrifice SN: Destroy target artifact.
+ability={R}, Sacrifice SN: Destroy target artifact.
 timing=main
 oracle={R}, Sacrifice Torch Fiend: Destroy target artifact.

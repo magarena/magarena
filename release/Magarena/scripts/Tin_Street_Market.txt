@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={4}{R}
-ability=Enchanted land has "{T}, Discard a card: Draw a card."
+ability=Enchant land;\
+        Enchanted land has "{T}, Discard a card: Draw a card."
+timing=aura
 enchant=pump,pos land
-timing=enchantment
 oracle=Enchant land\nEnchanted land has "{T}, Discard a card: Draw a card."

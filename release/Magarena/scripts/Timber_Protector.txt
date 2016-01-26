@@ -6,9 +6,9 @@ type=Creature
 subtype=Treefolk,Warrior
 cost={4}{G}
 pt=4/6
-ability=other treefolk creatures you control get +1/+1;\
-        other treefolk you control have indestructible;\
-        other forest you control have indestructible
+ability=Other Treefolk creatures you control get +1/+1.;\
+        Other Treefolk you control have indestructible.;\
+        Other Forests you control have indestructible.
 static=player
 timing=main
 oracle=Other Treefolk creatures you control get +1/+1.\nOther Treefolk and Forests you control have indestructible.

@@ -6,7 +6,7 @@ type=Creature
 subtype=Goblin,Warrior,Ally
 cost={4}{R}
 pt=2/2
-ability=haste;\
+ability=Haste;\
         Whenever SN or another Ally enters the battlefield under your control, you may put a +1/+1 counter on SN.
 timing=fmain
 oracle=Haste\nWhenever Tuktuk Grunts or another Ally enters the battlefield under your control, you may put a +1/+1 counter on Tuktuk Grunts.

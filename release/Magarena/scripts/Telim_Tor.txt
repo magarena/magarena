@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Human,Knight
 cost={4}{R}
 pt=2/2
-ability=flanking;\
-        Whenever SN attacks, attacking creatures with flanking get +1/+1 until end of turn.
+ability=Flanking;\
+        Whenever SN attacks, all attacking creatures with flanking get +1/+1 until end of turn.
 timing=main
 oracle=Flanking\nWhenever Telim'Tor attacks, all attacking creatures with flanking get +1/+1 until end of turn.

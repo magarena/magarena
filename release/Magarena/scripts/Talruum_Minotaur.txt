@@ -6,6 +6,6 @@ type=Creature
 subtype=Minotaur,Berserker
 cost={2}{R}{R}
 pt=3/3
-ability=haste
+ability=Haste
 timing=fmain
 oracle=Haste

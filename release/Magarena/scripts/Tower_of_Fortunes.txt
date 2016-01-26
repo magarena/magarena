@@ -4,6 +4,6 @@ value=3.133
 rarity=R
 type=Artifact
 cost={4}
-ability={8},{T}: Draw four cards.
+ability={8}, {T}: Draw four cards.
 timing=artifact
 oracle={8}, {T}: Draw four cards.

@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Spirit
 cost={6}{U}{U}{U}
 pt=6/7
-ability=Flying; trample;\
+ability=Flying, trample;\
         Whenever SN deals combat damage to a player, you may return target Arcane card from your graveyard to your hand.
 timing=main
 oracle=Flying, trample\nWhenever The Unspeakable deals combat damage to a player, you may return target Arcane card from your graveyard to your hand.

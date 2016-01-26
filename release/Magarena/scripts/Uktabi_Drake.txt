@@ -6,6 +6,7 @@ type=Creature
 subtype=Drake
 cost={G}
 pt=2/1
-ability=Flying;haste;echo {1}{G}{G}
+ability=Flying, haste;\
+        Echo {1}{G}{G}
 timing=fmain
 oracle=Flying, haste\nEcho {1}{G}{G}

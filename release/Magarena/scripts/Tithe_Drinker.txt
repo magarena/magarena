@@ -6,6 +6,7 @@ type=Creature
 subtype=Vampire
 cost={W}{B}
 pt=2/1
-ability=Lifelink;extort
+ability=Lifelink;\
+        Extort
 timing=main
 oracle=Lifelink\nExtort

@@ -6,6 +6,7 @@ type=Creature
 subtype=Viashino,Warrior
 cost={3}{R}
 pt=2/2
-ability=devour 2;{G}: SN gains trample until end of turn.
+ability=Devour 2;\
+        {G}: SN gains trample until end of turn.
 timing=main
 oracle=Devour 2\n{G}: Thorn-Thrash Viashino gains trample until end of turn.
