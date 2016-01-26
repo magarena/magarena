@@ -9,6 +9,7 @@ import magic.model.MagicRandom;
 import magic.model.MagicSource;
 import magic.model.event.MagicEvent;
 import magic.exception.UndoClickedException;
+import magic.exception.GameException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -47,8 +48,9 @@ public class MagicPayManaCostChoice extends MagicChoice {
     private Collection<Object> buildDelayedPayManaCostResults(final MagicGame game,final MagicPlayer player) {
         if (cost.hasX()) {
             final int maxX=player.getMaximumX(game,cost);
-            assert maxX > 0 : "Unable to pay for {X} in " + cost + " as maxX = " + maxX;
-            if (maxX == 1) {
+            if (maxX <= 0) {
+                throw new GameException("Unable to pay for {X} in " + cost + " as maxX = " + maxX, game);
+            } else if (maxX == 1) {
                 return Collections.<Object>singletonList(new MagicDelayedPayManaCostResult(cost,1));
             } else {
                 final List<Object> choices=new ArrayList<Object>();
