@@ -836,6 +836,10 @@ sims_count:
 groovy-by-size:
 	ls -1Sr `grep executeEvent release/Magarena/scripts/*.groovy -l` > $@
 
+normalize_scripts.diff:
+	diff -d -ru -I rarity= -I removal= -I image -I enchant= -I effect= -I value= -I static= -I timing= -I mana= \
+	release/Magarena/scripts scripts-builder/OUTPUT/scripts_missing | grep -v Only > $@
+
 # export GITHUB_TOKEN=`cat token`
 create-draft-release:
 	github-release release \
