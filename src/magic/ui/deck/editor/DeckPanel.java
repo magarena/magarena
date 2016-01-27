@@ -164,8 +164,7 @@ class DeckPanel extends JPanel implements IDeckEditorView {
             deck = getDeckCopy(newDeck);
         }
         deckTablePanel.setTitle(getDeckTitle(deck));
-        deckTablePanel.setCards(deck);
-        deckTablePanel.selectFirstRow();
+        deckTablePanel.setDeck(deck);
         listener.deckUpdated(getDeck());
     }
 

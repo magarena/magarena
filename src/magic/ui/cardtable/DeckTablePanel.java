@@ -13,6 +13,7 @@ import javax.swing.event.ListSelectionListener;
 import javax.swing.event.TableModelEvent;
 import magic.data.GeneralConfig;
 import magic.model.MagicCardDefinition;
+import magic.model.MagicDeck;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
@@ -36,6 +37,7 @@ public class DeckTablePanel extends TexturedPanel {
     private List<MagicCardDefinition> lastSelectedCards;
     private boolean isAdjusting = false;
     private int lastSelectedRow = -1;
+    private final ListSelectionListener listSelListener;
 
     public DeckTablePanel(final List<MagicCardDefinition> defs, final String title) {
 
@@ -55,7 +57,8 @@ public class DeckTablePanel extends TexturedPanel {
         // add title
         titleBar = new TitleBar(title);
 
-        table.getSelectionModel().addListSelectionListener(getTableListSelectionListener());
+        this.listSelListener = getTableListSelectionListener();
+        table.getSelectionModel().addListSelectionListener(listSelListener);
         table.addMouseListener(getTableMouseAdapter());
         if (!GeneralConfig.getInstance().isPreviewCardOnSelect()) {
             table.addMouseMotionListener(new RowMouseOverListener());
@@ -84,6 +87,7 @@ public class DeckTablePanel extends TexturedPanel {
             public void mousePressed(MouseEvent e) {
                 if (!isAdjusting) {
                     if (SwingUtilities.isLeftMouseButton(e)) {
+                        table.getSelectionModel().removeListSelectionListener(listSelListener);
                         firePropertyChange(CP_CARD_LCLICKED, false, true);
                     } else if (SwingUtilities.isRightMouseButton(e)) {
                         final Point p = e.getPoint();
@@ -146,13 +150,18 @@ public class DeckTablePanel extends TexturedPanel {
         }
     }
 
-    public void setCards(final List<MagicCardDefinition> defs) {
-        tableModel.setCards(defs);
+    public void setDeck(MagicDeck aDeck) {
+        tableModel.setCards(aDeck);
         table.tableChanged(new TableModelEvent(tableModel));
         table.repaint();
-
         reselectLastCards();
+        table.getSelectionModel().addListSelectionListener(listSelListener);
+    }
 
+    public void setCards(final List<MagicCardDefinition> defs) {
+        tableModel.setCards(defs);
+        table.repaint();
+        table.getSelectionModel().addListSelectionListener(listSelListener);
     }
 
     public void setTitle(final String title) {
