@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={4}{B}{B}
+ability=Enchant land;\
+        Enchanted land has "{T}: Target player loses 3 life."
+timing=aura
 enchant=pump,pos land
-ability=Enchanted land has "{T}: Target player loses 3 life."
-timing=enchantment
 oracle=Enchant land\nEnchanted land has "{T}: Target player loses 3 life."

@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={3}{G}
-ability=Enchanted creature doesn't untap during its controller's untap step.
+ability=Enchant tapped creature;\
+        Enchanted creature doesn't untap during its controller's untap step.
 timing=aura
 enchant=can't attack or block,neg tapped creature
 oracle=Enchant tapped creature\nEnchanted creature doesn't untap during its controller's untap step.

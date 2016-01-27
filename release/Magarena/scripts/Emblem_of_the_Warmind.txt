@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{R}
-ability=creatures you control have haste
+ability=Enchant creature you control;\
+        Creatures you control have haste.
 static=player
 timing=aura
 enchant=pump,creature you control

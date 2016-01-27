@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={R}{R}
-ability=Enchanted creature gets +2/+2.
+ability=Enchant creature;\
+        Enchanted creature gets +2/+2.
 timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature gets +2/+2.

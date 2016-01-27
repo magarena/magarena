@@ -6,10 +6,9 @@ type=Legendary,Creature
 subtype=Zombie,Cleric
 cost={3}{B}{B}{B}
 pt=5/5
-ability=intimidate;\
+ability=Intimidate;\
         Whenever a Human deals damage to you, destroy RN.;\
-        other non-human creatures you control get +1/+1;\
-        other non-human creatures you control have undying
+        Other non-Human creatures you control get +1/+1 and have undying.
 static=player
 timing=main
 oracle=Intimidate\nWhenever a Human deals damage to you, destroy it.\nOther non-Human creatures you control get +1/+1 and have undying.

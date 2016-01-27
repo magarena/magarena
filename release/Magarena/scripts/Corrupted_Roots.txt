@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={B}
-ability=Whenever enchanted land becomes tapped, RN's controller loses 2 life.
+ability=Enchant Forest or Plains;\
+        Whenever enchanted land becomes tapped, RN's controller loses 2 life.
 timing=aura
 enchant=tap,neg Forest or Plains
 oracle=Enchant Forest or Plains\nWhenever enchanted land becomes tapped, its controller loses 2 life.

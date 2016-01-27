@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={U}
-ability=Enchanted creature doesn't untap during its controller's untap step.
+ability=Enchant red or green creature;\
+        Enchanted creature doesn't untap during its controller's untap step.
 enchant=tap,neg red or green creature
 timing=aura
 oracle=Enchant red or green creature\nEnchanted creature doesn't untap during its controller's untap step.

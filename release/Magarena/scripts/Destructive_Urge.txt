@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{R}{R}
-ability=Whenever enchanted creature deals combat damage to a player, that player sacrifices a land.
+ability=Enchant creature;\
+        Whenever enchanted creature deals combat damage to a player, that player sacrifices a land.
 timing=aura
 enchant=power,pos creature
 oracle=Enchant creature\nWhenever enchanted creature deals combat damage to a player, that player sacrifices a land.

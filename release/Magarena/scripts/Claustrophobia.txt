@@ -6,8 +6,9 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}{U}
-ability=When SN enters the battlefield, tap enchanted creature.;\
+ability=Enchant creature;\
+        When SN enters the battlefield, tap enchanted creature.;\
         Enchanted creature doesn't untap during its controller's untap step.
-timing=tapping
+timing=aura
 enchant=can't attack or block,neg creature
 oracle=Enchant creature\nWhen Claustrophobia enters the battlefield, tap enchanted creature.\nEnchanted creature doesn't untap during its controller's untap step.

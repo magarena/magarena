@@ -5,7 +5,8 @@ rarity=R
 type=Enchantment
 subtype=Aura
 cost={3}{W}
-ability=Enchanted permanent has indestructible.
+ability=Enchant permanent;\
+        Enchanted permanent has indestructible.
 timing=aura
 enchant=indestructible,pos permanent
 oracle=Enchant permanent\nEnchanted permanent has indestructible.

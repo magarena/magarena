@@ -6,7 +6,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={B}
-ability=Enchanted creature gets -1/-1 and has fear.
+ability=Enchant creature;\
+        Enchanted creature gets -1/-1 and has fear.
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\nEnchanted creature gets -1/-1 and has fear.

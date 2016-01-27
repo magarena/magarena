@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={R}
-ability=When SN enters the battlefield, draw a card.;\
+ability=Enchant creature;\
+        When SN enters the battlefield, draw a card.;\
         Enchanted creature has "{R}: SN gets +1/+0 until end of turn."
 enchant=pump,pos creature
 timing=aura

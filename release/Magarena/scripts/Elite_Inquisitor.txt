@@ -6,6 +6,9 @@ type=Creature
 subtype=Human,Soldier
 cost={W}{W}
 pt=2/2
-ability=first strike;vigilance;protection from Vampires;protection from Werewolves;protection from Zombies
+ability=First strike, vigilance;\
+        Protection from Vampires;\
+        Protection from Werewolves;\
+        Protection from Zombies
 timing=main
 oracle=First strike, vigilance\nProtection from Vampires, from Werewolves, and from Zombies

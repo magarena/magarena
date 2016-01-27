@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={U}
-ability=Enchanted creature has "At the beginning of your upkeep, you may discard a card. If you don't, sacrifice this creature."
+ability=Enchant green or white creature;\
+        Enchanted creature has "At the beginning of your upkeep, you may discard a card. If you don't, sacrifice this creature."
 enchant=exile,neg green or white creature
 timing=aura
 oracle=Enchant green or white creature\nEnchanted creature has "At the beginning of your upkeep, sacrifice this creature unless you discard a card."

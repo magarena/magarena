@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{G}{G}
-ability=Enchanted creature gets +3/+3 and has trample.;\
+ability=Enchant creature;\
+        Enchanted creature gets +3/+3 and has trample.;\
         {G}: Regenerate enchanted creature.
 timing=aura
 enchant=pump,pos creature

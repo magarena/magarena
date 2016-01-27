@@ -10,5 +10,5 @@ ability=Flash;\
         When SN enters the battlefield, choose one — \
         (1) Untap target permanent you control. \
         (2) Tap target permanent an opponent controls.
-timing=main
+timing=flash
 oracle=Flash\nWhen Deceiver Exarch enters the battlefield, choose one —\n• Untap target permanent you control.\n• Tap target permanent an opponent controls.

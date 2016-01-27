@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{G}
-ability=Enchanted creature has shroud.;\
+ability=Enchant creature;\
+        Enchanted creature has shroud.;\
         When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.
 timing=aura
 enchant=shroud,pos creature

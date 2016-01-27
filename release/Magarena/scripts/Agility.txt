@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{R}
-ability=Enchanted creature gets +1/+1 and has flanking.
+ability=Enchant creature;\
+        Enchanted creature gets +1/+1 and has flanking.
 timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature gets +1/+1 and has flanking.

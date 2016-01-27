@@ -6,6 +6,6 @@ type=Creature
 subtype=Unicorn
 cost={1}{W}
 pt=1/2
-ability={1}{W},{T},Sacrifice SN:Destroy target artifact or enchantment.
+ability={1}{W}, {T}, Sacrifice SN: Destroy target artifact or enchantment.
 timing=main
 oracle={1}{W}, {T}, Sacrifice Capashen Unicorn: Destroy target artifact or enchantment.

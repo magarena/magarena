@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Spellshaper
 cost={2}{W}
 pt=2/2
-ability={1}{W},{T},Discard a card:Destroy target artifact or enchantment.
+ability={1}{W}, {T}, Discard a card: Destroy target artifact or enchantment.
 timing=main
 oracle={1}{W}, {T}, Discard a card: Destroy target artifact or enchantment.

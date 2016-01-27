@@ -6,6 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={1}{U}
 ability=Flash;\
+        Enchant creature;\
         Enchanted creature has flying.
 timing=pumpFlash
 enchant=flying,pos creature

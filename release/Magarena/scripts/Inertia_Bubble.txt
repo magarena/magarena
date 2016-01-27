@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-ability=Enchanted artifact doesn't untap during its controller's untap step.
+ability=Enchant artifact;\
+        Enchanted artifact doesn't untap during its controller's untap step.
+timing=aura
 enchant=tap,neg artifact
-timing=enchantment
 oracle=Enchant artifact\nEnchanted artifact doesn't untap during its controller's untap step.

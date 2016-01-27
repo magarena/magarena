@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={R}
-ability=Enchanted creature has vigilance.
+ability=Enchant creature;\
+        Enchanted creature has vigilance.
 timing=aura
 enchant=default,pos creature
 oracle=Enchant creature\nEnchanted creature has vigilance.

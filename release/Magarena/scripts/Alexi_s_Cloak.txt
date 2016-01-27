@@ -6,6 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={1}{U}
 ability=Flash;\
+        Enchant creature;\
         Enchanted creature has shroud.
 timing=pumpFlash
 enchant=shroud,pos creature

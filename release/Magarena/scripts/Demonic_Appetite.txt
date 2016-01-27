@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={B}
-ability=Enchanted creature gets +3/+3.;\
+ability=Enchant creature you control;\
+        Enchanted creature gets +3/+3.;\
         At the beginning of your upkeep, sacrifice a creature.
 timing=aura
 enchant=pump,creature you control

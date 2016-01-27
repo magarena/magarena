@@ -6,6 +6,6 @@ type=Creature
 subtype=Elf,Druid
 cost={1}{G}
 pt=1/1
-ability={T}: Add {R} or {G} or {W} to your mana pool.
+ability={T}: Add {R}, {G}, or {W} to your mana pool.
 timing=main
 oracle={T}: Add {R}, {G}, or {W} to your mana pool.

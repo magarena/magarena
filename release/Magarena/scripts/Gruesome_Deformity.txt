@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={B}
-ability=Enchanted creature has intimidate.
+ability=Enchant creature;\
+        Enchanted creature has intimidate.
 timing=aura
 enchant=unblockable,pos creature
 oracle=Enchant creature\nEnchanted creature has intimidate.

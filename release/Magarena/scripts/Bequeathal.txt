@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={G}
-ability=When enchanted creature dies, you draw two cards.
+ability=Enchant creature;\
+        When enchanted creature dies, you draw two cards.
+timing=aura
 enchant=pump,creature
-timing=enchantment
 oracle=Enchant creature\nWhen enchanted creature dies, you draw two cards.

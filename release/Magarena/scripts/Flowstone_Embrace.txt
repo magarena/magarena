@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{R}
-ability={T}: Enchanted creature gets +2/-2 until end of turn.
+ability=Enchant creature;\
+        {T}: Enchanted creature gets +2/-2 until end of turn.
 timing=aura
 enchant=weaken +2/-2,creature
 oracle=Enchant creature\n{T}: Enchanted creature gets +2/-2 until end of turn.

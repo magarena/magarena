@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{W}
-ability=When SN enters the battlefield, you gain 3 life.;\
+ability=Enchant creature;\
+        When SN enters the battlefield, you gain 3 life.;\
         Enchanted creature gets +1/+3.
 timing=aura
 enchant=pump,pos creature

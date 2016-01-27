@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{G}
-ability=Enchanted creature gets +2/+2 for each other enchantment on the battlefield.
-timing=main
+ability=Enchant creature;\
+        Enchanted creature gets +2/+2 for each other enchantment on the battlefield.
+timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature gets +2/+2 for each other enchantment on the battlefield.

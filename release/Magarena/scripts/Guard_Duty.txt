@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={W}
-ability=Enchanted creature has defender.
+ability=Enchant creature;\
+        Enchanted creature has defender.
 timing=aura
 enchant=defender,neg creature
 oracle=Enchant creature\nEnchanted creature has defender.

@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={4}{U}
-ability=Enchanted creature gets +3/+3 and has flying.;\
+ability=Enchant creature;\
+        Enchanted creature gets +3/+3 and has flying.;\
         Totem armor
 timing=aura
 enchant=pump,pos creature

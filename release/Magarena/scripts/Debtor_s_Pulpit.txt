@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={4}{W}
-enchant=pump,pos land
-ability=Enchanted land has "{T}: Tap target creature."
+ability=Enchant land;\
+        Enchanted land has "{T}: Tap target creature."
 timing=aura
+enchant=pump,pos land
 oracle=Enchant land\nEnchanted land has "{T}: Tap target creature."

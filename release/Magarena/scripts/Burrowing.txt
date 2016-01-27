@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={R}
-ability=Enchanted creature has mountainwalk.
+ability=Enchant creature;\
+        Enchanted creature has mountainwalk.
 timing=aura
 enchant=unblockable,pos creature
 oracle=Enchant creature\nEnchanted creature has mountainwalk.

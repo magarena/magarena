@@ -6,7 +6,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{W}
-ability=When SN enters the battlefield, draw a card.;\
+ability=Enchant creature;\
+        When SN enters the battlefield, draw a card.;\
         Enchanted creature has flying.
 timing=aura
 enchant=flying,creature

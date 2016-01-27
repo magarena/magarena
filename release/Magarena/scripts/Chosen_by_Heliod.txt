@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{W}
-ability=When SN enters the battlefield, draw a card.;\
+ability=Enchant creature;\
+        When SN enters the battlefield, draw a card.;\
         Enchanted creature gets +0/+2.
 timing=aura
 enchant=pump,pos creature

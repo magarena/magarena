@@ -6,7 +6,8 @@ rarity=U
 type=Tribal,Enchantment
 subtype=Rebel,Aura
 cost={2}{W}
-ability=Enchanted creature can't attack or block.
-timing=tapping
+ability=Enchant creature;\
+        Enchanted creature can't attack or block.
+timing=aura
 enchant=can't attack or block,neg creature
 oracle=Enchant creature\nEnchanted creature can't attack or block.

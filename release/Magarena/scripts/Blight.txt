@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={B}{B}
-ability=When enchanted land becomes tapped, destroy RN.
+ability=Enchant land;\
+        When enchanted land becomes tapped, destroy RN.
+timing=aura
 enchant=destroy,neg land
-timing=removal
 oracle=Enchant land\nWhen enchanted land becomes tapped, destroy it.

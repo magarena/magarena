@@ -5,8 +5,9 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{W}
-ability=Enchanted creature can't attack.;\
+ability=Enchant creature;\
+        Enchanted creature can't attack.;\
         {2}{W}: Return SN to its owner's hand.
-timing=main
+timing=aura
 enchant=can't attack,neg creature
 oracle=Enchant creature\nEnchanted creature can't attack.\n{2}{W}: Return Forced Worship to its owner's hand.

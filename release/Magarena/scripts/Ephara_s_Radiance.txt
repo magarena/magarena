@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={W}
-ability=Enchanted creature has "{1}{W}, {T}: You gain 3 life."
+ability=Enchant creature;\
+        Enchanted creature has "{1}{W}, {T}: You gain 3 life."
 timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature has "{1}{W}, {T}: You gain 3 life."

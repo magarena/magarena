@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={4}{U}
-ability=Enchanted creature gets +4/+4.;\
+ability=Enchant creature;\
+        Enchanted creature gets +4/+4.;\
         When enchanted creature becomes the target of a spell or ability, sacrifice SN.
 timing=aura
 enchant=pump,pos creature

@@ -5,7 +5,8 @@ rarity=R
 type=Tribal,Enchantment
 subtype=Eldrazi,Aura
 cost={8}
-ability=Enchanted creature gets +10/+10 and has trample and annihilator 2.
+ability=Enchant creature;\
+        Enchanted creature gets +10/+10 and has trample and annihilator 2.
 timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature gets +10/+10 and has trample and annihilator 2.

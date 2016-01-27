@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={R}
-ability={R}: Enchanted creature gets +1/+0 until end of turn.
-enchant=pump,pos creature
+ability=Enchant creature;\
+        {R}: Enchanted creature gets +1/+0 until end of turn.
 timing=aura
+enchant=pump,pos creature
 oracle=Enchant creature\n{R}: Enchanted creature gets +1/+0 until end of turn.

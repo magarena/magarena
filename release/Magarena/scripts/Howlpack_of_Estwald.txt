@@ -1,10 +1,10 @@
 name=Howlpack of Estwald
 image=http://magiccards.info/scans/en/isd/209b.jpg
 value=3.240
-color=g
 rarity=C
 type=Creature
 subtype=Werewolf
+color=g
 pt=4/6
 ability=At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
 transform=Villagers of Estwald

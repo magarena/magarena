@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={R}
-ability=Enchanted creature gets +2/+0 and can't be blocked by creatures with flying.
+ability=Enchant creature;\
+        Enchanted creature gets +2/+0 and can't be blocked by creatures with flying.
 timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature gets +2/+0 and can't be blocked by creatures with flying.

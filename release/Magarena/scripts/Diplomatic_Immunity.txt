@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-ability=Shroud;\
+ability=Enchant creature;\
+        Shroud;\
         Enchanted creature has shroud.
 timing=aura
 enchant=shroud,pos creature

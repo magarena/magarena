@@ -7,6 +7,6 @@ subtype=Elemental
 cost={4}{B}{R}
 pt=5/1
 ability=Haste;\
-        Swampcycling {2};Mountaincycling {2}
+        Swampcycling {2}; mountaincycling {2}
 timing=main
 oracle=Haste\nSwampcycling {2}, mountaincycling {2}

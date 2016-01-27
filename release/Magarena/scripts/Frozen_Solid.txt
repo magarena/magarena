@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}{U}
-ability=Enchanted creature doesn't untap during its controller's untap step.;\
+ability=Enchant creature;\
+        Enchanted creature doesn't untap during its controller's untap step.;\
         When enchanted creature is dealt damage, destroy RN.
 timing=aura
 enchant=can't attack or block,neg creature

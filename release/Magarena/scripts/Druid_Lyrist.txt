@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Druid
 cost={G}
 pt=1/1
-ability={G},{T},Sacrifice SN:Destroy target enchantment.
+ability={G}, {T}, Sacrifice SN: Destroy target enchantment.
 timing=main
 oracle={G}, {T}, Sacrifice Druid Lyrist: Destroy target enchantment.

@@ -5,8 +5,9 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={R}
-ability=Enchanted creature gets +1/+0.;\
+ability=Enchant creature;\
+        Enchanted creature gets +1/+0.;\
         Sacrifice SN: SN deals 1 damage to target creature.
-timing=enchantment
+timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature gets +1/+0.\nSacrifice Crackling Club: Crackling Club deals 1 damage to target creature.

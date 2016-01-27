@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={R}
-ability=Enchanted creature gets +2/+2 and attacks each turn if able.
+ability=Enchant creature;\
+        Enchanted creature gets +2/+2 and attacks each turn if able.
 timing=aura
 enchant=must attack,creature
 oracle=Enchant creature\nEnchanted creature gets +2/+2 and attacks each turn if able.

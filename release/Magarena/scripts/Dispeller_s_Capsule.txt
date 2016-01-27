@@ -4,6 +4,6 @@ value=3.870
 rarity=C
 type=Artifact
 cost={W}
-ability={2}{W},{T},Sacrifice SN:Destroy target artifact or enchantment.
+ability={2}{W}, {T}, Sacrifice SN: Destroy target artifact or enchantment.
 timing=artifact
 oracle={2}{W}, {T}, Sacrifice Dispeller's Capsule: Destroy target artifact or enchantment.

@@ -6,6 +6,7 @@ type=Creature
 subtype=Griffin
 cost={4}{W}
 pt=2/3
-ability=Flying;{1}{W}: Prevent the next 1 damage that would be dealt to you this turn.
+ability=Flying;\
+        {1}{W}: Prevent the next 1 damage that would be dealt to you this turn.
 timing=main
 oracle=Flying\n{1}{W}: Prevent the next 1 combat damage that would be dealt to you this turn.

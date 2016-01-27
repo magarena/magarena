@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={2}{B}
-ability=Enchanted creature gets -1/-1 and has "{T}: Target creature gets -1/-1 until end of turn."
+ability=Enchant creature;\
+        Enchanted creature gets -1/-1 and has "{T}: Target creature gets -1/-1 until end of turn."
 timing=aura
 enchant=default,creature
 oracle=Enchant creature\nEnchanted creature gets -1/-1 and has "{T}: Target creature gets -1/-1 until end of turn."

@@ -7,6 +7,6 @@ subtype=Zombie
 cost={4}{U}{B}
 pt=2/4
 ability=Fear;\
-        Islandcycling {2};Swampcycling {2}
+        Islandcycling {2}; swampcycling {2}
 timing=main
 oracle=Fear\nIslandcycling {2}, swampcycling {2}

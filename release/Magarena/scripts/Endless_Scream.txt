@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={X}{B}
-ability=SN enters the battlefield with X scream counters on it.;\
+ability=Enchant creature;\
+        SN enters the battlefield with X scream counters on it.;\
         Enchanted creature gets +1/+0 for each scream counter on SN.
 timing=aura
 enchant=pump,pos creature

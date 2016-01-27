@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-ability=Enchanted creature has islandwalk.
+ability=Enchant creature;\
+        Enchanted creature has islandwalk.
 timing=aura
 enchant=unblockable,pos creature
 oracle=Enchant creature\nEnchanted creature has islandwalk.

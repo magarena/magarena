@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={G}
-ability=At the beginning of your upkeep, put a +1/+1 counter on enchanted creature.
+ability=Enchant creature;\
+        At the beginning of your upkeep, put a +1/+1 counter on enchanted creature.
 timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nAt the beginning of your upkeep, put a +1/+1 counter on enchanted creature.

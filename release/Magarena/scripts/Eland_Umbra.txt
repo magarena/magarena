@@ -5,8 +5,9 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{W}
-ability=Enchanted creature gets +0/+4.;\
-        totem armor
+ability=Enchant creature;\
+        Enchanted creature gets +0/+4.;\
+        Totem armor
 timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature gets +0/+4.\nTotem armor

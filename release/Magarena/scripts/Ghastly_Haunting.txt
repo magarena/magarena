@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 color=u
-ability=You control enchanted creature.
+ability=Enchant creature;\
+        You control enchanted creature.
 transform=Soul Seizer
 timing=aura
 hidden

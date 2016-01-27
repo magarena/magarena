@@ -5,8 +5,9 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{B}
-ability=Enchanted creature gets +3/+1.;\
-        When SN enters the battlefield, you lose 1 life.
+ability=Enchant creature;\
+        When SN enters the battlefield, you lose 1 life.;\
+        Enchanted creature gets +3/+1.
 timing=aura
 enchant=pump,pos creature
 oracle=Enchant creature\nWhen Dark Favor enters the battlefield, you lose 1 life.\nEnchanted creature gets +3/+1.

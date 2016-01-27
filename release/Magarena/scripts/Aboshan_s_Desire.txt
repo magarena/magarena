@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={U}
-ability=Enchanted creature has flying.;\
+ability=Enchant creature;\
+        Enchanted creature has flying.;\
         Enchanted creature has shroud as long as seven or more cards are in your graveyard.
 enchant=flying,pos creature
 timing=aura

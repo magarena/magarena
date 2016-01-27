@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{W}
-ability=Enchanted creature has flying, first strike, and vigilance.
+ability=Enchant creature;\
+        Enchanted creature has flying, first strike, and vigilance.
 timing=aura
 enchant=flying,pos creature
 oracle=Enchant creature\nEnchanted creature has flying, first strike, and vigilance.

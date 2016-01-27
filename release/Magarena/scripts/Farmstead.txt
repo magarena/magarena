@@ -5,7 +5,8 @@ rarity=R
 type=Enchantment
 subtype=Aura
 cost={W}{W}{W}
-ability=Enchanted land has "At the beginning of your upkeep, you may pay {W}{W}. If you do, you gain 1 life."
-enchant=pump,pos land
+ability=Enchant land;\
+        Enchanted land has "At the beginning of your upkeep, you may pay {W}{W}. If you do, you gain 1 life."
 timing=aura
+enchant=pump,pos land
 oracle=Enchant land\nEnchanted land has "At the beginning of your upkeep, you may pay {W}{W}. If you do, you gain 1 life."

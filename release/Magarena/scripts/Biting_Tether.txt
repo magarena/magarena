@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={4}{U}
-ability=You control enchanted creature.;\
+ability=Enchant creature;\
+        You control enchanted creature.;\
         At the beginning of your upkeep, put a -1/-1 counter on enchanted creature.
 timing=aura
 enchant=gain control,neg creature

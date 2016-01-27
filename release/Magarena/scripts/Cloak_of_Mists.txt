@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-ability=Enchanted creature can't be blocked.
+ability=Enchant creature;\
+        Enchanted creature can't be blocked.
 timing=aura
 enchant=unblockable,pos creature
 oracle=Enchant creature\nEnchanted creature can't be blocked.

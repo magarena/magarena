@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={B}{B}
-ability=Enchanted creature has fear.
+ability=Enchant creature;\
+        Enchanted creature has fear.
 timing=aura
 enchant=unblockable,pos creature
 oracle=Enchant creature\nEnchanted creature has fear.

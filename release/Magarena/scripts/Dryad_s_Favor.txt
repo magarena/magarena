@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={G}
-ability=Enchanted creature has forestwalk.
+ability=Enchant creature;\
+        Enchanted creature has forestwalk.
 timing=aura
 enchant=unblockable,pos creature
 oracle=Enchant creature\nEnchanted creature has forestwalk.

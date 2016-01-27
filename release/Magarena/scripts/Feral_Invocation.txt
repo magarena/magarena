@@ -6,6 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={2}{G}
 ability=Flash;\
+        Enchant creature;\
         Enchanted creature gets +2/+2.
 timing=pumpFlash
 enchant=pump,pos creature

@@ -6,6 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={4}{G}{G}
 ability=Flash;\
+        Enchant creature;\
         Enchanted creature gets +5/+5 and has trample.
 timing=pumpFlash
 enchant=pump,pos creature

@@ -6,7 +6,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={W}
-ability={1}: Tap enchanted creature.
-timing=tapping
+ability=Enchant creature;\
+        {1}: Tap enchanted creature.
+timing=aura
 enchant=tap,neg creature
 oracle=Enchant creature\n{1}: Tap enchanted creature.

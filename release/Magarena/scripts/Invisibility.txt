@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={U}{U}
-ability=Enchanted creature can't be blocked except by Walls.
-enchant=unblockable,pos creature
+ability=Enchant creature;\
+        Enchanted creature can't be blocked except by Walls.
 timing=aura
+enchant=unblockable,pos creature
 oracle=Enchant creature\nEnchanted creature can't be blocked except by Walls.

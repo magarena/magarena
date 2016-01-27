@@ -6,7 +6,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={5}{U}
-ability=When SN enters the battlefield, draw a card.;\
+ability=Enchant creature;\
+        When SN enters the battlefield, draw a card.;\
         Enchanted creature doesn't untap during its controller's untap step.
 timing=tapping
 enchant=can't attack or block,neg creature

@@ -6,6 +6,6 @@ type=Creature
 subtype=Centaur,Shaman
 cost={4}{G}
 pt=3/4
-ability={2}{G},{T}:Return target enchantment card from your graveyard to your hand.
+ability={2}{G}, {T}: Return target enchantment card from your graveyard to your hand.
 timing=main
 oracle={2}{G}, {T}: Return target enchantment card from your graveyard to your hand.

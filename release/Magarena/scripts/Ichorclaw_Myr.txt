@@ -6,6 +6,7 @@ type=Artifact,Creature
 subtype=Myr
 cost={2}
 pt=1/1
-ability=infect;Whenever SN becomes blocked, SN gets +2/+2 until end of turn.
+ability=Infect;\
+        Whenever SN becomes blocked, SN gets +2/+2 until end of turn.
 timing=main
 oracle=Infect\nWhenever Ichorclaw Myr becomes blocked, it gets +2/+2 until end of turn.

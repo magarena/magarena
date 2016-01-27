@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{W}
-ability=Enchanted creature gets +2/+2.;\
+ability=Enchant creature;\
+        Enchanted creature gets +2/+2.;\
         Enchanted creature has vigilance as long as you control a black or green permanent.
 timing=aura
 enchant=pump,pos creature

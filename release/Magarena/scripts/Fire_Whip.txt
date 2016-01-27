@@ -5,8 +5,9 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{R}
-ability=Enchanted creature has "{T}: SN deals 1 damage to target creature or player.";\
-        Sacrifice SN:SN deals 1 damage to target creature or player.
+ability=Enchant creature you control;\
+        Enchanted creature has "{T}: SN deals 1 damage to target creature or player.";\
+        Sacrifice SN: SN deals 1 damage to target creature or player.
 enchant=pump,creature you control
 timing=aura
 oracle=Enchant creature you control\nEnchanted creature has "{T}: This creature deals 1 damage to target creature or player."\nSacrifice Fire Whip: Fire Whip deals 1 damage to target creature or player.

@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{W}
-ability=Enchanted creature gets +1/+2.;\
+ability=Enchant creature;\
+        Enchanted creature gets +1/+2.;\
         When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.
 timing=aura
 enchant=pump,pos creature
