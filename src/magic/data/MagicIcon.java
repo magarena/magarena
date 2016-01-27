@@ -90,8 +90,6 @@ public enum MagicIcon {
     REGENERATED("regenerated.gif"),
     DAMAGE("damage.gif"),
     COMBAT("combat.gif"),
-    ATTACK("attack.gif"),
-    BLOCK("block.gif"),
     BLOCKED("blocked.gif"),
     LOSE("lose.png"),
     TARGET("target.gif"),

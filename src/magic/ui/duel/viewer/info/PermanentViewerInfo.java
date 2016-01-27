@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
-import javax.swing.ImageIcon;
 import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
@@ -14,7 +13,6 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicType;
 import magic.model.stack.MagicItemOnStack;
-import magic.ui.MagicImages;
 
 public class PermanentViewerInfo {
 
@@ -45,7 +43,6 @@ public class PermanentViewerInfo {
     public final MagicCardDefinition cardDefinition;
     public final String name;
     public final String blockedName;
-    public final ImageIcon icon;
     public final String powerToughness;
     public final Set<MagicAbility> abilityFlags;
     public final int damage;
@@ -72,7 +69,6 @@ public class PermanentViewerInfo {
         this.permanent=permanent;
         cardDefinition=permanent.getCardDefinition();
         name=permanent.getName();
-        icon=MagicImages.getIcon(permanent);
         powerToughness=getPowerToughness(permanent);
         abilityFlags=permanent.getAbilityFlags();
         damage=permanent.getDamage();

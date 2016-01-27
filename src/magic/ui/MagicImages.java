@@ -16,7 +16,6 @@ import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicDeck;
 import magic.model.MagicManaType;
-import magic.model.MagicPermanent;
 import magic.model.player.PlayerProfile;
 import magic.ui.cardBuilder.renderers.CardBuilder;
 import magic.ui.prefs.ImageSizePresets;
@@ -135,18 +134,6 @@ public final class MagicImages {
                 return getBigManaIcon(MagicIcon.MANA_RED);
         }
         throw new RuntimeException("No icon for MagicColor " + c);
-    }
-
-    public static ImageIcon getIcon(MagicPermanent perm) {
-        if (perm.isAttacking()) {
-            return getIcon(MagicIcon.ATTACK);
-        } else if (perm.isBlocking()) {
-            return getIcon(MagicIcon.BLOCK);
-        } else if (perm.isCreature()) {
-            return getIcon(MagicIcon.CREATURE);
-        } else {
-            return getIcon(perm.getCardDefinition());
-        }
     }
 
     public static ImageIcon getIcon(MagicCardDefinition cdef) {
