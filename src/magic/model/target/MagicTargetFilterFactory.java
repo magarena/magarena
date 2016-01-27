@@ -1143,6 +1143,13 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicPermanentFilterImpl NONWHITE_NONBLACK_CREATURE=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() &&
+                !target.hasColor(MagicColor.White) && !target.hasColor(MagicColor.Black);
+        }
+    };
+
     public static final MagicPermanentFilterImpl NONGREEN_CREATURE_YOU_CONTROL =new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() &&
@@ -2555,6 +2562,7 @@ public class MagicTargetFilterFactory {
         single.put("nonblack attacking creature", NONBLACK_ATTACKING_CREATURE);
         single.put("nonwhite creature", NONWHITE_CREATURE);
         single.put("nonwhite creature with power 3 or greater", new MagicPTTargetFilter(NONWHITE_CREATURE, Operator.GREATER_THAN_OR_EQUAL, 3));
+        single.put("nonwhite, nonblack creature", NONWHITE_NONBLACK_CREATURE);
         single.put("nonred creature", NONRED_CREATURE);
         single.put("nonartifact creature", NONARTIFACT_CREATURE);
         single.put("non-Vampire, non-Werewolf, non-Zombie creature", NONVAMPIRE_NONWEREWOLF_NONZOMBIE_CREATURE);
