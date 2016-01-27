@@ -31,7 +31,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
     private final Dimension IMAGE_SIZE = getImageSize();
 
     private Image thisImage;
-    private MagicCardDefinition thisCard;
+    private MagicCardDefinition thisCard = MagicCardDefinition.UNKNOWN;
     private boolean isSwitchedAspect = false;
     private CardImageWorker worker;
     private MagicCardDefinition cardPending = MagicCardDefinition.UNKNOWN;
@@ -59,8 +59,12 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
         add(throbber, "alignx center");
         add(cardLabel, "w 100%");
         
-        setCard(MagicCardDefinition.UNKNOWN);
+        setDefaultImage();
         setTransformCardListener();
+    }
+
+    private void setDefaultImage() {
+        setImage(getCardImage(MagicCardDefinition.UNKNOWN, getImageSize()));
     }
 
     private JLabel getLabel(String text) {
