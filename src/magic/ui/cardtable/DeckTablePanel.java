@@ -26,7 +26,6 @@ public class DeckTablePanel extends TexturedPanel {
     // fired on mouse event.
     public static final String CP_CARD_LCLICKED = "d1b4df60-feb9-4bfe-88e2-49cd823efeb0";
     public static final String CP_CARD_RCLICKED = "0c0fc5c6-3be3-40f4-9b79-ded9e304a96d";
-    public static final String CP_CARD_DCLICKED = "01eb437c-f450-4cc7-8d37-ebd3c1133927";
 
     private final MigLayout migLayout = new MigLayout();
     private final JScrollPane scrollpane = new JScrollPane();
@@ -89,11 +88,7 @@ public class DeckTablePanel extends TexturedPanel {
             public void mousePressed(MouseEvent e) {
                 if (!isAdjusting) {
                     if (SwingUtilities.isLeftMouseButton(e)) {
-                        if (hasDoubleClickListeners() && e.getClickCount() == 2) {
-                            firePropertyChange(CP_CARD_DCLICKED, false, true);
-                        } else {
-                            firePropertyChange(CP_CARD_LCLICKED, false, true);
-                        }
+                        firePropertyChange(CP_CARD_LCLICKED, false, true);
                     } else if (SwingUtilities.isRightMouseButton(e)) {
                         final Point p = e.getPoint();
                         final int rowNumber = table.rowAtPoint(p);
@@ -196,10 +191,6 @@ public class DeckTablePanel extends TexturedPanel {
                 lastSelectedRow = row;
             }
         }
-    }
-
-    private boolean hasDoubleClickListeners() {
-        return getPropertyChangeListeners(CP_CARD_DCLICKED).length > 0;
     }
 
     public void selectFirstRow() {
