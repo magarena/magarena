@@ -111,7 +111,7 @@ public enum MagicRuleEventAction {
         }
     },
     Destroy(
-        "destroy " + ARG.PERMANENTS + "(|\\.| and)(?<noregen> (They|It) can't be regenerated\\.)?",
+        "destroy " + ARG.PERMANENTS + "(|\\.| and)(?<noregen> (They|It|That creature) can't be regenerated\\.)?",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "Destroy"
@@ -1519,7 +1519,7 @@ public enum MagicRuleEventAction {
         (game, event) -> event.processTargetPermanent(game, perm -> game.addEvent(new MagicTapOrUntapEvent(event.getSource(), perm)))
     ),
     TapParalyze(
-        "tap " + ARG.PERMANENTS + "( and it|\\. RN|\\. it|\\. Those creatures|\\. That creature) (doesn't|don't) untap during (its|their) controller('s|s') next untap step(s)?",
+        "tap " + ARG.PERMANENTS + "( and it|\\. RN|\\. it|\\. Those creatures|\\. That creature|\\. That permanent) (doesn't|don't) untap during (its|their) controller('s|s') next untap step(s)?",
         MagicTargetHint.Negative,
         MagicTapTargetPicker.Tap,
         MagicTiming.Tapping,
