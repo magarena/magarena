@@ -37,10 +37,6 @@ public class DeckTablePanel extends TexturedPanel {
     private boolean isAdjusting = false;
     private int lastSelectedRow = -1;
 
-    public DeckTablePanel(final List<MagicCardDefinition> defs) {
-        this(defs, "");
-    }
-
     public DeckTablePanel(final List<MagicCardDefinition> defs, final String title) {
 
         setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
