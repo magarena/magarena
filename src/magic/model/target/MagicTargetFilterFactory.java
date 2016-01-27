@@ -2836,11 +2836,12 @@ public class MagicTargetFilterFactory {
         single.put("Fungus card from a graveyard", FUNGUS_CARD_FROM_ALL_GRAVEYARDS);
 
         // using source
-        single.put("creature blocking it", CREATURE_BLOCKING_SN);
+        single.put("you", YOU);
         single.put("SN", SN);
         single.put("it", SN);
-        single.put("you", YOU);
+        single.put("this permanent", SN);
         single.put("this creature", SN);
+        single.put("creature blocking it", CREATURE_BLOCKING_SN);
     }
 
     public static String toSingular(final String arg) {
