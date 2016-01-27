@@ -4,6 +4,7 @@ import magic.model.MagicCard;
 import magic.model.MagicGame;
 import magic.model.MagicLocationType;
 import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 import magic.model.action.AddTriggerAction;
 import magic.model.action.MoveCardAction;
 import magic.model.action.RemoveCardAction;
@@ -15,20 +16,17 @@ public class MagicHauntEvent extends MagicEvent {
     static MagicSourceEvent sourceEvent;
 
     public MagicHauntEvent(final MagicPermanent permanent, final MagicSourceEvent aSourceEvent) {
-        super(
-            permanent,
-            permanent.getOwner(),
-            MagicTargetChoice.TARGET_CREATURE,
-            EVENT_ACTION,
-            "Exile SN haunting target creature$."
-        );
-        sourceEvent = aSourceEvent;
+        this(permanent.getCard(), permanent.getController(), aSourceEvent);
     }
 
     public MagicHauntEvent(final MagicCardOnStack cardOnStack, final MagicSourceEvent aSourceEvent) {
+        this(cardOnStack.getCard(), cardOnStack.getController(), aSourceEvent);
+    }
+
+    private MagicHauntEvent(final MagicCard card, final MagicPlayer player, final MagicSourceEvent aSourceEvent) {
         super(
-            cardOnStack,
-            cardOnStack.getCard().getOwner(),
+            card,
+            player,
             MagicTargetChoice.TARGET_CREATURE,
             EVENT_ACTION,
             "Exile SN haunting target creature$."
@@ -37,7 +35,7 @@ public class MagicHauntEvent extends MagicEvent {
     }
 
     private static final MagicEventAction EVENT_ACTION = (final MagicGame game, final MagicEvent event) -> {
-        final MagicCard card = getEventCard(event);
+        final MagicCard card = event.getCard();
         if (card.isInGraveyard()) {
             event.processTargetPermanent(game, creatureToHaunt -> {
                 // only exile if valid target
@@ -50,8 +48,4 @@ public class MagicHauntEvent extends MagicEvent {
             });
         }
     };
-
-    private static MagicCard getEventCard(MagicEvent event) {
-        return event.getPermanent().getCard() == null ? event.getCardOnStack().getCard() : event.getPermanent().getCard();
-    }
 }
