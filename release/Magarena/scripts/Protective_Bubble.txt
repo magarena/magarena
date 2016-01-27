@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={3}{U}
-ability=Enchanted creature has shroud and can't be blocked.
+ability=Enchant creature;\
+        Enchanted creature has shroud and can't be blocked.
 timing=aura
 enchant=unblockable,pos creature
 oracle=Enchant creature\nEnchanted creature can't be blocked and has shroud.

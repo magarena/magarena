@@ -7,6 +7,6 @@ subtype=Human,Scout
 cost={2}{U}
 pt=2/1
 ability=Soulbond;\
-        As long as SN is paired with another creature, each of those creatures has "Whenever SN deals damage to an opponent, draw a card."
+        As long as SN is paired with another creature, each of those creatures has "Whenever this creature deals damage to an opponent, draw a card."
 timing=main
 oracle=Soulbond\nAs long as Tandem Lookout is paired with another creature, each of those creatures has "Whenever this creature deals damage to an opponent, draw a card."

@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{G}
-ability=When SN enters the battlefield, draw a card.
+ability=Enchant land;\
+        When SN enters the battlefield, draw a card.
 given_subtype=Plains,Island,Swamp,Mountain,Forest
 enchant=pump,pos land
 timing=aura

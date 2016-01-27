@@ -6,7 +6,7 @@ type=Artifact
 subtype=Equipment
 cost={2}
 ability=Living weapon;\
-        Equipped creature gets +0/+1 and has "Sacrifice SN: SN deals 1 damage to target creature or player.";\
+        Equipped creature gets +0/+1 and has "Sacrifice this creature: This creature deals 1 damage to target creature or player.";\
         Equip {2}
 timing=equipment
 oracle=Living weapon\nEquipped creature gets +0/+1 and has "Sacrifice this creature: This creature deals 1 damage to target creature or player."\nEquip {2}

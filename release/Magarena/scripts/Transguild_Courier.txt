@@ -7,5 +7,5 @@ subtype=Golem
 cost={4}
 color=wubrg
 pt=3/3
-timing=artifact
+timing=main
 oracle=NONE

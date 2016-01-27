@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={B}{B}
-ability=Whenever enchanted creature becomes tapped, put a -0/-2 counter on RN.
+ability=Enchant creature;\
+        Whenever enchanted creature becomes tapped, put a -0/-2 counter on RN.
 enchant=default,neg creature
 timing=aura
 oracle=Enchant creature\nWhenever enchanted creature becomes tapped, put a -0/-2 counter on it.

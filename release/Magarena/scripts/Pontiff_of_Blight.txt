@@ -5,7 +5,8 @@ rarity=R
 type=Creature
 subtype=Zombie,Cleric
 cost={4}{B}{B}
-ability=extort;other creatures you control have extort
 pt=2/7
+ability=Extort;\
+        Other creatures you control have extort.
 timing=main
 oracle=Extort\nOther creatures you control have extort.

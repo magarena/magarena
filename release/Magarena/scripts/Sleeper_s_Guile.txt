@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{B}
-ability=Enchanted creature has fear.;\
+ability=Enchant creature;\
+        Enchanted creature has fear.;\
         When SN is put into a graveyard from the battlefield, return SN from the graveyard to its owner's hand.
 timing=aura
 enchant=unblockable,pos creature

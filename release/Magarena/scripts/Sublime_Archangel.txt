@@ -6,7 +6,9 @@ type=Creature
 subtype=Angel
 cost={2}{W}{W}
 pt=4/3
-ability=Flying;exalted;other creatures you control have exalted
+ability=Flying;\
+        Exalted;\
+        Other creatures you control have exalted.
 static=player
 timing=main
 oracle=Flying\nExalted\nOther creatures you control have exalted.

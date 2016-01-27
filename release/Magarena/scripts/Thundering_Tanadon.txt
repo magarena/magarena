@@ -5,9 +5,9 @@ rarity=C
 type=Artifact,Creature
 subtype=Beast
 cost={4}{G/P}{G/P}
+pt=5/4
 ability=Trample;\
         alt cost {4}{G}, Pay 2 life named Pay 2 life;\
         alt cost {4}, Pay 4 life named Pay 4 life
-pt=5/4
 timing=main
 oracle=Trample

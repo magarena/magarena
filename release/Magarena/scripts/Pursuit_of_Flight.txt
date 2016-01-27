@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{R}
-ability=Enchanted creature gets +2/+2 and has "{U}: SN gains flying until end of turn."
-enchant=pump,pos creature
+ability=Enchant creature;\
+        Enchanted creature gets +2/+2 and has "{U}: This creature gains flying until end of turn."
 timing=aura
+enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature gets +2/+2 and has "{U}: This creature gains flying until end of turn."

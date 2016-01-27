@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{B}{B}
-ability=Enchanted land has "{T}: SN deals 1 damage to each creature and each player."
+ability=Enchant land;\
+        Enchanted land has "{T}: This land deals 1 damage to each creature and each player."
+timing=aura
 enchant=pump,pos land
-timing=enchantment
 oracle=Enchant land\nEnchanted land has "{T}: This land deals 1 damage to each creature and each player."

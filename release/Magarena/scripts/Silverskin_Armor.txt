@@ -8,5 +8,5 @@ cost={2}
 ability=Equipped creature gets +1/+1.;\
         Equip {2}
 given_type=Artifact
-timing=main
+timing=equipment
 oracle=Equipped creature gets +1/+1 and is an artifact in addition to its other types.\nEquip {2}

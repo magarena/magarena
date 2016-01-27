@@ -6,6 +6,7 @@ type=Creature
 subtype=Elemental
 cost={W/U}{W/U}{W/U}
 pt=4/4
-ability=flash;flying;defender
+ability=Flash;\
+        Defender, flying
 timing=flash
 oracle=Flash\nDefender, flying
