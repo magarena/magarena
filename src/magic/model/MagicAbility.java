@@ -795,6 +795,12 @@ public enum MagicAbility {
             card.add(HauntTrigger.create(hauntEffect));
         }
     },
+    HauntSpell("When the creature SN haunts dies, " + ARG.EFFECT, 0) {
+        @Override
+        protected void addAbilityImpl(MagicAbilityStore card, Matcher arg) {
+            //Does nothing Haunt for spells is determined from MagicSpellEventAction
+        }
+    },
     SelfOrAnotherYouControlEntersEffect("Whenever SN or another " + ARG.WORDRUN + " enters the battlefield under your control, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(OtherEntersBattlefieldTrigger.createSelfOrAnother(
