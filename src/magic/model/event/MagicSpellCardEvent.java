@@ -1,19 +1,19 @@
 package magic.model.event;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicGame;
-import magic.model.MagicPayedCost;
-import magic.model.MagicAbility;
 import magic.model.MagicLocationType;
 import magic.model.MagicMessage;
-import magic.model.stack.MagicCardOnStack;
+import magic.model.MagicPayedCost;
+import magic.model.action.ChangeCardDestinationAction;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicOrChoice;
-import magic.model.action.ChangeCardDestinationAction;
-
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import magic.model.stack.MagicCardOnStack;
 
 public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAction,MagicChangeCardDefinition {
 
