@@ -5,7 +5,7 @@ rarity=C
 type=Artifact
 subtype=Equipment
 cost={2}
-ability=Equipped creature gets +4/+2 and doesn't untap during your untap step.;\
+ability=Equipped creature gets +4/+2 and doesn't untap during its controller's untap step.;\
         Equip {3}
 timing=equipment
 oracle=Equipped creature gets +4/+2 and doesn't untap during its controller's untap step.\nEquip {3}

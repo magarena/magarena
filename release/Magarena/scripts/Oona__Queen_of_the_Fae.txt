@@ -1,12 +1,12 @@
 name=Oona, Queen of the Fae
 image=http://magiccards.info/scans/en/mma/193.jpg
 value=4.487
-ability=Flying
 rarity=R
 type=Legendary,Creature
 subtype=Faerie,Wizard
 cost={3}{U/B}{U/B}{U/B}
 pt=5/5
+ability=Flying
 timing=main
 requires_groovy_code
 oracle=Flying\n{X}{U/B}: Choose a color. Target opponent exiles the top X cards of his or her library. For each card of the chosen color exiled this way, put a 1/1 blue and black Faerie Rogue creature token with flying onto the battlefield.

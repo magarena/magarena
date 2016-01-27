@@ -4,9 +4,9 @@ value=4.179
 rarity=U
 type=Land
 mana=g3
-timing=land
 ability=SN enters the battlefield tapped.;\
         {T}: Add {G} to your mana pool.;\
         {1}{G}: SN becomes a 3/3 green Ape creature with trample until end of turn. It's still a land.
 mana_or_combat
+timing=land
 oracle=Treetop Village enters the battlefield tapped.\n{T}: Add {G} to your mana pool.\n{1}{G}: Treetop Village becomes a 3/3 green Ape creature with trample until end of turn. It's still a land.

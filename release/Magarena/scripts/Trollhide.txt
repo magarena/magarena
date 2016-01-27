@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{G}
+ability=Enchant creature;\
+        Enchanted creature gets +2/+2 and has "{1}{G}: Regenerate this creature."
+timing=aura
 enchant=pump,pos creature
-ability=Enchanted creature gets +2/+2 and has "{1}{G}: Regenerate SN."
-timing=enchantment
 oracle=Enchant creature\nEnchanted creature gets +2/+2 and has "{1}{G}: Regenerate this creature."
