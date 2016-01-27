@@ -21,10 +21,10 @@ import magic.model.trigger.*;
 public enum MagicAbility {
 
     // intrinsic abilities (implemented directly in the game engine)
-    AttacksEachTurnIfAble("(SN )?attack(s)? (each|this) (turn|combat) if able(\\.)?",-10),
-    CannotBlock("(SN )?can't block(\\.)?",-50),
-    CannotAttack("(SN )?can't attack(\\.)?",-50),
-    CannotAttackOrBlock("(SN )?can't attack or block(\\.)?",-200),
+    AttacksEachTurnIfAble("(SN )?attack(s)? (each|this) (turn|combat) if able",-10),
+    CannotBlock("(SN )?can't block",-50),
+    CannotAttack("(SN )?can't attack",-50),
+    CannotAttackOrBlock("(SN )?can't attack or block",-200),
     CannotBlockWithoutFlying("(SN )?can block only creatures with flying\\.",-40),
     CannotBeCountered("(SN )?can't be countered( by spells or abilities)?\\.",0),
     CannotBeTheTarget0("can't be the target of spells or abilities your opponents control",80),
@@ -33,65 +33,65 @@ public enum MagicAbility {
     CannotBeTheTargetOfBlackOrRedOpponentSpell("(SN )?can't be the target of black or red spells your opponents control\\.",10),
     CanBlockShadow("(SN )?can block creatures with shadow as though (they didn't have shadow|SN had shadow)\\.",10),
     CanAttackWithDefender("can attack as though (it|they) didn't have defender", 10),
-    Hexproof("hexproof(\\.)?",80),
-    Deathtouch("deathtouch(\\.)?",60),
-    Defender("defender(\\.)?",-100),
-    DoesNotUntap("(SN )?(doesn't|don't) untap during (your|its controller's|their controllers') untap step(s)?(\\.)?",-30),
-    DoubleStrike("double strike(\\.)?",100),
-    Fear("fear(\\.)?",50),
-    Flash("flash(\\.)?",0),
-    Flying("flying(\\.)?",50),
-    FirstStrike("first strike(\\.)?",50),
-    Plainswalk("plainswalk(\\.)?",10),
-    Islandwalk("islandwalk(\\.)?",10),
-    Swampwalk("swampwalk(\\.)?",10),
-    Mountainwalk("mountainwalk(\\.)?",10),
-    Forestwalk("forestwalk(\\.)?",10),
-    NonbasicLandwalk("nonbasic landwalk(\\.)?",10),
-    LegendaryLandwalk("legendary landwalk(\\.)?",10),
-    Indestructible("indestructible(\\.)?",150),
-    Haste("haste(\\.)?",0),
-    Lifelink("lifelink(\\.)?",40),
-    Reach("reach(\\.)?",20),
-    Shadow("shadow(\\.)?",30),
-    Shroud("shroud(\\.)?",60),
-    Trample("trample(\\.)?",30),
-    Unblockable("(SN )?can't be blocked(\\.)?",100),
-    Vigilance("vigilance(\\.)?",20),
-    Wither("wither(\\.)?",30),
+    Hexproof("hexproof",80),
+    Deathtouch("deathtouch",60),
+    Defender("defender",-100),
+    DoesNotUntap("(SN )?(doesn't|don't) untap during (your|its controller's|their controllers') untap step(s)?",-30),
+    DoubleStrike("double strike",100),
+    Fear("fear",50),
+    Flash("flash",0),
+    Flying("flying",50),
+    FirstStrike("first strike",50),
+    Plainswalk("plainswalk",10),
+    Islandwalk("islandwalk",10),
+    Swampwalk("swampwalk",10),
+    Mountainwalk("mountainwalk",10),
+    Forestwalk("forestwalk",10),
+    NonbasicLandwalk("nonbasic landwalk",10),
+    LegendaryLandwalk("legendary landwalk",10),
+    Indestructible("indestructible",150),
+    Haste("haste",0),
+    Lifelink("lifelink",40),
+    Reach("reach",20),
+    Shadow("shadow",30),
+    Shroud("shroud",60),
+    Trample("trample",30),
+    Unblockable("(SN )?can't be blocked",100),
+    Vigilance("vigilance",20),
+    Wither("wither",30),
     TotemArmor("totem armor",0),
-    Intimidate("intimidate(\\.)?",45),
-    Infect("infect(\\.)?",35),
-    Horsemanship("horsemanship(\\.)?",60),
+    Intimidate("intimidate",45),
+    Infect("infect",35),
+    Horsemanship("horsemanship",60),
     Soulbond("soulbond",30),
-    SplitSecond("split second(\\.)?",10),
-    CantActivateAbilities("can't activate abilities(\\.)?|its activated abilities can't be activated(\\.)?",-20),
-    ProtectionFromBlack("(protection )?from black(\\.)?",20),
-    ProtectionFromBlue("(protection )?from blue(\\.)?",20),
-    ProtectionFromGreen("(protection )?from green(\\.)?",20),
-    ProtectionFromRed("(protection )?from red(\\.)?",20),
-    ProtectionFromWhite("(protection )?from white(\\.)?",20),
+    SplitSecond("split second",10),
+    CantActivateAbilities("(can't activate abilities|its activated abilities can't be activated)",-20),
+    ProtectionFromBlack("(protection )?from black",20),
+    ProtectionFromBlue("(protection )?from blue",20),
+    ProtectionFromGreen("(protection )?from green",20),
+    ProtectionFromRed("(protection )?from red",20),
+    ProtectionFromWhite("(protection )?from white",20),
     ProtectionFromMonoColored("protection from monocolored",50),
-    ProtectionFromAllColors("protection from all colors(\\.)?",150),
+    ProtectionFromAllColors("protection from all colors",150),
     ProtectionFromColoredSpells("protection from colored spells",100),
     ProtectionFromEverything("protection from everything",200),
 
     // generalize intrinsic abilities (store a filter inside a trigger)
-    ProtectionFromPermanent("protection from " + ARG.WORDRUN + "(\\.)?", 10) {
+    ProtectionFromPermanent("protection from " + ARG.WORDRUN, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(ProtectionTrigger.create(
                 MagicTargetFilterFactory.Permanent(ARG.wordrun(arg))
             ));
         }
     },
-    CannotBeBlockedByPermanent("(SN )?can't be blocked by " + ARG.WORDRUN + "(\\.)?", 10) {
+    CannotBeBlockedByPermanent("(SN )?can't be blocked by " + ARG.WORDRUN, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(CantBeBlockedTrigger.create(
                 MagicTargetFilterFactory.Permanent(ARG.wordrun(arg))
             ));
         }
     },
-    CannotBeBlockedExceptByPermanent("(SN )?can't be blocked except by " + ARG.WORDRUN + "(\\.)?", 10) {
+    CannotBeBlockedExceptByPermanent("(SN )?can't be blocked except by " + ARG.WORDRUN, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(CantBeBlockedTrigger.createExcept(
                 MagicTargetFilterFactory.Permanent(ARG.wordrun(arg))
@@ -117,7 +117,7 @@ public enum MagicAbility {
             card.add(ModularTrigger.create());
         }
     },
-    Flanking("flanking(\\.)?",10) {
+    Flanking("flanking",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(FlankingTrigger.create());
         }
@@ -181,7 +181,7 @@ public enum MagicAbility {
             card.add(FadeVanishCounterTrigger.Time);
         }
     },
-    CumulativeUpkeep("cumulative upkeep " + ARG.MANACOST + "(\\.)?",-30) {
+    CumulativeUpkeep("cumulative upkeep " + ARG.MANACOST,-30) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
             card.add(new CumulativeUpkeepTrigger(manaCost));
@@ -228,7 +228,7 @@ public enum MagicAbility {
             card.add(StormTrigger.create());
         }
     },
-    Annihilator("annihilator " + ARG.NUMBER + "(\\.)?", 80) {
+    Annihilator("annihilator " + ARG.NUMBER, 80) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
             card.add(new AnnihilatorTrigger(n));
@@ -386,7 +386,7 @@ public enum MagicAbility {
             card.add(MagicMorphCastActivation.Megamorph);
         }
     },
-    Affinity("affinity for " + ARG.WORDRUN + "(\\.)?", 10) {
+    Affinity("affinity for " + ARG.WORDRUN, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicCardDefinition cardDef = (MagicCardDefinition)card;
             card.add(MagicHandCastActivation.affinity(cardDef, MagicTargetFilterFactory.Permanent(ARG.wordrun(arg))));
@@ -408,7 +408,7 @@ public enum MagicAbility {
             card.add(EntersBattlefieldTrigger.Exploit);
         }
     },
-    Poisonous("poisonous " + ARG.NUMBER + "(\\.)?", 10) {
+    Poisonous("poisonous " + ARG.NUMBER, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int n = ARG.number(arg);
             card.add(DamageIsDealtTrigger.Poisonous(n));
@@ -427,7 +427,7 @@ public enum MagicAbility {
             card.add(new MagicBestowActivation(manaCost));
         }
     },
-    Dethrone("dethrone(\\.)?",10) {
+    Dethrone("dethrone",10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(DethroneTrigger.create());
         }
@@ -677,13 +677,13 @@ public enum MagicAbility {
             ));
         }
     },
-    PairedPump("As long as SN is paired with another creature, each of those creatures gets " + ARG.PT + "(\\.)?", 0) {
+    PairedPump("As long as SN is paired with another creature, each of those creatures gets " + ARG.PT, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int[] pt = ARG.pt(arg);
             card.add(MagicStatic.genPTStatic(pt[0], pt[1]));
         }
     },
-    PairedGain("As long as SN is paired with another creature, (both creatures have|each of those creatures has) " + ARG.ANY + "(\\.)?", 0) {
+    PairedGain("As long as SN is paired with another creature, (both creatures have|each of those creatures has) " + ARG.ANY, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(MagicStatic.linkedABStatic(
                 MagicAbility.getAbilityList(
@@ -1240,7 +1240,7 @@ public enum MagicAbility {
             card.add(MagicStatic.genABStatic(condition, filter, abList));
         }
     },
-    ConditionPumpGroup("As long as " + ARG.WORDRUN + ", " + ARG.WORDRUN2 + " get " + ARG.PT + "(\\.)?", 0) {
+    ConditionPumpGroup("As long as " + ARG.WORDRUN + ", " + ARG.WORDRUN2 + " get " + ARG.PT, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicCondition condition = MagicConditionParser.build(ARG.wordrun(arg));
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(ARG.wordrun2(arg));
@@ -1248,12 +1248,12 @@ public enum MagicAbility {
             card.add(MagicStatic.genPTStatic(condition, filter, pt[0], pt[1]));
         }
     },
-    ConditionPumpGroupAlt(ARG.WORDRUN2 + " get(s)? " + ARG.PT + " as long as " + ARG.WORDRUN + "(\\.)?", 0){
+    ConditionPumpGroupAlt(ARG.WORDRUN2 + " get(s)? " + ARG.PT + " as long as " + ARG.WORDRUN, 0){
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             ConditionPumpGroup.addAbilityImpl(card, arg);
         }
     },
-    ConditionGainGroup("As long as " + ARG.WORDRUN + ", " + ARG.WORDRUN2 + " have " + ARG.ANY + "(\\.)?", 0) {
+    ConditionGainGroup("As long as " + ARG.WORDRUN + ", " + ARG.WORDRUN2 + " have " + ARG.ANY, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicCondition condition = MagicConditionParser.build(ARG.wordrun(arg));
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(ARG.wordrun2(arg));
@@ -1261,7 +1261,7 @@ public enum MagicAbility {
             card.add(MagicStatic.genABStatic(condition, filter, abList));
         }
     },
-    ConditionGainGroupAlt(ARG.WORDRUN2 + " (?<any>(has|have|can).+) as long as " + ARG.WORDRUN + "(\\.)?", 0) {
+    ConditionGainGroupAlt(ARG.WORDRUN2 + " (?<any>(has|have|can).+) as long as " + ARG.WORDRUN, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             ConditionGainGroup.addAbilityImpl(card, arg);
         }
@@ -1285,7 +1285,7 @@ public enum MagicAbility {
             }
         }
     },
-    ConditionPumpGainAlt("As long as (?<wordrun>[^\\,]*), " + ARG.WORDRUN2 + " (gets " + ARG.PT + "(.| ))?(and )?(" + ARG.ANY + ")?(\\.)?", 0) {
+    ConditionPumpGainAlt("As long as (?<wordrun>[^\\,]*), " + ARG.WORDRUN2 + " (gets " + ARG.PT + "(.| ))?(and )?(" + ARG.ANY + ")?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             ConditionPumpGain.addAbilityImpl(card, arg);
         }
@@ -1309,14 +1309,14 @@ public enum MagicAbility {
             }
         }
     },
-    CantBlockPermanent("(SN )?can't block " + ARG.WORDRUN + "(\\.)?", 10) {
+    CantBlockPermanent("(SN )?can't block " + ARG.WORDRUN, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(CantBlockTrigger.create(
                 MagicTargetFilterFactory.Permanent(ARG.wordrun(arg))
             ));
         }
     },
-    LordPumpGain(ARG.WORDRUN + " get(s)? " + ARG.PT + "(,)? (and|has|and have) " + ARG.ANY + "(\\.)?", 0) {
+    LordPumpGain(ARG.WORDRUN + " get(s)? " + ARG.PT + "(,)? (and|has|and have) " + ARG.ANY, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int[] pt = ARG.pt(arg);
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(ARG.wordrun(arg));
@@ -1325,7 +1325,7 @@ public enum MagicAbility {
             card.add(MagicStatic.genABStatic(filter, abList));
         }
     },
-    LordPump(ARG.WORDRUN + " get(s)? " + ARG.PT + "(\\.)?", 0) {
+    LordPump(ARG.WORDRUN + " get(s)? " + ARG.PT, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final int[] pt = ARG.pt(arg);
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(ARG.wordrun(arg));
@@ -1340,14 +1340,14 @@ public enum MagicAbility {
             card.add(MagicStatic.genPTStatic(affected, count, pt));
         }
     },
-    LordGain(ARG.WORDRUN + " (have|has) " + ARG.ANY + "(\\.)?", 0) {
+    LordGain(ARG.WORDRUN + " (have|has) " + ARG.ANY, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(ARG.wordrun(arg));
             final MagicAbilityList abList = MagicAbility.getAbilityList(ARG.any(arg));
             card.add(MagicStatic.genABStatic(filter, abList));
         }
     },
-    LordGainCan(ARG.WORDRUN + " (?<any>(can|can't|doesn't|attack(s)?) .+)(\\.)?", 0) {
+    LordGainCan(ARG.WORDRUN + " (?<any>(can|can't|doesn't|attack(s)?) .+)", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(ARG.wordrun(arg));
             final MagicAbilityList abList = MagicAbility.getAbilityList(ARG.any(arg));
@@ -1381,7 +1381,7 @@ public enum MagicAbility {
     private final int score;
 
     private MagicAbility(final String regex,final int aScore) {
-        pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
+        pattern = Pattern.compile(regex + "(\\.)?", Pattern.CASE_INSENSITIVE);
         name  = regex.replace("\\", "");
         score = aScore;
     }
