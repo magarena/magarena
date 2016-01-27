@@ -4,6 +4,8 @@ value=3.553
 rarity=C
 type=Sorcery
 cost={B}
-effect=Target player discards a card.~Haunt~When the creature SN haunts dies, target player discards a card.
+ability=Haunt;\
+        When the creature SN haunts dies, target player discards a card.
+effect=Target player discards a card.
 timing=main
 oracle=Target player discards a card.\nHaunt\nWhen the creature Cry of Contrition haunts dies, target player discards a card.
