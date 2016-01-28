@@ -62,7 +62,7 @@ public enum MagicAmountParser {
     },
     Player("player") {
         public MagicAmount toAmount(final Matcher arg) {
-            return MagicAmountFactory.Players;
+            return MagicAmountFactory.Constant(2);
         }
     },
     Number("[^ ]+") {
