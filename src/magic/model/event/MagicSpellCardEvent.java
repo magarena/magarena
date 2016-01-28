@@ -11,6 +11,7 @@ import magic.model.MagicLocationType;
 import magic.model.MagicMessage;
 import magic.model.MagicPayedCost;
 import magic.model.action.ChangeCardDestinationAction;
+import magic.model.action.EnqueueTriggerAction;
 import magic.model.choice.MagicChoice;
 import magic.model.choice.MagicOrChoice;
 import magic.model.stack.MagicCardOnStack;
@@ -33,6 +34,9 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
         }
         if (cdef.hasAbility(MagicAbility.Buyback)) {
             return Buyback(rule);
+        }
+        if (cdef.hasAbility(MagicAbility.HauntSpell)) {
+            return Haunt(rule);
         }
         final MagicSourceEvent sourceEvent = MagicRuleEventAction.create(rule);
         return new MagicSpellCardEvent() {
@@ -118,6 +122,31 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
                 } else {
                     event.executeModalEvent(game, effect1, effect2);
                 }
+            }
+        };
+    }
+
+    private static MagicSpellCardEvent Haunt(final String rule) {
+        final MagicSourceEvent effect = MagicRuleEventAction.create(rule);
+        return new MagicSpellCardEvent() {
+            @Override
+            public MagicEvent getEvent(final MagicCardOnStack cardOnStack, final MagicPayedCost payedCost) {
+                final MagicEvent event = effect.getEvent(cardOnStack);
+                return new MagicEvent(
+                    event.getSource(),
+                    event.getChoice(),
+                    payedCost,
+                    this,
+                    event.getDescription()
+                );
+            }
+
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                effect.getAction().executeEvent(game, event);
+                game.doAction(new EnqueueTriggerAction(
+                    new MagicHauntEvent(event.getCardOnStack(), effect)
+                ));
             }
         };
     }
