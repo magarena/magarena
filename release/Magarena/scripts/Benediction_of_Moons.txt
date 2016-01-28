@@ -4,6 +4,8 @@ value=2.026
 rarity=C
 type=Sorcery
 cost={W}
-effect=You gain 1 life for each player.~Haunt~When the creature SN haunts dies, you gain 1 life for each player.
+ability=Haunt;\
+        When the creature SN haunts dies, you gain 1 life for each player.
+effect=You gain 1 life for each player.
 timing=main
 oracle=You gain 1 life for each player.\nHaunt\nWhen the creature Benediction of Moons haunts dies, you gain 1 life for each player.
