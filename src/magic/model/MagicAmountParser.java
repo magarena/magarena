@@ -60,6 +60,11 @@ public enum MagicAmountParser {
             return MagicAmountFactory.NegXCost;
         }
     },
+    Player("player") {
+        public MagicAmount toAmount(final Matcher arg) {
+            return MagicAmountFactory.Players;
+        }
+    },
     Number("[^ ]+") {
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.Constant(EnglishToInt.convert(arg.group()));
