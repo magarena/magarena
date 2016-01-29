@@ -1,13 +1,14 @@
 package magic.data;
 
-import magic.model.MagicCardDefinition;
-import magic.model.MagicColor;
-import magic.model.MagicRarity;
 import java.io.PrintStream;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
+
+import magic.model.MagicCardDefinition;
+import magic.model.MagicColor;
+import magic.model.MagicRarity;
 
 public class CardStatistics {
 
@@ -37,12 +38,12 @@ public class CardStatistics {
     public static final List<String> TYPE_NAMES = Collections.unmodifiableList(
         Arrays.asList(
             "Land",
-            "Spell",
             "Creature",
-            "Equipment",
-            "Aura",
+            "Artifact",
             "Enchantment",
-            "Artifact"
+            "Instant",
+            "Sorcery",
+            "Planeswalker"
         )
     );
     public static final int NR_OF_TYPES = TYPE_NAMES.size();
@@ -50,12 +51,12 @@ public class CardStatistics {
     public static final List<MagicIcon> TYPE_ICONS = Collections.unmodifiableList(
         Arrays.asList(
             MagicIcon.LAND,
-            MagicIcon.SPELL,
             MagicIcon.CREATURE,
-            MagicIcon.EQUIPMENT,
-            MagicIcon.AURA,
+            MagicIcon.ARTIFACT,
             MagicIcon.ENCHANTMENT,
-            MagicIcon.ARTIFACT
+            MagicIcon.INSTANT,
+            MagicIcon.SORCERY,
+            MagicIcon.PLANESWALKER
         )
     );
 
@@ -112,17 +113,17 @@ public class CardStatistics {
                 averageValue+=card.getValue();
 
                 if (card.isCreature()) {
-                    totalTypes[2]++;
-                } else if (card.isEquipment()) {
-                    totalTypes[3]++;
+                    totalTypes[1]++;
                 } else if (card.isArtifact()) {
-                    totalTypes[6]++;
-                } else if (card.isAura()) {
-                    totalTypes[4]++;
+                    totalTypes[2]++;
                 } else if (card.isEnchantment()) {
+                    totalTypes[3]++;
+                } else if (card.isInstant()) {
+                    totalTypes[4]++;
+                } else if (card.isSorcery()) {
                     totalTypes[5]++;
                 } else {
-                    totalTypes[1]++;
+                    totalTypes[6]++;
                 }
 
                 int count=0;
