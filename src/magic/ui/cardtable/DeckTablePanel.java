@@ -70,13 +70,10 @@ public class DeckTablePanel extends TexturedPanel {
     }
 
     private ListSelectionListener getTableListSelectionListener() {
-        return new ListSelectionListener() {
-            @Override
-            public void valueChanged(ListSelectionEvent e) {
-                isAdjusting = e.getValueIsAdjusting();
-                if (!isAdjusting) {
-                    firePropertyChange(CP_CARD_SELECTED, false, true);
-                }
+        return (ListSelectionEvent e) -> {
+            isAdjusting = e.getValueIsAdjusting();
+            if (!isAdjusting) {
+                firePropertyChange(CP_CARD_SELECTED, false, true);
             }
         };
     }
