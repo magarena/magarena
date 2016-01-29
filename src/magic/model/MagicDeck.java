@@ -81,11 +81,6 @@ public class MagicDeck extends ArrayList<MagicCardDefinition> {
     }
 
     public boolean contains(final MagicType type) {
-        for (MagicCardDefinition card : this) {
-            if (card.hasType(type)) {
-                return true;
-            }
-        }
-        return false;
+        return this.stream().anyMatch(card -> card.hasType(type));
     }
 }
