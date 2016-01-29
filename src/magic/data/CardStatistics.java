@@ -5,12 +5,22 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
-
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
 import magic.model.MagicRarity;
+import magic.translate.UiString;
 
 public class CardStatistics {
+
+    // translatable strings
+    private static final String _S1 = "Land";
+    private static final String _S2 = "Creature";
+    private static final String _S3 = "Artifact";
+    private static final String _S4 = "Enchantment";
+    private static final String _S5 = "Instant";
+    private static final String _S6 = "Sorcery";
+    private static final String _S7 = "Planeswalker";
+
 
     private static final List<String> MANA_CURVE_TEXT = Collections.unmodifiableList(
         Arrays.asList(
@@ -37,13 +47,13 @@ public class CardStatistics {
 
     public static final List<String> TYPE_NAMES = Collections.unmodifiableList(
         Arrays.asList(
-            "Land",
-            "Creature",
-            "Artifact",
-            "Enchantment",
-            "Instant",
-            "Sorcery",
-            "Planeswalker"
+            UiString.get(_S1),
+            UiString.get(_S2),
+            UiString.get(_S3),
+            UiString.get(_S4),
+            UiString.get(_S5),
+            UiString.get(_S6),
+            UiString.get(_S7)
         )
     );
     public static final int NR_OF_TYPES = TYPE_NAMES.size();
