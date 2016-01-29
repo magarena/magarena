@@ -7,7 +7,7 @@ import javax.swing.JScrollPane;
 import magic.model.MagicCardDefinition;
 import magic.ui.duel.viewer.CardViewer;
 import magic.ui.duel.viewer.DeckEditorCardViewer;
-import magic.ui.duel.viewer.DeckStatisticsViewer;
+import magic.ui.widget.deck.DeckStatisticsViewer;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 

@@ -1,7 +1,7 @@
 package magic.ui.explorer;
 
 import magic.model.MagicCardDefinition;
-import magic.ui.duel.viewer.DeckStatisticsViewer;
+import magic.ui.widget.deck.DeckStatisticsViewer;
 import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 

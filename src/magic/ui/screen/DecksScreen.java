@@ -24,7 +24,7 @@ import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.duel.viewer.CardViewer;
-import magic.ui.duel.viewer.DeckDescriptionViewer;
+import magic.ui.widget.deck.DeckDescriptionViewer;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.deck.DeckPicker;
