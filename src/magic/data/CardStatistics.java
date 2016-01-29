@@ -184,4 +184,8 @@ public class CardStatistics {
         }
         stream.println();
     }
+
+    public int getMaxManaCurve() {
+        return Arrays.stream(manaCurve).max().orElse(0);
+    }
 }

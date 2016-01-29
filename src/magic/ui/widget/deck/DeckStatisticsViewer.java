@@ -1,180 +1,120 @@
 package magic.ui.widget.deck;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.FlowLayout;
-import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.AbstractAction;
+import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.SwingConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import magic.data.CardStatistics;
 import magic.data.MagicIcon;
 import magic.model.DuelPlayerConfig;
-import magic.model.MagicColor;
 import magic.model.MagicDeck;
-import magic.ui.MagicImages;
 import magic.translate.UiString;
-import magic.ui.theme.ThemeFactory;
+import magic.ui.MagicImages;
+import magic.ui.screen.widget.ActionBarButton;
+import magic.ui.widget.ActionButtonTitleBar;
 import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.TexturedPanel;
-import magic.ui.widget.TitleBar;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class DeckStatisticsViewer extends TexturedPanel implements ChangeListener {
+public class DeckStatisticsViewer extends JPanel implements ChangeListener {
+
+    public static final Dimension PREFERRED_SIZE = new Dimension(300, 190);
+
+    public static final String CP_LAYOUT_CHANGED = "47395590-0c6a-4837-9dff-44a4ce19bb3c";
 
     // translatable strings
     private static final String _S1 = "Deck Statistics";
     private static final String _S2 = "Deck Statistics : %d cards";
-    private static final String _S3 = "Mono : %d  Multi : %d  Colorless : %d";
-    private static final String _S4 = "Cards : %d  Monocolor : %d  Lands : %d";
 
-    public static final Dimension PREFERRED_SIZE = new Dimension(300, 190);
-
-    private final TitleBar titleBar;
-    private final JPanel topPanel;
-    private final JPanel linesPanel;
-    private final List<JLabel> lines;
-    private final JLabel[] curveLabels;
-    private final Color textColor;
+    private final ActionButtonTitleBar titleBar;
+    private final ManaCurvePanel manaCurvePanel;
+    private final CardTypeStatsPanel cardTypesPanel;
+    private final CardColorStatsPanel colorsPanel;
+    private boolean isVisible = true;
 
     public DeckStatisticsViewer() {
+        
+        setOpaque(false);
 
-        textColor=ThemeFactory.getInstance().getCurrentTheme().getTextColor();
+        titleBar = new ActionButtonTitleBar(UiString.get(_S1), getLogActionButtons());
+        cardTypesPanel = new CardTypeStatsPanel();
+        manaCurvePanel = new ManaCurvePanel();
+        colorsPanel = new CardColorStatsPanel();
 
-        setPreferredSize(PREFERRED_SIZE);
-        setBorder(FontsAndBorders.UP_BORDER);
-        setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
-
-        setLayout(new BorderLayout());
-
-        titleBar=new TitleBar(UiString.get(_S1));
-        add(titleBar,BorderLayout.NORTH);
-
-        final JPanel mainPanel = new JPanel();
-        mainPanel.setLayout(new BorderLayout());
-        mainPanel.setBorder(FontsAndBorders.BLACK_BORDER_2);
-        mainPanel.setOpaque(false);
-        add(mainPanel,BorderLayout.CENTER);
-
-        topPanel=new JPanel();
-        topPanel.setOpaque(false);
-        mainPanel.add(topPanel,BorderLayout.NORTH);
-
-        linesPanel=new JPanel();
-        linesPanel.setOpaque(false);
-        mainPanel.add(linesPanel,BorderLayout.CENTER);
-
-        final JPanel bottomPanel=new JPanel(new FlowLayout(FlowLayout.LEFT));
-        bottomPanel.setOpaque(false);
-        mainPanel.add(bottomPanel,BorderLayout.SOUTH);
-        final JPanel curvePanel=new JPanel(new GridLayout(2,1));
-        curvePanel.setOpaque(false);
-        bottomPanel.add(curvePanel);
-        curveLabels=new JLabel[CardStatistics.MANA_CURVE_SIZE];
-        final JPanel curveTopPanel=new JPanel(new GridLayout(1,CardStatistics.MANA_CURVE_SIZE));
-        curveTopPanel.setOpaque(false);
-        curveTopPanel.setBorder(FontsAndBorders.TABLE_ROW_BORDER);
-        curvePanel.add(curveTopPanel);
-        final JPanel curveBottomPanel=new JPanel(new GridLayout(1,CardStatistics.MANA_CURVE_SIZE));
-        curveBottomPanel.setOpaque(false);
-        curvePanel.add(curveBottomPanel);
-        curveBottomPanel.setBorder(FontsAndBorders.TABLE_BOTTOM_ROW_BORDER);
-
-        final Dimension labelSize=new Dimension(25,20);
-        for (int index=0; index < CardStatistics.MANA_CURVE_SIZE; index++) {
-            final MagicIcon manaSymbol = CardStatistics.MANA_CURVE_ICONS.get(index);
-            final JLabel label = new JLabel(MagicImages.getIcon(manaSymbol));
-            label.setPreferredSize(labelSize);
-            label.setHorizontalAlignment(JLabel.CENTER);
-            label.setBorder(FontsAndBorders.TABLE_BORDER);
-            curveTopPanel.add(label);
-            curveLabels[index]=new JLabel("0");
-            curveLabels[index].setPreferredSize(labelSize);
-            curveLabels[index].setForeground(textColor);
-            curveLabels[index].setHorizontalAlignment(JLabel.CENTER);
-            curveLabels[index].setBorder(FontsAndBorders.TABLE_BORDER);
-            curveBottomPanel.add(curveLabels[index]);
-        }
-
-        lines=new ArrayList<>();
+        setLayout(new MigLayout("flowy, insets 0, gap 0"));
+        refreshLayout();
+    }
+    
+    private void refreshLayout() {
+        removeAll();
+        add(titleBar, "w 100%");
+        add(cardTypesPanel, "w 100%, gaptop 2, hidemode 3");
+        add(manaCurvePanel, "alignx center, gaptop 2, hidemode 3");
+        add(colorsPanel, "w 100%, gaptop 2, hidemode 3");
+        revalidate();
+    }
+    
+    private void switchStatsVisibility() {
+        isVisible = !isVisible;
+        cardTypesPanel.setVisible(isVisible);
+        manaCurvePanel.setVisible(isVisible);
+        colorsPanel.setVisible(isVisible);        
+        refreshLayout();
+        firePropertyChange(CP_LAYOUT_CHANGED, true, false);
     }
 
-    private void refreshCardTypeTotals(final CardStatistics statistics) {
-        topPanel.removeAll();
-        topPanel.setLayout(new MigLayout("insets 2, gap 6 0, wrap 2, flowy, center"));
-        for (int index = 0; index < CardStatistics.NR_OF_TYPES; index++) {
-            final int total = statistics.totalTypes[index];
-            // card count
-            final JLabel totalLabel = new JLabel(Integer.toString(total));
-            totalLabel.setIcon(MagicImages.getIcon(CardStatistics.TYPE_ICONS.get(index)));
-            totalLabel.setToolTipText(CardStatistics.TYPE_NAMES.get(index));
-            totalLabel.setIconTextGap(4);
-            topPanel.add(totalLabel, "w 35!");
-            // card percentage
-            final int percentage = (int)Math.round(((double)total / statistics.totalCards) * 100);
-            final JLabel percentLabel = new JLabel(Integer.toString(percentage) + "%");
-            percentLabel.setFont(FontsAndBorders.FONT0);
-            topPanel.add(percentLabel, "h 12!, center, top");
-        }
-        topPanel.revalidate();
-    }
-
-    public void setDeck(final MagicDeck deck) {
-
-        final CardStatistics statistics = new CardStatistics(deck);
-        titleBar.setText(UiString.get(_S2, statistics.totalCards));
-
-        refreshCardTypeTotals(statistics);
-
-        lines.clear();
-        final JLabel allLabel = new JLabel(UiString.get(_S3,
-                statistics.monoColor,
-                statistics.multiColor,
-                statistics.colorless)
-        );
-
-        allLabel.setForeground(textColor);
-        lines.add(allLabel);
-
-        for (int i = 0; i < statistics.colorCount.length; i++) {
-            if (statistics.colorCount[i] > 0) {
-                final MagicColor color = MagicColor.values()[i];
-                final JLabel label=new JLabel(MagicImages.getIcon(color.getManaType()));
-                label.setForeground(textColor);
-                label.setHorizontalAlignment(JLabel.LEFT);
-                label.setIconTextGap(5);
-                label.setText(UiString.get(_S4,
-                        statistics.colorCount[i],
-                        statistics.colorMono[i],
-                        statistics.colorLands[i])
-                );
-                lines.add(label);
+    private JButton getLogViewActionButton(MagicIcon aIcon) {
+        return new ActionBarButton(
+            MagicImages.getIcon(aIcon),
+            null, null,
+            new AbstractAction() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    switchStatsVisibility();
+                }
             }
-        }
+        );
+    }
 
-        for (int index=0;index<CardStatistics.MANA_CURVE_SIZE;index++) {
-            curveLabels[index].setText(Integer.toString(statistics.manaCurve[index]));
+    private List<JButton> getLogActionButtons() {
+        final List<JButton> btns = new ArrayList<>();
+        btns.add(getLogViewActionButton(MagicIcon.DOWNARROW_ICON));
+        for (JButton btn : btns) {
+            btn.setFocusable(false);
         }
+        return btns;
+    }
 
-        linesPanel.removeAll();
-        linesPanel.setLayout(new GridLayout(lines.size(),0));
-        for (final JLabel line : lines) {
-            line.setPreferredSize(new Dimension(0,25));
-            linesPanel.add(line);
-        }
+    public void setDeck(final MagicDeck aDeck) {
+
+        final CardStatistics statistics = new CardStatistics(aDeck);
+
+        titleBar.setText(UiString.get(_S2, statistics.totalCards));
+        cardTypesPanel.setStats(statistics);
+        colorsPanel.setStats(statistics);
+        manaCurvePanel.setStats(statistics);
+
         revalidate();
         repaint();
-
-
     }
 
     @Override
     public void stateChanged(final ChangeEvent event) {
         setDeck(((DuelPlayerConfig)event.getSource()).getDeck());
+    }
+
+
+    static JLabel getCaptionLabel(String text) {
+        JLabel lbl = new JLabel(text);
+        lbl.setFont(FontsAndBorders.FONT0);
+        lbl.setHorizontalAlignment(SwingConstants.CENTER);
+        return lbl;
     }
 }
