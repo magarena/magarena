@@ -43,8 +43,7 @@ public abstract class TestGameBuilder {
     }
 
     public static void addToHand(final MagicPlayer player, final String name) {
-        final MagicCardDefinition cardDefinition=CardDefinitions.getCard(name);
-        player.addCardToHand(new MagicCard(cardDefinition,player,currentId.incrementAndGet()));
+        addToHand(player, name, 1);
     }
 
     public static MagicPermanent createPermanent(final MagicPlayer player, final String name, final boolean tapped, final int count) {
