@@ -8,5 +8,6 @@ cost={2}{U}
 ability=Surge {U};\
         Enchant creature;\
         Enchanted creature doesn't untap during its controller's untap step.
+enchant=tap,neg creature
 timing=aura
 oracle=Surge {U}\nEnchant creature\nEnchanted creature doesn't untap during its controller's untap step.
