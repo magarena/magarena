@@ -13,10 +13,10 @@ import magic.ui.cardBuilder.IRenderableCard;
 import magic.ui.cardBuilder.ResourceManager;
 
 public class TypeLine {
-    private static final Font cardTypeFont = ResourceManager.getFont("Beleren-Bold.ttf").deriveFont(Font.PLAIN, 16);
-    private static final Font cardTypeFontSmall = ResourceManager.getFont("Beleren-Bold.ttf").deriveFont(Font.PLAIN, 15);
-    private static final Font cardTypeFontVerySmall = ResourceManager.getFont("Beleren-Bold.ttf").deriveFont(Font.PLAIN, 14);
-    private static final Font cardTypeFontSmallest = ResourceManager.getFont("Beleren-Bold.ttf").deriveFont(Font.PLAIN, 13);
+    private static final Font cardTypeFont = ResourceManager.getFont("JaceBeleren-Bold.ttf").deriveFont(Font.PLAIN, 16);
+    private static final Font cardTypeFontSmall = ResourceManager.getFont("JaceBeleren-Bold.ttf").deriveFont(Font.PLAIN, 15);
+    private static final Font cardTypeFontVerySmall = ResourceManager.getFont("JaceBeleren-Bold.ttf").deriveFont(Font.PLAIN, 14);
+    private static final Font cardTypeFontSmallest = ResourceManager.getFont("JaceBeleren-Bold.ttf").deriveFont(Font.PLAIN, 13);
     private static int padding;
 
     static void drawCardTypeLine(BufferedImage cardImage, IRenderableCard cardDef) {
@@ -30,13 +30,13 @@ public class TypeLine {
             FontMetrics metrics = g2d.getFontMetrics();
             int yPos;
             if (cardDef.isToken()) {
-                yPos = cardDef.hasText() ? 356 : 431;
+                yPos = cardDef.hasText() ? 358 : 433;
             } else if (cardDef.isPlaneswalker() && OracleText.getPlaneswalkerAbilityCount(cardDef) == 4){
-                yPos = 263;
+                yPos = 265;
             } else {
-                yPos = 298;
+                yPos = 300;
             }
-            g2d.drawString(cardType, 32, yPos + metrics.getAscent() + padding);// 298+Plus height of text
+            g2d.drawString(cardType+" ", 32, yPos + metrics.getAscent() + padding);
             g2d.dispose();
         }
     }
