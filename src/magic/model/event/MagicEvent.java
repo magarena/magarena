@@ -583,10 +583,10 @@ public class MagicEvent implements MagicCopyable {
         return chosenTarget != MagicTargetNone.getInstance();
     }
 
-    public final boolean isCountered() {
+    public final boolean isCountered(final MagicGame game, final MagicTarget target) {
         return getTargetChoice().isValid() &&
                getTargetChoice().isTargeted() &&
-               hasLegalTarget() == false;
+               getLegalTarget(game, target) == MagicTargetNone.getInstance();
     }
 
     public final boolean processTarget(final MagicGame game, final MagicTargetAction effect) {
@@ -729,9 +729,7 @@ public class MagicEvent implements MagicCopyable {
         chosen = choiceResults;
         chosenTarget = getLegalTarget(game);
         payManaCost(game);
-        if (isCountered() == false) {
-            action.executeEvent(game,this);
-        }
+        action.executeEvent(game,this);
         chosen = null;
         chosenTarget = null;
     }

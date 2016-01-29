@@ -124,7 +124,11 @@ public abstract class MagicItemOnStack extends MagicObjectImpl implements MagicT
     }
 
     public void resolve(final MagicGame game) {
-        game.executeEvent(getEvent(),choiceResults);
+        final MagicEvent resolveEvent = getEvent();
+        final MagicTarget resolveTarget = getTarget();
+        if (resolveEvent.isCountered(game, resolveTarget) == false) {
+            game.executeEvent(resolveEvent, choiceResults);
+        }
     }
 
     @Override
