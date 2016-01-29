@@ -30,11 +30,11 @@ public class TypeLine {
             FontMetrics metrics = g2d.getFontMetrics();
             int yPos;
             if (cardDef.isToken()) {
-                yPos = cardDef.hasText() ? 358 : 433;
+                yPos = cardDef.hasText() ? 359 : 434;
             } else if (cardDef.isPlaneswalker() && OracleText.getPlaneswalkerAbilityCount(cardDef) == 4){
-                yPos = 265;
+                yPos = 266;
             } else {
-                yPos = 300;
+                yPos = 301;
             }
             g2d.drawString(cardType+" ", 32, yPos + metrics.getAscent() + padding);
             g2d.dispose();
