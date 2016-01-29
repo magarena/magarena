@@ -59,7 +59,9 @@ public class DuelDecksScreen
     private static final String _S12 = "Deck View";
     private static final String _S13 = "Shows complete deck using tiled card images.";
     private static final String _S14 = "%s's deck is illegal.\n\n%s";
-
+    private static final String _S15 = "Generate another deck";
+    private static final String _S16 = "Based on the duel settings, randomly selects an existing prebuilt deck or<br>generates a random deck for the selected player.";
+    
     private final DuelDecksPanel screenContent;
     private MagicGame nextGame = null;
     private final StartGameButton nextGameButton;
@@ -179,9 +181,21 @@ public class DuelDecksScreen
                             ScreenController.showWarningMessage(ex.getMessage());
                         }
                     }
+                }, false)
+            );
+            buttons.add(new ActionBarButton(
+                MagicImages.getIcon(MagicIcon.REFRESH2_ICON),
+                UiString.get(_S15),
+                UiString.get(_S16),
+                new AbstractAction() {
+                    @Override
+                    public void actionPerformed(final ActionEvent e) {
+                        screenContent.generateDeck();
+                    }
                 })
             );
             buttons.add(SampleHandActionButton.createInstance(getActiveDeck()));
+
         } else {
             if (screenContent.getDuel().isFinished()) {
                 final MagicDuel duel = screenContent.getDuel();
