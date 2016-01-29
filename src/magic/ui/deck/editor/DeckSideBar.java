@@ -13,14 +13,14 @@ import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class DeckEditorSideBarPanel extends TexturedPanel {
+public class DeckSideBar extends TexturedPanel {
 
     private final MigLayout migLayout = new MigLayout();
     private final JScrollPane cardScrollPane = new JScrollPane();
     private final DeckEditorCardViewer cardViewer = new DeckEditorCardViewer();
     private final DeckStatisticsViewer statsViewer = new DeckStatisticsViewer();
 
-    public DeckEditorSideBarPanel() {
+    public DeckSideBar() {
         setLookAndFeel();
         refreshLayout();
     }

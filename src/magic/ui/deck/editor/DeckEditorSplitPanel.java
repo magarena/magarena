@@ -47,7 +47,7 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
     private MagicDeck deck;
     private MagicDeck originalDeck;
     private DeckEditorButtonsPanel buttonsPanel;
-    private DeckEditorSideBarPanel sideBarPanel;
+    private DeckSideBar sideBarPanel;
     private final MigLayout migLayout = new MigLayout();
     private JSplitPane cardsSplitPane;
 
@@ -70,7 +70,7 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
 
         // create ui components.
         buttonsPanel = new DeckEditorButtonsPanel();
-        sideBarPanel = new DeckEditorSideBarPanel();
+        sideBarPanel = new DeckSideBar();
         filterPanel = new CardFilterPanel(this);
         final Container cardsPanel = getMainContentContainer();
 

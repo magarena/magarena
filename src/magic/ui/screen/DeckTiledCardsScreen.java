@@ -31,7 +31,7 @@ import magic.translate.UiString;
 import magic.translate.StringContext;
 import magic.ui.canvas.cards.ICardsCanvasListener;
 import magic.ui.cardBuilder.renderers.CardBuilder;
-import magic.ui.deck.editor.DeckEditorSideBarPanel;
+import magic.ui.deck.editor.DeckSideBar;
 import magic.ui.prefs.ImageSizePresets;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.throbber.AbstractThrobber;
@@ -133,12 +133,12 @@ public class DeckTiledCardsScreen
 
     private class ContentPanel extends JPanel implements ICardsCanvasListener {
 
-        private final DeckEditorSideBarPanel sidebar;
+        private final DeckSideBar sidebar;
         private final CardsCanvas canvas;
 
         public ContentPanel() {
 
-            sidebar = new DeckEditorSideBarPanel();
+            sidebar = new DeckSideBar();
             sidebar.setDeck(deck);
 
             canvas = new CardsCanvas(cardSize);

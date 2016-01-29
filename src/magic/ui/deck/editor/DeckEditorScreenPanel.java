@@ -19,7 +19,7 @@ public class DeckEditorScreenPanel extends JPanel implements IDeckEditorListener
     private static final GeneralConfig CONFIG = GeneralConfig.getInstance();
 
     private final MigLayout migLayout = new MigLayout();
-    private final DeckEditorSideBarPanel sideBarPanel; // LHS
+    private final DeckSideBar sideBarPanel; // LHS
     private final MainViewsPanel viewsPanel; // RHS
     private final IDeckEditorListener listener;
     private boolean isStandalone = true;
@@ -31,7 +31,7 @@ public class DeckEditorScreenPanel extends JPanel implements IDeckEditorListener
         this.listener = aListener;
 
         // lhs
-        sideBarPanel = new DeckEditorSideBarPanel();
+        sideBarPanel = new DeckSideBar();
         // rhs
         viewsPanel = new MainViewsPanel(deck, this);
         //

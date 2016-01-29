@@ -8,7 +8,7 @@ import javax.swing.JPanel;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.ui.cardtable.CardTablePanel;
-import magic.ui.deck.editor.DeckEditorSideBarPanel;
+import magic.ui.deck.editor.DeckSideBar;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -16,14 +16,14 @@ public class DeckViewPanel extends JPanel {
 
     private MagicDeck deck;
     private final MigLayout migLayout = new MigLayout();
-    private final DeckEditorSideBarPanel sideBarPanel;
+    private final DeckSideBar sideBarPanel;
     private final CardTablePanel deckTable;
 
     public DeckViewPanel(final MagicDeck aDeck, final MagicCardDefinition selectedCard) {
 
         this.deck = aDeck;
 
-        sideBarPanel = new DeckEditorSideBarPanel();
+        sideBarPanel = new DeckSideBar();
         sideBarPanel.setDeck(deck);
 
         deckTable = new CardTablePanel(this.deck, "  " + this.deck.getName());
