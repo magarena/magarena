@@ -66,7 +66,7 @@ public class ActionBar extends TexturedPanel implements IThemeStyle {
                 panel.add(btn, "w 60, h 40");
                 btn.setEnabled(btn.isRunnable());
                 btn.setBorder(BorderFactory.createCompoundBorder(
-                        BorderFactory.createMatteBorder(0, isFirstButton ? 1 : 0, 0, btn.showSeparator() ? 1 : 0, Color.LIGHT_GRAY),
+                        BorderFactory.createMatteBorder(0, isFirstButton ? 1 : 0, 0, btn.hasSeparator() ? 1 : 0, Color.LIGHT_GRAY),
                         BorderFactory.createEmptyBorder(0, 10, 0, 10)));
                 btn.setBorderPainted(true);
                 isFirstButton = false;

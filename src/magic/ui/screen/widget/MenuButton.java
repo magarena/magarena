@@ -23,12 +23,12 @@ public class MenuButton extends JButton {
     private final static Color COLOR_DISABLED = Color.GRAY;
 
     private final boolean isRunnable;
-    private final boolean showSeparator;
+    private boolean hasSeparator;
 
     public MenuButton(final String caption, final AbstractAction action, final String tooltip, final boolean showSeparator) {
         super(caption);
         this.isRunnable = (action != null);
-        this.showSeparator = showSeparator;
+        this.hasSeparator = showSeparator;
         setFont(FontsAndBorders.FONT_MENU_BUTTON);
         setHorizontalAlignment(SwingConstants.CENTER);
         setForeground(COLOR_NORMAL);
@@ -49,7 +49,7 @@ public class MenuButton extends JButton {
     }
     protected MenuButton() {
         isRunnable = false;
-        showSeparator = false;
+        hasSeparator = false;
     }
 
     public boolean isRunnable() {
@@ -103,8 +103,12 @@ public class MenuButton extends JButton {
         setForeground(b ? COLOR_NORMAL : COLOR_DISABLED);
     }
 
-    public boolean showSeparator() {
-        return showSeparator;
+    public boolean hasSeparator() {
+        return hasSeparator;
+    }
+
+    public void setSeparator(boolean b) {
+        hasSeparator = b;
     }
 
 

@@ -13,7 +13,6 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.SwingWorker;
-
 import magic.data.MagicIcon;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
@@ -22,8 +21,8 @@ import magic.model.MagicType;
 import magic.translate.StringContext;
 import magic.translate.UiString;
 import magic.ui.MagicImages;
-import magic.ui.canvas.cards.CardsCanvas;
 import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
+import magic.ui.canvas.cards.CardsCanvas;
 import magic.ui.canvas.cards.ICardsCanvasListener;
 import magic.ui.cardBuilder.renderers.CardBuilder;
 import magic.ui.deck.editor.DeckSideBar;
@@ -325,6 +324,7 @@ public class DeckTiledCardsScreen
                 new ShowCardsAction(CardTypeFilter.PLANESWALKERS), true)
             );
         }
+        buttons.get(buttons.size()-1).setSeparator(true);
         buttons.add(SampleHandActionButton.createInstance(deck));
         return buttons;
     }
