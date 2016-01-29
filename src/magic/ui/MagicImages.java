@@ -139,7 +139,7 @@ public final class MagicImages {
     public static ImageIcon getIcon(MagicCardDefinition cdef) {
         if (cdef.getTypes().size()>1) {
             return getIcon(MagicIcon.MULTIPLE);
-        } else if  (cdef.isLand()) {
+        } else if (cdef.isLand()) {
             return getIcon(MagicIcon.LAND);
         } else if (cdef.isCreature()) {
             return getIcon(MagicIcon.CREATURE);
