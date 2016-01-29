@@ -1,6 +1,7 @@
 package magic.ui.prefs;
 
 import java.awt.Dimension;
+import magic.data.GeneralConfig;
 import magic.translate.UiString;
 
 public enum ImageSizePresets {
@@ -36,7 +37,11 @@ public enum ImageSizePresets {
     }
 
     public static Dimension getDefaultSize() {
-        return SIZE_365x513.getSize();
+        ImageSizePresets preset = GeneralConfig.getInstance().getPreferredImageSize();
+        if (preset == SIZE_ORIGINAL) {
+            return SIZE_312x445.getSize();
+        } else {
+            return preset.getSize();
+        }
     }
-
 }
