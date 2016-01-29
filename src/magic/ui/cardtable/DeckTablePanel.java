@@ -81,24 +81,37 @@ public class DeckTablePanel extends TexturedPanel {
         };
     }
 
+    private void doLeftClickAction() {
+        table.getSelectionModel().removeListSelectionListener(listSelListener);
+        firePropertyChange(CP_CARD_LCLICKED, false, true);
+
+    }
+    
+    private void doRightClickAction() {
+        firePropertyChange(CP_CARD_RCLICKED, false, true);        
+    }
+
+    private boolean isMouseRowSelected(MouseEvent e) {
+        int rowNumber = table.rowAtPoint(e.getPoint());
+        return table.isRowSelected(rowNumber);
+    }
+
+    private void doMousePressedAction(MouseEvent e) {
+        if (isMouseRowSelected(e)) {
+            if (SwingUtilities.isLeftMouseButton(e)) {
+                doLeftClickAction();
+            } else if (SwingUtilities.isRightMouseButton(e)) {
+                doRightClickAction();
+            }
+        }
+    }
+
     private MouseAdapter getTableMouseAdapter() {
         return new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
                 if (!isAdjusting) {
-                    if (SwingUtilities.isLeftMouseButton(e)) {
-                        table.getSelectionModel().removeListSelectionListener(listSelListener);
-                        firePropertyChange(CP_CARD_LCLICKED, false, true);
-                    } else if (SwingUtilities.isRightMouseButton(e)) {
-                        final Point p = e.getPoint();
-                        final int rowNumber = table.rowAtPoint(p);
-                        final boolean isRowSelected = table.isRowSelected(rowNumber);
-                        if (!isRowSelected) {
-                            table.getSelectionModel().setSelectionInterval(rowNumber, rowNumber);
-                        } else {
-                            firePropertyChange(CP_CARD_RCLICKED, false, true);
-                        }
-                    }
+                    doMousePressedAction(e);
                 }
             }
         };
