@@ -141,16 +141,16 @@ public final class MagicImages {
             return getIcon(MagicIcon.LAND);
         } else if (cdef.isCreature()) {
             return getIcon(MagicIcon.CREATURE);
-        } else if (cdef.isEquipment()) {
-            return getIcon(MagicIcon.EQUIPMENT);
-        } else if (cdef.isAura()) {
-            return getIcon(MagicIcon.AURA);
-        } else if (cdef.isEnchantment()) {
-            return getIcon(MagicIcon.ENCHANTMENT);
         } else if (cdef.isArtifact()) {
             return getIcon(MagicIcon.ARTIFACT);
+        } else if (cdef.isEnchantment()) {
+            return getIcon(MagicIcon.ENCHANTMENT);
+        } else if (cdef.isInstant()) {
+            return getIcon(MagicIcon.INSTANT);
+        } else if (cdef.isSorcery()) {
+            return getIcon(MagicIcon.SORCERY);
         } else {
-            return getIcon(MagicIcon.SPELL);
+            return getIcon(MagicIcon.PLANESWALKER);
         }
     }
 
