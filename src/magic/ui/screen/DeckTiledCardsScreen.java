@@ -1,22 +1,5 @@
 package magic.ui.screen;
 
-import magic.ui.MagicImages;
-import magic.model.MagicCard;
-import magic.model.MagicCardDefinition;
-import magic.model.MagicDeck;
-import magic.model.MagicType;
-import magic.ui.canvas.cards.CardsCanvas;
-import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
-import magic.ui.screen.interfaces.IActionBar;
-import magic.ui.screen.interfaces.IStatusBar;
-import magic.ui.screen.widget.ActionBarButton;
-import magic.ui.screen.widget.MenuButton;
-import magic.ui.screen.widget.SampleHandActionButton;
-import net.miginfocom.swing.MigLayout;
-import javax.swing.AbstractAction;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.SwingConstants;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -25,17 +8,35 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
+import javax.swing.AbstractAction;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.SwingConstants;
 import javax.swing.SwingWorker;
+
 import magic.data.MagicIcon;
-import magic.translate.UiString;
+import magic.model.MagicCard;
+import magic.model.MagicCardDefinition;
+import magic.model.MagicDeck;
+import magic.model.MagicType;
 import magic.translate.StringContext;
+import magic.translate.UiString;
+import magic.ui.MagicImages;
+import magic.ui.canvas.cards.CardsCanvas;
+import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
 import magic.ui.canvas.cards.ICardsCanvasListener;
 import magic.ui.cardBuilder.renderers.CardBuilder;
 import magic.ui.deck.editor.DeckSideBar;
 import magic.ui.prefs.ImageSizePresets;
+import magic.ui.screen.interfaces.IActionBar;
+import magic.ui.screen.interfaces.IStatusBar;
+import magic.ui.screen.widget.ActionBarButton;
+import magic.ui.screen.widget.MenuButton;
+import magic.ui.screen.widget.SampleHandActionButton;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.throbber.AbstractThrobber;
 import magic.ui.widget.throbber.ImageThrobber;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class DeckTiledCardsScreen
@@ -51,8 +52,16 @@ public class DeckTiledCardsScreen
     private static final String _S6 = "Display only creature cards.";
     private static final String _S7 = "Lands";
     private static final String _S8 = "Display only land cards.";
-    private static final String _S9 = "Other Spells";
-    private static final String _S10 = "Display any other card that is not a creature or land.";
+    private static final String _S9 = "Artifacts";
+    private static final String _S10 = "Display only artifact cards.";
+    private static final String _S13 = "Enchantments";
+    private static final String _S14 = "Display only enchantment cards.";
+    private static final String _S15 = "Instants";
+    private static final String _S16 = "Display only instant cards.";
+    private static final String _S17 = "Sorceries";
+    private static final String _S18 = "Display only sorcery cards.";
+    private static final String _S19 = "Planeswalkers";
+    private static final String _S20 = "Display only planeswalker cards.";
     @StringContext(eg = "Creatures (28 cards, 46%)")
     private static final String _S11 = "%s (%d cards, %d%%)";
     @StringContext(eg = "All cards (60 cards)")
@@ -62,11 +71,17 @@ public class DeckTiledCardsScreen
         ALL("All cards"),
         CREATURES("Creatures"),
         LANDS("Lands"),
-        OTHER("Other Spells");
+        ARTIFACTS("Artifacts"),
+        ENCHANTMENTS("Enchantments"),
+        INSTANTS("Instants"),
+        SORCERIES("Sorceries"),
+        PLANESWALKERS("Planeswalkers");
         private final String caption;
+
         private CardTypeFilter(final String caption) {
             this.caption = caption;
         }
+
         @Override
         public String toString() {
             return caption;
@@ -81,15 +96,15 @@ public class DeckTiledCardsScreen
     private AbstractThrobber throbber;
 
     public DeckTiledCardsScreen(final MagicDeck aDeck) {
-        this.deck = aDeck;
-        this.statusPanel = new StatusPanel(aDeck.getName(), getCardTypeCaption(CardTypeFilter.ALL, aDeck.size()));
+        deck = aDeck;
+        statusPanel = new StatusPanel(aDeck.getName(), getCardTypeCaption(CardTypeFilter.ALL, aDeck.size()));
         if (CardBuilder.IS_LOADED == false && MagicImages.hasProxyImage(aDeck)) {
             setThrobberLayout();
             new ContentWorker(aDeck).execute();
         } else {
             content = new ContentPanel();
             setContent(content);
-        }        
+        }
     }
 
     private void setThrobberLayout() {
@@ -108,7 +123,7 @@ public class DeckTiledCardsScreen
         private final MagicDeck deck;
 
         public ContentWorker(MagicDeck aDeck) {
-            this.deck = aDeck;
+            deck = aDeck;
         }
 
         @Override
@@ -191,6 +206,9 @@ public class DeckTiledCardsScreen
             final MagicCard card = new MagicCard(cardDef, null, 0);
 
             switch (filterType) {
+                case ALL:
+                    cards.add(card);
+                    break;
                 case CREATURES:
                     if (cardType.contains(MagicType.Creature)) {
                         cards.add(card);
@@ -201,8 +219,28 @@ public class DeckTiledCardsScreen
                         cards.add(card);
                     }
                     break;
-                case OTHER:
-                    if (!cardType.contains(MagicType.Creature) && !cardType.contains(MagicType.Land)) {
+                case ARTIFACTS:
+                    if (cardType.contains(MagicType.Artifact)) {
+                        cards.add(card);
+                    }
+                    break;
+                case ENCHANTMENTS:
+                    if (cardType.contains(MagicType.Enchantment)) {
+                        cards.add(card);
+                    }
+                    break;
+                case INSTANTS:
+                    if (cardType.contains(MagicType.Instant)) {
+                        cards.add(card);
+                    }
+                    break;
+                case SORCERIES:
+                    if (cardType.contains(MagicType.Sorcery)) {
+                        cards.add(card);
+                    }
+                    break;
+                case PLANESWALKERS:
+                    if (cardType.contains(MagicType.Planeswalker)) {
                         cards.add(card);
                     }
                     break;
@@ -234,25 +272,44 @@ public class DeckTiledCardsScreen
     @Override
     public List<MenuButton> getMiddleActions() {
         final List<MenuButton> buttons = new ArrayList<>();
-        buttons.add(
-                new ActionBarButton(
-                        UiString.get(_S3), UiString.get(_S4),
-                        new ShowCardsAction(CardTypeFilter.ALL), false));
         buttons.add(new ActionBarButton(
-                        MagicImages.getIcon(MagicIcon.CREATURES_ICON),
-                        UiString.get(_S5), UiString.get(_S6),
-                        new ShowCardsAction(CardTypeFilter.CREATURES), false)
-                );
+            UiString.get(_S3), UiString.get(_S4),
+            new ShowCardsAction(CardTypeFilter.ALL), false));
         buttons.add(new ActionBarButton(
-                        MagicImages.getIcon(MagicIcon.LANDS_ICON),
-                        UiString.get(_S7), UiString.get(_S8),
-                        new ShowCardsAction(CardTypeFilter.LANDS), false)
-                );
+            MagicImages.getIcon(MagicIcon.LANDS_ICON),
+            UiString.get(_S7), UiString.get(_S8),
+            new ShowCardsAction(CardTypeFilter.LANDS), false)
+        );
         buttons.add(new ActionBarButton(
-                        MagicImages.getIcon(MagicIcon.SPELLS_ICON),
-                        UiString.get(_S9), UiString.get(_S10),
-                        new ShowCardsAction(CardTypeFilter.OTHER), true)
-                );
+            MagicImages.getIcon(MagicIcon.CREATURES_ICON),
+            UiString.get(_S5), UiString.get(_S6),
+            new ShowCardsAction(CardTypeFilter.CREATURES), false)
+        );
+        buttons.add(new ActionBarButton(
+            MagicImages.getIcon(MagicIcon.ARTIFACTS_ICON),
+            UiString.get(_S9), UiString.get(_S10),
+            new ShowCardsAction(CardTypeFilter.ARTIFACTS), false)
+        );
+        buttons.add(new ActionBarButton(
+            MagicImages.getIcon(MagicIcon.ENCHANTMENTS_ICON),
+            UiString.get(_S13), UiString.get(_S14),
+            new ShowCardsAction(CardTypeFilter.ENCHANTMENTS), false)
+        );
+        buttons.add(new ActionBarButton(
+            MagicImages.getIcon(MagicIcon.INSTANTS_ICON),
+            UiString.get(_S15), UiString.get(_S16),
+            new ShowCardsAction(CardTypeFilter.INSTANTS), false)
+        );
+        buttons.add(new ActionBarButton(
+            MagicImages.getIcon(MagicIcon.SORCERIES_ICON),
+            UiString.get(_S17), UiString.get(_S18),
+            new ShowCardsAction(CardTypeFilter.SORCERIES), false)
+        );
+        buttons.add(new ActionBarButton(
+            MagicImages.getIcon(MagicIcon.PLANESWALKERS_ICON),
+            UiString.get(_S19), UiString.get(_S20),
+            new ShowCardsAction(CardTypeFilter.PLANESWALKERS), true)
+        );
         buttons.add(SampleHandActionButton.createInstance(deck));
         return buttons;
     }
@@ -297,7 +354,7 @@ public class DeckTiledCardsScreen
         }
     }
 
-     private final class StatusPanel extends JPanel {
+    private final class StatusPanel extends JPanel {
 
         // ui
         private final MigLayout migLayout = new MigLayout();
