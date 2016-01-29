@@ -79,4 +79,13 @@ public class MagicDeck extends ArrayList<MagicCardDefinition> {
         }
         return count;
     }
+
+    public boolean contains(final MagicType type) {
+        for (MagicCardDefinition card : this) {
+            if (card.hasType(type)) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
