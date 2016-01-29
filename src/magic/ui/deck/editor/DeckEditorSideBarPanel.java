@@ -5,6 +5,7 @@ import java.awt.Dimension;
 import javax.swing.BorderFactory;
 import javax.swing.JScrollPane;
 import magic.model.MagicCardDefinition;
+import magic.model.MagicDeck;
 import magic.ui.duel.viewer.CardViewer;
 import magic.ui.duel.viewer.DeckEditorCardViewer;
 import magic.ui.widget.deck.DeckStatisticsViewer;
@@ -43,8 +44,8 @@ public class DeckEditorSideBarPanel extends TexturedPanel {
         }
     }
 
-    public DeckStatisticsViewer getStatsViewer() {
-        return statsViewer;
+    public void setDeck(MagicDeck aDeck) {
+        statsViewer.setDeck(aDeck);
     }
 
     public final void setCard(final MagicCardDefinition card) {

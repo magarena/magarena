@@ -24,7 +24,7 @@ public class DeckViewPanel extends JPanel {
         this.deck = aDeck;
 
         sideBarPanel = new DeckEditorSideBarPanel();
-        sideBarPanel.getStatsViewer().setDeck(deck);
+        sideBarPanel.setDeck(deck);
 
         deckTable = new CardTablePanel(this.deck, "  " + this.deck.getName());
         deckTable.setDeckEditorSelectionMode();

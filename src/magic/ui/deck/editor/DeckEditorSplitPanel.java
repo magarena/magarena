@@ -131,7 +131,7 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
         cardsSplitPane.setDividerLocation(getDividerPosition());
 
         // update deck stats
-        sideBarPanel.getStatsViewer().setDeck(this.deck);
+        sideBarPanel.setDeck(this.deck);
 
         return cardsSplitPane;
 
@@ -173,7 +173,7 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
         deckDefs = this.deck;
         deckTable.setTitle(generateDeckTitle(deckDefs));
         deckTable.setCards(deckDefs);
-        sideBarPanel.getStatsViewer().setDeck(deckDefs);
+        sideBarPanel.setDeck(deckDefs);
         validate();
     }
 
@@ -281,7 +281,7 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
             deckDefs = this.deck;
             deckTable.setTitle(generateDeckTitle(deckDefs));
             deckTable.setCards(deckDefs);
-            sideBarPanel.getStatsViewer().setDeck(deckDefs);
+            sideBarPanel.setDeck(deckDefs);
         }
     }
 

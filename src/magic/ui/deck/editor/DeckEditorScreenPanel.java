@@ -121,7 +121,7 @@ public class DeckEditorScreenPanel extends JPanel implements IDeckEditorListener
     @Override
     public void cardSelected(MagicCardDefinition card) {
         setCard(card);
-        sideBarPanel.getStatsViewer().setDeck(getDeck());
+        sideBarPanel.setDeck(getDeck());
     }
 
     @Override

@@ -34,10 +34,6 @@ public class ExplorerSidebarPanel extends TexturedPanel {
         revalidate();
     }
 
-    public DeckStatisticsViewer getStatsViewer() {
-        return statsViewer;
-    }
-
     public void setCard(final MagicCardDefinition card) {
         cardPanel.setCard(card);
     }

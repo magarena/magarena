@@ -139,7 +139,7 @@ public class DeckTiledCardsScreen
         public ContentPanel() {
 
             sidebar = new DeckEditorSideBarPanel();
-            sidebar.getStatsViewer().setDeck(deck);
+            sidebar.setDeck(deck);
 
             canvas = new CardsCanvas(cardSize);
             canvas.setListener(this);
