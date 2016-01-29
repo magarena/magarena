@@ -1,9 +1,7 @@
 package magic.ui.screen;
 
-import java.awt.Color;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
-import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
@@ -30,7 +28,6 @@ public class DeckViewPanel extends JPanel {
         deckTable.setDeckEditorSelectionMode();
         deckTable.setHeaderVisible(false);
         deckTable.showCardCount(true);
-        deckTable.setBorder(BorderFactory.createMatteBorder(0, 1, 0, 0, Color.DARK_GRAY));
         setDeckTablePropChangeListeners();
 
         setLookAndFeel();
