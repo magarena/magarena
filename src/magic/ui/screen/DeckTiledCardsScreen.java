@@ -53,6 +53,10 @@ public class DeckTiledCardsScreen
     private static final String _S8 = "Display only land cards.";
     private static final String _S9 = "Artifacts";
     private static final String _S10 = "Display only artifact cards.";
+    @StringContext(eg = "Creatures (28 cards, 46%)")
+    private static final String _S11 = "%s (%d cards, %d%%)";
+    @StringContext(eg = "All cards (60 cards)")
+    private static final String _S12 = "%s (%d cards)";
     private static final String _S13 = "Enchantments";
     private static final String _S14 = "Display only enchantment cards.";
     private static final String _S15 = "Instants";
@@ -61,24 +65,24 @@ public class DeckTiledCardsScreen
     private static final String _S18 = "Display only sorcery cards.";
     private static final String _S19 = "Planeswalkers";
     private static final String _S20 = "Display only planeswalker cards.";
-    @StringContext(eg = "Creatures (28 cards, 46%)")
-    private static final String _S11 = "%s (%d cards, %d%%)";
-    @StringContext(eg = "All cards (60 cards)")
-    private static final String _S12 = "%s (%d cards)";
+    private static final String _S21 = "All cards";
+    private static final String _S22 = "This deck contains one or more proxy images.";
+    private static final String _S23 = "Please wait while the proxy image generator is initialized.";
 
     private enum CardTypeFilter {
-        ALL("All cards"),
-        CREATURES("Creatures"),
-        LANDS("Lands"),
-        ARTIFACTS("Artifacts"),
-        ENCHANTMENTS("Enchantments"),
-        INSTANTS("Instants"),
-        SORCERIES("Sorceries"),
-        PLANESWALKERS("Planeswalkers");
+        ALL(_S21),
+        CREATURES(_S5),
+        LANDS(_S7),
+        ARTIFACTS(_S9),
+        ENCHANTMENTS(_S13),
+        INSTANTS(_S15),
+        SORCERIES(_S17),
+        PLANESWALKERS(_S19);
+
         private final String caption;
 
         private CardTypeFilter(final String caption) {
-            this.caption = caption;
+            this.caption = UiString.get(caption);
         }
 
         @Override
@@ -111,7 +115,10 @@ public class DeckTiledCardsScreen
         JLabel progressLabel = new JLabel();
         progressLabel.setFont(FontsAndBorders.FONT2);
         progressLabel.setForeground(Color.WHITE);
-        progressLabel.setText("<html><center>This deck contains one or more proxy images.<br>Please wait while the proxy image generator is initialized.</center></html>");
+        progressLabel.setText(String.format("<html><center>%s<br>%s</center></html>",
+            UiString.get(_S22),
+            UiString.get(_S23))
+        );
         setLayout(new MigLayout("flowy, aligny center, alignx center"));
         add(throbber, "alignx center");
         add(progressLabel);
