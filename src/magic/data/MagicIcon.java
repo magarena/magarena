@@ -67,6 +67,7 @@ public enum MagicIcon {
     INSTANT("instant.png"),
     SORCERY("sorcery.png"),
     PLANESWALKER("planeswalker.png"),
+    MULTIPLE("multiple.png"),
     ABILITY("ability.png"),
     TRIGGER("trigger.png"),
     TOKEN("token.png"),
