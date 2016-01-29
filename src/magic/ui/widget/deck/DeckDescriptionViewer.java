@@ -1,62 +1,49 @@
 package magic.ui.widget.deck;
 
-import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.Font;
-import java.awt.event.FocusEvent;
-import java.awt.event.FocusListener;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import magic.model.MagicDeck;
 import magic.model.DuelPlayerConfig;
 import magic.translate.UiString;
-import magic.ui.theme.ThemeFactory;
-import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.TexturedPanel;
 import magic.ui.widget.TitleBar;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class DeckDescriptionViewer extends JPanel implements FocusListener {
+public class DeckDescriptionViewer extends JPanel {
 
     // translatable strings
     private static final String _S1 = "Deck Description";
 
-    private static final Dimension PREFERRED_SIZE = new Dimension(270, 110);
     private final JTextArea textArea;
-    private DuelPlayerConfig player;
-    private final JScrollPane scrollPane = new JScrollPane();
+    private final JScrollPane scrollPane;
 
     public DeckDescriptionViewer() {
 
-        setPreferredSize(PREFERRED_SIZE);
-        setBorder(FontsAndBorders.UP_BORDER);
-        setLayout(new BorderLayout());
+        setOpaque(false);
 
         final TitleBar titleBar = new TitleBar(UiString.get(_S1));
-        add(titleBar, BorderLayout.NORTH);
-
-        final TexturedPanel mainPanel = new TexturedPanel();
-        mainPanel.setLayout(new BorderLayout());
-        mainPanel.setOpaque(false);
-        mainPanel.setBorder(FontsAndBorders.BLACK_BORDER_2);
-        add(mainPanel,BorderLayout.CENTER);
 
         textArea = new JTextArea();
-        textArea.setBackground(new Color(0, 0, 0, 0));
+        textArea.setOpaque(false);
         textArea.setLineWrap(true);
         textArea.setWrapStyleWord(true);
-        textArea.setForeground(ThemeFactory.getInstance().getCurrentTheme().getTextColor());
-        textArea.addFocusListener(this);
-        textArea.setBorder(null);
 
-        scrollPane.setViewportView(textArea);
+        scrollPane = new JScrollPane(textArea);
         scrollPane.getVerticalScrollBar().setUnitIncrement(8);
         scrollPane.setBorder(null);
 
-        mainPanel.add(scrollPane,BorderLayout.CENTER);
+        setMinimumSize(titleBar.getMinimumSize());
+
+        final MigLayout mig = new MigLayout();
+        setLayout(mig);        
+        mig.setLayoutConstraints("flowy, insets 0, gap 0");
+        mig.setColumnConstraints("[fill, grow]");
+        mig.setRowConstraints("[][fill, grow]");
+        add(titleBar);
+        add(scrollPane);
 
     }
 
@@ -84,18 +71,7 @@ public class DeckDescriptionViewer extends JPanel implements FocusListener {
     }
 
     public void setPlayer(final DuelPlayerConfig playerDef) {
-        this.player = playerDef;
         setDeckDescription(playerDef.getDeck().getDescription());
-    }
-
-    @Override
-    public void focusGained(final FocusEvent event) {}
-
-    @Override
-    public void focusLost(final FocusEvent event) {
-        if (player != null) {
-            player.getDeck().setDescription(textArea.getText());
-        }
     }
 
     public void setDeckDescription(final String text) {
