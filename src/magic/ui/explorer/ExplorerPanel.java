@@ -49,7 +49,7 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
         setOpaque(false);
 
         // create ui components.
-        sideBarPanel = new ExplorerSidebarPanel(isDeckEditor());
+        sideBarPanel = new ExplorerSidebarPanel();
         filterPanel = new CardFilterPanel(this);
         final Container cardsPanel = getMainContentContainer();
 
