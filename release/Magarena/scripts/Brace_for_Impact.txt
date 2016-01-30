@@ -4,6 +4,6 @@ value=2.351
 rarity=U
 type=Instant
 cost={4}{W}
-effect=Prevent all damage that would be dealt to target multicolored creature this turn. For each 1 damage prevented this way, put a +1/+1 counter on that creature.
-timing=removal
+timing=pump
+requires_groovy_code
 oracle=Prevent all damage that would be dealt to target multicolored creature this turn. For each 1 damage prevented this way, put a +1/+1 counter on that creature.
