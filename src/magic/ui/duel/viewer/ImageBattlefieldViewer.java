@@ -48,7 +48,7 @@ public class ImageBattlefieldViewer extends JPanel implements IChoiceViewer, IUp
         permanentsViewer=new ImagePermanentsViewer(controller, opponent);
         add(permanentsViewer,BorderLayout.CENTER);
 
-        permanentFilter=new PermanentFilter(this,controller);
+        permanentFilter=new PermanentFilter();
     }
 
     @Override
