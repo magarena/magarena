@@ -8,11 +8,8 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 import magic.model.MagicAbility;
 import magic.model.MagicCardDefinition;
-import magic.model.MagicColor;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
-import magic.model.MagicType;
-import magic.model.stack.MagicItemOnStack;
 
 public class PermanentViewerInfo {
 
@@ -48,12 +45,7 @@ public class PermanentViewerInfo {
     public final int damage;
     public final int shield;
     public final int position;
-    public final boolean visible;
-    public final boolean basic;
-    public final boolean mana;
     public final boolean creature;
-    public final boolean artifact;
-    public final boolean enchantment;
     public final boolean root;
     public final boolean tapped;
     public final boolean canNotTap;
@@ -61,7 +53,6 @@ public class PermanentViewerInfo {
     public final boolean blocking;
     public final boolean blockingInvalid;
     public final boolean lowered;
-    public final MagicColor manaColor;
     public final List<PermanentViewerInfo> blockers;
     public final SortedSet<PermanentViewerInfo> linked;
 
@@ -74,20 +65,11 @@ public class PermanentViewerInfo {
         damage=permanent.getDamage();
         shield=permanent.getPreventDamage();
         position=getPosition(permanent);
-        visible=permanent.getController()==game.getVisiblePlayer();
-        basic=permanent.hasType(MagicType.Basic);
-        mana=permanent.producesMana();
         creature=permanent.isCreature();
         attacking=permanent.isAttacking();
         blocking=permanent.isBlocking();
         blockingInvalid=permanent.getBlockedCreature().isInvalid();
         magicCardId = permanent.getCard().getId();
-
-        artifact=permanent.isEquipped() ||
-            (permanent.isArtifact() && permanent.getEquippedCreature().isInvalid());
-
-        enchantment=permanent.isEnchanted() ||
-            (permanent.isEnchantment() && permanent.getEnchantedPermanent().isInvalid());
 
         root=permanent.getEnchantedPermanent().isInvalid() && permanent.getEquippedCreature().isInvalid();
 
@@ -97,7 +79,6 @@ public class PermanentViewerInfo {
 
         lowered=isLowered(permanent);
 
-        manaColor=getManaColor(permanent);
         blockers=getBlockers(game,permanent);
         linked=getLinked(game,permanent);
 
@@ -134,24 +115,6 @@ public class PermanentViewerInfo {
         } else {
             return 4;
         }
-    }
-
-    private static boolean isTargeted(final MagicGame game,final MagicPermanent permanent) {
-        for (final MagicItemOnStack itemOnStack : game.getStack()) {
-            if (itemOnStack.isTarget(permanent)) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    private static MagicColor getManaColor(final MagicPermanent permanent) {
-        for (final MagicColor color : MagicColor.values()) {
-            if (permanent.hasSubType(color.getLandSubType())) {
-                return color;
-            }
-        }
-        return MagicColor.Black;
     }
 
     private static List<PermanentViewerInfo> getBlockers(final MagicGame game,final MagicPermanent permanent) {
