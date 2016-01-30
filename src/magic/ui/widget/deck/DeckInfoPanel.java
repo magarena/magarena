@@ -1,6 +1,5 @@
 package magic.ui.widget.deck;
 
-import java.awt.Dimension;
 import magic.model.MagicDeck;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
@@ -10,8 +9,6 @@ import net.miginfocom.swing.MigLayout;
 public class DeckInfoPanel extends TexturedPanel {
 
     public static final String CP_LAYOUT_CHANGED = "9e33fc9e-e588-4b5f-86ad-66a2898f7d5e";
-
-    public static final Dimension PREFERRED_SIZE = new Dimension(300, 190);
 
     private final DeckStatisticsViewer statsViewer;
     private final DeckDescriptionViewer descViewer;

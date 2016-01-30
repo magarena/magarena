@@ -1,6 +1,5 @@
 package magic.ui.widget.deck;
 
-import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.List;
@@ -24,8 +23,6 @@ import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 public class DeckStatisticsViewer extends JPanel implements ChangeListener {
-
-    public static final Dimension PREFERRED_SIZE = new Dimension(300, 190);
 
     public static final String CP_LAYOUT_CHANGED = "47395590-0c6a-4837-9dff-44a4ce19bb3c";
 
