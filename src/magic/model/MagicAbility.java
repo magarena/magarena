@@ -792,7 +792,7 @@ public enum MagicAbility {
         protected void addAbilityImpl(MagicAbilityStore card, Matcher arg) {
             MagicSourceEvent hauntEffect = MagicRuleEventAction.create(ARG.effect(arg));
             card.add(EntersBattlefieldTrigger.create(hauntEffect));
-            card.add(HauntTrigger.create(hauntEffect));
+            card.add(ThisDiesTrigger.createHaunt(hauntEffect));
         }
     },
     HauntSpell("When the creature SN haunts dies, " + ARG.EFFECT, 0) {
