@@ -5,8 +5,10 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
+
 import magic.model.MagicCardDefinition;
 import magic.model.MagicColor;
+import magic.model.MagicManaCost;
 import magic.model.MagicRarity;
 import magic.translate.UiString;
 
@@ -111,50 +113,54 @@ public class CardStatistics {
                         colorLands[color.ordinal()]++;
                     }
                 }
-            } else {
-                if (card.hasX()) {
-                    manaCurve[0]++;
-                } else {
-                    final int convertedCost=card.getConvertedCost();
-                    manaCurve[convertedCost+1>=MANA_CURVE_SIZE?MANA_CURVE_SIZE-1:convertedCost+1]++;
-                }
+            }
+            if (card.hasX()) {
+                manaCurve[0]++;
+            } else if (card.getCost() != MagicManaCost.NONE) {
+                final int convertedCost = card.getConvertedCost();
+                manaCurve[convertedCost + 1 >= MANA_CURVE_SIZE ? MANA_CURVE_SIZE - 1 : convertedCost + 1]++;
+            }
 
-                averageCost+=card.getConvertedCost();
-                averageValue+=card.getValue();
+            averageCost += card.getConvertedCost();
+            averageValue += card.getValue();
 
-                if (card.isCreature()) {
-                    totalTypes[1]++;
-                } else if (card.isArtifact()) {
-                    totalTypes[2]++;
-                } else if (card.isEnchantment()) {
-                    totalTypes[3]++;
-                } else if (card.isInstant()) {
-                    totalTypes[4]++;
-                } else if (card.isSorcery()) {
-                    totalTypes[5]++;
-                } else {
-                    totalTypes[6]++;
-                }
+            if (card.isCreature()) {
+                totalTypes[1]++;
+            }
+            if (card.isArtifact()) {
+                totalTypes[2]++;
+            }
+            if (card.isEnchantment()) {
+                totalTypes[3]++;
+            }
+            if (card.isInstant()) {
+                totalTypes[4]++;
+            }
+            if (card.isSorcery()) {
+                totalTypes[5]++;
+            }
+            if (card.isPlaneswalker()) {
+                totalTypes[6]++;
+            }
 
-                int count=0;
-                int index=-1;
-                for (final MagicColor color : MagicColor.values()) {
-
-                    if (color.hasColor(card.getColorFlags())) {
-                        index=color.ordinal();
-                        colorCount[index]++;
-                        count++;
-                    }
-                }
-                if (count==0) {
-                    colorless++;
-                } else if (count==1) {
-                    colorMono[index]++;
-                    monoColor++;
-                } else {
-                    multiColor++;
+            int count = 0;
+            int index = -1;
+            for (final MagicColor color : MagicColor.values()) {
+                if (color.hasColor(card.getColorFlags())) {
+                    index = color.ordinal();
+                    colorCount[index]++;
+                    count++;
                 }
             }
+            if (count == 0) {
+                colorless++;
+            } else if (count == 1) {
+                colorMono[index]++;
+                monoColor++;
+            } else {
+                multiColor++;
+            }
+
         }
 
         final int total=totalCards-totalTypes[0];
