@@ -55,7 +55,7 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
     private void refreshLayout() {
         removeAll();
         add(titleBar, "w 100%");
-        add(cardTypesPanel, "w 100%, gaptop 2, hidemode 3");
+        add(cardTypesPanel, "alignx center, gaptop 2, hidemode 3");
         add(manaCurvePanel, "alignx center, gaptop 2, hidemode 3");
         add(colorsPanel, "w 100%, gaptop 2, hidemode 3");
         revalidate();
