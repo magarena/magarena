@@ -171,6 +171,8 @@ public class GeneralConfig {
     private static final String CARD_TEXT_LANG = "cardTextLanguage";
     private CardTextLanguage cardTextLanguage = CardTextLanguage.ENGLISH;
 
+    private boolean isStatsVisible = true;
+
     private GeneralConfig() { }
 
     public Proxy getProxy() {
@@ -705,5 +707,13 @@ public class GeneralConfig {
 
     public void setGameVolume(int value) {
         gameVolume = value;
+    }
+
+    public boolean isStatsVisible() {
+        return isStatsVisible;
+    }
+
+    public void setStatsVisible(boolean b) {
+        isStatsVisible = b;
     }
 }

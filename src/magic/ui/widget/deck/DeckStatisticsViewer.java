@@ -11,6 +11,7 @@ import javax.swing.SwingConstants;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import magic.data.CardStatistics;
+import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.model.DuelPlayerConfig;
 import magic.model.MagicDeck;
@@ -34,7 +35,6 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
     private final ManaCurvePanel manaCurvePanel;
     private final CardTypeStatsPanel cardTypesPanel;
     private final CardColorStatsPanel colorsPanel;
-    private boolean isVisible = true;
 
     public DeckStatisticsViewer() {
         
@@ -44,6 +44,7 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
         cardTypesPanel = new CardTypeStatsPanel();
         manaCurvePanel = new ManaCurvePanel();
         colorsPanel = new CardColorStatsPanel();
+        setStatsVisible(GeneralConfig.getInstance().isStatsVisible());
 
         setLayout(new MigLayout("flowy, insets 0, gap 0"));
         refreshLayout();
@@ -57,12 +58,17 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
         add(colorsPanel, "w 100%, gaptop 2, hidemode 3");
         revalidate();
     }
+
+    private void setStatsVisible(boolean b) {
+        cardTypesPanel.setVisible(b);
+        manaCurvePanel.setVisible(b);
+        colorsPanel.setVisible(b);
+    }
     
     private void switchStatsVisibility() {
-        isVisible = !isVisible;
-        cardTypesPanel.setVisible(isVisible);
-        manaCurvePanel.setVisible(isVisible);
-        colorsPanel.setVisible(isVisible);        
+        GeneralConfig config = GeneralConfig.getInstance();
+        config.setStatsVisible(!config.isStatsVisible());
+        setStatsVisible(config.isStatsVisible());
         refreshLayout();
         firePropertyChange(CP_LAYOUT_CHANGED, true, false);
     }
