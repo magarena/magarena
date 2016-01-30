@@ -42,7 +42,7 @@ public class MagicHauntEvent extends MagicEvent {
                     game.doAction(new MoveCardAction(card, MagicLocationType.Graveyard, MagicLocationType.Exile));
                     game.doAction(new AddTriggerAction(
                         creatureToHaunt,
-                        ThisDiesTrigger.createDelayed(event.getSource(), event.getPlayer(), effect)
+                        ThisDiesTrigger.createDelayed(card, event.getPlayer(), effect)
                     ));
                 });
             }
