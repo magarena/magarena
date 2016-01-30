@@ -1,9 +1,9 @@
 package magic.ui.theme;
 
-import javax.swing.ImageIcon;
 
 import java.awt.Color;
 import java.awt.image.BufferedImage;
+import javax.swing.ImageIcon;
 
 public interface Theme {
 
@@ -13,17 +13,8 @@ public interface Theme {
     String TEXTURE_PLAYER="texture_player";
     String TEXTURE_HAND="texture_hand";
 
-    String ICON_LIFE="icon_life";
-    String ICON_PREVENT="icon_prevent";
-    String ICON_POISON="icon_poison";
-    String ICON_LAND="icon_land";
-    String ICON_HAND="icon_hand";
-    String ICON_LIBRARY="icon_library";
-    String ICON_GRAVEYARD="icon_graveyard";
-    String ICON_MESSAGE="icon_message";
     String ICON_SMALL_BATTLEFIELD="icon_small_battlefield";
     String ICON_SMALL_COMBAT="icon_small_combat";
-    String ICON_SMALL_STACK="icon_small_stack";
     String ICON_SMALL_HAND="icon_small_hand";
     String ICON_SMALL_GRAVEYARD="icon_small_graveyard";
     String ICON_SMALL_EXILE="icon_small_exile";
@@ -42,10 +33,7 @@ public interface Theme {
     String COLOR_COMBAT_CHOICE="color_combat_choice";
     String COLOR_CHOICE_BORDER="color_choice_border";
     String COLOR_COMBAT_CHOICE_BORDER="color_combat_choice_border";
-    String COLOR_SELECTED_PLAYER="color_selected_player";
     String COLOR_GAME_BORDER="color_game_border";
-    String COLOR_VIEWER_BACKGROUND="color_viewer_background";
-    String COLOR_SEPARATOR_BACKGROUND="color_separator_background";
 
     String VALUE_SPACING="value_spacing";
     String VALUE_BACKGROUND_STRETCH="value_background_stretch";
@@ -65,8 +53,6 @@ public interface Theme {
     Color getColor(final String name);
 
     Color getTextColor();
-
-    Color getNameColor();
 
     Boolean getOptionUseOverlay();
 
