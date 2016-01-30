@@ -4,8 +4,7 @@ value=2.966
 rarity=R
 type=Artifact
 cost={2}{B}{B}
-ability={T}, Exile two cards from your graveyard: Draw a card.;\
-        If damage would be dealt to you, prevent that damage. Exile a card from your graveyard for each 1 damage prevented this way.;\
-        When there are no cards in your graveyard, you lose the game.
+ability={T}, Exile two cards from your graveyard: Draw a card.
 timing=artifact
+requires_groovy_code
 oracle={T}, Exile two cards from your graveyard: Draw a card.\nIf damage would be dealt to you, prevent that damage. Exile a card from your graveyard for each 1 damage prevented this way.\nWhen there are no cards in your graveyard, you lose the game.
