@@ -35,12 +35,15 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
     private final ManaCurvePanel manaCurvePanel;
     private final CardTypeStatsPanel cardTypesPanel;
     private final CardColorStatsPanel colorsPanel;
+    private final ActionBarButton titlebarButton;
 
     public DeckStatisticsViewer() {
         
         setOpaque(false);
 
+        titlebarButton = getLogViewActionButton();
         titleBar = new ActionButtonTitleBar(UiString.get(_S1), getLogActionButtons());
+
         cardTypesPanel = new CardTypeStatsPanel();
         manaCurvePanel = new ManaCurvePanel();
         colorsPanel = new CardColorStatsPanel();
@@ -63,6 +66,10 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
         cardTypesPanel.setVisible(b);
         manaCurvePanel.setVisible(b);
         colorsPanel.setVisible(b);
+        titlebarButton.setIcon(b
+            ? MagicImages.getIcon(MagicIcon.DOWNARROW_ICON)
+            : MagicImages.getIcon(MagicIcon.UPARROW_ICON)
+        );
     }
     
     private void switchStatsVisibility() {
@@ -73,9 +80,8 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
         firePropertyChange(CP_LAYOUT_CHANGED, true, false);
     }
 
-    private JButton getLogViewActionButton(MagicIcon aIcon) {
+    private ActionBarButton getLogViewActionButton() {
         return new ActionBarButton(
-            MagicImages.getIcon(aIcon),
             null, null,
             new AbstractAction() {
                 @Override
@@ -88,7 +94,7 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
 
     private List<JButton> getLogActionButtons() {
         final List<JButton> btns = new ArrayList<>();
-        btns.add(getLogViewActionButton(MagicIcon.DOWNARROW_ICON));
+        btns.add(titlebarButton);
         for (JButton btn : btns) {
             btn.setFocusable(false);
         }
