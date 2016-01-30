@@ -46,9 +46,10 @@ public class DeckSideBar extends TexturedPanel {
     private void refreshLayout() {
         removeAll();
         migLayout.setLayoutConstraints("flowy, insets 0, gap 0");
+        migLayout.setColumnConstraints("[fill, grow]");
         migLayout.setRowConstraints("[][fill, grow]");
         add(cardScrollPane);
-        add(deckInfo, "w 100%");
+        add(deckInfo);
         revalidate();
     }
 

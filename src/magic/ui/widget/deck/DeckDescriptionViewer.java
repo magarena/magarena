@@ -1,12 +1,13 @@
 package magic.ui.widget.deck;
 
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Font;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
-import magic.model.MagicDeck;
 import magic.model.DuelPlayerConfig;
+import magic.model.MagicDeck;
 import magic.translate.UiString;
 import magic.ui.widget.TitleBar;
 import net.miginfocom.swing.MigLayout;
@@ -34,14 +35,16 @@ public class DeckDescriptionViewer extends JPanel {
         scrollPane = new JScrollPane(textArea);
         scrollPane.getVerticalScrollBar().setUnitIncrement(8);
         scrollPane.setBorder(null);
+        scrollPane.setMinimumSize(new Dimension(0, 0));
+        scrollPane.setPreferredSize(new Dimension(getWidth(), 0));
 
-        setMinimumSize(titleBar.getMinimumSize());
+        setMinimumSize(new Dimension(0, titleBar.getMinimumSize().height));
 
         final MigLayout mig = new MigLayout();
-        setLayout(mig);        
         mig.setLayoutConstraints("flowy, insets 0, gap 0");
         mig.setColumnConstraints("[fill, grow]");
         mig.setRowConstraints("[][fill, grow]");
+        setLayout(mig);
         add(titleBar);
         add(scrollPane);
 
