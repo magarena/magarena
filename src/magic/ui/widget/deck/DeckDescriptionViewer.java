@@ -9,6 +9,7 @@ import javax.swing.JTextArea;
 import magic.model.DuelPlayerConfig;
 import magic.model.MagicDeck;
 import magic.translate.UiString;
+import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TitleBar;
 import net.miginfocom.swing.MigLayout;
 
@@ -28,13 +29,14 @@ public class DeckDescriptionViewer extends JPanel {
         final TitleBar titleBar = new TitleBar(UiString.get(_S1));
 
         textArea = new JTextArea();
-        textArea.setOpaque(false);
         textArea.setLineWrap(true);
         textArea.setWrapStyleWord(true);
+        textArea.setBackground(FontsAndBorders.TEXTAREA_TRANSPARENT_COLOR_HACK);
 
         scrollPane = new JScrollPane(textArea);
         scrollPane.getVerticalScrollBar().setUnitIncrement(8);
         scrollPane.setBorder(null);
+        scrollPane.getViewport().setOpaque(false);
         scrollPane.setMinimumSize(new Dimension(0, 0));
         scrollPane.setPreferredSize(new Dimension(getWidth(), 0));
 
