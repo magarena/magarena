@@ -218,9 +218,9 @@ public class CardsCanvas extends JPanel {
         }
     }
 
-    public void refresh(final List<MagicCard> newCards, final Dimension preferredCardSize) {
+    public void refresh(final List<MagicCard> newCards, final Dimension aSize) {
         final List<CardCanvas> canvasCards = getCanvasCards(newCards);
-        this.preferredCardSize = preferredCardSize;
+        this.preferredCardSize = aSize;
         refreshLayout = true;
         currentCardIndex = -1;
         if (useAnimation && newCards != null) {
@@ -304,20 +304,13 @@ public class CardsCanvas extends JPanel {
 
     private void drawCard(final Graphics g, final CardCanvas canvasCard) {
 
-        final int X = canvasCard.getPosition().x;
-        final int Y = canvasCard.getPosition().y;
-        final int W = (int)(preferredCardSize.width * cardCanvasScale);
-        final int H = (int)(preferredCardSize.height * cardCanvasScale);
+        final int X = canvasCard.getBounds().x;
+        final int Y = canvasCard.getBounds().y;
+        final int W = canvasCard.getBounds().width;
+        final int H = canvasCard.getBounds().height;
 
-        final boolean isScalingRequired =
-                !canvasCard.getSize().equals(preferredCardSize) || (cardCanvasScale != 1);
-        final BufferedImage unscaledImage = canvasCard.getFrontImage();
-        final BufferedImage image = isScalingRequired
-            ? imageHandler.getScaledImage(unscaledImage, W)
-            : unscaledImage;
-
-        g.drawImage(image, X, Y, W, H, null);
-
+        g.drawImage(GraphicsUtils.scale(canvasCard.getFrontImage(), W, H), X, Y, null);
+        
         if (stackDuplicateCards) {
             drawCardCount(g, X, Y, W, H, canvasCard);
         }

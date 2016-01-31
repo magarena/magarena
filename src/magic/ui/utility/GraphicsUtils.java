@@ -57,7 +57,7 @@ final public class GraphicsUtils {
                 targetWidth,
                 targetHeight,
                 RenderingHints.VALUE_INTERPOLATION_BILINEAR,
-                true
+                targetWidth < img.getWidth()
             );
         }
     }
