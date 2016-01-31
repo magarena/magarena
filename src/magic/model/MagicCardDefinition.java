@@ -51,6 +51,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     private MagicRarity rarity;
     private boolean valid = true;
     private boolean token = false;
+    private boolean secondHalf = false;
     private boolean hidden = false;
     private boolean overlay = false;
     private boolean excludeManaOrCombat = false;
@@ -134,6 +135,14 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         splitCardName = value;
     }
 
+    public void setSecondHalf() {
+        secondHalf = true;
+    }
+
+    public boolean isSecondHalf() {
+        return secondHalf;
+    }
+
     public void setHidden() {
         hidden = true;
     }
@@ -183,7 +192,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         if (getTransformedDefinition().isHidden()) {
             transformCardDefinition.loadAbilities();
         }
-        if (getSplitDefinition() != UNKNOWN) {
+        if (getSplitDefinition().isSecondHalf()) {
             splitCardDefinition.loadAbilities();
         }
     }
