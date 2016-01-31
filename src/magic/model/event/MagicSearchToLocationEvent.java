@@ -56,7 +56,7 @@ public class MagicSearchToLocationEvent extends MagicEvent {
                     if (revealed) {
                         game.logAppendMessage(
                             event.getPlayer(),
-                            String.format("Found (%s).", MagicMessage.getCardToken(card))
+                            MagicMessage.format("Found (%s).", card)
                         );
                         game.doAction(new AIRevealAction(card));
                     }
@@ -68,7 +68,7 @@ public class MagicSearchToLocationEvent extends MagicEvent {
                     if (revealed) {
                         game.logAppendMessage(
                             event.getPlayer(),
-                            String.format("Found (%s).", MagicMessage.getCardToken(card))
+                            MagicMessage.format("Found (%s).", card)
                         );
                         game.doAction(new AIRevealAction(card));
                     }

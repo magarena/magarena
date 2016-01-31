@@ -69,10 +69,7 @@ public abstract class MagicSpellCardEvent implements MagicCardEvent,MagicEventAc
                     game.doAction(new ChangeCardDestinationAction(spell, MagicLocationType.OwnersHand));
                     game.logAppendMessage(
                         event.getPlayer(),
-                        String.format("%s is put into %s's hand as it resolves.",
-                            MagicMessage.getCardToken(spell),
-                            event.getPlayer()
-                        )
+                        MagicMessage.format("%s is put into %s's hand as it resolves.", spell, event.getPlayer())
                     );
                 }
             }

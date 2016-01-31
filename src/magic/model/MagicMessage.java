@@ -3,6 +3,7 @@ package magic.model;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.stream.Collectors;
+import java.util.Arrays;
 import magic.model.phase.MagicPhaseType;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.choice.MagicCardChoiceResult;
@@ -99,6 +100,11 @@ public class MagicMessage {
         } else {
             return "X";
         }
+    }
+
+    public static String format(final String template, final Object... args) {
+        final Object[] strings = Arrays.stream(args).map(o -> getCardToken(o)).toArray();
+        return String.format(template, strings);
     }
 
     public static String getCardToken(final Object obj) {

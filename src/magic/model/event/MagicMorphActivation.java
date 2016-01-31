@@ -49,10 +49,7 @@ public class MagicMorphActivation extends MagicPermanentActivation {
         game.doAction(new TurnFaceUpAction(event.getPermanent()));
         game.logAppendMessage(
             event.getPlayer(),
-            String.format("%s turns %s face up.",
-                event.getPlayer(),
-                MagicMessage.getCardToken(event.getPermanent())
-            )
+            MagicMessage.format("%s turns %s face up.", event.getPlayer(), event.getPermanent())
         );
     }
 

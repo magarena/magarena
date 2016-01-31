@@ -33,9 +33,10 @@ public class MagicCounterUnlessEvent extends MagicEvent {
                     ));
                 }
             },
-            String.format("You may$ pay %s$. If you don't, counter %s.",
+            MagicMessage.format(
+                "You may$ pay %s$. If you don't, counter %s.",
                 cost.getText(),
-                MagicMessage.getCardToken(itemOnStack)
+                itemOnStack
             )
         );
     }

@@ -34,9 +34,7 @@ public class MagicUniquenessEvent extends MagicEvent {
                 if (target != permanent) {
                     game.logAppendMessage(
                         event.getPlayer(),
-                        String.format("Put %s into its owner's graveyard (Uniqueness rule).",
-                            MagicMessage.getCardToken(target)
-                        )
+                        MagicMessage.format("Put %s into its owner's graveyard (Uniqueness rule).", target)
                     );
                     game.doAction(new RemoveFromPlayAction(target,MagicLocationType.Graveyard));
                 }

@@ -43,7 +43,7 @@ public class MagicPutOntoBattlefieldEvent extends MagicEvent {
                 event.processTargetCard(game, (final MagicCard card) -> {
                     game.logAppendMessage(
                         event.getPlayer(),
-                        String.format("Chosen (%s).", MagicMessage.getCardToken(card))
+                        MagicMessage.format("Chosen (%s).", card)
                     );
                     game.doAction(new ReturnCardAction(MagicLocationType.OwnersHand,card,event.getPlayer(),mods));
                 });

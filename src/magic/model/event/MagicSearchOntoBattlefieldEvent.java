@@ -51,7 +51,7 @@ public class MagicSearchOntoBattlefieldEvent extends MagicEvent {
                 event.processChosenCards(game, (final MagicCard card) -> {
                     game.logAppendMessage(
                         event.getPlayer(),
-                        String.format("Found (%s).", MagicMessage.getCardToken(card))
+                        MagicMessage.format("Found (%s).", card)
                     );
                     game.doAction(new AIRevealAction(card));
                     game.doAction(new ReturnCardAction(MagicLocationType.OwnersLibrary,card,event.getPlayer(),mods));
@@ -61,7 +61,7 @@ public class MagicSearchOntoBattlefieldEvent extends MagicEvent {
                 event.processTargetCard(game, (final MagicCard card) -> {
                     game.logAppendMessage(
                         event.getPlayer(),
-                        String.format("Found (%s).", MagicMessage.getCardToken(card))
+                        MagicMessage.format("Found (%s).", card)
                     );
                     game.doAction(new AIRevealAction(card));
                     game.doAction(new ReturnCardAction(MagicLocationType.OwnersLibrary,card,event.getPlayer(),mods));
