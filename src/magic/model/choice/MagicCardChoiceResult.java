@@ -8,7 +8,6 @@ import magic.model.MagicCopyMap;
 
 import java.util.List;
 import java.util.ArrayList;
-import magic.model.MagicMessage;
 
 @SuppressWarnings("serial")
 public class MagicCardChoiceResult extends ArrayList<MagicCard> implements MagicMappable<MagicCardChoiceResult>, MagicCopyable {
@@ -51,7 +50,7 @@ public class MagicCardChoiceResult extends ArrayList<MagicCard> implements Magic
             if (buffer.length()>0) {
                 buffer.append(", ");
             }
-            buffer.append(MagicMessage.getCardToken(card));
+            buffer.append(card.getName());
         }
         return buffer.toString();
     }
