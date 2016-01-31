@@ -70,8 +70,64 @@ Thanks to
 
 Thank you for your support and have fun!
 
-Release 1.70 (January ??, 2016)
+Release 1.70 (January 31, 2016)
 ============
+lodici
+melvin
+ShawnieBoy
+    
+    Add volume setting for gameplay audio.
+    draw in-game casting cost on card in hand, closes #629
+    devoid, miracle overlay
+    draw damage prevent shield as blue number above pt, fixes #603
+    remove text mode
+    use image size presets settings for all card image
+    move preferred image size setting to main General tab since it applies to all card images not just gameplay.
+    Ensure CardsCanvas image reflects preferred size setting without needing a restart.
+    Set default card image size to proxy size
+    CardViewer gets image on separate thread
+    new look DeckStatisticsViewer.
+    re-vamp of DuelDecksScreen layout by moving deck stats and description into sidebar.
+
+- added the following to the card script:
+    effect: you may cost. If you don't, effect
+    add support for static effects that increase/decrease mana cost
+    does not affect additional mana costs
+    made 'until end of turn' optional for GainAbility
+    made 'until end of turn' optional for LoseAbility
+    support ability 'surge <manacost>'
+    extend EntersKickedEffect to match 'if its surge cost was paid'
+    add 'return <permanent> to its owner's hand at the beginning of the next end step'
+    add ability 'when you cast SN, <effect>'
+    add ShuffleLibrary to RuleEventAction
+
+- fixed the following bugs:
+    fix poor quality image scaling in CardsCanvas (sample hand ,deck tiled screen, etc); uses preferred image size setting.
+    fixes #658 : Clicking on empty area of deck table increases count for selected card.
+    fixes #657 : Deck editor add/remove UI regression.
+    fix missing {4} cost for Defiant Falcon's second ability
+    fix Drill Skimmer missing flying
+    fix Elixir of Vitality missing enters tapped
+    fix Thousand Winds missing flying
+    fix Tunneler Wurm should not have trample
+    fix Felidar Umbra missing totem armor
+    fix Glimmering Angel missing flying
+    fix Piety giving +0/+2 instead of +0/+3
+    fix Stone Idol Trap missing cost reduction
+    fix Harrier Griffin missing flying
+    fix Cateran Enforcer missing fear
+    fix Rally the Righteous not affecting target if it is colorless
+    fix groovy code for "target creature and each other creature that shares a color with it" to account for colorless
+    reduce mana values of 3 color lands - reduce their use in random decks
+    as a two color match fixes #646
+    fix Raving Oni Slave trigger fixes #647
+    fixes #607 : Firemind deck ignored if name contains invalid filename character.
+    restore previous groovy code for Knight of the Mists, fixes #610
+    use MagicOrChoice so that target Knight is chosen when trigger goes on the stack instead of when it resolves
+    filter should not be able to accept hidden cards, except those in library, fixes #384
+    Giant Caterpillar and Transluminant should be using delayed triggers, ala Grave Betrayal, possible fix for #362
+    count mana ability of all permanents not only validSources for useAll check, fixes #639
+    add missing mana_or_combat property to man lands
 
 Release 1.69 (December 27, 2015)
 ============
