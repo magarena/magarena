@@ -106,6 +106,7 @@ ShawnieBoy
     fixes #658 : Clicking on empty area of deck table increases count for selected card.
     fixes #657 : Deck editor add/remove UI regression.
     fix missing {4} cost for Defiant Falcon's second ability
+    fix missing {B} cost for Eater of Hope's first ability
     fix Drill Skimmer missing flying
     fix Elixir of Vitality missing enters tapped
     fix Thousand Winds missing flying
