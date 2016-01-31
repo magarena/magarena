@@ -15,13 +15,13 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 import java.awt.image.BufferedImage;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.stream.Collectors;
 import magic.model.MagicCard;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.utility.MagicStyle;
@@ -232,12 +232,10 @@ public class CardsCanvas extends JPanel {
         }
     }
 
-    private List<CardCanvas> getCanvasCards(final List<MagicCard> magicCards) {
-        final List <CardCanvas> canvasCards = new ArrayList<>();
-        for (MagicCard magicCard : magicCards) {
-            canvasCards.add(new CardCanvas(magicCard));
-        }
-        return canvasCards;
+    private List<CardCanvas> getCanvasCards(List<MagicCard> cards) {
+        return cards.stream()
+            .map(card -> new CardCanvas(card))
+            .collect(Collectors.toList());
     }
 
     public void setScale(final double newScale) {
@@ -314,8 +312,9 @@ public class CardsCanvas extends JPanel {
         final boolean isScalingRequired =
                 !canvasCard.getSize().equals(preferredCardSize) || (cardCanvasScale != 1);
         final BufferedImage unscaledImage = canvasCard.getFrontImage();
-        final BufferedImage image =
-                isScalingRequired ? imageHandler.getScaledImage(unscaledImage, W) : unscaledImage;
+        final BufferedImage image = isScalingRequired
+            ? imageHandler.getScaledImage(unscaledImage, W)
+            : unscaledImage;
 
         g.drawImage(image, X, Y, W, H, null);
 
