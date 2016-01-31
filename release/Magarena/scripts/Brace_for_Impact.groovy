@@ -7,7 +7,7 @@ def preventAddPlus = new IfDamageWouldBeDealtTrigger(MagicTrigger.REPLACE_DAMAGE
                 permanent,
                 amount,
                 this,
-                "Prevent RN damage and put RN -1/-1 counters on SN."
+                "Prevent RN damage and put RN +1/+1 counters on SN."
             ):
             MagicEvent.NONE;
     }
@@ -15,7 +15,7 @@ def preventAddPlus = new IfDamageWouldBeDealtTrigger(MagicTrigger.REPLACE_DAMAGE
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         game.doAction(new ChangeCountersAction(
             event.getPermanent(),
-            MagicCounterType.MinusOne,
+            MagicCounterType.PlusOne,
             event.getRefInt()
         ));
     }
