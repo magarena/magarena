@@ -1145,6 +1145,10 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
         return hasState(MagicPermanentState.Flipped);
     }
 
+    public boolean isSplitCard() {
+        return false;
+    }
+
     public boolean isTransformed() {
         return hasState(MagicPermanentState.Transformed);
     }

@@ -172,6 +172,10 @@ public class MagicCard
         return getCardDefinition().isFlipCard();
     }
 
+    public boolean isSplitCard() {
+        return getCardDefinition().isSplitCard();
+    }
+
     public boolean isNameless() {
         return getName().isEmpty();
     }

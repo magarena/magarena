@@ -88,12 +88,14 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
 
     private MagicCardDefinition flipCardDefinition;
     private MagicCardDefinition transformCardDefinition;
+    private MagicCardDefinition splitCardDefinition;
 
     private String abilityProperty;
     private String requiresGroovy;
     private String effectProperty;
     private String flipCardName;
     private String transformCardName;
+    private String splitCardName;
 
     public MagicCardDefinition() {
         initialize();
@@ -126,6 +128,10 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
 
     public void setTransformCardName(final String value) {
         transformCardName = value;
+    }
+
+    public void setSplitCardName(final String value) {
+        splitCardName = value;
     }
 
     public void setHidden() {
@@ -176,6 +182,9 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         }
         if (getTransformedDefinition().isHidden()) {
             transformCardDefinition.loadAbilities();
+        }
+        if (getSplitDefinition() != UNKNOWN) {
+            splitCardDefinition.loadAbilities();
         }
     }
 
@@ -381,6 +390,15 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         return transformCardDefinition;
     }
 
+    public MagicCardDefinition getSplitDefinition() {
+        if (splitCardDefinition == null) {
+            splitCardDefinition = isSplitCard() ?
+                CardDefinitions.getMissingOrCard(splitCardName) :
+                UNKNOWN;
+        }
+        return splitCardDefinition;
+    }
+
     public MagicCardDefinition getCardDefinition() {
         return this;
     }
@@ -431,6 +449,10 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
 
     public boolean isDoubleFaced() {
         return transformCardName != null;
+    }
+
+    public boolean isSplitCard() {
+        return splitCardName != null;
     }
 
     public boolean hasMultipleAspects() {

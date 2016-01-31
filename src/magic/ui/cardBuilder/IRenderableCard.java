@@ -27,6 +27,7 @@ public interface IRenderableCard {
     boolean hasType(MagicType type);
     boolean isToken();
     boolean isFlipCard();
+    boolean isSplitCard();
     boolean isDoubleFaced();
     boolean hasAbility(MagicAbility ability);
     boolean isPlaneswalker();

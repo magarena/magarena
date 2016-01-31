@@ -220,6 +220,11 @@ public enum CardProperty {
             card.setTransformCardName(value);
         }
     },
+    SPLIT() {
+      public void setProperty(final MagicCardDefinition card, final String value) {
+          card.setSplitCardName(value);
+      }
+    },
     ORACLE() {
         public void setProperty(final MagicCardDefinition card, final String value) {
             card.setText(value);
