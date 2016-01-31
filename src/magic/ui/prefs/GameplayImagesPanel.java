@@ -21,14 +21,11 @@ class GameplayImagesPanel extends JPanel {
 
     private final static GeneralConfig CONFIG = GeneralConfig.getInstance();
 
-    private final PreferredSizePanel preferredSizePanel;
     private final JCheckBox mouseWheelPopupCheckBox;
     private final SliderPanel popupDelaySlider;
     private final JCheckBox pauseGamePopupCheckBox;
 
     GameplayImagesPanel(final MouseListener aListener) {
-
-        preferredSizePanel = new PreferredSizePanel(aListener);
 
         mouseWheelPopupCheckBox = new JCheckBox(UiString.get(_S28), CONFIG.isMouseWheelPopup());
         mouseWheelPopupCheckBox.setFocusable(false);
@@ -45,14 +42,12 @@ class GameplayImagesPanel extends JPanel {
         pauseGamePopupCheckBox.addMouseListener(aListener);
 
         setLayout(new MigLayout("flowy, insets 16, gapy 10"));
-        add(preferredSizePanel);
         add(pauseGamePopupCheckBox);
         add(mouseWheelPopupCheckBox);
         add(popupDelaySlider, "w 100%");
     }
 
     void saveSettings() {
-        preferredSizePanel.saveSettings();
         CONFIG.setMouseWheelPopup(mouseWheelPopupCheckBox.isSelected());
         CONFIG.setPopupDelay(popupDelaySlider.getValue());
         CONFIG.setIsGamePausedOnPopup(pauseGamePopupCheckBox.isSelected());

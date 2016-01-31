@@ -104,6 +104,7 @@ public class PreferencesDialog
     private static final String _S80 = "There is a problem reading the translation file.";
     private static final String _S81 = "Please ensure the file is encoded as 'UTF-8 without BOM'.";
     private static final String _S82 = "Animations";
+    private static final String _S83 = "Card images";
 
     private final static GeneralConfig config = GeneralConfig.getInstance();
 
@@ -138,6 +139,7 @@ public class PreferencesDialog
     private final AnimationsPanel animationsPanel;
     private final GameplayImagesPanel gameImagesPanel;
     private final AudioPanel audioPanel;
+    private final PreferredSizePanel preferredSizePanel;
 
     private final JLabel hintLabel = new JLabel();
     private boolean isProxyUpdated = false;
@@ -163,6 +165,7 @@ public class PreferencesDialog
         animationsPanel = new AnimationsPanel(this);
         gameImagesPanel = new GameplayImagesPanel(this);
         audioPanel = new AudioPanel(this);
+        preferredSizePanel = new PreferredSizePanel(this);
 
         hintLabel.setVerticalAlignment(SwingConstants.TOP);
         hintLabel.setFont(new Font("SansSerif", Font.ITALIC, 12));
@@ -321,6 +324,7 @@ public class PreferencesDialog
     }
 
     private void saveSettings() {
+        preferredSizePanel.saveSettings();
         animationsPanel.saveSettings();
         gameImagesPanel.saveSettings();
         audioPanel.saveSettings();
@@ -606,6 +610,8 @@ public class PreferencesDialog
         final JPanel panel = new JPanel(new MigLayout("flowy, insets 0"));
         panel.add(getCaptionLabel(UiString.get(_S63)));
         panel.add(langPanel, "w 100%");
+        panel.add(getCaptionLabel(UiString.get(UiString.get(_S83))), "gaptop 6");
+        panel.add(preferredSizePanel, "w 100%");
         panel.add(getCaptionLabel(UiString.get(_S64)), "gaptop 6");
         panel.add(splitViewDeckEditorCheckBox);
         panel.add(previewCardOnSelectCheckBox);

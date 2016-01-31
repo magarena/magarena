@@ -12,8 +12,8 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 class PreferredSizePanel extends JPanel {
 
-    private static final String _S1 = "Preferred image size:";
-    private static final String _S2 = "Select 'Original' to display popup image at its native size otherwise it will be scaled up or down to the selected preset. The image will also be resized to fit if there is not enough room to display it at its preferred size.";
+    private static final String _S1 = "Preferred size:";
+    private static final String _S2 = "Select 'Original' to display card image at its native size otherwise it will be scaled up or down to the selected preset. The image will also be resized to fit if there is not enough room to display it at its preferred size.";
 
     private final static GeneralConfig CONFIG = GeneralConfig.getInstance();
 
