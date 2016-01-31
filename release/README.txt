@@ -81,13 +81,12 @@ ShawnieBoy
     devoid, miracle overlay
     draw damage prevent shield as blue number above pt, fixes #603
     remove text mode
-    use image size presets settings for all card image
-    move preferred image size setting to main General tab since it applies to all card images not just gameplay.
-    Ensure CardsCanvas image reflects preferred size setting without needing a restart.
-    Set default card image size to proxy size
-    CardViewer gets image on separate thread
-    new look DeckStatisticsViewer.
-    re-vamp of DuelDecksScreen layout by moving deck stats and description into sidebar.
+    use image size presets settings for all card images.
+    move preferred image size setting to main General tab.
+    prevent UI freeze on CardBuilder startup.
+    improve layout of deck statistics panel.
+    improve layout of duel decks screen for a more consistent UI.
+    card images selected based on location: custom -> crops -> cards/tokens -> missing proxy.
 
 - added the following to the card script:
     effect: you may cost. If you don't, effect
@@ -104,7 +103,6 @@ ShawnieBoy
 - fixed the following bugs:
     fix poor quality image scaling in CardsCanvas (sample hand ,deck tiled screen, etc); uses preferred image size setting.
     fixes #658 : Clicking on empty area of deck table increases count for selected card.
-    fixes #657 : Deck editor add/remove UI regression.
     fix missing {4} cost for Defiant Falcon's second ability
     fix missing {B} cost for Eater of Hope's first ability
     fix Drill Skimmer missing flying
