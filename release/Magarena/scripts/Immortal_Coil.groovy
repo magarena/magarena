@@ -1,27 +1,4 @@
-import magic.model.choice.MagicFromCardListChoice
-
-def YouLoseAction = {
-    final MagicGame game, final MagicEvent event ->
-        game.doAction(new LoseGameAction(event.getPlayer(), " lost the game because of having no cards in his or her graveyard."));
-}
-
-def YouLoseEvent = {
-    final MagicSource source ->
-        return new MagicEvent(
-            source,
-            YouLoseAction,
-            "PN loses the game."
-        );
-}
-
-def exileCard = {
-    final MagicGame game, final MagicEvent event ->
-        event.processChosenCards(game, {
-            final MagicCard chosen ->
-                game.doAction(new ShiftCardAction(chosen, MagicLocationType.Graveyard, MagicLocationType.Exile));
-                game.logAppendMessage(event.getPlayer(), "(${chosen.getName()})" )
-        });
-}
+def YouLoseGame = MagicRuleEventAction.create("You lose the game.");
 
 [
     new MagicStatic(MagicLayer.Game) {
@@ -33,42 +10,32 @@ def exileCard = {
         @Override
         public void modGame(final MagicPermanent source, final MagicGame game) {
             game.doAction(new PutStateTriggerOnStackAction(
-                YouLoseEvent(source)
+                YouLoseGame.getTriggerEvent(source)
             ));
         }
     },
-
     new IfDamageWouldBeDealtTrigger(MagicTrigger.REPLACE_DAMAGE) {
         @Override
-        public MagicEvent executeTrigger(
-            final MagicGame game, final MagicPermanent permanent, final MagicDamage damage) {
-            final MagicTarget target = damage.getTarget();
-            final MagicPlayer player = permanent.getController();
-            int amount = 0;
-
-            if (target == player) {
-                amount = damage.prevent();
-            }
-
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicDamage damage) {
+            int amount = permanent.isController(damage.getTarget()) ? damage.prevent() : 0;
             return amount > 0 ?
                 new MagicEvent(
                     permanent,
-                    target,
-                    {
-                        final MagicGame G, final MagicEvent E ->
-                            final List<MagicCard> graveyard = player.getGraveyard();
-                            G.addEvent(new MagicEvent(
-                                E.getSource(),
-                                player,
-                                new MagicFromCardListChoice(graveyard, amount),
-                                exileCard,
-                                ""
-                            ));
-
-                    },
-                    "Prevent ${amount} damage and PN exiles ${amount} cards from his or her graveyard."
+                    amount,
+                    this,
+                    "Prevent RN damage and PN exiles RN cards from his or her graveyard."
                 ) :
                 MagicEvent.NONE;
+        }
+        @Override
+        public void executeEvent(final MagicGame game, final MagicEvent event) {
+            game.addEvent(new MagicRepeatedCardsEvent(
+                event.getSource(),
+                event.getPlayer(),
+                MagicTargetChoice.A_CARD_FROM_GRAVEYARD,
+                event.getRefInt(),
+                MagicChainEventFactory.ExileCard
+            ));
         }
     }
 ]
