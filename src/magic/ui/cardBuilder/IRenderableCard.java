@@ -37,6 +37,10 @@ public interface IRenderableCard {
         return getCardDefinition().getTransformedDefinition();
     }
 
+    default MagicCardDefinition getSplitDefinition() {
+        return getCardDefinition().getSplitDefinition();
+    }
+
     default int getStartingLoyalty() {
         return getCardDefinition().getStartingLoyalty();
     }
@@ -77,6 +81,10 @@ public interface IRenderableCard {
 
     default boolean isHidden() {
         return getCardDefinition().isHidden();
+    }
+
+    default boolean isSecondHalf() {
+        return getCardDefinition().isSecondHalf();
     }
 
     default Character getRarityChar() {
