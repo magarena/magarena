@@ -610,9 +610,9 @@ public class PreferencesDialog
         final JPanel panel = new JPanel(new MigLayout("flowy, insets 0"));
         panel.add(getCaptionLabel(UiString.get(_S63)));
         panel.add(langPanel, "w 100%");
-        panel.add(getCaptionLabel(UiString.get(UiString.get(_S83))), "gaptop 6");
+        panel.add(getCaptionLabel(UiString.get(UiString.get(_S83))), "gaptop 10");
         panel.add(preferredSizePanel, "w 100%");
-        panel.add(getCaptionLabel(UiString.get(_S64)), "gaptop 6");
+        panel.add(getCaptionLabel(UiString.get(_S64)), "gaptop 10");
         panel.add(splitViewDeckEditorCheckBox);
         panel.add(previewCardOnSelectCheckBox);
         panel.add(missingCardDataCheckbox);
