@@ -68,6 +68,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     private static final String _S21 = "Transform";
     private static final String _S22 = "Flip";
     private static final String _S23 = "Hidden";
+    private static final String _S24 = "Split";
 
     private static final String[] COST_VALUES = new String[MagicManaCost.MAXIMUM_MANA_COST + 1];
     static {
@@ -386,6 +387,8 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
                         return card.isFlipCard();
                     } else if (typeCheckBoxes[i].getText().equals(UiString.get(_S23))) {
                         return card.isHidden();
+                    } else if (typeCheckBoxes[i].getText().equals(UiString.get(_S24))) {
+                        return card.isSplitCard();
                     } else {
                         return card.hasType(MagicType.FILTER_TYPES.toArray(new MagicType[0])[i]);
                     }
@@ -595,6 +598,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
             if (MagicSystem.isDevMode()) {
                 types.add(UiString.get(_S23));
             }
+            types.add(UiString.get(_S24));
         }
         return types.toArray();
     }
