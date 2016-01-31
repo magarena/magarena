@@ -1,7 +1,6 @@
 package magic.ui.screen;
 
 import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
@@ -26,7 +25,6 @@ import magic.ui.canvas.cards.CardsCanvas;
 import magic.ui.canvas.cards.ICardsCanvasListener;
 import magic.ui.cardBuilder.renderers.CardBuilder;
 import magic.ui.deck.editor.DeckSideBar;
-import magic.ui.prefs.ImageSizePresets;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBarButton;
@@ -90,8 +88,6 @@ public class DeckTiledCardsScreen
             return caption;
         }
     }
-
-    private final static Dimension cardSize = ImageSizePresets.getDefaultSize();
 
     private ContentPanel content;
     private final MagicDeck deck;
@@ -162,12 +158,12 @@ public class DeckTiledCardsScreen
             sidebar = new DeckSideBar();
             sidebar.setDeck(deck);
 
-            canvas = new CardsCanvas(cardSize);
+            canvas = new CardsCanvas();
             canvas.setListener(this);
             canvas.setAnimationEnabled(false);
             canvas.setStackDuplicateCards(true);
             canvas.setLayoutMode(LayoutMode.SCALE_TO_FIT);
-            canvas.refresh(getFilteredDeck(deck, CardTypeFilter.ALL), cardSize);
+            canvas.refresh(getFilteredDeck(deck, CardTypeFilter.ALL));
 
             setOpaque(false);
             setLayout(new MigLayout("insets 0, gap 0"));
@@ -187,12 +183,12 @@ public class DeckTiledCardsScreen
             revalidate();
         }
 
-        public void refresh(List<MagicCard> cards, Dimension cardSize) {
+        public void refresh(List<MagicCard> cards) {
             sidebar.setCard(cards.isEmpty()
                 ? MagicCardDefinition.UNKNOWN
                 : cards.get(0).getCardDefinition()
             );
-            canvas.refresh(cards, cardSize);
+            canvas.refresh(cards);
         }
 
         @Override
@@ -361,7 +357,7 @@ public class DeckTiledCardsScreen
 
         private void showCards(final CardTypeFilter filterType) {
             final List<MagicCard> cards = getFilteredDeck(deck, filterType);
-            content.refresh(cards, cardSize);
+            content.refresh(cards);
             statusPanel.setContent(deck.getName(), getCardTypeCaption(filterType, cards == null ? 0 : cards.size()));
         }
 

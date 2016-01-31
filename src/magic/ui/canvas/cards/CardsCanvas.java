@@ -23,6 +23,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
 import magic.model.MagicCard;
+import magic.ui.prefs.ImageSizePresets;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.utility.MagicStyle;
 
@@ -58,7 +59,7 @@ public class CardsCanvas extends JPanel {
     private boolean refreshLayout = false;
     private ICardsCanvasListener listener = new NullCardsCanvasListener();
 
-    // CTR
+
     public CardsCanvas(final Dimension preferredCardSize) {
 
         setOpaque(false);
@@ -71,6 +72,10 @@ public class CardsCanvas extends JPanel {
         setMouseListener();
         setMouseMotionListener();
 
+    }
+
+    public CardsCanvas() {
+        this(ImageSizePresets.getDefaultSize());
     }
 
     public void setListener(ICardsCanvasListener aListener) {
@@ -230,6 +235,10 @@ public class CardsCanvas extends JPanel {
             maxCardsVisible = cards.size();
             repaint();
         }
+    }
+
+    public void refresh(final List<MagicCard> newCards) {
+        refresh(newCards, preferredCardSize);
     }
 
     private List<CardCanvas> getCanvasCards(List<MagicCard> cards) {

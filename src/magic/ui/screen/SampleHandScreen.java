@@ -1,7 +1,6 @@
 package magic.ui.screen;
 
 import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -21,7 +20,6 @@ import magic.translate.UiString;
 import magic.ui.canvas.cards.CardsCanvas.LayoutMode;
 import magic.ui.canvas.cards.CardsCanvas;
 import magic.ui.cardBuilder.renderers.CardBuilder;
-import magic.ui.prefs.ImageSizePresets;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBarButton;
@@ -43,8 +41,6 @@ public class SampleHandScreen
     private static final String _S3 = "Refresh";
     private static final String _S4 = "Deal a new sample hand.";
 
-    private final static Dimension cardSize = ImageSizePresets.getDefaultSize();
-
     private CardsCanvas content;
     private final MagicDeck deck;
     private final DeckStatusPanel deckStatusPanel = new DeckStatusPanel();
@@ -61,10 +57,10 @@ public class SampleHandScreen
     }
 
     private void setContent(MagicDeck aDeck) {
-        this.content = new CardsCanvas(cardSize);
+        this.content = new CardsCanvas();
         content.setAnimationDelay(50, 20);
         this.content.setLayoutMode(LayoutMode.SCALE_TO_FIT);
-        this.content.refresh(getRandomHand(aDeck), cardSize);
+        this.content.refresh(getRandomHand(aDeck));
         super.setContent(this.content);
     }
     
@@ -146,7 +142,7 @@ public class SampleHandScreen
                             @Override
                             public void actionPerformed(final ActionEvent e) {
                                 if (!content.isBusy()) {
-                                    content.refresh(getRandomHand(deck), cardSize);
+                                    content.refresh(getRandomHand(deck));
                                 }
                             }
                         })
