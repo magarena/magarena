@@ -5,5 +5,7 @@ rarity=U
 type=Instant
 cost={U}{B}
 effect=Counter target multicolored spell.
+split=Trial
 timing=counter
+second_half
 oracle=Counter target multicolored spell.

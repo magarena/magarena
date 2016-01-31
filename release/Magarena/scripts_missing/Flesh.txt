@@ -5,5 +5,6 @@ rarity=R
 type=Sorcery
 cost={3}{B}{G}
 effect=Exile target creature card from a graveyard. Put X +1/+1 counters on target creature, where X is the power of the card you exiled.~Fuse
+split=Blood
 timing=main
 oracle=Exile target creature card from a graveyard. Put X +1/+1 counters on target creature, where X is the power of the card you exiled.\nFuse

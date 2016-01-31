@@ -5,5 +5,6 @@ rarity=U
 type=Sorcery
 cost={U}{B}
 effect=Return target creature card from a graveyard and target creature on the battlefield to their owners' hands.
+split=Fall
 timing=main
 oracle=Return target creature card from a graveyard and target creature on the battlefield to their owners' hands.

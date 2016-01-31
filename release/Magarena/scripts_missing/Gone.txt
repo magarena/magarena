@@ -5,5 +5,7 @@ rarity=C
 type=Instant
 cost={2}{R}
 effect=Return target creature you don't control to its owner's hand.
+split=Dead
 timing=removal
+second_half
 oracle=Return target creature you don't control to its owner's hand.

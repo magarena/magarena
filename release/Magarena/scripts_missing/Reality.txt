@@ -5,5 +5,7 @@ rarity=U
 type=Instant
 cost={2}{G}
 effect=Destroy target artifact.
+split=Illusion
 timing=removal
+second_half
 oracle=Destroy target artifact.

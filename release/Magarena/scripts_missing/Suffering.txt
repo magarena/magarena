@@ -5,5 +5,7 @@ rarity=U
 type=Sorcery
 cost={3}{R}
 effect=Destroy target land.
+split=Pain
 timing=main
+second_half
 oracle=Destroy target land.

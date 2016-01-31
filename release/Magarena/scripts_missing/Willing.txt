@@ -5,5 +5,7 @@ rarity=R
 type=Instant
 cost={1}{W}{B}
 effect=Creatures you control gain deathtouch and lifelink until end of turn.~Fuse
-timing=removal
+split=Ready
+timing=pump
+second_half
 oracle=Creatures you control gain deathtouch and lifelink until end of turn.\nFuse

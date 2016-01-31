@@ -5,5 +5,6 @@ rarity=R
 type=Instant
 cost={U}{R}
 effect=Flip a coin. If it comes up heads, counter target instant or sorcery spell. If it comes up tails, copy that spell and you may choose new targets for the copy.
-timing=removal
+split=Ends
+timing=counter
 oracle=Flip a coin. If it comes up heads, counter target instant or sorcery spell. If it comes up tails, copy that spell and you may choose new targets for the copy.

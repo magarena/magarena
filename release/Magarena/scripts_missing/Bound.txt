@@ -5,5 +5,6 @@ rarity=R
 type=Instant
 cost={3}{B}{G}
 effect=Sacrifice a creature. Return up to X cards from your graveyard to your hand, where X is the number of colors that creature was. Exile this card.
-timing=removal
+split=Determined
+timing=draw
 oracle=Sacrifice a creature. Return up to X cards from your graveyard to your hand, where X is the number of colors that creature was. Exile this card.

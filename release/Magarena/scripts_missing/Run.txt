@@ -5,5 +5,7 @@ rarity=U
 type=Instant
 cost={3}{R}{G}
 effect=Attacking creatures you control get +1/+0 until end of turn for each other attacking creature.
-timing=removal
+split=Hit
+timing=block
+second_half
 oracle=Attacking creatures you control get +1/+0 until end of turn for each other attacking creature.

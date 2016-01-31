@@ -5,5 +5,7 @@ rarity=U
 type=Instant
 cost={3}{B}
 effect=Destroy target nonblack creature. It can't be regenerated.
+split=Spite
 timing=removal
+second_half
 oracle=Destroy target nonblack creature. It can't be regenerated.

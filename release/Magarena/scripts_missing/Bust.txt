@@ -5,5 +5,7 @@ rarity=R
 type=Sorcery
 cost={5}{R}
 effect=Destroy all lands.
+split=Boom
 timing=main
+second_half
 oracle=Destroy all lands.

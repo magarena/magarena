@@ -5,5 +5,6 @@ rarity=U
 type=Instant
 cost={1}{U}
 effect=Return target creature to its owner's hand.~Fuse
+split=Away
 timing=removal
 oracle=Return target creature to its owner's hand.\nFuse

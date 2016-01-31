@@ -5,5 +5,7 @@ rarity=R
 type=Sorcery
 cost={4}{R}{W}
 effect=Each player sacrifices an artifact, a creature, an enchantment, a land, and a planeswalker.~Fuse
+split=Catch
 timing=main
+second_half
 oracle=Each player sacrifices an artifact, a creature, an enchantment, a land, and a planeswalker.\nFuse

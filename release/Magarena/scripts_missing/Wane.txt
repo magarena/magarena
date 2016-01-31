@@ -5,5 +5,7 @@ rarity=U
 type=Instant
 cost={W}
 effect=Destroy target enchantment.
+split=Wax
 timing=removal
+second_half
 oracle=Destroy target enchantment.

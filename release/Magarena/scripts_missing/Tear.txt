@@ -5,5 +5,7 @@ rarity=U
 type=Instant
 cost={W}
 effect=Destroy target enchantment.~Fuse
+split=Wear
 timing=removal
+second_half
 oracle=Destroy target enchantment.\nFuse

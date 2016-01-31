@@ -5,5 +5,7 @@ rarity=U
 type=Instant
 cost={2}{B}
 effect=Target player sacrifices a creature.~Fuse
+split=Far
 timing=removal
+second_half
 oracle=Target player sacrifices a creature.\nFuse

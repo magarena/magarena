@@ -5,5 +5,7 @@ rarity=R
 type=Instant
 cost={3}{R}{W}
 effect=Target player sacrifices two attacking creatures.
-timing=removal
+split=Odds
+timing=attack
+second_half
 oracle=Target player sacrifices two attacking creatures.

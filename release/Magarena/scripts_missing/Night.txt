@@ -5,5 +5,6 @@ rarity=U
 type=Instant
 cost={B}
 effect=Target creature gets -1/-1 until end of turn.
+split=Day
 timing=removal
 oracle=Target creature gets -1/-1 until end of turn.

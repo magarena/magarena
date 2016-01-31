@@ -5,5 +5,7 @@ rarity=R
 type=Sorcery
 cost={R}{G}
 effect=Target creature you control deals damage equal to its power to target creature or player.~Fuse
+split=Flesh
 timing=main
+second_half
 oracle=Target creature you control deals damage equal to its power to target creature or player.\nFuse

@@ -5,5 +5,7 @@ rarity=U
 type=Sorcery
 cost={1}{G}{W}
 effect=Destroy all Auras and Equipment.
+split=Pure
 timing=main
+second_half
 oracle=Destroy all Auras and Equipment.

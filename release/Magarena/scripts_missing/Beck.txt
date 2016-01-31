@@ -5,5 +5,6 @@ rarity=R
 type=Sorcery
 cost={G}{U}
 effect=Whenever a creature enters the battlefield this turn, you may draw a card.~Fuse
+split=Call
 timing=main
 oracle=Whenever a creature enters the battlefield this turn, you may draw a card.\nFuse
