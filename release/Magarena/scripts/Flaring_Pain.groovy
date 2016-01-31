@@ -1,11 +1,3 @@
-def cantBePrevented = new IfDamageWouldBeDealtTrigger(MagicTrigger.CANT_BE_PREVENTED) {
-    @Override
-    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-        damage.setUnpreventable();
-        return MagicEvent.NONE;
-    }
-}
-
 [
     new MagicSpellCardEvent() {
         @Override
@@ -18,7 +10,7 @@ def cantBePrevented = new IfDamageWouldBeDealtTrigger(MagicTrigger.CANT_BE_PREVE
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new AddTurnTriggerAction(cantBePrevented));
+            game.doAction(new AddTurnTriggerAction(IfDamageWouldBeDealtTrigger.CantBePrevented));
         }
     }
 ]
