@@ -25,6 +25,10 @@ import magic.utility.MagicFileSystem.DataPath;
 final public class MagicSystem {
     private MagicSystem() {}
 
+    static {
+        System.setProperty("http.agent", GeneralConfig.SOFTWARE_TITLE);
+    }
+
     public static final boolean IS_WINDOWS_OS = System.getProperty("os.name").toLowerCase().startsWith("windows");
     private static final ProgressReporter reporter = new ProgressReporter();
 
