@@ -39,7 +39,7 @@ def toBattlefield = {
                     permanentCards.add(card);
                 }
             }
-            game.addEvent(new MagicEvent(
+            game.addFirstEvent(new MagicEvent(
                 event.getSource(),
                 player,
                 new MagicFromCardListChoice(permanentCards, topCards, permanentCards.size(), true),
