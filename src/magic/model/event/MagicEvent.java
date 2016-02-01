@@ -425,9 +425,11 @@ public class MagicEvent implements MagicCopyable {
         final long time = System.currentTimeMillis() - start;
         if (time > 1000) {
             System.err.println("WARNING. ACR:  " + choice.getDescription() + description + " time: " + time);
+            /*
             if (getClass().desiredAssertionStatus()) {
                 throw new GameException("ACR:  " + choice.getDescription() + description + " time: " + time, game);
             }
+            */
         }
         return choices;
     }
@@ -438,9 +440,11 @@ public class MagicEvent implements MagicCopyable {
         final long time = System.currentTimeMillis() - start;
         if (time > 1000) {
             System.err.println("WARNING. RCR:  " + choice.getDescription() + description + " time: " + time);
+            /*
             if (getClass().desiredAssertionStatus()) {
                 throw new GameException("RCR:  " + choice.getDescription() + description + " time: " + time, game);
             }
+            */
         }
         return res;
     }

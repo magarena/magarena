@@ -11,7 +11,6 @@ public class DiscardCardAction extends MagicAction {
     private final MagicPlayer player;
     private final MagicCard card;
     private final MagicLocationType toLocation;
-    private int index;
 
     public DiscardCardAction(final MagicPlayer aPlayer,final MagicCard aCard) {
         this(aPlayer, aCard, MagicLocationType.Graveyard);
@@ -25,18 +24,10 @@ public class DiscardCardAction extends MagicAction {
 
     @Override
     public void doAction(final MagicGame game) {
-        index = player.removeCardFromHand(card);
-        if (index >= 0) {
-            setScore(player,-ArtificialScoringSystem.getCardScore(card));
-            game.doAction(new MoveCardAction(card,MagicLocationType.OwnersHand,toLocation));
-            game.setStateCheckRequired();
-        }
+        game.doAction(new RemoveCardAction(card,MagicLocationType.OwnersHand));
+        game.doAction(new MoveCardAction(card,MagicLocationType.OwnersHand,toLocation));
     }
 
     @Override
-    public void undoAction(final MagicGame game) {
-        if (index >= 0) {
-            player.addCardToHand(card,index);
-        }
-    }
+    public void undoAction(final MagicGame game) {}
 }
