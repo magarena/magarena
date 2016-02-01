@@ -87,6 +87,7 @@ ShawnieBoy
     improve layout of deck statistics panel.
     improve layout of duel decks screen for a more consistent UI.
     card images selected based on location: custom -> crops -> cards/tokens -> missing proxy.
+    Display split cards as '<first half> // <second half> (card name)' in explorer.
 
 - added the following to the card script:
     effect: you may cost. If you don't, effect
@@ -117,8 +118,7 @@ ShawnieBoy
     fix Cateran Enforcer missing fear
     fix Rally the Righteous not affecting target if it is colorless
     fix groovy code for "target creature and each other creature that shares a color with it" to account for colorless
-    reduce mana values of 3 color lands - reduce their use in random decks
-    as a two color match fixes #646
+    reduce mana values of 3 color lands - reduce their use in random decks as a two color match fixes #646
     fix Raving Oni Slave trigger fixes #647
     fixes #607 : Firemind deck ignored if name contains invalid filename character.
     restore previous groovy code for Knight of the Mists, fixes #610
