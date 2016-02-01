@@ -1,5 +1,5 @@
 [
-    new EntersBattlefieldTrigger() {
+    new EntersBattlefieldTrigger(MagicTrigger.REPLACEMENT) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPayedCost payedCost) {
             final MagicPlayer player = permanent.getController();
