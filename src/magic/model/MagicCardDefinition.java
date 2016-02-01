@@ -160,7 +160,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     }
 
     public boolean isPlayable() {
-        return overlay == false && token == false && hidden == false;
+        return overlay == false && token == false && hidden == false && secondHalf == false;
     }
 
     public boolean isNonPlayable() {
