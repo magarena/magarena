@@ -117,9 +117,10 @@ ShawnieBoy
     fix Harrier Griffin missing flying
     fix Cateran Enforcer missing fear
     fix Rally the Righteous not affecting target if it is colorless
+    fix Raving Oni Slave trigger fixes #647
+    fix Sheltered Valley trigger to replacement trigger
     fix groovy code for "target creature and each other creature that shares a color with it" to account for colorless
     reduce mana values of 3 color lands - reduce their use in random decks as a two color match fixes #646
-    fix Raving Oni Slave trigger fixes #647
     fixes #607 : Firemind deck ignored if name contains invalid filename character.
     restore previous groovy code for Knight of the Mists, fixes #610
     use MagicOrChoice so that target Knight is chosen when trigger goes on the stack instead of when it resolves
