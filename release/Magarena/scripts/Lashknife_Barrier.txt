@@ -4,7 +4,7 @@ value=3.708
 rarity=U
 type=Enchantment
 cost={2}{W}
-ability=When SN enters the battlefield, draw a card.;\
-        If a source would deal damage to a creature you control, it deals that much damage minus 1 to that creature instead.
+ability=When SN enters the battlefield, draw a card.
 timing=enchantment
+requires_groovy_code
 oracle=When Lashknife Barrier enters the battlefield, draw a card.\nIf a source would deal damage to a creature you control, it deals that much damage minus 1 to that creature instead.
