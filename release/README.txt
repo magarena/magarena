@@ -105,32 +105,31 @@ ShawnieBoy
   * effect: <permament> lose <ability>
 
 - fixed the following bugs:
-    fix poor quality image scaling in CardsCanvas (sample hand ,deck tiled screen, etc); uses preferred image size setting.
-    fixes #658 : Clicking on empty area of deck table increases count for selected card.
-    fix missing {4} cost for Defiant Falcon's second ability
-    fix missing {B} cost for Eater of Hope's first ability
-    fix Drill Skimmer missing flying
-    fix Elixir of Vitality missing enters tapped
-    fix Thousand Winds missing flying
-    fix Tunneler Wurm should not have trample
-    fix Felidar Umbra missing totem armor
-    fix Glimmering Angel missing flying
-    fix Piety giving +0/+2 instead of +0/+3
-    fix Stone Idol Trap missing cost reduction
-    fix Harrier Griffin missing flying
-    fix Cateran Enforcer missing fear
-    fix Rally the Righteous not affecting target if it is colorless
-    fix Raving Oni Slave trigger fixes #647
-    fix Sheltered Valley trigger to replacement trigger
-    fix groovy code for "target creature and each other creature that shares a color with it" to account for colorless
-    reduce mana values of 3 color lands - reduce their use in random decks as a two color match fixes #646
-    fixes #607 : Firemind deck ignored if name contains invalid filename character.
-    restore previous groovy code for Knight of the Mists, fixes #610
-    use MagicOrChoice so that target Knight is chosen when trigger goes on the stack instead of when it resolves
-    filter should not be able to accept hidden cards, except those in library, fixes #384
-    Giant Caterpillar and Transluminant should be using delayed triggers, ala Grave Betrayal, possible fix for #362
-    count mana ability of all permanents not only validSources for useAll check, fixes #639
-    add missing mana_or_combat property to man lands
+  * poor quality image scaling in CardsCanvas for sample hand, deck tiled screen, etc
+  * Firemind decks not shown if name contains invalid filename character (issue #607)
+  * clicking on empty area of deck table increases count for selected card (issue #658)
+  * crash when activating ability that discards specific cards as cost (issue #384)
+  * "target creature and each other creature that shares a color with it" does
+    not include target creature when it is colorless
+  * three color lands appears in random two color decks (issue #646)
+  * no choice of which mana ability to use when mana permanents equal to mana cost (issue #639)
+  * Man lands missing missing mana_or_combat property
+  * Giant Caterpillar and Transluminant causes the AI to crash (issue #362)
+  * Knight of the Mists crashes when you select "No" for its trigger (issue #610)
+  * Raving Oni Slave triggering when other permanents leave the battlefield (issue #647)
+  * Sheltered Valley trigger should occur before other ETB triggers
+  * Tunneler Wurm should not have trample
+  * Cateran Enforcer missing fear
+  * Drill Skimmer missing flying
+  * Thousand Winds missing flying
+  * Glimmering Angel missing flying
+  * Harrier Griffin missing flying
+  * Felidar Umbra missing totem armor
+  * Piety giving +0/+2 instead of +0/+3
+  * Stone Idol Trap missing cost reduction
+  * Elixir of Vitality missing enters tapped
+  * Eater of Hope's first ability missing {B} cost
+  * Defiant Falcon's second ability missing {4} cost
 
 Release 1.69 (December 27, 2015)
 ============
