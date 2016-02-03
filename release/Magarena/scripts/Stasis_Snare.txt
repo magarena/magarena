@@ -5,7 +5,8 @@ value=2.500
 rarity=U
 type=Enchantment
 cost={1}{W}{W}
-ability=Flash
+ability=Cast SN with AI only if an opponent controls a creature.;\
+        Flash
 timing=enchantment
 requires_groovy_code=Banisher Priest
 oracle=Flash\nWhen Stasis Snare enters the battlefield, exile target creature an opponent controls until Stasis Snare leaves the battlefield.
