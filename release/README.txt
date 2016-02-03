@@ -70,36 +70,39 @@ Thanks to
 
 Thank you for your support and have fun!
 
-Release 1.70 (January 31, 2016)
+Release 1.70 (February 7, 2016)
 ============
 lodici
 melvin
 ShawnieBoy
-    
-    Add volume setting for gameplay audio.
-    draw in-game casting cost on card in hand, closes #629
-    devoid, miracle overlay
-    draw damage prevent shield as blue number above pt, fixes #603
-    remove text mode
-    use image size presets settings for all card images.
-    move preferred image size setting to main General tab.
-    prevent UI freeze on CardBuilder startup.
-    improve layout of deck statistics panel.
-    improve layout of duel decks screen for a more consistent UI.
-    card images selected based on location: custom -> crops -> cards/tokens -> missing proxy.
-    Display split cards as '<first half> // <second half> (card name)' in explorer.
+
+- remove text mode
+
+- move preferred image size setting to preferences General tab,
+  use preferred image size for all card images
+
+- improve layout of deck statistics panel and duel decks screen for a more consistent UI
+
+- eliminate UI freeze on CardBuilder startup
+
+- card images selected based on location: custom -> crops -> cards/tokens -> missing proxy
+
+- display split cards as '<first half> // <second half> (card name)' in explorer
+
+- show damage prevent shield as blue number above pt
+
+- allow groovy code to add effects that reduce/increase mana cost, it does not
+  reduce additional costs
 
 - added the following to the card script:
-    effect: you may cost. If you don't, effect
-    add support for static effects that increase/decrease mana cost
-    does not affect additional mana costs
-    made 'until end of turn' optional for GainAbility
-    made 'until end of turn' optional for LoseAbility
-    support ability 'surge <manacost>'
-    extend EntersKickedEffect to match 'if its surge cost was paid'
-    add 'return <permanent> to its owner's hand at the beginning of the next end step'
-    add ability 'when you cast SN, <effect>'
-    add ShuffleLibrary to RuleEventAction
+  * ability: Surge <mana cost>
+  * ability: When <name> enters the battlefield, if its surge cost was paid, <effect>
+  * ability: When you cast <name>, <effect>
+  * effect: You may <cost>. If you don't, <effect>
+  * effect: Return <permanent> to its owner's hand at the beginning of the next end step
+  * effect: Shuffle your library
+  * effect: <permanent> gain <ability>
+  * effect: <permament> lose <ability>
 
 - fixed the following bugs:
     fix poor quality image scaling in CardsCanvas (sample hand ,deck tiled screen, etc); uses preferred image size setting.
