@@ -1,5 +1,10 @@
 package magic.model.event;
 
+import java.util.Collections;
+import java.util.Arrays;
+import java.util.List;
+import java.util.LinkedList;
+
 import magic.model.MagicGame;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicSource;
@@ -7,8 +12,6 @@ import magic.model.MagicPayedCost;
 import magic.model.MagicPermanent;
 import magic.model.action.TurnFaceUpAction;
 import magic.model.condition.MagicCondition;
-import java.util.List;
-import java.util.LinkedList;
 import magic.model.MagicMessage;
 
 public class MagicMorphActivation extends MagicPermanentActivation {
@@ -16,6 +19,18 @@ public class MagicMorphActivation extends MagicPermanentActivation {
     private static final MagicActivationHints HINT = new MagicActivationHints(MagicTiming.Pump);
     private static final MagicCondition COND[] = new MagicCondition[]{ MagicCondition.FACE_DOWN_PERMANENT_CONDITION };
     private final List<MagicMatchedCostEvent> matchedCostEvents;
+
+    public static final MagicMorphActivation Manifest = new MagicMorphActivation(Collections.emptyList()) {
+        @Override
+        public Iterable<? extends MagicEvent> getCostEvent(final MagicPermanent source) {
+            return Arrays.asList(
+                new MagicPayManaCostEvent(
+                    source,
+                    source.getRealCardDefinition().getCost()
+                )
+            );
+        }
+    };
 
     public MagicMorphActivation(final List<MagicMatchedCostEvent> aMatchedCostEvents) {
         this(aMatchedCostEvents, "Morph");
