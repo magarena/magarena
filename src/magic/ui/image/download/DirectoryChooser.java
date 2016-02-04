@@ -5,6 +5,7 @@ import java.awt.Cursor;
 import java.awt.event.ActionEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
@@ -23,7 +24,7 @@ import magic.utility.MagicFileSystem.DataPath;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-class DirectoryChooser extends JPanel {
+public class DirectoryChooser extends JPanel {
 
     static final String CP_FOLDER_CHANGED = "b896016d-7b11-4295-8b6c-312bec5e04ad";
 
@@ -33,8 +34,8 @@ class DirectoryChooser extends JPanel {
     private static final String _S2 = "Select images directory";
     private static final String _S4 = "A complete set of images requires at least 1.5 GB of free space.";
     private static final String _S5 = "Card images folder";
-    private static final String _S6 = "Card images will be downloaded here into the \"cards\" and \"tokens\" sub-folders. Double-click to to open this location in file manager.";
-    private static final String _S7 = "Select or create a new folder in which card images will be stored.";
+    private static final String _S6 = "Each card image will be stored here in one of the following sub-folders - 'custom', 'crops', 'cards' or 'tokens'. Double-click to open this location in file manager.";
+    private static final String _S7 = "Select or create a new images folder.";
 
     private static final long MIN_FREE_SPACE = 1610612736; // bytes = 1.5 GB
 
@@ -43,10 +44,11 @@ class DirectoryChooser extends JPanel {
     private final JButton selectButton = new JButton();
     private File defaultPath;
 
-    DirectoryChooser(final Path defaultPath) {
+    public DirectoryChooser(final Path defaultPath) {
         this.defaultPath = defaultPath.toFile();
         setupTextField();
         setupSelectButton();
+        layout.setLayoutConstraints("insets 0, gap 0");
         setLayout(layout);
         refreshLayout();
     }
@@ -76,6 +78,7 @@ class DirectoryChooser extends JPanel {
     private void setupSelectButton() {
         selectButton.setText("...");
         selectButton.setFont(FontsAndBorders.FONT1);
+        selectButton.setToolTipText(UiString.get(_S7));
         selectButton.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -91,6 +94,7 @@ class DirectoryChooser extends JPanel {
     private void setupTextField() {
         textField.setText(defaultPath.toString());
         textField.setEditable(false);
+        textField.setToolTipText(UiString.get(_S6));
         textField.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseReleased(MouseEvent e) {
@@ -112,8 +116,6 @@ class DirectoryChooser extends JPanel {
     }
 
     private void refreshLayout() {
-        removeAll();
-        layout.setLayoutConstraints("insets 0, gap 0");
         add(textField, "w 100%");
         add(selectButton, "w 26!");
     }
@@ -149,15 +151,8 @@ class DirectoryChooser extends JPanel {
         }
     }
 
-    Path getPath() {
+    public Path getPath() {
         return Paths.get(textField.getText());
-    }
-
-    @Override
-    public void setToolTipText(String text) {
-        super.setToolTipText(text);
-        textField.setToolTipText(text);
-        selectButton.setToolTipText(text);
     }
 
     @Override
@@ -172,6 +167,13 @@ class DirectoryChooser extends JPanel {
         for (Component c : getComponents()) {
             c.setEnabled(b);
         }
+    }
+
+    @Override
+    public synchronized void addMouseListener(MouseListener l) {
+        super.addMouseListener(l);
+        textField.addMouseListener(l);
+        selectButton.addMouseListener(l);
     }
 
 }

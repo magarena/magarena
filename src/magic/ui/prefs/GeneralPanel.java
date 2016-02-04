@@ -6,6 +6,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
 import magic.translate.UiString;
+import magic.ui.image.download.DirectoryChooser;
 import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
@@ -31,6 +32,7 @@ class GeneralPanel extends JPanel {
     private final JCheckBox previewCardOnSelectCheckBox;
     private final JCheckBox missingCardDataCheckbox;
     private final PreferredSizePanel preferredSizePanel;
+    private final DirectoryChooser imagesFolderChooser;
 
     GeneralPanel(MouseListener aListener) {
 
@@ -39,7 +41,12 @@ class GeneralPanel extends JPanel {
         langPanel.setFocusable(false);
         langPanel.addMouseListener(aListener);
 
+        imagesFolderChooser = new DirectoryChooser(config.getCardImagesPath());
+        imagesFolderChooser.setFocusable(false);
+        imagesFolderChooser.addMouseListener(aListener);    
+
         preferredSizePanel = new PreferredSizePanel(aListener);
+        preferredSizePanel.setFocusable(false);
 
         splitViewDeckEditorCheckBox = new JCheckBox(UiString.get(_S57), config.isSplitViewDeckEditor());
         splitViewDeckEditorCheckBox.setToolTipText(UiString.get(_S58));
@@ -57,10 +64,15 @@ class GeneralPanel extends JPanel {
         missingCardDataCheckbox.addMouseListener(aListener);
 
         setLayout(new MigLayout("flowy, gapy 4, insets 16"));
+
+        // lang
         add(getCaptionLabel(UiString.get(_S63)));
         add(langPanel, "w 100%");
+        // images
         add(getCaptionLabel(UiString.get(UiString.get(_S83))), "gaptop 10");
+        add(imagesFolderChooser, "w 100%");
         add(preferredSizePanel, "w 100%");
+        // explorer & editor
         add(getCaptionLabel(UiString.get(_S64)), "gaptop 10");
         add(splitViewDeckEditorCheckBox);
         add(previewCardOnSelectCheckBox);
@@ -69,6 +81,7 @@ class GeneralPanel extends JPanel {
 
     void saveSettings() {
         preferredSizePanel.saveSettings();
+        config.setCardImagesPath(imagesFolderChooser.getPath());
         config.setTranslation(langPanel.getSelectedLanguage());
         config.setIsSplitViewDeckEditor(splitViewDeckEditorCheckBox.isSelected());
         config.setPreviewCardOnSelect(previewCardOnSelectCheckBox.isSelected());
