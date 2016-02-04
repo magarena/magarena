@@ -30,7 +30,6 @@ import org.apache.commons.io.FilenameUtils;
  *
  */
 public final class MagicFileSystem {
-
     private MagicFileSystem() {}
 
     // card images
@@ -285,6 +284,19 @@ public final class MagicFileSystem {
     public static void clearGameplayReportDirectory() throws IOException {
         verifyDirectoryPath(getGameplayReportDirectory());
         FileUtils.cleanDirectory(getGameplayReportDirectory().toFile());
+    }
+
+    public static boolean isCardImageMissing(MagicCardDefinition aCard) {
+        if (getCustomCardImageFile(aCard).exists()) {
+            return false;
+        }
+        if (getCroppedCardImageFile(aCard).exists()) {
+            return false;
+        }
+        if (getCardImageFile(aCard).exists()) {
+            return false;
+        }
+        return true;
     }
 
 }

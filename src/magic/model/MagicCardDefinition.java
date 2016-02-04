@@ -1038,7 +1038,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     };
 
     public boolean isImageFileMissing() {
-        return MagicFileSystem.getCardImageFile(this).exists() == false;
+        return MagicFileSystem.isCardImageMissing(this);
     }
 
     public void setPowerToughnessText(String string) {
