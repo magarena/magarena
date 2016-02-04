@@ -34,7 +34,7 @@ public class DirectoryChooser extends JPanel {
     private static final String _S2 = "Select images directory";
     private static final String _S4 = "A complete set of images requires at least 1.5 GB of free space.";
     private static final String _S5 = "Card images folder";
-    private static final String _S6 = "Each card image will be stored here in one of the following sub-folders - 'custom', 'crops', 'cards' or 'tokens'. Double-click to open this location in file manager.";
+    private static final String _S6 = "Magarena will look for a card image here in one of the following sub-folders and in the order shown :- 'custom', 'crops', 'cards' or 'tokens'. If it is unable to find an image it will create a proxy image instead. Double-click to open this location in file manager.";
     private static final String _S7 = "Select or create a new images folder.";
 
     private static final long MIN_FREE_SPACE = 1610612736; // bytes = 1.5 GB
