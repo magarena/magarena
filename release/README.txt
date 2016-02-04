@@ -128,6 +128,7 @@ ShawnieBoy
   * Piety giving +0/+2 instead of +0/+3
   * Stone Idol Trap missing cost reduction
   * Elixir of Vitality missing enters tapped
+  * Stasis Snare missing AI casting restriction
   * Eater of Hope's first ability missing {B} cost
   * Defiant Falcon's second ability missing {4} cost
 
@@ -261,7 +262,6 @@ ShawnieBoy
   * Blessed Reversal required a target and did not gain life (issue #491)
   * Dead-Iron Sledge crashes if it is not equipped when its trigger resolves (issue #494)
   * Faerie Miscreant's trigger condition incorrectly scripted (issue #508)
-  * Stasis Snare missing AI casting restriction
 
 - added the following cards:
 Acolyte of the Inferno, Akoum Hellkite, Akoum Stonewaker, Angelic Gift,
