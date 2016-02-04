@@ -90,21 +90,11 @@ public class PreferencesDialog
     private static final String _S52 = "Theme";
     private static final String _S53 = "Additional themes can be downloaded from the Magarena forum using the link below.";
     private static final String _S54 = "more themes online...";
-    private static final String _S56 = "Restart required. Only applies to the general UI, it does not affect card data.";
-    private static final String _S57 = "Deck Editor split view.";
-    private static final String _S58 = "Use the old style split view in the Deck Editor instead of the new tabbed view. This option is provided for convenience, any new features will only be added to the tabbed view.";
-    private static final String _S59 = "Preview card on select only.";
-    private static final String _S60 = "By default, as you move the mouse cursor over a card entry it will display the image. If you find this a bit too sensitive then this setting will only change the image when the card entry is selected.";
-    private static final String _S61 = "Show missing card data.";
-    private static final String _S62 = "If set then the Card Explorer will display extra data for each missing card otherwise it will only show the card name. This setting can affect the time it takes the Card Explorer screen to open the first time it is accessed.";
-    private static final String _S63 = "User Interface";
-    private static final String _S64 = "Card Explorer & Deck Editor";
     private static final String _S68 = "Images";
     private static final String _S79 = "Preferences";
     private static final String _S80 = "There is a problem reading the translation file.";
     private static final String _S81 = "Please ensure the file is encoded as 'UTF-8 without BOM'.";
     private static final String _S82 = "Animations";
-    private static final String _S83 = "Card images";
 
     private final static GeneralConfig config = GeneralConfig.getInstance();
 
@@ -128,18 +118,15 @@ public class PreferencesDialog
     private SliderPanel messageDelaySlider;
     private JButton saveButton;
     private JButton cancelButton;
-    private JCheckBox previewCardOnSelectCheckBox;
-    private JCheckBox mulliganScreenCheckbox;
-    private JCheckBox missingCardDataCheckbox;
+    private JCheckBox mulliganScreenCheckbox;    
     private JCheckBox customBackgroundCheckBox;
-    private JCheckBox splitViewDeckEditorCheckBox;
     private JCheckBox hideAIPromptCheckBox;
     private ColorButton rollOverColorButton;
-    private final TranslationPanel langPanel;
+
+    private final GeneralPanel generalPanel;
     private final AnimationsPanel animationsPanel;
     private final GameplayImagesPanel gameImagesPanel;
     private final AudioPanel audioPanel;
-    private final PreferredSizePanel preferredSizePanel;
 
     private final JLabel hintLabel = new JLabel();
     private boolean isProxyUpdated = false;
@@ -161,11 +148,10 @@ public class PreferencesDialog
 
         this.frame = frame;
 
-        langPanel = new TranslationPanel();
+        generalPanel = new GeneralPanel(this);
         animationsPanel = new AnimationsPanel(this);
         gameImagesPanel = new GameplayImagesPanel(this);
         audioPanel = new AudioPanel(this);
-        preferredSizePanel = new PreferredSizePanel(this);
 
         hintLabel.setVerticalAlignment(SwingConstants.TOP);
         hintLabel.setFont(new Font("SansSerif", Font.ITALIC, 12));
@@ -207,7 +193,7 @@ public class PreferencesDialog
             tabbedPane.addTab(UiString.get(_S5), getLookAndFeelSettingsPanel());
             tabbedPane.addTab(UiString.get(_S6), audioPanel);
         } else {
-            tabbedPane.addTab(UiString.get(_S3), getGeneralTabPanel());
+            tabbedPane.addTab(UiString.get(_S3), generalPanel);
             tabbedPane.addTab(UiString.get(_S4), getGameplaySettingsTabbedPane());
             tabbedPane.addTab(UiString.get(_S5), getLookAndFeelSettingsPanel());
             tabbedPane.addTab(UiString.get(_S6), audioPanel);
@@ -324,7 +310,6 @@ public class PreferencesDialog
     }
 
     private void saveSettings() {
-        preferredSizePanel.saveSettings();
         animationsPanel.saveSettings();
         gameImagesPanel.saveSettings();
         audioPanel.saveSettings();
@@ -341,11 +326,7 @@ public class PreferencesDialog
         config.setRolloverColor(rollOverColorButton.getColor());
 
         if (isGamePlayMode == false) {
-            // General
-            config.setPreviewCardOnSelect(previewCardOnSelectCheckBox.isSelected());
-            config.setShowMissingCardData(missingCardDataCheckbox.isSelected());
-            config.setIsSplitViewDeckEditor(splitViewDeckEditorCheckBox.isSelected());
-            config.setTranslation(langPanel.getSelectedLanguage());
+            generalPanel.saveSettings();
             // Network
             config.setProxy(getNewProxy());
         }
@@ -355,7 +336,7 @@ public class PreferencesDialog
 
     private void doSaveButtonAction() {
 
-        final boolean isNewTranslation = !config.getTranslation().equals(langPanel.getSelectedLanguage());
+        final boolean isNewTranslation = !config.getTranslation().equals(generalPanel.getLanguage());
 
         saveSettings();
 
@@ -389,7 +370,7 @@ public class PreferencesDialog
                 public void run() {
                     config.setTranslation(GeneralConfig.DEFAULT_TRANSLATION);
                     config.save();
-                    langPanel.refreshLanguageCombo();
+                    generalPanel.refreshLanguageCombo();
                 }
             });
             return false;
@@ -577,48 +558,6 @@ public class PreferencesDialog
         panel.add(new JLabel(), "alignx right");
         panel.add(linkLabel, "alignx left");
         return panel;
-    }
-
-    private JPanel getGeneralTabPanel() {
-        final JPanel panel = new JPanel(new MigLayout("flowy, gapy 14, insets 16"));
-        panel.add(getCardExplorerEditorSettingsPanel(), "w 100%");
-        return panel;
-    }
-
-    private JPanel getCardExplorerEditorSettingsPanel() {
-
-        langPanel.setToolTipText(UiString.get(_S56));
-        langPanel.setFocusable(false);
-        langPanel.addMouseListener(this);
-
-        splitViewDeckEditorCheckBox = new JCheckBox(UiString.get(_S57), config.isSplitViewDeckEditor());
-        splitViewDeckEditorCheckBox.setToolTipText(UiString.get(_S58));
-        splitViewDeckEditorCheckBox.setFocusable(false);
-        splitViewDeckEditorCheckBox.addMouseListener(this);
-
-        previewCardOnSelectCheckBox = new JCheckBox(UiString.get(_S59), config.isPreviewCardOnSelect());
-        previewCardOnSelectCheckBox.setToolTipText(UiString.get(_S60));
-        previewCardOnSelectCheckBox.setFocusable(false);
-        previewCardOnSelectCheckBox.addMouseListener(this);
-
-        missingCardDataCheckbox = new JCheckBox(UiString.get(_S61), config.showMissingCardData());
-        missingCardDataCheckbox.setToolTipText(UiString.get(_S62));
-        missingCardDataCheckbox.addMouseListener(this);
-        missingCardDataCheckbox.setFocusable(false);
-
-        // Layout UI components.
-        final JPanel panel = new JPanel(new MigLayout("flowy, insets 0"));
-        panel.add(getCaptionLabel(UiString.get(_S63)));
-        panel.add(langPanel, "w 100%");
-        panel.add(getCaptionLabel(UiString.get(UiString.get(_S83))), "gaptop 10");
-        panel.add(preferredSizePanel, "w 100%");
-        panel.add(getCaptionLabel(UiString.get(_S64)), "gaptop 10");
-        panel.add(splitViewDeckEditorCheckBox);
-        panel.add(previewCardOnSelectCheckBox);
-        panel.add(missingCardDataCheckbox);
-
-        return panel;
-
     }
 
     private JLabel getCaptionLabel(final String text) {
