@@ -24,6 +24,7 @@ class TestSacTargeted extends TestGameBuilder {
         addToHand(P, "Horobi, Death's Wail");
         addToHand(P, "Spinal Graft");
         addToHand(P, "Phantasmal Image");
+        addToHand(P, "Withstand Death");
         createPermanent(P,"Forest", 10);
         createPermanent(P, "Chromatic Lantern");
 
