@@ -129,7 +129,7 @@ public enum MagicPlayMod implements MagicPermanentAction {
     },
     MANIFEST() {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
-            if (perm.isCreature()) {
+            if (perm.isCreature() && perm.getCardDefinition().hasCost()) {
                 final MagicAbilityList morphAct = new MagicAbilityList();
                 morphAct.add(MagicMorphActivation.Manifest);
                 game.doAction(new GainAbilityAction(perm, morphAct, MagicStatic.Forever));
