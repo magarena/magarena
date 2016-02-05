@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Warrior
 cost={B}
 pt=1/1
-ability=ability=Level up {4};\
+ability=Level up {4};\
         LEVEL 1-2;\
         3/3;\
         LEVEL 3+;\
