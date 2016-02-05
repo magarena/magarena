@@ -6,7 +6,8 @@ type=Enchantment
 subtype=Aura
 cost={2}{W}
 ability=Flash;\
-        Enchant creature;\
-        Creatures you control that are enchanted get +1/+1.
+        Enchant creature
 timing=flash
+enchant=pump,pos creature
+requires_groovy_code
 oracle=Flash\nEnchant creature\nCreatures you control that are enchanted get +1/+1.
