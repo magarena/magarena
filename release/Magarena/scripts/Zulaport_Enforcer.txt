@@ -6,11 +6,7 @@ type=Creature
 subtype=Human,Warrior
 cost={B}
 pt=1/1
-ability=Level up {4};\
-        LEVEL 1-2;\
-        3/3;\
-        LEVEL 3+;\
-        5/5;\
-        SN can't be blocked except by black creatures.
+ability=Level up {4} 3
 timing=main
+requires_groovy_code
 oracle=Level up {4}\nLEVEL 1-2\n3/3\nLEVEL 3+\n5/5\nZulaport Enforcer can't be blocked except by black creatures.
