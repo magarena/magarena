@@ -979,10 +979,18 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
     }
 
     public boolean canBlock(final MagicPermanent attacker) {
-        // Fear and Intimidate
+        // Fear-types and Intimidate
         if (!isArtifact()) {
             if (attacker.hasAbility(MagicAbility.Fear) &&
                 !hasColor(MagicColor.Black)) {
+                return false;
+            }
+            if (attacker.hasAbility(MagicAbility.WhiteFear) &&
+                !hasColor(MagicColor.White)) {
+                return false;
+            }
+            if (attacker.hasAbility(MagicAbility.RedFear) &&
+                !hasColor(MagicColor.Red)) {
                 return false;
             }
             if (attacker.hasAbility(MagicAbility.Intimidate) &&

@@ -39,6 +39,8 @@ public enum MagicAbility {
     DoesNotUntap("(SN )?(doesn't|don't) untap during (your|its controller's|their controllers') untap step(s)?",-30),
     DoubleStrike("double strike",100),
     Fear("fear",50),
+    WhiteFear("(SN )?can't be blocked except by artifact creatures and/or white creatures",50),
+    RedFear("(SN )?can't be blocked except by artifact creatures and/or red creatures",50),
     Flash("flash",0),
     Flying("flying",50),
     FirstStrike("first strike",50),
