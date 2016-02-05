@@ -4,6 +4,6 @@ value=1.180
 rarity=U
 type=Artifact
 cost={6}
-ability={4}, {T}: Target creature can't be blocked this turn except by Walls.
+ability={4}, {T}: Target creature can't be blocked except by Walls this turn.
 timing=artifact
 oracle={4}, {T}: Target creature can't be blocked this turn except by Walls.
