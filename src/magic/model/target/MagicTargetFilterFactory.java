@@ -1665,6 +1665,9 @@ public class MagicTargetFilterFactory {
     public static final MagicCardFilterImpl INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD =
         card(MagicType.Instant).or(MagicType.Sorcery).from(MagicTargetType.Graveyard);
 
+    public static final MagicCardFilterImpl INSTANT_SORCERY_OR_CREATURE_CARD_FROM_GRAVEYARD =
+        card(MagicType.Instant).or(MagicType.Sorcery).or(MagicType.Creature).from(MagicTargetType.Graveyard);
+
     public static final MagicCardFilterImpl RED_SORCERY_CARD_FROM_GRAVEYARD =
         card(MagicColor.Red).and(MagicType.Sorcery).from(MagicTargetType.Graveyard);
 
@@ -2395,6 +2398,7 @@ public class MagicTargetFilterFactory {
         // <color|type|subtype> card from your graveyard
         single.put("card from your graveyard", CARD_FROM_GRAVEYARD);
         single.put("instant or sorcery card from your graveyard", INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD);
+        single.put("instant, sorcery, or creature card from your graveyard", INSTANT_SORCERY_OR_CREATURE_CARD_FROM_GRAVEYARD);
         single.put("red sorcery card from your graveyard", RED_SORCERY_CARD_FROM_GRAVEYARD);
         single.put("blue instant card from your graveyard", BLUE_INSTANT_CARD_FROM_GRAVEYARD);
         single.put("blue or red creature card from your graveyard", BLUE_OR_RED_CREATURE_CARD_FROM_GRAVEYARD);
