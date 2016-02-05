@@ -4,6 +4,6 @@ value=2.204
 rarity=R
 type=Sorcery
 cost={3}{B}
-effect=Black creatures you control can't be blocked this turn except by black creatures.
+effect=Black creatures you control can't be blocked except by black creatures this turn.
 timing=main
 oracle=Black creatures you control can't be blocked this turn except by black creatures.
