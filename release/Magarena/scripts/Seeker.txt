@@ -6,6 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={2}{W}{W}
 ability=Enchant creature;\
-        Enchanted creature can't be blocked except by artifact creatures and/or white creatures.
+        Enchanted creature has can't be blocked except by artifact creatures and/or white creatures.
 timing=aura
+enchant=unblockable,pos creature
 oracle=Enchant creature\nEnchanted creature can't be blocked except by artifact creatures and/or white creatures.
