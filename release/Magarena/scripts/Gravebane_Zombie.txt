@@ -6,6 +6,6 @@ type=Creature
 subtype=Zombie
 cost={3}{B}
 pt=3/2
-ability=If SN would die, put SN on top of its owner's library instead.
 timing=main
+requires_groovy_code
 oracle=If Gravebane Zombie would die, put Gravebane Zombie on top of its owner's library instead.
