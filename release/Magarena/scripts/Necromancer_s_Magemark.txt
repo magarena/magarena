@@ -5,8 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{B}
-ability=Enchant creature;\
-        Creatures you control that are enchanted get +1/+1.;\
-        If a creature you control that's enchanted would die, return it to its owner's hand instead.
+ability=Enchant creature
 timing=aura
+enchant=pump,pos creature
+requires_groovy_code
 oracle=Enchant creature\nCreatures you control that are enchanted get +1/+1.\nIf a creature you control that's enchanted would die, return it to its owner's hand instead.
