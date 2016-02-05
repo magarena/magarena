@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{R}
-ability=Enchant creature;\
-        Creatures you control that are enchanted get +1/+1 and have first strike.
+ability=Enchant creature
 timing=aura
+enchant=first strike,pos creature
+requires_groovy_code
 oracle=Enchant creature\nCreatures you control that are enchanted get +1/+1 and have first strike.
