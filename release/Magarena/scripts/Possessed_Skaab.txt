@@ -7,7 +7,7 @@ type=Creature
 subtype=Zombie
 cost={3}{U}{B}
 pt=3/2
-ability=When SN enters the battlefield, return target instant, sorcery, or creature card from your graveyard to your hand.;\
-        If SN would die, exile it instead.
+ability=When SN enters the battlefield, return target instant, sorcery, or creature card from your graveyard to your hand.
 timing=main
+requires_groovy_code
 oracle=When Possessed Skaab enters the battlefield, return target instant, sorcery, or creature card from your graveyard to your hand.\nIf Possessed Skaab would die, exile it instead.
