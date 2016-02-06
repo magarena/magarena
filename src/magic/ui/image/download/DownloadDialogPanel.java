@@ -1,6 +1,7 @@
 package magic.ui.image.download;
 
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.Dimension;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
@@ -14,10 +15,11 @@ import magic.ui.ScreenController;
 import magic.ui.theme.Theme;
 import magic.ui.utility.MagicStyle;
 import magic.ui.widget.FontsAndBorders;
+import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-public class DownloadDialogPanel extends JPanel implements PropertyChangeListener {
+public class DownloadDialogPanel extends TexturedPanel implements PropertyChangeListener {
 
     private static final String _S1 = "Download card images";
 
@@ -37,6 +39,8 @@ public class DownloadDialogPanel extends JPanel implements PropertyChangeListene
         setLayout(new MigLayout("flowy, insets 0"));
         add(getDialogCaptionLabel(), "w 100%, h 26!");
         add(mainPanel, "w 100%, h 100%");
+
+        doSetStyle(this);
     }
 
     private DialogMainPanel getMainPanel() {
@@ -80,6 +84,20 @@ public class DownloadDialogPanel extends JPanel implements PropertyChangeListene
 
     public boolean isBusy() {
         return mainPanel.isBusy();
+    }
+
+    private void doSetStyle(JPanel panel) {
+        synchronized (panel.getTreeLock()) {
+            for (Component c : panel.getComponents()) {
+                if (c instanceof JPanel) {
+                    doSetStyle((JPanel) c);
+                }
+                c.setFocusable(false);
+            }
+            if (this != panel) {
+                panel.setOpaque(false);
+            }
+        }
     }
 
 }
