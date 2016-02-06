@@ -7,7 +7,6 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import javax.swing.AbstractButton;
 import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -21,7 +20,9 @@ public class HintPanel extends JPanel {
     private final JLabel lbl = new JLabel();
     private final MouseAdapter tooltipMouseAdapter;
 
-    public HintPanel() {
+    public HintPanel(String aHint) {
+
+        setOpaque(false);
 
         lbl.setVerticalAlignment(SwingConstants.TOP);
         lbl.setFont(new Font("SansSerif", Font.ITALIC, 12));
@@ -40,6 +41,13 @@ public class HintPanel extends JPanel {
 
         setLayout(new MigLayout());
         add(lbl, "w 100%, h 100%");
+
+        setToolTipText(aHint);
+        showTooltipHint(this);
+    }
+
+    public HintPanel() {
+        this(null);
     }
 
     /**
@@ -53,17 +61,14 @@ public class HintPanel extends JPanel {
     }
 
     private void clearHint() {
-        lbl.setText("");
+        showTooltipHint(this);
     }
 
     private void showTooltipHint(Object source) {
         if (source instanceof JComponent) {
             final JComponent c = (JComponent) source;
-            final String caption = c instanceof AbstractButton
-                ? ((AbstractButton) c).getText()
-                : "";
             lbl.setText(String.format("<html>%s</html>",
-                c.getToolTipText() == null ? caption : c.getToolTipText()));
+                c.getToolTipText() == null ? getToolTipText() : c.getToolTipText()));
         }
     }
 

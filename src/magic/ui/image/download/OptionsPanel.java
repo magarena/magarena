@@ -20,9 +20,6 @@ class OptionsPanel extends JPanel {
     private static final String _S3 = "Download:";
     private static final String _S4 = "Preferred card text language";
     private static final String _S5 = "If a language other than English is selected then Magarena will try to find and download a card image for the given language. If no image is found then it will download the default English edition instead.";
-    private static final String _S6 = "Downloads card images that are missing or out-of-date in the 'cards' and 'tokens' folders.";
-    private static final String _S7 = "Downloads cropped images that are missing or out-of-date in the 'crops' folder. <b>Not 100% coverage</b>, currently there is not a downloadable cropped image for every card.";
-    private static final String _S8 = "Magarena will display the first image it finds using the folder order:- 'custom', 'crops', 'cards' or 'tokens'. If a cropped image is found or the image is missing then a proxy card image will be generated.";
 
     static final String CP_OPTIONS_CHANGED = "fc9a1955-7e59-47d5-83b4-14db558c731e";
 
@@ -133,12 +130,6 @@ class OptionsPanel extends JPanel {
         imagesFolderChooser.addHintSources(hintPanel);
         hintPanel.addHintSource(cboCardText, String.format("<b>%s</b><br>%s",
             UiString.get(_S4), UiString.get(_S5)
-        ));
-        hintPanel.addHintSource(cboDownloadMode, String.format(
-            "<b>%s</b><br>%s<br><br><b>%s</b><br>%s<br><br>%s",
-            DownloadMode.CARDS.toString(), UiString.get(_S6),
-            DownloadMode.CROPS.toString(), UiString.get(_S7),
-            UiString.get(_S8)
         ));
     }
 
