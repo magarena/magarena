@@ -7,6 +7,6 @@ final class EnumStrings {
     private EnumStrings() {}
 
     // DownloadMode
-    static final String _S1 = "Missing images";
-    static final String _S2 = "All images";
+    static final String _S1 = "Card images";
+    static final String _S2 = "Cropped images";
 }

@@ -1,14 +1,16 @@
 package magic.ui.image.download;
 
+import magic.translate.UiString;
+
 enum DownloadMode {
 
-    CARDS("Card images"),
-    CROPS("Cropped images");
+    CARDS(EnumStrings._S1),
+    CROPS(EnumStrings._S2);
 
     private final String desc;
 
     private DownloadMode(String aDesc) {
-        this.desc = aDesc;
+        this.desc = UiString.get(aDesc);
     }
 
     @Override
