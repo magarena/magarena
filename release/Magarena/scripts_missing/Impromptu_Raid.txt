@@ -1,9 +1,0 @@
-name=Impromptu Raid
-image=http://magiccards.info/scans/en/shm/209.jpg
-value=2.814
-rarity=R
-type=Enchantment
-cost={3}{R/G}
-ability={2}{R/G}: Reveal the top card of your library. If it isn't a creature card, put it into your graveyard. Otherwise, put that card onto the battlefield. That creature gains haste. Sacrifice it at the beginning of the next end step.
-timing=enchantment
-oracle={2}{R/G}: Reveal the top card of your library. If it isn't a creature card, put it into your graveyard. Otherwise, put that card onto the battlefield. That creature gains haste. Sacrifice it at the beginning of the next end step.
