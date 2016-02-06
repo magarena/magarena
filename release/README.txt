@@ -77,18 +77,17 @@ melvin
 PalladiaMors
 ShawnieBoy
 
-- remove text mode
+- card images selected based on location: custom -> crops -> cards/tokens -> missing proxy
 
-- move preferred image size setting to preferences General tab,
-  use preferred image size for all card images
+- new option to download cropped art for use with proxy images
+
+- choose preferred image size from preferences General tab
+
+- eliminate UI freeze when showing proxy images for the first time
 
 - improve layout of deck statistics panel and duel decks screen for a more consistent UI
 
-- eliminate UI freeze on CardBuilder startup
-
-- new option to download cropped art for use with proxy images.
-
-- card images selected based on location: custom -> crops -> cards/tokens -> missing proxy
+- remove text mode
 
 - display split cards as '<first half> // <second half> (card name)' in explorer
 
