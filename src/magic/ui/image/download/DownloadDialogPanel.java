@@ -25,7 +25,7 @@ public class DownloadDialogPanel extends JPanel implements PropertyChangeListene
 
     public DownloadDialogPanel() {
 
-        setPreferredSize(new Dimension(440, 460));
+        setPreferredSize(new Dimension(440, 500));
         setBorder(
             BorderFactory.createCompoundBorder(
                 BorderFactory.createLineBorder(Color.DARK_GRAY),
