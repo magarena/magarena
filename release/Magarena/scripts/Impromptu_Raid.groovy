@@ -1,6 +1,6 @@
 [
     new MagicPermanentActivation(
-        new MagicActivationHints(MagicTiming.FirstMain),
+        new MagicActivationHints(MagicTiming.Token),
         "Reveal"
     ) {
         @Override
@@ -14,8 +14,8 @@
                 source,
                 this,
                 "PN reveals the top card of his or her library. If it isn't a creature card, "+
-                "PN puts it into his or her graveyard. Otherwise, PN puts it onto the battlefield."+
-        "That creature gains haste. Sacrifice it at the beginning of the next end step."
+                "PN puts it into his or her graveyard. Otherwise, PN puts it onto the battlefield. "+
+                "That creature gains haste. Sacrifice it at the beginning of the next end step."
             );
         }
 
@@ -27,13 +27,13 @@
                 game.doAction(new RevealAction(card));
                 if (card.hasType(MagicType.Creature) == false) {
                     game.doAction(new ShiftCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.Graveyard));
-                    game.logAppendMessage(player, "${player.getName()} puts ${card.getName()} into the graveyard.")
+                    game.logAppendMessage(player, "${player.getName()} puts ${card.getName()} into the graveyard.");
                 } else {
                     game.doAction(new ReturnCardAction(
                         MagicLocationType.OwnersLibrary,
                         card,
                         player,
-                        [MagicPlayMod.HASTE_UEOT, MagicPlayMod.SACRIFICE_AT_END_OF_TURN]
+                        [MagicPlayMod.HASTE, MagicPlayMod.SACRIFICE_AT_END_OF_TURN]
                     ));
                 }
             }
