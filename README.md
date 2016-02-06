@@ -50,10 +50,10 @@ Selecting the AI to play against:
 -  goonjamin for contributing a patch that makes Magarena easier to use on touchscreens
 -  Lodici for improving the duel screen and general UI enhancements
 -  frank for extensive play testing and bug reporting
--  PalladiaMors, PhazedOut, Aunukia, nado18, Erkcan Özcan, kdesmond, a.
--  benedict balbuena, spartan vi, Braullynn, mecheng, pcastellazzi, rasdel,
--  Tyrael, hong yie, ember hauler, Hector Marin, drooone, jericho.pumpkin,
--  Mike, and Guest for implementing new cards
+-  PalladiaMors, PhazedOut, Aunukia, nado18, Erkcan Özcan, kdesmond,
+   a.benedict balbuena, spartan vi, Braullynn, mecheng, pcastellazzi, rasdel,
+  Tyrael, hong yie, ember hauler, Hector Marin, drooone, jericho.pumpkin,
+  Mike, and Guest for implementing new cards
 -  ShawnieBoy for implementing new cards, the M logo, and general image enhancements
 -  PalladiaMors for the Portuguese UI translation
 -  kannikkiy for the Russian UI translation
