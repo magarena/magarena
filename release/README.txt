@@ -75,6 +75,7 @@ Release 1.70 (February 7, 2016)
 lodici
 melvin
 ShawnieBoy
+PalladiaMors
 
 - remove text mode
 
