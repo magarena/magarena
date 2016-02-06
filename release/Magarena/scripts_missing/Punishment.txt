@@ -5,5 +5,7 @@ rarity=R
 type=Sorcery
 cost={X}{B}{G}
 effect=Destroy each artifact, creature, and enchantment with converted mana cost X.
+split=Crime
 timing=main
+second_half
 oracle=Destroy each artifact, creature, and enchantment with converted mana cost X.
