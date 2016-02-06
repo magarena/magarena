@@ -110,6 +110,7 @@ ShawnieBoy
   * Firemind decks not shown if name contains invalid filename character (issue #607)
   * clicking on empty area of deck table increases count for selected card (issue #658)
   * crash when activating ability that discards specific cards as cost (issue #384)
+  * crash in MCTS AI when the manifest effect
   * "target creature and each other creature that shares a color with it" does
     not include target creature when it is colorless
   * three color lands appears in random two color decks (issue #646)
