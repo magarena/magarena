@@ -25,12 +25,11 @@ class PlayablePanel extends DownloadPanel {
     }
 
     @Override
-    public Stream<MagicCardDefinition> getCards(final DownloadMode aType) {
-        return aType == DownloadMode.ALL
-            ? CardDefinitions.getAllPlayableCardDefs().stream()
-            : getCards(
+    public Stream<MagicCardDefinition> getCards(final DownloadMode mode) {
+        return DownloadPanel.getCards(
                 CardDefinitions.getAllPlayableCardDefs(),
-                GeneralConfig.getInstance().getPlayableImagesDownloadDate()
+                GeneralConfig.getInstance().getPlayableImagesDownloadDate(),
+                mode
             );
     }
 

@@ -1,11 +1,9 @@
 package magic.ui.image.download;
 
-import magic.translate.UiString;
-
 enum DownloadMode {
 
-    MISSING(UiString.get(EnumStrings._S1)),
-    ALL(UiString.get(EnumStrings._S2));
+    CARDS("Card images"),
+    CROPS("Cropped images");
 
     private final String desc;
 

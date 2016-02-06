@@ -1,11 +1,11 @@
 package magic.ui.image.download;
 
+import java.io.File;
 import magic.ui.CardTextLanguage;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.Proxy;
 import java.net.URL;
-import java.nio.file.Files;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.concurrent.CancellationException;
@@ -16,9 +16,11 @@ import magic.data.CardImageFile;
 import magic.data.DownloadableFile;
 import magic.data.GeneralConfig;
 import magic.data.ImagesDownloadList;
+import magic.model.MagicCardDefinition;
 import magic.ui.MagicImages;
 import magic.ui.URLUtils;
 import magic.ui.MagicLogFile;
+import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
 
 class DownloadWorker extends SwingWorker<Void, Integer> {
@@ -33,19 +35,15 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
     private boolean updateDownloadDate = true;
     private boolean isLogging = true;
 
-    DownloadWorker(
-        IDownloadListener aListener,
-        CardTextLanguage aLanguage,
-        DownloadMode aDownloadMode) {
-
+    DownloadWorker(IDownloadListener aListener, CardTextLanguage aLanguage, DownloadMode aMode) {
         this.listener = aListener;
         this.textLanguage = aLanguage;
-        this.downloadMode = aDownloadMode;
+        this.downloadMode = aMode;
         this.proxy = GeneralConfig.getInstance().getProxy();
     }
 
     @Override
-    protected Void doInBackground() {
+    protected Void doInBackground() throws MalformedURLException {
         this.downloadList = ScanWorker.getImagesDownloadList((IScanListener)listener, downloadMode);
         doDownloadImages(textLanguage);
         return null;
@@ -76,7 +74,7 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
     }
 
     private boolean isLoggingOn() {
-        return isLogging && MagicSystem.isDevMode() && downloadMode == DownloadMode.MISSING;
+        return isLogging && MagicSystem.isDevMode();
     }
 
     /**
@@ -171,7 +169,31 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
         }
     }
 
-    private void doDownloadImages(CardTextLanguage textLang) {
+    private boolean doDownloadCroppedImage(CardImageFile imageFile) throws MalformedURLException {
+        final MagicCardDefinition card = imageFile.getCard();
+        final File local = MagicFileSystem.getCroppedCardImageFile(imageFile.getCard());
+        if (card.getImageURL().contains("magiccards.info/scans/")) {
+            final URL remote = new URL(card.getImageURL().replace("/scans/", "/crop/"));
+            if (URLUtils.isUrlValid(remote)) {
+                if (tryDefaultDownload(new DownloadableFile(local, remote))) {
+                    doLog(card.getCardTextName(), CardTextLanguage.ENGLISH, remote);
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    private void doDownloadCardImage(CardImageFile imageFile, CardTextLanguage textLang) throws MalformedURLException {
+//        if (!deleteLocalImageFileIfMissing(imageFile)) {
+//            return;
+//        }
+        if (textLang.isEnglish() || !downloadAlternateCardImage(imageFile, textLang)) {
+            downloadDefaultCardImage(imageFile);
+        }
+    }
+
+    private void doDownloadImages(CardTextLanguage textLang) throws MalformedURLException {
 
         initializeLogFiles();
         int fileCount = 0;
@@ -179,12 +201,11 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
         for (DownloadableFile dFile : downloadList) {
 
             final CardImageFile imageFile = (CardImageFile) dFile;
-
-            if (deleteLocalImageFileIfMissing(imageFile) == false)
-                continue; // with next DownloadableFile.
-
-            if (textLang.isEnglish() || !downloadAlternateCardImage(imageFile, textLang)) {
-                downloadDefaultCardImage(imageFile);
+            
+            if (downloadMode == DownloadMode.CROPS) {
+                doDownloadCroppedImage(imageFile);            
+            } else {
+                doDownloadCardImage(imageFile, textLang);
             }
 
             fileCount++;
@@ -202,23 +223,25 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
 
     }
 
-    /**
-     * If downloading missing images but local image file already exists then download was
-     * triggered by 'image_updated'. If unable to delete image file so that it becomes
-     * "missing" do not update 'imageDownloaderRunDate' so that image update remains pending.
-     */
-    private boolean deleteLocalImageFileIfMissing(DownloadableFile dFile) {
-        if (downloadMode == DownloadMode.MISSING) {
-            try {
-                Files.deleteIfExists(dFile.getLocalFile().toPath());
-            } catch (IOException ex) {
-                updateDownloadDate = false;
-                listener.setMessage(String.format("%s [%s]", ex.toString(), dFile.getFilename()));
-                return false;
-            }
-        }
-        return true;
-    }
+//    /**
+//     * If downloading missing images but local image file already exists then download was
+//     * triggered by 'image_updated'. If unable to delete image file so that it becomes
+//     * "missing" do not update 'imageDownloaderRunDate' so that image update remains pending.
+//     */
+//    private boolean deleteLocalImageFileIfMissing(CardImageFile imgFile) {
+//        final MagicCardDefinition card = imgFile.getCard();
+//        while (!MagicFileSystem.isCardImageMissing(card)) {
+//            final File aFile = MagicFileSystem.getCardImageFile(card);
+//            try {
+//                Files.deleteIfExists(aFile.toPath());
+//            } catch (IOException ex) {
+//                updateDownloadDate = false;
+//                listener.setMessage(String.format("%s [%s]", ex.toString(), imgFile.getFilename()));
+//                return false;
+//            }
+//        }
+//        return true;
+//    }
 
     private void resetProgressBar() {
         assert SwingUtilities.isEventDispatchThread();

@@ -7,18 +7,22 @@ import magic.utility.MagicFileSystem;
 
 public class CardImageFile extends DownloadableFile {
 
-    private final String cardName;
+    private final MagicCardDefinition card;
 
-    public CardImageFile(final MagicCardDefinition cdef) throws MalformedURLException {
+    public CardImageFile(final MagicCardDefinition aCard) throws MalformedURLException {
         super(
-            MagicFileSystem.getCardImageFile(cdef),
-            new URL(cdef.getImageURL())
+            MagicFileSystem.getCardImageFile(aCard),
+            new URL(aCard.getImageURL())
         );
-        cardName = cdef.getDistinctName();
+        this.card = aCard;
     }
 
     public String getCardName() {
-        return cardName;
+        return card.getDistinctName();
+    }
+
+    public MagicCardDefinition getCard() {
+        return card;
     }
 
 }

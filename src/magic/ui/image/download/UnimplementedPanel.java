@@ -25,12 +25,11 @@ class UnimplementedPanel extends DownloadPanel {
     }
 
     @Override
-    public Stream<MagicCardDefinition> getCards(final DownloadMode aType) {
-        return aType == DownloadMode.ALL
-            ? CardDefinitions.getMissingCards().stream()
-            : getCards(
+    public Stream<MagicCardDefinition> getCards(final DownloadMode mode) {
+        return DownloadPanel.getCards(
                 CardDefinitions.getMissingCards(),
-                GeneralConfig.getInstance().getMissingImagesDownloadDate()
+                GeneralConfig.getInstance().getMissingImagesDownloadDate(),
+                mode
             );
     }
 
