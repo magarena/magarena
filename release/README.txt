@@ -107,6 +107,7 @@ ShawnieBoy
   * effect: <permament> lose <ability>.
 
 - fixed the following bugs:
+  * unable to download card images
   * poor quality image scaling in CardsCanvas for sample hand, deck tiled screen, etc
   * Firemind decks not shown if name contains invalid filename character (issue #607)
   * clicking on empty area of deck table increases count for selected card (issue #658)
