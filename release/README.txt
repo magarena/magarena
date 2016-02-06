@@ -99,10 +99,10 @@ ShawnieBoy
   * ability: When <name> enters the battlefield, if its surge cost was paid, <effect>
   * ability: When you cast <name>, <effect>
   * effect: You may <cost>. If you don't, <effect>
-  * effect: Return <permanent> to its owner's hand at the beginning of the next end step
-  * effect: Shuffle your library
-  * effect: <permanent> gain <ability>
-  * effect: <permament> lose <ability>
+  * effect: Return <permanent> to its owner's hand at the beginning of the next end step.
+  * effect: Shuffle your library.
+  * effect: <permanent> gain <ability>.
+  * effect: <permament> lose <ability>.
 
 - fixed the following bugs:
   * poor quality image scaling in CardsCanvas for sample hand, deck tiled screen, etc
