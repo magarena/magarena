@@ -86,6 +86,8 @@ ShawnieBoy
 
 - eliminate UI freeze on CardBuilder startup
 
+- new option to download cropped art for use with proxy images.
+
 - card images selected based on location: custom -> crops -> cards/tokens -> missing proxy
 
 - display split cards as '<first half> // <second half> (card name)' in explorer
