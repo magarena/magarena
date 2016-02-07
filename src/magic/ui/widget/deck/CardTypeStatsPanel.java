@@ -47,7 +47,7 @@ class CardTypeStatsPanel extends JPanel {
             final JPanel panel = new JPanel(new MigLayout("flowx, gapy 2, gapx 0, insets 4 4 2 4"));
             panel.setBorder(BorderFactory.createMatteBorder(1, i==0?1:0, 1, 1, Color.GRAY));
             panel.setOpaque(false);
-            panel.add(iconLabel, "w 16!");
+            panel.add(iconLabel, "w 16!, h 16!");
             panel.add(totalLabel, "w 100%, wrap");
             panel.add(percentLabel, "center, spanx 2");
 
