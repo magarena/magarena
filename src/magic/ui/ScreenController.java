@@ -47,6 +47,7 @@ import magic.ui.screen.SettingsMenuScreen;
 import magic.ui.screen.StartScreen;
 import magic.ui.screen.interfaces.IAvatarImageConsumer;
 import magic.ui.screen.interfaces.IDeckConsumer;
+import magic.utility.MagicSystem;
 
 public final class ScreenController {
 
@@ -60,7 +61,7 @@ public final class ScreenController {
 
     public static MagicFrame getMainFrame() {
         if (mainFrame == null && java.awt.GraphicsEnvironment.isHeadless() == false) {
-            mainFrame = new MagicFrame(GeneralConfig.SOFTWARE_TITLE);
+            mainFrame = new MagicFrame(MagicSystem.SOFTWARE_TITLE);
         }
         return mainFrame;
     }

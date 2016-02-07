@@ -24,6 +24,7 @@ import magic.ui.MagicImages;
 import magic.translate.UiString;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicFileSystem;
+import magic.utility.MagicSystem;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -101,7 +102,7 @@ public class FiremindWorkerPanel extends JPanel {
                 CONFIG.save();
 
                 FiremindClient.setHostByEnvironment();
-                if (FiremindClient.checkMagarenaVersion(GeneralConfig.VERSION)){
+                if (FiremindClient.checkMagarenaVersion(MagicSystem.VERSION)){
                     setRunningState();
                     notifyStatusChanged(true);
                     firemindWorker = getFiremindWorker(CONFIG.getProxy());

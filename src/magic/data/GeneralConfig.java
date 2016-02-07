@@ -17,13 +17,8 @@ import magic.ui.duel.animation.AnimationFx;
 import magic.ui.message.MessageStyle;
 import magic.ui.prefs.ImageSizePresets;
 import magic.utility.MagicFileSystem;
-import magic.utility.MagicSystem;
 
 public class GeneralConfig {
-
-    public static final String VERSION = "1.71";
-    public static final String SOFTWARE_TITLE =
-            "Magarena " + GeneralConfig.VERSION + (MagicSystem.isDevMode() ? " [DEV MODE]" : "");
 
     private static final GeneralConfig INSTANCE = new GeneralConfig();
 

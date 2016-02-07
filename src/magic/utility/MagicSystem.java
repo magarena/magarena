@@ -13,7 +13,6 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.FutureTask;
-
 import magic.data.CardDefinitions;
 import magic.data.DeckGenerators;
 import magic.data.GeneralConfig;
@@ -25,14 +24,18 @@ import magic.utility.MagicFileSystem.DataPath;
 final public class MagicSystem {
     private MagicSystem() {}
 
+    public static final String VERSION = "1.71";
+
+    public static final String SOFTWARE_TITLE;
+    private static final boolean DEV_MODE;
     static {
-        System.setProperty("http.agent", GeneralConfig.SOFTWARE_TITLE);
+        DEV_MODE = Boolean.getBoolean("devMode") || Boolean.getBoolean("debug");
+        SOFTWARE_TITLE = "Magarena " + VERSION + (DEV_MODE ? " [DEV MODE]" : "");
+        System.setProperty("http.agent", SOFTWARE_TITLE);
     }
 
     public static final boolean IS_WINDOWS_OS = System.getProperty("os.name").toLowerCase().startsWith("windows");
     private static final ProgressReporter reporter = new ProgressReporter();
-
-    private static final boolean IS_DEV_MODE = Boolean.getBoolean("devMode") || Boolean.getBoolean("debug");
 
     // Load card definitions in the background so that it does not delay the
     // loading of the UI. Override done() to ensure exceptions not suppressed.
@@ -66,7 +69,7 @@ final public class MagicSystem {
     }
 
     public static boolean isDevMode() {
-        return IS_DEV_MODE;
+        return DEV_MODE;
     }
 
     public static boolean isDebugMode() {

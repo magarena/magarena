@@ -8,7 +8,7 @@ import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.SplashScreen;
 import magic.utility.ProgressReporter;
-import magic.data.GeneralConfig;
+import magic.utility.MagicSystem;
 
 public class SplashProgressReporter extends ProgressReporter {
 
@@ -42,7 +42,7 @@ public class SplashProgressReporter extends ProgressReporter {
             final Font f = new Font("Monospaced", Font.PLAIN, 16);
             g2d.setFont(f);
             // version
-            final String version = "Version " + GeneralConfig.VERSION;
+            final String version = "Version " + MagicSystem.VERSION;
             int w = g2d.getFontMetrics(f).stringWidth(version);
             int x = (splash.getSize().width / 2) - (w / 2);
             g2d.drawString(version, x, 17);

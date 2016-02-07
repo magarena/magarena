@@ -11,7 +11,6 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import magic.data.GeneralConfig;
 import magic.ui.MagicImages;
 import magic.ui.URLUtils;
 import magic.ui.MagicFrame;
@@ -58,7 +57,7 @@ public class AboutDialog extends MagicDialog implements ActionListener {
         descriptionLabel.setFont(FONT_BOLD12);
         aboutPanel.add(descriptionLabel);
 
-        final JLabel versionLabel = new JLabel("Version: " + GeneralConfig.VERSION);
+        final JLabel versionLabel = new JLabel("Version: " + MagicSystem.VERSION);
         versionLabel.setBounds(250, 105, 320, 25);
         versionLabel.setFont(FONT_PLAIN12);
         aboutPanel.add(versionLabel);

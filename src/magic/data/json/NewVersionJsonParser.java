@@ -5,6 +5,7 @@ import java.io.IOException;
 import magic.data.GeneralConfig;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
+import magic.utility.MagicSystem;
 import org.json.JSONObject;
 
 public final class NewVersionJsonParser {
@@ -50,7 +51,7 @@ public final class NewVersionJsonParser {
     }
 
     private static boolean isNewVersion(final String releaseValue) {
-        return releaseValue != null && versionCompare(releaseValue, GeneralConfig.VERSION) > 0;
+        return releaseValue != null && versionCompare(releaseValue, MagicSystem.VERSION) > 0;
     }
 
     //source: https://stackoverflow.com/questions/6701948/efficient-way-to-compare-version-strings-in-java
