@@ -70,6 +70,10 @@ Thanks to
 
 Thank you for your support and have fun!
 
+Release 1.71 (TBD)
+============
+
+
 Release 1.70 (February 7, 2016)
 ============
 lodici
