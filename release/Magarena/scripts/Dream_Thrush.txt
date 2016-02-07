@@ -6,7 +6,7 @@ type=Creature
 subtype=Bird
 cost={1}{U}
 pt=1/1
-ability=Flying;\
-        {T}: Target land becomes the basic land type of your choice until end of turn.
+ability=Flying
 timing=main
+requires_groovy_code
 oracle=Flying\n{T}: Target land becomes the basic land type of your choice until end of turn.
