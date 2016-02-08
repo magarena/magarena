@@ -1,14 +1,10 @@
-def TYPE = {
+def SUBTYPE = {
     final MagicColor color ->
     return new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
         @Override
         public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
             flags.removeAll();
             flags.add(color.getLandSubType());
-        }
-        @Override
-        public int getTypeFlags(final MagicPermanent permanent, final int flags) {
-            return MagicType.Basic.getMask() | MagicType.Land.getMask();
         }
     }
 };
@@ -26,7 +22,7 @@ def MANA = {
 
 def action = {
     final MagicGame game, final MagicEvent event ->
-    game.doAction(new AddStaticAction(event.getRefPermanent(), TYPE(event.getChosenColor())));
+    game.doAction(new AddStaticAction(event.getRefPermanent(), SUBTYPE(event.getChosenColor())));
     game.doAction(new AddStaticAction(event.getRefPermanent(), MANA(event.getChosenColor())));
 };
 
