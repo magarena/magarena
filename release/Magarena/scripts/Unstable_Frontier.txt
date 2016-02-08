@@ -3,7 +3,7 @@ image=http://magiccards.info/scans/en/cfx/145.jpg
 value=2.789
 rarity=U
 type=Land
-ability={T}: Add {C} to your mana pool.;\
-        {T}: Target land you control becomes the basic land type of your choice until end of turn.
+ability={T}: Add {C} to your mana pool.
 timing=land
+requires_groovy_code
 oracle={T}: Add {C} to your mana pool.\n{T}: Target land you control becomes the basic land type of your choice until end of turn.
