@@ -1,27 +1,33 @@
 def TYPE = {
     final MagicColor color ->
-        new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
-            @Override
-            public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
-                flags.removeAll();
-                flags.add(color.getLandSubType());
-            }
+    return new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
+        @Override
+        public void modSubTypeFlags(final MagicPermanent permanent, final Set<MagicSubType> flags) {
+            flags.removeAll();
+            flags.add(color.getLandSubType());
         }
+        @Override
+        public int getTypeFlags(final MagicPermanent permanent, final int flags) {
+            return MagicType.Basic.getMask() | MagicType.Land.getMask();
+        }
+    }
+};
 
-        new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
-            @Override
-            public void modAbilityFlags(
-                final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
-                final MagicManaType manaColor = color.getManaType();
-                permanent.loseAllAbilities();
-                permanent.addAbility(new MagicTapManaActivation(manaColor.getList(manaColor.getText())));
-            }
+def MANA = {
+    final MagicColor color ->
+    return new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
+        @Override
+        public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
+            permanent.loseAllAbilities();
+            permanent.addAbility(new MagicTapManaActivation(Collections.singletonList(color.getManaType())));
         }
+    }
 };
 
 def action = {
     final MagicGame game, final MagicEvent event ->
-        game.doAction(new AddStaticAction(event.getRefPermanent(), TYPE(event.getChosenColor())));
+    game.doAction(new AddStaticAction(event.getRefPermanent(), TYPE(event.getChosenColor())));
+    game.doAction(new AddStaticAction(event.getRefPermanent(), MANA(event.getChosenColor())));
 };
 
 [
