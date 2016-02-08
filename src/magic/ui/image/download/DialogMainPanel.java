@@ -40,6 +40,7 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
     private final ErrorPanel errorPanel = new ErrorPanel();
     private final ButtonsPanel buttonsPanel;
     private final HintPanel hintPanel;
+    private final JPanel downloadPanel = new JPanel();
 
     DialogMainPanel() {
 
@@ -92,13 +93,18 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
     private void setDownloadPanels() {
         downloadPanels.add(getPlayableDownloaderPanel());
         downloadPanels.add(getUnimplementedDownloaderPanel());
+        downloadPanel.setLayout(new MigLayout("flowy, insets 6 0 6 0, gapy 0"));
+        downloadPanel.setBorder(BorderFactory.createMatteBorder(1, 0, 1, 0, Color.GRAY));
+        for (DownloadPanel panel : downloadPanels) {
+            downloadPanel.add(panel, "w 100%");
+        }
     }
 
     private void refreshLayout() {
         removeAll();
         setLayout(new MigLayout("flowy, gap 0, insets 2 6 6 6"));
         add(optionsPanel, "w 100%, gapbottom 6");
-        add(getDownloadPanel(), "w 100%");
+        add(downloadPanel, "w 100%");
         add(errorPanel, "w 100%, h 100%, hidemode 3");
         add(hintPanel, "w 100%, h 100%, gaptop 10, hidemode 3");
         add(buttonsPanel, "w 100%, h 30!, pushy, aligny bottom");
@@ -107,15 +113,6 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
 
     private void setLookAndFeel() {
         backgroundButton.setEnabled(false);
-    }
-
-    private JPanel getDownloadPanel() {
-        final JPanel panel = new JPanel(new MigLayout("flowy, insets 6 0 6 0, gapy 0"));
-        panel.setBorder(BorderFactory.createMatteBorder(1, 0, 1, 0, Color.GRAY));
-        for (DownloadPanel downloadPanel : downloadPanels) {
-            panel.add(downloadPanel, "w 100%");
-        }
-        return panel;
     }
 
     private DownloadPanel getPlayableDownloaderPanel() {
