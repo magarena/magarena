@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Wizard
 cost={U}
 pt=1/1
-ability={T}: Target land you control becomes the basic land type of your choice until end of turn.
 timing=main
+requires_groovy_code=Unstable Frontier
 oracle={T}: Target land you control becomes the basic land type of your choice until end of turn.
