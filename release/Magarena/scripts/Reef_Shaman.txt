@@ -6,6 +6,6 @@ type=Creature
 subtype=Merfolk,Shaman
 cost={U}
 pt=0/2
-ability={T}: Target land becomes the basic land type of your choice until end of turn.
 timing=main
+requires_groovy_code=Dream Thrush
 oracle={T}: Target land becomes the basic land type of your choice until end of turn.
