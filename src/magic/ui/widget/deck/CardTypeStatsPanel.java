@@ -19,11 +19,11 @@ class CardTypeStatsPanel extends JPanel {
     }
 
     void setStats(CardStatistics statistics) {
-        
+
         removeAll();
 
         add(DeckStatisticsViewer.getCaptionLabel("Card type"), "w 100%, wrap, span");
-        
+
         for (int i = 0; i < CardStatistics.NR_OF_TYPES; i++) {
 
             final int total = statistics.totalTypes[i];
@@ -43,7 +43,7 @@ class CardTypeStatsPanel extends JPanel {
             final int percentage = (int) Math.round(((double) total / statistics.totalCards) * 100);
             final JLabel percentLabel = new JLabel(Integer.toString(percentage) + "%");
             percentLabel.setFont(FontsAndBorders.FONT0);
-            
+
             final JPanel panel = new JPanel(new MigLayout("flowx, gapy 2, gapx 0, insets 4 4 2 4"));
             panel.setBorder(BorderFactory.createMatteBorder(1, i==0?1:0, 1, 1, Color.GRAY));
             panel.setOpaque(false);

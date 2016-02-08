@@ -134,7 +134,7 @@ public class MagicPayManaCostChoice extends MagicChoice {
 
             final Set<MagicPermanent> validSources=builder.getManaSources(costManaType,!canSkip);
             MagicPermanent sourcePermanent = MagicPermanent.NONE;
-            
+
             if (canSkip && (validSources.size() == 1 || useAll)) {
                 // only one valid choice or must use all
                 sourcePermanent = validSources.iterator().next();

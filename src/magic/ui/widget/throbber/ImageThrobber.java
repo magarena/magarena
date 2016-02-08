@@ -127,7 +127,7 @@ public class ImageThrobber extends AbstractThrobber {
         // move origin to center of container before rotating.
         g2.translate(centerPoint.x, centerPoint.y);
         g2.rotate(radiansToRotate);
-        
+
         // draw image so that its center point = container center point.
         final int cx = displayImage.getWidth(null) / 2;
         final int cy = displayImage.getHeight(null) / 2;

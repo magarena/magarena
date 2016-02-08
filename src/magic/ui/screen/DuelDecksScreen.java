@@ -61,7 +61,7 @@ public class DuelDecksScreen
     private static final String _S14 = "%s's deck is illegal.\n\n%s";
     private static final String _S15 = "Generate another deck";
     private static final String _S16 = "Based on the duel settings, randomly selects an existing prebuilt deck or<br>generates a random deck for the selected player.";
-    
+
     private final DuelDecksPanel screenContent;
     private MagicGame nextGame = null;
     private final StartGameButton nextGameButton;

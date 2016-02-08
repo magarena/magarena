@@ -118,7 +118,7 @@ public class PreferencesDialog
     private SliderPanel messageDelaySlider;
     private JButton saveButton;
     private JButton cancelButton;
-    private JCheckBox mulliganScreenCheckbox;    
+    private JCheckBox mulliganScreenCheckbox;
     private JCheckBox customBackgroundCheckBox;
     private JCheckBox hideAIPromptCheckBox;
     private ColorButton rollOverColorButton;

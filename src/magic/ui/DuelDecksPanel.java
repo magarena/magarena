@@ -80,7 +80,7 @@ public class DuelDecksPanel extends TexturedPanel {
             ((PlayerPanel) tabbedPane.getTabComponentAt(oldIndex)).setSelected(false);
             sidebar.setDeck(getSelectedPlayer().getDeck());
         });
-        
+
         tabbedPane.setPreferredSize(new Dimension(800, 0));
 
         // layout screen components.
@@ -90,9 +90,9 @@ public class DuelDecksPanel extends TexturedPanel {
         add(tabbedPane, "h 100%, w 100%");
 
         ((PlayerPanel) tabbedPane.getTabComponentAt(1)).setSelected(false);
-        
+
         sidebar.setDeck(getSelectedPlayer().getDeck());
-        sidebar.setCard(getSelectedPlayer().getDeck().get(0));                
+        sidebar.setCard(getSelectedPlayer().getDeck().get(0));
     }
 
     String generateTitle(final MagicDeck deck) {

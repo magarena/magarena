@@ -38,7 +38,7 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
     private final ActionBarButton titlebarButton;
 
     public DeckStatisticsViewer() {
-        
+
         setOpaque(false);
 
         titlebarButton = getLogViewActionButton();
@@ -52,7 +52,7 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
         setLayout(new MigLayout("flowy, insets 0, gap 0"));
         refreshLayout();
     }
-    
+
     private void refreshLayout() {
         removeAll();
         add(titleBar, "w 100%");
@@ -71,7 +71,7 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
             : MagicImages.getIcon(MagicIcon.UPARROW_ICON)
         );
     }
-    
+
     private void switchStatsVisibility() {
         GeneralConfig config = GeneralConfig.getInstance();
         config.setStatsVisible(!config.isStatsVisible());

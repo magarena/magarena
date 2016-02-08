@@ -14,7 +14,7 @@ import magic.model.MagicCardDefinition;
 
 
 public class CardImageWorker extends SwingWorker<Image, Boolean> {
-    
+
     private final CardViewer viewer;
     private final MagicCardDefinition card;
     private final Dimension viewerSize;

@@ -201,9 +201,9 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
         for (DownloadableFile dFile : downloadList) {
 
             final CardImageFile imageFile = (CardImageFile) dFile;
-            
+
             if (downloadMode == DownloadMode.CROPS) {
-                doDownloadCroppedImage(imageFile);            
+                doDownloadCroppedImage(imageFile);
             } else {
                 doDownloadCardImage(imageFile, textLang);
             }

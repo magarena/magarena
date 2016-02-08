@@ -75,7 +75,7 @@ public class CardPanel extends JPanel {
         });
 
         setMinimumSize(new Dimension(cardViewer.getMinimumSize().width, 0));
-        
+
         setLayout(layout);
         layout.setLayoutConstraints("flowy, insets 0, gap 0");
         refreshLayout();

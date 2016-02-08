@@ -58,7 +58,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
         add(new JLabel());
         add(throbber, "alignx center");
         add(cardLabel, "w 100%");
-        
+
         setDefaultImage();
         setTransformCardListener();
     }
@@ -149,7 +149,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
             setCard(card);
         });
     }
-    
+
     void setImage(final Image aImage) {
         if (aImage == null) {
             isImagePending = true;

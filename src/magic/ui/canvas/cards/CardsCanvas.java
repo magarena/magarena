@@ -319,7 +319,7 @@ public class CardsCanvas extends JPanel {
         final int H = canvasCard.getBounds().height;
 
         g.drawImage(GraphicsUtils.scale(canvasCard.getFrontImage(), W, H), X, Y, null);
-        
+
         if (stackDuplicateCards) {
             drawCardCount(g, X, Y, W, H, canvasCard);
         }

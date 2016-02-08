@@ -23,7 +23,7 @@ class DeckTable extends JTable {
     // renderer that centers the contents of a column.
     private static final DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
     static { centerRenderer.setHorizontalAlignment(SwingConstants.CENTER); }
-    
+
     private final DeckTableModel tableModel;
     private final Color defaultForeColor;
 

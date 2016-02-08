@@ -63,7 +63,7 @@ public class SampleHandScreen
         this.content.refresh(getRandomHand(aDeck));
         super.setContent(this.content);
     }
-    
+
     private class ContentWorker extends SwingWorker<Void, String> {
 
         private final MagicDeck deck;

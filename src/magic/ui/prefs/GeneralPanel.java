@@ -24,7 +24,7 @@ class GeneralPanel extends JPanel {
     private static final String _S63 = "User Interface";
     private static final String _S64 = "Card Explorer & Deck Editor";
     private static final String _S83 = "Card images";
-    
+
     private final static GeneralConfig config = GeneralConfig.getInstance();
 
     private final TranslationPanel langPanel;
@@ -43,7 +43,7 @@ class GeneralPanel extends JPanel {
 
         imagesFolderChooser = new DirectoryChooser(config.getCardImagesPath());
         imagesFolderChooser.setFocusable(false);
-        imagesFolderChooser.addMouseListener(aListener);    
+        imagesFolderChooser.addMouseListener(aListener);
 
         preferredSizePanel = new PreferredSizePanel(aListener);
         preferredSizePanel.setFocusable(false);

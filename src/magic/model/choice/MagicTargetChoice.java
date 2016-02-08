@@ -283,7 +283,7 @@ public class MagicTargetChoice extends MagicChoice {
 
     public static final MagicTargetChoice A_CARD_FROM_HAND =
         new MagicTargetChoice("a card from your hand");
-    
+
     public static final MagicTargetChoice A_CARD_FROM_LIBRARY =
         new MagicTargetChoice("a card from your library");
 

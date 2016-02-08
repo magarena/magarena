@@ -14,12 +14,12 @@ public class DeckInfoPanel extends TexturedPanel {
     private final DeckDescriptionViewer descViewer;
 
     public DeckInfoPanel() {
-        
+
         this.statsViewer = new DeckStatisticsViewer();
         this.descViewer = new DeckDescriptionViewer();
-        
+
         final MigLayout mig = new MigLayout();
-        setLayout(mig);        
+        setLayout(mig);
         mig.setLayoutConstraints("flowy, insets 0, gap 0");
         mig.setColumnConstraints("[fill, grow]");
         mig.setRowConstraints("[][fill, grow]");

@@ -83,9 +83,9 @@ public class DeckTablePanel extends TexturedPanel {
         firePropertyChange(CP_CARD_LCLICKED, false, true);
 
     }
-    
+
     private void doRightClickAction() {
-        firePropertyChange(CP_CARD_RCLICKED, false, true);        
+        firePropertyChange(CP_CARD_RCLICKED, false, true);
     }
 
     private boolean isMouseRowSelected(MouseEvent e) {
