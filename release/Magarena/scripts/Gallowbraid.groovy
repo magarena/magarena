@@ -11,7 +11,7 @@
                 permanent,
                 new MagicMayChoice("Pay cumulative upkeep?"),
                 this,
-                "PN may\$ lose 1 life for each Age counter on SN. " +
+                "PN may\$ pay 1 life for each Age counter on SN. " +
                 "If he or she doesn't, sacrifice SN."
             );
         }
