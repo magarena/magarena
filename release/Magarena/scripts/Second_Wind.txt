@@ -9,5 +9,5 @@ ability=Enchant creature;\
         {T}: Tap enchanted creature.;\
         {T}: Untap enchanted creature.
 timing=aura
-enchant=pump,pos creature
+enchant=default,pos creature
 oracle=Enchant creature\n{T}: Tap enchanted creature.\n{T}: Untap enchanted creature.
