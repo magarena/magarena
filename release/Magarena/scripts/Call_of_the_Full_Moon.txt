@@ -10,4 +10,5 @@ ability=Enchant creature;\
         Enchanted creature gets +3/+2 and has trample.;\
         At the beginning of each upkeep, if a player cast two or more spells last turn, sacrifice SN.
 timing=aura
+enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature gets +3/+2 and has trample.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, sacrifice Call of the Full Moon.
