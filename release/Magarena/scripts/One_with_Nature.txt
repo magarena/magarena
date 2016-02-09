@@ -8,4 +8,5 @@ cost={G}
 ability=Enchant creature;\
         Whenever enchanted creature deals combat damage to a player, you may search your library for a basic land card, put that card onto the battlefield tapped, then shuffle your library.
 timing=aura
+enchant=pump,creature
 oracle=Enchant creature\nWhenever enchanted creature deals combat damage to a player, you may search your library for a basic land card, put that card onto the battlefield tapped, then shuffle your library.
