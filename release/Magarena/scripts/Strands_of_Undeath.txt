@@ -9,5 +9,5 @@ ability=Enchant creature;\
         When SN enters the battlefield, target player discards two cards.;\
         {B}: Regenerate enchanted creature.
 timing=aura
-enchant=pump,pos creature
+enchant=regen,pos creature
 oracle=Enchant creature\nWhen Strands of Undeath enters the battlefield, target player discards two cards.\n{B}: Regenerate enchanted creature.

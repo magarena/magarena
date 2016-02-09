@@ -9,6 +9,6 @@ ability=Flash;\
         Enchant creature;\
         At the beginning of your upkeep, you lose 1 life.;\
         {0}: Regenerate enchanted creature. Activate this ability with AI no more than three times each turn.
-enchant=pump,pos creature
+enchant=regen,pos creature
 timing=pumpFlash
 oracle=Flash\nEnchant creature\nAt the beginning of your upkeep, you lose 1 life.\n{0}: Regenerate enchanted creature.

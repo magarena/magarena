@@ -7,6 +7,6 @@ subtype=Aura
 cost={1}{G}
 ability=Enchant creature;\
         {G}: Regenerate enchanted creature.
-enchant=pump,pos creature
+enchant=regen,pos creature
 timing=aura
 oracle=Enchant creature\n{G}: Regenerate enchanted creature.

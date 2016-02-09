@@ -8,6 +8,6 @@ cost={1}{G}
 ability=Flash;\
         Enchant creature;\
         {1}{G}: Regenerate enchanted creature.
-enchant=pump,pos creature
+enchant=regen,pos creature
 timing=pumpFlash
 oracle=Flash\nEnchant creature\n{1}{G}: Regenerate enchanted creature.
