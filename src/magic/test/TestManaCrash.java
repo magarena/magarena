@@ -10,7 +10,7 @@ import magic.ai.MagicAIImpl;
 
 class TestManaCrash extends TestGameBuilder {
     public MagicGame getGame() {
-        final MagicDuel duel=createDuel(MagicAIImpl.MMABC, 6);
+        final MagicDuel duel=createDuel(MagicAIImpl.MCTS, 6);
         final MagicGame game=duel.nextGame();
         game.setPhase(MagicUpkeepPhase.getInstance());
         final MagicPlayer player=game.getPlayer(0);
@@ -20,25 +20,20 @@ class TestManaCrash extends TestGameBuilder {
 
         P.setLife(20);
         addToLibrary(P, "Forest", 20);
-        addToHand(P, "Forest", 1);
-        addToHand(P, "Axebane Stag", 1);
-        addToHand(P, "Forest", 1);
-        addToHand(P, "Brushstrider", 1);
-        addToHand(P, "Yavimaya Scion", 1);
-        addToHand(P, "Temple of Plenty", 1);
-        addToHand(P, "Reaping the Rewards", 1);
+        addToHand(P, "Kitchen Finks", 1);
+        addToHand(P, "True Conviction", 1);
+        addToHand(P, "Graypelt Refuge", 1);
+        addToHand(P, "Temple Garden", 1);
+        addToHand(P, "Plains", 1);
 
         P = opponent;
 
         P.setLife(20);
         addToLibrary(P, "Forest", 20);
+        addToHand(P, "Blazing Specter", 1);
+        addToHand(P, "Liliana's Caress", 1);
+        addToHand(P, "Sign in Blood", 1);
         addToHand(P, "Mountain", 1);
-        addToHand(P, "Active Volcano", 1);
-        addToHand(P, "Elvish Handservant", 1);
-        addToHand(P, "Jayemdae Tome", 1);
-        addToHand(P, "Savage Lands", 1);
-        addToHand(P, "Forest", 1);
-        addToHand(P, "Rupture Spire", 1);
 
         return game;
     }
