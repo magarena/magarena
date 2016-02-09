@@ -8,4 +8,5 @@ cost={2}{U}{U}
 ability=Enchant land;\
         Enchanted land has "{T}, Discard a card: Gain control of target creature until end of turn."
 timing=aura
+enchant=pump,pos land
 oracle=Enchant land\nEnchanted land has "{T}, Discard a card: Gain control of target creature until end of turn."
