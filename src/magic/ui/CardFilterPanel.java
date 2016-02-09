@@ -1,7 +1,5 @@
 package magic.ui;
 
-import magic.translate.UiString;
-import magic.translate.StringContext;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Cursor;
@@ -21,6 +19,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JScrollPane;
+
 import magic.data.CardDefinitions;
 import magic.data.MagicFormat;
 import magic.data.MagicPredefinedFormat;
@@ -32,6 +31,8 @@ import magic.model.MagicManaCost;
 import magic.model.MagicRarity;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
+import magic.translate.StringContext;
+import magic.translate.UiString;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.ButtonControlledPopup;
 import magic.ui.widget.FontsAndBorders;
@@ -101,7 +102,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     private JRadioButton[] statusFilterChoices;
     // sets
     private ButtonControlledPopup setsPopup;
-    private JCheckBox[] setsCheckBoxes;
+    public JCheckBox[] setsCheckBoxes;
     private JRadioButton[] setsFilterChoices;
     // cube
     private ButtonControlledPopup cubePopup;

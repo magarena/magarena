@@ -10,16 +10,16 @@ import java.util.Collections;
 import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
-import magic.utility.MagicSystem;
+
 import magic.data.CardDefinitions;
 import magic.data.MagicIcon;
-import magic.ui.MagicImages;
 import magic.data.MagicSetDefinitions;
-import magic.ui.explorer.ExplorerPanel;
-import magic.ui.MagicFrame;
-import magic.ui.ScreenOptionsOverlay;
 import magic.translate.UiString;
+import magic.ui.MagicFrame;
+import magic.ui.MagicImages;
 import magic.ui.MagicLogs;
+import magic.ui.ScreenOptionsOverlay;
+import magic.ui.explorer.ExplorerPanel;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IOptionsMenu;
 import magic.ui.screen.interfaces.IStatusBar;
@@ -29,6 +29,7 @@ import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.MenuPanel;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
+import magic.utility.MagicSystem;
 
 @SuppressWarnings("serial")
 public class CardExplorerScreen
@@ -93,6 +94,21 @@ public class CardExplorerScreen
                     }
                 )
             );
+            buttons.add(new ActionBarButton(
+                    MagicImages.getIcon(MagicIcon.STATS_ICON),
+                    "Save Statistics [DevMode Only]", "Creates CardStatistics.txt to view current card completion.",
+                    new AbstractAction() {
+                        @Override
+                        public void actionPerformed(final ActionEvent e) {
+                            try {
+                                saveCardStatistics();
+                            } catch (IOException e1) {
+                                throw new RuntimeException(e1);
+                            }
+                        }
+                    }
+                )
+            );
         }
         return buttons;
     }
@@ -102,11 +118,29 @@ public class CardExplorerScreen
         Collections.sort(missingCards);
         final Path savePath = MagicFileSystem.getDataPath(DataPath.LOGS).resolve("CardsMissingInMagarena.txt");
         try (final PrintWriter writer = new PrintWriter(savePath.toFile())) {
-            for (final String cardName : missingCards) {
-                writer.println(cardName);
-            }
+            missingCards.forEach(writer::println);
         }
         Desktop.getDesktop().open(MagicFileSystem.getDataPath(DataPath.LOGS).toFile());
+    }
+
+    private void saveCardStatistics() throws IOException {
+        ArrayList<String> allSetInfo = new ArrayList<String>();
+            for (int i = 0; i < content.filterPanel.setsCheckBoxes.length; i++) {
+                content.filterPanel.resetFilters();
+                content.filterPanel.setsCheckBoxes[i].setSelected(true);
+                content.updateCardPool();
+                String setText = content.filterPanel.setsCheckBoxes[i].getText()+ "      " + content.generatePoolTitle();
+                allSetInfo.add(setText);
+                System.out.println(content.filterPanel.setsCheckBoxes[i].getText());
+            }
+
+        final Path savePath = MagicFileSystem.getDataPath(DataPath.LOGS).resolve("CardStatistics.txt");
+        try (final PrintWriter writer = new PrintWriter(savePath.toFile())) {
+            allSetInfo.forEach(writer::println);
+        }
+        Desktop.getDesktop().open(MagicFileSystem.getDataPath(DataPath.LOGS).toFile());
+        content.filterPanel.resetFilters();
+        content.updateCardPool();
     }
 
     @Override

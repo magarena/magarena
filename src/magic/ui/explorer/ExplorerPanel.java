@@ -33,7 +33,7 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
     private static final int FILTERS_PANEL_HEIGHT = 88; // pixels
 
     private CardTable cardPoolTable;
-    private CardFilterPanel filterPanel;
+    public CardFilterPanel filterPanel;
     private List<MagicCardDefinition> cardPoolDefs;
     private ExplorerSidebarPanel sideBarPanel;
     private final MigLayout migLayout = new MigLayout();
@@ -87,7 +87,7 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
 
     }
 
-    private String generatePoolTitle() {
+    public String generatePoolTitle() {
         final int total = filterPanel.getTotalCardCount();
         return String.format("%s %s      %s %s      %s %s",
                 UiString.get(_S1),

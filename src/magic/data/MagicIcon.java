@@ -36,6 +36,7 @@ public enum MagicIcon {
     SORCERIES_ICON("w_sorceries.png"),
     PLANESWALKERS_ICON("w_planeswalkers.png"),
     SPELLS_ICON("w_spells.png"),
+    STATS_ICON("w_stats.png"),
     EDIT_ICON("w_edit.png"),
     HELP_ICON("w_help.png"),
     OPEN_ICON("w_open.png"),
