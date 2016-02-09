@@ -12,7 +12,7 @@ class TestManaCrash extends TestGameBuilder {
     public MagicGame getGame() {
         final MagicDuel duel=createDuel(MagicAIImpl.MCTS, 6);
         final MagicGame game=duel.nextGame();
-        game.setPhase(MagicUpkeepPhase.getInstance());
+        game.setPhase(MagicMulliganPhase.getInstance());
         final MagicPlayer player=game.getPlayer(0);
         final MagicPlayer opponent=game.getPlayer(1);
 
