@@ -110,6 +110,10 @@ public class ExceptionReport {
             buildCard("Graveyard", card, report);
         }
 
+        for (final MagicCard card : player.getLibrary().getCardsFromTop(7)) {
+            buildCard("Library", card, report);
+        }
+
         for (final MagicPermanent permanent : player.getPermanents()) {
             buildPermanent(permanent, report);
         }
