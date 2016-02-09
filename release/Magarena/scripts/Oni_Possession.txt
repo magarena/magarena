@@ -7,7 +7,8 @@ subtype=Aura
 cost={2}{B}
 ability=Enchant creature;\
         At the beginning of your upkeep, sacrifice a creature.;\
-        Enchanted creature gets +3/+3 and has trample.;\
-        Enchanted creature is a Demon Spirit.
+        Enchanted creature gets +3/+3 and has trample.
 timing=aura
+enchant=pump,pos creature
+requires_groovy_code
 oracle=Enchant creature\nAt the beginning of your upkeep, sacrifice a creature.\nEnchanted creature gets +3/+3 and has trample.\nEnchanted creature is a Demon Spirit.
