@@ -9,4 +9,5 @@ cost={3}{W}
 ability=Enchant nonland permanent;\
         Enchanted permanent can't attack or block, and its activated abilities can't be activated.
 timing=aura
+enchant=can't attack or block,neg nonland permanent
 oracle=Enchant nonland permanent\nEnchanted permanent can't attack or block, and its activated abilities can't be activated.
