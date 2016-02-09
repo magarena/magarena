@@ -8,5 +8,5 @@ cost={U}{U}
 ability=Enchant creature;\
         {1}, Tap an untapped creature you control: Untap enchanted creature.
 timing=aura
-enchant=default,pos creature
+enchant=untap,pos creature
 oracle=Enchant creature\n{1}, Tap an untapped creature you control: Untap enchanted creature.
