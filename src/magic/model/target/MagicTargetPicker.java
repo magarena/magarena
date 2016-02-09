@@ -1,14 +1,14 @@
 package magic.model.target;
 
-import magic.model.MagicGame;
-import magic.model.MagicPermanent;
-import magic.model.MagicPlayer;
-import magic.model.event.MagicEvent;
-
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+
+import magic.model.MagicGame;
+import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
+import magic.model.event.MagicEvent;
 
 public abstract class MagicTargetPicker<T> {
 
@@ -67,6 +67,7 @@ public abstract class MagicTargetPicker<T> {
         register("power", MagicPowerTargetPicker.create());
         register("toughness", MagicToughnessTargetPicker.create());
         register("default", MagicDefaultPermanentTargetPicker.create());
+        register("regen", MagicRegenerateTargetPicker.create());
     }
 
     public MagicTargetPicker<MagicPermanent> create(final String arg) {
