@@ -9,4 +9,5 @@ ability=Enchant creature;\
         {2}{U}: Untap enchanted creature.;\
         Totem armor
 timing=aura
+enchant=untap,pos creature
 oracle=Enchant creature\n{2}{U}: Untap enchanted creature.\nTotem armor
