@@ -81,6 +81,7 @@ public class ExceptionReport {
         report.append("  Phase : ").append(game.getPhase().getType());
         report.append("  Step : ").append(game.getStep());
         report.append("  Player : ").append(game.getTurnPlayer());
+        report.append("  AI : ").append(game.getPlayer(1).getAiProfile().getAiType());
         report.append("  Score : ").append(game.getScore());
         report.append("\n");
 
