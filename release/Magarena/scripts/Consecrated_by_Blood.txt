@@ -7,6 +7,7 @@ type=Enchantment
 subtype=Aura
 cost={2}{B}{B}
 ability=Enchant creature;\
-        Enchanted creature gets +2/+2 and has flying and "Sacrifice two other creatures: Regenerate this creature."
+        Enchanted creature gets +2/+2 and has flying and "Sacrifice two other creatures: Regenerate SN."
 timing=aura
+enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature gets +2/+2 and has flying and "Sacrifice two other creatures: Regenerate this creature."
