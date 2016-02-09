@@ -59,6 +59,7 @@ public abstract class MagicTargetPicker<T> {
         register("can't block", new MagicNoCombatTargetPicker(false,true,true));
         register("defender", new MagicNoCombatTargetPicker(true,false,true));
         register("tap", new MagicNoCombatTargetPicker(true,true,false));
+        register("untap", MagicTapTargetPicker.Untap);
         register("indestructible", MagicIndestructibleTargetPicker.create());
         register("must attack", MagicMustAttackTargetPicker.create());
         register("lose flying", MagicLoseFlyingTargetPicker.create());
