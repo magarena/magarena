@@ -23,6 +23,7 @@ class TestTarmogoyf extends TestGameBuilder {
         addToLibrary(P, "Mountain", 22);
         createPermanent(P, "Mountain", 5);
         createPermanent(P, "Plains", 5);
+        createPermanent(P, "Mind Stone", 1);
         addToHand(P, "Lightning Bolt");
         addToGraveyard(P, "Mountain");
 
