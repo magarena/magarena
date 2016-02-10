@@ -6,6 +6,6 @@ type=Creature
 subtype=Goblin,Warrior
 cost={2}{R}{R}
 pt=2/2
-ability={T}: Flip a coin. If you win the flip, SN deals 2 damage to target creature or player. If you lose the flip, SN deals 2 damage to itself.
+ability={T}: Flip a coin. If you win the flip, SN deals 2 damage to target creature or player. If you lose the flip, SN deals 2 damage to SN.
 timing=main
 oracle={T}: Flip a coin. If you win the flip, Goblin Bangchuckers deals 2 damage to target creature or player. If you lose the flip, Goblin Bangchuckers deals 2 damage to itself.
