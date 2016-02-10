@@ -6,12 +6,16 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import magic.data.CardStatistics;
+import magic.translate.UiString;
 import magic.ui.MagicImages;
 import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class CardTypeStatsPanel extends JPanel {
+
+    // translatable strings    
+    private static final String _S1 = "Card type";
 
     CardTypeStatsPanel() {
         setLayout(new MigLayout("insets 0, gap 0, center"));
@@ -22,7 +26,7 @@ class CardTypeStatsPanel extends JPanel {
 
         removeAll();
 
-        add(DeckStatisticsViewer.getCaptionLabel("Card type"), "w 100%, wrap, span");
+        add(DeckStatisticsViewer.getCaptionLabel(UiString.get(_S1)), "w 100%, wrap, span");
 
         for (int i = 0; i < CardStatistics.NR_OF_TYPES; i++) {
 

@@ -19,6 +19,7 @@ class CardColorStatsPanel extends JPanel {
     // translatable strings
     private static final String _S3 = "Mono: %d  •  Multi: %d  •  Colorless: %d";
     private static final String _S4 = "%d  •  Mono: %d  •  Lands: %d";
+    private static final String _S1 = "Color distribution";
 
     private final List<JLabel> lines = new ArrayList<>();
 
@@ -61,7 +62,7 @@ class CardColorStatsPanel extends JPanel {
         }
 
         removeAll();
-        add(DeckStatisticsViewer.getCaptionLabel("Color distribution"), "w 100%");
+        add(DeckStatisticsViewer.getCaptionLabel(UiString.get(_S1)), "w 100%");
         add(panel, "w 100%");
         revalidate();
     }
