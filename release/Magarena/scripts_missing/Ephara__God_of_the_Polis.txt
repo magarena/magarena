@@ -7,7 +7,7 @@ subtype=God
 cost={2}{W}{U}
 pt=6/5
 ability=Indestructible;\
-        As long as your devotion to white and blue is less than seven, Ephara isn't a creature.;\
+        As long as your devotion to white and blue is less than seven, SN isn't a creature.;\
         At the beginning of each upkeep, if you had another creature enter the battlefield under your control last turn, draw a card.
 timing=main
 oracle=Indestructible\nAs long as your devotion to white and blue is less than seven, Ephara isn't a creature.\nAt the beginning of each upkeep, if you had another creature enter the battlefield under your control last turn, draw a card.

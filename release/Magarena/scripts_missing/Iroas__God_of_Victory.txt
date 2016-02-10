@@ -7,7 +7,7 @@ subtype=God
 cost={2}{R}{W}
 pt=7/4
 ability=Indestructible;\
-        As long as your devotion to red and white is less than seven, Iroas isn't a creature.;\
+        As long as your devotion to red and white is less than seven, SN isn't a creature.;\
         Creatures you control have menace.;\
         Prevent all damage that would be dealt to attacking creatures you control.
 timing=main
