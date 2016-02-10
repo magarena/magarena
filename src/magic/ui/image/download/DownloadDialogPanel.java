@@ -27,7 +27,7 @@ public class DownloadDialogPanel extends TexturedPanel implements PropertyChange
 
     public DownloadDialogPanel() {
 
-        setPreferredSize(new Dimension(440, 500));
+        setPreferredSize(new Dimension(460, 520));
         setBorder(
             BorderFactory.createCompoundBorder(
                 BorderFactory.createLineBorder(Color.DARK_GRAY),
