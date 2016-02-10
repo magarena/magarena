@@ -721,6 +721,13 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicPermanentFilterImpl AURA_ATTACHED_TO_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+            return target.hasSubType(MagicSubType.Aura) &&
+                target.getEnchantedPermanent().hasType(MagicType.Creature);
+        }
+    };
+
     public static final MagicPermanentFilterImpl SWAMP = permanent(MagicSubType.Swamp, Control.Any);
 
     public static final MagicPermanentFilterImpl SWAMP_YOU_CONTROL = permanent(MagicSubType.Swamp, Control.You);
@@ -2793,6 +2800,7 @@ public class MagicTargetFilterFactory {
         single.put("untapped land", UNTAPPED_LAND);
         single.put("non-Aura enchantment", NON_AURA_ENCHANTMENT);
         single.put("attacking Human", ATTACKING_HUMAN);
+        single.put("Aura attached to a creature", AURA_ATTACHED_TO_CREATURE);
 
         // <color|type> spell
         single.put("spell", SPELL);
