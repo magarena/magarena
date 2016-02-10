@@ -28,6 +28,10 @@ public abstract class TestGameBuilder {
         }
     }
 
+    public static void addToGraveyard(final MagicPlayer player, final String name) {
+        addToGraveyard(player, name, 1);
+    }
+
     public static void addToExile(final MagicPlayer player,final String name,final int count) {
         final MagicCardDefinition cardDefinition=CardDefinitions.getCard(name);
         for (int c=count;c>0;c--) {
