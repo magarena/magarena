@@ -436,6 +436,12 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicPermanentFilterImpl NONLAND_CREATURE=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            return !target.isLand() && target.isCreature();
+        }
+    };
+
     public static final MagicPermanentFilterImpl NONLAND_PERMANENT=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
             return !target.isLand();
@@ -2594,6 +2600,7 @@ public class MagicTargetFilterFactory {
         single.put("nonwhite, nonblack creature", NONWHITE_NONBLACK_CREATURE);
         single.put("nonred creature", NONRED_CREATURE);
         single.put("nonartifact creature", NONARTIFACT_CREATURE);
+        single.put("nonland creature", NONLAND_CREATURE);
         single.put("non-Vampire, non-Werewolf, non-Zombie creature", NONVAMPIRE_NONWEREWOLF_NONZOMBIE_CREATURE);
         single.put("Skeleton, Vampire, or Zombie", SKELETON_VAMPIRE_OR_ZOMBIE);
         single.put("noncreature", NONCREATURE);
