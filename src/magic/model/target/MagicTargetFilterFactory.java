@@ -785,6 +785,15 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicPermanentFilterImpl ONE_ONE_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() &&
+                target.isController(player) &&
+                target.getPower() == 1 &&
+                target.getToughness() == 1;
+        }
+    };
+
     public static final MagicPermanentFilterImpl BLACK_OR_RED_CREATURE_YOU_CONTROL = creatureOr(MagicColor.Black, MagicColor.Red, Control.You);
 
     public static final MagicPermanentFilterImpl BLUE_OR_BLACK_CREATURE_YOU_CONTROL = creatureOr(MagicColor.Blue, MagicColor.Black, Control.You);
@@ -2497,6 +2506,7 @@ public class MagicTargetFilterFactory {
         single.put("nonlegendary green creature card with converted mana cost 3 or less from your library", NON_LEGENDARY_GREEN_CREATURE_CARD_WITH_CMC_LEQ_3_FROM_LIBRARY);
 
         // <color|type|subtype> creature you control
+        single.put("1/1 creature you control", ONE_ONE_CREATURE_YOU_CONTROL);
         single.put("black or red creature you control", BLACK_OR_RED_CREATURE_YOU_CONTROL);
         single.put("blue or black creature you control", BLUE_OR_BLACK_CREATURE_YOU_CONTROL);
         single.put("red or green creature you control", RED_OR_GREEN_CREATURE_YOU_CONTROL);
