@@ -1,17 +1,15 @@
 package magic.ui;
 
-import magic.ui.utility.MagicStyle;
-import magic.ui.utility.GraphicsUtils;
-import magic.data.GeneralConfig;
-import magic.ui.theme.Theme;
-
-import javax.swing.JPanel;
-
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.LayoutManager;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
+import javax.swing.JPanel;
+import magic.data.GeneralConfig;
+import magic.ui.theme.Theme;
+import magic.ui.utility.GraphicsUtils;
+import magic.ui.utility.MagicStyle;
 
 @SuppressWarnings("serial")
 public class BackgroundPanel extends JPanel {
