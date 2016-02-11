@@ -56,7 +56,7 @@ public class MagicFrame extends JFrame implements IImageDragDropListener {
     public static final boolean MAC_OS_X = System.getProperty("os.name").toLowerCase().startsWith("mac os x");
 
     private final GeneralConfig config;
-    private final BackgroundPanel contentPanel;
+    private final MagicFramePanel contentPanel;
     private MagicDuel duel;
 
     public MagicFrame(final String frameTitle) {
@@ -74,7 +74,7 @@ public class MagicFrame extends JFrame implements IImageDragDropListener {
         setSizeAndPosition();
 
         // Setup content container with a painted background based on theme.
-        contentPanel = new BackgroundPanel();
+        contentPanel = new MagicFramePanel();
         contentPanel.setOpaque(true);
         setContentPane(contentPanel);
         setF10KeyInputMap();

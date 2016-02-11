@@ -12,13 +12,13 @@ import magic.ui.utility.MagicStyle;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
-class BackgroundPanel extends JPanel {
+class MagicFramePanel extends JPanel {
 
     private Theme activeTheme;
     private BufferedImage image;
     private boolean stretchTexture;
 
-    BackgroundPanel() {
+    MagicFramePanel() {
         setLayout(new MigLayout("insets 0, gap 0, nogrid, novisualpadding"));
         setBackgroundImage();
     }
