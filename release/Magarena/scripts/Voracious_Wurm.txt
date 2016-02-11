@@ -6,6 +6,6 @@ type=Creature
 subtype=Wurm
 cost={1}{G}
 pt=2/2
-ability=SN enters the battlefield with X +1/+1 counters on it, where X is the amount of life you've gained this turn.
 timing=main
+requires_groovy_code
 oracle=Voracious Wurm enters the battlefield with X +1/+1 counters on it, where X is the amount of life you've gained this turn.
