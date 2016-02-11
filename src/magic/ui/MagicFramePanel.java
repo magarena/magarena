@@ -74,9 +74,8 @@ class MagicFramePanel extends JPanel {
         if (activeTheme != MagicStyle.getTheme()) {
             activeTheme = MagicStyle.getTheme();
             image = getBackgroundImage();
-            stretchTexture =
-                    activeTheme.getValue(Theme.VALUE_BACKGROUND_STRETCH) == 1 ||
-                    GeneralConfig.getInstance().isCustomBackground();
+            stretchTexture = activeTheme.getValue(Theme.VALUE_BACKGROUND_STRETCH) == 1
+                || GeneralConfig.getInstance().isCustomBackground();
             repaint();
         }
     }
@@ -87,29 +86,29 @@ class MagicFramePanel extends JPanel {
             : activeTheme.getBackgroundImage();
     }
 
-    private void paintZoneStretch(final Graphics g,final BufferedImage aImage,final Rectangle rect) {
-        final int iw=aImage.getWidth();
-        final int ih=aImage.getHeight();
-        final int iw2=ih*rect.width/rect.height;
+    private void paintZoneStretch(final Graphics g, final BufferedImage aImage, final Rectangle rect) {
+        final int iw = aImage.getWidth();
+        final int ih = aImage.getHeight();
+        final int iw2 = ih * rect.width / rect.height;
         final Rectangle imageRect;
-        if (iw2<=iw) {
-            imageRect=new Rectangle((iw-iw2)/2,0,iw2,ih);
+        if (iw2 <= iw) {
+            imageRect = new Rectangle((iw - iw2) / 2, 0, iw2, ih);
         } else {
-            final int ih2=iw*rect.height/rect.width;
-            imageRect=new Rectangle(0,(ih-ih2)/2,iw,ih2);
+            final int ih2 = iw * rect.height / rect.width;
+            imageRect = new Rectangle(0, (ih - ih2) / 2, iw, ih2);
         }
-        g.drawImage(aImage,rect.x,rect.y,rect.x+rect.width,rect.y+rect.height,
-                imageRect.x,imageRect.y,imageRect.x+imageRect.width,imageRect.y+imageRect.height,this);
+        g.drawImage(aImage, rect.x, rect.y, rect.x + rect.width, rect.y + rect.height,
+            imageRect.x, imageRect.y, imageRect.x + imageRect.width, imageRect.y + imageRect.height, this);
     }
 
-    private void paintZoneTile(final Graphics g,final BufferedImage aImage,final Rectangle rect) {
-        final int imageWidth=aImage.getWidth();
-        final int imageHeight=aImage.getHeight();
-        final int x2=rect.x+rect.width;
-        final int y2=rect.y+rect.height;
-        for (int y=rect.y;y<y2;y+=imageHeight) {
-            for (int x=rect.x;x<x2;x+=imageWidth) {
-                g.drawImage(aImage,x,y,this);
+    private void paintZoneTile(final Graphics g, final BufferedImage aImage, final Rectangle rect) {
+        final int imageWidth = aImage.getWidth();
+        final int imageHeight = aImage.getHeight();
+        final int x2 = rect.x + rect.width;
+        final int y2 = rect.y + rect.height;
+        for (int y = rect.y; y < y2; y += imageHeight) {
+            for (int x = rect.x; x < x2; x += imageWidth) {
+                g.drawImage(aImage, x, y, this);
             }
         }
     }
