@@ -5,6 +5,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.EnumSet;
 import java.util.Set;
+import magic.translate.UiString;
 
 /**
  * Ways to group decks.
@@ -17,10 +18,10 @@ public enum DeckType {
     // TODO: Favourite("Favourite"),           // most used decks
     // TODO: Bookmarked("Bookmarked"),         // decks tagged by player
     // TODO: Recent("Recently Played"),        // last 20 most recently played decks
-    Random("Random"),
-    Preconstructed("Prebuilt"),
-    Custom("Player"),
-    Firemind("Firemind Top Decks")
+    Random(DeckTypeString._S1),
+    Preconstructed(DeckTypeString._S2),
+    Custom(DeckTypeString._S3),
+    Firemind(DeckTypeString._S4)
     ;
 
     public static final Set<DeckType> PREDEFINED_DECKS = EnumSet.range(Preconstructed, Firemind);
@@ -28,7 +29,7 @@ public enum DeckType {
     private final String deckTypeCaption;
 
     private DeckType(final String caption) {
-        this.deckTypeCaption = caption;
+        this.deckTypeCaption = UiString.get(caption);
     }
 
     @Override
