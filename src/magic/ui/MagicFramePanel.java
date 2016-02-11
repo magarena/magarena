@@ -59,11 +59,10 @@ class MagicFramePanel extends JPanel {
     }
 
     private void drawNewImageAndCache(final Graphics g, Dimension newSize) {
-        Rectangle rect = new Rectangle(0, 0, newSize.width, newSize.height);
         if (stretchTexture) {
-            drawStretchedImage(g, sourceImage, rect);
+            drawStretchedImage(g, sourceImage, newSize);
         } else {
-            drawTiledImage(g, sourceImage, rect);
+            drawTiledImage(g, sourceImage, newSize);
         }
     }
 
@@ -111,32 +110,32 @@ class MagicFramePanel extends JPanel {
             : activeTheme.getBackgroundImage();
     }
 
-    private void drawStretchedImage(final Graphics g, final BufferedImage aImage, final Rectangle rect) {
+    private void drawStretchedImage(final Graphics g, final BufferedImage aImage, Dimension container) {
 
         final int iw = aImage.getWidth();
         final int ih = aImage.getHeight();
-        final int iw2 = ih * rect.width / rect.height;
+        final int iw2 = ih * container.width / container.height;
 
         final Rectangle imageRect;
         if (iw2 <= iw) {
             imageRect = new Rectangle((iw - iw2) / 2, 0, iw2, ih);
         } else {
-            final int ih2 = iw * rect.height / rect.width;
+            final int ih2 = iw * container.height / container.width;
             imageRect = new Rectangle(0, (ih - ih2) / 2, iw, ih2);
         }
 
         final BufferedImage subImage = GraphicsUtils.getOptimizedSubimage(aImage, imageRect);
-        cachedImage = GraphicsUtils.scale(subImage, rect.width - rect.x, rect.height - rect.y);
-        g.drawImage(cachedImage, rect.x, rect.y, this);
+        cachedImage = GraphicsUtils.scale(subImage, container.width, container.height);
+        g.drawImage(cachedImage, 0, 0, this);
     }
 
-    private void drawTiledImage(final Graphics g, final BufferedImage aImage, final Rectangle rect) {
+    private void drawTiledImage(final Graphics g, final BufferedImage aImage, Dimension container) {
         final int imageWidth = aImage.getWidth();
         final int imageHeight = aImage.getHeight();
-        final int x2 = rect.x + rect.width;
-        final int y2 = rect.y + rect.height;
-        for (int y = rect.y; y < y2; y += imageHeight) {
-            for (int x = rect.x; x < x2; x += imageWidth) {
+        final int x2 = container.width;
+        final int y2 = container.height;
+        for (int y = 0; y < y2; y += imageHeight) {
+            for (int x = 0; x < x2; x += imageWidth) {
                 g.drawImage(aImage, x, y, this);
             }
         }
