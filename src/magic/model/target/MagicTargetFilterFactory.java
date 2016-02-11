@@ -2935,6 +2935,7 @@ public class MagicTargetFilterFactory {
             .replaceAll("\\bshrines\\b", "shrine")
             .replaceAll("\\bscions\\b", "scion")
             .replaceAll("\\bsnakes\\b", "snake")
+            .replaceAll("\\bgorgons\\b", "gorgon")
             .replaceAll("\\band\\b", "or")
             .replaceAll("\\bthem\\b", "it")
             .replaceAll("\\bin your hand\\b", "from your hand")
