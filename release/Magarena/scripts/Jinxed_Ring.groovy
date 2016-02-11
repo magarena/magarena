@@ -3,7 +3,7 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent died) {
             return (died.isNonToken() &&
-                    died.isOwner(permanent.getController()) ?
+                    died.isOwner(permanent.getController())) ?
                 new MagicEvent(
                     permanent,
                     this,
