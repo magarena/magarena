@@ -12,13 +12,13 @@ import magic.ui.utility.GraphicsUtils;
 import magic.ui.utility.MagicStyle;
 
 @SuppressWarnings("serial")
-public class BackgroundPanel extends JPanel {
+class BackgroundPanel extends JPanel {
 
     private Theme activeTheme;
     private BufferedImage image;
     private boolean stretchTexture;
 
-    public BackgroundPanel(final LayoutManager layout) {
+    BackgroundPanel(final LayoutManager layout) {
         super(layout);
         setBackgroundImage();
     }
@@ -35,7 +35,7 @@ public class BackgroundPanel extends JPanel {
         }
     }
 
-    public void refreshBackground() {
+    void refreshBackground() {
         activeTheme = null;
         repaint();
     }
