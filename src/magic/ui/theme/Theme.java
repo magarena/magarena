@@ -63,4 +63,6 @@ public interface Theme {
     ImageIcon getAvatarIcon(final int index,final int size);
 
     ImageIcon getAbilityIcon(final AbilityIcon ability);
+
+    BufferedImage getBackgroundImage();
 }

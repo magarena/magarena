@@ -73,7 +73,7 @@ class MagicFramePanel extends JPanel {
     private BufferedImage getBackgroundImage() {
         return GeneralConfig.getInstance().isCustomBackground()
             ? GraphicsUtils.getCustomBackgroundImage()
-            : activeTheme.getTexture(Theme.TEXTURE_BACKGROUND);
+            : activeTheme.getBackgroundImage();
     }
 
     private void paintZoneStretch(final Graphics g,final BufferedImage aImage,final Rectangle rect) {

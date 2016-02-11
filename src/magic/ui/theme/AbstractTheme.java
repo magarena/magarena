@@ -121,4 +121,9 @@ public abstract class AbstractTheme implements Theme {
         return value == null ? null : (ImageIcon)value;
     }
 
+    @Override
+    public BufferedImage getBackgroundImage() {
+        return getTexture(Theme.TEXTURE_BACKGROUND);
+    }
+
 }
