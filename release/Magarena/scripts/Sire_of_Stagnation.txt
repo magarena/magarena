@@ -7,7 +7,7 @@ type=Creature
 subtype=Eldrazi
 cost={4}{U}{B}
 pt=5/7
-ability=Devoid;\
-        Whenever a land enters the battlefield under an opponent's control, that player exiles the top two cards of his or her library and you draw two cards.
+ability=Devoid
 timing=main
+requires_groovy_code
 oracle=Devoid\nWhenever a land enters the battlefield under an opponent's control, that player exiles the top two cards of his or her library and you draw two cards.
