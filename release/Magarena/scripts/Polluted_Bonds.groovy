@@ -10,13 +10,13 @@
                 permanent,
                 other.getController(),
                 this,
-                "RN loses 2 life and PN gains 2 life."
+                "PN loses 2 life and ${permanent.getController().getName()} gains 2 life."
             );
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new ChangeLifeAction(event.getRefPlayer(),-2));
-            game.doAction(new ChangeLifeAction(event.getPlayer(), +2));
+            game.doAction(new ChangeLifeAction(event.getPlayer(),-2));
+            game.doAction(new ChangeLifeAction(event.getPermanent().getController(), +2));
         }
     }
 ]
