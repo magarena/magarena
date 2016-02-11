@@ -2335,10 +2335,17 @@ public enum MagicRuleEventAction {
     ) {
         @Override
         public MagicChoice getChoice(final Matcher matcher) {
-            final MagicSourceEvent e = matcher.group("win") != null ?
-                MagicRuleEventAction.create(matcher.group("win")) :
-                MagicRuleEventAction.create(matcher.group("lose"));
-            return e.getChoice();
+            final String[] alts = {"win", "lose"};
+            for (final String alt : alts) {
+                final String effect = matcher.group(alt);
+                if (effect != null) {
+                    final MagicSourceEvent e = MagicRuleEventAction.create(effect);
+                    if (e.getChoice().isValid()) {
+                        throw new RuntimeException("flip effect should not have choice: \"" + effect + "\"");
+                    }
+                }
+            }
+            return MagicChoice.NONE;
         }
 
         @Override
