@@ -1,22 +1,19 @@
 [
-    new OtherPutIntoGraveyardTrigger() {
+    new OtherDiesTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MoveCardAction act) {
-            final MagicCard card = act.card;
-            return (act.from(MagicLocationType.Battlefield) &&
-                    card.isPermanent() &&
-                    !card.isToken()) ?
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent died) {
+            return (died.isNonToken()) ?
                 new MagicEvent(
                     permanent,
-                    card.getOwner(),
+                    died.getOwner(),
                     this,
-                    "RN loses 1 life."
+                    "PN loses 1 life."
                 ) :
                 MagicEvent.NONE;
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new ChangeLifeAction(event.getRefPlayer(), -1));
+            game.doAction(new ChangeLifeAction(event.getPlayer(), -1));
         }
     }
 ]
