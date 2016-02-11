@@ -59,12 +59,11 @@ public class CardsCanvas extends JPanel {
     private boolean refreshLayout = false;
     private ICardsCanvasListener listener = new NullCardsCanvasListener();
 
-
-    public CardsCanvas(final Dimension preferredCardSize) {
+    public CardsCanvas() {
 
         setOpaque(false);
 
-        this.preferredCardSize = preferredCardSize;
+        this.preferredCardSize = ImageSizePresets.getDefaultSize();
         aspectRatio = (double)this.preferredCardSize.width / this.preferredCardSize.height;
 
         this.imageHandler = new ImageHandler(null);
@@ -72,10 +71,6 @@ public class CardsCanvas extends JPanel {
         setMouseListener();
         setMouseMotionListener();
 
-    }
-
-    public CardsCanvas() {
-        this(ImageSizePresets.getDefaultSize());
     }
 
     public void setListener(ICardsCanvasListener aListener) {
