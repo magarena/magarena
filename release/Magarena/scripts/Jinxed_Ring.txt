@@ -4,7 +4,6 @@ value=3.000
 rarity=R
 type=Artifact
 cost={2}
-ability=Whenever a nontoken permanent is put into your graveyard from the battlefield, SN deals 1 damage to you.;\
-        Sacrifice a creature: Target opponent gains control of SN.
 timing=artifact
+requires_groovy_code
 oracle=Whenever a nontoken permanent is put into your graveyard from the battlefield, Jinxed Ring deals 1 damage to you.\nSacrifice a creature: Target opponent gains control of Jinxed Ring.
