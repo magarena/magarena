@@ -2,7 +2,6 @@ package magic.ui;
 
 import java.awt.Dimension;
 import java.awt.Graphics;
-import java.awt.LayoutManager;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
 import javax.swing.JPanel;
@@ -10,6 +9,7 @@ import magic.data.GeneralConfig;
 import magic.ui.theme.Theme;
 import magic.ui.utility.GraphicsUtils;
 import magic.ui.utility.MagicStyle;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class BackgroundPanel extends JPanel {
@@ -18,9 +18,16 @@ class BackgroundPanel extends JPanel {
     private BufferedImage image;
     private boolean stretchTexture;
 
-    BackgroundPanel(final LayoutManager layout) {
-        super(layout);
+    BackgroundPanel() {
+        setLayout(new MigLayout("insets 0, gap 0, nogrid, novisualpadding"));
         setBackgroundImage();
+    }
+
+    void setContentPanel(JPanel aPanel) {
+        removeAll();
+        add(aPanel, "dock center");
+        revalidate();
+        repaint();
     }
 
     @Override

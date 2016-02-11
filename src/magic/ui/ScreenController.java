@@ -3,7 +3,6 @@ package magic.ui;
 import magic.translate.UiString;
 import magic.ui.utility.MagicStyle;
 import java.util.Stack;
-import javax.swing.JComponent;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
@@ -244,11 +243,7 @@ public final class ScreenController {
     }
 
     private static void setMainFrameScreen(final AbstractScreen screen) {
-        final JComponent contentPane = (JComponent) getMainFrame().getContentPane();
-        contentPane.removeAll();
-        contentPane.add(screen, "w 100%, h 100%");
-        contentPane.revalidate();
-        contentPane.repaint();
+        getMainFrame().setContentPanel(screen);
     }
 
     public static int getScreensStackSize() {
