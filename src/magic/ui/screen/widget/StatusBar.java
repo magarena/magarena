@@ -41,7 +41,7 @@ public class StatusBar extends TexturedPanel implements IThemeStyle {
 
     private void layoutMagStatusBar() {
         removeAll();
-        setLayout(new MigLayout("insets 0 0 0 0, gap 12, aligny center", "[33%][][33%]"));
+        setLayout(new MigLayout("insets 0 4 0 0, gap 12, aligny center", "[33%][][33%]"));
         if (magScreen != null) {
             final IStatusBar screen = (IStatusBar)magScreen;
             add(new CaptionPanel(screen.getScreenCaption()));
