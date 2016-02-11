@@ -1,10 +1,12 @@
 package magic.ui;
 
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
 import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
 import magic.data.GeneralConfig;
 import magic.ui.theme.Theme;
 import magic.ui.utility.GraphicsUtils;
@@ -14,13 +16,15 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 class MagicFramePanel extends JPanel {
 
+    private static final Color BACKCOLOR = new Color(8, 8, 8);
+
     private Theme activeTheme;
     private BufferedImage image;
     private boolean stretchTexture;
 
     MagicFramePanel() {
+        setBackground(BACKCOLOR);
         setLayout(new MigLayout("insets 0, gap 0, nogrid, novisualpadding"));
-        setBackgroundImage();
     }
 
     void setContentPanel(JPanel aPanel) {
@@ -32,13 +36,21 @@ class MagicFramePanel extends JPanel {
 
     @Override
     protected void paintComponent(final Graphics g) {
-        setBackgroundImage();
-        final Dimension size = getSize();
-        final Rectangle rect = new Rectangle(0, 0, size.width, size.height);
-        if (stretchTexture) {
-            paintZoneStretch(g, image, rect);
-        } else {
-            paintZoneTile(g, image, rect);
+
+        super.paintComponent(g);
+
+        SwingUtilities.invokeLater(() -> {
+            setBackgroundImage();
+        });
+
+        if (image != null) {
+            final Dimension size = getSize();
+            final Rectangle rect = new Rectangle(0, 0, size.width, size.height);
+            if (stretchTexture) {
+                paintZoneStretch(g, image, rect);
+            } else {
+                paintZoneTile(g, image, rect);
+            }
         }
     }
 
@@ -54,6 +66,7 @@ class MagicFramePanel extends JPanel {
             stretchTexture =
                     activeTheme.getValue(Theme.VALUE_BACKGROUND_STRETCH) == 1 ||
                     GeneralConfig.getInstance().isCustomBackground();
+            repaint();
         }
     }
 
