@@ -4,6 +4,6 @@ value=3.917
 rarity=R
 type=Enchantment
 cost={1}{B}{B}
-ability=Whenever a nontoken permanent is put into a player's graveyard from the battlefield, that player loses 1 life.
 timing=enchantment
+requires_groovy_code
 oracle=Whenever a nontoken permanent is put into a player's graveyard from the battlefield, that player loses 1 life.
