@@ -28,7 +28,7 @@ def loseAct = {
                 NEG_TARGET_CREATURE_OR_PLAYER,
                 new MagicDamageTargetPicker(2),
                 this,
-                "Flip a coin. If PN wins the flip, SN deals 2 damage to target creature or player. "+
+                "Flip a coin. If PN wins the flip, SN deals 2 damage to target creature or player\$. "+
                 "If PN loses the flip, SN deals 2 damage to itself."
             );
         }
