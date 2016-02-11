@@ -61,9 +61,9 @@ class MagicFramePanel extends JPanel {
     private void drawNewImageAndCache(final Graphics g, Dimension newSize) {
         Rectangle rect = new Rectangle(0, 0, newSize.width, newSize.height);
         if (stretchTexture) {
-            paintZoneStretch(g, sourceImage, rect);
+            drawStretchedImage(g, sourceImage, rect);
         } else {
-            paintZoneTile(g, sourceImage, rect);
+            drawTiledImage(g, sourceImage, rect);
         }
     }
 
@@ -111,7 +111,7 @@ class MagicFramePanel extends JPanel {
             : activeTheme.getBackgroundImage();
     }
 
-    private void paintZoneStretch(final Graphics g, final BufferedImage aImage, final Rectangle rect) {
+    private void drawStretchedImage(final Graphics g, final BufferedImage aImage, final Rectangle rect) {
 
         final int iw = aImage.getWidth();
         final int ih = aImage.getHeight();
@@ -130,7 +130,7 @@ class MagicFramePanel extends JPanel {
         g.drawImage(cachedImage, rect.x, rect.y, this);
     }
 
-    private void paintZoneTile(final Graphics g, final BufferedImage aImage, final Rectangle rect) {
+    private void drawTiledImage(final Graphics g, final BufferedImage aImage, final Rectangle rect) {
         final int imageWidth = aImage.getWidth();
         final int imageHeight = aImage.getHeight();
         final int x2 = rect.x + rect.width;
