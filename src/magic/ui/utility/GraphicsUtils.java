@@ -303,4 +303,14 @@ final public class GraphicsUtils {
         return newImage;
     }
 
+    /**
+     *  Returns an optimized subimage defined by a specified rectangular region.
+     * <p>
+     *  getSubImage() on its own causes image to become unaccelerated.
+     *  (see <a href="http://www.jhlabs.com/ip/managed_images.html">external link</a>)
+     */
+    public static BufferedImage getOptimizedSubimage(BufferedImage image, Rectangle rect) {
+        return GraphicsUtils.getOptimizedImage(image.getSubimage(rect.x, rect.y, rect.width, rect.height));
+    }   
+
 }

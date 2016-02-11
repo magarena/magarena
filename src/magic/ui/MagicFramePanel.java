@@ -19,8 +19,10 @@ class MagicFramePanel extends JPanel {
     private static final Color BACKCOLOR = new Color(8, 8, 8);
 
     private Theme activeTheme;
-    private BufferedImage image;
+    private BufferedImage sourceImage;
+    private BufferedImage cachedImage;
     private boolean stretchTexture;
+    private Dimension oldSize = new Dimension();
 
     MagicFramePanel() {
         setBackground(BACKCOLOR);
@@ -43,6 +45,28 @@ class MagicFramePanel extends JPanel {
         );
     }
 
+    private void drawCachedImage(final Graphics g) {
+        final Rectangle r = g.getClipBounds();
+        if (r == null) {
+            g.drawImage(cachedImage, 0, 0, null);
+        } else {
+            g.drawImage(cachedImage,
+                r.x, r.y, r.x + r.width, r.y + r.height,
+                r.x, r.y, r.x + r.width, r.y + r.height,
+                null
+            );
+        }
+    }
+
+    private void drawNewImageAndCache(final Graphics g, Dimension newSize) {
+        Rectangle rect = new Rectangle(0, 0, newSize.width, newSize.height);
+        if (stretchTexture) {
+            paintZoneStretch(g, sourceImage, rect);
+        } else {
+            paintZoneTile(g, sourceImage, rect);
+        }
+    }
+
     @Override
     protected void paintComponent(final Graphics g) {
 
@@ -52,13 +76,13 @@ class MagicFramePanel extends JPanel {
             setBackgroundImage();
         });
 
-        if (image != null) {
-            final Dimension size = getSize();
-            final Rectangle rect = new Rectangle(0, 0, size.width, size.height);
-            if (stretchTexture) {
-                paintZoneStretch(g, image, rect);
+        if (sourceImage != null) {
+            final Dimension newSize = getSize();
+            if (oldSize.equals(newSize) && cachedImage != null) {
+                drawCachedImage(g);
             } else {
-                paintZoneTile(g, image, rect);
+                oldSize = new Dimension(newSize);
+                drawNewImageAndCache(g, newSize);
             }
         } else {
             drawMLogo(g);
@@ -73,7 +97,8 @@ class MagicFramePanel extends JPanel {
     private void setBackgroundImage() {
         if (activeTheme != MagicStyle.getTheme()) {
             activeTheme = MagicStyle.getTheme();
-            image = getBackgroundImage();
+            sourceImage = getBackgroundImage();
+            cachedImage = null;
             stretchTexture = activeTheme.getValue(Theme.VALUE_BACKGROUND_STRETCH) == 1
                 || GeneralConfig.getInstance().isCustomBackground();
             repaint();
@@ -87,9 +112,11 @@ class MagicFramePanel extends JPanel {
     }
 
     private void paintZoneStretch(final Graphics g, final BufferedImage aImage, final Rectangle rect) {
+
         final int iw = aImage.getWidth();
         final int ih = aImage.getHeight();
         final int iw2 = ih * rect.width / rect.height;
+
         final Rectangle imageRect;
         if (iw2 <= iw) {
             imageRect = new Rectangle((iw - iw2) / 2, 0, iw2, ih);
@@ -97,8 +124,10 @@ class MagicFramePanel extends JPanel {
             final int ih2 = iw * rect.height / rect.width;
             imageRect = new Rectangle(0, (ih - ih2) / 2, iw, ih2);
         }
-        g.drawImage(aImage, rect.x, rect.y, rect.x + rect.width, rect.y + rect.height,
-            imageRect.x, imageRect.y, imageRect.x + imageRect.width, imageRect.y + imageRect.height, this);
+
+        final BufferedImage subImage = GraphicsUtils.getOptimizedSubimage(aImage, imageRect);
+        cachedImage = GraphicsUtils.scale(subImage, rect.width - rect.x, rect.height - rect.y);
+        g.drawImage(cachedImage, rect.x, rect.y, this);
     }
 
     private void paintZoneTile(final Graphics g, final BufferedImage aImage, final Rectangle rect) {
