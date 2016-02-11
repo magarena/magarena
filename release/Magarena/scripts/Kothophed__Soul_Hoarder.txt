@@ -7,7 +7,7 @@ type=Legendary,Creature
 subtype=Demon
 cost={4}{B}{B}
 pt=6/6
-ability=Flying;\
-        Whenever a permanent owned by another player is put into a graveyard from the battlefield, you draw a card and you lose 1 life.
+ability=Flying
 timing=main
+requires_groovy_code
 oracle=Flying\nWhenever a permanent owned by another player is put into a graveyard from the battlefield, you draw a card and you lose 1 life.
