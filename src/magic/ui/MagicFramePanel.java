@@ -34,6 +34,15 @@ class MagicFramePanel extends JPanel {
         repaint();
     }
 
+    private void drawMLogo(final Graphics g) {
+        g.drawImage(
+            MagicImages.LOGO,
+            (getWidth() - MagicImages.LOGO.getWidth()) / 2,
+            (getHeight() - MagicImages.LOGO.getHeight()) / 2,
+            null
+        );
+    }
+
     @Override
     protected void paintComponent(final Graphics g) {
 
@@ -51,6 +60,8 @@ class MagicFramePanel extends JPanel {
             } else {
                 paintZoneTile(g, image, rect);
             }
+        } else {
+            drawMLogo(g);
         }
     }
 
