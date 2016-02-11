@@ -119,7 +119,7 @@ public class DuelPlayerDeckPanel extends TexturedPanel implements IThemeStyle {
     private String getVerboseColors(final String colorCodes) {
         String colors = "";
         for (char ch: colorCodes.toCharArray()) {
-            colors += MagicColor.getColor(ch).name() + ", ";
+            colors += MagicColor.getColor(ch).getDisplayName() + ", ";
         }
         return colors.trim().substring(0, colors.trim().length() - 1);
     }

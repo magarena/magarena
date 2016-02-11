@@ -5,14 +5,15 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.EnumSet;
+import magic.translate.UiString;
 
 public enum MagicColor {
 
-    White("white",'w'),
-    Blue("blue",'u'),
-    Black("black",'b'),
-    Red("red",'r'),
-    Green("green",'g')
+    White(MagicColorStrings._S1, 'w'),
+    Blue(MagicColorStrings._S2, 'u'),
+    Black(MagicColorStrings._S3, 'b'),
+    Red(MagicColorStrings._S4, 'r'),
+    Green(MagicColorStrings._S5, 'g')
     ;
 
     public static final int NR_COLORS=values().length;
@@ -20,11 +21,20 @@ public enum MagicColor {
     private final String name;
     private final char symbol;
     private final int mask;
+    private final String displayName;
 
-    private MagicColor(final String name,final char symbol) {
-        this.name=name;
-        this.symbol=symbol;
-        this.mask=1<<ordinal();
+    private MagicColor(final String name, final char symbol) {
+        this.name = name;
+        this.symbol = symbol;
+        this.mask = 1 << ordinal();
+        this.displayName = UiString.get(name);
+    }
+
+    /**
+     * Translatable color name.
+     */
+    public String getDisplayName() {
+        return displayName;
     }
 
     public String getName() {

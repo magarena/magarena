@@ -62,7 +62,7 @@ public class PlayerStatsViewerInfo implements IPlayerStatsViewerInfo {
 
     @Override
     public String getMostUsedColor() {
-        return stats.getMostUsedColor().getName();
+        return stats.getMostUsedColor().getDisplayName();
     }
 
 }
