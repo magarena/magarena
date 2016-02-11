@@ -1,12 +1,9 @@
 [
-    new OtherPutIntoGraveyardTrigger() {
+    new OtherDiesTrigger() {
         @Override
-        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MoveCardAction act) {
-            final MagicCard card = act.card;
-            return (act.from(MagicLocationType.Battlefield) &&
-                    card.isPermanent() &&
-                    !card.isToken() &&
-                    card.getOwner() == permanent.getController()) ?
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent died) {
+            return (died.isNonToken() &&
+                    permanent.getController() == died.getOwner()) ?
                 new MagicEvent(
                     permanent,
                     this,
@@ -28,7 +25,7 @@
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicSacrificePermanentEvent(source, SACRIFICE_PERMANENT)
+                new MagicSacrificePermanentEvent(source, SACRIFICE_CREATURE)
             ]
         }
 
