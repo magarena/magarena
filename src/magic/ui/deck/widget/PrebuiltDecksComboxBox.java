@@ -1,4 +1,4 @@
-package magic.ui.widget.deck;
+package magic.ui.deck.widget;
 
 import magic.utility.DeckUtils;
 

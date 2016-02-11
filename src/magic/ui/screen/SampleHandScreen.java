@@ -25,7 +25,7 @@ import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.deck.DeckStatusPanel;
+import magic.ui.deck.widget.DeckStatusPanel;
 import magic.ui.widget.throbber.AbstractThrobber;
 import magic.ui.widget.throbber.ImageThrobber;
 import net.miginfocom.swing.MigLayout;

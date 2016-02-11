@@ -32,7 +32,7 @@ import magic.ui.screen.interfaces.IWikiPage;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.MenuPanel;
-import magic.ui.widget.deck.DeckStatusPanel;
+import magic.ui.deck.widget.DeckStatusPanel;
 
 @SuppressWarnings("serial")
 public class DeckEditorSplitScreen

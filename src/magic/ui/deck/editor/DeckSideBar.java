@@ -9,7 +9,7 @@ import magic.model.MagicDeck;
 import magic.ui.duel.viewer.CardViewer;
 import magic.ui.duel.viewer.DeckEditorCardViewer;
 import magic.ui.widget.TexturedPanel;
-import magic.ui.widget.deck.DeckInfoPanel;
+import magic.ui.deck.widget.DeckInfoPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")

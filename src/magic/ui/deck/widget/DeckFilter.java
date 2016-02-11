@@ -1,4 +1,4 @@
-package magic.ui.widget.deck;
+package magic.ui.deck.widget;
 
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
