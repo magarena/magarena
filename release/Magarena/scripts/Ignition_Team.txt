@@ -6,7 +6,7 @@ type=Creature
 subtype=Goblin,Warrior
 cost={5}{R}{R}
 pt=0/0
-ability=SN enters the battlefield with X +1/+1 counters on it, where X is the number of tapped lands on the battlefield.;\
-        {2}{R}, Remove a +1/+1 counter from SN: Target land becomes a 4/4 red Elemental creature until end of turn. It's still a land.
+ability={2}{R}, Remove a +1/+1 counter from SN: Target land becomes a 4/4 red Elemental creature until end of turn. It's still a land.
 timing=main
+requires_groovy_code
 oracle=Ignition Team enters the battlefield with X +1/+1 counters on it, where X is the number of tapped lands on the battlefield.\n{2}{R}, Remove a +1/+1 counter from Ignition Team: Target land becomes a 4/4 red Elemental creature until end of turn. It's still a land.
