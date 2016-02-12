@@ -3,13 +3,15 @@
         @Override
         public MagicEvent executeTrigger(
             final MagicGame game, final MagicPermanent permanent, final MagicPermanent died) {
-            new MagicEvent(
-                permanent,
-                permanent.getOwner(),
-                new MagicMayChoice(),
-                this,
-                "PN may\$ return SN to his or her hand."
-            );
+            return died.isOwner(permanent.getController()) ?
+                new MagicEvent(
+                    permanent,
+                    permanent.getOwner(),
+                    new MagicMayChoice(),
+                    this,
+                    "PN may\$ return SN to his or her hand."
+                ) :
+                MagicEvent.NONE;
         }
 
         @Override
