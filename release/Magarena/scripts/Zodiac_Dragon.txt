@@ -6,6 +6,6 @@ type=Creature
 subtype=Dragon
 cost={7}{R}{R}
 pt=8/8
-ability=When SN dies, you may return SN from the graveyard to its owner's hand.
 timing=main
+requires_groovy_code
 oracle=When Zodiac Dragon is put into your graveyard from the battlefield, you may return it to your hand.
