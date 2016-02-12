@@ -20,6 +20,7 @@ class TestZodiacDragon extends TestGameBuilder {
         addToLibrary(P, "Forest", 20);
         createPermanent(P, "Island", 5);
         createPermanent(P, "Altar of Dementia");
+        createPermanent(P, "Zodiac Dragon");
         addToHand(P, "Control Magic");
 
         P = opponent;
