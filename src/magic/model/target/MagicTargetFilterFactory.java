@@ -485,6 +485,12 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicPermanentFilterImpl NONTOKEN_CREATURE_AN_OPPONENT_CONTROLS=new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            return !target.isController(player) && !target.isToken() && target.isCreature();
+        }
+    };
+
     public static final MagicPermanentFilterImpl FACEUP_NONTOKEN_CREATURE_YOU_CONTROL=new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
             return target.isController(player) && !target.isToken() && target.isCreature() && target.isFaceDown() == false;
@@ -2586,6 +2592,7 @@ public class MagicTargetFilterFactory {
         single.put("green or white creature an opponent controls", GREEN_OR_WHITE_CREATURE_AN_OPPONENT_CONTROLS);
         single.put("creature an opponent controls", CREATURE_YOUR_OPPONENT_CONTROLS);
         single.put("nonlegendary creature an opponent controls", NON_LEGENDARY_CREATURE_AN_OPPONENT_CONTROLS);
+        single.put("nontoken creature an opponent controls", NONTOKEN_CREATURE_AN_OPPONENT_CONTROLS);
         single.put("face-down creature an opponent controls", FACE_DOWN_CREATURE_AN_OPPONENT_CONTROLS);
         single.put("tapped creature an opponent controls", TAPPED_CREATURE_AN_OPPONENT_CONTROLS);
 
