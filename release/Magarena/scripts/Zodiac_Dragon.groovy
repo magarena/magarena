@@ -1,12 +1,10 @@
 [
     new ThisDiesTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-            final MagicGame game, final MagicPermanent permanent, final MagicPermanent died) {
-            return died.isOwner(permanent.getController()) ?
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent died) {
+            return permanent.isOwner(permanent.getController()) ?
                 new MagicEvent(
                     permanent,
-                    permanent.getOwner(),
                     new MagicMayChoice(),
                     this,
                     "PN may\$ return SN to his or her hand."
