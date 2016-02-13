@@ -20,10 +20,7 @@ def ST = new MagicStatic(MagicLayer.Type, MagicStatic.UntilEOT) {
 
 def PreventAllDamage = new PreventDamageTrigger() {
     @Override
-    public MagicEvent executeTrigger(
-            final MagicGame game,
-            final MagicPermanent permanent,
-            final MagicDamage damage) {
+    public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicDamage damage) {
         if (permanent == damage.getTarget()) {
             // Replacement effect. Generates no event or action.
             damage.prevent();

@@ -1,9 +1,8 @@
 [
     new OtherDiesTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-            final MagicGame game, final MagicPermanent permanent, final MagicPermanent died) {
-            return (!died.isOwner(permanent.getController())) ?
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent died) {
+            return died.getOwner() != permanent.getController() ?
                 new MagicEvent(
                     permanent,
                     this,
