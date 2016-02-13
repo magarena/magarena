@@ -1,11 +1,10 @@
 [
     new OtherDiesTrigger() {
         @Override
-        public MagicEvent executeTrigger(
-            final MagicGame game, final MagicPermanent permanent, final MagicPermanent otherPermanent) {
+        public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPermanent otherPermanent) {
             return (otherPermanent.isNonToken() &&
-                otherPermanent.isCreature() &&
-                otherPermanent.isOwner(permanent.getController())) ?
+                    otherPermanent.isCreature() &&
+                    otherPermanent.isOwner(permanent.getController())) ?
                 new MagicEvent(
                     permanent,
                     otherPermanent,
@@ -18,13 +17,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final MagicCard card = event.getRefPermanent().getCard();
-            if (card.getLocation() == MagicLocationType.Graveyard) {
-                game.doAction(new ShiftCardAction(
-                    card,
-                    MagicLocationType.Graveyard,
-                    MagicLocationType.TopOfOwnersLibrary
-                ));
-            }
+            game.doAction(new ShiftCardAction(
+                card,
+                MagicLocationType.Graveyard,
+                MagicLocationType.TopOfOwnersLibrary
+            ));
         }
     }
 ]

@@ -11,14 +11,11 @@
         }
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicCard card = event.getRefCard();
-            if (card.isInGraveyard()) {
-                game.doAction(new ReanimateAction(
-                    card,
-                    event.getPlayer(),
-                    MagicPlayMod.MORPH
-                ));
-            }
+            game.doAction(new ReanimateAction(
+                event.getRefCard(),
+                event.getPlayer(),
+                MagicPlayMod.MORPH
+            ));
         }
     }
 ]

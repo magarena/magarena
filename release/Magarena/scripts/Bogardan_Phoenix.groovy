@@ -13,10 +13,11 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicCard card = event.getPermanent().getCard();
-            if (card.isInGraveyard()) {
-                game.doAction(new ReanimateAction(card,event.getPlayer(),[MagicPlayMod.DEATH_COUNTER]));
-            }
+            game.doAction(new ReanimateAction(
+                event.getPermanent().getCard(),
+                event.getPlayer(),
+                [MagicPlayMod.DEATH_COUNTER]
+            ));
         }
     },
     new ThisDiesTrigger() {
