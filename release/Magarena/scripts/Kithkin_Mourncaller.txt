@@ -6,6 +6,6 @@ type=Creature
 subtype=Kithkin,Scout
 cost={2}{G}
 pt=2/2
-ability=Whenever an attacking Kithkin or Elf is put into your graveyard from the battlefield, you may draw a card.
 timing=main
+requires_groovy_code
 oracle=Whenever an attacking Kithkin or Elf is put into your graveyard from the battlefield, you may draw a card.
