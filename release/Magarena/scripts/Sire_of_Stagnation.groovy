@@ -8,6 +8,7 @@
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPermanent other) {
             return new MagicEvent(
                 permanent,
+                permanent.getController(),
                 other.getController(),
                 this,
                 "RN exiles the top two cards of his or her library and PN draws two cards."
