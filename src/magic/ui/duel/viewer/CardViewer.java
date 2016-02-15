@@ -211,4 +211,11 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
         t.setRepeats(false);
         return t;
     }
+
+    public static Dimension getSidebarImageSize() {
+        Dimension size = ImageSizePresets.getDefaultSize();
+        return size.width < ImageSizePresets.SIZE_312x445.getSize().width
+            ? ImageSizePresets.SIZE_312x445.getSize()
+            : size;
+    }
 }

@@ -2,7 +2,6 @@ package magic.ui.deck.widget;
 
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.Font;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
@@ -50,29 +49,6 @@ public class DeckDescriptionViewer extends JPanel {
         add(titleBar);
         add(scrollPane);
 
-    }
-
-    public void setDeckChooserLayout() {
-        setBorder(null);
-        setOpaque(false);
-        //
-        textArea.setForeground(Color.BLACK);
-        textArea.setBackground(new Color(0, 0, 0, 1));
-        textArea.setFont(new Font("dialog", Font.ITALIC, 12));
-        textArea.setOpaque(false);
-        textArea.setFocusable(false);
-        //
-        scrollPane.setViewportView(textArea);
-        scrollPane.getVerticalScrollBar().setUnitIncrement(8);
-        scrollPane.setOpaque(false);
-        scrollPane.getViewport().setOpaque(false);
-        scrollPane.setBackground(Color.RED);
-        scrollPane.setBorder(null);
-        //
-        removeAll();
-        setLayout(new MigLayout("insets 3"));
-        add(scrollPane, "w 100%, h 100%");
-        revalidate();
     }
 
     public void setPlayer(final DuelPlayerConfig playerDef) {

@@ -35,10 +35,11 @@ import magic.model.MagicDeck;
 import magic.ui.ScreenController;
 import magic.translate.UiString;
 import magic.ui.dialog.DecksFilterDialog;
+import magic.ui.duel.viewer.CardViewer;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.theme.Theme;
-import magic.ui.widget.FontsAndBorders;
 import magic.ui.utility.MagicStyle;
+import magic.ui.widget.FontsAndBorders;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -81,6 +82,8 @@ public class DeckPicker extends JPanel {
         setOpaque(false);
         setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
         setLayout(migLayout);
+        setMaximumSize(CardViewer.getSidebarImageSize());
+        setPreferredSize(CardViewer.getSidebarImageSize());
         // deck types combo
         deckTypeJCombo.setLightWeightPopupEnabled(false);
         deckTypeJCombo.setFocusable(false);
@@ -102,7 +105,6 @@ public class DeckPicker extends JPanel {
     }
 
     private void refreshLayout() {
-        removeAll();
         migLayout.setLayoutConstraints("insets 0, gap 0, flowy");
         add(getDeckFilterPanel(), "w 100%");
         add(scroller, "w 100%, h 100%");

@@ -103,7 +103,9 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
 
     public void setDeck(final MagicDeck aDeck) {
 
-        final CardStatistics statistics = new CardStatistics(aDeck);
+        final CardStatistics statistics = new CardStatistics(
+            aDeck.isValid() ? aDeck : new MagicDeck()
+        );
 
         titleBar.setText(UiString.get(_S2, statistics.totalCards));
         cardTypesPanel.setStats(statistics);

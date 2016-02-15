@@ -1,22 +1,16 @@
 package magic.ui.deck.selector;
 
-import java.awt.Color;
 import java.awt.Dimension;
 import java.nio.file.Path;
-import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 import javax.swing.JSplitPane;
 import magic.data.DeckType;
 import magic.model.MagicDeck;
 import magic.translate.UiString;
 import magic.ui.cardtable.CardTable;
-import magic.ui.deck.widget.DeckDescriptionViewer;
-import magic.ui.deck.widget.DeckPicker;
 import magic.ui.deck.widget.DeckStatusPanel;
 import magic.ui.duel.viewer.CardViewer;
 import magic.ui.screen.interfaces.IDeckConsumer;
-import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.TexturedPanel;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -28,18 +22,16 @@ class ScreenPanel extends JPanel implements IDeckConsumer {
 
     private MagicDeck selectedDeck = null;
     private Path deckFilePath = null;
-    private final DeckDescriptionViewer descViewer = new DeckDescriptionViewer();
     private final CardTable deckTable;
     private final CardViewer cardViewer = new CardViewer();
-    private DeckPicker deckPicker;
     private final JSplitPane splitter = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
     private final DeckStatusPanel deckStatusPanel;
+    private final SidebarPanel sidebar;
 
     ScreenPanel(DeckStatusPanel deckStatusPanel) {
 
         this.deckStatusPanel = deckStatusPanel;
 
-        descViewer.setDeckChooserLayout();
         setOpaque(false);
 
         selectedDeck = new MagicDeck();
@@ -48,8 +40,10 @@ class ScreenPanel extends JPanel implements IDeckConsumer {
         deckTable.setHeaderVisible(false);
         deckTable.showCardCount(true);
 
+        sidebar = new SidebarPanel(this);
+
         setLayout(new MigLayout("insets 0, gap 0"));
-        add(getDeckNamesPanel(), "w 300!, h 100%");
+        add(sidebar, "h 100%");
         add(getDeckDetailsPane(), "w 100%, h 100%");
 
     }
@@ -83,23 +77,6 @@ class ScreenPanel extends JPanel implements IDeckConsumer {
         return panel;
     }
 
-    private JPanel getDeckNamesPanel() {
-
-        deckPicker = new DeckPicker();
-        deckPicker.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 1, Color.BLACK));
-        deckPicker.addListener(this);
-
-        descViewer.setBorder(BorderFactory.createMatteBorder(0, 0, 0, 1, Color.BLACK));
-
-        // main container panel
-        final JPanel container = new TexturedPanel();
-        container.setBackground(FontsAndBorders.TRANSLUCENT_WHITE_STRONG);
-        container.setLayout(new MigLayout("insets 0, gap 0, flowy"));
-        container.add(deckPicker, "w 100%, h 100%");
-        container.add(descViewer, "w 100%, h 28%:28%:200px");
-        return container;
-    }
-
     @Override
     public void setDeck(String deckName, DeckType deckType) {
         System.out.println(deckName + ", " + deckType);
@@ -110,7 +87,7 @@ class ScreenPanel extends JPanel implements IDeckConsumer {
         if (deckPath != null) {
             selectedDeck = deck;
             deckFilePath = deckPath;
-            descViewer.setDeckDescription(deck);
+            sidebar.setDeck(deck);
             deckTable.setCards(deck);
             deckTable.setTitle(UiString.get(_S14, deck.getName(), deck.size()));
             deckStatusPanel.setDeck(deck, deck.isValid() || deck.size() > 0);
@@ -118,7 +95,7 @@ class ScreenPanel extends JPanel implements IDeckConsumer {
         } else {
             selectedDeck = null;
             deckFilePath = null;
-            descViewer.setDeckDescription(selectedDeck);
+            sidebar.setDeck(selectedDeck);
             deckTable.setCards(deck);
             deckTable.setTitle(UiString.get(_S15));
             deckStatusPanel.setDeck(null, false);
