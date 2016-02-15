@@ -1,5 +1,6 @@
 package magic.ui.deck.widget;
 
+import magic.ui.deck.stats.DeckStatisticsViewer;
 import magic.model.MagicDeck;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
