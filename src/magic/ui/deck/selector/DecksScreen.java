@@ -1,4 +1,4 @@
-package magic.ui.screen;
+package magic.ui.deck.selector;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -29,6 +29,7 @@ import magic.ui.widget.FontsAndBorders;
 import magic.ui.widget.TexturedPanel;
 import magic.ui.deck.widget.DeckPicker;
 import magic.ui.deck.widget.DeckStatusPanel;
+import magic.ui.screen.AbstractScreen;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
