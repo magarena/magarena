@@ -6,22 +6,20 @@ import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.JPanel;
 import magic.data.MagicIcon;
+import magic.translate.UiString;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
-import magic.translate.UiString;
+import magic.ui.deck.widget.DeckStatusPanel;
 import magic.ui.dialog.DecksFilterDialog;
+import magic.ui.screen.AbstractScreen;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IDeckConsumer;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
-import magic.ui.deck.widget.DeckStatusPanel;
-import magic.ui.screen.AbstractScreen;
 
 @SuppressWarnings("serial")
-public class DecksScreen
-    extends AbstractScreen
-    implements IStatusBar, IActionBar {
+public class DecksScreen extends AbstractScreen implements IStatusBar, IActionBar {
 
     // translatable strings
     private static final String _S1 = "Decks";
@@ -62,58 +60,58 @@ public class DecksScreen
     @Override
     public MenuButton getRightAction() {
         return new ActionBarButton(
-                UiString.get(_S3),
-                new AbstractAction() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        if (screenContent.getDeck() == null) {
-                            showInvalidActionMessage(UiString.get(_S4));
-                        } else if (screenContent.getDeck().isValid() == false) {
-                            showInvalidActionMessage(UiString.get(_S5));
-                        } else {
-                            deckConsumer.setDeck(screenContent.getDeck(), screenContent.getDeckPath());
-                            ScreenController.closeActiveScreen(false);
-                        }
+            UiString.get(_S3),
+            new AbstractAction() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    if (screenContent.getDeck() == null) {
+                        showInvalidActionMessage(UiString.get(_S4));
+                    } else if (screenContent.getDeck().isValid() == false) {
+                        showInvalidActionMessage(UiString.get(_S5));
+                    } else {
+                        deckConsumer.setDeck(screenContent.getDeck(), screenContent.getDeckPath());
+                        ScreenController.closeActiveScreen(false);
                     }
-                });
+                }
+            }
+        );
     }
 
     @Override
     public List<MenuButton> getMiddleActions() {
         final List<MenuButton> buttons = new ArrayList<>();
         buttons.add(new ActionBarButton(
-                        MagicImages.getIcon(MagicIcon.HAND_ICON),
-                        UiString.get(_S6), UiString.get(_S7),
-                        new AbstractAction() {
-                            @Override
-                            public void actionPerformed(final ActionEvent e) {
-                                if (screenContent.getDeck() == null || screenContent.getDeck().size() < 7) {
-                                    showInvalidActionMessage(UiString.get(_S8));
-                                } else if (screenContent.getDeck().isValid() == false) {
-                                    showInvalidActionMessage(UiString.get(_S9));
-                                } else {
-                                    ScreenController.showSampleHandScreen(screenContent.getDeck());
-                                }
-                            }
-                        })
-                );
+            MagicImages.getIcon(MagicIcon.HAND_ICON),
+            UiString.get(_S6), UiString.get(_S7),
+            new AbstractAction() {
+                @Override
+                public void actionPerformed(final ActionEvent e) {
+                    if (screenContent.getDeck() == null || screenContent.getDeck().size() < 7) {
+                        showInvalidActionMessage(UiString.get(_S8));
+                    } else if (screenContent.getDeck().isValid() == false) {
+                        showInvalidActionMessage(UiString.get(_S9));
+                    } else {
+                        ScreenController.showSampleHandScreen(screenContent.getDeck());
+                    }
+                }
+            }
+        ));
         buttons.add(new ActionBarButton(
-                        MagicImages.getIcon(MagicIcon.TILED_ICON),
-                        UiString.get(_S10), UiString.get(_S11),
-                        new AbstractAction() {
-                            @Override
-                            public void actionPerformed(final ActionEvent e) {
-                                if (screenContent.getDeck() == null || screenContent.getDeck().size() == 0) {
-                                    showInvalidActionMessage(UiString.get(_S12));
-                                } else if (screenContent.getDeck().isValid() == false) {
-                                    showInvalidActionMessage(UiString.get(_S13));
-                                } else {
-                                    ScreenController.showDeckView(screenContent.getDeck());
-                                }
-                            }
-                        })
-                );
-
+            MagicImages.getIcon(MagicIcon.TILED_ICON),
+            UiString.get(_S10), UiString.get(_S11),
+            new AbstractAction() {
+                @Override
+                public void actionPerformed(final ActionEvent e) {
+                    if (screenContent.getDeck() == null || screenContent.getDeck().isEmpty()) {
+                        showInvalidActionMessage(UiString.get(_S12));
+                    } else if (screenContent.getDeck().isValid() == false) {
+                        showInvalidActionMessage(UiString.get(_S13));
+                    } else {
+                        ScreenController.showDeckView(screenContent.getDeck());
+                    }
+                }
+            }
+        ));
         return buttons;
     }
 
