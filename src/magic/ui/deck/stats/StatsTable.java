@@ -10,6 +10,7 @@ import javax.swing.JPanel;
 import magic.data.CardStatistics;
 import magic.data.MagicIcon;
 import magic.model.MagicColor;
+import magic.model.MagicManaType;
 import magic.ui.MagicImages;
 import magic.ui.utility.GraphicsUtils;
 import net.miginfocom.swing.MigLayout;
@@ -76,6 +77,12 @@ class StatsTable extends JPanel {
         return lbl;
     }
 
+    private JLabel getHeadingLabel(MagicManaType mana, String tooltip) {
+        JLabel lbl = new JLabel(MagicImages.getIcon(mana));
+        lbl.setToolTipText(tooltip);
+        return lbl;
+    }
+
     private JLabel getHeadingLabel(String text, String tooltip) {
         JLabel lbl = new JLabel(text);
         lbl.setToolTipText(tooltip);
@@ -101,7 +108,7 @@ class StatsTable extends JPanel {
         panel.add(getHeadingLabel(MagicIcon.INSTANT, "Instant", stats.totalTypes[4]));
         panel.add(getHeadingLabel(MagicIcon.SORCERY, "Sorcery", stats.totalTypes[5]));
         panel.add(getHeadingLabel(MagicIcon.PLANESWALKER, "Planeswalker", stats.totalTypes[6]));
-        panel.add(getHeadingLabel("=0", "Colorless"));
+        panel.add(getHeadingLabel(MagicManaType.Colorless, "Colorless"));
         panel.add(getHeadingLabel("=1", "Mono-color"));
         panel.add(getHeadingLabel(">1", "Multi-color"));
 
