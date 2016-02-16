@@ -32,7 +32,7 @@ public class DeckSideBar extends TexturedPanel {
     private void setLookAndFeel() {
 
         cardScrollPane.setViewportView(cardViewer);
-        cardScrollPane.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Color.BLACK));
+        cardScrollPane.setBorder(null);
         cardScrollPane.setOpaque(false);
         cardScrollPane.getViewport().setOpaque(false);
         cardScrollPane.getVerticalScrollBar().setUnitIncrement(10);

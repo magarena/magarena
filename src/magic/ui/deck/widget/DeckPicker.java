@@ -15,7 +15,6 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import javax.swing.AbstractAction;
-import javax.swing.BorderFactory;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -98,7 +97,7 @@ public class DeckPicker extends JPanel {
         decksJList.setCellRenderer(new DecksListCellRenderer());
         // scroll pane for deck names list
         scroller.setViewportView(decksJList);
-        scroller.setBorder(BorderFactory.createMatteBorder(1, 0, 0, 0, Color.DARK_GRAY));
+        scroller.setBorder(null);
         scroller.setOpaque(false);
         scroller.getViewport().setOpaque(false);
         scroller.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
@@ -106,8 +105,10 @@ public class DeckPicker extends JPanel {
 
     private void refreshLayout() {
         migLayout.setLayoutConstraints("insets 0, gap 0, flowy");
-        add(getDeckFilterPanel(), "w 100%");
-        add(scroller, "w 100%, h 100%");
+        migLayout.setColumnConstraints("[fill, grow]");
+        migLayout.setRowConstraints("[][fill, grow]");
+        add(getDeckFilterPanel());
+        add(scroller);
     }
 
     private JPanel getDeckFilterPanel() {
