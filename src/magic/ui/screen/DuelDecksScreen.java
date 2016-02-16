@@ -181,10 +181,10 @@ public class DuelDecksScreen
                             ScreenController.showWarningMessage(ex.getMessage());
                         }
                     }
-                }, false)
+                })
             );
             buttons.add(new ActionBarButton(
-                MagicImages.getIcon(MagicIcon.REFRESH2_ICON),
+                MagicImages.getIcon(MagicIcon.RANDOM_ICON),
                 UiString.get(_S15),
                 UiString.get(_S16),
                 new AbstractAction() {
