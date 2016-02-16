@@ -235,6 +235,7 @@ public enum MagicIcon {
     public static final Set<MagicIcon> COLOR_MANA = EnumSet.range(MANA_WHITE, MANA_GREEN);
     public static final Set<MagicIcon> HYBRID_COLOR_MANA = EnumSet.range(MANA_WHITE_BLUE, MANA_GREEN_BLUE);
     private static final Set<MagicIcon> MANA_ICONS = EnumSet.range(MANA_UNTAP, MANA_X);
+    public static final Set<MagicIcon> TYPE_ICONS = EnumSet.of(LAND, CREATURE, ARTIFACT, ENCHANTMENT, INSTANT, SORCERY, PLANESWALKER);
 
     private final String iconFilename;
 

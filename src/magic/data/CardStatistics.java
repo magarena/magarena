@@ -84,7 +84,15 @@ public class CardStatistics {
 
     public final int[] colorCount=new int[MagicColor.NR_COLORS];
     public final int[] colorMono=new int[MagicColor.NR_COLORS];
+
     public final int[] colorLands=new int[MagicColor.NR_COLORS];
+    public final int[] colorArtifacts=new int[MagicColor.NR_COLORS];
+    public final int[] colorCreatures=new int[MagicColor.NR_COLORS];
+    public final int[] colorEnchantments=new int[MagicColor.NR_COLORS];
+    public final int[] colorInstants=new int[MagicColor.NR_COLORS];
+    public final int[] colorSorcery=new int[MagicColor.NR_COLORS];
+    public final int[] colorPlaneswalkers=new int[MagicColor.NR_COLORS];
+
     public final int[] manaCurve=new int[MANA_CURVE_SIZE];
     public int monoColor;
     public int multiColor;
@@ -96,24 +104,63 @@ public class CardStatistics {
     }
 
     private void createStatistics() {
+
         for (final MagicCardDefinition card : cards) {
+
             //ignore tokens
             if (card.isToken()) {
                 continue;
             }
 
             totalCards++;
-
             totalRarity[card.getRarity()]++;
 
-            if (card.isLand()) {
-                totalTypes[0]++;
-                for (final MagicColor color : MagicColor.values()) {
-                    if (card.getManaSource(color) > 0) {
-                        colorLands[color.ordinal()]++;
+            int count = 0;
+            int index = -1;
+
+            for (final MagicColor color : MagicColor.values()) {
+
+                if (color.hasColor(card.getColorFlags())) {
+                    index = color.ordinal();
+                    colorCount[index]++;
+                    count++;
+                }
+
+                if (card.isLand() && card.getManaSource(color) > 0) {
+                    colorLands[color.ordinal()]++;
+                }
+
+                if (card.hasColor(color)) {
+                    if (card.isCreature()) {
+                        colorCreatures[color.ordinal()]++;
+                    }
+                    if (card.isArtifact()) {
+                        colorArtifacts[color.ordinal()]++;
+                    }
+                    if (card.isEnchantment()) {
+                        colorEnchantments[color.ordinal()]++;
+                    }
+                    if (card.isInstant()) {
+                        colorInstants[color.ordinal()]++;
+                    }
+                    if (card.isSorcery()) {
+                        colorSorcery[color.ordinal()]++;
+                    }
+                    if (card.isPlaneswalker()) {
+                        colorPlaneswalkers[color.ordinal()]++;
                     }
                 }
             }
+
+            if (count == 0) {
+                colorless++;
+            } else if (count == 1) {
+                colorMono[index]++;
+                monoColor++;
+            } else {
+                multiColor++;
+            }
+
             if (card.hasX()) {
                 manaCurve[0]++;
             } else if (card.getCost() != MagicManaCost.NONE) {
@@ -124,6 +171,9 @@ public class CardStatistics {
             averageCost += card.getConvertedCost();
             averageValue += card.getValue();
 
+            if (card.isLand()) {
+                totalTypes[0]++;
+            }
             if (card.isCreature()) {
                 totalTypes[1]++;
             }
@@ -141,24 +191,6 @@ public class CardStatistics {
             }
             if (card.isPlaneswalker()) {
                 totalTypes[6]++;
-            }
-
-            int count = 0;
-            int index = -1;
-            for (final MagicColor color : MagicColor.values()) {
-                if (color.hasColor(card.getColorFlags())) {
-                    index = color.ordinal();
-                    colorCount[index]++;
-                    count++;
-                }
-            }
-            if (count == 0) {
-                colorless++;
-            } else if (count == 1) {
-                colorMono[index]++;
-                monoColor++;
-            } else {
-                multiColor++;
             }
 
         }

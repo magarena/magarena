@@ -303,6 +303,18 @@ final public class GraphicsUtils {
         return newImage;
     }
 
+    public static Image getTranslucentImage(Image image, float opacity) {
+        final BufferedImage newImage = getCompatibleBufferedImage(
+            image.getWidth(null), image.getHeight(null), Transparency.TRANSLUCENT
+        );
+        final Graphics2D g2d = newImage.createGraphics();
+        g2d.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, opacity));
+        g2d.drawImage(image, 0, 0, null);
+        g2d.dispose();
+        return newImage;
+    }
+
+
     /**
      *  Returns an optimized subimage defined by a specified rectangular region.
      * <p>

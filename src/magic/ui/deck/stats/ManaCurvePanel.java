@@ -6,14 +6,11 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.data.CardStatistics;
 import magic.data.MagicIcon;
-import magic.translate.UiString;
 import magic.ui.MagicImages;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class ManaCurvePanel extends JPanel {
-
-    private static final String _S1 = "Mana curve";
 
     private final ManaCurveUnitPanel[] manaPanels;
 
@@ -26,8 +23,6 @@ class ManaCurvePanel extends JPanel {
     private void doLayoutManaCurveGrid() {
 
         setLayout(new MigLayout("insets 0, gap 0"));
-
-        add(DeckStatisticsViewer.getCaptionLabel(UiString.get(_S1)), "w 100%, wrap, span");
 
         for (int i = 0; i < CardStatistics.MANA_CURVE_SIZE; i++) {
 

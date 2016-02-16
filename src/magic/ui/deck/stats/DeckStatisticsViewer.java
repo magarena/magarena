@@ -33,9 +33,8 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
 
     private final ActionButtonTitleBar titleBar;
     private final ManaCurvePanel manaCurvePanel;
-    private final CardTypeStatsPanel cardTypesPanel;
-    private final CardColorStatsPanel colorsPanel;
     private final ActionBarButton titlebarButton;
+    private final StatsTable statsTable;
 
     public DeckStatisticsViewer() {
 
@@ -44,9 +43,8 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
         titlebarButton = getLogViewActionButton();
         titleBar = new ActionButtonTitleBar(UiString.get(_S1), getLogActionButtons());
 
-        cardTypesPanel = new CardTypeStatsPanel();
+        statsTable = new StatsTable();
         manaCurvePanel = new ManaCurvePanel();
-        colorsPanel = new CardColorStatsPanel();
         setStatsVisible(GeneralConfig.getInstance().isStatsVisible());
 
         setLayout(new MigLayout("flowy, insets 0, gap 0"));
@@ -56,16 +54,14 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
     private void refreshLayout() {
         removeAll();
         add(titleBar, "w 100%");
-        add(cardTypesPanel, "alignx center, gaptop 2, hidemode 3");
-        add(manaCurvePanel, "alignx center, gaptop 2, hidemode 3");
-        add(colorsPanel, "w 100%, gaptop 2, hidemode 3");
+        add(statsTable, "w 100%, hidemode 3");
+        add(manaCurvePanel, "alignx center, gaptop 2,  gapbottom 4, hidemode 3");
         revalidate();
     }
 
     private void setStatsVisible(boolean b) {
-        cardTypesPanel.setVisible(b);
+        statsTable.setVisible(b);
         manaCurvePanel.setVisible(b);
-        colorsPanel.setVisible(b);
         titlebarButton.setIcon(b
             ? MagicImages.getIcon(MagicIcon.DOWNARROW_ICON)
             : MagicImages.getIcon(MagicIcon.UPARROW_ICON)
@@ -108,8 +104,7 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
         );
 
         titleBar.setText(UiString.get(_S2, statistics.totalCards));
-        cardTypesPanel.setStats(statistics);
-        colorsPanel.setStats(statistics);
+        statsTable.setStats(statistics);
         manaCurvePanel.setStats(statistics);
 
         revalidate();
