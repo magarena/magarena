@@ -100,7 +100,7 @@ class StatsTable extends JPanel {
 
         // headings
         panel.add(new JLabel());
-        panel.add(getHeadingLabel("Σ", "Total cards"));
+        panel.add(getHeadingLabel("Σ", "Total"));
         panel.add(getHeadingLabel(MagicIcon.LAND, "Land", stats.totalTypes[0]));
         panel.add(getHeadingLabel(MagicIcon.CREATURE, "Creature", stats.totalTypes[1]));
         panel.add(getHeadingLabel(MagicIcon.ARTIFACT, "Artifact", stats.totalTypes[2]));
