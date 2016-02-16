@@ -47,6 +47,8 @@ public class DeckStatisticsViewer extends JPanel implements ChangeListener {
         manaCurvePanel = new ManaCurvePanel();
         setStatsVisible(GeneralConfig.getInstance().isStatsVisible());
 
+        setDeck(new MagicDeck());
+
         setLayout(new MigLayout("flowy, insets 0, gap 0"));
         refreshLayout();
     }

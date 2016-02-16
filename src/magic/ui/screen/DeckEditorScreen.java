@@ -83,7 +83,7 @@ public class DeckEditorScreen
     private void setScreenContent(final MagicDeck deck) {
         screenContent = new DeckEditorScreenPanel(deck, this);
         screenContent.setIsStandalone(isStandalone);
-        setDeck(deck);
+        setDeck(deck == null ? new MagicDeck() : deck);
         setContent(screenContent);
     }
 
