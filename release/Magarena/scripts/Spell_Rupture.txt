@@ -4,6 +4,6 @@ value=3.303
 rarity=C
 type=Instant
 cost={1}{U}
-effect=Counter target spell unless its controller pays {X}, where X is the greatest power among creatures you control.
 timing=counter
+requires_groovy_code
 oracle=Counter target spell unless its controller pays {X}, where X is the greatest power among creatures you control.
