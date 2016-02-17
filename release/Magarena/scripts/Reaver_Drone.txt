@@ -6,7 +6,7 @@ type=Creature
 subtype=Eldrazi,Drone
 cost={B}
 pt=2/1
-ability=Devoid;\
-        At the beginning of your upkeep, you lose 1 life unless you control another colorless creature.
+ability=Devoid
 timing=main
+requires_groovy_code
 oracle=Devoid\nAt the beginning of your upkeep, you lose 1 life unless you control another colorless creature.
