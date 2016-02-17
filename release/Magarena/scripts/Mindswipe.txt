@@ -4,6 +4,6 @@ value=3.500
 rarity=R
 type=Instant
 cost={X}{U}{R}
-effect=Counter target spell unless its controller pays {X}. SN deals X damage to that spell's controller.
 timing=counter
+requires_groovy_code
 oracle=Counter target spell unless its controller pays {X}. Mindswipe deals X damage to that spell's controller.
