@@ -21,6 +21,10 @@ public abstract class TestGameBuilder {
         }
     }
 
+    public static void addToLibrary(final MagicPlayer player, final String name) {
+        addToLibrary(player, name, 1);
+    }
+
     public static void addToGraveyard(final MagicPlayer player, final String name, final int count) {
         final MagicCardDefinition cardDefinition=CardDefinitions.getCard(name);
         for (int c=count;c>0;c--) {
