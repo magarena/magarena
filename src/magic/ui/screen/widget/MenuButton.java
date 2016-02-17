@@ -20,9 +20,9 @@ import magic.ui.widget.FontsAndBorders;
 public class MenuButton extends JButton {
 
     private final static Color COLOR_NORMAL = Color.WHITE;
-    private final static Color COLOR_DISABLED = Color.GRAY;
+    private final static Color COLOR_DISABLED = Color.DARK_GRAY;
 
-    private final boolean isRunnable;
+    private boolean isRunnable;
     private boolean hasSeparator;
 
     public MenuButton(final String caption, final AbstractAction action, final String tooltip, final boolean showSeparator) {
@@ -100,6 +100,7 @@ public class MenuButton extends JButton {
     @Override
     public void setEnabled(boolean b) {
         super.setEnabled(b);
+        isRunnable = b;
         setForeground(b ? COLOR_NORMAL : COLOR_DISABLED);
     }
 
@@ -137,6 +138,10 @@ public class MenuButton extends JButton {
         setPressedIcon(GraphicsUtils.getRecoloredIcon(
                 (ImageIcon) defaultIcon,
                 MagicStyle.getPressedColor())
+        );
+        setDisabledIcon(GraphicsUtils.getRecoloredIcon(
+                (ImageIcon) defaultIcon,
+                COLOR_DISABLED)
         );
     }
 
