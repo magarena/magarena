@@ -332,6 +332,8 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl BLUE_PERMANENT = permanent(MagicColor.Blue, Control.Any);
 
+    public static final MagicPermanentFilterImpl BLUE_PERMANENT_YOU_CONTROL = permanent(MagicColor.Blue, Control.You);
+
     public static final MagicPermanentFilterImpl BLACK_PERMANENT_YOU_CONTROL = permanent(MagicColor.Black, Control.You);
 
     public static final MagicPermanentFilterImpl PERMANENT = new MagicPermanentFilterImpl() {
