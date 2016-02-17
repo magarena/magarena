@@ -17,7 +17,6 @@ import magic.model.DuelPlayerConfig;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.model.MagicDeckConstructionRule;
-import magic.model.MagicDeckProfile;
 import magic.model.MagicDuel;
 import magic.model.MagicGame;
 import magic.ui.DuelDecksPanel;
@@ -51,16 +50,12 @@ public class DuelDecksScreen
     private static final String _S4 = "Game %d";
     private static final String _S5 = "Deck Editor";
     private static final String _S6 = "Open the Deck Editor.";
-    private static final String _S7 = "Swap Decks";
-    private static final String _S8 = "Swap your deck with your opponent's.";
     private static final String _S9 = "%s wins the duel";
     private static final String _S10 = "Restart Duel";
     private static final String _S11 = "Same players, same decks, same duel settings. Same result...?";
     private static final String _S12 = "Deck View";
     private static final String _S13 = "Shows complete deck using tiled card images.";
     private static final String _S14 = "%s's deck is illegal.\n\n%s";
-    private static final String _S15 = "Generate another deck";
-    private static final String _S16 = "Based on the duel settings, randomly selects an existing prebuilt deck or<br>generates a random deck for the selected player.";
 
     private final DuelDecksPanel screenContent;
     private MagicGame nextGame = null;
@@ -155,102 +150,87 @@ public class DuelDecksScreen
         return UiString.get(_S4, screenContent.getDuel().getGamesPlayed() + 1);
     }
 
+    private boolean isNewDuel() {
+        return screenContent.getDuel().getGamesPlayed() == 0;
+    }
+
+    private boolean isDuelFinished() {
+        return screenContent.getDuel().isFinished();
+    }
+
+    private ActionBarButton getDeckEditorButton() {
+        return new ActionBarButton(
+            MagicImages.getIcon(MagicIcon.DECK_ICON),
+            UiString.get(_S5), UiString.get(_S6),
+            new AbstractAction() {
+                @Override
+                public void actionPerformed(final ActionEvent e) {
+                    ScreenController.showDeckEditor(getActiveDeck());
+                }
+            }
+        );
+    }
+
+    private ActionBarButton getRestartButton() {
+        return new ActionBarButton(
+            MagicImages.getIcon(MagicIcon.REFRESH_ICON),
+            UiString.get(_S10), UiString.get(_S11),
+            new AbstractAction() {
+                @Override
+                public void actionPerformed(final ActionEvent e) {
+                    try {
+                        getFrame().restartDuel();
+                    } catch (InvalidDeckException ex) {
+                        ScreenController.showWarningMessage(ex.getMessage());
+                    }
+                }
+            }
+        );
+    }
+
+    private MenuButton getWinnerButton() {
+        String winner = screenContent.getDuel().getWinningPlayerProfile().getPlayerName();
+        return new MenuButton(UiString.get(_S9, winner), new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // do nothing
+            }
+        });
+    }
+
+    private ActionBarButton getTiledDeckButton() {
+        return new ActionBarButton(
+            MagicImages.getIcon(MagicIcon.TILED_ICON),
+            UiString.get(_S12), UiString.get(_S13),
+            new AbstractAction() {
+                @Override
+                public void actionPerformed(final ActionEvent e) {
+                    ScreenController.showDeckView(getActiveDeck());
+                }
+            }
+        );
+    }
+
     @Override
     public List<MenuButton> getMiddleActions() {
         final List<MenuButton> buttons = new ArrayList<>();
-        if (screenContent.getDuel().getGamesPlayed() == 0) {
-            buttons.add(new ActionBarButton(
-                MagicImages.getIcon(MagicIcon.DECK_ICON),
-                UiString.get(_S5), UiString.get(_S6),
-                new AbstractAction() {
-                    @Override
-                    public void actionPerformed(final ActionEvent e) {
-                        ScreenController.showDeckEditor(getActiveDeck());
-                    }
-                })
-            );
-            buttons.add(new ActionBarButton(
-                MagicImages.getIcon(MagicIcon.SWAP_ICON),
-                UiString.get(_S7), UiString.get(_S8),
-                new AbstractAction() {
-                    @Override
-                    public void actionPerformed(final ActionEvent e) {
-                        try {
-                            swapDecks();
-                        } catch (InvalidDeckException ex) {
-                            ScreenController.showWarningMessage(ex.getMessage());
-                        }
-                    }
-                })
-            );
-            buttons.add(new ActionBarButton(
-                MagicImages.getIcon(MagicIcon.RANDOM_ICON),
-                UiString.get(_S15),
-                UiString.get(_S16),
-                new AbstractAction() {
-                    @Override
-                    public void actionPerformed(final ActionEvent e) {
-                        screenContent.generateDeck();
-                    }
-                })
-            );
+        if (isNewDuel()) {
+            buttons.add(getDeckEditorButton());
+            buttons.add(getTiledDeckButton());
             buttons.add(SampleHandActionButton.createInstance(getActiveDeck()));
-
-        } else {
-            if (screenContent.getDuel().isFinished()) {
-                final MagicDuel duel = screenContent.getDuel();
-                buttons.add(new MenuButton(UiString.get(_S9, duel.getWinningPlayerProfile().getPlayerName()), null));
-            } else {
-                buttons.add(new ActionBarButton(
-                    MagicImages.getIcon(MagicIcon.REFRESH_ICON),
-                    UiString.get(_S10), UiString.get(_S11),
-                    new AbstractAction() {
-                        @Override
-                        public void actionPerformed(final ActionEvent e) {
-                            try {
-                                getFrame().restartDuel();
-                            } catch (InvalidDeckException ex) {
-                                ScreenController.showWarningMessage(ex.getMessage());
-                            }
-                        }
-                    })
-                );
-            }
+            buttons.addAll(screenContent.getActionBarButtons());
+        } else if (isDuelFinished()) {
+            buttons.add(getWinnerButton());
+        } else { // duel in progress
+            buttons.add(getTiledDeckButton());
+            buttons.add(SampleHandActionButton.createInstance(getActiveDeck()));
+            buttons.add(getRestartButton());
         }
-
-        if (!screenContent.getDuel().isFinished()) {
-            buttons.add(new ActionBarButton(
-                MagicImages.getIcon(MagicIcon.TILED_ICON),
-                UiString.get(_S12), UiString.get(_S13),
-                new AbstractAction() {
-                    @Override
-                    public void actionPerformed(final ActionEvent e) {
-                        ScreenController.showDeckView(getActiveDeck());
-                    }
-                })
-            );
-        }
-
         return buttons;
     }
 
     public void updateDecksAfterEdit() {
         screenContent.updateDecksAfterEdit();
-    }
-
-    public void swapDecks() {
-        screenContent.getDuel().restart();
-        final DuelPlayerConfig[] players = screenContent.getDuel().getPlayers();
-        final MagicDeckProfile deckProfile1 = players[0].getDeckProfile();
-        final MagicDeckProfile deckProfile2 = players[1].getDeckProfile();
-        final MagicDeck deck1 = new MagicDeck(players[0].getDeck());
-        final MagicDeck deck2 = new MagicDeck(players[1].getDeck());
-        players[0].setDeckProfile(deckProfile2);
-        players[0].setDeck(deck2);
-        players[1].setDeckProfile(deckProfile1);
-        players[1].setDeck(deck1);
-        ScreenController.closeActiveScreen(false);
-        getFrame().showDuel();
     }
 
     @Override
