@@ -18,6 +18,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.getRefPlayer().getLibrary().getCardsFromTop(2) each {
                 game.doAction(new ShiftCardAction(it, MagicLocationType.OwnersLibrary, MagicLocationType.Exile));
+                game.logAppendMessage(event.getPlayer(), MagicMessage.format("%s is exiled.", it));
             };
             game.doAction(new DrawAction(event.getPlayer(), 2));
         }
