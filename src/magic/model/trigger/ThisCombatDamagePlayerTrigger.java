@@ -1,6 +1,7 @@
 package magic.model.trigger;
 
 import magic.model.MagicDamage;
+import magic.model.MagicMessage;
 import magic.model.MagicPermanent;
 import magic.model.MagicCard;
 import magic.model.MagicGame;
@@ -36,6 +37,7 @@ public abstract class ThisCombatDamagePlayerTrigger extends DamageIsDealtTrigger
                     MagicLocationType.OwnersLibrary,
                     MagicLocationType.Exile
                 ));
+                game.logAppendMessage(event.getPlayer(), MagicMessage.format("%s is exiled.", card));
             }
         }
     };
