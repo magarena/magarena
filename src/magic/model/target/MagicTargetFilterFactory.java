@@ -611,7 +611,7 @@ public class MagicTargetFilterFactory {
     public static final MagicTargetFilterImpl CREATURE_OR_PLAYER=new MagicTargetFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicTarget target) {
             return target.isPlayer() ||
-                   target.isCreature();
+                   target.isCreaturePermanent();
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Permanent ||
@@ -622,7 +622,7 @@ public class MagicTargetFilterFactory {
     public static final MagicTargetFilterImpl SLIVER_CREATURE_OR_PLAYER=new MagicTargetFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicTarget target) {
             return target.isPlayer() ||
-                   (target.isCreature() && target.hasSubType(MagicSubType.Sliver));
+                   (target.isCreaturePermanent() && target.hasSubType(MagicSubType.Sliver));
         }
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType==MagicTargetType.Permanent ||

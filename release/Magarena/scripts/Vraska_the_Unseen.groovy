@@ -1,7 +1,7 @@
 def T = new DamageIsDealtTrigger() {
     @Override
     public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicDamage damage) {
-        return (damage.getSource().isCreature() &&
+        return (damage.getSource().isCreaturePermanent() &&
                 damage.isCombat() &&
                 damage.getTarget() == permanent) ?
             new MagicEvent(

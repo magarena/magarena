@@ -295,7 +295,7 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
 
     public static MagicCondition NOT_CREATURE_CONDITION=new MagicCondition() {
         public boolean accept(final MagicSource source) {
-            return !source.isCreature();
+            return !source.isCreaturePermanent();
         }
     };
 

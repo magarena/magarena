@@ -30,7 +30,6 @@ public interface IRenderableCard {
     boolean isSplitCard();
     boolean isDoubleFaced();
     boolean hasAbility(MagicAbility ability);
-    boolean isPlaneswalker();
     MagicCardDefinition getCardDefinition();
 
     default MagicCardDefinition getTransformedDefinition() {
@@ -53,6 +52,10 @@ public interface IRenderableCard {
         final List<MagicIcon> list = getCost().getIcons();
         //If doesn't contain single color mana, and does contain hybrid mana. Checks for absence
         return Collections.disjoint(list, MagicIcon.COLOR_MANA) && !Collections.disjoint(list, MagicIcon.HYBRID_COLOR_MANA);
+    }
+
+    default boolean isPlaneswalker() {
+        return hasType(MagicType.Planeswalker);
     }
 
     default boolean isLand() {

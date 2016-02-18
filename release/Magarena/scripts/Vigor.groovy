@@ -6,7 +6,7 @@
             int amount = 0;
 
             if (target != permanent &&
-                target.isCreature() &&
+                target.isCreaturePermanent() &&
                 permanent.isFriend(target)) {
                 amount = damage.prevent();
             }

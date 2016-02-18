@@ -64,8 +64,8 @@ public class DealDamageAction extends MagicAction {
         /*
         119.1. Objects can deal damage to creatures, planeswalkers, and players.
         */
-        if (!target.isCreature() &&
-            !target.isPlaneswalker() &&
+        if (!target.isCreaturePermanent() &&
+            !target.isPlaneswalkerPermanent() &&
             !target.isPlayer()) {
             return;
         }
@@ -78,12 +78,12 @@ public class DealDamageAction extends MagicAction {
 
         final MagicSource source=damage.getSource();
 
-        if (target.isPlaneswalker()) {
+        if (target.isPlaneswalkerPermanent()) {
             final MagicPermanent targetPermanent=(MagicPermanent)target;
             game.doAction(new ChangeCountersAction(targetPermanent,MagicCounterType.Loyalty,-dealtAmount));
         }
 
-        if (target.isCreature()) {
+        if (target.isCreaturePermanent()) {
             final MagicPermanent targetPermanent=(MagicPermanent)target;
             if (damage.hasNoRegeneration()) {
                 game.doAction(ChangeStateAction.Set(targetPermanent,MagicPermanentState.CannotBeRegenerated));

@@ -6,7 +6,7 @@
             return (damage.isCombat() &&
                     damage.isTargetPlayer() &&
                     permanent.isFriend(dmgSource) &&
-                    dmgSource.isCreature() &&
+                    dmgSource.isCreaturePermanent() &&
                     dmgSource.hasSubType(MagicSubType.Vampire)) ?
                 new MagicEvent(
                     permanent,

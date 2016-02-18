@@ -17,12 +17,12 @@ public abstract class MagicObjectImpl implements MagicObject {
     }
 
     @Override
-    public boolean isCreature() {
+    public boolean isCreaturePermanent() {
         return isPermanent() && hasType(MagicType.Creature);
     }
 
     @Override
-    public boolean isPlaneswalker() {
+    public boolean isPlaneswalkerPermanent() {
         return isPermanent() && hasType(MagicType.Planeswalker);
     }
 

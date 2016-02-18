@@ -59,7 +59,7 @@ public class MagicDamage {
     }
 
     public boolean isTargetCreature() {
-        return target.isCreature();
+        return target.isCreaturePermanent();
     }
 
     public MagicPlayer getTargetPlayer() {
