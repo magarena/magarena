@@ -20,6 +20,7 @@
             final MagicCardList library = player.getLibrary();
             int landCards = 0;
             while (landCards < amount && library.size() > 0) {
+                game.doAction(new RevealAction(library.getCardAtTop()));
                 if (library.getCardAtTop().hasType(MagicType.Land)) {
                     landCards++;
                 }
