@@ -323,6 +323,6 @@ final public class GraphicsUtils {
      */
     public static BufferedImage getOptimizedSubimage(BufferedImage image, Rectangle rect) {
         return GraphicsUtils.getOptimizedImage(image.getSubimage(rect.x, rect.y, rect.width, rect.height));
-    }   
+    }
 
 }

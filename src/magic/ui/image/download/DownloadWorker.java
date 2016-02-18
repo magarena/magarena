@@ -199,7 +199,7 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
         return false;
     }
 
-    private void doDownloadCardImage(CardImageFile imageFile, CardTextLanguage textLang) throws MalformedURLException {        
+    private void doDownloadCardImage(CardImageFile imageFile, CardTextLanguage textLang) throws MalformedURLException {
         if (textLang.isEnglish() || !downloadAlternateCardImage(imageFile, textLang)) {
             downloadDefaultCardImage(imageFile);
         }

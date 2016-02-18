@@ -14,7 +14,7 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 class CardTypeStatsPanel extends JPanel {
 
-    // translatable strings    
+    // translatable strings
     private static final String _S1 = "Card type";
 
     CardTypeStatsPanel() {
