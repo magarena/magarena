@@ -9,7 +9,7 @@ cost={U}{B}
 pt=1/1
 ability=Devoid;\
         Deathtouch;\
-        Ingest;\
-        {3}{U}{B}: Draw a card. Each opponent exiles the top card of his or her library.
+        Ingest
 timing=main
+requires_groovy_code
 oracle=Devoid\nDeathtouch\nIngest\n{3}{U}{B}: Draw a card. Each opponent exiles the top card of his or her library.
