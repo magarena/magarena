@@ -5,7 +5,7 @@ rarity=R
 type=Artifact
 subtype=Equipment
 cost={1}
-ability=Equipped creature gets +1/+1 for each other creature you control that shares a creature type with it.;\
-        Equip {2}
+ability=Equip {2}
 timing=equipment
+requires_groovy_code
 oracle=Equipped creature gets +1/+1 for each other creature you control that shares a creature type with it.\nEquip {2}
