@@ -27,6 +27,7 @@
                 game.doAction(new ShiftCardAction(card,MagicLocationType.OwnersLibrary,MagicLocationType.Exile));
             }
             for (final MagicPlayer player : game.getAPNAP()) {
+                //FIXME Requires a choice of how many cards to draw - as X dialog with max 7 but min 0
                 game.doAction(new DrawAction(player,7));
             }
         }
