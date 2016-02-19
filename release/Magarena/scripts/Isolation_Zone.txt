@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Enchantment
 cost={2}{W}{W}
-ability=When SN enters the battlefield, exile target creature or enchantment an opponent controls until SN leaves the battlefield.
 timing=enchantment
+requires_groovy_code
 oracle=When Isolation Zone enters the battlefield, exile target creature or enchantment an opponent controls until Isolation Zone leaves the battlefield.
