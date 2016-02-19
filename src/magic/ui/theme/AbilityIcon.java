@@ -1,7 +1,6 @@
 package magic.ui.theme;
 
 import java.awt.Image;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -100,23 +99,19 @@ public enum AbilityIcon {
     }
 
     public static List<CardIcon> getIcons(final MagicObject magicObject) {
-        final List<CardIcon> icons = new ArrayList<>();
-        for (AbilityIcon abilityIcon : AbilityIcon.values()) {
-            if (abilityIcon.getIcon() != null && magicObject.hasAbility(abilityIcon.getAbility())) {
-                icons.add(getAbilityIcon(abilityIcon));
-            }
-        }
-        return icons;
+        return Stream.of(values())
+            .filter(obj -> magicObject.hasAbility(obj.getAbility()))
+            .filter(obj -> obj.getIcon() != null)
+            .map(obj -> getAbilityIcon(obj))
+            .collect(Collectors.toList());
     }
 
     public static List<CardIcon> getIcons(final MagicCardDefinition cardDef) {
-        final List<CardIcon> icons = new ArrayList<>();
-        for (AbilityIcon abilityIcon : AbilityIcon.values()) {
-            if (abilityIcon.getIcon() != null && cardDef.hasAbility(abilityIcon.getAbility())) {
-                icons.add(getAbilityIcon(abilityIcon));
-            }
-        }
-        return icons;
+        return Stream.of(values())
+            .filter(obj -> cardDef.hasAbility(obj.getAbility()))
+            .filter(obj -> obj.getIcon() != null)
+            .map(obj -> getAbilityIcon(obj))
+            .collect(Collectors.toList());
     }
 
     private boolean hasSmallIcon() {
@@ -133,9 +128,9 @@ public enum AbilityIcon {
      */
     public static  List<Image> getSmallAbilityIcons(final Set<MagicAbility> abilities) {
         return Stream.of(values())
-            .filter(i -> abilities.contains(i.ability))
+            .filter(obj -> abilities.contains(obj.ability))
             .filter(AbilityIcon::hasSmallIcon)
-            .map(i -> i.getSmallIcon().getImage())
+            .map(obj -> obj.getSmallIcon().getImage())
             .collect(Collectors.toList());
     }
 
