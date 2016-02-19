@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Elf,Ally
 cost={2}{R}{G}
 pt=4/4
-ability=You may play an additional land on each of your turns.;\
-        {R}{G}, Return a land you control to its owner's hand: Target creature gains trample until end of turn.
+ability={R}{G}, Return a land you control to its owner's hand: Target creature gains trample until end of turn.
 timing=main
+requires_groovy_code=Exploration
 oracle=You may play an additional land on each of your turns.\n{R}{G}, Return a land you control to its owner's hand: Target creature gains trample until end of turn.
