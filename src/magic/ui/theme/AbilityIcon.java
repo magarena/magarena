@@ -119,10 +119,12 @@ public enum AbilityIcon {
         return icons;
     }
 
+    private boolean hasSmallIcon() {
+        return smallIcon != null;
+    }
+    
     private ImageIcon getSmallIcon() {
-        return smallIcon != null
-            ? MagicImages.getIcon(smallIcon)
-            : null;
+        return hasSmallIcon() ? MagicImages.getIcon(smallIcon) : null;
     }
 
     /**
@@ -131,7 +133,8 @@ public enum AbilityIcon {
      */
     public static  List<Image> getSmallAbilityIcons(final Set<MagicAbility> abilities) {
         return Stream.of(values())
-            .filter(i -> i.getSmallIcon() != null && abilities.contains(i.ability))
+            .filter(i -> abilities.contains(i.ability))
+            .filter(AbilityIcon::hasSmallIcon)
             .map(i -> i.getSmallIcon().getImage())
             .collect(Collectors.toList());
     }
