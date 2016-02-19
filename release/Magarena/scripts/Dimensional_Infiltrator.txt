@@ -8,7 +8,7 @@ cost={1}{U}
 pt=2/1
 ability=Devoid;\
         Flash;\
-        Flying;\
-        {1}{C}: Target opponent exiles the top card of his or her library. If it's a land card, you may return SN to its owner's hand.
+        Flying
 timing=flash
+requires_groovy_code
 oracle=Devoid\nFlash\nFlying\n{1}{C}: Target opponent exiles the top card of his or her library. If it's a land card, you may return Dimensional Infiltrator to its owner's hand.
