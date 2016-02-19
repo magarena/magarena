@@ -640,6 +640,8 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl CREATURE_OR_ENCHANTMENT_YOU_CONTROL = permanentOr(MagicType.Creature, MagicType.Enchantment, Control.You);
 
+    public static final MagicPermanentFilterImpl CREATURE_OR_ENCHANTMENT_AN_OPPONENT_CONTROLS = permanentOr(MagicType.Creature, MagicType.Enchantment, Control.Opp);
+
     public static final MagicCardFilterImpl CREATURE_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD = card(MagicType.Creature).or(MagicType.Enchantment).from(MagicTargetType.Graveyard);
 
     public static final MagicPermanentFilterImpl EQUIPMENT = permanent(MagicSubType.Equipment, Control.Any);
@@ -2597,6 +2599,7 @@ public class MagicTargetFilterFactory {
         single.put("nontoken creature an opponent controls", NONTOKEN_CREATURE_AN_OPPONENT_CONTROLS);
         single.put("face-down creature an opponent controls", FACE_DOWN_CREATURE_AN_OPPONENT_CONTROLS);
         single.put("tapped creature an opponent controls", TAPPED_CREATURE_AN_OPPONENT_CONTROLS);
+        single.put("creature or enchantment an opponent controls", CREATURE_OR_ENCHANTMENT_AN_OPPONENT_CONTROLS);
 
         // <color|type|subtype> creature
         single.put("1/1 creature", new MagicPTTargetFilter(CREATURE, Operator.EQUAL, 1, Operator.EQUAL, 1));
