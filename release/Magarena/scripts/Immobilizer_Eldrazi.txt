@@ -6,7 +6,7 @@ type=Creature
 subtype=Eldrazi,Drone
 cost={1}{R}
 pt=2/1
-ability=Devoid;\
-        {2}{C}: Each creature with toughness greater than its power can't block this turn.
+ability=Devoid
 timing=main
+requires_groovy_code
 oracle=Devoid\n{2}{C}: Each creature with toughness greater than its power can't block this turn.
