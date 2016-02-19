@@ -3,6 +3,7 @@ package magic.ui.utility;
 import java.awt.Color;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
+import java.awt.Image;
 import java.awt.image.ImageObserver;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -23,7 +24,6 @@ import magic.model.event.MagicManaActivation;
 import magic.ui.MagicImages;
 import magic.ui.widget.FontsAndBorders;
 import magic.ui.theme.AbilityIcon;
-import magic.ui.card.CardIcon;
 import magic.utility.MagicSystem;
 import magic.data.TextImages;
 
@@ -92,9 +92,9 @@ public class ImageDrawingUtils {
         int ax,
         final int ay
     ) {
-        for (final CardIcon cardIcon : AbilityIcon.getIcons(abilityFlags)) {
-            g.drawImage(cardIcon.getIcon().getImage(),ax,ay,observer);
-            ax+=16;
+        for (final Image icon : AbilityIcon.getSmallAbilityIcons(abilityFlags)) {
+            g.drawImage(icon, ax, ay, observer);
+            ax += 16;
         }
         return ax;
     }

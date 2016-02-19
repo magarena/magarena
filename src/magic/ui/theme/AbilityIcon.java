@@ -1,8 +1,11 @@
 package magic.ui.theme;
 
+import java.awt.Image;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 import javax.swing.ImageIcon;
 import magic.data.MagicIcon;
 import magic.ui.MagicImages;
@@ -54,6 +57,7 @@ public enum AbilityIcon {
 
     private final static String PROTECTION_TOOLTIP = "Protection is normally written \"Protection from {quality}\". For example, something with protection from black can’t be the target of black spells or abilities of black cards. Black spells and abilities that don’t use the word “target” still affect a creature with protection. Anything with protection from black can’t be damaged by black cards. Black creatures can’t block an attacking creature with protection from black.";
 
+    private MagicIcon smallIcon;
     private ImageIcon iconImage;
     private final String iconName;
     private final String tooltip;
@@ -63,6 +67,7 @@ public enum AbilityIcon {
         this.iconName = name;
         this.tooltip = tooltip;
         this.ability = ability;
+        this.smallIcon = magicIcon;
         setIconImage(magicIcon);
     }
     private AbilityIcon(final MagicAbility ability, final String name, final String tooltip) {
@@ -90,7 +95,7 @@ public enum AbilityIcon {
         return tooltip;
     }
 
-    public MagicAbility getAbility() {
+    private MagicAbility getAbility() {
         return ability;
     }
 
@@ -114,14 +119,21 @@ public enum AbilityIcon {
         return icons;
     }
 
-    public static List<CardIcon> getIcons(final Set<MagicAbility> abilities) {
-        final List<CardIcon> icons = new ArrayList<>();
-        for (AbilityIcon abilityIcon : AbilityIcon.values()) {
-            if (abilityIcon.getIcon() != null && abilities.contains(abilityIcon.getAbility())) {
-                icons.add(getAbilityIcon(abilityIcon));
-            }
-        }
-        return icons;
+    private ImageIcon getSmallIcon() {
+        return smallIcon != null
+            ? MagicImages.getIcon(smallIcon)
+            : null;
+    }
+
+    /**
+     * Returns a list of small 16x16 ability icon images that are 
+     * drawn onto a card image displayed on the battlefield.
+     */
+    public static  List<Image> getSmallAbilityIcons(final Set<MagicAbility> abilities) {
+        return Stream.of(values())
+            .filter(i -> i.getSmallIcon() != null && abilities.contains(i.ability))
+            .map(i -> i.getSmallIcon().getImage())
+            .collect(Collectors.toList());
     }
 
     private static CardIcon getAbilityIcon(final AbilityIcon abilityIcon) {
