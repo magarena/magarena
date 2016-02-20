@@ -4,6 +4,6 @@ value=1.804
 rarity=U
 type=Enchantment
 cost={2}{W}
-ability=Whenever a creature blocks a black or red creature, the blocking creature gets +1/+1 until end of turn.
 timing=enchantment
+requires_groovy_code
 oracle=Whenever a creature blocks a black or red creature, the blocking creature gets +1/+1 until end of turn.
