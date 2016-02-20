@@ -75,7 +75,63 @@ public class ZoneBackgroundLabel extends JLabel {
             paintZoneTile(g,aImage,rect);
         }
     }
-    
+ 
+    private void drawThemeBackground(final Graphics g) {
+
+        final Theme theme = MagicStyle.getTheme();
+        final Dimension size = getSize();
+
+        final int stretch = theme.getValue(Theme.VALUE_GAME_STRETCH);
+        final boolean battlefieldStretch = (stretch & 1) == 1;
+        final boolean playerStretch = (stretch & 2) == 2;
+        final boolean handStretch = (stretch & 4) == 4;
+
+        switch (theme.getValue(Theme.VALUE_GAME_LAYOUT)) {
+            case 1:
+                paintZone(g, theme.getTexture(Theme.TEXTURE_BATTLEFIELD),
+                    new Rectangle(0, 0, size.width, size.height), battlefieldStretch);
+                break;
+            case 2:
+                if (image) {
+                    paintZone(g, theme.getTexture(Theme.TEXTURE_PLAYER),
+                        new Rectangle(0, 0, size.width, size.height), playerStretch);
+                    paintZone(g, theme.getTexture(Theme.TEXTURE_BATTLEFIELD),
+                        new Rectangle(playerX, 0, size.width - playerX, handY), battlefieldStretch);
+                } else {
+                    paintZone(g, theme.getTexture(Theme.TEXTURE_PLAYER),
+                        new Rectangle(0, 0, playerX, size.height), playerStretch);
+                    paintZone(g, theme.getTexture(Theme.TEXTURE_BATTLEFIELD),
+                        new Rectangle(playerX, 0, size.width - playerX, size.height), battlefieldStretch);
+                }
+                break;
+            case 3:
+                paintZone(g, theme.getTexture(Theme.TEXTURE_PLAYER),
+                    new Rectangle(0, 0, playerX, size.height), playerStretch);
+                if (image) {
+                    paintZone(g, theme.getTexture(Theme.TEXTURE_BATTLEFIELD),
+                        new Rectangle(playerX, 0, size.width - playerX, handY), battlefieldStretch);
+                    paintZone(g, theme.getTexture(Theme.TEXTURE_HAND),
+                        new Rectangle(playerX, handY, size.width - playerX, handY), handStretch);
+                } else {
+                    paintZone(g, theme.getTexture(Theme.TEXTURE_BATTLEFIELD),
+                        new Rectangle(playerX, 0, size.width - playerX, size.height), battlefieldStretch);
+                }
+                break;
+        }
+        final int border = theme.getValue(Theme.VALUE_GAME_BORDER);
+        if (border > 0) {
+            final Graphics2D g2d = (Graphics2D) g;
+            g2d.setPaint(theme.getColor(Theme.COLOR_GAME_BORDER));
+            if (image) {
+                g2d.fillRect(playerX, 0, border, handY);
+                g2d.fillRect(playerX, handY, size.width - playerX, border);
+            } else {
+                g2d.fillRect(playerX, 0, border, size.height);
+            }
+        }
+
+    }
+
     private void drawCustomBackground(final Graphics g) {
         final Dimension size = getSize();
         final Theme theme = MagicStyle.getTheme();
@@ -95,59 +151,8 @@ public class ZoneBackgroundLabel extends JLabel {
 
     @Override
     public void paintComponent(final Graphics g) {
-
-        final Dimension size=getSize();
-        final Theme theme = MagicStyle.getTheme();
-
         if (game && !isCustomBackgroundImage()) {
-            final int stretch=theme.getValue(Theme.VALUE_GAME_STRETCH);
-            final boolean battlefieldStretch=(stretch&1)==1;
-            final boolean playerStretch=(stretch&2)==2;
-            final boolean handStretch=(stretch&4)==4;
-
-            switch (theme.getValue(Theme.VALUE_GAME_LAYOUT)) {
-                case 1:
-                    paintZone(g,theme.getTexture(Theme.TEXTURE_BATTLEFIELD),
-                            new Rectangle(0,0,size.width,size.height),battlefieldStretch);
-                    break;
-                case 2:
-                    if (image) {
-                        paintZone(g,theme.getTexture(Theme.TEXTURE_PLAYER),
-                                new Rectangle(0,0,size.width,size.height),playerStretch);
-                        paintZone(g,theme.getTexture(Theme.TEXTURE_BATTLEFIELD),
-                                new Rectangle(playerX,0,size.width-playerX,handY),battlefieldStretch);
-                    } else {
-                        paintZone(g,theme.getTexture(Theme.TEXTURE_PLAYER),
-                                new Rectangle(0,0,playerX,size.height),playerStretch);
-                        paintZone(g,theme.getTexture(Theme.TEXTURE_BATTLEFIELD),
-                                new Rectangle(playerX,0,size.width-playerX,size.height),battlefieldStretch);
-                    }
-                    break;
-                case 3:
-                    paintZone(g,theme.getTexture(Theme.TEXTURE_PLAYER),
-                            new Rectangle(0,0,playerX,size.height),playerStretch);
-                    if (image) {
-                        paintZone(g,theme.getTexture(Theme.TEXTURE_BATTLEFIELD),
-                                new Rectangle(playerX,0,size.width-playerX,handY),battlefieldStretch);
-                        paintZone(g,theme.getTexture(Theme.TEXTURE_HAND),
-                                new Rectangle(playerX,handY,size.width-playerX,handY),handStretch);
-                    } else {
-                        paintZone(g,theme.getTexture(Theme.TEXTURE_BATTLEFIELD),
-                                new Rectangle(playerX,0,size.width-playerX,size.height),battlefieldStretch);
-                    }
-                    break;
-            }
-            final int border=theme.getValue(Theme.VALUE_GAME_BORDER);
-            if (border>0) {
-                final Graphics2D g2d=(Graphics2D)g;
-                g2d.setPaint(theme.getColor(Theme.COLOR_GAME_BORDER));
-                if (image) {
-                    g2d.fillRect(playerX,0,border,handY);
-                    g2d.fillRect(playerX,handY,size.width-playerX,border);
-                } else {
-                    g2d.fillRect(playerX,0,border,size.height);
-                }
-            }
+            drawThemeBackground(g);
         } else {
             drawCustomBackground(g);
         }
