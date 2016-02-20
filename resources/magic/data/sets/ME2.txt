@@ -73,6 +73,7 @@ Fire Dragon
 Flame Spirit
 Folk of the Pines
 Forbidden Lore
+Forest
 Forgotten Lore
 Foul Familiar
 Fumarole
@@ -105,6 +106,7 @@ Incinerate
 Infernal Darkness
 Inheritance
 Ironclaw Orcs
+Island
 Ivory Gargoyle
 Jester's Mask
 Jeweled Amulet
@@ -137,6 +139,7 @@ Meteor Shower
 Minion of Leshrac
 Mishra's Groundbreaker
 Misinformation
+Mountain
 Mudslide
 Musician
 Narwhal
@@ -162,6 +165,7 @@ Phantasmal Mount
 Phyrexian Devourer
 Phyrexian Portal
 Pillage
+Plains
 Portent
 Pyrokinesis
 Ravages of War
@@ -213,6 +217,7 @@ Stromgald Cabal
 Stunted Growth
 Sustaining Spirit
 Svyelunite Temple
+Swamp
 Swords to Plowshares
 Taiga
 Temporal Manipulation
