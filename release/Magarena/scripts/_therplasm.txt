@@ -6,6 +6,6 @@ type=Creature
 subtype=Illusion
 cost={2}{U}{U}
 pt=1/1
-ability=Whenever SN blocks a creature, you may return SN to its owner's hand. If you do, you may put a creature card from your hand onto the battlefield blocking that creature.
 timing=main
+requires_groovy_code
 oracle=Whenever Ætherplasm blocks a creature, you may return Ætherplasm to its owner's hand. If you do, you may put a creature card from your hand onto the battlefield blocking that creature.
