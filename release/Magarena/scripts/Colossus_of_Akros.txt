@@ -7,7 +7,7 @@ subtype=Golem
 cost={8}
 pt=10/10
 ability=Defender, indestructible;\
-        {10}: Monstrosity 10.;\
-        As long as SN is monstrous, it has trample and can attack as though it didn't have defender.
+        {10}: Monstrosity 10.
 timing=smain
+requires_groovy_code
 oracle=Defender, indestructible\n{10}: Monstrosity 10.\nAs long as Colossus of Akros is monstrous, it has trample and can attack as though it didn't have defender.
