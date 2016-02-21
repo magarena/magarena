@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={W}
-ability=Enchant Wall;\
-        Enchanted Wall can attack as though it didn't have defender.
+ability=Enchant Wall
 timing=aura
+enchant=pump,wall
+given_ability=can attack as though it didn't have defender
 oracle=Enchant Wall\nEnchanted Wall can attack as though it didn't have defender.
