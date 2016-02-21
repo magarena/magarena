@@ -18,7 +18,6 @@ import magic.ui.utility.MagicStyle;
 @SuppressWarnings("serial")
 public class ZoneBackgroundLabel extends JLabel {
 
-    private boolean image=true;
     private int playerX;
     private int handY;
     private BufferedImage customImage;
@@ -27,10 +26,6 @@ public class ZoneBackgroundLabel extends JLabel {
         if (isCustomBackgroundImage()) {
             customImage = GraphicsUtils.getCustomBackgroundImage();
         }
-    }
-
-    public void setImage(final boolean image) {
-        this.image=image;
     }
 
     public void setZones(final ResolutionProfileResult result) {
@@ -94,29 +89,16 @@ public class ZoneBackgroundLabel extends JLabel {
         final boolean battlefieldStretch = (stretch & 1) == 1;
         final boolean playerStretch = (stretch & 2) == 2;
 
-        if (image) {
-            paintZone(g,
-                theme.getTexture(Theme.TEXTURE_PLAYER),
-                new Rectangle(0, 0, size.width, size.height),
-                playerStretch
-            );
-            paintZone(g,
-                theme.getTexture(Theme.TEXTURE_BATTLEFIELD),
-                new Rectangle(playerX, 0, size.width - playerX, handY),
-                battlefieldStretch
-            );
-        } else {
-            paintZone(g,
-                theme.getTexture(Theme.TEXTURE_PLAYER),
-                new Rectangle(0, 0, playerX, size.height),
-                playerStretch
-            );
-            paintZone(g,
-                theme.getTexture(Theme.TEXTURE_BATTLEFIELD),
-                new Rectangle(playerX, 0, size.width - playerX, size.height),
-                battlefieldStretch
-            );
-        }
+        paintZone(g,
+            theme.getTexture(Theme.TEXTURE_PLAYER),
+            new Rectangle(0, 0, size.width, size.height),
+            playerStretch
+        );
+        paintZone(g,
+            theme.getTexture(Theme.TEXTURE_BATTLEFIELD),
+            new Rectangle(playerX, 0, size.width - playerX, handY),
+            battlefieldStretch
+        );
     }
 
     private void drawLayout3(final Graphics g) {
@@ -132,24 +114,16 @@ public class ZoneBackgroundLabel extends JLabel {
             new Rectangle(0, 0, playerX, size.height), 
             playerStretch
         );
-        if (image) {
-            paintZone(g, 
-                theme.getTexture(Theme.TEXTURE_BATTLEFIELD),
-                new Rectangle(playerX, 0, size.width - playerX, handY), 
-                battlefieldStretch
-            );
-            paintZone(g,
-                theme.getTexture(Theme.TEXTURE_HAND),
-                new Rectangle(playerX, handY, size.width - playerX, handY), 
-                handStretch
-            );
-        } else {
-            paintZone(g,
-                theme.getTexture(Theme.TEXTURE_BATTLEFIELD),
-                new Rectangle(playerX, 0, size.width - playerX, size.height), 
-                battlefieldStretch
-            );
-        }
+        paintZone(g,
+            theme.getTexture(Theme.TEXTURE_BATTLEFIELD),
+            new Rectangle(playerX, 0, size.width - playerX, handY),
+            battlefieldStretch
+        );
+        paintZone(g,
+            theme.getTexture(Theme.TEXTURE_HAND),
+            new Rectangle(playerX, handY, size.width - playerX, handY),
+            handStretch
+        );
     }
 
     private void drawBattlefieldBorder(final Graphics g) {
@@ -159,12 +133,8 @@ public class ZoneBackgroundLabel extends JLabel {
         if (border > 0) {
             final Graphics2D g2d = (Graphics2D) g;
             g2d.setPaint(theme.getColor(Theme.COLOR_GAME_BORDER));
-            if (image) {
-                g2d.fillRect(playerX, 0, border, handY);
-                g2d.fillRect(playerX, handY, size.width - playerX, border);
-            } else {
-                g2d.fillRect(playerX, 0, border, size.height);
-            }
+            g2d.fillRect(playerX, 0, border, handY);
+            g2d.fillRect(playerX, handY, size.width - playerX, border);
         }
     }
  

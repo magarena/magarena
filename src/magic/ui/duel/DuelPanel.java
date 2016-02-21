@@ -144,7 +144,6 @@ public final class DuelPanel extends JPanel {
     }
 
     void updateView() {
-        backgroundLabel.setImage(true);
         resizeComponents();
         revalidate();
         repaint();
