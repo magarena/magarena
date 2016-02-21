@@ -26,7 +26,7 @@ public class ZoneBackgroundLabel extends JLabel {
 
     public void setGame(final boolean game) {
         this.game=game;
-        if (GeneralConfig.getInstance().isCustomBackground()) {
+        if (isCustomBackgroundImage()) {
             customImage = GraphicsUtils.getCustomBackgroundImage();
         }
     }
@@ -75,6 +75,23 @@ public class ZoneBackgroundLabel extends JLabel {
             paintZoneTile(g,aImage,rect);
         }
     }
+    
+    private void drawCustomBackground(final Graphics g) {
+        final Dimension size = getSize();
+        final Theme theme = MagicStyle.getTheme();
+        final BufferedImage background;
+        if (isCustomBackgroundImage()) {
+            background = customImage;
+        } else {
+            background = theme.getTexture(Theme.TEXTURE_BACKGROUND);
+        }
+        final boolean stretchTexture = theme.getValue(Theme.VALUE_BACKGROUND_STRETCH) == 1;
+        paintZone(g, background, new Rectangle(0, 0, size.width, size.height), stretchTexture);
+    }
+
+    private boolean isCustomBackgroundImage() {
+        return GeneralConfig.getInstance().isCustomBackground();
+    }
 
     @Override
     public void paintComponent(final Graphics g) {
@@ -82,7 +99,7 @@ public class ZoneBackgroundLabel extends JLabel {
         final Dimension size=getSize();
         final Theme theme = MagicStyle.getTheme();
 
-        if (game && !GeneralConfig.getInstance().isCustomBackground()) {
+        if (game && !isCustomBackgroundImage()) {
             final int stretch=theme.getValue(Theme.VALUE_GAME_STRETCH);
             final boolean battlefieldStretch=(stretch&1)==1;
             final boolean playerStretch=(stretch&2)==2;
@@ -132,14 +149,7 @@ public class ZoneBackgroundLabel extends JLabel {
                 }
             }
         } else {
-            final BufferedImage background;
-            if (GeneralConfig.getInstance().isCustomBackground()) {
-                background = customImage;
-            } else {
-                background = theme.getTexture(Theme.TEXTURE_BACKGROUND);
-            }
-            final boolean stretchTexture=theme.getValue(Theme.VALUE_BACKGROUND_STRETCH)==1;
-            paintZone(g, background, new Rectangle(0,0,size.width,size.height),stretchTexture);
+            drawCustomBackground(g);
         }
     }
 
