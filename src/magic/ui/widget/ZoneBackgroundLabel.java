@@ -11,6 +11,7 @@ import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfileType;
 import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
+import magic.ui.utility.GraphicsUtils;
 import magic.ui.utility.MagicStyle;
 
 @SuppressWarnings("serial")
@@ -18,8 +19,11 @@ public class ZoneBackgroundLabel extends JLabel implements IThemeStyle {
 
     private int playerX;
     private int handY;
+    private BufferedImage cachedImage;
+    private Dimension cachedSize = new Dimension();
 
     public ZoneBackgroundLabel() {
+        setOpaque(true);
         refreshStyle();
     }
 
@@ -148,10 +152,38 @@ public class ZoneBackgroundLabel extends JLabel implements IThemeStyle {
         drawBattlefieldBorder(g);
     }
 
+    private boolean redrawImage() {
+        return cachedImage == null || !cachedSize.equals(getSize());
+    }
+
+    private void createBackgroundImage() {
+        cachedSize = new Dimension(getSize());
+        cachedImage = GraphicsUtils.getCompatibleBufferedImage(cachedSize.width, cachedSize.height);
+        final Graphics2D g2d = cachedImage.createGraphics();
+        drawThemeBackground(g2d);
+        g2d.dispose();
+    }
+
+    private void drawCachedImage(final Graphics g) {
+        final Rectangle r = g.getClipBounds();
+        if (r == null) {
+            g.drawImage(cachedImage, 0, 0, null);
+        } else {
+            g.drawImage(cachedImage,
+                r.x, r.y, r.x + r.width, r.y + r.height,
+                r.x, r.y, r.x + r.width, r.y + r.height,
+                null
+            );
+        }
+    }
+
     @Override
     public void paintComponent(final Graphics g) {
         // paintComponent() will only be called if instance is visible.
-        drawThemeBackground(g);
+        if (redrawImage()) {
+            createBackgroundImage();
+        }
+        drawCachedImage(g);
     }
 
     @Override
