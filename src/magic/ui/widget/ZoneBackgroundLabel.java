@@ -9,21 +9,18 @@ import javax.swing.JLabel;
 import magic.data.GeneralConfig;
 import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfileType;
+import magic.ui.screen.interfaces.IThemeStyle;
 import magic.ui.theme.Theme;
-import magic.ui.utility.GraphicsUtils;
 import magic.ui.utility.MagicStyle;
 
 @SuppressWarnings("serial")
-public class ZoneBackgroundLabel extends JLabel {
+public class ZoneBackgroundLabel extends JLabel implements IThemeStyle {
 
     private int playerX;
     private int handY;
-    private BufferedImage customImage;
 
-    public void setGame() {
-        if (isCustomBackgroundImage()) {
-            customImage = GraphicsUtils.getCustomBackgroundImage();
-        }
+    public ZoneBackgroundLabel() {
+        refreshStyle();
     }
 
     public void setZones(final ResolutionProfileResult result) {
@@ -151,30 +148,15 @@ public class ZoneBackgroundLabel extends JLabel {
         drawBattlefieldBorder(g);
     }
 
-    private void drawCustomBackground(final Graphics g) {
-        final Dimension size = getSize();
-        final Theme theme = MagicStyle.getTheme();
-        final BufferedImage background;
-        if (isCustomBackgroundImage()) {
-            background = customImage;
-        } else {
-            background = theme.getTexture(Theme.TEXTURE_BACKGROUND);
-        }
-        final boolean stretchTexture = theme.getValue(Theme.VALUE_BACKGROUND_STRETCH) == 1;
-        paintZone(g, background, new Rectangle(0, 0, size.width, size.height), stretchTexture);
-    }
-
-    private boolean isCustomBackgroundImage() {
-        return GeneralConfig.getInstance().isCustomBackground();
+    @Override
+    public void paintComponent(final Graphics g) {
+        // paintComponent() will only be called if instance is visible.
+        drawThemeBackground(g);
     }
 
     @Override
-    public void paintComponent(final Graphics g) {
-        if (!isCustomBackgroundImage()) {
-            drawThemeBackground(g);
-        } else {
-            drawCustomBackground(g);
-        }
+    public void refreshStyle() {
+        setVisible(!GeneralConfig.getInstance().isCustomBackground());
     }
 
 }

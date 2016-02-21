@@ -347,9 +347,9 @@ public class MagicFrame extends JFrame implements IImageDragDropListener {
             ScreenController.showWarningMessage(
                     String.format("%s\n\n%s", UiString.get(_S6), ex.getMessage()));
         }
-        refreshBackground();
         config.setCustomBackground(true);
         config.save();
+        refreshLookAndFeel();
     }
 
     private void refreshBackground() {
