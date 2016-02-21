@@ -188,6 +188,7 @@ public class ZoneBackgroundLabel extends JLabel implements IThemeStyle {
 
     @Override
     public void refreshStyle() {
+        cachedImage = null;
         setVisible(!GeneralConfig.getInstance().isCustomBackground());
     }
 
