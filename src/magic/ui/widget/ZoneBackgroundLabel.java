@@ -18,14 +18,12 @@ import magic.ui.utility.MagicStyle;
 @SuppressWarnings("serial")
 public class ZoneBackgroundLabel extends JLabel {
 
-    private boolean game;
     private boolean image=true;
     private int playerX;
     private int handY;
     private BufferedImage customImage;
 
-    public void setGame(final boolean game) {
-        this.game=game;
+    public void setGame() {
         if (isCustomBackgroundImage()) {
             customImage = GraphicsUtils.getCustomBackgroundImage();
         }
@@ -204,7 +202,7 @@ public class ZoneBackgroundLabel extends JLabel {
 
     @Override
     public void paintComponent(final Graphics g) {
-        if (game && !isCustomBackgroundImage()) {
+        if (!isCustomBackgroundImage()) {
             drawThemeBackground(g);
         } else {
             drawCustomBackground(g);
