@@ -164,26 +164,13 @@ public class ZoneBackgroundLabel extends JLabel implements IThemeStyle {
         g2d.dispose();
     }
 
-    private void drawCachedImage(final Graphics g) {
-        final Rectangle r = g.getClipBounds();
-        if (r == null) {
-            g.drawImage(cachedImage, 0, 0, null);
-        } else {
-            g.drawImage(cachedImage,
-                r.x, r.y, r.x + r.width, r.y + r.height,
-                r.x, r.y, r.x + r.width, r.y + r.height,
-                null
-            );
-        }
-    }
-
     @Override
     public void paintComponent(final Graphics g) {
         // paintComponent() will only be called if instance is visible.
         if (redrawImage()) {
             createBackgroundImage();
         }
-        drawCachedImage(g);
+        g.drawImage(cachedImage, 0, 0, null);
     }
 
     @Override
