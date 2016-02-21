@@ -1,18 +1,16 @@
 package magic.ui.widget;
 
+import java.awt.Dimension;
+import java.awt.Graphics2D;
+import java.awt.Graphics;
+import java.awt.Rectangle;
+import java.awt.image.BufferedImage;
+import javax.swing.JLabel;
 import magic.data.GeneralConfig;
 import magic.ui.duel.resolution.ResolutionProfileResult;
 import magic.ui.duel.resolution.ResolutionProfileType;
 import magic.ui.theme.Theme;
-
 import magic.ui.utility.GraphicsUtils;
-import javax.swing.JLabel;
-
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Rectangle;
-import java.awt.image.BufferedImage;
 import magic.ui.utility.MagicStyle;
 
 @SuppressWarnings("serial")
