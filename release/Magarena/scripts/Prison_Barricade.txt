@@ -7,7 +7,7 @@ subtype=Wall
 cost={1}{W}
 pt=1/3
 ability=Defender;\
-        Kicker {1}{W};\
-        If SN was kicked, it enters the battlefield with a +1/+1 counter on it and with "SN can attack as though it didn't have defender."
+        Kicker {1}{W}
 timing=smain
+requires_groovy_code
 oracle=Defender\nKicker {1}{W}\nIf Prison Barricade was kicked, it enters the battlefield with a +1/+1 counter on it and with "Prison Barricade can attack as though it didn't have defender."
