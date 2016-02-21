@@ -7,6 +7,6 @@ subtype=Aura
 cost={W}
 ability=Enchant Wall
 timing=aura
-enchant=pump,wall
+enchant=pump,pos wall
 given_ability=can attack as though it didn't have defender
 oracle=Enchant Wall\nEnchanted Wall can attack as though it didn't have defender.
