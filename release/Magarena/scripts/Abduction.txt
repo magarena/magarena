@@ -7,7 +7,8 @@ subtype=Aura
 cost={2}{U}{U}
 ability=Enchant creature;\
         When SN enters the battlefield, untap enchanted creature.;\
-        You control enchanted creature.;\
-        When enchanted creature dies, return that card to the battlefield under its owner's control.
+        You control enchanted creature.
 timing=aura
+enchant=gain control,neg creature
+requires_groovy_code
 oracle=Enchant creature\nWhen Abduction enters the battlefield, untap enchanted creature.\nYou control enchanted creature.\nWhen enchanted creature dies, return that card to the battlefield under its owner's control.
