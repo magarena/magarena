@@ -835,10 +835,14 @@ public class SwingGameController implements IUIGameController {
             });
         }
         showMessage(MagicSource.NONE,
-                String.format("{L} %s",
-                        UiString.get(_S3,
-                                game.getLosingPlayer(),
-                                gameConceded.get() ? UiString.get(_S1) : UiString.get(_S2))));
+            String.format("{L} %s",
+                UiString.get(
+                    _S3,
+                    game.getLosingPlayer(),
+                    gameConceded.get() ? UiString.get(_S1) : UiString.get(_S2)
+                )
+            )
+        );
     }
 
     private void playEndGameSoundEffect() {
