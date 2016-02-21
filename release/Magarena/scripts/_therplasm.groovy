@@ -1,19 +1,24 @@
+def blocking = {
+    final MagicPermanent attacker ->
+    return {
+        final MagicPermanent perm ->
+        final MagicGame game = perm.getGame();
+        game.doAction(new SetBlockerAction(attacker.map(game), perm));
+    };
+}
+
 def action = {
     final MagicGame game, final MagicEvent event ->
-        if (event.isYes()) {
-            event.processTargetCard(game, {
-                final MagicPermanent attacker = event.getRefPermanent();
-                game.doAction(new PlayCardAction(
-                    it,
-                    event.getPlayer(),
-                    {
-                        final MagicPermanent perm ->
-                            final MagicGame G = perm.getGame();
-                            G.doAction(new SetBlockerAction(attacker.map(G), perm));
-                    }
-                ));
-            });
-        }
+    if (event.isYes()) {
+        event.processTargetCard(game, {
+            game.doAction(new ReturnCardAction(
+                MagicLocationType.OwnersHand,
+                it,
+                event.getPlayer(),
+                blocking(event.getRefPermanent())
+            ));
+        });
+    }
 }
 
 [
