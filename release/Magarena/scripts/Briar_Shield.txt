@@ -6,7 +6,8 @@ type=Enchantment
 subtype=Aura
 cost={G}
 ability=Enchant creature;\
-        Enchanted creature gets +1/+1.;\
-        Sacrifice SN: Enchanted creature gets +3/+3 until end of turn.
+        Enchanted creature gets +1/+1.
 timing=aura
+enchant=pump,pos creature
+requires_groovy_code
 oracle=Enchant creature\nEnchanted creature gets +1/+1.\nSacrifice Briar Shield: Enchanted creature gets +3/+3 until end of turn.
