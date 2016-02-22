@@ -9,4 +9,5 @@ ability=Enchant creature;\
         Enchanted creature gets +0/+2.;\
         Sacrifice SN: Regenerate enchanted creature.
 timing=aura
+enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature gets +0/+2.\nSacrifice Carapace: Regenerate enchanted creature.
