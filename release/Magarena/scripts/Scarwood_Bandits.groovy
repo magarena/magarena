@@ -3,7 +3,7 @@ def action = {
     if (event.isNo()) {
         game.doAction(new AddStaticAction(
             event.getPermanent(),
-            MagicStatic.ControlAsLongAsYouControlSource(
+            MagicStatic.ControlAsLongAsSourceIsOnBattlefield(
                 event.getPermanent().getController(),
                 event.getRefPermanent()
             )
