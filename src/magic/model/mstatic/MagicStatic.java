@@ -1,7 +1,10 @@
 package magic.model.mstatic;
 
+import java.util.Set;
+
 import magic.model.MagicAbility;
 import magic.model.MagicAbilityList;
+import magic.model.MagicAmount;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicChangeCardDefinition;
 import magic.model.MagicColor;
@@ -12,19 +15,14 @@ import magic.model.MagicPlayer;
 import magic.model.MagicPowerToughness;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
-import magic.model.MagicAmount;
-import magic.model.condition.MagicCondition;
-import magic.model.action.RemoveStaticAction;
 import magic.model.action.PutStateTriggerOnStackAction;
-import magic.model.target.MagicTarget;
+import magic.model.action.RemoveStaticAction;
+import magic.model.condition.MagicCondition;
+import magic.model.event.MagicEvent;
+import magic.model.event.MagicSourceEvent;
 import magic.model.target.MagicPermanentTargetFilter;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
-import magic.model.target.MagicTargetHint;
-import magic.model.event.MagicSourceEvent;
-import magic.model.event.MagicEvent;
-
-import java.util.Set;
 
 public abstract class MagicStatic extends MagicDummyModifier implements MagicChangeCardDefinition {
 
@@ -296,6 +294,16 @@ public abstract class MagicStatic extends MagicDummyModifier implements MagicCha
             return source.getEnchantedPermanent() == target;
         }
     };
+
+    public static MagicStatic ControlAsLongAsSourceIsOnBattlefield(final MagicPlayer you, final MagicPermanent target) {
+        final MagicTargetFilter<MagicPermanent> filter = new MagicPermanentTargetFilter(target);
+        return new MagicStatic(MagicLayer.Control,filter) {
+            @Override
+            public MagicPlayer getController(final MagicPermanent source, final MagicPermanent permanent, final MagicPlayer player) {
+                return source.getController();
+            }
+        };
+    }
 
     public static MagicStatic ControlAsLongAsYouControlSource(final MagicPlayer you, final MagicPermanent target) {
         final MagicTargetFilter<MagicPermanent> filter = new MagicPermanentTargetFilter(target);
