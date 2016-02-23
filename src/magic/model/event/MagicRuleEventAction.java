@@ -2167,7 +2167,7 @@ public enum MagicRuleEventAction {
     },
     GainAbilityCantBlockSN(
         ARG.PERMANENTS + " can't block SN this turn",
-        MagicTargetHint.Positive,
+        MagicTargetHint.Negative,
         MagicTiming.Attack,
         "Can't Block"
     ) {
