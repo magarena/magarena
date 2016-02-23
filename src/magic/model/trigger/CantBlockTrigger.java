@@ -29,4 +29,17 @@ public abstract class CantBlockTrigger extends MagicTrigger<MagicPermanent> {
             }
         };
     }
+    
+    public static CantBlockTrigger create(final long id) {
+        return new CantBlockTrigger() {
+            @Override
+            public boolean accept(final MagicPermanent permanent, final MagicPermanent other) {
+                return other.getId() == id;
+            }
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent other) {
+                throw new GameException(getClass() + " does not have an executeTrigger method", game);
+            }
+        };
+    }
 }

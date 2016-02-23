@@ -24,12 +24,7 @@ import magic.model.mstatic.MagicStatic;
 import magic.model.stack.MagicCardOnStack;
 import magic.model.stack.MagicItemOnStack;
 import magic.model.target.*;
-import magic.model.trigger.AtEndOfCombatTrigger;
-import magic.model.trigger.AtEndOfTurnTrigger;
-import magic.model.trigger.AtUpkeepTrigger;
-import magic.model.trigger.PreventDamageTrigger;
-import magic.model.trigger.ReboundTrigger;
-import magic.model.trigger.ThisLeavesBattlefieldTrigger;
+import magic.model.trigger.*;
 
 public enum MagicRuleEventAction {
     ChooseOneOfThree(
@@ -2168,6 +2163,29 @@ public enum MagicRuleEventAction {
             } else {
                 return MagicActivation.NO_COND;
             }
+        }
+    },
+    GainAbilityCantBlockSN(
+        ARG.PERMANENTS + " can't block SN this turn",
+        MagicTargetHint.Positive,
+        MagicTiming.Attack,
+        "Can't Block"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return (game, event) -> {
+                final int pIdx = event.getPlayer().getIndex();
+                final CantBlockTrigger trigger = CantBlockTrigger.create(event.getPermanent().getId());
+                game.doAction(new AddStaticAction(new MagicStatic(MagicLayer.Game, MagicStatic.UntilEOT) {
+                    @Override
+                    public void modGame(final MagicPermanent source, final MagicGame game) {
+                        for (final MagicPermanent it : filter.filter(game.getPlayer(pIdx))) {
+                            it.addAbility(trigger);
+                        }
+                    }
+                }));
+            };
         }
     },
     GainAbilityCan(
