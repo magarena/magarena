@@ -103,6 +103,8 @@ public class DeckTableModel extends AbstractTableModel {
                         break;
             case 5:        comp = isDesc[column] ? MagicCondensedCardDefinition.TYPE_COMPARATOR_ASC : MagicCondensedCardDefinition.TYPE_COMPARATOR_DESC;
                         break;
+            case 6:        comp = isDesc[column] ? MagicCondensedCardDefinition.SUBTYPE_COMPARATOR_ASC : MagicCondensedCardDefinition.SUBTYPE_COMPARATOR_DESC;
+            			break;            
             case 7:        comp = isDesc[column] ? MagicCondensedCardDefinition.RARITY_COMPARATOR_ASC : MagicCondensedCardDefinition.RARITY_COMPARATOR_DESC;
                         break;
         }

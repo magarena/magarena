@@ -337,7 +337,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
     }
 
     public int getRarity() {
-        return rarity.ordinal();
+        return rarity == null ? -1 : rarity.ordinal();
     }
 
     public String getRarityString() {
@@ -980,11 +980,26 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
             return TYPE_COMPARATOR_DESC.compare(cardDefinition2, cardDefinition1);
         }
     };
+    
+    public static final Comparator<MagicCardDefinition> SUBTYPE_COMPARATOR_DESC=new Comparator<MagicCardDefinition>() {
+        @Override
+        public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {
+            final int c = cardDefinition1.getSubTypeString().compareTo(cardDefinition2.getSubTypeString());
+            return c;
+        }
+    };
+    
+    public static final Comparator<MagicCardDefinition> SUBTYPE_COMPARATOR_ASC=new Comparator<MagicCardDefinition>() {
+        @Override
+        public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {
+            return SUBTYPE_COMPARATOR_DESC.compare(cardDefinition2, cardDefinition1);
+        }
+    };
 
     public static final Comparator<MagicCardDefinition> RARITY_COMPARATOR_DESC=new Comparator<MagicCardDefinition>() {
         @Override
         public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {
-            return cardDefinition1.getRarityString().compareTo(cardDefinition2.getRarityString());
+            return cardDefinition1.getRarity() - cardDefinition2.getRarity();
         }
     };
 
@@ -1080,6 +1095,6 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
             return false;
         } else {
             return true;
-        }
-    }
+		}
+	}
 }
