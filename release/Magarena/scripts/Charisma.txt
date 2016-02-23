@@ -5,7 +5,8 @@ rarity=R
 type=Enchantment
 subtype=Aura
 cost={U}{U}{U}
-ability=Enchant creature;\
-        Whenever enchanted creature deals damage to a creature, gain control of the other creature for as long as SN remains on the battlefield.
+ability=Enchant creature
 timing=aura
+enchant=pump,pos creature
+requires_groovy_code
 oracle=Enchant creature\nWhenever enchanted creature deals damage to a creature, gain control of the other creature for as long as Charisma remains on the battlefield.
