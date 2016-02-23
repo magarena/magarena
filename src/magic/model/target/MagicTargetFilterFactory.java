@@ -1277,6 +1277,13 @@ public class MagicTargetFilterFactory {
         }
     };
 
+   public static final MagicPermanentFilterImpl CREATURE_WITHOUT_DEFENDER = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            return target.isCreature() &&
+                   !target.hasAbility(MagicAbility.Defender);
+        }
+    };
+
     public static final MagicPermanentFilterImpl CREATURE_WITHOUT_FLYING_YOUR_OPPONENT_CONTROLS =new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
             return target.isCreature() &&
@@ -2660,6 +2667,7 @@ public class MagicTargetFilterFactory {
         single.put("creature with flying or reach", CREATURE_WITH_FLYING_OR_REACH);
         single.put("blue or black creature with flying", BLUE_OR_BLACK_CREATURE_WITH_FLYING);
         single.put("creature without flying", CREATURE_WITHOUT_FLYING);
+        single.put("creature without defender", CREATURE_WITHOUT_DEFENDER);
         single.put("creature with defender",  CREATURE_WITH_DEFENDER);
         single.put("creature with a morph ability", CREATURE_WITH_MORPH_ABILITY);
         single.put("creature with horsemanship", CREATURE_WITH_HORSEMANSHIP);
