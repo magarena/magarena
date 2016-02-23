@@ -1,14 +1,13 @@
 def toBattlefield = {
     final MagicGame game, final MagicEvent event ->
-        event.processChosenCards(game, {
-            final MagicCard chosen ->
-                final MagicPlayer player = event.getPlayer();
-                for (final MagicCard card : player.getLibrary()) {
-                    if (card == chosen) {
-                        game.doAction(new PlayCardAction(card));
-                    }
-                }
-        });
+    event.processChosenCards(game, {
+        final MagicCard card ->
+        game.doAction(new ReturnCardAction(
+            MagicLocationType.OwnersLibrary,
+            card,
+            event.getPlayer()
+        ))
+    });
 }
 
 [
