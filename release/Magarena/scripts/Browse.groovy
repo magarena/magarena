@@ -2,8 +2,7 @@ def TakeCard = {
     final MagicGame game, final MagicEvent event ->
     event.processChosenCards(game, {
         final MagicCard chosen ->
-        final MagicCardList top = new MagicCardList(event.getPlayer().getLibrary().getCardsFromTop(5));
-        for (final MagicCard card : top) {
+        for (final MagicCard card : event.getRefCardList()) {
             game.doAction(new ShiftCardAction(
                 card,
                 MagicLocationType.OwnersLibrary,
@@ -38,11 +37,12 @@ def TakeCard = {
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final List<MagicCard> topCards = event.getPlayer().getLibrary().getCardsFromTop(5);
+            final MagicCardList topCards = event.getPlayer().getLibrary().getCardsFromTop(5);
             game.addEvent(new MagicEvent(
                 event.getSource(),
-                new MagicFromCardListChoice(topCards,1),
+                new MagicFromCardListChoice(topCards, 1),
                 MagicGraveyardTargetPicker.ReturnToHand,
+                topCards,
                 TakeCard,
                 "PN puts a card into his or her hand."
             ));

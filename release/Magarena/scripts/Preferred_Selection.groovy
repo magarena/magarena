@@ -1,33 +1,31 @@
 def TakeCard = {
     final MagicGame game, final MagicEvent event ->
     event.processChosenCards(game, {
-        final MagicCard chosen ->
-        final MagicCardList library = new MagicCardList(event.getPlayer().getLibrary().getCardsFromTop(2));
-        for (final MagicCard card : library) {
-            if (card == chosen) { // Not a draw action, card is 'put' into hand
-                game.doAction(new ShiftCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.OwnersHand));
-            }
-        }
+        final MagicCard card ->
+        game.doAction(new ShiftCardAction(
+            card,
+            MagicLocationType.OwnersLibrary,
+            MagicLocationType.OwnersHand
+        ));
     });
 }
 
 def PutCard = {
     final MagicGame game, final MagicEvent event ->
     event.processChosenCards(game, {
-        final MagicCard chosen ->
-        final MagicCardList library = new MagicCardList(event.getPlayer().getLibrary().getCardsFromTop(2));
-        for (final MagicCard card : library) {
-            if (card == chosen) {
-                game.doAction(new ShiftCardAction(card, MagicLocationType.OwnersLibrary, MagicLocationType.BottomOfOwnersLibrary));
-            }
-        }
+        final MagicCard card ->
+        game.doAction(new ShiftCardAction(
+            card,
+            MagicLocationType.OwnersLibrary,
+            MagicLocationType.BottomOfOwnersLibrary
+        ));
     });
 }
 
 def ACTION = {
     final MagicGame game, final MagicEvent event ->
     final MagicPlayer player = event.getPlayer();
-    final List<MagicCard> topCards = player.getLibrary().getCardsFromTop(2);
+    final MagicCardList topCards = player.getLibrary().getCardsFromTop(2);
     final MagicEvent sacEvent = new MagicSacrificeEvent(event.getPermanent());
     final MagicEvent payMana = new MagicPayManaCostEvent(event.getSource(), "{2}{G}{G}");
     if (event.isYes() && sacEvent.isSatisfied() && payMana.isSatisfied()) {
