@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Wizard,Mutant
 cost={2}{U}{U}
 pt=0/0
-ability=Graft 2;\
-        {U}, {T}: Gain control of target creature with a +1/+1 counter on it for as long as SN remains on the battlefield.
+ability=Graft 2
 timing=main
+requires_groovy_code
 oracle=Graft 2\n{U}, {T}: Gain control of target creature with a +1/+1 counter on it for as long as Cytoplast Manipulator remains on the battlefield.
