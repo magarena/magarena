@@ -1,5 +1,5 @@
 def TARGET_EQUIPMENT_YOU_CONTROL = new MagicTargetChoice("target Equipment you control");
-        
+
 [
     new MagicPermanentActivation(
         [MagicCondition.SORCERY_CONDITION],

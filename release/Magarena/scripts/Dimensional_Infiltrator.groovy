@@ -19,7 +19,7 @@ def action = {
                 new MagicPayManaCostEvent(source,"{1}{C}")
             ];
         }
-        
+
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
