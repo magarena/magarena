@@ -100,6 +100,11 @@ public enum MagicAbility {
             ));
         }
     },
+    Skulk("skulk", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(CantBeBlockedTrigger.Skulk);
+        }
+    },
 
     // keyword abilities
     Undying("undying",60) {

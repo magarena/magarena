@@ -17,6 +17,18 @@ public abstract class CantBeBlockedTrigger extends MagicTrigger<MagicPermanent> 
         return MagicTriggerType.CannotBeBlocked;
     }
 
+    public static final CantBeBlockedTrigger Skulk =
+        new CantBeBlockedTrigger() {
+            @Override
+            public boolean accept(final MagicPermanent permanent, final MagicPermanent other) {
+                return other.getPower() > permanent.getPower();
+            }
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent other) {
+                throw new GameException(getClass() + " does not have an executeTrigger method", game);
+            }
+        };
+
     public static CantBeBlockedTrigger create(final MagicTargetFilter<MagicPermanent> filter) {
         return new CantBeBlockedTrigger() {
             @Override
