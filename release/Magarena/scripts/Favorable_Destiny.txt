@@ -5,8 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{W}
-ability=Enchant creature;\
-        Enchanted creature gets +1/+2 as long as it's white.;\
-        Enchanted creature has shroud as long as its controller controls another creature.
+ability=Enchant creature
 timing=aura
+enchant=pump,pos creature
+requires_groovy_code
 oracle=Enchant creature\nEnchanted creature gets +1/+2 as long as it's white.\nEnchanted creature has shroud as long as its controller controls another creature.
