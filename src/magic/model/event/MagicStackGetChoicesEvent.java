@@ -23,7 +23,7 @@ public class MagicStackGetChoicesEvent extends MagicEvent {
         itemOnStack.setChoiceResults(event.getChosen());
 
         // trigger WhenTargeted
-        final MagicTargetChoice tchoice = event.getChoice().getTargetChoice();
+        final MagicTargetChoice tchoice = event.getTargetChoice();
         if (tchoice != null && tchoice.isTargeted()) {
             game.executeTrigger(MagicTriggerType.WhenTargeted,itemOnStack);
         }
