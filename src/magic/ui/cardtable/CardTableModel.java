@@ -54,17 +54,6 @@ public class CardTableModel implements TableModel {
         listeners.remove(l);
     }
 
-    static final String[] COLUMN_NAMES = {
-                                                "#",       // 0
-                                                "Name",    // 1
-                                                "CC",      // 2
-                                                "P",       // 3
-                                                "T",       // 4
-                                                "Type",    // 5
-                                                "Subtype", // 6
-                                                "Rarity",  // 7
-                                                "Text"};   // 8
-
     static final int[] COLUMN_MIN_WIDTHS = {
                                                 40,    // 0 #
                                                 180,   // 1 name
@@ -175,32 +164,14 @@ public class CardTableModel implements TableModel {
         return String.class;
     }
 
-    /**
-     * Returns the number of columns in the model. A JTable uses this method to
-     * determine how many columns it should create and display by default.
-     *
-     * @return the number of columns in the model
-     * @see #getRowCount
-     */
     @Override
-    public int getColumnCount()
-    {
-        return COLUMN_NAMES.length;
+    public int getColumnCount() {
+        return CardTableColumn.values().length;
     }
 
-    /**
-     * Returns the name of the column at columnIndex. This is used to initialize
-     * the table's column header name. Note: this name does not need to be
-     * unique; two columns in a table can have the same name.
-     *
-     * @param columnIndex
-     *            the index of the column
-     * @return the name of the column
-     */
     @Override
-    public String getColumnName(final int columnIndex)
-    {
-        return COLUMN_NAMES[columnIndex];
+    public String getColumnName(final int col) {
+        return CardTableColumn.values()[col].getCaption();
     }
 
     /**
