@@ -16,21 +16,7 @@ public class CardTableModel implements TableModel {
 
     private static final NumberFormat RATING_FMT = new DecimalFormat("#0.0");
 
-    static final int[] COLUMN_MIN_WIDTHS = {
-                                                40,    // 0 #
-                                                180,   // 1 name
-                                                140,   // 2 cc
-                                                30,    // 3 P
-                                                30,    // 4 T
-                                                140,   // 5 type
-                                                140,   // 6 subtype
-                                                90,    // 7 rarity
-                                                2000}; // 8 text
-
-    public static final int COST_COLUMN_INDEX = 2;
-
     private boolean showCardCount = false;
-
     private MagicCondensedDeck cardDefinitions;
     private Comparator<MagicCondensedCardDefinition> comp;
 
@@ -56,7 +42,6 @@ public class CardTableModel implements TableModel {
                 return i;
             }
         }
-
         return -1;
     }
 

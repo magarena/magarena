@@ -103,7 +103,7 @@ public class CardTablePanel extends TexturedPanel {
         ((DefaultTableCellRenderer)table.getTableHeader().getDefaultRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
 
         // special renderer for mana symbols
-        model.getColumn(CardTableModel.COST_COLUMN_INDEX).setCellRenderer(new ManaCostCellRenderer());
+        model.getColumn(CardTableColumn.Cost.ordinal()).setCellRenderer(new ManaCostCellRenderer());
 
 
         // listener to sort on column header click
@@ -178,8 +178,8 @@ public class CardTablePanel extends TexturedPanel {
 
     private void setColumnWidths(final TableColumnModel model) {
         for (int i = 0; i < model.getColumnCount(); i++) {
-            model.getColumn(i).setMinWidth(CardTableModel.COLUMN_MIN_WIDTHS[i]);
-            model.getColumn(i).setPreferredWidth(CardTableModel.COLUMN_MIN_WIDTHS[i]);
+            model.getColumn(i).setMinWidth(CardTableColumn.getMinWidth(i));
+            model.getColumn(i).setPreferredWidth(CardTableColumn.getMinWidth(i));
         }
     }
 
