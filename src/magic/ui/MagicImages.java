@@ -5,9 +5,13 @@ import java.awt.GraphicsEnvironment;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.net.Proxy;
 import java.util.HashMap;
 import java.util.Map;
+
 import javax.swing.ImageIcon;
+
+import magic.data.CardImageFile;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.data.TextImages;
@@ -27,6 +31,8 @@ import magic.utility.MagicResources;
 public final class MagicImages {
 
     public static final BufferedImage BACK_IMAGE;
+    private static Proxy proxy;
+
     static {
         BufferedImage image = ImageFileIO.toImg(MagicResources.getImageUrl("card-back.jpg"), null);
         Dimension size = getPreferredImageSize(image);
@@ -60,12 +66,14 @@ public final class MagicImages {
     private static final Map<Integer, BufferedImage> cache = new magic.data.LRUCache<>(MAX_IMAGES);
 
     /**
-     * Gets preferred viewing size for a card image based on preset setting in preferences.
+     * Gets preferred viewing size for a card image based on preset setting in
+     * preferences.
      * <p>
-     * Note the image's aspect ratio is king. If the preferred setting is not the same
-     * as the native image's then the image will be resized as close as possible to the
-     * preferred size whilst retaining the image's aspect ratio. This should ensure
-     * smooth transition between an animated and static image view.
+     * Note the image's aspect ratio is king. If the preferred setting is not
+     * the same as the native image's then the image will be resized as close as
+     * possible to the preferred size whilst retaining the image's aspect ratio.
+     * This should ensure smooth transition between an animated and static image
+     * view.
      */
     public static Dimension getPreferredImageSize(Image image) {
         ImageSizePresets preset = GeneralConfig.getInstance().getPreferredImageSize();
@@ -75,10 +83,7 @@ public final class MagicImages {
             Dimension approxPrefSize = preset.getSize();
             // ratio of image width to height.
             double imageRatio = image.getWidth(null) / (double) image.getHeight(null);
-            return new Dimension(
-                approxPrefSize.width,
-                (int)(approxPrefSize.width / imageRatio)
-            );
+            return new Dimension(approxPrefSize.width, (int) (approxPrefSize.width / imageRatio));
         }
     }
 
@@ -122,22 +127,22 @@ public final class MagicImages {
 
     public static ImageIcon getIcon(MagicColor c) {
         switch (c) {
-            case White:
-                return getBigManaIcon(MagicIcon.MANA_WHITE);
-            case Blue:
-                return getBigManaIcon(MagicIcon.MANA_BLUE);
-            case Black:
-                return getBigManaIcon(MagicIcon.MANA_BLACK);
-            case Green:
-                return getBigManaIcon(MagicIcon.MANA_GREEN);
-            case Red:
-                return getBigManaIcon(MagicIcon.MANA_RED);
+        case White:
+            return getBigManaIcon(MagicIcon.MANA_WHITE);
+        case Blue:
+            return getBigManaIcon(MagicIcon.MANA_BLUE);
+        case Black:
+            return getBigManaIcon(MagicIcon.MANA_BLACK);
+        case Green:
+            return getBigManaIcon(MagicIcon.MANA_GREEN);
+        case Red:
+            return getBigManaIcon(MagicIcon.MANA_RED);
         }
         throw new RuntimeException("No icon for MagicColor " + c);
     }
 
     public static ImageIcon getIcon(MagicCardDefinition cdef) {
-        if (cdef.getTypes().size()>1) {
+        if (cdef.getTypes().size() > 1) {
             return getIcon(MagicIcon.MULTIPLE);
         } else if (cdef.isLand()) {
             return getIcon(MagicIcon.LAND);
@@ -158,20 +163,20 @@ public final class MagicImages {
 
     public static ImageIcon getIcon(MagicManaType mtype) {
         switch (mtype) {
-            case Colorless:
-                return getSmallManaIcon(MagicIcon.MANA_COLORLESS);
-            case Snow:
-                return getSmallManaIcon(MagicIcon.MANA_SNOW);
-            case Black:
-                return getSmallManaIcon(MagicIcon.MANA_BLACK);
-            case Blue:
-                return getSmallManaIcon(MagicIcon.MANA_BLUE);
-            case Green:
-                return getSmallManaIcon(MagicIcon.MANA_GREEN);
-            case Red:
-                return getSmallManaIcon(MagicIcon.MANA_RED);
-            case White:
-                return getSmallManaIcon(MagicIcon.MANA_WHITE);
+        case Colorless:
+            return getSmallManaIcon(MagicIcon.MANA_COLORLESS);
+        case Snow:
+            return getSmallManaIcon(MagicIcon.MANA_SNOW);
+        case Black:
+            return getSmallManaIcon(MagicIcon.MANA_BLACK);
+        case Blue:
+            return getSmallManaIcon(MagicIcon.MANA_BLUE);
+        case Green:
+            return getSmallManaIcon(MagicIcon.MANA_GREEN);
+        case Red:
+            return getSmallManaIcon(MagicIcon.MANA_RED);
+        case White:
+            return getSmallManaIcon(MagicIcon.MANA_WHITE);
         }
         throw new RuntimeException("No icon available for MagicManaType " + mtype);
     }
@@ -179,7 +184,6 @@ public final class MagicImages {
     public static ImageIcon getIcon(String manaSymbol) {
         return getIcon(TextImages.getIcon(manaSymbol));
     }
-
 
     public static ImageIcon getIconSize1(DuelPlayerConfig playerDef) {
         return getSizedAvatarImageIcon(playerDef, 1);
@@ -227,11 +231,8 @@ public final class MagicImages {
     }
 
     public static BufferedImage getMissingCardImage(MagicCardDefinition cardDef) {
-        return cardDef == MagicCardDefinition.UNKNOWN
-            ? MISSING_CARD
-            : CardBuilder.getCardBuilderImage(cardDef);
+        return cardDef == MagicCardDefinition.UNKNOWN ? MISSING_CARD : CardBuilder.getCardBuilderImage(cardDef);
     }
-
 
     public static BufferedImage getOrigSizeCardImage(MagicCardDefinition aCard) {
 
@@ -249,6 +250,20 @@ public final class MagicImages {
 
         if (MagicFileSystem.getCardImageFile(aCard).exists()) {
             return ImageFileIO.getOptimizedImage(MagicFileSystem.getCardImageFile(aCard));
+        }
+
+        {// download image on demand
+            if (proxy == null)
+                proxy = GeneralConfig.getInstance().getProxy();
+            try {
+                CardImageFile cif = new CardImageFile(aCard);
+                cif.doDownload(proxy);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            if (MagicFileSystem.getCardImageFile(aCard).exists()) {
+                return ImageFileIO.getOptimizedImage(MagicFileSystem.getCardImageFile(aCard));
+            }
         }
 
         // else get missing image proxy...
