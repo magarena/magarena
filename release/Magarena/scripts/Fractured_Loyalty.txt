@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{R}
-ability=Enchant creature;\
-        Whenever enchanted creature becomes the target of a spell or ability, that spell or ability's controller gains control of that creature.
+ability=Enchant creature
 timing=aura
+enchant=gain control,neg creature
+requires_groovy_code
 oracle=Enchant creature\nWhenever enchanted creature becomes the target of a spell or ability, that spell or ability's controller gains control of that creature.
