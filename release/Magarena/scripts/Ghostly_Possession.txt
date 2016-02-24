@@ -6,7 +6,8 @@ type=Enchantment
 subtype=Aura
 cost={2}{W}
 ability=Enchant creature;\
-        Enchanted creature has flying.;\
-        Prevent all combat damage that would be dealt to and dealt by enchanted creature.
+        Enchanted creature has flying.
 timing=aura
+enchant=can't attack,creature
+requires_groovy_code=Gaseous Form
 oracle=Enchant creature\nEnchanted creature has flying.\nPrevent all combat damage that would be dealt to and dealt by enchanted creature.
