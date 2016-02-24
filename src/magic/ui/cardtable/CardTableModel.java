@@ -1,58 +1,20 @@
 package magic.ui.cardtable;
 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+import javax.swing.event.TableModelListener;
+import javax.swing.table.TableModel;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCondensedCardDefinition;
 import magic.model.MagicCondensedDeck;
 import magic.model.MagicManaCost;
 
-import javax.swing.event.TableModelListener;
-import javax.swing.table.TableModel;
-
-import java.text.DecimalFormat;
-import java.text.NumberFormat;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-
 public class CardTableModel implements TableModel {
 
     private static final NumberFormat ratingFormatter = new DecimalFormat("#0.0");
-
-    /**
-     * List of event listeners. These listeners wait for something to happen
-     * with the table so that they can react. This is a must!
-     */
-    private ArrayList<TableModelListener> listeners = new ArrayList<TableModelListener>();
-
-    /**
-     * Adds a listener to the list that is notified each time a change to the
-     * model occurs.
-     *
-     * @param l
-     *            the TableModelListener
-     */
-    @Override
-    public void addTableModelListener(final TableModelListener l)
-    {
-        if (listeners.contains(l)) {
-            return;
-        }
-        listeners.add(l);
-    }
-
-    /**
-     * Removes a listener from the list that is notified each time a change to
-     * the model occurs.
-     *
-     * @param l
-     *            the TableModelListener
-     */
-    @Override
-    public void removeTableModelListener(final TableModelListener l)
-    {
-        listeners.remove(l);
-    }
 
     static final int[] COLUMN_MIN_WIDTHS = {
                                                 40,    // 0 #
@@ -146,15 +108,6 @@ public class CardTableModel implements TableModel {
         }
     }
 
-    /**
-     * Returns the most specific superclass for all the cell values in the
-     * column. This is used by the JTable to set up a default renderer and
-     * editor for the column.
-     *
-     * @param columnIndex
-     *            the index of the column
-     * @return the common ancestor class of the object values in the model.
-     */
     @Override
     public Class<?> getColumnClass(final int columnIndex)
     {
@@ -174,29 +127,12 @@ public class CardTableModel implements TableModel {
         return CardTableColumn.values()[col].getCaption();
     }
 
-    /**
-     * Returns the number of rows in the model. A JTable uses this method to
-     * determine how many rows it should display. This method should be quick,
-     * as it is called frequently during rendering.
-     *
-     * @return the number of rows in the model
-     * @see #getColumnCount
-     */
     @Override
     public int getRowCount()
     {
         return cardDefinitions.size();
     }
 
-    /**
-     * Returns the value for the cell at columnIndex and rowIndex.
-     *
-     * @param rowIndex
-     *            the row whose value is to be queried
-     * @param columnIndex
-     *            the column whose value is to be queried
-     * @return the value Object at the specified cell
-     */
     @Override
     public Object getValueAt(final int rowIndex, final int columnIndex) {
         final MagicCardDefinition card = cardDefinitions.get(rowIndex).getCard();
@@ -245,39 +181,24 @@ public class CardTableModel implements TableModel {
         return "";
     }
 
-    /**
-     * Returns true if the cell at rowIndex and columnIndex is editable.
-     * Otherwise, setValueAt on the cell will not change the value of that cell.
-     *
-     * @param rowIndex
-     *            the row whose value to be queried
-     * @param columnIndex
-     *            the column whose value to be queried
-     * @return true if the cell is editable
-     * @see #setValueAt
-     */
     @Override
-    public boolean isCellEditable(final int rowIndex, final int columnIndex)
-    {
-        return false; // don't allow editing
+    public boolean isCellEditable(final int rowIndex, final int columnIndex) {
+        return false;
     }
 
-    /**
-     * Sets the value in the cell at columnIndex and rowIndex to value.
-     *
-     * @param value
-     *            the new value
-     * @param rowIndex
-     *            the row whose value is to be changed
-     * @param columnIndex
-     *            the column whose value is to be changed
-     * @see #getValueAt
-     * @see #isCellEditable
-     */
     @Override
-    public void setValueAt(final Object value, final int rowIndex, final int columnIndex)
-    {
+    public void setValueAt(Object aValue, int rowIndex, int columnIndex) {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    @Override
+    public void addTableModelListener(TableModelListener l) {
+        // do nothing.
+    }
+
+    @Override
+    public void removeTableModelListener(TableModelListener l) {
+        // do nothing.
+    }
 }
 
