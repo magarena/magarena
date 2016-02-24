@@ -11,6 +11,7 @@ import javax.swing.event.TableModelEvent;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableCellRenderer;
+import javax.swing.table.TableColumn;
 import javax.swing.table.TableColumnModel;
 import magic.model.MagicCardDefinition;
 
@@ -45,15 +46,15 @@ class DeckTable extends JTable {
         setColumnWidths(colModel);
 
         // center contents of columns.
-        getColumn("#").setCellRenderer(centerRenderer);
-        getColumn("P").setCellRenderer(centerRenderer);
-        getColumn("T").setCellRenderer(centerRenderer);
+        getColumn(CardTableColumn.Rating).setCellRenderer(centerRenderer);
+        getColumn(CardTableColumn.Power).setCellRenderer(centerRenderer);
+        getColumn(CardTableColumn.Toughness).setCellRenderer(centerRenderer);
 
         // center the column header captions.
         ((DefaultTableCellRenderer) getTableHeader().getDefaultRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
 
         // special renderer for mana symbols
-        colModel.getColumn(DeckTableModel.COST_COLUMN_INDEX).setCellRenderer(new ManaCostTableCellRenderer());
+        colModel.getColumn(CardTableColumn.Cost.ordinal()).setCellRenderer(new ManaCostTableCellRenderer());
 
 
         // listener to sort on column header click
@@ -63,10 +64,14 @@ class DeckTable extends JTable {
 
     }
 
+    private TableColumn getColumn(CardTableColumn col) {
+        return getColumnModel().getColumn(col.ordinal());
+    }
+
     private void setColumnWidths(final TableColumnModel model) {
         for (int i = 0; i < model.getColumnCount(); i++) {
-            model.getColumn(i).setMinWidth(DeckTableModel.COLUMN_MIN_WIDTHS[i]);
-            model.getColumn(i).setPreferredWidth(DeckTableModel.COLUMN_MIN_WIDTHS[i]);
+            model.getColumn(i).setMinWidth(CardTableColumn.getMinWidth(i));
+            model.getColumn(i).setPreferredWidth(CardTableColumn.getMinWidth(i));
         }
     }
 
