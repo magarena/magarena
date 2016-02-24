@@ -135,12 +135,8 @@ public class CardTableModel implements TableModel {
     }
 
     @Override
-    public Class<?> getColumnClass(final int columnIndex)
-    {
-        switch (columnIndex) {
-            case 1:        return MagicManaCost.class;
-        }
-        return String.class;
+    public Class<?> getColumnClass(final int col) {
+        return col == 1 ? MagicManaCost.class : String.class;
     }
 
     @Override
@@ -154,8 +150,7 @@ public class CardTableModel implements TableModel {
     }
 
     @Override
-    public int getRowCount()
-    {
+    public int getRowCount() {
         return cardDefinitions.size();
     }
 
