@@ -31,7 +31,6 @@ public class CardTableModel implements TableModel {
 
     private boolean showCardCount = false;
 
-    private boolean[] isDesc = {false, false, false, false, false, false, false, false, false, false, false, false, false};
     private MagicCondensedDeck cardDefinitions;
     private Comparator<MagicCondensedCardDefinition> comp;
 
@@ -70,38 +69,65 @@ public class CardTableModel implements TableModel {
         }
     }
 
-    public void sort(final int column) {
-        final Comparator<MagicCondensedCardDefinition> oldComp = comp;
-        comp = null;
+    private Comparator<MagicCondensedCardDefinition> getSortComparator(final CardTableColumn col) {
+        switch(col) {
+            case Rating:
+                return showCardCount
+                    ? col.isSortDesc()
+                        ? MagicCondensedCardDefinition.NUM_COPIES_COMPARATOR_ASC
+                        : MagicCondensedCardDefinition.NUM_COPIES_COMPARATOR_DESC
+                    : col.isSortDesc()
+                        ? MagicCondensedCardDefinition.RATING_COMPARATOR_ASC
+                        : MagicCondensedCardDefinition.RATING_COMPARATOR_DESC;
 
-        switch(column) {
-            case 0:
-                if (showCardCount) {
-                    comp = isDesc[column] ? MagicCondensedCardDefinition.NUM_COPIES_COMPARATOR_ASC : MagicCondensedCardDefinition.NUM_COPIES_COMPARATOR_DESC;
-                } else {
-                    comp = isDesc[column] ? MagicCondensedCardDefinition.RATING_COMPARATOR_ASC : MagicCondensedCardDefinition.RATING_COMPARATOR_DESC;
-                }
-                        break;
-            case 1:        comp = isDesc[column] ? MagicCondensedCardDefinition.NAME_COMPARATOR_ASC : MagicCondensedCardDefinition.NAME_COMPARATOR_DESC;
-                        break;
-            case 2:        comp = isDesc[column] ? MagicCondensedCardDefinition.CONVERTED_COMPARATOR_ASC : MagicCondensedCardDefinition.CONVERTED_COMPARATOR_DESC;
-                        break;
-            case 3:        comp = isDesc[column] ? MagicCondensedCardDefinition.POWER_COMPARATOR_ASC : MagicCondensedCardDefinition.POWER_COMPARATOR_DESC;
-                        break;
-            case 4:        comp = isDesc[column] ? MagicCondensedCardDefinition.TOUGHNESS_COMPARATOR_ASC : MagicCondensedCardDefinition.TOUGHNESS_COMPARATOR_DESC;
-                        break;
-            case 5:        comp = isDesc[column] ? MagicCondensedCardDefinition.TYPE_COMPARATOR_ASC : MagicCondensedCardDefinition.TYPE_COMPARATOR_DESC;
-                        break;
-            case 6:        comp = isDesc[column] ? MagicCondensedCardDefinition.SUBTYPE_COMPARATOR_ASC : MagicCondensedCardDefinition.SUBTYPE_COMPARATOR_DESC;
-                        break;
-            case 7:        comp = isDesc[column] ? MagicCondensedCardDefinition.RARITY_COMPARATOR_ASC : MagicCondensedCardDefinition.RARITY_COMPARATOR_DESC;
-                        break;
+            case CardName:
+                return col.isSortDesc()
+                    ? MagicCondensedCardDefinition.NAME_COMPARATOR_ASC
+                    : MagicCondensedCardDefinition.NAME_COMPARATOR_DESC;
+
+            case Cost:
+                return col.isSortDesc()
+                    ? MagicCondensedCardDefinition.CONVERTED_COMPARATOR_ASC
+                    : MagicCondensedCardDefinition.CONVERTED_COMPARATOR_DESC;
+
+            case Power:
+                return col.isSortDesc()
+                    ? MagicCondensedCardDefinition.POWER_COMPARATOR_ASC
+                    : MagicCondensedCardDefinition.POWER_COMPARATOR_DESC;
+
+            case Toughness:
+                return col.isSortDesc()
+                    ? MagicCondensedCardDefinition.TOUGHNESS_COMPARATOR_ASC
+                    : MagicCondensedCardDefinition.TOUGHNESS_COMPARATOR_DESC;
+
+            case Type:
+                return col.isSortDesc()
+                    ? MagicCondensedCardDefinition.TYPE_COMPARATOR_ASC
+                    : MagicCondensedCardDefinition.TYPE_COMPARATOR_DESC;
+                
+            case Subtype:
+                return col.isSortDesc()
+                    ? MagicCondensedCardDefinition.SUBTYPE_COMPARATOR_ASC
+                    : MagicCondensedCardDefinition.SUBTYPE_COMPARATOR_DESC;
+
+            case Rarity:
+                return col.isSortDesc()
+                    ? MagicCondensedCardDefinition.RARITY_COMPARATOR_ASC
+                    : MagicCondensedCardDefinition.RARITY_COMPARATOR_DESC;
+
+            default:
+                return null;
         }
+    }
 
+    public void sort(final int column) {
+        final CardTableColumn col = CardTableColumn.values()[column];
+        final Comparator<MagicCondensedCardDefinition> oldComp = comp;
+        comp = getSortComparator(col);
         if (comp != null) {
             // new sort
             Collections.sort(cardDefinitions, comp);
-            isDesc[column] = !isDesc[column];
+            col.setSortDesc(!col.isSortDesc());
         } else {
             // didn't select valid new sort -> reset to old
             comp = oldComp;

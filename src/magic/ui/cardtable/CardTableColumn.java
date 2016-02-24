@@ -12,6 +12,7 @@ enum CardTableColumn {
     Oracle("Text");
 
     private final String caption;
+    private boolean isSortDesc;
 
     private CardTableColumn(String aCaption) {
         this.caption = aCaption;
@@ -19,5 +20,13 @@ enum CardTableColumn {
 
     String getCaption() {
         return caption;
+    }
+
+    boolean isSortDesc() {
+        return isSortDesc;
+    }
+
+    void setSortDesc(boolean b) {
+        this.isSortDesc = b;
     }
 }
