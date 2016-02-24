@@ -14,7 +14,7 @@ import magic.model.MagicManaCost;
 
 public class CardTableModel implements TableModel {
 
-    private static final NumberFormat ratingFormatter = new DecimalFormat("#0.0");
+    private static final NumberFormat RATING_FMT = new DecimalFormat("#0.0");
 
     static final int[] COLUMN_MIN_WIDTHS = {
                                                 40,    // 0 #
@@ -159,52 +159,48 @@ public class CardTableModel implements TableModel {
         return cardDefinitions.size();
     }
 
-    @Override
-    public Object getValueAt(final int rowIndex, final int columnIndex) {
-        final MagicCardDefinition card = cardDefinitions.get(rowIndex).getCard();
-
-        switch (columnIndex) {
-            case 0:
-                if (showCardCount) {
-                    return Integer.toString(cardDefinitions.get(rowIndex).getNumCopies());
-                } else {
-                    return ratingFormatter.format(card.getValue());
-                }
-            case 1:
-                if (card.isSplitCard()) {
-                    if (card.isSecondHalf()) {
-                        return card.getSplitDefinition().getName() + " // " + card.getName() + " (" + card.getName() + ")";
-                    } else {
-                        return card.getName() + " // " + card.getSplitDefinition().getName() + " (" + card.getName() + ")";
-                    }
-                } else {
-                    return card.getName();
-                }
-            case 2:
-                return card.getCost();
-            case 3:
-                if (card.isCreature()) {
-                    return card.getCardPower();
-                } else {
-                    return "";
-                }
-            case 4:
-                if (card.isCreature()) {
-                    return card.getCardToughness();
-                } else {
-                    return "";
-                }
-            case 5:
-                return card.getLongTypeString();
-            case 6:
-                return card.getSubTypeString();
-            case 7:
-                return card.getRarityString();
-            case 8:
-                return card.getFlattenedText();
+    private String getCardNameValue(MagicCardDefinition card ) {
+        if (card.isSplitCard()) {
+            if (card.isSecondHalf()) {
+                return card.getSplitDefinition().getName() + " // " + card.getName() + " (" + card.getName() + ")";
+            } else {
+                return card.getName() + " // " + card.getSplitDefinition().getName() + " (" + card.getName() + ")";
+            }
+        } else {
+            return card.getName();
         }
+    }
+    
+    @Override
+    public Object getValueAt(final int row, final int col) {
 
-        return "";
+        final MagicCondensedCardDefinition ccard = cardDefinitions.get(row);
+        final MagicCardDefinition card = ccard.getCard();
+
+        switch(CardTableColumn.values()[col]) {
+            case Rating:
+                return showCardCount
+                    ? Integer.toString(ccard.getNumCopies())
+                    : RATING_FMT.format(card.getValue());
+            case CardName:
+                return getCardNameValue(card);
+            case Cost:
+                return card.getCost();
+            case Power:
+                return card.isCreature() ? card.getCardPower() : "";
+            case Toughness:
+                return card.isCreature() ? card.getCardToughness() : "";
+            case Type:
+                return card.getLongTypeString();
+            case Subtype:
+                return card.getSubTypeString();
+            case Rarity:
+                return card.getRarityString();
+            case Oracle:
+                return card.getFlattenedText();
+            default:
+                return "";
+        }
     }
 
     @Override
