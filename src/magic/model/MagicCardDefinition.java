@@ -980,7 +980,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
             return TYPE_COMPARATOR_DESC.compare(cardDefinition2, cardDefinition1);
         }
     };
-    
+
     public static final Comparator<MagicCardDefinition> SUBTYPE_COMPARATOR_DESC=new Comparator<MagicCardDefinition>() {
         @Override
         public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {
@@ -988,7 +988,7 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
             return c;
         }
     };
-    
+
     public static final Comparator<MagicCardDefinition> SUBTYPE_COMPARATOR_ASC=new Comparator<MagicCardDefinition>() {
         @Override
         public int compare(final MagicCardDefinition cardDefinition1,final MagicCardDefinition cardDefinition2) {
@@ -1095,6 +1095,6 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
             return false;
         } else {
             return true;
-		}
-	}
+        }
+    }
 }

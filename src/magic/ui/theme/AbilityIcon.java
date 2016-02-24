@@ -117,13 +117,13 @@ public enum AbilityIcon {
     private boolean hasSmallIcon() {
         return smallIcon != null;
     }
-    
+
     private ImageIcon getSmallIcon() {
         return hasSmallIcon() ? MagicImages.getIcon(smallIcon) : null;
     }
 
     /**
-     * Returns a list of small 16x16 ability icon images that are 
+     * Returns a list of small 16x16 ability icon images that are
      * drawn onto a card image displayed on the battlefield.
      */
     public static  List<Image> getSmallAbilityIcons(final Set<MagicAbility> abilities) {

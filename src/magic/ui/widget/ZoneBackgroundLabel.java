@@ -107,10 +107,10 @@ public class ZoneBackgroundLabel extends JLabel implements IThemeStyle {
         final boolean battlefieldStretch = (stretch & 1) == 1;
         final boolean playerStretch = (stretch & 2) == 2;
         final boolean handStretch = (stretch & 4) == 4;
-        
+
         paintZone(g,
             theme.getTexture(Theme.TEXTURE_PLAYER),
-            new Rectangle(0, 0, playerX, size.height), 
+            new Rectangle(0, 0, playerX, size.height),
             playerStretch
         );
         paintZone(g,
@@ -136,7 +136,7 @@ public class ZoneBackgroundLabel extends JLabel implements IThemeStyle {
             g2d.fillRect(playerX, handY, size.width - playerX, border);
         }
     }
- 
+
     private void drawThemeBackground(final Graphics g) {
         switch (MagicStyle.getTheme().getValue(Theme.VALUE_GAME_LAYOUT)) {
             case 1:

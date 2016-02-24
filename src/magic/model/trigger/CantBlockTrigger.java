@@ -29,7 +29,7 @@ public abstract class CantBlockTrigger extends MagicTrigger<MagicPermanent> {
             }
         };
     }
-    
+
     public static CantBlockTrigger create(final long id) {
         return new CantBlockTrigger() {
             @Override
