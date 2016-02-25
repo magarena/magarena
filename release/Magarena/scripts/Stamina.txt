@@ -9,5 +9,5 @@ ability=Enchant creature;\
         Enchanted creature has vigilance.;\
         Sacrifice SN: Regenerate enchanted creature.
 timing=aura
-enchant=default,creature
+enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature has vigilance.\nSacrifice Stamina: Regenerate enchanted creature.
