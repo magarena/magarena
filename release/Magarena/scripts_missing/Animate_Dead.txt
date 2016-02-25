@@ -9,4 +9,5 @@ ability=Enchant creature card in a graveyard;\
         When SN enters the battlefield, if it's on the battlefield, it loses "enchant creature card in a graveyard" and gains "enchant creature put onto the battlefield with SN." Return enchanted creature card to the battlefield under your control and attach SN to it. When SN leaves the battlefield, that creature's controller sacrifices it.;\
         Enchanted creature gets -1/-0.
 timing=aura
+enchant=default,creature card in a graveyard
 oracle=Enchant creature card in a graveyard\nWhen Animate Dead enters the battlefield, if it's on the battlefield, it loses "enchant creature card in a graveyard" and gains "enchant creature put onto the battlefield with Animate Dead." Return enchanted creature card to the battlefield under your control and attach Animate Dead to it. When Animate Dead leaves the battlefield, that creature's controller sacrifices it.\nEnchanted creature gets -1/-0.

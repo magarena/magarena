@@ -8,4 +8,5 @@ cost={2}{U}
 ability=Enchant artifact;\
         Enchanted artifact has "At the beginning of your upkeep, sacrifice this artifact unless you pay its mana cost."
 timing=aura
+enchant=default,artifact
 oracle=Enchant artifact\nEnchanted artifact has "At the beginning of your upkeep, sacrifice this artifact unless you pay its mana cost."

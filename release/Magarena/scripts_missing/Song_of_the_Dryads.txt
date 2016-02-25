@@ -8,4 +8,5 @@ cost={2}{G}
 ability=Enchant permanent;\
         Enchanted permanent is a colorless Forest land.
 timing=aura
+enchant=default,permanent
 oracle=Enchant permanent\nEnchanted permanent is a colorless Forest land.

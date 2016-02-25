@@ -8,4 +8,5 @@ cost={U}{U}{U}
 ability=Enchant creature;\
         When enchanted creature dies, return that card to its owner's hand. If that card is returned to its owner's hand this way, you may pay {U}{U}{U}. If you do, return SN to its owner's hand.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nWhen enchanted creature dies, return that card to its owner's hand. If that card is returned to its owner's hand this way, you may pay {U}{U}{U}. If you do, return Puppet Master to its owner's hand.

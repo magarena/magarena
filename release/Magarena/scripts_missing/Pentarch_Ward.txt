@@ -10,4 +10,5 @@ ability=Enchant creature;\
         When SN enters the battlefield, draw a card.;\
         Enchanted creature has protection from the chosen color. This effect doesn't remove SN.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nAs Pentarch Ward enters the battlefield, choose a color.\nWhen Pentarch Ward enters the battlefield, draw a card.\nEnchanted creature has protection from the chosen color. This effect doesn't remove Pentarch Ward.

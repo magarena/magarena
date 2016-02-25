@@ -9,4 +9,5 @@ ability=Enchant creature;\
         Enchanted creature doesn't untap during its controller's untap step.;\
         When enchanted creature becomes the target of a spell, sacrifice SN.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature doesn't untap during its controller's untap step.\nWhen enchanted creature becomes the target of a spell, sacrifice Spectral Prison.

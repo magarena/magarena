@@ -9,4 +9,5 @@ ability=Enchant creature with power 3 or less;\
         When SN enters the battlefield, tap enchanted creature.;\
         Enchanted creature doesn't untap during its controller's untap step.
 timing=aura
+enchant=default,creature with power 3 or less
 oracle=Enchant creature with power 3 or less\nWhen Runner's Bane enters the battlefield, tap enchanted creature.\nEnchanted creature doesn't untap during its controller's untap step.

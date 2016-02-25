@@ -8,4 +8,5 @@ cost={W}
 ability=Enchant creature;\
         Enchanted creature can't attack or block unless its controller pays {1} for each card in your hand.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature can't attack or block unless its controller pays {1} for each card in your hand.

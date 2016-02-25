@@ -9,4 +9,5 @@ ability=Enchant creature;\
         Whenever enchanted creature attacks, put a +1/+1 counter on it. Then if it has three or more +1/+1 counters on it, sacrifice SN.;\
         When you sacrifice SN, search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle your library.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nWhenever enchanted creature attacks, put a +1/+1 counter on it. Then if it has three or more +1/+1 counters on it, sacrifice Ordeal of Nylea.\nWhen you sacrifice Ordeal of Nylea, search your library for up to two basic land cards, put them onto the battlefield tapped, then shuffle your library.

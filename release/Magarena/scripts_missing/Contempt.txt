@@ -8,4 +8,5 @@ cost={1}{U}
 ability=Enchant creature;\
         When enchanted creature attacks, return it and SN to their owners' hands at end of combat.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nWhen enchanted creature attacks, return it and Contempt to their owners' hands at end of combat.

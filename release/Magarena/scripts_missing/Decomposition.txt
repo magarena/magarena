@@ -9,4 +9,5 @@ ability=Enchant black creature;\
         Enchanted creature has "Cumulative upkeep—Pay 1 life.";\
         When enchanted creature dies, its controller loses 2 life.
 timing=aura
+enchant=default,black creature
 oracle=Enchant black creature\nEnchanted creature has "Cumulative upkeep—Pay 1 life."\nWhen enchanted creature dies, its controller loses 2 life.

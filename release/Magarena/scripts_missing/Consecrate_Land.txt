@@ -8,4 +8,5 @@ cost={W}
 ability=Enchant land;\
         Enchanted land has indestructible and can't be enchanted by other Auras.
 timing=aura
+enchant=default,land
 oracle=Enchant land\nEnchanted land has indestructible and can't be enchanted by other Auras.

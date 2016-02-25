@@ -8,4 +8,5 @@ cost={2}{W}
 ability=Enchant creature;\
         When enchanted creature dies, return that card to the battlefield under its owner's control. Return SN to the battlefield attached to that creature at the beginning of the next end step.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nWhen enchanted creature dies, return that card to the battlefield under its owner's control. Return Gift of Immortality to the battlefield attached to that creature at the beginning of the next end step.

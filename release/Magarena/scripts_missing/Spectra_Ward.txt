@@ -8,4 +8,5 @@ cost={3}{W}{W}
 ability=Enchant creature;\
         Enchanted creature gets +2/+2 and has protection from all colors. This effect doesn't remove Auras.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature gets +2/+2 and has protection from all colors. This effect doesn't remove Auras.

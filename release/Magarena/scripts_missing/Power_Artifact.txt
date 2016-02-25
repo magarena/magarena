@@ -8,4 +8,5 @@ cost={U}{U}
 ability=Enchant artifact;\
         Enchanted artifact's activated abilities cost {2} less to activate. This effect can't reduce the amount of mana an ability costs to activate to less than one mana.
 timing=aura
+enchant=default,artifact
 oracle=Enchant artifact\nEnchanted artifact's activated abilities cost {2} less to activate. This effect can't reduce the amount of mana an ability costs to activate to less than one mana.

@@ -9,4 +9,5 @@ ability=Enchant creature;\
         Enchanted creature gets +3/+3.;\
         Whenever enchanted creature deals combat damage to a player, double its controller's life total.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature gets +3/+3.\nWhenever enchanted creature deals combat damage to a player, double its controller's life total.

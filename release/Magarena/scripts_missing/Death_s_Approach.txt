@@ -8,4 +8,5 @@ cost={B}
 ability=Enchant creature;\
         Enchanted creature gets -X/-X, where X is the number of creature cards in its controller's graveyard.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature gets -X/-X, where X is the number of creature cards in its controller's graveyard.

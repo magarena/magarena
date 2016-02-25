@@ -8,4 +8,5 @@ cost={4}{U}
 ability=Enchant player;\
         Whenever enchanted player casts an instant or sorcery spell, each other player may copy that spell and may choose new targets for the copy he or she controls.
 timing=aura
+enchant=default,player
 oracle=Enchant player\nWhenever enchanted player casts an instant or sorcery spell, each other player may copy that spell and may choose new targets for the copy he or she controls.

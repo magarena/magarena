@@ -8,4 +8,5 @@ cost={G}
 ability=Enchant creature;\
         Enchanted creature gets +0/+2 and can block creatures with landwalk abilities as though they didn't have those abilities.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature gets +0/+2 and can block creatures with landwalk abilities as though they didn't have those abilities.

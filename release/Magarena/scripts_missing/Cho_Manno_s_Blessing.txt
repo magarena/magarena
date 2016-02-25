@@ -10,4 +10,5 @@ ability=Flash;\
         As SN enters the battlefield, choose a color.;\
         Enchanted creature has protection from the chosen color. This effect doesn't remove SN.
 timing=flash
+enchant=default,creature
 oracle=Flash\nEnchant creature\nAs Cho-Manno's Blessing enters the battlefield, choose a color.\nEnchanted creature has protection from the chosen color. This effect doesn't remove Cho-Manno's Blessing.

@@ -10,4 +10,5 @@ ability=Enchant creature;\
         Enchanted creature doesn't untap during its controller's untap step.;\
         At the beginning of the upkeep of enchanted creature's controller, that player may pay {4}. If he or she does, untap the creature.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nWhen Paralyze enters the battlefield, tap enchanted creature.\nEnchanted creature doesn't untap during its controller's untap step.\nAt the beginning of the upkeep of enchanted creature's controller, that player may pay {4}. If he or she does, untap the creature.

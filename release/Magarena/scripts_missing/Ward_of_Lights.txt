@@ -10,4 +10,5 @@ ability=You may cast SN as though it had flash. If you cast it any time a sorcer
         As SN enters the battlefield, choose a color.;\
         Enchanted creature has protection from the chosen color. This effect doesn't remove SN.
 timing=aura
+enchant=default,creature
 oracle=You may cast Ward of Lights as though it had flash. If you cast it any time a sorcery couldn't have been cast, the controller of the permanent it becomes sacrifices it at the beginning of the next cleanup step.\nEnchant creature\nAs Ward of Lights enters the battlefield, choose a color.\nEnchanted creature has protection from the chosen color. This effect doesn't remove Ward of Lights.

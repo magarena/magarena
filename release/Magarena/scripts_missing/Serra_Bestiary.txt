@@ -9,4 +9,5 @@ ability=Enchant creature;\
         At the beginning of your upkeep, sacrifice SN unless you pay {W}{W}.;\
         Enchanted creature can't attack or block, and its activated abilities with {T} in their costs can't be activated.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nAt the beginning of your upkeep, sacrifice Serra Bestiary unless you pay {W}{W}.\nEnchanted creature can't attack or block, and its activated abilities with {T} in their costs can't be activated.

@@ -8,4 +8,5 @@ cost={2}{R}{R}
 ability=Enchant creature you control;\
         When enchanted creature deals combat damage to a player, sacrifice it and attach SN to a creature you control. If you do, untap all creatures you control and after this phase, there is an additional combat phase.
 timing=aura
+enchant=default,creature you control
 oracle=Enchant creature you control\nWhen enchanted creature deals combat damage to a player, sacrifice it and attach Breath of Fury to a creature you control. If you do, untap all creatures you control and after this phase, there is an additional combat phase.

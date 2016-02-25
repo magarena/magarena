@@ -9,4 +9,5 @@ ability=Enchant creature;\
         Enchanted creature can't attack.;\
         Tap two untapped creatures you control that share a creature type: Exile enchanted creature.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature can't attack.\nTap two untapped creatures you control that share a creature type: Exile enchanted creature.

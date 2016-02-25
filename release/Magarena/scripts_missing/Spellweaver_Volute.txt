@@ -8,4 +8,5 @@ cost={3}{U}{U}
 ability=Enchant instant card in a graveyard;\
         Whenever you cast a sorcery spell, copy the enchanted instant card. You may cast the copy without paying its mana cost. If you do, exile the enchanted card and attach SN to another instant card in a graveyard.
 timing=aura
+enchant=default,instant card in a graveyard
 oracle=Enchant instant card in a graveyard\nWhenever you cast a sorcery spell, copy the enchanted instant card. You may cast the copy without paying its mana cost. If you do, exile the enchanted card and attach Spellweaver Volute to another instant card in a graveyard.

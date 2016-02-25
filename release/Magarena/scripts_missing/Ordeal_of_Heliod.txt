@@ -9,4 +9,5 @@ ability=Enchant creature;\
         Whenever enchanted creature attacks, put a +1/+1 counter on it. Then if it has three or more +1/+1 counters on it, sacrifice SN.;\
         When you sacrifice SN, you gain 10 life.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nWhenever enchanted creature attacks, put a +1/+1 counter on it. Then if it has three or more +1/+1 counters on it, sacrifice Ordeal of Heliod.\nWhen you sacrifice Ordeal of Heliod, you gain 10 life.

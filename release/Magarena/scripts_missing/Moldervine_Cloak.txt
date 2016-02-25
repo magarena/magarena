@@ -9,4 +9,5 @@ ability=Enchant creature;\
         Enchanted creature gets +3/+3.;\
         Dredge 2
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature gets +3/+3.\nDredge 2

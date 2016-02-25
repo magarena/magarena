@@ -8,4 +8,5 @@ cost={2}{U}
 ability=Enchant creature;\
         Enchanted creature can't be the target of spells and can't be enchanted by other Auras.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature can't be the target of spells and can't be enchanted by other Auras.

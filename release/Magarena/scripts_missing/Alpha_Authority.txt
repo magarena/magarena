@@ -8,4 +8,5 @@ cost={1}{G}
 ability=Enchant creature;\
         Enchanted creature has hexproof and can't be blocked by more than one creature.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature has hexproof and can't be blocked by more than one creature.

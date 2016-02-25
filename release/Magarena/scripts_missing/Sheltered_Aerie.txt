@@ -8,4 +8,5 @@ cost={2}{G}
 ability=Enchant land;\
         Enchanted land has "{T}: Add two mana of any one color to your mana pool."
 timing=aura
+enchant=default,land
 oracle=Enchant land\nEnchanted land has "{T}: Add two mana of any one color to your mana pool."

@@ -8,4 +8,5 @@ cost={1}{U}
 ability=Enchant creature;\
         {1}: Enchanted creature becomes the creature type of your choice until end of turn.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\n{1}: Enchanted creature becomes the creature type of your choice until end of turn.

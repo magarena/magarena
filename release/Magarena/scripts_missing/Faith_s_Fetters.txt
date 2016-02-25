@@ -10,4 +10,5 @@ ability=Enchant permanent;\
         When SN enters the battlefield, you gain 4 life.;\
         Enchanted permanent's activated abilities can't be activated unless they're mana abilities. If enchanted permanent is a creature, it can't attack or block.
 timing=aura
+enchant=default,permanent
 oracle=Enchant permanent\nWhen Faith's Fetters enters the battlefield, you gain 4 life.\nEnchanted permanent's activated abilities can't be activated unless they're mana abilities. If enchanted permanent is a creature, it can't attack or block.

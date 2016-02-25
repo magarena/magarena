@@ -9,4 +9,5 @@ ability=Enchant creature you control;\
         {0}: Untap enchanted creature. Activate this ability only during your turn and only once each turn.;\
         Tap enchanted creature: Untap target artifact, creature, or land. Activate this ability only if enchanted creature is white and is untapped and only once each turn.
 timing=aura
+enchant=default,creature you control
 oracle=Enchant creature you control\n{0}: Untap enchanted creature. Activate this ability only during your turn and only once each turn.\nTap enchanted creature: Untap target artifact, creature, or land. Activate this ability only if enchanted creature is white and is untapped and only once each turn.

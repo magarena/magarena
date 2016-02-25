@@ -8,4 +8,5 @@ cost={U}
 ability=Enchant creature;\
         Enchanted creature has phasing and can't be blocked except by Walls.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature has phasing and can't be blocked except by Walls.

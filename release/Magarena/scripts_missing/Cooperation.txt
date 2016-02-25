@@ -8,4 +8,5 @@ cost={2}{W}
 ability=Enchant creature;\
         Enchanted creature has banding.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature has banding.

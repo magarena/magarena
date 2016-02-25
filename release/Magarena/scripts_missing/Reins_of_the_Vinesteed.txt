@@ -9,4 +9,5 @@ ability=Enchant creature;\
         Enchanted creature gets +2/+2.;\
         When enchanted creature dies, you may return SN from your graveyard to the battlefield attached to a creature that shares a creature type with that creature.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature gets +2/+2.\nWhen enchanted creature dies, you may return Reins of the Vinesteed from your graveyard to the battlefield attached to a creature that shares a creature type with that creature.

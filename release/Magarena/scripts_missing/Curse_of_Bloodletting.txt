@@ -8,4 +8,5 @@ cost={3}{R}{R}
 ability=Enchant player;\
         If a source would deal damage to enchanted player, it deals double that damage to that player instead.
 timing=aura
+enchant=default,player
 oracle=Enchant player\nIf a source would deal damage to enchanted player, it deals double that damage to that player instead.

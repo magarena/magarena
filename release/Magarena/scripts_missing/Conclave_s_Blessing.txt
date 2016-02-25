@@ -9,4 +9,5 @@ ability=Convoke;\
         Enchant creature;\
         Enchanted creature gets +0/+2 for each other creature you control.
 timing=aura
+enchant=default,creature
 oracle=Convoke\nEnchant creature\nEnchanted creature gets +0/+2 for each other creature you control.

@@ -8,4 +8,5 @@ cost={R}
 ability=Enchant creature you control;\
         Tap enchanted creature: Target creature other than the creature tapped this way gets +2/+1 until end of turn. Activate this ability only if enchanted creature is untapped.
 timing=aura
+enchant=default,creature you control
 oracle=Enchant creature you control\nTap enchanted creature: Target creature other than the creature tapped this way gets +2/+1 until end of turn. Activate this ability only if enchanted creature is untapped.

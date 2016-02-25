@@ -8,4 +8,5 @@ cost={1}{G}{G}
 ability=Enchant creature;\
         All creatures able to block enchanted creature do so.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nAll creatures able to block enchanted creature do so.

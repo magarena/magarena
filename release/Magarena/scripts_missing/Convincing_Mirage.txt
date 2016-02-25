@@ -9,4 +9,5 @@ ability=Enchant land;\
         As SN enters the battlefield, choose a basic land type.;\
         Enchanted land is the chosen type.
 timing=aura
+enchant=default,land
 oracle=Enchant land\nAs Convincing Mirage enters the battlefield, choose a basic land type.\nEnchanted land is the chosen type.

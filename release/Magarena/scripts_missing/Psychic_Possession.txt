@@ -9,4 +9,5 @@ ability=Enchant opponent;\
         Skip your draw step.;\
         Whenever enchanted opponent draws a card, you may draw a card.
 timing=aura
+enchant=default,opponent
 oracle=Enchant opponent\nSkip your draw step.\nWhenever enchanted opponent draws a card, you may draw a card.

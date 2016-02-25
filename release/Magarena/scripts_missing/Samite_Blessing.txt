@@ -8,4 +8,5 @@ cost={W}
 ability=Enchant creature;\
         Enchanted creature has "{T}: The next time a source of your choice would deal damage to target creature this turn, prevent that damage."
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature has "{T}: The next time a source of your choice would deal damage to target creature this turn, prevent that damage."

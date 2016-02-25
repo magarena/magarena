@@ -9,4 +9,5 @@ ability=Enchant creature;\
         Enchanted creature can attack as though it had haste.;\
         {0}: Untap enchanted creature. Activate this ability only during your turn and only once each turn.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature can attack as though it had haste.\n{0}: Untap enchanted creature. Activate this ability only during your turn and only once each turn.

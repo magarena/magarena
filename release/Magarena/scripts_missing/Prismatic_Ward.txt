@@ -9,4 +9,5 @@ ability=Enchant creature;\
         As SN enters the battlefield, choose a color.;\
         Prevent all damage that would be dealt to enchanted creature by sources of the chosen color.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nAs Prismatic Ward enters the battlefield, choose a color.\nPrevent all damage that would be dealt to enchanted creature by sources of the chosen color.

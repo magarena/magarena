@@ -9,4 +9,5 @@ ability=Enchant creature;\
         Enchanted creature gets +3/+3.;\
         When enchanted creature attacks or blocks, sacrifice SN at the beginning of the next cleanup step.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature gets +3/+3.\nWhen enchanted creature attacks or blocks, sacrifice Cunning at the beginning of the next cleanup step.

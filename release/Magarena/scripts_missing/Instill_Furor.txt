@@ -8,4 +8,5 @@ cost={1}{R}
 ability=Enchant creature;\
         Enchanted creature has "At the beginning of your end step, sacrifice this creature unless it attacked this turn."
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature has "At the beginning of your end step, sacrifice this creature unless it attacked this turn."

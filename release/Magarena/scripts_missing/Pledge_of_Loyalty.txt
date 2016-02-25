@@ -8,4 +8,5 @@ cost={1}{W}
 ability=Enchant creature;\
         Enchanted creature has protection from the colors of permanents you control. This effect doesn't remove SN.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature has protection from the colors of permanents you control. This effect doesn't remove Pledge of Loyalty.

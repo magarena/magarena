@@ -9,4 +9,5 @@ ability=Enchant creature;\
         Enchanted creature gets -1/-1.;\
         When enchanted creature dies, return SN from your graveyard to the battlefield.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature gets -1/-1.\nWhen enchanted creature dies, return Screams from Within from your graveyard to the battlefield.

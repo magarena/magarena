@@ -8,4 +8,5 @@ cost={4}{B}{B}
 ability=Enchant creature or land;\
         Enchanted permanent has "At the beginning of your end step, sacrifice this permanent and attach SN to a creature or land you control."
 timing=aura
+enchant=default,creature or land
 oracle=Enchant creature or land\nEnchanted permanent has "At the beginning of your end step, sacrifice this permanent and attach Nettlevine Blight to a creature or land you control."

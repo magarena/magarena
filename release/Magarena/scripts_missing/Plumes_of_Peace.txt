@@ -9,4 +9,5 @@ ability=Enchant creature;\
         Enchanted creature doesn't untap during its controller's untap step.;\
         {W}{U}, Reveal SN from your hand: Tap target creature.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature doesn't untap during its controller's untap step.\nForecast — {W}{U}, Reveal Plumes of Peace from your hand: Tap target creature.

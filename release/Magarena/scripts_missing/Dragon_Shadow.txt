@@ -9,4 +9,5 @@ ability=Enchant creature;\
         Enchanted creature gets +1/+0 and has fear.;\
         When a creature with converted mana cost 6 or greater enters the battlefield, you may return SN from your graveyard to the battlefield attached to that creature.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature gets +1/+0 and has fear.\nWhen a creature with converted mana cost 6 or greater enters the battlefield, you may return Dragon Shadow from your graveyard to the battlefield attached to that creature.

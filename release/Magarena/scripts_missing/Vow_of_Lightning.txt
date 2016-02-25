@@ -8,4 +8,5 @@ cost={2}{R}
 ability=Enchant creature;\
         Enchanted creature gets +2/+2, has first strike, and can't attack you or a planeswalker you control.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature gets +2/+2, has first strike, and can't attack you or a planeswalker you control.

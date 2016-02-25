@@ -8,4 +8,5 @@ cost={1}{R}
 ability=Enchant creature;\
         Enchanted creature gets +3/+0 and has menace.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature gets +3/+0 and has menace.

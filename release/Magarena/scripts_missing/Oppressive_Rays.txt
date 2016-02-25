@@ -9,4 +9,5 @@ ability=Enchant creature;\
         Enchanted creature can't attack or block unless its controller pays {3}.;\
         Activated abilities of enchanted creature cost {3} more to activate.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature can't attack or block unless its controller pays {3}.\nActivated abilities of enchanted creature cost {3} more to activate.

@@ -8,4 +8,5 @@ cost={G}
 ability=Enchant artifact;\
         When enchanted artifact is put into a graveyard, you gain 6 life.
 timing=aura
+enchant=default,artifact
 oracle=Enchant artifact\nWhen enchanted artifact is put into a graveyard, you gain 6 life.

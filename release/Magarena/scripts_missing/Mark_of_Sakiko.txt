@@ -8,4 +8,5 @@ cost={1}{G}
 ability=Enchant creature;\
         Enchanted creature has "Whenever this creature deals combat damage to a player, add that much {G} to your mana pool. Until end of turn, this mana doesn't empty from your mana pool as steps and phases end."
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature has "Whenever this creature deals combat damage to a player, add that much {G} to your mana pool. Until end of turn, this mana doesn't empty from your mana pool as steps and phases end."

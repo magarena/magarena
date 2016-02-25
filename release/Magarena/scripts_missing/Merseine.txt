@@ -10,4 +10,5 @@ ability=Enchant creature;\
         Enchanted creature doesn't untap during its controller's untap step if SN has a net counter on it.;\
         Pay enchanted creature's mana cost: Remove a net counter from SN. Any player may activate this ability, but only if he or she controls the enchanted creature.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nMerseine enters the battlefield with three net counters on it.\nEnchanted creature doesn't untap during its controller's untap step if Merseine has a net counter on it.\nPay enchanted creature's mana cost: Remove a net counter from Merseine. Any player may activate this ability, but only if he or she controls the enchanted creature.

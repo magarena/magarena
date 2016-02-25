@@ -8,4 +8,5 @@ cost={U}
 ability=Enchant creature;\
         Enchanted creature can't be blocked unless defending player pays {3} for each creature he or she controls that's blocking it.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature can't be blocked unless defending player pays {3} for each creature he or she controls that's blocking it.

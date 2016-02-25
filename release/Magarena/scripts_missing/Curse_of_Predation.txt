@@ -8,4 +8,5 @@ cost={2}{G}
 ability=Enchant player;\
         Whenever a creature attacks enchanted player, put a +1/+1 counter on it.
 timing=aura
+enchant=default,player
 oracle=Enchant player\nWhenever a creature attacks enchanted player, put a +1/+1 counter on it.

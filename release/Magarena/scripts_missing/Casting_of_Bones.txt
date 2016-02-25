@@ -8,4 +8,5 @@ cost={2}{B}
 ability=Enchant creature;\
         When enchanted creature dies, draw three cards, then discard one of them.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nWhen enchanted creature dies, draw three cards, then discard one of them.

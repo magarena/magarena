@@ -10,4 +10,5 @@ ability=Enchant creature;\
         Cycling {1}{U};\
         When a creature with converted mana cost 6 or greater enters the battlefield, you may return SN from your graveyard to the battlefield attached to that creature.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature has flying.\nCycling {1}{U}\nWhen a creature with converted mana cost 6 or greater enters the battlefield, you may return Dragon Wings from your graveyard to the battlefield attached to that creature.

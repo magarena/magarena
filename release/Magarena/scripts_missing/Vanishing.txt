@@ -8,4 +8,5 @@ cost={U}
 ability=Enchant creature;\
         {U}{U}: Enchanted creature phases out.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\n{U}{U}: Enchanted creature phases out.

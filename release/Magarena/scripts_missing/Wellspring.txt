@@ -9,4 +9,5 @@ ability=Enchant land;\
         When SN enters the battlefield, gain control of enchanted land until end of turn.;\
         At the beginning of your upkeep, untap enchanted land. You gain control of that land until end of turn.
 timing=aura
+enchant=default,land
 oracle=Enchant land\nWhen Wellspring enters the battlefield, gain control of enchanted land until end of turn.\nAt the beginning of your upkeep, untap enchanted land. You gain control of that land until end of turn.

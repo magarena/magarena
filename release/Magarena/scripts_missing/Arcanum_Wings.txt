@@ -9,4 +9,5 @@ ability=Enchant creature;\
         Enchanted creature has flying.;\
         Aura swap {2}{U}
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature has flying.\nAura swap {2}{U}

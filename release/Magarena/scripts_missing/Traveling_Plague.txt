@@ -10,4 +10,5 @@ ability=Enchant creature;\
         Enchanted creature gets -1/-1 for each plague counter on SN.;\
         When enchanted creature leaves the battlefield, that creature's controller returns SN from its owner's graveyard to the battlefield.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nAt the beginning of each upkeep, put a plague counter on Traveling Plague.\nEnchanted creature gets -1/-1 for each plague counter on Traveling Plague.\nWhen enchanted creature leaves the battlefield, that creature's controller returns Traveling Plague from its owner's graveyard to the battlefield.

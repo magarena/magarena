@@ -8,4 +8,5 @@ cost={3}{B}
 ability=Enchant player;\
         At the beginning of enchanted player's upkeep, that player exiles two cards from his or her graveyard.
 timing=aura
+enchant=default,player
 oracle=Enchant player\nAt the beginning of enchanted player's upkeep, that player exiles two cards from his or her graveyard.

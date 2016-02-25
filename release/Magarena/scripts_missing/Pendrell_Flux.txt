@@ -8,4 +8,5 @@ cost={1}{U}
 ability=Enchant creature;\
         Enchanted creature has "At the beginning of your upkeep, sacrifice this creature unless you pay its mana cost."
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature has "At the beginning of your upkeep, sacrifice this creature unless you pay its mana cost."

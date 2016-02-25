@@ -8,4 +8,5 @@ cost={W}
 ability=Enchant creature;\
         Enchanted creature can't attack unless its controller pays {3}.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature can't attack unless its controller pays {3}.

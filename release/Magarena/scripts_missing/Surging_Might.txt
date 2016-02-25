@@ -9,4 +9,5 @@ ability=Enchant creature;\
         Enchanted creature gets +2/+2.;\
         Ripple 4
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature gets +2/+2.\nRipple 4

@@ -9,4 +9,5 @@ ability=Enchant creature;\
         Cumulative upkeep {R};\
         Enchanted creature's controller can't cast creature spells.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nCumulative upkeep {R}\nEnchanted creature's controller can't cast creature spells.

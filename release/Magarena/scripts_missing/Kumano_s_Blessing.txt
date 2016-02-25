@@ -9,4 +9,5 @@ ability=Flash;\
         Enchant creature;\
         If a creature dealt damage by enchanted creature this turn would die, exile it instead.
 timing=flash
+enchant=default,creature
 oracle=Flash\nEnchant creature\nIf a creature dealt damage by enchanted creature this turn would die, exile it instead.

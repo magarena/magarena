@@ -9,4 +9,5 @@ ability=Enchant creature;\
         Enchanted creature can't attack or block.;\
         When enchanted creature becomes the target of a spell or ability, exile that creature.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature can't attack or block.\nWhen enchanted creature becomes the target of a spell or ability, exile that creature.

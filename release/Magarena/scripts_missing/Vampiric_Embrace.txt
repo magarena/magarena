@@ -9,4 +9,5 @@ ability=Enchant creature;\
         Enchanted creature gets +2/+2 and has flying.;\
         Whenever a creature dealt damage by enchanted creature this turn dies, put a +1/+1 counter on that creature.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature gets +2/+2 and has flying.\nWhenever a creature dealt damage by enchanted creature this turn dies, put a +1/+1 counter on that creature.

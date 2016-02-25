@@ -8,4 +8,5 @@ cost={W}
 ability=Enchant creature;\
         Enchanted creature has protection from black. This effect doesn't remove SN.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature has protection from black. This effect doesn't remove Black Ward.

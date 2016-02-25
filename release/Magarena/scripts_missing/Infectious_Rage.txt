@@ -9,4 +9,5 @@ ability=Enchant creature;\
         Enchanted creature gets +2/-1.;\
         When enchanted creature dies, choose a creature at random SN can enchant. Return SN to the battlefield attached to that creature.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature gets +2/-1.\nWhen enchanted creature dies, choose a creature at random Infectious Rage can enchant. Return Infectious Rage to the battlefield attached to that creature.

@@ -9,4 +9,5 @@ ability=Enchant creature;\
         Enchanted creature gets +1/-1.;\
         Sacrifice SN: Destroy all non-Wall creatures blocking enchanted creature.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature gets +1/-1.\nSacrifice Coils of the Medusa: Destroy all non-Wall creatures blocking enchanted creature.

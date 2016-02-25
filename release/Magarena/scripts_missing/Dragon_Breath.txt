@@ -10,4 +10,5 @@ ability=Enchant creature;\
         {R}: Enchanted creature gets +1/+0 until end of turn.;\
         When a creature with converted mana cost 6 or greater enters the battlefield, you may return SN from your graveyard to the battlefield attached to that creature.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature has haste.\n{R}: Enchanted creature gets +1/+0 until end of turn.\nWhen a creature with converted mana cost 6 or greater enters the battlefield, you may return Dragon Breath from your graveyard to the battlefield attached to that creature.

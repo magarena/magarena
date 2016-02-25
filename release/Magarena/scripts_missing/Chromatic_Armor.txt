@@ -11,4 +11,5 @@ ability=Enchant creature;\
         Prevent all damage that would be dealt to enchanted creature by sources of the last chosen color.;\
         {X}: Put a sleight counter on SN and choose a color. X is the number of sleight counters on SN.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nAs Chromatic Armor enters the battlefield, choose a color.\nChromatic Armor enters the battlefield with a sleight counter on it.\nPrevent all damage that would be dealt to enchanted creature by sources of the last chosen color.\n{X}: Put a sleight counter on Chromatic Armor and choose a color. X is the number of sleight counters on Chromatic Armor.

@@ -9,4 +9,5 @@ cost={2}{R}
 ability=Enchant player;\
         Creatures enchanted player controls attack each turn if able.
 timing=aura
+enchant=default,player
 oracle=Enchant player\nCreatures enchanted player controls attack each turn if able.

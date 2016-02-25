@@ -9,4 +9,5 @@ ability=Enchant creature;\
         Enchanted creature gets +1/+1 and has trample.;\
         When a creature with converted mana cost 6 or greater enters the battlefield, you may return SN from your graveyard to the battlefield attached to that creature.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature gets +1/+1 and has trample.\nWhen a creature with converted mana cost 6 or greater enters the battlefield, you may return Dragon Fangs from your graveyard to the battlefield attached to that creature.

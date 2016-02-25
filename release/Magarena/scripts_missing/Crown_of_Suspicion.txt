@@ -9,4 +9,5 @@ ability=Enchant creature;\
         Enchanted creature gets +2/-1.;\
         Sacrifice SN: Enchanted creature and other creatures that share a creature type with it get +2/-1 until end of turn.
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature gets +2/-1.\nSacrifice Crown of Suspicion: Enchanted creature and other creatures that share a creature type with it get +2/-1 until end of turn.

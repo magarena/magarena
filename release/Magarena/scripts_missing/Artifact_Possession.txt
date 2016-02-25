@@ -8,4 +8,5 @@ cost={2}{B}
 ability=Enchant artifact;\
         Whenever enchanted artifact becomes tapped or a player activates an ability of enchanted artifact without {T} in its activation cost, SN deals 2 damage to that artifact's controller.
 timing=aura
+enchant=default,artifact
 oracle=Enchant artifact\nWhenever enchanted artifact becomes tapped or a player activates an ability of enchanted artifact without {T} in its activation cost, Artifact Possession deals 2 damage to that artifact's controller.

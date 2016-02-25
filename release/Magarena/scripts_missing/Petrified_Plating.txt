@@ -9,4 +9,5 @@ ability=Enchant creature;\
         Enchanted creature gets +2/+2.;\
         Suspend 2—{G}
 timing=aura
+enchant=default,creature
 oracle=Enchant creature\nEnchanted creature gets +2/+2.\nSuspend 2—{G}
