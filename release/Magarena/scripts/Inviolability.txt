@@ -8,5 +8,5 @@ cost={1}{W}
 ability=Enchant creature;\
         Prevent all damage that would be dealt to enchanted creature.
 timing=aura
-enchant=default,creature
+enchant=pump,pos creature
 oracle=Enchant creature\nPrevent all damage that would be dealt to enchanted creature.
