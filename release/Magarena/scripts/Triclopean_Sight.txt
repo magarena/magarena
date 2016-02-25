@@ -10,5 +10,5 @@ ability=Flash;\
         When SN enters the battlefield, untap enchanted creature.;\
         Enchanted creature gets +1/+1 and has vigilance.
 timing=flash
-enchant=default,creature
+enchant=untap,pos creature
 oracle=Flash\nEnchant creature\nWhen Triclopean Sight enters the battlefield, untap enchanted creature.\nEnchanted creature gets +1/+1 and has vigilance.
