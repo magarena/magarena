@@ -177,6 +177,7 @@ public enum MagicIcon {
     WINDCOUNTER("wind-counter.png"),
     TOWERCOUNTER("tower-counter.png"),
     INFECTIONCOUNTER("spore-counter.png"),
+    FUSECOUNTER("fuse-counter.png"),
 
     MANA_ANY("anymana.gif"),
     MANA_PHYREXIAN_NULL("P.png"),

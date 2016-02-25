@@ -142,6 +142,7 @@ public class TextImages {
         add(MagicCounterType.Wind, MagicIcon.WINDCOUNTER);
         add(MagicCounterType.Tower, MagicIcon.TOWERCOUNTER);
         add(MagicCounterType.Infection, MagicIcon.INFECTIONCOUNTER);
+        add(MagicCounterType.Fuse, MagicIcon.FUSECOUNTER);
     }
 
     private static void add(final MagicCounterType key, final MagicIcon icon) {
