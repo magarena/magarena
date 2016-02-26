@@ -5,10 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={X}{U}{U}
-ability=Enchant creature;\
-        When SN enters the battlefield, tap enchanted creature and put a number of sleep counters on it equal to the value of X as you cast SN.;\
-        Enchanted creature doesn't untap during its controller's untap step if it has a sleep counter on it.;\
-        At the beginning of the upkeep of enchanted creature's controller, remove a sleep counter from that creature.
+ability=Enchant creature
 timing=aura
-enchant=default,creature
+enchant=can't attack or block,neg creature
+requires_groovy_code
 oracle=Enchant creature\nWhen Venarian Gold enters the battlefield, tap enchanted creature and put a number of sleep counters on it equal to the value of X as you cast Venarian Gold.\nEnchanted creature doesn't untap during its controller's untap step if it has a sleep counter on it.\nAt the beginning of the upkeep of enchanted creature's controller, remove a sleep counter from that creature.
