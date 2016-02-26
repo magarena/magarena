@@ -4,6 +4,6 @@ value=3.480
 rarity=R
 type=Enchantment
 cost={2}{R}
-ability=At the beginning of each player's upkeep, if that player controls more lands than each other player, SN deals 2 damage to him or her.
 timing=enchantment
+requires_groovy_code
 oracle=At the beginning of each player's upkeep, if that player controls more lands than each other player, Rivalry deals 2 damage to him or her.
