@@ -7,8 +7,8 @@ subtype=Aura
 cost={3}{B}{B}
 ability=Enchant creature;\
         At the beginning of each upkeep, put a plague counter on SN.;\
-        Enchanted creature gets -1/-1 for each plague counter on SN.;\
-        When enchanted creature leaves the battlefield, that creature's controller returns SN from its owner's graveyard to the battlefield.
+        Enchanted creature gets -1/-1 for each plague counter on SN.
 timing=aura
-enchant=default,creature
+enchant=weaken,neg creature
+requires_groovy_code
 oracle=Enchant creature\nAt the beginning of each upkeep, put a plague counter on Traveling Plague.\nEnchanted creature gets -1/-1 for each plague counter on Traveling Plague.\nWhen enchanted creature leaves the battlefield, that creature's controller returns Traveling Plague from its owner's graveyard to the battlefield.
