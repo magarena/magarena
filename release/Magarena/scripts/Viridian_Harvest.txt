@@ -5,8 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={G}
-ability=Enchant artifact;\
-        When enchanted artifact is put into a graveyard, you gain 6 life.
+ability=Enchant artifact
 timing=aura
 enchant=default,artifact
+requires_groovy_code
 oracle=Enchant artifact\nWhen enchanted artifact is put into a graveyard, you gain 6 life.
