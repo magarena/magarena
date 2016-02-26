@@ -5,8 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={U}{U}
-ability=Enchant creature;\
-        Enchanted creature has shroud as long as it's untapped.
+ability=Enchant creature
 timing=aura
-enchant=default,creature
+enchant=shroud,pos creature
+requires_groovy_code
 oracle=Enchant creature\nEnchanted creature has shroud as long as it's untapped.
