@@ -5,8 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{G}
-ability=Enchant creature;\
-        Whenever enchanted creature deals damage to a creature, destroy the other creature.
+ability=Enchant creature
 timing=aura
-enchant=default,creature
+enchant=pump,pos creature
+requires_groovy_code
 oracle=Enchant creature\nWhenever enchanted creature deals damage to a creature, destroy the other creature.
