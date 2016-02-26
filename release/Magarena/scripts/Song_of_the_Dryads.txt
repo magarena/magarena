@@ -5,8 +5,8 @@ rarity=R
 type=Enchantment
 subtype=Aura
 cost={2}{G}
-ability=Enchant permanent;\
-        Enchanted permanent is a colorless Forest land.
+ability=Enchant permanent
 timing=aura
 enchant=default,permanent
+requires_groovy_code
 oracle=Enchant permanent\nEnchanted permanent is a colorless Forest land.
