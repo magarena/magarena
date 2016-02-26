@@ -6,8 +6,8 @@ type=Enchantment
 subtype=Aura
 cost={3}{U}{U}{U}
 ability=Enchant permanent;\
-        When SN enters the battlefield, if enchanted permanent is tapped, untap it.;\
         You control enchanted permanent.
 timing=aura
-enchant=default,permanent
+enchant=gain control,permanent
+requires_groovy_code
 oracle=Enchant permanent\nWhen Volition Reins enters the battlefield, if enchanted permanent is tapped, untap it.\nYou control enchanted permanent.
