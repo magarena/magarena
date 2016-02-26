@@ -144,6 +144,7 @@ public class TextImages {
         add(MagicCounterType.Infection, MagicIcon.INFECTIONCOUNTER);
         add(MagicCounterType.Fuse, MagicIcon.FUSECOUNTER);
         add(MagicCounterType.Page, MagicIcon.PAGECOUNTER);
+        add(MagicCounterType.Sleep, MagicIcon.SLEEPCOUNTER);
     }
 
     private static void add(final MagicCounterType key, final MagicIcon icon) {
