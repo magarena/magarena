@@ -5,8 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={G}
-ability=Enchant land;\
-        Enchanted land has "Untap this land during each other player's untap step."
+ability=Enchant land
 timing=aura
-enchant=default,land
+enchant=untap,pos land
+requires_groovy_code
 oracle=Enchant land\nEnchanted land has "Untap this land during each other player's untap step."
