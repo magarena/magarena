@@ -161,4 +161,9 @@ public class ExplorerPanel extends JPanel implements ICardSelectionListener, ICa
         }
     }
 
+	@Override
+	public boolean usePlayerCollection() {
+		return false;
+	}
+
 }

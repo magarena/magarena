@@ -1,6 +1,9 @@
 package magic.ui.canvas.cards;
 
 import java.awt.BasicStroke;
+
+import javax.swing.JComboBox;
+import javax.swing.JComponent;
 import javax.swing.JPanel;
 
 import java.awt.Color;
@@ -188,7 +191,7 @@ public class CardsCanvas extends JPanel {
             final boolean isScalingRequired =
                     !card.getSize().equals(preferredCardSize) || (cardCanvasScale != 1);
             if (isScalingRequired) {
-                final BufferedImage unscaledImage = card.getFrontImage();
+                final BufferedImage unscaledImage = card.getFrontImage(this);
                 final int W = (int)(preferredCardSize.width * cardCanvasScale);
                 imageHandler.getScaledImage(unscaledImage, W);
             }
@@ -260,19 +263,21 @@ public class CardsCanvas extends JPanel {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        drawCards(g);
+        drawCards(g, this);
     }
 
-    private void drawCards(final Graphics g) {
+    private void drawCards(final Graphics g, JComponent jcomp) {
+    	System.out.println("draw cards");
         if (this.getWidth() > 0) {
             if (!getSize().equals(canvasSize) || refreshLayout || isAnimateThreadRunning) {
                 refreshLayout = false;
                 canvasSize = new Dimension(getSize());
                 setScaleToFitLayout();
             }
+            System.out.println("draw cards "+maxCardsVisible);
             for (int i = 0; i < maxCardsVisible; i++) {
                 final CardCanvas card = cards.get(i);
-                drawCard(g, card);
+                drawCard(g, card, jcomp);
             }
             highlightCardUnderMousePointer(g);
         }
@@ -306,14 +311,14 @@ public class CardsCanvas extends JPanel {
         repaint();
     }
 
-    private void drawCard(final Graphics g, final CardCanvas canvasCard) {
+    private void drawCard(final Graphics g, final CardCanvas canvasCard, JComponent jcomp) {
 
         final int X = canvasCard.getBounds().x;
         final int Y = canvasCard.getBounds().y;
         final int W = canvasCard.getBounds().width;
         final int H = canvasCard.getBounds().height;
 
-        g.drawImage(GraphicsUtils.scale(canvasCard.getFrontImage(), W, H), X, Y, null);
+        g.drawImage(GraphicsUtils.scale(canvasCard.getFrontImage(jcomp), W, H), X, Y, null);
 
         if (stackDuplicateCards) {
             drawCardCount(g, X, Y, W, H, canvasCard);

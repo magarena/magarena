@@ -1,5 +1,6 @@
 package magic.ui;
 
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -22,16 +23,18 @@ public class MagicLogs {
 
     private static List<String> getCardNamesFromDownloadLog() {
         final List<String> cardNames = new ArrayList<>();
-        final Path logPath = MagicFileSystem.getDataPath(MagicFileSystem.DataPath.LOGS).resolve("newcards.log");
-        if (logPath.toFile().exists()) {
-            try {
-                for (final String cardName : Files.readAllLines(logPath, Charset.defaultCharset())) {
-                    cardNames.add(cardName.trim());
-                }
-            } catch (final IOException ex) {
-                throw new RuntimeException(ex);
-            }
-        }
+        // disable because slow implement
+//        final Path logPath = MagicFileSystem.getDataPath(MagicFileSystem.DataPath.LOGS).resolve("newcards.log");
+//        if (logPath.toFile().exists()) {
+//            try {
+//            	// bug of jdk? "java.nio.charset.MalformedInputException: Input length = 1" here
+//                for (final String cardName : FileUtil.readString(new FileInputStream(logPath.toFile()),null).split("\n")) {
+//                    cardNames.add(cardName.trim());
+//                }
+//            } catch (final IOException ex) {
+//                throw new RuntimeException(ex);
+//            }
+//        }
         return cardNames;
     }
 

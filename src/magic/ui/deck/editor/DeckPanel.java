@@ -117,7 +117,7 @@ class DeckPanel extends JPanel implements IDeckEditorView {
                 new PropertyChangeListener() {
                     @Override
                     public void propertyChange(PropertyChangeEvent evt) {
-                        removeSelectedCardFromDeck(true);
+                        //removeSelectedCardFromDeck(true);
                     }
                 });
     }

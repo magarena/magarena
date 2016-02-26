@@ -178,7 +178,7 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
         return true;
     }
 
-    private void downloadDefaultCardImage(final CardImageFile aFile) {
+    public void downloadDefaultCardImage(final CardImageFile aFile) {
         if (tryDefaultDownload(aFile)) {
             doLog(aFile.getCardName(), CardTextLanguage.ENGLISH, null);
         }

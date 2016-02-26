@@ -4,6 +4,9 @@ import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
+
+import javax.swing.JComponent;
+
 import magic.model.MagicCard;
 import magic.ui.MagicImages;
 
@@ -38,13 +41,16 @@ final class CardCanvas {
 
     @Override
     public int hashCode() {
-        final int hashcode1 = getFrontImage().hashCode();
-        final int hashcode2 = getBackImage() == null ? 0 : getBackImage().hashCode();
-        return 73 * hashcode1 ^ 79 * hashcode2;
+    	return card.getCardDefinition().getName().hashCode();
+//        final int hashcode1 = getFrontImage(null).hashCode();
+//        final int hashcode2 = getBackImage() == null ? 0 : getBackImage().hashCode();
+//        return 73 * hashcode1 ^ 79 * hashcode2;
     }
-
-    public BufferedImage getFrontImage() {
-        return MagicImages.geCardImageUseCache(card.getCardDefinition());
+//    public BufferedImage getFrontImage() {
+//    	
+//    }
+    public BufferedImage getFrontImage(JComponent jcomp) {
+        return MagicImages.geCardImageUseCache(card.getCardDefinition(), jcomp);
     }
 
     public BufferedImage getBackImage() {

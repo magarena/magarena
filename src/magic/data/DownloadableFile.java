@@ -10,6 +10,7 @@ import java.net.Proxy;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
+
 import org.apache.commons.io.FileUtils;
 
 public class DownloadableFile {
@@ -44,7 +45,7 @@ public class DownloadableFile {
         if (proxy != Proxy.NO_PROXY && proxy.type() != Proxy.Type.DIRECT) {
             downloadUsingProxy(proxy, url, file);
         } else {
-            FileUtils.copyURLToFile(url, file, 10000, 5000);
+            FileUtils.copyURLToFile(url, file, 10000, 15000);
         }
     }
 

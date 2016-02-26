@@ -217,6 +217,7 @@ public final class ScreenController {
                 ((DuelGameScreen) nextScreen).updateView();
             } else if (nextScreen instanceof MainMenuScreen) {
                 ((MainMenuScreen) nextScreen).updateMissingImagesNotification();
+            } else{
             }
         } else {
             screens.push(activeScreen);

@@ -63,7 +63,7 @@ public class CardImageOverlay extends TexturedPanel {
     }
 
     private void drawCardImage(final MagicCardDefinition aCard) {
-        final BufferedImage baseImage = MagicImages.geCardImageUseCache(aCard);
+        final BufferedImage baseImage = MagicImages.geCardImageUseCache(aCard, this);
         final int baseWidth = baseImage.getWidth();
         final int baseHeight = baseImage.getHeight();
         final double scale = Math.min(

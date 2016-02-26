@@ -114,6 +114,10 @@ class FilteredCardPoolPanel extends JPanel implements ICardFilterPanelListener {
     @Override
     public boolean isDeckEditor() {
         return true;
+    } 
+    @Override
+    public boolean usePlayerCollection() {
+        return true;
     }
 
     @Override

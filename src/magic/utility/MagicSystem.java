@@ -125,6 +125,7 @@ final public class MagicSystem {
 
     public static void waitForAllCards() {
         if (loadCards.isDone()) {
+        	System.out.println("returned");
             return;
         } else {
             try {

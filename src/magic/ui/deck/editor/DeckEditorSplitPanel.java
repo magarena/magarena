@@ -403,4 +403,10 @@ public class DeckEditorSplitPanel extends JPanel implements ICardSelectionListen
 
     }
 
+	@Override
+	public boolean usePlayerCollection() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
 }
