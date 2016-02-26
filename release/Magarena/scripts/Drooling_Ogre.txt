@@ -6,6 +6,6 @@ type=Creature
 subtype=Ogre
 cost={1}{R}
 pt=3/3
-ability=Whenever a player casts an artifact spell, that player gains control of SN.
 timing=main
+requires_groovy_code
 oracle=Whenever a player casts an artifact spell, that player gains control of Drooling Ogre.
