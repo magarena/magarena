@@ -4,6 +4,6 @@ value=3.986
 rarity=R
 type=Enchantment
 cost={1}{W}
-ability=At the beginning of your upkeep, if there are four or more creatures on the battlefield, sacrifice SN and destroy all creatures. They can't be regenerated.
 timing=enchantment
+requires_groovy_code
 oracle=At the beginning of your upkeep, if there are four or more creatures on the battlefield, sacrifice Planar Collapse and destroy all creatures. They can't be regenerated.
