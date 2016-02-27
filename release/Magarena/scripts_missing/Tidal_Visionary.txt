@@ -6,6 +6,6 @@ type=Creature
 subtype=Merfolk,Wizard
 cost={U}
 pt=1/1
-ability={T}: Target creature becomes the color of your choice until end of turn.
 timing=main
+requires_groovy_code
 oracle={T}: Target creature becomes the color of your choice until end of turn.
