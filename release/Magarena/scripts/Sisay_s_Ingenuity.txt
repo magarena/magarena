@@ -6,8 +6,8 @@ type=Enchantment
 subtype=Aura
 cost={U}
 ability=Enchant creature;\
-        When SN enters the battlefield, draw a card.;\
-        Enchanted creature has "{2}{U}: Target creature becomes the color of your choice until end of turn."
+        When SN enters the battlefield, draw a card.
 timing=aura
-enchant=default,creature
+enchant=default,pos creature
+requires_groovy_code
 oracle=Enchant creature\nWhen Sisay's Ingenuity enters the battlefield, draw a card.\nEnchanted creature has "{2}{U}: Target creature becomes the color of your choice until end of turn."
