@@ -5,8 +5,8 @@ rarity=R
 type=Enchantment
 subtype=Aura
 cost={3}{G}
-ability=Enchant creature;\
-        Enchanted creature has "{T}: This creature deals damage equal to its power to target creature. That creature deals damage equal to its power to this creature."
+ability=Enchant creature
 timing=aura
-enchant=default,creature
+enchant=power,pos creature
+requires_groovy_code
 oracle=Enchant creature\nEnchanted creature has "{T}: This creature deals damage equal to its power to target creature. That creature deals damage equal to its power to this creature."
