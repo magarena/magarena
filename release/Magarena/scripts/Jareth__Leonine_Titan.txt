@@ -1,6 +1,6 @@
 name=Jareth, Leonine Titan
 image=http://magiccards.info/scans/en/c15/71.jpg
-image_updated=2016-01-19
+image_updated=2016-02-29
 value=3.250
 rarity=R
 type=Legendary,Creature

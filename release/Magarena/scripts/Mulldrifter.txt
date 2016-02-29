@@ -1,6 +1,6 @@
 name=Mulldrifter
 image=http://magiccards.info/scans/en/c15/97.jpg
-image_updated=2016-01-19
+image_updated=2016-02-29
 value=4.205
 rarity=U
 type=Creature

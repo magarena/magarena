@@ -1,6 +1,6 @@
 name=Crib Swap
 image=http://magiccards.info/scans/en/c15/65.jpg
-image_updated=2016-01-19
+image_updated=2016-02-29
 value=4.065
 removal=4
 rarity=U

@@ -1,6 +1,6 @@
 name=Sakura-Tribe Elder
 image=http://magiccards.info/scans/en/c15/200.jpg
-image_updated=2016-01-19
+image_updated=2016-02-29
 value=4.500
 rarity=C
 type=Creature

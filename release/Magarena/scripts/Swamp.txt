@@ -1,6 +1,6 @@
 name=Swamp
 image=http://magiccards.info/scans/en/bfz/264b.jpg
-image_updated=2015-11-12
+image_updated=2016-02-29
 value=3.500
 rarity=B
 type=Basic,Land

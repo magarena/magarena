@@ -1,6 +1,6 @@
 name=Cage of Hands
 image=http://magiccards.info/scans/en/c15/62.jpg
-image_updated=2016-01-19
+image_updated=2016-02-29
 value=3.233
 rarity=C
 type=Enchantment

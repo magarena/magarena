@@ -1,5 +1,6 @@
 name=Bone Saw
-image=http://magiccards.info/scans/en/cfx/135.jpg
+image=http://magiccards.info/scans/en/ogw/161.jpg
+image_updated=2016-02-29
 value=2.933
 rarity=C
 type=Artifact

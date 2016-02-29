@@ -1,6 +1,6 @@
 name=Fumiko the Lowblood
 image=http://magiccards.info/scans/en/c15/155.jpg
-image_updated=2016-01-19
+image_updated=2016-02-29
 value=3.980
 rarity=R
 type=Legendary,Creature

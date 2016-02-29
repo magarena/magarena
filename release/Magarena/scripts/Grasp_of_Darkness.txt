@@ -1,5 +1,6 @@
 name=Grasp of Darkness
-image=http://magiccards.info/scans/en/som/65.jpg
+image=http://magiccards.info/scans/en/ogw/85.jpg
+image_updated=2016-02-29
 value=4.029
 removal=3
 rarity=U
