@@ -1,5 +1,6 @@
 name=Unknown Shores
-image=http://magiccards.info/scans/en/ths/229.jpg
+image=http://magiccards.info/scans/en/ogw/181.jpg
+image_updated=2016-02-29
 value=2.865
 rarity=C
 type=Land

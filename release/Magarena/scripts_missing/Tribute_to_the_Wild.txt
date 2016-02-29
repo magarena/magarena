@@ -1,6 +1,6 @@
 name=Tribute to the Wild
 image=http://magiccards.info/scans/en/c15/206.jpg
-image_updated=2016-01-19
+image_updated=2016-02-29
 value=3.000
 rarity=U
 type=Instant

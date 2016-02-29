@@ -1,5 +1,6 @@
 name=Thought-Knot Seer
 image=http://magiccards.info/scans/en/ogw/9.jpg
+image_updated=2016-02-29
 value=2.500
 rarity=R
 type=Creature

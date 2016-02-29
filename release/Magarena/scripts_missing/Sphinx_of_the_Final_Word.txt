@@ -1,5 +1,6 @@
 name=Sphinx of the Final Word
 image=http://magiccards.info/scans/en/ogw/63.jpg
+image_updated=2016-02-29
 value=2.500
 rarity=M
 type=Creature

@@ -1,5 +1,6 @@
 name=Linvala, the Preserver
 image=http://magiccards.info/scans/en/ogw/25.jpg
+image_updated=2016-02-29
 value=2.500
 rarity=M
 type=Legendary,Creature
