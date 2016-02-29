@@ -1,5 +1,6 @@
 name=Makindi Aeronaut
 image=http://magiccards.info/scans/en/ogw/27.jpg
+image_updated=2016-02-29
 value=2.500
 rarity=C
 type=Creature

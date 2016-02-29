@@ -1,6 +1,6 @@
 name=Wistful Selkie
 image=http://magiccards.info/scans/en/c15/243.jpg
-image_updated=2016-01-19
+image_updated=2016-02-29
 value=3.421
 rarity=U
 type=Creature

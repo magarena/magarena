@@ -1,5 +1,6 @@
 name=Blinding Drone
 image=http://magiccards.info/scans/en/ogw/41.jpg
+image_updated=2016-02-29
 value=2.500
 rarity=C
 type=Creature

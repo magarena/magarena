@@ -1,5 +1,6 @@
 name=Tyrant of Valakut
-image=http://mythicspoiler.com/ogw/cards/tyrantofvalakut.jpg
+image=http://magiccards.info/scans/en/ogw/119.jpg
+image_updated=2016-02-29
 value=2.500
 rarity=R
 type=Creature

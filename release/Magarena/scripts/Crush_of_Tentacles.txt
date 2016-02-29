@@ -1,5 +1,6 @@
 name=Crush of Tentacles
-image=http://mythicspoiler.com/ogw/cards/crushoftentacles.jpg
+image=http://magiccards.info/scans/en/ogw/53.jpg
+image_updated=2016-02-29
 value=2.500
 removal=2
 rarity=M

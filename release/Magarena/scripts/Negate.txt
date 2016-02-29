@@ -1,6 +1,6 @@
 name=Negate
-image=http://magiccards.info/scans/en/ori/65.jpg
-image_updated=2015-11-05
+image=http://magiccards.info/scans/en/ogw/59.jpg
+image_updated=2016-02-29
 value=2.500
 rarity=C
 type=Instant

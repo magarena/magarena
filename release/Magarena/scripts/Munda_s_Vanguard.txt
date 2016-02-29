@@ -1,5 +1,6 @@
 name=Munda's Vanguard
 image=http://magiccards.info/scans/en/ogw/29.jpg
+image_updated=2016-02-29
 value=2.500
 rarity=R
 type=Creature
