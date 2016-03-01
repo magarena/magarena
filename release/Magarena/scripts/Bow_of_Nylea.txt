@@ -5,9 +5,9 @@ rarity=R
 type=Legendary,Enchantment,Artifact
 cost={1}{G}{G}
 ability=attacking creatures you control have deathtouch.;\
-        {1}{G},{T}:Put a +1/+1 counter on target creature.;\
-        {1}{G},{T}:SN deals 2 damage to target creature with flying.;\
-        {1}{G},{T}:You gain 3 life.
+        {1}{G}, {T}: Put a +1/+1 counter on target creature.;\
+        {1}{G}, {T}: SN deals 2 damage to target creature with flying.;\
+        {1}{G}, {T}: You gain 3 life.
 timing=artifact
 requires_groovy_code
 oracle=Attacking creatures you control have deathtouch.\n{1}{G}, {T}: Choose one —\n• Put a +1/+1 counter on target creature.\n• Bow of Nylea deals 2 damage to target creature with flying.\n• You gain 3 life.\n• Put up to four target cards from your graveyard on the bottom of your library in any order.

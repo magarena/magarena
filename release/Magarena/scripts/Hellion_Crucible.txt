@@ -4,7 +4,7 @@ value=3.071
 rarity=R
 type=Land
 ability={T}: Add {C} to your mana pool.;\
-        {1}{R},{T}: Put a pressure counter on SN.;\
-        {1}{R},{T},Remove two pressure counters from SN,Sacrifice SN: Put a 4/4 red Hellion creature token with haste onto the battlefield.
+        {1}{R}, {T}: Put a pressure counter on SN.;\
+        {1}{R}, {T}, Remove two pressure counters from SN, Sacrifice SN: Put a 4/4 red Hellion creature token with haste onto the battlefield.
 timing=land
 oracle={T}: Add {C} to your mana pool.\n{1}{R}, {T}: Put a pressure counter on Hellion Crucible.\n{1}{R}, {T}, Remove two pressure counters from Hellion Crucible and sacrifice it: Put a 4/4 red Hellion creature token with haste onto the battlefield.

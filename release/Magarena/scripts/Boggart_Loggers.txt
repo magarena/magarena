@@ -6,6 +6,8 @@ type=Creature
 subtype=Goblin,Rogue
 cost={2}{B}
 pt=2/1
-ability=Forestwalk;{2}{B},Sacrifice SN:Destroy target Treefolk.;{2}{B},Sacrifice SN:Destroy target Forest.
+ability=Forestwalk;\
+        {2}{B}, Sacrifice SN: Destroy target Treefolk.;\
+        {2}{B}, Sacrifice SN: Destroy target Forest.
 timing=main
 oracle=Forestwalk\n{2}{B}, Sacrifice Boggart Loggers: Destroy target Treefolk or Forest.

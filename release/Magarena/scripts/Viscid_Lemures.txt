@@ -6,6 +6,6 @@ type=Creature
 subtype=Spirit
 cost={4}{B}
 pt=4/3
-ability={0}:SN gets -1/-0 and gains swampwalk until end of turn. Activate this ability with AI no more than three times each turn.
+ability={0}: SN gets -1/-0 and gains swampwalk until end of turn. Activate this ability with AI no more than three times each turn.
 timing=main
 oracle={0}: Viscid Lemures gets -1/-0 and gains swampwalk until end of turn.

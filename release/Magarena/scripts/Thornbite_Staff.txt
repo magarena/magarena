@@ -5,7 +5,7 @@ rarity=U
 type=Tribal,Artifact
 subtype=Shaman,Equipment
 cost={2}
-ability=Equipped creature has "{2},{T}: This creature deals 1 damage to target creature or player." and "Whenever a creature dies, untap this creature.";\
+ability=Equipped creature has "{2}, {T}: This creature deals 1 damage to target creature or player." and "Whenever a creature dies, untap this creature.";\
         Equip {4}
 timing=equipment
 requires_groovy_code

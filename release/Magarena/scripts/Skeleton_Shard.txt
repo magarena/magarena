@@ -4,6 +4,7 @@ value=4.411
 rarity=U
 type=Artifact
 cost={3}
-ability={3},{T}: Return target artifact creature card from your graveyard to your hand.;{B},{T}: Return target artifact creature card from your graveyard to your hand.
+ability={3}, {T}: Return target artifact creature card from your graveyard to your hand.;\
+        {B}, {T}: Return target artifact creature card from your graveyard to your hand.
 timing=artifact
 oracle={3}, {T} or {B}, {T}: Return target artifact creature card from your graveyard to your hand.

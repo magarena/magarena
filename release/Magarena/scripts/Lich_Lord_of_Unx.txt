@@ -6,7 +6,7 @@ type=Creature
 subtype=Zombie,Wizard
 cost={1}{U}{B}
 pt=2/2
-ability={U}{B},{T}: Put a 1/1 blue and black Zombie Wizard creature token onto the battlefield.
+ability={U}{B}, {T}: Put a 1/1 blue and black Zombie Wizard creature token onto the battlefield.
 timing=main
 requires_groovy_code
 oracle={U}{B}, {T}: Put a 1/1 blue and black Zombie Wizard creature token onto the battlefield.\n{U}{U}{B}{B}: Target player loses X life and puts the top X cards of his or her library into his or her graveyard, where X is the number of Zombies you control.

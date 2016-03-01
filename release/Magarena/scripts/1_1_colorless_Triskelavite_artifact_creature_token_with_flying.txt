@@ -6,5 +6,6 @@ subtype=Triskelavite
 color=
 value=1
 pt=1/1
-ability=Flying;Sacrifice SN:SN deals 1 damage to target creature or player.
+ability=Flying;\
+        Sacrifice SN: SN deals 1 damage to target creature or player.
 oracle=Flying\nSacrifice this creature: This creature deals 1 damage to target creature or player.
