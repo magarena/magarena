@@ -499,7 +499,8 @@ checks: \
 	check_image \
 	check_decks \
 	check_mana_or_combat \
-	check_color_or_cost
+	check_color_or_cost \
+	check_tap_tap
 
 remove_extra_missing:
 	git rm `join <(ls -1 release/Magarena/scripts | sort) <(ls -1 release/Magarena/scripts_missing | sort) | sed 's/^/release\/Magarena\/scripts_missing\//'`
@@ -601,6 +602,9 @@ check_color_or_cost:
 	diff \
 	<(grep "^\(cost=\|color=\|type.*Land\)" -r release/Magarena/scripts/*.txt -l) \
 	<(ls release/Magarena/scripts/*.txt | sort)
+
+check_tap_tap:
+	grep "{T}, Tap" -ir release/Magarena/scripts | grep -v oracle | grep -iv "{T}, Tap another" | ${NO_OUTPUT}
 
 crash.txt: $(wildcard *.log)
 	for i in `grep "^Excep" -l $^`; do \
