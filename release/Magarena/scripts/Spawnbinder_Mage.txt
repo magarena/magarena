@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Wizard,Ally
 cost={3}{W}
 pt=2/4
-ability={T}, Tap an untapped Ally you control: Tap target creature.
+ability={T}, Tap another untapped Ally you control: Tap target creature.
 timing=main
 oracle=Cohort — {T}, Tap an untapped Ally you control: Tap target creature.

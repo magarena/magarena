@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Shaman,Ally
 cost={3}{B}
 pt=4/2
-ability={T}, Tap an untapped Ally you control: Target opponent loses 2 life.
+ability={T}, Tap another untapped Ally you control: Target opponent loses 2 life.
 timing=main
 oracle=Cohort — {T}, Tap an untapped Ally you control: Target opponent loses 2 life.

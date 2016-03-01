@@ -7,6 +7,6 @@ type=Creature
 subtype=Kor,Knight,Ally
 cost={4}{W}
 pt=3/3
-ability={T}, Tap an untapped Ally you control: Put a +1/+1 counter on each creature you control.
+ability={T}, Tap another untapped Ally you control: Put a +1/+1 counter on each creature you control.
 timing=main
 oracle=Cohort — {T}, Tap an untapped Ally you control: Put a +1/+1 counter on each creature you control.

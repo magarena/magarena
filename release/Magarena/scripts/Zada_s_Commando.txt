@@ -8,6 +8,6 @@ subtype=Goblin,Archer,Ally
 cost={1}{R}
 pt=2/1
 ability=First strike;\
-        {T}, Tap an untapped Ally you control: SN deals 1 damage to target opponent.
+        {T}, Tap another untapped Ally you control: SN deals 1 damage to target opponent.
 timing=main
 oracle=First strike\nCohort — {T}, Tap an untapped Ally you control: Zada's Commando deals 1 damage to target opponent.

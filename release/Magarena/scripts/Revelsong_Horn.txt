@@ -4,6 +4,6 @@ value=1.567
 rarity=U
 type=Artifact
 cost={2}
-ability={1}, {T}, Tap an untapped creature you control: Target creature gets +1/+1 until end of turn.
+ability={1}, {T}, Tap another untapped creature you control: Target creature gets +1/+1 until end of turn.
 timing=artifact
 oracle={1}, {T}, Tap an untapped creature you control: Target creature gets +1/+1 until end of turn.

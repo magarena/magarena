@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Cleric,Ally
 cost={1}{W}
 pt=2/2
-ability={T}, Tap an untapped Ally you control: You gain 2 life.
+ability={T}, Tap another untapped Ally you control: You gain 2 life.
 timing=main
 oracle=Cohort — {T}, Tap an untapped Ally you control: You gain 2 life.

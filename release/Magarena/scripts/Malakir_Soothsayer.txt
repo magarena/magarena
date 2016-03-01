@@ -7,6 +7,6 @@ type=Creature
 subtype=Vampire,Shaman,Ally
 cost={4}{B}
 pt=4/4
-ability={T}, Tap an untapped Ally you control: You draw a card and you lose 1 life.
+ability={T}, Tap another untapped Ally you control: You draw a card and you lose 1 life.
 timing=main
 oracle=Cohort — {T}, Tap an untapped Ally you control: You draw a card and you lose 1 life.
