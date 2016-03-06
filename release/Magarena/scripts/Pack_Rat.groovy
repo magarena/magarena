@@ -23,8 +23,10 @@
 
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
-            final MagicCard card=MagicCard.createTokenCard(event.getPermanent(), event.getPlayer());
-            game.doAction(new PlayCardAction(card));
+            game.doAction(new PlayTokenAction(
+                event.getPlayer(),
+                event.getPermanent()
+            ));
         }
     }
 ]

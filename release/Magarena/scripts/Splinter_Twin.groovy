@@ -20,14 +20,9 @@ def Copy = new MagicPermanentActivation(
 
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
-        final MagicPlayer player=event.getPlayer();
-        final MagicCard card=MagicCard.createTokenCard(
+        game.doAction(new PlayTokenAction(
+            event.getPlayer(),
             event.getPermanent(),
-            player
-        );
-        game.doAction(new PlayCardAction(
-            card,
-            player,
             [MagicPlayMod.HASTE, MagicPlayMod.EXILE_AT_END_OF_TURN]
         ));
     }

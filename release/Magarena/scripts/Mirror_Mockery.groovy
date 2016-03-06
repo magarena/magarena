@@ -15,9 +15,11 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             if (event.isYes()) {
-                final MagicPlayer player = event.getPlayer();
-                final MagicCard card = MagicCard.createTokenCard(event.getRefPermanent(), player);
-                game.doAction(new PlayCardAction(card, player, [MagicPlayMod.EXILE_AT_END_OF_COMBAT]));
+                game.doAction(new PlayTokenAction(
+                    event.getPlayer(),
+                    event.getRefPermanent(),
+                    [MagicPlayMod.EXILE_AT_END_OF_COMBAT]
+                ));
             }
         }
     }

@@ -15,13 +15,13 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
                 final MagicPlayer player = event.getPlayer();
-                game.doAction(new PlayCardAction(
-                    MagicCard.createTokenCard(it, player),
-                    player
+                game.doAction(new PlayTokenAction(
+                    player,
+                    it
                 ));
                 game.doAction(new CipherAction(
                     event.getCardOnStack(),
-                    event.getPlayer()
+                    player
                 ));
             });
         }

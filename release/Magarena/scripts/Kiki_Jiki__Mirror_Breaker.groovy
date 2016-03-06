@@ -24,11 +24,9 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processTargetPermanent(game, {
-                final MagicPlayer player=event.getPlayer();
-                final MagicCard card=MagicCard.createTokenCard(it,player);
-                game.doAction(new PlayCardAction(
-                    card,
-                    player,
+                game.doAction(new PlayTokenAction(
+                    event.getPlayer(),
+                    it,
                     [MagicPlayMod.HASTE, MagicPlayMod.SACRIFICE_AT_END_OF_TURN]
                 ));
             });
