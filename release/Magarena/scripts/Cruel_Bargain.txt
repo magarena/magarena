@@ -4,6 +4,6 @@ value=4.500
 rarity=R
 type=Sorcery
 cost={B}{B}{B}
-effect=Draw four cards. You lose half your life, rounded up.
-timing=main
+timing=draw
+requires_groovy_code
 oracle=Draw four cards. You lose half your life, rounded up.
