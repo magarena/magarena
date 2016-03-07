@@ -2,27 +2,13 @@ package magic.ui.theme;
 
 import java.awt.Color;
 import java.io.File;
-import java.io.FileFilter;
 import java.util.ArrayList;
 import java.util.List;
 import magic.data.GeneralConfig;
 import magic.ui.MagicImages;
 import magic.utility.MagicFileSystem;
-import magic.utility.MagicFileSystem.DataPath;
 
 public class ThemeFactory {
-
-    private static final String THEME_ZIP = "_theme.zip";
-    private static final String THEME_FOLDER = "_theme";
-
-    // Must be before instance!
-    private static final FileFilter THEME_FILE_FILTER = new FileFilter() {
-        @Override
-        public boolean accept(final File file) {
-            return (file.isFile() && file.getName().endsWith(THEME_ZIP)) ||
-                   (file.isDirectory() && file.getName().endsWith(THEME_FOLDER));
-        }
-    };
 
     private static final ThemeFactory INSTANCE = new ThemeFactory();
 
@@ -41,13 +27,13 @@ public class ThemeFactory {
     }
 
     private void loadCustomExternalThemes() {
-        final File[] files = MagicFileSystem.getDataPath(DataPath.MODS).toFile().listFiles(THEME_FILE_FILTER);
+        final File[] files = MagicFileSystem.getThemes();
         if (files != null) {
             for (final File file : files) {
                 final String name = file.getName();
-                int index = name.indexOf(THEME_ZIP);
+                int index = name.indexOf(MagicFileSystem.THEME_ZIP);
                 if (index < 0) {
-                    index = name.indexOf(THEME_FOLDER);
+                    index = name.indexOf(MagicFileSystem.THEME_FOLDER);
                 }
                 themes.add(new CustomTheme(file, name.substring(0, index)));
             }

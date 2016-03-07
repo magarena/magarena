@@ -22,10 +22,10 @@ import magic.utility.FileIO;
 import magic.utility.MagicFileSystem;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOCase;
-import org.apache.commons.io.filefilter.DirectoryFileFilter;
 import org.apache.commons.io.filefilter.FileFilterUtils;
 import org.apache.commons.io.filefilter.IOFileFilter;
 import org.apache.commons.io.filefilter.NameFileFilter;
+import org.apache.commons.io.filefilter.WildcardFileFilter;
 
 public class ImportWorker extends SwingWorker<Boolean, Void> {
 
@@ -42,6 +42,7 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
     private static final String _S10 = "- card images...";
     private static final String _S11 = "There was problem during the import process.";
     private static final String _S12 = "Please see the following file for more details -";
+    private static final String _S13 = "- mods...";
 
     private static final String OK_STRING = String.format("%s\n", UiString.get(_S3));
     private static final String FAIL_STRING = String.format("%s\n", UiString.get(_S1));
@@ -63,6 +64,7 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
         if (!isCancelled()) { importPlayerProfiles(); }
         if (!isCancelled()) { importCustomDecks(); }
         if (!isCancelled()) { importAvatars(); }
+        if (!isCancelled()) { importThemes(); }
         if (!isCancelled()) { importMods(); }
         if (!isCancelled()) { importCardImages(); }
         if (!isCancelled()) { updateNewCardsLog(); }
@@ -124,11 +126,45 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
     }
 
     /**
+     * If imported version does not have an existing "themes" folder then
+     * copies any existing "*_theme" folders or files from "mods" to "themes".
+     */
+    private void migrateModThemes() throws IOException {
+        final Path targetPath = MagicFileSystem.getDataPath(MagicFileSystem.DataPath.THEMES);
+        File[] modThemes = importDataPath.resolve("mods").toFile().listFiles(MagicFileSystem.THEME_FILE_FILTER);
+        for (File themeFile : modThemes) {
+            if (themeFile.isDirectory()) {
+                FileUtils.copyDirectoryToDirectory(themeFile, targetPath.toFile());
+            } else {
+                FileUtils.copyFileToDirectory(themeFile, targetPath.toFile());
+            }
+        }
+    }
+
+    /**
+     * Merges "themes" folder and sub-folders.
+     * If file already exists then imported version takes precedence.
+     * (see also {@link migrateModThemes})
+     */
+    private void importThemes() throws IOException {
+        setProgressNote(UiString.get(_S4));
+        final String directoryName = "themes";
+        final Path targetPath = MagicFileSystem.getDataPath(MagicFileSystem.DataPath.THEMES);
+        final Path sourcePath = importDataPath.resolve(directoryName);
+        if (sourcePath.toFile().exists()) {            
+            FileUtils.copyDirectory(sourcePath.toFile(), targetPath.toFile());
+        } else {
+            migrateModThemes();
+        }
+        setProgressNote(OK_STRING);
+    }
+
+    /**
      * Merges "mods" folder and sub-folders.
      * If file already exists then imported version takes precedence.
      */
     private void importMods() throws IOException {
-        setProgressNote(UiString.get(_S4));
+        setProgressNote(UiString.get(_S13));
         final String directoryName = "mods";
         final Path sourcePath = importDataPath.resolve(directoryName);
         if (sourcePath.toFile().exists()) {
@@ -140,15 +176,17 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
 
     /**
      * Creates a filter that returns everything in the "mods" folder except
-     * predefined cubes which are distributed with each new release.
+     * the specified cubes which are distributed with each new release and
+     * any existing themes which are now found in the "themes" folder.
      */
     private FileFilter getModsFileFilter() {
         final String[] excludedCubes = new String[]{
             "legacy_cube.txt", "modern_cube.txt", "standard_cube.txt", "extended_cube.txt", "ubeefx_cube.txt"
         };
-        final IOFileFilter excludedFiles = new NameFileFilter(excludedCubes, IOCase.INSENSITIVE);
-        final IOFileFilter excludeFilter = FileFilterUtils.notFileFilter(excludedFiles);
-        return FileFilterUtils.or(DirectoryFileFilter.DIRECTORY, excludeFilter);
+        final IOFileFilter cubesFilter = new NameFileFilter(excludedCubes, IOCase.INSENSITIVE);
+        final IOFileFilter excludeCubes = FileFilterUtils.notFileFilter(cubesFilter);
+        final IOFileFilter excludeThemes = FileFilterUtils.notFileFilter(new WildcardFileFilter("*_theme*"));
+        return FileFilterUtils.and(excludeCubes, excludeThemes);
     }
 
     /**

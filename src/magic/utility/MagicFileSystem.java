@@ -1,6 +1,7 @@
 package magic.utility;
 
 import java.io.File;
+import java.io.FileFilter;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.FilenameFilter;
@@ -83,7 +84,8 @@ public final class MagicFileSystem {
         SAVED_GAMES("saved_games"),
         TRANSLATIONS("translations"),
         IMAGES("images"),
-        REPORTS("reports")
+        REPORTS("reports"),
+        THEMES("themes")
         ;
 
         private final Path directoryPath;
@@ -98,6 +100,13 @@ public final class MagicFileSystem {
         }
 
     }
+
+    // for identifying themes in "themes" folder.
+    public static final String THEME_ZIP = "_theme.zip";
+    public static final String THEME_FOLDER = "_theme";
+    public static final FileFilter THEME_FILE_FILTER = (final File file) ->
+        (file.isFile() && file.getName().endsWith(THEME_ZIP)) ||
+        (file.isDirectory() && file.getName().endsWith(THEME_FOLDER));
 
     /**
      * Returns the main data directory.
@@ -297,6 +306,10 @@ public final class MagicFileSystem {
             return false;
         }
         return true;
+    }
+
+    public static File[] getThemes() {
+        return getDataPath(DataPath.THEMES).toFile().listFiles(THEME_FILE_FILTER);
     }
 
 }

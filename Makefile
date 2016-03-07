@@ -145,9 +145,12 @@ M1.%: clean $(EXE) release/Magarena/mods/felt_theme.zip
 			release/Magarena/translations \
 			Magarena-1.$*/Magarena
 	cp \
-			release/Magarena/mods/felt_theme.zip \
 			release/Magarena/mods/*.txt \
 			Magarena-1.$*/Magarena/mods
+	mkdir -p Magarena-1.$*/Magarena/themes
+	cp \
+			release/Magarena/mods/felt_theme.zip \
+			Magarena-1.$*/Magarena/themes
 	-zip -r Magarena-1.$*.zip Magarena-1.$*
 	echo "preparing Mac dist"
 	cp -r Magarena.app Magarena-1.$*.app
