@@ -308,4 +308,7 @@ public final class MagicFileSystem {
         return getDataPath(DataPath.THEMES).toFile().listFiles(THEME_FILE_FILTER);
     }
 
+    public static Path getThemesPath() {
+        return getDataPath(DataPath.THEMES);
+    }
 }

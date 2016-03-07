@@ -10,12 +10,14 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.Path;
 import java.util.Map;
 import java.util.Properties;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 import magic.ui.ImageFileIO;
 import magic.utility.FileIO;
+import magic.utility.MagicFileSystem;
 
 public class CustomTheme extends AbstractTheme {
 
@@ -34,7 +36,7 @@ public class CustomTheme extends AbstractTheme {
         playerAvatars = new PlayerAvatar[MAX_AVATARS];
     }
 
-    private static String getThemeName(final File aFile) {
+    public static String getThemeName(final File aFile) {
         final String name = aFile.getName();
         if (aFile.isFile()) {
             if (name.endsWith("_theme.zip")) {
@@ -140,5 +142,30 @@ public class CustomTheme extends AbstractTheme {
             parseEntry(entry.getKey().toString(),entry.getValue().toString().trim());
         }
     }
+    
+    private static File getThemeFile(String name) {
+        final Path path = MagicFileSystem.getThemesPath();
+        if (path.resolve(name).toFile().exists()) {
+            return path.resolve(name).toFile();
+        }
+        if (path.resolve(name + "_theme").toFile().exists()) {
+            return path.resolve(name + "_theme").toFile();
+        }
+        if (path.resolve(name + ".zip").toFile().exists()) {
+            return path.resolve(name + ".zip").toFile();
+        }
+        if (path.resolve(name + "_theme.zip").toFile().exists()) {
+            return path.resolve(name + "_theme.zip").toFile();
+        }
+        return null;
+    }
 
+    static Theme loadTheme(String name) {
+        if (getThemeFile(name) != null) {
+            final Theme t = new CustomTheme(getThemeFile(name));
+            t.load();
+            return t;
+        }
+        return null;
+    }
 }
