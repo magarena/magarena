@@ -4,7 +4,6 @@ value=3.362
 rarity=R
 type=Enchantment
 cost={4}{B}{R}
-ability=Players can't gain life.;\
-        At the beginning of each player's upkeep, that player loses half his or her life, rounded up.
 timing=enchantment
+requires_groovy_code=Forsaken Wastes;Havoc Festival
 oracle=Players can't gain life.\nAt the beginning of each player's upkeep, that player loses half his or her life, rounded up.
