@@ -4,6 +4,7 @@ import java.util.Properties;
 import magic.ai.MagicAIImpl;
 import magic.translate.StringContext;
 import magic.translate.UiString;
+import magic.utility.SortedProperties;
 
 public class AiProfile extends PlayerProfile {
 
@@ -72,7 +73,7 @@ public class AiProfile extends PlayerProfile {
 
     @Override
     public void save() {
-        final Properties properties = new Properties();
+        final Properties properties = new SortedProperties();
         properties.setProperty(KEY_EXTRA_LIFE, String.valueOf(getExtraLife()));
         properties.setProperty(KEY_AI_LEVEL, String.valueOf(getAiLevel()));
         properties.setProperty(KEY_AI_TYPE, getAiType().name());

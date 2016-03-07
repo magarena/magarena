@@ -9,6 +9,7 @@ import java.util.UUID;
 import magic.utility.FileIO;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
+import magic.utility.SortedProperties;
 
 public abstract class PlayerProfile {
 
@@ -78,7 +79,7 @@ public abstract class PlayerProfile {
 
     protected Properties loadPlayerProperties() {
         final File propertiesFile = new File(getProfilePath().resolve("player.profile").toString());
-        final Properties properties = propertiesFile.exists() ? FileIO.toProp(propertiesFile) : new Properties();
+        final Properties properties = propertiesFile.exists() ? FileIO.toProp(propertiesFile) : new SortedProperties();
         playerName = properties.getProperty("playerName", "");
         return properties;
     }

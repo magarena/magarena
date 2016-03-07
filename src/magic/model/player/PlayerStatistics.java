@@ -12,6 +12,7 @@ import magic.model.MagicDeck;
 import magic.model.MagicGame;
 import magic.model.MagicPlayer;
 import magic.utility.FileIO;
+import magic.utility.SortedProperties;
 
 public class PlayerStatistics {
 
@@ -88,7 +89,7 @@ public class PlayerStatistics {
 
     private void loadStats() {
         final File statsFile = new File(statsFilePath.toString());
-        final Properties properties = statsFile.exists() ? FileIO.toProp(statsFile) : new Properties();
+        final Properties properties = statsFile.exists() ? FileIO.toProp(statsFile) : new SortedProperties();
         gamesPlayed = Integer.parseInt(properties.getProperty(GAMES_PLAYED,"0"));
         gamesWon = Integer.parseInt(properties.getProperty(GAMES_WON,"0"));
         gamesConceded = Integer.parseInt(properties.getProperty(GAMES_CONCEDED,"0"));
@@ -106,7 +107,7 @@ public class PlayerStatistics {
 
     public void save() {
 
-        final Properties properties = new Properties();
+        final Properties properties = new SortedProperties();
         properties.setProperty(GAMES_PLAYED, String.valueOf(gamesPlayed));
         properties.setProperty(GAMES_WON, String.valueOf(gamesWon));
         properties.setProperty(GAMES_CONCEDED, String.valueOf(gamesConceded));

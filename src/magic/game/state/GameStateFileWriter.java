@@ -3,13 +3,11 @@ package magic.game.state;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.Collections;
-import java.util.Enumeration;
 import java.util.List;
 import java.util.Properties;
-import java.util.TreeSet;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
+import magic.utility.SortedProperties;
 
 public final class GameStateFileWriter {
     private GameStateFileWriter() {}
@@ -20,7 +18,7 @@ public final class GameStateFileWriter {
     private static final String PROP_StartPlayerIndex = "startPlayerIndex";
 
     public static void createSaveGameFile(final GameState gameState, final File aFile) {
-        final Properties properties = getNewSortedProperties();
+        final Properties properties = new SortedProperties();
         setGameProperties(properties, gameState);
         setAllPlayerProperties(properties, gameState);
         savePropertyFile(properties, aFile);
@@ -77,16 +75,6 @@ public final class GameStateFileWriter {
                 properties.setProperty(key + ".tapped", Boolean.toString(card.isTapped()));
             }
         }
-    }
-
-    @SuppressWarnings("serial")
-    private static Properties getNewSortedProperties() {
-        return new Properties() {
-            @Override
-            public synchronized Enumeration<Object> keys() {
-                return Collections.enumeration(new TreeSet<>(super.keySet()));
-            }
-        };
     }
 
 }

@@ -8,6 +8,7 @@ import magic.model.MagicDuel;
 import magic.model.DuelPlayerConfig;
 import magic.model.player.PlayerProfile;
 import magic.model.player.PlayerProfiles;
+import magic.utility.SortedProperties;
 
 public class DuelConfig {
 
@@ -115,7 +116,7 @@ public class DuelConfig {
 
     public void load() {
         final File configFile = MagicDuel.getLatestDuelFile();
-        final Properties properties = configFile.exists() ? FileIO.toProp(configFile) : new Properties();
+        final Properties properties = configFile.exists() ? FileIO.toProp(configFile) : new SortedProperties();
         load(properties, false);
     }
 

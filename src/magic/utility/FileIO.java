@@ -54,7 +54,7 @@ public class FileIO {
     }
 
     public static Properties toProp(final File aFile) {
-        Properties properties = new Properties();
+        Properties properties = new SortedProperties();
         try {
             properties = toProp(new FileInputStream(aFile));
         } catch (final IOException ex) {
@@ -64,7 +64,7 @@ public class FileIO {
     }
 
     public static Properties toProp(final InputStream ins) {
-        final Properties properties = new Properties();
+        final Properties properties = new SortedProperties();
         try {
             properties.load(new BufferedReader(new InputStreamReader(ins, UTF8)));
         } catch (final IOException ex) {

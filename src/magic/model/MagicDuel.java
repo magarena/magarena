@@ -4,10 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Collections;
-import java.util.Enumeration;
 import java.util.Properties;
-import java.util.TreeSet;
 import magic.data.DeckGenerators;
 import magic.utility.DeckUtils;
 import magic.data.DuelConfig;
@@ -17,6 +14,7 @@ import magic.utility.FileIO;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
+import magic.utility.SortedProperties;
 
 public class MagicDuel {
 
@@ -200,23 +198,13 @@ public class MagicDuel {
     }
 
     public void save(final File file) {
-        final Properties properties = getNewSortedProperties();
+        final Properties properties = new SortedProperties();
         save(properties);
         try {
             FileIO.toFile(file, properties, "Duel");
         } catch (final IOException ex) {
             System.err.println("ERROR! Unable save duel to " + file);
         }
-    }
-
-    @SuppressWarnings("serial")
-    private Properties getNewSortedProperties() {
-        return new Properties() {
-            @Override
-            public synchronized Enumeration<Object> keys() {
-                return Collections.enumeration(new TreeSet<>(super.keySet()));
-            }
-        };
     }
 
     private void load(final Properties properties) {

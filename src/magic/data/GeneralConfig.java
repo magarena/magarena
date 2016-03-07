@@ -17,6 +17,7 @@ import magic.ui.duel.animation.AnimationFx;
 import magic.ui.message.MessageStyle;
 import magic.ui.prefs.ImageSizePresets;
 import magic.utility.MagicFileSystem;
+import magic.utility.SortedProperties;
 
 public class GeneralConfig {
 
@@ -659,7 +660,7 @@ public class GeneralConfig {
     }
 
     public void save() {
-        final Properties properties=new Properties();
+        final Properties properties=new SortedProperties();
         save(properties);
         try { //save config
             FileIO.toFile(getConfigFile(), properties, "General configuration");
