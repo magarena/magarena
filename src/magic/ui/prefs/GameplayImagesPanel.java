@@ -2,6 +2,8 @@ package magic.ui.prefs;
 
 import java.awt.event.MouseListener;
 import javax.swing.JCheckBox;
+import javax.swing.JComboBox;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
 import magic.translate.UiString;
@@ -18,15 +20,36 @@ class GameplayImagesPanel extends JPanel {
     private static final String _S31 = "Automatically displays the card popup image after the specified number of milliseconds that the mouse cursor hovers over a card.";
     private static final String _S34 = "Pause game on popup.";
     private static final String _S35 = "Pauses the game while the popup is open.";
+    private static final String _S41 = "Highlight";
+    private static final String _S42 = "none";
+    private static final String _S43 = "overlay";
+    private static final String _S44 = "border";
+    private static final String _S45 = "theme";
+    private static final String _S46 = "Determines the style in which cards are highlighted during a game.";
 
     private final static GeneralConfig CONFIG = GeneralConfig.getInstance();
 
     private final JCheckBox mouseWheelPopupCheckBox;
     private final SliderPanel popupDelaySlider;
     private final JCheckBox pauseGamePopupCheckBox;
+    private final JComboBox<String> highlightComboBox;
 
     GameplayImagesPanel(final MouseListener aListener) {
 
+        // Card highlight setting.
+        final JLabel highlightLabel = new JLabel(UiString.get(_S41));
+        final String[] Highlightchoices = {
+            UiString.get(_S42),
+            UiString.get(_S43),
+            UiString.get(_S44),
+            UiString.get(_S45)
+        };
+        highlightComboBox = new JComboBox<>(Highlightchoices);
+        highlightComboBox.setSelectedItem(CONFIG.getHighlight());
+        highlightComboBox.setToolTipText(UiString.get(_S46));
+        highlightComboBox.setFocusable(false);
+        highlightComboBox.addMouseListener(aListener);
+        
         mouseWheelPopupCheckBox = new JCheckBox(UiString.get(_S28), CONFIG.isMouseWheelPopup());
         mouseWheelPopupCheckBox.setFocusable(false);
         mouseWheelPopupCheckBox.setToolTipText(UiString.get(_S29));
@@ -41,16 +64,19 @@ class GameplayImagesPanel extends JPanel {
         pauseGamePopupCheckBox.setToolTipText(UiString.get(_S35));
         pauseGamePopupCheckBox.addMouseListener(aListener);
 
-        setLayout(new MigLayout("flowy, insets 16, gapy 10"));
-        add(pauseGamePopupCheckBox);
-        add(mouseWheelPopupCheckBox);
-        add(popupDelaySlider, "w 100%");
+        setLayout(new MigLayout("flowx, wrap 2, insets 16, gapy 10"));
+        add(highlightLabel);
+        add(highlightComboBox);
+        add(pauseGamePopupCheckBox, "spanx 2");
+        add(mouseWheelPopupCheckBox, "spanx 2");
+        add(popupDelaySlider, "w 100%, spanx 2");
     }
 
     void saveSettings() {
         CONFIG.setMouseWheelPopup(mouseWheelPopupCheckBox.isSelected());
         CONFIG.setPopupDelay(popupDelaySlider.getValue());
         CONFIG.setIsGamePausedOnPopup(pauseGamePopupCheckBox.isSelected());
+        CONFIG.setHighlight(highlightComboBox.getItemAt(highlightComboBox.getSelectedIndex()));
     }
 
 }

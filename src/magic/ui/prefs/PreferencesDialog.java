@@ -78,12 +78,6 @@ public class PreferencesDialog
     private static final String _S26 = "Message:";
     private static final String _S27 = "The duration in milliseconds (1000 = 1 second) that the game pauses when an item is added to the stack. This has no effect unless the 'Automatically pass priority' option is enabled.";
     private static final String _S37 = "Proxy settings are invalid!";
-    private static final String _S41 = "Highlight";
-    private static final String _S42 = "none";
-    private static final String _S43 = "overlay";
-    private static final String _S44 = "border";
-    private static final String _S45 = "theme";
-    private static final String _S46 = "Determines the style in which cards are highlighted during a game.";
     private static final String _S47 = "Overrides the default theme background with a custom image which is set by dragging an image file onto the Magarena window.";
     private static final String _S49 = "Custom background";
     private static final String _S51 = "Roll-over color";
@@ -110,7 +104,6 @@ public class PreferencesDialog
     private final JTextField proxyAddressTextField = new JTextField();
     private final JSpinner proxyPortSpinner = new JSpinner(new SpinnerNumberModel());
     private JComboBox<String> themeComboBox;
-    private JComboBox<String> highlightComboBox;
     private JCheckBox touchscreenCheckBox;
     private JCheckBox skipSingleCheckBox;
     private JCheckBox alwaysPassCheckBox;
@@ -314,7 +307,6 @@ public class PreferencesDialog
         gameImagesPanel.saveSettings();
         audioPanel.saveSettings();
         config.setTheme(themeComboBox.getItemAt(themeComboBox.getSelectedIndex()));
-        config.setHighlight(highlightComboBox.getItemAt(highlightComboBox.getSelectedIndex()));
         config.setTouchscreen(touchscreenCheckBox.isSelected());
         config.setSkipSingle(skipSingleCheckBox.isSelected());
         config.setAlwaysPass(alwaysPassCheckBox.isSelected());
@@ -506,20 +498,6 @@ public class PreferencesDialog
 
     private JPanel getLookAndFeelSettingsPanel() {
 
-        // Card highlight setting.
-        final JLabel highlightLabel = new JLabel(UiString.get(_S41));
-        final String[] Highlightchoices = {
-            UiString.get(_S42),
-            UiString.get(_S43),
-            UiString.get(_S44),
-            UiString.get(_S45)
-        };
-        highlightComboBox = new JComboBox<>(Highlightchoices);
-        highlightComboBox.setSelectedItem(config.getHighlight());
-        highlightComboBox.setToolTipText(UiString.get(_S46));
-        highlightComboBox.setFocusable(false);
-        highlightComboBox.addMouseListener(this);
-
         customBackgroundCheckBox = new JCheckBox("", config.isCustomBackground());
         customBackgroundCheckBox.setToolTipText(UiString.get(_S47));
         customBackgroundCheckBox.setFocusable(false);
@@ -531,8 +509,6 @@ public class PreferencesDialog
         // Layout UI components.
         final JPanel panel = new JPanel(new MigLayout("flowx, wrap 2, insets 16, gapy 8", "[46%][54%]"));
         panel.add(getThemeSettingPanel(), "spanx 2, w 100%");
-        panel.add(highlightLabel, "alignx right");
-        panel.add(highlightComboBox, "alignx left");
         panel.add(new JLabel(UiString.get(_S49)), "alignx right");
         panel.add(customBackgroundCheckBox);
         panel.add(new JLabel(UiString.get(_S51)), "alignx right");
