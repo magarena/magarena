@@ -7,9 +7,7 @@
         }
         @Override
         public boolean condition(final MagicGame game,final MagicPermanent source,final MagicPermanent target) {
-            return (source.isEquipment()) ?
-                source.getEquippedCreature() == target :
-                source.getEnchantedPermanent() == target;
+            return MagicStatic.acceptLinked(game, source, target);
         }
     }
 ]
