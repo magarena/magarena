@@ -47,6 +47,10 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
     private static final String OK_STRING = String.format("%s\n", UiString.get(_S3));
     private static final String FAIL_STRING = String.format("%s\n", UiString.get(_S1));
 
+    private static final FileFilter MODS_THEME_FILE_FILTER = (final File file) ->
+        (file.isFile() && file.getName().endsWith("_theme.zip")) ||
+        (file.isDirectory() && file.getName().endsWith("_theme"));
+
     private final Path importDataPath;
     private String progressNote = "";
     private final MagicLogger logger;
@@ -131,7 +135,7 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
      */
     private void migrateModThemes() throws IOException {
         final Path targetPath = MagicFileSystem.getDataPath(MagicFileSystem.DataPath.THEMES);
-        File[] modThemes = importDataPath.resolve("mods").toFile().listFiles(MagicFileSystem.THEME_FILE_FILTER);
+        File[] modThemes = importDataPath.resolve("mods").toFile().listFiles(MODS_THEME_FILE_FILTER);
         for (File themeFile : modThemes) {
             if (themeFile.isDirectory()) {
                 FileUtils.copyDirectoryToDirectory(themeFile, targetPath.toFile());

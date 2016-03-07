@@ -28,16 +28,9 @@ public class ThemeFactory {
 
     private void loadCustomExternalThemes() {
         final File[] files = MagicFileSystem.getThemes();
-        if (files != null) {
             for (final File file : files) {
-                final String name = file.getName();
-                int index = name.indexOf(MagicFileSystem.THEME_ZIP);
-                if (index < 0) {
-                    index = name.indexOf(MagicFileSystem.THEME_FOLDER);
-                }
-                themes.add(new CustomTheme(file, name.substring(0, index)));
+                themes.add(new CustomTheme(file));
             }
-        }
     }
 
     private void loadBasicBuiltInThemes() {

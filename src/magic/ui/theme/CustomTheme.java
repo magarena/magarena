@@ -28,10 +28,26 @@ public class CustomTheme extends AbstractTheme {
     private final PlayerAvatar[] playerAvatars;
     private int nrOfAvatars;
 
-    public CustomTheme(final File file,final String name) {
-        super(name);
-        this.file=file;
-        playerAvatars=new PlayerAvatar[MAX_AVATARS];
+    public CustomTheme(final File file) {
+        super(getThemeName(file));
+        this.file = file;
+        playerAvatars = new PlayerAvatar[MAX_AVATARS];
+    }
+
+    private static String getThemeName(final File aFile) {
+        final String name = aFile.getName();
+        if (aFile.isFile()) {
+            if (name.endsWith("_theme.zip")) {
+                return name.substring(0, name.length() - "_theme.zip".length());
+            }
+            if (name.endsWith(".zip")) {
+                return name.substring(0, name.length() - ".zip".length());
+            }
+        }
+        if (name.endsWith("_theme")) {
+            return name.substring(0, name.length() - "_theme".length());
+        }
+        return name;
     }
 
     @Override

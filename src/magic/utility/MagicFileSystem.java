@@ -101,12 +101,8 @@ public final class MagicFileSystem {
 
     }
 
-    // for identifying themes in "themes" folder.
-    public static final String THEME_ZIP = "_theme.zip";
-    public static final String THEME_FOLDER = "_theme";
-    public static final FileFilter THEME_FILE_FILTER = (final File file) ->
-        (file.isFile() && file.getName().endsWith(THEME_ZIP)) ||
-        (file.isDirectory() && file.getName().endsWith(THEME_FOLDER));
+    private static final FileFilter THEME_FILE_FILTER = (final File file) ->
+        file.isDirectory() || (file.isFile() && file.getName().endsWith(".zip"));
 
     /**
      * Returns the main data directory.
