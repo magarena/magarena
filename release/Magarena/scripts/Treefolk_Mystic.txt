@@ -6,6 +6,6 @@ type=Creature
 subtype=Treefolk
 cost={3}{G}
 pt=2/4
-ability=Whenever SN blocks or becomes blocked by a creature, destroy all Auras attached to that creature.
 timing=main
+requires_groovy_code
 oracle=Whenever Treefolk Mystic blocks or becomes blocked by a creature, destroy all Auras attached to that creature.
