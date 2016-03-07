@@ -6,8 +6,7 @@ type=Creature
 subtype=Human,Cleric
 cost={2}{B}
 pt=1/1
-ability=Whenever SN attacks, you lose half your life, rounded up.;\
-        Whenever SN deals combat damage to a player, that player loses half his or her life, rounded up.;\
-        Morph {3}{B}{B}
+ability=Morph {3}{B}{B}
 timing=main
+requires_groovy_code
 oracle=Whenever Ebonblade Reaper attacks, you lose half your life, rounded up.\nWhenever Ebonblade Reaper deals combat damage to a player, that player loses half his or her life, rounded up.\nMorph {3}{B}{B}
