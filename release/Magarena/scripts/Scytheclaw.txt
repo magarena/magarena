@@ -8,7 +8,7 @@ subtype=Equipment
 cost={5}
 ability=Living weapon;\
         Equipped creature gets +1/+1.;\
-        Whenever equipped creature deals combat damage to a player, that player loses half his or her life, rounded up.;\
         Equip {3}
 timing=equipment
+requires_groovy_code=Quietus Spike
 oracle=Living weapon\nEquipped creature gets +1/+1.\nWhenever equipped creature deals combat damage to a player, that player loses half his or her life, rounded up.\nEquip {3}
