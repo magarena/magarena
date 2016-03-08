@@ -1,0 +1,9 @@
+name=Clue artifact token
+image=http://cdn.staticneo.com/w/mtg/7/77/Clue-token.jpg
+token=Clue
+type=Artifact
+subtype=Clue
+color=
+value=1
+ability={2}, Sacrifice SN: Draw a card.
+oracle={2}, Sacrifice this artifact: Draw a card.
