@@ -2916,6 +2916,7 @@ public class MagicTargetFilterFactory {
             .replaceAll("\\bpermanents\\b", "permanent")
             .replaceAll("\\bcreatures\\b", "creature")
             .replaceAll("\\bartifacts\\b", "artifact")
+            .replaceAll("\\bclues\\b", "clue")
             .replaceAll("\\benchantments\\b", "enchantment")
             .replaceAll("\\bauras\\b", "aura")
             .replaceAll("\\blands\\b", "land")
