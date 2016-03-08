@@ -29,6 +29,7 @@ public enum MagicSubType {
     Gate,
 
     //artifact subtypes
+    Clue,
     Contraption,
     Equipment,
     Fortification,
