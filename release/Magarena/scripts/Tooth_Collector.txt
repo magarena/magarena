@@ -1,0 +1,12 @@
+name=Tooth Collector
+image=http://magiccards.info/scans/en/ddq/64.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Rogue
+cost={2}{B}
+pt=3/2
+ability=When SN enters the battlefield, target creature an opponent controls gets -1/-1 until end of turn.
+timing=main
+requires_groovy_code
+oracle=When Tooth Collector enters the battlefield, target creature an opponent controls gets -1/-1 until end of turn.\nDelirium — At the beginning of each opponent's upkeep, if there are four or more card types among cards in your graveyard, target creature that player controls gets -1/-1 until end of turn.
