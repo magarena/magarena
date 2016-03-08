@@ -1,8 +1,12 @@
 package magic.model.condition;
 
+import java.util.LinkedList;
+import java.util.List;
+
 import magic.model.MagicAbility;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
+import magic.model.MagicCardList;
 import magic.model.MagicColor;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
@@ -13,19 +17,15 @@ import magic.model.MagicPlayerState;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
-import magic.model.stack.MagicCardOnStack;
-import magic.model.phase.MagicPhaseType;
-import magic.model.target.MagicOtherPermanentTargetFilter;
-import magic.model.target.MagicTargetFilterFactory;
 import magic.model.action.PlayAbilityAction;
+import magic.model.event.MagicConditionEvent;
 import magic.model.event.MagicEvent;
 import magic.model.event.MagicEventAction;
 import magic.model.event.MagicMatchedCostEvent;
-import magic.model.event.MagicPlayAbilityEvent;
-import magic.model.event.MagicConditionEvent;
-
-import java.util.List;
-import java.util.LinkedList;
+import magic.model.phase.MagicPhaseType;
+import magic.model.stack.MagicCardOnStack;
+import magic.model.target.MagicOtherPermanentTargetFilter;
+import magic.model.target.MagicTargetFilterFactory;
 
 public abstract class MagicCondition implements MagicMatchedCostEvent {
 
@@ -416,6 +416,19 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     public static MagicCondition THRESHOLD_CONDITION = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             return source.getController().getGraveyard().size() >= 7;
+        }
+    };
+
+    public static MagicCondition DELIRIUM_CONDITION = new MagicCondition() {
+        public boolean accept(MagicSource source) {
+            final MagicCardList graveyard = source.getController().getGraveyard();
+            int count = 0;
+            for (MagicType type : MagicType.ALL_CARD_TYPES) {
+                if (graveyard.containsType(type)) {
+                    count++;
+                }
+            }
+            return count >= 4;
         }
     };
 
