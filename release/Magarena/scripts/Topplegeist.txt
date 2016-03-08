@@ -1,0 +1,13 @@
+name=Topplegeist
+image=http://magiccards.info/scans/en/ddq/21.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Spirit
+cost={W}
+pt=1/1
+ability=Flying;\
+        When SN enters the battlefield, tap target creature an opponent controls.
+timing=main
+requires_groovy_code
+oracle=Flying\nWhen Topplegeist enters the battlefield, tap target creature an opponent controls.\nDelirium — At the beginning of each opponent's upkeep, if there are four or more card types among cards in your graveyard, tap target creature that player controls.
