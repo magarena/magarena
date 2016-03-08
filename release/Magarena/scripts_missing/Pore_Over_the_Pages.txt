@@ -1,4 +1,4 @@
-name=Eerie Interlude
+name=Pore Over the Pages
 image=http://magiccards.info/scans/en/ddq/28.jpg
 value=2.500
 rarity=U
