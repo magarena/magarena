@@ -7,7 +7,7 @@
         @Override
         public Iterable<MagicEvent> getCostEvent(final MagicPermanent source) {
             return [
-                new MagicTapEvent(source.getEnchantedPermanent())
+                new MagicTapEnchantedEvent(source)
             ];
         }
 
