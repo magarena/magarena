@@ -1982,6 +1982,17 @@ public enum MagicRuleEventAction {
             return EVENT_ACTION;
         }
     },
+    Investigate(
+        "investigate",
+        MagicTiming.Token,
+        "Investigate"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return (game, event) -> game.doAction(new PlayTokenAction(event.getPlayer(), CardDefinitions.getToken("colorless Clue artifact token")));
+        }
+    },
+
     BecomesAlt(
         "(?<duration>until end of turn, )" + ARG.PERMANENTS + " becomes( a| an)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<additionTo>((\\.)? It's| that's) still [^\\.]*)?",
         MagicTiming.Animate,
