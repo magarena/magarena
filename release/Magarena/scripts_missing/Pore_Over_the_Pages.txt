@@ -1,0 +1,9 @@
+name=Eerie Interlude
+image=http://magiccards.info/scans/en/ddq/28.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={3}{U}{U}
+effect=Draw three cards, untap up to two lands, then discard a card.
+timing=draw
+oracle=Draw three cards, untap up to two lands, then discard a card.
