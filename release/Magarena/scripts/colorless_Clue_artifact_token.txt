@@ -1,4 +1,4 @@
-name=Clue artifact token
+name=colorless Clue artifact token
 image=http://cdn.staticneo.com/w/mtg/7/77/Clue-token.jpg
 token=Clue
 type=Artifact
