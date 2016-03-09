@@ -1,3 +1,5 @@
+def choice = MagicTargetChoice.Positive("target blocking creature")
+
 [
     new MagicPermanentActivation(
         new MagicActivationHints(MagicTiming.Pump),
@@ -15,7 +17,7 @@
         public MagicEvent getPermanentEvent(final MagicPermanent source, final MagicPayedCost payedCost) {
             return new MagicEvent(
                 source,
-                TARGET_BLOCKING_CREATURE,
+                choice,
                 MagicPumpTargetPicker.create(),
                 this,
                 "Target blocking creature\$ gets +1/+2 until end of turn."
