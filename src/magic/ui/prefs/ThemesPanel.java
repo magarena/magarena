@@ -1,15 +1,11 @@
 package magic.ui.prefs;
 
-import java.awt.Font;
 import java.awt.event.MouseListener;
 import javax.swing.JCheckBox;
-import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.SwingConstants;
 import magic.data.GeneralConfig;
 import magic.translate.UiString;
-import magic.ui.theme.ThemeFactory;
 import magic.ui.utility.MagicStyle;
 import magic.ui.widget.ColorButton;
 import net.miginfocom.swing.MigLayout;
@@ -26,14 +22,11 @@ class ThemesPanel extends JPanel {
 
     private final JCheckBox customBackgroundCheckBox;
     private final ColorButton rollOverColorButton;
-    private final JComboBox<String> themeComboBox;
+    private final ThemesComboBox themeComboBox;
 
     ThemesPanel(MouseListener aListener) {
 
-        themeComboBox = new JComboBox<>(ThemeFactory.getThemeNames());
-        themeComboBox.setFont(themeComboBox.getFont().deriveFont(Font.BOLD).deriveFont(14f));
-        ((JLabel)themeComboBox.getRenderer()).setHorizontalAlignment(SwingConstants.CENTER);
-        themeComboBox.addMouseListener(aListener);
+        themeComboBox = new ThemesComboBox();
         themeComboBox.setFocusable(false);
         themeComboBox.setSelectedItem(CONFIG.getTheme());
 
