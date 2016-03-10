@@ -37,18 +37,14 @@ import javax.swing.ToolTipManager;
 import javax.swing.text.NumberFormatter;
 import magic.data.GeneralConfig;
 import magic.translate.UiString;
-import magic.ui.URLUtils;
 import magic.ui.MagicFrame;
 import magic.ui.MagicImages;
 import magic.ui.ScreenController;
 import magic.ui.theme.Theme;
-import magic.ui.theme.ThemeFactory;
 import magic.ui.widget.FontsAndBorders;
-import magic.ui.widget.LinkLabel;
 import magic.ui.widget.SliderPanel;
 import magic.ui.utility.MagicStyle;
 import magic.ui.dialog.button.CancelButton;
-import magic.ui.widget.ColorButton;
 import magic.ui.dialog.button.SaveButton;
 import net.miginfocom.swing.MigLayout;
 
@@ -78,12 +74,6 @@ public class PreferencesDialog
     private static final String _S26 = "Message:";
     private static final String _S27 = "The duration in milliseconds (1000 = 1 second) that the game pauses when an item is added to the stack. This has no effect unless the 'Automatically pass priority' option is enabled.";
     private static final String _S37 = "Proxy settings are invalid!";
-    private static final String _S47 = "Overrides the default theme background with a custom image which is set by dragging an image file onto the Magarena window.";
-    private static final String _S49 = "Custom background";
-    private static final String _S51 = "Roll-over color";
-    private static final String _S52 = "Theme";
-    private static final String _S53 = "Additional themes can be downloaded from the Magarena forum using the link below.";
-    private static final String _S54 = "more themes online...";
     private static final String _S68 = "Images";
     private static final String _S79 = "Preferences";
     private static final String _S80 = "There is a problem reading the translation file.";
@@ -103,7 +93,6 @@ public class PreferencesDialog
     private final JComboBox<Proxy.Type> proxyComboBox = new JComboBox<>();
     private final JTextField proxyAddressTextField = new JTextField();
     private final JSpinner proxyPortSpinner = new JSpinner(new SpinnerNumberModel());
-    private JComboBox<String> themeComboBox;
     private JCheckBox touchscreenCheckBox;
     private JCheckBox skipSingleCheckBox;
     private JCheckBox alwaysPassCheckBox;
@@ -112,14 +101,13 @@ public class PreferencesDialog
     private JButton saveButton;
     private JButton cancelButton;
     private JCheckBox mulliganScreenCheckbox;
-    private JCheckBox customBackgroundCheckBox;
     private JCheckBox hideAIPromptCheckBox;
-    private ColorButton rollOverColorButton;
 
     private final GeneralPanel generalPanel;
     private final AnimationsPanel animationsPanel;
     private final GameplayImagesPanel gameImagesPanel;
     private final AudioPanel audioPanel;
+    private final ThemesPanel themesPanel;
 
     private final JLabel hintLabel = new JLabel();
     private boolean isProxyUpdated = false;
@@ -145,6 +133,7 @@ public class PreferencesDialog
         animationsPanel = new AnimationsPanel(this);
         gameImagesPanel = new GameplayImagesPanel(this);
         audioPanel = new AudioPanel(this);
+        themesPanel = new ThemesPanel(this);
 
         hintLabel.setVerticalAlignment(SwingConstants.TOP);
         hintLabel.setFont(new Font("SansSerif", Font.ITALIC, 12));
@@ -183,12 +172,12 @@ public class PreferencesDialog
         final JTabbedPane tabbedPane = new JTabbedPane();
         if (isGamePlayMode) {
             tabbedPane.addTab(UiString.get(_S4), getGameplaySettingsTabbedPane());
-            tabbedPane.addTab(UiString.get(_S5), getLookAndFeelSettingsPanel());
+            tabbedPane.addTab(UiString.get(_S5), themesPanel);
             tabbedPane.addTab(UiString.get(_S6), audioPanel);
         } else {
             tabbedPane.addTab(UiString.get(_S3), generalPanel);
             tabbedPane.addTab(UiString.get(_S4), getGameplaySettingsTabbedPane());
-            tabbedPane.addTab(UiString.get(_S5), getLookAndFeelSettingsPanel());
+            tabbedPane.addTab(UiString.get(_S5), themesPanel);
             tabbedPane.addTab(UiString.get(_S6), audioPanel);
             tabbedPane.addTab(UiString.get(_S7), getNetworkSettingsPanel());
         }
@@ -306,16 +295,14 @@ public class PreferencesDialog
         animationsPanel.saveSettings();
         gameImagesPanel.saveSettings();
         audioPanel.saveSettings();
-        config.setTheme(themeComboBox.getItemAt(themeComboBox.getSelectedIndex()));
+        themesPanel.saveSettings();
         config.setTouchscreen(touchscreenCheckBox.isSelected());
         config.setSkipSingle(skipSingleCheckBox.isSelected());
         config.setAlwaysPass(alwaysPassCheckBox.isSelected());
         config.setSmartTarget(smartTargetCheckBox.isSelected());
         config.setMessageDelay(messageDelaySlider.getValue());
         config.setMulliganScreenActive(mulliganScreenCheckbox.isSelected());
-        config.setCustomBackground(customBackgroundCheckBox.isSelected());
         config.setHideAiActionPrompt(hideAIPromptCheckBox.isSelected());
-        config.setRolloverColor(rollOverColorButton.getColor());
 
         if (isGamePlayMode == false) {
             generalPanel.saveSettings();
@@ -494,46 +481,6 @@ public class PreferencesDialog
 
     @Override
     public void windowOpened(WindowEvent e) {
-    }
-
-    private JPanel getLookAndFeelSettingsPanel() {
-
-        customBackgroundCheckBox = new JCheckBox("", config.isCustomBackground());
-        customBackgroundCheckBox.setToolTipText(UiString.get(_S47));
-        customBackgroundCheckBox.setFocusable(false);
-        customBackgroundCheckBox.addMouseListener(this);
-
-        rollOverColorButton = new ColorButton(MagicStyle.getRolloverColor());
-        rollOverColorButton.setFocusable(false);
-
-        // Layout UI components.
-        final JPanel panel = new JPanel(new MigLayout("flowx, wrap 2, insets 16, gapy 8", "[46%][54%]"));
-        panel.add(getThemeSettingPanel(), "spanx 2, w 100%");
-        panel.add(new JLabel(UiString.get(_S49)), "alignx right");
-        panel.add(customBackgroundCheckBox);
-        panel.add(new JLabel(UiString.get(_S51)), "alignx right");
-        panel.add(rollOverColorButton);
-
-        return panel;
-    }
-
-    private JPanel getThemeSettingPanel() {
-        // Theme setting
-        final JLabel themeLabel = new JLabel(UiString.get(_S52));
-        themeComboBox = new JComboBox<>(ThemeFactory.getInstance().getThemeNames());
-        themeComboBox.setToolTipText(UiString.get(_S53));
-        themeComboBox.addMouseListener(this);
-        themeComboBox.setFocusable(false);
-        themeComboBox.setSelectedItem(config.getTheme());
-        // link to more themes online
-        final JLabel linkLabel = new LinkLabel(UiString.get(_S54), URLUtils.URL_THEMES);
-        // layout
-        final JPanel panel = new JPanel(new MigLayout("flowx, wrap 2, insets 0, gapy 0", "[46%][54%]"));
-        panel.add(themeLabel, "alignx right");
-        panel.add(themeComboBox, "alignx left");
-        panel.add(new JLabel(), "alignx right");
-        panel.add(linkLabel, "alignx left");
-        return panel;
     }
 
     private JLabel getCaptionLabel(final String text) {
