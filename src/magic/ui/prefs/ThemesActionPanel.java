@@ -11,6 +11,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 import magic.data.MagicIcon;
+import magic.translate.UiString;
 import magic.ui.MagicImages;
 import magic.ui.MagicSound;
 import magic.ui.URLUtils;
@@ -23,6 +24,12 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 class ThemesActionPanel extends JPanel {
 
+    // translatable strings.
+    private static final String _S1 = "Open theme folder";
+    private static final String _S2 = "Opens the selected theme folder in file explorer.";
+    private static final String _S3 = "Get more themes...";
+    private static final String _S4 = "Opens the themes wiki page in your browser which has links to many more themes. To install, copy the theme zip file into the 'themes' folder and restart Magarena.";
+    
     private final ThemesPanel themesPanel;
 
     ThemesActionPanel(ThemesPanel aThemesPanel, MouseListener aListener) {
@@ -49,7 +56,7 @@ class ThemesActionPanel extends JPanel {
 
     private JButton getThemeFolderButton(MouseListener aListener) {
         JButton btn = new JButton(getActionIcon(MagicIcon.OPEN_ICON));
-        btn.setToolTipText("<b>Open theme folder</b><br>If the selected theme is editable then this opens the theme folder in file explorer.");
+        btn.setToolTipText(String.format("<b>%s</b><br>%s", UiString.get(_S1), UiString.get(_S2)));
         btn.addMouseListener(aListener);
         btn.addActionListener(new AbstractAction() {
             @Override
@@ -62,7 +69,7 @@ class ThemesActionPanel extends JPanel {
 
     private JButton getMoreThemesButton(MouseListener aListener) {
         JButton btn = new JButton(getActionIcon(MagicIcon.OPTIONS_ICON));
-        btn.setToolTipText("<b>Get more themes...</b><br>Opens the themes wiki page in your browser which has links to loads of other themes.");
+        btn.setToolTipText(String.format("<b>%s</b><br>%s", UiString.get(_S3), UiString.get(_S4)));
         btn.addMouseListener(aListener);
         btn.addActionListener(new AbstractAction() {
             @Override
