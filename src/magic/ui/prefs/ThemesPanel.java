@@ -6,6 +6,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
 import magic.translate.UiString;
+import magic.ui.theme.ThemeFactory;
 import magic.ui.utility.MagicStyle;
 import magic.ui.widget.ColorButton;
 import net.miginfocom.swing.MigLayout;
@@ -28,7 +29,7 @@ class ThemesPanel extends JPanel {
 
         themeComboBox = new ThemesComboBox();
         themeComboBox.setFocusable(false);
-        themeComboBox.setSelectedItem(CONFIG.getTheme());
+        themeComboBox.setSelectedItem(ThemeFactory.getInstance().getCurrentTheme().getName());
 
         customBackgroundCheckBox = new JCheckBox("", CONFIG.isCustomBackground());
         customBackgroundCheckBox.setToolTipText(UiString.get(_S47));
