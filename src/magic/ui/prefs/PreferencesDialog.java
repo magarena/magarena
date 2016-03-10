@@ -56,7 +56,7 @@ public class PreferencesDialog
     // translatable strings.
     private static final String _S3 = "General";
     private static final String _S4 = "Gameplay";
-    private static final String _S5 = "Look & Feel";
+    private static final String _S5 = "Theme";
     private static final String _S6 = "Audio";
     private static final String _S7 = "Network";
     private static final String _S12 = "Proxy:";

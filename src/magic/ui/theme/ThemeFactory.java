@@ -47,7 +47,7 @@ public class ThemeFactory {
         return themes.toArray(new String[themes.size()]);
     }
     
-    private Theme getBuiltInTheme(String themeName) {
+    private static Theme getBuiltInTheme(String themeName) {
         switch (themeName.toLowerCase()) {
             case "wood":
                 return new DefaultTheme("wood", MagicImages.WOOD, MagicImages.MARBLE, Color.BLACK);
@@ -84,6 +84,13 @@ public class ThemeFactory {
 
     public static ThemeFactory getInstance() {
         return INSTANCE;
+    }
+
+    public static File getThemeFile(String name) {
+        if (getBuiltInTheme(name) != null) {
+            return null;
+        }
+        return CustomTheme.getThemeFile(name);
     }
 
 }

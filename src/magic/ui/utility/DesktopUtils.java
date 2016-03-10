@@ -24,8 +24,7 @@ public final class DesktopUtils {
     /**
      * Opens specified directory in OS file explorer.
      */
-    public static void openDirectory(final String path) throws IOException {
-        final File imagesPath = new File(path);
+    public static void openDirectory(final File folder) throws IOException {
         if (MagicSystem.IS_WINDOWS_OS) {
             // Specific fix for Windows.
             // If running Windows and path is the default "Magarena" directory
@@ -33,10 +32,14 @@ public final class DesktopUtils {
             // instead of opening the directory! This is because the "Magarena"
             // directory and "Magarena.exe" are both at the same level and
             // Windows incorrectly assumes you mean "Magarena.exe".
-            new ProcessBuilder("explorer.exe", imagesPath.getPath()).start();
+            new ProcessBuilder("explorer.exe", folder.getPath()).start();
         } else {
-            Desktop.getDesktop().open(imagesPath);
+            Desktop.getDesktop().open(folder);
         }
+    }
+
+    public static void openDirectory(final String path) throws IOException {
+        openDirectory(new File(path));
     }
 
     public static void openFileInDefaultOsEditor(final File file) throws IOException, DesktopNotSupportedException {
