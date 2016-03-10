@@ -23,7 +23,7 @@ class ThemesComboBox extends JComboBox<String> implements ListCellRenderer<Strin
     @Override
     public Component getListCellRendererComponent(JList<? extends String> list, String value, int index, boolean isSelected, boolean cellHasFocus) {
         final JLabel lbl = new JLabel(value, JLabel.CENTER);
-        lbl.setOpaque(true);
+        lbl.setOpaque(isSelected);
         lbl.setFont(lbl.getFont().deriveFont(14f));
         lbl.setFont(value.equals(ThemeFactory.getInstance().getCurrentTheme().getName()) ? lbl.getFont().deriveFont(Font.BOLD) : lbl.getFont());
         lbl.setBackground(isSelected ? Color.LIGHT_GRAY : lbl.getBackground());
