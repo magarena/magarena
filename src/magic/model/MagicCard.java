@@ -204,7 +204,7 @@ public class MagicCard
     }
 
     public int getConvertedCost() {
-        return isSplitCard() ? getCost().getConvertedCost() + getSplitDefinition().getConvertedCost() : getCost().getConvertedCost();
+        return getCost().getConvertedCost();
     }
 
     public MagicManaCost getGameCost() {
