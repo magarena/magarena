@@ -126,4 +126,13 @@ public abstract class AbstractTheme implements Theme {
         return getTexture(Theme.TEXTURE_BACKGROUND);
     }
 
+    @Override
+    public boolean hasValue(String name) {
+        return themeMap.containsKey(name) && themeMap.get(name) != null;
+    }
+
+    protected String getStringValue(String name) {
+        return (String)themeMap.get(name);
+    }
+
 }
