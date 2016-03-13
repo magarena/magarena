@@ -29,7 +29,7 @@ class ThemesActionPanel extends JPanel {
     private static final String _S2 = "Opens the selected theme folder in file explorer.";
     private static final String _S3 = "Get more themes...";
     private static final String _S4 = "Opens the themes wiki page in your browser which has links to many more themes. To install, copy the theme zip file into the 'themes' folder and restart Magarena.";
-    
+
     private final ThemesPanel themesPanel;
 
     ThemesActionPanel(ThemesPanel aThemesPanel, MouseListener aListener) {

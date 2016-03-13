@@ -19,5 +19,5 @@ final class EnumStrings {
     static final String _S5 = "Type";
     static final String _S6 = "Subtype";
     static final String _S7 = "Rarity";
-    static final String _S8 = "Text";    
+    static final String _S8 = "Text";
 }

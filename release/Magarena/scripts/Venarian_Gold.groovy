@@ -17,7 +17,7 @@
             game.doAction(new ChangeCountersAction(enchanted, MagicCounterType.Sleep, event.getRefInt()));
         }
     },
-    
+
     new MagicStatic(MagicLayer.Ability) {
         @Override
         public void modAbilityFlags(final MagicPermanent source, final MagicPermanent permanent, final Set<MagicAbility> flags) {
@@ -28,7 +28,7 @@
             return MagicStatic.acceptLinked(game, source, target) && target.getCounters(MagicCounterType.Sleep) > 0;
         }
     },
-    
+
     new AtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {

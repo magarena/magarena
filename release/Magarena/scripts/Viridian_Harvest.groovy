@@ -3,7 +3,7 @@
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final RemoveFromPlayAction act) {
             return act.getPermanent() == permanent.getEnchantedPermanent() &&
-               (act.to(MagicLocationType.Graveyard) || act.to(MagicLocationType.OpponentsGraveyard)) ? 
+               (act.to(MagicLocationType.Graveyard) || act.to(MagicLocationType.OpponentsGraveyard)) ?
                  new MagicEvent(
                     permanent,
                     this,

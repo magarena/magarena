@@ -142,7 +142,7 @@ public class CustomTheme extends AbstractTheme {
             parseEntry(entry.getKey().toString(),entry.getValue().toString().trim());
         }
     }
-    
+
     static File getThemeFile(String name) {
         final Path path = MagicFileSystem.getThemesPath();
         if (path.resolve(name).toFile().exists()) {

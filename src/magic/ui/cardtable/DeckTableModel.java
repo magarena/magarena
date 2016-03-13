@@ -89,7 +89,7 @@ public class DeckTableModel extends AbstractTableModel {
                 return col.isSortDesc()
                     ? MagicCondensedCardDefinition.TYPE_COMPARATOR_ASC
                     : MagicCondensedCardDefinition.TYPE_COMPARATOR_DESC;
-                
+
             case Subtype:
                 return col.isSortDesc()
                     ? MagicCondensedCardDefinition.SUBTYPE_COMPARATOR_ASC
@@ -150,7 +150,7 @@ public class DeckTableModel extends AbstractTableModel {
             return card.getName();
         }
     }
-    
+
     @Override
     public Object getValueAt(final int row, final int col) {
 

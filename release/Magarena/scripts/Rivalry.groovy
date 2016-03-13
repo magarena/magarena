@@ -7,7 +7,7 @@
                 upkeepPlayer,
                 this,
                 "SN deals 2 damage to PN."
-            ) : 
+            ) :
             MagicEvent.NONE;
         }
         @Override

@@ -46,7 +46,7 @@ public class ThemeFactory {
 
         return themes.toArray(new String[themes.size()]);
     }
-    
+
     private static Theme getBuiltInTheme(String themeName) {
         switch (themeName.toLowerCase()) {
             case "wood":

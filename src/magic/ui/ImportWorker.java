@@ -155,7 +155,7 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
         final String directoryName = "themes";
         final Path targetPath = MagicFileSystem.getDataPath(MagicFileSystem.DataPath.THEMES);
         final Path sourcePath = importDataPath.resolve(directoryName);
-        if (sourcePath.toFile().exists()) {            
+        if (sourcePath.toFile().exists()) {
             FileUtils.copyDirectory(sourcePath.toFile(), targetPath.toFile());
         } else {
             migrateModThemes();

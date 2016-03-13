@@ -49,7 +49,7 @@ class GameplayImagesPanel extends JPanel {
         highlightComboBox.setToolTipText(UiString.get(_S46));
         highlightComboBox.setFocusable(false);
         highlightComboBox.addMouseListener(aListener);
-        
+
         mouseWheelPopupCheckBox = new JCheckBox(UiString.get(_S28), CONFIG.isMouseWheelPopup());
         mouseWheelPopupCheckBox.setFocusable(false);
         mouseWheelPopupCheckBox.setToolTipText(UiString.get(_S29));

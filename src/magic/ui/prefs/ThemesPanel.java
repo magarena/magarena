@@ -13,7 +13,7 @@ import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class ThemesPanel extends JPanel {
-    
+
     // translatable strings.
     private static final String _S47 = "Overrides the default theme background with a custom image which is set by dragging an image file onto the Magarena window.";
     private static final String _S49 = "custom background";

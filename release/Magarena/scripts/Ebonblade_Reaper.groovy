@@ -15,7 +15,7 @@
             game.doAction(new ChangeLifeAction(player,-(player.getLife()+1)/2));
         }
     },
-    
+
     new DamageIsDealtTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicDamage damage) {
