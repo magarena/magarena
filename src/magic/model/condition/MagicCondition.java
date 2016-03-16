@@ -795,6 +795,13 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
         }
     };
 
+    public static MagicCondition HAS_EQUIPMENT_IN_HAND = new MagicCondition() {
+        public boolean accept(MagicSource source) {
+            final MagicPlayer player = source.getController();
+            return MagicTargetFilterFactory.EQUIPMENT_CARD_FROM_HAND.filter(player).size() > 0;
+        }
+    };
+
     public static MagicCondition INSTANT_OR_SORCERY_IN_A_GRAVEYARD = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicPlayer player = source.getController();

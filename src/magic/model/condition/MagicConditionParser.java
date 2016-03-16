@@ -504,6 +504,9 @@ public enum MagicConditionParser {
     ArtifactInYourGraveyard("you have an artifact card in your graveyard") {
         public MagicCondition toCondition(final Matcher arf) { return MagicCondition.HAS_ARTIFACT_IN_GRAVEYARD;}
     },
+    EquipmentInYourHand("you have an equipment card in your hand") {
+        public MagicCondition toCondition(final Matcher arf) { return MagicCondition.HAS_EQUIPMENT_IN_HAND;}
+    },
     InstantOrSorceryInGraveyard("there is an instant or sorcery card in a graveyard") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.INSTANT_OR_SORCERY_IN_A_GRAVEYARD;

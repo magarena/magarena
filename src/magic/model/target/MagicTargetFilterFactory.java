@@ -1910,6 +1910,8 @@ public class MagicTargetFilterFactory {
 
     public static final MagicCardFilterImpl CREATURE_CARD_FROM_HAND = card(MagicType.Creature).from(MagicTargetType.Hand);
 
+    public static final MagicCardFilterImpl EQUIPMENT_CARD_FROM_HAND = card(MagicSubType.Equipment).from(MagicTargetType.Hand);
+
     public static final MagicCardFilterImpl BLUE_OR_RED_CREATURE_CARD_FROM_HAND = card(MagicColor.Blue).or(MagicColor.Red).and(MagicType.Creature).from(MagicTargetType.Hand);
 
     public static final MagicCardFilterImpl RED_OR_GREEN_CARD_FROM_HAND = card(MagicColor.Red).or(MagicColor.Green).from(MagicTargetType.Hand);
