@@ -72,7 +72,40 @@ Thank you for your support and have fun!
 
 Release 1.71 (March 27, 2016)
 ============
+lodici
+melvin
+neoedmund
+ShawnieBoy
 
+    up to commit a664d03790f4353b66c5dde26d07070f504ed8c9
+
+    russian translation update.
+    show M logo on black background on startup.
+    display deck stats & description in select decks screen sidebar.
+    consolidate card type and color distribution stats into single fixed-size StatsTable (closes #692).
+    move location of themes from "mods" to "themes" folder.
+
+- added the following to the card script:
+    add Investigate eventAction
+    add Delirium Condition
+    add effect '<permanent> can't block SN this turn.', closes #671
+    add ability 'skulk'
+
+- fixed the following bugs:
+    fixes #683 : Minor layout anomaly in stats panel on Linux.
+    relocate VERSION and SOFTWARE_TITLE out of GeneralConfig and into MagicSystem to avoid statics dependency and fix issue #684.
+    fix Gallowbraid log message to 'pay', not 'lose'
+    fix download panel set to opaque when error occurs.
+    Zodiac Dragon should only trigger if you both own and control, fix #690
+    fix NPE if deck selector list is empty.
+    rename MagicObject.isCreature to MagicObject.isCreaturePermanent to avoid confusion with IRenderableCard.isCreature, fixes #698
+    fixes #704 : Ability icons regression due to ImageDrawingUtils refactoring.
+    fix: Genesis Wave duplicates cards played from library 712
+    use getTargetChoice() of MagicEvent instead of getTargetChoice of MagicChoice so that target of modal choice is retrieved, fixes #678
+    fix table sort by rarity
+    fix: Scarwood Bandits should keep control of artifact if control changes
+    always include 'another' restriction when cost is '{T}, Tap <permanent>', fixes #715
+    fixes #718 : Firemind top decks with Æ are not being parsed correctly.
 
 Release 1.70 (February 7, 2016)
 ============
