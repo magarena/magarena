@@ -1,5 +1,9 @@
 Aberrant Researcher
+Angel of Deliverance
+Anguished Unmaking
 Archangel Avacyn
+Arlinn Kord
+Arlinn, Embraced by the Moonsilver
 Avacyn, the Purifier
 Avacynian Missionaries
 Awoken Horror
@@ -11,21 +15,27 @@ Crow of Dark Tidings
 Dance with Devils
 Dead Weight
 Declaration in Stone
+Descend upon the Sinful
 Devil's Playground
+Drogskol Cavalry
 Duskwatch Recruiter
 Eerie Interlude
 Elusive Tormentor
 Ember-Eye Wolf
 Explosive Apparatus
 Expose Evil
+Falkenrath Gorger
 Farbog Revenant
 Fiery Temper
 Flameblade Angel
+Foresaken Sanctuary
 Forest
+Foul Orchard
 Furtive Homunculus
 Geralf's Masterpiece
 Heir of Falkenrath
 Heir to the Night
+Highland Lake
 Hinterland Logger
 Hound of the Farbogs
 Incorrigible Youths
@@ -37,36 +47,51 @@ Krallenhorde Howler
 Lamplighter of Selhoff
 Lightning Axe
 Lunarch Inquisitors
+Macabre Waltz
 Magmatic Chasm
 Magnifying Glass
 Markov Dreadknight
 Mindwrack Demon
 Mountain
+Nahiri, the Harbinger
+Nephalia Moondrakes
 Nibilis of Dusk
+Odric, Lunarch Marshal
 Pack Guardian
 Perfected Form
+Persistent Nightmare
 Pick the Brain
 Pieces of the Puzzle
+Pious Evangel
 Plains
 Pore Over the Pages
 Quilled Wolf
+Rattlechains
 Ravenous Bloodseeker
 Reaper of the Flight Moonsilver
 Relentless Dead
+Sage of Ancient Lore
 Sanguinary Mage
 Shamble Back
 Shard of Broken Glass
+Sinister Concoction
 Soul Swallower
+Startled Awake
 Stitched Mangler
 Stoic Builder
+Stone Quarry
 Structural Distortion
 Swamp
 Tamiyo's Journal
 Thing in the Ice
 Thraben Inspector
 Timber Shredder
+To the Slaughter
 Tooth Collector
 Topplegeist
 Voldaren Duelist
 Warped Landscape
 Watcher in the Web
+Wayward Disciple
+Werewolf of Ancient Hunger
+Woodland Stream
