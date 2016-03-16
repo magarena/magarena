@@ -7,6 +7,6 @@ subtype=Kor,Artificer
 cost={1}{W}
 pt=1/2
 ability=When SN enters the battlefield, you may search your library for an Equipment card, reveal it, put it into your hand, then shuffle your library.;\
-        {1}{W}, {T}: You may put an Equipment card from your hand onto the battlefield.
+        {1}{W}, {T}: You may put an Equipment card from your hand onto the battlefield. Activate this ability with AI only if you have an Equipment card in your hand.
 timing=main
 oracle=When Stoneforge Mystic enters the battlefield, you may search your library for an Equipment card, reveal it, put it into your hand, then shuffle your library.\n{1}{W}, {T}: You may put an Equipment card from your hand onto the battlefield.
