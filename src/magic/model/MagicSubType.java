@@ -44,8 +44,8 @@ public enum MagicSubType {
     Trap,
 
     //planeswalker subtypes
-    Ajani, Ashiok, Bolas, Chandra, Dack, Daretti, Domri, Elspeth, Freyalise, Garruk, Gideon, Jace, Karn, Kiora, Koth, Liliana,
-    Nahiri, Narset, Nissa, Nixilis, Ral, Sarkhan, Sorin, Teferi, Tezzeret, Venser, Tamiyo, Tibalt, Ugin, Vraska, Xenagos,
+    Ajani, Arlinn, Ashiok, Bolas, Chandra, Dack, Daretti, Domri, Elspeth, Freyalise, Garruk, Gideon, Jace, Karn, Kiora, Koth,
+    Liliana, Nahiri, Narset, Nissa, Nixilis, Ral, Sarkhan, Sorin, Teferi, Tezzeret, Venser, Tamiyo, Tibalt, Ugin, Vraska, Xenagos,
 
     //special handling for Assembly_Worker
     Assembly_Worker() {
