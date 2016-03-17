@@ -28,7 +28,7 @@ def FATESEAL = {
                     game.addEvent(new MagicEvent(
                         event.getSource(),
                         event.getPlayer(),
-                        new MagicMayChoice("Put ("+card.getName()+") on the bottom of ${it}'s library?"),
+                        new MagicMayChoice("Put this card on the bottom of ${it}'s library?"),
                         it,
                         FATESEAL,
                         ""
