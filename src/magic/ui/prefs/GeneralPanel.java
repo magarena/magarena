@@ -14,6 +14,8 @@ import net.miginfocom.swing.MigLayout;
 class GeneralPanel extends JPanel {
 
     // translatable strings.
+    private static final String _S1 = "Download images on demand.";
+    private static final String _S2 = "Only downloads card images as needed. Switch off if you want to download all images in one go, use proxy frames with cropped images or download non-English card images.";
     private static final String _S56 = "Restart required. Only applies to the general UI, it does not affect card data.";
     private static final String _S57 = "Deck Editor split view.";
     private static final String _S58 = "Use the old style split view in the Deck Editor instead of the new tabbed view. This option is provided for convenience, any new features will only be added to the tabbed view.";
@@ -33,6 +35,7 @@ class GeneralPanel extends JPanel {
     private final JCheckBox missingCardDataCheckbox;
     private final PreferredSizePanel preferredSizePanel;
     private final DirectoryChooser imagesFolderChooser;
+    private final JCheckBox imagesOnDemandCheckbox;
 
     GeneralPanel(MouseListener aListener) {
 
@@ -47,6 +50,11 @@ class GeneralPanel extends JPanel {
 
         preferredSizePanel = new PreferredSizePanel(aListener);
         preferredSizePanel.setFocusable(false);
+
+        imagesOnDemandCheckbox = new JCheckBox(UiString.get(_S1), config.getImagesOnDemand());
+        imagesOnDemandCheckbox.setToolTipText(UiString.get(_S2));
+        imagesOnDemandCheckbox.setFocusable(false);
+        imagesOnDemandCheckbox.addMouseListener(aListener);
 
         splitViewDeckEditorCheckBox = new JCheckBox(UiString.get(_S57), config.isSplitViewDeckEditor());
         splitViewDeckEditorCheckBox.setToolTipText(UiString.get(_S58));
@@ -72,6 +80,7 @@ class GeneralPanel extends JPanel {
         add(getCaptionLabel(UiString.get(UiString.get(_S83))), "gaptop 10");
         add(imagesFolderChooser, "w 100%");
         add(preferredSizePanel, "w 100%");
+        add(imagesOnDemandCheckbox);
         // explorer & editor
         add(getCaptionLabel(UiString.get(_S64)), "gaptop 10");
         add(splitViewDeckEditorCheckBox);
@@ -86,6 +95,7 @@ class GeneralPanel extends JPanel {
         config.setIsSplitViewDeckEditor(splitViewDeckEditorCheckBox.isSelected());
         config.setPreviewCardOnSelect(previewCardOnSelectCheckBox.isSelected());
         config.setShowMissingCardData(missingCardDataCheckbox.isSelected());
+        config.setImagesOnDemand(imagesOnDemandCheckbox.isSelected());
     }
 
     private JLabel getCaptionLabel(String text) {

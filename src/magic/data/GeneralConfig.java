@@ -167,6 +167,9 @@ public class GeneralConfig {
     private static final String CARD_TEXT_LANG = "cardTextLanguage";
     private CardTextLanguage cardTextLanguage = CardTextLanguage.ENGLISH;
 
+    private static final String IMAGES_ON_DEMAND = "imagesOnDemand";
+    private boolean imagesOnDemand = false;
+
     private boolean isStatsVisible = true;
 
     private GeneralConfig() { }
@@ -606,6 +609,7 @@ public class GeneralConfig {
         preferredImageSize = ImageSizePresets.valueOf(properties.getProperty(PREF_IMAGE_SIZE, preferredImageSize.name()));
         cardTextLanguage = CardTextLanguage.valueOf(properties.getProperty(CARD_TEXT_LANG, cardTextLanguage.name()));
         gameVolume = Integer.parseInt(properties.getProperty(GAME_VOLUME, "" + gameVolume));
+        imagesOnDemand = Boolean.parseBoolean(properties.getProperty(IMAGES_ON_DEMAND, "" + imagesOnDemand));
     }
 
     public void load() {
@@ -657,6 +661,7 @@ public class GeneralConfig {
         properties.setProperty(PREF_IMAGE_SIZE, preferredImageSize.name());
         properties.setProperty(CARD_TEXT_LANG, cardTextLanguage.name());
         properties.setProperty(GAME_VOLUME, String.valueOf(gameVolume));
+        properties.setProperty(IMAGES_ON_DEMAND, String.valueOf(imagesOnDemand));
     }
 
     public void save() {
@@ -712,4 +717,13 @@ public class GeneralConfig {
     public void setStatsVisible(boolean b) {
         isStatsVisible = b;
     }
+
+    public boolean getImagesOnDemand() {
+        return imagesOnDemand;
+    }
+
+    public void setImagesOnDemand(boolean b) {
+        imagesOnDemand = b;
+    }
+    
 }

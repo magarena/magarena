@@ -5,9 +5,12 @@ import java.awt.GraphicsEnvironment;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.IOException;
+import java.net.Proxy;
 import java.util.HashMap;
 import java.util.Map;
 import javax.swing.ImageIcon;
+import magic.data.CardImageFile;
 import magic.data.GeneralConfig;
 import magic.data.MagicIcon;
 import magic.data.TextImages;
@@ -27,6 +30,8 @@ import magic.utility.MagicResources;
 public final class MagicImages {
 
     public static final BufferedImage BACK_IMAGE;
+    private static Proxy proxy;
+
     static {
         BufferedImage image = ImageFileIO.toImg(MagicResources.getImageUrl("card-back.jpg"), null);
         Dimension size = getPreferredImageSize(image);
@@ -232,6 +237,17 @@ public final class MagicImages {
             : CardBuilder.getCardBuilderImage(cardDef);
     }
 
+    private static void tryDownloadingImage(MagicCardDefinition aCard) {
+        if (proxy == null) {
+            proxy = GeneralConfig.getInstance().getProxy();
+        }
+        try {
+            CardImageFile cif = new CardImageFile(aCard);
+            cif.doDownload(proxy);
+        } catch (IOException ex) {
+            System.err.println(aCard.getDistinctName() + " : " + ex);
+        }
+    }
 
     public static BufferedImage getOrigSizeCardImage(MagicCardDefinition aCard) {
 
@@ -245,6 +261,10 @@ public final class MagicImages {
 
         if (MagicFileSystem.getCroppedCardImageFile(aCard).exists()) {
             return CardBuilder.getCardBuilderImage(aCard);
+        }
+
+        if (GeneralConfig.getInstance().getImagesOnDemand() && !MagicFileSystem.getCardImageFile(aCard).exists()) {
+            tryDownloadingImage(aCard);
         }
 
         if (MagicFileSystem.getCardImageFile(aCard).exists()) {
