@@ -54,7 +54,7 @@ public class CardImageWorker extends SwingWorker<Image, Boolean> {
     @Override
     protected void process(List<Boolean> chunks) {
         if (chunks.get(0)) {
-            System.out.println("taking too long to get image - setting pending state");
+//            System.out.println("taking too long to get image - setting pending state");
             viewer.setImage(null);
         }
     }
@@ -66,7 +66,7 @@ public class CardImageWorker extends SwingWorker<Image, Boolean> {
             System.err.println("Interrupted.");
             return null;
         } catch (CancellationException ex) {
-            System.err.println("Cancelled.");
+//            System.err.println("Cancelled.");
             return null;
         } catch (ExecutionException ex) {
             throw new RuntimeException(ex);
