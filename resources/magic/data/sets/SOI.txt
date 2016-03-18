@@ -24,6 +24,7 @@ Deathcap Cultivator
 Declaration in Stone
 Descend upon the Sinful
 Devil's Playground
+Diregraf Colossus
 Drogskol Cavalry
 Drownyard Temple
 Duskwatch Recruiter
@@ -79,7 +80,8 @@ Obsessive Skinner
 Odric, Lunarch Marshal
 Olivia's Bloodsworn
 Olivia, Mobilized for War
-Ongiong Investigation
+Ongoing Investigation
+Ormendahl, Profane Prince
 Pack Guardian
 Paranoid Parish-Blade
 Perfected Form
@@ -94,6 +96,7 @@ Rattlechains
 Ravenous Bloodseeker
 Reaper of the Flight Moonsilver
 Relentless Dead
+Rise from the Tides
 Sage of Ancient Lore
 Sanguinary Mage
 Second Harvest
@@ -112,6 +115,7 @@ Stormkirk Mentor
 Structural Distortion
 Swamp
 Tamiyo's Journal
+Thalia's Lieutenant
 Thing in the Ice
 Thraben Inspector
 Timber Shredder
@@ -127,6 +131,8 @@ Voldaren Duelist
 Warped Landscape
 Watcher in the Web
 Wayward Disciple
+Welcome to the Fold
 Werewolf of Ancient Hunger
+Westvale Abbey
 Wolf of Devil's Breach
 Woodland Stream
