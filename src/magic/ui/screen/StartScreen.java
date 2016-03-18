@@ -24,11 +24,14 @@ public class StartScreen extends AbstractScreen {
     private List<String> translations;
 
     public StartScreen() {
-        if (MagicSystem.isNewInstall() == false) {
-            showMainMenuScreen();
-        } else {
-            setContent(new ScreenContent());
-        }
+        // use of runnable fixes #731 (https://github.com/magarena/magarena/issues/731)
+        SwingUtilities.invokeLater(() -> {
+            if (MagicSystem.isNewInstall() == false) {
+                showMainMenuScreen();
+            } else {
+                setContent(new ScreenContent());
+            }
+        });
     }
 
     private class ScreenContent extends JPanel {
