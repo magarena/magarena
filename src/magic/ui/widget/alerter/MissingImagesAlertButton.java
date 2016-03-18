@@ -56,4 +56,13 @@ public class MissingImagesAlertButton extends AlertButton {
 
     }
 
+    @Override
+    public void doAlertCheck() {
+        if (GeneralConfig.getInstance().getImagesOnDemand()) {
+            setVisible(false);
+        } else {
+            super.doAlertCheck();
+        }
+    }
+
 }
