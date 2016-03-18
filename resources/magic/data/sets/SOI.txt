@@ -4,24 +4,33 @@ Anguished Unmaking
 Archangel Avacyn
 Arlinn Kord
 Arlinn, Embraced by the Moonsilver
+Asylum Visitor
 Avacyn, the Purifier
 Avacynian Missionaries
 Awoken Horror
+Bearer of Overwhelming Truths
+Behold the Beyond
 Brain in a Jar
+Breakneck Rider
+Briarbridge Patrol
 Bygone Bishop
 Clip Wings
 Compelling Deterrence
 Crow of Dark Tidings
 Dance with Devils
+Daring Sleuth
 Dead Weight
+Deathcap Cultivator
 Declaration in Stone
 Descend upon the Sinful
 Devil's Playground
 Drogskol Cavalry
+Drownyard Temple
 Duskwatch Recruiter
 Eerie Interlude
 Elusive Tormentor
 Ember-Eye Wolf
+Epiphany at the Drownyard
 Explosive Apparatus
 Expose Evil
 Falkenrath Gorger
@@ -33,15 +42,21 @@ Forest
 Foul Orchard
 Furtive Homunculus
 Geralf's Masterpiece
+Gibbering Fiend
+Groundskeeper
+Harness the Storm
 Heir of Falkenrath
 Heir to the Night
 Highland Lake
 Hinterland Logger
 Hound of the Farbogs
 Incorrigible Youths
+Indulgent Aristocrat
 Insidious Mist
 Invasive Surgery
 Island
+Jace's Scrutiny
+Jace, Unraveler of Secrets
 Just the Wind
 Krallenhorde Howler
 Lamplighter of Selhoff
@@ -50,14 +65,23 @@ Lunarch Inquisitors
 Macabre Waltz
 Magmatic Chasm
 Magnifying Glass
+Manic Scribe
 Markov Dreadknight
+Merciless Resolve
 Mindwrack Demon
+Moonrise Intruder
 Mountain
 Nahiri, the Harbinger
+Neck Breaker
 Nephalia Moondrakes
 Nibilis of Dusk
+Obsessive Skinner
 Odric, Lunarch Marshal
+Olivia's Bloodsworn
+Olivia, Mobilized for War
+Ongiong Investigation
 Pack Guardian
+Paranoid Parish-Blade
 Perfected Form
 Persistent Nightmare
 Pick the Brain
@@ -72,14 +96,19 @@ Reaper of the Flight Moonsilver
 Relentless Dead
 Sage of Ancient Lore
 Sanguinary Mage
+Second Harvest
 Shamble Back
 Shard of Broken Glass
+Sigarda, Heron's Grace
+Silverfur Partisan
 Sinister Concoction
+Sorin, Grim Nemesis
 Soul Swallower
 Startled Awake
 Stitched Mangler
 Stoic Builder
 Stone Quarry
+Stormkirk Mentor
 Structural Distortion
 Swamp
 Tamiyo's Journal
@@ -89,9 +118,15 @@ Timber Shredder
 To the Slaughter
 Tooth Collector
 Topplegeist
+Trail of Evidence
+Traverse the Ulvenwald
+Twins of Maurer Estate
+Vessel of Volatility
+Village Messenger
 Voldaren Duelist
 Warped Landscape
 Watcher in the Web
 Wayward Disciple
 Werewolf of Ancient Hunger
+Wolf of Devil's Breach
 Woodland Stream
