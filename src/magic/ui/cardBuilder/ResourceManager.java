@@ -200,6 +200,7 @@ public class ResourceManager {
     public static final BufferedImage greenPlaneswalkerHidden = getComponent("transform/planeswalker/gcard2.jpg");
     public static final BufferedImage multiPlaneswalkerTransform = getComponent("transform/planeswalker/mcard.jpg");
     public static final BufferedImage multiPlaneswalkerHidden = getComponent("transform/planeswalker/mcard2.jpg");
+    public static final BufferedImage gainPlaneswalkerTransformHybridBanner = getComponent("transform/planeswalker/hybrid_blend.png");
     public static final BufferedImage getPlaneswalkerImageBlend = getComponent("planeswalker/imageMask.png");
     public static final BufferedImage artifactHiddenPTPanel = getComponent("transform/apt2.png");
     public static final BufferedImage colorlessHiddenPTPanel = getComponent("transform/cpt2.png");

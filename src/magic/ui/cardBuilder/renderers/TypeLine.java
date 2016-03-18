@@ -25,18 +25,18 @@ public class TypeLine {
             Graphics2D g2d = cardImage.createGraphics();
             g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
             g2d.setRenderingHint(RenderingHints.KEY_FRACTIONALMETRICS, RenderingHints.VALUE_FRACTIONALMETRICS_ON);
-            g2d.setColor(Color.BLACK);
+            g2d.setColor(cardDef.isHidden() ? Color.WHITE : Color.BLACK);
             g2d.setFont(getFontSize(cardType));
             FontMetrics metrics = g2d.getFontMetrics();
             int yPos;
             if (cardDef.isToken()) {
                 yPos = cardDef.hasText() ? 359 : 434;
-            } else if (cardDef.isPlaneswalker() && OracleText.getPlaneswalkerAbilityCount(cardDef) == 4){
+            } else if (cardDef.isPlaneswalker() && OracleText.getPlaneswalkerAbilityCount(cardDef) == 4) {
                 yPos = 266;
             } else {
                 yPos = 301;
             }
-            g2d.drawString(cardType+" ", 32, yPos + metrics.getAscent() + padding);
+            g2d.drawString(cardType + " ", 32, yPos + metrics.getAscent() + padding);
             g2d.dispose();
         }
     }
@@ -76,48 +76,27 @@ public class TypeLine {
         return typeLine.toString();
     }
 
-
-    public static void drawHiddenCardTypeLine(BufferedImage cardImage, IRenderableCard cardDef) {
-        String cardType = getTypeLine(cardDef);
-        if (!cardType.isEmpty()) {
-            Graphics2D g2d = cardImage.createGraphics();
-            g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-            g2d.setRenderingHint(RenderingHints.KEY_FRACTIONALMETRICS, RenderingHints.VALUE_FRACTIONALMETRICS_ON);
-            g2d.setColor(Color.WHITE);
-            g2d.setFont(getFontSize(cardType));
-            FontMetrics metrics = g2d.getFontMetrics();
-            int yPos;
-            if (cardDef.isToken()) {
-                yPos = cardDef.hasText() ? 356 : 431;
-            } else {
-                yPos = 298;
-            }
-            g2d.drawString(cardType, 32, yPos + metrics.getAscent() + padding);// 298+Plus height of text
-            g2d.dispose();
-        }
-    }
-
     public static void drawRarity(BufferedImage cardImage, IRenderableCard cardDef) {
-        BufferedImage rarity=ResourceManager.common;
-        if (cardDef.getRarityChar()=='U'){
-            rarity=ResourceManager.uncommon;
+        BufferedImage rarity = ResourceManager.common;
+        if (cardDef.getRarityChar() == 'U') {
+            rarity = ResourceManager.uncommon;
         }
-        if (cardDef.getRarityChar()=='R'){
-            rarity=ResourceManager.rare;
+        if (cardDef.getRarityChar() == 'R') {
+            rarity = ResourceManager.rare;
         }
-        if (cardDef.getRarityChar()=='M'){
-            rarity=ResourceManager.mythic;
+        if (cardDef.getRarityChar() == 'M') {
+            rarity = ResourceManager.mythic;
         }
         Graphics2D g2d = cardImage.createGraphics();
         int ypos = 297;
-        if (cardDef.isPlaneswalker() && OracleText.getPlaneswalkerAbilityCount(cardDef)>3){
+        if (cardDef.isPlaneswalker() && OracleText.getPlaneswalkerAbilityCount(cardDef) > 3) {
             ypos = 263;
         }
-        if (cardDef.isToken()){
+        if (cardDef.isToken()) {
             ypos = cardDef.hasText() ? 356 : 431;
         }
         int xpos = 322;
-        g2d.drawImage(rarity,xpos,ypos,null);
+        g2d.drawImage(rarity, xpos, ypos, null);
     }
 
 }

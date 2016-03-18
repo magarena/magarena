@@ -17,27 +17,20 @@ public class CardBuilder {
         BufferedImage image;
 
         //Frame type hierarchy may need adjusting
-        if (cardDef.isDoubleFaced() && !cardDef.isPlaneswalker()) {
-            image = makeTransform(cardDef);
-
+        if (cardDef.isDoubleFaced()) {
+            image = cardDef.isPlaneswalker() ? makeTransformPlaneswalker(cardDef) : makeTransform(cardDef);
         } else if (cardDef.hasType(MagicType.Planeswalker)) {
             image = makePlaneswalker(cardDef);
-
         } else if (cardDef.isToken()) {
             image = makeToken(cardDef);
-
         } else if (cardDef.isFlipCard()) {
             image = makeFlipCard(cardDef);
-
         } else if (cardDef.isSplitCard()) {
             image = makeSplitCard(cardDef);
-
         } else {
             image = makeBasicCard(cardDef);
         }
-
         IS_LOADED = true;
-
         return image;
     }
 
@@ -45,17 +38,29 @@ public class CardBuilder {
         BufferedImage cardImage = Frame.getTransformFrameType(cardDef);
         if (cardDef.isHidden()) {
             PTFrame.drawHiddenPTPanel(cardImage, cardDef);
-            TypeLine.drawHiddenCardTypeLine(cardImage, cardDef);
         } else {
             PTFrame.drawPTPanel(cardImage, cardDef);
-            TypeLine.drawCardTypeLine(cardImage, cardDef);
         }
+        TypeLine.drawCardTypeLine(cardImage, cardDef);
         TypeLine.drawRarity(cardImage, cardDef);
         TitleFrame.drawTransformCardName(cardImage, cardDef);
         ImageFrame.drawImage(cardImage, cardDef);
         TitleFrame.drawManaCost(cardImage, cardDef);
         PTFrame.drawTransformSymbol(cardImage, cardDef);
         OracleText.drawOracleText(cardImage, cardDef);
+        return trimImage(cardImage);
+    }
+
+    private static BufferedImage makeTransformPlaneswalker(IRenderableCard cardDef) {
+        BufferedImage cardImage = Frame.getTransformPlaneswalkerFrameType(cardDef);
+        ImageFrame.drawImage(cardImage, cardDef);
+        OracleText.drawPlaneswalkerOracleText(cardImage, cardDef);
+        PTFrame.drawLoyaltyPanels(cardImage, cardDef);
+        PTFrame.drawTransformSymbol(cardImage, cardDef);
+        TitleFrame.drawTransformCardName(cardImage, cardDef);
+        TitleFrame.drawManaCost(cardImage, cardDef);
+        TypeLine.drawCardTypeLine(cardImage, cardDef);
+        TypeLine.drawRarity(cardImage, cardDef);
         return trimImage(cardImage);
     }
 
@@ -73,11 +78,11 @@ public class CardBuilder {
             firstHalf = makeBasicCard(cardDef);
             secondHalf = makeBasicCard(cardDef.getSplitDefinition());
         }
-        BufferedImage base = new BufferedImage(firstHalf.getHeight(), firstHalf.getWidth() * 2, BufferedImage.TYPE_INT_ARGB);
+        BufferedImage base = new BufferedImage(firstHalf.getHeight(), firstHalf.getWidth() << 1, BufferedImage.TYPE_INT_ARGB);
         Graphics2D graphics2D = base.createGraphics();
         //Transforms occur in reverse order
         AffineTransform affineTransform1 = new AffineTransform();
-        affineTransform1.translate(0, firstHalf.getWidth() * 2);
+        affineTransform1.translate(0, firstHalf.getWidth() << 1);
         affineTransform1.rotate(-Math.PI / 2, 0, 0);
         graphics2D.drawImage(firstHalf, affineTransform1, null);
 
