@@ -31,6 +31,7 @@ public class SettingsMenuScreen extends AbstractScreen {
     private static final String _S13 = "Reset & Restart";
     private static final String _S14 = "Yes";
     private static final String _S15 = "No";
+    private static final String _S16 = "Please switch off the 'Download images on demand' setting in preferences first.";
 
     private static FiremindWorkerDialog firemindWorkerDialog;
 
@@ -52,7 +53,11 @@ public class SettingsMenuScreen extends AbstractScreen {
         menuPanel.addMenuItem(UiString.get(_S5), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                ScreenController.showDownloadImagesScreen();
+                if (GeneralConfig.getInstance().getImagesOnDemand()) {
+                    ScreenController.showInfoMessage(UiString.get(_S16));
+                } else {
+                    ScreenController.showDownloadImagesScreen();
+                }
             }
         });
 
