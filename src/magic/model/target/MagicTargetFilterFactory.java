@@ -24,21 +24,24 @@ import magic.model.stack.MagicItemOnStack;
 public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl NONE = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return false;
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
             return false;
         }
     };
 
     public static final MagicPermanentFilterImpl ANY = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return true;
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
             return true;
         }
+
         @Override
         public boolean isStatic() {
             return true;
@@ -46,120 +49,120 @@ public class MagicTargetFilterFactory {
     };
 
     public static final MagicPermanentFilterImpl SN = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return source == target;
         }
     };
 
     public static final MagicPlayerFilterImpl YOU = new MagicPlayerFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPlayer target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPlayer target) {
             return player == target;
         }
     };
 
     public static final MagicPermanentFilterImpl EQUIPMENT_ATTACHED_TO_SOURCE = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.getEquippedCreature() == source;
         }
     };
 
-    public static final MagicStackFilterImpl SPELL_OR_ABILITY_THAT_TARGETS_PERMANENTS =new MagicStackFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack target) {
+    public static final MagicStackFilterImpl SPELL_OR_ABILITY_THAT_TARGETS_PERMANENTS = new MagicStackFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack target) {
             final MagicTargetChoice tchoice = target.getEvent().getTargetChoice();
             return tchoice.isValid() &&
-                   tchoice.isTargeted() &&
-                   tchoice.getTargetFilter().acceptType(MagicTargetType.Permanent);
+                tchoice.isTargeted() &&
+                tchoice.getTargetFilter().acceptType(MagicTargetType.Permanent);
         }
     };
 
     public static final MagicStackFilterImpl SPELL_OR_ABILITY = new MagicStackFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack target) {
             return true;
         }
     };
 
     public static final MagicStackFilterImpl SPELL_OR_ABILITY_OPPONENT_CONTROL = new MagicStackFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack target) {
             return target.isEnemy(player);
         }
     };
 
     public static final MagicStackFilterImpl ACTIVATED_ABILITY = new MagicStackFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack target) {
             return target instanceof MagicAbilityOnStack;
         }
     };
 
     public static final MagicStackFilterImpl ACTIVATED_OR_TRIGGERED_ABILITY = new MagicStackFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack target) {
             return target.isSpell() == false;
         }
     };
 
-    public static final MagicStackFilterImpl SPELL=new MagicStackFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack target) {
+    public static final MagicStackFilterImpl SPELL = new MagicStackFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack target) {
             return target.isSpell();
         }
     };
 
-    public static final MagicStackFilterImpl SPELL_THAT_TARGETS_PLAYER=new MagicStackFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack target) {
+    public static final MagicStackFilterImpl SPELL_THAT_TARGETS_PLAYER = new MagicStackFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack target) {
             final MagicTargetChoice tchoice = target.getEvent().getTargetChoice();
             return target.isSpell() &&
-                   tchoice.isValid() &&
-                   tchoice.isTargeted() &&
-                   tchoice.getTargetFilter().acceptType(MagicTargetType.Player);
+                tchoice.isValid() &&
+                tchoice.isTargeted() &&
+                tchoice.getTargetFilter().acceptType(MagicTargetType.Player);
         }
     };
 
-    public static final MagicStackFilterImpl SPELL_YOU_DONT_CONTROL=new MagicStackFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack target) {
+    public static final MagicStackFilterImpl SPELL_YOU_DONT_CONTROL = new MagicStackFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack target) {
             return target.isSpell() && target.getController() != player;
         }
     };
 
     public static final MagicStackFilterImpl SPELL_WITH_CMC_EQ_1 = new MagicStackFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack target) {
             return target.isSpell() && target.getConvertedCost() == 1;
         }
     };
 
     public static final MagicStackFilterImpl SPELL_WITH_CMC_EQ_2 = new MagicStackFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack target) {
             return target.isSpell() && target.getConvertedCost() == 2;
         }
     };
 
     public static final MagicStackFilterImpl SPELL_WITH_CMC_LEQ_3 = new MagicStackFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack target) {
             return target.isSpell() && target.getConvertedCost() <= 3;
         }
     };
 
     public static final MagicStackFilterImpl SPELL_WITH_CMC_4_OR_GREATER = new MagicStackFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack target) {
             return target.isSpell() && target.getConvertedCost() >= 4;
         }
     };
 
     public static final MagicStackFilterImpl INSTANT_SPELL_YOU_CONTROL_WITH_CMC_LEQ_2 = new MagicStackFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack target) {
             return target.isSpell(MagicType.Instant) &&
-                   target.getConvertedCost() <= 2 &&
-                   target.getController() == player;
+                target.getConvertedCost() <= 2 &&
+                target.getController() == player;
         }
     };
 
     public static final MagicStackFilterImpl SORCERY_SPELL_YOU_CONTROL_WITH_CMC_LEQ_2 = new MagicStackFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack target) {
             return target.isSpell(MagicType.Sorcery) &&
-                   target.getConvertedCost() <= 2 &&
-                   target.getController() == player;
+                target.getConvertedCost() <= 2 &&
+                target.getController() == player;
         }
     };
 
-    public static final MagicStackFilterImpl SPELL_WITH_X_COST=new MagicStackFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack target) {
+    public static final MagicStackFilterImpl SPELL_WITH_X_COST = new MagicStackFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack target) {
             return target.isSpell() && target.getCardDefinition().hasX();
         }
     };
@@ -170,70 +173,70 @@ public class MagicTargetFilterFactory {
 
     public static final MagicStackFilterImpl GREEN_OR_WHITE_SPELL = spellOr(MagicColor.Green, MagicColor.White);
 
-    public static final MagicStackFilterImpl NONBLUE_SPELL=new MagicStackFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+    public static final MagicStackFilterImpl NONBLUE_SPELL = new MagicStackFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell() && !itemOnStack.hasColor(MagicColor.Blue);
         }
     };
 
-    public static final MagicStackFilterImpl NONBLACK_SPELL=new MagicStackFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+    public static final MagicStackFilterImpl NONBLACK_SPELL = new MagicStackFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell() && !itemOnStack.hasColor(MagicColor.Black);
         }
     };
 
-    public static final MagicStackFilterImpl NONFAERIE_SPELL=new MagicStackFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+    public static final MagicStackFilterImpl NONFAERIE_SPELL = new MagicStackFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell() && !itemOnStack.hasSubType(MagicSubType.Faerie);
         }
     };
 
-    public static final MagicStackFilterImpl BLUE_INSTANT_SPELL=new MagicStackFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+    public static final MagicStackFilterImpl BLUE_INSTANT_SPELL = new MagicStackFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell(MagicType.Instant) && itemOnStack.hasColor(MagicColor.Blue);
         }
     };
 
     public static final MagicCardFilterImpl BLUE_INSTANT_CARD_FROM_LIBRARY = card(MagicColor.Blue).and(MagicType.Instant).from(MagicTargetType.Library);
 
-    public static final MagicStackFilterImpl BLUE_SPELL_YOUR_TURN=new MagicStackFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+    public static final MagicStackFilterImpl BLUE_SPELL_YOUR_TURN = new MagicStackFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
             final MagicGame game = player.getGame();
             return itemOnStack.isSpell() && itemOnStack.hasColor(MagicColor.Blue) && game.getTurnPlayer() == player;
         }
     };
 
-    public static final MagicStackFilterImpl BLUE_OR_BLACK_SPELL_YOUR_TURN=new MagicStackFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+    public static final MagicStackFilterImpl BLUE_OR_BLACK_SPELL_YOUR_TURN = new MagicStackFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
             final MagicGame game = player.getGame();
             return itemOnStack.isSpell() &&
-                   (itemOnStack.hasColor(MagicColor.Blue) || itemOnStack.hasColor(MagicColor.Black)) &&
-                   game.getTurnPlayer() == player;
+                (itemOnStack.hasColor(MagicColor.Blue) || itemOnStack.hasColor(MagicColor.Black)) &&
+                game.getTurnPlayer() == player;
         }
     };
 
-    public static final MagicStackFilterImpl NONRED_SPELL=new MagicStackFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+    public static final MagicStackFilterImpl NONRED_SPELL = new MagicStackFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell() && !itemOnStack.hasColor(MagicColor.Red);
         }
     };
 
-    public static final MagicStackFilterImpl BLUE_OR_BLACK_OR_RED_SPELL=new MagicStackFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+    public static final MagicStackFilterImpl BLUE_OR_BLACK_OR_RED_SPELL = new MagicStackFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell() && (
                 itemOnStack.hasColor(MagicColor.Blue) ||
-                itemOnStack.hasColor(MagicColor.Black) ||
-                itemOnStack.hasColor(MagicColor.Red));
+                    itemOnStack.hasColor(MagicColor.Black) ||
+                    itemOnStack.hasColor(MagicColor.Red));
         }
     };
 
-    public static final MagicStackFilterImpl WHITE_OR_BLUE_OR_BLACK_OR_RED_SPELL=new MagicStackFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+    public static final MagicStackFilterImpl WHITE_OR_BLUE_OR_BLACK_OR_RED_SPELL = new MagicStackFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell() && (
                 itemOnStack.hasColor(MagicColor.White) ||
-                itemOnStack.hasColor(MagicColor.Blue) ||
-                itemOnStack.hasColor(MagicColor.Black) ||
-                itemOnStack.hasColor(MagicColor.Red));
+                    itemOnStack.hasColor(MagicColor.Blue) ||
+                    itemOnStack.hasColor(MagicColor.Black) ||
+                    itemOnStack.hasColor(MagicColor.Red));
         }
     };
 
@@ -241,36 +244,36 @@ public class MagicTargetFilterFactory {
 
     public static final MagicStackFilterImpl CREATURE_OR_SORCERY_SPELL = spellOr(MagicType.Creature, MagicType.Sorcery);
 
-    public static final MagicStackFilterImpl NONCREATURE_SPELL=new MagicStackFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+    public static final MagicStackFilterImpl NONCREATURE_SPELL = new MagicStackFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell() &&
-                   !itemOnStack.isSpell(MagicType.Creature);
+                !itemOnStack.isSpell(MagicType.Creature);
         }
     };
 
-    public static final MagicStackFilterImpl NONARTIFACT_SPELL=new MagicStackFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+    public static final MagicStackFilterImpl NONARTIFACT_SPELL = new MagicStackFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell() &&
-                   !itemOnStack.isSpell(MagicType.Artifact);
+                !itemOnStack.isSpell(MagicType.Artifact);
         }
     };
 
-    public static final MagicStackFilterImpl CREATURE_SPELL_CMC_6_OR_MORE=new MagicStackFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+    public static final MagicStackFilterImpl CREATURE_SPELL_CMC_6_OR_MORE = new MagicStackFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell(MagicType.Creature) && itemOnStack.getConvertedCost() >= 6;
         }
     };
 
-    public static final MagicStackFilterImpl CREATURE_SPELL_WITH_INFECT=new MagicStackFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+    public static final MagicStackFilterImpl CREATURE_SPELL_WITH_INFECT = new MagicStackFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell(MagicType.Creature) && itemOnStack.hasAbility(MagicAbility.Infect);
         }
     };
 
     public static final MagicStackFilterImpl WHITE_OR_BLUE_INSTANT_OR_SORCERY_SPELL = new MagicStackFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack target) {
             return (target.hasColor(MagicColor.White) || target.hasColor(MagicColor.Blue)) &&
-                   (target.isSpell(MagicType.Instant) || target.isSpell(MagicType.Sorcery));
+                (target.isSpell(MagicType.Instant) || target.isSpell(MagicType.Sorcery));
         }
     };
 
@@ -278,47 +281,48 @@ public class MagicTargetFilterFactory {
 
     public static final MagicStackFilterImpl INSTANT_OR_SORCERY_SPELL_YOU_CONTROL = spellOr(MagicType.Instant, MagicType.Sorcery, Control.You);
 
-    public static final MagicStackFilterImpl SPIRIT_OR_ARCANE_SPELL= spellOr(MagicSubType.Spirit, MagicSubType.Arcane);
+    public static final MagicStackFilterImpl SPIRIT_OR_ARCANE_SPELL = spellOr(MagicSubType.Spirit, MagicSubType.Arcane);
 
     public static final MagicStackFilterImpl ARTIFACT_OR_ENCHANTMENT_SPELL = spellOr(MagicType.Artifact, MagicType.Enchantment);
 
-    public static final MagicPlayerFilterImpl PLAYER=new MagicPlayerFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPlayer target) {
+    public static final MagicPlayerFilterImpl PLAYER = new MagicPlayerFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPlayer target) {
             return true;
         }
     };
 
-    public static final MagicPlayerFilterImpl DEFENDING_PLAYER=new MagicPlayerFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPlayer target) {
+    public static final MagicPlayerFilterImpl DEFENDING_PLAYER = new MagicPlayerFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPlayer target) {
             return target.getGame().getDefendingPlayer() == target;
         }
     };
 
-    public static final MagicPlayerFilterImpl PLAYER_LOST_LIFE=new MagicPlayerFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPlayer target) {
-            return target.getLifeLossThisTurn()>=1;
+    public static final MagicPlayerFilterImpl PLAYER_LOST_LIFE = new MagicPlayerFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPlayer target) {
+            return target.getLifeLossThisTurn() >= 1;
         }
     };
 
-    public static final MagicPlayerFilterImpl PLAYER_CONTROLS_CREATURE=new MagicPlayerFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPlayer target) {
+    public static final MagicPlayerFilterImpl PLAYER_CONTROLS_CREATURE = new MagicPlayerFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPlayer target) {
             return target.controlsPermanent(MagicType.Creature);
         }
     };
 
-    public static final MagicPlayerFilterImpl OPPONENT=new MagicPlayerFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPlayer target) {
-            return target!=player;
+    public static final MagicPlayerFilterImpl OPPONENT = new MagicPlayerFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPlayer target) {
+            return target != player;
         }
     };
 
-    public static final MagicTargetFilterImpl SPELL_OR_PERMANENT=new MagicTargetFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicTarget target) {
-            return target.isSpell()||target.isPermanent();
+    public static final MagicTargetFilterImpl SPELL_OR_PERMANENT = new MagicTargetFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicTarget target) {
+            return target.isSpell() || target.isPermanent();
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Stack ||
-                   targetType==MagicTargetType.Permanent;
+            return targetType == MagicTargetType.Stack ||
+                targetType == MagicTargetType.Permanent;
         }
     };
 
@@ -337,7 +341,7 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl BLACK_PERMANENT_YOU_CONTROL = permanent(MagicColor.Black, Control.You);
 
     public static final MagicPermanentFilterImpl PERMANENT = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return true;
         }
     };
@@ -362,49 +366,49 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl RED_OR_WHITE_PERMANENT = permanentOr(MagicColor.Red, MagicColor.White, Control.Any);
 
-    public static final MagicPermanentFilterImpl NON_SWAMP_LAND=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NON_SWAMP_LAND = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isLand() && !target.hasSubType(MagicSubType.Swamp);
         }
     };
 
-    public static final MagicPermanentFilterImpl NONBASIC_LAND=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONBASIC_LAND = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isLand() && !target.hasType(MagicType.Basic);
         }
     };
 
-    public static final MagicPermanentFilterImpl NONBASIC_LAND_YOU_CONTROL=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONBASIC_LAND_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isLand() && !target.hasType(MagicType.Basic) && target.isController(player);
         }
     };
 
-    public static final MagicPermanentFilterImpl NON_LAIR_LAND_YOU_CONTROL=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NON_LAIR_LAND_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isLand() && !target.hasSubType(MagicSubType.Lair) && target.isController(player);
         }
     };
 
-    public static final MagicPermanentFilterImpl NONBASIC_LAND_AN_OPPONENT_CONTROLS=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONBASIC_LAND_AN_OPPONENT_CONTROLS = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isLand() && !target.hasType(MagicType.Basic) && target.isOpponent(player);
         }
     };
 
-    public static final MagicPermanentFilterImpl TRAPPED_LAND_YOU_CONTROL=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl TRAPPED_LAND_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isLand() &&
-                   target.getCounters(MagicCounterType.Trap) >= 1 &&
-                   target.isController(player);
+                target.getCounters(MagicCounterType.Trap) >= 1 &&
+                target.isController(player);
         }
     };
 
-    public static final MagicPermanentFilterImpl TAPPED_BASIC_LAND=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl TAPPED_BASIC_LAND = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isLand() &&
-                    target.hasType(MagicType.Basic) &&
-                    target.isTapped();
+                target.hasType(MagicType.Basic) &&
+                target.isTapped();
         }
     };
 
@@ -432,105 +436,105 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl LAND = permanent(MagicType.Land, Control.Any);
 
-    public static final MagicPermanentFilterImpl LAND_OR_NONBLACK_CREATURE=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl LAND_OR_NONBLACK_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isLand() || (!target.hasColor(MagicColor.Black) && target.isCreature());
         }
     };
 
-    public static final MagicPermanentFilterImpl NONLAND_CREATURE=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONLAND_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return !target.isLand() && target.isCreature();
         }
     };
 
-    public static final MagicPermanentFilterImpl NONLAND_PERMANENT=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONLAND_PERMANENT = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return !target.isLand();
         }
     };
 
-    public static final MagicPermanentFilterImpl NONLAND_PERMANENT_YOU_CONTROL=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONLAND_PERMANENT_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return !target.isLand() && target.isController(player);
         }
     };
 
 
-    public static final MagicPermanentFilterImpl NONLAND_NONTOKEN_PERMANENT=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONLAND_NONTOKEN_PERMANENT = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return !target.isLand() && !target.isToken();
         }
     };
 
-    public static final MagicPermanentFilterImpl NONTOKEN_PERMANENT_YOU_CONTROL=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONTOKEN_PERMANENT_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isController(player) && !target.isToken();
         }
     };
 
-    public static final MagicPermanentFilterImpl NONTOKEN_PERMANENT=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONTOKEN_PERMANENT = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return !target.isToken();
         }
     };
 
-    public static final MagicPermanentFilterImpl NONTOKEN_ARTIFACT_YOU_CONTROL=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONTOKEN_ARTIFACT_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isController(player) && !target.isToken() && target.hasType(MagicType.Artifact);
         }
     };
 
-    public static final MagicPermanentFilterImpl NONTOKEN_CREATURE_YOU_CONTROL=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONTOKEN_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isController(player) && !target.isToken() && target.isCreature();
         }
     };
 
-    public static final MagicPermanentFilterImpl NONTOKEN_CREATURE_AN_OPPONENT_CONTROLS=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONTOKEN_CREATURE_AN_OPPONENT_CONTROLS = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return !target.isController(player) && !target.isToken() && target.isCreature();
         }
     };
 
-    public static final MagicPermanentFilterImpl FACEUP_NONTOKEN_CREATURE_YOU_CONTROL=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl FACEUP_NONTOKEN_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isController(player) && !target.isToken() && target.isCreature() && target.isFaceDown() == false;
         }
     };
 
-    public static final MagicPermanentFilterImpl NONTOKEN_CREATURE=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONTOKEN_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return !target.isToken() && target.isCreature();
         }
     };
 
-    public static final MagicPermanentFilterImpl NONTOKEN_WHITE_PERMANENT=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONTOKEN_WHITE_PERMANENT = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return !target.isToken() && target.hasColor(MagicColor.White);
         }
     };
 
-    public static final MagicPermanentFilterImpl NONTOKEN_ELF=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONTOKEN_ELF = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return !target.isToken() && target.hasSubType(MagicSubType.Elf);
         }
     };
 
-    public static final MagicPermanentFilterImpl NONTOKEN_RED_PERMANENT=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONTOKEN_RED_PERMANENT = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return !target.isToken() && target.hasColor(MagicColor.Red);
         }
     };
 
-    public static final MagicPermanentFilterImpl NONLAND_PERMANENT_YOUR_OPPONENT_CONTROLS=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONLAND_PERMANENT_YOUR_OPPONENT_CONTROLS = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return !target.isLand() && target.isOpponent(player);
         }
     };
 
-    public static final MagicPermanentFilterImpl NONCREATURE_ARTIFACT=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONCREATURE_ARTIFACT = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isArtifact() && !target.isCreature();
         }
     };
@@ -548,20 +552,20 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl ARTIFACT_OR_CREATURE_YOU_CONTROL = permanentOr(MagicType.Artifact, MagicType.Creature, Control.You);
 
     public static final MagicPermanentFilterImpl ARTIFACT_OR_CREATURE_OR_LAND = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isArtifact() ||
-                   target.isCreature() ||
-                   target.isLand();
+                target.isCreature() ||
+                target.isLand();
         }
     };
 
     public static final MagicPermanentFilterImpl ARTIFACT_OR_CREATURE_OR_LAND_YOU_CONTROL = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isController(player) && (
-                       target.isArtifact() ||
-                       target.isCreature() ||
-                       target.isLand()
-                   );
+                target.isArtifact() ||
+                    target.isCreature() ||
+                    target.isLand()
+            );
         }
     };
 
@@ -575,58 +579,61 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl ARTIFACT_OR_LAND = permanentOr(MagicType.Artifact, MagicType.Land, Control.Any);
 
-    public static final MagicPermanentFilterImpl ARTIFACT_OR_ENCHANTMENT_OR_LAND=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl ARTIFACT_OR_ENCHANTMENT_OR_LAND = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isLand() ||
-                   target.isArtifact() ||
-                   target.isEnchantment();
+                target.isArtifact() ||
+                target.isEnchantment();
         }
     };
 
-    public static final MagicPermanentFilterImpl ARTIFACT_OR_CREATURE_OR_ENCHANTMENT=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl ARTIFACT_OR_CREATURE_OR_ENCHANTMENT = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() ||
-                   target.isArtifact() ||
-                   target.isEnchantment();
+                target.isArtifact() ||
+                target.isEnchantment();
         }
     };
 
     public static final MagicPermanentFilterImpl ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS = permanentOr(MagicType.Artifact, MagicType.Enchantment, Control.Opp);
 
-    public static final MagicPermanentFilterImpl NONCREATURE=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONCREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return !target.isCreature();
         }
     };
 
-    public static final MagicTargetFilterImpl ONE=new MagicTargetFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicTarget target) {
+    public static final MagicTargetFilterImpl ONE = new MagicTargetFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicTarget target) {
             return target == player;
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Player;
+            return targetType == MagicTargetType.Player;
         }
     };
 
-    public static final MagicTargetFilterImpl CREATURE_OR_PLAYER=new MagicTargetFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicTarget target) {
+    public static final MagicTargetFilterImpl CREATURE_OR_PLAYER = new MagicTargetFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicTarget target) {
             return target.isPlayer() ||
-                   target.isCreaturePermanent();
+                target.isCreaturePermanent();
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Permanent ||
-                   targetType==MagicTargetType.Player;
+            return targetType == MagicTargetType.Permanent ||
+                targetType == MagicTargetType.Player;
         }
     };
 
-    public static final MagicTargetFilterImpl SLIVER_CREATURE_OR_PLAYER=new MagicTargetFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicTarget target) {
+    public static final MagicTargetFilterImpl SLIVER_CREATURE_OR_PLAYER = new MagicTargetFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicTarget target) {
             return target.isPlayer() ||
-                   (target.isCreaturePermanent() && target.hasSubType(MagicSubType.Sliver));
+                (target.isCreaturePermanent() && target.hasSubType(MagicSubType.Sliver));
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Permanent ||
-                   targetType==MagicTargetType.Player;
+            return targetType == MagicTargetType.Permanent ||
+                targetType == MagicTargetType.Player;
         }
     };
 
@@ -654,7 +661,7 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl ENCHANTMENT_YOU_CONTROL = permanent(MagicType.Enchantment, Control.You);
 
-    public static final MagicPermanentFilterImpl ENCHANTMENT_YOU_OWN_AND_CONTROL=new MagicPermanentFilterImpl() {
+    public static final MagicPermanentFilterImpl ENCHANTMENT_YOU_OWN_AND_CONTROL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isOwner(player) && target.isController(player) && target.hasType(MagicType.Enchantment);
         }
@@ -663,50 +670,50 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl RED_OR_GREEN_ENCHANTMENT_YOU_CONTROL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isController(player) && target.isEnchantment() &&
-                   (target.hasColor(MagicColor.Red) || target.hasColor(MagicColor.Green));
+                (target.hasColor(MagicColor.Red) || target.hasColor(MagicColor.Green));
         }
     };
 
     public static final MagicPermanentFilterImpl SPIRIT_OR_ENCHANTMENT = permanentOr(MagicType.Enchantment, MagicSubType.Spirit, Control.Any);
 
-    public static final MagicPermanentFilterImpl PERMANENT_YOU_CONTROL=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl PERMANENT_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isController(player);
         }
     };
 
-    public static final MagicPermanentFilterImpl PERMANENT_AN_OPPONENT_CONTROLS=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl PERMANENT_AN_OPPONENT_CONTROLS = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isOpponent(player);
         }
     };
 
-    public static final MagicPermanentFilterImpl UNTAPPED_PERMANENT_AN_OPPONENT_CONTROLS=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl UNTAPPED_PERMANENT_AN_OPPONENT_CONTROLS = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isUntapped() && target.isOpponent(player);
         }
     };
 
-    public static final MagicPermanentFilterImpl PERMANENT_YOU_OWN=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl PERMANENT_YOU_OWN = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isOwner(player);
         }
     };
 
-    public static final MagicPermanentFilterImpl PERMANENT_YOU_OWN_AND_CONTROL=new MagicPermanentFilterImpl() {
+    public static final MagicPermanentFilterImpl PERMANENT_YOU_OWN_AND_CONTROL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isOwner(player) && target.isController(player);
         }
     };
 
-    public static final MagicPermanentFilterImpl PERMANENT_YOU_OWN_OR_CONTROL=new MagicPermanentFilterImpl() {
+    public static final MagicPermanentFilterImpl PERMANENT_YOU_OWN_OR_CONTROL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isOwner(player) || target.isController(player);
         }
     };
 
-    public static final MagicPermanentFilterImpl PERMANENT_FADING_YOU_CONTROL=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl PERMANENT_FADING_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isController(player) && target.hasAbility(MagicAbility.Fading);
         }
     };
@@ -749,67 +756,67 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl SWAMP_YOU_CONTROL = permanent(MagicSubType.Swamp, Control.You);
 
     public static final MagicPermanentFilterImpl CREATURE_TOKEN_YOU_CONTROL = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isController(player) &&
-                   target.isCreature() &&
-                   target.isToken();
+                target.isCreature() &&
+                target.isToken();
         }
     };
 
     public static final MagicPermanentFilterImpl CARIBOU_TOKEN_YOU_CONTROL = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isController(player) &&
-                   target.isCreature() &&
-                   target.isToken() &&
-                   target.hasSubType(MagicSubType.Caribou);
+                target.isCreature() &&
+                target.isToken() &&
+                target.hasSubType(MagicSubType.Caribou);
         }
     };
 
     public static final MagicPermanentFilterImpl CREATURE_TOKEN = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   target.isToken();
+                target.isToken();
         }
     };
 
     public static final MagicPermanentFilterImpl SERF_TOKEN = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.hasSubType(MagicSubType.Serf) &&
-                   target.isToken();
+                target.isToken();
         }
     };
 
-    public static final MagicPermanentFilterImpl CREATURE_THAT_ISNT_ENCHANTED = new MagicPermanentFilterImpl(){
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl CREATURE_THAT_ISNT_ENCHANTED = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() && target.isEnchanted() == false;
         }
     };
 
-    public static final MagicPermanentFilterImpl NON_LEGENDARY_CREATURE=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NON_LEGENDARY_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return !target.hasType(MagicType.Legendary) &&
-                   target.isCreature();
+                target.isCreature();
         }
     };
 
-    public static final MagicPermanentFilterImpl NON_LEGENDARY_CREATURE_YOU_CONTROL=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NON_LEGENDARY_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isController(player) &&
-                   !target.hasType(MagicType.Legendary) &&
-                   target.isCreature();
+                !target.hasType(MagicType.Legendary) &&
+                target.isCreature();
         }
     };
 
-    public static final MagicPermanentFilterImpl NON_LEGENDARY_CREATURE_AN_OPPONENT_CONTROLS=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NON_LEGENDARY_CREATURE_AN_OPPONENT_CONTROLS = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return !target.isController(player) &&
-                   !target.hasType(MagicType.Legendary) &&
-                   target.isCreature();
+                !target.hasType(MagicType.Legendary) &&
+                target.isCreature();
         }
     };
 
     public static final MagicPermanentFilterImpl ONE_ONE_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
                 target.isController(player) &&
                 target.getPower() == 1 &&
@@ -900,52 +907,52 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl LEGENDARY_SNAKE_YOU_CONTROL = creatureAnd(MagicType.Legendary, MagicSubType.Snake, Control.You);
 
     public static final MagicPermanentFilterImpl INSECT_RAT_SPIDER_OR_SQUIRREL = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.hasSubType(MagicSubType.Insect) ||
-                   target.hasSubType(MagicSubType.Rat) ||
-                   target.hasSubType(MagicSubType.Spider) ||
-                   target.hasSubType(MagicSubType.Squirrel);
+                target.hasSubType(MagicSubType.Rat) ||
+                target.hasSubType(MagicSubType.Spider) ||
+                target.hasSubType(MagicSubType.Squirrel);
         }
     };
 
     public static final MagicPermanentFilterImpl SKELETON_VAMPIRE_OR_ZOMBIE = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.hasSubType(MagicSubType.Vampire) ||
-                    target.hasSubType(MagicSubType.Skeleton) ||
-                    target.hasSubType(MagicSubType.Zombie);
+                target.hasSubType(MagicSubType.Skeleton) ||
+                target.hasSubType(MagicSubType.Zombie);
         }
     };
 
     public static final MagicPermanentFilterImpl VAMPIRE_WEREWOLF_OR_ZOMBIE = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.hasSubType(MagicSubType.Vampire) ||
-                    target.hasSubType(MagicSubType.Werewolf) ||
-                    target.hasSubType(MagicSubType.Zombie);
+                target.hasSubType(MagicSubType.Werewolf) ||
+                target.hasSubType(MagicSubType.Zombie);
         }
     };
 
     public static final MagicPermanentFilterImpl NONVAMPIRE_NONWEREWOLF_NONZOMBIE_CREATURE = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   !target.hasSubType(MagicSubType.Vampire) &&
-                   !target.hasSubType(MagicSubType.Werewolf) &&
-                   !target.hasSubType(MagicSubType.Zombie);
+                !target.hasSubType(MagicSubType.Vampire) &&
+                !target.hasSubType(MagicSubType.Werewolf) &&
+                !target.hasSubType(MagicSubType.Zombie);
         }
     };
 
     public static final MagicPermanentFilterImpl BARBARIAN_WARRIOR_BERSERKER_CREATURE = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   (target.hasSubType(MagicSubType.Barbarian) ||
+                (target.hasSubType(MagicSubType.Barbarian) ||
                     target.hasSubType(MagicSubType.Warrior) ||
                     target.hasSubType(MagicSubType.Berserker));
         }
     };
 
     public static final MagicPermanentFilterImpl NONZOMBIE_CREATURE = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   !target.hasSubType(MagicSubType.Zombie);
+                !target.hasSubType(MagicSubType.Zombie);
         }
     };
 
@@ -954,22 +961,22 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl HUMAN_CREATURE = creature(MagicSubType.Human, Control.Any);
 
     public static final MagicPermanentFilterImpl NONENCHANTMENT_CREATURE = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   !target.hasType(MagicType.Enchantment);
+                !target.hasType(MagicType.Enchantment);
         }
     };
 
     public static final MagicPermanentFilterImpl PERMANENT_ENCHANTED = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isEnchanted();
         }
     };
 
     public static final MagicPermanentFilterImpl CREATURE_ENCHANTED = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   target.isEnchanted();
+                target.isEnchanted();
         }
     };
 
@@ -980,10 +987,11 @@ public class MagicTargetFilterFactory {
     };
 
     public static final MagicPermanentFilterImpl ENCHANTED_PERMANENT = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             final MagicPermanent perm = (MagicPermanent)source;
             return perm.getEnchantedPermanent() == target;
         }
+
         @Override
         public boolean isStatic() {
             return true;
@@ -991,10 +999,11 @@ public class MagicTargetFilterFactory {
     };
 
     public static final MagicPermanentFilterImpl ENCHANTED_ARTIFACT = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             final MagicPermanent perm = (MagicPermanent)source;
             return perm.getEnchantedPermanent() == target && target.isArtifact();
         }
+
         @Override
         public boolean isStatic() {
             return true;
@@ -1002,10 +1011,11 @@ public class MagicTargetFilterFactory {
     };
 
     public static final MagicPermanentFilterImpl ENCHANTED_CREATURE = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             final MagicPermanent perm = (MagicPermanent)source;
             return perm.getEnchantedPermanent() == target && target.isCreature();
         }
+
         @Override
         public boolean isStatic() {
             return true;
@@ -1013,10 +1023,11 @@ public class MagicTargetFilterFactory {
     };
 
     public static final MagicPermanentFilterImpl ENCHANTED_LAND = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             final MagicPermanent perm = (MagicPermanent)source;
             return perm.getEnchantedPermanent() == target && target.isLand();
         }
+
         @Override
         public boolean isStatic() {
             return true;
@@ -1028,6 +1039,7 @@ public class MagicTargetFilterFactory {
             final MagicPermanent perm = (MagicPermanent)source;
             return perm.getEquippedCreature() == target && target.isCreature();
         }
+
         @Override
         public boolean isStatic() {
             return true;
@@ -1041,30 +1053,30 @@ public class MagicTargetFilterFactory {
     };
 
     public static final MagicPermanentFilterImpl CREATURE_WITH_ANOTHER_AURA = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             final int amount = source.isPermanent() && source.hasSubType(MagicSubType.Aura) ? 1 : 0;
-            return target.isCreature() && target.getAuraPermanents().size() >= 1+amount;
+            return target.isCreature() && target.getAuraPermanents().size() >= 1 + amount;
         }
     };
 
     public static final MagicPermanentFilterImpl ENCHANTMENT_OR_ENCHANTED_PERMANENT = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isEnchantment() || target.isEnchanted();
         }
     };
 
     public static final MagicPermanentFilterImpl ENCHANTED_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isController(player) &&
-                   target.isCreature() &&
-                   target.isEnchanted();
+                target.isCreature() &&
+                target.isEnchanted();
         }
     };
 
     public static final MagicPermanentFilterImpl ENCHANTED_OR_ENCHANTMENT_CREATURE = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return (target.isCreature() && target.isEnchanted()) ||
-                    (target.isCreature() && target.hasType(MagicType.Enchantment));
+                (target.isCreature() && target.hasType(MagicType.Enchantment));
         }
     };
 
@@ -1114,207 +1126,207 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl TAPPED_LAND = permanent(MagicPermanentState.Tapped, MagicType.Land, Control.Any);
 
-    public static final MagicPermanentFilterImpl TAPPED_NONBLACK_CREATURE=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl TAPPED_NONBLACK_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   target.isTapped() &&
-                   !target.hasColor(MagicColor.Black);
+                target.isTapped() &&
+                !target.hasColor(MagicColor.Black);
         }
     };
 
-    public static final MagicPermanentFilterImpl UNTAPPED_CREATURE=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl UNTAPPED_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   target.isUntapped();
+                target.isUntapped();
         }
     };
 
     public static final MagicPermanentFilterImpl UNTAPPED_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   target.isUntapped() &&
-                   target.isController(player);
+                target.isUntapped() &&
+                target.isController(player);
         }
     };
 
     public static final MagicPermanentFilterImpl UNTAPPED_ISLAND_YOU_CONTROL = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.hasSubType(MagicSubType.Island) &&
-                   target.isUntapped() &&
-                   target.isController(player);
+                target.isUntapped() &&
+                target.isController(player);
         }
     };
 
     public static final MagicPermanentFilterImpl TAPPED_ARTIFACT_CREATURE_AND_LAND_YOU_CONTROL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-            return  target.isController(player) &&
-                    target.isTapped() &&
-                    (target.hasType(MagicType.Artifact) || target.hasType(MagicType.Creature) || target.hasType(MagicType.Land));
+            return target.isController(player) &&
+                target.isTapped() &&
+                (target.hasType(MagicType.Artifact) || target.hasType(MagicType.Creature) || target.hasType(MagicType.Land));
         }
     };
 
     public static final MagicPermanentFilterImpl UNTAPPED_ARTIFACT_CREATURE_OR_LAND_YOU_CONTROL = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isUntapped() &&
-                   target.isController(player) &&
-                   (target.isArtifact() || target.isCreature() || target.isLand());
+                target.isController(player) &&
+                (target.isArtifact() || target.isCreature() || target.isLand());
         }
     };
 
     public static final MagicPermanentFilterImpl ARTIFACT_CREATURE_OR_BLACK_CREATURE = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   (target.isArtifact() || target.hasColor(MagicColor.Black));
+                (target.isArtifact() || target.hasColor(MagicColor.Black));
         }
     };
 
-    public static final MagicPermanentFilterImpl NONWHITE_CREATURE=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONWHITE_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   !target.hasColor(MagicColor.White);
+                !target.hasColor(MagicColor.White);
         }
     };
 
-    public static final MagicPermanentFilterImpl NONWHITE_NONBLACK_CREATURE=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONWHITE_NONBLACK_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
                 !target.hasColor(MagicColor.White) && !target.hasColor(MagicColor.Black);
         }
     };
 
-    public static final MagicPermanentFilterImpl NONGREEN_CREATURE_YOU_CONTROL =new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONGREEN_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   !target.hasColor(MagicColor.Green) &&
-                   target.isController(player);
+                !target.hasColor(MagicColor.Green) &&
+                target.isController(player);
         }
     };
 
-    public static final MagicPermanentFilterImpl NONWHITE_PERMANENT=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONWHITE_PERMANENT = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return !target.hasColor(MagicColor.White);
         }
     };
 
-    public static final MagicPermanentFilterImpl NONBLACK_CREATURE=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONBLACK_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   !target.hasColor(MagicColor.Black);
+                !target.hasColor(MagicColor.Black);
         }
     };
 
-    public static final MagicPermanentFilterImpl NONBLUE_CREATURE=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONBLUE_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   !target.hasColor(MagicColor.Blue);
+                !target.hasColor(MagicColor.Blue);
         }
     };
 
-    public static final MagicPermanentFilterImpl NONGREEN_CREATURE=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONGREEN_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
                 !target.hasColor(MagicColor.Green);
         }
     };
 
-    public static final MagicPermanentFilterImpl NONBLACK_ATTACKING_CREATURE=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONBLACK_ATTACKING_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   !target.hasColor(MagicColor.Black) &&
-                   target.isAttacking();
+                !target.hasColor(MagicColor.Black) &&
+                target.isAttacking();
         }
     };
 
-    public static final MagicPermanentFilterImpl NONRED_CREATURE=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONRED_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   !target.hasColor(MagicColor.Red);
+                !target.hasColor(MagicColor.Red);
         }
     };
 
-    public static final MagicPermanentFilterImpl NONARTIFACT_CREATURE=new MagicPermanentFilterImpl () {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONARTIFACT_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   !target.isArtifact();
+                !target.isArtifact();
         }
     };
 
-    public static final MagicPermanentFilterImpl NONARTIFACT_ATTACKING_CREATURE=new MagicPermanentFilterImpl () {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONARTIFACT_ATTACKING_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   !target.isArtifact() &&
-                   target.isAttacking();
+                !target.isArtifact() &&
+                target.isAttacking();
         }
     };
 
     public static final MagicPermanentFilterImpl NONARTIFACT_NONBLACK_CREATURE = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   !target.isArtifact() &&
-                   !target.hasColor(MagicColor.Black);
+                !target.isArtifact() &&
+                !target.hasColor(MagicColor.Black);
         }
     };
 
     public static final MagicPermanentFilterImpl NONSNOW_CREATURE = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   !target.hasType(MagicType.Snow);
+                !target.hasType(MagicType.Snow);
         }
     };
 
     public static final MagicPermanentFilterImpl NONSNOW_LAND_YOU_CONTROL = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isController(player) &&
-                   target.isLand() &&
-                   !target.hasType(MagicType.Snow);
+                target.isLand() &&
+                !target.hasType(MagicType.Snow);
         }
     };
 
-    public static final MagicPermanentFilterImpl CREATURE_WITHOUT_FLYING=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl CREATURE_WITHOUT_FLYING = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   !target.hasAbility(MagicAbility.Flying);
+                !target.hasAbility(MagicAbility.Flying);
         }
     };
 
-   public static final MagicPermanentFilterImpl CREATURE_WITHOUT_DEFENDER = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl CREATURE_WITHOUT_DEFENDER = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   !target.hasAbility(MagicAbility.Defender);
+                !target.hasAbility(MagicAbility.Defender);
         }
     };
 
-    public static final MagicPermanentFilterImpl CREATURE_WITHOUT_FLYING_YOUR_OPPONENT_CONTROLS =new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl CREATURE_WITHOUT_FLYING_YOUR_OPPONENT_CONTROLS = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   !target.hasAbility(MagicAbility.Flying) &&
-                   target.isOpponent(player);
+                !target.hasAbility(MagicAbility.Flying) &&
+                target.isOpponent(player);
         }
     };
 
-    public static final MagicPermanentFilterImpl ATTACKING_CREATURE_YOUR_OPPONENT_CONTROLS =new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl ATTACKING_CREATURE_YOUR_OPPONENT_CONTROLS = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   target.isAttacking() &&
-                   target.isOpponent(player);
+                target.isAttacking() &&
+                target.isOpponent(player);
         }
     };
 
-    public static final MagicPermanentFilterImpl ATTACKING_CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS =new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl ATTACKING_CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   target.isAttacking() &&
-                   target.hasAbility(MagicAbility.Flying) &&
-                   target.isOpponent(player);
+                target.isAttacking() &&
+                target.hasAbility(MagicAbility.Flying) &&
+                target.isOpponent(player);
         }
     };
 
-    public static final MagicPermanentFilterImpl ATTACKING_CREATURE_WITHOUT_FLYING_YOUR_OPPONENT_CONTROLS =new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl ATTACKING_CREATURE_WITHOUT_FLYING_YOUR_OPPONENT_CONTROLS = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   target.isAttacking() &&
-                   !target.hasAbility(MagicAbility.Flying) &&
-                   target.isOpponent(player);
+                target.isAttacking() &&
+                !target.hasAbility(MagicAbility.Flying) &&
+                target.isOpponent(player);
         }
     };
 
@@ -1339,65 +1351,66 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl CREATURE_WITH_SHADOW = creature(MagicAbility.Shadow, Control.Any);
 
     public static final MagicPermanentFilterImpl CREATURE_WITHOUT_SHADOW = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   !target.hasAbility(MagicAbility.Shadow);
+                !target.hasAbility(MagicAbility.Shadow);
         }
     };
 
     public static final MagicPermanentFilterImpl CREATURE_WITH_FLYING_OR_REACH = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   (target.hasAbility(MagicAbility.Flying) || target.hasAbility(MagicAbility.Reach));
+                (target.hasAbility(MagicAbility.Flying) || target.hasAbility(MagicAbility.Reach));
         }
     };
 
     public static final MagicPermanentFilterImpl CREATURE_WITH_MORPH_ABILITY = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   (target.hasAbility(MagicAbility.Morph) || target.hasAbility(MagicAbility.Megamorph));
+                (target.hasAbility(MagicAbility.Morph) || target.hasAbility(MagicAbility.Megamorph));
         }
     };
 
 
     public static final MagicPermanentFilterImpl CREATURE_WITHOUT_FLYING_OR_ISLANDWALK = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   target.hasAbility(MagicAbility.Flying) == false &&
-                   target.hasAbility(MagicAbility.Islandwalk) == false;
+                target.hasAbility(MagicAbility.Flying) == false &&
+                target.hasAbility(MagicAbility.Islandwalk) == false;
         }
     };
 
     public static final MagicPermanentFilterImpl CREATURE_WITHOUT_FLYING_OR_PLANESWALKER = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
-            return (target.isCreature() &&  target.hasAbility(MagicAbility.Flying) == false) | target.isPlaneswalker();
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+            return (target.isCreature() && target.hasAbility(MagicAbility.Flying) == false) | target.isPlaneswalker();
         }
     };
 
     public static final MagicPermanentFilterImpl BLUE_OR_BLACK_CREATURE_WITH_FLYING = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   target.hasAbility(MagicAbility.Flying) &&
-                   (target.hasColor(MagicColor.Blue) || target.hasColor(MagicColor.Black));
+                target.hasAbility(MagicAbility.Flying) &&
+                (target.hasColor(MagicColor.Blue) || target.hasColor(MagicColor.Black));
         }
     };
 
     public static final MagicPermanentFilterImpl CREATURE_BEEN_DAMAGED = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   target.hasState(MagicPermanentState.WasDealtDamage);
+                target.hasState(MagicPermanentState.WasDealtDamage);
         }
     };
 
     public static final MagicCardFilterImpl CREATURE_WITH_DEATHTOUCH_HEXPROOF_REACH_OR_TRAMPLE_FROM_LIBRARY = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, MagicPlayer player, MagicCard target) {
             return target.hasType(MagicType.Creature) && (
-                        target.hasAbility(MagicAbility.Deathtouch) ||
-                        target.hasAbility(MagicAbility.Hexproof) ||
-                        target.hasAbility(MagicAbility.Reach) ||
-                        target.hasAbility(MagicAbility.Trample)
-                   );
+                target.hasAbility(MagicAbility.Deathtouch) ||
+                    target.hasAbility(MagicAbility.Hexproof) ||
+                    target.hasAbility(MagicAbility.Reach) ||
+                    target.hasAbility(MagicAbility.Trample)
+            );
         }
+
         public boolean acceptType(MagicTargetType targetType) {
             return targetType == MagicTargetType.Library;
         }
@@ -1405,25 +1418,25 @@ public class MagicTargetFilterFactory {
 
 
     public static final MagicPermanentFilterImpl CREATURE_DEFENDING_PLAYER_CONTROLS = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             final MagicGame game = player.getGame();
             return target.isCreature() && target.isController(game.getDefendingPlayer());
         }
     };
 
     public static final MagicPermanentFilterImpl CREATURE_WITHOUT_FLYING_DEFENDING_PLAYER_CONTROLS = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             final MagicGame game = player.getGame();
             return target.isCreature() &&
-                   !target.hasAbility(MagicAbility.Flying) &&
-                   target.isController(game.getDefendingPlayer());
+                !target.hasAbility(MagicAbility.Flying) &&
+                target.isController(game.getDefendingPlayer());
         }
     };
 
-    public static final MagicPermanentFilterImpl CREATURE_CONVERTED_3_OR_LESS=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl CREATURE_CONVERTED_3_OR_LESS = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   target.getConvertedCost() <= 3;
+                target.getConvertedCost() <= 3;
         }
     };
 
@@ -1434,9 +1447,9 @@ public class MagicTargetFilterFactory {
     public static final MagicCardFilterImpl GREEN_CREATURE_CARD_FROM_GRAVEYARD = card(MagicColor.Green).and(MagicType.Creature).from(MagicTargetType.Graveyard);
 
     public static final MagicPermanentFilterImpl CREATURE_CONVERTED_2_OR_LESS = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   target.getConvertedCost() <= 2;
+                target.getConvertedCost() <= 2;
         }
     };
 
@@ -1447,16 +1460,16 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl CREATURE_LEVEL_COUNTER_YOU_CONTROL = creature(MagicCounterType.Level, Control.You);
 
     public static final MagicPermanentFilterImpl CREATURE_AT_LEAST_3_LEVEL_COUNTERS = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   target.getCounters(MagicCounterType.Level) >= 3;
+                target.getCounters(MagicCounterType.Level) >= 3;
         }
     };
 
     public static final MagicPermanentFilterImpl CREATURE_MINSUONE_COUNTER = creature(MagicCounterType.MinusOne, Control.Any);
 
     public static final MagicPermanentFilterImpl CREATURE_WITH_COUNTER = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() && target.hasCounters();
         }
     };
@@ -1470,159 +1483,163 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl BLOCKING_CREATURE_YOU_CONTROL = creature(MagicPermanentState.Blocking, Control.You);
 
     public static final MagicPermanentFilterImpl CREATURE_BLOCKING_SN = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() && target.getBlockedCreature() == source;
         }
     };
 
-    public static final MagicPermanentFilterImpl NONATTACKING_CREATURE=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONATTACKING_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   !target.isAttacking();
+                !target.isAttacking();
         }
     };
 
-    public static final MagicPermanentFilterImpl NONATTACKING_NONBLOCKING_CREATURE=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONATTACKING_NONBLOCKING_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   !target.isAttacking() &&
-                   !target.isBlocking();
+                !target.isAttacking() &&
+                !target.isBlocking();
         }
     };
 
-    public static final MagicPermanentFilterImpl ATTACKING_CREATURE_WITH_FLANKING=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl ATTACKING_CREATURE_WITH_FLANKING = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   target.isAttacking() &&
-                   target.hasAbility(MagicAbility.Flanking);
+                target.isAttacking() &&
+                target.hasAbility(MagicAbility.Flanking);
         }
     };
 
-    public static final MagicPermanentFilterImpl ATTACKING_CREATURE_WITH_FLYING=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl ATTACKING_CREATURE_WITH_FLYING = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   target.isAttacking() &&
-                   target.hasAbility(MagicAbility.Flying);
+                target.isAttacking() &&
+                target.hasAbility(MagicAbility.Flying);
         }
     };
 
-    public static final MagicPermanentFilterImpl ATTACKING_CREATURE_WITH_SHADOW=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl ATTACKING_CREATURE_WITH_SHADOW = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   target.isAttacking() &&
-                   target.hasAbility(MagicAbility.Shadow);
+                target.isAttacking() &&
+                target.hasAbility(MagicAbility.Shadow);
         }
     };
 
-    public static final MagicPermanentFilterImpl ATTACKING_OR_BLOCKING_CREATURE_WITH_FLYING=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl ATTACKING_OR_BLOCKING_CREATURE_WITH_FLYING = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   (target.isAttacking() || target.isBlocking()) &&
-                   target.hasAbility(MagicAbility.Flying);
+                (target.isAttacking() || target.isBlocking()) &&
+                target.hasAbility(MagicAbility.Flying);
         }
     };
 
-    public static final MagicPermanentFilterImpl ATTACKING_CREATURE_WITHOUT_FLYING=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl ATTACKING_CREATURE_WITHOUT_FLYING = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   target.isAttacking() &&
-                   !target.hasAbility(MagicAbility.Flying);
+                target.isAttacking() &&
+                !target.hasAbility(MagicAbility.Flying);
         }
     };
 
-    public static final MagicPermanentFilterImpl ATTACKING_ELF_YOU_CONTROL= creatureAnd(MagicPermanentState.Attacking, MagicSubType.Elf, Control.You);
+    public static final MagicPermanentFilterImpl ATTACKING_ELF_YOU_CONTROL = creatureAnd(MagicPermanentState.Attacking, MagicSubType.Elf, Control.You);
 
-    public static final MagicPermanentFilterImpl ATTACKING_GOBLIN= creatureAnd(MagicPermanentState.Attacking, MagicSubType.Goblin, Control.Any);
+    public static final MagicPermanentFilterImpl ATTACKING_GOBLIN = creatureAnd(MagicPermanentState.Attacking, MagicSubType.Goblin, Control.Any);
 
-    public static final MagicPermanentFilterImpl ATTACKING_HUMAN= creatureAnd(MagicPermanentState.Attacking, MagicSubType.Human, Control.Any);
+    public static final MagicPermanentFilterImpl ATTACKING_HUMAN = creatureAnd(MagicPermanentState.Attacking, MagicSubType.Human, Control.Any);
 
-    public static final MagicPermanentFilterImpl ATTACKING_AUROCHS= creatureAnd(MagicPermanentState.Attacking,MagicSubType.Aurochs,Control.Any);
+    public static final MagicPermanentFilterImpl ATTACKING_AUROCHS = creatureAnd(MagicPermanentState.Attacking, MagicSubType.Aurochs, Control.Any);
 
     public static final MagicPermanentFilterImpl ATTACKING_KAVU = creatureAnd(MagicPermanentState.Attacking, MagicSubType.Kavu, Control.Any);
 
-    public static final MagicPermanentFilterImpl ATTACKING_BEAST= creatureAnd(MagicPermanentState.Attacking,MagicSubType.Beast,Control.Any);
+    public static final MagicPermanentFilterImpl ATTACKING_BEAST = creatureAnd(MagicPermanentState.Attacking, MagicSubType.Beast, Control.Any);
 
-    public static final MagicPermanentFilterImpl ATTACKING_OR_BLOCKING_CREATURE= creatureOr(MagicPermanentState.Attacking, MagicPermanentState.Blocking, Control.Any);
+    public static final MagicPermanentFilterImpl ATTACKING_OR_BLOCKING_CREATURE = creatureOr(MagicPermanentState.Attacking, MagicPermanentState.Blocking, Control.Any);
 
     public static final MagicPermanentFilterImpl ATTACKING_OR_BLOCKING_SPIRIT = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   target.hasSubType(MagicSubType.Spirit) &&
-                   (target.isAttacking() ||
+                target.hasSubType(MagicSubType.Spirit) &&
+                (target.isAttacking() ||
                     target.isBlocking());
         }
     };
 
-    public static final MagicPermanentFilterImpl ATTACKING_OR_BLOCKING_CREATURE_YOU_CONTROL= creatureOr(MagicPermanentState.Attacking, MagicPermanentState.Blocking, Control.You);
+    public static final MagicPermanentFilterImpl ATTACKING_OR_BLOCKING_CREATURE_YOU_CONTROL = creatureOr(MagicPermanentState.Attacking, MagicPermanentState.Blocking, Control.You);
 
-    public static final MagicPermanentFilterImpl WEREWOLF_OR_WOLF_CREATURE_YOU_CONTROL= creatureOr(MagicSubType.Werewolf,MagicSubType.Wolf,Control.You);
+    public static final MagicPermanentFilterImpl WEREWOLF_OR_WOLF_CREATURE_YOU_CONTROL = creatureOr(MagicSubType.Werewolf, MagicSubType.Wolf, Control.You);
 
-    public static final MagicPermanentFilterImpl UNBLOCKED_ATTACKING_CREATURE_YOU_CONTROL=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl UNBLOCKED_ATTACKING_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isController(player) &&
-                   target.isAttacking() &&
-                   target.hasState(MagicPermanentState.Blocked) == false;
+                target.isAttacking() &&
+                target.hasState(MagicPermanentState.Blocked) == false;
         }
     };
 
-    public static final MagicPermanentFilterImpl UNBLOCKED_CREATURE=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl UNBLOCKED_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isAttacking() &&
-                   target.hasState(MagicPermanentState.Blocked) == false;
+                target.hasState(MagicPermanentState.Blocked) == false;
         }
     };
 
-    public static final MagicPermanentFilterImpl KALDRA_EQUIPMENT=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl KALDRA_EQUIPMENT = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isEquipment() &&
-                    (target.isName("Sword of Kaldra") ||
-                     target.isName("Shield of Kaldra") ||
-                     target.isName("Helm of Kaldra"));
+                (target.isName("Sword of Kaldra") ||
+                    target.isName("Shield of Kaldra") ||
+                    target.isName("Helm of Kaldra"));
         }
     };
 
-    public static final MagicPermanentFilterImpl KALDRA_EQUIPMENT_YOU_CONTROL=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl KALDRA_EQUIPMENT_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return KALDRA_EQUIPMENT.accept(source, player, target) && target.isController(player);
         }
     };
 
     public static final MagicPermanentFilterImpl BLOCKED_CREATURE = creature(MagicPermanentState.Blocked, Control.Any);
 
-    public static final MagicCardFilterImpl CARD_FROM_GRAVEYARD=new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+    public static final MagicCardFilterImpl CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return true;
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Graveyard;
         }
     };
 
-    public static final MagicCardFilterImpl COLORLESS_CREATURE_CARD_FROM_LIBRARY=new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+    public static final MagicCardFilterImpl COLORLESS_CREATURE_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return MagicColor.isColorless(target) && target.isCreature();
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Library;
         }
     };
 
-    public static final MagicCardFilterImpl CARD_FROM_LIBRARY=new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+    public static final MagicCardFilterImpl CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return true;
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Library;
         }
     };
 
     public static final MagicCardFilterImpl CARD_FROM_ALL_GRAVEYARDS = new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return true;
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Graveyard ||
-                   targetType == MagicTargetType.OpponentsGraveyard;
+                targetType == MagicTargetType.OpponentsGraveyard;
         }
     };
 
@@ -1633,69 +1650,76 @@ public class MagicTargetFilterFactory {
 
     public static final MagicCardFilterImpl CREATURE_CARD_FROM_LIBRARY = card(MagicType.Creature).from(MagicTargetType.Library);
 
-    public static final MagicCardFilterImpl PAYABLE_CREATURE_CARD_FROM_GRAVEYARD=new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+    public static final MagicCardFilterImpl PAYABLE_CREATURE_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasType(MagicType.Creature) && target.getCost().getCondition().accept(target);
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Graveyard;
+            return targetType == MagicTargetType.Graveyard;
         }
     };
 
-    public static final MagicCardFilterImpl PAYABLE_INSTANT_OR_SORCERY_FROM_GRAVEYARD=new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+    public static final MagicCardFilterImpl PAYABLE_INSTANT_OR_SORCERY_FROM_GRAVEYARD = new MagicCardFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return (target.hasType(MagicType.Instant) || target.hasType(MagicType.Sorcery)) && target.getCost().getCondition().accept(target);
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Graveyard;
+            return targetType == MagicTargetType.Graveyard;
         }
     };
 
     public static final MagicCardFilterImpl CREATURE_CARD_WITH_INFECT_FROM_GRAVEYARD = card(MagicType.Creature).and(MagicAbility.Infect).from(MagicTargetType.Graveyard);
 
     public static final MagicCardFilterImpl PERMANENT_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.isPermanentCard();
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Graveyard;
         }
     };
 
-    public static final MagicCardFilterImpl PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD=new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+    public static final MagicCardFilterImpl PERMANENT_CARD_CMC_LEQ_3_FROM_GRAVEYARD = new MagicCardFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             final MagicCardDefinition cardDefinition = target.getCardDefinition();
             return cardDefinition.getConvertedCost() <= 3 && cardDefinition.isPermanent();
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Graveyard;
+            return targetType == MagicTargetType.Graveyard;
         }
     };
 
-    public static final MagicCardFilterImpl ARTIFACT_CARD_CMC_LEQ_1_FROM_GRAVEYARD=new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+    public static final MagicCardFilterImpl ARTIFACT_CARD_CMC_LEQ_1_FROM_GRAVEYARD = new MagicCardFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.getConvertedCost() <= 1 && target.hasType(MagicType.Artifact);
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Graveyard;
+            return targetType == MagicTargetType.Graveyard;
         }
     };
 
-    public static final MagicCardFilterImpl CREATURE_CARD_CMC_LEQ_2_FROM_GRAVEYARD=new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+    public static final MagicCardFilterImpl CREATURE_CARD_CMC_LEQ_2_FROM_GRAVEYARD = new MagicCardFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.getConvertedCost() <= 2 && target.hasType(MagicType.Creature);
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Graveyard;
+            return targetType == MagicTargetType.Graveyard;
         }
     };
 
-    public static final MagicCardFilterImpl CREATURE_CARD_POWER_LEQ_2_FROM_GRAVEYARD=new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+    public static final MagicCardFilterImpl CREATURE_CARD_POWER_LEQ_2_FROM_GRAVEYARD = new MagicCardFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.getPower() <= 2 && target.hasType(MagicType.Creature);
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Graveyard;
+            return targetType == MagicTargetType.Graveyard;
         }
     };
 
@@ -1722,21 +1746,23 @@ public class MagicTargetFilterFactory {
 
     public static final MagicCardFilterImpl BLUE_OR_RED_CREATURE_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
         public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Graveyard;
+            return targetType == MagicTargetType.Graveyard;
         }
+
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasType(MagicType.Creature) &&
-                   (target.hasColor(MagicColor.Blue) || target.hasColor(MagicColor.Red));
+                (target.hasColor(MagicColor.Blue) || target.hasColor(MagicColor.Red));
         }
     };
 
     public static final MagicCardFilterImpl BLACK_OR_RED_CREATURE_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
         public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Graveyard;
+            return targetType == MagicTargetType.Graveyard;
         }
+
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasType(MagicType.Creature) &&
-                   (target.hasColor(MagicColor.Black) || target.hasColor(MagicColor.Red));
+                (target.hasColor(MagicColor.Black) || target.hasColor(MagicColor.Red));
         }
     };
 
@@ -1749,116 +1775,127 @@ public class MagicTargetFilterFactory {
     public static final MagicCardFilterImpl ARTIFACT_CARD_FROM_GRAVEYARD =
         card(MagicType.Artifact).from(MagicTargetType.Graveyard);
 
-    public static final MagicCardFilterImpl ARTIFACT_CARD_FROM_ALL_GRAVEYARDS=new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+    public static final MagicCardFilterImpl ARTIFACT_CARD_FROM_ALL_GRAVEYARDS = new MagicCardFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasType(MagicType.Artifact);
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Graveyard ||
-                   targetType==MagicTargetType.OpponentsGraveyard;
+            return targetType == MagicTargetType.Graveyard ||
+                targetType == MagicTargetType.OpponentsGraveyard;
         }
     };
 
-    public static final MagicCardFilterImpl NONCREATURE_ARTIFACT_CARD_WITH_CMC_LEQ_1_FROM_GRAVEYARD=new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+    public static final MagicCardFilterImpl NONCREATURE_ARTIFACT_CARD_WITH_CMC_LEQ_1_FROM_GRAVEYARD = new MagicCardFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.getConvertedCost() <= 1 &&
-                   target.hasType(MagicType.Artifact) &&
-                   !target.hasType(MagicType.Creature);
+                target.hasType(MagicType.Artifact) &&
+                !target.hasType(MagicType.Creature);
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Graveyard;
+            return targetType == MagicTargetType.Graveyard;
         }
     };
 
-    public static final MagicCardFilterImpl NONCREATURE_NONLAND_CARD_FROM_GRAVEYARD=new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+    public static final MagicCardFilterImpl NONCREATURE_NONLAND_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return !target.hasType(MagicType.Land) &&
-                   !target.hasType(MagicType.Creature);
+                !target.hasType(MagicType.Creature);
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Graveyard;
+            return targetType == MagicTargetType.Graveyard;
         }
     };
 
-    public static final MagicCardFilterImpl CREATURE_CARD_FROM_ALL_GRAVEYARDS=new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+    public static final MagicCardFilterImpl CREATURE_CARD_FROM_ALL_GRAVEYARDS = new MagicCardFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasType(MagicType.Creature);
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Graveyard ||
-                   targetType==MagicTargetType.OpponentsGraveyard;
+            return targetType == MagicTargetType.Graveyard ||
+                targetType == MagicTargetType.OpponentsGraveyard;
         }
     };
 
-    public static final MagicCardFilterImpl ENCHANTMENT_CARD_FROM_GRAVEYARD=new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+    public static final MagicCardFilterImpl ENCHANTMENT_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasType(MagicType.Enchantment);
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Graveyard;
+            return targetType == MagicTargetType.Graveyard;
         }
     };
 
-    public static final MagicCardFilterImpl ENCHANTMENT_CARD_FROM_ALL_GRAVEYARDS=new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+    public static final MagicCardFilterImpl ENCHANTMENT_CARD_FROM_ALL_GRAVEYARDS = new MagicCardFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasType(MagicType.Enchantment);
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Graveyard ||
-                   targetType==MagicTargetType.OpponentsGraveyard;
+            return targetType == MagicTargetType.Graveyard ||
+                targetType == MagicTargetType.OpponentsGraveyard;
         }
     };
 
-    public static final MagicCardFilterImpl INSTANT_CARD_FROM_ALL_GRAVEYARDS=new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+    public static final MagicCardFilterImpl INSTANT_CARD_FROM_ALL_GRAVEYARDS = new MagicCardFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasType(MagicType.Instant);
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Graveyard ||
-                   targetType==MagicTargetType.OpponentsGraveyard;
+            return targetType == MagicTargetType.Graveyard ||
+                targetType == MagicTargetType.OpponentsGraveyard;
         }
     };
 
-    public static final MagicCardFilterImpl SORCERY_CARD_FROM_ALL_GRAVEYARDS=new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+    public static final MagicCardFilterImpl SORCERY_CARD_FROM_ALL_GRAVEYARDS = new MagicCardFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasType(MagicType.Sorcery);
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Graveyard ||
-                   targetType==MagicTargetType.OpponentsGraveyard;
+            return targetType == MagicTargetType.Graveyard ||
+                targetType == MagicTargetType.OpponentsGraveyard;
         }
     };
 
-    public static final MagicCardFilterImpl INSTANT_OR_SORCERY_CARD_FROM_ALL_GRAVEYARDS=new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+    public static final MagicCardFilterImpl INSTANT_OR_SORCERY_CARD_FROM_ALL_GRAVEYARDS = new MagicCardFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasType(MagicType.Sorcery) || target.hasType(MagicType.Instant);
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Graveyard ||
-                   targetType==MagicTargetType.OpponentsGraveyard;
+            return targetType == MagicTargetType.Graveyard ||
+                targetType == MagicTargetType.OpponentsGraveyard;
         }
     };
 
     public static final MagicCardFilterImpl LAND_CARD_FROM_YOUR_GRAVEYARD = card(MagicType.Land).from(MagicTargetType.Graveyard);
 
-    public static final MagicCardFilterImpl LAND_CARD_FROM_ALL_GRAVEYARDS=new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+    public static final MagicCardFilterImpl LAND_CARD_FROM_ALL_GRAVEYARDS = new MagicCardFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasType(MagicType.Land);
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Graveyard ||
-                   targetType==MagicTargetType.OpponentsGraveyard;
+            return targetType == MagicTargetType.Graveyard ||
+                targetType == MagicTargetType.OpponentsGraveyard;
         }
     };
 
-    public static final MagicCardFilterImpl ARTIFACT_OR_CREATURE_CARD_FROM_ALL_GRAVEYARDS=new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+    public static final MagicCardFilterImpl ARTIFACT_OR_CREATURE_CARD_FROM_ALL_GRAVEYARDS = new MagicCardFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasType(MagicType.Creature) ||
-                   target.hasType(MagicType.Artifact);
+                target.hasType(MagicType.Artifact);
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Graveyard ||
-                   targetType==MagicTargetType.OpponentsGraveyard;
+            return targetType == MagicTargetType.Graveyard ||
+                targetType == MagicTargetType.OpponentsGraveyard;
         }
     };
 
@@ -1866,9 +1903,10 @@ public class MagicTargetFilterFactory {
 
     public static final MagicCardFilterImpl ZOMBIE_CARD_FROM_ALL_GRAVEYARDS = new MagicCardFilterImpl() {
         public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Graveyard ||
-                   targetType==MagicTargetType.OpponentsGraveyard;
+            return targetType == MagicTargetType.Graveyard ||
+                targetType == MagicTargetType.OpponentsGraveyard;
         }
+
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasSubType(MagicSubType.Zombie);
         }
@@ -1880,29 +1918,32 @@ public class MagicTargetFilterFactory {
 
     public static final MagicCardFilterImpl HUMAN_CREATURE_CARD_FROM_GRAVEYARD = card(MagicSubType.Human).and(MagicType.Creature).from(MagicTargetType.Graveyard);
 
-    public static final MagicCardFilterImpl FUNGUS_CARD_FROM_ALL_GRAVEYARDS=new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+    public static final MagicCardFilterImpl FUNGUS_CARD_FROM_ALL_GRAVEYARDS = new MagicCardFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasSubType(MagicSubType.Fungus);
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Graveyard ||
-                   targetType==MagicTargetType.OpponentsGraveyard;
+            return targetType == MagicTargetType.Graveyard ||
+                targetType == MagicTargetType.OpponentsGraveyard;
         }
     };
 
     public static final MagicCardFilterImpl CARD_FROM_HAND = new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return true;
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Hand;
         }
     };
 
     public static final MagicCardFilterImpl INSTANT_LEQ_CMC_2_FROM_HAND = new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.getConvertedCost() <= 2 && target.hasType(MagicType.Instant);
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Hand;
         }
@@ -1917,25 +1958,25 @@ public class MagicTargetFilterFactory {
     public static final MagicCardFilterImpl RED_OR_GREEN_CARD_FROM_HAND = card(MagicColor.Red).or(MagicColor.Green).from(MagicTargetType.Hand);
 
     public static final MagicPermanentFilterImpl MULTICOLORED_PERMANENT = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent permanent) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent permanent) {
             return MagicColor.isMulti(permanent);
         }
     };
 
     public static final MagicPermanentFilterImpl COLORLESS_CREATURE = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-            return  target.isCreature() && MagicColor.isColorless(target);
+            return target.isCreature() && MagicColor.isColorless(target);
         }
     };
 
     public static final MagicPermanentFilterImpl COLORLESS_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-            return  target.isCreature() && MagicColor.isColorless(target) && target.isController(player);
+            return target.isCreature() && MagicColor.isColorless(target) && target.isController(player);
         }
     };
 
     public static final MagicStackFilterImpl COLORLESS_SPELL = new MagicStackFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
             return itemOnStack.isSpell() && MagicColor.isColorless(itemOnStack.getSource());
         }
     };
@@ -1944,78 +1985,81 @@ public class MagicTargetFilterFactory {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return MagicColor.isMulti(target);
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Graveyard;
         }
     };
 
     public static final MagicStackFilterImpl MULTICOLORED_SPELL = new MagicStackFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
             return MagicColor.isMulti(itemOnStack.getSource()) && itemOnStack.isSpell();
         }
     };
 
     public static final MagicPermanentFilterImpl MONOCOLORED_CREATURE = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent permanent) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent permanent) {
             return MagicColor.isMono(permanent) && permanent.isCreature();
         }
     };
 
     public static final MagicPermanentFilterImpl MONOCOLORED_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent permanent) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent permanent) {
             return MagicColor.isMono(permanent) && permanent.isCreature() && permanent.isController(player);
         }
     };
 
     public static final MagicPermanentFilterImpl MULTICOLORED_PERMANENT_YOU_CONTROL = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent permanent) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent permanent) {
             return MagicColor.isMulti(permanent) && permanent.isController(player);
         }
     };
 
     public static final MagicPermanentFilterImpl MULTICOLORED_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent permanent) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent permanent) {
             return MagicColor.isMulti(permanent) && permanent.isCreature() && permanent.isController(player);
         }
     };
 
     public static final MagicPermanentFilterImpl MULTICOLORED_CREATURE = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent permanent) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent permanent) {
             return MagicColor.isMulti(permanent) && permanent.isCreature();
         }
     };
 
     public static final MagicCardFilterImpl MULTICOLORED_CREATURE_CARD_FROM_HAND = new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasType(MagicType.Creature) && MagicColor.isMulti(target);
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Hand;
         }
     };
 
     public static final MagicCardFilterImpl NONCREATURE_CARD_FROM_HAND = new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasType(MagicType.Creature) == false;
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Hand;
         }
     };
 
     public static final MagicPermanentFilterImpl UNTAPPED_LAND_YOU_CONTROL = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isLand() &&
-                   target.isUntapped() &&
-                   target.isController(player);
+                target.isUntapped() &&
+                target.isController(player);
         }
     };
 
     public static final MagicPermanentFilterImpl UNTAPPED_MOUNTAIN_YOU_CONTROL = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.hasSubType(MagicSubType.Mountain) &&
-                   target.isUntapped() &&
-                   target.isController(player);
+                target.isUntapped() &&
+                target.isController(player);
         }
     };
 
@@ -2023,6 +2067,7 @@ public class MagicTargetFilterFactory {
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Graveyard;
         }
+
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasSubType(MagicSubType.Warrior);
         }
@@ -2031,15 +2076,15 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl NONARTIFACT_NONWHITE_CREATURE = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   !target.isArtifact() &&
-                   !target.hasColor(MagicColor.White);
+                !target.isArtifact() &&
+                !target.hasColor(MagicColor.White);
         }
     };
 
     public static final MagicPermanentFilterImpl UNTAPPED_LAND = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isLand() &&
-                   target.isUntapped();
+                target.isUntapped();
         }
     };
 
@@ -2050,31 +2095,31 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl ELF_OR_SOLDIER_CREATURE = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   (target.hasSubType(MagicSubType.Elf) || target.hasSubType(MagicSubType.Soldier));
+                (target.hasSubType(MagicSubType.Elf) || target.hasSubType(MagicSubType.Soldier));
         }
     };
 
     public static final MagicPermanentFilterImpl ELDRAZI_SPAWN_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
-                   target.hasSubType(MagicSubType.Eldrazi) &&
-                   target.hasSubType(MagicSubType.Spawn) &&
-                   target.isController(player);
+                target.hasSubType(MagicSubType.Eldrazi) &&
+                target.hasSubType(MagicSubType.Spawn) &&
+                target.isController(player);
         }
     };
 
     public static final MagicPermanentFilterImpl ELDRAZI_SPAWN_YOU_CONTROL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.hasSubType(MagicSubType.Eldrazi) &&
-                   target.hasSubType(MagicSubType.Spawn) &&
-                   target.isController(player);
+                target.hasSubType(MagicSubType.Spawn) &&
+                target.isController(player);
         }
     };
 
     public static final MagicPermanentFilterImpl ELDRAZI_SCION = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.hasSubType(MagicSubType.Eldrazi) &&
-                   target.hasSubType(MagicSubType.Scion);
+                target.hasSubType(MagicSubType.Scion);
         }
     };
 
@@ -2089,11 +2134,12 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl ARTIFACT_LAND = permanentAnd(MagicType.Artifact, MagicType.Land, Control.Any);
 
     public static final MagicCardFilterImpl ARTIFACT_OR_CREATURE_OR_LAND_CARD_FROM_HAND = new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasType(MagicType.Artifact) ||
-                   target.hasType(MagicType.Creature) ||
-                   target.hasType(MagicType.Land);
+                target.hasType(MagicType.Creature) ||
+                target.hasType(MagicType.Land);
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
             return targetType == MagicTargetType.Hand;
         }
@@ -2105,36 +2151,38 @@ public class MagicTargetFilterFactory {
 
     public static final MagicCardFilterImpl permanentCardMaxCMC(final MagicSubType subtype, final MagicTargetType from, final int cmc) {
         return new MagicCardFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
                 return target.isPermanentCard() &&
-                       target.hasSubType(subtype) &&
-                       target.getConvertedCost() <= cmc;
+                    target.hasSubType(subtype) &&
+                    target.getConvertedCost() <= cmc;
             }
+
             public boolean acceptType(final MagicTargetType targetType) {
                 return targetType == from;
             }
         };
     }
 
-    public static final MagicPermanentFilterImpl NONARTIFACT_PERMANENT=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NONARTIFACT_PERMANENT = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return !target.isArtifact();
         }
     };
 
-    public static final MagicPermanentFilterImpl NON_AURA_ENCHANTMENT=new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+    public static final MagicPermanentFilterImpl NON_AURA_ENCHANTMENT = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return !target.isAura() && target.isEnchantment();
         }
     };
 
     public static final MagicCardFilterImpl permanentCardMaxCMC(final MagicType type, final MagicTargetType from, final int cmc) {
         return new MagicCardFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
                 return target.isPermanentCard() &&
-                       target.hasType(type) &&
-                       target.getConvertedCost() <= cmc;
+                    target.hasType(type) &&
+                    target.getConvertedCost() <= cmc;
             }
+
             public boolean acceptType(final MagicTargetType targetType) {
                 return targetType == from;
             }
@@ -2143,11 +2191,12 @@ public class MagicTargetFilterFactory {
 
     public static final MagicCardFilterImpl permanentCardMinCMC(final MagicType type, final MagicTargetType from, final int cmc) {
         return new MagicCardFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
                 return target.isPermanentCard() &&
-                       target.hasType(type) &&
-                       target.getConvertedCost() >= cmc;
+                    target.hasType(type) &&
+                    target.getConvertedCost() >= cmc;
             }
+
             public boolean acceptType(final MagicTargetType targetType) {
                 return targetType == from;
             }
@@ -2159,12 +2208,13 @@ public class MagicTargetFilterFactory {
     public static final MagicCardFilterImpl BASIC_LAND_CARD_FROM_LIBRARY = card(MagicType.Basic).and(MagicType.Land).from(MagicTargetType.Library);
 
     public static final MagicCardFilterImpl BASIC_LAND_CARD_FROM_ALL_GRAVEYARDS = new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasType(MagicType.Land) && target.hasType(MagicType.Basic);
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Graveyard ||
-                   targetType==MagicTargetType.OpponentsGraveyard;
+            return targetType == MagicTargetType.Graveyard ||
+                targetType == MagicTargetType.OpponentsGraveyard;
         }
     };
 
@@ -2172,132 +2222,141 @@ public class MagicTargetFilterFactory {
 
     public static final MagicCardFilterImpl BASIC_LAND_CARD_OR_GATE_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
         public boolean acceptType(MagicTargetType targetType) {
-            return targetType==MagicTargetType.Library;
+            return targetType == MagicTargetType.Library;
         }
+
         public boolean accept(final MagicSource source, MagicPlayer player, MagicCard target) {
             return (target.hasType(MagicType.Basic) && target.hasType(MagicType.Land)) ||
-                    target.hasSubType(MagicSubType.Gate);
+                target.hasSubType(MagicSubType.Gate);
         }
     };
 
     public static final MagicCardFilterImpl BASIC_FOREST_PLAINS_OR_ISLAND_FROM_LIBRARY = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, MagicPlayer player, MagicCard target) {
             return target.hasType(MagicType.Basic) && (
-                    target.hasSubType(MagicSubType.Forest) ||
+                target.hasSubType(MagicSubType.Forest) ||
                     target.hasSubType(MagicSubType.Plains) ||
                     target.hasSubType(MagicSubType.Island)
-                   );
+            );
         }
+
         public boolean acceptType(MagicTargetType targetType) {
-            return targetType==MagicTargetType.Library;
+            return targetType == MagicTargetType.Library;
         }
     };
 
     public static final MagicCardFilterImpl BASIC_PLAINS_ISLAND_OR_SWAMP_FROM_LIBRARY = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, MagicPlayer player, MagicCard target) {
             return target.hasType(MagicType.Basic) && (
-                    target.hasSubType(MagicSubType.Plains) ||
+                target.hasSubType(MagicSubType.Plains) ||
                     target.hasSubType(MagicSubType.Island) ||
                     target.hasSubType(MagicSubType.Swamp)
-                   );
+            );
         }
+
         public boolean acceptType(MagicTargetType targetType) {
-            return targetType==MagicTargetType.Library;
+            return targetType == MagicTargetType.Library;
         }
     };
 
     public static final MagicCardFilterImpl BASIC_ISLAND_SWAMP_OR_MOUNTAIN_FROM_LIBRARY = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, MagicPlayer player, MagicCard target) {
             return target.hasType(MagicType.Basic) && (
-                    target.hasSubType(MagicSubType.Island) ||
+                target.hasSubType(MagicSubType.Island) ||
                     target.hasSubType(MagicSubType.Swamp) ||
                     target.hasSubType(MagicSubType.Mountain)
-                   );
+            );
         }
+
         public boolean acceptType(MagicTargetType targetType) {
-            return targetType==MagicTargetType.Library;
+            return targetType == MagicTargetType.Library;
         }
     };
 
     public static final MagicCardFilterImpl BASIC_SWAMP_MOUNTAIN_OR_FOREST_FROM_LIBRARY = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, MagicPlayer player, MagicCard target) {
             return target.hasType(MagicType.Basic) && (
-                    target.hasSubType(MagicSubType.Swamp) ||
+                target.hasSubType(MagicSubType.Swamp) ||
                     target.hasSubType(MagicSubType.Mountain) ||
                     target.hasSubType(MagicSubType.Forest)
-                   );
+            );
         }
+
         public boolean acceptType(MagicTargetType targetType) {
-            return targetType==MagicTargetType.Library;
+            return targetType == MagicTargetType.Library;
         }
     };
 
     public static final MagicCardFilterImpl BASIC_MOUNTAIN_FOREST_OR_PLAINS_FROM_LIBRARY = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, MagicPlayer player, MagicCard target) {
             return target.hasType(MagicType.Basic) && (
-                    target.hasSubType(MagicSubType.Mountain) ||
+                target.hasSubType(MagicSubType.Mountain) ||
                     target.hasSubType(MagicSubType.Forest) ||
                     target.hasSubType(MagicSubType.Plains)
-                   );
+            );
         }
+
         public boolean acceptType(MagicTargetType targetType) {
-            return targetType==MagicTargetType.Library;
+            return targetType == MagicTargetType.Library;
         }
     };
 
     public static final MagicCardFilterImpl PLAINS_ISLAND_SWAMP_OR_MOUNTAIN_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasSubType(MagicSubType.Plains) ||
-                   target.hasSubType(MagicSubType.Island) ||
-                   target.hasSubType(MagicSubType.Swamp)  ||
-                   target.hasSubType(MagicSubType.Mountain);
+                target.hasSubType(MagicSubType.Island) ||
+                target.hasSubType(MagicSubType.Swamp) ||
+                target.hasSubType(MagicSubType.Mountain);
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Library;
+            return targetType == MagicTargetType.Library;
         }
     };
 
     public static final MagicCardFilterImpl INSTANT_OR_FLASH_CARD_FROM_LIBRARY = card(MagicType.Instant).or(MagicAbility.Flash).from(MagicTargetType.Library);
 
     public static final MagicCardFilterImpl LAND_CARD_WITH_BASIC_LAND_TYPE_FROM_LIBRARY = new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasSubType(MagicSubType.Plains) ||
-                   target.hasSubType(MagicSubType.Island) ||
-                   target.hasSubType(MagicSubType.Swamp)  ||
-                   target.hasSubType(MagicSubType.Forest) ||
-                   target.hasSubType(MagicSubType.Mountain);
+                target.hasSubType(MagicSubType.Island) ||
+                target.hasSubType(MagicSubType.Swamp) ||
+                target.hasSubType(MagicSubType.Forest) ||
+                target.hasSubType(MagicSubType.Mountain);
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Library;
+            return targetType == MagicTargetType.Library;
         }
     };
 
-    public static final MagicCardFilterImpl NON_LEGENDARY_GREEN_CREATURE_CARD_WITH_CMC_LEQ_3_FROM_LIBRARY= new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+    public static final MagicCardFilterImpl NON_LEGENDARY_GREEN_CREATURE_CARD_WITH_CMC_LEQ_3_FROM_LIBRARY = new MagicCardFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasType(MagicType.Creature) &&
                 target.hasType(MagicType.Legendary) == false &&
                 target.hasColor(MagicColor.Green) &&
                 target.getConvertedCost() <= 3;
         }
+
         public boolean acceptType(final MagicTargetType targetType) {
-            return targetType==MagicTargetType.Library;
+            return targetType == MagicTargetType.Library;
         }
     };
 
     public static final MagicPermanentFilterImpl UNPAIRED_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isController(player) &&
-                   target.isCreature() &&
-                   !target.isPaired();
+                target.isCreature() &&
+                !target.isPaired();
         }
     };
 
     public static final MagicPermanentFilterImpl UNPAIRED_SOULBOND_CREATURE = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isController(player) &&
-                   target.isCreature() &&
-                   target.hasAbility(MagicAbility.Soulbond) &&
-                   !target.isPaired();
+                target.isCreature() &&
+                target.hasAbility(MagicAbility.Soulbond) &&
+                !target.isPaired();
         }
     };
 
@@ -2415,8 +2474,8 @@ public class MagicTargetFilterFactory {
         @Override
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.hasColor(MagicColor.White) &&
-                    target.isCreature() &&
-                    target.getPower() >= 2;
+                target.isCreature() &&
+                target.getPower() >= 2;
         }
     };
 
@@ -2481,7 +2540,7 @@ public class MagicTargetFilterFactory {
         single.put("instant card with converted mana cost 2 or less from your hand", INSTANT_LEQ_CMC_2_FROM_HAND);
         single.put("red or green card from your hand", RED_OR_GREEN_CARD_FROM_HAND);
         single.put("basic land card from your hand", BASIC_LAND_CARD_FROM_HAND);
-        single.put("artifact, creature, or land card from your hand", ARTIFACT_OR_CREATURE_OR_LAND_CARD_FROM_HAND );
+        single.put("artifact, creature, or land card from your hand", ARTIFACT_OR_CREATURE_OR_LAND_CARD_FROM_HAND);
 
         // <color|type|subtype> permanent card from your hand
 
@@ -2630,8 +2689,8 @@ public class MagicTargetFilterFactory {
         single.put("artifact creature or black creature", ARTIFACT_CREATURE_OR_BLACK_CREATURE);
         single.put("nonartifact attacking creature", NONARTIFACT_ATTACKING_CREATURE);
         single.put("land or nonblack creature", LAND_OR_NONBLACK_CREATURE);
-        single.put("red or green creature",RED_OR_GREEN_CREATURE);
-        single.put("red or white creature",RED_OR_WHITE_CREATURE);
+        single.put("red or green creature", RED_OR_GREEN_CREATURE);
+        single.put("red or white creature", RED_OR_WHITE_CREATURE);
         single.put("tapped creature", TAPPED_CREATURE);
         single.put("untapped creature", UNTAPPED_CREATURE);
         single.put("face-down creature", FACE_DOWN_CREATURE);
@@ -2670,7 +2729,7 @@ public class MagicTargetFilterFactory {
         single.put("blue or black creature with flying", BLUE_OR_BLACK_CREATURE_WITH_FLYING);
         single.put("creature without flying", CREATURE_WITHOUT_FLYING);
         single.put("creature without defender", CREATURE_WITHOUT_DEFENDER);
-        single.put("creature with defender",  CREATURE_WITH_DEFENDER);
+        single.put("creature with defender", CREATURE_WITH_DEFENDER);
         single.put("creature with a morph ability", CREATURE_WITH_MORPH_ABILITY);
         single.put("creature with horsemanship", CREATURE_WITH_HORSEMANSHIP);
         single.put("creature with islandwalk", CREATURE_WITH_ISLANDWALK);
@@ -2734,7 +2793,7 @@ public class MagicTargetFilterFactory {
         single.put("nonbasic land you control", NONBASIC_LAND_YOU_CONTROL);
         single.put("land with a trap counter on it you control", TRAPPED_LAND_YOU_CONTROL);
         single.put("Forest or Plains you control", FOREST_OR_PLAINS_YOU_CONTROL);
-        single.put("artifact, creature, or land you control",ARTIFACT_OR_CREATURE_OR_LAND_YOU_CONTROL);
+        single.put("artifact, creature, or land you control", ARTIFACT_OR_CREATURE_OR_LAND_YOU_CONTROL);
         single.put("creature or enchantment you control", CREATURE_OR_ENCHANTMENT_YOU_CONTROL);
         single.put("creature or land you control", CREATURE_OR_LAND_YOU_CONTROL);
         single.put("creature token you control", CREATURE_TOKEN_YOU_CONTROL);
@@ -2807,7 +2866,7 @@ public class MagicTargetFilterFactory {
         single.put("permanent you own or control", PERMANENT_YOU_OWN_OR_CONTROL);
         single.put("Insect, Rat, Spider, or Squirrel", INSECT_RAT_SPIDER_OR_SQUIRREL);
         single.put("Vampire, Werewolf, or Zombie", VAMPIRE_WEREWOLF_OR_ZOMBIE);
-        single.put("attacking or blocking Spirit",  ATTACKING_OR_BLOCKING_SPIRIT);
+        single.put("attacking or blocking Spirit", ATTACKING_OR_BLOCKING_SPIRIT);
         single.put("basic land", BASIC_LAND);
         single.put("nonbasic land", NONBASIC_LAND);
         single.put("non-Swamp land", NON_SWAMP_LAND);
@@ -2820,7 +2879,7 @@ public class MagicTargetFilterFactory {
         single.put("artifact or enchantment with converted mana cost 3 or less", ARTIFACT_OR_ENCHANTMENT_CMC_3_OR_LESS);
         single.put("artifact, enchantment, or land", ARTIFACT_OR_ENCHANTMENT_OR_LAND);
         single.put("artifact, creature, or land", ARTIFACT_OR_CREATURE_OR_LAND);
-        single.put("artifact, creature, or enchantment",ARTIFACT_OR_CREATURE_OR_ENCHANTMENT);
+        single.put("artifact, creature, or enchantment", ARTIFACT_OR_CREATURE_OR_ENCHANTMENT);
         single.put("enchantment or land", ENCHANTMENT_OR_LAND);
         single.put("enchanted creature or enchantment creature", ENCHANTED_OR_ENCHANTMENT_CREATURE);
         single.put("noncreature artifact", NONCREATURE_ARTIFACT);
@@ -3081,6 +3140,7 @@ public class MagicTargetFilterFactory {
         }
         throw new RuntimeException("unknown target filter \"" + arg + "\"");
     }
+
     public static MagicTargetFilter<MagicItemOnStack> matchSpellPrefix(final String arg, final String prefix) {
         for (final MagicColor c : MagicColor.values()) {
             if (prefix.equalsIgnoreCase(c.getName())) {
@@ -3155,7 +3215,7 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl untapped(final MagicTargetFilter<MagicPermanent> filter) {
         return new MagicPermanentFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isUntapped() && filter.accept(source, player, target);
             }
         };
@@ -3163,7 +3223,7 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl tapped(final MagicTargetFilter<MagicPermanent> filter) {
         return new MagicPermanentFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isTapped() && filter.accept(source, player, target);
             }
         };
@@ -3173,9 +3233,9 @@ public class MagicTargetFilterFactory {
         return new MagicPermanentFilterImpl() {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isName(name) &&
-                   ((control == Control.You && target.isController(player)) ||
-                    (control == Control.Opp && target.isOpponent(player)) ||
-                    (control == Control.Any)
+                    ((control == Control.You && target.isController(player)) ||
+                        (control == Control.Opp && target.isOpponent(player)) ||
+                        (control == Control.Any)
                     );
             }
         };
@@ -3185,9 +3245,9 @@ public class MagicTargetFilterFactory {
         return new MagicPermanentFilterImpl() {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isName(name) && !target.isToken() &&
-                   ((control == Control.You && target.isController(player)) ||
-                    (control == Control.Opp && target.isOpponent(player)) ||
-                    (control == Control.Any)
+                    ((control == Control.You && target.isController(player)) ||
+                        (control == Control.Opp && target.isOpponent(player)) ||
+                        (control == Control.Any)
                     );
             }
         };
@@ -3198,8 +3258,8 @@ public class MagicTargetFilterFactory {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isName(name) == false &&
                     ((control == Control.You && target.isController(player)) ||
-                     (control == Control.Opp && target.isOpponent(player)) ||
-                     (control == Control.Any)
+                        (control == Control.Opp && target.isOpponent(player)) ||
+                        (control == Control.Any)
                     );
             }
         };
@@ -3209,10 +3269,10 @@ public class MagicTargetFilterFactory {
         return new MagicPermanentFilterImpl() {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isName(name) &&
-                       target.isCreature() &&
-                   ((control == Control.You && target.isController(player)) ||
-                    (control == Control.Opp && target.isOpponent(player)) ||
-                    (control == Control.Any)
+                    target.isCreature() &&
+                    ((control == Control.You && target.isController(player)) ||
+                        (control == Control.Opp && target.isOpponent(player)) ||
+                        (control == Control.Any)
                     );
             }
         };
@@ -3226,12 +3286,12 @@ public class MagicTargetFilterFactory {
         return permanentOr(type, type, own);
     }
 
-    public static final MagicPermanentFilterImpl permanent(final MagicPermanentState state, final MagicType type, final Control control) {;
+    public static final MagicPermanentFilterImpl permanent(final MagicPermanentState state, final MagicType type, final Control control) {
         return new MagicPermanentFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.hasType(type) &&
-                       target.hasState(state) &&
-                       ((control == Control.You && target.isController(player)) ||
+                    target.hasState(state) &&
+                    ((control == Control.You && target.isController(player)) ||
                         (control == Control.Opp && target.isOpponent(player)) ||
                         (control == Control.Any));
             }
@@ -3240,9 +3300,9 @@ public class MagicTargetFilterFactory {
 
     private static MagicPermanentFilterImpl permanentOr(final MagicType type1, final MagicType type2, final Own own) {
         return new MagicPermanentFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.hasType(type1) && target.hasType(type2) &&
-                       ((own == Own.You && target.isOwner(player)) ||
+                    ((own == Own.You && target.isOwner(player)) ||
                         (own == Own.Opp && target.isOwner(player.getOpponent())) ||
                         (own == Own.Any));
             }
@@ -3251,9 +3311,9 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl permanentAnd(final MagicType type1, final MagicType type2, final Control control) {
         return new MagicPermanentFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.hasType(type1) && target.hasType(type2) &&
-                       ((control == Control.You && target.isController(player)) ||
+                    ((control == Control.You && target.isController(player)) ||
                         (control == Control.Opp && target.isOpponent(player)) ||
                         (control == Control.Any));
             }
@@ -3262,9 +3322,9 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl permanentAnd(final MagicType type, final MagicSubType subType, final Control control) {
         return new MagicPermanentFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.hasType(type) && target.hasSubType(subType) &&
-                       ((control == Control.You && target.isController(player)) ||
+                    ((control == Control.You && target.isController(player)) ||
                         (control == Control.Opp && target.isOpponent(player)) ||
                         (control == Control.Any));
             }
@@ -3273,9 +3333,9 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl permanentOr(final MagicType type1, final MagicType type2, final Control control) {
         return new MagicPermanentFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return (target.hasType(type1) || target.hasType(type2)) &&
-                       ((control == Control.You && target.isController(player)) ||
+                    ((control == Control.You && target.isController(player)) ||
                         (control == Control.Opp && target.isOpponent(player)) ||
                         (control == Control.Any));
             }
@@ -3284,9 +3344,9 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl permanentOr(final MagicSubType subType1, final MagicSubType subType2, final Control control) {
         return new MagicPermanentFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return (target.hasSubType(subType1) || target.hasSubType(subType2)) &&
-                       ((control == Control.You && target.isController(player)) ||
+                    ((control == Control.You && target.isController(player)) ||
                         (control == Control.Opp && target.isOpponent(player)) ||
                         (control == Control.Any));
             }
@@ -3295,9 +3355,9 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl permanentOr(final MagicType type, final MagicSubType subType, final Control control) {
         return new MagicPermanentFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return (target.hasType(type) || target.hasSubType(subType)) &&
-                       ((control == Control.You && target.isController(player)) ||
+                    ((control == Control.You && target.isController(player)) ||
                         (control == Control.Opp && target.isOpponent(player)) ||
                         (control == Control.Any));
             }
@@ -3306,9 +3366,9 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl permanentOr(final MagicColor color1, final MagicColor color2, final Control control) {
         return new MagicPermanentFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return (target.hasColor(color1) || target.hasColor(color2)) &&
-                       ((control == Control.You && target.isController(player)) ||
+                    ((control == Control.You && target.isController(player)) ||
                         (control == Control.Opp && target.isOpponent(player)) ||
                         (control == Control.Any));
             }
@@ -3318,171 +3378,195 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl permanent(final MagicColor color, final Control control) {
         return permanentOr(color, color, control);
     }
+
     public static final MagicPermanentFilterImpl permanent(final MagicSubType subType, final Control control) {
         return permanentOr(subType, subType, control);
     }
+
     public static final MagicPermanentFilterImpl creature(final MagicCounterType counter, final Control control) {
-        return  new MagicPermanentFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+        return new MagicPermanentFilterImpl() {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isCreature() &&
-                       target.hasCounters(counter) &&
-                       ((control == Control.You && target.isController(player)) ||
+                    target.hasCounters(counter) &&
+                    ((control == Control.You && target.isController(player)) ||
                         (control == Control.Opp && target.isOpponent(player)) ||
                         (control == Control.Any));
             }
         };
-    };
+    }
+
+    ;
+
     public static final MagicPermanentFilterImpl creature(final MagicColor color, final Control control) {
         return creatureOr(color, color, control);
     }
+
     public static final MagicPermanentFilterImpl creature(final MagicType type, final Control control) {
         return new MagicPermanentFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isCreature() &&
-                       target.hasType(type) &&
-                       ((control == Control.You && target.isController(player)) ||
+                    target.hasType(type) &&
+                    ((control == Control.You && target.isController(player)) ||
                         (control == Control.Opp && target.isOpponent(player)) ||
                         (control == Control.Any));
             }
         };
     }
+
     public static final MagicPermanentFilterImpl creature(final MagicSubType subtype, final Control control) {
         return new MagicPermanentFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isCreature() &&
-                       target.hasSubType(subtype) &&
-                       ((control == Control.You && target.isController(player)) ||
+                    target.hasSubType(subtype) &&
+                    ((control == Control.You && target.isController(player)) ||
                         (control == Control.Opp && target.isOpponent(player)) ||
                         (control == Control.Any));
             }
         };
     }
+
     public static final MagicPermanentFilterImpl creatureNon(final MagicSubType subtype, final Control control) {
         return new MagicPermanentFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isCreature() &&
-                       (target.hasSubType(subtype) == false) &&
-                       ((control == Control.You && target.isController(player)) ||
+                    (target.hasSubType(subtype) == false) &&
+                    ((control == Control.You && target.isController(player)) ||
                         (control == Control.Opp && target.isOpponent(player)) ||
                         (control == Control.Any));
             }
         };
     }
+
     public static final MagicPermanentFilterImpl creatureOr(final MagicColor color1, final MagicColor color2, final Control control) {
         return new MagicPermanentFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isCreature() &&
-                       (target.hasColor(color1) || target.hasColor(color2)) &&
-                       ((control == Control.You && target.isController(player)) ||
+                    (target.hasColor(color1) || target.hasColor(color2)) &&
+                    ((control == Control.You && target.isController(player)) ||
                         (control == Control.Opp && target.isOpponent(player)) ||
                         (control == Control.Any));
             }
         };
     }
+
     public static final MagicPermanentFilterImpl creatureOr(final MagicSubType subType1, final MagicSubType subType2, final Control control) {
         return new MagicPermanentFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isCreature() &&
-                       (target.hasSubType(subType1) || target.hasSubType(subType2)) &&
-                       ((control == Control.You && target.isController(player)) ||
+                    (target.hasSubType(subType1) || target.hasSubType(subType2)) &&
+                    ((control == Control.You && target.isController(player)) ||
                         (control == Control.Opp && target.isOpponent(player)) ||
                         (control == Control.Any));
             }
         };
     }
+
     public static final MagicPermanentFilterImpl creatureOr(final MagicPermanentState state1, final MagicPermanentState state2, final Control control) {
         return new MagicPermanentFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isCreature() &&
-                       (target.hasState(state1) || target.hasState(state2)) &&
-                       ((control == Control.You && target.isController(player)) ||
+                    (target.hasState(state1) || target.hasState(state2)) &&
+                    ((control == Control.You && target.isController(player)) ||
                         (control == Control.Opp && target.isOpponent(player)) ||
                         (control == Control.Any));
             }
         };
     }
+
     public static final MagicPermanentFilterImpl creatureAnd(final MagicPermanentState state, final MagicSubType subType, final Control control) {
         return new MagicPermanentFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isCreature() &&
-                       (target.hasState(state) && target.hasSubType(subType)) &&
-                       ((control == Control.You && target.isController(player)) ||
+                    (target.hasState(state) && target.hasSubType(subType)) &&
+                    ((control == Control.You && target.isController(player)) ||
                         (control == Control.Opp && target.isOpponent(player)) ||
                         (control == Control.Any));
             }
         };
     }
+
     public static final MagicPermanentFilterImpl creatureAnd(final MagicType type, final MagicSubType subType, final Control control) {
         return new MagicPermanentFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isCreature() &&
-                       (target.hasType(type) && target.hasSubType(subType)) &&
-                       ((control == Control.You && target.isController(player)) ||
+                    (target.hasType(type) && target.hasSubType(subType)) &&
+                    ((control == Control.You && target.isController(player)) ||
                         (control == Control.Opp && target.isOpponent(player)) ||
                         (control == Control.Any));
             }
         };
     }
+
     public static final MagicPermanentFilterImpl creature(final MagicAbility ability, final Control control) {
         return new MagicPermanentFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicPermanent target) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isCreature() &&
-                       target.hasAbility(ability) &&
-                       ((control == Control.You && target.isController(player)) ||
+                    target.hasAbility(ability) &&
+                    ((control == Control.You && target.isController(player)) ||
                         (control == Control.Opp && target.isOpponent(player)) ||
                         (control == Control.Any));
             }
         };
     }
+
     public static final MagicPermanentFilterImpl creature(final MagicPermanentState state, final Control control) {
         return permanent(state, MagicType.Creature, control);
     }
 
     public static final MagicCardFilterImpl card() {
         return new MagicCardFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
                 return true;
             }
+
             public boolean acceptType(final MagicTargetType targetType) {
                 return false;
             }
         };
     }
+
     public static final MagicCardFilterImpl card(final MagicType type) {
         return new MagicCardFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
                 return target.hasType(type);
             }
+
             public boolean acceptType(final MagicTargetType targetType) {
                 return false;
             }
         };
     }
+
     public static final MagicCardFilterImpl card(final MagicSubType subType) {
         return new MagicCardFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
                 return target.hasSubType(subType);
             }
+
             public boolean acceptType(final MagicTargetType targetType) {
                 return false;
             }
         };
     }
+
     public static final MagicCardFilterImpl card(final MagicColor color) {
         return new MagicCardFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
                 return target.hasColor(color);
             }
+
             public boolean acceptType(final MagicTargetType targetType) {
                 return false;
             }
         };
     }
+
     public static final MagicCardFilterImpl cardName(final String name) {
         return new MagicCardFilterImpl() {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
                 return target.getName().equalsIgnoreCase(name);
             }
+
             public boolean acceptType(MagicTargetType targetType) {
                 return false;
             }
@@ -3492,62 +3576,69 @@ public class MagicTargetFilterFactory {
 
     public static final MagicStackFilterImpl spell(final MagicColor color) {
         return new MagicStackFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
                 return itemOnStack.isSpell() && itemOnStack.hasColor(color);
             }
         };
     }
+
     public static final MagicStackFilterImpl spell(final MagicType type) {
         return new MagicStackFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
                 return itemOnStack.isSpell(type);
             }
         };
     }
+
     public static final MagicStackFilterImpl spell(final MagicSubType subType) {
         return new MagicStackFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
                 return itemOnStack.isSpell(subType);
             }
         };
     }
+
     public static final MagicStackFilterImpl spellOr(final MagicType type1, final MagicType type2) {
         return new MagicStackFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
                 return itemOnStack.isSpell(type1) || itemOnStack.isSpell(type2);
             }
         };
     }
+
     public static final MagicStackFilterImpl spellOr(final MagicType type1, final MagicType type2, final Control control) {
         return new MagicStackFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
                 final MagicPlayer controller = itemOnStack.getController();
                 return (itemOnStack.isSpell(type1) || itemOnStack.isSpell(type2)) &&
-                        ((control == Control.You && controller == player) ||
-                         (control == Control.Opp && controller != player) ||
-                         (control == Control.Any));
+                    ((control == Control.You && controller == player) ||
+                        (control == Control.Opp && controller != player) ||
+                        (control == Control.Any));
             }
         };
     }
+
     public static final MagicStackFilterImpl spellOr(final MagicType type, final MagicSubType subType) {
         return new MagicStackFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
                 return itemOnStack.isSpell(type) || itemOnStack.isSpell(subType);
             }
         };
     }
+
     public static final MagicStackFilterImpl spellOr(final MagicSubType subType1, final MagicSubType subType2) {
         return new MagicStackFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
                 return itemOnStack.isSpell(subType1) || itemOnStack.isSpell(subType2);
             }
         };
     }
+
     public static final MagicStackFilterImpl spellOr(final MagicColor color1, final MagicColor color2) {
         return new MagicStackFilterImpl() {
-            public boolean accept(final MagicSource source,final MagicPlayer player,final MagicItemOnStack itemOnStack) {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
                 return itemOnStack.isSpell() &&
-                       (itemOnStack.hasColor(color1) || itemOnStack.hasColor(color2));
+                    (itemOnStack.hasColor(color1) || itemOnStack.hasColor(color2));
             }
         };
     }
