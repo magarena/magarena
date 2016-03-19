@@ -45,7 +45,7 @@ public class TitleFrame {
             //in reverse order
             for (int i = manaCost.size() - 1; i >= 0; i--) {
                 ImageIcon mana = MagicImages.getBigManaIcon(manaCost.get(i));
-                Image manaSymbol = ResourceManager.resizeMana(mana);
+                Image manaSymbol = resizeMana(mana);
                 x -= manaSymbol.getWidth(null);
                 int size = manaSymbol.getWidth(null) - 2; //shadow size
                 Shape shadow = new Ellipse2D.Double(x, y, size, size);
@@ -101,13 +101,22 @@ public class TitleFrame {
             }
             g2d.setFont(cardNameFont);
             FontMetrics metrics = g2d.getFontMetrics(); //to allow calculation of Ascent + length
-            int xPos = 56;
             int yPos = 32;
             if (cardDef.isPlaneswalker()) {
                 yPos = 24;
             }
+            int xPos = 56;
             g2d.drawString(cardName, xPos, yPos + metrics.getAscent());
             g2d.dispose();
         }
+    }
+
+    private static Image resizeMana(ImageIcon mana) {
+        BufferedImage newImage = new BufferedImage(19, 19, BufferedImage.TYPE_INT_ARGB);
+        Graphics2D graphics2D = newImage.createGraphics();
+        graphics2D.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BICUBIC);
+        graphics2D.drawImage(mana.getImage(), 0, 0, 18, 18, null);
+        graphics2D.dispose();
+        return newImage;
     }
 }

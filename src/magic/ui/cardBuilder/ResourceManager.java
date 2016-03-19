@@ -1,9 +1,6 @@
 package magic.ui.cardBuilder;
 
 import java.awt.Font;
-import java.awt.Graphics2D;
-import java.awt.Image;
-import java.awt.RenderingHints;
 import java.awt.font.TextAttribute;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -12,7 +9,6 @@ import java.util.Hashtable;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import javax.imageio.ImageIO;
-import javax.swing.ImageIcon;
 
 import magic.ui.utility.GraphicsUtils;
 
@@ -244,10 +240,7 @@ public class ResourceManager {
         }
     }
 
-    public static void initialize() {
-    }
-
-    public static InputStream getJarResourceStream(String filename) {
+    private static InputStream getJarResourceStream(String filename) {
         return instance.getClass().getResourceAsStream(filename);
     }
 
@@ -269,7 +262,7 @@ public class ResourceManager {
         return font;
     }
 
-    public static BufferedImage getComponent(String imageName) {
+    private static BufferedImage getComponent(String imageName) {
         String fName = FRAMES_FOLDER + imageName;
         try (final InputStream is = getJarResourceStream(fName)) {
             return GraphicsUtils.getOptimizedImage(ImageIO.read(is));
@@ -285,15 +278,6 @@ public class ResourceManager {
         } catch (IOException ex) {
             throw new RuntimeException(ex);
         }
-    }
-
-    public static Image resizeMana(ImageIcon mana) {
-        BufferedImage newImage = new BufferedImage(19, 19, BufferedImage.TYPE_INT_ARGB);
-        Graphics2D graphics2D = newImage.createGraphics();
-        graphics2D.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BICUBIC);
-        graphics2D.drawImage(mana.getImage(), 0, 0, 18, 18, null);
-        graphics2D.dispose();
-        return newImage;
     }
 
     public static BufferedImage newFrame(BufferedImage bi) {
