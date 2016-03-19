@@ -53,9 +53,9 @@ public enum MagicTargetFilterParser {
             return MagicTargetFilterFactory.creatureName(ARG.any(arg), Control.Any);
         }
     },
-    LandNamed("land named " + ARG.ANY) {
+    LandYouControlNamed("land you control named " + ARG.ANY) {
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
-            return MagicTargetFilterFactory.landName(ARG.any(arg), Control.Any);
+            return MagicTargetFilterFactory.landName(ARG.any(arg), Control.You);
         }
     },
     PermanentCardGraveyard(ARG.WORDRUN + " permanent card from your graveyard") {
