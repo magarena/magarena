@@ -297,7 +297,7 @@ public final class MagicImages {
         return true;
     }
 
-    public static BufferedImage geCardImageUseCache(MagicCardDefinition aCard) {
+    public static BufferedImage getCardImageUseCache(MagicCardDefinition aCard) {
         int key = aCard.getIndex();
         if (cache.containsKey(key)) {
             return cache.get(key);
