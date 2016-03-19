@@ -3277,6 +3277,15 @@ public class MagicTargetFilterFactory {
         };
     }
 
+    public static final MagicPermanentFilterImpl landName(final String name, final Control control) {
+        return new MagicPermanentFilterImpl() {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+                return target.isName(name) &&
+                    target.isLand() && control.matches(player, target);
+            }
+        };
+    }
+
     public static final MagicPermanentFilterImpl permanent(final MagicType type, final Control control) {
         return permanentOr(type, type, control);
     }

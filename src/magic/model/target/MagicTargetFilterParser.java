@@ -1,11 +1,10 @@
 package magic.model.target;
 
-import magic.model.ARG;
-import magic.model.target.MagicTargetFilterFactory;
-import magic.model.target.MagicTargetFilterFactory.Control;
-
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import magic.model.ARG;
+import magic.model.target.MagicTargetFilterFactory.Control;
 
 public enum MagicTargetFilterParser {
 
@@ -52,6 +51,11 @@ public enum MagicTargetFilterParser {
     CreatureNamed("creature named " + ARG.ANY) {
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
             return MagicTargetFilterFactory.creatureName(ARG.any(arg), Control.Any);
+        }
+    },
+    LandNamed("land named " + ARG.ANY) {
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return MagicTargetFilterFactory.landName(ARG.any(arg), Control.Any);
         }
     },
     PermanentCardGraveyard(ARG.WORDRUN + " permanent card from your graveyard") {
