@@ -3204,7 +3204,19 @@ public class MagicTargetFilterFactory {
     public enum Control {
         Any,
         You,
-        Opp
+        Opp;
+
+        boolean matches(MagicPlayer player, MagicPermanent target) {
+            switch (this) {
+                case Any:
+                    return true;
+                case You:
+                    return target.isController(player);
+                case Opp:
+                    return target.isOpponent(player);
+            }
+            return false;
+        }
     }
 
     enum Own {
@@ -3232,11 +3244,7 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl permanentName(final String name, final Control control) {
         return new MagicPermanentFilterImpl() {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-                return target.isName(name) &&
-                    ((control == Control.You && target.isController(player)) ||
-                        (control == Control.Opp && target.isOpponent(player)) ||
-                        (control == Control.Any)
-                    );
+                return target.isName(name) && control.matches(player, target);
             }
         };
     }
@@ -3245,10 +3253,7 @@ public class MagicTargetFilterFactory {
         return new MagicPermanentFilterImpl() {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isName(name) && !target.isToken() &&
-                    ((control == Control.You && target.isController(player)) ||
-                        (control == Control.Opp && target.isOpponent(player)) ||
-                        (control == Control.Any)
-                    );
+                    control.matches(player, target);
             }
         };
     }
@@ -3257,10 +3262,7 @@ public class MagicTargetFilterFactory {
         return new MagicPermanentFilterImpl() {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isName(name) == false &&
-                    ((control == Control.You && target.isController(player)) ||
-                        (control == Control.Opp && target.isOpponent(player)) ||
-                        (control == Control.Any)
-                    );
+                    control.matches(player, target);
             }
         };
     }
@@ -3270,10 +3272,7 @@ public class MagicTargetFilterFactory {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isName(name) &&
                     target.isCreature() &&
-                    ((control == Control.You && target.isController(player)) ||
-                        (control == Control.Opp && target.isOpponent(player)) ||
-                        (control == Control.Any)
-                    );
+                    control.matches(player, target);
             }
         };
     }
@@ -3291,9 +3290,7 @@ public class MagicTargetFilterFactory {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.hasType(type) &&
                     target.hasState(state) &&
-                    ((control == Control.You && target.isController(player)) ||
-                        (control == Control.Opp && target.isOpponent(player)) ||
-                        (control == Control.Any));
+                    control.matches(player,target);
             }
         };
     }
@@ -3313,9 +3310,7 @@ public class MagicTargetFilterFactory {
         return new MagicPermanentFilterImpl() {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.hasType(type1) && target.hasType(type2) &&
-                    ((control == Control.You && target.isController(player)) ||
-                        (control == Control.Opp && target.isOpponent(player)) ||
-                        (control == Control.Any));
+                    control.matches(player,target);
             }
         };
     }
@@ -3324,9 +3319,7 @@ public class MagicTargetFilterFactory {
         return new MagicPermanentFilterImpl() {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.hasType(type) && target.hasSubType(subType) &&
-                    ((control == Control.You && target.isController(player)) ||
-                        (control == Control.Opp && target.isOpponent(player)) ||
-                        (control == Control.Any));
+                    control.matches(player,target);
             }
         };
     }
@@ -3335,9 +3328,7 @@ public class MagicTargetFilterFactory {
         return new MagicPermanentFilterImpl() {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return (target.hasType(type1) || target.hasType(type2)) &&
-                    ((control == Control.You && target.isController(player)) ||
-                        (control == Control.Opp && target.isOpponent(player)) ||
-                        (control == Control.Any));
+                    control.matches(player,target);
             }
         };
     }
@@ -3346,9 +3337,7 @@ public class MagicTargetFilterFactory {
         return new MagicPermanentFilterImpl() {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return (target.hasSubType(subType1) || target.hasSubType(subType2)) &&
-                    ((control == Control.You && target.isController(player)) ||
-                        (control == Control.Opp && target.isOpponent(player)) ||
-                        (control == Control.Any));
+                   control.matches(player,target);
             }
         };
     }
@@ -3357,9 +3346,7 @@ public class MagicTargetFilterFactory {
         return new MagicPermanentFilterImpl() {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return (target.hasType(type) || target.hasSubType(subType)) &&
-                    ((control == Control.You && target.isController(player)) ||
-                        (control == Control.Opp && target.isOpponent(player)) ||
-                        (control == Control.Any));
+                    control.matches(player,target);
             }
         };
     }
@@ -3368,9 +3355,7 @@ public class MagicTargetFilterFactory {
         return new MagicPermanentFilterImpl() {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return (target.hasColor(color1) || target.hasColor(color2)) &&
-                    ((control == Control.You && target.isController(player)) ||
-                        (control == Control.Opp && target.isOpponent(player)) ||
-                        (control == Control.Any));
+                    control.matches(player,target);
             }
         };
     }
@@ -3388,9 +3373,7 @@ public class MagicTargetFilterFactory {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isCreature() &&
                     target.hasCounters(counter) &&
-                    ((control == Control.You && target.isController(player)) ||
-                        (control == Control.Opp && target.isOpponent(player)) ||
-                        (control == Control.Any));
+                   control.matches(player,target);
             }
         };
     }
@@ -3406,9 +3389,7 @@ public class MagicTargetFilterFactory {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isCreature() &&
                     target.hasType(type) &&
-                    ((control == Control.You && target.isController(player)) ||
-                        (control == Control.Opp && target.isOpponent(player)) ||
-                        (control == Control.Any));
+                    control.matches(player,target);
             }
         };
     }
@@ -3418,9 +3399,7 @@ public class MagicTargetFilterFactory {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isCreature() &&
                     target.hasSubType(subtype) &&
-                    ((control == Control.You && target.isController(player)) ||
-                        (control == Control.Opp && target.isOpponent(player)) ||
-                        (control == Control.Any));
+                    control.matches(player,target);
             }
         };
     }
@@ -3430,9 +3409,7 @@ public class MagicTargetFilterFactory {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isCreature() &&
                     (target.hasSubType(subtype) == false) &&
-                    ((control == Control.You && target.isController(player)) ||
-                        (control == Control.Opp && target.isOpponent(player)) ||
-                        (control == Control.Any));
+                    control.matches(player,target);
             }
         };
     }
@@ -3442,9 +3419,7 @@ public class MagicTargetFilterFactory {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isCreature() &&
                     (target.hasColor(color1) || target.hasColor(color2)) &&
-                    ((control == Control.You && target.isController(player)) ||
-                        (control == Control.Opp && target.isOpponent(player)) ||
-                        (control == Control.Any));
+                   control.matches(player,target);
             }
         };
     }
@@ -3454,9 +3429,7 @@ public class MagicTargetFilterFactory {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isCreature() &&
                     (target.hasSubType(subType1) || target.hasSubType(subType2)) &&
-                    ((control == Control.You && target.isController(player)) ||
-                        (control == Control.Opp && target.isOpponent(player)) ||
-                        (control == Control.Any));
+                    control.matches(player,target);
             }
         };
     }
@@ -3466,9 +3439,7 @@ public class MagicTargetFilterFactory {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isCreature() &&
                     (target.hasState(state1) || target.hasState(state2)) &&
-                    ((control == Control.You && target.isController(player)) ||
-                        (control == Control.Opp && target.isOpponent(player)) ||
-                        (control == Control.Any));
+                    control.matches(player,target);
             }
         };
     }
@@ -3478,9 +3449,7 @@ public class MagicTargetFilterFactory {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isCreature() &&
                     (target.hasState(state) && target.hasSubType(subType)) &&
-                    ((control == Control.You && target.isController(player)) ||
-                        (control == Control.Opp && target.isOpponent(player)) ||
-                        (control == Control.Any));
+                    control.matches(player, target);
             }
         };
     }
@@ -3489,10 +3458,8 @@ public class MagicTargetFilterFactory {
         return new MagicPermanentFilterImpl() {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isCreature() &&
-                    (target.hasType(type) && target.hasSubType(subType)) &&
-                    ((control == Control.You && target.isController(player)) ||
-                        (control == Control.Opp && target.isOpponent(player)) ||
-                        (control == Control.Any));
+                    target.hasType(type) && target.hasSubType(subType) &&
+                    control.matches(player, target);
             }
         };
     }
@@ -3502,9 +3469,7 @@ public class MagicTargetFilterFactory {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return target.isCreature() &&
                     target.hasAbility(ability) &&
-                    ((control == Control.You && target.isController(player)) ||
-                        (control == Control.Opp && target.isOpponent(player)) ||
-                        (control == Control.Any));
+                    control.matches(player, target);
             }
         };
     }
@@ -3642,4 +3607,5 @@ public class MagicTargetFilterFactory {
             }
         };
     }
+
 }
