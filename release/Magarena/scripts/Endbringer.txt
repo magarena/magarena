@@ -7,9 +7,9 @@ type=Creature
 subtype=Eldrazi
 cost={5}{C}
 pt=5/5
-ability=Untap SN during each other player's untap step.;\
-        {T}: SN deals 1 damage to target creature or player.;\
+ability={T}: SN deals 1 damage to target creature or player.;\
         {C}, {T}: Target creature can't attack or block this turn.;\
         {C}{C}, {T}: Draw a card.
 timing=main
+requires_groovy_code
 oracle=Untap Endbringer during each other player's untap step.\n{T}: Endbringer deals 1 damage to target creature or player.\n{C}, {T}: Target creature can't attack or block this turn.\n{C}{C}, {T}: Draw a card.
