@@ -77,13 +77,15 @@ melvin
 neoedmund
 ShawnieBoy
 
-    up to commit a664d03790f4353b66c5dde26d07070f504ed8c9
+    up to commit 4cdc6699699c47c876f938cc02e77cefe786434c
 
     russian translation update.
     show M logo on black background on startup.
     display deck stats & description in select decks screen sidebar.
     consolidate card type and color distribution stats into single fixed-size StatsTable (closes #692).
     move location of themes from "mods" to "themes" folder.
+    exile is compulsory for updated madness, fixes #728
+    add "download images on demand" setting.
 
 - added the following to the card script:
     add Investigate eventAction
@@ -106,6 +108,8 @@ ShawnieBoy
     fix: Scarwood Bandits should keep control of artifact if control changes
     always include 'another' restriction when cost is '{T}, Tap <permanent>', fixes #715
     fixes #718 : Firemind top decks with Æ are not being parsed correctly.
+    fix: Jace the Mind Sculptor, would reveal the card looked at in the may choice fixes #727
+    fixes #731 : main menu overlays the M logo prematurely on startup.
 
 Release 1.70 (February 7, 2016)
 ============
