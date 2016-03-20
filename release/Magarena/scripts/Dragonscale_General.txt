@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Warrior
 cost={3}{W}
 pt=2/3
-ability=At the beginning of your end step, bolster X, where X is the number of tapped creatures you control.
 timing=main
+requires_groovy_code
 oracle=At the beginning of your end step, bolster X, where X is the number of tapped creatures you control.
