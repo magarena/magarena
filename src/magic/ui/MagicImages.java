@@ -62,7 +62,7 @@ public final class MagicImages {
     private static final Map<String, PlayerAvatar> avatarsMap = new HashMap<>();
 
     private static final int MAX_IMAGES = 100;
-    private static final Map<Integer, BufferedImage> cache = new magic.data.LRUCache<>(MAX_IMAGES);
+    private static final Map<String, BufferedImage> cache = new magic.data.LRUCache<>(MAX_IMAGES);
 
     /**
      * Gets preferred viewing size for a card image based on preset setting in preferences.
@@ -298,7 +298,7 @@ public final class MagicImages {
     }
 
     public static BufferedImage getCardImage(MagicCardDefinition aCard) {
-        final int key = aCard.getIndex();
+        final String key = aCard.getDistinctName();
         if (cache.containsKey(key)) {
             return cache.get(key);
         }
