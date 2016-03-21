@@ -191,7 +191,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
             aCard = MagicCardDefinition.UNKNOWN;
         }
 
-        BufferedImage image = MagicImages.getOrigSizeCardImage(aCard);
+        BufferedImage image = MagicImages.getCardImageUseCache(aCard);
 
         if (image.getWidth() != prefSize.width || image.getHeight() != prefSize.height) {
             image = GraphicsUtils.scale(image, prefSize.width, prefSize.height);
