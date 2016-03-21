@@ -58,13 +58,13 @@ public class CardViewerInfo {
     }
 
     public BufferedImage getImage() {
-        return MagicImages.getCardImageUseCache(frontFace);
+        return MagicImages.getCardImage(frontFace);
     }
 
     public BufferedImage getBackFaceImage() {
         return backFace == MagicCardDefinition.UNKNOWN
             ? MagicImages.BACK_IMAGE
-            : MagicImages.getCardImageUseCache(backFace);
+            : MagicImages.getCardImage(backFace);
     }
 
     public MagicLocationType getLocation() {

@@ -249,7 +249,7 @@ public final class MagicImages {
         }
     }
 
-    public static BufferedImage getOrigSizeCardImage(MagicCardDefinition aCard) {
+    private static BufferedImage getOrigSizeCardImage(MagicCardDefinition aCard) {
 
         if (aCard == null || aCard == MagicCardDefinition.UNKNOWN) {
             return getMissingCardImage();
@@ -297,7 +297,7 @@ public final class MagicImages {
         return true;
     }
 
-    public static BufferedImage getCardImageUseCache(MagicCardDefinition aCard) {
+    public static BufferedImage getCardImage(MagicCardDefinition aCard) {
         int key = aCard.getIndex();
         if (cache.containsKey(key)) {
             return cache.get(key);

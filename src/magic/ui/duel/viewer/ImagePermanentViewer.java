@@ -270,7 +270,7 @@ public class ImagePermanentViewer extends JPanel {
             final int y2 = y1 + linkedRect.height - 1;
 
             final BufferedImage image = GraphicsUtils.scale(
-                MagicImages.getCardImageUseCache(linkedInfo.cardDefinition),
+                MagicImages.getCardImage(linkedInfo.cardDefinition),
                 linkedInfo.tapped ? linkedRect.height : linkedRect.width,
                 linkedInfo.tapped ? linkedRect.width : linkedRect.height
             );
