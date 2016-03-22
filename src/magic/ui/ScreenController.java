@@ -189,7 +189,11 @@ public final class ScreenController {
     }
 
     public static void showAboutDialog() {
-        showScreen(new AboutScreen());
+        if (screens.peek() instanceof AboutScreen) {
+            // already open, do nothing
+        } else {
+            showScreen(new AboutScreen());
+        }
     }
 
     public static void showDownloadImagesScreen() {
