@@ -1,3 +1,5 @@
+def EFFECT = MagicRuleEventAction.create("Each creature you control with a +1/+1 counter on it gains trample until end of turn.");
+
 [
     new MagicSpellCardEvent() {
         @Override
@@ -5,7 +7,7 @@
             return new MagicEvent(
                 cardOnStack,
                 this,
-                "PN Bolsters X, where X is the number of cards in PN's hand. "+
+                "PN bolsters X, where X is the number of cards in PN's hand. "+
                 "Each creature PN controls with a +1/+1 counter on it gains trample until end of turn."
             );
         }
@@ -18,10 +20,8 @@
             CREATURE_YOU_CONTROL.filter(event) each {
                 minToughness = Math.min(minToughness, it.getToughnessValue());
             }
-            game.addFirstEvent(new MagicBolsterEvent(event.getSource(), player, amount, minToughness));
-            CREATURE_PLUSONE_COUNTER_YOU_CONTROL.filter(player) each {
-                game.doAction(new GainAbilityAction(it, MagicAbility.Trample));
-            }
+            game.addEvent(new MagicBolsterEvent(event.getSource(), player, amount, minToughness));
+            game.addEvent(EFFECT.getEvent(event.getSource(), player, MagicEvent.NO_REF));
         }
     }
 ]
