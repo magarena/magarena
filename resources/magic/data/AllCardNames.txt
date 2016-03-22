@@ -2370,6 +2370,7 @@ Commune with Lava
 Commune with Nature
 Commune with the Gods
 Comparative Analysis
+Compelling Deterrence
 Complete Disregard
 Complex Automaton
 Complicate
@@ -3763,6 +3764,7 @@ Edge of the Divinity
 Edgewalker
 Edric, Spymaster of Trest
 Eel Umbra
+Eerie Interlude
 Eerie Procession
 Efreet Weaponmaster
 Ego Erasure
@@ -8238,6 +8240,7 @@ Mindstorm Crown
 Mindswipe
 Mindwarper
 Mindwhip Sliver
+Mindwrack Demon
 Mindwrack Liege
 Mine Bearer
 Mine Excavation
@@ -9758,6 +9761,7 @@ Pontiff of Blight
 Ponyback Brigade
 Pooling Venom
 Porcelain Legionnaire
+Pore Over the Pages
 Porphyry Nodes
 Port Inspector
 Portcullis
@@ -13698,11 +13702,13 @@ Tomoya the Revealer
 Tonic Peddler
 Tooth and Claw
 Tooth and Nail
+Tooth Collector
 Tooth of Chiss-Goria
 Tooth of Ramos
 Topan Ascetic
 Topan Freeblade
 Topple
+Topplegeist
 Tor Giant
 Tor Wauki
 Torch Drake
