@@ -45,7 +45,7 @@ public class CaptionPanel extends JPanel {
         btn.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                ScreenController.showAboutDialog();
+                ScreenController.showAboutScreen();
             }
         });
         return btn;

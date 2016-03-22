@@ -188,7 +188,7 @@ public final class ScreenController {
         showScreen(new ImportScreen());
     }
 
-    public static void showAboutDialog() {
+    public static void showAboutScreen() {
         if (screens.peek() instanceof AboutScreen) {
             // already open, do nothing
         } else {

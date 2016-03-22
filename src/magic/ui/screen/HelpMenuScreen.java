@@ -70,7 +70,7 @@ public class HelpMenuScreen extends AbstractScreen {
         menu.addMenuItem(UiString.get(_S5), new AbstractAction() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                ScreenController.showAboutDialog();
+                ScreenController.showAboutScreen();
             }
         });
         menu.addBlankItem();
