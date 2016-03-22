@@ -34,7 +34,7 @@ def ExileCard = {
             return new MagicEvent(
                 source,
                 this,
-                "PN draws a card, then exiles a card from his or her hand."
+                "PN draws a card, then exiles a card from his or her hand face down."
             );
         }
 
@@ -46,7 +46,7 @@ def ExileCard = {
                 A_CARD_FROM_HAND,
                 MagicGraveyardTargetPicker.ExileOwn,
                 ExileCard,
-                "PN exiles a card\$ from his or her hand."
+                "PN exiles a card from his or her hand face down."
             ));
         }
     },
@@ -68,7 +68,7 @@ def ExileCard = {
                 permanent,
                 new MagicFromCardListChoice(permanent.getExiledCards(),1),
                 this,
-                "PN returns a card\$ exiled with Bane Alley Broker to its owner's hand."
+                "PN returns a card exiled with Bane Alley Broker to its owner's hand."
             );
         }
         @Override
