@@ -5,9 +5,12 @@ import java.util.ArrayList;
 import java.util.stream.Collectors;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
+import magic.translate.UiString;
 import magic.utility.DeckUtils;
 
 public abstract class MagicFormat {
+
+    private static final String _S1 = "All cards";
 
     public abstract String getName();
 
@@ -40,14 +43,10 @@ public abstract class MagicFormat {
         return true;
     }
 
-    //
-    // static members
-    //
-
     public static final MagicFormat ALL = new MagicFormat() {
         @Override
         public String getName() {
-            return "All";
+            return UiString.get(_S1);
         }
 
         @Override
