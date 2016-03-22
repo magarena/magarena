@@ -193,6 +193,7 @@ public final class ScreenController {
             // already open, do nothing
         } else {
             showScreen(new AboutScreen());
+            getMainFrame().getGlassPane().setVisible(false);
         }
     }
 
