@@ -1,4 +1,5 @@
 Aberrant Researcher
+Always Watching
 Angel of Deliverance
 Anguished Unmaking
 Archangel Avacyn
@@ -13,9 +14,14 @@ Behold the Beyond
 Brain in a Jar
 Breakneck Rider
 Briarbridge Patrol
+Burn from Within
 Bygone Bishop
+Call the Bloodline
+Choked Estuary
 Clip Wings
 Compelling Deterrence
+Confirm Suspicions
+Corrupted Grafstone
 Crow of Dark Tidings
 Dance with Devils
 Daring Sleuth
@@ -31,6 +37,7 @@ Duskwatch Recruiter
 Eerie Interlude
 Elusive Tormentor
 Ember-Eye Wolf
+Engulf the Shore
 Epiphany at the Drownyard
 Explosive Apparatus
 Expose Evil
@@ -38,10 +45,13 @@ Falkenrath Gorger
 Farbog Revenant
 Fiery Temper
 Flameblade Angel
+Foreboding Ruins
 Foresaken Sanctuary
 Forest
+Fortified Village
 Foul Orchard
 Furtive Homunculus
+Game Trail
 Geralf's Masterpiece
 Gibbering Fiend
 Groundskeeper
@@ -55,6 +65,7 @@ Incorrigible Youths
 Indulgent Aristocrat
 Insidious Mist
 Invasive Surgery
+Invocation of Saint Traft
 Island
 Jace's Scrutiny
 Jace, Unraveler of Secrets
@@ -91,6 +102,7 @@ Pieces of the Puzzle
 Pious Evangel
 Plains
 Pore Over the Pages
+Port Town
 Quilled Wolf
 Rattlechains
 Ravenous Bloodseeker
@@ -104,6 +116,7 @@ Shamble Back
 Shard of Broken Glass
 Sigarda, Heron's Grace
 Silverfur Partisan
+Sin Prodder
 Sinister Concoction
 Sorin, Grim Nemesis
 Soul Swallower
@@ -119,12 +132,14 @@ Thalia's Lieutenant
 Thing in the Ice
 Thraben Inspector
 Timber Shredder
+Tireless Tracker
 To the Slaughter
 Tooth Collector
 Topplegeist
 Trail of Evidence
 Traverse the Ulvenwald
 Twins of Maurer Estate
+Ulvenwald Mysteries
 Vessel of Volatility
 Village Messenger
 Voldaren Duelist
