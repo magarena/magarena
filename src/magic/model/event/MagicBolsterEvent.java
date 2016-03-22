@@ -22,17 +22,17 @@ public class MagicBolsterEvent extends MagicEvent {
             ))
         );
 
-    public MagicBolsterEvent(final MagicSource source, final MagicPlayer player, final int amount, final int minToughness) {
+    public MagicBolsterEvent(final MagicEvent event, final int amount) {
         super(
-            source,
-            player,
+            event.getSource(),
+            event.getPlayer(),
             new MagicTargetChoice(
                 new MagicPTTargetFilter(
                     MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
                     Operator.ANY,
                     0,
                     Operator.EQUAL,
-                    minToughness
+                    computeMinToughness(event)
                 ),
                 "a creature with least toughness among creatures you control"
             ),
@@ -40,5 +40,13 @@ public class MagicBolsterEvent extends MagicEvent {
             EVENT_ACTION,
             "PN puts RN +1/+1 counters on creature$ with least toughness among creatures he or she control."
         );
+    }
+
+    private static int computeMinToughness(final MagicEvent event) {
+        int minToughness = Integer.MAX_VALUE;
+        for (final MagicPermanent it : MagicTargetFilterFactory.CREATURE_YOU_CONTROL.filter(event)) {
+            minToughness = Math.min(minToughness, it.getToughnessValue());
+        }
+        return minToughness;
     }
 }

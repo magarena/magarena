@@ -1125,12 +1125,7 @@ public enum MagicRuleEventAction {
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = ARG.amount(matcher);
             return (game, event) -> {
-                final Collection<MagicPermanent> targets = MagicTargetFilterFactory.CREATURE_YOU_CONTROL.filter(event);
-                int minToughness = Integer.MAX_VALUE;
-                for (final MagicPermanent creature : targets) {
-                    minToughness = Math.min(minToughness, creature.getToughnessValue());
-                }
-                game.addEvent(new MagicBolsterEvent(event.getSource(), event.getPlayer(), amount, minToughness));
+                game.addEvent(new MagicBolsterEvent(event, amount));
             };
         }
     },

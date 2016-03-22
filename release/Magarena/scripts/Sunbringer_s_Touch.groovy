@@ -16,11 +16,7 @@ def EFFECT = MagicRuleEventAction.create("Each creature you control with a +1/+1
             final MagicPlayer player = event.getPlayer();
             final int amount = player.getHandSize();
             game.logAppendValue(player,amount);
-            int minToughness = Integer.MAX_VALUE;
-            CREATURE_YOU_CONTROL.filter(event) each {
-                minToughness = Math.min(minToughness, it.getToughnessValue());
-            }
-            game.addEvent(new MagicBolsterEvent(event.getSource(), player, amount, minToughness));
+            game.addEvent(new MagicBolsterEvent(event, amount));
             game.addEvent(EFFECT.getEvent(event.getSource(), player, MagicEvent.NO_REF));
         }
     }
