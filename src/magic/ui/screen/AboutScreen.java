@@ -3,11 +3,13 @@ package magic.ui.screen;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
+import java.awt.event.ActionEvent;
 import java.awt.image.BufferedImage;
 import java.util.List;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
+import javax.swing.Timer;
 import magic.translate.UiString;
 import magic.ui.MagicImages;
 import magic.ui.screen.interfaces.IActionBar;
@@ -19,8 +21,12 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 public class AboutScreen extends AbstractScreen implements IStatusBar, IActionBar, IWikiPage {
 
+    final JLabel memoryLabel = new JLabel();
+
     public AboutScreen() {
         setContent(getContentPanel());
+        new Timer(1000, (ActionEvent e) -> { refreshMemoryLabel(); }).start();
+        refreshMemoryLabel();
     }
 
     private JPanel getContentPanel() {
@@ -61,13 +67,16 @@ public class AboutScreen extends AbstractScreen implements IStatusBar, IActionBa
         );
     }
 
+    private void refreshMemoryLabel() {
+        memoryLabel.setText(getHeapUtilizationStats());
+    }
+
     @Override
     public JPanel getStatusPanel() {
         JLabel lbl = new JLabel("Memory (megabytes)");
         lbl.setHorizontalAlignment(SwingConstants.CENTER);
         lbl.setForeground(Color.WHITE);
         lbl.setFont(new Font("Monospaced", Font.PLAIN, 12));
-        JLabel memoryLabel = new JLabel(getHeapUtilizationStats());
         memoryLabel.setHorizontalAlignment(SwingConstants.CENTER);
         memoryLabel.setForeground(Color.WHITE);
         memoryLabel.setFont(new Font("Monospaced", Font.PLAIN, 14));
