@@ -5,16 +5,21 @@ import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.event.ActionEvent;
 import java.awt.image.BufferedImage;
+import java.util.ArrayList;
 import java.util.List;
+import javax.swing.AbstractAction;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 import javax.swing.Timer;
+import magic.data.MagicIcon;
 import magic.translate.UiString;
 import magic.ui.MagicImages;
+import magic.ui.ScreenController;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.interfaces.IWikiPage;
+import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import net.miginfocom.swing.MigLayout;
 
@@ -29,6 +34,10 @@ public class AboutScreen extends AbstractScreen implements IStatusBar, IActionBa
     private static final String _S6 = "Free: %.1f";
     private static final String _S7 = "Total: %.1f";
     private static final String _S8 = "Max: %.1f";
+    private static final String _S9 = "Magarena License";
+    private static final String _S10 = "This program is free software : you can redistribute it and/or<br>modify it under the terms of the GNU General Public License<br>as published by the Free Software Foundation.";
+    private static final String _S11 = "Magarena License";
+    private static final String _S12 = "Displays the license details.";
 
     final JLabel memoryLabel = new JLabel();
 
@@ -107,7 +116,22 @@ public class AboutScreen extends AbstractScreen implements IStatusBar, IActionBa
 
     @Override
     public List<MenuButton> getMiddleActions() {
-        return null;
+        final List<MenuButton> buttons = new ArrayList<>();
+        buttons.add(new ActionBarButton(
+                MagicImages.getIcon(MagicIcon.SCROLL_ICON),
+                UiString.get(_S11), UiString.get(_S12),
+                new AbstractAction() {
+                    @Override
+                    public void actionPerformed(final ActionEvent e) {
+                        ScreenController.showInfoMessage(String.format("<html><b>%s</b><br>%s<html>",
+                            UiString.get(_S9),
+                            UiString.get(_S10))
+                        );
+                    }
+                }
+            )
+        );
+        return buttons;
     }
 
     @Override
