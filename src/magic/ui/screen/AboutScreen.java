@@ -21,6 +21,15 @@ import net.miginfocom.swing.MigLayout;
 @SuppressWarnings("serial")
 public class AboutScreen extends AbstractScreen implements IStatusBar, IActionBar, IWikiPage {
 
+    // translatable strings
+    private static final String _S1 = "About...";
+    private static final String _S2 = "Close";
+    private static final String _S3 = "Memory (megabytes)";
+    private static final String _S5 = "Used: %.1f";
+    private static final String _S6 = "Free: %.1f";
+    private static final String _S7 = "Total: %.1f";
+    private static final String _S8 = "Max: %.1f";
+
     final JLabel memoryLabel = new JLabel();
 
     public AboutScreen() {
@@ -53,18 +62,17 @@ public class AboutScreen extends AbstractScreen implements IStatusBar, IActionBa
 
     @Override
     public String getScreenCaption() {
-        return "About...";
+        return UiString.get(_S1);
     }
 
     private static String getHeapUtilizationStats() {
         final float mb = 1024*1024;
         final Runtime runtime = Runtime.getRuntime();
-        return String.format("Used: %.1f • Free: %.1f • Total: %.1f • Max: %.1f",
-            (runtime.totalMemory() - runtime.freeMemory()) / mb,
-            runtime.freeMemory() / mb,
-            runtime.totalMemory() / mb,
-            runtime.maxMemory() / mb
-        );
+        String s1 = UiString.get(_S5, (runtime.totalMemory() - runtime.freeMemory()) / mb);
+        String s2 = UiString.get(_S6, runtime.freeMemory() / mb);
+        String s3 = UiString.get(_S7, runtime.totalMemory() / mb);
+        String s4 = UiString.get(_S8, runtime.maxMemory() / mb);
+        return s1 + " • " + s2 + " • " + s3 + " • " + s4;
     }
 
     private void refreshMemoryLabel() {
@@ -73,7 +81,7 @@ public class AboutScreen extends AbstractScreen implements IStatusBar, IActionBa
 
     @Override
     public JPanel getStatusPanel() {
-        JLabel lbl = new JLabel("Memory (megabytes)");
+        JLabel lbl = new JLabel(UiString.get(_S3));
         lbl.setHorizontalAlignment(SwingConstants.CENTER);
         lbl.setForeground(Color.WHITE);
         lbl.setFont(new Font("Monospaced", Font.PLAIN, 12));
@@ -89,7 +97,7 @@ public class AboutScreen extends AbstractScreen implements IStatusBar, IActionBa
 
     @Override
     public MenuButton getLeftAction() {
-        return MenuButton.getCloseScreenButton(UiString.get("Close"));
+        return MenuButton.getCloseScreenButton(UiString.get(UiString.get(_S2)));
     }
 
     @Override
