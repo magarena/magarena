@@ -48,6 +48,9 @@ public final class MagicImages {
     public static final BufferedImage MENU_LOGO = GraphicsUtils.scale(LOGO, 40, 40);
     public static final BufferedImage APP_LOGO = GraphicsUtils.scale(LOGO, 32, 32);
 
+    // About
+    public static final BufferedImage ABOUT_LOGO = loadImage("magarena-logo.png");
+
     // default texture images
     public static final BufferedImage WOOD = loadTextureImage("wood.jpg");
     public static final BufferedImage MARBLE = loadTextureImage("marble.jpg");
