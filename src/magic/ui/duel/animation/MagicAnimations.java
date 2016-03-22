@@ -10,6 +10,7 @@ import magic.model.phase.MagicPhaseType;
 import magic.ui.duel.viewer.info.CardViewerInfo;
 import magic.ui.duel.DuelPanel;
 import magic.ui.duel.viewer.info.GameViewerInfo;
+import magic.ui.duel.viewer.info.PlayerViewerInfo;
 import magic.utility.MagicSystem;
 
 public class MagicAnimations {
@@ -104,34 +105,34 @@ public class MagicAnimations {
     }
 
     /**
-     * AI plays a single card from hand during M1 or M2.
+     * AI plays a card from hand to the battlefield or stack during M1 or M2.
      */
     private static MagicAnimation getPlayCardAnimationInfo(
         final GameViewerInfo oldGameInfo,
         final GameViewerInfo newGameInfo,
         final DuelPanel gamePanel) {
 
+        PlayerViewerInfo tpOld = oldGameInfo.getTurnPlayer();
+        PlayerViewerInfo tpNew = newGameInfo.getTurnPlayer();
+
         // if a card has been played then the current game state's hand should have one
         // less card than the previous game state's hand.
-        final List<MagicCard> cards = new ArrayList<>(oldGameInfo.getTurnPlayer().hand);
-        cards.removeAll(newGameInfo.getTurnPlayer().hand);
+        final List<MagicCard> cards = new ArrayList<>(tpOld.hand);
+        cards.removeAll(tpNew.hand);
 
         if (cards.isEmpty()) {
             return null;
-        } else if (cards.size() > 1) {  // eg. due to Tolarian Winds.
-            return null;
+        } else if (cards.size() > 1) { 
+            return null; // eg. due to Tolarian Winds.
+        } else if (tpNew.graveyard.size() > tpOld.graveyard.size()) {
+            return null; // discarding card from hand (see github issue #695).
         }
 
         final CardViewerInfo cardInfo = newGameInfo.getCardViewerInfo(cards.get(0));
 
         setLayoutInfo(gamePanel, newGameInfo, cardInfo);
 
-        return new PlayCardAnimation(
-            newGameInfo.getTurnPlayer().player,
-            cardInfo,
-            layoutInfo
-        );
-
+        return new PlayCardAnimation(tpNew.player, cardInfo, layoutInfo);
     }
 
     public static void debugPrint(MagicAnimation animation) {
@@ -153,6 +154,16 @@ public class MagicAnimations {
 
     public static boolean isOff(long aFlag) {
         return !GeneralConfig.getInstance().showGameplayAnimations() || !AnimationFx.isOn(aFlag);
+    }
+
+    private static void showDebugInfo(GameViewerInfo oldGameInfo, GameViewerInfo newGameInfo, MagicCard aCard) {
+        PlayerViewerInfo tpOld = oldGameInfo.getTurnPlayer();
+        PlayerViewerInfo tpNew = newGameInfo.getTurnPlayer();
+        System.out.println("===" + aCard + "===");
+        System.out.printf("  hand %d : %d\n", tpOld.hand.size(), tpNew.hand.size());
+        System.out.printf("  graveyard %d : %d\n", tpOld.graveyard.size(), tpNew.graveyard.size());
+        System.out.printf("  permanents %d : %d\n", tpOld.permanents.size(), tpNew.permanents.size());
+        System.out.printf("  stack %d : %d\n", oldGameInfo.getStack().size(), newGameInfo.getStack().size());
     }
 
 }
