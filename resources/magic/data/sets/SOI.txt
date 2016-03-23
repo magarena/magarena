@@ -1,11 +1,13 @@
 Aberrant Researcher
 Always Watching
 Angel of Deliverance
+Angelic Purge
 Anguished Unmaking
 Archangel Avacyn
 Arlinn Kord
 Arlinn, Embraced by the Moonsilver
 Asylum Visitor
+Avacyn's Judgement
 Avacyn, the Purifier
 Avacynian Missionaries
 Awoken Horror
@@ -43,6 +45,7 @@ Explosive Apparatus
 Expose Evil
 Falkenrath Gorger
 Farbog Revenant
+Fevered Visions
 Fiery Temper
 Flameblade Angel
 Foreboding Ruins
@@ -54,13 +57,16 @@ Furtive Homunculus
 Game Trail
 Geralf's Masterpiece
 Gibbering Fiend
+Goldnight Castigator
 Groundskeeper
+Hanweir Militia Captain
 Harness the Storm
 Heir of Falkenrath
 Heir to the Night
 Highland Lake
 Hinterland Logger
 Hound of the Farbogs
+Howlpack Resurgence
 Incorrigible Youths
 Indulgent Aristocrat
 Insidious Mist
@@ -138,6 +144,7 @@ Tooth Collector
 Topplegeist
 Trail of Evidence
 Traverse the Ulvenwald
+Triskaidekaphobia
 Twins of Maurer Estate
 Ulvenwald Mysteries
 Vessel of Volatility
@@ -149,5 +156,6 @@ Wayward Disciple
 Welcome to the Fold
 Werewolf of Ancient Hunger
 Westvale Abbey
+Westvale Cult Leader
 Wolf of Devil's Breach
 Woodland Stream
