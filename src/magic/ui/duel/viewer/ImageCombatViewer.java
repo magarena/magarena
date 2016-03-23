@@ -36,12 +36,14 @@ public class ImageCombatViewer extends JPanel implements IChoiceViewer {
         leftPanel.setOpaque(false);
         add(leftPanel,BorderLayout.WEST);
 
-        final JLabel combatLabel=new JLabel(MagicStyle.getTheme().getIcon(Theme.ICON_SMALL_COMBAT));
-        combatLabel.setOpaque(true);
-        combatLabel.setBackground(MagicStyle.getTheme().getColor(Theme.COLOR_ICON_BACKGROUND));
-        combatLabel.setPreferredSize(new Dimension(24,24));
-        combatLabel.setBorder(FontsAndBorders.BLACK_BORDER);
-        leftPanel.add(combatLabel,BorderLayout.NORTH);
+        if (MagicStyle.getTheme().hasValue(Theme.ICON_SMALL_COMBAT)) {
+            final JLabel combatLabel = new JLabel(MagicStyle.getTheme().getIcon(Theme.ICON_SMALL_COMBAT));
+            combatLabel.setOpaque(true);
+            combatLabel.setBackground(MagicStyle.getTheme().getColor(Theme.COLOR_ICON_BACKGROUND));
+            combatLabel.setPreferredSize(new Dimension(24, 24));
+            combatLabel.setBorder(FontsAndBorders.BLACK_BORDER);
+            leftPanel.add(combatLabel, BorderLayout.NORTH);
+        }
 
         permanentsViewer=new ImagePermanentsViewer(controller);
         add(permanentsViewer,BorderLayout.CENTER);

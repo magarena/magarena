@@ -38,12 +38,14 @@ public class ImageBattlefieldViewer extends JPanel implements IChoiceViewer, IUp
         leftPanel.setOpaque(false);
         add(leftPanel,BorderLayout.WEST);
 
-        final JLabel iconLabel=new JLabel(MagicStyle.getTheme().getIcon(Theme.ICON_SMALL_BATTLEFIELD));
-        iconLabel.setOpaque(true);
-        iconLabel.setBackground(MagicStyle.getTheme().getColor(Theme.COLOR_ICON_BACKGROUND));
-        iconLabel.setPreferredSize(new Dimension(24,24));
-        iconLabel.setBorder(FontsAndBorders.BLACK_BORDER);
-        leftPanel.add(iconLabel,BorderLayout.NORTH);
+        if (MagicStyle.getTheme().hasValue(Theme.ICON_SMALL_BATTLEFIELD)) {
+            final JLabel iconLabel = new JLabel(MagicStyle.getTheme().getIcon(Theme.ICON_SMALL_BATTLEFIELD));
+            iconLabel.setOpaque(true);
+            iconLabel.setBackground(MagicStyle.getTheme().getColor(Theme.COLOR_ICON_BACKGROUND));
+            iconLabel.setPreferredSize(new Dimension(24, 24));
+            iconLabel.setBorder(FontsAndBorders.BLACK_BORDER);
+            leftPanel.add(iconLabel, BorderLayout.NORTH);
+        }
 
         permanentsViewer=new ImagePermanentsViewer(controller, opponent);
         add(permanentsViewer,BorderLayout.CENTER);

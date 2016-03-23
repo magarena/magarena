@@ -17,6 +17,8 @@ import java.util.Properties;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 import magic.ui.ImageFileIO;
+import static magic.ui.theme.Theme.ICON_SMALL_BATTLEFIELD;
+import static magic.ui.theme.Theme.ICON_SMALL_COMBAT;
 import magic.utility.FileIO;
 import magic.utility.MagicFileSystem;
 
@@ -34,6 +36,10 @@ public class CustomTheme extends AbstractTheme {
 
     public CustomTheme(final File file) {
         super(getThemeName(file));
+
+        addToTheme(ICON_SMALL_BATTLEFIELD, null);
+        addToTheme(ICON_SMALL_COMBAT, null);
+
         this.file = file;
         playerAvatars = new PlayerAvatar[MAX_AVATARS];
         imagesMap = new HashMap<>();
@@ -97,7 +103,7 @@ public class CustomTheme extends AbstractTheme {
         } else if ("texture".equals(type)) {
             typeValue=value;
         } else if ("icon".equals(type)) {
-            typeValue=new ImageIcon(loadImage(value));
+            typeValue = value.isEmpty() ? null : new ImageIcon(loadImage(value));
         } else if ("option".equals(type)) {
             typeValue = Boolean.parseBoolean(value);
         }
