@@ -171,6 +171,14 @@ final public class GraphicsUtils {
         return getCompatibleBufferedImage(image.getWidth(), image.getHeight(), image.getTransparency());
     }
 
+    public static BufferedImage getBufferedImage(ImageIcon icon) {
+        BufferedImage bi = getCompatibleBufferedImage(icon.getIconWidth(), icon.getIconHeight(), BufferedImage.TRANSLUCENT);
+        Graphics g = bi.createGraphics();
+        icon.paintIcon(null, g, 0, 0);
+        g.dispose();
+        return bi;
+    }
+
     public static boolean isValidImageFile(final Path imageFilePath) {
         try {
             final BufferedImage image = ImageIO.read(imageFilePath.toFile());

@@ -3,7 +3,6 @@ package magic.ui.duel.viewer;
 import magic.ui.duel.viewer.info.PlayerViewerInfo;
 import magic.model.MagicCardList;
 import magic.ui.duel.SwingGameController;
-import magic.ui.theme.Theme;
 import magic.ui.widget.TabSelector;
 
 import javax.swing.JPanel;
@@ -12,14 +11,22 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 import java.awt.BorderLayout;
+import java.awt.image.BufferedImage;
+import java.util.HashMap;
+import java.util.Map;
+import javax.swing.ImageIcon;
+import magic.data.MagicIcon;
 import magic.model.MagicPlayerZone;
 import magic.ui.ScreenController;
 import magic.translate.StringContext;
 import magic.translate.UiString;
-import magic.ui.utility.MagicStyle;
+import magic.ui.MagicImages;
+import magic.ui.utility.GraphicsUtils;
 
 @SuppressWarnings("serial")
 public class PlayerZoneViewer extends JPanel implements ChangeListener {
+
+    private static final Map<MagicIcon, ImageIcon> tabIcons = getTabIcons();
 
     // translatable strings
     @StringContext(eg = "as in 'Other' player zone")
@@ -38,6 +45,23 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
     private JToggleButton selectedTab = null;
     private final ImageCardListViewer imageCardsListViewer;
 
+    private static Map<MagicIcon, ImageIcon> getTabIcons() {
+        System.out.println("getTabIcons");
+        Map<MagicIcon, ImageIcon> icons = new HashMap<>();
+        icons.put(MagicIcon.HAND_ZONE, getTabIcon(MagicIcon.HAND_ZONE));
+        icons.put(MagicIcon.GRAVEYARD_ZONE, getTabIcon(MagicIcon.GRAVEYARD_ZONE));
+        icons.put(MagicIcon.EXILE_ZONE, getTabIcon(MagicIcon.EXILE_ZONE));
+        icons.put(MagicIcon.LIBRARY_ZONE, getTabIcon(MagicIcon.LIBRARY_ZONE));
+        return icons;
+    }
+
+    private static ImageIcon getTabIcon(MagicIcon icon) {
+        ImageIcon handIcon = MagicImages.getIcon(icon);
+        BufferedImage handImage = GraphicsUtils.getBufferedImage(handIcon);
+        BufferedImage scaledImage = GraphicsUtils.scale(handImage, 16, 16);
+        return new ImageIcon(scaledImage);
+    }
+
     public PlayerZoneViewer(final SwingGameController controller) {
 
         this.controller = controller;
@@ -46,15 +70,15 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
         setOpaque(false);
         setLayout(new BorderLayout(6, 0));
 
-        final Theme theme = MagicStyle.getTheme();
         tabSelector = new TabSelector(this);
-        tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_HAND), getHandZoneName(getUserPlayer()));
-        tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_GRAVEYARD), getGraveyardZoneName(getUserPlayer()));
-        tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_GRAVEYARD), getGraveyardZoneName(getAiPlayer()));
-        tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_EXILE), getExileZoneName(getUserPlayer()));
-        tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_EXILE), getExileZoneName(getAiPlayer()));
-        tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_HAND), UiString.get(_S2, getUserPlayer().getName()));
-        tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_HAND), getHandZoneName(getAiPlayer()));
+        tabSelector.addTab(tabIcons.get(MagicIcon.HAND_ZONE), getHandZoneName(getUserPlayer()));
+        tabSelector.addTab(tabIcons.get(MagicIcon.GRAVEYARD_ZONE), getGraveyardZoneName(getUserPlayer()));
+        tabSelector.addTab(tabIcons.get(MagicIcon.GRAVEYARD_ZONE), getGraveyardZoneName(getAiPlayer()));
+        tabSelector.addTab(tabIcons.get(MagicIcon.EXILE_ZONE), getExileZoneName(getUserPlayer()));
+        tabSelector.addTab(tabIcons.get(MagicIcon.EXILE_ZONE), getExileZoneName(getAiPlayer()));
+        tabSelector.addTab(tabIcons.get(MagicIcon.LIBRARY_ZONE), UiString.get(_S2, getUserPlayer().getName()));
+        // this is used if the players are switched (ie. using the 'S' key).
+        tabSelector.addTab(tabIcons.get(MagicIcon.LIBRARY_ZONE), getHandZoneName(getAiPlayer()));
         add(tabSelector, BorderLayout.WEST);
 
         add(imageCardsListViewer, BorderLayout.CENTER);

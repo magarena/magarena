@@ -36,8 +36,7 @@ public class TabSelector extends JPanel implements ActionListener {
         setOpaque(false);
         setLayout(new BorderLayout());
 
-        buttonPanel=new JPanel();
-        buttonPanel.setBackground(backgroundColor0);
+        buttonPanel = new TexturedPanel();
         buttonPanel.setLayout(new BoxLayout(buttonPanel, BoxLayout.Y_AXIS));
         
         add(buttonPanel, BorderLayout.NORTH);
