@@ -1,4 +1,5 @@
 Aberrant Researcher
+Altered Ego
 Always Watching
 Angel of Deliverance
 Angelic Purge
@@ -24,6 +25,7 @@ Clip Wings
 Compelling Deterrence
 Confirm Suspicions
 Corrupted Grafstone
+Creeping Dread
 Crow of Dark Tidings
 Dance with Devils
 Daring Sleuth
@@ -51,8 +53,10 @@ Flameblade Angel
 Foreboding Ruins
 Foresaken Sanctuary
 Forest
+Forgotten Creation
 Fortified Village
 Foul Orchard
+From Under the Floorboards
 Furtive Homunculus
 Game Trail
 Geralf's Masterpiece
@@ -67,8 +71,10 @@ Highland Lake
 Hinterland Logger
 Hound of the Farbogs
 Howlpack Resurgence
+Humble the Brute
 Incorrigible Youths
 Indulgent Aristocrat
+Inexorable Blob
 Insidious Mist
 Invasive Surgery
 Invocation of Saint Traft
@@ -89,6 +95,7 @@ Merciless Resolve
 Mindwrack Demon
 Moonrise Intruder
 Mountain
+Nahiri's Machinations
 Nahiri, the Harbinger
 Neck Breaker
 Nephalia Moondrakes
@@ -109,6 +116,7 @@ Pious Evangel
 Plains
 Pore Over the Pages
 Port Town
+Prized Amalgam
 Quilled Wolf
 Rattlechains
 Ravenous Bloodseeker
@@ -117,6 +125,8 @@ Relentless Dead
 Rise from the Tides
 Sage of Ancient Lore
 Sanguinary Mage
+Scourge Wolf
+Seasons Past
 Second Harvest
 Shamble Back
 Shard of Broken Glass
@@ -128,13 +138,17 @@ Sorin, Grim Nemesis
 Soul Swallower
 Startled Awake
 Stitched Mangler
+Stitchwing Skaab
 Stoic Builder
 Stone Quarry
+Stonewing Antagonizer
 Stormkirk Mentor
 Structural Distortion
+Survive the Night
 Swamp
 Tamiyo's Journal
 Thalia's Lieutenant
+The Gitrog Monster
 Thing in the Ice
 Thraben Inspector
 Timber Shredder
@@ -146,7 +160,14 @@ Trail of Evidence
 Traverse the Ulvenwald
 Triskaidekaphobia
 Twins of Maurer Estate
+Ulvenwald Hydra
 Ulvenwald Mysteries
+Unimpeded Trespasser
+Uninvited Geist
+Vessel of Ephemera
+Vessel of Malignity
+Vessel of Nascency
+Vessel of Paramnesia
 Vessel of Volatility
 Village Messenger
 Voldaren Duelist
