@@ -3,7 +3,6 @@ package magic.ui.widget;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -18,7 +17,6 @@ import javax.swing.event.ChangeListener;
 @SuppressWarnings("serial")
 public class TabSelector extends JPanel implements ActionListener {
 
-    private static final Dimension HORIZONTAL_BUTTON_DIMENSION=new Dimension(28,20);
     private static final Dimension VERTICAL_BUTTON_DIMENSION=new Dimension(24,24);
 
     private final JPanel buttonPanel;
@@ -29,7 +27,7 @@ public class TabSelector extends JPanel implements ActionListener {
     private final Color backgroundColor;
     private boolean isUserClick = false;
 
-    public TabSelector(final ChangeListener listener, final boolean vertical, final Color backgroundColor0) {
+    public TabSelector(final ChangeListener listener, final Color backgroundColor0) {
 
         this.listener=listener;
         this.backgroundColor = (backgroundColor0 == null ? getBackground() : backgroundColor0);
@@ -40,23 +38,17 @@ public class TabSelector extends JPanel implements ActionListener {
 
         buttonPanel=new JPanel();
         buttonPanel.setBackground(backgroundColor0);
-
-        if (vertical) {
-            buttonPanel.setLayout(new BoxLayout(buttonPanel,BoxLayout.Y_AXIS));
-            add(buttonPanel,BorderLayout.NORTH);
-            buttonDimension=VERTICAL_BUTTON_DIMENSION;
-        } else {
-            buttonPanel.setLayout(new FlowLayout(FlowLayout.LEFT,0,0));
-            add(buttonPanel,BorderLayout.WEST);
-            buttonDimension=HORIZONTAL_BUTTON_DIMENSION;
-        }
-
+        buttonPanel.setLayout(new BoxLayout(buttonPanel, BoxLayout.Y_AXIS));
+        
+        add(buttonPanel, BorderLayout.NORTH);
+        buttonDimension = VERTICAL_BUTTON_DIMENSION;
+        
         buttons=new ArrayList<>();
 
     }
 
-    public TabSelector(final ChangeListener listener,final boolean vertical) {
-        this(listener, vertical, null);
+    public TabSelector(final ChangeListener listener) {
+        this(listener, null);
     }
 
     public int getSelectedTab() {

@@ -47,7 +47,7 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
         setLayout(new BorderLayout(6, 0));
 
         final Theme theme = MagicStyle.getTheme();
-        tabSelector = new TabSelector(this, true);
+        tabSelector = new TabSelector(this);
         tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_HAND), getHandZoneName(getUserPlayer()));
         tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_GRAVEYARD), getGraveyardZoneName(getUserPlayer()));
         tabSelector.addTab(theme.getIcon(Theme.ICON_SMALL_GRAVEYARD), getGraveyardZoneName(getAiPlayer()));
