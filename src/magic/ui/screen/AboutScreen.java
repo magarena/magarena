@@ -21,10 +21,13 @@ import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.interfaces.IWikiPage;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
+import magic.ui.utility.GraphicsUtils;
 import net.miginfocom.swing.MigLayout;
+import org.pushingpixels.trident.Timeline;
 
 @SuppressWarnings("serial")
-public class AboutScreen extends AbstractScreen implements IStatusBar, IActionBar, IWikiPage {
+public class AboutScreen extends AbstractScreen 
+    implements IStatusBar, IActionBar, IWikiPage {
 
     // translatable strings
     private static final String _S1 = "About...";
@@ -39,12 +42,22 @@ public class AboutScreen extends AbstractScreen implements IStatusBar, IActionBa
     private static final String _S11 = "Magarena License";
     private static final String _S12 = "Displays the license details.";
 
-    final JLabel memoryLabel = new JLabel();
+    private final JLabel memoryLabel = new JLabel();
+    private Timeline dropTimeline;
+    private float imageScale = 0.0f;
 
     public AboutScreen() {
         setContent(getContentPanel());
         new Timer(1000, (ActionEvent e) -> { refreshMemoryLabel(); }).start();
         refreshMemoryLabel();
+        doDropAnimation();
+    }
+
+    private void doDropAnimation() {
+        dropTimeline = new Timeline(this);
+        dropTimeline.addPropertyToInterpolate("ImageScale", 6f, 1f);
+        dropTimeline.setDuration(500);
+        dropTimeline.play();
     }
 
     private JPanel getContentPanel() {
@@ -58,14 +71,30 @@ public class AboutScreen extends AbstractScreen implements IStatusBar, IActionBa
         return true;
     }
 
+    public void setImageScale(float f) {
+        this.imageScale = f;
+        repaint();
+    }
+
+    public float getImageScale() {
+        return this.imageScale;
+    }
+
+    private void drawMagarenaImage(Graphics g) {
+        BufferedImage image = MagicImages.ABOUT_LOGO;
+        int scaledW = (int) (image.getWidth() * imageScale);
+        int scaledH = (int) (image.getHeight() * imageScale);
+        BufferedImage scaled = GraphicsUtils.scale(image, scaledW, scaledH);
+        int posX = (getWidth() - scaled.getWidth()) / 2;
+        int posY = (getHeight() - scaled.getHeight()) / 2;
+        g.drawImage(scaled, posX, posY, null);
+    }
+
     @Override
     protected void paintComponent(Graphics g) {
-        BufferedImage image = MagicImages.ABOUT_LOGO;
-        g.drawImage(image,
-            (getWidth() - image.getWidth()) / 2,
-            (getHeight() - image.getHeight()) / 2,
-            null
-        );
+        if (imageScale > 0) {
+            drawMagarenaImage(g);
+        }
         super.paintComponent(g);
     }
 
