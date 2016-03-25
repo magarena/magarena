@@ -88,28 +88,29 @@ ShawnieBoy
     add "download images on demand" setting.
 
 - added the following to the card script:
-    add Investigate eventAction
-    add Delirium Condition
-    add effect '<permanent> can't block SN this turn.', closes #671
-    add ability 'skulk'
+    * condition: Delirium
+    * effect: '<permanent> can't block SN this turn.' (issue #671)
+    * effect: 'Investigate'
+    * ability: 'Skulk'
 
 - fixed the following bugs:
-    fixes #683 : Minor layout anomaly in stats panel on Linux.
-    relocate VERSION and SOFTWARE_TITLE out of GeneralConfig and into MagicSystem to avoid statics dependency and fix issue #684.
-    fix Gallowbraid log message to 'pay', not 'lose'
-    fix download panel set to opaque when error occurs.
-    Zodiac Dragon should only trigger if you both own and control, fix #690
-    fix NPE if deck selector list is empty.
-    rename MagicObject.isCreature to MagicObject.isCreaturePermanent to avoid confusion with IRenderableCard.isCreature, fixes #698
-    fixes #704 : Ability icons regression due to ImageDrawingUtils refactoring.
-    fix: Genesis Wave duplicates cards played from library 712
-    use getTargetChoice() of MagicEvent instead of getTargetChoice of MagicChoice so that target of modal choice is retrieved, fixes #678
-    fix table sort by rarity
-    fix: Scarwood Bandits should keep control of artifact if control changes
-    always include 'another' restriction when cost is '{T}, Tap <permanent>', fixes #715
-    fixes #718 : Firemind top decks with Æ are not being parsed correctly.
-    fix: Jace the Mind Sculptor, would reveal the card looked at in the may choice fixes #727
-    fixes #731 : main menu overlays the M logo prematurely on startup.
+    * minor layout anomaly in stats panel on Linux. (issue #683)
+    * relocated VERSION and SOFTWARE_TITLE out of GeneralConfig and into MagicSystem to avoid statics dependency (issue #684)
+    * Gallowbraid log message had 'lose' instead of 'pay'
+    * download panel should set to opaque when error occurs.
+    * Zodiac Dragon should only trigger if you both own and control it. (issue #690)
+    * fixed NPE if deck selector list is empty.
+    * renamed MagicObject.isCreature to MagicObject.isCreaturePermanent to avoid confusion with IRenderableCard.isCreature (issue #698)
+    * theme ability icons would appear on cards as well as pop-up. (issue #704)
+    * Genesis Wave duplicated cards played from library (issue #712)
+    * use getTargetChoice() of MagicEvent instead of getTargetChoice of MagicChoice so that target of modal choice is retrieved (issue #678)
+    * unable to sort table by rarity or subtype.
+    * Scarwood Bandits should not lose control of artifact when control changes.
+    * always include 'another' restriction when cost is '{T}, Tap <permanent>' (issue #715)
+    * Firemind top decks with Æ were not being parsed correctly. (issue #718)
+    * Jace the Mind Sculptor, would reveal the card looked at in the may choice. (issue #727)
+    * main menu would overlay the M logo prematurely on startup. (issue #731)
+    * having 5 or more of the same non-basic land in a deck would still be legal.
 
 Release 1.70 (February 7, 2016)
 ============
