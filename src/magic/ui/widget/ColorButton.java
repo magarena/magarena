@@ -15,12 +15,25 @@ import magic.translate.UiString;
 public class ColorButton extends JButton {
 
     // translatable strings
-    private static final String _S1 = "Choose Color";
+    private static final String _S1 = "Choose a color";
+
+    private final MouseAdapter mouseListener;
+    private final AbstractAction clickAction;
 
     public ColorButton(final Color defaultColor) {
-        setBackground(defaultColor);
-        addActionListener(new AbstractAction() {
 
+        setBackground(defaultColor);
+        setPreferredSize(new Dimension(48, 24));
+
+        this.clickAction = getSelectColorAction();
+        addActionListener(clickAction);
+
+        this.mouseListener = getMouseListener();
+        addMouseListener(mouseListener);
+    }
+
+    private AbstractAction getSelectColorAction() {
+        return new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 final Color newColor = JColorChooser.showDialog(null, UiString.get(_S1), getBackground());
@@ -28,9 +41,11 @@ public class ColorButton extends JButton {
                     setBackground(newColor);
                 }
             }
-        });
+        };
+    }
 
-        addMouseListener(new MouseAdapter() {
+    private MouseAdapter getMouseListener() {
+        return new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent e) {
                 super.mouseEntered(e);
@@ -41,13 +56,24 @@ public class ColorButton extends JButton {
                 super.mouseExited(e);
                 setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
             }
-        });
-
-        setPreferredSize(new Dimension(48, 24));
+        };
     }
 
     public Color getColor() {
         return getBackground();
+    }
+
+    public void setColor(Color aColor) {
+        setBackground(aColor);        
+    }
+
+    public void setLocked(boolean isLocked) {
+        removeActionListener(clickAction);
+        removeMouseListener(mouseListener);
+        if (!isLocked) {
+            addMouseListener(mouseListener);
+            addActionListener(clickAction);
+        }
     }
 
 }
