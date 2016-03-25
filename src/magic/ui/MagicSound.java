@@ -22,6 +22,7 @@ public enum MagicSound {
     ADD_CARD("cardSlide3.wav"),
     ALERT("bong.wav"),
     BEEP("noAction.wav"),
+    BOOM("boom.wav"),
     REMOVE_CARD("cardTakeOutPackage1.wav"),
 
     // gameSounds - keep sorted and verify enumset range if changed.

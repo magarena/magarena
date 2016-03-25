@@ -15,6 +15,7 @@ import javax.swing.Timer;
 import magic.data.MagicIcon;
 import magic.translate.UiString;
 import magic.ui.MagicImages;
+import magic.ui.MagicSound;
 import magic.ui.ScreenController;
 import magic.ui.screen.interfaces.IActionBar;
 import magic.ui.screen.interfaces.IStatusBar;
@@ -24,10 +25,11 @@ import magic.ui.screen.widget.MenuButton;
 import magic.ui.utility.GraphicsUtils;
 import net.miginfocom.swing.MigLayout;
 import org.pushingpixels.trident.Timeline;
+import org.pushingpixels.trident.callback.TimelineCallback;
 
 @SuppressWarnings("serial")
 public class AboutScreen extends AbstractScreen 
-    implements IStatusBar, IActionBar, IWikiPage {
+    implements IStatusBar, IActionBar, IWikiPage, TimelineCallback {
 
     // translatable strings
     private static final String _S1 = "About...";
@@ -55,6 +57,7 @@ public class AboutScreen extends AbstractScreen
 
     private void doDropAnimation() {
         dropTimeline = new Timeline(this);
+        dropTimeline.addCallback(this);
         dropTimeline.addPropertyToInterpolate("ImageScale", 6f, 1f);
         dropTimeline.setDuration(500);
         dropTimeline.play();
@@ -166,6 +169,18 @@ public class AboutScreen extends AbstractScreen
     @Override
     public String getWikiPageName() {
         return "home";
+    }
+
+    @Override
+    public void onTimelineStateChanged(Timeline.TimelineState oldState, Timeline.TimelineState newState, float durationFraction, float timelinePosition) {
+        if (newState == Timeline.TimelineState.DONE) {
+            MagicSound.BOOM.play();
+        }
+    }
+
+    @Override
+    public void onTimelinePulse(float durationFraction, float timelinePosition) {
+        // not interested.
     }
 
 }
