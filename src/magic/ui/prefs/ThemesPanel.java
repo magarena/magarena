@@ -20,7 +20,8 @@ class ThemesPanel extends JPanel {
 
     // translatable strings.
     private static final String _S1 = "This color is read-only.";
-    private static final String _S2 = "Please remove the 'color_mouseover' property from the 'theme.properties' file to enable color selection.";
+    private static final String _S2 = "Please remove 'color_mouseover' from the 'theme.properties' file to enable color selection.";
+    private static final String _S3 = "This is the default color as 'color_mouseover' is not defined in the 'theme.properties' file.";
     private static final String _S47 = "Overrides the default theme background with a custom image which is set by dragging an image file onto the Magarena window.";
     private static final String _S49 = "custom background";
     private static final String _S51 = "highlight color";
@@ -71,7 +72,7 @@ class ThemesPanel extends JPanel {
         selectedTheme = aTheme;
         rollOverColorButton.setColor(MagicStyle.getRolloverColor(aTheme));
         rollOverColorButton.setLocked(false);
-        rollOverColorButton.setToolTipText(null);
+        rollOverColorButton.setToolTipText(UiString.get(_S3));
         if (aTheme.hasValue(Theme.COLOR_MOUSEOVER)) {
             rollOverColorButton.setToolTipText(READONLY_COLOR_TIP);
             rollOverColorButton.setLocked(true);
