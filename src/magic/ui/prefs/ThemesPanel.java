@@ -6,6 +6,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import magic.data.GeneralConfig;
 import magic.translate.UiString;
+import magic.ui.theme.Theme;
 import magic.ui.theme.ThemeFactory;
 import magic.ui.utility.MagicStyle;
 import magic.ui.widget.ColorButton;
@@ -38,7 +39,9 @@ class ThemesPanel extends JPanel {
 
         rollOverColorButton = new ColorButton(MagicStyle.getRolloverColor());
         rollOverColorButton.setFocusable(false);
-
+        rollOverColorButton.setToolTipText("If 'color_mouseover' is specified in the 'theme.properties' file then it takes precedence and any changes you make will be ignored. Remove this property from the file if you want to specify your own color for the selected theme.");
+        rollOverColorButton.addMouseListener(aListener);
+        
         setLayout(new MigLayout("flowx, wrap 2, insets 16, gapy 0"));
         add(themeComboBox, "w 100%");
         add(new ThemesActionPanel(this, aListener));
@@ -58,7 +61,9 @@ class ThemesPanel extends JPanel {
     void saveSettings() {
         CONFIG.setTheme(getSelectedThemeName());
         CONFIG.setCustomBackground(customBackgroundCheckBox.isSelected());
-        CONFIG.setRolloverColor(rollOverColorButton.getColor());
+        if (!ThemeFactory.getInstance().getCurrentTheme().hasValue(Theme.COLOR_MOUSEOVER)) {
+            CONFIG.setRolloverColor(rollOverColorButton.getColor());
+        }
     }
 
     String getSelectedThemeName() {

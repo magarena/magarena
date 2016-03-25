@@ -85,8 +85,14 @@ public final class MagicStyle {
         }
     }
 
+    public static Color getRolloverColor(Theme aTheme) {
+        return aTheme.hasValue(Theme.COLOR_MOUSEOVER)
+            ? aTheme.getColor(Theme.COLOR_MOUSEOVER)
+            : GeneralConfig.getInstance().getRolloverColor();
+    }
+
     public static Color getRolloverColor() {
-        return GeneralConfig.getInstance().getRolloverColor();
+        return getRolloverColor(getTheme());
     }
 
     public static Color getPressedColor() {
