@@ -40,12 +40,14 @@ public class MagicPredefinedFormat extends MagicFormat {
     public static final MagicFormat RETURN_TO_RAVNICA_BLOCK = new MagicPredefinedFormat("Return to Ravnica block", "return_to_ravnica_block");
     public static final MagicFormat THEROS_BLOCK = new MagicPredefinedFormat("Theros block", "theros_block");
     public static final MagicFormat KHANS_OF_TARKIR_BLOCK = new MagicPredefinedFormat("Khans of Tarkir block", "khans_of_tarkir_block");
+    public static final MagicFormat BATTLE_FOR_ZENDIKAR_BLOCK = new MagicPredefinedFormat("Battle for Zendikar block", "battle_for_zendikar_block");
 
     private static final List<MagicFormat> values = Collections.unmodifiableList(Arrays.asList(
         STANDARD,
         MODERN,
         LEGACY,
         VINTAGE,
+        BATTLE_FOR_ZENDIKAR_BLOCK,
         KHANS_OF_TARKIR_BLOCK,
         THEROS_BLOCK,
         RETURN_TO_RAVNICA_BLOCK,
