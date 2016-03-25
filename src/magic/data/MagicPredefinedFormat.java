@@ -170,8 +170,8 @@ public class MagicPredefinedFormat extends MagicFormat {
             return false;
         }
         for (final MagicCardDefinition card : DeckUtils.getDistinctCards(aDeck)) {
-            final int cardCountCheck = card.isLand() ? 1 : aDeck.getCardCount(card);
-            if (isCardLegal(card, cardCountCheck) == false) {
+            final int cardCountCheck = aDeck.getCardCount(card);
+            if (!isCardLegal(card, cardCountCheck)) {
                 return false;
             }
         }

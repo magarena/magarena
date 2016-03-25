@@ -119,7 +119,7 @@ public class CardsLegalityTableModel implements TableModel {
     private List<CardLegalityInfo> getCardsLegalityList(final MagicDeck aDeck, final MagicFormat aFormat) {
         final List<CardLegalityInfo> cardsLegalityList = new ArrayList<>();
         for (MagicCardDefinition card : DeckUtils.getDistinctCards(aDeck)) {
-            final int cardCountCheck = card.isLand() ? 1 : aDeck.getCardCount(card);
+            final int cardCountCheck = aDeck.getCardCount(card);
             final CardLegality legality = aFormat.getCardLegality(card, cardCountCheck);
             final CardLegalityInfo cardLegality = new CardLegalityInfo(card, legality, aFormat);
             cardsLegalityList.add(cardLegality);
