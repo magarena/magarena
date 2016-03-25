@@ -35,6 +35,7 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
     private final DownloadMode downloadMode;
     private boolean updateDownloadDate = true;
     private boolean isLogging = true;
+    private int serverBusyCooldown = 1; // in millisecs
 
     DownloadWorker(IDownloadListener aListener, CardTextLanguage aLanguage, DownloadMode aMode) {
         this.listener = aListener;
@@ -125,6 +126,12 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
         }
     }
 
+    private void setServerBusyCooldown(String errmsg) {
+        if (errmsg.contains("HTTP response code: 503")) {
+            serverBusyCooldown += 100;
+        }
+    }
+
     /**
      * Attempts to download alternate card image.
      * If it fails displays reason in error log panel.
@@ -134,6 +141,7 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
             aFile.doDownload(proxy);
         } catch (IOException ex) {
             listener.setMessage(String.format("%s [%s (%s)]", ex.toString(), aFile.getFilename(), aLang));
+            setServerBusyCooldown(ex.toString());
             return false;
         }
         return true;
@@ -173,6 +181,7 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
             // remove local image so it becomes 'missing' instead.
             updateDownloadDate = downloadMode != DownloadMode.CROPS && doDeleteLocalImageFile(aFile.getLocalFile());
             listener.setMessage(String.format("%s [%s]", ex.toString(), aFile.getFilename()));
+            setServerBusyCooldown(ex.toString());
             return false;
         }
         return true;
@@ -205,7 +214,17 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
         }
     }
 
+    private void doPause(int millisecs) {
+        try {
+            Thread.sleep(millisecs);
+        } catch (InterruptedException ex) {
+            System.err.println(ex);
+        }
+    }
+
     private void doDownloadImages(CardTextLanguage textLang) throws MalformedURLException {
+
+        assert !SwingUtilities.isEventDispatchThread();
 
         initializeLogFiles();
         int fileCount = 0;
@@ -220,6 +239,7 @@ class DownloadWorker extends SwingWorker<Void, Integer> {
             } else {
                 doDownloadCardImage(imageFile, textLang);
             }
+            doPause(serverBusyCooldown);
 
             fileCount++;
 
