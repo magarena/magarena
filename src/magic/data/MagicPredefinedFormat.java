@@ -114,8 +114,7 @@ public class MagicPredefinedFormat extends MagicFormat {
         try (final Scanner sc = new Scanner(MagicResources.getFileContent(this))) {
             while (sc.hasNextLine()) {
                 final String line = sc.nextLine().trim();
-                final boolean skipLine = (line.startsWith("#") || line.isEmpty());
-                if (!skipLine) {
+                if (!line.startsWith("#") && !line.isEmpty()) {
                     switch (line.substring(0, 1)) {
                         case "!":
                             bannedCardNames.add(line.substring(1));
@@ -139,7 +138,7 @@ public class MagicPredefinedFormat extends MagicFormat {
 
     @Override
     public CardLegality getCardLegality(MagicCardDefinition card, int cardCount) {
-        if (cardCount > getMaximumCardCopies() && isCardExemptFromMaxCopiesRestriction(card) == false) {
+        if (cardCount > getMaximumCardCopies() && !isCardExemptFromMaxCopiesRestriction(card)) {
             return CardLegality.TooManyCopies;
         }
         if (magicSets.isEmpty()) {
@@ -179,11 +178,11 @@ public class MagicPredefinedFormat extends MagicFormat {
     }
 
     private boolean isCardBanned(MagicCardDefinition aCard) {
-        return bannedCardNames.isEmpty() == false && bannedCardNames.contains(aCard.getName());
+        return !bannedCardNames.isEmpty() && bannedCardNames.contains(aCard.getName());
     }
 
     private boolean isCardRestricted(MagicCardDefinition card) {
-        return restrictedCardNames.isEmpty() == false && restrictedCardNames.contains(card.getName());
+        return !restrictedCardNames.isEmpty() && restrictedCardNames.contains(card.getName());
     }
 
     private boolean isCardInFormat(MagicCardDefinition card) {
