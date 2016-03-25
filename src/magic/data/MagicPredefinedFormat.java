@@ -133,7 +133,7 @@ public class MagicPredefinedFormat extends MagicFormat {
     }
 
     private boolean isCardExemptFromMaxCopiesRestriction(MagicCardDefinition card) {
-        return card.isLand() == true
+        return card.isBasic()
                 || card.getName().equals("Relentless Rats")
                 || card.getName().equals("Shadowborn Apostle");
     }
