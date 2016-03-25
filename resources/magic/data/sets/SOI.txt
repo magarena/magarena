@@ -1,48 +1,85 @@
 Aberrant Researcher
+Accursed Witch
+Aim High
+Alms of the Vein
 Altered Ego
 Always Watching
+Ancient of the Equinox
 Angel of Deliverance
 Angelic Purge
 Anguished Unmaking
+Apothecary Geist
 Archangel Avacyn
 Arlinn Kord
 Arlinn, Embraced by the Moonsilver
+Ashmouth Blade
 Asylum Visitor
+Autumnal Gloom
 Avacyn's Judgement
 Avacyn, the Purifier
 Avacynian Missionaries
 Awoken Horror
 Bearer of Overwhelming Truths
+Behind the Scenes
 Behold the Beyond
+Biting Rain
+Bloodmad Vampire
+Bound by Moonsilver
 Brain in a Jar
+Branded Howler
 Breakneck Rider
 Briarbridge Patrol
+Broken Concentration
 Burn from Within
 Bygone Bishop
+Byway Courier
 Call the Bloodline
+Catalog
+Cathar's Companion
+Chaplain's Blessing
 Choked Estuary
 Clip Wings
 Compelling Deterrence
 Confirm Suspicions
+Confront the Unknown
+Convicted Killer
 Corrupted Grafstone
+Crawling Sensation
 Creeping Dread
 Crow of Dark Tidings
+Cryptolith Rite
+Cult of the Waxing Moon
 Dance with Devils
 Daring Sleuth
+Dauntless Cathar
 Dead Weight
 Deathcap Cultivator
 Declaration in Stone
+Demon-Possessed Witch
+Deny Existence
 Descend upon the Sinful
 Devil's Playground
+Devilthorn Fox
 Diregraf Colossus
+Dissension in the Ranks
 Drogskol Cavalry
+Drownyard Explorers
 Drownyard Temple
+Drunau Corpse Trawler
+Dual Shot
 Duskwatch Recruiter
 Eerie Interlude
 Elusive Tormentor
 Ember-Eye Wolf
+Emissary of the Sleepless
 Engulf the Shore
 Epiphany at the Drownyard
+Epitaph Golem
+Equestrian Skill
+Erdwal Illuminator
+Essence Flux
+Ethereal Guidance
+Ever After
 Explosive Apparatus
 Expose Evil
 Falkenrath Gorger
@@ -50,63 +87,117 @@ Farbog Revenant
 Fevered Visions
 Fiery Temper
 Flameblade Angel
+Flameheart Werewolf
+Fleeting Memories
 Foreboding Ruins
 Foresaken Sanctuary
 Forest
 Forgotten Creation
+Fork in the Road
 Fortified Village
 Foul Orchard
 From Under the Floorboards
 Furtive Homunculus
 Game Trail
+Gatstaf Arsonists
+Gatstaf Ravagers
+Geier Reach Bandit
+Geistblast
 Geralf's Masterpiece
+Ghostly Wings
+Ghoulcaller's Accomplice
+Ghoulsteed
 Gibbering Fiend
+Gisa's Bidding
+Gloomwidow
 Goldnight Castigator
+Gone Missing
+Graf Mole
+Grotesque Mutation
 Groundskeeper
+Gryff's Boon
 Hanweir Militia Captain
 Harness the Storm
+Harvest Hand
+Haunted Cloak
 Heir of Falkenrath
 Heir to the Night
+Hermit of the Natterknolls
 Highland Lake
 Hinterland Logger
+Hope against Hope
 Hound of the Farbogs
 Howlpack Resurgence
+Howlpack Wolf
+Hulking Devil
 Humble the Brute
+Incited Rabble
 Incorrigible Youths
 Indulgent Aristocrat
 Inexorable Blob
+Infectious Curse
+Inner Struggle
+Inquisitor's Ox
 Insidious Mist
+Insolent Neonate
+Inspiring Captain
+Intrepid Provisioner
 Invasive Surgery
 Invocation of Saint Traft
 Island
 Jace's Scrutiny
 Jace, Unraveler of Secrets
 Just the Wind
+Kessig Dire Swine
+Kessig Forgemaster
+Kindly Stranger
 Krallenhorde Howler
+Lambholt Butcher
+Lambholt Pacifist
 Lamplighter of Selhoff
 Lightning Axe
+Liliana's Indignation
+Loam Dryad
+Lone Wolf of the Natterknolls
 Lunarch Inquisitors
 Macabre Waltz
+Mad Prophet
 Magmatic Chasm
 Magnifying Glass
+Malevolent Whispers
 Manic Scribe
 Markov Dreadknight
 Merciless Resolve
+Might Beyond Reason
+Militant Inquisitor
 Mindwrack Demon
+Moldgraf Scavenger
+Moonlight Hunt
 Moonrise Intruder
+Moorland Drifter
+Morkrut Necropod
 Mountain
+Murderer's Axe
+Murderous Compulsion
+Nagging Thoughts
 Nahiri's Machinations
 Nahiri, the Harbinger
+Nearheath Chaplain
 Neck Breaker
+Neglected Heirloom
 Nephalia Moondrakes
 Nibilis of Dusk
+Not Forgotten
 Obsessive Skinner
 Odric, Lunarch Marshal
 Olivia's Bloodsworn
 Olivia, Mobilized for War
+One of the Pack
 Ongoing Investigation
+Open the Armory
 Ormendahl, Profane Prince
 Pack Guardian
+Pale Rider of Trostad
 Paranoid Parish-Blade
 Perfected Form
 Persistent Nightmare
@@ -116,67 +207,114 @@ Pious Evangel
 Plains
 Pore Over the Pages
 Port Town
+Press for Answers
 Prized Amalgam
+Puncturing Light
+Pyre Hound
 Quilled Wolf
+Rabid Bite
+Rancid Rats
 Rattlechains
 Ravenous Bloodseeker
 Reaper of the Flight Moonsilver
+Reckless Scholar
+Reduce to Ashes
 Relentless Dead
 Rise from the Tides
+Root Out
+Rottenheart Ghoul
+Runaway Carriage
+Rush of Adrenaline
 Sage of Ancient Lore
 Sanguinary Mage
+Sanitarium Skeleton
 Scourge Wolf
+Scrounged Scythe
+Seagraf Skaab
 Seasons Past
 Second Harvest
+Senseless Rage
 Shamble Back
 Shard of Broken Glass
 Sigarda, Heron's Grace
+Silburlind Snapper
+Silent Observer
 Silverfur Partisan
+Silverstrike
 Sin Prodder
 Sinister Concoction
+Skeleton Key
+Skin Invasion
+Skin Shedder
+Slayer's Plate
+Sleep Paralysis
+Solitary Hunter
 Sorin, Grim Nemesis
 Soul Swallower
+Spectral Shepherd
+Spiteful Motives
+Stallion of Ashmouth
 Startled Awake
+Stensia Masquerade
+Stern Constable
 Stitched Mangler
 Stitchwing Skaab
 Stoic Builder
 Stone Quarry
 Stonewing Antagonizer
 Stormkirk Mentor
+Stormrider Spirit
+Strength of Arms
 Structural Distortion
 Survive the Night
 Swamp
 Tamiyo's Journal
+Tenacity
 Thalia's Lieutenant
 The Gitrog Monster
 Thing in the Ice
+Thornhide Wolves
+Thraben Gargoyle
 Thraben Inspector
+Throttle
 Timber Shredder
 Tireless Tracker
 To the Slaughter
 Tooth Collector
 Topplegeist
+Tormenting Voice
+Town Gossipmonger
 Trail of Evidence
 Traverse the Ulvenwald
 Triskaidekaphobia
+True-Faith Censer
 Twins of Maurer Estate
+Ulrich's Kindred
 Ulvenwald Hydra
 Ulvenwald Mysteries
+Uncaged Fury
 Unimpeded Trespasser
 Uninvited Geist
+Unruly Mob
+Vampire Noble
 Vessel of Ephemera
 Vessel of Malignity
 Vessel of Nascency
 Vessel of Paramnesia
 Vessel of Volatility
+Veteran Cathar
+Vildin-Pack Alpha
 Village Messenger
 Voldaren Duelist
 Warped Landscape
 Watcher in the Web
 Wayward Disciple
+Weirding Wood
 Welcome to the Fold
 Werewolf of Ancient Hunger
 Westvale Abbey
 Westvale Cult Leader
+Wicker Witch
+Wild-Field Scarecrow
 Wolf of Devil's Breach
 Woodland Stream
