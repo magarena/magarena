@@ -62,10 +62,11 @@ Thanks to
   kannikkiy for the Russian UI translation
   Pichoro, Acorntail and all at http://magicseteditor.sourceforge.net for CardBuilder components.
   XMage for the ArrowBuilder code
+  neoedmund for the download images-on-demand implementation.
   http://mtgjson.com for card script data
   http://magiccards.info for card images
   http://game-icons.net for UI icons
-  http://soundbible.com for sound effects.
+  http://soundbible.com, http://www.freesound.org for sound effects.
   everyone on the CCGHQ forum, http://slightlymagic.net/forum/
 
 Thank you for your support and have fun!
