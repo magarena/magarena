@@ -239,4 +239,8 @@ abstract class DownloadPanel extends JPanel implements IScanListener, IDownloadL
         }
     }
 
+    void setLocked(boolean b) {
+        downloadButton.setEnabled(!b && files != null && !files.isEmpty());
+    }
+
 }

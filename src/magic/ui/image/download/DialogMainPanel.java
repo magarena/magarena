@@ -138,9 +138,19 @@ class DialogMainPanel extends JPanel implements PropertyChangeListener {
     private void updateComponentState() {
         boolean isScanning = false;
         boolean isDownloading = false;
+        DownloadPanel activePanel = null;
         for (DownloadPanel panel : downloadPanels) {
+            panel.setLocked(false);
             isScanning |= panel.getState() == DownloadState.SCANNING;
             isDownloading |= panel.getState() == DownloadState.DOWNLOADING;
+            if (panel.getState() == DownloadState.DOWNLOADING) {
+                activePanel = panel;
+            }
+        }
+        if (activePanel != null) {
+            for (DownloadPanel panel : downloadPanels) {
+                panel.setLocked(panel != activePanel);
+            }
         }
         optionsPanel.setEnabled(!isScanning && !isDownloading);
         buttonsPanel.setIsDownloading(isDownloading);
