@@ -77,15 +77,37 @@ melvin
 neoedmund
 ShawnieBoy
 
+##
+## lodici commits to 316f5bd6c11fb9a85292b118a7a0bb575ef1b0c6    
+##
+- move location of themes from "mods" to "themes" folder.
+- remove need for "_theme" suffix when naming a theme folder or zip file.
+- show M logo on black background on startup.
+- display deck stats & description in sidebar of deck selector screen.
+- consolidate card type and color distribution stats into single fixed-size table (issue #692).
+- add "download images on demand" setting.
+- prevent access to image downloads dialog if "images on demand" setting is switched on.
+- suppress new images alert if images on demand setting is switched on.
+- fix minor layout anomaly in stats panel on Linux (issue #683).
+- optimize drawing of background images.
+- add more translatable strings (issue #538).
+- change random deck generator icon in Duel Decks screen.
+- custom ability icons incorrectly shown on battlefield card images (issue #704).
+- move card highlight setting to Gameplay -> Images tab.
+- Firemind top decks with Æ are not being parsed correctly (issue #718).
+- restyle theme panel and add open theme(s) folder action.
+- hide permanent and combat zone icons if not specified in custom theme properties file.
+- display highlight color for selected theme and make read-only if theme has 'color_mouseover' property.
+- replace tab selector icons with zone icons for consistent look.
+- confusing play animation when AI plays smallpox (issue #695).
+- new About dialog/screen.
+- prevent downloading of playable and unimplemented card images at the same time (issue #729).
+- add incremental pause to alleviate "HTTP response code: 503" errors when downloading images (issue #729).
+
+
     up to commit 4cdc6699699c47c876f938cc02e77cefe786434c
 
-    russian translation update.
-    show M logo on black background on startup.
-    display deck stats & description in select decks screen sidebar.
-    consolidate card type and color distribution stats into single fixed-size StatsTable (closes #692).
-    move location of themes from "mods" to "themes" folder.
     exile is compulsory for updated madness, fixes #728
-    add "download images on demand" setting.
 
 - added the following to the card script:
     * condition: Delirium
