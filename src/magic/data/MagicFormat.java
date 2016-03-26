@@ -8,8 +8,6 @@ import magic.model.MagicDeck;
 import magic.translate.UiString;
 import magic.utility.DeckUtils;
 
-import static magic.data.MagicPredefinedFormat.*;
-
 public abstract class MagicFormat {
 
     private static final String _S1 = "All cards";
@@ -72,9 +70,9 @@ public abstract class MagicFormat {
     public static List<MagicFormat> getDuelFormats() {
         final List<MagicFormat> fmts = new ArrayList<>();
         fmts.add(ALL);
-        fmts.add(STANDARD);
-        fmts.add(MODERN);
-        fmts.add(LEGACY);
+        fmts.add(MagicPredefinedFormat.STANDARD);
+        fmts.add(MagicPredefinedFormat.MODERN);
+        fmts.add(MagicPredefinedFormat.LEGACY);
         fmts.addAll(MagicCustomFormat.values());
         return fmts;
     }
