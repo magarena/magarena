@@ -130,15 +130,9 @@ public class MagicPredefinedFormat extends MagicFormat {
         }
     }
 
-    public static boolean isCardExemptFromMaxCopiesRestriction(MagicCardDefinition card) {
-        return card.isBasic()
-                || card.getName().equals("Relentless Rats")
-                || card.getName().equals("Shadowborn Apostle");
-    }
-
     @Override
     public CardLegality getCardLegality(MagicCardDefinition card, int cardCount) {
-        if (cardCount > maximumCardCopies && !isCardExemptFromMaxCopiesRestriction(card)) {
+        if (cardCount > maximumCardCopies && !card.canHaveAnyNumberInDeck()) {
             return CardLegality.TooManyCopies;
         }
         if (magicSets.isEmpty()) {

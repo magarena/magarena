@@ -109,6 +109,12 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         return cdef;
     }
 
+    public boolean canHaveAnyNumberInDeck() {
+        return hasType(MagicType.Basic)
+                || name.equals("Relentless Rats")
+                || name.equals("Shadowborn Apostle");
+    }
+
     protected void initialize() {}
 
     public void setAbilityProperty(final String value) {

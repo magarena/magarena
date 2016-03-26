@@ -37,7 +37,7 @@ public abstract class MagicFormat {
             return false;
         }
         for (final MagicCardDefinition card : DeckUtils.getDistinctCards(aDeck)) {
-            final int cardCountCheck = isCardExemptFromMaxCopiesRestriction(card) ? 1 : aDeck.getCardCount(card);
+            final int cardCountCheck = card.canHaveAnyNumberInDeck() ? 1 : aDeck.getCardCount(card);
             if (!isCardLegal(card, cardCountCheck)) {
                 return false;
             }

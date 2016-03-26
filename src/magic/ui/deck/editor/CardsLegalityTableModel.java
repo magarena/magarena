@@ -6,13 +6,12 @@ import java.util.Comparator;
 import java.util.List;
 import javax.swing.event.TableModelListener;
 import javax.swing.table.TableModel;
+
 import magic.data.CardLegality;
 import magic.data.MagicFormat;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
 import magic.utility.DeckUtils;
-
-import static magic.data.MagicPredefinedFormat.isCardExemptFromMaxCopiesRestriction;
 
 public class CardsLegalityTableModel implements TableModel {
 
@@ -117,7 +116,7 @@ public class CardsLegalityTableModel implements TableModel {
     private List<CardLegalityInfo> getCardsLegalityList(final MagicDeck aDeck, final MagicFormat aFormat) {
         final List<CardLegalityInfo> cardsLegalityList = new ArrayList<>();
         for (MagicCardDefinition card : DeckUtils.getDistinctCards(aDeck)) {
-            final int cardCountCheck = isCardExemptFromMaxCopiesRestriction(card) ? 1 : aDeck.getCardCount(card);
+            final int cardCountCheck = card.canHaveAnyNumberInDeck() ? 1 : aDeck.getCardCount(card);
             final CardLegality legality = aFormat.getCardLegality(card, cardCountCheck);
             final CardLegalityInfo cardLegality = new CardLegalityInfo(card, legality, aFormat);
             cardsLegalityList.add(cardLegality);
