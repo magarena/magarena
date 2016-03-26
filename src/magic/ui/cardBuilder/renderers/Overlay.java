@@ -176,7 +176,7 @@ public class Overlay {
                     ResourceManager.newFrame(colorFrames.get(1))
                 );
             } else {
-                return land ? ResourceManager.newFrame(ResourceManager.multiLandLevellerBox) : ResourceManager.newFrame(ResourceManager.multiLevellerBox);
+                return ResourceManager.newFrame(land ? ResourceManager.multiLandLevellerBox : ResourceManager.multiLevellerBox);
             }
         }
         //Mono
