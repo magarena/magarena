@@ -98,11 +98,7 @@ public class CardsLegalityTableModel implements TableModel {
 
     @Override
     public Object getValueAt(final int rowIndex, final int columnIndex) {
-        if (columnIndex == 1) {
-            return cardLegalityList.get(rowIndex).getCardName();
-        } else {
-            return "";
-        }
+        return columnIndex == 1 ? cardLegalityList.get(rowIndex).getCardName() : "";
     }
 
     @Override
