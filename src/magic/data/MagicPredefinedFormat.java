@@ -138,7 +138,7 @@ public class MagicPredefinedFormat extends MagicFormat {
 
     @Override
     public CardLegality getCardLegality(MagicCardDefinition card, int cardCount) {
-        if (cardCount > getMaximumCardCopies() && !isCardExemptFromMaxCopiesRestriction(card)) {
+        if (cardCount > maximumCardCopies && !isCardExemptFromMaxCopiesRestriction(card)) {
             return CardLegality.TooManyCopies;
         }
         if (magicSets.isEmpty()) {
@@ -165,7 +165,7 @@ public class MagicPredefinedFormat extends MagicFormat {
     }
 
     public boolean isDeckLegal(final MagicDeck aDeck) {
-        if (aDeck.size() < getMinimumDeckSize()) {
+        if (aDeck.size() < minimumDeckSize) {
             return false;
         }
         for (final MagicCardDefinition card : DeckUtils.getDistinctCards(aDeck)) {
