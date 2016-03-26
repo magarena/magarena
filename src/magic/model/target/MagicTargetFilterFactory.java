@@ -1662,7 +1662,7 @@ public class MagicTargetFilterFactory {
 
     public static final MagicCardFilterImpl PAYABLE_INSTANT_OR_SORCERY_FROM_GRAVEYARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
-            return (target.hasType(MagicType.Instant) || target.hasType(MagicType.Sorcery)) && target.getCost().getCondition().accept(target);
+            return (target.hasType(MagicType.Instant) || target.hasType(MagicType.Sorcery)) && target.getGameCost().getCondition().accept(target);
         }
 
         public boolean acceptType(final MagicTargetType targetType) {
