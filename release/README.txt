@@ -89,21 +89,15 @@ ShawnieBoy
 - add "download images on demand" setting.
 - prevent access to image downloads dialog if "images on demand" setting is switched on.
 - suppress new images alert if images on demand setting is switched on.
-- fix minor layout anomaly in stats panel on Linux (issue #683).
 - optimize drawing of background images.
 - add more translatable strings (issue #538).
 - change random deck generator icon in Duel Decks screen.
-- custom ability icons incorrectly shown on battlefield card images (issue #704).
 - move card highlight setting to Gameplay -> Images tab.
-- Firemind top decks with Æ are not being parsed correctly (issue #718).
 - restyle theme panel and add open theme(s) folder action.
 - hide permanent and combat zone icons if not specified in custom theme properties file.
 - display highlight color for selected theme and make read-only if theme has 'color_mouseover' property.
 - replace tab selector icons with zone icons for consistent look.
-- confusing play animation when AI plays smallpox (issue #695).
 - new About dialog/screen.
-- prevent downloading of playable and unimplemented card images at the same time (issue #729).
-- add incremental pause to alleviate "HTTP response code: 503" errors when downloading images (issue #729).
 
 
     up to commit 4cdc6699699c47c876f938cc02e77cefe786434c
@@ -117,22 +111,22 @@ ShawnieBoy
     * ability: 'Skulk'
 
 - fixed the following bugs:
+    * fix minor layout anomaly in stats panel on Linux (issue #683).
+    * custom ability icons incorrectly shown on battlefield card images (issue #704).
+    * Firemind top decks with Æ are not being parsed correctly (issue #718).
+    * confusing play animation when AI plays smallpox (issue #695).
+    * prevent downloading of playable and unimplemented card images at the same time (issue #729).
+    * add incremental pause to alleviate "HTTP response code: 503" errors when downloading images (issue #729).    
     * minor layout anomaly in stats panel on Linux. (issue #683)
-    * relocated VERSION and SOFTWARE_TITLE out of GeneralConfig and into MagicSystem to avoid statics dependency (issue #684)
     * Gallowbraid log message had 'lose' instead of 'pay'
-    * download panel should set to opaque when error occurs.
     * Zodiac Dragon should only trigger if you both own and control it. (issue #690)
-    * fixed NPE if deck selector list is empty.
     * renamed MagicObject.isCreature to MagicObject.isCreaturePermanent to avoid confusion with IRenderableCard.isCreature (issue #698)
-    * theme ability icons would appear on cards as well as pop-up. (issue #704)
     * Genesis Wave duplicated cards played from library (issue #712)
     * use getTargetChoice() of MagicEvent instead of getTargetChoice of MagicChoice so that target of modal choice is retrieved (issue #678)
     * unable to sort table by rarity or subtype.
     * Scarwood Bandits should not lose control of artifact when control changes.
     * always include 'another' restriction when cost is '{T}, Tap <permanent>' (issue #715)
-    * Firemind top decks with Æ were not being parsed correctly. (issue #718)
     * Jace the Mind Sculptor, would reveal the card looked at in the may choice. (issue #727)
-    * main menu would overlay the M logo prematurely on startup. (issue #731)
     * having 5 or more of the same non-basic land in a deck would still be legal.
 
 Release 1.70 (February 7, 2016)
