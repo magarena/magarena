@@ -28,7 +28,7 @@ class UnimplementedPanel extends DownloadPanel {
     public Stream<MagicCardDefinition> getCards(final DownloadMode mode) {
         return DownloadPanel.getCards(
                 CardDefinitions.getMissingCards(),
-                GeneralConfig.getInstance().getMissingImagesDownloadDate(),
+                GeneralConfig.getInstance().getUnimplementedImagesDownloadDate(),
                 mode
             );
     }
@@ -40,7 +40,7 @@ class UnimplementedPanel extends DownloadPanel {
 
     @Override
     public void doCustomActionAfterDownload() {
-        GeneralConfig.getInstance().setMissingImagesDownloadDate(new Date());
+        GeneralConfig.getInstance().setUnimplementedImagesDownloadDate(new Date());
         GeneralConfig.getInstance().save();
     }
 

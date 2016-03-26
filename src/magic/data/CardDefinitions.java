@@ -344,7 +344,7 @@ public class CardDefinitions {
      * <p>
      * {@code cardsMap} contains a list of current playable cards.
      * {@code AllCardsNames.txt} contains the name of every possible playable card.
-     * The difference is a list of missing cards.
+     * The difference is a list of unimplemented cards.
      */
     public static List<String> getMissingCardNames() throws IOException {
         final List<String> missingCardNames = new ArrayList<>();

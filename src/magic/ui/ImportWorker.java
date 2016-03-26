@@ -238,7 +238,7 @@ public class ImportWorker extends SwingWorker<Boolean, Void> {
         // override download dates to catch any missed "image_updated" updates.
         final Calendar dt = Calendar.getInstance();
         dt.add(Calendar.DAY_OF_MONTH, -60);
-        GeneralConfig.getInstance().setMissingImagesDownloadDate(dt.getTime());
+        GeneralConfig.getInstance().setUnimplementedImagesDownloadDate(dt.getTime());
         GeneralConfig.getInstance().setPlayableImagesDownloadDate(dt.getTime());
         GeneralConfig.getInstance().save();
 
