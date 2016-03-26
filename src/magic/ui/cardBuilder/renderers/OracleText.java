@@ -19,7 +19,7 @@ import java.text.AttributedString;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-import java.util.Map;
+import java.util.Map.Entry;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
@@ -204,8 +204,7 @@ public class OracleText {
         String[] abilities = getOracleAsLines(cardDef);
         String[] text = new String[abilities.length];
         for (int i = 0; i < abilities.length; i++) {
-            String[] fulltext;
-            fulltext = abilities[i].split(": ", 2);
+            String[] fulltext = abilities[i].split(": ", 2);
             text[i] = fulltext[fulltext.length - 1];
         }
         return text;
@@ -283,9 +282,7 @@ public class OracleText {
         final AttributedCharacterIterator iter = attrString.getIterator();
         while (lineMeasurer.getPosition() < paragraphEnd) {
             //Check for ptPanel overlap
-            int next = posY >= 123 ?
-                lineMeasurer.nextOffset(boxWidth - (leftPadding << 1) - 100) :
-                lineMeasurer.nextOffset(boxWidth - (leftPadding << 1));
+            int next = lineMeasurer.nextOffset(posY >= 123 ? boxWidth - (leftPadding << 1) - 100 : boxWidth - (leftPadding << 1));
             int limit = next;
             //Check for newlines
             for (int i = lineMeasurer.getPosition(); i < next; ++i) {
@@ -328,9 +325,11 @@ public class OracleText {
     ) {
         // decrease font by 0.5 points each time until lines can fit
         SortedMap<Float, TextLayout> lines = new TreeMap<>();
-        for (Font f = font; lines.isEmpty(); f = f.deriveFont(f.getSize2D() - 0.5f)) {
+        Font f = font;
+        while (lines.isEmpty()) {
             attrString.addAttribute(TextAttribute.FONT, f);
             lines = tryTextLayout(attrString, frc, box, leftPadding, topPadding);
+            f = f.deriveFont(f.getSize2D() - 0.5f);
         }
         return lines;
     }
@@ -360,7 +359,7 @@ public class OracleText {
         final SortedMap<Float, TextLayout> lines = fitTextLayout(attrString, font, frc, box, leftPadding, topPadding);
 
         // draw the text
-        for (final Map.Entry<Float, TextLayout> entry : lines.entrySet()) {
+        for (final Entry<Float, TextLayout> entry : lines.entrySet()) {
             final TextLayout layout = entry.getValue();
             final float posY = entry.getKey();
             layout.draw(g2d, leftPadding, posY);
