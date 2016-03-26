@@ -65,7 +65,7 @@ public abstract class MagicFormat {
     private static List<String> getFormatLabels(final List<MagicFormat> formats) {
         return formats
             .stream()
-            .map(f -> f.getLabel())
+            .map(MagicFormat::getLabel)
             .collect(Collectors.toList());
     }
 
