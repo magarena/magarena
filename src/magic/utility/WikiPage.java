@@ -1,5 +1,7 @@
 package magic.utility;
 
+import magic.ui.URLUtils;
+
 public final class WikiPage {
 
     public static final String HOME = "home";
@@ -10,6 +12,10 @@ public final class WikiPage {
     public static final String MAIN_MENU = "Main-Menu-Screen";
     public static final String MULLIGAN = "Mulligan-Screen";
     public static final String NEW_DUEL = "UINewDuel";
+
+    public static String getUrl(String pageName) {
+        return URLUtils.URL_WIKI + pageName;        
+    }
 
     private WikiPage() { }
 }
