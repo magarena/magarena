@@ -60,13 +60,13 @@ Thanks to
   ShawnieBoy for implementing new cards, the M logo, and general image enhancements
   PalladiaMors for the Portuguese UI translation
   kannikkiy for the Russian UI translation
-  Pichoro, Acorntail and all at http://magicseteditor.sourceforge.net for CardBuilder components.
+  Pichoro, Acorntail and all at http://magicseteditor.sourceforge.net for CardBuilder components
   XMage for the ArrowBuilder code
-  neoedmund for the download images-on-demand implementation.
+  neoedmund for the download images-on-demand implementation
   http://mtgjson.com for card script data
   http://magiccards.info for card images
   http://game-icons.net for UI icons
-  http://soundbible.com, http://www.freesound.org for sound effects.
+  http://soundbible.com, http://www.freesound.org for sound effects
   everyone on the CCGHQ forum, http://slightlymagic.net/forum/
 
 Thank you for your support and have fun!
@@ -78,56 +78,98 @@ melvin
 neoedmund
 ShawnieBoy
 
-##
-## lodici commits to 316f5bd6c11fb9a85292b118a7a0bb575ef1b0c6    
-##
-- move location of themes from "mods" to "themes" folder.
-- remove need for "_theme" suffix when naming a theme folder or zip file.
-- show M logo on black background on startup.
-- display deck stats & description in sidebar of deck selector screen.
-- consolidate card type and color distribution stats into single fixed-size table (issue #692).
-- add "download images on demand" setting.
-- prevent access to image downloads dialog if "images on demand" setting is switched on.
-- suppress new images alert if images on demand setting is switched on.
-- optimize drawing of background images.
-- add more translatable strings (issue #538).
-- change random deck generator icon in Duel Decks screen.
-- move card highlight setting to Gameplay -> Images tab.
-- restyle theme panel and add open theme(s) folder action.
-- hide permanent and combat zone icons if not specified in custom theme properties file.
-- display highlight color for selected theme and make read-only if theme has 'color_mouseover' property.
-- replace tab selector icons with zone icons for consistent look.
-- new About dialog/screen.
+up to commit 3f54a0e64c61e7b241532558a28d4473c8727526
 
-
-    up to commit 4cdc6699699c47c876f938cc02e77cefe786434c
-
-    exile is compulsory for updated madness, fixes #728
+- add Battle for Zendikar block
+- move location of themes from "mods" to "themes" folder
+- remove need for "_theme" suffix when naming a theme folder or zip file
+- show M logo on black background on startup
+- display deck stats & description in sidebar of deck selector screen
+- consolidate card type and color distribution stats into single fixed-size table (issue #692)
+- add "download images on demand" setting
+- prevent access to image downloads dialog if "images on demand" setting is switched on
+- suppress new images alert if images on demand setting is switched on
+- optimize drawing of background images
+- add more translatable strings (issue #538)
+- change random deck generator icon in Duel Decks screen
+- move card highlight setting to Gameplay -> Images tab
+- restyle theme panel and add open theme(s) folder action
+- hide permanent and combat zone icons if not specified in custom theme properties file
+- display highlight color for selected theme and make read-only if theme has 'color_mouseover' property
+- replace tab selector icons with zone icons for consistent look
+- new About dialog/screen
+- exile is compulsory for updated madness
 
 - added the following to the card script:
-    * condition: Delirium
-    * effect: '<permanent> can't block SN this turn.' (issue #671)
-    * effect: 'Investigate'
-    * ability: 'Skulk'
+    * condition: there are four or more card types among cards in your graveyard (Delirium)
+    * ability: Skulk
+    * effect: Investigate.
+    * effect: <permanents> can't block SN this turn.
 
 - fixed the following bugs:
-    * fix minor layout anomaly in stats panel on Linux (issue #683).
-    * custom ability icons incorrectly shown on battlefield card images (issue #704).
-    * Firemind top decks with Æ are not being parsed correctly (issue #718).
-    * confusing play animation when AI plays smallpox (issue #695).
-    * prevent downloading of playable and unimplemented card images at the same time (issue #729).
-    * add incremental pause to alleviate "HTTP response code: 503" errors when downloading images (issue #729).    
-    * minor layout anomaly in stats panel on Linux. (issue #683)
-    * Gallowbraid log message had 'lose' instead of 'pay'
-    * Zodiac Dragon should only trigger if you both own and control it. (issue #690)
+    * fix minor layout anomaly in stats panel on Linux (issue #683)
+    * custom ability icons incorrectly shown on battlefield card images (issue #704)
+    * Firemind top decks with Æ are not being parsed correctly (issue #718)
+    * confusing play animation when AI plays Smallpox (issue #695)
+    * prevent downloading of playable and unimplemented card images at the same time (issue #729)
+    * add incremental pause to alleviate "HTTP response code: 503" errors when downloading images (issue #729)
+    * minor layout anomaly in stats panel on Linux (issue #683)
     * renamed MagicObject.isCreature to MagicObject.isCreaturePermanent to avoid confusion with IRenderableCard.isCreature (issue #698)
-    * Genesis Wave duplicated cards played from library (issue #712)
     * use getTargetChoice() of MagicEvent instead of getTargetChoice of MagicChoice so that target of modal choice is retrieved (issue #678)
-    * unable to sort table by rarity or subtype.
-    * Scarwood Bandits should not lose control of artifact when control changes.
+    * having 5 or more of the same non-basic land in a deck would still be legal
+    * unable to sort table by rarity or subtype
+    * Scarwood Bandits should not lose control of artifact when control changes
     * always include 'another' restriction when cost is '{T}, Tap <permanent>' (issue #715)
-    * Jace the Mind Sculptor, would reveal the card looked at in the may choice. (issue #727)
-    * having 5 or more of the same non-basic land in a deck would still be legal.
+    * Jace the Mind Sculptor, would reveal the card looked at in the may choice (issue #727)
+    * Zodiac Dragon should only trigger if you both own and control it (issue #690)
+    * Genesis Wave duplicated cards played from library (issue #712)
+    * Gallowbraid log message had 'lose' instead of 'pay'
+    * Wandering Fumarole's last ability infinite activation by AI (issue #732)
+    * remove card reference from log for Bane Alley Broker #738
+    * PAYABLE_INSTANT_OR_SORCERY_FROM_GRAVEYARD should use getGameCost to take into account cost modifications, fixes #741
+
+- added the following cards:
+Abduction, Academy Raider, Ætherplasm, Alaborn Zealot, Animate Wall,
+Arachnus Web, Blood Tribute, Briar Shield, Brink of Madness,
+Burning Anger, Call of the Full Moon, Carapace, Chamber of Manipulation,
+Charisma, Colossus of Akros, Compelling Deterrence, Consecrated by Blood,
+Corpse Churn, Crab Umbra, Cruel Bargain, Cryptborn Horror,
+Crystallization, Custodi Soulbinders, Cytoplast Manipulator,
+Devout Harpist, Dimensional Infiltrator, Dragonscale General,
+Dream Thrush, Drooling Ogre, Duct Crawler, Dying Wail, Earthlore,
+Ebonblade Reaper, Eldrazi Mimic, Encase in Ice, Endbringer,
+Extra Arms, Fathom Feeder, Favorable Destiny, Festering Wound,
+Field of Reality, Fractured Loyalty, Ghostly Possession, Gigantiform,
+Glade Watcher, Glaring Aegis, Glistening Oil, Goblin Bangchuckers,
+Grasp of the Hieromancer, Grixis Illusionist, Guan Yu, Sainted Warrior,
+Havoc Festival, Hellkite Hatchling, Helm of Obedience, Helm of Possession,
+Hivis of the Scale, Hunter's Ambush, Ice Cage, Ignition Team,
+Immobilizer Eldrazi, Incendiary, Infectious Bloodlust, Infernal Scarring,
+Inviolability, Isolation Zone, Jinxed Ring, Kazuul's Toll Collector,
+Kithkin Mourncaller, Kothophed, Soul Hoarder, Kozilek's Pathfinder,
+Krasis Incubation, Krovikan Plague, Last Laugh, Liability,
+Map the Wastes, Masked Gorgon, Mina and Denn, Wildborn, Mindswipe,
+Mindwrack Demon, Mirror Mockery, Mirrorpool, Moonbow Illusionist,
+Mortuary, Mystic Compass, Mystic Meditation, Oboro Envoy, One with Nature,
+Oni Possession, Overseer of the Damned, Paralyze, Part the Waterveil,
+Pattern of Rebirth, Pendelhaven Elder, Pendrell Flux, Piety Charm,
+Pillar of War, Planar Collapse, Planar Outburst, Polluted Bonds,
+Predatory Urge, Pretender's Claim, Prison Barricade, Private Research,
+Quicksilver Dagger, Realm Seekers, Reaver Drone, Reduce in Stature,
+Reef Shaman, Righteous Indignation, Rivalry, Roots, Runner's Bane,
+Sabertooth Alley Cat, Sandskin, Scrapheap, Screams from Within,
+Screeching Griffin, Scytheclaw, Sea Snidd, Seedling Charm,
+Shrewd Hatchling, Sigil of the New Dawn, Singing Bell Strike,
+Sinstriker's Will, Sire of Stagnation, Sisay's Ingenuity, Sleeping Potion,
+Song of the Dryads, Soul Kiss, Sower of Temptation, Spectral Cloak,
+Spectral Prison, Spell Rupture, Spell Syphon, Spin Engine, Spire Serpent,
+Stamina, Stoneforge Masterwork, Sunbond, Sunbringer's Touch,
+Suppression Bonds, Telemin Performance, Thrull Retainer, Tidal Visionary,
+Tideshaper Mystic, Tooth Collector, Topplegeist, Traveling Plague,
+Treacherous Link, Treefolk Mystic, Triclopean Sight, Unstable Frontier,
+Urban Burgeoning, Vampirism, Venarian Gold, Venomous Fangs,
+Veteran's Voice, Viridian Harvest, Visions of Brutality, Volition Reins,
+Voracious Wurm, Walker of the Wastes, Wellspring, Whiteout, Witch Hunt
 
 Release 1.70 (February 7, 2016)
 ============
