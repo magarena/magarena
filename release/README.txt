@@ -78,27 +78,17 @@ melvin
 neoedmund
 ShawnieBoy
 
-up to commit 3f54a0e64c61e7b241532558a28d4473c8727526
+- new About dialog/screen
+
+- add "download images on demand" setting
+
+- move location of themes from "mods" to "themes" folder
+
+- display deck stats & description in sidebar of deck selector screen
+
+- update Madness according to new rules where exiling the card is compulsory
 
 - add Battle for Zendikar block
-- move location of themes from "mods" to "themes" folder
-- remove need for "_theme" suffix when naming a theme folder or zip file
-- show M logo on black background on startup
-- display deck stats & description in sidebar of deck selector screen
-- consolidate card type and color distribution stats into single fixed-size table (issue #692)
-- add "download images on demand" setting
-- prevent access to image downloads dialog if "images on demand" setting is switched on
-- suppress new images alert if images on demand setting is switched on
-- optimize drawing of background images
-- add more translatable strings (issue #538)
-- change random deck generator icon in Duel Decks screen
-- move card highlight setting to Gameplay -> Images tab
-- restyle theme panel and add open theme(s) folder action
-- hide permanent and combat zone icons if not specified in custom theme properties file
-- display highlight color for selected theme and make read-only if theme has 'color_mouseover' property
-- replace tab selector icons with zone icons for consistent look
-- new About dialog/screen
-- exile is compulsory for updated madness
 
 - added the following to the card script:
     * condition: there are four or more card types among cards in your graveyard (Delirium)
@@ -107,26 +97,24 @@ up to commit 3f54a0e64c61e7b241532558a28d4473c8727526
     * effect: <permanents> can't block SN this turn.
 
 - fixed the following bugs:
-    * fix minor layout anomaly in stats panel on Linux (issue #683)
+    * unable to sort cards by rarity or subtype
+    * decks with more than 4 non-basic lands considered legal
+    * model spells that target did not trigger when targeted triggers (issue #678)
+    * layout anomaly in stats panel on Linux (issue #683)
+    * confusing play animation when AI plays Smallpox (issue #695)
     * custom ability icons incorrectly shown on battlefield card images (issue #704)
     * Firemind top decks with Æ are not being parsed correctly (issue #718)
-    * confusing play animation when AI plays Smallpox (issue #695)
-    * prevent downloading of playable and unimplemented card images at the same time (issue #729)
-    * add incremental pause to alleviate "HTTP response code: 503" errors when downloading images (issue #729)
-    * minor layout anomaly in stats panel on Linux (issue #683)
-    * renamed MagicObject.isCreature to MagicObject.isCreaturePermanent to avoid confusion with IRenderableCard.isCreature (issue #698)
-    * use getTargetChoice() of MagicEvent instead of getTargetChoice of MagicChoice so that target of modal choice is retrieved (issue #678)
-    * having 5 or more of the same non-basic land in a deck would still be legal
-    * unable to sort table by rarity or subtype
-    * Scarwood Bandits should not lose control of artifact when control changes
-    * always include 'another' restriction when cost is '{T}, Tap <permanent>' (issue #715)
-    * Jace the Mind Sculptor, would reveal the card looked at in the may choice (issue #727)
-    * Zodiac Dragon should only trigger if you both own and control it (issue #690)
-    * Genesis Wave duplicated cards played from library (issue #712)
+    * unable to download large number of images due to HTTP errors (issue #729)
     * Gallowbraid log message had 'lose' instead of 'pay'
-    * Wandering Fumarole's last ability infinite activation by AI (issue #732)
-    * remove card reference from log for Bane Alley Broker #738
-    * PAYABLE_INSTANT_OR_SORCERY_FROM_GRAVEYARD should use getGameCost to take into account cost modifications, fixes #741
+    * Scarwood Bandits should not lose control of artifact when control changes
+    * Zodiac Dragon should only trigger if you both own and control it (issue #690)
+    * Thorn of Amethyst increases the casting cost of creatures by {1} (issue #698)
+    * Genesis Wave duplicated cards played from library (issue #712)
+    * Zada's Commando can tap itself to use cohort (issue #715)
+    * Jace the Mind Sculptor reveals the card looked at in the may choice (issue #727)
+    * Wandering Fumarole's last ability could lead to infinite activation by AI (issue #732)
+    * Bane Alley Broker logs names of exiled cards (issue #738)
+    * Snapcaster Mage allows casting cards that could not be paid due to cost increasers (issue #741)
 
 - added the following cards:
 Abduction, Academy Raider, Ætherplasm, Alaborn Zealot, Animate Wall,
