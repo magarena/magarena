@@ -129,10 +129,10 @@ public class AboutScreen extends AbstractScreen
         memoryLabel.setHorizontalAlignment(SwingConstants.CENTER);
         memoryLabel.setForeground(Color.WHITE);
         memoryLabel.setFont(new Font("Monospaced", Font.PLAIN, 14));
-        JPanel panel = new JPanel(new MigLayout("flowy"));
+        JPanel panel = new JPanel(new MigLayout("flowy, insets 0, gapy 0"));
         panel.setOpaque(false);
-        panel.add(lbl, "w 100%, h 100%");
-        panel.add(memoryLabel, "w 100%, h 100%");
+        panel.add(lbl, "w 100%");
+        panel.add(memoryLabel, "w 100%");
         return panel;
     }
 

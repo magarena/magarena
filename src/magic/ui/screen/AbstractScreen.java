@@ -57,14 +57,14 @@ public abstract class AbstractScreen extends JPanel {
 
     private void layoutMagStatusBar() {
         if (hasStatusBar()) {
-            add(new StatusBar(this), "w 100%");
+            add(new StatusBar(this), "w 100%, h 50!");
         }
     }
 
     private void layoutMagActionBar() {
         if (hasActionBar()) {
             this.actionbar = new ActionBar((IActionBar)this);
-            add(actionbar, "w 100%");
+            add(actionbar, "w 100%, h 50!");
         }
     }
 
