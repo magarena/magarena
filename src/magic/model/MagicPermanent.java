@@ -349,6 +349,9 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
     }
 
     public int getConvertedCost() {
+        if (isTransformed() && isDoubleFaced()) {
+            return getCardDefinition().getTransformedDefinition().getConvertedCost();
+        }
         return getCardDefinition().getConvertedCost();
     }
 
