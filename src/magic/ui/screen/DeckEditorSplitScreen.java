@@ -33,6 +33,7 @@ import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.MenuPanel;
 import magic.ui.deck.widget.DeckStatusPanel;
+import magic.utility.WikiPage;
 
 @SuppressWarnings("serial")
 public class DeckEditorSplitScreen
@@ -269,7 +270,7 @@ public class DeckEditorSplitScreen
 
     @Override
     public String getWikiPageName() {
-        return "UIDeckEditor";
+        return WikiPage.DECK_EDITOR;
     }
 
     @Override

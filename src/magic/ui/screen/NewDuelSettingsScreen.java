@@ -28,6 +28,7 @@ import magic.ui.screen.widget.MenuButton;
 import magic.ui.player.DuelPlayerDeckPanel;
 import magic.ui.player.DuelPlayerPanel;
 import magic.ui.utility.MagicStyle;
+import magic.utility.WikiPage;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -126,7 +127,7 @@ public class NewDuelSettingsScreen
 
     @Override
     public String getWikiPageName() {
-        return "UINewDuel";
+        return WikiPage.NEW_DUEL;
     }
 
     private class ScreenContent extends JPanel implements IPlayerProfileListener {

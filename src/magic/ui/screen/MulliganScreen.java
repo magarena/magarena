@@ -26,6 +26,7 @@ import magic.ui.screen.interfaces.IStatusBar;
 import magic.ui.screen.interfaces.IWikiPage;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
+import magic.utility.WikiPage;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -155,7 +156,7 @@ public class MulliganScreen
 
     @Override
     public String getWikiPageName() {
-        return "Mulligan-Screen";
+        return WikiPage.MULLIGAN;
     }
 
     private final class TakeMulliganAction extends AbstractAction {

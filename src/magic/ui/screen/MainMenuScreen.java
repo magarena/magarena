@@ -20,6 +20,7 @@ import magic.ui.screen.widget.MenuPanel;
 import magic.ui.widget.alerter.AlertPanel;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicSystem;
+import magic.utility.WikiPage;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -211,7 +212,7 @@ public class MainMenuScreen extends AbstractScreen implements IWikiPage {
 
     @Override
     public String getWikiPageName() {
-        return "Main-Menu-Screen";
+        return WikiPage.MAIN_MENU;
     }
 
 }

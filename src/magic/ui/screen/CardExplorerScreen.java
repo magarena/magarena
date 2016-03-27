@@ -30,6 +30,7 @@ import magic.ui.screen.widget.MenuPanel;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.utility.MagicSystem;
+import magic.utility.WikiPage;
 
 @SuppressWarnings("serial")
 public class CardExplorerScreen
@@ -156,7 +157,7 @@ public class CardExplorerScreen
 
     @Override
     public String getWikiPageName() {
-        return "UICardExplorer";
+        return WikiPage.CARDS_EXPLORER;
     }
 
     private class ScreenOptions extends ScreenOptionsOverlay {

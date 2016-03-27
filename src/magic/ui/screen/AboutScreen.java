@@ -23,6 +23,7 @@ import magic.ui.screen.interfaces.IWikiPage;
 import magic.ui.screen.widget.ActionBarButton;
 import magic.ui.screen.widget.MenuButton;
 import magic.ui.utility.GraphicsUtils;
+import magic.utility.WikiPage;
 import net.miginfocom.swing.MigLayout;
 import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.callback.TimelineCallback;
@@ -168,7 +169,7 @@ public class AboutScreen extends AbstractScreen
 
     @Override
     public String getWikiPageName() {
-        return "home";
+        return WikiPage.HOME;
     }
 
     @Override

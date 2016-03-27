@@ -34,6 +34,7 @@ import magic.ui.widget.TextFileReaderPanel;
 import magic.utility.MagicFileSystem;
 import magic.utility.MagicFileSystem.DataPath;
 import magic.ui.utility.MagicStyle;
+import magic.utility.WikiPage;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
@@ -120,7 +121,7 @@ public class CardScriptScreen
 
     @Override
     public String getWikiPageName() {
-        return "ImplementingCards";
+        return WikiPage.CARD_SCRIPTING;
     }
 
     private class ScreenContent extends JPanel {

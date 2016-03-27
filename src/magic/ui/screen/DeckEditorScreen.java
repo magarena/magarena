@@ -37,6 +37,7 @@ import magic.ui.screen.widget.MenuButton;
 import magic.ui.screen.widget.MenuPanel;
 import magic.ui.deck.widget.DeckStatusPanel;
 import magic.utility.MagicFileSystem;
+import magic.utility.WikiPage;
 
 @SuppressWarnings("serial")
 public class DeckEditorScreen
@@ -284,7 +285,7 @@ public class DeckEditorScreen
 
     @Override
     public String getWikiPageName() {
-        return "UIDeckEditor";
+        return WikiPage.DECK_EDITOR;
     }
 
     @Override
