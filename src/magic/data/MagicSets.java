@@ -2,6 +2,7 @@ package magic.data;
 
 public enum MagicSets {
 
+    SOI("Shadows over Innistrad"), //2016-4-8
     OGW("Oath of the Gatewatch"), //2016-1-22
     C15("Commander 2015"), //2015-11-13
     BFZ("Battle for Zendikar"), // 2015-10-2
