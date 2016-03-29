@@ -1,9 +1,6 @@
 package magic.ui;
 
 import magic.translate.UiString;
-import java.awt.Dimension;
-import java.awt.Frame;
-import java.awt.Toolkit;
 import java.awt.dnd.DropTarget;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
@@ -20,7 +17,6 @@ import javax.swing.KeyStroke;
 import javax.swing.ToolTipManager;
 import magic.data.CardDefinitions;
 import magic.data.DuelConfig;
-import magic.data.GeneralConfig;
 import magic.data.OSXAdapter;
 import magic.exception.DesktopNotSupportedException;
 import magic.model.MagicDeck;
@@ -37,7 +33,7 @@ import magic.utility.MagicSystem;
 import org.apache.commons.io.FileUtils;
 
 @SuppressWarnings("serial")
-public class MagicFrame extends JFrame implements IImageDragDropListener {
+public class MagicFrame extends MagicStickyFrame implements IImageDragDropListener {
 
     // translatable strings
     private static final String _S1 = "F11 : full screen";
@@ -47,23 +43,17 @@ public class MagicFrame extends JFrame implements IImageDragDropListener {
     private static final String _S5 = "Confirm Quit to Desktop";
     private static final String _S6 = "Invalid action!";
 
-    private boolean ignoreWindowDeactivate;
     private boolean confirmQuitToDesktop = true;
-
-    private static final Dimension MIN_SIZE = new Dimension(GeneralConfig.DEFAULT_WIDTH, GeneralConfig.DEFAULT_HEIGHT);
-
+   
     // Check if we are on Mac OS X.  This is crucial to loading and using the OSXAdapter class.
     public static final boolean MAC_OS_X = System.getProperty("os.name").toLowerCase().startsWith("mac os x");
 
-    private final GeneralConfig config;
     private final MagicFramePanel contentPanel;
     private MagicDuel duel;
-
+    
     public MagicFrame(final String frameTitle) {
 
         ToolTipManager.sharedInstance().setInitialDelay(400);
-
-        config = GeneralConfig.getInstance();
 
         // Setup frame.
         this.setTitle(String.format("%s [%s]", frameTitle, UiString.get(_S1)));
@@ -71,7 +61,6 @@ public class MagicFrame extends JFrame implements IImageDragDropListener {
         setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         addWindowListeners();
         registerForMacOSXEvents();
-        setSizeAndPosition();
 
         // Setup content container with a painted background based on theme.
         contentPanel = new MagicFramePanel();
@@ -92,18 +81,6 @@ public class MagicFrame extends JFrame implements IImageDragDropListener {
             @Override
             public void windowClosing(final WindowEvent event) {
                 onClose();
-            }
-            @Override
-            public void windowDeactivated(final WindowEvent ev) {
-                if (isFullScreen() && ev.getOppositeWindow() == null && !ignoreWindowDeactivate) {
-                    try {
-                        setState(Frame.ICONIFIED);
-                    } catch (Exception ex) {
-                        // see issue #130: Crashes when there is a change in focus? On Mac.
-                        System.err.println("setState(Frame.ICONIFIED) failed\n" + ex);
-                    }
-                }
-                ignoreWindowDeactivate = false;
             }
         });
     }
@@ -201,20 +178,8 @@ public class MagicFrame extends JFrame implements IImageDragDropListener {
     }
 
     private void doShutdownMagarena() {
-        if (isFullScreen()) {
-            config.setFullScreen(true);
-        } else {
-            final boolean maximized = (MagicFrame.this.getExtendedState() & JFrame.MAXIMIZED_BOTH) == JFrame.MAXIMIZED_BOTH;
-            if (maximized) {
-                config.setMaximized(true);
-            } else {
-                config.setLeft(getX());
-                config.setTop(getY());
-                config.setWidth(getWidth());
-                config.setHeight(getHeight());
-                config.setMaximized(false);
-            }
-        }
+
+        saveSizeAndPosition();
 
         MagicGameLog.close();
         MagicSound.shutdown();
@@ -232,60 +197,12 @@ public class MagicFrame extends JFrame implements IImageDragDropListener {
         processWindowEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
     }
 
-    private void setSizeAndPosition() {
-        setMinimumSize(MIN_SIZE);
-        if (config.isFullScreen()) {
-            setFullScreenMode(true);
-        } else {
-            this.setSize(config.getWidth(),config.getHeight());
-            if (config.getLeft() != -1) {
-                this.setLocation(config.getLeft(),config.getTop());
-            } else {
-                this.setLocationRelativeTo(null);
-            }
-            if (config.isMaximized()) {
-                this.setExtendedState(JFrame.MAXIMIZED_BOTH);
-            }
-        }
-    }
-
     /**
      *
      */
     public void closeDuelScreen() {
         ScreenController.closeActiveScreen(false);
         showDuel();
-    }
-
-    public void toggleFullScreenMode() {
-        setFullScreenMode(!config.isFullScreen());
-    }
-
-    private void setFullScreenMode(final boolean isFullScreen) {
-        this.dispose();
-        if (isFullScreen) {
-            this.setExtendedState(JFrame.MAXIMIZED_BOTH);
-            this.setUndecorated(true);
-            final Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-            this.setSize(screenSize.width, screenSize.height);
-            config.setFullScreen(true);
-        } else {
-            this.setExtendedState(JFrame.NORMAL);
-            this.setUndecorated(false);
-            config.setFullScreen(false);
-            setSizeAndPosition();
-        }
-        setVisible(true);
-        ignoreWindowDeactivate = true;
-        config.save();
-    }
-
-    private boolean isFullScreen() {
-        return isMaximized() && this.isUndecorated();
-    }
-
-    private boolean isMaximized() {
-        return this.getExtendedState() == JFrame.MAXIMIZED_BOTH;
     }
 
     /**

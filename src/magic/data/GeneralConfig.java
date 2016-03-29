@@ -2,6 +2,9 @@ package magic.data;
 
 import magic.utility.FileIO;
 import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Point;
+import java.awt.Rectangle;
 import java.io.File;
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -27,19 +30,19 @@ public class GeneralConfig {
 
     private boolean isMissingFiles = false;
 
-    private static final String LEFT="left";
-    private int left   = -1;
+    private static final String FRAME_LEFT = "left";
+    private int frameLeft = -1;
 
-    private static final String TOP="top";
-    private int top    = 0;
+    private static final String FRAME_TOP = "top";
+    private int frameTop = -1;
 
-    private static final String WIDTH="width";
-    public static final int DEFAULT_WIDTH=1024;
-    private int width  = DEFAULT_WIDTH;
+    private static final String FRAME_WIDTH = "width";
+    public static final int DEFAULT_FRAME_WIDTH = 1024;
+    private int frameWidth = DEFAULT_FRAME_WIDTH;
 
-    private static final String HEIGHT="height";
-    public static final int DEFAULT_HEIGHT=600;
-    private int height = DEFAULT_HEIGHT;
+    private static final String FRAME_HEIGHT = "height";
+    public static final int DEFAULT_FRAME_HEIGHT = 600;
+    private int frameHeight = DEFAULT_FRAME_HEIGHT;
 
     private static final String MAXIMIZED="maximized";
     private boolean maximized=false;
@@ -254,38 +257,6 @@ public class GeneralConfig {
     }
     public void setMostRecentDeckFilename(final String filename) {
         mostRecentDeckFilename = filename.trim();
-    }
-
-    public int getLeft() {
-        return left;
-    }
-
-    public void setLeft(final int left) {
-        this.left=left;
-    }
-
-    public int getTop() {
-        return top;
-    }
-
-    public void setTop(final int top) {
-        this.top=top;
-    }
-
-    public int getWidth() {
-        return width;
-    }
-
-    public void setWidth(final int width) {
-        this.width=width;
-    }
-
-    public int getHeight() {
-        return height;
-    }
-
-    public void setHeight(final int height) {
-        this.height=height;
     }
 
     public boolean isMaximized() {
@@ -563,10 +534,10 @@ public class GeneralConfig {
     }
 
     private void load(final Properties properties) {
-        left=Integer.parseInt(properties.getProperty(LEFT,""+left));
-        top=Integer.parseInt(properties.getProperty(TOP,""+top));
-        width=Integer.parseInt(properties.getProperty(WIDTH,""+width));
-        height=Integer.parseInt(properties.getProperty(HEIGHT,""+height));
+        frameLeft=Integer.parseInt(properties.getProperty(FRAME_LEFT,""+frameLeft));
+        frameTop=Integer.parseInt(properties.getProperty(FRAME_TOP,""+frameTop));
+        frameWidth=Integer.parseInt(properties.getProperty(FRAME_WIDTH,""+frameWidth));
+        frameHeight=Integer.parseInt(properties.getProperty(FRAME_HEIGHT,""+frameHeight));
         maximized=Boolean.parseBoolean(properties.getProperty(MAXIMIZED,""+maximized));
         theme=properties.getProperty(THEME,theme);
         avatar=properties.getProperty(AVATAR,avatar);
@@ -617,10 +588,10 @@ public class GeneralConfig {
     }
 
     private void save(final Properties properties) {
-        properties.setProperty(LEFT,String.valueOf(left));
-        properties.setProperty(TOP,String.valueOf(top));
-        properties.setProperty(WIDTH,String.valueOf(width));
-        properties.setProperty(HEIGHT,String.valueOf(height));
+        properties.setProperty(FRAME_LEFT,String.valueOf(frameLeft));
+        properties.setProperty(FRAME_TOP,String.valueOf(frameTop));
+        properties.setProperty(FRAME_WIDTH,String.valueOf(frameWidth));
+        properties.setProperty(FRAME_HEIGHT,String.valueOf(frameHeight));
         properties.setProperty(MAXIMIZED,String.valueOf(maximized));
         properties.setProperty(THEME,theme);
         properties.setProperty(AVATAR,avatar);
@@ -724,6 +695,24 @@ public class GeneralConfig {
 
     public void setImagesOnDemand(boolean b) {
         imagesOnDemand = b;
+    }
+
+    public Rectangle getSizableFrameBounds() {
+        return new Rectangle(frameLeft, frameTop, frameWidth, frameHeight);
+    }
+
+    public void setSizableFrameBounds(Rectangle aRect) {
+        frameLeft = aRect.x;
+        frameTop = aRect.y;
+        frameWidth = aRect.width;
+        frameHeight = aRect.height;
+    }
+
+    public void setSizableFrameBounds(Point aPoint, Dimension aSize) {
+        frameLeft = aPoint.x;
+        frameTop = aPoint.y;
+        frameWidth = aSize.width;
+        frameHeight = aSize.height;
     }
     
 }
