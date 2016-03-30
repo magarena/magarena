@@ -7,6 +7,7 @@ subtype=Zombie,Bird
 cost={2}{B}
 pt=2/1
 ability=Flying;\
-        When SN enters the battlefield or dies, put the top two cards of your library into your graveyard.
+        When SN enters the battlefield, put the top two cards of your library into your graveyard.;\
+        When SN dies, put the top two cards of your library into your graveyard.
 timing=main
 oracle=Flying\nWhen Crow of Dark Tidings enters the battlefield or dies, put the top two cards of your library into your graveyard.

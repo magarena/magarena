@@ -6,7 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={2}{R}
 ability=Enchant creature;\
-        Enchanted creature gets +2/+2 and has "{2}{R}: Target creature can't block this creature this turn."
+        Enchanted creature gets +2/+2 and has "{2}{R}: Target creature can't block SN this turn."
 timing=aura
-enchant=default,creature
+enchant=pump,pos creature
 oracle=Enchant creature\nEnchanted creature gets +2/+2 and has "{2}{R}: Target creature can't block this creature this turn."

@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Enchantment
 cost={1}{U}
-ability={U}, Sacrifice SN: Target player puts the top three cards of his or her library into his or her graveyard. Draw a card.
+ability={U}, Sacrifice SN: Target player puts the top three cards of his or her library into his or her graveyard.~Draw a card.
 timing=enchantment
 oracle={U}, Sacrifice Vessel of Paramnesia: Target player puts the top three cards of his or her library into his or her graveyard. Draw a card.
