@@ -1,0 +1,9 @@
+name=Might Beyond Reason
+image=http://magiccards.info/scans/en/soi/217.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={3}{G}
+effect=Put two +1/+1 counters on target creature.~Put three +1/+1 counters on that creature instead if there are four or more card types among cards in your graveyard.
+timing=removal
+oracle=Put two +1/+1 counters on target creature.\nDelirium — Put three +1/+1 counters on that creature instead if there are four or more card types among cards in your graveyard.

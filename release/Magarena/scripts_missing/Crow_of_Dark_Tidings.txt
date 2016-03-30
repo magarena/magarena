@@ -1,0 +1,12 @@
+name=Crow of Dark Tidings
+image=http://magiccards.info/scans/en/soi/105.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie,Bird
+cost={2}{B}
+pt=2/1
+ability=Flying;\
+        When SN enters the battlefield or dies, put the top two cards of your library into your graveyard.
+timing=main
+oracle=Flying\nWhen Crow of Dark Tidings enters the battlefield or dies, put the top two cards of your library into your graveyard.

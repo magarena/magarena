@@ -1,0 +1,12 @@
+name=Thalia's Lieutenant
+image=http://magiccards.info/scans/en/soi/43.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Soldier
+cost={1}{W}
+pt=1/1
+ability=When SN enters the battlefield, put a +1/+1 counter on each other Human you control.;\
+        Whenever another Human enters the battlefield under your control, put a +1/+1 counter on SN.
+timing=main
+oracle=When Thalia's Lieutenant enters the battlefield, put a +1/+1 counter on each other Human you control.\nWhenever another Human enters the battlefield under your control, put a +1/+1 counter on Thalia's Lieutenant.

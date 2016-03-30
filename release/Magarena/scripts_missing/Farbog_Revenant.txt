@@ -1,0 +1,12 @@
+name=Farbog Revenant
+image=http://magiccards.info/scans/en/soi/110.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Spirit
+cost={2}{B}
+pt=1/3
+ability=Skulk;\
+        Lifelink
+timing=main
+oracle=Skulk\nLifelink

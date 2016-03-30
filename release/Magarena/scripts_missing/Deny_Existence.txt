@@ -1,0 +1,9 @@
+name=Deny Existence
+image=http://magiccards.info/scans/en/soi/55.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{U}
+effect=Counter target creature spell. If that spell is countered this way, exile it instead of putting it into its owner's graveyard.
+timing=counter
+oracle=Counter target creature spell. If that spell is countered this way, exile it instead of putting it into its owner's graveyard.

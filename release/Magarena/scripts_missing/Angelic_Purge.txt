@@ -1,0 +1,10 @@
+name=Angelic Purge
+image=http://magiccards.info/scans/en/soi/3.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={2}{W}
+ability=As an additional cost to cast SN, sacrifice a permanent.
+effect=Exile target artifact, creature, or enchantment.
+timing=main
+oracle=As an additional cost to cast Angelic Purge, sacrifice a permanent.\nExile target artifact, creature, or enchantment.

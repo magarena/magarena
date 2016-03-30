@@ -1,0 +1,11 @@
+name=Hanweir Militia Captain
+image=http://magiccards.info/scans/en/soi/21a.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Soldier
+cost={1}{W}
+pt=2/2
+ability=At the beginning of your upkeep, if you control four or more creatures, transform SN.
+timing=main
+oracle=At the beginning of your upkeep, if you control four or more creatures, transform Hanweir Militia Captain.

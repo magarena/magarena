@@ -1,0 +1,10 @@
+name=Tamiyo's Journal
+image=http://magiccards.info/scans/en/soi/265.jpg
+value=2.500
+rarity=R
+type=Legendary,Artifact
+cost={5}
+ability=At the beginning of your upkeep, investigate.;\
+        {T}, Sacrifice three Clues: Search your library for a card and put that card into your hand. Then shuffle your library.
+timing=artifact
+oracle=At the beginning of your upkeep, investigate.\n{T}, Sacrifice three Clues: Search your library for a card and put that card into your hand. Then shuffle your library.

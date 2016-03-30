@@ -1,0 +1,9 @@
+name=Highland Lake
+image=http://magiccards.info/scans/en/soi/277.jpg
+value=2.500
+rarity=U
+type=Land
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {U} or {R} to your mana pool.
+timing=land
+oracle=Highland Lake enters the battlefield tapped.\n{T}: Add {U} or {R} to your mana pool.

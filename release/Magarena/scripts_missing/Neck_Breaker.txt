@@ -1,0 +1,11 @@
+name=Neck Breaker
+image=http://magiccards.info/scans/en/soi/147b.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Werewolf
+pt=4/3
+ability=Attacking creatures you control get +1/+0 and have trample.;\
+        At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
+timing=main
+oracle=Attacking creatures you control get +1/+0 and have trample.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Neck Breaker.

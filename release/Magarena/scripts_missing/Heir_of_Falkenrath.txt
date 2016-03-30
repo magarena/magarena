@@ -1,0 +1,11 @@
+name=Heir of Falkenrath
+image=http://magiccards.info/scans/en/soi/116a.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Vampire
+cost={1}{B}
+pt=2/1
+ability=Discard a card: Transform SN. Activate this ability only once each turn.
+timing=main
+oracle=Discard a card: Transform Heir of Falkenrath. Activate this ability only once each turn.

@@ -1,0 +1,13 @@
+name=Drogskol Cavalry
+image=http://magiccards.info/scans/en/soi/15.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Spirit,Knight
+cost={5}{W}{W}
+pt=4/4
+ability=Flying;\
+        Whenever another Spirit enters the battlefield under your control, you gain 2 life.;\
+        {3}{W}: Put a 1/1 white Spirit creature token with flying onto the battlefield.
+timing=main
+oracle=Flying\nWhenever another Spirit enters the battlefield under your control, you gain 2 life.\n{3}{W}: Put a 1/1 white Spirit creature token with flying onto the battlefield.

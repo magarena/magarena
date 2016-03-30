@@ -1,0 +1,11 @@
+name=Furtive Homunculus
+image=http://magiccards.info/scans/en/soi/64.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Homunculus
+cost={1}{U}
+pt=2/1
+ability=Skulk
+timing=main
+oracle=Skulk

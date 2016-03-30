@@ -1,0 +1,12 @@
+name=Incorrigible Youths
+image=http://magiccards.info/scans/en/soi/166.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Vampire
+cost={3}{R}{R}
+pt=4/3
+ability=Haste;\
+        Madness {2}{R}
+timing=fmain
+oracle=Haste\nMadness {2}{R}

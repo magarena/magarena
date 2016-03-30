@@ -1,0 +1,9 @@
+name=Inner Struggle
+image=http://magiccards.info/scans/en/soi/167.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={3}{R}
+effect=Target creature deals damage to itself equal to its power.
+timing=removal
+oracle=Target creature deals damage to itself equal to its power.

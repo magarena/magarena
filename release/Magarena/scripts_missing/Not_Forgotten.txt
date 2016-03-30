@@ -1,0 +1,9 @@
+name=Not Forgotten
+image=http://magiccards.info/scans/en/soi/30.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={1}{W}
+effect=Put target card from a graveyard on the top or bottom of its owner's library. Put a 1/1 white Spirit creature token with flying onto the battlefield.
+timing=main
+oracle=Put target card from a graveyard on the top or bottom of its owner's library. Put a 1/1 white Spirit creature token with flying onto the battlefield.

@@ -1,0 +1,9 @@
+name=Dance with Devils
+image=http://magiccards.info/scans/en/soi/150.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={3}{R}
+effect=Put two 1/1 red Devil creature tokens onto the battlefield. They have "When this creature dies, it deals 1 damage to target creature or player."
+timing=removal
+oracle=Put two 1/1 red Devil creature tokens onto the battlefield. They have "When this creature dies, it deals 1 damage to target creature or player."

@@ -1,0 +1,11 @@
+name=Ghoulcaller's Accomplice
+image=http://magiccards.info/scans/en/soi/112.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Rogue
+cost={1}{B}
+pt=2/2
+ability={3}{B}, Exile SN from your graveyard: Put a 2/2 black Zombie creature token onto the battlefield. Activate this ability only any time you could cast a sorcery.
+timing=main
+oracle={3}{B}, Exile Ghoulcaller's Accomplice from your graveyard: Put a 2/2 black Zombie creature token onto the battlefield. Activate this ability only any time you could cast a sorcery.

@@ -1,0 +1,12 @@
+name=Drunau Corpse Trawler
+image=http://magiccards.info/scans/en/soi/57.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Zombie
+cost={3}{U}
+pt=1/1
+ability=When SN enters the battlefield, put a 2/2 black Zombie creature token onto the battlefield.;\
+        {2}{B}: Target Zombie gains deathtouch until end of turn.
+timing=main
+oracle=When Drunau Corpse Trawler enters the battlefield, put a 2/2 black Zombie creature token onto the battlefield.\n{2}{B}: Target Zombie gains deathtouch until end of turn.

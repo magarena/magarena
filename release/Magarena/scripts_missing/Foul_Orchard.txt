@@ -1,0 +1,9 @@
+name=Foul Orchard
+image=http://magiccards.info/scans/en/soi/275.jpg
+value=2.500
+rarity=U
+type=Land
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {B} or {G} to your mana pool.
+timing=land
+oracle=Foul Orchard enters the battlefield tapped.\n{T}: Add {B} or {G} to your mana pool.

@@ -1,0 +1,9 @@
+name=Press for Answers
+image=http://magiccards.info/scans/en/soi/80.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={1}{U}
+effect=Tap target creature. It doesn't untap during its controller's next untap step.~Investigate.
+timing=main
+oracle=Tap target creature. It doesn't untap during its controller's next untap step.\nInvestigate.

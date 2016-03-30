@@ -1,0 +1,11 @@
+name=Avacynian Missionaries
+image=http://magiccards.info/scans/en/soi/6a.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Cleric
+cost={3}{W}
+pt=3/3
+ability=At the beginning of your end step, if SN is equipped, transform it.
+timing=main
+oracle=At the beginning of your end step, if Avacynian Missionaries is equipped, transform it.

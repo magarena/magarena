@@ -1,0 +1,10 @@
+name=Ancient of the Equinox
+image=http://magiccards.info/scans/en/soi/194b.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Treefolk
+pt=4/4
+ability=Trample, hexproof
+timing=main
+oracle=Trample, hexproof

@@ -1,0 +1,11 @@
+name=Scrounged Scythe
+image=http://magiccards.info/scans/en/soi/256b.jpg
+value=2.500
+rarity=U
+type=Artifact
+subtype=Equipment
+ability=Equipped creature gets +1/+1.;\
+        As long as equipped creature is a Human, it has menace.;\
+        Equip {2}
+timing=equipment
+oracle=Equipped creature gets +1/+1.\nAs long as equipped creature is a Human, it has menace.\nEquip {2}

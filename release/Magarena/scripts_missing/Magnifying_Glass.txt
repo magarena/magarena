@@ -1,0 +1,10 @@
+name=Magnifying Glass
+image=http://magiccards.info/scans/en/soi/258.jpg
+value=2.500
+rarity=U
+type=Artifact
+cost={3}
+ability={T}: Add {C} to your mana pool.;\
+        {4}, {T}: Investigate.
+timing=artifact
+oracle={T}: Add {C} to your mana pool.\n{4}, {T}: Investigate.

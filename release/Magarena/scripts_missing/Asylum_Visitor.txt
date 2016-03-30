@@ -1,0 +1,12 @@
+name=Asylum Visitor
+image=http://magiccards.info/scans/en/soi/99.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Vampire,Wizard
+cost={1}{B}
+pt=3/1
+ability=At the beginning of each player's upkeep, if that player has no cards in hand, you draw a card and you lose 1 life.;\
+        Madness {1}{B}
+timing=main
+oracle=At the beginning of each player's upkeep, if that player has no cards in hand, you draw a card and you lose 1 life.\nMadness {1}{B}

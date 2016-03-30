@@ -1,0 +1,9 @@
+name=Rush of Adrenaline
+image=http://magiccards.info/scans/en/soi/177.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={R}
+effect=Target creature gets +2/+1 and gains trample until end of turn.
+timing=removal
+oracle=Target creature gets +2/+1 and gains trample until end of turn.

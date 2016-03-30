@@ -1,0 +1,9 @@
+name=Skin Shedder
+image=http://magiccards.info/scans/en/soi/182b.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Insect,Horror
+pt=3/4
+timing=main
+oracle=NONE

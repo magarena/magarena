@@ -1,0 +1,13 @@
+name=Sleep Paralysis
+image=http://magiccards.info/scans/en/soi/87.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={3}{U}
+ability=Enchant creature;\
+        When SN enters the battlefield, tap enchanted creature.;\
+        Enchanted creature doesn't untap during its controller's untap step.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature\nWhen Sleep Paralysis enters the battlefield, tap enchanted creature.\nEnchanted creature doesn't untap during its controller's untap step.

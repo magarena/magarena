@@ -1,0 +1,11 @@
+name=Stallion of Ashmouth
+image=http://magiccards.info/scans/en/soi/136.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Nightmare,Horse
+cost={3}{B}
+pt=3/3
+ability={1}{B}: SN gets +1/+1 until end of turn. Activate this ability only if there are four or more card types among cards in your graveyard.
+timing=main
+oracle=Delirium — {1}{B}: Stallion of Ashmouth gets +1/+1 until end of turn. Activate this ability only if there are four or more card types among cards in your graveyard.

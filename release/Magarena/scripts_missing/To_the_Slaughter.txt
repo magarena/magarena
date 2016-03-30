@@ -1,0 +1,9 @@
+name=To the Slaughter
+image=http://magiccards.info/scans/en/soi/139.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={2}{B}
+effect=Target player sacrifices a creature or planeswalker.~If there are four or more card types among cards in your graveyard, instead that player sacrifices a creature and a planeswalker.
+timing=removal
+oracle=Target player sacrifices a creature or planeswalker.\nDelirium — If there are four or more card types among cards in your graveyard, instead that player sacrifices a creature and a planeswalker.

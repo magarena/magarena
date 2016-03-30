@@ -1,0 +1,12 @@
+name=Insolent Neonate
+image=http://magiccards.info/scans/en/soi/168.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vampire
+cost={R}
+pt=1/1
+ability=Menace;\
+        Discard a card, Sacrifice SN: Draw a card.
+timing=main
+oracle=Menace\nDiscard a card, Sacrifice Insolent Neonate: Draw a card.

@@ -1,0 +1,11 @@
+name=Moldgraf Scavenger
+image=http://magiccards.info/scans/en/soi/218.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Fungus
+cost={1}{G}
+pt=0/4
+ability=SN gets +3/+0 as long as there are four or more card types among cards in your graveyard.
+timing=main
+oracle=Delirium — Moldgraf Scavenger gets +3/+0 as long as there are four or more card types among cards in your graveyard.

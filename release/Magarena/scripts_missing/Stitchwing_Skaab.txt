@@ -1,0 +1,12 @@
+name=Stitchwing Skaab
+image=http://magiccards.info/scans/en/soi/90.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Zombie,Horror
+cost={3}{U}
+pt=3/1
+ability=Flying;\
+        {1}{U}, Discard two cards: Return SN from your graveyard to the battlefield tapped.
+timing=main
+oracle=Flying\n{1}{U}, Discard two cards: Return Stitchwing Skaab from your graveyard to the battlefield tapped.

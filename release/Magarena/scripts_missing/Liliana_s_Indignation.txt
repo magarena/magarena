@@ -1,0 +1,9 @@
+name=Liliana's Indignation
+image=http://magiccards.info/scans/en/soi/120.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={X}{B}
+effect=Put the top X cards of your library into your graveyard. Target player loses 2 life for each creature card put into your graveyard this way.
+timing=main
+oracle=Put the top X cards of your library into your graveyard. Target player loses 2 life for each creature card put into your graveyard this way.

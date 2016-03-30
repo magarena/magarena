@@ -1,0 +1,13 @@
+name=Thing in the Ice
+image=http://magiccards.info/scans/en/soi/92a.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Horror
+cost={1}{U}
+pt=0/4
+ability=Defender;\
+        SN enters the battlefield with four ice counters on it.;\
+        Whenever you cast an instant or sorcery spell, remove an ice counter from SN. Then if it has no ice counters on it, transform it.
+timing=smain
+oracle=Defender\nThing in the Ice enters the battlefield with four ice counters on it.\nWhenever you cast an instant or sorcery spell, remove an ice counter from Thing in the Ice. Then if it has no ice counters on it, transform it.

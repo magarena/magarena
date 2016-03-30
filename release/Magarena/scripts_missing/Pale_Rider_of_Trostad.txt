@@ -1,0 +1,12 @@
+name=Pale Rider of Trostad
+image=http://magiccards.info/scans/en/soi/128.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Spirit
+cost={1}{B}
+pt=3/3
+ability=Skulk;\
+        When SN enters the battlefield, discard a card.
+timing=main
+oracle=Skulk\nWhen Pale Rider of Trostad enters the battlefield, discard a card.

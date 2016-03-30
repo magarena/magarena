@@ -1,0 +1,11 @@
+name=Town Gossipmonger
+image=http://magiccards.info/scans/en/soi/46a.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human
+cost={W}
+pt=1/1
+ability={T}, Tap an untapped creature you control: Transform SN.
+timing=main
+oracle={T}, Tap an untapped creature you control: Transform Town Gossipmonger.

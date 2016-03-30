@@ -1,0 +1,11 @@
+name=Militant Inquisitor
+image=http://magiccards.info/scans/en/soi/26.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Cleric
+cost={2}{W}
+pt=2/3
+ability=SN gets +1/+0 for each Equipment you control.
+timing=main
+oracle=Militant Inquisitor gets +1/+0 for each Equipment you control.

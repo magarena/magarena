@@ -1,0 +1,9 @@
+name=Pick the Brain
+image=http://magiccards.info/scans/en/soi/129.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={2}{B}
+effect=Target opponent reveals his or her hand. You choose a nonland card from it and exile that card.~If there are four or more card types among cards in your graveyard, search that player's graveyard, hand, and library for any number of cards with the same name as the exiled card, exile those cards, then that player shuffles his or her library.
+timing=main
+oracle=Target opponent reveals his or her hand. You choose a nonland card from it and exile that card.\nDelirium — If there are four or more card types among cards in your graveyard, search that player's graveyard, hand, and library for any number of cards with the same name as the exiled card, exile those cards, then that player shuffles his or her library.

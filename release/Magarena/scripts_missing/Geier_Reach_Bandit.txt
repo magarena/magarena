@@ -1,0 +1,12 @@
+name=Geier Reach Bandit
+image=http://magiccards.info/scans/en/soi/159a.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Rogue,Werewolf
+cost={2}{R}
+pt=3/2
+ability=Haste;\
+        At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+timing=fmain
+oracle=Haste\nAt the beginning of each upkeep, if no spells were cast last turn, transform Geier Reach Bandit.

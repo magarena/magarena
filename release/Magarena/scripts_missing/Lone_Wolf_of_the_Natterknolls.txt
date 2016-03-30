@@ -1,0 +1,11 @@
+name=Lone Wolf of the Natterknolls
+image=http://magiccards.info/scans/en/soi/209b.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Werewolf
+pt=3/5
+ability=Whenever an opponent casts a spell during your turn, draw two cards.;\
+        At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
+timing=main
+oracle=Whenever an opponent casts a spell during your turn, draw two cards.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Lone Wolf of the Natterknolls.

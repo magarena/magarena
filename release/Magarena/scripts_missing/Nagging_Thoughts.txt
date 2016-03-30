@@ -1,0 +1,9 @@
+name=Nagging Thoughts
+image=http://magiccards.info/scans/en/soi/74.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={1}{U}
+effect=Look at the top two cards of your library. Put one of them into your hand and the other into your graveyard.~Madness {1}{U}
+timing=main
+oracle=Look at the top two cards of your library. Put one of them into your hand and the other into your graveyard.\nMadness {1}{U}

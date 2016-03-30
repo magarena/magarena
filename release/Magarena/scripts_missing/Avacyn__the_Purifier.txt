@@ -1,0 +1,11 @@
+name=Avacyn, the Purifier
+image=http://magiccards.info/scans/en/soi/5b.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Angel
+pt=6/5
+ability=Flying;\
+        When this creature transforms into SN, it deals 3 damage to each other creature and each opponent.
+timing=main
+oracle=Flying\nWhen this creature transforms into Avacyn, the Purifier, it deals 3 damage to each other creature and each opponent.

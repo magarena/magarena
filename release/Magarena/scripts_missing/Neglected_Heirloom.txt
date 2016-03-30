@@ -1,0 +1,12 @@
+name=Neglected Heirloom
+image=http://magiccards.info/scans/en/soi/260a.jpg
+value=2.500
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={1}
+ability=Equipped creature gets +1/+1.;\
+        When equipped creature transforms, transform SN.;\
+        Equip {1}
+timing=equipment
+oracle=Equipped creature gets +1/+1.\nWhen equipped creature transforms, transform Neglected Heirloom.\nEquip {1}

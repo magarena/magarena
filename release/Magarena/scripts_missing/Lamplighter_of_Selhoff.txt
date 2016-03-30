@@ -1,0 +1,11 @@
+name=Lamplighter of Selhoff
+image=http://magiccards.info/scans/en/soi/72.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie,Horror
+cost={4}{U}
+pt=3/5
+ability=When SN enters the battlefield, if you control another Zombie, you may draw a card. If you do, discard a card.
+timing=main
+oracle=When Lamplighter of Selhoff enters the battlefield, if you control another Zombie, you may draw a card. If you do, discard a card.

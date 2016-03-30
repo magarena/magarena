@@ -1,0 +1,11 @@
+name=Prized Amalgam
+image=http://magiccards.info/scans/en/soi/249.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Zombie
+cost={1}{U}{B}
+pt=3/3
+ability=Whenever a creature enters the battlefield, if it entered from your graveyard or you cast it from your graveyard, return SN from your graveyard to the battlefield tapped at the beginning of the next end step.
+timing=main
+oracle=Whenever a creature enters the battlefield, if it entered from your graveyard or you cast it from your graveyard, return Prized Amalgam from your graveyard to the battlefield tapped at the beginning of the next end step.

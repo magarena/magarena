@@ -1,0 +1,13 @@
+name=Bound by Moonsilver
+image=http://magiccards.info/scans/en/soi/7.jpg
+value=2.500
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={2}{W}
+ability=Enchant creature;\
+        Enchanted creature can't attack, block, or transform.;\
+        Sacrifice another permanent: Attach SN to target creature. Activate this ability only any time you could cast a sorcery and only once each turn.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature\nEnchanted creature can't attack, block, or transform.\nSacrifice another permanent: Attach Bound by Moonsilver to target creature. Activate this ability only any time you could cast a sorcery and only once each turn.

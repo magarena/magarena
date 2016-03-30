@@ -1,0 +1,9 @@
+name=Ethereal Guidance
+image=http://magiccards.info/scans/en/soi/18.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={2}{W}
+effect=Creatures you control get +2/+1 until end of turn.
+timing=main
+oracle=Creatures you control get +2/+1 until end of turn.

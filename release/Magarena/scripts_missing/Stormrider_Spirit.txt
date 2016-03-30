@@ -1,0 +1,12 @@
+name=Stormrider Spirit
+image=http://magiccards.info/scans/en/soi/91.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Spirit
+cost={4}{U}
+pt=3/3
+ability=Flash;\
+        Flying
+timing=flash
+oracle=Flash\nFlying

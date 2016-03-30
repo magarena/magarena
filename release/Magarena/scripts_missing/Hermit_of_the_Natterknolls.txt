@@ -1,0 +1,12 @@
+name=Hermit of the Natterknolls
+image=http://magiccards.info/scans/en/soi/209a.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Werewolf
+cost={2}{G}
+pt=2/3
+ability=Whenever an opponent casts a spell during your turn, draw a card.;\
+        At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+timing=main
+oracle=Whenever an opponent casts a spell during your turn, draw a card.\nAt the beginning of each upkeep, if no spells were cast last turn, transform Hermit of the Natterknolls.

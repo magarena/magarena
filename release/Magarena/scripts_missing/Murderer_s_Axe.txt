@@ -1,0 +1,11 @@
+name=Murderer's Axe
+image=http://magiccards.info/scans/en/soi/259.jpg
+value=2.500
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={4}
+ability=Equipped creature gets +2/+2.;\
+        Equip—Discard a card.
+timing=equipment
+oracle=Equipped creature gets +2/+2.\nEquip—Discard a card.

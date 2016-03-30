@@ -1,0 +1,9 @@
+name=Anguished Unmaking
+image=http://magiccards.info/scans/en/soi/242.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={1}{W}{B}
+effect=Exile target nonland permanent. You lose 3 life.
+timing=removal
+oracle=Exile target nonland permanent. You lose 3 life.

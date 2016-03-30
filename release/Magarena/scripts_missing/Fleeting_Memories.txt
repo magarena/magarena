@@ -1,0 +1,10 @@
+name=Fleeting Memories
+image=http://magiccards.info/scans/en/soi/62.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={2}{U}
+ability=When SN enters the battlefield, investigate.;\
+        Whenever you sacrifice a Clue, target player puts the top three cards of his or her library into his or her graveyard.
+timing=enchantment
+oracle=When Fleeting Memories enters the battlefield, investigate.\nWhenever you sacrifice a Clue, target player puts the top three cards of his or her library into his or her graveyard.

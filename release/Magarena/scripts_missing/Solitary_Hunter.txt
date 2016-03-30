@@ -1,0 +1,11 @@
+name=Solitary Hunter
+image=http://magiccards.info/scans/en/soi/229a.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Warrior,Werewolf
+cost={3}{G}
+pt=3/4
+ability=At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+timing=main
+oracle=At the beginning of each upkeep, if no spells were cast last turn, transform Solitary Hunter.

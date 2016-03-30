@@ -1,0 +1,9 @@
+name=Rabid Bite
+image=http://magiccards.info/scans/en/soi/223.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={1}{G}
+effect=Target creature you control deals damage equal to its power to target creature you don't control.
+timing=main
+oracle=Target creature you control deals damage equal to its power to target creature you don't control.

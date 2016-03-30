@@ -1,0 +1,9 @@
+name=Sinister Concoction
+image=http://magiccards.info/scans/en/soi/135.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={B}
+ability={B}, Pay 1 life, Put the top card of your library into your graveyard, Discard a card, Sacrifice SN: Destroy target creature.
+timing=enchantment
+oracle={B}, Pay 1 life, Put the top card of your library into your graveyard, Discard a card, Sacrifice Sinister Concoction: Destroy target creature.

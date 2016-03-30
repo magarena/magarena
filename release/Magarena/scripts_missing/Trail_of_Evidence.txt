@@ -1,0 +1,9 @@
+name=Trail of Evidence
+image=http://magiccards.info/scans/en/soi/93.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={2}{U}
+ability=Whenever you cast an instant or sorcery spell, investigate.
+timing=enchantment
+oracle=Whenever you cast an instant or sorcery spell, investigate.

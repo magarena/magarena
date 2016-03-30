@@ -1,0 +1,12 @@
+name=Niblis of Dusk
+image=http://magiccards.info/scans/en/soi/76.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Spirit
+cost={2}{U}
+pt=2/1
+ability=Flying;\
+        Prowess
+timing=main
+oracle=Flying\nProwess

@@ -1,0 +1,12 @@
+name=Pyre Hound
+image=http://magiccards.info/scans/en/soi/174.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Elemental,Hound
+cost={3}{R}
+pt=2/3
+ability=Trample;\
+        Whenever you cast an instant or sorcery spell, put a +1/+1 counter on SN.
+timing=main
+oracle=Trample\nWhenever you cast an instant or sorcery spell, put a +1/+1 counter on Pyre Hound.

@@ -1,0 +1,12 @@
+name=Emissary of the Sleepless
+image=http://magiccards.info/scans/en/soi/17.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Spirit
+cost={4}{W}
+pt=2/4
+ability=Flying;\
+        When SN enters the battlefield, if a creature died this turn, put a 1/1 white Spirit creature token with flying onto the battlefield.
+timing=main
+oracle=Flying\nWhen Emissary of the Sleepless enters the battlefield, if a creature died this turn, put a 1/1 white Spirit creature token with flying onto the battlefield.

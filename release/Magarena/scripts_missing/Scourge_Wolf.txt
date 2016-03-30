@@ -1,0 +1,12 @@
+name=Scourge Wolf
+image=http://magiccards.info/scans/en/soi/179.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Wolf,Horror
+cost={R}{R}
+pt=2/2
+ability=First strike;\
+        SN has double strike as long as there are four or more card types among cards in your graveyard.
+timing=main
+oracle=First strike\nDelirium — Scourge Wolf has double strike as long as there are four or more card types among cards in your graveyard.

@@ -1,0 +1,11 @@
+name=Stensia Masquerade
+image=http://magiccards.info/scans/en/soi/184.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={2}{R}
+ability=Attacking creatures you control have first strike.;\
+        Whenever a Vampire you control deals combat damage to a player, put a +1/+1 counter on it.;\
+        Madness {2}{R}
+timing=enchantment
+oracle=Attacking creatures you control have first strike.\nWhenever a Vampire you control deals combat damage to a player, put a +1/+1 counter on it.\nMadness {2}{R}

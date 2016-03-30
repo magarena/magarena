@@ -1,0 +1,10 @@
+name=One of the Pack
+image=http://magiccards.info/scans/en/soi/229b.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Werewolf
+pt=5/6
+ability=At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
+timing=main
+oracle=At the beginning of each upkeep, if a player cast two or more spells last turn, transform One of the Pack.

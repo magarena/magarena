@@ -1,0 +1,11 @@
+name=Byway Courier
+image=http://magiccards.info/scans/en/soi/196.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Scout
+cost={2}{G}
+pt=3/2
+ability=When SN dies, investigate.
+timing=main
+oracle=When Byway Courier dies, investigate.

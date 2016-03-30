@@ -1,0 +1,11 @@
+name=Elusive Tormentor
+image=http://magiccards.info/scans/en/soi/108a.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Vampire,Wizard
+cost={2}{B}{B}
+pt=4/4
+ability={1}, Discard a card: Transform SN.
+timing=main
+oracle={1}, Discard a card: Transform Elusive Tormentor.

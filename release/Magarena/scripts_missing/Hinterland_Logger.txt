@@ -1,0 +1,11 @@
+name=Hinterland Logger
+image=http://magiccards.info/scans/en/soi/210a.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Werewolf
+cost={1}{G}
+pt=2/1
+ability=At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+timing=main
+oracle=At the beginning of each upkeep, if no spells were cast last turn, transform Hinterland Logger.

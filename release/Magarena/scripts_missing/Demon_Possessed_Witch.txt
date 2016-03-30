@@ -1,0 +1,10 @@
+name=Demon-Possessed Witch
+image=http://magiccards.info/scans/en/soi/119b.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Shaman
+pt=4/3
+ability=When this creature transforms into SN, you may destroy target creature.
+timing=main
+oracle=When this creature transforms into Demon-Possessed Witch, you may destroy target creature.

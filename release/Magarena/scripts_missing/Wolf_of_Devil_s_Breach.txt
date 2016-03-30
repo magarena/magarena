@@ -1,0 +1,11 @@
+name=Wolf of Devil's Breach
+image=http://magiccards.info/scans/en/soi/192.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Elemental,Wolf
+cost={3}{R}{R}
+pt=5/5
+ability=Whenever SN attacks, you may pay {1}{R} and discard a card. If you do, SN deals damage to target creature or planeswalker equal to the discarded card's converted mana cost.
+timing=main
+oracle=Whenever Wolf of Devil's Breach attacks, you may pay {1}{R} and discard a card. If you do, Wolf of Devil's Breach deals damage to target creature or planeswalker equal to the discarded card's converted mana cost.

@@ -1,0 +1,12 @@
+name=Wild-Field Scarecrow
+image=http://magiccards.info/scans/en/soi/269.jpg
+value=2.500
+rarity=U
+type=Artifact,Creature
+subtype=Scarecrow
+cost={3}
+pt=1/4
+ability=Defender;\
+        {2}, Sacrifice SN: Search your library for up to two basic land cards, reveal them, and put them into your hand. Then shuffle your library.
+timing=smain
+oracle=Defender\n{2}, Sacrifice Wild-Field Scarecrow: Search your library for up to two basic land cards, reveal them, and put them into your hand. Then shuffle your library.

@@ -1,0 +1,10 @@
+name=Perfected Form
+image=http://magiccards.info/scans/en/soi/49b.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Insect,Horror
+pt=5/4
+ability=Flying
+timing=main
+oracle=Flying

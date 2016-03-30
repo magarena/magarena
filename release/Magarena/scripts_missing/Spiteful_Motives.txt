@@ -1,0 +1,13 @@
+name=Spiteful Motives
+image=http://magiccards.info/scans/en/soi/183.jpg
+value=2.500
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={3}{R}
+ability=Flash;\
+        Enchant creature;\
+        Enchanted creature gets +3/+0 and has first strike.
+timing=flash
+enchant=default,creature
+oracle=Flash\nEnchant creature\nEnchanted creature gets +3/+0 and has first strike.

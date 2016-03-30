@@ -1,0 +1,9 @@
+name=Fortified Village
+image=http://magiccards.info/scans/en/soi/274.jpg
+value=2.500
+rarity=R
+type=Land
+ability=As SN enters the battlefield, you may reveal a Forest or Plains card from your hand. If you don't, SN enters the battlefield tapped.;\
+        {T}: Add {G} or {W} to your mana pool.
+timing=land
+oracle=As Fortified Village enters the battlefield, you may reveal a Forest or Plains card from your hand. If you don't, Fortified Village enters the battlefield tapped.\n{T}: Add {G} or {W} to your mana pool.

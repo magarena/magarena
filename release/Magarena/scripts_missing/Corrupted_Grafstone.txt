@@ -1,0 +1,10 @@
+name=Corrupted Grafstone
+image=http://magiccards.info/scans/en/soi/253.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={2}
+ability=SN enters the battlefield tapped.;\
+        {T}: Choose a color of a card in your graveyard. Add one mana of that color to your mana pool.
+timing=artifact
+oracle=Corrupted Grafstone enters the battlefield tapped.\n{T}: Choose a color of a card in your graveyard. Add one mana of that color to your mana pool.

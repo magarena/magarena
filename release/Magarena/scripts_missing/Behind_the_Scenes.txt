@@ -1,0 +1,10 @@
+name=Behind the Scenes
+image=http://magiccards.info/scans/en/soi/100.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={2}{B}
+ability=Creatures you control have skulk.;\
+        {4}{W}: Creatures you control get +1/+1 until end of turn.
+timing=enchantment
+oracle=Creatures you control have skulk.\n{4}{W}: Creatures you control get +1/+1 until end of turn.

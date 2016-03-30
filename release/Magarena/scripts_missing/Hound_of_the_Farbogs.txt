@@ -1,0 +1,11 @@
+name=Hound of the Farbogs
+image=http://magiccards.info/scans/en/soi/117.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie,Hound
+cost={4}{B}
+pt=5/3
+ability=SN has menace as long as there are four or more card types among cards in your graveyard.
+timing=main
+oracle=Delirium — Hound of the Farbogs has menace as long as there are four or more card types among cards in your graveyard.

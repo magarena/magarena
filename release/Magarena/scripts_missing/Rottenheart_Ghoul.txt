@@ -1,0 +1,11 @@
+name=Rottenheart Ghoul
+image=http://magiccards.info/scans/en/soi/132.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie
+cost={3}{B}
+pt=2/4
+ability=When SN dies, target player discards a card.
+timing=main
+oracle=When Rottenheart Ghoul dies, target player discards a card.

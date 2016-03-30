@@ -1,0 +1,12 @@
+name=Morkrut Necropod
+image=http://magiccards.info/scans/en/soi/125.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Slug,Horror
+cost={5}{B}
+pt=7/7
+ability=Menace;\
+        Whenever SN attacks or blocks, sacrifice another creature or land.
+timing=main
+oracle=Menace\nWhenever Morkrut Necropod attacks or blocks, sacrifice another creature or land.

@@ -1,0 +1,12 @@
+name=Reaper of Flight Moonsilver
+image=http://magiccards.info/scans/en/soi/36.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Angel
+cost={3}{W}{W}
+pt=3/3
+ability=Flying;\
+        Sacrifice another creature: SN gets +2/+1 until end of turn. Activate this ability only if there are four or more card types among cards in your graveyard.
+timing=main
+oracle=Flying\nDelirium — Sacrifice another creature: Reaper of Flight Moonsilver gets +2/+1 until end of turn. Activate this ability only if there are four or more card types among cards in your graveyard.

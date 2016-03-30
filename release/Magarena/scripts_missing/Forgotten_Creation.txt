@@ -1,0 +1,12 @@
+name=Forgotten Creation
+image=http://magiccards.info/scans/en/soi/63.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Zombie,Horror
+cost={3}{U}
+pt=3/3
+ability=Skulk;\
+        At the beginning of your upkeep, you may discard all the cards in your hand. If you do, draw that many cards.
+timing=main
+oracle=Skulk\nAt the beginning of your upkeep, you may discard all the cards in your hand. If you do, draw that many cards.

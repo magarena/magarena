@@ -1,0 +1,12 @@
+name=Watcher in the Web
+image=http://magiccards.info/scans/en/soi/239.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Spider
+cost={4}{G}
+pt=2/5
+ability=Reach;\
+        SN can block an additional seven creatures each combat.
+timing=main
+oracle=Reach\nWatcher in the Web can block an additional seven creatures each combat.

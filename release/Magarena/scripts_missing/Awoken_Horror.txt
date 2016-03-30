@@ -1,0 +1,10 @@
+name=Awoken Horror
+image=http://magiccards.info/scans/en/soi/92b.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Kraken,Horror
+pt=7/8
+ability=When this creature transforms into SN, return all non-Horror creatures to their owners' hands.
+timing=main
+oracle=When this creature transforms into Awoken Horror, return all non-Horror creatures to their owners' hands.

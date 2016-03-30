@@ -1,0 +1,11 @@
+name=Gatstaf Ravagers
+image=http://magiccards.info/scans/en/soi/158b.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Werewolf
+pt=6/5
+ability=Menace;\
+        At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
+timing=main
+oracle=Menace\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Gatstaf Ravagers.

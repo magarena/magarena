@@ -1,0 +1,11 @@
+name=Moonrise Intruder
+image=http://magiccards.info/scans/en/soi/190b.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Werewolf
+pt=2/2
+ability=Menace;\
+        At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
+timing=main
+oracle=Menace\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Moonrise Intruder.

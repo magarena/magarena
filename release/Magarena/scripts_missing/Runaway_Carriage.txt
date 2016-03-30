@@ -1,0 +1,12 @@
+name=Runaway Carriage
+image=http://magiccards.info/scans/en/soi/261.jpg
+value=2.500
+rarity=U
+type=Artifact,Creature
+subtype=Construct
+cost={4}
+pt=5/6
+ability=Trample;\
+        When SN attacks or blocks, sacrifice it at end of combat.
+timing=main
+oracle=Trample\nWhen Runaway Carriage attacks or blocks, sacrifice it at end of combat.

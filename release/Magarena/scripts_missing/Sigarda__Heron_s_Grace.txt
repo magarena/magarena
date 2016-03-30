@@ -1,0 +1,13 @@
+name=Sigarda, Heron's Grace
+image=http://magiccards.info/scans/en/soi/250.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Angel
+cost={3}{G}{W}
+pt=4/5
+ability=Flying;\
+        You and Humans you control have hexproof.;\
+        {2}, Exile a card from your graveyard: Put a 1/1 white Human Soldier creature token onto the battlefield.
+timing=main
+oracle=Flying\nYou and Humans you control have hexproof.\n{2}, Exile a card from your graveyard: Put a 1/1 white Human Soldier creature token onto the battlefield.

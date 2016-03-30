@@ -1,0 +1,11 @@
+name=Daring Sleuth
+image=http://magiccards.info/scans/en/soi/54a.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Rogue
+cost={1}{U}
+pt=2/1
+ability=When you sacrifice a Clue, transform SN.
+timing=main
+oracle=When you sacrifice a Clue, transform Daring Sleuth.

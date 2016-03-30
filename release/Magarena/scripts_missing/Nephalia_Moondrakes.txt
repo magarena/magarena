@@ -1,0 +1,13 @@
+name=Nephalia Moondrakes
+image=http://magiccards.info/scans/en/soi/75.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Drake
+cost={5}{U}{U}
+pt=5/5
+ability=Flying;\
+        When SN enters the battlefield, target creature gains flying until end of turn.;\
+        {4}{U}{U}, Exile SN from your graveyard: Creatures you control gain flying until end of turn.
+timing=main
+oracle=Flying\nWhen Nephalia Moondrakes enters the battlefield, target creature gains flying until end of turn.\n{4}{U}{U}, Exile Nephalia Moondrakes from your graveyard: Creatures you control gain flying until end of turn.

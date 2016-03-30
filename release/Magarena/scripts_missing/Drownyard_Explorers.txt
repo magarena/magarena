@@ -1,0 +1,11 @@
+name=Drownyard Explorers
+image=http://magiccards.info/scans/en/soi/56.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Wizard
+cost={3}{U}
+pt=2/4
+ability=When SN enters the battlefield, investigate.
+timing=main
+oracle=When Drownyard Explorers enters the battlefield, investigate.

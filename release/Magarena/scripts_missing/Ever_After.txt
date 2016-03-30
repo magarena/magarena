@@ -1,0 +1,9 @@
+name=Ever After
+image=http://magiccards.info/scans/en/soi/109.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={4}{B}{B}
+effect=Return up to two target creature cards from your graveyard to the battlefield. Each of those creatures is a black Zombie in addition to its other colors and types. Put SN on the bottom of its owner's library.
+timing=main
+oracle=Return up to two target creature cards from your graveyard to the battlefield. Each of those creatures is a black Zombie in addition to its other colors and types. Put Ever After on the bottom of its owner's library.

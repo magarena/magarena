@@ -1,0 +1,10 @@
+name=Thornhide Wolves
+image=http://magiccards.info/scans/en/soi/232.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Wolf
+cost={4}{G}
+pt=4/5
+timing=main
+oracle=NONE

@@ -1,0 +1,11 @@
+name=Graf Mole
+image=http://magiccards.info/scans/en/soi/207.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Mole,Beast
+cost={2}{G}
+pt=2/4
+ability=Whenever you sacrifice a Clue, you gain 3 life.
+timing=main
+oracle=Whenever you sacrifice a Clue, you gain 3 life.

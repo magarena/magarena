@@ -1,0 +1,12 @@
+name=Insidious Mist
+image=http://magiccards.info/scans/en/soi/108b.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Elemental
+pt=0/1
+ability=Hexproof, indestructible;\
+        SN can't block and can't be blocked.;\
+        Whenever SN attacks and isn't blocked, you may pay {2}{B}. If you do, transform it.
+timing=main
+oracle=Hexproof, indestructible\nInsidious Mist can't block and can't be blocked.\nWhenever Insidious Mist attacks and isn't blocked, you may pay {2}{B}. If you do, transform it.

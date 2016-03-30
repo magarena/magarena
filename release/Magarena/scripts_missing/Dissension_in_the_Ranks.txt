@@ -1,0 +1,9 @@
+name=Dissension in the Ranks
+image=http://magiccards.info/scans/en/soi/152.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={3}{R}{R}
+effect=Target blocking creature fights another target blocking creature.
+timing=removal
+oracle=Target blocking creature fights another target blocking creature.

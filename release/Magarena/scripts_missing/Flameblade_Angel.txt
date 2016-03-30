@@ -1,0 +1,12 @@
+name=Flameblade Angel
+image=http://magiccards.info/scans/en/soi/157.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Angel
+cost={4}{R}{R}
+pt=4/4
+ability=Flying;\
+        Whenever a source an opponent controls deals damage to you or a permanent you control, you may have SN deal 1 damage to that source's controller.
+timing=main
+oracle=Flying\nWhenever a source an opponent controls deals damage to you or a permanent you control, you may have Flameblade Angel deal 1 damage to that source's controller.

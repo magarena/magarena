@@ -1,0 +1,12 @@
+name=Manic Scribe
+image=http://magiccards.info/scans/en/soi/73.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Wizard
+cost={1}{U}
+pt=0/3
+ability=When SN enters the battlefield, each opponent puts the top three cards of his or her library into his or her graveyard.;\
+        At the beginning of each opponent's upkeep, if there are four or more card types among cards in your graveyard, that player puts the top three cards of his or her library into his or her graveyard.
+timing=main
+oracle=When Manic Scribe enters the battlefield, each opponent puts the top three cards of his or her library into his or her graveyard.\nDelirium — At the beginning of each opponent's upkeep, if there are four or more card types among cards in your graveyard, that player puts the top three cards of his or her library into his or her graveyard.

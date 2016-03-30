@@ -1,0 +1,13 @@
+name=Skin Invasion
+image=http://magiccards.info/scans/en/soi/182a.jpg
+value=2.500
+rarity=U
+type=Enchantment
+subtype=Aura
+cost={R}
+ability=Enchant creature;\
+        Enchanted creature attacks each combat if able.;\
+        When enchanted creature dies, return SN to the battlefield transformed under your control.
+timing=aura
+enchant=default,creature
+oracle=Enchant creature\nEnchanted creature attacks each combat if able.\nWhen enchanted creature dies, return Skin Invasion to the battlefield transformed under your control.

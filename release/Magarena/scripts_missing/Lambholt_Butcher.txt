@@ -1,0 +1,10 @@
+name=Lambholt Butcher
+image=http://magiccards.info/scans/en/soi/215b.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Werewolf
+pt=4/4
+ability=At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
+timing=main
+oracle=At the beginning of each upkeep, if a player cast two or more spells last turn, transform Lambholt Butcher.

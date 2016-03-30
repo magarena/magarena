@@ -1,0 +1,9 @@
+name=Biting Rain
+image=http://magiccards.info/scans/en/soi/102.jpg
+value=2.500
+rarity=U
+type=Sorcery
+cost={2}{B}{B}
+effect=All creatures get -2/-2 until end of turn. ~Madness {2}{B}
+timing=main
+oracle=All creatures get -2/-2 until end of turn. \nMadness {2}{B}

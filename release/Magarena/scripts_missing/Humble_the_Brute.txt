@@ -1,0 +1,9 @@
+name=Humble the Brute
+image=http://magiccards.info/scans/en/soi/23.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={4}{W}
+effect=Destroy target creature with power 4 or greater.~Investigate.
+timing=removal
+oracle=Destroy target creature with power 4 or greater.\nInvestigate.

@@ -1,0 +1,12 @@
+name=Invocation of Saint Traft
+image=http://magiccards.info/scans/en/soi/246.jpg
+value=2.500
+rarity=R
+type=Enchantment
+subtype=Aura
+cost={1}{W}{U}
+ability=Enchant creature;\
+        Enchanted creature has "Whenever this creature attacks, put a 4/4 white Angel creature token with flying onto the battlefield tapped and attacking. Exile that token at end of combat."
+timing=aura
+enchant=default,creature
+oracle=Enchant creature\nEnchanted creature has "Whenever this creature attacks, put a 4/4 white Angel creature token with flying onto the battlefield tapped and attacking. Exile that token at end of combat."

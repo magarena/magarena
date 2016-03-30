@@ -1,0 +1,13 @@
+name=Senseless Rage
+image=http://magiccards.info/scans/en/soi/180.jpg
+value=2.500
+rarity=C
+type=Enchantment
+subtype=Aura
+cost={1}{R}
+ability=Enchant creature;\
+        Enchanted creature gets +2/+2.;\
+        Madness {1}{R}
+timing=aura
+enchant=default,creature
+oracle=Enchant creature\nEnchanted creature gets +2/+2.\nMadness {1}{R}

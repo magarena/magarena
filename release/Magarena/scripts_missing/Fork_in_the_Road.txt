@@ -1,0 +1,9 @@
+name=Fork in the Road
+image=http://magiccards.info/scans/en/soi/205.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={1}{G}
+effect=Search your library for up to two basic land cards and reveal them. Put one into your hand and the other into your graveyard. Then shuffle your library.
+timing=main
+oracle=Search your library for up to two basic land cards and reveal them. Put one into your hand and the other into your graveyard. Then shuffle your library.

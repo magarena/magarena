@@ -1,0 +1,12 @@
+name=Ember-Eye Wolf
+image=http://magiccards.info/scans/en/soi/154.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Wolf
+cost={1}{R}
+pt=1/2
+ability=Haste;\
+        {1}{R}: SN gets +2/+0 until end of turn.
+timing=fmain
+oracle=Haste\n{1}{R}: Ember-Eye Wolf gets +2/+0 until end of turn.

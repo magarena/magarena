@@ -1,0 +1,9 @@
+name=Dual Shot
+image=http://magiccards.info/scans/en/soi/153.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={R}
+effect=SN deals 1 damage to each of up to two target creatures.
+timing=removal
+oracle=Dual Shot deals 1 damage to each of up to two target creatures.

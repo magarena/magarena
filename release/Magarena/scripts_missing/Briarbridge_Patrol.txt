@@ -1,0 +1,12 @@
+name=Briarbridge Patrol
+image=http://magiccards.info/scans/en/soi/195.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Warrior
+cost={3}{G}
+pt=3/3
+ability=Whenever SN deals damage to one or more creatures, investigate.;\
+        At the beginning of each end step, if you sacrificed three or more Clues this turn, you may put a creature card from your hand onto the battlefield.
+timing=main
+oracle=Whenever Briarbridge Patrol deals damage to one or more creatures, investigate.\nAt the beginning of each end step, if you sacrificed three or more Clues this turn, you may put a creature card from your hand onto the battlefield.

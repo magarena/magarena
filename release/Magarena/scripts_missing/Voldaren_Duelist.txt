@@ -1,0 +1,12 @@
+name=Voldaren Duelist
+image=http://magiccards.info/scans/en/soi/191.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vampire,Warrior
+cost={3}{R}
+pt=3/2
+ability=Haste;\
+        When SN enters the battlefield, target creature can't block this turn.
+timing=fmain
+oracle=Haste\nWhen Voldaren Duelist enters the battlefield, target creature can't block this turn.

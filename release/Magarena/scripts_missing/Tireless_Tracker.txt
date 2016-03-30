@@ -1,0 +1,12 @@
+name=Tireless Tracker
+image=http://magiccards.info/scans/en/soi/233.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Scout
+cost={2}{G}
+pt=3/2
+ability=Whenever a land enters the battlefield under your control, investigate.;\
+        Whenever you sacrifice a Clue, put a +1/+1 counter on SN.
+timing=main
+oracle=Whenever a land enters the battlefield under your control, investigate.\nWhenever you sacrifice a Clue, put a +1/+1 counter on Tireless Tracker.

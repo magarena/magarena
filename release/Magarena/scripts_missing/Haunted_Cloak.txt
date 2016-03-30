@@ -1,0 +1,11 @@
+name=Haunted Cloak
+image=http://magiccards.info/scans/en/soi/257.jpg
+value=2.500
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={3}
+ability=Equipped creature has vigilance, trample, and haste.;\
+        Equip {1}
+timing=equipment
+oracle=Equipped creature has vigilance, trample, and haste.\nEquip {1}

@@ -1,0 +1,9 @@
+name=Reduce to Ashes
+image=http://magiccards.info/scans/en/soi/176.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={4}{R}
+effect=SN deals 5 damage to target creature. If that creature would die this turn, exile it instead.
+timing=main
+oracle=Reduce to Ashes deals 5 damage to target creature. If that creature would die this turn, exile it instead.

@@ -1,0 +1,9 @@
+name=Vessel of Nascency
+image=http://magiccards.info/scans/en/soi/237.jpg
+value=2.500
+rarity=C
+type=Enchantment
+cost={G}
+ability={1}{G}, Sacrifice SN: Reveal the top four cards of your library. You may put an artifact, creature, enchantment, land, or planeswalker card from among them into your hand. Put the rest into your graveyard.
+timing=enchantment
+oracle={1}{G}, Sacrifice Vessel of Nascency: Reveal the top four cards of your library. You may put an artifact, creature, enchantment, land, or planeswalker card from among them into your hand. Put the rest into your graveyard.

@@ -1,0 +1,9 @@
+name=Forsaken Sanctuary
+image=http://magiccards.info/scans/en/soi/273.jpg
+value=2.500
+rarity=U
+type=Land
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {W} or {B} to your mana pool.
+timing=land
+oracle=Forsaken Sanctuary enters the battlefield tapped.\n{T}: Add {W} or {B} to your mana pool.

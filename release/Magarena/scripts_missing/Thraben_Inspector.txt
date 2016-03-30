@@ -1,0 +1,11 @@
+name=Thraben Inspector
+image=http://magiccards.info/scans/en/soi/44.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Soldier
+cost={W}
+pt=1/2
+ability=When SN enters the battlefield, investigate.
+timing=main
+oracle=When Thraben Inspector enters the battlefield, investigate.

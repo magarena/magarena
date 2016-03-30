@@ -1,0 +1,9 @@
+name=Cryptolith Rite
+image=http://magiccards.info/scans/en/soi/200.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={1}{G}
+ability=Creatures you control have "{T}: Add one mana of any color to your mana pool."
+timing=enchantment
+oracle=Creatures you control have "{T}: Add one mana of any color to your mana pool."

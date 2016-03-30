@@ -1,0 +1,11 @@
+name=Breakneck Rider
+image=http://magiccards.info/scans/en/soi/147a.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Scout,Werewolf
+cost={1}{R}{R}
+pt=3/3
+ability=At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+timing=main
+oracle=At the beginning of each upkeep, if no spells were cast last turn, transform Breakneck Rider.

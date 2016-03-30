@@ -1,0 +1,12 @@
+name=Ulrich's Kindred
+image=http://magiccards.info/scans/en/soi/187.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Wolf
+cost={2}{R}
+pt=3/2
+ability=Trample;\
+        {3}{G}: Target attacking Wolf or Werewolf gains indestructible until end of turn.
+timing=main
+oracle=Trample\n{3}{G}: Target attacking Wolf or Werewolf gains indestructible until end of turn.

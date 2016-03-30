@@ -1,0 +1,12 @@
+name=Spectral Shepherd
+image=http://magiccards.info/scans/en/soi/38.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Spirit
+cost={2}{W}
+pt=2/2
+ability=Flying;\
+        {1}{U}: Return target Spirit you control to its owner's hand.
+timing=main
+oracle=Flying\n{1}{U}: Return target Spirit you control to its owner's hand.

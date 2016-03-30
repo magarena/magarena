@@ -1,0 +1,12 @@
+name=Angel of Deliverance
+image=http://magiccards.info/scans/en/soi/2.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Angel
+cost={6}{W}{W}
+pt=6/6
+ability=Flying;\
+        Whenever SN deals damage, if there are four or more card types among cards in your graveyard, exile target creature an opponent controls.
+timing=main
+oracle=Flying\nDelirium — Whenever Angel of Deliverance deals damage, if there are four or more card types among cards in your graveyard, exile target creature an opponent controls.

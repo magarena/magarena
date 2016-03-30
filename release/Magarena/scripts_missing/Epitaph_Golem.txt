@@ -1,0 +1,11 @@
+name=Epitaph Golem
+image=http://magiccards.info/scans/en/soi/254.jpg
+value=2.500
+rarity=U
+type=Artifact,Creature
+subtype=Golem
+cost={5}
+pt=3/5
+ability={2}: Put target card from your graveyard on the bottom of your library.
+timing=main
+oracle={2}: Put target card from your graveyard on the bottom of your library.

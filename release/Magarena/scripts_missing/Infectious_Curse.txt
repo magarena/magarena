@@ -1,0 +1,12 @@
+name=Infectious Curse
+image=http://magiccards.info/scans/en/soi/97b.jpg
+value=2.500
+rarity=U
+type=Enchantment
+subtype=Aura,Curse
+ability=Enchant player;\
+        Spells you cast that target enchanted player cost {1} less to cast.;\
+        At the beginning of enchanted player's upkeep, that player loses 1 life and you gain 1 life.
+timing=aura
+enchant=default,creature
+oracle=Enchant player\nSpells you cast that target enchanted player cost {1} less to cast.\nAt the beginning of enchanted player's upkeep, that player loses 1 life and you gain 1 life.

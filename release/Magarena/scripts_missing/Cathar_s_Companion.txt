@@ -1,0 +1,11 @@
+name=Cathar's Companion
+image=http://magiccards.info/scans/en/soi/9.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Hound
+cost={2}{W}
+pt=3/1
+ability=Whenever you cast a noncreature spell, SN gains indestructible until end of turn.
+timing=main
+oracle=Whenever you cast a noncreature spell, Cathar's Companion gains indestructible until end of turn.

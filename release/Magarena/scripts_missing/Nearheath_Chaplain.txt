@@ -1,0 +1,12 @@
+name=Nearheath Chaplain
+image=http://magiccards.info/scans/en/soi/29.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Cleric
+cost={3}{W}
+pt=3/1
+ability=Lifelink;\
+        {2}{W}, Exile SN from your graveyard: Put two 1/1 white Spirit creature tokens with flying onto the battlefield. Activate this ability only any time you could cast a sorcery.
+timing=main
+oracle=Lifelink\n{2}{W}, Exile Nearheath Chaplain from your graveyard: Put two 1/1 white Spirit creature tokens with flying onto the battlefield. Activate this ability only any time you could cast a sorcery.

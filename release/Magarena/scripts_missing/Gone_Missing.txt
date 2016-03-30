@@ -1,0 +1,9 @@
+name=Gone Missing
+image=http://magiccards.info/scans/en/soi/67.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={4}{U}
+effect=Put target permanent on top of its owner's library.~Investigate.
+timing=main
+oracle=Put target permanent on top of its owner's library.\nInvestigate.

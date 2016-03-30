@@ -1,0 +1,13 @@
+name=Geralf's Masterpiece
+image=http://magiccards.info/scans/en/soi/65.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Zombie,Horror
+cost={3}{U}{U}
+pt=7/7
+ability=Flying;\
+        SN gets -1/-1 for each card in your hand.;\
+        {3}{U}, Discard three cards: Return SN from your graveyard to the battlefield tapped.
+timing=main
+oracle=Flying\nGeralf's Masterpiece gets -1/-1 for each card in your hand.\n{3}{U}, Discard three cards: Return Geralf's Masterpiece from your graveyard to the battlefield tapped.

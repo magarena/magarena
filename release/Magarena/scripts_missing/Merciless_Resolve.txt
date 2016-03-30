@@ -1,0 +1,10 @@
+name=Merciless Resolve
+image=http://magiccards.info/scans/en/soi/123.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{B}
+ability=As an additional cost to cast SN, sacrifice a creature or land.
+effect=Draw two cards.
+timing=removal
+oracle=As an additional cost to cast Merciless Resolve, sacrifice a creature or land.\nDraw two cards.

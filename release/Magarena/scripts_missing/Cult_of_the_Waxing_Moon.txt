@@ -1,0 +1,11 @@
+name=Cult of the Waxing Moon
+image=http://magiccards.info/scans/en/soi/201.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Shaman
+cost={4}{G}
+pt=5/4
+ability=Whenever a permanent you control transforms into a non-Human creature, put a 2/2 green Wolf creature token onto the battlefield.
+timing=main
+oracle=Whenever a permanent you control transforms into a non-Human creature, put a 2/2 green Wolf creature token onto the battlefield.

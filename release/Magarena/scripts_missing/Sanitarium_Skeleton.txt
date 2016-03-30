@@ -1,0 +1,11 @@
+name=Sanitarium Skeleton
+image=http://magiccards.info/scans/en/soi/133.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Skeleton
+cost={B}
+pt=1/2
+ability={2}{B}: Return SN from your graveyard to your hand.
+timing=main
+oracle={2}{B}: Return Sanitarium Skeleton from your graveyard to your hand.

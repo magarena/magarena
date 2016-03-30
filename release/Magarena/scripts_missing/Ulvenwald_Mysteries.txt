@@ -1,0 +1,10 @@
+name=Ulvenwald Mysteries
+image=http://magiccards.info/scans/en/soi/236.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={2}{G}
+ability=Whenever a nontoken creature you control dies, investigate.;\
+        Whenever you sacrifice a Clue, put a 1/1 white Human Soldier creature token onto the battlefield.
+timing=enchantment
+oracle=Whenever a nontoken creature you control dies, investigate.\nWhenever you sacrifice a Clue, put a 1/1 white Human Soldier creature token onto the battlefield.

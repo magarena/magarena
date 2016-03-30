@@ -1,0 +1,9 @@
+name=Second Harvest
+image=http://magiccards.info/scans/en/soi/227.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={2}{G}{G}
+effect=For each token you control, put a token onto the battlefield that's a copy of that permanent.
+timing=removal
+oracle=For each token you control, put a token onto the battlefield that's a copy of that permanent.

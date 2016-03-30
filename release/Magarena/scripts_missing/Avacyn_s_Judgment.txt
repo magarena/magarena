@@ -1,0 +1,9 @@
+name=Avacyn's Judgment
+image=http://magiccards.info/scans/en/soi/145.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={1}{R}
+effect=Madness {X}{R}~SN deals 2 damage divided as you choose among any number of target creatures and/or players. If SN's madness cost was paid, it deals X damage divided as you choose among those creatures and/or players instead.
+timing=main
+oracle=Madness {X}{R}\nAvacyn's Judgment deals 2 damage divided as you choose among any number of target creatures and/or players. If Avacyn's Judgment's madness cost was paid, it deals X damage divided as you choose among those creatures and/or players instead.

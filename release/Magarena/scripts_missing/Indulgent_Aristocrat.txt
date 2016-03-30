@@ -1,0 +1,12 @@
+name=Indulgent Aristocrat
+image=http://magiccards.info/scans/en/soi/118.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Vampire
+cost={B}
+pt=1/1
+ability=Lifelink;\
+        {2}, Sacrifice a creature: Put a +1/+1 counter on each Vampire you control.
+timing=main
+oracle=Lifelink\n{2}, Sacrifice a creature: Put a +1/+1 counter on each Vampire you control.

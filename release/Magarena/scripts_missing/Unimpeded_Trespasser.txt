@@ -1,0 +1,10 @@
+name=Unimpeded Trespasser
+image=http://magiccards.info/scans/en/soi/94b.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Spirit
+pt=3/3
+ability=SN can't be blocked.
+timing=main
+oracle=Unimpeded Trespasser can't be blocked.

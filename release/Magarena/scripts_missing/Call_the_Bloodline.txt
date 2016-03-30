@@ -1,0 +1,9 @@
+name=Call the Bloodline
+image=http://magiccards.info/scans/en/soi/103.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={1}{B}
+ability={1}, Discard a card: Put a 1/1 black Vampire Knight creature token with lifelink onto the battlefield. Activate this ability only once each turn.
+timing=enchantment
+oracle={1}, Discard a card: Put a 1/1 black Vampire Knight creature token with lifelink onto the battlefield. Activate this ability only once each turn.

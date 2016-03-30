@@ -1,0 +1,11 @@
+name=Gatstaf Arsonists
+image=http://magiccards.info/scans/en/soi/158a.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Werewolf
+cost={4}{R}
+pt=5/4
+ability=At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+timing=main
+oracle=At the beginning of each upkeep, if no spells were cast last turn, transform Gatstaf Arsonists.

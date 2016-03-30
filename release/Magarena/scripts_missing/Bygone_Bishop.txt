@@ -1,0 +1,12 @@
+name=Bygone Bishop
+image=http://magiccards.info/scans/en/soi/8.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Spirit,Cleric
+cost={2}{W}
+pt=2/3
+ability=Flying;\
+        Whenever you cast a creature spell with converted mana cost 3 or less, investigate.
+timing=main
+oracle=Flying\nWhenever you cast a creature spell with converted mana cost 3 or less, investigate.

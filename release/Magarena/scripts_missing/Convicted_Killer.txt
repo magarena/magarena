@@ -1,0 +1,11 @@
+name=Convicted Killer
+image=http://magiccards.info/scans/en/soi/149a.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Werewolf
+cost={2}{R}
+pt=2/2
+ability=At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+timing=main
+oracle=At the beginning of each upkeep, if no spells were cast last turn, transform Convicted Killer.

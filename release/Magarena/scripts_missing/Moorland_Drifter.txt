@@ -1,0 +1,11 @@
+name=Moorland Drifter
+image=http://magiccards.info/scans/en/soi/27.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Spirit
+cost={1}{W}
+pt=2/2
+ability=SN has flying as long as there are four or more card types among cards in your graveyard.
+timing=main
+oracle=Delirium — Moorland Drifter has flying as long as there are four or more card types among cards in your graveyard.

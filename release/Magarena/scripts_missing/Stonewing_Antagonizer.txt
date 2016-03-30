@@ -1,0 +1,10 @@
+name=Stonewing Antagonizer
+image=http://magiccards.info/scans/en/soi/266b.jpg
+value=2.500
+rarity=U
+type=Artifact,Creature
+subtype=Gargoyle,Horror
+pt=4/2
+ability=Flying
+timing=main
+oracle=Flying

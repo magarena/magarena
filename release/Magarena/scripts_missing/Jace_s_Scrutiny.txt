@@ -1,0 +1,9 @@
+name=Jace's Scrutiny
+image=http://magiccards.info/scans/en/soi/70.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={1}{U}
+effect=Target creature gets -4/-0 until end of turn.~Investigate.
+timing=removal
+oracle=Target creature gets -4/-0 until end of turn.\nInvestigate.

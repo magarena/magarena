@@ -1,0 +1,11 @@
+name=Stoic Builder
+image=http://magiccards.info/scans/en/soi/231.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human
+cost={2}{G}
+pt=2/3
+ability=When SN enters the battlefield, you may return target land card from your graveyard to your hand.
+timing=main
+oracle=When Stoic Builder enters the battlefield, you may return target land card from your graveyard to your hand.

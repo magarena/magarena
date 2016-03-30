@@ -1,0 +1,10 @@
+name=Lunarch Inquisitors
+image=http://magiccards.info/scans/en/soi/6b.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Cleric
+pt=4/4
+ability=When this creature transforms into SN, you may exile another target creature until SN leaves the battlefield.
+timing=main
+oracle=When this creature transforms into Lunarch Inquisitors, you may exile another target creature until Lunarch Inquisitors leaves the battlefield.

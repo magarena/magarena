@@ -1,0 +1,11 @@
+name=Ghoulsteed
+image=http://magiccards.info/scans/en/soi/113.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Zombie,Horse
+cost={4}{B}
+pt=4/4
+ability={2}{B}, Discard two cards: Return SN from your graveyard to the battlefield tapped.
+timing=main
+oracle={2}{B}, Discard two cards: Return Ghoulsteed from your graveyard to the battlefield tapped.

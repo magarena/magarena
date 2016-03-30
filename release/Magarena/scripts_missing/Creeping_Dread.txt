@@ -1,0 +1,9 @@
+name=Creeping Dread
+image=http://magiccards.info/scans/en/soi/104.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={3}{B}
+ability=At the beginning of your upkeep, each player discards a card. Each opponent who discarded a card that shares a card type with the card you discarded loses 3 life.
+timing=enchantment
+oracle=At the beginning of your upkeep, each player discards a card. Each opponent who discarded a card that shares a card type with the card you discarded loses 3 life.

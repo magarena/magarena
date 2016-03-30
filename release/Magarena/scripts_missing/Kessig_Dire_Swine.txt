@@ -1,0 +1,11 @@
+name=Kessig Dire Swine
+image=http://magiccards.info/scans/en/soi/214.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Boar,Horror
+cost={4}{G}{G}
+pt=6/6
+ability=SN has trample as long as there are four or more card types among cards in your graveyard.
+timing=main
+oracle=Delirium — Kessig Dire Swine has trample as long as there are four or more card types among cards in your graveyard.

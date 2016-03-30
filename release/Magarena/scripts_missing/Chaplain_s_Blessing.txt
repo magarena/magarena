@@ -1,0 +1,9 @@
+name=Chaplain's Blessing
+image=http://magiccards.info/scans/en/soi/10.jpg
+value=2.500
+rarity=C
+type=Sorcery
+cost={W}
+effect=You gain 5 life.
+timing=main
+oracle=You gain 5 life.

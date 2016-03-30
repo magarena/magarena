@@ -1,0 +1,11 @@
+name=Bearer of Overwhelming Truths
+image=http://magiccards.info/scans/en/soi/54b.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Wizard
+pt=3/2
+ability=Prowess;\
+        Whenever SN deals combat damage to a player, investigate.
+timing=main
+oracle=Prowess\nWhenever Bearer of Overwhelming Truths deals combat damage to a player, investigate.

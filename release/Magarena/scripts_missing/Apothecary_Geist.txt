@@ -1,0 +1,12 @@
+name=Apothecary Geist
+image=http://magiccards.info/scans/en/soi/4.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Spirit
+cost={3}{W}
+pt=2/3
+ability=Flying;\
+        When SN enters the battlefield, if you control another Spirit, you gain 3 life.
+timing=main
+oracle=Flying\nWhen Apothecary Geist enters the battlefield, if you control another Spirit, you gain 3 life.

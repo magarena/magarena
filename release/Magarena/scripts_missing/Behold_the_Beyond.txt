@@ -1,0 +1,9 @@
+name=Behold the Beyond
+image=http://magiccards.info/scans/en/soi/101.jpg
+value=2.500
+rarity=M
+type=Sorcery
+cost={5}{B}{B}
+effect=Discard your hand. Search your library for three cards and put those cards into your hand. Then shuffle your library.
+timing=main
+oracle=Discard your hand. Search your library for three cards and put those cards into your hand. Then shuffle your library.

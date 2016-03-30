@@ -1,0 +1,12 @@
+name=Rancid Rats
+image=http://magiccards.info/scans/en/soi/130.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie,Rat
+cost={1}{B}
+pt=1/1
+ability=Skulk;\
+        Deathtouch
+timing=main
+oracle=Skulk\nDeathtouch

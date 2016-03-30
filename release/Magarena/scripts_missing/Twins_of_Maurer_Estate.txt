@@ -1,0 +1,11 @@
+name=Twins of Maurer Estate
+image=http://magiccards.info/scans/en/soi/142.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vampire
+cost={4}{B}
+pt=3/5
+ability=Madness {2}{B}
+timing=main
+oracle=Madness {2}{B}

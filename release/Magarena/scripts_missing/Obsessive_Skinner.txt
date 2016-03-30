@@ -1,0 +1,12 @@
+name=Obsessive Skinner
+image=http://magiccards.info/scans/en/soi/220.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Rogue
+cost={1}{G}
+pt=1/1
+ability=When SN enters the battlefield, put a +1/+1 counter on target creature.;\
+        At the beginning of each opponent's upkeep, if there are four or more card types among cards in your graveyard, put a +1/+1 counter on target creature.
+timing=main
+oracle=When Obsessive Skinner enters the battlefield, put a +1/+1 counter on target creature.\nDelirium — At the beginning of each opponent's upkeep, if there are four or more card types among cards in your graveyard, put a +1/+1 counter on target creature.

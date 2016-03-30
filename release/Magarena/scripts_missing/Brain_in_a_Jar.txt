@@ -1,0 +1,10 @@
+name=Brain in a Jar
+image=http://magiccards.info/scans/en/soi/252.jpg
+value=2.500
+rarity=R
+type=Artifact
+cost={2}
+ability={1}, {T}: Put a charge counter on SN, then you may cast an instant or sorcery card with converted mana cost equal to the number of charge counters on SN from your hand without paying its mana cost.;\
+        {3}, {T}, Remove X charge counters from SN: Scry X.
+timing=artifact
+oracle={1}, {T}: Put a charge counter on Brain in a Jar, then you may cast an instant or sorcery card with converted mana cost equal to the number of charge counters on Brain in a Jar from your hand without paying its mana cost.\n{3}, {T}, Remove X charge counters from Brain in a Jar: Scry X.

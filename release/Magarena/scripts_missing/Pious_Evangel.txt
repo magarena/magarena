@@ -1,0 +1,12 @@
+name=Pious Evangel
+image=http://magiccards.info/scans/en/soi/34a.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Cleric
+cost={2}{W}
+pt=2/2
+ability=Whenever SN or another creature enters the battlefield under your control, you gain 1 life.;\
+        {2}, {T}, Sacrifice another permanent: Transform SN.
+timing=main
+oracle=Whenever Pious Evangel or another creature enters the battlefield under your control, you gain 1 life.\n{2}, {T}, Sacrifice another permanent: Transform Pious Evangel.

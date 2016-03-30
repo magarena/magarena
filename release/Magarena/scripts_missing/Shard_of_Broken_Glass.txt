@@ -1,0 +1,12 @@
+name=Shard of Broken Glass
+image=http://magiccards.info/scans/en/soi/262.jpg
+value=2.500
+rarity=C
+type=Artifact
+subtype=Equipment
+cost={1}
+ability=Equipped creature gets +1/+0.;\
+        Whenever equipped creature attacks, you may put the top two cards of your library into your graveyard.;\
+        Equip {1}
+timing=equipment
+oracle=Equipped creature gets +1/+0.\nWhenever equipped creature attacks, you may put the top two cards of your library into your graveyard.\nEquip {1}

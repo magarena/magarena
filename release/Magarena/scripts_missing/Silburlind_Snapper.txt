@@ -1,0 +1,11 @@
+name=Silburlind Snapper
+image=http://magiccards.info/scans/en/soi/85.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Turtle
+cost={5}{U}
+pt=6/6
+ability=SN can't attack unless you've cast a noncreature spell this turn.
+timing=main
+oracle=Silburlind Snapper can't attack unless you've cast a noncreature spell this turn.

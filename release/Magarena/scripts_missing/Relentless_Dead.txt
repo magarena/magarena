@@ -1,0 +1,13 @@
+name=Relentless Dead
+image=http://magiccards.info/scans/en/soi/131.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Zombie
+cost={B}{B}
+pt=2/2
+ability=Menace;\
+        When SN dies, you may pay {B}. If you do, return it to its owner's hand.;\
+        When SN dies, you may pay {X}. If you do, return another target Zombie creature card with converted mana cost X from your graveyard to the battlefield.
+timing=main
+oracle=Menace\nWhen Relentless Dead dies, you may pay {B}. If you do, return it to its owner's hand.\nWhen Relentless Dead dies, you may pay {X}. If you do, return another target Zombie creature card with converted mana cost X from your graveyard to the battlefield.

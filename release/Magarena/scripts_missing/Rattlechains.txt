@@ -1,0 +1,14 @@
+name=Rattlechains
+image=http://magiccards.info/scans/en/soi/81.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Spirit
+cost={1}{U}
+pt=2/1
+ability=Flash;\
+        Flying;\
+        When SN enters the battlefield, target Spirit gains hexproof until end of turn.;\
+        You may cast Spirit spells as though they had flash.
+timing=flash
+oracle=Flash\nFlying\nWhen Rattlechains enters the battlefield, target Spirit gains hexproof until end of turn.\nYou may cast Spirit spells as though they had flash.

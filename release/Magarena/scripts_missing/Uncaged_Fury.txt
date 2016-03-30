@@ -1,0 +1,9 @@
+name=Uncaged Fury
+image=http://magiccards.info/scans/en/soi/188.jpg
+value=2.500
+rarity=C
+type=Instant
+cost={2}{R}
+effect=Target creature gets +1/+1 and gains double strike until end of turn.
+timing=removal
+oracle=Target creature gets +1/+1 and gains double strike until end of turn.

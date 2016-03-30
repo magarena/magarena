@@ -1,0 +1,9 @@
+name=Traverse the Ulvenwald
+image=http://magiccards.info/scans/en/soi/234.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={G}
+effect=Search your library for a basic land card, reveal it, put it into your hand, then shuffle your library.~If there are four or more card types among cards in your graveyard, instead search your library for a creature or land card, reveal it, put it into your hand, then shuffle your library.
+timing=main
+oracle=Search your library for a basic land card, reveal it, put it into your hand, then shuffle your library.\nDelirium — If there are four or more card types among cards in your graveyard, instead search your library for a creature or land card, reveal it, put it into your hand, then shuffle your library.

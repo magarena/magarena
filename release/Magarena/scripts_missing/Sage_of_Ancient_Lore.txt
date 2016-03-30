@@ -1,0 +1,13 @@
+name=Sage of Ancient Lore
+image=http://magiccards.info/scans/en/soi/225a.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Shaman,Werewolf
+cost={4}{G}
+pt=*/*
+ability=SN's power and toughness are each equal to the number of cards in your hand.;\
+        When SN enters the battlefield, draw a card.;\
+        At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+timing=main
+oracle=Sage of Ancient Lore's power and toughness are each equal to the number of cards in your hand.\nWhen Sage of Ancient Lore enters the battlefield, draw a card.\nAt the beginning of each upkeep, if no spells were cast last turn, transform Sage of Ancient Lore.

@@ -1,0 +1,12 @@
+name=Stitched Mangler
+image=http://magiccards.info/scans/en/soi/89.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie,Horror
+cost={2}{U}
+pt=2/3
+ability=SN enters the battlefield tapped.;\
+        When SN enters the battlefield, tap target creature an opponent controls. That creature doesn't untap during its controller's next untap step.
+timing=main
+oracle=Stitched Mangler enters the battlefield tapped.\nWhen Stitched Mangler enters the battlefield, tap target creature an opponent controls. That creature doesn't untap during its controller's next untap step.

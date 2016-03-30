@@ -1,0 +1,9 @@
+name=Moonlight Hunt
+image=http://magiccards.info/scans/en/soi/219.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={1}{G}
+effect=Choose target creature you don't control. Each creature you control that's a Wolf or a Werewolf deals damage equal to its power to that creature.
+timing=removal
+oracle=Choose target creature you don't control. Each creature you control that's a Wolf or a Werewolf deals damage equal to its power to that creature.

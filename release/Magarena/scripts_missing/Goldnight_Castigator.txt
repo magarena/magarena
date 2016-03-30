@@ -1,0 +1,13 @@
+name=Goldnight Castigator
+image=http://magiccards.info/scans/en/soi/162.jpg
+value=2.500
+rarity=M
+type=Creature
+subtype=Angel
+cost={2}{R}{R}
+pt=4/9
+ability=Flying, haste;\
+        If a source would deal damage to you, it deals double that damage to you instead.;\
+        If a source would deal damage to SN, it deals double that damage to SN instead.
+timing=main
+oracle=Flying, haste\nIf a source would deal damage to you, it deals double that damage to you instead.\nIf a source would deal damage to Goldnight Castigator, it deals double that damage to Goldnight Castigator instead.

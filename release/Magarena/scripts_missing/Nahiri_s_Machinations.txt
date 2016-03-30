@@ -1,0 +1,10 @@
+name=Nahiri's Machinations
+image=http://magiccards.info/scans/en/soi/28.jpg
+value=2.500
+rarity=U
+type=Enchantment
+cost={1}{W}
+ability=At the beginning of combat on your turn, target creature you control gains indestructible until end of turn.;\
+        {1}{R}: SN deals 1 damage to target blocking creature.
+timing=enchantment
+oracle=At the beginning of combat on your turn, target creature you control gains indestructible until end of turn.\n{1}{R}: Nahiri's Machinations deals 1 damage to target blocking creature.

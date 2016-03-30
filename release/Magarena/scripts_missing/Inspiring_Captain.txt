@@ -1,0 +1,11 @@
+name=Inspiring Captain
+image=http://magiccards.info/scans/en/soi/25.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Knight
+cost={3}{W}
+pt=3/3
+ability=When SN enters the battlefield, creatures you control get +1/+1 until end of turn.
+timing=main
+oracle=When Inspiring Captain enters the battlefield, creatures you control get +1/+1 until end of turn.

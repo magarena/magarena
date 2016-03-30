@@ -1,0 +1,10 @@
+name=Heir to the Night
+image=http://magiccards.info/scans/en/soi/116b.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Vampire,Berserker
+pt=3/2
+ability=Flying
+timing=main
+oracle=Flying

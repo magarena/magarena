@@ -1,0 +1,11 @@
+name=Stromkirk Mentor
+image=http://magiccards.info/scans/en/soi/137.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Vampire,Soldier
+cost={3}{B}
+pt=4/2
+ability=When SN enters the battlefield, put a +1/+1 counter on another target Vampire you control.
+timing=main
+oracle=When Stromkirk Mentor enters the battlefield, put a +1/+1 counter on another target Vampire you control.

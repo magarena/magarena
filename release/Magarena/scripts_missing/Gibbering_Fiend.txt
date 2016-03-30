@@ -1,0 +1,12 @@
+name=Gibbering Fiend
+image=http://magiccards.info/scans/en/soi/161.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Devil
+cost={1}{R}
+pt=2/1
+ability=When SN enters the battlefield, it deals 1 damage to each opponent.;\
+        At the beginning of each opponent's upkeep, if there are four or more card types among cards in your graveyard, SN deals 1 damage to that player.
+timing=main
+oracle=When Gibbering Fiend enters the battlefield, it deals 1 damage to each opponent.\nDelirium — At the beginning of each opponent's upkeep, if there are four or more card types among cards in your graveyard, Gibbering Fiend deals 1 damage to that player.

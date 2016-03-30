@@ -1,0 +1,12 @@
+name=Pack Guardian
+image=http://magiccards.info/scans/en/soi/221.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Wolf,Spirit
+cost={2}{G}{G}
+pt=4/3
+ability=Flash;\
+        When SN enters the battlefield, you may discard a land card. If you do, put a 2/2 green Wolf creature token onto the battlefield.
+timing=flash
+oracle=Flash\nWhen Pack Guardian enters the battlefield, you may discard a land card. If you do, put a 2/2 green Wolf creature token onto the battlefield.

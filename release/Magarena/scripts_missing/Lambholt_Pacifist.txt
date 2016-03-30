@@ -1,0 +1,12 @@
+name=Lambholt Pacifist
+image=http://magiccards.info/scans/en/soi/215a.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Shaman,Werewolf
+cost={1}{G}
+pt=3/3
+ability=SN can't attack unless you control a creature with power 4 or greater.;\
+        At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+timing=main
+oracle=Lambholt Pacifist can't attack unless you control a creature with power 4 or greater.\nAt the beginning of each upkeep, if no spells were cast last turn, transform Lambholt Pacifist.

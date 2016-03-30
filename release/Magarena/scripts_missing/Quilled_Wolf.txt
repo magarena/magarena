@@ -1,0 +1,11 @@
+name=Quilled Wolf
+image=http://magiccards.info/scans/en/soi/222.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Wolf
+cost={1}{G}
+pt=2/2
+ability={5}{G}: SN gets +4/+4 until end of turn.
+timing=main
+oracle={5}{G}: Quilled Wolf gets +4/+4 until end of turn.

@@ -1,0 +1,11 @@
+name=Harvest Hand
+image=http://magiccards.info/scans/en/soi/256a.jpg
+value=2.500
+rarity=U
+type=Artifact,Creature
+subtype=Scarecrow
+cost={3}
+pt=2/2
+ability=When SN dies, return it to the battlefield transformed under your control.
+timing=main
+oracle=When Harvest Hand dies, return it to the battlefield transformed under your control.

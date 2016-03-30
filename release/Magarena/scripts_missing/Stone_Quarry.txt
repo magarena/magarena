@@ -1,0 +1,9 @@
+name=Stone Quarry
+image=http://magiccards.info/scans/en/soi/279.jpg
+value=2.500
+rarity=U
+type=Land
+ability=SN enters the battlefield tapped.;\
+        {T}: Add {R} or {W} to your mana pool.
+timing=land
+oracle=Stone Quarry enters the battlefield tapped.\n{T}: Add {R} or {W} to your mana pool.

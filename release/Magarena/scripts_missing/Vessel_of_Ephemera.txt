@@ -1,0 +1,9 @@
+name=Vessel of Ephemera
+image=http://magiccards.info/scans/en/soi/48.jpg
+value=2.500
+rarity=C
+type=Enchantment
+cost={1}{W}
+ability={2}{W}, Sacrifice SN: Put two 1/1 white Spirit creature tokens with flying onto the battlefield.
+timing=enchantment
+oracle={2}{W}, Sacrifice Vessel of Ephemera: Put two 1/1 white Spirit creature tokens with flying onto the battlefield.

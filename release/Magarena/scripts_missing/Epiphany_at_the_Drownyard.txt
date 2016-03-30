@@ -1,0 +1,9 @@
+name=Epiphany at the Drownyard
+image=http://magiccards.info/scans/en/soi/59.jpg
+value=2.500
+rarity=R
+type=Instant
+cost={X}{U}
+effect=Reveal the top X plus one cards of your library and separate them into two piles. An opponent chooses one of those piles. Put that pile into your hand and the other into your graveyard.
+timing=removal
+oracle=Reveal the top X plus one cards of your library and separate them into two piles. An opponent chooses one of those piles. Put that pile into your hand and the other into your graveyard.

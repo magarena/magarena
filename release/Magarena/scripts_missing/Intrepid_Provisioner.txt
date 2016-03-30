@@ -1,0 +1,12 @@
+name=Intrepid Provisioner
+image=http://magiccards.info/scans/en/soi/213.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Human,Scout
+cost={3}{G}
+pt=3/3
+ability=Trample;\
+        When SN enters the battlefield, another target Human you control gets +2/+2 until end of turn.
+timing=main
+oracle=Trample\nWhen Intrepid Provisioner enters the battlefield, another target Human you control gets +2/+2 until end of turn.

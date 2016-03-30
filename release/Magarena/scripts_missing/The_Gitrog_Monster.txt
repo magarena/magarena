@@ -1,0 +1,14 @@
+name=The Gitrog Monster
+image=http://magiccards.info/scans/en/soi/245.jpg
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Frog,Horror
+cost={3}{B}{G}
+pt=6/6
+ability=Deathtouch;\
+        At the beginning of your upkeep, sacrifice SN unless you sacrifice a land.;\
+        You may play an additional land on each of your turns.;\
+        Whenever one or more land cards are put into your graveyard from anywhere, draw a card.
+timing=main
+oracle=Deathtouch\nAt the beginning of your upkeep, sacrifice The Gitrog Monster unless you sacrifice a land.\nYou may play an additional land on each of your turns.\nWhenever one or more land cards are put into your graveyard from anywhere, draw a card.

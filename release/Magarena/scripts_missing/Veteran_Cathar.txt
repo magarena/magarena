@@ -1,0 +1,11 @@
+name=Veteran Cathar
+image=http://magiccards.info/scans/en/soi/238.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Human,Soldier
+cost={1}{G}
+pt=2/2
+ability={3}{W}: Target Human gains double strike until end of turn.
+timing=main
+oracle={3}{W}: Target Human gains double strike until end of turn.

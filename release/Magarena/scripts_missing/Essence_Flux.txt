@@ -1,0 +1,9 @@
+name=Essence Flux
+image=http://magiccards.info/scans/en/soi/61.jpg
+value=2.500
+rarity=U
+type=Instant
+cost={U}
+effect=Exile target creature you control, then return that card to the battlefield under its owner's control. If it's a Spirit, put a +1/+1 counter on it.
+timing=removal
+oracle=Exile target creature you control, then return that card to the battlefield under its owner's control. If it's a Spirit, put a +1/+1 counter on it.

@@ -1,0 +1,9 @@
+name=Harness the Storm
+image=http://magiccards.info/scans/en/soi/163.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={2}{R}
+ability=Whenever you cast an instant or sorcery spell from your hand, you may cast target card with the same name as that spell from your graveyard.
+timing=enchantment
+oracle=Whenever you cast an instant or sorcery spell from your hand, you may cast target card with the same name as that spell from your graveyard.

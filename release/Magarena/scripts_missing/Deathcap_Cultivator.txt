@@ -1,0 +1,12 @@
+name=Deathcap Cultivator
+image=http://magiccards.info/scans/en/soi/202.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Druid
+cost={1}{G}
+pt=2/1
+ability={T}: Add {B} or {G} to your mana pool.;\
+        SN has deathtouch as long as there are four or more card types among cards in your graveyard.
+timing=main
+oracle={T}: Add {B} or {G} to your mana pool.\nDelirium — Deathcap Cultivator has deathtouch as long as there are four or more card types among cards in your graveyard.

@@ -1,0 +1,11 @@
+name=Loam Dryad
+image=http://magiccards.info/scans/en/soi/216.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Dryad,Horror
+cost={G}
+pt=1/2
+ability={T}, Tap an untapped creature you control: Add one mana of any color to your mana pool.
+timing=main
+oracle={T}, Tap an untapped creature you control: Add one mana of any color to your mana pool.

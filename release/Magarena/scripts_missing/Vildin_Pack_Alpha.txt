@@ -1,0 +1,11 @@
+name=Vildin-Pack Alpha
+image=http://magiccards.info/scans/en/soi/159b.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Werewolf
+pt=4/3
+ability=Whenever a Werewolf enters the battlefield under your control, you may transform it.;\
+        At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
+timing=main
+oracle=Whenever a Werewolf enters the battlefield under your control, you may transform it.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Vildin-Pack Alpha.

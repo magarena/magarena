@@ -1,0 +1,12 @@
+name=Silverfur Partisan
+image=http://magiccards.info/scans/en/soi/228.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Wolf,Warrior
+cost={2}{G}
+pt=2/2
+ability=Trample;\
+        Whenever a Wolf or Werewolf you control becomes the target of an instant or sorcery spell, put a 2/2 green Wolf creature token onto the battlefield.
+timing=main
+oracle=Trample\nWhenever a Wolf or Werewolf you control becomes the target of an instant or sorcery spell, put a 2/2 green Wolf creature token onto the battlefield.

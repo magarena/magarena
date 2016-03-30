@@ -1,0 +1,11 @@
+name=Odric, Lunarch Marshal
+image=http://magiccards.info/scans/en/soi/31.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Human,Soldier
+cost={3}{W}
+pt=3/3
+ability=At the beginning of each combat, creatures you control gain first strike until end of turn if a creature you control has first strike. The same is true for flying, deathtouch, double strike, haste, hexproof, indestructible, lifelink, menace, reach, skulk, trample, and vigilance.
+timing=main
+oracle=At the beginning of each combat, creatures you control gain first strike until end of turn if a creature you control has first strike. The same is true for flying, deathtouch, double strike, haste, hexproof, indestructible, lifelink, menace, reach, skulk, trample, and vigilance.

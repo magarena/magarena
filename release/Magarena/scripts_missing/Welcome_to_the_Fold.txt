@@ -1,0 +1,9 @@
+name=Welcome to the Fold
+image=http://magiccards.info/scans/en/soi/96.jpg
+value=2.500
+rarity=R
+type=Sorcery
+cost={2}{U}{U}
+effect=Madness {X}{U}{U}~Gain control of target creature if its toughness is 2 or less. If SN's madness cost was paid, instead gain control of that creature if its toughness is X or less.
+timing=main
+oracle=Madness {X}{U}{U}\nGain control of target creature if its toughness is 2 or less. If Welcome to the Fold's madness cost was paid, instead gain control of that creature if its toughness is X or less.

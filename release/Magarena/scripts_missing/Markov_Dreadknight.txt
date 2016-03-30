@@ -1,0 +1,12 @@
+name=Markov Dreadknight
+image=http://magiccards.info/scans/en/soi/122.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Vampire,Knight
+cost={3}{B}{B}
+pt=3/3
+ability=Flying;\
+        {2}{B}, Discard a card: Put two +1/+1 counters on SN.
+timing=main
+oracle=Flying\n{2}{B}, Discard a card: Put two +1/+1 counters on Markov Dreadknight.

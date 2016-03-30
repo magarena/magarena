@@ -1,0 +1,12 @@
+name=Skeleton Key
+image=http://magiccards.info/scans/en/soi/263.jpg
+value=2.500
+rarity=U
+type=Artifact
+subtype=Equipment
+cost={1}
+ability=Equipped creature has skulk.;\
+        Whenever equipped creature deals combat damage to a player, you may draw a card. If you do, discard a card.;\
+        Equip {2}
+timing=equipment
+oracle=Equipped creature has skulk.\nWhenever equipped creature deals combat damage to a player, you may draw a card. If you do, discard a card.\nEquip {2}

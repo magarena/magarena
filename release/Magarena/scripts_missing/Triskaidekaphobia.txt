@@ -1,0 +1,11 @@
+name=Triskaidekaphobia
+image=http://magiccards.info/scans/en/soi/141.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={3}{B}
+ability=At the beginning of your upkeep, choose one — \
+        (1) Each player with exactly 13 life loses the game, then each player gains 1 life. \
+        (2) Each player with exactly 13 life loses the game, then each player loses 1 life.
+timing=enchantment
+oracle=At the beginning of your upkeep, choose one —\n• Each player with exactly 13 life loses the game, then each player gains 1 life.\n• Each player with exactly 13 life loses the game, then each player loses 1 life.

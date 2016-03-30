@@ -1,0 +1,12 @@
+name=Werewolf of Ancient Hunger
+image=http://magiccards.info/scans/en/soi/225b.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Werewolf
+pt=*/*
+ability=Vigilance, trample;\
+        SN's power and toughness are each equal to the total number of cards in all players' hands.;\
+        At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
+timing=main
+oracle=Vigilance, trample\nWerewolf of Ancient Hunger's power and toughness are each equal to the total number of cards in all players' hands.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Werewolf of Ancient Hunger.

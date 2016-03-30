@@ -1,0 +1,10 @@
+name=Ormendahl, Profane Prince
+image=http://magiccards.info/scans/en/soi/281b.jpg
+value=2.500
+rarity=R
+type=Legendary,Creature
+subtype=Demon
+pt=9/7
+ability=Flying, lifelink, indestructible, haste
+timing=main
+oracle=Flying, lifelink, indestructible, haste

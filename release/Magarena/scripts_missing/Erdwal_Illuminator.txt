@@ -1,0 +1,12 @@
+name=Erdwal Illuminator
+image=http://magiccards.info/scans/en/soi/60.jpg
+value=2.500
+rarity=U
+type=Creature
+subtype=Spirit
+cost={1}{U}
+pt=1/3
+ability=Flying;\
+        Whenever you investigate for the first time each turn, investigate an additional time.
+timing=main
+oracle=Flying\nWhenever you investigate for the first time each turn, investigate an additional time.

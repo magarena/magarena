@@ -1,0 +1,11 @@
+name=Westvale Cult Leader
+image=http://magiccards.info/scans/en/soi/21b.jpg
+value=2.500
+rarity=R
+type=Creature
+subtype=Human,Cleric
+pt=*/*
+ability=SN's power and toughness are each equal to the number of creatures you control.;\
+        At the beginning of your end step, put a 1/1 white and black Human Cleric creature token onto the battlefield.
+timing=main
+oracle=Westvale Cult Leader's power and toughness are each equal to the number of creatures you control.\nAt the beginning of your end step, put a 1/1 white and black Human Cleric creature token onto the battlefield.

@@ -1,0 +1,9 @@
+name=Always Watching
+image=http://magiccards.info/scans/en/soi/1.jpg
+value=2.500
+rarity=R
+type=Enchantment
+cost={1}{W}{W}
+ability=Nontoken creatures you control get +1/+1 and have vigilance.
+timing=enchantment
+oracle=Nontoken creatures you control get +1/+1 and have vigilance.

@@ -1,0 +1,10 @@
+name=Seagraf Skaab
+image=http://magiccards.info/scans/en/soi/84.jpg
+value=2.500
+rarity=C
+type=Creature
+subtype=Zombie
+cost={1}{U}
+pt=1/3
+timing=main
+oracle=NONE
