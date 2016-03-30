@@ -6,6 +6,6 @@ type=Creature
 subtype=Dryad,Horror
 cost={G}
 pt=1/2
-ability={T}, Tap an untapped creature you control: Add one mana of any color to your mana pool.
+ability={T}, Tap another untapped creature you control: Add one mana of any color to your mana pool.
 timing=main
 oracle={T}, Tap an untapped creature you control: Add one mana of any color to your mana pool.
