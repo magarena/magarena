@@ -1,17 +1,23 @@
 package magic.model;
 
+import java.util.EnumSet;
+import magic.translate.UiString;
+
 public enum MagicRarity {
-    Basic('B'),
-    Common('C'),
-    Uncommon('U'),
-    Rare('R'),
-    Mythic_Rare('M');
+    
+    Basic(MagicRarityStr._SBasic, 'B'),
+    Common(MagicRarityStr._SCommon, 'C'),
+    Uncommon(MagicRarityStr._SUncommon, 'U'),
+    Rare(MagicRarityStr._SRare, 'R'),
+    Mythic_Rare(MagicRarityStr._SMythicRare, 'M');
 
     public static final int length = values().length;
 
     private final char c;
+    private final String displayName;
 
-    private MagicRarity(final char c) {
+    private MagicRarity(final String aName, final char c) {
+        this.displayName = UiString.get(aName);
         this.c = c;
     }
 
@@ -20,7 +26,7 @@ public enum MagicRarity {
     }
 
     public String getName() {
-        return toString().replace('_',' ');
+        return displayName;
     }
 
     public static MagicRarity getRarity(final char c) {
@@ -31,5 +37,13 @@ public enum MagicRarity {
         }
         throw new RuntimeException("unknown rarity \"" + c + "\"");
     }
+
+    public static String[] getDisplayNames() {
+        return EnumSet.allOf(MagicRarity.class)
+            .stream()
+            .map(MagicRarity::getName)
+            .toArray(String[]::new);
+    }
+    
 }
 
