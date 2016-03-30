@@ -33,20 +33,23 @@
                 int amount = event.getRefInt();
                 int creatureCards = 0;
                 while (creatureCards < 1 && amount > 0 && library.size() > 0) {
-                    game.doAction(new RevealAction(library.getCardAtTop()));
-                    if (!library.getCardAtTop().hasType(MagicType.Creature)) {
-                        amount--
+                    final MagicCard card = library.getCardAtTop();
+                    if (!card.hasType(MagicType.Creature)) {
                         game.doAction(new MillLibraryAction(it,1));
+                        if (it.getGraveyard().contains(card)) {
+                            amount--
+                        }
                     } else {
-                        creatureCards++;
-                        final MagicCard card = library.getCardAtTop();
                         game.doAction(new MillLibraryAction(it,1));
-                        game.doAction(new SacrificeAction(event.getPermanent()));
-                        game.doAction(new ReturnCardAction(
-                            MagicLocationType.Graveyard,
-                            card,
-                            event.getPlayer()
-                        ));
+                        if (it.getGraveyard().contains(card)) {
+                            creatureCards++;
+                            game.doAction(new SacrificeAction(event.getPermanent()));
+                            game.doAction(new ReturnCardAction(
+                                MagicLocationType.Graveyard,
+                                card,
+                                event.getPlayer()
+                            ));
+                        }
                     }
                 }
             });
