@@ -8,5 +8,6 @@ cost={2}{G}
 pt=2/3
 ability=Whenever an opponent casts a spell during your turn, draw a card.;\
         At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+transform=Lone Wolf of the Natterknolls
 timing=main
 oracle=Whenever an opponent casts a spell during your turn, draw a card.\nAt the beginning of each upkeep, if no spells were cast last turn, transform Hermit of the Natterknolls.

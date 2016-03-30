@@ -4,7 +4,10 @@ value=2.500
 rarity=U
 type=Creature
 subtype=Human,Cleric
+color=w
 pt=4/4
 ability=When this creature transforms into SN, you may exile another target creature until SN leaves the battlefield.
+transform=Avacynian Missionaries
 timing=main
+hidden
 oracle=When this creature transforms into Lunarch Inquisitors, you may exile another target creature until Lunarch Inquisitors leaves the battlefield.

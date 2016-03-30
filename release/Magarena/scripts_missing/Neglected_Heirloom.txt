@@ -8,5 +8,6 @@ cost={1}
 ability=Equipped creature gets +1/+1.;\
         When equipped creature transforms, transform SN.;\
         Equip {1}
+transform=Ashmouth Blade
 timing=equipment
 oracle=Equipped creature gets +1/+1.\nWhen equipped creature transforms, transform Neglected Heirloom.\nEquip {1}

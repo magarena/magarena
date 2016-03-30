@@ -6,5 +6,7 @@ type=Artifact
 subtype=Equipment
 ability=Equipped creature gets +3/+3 and has first strike.;\
         Equip {3}
+transform=Neglected Heirloom
 timing=equipment
+hidden
 oracle=Equipped creature gets +3/+3 and has first strike.\nEquip {3}

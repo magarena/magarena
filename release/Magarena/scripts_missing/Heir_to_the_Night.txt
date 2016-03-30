@@ -4,7 +4,10 @@ value=2.500
 rarity=U
 type=Creature
 subtype=Vampire,Berserker
+color=b
 pt=3/2
 ability=Flying
+transform=Heir of Falkenrath
 timing=main
+hidden
 oracle=Flying

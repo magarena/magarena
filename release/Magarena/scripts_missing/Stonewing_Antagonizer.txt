@@ -6,5 +6,7 @@ type=Artifact,Creature
 subtype=Gargoyle,Horror
 pt=4/2
 ability=Flying
+transform=Thraben Gargoyle
 timing=main
+hidden
 oracle=Flying

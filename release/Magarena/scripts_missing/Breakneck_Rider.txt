@@ -7,5 +7,6 @@ subtype=Human,Scout,Werewolf
 cost={1}{R}{R}
 pt=3/3
 ability=At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+transform=Neck Breaker
 timing=main
 oracle=At the beginning of each upkeep, if no spells were cast last turn, transform Breakneck Rider.

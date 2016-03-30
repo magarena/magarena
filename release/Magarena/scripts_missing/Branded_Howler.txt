@@ -4,7 +4,10 @@ value=2.500
 rarity=C
 type=Creature
 subtype=Werewolf
+color=r
 pt=4/4
 ability=At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
+transform=Convicted Killer
 timing=main
+hidden
 oracle=At the beginning of each upkeep, if a player cast two or more spells last turn, transform Branded Howler.

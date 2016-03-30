@@ -8,5 +8,6 @@ cost={2}{W}
 pt=2/2
 ability=Whenever SN or another creature enters the battlefield under your control, you gain 1 life.;\
         {2}, {T}, Sacrifice another permanent: Transform SN.
+transform=Wayward Disciple
 timing=main
 oracle=Whenever Pious Evangel or another creature enters the battlefield under your control, you gain 1 life.\n{2}, {T}, Sacrifice another permanent: Transform Pious Evangel.

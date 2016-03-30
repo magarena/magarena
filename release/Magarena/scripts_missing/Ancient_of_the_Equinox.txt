@@ -4,7 +4,10 @@ value=2.500
 rarity=U
 type=Creature
 subtype=Treefolk
+color=g
 pt=4/4
 ability=Trample, hexproof
+transform=Autumnal Gloom
 timing=main
+hidden
 oracle=Trample, hexproof

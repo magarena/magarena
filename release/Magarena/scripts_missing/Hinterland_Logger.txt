@@ -7,5 +7,6 @@ subtype=Human,Werewolf
 cost={1}{G}
 pt=2/1
 ability=At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+transform=Timber Shredder
 timing=main
 oracle=At the beginning of each upkeep, if no spells were cast last turn, transform Hinterland Logger.

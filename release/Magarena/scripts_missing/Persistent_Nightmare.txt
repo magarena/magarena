@@ -4,8 +4,11 @@ value=2.500
 rarity=M
 type=Creature
 subtype=Nightmare
+color=u
 pt=1/1
 ability=Skulk;\
         When SN deals combat damage to a player, return it to its owner's hand.
+transform=Startled Awake
 timing=main
+hidden
 oracle=Skulk\nWhen Persistent Nightmare deals combat damage to a player, return it to its owner's hand.

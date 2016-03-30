@@ -7,5 +7,7 @@ subtype=Equipment
 ability=Equipped creature gets +1/+1.;\
         As long as equipped creature is a Human, it has menace.;\
         Equip {2}
+transform=Harvest Hand
 timing=equipment
+hidden
 oracle=Equipped creature gets +1/+1.\nAs long as equipped creature is a Human, it has menace.\nEquip {2}

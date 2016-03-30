@@ -4,7 +4,10 @@ value=2.500
 rarity=C
 type=Creature
 subtype=Werewolf
+color=g
 pt=5/6
 ability=At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
+transform=Solitary Hunter
 timing=main
+hidden
 oracle=At the beginning of each upkeep, if a player cast two or more spells last turn, transform One of the Pack.

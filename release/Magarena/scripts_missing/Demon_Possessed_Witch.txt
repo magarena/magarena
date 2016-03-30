@@ -4,7 +4,10 @@ value=2.500
 rarity=U
 type=Creature
 subtype=Human,Shaman
+color=b
 pt=4/3
 ability=When this creature transforms into SN, you may destroy target creature.
+transform=Kindly Stranger
 timing=main
+hidden
 oracle=When this creature transforms into Demon-Possessed Witch, you may destroy target creature.

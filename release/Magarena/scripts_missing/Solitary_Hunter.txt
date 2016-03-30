@@ -7,5 +7,6 @@ subtype=Human,Warrior,Werewolf
 cost={3}{G}
 pt=3/4
 ability=At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+transform=One of the Pack
 timing=main
 oracle=At the beginning of each upkeep, if no spells were cast last turn, transform Solitary Hunter.

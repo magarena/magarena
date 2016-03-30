@@ -8,5 +8,6 @@ cost={3}{U}
 pt=3/2
 ability=Flying;\
         At the beginning of your upkeep, put the top card of your library into your graveyard. If it's an instant or sorcery card, transform SN.
+transform=Perfected Form
 timing=main
 oracle=Flying\nAt the beginning of your upkeep, put the top card of your library into your graveyard. If it's an instant or sorcery card, transform Aberrant Researcher.

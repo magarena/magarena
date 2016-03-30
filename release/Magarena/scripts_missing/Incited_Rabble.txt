@@ -4,8 +4,11 @@ value=2.500
 rarity=U
 type=Creature
 subtype=Human
+color=r
 pt=2/3
 ability=SN attacks each combat if able.;\
         {2}: SN gets +1/+0 until end of turn.
+transform=Town Gossipmonger
 timing=main
+hidden
 oracle=Incited Rabble attacks each combat if able.\n{2}: Incited Rabble gets +1/+0 until end of turn.

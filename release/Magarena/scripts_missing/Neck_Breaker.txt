@@ -4,8 +4,11 @@ value=2.500
 rarity=U
 type=Creature
 subtype=Werewolf
+color=r
 pt=4/3
 ability=Attacking creatures you control get +1/+0 and have trample.;\
         At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
+transform=Breakneck Rider
 timing=main
+hidden
 oracle=Attacking creatures you control get +1/+0 and have trample.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Neck Breaker.

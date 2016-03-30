@@ -4,8 +4,11 @@ value=2.500
 rarity=U
 type=Creature
 subtype=Human,Wizard
+color=u
 pt=3/2
 ability=Prowess;\
         Whenever SN deals combat damage to a player, investigate.
+transform=Daring Sleuth
 timing=main
+hidden
 oracle=Prowess\nWhenever Bearer of Overwhelming Truths deals combat damage to a player, investigate.

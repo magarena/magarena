@@ -7,5 +7,6 @@ subtype=Human
 cost={2}{B}
 pt=2/3
 ability={2}{B}: Transform SN. Activate this ability only if there are four or more card types among cards in your graveyard.
+transform=Demon-Possessed Witch
 timing=main
 oracle=Delirium — {2}{B}: Transform Kindly Stranger. Activate this ability only if there are four or more card types among cards in your graveyard.

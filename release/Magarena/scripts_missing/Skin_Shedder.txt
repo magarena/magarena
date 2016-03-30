@@ -4,6 +4,9 @@ value=2.500
 rarity=U
 type=Creature
 subtype=Insect,Horror
+color=r
 pt=3/4
+transform=Skin Invasion
 timing=main
+hidden
 oracle=NONE

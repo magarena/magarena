@@ -8,5 +8,6 @@ cost={1}
 pt=2/2
 ability=Defender;\
         {6}: Transform SN.
+transform=Stonewing Antagonizer
 timing=smain
 oracle=Defender\n{6}: Transform Thraben Gargoyle.

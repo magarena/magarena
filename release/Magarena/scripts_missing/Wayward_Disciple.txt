@@ -4,7 +4,10 @@ value=2.500
 rarity=U
 type=Creature
 subtype=Human,Cleric
+color=b
 pt=2/4
 ability=Whenever SN or another creature you control dies, target opponent loses 1 life and you gain 1 life.
+transform=Pious Evangel
 timing=main
+hidden
 oracle=Whenever Wayward Disciple or another creature you control dies, target opponent loses 1 life and you gain 1 life.

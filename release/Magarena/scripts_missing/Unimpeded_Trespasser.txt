@@ -4,7 +4,10 @@ value=2.500
 rarity=U
 type=Creature
 subtype=Spirit
+color=u
 pt=3/3
 ability=SN can't be blocked.
+transform=Uninvited Geist
 timing=main
+hidden
 oracle=Unimpeded Trespasser can't be blocked.

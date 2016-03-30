@@ -8,5 +8,6 @@ cost={2}{R}
 pt=3/2
 ability=Haste;\
         At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+transform=Vildin-Pack Alpha
 timing=fmain
 oracle=Haste\nAt the beginning of each upkeep, if no spells were cast last turn, transform Geier Reach Bandit.

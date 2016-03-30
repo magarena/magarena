@@ -8,5 +8,6 @@ cost={1}{R}
 pt=2/1
 ability=Whenever SN blocks or becomes blocked by a creature, SN deals 1 damage to that creature.;\
         At the beginning of each upkeep, if no spells were cast last turn, transform SN.
+transform=Flameheart Werewolf
 timing=main
 oracle=Whenever Kessig Forgemaster blocks or becomes blocked by a creature, Kessig Forgemaster deals 1 damage to that creature.\nAt the beginning of each upkeep, if no spells were cast last turn, transform Kessig Forgemaster.

@@ -4,8 +4,11 @@ value=2.500
 rarity=U
 type=Creature
 subtype=Werewolf
+color=g
 pt=3/5
 ability=Whenever an opponent casts a spell during your turn, draw two cards.;\
         At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
+transform=Hermit of the Natterknolls
 timing=main
+hidden
 oracle=Whenever an opponent casts a spell during your turn, draw two cards.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Lone Wolf of the Natterknolls.

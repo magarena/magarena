@@ -10,5 +10,6 @@ ability=Flash;\
         Flying, vigilance;\
         When SN enters the battlefield, creatures you control gain indestructible until end of turn.;\
         When a non-Angel creature you control dies, transform SN at the beginning of the next upkeep.
+transform=Avacyn, the Purifier
 timing=flash
 oracle=Flash\nFlying, vigilance\nWhen Archangel Avacyn enters the battlefield, creatures you control gain indestructible until end of turn.\nWhen a non-Angel creature you control dies, transform Archangel Avacyn at the beginning of the next upkeep.

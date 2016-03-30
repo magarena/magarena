@@ -5,5 +5,6 @@ rarity=M
 type=Sorcery
 cost={2}{U}{U}
 effect=Target opponent puts the top thirteen cards of his or her library into his or her graveyard.~{3}{U}{U}: Put SN from your graveyard onto the battlefield transformed. Activate this ability only any time you could cast a sorcery.
+transform=Persistent Nightmare
 timing=main
 oracle=Target opponent puts the top thirteen cards of his or her library into his or her graveyard.\n{3}{U}{U}: Put Startled Awake from your graveyard onto the battlefield transformed. Activate this ability only any time you could cast a sorcery.

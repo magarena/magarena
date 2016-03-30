@@ -4,8 +4,11 @@ value=2.500
 rarity=C
 type=Creature
 subtype=Werewolf
+color=r
 pt=6/5
 ability=Menace;\
         At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
+transform=Gatstaf Arsonists
 timing=main
+hidden
 oracle=Menace\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Gatstaf Ravagers.

@@ -4,7 +4,10 @@ value=2.500
 rarity=U
 type=Creature
 subtype=Insect,Horror
+color=u
 pt=5/4
 ability=Flying
+transform=Aberrant Researcher
 timing=main
+hidden
 oracle=Flying

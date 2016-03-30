@@ -4,8 +4,11 @@ value=2.500
 rarity=U
 type=Creature
 subtype=Werewolf
+color=r
 pt=3/2
 ability=Whenever SN blocks or becomes blocked by a creature, SN deals 2 damage to that creature.;\
         At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
+transform=Kessig Forgemaster
 timing=main
+hidden
 oracle=Whenever Flameheart Werewolf blocks or becomes blocked by a creature, Flameheart Werewolf deals 2 damage to that creature.\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Flameheart Werewolf.

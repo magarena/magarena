@@ -4,8 +4,11 @@ value=2.500
 rarity=C
 type=Creature
 subtype=Werewolf
+color=g
 pt=4/2
 ability=Trample;\
         At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
+transform=Hinterland Logger
 timing=main
+hidden
 oracle=Trample\nAt the beginning of each upkeep, if a player cast two or more spells last turn, transform Timber Shredder.

@@ -7,5 +7,6 @@ subtype=Human
 cost={W}
 pt=1/1
 ability={T}, Tap an untapped creature you control: Transform SN.
+transform=Incited Rabble
 timing=main
 oracle={T}, Tap an untapped creature you control: Transform Town Gossipmonger.

@@ -7,5 +7,6 @@ subtype=Human,Cleric
 cost={3}{W}
 pt=3/3
 ability=At the beginning of your end step, if SN is equipped, transform it.
+transform=Lunarch Inquisitors
 timing=main
 oracle=At the beginning of your end step, if Avacynian Missionaries is equipped, transform it.

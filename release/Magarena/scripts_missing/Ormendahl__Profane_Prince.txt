@@ -4,7 +4,10 @@ value=2.500
 rarity=R
 type=Legendary,Creature
 subtype=Demon
+color=b
 pt=9/7
 ability=Flying, lifelink, indestructible, haste
+transform=Westvale Abbey
 timing=main
+hidden
 oracle=Flying, lifelink, indestructible, haste

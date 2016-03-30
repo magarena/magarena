@@ -7,5 +7,6 @@ subtype=Human,Soldier
 cost={1}{W}
 pt=2/2
 ability=At the beginning of your upkeep, if you control four or more creatures, transform SN.
+transform=Westvale Cult Leader
 timing=main
 oracle=At the beginning of your upkeep, if you control four or more creatures, transform Hanweir Militia Captain.

@@ -4,7 +4,10 @@ value=2.500
 rarity=R
 type=Creature
 subtype=Kraken,Horror
+color=u
 pt=7/8
 ability=When this creature transforms into SN, return all non-Horror creatures to their owners' hands.
+transform=Thing in the Ice
 timing=main
+hidden
 oracle=When this creature transforms into Awoken Horror, return all non-Horror creatures to their owners' hands.
