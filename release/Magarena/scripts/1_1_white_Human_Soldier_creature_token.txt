@@ -1,0 +1,8 @@
+name=1/1 white Human Soldier creature token
+token=Human Soldier
+image=http://media.wizards.com/2016/aksdjciawolkcc0_soi/en_fPCM1CDouX.png
+value=1
+type=Creature
+subtype=Human,Soldier
+color=w
+pt=1/1
