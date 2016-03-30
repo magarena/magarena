@@ -311,7 +311,7 @@ public class PTFrame {
         Graphics2D g2d = cardImage.createGraphics();
         BufferedImage typeSymbol = ResourceManager.sunSymbol;
         if (cardDef.isHidden()) {
-            typeSymbol = cardDef.isPlaneswalker() && cardDef.getTransformedDefinition().isPlaneswalker() ? ResourceManager.moonSymbol : ResourceManager.planeswalkerTypeSymbol;
+            typeSymbol = cardDef.isPlaneswalker() && !cardDef.getTransformedDefinition().isPlaneswalker() ? ResourceManager.planeswalkerTypeSymbol : ResourceManager.moonSymbol;
         } else if (cardDef.isCreature() && cardDef.getTransformedDefinition().isPlaneswalker()) {
             typeSymbol = ResourceManager.sparkSymbol;
         }
