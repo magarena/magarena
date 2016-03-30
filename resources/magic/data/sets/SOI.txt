@@ -11,11 +11,11 @@ Anguished Unmaking
 Apothecary Geist
 Archangel Avacyn
 Arlinn Kord
-Arlinn, Embraced by the Moonsilver
+Arlinn, Embraced by the Moon
 Ashmouth Blade
 Asylum Visitor
 Autumnal Gloom
-Avacyn's Judgement
+Avacyn's Judgment
 Avacyn, the Purifier
 Avacynian Missionaries
 Awoken Horror
@@ -58,7 +58,7 @@ Declaration in Stone
 Demon-Possessed Witch
 Deny Existence
 Descend upon the Sinful
-Devil's Playground
+Devils' Playground
 Devilthorn Fox
 Diregraf Colossus
 Dissension in the Ranks
@@ -90,10 +90,10 @@ Flameblade Angel
 Flameheart Werewolf
 Fleeting Memories
 Foreboding Ruins
-Foresaken Sanctuary
 Forest
 Forgotten Creation
 Fork in the Road
+Forsaken Sanctuary
 Fortified Village
 Foul Orchard
 From Under the Floorboards
@@ -125,7 +125,7 @@ Heir to the Night
 Hermit of the Natterknolls
 Highland Lake
 Hinterland Logger
-Hope against Hope
+Hope Against Hope
 Hound of the Farbogs
 Howlpack Resurgence
 Howlpack Wolf
@@ -186,7 +186,7 @@ Nearheath Chaplain
 Neck Breaker
 Neglected Heirloom
 Nephalia Moondrakes
-Nibilis of Dusk
+Niblis of Dusk
 Not Forgotten
 Obsessive Skinner
 Odric, Lunarch Marshal
@@ -216,7 +216,7 @@ Rabid Bite
 Rancid Rats
 Rattlechains
 Ravenous Bloodseeker
-Reaper of the Flight Moonsilver
+Reaper of Flight Moonsilver
 Reckless Scholar
 Reduce to Ashes
 Relentless Dead
@@ -262,9 +262,9 @@ Stitchwing Skaab
 Stoic Builder
 Stone Quarry
 Stonewing Antagonizer
-Stormkirk Mentor
 Stormrider Spirit
 Strength of Arms
+Stromkirk Mentor
 Structural Distortion
 Survive the Night
 Swamp
