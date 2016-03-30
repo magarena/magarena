@@ -7,7 +7,7 @@ subtype=Spirit
 cost={2}{U}
 pt=2/2
 ability=Skulk;\
-        When SN deals combat damage to a player, transform it.
+        When SN deals combat damage to a player, transform SN.
 transform=Unimpeded Trespasser
 timing=main
 oracle=Skulk\nWhen Uninvited Geist deals combat damage to a player, transform it.
