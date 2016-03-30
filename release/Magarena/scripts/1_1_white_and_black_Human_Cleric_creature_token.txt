@@ -1,0 +1,9 @@
+name=1/1 white and black Human Cleric creature token
+token=Cleric
+image=http://media.wizards.com/2016/aksdjciawolkcc0_soi/en_9BXzi51Vmy.png
+value=1
+type=Creature
+subtype=Human,Cleric
+color=wb
+pt=1/1
+oracle=NONE
