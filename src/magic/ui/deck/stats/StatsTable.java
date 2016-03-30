@@ -11,12 +11,26 @@ import magic.data.CardStatistics;
 import magic.data.MagicIcon;
 import magic.model.MagicColor;
 import magic.model.MagicManaType;
+import magic.translate.UiString;
 import magic.ui.MagicImages;
 import magic.ui.utility.GraphicsUtils;
 import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class StatsTable extends JPanel {
+
+    // translatable strings
+    private static final String _S1 = "Land";
+    private static final String _S2 = "Creature";
+    private static final String _S3 = "Artifact";
+    private static final String _S4 = "Enchantment";
+    private static final String _S5 = "Instant";
+    private static final String _S6 = "Sorcery";
+    private static final String _S7 = "Planeswalker";
+    private static final String _S8 = "Colorless";
+    private static final String _S9 = "Mono-color";
+    private static final String _S10 = "Multi-color";
+    private static final String _S11 = "Total";
 
     private static final ImageIcon[] manaIconOn = new ImageIcon[MagicColor.values().length];
     private static final ImageIcon[] manaIconOff = new ImageIcon[MagicColor.values().length];
@@ -100,17 +114,17 @@ class StatsTable extends JPanel {
 
         // headings
         panel.add(new JLabel());
-        panel.add(getHeadingLabel("Σ", "Total"));
-        panel.add(getHeadingLabel(MagicIcon.LAND, "Land", stats.totalTypes[0]));
-        panel.add(getHeadingLabel(MagicIcon.CREATURE, "Creature", stats.totalTypes[1]));
-        panel.add(getHeadingLabel(MagicIcon.ARTIFACT, "Artifact", stats.totalTypes[2]));
-        panel.add(getHeadingLabel(MagicIcon.ENCHANTMENT, "Enchantment", stats.totalTypes[3]));
-        panel.add(getHeadingLabel(MagicIcon.INSTANT, "Instant", stats.totalTypes[4]));
-        panel.add(getHeadingLabel(MagicIcon.SORCERY, "Sorcery", stats.totalTypes[5]));
-        panel.add(getHeadingLabel(MagicIcon.PLANESWALKER, "Planeswalker", stats.totalTypes[6]));
-        panel.add(getHeadingLabel(MagicManaType.Colorless, "Colorless"));
-        panel.add(getHeadingLabel("=1", "Mono-color"));
-        panel.add(getHeadingLabel(">1", "Multi-color"));
+        panel.add(getHeadingLabel("Σ", UiString.get(_S11)));
+        panel.add(getHeadingLabel(MagicIcon.LAND, UiString.get(_S1), stats.totalTypes[0]));
+        panel.add(getHeadingLabel(MagicIcon.CREATURE, UiString.get(_S2), stats.totalTypes[1]));
+        panel.add(getHeadingLabel(MagicIcon.ARTIFACT, UiString.get(_S3), stats.totalTypes[2]));
+        panel.add(getHeadingLabel(MagicIcon.ENCHANTMENT, UiString.get(_S4), stats.totalTypes[3]));
+        panel.add(getHeadingLabel(MagicIcon.INSTANT, UiString.get(_S5), stats.totalTypes[4]));
+        panel.add(getHeadingLabel(MagicIcon.SORCERY, UiString.get(_S6), stats.totalTypes[5]));
+        panel.add(getHeadingLabel(MagicIcon.PLANESWALKER, UiString.get(_S7), stats.totalTypes[6]));
+        panel.add(getHeadingLabel(MagicManaType.Colorless, UiString.get(_S8)));
+        panel.add(getHeadingLabel("=1", UiString.get(_S9)));
+        panel.add(getHeadingLabel(">1", UiString.get(_S10)));
 
         // totals
         panel.add(new JLabel("Σ"));
