@@ -1,0 +1,8 @@
+name=3/3 green Ooze creature token
+token=Ooze
+image=http://media.wizards.com/2016/aksdjciawolkcc0_soi/en_RbPPm8e2Wb.png
+value=3
+type=Creature
+subtype=Ooze
+color=g
+pt=3/3

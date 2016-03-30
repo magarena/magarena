@@ -1,0 +1,10 @@
+name=1/1 black Vampire Knight creature token with lifelink
+token=Vampire Knight
+image=http://media.wizards.com/2016/aksdjciawolkcc0_soi/en_Lz7fjwmpzN.png
+value=1
+type=Creature
+subtype=Vampire,Knight
+color=b
+pt=1/1
+ability=Lifelink
+oracle=Lifelink
