@@ -590,7 +590,7 @@ public class CardFilterPanel extends TexturedPanel implements ActionListener {
     private Object[] getTypeFilterValues() {
         final List<Object> types = new ArrayList<>();
         for (MagicType type : MagicType.FILTER_TYPES) {
-            types.add(type);
+            types.add(type.getDisplayName());
         }
         if (!listener.isDeckEditor()) {
             types.add(UiString.get(_S20));

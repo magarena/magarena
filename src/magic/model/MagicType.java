@@ -5,30 +5,31 @@ import java.util.EnumSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
+import magic.translate.UiString;
 
 public enum MagicType {
 
     // these are supertypes
-    Basic,
-    Legendary,
-    Ongoing,
-    Snow,
-    World,
+    Basic(MagicTypeStr._SBasic),
+    Legendary(MagicTypeStr._SLegendary),
+    Ongoing(MagicTypeStr._SOngoing),
+    Snow(MagicTypeStr._SSnow),
+    World(MagicTypeStr._SWorld),
 
     // these are card types
-    Artifact,
-    Conspiracy,
-    Creature,
-    Enchantment,
-    Instant,
-    Land,
-    Phenomenon,
-    Plane,
-    Planeswalker,
-    Scheme,
-    Sorcery,
-    Tribal,
-    Vanguard,
+    Artifact(MagicTypeStr._SArtifact),
+    Conspiracy(MagicTypeStr._SConspiracy),
+    Creature(MagicTypeStr._SCreature),
+    Enchantment(MagicTypeStr._SEnchantment),
+    Instant(MagicTypeStr._SInstant),
+    Land(MagicTypeStr._SLand),
+    Phenomenon(MagicTypeStr._SPhenomenon),
+    Plane(MagicTypeStr._SPlane),
+    Planeswalker(MagicTypeStr._SPlaneswalker),
+    Scheme(MagicTypeStr._SScheme),
+    Sorcery(MagicTypeStr._SSorcery),
+    Tribal(MagicTypeStr._STribal),
+    Vanguard(MagicTypeStr._SVanguard),
     ;
 
     public static final Set<MagicType> ALL_CARD_TYPES = EnumSet.range(Artifact, Vanguard);
@@ -62,9 +63,11 @@ public enum MagicType {
     );
 
     private final int mask;
+    private final String displayName;
 
-    private MagicType() {
-        mask=1<<ordinal();
+    private MagicType(final String aName) {
+        this.displayName = UiString.get(aName);
+        mask = 1 << ordinal();
     }
 
     public int getMask() {
@@ -108,5 +111,9 @@ public enum MagicType {
 
     public boolean hasType(final int flags) {
         return (flags & getMask()) != 0;
+    }
+
+    public String getDisplayName() {
+        return displayName;
     }
 }
