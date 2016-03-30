@@ -9,5 +9,5 @@ ability=Flash;\
         Enchant creature;\
         Enchanted creature gets +3/+0 and has first strike.
 timing=flash
-enchant=default,creature
+enchant=first strike,pos creature
 oracle=Flash\nEnchant creature\nEnchanted creature gets +3/+0 and has first strike.
