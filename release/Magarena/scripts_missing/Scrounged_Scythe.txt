@@ -4,6 +4,7 @@ value=2.500
 rarity=U
 type=Artifact
 subtype=Equipment
+color=
 ability=Equipped creature gets +1/+1.;\
         As long as equipped creature is a Human, it has menace.;\
         Equip {2}

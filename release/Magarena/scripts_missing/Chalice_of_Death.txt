@@ -3,6 +3,7 @@ image=http://magiccards.info/scans/en/dka/146b.jpg
 value=3.659
 rarity=U
 type=Artifact
+color=
 ability={T}: Target player loses 5 life.
 transform=Chalice of Life
 timing=artifact

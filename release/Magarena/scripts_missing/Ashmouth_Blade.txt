@@ -4,6 +4,7 @@ value=2.500
 rarity=U
 type=Artifact
 subtype=Equipment
+color=
 ability=Equipped creature gets +3/+3 and has first strike.;\
         Equip {3}
 transform=Neglected Heirloom
