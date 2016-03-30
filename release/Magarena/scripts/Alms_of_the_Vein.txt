@@ -5,6 +5,6 @@ rarity=C
 type=Sorcery
 cost={2}{B}
 ability=Madness {B}
-effect=Target opponent loses 3 life and you gain 3 life. 
+effect=Target opponent loses 3 life and you gain 3 life.
 timing=main
 oracle=Target opponent loses 3 life and you gain 3 life. \nMadness {B}

@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Instant
 cost={1}{W}{B}
-effect=Exile target nonland permanent. You lose 3 life.
+effect=Exile target nonland permanent.~You lose 3 life.
 timing=removal
 oracle=Exile target nonland permanent. You lose 3 life.

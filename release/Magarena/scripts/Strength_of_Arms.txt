@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Instant
 cost={W}
-effect=Target creature gets +2/+2 until end of turn. If you control an Equipment, put a 1/1 white Human Soldier creature token onto the battlefield.
+effect=Target creature gets +2/+2 until end of turn.~If you control an Equipment, put a 1/1 white Human Soldier creature token onto the battlefield.
 timing=removal
 oracle=Target creature gets +2/+2 until end of turn. If you control an Equipment, put a 1/1 white Human Soldier creature token onto the battlefield.

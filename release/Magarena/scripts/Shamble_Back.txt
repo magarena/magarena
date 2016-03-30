@@ -4,6 +4,6 @@ value=2.500
 rarity=C
 type=Sorcery
 cost={B}
-effect=Exile target creature card from a graveyard. Put a 2/2 black Zombie creature token onto the battlefield. You gain 2 life.
+effect=Exile target creature card from a graveyard.~Put a 2/2 black Zombie creature token onto the battlefield.~You gain 2 life.
 timing=main
 oracle=Exile target creature card from a graveyard. Put a 2/2 black Zombie creature token onto the battlefield. You gain 2 life.

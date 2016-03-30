@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Instant
 cost={3}{U}{U}
-effect=Counter target spell.~Investigate three times.
+effect=Counter target spell.~Investigate~Investigate~Investigate.
 timing=counter
 oracle=Counter target spell.\nInvestigate three times.

@@ -4,6 +4,6 @@ value=2.500
 rarity=M
 type=Sorcery
 cost={4}{W}{W}
-effect=Exile all creatures.~Put a 4/4 white Angel creature token with flying onto the battlefield if there are four or more card types among cards in your graveyard.
+effect=Exile all creatures.~If there are four or more card types among cards in your graveyard, put a 4/4 white Angel creature token with flying onto the battlefield.
 timing=main
 oracle=Exile all creatures.\nDelirium — Put a 4/4 white Angel creature token with flying onto the battlefield if there are four or more card types among cards in your graveyard.
