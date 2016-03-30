@@ -5,6 +5,7 @@ rarity=M
 type=Planeswalker
 subtype=Garruk
 cost={5}{B}{G}
+loyalty=5
 ability=+1: Destroy another target planeswalker.;\
         +1: Put a 3/3 black Beast creature token with deathtouch onto the battlefield.;\
         −3: Destroy target creature. You gain life equal to its toughness.;\

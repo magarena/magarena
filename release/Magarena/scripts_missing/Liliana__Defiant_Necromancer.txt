@@ -6,6 +6,7 @@ rarity=M
 type=Planeswalker
 subtype=Liliana
 color=b
+loyalty=3
 ability=+2: Each player discards a card.;\
         −X: Return target nonlegendary creature card with converted mana cost X from your graveyard to the battlefield.;\
         −8: You get an emblem with "Whenever a creature dies, return it to the battlefield under your control at the beginning of the next end step."

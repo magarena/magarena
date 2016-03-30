@@ -5,6 +5,7 @@ rarity=M
 type=Planeswalker
 subtype=Sarkhan
 cost={3}{R}{R}
+loyalty=4
 ability=+1: Until end of turn, SN becomes a legendary 4/4 red Dragon creature with flying, indestructible, and haste.;\
         −3: SN deals 4 damage to target creature.;\
         −6: You get an emblem with "At the beginning of your draw step, draw two additional cards" and "At the beginning of your end step, discard your hand."

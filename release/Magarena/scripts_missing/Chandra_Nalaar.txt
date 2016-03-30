@@ -5,6 +5,7 @@ rarity=M
 type=Planeswalker
 subtype=Chandra
 cost={3}{R}{R}
+loyalty=6
 ability=+1: SN deals 1 damage to target player.;\
         −X: SN deals X damage to target creature.;\
         −8: SN deals 10 damage to target player and each creature he or she controls.

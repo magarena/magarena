@@ -5,6 +5,7 @@ rarity=M
 type=Planeswalker
 subtype=Nahiri
 cost={3}{W}{W}
+loyalty=3
 ability=+2: Put a 1/1 white Kor Soldier creature token onto the battlefield. You may attach an Equipment you control to it.;\
         −2: You may put an Equipment card from your hand or graveyard onto the battlefield.;\
         −10: Put a colorless Equipment artifact token named Stoneforged Blade onto the battlefield. It has indestructible, "Equipped creature gets +5/+5 and has double strike," and equip {0}.;\

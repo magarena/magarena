@@ -146,7 +146,7 @@ public class ImageFrame {
         int WIDTH = 320;
         int HEIGHT;
         BufferedImage blend;
-        if (OracleText.getPlaneswalkerAbilityCount(cardDef) == 3) {
+        if (OracleText.getPlaneswalkerAbilityCount(cardDef) <= 3) {
             HEIGHT = 234;
             blend = ResourceManager.newFrame(ResourceManager.getPlaneswalkerImageBlend);
         } else {

@@ -5,6 +5,7 @@ rarity=M
 type=Planeswalker
 subtype=Tezzeret
 cost={3}{U}{U}
+loyalty=4
 ability=+1: Untap up to two target artifacts.;\
         −X: Search your library for an artifact card with converted mana cost X or less and put it onto the battlefield. Then shuffle your library.;\
         −5: Artifacts you control become artifact creatures with base power and toughness 5/5 until end of turn.

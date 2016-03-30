@@ -888,7 +888,7 @@ public class Frame {
         boolean artifact = cardDef.hasType(MagicType.Artifact);
         boolean transform = !cardDef.isHidden();
         List<MagicColor> landColor = new ArrayList<>();
-        if (OracleText.getPlaneswalkerAbilityCount(cardDef) == 3) {
+        if (OracleText.getPlaneswalkerAbilityCount(cardDef) <= 3) {
             BufferedImage baseFrame = ResourceManager.newFrame(ResourceManager.colorlessPlaneswalkerFrame);
             if (land) {
                 // No frame for land planeswalkers

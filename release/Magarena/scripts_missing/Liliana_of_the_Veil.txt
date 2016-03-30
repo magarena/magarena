@@ -5,6 +5,7 @@ rarity=M
 type=Planeswalker
 subtype=Liliana
 cost={1}{B}{B}
+loyalty=3
 ability=+1: Each player discards a card.;\
         −2: Target player sacrifices a creature.;\
         −6: Separate all permanents target player controls into two piles. That player sacrifices all permanents in the pile of his or her choice.

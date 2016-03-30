@@ -5,6 +5,7 @@ rarity=M
 type=Planeswalker
 subtype=Chandra
 cost={2}{R}{R}
+loyalty=4
 ability=+1: SN deals 1 damage to target player and 1 damage to up to one target creature that player controls. That creature can't block this turn.;\
         0: Exile the top card of your library. You may play it this turn.;\
         −7: Exile the top ten cards of your library. Choose an instant or sorcery card exiled this way and copy it three times. You may cast the copies without paying their mana costs.

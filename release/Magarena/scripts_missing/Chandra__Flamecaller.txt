@@ -6,6 +6,7 @@ rarity=M
 type=Planeswalker
 subtype=Chandra
 cost={4}{R}{R}
+loyalty=4
 ability=+1: Put two 3/1 red Elemental creature tokens with haste onto the battlefield. Exile them at the beginning of the next end step.;\
         0: Discard all the cards in your hand, then draw that many cards plus one.;\
         −X: SN deals X damage to each creature.

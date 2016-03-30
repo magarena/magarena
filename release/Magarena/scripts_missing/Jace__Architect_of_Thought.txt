@@ -5,6 +5,7 @@ rarity=M
 type=Planeswalker
 subtype=Jace
 cost={2}{U}{U}
+loyalty=4
 ability=+1: Until your next turn, whenever a creature an opponent controls attacks, it gets -1/-0 until end of turn.;\
         −2: Reveal the top three cards of your library. An opponent separates those cards into two piles. Put one pile into your hand and the other on the bottom of your library in any order.;\
         −8: For each player, search that player's library for a nonland card and exile it, then that player shuffles his or her library. You may cast those cards without paying their mana costs.

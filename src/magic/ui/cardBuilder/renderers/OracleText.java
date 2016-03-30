@@ -76,15 +76,8 @@ public class OracleText {
     }
 
     static void drawPlaneswalkerOracleText(BufferedImage cardImage, IRenderableCard cardDef) {
-        int lines;
-        int yPosOffset;
-        if (cardDef.hasText() && getPlaneswalkerAbilityCount(cardDef) == 3) {
-            lines = 3;
-            yPosOffset = 330;
-        } else {
-            lines = 4;
-            yPosOffset = 289;
-        }
+        int lines = getPlaneswalkerAbilityCount(cardDef);
+        int yPosOffset = cardDef.hasText() && lines <= 3 ? 330 : 289;
 
         String[] abilityActivation = getPlaneswalkerActivationText(cardDef);
         Rectangle textBoxBounds = new Rectangle(0, 0, 282, 49);

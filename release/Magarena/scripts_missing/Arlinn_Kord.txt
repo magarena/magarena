@@ -5,6 +5,7 @@ rarity=M
 type=Planeswalker
 subtype=Arlinn
 cost={2}{R}{G}
+loyalty=3
 ability=+1: Until end of turn, up to one target creature gets +2/+2 and gains vigilance and haste.;\
         0: Put a 2/2 green Wolf creature token onto the battlefield. Transform SN.
 transform=Arlinn, Embraced by the Moon

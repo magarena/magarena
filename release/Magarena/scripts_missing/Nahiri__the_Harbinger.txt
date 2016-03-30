@@ -5,6 +5,7 @@ rarity=M
 type=Planeswalker
 subtype=Nahiri
 cost={2}{R}{W}
+loyalty=4
 ability=+2: You may discard a card. If you do, draw a card.;\
         −2: Exile target enchantment, tapped artifact, or tapped creature.;\
         −8: Search your library for an artifact or creature card, put it onto the battlefield, then shuffle your library. It gains haste. Return it to your hand at the beginning of the next end step.

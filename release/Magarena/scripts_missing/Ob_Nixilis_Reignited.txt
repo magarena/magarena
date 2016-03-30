@@ -6,6 +6,7 @@ rarity=M
 type=Planeswalker
 subtype=Nixilis
 cost={3}{B}{B}
+loyalty=5
 ability=+1: You draw a card and you lose 1 life.;\
         −3: Destroy target creature.;\
         −8: Target opponent gets an emblem with "Whenever a player draws a card, you lose 2 life."

@@ -6,6 +6,7 @@ rarity=M
 type=Planeswalker
 subtype=Jace
 color=u
+loyalty=5
 ability=+1: Up to one target creature gets -2/-0 until your next turn.;\
         −3: You may cast target instant or sorcery card from your graveyard this turn. If that card would be put into your graveyard this turn, exile it instead.;\
         −9: You get an emblem with "Whenever you cast a spell, target opponent puts the top five cards of his or her library into his or her graveyard."

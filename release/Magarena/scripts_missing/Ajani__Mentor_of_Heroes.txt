@@ -5,6 +5,7 @@ rarity=M
 type=Planeswalker
 subtype=Ajani
 cost={3}{G}{W}
+loyalty=4
 ability=+1: Distribute three +1/+1 counters among one, two, or three target creatures you control.;\
         +1: Look at the top four cards of your library. You may reveal an Aura, creature, or planeswalker card from among them and put it into your hand. Put the rest on the bottom of your library in any order.;\
         −8: You gain 100 life.

@@ -5,6 +5,7 @@ rarity=M
 type=Planeswalker
 subtype=Karn
 cost={7}
+loyalty=6
 ability=+4: Target player exiles a card from his or her hand.;\
         −3: Exile target permanent.;\
         −14: Restart the game, leaving in exile all non-Aura permanent cards exiled with SN. Then put those cards onto the battlefield under your control.

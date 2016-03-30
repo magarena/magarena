@@ -5,6 +5,7 @@ rarity=M
 type=Planeswalker
 subtype=Ugin
 cost={8}
+loyalty=7
 ability=+2: SN deals 3 damage to target creature or player.;\
         −X: Exile each permanent with converted mana cost X or less that's one or more colors.;\
         −10: You gain 7 life, draw seven cards, then put up to seven permanent cards from your hand onto the battlefield.

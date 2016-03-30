@@ -5,6 +5,7 @@ rarity=M
 type=Planeswalker
 subtype=Nixilis
 cost={3}{B}{B}
+loyalty=3
 ability=+2: Each opponent loses 1 life. You gain life equal to the life lost this way.;\
         −2: Put a 5/5 black Demon creature token with flying onto the battlefield. You lose 2 life.;\
         −8: You get an emblem with "{1}{B}, Sacrifice a creature: You gain X life and draw X cards, where X is the sacrificed creature's power.";\

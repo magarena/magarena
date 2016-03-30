@@ -5,6 +5,7 @@ rarity=M
 type=Planeswalker
 subtype=Daretti
 cost={3}{R}
+loyalty=3
 ability=+2: Discard up to two cards, then draw that many cards.;\
         −2: Sacrifice an artifact. If you do, return target artifact card from your graveyard to the battlefield.;\
         −10: You get an emblem with "Whenever an artifact is put into your graveyard from the battlefield, return that card to the battlefield at the beginning of the next end step.";\

@@ -5,6 +5,7 @@ rarity=M
 type=Planeswalker
 subtype=Dack
 cost={1}{U}{R}
+loyalty=3
 ability=+1: Target player draws two cards, then discards two cards.;\
         −2: Gain control of target artifact.;\
         −6: You get an emblem with "Whenever you cast a spell that targets one or more permanents, gain control of those permanents."

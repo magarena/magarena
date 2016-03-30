@@ -5,6 +5,7 @@ rarity=M
 type=Planeswalker
 subtype=Gideon
 cost={3}{W}{W}
+loyalty=6
 ability=+2: During target opponent's next turn, creatures that player controls attack SN if able.;\
         −2: Destroy target tapped creature.;\
         0: Until end of turn, SN becomes a 6/6 Human Soldier creature that's still a planeswalker. Prevent all damage that would be dealt to him this turn.

@@ -5,6 +5,7 @@ rarity=M
 type=Planeswalker
 subtype=Ashiok
 cost={1}{U}{B}
+loyalty=3
 ability=+2: Exile the top three cards of target opponent's library.;\
         −X: Put a creature card with converted mana cost X exiled with SN onto the battlefield under your control. That creature is a Nightmare in addition to its other types.;\
         −10: Exile all cards from all opponents' hands and graveyards.

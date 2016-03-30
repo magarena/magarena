@@ -6,6 +6,7 @@ rarity=M
 type=Planeswalker
 subtype=Nissa
 color=g
+loyalty=3
 ability=+1: Reveal the top card of your library. If it's a land card, put it onto the battlefield. Otherwise, put it into your hand.;\
         −2: Put a legendary 4/4 green Elemental creature token named Ashaya, the Awoken World onto the battlefield.;\
         −7: Untap up to six target lands. They become 6/6 Elemental creatures. They're still lands.

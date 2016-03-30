@@ -5,6 +5,7 @@ rarity=M
 type=Planeswalker
 subtype=Sarkhan
 cost={3}{B}{R}
+loyalty=7
 ability=0: Reveal the top card of your library and put it into your hand. SN deals damage to himself equal to that card's converted mana cost.;\
         −2: Target creature's controller sacrifices it, then that player puts a 5/5 red Dragon creature token with flying onto the battlefield.;\
         −4: Each Dragon creature you control deals damage equal to its power to target player.

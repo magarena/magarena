@@ -5,6 +5,7 @@ rarity=M
 type=Planeswalker
 subtype=Chandra
 cost={4}{R}{R}
+loyalty=5
 ability=+1: Discard a card. If a red card is discarded this way, SN deals 4 damage to target creature or player.;\
         −2: Each player discards his or her hand, then draws three cards.;\
         −7: Cast any number of red instant and/or sorcery cards from your graveyard without paying their mana costs.

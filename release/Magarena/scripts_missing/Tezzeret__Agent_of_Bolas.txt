@@ -5,6 +5,7 @@ rarity=M
 type=Planeswalker
 subtype=Tezzeret
 cost={2}{U}{B}
+loyalty=3
 ability=+1: Look at the top five cards of your library. You may reveal an artifact card from among them and put it into your hand. Put the rest on the bottom of your library in any order.;\
         −1: Target artifact becomes an artifact creature with base power and toughness 5/5.;\
         −4: Target player loses X life and you gain X life, where X is twice the number of artifacts you control.
