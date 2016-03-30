@@ -1622,6 +1622,18 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicCardFilterImpl AURA_OR_EQUIPMENT_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
+        @Override
+        public boolean acceptType(MagicTargetType targetType) {
+            return targetType == MagicTargetType.Library;
+        }
+
+        @Override
+        public boolean accept(MagicSource source, MagicPlayer player, MagicCard target) {
+            return target.hasSubType(MagicSubType.Aura) || target.hasSubType(MagicSubType.Equipment);
+        }
+    };
+
     public static final MagicCardFilterImpl CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return true;
@@ -2580,6 +2592,7 @@ public class MagicTargetFilterFactory {
         single.put("artifact card with converted mana cost 1 or less from your library", permanentCardMaxCMC(MagicType.Artifact, MagicTargetType.Library, 1));
         single.put("artifact card with converted mana cost 6 or greater from your library", permanentCardMinCMC(MagicType.Artifact, MagicTargetType.Library, 6));
         single.put("blue instant card from your library", BLUE_INSTANT_CARD_FROM_LIBRARY);
+        single.put("aura or equipment card from your library", AURA_OR_EQUIPMENT_CARD_FROM_LIBRARY);
 
         // <color|type|subtype> permanent card from your library
         single.put("Rebel permanent card with converted mana cost 1 or less from your library", permanentCardMaxCMC(MagicSubType.Rebel, MagicTargetType.Library, 1));
@@ -2636,6 +2649,7 @@ public class MagicTargetFilterFactory {
         single.put("creature you control with a +1/+1 counter on it", CREATURE_PLUSONE_COUNTER_YOU_CONTROL);
         single.put("creature you control with a level counter on it", CREATURE_LEVEL_COUNTER_YOU_CONTROL);
         single.put("creature you control with flying", CREATURE_WITH_FLYING_YOU_CONTROL);
+        single.put("creature with flying you control", CREATURE_WITH_FLYING_YOU_CONTROL);
         single.put("creature you control with trample", CREATURE_WITH_TRAMPLE_YOU_CONTROL);
         single.put("enchanted creature you control", ENCHANTED_CREATURE_YOU_CONTROL);
         single.put("multicolored creature you control", MULTICOLORED_CREATURE_YOU_CONTROL);
