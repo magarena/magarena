@@ -222,7 +222,7 @@ public class CardDefinitions {
 
     public static void loadCardAbilities() {
         final ExecutorService executor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
-        for (final MagicCardDefinition cdef : getDefaultPlayableCardDefs()) {
+        Stream.concat(getDefaultPlayableCardDefStream(), getTokensCardDefStream()).forEach(cdef -> {
             executor.execute(new Runnable() {
                 @Override
                 public void run() {
@@ -234,7 +234,7 @@ public class CardDefinitions {
                     }
                 }
             });
-        }
+        });
         executor.shutdown();
         try {
             executor.awaitTermination(100, TimeUnit.SECONDS);
@@ -292,6 +292,11 @@ public class CardDefinitions {
     private static Stream<MagicCardDefinition> getDefaultPlayableCardDefStream() {
         return getAllPlayableCardDefs().stream()
             .filter(card -> card.isPlayable());
+    }
+
+    private static Stream<MagicCardDefinition> getTokensCardDefStream() {
+        return getAllPlayableCardDefs().stream()
+            .filter(card -> card.isToken());
     }
 
     /**
