@@ -6,5 +6,5 @@ type=Instant
 cost={2}{B}
 ability=As an additional cost to cast SN, sacrifice a creature or land.
 effect=Draw two cards.
-timing=removal
+timing=draw
 oracle=As an additional cost to cast Merciless Resolve, sacrifice a creature or land.\nDraw two cards.

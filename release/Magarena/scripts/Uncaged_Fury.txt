@@ -5,5 +5,5 @@ rarity=C
 type=Instant
 cost={2}{R}
 effect=Target creature gets +1/+1 and gains double strike until end of turn.
-timing=removal
+timing=pump
 oracle=Target creature gets +1/+1 and gains double strike until end of turn.

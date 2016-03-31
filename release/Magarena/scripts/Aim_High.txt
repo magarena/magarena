@@ -5,5 +5,5 @@ rarity=C
 type=Instant
 cost={1}{G}
 effect=Untap target creature.~*It* gets +2/+2 and gains reach until end of turn.
-timing=removal
+timing=pump
 oracle=Untap target creature. It gets +2/+2 and gains reach until end of turn.
