@@ -6,5 +6,5 @@ type=Creature
 subtype=Devil
 color=r
 pt=1/1
-ability=When this creature dies, it deals 1 damage to target creature or player.
+ability=When SN dies, SN deals 1 damage to target creature or player.
 oracle=When this creature dies, it deals 1 damage to target creature or player.
