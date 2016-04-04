@@ -49,9 +49,9 @@ DTK
 ORI
 BFZ
 OGW
+SOI
 
 # banned: prefix with !
-!Ancestral Vision
 !Ancient Den
 !Birthing Pod
 !Blazing Shoal
@@ -62,6 +62,7 @@ OGW
 !Deathrite Shaman
 !Dig Through Time
 !Dread Return
+!Eye of Ugin
 !Glimpse of Nature
 !Great Furnace
 !Green Sun's Zenith
@@ -80,7 +81,6 @@ OGW
 !Skullclamp
 !Splinter Twin
 !Summer Bloom
-!Sword of the Meek
 !Treasure Cruise
 !Tree of Tales
 !Umezawa's Jitte
