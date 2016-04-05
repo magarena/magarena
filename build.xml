@@ -44,10 +44,6 @@
       <get src="http://repo1.maven.org/maven2/org/json/json/20140107/json-20140107.jar" 
          dest="${lib}/json-20140107.jar" 
          skipexisting="true" />
-      <echo message="downloading TinySound library to ${lib}"/>
-      <get src="https://github.com/yadarts/maven/raw/master/kuusisto/tinysound/1.1.1/tinysound-1.1.1.jar"
-         dest="${lib}/tinysound-1.1.1.jar"
-         skipexisting="true" />
   </target>
 
   <!-- init - Create temporary directory to build the program -->
