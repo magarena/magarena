@@ -46,7 +46,6 @@ public class PlayerZoneViewer extends JPanel implements ChangeListener {
     private final ImageCardListViewer imageCardsListViewer;
 
     private static Map<MagicIcon, ImageIcon> getTabIcons() {
-        System.out.println("getTabIcons");
         Map<MagicIcon, ImageIcon> icons = new HashMap<>();
         icons.put(MagicIcon.HAND_ZONE, getTabIcon(MagicIcon.HAND_ZONE));
         icons.put(MagicIcon.GRAVEYARD_ZONE, getTabIcon(MagicIcon.GRAVEYARD_ZONE));
