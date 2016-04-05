@@ -20,6 +20,7 @@ class TestCanopyVistaVigor extends TestGameBuilder {
         addToLibrary(P, "Forest", 20);
         createPermanent(P, "Amulet of Vigor", false, 1);
         addToHand(P, "Canopy Vista", 1);
+        addToHand(P, "Stomping Ground", 1);
 
         P = opponent;
 
