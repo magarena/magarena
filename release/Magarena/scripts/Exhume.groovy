@@ -8,7 +8,7 @@ def EVENT_ACTION = {
     });
 }
 
-def choice = new MagicTargetChoice("a Creature card from your graveyard");
+def choice = new MagicTargetChoice("a creature card from your graveyard");
 
 [
     new MagicSpellCardEvent() {
