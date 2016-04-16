@@ -1,130 +1,254 @@
-*battle cry
-Whenever this creature attacks, each other attacking creature gets +1/+0 until
-end of turn.
-*bolster
-"Bolster N" means "Choose a creature you control with the least toughness or tied for least toughness among creatures you control. Put N +1/+1 counters on that creature".
-*bushido
-When this creature blocks or becomes blocked, it gets +1/+1 until end of turn.
-*buyback
-Pay an extra cost to have spells with buyback return to your hand so you can
-play them again.
-*cascade
-When you cast this spell, exile cards from the top of your library until you
-exile a nonland card whose converted mana cost is less than this spell's
-converted mana cost. You may cast that card without paying its mana cost.
-Then put all cards exiled this way that weren't cast on the bottom of your
-library in a random order.
-*champion
-When this creature enters the battlefield exile another creature you control.
-When this creature leaves the battlefield, that card returns to the
-battlefield.
-*changeling
-This card is every creature type at all times.
-*cumulative upkeep
-Pay an increasing upkeep cost for this permanent. Sacrifice it when you don't
-pay the upkeep cost.
-*deathtouch
-Creatures dealt damage by this creature are destroyed.  You can divide this
-creature's combat damage among any of the creatures blocking or blocked by it.
-*defender
+*Absorb N
+If a source would deal damage to this creature, prevent N of that damage.
+*Affinity for [...]
+This spell costs you {1} less to cast for each [...] you control.
+*Amplify N
+As this object enters the battlefield, reveal any number of cards from your hand that share a creature type with it. This permanent enters the battlefield with N +1/+1 counters on it for each card revealed this way. You can't reveal this card or any other cards that are entering the battlefield at the same time as this card.
+*Annihilator N
+Whenever this creature attacks, defending player sacrifices N permanents.
+*Aura Swap [cost]
+[cost]: You may exchange this permanent with an Aura card in your hand.
+*Awaken N—[cost]
+You may pay [cost] rather than pay this spell's mana cost as you cast this spell.
+If this spell's awaken cost was paid, put N +1/+1 counters on target land you control. That land becomes a 0/0 Elemental creature with haste. It's still a land.
+*Banding
+Any creatures with banding, and up to one without, can attack in a band. Bands are blocked as a group. If any creatures with banding you control are blocking or being blocked by a creature, you divide that creature's combat damage, not its controller, among any of the creatures it's being blocked by or is blocking.
+*Bands with other [...]
+Any creatures named [...] can attack in a band as long as at least one has "bands with other [...]" Bands are blocked as a group. If at least two creatures named [...] you control, one of which has "bands with other [...]," are blocking or being blocked by the same creature, you divide that creature's combat damage, not its controller, among any of the creatures it's being blocked by or is blocking.
+*Battle Cry
+Whenever this creature attacks, each other attacking creature gets +1/+0 until end of turn.
+*Bestow [cost]
+You may cast this card by paying [cost] rather than its mana cost.
+If you chose to pay this spell’s bestow cost, it becomes an Aura enchantment and gains enchant creature. These effects last until one of two things happens: this spell has an illegal target as it resolves or the permanent this spell becomes, becomes unattached.
+*Bloodthirst N
+If an opponent was dealt damage this turn, this permanent enters the battlefield with N +1/+1 counters on it.
+*Bloodthirst X
+This permanent enters the battlefield with X +1/+1 counters on it, where X is the total damage your opponents have been dealt this turn.
+*Bushido N
+Whenever this creature blocks or becomes blocked, it gets +N/+N until end of turn.
+*Buyback [cost]
+You may pay an additional [cost] as you cast this spell.
+If the buyback cost was paid, put this spell into its owner’s hand instead of into that player’s graveyard as it resolves.
+*Cascade
+When you cast this spell, exile cards from the top of your library until you exile a nonland card whose converted mana cost is less than this spell’s converted mana cost. You may cast that card without paying its mana cost. Then put all cards exiled this way that weren’t cast on the bottom of your library in a random order.
+*Champion an [...]
+When this permanent enters the battlefield, sacrifice it unless you exile another [...] you control.
+When this permanent leaves the battlefield, return the exiled card to the battlefield under its owner’s control.
+*Changeling
+This object is every creature type at all times.
+*Cipher
+Then you may exile this spell card encoded on a creature you control. Whenever that creature deals combat damage to a player, its controller may cast a copy of this card without paying its mana cost.
+*Conspire
+As an additional cost to cast this spell, you may tap two untapped creatures you control that each share a color with it.
+When you cast this spell, if its conspire cost was paid, copy it. If the spell has any targets, you may choose new targets for the copy.
+*Convoke
+For each colored mana in this spell’s total cost, you may tap an untapped creature of that color you control rather than pay that mana. For each generic mana in this spell’s total cost, you may tap an untapped creature you control rather than pay that mana.
+*Cumulative Upkeep [cost]
+At the beginning of your upkeep, if this permanent is on the battlefield, put an age counter on this permanent. Then you may pay [cost] for each age counter on it. If you don’t, sacrifice it.
+*Cycling [cost]
+[cost], Discard this card: Draw a card.
+*Dash [cost]
+You may cast this card by paying [cost] rather that its mana cost.
+If this spell’s dash cost was paid, return the permanent this spell becomes to its owner’s hand at the beginning of the next end step.
+As long as this permanent’s dash cost was paid, it has haste.
+*Deathtouch
+Any amount of damage this deals to a creature is enough to destroy it.
+*Defender
 This creature can't attack.
-*dethrone
-Whenever this creature attacks the player with the most life or tied for most life, put a +1/+1 counter on it.
-*devour
-You can sacrifice other creatures when a creature with devour comes into play
-for various benefits.
-*double strike
+*Delve
+For each generic mana in this spell’s total cost, you may exile a card from your graveyard rather than pay that mana.
+*Dethrone
+Whenever this creature attacks the player with the most life or tied for most life, put a +1/+1 counter on this creature.
+*Devoid
+This object is colorless.
+*Devour N
+As this object enters the battlefield, you may sacrifice any number of creatures. This permanent enters the battlefield with N +1/+1 counters on it for each creature sacrificed this way.
+*Double Strike
 This creature deals both first-strike and regular combat damage.
-*exalted
-Whenever a creature you control attacks alone, that creature gets +1/+1 until
-end of turn.
-*extort
-Whenever you cast a spell, you may pay {W/B}.  If you do, each opponent loses
-1 life and you gain life equal to the total life lost this way.
-*fading
-This creature comes into play with fade counters, losing one each turn until
-it has none and is sacrificed.
-*fear
-This creature can't be blocked except by artifact creatures and/or black
-creatures.
-*first strike
+*Dredge N
+As long as you have at least N cards in your library, if you would draw a card, you may instead put N cards from the top of your library into your graveyard and return this card from your graveyard to your hand.
+*Echo [cost]
+At the beginning of your upkeep, if this permanent came under your control since the beginning of your last upkeep, sacrifice it unless you pay [cost].
+*Enchant [...]
+This card can only be attached to an [...].
+*Entwine [cost]
+You may choose all modes of this spell instead of just one. If you do, you pay an additional [cost].
+*Epic
+For the rest of the game, you can’t cast spells.
+At the beginning of each of your upkeeps for the rest of the game, copy this spell except for its epic ability. If the spell has any targets, you may choose new targets for the copy.
+*Equip [cost]
+[cost]: Attach this permanent to target creature you control. Activate this ability only any time you could cast a sorcery.
+*Evoke [cost]
+You may cast this card by paying [cost] rather than paying its mana cost.
+When this permanent enters the battlefield, if its evoke cost was paid, its controller sacrifices it.
+*Evolve
+Whenever a creature enters the battlefield under your control, if that creature’s power is greater than this creature’s power and/or that creature’s toughness is greater than this creature’s toughness, put a +1/+1 counter on this creature.
+*Exalted
+Whenever a creature you control attacks alone, that creature gets +1/+1 until end of turn.
+*Exploit
+When this creature enters the battlefield, you may sacrifice a creature.
+*Extort
+Whenever you cast a spell, you may pay {W/B}. If you do, each opponent loses 1 life and you gain life equal to the total life lost this way.
+*Fading N
+This permanent enters the battlefield with N fade counters on it.
+At the beginning of your upkeep, remove a fade counter from this permanent. If you can’t, sacrifice the permanent.
+*Fear
+This creature can't be blocked except by artifact creatures and/or black creatures.
+*First Strike
 This creature deals combat damage before creatures without first strike.
-*flanking
-Whenever a creature without flanking blocks this creature, the blocking
-creature gets -1/-1 until end of turn.
-*flash
-You may cast this spell any time you could cast an instant.
-*flying
+*Flanking
+Whenever this creature becomes blocked by a creature without flanking, the blocking creature gets -1/-1 until end of turn.
+*Flash
+You may play this card any time you could cast an instant.
+*Flashback [cost]
+You may cast this card from your graveyard by paying [cost] rather than paying its mana cost.
+If the flashback cost was paid, exile this card instead of putting it anywhere else any time it would leave the stack.
+*Flying
 This creature can't be blocked except by creatures with flying or reach.
-*haste
-This creature can attack and tap the turn it comes under your control.
-*hexproof
-This creature can't be the target of spells or abilities your opponents
-control.
-*forestwalk
-This creature is unblockable as long as defending player controls a Forest.
-*indestructible
-"Destroy" effects and lethal damage don't destroy this.
-*infect
-This creature deals damage to creatures in the form of -1/-1 counters and to
-players in the form of poison counters.
-*intimidate
-This creature can't be blocked except by artifact creatures and/or creatures
-that share a color with it.
-*islandwalk
-This creature is unblockable as long as defending player controls an Island.
-*lifelink
+*Forecast — [cost]
+Play this ability only during your upkeep and only once each turn.
+*Fortify [cost]
+[cost]: Attach this Fortification to target land you control. Activate this ability only any time you could cast a sorcery.
+*Frenzy N
+Whenever this creature attacks and isn’t blocked, it gets +N/+0 until end of turn.
+*Fuse
+You may cast one or both halves of this card from your hand.
+*Graft N
+This permanent enters the battlefield with N +1/+1 counters on it.
+Whenever another creature enters the battlefield, if this permanent has a +1/+1 counter on it, you may move a +1/+1 counter from this permanent onto that creature.
+*Gravestorm
+When you cast this spell, put a copy of it onto the stack for each permanent that was put into a graveyard from battlefield this turn. If the spell has any targets, you may choose new targets for any of the copies.
+*Haste
+This creature can attack and {T} as soon as it comes under your control.
+*Haunt
+When this creature dies, exile it haunting target creature.
+*Hexproof
+This permanent can't be the target of spells or abilities your opponents control.
+*Hidden Agenda
+As you put this conspiracy card into the command zone, turn it face down and secretly name a card.
+*Hideaway
+This land enters the battlefield tapped. When it does, look at the top four cards of your library, exile one face down, then put the rest on the bottom of your library.
+*Horsemanship
+This creature can't be blocked except by creatures with horsemanship.
+*Indestructible
+Damage and effects that say "destroy" don't destroy it.
+*Infect
+This creature deals damage to creatures in the form of -1/-1 counters and to players in the form of poison counters.
+*Ingest
+Whenever this creature deals combat damage to a player, that player exiles the top card of his or her library.
+*Intimidate
+This creature can't be blocked except by artifact creatures and/or creatures that share a color with it.
+*Investigate
+Put a colorless Clue artifact token onto the battlefield with "{2}, Sacrifice this artifact: Draw a card."
+*Kicker [cost]
+You may pay an additional [cost] as you cast this spell.
+*[Type] Landwalk
+This creature can't be blocked as long as defending player controls a [type].
+*Level Up [cost]
+[Cost]: Put a level counter on this permanent. Activate this ability only any time you could cast a sorcery.
+*Lifelink
 Damage dealt by this creature also causes you to gain that much life.
-*living weapon
-When this equipment enters the battlefield it'll be attached to a 0/0 black
-germ token.
-*metalcraft
-This card gains abilities or bonuses if you control three or more artifacts.
-*modular
-When this artifact creature goes to your graveyard, you can put its +1/+1
-counters on another artifact creature.
-*mountainwalk
-This creature is unblockable as long as defending player controls a Mountain.
-*persist
-When this creature is put into a graveyard from the battlefield, if it had no
--1/-1 counters on it, return it to the battlefield under its owner's control
-with a -1/-1 counter on it.
-*plainswalk
-This creature is unblockable as long as defending player controls a Plains.
-*protection from ~
-This creature can't be blocked, targeted, dealt damage, equipped or enchanted
-by anything ~.
-*reach
+*Living Weapon
+When this Equipment enters the battlefield, put a 0/0 black Germ creature token onto the battlefield, then attach this Equipment to it.
+*Madness [cost]
+If you discard this card, discard it into exile. When you do, cast it for its madness cost or put it into your graveyard.
+*Megamorph [cost]
+You may cast this card face down as a 2/2 creature for {3}. Turn it face up at any time for its megamorph cost and put a +1/+1 counter on it.
+*Menace
+This creature can't be blocked except by two or more creatures.
+*Miracle [cost]
+You may cast this card for its Miracle cost when you draw it if it's the first card you drew this turn.
+*Modular N
+This comes into play with N +1/+1 counters on it. When it's put into a graveyard, you may put its +1/+1 counters on target artifact creature.
+*Morph [cost]
+You may cast this face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.
+*Multikicker [cost]
+You may pay an additional [cost] any number of times as you cast this spell.
+*Myriad
+Whenever this creature attacks, for each opponent other than defending player, you may put a token that's a copy of this creature onto the battlefield tapped and attacking that player or a planeswalker he or she controls. Exile the tokens at the end of combat.
+*Ninjutsu [cost]
+[Cost], Return an unblocked attacker you control to hand: Put this card onto the battlefield from your hand tapped and attacking.
+*[Subtype] Offering
+You may cast this card any time you could cast an instant by sacrificing a [subtype] permanent. If you do, the total cost to cast this card is reduced by the sacrificed permanent’s mana cost.
+*Outlast [cost]
+[cost], {T}: Put a +1/+1 counter on this creature. Outlast only as a sorcery.
+*Overload [cost]
+You may cast this spell for its overload cost. If you do, change its text by replacing all instances of 'target' with 'each'.
+*Persist
+When this permanent is put into a graveyard from the battlefield, if it had no -1/-1 counters on it, return it to the battlefield under its owner's control with a -1/-1 counter on it.
+*Phasing
+This phases in or out before you untap during each of your untap steps. While it's phased out, it's treated as though it doesn't exist.
+*Poisonous N
+Whenever this creature deals combat damage to a player, that player gets N poison counters.
+*Protection [quality]
+This can't be blocked, targeted, dealt damage, or enchanted by anything [quality].
+*Provoke
+Whenever this attacks, you may have target creature defending player controls untap and block it if able.
+*Prowess
+Whenever you cast a noncreature spell, this creature gets +1/+1 until end of turn.
+*Prowl [cost]
+You may cast this for its prowl cost if you dealt combat damage to a player this turn with a [subtype].
+*Rampage N
+Whenever this creature becomes blocked, it gets +N/+N until end of turn for each creature blocking it beyond the first.
+*Reach
 This creature can block creatures with flying.
-*regenerate
-The next time this creature would be destroyed this turn, it isn't.  Instead
-tap it, remove all damage from it, and remove it from combat.
-*shadow
-This creature can only block or be blocked by other creatures with shadow.
-*shroud
-This can't be the target of spells or abilities.
-*soulshift
-When this creature dies, you may return a Spirit card from your graveyard to
-your hand.
-*swampwalk
-This creature is unblockable as long as defending player controls a Swamp.
-*threshold
-This card gains abilities or bonuses if you have 7 or more cards in your
-graveyard.
-*totem armor
-If enchanted creature would be destroyed, instead remove all damage from it
-and destroy this Aura.
-*trample
-If this creature would deal enough damage to its blockers to destroy them, you
-may have it deal the rest of its damage to defending player.
-*unleash
-You may have this permanent enter the battlefield with an additional +1/+1
-counter on it.  This permanent can't block as long as it has a +1/+1 counter
-on it.
-*vanishing
-This creature comes into play with time counters, losing one each turn until
-it has none and is sacrificed.
-*vigilance
+*Rebound
+If this spell was cast from your hand, instead of putting it into your graveyard as it resolves, exile it and, at the beginning of your next upkeep, you may cast this card from exile without paying its mana cost.
+*Recover [cost]
+When a creature is put into your graveyard from the battlefield, you may pay [cost]. If you do, return this card from your graveyard to your hand. Otherwise, exile this card.
+*Reinforce N — [cost]
+[Cost], Discard this card: Put N +1/+1 counters on target creature.
+*Renown N
+Whenever this creature deals combat damage to a player, if it isn't renowned, put N +1/+1 counter on it becomes renowned.
+*Replicate [cost]
+When you cast this spell, copy it for each time you paid its replicate cost. You may choose new targets for the copies.
+*Retrace
+You may cast this card from your graveyard by discarding a land card as an additional cost to cast it.
+*Ripple N
+When you cast this spell, you may reveal the top N cards of your library, or, if there are fewer than N cards in your library, you may reveal all the cards in your library. If you reveal cards from your library this way, you may cast any of those cards with the same name as this spell without paying their mana costs, then put all revealed cards not cast this way on the bottom of your library in any order.
+*Scavenge [cost]
+[Cost], Exile this card from your graveyard: Put a number of +1/+1 counters equal to this card's power on target creature. Scavenge only as a sorcery.
+*Shadow
+This creature can block or be blocked by only creatures with shadow.
+*Shroud
+This permanent or player can’t be the target of spells or abilities.
+*Skulk
+This creature can't be blocked by creatures with greater power.
+*Soulbond
+You may pair this creature with another unpaired creature when either enters the battlefield. They remain paired for as long as you control both of them.
+*Soulshift N
+When this creature dies, you may return target Spirit card with converted mana cost N or less from your graveyard to your hand.
+*Splice onto [type] [cost]
+As you cast an [type] spell, you may reveal this card from your hand and pay its splice cost. If you do, add this card's effects to that spell.
+*Split Second
+As long as this spell is on the stack, players can't cast spells or activate abilities that aren't mana abilities.
+*Storm
+When you play this spell, put a copy of it onto the stack for each other spell that was played before it this turn. If the spell has any targets, you may choose new targets for any number of the copies.
+*Sunburst
+This enters the battlefield with a (+1/+1 or charge) counter on it for each color of mana spent to cast it.
+*Surge [cost]
+You may cast a spell for its surge cost if you or a teammate have cast another spell in the same turn.
+*Suspend N — (cost)
+Rather than cast this card from your hand, you may pay [cost] and exile it with N time counters on it. At the beginning of your upkeep, remove a time counter. When the last is removed, cast it without paying its mana cost. It has haste.
+*Totem Armor
+If enchanted permanent would be destroyed, instead remove all damage marked on it and destroy this Aura.
+*Trample
+This creature can deal excess combat damage to defending player or planeswalker while attacking.
+*Transfigure [cost]
+[Cost], Sacrifice this permanent: Search your library for a creature card with the same converted mana cost as this permanent and put it onto the battlefield. Then shuffle your library. Activate this ability only any time you could cast a sorcery.
+*Transmute [cost]
+[cost], Discard this card: Search your library for a card with the same converted mana cost as this card, reveal it, and put it into your hand. Then shuffle your library. Transmute only as a sorcery.
+*Tribute N
+As this creature enters the battlefield, choose an opponent. That player may have this creature enter the battlefield with an additional N +1/+1 counters on it.
+*Undying
+When this creature dies, if it had no +1/+1 counters on it, return it to the battlefield under its owner's control with a +1/+1 counter on it.
+*Unearth [cost]
+[Cost]: Return this card from your graveyard to the battlefield. It gains haste. Exile it at the beginning of the next end step or if it would leave the battlefield. Unearth only as a sorcery.
+*Unleash
+You may have this creature enter the battlefield with a +1/+1 counter on it. It can't block as long as it has a +1/+1 counter on it.
+*Vanishing
+This creature/Aura enters the battlefield with four time counters on it. At the beginning of your upkeep, remove a time counter from it. When the last is removed, sacrifice it.
+*Vigilance
 Attacking doesn't cause this creature to tap.
-*wither
+*Wither
 This deals damage to creatures in the form of -1/-1 counters.
