@@ -8,7 +8,6 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.Scrollable;
 import javax.swing.SwingUtilities;
@@ -101,11 +100,8 @@ public class KeywordsScreen extends AbstractScreen implements IStatusBar, IActio
             nameLabel.setFont(FontsAndBorders.FONT2);
             keywordPanel.add(nameLabel, "w 100%");
 
-            final JTextArea descriptionLabel = new JTextArea(keywordDefinition.description.replace("<br>", " "));
-            descriptionLabel.setBackground(FontsAndBorders.TEXTAREA_TRANSPARENT_COLOR_HACK);
-            descriptionLabel.setBorder(null);
-            descriptionLabel.setLineWrap(true);
-            descriptionLabel.setWrapStyleWord(true);
+            final JLabel descriptionLabel = new JLabel();
+            descriptionLabel.setText("<html>" + keywordDefinition.description.replace("<br>", " ") + "</html>");
             descriptionLabel.setForeground(textColor);
             keywordPanel.add(descriptionLabel, "w 10:100%");
 
