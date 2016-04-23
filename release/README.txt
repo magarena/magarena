@@ -73,6 +73,30 @@ Thank you for your support and have fun!
 
 Release 1.72 (April 23, 2016)
 ============
+lodici
+melvin
+ShawnieBoy
+
+- add Shadows over Innistrad
+
+- allow filters and table headings to be translateable
+
+- update format legalities as of April 8th rotation
+
+- update Oracle changes
+
+- update Keyword Glossary
+
+- fixed the following bugs:
+    * Transformed cards use the converted mana cost of the hidden side
+    * correct transform-type symbols for transform cards in cardbuilder
+    * display Loyalty for unimplemented Planeswalkers in cardbuilder
+    * Helm of Obedience should check cards enter the graveyard
+    * prevent '{T}, tap an untapped ...' from allowing the source to tap 'twice' for cost
+    * remove TinySound from build (issue #653)
+    
+- added the following cards:
+
 
 Release 1.71 (March 27, 2016)
 ============
