@@ -83,17 +83,17 @@ ShawnieBoy
 
 - update format legalities as of April 8th rotation
 
+- Transformed cards use the converted mana cost of the hidden side
+
 - update Oracle changes
 
 - update Keyword Glossary
 
 - fixed the following bugs:
-    * Transformed cards use the converted mana cost of the hidden side
-    * correct transform-type symbols for transform cards in cardbuilder
-    * display Loyalty for unimplemented Planeswalkers in cardbuilder
-    * Helm of Obedience should check cards enter the graveyard
-    * prevent '{T}, tap an untapped ...' from allowing the source to tap 'twice' for cost
-    * remove TinySound from build (issue #653)
+    * incorrect transform-type symbols for transform cards in cardbuilder
+    * loyalty for unimplemented Planeswalkers not displayed in cardbuilder
+    * permanent can tap itself twice to pay for '{T}, tap an untapped ...'
+    * Helm of Obedience did not check that cards entered the graveyard (issue #745)
     
 - added the following cards:
 Aberrant Researcher, Aim High, Alms of the Vein, Always Watching,
