@@ -43,7 +43,7 @@ public class StackViewerInfo {
     }
 
     boolean isMagicCard(long magicCardId) {
-        if (itemOnStack.getSource() instanceof MagicCard) {
+        if (itemOnStack.isSpell()) {
             return magicCardId == ((MagicCard) itemOnStack.getSource()).getId();
         }
         return false;
