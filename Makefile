@@ -380,9 +380,6 @@ cards/cards.xml: cards/cards.orig.xml
 cards/scriptable.txt: scripts/analyze_cards.scala scripts/effects.txt cards/cards.xml cards/existing_master.txt
 	scala $^ > $@
 
-grammar/rules.txt: scripts/normalize_rules.scala cards/cards.xml
-	scala $^ > $@
-
 cards/magicdraftsim-sets:
 	curl www.magicdraftsim.com/card-ratings | \
 	grep Kamigawa | \
