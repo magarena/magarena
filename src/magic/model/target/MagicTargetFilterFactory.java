@@ -937,6 +937,14 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicPermanentFilterImpl VAMPIRE_OR_ZOMBIE_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+            return (target.hasSubType(MagicSubType.Vampire) ||
+                    target.hasSubType(MagicSubType.Zombie)) &&
+                   target.isController(player);
+        }
+    };
+
     public static final MagicPermanentFilterImpl NONVAMPIRE_NONWEREWOLF_NONZOMBIE_CREATURE = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
@@ -2863,6 +2871,7 @@ public class MagicTargetFilterFactory {
         single.put("tapped artifact, creature, or land you control", TAPPED_ARTIFACT_CREATURE_AND_LAND_YOU_CONTROL);
         single.put("untapped artifact, creature, or land you control", UNTAPPED_ARTIFACT_CREATURE_OR_LAND_YOU_CONTROL);
         single.put("equipped creature you control", EQUIPPED_CREATURE_YOU_CONTROL);
+        single.put("Vampire or Zombie you control", VAMPIRE_OR_ZOMBIE_YOU_CONTROL);
 
 
         // <color|type|subtype> an opponent controls
