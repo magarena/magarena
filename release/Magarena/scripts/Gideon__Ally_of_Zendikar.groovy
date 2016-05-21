@@ -41,7 +41,7 @@ def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             game.doAction(new BecomesCreatureAction(event.getPermanent(),PT,AB,ST));
-            game.doAction(new AddTurnTriggerAction(event.getPermanent(), PreventDealtTo));
+            game.doAction(new AddTurnTriggerAction(event.getPermanent(), PreventDamageTrigger.PreventDamageDealtTo));
         }
     },    
     new MagicPlaneswalkerActivation(0) {
