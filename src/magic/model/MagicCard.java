@@ -160,6 +160,7 @@ public class MagicCard
         return owner;
     }
 
+    @Override
     public boolean isToken() {
         return token;
     }
