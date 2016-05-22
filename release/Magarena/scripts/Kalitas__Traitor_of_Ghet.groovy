@@ -1,5 +1,5 @@
 [
-    new ThisLeavesBattlefieldTrigger(MagicTrigger.REPLACEMENT) {
+    new LeavesBattlefieldTrigger(MagicTrigger.REPLACEMENT) {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final RemoveFromPlayAction act) {
             final MagicPermanent it = act.getPermanent();
