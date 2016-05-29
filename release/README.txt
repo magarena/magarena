@@ -73,6 +73,19 @@ Thank you for your support and have fun!
 
 Release 1.73 (May 28, 2016)
 ============
+melvin
+muppet
+ShawnieBoy
+
+- fixed the following bugs:
+  * Stensia Masquerade would put +1/+1 counters on itself
+  * item on stack is a card only when it is a spell (issue #760)
+  * Anafenza need a separate LeavesBattlefieldTrigger to prevent dies from triggering (issue #765)
+  * Sigarda, Heron's Grace crash due invalid ability (issue #768)
+
+- added the following cards:
+Gideon, Ally of Zendikar, Kalitas, Traitor of Ghet,
+Ormendahl, Profane Prince, Sylvan Advocate, Westvale Abbey
 
 Release 1.72 (April 23, 2016)
 ============
