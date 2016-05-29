@@ -3108,6 +3108,9 @@ public class MagicTargetFilterFactory {
         final boolean other = matcher.find();
         final String processed = matcher.replaceFirst("");
         final MagicTargetFilter<MagicPermanent> filter = (MagicTargetFilter<MagicPermanent>)single(processed);
+        if (filter.acceptType(MagicTargetType.Permanent) == false) {
+            throw new RuntimeException("unknown permanent filter \"" + text + "\"");
+        }
         return other ? new MagicOtherPermanentTargetFilter(filter) : filter;
     }
 
