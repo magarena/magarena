@@ -78,9 +78,9 @@ muppet
 ShawnieBoy
 
 - fixed the following bugs:
-  * Stensia Masquerade would put +1/+1 counters on itself
-  * item on stack is a card only when it is a spell (issue #760)
-  * Anafenza need a separate LeavesBattlefieldTrigger to prevent dies from triggering (issue #765)
+  * crash when highlighting card ability on stack (issue #760)
+  * Stensia Masquerade puts +1/+1 counters on itself instead of the creature that dealt damage
+  * Anafenza did not prevent death trigger from occuring (issue #765)
   * Sigarda, Heron's Grace crash due invalid ability (issue #768)
 
 - added the following cards:
