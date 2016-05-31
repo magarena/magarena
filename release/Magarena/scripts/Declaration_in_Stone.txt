@@ -4,6 +4,6 @@ value=2.500
 rarity=R
 type=Sorcery
 cost={1}{W}
-effect=Exile target creature and all other creatures its controller controls with the same name as that creature. That player investigates for each nontoken creature exiled this way.
 timing=main
+requires_groovy_code
 oracle=Exile target creature and all other creatures its controller controls with the same name as that creature. That player investigates for each nontoken creature exiled this way.
