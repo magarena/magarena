@@ -6,7 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={1}{B}{B}
 ability=Enchant creature;\
-        When enchanted creature leaves the battlefield, its controller sacrifices a creature.
+        When enchanted creature leaves the battlefield, RN's controller sacrifices a creature.
 timing=aura
-enchant=default,creature
+enchant=can't attack or block,neg creature
 oracle=Enchant creature\nWhen enchanted creature leaves the battlefield, its controller sacrifices a creature.
