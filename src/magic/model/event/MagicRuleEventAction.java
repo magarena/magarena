@@ -2769,12 +2769,16 @@ public enum MagicRuleEventAction {
                 if (ifCond.accept(event.getSource()) == false) {
                     return;
                 }
-                final MagicEvent costEvent =
-                    mayPayMatched ? mayDoCost.getEvent(event.getSource())
-                  : mayCostMatched ? mayCost.getEvent(event.getSource())
-                  : MagicEvent.NONE;
+
+                final MagicMatchedCostEvent matchedCost =
+                    mayPayMatched ? mayDoCost
+                  : mayCostMatched ? mayCost
+                  : MagicRegularCostEvent.NONE;
+
+                final MagicEvent costEvent = matchedCost.getEvent(event.getSource());
+
                 if (optional == false || (event.isYes() && costEvent.isSatisfied())) {
-                    if (costEvent.isValid()) {
+                    if (matchedCost != MagicRegularCostEvent.NONE) {
                         game.addEvent(costEvent);
                     }
                     if (mayCostMatched == false) {
