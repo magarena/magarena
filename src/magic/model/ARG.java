@@ -43,6 +43,7 @@ public class ARG {
     }
 
     public static final String COST = "(?<cost>.+)";
+    public static final String MAY_COST = "(?<cost>(?!search|draw|exile).+)";
     public static String cost(final Matcher m) {
         return m.group("cost");
     }
