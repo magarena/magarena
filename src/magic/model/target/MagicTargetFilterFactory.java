@@ -1036,6 +1036,18 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicPermanentFilterImpl ENCHANTED_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+            final MagicPermanent perm = (MagicPermanent)source;
+            return perm.getEnchantedPermanent() == target && target.isCreature() && target.isController(player);
+        }
+
+        @Override
+        public boolean isStatic() {
+            return true;
+        }
+    };
+
     public static final MagicPermanentFilterImpl ENCHANTED_LAND = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             final MagicPermanent perm = (MagicPermanent)source;
@@ -1076,14 +1088,6 @@ public class MagicTargetFilterFactory {
     public static final MagicPermanentFilterImpl ENCHANTMENT_OR_ENCHANTED_PERMANENT = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isEnchantment() || target.isEnchanted();
-        }
-    };
-
-    public static final MagicPermanentFilterImpl ENCHANTED_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-            return target.isController(player) &&
-                target.isCreature() &&
-                target.isEnchanted();
         }
     };
 
