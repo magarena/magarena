@@ -2034,6 +2034,12 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicStackFilterImpl COLORLESS_SPELL_CMC_7_OR_MORE = new MagicStackFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
+            return itemOnStack.isSpell() && MagicColor.isColorless(itemOnStack.getSource()) && itemOnStack.getConvertedCost() >= 7;
+        }
+    };
+
     public static final MagicCardFilterImpl MULTICOLORED_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return MagicColor.isMulti(target);
@@ -2999,6 +3005,7 @@ public class MagicTargetFilterFactory {
         single.put("Spirit or Arcane spell", SPIRIT_OR_ARCANE_SPELL);
         single.put("multicolored spell", MULTICOLORED_SPELL);
         single.put("colorless spell", COLORLESS_SPELL);
+        single.put("colorless spell with converted mana cost 7 or greater", COLORLESS_SPELL_CMC_7_OR_MORE);
         single.put("creature spell with converted mana cost 3 or less", CREATURE_SPELL_CMC_3_OR_LESS);
 
         // player
