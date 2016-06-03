@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Soldier
 cost={W}
 pt=1/2
-ability=Whenever you cast a spell that targets SN, put a +1/+1 counter on SN and prevent all damage that would be dealt to it this turn.
+ability=Whenever you cast a spell that targets SN, put a +1/+1 counter on SN~and prevent all damage that would be dealt to it this turn.
 timing=main
 oracle=Heroic — Whenever you cast a spell that targets Favored Hoplite, put a +1/+1 counter on Favored Hoplite and prevent all damage that would be dealt to it this turn.
