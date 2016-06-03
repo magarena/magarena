@@ -7,6 +7,6 @@ subtype=Dragon
 cost={3}{W}{W}
 pt=4/3
 ability=Flying;\
-        Whenever an opponent casts a spell, put a +1/+1 counter on SN and you gain 1 life.
+        Whenever an opponent casts a spell, put a +1/+1 counter on SN~and you gain 1 life.
 timing=main
 oracle=Flying\nWhenever an opponent casts a spell, put a +1/+1 counter on Sunscorch Regent and you gain 1 life.
