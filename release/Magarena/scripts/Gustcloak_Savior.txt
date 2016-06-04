@@ -6,7 +6,7 @@ type=Creature
 subtype=Bird,Soldier
 cost={4}{W}
 pt=3/4
-ability=Flying
+ability=Flying;\
+        Whenever a creature you control becomes blocked, you may untap RN~and remove RN from combat.
 timing=main
-requires_groovy_code
 oracle=Flying\nWhenever a creature you control becomes blocked, you may untap that creature and remove it from combat.

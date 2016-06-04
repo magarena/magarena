@@ -6,7 +6,7 @@ type=Creature
 subtype=Bird,Soldier
 cost={3}{W}
 pt=2/3
-ability=Flying
+ability=Flying;\
+        Whenever SN becomes blocked, you may untap SN~and remove it from combat.
 timing=main
-requires_groovy_code
 oracle=Flying\nWhenever Gustcloak Skirmisher becomes blocked, you may untap it and remove it from combat.

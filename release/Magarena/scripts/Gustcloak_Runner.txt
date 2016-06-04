@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Soldier
 cost={W}
 pt=1/1
+ability=Whenever SN becomes blocked, you may untap SN~and remove it from combat.
 timing=main
-requires_groovy_code=Gustcloak Skirmisher
 oracle=Whenever Gustcloak Runner becomes blocked, you may untap it and remove it from combat.

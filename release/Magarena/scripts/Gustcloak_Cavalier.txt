@@ -7,7 +7,7 @@ subtype=Human,Knight
 cost={3}{W}{W}
 pt=2/2
 ability=flanking;\
-        Whenever SN attacks, you may tap target creature.
+        Whenever SN attacks, you may tap target creature.;\
+        Whenever SN becomes blocked, you may untap SN~and remove it from combat.
 timing=main
-requires_groovy_code=Gustcloak Skirmisher
 oracle=Flanking\nWhenever Gustcloak Cavalier attacks, you may tap target creature.\nWhenever Gustcloak Cavalier becomes blocked, you may untap Gustcloak Cavalier and remove it from combat.
