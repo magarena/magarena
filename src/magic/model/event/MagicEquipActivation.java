@@ -14,17 +14,23 @@ import magic.model.target.MagicEquipTargetPicker;
 import magic.model.target.MagicOtherPermanentTargetFilter;
 import magic.model.target.MagicTargetFilterFactory;
 import magic.model.target.MagicTargetHint;
+import magic.model.target.MagicTargetFilter;
 
 public class MagicEquipActivation extends MagicPermanentActivation {
 
     private final List<MagicMatchedCostEvent> costs;
+    private final MagicTargetFilter<MagicPermanent> filter;
     private static final MagicMatchedCostEvent AI_MAX_TWICE = new MagicArtificialCondition(MagicCondition.ABILITY_TWICE_CONDITION);
 
     public MagicEquipActivation(final List<MagicMatchedCostEvent> aCosts) {
-        this(aCosts, "Equip");
+        this(aCosts, "Equip", MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
+    }
+    
+    public MagicEquipActivation(final List<MagicMatchedCostEvent> aCosts, final MagicTargetFilter<MagicPermanent> filter) {
+        this(aCosts, "Equip", filter);
     }
 
-    public MagicEquipActivation(final List<MagicMatchedCostEvent> aCosts, final String description) {
+    public MagicEquipActivation(final List<MagicMatchedCostEvent> aCosts, final String description, final MagicTargetFilter<MagicPermanent> aFilter) {
         super(
             new MagicCondition[]{
                 MagicCondition.SORCERY_CONDITION,
@@ -34,6 +40,7 @@ public class MagicEquipActivation extends MagicPermanentActivation {
             description
         );
         costs = aCosts;
+        filter = aFilter;
     }
 
     @Override
@@ -50,7 +57,7 @@ public class MagicEquipActivation extends MagicPermanentActivation {
     public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
         final MagicTargetChoice TARGET_OTHER_CREATURE_YOU_CONTROL = new MagicTargetChoice(
             new MagicOtherPermanentTargetFilter(
-                MagicTargetFilterFactory.CREATURE_YOU_CONTROL,
+                filter,
                 source.getEquippedCreature()
             ),
             MagicTargetHint.None,
