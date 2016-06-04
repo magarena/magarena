@@ -1630,6 +1630,26 @@ public enum MagicRuleEventAction {
                 MagicActivation.NO_COND;
         }
     },
+    PutTokenCopy(
+        "(you )?put a token (onto the battlefield )?that's a copy of " + ARG.PERMANENTS + "( onto the battlefield)?\\." + ARG.MODS,
+        MagicTiming.Token,
+        "Token"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            final List<MagicPlayMod> mods = ARG.mods(matcher);
+            return (game, event) -> {
+                for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                    game.doAction(new PlayTokenAction(
+                        event.getPlayer(),
+                        it,
+                        mods
+                    ));
+                }
+            };
+        }
+    },
     PutTokens(
         ARG.PLAYERS + "( )?put(s)? " + ARG.AMOUNT + " (?<name>[^\\.]*token[^\\.]*) onto the battlefield" + ARG.MODS + "( )?(for each " + ARG.WORDRUN + ")?",
         MagicTiming.Token,

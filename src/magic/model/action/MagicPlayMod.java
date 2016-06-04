@@ -80,7 +80,7 @@ public enum MagicPlayMod implements MagicPermanentAction {
             game.doAction(new GainAbilityAction(perm, MagicAbility.Haste));
         }
     },
-    HASTE("it gains haste") {
+    HASTE("(it|that token) gains haste") {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             game.doAction(new GainAbilityAction(perm, MagicAbility.Haste, MagicStatic.Forever));
         }
