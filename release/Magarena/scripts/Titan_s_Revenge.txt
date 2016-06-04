@@ -4,6 +4,6 @@ value=3.444
 rarity=R
 type=Sorcery
 cost={X}{R}{R}
-effect=SN deals X damage to target creature or player. Clash with an opponent. If you win, return SN to its owner's hand.
+effect=SN deals X damage to target creature or player.~Clash with an opponent. If you win, return SN to its owner's hand.
 timing=main
 oracle=Titan's Revenge deals X damage to target creature or player. Clash with an opponent. If you win, return Titan's Revenge to its owner's hand.
