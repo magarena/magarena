@@ -9,6 +9,6 @@ pt=4/4
 ability=Trample;\
         SN attacks each turn if able.;\
         Whenever SN is dealt damage, flip a coin. If you lose the flip, sacrifice SN.;\
-        When SN dies, flip a coin. If you lose the flip, it deals 4 damage to each creature and each player.
+        When SN dies, flip a coin. If you lose the flip, SN deals 4 damage to each creature and each player.
 timing=main
 oracle=Trample\nVolatile Rig attacks each turn if able.\nWhenever Volatile Rig is dealt damage, flip a coin. If you lose the flip, sacrifice Volatile Rig.\nWhen Volatile Rig dies, flip a coin. If you lose the flip, it deals 4 damage to each creature and each player.
