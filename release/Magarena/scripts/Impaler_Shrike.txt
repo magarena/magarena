@@ -7,6 +7,6 @@ subtype=Bird
 cost={2}{U}{U}
 pt=3/1
 ability=Flying;\
-        Whenever SN deals combat damage to a player, you may sacrifice it. If you do, draw three cards.
+        Whenever SN deals combat damage to a player, you may sacrifice SN. If you do, draw three cards.
 timing=main
 oracle=Flying\nWhenever Impaler Shrike deals combat damage to a player, you may sacrifice it. If you do, draw three cards.
