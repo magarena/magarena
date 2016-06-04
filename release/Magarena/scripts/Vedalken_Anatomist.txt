@@ -6,6 +6,6 @@ type=Creature
 subtype=Vedalken,Wizard
 cost={2}{U}
 pt=1/2
-ability={2}{U}, {T}: Put a -1/-1 counter on target creature. You may tap or untap that creature.
+ability={2}{U}, {T}: Put a -1/-1 counter on target creature.~You may tap or untap *that creature*.
 timing=main
 oracle={2}{U}, {T}: Put a -1/-1 counter on target creature. You may tap or untap that creature.
