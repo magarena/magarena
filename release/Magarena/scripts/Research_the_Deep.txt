@@ -4,6 +4,6 @@ value=2.438
 rarity=U
 type=Sorcery
 cost={1}{U}
-effect=Draw a card. Clash with an opponent. If you win, return SN to its owner's hand.
+effect=Draw a card.~Clash with an opponent. If you win, return SN to its owner's hand.
 timing=main
 oracle=Draw a card. Clash with an opponent. If you win, return Research the Deep to its owner's hand.
