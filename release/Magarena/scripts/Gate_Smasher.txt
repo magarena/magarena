@@ -6,6 +6,6 @@ type=Artifact
 subtype=Equipment
 cost={3}
 ability=Equipped creature gets +3/+0 and has trample.;\
-        Equip {3} creature with toughness 4 or greater
+        Equip {3} to a creature with toughness 4 or greater
 timing=equipment
 oracle=Gate Smasher can be attached only to a creature with toughness 4 or greater.\nEquipped creature gets +3/+0 and has trample.\nEquip {3}

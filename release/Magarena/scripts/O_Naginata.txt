@@ -6,6 +6,6 @@ type=Artifact
 subtype=Equipment
 cost={1}
 ability=Equipped creature gets +3/+0 and has trample.;\
-        Equip {2} creature with power 3 or greater
+        Equip {2} to a creature with power 3 or greater
 timing=equipment
 oracle=O-Naginata can be attached only to a creature with power 3 or greater.\nEquipped creature gets +3/+0 and has trample.\nEquip {2}

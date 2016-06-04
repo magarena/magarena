@@ -380,10 +380,10 @@ public enum MagicAbility {
             card.add(new MagicUnearthActivation(manaCost));
         }
     },
-    EquipCond("Equip( |—)" + ARG.COST + " creature with " + ARG.WORDRUN, 0) {
+    EquipCond("Equip( |—)" + ARG.COST + " to a " + ARG.WORDRUN, 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(ARG.cost(arg));
-            card.add(new MagicEquipActivation(matchedCostEvents, MagicTargetFilterFactory.Permanent("creature with " + ARG.wordrun(arg))));
+            card.add(new MagicEquipActivation(matchedCostEvents, MagicTargetFilterFactory.Permanent(ARG.wordrun(arg))));
         }
     },
     Equip("Equip( |—)" + ARG.COST, 0) {
