@@ -6,6 +6,6 @@ rarity=C
 type=Sorcery
 cost={2}{B}
 ability=Devoid
-effect=Creatures you control get +2/+0 until end of turn. Colorless creatures you control also gain first strike until end of turn.
+effect=Creatures you control get +2/+0 until end of turn.~Colorless creatures you control gain first strike until end of turn.
 timing=main
 oracle=Devoid\nCreatures you control get +2/+0 until end of turn. Colorless creatures you control also gain first strike until end of turn.
