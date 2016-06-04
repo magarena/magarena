@@ -4,6 +4,6 @@ value=3.577
 rarity=U
 type=Sorcery
 cost={R}
-effect=SN deals damage to target creature equal to the number of instant and sorcery cards in your graveyard. Scry 1.
+effect=SN deals damage to target creature equal to the number of instant and sorcery cards in your graveyard.~Scry 1.
 timing=main
 oracle=Spite of Mogis deals damage to target creature equal to the number of instant and sorcery cards in your graveyard. Scry 1.
