@@ -18,7 +18,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             event.processRefPermanent(game, {
                 final int amount = new MagicOtherPermanentTargetFilter(CREATURE_YOU_CONTROL, it).filter(event).size();
-                game.logAppendMessage(event.getPlayer(), "(" + amount + ")");
+                game.logAppendValue(event.getPlayer(), amount);
                 game.doAction(new ChangeTurnPTAction(it, amount, amount));
             });
         }
