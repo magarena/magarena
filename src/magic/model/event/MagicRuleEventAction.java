@@ -562,7 +562,7 @@ public enum MagicRuleEventAction {
         }
     },
     PreventAllCombatBy(
-        "prevent all combat damage that would be dealt by " + ARG.PERMANENTS + " this turn",
+        "prevent all combat damage (that would be dealt (this turn )?by )?" + ARG.PERMANENTS + "( would deal)?( this turn)?",
         MagicTargetHint.Negative,
         new MagicNoCombatTargetPicker(true, true, false),
         MagicTiming.Block,
