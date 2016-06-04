@@ -4,6 +4,6 @@ value=3.179
 rarity=C
 type=Instant
 cost={1}{G}
-effect=Destroy target enchantment. Clash with an opponent. If you win, destroy all enchantments your opponents control.
+effect=Destroy target enchantment.~Clash with an opponent. If you win, destroy all enchantments your opponents control.
 timing=removal
 oracle=Destroy target enchantment. Clash with an opponent. If you win, destroy all enchantments your opponents control.
