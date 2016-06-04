@@ -1948,6 +1948,17 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicCardFilterImpl CREATURE_OR_LAND_CARD_FROM_ALL_GRAVEYARDS = new MagicCardFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
+            return target.hasType(MagicType.Land) || target.hasType(MagicType.Creature);
+        }
+
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType == MagicTargetType.Graveyard ||
+                   targetType == MagicTargetType.OpponentsGraveyard;
+        }
+    };
+
     public static final MagicCardFilterImpl ARTIFACT_OR_CREATURE_CARD_FROM_ALL_GRAVEYARDS = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasType(MagicType.Creature) ||
@@ -3037,6 +3048,7 @@ public class MagicTargetFilterFactory {
         single.put("artifact or creature card from a graveyard", ARTIFACT_OR_CREATURE_CARD_FROM_ALL_GRAVEYARDS);
         single.put("creature card from a graveyard", CREATURE_CARD_FROM_ALL_GRAVEYARDS);
         single.put("land card from a graveyard", LAND_CARD_FROM_ALL_GRAVEYARDS);
+        single.put("creature or land card from a graveyard", CREATURE_OR_LAND_CARD_FROM_ALL_GRAVEYARDS);
         single.put("Fungus card from a graveyard", FUNGUS_CARD_FROM_ALL_GRAVEYARDS);
 
         // using source
