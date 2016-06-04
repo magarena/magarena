@@ -8,5 +8,4 @@ cost={3}
 pt=1/1
 ability={3}, {T}: Put a token that's a copy of SN onto the battlefield.
 timing=main
-requires_groovy_code
 oracle={3}, {T}: Put a token that's a copy of Myr Propagator onto the battlefield.

@@ -6,6 +6,6 @@ type=Creature
 subtype=Spirit
 cost={U}
 pt=1/1
+ability=Whenever you cast a Spirit or Arcane spell, you may sacrifice SN. If you do, draw a card.
 timing=main
-requires_groovy_code
 oracle=Whenever you cast a Spirit or Arcane spell, you may sacrifice Dreamcatcher. If you do, draw a card.

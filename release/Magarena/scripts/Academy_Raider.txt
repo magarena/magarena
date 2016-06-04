@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Warrior
 cost={2}{R}
 pt=1/1
-ability=Intimidate
+ability=Intimidate;\
+        Whenever SN deals combat damage to a player, you may discard a card. If you do, draw a card.
 timing=main
-requires_groovy_code
 oracle=Intimidate\nWhenever Academy Raider deals combat damage to a player, you may discard a card. If you do, draw a card.
