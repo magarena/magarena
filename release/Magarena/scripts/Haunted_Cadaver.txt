@@ -6,7 +6,7 @@ type=Creature
 subtype=Zombie
 cost={3}{B}
 pt=2/2
-ability=Whenever SN deals combat damage to a player, you may sacrifice it. If you do, that player discards three cards.;\
+ability=Whenever SN deals combat damage to a player, you may sacrifice SN. If you do, that player discards three cards.;\
         Morph {1}{B}
 timing=main
 oracle=Whenever Haunted Cadaver deals combat damage to a player, you may sacrifice it. If you do, that player discards three cards.\nMorph {1}{B}
