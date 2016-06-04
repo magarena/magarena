@@ -203,9 +203,6 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice POS_TARGET_ATTACKING_CREATURE =
         MagicTargetChoice.Positive("target attacking creature");
 
-    public static final MagicTargetChoice TARGET_ATTACKING_OR_BLOCKING_CREATURE =
-        new MagicTargetChoice("target attacking or blocking creature");
-
     public static final MagicTargetChoice NEG_WHITE_OR_BLUE_CREATURE =
         MagicTargetChoice.Negative("target white or blue creature");
 
@@ -214,9 +211,6 @@ public class MagicTargetChoice extends MagicChoice {
 
     public static final MagicTargetChoice NEG_TARGET_EQUIPPED_CREATURE =
         MagicTargetChoice.Negative("target creature that is equipped");
-
-    public static final MagicTargetChoice TARGET_NON_LEGENDARY_CREATURE_YOU_CONTROL =
-        new MagicTargetChoice("target nonlegendary creature you control");
 
     public static final MagicTargetChoice TARGET_CREATURE_OR_PLAYER =
         new MagicTargetChoice("target creature or player");
@@ -250,9 +244,6 @@ public class MagicTargetChoice extends MagicChoice {
 
     public static final MagicTargetChoice SACRIFICE_GOBLIN =
         new MagicTargetChoice("a Goblin to sacrifice");
-
-    public static final MagicTargetChoice SACRIFICE_MERFOLK =
-        new MagicTargetChoice("a Merfolk to sacrifice");
 
     public static final MagicTargetChoice SACRIFICE_CLERIC =
         new MagicTargetChoice("a Cleric creature to sacrifice");
