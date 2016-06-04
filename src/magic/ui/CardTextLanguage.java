@@ -13,7 +13,8 @@ public enum CardTextLanguage {
     ITALIAN("Italiano", "it"),
     CHINESE("简体中文", "cn"),
     JAPANESE("日本語", "jp"),
-    TAIWANESE("繁體中文", "tw")
+    TAIWANESE("繁體中文", "tw"),
+    KOREAN("한국어","ko")
     ;
 
     private final String caption;
