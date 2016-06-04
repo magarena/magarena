@@ -4,6 +4,6 @@ value=3.652
 rarity=R
 type=Sorcery
 cost={4}{U}{U}
+effect=Put a token onto the battlefield that's a copy of target artifact or creature.
 timing=main
-requires_groovy_code
 oracle=Put a token onto the battlefield that's a copy of target artifact or creature.\nCipher

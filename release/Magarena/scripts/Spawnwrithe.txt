@@ -6,7 +6,7 @@ type=Creature
 subtype=Elemental
 cost={2}{G}
 pt=2/2
-ability=Trample
+ability=Trample;\
+        Whenever SN deals combat damage to a player, put a token that's a copy of SN onto the battlefield.
 timing=main
-requires_groovy_code=Giant Adephage
 oracle=Trample\nWhenever Spawnwrithe deals combat damage to a player, put a token that's a copy of Spawnwrithe onto the battlefield.

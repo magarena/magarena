@@ -4,6 +4,6 @@ value=3.634
 rarity=R
 type=Artifact
 cost={5}
+ability=Whenever another nontoken artifact enters the battlefield under your control, you may pay {2}. If you do, put a token that's a copy of that artifact onto the battlefield.
 timing=main
-requires_groovy_code
 oracle=Whenever another nontoken artifact enters the battlefield under your control, you may pay {2}. If you do, put a token that's a copy of that artifact onto the battlefield.

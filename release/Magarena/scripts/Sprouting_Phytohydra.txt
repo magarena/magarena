@@ -6,7 +6,7 @@ type=Creature
 subtype=Plant,Hydra
 cost={4}{G}
 pt=0/2
-ability=Defender
+ability=Defender;\
+        Whenever SN is dealt damage, you may put a token that's a copy of SN onto the battlefield.
 timing=main
-requires_groovy_code
 oracle=Defender\nWhenever Sprouting Phytohydra is dealt damage, you may put a token that's a copy of Sprouting Phytohydra onto the battlefield.
