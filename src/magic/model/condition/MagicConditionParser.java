@@ -225,15 +225,17 @@ public enum MagicConditionParser {
             return MagicCondition.TAPPED_CONDITION;
         }
     },
-    IsMonstrous("SN is monstrous") {
+    IsMonstrous("(SN is|it's) monstrous") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.IS_MONSTROUS_CONDITION;
         }
     },
     IsRenowned("(SN is|it's) renowned") {
-        public MagicCondition toCondition(final Matcher arg) { return MagicCondition.IS_RENOWNED_CONDITION; }
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.IS_RENOWNED_CONDITION;
+        }
     },
-    IsBlocked("it's blocked") {
+    IsBlocked("(SN is|it's) blocked") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.IS_BLOCKED_CONDITION;
         }
