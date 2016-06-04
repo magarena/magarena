@@ -4,6 +4,6 @@ value=2.963
 rarity=U
 type=Sorcery
 cost={3}{G}
-effect=Return target card from your graveyard to your hand. Clash with an opponent. If you win, untap all Forests you control.~Exile SN.
+effect=Return target card from your graveyard to your hand.~Clash with an opponent. If you win, untap all Forests you control.~Exile SN.
 timing=main
 oracle=Return target card from your graveyard to your hand. Clash with an opponent. If you win, untap all Forests you control.\nExile Woodland Guidance.
