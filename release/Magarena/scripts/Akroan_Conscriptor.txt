@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Shaman
 cost={4}{R}
 pt=3/2
-ability=Whenever you cast a spell that targets SN, gain control of another target creature until end of turn. Untap that creature. It gains haste until end of turn.
+ability=Whenever you cast a spell that targets SN, gain control of another target creature until end of turn.~Untap *that creature*.~*It* gains haste until end of turn.
 timing=main
 oracle=Heroic — Whenever you cast a spell that targets Akroan Conscriptor, gain control of another target creature until end of turn. Untap that creature. It gains haste until end of turn.
