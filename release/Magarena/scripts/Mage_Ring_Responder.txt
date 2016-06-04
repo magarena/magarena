@@ -9,6 +9,6 @@ cost={7}
 pt=7/7
 ability=SN doesn't untap during your untap step.;\
         {7}: Untap SN.;\
-        Whenever SN attacks, it deals 7 damage to target creature defending player controls.
+        Whenever SN attacks, SN deals 7 damage to target creature defending player controls.
 timing=main
 oracle=Mage-Ring Responder doesn't untap during your untap step.\n{7}: Untap Mage-Ring Responder.\nWhenever Mage-Ring Responder attacks, it deals 7 damage to target creature defending player controls.
