@@ -4,7 +4,7 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={1}{R}
-ability=Whenever a creature with flying enters the battlefield under your control, it gains haste until end of turn.;\
-        Whenever a Dragon enters the battlefield under your control, it deals X damage to target creature or player, where X is the number of Dragons you control.
+ability=Whenever a creature with flying enters the battlefield under your control, RN gains haste until end of turn.;\
+        Whenever a Dragon enters the battlefield under your control, RN deals X damage to target creature or player, where X is the number of Dragons you control.
 timing=enchantment
 oracle=Whenever a creature with flying enters the battlefield under your control, it gains haste until end of turn.\nWhenever a Dragon enters the battlefield under your control, it deals X damage to target creature or player, where X is the number of Dragons you control.
