@@ -2718,6 +2718,7 @@ public class MagicTargetFilterFactory {
         // <color|type|subtype> creature an opponent controls
         single.put("creature with flying an opponent controls", CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
         single.put("creature with power 2 or less an opponent controls", CREATURE_POWER_2_OR_LESS_YOUR_OPPONENT_CONTROLS);
+        single.put("creature an opponent controls with power 2 or less", CREATURE_POWER_2_OR_LESS_YOUR_OPPONENT_CONTROLS);
         single.put("attacking creature an opponent controls", ATTACKING_CREATURE_YOUR_OPPONENT_CONTROLS);
         single.put("attacking creature with flying an opponent controls", ATTACKING_CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
         single.put("attacking creature without flying an opponent controls", ATTACKING_CREATURE_WITHOUT_FLYING_YOUR_OPPONENT_CONTROLS);
