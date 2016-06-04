@@ -303,6 +303,23 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    RemoveFromCombat(
+        "remove " + ARG.PERMANENTS + " from combat",
+        MagicTargetHint.None,
+        MagicBounceTargetPicker.create(),
+        MagicTiming.Removal,
+        "Remove"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return (game, event) -> {
+                for (final MagicPermanent perm : ARG.permanents(event, matcher, filter)) {
+                    game.doAction(new RemoveFromCombatAction(perm));
+                }
+            };
+        }
+    },
     DamageEqual(
         ARG.IT + " deal(s)? damage equal to " + ARG.WORDRUN + " to " + ARG.TARGETS,
         MagicTargetHint.Negative,
