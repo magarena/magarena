@@ -1193,6 +1193,18 @@ public enum MagicRuleEventAction {
             MagicLocationType.OwnersHand
         ))
     ),
+    ReturnPermOrSpell(
+        "return sn to its owner's hand",
+        MagicTiming.Draw,
+        "Return",
+        (game, event) -> {
+            if (event.getSource().isPermanent()) {
+                game.doAction(new RemoveFromPlayAction(event.getPermanent(), MagicLocationType.OwnersHand));
+            } else {
+                game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
+            }
+        }
+    ),
     RecoverCards(
         "return " + ARG.CARDS + " to (your|its owner's) hand",
         MagicTargetHint.Positive,
