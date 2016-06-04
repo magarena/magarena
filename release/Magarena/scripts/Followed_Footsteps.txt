@@ -5,7 +5,8 @@ rarity=R
 type=Enchantment
 subtype=Aura
 cost={3}{U}{U}
+ability=Enchant creature;\
+        At the beginning of your upkeep, put a token that's a copy of enchanted creature onto the battlefield.
 timing=aura
 enchant=copy,creature
-requires_groovy_code
 oracle=Enchant creature\nAt the beginning of your upkeep, put a token that's a copy of enchanted creature onto the battlefield.

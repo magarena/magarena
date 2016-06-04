@@ -7,7 +7,7 @@ type=Legendary,Creature
 subtype=Goblin,Shaman
 cost={2}{R}{R}{R}
 pt=2/2
-ability=Haste
+ability=Haste;\
+        {T}: Put a token that's a copy of target nonlegendary creature you control onto the battlefield. That token has haste. Sacrifice it at the beginning of the next end step.
 timing=fmain
-requires_groovy_code
 oracle=Haste\n{T}: Put a token that's a copy of target nonlegendary creature you control onto the battlefield. That token has haste. Sacrifice it at the beginning of the next end step.

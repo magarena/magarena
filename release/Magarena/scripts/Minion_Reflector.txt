@@ -4,6 +4,6 @@ value=2.966
 rarity=R
 type=Artifact
 cost={5}
+ability=Whenever a nontoken creature enters the battlefield under your control, you may pay {2}. If you do, put a token that's a copy of that creature onto the battlefield. That token has haste. Sacrifice it at the beginning of the next end step.
 timing=artifact
-requires_groovy_code
 oracle=Whenever a nontoken creature enters the battlefield under your control, you may pay {2}. If you do, put a token that's a copy of that creature onto the battlefield. That token has haste and "At the beginning of the end step, sacrifice this permanent."
