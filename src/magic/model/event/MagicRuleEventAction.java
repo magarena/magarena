@@ -250,6 +250,18 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    ExilePermOrSpell(
+        "exile sn",
+        MagicTiming.Removal,
+        "Exile",
+        (game, event) -> {
+            if (event.getSource().isPermanent()) {
+                game.doAction(new RemoveFromPlayAction(event.getPermanent(), MagicLocationType.Exile));
+            } else {
+                game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.Exile));
+            }
+        }
+    ),
     ExileCards(
         "exile " + ARG.CARDS,
         MagicTargetHint.Negative,
