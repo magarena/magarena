@@ -7,6 +7,6 @@ subtype=Goblin,Rogue
 cost={1}{R}
 pt=2/1
 ability=Morph {2}{R};\
-        When SN is turned face up, if it's your turn, gain control of another target creature until end of turn. Untap that creature. It gains haste until end of turn.
+        When SN is turned face up, if it's your turn, gain control of another target creature until end of turn.~Untap *that creature*.~*It* gains haste until end of turn.
 timing=main
 oracle=Morph {2}{R}\nWhen Jeering Instigator is turned face up, if it's your turn, gain control of another target creature until end of turn. Untap that creature. It gains haste until end of turn.
