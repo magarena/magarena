@@ -5,9 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={3}{G}
-ability=Enchant creature;\
-        Enchanted creature gets +3/+3.;\
-        As long as enchanted creature is a Human, it has trample.
+ability=Enchanted creature gets +3/+3.
 timing=aura
-enchant=default,creature
+enchant=pump,creature
+requires_groovy_code
 oracle=Enchant creature\nEnchanted creature gets +3/+3.\nAs long as enchanted creature is a Human, it has trample.
