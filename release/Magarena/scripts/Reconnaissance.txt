@@ -4,6 +4,6 @@ value=4.476
 rarity=U
 type=Enchantment
 cost={W}
-ability={0}: Remove target attacking creature you control from combat and untap it.
+ability={0}: Remove target attacking creature you control from combat~and untap *it*.
 timing=enchantment
 oracle={0}: Remove target attacking creature you control from combat and untap it.
