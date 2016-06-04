@@ -1584,6 +1584,14 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicPermanentFilterImpl BLACK_OR_RED_CREATURE_ATTACKING_OR_BLOCKING = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+            return target.isCreature() && 
+                   (target.hasColor(MagicColor.Black) || target.hasColor(MagicColor.Red)) &&
+                   (target.isAttacking() || target.isBlocking());
+        }
+    };
+
     public static final MagicPermanentFilterImpl ATTACKING_OR_BLOCKING_CREATURE_YOU_CONTROL = creatureOr(MagicPermanentState.Attacking, MagicPermanentState.Blocking, Control.You);
 
     public static final MagicPermanentFilterImpl WEREWOLF_OR_WOLF_CREATURE_YOU_CONTROL = creatureOr(MagicSubType.Werewolf, MagicSubType.Wolf, Control.You);
@@ -2779,6 +2787,7 @@ public class MagicTargetFilterFactory {
         single.put("blue or red creature", BLUE_OR_RED_CREATURE);
         single.put("black or green creature", BLACK_OR_GREEN_CREATURE);
         single.put("black or red creature", BLACK_OR_RED_CREATURE);
+        single.put("black or red creature that's attacking or blocking", BLACK_OR_RED_CREATURE_ATTACKING_OR_BLOCKING);
         single.put("green or white creature", GREEN_OR_WHITE_CREATURE);
         single.put("green or blue creature", GREEN_OR_BLUE_CREATURE);
         single.put("green creature or white creature", GREEN_OR_WHITE_CREATURE);
