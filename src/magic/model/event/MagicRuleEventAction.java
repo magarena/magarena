@@ -2695,7 +2695,7 @@ public enum MagicRuleEventAction {
                 final String rider = (hasReference && matcher.group().contains("player")) ?
                     matcher.replaceAll("target player") :
                     matcher.replaceAll("target permanent");
-                final String riderWithoutPrefix = rider.replaceAll("^(and|then) ", "");
+                final String riderWithoutPrefix = rider.replaceAll("^(and|then|If you do,) ", "");
                 final MagicSourceEvent riderSourceEvent = build(riderWithoutPrefix);
 
                 //rider cannot have choices
