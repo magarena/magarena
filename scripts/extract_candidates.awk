@@ -34,7 +34,7 @@ FILENAME ~ /unimplementable/ {
     next
 }
 
-FILENAME ~ /groovy/ {
+FILENAME ~ /cards\/groovy.txt/ {
     comment[$1] = "groovy"
     next
 }
