@@ -90,6 +90,16 @@ public enum MagicAmountParser {
 
     public abstract MagicAmount toAmount(final Matcher arg);
 
+    public static final int getX(final String text, final int X) {
+        if (text.equalsIgnoreCase("x")) {
+            return X;
+        } else if (text.equalsIgnoreCase("-x")) {
+            return -X;
+        } else {
+            return EnglishToInt.convert(text);
+        }
+    }
+
     public static final MagicAmount build(final String text) {
         if (text == null || text.isEmpty()) {
             return MagicAmountFactory.One;
