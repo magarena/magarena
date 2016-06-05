@@ -915,6 +915,31 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    PumpX(
+        ARG.PERMANENTS + " get(s)? (an additional )?(?<pt>[X0-9+]+/[X0-9+]+) until end of turn, where X is " + ARG.WORDRUN,
+        MagicTargetHint.Positive,
+        MagicPumpTargetPicker.create(),
+        MagicTiming.Pump,
+        "Pump"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final String[] pt = ARG.ptStr(matcher);
+            final MagicAmount countX = MagicAmountParser.build(ARG.wordrun(matcher));
+            final MagicAmount powerCounter = pt[0].equalsIgnoreCase("x") ? countX : MagicAmountParser.build(pt[0]);
+            final MagicAmount toughnessCounter = pt[1].equalsIgnoreCase("x") ? countX : MagicAmountParser.build(pt[1]);
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return (game, event) -> {
+                final int X = countX.getAmount(event);
+                final int power = powerCounter.getAmount(event);
+                final int toughness = toughnessCounter.getAmount(event);
+                game.logAppendMessage(event.getPlayer(), "(X=" + X + ")");
+                for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                    game.doAction(new ChangeTurnPTAction(it, power, toughness));
+                }
+            };
+        }
+    },
     Weaken(
         ARG.PERMANENTS + " get(s)? (?<pt>[X0-9-]+/[X0-9-]+) until end of turn( for each " + ARG.WORDRUN + ")?",
         MagicTargetHint.Negative,
