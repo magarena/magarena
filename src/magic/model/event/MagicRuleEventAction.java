@@ -1163,7 +1163,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Draw,
         "Return",
         (game, event) -> game.doAction(new ShiftCardAction(
-            event.getCard(),
+            event.getSourceCard(),
             MagicLocationType.Graveyard,
             MagicLocationType.OwnersHand
         ))
@@ -1177,7 +1177,7 @@ public enum MagicRuleEventAction {
         public MagicEventAction getAction(final Matcher matcher) {
             final List<MagicPlayMod> mods = ARG.mods(matcher);
             return (game, event) -> game.doAction(new ReanimateAction(
-                event.getCard(),
+                event.getSourceCard(),
                 event.getPlayer(),
                 mods
             ));
@@ -1188,7 +1188,7 @@ public enum MagicRuleEventAction {
         MagicTiming.Draw,
         "Return",
         (game, event) -> game.doAction(new ShiftCardAction(
-            event.getPermanent().getCard(),
+            event.getSourceCard(),
             MagicLocationType.Graveyard,
             MagicLocationType.OwnersHand
         ))

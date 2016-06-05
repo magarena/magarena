@@ -390,6 +390,10 @@ public class MagicEvent implements MagicCopyable {
         return (MagicCard)source;
     }
 
+    public final MagicCard getSourceCard() {
+        return source.isPermanent() ? getPermanent().getCard() : getCard();
+    }
+
     public final MagicCardOnStack getCardOnStack() {
         return (MagicCardOnStack)source;
     }
