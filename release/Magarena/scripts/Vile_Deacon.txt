@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Cleric
 cost={2}{B}{B}
 pt=2/2
+ability=Whenever SN attacks, SN gets +X/+X until end of turn, where X is the number of Clerics on the battlefield.
 timing=main
-requires_groovy_code
 oracle=Whenever Vile Deacon attacks, it gets +X/+X until end of turn, where X is the number of Clerics on the battlefield.

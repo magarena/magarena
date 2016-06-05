@@ -6,6 +6,6 @@ type=Creature
 subtype=Elf,Shaman
 cost={3}{G}
 pt=3/3
+ability={3}{G}, {T}: Target creature gets +X/+X until end of turn, where X is the number of artifacts your opponents control.
 timing=main
-requires_groovy_code
 oracle={3}{G}, {T}: Target creature gets +X/+X until end of turn, where X is the number of artifacts your opponents control.

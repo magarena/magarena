@@ -6,6 +6,6 @@ type=Creature
 subtype=Elf
 cost={2}{G}
 pt=1/2
+ability={T}: Target creature gets +X/+X until end of turn, where X is the number of Elves on the battlefield.
 timing=main
-requires_groovy_code
 oracle={T}: Target creature gets +X/+X until end of turn, where X is the number of Elves on the battlefield.

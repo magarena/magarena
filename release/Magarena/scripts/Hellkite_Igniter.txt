@@ -6,7 +6,7 @@ type=Creature
 subtype=Dragon
 cost={5}{R}{R}
 pt=5/5
-ability=Flying; haste
+ability=Flying, haste;\
+        {1}{R}: SN gets +X/+0 until end of turn, where X is the number of artifacts you control.
 timing=main
-requires_groovy_code
 oracle=Flying, haste\n{1}{R}: Hellkite Igniter gets +X/+0 until end of turn, where X is the number of artifacts you control.

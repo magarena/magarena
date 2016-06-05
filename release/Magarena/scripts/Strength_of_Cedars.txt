@@ -6,6 +6,6 @@ type=Instant
 subtype=Arcane
 cost={4}{G}
 ability=Cast SN with AI only if you control a land.
+effect=Target creature gets +X/+X until end of turn, where X is the number of lands you control.
 timing=pump
-requires_groovy_code
 oracle=Target creature gets +X/+X until end of turn, where X is the number of lands you control.

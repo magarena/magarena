@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Shaman
 cost={2}{G}
 pt=1/1
+ability=Whenever SN attacks, each other creature you control gets +X/+X until end of turn, where X is SN's power.
 timing=main
-requires_groovy_code
 oracle=Whenever Wild Beastmaster attacks, each other creature you control gets +X/+X until end of turn, where X is Wild Beastmaster's power.

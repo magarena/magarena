@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Advisor
 cost={2}{G}
 pt=2/3
+ability={3}{G}: Target creature gets +X/+X until end of turn, where X is the number of creatures you control.
 timing=fmain
-requires_groovy_code
 oracle={3}{G}: Target creature gets +X/+X until end of turn, where X is the number of creatures you control.

@@ -6,7 +6,7 @@ type=Legendary,Creature
 subtype=Dragon
 cost={2}{R}{R}{R}
 pt=4/3
-ability=Flying; haste
+ability=Flying, haste;\
+        Discard a card named Tarox Bladewing: SN gets +X/+X until end of turn, where X is its power.
 timing=main
-requires_groovy_code
 oracle=Flying, haste\nGrandeur — Discard another card named Tarox Bladewing: Tarox Bladewing gets +X/+X until end of turn, where X is its power.

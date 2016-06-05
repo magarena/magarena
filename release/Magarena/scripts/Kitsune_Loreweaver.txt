@@ -6,6 +6,6 @@ type=Creature
 subtype=Fox,Cleric
 cost={1}{W}
 pt=2/1
+ability={1}{W}: SN gets +0/+X until end of turn, where X is the number of cards in your hand.
 timing=main
-requires_groovy_code
 oracle={1}{W}: Kitsune Loreweaver gets +0/+X until end of turn, where X is the number of cards in your hand.

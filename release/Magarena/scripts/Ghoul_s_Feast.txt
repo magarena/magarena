@@ -4,6 +4,6 @@ value=3.850
 rarity=U
 type=Instant
 cost={1}{B}
+effect=Target creature gets +X/+0 until end of turn, where X is the number of creature cards in your graveyard.
 timing=pump
-requires_groovy_code
 oracle=Target creature gets +X/+0 until end of turn, where X is the number of creature cards in your graveyard.

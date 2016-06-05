@@ -5,6 +5,6 @@ rarity=C
 type=Instant
 subtype=Arcane
 cost={2}{G}
+effect=Target creature gets +X/+X until end of turn, where X is the number of cards in your hand.
 timing=pump
-requires_groovy_code
 oracle=Target creature gets +X/+X until end of turn, where X is the number of cards in your hand.

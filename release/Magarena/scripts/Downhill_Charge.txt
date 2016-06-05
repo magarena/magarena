@@ -5,6 +5,6 @@ rarity=C
 type=Instant
 cost={2}{R}
 ability=You may sacrifice a Mountain rather than pay SN's mana cost.
+effect=Target creature gets +X/+0 until end of turn, where X is the number of Mountains you control.
 timing=pump
-requires_groovy_code
 oracle=You may sacrifice a Mountain rather than pay Downhill Charge's mana cost.\nTarget creature gets +X/+0 until end of turn, where X is the number of Mountains you control.

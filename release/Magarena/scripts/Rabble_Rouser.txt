@@ -6,7 +6,7 @@ type=Creature
 subtype=Goblin,Shaman
 cost={3}{R}
 pt=1/1
-ability=bloodthirst 1
+ability=Bloodthirst 1;\
+        {R}, {T}: Attacking creatures get +X/+0 until end of turn, where X is SN's power.
 timing=main
-requires_groovy_code
 oracle=Bloodthirst 1\n{R}, {T}: Attacking creatures get +X/+0 until end of turn, where X is Rabble-Rouser's power.

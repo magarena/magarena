@@ -6,7 +6,7 @@ type=Creature
 subtype=Sliver
 cost={3}{R}
 pt=3/3
+ability=All Slivers have "{T}: Target Sliver creature gets +X/+0 until end of turn, where X is the number of Slivers on the battlefield."
 timing=main
 static=all
-requires_groovy_code
 oracle=All Slivers have "{T}: Target Sliver creature gets +X/+0 until end of turn, where X is the number of Slivers on the battlefield."

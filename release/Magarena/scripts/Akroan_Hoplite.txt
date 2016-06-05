@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Soldier
 cost={R}{W}
 pt=1/2
+ability=Whenever SN attacks, SN gets +X/+0 until end of turn, where X is the number of attacking creatures you control.
 timing=main
-requires_groovy_code
 oracle=Whenever Akroan Hoplite attacks, it gets +X/+0 until end of turn, where X is the number of attacking creatures you control.

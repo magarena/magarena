@@ -6,7 +6,7 @@ type=Creature
 subtype=Ogre,Samurai,Shaman
 cost={4}{R}
 pt=2/3
-ability=bushido 1
+ability=Bushido 1;\
+        {1}{R}: SN gets +X/+0 until end of turn, where X is the number of cards in your hand.
 timing=main
-requires_groovy_code
 oracle=Bushido 1\n{1}{R}: Sokenzan Spellblade gets +X/+0 until end of turn, where X is the number of cards in your hand.
