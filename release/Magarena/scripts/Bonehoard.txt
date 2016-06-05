@@ -7,7 +7,7 @@ type=Artifact
 subtype=Equipment
 cost={4}
 ability=Living weapon;\
+        Equipped creature gets +X/+X, where X is the number of creature cards in all graveyards.;\
         Equip {2}
 timing=equipment
-requires_groovy_code
 oracle=Living weapon\nEquipped creature gets +X/+X, where X is the number of creature cards in all graveyards.\nEquip {2}

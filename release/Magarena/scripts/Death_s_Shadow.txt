@@ -6,6 +6,6 @@ type=Creature
 subtype=Avatar
 cost={B}
 pt=13/13
+ability=SN gets -X/-X, where X is your life total.
 timing=main
-requires_groovy_code
 oracle=Death's Shadow gets -X/-X, where X is your life total.

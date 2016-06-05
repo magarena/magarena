@@ -7,7 +7,8 @@ type=Enchantment,Creature
 subtype=Horror
 cost={1}{B}{B}
 pt=0/0
-ability=Bestow {2}{B}{B}
+ability=Bestow {2}{B}{B};\
+        SN gets +X/+X, where X is the number of creature cards in all graveyards.;\
+        Enchanted creature gets +X/+X, where X is the number of creature cards in all graveyards.
 timing=main
-requires_groovy_code
 oracle=Bestow {2}{B}{B}\nNighthowler and enchanted creature each get +X/+X, where X is the number of creature cards in all graveyards.

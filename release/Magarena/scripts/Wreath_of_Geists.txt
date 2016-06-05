@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={G}
+ability=Enchant creature;\
+        Enchanted creature gets +X/+X, where X is the number of creature cards in your graveyard.
 timing=enchantment
 enchant=pump,pos creature
-requires_groovy_code
 oracle=Enchant creature\nEnchanted creature gets +X/+X, where X is the number of creature cards in your graveyard.
