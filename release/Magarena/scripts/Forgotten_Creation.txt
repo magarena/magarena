@@ -6,7 +6,7 @@ type=Creature
 subtype=Zombie,Horror
 cost={3}{U}
 pt=3/3
-ability=Skulk;\
-        At the beginning of your upkeep, you may discard all the cards in your hand. If you do, draw that many cards.
+ability=Skulk
 timing=main
+requires_groovy_code
 oracle=Skulk\nAt the beginning of your upkeep, you may discard all the cards in your hand. If you do, draw that many cards.
