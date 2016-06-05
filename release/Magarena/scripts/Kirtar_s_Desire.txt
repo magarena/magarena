@@ -5,8 +5,9 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={W}
-ability=Enchanted creature can't attack.
+ability=Enchant creature;\
+        Enchanted creature can't attack.;\
+        Enchanted creature can't block as long as seven or more cards are in your graveyard.
 enchant=can't attack,neg creature
 timing=aura
-requires_groovy_code
 oracle=Enchant creature\nEnchanted creature can't attack.\nThreshold — Enchanted creature can't block as long as seven or more cards are in your graveyard.

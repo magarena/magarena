@@ -5,6 +5,6 @@ rarity=R
 type=Instant
 cost={R}
 ability=Cycling {2}
+effect=Gain control of all permanents you own.
 timing=removal
-requires_groovy_code
 oracle=Gain control of all permanents you own.\nCycling {2}

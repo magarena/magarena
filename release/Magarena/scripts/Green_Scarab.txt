@@ -5,8 +5,9 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={W}
-ability=Enchanted creature can't be blocked by green creatures.
+ability=Enchant creature;\
+        Enchanted creature can't be blocked by green creatures.;\
+        Enchanted creature gets +2/+2 as long as an opponent controls a green permanent.
 enchant=pump,pos creature
 timing=aura
-requires_groovy_code
 oracle=Enchant creature\nEnchanted creature can't be blocked by green creatures.\nEnchanted creature gets +2/+2 as long as an opponent controls a green permanent.

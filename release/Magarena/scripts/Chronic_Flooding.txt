@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
+ability=Enchant land;\
+        Whenever enchanted land becomes tapped, RN's controller puts the top three cards of his or her library into his or her graveyard.
 timing=aura
 enchant=tap,neg land
-requires_groovy_code
 oracle=Enchant land\nWhenever enchanted land becomes tapped, its controller puts the top three cards of his or her library into his or her graveyard.

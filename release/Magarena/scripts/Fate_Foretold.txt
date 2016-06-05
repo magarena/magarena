@@ -5,8 +5,9 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
-ability=When SN enters the battlefield, draw a card.
+ability=Enchant creature;\
+        When SN enters the battlefield, draw a card.;\
+        When enchanted creature dies, RN's controller draws a card.
 timing=aura
 enchant=default,pos creature
-requires_groovy_code
 oracle=Enchant creature\nWhen Fate Foretold enters the battlefield, draw a card.\nWhen enchanted creature dies, its controller draws a card.
