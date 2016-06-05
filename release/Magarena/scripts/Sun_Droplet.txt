@@ -4,6 +4,7 @@ value=3.633
 rarity=U
 type=Artifact
 cost={2}
+ability=At the beginning of each upkeep, you may remove a charge counter from SN. If you do, you gain 1 life.
 timing=artifact
 requires_groovy_code
 oracle=Whenever you're dealt damage, put that many charge counters on Sun Droplet.\nAt the beginning of each upkeep, you may remove a charge counter from Sun Droplet. If you do, you gain 1 life.
