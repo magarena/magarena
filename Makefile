@@ -505,6 +505,9 @@ checks: \
 remove_extra_missing:
 	git rm `join <(ls -1 release/Magarena/scripts | sort) <(ls -1 release/Magarena/scripts_missing | sort) | sed 's/^/release\/Magarena\/scripts_missing\//'`
 
+remove_extra_groovy:
+	git rm `make check_requires_groovy_code | grep '< ' | sed 's/< /release\/Magarena\/scripts\//;s/$$/.groovy/'`
+
 # check rarity using meta.xml
 check_rarity: scripts/fix_rarity.scala cards/meta.xml
 	cat release/Magarena/scripts/*.txt | scala $^ | grep -v "not be L" | grep -v "Windseeker Centaur" | ${NO_OUTPUT}
