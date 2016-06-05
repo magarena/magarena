@@ -7,7 +7,7 @@ type=Creature
 subtype=Cat,Illusion
 cost={4}{U}
 pt=4/1
-ability=Flash;\
-        Whenever SN is dealt damage, draw that many cards.
+ability=Flash
 timing=flash
+requires_groovy_code
 oracle=Flash\nWhenever Illusory Ambusher is dealt damage, draw that many cards.
