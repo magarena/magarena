@@ -2793,6 +2793,11 @@ public enum MagicRuleEventAction {
         final String contextRule = personalize(choice, concat(ruleWithoutMay, part));
         final String playerRule = personalize(choice, concat(rule, part));
 
+        //'If you don't' effect cannot have a choice as MagicMayChoice only prompts for choice in "Yes" case
+        if (mayCostMatched && choice.isValid()) {
+            throw new RuntimeException("'If you don't' effect should not have choice: \"" + effect + "\"");
+        }
+
         final MagicChoiceFactory choiceFact = (source, player, ref) -> {
             if (mayPayMatched) {
                 return new MagicMayChoice(
