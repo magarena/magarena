@@ -1,38 +1,4 @@
 [
-    new MagicPlaneswalkerActivation(1) {
-        @Override
-        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                source,
-                this,
-                "Put three 1/1 white Soldier creature tokens onto the battlefield."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new PlayTokensAction(
-                event.getPlayer(),
-                CardDefinitions.getToken("1/1 white Soldier creature token"),
-                3
-            ));
-        }
-    },
-    new MagicPlaneswalkerActivation(-3) {
-        @Override
-        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                source,
-                this,
-                "Destroy all creatures with power 4 or greater."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new DestroyAction(
-                CREATURE_POWER_4_OR_MORE.filter(event)
-            ));
-        }
-    },
     new MagicPlaneswalkerActivation(-7) {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

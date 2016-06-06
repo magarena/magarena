@@ -5,6 +5,8 @@ rarity=M
 type=Planeswalker
 subtype=Elspeth
 cost={3}{W}{W}
+ability=+2: You gain 1 life for each creature you control.;\
+        −2: Put three 1/1 white Soldier creature tokens onto the battlefield.
 loyalty=4
 timing=main
 requires_groovy_code

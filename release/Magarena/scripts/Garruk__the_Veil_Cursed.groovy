@@ -1,12 +1,4 @@
-def AB1 = MagicRuleEventAction.create("Put a 1/1 black Wolf creature token with deathtouch onto the battlefield.");
-
 [
-    new MagicPlaneswalkerActivation(1) {
-        @Override
-        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            return AB1.getEvent(source);
-        }
-    },
     new MagicPlaneswalkerActivation(-1) {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

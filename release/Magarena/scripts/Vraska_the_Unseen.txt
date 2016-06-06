@@ -5,6 +5,8 @@ rarity=M
 type=Planeswalker
 subtype=Vraska
 cost={3}{B}{G}
+ability=−3: Destroy target nonland permanent.;\
+        −7: Put three 1/1 black Assassin creature tokens onto the battlefield.
 loyalty=5
 timing=main
 requires_groovy_code

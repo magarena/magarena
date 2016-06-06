@@ -5,6 +5,7 @@ rarity=M
 type=Planeswalker
 subtype=Garruk
 cost={4}{G}{G}
+ability=−3: You may put a green creature card from your hand onto the battlefield.
 loyalty=4
 timing=main
 requires_groovy_code

@@ -70,22 +70,5 @@ def PreventAllDamage = new PreventDamageTrigger() {
             game.doAction(new BecomesCreatureAction(event.getPermanent(),PT,AB,ST));
             game.doAction(new AddTurnTriggerAction(event.getPermanent(), PreventAllDamage));
         }
-    },
-    new MagicPlaneswalkerActivation(-15) {
-        @Override
-        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                source,
-                this,
-                "Exile all other permanents."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new RemoveAllFromPlayAction(
-                PERMANENT.except(event.getPermanent()).filter(event),
-                MagicLocationType.Exile
-            ));
-        }
     }
 ]

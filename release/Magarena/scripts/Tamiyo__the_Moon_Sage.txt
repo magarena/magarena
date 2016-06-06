@@ -5,6 +5,7 @@ rarity=M
 type=Planeswalker
 subtype=Tamiyo
 cost={3}{U}{U}
+ability=+1: Tap target permanent. It doesn't untap during its controller's next untap step.
 loyalty=4
 timing=main
 requires_groovy_code

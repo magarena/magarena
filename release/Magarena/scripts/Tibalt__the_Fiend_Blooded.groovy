@@ -1,19 +1,4 @@
 [
-    new MagicPlaneswalkerActivation(1) {
-        @Override
-        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                source,
-                this,
-                "PN draws a card, then discards a card at random."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new DrawAction(event.getPlayer()));
-            game.addEvent(MagicDiscardEvent.Random(event.getSource(), event.getPlayer()));
-        }
-    },
     new MagicPlaneswalkerActivation(-4) {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

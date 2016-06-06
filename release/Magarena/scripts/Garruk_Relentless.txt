@@ -6,7 +6,8 @@ type=Planeswalker
 subtype=Garruk
 cost={3}{G}
 loyalty=3
-ability=When SN has two or fewer loyalty counters on him, transform SN.
+ability=When SN has two or fewer loyalty counters on him, transform SN.;\
+        0: Put a 2/2 green Wolf creature token onto the battlefield.
 transform=Garruk, the Veil-Cursed
 timing=main
 requires_groovy_code

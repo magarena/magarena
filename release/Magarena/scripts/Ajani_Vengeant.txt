@@ -5,6 +5,8 @@ rarity=M
 type=Planeswalker
 subtype=Ajani
 cost={2}{R}{W}
+ability=+1: Target permanent doesn't untap during its controller's next untap step.;\
+        −2: SN deals 3 damage to target creature or player~and you gain 3 life.
 loyalty=3
 timing=main
 requires_groovy_code

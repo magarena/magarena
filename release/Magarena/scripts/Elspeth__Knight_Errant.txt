@@ -5,6 +5,8 @@ rarity=M
 type=Planeswalker
 subtype=Elspeth
 cost={2}{W}{W}
+ability=+1: Put a 1/1 white Soldier creature token onto the battlefield.;\
+        +1: Target creature gets +3/+3 and gains flying until end of turn.
 loyalty=4
 timing=main
 requires_groovy_code

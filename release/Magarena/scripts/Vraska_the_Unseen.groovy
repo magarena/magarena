@@ -47,38 +47,5 @@ def T = new DamageIsDealtTrigger() {
             outerGame.doAction(new AddTriggerAction(outerEvent.getPermanent(), cleanup));
 
         }
-    },
-    new MagicPlaneswalkerActivation(-3) {
-        @Override
-        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                source,
-                NEG_TARGET_NONLAND_PERMANENT,
-                MagicDestroyTargetPicker.Destroy,
-                this,
-                "Destroy target nonland permanent."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game, {
-                game.doAction(new DestroyAction(it));
-            });
-        }
-    },
-    new MagicPlaneswalkerActivation(-7) {
-        @Override
-        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                source,
-                this,
-                "Put three 1/1 black Assassin creature tokens onto the battlefield with " +
-                "\"Whenever this creature deals combat damage to a player, that player loses the game.\""
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new PlayTokensAction(event.getPlayer(), CardDefinitions.getToken("1/1 black Assassin creature token"), 3));
-        }
     }
 ]

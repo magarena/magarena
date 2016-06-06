@@ -23,26 +23,6 @@
             }
         }
     },
-    new MagicPlaneswalkerActivation(-3) {
-        @Override
-        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                source,
-                this,
-                "PN may put a green creature card from his or her hand onto the battlefield."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.addEvent(new MagicPutOntoBattlefieldEvent(
-                event,
-                new MagicMayChoice(
-                    "Put a green creature card onto the battlefield?",
-                    A_GREEN_CREATURE_CARD_FROM_HAND
-                )
-            ));
-        }
-    },
     new MagicPlaneswalkerActivation(-7) {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

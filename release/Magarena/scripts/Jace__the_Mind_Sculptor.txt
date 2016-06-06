@@ -5,6 +5,7 @@ rarity=M
 type=Planeswalker
 subtype=Jace
 cost={2}{U}{U}
+ability=−1: Return target creature to its owner's hand.
 loyalty=3
 timing=main
 requires_groovy_code

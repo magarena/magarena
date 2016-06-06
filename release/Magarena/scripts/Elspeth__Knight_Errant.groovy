@@ -1,40 +1,4 @@
 [
-    new MagicPlaneswalkerActivation(1, "Token") {
-        @Override
-        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                source,
-                this,
-                "Put a 1/1 white Soldier creature token onto the battlefield."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new PlayTokenAction(
-                event.getPlayer(),
-                CardDefinitions.getToken("1/1 white Soldier creature token")
-            ));
-        }
-    },
-    new MagicPlaneswalkerActivation(1, "Boost") {
-        @Override
-        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                source,
-                POS_TARGET_CREATURE,
-                MagicPumpTargetPicker.create(),
-                this,
-                "Target creature\$ gets +3/+3 and gains flying until end of turn."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game, {
-                game.doAction(new ChangeTurnPTAction(it,3,3));
-                game.doAction(new GainAbilityAction(it,MagicAbility.Flying));
-            });
-        }
-    },
     new MagicPlaneswalkerActivation(-8, "Ultimate") {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

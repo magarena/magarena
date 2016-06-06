@@ -1,36 +1,4 @@
 [
-    new MagicPlaneswalkerActivation(1) {
-        @Override
-        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                source,
-                this,
-                "PN gains 2 life."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            game.doAction(new ChangeLifeAction(event.getPlayer(), 2));
-        }
-    },
-    new MagicPlaneswalkerActivation(-1) {
-        @Override
-        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                source,
-                this,
-                "PN puts a +1/+1 counter on each creature he or she controls. Those creatures gain vigilance until end of turn."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            CREATURE_YOU_CONTROL.filter(event) each {
-                game.doAction(new ChangeCountersAction(it, MagicCounterType.PlusOne, 1));
-                game.doAction(new GainAbilityAction(it, MagicAbility.Vigilance));
-            }
-
-        }
-    },
     new MagicPlaneswalkerActivation(-6) {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

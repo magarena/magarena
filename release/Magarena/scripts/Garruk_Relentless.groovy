@@ -1,5 +1,3 @@
-def ABILITY2 = MagicRuleEventAction.create("Put a 2/2 green Wolf creature token onto the battlefield.");
-
 [
     new MagicPlaneswalkerActivation(0) {
         @Override
@@ -17,12 +15,6 @@ def ABILITY2 = MagicRuleEventAction.create("Put a 2/2 green Wolf creature token 
                 game.doAction(new DealDamageAction(event.getSource(),it,3));
                 game.doAction(new DealDamageAction(it,event.getPermanent(),it.getPower()));
             });
-        }
-    },
-    new MagicPlaneswalkerActivation(0) {
-        @Override
-        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            return ABILITY2.getEvent(source);
         }
     }
 ]

@@ -5,6 +5,7 @@ rarity=M
 type=Planeswalker
 subtype=Gideon
 cost={2}{W}{W}
+ability=−15: Exile all other permanents.
 loyalty=4
 timing=main
 requires_groovy_code

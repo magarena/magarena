@@ -1,26 +1,4 @@
 [
-    new MagicPlaneswalkerActivation(1) {
-        @Override
-        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                source,
-                NEG_TARGET_PERMANENT,
-                MagicTapTargetPicker.Tap,
-                this,
-                "Tap target permanent\$. It doesn't untap during its controller's next untap step."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game, {
-                game.doAction(new TapAction(it));
-                game.doAction(ChangeStateAction.Set(
-                    it,
-                    MagicPermanentState.DoesNotUntapDuringNext
-                ));
-            });
-        }
-    },
     new MagicPlaneswalkerActivation(-2) {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

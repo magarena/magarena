@@ -1,43 +1,4 @@
 [
-    new MagicPlaneswalkerActivation(3) {
-        @Override
-        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                source,
-                NEG_TARGET_NONCREATURE,
-                MagicDestroyTargetPicker.Destroy,
-                this,
-                "Destroy target noncreature permanent\$."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game, {
-                game.doAction(new DestroyAction(it));
-            });
-        }
-    },
-    new MagicPlaneswalkerActivation(-2) {
-        @Override
-        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                source,
-                NEG_TARGET_CREATURE,
-                MagicExileTargetPicker.create(),
-                this,
-                "Gain control of target creature\$."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game, {
-                game.doAction(new GainControlAction(
-                    event.getPlayer(),
-                    it
-                ));
-            });
-        }
-    },
     new MagicPlaneswalkerActivation(-9) {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

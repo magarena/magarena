@@ -5,6 +5,7 @@ rarity=M
 type=Planeswalker
 subtype=Tibalt
 cost={R}{R}
+ability=+1: Draw a card, then discard a card at random.
 loyalty=2
 timing=main
 requires_groovy_code

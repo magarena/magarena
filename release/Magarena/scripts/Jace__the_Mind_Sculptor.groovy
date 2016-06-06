@@ -53,23 +53,6 @@ def FATESEAL = {
             game.addEvent(new MagicReturnCardEvent(event.getSource(), event.getPlayer()));
         }
     },
-    new MagicPlaneswalkerActivation(-1, "Bounce") {
-        @Override
-        public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                source,
-                TARGET_CREATURE,
-                this,
-                "Return target creature\$ to its owner's hand."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processTargetPermanent(game, {
-                game.doAction(new RemoveFromPlayAction(it,MagicLocationType.OwnersHand));
-            });
-        }
-    },
     new MagicPlaneswalkerActivation(-12, "Exile") {
         @Override
         public MagicEvent getPermanentEvent(final MagicPermanent source,final MagicPayedCost payedCost) {

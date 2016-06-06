@@ -5,6 +5,8 @@ rarity=M
 type=Planeswalker
 subtype=Elspeth
 cost={4}{W}{W}
+ability=+1: Put three 1/1 white Soldier creature tokens onto the battlefield.;\
+        −3: Destroy all creatures with power 4 or greater.
 loyalty=4
 timing=main
 requires_groovy_code

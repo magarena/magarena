@@ -5,6 +5,7 @@ rarity=M
 type=Planeswalker
 subtype=Liliana
 cost={3}{B}{B}
+ability=+1: Target player discards a card.
 timing=main
 loyalty=5
 requires_groovy_code

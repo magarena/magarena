@@ -6,6 +6,7 @@ type=Planeswalker
 subtype=Garruk
 color=bg
 transform=Garruk Relentless
+ability=+1: Put a 1/1 black Wolf creature token with deathtouch onto the battlefield.
 timing=main
 requires_groovy_code
 hidden
