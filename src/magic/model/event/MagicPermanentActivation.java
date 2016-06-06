@@ -106,7 +106,7 @@ public abstract class MagicPermanentActivation extends MagicActivation<MagicPerm
         cdef.addAct(this);
     }
 
-    public static final MagicPermanentActivation create(final String act) {
+    public static MagicPermanentActivation create(final String act) {
         final String[] token = act.split(ARG.COLON, 2);
 
         // build the actual costs

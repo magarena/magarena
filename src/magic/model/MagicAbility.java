@@ -1228,6 +1228,13 @@ public enum MagicAbility {
         }
     },
 
+    // planeswalker loyalty ability
+    PlaneswalkerAbility("[+−]?[0-9]+: " + ARG.ANY, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(MagicPlaneswalkerActivation.create(arg.group()));
+        }
+    },
+
     // activated permanent abilities
     ActivatedAbility("[^\"]+:(?! Add)" + ARG.ANY, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
