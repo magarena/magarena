@@ -7,6 +7,6 @@ subtype=Golem
 cost={4}
 pt=5/3
 ability=SN doesn't untap during your untap step.;\
-        At the beginning of your upkeep, you may untap target tapped creature an opponent controls. If you do, untap SN.
+        At the beginning of your upkeep, you may untap target tapped creature an opponent controls.~If you do, untap SN.
 timing=main
 oracle=Soldevi Golem doesn't untap during your untap step.\nAt the beginning of your upkeep, you may untap target tapped creature an opponent controls. If you do, untap Soldevi Golem.
