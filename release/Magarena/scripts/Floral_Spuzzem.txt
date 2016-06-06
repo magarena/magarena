@@ -6,6 +6,6 @@ type=Creature
 subtype=Elemental
 cost={3}{G}
 pt=2/2
+ability=Whenever SN attacks and isn't blocked, you may destroy target artifact defending player controls.~If you do, SN assigns no combat damage this turn.
 timing=main
-requires_groovy_code
 oracle=Whenever Floral Spuzzem attacks and isn't blocked, you may destroy target artifact defending player controls. If you do, Floral Spuzzem assigns no combat damage this turn.

@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Rebel
 cost={2}{W}
 pt=1/1
-ability=shadow
+ability=Shadow;\
+        Whenever SN attacks and isn't blocked, you may have SN deal 1 damage to target creature.~If you do, prevent all combat damage SN would deal this turn.
 timing=main
-requires_groovy_code
 oracle=Shadow\nWhenever Zealot il-Vec attacks and isn't blocked, you may have it deal 1 damage to target creature. If you do, prevent all combat damage Zealot il-Vec would deal this turn.

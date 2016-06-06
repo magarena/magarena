@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Pirate
 cost={3}{U}
 pt=2/2
+ability=Whenever SN attacks and isn't blocked, you may gain control of target artifact defending player controls.~If you do, SN assigns no combat damage this turn.
 timing=main
-requires_groovy_code
 oracle=Whenever Kukemssa Pirates attacks and isn't blocked, you may gain control of target artifact defending player controls. If you do, Kukemssa Pirates assigns no combat damage this turn.

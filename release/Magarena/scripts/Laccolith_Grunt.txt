@@ -6,6 +6,6 @@ type=Creature
 subtype=Beast
 cost={2}{R}
 pt=2/2
+ability=Whenever SN becomes blocked, you may have SN deal damage equal to its power to target creature.~If you do, SN assigns no combat damage this turn.
 timing=main
-requires_groovy_code=Laccolith Whelp
 oracle=Whenever Laccolith Grunt becomes blocked, you may have it deal damage equal to its power to target creature. If you do, Laccolith Grunt assigns no combat damage this turn.

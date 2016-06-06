@@ -6,6 +6,6 @@ type=Creature
 subtype=Beast,Warrior
 cost={2}{R}{R}
 pt=3/3
+ability=Whenever SN becomes blocked, you may have SN deal damage equal to its power to target creature.~If you do, SN assigns no combat damage this turn.
 timing=main
-requires_groovy_code=Laccolith Whelp
 oracle=Whenever Laccolith Warrior becomes blocked, you may have it deal damage equal to its power to target creature. If you do, Laccolith Warrior assigns no combat damage this turn.

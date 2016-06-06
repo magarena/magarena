@@ -6,6 +6,6 @@ type=Creature
 subtype=Human
 cost={1}{W}{W}
 pt=2/2
+ability=Whenever SN attacks and isn't blocked, you may have SN deal 3 damage to target creature.~If you do, SN assigns no combat damage this turn.
 timing=main
-requires_groovy_code
 oracle=Whenever Farrel's Zealot attacks and isn't blocked, you may have it deal 3 damage to target creature. If you do, Farrel's Zealot assigns no combat damage this turn.

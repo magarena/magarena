@@ -1442,6 +1442,13 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicPermanentFilterImpl ARTIFACT_DEFENDING_PLAYER_CONTROLS = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+            final MagicGame game = player.getGame();
+            return target.isArtifact() && target.isController(game.getDefendingPlayer());
+        }
+    };
+
     public static final MagicPermanentFilterImpl CREATURE_WITHOUT_FLYING_DEFENDING_PLAYER_CONTROLS = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             final MagicGame game = player.getGame();
@@ -2844,8 +2851,6 @@ public class MagicTargetFilterFactory {
         single.put("Elf or Soldier creature", ELF_OR_SOLDIER_CREATURE);
         single.put("tapped nonblack creature", TAPPED_NONBLACK_CREATURE);
         single.put("nonattacking, nonblocking creature", NONATTACKING_NONBLOCKING_CREATURE);
-        single.put("creature defending player controls", CREATURE_DEFENDING_PLAYER_CONTROLS);
-        single.put("creature without flying defending player controls", CREATURE_WITHOUT_FLYING_DEFENDING_PLAYER_CONTROLS);
         single.put("creature without flying or islandwalk", CREATURE_WITHOUT_FLYING_OR_ISLANDWALK);
         single.put("creature without flying or a planeswalker", CREATURE_WITHOUT_FLYING_OR_PLANESWALKER);
         single.put("creature token", CREATURE_TOKEN);
@@ -2904,6 +2909,10 @@ public class MagicTargetFilterFactory {
         single.put("equipped creature you control", EQUIPPED_CREATURE_YOU_CONTROL);
         single.put("Vampire or Zombie you control", VAMPIRE_OR_ZOMBIE_YOU_CONTROL);
 
+        // defending player controls
+        single.put("creature defending player controls", CREATURE_DEFENDING_PLAYER_CONTROLS);
+        single.put("artifact defending player controls", ARTIFACT_DEFENDING_PLAYER_CONTROLS);
+        single.put("creature without flying defending player controls", CREATURE_WITHOUT_FLYING_DEFENDING_PLAYER_CONTROLS);
 
         // <color|type|subtype> an opponent controls
         single.put("permanent an opponent controls", PERMANENT_AN_OPPONENT_CONTROLS);
