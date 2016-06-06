@@ -6,6 +6,6 @@ type=Legendary,Creature
 subtype=Human
 cost={2}{B}{B}
 pt=2/3
-ability=Whenever SN becomes untapped, you may exile target creature. If you do, put a colorless artifact token named Gold onto the battlefield. It has "Sacrifice this artifact: Add one mana of any color to your mana pool."
+ability=Whenever SN becomes untapped, you may exile target creature.~If you do, put a colorless artifact token named Gold onto the battlefield.
 timing=main
 oracle=Inspired — Whenever King Macar, the Gold-Cursed becomes untapped, you may exile target creature. If you do, put a colorless artifact token named Gold onto the battlefield. It has "Sacrifice this artifact: Add one mana of any color to your mana pool."
