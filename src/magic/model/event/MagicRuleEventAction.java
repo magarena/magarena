@@ -2421,6 +2421,19 @@ public enum MagicRuleEventAction {
             }
         }
     },
+    NoCombatDamage(
+        ARG.IT + " assigns no combat damage this turn"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return (game, event) -> {
+                game.doAction(ChangeStateAction.Set(
+                    ARG.itPermanent(event, matcher),
+                    MagicPermanentState.NoCombatDamage
+                ));
+            };
+        }
+    },
     GainControl(
         "gain control of " + ARG.PERMANENTS + "(?<ueot> until end of turn)?",
         MagicTargetHint.Negative,
