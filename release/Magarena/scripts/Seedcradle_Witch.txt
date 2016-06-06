@@ -6,6 +6,6 @@ type=Creature
 subtype=Elf,Shaman
 cost={G/W}
 pt=1/1
-ability={2}{G}{W}: Target creature gets +3/+3 until end of turn. Untap that creature.
+ability={2}{G}{W}: Target creature gets +3/+3 until end of turn.~Untap *that creature*.
 timing=main
 oracle={2}{G}{W}: Target creature gets +3/+3 until end of turn. Untap that creature.
