@@ -193,9 +193,25 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
         public boolean accept(final MagicSource source) {
             final MagicGame game = source.getGame();
             return (game.isPhase(MagicPhaseType.BeginOfCombat) ||
-                   game.isPhase(MagicPhaseType.DeclareAttackers) ||
-                   game.isPhase(MagicPhaseType.DeclareBlockers) ||
-                   game.isPhase(MagicPhaseType.EndOfCombat));
+                    game.isPhase(MagicPhaseType.DeclareAttackers) ||
+                    game.isPhase(MagicPhaseType.DeclareBlockers) ||
+                    game.isPhase(MagicPhaseType.EndOfCombat));
+        }
+    };
+
+    public static MagicCondition DURING_COMBAT_AFTER_BLOCKERS = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicGame game = source.getGame();
+            return (game.isPhase(MagicPhaseType.DeclareBlockers) ||
+                    game.isPhase(MagicPhaseType.EndOfCombat));
+        }
+    };
+
+    public static MagicCondition DURING_COMBAT_BEFORE_BLOCKERS = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicGame game = source.getGame();
+            return (game.isPhase(MagicPhaseType.BeginOfCombat) ||
+                    game.isPhase(MagicPhaseType.DeclareAttackers));
         }
     };
 

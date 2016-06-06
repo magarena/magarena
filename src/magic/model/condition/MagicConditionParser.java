@@ -377,6 +377,16 @@ public enum MagicConditionParser {
             return MagicCondition.END_OF_COMBAT_CONDITION;
         }
     },
+    DuringCombatAfterBlockers("during combat after blockers are declared") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.DURING_COMBAT_AFTER_BLOCKERS;
+        }
+    },
+    DuringCombatBeforeBlockers("during combat before blockers are declared") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.DURING_COMBAT_AFTER_BLOCKERS;
+        }
+    },
     YourTurn("during your turn") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.YOUR_TURN_CONDITION;
