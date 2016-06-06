@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Warrior
 cost={W}
 pt=2/1
-ability=Whenever SN or another Warrior enters the battlefield under your control, you may exile target creature card from a graveyard. If you do, you gain 1 life.
+ability=Whenever SN or another Warrior enters the battlefield under your control, you may exile target creature card from a graveyard.~If you do, you gain 1 life.
 timing=main
 oracle=Whenever Mardu Woe-Reaper or another Warrior enters the battlefield under your control, you may exile target creature card from a graveyard. If you do, you gain 1 life.
