@@ -7,6 +7,6 @@ type=Legendary,Creature
 subtype=Merfolk,Ally
 cost={3}{W}{U}
 pt=4/4
-ability=Whenever you cast an instant or sorcery spell, you may put three +1/+1 counters on target land you control. If you do, that land becomes a 0/0 Elemental creature with haste that's still a land.
+ability=Whenever you cast an instant or sorcery spell, you may put three +1/+1 counters on target land you control.~If you do, *that land* becomes a 0/0 Elemental creature with haste that's still a land.
 timing=main
 oracle=Whenever you cast an instant or sorcery spell, you may put three +1/+1 counters on target land you control. If you do, that land becomes a 0/0 Elemental creature with haste that's still a land.
