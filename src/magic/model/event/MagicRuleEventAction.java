@@ -1843,6 +1843,19 @@ public enum MagicRuleEventAction {
             return (game, event) -> game.addEvent(MagicScryEvent.Pseudo(event));
         }
     },
+    LimitedTutor(
+        "Look at the top " + ARG.AMOUNT + " cards of your library. You may reveal a(n)? " + ARG.WORDRUN + " from among them and put it into your hand\\. " + 
+        "(Then )?Put the rest on the bottom of your library in any order",
+        MagicTiming.Draw,
+        "Look"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final int amount = ARG.amount(matcher);
+            final MagicTargetFilter<MagicCard> filter = MagicTargetFilterFactory.Card(ARG.wordrun(matcher) + " from your hand");
+            return (game, event) -> game.addEvent(MagicTutorTopEvent.create(event, amount, filter));
+        }
+    },
     LoseGame(
         ARG.PLAYERS + " lose(s)? the game",
         MagicTargetHint.Negative,
