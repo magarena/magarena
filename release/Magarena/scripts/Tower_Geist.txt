@@ -7,7 +7,7 @@ type=Creature
 subtype=Spirit
 cost={3}{U}
 pt=2/2
-ability=Flying
+ability=Flying;\
+        When SN enters the battlefield, look at the top two cards of your library. Put one of them into your hand and the other into your graveyard.
 timing=main
-requires_groovy_code
 oracle=Flying\nWhen Tower Geist enters the battlefield, look at the top two cards of your library. Put one of them into your hand and the other into your graveyard.
