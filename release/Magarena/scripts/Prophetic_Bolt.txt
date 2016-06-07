@@ -5,6 +5,6 @@ value=4.500
 rarity=R
 type=Instant
 cost={3}{U}{R}
-effect=SN deals 4 damage to target creature or player. Look at the top four cards of your library. Put one of those cards into your hand and the rest on the bottom of your library in any order.
+effect=SN deals 4 damage to target creature or player.~Look at the top four cards of your library. Put one of those cards into your hand and the rest on the bottom of your library in any order.
 timing=removal
 oracle=Prophetic Bolt deals 4 damage to target creature or player. Look at the top four cards of your library. Put one of those cards into your hand and the rest on the bottom of your library in any order.
