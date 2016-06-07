@@ -1,0 +1,10 @@
+name=1/1 green Elf Druid creature token
+token=Elf Warrior
+image=http://magiccards.info/extras/token/commander-2014/elf-druid.jpg
+value=1
+type=Creature
+subtype=Elf,Druid
+color=g
+pt=1/1
+ability={T}: Add {G} to your mana pool.
+oracle={T}: Add {G} to your mana pool.
