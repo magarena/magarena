@@ -67,13 +67,13 @@ public class MagicTutorTopEvent {
         );
     }
     
-    public static MagicEvent create(final MagicEvent event, final int n) {
+    public static MagicEvent create(final MagicEvent event, final int n, final int h) {
         final MagicPlayer player = event.getPlayer();
         final MagicCardList topCards = player.getLibrary().getCardsFromTop(n);
         return new MagicEvent(
             event.getSource(),
             player,
-            new MagicFromCardListChoice(topCards, 1),
+            new MagicFromCardListChoice(topCards, h),
             MagicGraveyardTargetPicker.ReturnToHand,
             topCards,
             HandGraveyard,

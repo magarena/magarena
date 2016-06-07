@@ -1857,14 +1857,15 @@ public enum MagicRuleEventAction {
         }
     },
     TutorTop2(
-        "Look at the top " + ARG.AMOUNT + " cards of your library. Put one of them into your hand and the (other|rest) into your graveyard",
+        "Look at the top " + ARG.AMOUNT + " cards of your library. Put " + ARG.AMOUNT2 + " of them into your hand and the (other|rest) into your graveyard",
         MagicTiming.Draw,
         "Look"
     ) {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
-            final int amount = ARG.amount(matcher);
-            return (game, event) -> game.addEvent(MagicTutorTopEvent.create(event, amount));
+            final int n = ARG.amount(matcher);
+            final int h = ARG.amount2(matcher);
+            return (game, event) -> game.addEvent(MagicTutorTopEvent.create(event, n, h));
         }
     },
     LoseGame(
