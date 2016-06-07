@@ -1843,7 +1843,7 @@ public enum MagicRuleEventAction {
             return (game, event) -> game.addEvent(MagicScryEvent.Pseudo(event));
         }
     },
-    TutorTop(
+    TutorTopReveal(
         "Look at the top " + ARG.AMOUNT + " cards of your library. You may reveal a(n)? " + ARG.WORDRUN + " from among them and put it into your hand\\. " + 
         "(Then )?Put the rest on the bottom of your library in any order",
         MagicTiming.Draw,
@@ -1856,7 +1856,19 @@ public enum MagicRuleEventAction {
             return (game, event) -> game.addEvent(MagicTutorTopEvent.create(event, amount, filter));
         }
     },
-    TutorTop2(
+    TutorTopBottom(
+	"Look at the top " + ARG.AMOUNT + " cards of your library. Put " + ARG.AMOUNT2 + " of (them|those cards) into your hand and the (other|rest) on the bottom of your library( in any order)?",
+        MagicTiming.Draw,
+        "Look"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final int n = ARG.amount(matcher);
+            final int h = ARG.amount2(matcher);
+            return (game, event) -> game.addEvent(MagicTutorTopEvent.toBottom(event, n, h));
+        }
+    },
+    TutorTopGraveyard(
         "Look at the top " + ARG.AMOUNT + " cards of your library. Put " + ARG.AMOUNT2 + " of them into your hand and the (other|rest) into your graveyard",
         MagicTiming.Draw,
         "Look"
@@ -1865,7 +1877,7 @@ public enum MagicRuleEventAction {
         public MagicEventAction getAction(final Matcher matcher) {
             final int n = ARG.amount(matcher);
             final int h = ARG.amount2(matcher);
-            return (game, event) -> game.addEvent(MagicTutorTopEvent.create(event, n, h));
+            return (game, event) -> game.addEvent(MagicTutorTopEvent.toGraveyard(event, n, h));
         }
     },
     LoseGame(

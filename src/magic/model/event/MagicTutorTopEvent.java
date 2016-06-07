@@ -36,6 +36,7 @@ public class MagicTutorTopEvent {
     }
     
     private static final MagicEventAction HandGraveyard = TakeCard(false, MagicLocationType.Graveyard);
+    private static final MagicEventAction HandBottom = TakeCard(false, MagicLocationType.BottomOfOwnersLibrary);
     private static final MagicEventAction RevealHandBottom = TakeCard(true, MagicLocationType.BottomOfOwnersLibrary);
     
     public static MagicEvent create(final MagicEvent event, final int n, final MagicTargetFilter<MagicCard> filter) {
@@ -53,7 +54,15 @@ public class MagicTutorTopEvent {
         );
     }
     
-    public static MagicEvent create(final MagicEvent event, final int n, final int h) {
+    public static MagicEvent toGraveyard(final MagicEvent event, final int n, final int h) {
+	return create(event, n, h, HandGraveyard);
+    }
+
+    public static MagicEvent toBottom(final MagicEvent event, final int n, final int h) {
+	return create(event, n, h, HandBottom);
+    }
+
+    private static MagicEvent create(final MagicEvent event, final int n, final int h, final MagicEventAction action) {
         final MagicPlayer player = event.getPlayer();
         final MagicCardList topCards = player.getLibrary().getCardsFromTop(n);
         return new MagicEvent(
@@ -62,7 +71,7 @@ public class MagicTutorTopEvent {
             new MagicFromCardListChoice(topCards, h),
             MagicGraveyardTargetPicker.ReturnToHand,
             topCards,
-            HandGraveyard,
+            action,
             ""
         );
     }
