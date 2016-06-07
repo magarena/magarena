@@ -1678,6 +1678,16 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicCardFilterImpl COLORLESS_CARD_FROM_HAND = new MagicCardFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
+            return MagicColor.isColorless(target);
+        }
+
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType == MagicTargetType.Hand;
+        }
+    };
+
     public static final MagicCardFilterImpl AURA_OR_EQUIPMENT_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
         @Override
         public boolean acceptType(MagicTargetType targetType) {
@@ -1802,6 +1812,9 @@ public class MagicTargetFilterFactory {
 
     public static final MagicCardFilterImpl INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD =
         card(MagicType.Instant).or(MagicType.Sorcery).from(MagicTargetType.Graveyard);
+
+    public static final MagicCardFilterImpl INSTANT_OR_SORCERY_CARD_FROM_HAND =
+        card(MagicType.Instant).or(MagicType.Sorcery).from(MagicTargetType.Hand);
 
     public static final MagicCardFilterImpl INSTANT_SORCERY_OR_CREATURE_CARD_FROM_GRAVEYARD =
         card(MagicType.Instant).or(MagicType.Sorcery).or(MagicType.Creature).from(MagicTargetType.Graveyard);
@@ -2029,6 +2042,8 @@ public class MagicTargetFilterFactory {
     };
 
     public static final MagicCardFilterImpl CREATURE_CARD_FROM_HAND = card(MagicType.Creature).from(MagicTargetType.Hand);
+
+    public static final MagicCardFilterImpl CREATURE_OR_LAND_CARD_FROM_HAND = card(MagicType.Creature).or(MagicType.Land).from(MagicTargetType.Hand);
 
     public static final MagicCardFilterImpl EQUIPMENT_CARD_FROM_HAND = card(MagicSubType.Equipment).from(MagicTargetType.Hand);
 
@@ -2626,6 +2641,9 @@ public class MagicTargetFilterFactory {
         single.put("red or green card from your hand", RED_OR_GREEN_CARD_FROM_HAND);
         single.put("basic land card from your hand", BASIC_LAND_CARD_FROM_HAND);
         single.put("artifact, creature, or land card from your hand", ARTIFACT_OR_CREATURE_OR_LAND_CARD_FROM_HAND);
+        single.put("creature or land card from your hand", CREATURE_OR_LAND_CARD_FROM_HAND);
+        single.put("instant or sorcery card from your hand", INSTANT_OR_SORCERY_CARD_FROM_HAND);
+        single.put("colorless card from your hand", COLORLESS_CARD_FROM_HAND);
 
         // <color|type|subtype> permanent card from your hand
 
