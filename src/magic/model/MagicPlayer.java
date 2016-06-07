@@ -468,7 +468,13 @@ public class MagicPlayer extends MagicObjectImpl implements MagicSource, MagicTa
         return targets;
     }
 
-    private void addCards(final List<MagicCard> targets, final MagicCardList list, final MagicTargetFilter<MagicCard> filter) {
+    public MagicCardList filterCards(final List<MagicCard> list, final MagicTargetFilter<MagicCard> filter) {
+        final MagicCardList targets = new MagicCardList();
+        addCards(targets, list, filter);
+        return targets;
+    }
+
+    private void addCards(final List<MagicCard> targets, final List<MagicCard> list, final MagicTargetFilter<MagicCard> filter) {
         for (final MagicCard card : list) {
             if (filter.accept(MagicSource.NONE, this, card)) {
                 targets.add(card);
