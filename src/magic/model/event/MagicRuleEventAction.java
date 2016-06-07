@@ -1857,7 +1857,7 @@ public enum MagicRuleEventAction {
         }
     },
     TutorTopBottom(
-	"Look at the top " + ARG.AMOUNT + " cards of your library. Put " + ARG.AMOUNT2 + " of (them|those cards) into your hand and the (other|rest) on the bottom of your library( in any order)?",
+        "Look at the top " + ARG.AMOUNT + " cards of your library. Put " + ARG.AMOUNT2 + " of (them|those cards) into your hand and the (other|rest) on the bottom of your library( in any order)?",
         MagicTiming.Draw,
         "Look"
     ) {

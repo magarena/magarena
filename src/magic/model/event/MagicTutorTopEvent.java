@@ -55,11 +55,11 @@ public class MagicTutorTopEvent {
     }
     
     public static MagicEvent toGraveyard(final MagicEvent event, final int n, final int h) {
-	return create(event, n, h, HandGraveyard);
+        return create(event, n, h, HandGraveyard);
     }
 
     public static MagicEvent toBottom(final MagicEvent event, final int n, final int h) {
-	return create(event, n, h, HandBottom);
+        return create(event, n, h, HandBottom);
     }
 
     private static MagicEvent create(final MagicEvent event, final int n, final int h, final MagicEventAction action) {
