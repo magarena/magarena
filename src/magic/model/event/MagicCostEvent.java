@@ -66,7 +66,7 @@ public enum MagicCostEvent {
             return new MagicRepeatedPermanentsEvent(source, choice, amt, MagicChainEventFactory.Bounce);
         }
     },
-    DiscardAll("Discard your hand") {
+    DiscardAll("Discard( all the cards in)? your hand") {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             return new MagicDiscardHandEvent(source);
         }
