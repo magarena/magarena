@@ -15,42 +15,28 @@ import java.util.List;
 
 public class MagicTutorTopEvent {
 
-    private static final MagicEventAction RevealHandBottom = new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processChosenCards(game, (final MagicCard chosen) -> {
-                for (final MagicCard card : event.getRefCardList()) {
-                    if (card == chosen) {
-                        game.doAction(new RevealAction(card));
+    private static final MagicEventAction TakeCard(final boolean reveal, final MagicLocationType rest) {
+        return new MagicEventAction() {
+            @Override
+            public void executeEvent(final MagicGame game, final MagicEvent event) {
+                event.processChosenCards(game, (final MagicCard chosen) -> {
+                    for (final MagicCard card : event.getRefCardList()) {
+                        if (card == chosen && reveal) {
+                            game.doAction(new RevealAction(card));
+                        }
+                        game.doAction(new ShiftCardAction(
+                            card,
+                            MagicLocationType.OwnersLibrary,
+                            card == chosen ? MagicLocationType.OwnersHand : rest
+                        ));
                     }
-                    game.doAction(new ShiftCardAction(
-                        card,
-                        MagicLocationType.OwnersLibrary,
-                        card == chosen ?
-                            MagicLocationType.OwnersHand :
-                            MagicLocationType.BottomOfOwnersLibrary
-                    ));
-                }
-            });
-        }
-    };
+                });
+            }
+        };
+    }
     
-    private static final MagicEventAction HandGraveyard = new MagicEventAction() {
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            event.processChosenCards(game, (final MagicCard chosen) -> {
-                for (final MagicCard card : event.getRefCardList()) {
-                    game.doAction(new ShiftCardAction(
-                        card,
-                        MagicLocationType.OwnersLibrary,
-                        card == chosen ?
-                            MagicLocationType.OwnersHand :
-                            MagicLocationType.Graveyard
-                    ));
-                }
-            });
-        }
-    };
+    private static final MagicEventAction HandGraveyard = TakeCard(false, MagicLocationType.Graveyard);
+    private static final MagicEventAction RevealHandBottom = TakeCard(true, MagicLocationType.BottomOfOwnersLibrary);
     
     public static MagicEvent create(final MagicEvent event, final int n, final MagicTargetFilter<MagicCard> filter) {
         final MagicPlayer player = event.getPlayer();
