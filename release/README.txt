@@ -71,6 +71,9 @@ Thanks to
 
 Thank you for your support and have fun!
 
+Release 1.74 (June 25, 2016)
+============
+
 Release 1.73 (May 28, 2016)
 ============
 melvin
