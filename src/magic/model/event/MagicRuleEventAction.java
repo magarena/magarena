@@ -13,7 +13,6 @@ import magic.model.choice.MagicChoiceFactory;
 import magic.model.choice.MagicFromCardFilterChoice;
 import magic.model.choice.MagicMayChoice;
 import magic.model.choice.MagicOrChoice;
-import magic.model.choice.MagicPayManaCostChoice;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.condition.MagicArtificialCondition;
 import magic.model.condition.MagicCondition;
@@ -1857,7 +1856,7 @@ public enum MagicRuleEventAction {
         }
     },
     TutorTopReveal(
-        "Look at the top " + ARG.AMOUNT + " cards of your library. You may reveal a(n)? " + ARG.WORDRUN + " from among them and put it into your hand\\. " + 
+        "Look at the top " + ARG.AMOUNT + " cards of your library. You may reveal a(n)? " + ARG.WORDRUN + " from among them and put it into your hand\\. " +
         "(Then )?Put the rest on the bottom of your library in any order",
         MagicTiming.Draw,
         "Look"
@@ -2059,12 +2058,21 @@ public enum MagicRuleEventAction {
         "Flip",
         (game, event) -> game.doAction(new FlipAction(event.getPermanent()))
     ),
-    TransformSelf(
-        "transform sn",
+    Transform(
+        "transform " + ARG.PERMANENTS,
         MagicTiming.Pump,
-        "Transform",
-        (game, event) -> game.doAction(new TransformAction(event.getPermanent()))
-    ),
+        "Transform"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return (game, event) -> {
+                for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                    game.doAction(new TransformAction(it));
+                }
+            };
+        }
+    },
     Populate(
         "populate",
         MagicTiming.Token,
