@@ -7,7 +7,7 @@ subtype=Drake
 cost={6}{U}{U}{U}
 pt=3/4
 ability=Affinity for artifacts;\
-        Flying.
+        Flying;\
+        When SN enters the battlefield, reveal the top three cards of your library. Put all artifact cards revealed this way into your hand and the rest into your graveyard.
 timing=main
-requires_groovy_code
 oracle=Affinity for artifacts\nFlying\nWhen Chromescale Drake enters the battlefield, reveal the top three cards of your library. Put all artifact cards revealed this way into your hand and the rest into your graveyard.

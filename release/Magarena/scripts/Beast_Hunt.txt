@@ -4,6 +4,6 @@ value=1.851
 rarity=C
 type=Sorcery
 cost={3}{G}
-timing=main
-requires_groovy_code
+effect=Reveal the top three cards of your library. Put all creature cards revealed this way into your hand and the rest into your graveyard.
+timing=draw
 oracle=Reveal the top three cards of your library. Put all creature cards revealed this way into your hand and the rest into your graveyard.

@@ -7,7 +7,7 @@ subtype=Cyclops
 cost={4}{R}{R}{G}{G}
 pt=7/6
 ability=Trample;\
+        Whenever SN deals combat damage to a player, reveal the top three cards of your library. Put all land cards revealed this way into your hand and the rest into your graveyard.;\
         Discard a land card: SN deals 3 damage to target creature or player.
 timing=main
-requires_groovy_code
 oracle=Trample\nWhenever Borborygmos Enraged deals combat damage to a player, reveal the top three cards of your library. Put all land cards revealed this way into your hand and the rest into your graveyard.\nDiscard a land card: Borborygmos Enraged deals 3 damage to target creature or player.
