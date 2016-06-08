@@ -779,7 +779,7 @@ resources/magic/data/AllCardNames.txt:
 missing_override:
 	grep public -B1 -r release/Magarena/scripts | awk '/Override/ {skip = NR + 1} NR != skip {print $$0}' | grep -v Override | grep release > $@
 
-parse_new.txt:
+parse_new.txt: cards/existing_master.txt
 	patch -p1 < parse_missing.patch
 	cp release/Magarena/scripts_missing/* release/Magarena/scripts
 	-rm 101.out
@@ -788,10 +788,10 @@ parse_new.txt:
 	grep OK 101.out | sed 's/OK card: //' | sort > parse_ok.txt  
 	git clean -qf release/Magarena/scripts
 	patch -p1 -R < parse_missing.patch
-	join -v2 -t'_' cards/existing_master.txt parse_ok.txt > $@
+	join -v2 -t'_' $^ parse_ok.txt > $@
 	diff parse_new.ignore $@
 
-parse_groovy.txt:
+parse_groovy.txt: cards/groovy.txt
 	patch -p1 < parse_missing.patch
 	cp scripts-builder/OUTPUT/scripts_missing/* release/Magarena/scripts
 	-rm 101.out
@@ -800,8 +800,13 @@ parse_groovy.txt:
 	grep OK 101.out | sed 's/OK card: //' | sort > parse_ok.txt
 	git checkout -- release/Magarena/scripts
 	patch -p1 -R < parse_missing.patch
-	join -t'_' <(sort cards/groovy.txt) <(sort parse_ok.txt) > $@
+	join -t'_' <(sort $^) <(sort parse_ok.txt) > $@
 	diff parse_groovy.ignore $@
+
+parse_groovy:
+	make cards/groovy.txt
+	cd scripts-builder && make gen-groovy
+	make parse_groovy.txt
 
 # extract name<tab>image url from gallery page
 %.tsv: %.html
