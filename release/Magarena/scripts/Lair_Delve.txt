@@ -4,6 +4,6 @@ value=1.743
 rarity=C
 type=Sorcery
 cost={2}{G}
+effect=Reveal the top two cards of your library. Put all creature and land cards revealed this way into your hand and the rest on the bottom of your library in any order.
 timing=main
-requires_groovy_code
 oracle=Reveal the top two cards of your library. Put all creature and land cards revealed this way into your hand and the rest on the bottom of your library in any order.
