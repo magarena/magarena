@@ -1400,7 +1400,7 @@ public enum MagicRuleEventAction {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final int n = ARG.amount(matcher);
-            final MagicTargetFilter<MagicCard> filter = MagicTargetFilterFactory.Card(ARG.wordrun(matcher) + " from your hand");
+            final MagicTargetFilter<MagicCard> filter = MagicTargetFilterFactory.Card(ARG.wordrun(matcher) + " from your library");
             return (game, event) -> {
                 final List<MagicCard> topN = event.getPlayer().getLibrary().getCardsFromTop(n);
                 game.doAction(new RevealAction(topN));
@@ -1424,7 +1424,7 @@ public enum MagicRuleEventAction {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = ARG.amount(matcher);
-            final MagicTargetFilter<MagicCard> filter = MagicTargetFilterFactory.Card(ARG.wordrun(matcher) + " from your hand");
+            final MagicTargetFilter<MagicCard> filter = MagicTargetFilterFactory.Card(ARG.wordrun(matcher) + " from your library");
             return (game, event) -> game.addEvent(MagicTutorTopEvent.reveal(event, amount, filter));
         }
     },
@@ -1864,7 +1864,7 @@ public enum MagicRuleEventAction {
         @Override
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = ARG.amount(matcher);
-            final MagicTargetFilter<MagicCard> filter = MagicTargetFilterFactory.Card(ARG.wordrun(matcher) + " from your hand");
+            final MagicTargetFilter<MagicCard> filter = MagicTargetFilterFactory.Card(ARG.wordrun(matcher) + " from your library");
             return (game, event) -> game.addEvent(MagicTutorTopEvent.create(event, amount, filter));
         }
     },

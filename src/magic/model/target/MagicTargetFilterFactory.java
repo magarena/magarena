@@ -1593,7 +1593,7 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl BLACK_OR_RED_CREATURE_ATTACKING_OR_BLOCKING = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-            return target.isCreature() && 
+            return target.isCreature() &&
                    (target.hasColor(MagicColor.Black) || target.hasColor(MagicColor.Red)) &&
                    (target.isAttacking() || target.isBlocking());
         }
@@ -1678,13 +1678,13 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicCardFilterImpl COLORLESS_CARD_FROM_HAND = new MagicCardFilterImpl() {
+    public static final MagicCardFilterImpl COLORLESS_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return MagicColor.isColorless(target);
         }
 
         public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Hand;
+            return targetType == MagicTargetType.Library;
         }
     };
 
@@ -2043,7 +2043,12 @@ public class MagicTargetFilterFactory {
 
     public static final MagicCardFilterImpl CREATURE_CARD_FROM_HAND = card(MagicType.Creature).from(MagicTargetType.Hand);
 
-    public static final MagicCardFilterImpl CREATURE_OR_LAND_CARD_FROM_HAND = card(MagicType.Creature).or(MagicType.Land).from(MagicTargetType.Hand);
+    public static final MagicCardFilterImpl CREATURE_OR_LAND_CARD_FROM_LIBRARY = card(MagicType.Creature).or(MagicType.Land).from(MagicTargetType.Library);
+
+    public static final MagicCardFilterImpl ACELP_CARD_FROM_LIBRARY =
+        card(MagicType.Artifact).or(MagicType.Creature).or(MagicType.Enchantment).or(MagicType.Land).or(MagicType.Planeswalker).from(MagicTargetType.Library);
+
+    public static final MagicCardFilterImpl CREATURE_OR_ENCHANTMENT_CARD_FROM_LIBRARY = card(MagicType.Creature).or(MagicType.Enchantment).from(MagicTargetType.Library);
 
     public static final MagicCardFilterImpl EQUIPMENT_CARD_FROM_HAND = card(MagicSubType.Equipment).from(MagicTargetType.Hand);
 
@@ -2641,9 +2646,7 @@ public class MagicTargetFilterFactory {
         single.put("red or green card from your hand", RED_OR_GREEN_CARD_FROM_HAND);
         single.put("basic land card from your hand", BASIC_LAND_CARD_FROM_HAND);
         single.put("artifact, creature, or land card from your hand", ARTIFACT_OR_CREATURE_OR_LAND_CARD_FROM_HAND);
-        single.put("creature or land card from your hand", CREATURE_OR_LAND_CARD_FROM_HAND);
         single.put("instant or sorcery card from your hand", INSTANT_OR_SORCERY_CARD_FROM_HAND);
-        single.put("colorless card from your hand", COLORLESS_CARD_FROM_HAND);
 
         // <color|type|subtype> permanent card from your hand
 
@@ -2684,6 +2687,10 @@ public class MagicTargetFilterFactory {
         single.put("artifact card with converted mana cost 6 or greater from your library", permanentCardMinCMC(MagicType.Artifact, MagicTargetType.Library, 6));
         single.put("blue instant card from your library", BLUE_INSTANT_CARD_FROM_LIBRARY);
         single.put("aura or equipment card from your library", AURA_OR_EQUIPMENT_CARD_FROM_LIBRARY);
+        single.put("creature or land card from your library", CREATURE_OR_LAND_CARD_FROM_LIBRARY);
+        single.put("creature or enchantment card from your library", CREATURE_OR_ENCHANTMENT_CARD_FROM_LIBRARY);
+        single.put("artifact, creature, enchantment, land, or planeswalker card from your library", ACELP_CARD_FROM_LIBRARY);
+        single.put("colorless card from your library", COLORLESS_CARD_FROM_LIBRARY);
 
         // <color|type|subtype> permanent card from your library
         single.put("Rebel permanent card with converted mana cost 1 or less from your library", permanentCardMaxCMC(MagicSubType.Rebel, MagicTargetType.Library, 1));
