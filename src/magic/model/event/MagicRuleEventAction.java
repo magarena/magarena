@@ -1416,6 +1416,18 @@ public enum MagicRuleEventAction {
             };
         }
     },
+    RevealToHand2(
+        "reveal the top " + ARG.AMOUNT + " cards of your library\\. You may put a(n)? " + ARG.WORDRUN + " from among them into your hand. Put the rest into your graveyard",
+        MagicTiming.Draw,
+        "Reveal"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final int amount = ARG.amount(matcher);
+            final MagicTargetFilter<MagicCard> filter = MagicTargetFilterFactory.Card(ARG.wordrun(matcher) + " from your hand");
+            return (game, event) -> game.addEvent(MagicTutorTopEvent.reveal(event, amount, filter));
+        }
+    },
     SearchLibraryToHand(
         "search your library for (?<card>[^\\.]*), reveal (it|that card), (and )?put it into your hand(.|,) (If you do, |(t|T)hen )shuffle your library",
         MagicTiming.Draw,
