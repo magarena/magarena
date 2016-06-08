@@ -6,6 +6,6 @@ type=Creature
 subtype=Elemental
 cost={5}{W}
 pt=3/5
-ability={W}, {T}: Remove a -1/-1 counter from target creature. If you do, you gain 2 life.
+ability={W}, {T}: Remove a -1/-1 counter from target creature.~If you do, you gain 2 life.
 timing=main
 oracle={W}, {T}: Remove a -1/-1 counter from target creature. If you do, you gain 2 life.
