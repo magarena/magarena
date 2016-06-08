@@ -1393,7 +1393,7 @@ public enum MagicRuleEventAction {
         }
     },
     RevealToHand(
-        "reveal the top " + ARG.AMOUNT + " cards of your library\\. Put all " + ARG.WORDRUN + " revealed this way into your hand and the rest on the bottom of your library in any order",
+        "reveal the top " + ARG.AMOUNT + " cards of your library\\. Put all " + ARG.WORDRUN + " revealed this way into your hand and the rest ((?<graveyard>into your graveyard)|(?<bottom>on the bottom of your library in any order))",
         MagicTiming.Draw,
         "Reveal"
     ) {
@@ -1401,6 +1401,7 @@ public enum MagicRuleEventAction {
         public MagicEventAction getAction(final Matcher matcher) {
             final int n = ARG.amount(matcher);
             final MagicTargetFilter<MagicCard> filter = MagicTargetFilterFactory.Card(ARG.wordrun(matcher) + " from your library");
+            final MagicLocationType restLocation = matcher.group("graveyard") != null ? MagicLocationType.Graveyard : MagicLocationType.BottomOfOwnersLibrary;
             return (game, event) -> {
                 final List<MagicCard> topN = event.getPlayer().getLibrary().getCardsFromTop(n);
                 game.doAction(new RevealAction(topN));
@@ -1410,7 +1411,7 @@ public enum MagicRuleEventAction {
                         MagicLocationType.OwnersLibrary,
                         filter.accept(event.getSource(), event.getPlayer(), it) ?
                             MagicLocationType.OwnersHand :
-                            MagicLocationType.BottomOfOwnersLibrary
+                            restLocation
                     ));
                 }
             };
