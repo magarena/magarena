@@ -6,7 +6,7 @@ type=Creature
 subtype=Werewolf
 color=r
 pt=4/3
-ability=Whenever a Werewolf enters the battlefield under your control, you may transform it.;\
+ability=Whenever a Werewolf enters the battlefield under your control, you may transform RN.;\
         At the beginning of each upkeep, if a player cast two or more spells last turn, transform SN.
 transform=Geier Reach Bandit
 timing=main
