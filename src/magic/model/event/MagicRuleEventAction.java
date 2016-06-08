@@ -1865,7 +1865,7 @@ public enum MagicRuleEventAction {
         public MagicEventAction getAction(final Matcher matcher) {
             final int amount = ARG.amount(matcher);
             final MagicTargetFilter<MagicCard> filter = MagicTargetFilterFactory.Card(ARG.wordrun(matcher) + " from your library");
-            return (game, event) -> game.addEvent(MagicTutorTopEvent.create(event, amount, filter));
+            return (game, event) -> game.addEvent(MagicTutorTopEvent.look(event, amount, filter));
         }
     },
     TutorTopBottom(

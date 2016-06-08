@@ -44,21 +44,14 @@ public class MagicTutorTopEvent {
     private static final MagicEventAction RevealHandGraveyard = TakeCard(2, MagicLocationType.Graveyard);
 
     public static MagicEvent reveal(final MagicEvent event, final int n, final MagicTargetFilter<MagicCard> filter) {
-        final MagicPlayer player = event.getPlayer();
-        final MagicCardList topCards = player.getLibrary().getCardsFromTop(n);
-        final List<MagicCard> choiceList = player.filterCards(topCards, filter);
-        return new MagicEvent(
-            event.getSource(),
-            player,
-            new MagicFromCardListChoice(choiceList, topCards, 1, true),
-            MagicGraveyardTargetPicker.ReturnToHand,
-            topCards,
-            RevealHandGraveyard,
-            ""
-        );
+        return create(event, n, filter, RevealHandGraveyard);
     }
-    
-    public static MagicEvent create(final MagicEvent event, final int n, final MagicTargetFilter<MagicCard> filter) {
+
+    public static MagicEvent look(final MagicEvent event, final int n, final MagicTargetFilter<MagicCard> filter) {
+        return create(event, n, filter, RevealHandBottom);
+    }
+
+    private static MagicEvent create(final MagicEvent event, final int n, final MagicTargetFilter<MagicCard> filter, final MagicEventAction action) {
         final MagicPlayer player = event.getPlayer();
         final MagicCardList topCards = player.getLibrary().getCardsFromTop(n);
         final List<MagicCard> choiceList = player.filterCards(topCards, filter);
