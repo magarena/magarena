@@ -1,6 +1,8 @@
 Aberrant Researcher
 Accursed Witch
+Aegis Angel
 Aim High
+Air Servant
 Alms of the Vein
 Altered Ego
 Always Watching
@@ -24,6 +26,7 @@ Behind the Scenes
 Behold the Beyond
 Biting Rain
 Bloodmad Vampire
+Borderland Marauder
 Bound by Moonsilver
 Brain in a Jar
 Branded Howler
@@ -40,6 +43,7 @@ Chaplain's Blessing
 Choked Estuary
 Clip Wings
 Compelling Deterrence
+Cone of Flame
 Confirm Suspicions
 Confront the Unknown
 Convicted Killer
@@ -61,6 +65,7 @@ Descend upon the Sinful
 Devils' Playground
 Devilthorn Fox
 Diregraf Colossus
+Disperse
 Dissension in the Ranks
 Drogskol Cavalry
 Drownyard Explorers
@@ -131,6 +136,7 @@ Howlpack Resurgence
 Howlpack Wolf
 Hulking Devil
 Humble the Brute
+Incemental Growth
 Incited Rabble
 Incorrigible Youths
 Indulgent Aristocrat
@@ -166,10 +172,12 @@ Magmatic Chasm
 Magnifying Glass
 Malevolent Whispers
 Manic Scribe
+Marked by Honor
 Markov Dreadknight
 Merciless Resolve
 Might Beyond Reason
 Militant Inquisitor
+Mind Rot
 Mindwrack Demon
 Moldgraf Scavenger
 Moonlight Hunt
@@ -187,7 +195,9 @@ Neck Breaker
 Neglected Heirloom
 Nephalia Moondrakes
 Niblis of Dusk
+Nightmare
 Not Forgotten
+Oakenform
 Obsessive Skinner
 Odric, Lunarch Marshal
 Olivia's Bloodsworn
@@ -233,9 +243,12 @@ Scrounged Scythe
 Seagraf Skaab
 Seasons Past
 Second Harvest
+Sengir Vampire
 Senseless Rage
+Serra Angel
 Shamble Back
 Shard of Broken Glass
+Shivan Dragon
 Sigarda, Heron's Grace
 Silburlind Snapper
 Silent Observer
@@ -251,7 +264,9 @@ Sleep Paralysis
 Solitary Hunter
 Sorin, Grim Nemesis
 Soul Swallower
+Soul of the Harvest
 Spectral Shepherd
+Sphinx of Magosi
 Spiteful Motives
 Stallion of Ashmouth
 Startled Awake
@@ -306,6 +321,7 @@ Veteran Cathar
 Vildin-Pack Alpha
 Village Messenger
 Voldaren Duelist
+Walking Corpse
 Warped Landscape
 Watcher in the Web
 Wayward Disciple
