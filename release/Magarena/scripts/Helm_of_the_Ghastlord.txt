@@ -5,7 +5,9 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={3}{U/B}
+ability=Enchant creature;\
+        As long as enchanted creature is blue, enchanted creature gets +1/+1 and has "Whenever this creature deals damage to an opponent, draw a card.";\
+        As long as enchanted creature is black, enchanted creature gets +1/+1 and has "Whenever this creature deals damage to an opponent, that player discards a card."
 timing=enchantment
 enchant=pump,pos creature
-requires_groovy_code
 oracle=Enchant creature\nAs long as enchanted creature is blue, it gets +1/+1 and has "Whenever this creature deals damage to an opponent, draw a card."\nAs long as enchanted creature is black, it gets +1/+1 and has "Whenever this creature deals damage to an opponent, that player discards a card."

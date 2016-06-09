@@ -5,7 +5,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{R}{R}
+ability=Enchant land;\
+        As long as enchanted land is a basic Mountain, Goblin creatures get +0/+2.
 enchant=pump,land
 timing=aura
-requires_groovy_code
 oracle=Enchant land\nAs long as enchanted land is a basic Mountain, Goblin creatures get +0/+2.

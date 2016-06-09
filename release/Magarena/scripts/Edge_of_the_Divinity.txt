@@ -5,7 +5,9 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={W/B}
+ability=Enchant creature;\
+        As long as enchanted creature is white, enchanted creature gets +1/+2.;\
+        As long as enchanted creature is black, enchanted creature gets +2/+1.
 timing=aura
-requires_groovy_code
 enchant=pump,pos creature
 oracle=Enchant creature\nAs long as enchanted creature is white, it gets +1/+2.\nAs long as enchanted creature is black, it gets +2/+1.

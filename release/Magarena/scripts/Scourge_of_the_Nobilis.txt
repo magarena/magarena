@@ -5,7 +5,9 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={2}{R/W}
+ability=Enchant creature;\
+        As long as enchanted creature is red, enchanted creature gets +1/+1 and has "{R/W}: This creature gets +1/+0 until end of turn.";\
+        As long as enchanted creature is white, enchanted creature gets +1/+1 and has lifelink.
 timing=aura
 enchant=pump,pos creature
-requires_groovy_code
 oracle=Enchant creature\nAs long as enchanted creature is red, it gets +1/+1 and has "{R/W}: This creature gets +1/+0 until end of turn."\nAs long as enchanted creature is white, it gets +1/+1 and has lifelink.

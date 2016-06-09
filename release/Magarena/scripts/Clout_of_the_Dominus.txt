@@ -5,7 +5,9 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={U/R}
+ability=Enchant creature;\
+        As long as enchanted creature is blue, enchanted creature gets +1/+1 and has shroud.;\
+        As long as enchanted creature is red, enchanted creature gets +1/+1 and has haste.
 timing=enchantment
 enchant=pump,pos creature
-requires_groovy_code
 oracle=Enchant creature\nAs long as enchanted creature is blue, it gets +1/+1 and has shroud.\nAs long as enchanted creature is red, it gets +1/+1 and has haste.

@@ -5,7 +5,9 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{B/R}
+ability=Enchant creature;\
+        As long as enchanted creature is black, enchanted creature gets +1/+1 and has wither.;\
+        As long as enchanted creature is red, enchanted creature gets +1/+1 and has first strike.
 timing=enchantment
 enchant=pump,pos creature
-requires_groovy_code
 oracle=Enchant creature\nAs long as enchanted creature is black, it gets +1/+1 and has wither.\nAs long as enchanted creature is red, it gets +1/+1 and has first strike.
