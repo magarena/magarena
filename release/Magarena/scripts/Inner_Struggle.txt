@@ -4,6 +4,6 @@ value=2.500
 rarity=U
 type=Instant
 cost={3}{R}
-effect=Target creature deals damage to itself equal to its power.
 timing=removal
+requires_groovy_code=Wrack with Madness
 oracle=Target creature deals damage to itself equal to its power.
