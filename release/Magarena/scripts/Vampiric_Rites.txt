@@ -5,6 +5,6 @@ value=2.500
 rarity=U
 type=Enchantment
 cost={B}
-ability={1}{B}, Sacrifice a creature: You gain 1 life and draw a card.
+ability={1}{B}, Sacrifice a creature: You gain 1 life~and draw a card.
 timing=enchantment
 oracle={1}{B}, Sacrifice a creature: You gain 1 life and draw a card.
