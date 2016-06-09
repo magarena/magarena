@@ -1,22 +1,21 @@
 package magic.model.condition;
 
 import magic.model.MagicAbility;
+import magic.model.MagicCard;
+import magic.model.MagicColor;
 import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicManaCost;
 import magic.model.MagicPermanent;
+import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
-import magic.model.MagicColor;
-import magic.model.MagicCard;
-import magic.model.MagicPlayer;
-import magic.model.choice.MagicTargetChoice;
 import magic.model.event.MagicPermanentActivation;
-import magic.model.target.MagicTargetType;
-import magic.model.target.MagicTargetFilter;
-import magic.model.target.MagicTargetFilterFactory;
 import magic.model.target.MagicOtherCardTargetFilter;
 import magic.model.target.MagicOtherPermanentTargetFilter;
+import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicTargetFilterFactory;
+import magic.model.target.MagicTargetType;
 
 public class MagicConditionFactory {
 
@@ -120,6 +119,15 @@ public class MagicConditionFactory {
             public boolean accept(final MagicSource source) {
                 final MagicPermanent permanent = (MagicPermanent)source;
                 return filter.accept(source, source.getController(), permanent.getEnchantedPermanent());
+            }
+        };
+    }
+
+    public static MagicCondition EquippedIs(final MagicTargetFilter<MagicPermanent> filter) {
+        return new MagicCondition() {
+            public boolean accept(final MagicSource source) {
+                final MagicPermanent permanent = (MagicPermanent)source;
+                return filter.accept(source, source.getController(), permanent.getEquippedCreature());
             }
         };
     }

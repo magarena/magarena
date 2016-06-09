@@ -213,6 +213,12 @@ public enum MagicConditionParser {
             return MagicConditionFactory.SelfIs(filter);
         }
     },
+    EquippedIsA("equipped creature is a(n)? " + ARG.WORDRUN) {
+        public MagicCondition toCondition(final Matcher arg) {
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(ARG.wordrun(arg));
+            return MagicConditionFactory.EquippedIs(filter);
+        }
+    },
     EnchantedIsMountain("enchanted land is a basic Mountain") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.ENCHANTED_IS_BASIC_MOUNTAIN;
