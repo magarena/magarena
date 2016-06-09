@@ -1319,7 +1319,7 @@ public enum MagicAbility {
             }
         }
     },
-    ConditionPumpGainAlt("As long as (?<wordrun>[^\\,]*), " + ARG.WORDRUN2 + " (gets " + ARG.PT + "(.| ))?(and )?(" + ARG.ANY + ")?", 0) {
+    ConditionPumpGainAlt("As long as (?<wordrun>[^\\,]*), " + ARG.WORDRUN2 + " (?=(get|has|can))(gets " + ARG.PT + "(.| ))?(and )?(" + ARG.ANY + ")?", 0) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             ConditionPumpGain.addAbilityImpl(card, arg);
         }
