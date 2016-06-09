@@ -6,7 +6,7 @@ type=Artifact
 subtype=Equipment
 cost={2}
 ability=Equipped creature gets +1/+1 and has vigilance.;\
+        As long as equipped creature is a Human, equipped creature gets +1/+0.;\
         Equip {2}
 timing=equipment
-requires_groovy_code=Silver-Inlaid Dagger
 oracle=Equipped creature gets +1/+1 and has vigilance.\nAs long as equipped creature is a Human, it gets an additional +1/+0.\nEquip {2}
