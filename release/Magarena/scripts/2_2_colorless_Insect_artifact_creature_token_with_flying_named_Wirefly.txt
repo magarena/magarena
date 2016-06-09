@@ -1,0 +1,10 @@
+name=2/2 colorless Insect artifact creature token with flying named Wirefly
+token=Wirefly
+image=https://cdn.staticneo.com/w/mtg/f/f5/Wirefly.jpg
+value=2
+pt=2/2
+color=
+subtype=Insect
+type=Artifact,Creature
+ability=Flying
+oracle=Flying
