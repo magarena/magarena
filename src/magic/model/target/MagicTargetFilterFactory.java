@@ -934,6 +934,12 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicPermanentFilterImpl HUMAN_OR_ANGEL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+            return target.hasSubType(MagicSubType.Human) || target.hasSubType(MagicSubType.Angel);
+        }
+    };
+
     public static final MagicPermanentFilterImpl SKELETON_VAMPIRE_OR_ZOMBIE = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.hasSubType(MagicSubType.Vampire) ||
@@ -3042,6 +3048,7 @@ public class MagicTargetFilterFactory {
         single.put("wolf or werewolf", WOLF_OR_WEREWOLF);
         single.put("attacking wolf or werewolf", ATTACKING_WOLF_OR_WEREWOLF);
         single.put("wolf or werewolf you control", WOLF_OR_WEREWOLF_YOU_CONTROL);
+        single.put("human or an angel", HUMAN_OR_ANGEL);
 
         // <color|type> spell
         single.put("spell", SPELL);
