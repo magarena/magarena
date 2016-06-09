@@ -6,7 +6,7 @@ type=Artifact
 subtype=Equipment
 cost={1}
 ability=Equipped creature gets +1/+1.;\
+        As long as equipped creature is a Human or an Angel, equipped creature has vigilance.;\
         Equip {2}
 timing=equipment
-requires_groovy_code
 oracle=Equipped creature gets +1/+1.\nAs long as equipped creature is a Human or an Angel, it has vigilance.\nEquip {2}
