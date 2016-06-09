@@ -718,7 +718,7 @@ public enum MagicRuleEventAction {
                     game.logAppendMessage(event.getPlayer(), "(" + total + ")");
                 }
                 for (final MagicPlayer it : ARG.players(event, matcher, filter)) {
-                    game.doAction(new DrawAction(it, total));
+                    game.addEvent(new MagicDrawEvent(event.getSource(), it, total));
                 }
             };
         }
