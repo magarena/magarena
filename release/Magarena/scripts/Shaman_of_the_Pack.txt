@@ -7,6 +7,6 @@ type=Creature
 subtype=Elf,Shaman
 cost={1}{B}{G}
 pt=3/2
-ability=When SN enters the battlefield, target opponent loses life equal to the number of Elves you control.
 timing=main
+requires_groovy_code
 oracle=When Shaman of the Pack enters the battlefield, target opponent loses life equal to the number of Elves you control.
