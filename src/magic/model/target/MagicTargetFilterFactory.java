@@ -497,6 +497,19 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicPermanentFilterImpl TOKEN_YOU_CONTROL = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+            return target.isController(player) && target.isToken();
+        }
+    };
+
+    public static final MagicPermanentFilterImpl TOKEN = new MagicPermanentFilterImpl() {
+        @Override
+        public boolean accept(MagicSource source, MagicPlayer player, MagicPermanent target) {
+            return target.isToken();
+        }
+    };
+
     public static final MagicPermanentFilterImpl NONTOKEN_CREATURE_AN_OPPONENT_CONTROLS = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return !target.isController(player) && !target.isToken() && target.isCreature();
@@ -3302,6 +3315,9 @@ public class MagicTargetFilterFactory {
             if (prefix.equalsIgnoreCase(st.toString())) {
                 return permanent(st, control);
             }
+        }
+        if (prefix.equalsIgnoreCase("token")) {
+            return TOKEN;
         }
         throw new RuntimeException("unknown target filter \"" + arg + "\"");
     }
