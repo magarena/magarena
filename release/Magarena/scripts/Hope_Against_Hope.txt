@@ -6,8 +6,8 @@ type=Enchantment
 subtype=Aura
 cost={2}{W}
 ability=Enchant creature;\
-        Enchanted creature gets +1/+1 for each creature you control.;\
-        As long as enchanted creature is a Human, it has first strike.
+        Enchanted creature gets +1/+1 for each creature you control.
 timing=aura
-enchant=default,creature
+enchant=pump,creature
+requires_groovy_code
 oracle=Enchant creature\nEnchanted creature gets +1/+1 for each creature you control.\nAs long as enchanted creature is a Human, it has first strike.
