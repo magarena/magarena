@@ -6,7 +6,7 @@ type=Artifact
 subtype=Equipment
 cost={3}
 ability=Equipped creature gets +2/+2.;\
+        As long as equipped creature is legendary, equipped creature has hexproof.;\
         Equip {1}
 timing=equipment
-requires_groovy_code
 oracle=Equipped creature gets +2/+2.\nAs long as equipped creature is legendary, it has hexproof.\nEquip {1}
