@@ -118,7 +118,7 @@ public class ImageFrame {
         if (cropFile.exists()) {
             if (cardDef.isPlaneswalker()) {
                 BufferedImage crop = GraphicsUtils.scale(ImageFileIO.toImg(cropFile, MagicImages.MISSING_CARD), 320, 234);
-                if (OracleText.getPlaneswalkerAbilityCount(cardDef) == 3) {
+                if (OracleText.getPlaneswalkerAbilityCount(cardDef) <= 3) {
                     BufferedImage blend = ResourceManager.newFrame(ResourceManager.getPlaneswalkerImageBlend);
                     return Frame.getBlendedFrame(new BufferedImage(320, 234, BufferedImage.TYPE_INT_ARGB), blend, crop);
                 } else {
