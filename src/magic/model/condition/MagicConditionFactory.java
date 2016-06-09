@@ -115,11 +115,20 @@ public class MagicConditionFactory {
         };
     }
 
-    public static MagicCondition EnchantedIs(final MagicColor color) {
+    public static MagicCondition EnchantedIs(final MagicTargetFilter<MagicPermanent> filter) {
         return new MagicCondition() {
             public boolean accept(final MagicSource source) {
                 final MagicPermanent permanent = (MagicPermanent)source;
-                return permanent.getEnchantedPermanent().hasColor(color);
+                return filter.accept(source, source.getController(), permanent.getEnchantedPermanent());
+            }
+        };
+    }
+
+    public static MagicCondition SelfIs(final MagicTargetFilter<MagicPermanent> filter) {
+        return new MagicCondition() {
+            public boolean accept(final MagicSource source) {
+                final MagicPermanent permanent = (MagicPermanent)source;
+                return filter.accept(source, source.getController(), permanent);
             }
         };
     }

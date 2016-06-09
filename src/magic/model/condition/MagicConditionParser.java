@@ -6,11 +6,13 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import magic.model.ARG;
+import magic.model.MagicPermanent;
 import magic.model.MagicAbility;
 import magic.model.MagicColor;
 import magic.model.MagicCounterType;
 import magic.model.event.MagicMatchedCostEvent;
 import magic.model.target.MagicTargetFilterFactory;
+import magic.model.target.MagicTargetFilter;
 
 public enum MagicConditionParser {
 
@@ -205,19 +207,10 @@ public enum MagicConditionParser {
             return MagicCondition.IS_NOT_ENCHANTMENT;
         }
     },
-    IsSpirit("(SN is|it's) a Spirit") {
+    IsPermanent("(SN is|it's) a(n)? " + ARG.WORDRUN) {
         public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.IS_SPIRIT;
-        }
-    },
-    IsWarrior("(SN is|it's) a Warrior") {
-        public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.IS_WARRIOR;
-        }
-    },
-    EnchantedIsHuman("enchanted creature is a Human") {
-        public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.ENCHANTED_IS_HUMAN;
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(ARG.wordrun(arg));
+            return MagicConditionFactory.SelfIs(filter);
         }
     },
     EnchantedIsMountain("enchanted land is a basic Mountain") {
@@ -225,10 +218,16 @@ public enum MagicConditionParser {
             return MagicCondition.ENCHANTED_IS_BASIC_MOUNTAIN;
         }
     },
+    EnchantedIsA("enchanted creature is a(n)? " + ARG.WORDRUN) {
+        public MagicCondition toCondition(final Matcher arg) {
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(ARG.wordrun(arg));
+            return MagicConditionFactory.EnchantedIs(filter);
+        }
+    },
     EnchantedIsColor("enchanted creature is " + ARG.COLOR) {
         public MagicCondition toCondition(final Matcher arg) {
-            final MagicColor color = MagicColor.getColor(ARG.color(arg));
-            return MagicConditionFactory.EnchantedIs(color);
+            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(ARG.color(arg));
+            return MagicConditionFactory.EnchantedIs(filter);
         }
     },
     IsUntapped("(SN is|it's) untapped") {
