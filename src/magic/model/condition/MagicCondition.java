@@ -533,7 +533,14 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
     public static MagicCondition IS_NOT_ENCHANTMENT = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;
-            return permanent.isEnchantment() == false;
+            return !permanent.isEnchantment();
+        }
+    };
+
+    public static MagicCondition IS_LEGENDARY = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicPermanent permanent = (MagicPermanent)source;
+            return permanent.hasType(MagicType.Legendary);
         }
     };
 
