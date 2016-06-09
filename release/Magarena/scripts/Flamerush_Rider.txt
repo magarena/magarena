@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Warrior
 cost={4}{R}
 pt=3/3
-ability=Whenever SN attacks, put a token onto the battlefield tapped and attacking that's a copy of another target attacking creature. Exile the token at end of combat.;\
+ability=Whenever SN attacks, put a token that's a copy of another target attacking creature onto the battlefield tapped and attacking. Exile the token at end of combat.;\
         Dash {2}{R}{R}
 timing=main
 oracle=Whenever Flamerush Rider attacks, put a token onto the battlefield tapped and attacking that's a copy of another target attacking creature. Exile the token at end of combat.\nDash {2}{R}{R}
