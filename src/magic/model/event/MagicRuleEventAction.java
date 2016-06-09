@@ -1685,7 +1685,7 @@ public enum MagicRuleEventAction {
         }
     },
     PutTokenCopy(
-        "(you )?put a token (onto the battlefield )?that's a copy of " + ARG.PERMANENTS + "( onto the battlefield)?\\." + ARG.MODS,
+        "(you )?put a token onto the battlefield that's a copy of " + ARG.PERMANENTS + "\\." + ARG.MODS,
         MagicTiming.Token,
         "Token"
     ) {
@@ -1702,6 +1702,16 @@ public enum MagicRuleEventAction {
                     ));
                 }
             };
+        }
+    },
+    PutTokenCopyAlt(
+        "(you )?put a token that's a copy of " + ARG.PERMANENTS + " onto the battlefield" + ARG.MODS,
+        MagicTiming.Token,
+        "Token"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            return PutTokenCopy.getAction(matcher);
         }
     },
     PutTokens(
