@@ -54,6 +54,11 @@ public enum MagicPlayMod implements MagicPermanentAction {
             game.doAction(new AddTriggerAction(perm, AtEndOfTurnTrigger.Sacrifice));
         }
     },
+    DESTROY_AT_END_OF_TURN("Destroy (it|those tokens) at the beginning of the next end step") {
+        protected void doAction(final MagicGame game, final MagicPermanent perm) {
+            game.doAction(new AddTriggerAction(perm, AtEndOfTurnTrigger.Destroy));
+        }
+    },
     RETURN_AT_END_OF_TURN() {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             game.doAction(new AddTriggerAction(perm, AtEndOfTurnTrigger.Return));
