@@ -1,0 +1,249 @@
+Abundant Growth
+Ancestral Mask
+Animate Dead
+Annihilate
+Arcanis the Omnipotent
+Argothian Enchantress
+Armadillo Cloak
+Ashnod's Altar
+Avarax
+Aven Riftwatcher
+Balance
+Baleful Strix
+Ballynock Cohort
+Battle Squadron
+Beetleback Chief
+Benevolent Bodyguard
+Blightsoil Druid
+Blood Artist
+Bloodbraid Elf
+Bloodfell Caves
+Blossoming Sands
+Borderland Marauder
+Brago, King Eternal
+Braids, Cabal Minion
+Brainstorm
+Brawn
+Burning Vengeance
+Cabal Therapy
+Calciderm
+Call the Skybreaker
+Carbonize
+Carrion Feeder
+Centaur Chieftain
+Cephalid Sage
+Chain Lightning
+Chrome Mox
+Civic Wayfinder
+Coalition Honor Guard
+Commune with the Gods
+Control Magic
+Counterspell
+Crater Hellion
+Dack Fayden
+Daze
+Deadbridge Shaman
+Deathrite Shaman
+Deep Analysis
+Desperate Ravings
+Diminishing Returns
+Dismal Backwater
+Dragon Egg
+Dream Twist
+Dualcaster Mage
+Duplicant
+Duress
+Eight-and-a-Half-Tails
+Elephant Guide
+Elite Vanguard
+Elvish Vanguard
+Emmessi Tome
+Emperor Crocodile
+Enlightened Tutor
+Entomb
+Extract from Darkness
+Eyeblight's Ending
+Fact or Fiction
+Faith's Fetters
+Faithless Looting
+Fervent Cathar
+Field of Souls
+Firebolt
+Flame Jab
+Flame-Kin Zealot
+Flinthoof Boar
+Fog
+Force of Will
+Future Sight
+Gaea's Blessing
+Gamble
+Gaseous Form
+Ghitu Slinger
+Giant Solifuge
+Giant Tortoise
+Glacial Wall
+Glare of Subdual
+Glimmerpoint Stag
+Goblin Charbelcher
+Goblin Trenches
+Gravedigger
+Green Sun's Zenith
+Harmonize
+Havoc Demon
+Heritage Druid
+Honden of Cleansing Fire
+Honden of Infinite Rage
+Honden of Life's Web
+Honden of Night's Reach
+Honden of Seeing Winds
+Humble
+Hydroblast
+Hymn to Tourach
+Ichorid
+Imperious Perfect
+Inkwell Leviathan
+Innocent Blood
+Intangible Virtue
+Invigorate
+Isochron Scepter
+Jace, the Mind Sculptor
+Jareth, Leonine Titan
+Jetting Glasskite
+Juggernaut
+Jungle Hollow
+Karakas
+Karmic Guide
+Keldon Champion
+Keldon Marauders
+Kird Ape
+Kor Hookmaster
+Llanowar Elves
+Lys Alana Huntmaster
+Lys Alana Scarblade
+Maelstrom Wanderer
+Malicious Affliction
+Man-o'-War
+Mana Crypt
+Maze of Ith
+Memory Lapse
+Merfolk Looter
+Mesa Enchantress
+Millikin
+Mindless Automaton
+Mishra's Factory
+Mistral Charger
+Mogg Fanatic
+Mogg War Marshal
+Monk Idealist
+Mother of Runes
+Mystical Tutor
+Natural Order
+Nature's Claim
+Nausea
+Necropotence
+Nekrataal
+Nevinyrral's Disk
+Night's Whisper
+Nimble Mongoose
+Oona's Grace
+Orcish Oriflamme
+Pacifism
+Peregrine Drake
+Phantom Monster
+Phyrexian Gargantua
+Phyrexian Ingester
+Phyrexian Rager
+Pilgrim's Eye
+Plague Witch
+Price of Progress
+Prismatic Lens
+Prodigal Sorcerer
+Prowling Pangolin
+Pyroblast
+Pyrokinesis
+Quiet Speculation
+Raise the Alarm
+Rally the Peasants
+Rancor
+Reckless Charge
+Regal Force
+Relic of Progenitus
+Roar of the Wurm
+Roots
+Rorix Bladewing
+Rugged Highlands
+Scoured Barrens
+Screeching Skaab
+Seal of Cleansing
+Seal of Strength
+Second Thoughts
+Seismic Stomp
+Sengir Autocrat
+Sensei's Divining Top
+Sentinel Spider
+Serendib Efreet
+Serra Angel
+Shaman of the Pack
+Shardless Agent
+Shelter
+Shoreline Ranger
+Siege-Gang Commander
+Silent Departure
+Silvos, Rogue Elemental
+Sinkhole
+Skulking Ghost
+Sneak Attack
+Soulcatcher
+Sphinx of the Steel Wind
+Sprite Noble
+Squadron Hawk
+Stingscourger
+Stupefying Touch
+Sulfuric Vortex
+Swiftwater Cliffs
+Swords to Plowshares
+Sylvan Library
+Sylvan Might
+Thornweald Archer
+Thornwood Falls
+Thunderclap Wyvern
+Ticking Gnomes
+Tidal Wave
+Timberwatch Elf
+Tooth and Claw
+Torrent of Souls
+Toxic Deluge
+Tragic Slip
+Tranquil Cove
+Trygon Predator
+Twisted Abomination
+Undying Rage
+Unexpectedly Absent
+Urborg Uprising
+Vampiric Tutor
+Victimize
+Vindicate
+Visara the Dreadful
+Void
+Wake of Vultures
+Wakedancer
+Wall of Omens
+War Priest of Thune
+Warden of Evos Isle
+Wasteland
+Wee Dragonauts
+Welkin Guide
+Werebear
+Whitemane Lion
+Wildfire Emissary
+Wind-Scarred Crag
+Winter Orb
+Wirewood Symbiote
+Wonder
+Worldgorger Dragon
+Worn Powerstone
+Wrath of God
+Xantid Swarm
+Yavimaya Enchantress
+Young Pyromancer
+Zealous Persecution
