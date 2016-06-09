@@ -213,7 +213,7 @@ public enum MagicConditionParser {
             return MagicConditionFactory.SelfIs(filter);
         }
     },
-    EquippedIsA("equipped creature is a(n)? " + ARG.WORDRUN) {
+    EquippedIsA("equipped creature is( a| an)? " + ARG.WORDRUN) {
         public MagicCondition toCondition(final Matcher arg) {
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(ARG.wordrun(arg));
             return MagicConditionFactory.EquippedIs(filter);
