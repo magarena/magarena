@@ -6,7 +6,7 @@ type=Artifact
 subtype=Equipment
 cost={3}
 ability=Equipped creature gets +3/+0.;\
+        As long as equipped creature is a Human, equipped creature has lifelink.;\
         Equip {3}
 timing=equipment
-requires_groovy_code
 oracle=Equipped creature gets +3/+0.\nAs long as equipped creature is a Human, it has lifelink.\nEquip {3}
