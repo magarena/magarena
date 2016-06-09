@@ -23,7 +23,7 @@ import magic.model.event.MagicMatchedCostEvent;
 import magic.model.event.MagicPayManaCostEvent;
 
 public enum MagicPlayMod implements MagicPermanentAction {
-    EXILE_AT_END_OF_COMBAT("Exile that token at end of combat") {
+    EXILE_AT_END_OF_COMBAT("Exile (that|the) token at end of combat") {
         protected void doAction(final MagicGame game, final MagicPermanent perm) {
             game.doAction(new AddTriggerAction(perm, AtEndOfCombatTrigger.Exile));
         }
