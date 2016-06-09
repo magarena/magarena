@@ -1,0 +1,8 @@
+name=1/1 green Plant creature token
+token=Plant
+image=http://magiccards.info/extras/token/battle-for-zendikar/plant.jpg
+value=1
+type=Creature
+subtype=Plant
+color=g
+pt=1/1
