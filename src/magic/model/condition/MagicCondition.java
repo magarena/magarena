@@ -473,6 +473,20 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
         }
     };
 
+    public static MagicCondition ENCHANTED_IS_HUMAN = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicPermanent permanent = (MagicPermanent)source;
+            return permanent.getEnchantedPermanent().hasSubType(MagicSubType.Human);
+        }
+    };
+
+    public static MagicCondition ENCHANTED_IS_BASIC_MOUNTAIN = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicPermanent enchanted = ((MagicPermanent)source).getEnchantedPermanent();
+            return enchanted.hasType(MagicType.Basic) && enchanted.hasSubType(MagicSubType.Mountain);
+        }
+    };
+
     public static MagicCondition HAS_EXILED_CARD = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             final MagicPermanent permanent = (MagicPermanent)source;

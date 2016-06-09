@@ -115,6 +115,15 @@ public class MagicConditionFactory {
         };
     }
 
+    public static MagicCondition EnchantedIs(final MagicColor color) {
+        return new MagicCondition() {
+            public boolean accept(final MagicSource source) {
+                final MagicPermanent permanent = (MagicPermanent)source;
+                return permanent.getEnchantedPermanent().hasColor(color);
+            }
+        };
+    }
+
     public static MagicCondition YouLifeAtLeast(final int n) {
         return new MagicCondition() {
             public boolean accept(final MagicSource source) {

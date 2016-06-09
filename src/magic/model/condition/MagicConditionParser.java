@@ -215,6 +215,22 @@ public enum MagicConditionParser {
             return MagicCondition.IS_WARRIOR;
         }
     },
+    EnchantedIsHuman("enchanted creature is a Human") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.ENCHANTED_IS_HUMAN;
+        }
+    },
+    EnchantedIsMountain("enchanted land is a basic Mountain") {
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.ENCHANTED_IS_BASIC_MOUNTAIN;
+        }
+    },
+    EnchantedIsColor("enchanted creature is " + ARG.COLOR) {
+        public MagicCondition toCondition(final Matcher arg) {
+            final MagicColor color = MagicColor.getColor(ARG.color(arg));
+            return MagicConditionFactory.EnchantedIs(color);
+        }
+    },
     IsUntapped("(SN is|it's) untapped") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.UNTAPPED_CONDITION;
