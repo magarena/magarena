@@ -200,9 +200,6 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice NEG_TARGET_ATTACKING_CREATURE =
         MagicTargetChoice.Negative("target attacking creature");
 
-    public static final MagicTargetChoice POS_TARGET_ATTACKING_CREATURE =
-        MagicTargetChoice.Positive("target attacking creature");
-
     public static final MagicTargetChoice NEG_WHITE_OR_BLUE_CREATURE =
         MagicTargetChoice.Negative("target white or blue creature");
 
@@ -283,9 +280,6 @@ public class MagicTargetChoice extends MagicChoice {
 
     public static final MagicTargetChoice A_CREATURE_CARD_FROM_HAND =
         new MagicTargetChoice("a creature card from your hand");
-
-    public static final MagicTargetChoice A_GREEN_CREATURE_CARD_FROM_HAND =
-        new MagicTargetChoice("a green creature card from your hand");
 
     public static final MagicTargetChoice A_BASIC_LAND_CARD_FROM_LIBRARY =
         new MagicTargetChoice("a basic land card from your library");
