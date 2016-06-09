@@ -4,6 +4,7 @@ value=2.500
 rarity=R
 type=Instant
 cost={2}{G}{G}
-effect=For each token you control, put a token onto the battlefield that's a copy of that permanent.
-timing=removal
+ability=Cast SN with AI only if you control a token.
+timing=token
+requires_groovy_code
 oracle=For each token you control, put a token onto the battlefield that's a copy of that permanent.
