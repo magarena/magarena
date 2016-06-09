@@ -2157,7 +2157,17 @@ public class MagicTargetFilterFactory {
 
     public static final MagicCardFilterImpl NONCREATURE_CARD_FROM_HAND = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
-            return target.hasType(MagicType.Creature) == false;
+            return !target.hasType(MagicType.Creature);
+        }
+
+        public boolean acceptType(final MagicTargetType targetType) {
+            return targetType == MagicTargetType.Hand;
+        }
+    };
+
+    public static final MagicCardFilterImpl NONARTIFACT_NONLAND_CARD_FROM_HAND = new MagicCardFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
+            return !target.hasType(MagicType.Artifact) && !target.hasType(MagicType.Land);
         }
 
         public boolean acceptType(final MagicTargetType targetType) {
@@ -2667,6 +2677,7 @@ public class MagicTargetFilterFactory {
         single.put("blue or red creature card from your hand", BLUE_OR_RED_CREATURE_CARD_FROM_HAND);
         single.put("multicolored creature card from your hand", MULTICOLORED_CREATURE_CARD_FROM_HAND);
         single.put("noncreature card from your hand", NONCREATURE_CARD_FROM_HAND);
+        single.put("nonartifact, nonland card from your hand", NONARTIFACT_NONLAND_CARD_FROM_HAND);
 
         // <color|type|subtype> card from your library
         single.put("card from your library", CARD_FROM_LIBRARY);
