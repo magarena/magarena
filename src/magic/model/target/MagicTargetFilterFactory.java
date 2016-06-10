@@ -964,6 +964,13 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicPermanentFilterImpl VAMPIRE_OR_ZOMBIE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+            return target.hasSubType(MagicSubType.Vampire) ||
+                   target.hasSubType(MagicSubType.Zombie);
+        }
+    };
+
     public static final MagicPermanentFilterImpl NONVAMPIRE_NONWEREWOLF_NONZOMBIE_CREATURE = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
@@ -3009,6 +3016,7 @@ public class MagicTargetFilterFactory {
         single.put("Goblin or Shaman", GOBLIN_OR_SHAMAN);
         single.put("Treefolk or Warrior", TREEFOLK_OR_WARRIOR);
         single.put("token", TOKEN);
+        single.put("Vampire or Zombie", VAMPIRE_OR_ZOMBIE);
 
         // <color|type|subtype>
         single.put("creature you own", CREATURE_YOU_OWN);
