@@ -3008,6 +3008,7 @@ public class MagicTargetFilterFactory {
         single.put("nonartifact permanent", NONARTIFACT_PERMANENT);
         single.put("Goblin or Shaman", GOBLIN_OR_SHAMAN);
         single.put("Treefolk or Warrior", TREEFOLK_OR_WARRIOR);
+        single.put("token", TOKEN);
 
         // <color|type|subtype>
         single.put("creature you own", CREATURE_YOU_OWN);
