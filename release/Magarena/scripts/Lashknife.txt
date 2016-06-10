@@ -5,8 +5,9 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{W}
-ability=Enchanted creature has first strike.
+ability=If you control a Plains, you may tap an untapped creature you control rather than pay SN's mana cost.;\
+        Enchant creature;\
+        Enchanted creature has first strike.
 enchant=first strike,pos creature
 timing=aura
-requires_groovy_code=Ramosian Rally
 oracle=If you control a Plains, you may tap an untapped creature you control rather than pay Lashknife's mana cost.\nEnchant creature\nEnchanted creature has first strike.

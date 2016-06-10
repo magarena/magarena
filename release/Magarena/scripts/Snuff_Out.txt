@@ -4,7 +4,7 @@ value=4.483
 rarity=C
 type=Instant
 cost={3}{B}
+ability=If you control a Swamp, you may pay 4 life rather than pay SN's mana cost.
 effect=Destroy target nonblack creature. It can't be regenerated.
 timing=removal
-requires_groovy_code
 oracle=If you control a Swamp, you may pay 4 life rather than pay Snuff Out's mana cost.\nDestroy target nonblack creature. It can't be regenerated.
