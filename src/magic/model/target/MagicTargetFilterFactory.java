@@ -3334,9 +3334,6 @@ public class MagicTargetFilterFactory {
                 return permanent(st, control);
             }
         }
-        if (prefix.equalsIgnoreCase("token")) {
-            return TOKEN;
-        }
         throw new RuntimeException("unknown target filter \"" + arg + "\"");
     }
 
