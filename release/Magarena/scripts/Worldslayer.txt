@@ -5,7 +5,7 @@ rarity=R
 type=Artifact
 subtype=Equipment
 cost={5}
-ability=Whenever equipped creature deals combat damage to a player, destroy all permanents other than SN.;\
+ability=Whenever equipped creature deals combat damage to a player, destroy all other permanents.;\
         Equip {5}
 timing=equipment
 oracle=Whenever equipped creature deals combat damage to a player, destroy all permanents other than Worldslayer.\nEquip {5}
