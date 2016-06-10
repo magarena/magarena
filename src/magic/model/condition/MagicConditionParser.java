@@ -224,15 +224,9 @@ public enum MagicConditionParser {
             return MagicCondition.ENCHANTED_IS_BASIC_MOUNTAIN;
         }
     },
-    EnchantedIsA("enchanted creature is a(n)? " + ARG.WORDRUN) {
+    EnchantedIs("enchanted creature is( a| an)? " + ARG.WORDRUN) {
         public MagicCondition toCondition(final Matcher arg) {
             final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(ARG.wordrun(arg));
-            return MagicConditionFactory.EnchantedIs(filter);
-        }
-    },
-    EnchantedIsColor("enchanted creature is " + ARG.COLOR) {
-        public MagicCondition toCondition(final Matcher arg) {
-            final MagicTargetFilter<MagicPermanent> filter = MagicTargetFilterFactory.Permanent(ARG.color(arg));
             return MagicConditionFactory.EnchantedIs(filter);
         }
     },
