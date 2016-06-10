@@ -1,0 +1,12 @@
+name=Chandra, Flamecaller
+image=http://magiccards.info/scans/en/ogw/104.jpg
+image_updated=2016-02-29
+value=2.500
+rarity=M
+type=Planeswalker
+subtype=Chandra
+cost={4}{R}{R}
+loyalty=4
+timing=main
+requires_groovy_code
+oracle=+1: Put two 3/1 red Elemental creature tokens with haste onto the battlefield. Exile them at the beginning of the next end step.\n0: Discard all the cards in your hand, then draw that many cards plus one.\n−X: Chandra, Flamecaller deals X damage to each creature.
