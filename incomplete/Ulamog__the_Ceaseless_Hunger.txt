@@ -1,0 +1,15 @@
+name=Ulamog, the Ceaseless Hunger
+image=http://magiccards.info/scans/en/bfz/15.jpg
+image_updated=2015-11-08
+value=2.500
+rarity=M
+type=Legendary,Creature
+subtype=Eldrazi
+cost={10}
+pt=10/10
+ability=When you cast SN, exile target permanent.;\
+When you cast SN, exile target permanent.;\
+Indestructible.
+timing=main
+requires_groovy_code
+oracle=When you cast Ulamog, the Ceaseless Hunger, exile two target permanents.\nIndestructible\nWhenever Ulamog attacks, defending player exiles the top twenty cards of his or her library.
