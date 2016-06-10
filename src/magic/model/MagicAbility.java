@@ -617,6 +617,14 @@ public enum MagicAbility {
             card.add(MagicHandCastActivation.create(cardDef, arg, "Alt"));
         }
     },
+    AlternateCostIf("If " + ARG.COND + ", you may " + ARG.ANY + " rather than pay SN's mana cost\\.", 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher matcher) {
+            final MagicCondition condition = MagicConditionParser.build(ARG.cond(matcher));
+            final String arg = matcher.group("any").replace(" and ",", ");
+            final MagicCardDefinition cardDef = (MagicCardDefinition)card;
+            card.add(MagicHandCastActivation.create(cardDef, condition, arg, "Alt"));
+        }
+    },
     Awaken("awaken " + ARG.NUMBER + "—" + ARG.COST, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final MagicCardDefinition cardDef = (MagicCardDefinition)card;

@@ -114,10 +114,18 @@ public class MagicHandCastActivation extends MagicActivation<MagicCard> implemen
     }
 
     public static final MagicHandCastActivation create(final MagicCardDefinition cardDef, final String costs, final String name) {
+        return create(cardDef, CARD_CONDITION, costs, name);
+    }
+
+    public static final MagicHandCastActivation create(final MagicCardDefinition cardDef, final MagicCondition cond, final String costs, final String name) {
+        return create(cardDef, new MagicCondition[]{cond, MagicCondition.CARD_CONDITION}, costs, name);
+    }
+
+    public static final MagicHandCastActivation create(final MagicCardDefinition cardDef, final MagicCondition[] conds, final String costs, final String name) {
         final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.buildCast(costs);
         assert matchedCostEvents.size() > 0;
 
-        return new MagicHandCastActivation(CARD_CONDITION, cardDef.getActivationHints(), name) {
+        return new MagicHandCastActivation(conds, cardDef.getActivationHints(), name) {
             @Override
             public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
                 final List<MagicEvent> costEvents = new LinkedList<MagicEvent>();
