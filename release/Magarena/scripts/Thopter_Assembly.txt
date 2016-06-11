@@ -7,6 +7,6 @@ subtype=Thopter
 cost={6}
 pt=5/5
 ability=Flying;\
-        At the beginning of your upkeep, if you control no Thopters other than SN, return SN to its owner's hand and put five 1/1 colorless Thopter artifact creature tokens with flying onto the battlefield.
+        At the beginning of your upkeep, if you control no other Thopters, return SN to its owner's hand~and put five 1/1 colorless Thopter artifact creature tokens with flying onto the battlefield.
 timing=main
 oracle=Flying\nAt the beginning of your upkeep, if you control no Thopters other than Thopter Assembly, return Thopter Assembly to its owner's hand and put five 1/1 colorless Thopter artifact creature tokens with flying onto the battlefield.
