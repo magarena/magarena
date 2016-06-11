@@ -115,7 +115,7 @@ public enum MagicCostEvent {
             return new MagicExileTopLibraryEvent(source, ARG.amount(arg));
         }
     },
-    ExileCards("Exile " + ARG.AMOUNT + " " + ARG.ANY) {
+    ExileCards("Exile " + ARG.AMOUNT + " (?<any>.*card.*)") {
         public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
             final int amt = ARG.amount(arg);
             final String chosen = MagicTargetFilterFactory.toSingular(ARG.any(arg));
@@ -131,6 +131,21 @@ public enum MagicCostEvent {
                 amt,
                 MagicChainEventFactory.ExileCard
             );
+        }
+    },
+    ExileMultiple("Exile ((?<another>another )|" + ARG.AMOUNT + " )?" + ARG.ANY) {
+        public MagicEvent toEvent(final Matcher arg, final MagicSource source) {
+            final int amt = ARG.amount(arg);
+            final String chosen = MagicTargetFilterFactory.toSingular(ARG.any(arg));
+            final MagicTargetFilter<MagicPermanent> regular = MagicTargetFilterFactory.Permanent(chosen);
+            final MagicTargetFilter<MagicPermanent> filter = arg.group("another") != null ?
+                new MagicOtherPermanentTargetFilter(regular, (MagicPermanent)source) :
+                regular;
+            final MagicTargetChoice choice = new MagicTargetChoice(
+                filter,
+                ("aeiou".indexOf(chosen.charAt(0)) >= 0 ? "an " : "a ") + chosen
+            );
+            return new MagicRepeatedPermanentsEvent(source, choice, amt, MagicChainEventFactory.ExilePerm);
         }
     },
     TapSelf("\\{T\\}") {

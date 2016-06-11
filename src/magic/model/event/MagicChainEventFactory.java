@@ -39,4 +39,10 @@ public abstract class MagicChainEventFactory {
             return new MagicExileCardEvent(source, tchoice);
         }
     };
+
+    public static final MagicChainEventFactory ExilePerm = new MagicChainEventFactory() {
+        public MagicEvent getEvent(final MagicSource source, final MagicTargetChoice tchoice) {
+            return new MagicExileChosenPermanentEvent(source, tchoice);
+        }
+    };
 }
