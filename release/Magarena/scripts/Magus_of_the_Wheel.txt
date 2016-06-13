@@ -7,6 +7,6 @@ type=Creature
 subtype=Human,Wizard
 cost={2}{R}
 pt=3/3
-ability={1}{R}, {T}, Sacrifice SN: Each player discards his or her hand, then draws seven cards.
+ability={1}{R}, {T}, Sacrifice SN: Each player discards his or her hand,~then each player draws seven cards.
 timing=main
 oracle={1}{R}, {T}, Sacrifice Magus of the Wheel: Each player discards his or her hand, then draws seven cards.
