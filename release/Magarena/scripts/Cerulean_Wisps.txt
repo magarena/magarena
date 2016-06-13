@@ -4,6 +4,6 @@ value=2.976
 rarity=C
 type=Instant
 cost={U}
+effect=Target creature becomes blue until end of turn.~Untap *that creature*.~Draw a card.
 timing=tapping
-requires_groovy_code
 oracle=Target creature becomes blue until end of turn. Untap that creature.\nDraw a card.
