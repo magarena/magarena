@@ -15,7 +15,7 @@ def action = {
                 cardOnStack,
                 TARGET_PLAYER,
                 this,
-                "Any player may have SN deal 6 damage to him or her. If no-one does, " +
+                "Any player may have SN deal 6 damage to him or her. If no one does, " +
                 "target player\$ puts the top six cards of his or her library into his or her graveyard."
             );
         }
