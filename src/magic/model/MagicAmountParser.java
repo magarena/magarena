@@ -18,6 +18,12 @@ public enum MagicAmountParser {
             return MagicAmountFactory.Domain;
         }
     },
+    Devotion("your devotion to " + ARG.COLOR) {
+        public MagicAmount toAmount(final Matcher arg) {
+            final MagicColor color = MagicColor.getColor(ARG.color(arg));
+            return MagicAmountFactory.Devotion(color);
+        }
+    },
     Equipment("Equipment attached to (it|SN)") {
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.Equipment;
