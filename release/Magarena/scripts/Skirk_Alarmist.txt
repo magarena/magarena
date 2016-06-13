@@ -7,6 +7,6 @@ subtype=Human,Wizard
 cost={1}{R}
 pt=1/2
 ability=Haste;\
-        {T}: Turn target face-down creature you control face up. At the beginning of the next end step, sacrifice it.
+        {T}: Turn target face-down creature you control face up.~Sacrifice *it* at the beginning of the next end step.
 timing=fmain
 oracle=Haste\n{T}: Turn target face-down creature you control face up. At the beginning of the next end step, sacrifice it.
