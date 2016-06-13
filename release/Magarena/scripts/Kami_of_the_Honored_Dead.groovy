@@ -8,7 +8,7 @@
                     permanent,
                     amount,
                     this,
-                    "PN gains " + amount + " life."
+                    "PN gains RN life."
                 ) :
                 MagicEvent.NONE;
         }
