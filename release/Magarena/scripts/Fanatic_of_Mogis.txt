@@ -6,6 +6,6 @@ type=Creature
 subtype=Minotaur,Shaman
 cost={3}{R}
 pt=4/2
+ability=When SN enters the battlefield, SN deals damage to each opponent equal to your devotion to red.
 timing=main
-requires_groovy_code
 oracle=When Fanatic of Mogis enters the battlefield, it deals damage to each opponent equal to your devotion to red.

@@ -5,7 +5,8 @@ rarity=U
 type=Enchantment
 subtype=Aura
 cost={1}{R}
+ability=Enchant creature;\
+        Whenever enchanted creature attacks, enchanted creature gets +X/+0 until end of turn, where X is your devotion to red.
 enchant=pump,pos creature
 timing=main
-requires_groovy_code
 oracle=Enchant creature\nWhenever enchanted creature attacks, it gets +X/+0 until end of turn, where X is your devotion to red.

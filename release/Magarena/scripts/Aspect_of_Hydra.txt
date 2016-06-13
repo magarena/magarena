@@ -4,6 +4,6 @@ value=3.800
 rarity=C
 type=Instant
 cost={G}
+effect=Target creature gets +X/+X until end of turn, where X is your devotion to green.
 timing=pump
-requires_groovy_code
 oracle=Target creature gets +X/+X until end of turn, where X is your devotion to green.
