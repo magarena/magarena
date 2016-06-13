@@ -7,7 +7,7 @@
                     permanent,
                     damage.getDealtAmount(),
                     this,
-                    "PN gains ${damage.getDealtAmount()} life."
+                    "PN gains RN life."
                 ):
                 MagicEvent.NONE;
         }
