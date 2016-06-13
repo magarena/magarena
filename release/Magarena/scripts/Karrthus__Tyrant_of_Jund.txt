@@ -7,7 +7,7 @@ subtype=Dragon
 cost={4}{B}{R}{G}
 pt=7/7
 ability=Flying, haste;\
-        When SN enters the battlefield, gain control of all Dragons, then untap all Dragons.;\
+        When SN enters the battlefield, gain control of all Dragons,~then untap all Dragons.;\
         Other Dragon creatures you control have haste.
 timing=main
 oracle=Flying, haste\nWhen Karrthus, Tyrant of Jund enters the battlefield, gain control of all Dragons, then untap all Dragons.\nOther Dragon creatures you control have haste.
