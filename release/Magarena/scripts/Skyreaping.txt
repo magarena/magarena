@@ -6,7 +6,6 @@ type=Sorcery
 cost={1}{G}
 ability=Cast SN with AI only if an opponent controls a creature with flying.;\
         Cast SN with AI only if you have devotion to green.
-
 effect=SN deals damage to each creature with flying equal to your devotion to green.
 timing=main
 oracle=Skyreaping deals damage to each creature with flying equal to your devotion to green.
