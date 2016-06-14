@@ -5,6 +5,7 @@ value=2.500
 rarity=R
 type=Artifact
 cost={4}
-ability=When SN enters the battlefield, exile all creatures with power 5 or greater until SN leaves the battlefield.
+ability=When SN enters the battlefield, exile all creatures with power 5 or greater until SN leaves the battlefield.;\
+        Cast SN with AI only if an opponent controls a creature with power 5 or greater.
 timing=artifact
 oracle=When Aligned Hedron Network enters the battlefield, exile all creatures with power 5 or greater until Aligned Hedron Network leaves the battlefield.
