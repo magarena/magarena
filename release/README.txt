@@ -73,6 +73,49 @@ Thank you for your support and have fun!
 
 Release 1.74 (June 25, 2016)
 ============
+lodici
+melvin
+muppet
+ShawnieBoy
+
+- add Korean to card text combo in download images dialog.
+
+- update card images to SOI release
+
+- add Eternal Masters to sets
+
+- added the following to the card script:
+    * condition: during combat after blockers are declared
+    * condition: during combat before blockers are declared
+    * condition: enchanted creature is <filter>
+    * condition: equipped creature is <filter>
+    * cost: Exile <amount> <permanents>
+    * effect: You may <cost>. If you do, <effect>.
+    * effect: Remove <permanents> from combat.
+    * effect: Exile SN. (move SN to the exile zone when it resolves)
+    * effect: Return SN to its owner's hand. (move SN to its owner's hand when it resolves)
+    * effect: Put a token that's a copy of <permanent> onto the battlefield.
+    * effect: <permanents> get (+|-)(X|0)/(+|-)(X|0) until end of turn, where X is <count>.
+    * effect: (SN|RN) assigns no combat damage this turn.
+    * effect: Look at the top <amount> cards of your library. You may reveal a <card> from among them and put it into your hand. Put the rest on the bottom of your library in any order.
+    * effect: Look at the top <amount> cards of your library. Put <amount> of them into your hand and the rest into your graveyard.
+    * effect: Look at the top <amount> cards of your library. Put <amount> of them in your hand and the rest on the bottom of your library in any order.
+    * effect: Reveal the top <amount> cards of your library. You may put a <card> from among them into your hand. Put the rest into your graveyard.
+    * effect: Transform <permanents>.
+    * effect: Exile <permanents> until SN leaves the battlefield.
+    * ability: Equip <cost> to a <filter>, Equip {2} creature with power 3 or greater
+    * ability: <permanenst> get (+|-)(X|0)/(+|-)(X|0), where X is <count>.
+    * ability: (+|-)<N>: <effect> (loyalty ability)
+    * ability: If <condition>, you may <cost> rather than pay SN's mana cost.
+    * ability: When this creature transforms into SN, <effect>.
+
+- fixed the following bugs:
+    * Sigil of Valor counts the equipped creature (issue #773)
+    * remove card reveal from Vampiric Tutor
+    * change Draw to use an event to ensure correct order of events as a rider, fixes #205
+    * deck filter only matching lower case card name, should be case-insensitive
+
+- added the following cards:
 
 Release 1.73 (May 28, 2016)
 ============
