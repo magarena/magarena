@@ -5,6 +5,7 @@ value=2.500
 rarity=R
 type=Enchantment
 cost={1}{W}{W}
-ability=When SN enters the battlefield, for each opponent, exile up to one target nonland permanent that player controls until SN leaves the battlefield.
+ability=When SN enters the battlefield, you may exile target nonland permanent an opponent controls until SN leaves the battlefield.;\
+        Cast SN with AI only if an opponent controls a nonland permanent.
 timing=enchantment
 oracle=When Grasp of Fate enters the battlefield, for each opponent, exile up to one target nonland permanent that player controls until Grasp of Fate leaves the battlefield.
