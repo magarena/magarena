@@ -4,6 +4,7 @@ import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
 import magic.model.mstatic.MagicStatic;
+import magic.model.trigger.MagicTriggerType;
 
 import java.util.Collections;
 import java.util.Collection;
@@ -23,15 +24,20 @@ public class TransformAction extends MagicAction {
         if (permanent.isValid() && permanent.isDoubleFaced()) {
             oldStatics = permanent.getStatics();
 
-            if (permanent.isTransformed()) {
-                game.doAction(ChangeStateAction.Clear(permanent, MagicPermanentState.Transformed));
-            } else {
-                game.doAction(ChangeStateAction.Set(permanent, MagicPermanentState.Transformed));
-            }
+            final ChangeStateAction act = permanent.isTransformed() ?
+                ChangeStateAction.Clear(permanent, MagicPermanentState.Transformed) :
+                ChangeStateAction.Set(permanent, MagicPermanentState.Transformed);
 
+            game.doAction(act);
+
+            // update static abilities
             newStatics = permanent.getStatics();
             game.removeStatics(permanent, oldStatics);
             game.addStatics(permanent, newStatics);
+
+            // update and execute transform triggers
+            game.update();
+            game.executeTrigger(MagicTriggerType.WhenBecomesState, act);
         }
     }
 
