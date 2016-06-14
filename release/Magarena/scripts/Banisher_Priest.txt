@@ -6,6 +6,6 @@ type=Creature
 subtype=Human,Cleric
 cost={1}{W}{W}
 pt=2/2
+ability=When SN enters the battlefield, exile target creature an opponent controls until SN leaves the battlefield.
 timing=main
-requires_groovy_code
 oracle=When Banisher Priest enters the battlefield, exile target creature an opponent controls until Banisher Priest leaves the battlefield.
