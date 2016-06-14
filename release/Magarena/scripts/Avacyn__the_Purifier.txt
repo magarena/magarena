@@ -7,7 +7,7 @@ subtype=Angel
 color=r
 pt=6/5
 ability=Flying;\
-        When this creature transforms into SN, it deals 3 damage to each other creature and each opponent.
+        When this creature transforms into SN, SN deals 3 damage to each other creature and each opponent.
 transform=Archangel Avacyn
 timing=main
 hidden
