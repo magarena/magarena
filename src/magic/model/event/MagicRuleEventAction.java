@@ -294,6 +294,26 @@ public enum MagicRuleEventAction {
             }
         }
     },
+    ExilePermanentsUntilLeaves(
+        "exile " + ARG.PERMANENTS + " until SN leaves the battlefield",
+        MagicTargetHint.Negative,
+        MagicExileTargetPicker.create(),
+        MagicTiming.Removal,
+        "Exile"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return (game, event) -> {
+                for (final MagicPermanent perm : ARG.permanents(event, matcher, filter)) {
+                    if (event.getPermanent().isValid()) {
+                        game.doAction(new ExileLinkAction(event.getPermanent(), perm));
+                        game.doAction(new AddTriggerAction(event.getPermanent(), ThisLeavesBattlefieldTrigger.ExileUntilLeaves));
+                    }
+                }
+            };
+        }
+    },
     ExilePermanents(
         "exile " + ARG.PERMANENTS,
         MagicTargetHint.Negative,
