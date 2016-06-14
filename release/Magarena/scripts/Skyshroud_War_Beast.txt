@@ -7,7 +7,6 @@ subtype=Beast
 cost={1}{G}
 pt=*/*
 ability=Trample;\
-        As SN enters the battlefield, choose an opponent.
+        SN's power and toughness are each equal to the number of nonbasic lands your opponents control.
 timing=main
-requires_groovy_code
 oracle=Trample\nAs Skyshroud War Beast enters the battlefield, choose an opponent.\nSkyshroud War Beast's power and toughness are each equal to the number of nonbasic lands the chosen player controls.
