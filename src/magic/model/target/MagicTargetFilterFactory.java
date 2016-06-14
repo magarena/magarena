@@ -1833,6 +1833,12 @@ public class MagicTargetFilterFactory {
         3
     );
 
+    public static final MagicPermanentFilterImpl CREATURE_CMC_3_LESS_AN_OPPONENT_CONTROLS = new MagicCMCPermanentFilter(
+        CREATURE_YOUR_OPPONENT_CONTROLS,
+        Operator.LESS_THAN_OR_EQUAL,
+        3
+    );
+
     public static final MagicCardFilterImpl CARD_FROM_OPPONENTS_GRAVEYARD =
         card().from(MagicTargetType.OpponentsGraveyard);
 
@@ -2819,6 +2825,7 @@ public class MagicTargetFilterFactory {
         single.put("face-down creature an opponent controls", FACE_DOWN_CREATURE_AN_OPPONENT_CONTROLS);
         single.put("tapped creature an opponent controls", TAPPED_CREATURE_AN_OPPONENT_CONTROLS);
         single.put("creature or enchantment an opponent controls", CREATURE_OR_ENCHANTMENT_AN_OPPONENT_CONTROLS);
+        single.put("creature with converted mana cost 3 or less an opponent controls", CREATURE_CMC_3_LESS_AN_OPPONENT_CONTROLS);
 
         // <color|type|subtype> creature
         single.put("1/1 creature", new MagicPTTargetFilter(CREATURE, Operator.EQUAL, 1, Operator.EQUAL, 1));

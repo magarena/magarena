@@ -4,6 +4,7 @@ value=2.500
 rarity=U
 type=Enchantment
 cost={1}{W}
-ability=When SN enters the battlefield, exile target creature with converted mana cost 3 or less an opponent controls until SN leaves the battlefield.
+ability=When SN enters the battlefield, exile target creature with converted mana cost 3 or less an opponent controls until SN leaves the battlefield.;\
+        Cast SN with AI only if an opponent controls a creature with converted mana cost 3 or less.
 timing=enchantment
 oracle=When Silkwrap enters the battlefield, exile target creature with converted mana cost 3 or less an opponent controls until Silkwrap leaves the battlefield.
