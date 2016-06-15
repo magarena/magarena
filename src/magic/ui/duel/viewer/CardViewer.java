@@ -31,6 +31,8 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
     private final Dimension IMAGE_SIZE = getImageSize();
 
     private Image thisImage;
+    private Image gsImage;
+    private boolean isMouseOver = false;
     private MagicCardDefinition thisCard = MagicCardDefinition.UNKNOWN;
     private boolean isSwitchedAspect = false;
     private CardImageWorker worker;
@@ -75,6 +77,13 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
         return lbl;
     }
 
+    private void showColorImageIfGreyscale(boolean b) {
+        isMouseOver = b;
+        if (thisCard.isInvalid()) {
+            repaint();
+        }
+    }
+    
     private void setTransformCardListener() {
         addMouseListener(new MouseAdapter() {
             @Override
@@ -92,12 +101,14 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
                 } else {
                     setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
                 }
+                showColorImageIfGreyscale(true);
             }
             @Override
             public void mouseExited(MouseEvent e) {
                 if (isSwitchedAspect) {
                     switchCardAspect();
                 }
+                showColorImageIfGreyscale(false);
             }
         });
     }
@@ -156,7 +167,10 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
             throbber.setVisible(true);
             cardLabel.setVisible(true);
         } else {
-            this.thisImage = aImage;
+            thisImage = aImage;
+            gsImage = thisCard.isInvalid() && aImage != MagicImages.getMissingCardImage()
+                    ? GraphicsUtils.getGreyScaleImage(aImage)
+                    : null;
             isImagePending = false;
             throbber.setVisible(false);
             cardLabel.setVisible(false);
@@ -167,7 +181,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
     @Override
     public void paintComponent(final Graphics g) {
         if (thisImage != null) {
-            g.drawImage(thisImage, 0, 0, null);
+            g.drawImage(gsImage != null && !isMouseOver ? gsImage : thisImage, 0, 0, null);
         }
         if (isImagePending) {
             super.paintComponent(g);
@@ -197,11 +211,7 @@ public class CardViewer extends JPanel implements ICardSelectionListener {
             image = GraphicsUtils.scale(image, prefSize.width, prefSize.height);
         }
 
-        if (aCard.isInvalid() && image != MagicImages.getMissingCardImage()) {
-            return GraphicsUtils.getGreyScaleImage(image);
-        } else {
-            return image;
-        }
+        return image;
     }
 
     private Timer getCooldownTimer() {
