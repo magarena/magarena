@@ -543,13 +543,6 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
         }
     };
 
-    public static MagicCondition IS_LEGENDARY = new MagicCondition() {
-        public boolean accept(final MagicSource source) {
-            final MagicPermanent permanent = (MagicPermanent)source;
-            return permanent.hasType(MagicType.Legendary);
-        }
-    };
-
     public static MagicCondition NO_UNTAPPED_LANDS_CONDITION = new MagicCondition() {
         public boolean accept(final MagicSource source) {
             return source.getController().getNrOfPermanents(MagicTargetFilterFactory.UNTAPPED_LAND_YOU_CONTROL) == 0;
