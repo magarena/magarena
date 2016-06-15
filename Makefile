@@ -578,6 +578,12 @@ check_spells:
 	 grep requires_groovy_code -L $$(grep effect -L $$(grep "^type.*Instant" -lr release/Magarena/scripts)) | ${NO_OUTPUT}
 	 grep requires_groovy_code -L $$(grep effect -L $$(grep "^type.*Sorcery" -lr release/Magarena/scripts)) | ${NO_OUTPUT}
 
+check_unused_condition:
+	grep "public static" -r src/magic/model/condition/MagicCondition.java | grep -o "Condition [A-Z]\+[^ =]*" | sed 's/Condition //' | sort | uniq > declared-conds
+	for i in `cat declared-conds`; do grep $$i -r src release/Magarena/scripts | grep -v "public static" | grep -o $$i; done | sort | uniq > used-conds
+	diff declared-conds used-conds | ${NO_OUTPUT}
+	rm declared-conds used-conds
+
 check_unused_filter:
 	grep "Impl [A-Z]\+[^ =]*" src/magic/model/target/MagicTargetFilterFactory.java -o | sed 's/Impl //' | sort | uniq > declared-filters
 	for i in `cat declared-filters`; do grep $$i -r src release/Magarena/scripts | grep -v "public static final" | grep -o $$i; done | sort | uniq > used-filters
