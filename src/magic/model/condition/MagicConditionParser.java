@@ -399,7 +399,7 @@ public enum MagicConditionParser {
     },
     DuringCombatBeforeBlockers("during combat before blockers are declared") {
         public MagicCondition toCondition(final Matcher arg) {
-            return MagicCondition.DURING_COMBAT_AFTER_BLOCKERS;
+            return MagicCondition.DURING_COMBAT_BEFORE_BLOCKERS;
         }
     },
     YourTurn("during your turn") {
