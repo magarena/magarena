@@ -101,9 +101,6 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice TARGET_NONLAND_PERMANENT =
         new MagicTargetChoice("target nonland permanent");
 
-    public static final MagicTargetChoice TARGET_NONLAND_PERMANENT_YOUR_OPPONENT_CONTROLS =
-        new MagicTargetChoice("target nonland permanent an opponent controls");
-
     public static final MagicTargetChoice NEG_TARGET_NONLAND_PERMANENT =
         MagicTargetChoice.Negative("target nonland permanent");
 
