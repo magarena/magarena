@@ -26,6 +26,29 @@ import magic.model.target.*;
 import magic.model.trigger.*;
 
 public enum MagicRuleEventAction {
+    ChooseOneOfFour(
+        "choose one — \\(1\\) (?<effect1>.*) \\(2\\) (?<effect2>.*) \\(3\\) (?<effect3>.*) \\(4\\) (?<effect4>.*)",
+        MagicTiming.Pump,
+        "Modal"
+    ) {
+        @Override
+        public MagicChoice getChoice(final Matcher matcher) {
+            final MagicSourceEvent e1 = MagicRuleEventAction.create(matcher.group("effect1"));
+            final MagicSourceEvent e2 = MagicRuleEventAction.create(matcher.group("effect2"));
+            final MagicSourceEvent e3 = MagicRuleEventAction.create(matcher.group("effect3"));
+            final MagicSourceEvent e4 = MagicRuleEventAction.create(matcher.group("effect4"));
+            return new MagicOrChoice(e1.getChoice(), e2.getChoice(), e3.getChoice(), e4.getChoice());
+        }
+
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicSourceEvent e1 = MagicRuleEventAction.create(matcher.group("effect1"));
+            final MagicSourceEvent e2 = MagicRuleEventAction.create(matcher.group("effect2"));
+            final MagicSourceEvent e3 = MagicRuleEventAction.create(matcher.group("effect3"));
+            final MagicSourceEvent e4 = MagicRuleEventAction.create(matcher.group("effect4"));
+            return (game, event) -> event.executeModalEvent(game, e1, e2, e3, e4);
+        }
+    },
     ChooseOneOfThree(
         "choose one — \\(1\\) (?<effect1>.*) \\(2\\) (?<effect2>.*) \\(3\\) (?<effect3>.*)",
         MagicTiming.Pump,
