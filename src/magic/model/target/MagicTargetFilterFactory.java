@@ -1656,14 +1656,21 @@ public class MagicTargetFilterFactory {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isController(player) &&
                 target.isAttacking() &&
-                target.hasState(MagicPermanentState.Blocked) == false;
+                !target.hasState(MagicPermanentState.Blocked);
+        }
+    };
+
+    public static final MagicPermanentFilterImpl UNBLOCKED_ATTACKING_CREATURE = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+            return target.isAttacking() &&
+                !target.hasState(MagicPermanentState.Blocked);
         }
     };
 
     public static final MagicPermanentFilterImpl UNBLOCKED_CREATURE = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isAttacking() &&
-                target.hasState(MagicPermanentState.Blocked) == false;
+                !target.hasState(MagicPermanentState.Blocked);
         }
     };
 
@@ -2941,6 +2948,7 @@ public class MagicTargetFilterFactory {
         single.put("nonlegendary creature", NON_LEGENDARY_CREATURE);
         single.put("colorless creature", COLORLESS_CREATURE);
         single.put("Eldrazi Scion", ELDRAZI_SCION);
+        single.put("unblocked attacking creature", UNBLOCKED_ATTACKING_CREATURE);
 
         // <color|type|subtype> you control
         single.put("basic land you control", BASIC_LAND_YOU_CONTROL);
