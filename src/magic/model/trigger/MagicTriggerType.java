@@ -11,7 +11,7 @@ public enum MagicTriggerType {
     WhenOtherSpellIsCast,   // card on stack
     WhenSpellIsCast,        // card on stack
     WhenComesIntoPlay,      // controller
-    WhenLeavesPlay,         // MagicRemoveFromPlayAction
+    WhenLeavesPlay,         // RemoveFromPlayAction
     WhenBecomesTapped,      // permanent
     WhenBecomesUntapped,    // permanent
     WhenDrawn,              // card
@@ -35,6 +35,7 @@ public enum MagicTriggerType {
     WhenCycle,              // card
     WhenOtherCycle,         // card
     WhenScry,               // player
+    WhenSacrifice,          // RemoveFromPlayAction
     IfDamageWouldBeDealt,   // item on stack
     IfPlayerWouldLose,      // player[]
     IfLifeWouldChange,      // MagicChangeLifeAction
