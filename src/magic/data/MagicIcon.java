@@ -40,7 +40,7 @@ public enum MagicIcon {
     EDIT_ICON("w_edit.png"),
     HELP_ICON("w_help.png"),
     OPEN_ICON("w_open.png"),
-    REFRESH2_ICON("w_cycle.png"),
+    CYCLE_ICON("w_cycle.png"),
     RANDOM_ICON("w_random32.png"),
     CLEAR_ICON("w_clear28.png"),
     FILTER_ICON("w_filter24.png"),
