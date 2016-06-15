@@ -397,6 +397,9 @@ public enum MagicConditionParser {
             return MagicCondition.DURING_COMBAT_AFTER_BLOCKERS;
         }
     },
+    DuringBlockers("during the declare blockers step") {
+        public MagicCondition toCondition(final Matcher arg) { return MagicCondition.DURING_BLOCKERS; }
+    },
     DuringCombatBeforeBlockers("during combat before blockers are declared") {
         public MagicCondition toCondition(final Matcher arg) {
             return MagicCondition.DURING_COMBAT_BEFORE_BLOCKERS;

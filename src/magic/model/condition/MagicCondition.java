@@ -7,8 +7,6 @@ import magic.model.MagicAbility;
 import magic.model.MagicCard;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicCardList;
-import magic.model.MagicColor;
-import magic.model.MagicCounterType;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
@@ -204,6 +202,13 @@ public abstract class MagicCondition implements MagicMatchedCostEvent {
             final MagicGame game = source.getGame();
             return game.isPhase(MagicPhaseType.DeclareBlockers) ||
                 game.isPhase(MagicPhaseType.EndOfCombat);
+        }
+    };
+
+    public static MagicCondition DURING_BLOCKERS = new MagicCondition() {
+        public boolean accept(final MagicSource source) {
+            final MagicGame game = source.getGame();
+            return game.isPhase(MagicPhaseType.DeclareBlockers);
         }
     };
 
