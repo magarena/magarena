@@ -6,7 +6,7 @@ type=Creature
 subtype=Beast
 cost={4}{G}{G}
 pt=3/4
-ability=Infect;\
-        You may have SN assign its combat damage as though it weren't blocked.
+ability=Infect
 timing=main
+requires_groovy_code=Rhox
 oracle=Infect\nYou may have Spinebiter assign its combat damage as though it weren't blocked.
