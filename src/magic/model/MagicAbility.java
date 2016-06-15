@@ -878,10 +878,18 @@ public enum MagicAbility {
             ));
         }
     },
-    SacrificeEffect("When(ever)? you sacrifice " + ARG.WORDRUN + ", " + ARG.EFFECT, 10) {
+    YouSacrificeEffect("When(ever)? you sacrifice " + ARG.WORDRUN + ", " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(SacrificeTrigger.create(
                 MagicTargetFilterFactory.Permanent(ARG.wordrun(arg) + " you control"),
+                MagicRuleEventAction.create(ARG.effect(arg))
+            ));
+        }
+    },
+    PlayerSacrificeEffect("When(ever)? a player sacrifices " + ARG.WORDRUN + ", " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(SacrificeTrigger.create(
+                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg))
             ));
         }
