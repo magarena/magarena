@@ -6,7 +6,7 @@ type=Enchantment
 subtype=Aura
 cost={W}
 ability=Enchant Mountain you control;\
-	When SN enters the battlefield, exile target creature an opponent controls until SN leaves the battlefield.
+        When SN enters the battlefield, exile target creature an opponent controls until SN leaves the battlefield.
 timing=aura
 enchant=exile,mountain you control
 oracle=Enchant Mountain you control\nWhen Chained to the Rocks enters the battlefield, exile target creature an opponent controls until Chained to the Rocks leaves the battlefield.
