@@ -2201,7 +2201,21 @@ public enum MagicRuleEventAction {
             return (game, event) -> game.doAction(new PlayTokenAction(event.getPlayer(), CardDefinitions.getToken("colorless Clue artifact token")));
         }
     },
-
+    BecomeBlocked(
+        ARG.PERMANENTS + " become(s)? blocked",
+        MagicTiming.Block,
+        "Block"
+    ) {
+        @Override
+        public MagicEventAction getAction(final Matcher matcher) {
+            final MagicTargetFilter<MagicPermanent> filter = ARG.permanentsParse(matcher);
+            return (game, event) -> {
+                for (final MagicPermanent it : ARG.permanents(event, matcher, filter)) {
+                    game.doAction(ChangeStateAction.Set(it, MagicPermanentState.Blocked));
+                }
+            };
+        }
+    },
     BecomesAlt(
         "(?<duration>until end of turn, )" + ARG.PERMANENTS + " becomes( a| an)?( )?(?<pt>[0-9]+/[0-9]+)? (?<all>.*?)( (with|and gains) (?<ability>.*?))?(?<additionTo>((\\.)? It's| that's) still [^\\.]*)?",
         MagicTiming.Animate,
