@@ -1,4 +1,4 @@
-def tapChoice = new MagicTargetChoice("an untapped creature you control");
+def tapChoice = new MagicTargetChoice("another untapped creature you control");
 def targetChoice = MagicTargetChoice.Negative("target attacking or blocking creature with flying");
 
 [
