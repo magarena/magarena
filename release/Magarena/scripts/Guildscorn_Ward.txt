@@ -8,5 +8,5 @@ cost={W}
 ability=Enchant creature;\
         Enchanted creature has protection from multicolored.
 timing=aura
-enchant=default,creature
+enchant=unblockable,pos creature
 oracle=Enchant creature\nEnchanted creature has protection from multicolored.
