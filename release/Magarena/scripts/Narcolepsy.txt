@@ -6,7 +6,8 @@ rarity=C
 type=Enchantment
 subtype=Aura
 cost={1}{U}
+ability=Enchant creature;\
+        At the beginning of each upkeep, if enchanted creature is untapped, tap enchanted creature.
 timing=aura
 enchant=can't attack or block,neg creature
-requires_groovy_code
 oracle=Enchant creature\nAt the beginning of each upkeep, if enchanted creature is untapped, tap it.

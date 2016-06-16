@@ -6,6 +6,6 @@ type=Creature
 subtype=Elemental,Beast
 cost={2}{R}{R}
 pt=0/4
+ability=Whenever SN attacks, SN gets +X/+0 until end of turn, where X is the number of lands defending player controls.
 timing=main
-requires_groovy_code
 oracle=Whenever Terra Ravager attacks, it gets +X/+0 until end of turn, where X is the number of lands defending player controls.

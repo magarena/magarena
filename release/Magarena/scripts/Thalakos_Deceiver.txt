@@ -6,7 +6,7 @@ type=Creature
 subtype=Thalakos,Wizard
 cost={3}{U}
 pt=1/1
-ability=shadow
+ability=Shadow;\
+        Whenever SN attacks and isn't blocked, you may sacrifice SN. If you do, gain control of target creature.
 timing=main
-requires_groovy_code
 oracle=Shadow\nWhenever Thalakos Deceiver attacks and isn't blocked, you may sacrifice it. If you do, gain control of target creature.

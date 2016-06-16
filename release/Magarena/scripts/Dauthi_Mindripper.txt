@@ -6,7 +6,7 @@ type=Creature
 subtype=Dauthi,Minion
 cost={3}{B}
 pt=2/1
-ability=Shadow
+ability=Shadow;\
+        Whenever SN attacks and isn't blocked, you may sacrifice SN. If you do, defending player discards three cards.
 timing=main
-requires_groovy_code=Mindstab Thrull
 oracle=Shadow\nWhenever Dauthi Mindripper attacks and isn't blocked, you may sacrifice it. If you do, defending player discards three cards.
