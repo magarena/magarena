@@ -2917,11 +2917,6 @@ public class MagicTargetFilterFactory {
         // <color|type|subtype> you control
         add("equipped creature you control", EQUIPPED_CREATURE_YOU_CONTROL);
 
-        // defending player controls
-        add("creature defending player controls", CREATURE_DEFENDING_PLAYER_CONTROLS);
-        add("artifact defending player controls", ARTIFACT_DEFENDING_PLAYER_CONTROLS);
-        add("creature without flying defending player controls", CREATURE_WITHOUT_FLYING_DEFENDING_PLAYER_CONTROLS);
-
         // <color|type|subtype> you don't control
         add("spell you don't control", SPELL_YOU_DONT_CONTROL);
 
@@ -3326,9 +3321,10 @@ public class MagicTargetFilterFactory {
     public enum Control {
         Any,
         You,
-        Opp;
+        Opp,
+        Def;
 
-        boolean matches(MagicPlayer player, MagicPermanent target) {
+        boolean matches(final MagicPlayer player, final MagicPermanent target) {
             switch (this) {
                 case Any:
                     return true;
@@ -3336,6 +3332,8 @@ public class MagicTargetFilterFactory {
                     return target.isController(player);
                 case Opp:
                     return target.isOpponent(player);
+                case Def:
+                    return target.isController(target.getGame().getDefendingPlayer());
             }
             return false;
         }

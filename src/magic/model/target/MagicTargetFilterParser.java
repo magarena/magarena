@@ -163,6 +163,11 @@ public enum MagicTargetFilterParser {
             return MagicTargetFilterFactory.matchPermanentPrefix(arg.group(), ARG.wordrun(arg), Control.Opp);
         }
     },
+    PermanentDefControl(ARG.WORDRUN + " defending player controls") {
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return MagicTargetFilterFactory.matchPermanentPrefix(arg.group(), ARG.wordrun(arg), Control.Def);
+        }
+    },
     Permanent(ARG.WORDRUN + " permanent") {
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
             return MagicTargetFilterFactory.matchPermanentPrefix(arg.group(), ARG.wordrun(arg), Control.Any);
