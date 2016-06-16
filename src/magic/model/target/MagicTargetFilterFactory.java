@@ -366,7 +366,7 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl WHITE_OR_BLUE_PERMANENT_YOU_CONTROL = permanentOr(MagicColor.White, MagicColor.Blue, Control.You);
 
-    public static final MagicPermanentFilterImpl GREEN_OR_WHITE_PERMANENT_YOU_CONTROL = permanentOr(MagicColor.Green, MagicColor.White, Control.You);
+    public static final MagicPermanentFilterImpl GREEN_OR_WHITE_PERMANENT = permanentOr(MagicColor.Green, MagicColor.White, Control.Any);
 
     public static final MagicPermanentFilterImpl WHITE_OR_BLUE_PERMANENT = permanentOr(MagicColor.White, MagicColor.Blue, Control.Any);
 
@@ -390,9 +390,9 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicPermanentFilterImpl NON_LAIR_LAND_YOU_CONTROL = new MagicPermanentFilterImpl() {
+    public static final MagicPermanentFilterImpl NON_LAIR_LAND = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-            return target.isLand() && !target.hasSubType(MagicSubType.Lair) && target.isController(player);
+            return target.isLand() && !target.hasSubType(MagicSubType.Lair);
         }
     };
 
@@ -402,11 +402,9 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicPermanentFilterImpl TRAPPED_LAND_YOU_CONTROL = new MagicPermanentFilterImpl() {
+    public static final MagicPermanentFilterImpl TRAPPED_LAND = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-            return target.isLand() &&
-                target.getCounters(MagicCounterType.Trap) >= 1 &&
-                target.isController(player);
+            return target.isLand() && target.getCounters(MagicCounterType.Trap) >= 1;
         }
     };
 
@@ -430,15 +428,15 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl SNOW_LAND_YOU_CONTROL = permanentAnd(MagicType.Land, MagicType.Snow, Control.You);
 
-    public static final MagicPermanentFilterImpl SNOW_MOUNTAIN_YOU_CONTROL = permanentAnd(MagicType.Snow, MagicSubType.Mountain, Control.You);
+    public static final MagicPermanentFilterImpl SNOW_MOUNTAIN = permanentAnd(MagicType.Snow, MagicSubType.Mountain, Control.Any);
 
-    public static final MagicPermanentFilterImpl SNOW_SWAMP_YOU_CONTROL = permanentAnd(MagicType.Snow, MagicSubType.Swamp, Control.You);
+    public static final MagicPermanentFilterImpl SNOW_SWAMP = permanentAnd(MagicType.Snow, MagicSubType.Swamp, Control.Any);
 
-    public static final MagicPermanentFilterImpl SNOW_ISLAND_YOU_CONTROL = permanentAnd(MagicType.Snow, MagicSubType.Island, Control.You);
+    public static final MagicPermanentFilterImpl SNOW_ISLAND = permanentAnd(MagicType.Snow, MagicSubType.Island, Control.Any);
 
-    public static final MagicPermanentFilterImpl SNOW_FOREST_YOU_CONTROL = permanentAnd(MagicType.Snow, MagicSubType.Forest, Control.You);
+    public static final MagicPermanentFilterImpl SNOW_FOREST = permanentAnd(MagicType.Snow, MagicSubType.Forest, Control.Any);
 
-    public static final MagicPermanentFilterImpl SNOW_PLAINS_YOU_CONTROL = permanentAnd(MagicType.Snow, MagicSubType.Plains, Control.You);
+    public static final MagicPermanentFilterImpl SNOW_PLAINS = permanentAnd(MagicType.Snow, MagicSubType.Plains, Control.Any);
 
     public static final MagicPermanentFilterImpl LAND = permanent(MagicType.Land, Control.Any);
 
@@ -485,9 +483,9 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicPermanentFilterImpl NONTOKEN_ARTIFACT_YOU_CONTROL = new MagicPermanentFilterImpl() {
+    public static final MagicPermanentFilterImpl NONTOKEN_ARTIFACT = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-            return target.isController(player) && !target.isToken() && target.hasType(MagicType.Artifact);
+            return !target.isToken() && target.hasType(MagicType.Artifact);
         }
     };
 
@@ -686,10 +684,9 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicPermanentFilterImpl RED_OR_GREEN_ENCHANTMENT_YOU_CONTROL = new MagicPermanentFilterImpl() {
+    public static final MagicPermanentFilterImpl RED_OR_GREEN_ENCHANTMENT = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-            return target.isController(player) && target.isEnchantment() &&
-                (target.hasColor(MagicColor.Red) || target.hasColor(MagicColor.Green));
+            return target.isEnchantment() && (target.hasColor(MagicColor.Red) || target.hasColor(MagicColor.Green));
         }
     };
 
@@ -707,9 +704,9 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicPermanentFilterImpl UNTAPPED_PERMANENT_AN_OPPONENT_CONTROLS = new MagicPermanentFilterImpl() {
+    public static final MagicPermanentFilterImpl UNTAPPED_PERMANENT = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-            return target.isUntapped() && target.isOpponent(player);
+            return target.isUntapped();
         }
     };
 
@@ -731,9 +728,9 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicPermanentFilterImpl PERMANENT_FADING_YOU_CONTROL = new MagicPermanentFilterImpl() {
+    public static final MagicPermanentFilterImpl PERMANENT_WITH_FADING = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-            return target.isController(player) && target.hasAbility(MagicAbility.Fading);
+            return target.hasAbility(MagicAbility.Fading);
         }
     };
 
@@ -745,7 +742,7 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl ISLAND_YOU_CONTROL = permanent(MagicSubType.Island, Control.You);
 
-    public static final MagicPermanentFilterImpl ISLAND_OR_SWAMP_AN_OPPONENT_CONTROLS = permanentOr(MagicSubType.Island, MagicSubType.Swamp, Control.Opp);
+    public static final MagicPermanentFilterImpl ISLAND_OR_SWAMP = permanentOr(MagicSubType.Island, MagicSubType.Swamp, Control.Any);
 
     public static final MagicPermanentFilterImpl ISLAND = permanent(MagicSubType.Island, Control.Any);
 
@@ -782,10 +779,9 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicPermanentFilterImpl CARIBOU_TOKEN_YOU_CONTROL = new MagicPermanentFilterImpl() {
+    public static final MagicPermanentFilterImpl CARIBOU_TOKEN = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-            return target.isController(player) &&
-                target.isCreature() &&
+            return target.isCreature() &&
                 target.isToken() &&
                 target.hasSubType(MagicSubType.Caribou);
         }
@@ -907,9 +903,9 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl DRAGON_YOU_CONTROL = permanent(MagicSubType.Dragon, Control.You);
 
-    public static final MagicPermanentFilterImpl SOLDIER_OR_WARRIOR_YOU_CONTROL = permanentOr(MagicSubType.Soldier, MagicSubType.Warrior, Control.You);
+    public static final MagicPermanentFilterImpl SOLDIER_OR_WARRIOR = permanentOr(MagicSubType.Soldier, MagicSubType.Warrior, Control.Any);
 
-    public static final MagicPermanentFilterImpl FOREST_OR_TREEFOLK_YOU_CONTROL = permanentOr(MagicSubType.Forest, MagicSubType.Treefolk, Control.You);
+    public static final MagicPermanentFilterImpl FOREST_OR_TREEFOLK = permanentOr(MagicSubType.Forest, MagicSubType.Treefolk, Control.Any);
 
     public static final MagicPermanentFilterImpl GOBLIN_CREATURE = permanentAnd(MagicType.Creature, MagicSubType.Goblin, Control.Any);
 
@@ -923,7 +919,7 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl LEGENDARY_SAMURAI = creatureAnd(MagicType.Legendary, MagicSubType.Samurai, Control.Any);
 
-    public static final MagicPermanentFilterImpl LEGENDARY_SNAKE_YOU_CONTROL = creatureAnd(MagicType.Legendary, MagicSubType.Snake, Control.You);
+    public static final MagicPermanentFilterImpl LEGENDARY_SNAKE = creatureAnd(MagicType.Legendary, MagicSubType.Snake, Control.Any);
 
     public static final MagicPermanentFilterImpl INSECT_RAT_SPIDER_OR_SQUIRREL = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
@@ -1200,18 +1196,16 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicPermanentFilterImpl TAPPED_ARTIFACT_CREATURE_AND_LAND_YOU_CONTROL = new MagicPermanentFilterImpl() {
+    public static final MagicPermanentFilterImpl TAPPED_ARTIFACT_CREATURE_AND_LAND = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-            return target.isController(player) &&
-                target.isTapped() &&
+            return target.isTapped() &&
                 (target.hasType(MagicType.Artifact) || target.hasType(MagicType.Creature) || target.hasType(MagicType.Land));
         }
     };
 
-    public static final MagicPermanentFilterImpl UNTAPPED_ARTIFACT_CREATURE_OR_LAND_YOU_CONTROL = new MagicPermanentFilterImpl() {
+    public static final MagicPermanentFilterImpl UNTAPPED_ARTIFACT_CREATURE_OR_LAND = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isUntapped() &&
-                target.isController(player) &&
                 (target.isArtifact() || target.isCreature() || target.isLand());
         }
     };
@@ -1312,16 +1306,13 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl NONSNOW_CREATURE = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-            return target.isCreature() &&
-                !target.hasType(MagicType.Snow);
+            return target.isCreature() && !target.hasType(MagicType.Snow);
         }
     };
 
-    public static final MagicPermanentFilterImpl NONSNOW_LAND_YOU_CONTROL = new MagicPermanentFilterImpl() {
+    public static final MagicPermanentFilterImpl NONSNOW_LAND = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-            return target.isController(player) &&
-                target.isLand() &&
-                !target.hasType(MagicType.Snow);
+            return target.isLand() && !target.hasType(MagicType.Snow);
         }
     };
 
@@ -2203,11 +2194,9 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicPermanentFilterImpl UNTAPPED_MOUNTAIN_YOU_CONTROL = new MagicPermanentFilterImpl() {
+    public static final MagicPermanentFilterImpl UNTAPPED_MOUNTAIN = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-            return target.hasSubType(MagicSubType.Mountain) &&
-                target.isUntapped() &&
-                target.isController(player);
+            return target.hasSubType(MagicSubType.Mountain) && target.isUntapped();
         }
     };
 
@@ -2905,64 +2894,40 @@ public class MagicTargetFilterFactory {
         add("colorless creature", COLORLESS_CREATURE);
         add("Eldrazi Scion", ELDRAZI_SCION);
         add("unblocked attacking creature", UNBLOCKED_ATTACKING_CREATURE);
+        add("non-lair land", NON_LAIR_LAND);
+        add("nonsnow land", NONSNOW_LAND);
+        add("land with a trap counter on it", TRAPPED_LAND);
+        add("Caribou token", CARIBOU_TOKEN);
+        add("permanent with fading", PERMANENT_WITH_FADING);
+        add("green or white permanent", GREEN_OR_WHITE_PERMANENT);
+        add("nontoken artifact", NONTOKEN_ARTIFACT);
+        add("soldier or warrior", SOLDIER_OR_WARRIOR);
+        add("forest or treefolk", FOREST_OR_TREEFOLK);
+        add("snow Mountain", SNOW_MOUNTAIN);
+        add("snow Swamp", SNOW_SWAMP);
+        add("snow Island", SNOW_ISLAND);
+        add("snow Plains", SNOW_PLAINS);
+        add("snow Forest", SNOW_FOREST);
+        add("legendary snake", LEGENDARY_SNAKE);
+        add("red or green enchantment", RED_OR_GREEN_ENCHANTMENT);
+        add("untapped mountain", UNTAPPED_MOUNTAIN);
+        add("tapped artifact, creature, or land", TAPPED_ARTIFACT_CREATURE_AND_LAND);
+        add("untapped artifact, creature, or land", UNTAPPED_ARTIFACT_CREATURE_OR_LAND);
 
         // <color|type|subtype> you control
-        add("basic land you control", BASIC_LAND_YOU_CONTROL);
-        add("snow land you control", SNOW_LAND_YOU_CONTROL);
-        add("non-lair land you control", NON_LAIR_LAND_YOU_CONTROL);
-        add("nonsnow land you control", NONSNOW_LAND_YOU_CONTROL);
-        add("nonbasic land you control", NONBASIC_LAND_YOU_CONTROL);
-        add("land with a trap counter on it you control", TRAPPED_LAND_YOU_CONTROL);
-        add("Forest or Plains you control", FOREST_OR_PLAINS_YOU_CONTROL);
-        add("artifact, creature, or land you control", ARTIFACT_OR_CREATURE_OR_LAND_YOU_CONTROL);
-        add("creature or enchantment you control", CREATURE_OR_ENCHANTMENT_YOU_CONTROL);
-        add("creature or land you control", CREATURE_OR_LAND_YOU_CONTROL);
-        add("creature token you control", CREATURE_TOKEN_YOU_CONTROL);
-        add("Caribou token you control", CARIBOU_TOKEN_YOU_CONTROL);
-        add("permanent you control", PERMANENT_YOU_CONTROL);
-        add("permanent with fading you control", PERMANENT_FADING_YOU_CONTROL);
-        add("multicolored permanent you control", MULTICOLORED_PERMANENT_YOU_CONTROL);
-        add("green or white permanent you control", GREEN_OR_WHITE_PERMANENT_YOU_CONTROL);
-        add("nonland permanent you control", NONLAND_PERMANENT_YOU_CONTROL);
-        add("nontoken permanent you control", NONTOKEN_PERMANENT_YOU_CONTROL);
-        add("nontoken artifact you control", NONTOKEN_ARTIFACT_YOU_CONTROL);
-        add("soldier or warrior you control", SOLDIER_OR_WARRIOR_YOU_CONTROL);
-        add("forest or treefolk you control", FOREST_OR_TREEFOLK_YOU_CONTROL);
-        add("snow Mountain you control", SNOW_MOUNTAIN_YOU_CONTROL);
-        add("snow Swamp you control", SNOW_SWAMP_YOU_CONTROL);
-        add("snow Island you control", SNOW_ISLAND_YOU_CONTROL);
-        add("snow Plains you control", SNOW_PLAINS_YOU_CONTROL);
-        add("snow Forest you control", SNOW_FOREST_YOU_CONTROL);
-        add("legendary snake you control", LEGENDARY_SNAKE_YOU_CONTROL);
-        add("untapped land you control", UNTAPPED_LAND_YOU_CONTROL);
-        add("red or green enchantment you control", RED_OR_GREEN_ENCHANTMENT_YOU_CONTROL);
-        add("untapped mountain you control", UNTAPPED_MOUNTAIN_YOU_CONTROL);
-        add("tapped artifact, creature, or land you control", TAPPED_ARTIFACT_CREATURE_AND_LAND_YOU_CONTROL);
-        add("untapped artifact, creature, or land you control", UNTAPPED_ARTIFACT_CREATURE_OR_LAND_YOU_CONTROL);
         add("equipped creature you control", EQUIPPED_CREATURE_YOU_CONTROL);
-        add("Vampire or Zombie you control", VAMPIRE_OR_ZOMBIE_YOU_CONTROL);
 
         // defending player controls
         add("creature defending player controls", CREATURE_DEFENDING_PLAYER_CONTROLS);
         add("artifact defending player controls", ARTIFACT_DEFENDING_PLAYER_CONTROLS);
         add("creature without flying defending player controls", CREATURE_WITHOUT_FLYING_DEFENDING_PLAYER_CONTROLS);
 
-        // <color|type|subtype> an opponent controls
-        add("permanent an opponent controls", PERMANENT_AN_OPPONENT_CONTROLS);
-        add("untapped permanent an opponent controls", UNTAPPED_PERMANENT_AN_OPPONENT_CONTROLS);
-        add("artifact or enchantment an opponent controls", ARTIFACT_OR_ENCHANTMENT_YOUR_OPPONENT_CONTROLS);
-        add("nonland permanent an opponent controls", NONLAND_PERMANENT_YOUR_OPPONENT_CONTROLS);
-        add("Island or Swamp an opponent controls", ISLAND_OR_SWAMP_AN_OPPONENT_CONTROLS);
-        add("nonbasic land an opponent controls", NONBASIC_LAND_AN_OPPONENT_CONTROLS);
-        add("white or blue permanent an opponent controls", WHITE_OR_BLUE_PERMANENT_AN_OPPONENT_CONTROLS);
-
         // <color|type|subtype> you don't control
         add("spell you don't control", SPELL_YOU_DONT_CONTROL);
-        add("creature without flying you don't control", CREATURE_WITHOUT_FLYING_YOUR_OPPONENT_CONTROLS);
-        add("nonland permanent you don't control", NONLAND_PERMANENT_YOUR_OPPONENT_CONTROLS);
 
         // <color|type|subtype> permanent
         add("permanent", PERMANENT);
+        add("untapped permanent", UNTAPPED_PERMANENT);
         add("permanent you own", PERMANENT_YOU_OWN);
         add("permanent you both own and control", PERMANENT_YOU_OWN_AND_CONTROL);
         add("noncreature permanent", NONCREATURE);
@@ -2988,6 +2953,7 @@ public class MagicTargetFilterFactory {
         add("Treefolk or Warrior", TREEFOLK_OR_WARRIOR);
         add("token", TOKEN);
         add("Vampire or Zombie", VAMPIRE_OR_ZOMBIE);
+        add("Island or Swamp", ISLAND_OR_SWAMP);
 
         // <color|type|subtype>
         add("creature you own", CREATURE_YOU_OWN);
