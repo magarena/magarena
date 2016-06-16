@@ -1656,21 +1656,14 @@ public class MagicTargetFilterFactory {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isController(player) &&
                 target.isAttacking() &&
-                !target.hasState(MagicPermanentState.Blocked);
+                !target.isBlocked();
         }
     };
 
     public static final MagicPermanentFilterImpl UNBLOCKED_ATTACKING_CREATURE = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isAttacking() &&
-                !target.hasState(MagicPermanentState.Blocked);
-        }
-    };
-
-    public static final MagicPermanentFilterImpl UNBLOCKED_CREATURE = new MagicPermanentFilterImpl() {
-        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-            return target.isAttacking() &&
-                !target.hasState(MagicPermanentState.Blocked);
+                !target.isBlocked();
         }
     };
 
@@ -2937,7 +2930,7 @@ public class MagicTargetFilterFactory {
         single.put("nonenchantment creature", NONENCHANTMENT_CREATURE);
         single.put("creature that's a Barbarian, a Warrior, or a Berserker", BARBARIAN_WARRIOR_BERSERKER_CREATURE);
         single.put("multicolored creature", MULTICOLORED_CREATURE);
-        single.put("unblocked creature", UNBLOCKED_CREATURE);
+        single.put("unblocked creature", UNBLOCKED_ATTACKING_CREATURE);
         single.put("Cleric or Wizard creature", CLERIC_OR_WIZARD_CREATURE);
         single.put("creature that was dealt damage this turn", CREATURE_BEEN_DAMAGED);
         single.put("enchanted creature", ENCHANTED_CREATURE);
