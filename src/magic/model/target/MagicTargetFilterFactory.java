@@ -2774,27 +2774,12 @@ public class MagicTargetFilterFactory {
         add("creature you control with a level counter on it", CREATURE_LEVEL_COUNTER_YOU_CONTROL);
         add("creature you control with flying", CREATURE_WITH_FLYING_YOU_CONTROL);
         add("creature you control with trample", CREATURE_WITH_TRAMPLE_YOU_CONTROL);
-        add("creature you control that's a wolf or a werewolf", WEREWOLF_OR_WOLF_CREATURE_YOU_CONTROL);
         add("creature you control with defender", CREATURE_WITH_DEFENDER_YOU_CONTROL);
         add("creature you control with infect", CREATURE_WITH_INFECT_YOU_CONTROL);
+        add("creature you control that's a wolf or a werewolf", WEREWOLF_OR_WOLF_CREATURE_YOU_CONTROL);
 
-        // <color|type|subtype> creature an opponent controls
-        add("creature with flying an opponent controls", CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
-        add("creature with power 2 or less an opponent controls", CREATURE_POWER_2_OR_LESS_YOUR_OPPONENT_CONTROLS);
+        // <color|type|subtype> creature an opponent controls with
         add("creature an opponent controls with power 2 or less", CREATURE_POWER_2_OR_LESS_YOUR_OPPONENT_CONTROLS);
-        add("attacking creature an opponent controls", ATTACKING_CREATURE_YOUR_OPPONENT_CONTROLS);
-        add("attacking creature with flying an opponent controls", ATTACKING_CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
-        add("attacking creature without flying an opponent controls", ATTACKING_CREATURE_WITHOUT_FLYING_YOUR_OPPONENT_CONTROLS);
-        add("creature without flying an opponent controls", CREATURE_WITHOUT_FLYING_YOUR_OPPONENT_CONTROLS);
-        add("red or green creature an opponent controls", RED_OR_GREEN_CREATURE_AN_OPPONENT_CONTROLS);
-        add("green or white creature an opponent controls", GREEN_OR_WHITE_CREATURE_AN_OPPONENT_CONTROLS);
-        add("creature an opponent controls", CREATURE_YOUR_OPPONENT_CONTROLS);
-        add("nonlegendary creature an opponent controls", NON_LEGENDARY_CREATURE_AN_OPPONENT_CONTROLS);
-        add("nontoken creature an opponent controls", NONTOKEN_CREATURE_AN_OPPONENT_CONTROLS);
-        add("face-down creature an opponent controls", FACE_DOWN_CREATURE_AN_OPPONENT_CONTROLS);
-        add("tapped creature an opponent controls", TAPPED_CREATURE_AN_OPPONENT_CONTROLS);
-        add("creature or enchantment an opponent controls", CREATURE_OR_ENCHANTMENT_AN_OPPONENT_CONTROLS);
-        add("creature with converted mana cost 3 or less an opponent controls", CREATURE_CMC_3_LESS_AN_OPPONENT_CONTROLS);
 
         // <color|type|subtype> creature
         add("1/1 creature", new MagicPTTargetFilter(CREATURE, Operator.EQUAL, 1, Operator.EQUAL, 1));
