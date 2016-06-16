@@ -516,9 +516,9 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicPermanentFilterImpl FACEUP_NONTOKEN_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
+    public static final MagicPermanentFilterImpl FACEUP_NONTOKEN_CREATURE = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
-            return target.isController(player) && !target.isToken() && target.isCreature() && target.isFaceDown() == false;
+            return !target.isToken() && target.isCreature() && target.isFaceDown() == false;
         }
     };
 
@@ -845,7 +845,7 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl BLACK_OR_RED_CREATURE_YOU_CONTROL = creatureOr(MagicColor.Black, MagicColor.Red, Control.You);
 
-    public static final MagicPermanentFilterImpl BLUE_OR_BLACK_CREATURE_YOU_CONTROL = creatureOr(MagicColor.Blue, MagicColor.Black, Control.You);
+    public static final MagicPermanentFilterImpl BLUE_OR_BLACK_CREATURE = creatureOr(MagicColor.Blue, MagicColor.Black, Control.Any);
 
     public static final MagicPermanentFilterImpl RED_OR_GREEN_CREATURE_YOU_CONTROL = creatureOr(MagicColor.Red, MagicColor.Green, Control.You);
 
@@ -1140,7 +1140,7 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl TREEFOLK_YOU_CONTROL = permanent(MagicSubType.Treefolk, Control.You);
 
-    public static final MagicPermanentFilterImpl MODULAR_CREATURE_YOU_CONTROL = creature(MagicAbility.Modular, Control.You);
+    public static final MagicPermanentFilterImpl MODULAR_CREATURE = creature(MagicAbility.Modular, Control.Any);
 
     public static final MagicPermanentFilterImpl LEVELUP_CREATURE_YOU_CONTROL = creature(MagicAbility.LevelUp, Control.You);
 
@@ -1193,11 +1193,10 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicPermanentFilterImpl UNTAPPED_ISLAND_YOU_CONTROL = new MagicPermanentFilterImpl() {
+    public static final MagicPermanentFilterImpl UNTAPPED_ISLAND = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.hasSubType(MagicSubType.Island) &&
-                target.isUntapped() &&
-                target.isController(player);
+                target.isUntapped();
         }
     };
 
@@ -1594,7 +1593,7 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicPermanentFilterImpl ATTACKING_ELF_YOU_CONTROL = creatureAnd(MagicPermanentState.Attacking, MagicSubType.Elf, Control.You);
+    public static final MagicPermanentFilterImpl ATTACKING_ELF = creatureAnd(MagicPermanentState.Attacking, MagicSubType.Elf, Control.Any);
 
     public static final MagicPermanentFilterImpl ATTACKING_GOBLIN = creatureAnd(MagicPermanentState.Attacking, MagicSubType.Goblin, Control.Any);
 
@@ -1626,6 +1625,8 @@ public class MagicTargetFilterFactory {
     };
 
     public static final MagicPermanentFilterImpl ATTACKING_OR_BLOCKING_CREATURE_YOU_CONTROL = creatureOr(MagicPermanentState.Attacking, MagicPermanentState.Blocking, Control.You);
+
+    public static final MagicPermanentFilterImpl WEREWOLF_OR_WOLF_CREATURE = creatureOr(MagicSubType.Werewolf, MagicSubType.Wolf, Control.Any);
 
     public static final MagicPermanentFilterImpl WEREWOLF_OR_WOLF_CREATURE_YOU_CONTROL = creatureOr(MagicSubType.Werewolf, MagicSubType.Wolf, Control.You);
 
@@ -2246,20 +2247,18 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicPermanentFilterImpl ELDRAZI_SPAWN_CREATURE_YOU_CONTROL = new MagicPermanentFilterImpl() {
+    public static final MagicPermanentFilterImpl ELDRAZI_SPAWN_CREATURE = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() &&
                 target.hasSubType(MagicSubType.Eldrazi) &&
-                target.hasSubType(MagicSubType.Spawn) &&
-                target.isController(player);
+                target.hasSubType(MagicSubType.Spawn);
         }
     };
 
-    public static final MagicPermanentFilterImpl ELDRAZI_SPAWN_YOU_CONTROL = new MagicPermanentFilterImpl() {
+    public static final MagicPermanentFilterImpl ELDRAZI_SPAWN = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.hasSubType(MagicSubType.Eldrazi) &&
-                target.hasSubType(MagicSubType.Spawn) &&
-                target.isController(player);
+                target.hasSubType(MagicSubType.Spawn);
         }
     };
 
@@ -2757,57 +2756,20 @@ public class MagicTargetFilterFactory {
         single.put("creature card with deathtouch, hexproof, reach, or trample from your library", CREATURE_WITH_DEATHTOUCH_HEXPROOF_REACH_OR_TRAMPLE_FROM_LIBRARY);
         single.put("nonlegendary green creature card with converted mana cost 3 or less from your library", NON_LEGENDARY_GREEN_CREATURE_CARD_WITH_CMC_LEQ_3_FROM_LIBRARY);
 
-        // <color|type|subtype> creature you control
-        single.put("1/1 creature you control", ONE_ONE_CREATURE_YOU_CONTROL);
-        single.put("black or red creature you control", BLACK_OR_RED_CREATURE_YOU_CONTROL);
-        single.put("blue or black creature you control", BLUE_OR_BLACK_CREATURE_YOU_CONTROL);
-        single.put("red or green creature you control", RED_OR_GREEN_CREATURE_YOU_CONTROL);
-        single.put("red or white creature you control", RED_OR_WHITE_CREATURE_YOU_CONTROL);
-        single.put("white or black creature you control", WHITE_OR_BLACK_CREATURE_YOU_CONTROL);
-        single.put("white or blue creature you control", WHITE_OR_BLUE_CREATURE_YOU_CONTROL);
-        single.put("untapped creature you control", UNTAPPED_CREATURE_YOU_CONTROL);
-        single.put("untapped island you control", UNTAPPED_ISLAND_YOU_CONTROL);
-        single.put("tapped creature you control", TAPPED_CREATURE_YOU_CONTROL);
-        single.put("artifact or creature you control", ARTIFACT_OR_CREATURE_YOU_CONTROL);
-        single.put("attacking or blocking creature you control", ATTACKING_OR_BLOCKING_CREATURE_YOU_CONTROL);
-        single.put("nonlegendary creature you control", NON_LEGENDARY_CREATURE_YOU_CONTROL);
-        single.put("unblocked attacking creature you control", UNBLOCKED_ATTACKING_CREATURE_YOU_CONTROL);
-        single.put("attacking creature you control", ATTACKING_CREATURE_YOU_CONTROL);
-        single.put("blocking creature you control", BLOCKING_CREATURE_YOU_CONTROL);
-        single.put("nontoken creature you control", NONTOKEN_CREATURE_YOU_CONTROL);
-        single.put("creature with power 2 or less you control", CREATURE_POWER_2_OR_LESS_YOU_CONTROL);
-        single.put("creature with power 3 or greater you control", CREATURE_POWER_3_OR_MORE_YOU_CONTROL);
-        single.put("creature with power 4 or greater you control", CREATURE_POWER_4_OR_MORE_YOU_CONTROL);
-        single.put("creature with power 5 or greater you control", CREATURE_POWER_5_OR_MORE_YOU_CONTROL);
+        // <color|type|subtype> creature you control with
         single.put("creature you control with power 2 or less", CREATURE_POWER_2_OR_LESS_YOU_CONTROL);
         single.put("creature you control with power 3 or greater", CREATURE_POWER_3_OR_MORE_YOU_CONTROL);
         single.put("creature you control with power 4 or greater", CREATURE_POWER_4_OR_MORE_YOU_CONTROL);
         single.put("creature you control with power 5 or greater", CREATURE_POWER_5_OR_MORE_YOU_CONTROL);
         single.put("creature you control with toughness 4 or greater", CREATURE_TOUGHNESS_4_OR_GREATER_YOU_CONTROL);
-        single.put("creature with modular you control", MODULAR_CREATURE_YOU_CONTROL);
         single.put("creature you control with level up", LEVELUP_CREATURE_YOU_CONTROL);
-        single.put("monocolored creature you control", MONOCOLORED_CREATURE_YOU_CONTROL);
         single.put("creature you control with a +1/+1 counter on it", CREATURE_PLUSONE_COUNTER_YOU_CONTROL);
         single.put("creature you control with a level counter on it", CREATURE_LEVEL_COUNTER_YOU_CONTROL);
         single.put("creature you control with flying", CREATURE_WITH_FLYING_YOU_CONTROL);
-        single.put("creature with flying you control", CREATURE_WITH_FLYING_YOU_CONTROL);
         single.put("creature you control with trample", CREATURE_WITH_TRAMPLE_YOU_CONTROL);
-        single.put("enchanted creature you control", ENCHANTED_CREATURE_YOU_CONTROL);
-        single.put("multicolored creature you control", MULTICOLORED_CREATURE_YOU_CONTROL);
-        single.put("nongreen creature you control", NONGREEN_CREATURE_YOU_CONTROL);
-        single.put("red creature or white creature you control", RED_OR_WHITE_CREATURE_YOU_CONTROL);
-        single.put("green or white creature you control", GREEN_OR_WHITE_CREATURE_YOU_CONTROL);
-        single.put("werewolf or wolf creature you control", WEREWOLF_OR_WOLF_CREATURE_YOU_CONTROL);
         single.put("creature you control that's a wolf or a werewolf", WEREWOLF_OR_WOLF_CREATURE_YOU_CONTROL);
-        single.put("Eldrazi Spawn creature you control", ELDRAZI_SPAWN_CREATURE_YOU_CONTROL);
-        single.put("Eldrazi Spawn you control", ELDRAZI_SPAWN_YOU_CONTROL);
-        single.put("Eldrazi Scion you control", ELDRAZI_SCION_YOU_CONTROL);
-        single.put("face-down creature you control", FACE_DOWN_CREATURE_YOU_CONTROL);
         single.put("creature you control with defender", CREATURE_WITH_DEFENDER_YOU_CONTROL);
-        single.put("creature with defender you control", CREATURE_WITH_DEFENDER_YOU_CONTROL);
-        single.put("face-up nontoken creature you control", FACEUP_NONTOKEN_CREATURE_YOU_CONTROL);
         single.put("creature you control with infect", CREATURE_WITH_INFECT_YOU_CONTROL);
-        single.put("colorless creature you control", COLORLESS_CREATURE_YOU_CONTROL);
 
         // <color|type|subtype> creature an opponent controls
         single.put("creature with flying an opponent controls", CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS);
@@ -2829,6 +2791,15 @@ public class MagicTargetFilterFactory {
 
         // <color|type|subtype> creature
         single.put("1/1 creature", new MagicPTTargetFilter(CREATURE, Operator.EQUAL, 1, Operator.EQUAL, 1));
+        single.put("blue or black creature", BLUE_OR_BLACK_CREATURE);
+        single.put("untapped island", UNTAPPED_ISLAND);
+        single.put("creature with modular", MODULAR_CREATURE);
+        single.put("red creature or white creature", RED_OR_WHITE_CREATURE);
+        single.put("werewolf or wolf creature", WEREWOLF_OR_WOLF_CREATURE);
+        single.put("Eldrazi Spawn creature", ELDRAZI_SPAWN_CREATURE);
+        single.put("Eldrazi Spawn", ELDRAZI_SPAWN);
+        single.put("face-up nontoken creature", FACEUP_NONTOKEN_CREATURE);
+
         single.put("nongreen creature", NONGREEN_CREATURE);
         single.put("nonblue creature", NONBLUE_CREATURE);
         single.put("nonblack creature", NONBLACK_CREATURE);
@@ -2855,7 +2826,7 @@ public class MagicTargetFilterFactory {
         single.put("artifact or creature", ARTIFACT_OR_CREATURE);
         single.put("unpaired Soulbond creature", UNPAIRED_SOULBOND_CREATURE);
         single.put("monocolored creature", MONOCOLORED_CREATURE);
-        single.put("attacking Elf you control", ATTACKING_ELF_YOU_CONTROL);
+        single.put("attacking Elf", ATTACKING_ELF);
         single.put("attacking Aurochs", ATTACKING_AUROCHS);
         single.put("attacking Goblin", ATTACKING_GOBLIN);
         single.put("attacking Kavu", ATTACKING_KAVU);
@@ -3064,7 +3035,6 @@ public class MagicTargetFilterFactory {
         single.put("Aura attached to a creature", AURA_ATTACHED_TO_CREATURE);
         single.put("wolf or werewolf", WOLF_OR_WEREWOLF);
         single.put("attacking wolf or werewolf", ATTACKING_WOLF_OR_WEREWOLF);
-        single.put("wolf or werewolf you control", WOLF_OR_WEREWOLF_YOU_CONTROL);
         single.put("human or an angel", HUMAN_OR_ANGEL);
 
         // <color|type> spell
@@ -3353,6 +3323,17 @@ public class MagicTargetFilterFactory {
                 return permanent(st, control);
             }
         }
+        final String withSuffix = prefix + " permanent";
+        if (single.containsKey(withSuffix)) {
+            @SuppressWarnings("unchecked")
+            final MagicTargetFilter<MagicPermanent> filter = (MagicTargetFilter<MagicPermanent>)single.get(withSuffix);
+            return permanent(filter, control);
+        }
+        if (single.containsKey(prefix)) {
+            @SuppressWarnings("unchecked")
+            final MagicTargetFilter<MagicPermanent> filter = (MagicTargetFilter<MagicPermanent>)single.get(prefix);
+            return permanent(filter, control);
+        }
         throw new RuntimeException("unknown target filter \"" + arg + "\"");
     }
 
@@ -3374,6 +3355,12 @@ public class MagicTargetFilterFactory {
             if (prefix.equalsIgnoreCase("non-" + st.toString())) {
                 return creatureNon(st, control);
             }
+        }
+        final String withSuffix = prefix + " creature";
+        if (single.containsKey(withSuffix)) {
+            @SuppressWarnings("unchecked")
+            final MagicTargetFilter<MagicPermanent> filter = (MagicTargetFilter<MagicPermanent>)single.get(withSuffix);
+            return permanent(filter, control);
         }
         throw new RuntimeException("unknown target filter \"" + arg + "\"");
     }
@@ -3552,6 +3539,14 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl permanent(final MagicSubType subType, final Control control) {
         return permanentOr(subType, subType, control);
+    }
+
+    public static final MagicPermanentFilterImpl permanent(final MagicTargetFilter<MagicPermanent> filter, final Control control) {
+        return new MagicPermanentFilterImpl() {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+                return filter.accept(source, player, target) && control.matches(player, target);
+            }
+        };
     }
 
     public static final MagicPermanentFilterImpl creature(final MagicCounterType counter, final Control control) {
