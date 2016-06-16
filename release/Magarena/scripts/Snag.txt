@@ -4,7 +4,8 @@ value=3.222
 rarity=U
 type=Instant
 cost={3}{G}
-ability=You may discard a Forest card rather than pay SN's mana cost.
+ability=You may discard a Forest card rather than pay SN's mana cost.;\
+        Cast SN only during combat after blockers are declared.
 effect=Prevent all combat damage that would be dealt by unblocked creatures this turn.
 timing=block
 oracle=You may discard a Forest card rather than pay Snag's mana cost.\nPrevent all combat damage that would be dealt by unblocked creatures this turn.
