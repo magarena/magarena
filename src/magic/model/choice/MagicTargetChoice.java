@@ -182,9 +182,6 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice POS_CREATURE =
         MagicTargetChoice.Positive("a creature");
 
-    public static final MagicTargetChoice RED_OR_GREEN_CREATURE_YOU_CONTROL =
-        new MagicTargetChoice("a red or green creature you control");
-
     public static final MagicTargetChoice TARGET_CREATURE_PLUSONE_COUNTER =
         new MagicTargetChoice("target creature with a +1/+1 counter on it");
 
