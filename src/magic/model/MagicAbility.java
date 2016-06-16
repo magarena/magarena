@@ -74,6 +74,7 @@ public enum MagicAbility {
     ProtectionFromRed("(protection )?from red",20),
     ProtectionFromWhite("(protection )?from white",20),
     ProtectionFromMonoColored("protection from monocolored",50),
+    ProtectionFromMultiColored("protection from multicolored",50),
     ProtectionFromAllColors("protection from all colors",150),
     ProtectionFromColoredSpells("protection from colored spells",100),
     ProtectionFromEverything("protection from everything",200),

@@ -919,6 +919,12 @@ public class MagicPermanent extends MagicObjectImpl implements MagicSource, Magi
             return true;
         }
 
+        // from multicolored
+        if (numColors > 1 &&
+            hasAbility(MagicAbility.ProtectionFromMultiColored)) {
+            return true;
+        }
+
         if (!source.isPermanent()) {
             return false;
         }
