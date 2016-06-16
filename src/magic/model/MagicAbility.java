@@ -787,7 +787,7 @@ public enum MagicAbility {
             card.add(BlocksTrigger.create(filter, sourceEvent));
         }
     },
-    BecomesBlockedEffect("Whenever " + ARG.WORDRUN + " becomes blocked, " + ARG.EFFECT, 10) {
+    BecomesBlockedEffect("When(ever)? " + ARG.WORDRUN + " becomes blocked, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(BecomesBlockedTrigger.create(
                 MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
