@@ -398,7 +398,9 @@ public enum MagicConditionParser {
         }
     },
     DuringBlockers("during the declare blockers step") {
-        public MagicCondition toCondition(final Matcher arg) { return MagicCondition.DURING_BLOCKERS; }
+        public MagicCondition toCondition(final Matcher arg) {
+            return MagicCondition.DURING_BLOCKERS;
+        }
     },
     DuringCombatBeforeBlockers("during combat before blockers are declared") {
         public MagicCondition toCondition(final Matcher arg) {
@@ -526,16 +528,24 @@ public enum MagicConditionParser {
         }
     },
     CreatureInYourGraveyard("you have a creature card in your graveyard") {
-        public MagicCondition toCondition(final Matcher arf) { return MagicCondition.HAS_CREATURE_IN_GRAVEYARD;}
+        public MagicCondition toCondition(final Matcher arf) {
+            return MagicCondition.HAS_CREATURE_IN_GRAVEYARD;
+        }
     },
     CreatureInYourHand("you have a creature card in your hand") {
-        public MagicCondition toCondition(final Matcher arf) { return MagicCondition.HAS_CREATURE_IN_HAND;}
+        public MagicCondition toCondition(final Matcher arf) {
+            return MagicCondition.HAS_CREATURE_IN_HAND;
+        }
     },
     ArtifactInYourGraveyard("you have an artifact card in your graveyard") {
-        public MagicCondition toCondition(final Matcher arf) { return MagicCondition.HAS_ARTIFACT_IN_GRAVEYARD;}
+        public MagicCondition toCondition(final Matcher arf) {
+            return MagicCondition.HAS_ARTIFACT_IN_GRAVEYARD;
+        }
     },
     EquipmentInYourHand("you have an equipment card in your hand") {
-        public MagicCondition toCondition(final Matcher arf) { return MagicCondition.HAS_EQUIPMENT_IN_HAND;}
+        public MagicCondition toCondition(final Matcher arf) {
+            return MagicCondition.HAS_EQUIPMENT_IN_HAND;
+        }
     },
     InstantOrSorceryInGraveyard("there is an instant or sorcery card in a graveyard") {
         public MagicCondition toCondition(final Matcher arg) {
