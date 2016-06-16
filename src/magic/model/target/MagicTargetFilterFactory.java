@@ -3502,6 +3502,10 @@ public class MagicTargetFilterFactory {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
                 return filter.accept(source, player, target) && control.matches(player, target);
             }
+            @Override
+            public boolean isStatic() {
+                return filter.isStatic();
+            }
         };
     }
 
