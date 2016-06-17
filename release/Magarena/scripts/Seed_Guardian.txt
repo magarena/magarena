@@ -7,7 +7,7 @@ type=Creature
 subtype=Elemental
 cost={2}{G}{G}
 pt=3/4
-ability=Reach;\
-        When SN dies, put an X/X green Elemental creature token onto the battlefield, where X is the number of creature cards in your graveyard.
+ability=Reach
 timing=main
+requires_groovy_code
 oracle=Reach\nWhen Seed Guardian dies, put an X/X green Elemental creature token onto the battlefield, where X is the number of creature cards in your graveyard.
