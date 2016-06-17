@@ -5,7 +5,7 @@
             return new MagicEvent(
                 permanent,
                 this,
-                "PN puts a 1/1 white Soldier creature token onto the battlefield equal to PN's devotion to white. ("+permanent.getController().getDevotion(MagicColor.White)+")"
+                "PN puts a number of 1/1 white Soldier creature token onto the battlefield equal to PN's devotion to white. ("+permanent.getController().getDevotion(MagicColor.White)+")"
             );
         }
         @Override
