@@ -4,6 +4,6 @@ value=3.500
 rarity=U
 type=Sorcery
 cost={B}{G}
-effect=Put an X/X black and green Spirit Warrior creature token onto the battlefield, where X is the greatest toughness among creatures you control.
 timing=main
+requires_groovy_code
 oracle=Put an X/X black and green Spirit Warrior creature token onto the battlefield, where X is the greatest toughness among creatures you control.
