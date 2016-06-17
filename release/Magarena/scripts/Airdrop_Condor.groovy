@@ -18,7 +18,7 @@
                 NEG_TARGET_CREATURE_OR_PLAYER,
                 payedCost.getTarget(),
                 this,
-                "SN deals damage equal to the power of RN to target creature or player\$."
+                "SN deals damage equal to RN's power to target creature or player\$."
             );
         }
 
