@@ -1290,7 +1290,7 @@ public enum MagicRuleEventAction {
         }
     ),
     RecoverCards(
-        "return " + ARG.CARDS + " to (your|its owner's) hand",
+        "return " + ARG.CARDS + " to (your hand|its owner's hand|their owner's hand|their owners' hands)",
         MagicTargetHint.Positive,
         MagicGraveyardTargetPicker.ReturnToHand,
         MagicTiming.Draw,
