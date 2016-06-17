@@ -1,0 +1,7 @@
+name=black Horror creature token
+token=Horror
+image=http://magiccards.info/extras/token/commander-2014/horror.jpg
+value=1
+type=Creature
+subtype=Horror
+color=b

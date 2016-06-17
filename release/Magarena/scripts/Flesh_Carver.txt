@@ -7,7 +7,7 @@ subtype=Human,Wizard
 cost={2}{B}
 pt=2/2
 ability=Intimidate;\
-        {1}{B}, Sacrifice another creature: Put two +1/+1 counters on SN.;\
-        When SN dies, put an X/X black Horror creature token onto the battlefield, where X is SN's power.
+        {1}{B}, Sacrifice another creature: Put two +1/+1 counters on SN.
 timing=main
+requires_groovy_code
 oracle=Intimidate\n{1}{B}, Sacrifice another creature: Put two +1/+1 counters on Flesh Carver.\nWhen Flesh Carver dies, put an X/X black Horror creature token onto the battlefield, where X is Flesh Carver's power.
