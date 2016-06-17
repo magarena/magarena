@@ -1778,12 +1778,6 @@ public class MagicTargetFilterFactory {
 
     public static final MagicCardFilterImpl HUMAN_CREATURE_CARD_FROM_GRAVEYARD = card(MagicSubType.Human).and(MagicType.Creature).from(MagicTargetType.Graveyard);
 
-    public static final MagicCardFilterImpl FUNGUS_CARD = new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
-            return target.hasSubType(MagicSubType.Fungus);
-        }
-    };
-
     public static final MagicCardFilterImpl CARD_FROM_HAND = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return true;
@@ -2333,6 +2327,7 @@ public class MagicTargetFilterFactory {
         addp("artifact, creature, or enchantment card", ARTIFACT_OR_CREATURE_OR_ENCHANTMENT_CARD);
         addp("creature or enchantment card", CREATURE_OR_ENCHANTMENT_CARD);
         addp("multicolored card", MULTICOLORED_CARD);
+        addp("colorless card", COLORLESS_CARD);
         addp("noncreature, nonland card", NONCREATURE_NONLAND_CARD);
         addp("red or green card", RED_OR_GREEN_CARD);
         addp("artifact, creature, or land card", ARTIFACT_OR_CREATURE_OR_LAND_CARD);
@@ -2360,14 +2355,6 @@ public class MagicTargetFilterFactory {
         addp("aura or equipment card", AURA_OR_EQUIPMENT_CARD);
         addp("creature or land card", CREATURE_OR_LAND_CARD);
         addp("artifact, creature, enchantment, land, or planeswalker card", ACELP_CARD);
-        addp("colorless card", COLORLESS_CARD);
-        addp("artifact card", ARTIFACT_CARD);
-        addp("enchantment card", ENCHANTMENT_CARD);
-        addp("instant card", INSTANT_CARD);
-        addp("sorcery card", SORCERY_CARD);
-        addp("creature card", CREATURE_CARD);
-        addp("land card", LAND_CARD);
-        addp("Fungus card", FUNGUS_CARD);
 
         // card from a graveyard
         add("card from a graveyard", CARD_FROM_ALL_GRAVEYARDS);
