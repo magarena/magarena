@@ -1,0 +1,8 @@
+name=2/2 white Knight creature token
+token=Knight
+image=https://cdn.staticneo.com/w/mtg/d/de/Knight3.jpg
+value=2
+type=Creature
+subtype=Knight
+color=w
+pt=2/2
