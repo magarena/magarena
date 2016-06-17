@@ -7,7 +7,7 @@ type=Creature
 subtype=Human,Warrior
 cost={2}{B}
 pt=1/4
-ability=Deathtouch
+ability=Deathtouch;\
+        Whenever SN deals combat damage to a player, RN loses life equal to the number of creature cards in your graveyard.
 timing=main
-requires_groovy_code
 oracle=Deathtouch\nWhenever Graveblade Marauder deals combat damage to a player, that player loses life equal to the number of creature cards in your graveyard.
