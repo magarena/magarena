@@ -23,16 +23,16 @@ import javax.swing.ScrollPaneConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.SwingWorker;
 import javax.swing.Timer;
-import magic.utility.DeckUtils;
 import magic.model.MagicCardDefinition;
 import magic.model.MagicDeck;
-import magic.ui.ScreenController;
 import magic.translate.UiString;
-import net.miginfocom.swing.MigLayout;
+import magic.ui.ScreenController;
+import magic.ui.widget.FontsAndBorders;
+import magic.utility.DeckUtils;
 import static magic.utility.DeckUtils.DECK_EXTENSION;
 import static magic.utility.DeckUtils.getDeckFolder;
-import magic.ui.widget.FontsAndBorders;
 import magic.utility.MagicSystem;
+import net.miginfocom.swing.MigLayout;
 
 @SuppressWarnings("serial")
 class CardDecksPanel extends JPanel {
@@ -69,20 +69,9 @@ class CardDecksPanel extends JPanel {
         decksJList.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseReleased(MouseEvent evt) {
-                @SuppressWarnings("unchecked")
-                JList<File> list = (JList<File>)evt.getSource();
-                if (evt.getClickCount() == 2 && SwingUtilities.isLeftMouseButton(evt)) { // Double-click
-                    final int index = list.locationToIndex(evt.getPoint());
-                    final File deckFile = decksJList.getModel().getElementAt(index);
-                    final MagicDeck deck = DeckUtils.loadDeckFromFile(deckFile.toPath());
-                    if (deck.isValid()) {
-                        ScreenController.showDeckViewScreen(deck, card);
-                    } else {
-                        ScreenController.showWarningMessage(
-                                String.format("<html><b>%s</b><br>%s</html>",
-                                        UiString.get(_S1),
-                                        deck.getDescription()));
-                    }
+                if (isDoubleClick(evt)) {
+                    JList<File> decksList = (JList<File>) evt.getSource();
+                    showSelectedDeck(decksList.locationToIndex(evt.getPoint()));
                 }
             }
         });
@@ -103,6 +92,25 @@ class CardDecksPanel extends JPanel {
             }
         });
 
+    }
+
+    private void showSelectedDeck(int row) {
+        if (row >= 0) {
+            final File deckFile = decksJList.getModel().getElementAt(row);
+            final MagicDeck deck = DeckUtils.loadDeckFromFile(deckFile.toPath());
+            if (deck.isValid()) {
+                ScreenController.showDeckViewScreen(deck, card);
+            } else {
+                ScreenController.showWarningMessage(
+                    String.format("<html><b>%s</b><br>%s</html>",
+                        UiString.get(_S1),
+                        deck.getDescription()));
+            }
+        }
+    }
+
+    private boolean isDoubleClick(MouseEvent evt) {
+        return evt.getClickCount() == 2 && SwingUtilities.isLeftMouseButton(evt);
     }
 
     void setCard(MagicCardDefinition aCard) {
