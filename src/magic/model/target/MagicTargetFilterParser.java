@@ -118,6 +118,11 @@ public enum MagicTargetFilterParser {
             return MagicTargetFilterFactory.matchCardPrefix(arg.group(), ARG.wordrun(arg), MagicTargetType.Library);
         }
     },
+    CardFromAGraveyard(ARG.WORDRUN + " card from a graveyard") {
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return MagicTargetFilterFactory.matchCardPrefix(arg.group(), ARG.wordrun(arg), MagicTargetType.Graveyard).from(MagicTargetType.OpponentsGraveyard);
+        }
+    },
     CreatureYouControl(ARG.WORDRUN + " creature you control") {
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
             return MagicTargetFilterFactory.matchCreaturePrefix(arg.group(), ARG.wordrun(arg), Control.You);

@@ -197,8 +197,6 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicCardFilterImpl BLUE_INSTANT_CARD_FROM_LIBRARY = card(MagicColor.Blue).and(MagicType.Instant).from(MagicTargetType.Library);
-
     public static final MagicStackFilterImpl BLUE_SPELL_YOUR_TURN = new MagicStackFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicItemOnStack itemOnStack) {
             final MagicGame game = player.getGame();
@@ -412,7 +410,7 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl SNOW_LAND = permanentAnd(MagicType.Land, MagicType.Snow, Control.Any);
 
-    public static final MagicCardFilterImpl SNOW_LAND_CARD_FROM_LIBRARY = card(MagicType.Snow).and(MagicType.Land).from(MagicTargetType.Library);
+    public static final MagicCardFilterImpl SNOW_LAND_CARD = card(MagicType.Snow).and(MagicType.Land);
 
     public static final MagicCardFilterImpl LAND_CARD_FROM_LIBRARY = card(MagicType.Land).from(MagicTargetType.Library);
 
@@ -626,7 +624,7 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl CREATURE_OR_ENCHANTMENT = permanentOr(MagicType.Creature, MagicType.Enchantment, Control.Any);
 
-    public static final MagicCardFilterImpl CREATURE_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD = card(MagicType.Creature).or(MagicType.Enchantment).from(MagicTargetType.Graveyard);
+    public static final MagicCardFilterImpl CREATURE_OR_ENCHANTMENT_CARD = card(MagicType.Creature).or(MagicType.Enchantment);
 
     public static final MagicPermanentFilterImpl EQUIPMENT = permanent(MagicSubType.Equipment, Control.Any);
 
@@ -1501,32 +1499,19 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicCardFilterImpl COLORLESS_CREATURE_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
+    public static final MagicCardFilterImpl COLORLESS_CREATURE_CARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return MagicColor.isColorless(target) && target.isCreature();
         }
-
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Library;
-        }
     };
 
-    public static final MagicCardFilterImpl COLORLESS_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
+    public static final MagicCardFilterImpl COLORLESS_CARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return MagicColor.isColorless(target);
         }
-
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Library;
-        }
     };
 
-    public static final MagicCardFilterImpl AURA_OR_EQUIPMENT_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
-        @Override
-        public boolean acceptType(MagicTargetType targetType) {
-            return targetType == MagicTargetType.Library;
-        }
-
+    public static final MagicCardFilterImpl AURA_OR_EQUIPMENT_CARD = new MagicCardFilterImpl() {
         @Override
         public boolean accept(MagicSource source, MagicPlayer player, MagicCard target) {
             return target.hasSubType(MagicSubType.Aura) || target.hasSubType(MagicSubType.Equipment);
@@ -1554,10 +1539,12 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicCardFilterImpl ARTIFACT_OR_CREATURE_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD =
-        card(MagicType.Artifact).or(MagicType.Creature).or(MagicType.Enchantment).from(MagicTargetType.Graveyard);
+    public static final MagicCardFilterImpl ARTIFACT_OR_CREATURE_OR_ENCHANTMENT_CARD =
+        card(MagicType.Artifact).or(MagicType.Creature).or(MagicType.Enchantment);
 
     public static final MagicCardFilterImpl CREATURE_CARD_FROM_GRAVEYARD = card(MagicType.Creature).from(MagicTargetType.Graveyard);
+
+    public static final MagicCardFilterImpl CREATURE_CARD_FROM_ALL_GRAVEYARDS = card(MagicType.Creature).from(MagicTargetType.Graveyard).from(MagicTargetType.OpponentsGraveyard);
 
     public static final MagicCardFilterImpl CREATURE_CARD_FROM_LIBRARY = card(MagicType.Creature).from(MagicTargetType.Library);
 
@@ -1646,23 +1633,19 @@ public class MagicTargetFilterFactory {
     public static final MagicCardFilterImpl INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD =
         card(MagicType.Instant).or(MagicType.Sorcery).from(MagicTargetType.Graveyard);
 
-    public static final MagicCardFilterImpl INSTANT_OR_SORCERY_CARD_FROM_HAND =
-        card(MagicType.Instant).or(MagicType.Sorcery).from(MagicTargetType.Hand);
+    public static final MagicCardFilterImpl INSTANT_OR_SORCERY_CARD =
+        card(MagicType.Instant).or(MagicType.Sorcery);
 
-    public static final MagicCardFilterImpl INSTANT_SORCERY_OR_CREATURE_CARD_FROM_GRAVEYARD =
-        card(MagicType.Instant).or(MagicType.Sorcery).or(MagicType.Creature).from(MagicTargetType.Graveyard);
+    public static final MagicCardFilterImpl INSTANT_SORCERY_OR_CREATURE_CARD =
+        card(MagicType.Instant).or(MagicType.Sorcery).or(MagicType.Creature);
 
-    public static final MagicCardFilterImpl RED_SORCERY_CARD_FROM_GRAVEYARD =
-        card(MagicColor.Red).and(MagicType.Sorcery).from(MagicTargetType.Graveyard);
+    public static final MagicCardFilterImpl RED_SORCERY_CARD =
+        card(MagicColor.Red).and(MagicType.Sorcery);
 
-    public static final MagicCardFilterImpl BLUE_INSTANT_CARD_FROM_GRAVEYARD =
-        card(MagicColor.Blue).and(MagicType.Instant).from(MagicTargetType.Graveyard);
+    public static final MagicCardFilterImpl BLUE_INSTANT_CARD =
+        card(MagicColor.Blue).and(MagicType.Instant);
 
-    public static final MagicCardFilterImpl BLUE_OR_RED_CREATURE_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Graveyard;
-        }
-
+    public static final MagicCardFilterImpl BLUE_OR_RED_CREATURE_CARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasType(MagicType.Creature) &&
                 (target.hasColor(MagicColor.Blue) || target.hasColor(MagicColor.Red));
@@ -1689,14 +1672,9 @@ public class MagicTargetFilterFactory {
     public static final MagicCardFilterImpl ARTIFACT_CARD_FROM_GRAVEYARD =
         card(MagicType.Artifact).from(MagicTargetType.Graveyard);
 
-    public static final MagicCardFilterImpl ARTIFACT_CARD_FROM_ALL_GRAVEYARDS = new MagicCardFilterImpl() {
+    public static final MagicCardFilterImpl ARTIFACT_CARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasType(MagicType.Artifact);
-        }
-
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Graveyard ||
-                targetType == MagicTargetType.OpponentsGraveyard;
         }
     };
 
@@ -1712,25 +1690,16 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicCardFilterImpl NONCREATURE_NONLAND_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
+    public static final MagicCardFilterImpl NONCREATURE_NONLAND_CARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return !target.hasType(MagicType.Land) &&
                 !target.hasType(MagicType.Creature);
         }
-
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Graveyard;
-        }
     };
 
-    public static final MagicCardFilterImpl CREATURE_CARD_FROM_ALL_GRAVEYARDS = new MagicCardFilterImpl() {
+    public static final MagicCardFilterImpl CREATURE_CARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasType(MagicType.Creature);
-        }
-
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Graveyard ||
-                targetType == MagicTargetType.OpponentsGraveyard;
         }
     };
 
@@ -1744,36 +1713,21 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicCardFilterImpl ENCHANTMENT_CARD_FROM_ALL_GRAVEYARDS = new MagicCardFilterImpl() {
+    public static final MagicCardFilterImpl ENCHANTMENT_CARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasType(MagicType.Enchantment);
         }
-
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Graveyard ||
-                targetType == MagicTargetType.OpponentsGraveyard;
-        }
     };
 
-    public static final MagicCardFilterImpl INSTANT_CARD_FROM_ALL_GRAVEYARDS = new MagicCardFilterImpl() {
+    public static final MagicCardFilterImpl INSTANT_CARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasType(MagicType.Instant);
         }
-
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Graveyard ||
-                targetType == MagicTargetType.OpponentsGraveyard;
-        }
     };
 
-    public static final MagicCardFilterImpl SORCERY_CARD_FROM_ALL_GRAVEYARDS = new MagicCardFilterImpl() {
+    public static final MagicCardFilterImpl SORCERY_CARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasType(MagicType.Sorcery);
-        }
-
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Graveyard ||
-                targetType == MagicTargetType.OpponentsGraveyard;
         }
     };
 
@@ -1790,37 +1744,16 @@ public class MagicTargetFilterFactory {
 
     public static final MagicCardFilterImpl LAND_CARD_FROM_YOUR_GRAVEYARD = card(MagicType.Land).from(MagicTargetType.Graveyard);
 
-    public static final MagicCardFilterImpl LAND_CARD_FROM_ALL_GRAVEYARDS = new MagicCardFilterImpl() {
+    public static final MagicCardFilterImpl LAND_CARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasType(MagicType.Land);
         }
-
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Graveyard ||
-                targetType == MagicTargetType.OpponentsGraveyard;
-        }
     };
 
-    public static final MagicCardFilterImpl CREATURE_OR_LAND_CARD_FROM_ALL_GRAVEYARDS = new MagicCardFilterImpl() {
-        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
-            return target.hasType(MagicType.Land) || target.hasType(MagicType.Creature);
-        }
-
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Graveyard ||
-                   targetType == MagicTargetType.OpponentsGraveyard;
-        }
-    };
-
-    public static final MagicCardFilterImpl ARTIFACT_OR_CREATURE_CARD_FROM_ALL_GRAVEYARDS = new MagicCardFilterImpl() {
+    public static final MagicCardFilterImpl ARTIFACT_OR_CREATURE_CARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasType(MagicType.Creature) ||
                 target.hasType(MagicType.Artifact);
-        }
-
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Graveyard ||
-                targetType == MagicTargetType.OpponentsGraveyard;
         }
     };
 
@@ -1843,14 +1776,9 @@ public class MagicTargetFilterFactory {
 
     public static final MagicCardFilterImpl HUMAN_CREATURE_CARD_FROM_GRAVEYARD = card(MagicSubType.Human).and(MagicType.Creature).from(MagicTargetType.Graveyard);
 
-    public static final MagicCardFilterImpl FUNGUS_CARD_FROM_ALL_GRAVEYARDS = new MagicCardFilterImpl() {
+    public static final MagicCardFilterImpl FUNGUS_CARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasSubType(MagicSubType.Fungus);
-        }
-
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Graveyard ||
-                targetType == MagicTargetType.OpponentsGraveyard;
         }
     };
 
@@ -1876,18 +1804,14 @@ public class MagicTargetFilterFactory {
 
     public static final MagicCardFilterImpl CREATURE_CARD_FROM_HAND = card(MagicType.Creature).from(MagicTargetType.Hand);
 
-    public static final MagicCardFilterImpl CREATURE_OR_LAND_CARD_FROM_LIBRARY = card(MagicType.Creature).or(MagicType.Land).from(MagicTargetType.Library);
+    public static final MagicCardFilterImpl CREATURE_OR_LAND_CARD = card(MagicType.Creature).or(MagicType.Land);
 
-    public static final MagicCardFilterImpl ACELP_CARD_FROM_LIBRARY =
-        card(MagicType.Artifact).or(MagicType.Creature).or(MagicType.Enchantment).or(MagicType.Land).or(MagicType.Planeswalker).from(MagicTargetType.Library);
-
-    public static final MagicCardFilterImpl CREATURE_OR_ENCHANTMENT_CARD_FROM_LIBRARY = card(MagicType.Creature).or(MagicType.Enchantment).from(MagicTargetType.Library);
+    public static final MagicCardFilterImpl ACELP_CARD =
+        card(MagicType.Artifact).or(MagicType.Creature).or(MagicType.Enchantment).or(MagicType.Land).or(MagicType.Planeswalker);
 
     public static final MagicCardFilterImpl EQUIPMENT_CARD_FROM_HAND = card(MagicSubType.Equipment).from(MagicTargetType.Hand);
 
-    public static final MagicCardFilterImpl BLUE_OR_RED_CREATURE_CARD_FROM_HAND = card(MagicColor.Blue).or(MagicColor.Red).and(MagicType.Creature).from(MagicTargetType.Hand);
-
-    public static final MagicCardFilterImpl RED_OR_GREEN_CARD_FROM_HAND = card(MagicColor.Red).or(MagicColor.Green).from(MagicTargetType.Hand);
+    public static final MagicCardFilterImpl RED_OR_GREEN_CARD = card(MagicColor.Red).or(MagicColor.Green);
 
     public static final MagicPermanentFilterImpl MULTICOLORED_PERMANENT = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent permanent) {
@@ -1919,13 +1843,9 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicCardFilterImpl MULTICOLORED_CARD_FROM_GRAVEYARD = new MagicCardFilterImpl() {
+    public static final MagicCardFilterImpl MULTICOLORED_CARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return MagicColor.isMulti(target);
-        }
-
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Graveyard;
         }
     };
 
@@ -1953,33 +1873,21 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicCardFilterImpl MULTICOLORED_CREATURE_CARD_FROM_HAND = new MagicCardFilterImpl() {
+    public static final MagicCardFilterImpl MULTICOLORED_CREATURE_CARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasType(MagicType.Creature) && MagicColor.isMulti(target);
         }
-
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Hand;
-        }
     };
 
-    public static final MagicCardFilterImpl NONCREATURE_CARD_FROM_HAND = new MagicCardFilterImpl() {
+    public static final MagicCardFilterImpl NONCREATURE_CARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return !target.hasType(MagicType.Creature);
         }
-
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Hand;
-        }
     };
 
-    public static final MagicCardFilterImpl NONARTIFACT_NONLAND_CARD_FROM_HAND = new MagicCardFilterImpl() {
+    public static final MagicCardFilterImpl NONARTIFACT_NONLAND_CARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return !target.hasType(MagicType.Artifact) && !target.hasType(MagicType.Land);
-        }
-
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Hand;
         }
     };
 
@@ -2057,21 +1965,15 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl ARTIFACT_LAND = permanentAnd(MagicType.Artifact, MagicType.Land, Control.Any);
 
-    public static final MagicCardFilterImpl ARTIFACT_OR_CREATURE_OR_LAND_CARD_FROM_HAND = new MagicCardFilterImpl() {
+    public static final MagicCardFilterImpl ARTIFACT_OR_CREATURE_OR_LAND_CARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasType(MagicType.Artifact) ||
                 target.hasType(MagicType.Creature) ||
                 target.hasType(MagicType.Land);
         }
-
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Hand;
-        }
     };
 
     public static final MagicPermanentFilterImpl LEGENDARY_LAND = permanentAnd(MagicType.Legendary, MagicType.Land, Control.Any);
-
-    public static final MagicCardFilterImpl GREEN_CARD_FROM_HAND = card(MagicColor.Green).from(MagicTargetType.Hand);
 
     public static final MagicCardFilterImpl permanentCardMaxCMC(final MagicSubType subtype, final MagicTargetType from, final int cmc) {
         return new MagicCardFilterImpl() {
@@ -2127,7 +2029,7 @@ public class MagicTargetFilterFactory {
         };
     }
 
-    public static final MagicCardFilterImpl BASIC_LAND_CARD_FROM_HAND = card(MagicType.Basic).and(MagicType.Land).from(MagicTargetType.Hand);
+    public static final MagicCardFilterImpl BASIC_LAND_CARD = card(MagicType.Basic).and(MagicType.Land);
 
     public static final MagicCardFilterImpl BASIC_LAND_CARD_FROM_LIBRARY = card(MagicType.Basic).and(MagicType.Land).from(MagicTargetType.Library);
 
@@ -2142,20 +2044,14 @@ public class MagicTargetFilterFactory {
         }
     };
 
-    public static final MagicCardFilterImpl BASIC_LAND_CARD_FROM_YOUR_GRAVEYARD = card(MagicType.Basic).and(MagicType.Land).from(MagicTargetType.Graveyard);
-
-    public static final MagicCardFilterImpl BASIC_LAND_CARD_OR_GATE_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
-        public boolean acceptType(MagicTargetType targetType) {
-            return targetType == MagicTargetType.Library;
-        }
-
+    public static final MagicCardFilterImpl BASIC_LAND_CARD_OR_GATE_CARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, MagicPlayer player, MagicCard target) {
             return (target.hasType(MagicType.Basic) && target.hasType(MagicType.Land)) ||
                 target.hasSubType(MagicSubType.Gate);
         }
     };
 
-    public static final MagicCardFilterImpl BASIC_FOREST_PLAINS_OR_ISLAND_FROM_LIBRARY = new MagicCardFilterImpl() {
+    public static final MagicCardFilterImpl BASIC_FOREST_PLAINS_OR_ISLAND = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, MagicPlayer player, MagicCard target) {
             return target.hasType(MagicType.Basic) && (
                 target.hasSubType(MagicSubType.Forest) ||
@@ -2163,13 +2059,9 @@ public class MagicTargetFilterFactory {
                     target.hasSubType(MagicSubType.Island)
             );
         }
-
-        public boolean acceptType(MagicTargetType targetType) {
-            return targetType == MagicTargetType.Library;
-        }
     };
 
-    public static final MagicCardFilterImpl BASIC_PLAINS_ISLAND_OR_SWAMP_FROM_LIBRARY = new MagicCardFilterImpl() {
+    public static final MagicCardFilterImpl BASIC_PLAINS_ISLAND_OR_SWAMP = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, MagicPlayer player, MagicCard target) {
             return target.hasType(MagicType.Basic) && (
                 target.hasSubType(MagicSubType.Plains) ||
@@ -2177,13 +2069,9 @@ public class MagicTargetFilterFactory {
                     target.hasSubType(MagicSubType.Swamp)
             );
         }
-
-        public boolean acceptType(MagicTargetType targetType) {
-            return targetType == MagicTargetType.Library;
-        }
     };
 
-    public static final MagicCardFilterImpl BASIC_ISLAND_SWAMP_OR_MOUNTAIN_FROM_LIBRARY = new MagicCardFilterImpl() {
+    public static final MagicCardFilterImpl BASIC_ISLAND_SWAMP_OR_MOUNTAIN = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, MagicPlayer player, MagicCard target) {
             return target.hasType(MagicType.Basic) && (
                 target.hasSubType(MagicSubType.Island) ||
@@ -2191,13 +2079,9 @@ public class MagicTargetFilterFactory {
                     target.hasSubType(MagicSubType.Mountain)
             );
         }
-
-        public boolean acceptType(MagicTargetType targetType) {
-            return targetType == MagicTargetType.Library;
-        }
     };
 
-    public static final MagicCardFilterImpl BASIC_SWAMP_MOUNTAIN_OR_FOREST_FROM_LIBRARY = new MagicCardFilterImpl() {
+    public static final MagicCardFilterImpl BASIC_SWAMP_MOUNTAIN_OR_FOREST = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, MagicPlayer player, MagicCard target) {
             return target.hasType(MagicType.Basic) && (
                 target.hasSubType(MagicSubType.Swamp) ||
@@ -2205,13 +2089,9 @@ public class MagicTargetFilterFactory {
                     target.hasSubType(MagicSubType.Forest)
             );
         }
-
-        public boolean acceptType(MagicTargetType targetType) {
-            return targetType == MagicTargetType.Library;
-        }
     };
 
-    public static final MagicCardFilterImpl BASIC_MOUNTAIN_FOREST_OR_PLAINS_FROM_LIBRARY = new MagicCardFilterImpl() {
+    public static final MagicCardFilterImpl BASIC_MOUNTAIN_FOREST_OR_PLAINS = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, MagicPlayer player, MagicCard target) {
             return target.hasType(MagicType.Basic) && (
                 target.hasSubType(MagicSubType.Mountain) ||
@@ -2219,28 +2099,20 @@ public class MagicTargetFilterFactory {
                     target.hasSubType(MagicSubType.Plains)
             );
         }
-
-        public boolean acceptType(MagicTargetType targetType) {
-            return targetType == MagicTargetType.Library;
-        }
     };
 
-    public static final MagicCardFilterImpl PLAINS_ISLAND_SWAMP_OR_MOUNTAIN_CARD_FROM_LIBRARY = new MagicCardFilterImpl() {
+    public static final MagicCardFilterImpl PLAINS_ISLAND_SWAMP_OR_MOUNTAIN_CARD = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasSubType(MagicSubType.Plains) ||
                 target.hasSubType(MagicSubType.Island) ||
                 target.hasSubType(MagicSubType.Swamp) ||
                 target.hasSubType(MagicSubType.Mountain);
         }
-
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Library;
-        }
     };
 
     public static final MagicCardFilterImpl INSTANT_OR_FLASH_CARD_FROM_LIBRARY = card(MagicType.Instant).or(MagicAbility.Flash).from(MagicTargetType.Library);
 
-    public static final MagicCardFilterImpl LAND_CARD_WITH_BASIC_LAND_TYPE_FROM_LIBRARY = new MagicCardFilterImpl() {
+    public static final MagicCardFilterImpl LAND_CARD_WITH_BASIC_LAND_TYPE = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
             return target.hasSubType(MagicSubType.Plains) ||
                 target.hasSubType(MagicSubType.Island) ||
@@ -2248,11 +2120,9 @@ public class MagicTargetFilterFactory {
                 target.hasSubType(MagicSubType.Forest) ||
                 target.hasSubType(MagicSubType.Mountain);
         }
-
-        public boolean acceptType(final MagicTargetType targetType) {
-            return targetType == MagicTargetType.Library;
-        }
     };
+
+    public static final MagicCardFilterImpl LAND_CARD_WITH_BASIC_LAND_TYPE_FROM_LIBRARY = LAND_CARD_WITH_BASIC_LAND_TYPE.from(MagicTargetType.Library);
 
     public static final MagicCardFilterImpl NON_LEGENDARY_GREEN_CREATURE_CARD_WITH_CMC_LEQ_3_FROM_LIBRARY = new MagicCardFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
@@ -2424,31 +2294,87 @@ public class MagicTargetFilterFactory {
     private static final Map<String, MagicTargetFilter<?>> single =
         new TreeMap<String, MagicTargetFilter<?>>(String.CASE_INSENSITIVE_ORDER);
 
+    private static final Map<String, MagicCardFilterImpl> partial =
+        new TreeMap<String, MagicCardFilterImpl>(String.CASE_INSENSITIVE_ORDER);
+
     private static void add(final String key, final MagicTargetFilter<?> filter) {
         if (single.containsKey(key)) {
             throw new RuntimeException("duplicate key \"" + key + "\"");
-        } 
+        }
         single.put(key, filter);
+    }
+
+    private static void addp(final String key, final MagicCardFilterImpl filter) {
+        if (partial.containsKey(key)) {
+            throw new RuntimeException("duplicate key \"" + key + "\"");
+        }
+        partial.put(key, filter);
     }
 
     static {
         // used by MagicTargetChoice
+
+        // ... creature card
+        addp("blue or red creature card", BLUE_OR_RED_CREATURE_CARD);
+        addp("multicolored creature card", MULTICOLORED_CREATURE_CARD);
+        addp("instant, sorcery, or creature card", INSTANT_SORCERY_OR_CREATURE_CARD);
+        addp("artifact or creature card", ARTIFACT_OR_CREATURE_CARD);
+        addp("colorless creature card", COLORLESS_CREATURE_CARD);
+
+        // ... card
+        addp("instant or sorcery card", INSTANT_OR_SORCERY_CARD);
+        addp("red sorcery card", RED_SORCERY_CARD);
+        addp("blue instant card", BLUE_INSTANT_CARD);
+        addp("basic land card", BASIC_LAND_CARD);
+        addp("snow land card", SNOW_LAND_CARD);
+        addp("artifact or enchantment card", card(MagicType.Artifact).or(MagicType.Enchantment));
+        addp("artifact, creature, or enchantment card", ARTIFACT_OR_CREATURE_OR_ENCHANTMENT_CARD);
+        addp("creature or enchantment card", CREATURE_OR_ENCHANTMENT_CARD);
+        addp("multicolored card", MULTICOLORED_CARD);
+        addp("noncreature, nonland card", NONCREATURE_NONLAND_CARD);
+        addp("red or green card", RED_OR_GREEN_CARD);
+        addp("artifact, creature, or land card", ARTIFACT_OR_CREATURE_OR_LAND_CARD);
+        addp("noncreature card", NONCREATURE_CARD);
+        addp("nonartifact, nonland card", NONARTIFACT_NONLAND_CARD);
+        addp("basic land card or a Gate card", BASIC_LAND_CARD_OR_GATE_CARD);
+        addp("Plains, Island, Swamp, Mountain or Forest card", LAND_CARD_WITH_BASIC_LAND_TYPE);
+        addp("Plains or Island card", card(MagicSubType.Plains).or(MagicSubType.Island));
+        addp("Plains or Swamp card", card(MagicSubType.Plains).or(MagicSubType.Swamp));
+        addp("Island or Swamp card", card(MagicSubType.Island).or(MagicSubType.Swamp));
+        addp("Island or Mountain card", card(MagicSubType.Island).or(MagicSubType.Mountain));
+        addp("Swamp or Mountain card", card(MagicSubType.Swamp).or(MagicSubType.Mountain));
+        addp("Swamp or Forest card", card(MagicSubType.Swamp).or(MagicSubType.Forest));
+        addp("Mountain or Forest card", card(MagicSubType.Mountain).or(MagicSubType.Forest));
+        addp("Mountain or Plains card", card(MagicSubType.Mountain).or(MagicSubType.Plains));
+        addp("Forest or Plains card", card(MagicSubType.Forest).or(MagicSubType.Plains));
+        addp("Forest or Island card", card(MagicSubType.Forest).or(MagicSubType.Island));
+        addp("Plains, Island, Swamp, or Mountain card", PLAINS_ISLAND_SWAMP_OR_MOUNTAIN_CARD);
+        addp("Treefolk or Forest card", card(MagicSubType.Treefolk).or(MagicSubType.Forest));
+        addp("basic Forest, Plains, or Island card", BASIC_FOREST_PLAINS_OR_ISLAND);
+        addp("basic Plains, Island, or Swamp card", BASIC_PLAINS_ISLAND_OR_SWAMP);
+        addp("basic Island, Swamp, or Mountain card", BASIC_ISLAND_SWAMP_OR_MOUNTAIN);
+        addp("basic Swamp, Mountain, or Forest card", BASIC_SWAMP_MOUNTAIN_OR_FOREST);
+        addp("basic Mountain, Forest, or Plains card", BASIC_MOUNTAIN_FOREST_OR_PLAINS);
+        addp("aura or equipment card", AURA_OR_EQUIPMENT_CARD);
+        addp("creature or land card", CREATURE_OR_LAND_CARD);
+        addp("artifact, creature, enchantment, land, or planeswalker card", ACELP_CARD);
+        addp("colorless card", COLORLESS_CARD);
+        addp("artifact card", ARTIFACT_CARD);
+        addp("enchantment card", ENCHANTMENT_CARD);
+        addp("instant card", INSTANT_CARD);
+        addp("sorcery card", SORCERY_CARD);
+        addp("creature card", CREATURE_CARD);
+        addp("land card", LAND_CARD);
+        addp("Fungus card", FUNGUS_CARD);
+
+        // card from a graveyard
+        add("card from a graveyard", CARD_FROM_ALL_GRAVEYARDS);
+
         // <color|type|subtype> card from your graveyard
         add("card from your graveyard", CARD_FROM_GRAVEYARD);
-        add("instant or sorcery card from your graveyard", INSTANT_OR_SORCERY_CARD_FROM_GRAVEYARD);
-        add("instant, sorcery, or creature card from your graveyard", INSTANT_SORCERY_OR_CREATURE_CARD_FROM_GRAVEYARD);
-        add("red sorcery card from your graveyard", RED_SORCERY_CARD_FROM_GRAVEYARD);
-        add("blue instant card from your graveyard", BLUE_INSTANT_CARD_FROM_GRAVEYARD);
-        add("blue or red creature card from your graveyard", BLUE_OR_RED_CREATURE_CARD_FROM_GRAVEYARD);
-        add("artifact or enchantment card from your graveyard", card(MagicType.Artifact).or(MagicType.Enchantment).from(MagicTargetType.Graveyard));
-        add("artifact, creature, or enchantment card from your graveyard", ARTIFACT_OR_CREATURE_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD);
         add("artifact card with converted mana cost 1 or less from your graveyard", ARTIFACT_CARD_CMC_LEQ_1_FROM_GRAVEYARD);
-        add("creature or enchantment card from your graveyard", CREATURE_OR_ENCHANTMENT_CARD_FROM_GRAVEYARD);
         add("noncreature artifact card with converted mana cost 1 or less from your graveyard", NONCREATURE_ARTIFACT_CARD_WITH_CMC_LEQ_1_FROM_GRAVEYARD);
         add("Rebel permanent card with converted mana cost 5 or less from your graveyard", permanentCardMaxCMC(MagicSubType.Rebel, MagicTargetType.Graveyard, 5));
-        add("multicolored card from your graveyard", MULTICOLORED_CARD_FROM_GRAVEYARD);
-        add("basic land card from your graveyard", BASIC_LAND_CARD_FROM_YOUR_GRAVEYARD);
-        add("noncreature, nonland card from your graveyard", NONCREATURE_NONLAND_CARD_FROM_GRAVEYARD);
 
         // <color|type|subtype> permanent card from your graveyard
         add("permanent card from your graveyard", PERMANENT_CARD_FROM_GRAVEYARD);
@@ -2462,62 +2388,20 @@ public class MagicTargetFilterFactory {
         add("creature card with scavenge from your graveyard", PAYABLE_CREATURE_CARD_FROM_GRAVEYARD);
 
         // <color|type|subtype> card from an opponent's graveyard
-        add("instant or sorcery card from an opponent's graveyard", INSTANT_OR_SORCERY_CARD_FROM_OPPONENTS_GRAVEYARD);
         add("card from an opponent's graveyard", CARD_FROM_OPPONENTS_GRAVEYARD);
         add("creature card in an opponent's graveyard", CREATURE_CARD_FROM_OPPONENTS_GRAVEYARD);
 
         // <color|type|subtype> card from your hand
         add("card from your hand", CARD_FROM_HAND);
         add("instant card with converted mana cost 2 or less from your hand", INSTANT_LEQ_CMC_2_FROM_HAND);
-        add("red or green card from your hand", RED_OR_GREEN_CARD_FROM_HAND);
-        add("basic land card from your hand", BASIC_LAND_CARD_FROM_HAND);
-        add("artifact, creature, or land card from your hand", ARTIFACT_OR_CREATURE_OR_LAND_CARD_FROM_HAND);
-        add("instant or sorcery card from your hand", INSTANT_OR_SORCERY_CARD_FROM_HAND);
-
-        // <color|type|subtype> permanent card from your hand
-
-        // <color|type|subtype> creature card from your hand
-        add("blue or red creature card from your hand", BLUE_OR_RED_CREATURE_CARD_FROM_HAND);
-        add("multicolored creature card from your hand", MULTICOLORED_CREATURE_CARD_FROM_HAND);
-        add("noncreature card from your hand", NONCREATURE_CARD_FROM_HAND);
-        add("nonartifact, nonland card from your hand", NONARTIFACT_NONLAND_CARD_FROM_HAND);
 
         // <color|type|subtype> card from your library
         add("card from your library", CARD_FROM_LIBRARY);
-        add("basic land card from your library", BASIC_LAND_CARD_FROM_LIBRARY);
-        add("snow land card from your library", SNOW_LAND_CARD_FROM_LIBRARY);
-        add("basic land card or a Gate card from your library", BASIC_LAND_CARD_OR_GATE_CARD_FROM_LIBRARY);
-        add("Plains, Island, Swamp, Mountain or Forest card from your library", LAND_CARD_WITH_BASIC_LAND_TYPE_FROM_LIBRARY);
-        add("Plains or Island card from your library", card(MagicSubType.Plains).or(MagicSubType.Island).from(MagicTargetType.Library));
-        add("Plains or Swamp card from your library", card(MagicSubType.Plains).or(MagicSubType.Swamp).from(MagicTargetType.Library));
-        add("Island or Swamp card from your library", card(MagicSubType.Island).or(MagicSubType.Swamp).from(MagicTargetType.Library));
-        add("Island or Mountain card from your library", card(MagicSubType.Island).or(MagicSubType.Mountain).from(MagicTargetType.Library));
-        add("Swamp or Mountain card from your library", card(MagicSubType.Swamp).or(MagicSubType.Mountain).from(MagicTargetType.Library));
-        add("Swamp or Forest card from your library", card(MagicSubType.Swamp).or(MagicSubType.Forest).from(MagicTargetType.Library));
-        add("Mountain or Forest card from your library", card(MagicSubType.Mountain).or(MagicSubType.Forest).from(MagicTargetType.Library));
-        add("Mountain or Plains card from your library", card(MagicSubType.Mountain).or(MagicSubType.Plains).from(MagicTargetType.Library));
-        add("Forest or Plains card from your library", card(MagicSubType.Forest).or(MagicSubType.Plains).from(MagicTargetType.Library));
-        add("Forest or Island card from your library", card(MagicSubType.Forest).or(MagicSubType.Island).from(MagicTargetType.Library));
-        add("Plains, Island, Swamp, or Mountain card from your library", PLAINS_ISLAND_SWAMP_OR_MOUNTAIN_CARD_FROM_LIBRARY);
         add("land card with a basic land type from your library", LAND_CARD_WITH_BASIC_LAND_TYPE_FROM_LIBRARY);
-        add("artifact or enchantment card from your library", card(MagicType.Artifact).or(MagicType.Enchantment).from(MagicTargetType.Library));
-        add("instant or sorcery card from your library", card(MagicType.Instant).or(MagicType.Sorcery).from(MagicTargetType.Library));
-        add("Treefolk or Forest card from your library", card(MagicSubType.Treefolk).or(MagicSubType.Forest).from(MagicTargetType.Library));
         add("instant card or a card with flash from your library", INSTANT_OR_FLASH_CARD_FROM_LIBRARY);
-        add("basic Forest, Plains, or Island card from your library", BASIC_FOREST_PLAINS_OR_ISLAND_FROM_LIBRARY);
-        add("basic Plains, Island, or Swamp card from your library", BASIC_PLAINS_ISLAND_OR_SWAMP_FROM_LIBRARY);
-        add("basic Island, Swamp, or Mountain card from your library", BASIC_ISLAND_SWAMP_OR_MOUNTAIN_FROM_LIBRARY);
-        add("basic Swamp, Mountain, or Forest card from your library", BASIC_SWAMP_MOUNTAIN_OR_FOREST_FROM_LIBRARY);
-        add("basic Mountain, Forest, or Plains card from your library", BASIC_MOUNTAIN_FOREST_OR_PLAINS_FROM_LIBRARY);
         add("enchantment card with converted mana cost 3 or less from your library", permanentCardMaxCMC(MagicType.Enchantment, MagicTargetType.Library, 3));
         add("artifact card with converted mana cost 1 or less from your library", permanentCardMaxCMC(MagicType.Artifact, MagicTargetType.Library, 1));
         add("artifact card with converted mana cost 6 or greater from your library", permanentCardMinCMC(MagicType.Artifact, MagicTargetType.Library, 6));
-        add("blue instant card from your library", BLUE_INSTANT_CARD_FROM_LIBRARY);
-        add("aura or equipment card from your library", AURA_OR_EQUIPMENT_CARD_FROM_LIBRARY);
-        add("creature or land card from your library", CREATURE_OR_LAND_CARD_FROM_LIBRARY);
-        add("creature or enchantment card from your library", CREATURE_OR_ENCHANTMENT_CARD_FROM_LIBRARY);
-        add("artifact, creature, enchantment, land, or planeswalker card from your library", ACELP_CARD_FROM_LIBRARY);
-        add("colorless card from your library", COLORLESS_CARD_FROM_LIBRARY);
 
         // <color|type|subtype> permanent card from your library
         add("Rebel permanent card with converted mana cost 1 or less from your library", permanentCardMaxCMC(MagicSubType.Rebel, MagicTargetType.Library, 1));
@@ -2537,7 +2421,6 @@ public class MagicTargetFilterFactory {
         add("creature card with converted mana cost 1 or less from your library", permanentCardMaxCMC(MagicType.Creature, MagicTargetType.Library, 1));
         add("creature card with converted mana cost 6 or greater from your library", permanentCardMinCMC(MagicType.Creature, MagicTargetType.Library, 6));
         add("creature card with power 2 or less from your library", CREATURE_CARD_POWER_LEQ_2_FROM_LIBRARY);
-        add("colorless creature card from your library", COLORLESS_CREATURE_CARD_FROM_LIBRARY);
         add("creature card with deathtouch, hexproof, reach, or trample from your library", CREATURE_WITH_DEATHTOUCH_HEXPROOF_REACH_OR_TRAMPLE_FROM_LIBRARY);
         add("nonlegendary green creature card with converted mana cost 3 or less from your library", NON_LEGENDARY_GREEN_CREATURE_CARD_WITH_CMC_LEQ_3_FROM_LIBRARY);
 
@@ -2832,19 +2715,6 @@ public class MagicTargetFilterFactory {
         add("player that controls a creature", PLAYER_CONTROLS_CREATURE);
         add("defending player", DEFENDING_PLAYER);
 
-        // from a graveyard
-        add("card from a graveyard", CARD_FROM_ALL_GRAVEYARDS);
-        add("artifact card from a graveyard", ARTIFACT_CARD_FROM_ALL_GRAVEYARDS);
-        add("enchantment card from a graveyard", ENCHANTMENT_CARD_FROM_ALL_GRAVEYARDS);
-        add("instant card from a graveyard", INSTANT_CARD_FROM_ALL_GRAVEYARDS);
-        add("sorcery card from a graveyard", SORCERY_CARD_FROM_ALL_GRAVEYARDS);
-        add("instant or sorcery card from a graveyard", INSTANT_OR_SORCERY_CARD_FROM_ALL_GRAVEYARDS);
-        add("artifact or creature card from a graveyard", ARTIFACT_OR_CREATURE_CARD_FROM_ALL_GRAVEYARDS);
-        add("creature card from a graveyard", CREATURE_CARD_FROM_ALL_GRAVEYARDS);
-        add("land card from a graveyard", LAND_CARD_FROM_ALL_GRAVEYARDS);
-        add("creature or land card from a graveyard", CREATURE_OR_LAND_CARD_FROM_ALL_GRAVEYARDS);
-        add("Fungus card from a graveyard", FUNGUS_CARD_FROM_ALL_GRAVEYARDS);
-
         // using source
         add("you", YOU);
         add("SN", SN);
@@ -2973,7 +2843,7 @@ public class MagicTargetFilterFactory {
         }
     }
 
-    public static MagicTargetFilter<MagicCard> matchCardPrefix(final String arg, final String prefix, final MagicTargetType location) {
+    public static MagicCardFilterImpl matchCardPrefix(final String arg, final String prefix, final MagicTargetType location) {
         for (final MagicColor c : MagicColor.values()) {
             if (prefix.equalsIgnoreCase(c.getName())) {
                 return card(c).from(location);
@@ -2988,6 +2858,10 @@ public class MagicTargetFilterFactory {
             if (prefix.equalsIgnoreCase(st.toString())) {
                 return card(st).from(location);
             }
+        }
+        final String withSuffix = prefix + " card";
+        if (partial.containsKey(withSuffix)) {
+            return partial.get(withSuffix).from(location);
         }
         throw new RuntimeException("unknown target filter \"" + arg + "\"");
     }
@@ -3026,6 +2900,10 @@ public class MagicTargetFilterFactory {
             if (prefix.equalsIgnoreCase(st.toString())) {
                 return card(st).and(MagicType.Creature).from(location);
             }
+        }
+        final String withSuffix = prefix + " creature card";
+        if (partial.containsKey(withSuffix)) {
+            return partial.get(withSuffix).from(location);
         }
         throw new RuntimeException("unknown target filter \"" + arg + "\"");
     }
@@ -3413,10 +3291,6 @@ public class MagicTargetFilterFactory {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
                 return true;
             }
-
-            public boolean acceptType(final MagicTargetType targetType) {
-                return false;
-            }
         };
     }
 
@@ -3424,10 +3298,6 @@ public class MagicTargetFilterFactory {
         return new MagicCardFilterImpl() {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
                 return target.hasType(type);
-            }
-
-            public boolean acceptType(final MagicTargetType targetType) {
-                return false;
             }
         };
     }
@@ -3437,10 +3307,6 @@ public class MagicTargetFilterFactory {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
                 return target.hasSubType(subType);
             }
-
-            public boolean acceptType(final MagicTargetType targetType) {
-                return false;
-            }
         };
     }
 
@@ -3449,10 +3315,6 @@ public class MagicTargetFilterFactory {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
                 return target.hasColor(color);
             }
-
-            public boolean acceptType(final MagicTargetType targetType) {
-                return false;
-            }
         };
     }
 
@@ -3460,10 +3322,6 @@ public class MagicTargetFilterFactory {
         return new MagicCardFilterImpl() {
             public boolean accept(final MagicSource source, final MagicPlayer player, final MagicCard target) {
                 return target.getName().equalsIgnoreCase(name);
-            }
-
-            public boolean acceptType(MagicTargetType targetType) {
-                return false;
             }
         };
     }

@@ -72,14 +72,16 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
         }
     }
 
+    @Override
+    public boolean acceptType(final MagicTargetType targetType) {
+        return false;
+    }
+
     public MagicCardFilterImpl or(final MagicType type) {
         final MagicCardFilterImpl curr = this;
         return new MagicCardFilterImpl() {
             public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
                 return curr.accept(source, player, target) || target.hasType(type);
-            }
-            public boolean acceptType(final MagicTargetType targetType) {
-                return false;
             }
         };
     }
@@ -89,9 +91,6 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
             public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
                 return curr.accept(source, player, target) || target.hasSubType(subType);
             }
-            public boolean acceptType(final MagicTargetType targetType) {
-                return false;
-            }
         };
     }
     public MagicCardFilterImpl or(final MagicColor color) {
@@ -99,9 +98,6 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
         return new MagicCardFilterImpl() {
             public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
                 return curr.accept(source, player, target) || target.hasColor(color);
-            }
-            public boolean acceptType(final MagicTargetType targetType) {
-                return false;
             }
         };
     }
@@ -111,9 +107,6 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
             public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
                 return curr.accept(source, player, target) || target.hasAbility(ability);
             }
-            public boolean acceptType(final MagicTargetType targetType) {
-                return false;
-            }
         };
     }
     public MagicCardFilterImpl and(final MagicType type) {
@@ -121,9 +114,6 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
         return new MagicCardFilterImpl() {
             public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
                 return curr.accept(source, player, target) && target.hasType(type);
-            }
-            public boolean acceptType(final MagicTargetType targetType) {
-                return false;
             }
         };
     }
@@ -133,9 +123,6 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
             public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
                 return curr.accept(source, player, target) && target.hasSubType(subType);
             }
-            public boolean acceptType(final MagicTargetType targetType) {
-                return false;
-            }
         };
     }
     public MagicCardFilterImpl and(final MagicColor color) {
@@ -143,9 +130,6 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
         return new MagicCardFilterImpl() {
             public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
                 return curr.accept(source, player, target) && target.hasColor(color);
-            }
-            public boolean acceptType(final MagicTargetType targetType) {
-                return false;
             }
         };
     }
@@ -155,9 +139,6 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
             public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
                 return curr.accept(source, player, target) && target.hasAbility(ability);
             }
-            public boolean acceptType(final MagicTargetType targetType) {
-                return false;
-            }
         };
     }
     public MagicCardFilterImpl permanent() {
@@ -165,9 +146,6 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
         return new MagicCardFilterImpl() {
             public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
                 return curr.accept(source, player, target) && target.isPermanentCard();
-            }
-            public boolean acceptType(final MagicTargetType targetType) {
-                return false;
             }
         };
     }
@@ -177,9 +155,6 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
             public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
                 return curr.accept(source, player, target) && target.getConvertedCost() <= n;
             }
-            public boolean acceptType(final MagicTargetType targetType) {
-                return false;
-            }
         };
     }
     public MagicCardFilterImpl powerLEQ(final int n) {
@@ -187,9 +162,6 @@ public abstract class MagicCardFilterImpl implements MagicTargetFilter<MagicCard
         return new MagicCardFilterImpl() {
             public boolean accept(final MagicSource source,final MagicPlayer player,final MagicCard target) {
                 return curr.accept(source, player, target) && target.getPower() <= n;
-            }
-            public boolean acceptType(final MagicTargetType targetType) {
-                return false;
             }
         };
     }

@@ -281,12 +281,6 @@ public class MagicTargetChoice extends MagicChoice {
     public static final MagicTargetChoice A_CREATURE_CARD_FROM_LIBRARY =
         new MagicTargetChoice("a creature card from your library");
 
-    public static final MagicTargetChoice SWAMP_OR_MOUNTAIN_CARD_FROM_LIBRARY =
-        new MagicTargetChoice("a Swamp or Mountain card from your library");
-
-    public static final MagicTargetChoice PLAINS_ISLAND_SWAMP_OR_MOUNTAIN_CARD_FROM_LIBRARY =
-        new MagicTargetChoice("a Plains, Island, Swamp, or Mountain card from your library");
-
     public static final MagicTargetChoice LAND_CARD_WITH_BASIC_LAND_TYPE_FROM_LIBRARY =
         new MagicTargetChoice("a land card with a basic land type from your library");
 
