@@ -78,6 +78,10 @@ melvin
 muppet
 ShawnieBoy
 
+- show unimplemented card image in color on mouse over in card explorer
+
+- add watermark to card image to indicate card is transformable in CardViewer
+
 - add Korean to card text combo in download images dialog.
 
 - update card images to SOI release
@@ -87,6 +91,7 @@ ShawnieBoy
 - added the following to the card script:
     * condition: during combat after blockers are declared
     * condition: during combat before blockers are declared
+    * condition: during the declare blockers step
     * condition: enchanted creature is <filter>
     * condition: equipped creature is <filter>
     * cost: Exile <amount> <permanents>
@@ -103,11 +108,17 @@ ShawnieBoy
     * effect: Reveal the top <amount> cards of your library. You may put a <card> from among them into your hand. Put the rest into your graveyard.
     * effect: Transform <permanents>.
     * effect: Exile <permanents> until SN leaves the battlefield.
+    * effect: Choose one (1) <effect> (2) <effect> (3) <effect> (4) <effect>
+    * effect: <permanents> becomes blocked.
+    * effect: <players> gain/lose life equal to <amount>.
     * ability: Equip <cost> to a <filter>, Equip {2} creature with power 3 or greater
     * ability: <permanenst> get (+|-)(X|0)/(+|-)(X|0), where X is <count>.
     * ability: (+|-)<N>: <effect> (loyalty ability)
     * ability: If <condition>, you may <cost> rather than pay SN's mana cost.
     * ability: When this creature transforms into SN, <effect>.
+    * ability: Whenever you sacrifice a <permanent>, <effect>.
+    * ability: Whenever a player sacrifices a <permanent>, <effect>.
+    * ability: Protection from multicolored
 
 - fixed the following bugs:
     * Sigil of Valor counts the equipped creature (issue #773)
