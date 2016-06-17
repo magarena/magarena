@@ -4,6 +4,6 @@ value=2.971
 rarity=R
 type=Enchantment
 cost={1}{G}
-ability={1}{G}, Sacrifice a non-Ooze creature: Put an X/X green Ooze creature token onto the battlefield, where X is the sacrificed creature's power. Activate this ability only any time you could cast a sorcery.
 timing=enchantment
+requires_groovy_code
 oracle={1}{G}, Sacrifice a non-Ooze creature: Put an X/X green Ooze creature token onto the battlefield, where X is the sacrificed creature's power. Activate this ability only any time you could cast a sorcery.
