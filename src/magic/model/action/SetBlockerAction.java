@@ -3,7 +3,6 @@ package magic.model.action;
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
 import magic.model.MagicPermanentState;
-import magic.model.trigger.MagicTriggerType;
 
 public class SetBlockerAction extends MagicAction {
 
@@ -20,11 +19,10 @@ public class SetBlockerAction extends MagicAction {
     public void doAction(final MagicGame game) {
         attacker.addBlockingCreature(blocker);
         blocker.setBlockedCreature(attacker);
-        game.doAction(ChangeStateAction.Set(blocker,MagicPermanentState.Blocking));
+        blocker.setState(MagicPermanentState.Blocking);
         unblocked=!attacker.hasState(MagicPermanentState.Blocked);
         if (unblocked) {
-            game.doAction(ChangeStateAction.Set(attacker, MagicPermanentState.Blocked));
-            game.executeTrigger(MagicTriggerType.WhenBecomesBlocked, attacker);
+            game.doAction(ChangeStateAction.Set(attacker, MagicPermanentState.Blocked);
         }
     }
 
@@ -32,10 +30,7 @@ public class SetBlockerAction extends MagicAction {
     public void undoAction(final MagicGame game) {
         attacker.removeBlockingCreature(blocker);
         blocker.setBlockedCreature(MagicPermanent.NONE);
-        game.doAction(ChangeStateAction.Clear(blocker, MagicPermanentState.Blocking));
-        if (unblocked) {
-            game.doAction(ChangeStateAction.Clear(attacker, MagicPermanentState.Blocked));
-        }
+        blocker.clearState(MagicPermanentState.Blocking);
     }
 }
 
