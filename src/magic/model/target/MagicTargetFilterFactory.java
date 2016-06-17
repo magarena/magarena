@@ -2779,6 +2779,7 @@ public class MagicTargetFilterFactory {
             .replaceAll("\\bin your hand\\b", "from your hand")
             .replaceAll("\\bin your graveyard\\b", "from your graveyard")
             .replaceAll("\\bin all graveyards\\b", "from a graveyard")
+            .replaceAll("\\bfrom all graveyards\\b", "from a graveyard")
             .replaceAll("\\byour opponents control\\b", "an opponent controls")
             .replaceAll("\\byour opponents' graveyards\\b", "an opponent's graveyard")
             .replaceAll("QUOTE", "")
