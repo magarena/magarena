@@ -25,7 +25,6 @@ public enum MagicTriggerType {
     WhenOtherDies,          // permanent
     WhenAttacks,            // permanent
     WhenBlocks,             // permanent
-    WhenBecomesBlocked,     // permanent
     WhenAttacksUnblocked,   // permanent
     WhenTargeted,           // permanent
     WhenLoseControl,        // permanent

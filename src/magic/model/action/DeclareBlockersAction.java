@@ -25,10 +25,6 @@ public class DeclareBlockersAction extends MagicAction {
                 for (int index=1;index<creatures.length;index++) {
                     game.doAction(new DeclareBlockerAction(attacker,creatures[index].permanent));
                 }
-
-                if (attacker.isBlocked()) {
-                    game.executeTrigger(MagicTriggerType.WhenBecomesBlocked,attacker);
-                }
             }
         }
 

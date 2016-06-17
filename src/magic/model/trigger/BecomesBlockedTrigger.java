@@ -2,20 +2,34 @@ package magic.model.trigger;
 
 import magic.model.MagicGame;
 import magic.model.MagicPermanent;
+import magic.model.MagicPermanentState;
 import magic.model.event.MagicSourceEvent;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTargetFilter;
+import magic.model.action.ChangeStateAction;
 
-public abstract class BecomesBlockedTrigger extends MagicTrigger<MagicPermanent> {
+public abstract class BecomesBlockedTrigger extends BecomesStateTrigger {
     public BecomesBlockedTrigger(final int priority) {
         super(priority);
     }
 
     public BecomesBlockedTrigger() {}
 
-    public MagicTriggerType getType() {
-        return MagicTriggerType.WhenBecomesBlocked;
+    @Override
+    public boolean accept(final MagicPermanent permanent, final ChangeStateAction act) {
+        return act.state == MagicPermanentState.Blocked && accept(permanent, act.permanent);
     }
+
+    public boolean accept(final MagicPermanent permanent, final MagicPermanent blocker) {
+        return true;
+    }
+
+    @Override
+    public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final ChangeStateAction act) {
+        return executeTrigger(game, permanent, act.permanent);
+    }
+
+    abstract public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent, final MagicPermanent blocked);
 
     public static final BecomesBlockedTrigger create(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent) {
         return new BecomesBlockedTrigger() {
