@@ -869,7 +869,7 @@ public enum MagicRuleEventAction {
         }
     },
     GainLife(
-        ARG.PLAYERS + "( )?gain(s)? " + ARG.AMOUNT + " life( for each " + ARG.WORDRUN + ")?",
+        ARG.PLAYERS + "( )?gain(s)?( " + ARG.AMOUNT + ")? life( (for each|equal to) " + ARG.WORDRUN + ")?",
         MagicTargetHint.Positive,
         MagicTiming.Removal,
         "+Life"
@@ -892,7 +892,7 @@ public enum MagicRuleEventAction {
         }
     },
     LoseLife(
-        ARG.PLAYERS + "( )?lose(s)? " + ARG.AMOUNT + " life( for each " + ARG.WORDRUN + ")?",
+        ARG.PLAYERS + "( )?lose(s)?( " + ARG.AMOUNT + ")? life( (for each|equal to) " + ARG.WORDRUN + ")?",
         MagicTargetHint.Negative,
         MagicTiming.Removal,
         "-Life"
