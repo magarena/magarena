@@ -23,6 +23,7 @@
                     it.setPowerToughness(power, toughness);
                     it.addSubType(MagicSubType.Construct);
                     it.addType(MagicType.Creature);
+                    it.addType(MagicType.Artifact);
                     it.setToken();
                     it.setValue(power);
                     it.setColors("");
