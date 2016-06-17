@@ -15,10 +15,10 @@
             final int amount=event.getRefPermanent().getPower();
             game.logAppendValue(event.getPlayer(),amount);
             game.doAction(new PlayTokensAction(
-                    event.getPlayer(),
-                    CardDefinitions.getToken("0/1 black Insect creature token"),
-                    amount
-                ));
+                event.getPlayer(),
+                CardDefinitions.getToken("0/1 black Insect creature token"),
+                amount
+            ));
         }
     }
 ]
