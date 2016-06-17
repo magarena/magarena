@@ -753,6 +753,13 @@ public class MagicTargetFilterFactory {
         }
     };
 
+    public static final MagicPermanentFilterImpl SKELETON_TOKEN = new MagicPermanentFilterImpl() {
+        public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
+            return target.hasSubType(MagicSubType.Skeleton) &&
+                target.isToken();
+        }
+    };
+
     public static final MagicPermanentFilterImpl CREATURE_THAT_ISNT_ENCHANTED = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
             return target.isCreature() && target.isEnchanted() == false;
@@ -2537,6 +2544,7 @@ public class MagicTargetFilterFactory {
         add("creature without flying or a planeswalker", CREATURE_WITHOUT_FLYING_OR_PLANESWALKER);
         add("creature token", CREATURE_TOKEN);
         add("serf token", SERF_TOKEN);
+        add("skeleton token", SKELETON_TOKEN);
         add("nonsnow creature", NONSNOW_CREATURE);
         add("creature that is enchanted", CREATURE_ENCHANTED);
         add("creature that is equipped", CREATURE_EQUIPPED);
