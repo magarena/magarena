@@ -6,7 +6,7 @@
                 permanent,
                 permanent.getPower(),
                 this,
-                "PN puts an RN/RN black Horror creature token onto the battlefield."
+                "PN puts an X/X black Horror creature token onto the battlefield, where X is SN's power. (RN)"
             );
         }
 
