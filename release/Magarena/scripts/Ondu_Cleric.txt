@@ -6,6 +6,6 @@ type=Creature
 subtype=Kor,Cleric,Ally
 cost={1}{W}
 pt=1/1
+ability=Whenever SN or another Ally enters the battlefield under your control, you may gain life equal to the number of Allies you control.
 timing=main
-requires_groovy_code
 oracle=Whenever Ondu Cleric or another Ally enters the battlefield under your control, you may gain life equal to the number of Allies you control.

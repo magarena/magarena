@@ -4,6 +4,6 @@ value=3.041
 rarity=C
 type=Instant
 cost={G}
+effect=You gain life equal to the number of creature cards in your graveyard.
 timing=pump
-requires_groovy_code
 oracle=You gain life equal to the number of creature cards in your graveyard.

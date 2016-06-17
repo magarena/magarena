@@ -4,6 +4,6 @@ value=2.577
 rarity=C
 type=Sorcery
 cost={2}{G}{G}
+effect=You gain life equal to the number of creature cards in all graveyards.
 timing=main
-requires_groovy_code
 oracle=You gain life equal to the number of creature cards in all graveyards.

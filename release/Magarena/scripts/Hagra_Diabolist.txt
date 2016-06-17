@@ -6,6 +6,6 @@ type=Creature
 subtype=Ogre,Shaman,Ally
 cost={4}{B}
 pt=3/2
+ability=Whenever SN or another Ally enters the battlefield under your control, you may have target player lose life equal to the number of Allies you control.
 timing=main
-requires_groovy_code
 oracle=Whenever Hagra Diabolist or another Ally enters the battlefield under your control, you may have target player lose life equal to the number of Allies you control.

@@ -6,7 +6,7 @@ type=Creature
 subtype=Zombie
 cost={5}{B}
 pt=4/3
-ability=Cycling {B}{B}
+ability=Cycling {B}{B};\
+        When you cycle SN, you may have target player lose life equal to the number of Zombies on the battlefield.
 timing=main
-requires_groovy_code
 oracle=Cycling {B}{B}\nWhen you cycle Gempalm Polluter, you may have target player lose life equal to the number of Zombies on the battlefield.

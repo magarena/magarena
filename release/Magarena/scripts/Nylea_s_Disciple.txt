@@ -6,6 +6,6 @@ type=Creature
 subtype=Centaur,Archer
 cost={2}{G}{G}
 pt=3/3
+ability=When SN enters the battlefield, you gain life equal to your devotion to green.
 timing=main
-requires_groovy_code
 oracle=When Nylea's Disciple enters the battlefield, you gain life equal to your devotion to green.

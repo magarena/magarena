@@ -6,7 +6,7 @@ type=Creature
 subtype=Boar,Beast
 cost={2}{G}
 pt=2/2
-ability=bloodthirst 1
+ability=Bloodthirst 1;\
+        Sacrifice SN: You gain life equal to SN's power.
 timing=main
-requires_groovy_code
 oracle=Bloodthirst 1\nSacrifice Gristleback: You gain life equal to Gristleback's power.

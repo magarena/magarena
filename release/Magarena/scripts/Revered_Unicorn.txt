@@ -6,7 +6,7 @@ type=Creature
 subtype=Unicorn
 cost={1}{W}
 pt=2/3
-ability=cumulative upkeep {1}
+ability=Cumulative upkeep {1};\
+        When SN leaves the battlefield, you gain life equal to the number of age counters on SN.
 timing=main
-requires_groovy_code
 oracle=Cumulative upkeep {1}\nWhen Revered Unicorn leaves the battlefield, you gain life equal to the number of age counters on it.
