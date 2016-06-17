@@ -2774,6 +2774,7 @@ public class MagicTargetFilterFactory {
             .replaceAll("\\bsnakes\\b", "snake")
             .replaceAll("\\bgorgons\\b", "gorgon")
             .replaceAll("\\bplaneswalkers\\b", "planeswalker")
+            .replaceAll("\\bgiants\\b", "giant")
             .replaceAll("\\band\\b", "or")
             .replaceAll("\\bthem\\b", "it")
             .replaceAll("\\bin your hand\\b", "from your hand")
