@@ -1,0 +1,10 @@
+name=1/1 black Skeleton creature token
+token=Skeleton
+image=http://magiccards.info/extras/token/shards-of-alara/skeleton.jpg
+value=1
+type=Creature
+subtype=Skeleton
+color=b
+pt=1/1
+ability={B}: Regenerate SN.
+oracle={B}: Regenerate this creature.
