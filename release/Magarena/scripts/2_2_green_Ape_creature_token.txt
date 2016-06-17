@@ -1,0 +1,9 @@
+name=2/2 green Ape creature token
+token=Ape
+image=http://cdn.staticneo.com/w/mtg/9/97/Ape1.jpg
+value=2
+pt=2/2
+color=g
+type=Creature
+subtype=Ape
+oracle=NONE
