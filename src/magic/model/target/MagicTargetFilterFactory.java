@@ -1334,6 +1334,8 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl ATTACKING_CREATURE_YOU_CONTROL = creature(MagicPermanentState.Attacking, Control.You);
 
+    public static final MagicPermanentFilterImpl ATTACKING_CREATURE_OPP_CONTROL = creature(MagicPermanentState.Attacking, Control.Opp);
+
     public static final MagicPermanentFilterImpl BLOCKING_CREATURE_YOU_CONTROL = creature(MagicPermanentState.Blocking, Control.You);
 
     public static final MagicPermanentFilterImpl CREATURE_BLOCKING_SN = new MagicPermanentFilterImpl() {
