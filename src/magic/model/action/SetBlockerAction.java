@@ -8,7 +8,6 @@ public class SetBlockerAction extends MagicAction {
 
     private final MagicPermanent attacker;
     private final MagicPermanent blocker;
-    private boolean unblocked;
 
     public SetBlockerAction(final MagicPermanent attacker,final MagicPermanent blocker) {
         this.attacker=attacker;
@@ -20,8 +19,7 @@ public class SetBlockerAction extends MagicAction {
         attacker.addBlockingCreature(blocker);
         blocker.setBlockedCreature(attacker);
         blocker.setState(MagicPermanentState.Blocking);
-        unblocked=!attacker.hasState(MagicPermanentState.Blocked);
-        if (unblocked) {
+        if (attacker.hasState(MagicPermanentState.Blocked) == false) {
             game.doAction(ChangeStateAction.Set(attacker, MagicPermanentState.Blocked));
         }
     }
