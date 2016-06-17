@@ -6,6 +6,6 @@ rarity=U
 type=Instant
 cost={4}{U}{U}
 ability=Cast SN only during the declare blockers step.
-effect=For each creature attacking you or a planeswalker you control, put a token that's a copy of that creature onto the battlefield blocking that creature. Exile those tokens at end of combat.
 timing=block
+requires_groovy_code
 oracle=Cast Mirror Match only during the declare blockers step.\nFor each creature attacking you or a planeswalker you control, put a token that's a copy of that creature onto the battlefield blocking that creature. Exile those tokens at end of combat.
