@@ -3,6 +3,7 @@ image=http://magiccards.info/scans/en/mma/208.jpg
 value=4.096
 rarity=R
 type=Artifact
+color=
 ability=Suspend 3—{0};\
         {T}, Sacrifice SN: Add three mana of any one color to your mana pool.
 timing=artifact
