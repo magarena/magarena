@@ -22,7 +22,7 @@ public class SetBlockerAction extends MagicAction {
         blocker.setState(MagicPermanentState.Blocking);
         unblocked=!attacker.hasState(MagicPermanentState.Blocked);
         if (unblocked) {
-            game.doAction(ChangeStateAction.Set(attacker, MagicPermanentState.Blocked);
+            game.doAction(ChangeStateAction.Set(attacker, MagicPermanentState.Blocked));
         }
     }
 
