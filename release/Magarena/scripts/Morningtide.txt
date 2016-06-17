@@ -4,6 +4,6 @@ value=3.643
 rarity=R
 type=Sorcery
 cost={1}{W}
+effect=Exile all cards from all graveyards.
 timing=main
-requires_groovy_code
 oracle=Exile all cards from all graveyards.

@@ -4,6 +4,7 @@ value=4.462
 rarity=C
 type=Artifact
 cost={1}
+ability={1}, Exile SN: Exile all cards from all graveyards.~Draw a card.
 timing=main
 requires_groovy_code
 oracle={T}: Target player exiles a card from his or her graveyard.\n{1}, Exile Relic of Progenitus: Exile all cards from all graveyards. Draw a card.

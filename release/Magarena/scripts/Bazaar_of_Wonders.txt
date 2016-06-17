@@ -4,6 +4,7 @@ value=3.136
 rarity=R
 type=World,Enchantment
 cost={3}{U}{U}
+ability=When SN enters the battlefield, exile all cards from all graveyards.
 timing=main
 requires_groovy_code
 oracle=When Bazaar of Wonders enters the battlefield, exile all cards from all graveyards.\nWhenever a player casts a spell, counter it if a card with the same name is in a graveyard or a nontoken permanent with the same name is on the battlefield.

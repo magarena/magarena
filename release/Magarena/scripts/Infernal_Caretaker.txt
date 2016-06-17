@@ -6,7 +6,7 @@ type=Creature
 subtype=Human,Cleric
 cost={3}{B}
 pt=2/2
-ability=Morph {3}{B}
+ability=Morph {3}{B};\
+        When SN is turned face up, return all Zombie cards from all graveyards to their owners' hands.
 timing=main
-requires_groovy_code
 oracle=Morph {3}{B}\nWhen Infernal Caretaker is turned face up, return all Zombie cards from all graveyards to their owners' hands.

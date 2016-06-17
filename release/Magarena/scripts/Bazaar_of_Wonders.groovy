@@ -1,23 +1,4 @@
 [
-    new EntersBattlefieldTrigger() {
-        @Override
-        public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicPayedCost payedCost) {
-            return new MagicEvent(
-                permanent,
-                this,
-                "Exile all cards from all graveyards."
-            );
-        }
-        @Override
-        public void executeEvent(final MagicGame game, final MagicEvent event) {
-            for (final MagicPlayer player : game.getAPNAP()) {
-                final MagicCardList graveyard = new MagicCardList(player.getGraveyard());
-                for (final MagicCard card : graveyard) {
-                    game.doAction(new ShiftCardAction(card, MagicLocationType.Graveyard, MagicLocationType.Exile));
-                }
-            }
-        }
-    },
     new OtherSpellIsCastTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game,final MagicPermanent permanent,final MagicCardOnStack cardOnStack) {
