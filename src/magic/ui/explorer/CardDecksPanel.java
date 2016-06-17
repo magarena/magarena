@@ -104,7 +104,8 @@ class CardDecksPanel extends JPanel {
                 ScreenController.showWarningMessage(
                     String.format("<html><b>%s</b><br>%s</html>",
                         UiString.get(_S1),
-                        deck.getDescription()));
+                        deck.getDescription().replace("\n", "<br>"))
+                );
             }
         }
     }
