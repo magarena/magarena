@@ -9,7 +9,7 @@
             return [
                 new MagicPayManaCostEvent(source, "{2}{U}"),
                 new MagicDiscardChosenEvent(source, A_CARD_FROM_HAND)
-                ];
+            ];
         }
 
         @Override
