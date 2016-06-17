@@ -1,0 +1,10 @@
+name=6/6 blue Whale creature token
+token=Whale
+image=http://magiccards.info/extras/token/commander-2014/whale.jpg
+value=6
+type=Creature
+subtype=Whale
+color=u
+pt=6/6
+ability=When SN dies, put a 9/9 blue Kraken creature token onto the battlefield.
+oracle=When this creature dies, put a 9/9 blue Kraken creature token onto the battlefield.

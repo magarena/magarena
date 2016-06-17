@@ -1,0 +1,9 @@
+name=9/9 blue Kraken creature token
+token=Whale
+image=http://magiccards.info/extras/token/commander-2014/kraken.jpg
+value=6
+type=Creature
+subtype=Kraken
+color=u
+pt=9/9
+oracle=NONE
