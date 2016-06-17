@@ -14,6 +14,7 @@
             CREATURE_YOU_CONTROL.filter(event) each {
                 x = Math.max(x,it.getPower());
             }
+            game.logAppendValue(event.getPlayer(), x);
             game.doAction(new PlayTokenAction(event.getPlayer(), MagicCardDefinition.create({
                 it.setName("Ooze");
                 it.setDistinctName("green Ooze creature token");
