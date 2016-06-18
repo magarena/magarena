@@ -2,6 +2,6 @@ name=colorless Construct artifact creature token named Twin
 token=Twin
 image=http://cdn.staticneo.com/w/mtg/7/78/Twin.jpg
 value=2
-type=Creature
+type=Artifact,Creature
 subtype=Construct
 color=
