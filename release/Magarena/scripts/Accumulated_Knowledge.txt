@@ -4,6 +4,6 @@ value=4.560
 rarity=C
 type=Instant
 cost={1}{U}
+effect=Draw a card,~then draw cards equal to the number of cards named Accumulated Knowledge in all graveyards.
 timing=draw
-requires_groovy_code
 oracle=Draw a card, then draw cards equal to the number of cards named Accumulated Knowledge in all graveyards.

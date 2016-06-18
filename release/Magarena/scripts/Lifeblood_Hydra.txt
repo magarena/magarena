@@ -7,7 +7,7 @@ subtype=Hydra
 cost={X}{G}{G}{G}
 pt=0/0
 ability=Trample;\
-        SN enters the battlefield with X +1/+1 counters on it.
+        SN enters the battlefield with X +1/+1 counters on it.;\
+        When SN dies, you gain life equal to its power~and draw cards equal to its power.
 timing=main
-requires_groovy_code
 oracle=Trample\nLifeblood Hydra enters the battlefield with X +1/+1 counters on it.\nWhen Lifeblood Hydra dies, you gain life and draw cards equal to its power.
