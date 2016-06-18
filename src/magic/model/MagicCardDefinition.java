@@ -109,6 +109,24 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         return cdef;
     }
 
+    public static MagicCardDefinition create(final MagicCardDefinition template, final MagicCardDefinitionInit init) {
+        final MagicCardDefinition cdef = new MagicCardDefinition();
+        cdef.setName(template.getName());
+        cdef.setDistinctName(template.getDistinctName());
+        cdef.setPowerToughness(template.getCardPower(), template.getCardToughness());
+        cdef.setColorFlags(template.getColorFlags());
+        cdef.setSubTypes(template.genSubTypes());
+        cdef.setTypeFlags(template.getTypeFlags());
+        if (template.isToken()) {
+            cdef.setToken();
+        }
+        cdef.setAbilityProperty(template.getAbilityProperty());
+        cdef.setValue(template.getValue());
+        init.initialize(cdef);
+        cdef.validate();
+        return cdef;
+    }
+
     public boolean canHaveAnyNumberInDeck() {
         return hasType(MagicType.Basic)
                 || name.equals("Relentless Rats")
@@ -119,6 +137,10 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
 
     public void setAbilityProperty(final String value) {
         abilityProperty = value;
+    }
+
+    private String getAbilityProperty() {
+        return abilityProperty;
     }
 
     public void setRequiresGroovy(final String value) {
@@ -362,6 +384,10 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         return token;
     }
 
+    private void setTypeFlags(final int tf) {
+        typeFlags = tf;
+    }
+
     int getTypeFlags() {
         return typeFlags;
     }
@@ -516,6 +542,10 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
         subTypeFlags = MagicSubType.getSubTypes(subTypeNames);
     }
 
+    private void setSubTypes(final EnumSet<MagicSubType> stf) {
+        subTypeFlags = stf;
+    }
+
     public void addSubType(final MagicSubType subType) {
         subTypeFlags.add(subType);
     }
@@ -546,6 +576,10 @@ public class MagicCardDefinition implements MagicAbilityStore, IRenderableCard {
 
     public boolean hasSubType(final MagicSubType subType) {
         return getSubTypes().contains(subType);
+    }
+
+    private void setColorFlags(final int cf) {
+        colorFlags = cf;
     }
 
     public void setColors(final String colors) {
