@@ -28,6 +28,11 @@ public enum MagicTargetFilterParser {
             return MagicTargetFilterFactory.cardName(ARG.any(arg)).from(MagicTargetType.OpponentsGraveyard);
         }
     },
+    CardNamedFromGraveyard("card named " + ARG.ANY + " from a graveyard") {
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return MagicTargetFilterFactory.cardName(ARG.any(arg)).from(MagicTargetType.Graveyard).from(MagicTargetType.OpponentsGraveyard);
+        }
+    },
     PermanentNamed("permanent named " + ARG.ANY) {
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
             return MagicTargetFilterFactory.permanentName(ARG.any(arg), Control.Any);
