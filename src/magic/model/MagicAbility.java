@@ -915,6 +915,24 @@ public enum MagicAbility {
             ));
         }
     },
+    DamageToYou("When(ever)? " + ARG.WORDRUN + " deals damage to you, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(DamageIsDealtTrigger.DamageToYou(
+                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
+                MagicRuleEventAction.create(ARG.effect(arg)),
+                MagicDamage.Any
+            ));
+        }
+    },
+    CombatDamageToYou("When(ever)? " + ARG.WORDRUN + " deals combat damage to you, " + ARG.EFFECT, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            card.add(DamageIsDealtTrigger.DamageToYou(
+                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
+                MagicRuleEventAction.create(ARG.effect(arg)),
+                MagicDamage.Combat
+            ));
+        }
+    },
     DamageToAny("When(ever)? " + ARG.WORDRUN + " deals damage, " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             card.add(DamageIsDealtTrigger.DamageToAny(

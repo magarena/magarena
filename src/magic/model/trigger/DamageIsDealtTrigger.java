@@ -55,6 +55,24 @@ public abstract class DamageIsDealtTrigger extends MagicTrigger<MagicDamage> {
         };
     }
 
+    public static DamageIsDealtTrigger DamageToYou(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent, final boolean isCombat) {
+        return new DamageIsDealtTrigger() {
+            @Override
+            public boolean accept(final MagicPermanent permanent, final MagicDamage damage) {
+                return super.accept(permanent, damage) &&
+                    damage.getSource().isPermanent() &&
+                    filter.accept(permanent, permanent.getController(), damage.getSourcePermanent()) &&
+                    permanent.isController(damage.getTarget()) &&
+                    (isCombat == false || damage.isCombat());
+            }
+
+            @Override
+            public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicDamage damage) {
+                return sourceEvent.getTriggerEvent(permanent, damage.getSourcePermanent());
+            }
+        };
+    }
+
     public static DamageIsDealtTrigger DamageToAny(final MagicTargetFilter<MagicPermanent> filter, final MagicSourceEvent sourceEvent, final boolean isCombat) {
         return new DamageIsDealtTrigger() {
             @Override
