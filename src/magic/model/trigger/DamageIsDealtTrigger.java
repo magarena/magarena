@@ -17,6 +17,7 @@ import magic.model.event.MagicEvent;
 import magic.model.event.MagicSourceEvent;
 import magic.model.target.MagicTargetFilter;
 import magic.model.target.MagicTarget;
+import magic.model.target.MagicTargetType;
 
 public abstract class DamageIsDealtTrigger extends MagicTrigger<MagicDamage> {
     public DamageIsDealtTrigger(final int priority) {
@@ -41,6 +42,8 @@ public abstract class DamageIsDealtTrigger extends MagicTrigger<MagicDamage> {
                 return super.accept(permanent, damage) &&
                     damage.getSource().isPermanent() &&
                     filter.accept(permanent, permanent.getController(), damage.getSourcePermanent()) &&
+                    ((damage.isTargetPlayer() && tfilter.acceptType(MagicTargetType.Player)) ||
+                     (damage.isTargetCreature() && tfilter.acceptType(MagicTargetType.Permanent))) &&
                     tfilter.accept(permanent, permanent.getController(), damage.getTarget()) &&
                     (isCombat == false || damage.isCombat());
             }
