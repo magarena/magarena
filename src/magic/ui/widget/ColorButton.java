@@ -64,7 +64,7 @@ public class ColorButton extends JButton {
     }
 
     public void setColor(Color aColor) {
-        setBackground(aColor);        
+        setBackground(aColor);
     }
 
     public void setLocked(boolean isLocked) {

@@ -29,7 +29,7 @@ import org.pushingpixels.trident.Timeline;
 import org.pushingpixels.trident.callback.TimelineCallback;
 
 @SuppressWarnings("serial")
-public class AboutScreen extends AbstractScreen 
+public class AboutScreen extends AbstractScreen
     implements IStatusBar, IActionBar, IWikiPage, TimelineCallback {
 
     // translatable strings

@@ -14,7 +14,7 @@ public final class WikiPage {
     public static final String NEW_DUEL = "UINewDuel";
 
     public static String getUrl(String pageName) {
-        return URLUtils.URL_WIKI + pageName;        
+        return URLUtils.URL_WIKI + pageName;
     }
 
     private WikiPage() { }

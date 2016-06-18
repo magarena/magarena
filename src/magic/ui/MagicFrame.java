@@ -44,13 +44,13 @@ public class MagicFrame extends MagicStickyFrame implements IImageDragDropListen
     private static final String _S6 = "Invalid action!";
 
     private boolean confirmQuitToDesktop = true;
-   
+
     // Check if we are on Mac OS X.  This is crucial to loading and using the OSXAdapter class.
     public static final boolean MAC_OS_X = System.getProperty("os.name").toLowerCase().startsWith("mac os x");
 
     private final MagicFramePanel contentPanel;
     private MagicDuel duel;
-    
+
     public MagicFrame(final String frameTitle) {
 
         ToolTipManager.sharedInstance().setInitialDelay(400);

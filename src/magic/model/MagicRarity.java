@@ -4,7 +4,7 @@ import java.util.EnumSet;
 import magic.translate.UiString;
 
 public enum MagicRarity {
-    
+
     Basic(MagicRarityStr._SBasic, 'B'),
     Common(MagicRarityStr._SCommon, 'C'),
     Uncommon(MagicRarityStr._SUncommon, 'U'),
@@ -44,6 +44,6 @@ public enum MagicRarity {
             .map(MagicRarity::getName)
             .toArray(String[]::new);
     }
-    
+
 }
 

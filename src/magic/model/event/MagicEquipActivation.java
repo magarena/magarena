@@ -25,7 +25,7 @@ public class MagicEquipActivation extends MagicPermanentActivation {
     public MagicEquipActivation(final List<MagicMatchedCostEvent> aCosts) {
         this(aCosts, "Equip", MagicTargetFilterFactory.CREATURE_YOU_CONTROL);
     }
-    
+
     public MagicEquipActivation(final List<MagicMatchedCostEvent> aCosts, final MagicTargetFilter<MagicPermanent> filter) {
         this(aCosts, "Equip", filter);
     }

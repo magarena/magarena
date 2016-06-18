@@ -14,7 +14,7 @@
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int x = event.getRefInt();
             game.doAction(new PlayTokenAction(
-                event.getPlayer(), 
+                event.getPlayer(),
                 MagicCardDefinition.create(
                     CardDefinitions.getToken("black Horror creature token"),
                     {

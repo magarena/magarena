@@ -2,7 +2,7 @@
     new AtUpkeepTrigger() {
         @Override
         public MagicEvent executeTrigger(final MagicGame game, final MagicPermanent permanent, final MagicPlayer upkeepPlayer) {
-            return upkeepPlayer.getHandSize() == 0 ? 
+            return upkeepPlayer.getHandSize() == 0 ?
                 new MagicEvent(
                     permanent,
                     this,

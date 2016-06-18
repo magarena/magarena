@@ -17,7 +17,7 @@
 
                 final int x = card.getConvertedCost();
                 game.doAction(new PlayTokenAction(
-                    event.getPlayer(), 
+                    event.getPlayer(),
                     MagicCardDefinition.create(
                         CardDefinitions.getToken("green Oooze creature token"),
                         {

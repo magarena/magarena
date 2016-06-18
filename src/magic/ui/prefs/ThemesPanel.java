@@ -39,7 +39,7 @@ class ThemesPanel extends JPanel {
         rollOverColorButton = new ColorButton(MagicStyle.getRolloverColor());
         rollOverColorButton.setFocusable(false);
         rollOverColorButton.addMouseListener(aListener);
-        
+
         themeComboBox = new ThemesComboBox();
         themeComboBox.setFocusable(false);
         themeComboBox.addItemListener((ItemEvent e) -> {

@@ -714,5 +714,5 @@ public class GeneralConfig {
         frameWidth = aSize.width;
         frameHeight = aSize.height;
     }
-    
+
 }

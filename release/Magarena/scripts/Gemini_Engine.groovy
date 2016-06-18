@@ -16,7 +16,7 @@
             final int power = event.getPermanent().getPower();
             final int toughness = event.getPermanent().getToughness();
             game.doAction(new PlayTokenAction(
-                event.getPlayer(), 
+                event.getPlayer(),
                 MagicCardDefinition.create(
                     CardDefinitions.getToken("colorless Construct artifact creature token named Twin"),
                     {

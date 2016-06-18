@@ -122,7 +122,7 @@ public class MagicAnimations {
 
         if (cards.isEmpty()) {
             return null;
-        } else if (cards.size() > 1) { 
+        } else if (cards.size() > 1) {
             return null; // eg. due to Tolarian Winds.
         } else if (tpNew.graveyard.size() > tpOld.graveyard.size()) {
             return null; // discarding card from hand (see github issue #695).

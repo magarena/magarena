@@ -65,7 +65,7 @@ public class MagicTutorTopEvent {
             ""
         );
     }
-    
+
     public static MagicEvent toGraveyard(final MagicEvent event, final int n, final int h) {
         return create(event, n, h, HandGraveyard);
     }

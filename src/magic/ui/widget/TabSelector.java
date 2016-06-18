@@ -38,10 +38,10 @@ public class TabSelector extends JPanel implements ActionListener {
 
         buttonPanel = new TexturedPanel();
         buttonPanel.setLayout(new BoxLayout(buttonPanel, BoxLayout.Y_AXIS));
-        
+
         add(buttonPanel, BorderLayout.NORTH);
         buttonDimension = VERTICAL_BUTTON_DIMENSION;
-        
+
         buttons=new ArrayList<>();
 
     }

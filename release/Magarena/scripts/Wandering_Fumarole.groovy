@@ -52,7 +52,7 @@ def AB = new MagicStatic(MagicLayer.Ability, MagicStatic.UntilEOT) {
             return new MagicEvent(
                 source,
                 this,
-                "Until end of turn, SN becomes a 1/4 blue and red Elemental creature with " + 
+                "Until end of turn, SN becomes a 1/4 blue and red Elemental creature with " +
                 "\"{0}: Switch this creature's power and toughness until end of turn.\" It's still a land."
             );
         }
