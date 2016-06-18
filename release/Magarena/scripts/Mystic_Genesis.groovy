@@ -16,16 +16,16 @@
                 game.doAction(new CounterItemOnStackAction(card));
 
                 final int x = card.getConvertedCost();
-                game.doAction(new PlayTokenAction(event.getPlayer(), MagicCardDefinition.create({
-                    it.setName("Ooze");
-                    it.setDistinctName("green Ooze creature token");
-                    it.setPowerToughness(x, x);
-                    it.setColors("g");
-                    it.addSubType(MagicSubType.Ooze);
-                    it.addType(MagicType.Creature);
-                    it.setToken();
-                    it.setValue(x);
-                })));
+                game.doAction(new PlayTokenAction(
+                    event.getPlayer(), 
+                    MagicCardDefinition.create(
+                        CardDefinitions.getToken("green Oooze creature token"),
+                        {
+                            it.setPowerToughness(x, x);
+                            it.setValue(x);
+                        }
+                    )
+                ));
             })
         }
     }

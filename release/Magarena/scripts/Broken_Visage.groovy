@@ -25,16 +25,13 @@ def choice = new MagicTargetChoice("target nonartifact attacking creature");
                 game.doAction(new DestroyAction(creature));
                 game.doAction(new PlayTokenAction(
                     event.getPlayer(),
-                    MagicCardDefinition.create({
-                        it.setName("Spirit");
-                        it.setDistinctName("black Spirit creature token");
-                        it.setPowerToughness(power,toughness);
-                        it.setColors("b");
-                        it.addSubType(MagicSubType.Spirit);
-                        it.addType(MagicType.Creature);
-                        it.setToken();
-                        it.setValue(1);
-                    }),
+                    MagicCardDefinition.create(
+                        CardDefinitions.getToken("black Spirit creature token"),
+                        {
+                            it.setPowerToughness(power,toughness);
+                            it.setValue(1);
+                        }
+                    ),
                     MagicPlayMod.SACRIFICE_AT_END_OF_TURN
                 ));
             });

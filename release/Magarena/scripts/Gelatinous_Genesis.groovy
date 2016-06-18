@@ -14,16 +14,13 @@
             final int x = event.getRefInt();
             game.doAction(new PlayTokensAction(
                 event.getPlayer(),
-                MagicCardDefinition.create({
-                    it.setName("Ooze");
-                    it.setDistinctName("green Ooze creature token");
-                    it.setPowerToughness(x, x);
-                    it.setColors("g");
-                    it.addSubType(MagicSubType.Ooze);
-                    it.addType(MagicType.Creature);
-                    it.setToken();
-                    it.setValue(x);
-                }),
+                MagicCardDefinition.create(
+                    CardDefinitions.getToken("green Oooze creature token"),
+                    {
+                        it.setPowerToughness(x, x);
+                        it.setValue(x);
+                    }
+                ),
                 x
             ));
         }

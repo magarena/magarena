@@ -15,17 +15,16 @@
                 x = Math.max(x,it.getToughness());
             }
             game.logAppendValue(event.getPlayer(), x);
-            game.doAction(new PlayTokenAction(event.getPlayer(), MagicCardDefinition.create({
-                it.setName("Spirit Warrior");
-                it.setDistinctName("black and green Spirit Warrior creature token");
-                it.setPowerToughness(x, x);
-                it.setColors("bg");
-                it.addSubType(MagicSubType.Spirit);
-                it.addSubType(MagicSubType.Warrior);
-                it.addType(MagicType.Creature);
-                it.setToken();
-                it.setValue(x);
-            })));
+            game.doAction(new PlayTokenAction(
+                event.getPlayer(), 
+                MagicCardDefinition.create(
+                    CardDefinitions.getToken("black and green Spirit Warrior creature token"),
+                    {
+                        it.setPowerToughness(x, x);
+                        it.setValue(x);
+                    }
+                )
+            ));
         }
     }
 ]

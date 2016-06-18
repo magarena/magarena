@@ -11,16 +11,13 @@ def PutHydra = new MagicTrigger<Integer>() {
     @Override
     public void executeEvent(final MagicGame game, final MagicEvent event) {
         final int x = event.getRefInt();
-        final MagicCardDefinition tokenDef = MagicCardDefinition.create({
-            it.setName("Hydra");
-            it.setDistinctName("green Hydra creature token");
-            it.setPowerToughness(x,x);
-            it.setColors("g");
-            it.addSubType(MagicSubType.Hydra);
-            it.addType(MagicType.Creature);
-            it.setToken();
-            it.setValue(x);
-        });
+        final MagicCardDefinition tokenDef = MagicCardDefinition.create(
+            CardDefinitions.getToken("green Hydra creature token"),
+            {
+                it.setPowerToughness(x,x);
+                it.setValue(x);
+            }
+        );
         game.doAction(new PlayTokensAction(event.getPlayer(), tokenDef, x));
     }
     @Override

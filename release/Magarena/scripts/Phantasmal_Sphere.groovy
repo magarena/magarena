@@ -42,16 +42,13 @@
                 game.logAppendX(event.getPlayer(),X);
                 game.doAction(new PlayTokenAction(
                     it,
-                    MagicCardDefinition.create({
-                        it.setName("Orb");
-                        it.setDistinctName("blue Orb creature token with flying");
-                        it.setPowerToughness(X, X);
-                        it.setColors("u");
-                        it.addSubType(MagicSubType.Orb);
-                        it.addType(MagicType.Creature);
-                        it.setToken();
-                        it.setValue(X);
-                    })
+                    MagicCardDefinition.create(
+                        CardDefinitions.getToken("blue Orb creature token with flying"),
+                        {
+                            it.setPowerToughness(X, X);
+                            it.setValue(X);
+                        }
+                    )
                 ));
             });
         }

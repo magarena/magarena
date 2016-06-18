@@ -13,16 +13,16 @@
         @Override
         public void executeEvent(final MagicGame game, final MagicEvent event) {
             final int x = event.getCardOnStack().getX();
-            game.doAction(new PlayTokenAction(event.getPlayer(), MagicCardDefinition.create({
-                it.setName("Wurm");
-                it.setDistinctName("green Wurm creature token");
-                it.setPowerToughness(x, x);
-                it.setColors("g");
-                it.addSubType(MagicSubType.Wurm);
-                it.addType(MagicType.Creature);
-                it.setToken();
-                it.setValue(x);
-            })));
+            game.doAction(new PlayTokenAction(
+                event.getPlayer(), 
+                MagicCardDefinition.create(
+                    CardDefinitions.getToken("green Wurm creature token"),
+                    {
+                        it.setPowerToughness(x, x);
+                        it.setValue(x);
+                    }
+                )
+            ));
             if (event.isBuyback()) {
                 game.doAction(new ChangeCardDestinationAction(event.getCardOnStack(), MagicLocationType.OwnersHand));
             }
