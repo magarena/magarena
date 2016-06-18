@@ -895,73 +895,21 @@ public enum MagicAbility {
             ));
         }
     },
-    DamageCreature("Whenever " + ARG.WORDRUN + " deals damage to a creature, " + ARG.EFFECT, 10) {
+    DamageToTarget("When(ever)? " + ARG.WORDRUN + " deals damage to " + ARG.WORDRUN2 + ", " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(DamageIsDealtTrigger.DamageToCreature(
+            card.add(DamageIsDealtTrigger.DamageToTarget(
                 MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
+                MagicTargetFilterFactory.Target(ARG.wordrun2(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg)),
                 MagicDamage.Any
             ));
         }
     },
-    CombatDamageCreature("Whenever " + ARG.WORDRUN + " deals combat damage to a creature, " + ARG.EFFECT, 10) {
+    CombatDamageToTarget("When(ever)? " + ARG.WORDRUN + " deals combat damage to " + ARG.WORDRUN2 + ", " + ARG.EFFECT, 10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(DamageIsDealtTrigger.DamageToCreature(
+            card.add(DamageIsDealtTrigger.DamageToTarget(
                 MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
-                MagicRuleEventAction.create(ARG.effect(arg)),
-                MagicDamage.Combat
-            ));
-        }
-    },
-    DamageToYou("When(ever)? " + ARG.WORDRUN + " deals damage to you, " + ARG.EFFECT, 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(DamageIsDealtTrigger.DamageToYou(
-                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
-                MagicRuleEventAction.create(ARG.effect(arg)),
-                MagicDamage.Any
-            ));
-        }
-    },
-    CombatDamageToYou("When(ever)? " + ARG.WORDRUN + " deals combat damage to you, " + ARG.EFFECT, 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(DamageIsDealtTrigger.DamageToYou(
-                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
-                MagicRuleEventAction.create(ARG.effect(arg)),
-                MagicDamage.Combat
-            ));
-        }
-    },
-    DamageToOpponent("When(ever)? " + ARG.WORDRUN + " deals damage to an opponent, " + ARG.EFFECT, 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(DamageIsDealtTrigger.DamageToOpponent(
-                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
-                MagicRuleEventAction.create(ARG.effect(arg)),
-                MagicDamage.Any
-            ));
-        }
-    },
-    CombatDamageToOpponent("When(ever)? " + ARG.WORDRUN + " deals combat damage to an opponent, " + ARG.EFFECT, 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(DamageIsDealtTrigger.DamageToOpponent(
-                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
-                MagicRuleEventAction.create(ARG.effect(arg)),
-                MagicDamage.Combat
-            ));
-        }
-    },
-    DamageToPlayer("When(ever)? " + ARG.WORDRUN + " deals damage to a player, " + ARG.EFFECT, 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(DamageIsDealtTrigger.DamageToPlayer(
-                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
-                MagicRuleEventAction.create(ARG.effect(arg)),
-                MagicDamage.Any
-            ));
-        }
-    },
-    CombatDamageToPlayer("When(ever)? " + ARG.WORDRUN + " deals combat damage to a player, " + ARG.EFFECT, 10) {
-        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
-            card.add(DamageIsDealtTrigger.DamageToPlayer(
-                MagicTargetFilterFactory.Permanent(ARG.wordrun(arg)),
+                MagicTargetFilterFactory.Target(ARG.wordrun2(arg)),
                 MagicRuleEventAction.create(ARG.effect(arg)),
                 MagicDamage.Combat
             ));
