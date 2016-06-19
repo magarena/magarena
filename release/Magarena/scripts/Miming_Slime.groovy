@@ -16,7 +16,7 @@
             }
             game.logAppendValue(event.getPlayer(), x);
             game.doAction(new PlayTokenAction(event.getPlayer(), MagicCardDefinition.create(
-                CardDefinitions.getToken("green Oooze creature token"),
+                CardDefinitions.getToken("green Ooze creature token"),
                 {
                     it.setPowerToughness(x, x);
                     it.setValue(x);
