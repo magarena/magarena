@@ -10,7 +10,7 @@
                     new MagicDamageTargetPicker(amount),
                     amount,
                     this,
-                    "SN deals "+amount+" damage to target creature or player\$."
+                    "SN deals RN damage to target creature or player\$."
                 ) :
                 MagicEvent.NONE;
         }
