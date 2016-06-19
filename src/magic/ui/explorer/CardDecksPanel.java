@@ -70,8 +70,7 @@ class CardDecksPanel extends JPanel {
             @Override
             public void mouseReleased(MouseEvent evt) {
                 if (isDoubleClick(evt)) {
-                    JList<File> decksList = (JList<File>) evt.getSource();
-                    showSelectedDeck(decksList.locationToIndex(evt.getPoint()));
+                    showSelectedDeck(decksJList.locationToIndex(evt.getPoint()));
                 }
             }
         });
