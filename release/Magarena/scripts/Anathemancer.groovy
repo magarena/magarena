@@ -6,7 +6,7 @@
                 permanent,
                 NEG_TARGET_PLAYER,
                 this,
-                "When SN enters the battlefield, it deals damage to target player\$ equal to "+
+                "SN deals damage to target player\$ equal to "+
                 "the number of nonbasic lands that player controls."
             );
         }
