@@ -744,7 +744,7 @@ public enum MagicRuleEventAction {
         }
     },
     Draw(
-        ARG.PLAYERS + "( )?draw(s)? " + ARG.AMOUNT + " (additional )?card(s)?( for each " + ARG.WORDRUN + ")?",
+        ARG.PLAYERS + "( )?draw(s)?( " + ARG.AMOUNT + ")? (additional )?card(s)?( (for each|equal to) " + ARG.WORDRUN + ")?",
         MagicTargetHint.Positive,
         MagicTiming.Draw,
         "Draw"
@@ -764,16 +764,6 @@ public enum MagicRuleEventAction {
                     game.addEvent(new MagicDrawEvent(event.getSource(), it, total));
                 }
             };
-        }
-    },
-    DrawAlt(
-        ARG.PLAYERS + "( )?draw(s)? " + ARG.AMOUNT + "?cards equal to " + ARG.WORDRUN,
-        MagicTiming.Draw,
-        "Draw"
-    ) {
-        @Override
-        public MagicEventAction getAction(final Matcher matcher) {
-            return Draw.getAction(matcher);
         }
     },
     DrawDiscard(
