@@ -6,7 +6,8 @@ type=Planeswalker
 subtype=Garruk
 color=bg
 transform=Garruk Relentless
-ability=+1: Put a 1/1 black Wolf creature token with deathtouch onto the battlefield.
+ability=+1: Put a 1/1 black Wolf creature token with deathtouch onto the battlefield.;\
+        −3: Creatures you control gain trample and get +X/+X until end of turn, where X is the number of creature cards in your graveyard.
 timing=main
 requires_groovy_code
 hidden

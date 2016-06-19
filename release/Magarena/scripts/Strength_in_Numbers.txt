@@ -5,6 +5,6 @@ rarity=C
 type=Instant
 cost={1}{G}
 ability=Cast SN with AI only if there is an attacking creature on the battlefield.
+effect=Target creature gains trample and gets +X/+X until end of turn, where X is the number of attacking creatures.
 timing=pump
-requires_groovy_code
 oracle=Until end of turn, target creature gains trample and gets +X/+X, where X is the number of attacking creatures.

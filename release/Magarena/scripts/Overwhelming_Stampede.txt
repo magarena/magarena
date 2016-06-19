@@ -5,6 +5,6 @@ value=4.258
 rarity=R
 type=Sorcery
 cost={3}{G}{G}
+effect=Creatures you control gain trample and get +X/+X until end of turn, where X is the greatest power among creatures you control.
 timing=fmain
-requires_groovy_code
 oracle=Until end of turn, creatures you control gain trample and get +X/+X, where X is the greatest power among creatures you control.

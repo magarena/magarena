@@ -6,7 +6,7 @@ type=Creature
 subtype=Beast
 cost={5}{G}{G}{G}
 pt=5/5
-ability=haste
+ability=Haste;\
+        When SN enters the battlefield, creatures you control gain trample and get +X/+X until end of turn, where X is the number of creatures you control.
 timing=fmain
-requires_groovy_code
 oracle=Haste\nWhen Craterhoof Behemoth enters the battlefield, creatures you control gain trample and get +X/+X until end of turn, where X is the number of creatures you control.
