@@ -159,11 +159,12 @@ public class MagicAmountFactory {
         new MagicAmount() {
             @Override
             public int getAmount(final MagicSource source, final MagicPlayer player) {
-                int power = 0;
-                for (final MagicPermanent it : MagicTargetFilterFactory.CREATURE_YOU_CONTROL.filter(source, player, MagicTargetHint.None)) {
-                    power = Math.max(power, it.getPower());
-                }
-                return power;
+                return MagicTargetFilterFactory.CREATURE_YOU_CONTROL
+                    .filter(source, player, MagicTargetHint.None)
+                    .stream()
+                    .mapToInt(it -> it.getPower())
+                    .max()
+                    .orElse(0);
             }
         };
 }
