@@ -3,6 +3,7 @@ package magic.model;
 import magic.model.event.MagicEvent;
 import magic.model.target.MagicTarget;
 import magic.model.target.MagicTargetFilter;
+import magic.model.target.MagicTargetFilterFactory;
 import magic.model.target.MagicTargetHint;
 
 public class MagicAmountFactory {
@@ -151,6 +152,18 @@ public class MagicAmountFactory {
             @Override
             public int getAmount(final MagicSource source, final MagicPlayer player) {
                 throw new RuntimeException("getAmount(source, player) called on NegXCost");
+            }
+        };
+
+    public static MagicAmount GreatestPower =
+        new MagicAmount() {
+            @Override
+            public int getAmount(final MagicSource source, final MagicPlayer player) {
+                int power = 0;
+                for (final MagicPermanent it : MagicTargetFilterFactory.CREATURE_YOU_CONTROL.filter(source, player, MagicTargetHint.None)) {
+                    power = Math.max(power, it.getPower());
+                }
+                return power;
             }
         };
 }

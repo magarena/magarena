@@ -56,6 +56,11 @@ public enum MagicAmountParser {
             return MagicAmountFactory.ColorsOnPerms;
         }
     },
+    GreatestPower("the greatest power among creatures you control") {
+        public MagicAmount toAmount(final Matcher arg) {
+            return MagicAmountFactory.GreatestPower;
+        }
+    },
     XCost("x") {
         public MagicAmount toAmount(final Matcher arg) {
             return MagicAmountFactory.XCost;
