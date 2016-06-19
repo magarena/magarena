@@ -6,7 +6,7 @@ rarity=C
 type=Artifact
 cost={4}
 ability=SN enters the battlefield with three arrowhead counters on it.;\
+        At the beginning of your upkeep, if there are no arrowhead counters on SN, sacrifice SN.;\
         {T}, Remove an arrowhead counter from SN: Put a -1/-1 counter on target creature.
 timing=artifact
-requires_groovy_code
 oracle=Serrated Arrows enters the battlefield with three arrowhead counters on it.\nAt the beginning of your upkeep, if there are no arrowhead counters on Serrated Arrows, sacrifice it.\n{T}, Remove an arrowhead counter from Serrated Arrows: Put a -1/-1 counter on target creature.
