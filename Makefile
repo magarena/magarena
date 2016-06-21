@@ -113,6 +113,25 @@ cards/unimplementable.tsv.add: cards/candidates_full.txt
 	grep "|" $^ | sed 's/NAME://;s/|/\t/' >> $(basename $@)
 	make $^
 
+cards/staples.txt:
+	curl \
+	http://www.mtggoldfish.com/format-staples/standard/full/creatures \
+	http://www.mtggoldfish.com/format-staples/standard/full/lands \
+	http://www.mtggoldfish.com/format-staples/standard/full/spells \
+	http://www.mtggoldfish.com/format-staples/modern/full/creatures \
+	http://www.mtggoldfish.com/format-staples/modern/full/lands \
+	http://www.mtggoldfish.com/format-staples/modern/full/spells \
+	http://www.mtggoldfish.com/format-staples/pauper/full/creatures \
+	http://www.mtggoldfish.com/format-staples/pauper/full/lands \
+	http://www.mtggoldfish.com/format-staples/pauper/full/spells \
+	http://www.mtggoldfish.com/format-staples/legacy/full/creatures \
+	http://www.mtggoldfish.com/format-staples/legacy/full/lands \
+	http://www.mtggoldfish.com/format-staples/legacy/full/spells \
+	http://www.mtggoldfish.com/format-staples/vintage/full/creatures \
+	http://www.mtggoldfish.com/format-staples/vintage/full/lands \
+	http://www.mtggoldfish.com/format-staples/vintage/full/spells \
+	| pup ".col-card a text{}" | sed "s/&#39;/'/g;s/ (.*)//g" | sort | uniq > $@
+
 %.out: $(MAG)
 	SGE_TASK_ID=$* exp/eval_mcts.sh
 	
