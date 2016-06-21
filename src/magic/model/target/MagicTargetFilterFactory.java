@@ -1218,8 +1218,6 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl CREATURE_WITH_DEFENDER = creature(MagicAbility.Defender, Control.Any);
 
-    public static final MagicPermanentFilterImpl CREATURE_WITH_DEFENDER_YOU_CONTROL = creature(MagicAbility.Defender, Control.You);
-
     public static final MagicPermanentFilterImpl CREATURE_WITH_INFECT = creature(MagicAbility.Infect, Control.Any);
 
     public static final MagicPermanentFilterImpl CREATURE_WITH_HORSEMANSHIP = creature(MagicAbility.Horsemanship, Control.Any);
@@ -1315,8 +1313,6 @@ public class MagicTargetFilterFactory {
     };
 
     public static final MagicPermanentFilterImpl CREATURE_PLUSONE_COUNTER = creature(MagicCounterType.PlusOne, Control.Any);
-
-    public static final MagicPermanentFilterImpl CREATURE_PLUSONE_COUNTER_YOU_CONTROL = creature(MagicCounterType.PlusOne, Control.You);
 
     public static final MagicPermanentFilterImpl CREATURE_LEVEL_COUNTER = creature(MagicCounterType.Level, Control.Any);
 
@@ -2181,12 +2177,6 @@ public class MagicTargetFilterFactory {
         4
     );
 
-    public static final MagicPermanentFilterImpl CREATURE_TOUGHNESS_4_OR_GREATER_YOU_CONTROL = MagicPTTargetFilter.Toughness(
-        CREATURE_YOU_CONTROL,
-        Operator.GREATER_THAN_OR_EQUAL,
-        4
-    );
-
     public static final MagicPermanentFilterImpl CREATURE_POWER_1_OR_LESS = new MagicPTTargetFilter(
         CREATURE,
         Operator.LESS_THAN_OR_EQUAL,
@@ -2203,18 +2193,6 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl CREATURE_POWER_2_OR_LESS = new MagicPTTargetFilter(
         CREATURE,
-        Operator.LESS_THAN_OR_EQUAL,
-        2
-    );
-
-    public static final MagicPermanentFilterImpl CREATURE_POWER_2_OR_LESS_YOU_CONTROL = new MagicPTTargetFilter(
-        CREATURE_YOU_CONTROL,
-        Operator.LESS_THAN_OR_EQUAL,
-        2
-    );
-
-    public static final MagicPermanentFilterImpl CREATURE_POWER_2_OR_LESS_YOUR_OPPONENT_CONTROLS = new MagicPTTargetFilter(
-        CREATURE_YOUR_OPPONENT_CONTROLS,
         Operator.LESS_THAN_OR_EQUAL,
         2
     );
@@ -2249,18 +2227,6 @@ public class MagicTargetFilterFactory {
         4
     );
 
-    public static final MagicPermanentFilterImpl CREATURE_POWER_4_OR_MORE_YOU_CONTROL = new MagicPTTargetFilter(
-        CREATURE_YOU_CONTROL,
-        Operator.GREATER_THAN_OR_EQUAL,
-        4
-    );
-
-    public static final MagicPermanentFilterImpl CREATURE_POWER_3_OR_MORE_YOU_CONTROL = new MagicPTTargetFilter(
-        CREATURE_YOU_CONTROL,
-        Operator.GREATER_THAN_OR_EQUAL,
-        3
-    );
-
     public static final MagicPermanentFilterImpl CREATURE_POWER_2_OR_MORE = new MagicPTTargetFilter(
         CREATURE,
         Operator.GREATER_THAN_OR_EQUAL,
@@ -2284,12 +2250,6 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl CREATURE_POWER_5_OR_MORE = new MagicPTTargetFilter(
         CREATURE,
-        Operator.GREATER_THAN_OR_EQUAL,
-        5
-    );
-
-    public static final MagicPermanentFilterImpl CREATURE_POWER_5_OR_MORE_YOU_CONTROL = new MagicPTTargetFilter(
-        CREATURE_YOU_CONTROL,
         Operator.GREATER_THAN_OR_EQUAL,
         5
     );
