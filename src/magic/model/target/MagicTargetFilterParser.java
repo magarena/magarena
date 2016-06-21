@@ -128,6 +128,16 @@ public enum MagicTargetFilterParser {
             return MagicTargetFilterFactory.matchCardPrefix(arg.group(), ARG.wordrun(arg), MagicTargetType.Graveyard).from(MagicTargetType.OpponentsGraveyard);
         }
     },
+    CreatureYouControlWith("creature you control with " + ARG.WORDRUN) {
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return MagicTargetFilterFactory.matchPermanentPrefix(arg.group(), "creature with " + ARG.wordrun(arg), Control.You);
+        }
+    },
+    CreatureOppControlWith("creature an opponent controls with " + ARG.WORDRUN) {
+        public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
+            return MagicTargetFilterFactory.matchPermanentPrefix(arg.group(), "creature with " + ARG.wordrun(arg), Control.Opp);
+        }
+    },
     CreatureYouControl(ARG.WORDRUN + " creature you control") {
         public MagicTargetFilter<?> toTargetFilter(final Matcher arg) {
             return MagicTargetFilterFactory.matchCreaturePrefix(arg.group(), ARG.wordrun(arg), Control.You);

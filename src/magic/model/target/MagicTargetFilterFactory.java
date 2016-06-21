@@ -1030,7 +1030,7 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl MODULAR_CREATURE = creature(MagicAbility.Modular, Control.Any);
 
-    public static final MagicPermanentFilterImpl LEVELUP_CREATURE_YOU_CONTROL = creature(MagicAbility.LevelUp, Control.You);
+    public static final MagicPermanentFilterImpl LEVELUP_CREATURE = creature(MagicAbility.LevelUp, Control.Any);
 
     public static final MagicPermanentFilterImpl CREATURE = permanent(MagicType.Creature, Control.Any);
 
@@ -1212,7 +1212,7 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl CREATURE_WITH_FLYING_YOU_CONTROL = creature(MagicAbility.Flying, Control.You);
 
-    public static final MagicPermanentFilterImpl CREATURE_WITH_TRAMPLE_YOU_CONTROL = creature(MagicAbility.Trample, Control.You);
+    public static final MagicPermanentFilterImpl CREATURE_WITH_TRAMPLE = creature(MagicAbility.Trample, Control.Any);
 
     public static final MagicPermanentFilterImpl CREATURE_WITH_FLYING_YOUR_OPPONENT_CONTROLS = creature(MagicAbility.Flying, Control.Opp);
 
@@ -1220,7 +1220,7 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl CREATURE_WITH_DEFENDER_YOU_CONTROL = creature(MagicAbility.Defender, Control.You);
 
-    public static final MagicPermanentFilterImpl CREATURE_WITH_INFECT_YOU_CONTROL = creature(MagicAbility.Infect, Control.You);
+    public static final MagicPermanentFilterImpl CREATURE_WITH_INFECT = creature(MagicAbility.Infect, Control.Any);
 
     public static final MagicPermanentFilterImpl CREATURE_WITH_HORSEMANSHIP = creature(MagicAbility.Horsemanship, Control.Any);
 
@@ -1318,7 +1318,7 @@ public class MagicTargetFilterFactory {
 
     public static final MagicPermanentFilterImpl CREATURE_PLUSONE_COUNTER_YOU_CONTROL = creature(MagicCounterType.PlusOne, Control.You);
 
-    public static final MagicPermanentFilterImpl CREATURE_LEVEL_COUNTER_YOU_CONTROL = creature(MagicCounterType.Level, Control.You);
+    public static final MagicPermanentFilterImpl CREATURE_LEVEL_COUNTER = creature(MagicCounterType.Level, Control.Any);
 
     public static final MagicPermanentFilterImpl CREATURE_AT_LEAST_3_LEVEL_COUNTERS = new MagicPermanentFilterImpl() {
         public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent target) {
@@ -2420,29 +2420,17 @@ public class MagicTargetFilterFactory {
         add("creature card with deathtouch, hexproof, reach, or trample from your library", CREATURE_WITH_DEATHTOUCH_HEXPROOF_REACH_OR_TRAMPLE_FROM_LIBRARY);
         add("nonlegendary green creature card with converted mana cost 3 or less from your library", NON_LEGENDARY_GREEN_CREATURE_CARD_WITH_CMC_LEQ_3_FROM_LIBRARY);
 
-        // <color|type|subtype> creature you control with
-        add("creature you control with power 2 or less", CREATURE_POWER_2_OR_LESS_YOU_CONTROL);
-        add("creature you control with power 3 or greater", CREATURE_POWER_3_OR_MORE_YOU_CONTROL);
-        add("creature you control with power 4 or greater", CREATURE_POWER_4_OR_MORE_YOU_CONTROL);
-        add("creature you control with power 5 or greater", CREATURE_POWER_5_OR_MORE_YOU_CONTROL);
-        add("creature you control with toughness 4 or greater", CREATURE_TOUGHNESS_4_OR_GREATER_YOU_CONTROL);
-        add("creature you control with level up", LEVELUP_CREATURE_YOU_CONTROL);
-        add("creature you control with a +1/+1 counter on it", CREATURE_PLUSONE_COUNTER_YOU_CONTROL);
-        add("creature you control with a level counter on it", CREATURE_LEVEL_COUNTER_YOU_CONTROL);
-        add("creature you control with flying", CREATURE_WITH_FLYING_YOU_CONTROL);
-        add("creature you control with trample", CREATURE_WITH_TRAMPLE_YOU_CONTROL);
-        add("creature you control with defender", CREATURE_WITH_DEFENDER_YOU_CONTROL);
-        add("creature you control with infect", CREATURE_WITH_INFECT_YOU_CONTROL);
+        // <color|type|subtype> creature you control that
         add("creature you control that's a wolf or a werewolf", WEREWOLF_OR_WOLF_CREATURE_YOU_CONTROL);
-
-        // <color|type|subtype> creature an opponent controls with
-        add("creature an opponent controls with power 2 or less", CREATURE_POWER_2_OR_LESS_YOUR_OPPONENT_CONTROLS);
 
         // <color|type|subtype> creature
         add("1/1 creature", new MagicPTTargetFilter(CREATURE, Operator.EQUAL, 1, Operator.EQUAL, 1));
         add("blue or black creature", BLUE_OR_BLACK_CREATURE);
         add("untapped island", UNTAPPED_ISLAND);
         add("creature with modular", MODULAR_CREATURE);
+        add("creature with trample", CREATURE_WITH_TRAMPLE);
+        add("creature with level up", LEVELUP_CREATURE);
+        add("creature with infect", CREATURE_WITH_INFECT);
         add("red creature or white creature", RED_OR_WHITE_CREATURE);
         add("werewolf or wolf creature", WEREWOLF_OR_WOLF_CREATURE);
         add("Eldrazi Spawn creature", ELDRAZI_SPAWN_CREATURE);
@@ -2527,6 +2515,7 @@ public class MagicTargetFilterFactory {
         add("creature with shadow", CREATURE_WITH_SHADOW);
         add("creature with a +1/+1 counter on it", CREATURE_PLUSONE_COUNTER);
         add("creature with a -1/-1 counter on it", CREATURE_MINSUONE_COUNTER);
+        add("creature with a level counter on it", CREATURE_LEVEL_COUNTER);
         add("creature with a counter on it", CREATURE_WITH_COUNTER);
         add("creature with another Aura attached to it", CREATURE_WITH_ANOTHER_AURA);
         add("creature that isn't enchanted", CREATURE_THAT_ISNT_ENCHANTED);
