@@ -80,9 +80,9 @@ ShawnieBoy
 
 - show unimplemented card image in color on mouse over in card explorer
 
-- add watermark to card image to indicate card is transformable in CardViewer
+- show watermark on card image to indicate card is transformable
 
-- add Korean to card text combo in download images dialog.
+- add Korean to card text combo in download images dialog
 
 - update card images to SOI release
 
@@ -100,7 +100,7 @@ ShawnieBoy
     * effect: Exile SN. (move SN to the exile zone when it resolves)
     * effect: Return SN to its owner's hand. (move SN to its owner's hand when it resolves)
     * effect: Put a token that's a copy of <permanent> onto the battlefield.
-    * effect: <permanents> get (+|-)(X|0)/(+|-)(X|0) until end of turn, where X is <count>.
+    * effect: <permanents> get gains <ability> and gets (+|-)(X|0)/(+|-)(X|0) until end of turn, where X is <count>.
     * effect: (SN|RN) assigns no combat damage this turn.
     * effect: Look at the top <amount> cards of your library. You may reveal a <card> from among them and put it into your hand. Put the rest on the bottom of your library in any order.
     * effect: Look at the top <amount> cards of your library. Put <amount> of them into your hand and the rest into your graveyard.
@@ -111,6 +111,7 @@ ShawnieBoy
     * effect: Choose one (1) <effect> (2) <effect> (3) <effect> (4) <effect>
     * effect: <permanents> becomes blocked.
     * effect: <players> gain/lose life equal to <amount>.
+    * effect: Draw cards equal to <amount>.
     * ability: Equip <cost> to a <filter>, Equip {2} creature with power 3 or greater
     * ability: <permanenst> get (+|-)(X|0)/(+|-)(X|0), where X is <count>.
     * ability: (+|-)<N>: <effect> (loyalty ability)
@@ -125,8 +126,64 @@ ShawnieBoy
     * remove card reveal from Vampiric Tutor
     * change Draw to use an event to ensure correct order of events as a rider, fixes #205
     * deck filter only matching lower case card name, should be case-insensitive
+    * fixes #786:  Exception if double-click empty decks list in card explorer.
+    * fix: trailing html tag shown due to trailing "\n" in string.
 
 - added the following cards:
+Akroan Conscriptor, Aligned Hedron Network, Ancestral Memories,
+Ancient Stirrings, Angelic Favor, Anticipate, Archangel Avacyn,
+Augur of Bolas, Auriok Bladewarden, Avacynian Missionaries,
+Avacyn, the Purifier, Bearer of Overwhelming Truths, Betrothed of Fire,
+Bitter Revelation, Blazing Torch, Body Snatcher, Boldwyr Intimidator,
+Captivating Vampire, Chrome Mox, Colossal Whale, Commune with Nature,
+Commune with the Gods, Constricting Sliver, Crypsis, Cunning,
+Curtain of Light, Cyclone Sire, Dangerous Wager, Daring Sleuth,
+Dazzling Beauty, Declaration in Stone, Defend the Hearth, Defiant Stand,
+Demon-Possessed Witch, Devils' Playground, Disciple of the Ring,
+Disharmony, Dragonlord Ojutai, Dragon Tempest, Dragon Throne of Tarkir,
+Drudge Spell, Eldrazi Obligator, Enemy of the Guildpact,
+Engulf the Shore, Enthralling Victor, Equestrian Skill, Faerie Mechanist,
+Favored Hoplite, Fevered Visions, Fistful of Force, Flamerush Rider,
+Flamespeaker's Will, Fleeting Memories, Flesh Carver, Fog Patch,
+Force Away, Forgotten Creation, Freyalise, Llanowar's Fury,
+Frontline Strategist, Funeral March, Furnace Celebration, Gate Smasher,
+Geier Reach Bandit, Geistblast, Gemini Engine, Goatnapper,
+Graf Mole, Grasp of Fate, Graverobber Spider, Grisly Salvage,
+Grovetender Druids, Guildscorn Ward, Gurmag Drowner, Hanabi Blast,
+Harmless Assault, Harvester Troll, Haunted Cadaver, Hidden Dragonslayer,
+Hope Against Hope, Hornet Cannon, Illusory Ambusher, Impaler Shrike,
+Impulse, Inner Struggle, Intellectual Offering, Jazal Goldmane,
+Jeering Instigator, Jeskai Ascendancy, Junkyo Bell, Kalonian Twingrove,
+Karrthus, Tyrant of Jund, Khalni Heart Expedition, Kindly Stranger,
+King Macar, the Gold-Cursed, Kin-Tree Invocation, Lavamancer's Skill,
+Lone Revenant, Lunarch Inquisitors, Lys Alana Scarblade,
+Mage-Ring Responder, Magus of the Wheel, Mardu Woe-Reaper,
+Mazirek, Kraul Death Priest, Meletis Astronomer, Merciless Eviction,
+Mirror Match, Monkey Cage, Moonlight Hunt, Mortal Obstinacy,
+Mortician Beetle, Nagging Thoughts, Noyan Dar, Roil Shaper,
+Ob Nixilis, the Fallen, O-Naginata, Ooze Garden, Pack Guardian,
+Panic, Pathbreaker Ibex, Peer Through Depths, Prophetic Bolt,
+Pulse of Murasa, Puncture Bolt, Ravaging Blaze, Raven Familiar,
+Reconnaissance, Reef Worm, Release the Ants, Research the Deep,
+Resistance Fighter, Revive the Fallen, Runechanter's Pike,
+Rust Scarab, Ruthless Deathfang, Sanctum of Ugin, Saprazzan Bailiff,
+Saprazzan Raider, Satyr Wayfinder, Savra, Queen of the Golgari,
+Scout the Borders, Sea Gate Oracle, Second Harvest, Seedcradle Witch,
+Seed Guardian, Seek the Wilds, Shaman of the Pack, Sight Beyond Sight,
+Silkwrap, Skirk Alarmist, Skull Rend, Skymark Roc, Slab Hammer,
+Sleight of Hand, Smothering Abomination, Snag, Soldevi Golem,
+Soldier of the Pantheon, Songstitcher, Sphinx-Bone Wand, Spinebiter,
+Spite of Mogis, Spring Cleaning, Stabbing Pain, Stoneforge Acolyte,
+Strength from the Fallen, Suleiman's Legacy, Sunscorch Regent,
+Surge of Righteousness, Suspension Field, Swarm Surge, Swell of Growth,
+Tears of Rage, Temur Battle Rage, Tenacity, Thopter Assembly,
+Thraximundar, Throwing Knife, Tireless Tracker, Titan's Revenge,
+Tourach's Gate, Trap Runner, Treasured Find, Tribute to the Wild,
+True-Faith Censer, Ulvenwald Mysteries, Utvara Hellkite, Vampiric Rites,
+Vaultbreaker, Vedalken Anatomist, Vessel of Nascency, Viashino Racketeer,
+Vildin-Pack Alpha, Volatile Rig, Wall of Resurgence, Wandering Champion,
+War Dance, Waylay, Wirefly Hive, Woeleecher, Woodland Guidance,
+Words of Wisdom, Worldslayer, Wormfang Drake
 
 Release 1.73 (May 28, 2016)
 ============
