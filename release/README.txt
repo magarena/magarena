@@ -112,7 +112,7 @@ ShawnieBoy
     * effect: <permanents> becomes blocked.
     * effect: <players> gain/lose life equal to <amount>.
     * effect: Draw cards equal to <amount>.
-    * ability: Equip <cost> to a <filter>, Equip {2} creature with power 3 or greater
+    * ability: Equip <cost> to a <filter>
     * ability: <permanenst> get (+|-)(X|0)/(+|-)(X|0), where X is <count>.
     * ability: (+|-)<N>: <effect> (loyalty ability)
     * ability: If <condition>, you may <cost> rather than pay SN's mana cost.
