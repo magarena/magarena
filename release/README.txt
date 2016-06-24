@@ -122,12 +122,12 @@ ShawnieBoy
     * ability: Protection from multicolored
 
 - fixed the following bugs:
-    * Sigil of Valor counts the equipped creature (issue #773)
-    * remove card reveal from Vampiric Tutor
-    * change Draw to use an event to ensure correct order of events as a rider, fixes #205
+    * crash when double-clicking empty decks list in card explorer (issue #786)
     * deck filter only matching lower case card name, should be case-insensitive
-    * fixes #786:  Exception if double-click empty decks list in card explorer.
-    * fix: trailing html tag shown due to trailing "\n" in string.
+    * trailing html tag shown due to trailing "\n" in string
+    * draw effect occurs before other effects (issue #205)
+    * Sigil of Valor counts the equipped creature (issue #773)
+    * Vampiric Tutor reveals selected card
 
 - added the following cards:
 Akroan Conscriptor, Aligned Hedron Network, Ancestral Memories,
