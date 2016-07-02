@@ -245,6 +245,11 @@ public enum CardProperty {
             card.setOverlay();
         }
     },
+    STATUS() {
+        public void setProperty(final MagicCardDefinition card, final String value) {
+            //not tracked in game
+        }
+    },
     ;
 
     public static final String IMAGE_UPDATED_FORMAT = "yyyy-MM-dd";
