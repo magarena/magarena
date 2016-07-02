@@ -406,6 +406,13 @@ public enum MagicAbility {
             card.add(MagicHandCastActivation.affinity(cardDef, MagicTargetFilterFactory.Permanent(ARG.wordrun(arg))));
         }
     },
+    Emerge("emerge " + ARG.MANACOST, 10) {
+        protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
+            final MagicCardDefinition cardDef = (MagicCardDefinition)card;
+            final MagicManaCost manaCost = MagicManaCost.create(ARG.manacost(arg));
+            card.add(MagicHandCastActivation.emerge(cardDef, manaCost));
+        }
+    },
     Outlast("outlast "+ARG.COST,10) {
         protected void addAbilityImpl(final MagicAbilityStore card, final Matcher arg) {
             final List<MagicMatchedCostEvent> matchedCostEvents = MagicRegularCostEvent.build(ARG.cost(arg));

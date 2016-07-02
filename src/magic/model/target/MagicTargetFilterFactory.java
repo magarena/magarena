@@ -17,6 +17,7 @@ import magic.model.MagicPlayer;
 import magic.model.MagicSource;
 import magic.model.MagicSubType;
 import magic.model.MagicType;
+import magic.model.MagicManaCost;
 import magic.model.choice.MagicTargetChoice;
 import magic.model.stack.MagicAbilityOnStack;
 import magic.model.stack.MagicItemOnStack;
@@ -1572,6 +1573,14 @@ public class MagicTargetFilterFactory {
             return targetType == MagicTargetType.Graveyard;
         }
     };
+
+    public static final MagicPermanentFilterImpl CREATURE_YOU_CONTROL_FOR_EMERGE(final MagicManaCost manaCost) {
+        return new MagicPermanentFilterImpl() {
+            public boolean accept(final MagicSource source, final MagicPlayer player, final MagicPermanent perm) {
+                return perm.isCreature() && perm.isController(player) && manaCost.reduce(perm.getConvertedCost()).getCondition().accept(source);
+            }
+        };
+    }
 
     public static final MagicCardFilterImpl CREATURE_CARD_WITH_INFECT_FROM_GRAVEYARD = card(MagicType.Creature).and(MagicAbility.Infect).from(MagicTargetType.Graveyard);
 

@@ -191,4 +191,18 @@ public class MagicHandCastActivation extends MagicActivation<MagicCard> implemen
             }
         };
     }
+
+    public static final MagicHandCastActivation emerge(final MagicCardDefinition cardDef, final MagicManaCost manaCost) {
+        return new MagicHandCastActivation(CARD_CONDITION, cardDef.getActivationHints(), "Emerge") {
+            @Override
+            public Iterable<MagicEvent> getCostEvent(final MagicCard source) {
+                return Collections.<MagicEvent>singletonList(
+                    new MagicEmergeCostEvent(
+                        source,
+                        manaCost
+                    )
+                );
+            }
+        };
+    }
 }
