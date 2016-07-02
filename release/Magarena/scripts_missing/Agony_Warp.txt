@@ -8,3 +8,4 @@ cost={U}{B}
 effect=Target creature gets -3/-0 until end of turn.~Target creature gets -0/-3 until end of turn.
 timing=removal
 oracle=Target creature gets -3/-0 until end of turn.\nTarget creature gets -0/-3 until end of turn.
+status=not supported: multiple-targets

@@ -7,3 +7,4 @@ cost={1}{G}
 effect=Target creature you control deals damage equal to its power to target creature you don't control.
 timing=main
 oracle=Target creature you control deals damage equal to its power to target creature you don't control.
+status=not supported: multiple-targets

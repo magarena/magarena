@@ -8,3 +8,4 @@ cost={1}{R}
 effect=Target creature you control deals damage equal to its power to another target creature.
 timing=removal
 oracle=Target creature you control deals damage equal to its power to another target creature.
+status=not supported: multiple-targets

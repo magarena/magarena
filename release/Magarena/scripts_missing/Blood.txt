@@ -9,3 +9,4 @@ split=Flesh
 timing=main
 second_half
 oracle=Target creature you control deals damage equal to its power to target creature or player.\nFuse
+status=not supported: multiple-targets

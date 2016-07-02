@@ -7,3 +7,4 @@ cost={G}
 effect=Target creature you control deals damage equal to its power to target creature with flying.
 timing=removal
 oracle=Target creature you control deals damage equal to its power to target creature with flying.
+status=not supported: multiple-targets

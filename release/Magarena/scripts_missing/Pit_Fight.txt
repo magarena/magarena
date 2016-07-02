@@ -7,3 +7,4 @@ cost={1}{R/G}
 effect=Target creature you control fights another target creature.
 timing=removal
 oracle=Target creature you control fights another target creature.
+status=not supported: multiple-targets

@@ -7,3 +7,4 @@ cost={G}
 effect=Target creature you control with a +1/+1 counter on it fights target creature an opponent controls.
 timing=removal
 oracle=Target creature you control with a +1/+1 counter on it fights target creature an opponent controls.
+status=not supported: multiple-targets

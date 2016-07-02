@@ -7,3 +7,4 @@ cost={4}{B}{G}
 effect=Target creature gets +3/+3 until end of turn. Another target creature gets -3/-3 until end of turn.
 timing=main
 oracle=Target creature gets +3/+3 until end of turn. Another target creature gets -3/-3 until end of turn.
+status=not supported: multiple-targets

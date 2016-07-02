@@ -7,3 +7,4 @@ cost={2}{U}
 effect=Target player gains control of target permanent you control.
 timing=main
 oracle=Target player gains control of target permanent you control.
+status=not supported: multiple-targets

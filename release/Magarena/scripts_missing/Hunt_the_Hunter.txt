@@ -7,3 +7,4 @@ cost={G}
 effect=Target green creature you control gets +2/+2 until end of turn. It fights target green creature an opponent controls.
 timing=main
 oracle=Target green creature you control gets +2/+2 until end of turn. It fights target green creature an opponent controls.
+status=not supported: multiple-targets
