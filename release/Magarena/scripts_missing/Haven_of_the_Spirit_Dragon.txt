@@ -8,3 +8,4 @@ ability={T}: Add {C} to your mana pool.;\
         {2}, {T}, Sacrifice SN: Return target Dragon creature card or Ugin planeswalker card from your graveyard to your hand.
 timing=land
 oracle={T}: Add {C} to your mana pool.\n{T}: Add one mana of any color to your mana pool. Spend this mana only to cast a Dragon creature spell.\n{2}, {T}, Sacrifice Haven of the Spirit Dragon: Return target Dragon creature card or Ugin planeswalker card from your graveyard to your hand.
+status=not supported: mana-restriction

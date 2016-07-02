@@ -7,3 +7,4 @@ cost={R}{R}{R}{R}
 effect=Add {R}{R}{R}{R}{R}{R}{R} to your mana pool. Spend this mana only to cast artifact or creature spells.
 timing=main
 oracle=Add {R}{R}{R}{R}{R}{R}{R} to your mana pool. Spend this mana only to cast artifact or creature spells.
+status=not supported: add-multiple-mana

@@ -9,3 +9,4 @@ ability=SN doesn't untap during your untap step.;\
         {4}: Untap SN.
 timing=artifact
 oracle=Grim Monolith doesn't untap during your untap step.\n{T}: Add {C}{C}{C} to your mana pool.\n{4}: Untap Grim Monolith.
+status=not supported: add-multiple-mana

@@ -8,3 +8,4 @@ cost={1}
 ability={T}: Add {C}{C} to your mana pool.
 timing=artifact
 oracle={T}: Add {C}{C} to your mana pool.
+status=not supported: add-multiple-mana

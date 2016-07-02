@@ -8,3 +8,4 @@ ability={T}: Add {C} to your mana pool.;\
         {1}, Remove X storage counters from SN: Add X mana in any combination of {R} and/or {G} to your mana pool.
 timing=land
 oracle={T}: Add {C} to your mana pool.\n{1}, {T}: Put a storage counter on Fungal Reaches.\n{1}, Remove X storage counters from Fungal Reaches: Add X mana in any combination of {R} and/or {G} to your mana pool.
+status=not supported: add-multiple-mana

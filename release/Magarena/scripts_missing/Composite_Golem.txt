@@ -9,3 +9,4 @@ pt=4/4
 ability=Sacrifice SN: Add {W}{U}{B}{R}{G} to your mana pool.
 timing=main
 oracle=Sacrifice Composite Golem: Add {W}{U}{B}{R}{G} to your mana pool.
+status=not supported: add-multiple-mana

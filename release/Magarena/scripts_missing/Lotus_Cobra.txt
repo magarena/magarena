@@ -9,3 +9,4 @@ pt=2/1
 ability=Whenever a land enters the battlefield under your control, you may add one mana of any color to your mana pool.
 timing=main
 oracle=Landfall — Whenever a land enters the battlefield under your control, you may add one mana of any color to your mana pool.
+status=not supported: non-activated-mana-ability

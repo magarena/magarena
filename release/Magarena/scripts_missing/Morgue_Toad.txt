@@ -9,3 +9,4 @@ pt=2/2
 ability=Sacrifice SN: Add {U}{R} to your mana pool.
 timing=main
 oracle=Sacrifice Morgue Toad: Add {U}{R} to your mana pool.
+status=not supported: add-multiple-mana

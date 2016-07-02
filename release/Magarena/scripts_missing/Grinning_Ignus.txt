@@ -9,3 +9,4 @@ pt=2/2
 ability={R}, Return SN to its owner's hand: Add {C}{C}{R} to your mana pool. Activate this ability only any time you could cast a sorcery.
 timing=main
 oracle={R}, Return Grinning Ignus to its owner's hand: Add {C}{C}{R} to your mana pool. Activate this ability only any time you could cast a sorcery.
+status=not supported: add-multiple-mana

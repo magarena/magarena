@@ -8,3 +8,4 @@ ability={3}, {T}: Put a 0/1 colorless Prism artifact creature token onto the bat
         Sacrifice a Prism token: Add one mana of any color to your mana pool.
 timing=artifact
 oracle={3}, {T}: Put a 0/1 colorless Prism artifact creature token onto the battlefield.\nSacrifice a Prism token: Add one mana of any color to your mana pool.
+status=not supported: repeated-mana-ability

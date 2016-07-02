@@ -10,3 +10,4 @@ ability=Tap two untapped Elves you control: Add one mana of any color to your ma
         Morph {G}
 timing=main
 oracle=Tap two untapped Elves you control: Add one mana of any color to your mana pool.\nMorph {G}
+status=not supported: repeated-mana-ability

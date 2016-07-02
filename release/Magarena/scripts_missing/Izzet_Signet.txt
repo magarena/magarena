@@ -8,3 +8,4 @@ cost={2}
 ability={1}, {T}: Add {U}{R} to your mana pool.
 timing=artifact
 oracle={1}, {T}: Add {U}{R} to your mana pool.
+status=not supported: add-multiple-mana

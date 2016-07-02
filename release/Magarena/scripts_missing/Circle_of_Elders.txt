@@ -10,3 +10,4 @@ ability=Vigilance;\
         {T}: Add {C}{C}{C} to your mana pool. Activate this ability only if creatures you control have total power 8 or greater.
 timing=main
 oracle=Vigilance\nFormidable — {T}: Add {C}{C}{C} to your mana pool. Activate this ability only if creatures you control have total power 8 or greater.
+status=not supported: add-multiple-mana

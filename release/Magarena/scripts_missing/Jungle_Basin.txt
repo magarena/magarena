@@ -8,3 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {C}{G} to your mana pool.
 timing=land
 oracle=Jungle Basin enters the battlefield tapped.\nWhen Jungle Basin enters the battlefield, sacrifice it unless you return an untapped Forest you control to its owner's hand.\n{T}: Add {C}{G} to your mana pool.
+status=not supported: add-multiple-mana

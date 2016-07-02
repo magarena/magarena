@@ -7,3 +7,4 @@ cost={1}{R}
 ability=Cumulative upkeep—Add {R} to your mana pool.
 timing=enchantment
 oracle=Cumulative upkeep—Add {R} to your mana pool.
+status=not supported: add-multiple-mana

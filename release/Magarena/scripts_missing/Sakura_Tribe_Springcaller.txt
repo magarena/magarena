@@ -9,3 +9,4 @@ pt=2/4
 ability=At the beginning of your upkeep, add {G} to your mana pool. Until end of turn, this mana doesn't empty from your mana pool as steps and phases end.
 timing=main
 oracle=At the beginning of your upkeep, add {G} to your mana pool. Until end of turn, this mana doesn't empty from your mana pool as steps and phases end.
+status=not supported: non-activated-mana-ability

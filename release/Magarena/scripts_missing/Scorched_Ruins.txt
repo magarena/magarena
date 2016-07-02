@@ -7,3 +7,4 @@ ability=If SN would enter the battlefield, sacrifice two untapped lands instead.
         {T}: Add {C}{C}{C}{C} to your mana pool.
 timing=land
 oracle=If Scorched Ruins would enter the battlefield, sacrifice two untapped lands instead. If you do, put Scorched Ruins onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add {C}{C}{C}{C} to your mana pool.
+status=not supported: add-multiple-mana

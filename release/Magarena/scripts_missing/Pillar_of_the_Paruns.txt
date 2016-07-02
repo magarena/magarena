@@ -6,3 +6,4 @@ type=Land
 ability={T}: Add one mana of any color to your mana pool. Spend this mana only to cast a multicolored spell.
 timing=land
 oracle={T}: Add one mana of any color to your mana pool. Spend this mana only to cast a multicolored spell.
+status=not supported: mana-restriction

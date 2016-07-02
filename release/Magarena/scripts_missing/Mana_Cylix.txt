@@ -7,3 +7,4 @@ cost={1}
 ability={1}, {T}: Add one mana of any color to your mana pool.
 timing=artifact
 oracle={1}, {T}: Add one mana of any color to your mana pool.
+status=not supported: mana-ability-with-choice

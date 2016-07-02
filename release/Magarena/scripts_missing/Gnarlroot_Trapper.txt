@@ -11,3 +11,4 @@ ability={T}, Pay 1 life: Add {G} to your mana pool. Spend this mana only to cast
         {T}: Target attacking Elf you control gains deathtouch until end of turn.
 timing=main
 oracle={T}, Pay 1 life: Add {G} to your mana pool. Spend this mana only to cast an Elf creature spell.\n{T}: Target attacking Elf you control gains deathtouch until end of turn.
+status=not supported: mana-restriction

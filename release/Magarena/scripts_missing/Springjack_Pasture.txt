@@ -8,3 +8,4 @@ ability={T}: Add {C} to your mana pool.;\
         {T}, Sacrifice X Goats: Add X mana of any one color to your mana pool. You gain X life.
 timing=land
 oracle={T}: Add {C} to your mana pool.\n{4}, {T}: Put a 0/1 white Goat creature token onto the battlefield.\n{T}, Sacrifice X Goats: Add X mana of any one color to your mana pool. You gain X life.
+status=not supported: add-multiple-mana

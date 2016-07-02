@@ -9,3 +9,4 @@ pt=1/1
 ability={G}: Add one mana of any color to your mana pool.
 timing=main
 oracle={G}: Add one mana of any color to your mana pool.
+status=not supported: mana-ability-with-choice

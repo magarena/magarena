@@ -9,3 +9,4 @@ pt=1/1
 ability={B}, {T}, Discard a card: Add {B}{B}{B} to your mana pool.
 timing=main
 oracle={B}, {T}, Discard a card: Add {B}{B}{B} to your mana pool.
+status=not supported: add-multiple-mana

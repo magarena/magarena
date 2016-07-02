@@ -9,3 +9,4 @@ pt=2/2
 ability=All Slivers have "Sacrifice this permanent: Add {B}{B} to your mana pool."
 timing=main
 oracle=All Slivers have "Sacrifice this permanent: Add {B}{B} to your mana pool."
+status=not supported: add-multiple-mana

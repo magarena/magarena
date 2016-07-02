@@ -11,3 +11,4 @@ ability={T}: Exile target land card from a graveyard. Add one mana of any color 
         {G}, {T}: Exile target creature card from a graveyard. You gain 2 life.
 timing=main
 oracle={T}: Exile target land card from a graveyard. Add one mana of any color to your mana pool.\n{B}, {T}: Exile target instant or sorcery card from a graveyard. Each opponent loses 2 life.\n{G}, {T}: Exile target creature card from a graveyard. You gain 2 life.
+status=not supported: non-activated-mana-ability

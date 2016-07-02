@@ -11,3 +11,4 @@ ability=Devoid;\
         {T}: Add {C} to your mana pool. Spend this mana only to cast a colorless spell, activate an ability of a colorless permanent, or pay a cost that contains {C}.
 timing=main
 oracle=Devoid\n{T}: Add {C} to your mana pool. Spend this mana only to cast a colorless spell, activate an ability of a colorless permanent, or pay a cost that contains {C}.
+status=not supported: mana-restriction

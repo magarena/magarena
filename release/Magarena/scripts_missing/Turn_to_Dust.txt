@@ -7,3 +7,4 @@ cost={G}
 effect=Destroy target Equipment. Add {G} to your mana pool.
 timing=removal
 oracle=Destroy target Equipment. Add {G} to your mana pool.
+status=not supported: non-activated-mana-ability

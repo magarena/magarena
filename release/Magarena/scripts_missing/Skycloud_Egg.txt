@@ -7,3 +7,4 @@ cost={1}
 ability={2}, {T}, Sacrifice SN: Add {W}{U} to your mana pool. Draw a card.
 timing=artifact
 oracle={2}, {T}, Sacrifice Skycloud Egg: Add {W}{U} to your mana pool. Draw a card.
+status=not supported: add-multiple-mana

@@ -9,3 +9,4 @@ pt=2/2
 ability={T}: Add {U} or {C}{U} to your mana pool. Spend this mana only to pay cumulative upkeep costs.
 timing=main
 oracle={T}: Add {U} or {C}{U} to your mana pool. Spend this mana only to pay cumulative upkeep costs.
+status=not supported: add-multiple-mana

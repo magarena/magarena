@@ -9,3 +9,4 @@ pt=2/2
 ability={T}, Sacrifice an artifact: Add {R}{R} to your mana pool.
 timing=main
 oracle={T}, Sacrifice an artifact: Add {R}{R} to your mana pool.
+status=not supported: add-multiple-mana

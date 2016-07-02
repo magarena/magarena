@@ -7,3 +7,4 @@ cost={3}
 ability={1}, {T}, Sacrifice SN: Add two mana of any one color to your mana pool. Draw a card at the beginning of the next turn's upkeep.
 timing=artifact
 oracle={1}, {T}, Sacrifice Astrolabe: Add two mana of any one color to your mana pool. Draw a card at the beginning of the next turn's upkeep.
+status=not supported: add-multiple-mana

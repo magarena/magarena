@@ -10,3 +10,4 @@ ability={T}: Add {G} to your mana pool.;\
         {T}: Add {G}{G} to your mana pool. Activate this ability only if you control a creature with power 4 or greater.
 timing=main
 oracle={T}: Add {G} to your mana pool.\nFerocious — {T}: Add {G}{G} to your mana pool. Activate this ability only if you control a creature with power 4 or greater.
+status=not supported: add-multiple-mana

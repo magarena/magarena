@@ -9,3 +9,4 @@ pt=0/4
 ability={T}: Add {C} to your mana pool. Spend this mana only to cast a face-down creature spell, pay a mana cost to turn a manifested creature face up, or pay a morph cost.
 timing=main
 oracle={T}: Add {C} to your mana pool. Spend this mana only to cast a face-down creature spell, pay a mana cost to turn a manifested creature face up, or pay a morph cost.
+status=not supported: mana-restriction

@@ -7,3 +7,4 @@ cost={3}{B}{B}
 effect=Destroy target creature. Add {B}{B}{B} to your mana pool.
 timing=main
 oracle=Destroy target creature. Add {B}{B}{B} to your mana pool.
+status=not supported: add-multiple-mana

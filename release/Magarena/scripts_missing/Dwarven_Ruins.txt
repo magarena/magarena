@@ -8,3 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {T}, Sacrifice SN: Add {R}{R} to your mana pool.
 timing=land
 oracle=Dwarven Ruins enters the battlefield tapped.\n{T}: Add {R} to your mana pool.\n{T}, Sacrifice Dwarven Ruins: Add {R}{R} to your mana pool.
+status=not supported: add-multiple-mana

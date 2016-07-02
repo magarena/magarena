@@ -9,3 +9,4 @@ pt=4/4
 ability={T}: Add {C}{C}{C}{C} to your mana pool. Spend this mana only on costs that contain {X}.
 timing=main
 oracle={T}: Add {C}{C}{C}{C} to your mana pool. Spend this mana only on costs that contain {X}.
+status=not supported: add-multiple-mana

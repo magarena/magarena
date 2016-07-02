@@ -9,3 +9,4 @@ ability=SN enters the battlefield tapped.;\
         When SN is put into a graveyard from the battlefield, draw a card.
 timing=artifact
 oracle=Terrarion enters the battlefield tapped.\n{2}, {T}, Sacrifice Terrarion: Add two mana in any combination of colors to your mana pool.\nWhen Terrarion is put into a graveyard from the battlefield, draw a card.
+status=not supported: add-multiple-mana

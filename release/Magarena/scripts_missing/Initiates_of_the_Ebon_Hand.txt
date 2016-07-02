@@ -9,3 +9,4 @@ pt=1/1
 ability={1}: Add {B} to your mana pool. If this ability has been activated four or more times this turn, sacrifice SN at the beginning of the next end step.
 timing=main
 oracle={1}: Add {B} to your mana pool. If this ability has been activated four or more times this turn, sacrifice Initiates of the Ebon Hand at the beginning of the next end step.
+status=not supported: mana-ability-with-choice

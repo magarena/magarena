@@ -11,3 +11,4 @@ ability=Defender;\
         {R}, Sacrifice SN: SN deals 2 damage to target creature it's blocking.
 timing=smain
 oracle=Defender\nSacrifice Tinder Wall: Add {R}{R} to your mana pool.\n{R}, Sacrifice Tinder Wall: Tinder Wall deals 2 damage to target creature it's blocking.
+status=not supported: add-multiple-mana

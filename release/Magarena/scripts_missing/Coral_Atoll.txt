@@ -8,3 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {C}{U} to your mana pool.
 timing=land
 oracle=Coral Atoll enters the battlefield tapped.\nWhen Coral Atoll enters the battlefield, sacrifice it unless you return an untapped Island you control to its owner's hand.\n{T}: Add {C}{U} to your mana pool.
+status=not supported: add-multiple-mana

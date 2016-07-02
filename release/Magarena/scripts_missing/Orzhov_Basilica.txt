@@ -9,3 +9,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {W}{B} to your mana pool.
 timing=land
 oracle=Orzhov Basilica enters the battlefield tapped.\nWhen Orzhov Basilica enters the battlefield, return a land you control to its owner's hand.\n{T}: Add {W}{B} to your mana pool.
+status=not supported: add-multiple-mana

@@ -7,3 +7,4 @@ cost={2}{G}
 effect=Destroy target artifact. Add {G}{G}{G} to your mana pool.
 timing=main
 oracle=Destroy target artifact. Add {G}{G}{G} to your mana pool.
+status=not supported: add-multiple-mana

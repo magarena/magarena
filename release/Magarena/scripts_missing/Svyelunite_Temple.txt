@@ -8,3 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {T}, Sacrifice SN: Add {U}{U} to your mana pool.
 timing=land
 oracle=Svyelunite Temple enters the battlefield tapped.\n{T}: Add {U} to your mana pool.\n{T}, Sacrifice Svyelunite Temple: Add {U}{U} to your mana pool.
+status=not supported: add-multiple-mana

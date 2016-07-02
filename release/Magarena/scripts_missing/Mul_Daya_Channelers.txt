@@ -11,3 +11,4 @@ ability=Play with the top card of your library revealed.;\
         As long as the top card of your library is a land card, SN has "{T}: Add two mana of any one color to your mana pool."
 timing=main
 oracle=Play with the top card of your library revealed.\nAs long as the top card of your library is a creature card, Mul Daya Channelers gets +3/+3.\nAs long as the top card of your library is a land card, Mul Daya Channelers has "{T}: Add two mana of any one color to your mana pool."
+status=not supported: add-multiple-mana

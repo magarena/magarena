@@ -7,3 +7,4 @@ cost={2}
 ability={1}, {T}, Sacrifice SN: Add two mana of any one color to your mana pool.
 timing=artifact
 oracle={1}, {T}, Sacrifice Implements of Sacrifice: Add two mana of any one color to your mana pool.
+status=not supported: add-multiple-mana

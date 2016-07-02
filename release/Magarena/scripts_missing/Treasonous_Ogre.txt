@@ -10,3 +10,4 @@ ability=Dethrone;\
         Pay 3 life: Add {R} to your mana pool.
 timing=main
 oracle=Dethrone\nPay 3 life: Add {R} to your mana pool.
+status=not supported: repeated-mana-ability

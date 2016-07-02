@@ -9,3 +9,4 @@ pt=1/2
 ability={T}, Sacrifice SN: Add {B}{B} to your mana pool.
 timing=main
 oracle={T}, Sacrifice Basal Thrull: Add {B}{B} to your mana pool.
+status=not supported: add-multiple-mana

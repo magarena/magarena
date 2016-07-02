@@ -10,3 +10,4 @@ ability=Flying;\
         {G}, {T}: Add {R} to your mana pool.
 timing=main
 oracle=Flying\n{G}, {T}: Add {R} to your mana pool.
+status=not supported: mana-ability-with-choice

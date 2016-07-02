@@ -8,3 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {T}: Add {C}{W} to your mana pool.
 timing=land
 oracle=Karoo enters the battlefield tapped.\nWhen Karoo enters the battlefield, sacrifice it unless you return an untapped Plains you control to its owner's hand.\n{T}: Add {C}{W} to your mana pool.
+status=not supported: add-multiple-mana

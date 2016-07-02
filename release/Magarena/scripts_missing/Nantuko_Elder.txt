@@ -9,3 +9,4 @@ pt=1/2
 ability={T}: Add {C}{G} to your mana pool.
 timing=main
 oracle={T}: Add {C}{G} to your mana pool.
+status=not supported: add-multiple-mana

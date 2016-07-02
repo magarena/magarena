@@ -8,3 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {T}, Sacrifice SN: Add {W}{B} to your mana pool.
 timing=land
 oracle=Ancient Spring enters the battlefield tapped.\n{T}: Add {U} to your mana pool.\n{T}, Sacrifice Ancient Spring: Add {W}{B} to your mana pool.
+status=not supported: add-multiple-mana

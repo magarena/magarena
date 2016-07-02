@@ -9,3 +9,4 @@ pt=3/3
 ability=Whenever a creature you control deals combat damage to a player, add that much {G} to your mana pool. Until end of turn, this mana doesn't empty from your mana pool as steps and phases end.
 timing=main
 oracle=Whenever a creature you control deals combat damage to a player, add that much {G} to your mana pool. Until end of turn, this mana doesn't empty from your mana pool as steps and phases end.
+status=not supported: add-multiple-mana

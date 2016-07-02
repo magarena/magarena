@@ -10,3 +10,4 @@ ability={T}: Add two mana in any combination of colors to your mana pool. Spend 
         {9}{G}{G}, {T}: Each player's life total becomes the number of creatures he or she controls. Activate this ability only if creatures you control have total power 8 or greater.
 timing=main
 oracle={T}: Add two mana in any combination of colors to your mana pool. Spend this mana only to cast creature spells.\nFormidable — {9}{G}{G}, {T}: Each player's life total becomes the number of creatures he or she controls. Activate this ability only if creatures you control have total power 8 or greater.
+status=not supported: add-multiple-mana

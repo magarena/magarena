@@ -10,3 +10,4 @@ ability={T}: Add {G}{G}{G} to your mana pool.;\
         Forestcycling {2}
 timing=main
 oracle={T}: Add {G}{G}{G} to your mana pool.\nForestcycling {2}
+status=not supported: add-multiple-mana

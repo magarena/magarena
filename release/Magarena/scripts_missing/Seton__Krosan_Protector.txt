@@ -9,3 +9,4 @@ pt=2/2
 ability=Tap an untapped Druid you control: Add {G} to your mana pool.
 timing=main
 oracle=Tap an untapped Druid you control: Add {G} to your mana pool.
+status=not supported: repeated-mana-ability

@@ -9,3 +9,4 @@ pt=1/1
 ability=Tap three untapped Elves you control: Add {G}{G}{G} to your mana pool.
 timing=main
 oracle=Tap three untapped Elves you control: Add {G}{G}{G} to your mana pool.
+status=not supported: add-multiple-mana

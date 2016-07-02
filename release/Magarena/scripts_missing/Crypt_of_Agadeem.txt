@@ -8,3 +8,4 @@ ability=SN enters the battlefield tapped.;\
         {2}, {T}: Add {B} to your mana pool for each black creature card in your graveyard.
 timing=land
 oracle=Crypt of Agadeem enters the battlefield tapped.\n{T}: Add {B} to your mana pool.\n{2}, {T}: Add {B} to your mana pool for each black creature card in your graveyard.
+status=not supported: add-multiple-mana

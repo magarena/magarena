@@ -9,3 +9,4 @@ pt=1/1
 ability={T}, Sacrifice a Forest: Add three mana in any combination of {R} and/or {G} to your mana pool.
 timing=main
 oracle={T}, Sacrifice a Forest: Add three mana in any combination of {R} and/or {G} to your mana pool.
+status=not supported: add-multiple-mana

@@ -8,3 +8,4 @@ ability=As an additional cost to cast SN, sacrifice a creature.
 effect=Add {R}{R}{R} to your mana pool.
 timing=main
 oracle=As an additional cost to cast Infernal Plunge, sacrifice a creature.\nAdd {R}{R}{R} to your mana pool.
+status=not supported: add-multiple-mana

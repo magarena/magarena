@@ -7,3 +7,4 @@ cost={1}{R}
 effect=Add {R}{R}{R} to your mana pool.
 timing=removal
 oracle=Add {R}{R}{R} to your mana pool.
+status=not supported: add-multiple-mana

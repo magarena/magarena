@@ -9,3 +9,4 @@ pt=3/3
 ability={1}, Sacrifice SN: Add {W}{U}{B} to your mana pool.
 timing=main
 oracle={1}, Sacrifice Dromar's Attendant: Add {W}{U}{B} to your mana pool.
+status=not supported: add-multiple-mana

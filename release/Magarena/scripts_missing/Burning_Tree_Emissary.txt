@@ -9,3 +9,4 @@ pt=2/2
 ability=When SN enters the battlefield, add {R}{G} to your mana pool.
 timing=main
 oracle=When Burning-Tree Emissary enters the battlefield, add {R}{G} to your mana pool.
+status=not supported: add-multiple-mana

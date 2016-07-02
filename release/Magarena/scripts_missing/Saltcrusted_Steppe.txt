@@ -8,3 +8,4 @@ ability={T}: Add {C} to your mana pool.;\
         {1}, Remove X storage counters from SN: Add X mana in any combination of {G} and/or {W} to your mana pool.
 timing=land
 oracle={T}: Add {C} to your mana pool.\n{1}, {T}: Put a storage counter on Saltcrusted Steppe.\n{1}, Remove X storage counters from Saltcrusted Steppe: Add X mana in any combination of {G} and/or {W} to your mana pool.
+status=not supported: add-multiple-mana

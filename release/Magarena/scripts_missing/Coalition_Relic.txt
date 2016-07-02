@@ -9,3 +9,4 @@ ability={T}: Add one mana of any color to your mana pool.;\
         At the beginning of your precombat main phase, remove all charge counters from SN. Add one mana of any color to your mana pool for each charge counter removed this way.
 timing=artifact
 oracle={T}: Add one mana of any color to your mana pool.\n{T}: Put a charge counter on Coalition Relic.\nAt the beginning of your precombat main phase, remove all charge counters from Coalition Relic. Add one mana of any color to your mana pool for each charge counter removed this way.
+status=not supported: add-multiple-mana

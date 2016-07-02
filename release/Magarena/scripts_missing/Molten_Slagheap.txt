@@ -8,3 +8,4 @@ ability={T}: Add {C} to your mana pool.;\
         {1}, Remove X storage counters from SN: Add X mana in any combination of {B} and/or {R} to your mana pool.
 timing=land
 oracle={T}: Add {C} to your mana pool.\n{1}, {T}: Put a storage counter on Molten Slagheap.\n{1}, Remove X storage counters from Molten Slagheap: Add X mana in any combination of {B} and/or {R} to your mana pool.
+status=not supported: add-multiple-mana

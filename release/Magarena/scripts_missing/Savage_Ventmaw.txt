@@ -10,3 +10,4 @@ ability=Flying;\
         Whenever SN attacks, add {R}{R}{R}{G}{G}{G} to your mana pool. Until end of turn, this mana doesn't empty from your mana pool as steps and phases end.
 timing=main
 oracle=Flying\nWhenever Savage Ventmaw attacks, add {R}{R}{R}{G}{G}{G} to your mana pool. Until end of turn, this mana doesn't empty from your mana pool as steps and phases end.
+status=not supported: add-multiple-mana

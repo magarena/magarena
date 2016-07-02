@@ -9,3 +9,4 @@ pt=2/1
 ability=When SN enters the battlefield, add {B}{B}{B} to your mana pool.
 timing=main
 oracle=When Priest of Gix enters the battlefield, add {B}{B}{B} to your mana pool.
+status=not supported: non-activated-mana-ability
