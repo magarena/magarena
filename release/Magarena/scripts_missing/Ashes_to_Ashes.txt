@@ -7,3 +7,4 @@ cost={1}{B}{B}
 effect=Exile two target nonartifact creatures. SN deals 5 damage to you.
 timing=main
 oracle=Exile two target nonartifact creatures. Ashes to Ashes deals 5 damage to you.
+status=not supported: multiple-targets

@@ -9,3 +9,4 @@ ability=Changeling
 effect=Up to two target creatures each get +2/+0 and gain all creature types until end of turn.
 timing=removal
 oracle=Changeling\nUp to two target creatures each get +2/+0 and gain all creature types until end of turn.
+status=not supported: multiple-targets

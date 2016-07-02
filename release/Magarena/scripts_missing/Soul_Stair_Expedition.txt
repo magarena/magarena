@@ -8,3 +8,4 @@ ability=Whenever a land enters the battlefield under your control, you may put a
         Remove three quest counters from SN and sacrifice it: Return up to two target creature cards from your graveyard to your hand.
 timing=enchantment
 oracle=Landfall — Whenever a land enters the battlefield under your control, you may put a quest counter on Soul Stair Expedition.\nRemove three quest counters from Soul Stair Expedition and sacrifice it: Return up to two target creature cards from your graveyard to your hand.
+status=not supported: multiple-targets

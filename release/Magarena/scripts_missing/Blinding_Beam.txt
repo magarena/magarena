@@ -8,3 +8,4 @@ ability=Entwine {1}
 effect=Choose one — (1) Tap two target creatures. (2) Creatures don't untap during target player's next untap step.
 timing=removal
 oracle=Choose one —\n• Tap two target creatures.\n• Creatures don't untap during target player's next untap step.\nEntwine {1}
+status=not supported: multiple-targets

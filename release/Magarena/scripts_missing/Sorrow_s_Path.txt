@@ -7,3 +7,4 @@ ability={T}: Choose two target blocking creatures an opponent controls. If each 
         Whenever SN becomes tapped, it deals 2 damage to you and each creature you control.
 timing=land
 oracle={T}: Choose two target blocking creatures an opponent controls. If each of those creatures could block all creatures that the other is blocking, remove both of them from combat. Each one then blocks all creatures the other was blocking.\nWhenever Sorrow's Path becomes tapped, it deals 2 damage to you and each creature you control.
+status=not supported: multiple-targets

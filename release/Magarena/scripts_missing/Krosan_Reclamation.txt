@@ -8,3 +8,4 @@ ability=Flashback {1}{G}
 effect=Target player shuffles up to two target cards from his or her graveyard into his or her library.
 timing=removal
 oracle=Target player shuffles up to two target cards from his or her graveyard into his or her library.\nFlashback {1}{G}
+status=not supported: multiple-targets

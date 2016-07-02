@@ -7,3 +7,4 @@ cost={2}{G}{G}
 effect=Up to two target creatures each get +2/+2 and gain trample until end of turn.
 timing=removal
 oracle=Up to two target creatures each get +2/+2 and gain trample until end of turn.
+status=not supported: multiple-targets

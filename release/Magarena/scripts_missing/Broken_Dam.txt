@@ -7,3 +7,4 @@ cost={U}
 effect=Tap one or two target creatures without horsemanship.
 timing=main
 oracle=Tap one or two target creatures without horsemanship.
+status=not supported: multiple-targets

@@ -7,3 +7,4 @@ cost={2}{R}
 effect=Destroy two target artifacts.
 timing=removal
 oracle=Destroy two target artifacts.
+status=not supported: multiple-targets

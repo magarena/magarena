@@ -9,3 +9,4 @@ ability=Cycling {5}{G}{W}{U};\
 effect=Exile target attacking creature.
 timing=removal
 oracle=Exile target attacking creature.\nCycling {5}{G}{W}{U}\nWhen you cycle Resounding Silence, exile up to two target attacking creatures.
+status=not supported: multiple-targets

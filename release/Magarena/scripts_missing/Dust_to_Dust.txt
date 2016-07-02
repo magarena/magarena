@@ -7,3 +7,4 @@ cost={1}{W}{W}
 effect=Exile two target artifacts.
 timing=main
 oracle=Exile two target artifacts.
+status=not supported: multiple-targets

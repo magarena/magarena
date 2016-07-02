@@ -7,3 +7,4 @@ cost={4}{U}
 effect=Return up to two target nonland permanents to their owners' hands.
 timing=removal
 oracle=Return up to two target nonland permanents to their owners' hands.
+status=not supported: multiple-targets

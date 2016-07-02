@@ -7,3 +7,4 @@ cost={1}{U}{R}
 effect=SN deals 2 damage divided as you choose among one or two target creatures and/or players.~Draw a card.
 timing=removal
 oracle=Electrolyze deals 2 damage divided as you choose among one or two target creatures and/or players.\nDraw a card.
+status=not supported: multiple-targets

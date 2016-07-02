@@ -9,3 +9,4 @@ pt=2/2
 ability=When SN enters the battlefield, detain up to two target creatures your opponents control.
 timing=main
 oracle=When Azorius Justiciar enters the battlefield, detain up to two target creatures your opponents control.
+status=not supported: multiple-targets

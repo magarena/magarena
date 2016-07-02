@@ -9,3 +9,4 @@ pt=2/2
 ability=Whenever SN attacks and isn't blocked, you may exile up to two target creature cards from defending player's graveyard. If you do, you gain 1 life for each card exiled this way and SN assigns no combat damage this turn.
 timing=main
 oracle=Whenever Rysorian Badger attacks and isn't blocked, you may exile up to two target creature cards from defending player's graveyard. If you do, you gain 1 life for each card exiled this way and Rysorian Badger assigns no combat damage this turn.
+status=not supported: multiple-targets

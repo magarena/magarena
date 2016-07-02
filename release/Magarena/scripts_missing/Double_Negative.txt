@@ -7,3 +7,4 @@ cost={U}{U}{R}
 effect=Counter up to two target spells.
 timing=counter
 oracle=Counter up to two target spells.
+status=not supported: multiple-targets

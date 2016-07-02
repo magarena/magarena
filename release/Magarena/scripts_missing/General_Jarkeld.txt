@@ -9,3 +9,4 @@ pt=1/2
 ability={T}: Switch the blocking creatures of two target attacking creatures. Activate this ability only during the declare blockers step.
 timing=main
 oracle={T}: Switch the blocking creatures of two target attacking creatures. Activate this ability only during the declare blockers step.
+status=not supported: multiple-targets

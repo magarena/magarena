@@ -7,3 +7,4 @@ cost={4}{B}
 effect=Destroy two target nonblack creatures unless either one is a color the other isn't. They can't be regenerated.
 timing=main
 oracle=Destroy two target nonblack creatures unless either one is a color the other isn't. They can't be regenerated.
+status=not supported: multiple-targets

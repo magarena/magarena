@@ -10,3 +10,4 @@ ability=Flying;\
         When SN dies, exile it, then return up to two target Bird and/or Cleric permanent cards from your graveyard to the battlefield.
 timing=main
 oracle=Flying\nWhen Celestial Gatekeeper dies, exile it, then return up to two target Bird and/or Cleric permanent cards from your graveyard to the battlefield.
+status=not supported: multiple-targets

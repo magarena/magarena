@@ -8,3 +8,4 @@ ability=Flashback {3}{R}
 effect=Up to two target creatures can't block this turn.
 timing=main
 oracle=Up to two target creatures can't block this turn.\nFlashback {3}{R}
+status=not supported: multiple-targets

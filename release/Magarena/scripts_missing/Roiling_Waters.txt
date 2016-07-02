@@ -8,3 +8,4 @@ cost={5}{U}{U}
 effect=Return up to two target creatures your opponents control to their owners' hands. Target player draws two cards.
 timing=main
 oracle=Return up to two target creatures your opponents control to their owners' hands. Target player draws two cards.
+status=not supported: multiple-targets

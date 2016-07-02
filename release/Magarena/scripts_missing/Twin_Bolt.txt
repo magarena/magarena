@@ -7,3 +7,4 @@ cost={1}{R}
 effect=SN deals 2 damage divided as you choose among one or two target creatures and/or players.
 timing=removal
 oracle=Twin Bolt deals 2 damage divided as you choose among one or two target creatures and/or players.
+status=not supported: multiple-targets

@@ -11,3 +11,4 @@ ability=Haste;\
         Evoke {1}{R}
 timing=fmain
 oracle=Haste\nWhen Glarewielder enters the battlefield, up to two target creatures can't block this turn.\nEvoke {1}{R}
+status=not supported: multiple-targets

@@ -11,3 +11,4 @@ ability=+1: Untap up to two target artifacts.;\
         −5: Artifacts you control become artifact creatures with base power and toughness 5/5 until end of turn.
 timing=main
 oracle=+1: Untap up to two target artifacts.\n−X: Search your library for an artifact card with converted mana cost X or less and put it onto the battlefield. Then shuffle your library.\n−5: Artifacts you control become artifact creatures with base power and toughness 5/5 until end of turn.
+status=not supported: multiple-targets

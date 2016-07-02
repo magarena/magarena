@@ -10,3 +10,4 @@ ability=Flying;\
         Discard SN: Exile up to two target cards from graveyards.
 timing=main
 oracle=Flying\nDiscard Faerie Macabre: Exile up to two target cards from graveyards.
+status=not supported: multiple-targets

@@ -8,3 +8,4 @@ ability=Flashback {1}{U}
 effect=Tap up to two target creatures.
 timing=removal
 oracle=Tap up to two target creatures.\nFlashback {1}{U}
+status=not supported: multiple-targets

@@ -7,3 +7,4 @@ cost={2}{U}{U}
 effect=Return one or two target creatures to their owners' hands.
 timing=main
 oracle=Return one or two target creatures to their owners' hands.
+status=not supported: multiple-targets

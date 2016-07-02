@@ -8,3 +8,4 @@ cost={1}{G}
 effect=Distribute two +1/+1 counters among one or two target creatures.
 timing=main
 oracle=Distribute two +1/+1 counters among one or two target creatures.
+status=not supported: multiple-targets

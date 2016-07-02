@@ -7,3 +7,4 @@ cost={3}{B}{R}
 effect=SN deals 2 damage to each of two target creatures.~Destroy those creatures instead if you have no cards in hand.
 timing=removal
 oracle=Twinstrike deals 2 damage to each of two target creatures.\nHellbent — Destroy those creatures instead if you have no cards in hand.
+status=not supported: multiple-targets

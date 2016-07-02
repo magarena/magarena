@@ -7,3 +7,4 @@ cost={2}{B}{B}
 effect=An opponent chooses one — (1) You draw three cards. (2) You destroy up to two target creatures that player controls. They can't be regenerated. That player draws up to three cards.
 timing=main
 oracle=An opponent chooses one —\n• You draw three cards.\n• You destroy up to two target creatures that player controls. They can't be regenerated. That player draws up to three cards.
+status=not supported: multiple-targets

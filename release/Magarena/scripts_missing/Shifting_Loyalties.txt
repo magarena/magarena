@@ -7,3 +7,4 @@ cost={5}{U}
 effect=Exchange control of two target permanents that share a card type.
 timing=main
 oracle=Exchange control of two target permanents that share a card type.
+status=not supported: multiple-targets

@@ -10,3 +10,4 @@ ability=Flying;\
         When SN enters the battlefield, return two target lands you control to their owner's hand.
 timing=main
 oracle=Flying\nWhen Sea Drake enters the battlefield, return two target lands you control to their owner's hand.
+status=not supported: multiple-targets

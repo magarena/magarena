@@ -7,3 +7,4 @@ cost={4}{U}
 effect=Exchange control of two target creatures.
 timing=main
 oracle=Exchange control of two target creatures.
+status=not supported: multiple-targets

@@ -7,3 +7,4 @@ cost={1}{U}
 effect=One or two target creatures gain flying until end of turn.
 timing=main
 oracle=One or two target creatures gain flying until end of turn.
+status=not supported: multiple-targets

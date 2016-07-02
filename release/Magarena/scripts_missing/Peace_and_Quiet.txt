@@ -7,3 +7,4 @@ cost={1}{W}
 effect=Destroy two target enchantments.
 timing=removal
 oracle=Destroy two target enchantments.
+status=not supported: multiple-targets

@@ -10,3 +10,4 @@ ability=Flying;\
         {T}: Exchange control of two target nonlegendary creatures. You can't activate this ability during combat.
 timing=main
 oracle=Flying\n{T}: Exchange control of two target nonlegendary creatures. You can't activate this ability during combat.
+status=not supported: multiple-targets

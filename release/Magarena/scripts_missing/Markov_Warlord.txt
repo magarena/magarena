@@ -10,3 +10,4 @@ ability=Haste;\
         When SN enters the battlefield, up to two target creatures can't block this turn.
 timing=fmain
 oracle=Haste\nWhen Markov Warlord enters the battlefield, up to two target creatures can't block this turn.
+status=not supported: multiple-targets

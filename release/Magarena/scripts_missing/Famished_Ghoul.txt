@@ -9,3 +9,4 @@ pt=3/2
 ability={1}{B}, Sacrifice SN: Exile up to two target cards from a single graveyard.
 timing=main
 oracle={1}{B}, Sacrifice Famished Ghoul: Exile up to two target cards from a single graveyard.
+status=not supported: multiple-targets

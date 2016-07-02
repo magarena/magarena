@@ -7,3 +7,4 @@ cost={4}{G}
 effect=Up to two target creatures each get +4/+4 until end of turn.
 timing=main
 oracle=Up to two target creatures each get +4/+4 until end of turn.
+status=not supported: multiple-targets

@@ -7,3 +7,4 @@ cost={3}{G}{G}
 effect=Put two target artifacts on top of their owners' libraries.
 timing=main
 oracle=Put two target artifacts on top of their owners' libraries.
+status=not supported: multiple-targets

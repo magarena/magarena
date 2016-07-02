@@ -8,3 +8,4 @@ cost={3}{U}{U}
 effect=If an opponent had two or more creatures enter the battlefield under his or her control this turn, you may pay {U} rather than pay SN's mana cost.~Return two target creatures to their owners' hands.
 timing=removal
 oracle=If an opponent had two or more creatures enter the battlefield under his or her control this turn, you may pay {U} rather than pay Whiplash Trap's mana cost.\nReturn two target creatures to their owners' hands.
+status=not supported: multiple-targets

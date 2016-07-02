@@ -9,3 +9,4 @@ pt=3/5
 ability={T}: Up to two target Swamps each become 3/5 Treefolk Warrior creatures in addition to their other types until end of turn.
 timing=main
 oracle={T}: Up to two target Swamps each become 3/5 Treefolk Warrior creatures in addition to their other types until end of turn.
+status=not supported: multiple-targets

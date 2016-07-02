@@ -8,3 +8,4 @@ cost={2}{U}{U}
 effect=If an opponent had a green creature enter the battlefield under his or her control this turn, you may pay {U} rather than pay SN's mana cost.~Tap up to two target creatures. Those creatures don't untap during their controller's next untap step.
 timing=removal
 oracle=If an opponent had a green creature enter the battlefield under his or her control this turn, you may pay {U} rather than pay Permafrost Trap's mana cost.\nTap up to two target creatures. Those creatures don't untap during their controller's next untap step.
+status=not supported: multiple-targets

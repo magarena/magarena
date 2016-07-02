@@ -7,3 +7,4 @@ cost={3}{B}
 effect=Up to two target creatures each get +1/+1 and gain lifelink until end of turn.
 timing=removal
 oracle=Up to two target creatures each get +1/+1 and gain lifelink until end of turn.
+status=not supported: multiple-targets

@@ -7,3 +7,4 @@ cost={1}{B}{B}
 effect=Destroy two target nonblack creatures. You lose 5 life.
 timing=removal
 oracle=Destroy two target nonblack creatures. You lose 5 life.
+status=not supported: multiple-targets

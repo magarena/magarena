@@ -7,3 +7,4 @@ cost={3}{R}{R}
 effect=SN deals 3 damage to each of two target creatures.
 timing=main
 oracle=Jagged Lightning deals 3 damage to each of two target creatures.
+status=not supported: multiple-targets

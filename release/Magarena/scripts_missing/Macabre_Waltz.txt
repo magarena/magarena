@@ -8,3 +8,4 @@ cost={1}{B}
 effect=Return up to two target creature cards from your graveyard to your hand, then discard a card.
 timing=main
 oracle=Return up to two target creature cards from your graveyard to your hand, then discard a card.
+status=not supported: multiple-targets

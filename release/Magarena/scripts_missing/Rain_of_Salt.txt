@@ -7,3 +7,4 @@ cost={4}{R}{R}
 effect=Destroy two target lands.
 timing=main
 oracle=Destroy two target lands.
+status=not supported: multiple-targets

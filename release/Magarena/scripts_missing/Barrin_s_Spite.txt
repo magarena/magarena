@@ -7,3 +7,4 @@ cost={2}{U}{B}
 effect=Choose two target creatures controlled by the same player. Their controller chooses and sacrifices one of them. Return the other to its owner's hand.
 timing=main
 oracle=Choose two target creatures controlled by the same player. Their controller chooses and sacrifices one of them. Return the other to its owner's hand.
+status=not supported: multiple-targets

@@ -11,3 +11,4 @@ ability=+1: Untap two target lands.;\
         −4: Creatures you control get +3/+3 and gain trample until end of turn.
 timing=main
 oracle=+1: Untap two target lands.\n−1: Put a 3/3 green Beast creature token onto the battlefield.\n−4: Creatures you control get +3/+3 and gain trample until end of turn.
+status=not supported: multiple-targets

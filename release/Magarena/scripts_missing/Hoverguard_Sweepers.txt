@@ -10,3 +10,4 @@ ability=Flying;\
         When SN enters the battlefield, you may return up to two target creatures to their owners' hands.
 timing=main
 oracle=Flying\nWhen Hoverguard Sweepers enters the battlefield, you may return up to two target creatures to their owners' hands.
+status=not supported: multiple-targets

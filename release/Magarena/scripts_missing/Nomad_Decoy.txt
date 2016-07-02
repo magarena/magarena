@@ -10,3 +10,4 @@ ability={W}, {T}: Tap target creature.;\
         {W}{W}, {T}: Tap two target creatures. Activate this ability only if seven or more cards are in your graveyard.
 timing=main
 oracle={W}, {T}: Tap target creature.\nThreshold — {W}{W}, {T}: Tap two target creatures. Activate this ability only if seven or more cards are in your graveyard.
+status=not supported: multiple-targets

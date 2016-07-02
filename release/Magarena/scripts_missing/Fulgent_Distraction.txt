@@ -7,3 +7,4 @@ cost={2}{W}
 effect=Choose two target creatures. Tap those creatures, then unattach all Equipment from them.
 timing=removal
 oracle=Choose two target creatures. Tap those creatures, then unattach all Equipment from them.
+status=not supported: multiple-targets

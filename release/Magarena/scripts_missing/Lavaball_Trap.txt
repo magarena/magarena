@@ -8,3 +8,4 @@ cost={6}{R}{R}
 effect=If an opponent had two or more lands enter the battlefield under his or her control this turn, you may pay {3}{R}{R} rather than pay SN's mana cost.~Destroy two target lands. SN deals 4 damage to each creature.
 timing=removal
 oracle=If an opponent had two or more lands enter the battlefield under his or her control this turn, you may pay {3}{R}{R} rather than pay Lavaball Trap's mana cost.\nDestroy two target lands. Lavaball Trap deals 4 damage to each creature.
+status=not supported: multiple-targets

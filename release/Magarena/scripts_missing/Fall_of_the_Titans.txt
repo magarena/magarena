@@ -9,3 +9,4 @@ ability=Surge {X}{R}
 effect=SN deals X damage to each of up to two target creatures and/or players.
 timing=removal
 oracle=Surge {X}{R}\nFall of the Titans deals X damage to each of up to two target creatures and/or players.
+status=not supported: multiple-targets

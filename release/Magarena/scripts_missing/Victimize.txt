@@ -8,3 +8,4 @@ cost={2}{B}
 effect=Choose two target creature cards in your graveyard. Sacrifice a creature. If you do, return the chosen cards to the battlefield tapped.
 timing=main
 oracle=Choose two target creature cards in your graveyard. Sacrifice a creature. If you do, return the chosen cards to the battlefield tapped.
+status=not supported: multiple-targets

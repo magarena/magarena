@@ -8,3 +8,4 @@ ability=Cast SN only during the declare attackers step and only if you've been a
 effect=Return one or two target attacking creatures to their owner's hand.
 timing=removal
 oracle=Cast Command of Unsummoning only during the declare attackers step and only if you've been attacked this step.\nReturn one or two target attacking creatures to their owner's hand.
+status=not supported: multiple-targets

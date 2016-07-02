@@ -7,3 +7,4 @@ cost={3}{R}
 effect=Choose two target creatures that share no creature types. Those creatures fight each other.
 timing=main
 oracle=Choose two target creatures that share no creature types. Those creatures fight each other.
+status=not supported: multiple-targets

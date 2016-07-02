@@ -8,3 +8,4 @@ ability=Convoke
 effect=Return up to two target creature cards from your graveyard to your hand.
 timing=removal
 oracle=Convoke\nReturn up to two target creature cards from your graveyard to your hand.
+status=not supported: multiple-targets

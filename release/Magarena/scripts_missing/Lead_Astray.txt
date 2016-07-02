@@ -7,3 +7,4 @@ cost={1}{W}
 effect=Tap up to two target creatures.
 timing=removal
 oracle=Tap up to two target creatures.
+status=not supported: multiple-targets

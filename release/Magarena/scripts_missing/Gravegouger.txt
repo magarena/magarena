@@ -10,3 +10,4 @@ ability=When SN enters the battlefield, exile up to two target cards from a sing
         When SN leaves the battlefield, return the exiled cards to their owner's graveyard.
 timing=main
 oracle=When Gravegouger enters the battlefield, exile up to two target cards from a single graveyard.\nWhen Gravegouger leaves the battlefield, return the exiled cards to their owner's graveyard.
+status=not supported: multiple-targets

@@ -7,3 +7,4 @@ cost={2}{B}
 effect=Return two target creature cards from your graveyard to your hand.
 timing=main
 oracle=Return two target creature cards from your graveyard to your hand.
+status=not supported: multiple-targets

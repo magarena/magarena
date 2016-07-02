@@ -10,3 +10,4 @@ pt=4/5
 ability=When SN enters the battlefield, return up to two target creature cards from your graveyard to your hand.
 timing=main
 oracle=When Baloth Null enters the battlefield, return up to two target creature cards from your graveyard to your hand.
+status=not supported: multiple-targets

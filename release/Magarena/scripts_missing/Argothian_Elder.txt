@@ -9,3 +9,4 @@ pt=2/2
 ability={T}: Untap two target lands.
 timing=main
 oracle={T}: Untap two target lands.
+status=not supported: multiple-targets

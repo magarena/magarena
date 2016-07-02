@@ -7,3 +7,4 @@ cost={3}{G}{G}
 effect=Return two target cards from your graveyard to your hand. Exile SN.
 timing=main
 oracle=Return two target cards from your graveyard to your hand. Exile Restock.
+status=not supported: multiple-targets

@@ -9,3 +9,4 @@ ability=Cycling {5}{W}{U}{B};\
 effect=Return target permanent to its owner's hand.
 timing=removal
 oracle=Return target permanent to its owner's hand.\nCycling {5}{W}{U}{B}\nWhen you cycle Resounding Wave, return two target permanents to their owners' hands.
+status=not supported: multiple-targets

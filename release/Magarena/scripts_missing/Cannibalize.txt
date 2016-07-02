@@ -8,3 +8,4 @@ cost={1}{B}
 effect=Choose two target creatures controlled by the same player. Exile one of those creatures and put two +1/+1 counters on the other.
 timing=main
 oracle=Choose two target creatures controlled by the same player. Exile one of those creatures and put two +1/+1 counters on the other.
+status=not supported: multiple-targets

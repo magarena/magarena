@@ -10,3 +10,4 @@ ability=Flying;\
         Whenever SN attacks, detain up to two target nonland permanents your opponents control.
 timing=main
 oracle=Flying\nWhenever Archon of the Triumvirate attacks, detain up to two target nonland permanents your opponents control.
+status=not supported: multiple-targets

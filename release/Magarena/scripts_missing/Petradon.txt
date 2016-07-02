@@ -11,3 +11,4 @@ ability=When SN enters the battlefield, exile two target lands.;\
         {R}: SN gets +1/+0 until end of turn.
 timing=main
 oracle=When Petradon enters the battlefield, exile two target lands.\nWhen Petradon leaves the battlefield, return the exiled cards to the battlefield under their owners' control.\n{R}: Petradon gets +1/+0 until end of turn.
+status=not supported: multiple-targets

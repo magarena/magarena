@@ -7,3 +7,4 @@ cost={2}{R}{R}
 effect=Choose two target creatures an opponent controls. That player chooses and sacrifices one of those creatures. Put a -1/-1 counter on the other.
 timing=main
 oracle=Choose two target creatures an opponent controls. That player chooses and sacrifices one of those creatures. Put a -1/-1 counter on the other.
+status=not supported: multiple-targets

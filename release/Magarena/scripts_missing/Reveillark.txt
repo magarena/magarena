@@ -11,3 +11,4 @@ ability=Flying;\
         Evoke {5}{W}
 timing=main
 oracle=Flying\nWhen Reveillark leaves the battlefield, return up to two target creature cards with power 2 or less from your graveyard to the battlefield.\nEvoke {5}{W}
+status=not supported: multiple-targets
